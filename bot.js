@@ -257,10 +257,11 @@ client.on('interactionCreate', async interaction => {
         if (choice === 'wordladder') {
             await interaction.reply({
                 content:
-                    `🧩 **Daily Word Ladder**\n` +
-                    `Start: **${todaysLadder[0].toUpperCase()}**\n` +
-                    `End: **${todaysAnswer.toUpperCase()}**\n\n` +
-                    `Use **/solve** to submit your final word!`
+    `🧩 **Daily Word Ladder**\n` +
+    `Start: **${todaysLadder[0].toUpperCase()}**\n` +
+    `Steps: **${todaysLadder.length} words**\n\n` +
+    `Submit your full ladder using /solve`
+
             });
         }
 
