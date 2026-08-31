@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 const {
     Client,
     GatewayIntentBits,
@@ -10,11 +8,60 @@ const {
     ActionRowBuilder,
     StringSelectMenuBuilder
 } = require('discord.js');
-=======
-const { Client, GatewayIntentBits, Partials, REST, Routes, SlashCommandBuilder, ActionRowBuilder, StringSelectMenuBuilder } = require('discord.js');
->>>>>>> 16aa1ca567ee759386786c928c9a853cdcd4d0b7
+
 require('dotenv').config();
 const fs = require('fs');
+
+const client = new Client({
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent
+    ],
+    partials: [Partials.Channel]
+});
+
+// ⭐ CROSSWORD HOOK ⭐
+const crossword = require('./crossword');
+crossword.register(client);
+// ⭐ END ⭐
+
+
+
+// ----------------------
+// REGISTER SLASH COMMANDS
+// ----------------------
+const commands = [
+    new SlashCommandBuilder()
+        .setName('daily')
+        .setDescription('Get your daily puzzle'),
+
+    new SlashCommandBuilder()
+        .setName('solve_crossword')
+        .setDescription('Submit your answer to the daily crossword clue')
+        .addStringOption(option =>
+            option.setName('answer')
+                .setDescription('Your answer to the clue')
+                .setRequired(true)
+        ),
+].map(cmd => cmd.toJSON());
+
+
+const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
+
+(async () => {
+    try {
+        console.log('Registering slash commands...');
+        await rest.put(
+            Routes.applicationCommands(process.env.CLIENT_ID),
+            { body: commands }
+        );
+        console.log('Slash commands registered.');
+    } catch (err) {
+        console.error(err);
+    }
+})();
+
 
 // ----------------------
 // STREAK SYSTEM (WORD LADDER ONLY FOR NOW)
@@ -30,7 +77,6 @@ try {
 function saveStreaks() {
     fs.writeFileSync('./streaks.json', JSON.stringify(streaks, null, 2));
 }
-
 // ----------------------
 // WORD LADDER SYSTEM
 // ----------------------
@@ -143,61 +189,8 @@ function generateWordLadder() {
     return wordLadders[Math.floor(Math.random() * wordLadders.length)];
 }
 
-// ----------------------
-// CROSSWORD SYSTEM (SIMPLE MINI CLUES)
-// ----------------------
-const crosswordPuzzles = [
-    { clue: "Opposite of cold", answer: "hot" },
-    { clue: "A baby cat", answer: "kitten" },
-    { clue: "Colour of the sky", answer: "blue" },
-    { clue: "Man’s best friend", answer: "dog" },
-    { clue: "A fruit that keeps doctors away", answer: "apple" },
-    { clue: "The season after winter", answer: "spring" },
-    { clue: "A flying mammal", answer: "bat" },
-    { clue: "The largest planet", answer: "jupiter" },
-    { clue: "Opposite of up", answer: "down" },
-    { clue: "A shape with three sides", answer: "triangle" },
-    { clue: "A yellow citrus fruit", answer: "lemon" },
-    { clue: "The colour of grass", answer: "green" },
-    { clue: "A farm animal that oinks", answer: "pig" },
-    { clue: "A vehicle with two wheels", answer: "bicycle" },
-    { clue: "The hottest planet", answer: "venus" },
-    { clue: "A bird that cannot fly", answer: "penguin" },
-    { clue: "Opposite of fast", answer: "slow" },
-    { clue: "A place to buy medicine", answer: "pharmacy" },
-    { clue: "A fruit monkeys love", answer: "banana" },
-    { clue: "A metal that rusts", answer: "iron" },
-    { clue: "A pet that purrs", answer: "cat" },
-    { clue: "The colour of coal", answer: "black" },
-    { clue: "A reptile with a shell", answer: "turtle" },
-    { clue: "A drink made from beans", answer: "coffee" },
-    { clue: "A large body of water", answer: "ocean" },
-    { clue: "A shape with four equal sides", answer: "square" },
-    { clue: "A fruit used to make wine", answer: "grape" },
-    { clue: "The opposite of happy", answer: "sad" },
-    { clue: "A bird known for wisdom", answer: "owl" },
-    { clue: "A place to borrow books", answer: "library" },
-    { clue: "A sweet food made by bees", answer: "honey" },
-    { clue: "A planet we live on", answer: "earth" },
-    { clue: "A red fruit often mistaken for a vegetable", answer: "tomato" },
-    { clue: "A tool used for cutting paper", answer: "scissors" },
-    { clue: "A large wild cat", answer: "tiger" },
-    { clue: "A drink made from leaves", answer: "tea" },
-    { clue: "A shape with no corners", answer: "circle" },
-    { clue: "A bird that can mimic speech", answer: "parrot" },
-    { clue: "A place where you sleep", answer: "bedroom" },
-    { clue: "A fruit with a stone inside", answer: "peach" },
-    { clue: "A pet that lives in a tank", answer: "fish" },
-    { clue: "A colour made by mixing red and blue", answer: "purple" },
-    { clue: "A farm animal that gives milk", answer: "cow" },
-    { clue: "A small buzzing insect", answer: "bee" },
-    { clue: "A cold dessert", answer: "icecream" },
-    { clue: "A planet known for its rings", answer: "saturn" },
-    { clue: "A bird that lays golden eggs in fairy tales", answer: "goose" },
-    { clue: "A fruit that is also a colour", answer: "orange" },
-    { clue: "A nocturnal animal that hoots", answer: "owl" },
-    { clue: "A pet that lives in a cage and runs on a wheel", answer: "hamster" }
-];
+
+
 
 // ----------------------
 // CONNECTIONS SYSTEM (FOUR RELATED WORDS)
@@ -407,14 +400,10 @@ const logicGridPuzzles = [
 // ----------------------
 // TODAY'S PUZZLES
 // ----------------------
+// Generate today's puzzles
 let todaysLadder = generateWordLadder();
-let todaysCrossword = crosswordPuzzles[Math.floor(Math.random() * crosswordPuzzles.length)];
-let todaysConnections = connectionsPuzzles[Math.floor(Math.random() * connectionsPuzzles.length)];
-let todaysLogicGrid = logicGridPuzzles[Math.floor(Math.random() * logicGridPuzzles.length)];
 
-// ----------------------
-// DAILY RESET AT MIDNIGHT
-// ----------------------
+
 function scheduleDailyReset() {
     const now = new Date();
     const nextMidnight = new Date(
@@ -428,11 +417,8 @@ function scheduleDailyReset() {
 
     setTimeout(() => {
         todaysLadder = generateWordLadder();
-        todaysCrossword = crosswordPuzzles[Math.floor(Math.random() * crosswordPuzzles.length)];
-        todaysConnections = connectionsPuzzles[Math.floor(Math.random() * connectionsPuzzles.length)];
-        todaysLogicGrid = logicGridPuzzles[Math.floor(Math.random() * logicGridPuzzles.length)];
-
-        console.log("🔄 Daily puzzles refreshed!");
+        
+        console.log("Daily puzzles refreshed!");
         scheduleDailyReset();
     }, msUntilMidnight);
 }
@@ -440,588 +426,90 @@ function scheduleDailyReset() {
 scheduleDailyReset();
 
 // ----------------------
-// WORD LADDER SYSTEM
+// START BOT
 // ----------------------
-
-// 50 ladders (Batch #1)
-
-const wordLadders = [
-  ["cat", "cot", "dot", "dog"],
-  ["tea", "sea", "see", "bee"],
-  ["map", "mop", "pop", "pip"],
-  ["fog", "fag", "bag", "bog"],
-  ["ham", "him", "rim", "ram"],
-  ["sun", "sin", "sip", "sap"],
-  ["cow", "caw", "saw", "paw"],
-  ["bat", "bet", "bed", "bad"],
-  ["tin", "tan", "man", "mat"],
-  ["bar", "bat", "bit", "sit"],
-  ["lip", "lap", "sap", "sip"],
-  ["fog", "hog", "hot", "hat"],
-  ["pen", "pan", "tan", "tap"],
-  ["rig", "rag", "bag", "bog"],
-  ["cup", "cap", "sap", "sip"],
-  ["pit", "pet", "get", "got"],
-  ["ram", "rim", "rip", "sip"],
-  ["cow", "how", "hot", "hat"],
-  ["jam", "jab", "lab", "lob"],
-  ["tap", "top", "cop", "cup"],
-  ["bar", "ban", "can", "con"],
-  ["pit", "pin", "pan", "man"],
-  ["fog", "fig", "fin", "fun"],
-  ["lip", "lit", "lot", "hot"],
-  ["ram", "ran", "can", "con"],
-  ["sip", "sap", "lap", "lop"],
-  ["dog", "dig", "fig", "fin"],
-  ["cow", "cog", "log", "lag"],
-  ["tap", "tip", "sip", "sap"],
-  ["bar", "car", "cat", "cot"],
-  ["pit", "pat", "pan", "man"],
-  ["ram", "cam", "cap", "cup"],
-  ["dog", "dot", "cot", "cat"],
-  ["tap", "tar", "far", "fat"],
-  ["bar", "bor", "bot", "bat"],
-  ["pit", "pip", "lip", "lap"],
-  ["ram", "rim", "rib", "rob"],
-  ["sip", "sir", "sod", "sad"],
-  ["dog", "dig", "big", "bag"],
-  ["cow", "caw", "cay", "day"],
-
-  ["heat", "heal", "heap", "leap"],
-  ["cold", "cord", "card", "ward"],
-  ["farm", "form", "foam", "roam"],
-  ["wind", "wand", "want", "cant"],
-  ["rain", "rail", "tail", "tall"],
-  ["salt", "silt", "silk", "milk"],
-  ["book", "cook", "cool", "coal"],
-  ["fish", "wish", "wash", "dash"],
-  ["town", "torn", "born", "barn"],
-  ["lane", "lone", "long", "song"],
-  ["milk", "silk", "sill", "sell"],
-  ["sand", "send", "sent", "rent"],
-  ["bake", "bike", "bite", "site"],
-  ["tall", "tale", "sale", "sage"],
-  ["cold", "gold", "golf", "wolf"],
-  ["lamp", "lump", "jump", "dump"],
-  ["park", "pork", "port", "sort"],
-  ["wave", "ware", "care", "core"],
-  ["mint", "mind", "bind", "band"],
-  ["leaf", "leak", "peak", "peck"],
-  ["milk", "mill", "mild", "wild"],
-  ["sand", "sane", "lane", "lame"],
-  ["bake", "bare", "barb", "barn"],
-  ["tall", "toll", "tool", "fool"],
-  ["cold", "bold", "bald", "ball"],
-  ["lamp", "lamb", "limb", "lime"],
-  ["park", "part", "port", "post"],
-  ["wave", "wane", "wine", "wire"],
-  ["mint", "mine", "mane", "lane"],
-  ["leaf", "lead", "load", "loan"],
-  ["milk", "milt", "mild", "wild"],
-  ["sand", "sank", "sink", "sick"],
-  ["bake", "bike", "bile", "mile"],
-  ["tall", "toll", "tool", "cool"],
-  ["cold", "colt", "bolt", "belt"],
-  ["lamp", "lump", "dump", "damp"],
-  ["park", "perk", "peek", "peep"],
-  ["wave", "wane", "wine", "pine"],
-  ["mint", "mine", "mile", "mole"],
-  ["leaf", "leap", "heap", "heal"],
-
-  ["stare", "share", "shark", "spark", "spare"],
-  ["plant", "plans", "plays", "slays", "stays"],
-  ["heart", "heard", "hears", "years", "yarns"],
-  ["bread", "bream", "dream", "dread", "tread"],
-  ["shore", "score", "scare", "share", "shale"],
-  ["crisp", "crush", "brush", "brash", "brass"],
-  ["scone", "scene", "scend", "shend", "shone"],
-  ["pound", "sound", "round", "found", "bound"],
-  ["stone", "stoke", "stake", "shake", "shale"],
-  ["spice", "slice", "slick", "click", "clock"],
-  ["train", "trait", "trail", "trial", "trill"],
-  ["light", "tight", "tithe", "tilth", "filth"],
-  ["flame", "blame", "blare", "flare", "flair"]
-];
-
-
-
-// Pick a random ladder
-function generateWordLadder() {
-  return wordLadders[Math.floor(Math.random() * wordLadders.length)];
-}
-
-// Store today's puzzle
-let todaysLadder = generateWordLadder();
-let todaysAnswer = todaysLadder[todaysLadder.length - 1];
 // ----------------------
-// DAILY RESET AT MIDNIGHT
-// ----------------------
-function scheduleDailyReset() {
-    const now = new Date();
-    const nextMidnight = new Date(
-        now.getFullYear(),
-        now.getMonth(),
-        now.getDate() + 1,
-        0, 0, 0
-    );
-
-    const msUntilMidnight = nextMidnight - now;
-
-    setTimeout(() => {
-        // Pick a new ladder at midnight
-        todaysLadder = generateWordLadder();
-        todaysAnswer = todaysLadder[todaysLadder.length - 1];
-
-        console.log("🔄 Daily puzzle refreshed!");
-
-        // Schedule again for the next day
-        scheduleDailyReset();
-    }, msUntilMidnight);
-}
-
-// Start the daily reset timer
-scheduleDailyReset();
-
-// ----------------------
-// CLIENT SETUP
-// ----------------------
-const client = new Client({
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.MessageContent
-    ],
-    partials: [Partials.Channel]
-});
-
-// ----------------------
-// READY EVENT
-// ----------------------
-client.once('ready', () => {
-    console.log(`Logged in as ${client.user.tag}`);
-});
-
-// ----------------------
-// REGISTER COMMANDS
-// ----------------------
-const commands = [
-    new SlashCommandBuilder()
-        .setName('daily')
-        .setDescription('Open the daily puzzle menu'),
-
-    new SlashCommandBuilder()
-        .setName('solve')
-<<<<<<< HEAD
-        .setDescription('Submit your answer for today’s word ladder')
-        .addStringOption(option =>
-            option.setName('answer')
-                .setDescription('Enter the full ladder (all words)')
-                .setRequired(true)
-        ),
-
-    new SlashCommandBuilder()
-        .setName('solve_crossword')
-        .setDescription('Submit your answer for today’s crossword')
-        .addStringOption(option =>
-            option.setName('answer')
-                .setDescription('Enter the crossword answer')
-                .setRequired(true)
-        ),
-
-    new SlashCommandBuilder()
-        .setName('solve_connections')
-        .setDescription('Submit the theme for today’s connections puzzle')
-        .addStringOption(option =>
-            option.setName('answer')
-                .setDescription('Enter the theme (e.g. FRUIT)')
-                .setRequired(true)
-        ),
-
-    new SlashCommandBuilder()
-        .setName('solve_logicgrid')
-        .setDescription('Submit your solution for today’s logic grid')
-        .addStringOption(option =>
-            option.setName('answer')
-                .setDescription('Enter your solution as a sentence')
-                .setRequired(true)
-        ),
-
-    new SlashCommandBuilder()
-        .setName('solution')
-        .setDescription('Show the solution for today’s word ladder (private)')
-].map(cmd => cmd.toJSON());
-
-const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
-=======
-        .setDescription('Submit your answer for today’s puzzle')
-        .addStringOption(option =>
-            option.setName('answer')
-                .setDescription('Your final word')
-                .setRequired(true)
-        )
-].map(cmd => cmd.toJSON());
-
-const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
-
->>>>>>> 16aa1ca567ee759386786c928c9a853cdcd4d0b7
-
-(async () => {
-    try {
-        console.log('Registering slash commands...');
-        await rest.put(
-            Routes.applicationCommands(process.env.CLIENT_ID),
-            { body: commands }
-        );
-        console.log('Slash commands registered.');
-    } catch (error) {
-        console.error(error);
-    }
-})();
-
-// ----------------------
-// /daily + SOLVE HANDLER
+// DAILY PUZZLE MENU HANDLER
 // ----------------------
 client.on('interactionCreate', async interaction => {
     if (!interaction.isChatInputCommand()) return;
 
-    // DAILY MENU
     if (interaction.commandName === 'daily') {
-        const menu = new StringSelectMenuBuilder()
-            .setCustomId('daily-menu')
-            .setPlaceholder('Choose your daily puzzle')
-            .addOptions([
-<<<<<<< HEAD
-                { label: 'Word Ladder', value: 'wordladder' },
-                { label: 'Crossword', value: 'crossword' },
-                { label: 'Connections', value: 'connections' },
-                { label: 'Logic Grid', value: 'logicgrid' }
-=======
-                {
-                    label: 'Word Ladder',
-                    value: 'wordladder'
-                },
-                {
-                    label: 'Crossword',
-                    value: 'crossword'
-                },
-                {
-                    label: 'Connections',
-                    value: 'connections'
-                },
-                {
-                    label: 'Logic Grid',
-                    value: 'logicgrid'
-                }
->>>>>>> 16aa1ca567ee759386786c928c9a853cdcd4d0b7
-            ]);
-
-        const row = new ActionRowBuilder().addComponents(menu);
+        const menu = new ActionRowBuilder().addComponents(
+            new StringSelectMenuBuilder()
+                .setCustomId('daily-menu')
+                .setPlaceholder('Choose your daily puzzle')
+                .addOptions([
+    {
+        label: 'Word Ladder',
+        value: 'wordladder',
+        description: 'Solve today’s word ladder'
+    },
+    {
+        label: 'Full Crossword',
+        value: 'fullcrossword',
+        description: 'Play the full daily crossword'
+    },
+    {
+        label: 'Connections',
+        value: 'connections',
+        description: 'Find the theme between four words'
+    },
+    {
+        label: 'Logic Grid',
+        value: 'logicgrid',
+        description: 'Solve a short logic puzzle'
+    }
+])
+       );
 
         await interaction.reply({
-            content: '🧠 **Daily Puzzle Menu**\nChoose your puzzle:',
-            components: [row]
+            content: '🧩 **Choose your daily puzzle:**',
+            components: [menu]
         });
-    }
-
-<<<<<<< HEAD
-    // WORD LADDER SOLVE
-    if (interaction.commandName === 'solve') {
-        const userAnswerRaw = interaction.options.getString('answer').toLowerCase().trim();
-        const userSteps = userAnswerRaw.split(/\s+/);
-
-        if (userSteps.length !== todaysLadder.length) {
-            const userId = interaction.user.id;
-            streaks[userId] = 0;
-            saveStreaks();
-
- return interaction.reply({
-    embeds: [
-        {
-            title: "❌ Incorrect",
-            color: 0xFF0000,
-            description: `Incorrect number of steps.\nExpected **${todaysLadder.length}** words.`,
-            timestamp: new Date()
-        }
-    ]
-});
-
-
-        let correctSteps = 0;
-        let wrongIndex = -1;
-
-        for (let i = 0; i < todaysLadder.length; i++) {
-            if (userSteps[i] === todaysLadder[i]) {
-                correctSteps++;
-            } else {
-                wrongIndex = i;
-                break;
-            }
-        }
-
-        if (correctSteps === todaysLadder.length) {
-            const userId = interaction.user.id;
-
-            if (!streaks[userId]) streaks[userId] = 1;
-            else streaks[userId]++;
-
-            saveStreaks();
-
-            return interaction.reply({
-    embeds: [
-        {
-            title: "🎉 Correct!",
-            color: 0x32CD32,
-            description: `You solved the ladder!\n🔥 Current streak: **${streaks[userId]} days**`,
-            timestamp: new Date()
-        }
-    ]
-});
-
-        const userId = interaction.user.id;
-        streaks[userId] = 0;
-        saveStreaks();
-return interaction.reply({
-    embeds: [
-        {
-            title: "❌ Incorrect",
-            color: 0xFF0000,
-            description:
-                `You got **${correctSteps} / ${todaysLadder.length}** steps correct.\n` +
-                `Mistake at **step ${wrongIndex + 1}**.`,
-            timestamp: new Date()
-        }
-    ]
-});
-
-  
-    }
-
-// CROSSWORD SOLVE
-if (interaction.commandName === 'solve_crossword') {
-    const userAnswer = interaction.options.getString('answer').toLowerCase().trim();
-    const correctAnswer = todaysCrossword.answer.toLowerCase();
-
-    if (userAnswer === correctAnswer) {
-        return interaction.reply({
-            embeds: [
-                {
-                    title: "🎉 Correct!",
-                    color: 0x32CD32,
-                    description: `The answer **${todaysCrossword.answer.toUpperCase()}** is correct!`,
-                    timestamp: new Date()
-                }
-            ]
-        });
-    }
-
-    return interaction.reply({
-        embeds: [
-            {
-                title: "❌ Incorrect",
-                color: 0xFF0000,
-                description: `That’s not the correct answer.`,
-                timestamp: new Date()
-            }
-        ]
-    });
-}
-
-
-  // CONNECTIONS SOLVE
-if (interaction.commandName === 'solve_connections') {
-    const userTheme = interaction.options.getString('theme').toLowerCase().trim();
-    const correctTheme = todaysConnections.theme.toLowerCase();
-
-    if (userTheme === correctTheme) {
-        return interaction.reply({
-            embeds: [
-                {
-                    title: "🎉 Correct!",
-                    color: 0x32CD32,
-                    description: `Theme solved: **${todaysConnections.theme}**`,
-                    timestamp: new Date()
-                }
-            ]
-        });
-    }
-
-    return interaction.reply({
-        embeds: [
-            {
-                title: "❌ Incorrect",
-                color: 0xFF0000,
-                description: `That theme is not correct.`,
-                timestamp: new Date()
-            }
-        ]
-    });
-}
-
- // LOGIC GRID SOLVE
-if (interaction.commandName === 'solve_logic') {
-    const userSolution = interaction.options.getString('solution').toLowerCase().trim();
-    const correctSolution = todaysLogicGrid.solution.toLowerCase();
-
-    if (userSolution === correctSolution) {
-        return interaction.reply({
-            embeds: [
-                {
-                    title: "🎉 Correct!",
-                    color: 0x32CD32,
-                    description: todaysLogicGrid.solution,
-                    timestamp: new Date()
-                }
-            ]
-        });
-    }
-
-    return interaction.reply({
-        embeds: [
-            {
-                title: "❌ Incorrect",
-                color: 0xFF0000,
-                description: `That is not the correct solution.`,
-                timestamp: new Date()
-            }
-        ]
-    });
-}
-
-
-    // WORD LADDER SOLUTION (PRIVATE)
-    if (interaction.commandName === 'solution') {
-        const ladderText = todaysLadder.map(w => w.toUpperCase()).join(' → ');
-        await interaction.reply({
-            content: `🔐 **Today’s Word Ladder Solution**\n${ladderText}`,
-            ephemeral: true
-        });
-=======
-    if (interaction.commandName === 'solve') {
-        const userAnswer = interaction.options.getString('answer').toLowerCase();
-
-        if (userAnswer === todaysAnswer) {
-            await interaction.reply(`🎉 Correct! The final word was **${todaysAnswer.toUpperCase()}**.`);
-        } else {
-            await interaction.reply(`❌ Not quite. Try again!`);
-        }
->>>>>>> 16aa1ca567ee759386786c928c9a853cdcd4d0b7
     }
 });
 
 // ----------------------
-// DROPDOWN HANDLER
+// DAILY MENU SELECTION HANDLER
 // ----------------------
 client.on('interactionCreate', async interaction => {
     if (!interaction.isStringSelectMenu()) return;
 
     if (interaction.customId === 'daily-menu') {
         const choice = interaction.values[0];
-if (choice === 'wordladder') {
-    await interaction.reply({
-        embeds: [
-            {
-                title: "🧩 Daily Word Ladder",
-                color: 0x00A2E8,
-                fields: [
-                    { name: "Start Word", value: todaysLadder[0].toUpperCase(), inline: true },
-                    { name: "Steps", value: `${todaysLadder.length} words`, inline: true },
-                    { name: "Difficulty", value: getDifficulty(todaysLadder), inline: true }
-                ],
-                footer: { text: "Use /solve to submit your ladder" },
-                timestamp: new Date()
-            }
-        ]
-    });
+
+       if (choice === 'wordladder') {
+    await interaction.reply(
+        `🧩 **Daily Word Ladder**\n` +
+        `Start: **${todaysLadder[0]}**\n` +
+        `Difficulty: **${getDifficulty(todaysLadder)}**\n` +
+        `Steps: ${todaysLadder.length} words`
+    );
 }
 
-<<<<<<< HEAD
- 
-
-  else if (choice === 'crossword') {
-    await interaction.reply({
-        embeds: [
-            {
-                title: "📝 Daily Crossword",
-                color: 0xFFD700,
-                fields: [
-                    { name: "Clue", value: todaysCrossword.clue },
-                    { name: "Difficulty", value: todaysCrossword.answer.length <= 4 ? "Easy" : "Medium" }
-                ],
-                footer: { text: "Use /solve_crossword to answer" },
-                timestamp: new Date()
-            }
-        ]
-    });
+if (choice === 'fullcrossword') {
+    await interaction.reply(
+        `🧩 **Daily Full Crossword**\nType **!crossword** to begin!`
+    );
 }
 
 
-else if (choice === 'connections') {
-    await interaction.reply({
-        embeds: [
-            {
-                title: "🔗 Daily Connections",
-                color: 0x8A2BE2,
-                fields: [
-                    { name: "Words", value: todaysConnections.group.join(", ") },
-                    { name: "Goal", value: "Find the theme!" }
-                ],
-                footer: { text: "Use /solve_connections to answer" },
-                timestamp: new Date()
-            }
-        ]
-    });
-}
-
-
-
-     else if (choice === 'logicgrid') {
-    await interaction.reply({
-        embeds: [
-            {
-                title: "🧠 Daily Logic Grid",
-                color: 0xFF6F61,
-                description: todaysLogicGrid.description,
-                footer: { text: "Use /solve_logicgrid to answer" },
-                timestamp: new Date()
-            }
-        ]
-    });
-}
-
-=======
-        if (choice === 'wordladder') {
-            await interaction.reply({
-                content:
-    `🧩 **Daily Word Ladder**\n` +
-    `Start: **${todaysLadder[0].toUpperCase()}**\n` +
-    `Steps: **${todaysLadder.length} words**\n\n` +
-    `Submit your full ladder using /solve`
-
-            });
+       
+        if (choice === 'connections') {
+            const puzzle = connectionsPuzzles[Math.floor(Math.random() * connectionsPuzzles.length)];
+            await interaction.reply(
+                `🔗 **Daily Connections:**\nWords: **${puzzle.group.join(', ')}**`
+            );
         }
 
-        else if (choice === 'crossword') {
-            await interaction.reply({
-                content: '**🧩 Daily Crossword**\nHere is today’s mini crossword:',
-            });
-        }
->>>>>>> 16aa1ca567ee759386786c928c9a853cdcd4d0b7
-
-        else {
-            await interaction.reply(`You selected: **${choice}**`);
+        if (choice === 'logicgrid') {
+            const puzzle = logicGridPuzzles[Math.floor(Math.random() * logicGridPuzzles.length)];
+            await interaction.reply(
+                `🧠 **Daily Logic Puzzle:**\n${puzzle.description}`
+            );
         }
     }
 });
 
-// ----------------------
-// LOGIN
-// ----------------------
-client.login(process.env.DISCORD_TOKEN);
-
-
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 16aa1ca567ee759386786c928c9a853cdcd4d0b7
+client.login(process.env.TOKEN);
