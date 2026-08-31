@@ -4,6 +4,8 @@ const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 
 const TODAY_FILE = path.join(__dirname, 'crossword_today.json');
 const PLAYERS_FILE = path.join(__dirname, 'crossword_players.json');
+const STREAKS_FILE = path.join(__dirname, 'crossword_streaks.json');
+const LEADERBOARD_FILE = path.join(__dirname, 'crossword_leaderboard.json');
 
 // Simple word list (you can expand this later)
 const WORDS = [
@@ -178,6 +180,14 @@ function makeClue(word) {
 
   return clues[word] || `No clue available for ${word}`;
 }
+function checkIfCompleted(puzzle, playerState) {
+  const solved = playerState.solved || {};
+
+  const allAcrossSolved = puzzle.across.every(a => solved[a.id]);
+  const allDownSolved = puzzle.down.every(d => solved[d.id]);
+
+  return allAcrossSolved && allDownSolved;
+}
 
 // --- rendering ---
 
@@ -280,29 +290,51 @@ function getDownCoords(puzzle, id) {
 
 // --- player state ---
 
+
+function loadPlayers() {
+  return loadJson(PLAYERS_FILE, {});
+}
 function loadTodayPuzzle() {
   let today = loadJson(TODAY_FILE, null);
   if (!today) {
     today = generateDailyPuzzle();
     saveJson(TODAY_FILE, today);
+
+    // 🧹 Reset daily leaderboard
+    saveLeaderboard({});
   }
   return today;
-}
-
-function loadPlayers() {
-  return loadJson(PLAYERS_FILE, {});
 }
 
 function savePlayers(players) {
   saveJson(PLAYERS_FILE, players);
 }
+function loadStreaks() {
+  return loadJson(STREAKS_FILE, {});
+}
 
+function saveStreaks(streaks) {
+  saveJson(STREAKS_FILE, streaks);
+}
+function loadLeaderboard() {
+  return loadJson(LEADERBOARD_FILE, {});
+}
+
+function saveLeaderboard(board) {
+  saveJson(LEADERBOARD_FILE, board);
+}
 function getPlayerState(players, userId) {
   if (!players[userId]) {
-    players[userId] = { solved: {} };
+    players[userId] = {
+      solved: {},
+      totalSolved: 0,
+      completions: 0,
+      bestStreak: 0
+    };
   }
   return players[userId];
 }
+
 
 // --- buttons ---
 
@@ -310,22 +342,34 @@ function buildButtonRows() {
   const row1 = new ActionRowBuilder().addComponents(
     new ButtonBuilder().setCustomId('cw_solve_1A').setLabel('Solve 1A').setStyle(ButtonStyle.Primary),
     new ButtonBuilder().setCustomId('cw_solve_4A').setLabel('Solve 4A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_7A').setLabel('Solve 7A').setStyle(ButtonStyle.Primary)
+    new ButtonBuilder().setCustomId('cw_solve_7A').setLabel('Solve 7A').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_solve_10A').setLabel('Solve 10A').setStyle(ButtonStyle.Primary)
   );
 
   const row2 = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId('cw_solve_1D').setLabel('Solve 1D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_2D').setLabel('Solve 2D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_3D').setLabel('Solve 3D').setStyle(ButtonStyle.Primary)
+    new ButtonBuilder().setCustomId('cw_solve_13A').setLabel('Solve 13A').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_solve_16A').setLabel('Solve 16A').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_solve_19A').setLabel('Solve 19A').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_solve_20A').setLabel('Solve 20A').setStyle(ButtonStyle.Primary)
   );
 
   const row3 = new ActionRowBuilder().addComponents(
+    new ButtonBuilder().setCustomId('cw_solve_1D').setLabel('Solve 1D').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_solve_2D').setLabel('Solve 2D').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_solve_3D').setLabel('Solve 3D').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_solve_4D').setLabel('Solve 4D').setStyle(ButtonStyle.Primary)
+  );
+
+  const row4 = new ActionRowBuilder().addComponents(
+    new ButtonBuilder().setCustomId('cw_solve_5D').setLabel('Solve 5D').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_solve_6D').setLabel('Solve 6D').setStyle(ButtonStyle.Primary),
     new ButtonBuilder().setCustomId('cw_show_grid').setLabel('Show Grid').setStyle(ButtonStyle.Secondary),
     new ButtonBuilder().setCustomId('cw_show_clues').setLabel('Show Clues').setStyle(ButtonStyle.Secondary)
   );
 
-  return [row1, row2, row3];
+  return [row1, row2, row3, row4];
 }
+
 
 // --- public API ---
 
@@ -392,16 +436,25 @@ function register(client) {
       });
       return;
     }
+const solveMap = {
+  'cw_solve_1A': '1A',
+  'cw_solve_4A': '4A',
+  'cw_solve_7A': '7A',
+  'cw_solve_10A': '10A',
+  'cw_solve_13A': '13A',
+  'cw_solve_16A': '16A',
+  'cw_solve_19A': '19A',
+  'cw_solve_20A': '20A',
 
-    const solveMap = {
-      'cw_solve_1A': '1A',
-      'cw_solve_4A': '4A',
-      'cw_solve_7A': '7A',
-      'cw_solve_1D': '1D',
-      'cw_solve_2D': '2D',
-      'cw_solve_3D': '3D'
-    };
+  'cw_solve_1D': '1D',
+  'cw_solve_2D': '2D',
+  'cw_solve_3D': '3D',
+  'cw_solve_4D': '4D',
+  'cw_solve_5D': '5D',
+  'cw_solve_6D': '6D'
+};
 
+   
     if (solveMap[customId]) {
       const clueId = solveMap[customId];
       await interaction.reply({
@@ -412,39 +465,153 @@ function register(client) {
       const filter = (m) => m.author.id === interaction.user.id;
       const collector = interaction.channel.createMessageCollector({ filter, max: 1, time: 30000 });
 
-      collector.on('collect', (msg) => {
-        const answer = msg.content.trim().toUpperCase();
+collector.on('collect', (msg) => {
+  const answer = msg.content.trim().toUpperCase();
 
-        const entry =
-          puzzle.across.find(a => a.id === clueId) ||
-          puzzle.down.find(d => d.id === clueId);
+  const entry =
+    puzzle.across.find(a => a.id === clueId) ||
+    puzzle.down.find(d => d.id === clueId);
 
-        if (!entry) {
-          msg.reply('Something went wrong, no such clue.');
-          return;
-        }
+  if (!entry) {
+    msg.reply('Something went wrong, no such clue.');
+    return;
+  }
+if (answer === entry.answer) {
+    playerState.solved[clueId] = true;
 
-        if (answer === entry.answer) {
-          playerState.solved[clueId] = true;
-          savePlayers(players);
-          console.log(`[crossword] ${msg.author.id} solved ${clueId}.`);
+    // 📊 Lifetime stats — clue solved
+    playerState.totalSolved += 1;
 
-          const gridText = renderGridForPlayer(puzzle, playerState);
-          msg.reply('```' + gridText + '```');
-        } else {
-          msg.reply('Not quite. Try again!');
-        }
-      });
+    savePlayers(players);
+    console.log(`[crossword] ${msg.author.id} solved ${clueId}.`);
 
-      collector.on('end', (collected) => {
-        if (collected.size === 0) {
-          interaction.followUp({ content: 'No answer received in time.', ephemeral: true });
-        }
-      });
+   // 🔥 DAILY STREAK TRACKING
+const streaks = loadStreaks();
+const userId = msg.author.id;
+
+const today = new Date().toDateString();
+const lastSolve = streaks[userId]?.lastSolve || null;
+const currentStreak = streaks[userId]?.streak || 0;
+
+let newStreak = currentStreak;
+
+if (!lastSolve) {
+  newStreak = 1; // First ever solve
+} else {
+  const lastDate = new Date(lastSolve).toDateString();
+  const yesterday = new Date(Date.now() - 86400000).toDateString();
+
+   if (lastDate === today) {
+    newStreak = currentStreak; // Already solved today
+  } else if (lastDate === yesterday) {
+    newStreak = currentStreak + 1; // Continue streak
+  } else {
+    newStreak = 1; // Reset streak
+  }
+}
+
+streaks[userId] = {
+  streak: newStreak,
+  lastSolve: today
+};
+
+saveStreaks(streaks);
+
+
+// 🏆 DAILY LEADERBOARD TRACKING
+const leaderboard = loadLeaderboard();
+leaderboard[userId] = (leaderboard[userId] || 0) + 1;
+saveLeaderboard(leaderboard);
+
+const gridText = renderGridForPlayer(puzzle, playerState);
+msg.reply('```' + gridText + '```');
+
+// 🎉 Check for full completion
+if (checkIfCompleted(puzzle, playerState)) {
+  msg.channel.send(
+    `🎉 **${msg.author.username} has completed the entire crossword!**\n` +
+    `They solved every Across and Down clue today.\n` +
+    `🔥 **Daily Streak:** ${newStreak} day${newStreak === 1 ? '' : 's'}!`
+  );
+}
+
+  } else {
+    msg.reply('Not quite. Try again!');
+  }
+});
+
+collector.on('end', (collected) => {
+  if (collected.size === 0) {
+    interaction.followUp({ content: 'No answer received in time.', ephemeral: true });
+  }
+});
 
       return;
     }
   });
+}
+  
+
+//
+// --- SLASH COMMANDS GO HERE ---
+//
+
+client.on('interactionCreate', async (interaction) => {
+  if (!interaction.isChatInputCommand()) return;
+
+  // 🏆 Daily Leaderboard Command
+  if (interaction.commandName === 'crossword-leaderboard') {
+    const leaderboard = loadLeaderboard();
+
+    const entries = Object.entries(leaderboard)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 10);
+
+    if (entries.length === 0) {
+      await interaction.reply('No one has solved any clues today yet!');
+      return;
+    }
+
+    let text = '**🏆 Today’s Top Crossword Solvers**\n\n';
+    let position = 1;
+
+    for (const [userId, count] of entries) {
+      const user = await interaction.client.users.fetch(userId);
+      text += `${position}. **${user.username}** — ${count} clue${count === 1 ? '' : 's'}\n`;
+      position++;
+    }
+
+    await interaction.reply(text);
+  }
+});
+// 📊 Crossword Stats Command
+if (interaction.commandName === 'crossword-stats') {
+  const userId = interaction.user.id;
+
+  const players = loadPlayers();
+  const streaks = loadStreaks();
+  const leaderboard = loadLeaderboard();
+
+  const player = players[userId] || {
+    solved: {},
+    totalSolved: 0,
+    completions: 0,
+    bestStreak: 0
+  };
+
+  const todaySolved = leaderboard[userId] || 0;
+  const streak = streaks[userId]?.streak || 0;
+  const bestStreak = player.bestStreak || 0;
+
+  let text =
+    `📊 **Crossword Stats for ${interaction.user.username}**\n\n` +
+    `🧩 **Clues solved today:** ${todaySolved}\n` +
+    `🔥 **Daily streak:** ${streak} day${streak === 1 ? '' : 's'}\n` +
+    `📈 **Best streak:** ${bestStreak} day${bestStreak === 1 ? '' : 's'}\n` +
+    `🔢 **Total clues solved:** ${player.totalSolved}\n` +
+    `🏆 **Full crossword completions:** ${player.completions}\n`;
+
+  await interaction.reply(text);
 }
 
 module.exports = { register };
