@@ -555,7 +555,6 @@ collector.on('end', (collected) => {
 //
 // --- SLASH COMMANDS GO HERE ---
 //
-
 client.on('interactionCreate', async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
@@ -582,36 +581,40 @@ client.on('interactionCreate', async (interaction) => {
     }
 
     await interaction.reply(text);
+    return;
+  }
+
+  // 📊 Crossword Stats Command
+  if (interaction.commandName === 'crossword-stats') {
+    const userId = interaction.user.id;
+
+    const players = loadPlayers();
+    const streaks = loadStreaks();
+    const leaderboard = loadLeaderboard();
+
+    const player = players[userId] || {
+      solved: {},
+      totalSolved: 0,
+      completions: 0,
+      bestStreak: 0
+    };
+
+    const todaySolved = leaderboard[userId] || 0;
+    const streak = streaks[userId]?.streak || 0;
+    const bestStreak = player.bestStreak || 0;
+
+    let text =
+      `📊 **Crossword Stats for ${interaction.user.username}**\n\n` +
+      `🧩 **Clues solved today:** ${todaySolved}\n` +
+      `🔥 **Daily streak:** ${streak} day${streak === 1 ? '' : 's'}\n` +
+      `📈 **Best streak:** ${bestStreak} day${bestStreak === 1 ? '' : 's'}\n` +
+      `🔢 **Total clues solved:** ${player.totalSolved}\n` +
+      `🏆 **Full crossword completions:** ${player.completions}\n`;
+
+    await interaction.reply(text);
+    return;
   }
 });
-// 📊 Crossword Stats Command
-if (interaction.commandName === 'crossword-stats') {
-  const userId = interaction.user.id;
-
-  const players = loadPlayers();
-  const streaks = loadStreaks();
-  const leaderboard = loadLeaderboard();
-
-  const player = players[userId] || {
-    solved: {},
-    totalSolved: 0,
-    completions: 0,
-    bestStreak: 0
-  };
-
-  const todaySolved = leaderboard[userId] || 0;
-  const streak = streaks[userId]?.streak || 0;
-  const bestStreak = player.bestStreak || 0;
-
-  let text =
-    `📊 **Crossword Stats for ${interaction.user.username}**\n\n` +
-    `🧩 **Clues solved today:** ${todaySolved}\n` +
-    `🔥 **Daily streak:** ${streak} day${streak === 1 ? '' : 's'}\n` +
-    `📈 **Best streak:** ${bestStreak} day${bestStreak === 1 ? '' : 's'}\n` +
-    `🔢 **Total clues solved:** ${player.totalSolved}\n` +
-    `🏆 **Full crossword completions:** ${player.completions}\n`;
-
-  await interaction.reply(text);
-}
 
 module.exports = { register };
+
