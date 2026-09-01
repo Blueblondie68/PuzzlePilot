@@ -1,0 +1,213 @@
+{
+  "grid": [
+    [
+      {
+        "char": "D",
+        "block": false,
+        "number": 1
+      },
+      {
+        "char": "E",
+        "block": false,
+        "number": null
+      },
+      {
+        "char": "B",
+        "block": false,
+        "number": 2
+      },
+      {
+        "char": null,
+        "block": true,
+        "number": null
+      },
+      {
+        "char": null,
+        "block": true,
+        "number": null
+      }
+    ],
+    [
+      {
+        "char": "O",
+        "block": false,
+        "number": null
+      },
+      {
+        "char": null,
+        "block": true,
+        "number": null
+      },
+      {
+        "char": "G",
+        "block": false,
+        "number": 3
+      },
+      {
+        "char": "X",
+        "block": false,
+        "number": 4
+      },
+      {
+        "char": "F",
+        "block": false,
+        "number": 5
+      }
+    ],
+    [
+      {
+        "char": "G",
+        "block": false,
+        "number": 6
+      },
+      {
+        "char": "X",
+        "block": false,
+        "number": 7
+      },
+      {
+        "char": "O",
+        "block": false,
+        "number": null
+      },
+      {
+        "char": "U",
+        "block": false,
+        "number": null
+      },
+      {
+        "char": "I",
+        "block": false,
+        "number": null
+      }
+    ],
+    [
+      {
+        "char": null,
+        "block": true,
+        "number": null
+      },
+      {
+        "char": "X",
+        "block": false,
+        "number": 8
+      },
+      {
+        "char": "A",
+        "block": false,
+        "number": null
+      },
+      {
+        "char": null,
+        "block": true,
+        "number": null
+      },
+      {
+        "char": "S",
+        "block": false,
+        "number": null
+      }
+    ],
+    [
+      {
+        "char": null,
+        "block": true,
+        "number": null
+      },
+      {
+        "char": null,
+        "block": true,
+        "number": null
+      },
+      {
+        "char": "T",
+        "block": false,
+        "number": 9
+      },
+      {
+        "char": "A",
+        "block": false,
+        "number": null
+      },
+      {
+        "char": "H",
+        "block": false,
+        "number": null
+      }
+    ]
+  ],
+  "across": [
+    {
+      "id": "1A",
+      "answer": "BEE",
+      "clue": "A word with 3 letters."
+    },
+    {
+      "id": "4A",
+      "answer": "XX",
+      "clue": "A word with 2 letters."
+    },
+    {
+      "id": "7A",
+      "answer": "X",
+      "clue": "A word with 1 letters."
+    },
+    {
+      "id": "10A",
+      "answer": "XX",
+      "clue": "A word with 2 letters."
+    },
+    {
+      "id": "13A",
+      "answer": "SUN",
+      "clue": "A word with 3 letters."
+    },
+    {
+      "id": "16A",
+      "answer": "XX",
+      "clue": "A word with 2 letters."
+    },
+    {
+      "id": "19A",
+      "answer": "X",
+      "clue": "A word with 1 letters."
+    },
+    {
+      "id": "20A",
+      "answer": "BAT",
+      "clue": "A word with 3 letters."
+    }
+  ],
+  "down": [
+    {
+      "id": "1D",
+      "answer": "DOG",
+      "clue": "A word with 3 letters."
+    },
+    {
+      "id": "2D",
+      "answer": "BEE",
+      "clue": "A word with 3 letters."
+    },
+    {
+      "id": "3D",
+      "answer": "XX",
+      "clue": "A word with 2 letters."
+    },
+    {
+      "id": "4D",
+      "answer": "XX",
+      "clue": "A word with 2 letters."
+    },
+    {
+      "id": "5D",
+      "answer": "GOAT",
+      "clue": "A word with 4 letters."
+    },
+    {
+      "id": "6D",
+      "answer": "FISH",
+      "clue": "A word with 4 letters."
+    }
+  ]
+}
