@@ -616,4 +616,14 @@ client.on('interactionCreate', async (interaction) => {
   }
 });
 
-module.exports = { register };
+module.exports = {
+    register(client) {
+
+        client.on('messageCreate', msg => {
+            if (msg.content === '!crossword') {
+                msg.reply('🧩 Starting your crossword!');
+            }
+        });
+
+    }
+};
