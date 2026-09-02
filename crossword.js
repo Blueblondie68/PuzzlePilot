@@ -555,75 +555,12 @@ collector.on('end', (collected) => {
 //
 // --- SLASH COMMANDS GO HERE ---
 //
-client.on('interactionCreate', async (interaction) => {
-  if (!interaction.isChatInputCommand()) return;
-
-  // 🏆 Daily Leaderboard Command
-  if (interaction.commandName === 'crossword-leaderboard') {
-    const leaderboard = loadLeaderboard();
-
-    const entries = Object.entries(leaderboard)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 10);
-
-    if (entries.length === 0) {
-      await interaction.reply('No one has solved any clues today yet!');
-      return;
-    }
-
-    let text = '**🏆 Today’s Top Crossword Solvers**\n\n';
-    let position = 1;
-
-    for (const [userId, count] of entries) {
-      const user = await interaction.client.users.fetch(userId);
-      text += `${position}. **${user.username}** — ${count} clue${count === 1 ? '' : 's'}\n`;
-      position++;
-    }
-
-    await interaction.reply(text);
-    return;
-  }
-
-  // 📊 Crossword Stats Command
-  if (interaction.commandName === 'crossword-stats') {
-    const userId = interaction.user.id;
-
-    const players = loadPlayers();
-    const streaks = loadStreaks();
-    const leaderboard = loadLeaderboard();
-
-    const player = players[userId] || {
-      solved: {},
-      totalSolved: 0,
-      completions: 0,
-      bestStreak: 0
-    };
-
-    const todaySolved = leaderboard[userId] || 0;
-    const streak = streaks[userId]?.streak || 0;
-    const bestStreak = player.bestStreak || 0;
-
-    let text =
-      `📊 **Crossword Stats for ${interaction.user.username}**\n\n` +
-      `🧩 **Clues solved today:** ${todaySolved}\n` +
-      `🔥 **Daily streak:** ${streak} day${streak === 1 ? '' : 's'}\n` +
-      `📈 **Best streak:** ${bestStreak} day${bestStreak === 1 ? '' : 's'}\n` +
-      `🔢 **Total clues solved:** ${player.totalSolved}\n` +
-      `🏆 **Full crossword completions:** ${player.completions}\n`;
-
-    await interaction.reply(text);
-    return;
-  }
-});
-
 module.exports = {
     register(client) {
-
         client.on('messageCreate', msg => {
             if (msg.content === '!crossword') {
                 msg.reply('🧩 Starting your crossword!');
             }
         });
-
     }
 };
