@@ -22,7 +22,8 @@ const client = new Client({
 });
 
 // ⭐ CROSSWORD HOOK ⭐
-
+const crossword = require('./crossword');
+crossword.register(client);
 // ⭐ END ⭐
 
 
@@ -512,4 +513,3 @@ if (choice === 'fullcrossword') {
 });
 
 client.login(process.env.TOKEN);
-
