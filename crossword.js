@@ -368,8 +368,7 @@ function buildButtonRows() {
   );
 
   return [row1, row2, row3, row4];
-}
-
+// ⭐ CONTINUOUS SOLVE HANDLER ⭐
 
 // --- public API ---
 
@@ -402,6 +401,132 @@ function register(client) {
   // --- BUTTON HANDLER ---
   client.on('interactionCreate', async (interaction) => {
     if (!interaction.isButton()) return;
+// ⭐ CONTINUOUS CROSSWORD START ⭐
+if (interaction.customId === 'cw_continuous_start') {
+    const continuous = loadContinuous();
+    const userId = interaction.user.id;
+
+    // Generate a fresh puzzle for this user
+    continuous[userId] = {
+        puzzle: generateContinuousPuzzle(),
+        solved: {}
+    };
+
+    saveContinuous(continuous);
+
+    const puzzle = continuous[userId].puzzle;
+    const gridText = renderGridForPlayer(puzzle, continuous[userId]);
+
+    const acrossText = puzzle.across.map(a => `${a.id} ${a.clue}`).join('\n');
+    const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n`);
+
+    await interaction.reply({
+        content:
+            '🧩 **Continuous Crossword**\n\n' +
+            '```' + gridText + '```\n' +
+            '**Across**\n' + acrossText + '\n\n' +
+            '**Down**\n' + downText,
+        components: buildContinuousButtons()
+    });
+
+    return;
+}
+    // ⭐ CONTINUOUS SHOW GRID ⭐
+    if (interaction.customId === 'cw_cont_show_grid') {
+        const continuous = loadContinuous();
+        const userId = interaction.user.id;
+
+        const state = continuous[userId];
+        if (!state) {
+            await interaction.reply({ content: 'No continuous puzzle yet!', ephemeral: true });
+            return;
+        }
+
+        const gridText = renderGridForPlayer(state.puzzle, state);
+        await interaction.reply({ content: '```' + gridText + '```', ephemeral: true });
+        return;
+    }
+
+    // ⭐ CONTINUOUS SHOW CLUES ⭐
+    if (interaction.customId === 'cw_cont_show_clues') {
+        const continuous = loadContinuous();
+        const userId = interaction.user.id;
+
+        const state = continuous[userId];
+        if (!state) {
+            await interaction.reply({ content: 'No continuous puzzle yet!', ephemeral: true });
+            return;
+        }
+
+        const acrossText = state.puzzle.across.map(a => `${a.id} ${a.clue}`).join('\n');
+        const downText = state.puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
+
+        await interaction.reply({
+            content: '**Across**\n' + acrossText + '\n\n**Down**\n' + downText,
+            ephemeral: true
+        });
+        return;
+    }
+
+    // ⭐ CONTINUOUS SOLVE HANDLER ⭐
+    const contSolveMap = {
+        'cw_cont_solve_1A': '1A', 'cw_cont_solve_4A': '4A', 'cw_cont_solve_7A': '7A', 'cw_cont_solve_10A': '10A',
+        'cw_cont_solve_13A': '13A', 'cw_cont_solve_16A': '16A', 'cw_cont_solve_19A': '19A', 'cw_cont_solve_20A': '20A',
+        'cw_cont_solve_1D': '1D', 'cw_cont_solve_2D': '2D', 'cw_cont_solve_3D': '3D', 'cw_cont_solve_4D': '4D',
+        'cw_cont_solve_5D': '5D', 'cw_cont_solve_6D': '6D'
+    };
+
+    if (contSolveMap[interaction.customId]) {
+        const clueId = contSolveMap[interaction.customId];
+        const continuous = loadContinuous();
+        const userId = interaction.user.id;
+
+        const state = continuous[userId];
+        if (!state) {
+            await interaction.reply({ content: 'No continuous puzzle yet!', ephemeral: true });
+            return;
+        }
+
+        await interaction.reply({
+            content: `📝 Please type your answer for **${clueId}** (next message only).`,
+            ephemeral: true
+        });
+
+        const filter = (m) => m.author.id === userId;
+        const collector = interaction.channel.createMessageCollector({ filter, max: 1, time: 30000 });
+
+        collector.on('collect', (msg) => {
+            const answer = msg.content.trim().toUpperCase();
+
+            const entry =
+                state.puzzle.across.find(a => a.id === clueId) ||
+                state.puzzle.down.find(d => d.id === clueId);
+
+            if (!entry) {
+                msg.reply('Something went wrong, no such clue.');
+                return;
+            }
+
+            if (answer !== entry.answer) {
+                msg.reply('Not quite. Try again!');
+                return;
+            }
+
+            state.solved[clueId] = true;
+            saveContinuous(continuous);
+
+            const gridText = renderGridForPlayer(state.puzzle, state);
+            msg.reply('```' + gridText + '```');
+        });
+
+        collector.on('end', (collected) => {
+            if (collected.size === 0) {
+                interaction.followUp({ content: 'No answer received in time.', ephemeral: true });
+            }
+        });
+
+        return;
+    }
 
     const customId = interaction.customId;
     const puzzle = loadTodayPuzzle();
@@ -512,9 +637,9 @@ function register(client) {
     });
   });
 
-  // --- SLASH COMMANDS ---
+ // --- SLASH COMMANDS ---
   client.on('interactionCreate', async (interaction) => {
-    if (!interaction.isChatInputCommand()) return;
+     if (!interaction.isChatInputCommand()) return;
 
     const command = interaction.commandName;
 
@@ -571,4 +696,3 @@ function register(client) {
 
 
 module.exports = { register };
-
