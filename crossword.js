@@ -690,10 +690,6 @@ const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
       return;
     }
   });
-}
-
-  
-
 
 
 
