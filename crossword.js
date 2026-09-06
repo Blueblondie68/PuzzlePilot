@@ -419,7 +419,8 @@ if (interaction.customId === 'cw_continuous_start') {
     const gridText = renderGridForPlayer(puzzle, continuous[userId]);
 
     const acrossText = puzzle.across.map(a => `${a.id} ${a.clue}`).join('\n');
-    const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n`);
+    
+const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
 
     await interaction.reply({
         content:
