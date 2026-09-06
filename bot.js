@@ -450,6 +450,12 @@ client.on('interactionCreate', async interaction => {
         value: 'fullcrossword',
         description: 'Play the full daily crossword'
     },
+{
+    label: 'Continuous Crossword',
+    value: 'continuouscrossword',
+    description: 'Play a fresh crossword anytime'
+},
+
     {
         label: 'Connections',
         value: 'connections',
@@ -492,6 +498,19 @@ if (choice === 'fullcrossword') {
     await interaction.reply(
         `🧩 **Daily Full Crossword**\nType **!crossword** to begin!`
     );
+}
+if (choice === 'continuouscrossword') {
+    await interaction.reply({
+        content: '🧩 **Continuous Crossword**\nClick the button below to start a fresh puzzle!',
+        components: [
+            new ActionRowBuilder().addComponents(
+                new ButtonBuilder()
+                    .setCustomId('cw_continuous_start')
+                    .setLabel('Start Continuous Crossword')
+                    .setStyle(ButtonStyle.Success)
+            )
+        ]
+    });
 }
 
 
