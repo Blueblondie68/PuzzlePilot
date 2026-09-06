@@ -366,9 +366,11 @@ function buildButtonRows() {
     new ButtonBuilder().setCustomId('cw_show_grid').setLabel('Show Grid').setStyle(ButtonStyle.Secondary),
     new ButtonBuilder().setCustomId('cw_show_clues').setLabel('Show Clues').setStyle(ButtonStyle.Secondary)
   );
+return [row1, row2, row3, row4];
+}   // ⭐ CLOSE THE FUNCTION
 
-  return [row1, row2, row3, row4];
 // ⭐ CONTINUOUS SOLVE HANDLER ⭐
+
 
 // --- public API ---
 
@@ -637,7 +639,8 @@ const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
         interaction.followUp({ content: 'No answer received in time.', ephemeral: true });
       }
     });
- 
+ });
+
 
  // --- SLASH COMMANDS ---
   client.on('interactionCreate', async (interaction) => {
@@ -694,3 +697,5 @@ const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
 
 
 module.exports = { register };
+
+
