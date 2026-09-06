@@ -386,7 +386,8 @@ function register(client) {
 
     const gridText = renderGridForPlayer(puzzle, playerState);
     const acrossText = puzzle.across.map(a => `${a.id} ${a.clue}`).join('\n');
-    const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
+   
+const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
 
     await message.channel.send({
       content:
