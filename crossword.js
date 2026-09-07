@@ -639,7 +639,7 @@ const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
         interaction.followUp({ content: 'No answer received in time.', ephemeral: true });
       }
     });
- });
+ 
 
 
  // --- SLASH COMMANDS ---
