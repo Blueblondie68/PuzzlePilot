@@ -639,7 +639,15 @@ const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
         interaction.followUp({ content: 'No answer received in time.', ephemeral: true });
       }
     });
- 
+ collector.on('end', (collected) => {
+  if (collected.size === 0) {
+    interaction.followUp({ content: 'No answer received in time.', ephemeral: true });
+  }
+});
+});   // ← THIS closes the entire BUTTON HANDLER
+
+// --- SLASH COMMANDS ---
+
 
 
  // --- SLASH COMMANDS ---
@@ -746,10 +754,9 @@ function buildContinuousButtons() {
 
   return [row1, row2, row3, row4];
 }
-
+}
 
 module.exports = { register };
-
 
 
 
