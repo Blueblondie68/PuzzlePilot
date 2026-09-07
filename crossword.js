@@ -694,8 +694,63 @@ const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
     }
   });
 
+// --- CONTINUOUS MODE STORAGE ---
+
+const CONTINUOUS_FILE = path.join(__dirname, 'crossword_continuous.json');
+
+function loadContinuous() {
+  return loadJson(CONTINUOUS_FILE, {});
+}
+
+function saveContinuous(data) {
+  saveJson(CONTINUOUS_FILE, data);
+}
+
+// --- CONTINUOUS PUZZLE GENERATOR ---
+
+function generateContinuousPuzzle() {
+  // For now, reuse the daily generator
+  return generateDailyPuzzle();
+}
+
+// --- CONTINUOUS BUTTONS ---
+
+function buildContinuousButtons() {
+  const row1 = new ActionRowBuilder().addComponents(
+    new ButtonBuilder().setCustomId('cw_cont_solve_1A').setLabel('Solve 1A').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_solve_4A').setLabel('Solve 4A').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_solve_7A').setLabel('Solve 7A').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_solve_10A').setLabel('Solve 10A').setStyle(ButtonStyle.Primary)
+  );
+
+  const row2 = new ActionRowBuilder().addComponents(
+    new ButtonBuilder().setCustomId('cw_cont_solve_13A').setLabel('Solve 13A').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_solve_16A').setLabel('Solve 16A').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_solve_19A').setLabel('Solve 19A').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_solve_20A').setLabel('Solve 20A').setStyle(ButtonStyle.Primary)
+  );
+
+  const row3 = new ActionRowBuilder().addComponents(
+    new ButtonBuilder().setCustomId('cw_cont_solve_1D').setLabel('Solve 1D').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_solve_2D').setLabel('Solve 2D').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_solve_3D').setLabel('Solve 3D').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_solve_4D').setLabel('Solve 4D').setStyle(ButtonStyle.Primary)
+  );
+
+  const row4 = new ActionRowBuilder().addComponents(
+    new ButtonBuilder().setCustomId('cw_cont_solve_5D').setLabel('Solve 5D').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_solve_6D').setLabel('Solve 6D').setStyle(ButtonStyle.Primary),
+    new ButtonBuilder().setCustomId('cw_cont_show_grid').setLabel('Show Grid').setStyle(ButtonStyle.Secondary),
+    new ButtonBuilder().setCustomId('cw_cont_show_clues').setLabel('Show Clues').setStyle(ButtonStyle.Secondary)
+  );
+
+  return [row1, row2, row3, row4];
+}
 
 
 module.exports = { register };
+
+
+
 
 
