@@ -1,763 +1,235 @@
-const fs = require('fs');
-const path = require('path');
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+// crossword.js
+// Self-contained crossword system: grid, clues, buttons, modals, updates.
 
-const TODAY_FILE = path.join(__dirname, 'crossword_today.json');
-const PLAYERS_FILE = path.join(__dirname, 'crossword_players.json');
-const STREAKS_FILE = path.join(__dirname, 'crossword_streaks.json');
-const LEADERBOARD_FILE = path.join(__dirname, 'crossword_leaderboard.json');
+// ─────────────────────────────────────────────────────────────
+// CONFIG
+// ─────────────────────────────────────────────────────────────
 
-// Simple word list (you can expand this later)
-const WORDS = [
-  'CAT', 'DOG', 'BEE', 'BAT', 'SUN', 'MOON', 'STAR', 'RAIN', 'SNOW', 'WIND',
-  'TREE', 'BIRD', 'FISH', 'LION', 'BEAR', 'FROG', 'CRAB', 'DEER', 'GOAT',
-  'POND', 'LAKE', 'RIVER', 'ROAD', 'CLOUD', 'STONE', 'SAND', 'GRASS', 'LEAF'
-];
+const {
+    ActionRowBuilder,
+    ButtonBuilder,
+    ButtonStyle,
+    ModalBuilder,
+    TextInputBuilder,
+    TextInputStyle
+} = require('discord.js');
 
-// --- helpers for JSON storage ---
+const BLOCK = '█';
 
-function loadJson(file, fallback) {
-  try {
-    if (!fs.existsSync(file)) return fallback;
-    const raw = fs.readFileSync(file, 'utf8');
-    return JSON.parse(raw);
-  } catch (e) {
-    console.log(`[crossword] Failed to load ${file}, using fallback.`);
-    return fallback;
-  }
-}
+// You can add more sizes later (7, 9, 11, etc.)
+const AVAILABLE_SIZES = [5];
 
-function saveJson(file, data) {
-  try {
-    fs.writeFileSync(file, JSON.stringify(data, null, 2), 'utf8');
-  } catch (e) {
-    console.log(`[crossword] Failed to save ${file}:`, e.message);
-  }
-}
-
-// --- daily puzzle generation ---
-
-function generateEmptyGrid(size = 5) {
-  const grid = [];
-  for (let r = 0; r < size; r++) {
-    const row = [];
-    for (let c = 0; c < size; c++) {
-      row.push({ char: null, block: false, number: null });
+// Simple sample clues for now
+const SAMPLE_CLUES = {
+    5: {
+        across: [
+            { id: '1A', text: 'A small domesticated feline' },
+            { id: '3A', text: 'Opposite of down' },
+            { id: '5A', text: 'A type of tree' }
+        ],
+        down: [
+            { id: '1D', text: 'A crustacean' },
+            { id: '2D', text: 'A fruit' },
+            { id: '4D', text: 'A musical note' }
+        ]
     }
-    grid.push(row);
-  }
-  return grid;
+};
+
+// State (simple in-memory; per-guild/per-channel can be added later)
+let currentGrid = null;
+let currentSize = 5;
+let crosswordMessageId = null;
+
+// ─────────────────────────────────────────────────────────────
+// GRID CREATION (TEMP: simple pattern, not full generator yet)
+// ─────────────────────────────────────────────────────────────
+
+function createSampleGrid(size) {
+    // For now, a fixed 5x5 layout with some blocks.
+    // Later we’ll replace this with a real interlocking generator.
+    if (size !== 5) size = 5;
+
+    return [
+        [null, null, null, BLOCK, null],
+        [null, BLOCK, null, null, null],
+        [null, null, null, null, null],
+        [BLOCK, null, null, BLOCK, null],
+        [null, null, null, null, BLOCK]
+    ];
 }
 
-// very simple pattern: fixed blocks, words filled row/column-wise
-function generateDailyPuzzle() {
-  const size = 5;
-  const grid = generateEmptyGrid(size);
+// ─────────────────────────────────────────────────────────────
+// GRID RENDERING (BOX-DRAWING)
+// ─────────────────────────────────────────────────────────────
 
-  // fixed block pattern (you can tweak later)
-  const blocks = [
-    [0, 3], [0, 4],
-    [1, 1],
-    [3, 0], [3, 3],
-    [4, 0], [4, 1]
-  ];
-  blocks.forEach(([r, c]) => {
-    grid[r][c].block = true;
-  });
+function renderGrid(grid) {
+    const rows = grid.length;
+    const cols = grid[0].length;
 
-  // choose some words
-  function pickWord(len) {
-    const candidates = WORDS.filter(w => w.length === len);
-    if (!candidates.length) return null;
-    return candidates[Math.floor(Math.random() * candidates.length)];
-  }
+    let out = '┌' + '───┬'.repeat(cols - 1) + '───┐\n';
 
-  // across slots (row, startCol, length)
-  const acrossSlots = [
-    { id: '1A', row: 0, col: 0, len: 3 },
-    { id: '4A', row: 1, col: 2, len: 2 },
-    { id: '7A', row: 1, col: 4, len: 1 },
-    { id: '10A', row: 2, col: 0, len: 2 },
-    { id: '13A', row: 2, col: 2, len: 3 },
-    { id: '16A', row: 3, col: 1, len: 2 },
-    { id: '19A', row: 3, col: 4, len: 1 },
-    { id: '20A', row: 4, col: 2, len: 3 }
-  ];
-
-  const downSlots = [
-    { id: '1D', row: 0, col: 0, len: 3 },
-    { id: '2D', row: 0, col: 2, len: 3 },
-    { id: '3D', row: 0, col: 3, len: 2 },
-    { id: '4D', row: 0, col: 4, len: 2 },
-    { id: '5D', row: 1, col: 2, len: 4 },
-    { id: '6D', row: 1, col: 4, len: 4 }
-  ];
-
-  const across = [];
-  const down = [];
-
-  // fill across
-  for (const slot of acrossSlots) {
-    const word = pickWord(slot.len) || 'X'.repeat(slot.len);
-    across.push({ id: slot.id, answer: word, clue: makeClue(word) });
-    for (let i = 0; i < slot.len; i++) {
-      const cell = grid[slot.row][slot.col + i];
-      cell.char = word[i];
-    }
-  }
-
-  // fill down (respect existing letters)
-  for (const slot of downSlots) {
-    let word = pickWord(slot.len) || 'X'.repeat(slot.len);
-    down.push({ id: slot.id, answer: word, clue: makeClue(word) });
-    for (let i = 0; i < slot.len; i++) {
-      const r = slot.row + i;
-      const c = slot.col;
-      if (grid[r] && grid[r][c] && !grid[r][c].block) {
-        grid[r][c].char = word[i];
-      }
-    }
-  }
-
-  // assign numbers to starting cells
-  let nextNumber = 1;
-  for (let r = 0; r < size; r++) {
-    for (let c = 0; c < size; c++) {
-      const cell = grid[r][c];
-      if (cell.block) continue;
-
-      const startsAcross =
-        (c === 0 || grid[r][c - 1].block) &&
-        (c + 1 < size && !grid[r][c + 1].block);
-
-      const startsDown =
-        (r === 0 || grid[r - 1][c].block) &&
-        (r + 1 < size && !grid[r + 1][c].block);
-
-      if (startsAcross || startsDown) {
-        cell.number = nextNumber++;
-      }
-    }
-  }
-
-  console.log('[crossword] Generated new daily crossword.');
-  return { grid, across, down };
-}
-
-// --- REAL CLUE GENERATOR ---
-
-function makeClue(word) {
-  const clues = {
-    CAT: "Small domesticated feline",
-    DOG: "Common household pet that barks",
-    BEE: "Striped insect that makes honey",
-    BAT: "Flying mammal often seen at night",
-    SUN: "Star at the centre of the solar system",
-    MOON: "Earth’s natural satellite",
-    STAR: "Bright point of light in the night sky",
-    RAIN: "Water falling from clouds",
-    SNOW: "Frozen white flakes falling from the sky",
-    WIND: "Moving air",
-    TREE: "Tall plant with a trunk and branches",
-    BIRD: "Animal with feathers and wings",
-    FISH: "Animal that lives in water and has gills",
-    LION: "Large wild cat known as the king of the jungle",
-    BEAR: "Large furry mammal that hibernates",
-    FROG: "Green amphibian that jumps",
-    CRAB: "Side-walking sea creature with claws",
-    DEER: "Graceful animal with antlers",
-    GOAT: "Horned farm animal known for climbing",
-    POND: "Small body of still water",
-    LAKE: "Large inland body of water",
-    RIVER: "Flowing body of water",
-    ROAD: "Path for vehicles",
-    CLOUD: "White or grey mass in the sky",
-    STONE: "Small piece of rock",
-    SAND: "Tiny grains found on beaches",
-    GRASS: "Green plant covering lawns and fields",
-    LEAF: "Flat green part of a plant"
-  };
-
-  return clues[word] || `No clue available for ${word}`;
-}
-function checkIfCompleted(puzzle, playerState) {
-  const solved = playerState.solved || {};
-
-  const allAcrossSolved = puzzle.across.every(a => solved[a.id]);
-  const allDownSolved = puzzle.down.every(d => solved[d.id]);
-
-  return allAcrossSolved && allDownSolved;
-}
-
-// --- rendering ---
-
-function renderGridForPlayer(puzzle, playerState) {
-  const size = puzzle.grid.length;
-  const lines = [];
-  lines.push('+---+---+---+---+---+');
-  for (let r = 0; r < size; r++) {
-    let row = '|';
-    for (let c = 0; c < size; c++) {
-      const cell = puzzle.grid[r][c];
-      let display = ' ';
-      if (cell.block) {
-        display = '█';
-      } else {
-        const solvedChar = getSolvedCharAt(puzzle, playerState, r, c);
-        if (solvedChar) {
-          display = solvedChar;
-        } else if (cell.number !== null) {
-          display = String(cell.number).padStart(1, ' ');
-        } else {
-          display = ' ';
+    for (let r = 0; r < rows; r++) {
+        out += '│';
+        for (let c = 0; c < cols; c++) {
+            const cell = grid[r][c];
+            const ch = cell === BLOCK ? BLOCK : (cell || ' ');
+            out += ` ${ch} │`;
         }
-      }
-      row += ` ${display} |`;
+        out += '\n';
+        if (r < rows - 1) {
+            out += '├' + '───┼'.repeat(cols - 1) + '───┤\n';
+        }
     }
-    lines.push(row);
-    lines.push('+---+---+---+---+---+');
-  }
-  return lines.join('\n');
+
+    out += '└' + '───┴'.repeat(cols - 1) + '───┘';
+    return out;
 }
 
-function getSolvedCharAt(puzzle, playerState, r, c) {
-  if (!playerState || !playerState.solved) return null;
+// ─────────────────────────────────────────────────────────────
+// CLUE RENDERING
+// ─────────────────────────────────────────────────────────────
 
-  for (const entry of puzzle.across) {
-    if (!playerState.solved[entry.id]) continue;
-    const coords = getAcrossCoords(puzzle, entry.id);
-    if (!coords) continue;
-    for (let i = 0; i < coords.length; i++) {
-      const [rr, cc] = coords[i];
-      if (rr === r && cc === c) {
-        return entry.answer[i];
-      }
+function renderClues(size) {
+    const set = SAMPLE_CLUES[size] || { across: [], down: [] };
+
+    let out = '**Across**\n';
+    for (const clue of set.across) {
+        out += `${clue.id} ${clue.text}\n`;
     }
-  }
 
-  for (const entry of puzzle.down) {
-    if (!playerState.solved[entry.id]) continue;
-    const coords = getDownCoords(puzzle, entry.id);
-    if (!coords) continue;
-    for (let i = 0; i < coords.length; i++) {
-      const [rr, cc] = coords[i];
-      if (rr === r && cc === c) {
-        return entry.answer[i];
-      }
+    out += '\n**Down**\n';
+    for (const clue of set.down) {
+        out += `${clue.id} ${clue.text}\n`;
     }
-  }
 
-  return null;
+    return out;
 }
 
-function getAcrossCoords(puzzle, id) {
-  const map = {
-    '1A': { row: 0, col: 0, len: 3 },
-    '4A': { row: 1, col: 2, len: 2 },
-    '7A': { row: 1, col: 4, len: 1 },
-    '10A': { row: 2, col: 0, len: 2 },
-    '13A': { row: 2, col: 2, len: 3 },
-    '16A': { row: 3, col: 1, len: 2 },
-    '19A': { row: 3, col: 4, len: 1 },
-    '20A': { row: 4, col: 2, len: 3 }
-  };
-  const slot = map[id];
-  if (!slot) return null;
-  const coords = [];
-  for (let i = 0; i < slot.len; i++) {
-    coords.push([slot.row, slot.col + i]);
-  }
-  return coords;
+// ─────────────────────────────────────────────────────────────
+// BUTTONS (CELLS SHOW CURRENT LETTER OR BLOCK)
+// ─────────────────────────────────────────────────────────────
+
+function buildGridComponents(grid) {
+    const rows = grid.length;
+    const cols = grid[0].length;
+    const components = [];
+
+    for (let r = 0; r < rows; r++) {
+        const row = new ActionRowBuilder();
+        for (let c = 0; c < cols; c++) {
+            const cell = grid[r][c];
+            const label = cell === BLOCK ? BLOCK : (cell || '_');
+
+            row.addComponents(
+                new ButtonBuilder()
+                    .setCustomId(`cw_cell_${r}_${c}`)
+                    .setLabel(label)
+                    .setStyle(cell === BLOCK ? ButtonStyle.Secondary : ButtonStyle.Primary)
+                    .setDisabled(cell === BLOCK)
+            );
+        }
+        components.push(row);
+    }
+
+    return components;
 }
 
-function getDownCoords(puzzle, id) {
-  const map = {
-    '1D': { row: 0, col: 0, len: 3 },
-    '2D': { row: 0, col: 2, len: 3 },
-    '3D': { row: 0, col: 3, len: 2 },
-    '4D': { row: 0, col: 4, len: 2 },
-    '5D': { row: 1, col: 2, len: 4 },
-    '6D': { row: 1, col: 4, len: 4 }
-  };
-  const slot = map[id];
-  if (!slot) return null;
-  const coords = [];
-  for (let i = 0; i < slot.len; i++) {
-    coords.push([slot.row + i, slot.col]);
-  }
-  return coords;
-}
+// ─────────────────────────────────────────────────────────────
+// PUBLIC: START CROSSWORD (COMMAND HANDLER)
+// ─────────────────────────────────────────────────────────────
 
-// --- player state ---
+async function startCrossword(interaction) {
+    // Choose size (for now always 5; later random from AVAILABLE_SIZES)
+    currentSize = 5;
+    currentGrid = createSampleGrid(currentSize);
 
+    const gridText = renderGrid(currentGrid);
+    const cluesText = renderClues(currentSize);
+    const components = buildGridComponents(currentGrid);
 
-function loadPlayers() {
-  return loadJson(PLAYERS_FILE, {});
-}
-function loadTodayPuzzle() {
-  let today = loadJson(TODAY_FILE, null);
-  if (!today) {
-    today = generateDailyPuzzle();
-    saveJson(TODAY_FILE, today);
-
-    // 🧹 Reset daily leaderboard
-    saveLeaderboard({});
-  }
-  return today;
-}
-
-function savePlayers(players) {
-  saveJson(PLAYERS_FILE, players);
-}
-function loadStreaks() {
-  return loadJson(STREAKS_FILE, {});
-}
-
-function saveStreaks(streaks) {
-  saveJson(STREAKS_FILE, streaks);
-}
-function loadLeaderboard() {
-  return loadJson(LEADERBOARD_FILE, {});
-}
-
-function saveLeaderboard(board) {
-  saveJson(LEADERBOARD_FILE, board);
-}
-function getPlayerState(players, userId) {
-  if (!players[userId]) {
-    players[userId] = {
-      solved: {},
-      totalSolved: 0,
-      completions: 0,
-      bestStreak: 0
-    };
-  }
-  return players[userId];
-}
-
-
-// --- buttons ---
-
-function buildButtonRows() {
-  const row1 = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId('cw_solve_1A').setLabel('Solve 1A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_4A').setLabel('Solve 4A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_7A').setLabel('Solve 7A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_10A').setLabel('Solve 10A').setStyle(ButtonStyle.Primary)
-  );
-
-  const row2 = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId('cw_solve_13A').setLabel('Solve 13A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_16A').setLabel('Solve 16A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_19A').setLabel('Solve 19A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_20A').setLabel('Solve 20A').setStyle(ButtonStyle.Primary)
-  );
-
-  const row3 = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId('cw_solve_1D').setLabel('Solve 1D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_2D').setLabel('Solve 2D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_3D').setLabel('Solve 3D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_4D').setLabel('Solve 4D').setStyle(ButtonStyle.Primary)
-  );
-
-  const row4 = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId('cw_solve_5D').setLabel('Solve 5D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_solve_6D').setLabel('Solve 6D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_show_grid').setLabel('Show Grid').setStyle(ButtonStyle.Secondary),
-    new ButtonBuilder().setCustomId('cw_show_clues').setLabel('Show Clues').setStyle(ButtonStyle.Secondary)
-  );
-return [row1, row2, row3, row4];
-}   // ⭐ CLOSE THE FUNCTION
-
-// ⭐ CONTINUOUS SOLVE HANDLER ⭐
-
-
-// --- public API ---
-
-function register(client) {
-  console.log('[crossword] Crossword engine registered.');
-
-  // --- MESSAGE HANDLER ---
-  client.on('messageCreate', async (message) => {
-    if (message.author.bot) return;
-    if (!message.content.toLowerCase().startsWith('!crossword')) return;
-
-    const puzzle = loadTodayPuzzle();
-    const players = loadPlayers();
-    const playerState = getPlayerState(players, message.author.id);
-
-    const gridText = renderGridForPlayer(puzzle, playerState);
-    const acrossText = puzzle.across.map(a => `${a.id} ${a.clue}`).join('\n');
-   
-const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
-
-    await message.channel.send({
-      content:
-        '🧩 **Daily Crossword**\n\n' +
-        '```' + gridText + '```\n' +
-        '**Across**\n' + acrossText + '\n\n' +
-        '**Down**\n' + downText,
-      components: buildButtonRows()
-    });
-  });
-
-  // --- BUTTON HANDLER ---
-  client.on('interactionCreate', async (interaction) => {
-    if (!interaction.isButton()) return;
-// ⭐ CONTINUOUS CROSSWORD START ⭐
-if (interaction.customId === 'cw_continuous_start') {
-    const continuous = loadContinuous();
-    const userId = interaction.user.id;
-
-    // Generate a fresh puzzle for this user
-    continuous[userId] = {
-        puzzle: generateContinuousPuzzle(),
-        solved: {}
-    };
-
-    saveContinuous(continuous);
-
-    const puzzle = continuous[userId].puzzle;
-    const gridText = renderGridForPlayer(puzzle, continuous[userId]);
-
-    const acrossText = puzzle.across.map(a => `${a.id} ${a.clue}`).join('\n');
-    
-const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
-
-    await interaction.reply({
+    const msg = await interaction.reply({
         content:
-            '🧩 **Continuous Crossword**\n\n' +
-            '```' + gridText + '```\n' +
-            '**Across**\n' + acrossText + '\n\n' +
-            '**Down**\n' + downText,
-        components: buildContinuousButtons()
+            '🧩 **Crossword**\n\n' +
+            '```' + gridText + '```\n\n' +
+            cluesText,
+        components
     });
 
-    return;
+    crosswordMessageId = msg.id;
 }
-    // ⭐ CONTINUOUS SHOW GRID ⭐
-    if (interaction.customId === 'cw_cont_show_grid') {
-        const continuous = loadContinuous();
-        const userId = interaction.user.id;
 
-        const state = continuous[userId];
-        if (!state) {
-            await interaction.reply({ content: 'No continuous puzzle yet!', ephemeral: true });
+// ─────────────────────────────────────────────────────────────
+// PUBLIC: HANDLE INTERACTIONS (BUTTONS + MODALS)
+// ─────────────────────────────────────────────────────────────
+
+async function handleInteraction(interaction) {
+    // Button: cell click → show modal
+    if (interaction.isButton() && interaction.customId.startsWith('cw_cell_')) {
+        const [, , rStr, cStr] = interaction.customId.split('_');
+        const row = parseInt(rStr, 10);
+        const col = parseInt(cStr, 10);
+
+        const modal = new ModalBuilder()
+            .setCustomId(`cw_modal_${row}_${col}`)
+            .setTitle('Enter letter')
+            .addComponents(
+                new ActionRowBuilder().addComponents(
+                    new TextInputBuilder()
+                        .setCustomId('cw_letter')
+                        .setLabel(`Letter for (${row + 1}, ${col + 1})`)
+                        .setStyle(TextInputStyle.Short)
+                        .setMaxLength(1)
+                        .setRequired(true)
+                )
+            );
+
+        await interaction.showModal(modal);
+        return;
+    }
+
+    // Modal: letter submit → update grid + buttons + message
+    if (interaction.isModalSubmit() && interaction.customId.startsWith('cw_modal_')) {
+        // Prevent "PuzzlePilot was too slow"
+        await interaction.deferUpdate();
+
+        const [, , rStr, cStr] = interaction.customId.split('_');
+        const row = parseInt(rStr, 10);
+        const col = parseInt(cStr, 10);
+
+        const letterRaw = interaction.fields.getTextInputValue('cw_letter') || ' ';
+        const letter = letterRaw.trim().toUpperCase().slice(0, 1);
+
+        if (!currentGrid) {
+            // Safety: no active grid
             return;
         }
 
-        const gridText = renderGridForPlayer(state.puzzle, state);
-        await interaction.reply({ content: '```' + gridText + '```', ephemeral: true });
-        return;
-    }
+        currentGrid[row][col] = letter || null;
 
-    // ⭐ CONTINUOUS SHOW CLUES ⭐
-    if (interaction.customId === 'cw_cont_show_clues') {
-        const continuous = loadContinuous();
-        const userId = interaction.user.id;
+        const gridText = renderGrid(currentGrid);
+        const cluesText = renderClues(currentSize);
+        const components = buildGridComponents(currentGrid);
 
-        const state = continuous[userId];
-        if (!state) {
-            await interaction.reply({ content: 'No continuous puzzle yet!', ephemeral: true });
-            return;
-        }
-
-        const acrossText = state.puzzle.across.map(a => `${a.id} ${a.clue}`).join('\n');
-        const downText = state.puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
-
-        await interaction.reply({
-            content: '**Across**\n' + acrossText + '\n\n**Down**\n' + downText,
-            ephemeral: true
-        });
-        return;
-    }
-
-    // ⭐ CONTINUOUS SOLVE HANDLER ⭐
-    const contSolveMap = {
-        'cw_cont_solve_1A': '1A', 'cw_cont_solve_4A': '4A', 'cw_cont_solve_7A': '7A', 'cw_cont_solve_10A': '10A',
-        'cw_cont_solve_13A': '13A', 'cw_cont_solve_16A': '16A', 'cw_cont_solve_19A': '19A', 'cw_cont_solve_20A': '20A',
-        'cw_cont_solve_1D': '1D', 'cw_cont_solve_2D': '2D', 'cw_cont_solve_3D': '3D', 'cw_cont_solve_4D': '4D',
-        'cw_cont_solve_5D': '5D', 'cw_cont_solve_6D': '6D'
-    };
-
-    if (contSolveMap[interaction.customId]) {
-        const clueId = contSolveMap[interaction.customId];
-        const continuous = loadContinuous();
-        const userId = interaction.user.id;
-
-        const state = continuous[userId];
-        if (!state) {
-            await interaction.reply({ content: 'No continuous puzzle yet!', ephemeral: true });
-            return;
-        }
-
-        await interaction.reply({
-            content: `📝 Please type your answer for **${clueId}** (next message only).`,
-            ephemeral: true
-        });
-
-        const filter = (m) => m.author.id === userId;
-        const collector = interaction.channel.createMessageCollector({ filter, max: 1, time: 30000 });
-
-        collector.on('collect', (msg) => {
-            const answer = msg.content.trim().toUpperCase();
-
-            const entry =
-                state.puzzle.across.find(a => a.id === clueId) ||
-                state.puzzle.down.find(d => d.id === clueId);
-
-            if (!entry) {
-                msg.reply('Something went wrong, no such clue.');
-                return;
-            }
-
-            if (answer !== entry.answer) {
-                msg.reply('Not quite. Try again!');
-                return;
-            }
-
-            state.solved[clueId] = true;
-            saveContinuous(continuous);
-
-            const gridText = renderGridForPlayer(state.puzzle, state);
-            msg.reply('```' + gridText + '```');
-        });
-
-        collector.on('end', (collected) => {
-            if (collected.size === 0) {
-                interaction.followUp({ content: 'No answer received in time.', ephemeral: true });
-            }
+        // Edit the original crossword message
+        await interaction.editReply({
+            content:
+                '🧩 **Crossword**\n\n' +
+                '```' + gridText + '```\n\n' +
+                cluesText,
+            components
         });
 
         return;
     }
-
-    const customId = interaction.customId;
-    const puzzle = loadTodayPuzzle();
-    const players = loadPlayers();
-    const playerState = getPlayerState(players, interaction.user.id);
-
-    if (customId === 'cw_show_grid') {
-      const gridText = renderGridForPlayer(puzzle, playerState);
-      await interaction.reply({ content: '```' + gridText + '```', ephemeral: true });
-      return;
-    }
-
-    if (customId === 'cw_show_clues') {
-      const acrossText = puzzle.across.map(a => `${a.id} ${a.clue}`).join('\n');
-      const downText = puzzle.down.map(d => `${d.id} ${d.clue}`).join('\n');
-
-      await interaction.reply({
-        content: '**Across**\n' + acrossText + '\n\n**Down**\n' + downText,
-        ephemeral: true
-      });
-      return;
-    }
-
-    const solveMap = {
-      'cw_solve_1A': '1A', 'cw_solve_4A': '4A', 'cw_solve_7A': '7A', 'cw_solve_10A': '10A',
-      'cw_solve_13A': '13A', 'cw_solve_16A': '16A', 'cw_solve_19A': '19A', 'cw_solve_20A': '20A',
-      'cw_solve_1D': '1D', 'cw_solve_2D': '2D', 'cw_solve_3D': '3D', 'cw_solve_4D': '4D',
-      'cw_solve_5D': '5D', 'cw_solve_6D': '6D'
-    };
-
-    if (!solveMap[customId]) return;
-
-    const clueId = solveMap[customId];
-
-    await interaction.reply({
-      content: `📝 Please type your answer for **${clueId}** (next message only).`,
-      ephemeral: true
-    });
-
-    const filter = (m) => m.author.id === interaction.user.id;
-    const collector = interaction.channel.createMessageCollector({ filter, max: 1, time: 30000 });
-
-    collector.on('collect', (msg) => {
-      const answer = msg.content.trim().toUpperCase();
-
-      const entry =
-        puzzle.across.find(a => a.id === clueId) ||
-        puzzle.down.find(d => d.id === clueId);
-
-      if (!entry) {
-        msg.reply('Something went wrong, no such clue.');
-        return;
-      }
-
-      if (answer !== entry.answer) {
-        msg.reply('Not quite. Try again!');
-        return;
-      }
-
-      playerState.solved[clueId] = true;
-      playerState.totalSolved += 1;
-      savePlayers(players);
-
-      // streak logic
-      const streaks = loadStreaks();
-      const userId = msg.author.id;
-
-      const today = new Date().toDateString();
-      const lastSolve = streaks[userId]?.lastSolve || null;
-      const currentStreak = streaks[userId]?.streak || 0;
-
-      let newStreak = currentStreak;
-
-      if (!lastSolve) {
-        newStreak = 1;
-      } else {
-        const lastDate = new Date(lastSolve).toDateString();
-        const yesterday = new Date(Date.now() - 86400000).toDateString();
-
-        if (lastDate === today) newStreak = currentStreak;
-        else if (lastDate === yesterday) newStreak = currentStreak + 1;
-        else newStreak = 1;
-      }
-
-      streaks[userId] = { streak: newStreak, lastSolve: today };
-      saveStreaks(streaks);
-
-      // leaderboard
-      const leaderboard = loadLeaderboard();
-      leaderboard[userId] = (leaderboard[userId] || 0) + 1;
-      saveLeaderboard(leaderboard);
-
-      const gridText = renderGridForPlayer(puzzle, playerState);
-      msg.reply('```' + gridText + '```');
-
-      if (checkIfCompleted(puzzle, playerState)) {
-        msg.channel.send(
-          `🎉 **${msg.author.username} has completed the entire crossword!**\n` +
-          `🔥 **Daily Streak:** ${newStreak} day${newStreak === 1 ? '' : 's'}!`
-        );
-      }
-    });
-
-    collector.on('end', (collected) => {
-      if (collected.size === 0) {
-        interaction.followUp({ content: 'No answer received in time.', ephemeral: true });
-      }
-    });
- collector.on('end', (collected) => {
-  if (collected.size === 0) {
-    interaction.followUp({ content: 'No answer received in time.', ephemeral: true });
-  }
-});
-});   // ← THIS closes the entire BUTTON HANDLER
-
-// --- SLASH COMMANDS ---
-
-
-
- // --- SLASH COMMANDS ---
-  client.on('interactionCreate', async (interaction) => {
-     if (!interaction.isChatInputCommand()) return;
-
-    const command = interaction.commandName;
-
-    if (command === 'crossword-leaderboard') {
-      const leaderboard = loadLeaderboard();
-
-      if (!leaderboard || Object.keys(leaderboard).length === 0) {
-        await interaction.reply({ content: '🏆 No entries yet.', ephemeral: true });
-        return;
-      }
-
-      const sorted = Object.entries(leaderboard)
-        .sort((a, b) => b[1] - a[1])
-        .map(([userId, score], i) => `${i + 1}. <@${userId}> — **${score}** clues`)
-        .join('\n');
-
-      await interaction.reply({
-        content: `🏆 **Daily Crossword Leaderboard**\n\n${sorted}`,
-        ephemeral: true
-      });
-      return;
-    }
-
-    if (command === 'crossword-stats') {
-      const players = loadPlayers();
-      const streaks = loadStreaks();
-      const userId = interaction.user.id;
-
-      const playerState = players[userId] || {
-        totalSolved: 0,
-        completions: 0,
-        bestStreak: 0
-      };
-
-      const streak = streaks[userId]?.streak || 0;
-      const bestStreak = streaks[userId]?.bestStreak || 0;
-
-      await interaction.reply({
-        content:
-          `📈 **Your Crossword Stats**\n\n` +
-          `🧩 Total Solved: **${playerState.totalSolved}**\n` +
-          `🔥 Current Streak: **${streak} days**\n` +
-          `🏅 Best Streak: **${bestStreak} days**`,
-        ephemeral: true
-      });
-      return;
-    }
-  });
-
-// --- CONTINUOUS MODE STORAGE ---
-
-const CONTINUOUS_FILE = path.join(__dirname, 'crossword_continuous.json');
-
-function loadContinuous() {
-  return loadJson(CONTINUOUS_FILE, {});
 }
 
-function saveContinuous(data) {
-  saveJson(CONTINUOUS_FILE, data);
-}
+// ─────────────────────────────────────────────────────────────
+// EXPORTS
+// ─────────────────────────────────────────────────────────────
 
-// --- CONTINUOUS PUZZLE GENERATOR ---
-
-function generateContinuousPuzzle() {
-  // For now, reuse the daily generator
-  return generateDailyPuzzle();
-}
-
-// --- CONTINUOUS BUTTONS ---
-
-function buildContinuousButtons() {
-  const row1 = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId('cw_cont_solve_1A').setLabel('Solve 1A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_solve_4A').setLabel('Solve 4A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_solve_7A').setLabel('Solve 7A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_solve_10A').setLabel('Solve 10A').setStyle(ButtonStyle.Primary)
-  );
-
-  const row2 = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId('cw_cont_solve_13A').setLabel('Solve 13A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_solve_16A').setLabel('Solve 16A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_solve_19A').setLabel('Solve 19A').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_solve_20A').setLabel('Solve 20A').setStyle(ButtonStyle.Primary)
-  );
-
-  const row3 = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId('cw_cont_solve_1D').setLabel('Solve 1D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_solve_2D').setLabel('Solve 2D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_solve_3D').setLabel('Solve 3D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_solve_4D').setLabel('Solve 4D').setStyle(ButtonStyle.Primary)
-  );
-
-  const row4 = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId('cw_cont_solve_5D').setLabel('Solve 5D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_solve_6D').setLabel('Solve 6D').setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId('cw_cont_show_grid').setLabel('Show Grid').setStyle(ButtonStyle.Secondary),
-    new ButtonBuilder().setCustomId('cw_cont_show_clues').setLabel('Show Clues').setStyle(ButtonStyle.Secondary)
-  );
-
-  return [row1, row2, row3, row4];
-}
-}
-
-module.exports = { register };
-
-
-
+module.exports = {
+    startCrossword,
+    handleInteraction,
+    BLOCK
+};
 
