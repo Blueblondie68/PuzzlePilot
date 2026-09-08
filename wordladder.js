@@ -1,6 +1,7 @@
 // wordladder.js
-// Daily + continuous Word Ladder with single-text-box modal input.
+// Daily + continuous Word Ladder with difficulty selection.
 
+// Discord components
 const {
     ActionRowBuilder,
     ButtonBuilder,
@@ -10,27 +11,31 @@ const {
     TextInputStyle
 } = require('discord.js');
 
-const wordLadders = [
-    ["cat", "cot", "dot", "dog"],
-    ["tea", "sea", "see", "bee"],
-    ["map", "mop", "pop", "pip"],
-    ["fog", "hog", "hot", "hat"],
-    ["pen", "pan", "tan", "tap"],
-];
+// Load your Pack 1 ladders
+const pack1 = require('./wordladder_pack1.js');
 
-function getDifficulty(ladder) {
-    const length = ladder.length;
-    if (length <= 3) return "Easy";
-    if (length <= 5) return "Medium";
+// Combine all ladders into a single structure
+const wordLadders = {
+    easy: pack1.easy,
+    medium: pack1.medium,
+    hard: pack1.hard
+};
+
+// Difficulty label helper
+function getDifficultyLabel(arrName) {
+    if (arrName === "easy") return "Easy";
+    if (arrName === "medium") return "Medium";
     return "Hard";
 }
 
-function generateWordLadder() {
-    return wordLadders[Math.floor(Math.random() * wordLadders.length)];
+// Pick a random ladder from a difficulty group
+function generateWordLadder(difficulty) {
+    const group = wordLadders[difficulty];
+    return group[Math.floor(Math.random() * group.length)];
 }
 
 // DAILY LADDER (bot.js will set this)
-let todaysLadder = generateWordLadder();
+let todaysLadder = generateWordLadder("medium"); // default until bot.js sets it
 
 function setTodaysLadder(ladder) {
     todaysLadder = ladder;
@@ -39,12 +44,14 @@ function setTodaysLadder(ladder) {
 // Start daily ladder (from /daily menu)
 async function startDaily(interaction) {
     const ladder = todaysLadder;
+
     await interaction.reply({
         content:
             `🧩 **Daily Word Ladder**\n` +
-            `Start: **${ladder[0]}**\n` +
-            `Difficulty: **${getDifficulty(ladder)}**\n` +
-            `Steps: ${ladder.length} words\n\n` +
+            `Start: **${ladder.start}**\n` +
+            `End: **${ladder.end}**\n` +
+            `Difficulty: **Daily**\n` +
+            `Steps: ${ladder.steps.length + 2} words\n\n` +
             `Click **Solve Ladder** to enter your full chain.`,
         components: [
             new ActionRowBuilder().addComponents(
@@ -57,22 +64,24 @@ async function startDaily(interaction) {
     });
 }
 
-// Start continuous ladder (fresh random)
+// Start continuous ladder — user chooses difficulty
 async function startContinuous(interaction) {
-    const ladder = generateWordLadder();
     await interaction.reply({
-        content:
-            `🧩 **Continuous Word Ladder**\n` +
-            `Start: **${ladder[0]}**\n` +
-            `Difficulty: **${getDifficulty(ladder)}**\n` +
-            `Steps: ${ladder.length} words\n\n` +
-            `Click **Solve Ladder** to enter your full chain.`,
+        content: `🧩 **Choose your difficulty**`,
         components: [
             new ActionRowBuilder().addComponents(
                 new ButtonBuilder()
-                    .setCustomId(`wl_solve_cont_${ladder.join('_')}`)
-                    .setLabel('Solve Ladder')
-                    .setStyle(ButtonStyle.Success)
+                    .setCustomId('wl_diff_easy')
+                    .setLabel('Easy')
+                    .setStyle(ButtonStyle.Success),
+                new ButtonBuilder()
+                    .setCustomId('wl_diff_medium')
+                    .setLabel('Medium')
+                    .setStyle(ButtonStyle.Primary),
+                new ButtonBuilder()
+                    .setCustomId('wl_diff_hard')
+                    .setLabel('Hard')
+                    .setStyle(ButtonStyle.Danger)
             )
         ]
     });
@@ -80,6 +89,33 @@ async function startContinuous(interaction) {
 
 // Handle buttons + modal
 async function handleInteraction(interaction) {
+
+    // Difficulty buttons
+    if (interaction.isButton() && interaction.customId.startsWith('wl_diff_')) {
+        const difficulty = interaction.customId.replace('wl_diff_', '');
+        const ladder = generateWordLadder(difficulty);
+
+        await interaction.reply({
+            content:
+                `🧩 **${getDifficultyLabel(difficulty)} Word Ladder**\n` +
+                `Start: **${ladder.start}**\n` +
+                `End: **${ladder.end}**\n` +
+                `Difficulty: **${getDifficultyLabel(difficulty)}**\n` +
+                `Steps: ${ladder.steps.length + 2} words\n\n` +
+                `Click **Solve Ladder** to enter your full chain.`,
+            components: [
+                new ActionRowBuilder().addComponents(
+                    new ButtonBuilder()
+                        .setCustomId(`wl_solve_cont_${difficulty}_${ladder.start}_${ladder.end}`)
+                        .setLabel('Solve Ladder')
+                        .setStyle(ButtonStyle.Success)
+                )
+            ]
+        });
+
+        return;
+    }
+
     // Solve daily ladder button
     if (interaction.isButton() && interaction.customId === 'wl_solve_daily') {
         const modal = new ModalBuilder()
@@ -89,7 +125,7 @@ async function handleInteraction(interaction) {
                 new ActionRowBuilder().addComponents(
                     new TextInputBuilder()
                         .setCustomId('wl_chain')
-                        .setLabel('Enter your ladder (e.g. cat cot dot dog)')
+                        .setLabel('Enter your ladder (e.g. cat cats carts)')
                         .setStyle(TextInputStyle.Paragraph)
                         .setRequired(true)
                 )
@@ -101,17 +137,19 @@ async function handleInteraction(interaction) {
 
     // Solve continuous ladder button
     if (interaction.isButton() && interaction.customId.startsWith('wl_solve_cont_')) {
-        const ladderStr = interaction.customId.replace('wl_solve_cont_', '');
-        const ladder = ladderStr.split('_');
+        const parts = interaction.customId.split('_');
+        const difficulty = parts[3];
+        const start = parts[4];
+        const end = parts[5];
 
         const modal = new ModalBuilder()
-            .setCustomId(`wl_modal_cont_${ladder.join('_')}`)
+            .setCustomId(`wl_modal_cont_${difficulty}_${start}_${end}`)
             .setTitle('Solve Word Ladder')
             .addComponents(
                 new ActionRowBuilder().addComponents(
                     new TextInputBuilder()
                         .setCustomId('wl_chain')
-                        .setLabel('Enter your ladder (e.g. cat cot dot dog)')
+                        .setLabel('Enter your ladder (e.g. cat cats carts)')
                         .setStyle(TextInputStyle.Paragraph)
                         .setRequired(true)
                 )
@@ -131,33 +169,36 @@ async function handleInteraction(interaction) {
             .map(w => w.trim().toLowerCase())
             .filter(Boolean);
 
-        let targetLadder;
+        let target;
 
         if (interaction.customId === 'wl_modal_daily') {
-            targetLadder = todaysLadder;
-        } else if (interaction.customId.startsWith('wl_modal_cont_')) {
-            const ladderStr = interaction.customId.replace('wl_modal_cont_', '');
-            targetLadder = ladderStr.split('_');
+            target = todaysLadder;
         } else {
-            return;
+            const parts = interaction.customId.split('_');
+            const difficulty = parts[3];
+            const start = parts[4];
+            const end = parts[5];
+
+            // Find the ladder in the pack
+            target = wordLadders[difficulty].find(l => l.start === start && l.end === end);
         }
 
+        const expected = [target.start, ...target.steps, target.end];
+
         const correct =
-            chain.length === targetLadder.length &&
-            chain.every((w, i) => w === targetLadder[i]);
+            chain.length === expected.length &&
+            chain.every((w, i) => w === expected[i]);
 
         if (correct) {
             await interaction.editReply({
-                content:
-                    `✅ Correct!\n` +
-                    `Ladder: **${targetLadder.join(' → ')}**`
+                content: `✅ Correct!\nLadder: **${expected.join(' → ')}**`
             });
         } else {
             await interaction.editReply({
                 content:
                     `❌ Not quite.\n` +
                     `You entered: **${chain.join(' → ') || '(nothing)'}**\n` +
-                    `Expected: **${targetLadder.join(' → ')}**`
+                    `Expected: **${expected.join(' → ')}**`
             });
         }
 
@@ -167,9 +208,10 @@ async function handleInteraction(interaction) {
 
 module.exports = {
     generateWordLadder,
-    getDifficulty,
+    getDifficultyLabel,
     setTodaysLadder,
     startDaily,
     startContinuous,
     handleInteraction
 };
+
