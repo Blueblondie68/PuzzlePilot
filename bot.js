@@ -1,4 +1,3 @@
-
 // bot.js
 // Main puzzle hub: daily menu + crossword + word ladder + logic grid + connections
 
@@ -75,12 +74,13 @@ function scheduleDailyReset() {
     const msUntilMidnight = nextMidnight - now;
 
     setTimeout(() => {
-        const newLadder = wordladder.generateWordLadder();
+        const newLadder = wordladder.generateWordLadder("medium");
         wordladder.setTodaysLadder(newLadder);
         console.log("Daily puzzles refreshed!");
         scheduleDailyReset();
     }, msUntilMidnight);
 }
+
 
 scheduleDailyReset();
 
