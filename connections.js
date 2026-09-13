@@ -5,17 +5,20 @@
 // Features:
 // - Daily puzzle is the same for everyone
 // - Daily puzzle changes at midnight UK time
-// - 4 lives
-// - Wrong groups lose a life
-// - Solved groups are shown at the top
-// - Solved group names are displayed
+// - 4 mistakes allowed
+// - Wrong submitted groups use one mistake
+// - Solved groups stay displayed at the top
+// - Solved group names AND words are displayed
 // - Continuous Connections uses a random puzzle
+// - Submit, Deselect All and Shuffle controls
+// - "One away" feedback for near misses
 // - Puzzle bank is kept separate from this file
 
 const {
     ActionRowBuilder,
     ButtonBuilder,
-    ButtonStyle
+    ButtonStyle,
+    EmbedBuilder
 } = require('discord.js');
 
 const connectionsPack1 = require('./connections_pack1.js');
@@ -34,6 +37,14 @@ const connectionsPuzzles = [
 
 const STARTING_LIVES = 4;
 
+// Colours used for solved groups, in solve order.
+const GROUP_DISPLAY = [
+    { emoji: '🟨', name: 'Yellow' },
+    { emoji: '🟩', name: 'Green' },
+    { emoji: '🟦', name: 'Blue' },
+    { emoji: '🟪', name: 'Purple' }
+];
+
 // Active game boards
 const boards = new Map();
 
@@ -41,14 +52,12 @@ const boards = new Map();
 // PUZZLE SELECTION
 // ─────────────────────────────────────────────
 
-// Get a random puzzle for Continuous Connections
 function getRandomPuzzle() {
     return connectionsPuzzles[
         Math.floor(Math.random() * connectionsPuzzles.length)
     ];
 }
 
-// Get today's date in UK time
 function getUKDate() {
     return new Intl.DateTimeFormat('en-GB', {
         timeZone: 'Europe/London',
@@ -58,11 +67,8 @@ function getUKDate() {
     }).format(new Date());
 }
 
-// Get the same daily puzzle for everyone
 function getDailyPuzzle() {
     const ukDate = getUKDate();
-
-    // Convert the date into a repeatable number
     const numbers = ukDate.match(/\d+/g);
 
     const day = Number(numbers[0]);
@@ -70,14 +76,13 @@ function getDailyPuzzle() {
     const year = Number(numbers[2]);
 
     const seed = year * 10000 + month * 100 + day;
-
     const index = seed % connectionsPuzzles.length;
 
     return connectionsPuzzles[index];
 }
 
 // ─────────────────────────────────────────────
-// SHUFFLE
+// HELPERS
 // ─────────────────────────────────────────────
 
 function shuffle(array) {
@@ -90,12 +95,62 @@ function shuffle(array) {
         .map(({ value }) => value);
 }
 
+function getModeTitle(mode) {
+    return mode === 'daily'
+        ? '🔗 Daily Connections'
+        : '🔗 Continuous Connections';
+}
+
+function getModeFooter(mode) {
+    return mode === 'daily'
+        ? 'Daily puzzle • Changes at midnight UK time'
+        : 'Continuous mode • Play as many puzzles as you like';
+}
+
+function getMistakesDisplay(lives) {
+    const remaining = '● '.repeat(lives);
+    const used = '○ '.repeat(STARTING_LIVES - lives);
+
+    return `${remaining}${used}`.trim();
+}
+
+function getUnsolvedTiles(board) {
+    return board.tiles.filter(tile => {
+        return !board.solvedGroups.some(groupName => {
+            const group = board.puzzle.groups[groupName];
+            return group.includes(tile);
+        });
+    });
+}
+
+function getGroupDisplay(index) {
+    return GROUP_DISPLAY[index] || {
+        emoji: '✅',
+        name: 'Solved'
+    };
+}
+
+function isOneAway(board, selectedTiles) {
+    return Object.entries(board.puzzle.groups).some(
+        ([groupName, groupTiles]) => {
+            if (board.solvedGroups.includes(groupName)) {
+                return false;
+            }
+
+            const matches = selectedTiles.filter(tile =>
+                groupTiles.includes(tile)
+            ).length;
+
+            return matches === 3;
+        }
+    );
+}
+
 // ─────────────────────────────────────────────
 // CREATE BOARD
 // ─────────────────────────────────────────────
 
-function createBoard(puzzle) {
-
+function createBoard(puzzle, mode) {
     const allTiles = [];
 
     for (const group of Object.values(puzzle.groups)) {
@@ -104,68 +159,126 @@ function createBoard(puzzle) {
 
     return {
         puzzle,
+        mode,
         tiles: shuffle(allTiles),
-
         solvedGroups: [],
-
         selected: [],
-
         lives: STARTING_LIVES,
-
-        finished: false
+        finished: false,
+        notice: null
     };
 }
 
 // ─────────────────────────────────────────────
-// DISPLAY SOLVED GROUPS
+// EMBED DISPLAY
 // ─────────────────────────────────────────────
 
-function getSolvedText(board) {
+function buildBoardEmbed(board) {
+    const embed = new EmbedBuilder()
+        .setColor(0x5865F2)
+        .setTitle(getModeTitle(board.mode))
+        .setDescription(
+            '**Find four groups of four connected words.**\n\n' +
+            `**Mistakes remaining:** ${getMistakesDisplay(board.lives)}\n` +
+            `**Selected:** ${board.selected.length}/4`
+        )
+        .setFooter({
+            text: getModeFooter(board.mode)
+        });
 
-    if (board.solvedGroups.length === 0) {
-        return '';
+    board.solvedGroups.forEach((groupName, index) => {
+        const display = getGroupDisplay(index);
+        const words = board.puzzle.groups[groupName];
+
+        embed.addFields({
+            name: `${display.emoji} ${groupName.toUpperCase()}`,
+            value: words.join(' • ')
+        });
+    });
+
+    if (board.notice) {
+        embed.addFields({
+            name: board.notice.title,
+            value: board.notice.text
+        });
     }
 
-    let text = '\n\n**Solved groups:**\n';
-
-    for (const groupName of board.solvedGroups) {
-        text += `🟩 **${groupName}**\n`;
+    if (board.selected.length > 0) {
+        embed.addFields({
+            name: 'Your selection',
+            value: board.selected.join(' • ')
+        });
     }
 
-    return text;
+    return embed;
+}
+
+function buildWinEmbed(board) {
+    const embed = new EmbedBuilder()
+        .setColor(0x57F287)
+        .setTitle('🎉 Connections Complete!')
+        .setDescription(
+            '**You found all four groups!**\n\n' +
+            `**Mistakes remaining:** ${getMistakesDisplay(board.lives)}`
+        )
+        .setFooter({
+            text: getModeFooter(board.mode)
+        });
+
+    board.solvedGroups.forEach((groupName, index) => {
+        const display = getGroupDisplay(index);
+        const words = board.puzzle.groups[groupName];
+
+        embed.addFields({
+            name: `${display.emoji} ${groupName.toUpperCase()}`,
+            value: words.join(' • ')
+        });
+    });
+
+    return embed;
+}
+
+function buildGameOverEmbed(board) {
+    const embed = new EmbedBuilder()
+        .setColor(0xED4245)
+        .setTitle('💀 Connections Over')
+        .setDescription(
+            '**No mistakes remaining.**\n\n' +
+            'Here are the four groups:'
+        )
+        .setFooter({
+            text: getModeFooter(board.mode)
+        });
+
+    Object.entries(board.puzzle.groups).forEach(
+        ([groupName, words], index) => {
+            const display = getGroupDisplay(index);
+
+            embed.addFields({
+                name: `${display.emoji} ${groupName.toUpperCase()}`,
+                value: words.join(' • ')
+            });
+        }
+    );
+
+    return embed;
 }
 
 // ─────────────────────────────────────────────
-// DISPLAY BOARD
+// BUTTON BOARD
 // ─────────────────────────────────────────────
 
 function renderBoard(board) {
-
     const rows = [];
+    const unsolvedTiles = getUnsolvedTiles(board);
 
-    // Only unsolved tiles remain as clickable buttons.
-    const unsolvedTiles = board.tiles.filter(tile => {
-
-        return !board.solvedGroups.some(groupName => {
-
-            const group = board.puzzle.groups[groupName];
-
-            return group.includes(tile);
-        });
-
-    });
-
-    // Create rows of four tiles.
     for (let i = 0; i < unsolvedTiles.length; i += 4) {
-
         const row = new ActionRowBuilder();
 
         unsolvedTiles
             .slice(i, i + 4)
             .forEach(tile => {
-
-                const isSelected =
-                    board.selected.includes(tile);
+                const isSelected = board.selected.includes(tile);
 
                 row.addComponents(
                     new ButtonBuilder()
@@ -182,171 +295,316 @@ function renderBoard(board) {
         rows.push(row);
     }
 
+    const controls = new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+            .setCustomId('conn_clear')
+            .setLabel('Deselect All')
+            .setEmoji('↩️')
+            .setStyle(ButtonStyle.Secondary)
+            .setDisabled(board.selected.length === 0),
+
+        new ButtonBuilder()
+            .setCustomId('conn_shuffle')
+            .setLabel('Shuffle')
+            .setEmoji('🔀')
+            .setStyle(ButtonStyle.Secondary),
+
+        new ButtonBuilder()
+            .setCustomId('conn_submit')
+            .setLabel('Submit')
+            .setEmoji('✅')
+            .setStyle(ButtonStyle.Success)
+            .setDisabled(board.selected.length !== 4)
+    );
+
+    rows.push(controls);
+
     return rows;
 }
 
 // ─────────────────────────────────────────────
-// BOARD MESSAGE
+// START GAME
 // ─────────────────────────────────────────────
 
-function getBoardContent(board, title) {
+async function startGame(interaction, mode) {
+    const puzzle = mode === 'daily'
+        ? getDailyPuzzle()
+        : getRandomPuzzle();
 
-    let content =
-        `${title}\n\n` +
-        `❤️ **Lives remaining: ${board.lives}**\n\n` +
-        `Select **4 tiles** that belong to the same group.`;
+    const board = createBoard(puzzle, mode);
 
-    content += getSolvedText(board);
+    try {
+        await interaction.reply({
+            embeds: [buildBoardEmbed(board)],
+            components: renderBoard(board)
+        });
 
-    if (board.selected.length > 0) {
+        const message = await interaction.fetchReply();
 
-        content +=
-            `\n\n**Selected:** ` +
-            board.selected.join(' • ');
+        boards.set(message.id, board);
+
+        console.log(
+            `${getModeTitle(mode)} board created: ${message.id}`
+        );
+    } catch (error) {
+        console.error(
+            `Error starting ${mode} Connections:`,
+            error
+        );
+
+        if (
+            !interaction.replied &&
+            !interaction.deferred
+        ) {
+            await interaction.reply({
+                content: '❌ Sorry, I could not start Connections.',
+                ephemeral: true
+            });
+        }
     }
-
-    return content;
 }
-
-// ─────────────────────────────────────────────
-// START DAILY CONNECTIONS
-// ─────────────────────────────────────────────
 
 async function startDaily(interaction) {
-
-    const puzzle = getDailyPuzzle();
-
-    const board = createBoard(puzzle);
-
-    try {
-
-        await interaction.reply({
-            content: getBoardContent(
-                board,
-                '🔗 **Daily Connections**'
-            ),
-            components: renderBoard(board)
-        });
-
-        const message = await interaction.fetchReply();
-
-        boards.set(message.id, {
-            ...board,
-            mode: 'daily'
-        });
-
-        console.log(
-            `Daily Connections board created: ${message.id}`
-        );
-
-    } catch (error) {
-
-        console.error(
-            'Error starting Daily Connections:',
-            error
-        );
-
-        if (
-            !interaction.replied &&
-            !interaction.deferred
-        ) {
-
-            await interaction.reply({
-                content:
-                    '❌ Sorry, I could not start Connections.',
-                ephemeral: true
-            });
-        }
-    }
+    return startGame(interaction, 'daily');
 }
-
-// ─────────────────────────────────────────────
-// START CONTINUOUS CONNECTIONS
-// ─────────────────────────────────────────────
 
 async function startContinuous(interaction) {
-
-    const puzzle = getRandomPuzzle();
-
-    const board = createBoard(puzzle);
-
-    try {
-
-        await interaction.reply({
-            content: getBoardContent(
-                board,
-                '🔗 **Continuous Connections**'
-            ),
-            components: renderBoard(board)
-        });
-
-        const message = await interaction.fetchReply();
-
-        boards.set(message.id, {
-            ...board,
-            mode: 'continuous'
-        });
-
-        console.log(
-            `Continuous Connections board created: ${message.id}`
-        );
-
-    } catch (error) {
-
-        console.error(
-            'Error starting Continuous Connections:',
-            error
-        );
-
-        if (
-            !interaction.replied &&
-            !interaction.deferred
-        ) {
-
-            await interaction.reply({
-                content:
-                    '❌ Sorry, I could not start Connections.',
-                ephemeral: true
-            });
-        }
-    }
+    return startGame(interaction, 'continuous');
 }
 
 // ─────────────────────────────────────────────
-// HANDLE TILE CLICKS
+// UPDATE BOARD MESSAGE
+// ─────────────────────────────────────────────
+
+async function updateBoard(interaction, state) {
+    await interaction.update({
+        embeds: [buildBoardEmbed(state)],
+        components: renderBoard(state)
+    });
+}
+
+// ─────────────────────────────────────────────
+// HANDLE TILE CLICK
+// ─────────────────────────────────────────────
+
+async function handleTileClick(interaction, state) {
+    const tile = interaction.customId.replace(
+        'conn_tile_',
+        ''
+    );
+
+    // Clear previous feedback as soon as the player starts
+    // making a new selection.
+    state.notice = null;
+
+    if (state.selected.includes(tile)) {
+        state.selected = state.selected.filter(
+            selectedTile => selectedTile !== tile
+        );
+
+        await updateBoard(interaction, state);
+        return;
+    }
+
+    if (state.selected.length >= 4) {
+        await interaction.reply({
+            content:
+                '⚠️ You already have 4 tiles selected. ' +
+                'Submit them or deselect one first.',
+            ephemeral: true
+        });
+        return;
+    }
+
+    state.selected.push(tile);
+
+    await updateBoard(interaction, state);
+}
+
+// ─────────────────────────────────────────────
+// HANDLE DESELECT ALL
+// ─────────────────────────────────────────────
+
+async function handleClear(interaction, state) {
+    state.selected = [];
+    state.notice = null;
+
+    await updateBoard(interaction, state);
+}
+
+// ─────────────────────────────────────────────
+// HANDLE SHUFFLE
+// ─────────────────────────────────────────────
+
+async function handleShuffle(interaction, state) {
+    const unsolvedTiles = shuffle(
+        getUnsolvedTiles(state)
+    );
+
+    // Keep solved words in board.tiles as well, but place the newly
+    // shuffled unsolved words first. Solved words are filtered out
+    // when the clickable board is rendered.
+    const solvedTiles = state.tiles.filter(tile =>
+        !unsolvedTiles.includes(tile)
+    );
+
+    state.tiles = [
+        ...unsolvedTiles,
+        ...solvedTiles
+    ];
+
+    state.selected = [];
+    state.notice = null;
+
+    await updateBoard(interaction, state);
+}
+
+// ─────────────────────────────────────────────
+// HANDLE SUBMIT
+// ─────────────────────────────────────────────
+
+async function handleSubmit(interaction, state, messageId) {
+    if (state.selected.length !== 4) {
+        await interaction.reply({
+            content:
+                '⚠️ Select exactly 4 tiles before submitting.',
+            ephemeral: true
+        });
+        return;
+    }
+
+    const selectedTiles = [...state.selected];
+    let correctGroupName = null;
+
+    for (const [groupName, groupTiles] of Object.entries(
+        state.puzzle.groups
+    )) {
+        if (state.solvedGroups.includes(groupName)) {
+            continue;
+        }
+
+        const allCorrect = selectedTiles.every(tile =>
+            groupTiles.includes(tile)
+        );
+
+        if (allCorrect) {
+            correctGroupName = groupName;
+            break;
+        }
+    }
+
+    // ─────────────────────────────────────────
+    // CORRECT GROUP
+    // ─────────────────────────────────────────
+
+    if (correctGroupName) {
+        state.solvedGroups.push(correctGroupName);
+        state.selected = [];
+
+        const solvedIndex =
+            state.solvedGroups.length - 1;
+
+        const display =
+            getGroupDisplay(solvedIndex);
+
+        state.notice = {
+            title: `${display.emoji} Correct!`,
+            text: `You found **${correctGroupName}**.`
+        };
+
+        if (state.solvedGroups.length === 4) {
+            state.finished = true;
+
+            await interaction.update({
+                embeds: [buildWinEmbed(state)],
+                components: []
+            });
+
+            console.log(
+                `Connections puzzle completed: ${messageId}`
+            );
+
+            return;
+        }
+
+        await updateBoard(interaction, state);
+        return;
+    }
+
+    // ─────────────────────────────────────────
+    // WRONG GROUP
+    // ─────────────────────────────────────────
+
+    const oneAway =
+        isOneAway(state, selectedTiles);
+
+    state.lives--;
+    state.selected = [];
+
+    if (state.lives <= 0) {
+        state.finished = true;
+
+        await interaction.update({
+            embeds: [buildGameOverEmbed(state)],
+            components: []
+        });
+
+        console.log(
+            `Connections game over: ${messageId}`
+        );
+
+        return;
+    }
+
+    state.notice = oneAway
+        ? {
+            title: '🔥 One away!',
+            text:
+                'Three of those words belong together. ' +
+                'One mistake used.'
+        }
+        : {
+            title: '❌ Not quite',
+            text:
+                'Those four do not make a group. ' +
+                'One mistake used.'
+        };
+
+    await updateBoard(interaction, state);
+}
+
+// ─────────────────────────────────────────────
+// MAIN INTERACTION HANDLER
 // ─────────────────────────────────────────────
 
 async function handleInteraction(interaction) {
-
     if (!interaction.isButton()) {
         return;
     }
 
-    if (
-        !interaction.customId.startsWith(
+    const isConnectionsButton =
+        interaction.customId.startsWith(
             'conn_tile_'
-        )
-    ) {
+        ) ||
+        interaction.customId === 'conn_clear' ||
+        interaction.customId === 'conn_shuffle' ||
+        interaction.customId === 'conn_submit';
+
+    if (!isConnectionsButton) {
         return;
     }
-
-    const tile =
-        interaction.customId.replace(
-            'conn_tile_',
-            ''
-        );
 
     const messageId =
         interaction.message.id;
 
-    const state = boards.get(messageId);
+    const state =
+        boards.get(messageId);
 
     // ─────────────────────────────────────────
     // BOARD NOT FOUND
     // ─────────────────────────────────────────
 
     if (!state) {
-
         console.error(
             `Connections board not found for message ${messageId}`
         );
@@ -355,7 +613,6 @@ async function handleInteraction(interaction) {
             !interaction.replied &&
             !interaction.deferred
         ) {
-
             await interaction.reply({
                 content:
                     '⚠️ Sorry, I lost this Connections puzzle. ' +
@@ -372,7 +629,6 @@ async function handleInteraction(interaction) {
     // ─────────────────────────────────────────
 
     if (state.finished) {
-
         await interaction.reply({
             content:
                 '🏁 This Connections puzzle has already finished.',
@@ -382,188 +638,68 @@ async function handleInteraction(interaction) {
         return;
     }
 
-    // ─────────────────────────────────────────
-    // TOGGLE TILE
-    // ─────────────────────────────────────────
-
-    if (state.selected.includes(tile)) {
-
-        state.selected =
-            state.selected.filter(
-                selectedTile =>
-                    selectedTile !== tile
+    try {
+        if (
+            interaction.customId.startsWith(
+                'conn_tile_'
+            )
+        ) {
+            await handleTileClick(
+                interaction,
+                state
             );
+            return;
+        }
 
-    } else {
+        if (
+            interaction.customId ===
+            'conn_clear'
+        ) {
+            await handleClear(
+                interaction,
+                state
+            );
+            return;
+        }
 
-        if (state.selected.length < 4) {
+        if (
+            interaction.customId ===
+            'conn_shuffle'
+        ) {
+            await handleShuffle(
+                interaction,
+                state
+            );
+            return;
+        }
 
-            state.selected = [
-                ...state.selected,
-                tile
-            ];
+        if (
+            interaction.customId ===
+            'conn_submit'
+        ) {
+            await handleSubmit(
+                interaction,
+                state,
+                messageId
+            );
+        }
+    } catch (error) {
+        console.error(
+            'Error handling Connections interaction:',
+            error
+        );
 
-        } else {
-
+        if (
+            !interaction.replied &&
+            !interaction.deferred
+        ) {
             await interaction.reply({
                 content:
-                    '⚠️ You can only select 4 tiles at once.',
+                    '❌ Something went wrong with this Connections game.',
                 ephemeral: true
             });
-
-            return;
         }
     }
-
-    // ─────────────────────────────────────────
-    // NOT YET FOUR TILES
-    // ─────────────────────────────────────────
-
-    if (state.selected.length < 4) {
-
-        await interaction.update({
-            content: getBoardContent(
-                state,
-                state.mode === 'daily'
-                    ? '🔗 **Daily Connections**'
-                    : '🔗 **Continuous Connections**'
-            ),
-            components: renderBoard(state)
-        });
-
-        return;
-    }
-
-    // ─────────────────────────────────────────
-    // CHECK FOUR SELECTED TILES
-    // ─────────────────────────────────────────
-
-    const selectedTiles = [
-        ...state.selected
-    ];
-
-    let correctGroupName = null;
-
-    for (const [groupName, groupTiles] of Object.entries(
-        state.puzzle.groups
-    )) {
-
-        const allCorrect =
-            selectedTiles.length === 4 &&
-            selectedTiles.every(tile =>
-                groupTiles.includes(tile)
-            );
-
-        if (allCorrect) {
-            correctGroupName = groupName;
-            break;
-        }
-    }
-
-    // ─────────────────────────────────────────
-    // CORRECT GROUP
-    // ─────────────────────────────────────────
-
-    if (correctGroupName) {
-
-        state.solvedGroups.push(
-            correctGroupName
-        );
-
-        state.selected = [];
-
-        const solvedCount =
-            state.solvedGroups.length;
-
-        // All four groups solved
-        if (solvedCount === 4) {
-
-            state.finished = true;
-
-            await interaction.update({
-
-                content:
-                    `🎉 **Connections Complete!** 🎉\n\n` +
-                    `🏆 You solved all 4 groups!\n\n` +
-                    `❤️ Lives remaining: ${state.lives}\n\n` +
-                    `**Solved groups:**\n` +
-                    state.solvedGroups
-                        .map(group =>
-                            `🟩 **${group}**`
-                        )
-                        .join('\n'),
-
-                components: []
-            });
-
-            console.log(
-                `Connections puzzle completed: ${messageId}`
-            );
-
-            return;
-        }
-
-        await interaction.update({
-
-            content: getBoardContent(
-                state,
-                '🔗 **Connections**'
-            ),
-
-            components: renderBoard(state)
-        });
-
-        return;
-    }
-
-    // ─────────────────────────────────────────
-    // WRONG GROUP
-    // ─────────────────────────────────────────
-
-    state.lives--;
-
-    state.selected = [];
-
-    // No lives left
-    if (state.lives <= 0) {
-
-        state.finished = true;
-
-        await interaction.update({
-
-            content:
-                `💀 **Game Over!**\n\n` +
-                `You ran out of lives.\n\n` +
-                `The groups were:\n` +
-                Object.keys(state.puzzle.groups)
-                    .map(group =>
-                        `🟩 **${group}**`
-                    )
-                    .join('\n'),
-
-            components: []
-        });
-
-        console.log(
-            `Connections game over: ${messageId}`
-        );
-
-        return;
-    }
-
-    // Still have lives
-    await interaction.update({
-
-        content:
-            `❌ **Not a group!**\n\n` +
-            `You lost a life.\n\n` +
-            getBoardContent(
-                state,
-                '🔗 **Connections**'
-            ),
-
-        components: renderBoard(state)
-    });
 }
 
 // ─────────────────────────────────────────────
