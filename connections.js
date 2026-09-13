@@ -12,6 +12,7 @@
 // - Continuous Connections uses a random puzzle
 // - Submit, Deselect All and Shuffle controls
 // - "One away" feedback for near misses
+// - Play Again button for Continuous mode
 // - Puzzle bank is kept separate from this file
 
 const {
@@ -37,12 +38,11 @@ const connectionsPuzzles = [
 
 const STARTING_LIVES = 4;
 
-// Colours used for solved groups, in solve order.
 const GROUP_DISPLAY = [
-    { emoji: '🟨', name: 'Yellow' },
-    { emoji: '🟩', name: 'Green' },
-    { emoji: '🟦', name: 'Blue' },
-    { emoji: '🟪', name: 'Purple' }
+    { emoji: '🟨', colour: 0xF1C40F },
+    { emoji: '🟩', colour: 0x57F287 },
+    { emoji: '🟦', colour: 0x3498DB },
+    { emoji: '🟪', colour: 0x9B59B6 }
 ];
 
 // Active game boards
@@ -126,7 +126,7 @@ function getUnsolvedTiles(board) {
 function getGroupDisplay(index) {
     return GROUP_DISPLAY[index] || {
         emoji: '✅',
-        name: 'Solved'
+        colour: 0x57F287
     };
 }
 
@@ -144,6 +144,15 @@ function isOneAway(board, selectedTiles) {
             return matches === 3;
         }
     );
+}
+
+// Discord markdown can treat underscores as formatting.
+function escapeMarkdownText(text) {
+    return String(text).replace(/([\\_*~`|>])/g, '\\$1');
+}
+
+function formatGroupName(groupName) {
+    return escapeMarkdownText(groupName.toUpperCase());
 }
 
 // ─────────────────────────────────────────────
@@ -178,9 +187,9 @@ function buildBoardEmbed(board) {
         .setColor(0x5865F2)
         .setTitle(getModeTitle(board.mode))
         .setDescription(
-            '**Find four groups of four connected words.**\n\n' +
-            `**Mistakes remaining:** ${getMistakesDisplay(board.lives)}\n` +
-            `**Selected:** ${board.selected.length}/4`
+            '**Find four groups of four connected words.**\n' +
+            `Mistakes remaining: ${getMistakesDisplay(board.lives)}\n` +
+            `Selected: **${board.selected.length}/4**`
         )
         .setFooter({
             text: getModeFooter(board.mode)
@@ -191,8 +200,8 @@ function buildBoardEmbed(board) {
         const words = board.puzzle.groups[groupName];
 
         embed.addFields({
-            name: `${display.emoji} ${groupName.toUpperCase()}`,
-            value: words.join(' • ')
+            name: `${display.emoji} ${formatGroupName(groupName)}`,
+            value: words.map(escapeMarkdownText).join(' • ')
         });
     });
 
@@ -205,8 +214,10 @@ function buildBoardEmbed(board) {
 
     if (board.selected.length > 0) {
         embed.addFields({
-            name: 'Your selection',
-            value: board.selected.join(' • ')
+            name: 'Selected tiles',
+            value: board.selected
+                .map(escapeMarkdownText)
+                .join(' • ')
         });
     }
 
@@ -218,8 +229,8 @@ function buildWinEmbed(board) {
         .setColor(0x57F287)
         .setTitle('🎉 Connections Complete!')
         .setDescription(
-            '**You found all four groups!**\n\n' +
-            `**Mistakes remaining:** ${getMistakesDisplay(board.lives)}`
+            '**You found all four groups!**\n' +
+            `Mistakes remaining: ${getMistakesDisplay(board.lives)}`
         )
         .setFooter({
             text: getModeFooter(board.mode)
@@ -230,8 +241,8 @@ function buildWinEmbed(board) {
         const words = board.puzzle.groups[groupName];
 
         embed.addFields({
-            name: `${display.emoji} ${groupName.toUpperCase()}`,
-            value: words.join(' • ')
+            name: `${display.emoji} ${formatGroupName(groupName)}`,
+            value: words.map(escapeMarkdownText).join(' • ')
         });
     });
 
@@ -244,7 +255,7 @@ function buildGameOverEmbed(board) {
         .setTitle('💀 Connections Over')
         .setDescription(
             '**No mistakes remaining.**\n\n' +
-            'Here are the four groups:'
+            'The four groups were:'
         )
         .setFooter({
             text: getModeFooter(board.mode)
@@ -255,8 +266,8 @@ function buildGameOverEmbed(board) {
             const display = getGroupDisplay(index);
 
             embed.addFields({
-                name: `${display.emoji} ${groupName.toUpperCase()}`,
-                value: words.join(' • ')
+                name: `${display.emoji} ${formatGroupName(groupName)}`,
+                value: words.map(escapeMarkdownText).join(' • ')
             });
         }
     );
@@ -265,7 +276,7 @@ function buildGameOverEmbed(board) {
 }
 
 // ─────────────────────────────────────────────
-// BUTTON BOARD
+// BUTTONS
 // ─────────────────────────────────────────────
 
 function renderBoard(board) {
@@ -320,6 +331,22 @@ function renderBoard(board) {
     rows.push(controls);
 
     return rows;
+}
+
+function renderFinishedControls(board) {
+    if (board.mode !== 'continuous') {
+        return [];
+    }
+
+    return [
+        new ActionRowBuilder().addComponents(
+            new ButtonBuilder()
+                .setCustomId('conn_play_again')
+                .setLabel('Play Again')
+                .setEmoji('🔄')
+                .setStyle(ButtonStyle.Primary)
+        )
+    ];
 }
 
 // ─────────────────────────────────────────────
@@ -393,8 +420,6 @@ async function handleTileClick(interaction, state) {
         ''
     );
 
-    // Clear previous feedback as soon as the player starts
-    // making a new selection.
     state.notice = null;
 
     if (state.selected.includes(tile)) {
@@ -441,9 +466,6 @@ async function handleShuffle(interaction, state) {
         getUnsolvedTiles(state)
     );
 
-    // Keep solved words in board.tiles as well, but place the newly
-    // shuffled unsolved words first. Solved words are filtered out
-    // when the clickable board is rendered.
     const solvedTiles = state.tiles.filter(tile =>
         !unsolvedTiles.includes(tile)
     );
@@ -500,24 +522,14 @@ async function handleSubmit(interaction, state, messageId) {
     if (correctGroupName) {
         state.solvedGroups.push(correctGroupName);
         state.selected = [];
-
-        const solvedIndex =
-            state.solvedGroups.length - 1;
-
-        const display =
-            getGroupDisplay(solvedIndex);
-
-        state.notice = {
-            title: `${display.emoji} Correct!`,
-            text: `You found **${correctGroupName}**.`
-        };
+        state.notice = null;
 
         if (state.solvedGroups.length === 4) {
             state.finished = true;
 
             await interaction.update({
                 embeds: [buildWinEmbed(state)],
-                components: []
+                components: renderFinishedControls(state)
             });
 
             console.log(
@@ -535,8 +547,7 @@ async function handleSubmit(interaction, state, messageId) {
     // WRONG GROUP
     // ─────────────────────────────────────────
 
-    const oneAway =
-        isOneAway(state, selectedTiles);
+    const oneAway = isOneAway(state, selectedTiles);
 
     state.lives--;
     state.selected = [];
@@ -546,7 +557,7 @@ async function handleSubmit(interaction, state, messageId) {
 
         await interaction.update({
             embeds: [buildGameOverEmbed(state)],
-            components: []
+            components: renderFinishedControls(state)
         });
 
         console.log(
@@ -574,6 +585,38 @@ async function handleSubmit(interaction, state, messageId) {
 }
 
 // ─────────────────────────────────────────────
+// HANDLE PLAY AGAIN
+// ─────────────────────────────────────────────
+
+async function handlePlayAgain(interaction, state, messageId) {
+    if (state.mode !== 'continuous') {
+        await interaction.reply({
+            content:
+                '⚠️ Play Again is only available in Continuous Connections.',
+            ephemeral: true
+        });
+        return;
+    }
+
+    const puzzle = getRandomPuzzle();
+    const newBoard = createBoard(
+        puzzle,
+        'continuous'
+    );
+
+    boards.set(messageId, newBoard);
+
+    await interaction.update({
+        embeds: [buildBoardEmbed(newBoard)],
+        components: renderBoard(newBoard)
+    });
+
+    console.log(
+        `Continuous Connections restarted: ${messageId}`
+    );
+}
+
+// ─────────────────────────────────────────────
 // MAIN INTERACTION HANDLER
 // ─────────────────────────────────────────────
 
@@ -583,22 +626,18 @@ async function handleInteraction(interaction) {
     }
 
     const isConnectionsButton =
-        interaction.customId.startsWith(
-            'conn_tile_'
-        ) ||
+        interaction.customId.startsWith('conn_tile_') ||
         interaction.customId === 'conn_clear' ||
         interaction.customId === 'conn_shuffle' ||
-        interaction.customId === 'conn_submit';
+        interaction.customId === 'conn_submit' ||
+        interaction.customId === 'conn_play_again';
 
     if (!isConnectionsButton) {
         return;
     }
 
-    const messageId =
-        interaction.message.id;
-
-    const state =
-        boards.get(messageId);
+    const messageId = interaction.message.id;
+    const state = boards.get(messageId);
 
     // ─────────────────────────────────────────
     // BOARD NOT FOUND
@@ -624,26 +663,28 @@ async function handleInteraction(interaction) {
         return;
     }
 
-    // ─────────────────────────────────────────
-    // GAME ALREADY FINISHED
-    // ─────────────────────────────────────────
-
-    if (state.finished) {
-        await interaction.reply({
-            content:
-                '🏁 This Connections puzzle has already finished.',
-            ephemeral: true
-        });
-
-        return;
-    }
-
     try {
-        if (
-            interaction.customId.startsWith(
-                'conn_tile_'
-            )
-        ) {
+        // Play Again must still work after a game has finished.
+        if (interaction.customId === 'conn_play_again') {
+            await handlePlayAgain(
+                interaction,
+                state,
+                messageId
+            );
+            return;
+        }
+
+        // All other buttons stop once the game is finished.
+        if (state.finished) {
+            await interaction.reply({
+                content:
+                    '🏁 This Connections puzzle has already finished.',
+                ephemeral: true
+            });
+            return;
+        }
+
+        if (interaction.customId.startsWith('conn_tile_')) {
             await handleTileClick(
                 interaction,
                 state
@@ -651,10 +692,7 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        if (
-            interaction.customId ===
-            'conn_clear'
-        ) {
+        if (interaction.customId === 'conn_clear') {
             await handleClear(
                 interaction,
                 state
@@ -662,10 +700,7 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        if (
-            interaction.customId ===
-            'conn_shuffle'
-        ) {
+        if (interaction.customId === 'conn_shuffle') {
             await handleShuffle(
                 interaction,
                 state
@@ -673,10 +708,7 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        if (
-            interaction.customId ===
-            'conn_submit'
-        ) {
+        if (interaction.customId === 'conn_submit') {
             await handleSubmit(
                 interaction,
                 state,
