@@ -1,4 +1,3 @@
-
 // bot.js
 // Main PuzzlePilot hub
 // Daily menu + Crossword + Word Ladder + Logic Grid + Connections
@@ -34,7 +33,9 @@ const client = new Client({
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent
     ],
-    partials: [Partials.Channel]
+    partials: [
+        Partials.Channel
+    ]
 });
 
 // ─────────────────────────────────────────────
@@ -44,23 +45,46 @@ const client = new Client({
 const commands = [
     new SlashCommandBuilder()
         .setName('daily')
-        .setDescription('Open the daily puzzle menu')
-].map(command => command.toJSON());
+        .setDescription(
+            'Open the daily puzzle menu'
+        )
+].map(
+    command =>
+        command.toJSON()
+);
 
-const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
+const rest =
+    new REST({
+        version: '10'
+    }).setToken(
+        process.env.TOKEN
+    );
 
 (async () => {
     try {
-        console.log('Registering slash commands...');
-
-        await rest.put(
-            Routes.applicationCommands(process.env.CLIENT_ID),
-            { body: commands }
+        console.log(
+            'Registering slash commands...'
         );
 
-        console.log('Slash commands registered.');
+        await rest.put(
+            Routes.applicationCommands(
+                process.env.CLIENT_ID
+            ),
+            {
+                body:
+                    commands
+            }
+        );
+
+        console.log(
+            'Slash commands registered.'
+        );
+
     } catch (error) {
-        console.error('Error registering slash commands:', error);
+        console.error(
+            'Error registering slash commands:',
+            error
+        );
     }
 })();
 
@@ -69,261 +93,469 @@ const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 // ─────────────────────────────────────────────
 
 function getUKDate() {
-    return new Intl.DateTimeFormat('en-GB', {
-        timeZone: 'Europe/London',
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit'
-    }).format(new Date());
+    return new Intl.DateTimeFormat(
+        'en-GB',
+        {
+            timeZone:
+                'Europe/London',
+            year:
+                'numeric',
+            month:
+                '2-digit',
+            day:
+                '2-digit'
+        }
+    ).format(
+        new Date()
+    );
 }
 
 // ─────────────────────────────────────────────
 // DAILY RESET
 // ─────────────────────────────────────────────
 //
-// Render may not use UK time, so we check the UK date
-// rather than relying on the server's local midnight.
+// Word Ladder currently uses a stored daily puzzle.
 //
-// Word Ladder is refreshed whenever the UK date changes.
-// Connections uses its own daily puzzle selection.
+// Connections and Logic Grid calculate their own
+// daily puzzle from the current UK date.
 
-let lastUKDate = getUKDate();
+let lastUKDate =
+    getUKDate();
 
 function checkDailyReset() {
-    const currentUKDate = getUKDate();
+    const currentUKDate =
+        getUKDate();
 
-    if (currentUKDate === lastUKDate) {
+    if (
+        currentUKDate ===
+        lastUKDate
+    ) {
         return;
     }
 
-    lastUKDate = currentUKDate;
+    lastUKDate =
+        currentUKDate;
 
-    console.log(`UK midnight reached: ${currentUKDate}`);
-    console.log('Refreshing daily puzzles...');
+    console.log(
+        `UK midnight reached: ${currentUKDate}`
+    );
+
+    console.log(
+        'Refreshing daily puzzles...'
+    );
 
     try {
-        const newLadder = wordladder.generateWordLadder('medium');
-        wordladder.setTodaysLadder(newLadder);
+        const newLadder =
+            wordladder.generateWordLadder(
+                'medium'
+            );
 
-        console.log('Word Ladder refreshed.');
+        wordladder.setTodaysLadder(
+            newLadder
+        );
+
+        console.log(
+            'Word Ladder refreshed.'
+        );
+
     } catch (error) {
-        console.error('Error refreshing Word Ladder:', error);
+        console.error(
+            'Error refreshing Word Ladder:',
+            error
+        );
     }
 
-    console.log('Daily puzzle refresh complete!');
+    console.log(
+        'Daily puzzle refresh complete!'
+    );
 }
 
-// Check regularly so UK midnight is detected even if Render
-// is running in a different timezone.
-setInterval(checkDailyReset, 30000);
+setInterval(
+    checkDailyReset,
+    30000
+);
 
 // ─────────────────────────────────────────────
 // DAILY MENU
 // ─────────────────────────────────────────────
 
-client.on('interactionCreate', async interaction => {
-    if (!interaction.isChatInputCommand()) return;
+client.on(
+    'interactionCreate',
+    async interaction => {
 
-    if (interaction.commandName !== 'daily') return;
+        if (
+            !interaction.isChatInputCommand()
+        ) {
+            return;
+        }
 
-    const menu = new ActionRowBuilder().addComponents(
-        new StringSelectMenuBuilder()
-            .setCustomId('daily-menu')
-            .setPlaceholder('Choose your puzzle')
-            .addOptions([
-                {
-                    label: 'Word Ladder',
-                    value: 'wordladder',
-                    description: 'Solve today’s Word Ladder'
-                },
-                {
-                    label: 'Logic Grid',
-                    value: 'logicgrid',
-                    description: 'Solve today’s logic puzzle'
-                },
-                {
-                    label: 'Connections',
-                    value: 'connections',
-                    description: 'Solve today’s Connections'
-                },
-                {
-                    label: 'Full Crossword',
-                    value: 'fullcrossword',
-                    description: 'Play the daily crossword'
-                },
-                {
-                    label: 'Continuous Crossword',
-                    value: 'continuouscrossword',
-                    description: 'Play a fresh crossword anytime'
-                },
-                {
-                    label: 'Continuous Connections',
-                    value: 'continuousconnections',
-                    description: 'Play a fresh Connections anytime'
-                }
-            ])
-    );
+        if (
+            interaction.commandName !==
+            'daily'
+        ) {
+            return;
+        }
 
-    await interaction.reply({
-        content: '🧩 **Welcome to PuzzlePilot!**\n\nChoose your puzzle:',
-        components: [menu]
-    });
-});
+        const menu =
+            new ActionRowBuilder()
+                .addComponents(
+                    new StringSelectMenuBuilder()
+                        .setCustomId(
+                            'daily-menu'
+                        )
+                        .setPlaceholder(
+                            'Choose your puzzle'
+                        )
+                        .addOptions([
+                            {
+                                label:
+                                    'Word Ladder',
+                                value:
+                                    'wordladder',
+                                description:
+                                    'Solve today’s Word Ladder'
+                            },
+                            {
+                                label:
+                                    'Logic Grid',
+                                value:
+                                    'logicgrid',
+                                description:
+                                    'Solve today’s Logic Grid'
+                            },
+                            {
+                                label:
+                                    'Connections',
+                                value:
+                                    'connections',
+                                description:
+                                    'Solve today’s Connections'
+                            },
+                            {
+                                label:
+                                    'Full Crossword',
+                                value:
+                                    'fullcrossword',
+                                description:
+                                    'Play the daily crossword'
+                            },
+                            {
+                                label:
+                                    'Continuous Crossword',
+                                value:
+                                    'continuouscrossword',
+                                description:
+                                    'Play a fresh crossword anytime'
+                            },
+                            {
+                                label:
+                                    'Continuous Logic Grid',
+                                value:
+                                    'continuouslogicgrid',
+                                description:
+                                    'Play a fresh Logic Grid anytime'
+                            },
+                            {
+                                label:
+                                    'Continuous Connections',
+                                value:
+                                    'continuousconnections',
+                                description:
+                                    'Play a fresh Connections anytime'
+                            }
+                        ])
+                );
+
+        await interaction.reply({
+            content:
+                '🧩 **Welcome to PuzzlePilot!**\n\n' +
+                'Choose your puzzle:',
+            components: [
+                menu
+            ]
+        });
+    }
+);
 
 // ─────────────────────────────────────────────
 // DAILY MENU SELECTION
 // ─────────────────────────────────────────────
 
-client.on('interactionCreate', async interaction => {
-    if (!interaction.isStringSelectMenu()) return;
+client.on(
+    'interactionCreate',
+    async interaction => {
 
-    if (interaction.customId !== 'daily-menu') return;
+        if (
+            !interaction.isStringSelectMenu()
+        ) {
+            return;
+        }
 
-    const choice = interaction.values[0];
+        if (
+            interaction.customId !==
+            'daily-menu'
+        ) {
+            return;
+        }
 
-    // ─────────────────────────────────────────
-    // WORD LADDER
-    // ─────────────────────────────────────────
+        const choice =
+            interaction.values[0];
 
-    if (choice === 'wordladder') {
-        await wordladder.startDaily(interaction);
-        return;
+        // ─────────────────────────────────────
+        // WORD LADDER
+        // ─────────────────────────────────────
+
+        if (
+            choice ===
+            'wordladder'
+        ) {
+            await wordladder.startDaily(
+                interaction
+            );
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // DAILY LOGIC GRID
+        // ─────────────────────────────────────
+
+        if (
+            choice ===
+            'logicgrid'
+        ) {
+            await logicgrid.startDaily(
+                interaction
+            );
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // DAILY CONNECTIONS
+        // ─────────────────────────────────────
+
+        if (
+            choice ===
+            'connections'
+        ) {
+            await connections.startDaily(
+                interaction
+            );
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // FULL CROSSWORD
+        // ─────────────────────────────────────
+
+        if (
+            choice ===
+            'fullcrossword'
+        ) {
+            await interaction.reply(
+                '🧩 **Daily Full Crossword**\n\n' +
+                'Coming soon! This will use the same crossword engine ' +
+                'as Continuous Crossword.'
+            );
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // CONTINUOUS CROSSWORD
+        // ─────────────────────────────────────
+
+        if (
+            choice ===
+            'continuouscrossword'
+        ) {
+            await interaction.reply({
+                content:
+                    '🧩 **Continuous Crossword**\n\n' +
+                    'Start a fresh crossword whenever you like!',
+                components: [
+                    new ActionRowBuilder()
+                        .addComponents(
+                            new ButtonBuilder()
+                                .setCustomId(
+                                    'cw_continuous_start'
+                                )
+                                .setLabel(
+                                    'Start Continuous Crossword'
+                                )
+                                .setStyle(
+                                    ButtonStyle.Success
+                                )
+                        )
+                ]
+            });
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // CONTINUOUS LOGIC GRID
+        // ─────────────────────────────────────
+
+        if (
+            choice ===
+            'continuouslogicgrid'
+        ) {
+            await interaction.reply({
+                content:
+                    '🧠 **Continuous Logic Grid**\n\n' +
+                    'Start a fresh Logic Grid whenever you like!',
+                components: [
+                    new ActionRowBuilder()
+                        .addComponents(
+                            new ButtonBuilder()
+                                .setCustomId(
+                                    'lg_continuous_start'
+                                )
+                                .setLabel(
+                                    'Start Continuous Logic Grid'
+                                )
+                                .setStyle(
+                                    ButtonStyle.Success
+                                )
+                        )
+                ]
+            });
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // CONTINUOUS CONNECTIONS
+        // ─────────────────────────────────────
+
+        if (
+            choice ===
+            'continuousconnections'
+        ) {
+            await interaction.reply({
+                content:
+                    '🔗 **Continuous Connections**\n\n' +
+                    'Start a fresh Connections puzzle whenever you like!',
+                components: [
+                    new ActionRowBuilder()
+                        .addComponents(
+                            new ButtonBuilder()
+                                .setCustomId(
+                                    'conn_continuous_start'
+                                )
+                                .setLabel(
+                                    'Start Continuous Connections'
+                                )
+                                .setStyle(
+                                    ButtonStyle.Success
+                                )
+                        )
+                ]
+            });
+
+            return;
+        }
     }
+);
 
-    // ─────────────────────────────────────────
-    // LOGIC GRID
-    // ─────────────────────────────────────────
+// ─────────────────────────────────────────────
+// BUTTON HANDLERS
+// ─────────────────────────────────────────────
 
-    if (choice === 'logicgrid') {
-        await logicgrid.startLogicGrid(interaction);
-        return;
-    }
+client.on(
+    'interactionCreate',
+    async interaction => {
 
-    // ─────────────────────────────────────────
-    // DAILY CONNECTIONS
-    // ─────────────────────────────────────────
+        // ─────────────────────────────────────
+        // CONTINUOUS CROSSWORD START
+        // ─────────────────────────────────────
 
-    if (choice === 'connections') {
-        await connections.startDaily(interaction);
-        return;
-    }
+        if (
+            interaction.isButton() &&
+            interaction.customId ===
+                'cw_continuous_start'
+        ) {
+            await crossword.startCrossword(
+                interaction
+            );
 
-    // ─────────────────────────────────────────
-    // FULL CROSSWORD
-    // ─────────────────────────────────────────
+            return;
+        }
 
-    if (choice === 'fullcrossword') {
-        await interaction.reply(
-            '🧩 **Daily Full Crossword**\n\n' +
-            'Coming soon! This will use the same crossword engine ' +
-            'as Continuous Crossword.'
+        // ─────────────────────────────────────
+        // CONTINUOUS LOGIC GRID START
+        // ─────────────────────────────────────
+
+        if (
+            interaction.isButton() &&
+            interaction.customId ===
+                'lg_continuous_start'
+        ) {
+            await logicgrid.startContinuous(
+                interaction
+            );
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // CONTINUOUS CONNECTIONS START
+        // ─────────────────────────────────────
+
+        if (
+            interaction.isButton() &&
+            interaction.customId ===
+                'conn_continuous_start'
+        ) {
+            await connections.startContinuous(
+                interaction
+            );
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // CROSSWORD
+        // ─────────────────────────────────────
+
+        await crossword.handleInteraction(
+            interaction
         );
 
-        return;
+        // ─────────────────────────────────────
+        // WORD LADDER
+        // ─────────────────────────────────────
+
+        await wordladder.handleInteraction(
+            interaction
+        );
+
+        // ─────────────────────────────────────
+        // LOGIC GRID
+        // ─────────────────────────────────────
+
+        await logicgrid.handleInteraction(
+            interaction
+        );
+
+        // ─────────────────────────────────────
+        // CONNECTIONS
+        // ─────────────────────────────────────
+
+        await connections.handleInteraction(
+            interaction
+        );
     }
-
-    // ─────────────────────────────────────────
-    // CONTINUOUS CROSSWORD
-    // ─────────────────────────────────────────
-
-    if (choice === 'continuouscrossword') {
-        await interaction.reply({
-            content:
-                '🧩 **Continuous Crossword**\n\n' +
-                'Start a fresh crossword whenever you like!',
-            components: [
-                new ActionRowBuilder().addComponents(
-                    new ButtonBuilder()
-                        .setCustomId('cw_continuous_start')
-                        .setLabel('Start Continuous Crossword')
-                        .setStyle(ButtonStyle.Success)
-                )
-            ]
-        });
-
-        return;
-    }
-
-    // ─────────────────────────────────────────
-    // CONTINUOUS CONNECTIONS
-    // ─────────────────────────────────────────
-
-    if (choice === 'continuousconnections') {
-        await interaction.reply({
-            content:
-                '🔗 **Continuous Connections**\n\n' +
-                'Start a fresh Connections puzzle whenever you like!',
-            components: [
-                new ActionRowBuilder().addComponents(
-                    new ButtonBuilder()
-                        .setCustomId('conn_continuous_start')
-                        .setLabel('Start Continuous Connections')
-                        .setStyle(ButtonStyle.Success)
-                )
-            ]
-        });
-
-        return;
-    }
-});
-
-// ─────────────────────────────────────────────
-// BUTTON + MODAL HANDLERS
-// ─────────────────────────────────────────────
-
-client.on('interactionCreate', async interaction => {
-
-    // ─────────────────────────────────────────
-    // CONTINUOUS CROSSWORD START
-    // ─────────────────────────────────────────
-
-    if (
-        interaction.isButton() &&
-        interaction.customId === 'cw_continuous_start'
-    ) {
-        await crossword.startCrossword(interaction);
-        return;
-    }
-
-    // ─────────────────────────────────────────
-    // CONTINUOUS CONNECTIONS START
-    // ─────────────────────────────────────────
-
-    if (
-        interaction.isButton() &&
-        interaction.customId === 'conn_continuous_start'
-    ) {
-        await connections.startContinuous(interaction);
-        return;
-    }
-
-    // ─────────────────────────────────────────
-    // CROSSWORD
-    // ─────────────────────────────────────────
-
-    await crossword.handleInteraction(interaction);
-
-    // ─────────────────────────────────────────
-    // WORD LADDER
-    // ─────────────────────────────────────────
-
-    await wordladder.handleInteraction(interaction);
-
-    // ─────────────────────────────────────────
-    // LOGIC GRID
-    // ─────────────────────────────────────────
-
-    await logicgrid.handleInteraction(interaction);
-
-    // ─────────────────────────────────────────
-    // CONNECTIONS
-    // ─────────────────────────────────────────
-
-    await connections.handleInteraction(interaction);
-});
+);
 
 // ─────────────────────────────────────────────
 // LOGIN
 // ─────────────────────────────────────────────
 
-client.login(process.env.TOKEN);
+client.login(
+    process.env.TOKEN
+);
+
