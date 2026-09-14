@@ -1,6 +1,6 @@
 // crossword.js
 // PuzzlePilot Crossword Engine
-// Version 2
+// Version 3
 //
 // - Individual player sessions
 // - Whole-answer entry
@@ -9,6 +9,7 @@
 // - Check puzzle
 // - Give up / reveal
 // - Automatic completion detection
+// - Proper PNG crossword grid using crosswordImage.js
 
 const {
     ActionRowBuilder,
@@ -17,8 +18,13 @@ const {
     ModalBuilder,
     TextInputBuilder,
     TextInputStyle,
-    StringSelectMenuBuilder
+    StringSelectMenuBuilder,
+    AttachmentBuilder
 } = require('discord.js');
+
+const {
+    createCrosswordImage
+} = require('./crosswordImage');
 
 
 // ─────────────────────────────────────────────
@@ -181,7 +187,7 @@ function findClue(puzzle, clueId) {
 
 
 // ─────────────────────────────────────────────
-// GET CELLS FOR A CLUE
+// GET CELLS FOR CLUE
 // ─────────────────────────────────────────────
 
 function getClueCells(clue) {
@@ -210,44 +216,41 @@ function getClueCells(clue) {
 // ─────────────────────────────────────────────
 // REBUILD GRID
 // ─────────────────────────────────────────────
-//
-// Important:
-//
-// The grid is rebuilt from all currently entered
-// answers.
-//
-// This means clearing one clue will NOT destroy
-// letters belonging to crossing clues.
-//
-// The most recently entered answer wins if two
-// answers disagree at a crossing.
-// ─────────────────────────────────────────────
 
 function rebuildGrid(session) {
-    const grid = createEmptyGrid(
-        session.puzzle.size
-    );
+    const grid =
+        createEmptyGrid(
+            session.puzzle.size
+        );
 
     for (const clueId of session.answerOrder) {
-        const answer = session.answers[clueId];
+        const answer =
+            session.answers[clueId];
 
         if (!answer) {
             continue;
         }
 
-        const clue = findClue(
-            session.puzzle,
-            clueId
-        );
+        const clue =
+            findClue(
+                session.puzzle,
+                clueId
+            );
 
         if (!clue) {
             continue;
         }
 
-        const cells = getClueCells(clue);
+        const cells =
+            getClueCells(clue);
 
-        for (let i = 0; i < cells.length; i++) {
-            const cell = cells[i];
+        for (
+            let i = 0;
+            i < cells.length;
+            i++
+        ) {
+            const cell =
+                cells[i];
 
             grid[cell.row][cell.col] =
                 answer[i];
@@ -262,18 +265,19 @@ function rebuildGrid(session) {
 // STORE ANSWER
 // ─────────────────────────────────────────────
 
-function storeAnswer(session, clue, answer) {
-    session.answers[clue.id] = answer;
+function storeAnswer(
+    session,
+    clue,
+    answer
+) {
+    session.answers[clue.id] =
+        answer;
 
-    // Remove it from the old position if it
-    // had already been entered.
     session.answerOrder =
         session.answerOrder.filter(
             id => id !== clue.id
         );
 
-    // Put it at the end so the latest answer
-    // controls any conflicting crossing square.
     session.answerOrder.push(
         clue.id
     );
@@ -283,11 +287,16 @@ function storeAnswer(session, clue, answer) {
 
 
 // ─────────────────────────────────────────────
-// CLEAR ONE ANSWER
+// CLEAR ANSWER
 // ─────────────────────────────────────────────
 
-function clearStoredAnswer(session, clue) {
-    delete session.answers[clue.id];
+function clearStoredAnswer(
+    session,
+    clue
+) {
+    delete session.answers[
+        clue.id
+    ];
 
     session.answerOrder =
         session.answerOrder.filter(
@@ -299,109 +308,30 @@ function clearStoredAnswer(session, clue) {
 
 
 // ─────────────────────────────────────────────
-// GRID NUMBERS
-// ─────────────────────────────────────────────
-
-function getCellNumbers(puzzle) {
-    const numbers = {};
-
-    const clues = [
-        ...puzzle.across,
-        ...puzzle.down
-    ];
-
-    for (const clue of clues) {
-        const key =
-            `${clue.row}_${clue.col}`;
-
-        if (!numbers[key]) {
-            numbers[key] =
-                clue.number;
-        }
-    }
-
-    return numbers;
-}
-
-
-// ─────────────────────────────────────────────
-// RENDER GRID
-// ─────────────────────────────────────────────
-
-function renderGrid(session) {
-    const grid = session.grid;
-    const puzzle = session.puzzle;
-    const numbers = getCellNumbers(puzzle);
-    const size = puzzle.size;
-
-    const horizontal = '────';
-
-    let output =
-        '┌' +
-        Array(size)
-            .fill(horizontal)
-            .join('┬') +
-        '┐\n';
-
-    for (let row = 0; row < size; row++) {
-        output += '│';
-
-        for (let col = 0; col < size; col++) {
-            const key =
-                `${row}_${col}`;
-
-            const number =
-                numbers[key]
-                    ? String(numbers[key])
-                    : '';
-
-            const letter =
-                grid[row][col] || '·';
-
-            output +=
-                `${number.padStart(2, ' ')}${letter}│`;
-        }
-
-        output += '\n';
-
-        if (row < size - 1) {
-            output +=
-                '├' +
-                Array(size)
-                    .fill(horizontal)
-                    .join('┼') +
-                '┤\n';
-        }
-    }
-
-    output +=
-        '└' +
-        Array(size)
-            .fill(horizontal)
-            .join('┴') +
-        '┘';
-
-    return output;
-}
-
-
-// ─────────────────────────────────────────────
 // RENDER CLUES
 // ─────────────────────────────────────────────
 
 function renderClues(puzzle) {
-    let output = '**Across**\n';
+    let output =
+        '**Across**\n';
 
-    for (const clue of puzzle.across) {
+    for (
+        const clue
+        of puzzle.across
+    ) {
         output +=
             `**${clue.id}** ` +
             `${clue.clue} ` +
             `(${clue.answer.length})\n`;
     }
 
-    output += '\n**Down**\n';
+    output +=
+        '\n**Down**\n';
 
-    for (const clue of puzzle.down) {
+    for (
+        const clue
+        of puzzle.down
+    ) {
         output +=
             `**${clue.id}** ` +
             `${clue.clue} ` +
@@ -413,21 +343,24 @@ function renderClues(puzzle) {
 
 
 // ─────────────────────────────────────────────
-// SELECTED CLUE TEXT
+// SELECTED CLUE
 // ─────────────────────────────────────────────
 
 function renderSelectedClue(session) {
-    if (!session.selectedClueId) {
+    if (
+        !session.selectedClueId
+    ) {
         return (
             '🎯 **Selected clue:** None\n' +
             'Choose a clue from the menu below.'
         );
     }
 
-    const clue = findClue(
-        session.puzzle,
-        session.selectedClueId
-    );
+    const clue =
+        findClue(
+            session.puzzle,
+            session.selectedClueId
+        );
 
     if (!clue) {
         return (
@@ -445,7 +378,7 @@ function renderSelectedClue(session) {
 
 
 // ─────────────────────────────────────────────
-// BUILD MESSAGE
+// BUILD MESSAGE TEXT
 // ─────────────────────────────────────────────
 
 function buildContent(session) {
@@ -466,11 +399,6 @@ function buildContent(session) {
     }
 
     content +=
-        '```text\n' +
-        renderGrid(session) +
-        '\n```\n\n';
-
-    content +=
         renderClues(
             session.puzzle
         );
@@ -481,7 +409,9 @@ function buildContent(session) {
             session
         );
 
-    if (session.statusMessage) {
+    if (
+        session.statusMessage
+    ) {
         content +=
             '\n\n' +
             session.statusMessage;
@@ -492,13 +422,38 @@ function buildContent(session) {
 
 
 // ─────────────────────────────────────────────
+// CREATE IMAGE ATTACHMENT
+// ─────────────────────────────────────────────
+
+async function buildImageAttachment(
+    session
+) {
+    const imageBuffer =
+        await createCrosswordImage(
+            session
+        );
+
+    return new AttachmentBuilder(
+        imageBuffer,
+        {
+            name:
+                `crossword-${session.id}.png`
+        }
+    );
+}
+
+
+// ─────────────────────────────────────────────
 // CLUE SELECT MENU
 // ─────────────────────────────────────────────
 
 function buildClueSelect(session) {
     const options = [];
 
-    for (const clue of session.puzzle.across) {
+    for (
+        const clue
+        of session.puzzle.across
+    ) {
         options.push({
             label:
                 `${clue.id} — ${clue.clue}`,
@@ -509,7 +464,10 @@ function buildClueSelect(session) {
         });
     }
 
-    for (const clue of session.puzzle.down) {
+    for (
+        const clue
+        of session.puzzle.down
+    ) {
         options.push({
             label:
                 `${clue.id} — ${clue.clue}`,
@@ -532,10 +490,14 @@ function buildClueSelect(session) {
                 session.completed ||
                 session.gaveUp
             )
-            .addOptions(options);
+            .addOptions(
+                options
+            );
 
     return new ActionRowBuilder()
-        .addComponents(menu);
+        .addComponents(
+            menu
+        );
 }
 
 
@@ -611,7 +573,7 @@ function buildButtons(session) {
 
 
 // ─────────────────────────────────────────────
-// ALL COMPONENTS
+// COMPONENTS
 // ─────────────────────────────────────────────
 
 function buildComponents(session) {
@@ -623,7 +585,7 @@ function buildComponents(session) {
 
 
 // ─────────────────────────────────────────────
-// PUZZLE COMPLETE?
+// COMPLETE?
 // ─────────────────────────────────────────────
 
 function isPuzzleComplete(session) {
@@ -657,7 +619,9 @@ function isPuzzleComplete(session) {
 // COUNT WRONG LETTERS
 // ─────────────────────────────────────────────
 
-function countIncorrectLetters(session) {
+function countIncorrectLetters(
+    session
+) {
     let incorrect = 0;
 
     const solution =
@@ -691,14 +655,20 @@ function countIncorrectLetters(session) {
 
 
 // ─────────────────────────────────────────────
-// COUNT EMPTY CELLS
+// COUNT EMPTY
 // ─────────────────────────────────────────────
 
 function countEmptyCells(session) {
     let empty = 0;
 
-    for (const row of session.grid) {
-        for (const cell of row) {
+    for (
+        const row
+        of session.grid
+    ) {
+        for (
+            const cell
+            of row
+        ) {
             if (!cell) {
                 empty++;
             }
@@ -760,10 +730,56 @@ async function verifyPlayer(
 
 
 // ─────────────────────────────────────────────
+// UPDATE CROSSWORD MESSAGE
+// ─────────────────────────────────────────────
+
+async function updateCrosswordMessage(
+    interaction,
+    session,
+    useUpdate = true
+) {
+    const attachment =
+        await buildImageAttachment(
+            session
+        );
+
+    const payload = {
+        content:
+            buildContent(
+                session
+            ),
+
+        files: [
+            attachment
+        ],
+
+        attachments: [],
+
+        components:
+            buildComponents(
+                session
+            )
+    };
+
+    if (useUpdate) {
+        await interaction.update(
+            payload
+        );
+    } else {
+        await interaction.editReply(
+            payload
+        );
+    }
+}
+
+
+// ─────────────────────────────────────────────
 // START CROSSWORD
 // ─────────────────────────────────────────────
 
-async function startCrossword(interaction) {
+async function startCrossword(
+    interaction
+) {
     const sessionId =
         createSessionId();
 
@@ -782,12 +798,9 @@ async function startCrossword(interaction) {
                 TEST_PUZZLE.size
             ),
 
-        // Each entered clue is stored separately.
         answers:
             {},
 
-        // Keeps track of the order answers were
-        // entered so crossings behave sensibly.
         answerOrder:
             [],
 
@@ -810,12 +823,25 @@ async function startCrossword(interaction) {
         session
     );
 
+    const attachment =
+        await buildImageAttachment(
+            session
+        );
+
     await interaction.reply({
         content:
-            buildContent(session),
+            buildContent(
+                session
+            ),
+
+        files: [
+            attachment
+        ],
 
         components:
-            buildComponents(session)
+            buildComponents(
+                session
+            )
     });
 }
 
@@ -824,7 +850,9 @@ async function startCrossword(interaction) {
 // HANDLE INTERACTIONS
 // ─────────────────────────────────────────────
 
-async function handleInteraction(interaction) {
+async function handleInteraction(
+    interaction
+) {
 
     // ─────────────────────────────────────
     // CLUE SELECT
@@ -843,7 +871,9 @@ async function handleInteraction(interaction) {
             );
 
         const session =
-            sessions.get(sessionId);
+            sessions.get(
+                sessionId
+            );
 
         if (
             !await verifyPlayer(
@@ -861,13 +891,11 @@ async function handleInteraction(interaction) {
             '✏️ Press **Enter Answer** ' +
             'to fill this clue.';
 
-        await interaction.update({
-            content:
-                buildContent(session),
-
-            components:
-                buildComponents(session)
-        });
+        await updateCrosswordMessage(
+            interaction,
+            session,
+            true
+        );
 
         return;
     }
@@ -890,7 +918,9 @@ async function handleInteraction(interaction) {
             );
 
         const session =
-            sessions.get(sessionId);
+            sessions.get(
+                sessionId
+            );
 
         if (
             !await verifyPlayer(
@@ -901,7 +931,9 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        if (!session.selectedClueId) {
+        if (
+            !session.selectedClueId
+        ) {
             await interaction.reply({
                 content:
                     'Choose a clue first.',
@@ -956,11 +988,15 @@ async function handleInteraction(interaction) {
                 .setMaxLength(
                     clue.answer.length
                 )
-                .setRequired(true);
+                .setRequired(
+                    true
+                );
 
         modal.addComponents(
             new ActionRowBuilder()
-                .addComponents(input)
+                .addComponents(
+                    input
+                )
         );
 
         await interaction.showModal(
@@ -988,7 +1024,9 @@ async function handleInteraction(interaction) {
             );
 
         const session =
-            sessions.get(sessionId);
+            sessions.get(
+                sessionId
+            );
 
         if (!session) {
             await interaction.reply({
@@ -1064,9 +1102,12 @@ async function handleInteraction(interaction) {
         );
 
         if (
-            isPuzzleComplete(session)
+            isPuzzleComplete(
+                session
+            )
         ) {
-            session.completed = true;
+            session.completed =
+                true;
 
             session.statusMessage =
                 '🏆 Brilliant! Every answer ' +
@@ -1078,13 +1119,11 @@ async function handleInteraction(interaction) {
 
         await interaction.deferUpdate();
 
-        await interaction.editReply({
-            content:
-                buildContent(session),
-
-            components:
-                buildComponents(session)
-        });
+        await updateCrosswordMessage(
+            interaction,
+            session,
+            false
+        );
 
         return;
     }
@@ -1107,7 +1146,9 @@ async function handleInteraction(interaction) {
             );
 
         const session =
-            sessions.get(sessionId);
+            sessions.get(
+                sessionId
+            );
 
         if (
             !await verifyPlayer(
@@ -1132,7 +1173,8 @@ async function handleInteraction(interaction) {
             incorrect === 0 &&
             empty === 0
         ) {
-            session.completed = true;
+            session.completed =
+                true;
 
             session.statusMessage =
                 '🎉 **Everything is correct!**';
@@ -1154,20 +1196,18 @@ async function handleInteraction(interaction) {
                 `somewhere in the grid.`;
         }
 
-        await interaction.update({
-            content:
-                buildContent(session),
-
-            components:
-                buildComponents(session)
-        });
+        await updateCrosswordMessage(
+            interaction,
+            session,
+            true
+        );
 
         return;
     }
 
 
     // ─────────────────────────────────────
-    // CLEAR SELECTED ANSWER
+    // CLEAR
     // ─────────────────────────────────────
 
     if (
@@ -1183,7 +1223,9 @@ async function handleInteraction(interaction) {
             );
 
         const session =
-            sessions.get(sessionId);
+            sessions.get(
+                sessionId
+            );
 
         if (
             !await verifyPlayer(
@@ -1194,7 +1236,9 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        if (!session.selectedClueId) {
+        if (
+            !session.selectedClueId
+        ) {
             await interaction.reply({
                 content:
                     'Choose a clue first, ' +
@@ -1212,7 +1256,9 @@ async function handleInteraction(interaction) {
             );
 
         if (
-            !session.answers[clue.id]
+            !session.answers[
+                clue.id
+            ]
         ) {
             session.statusMessage =
                 `ℹ️ ${clue.id} has no entered ` +
@@ -1227,13 +1273,11 @@ async function handleInteraction(interaction) {
                 `🧹 ${clue.id} cleared.`;
         }
 
-        await interaction.update({
-            content:
-                buildContent(session),
-
-            components:
-                buildComponents(session)
-        });
+        await updateCrosswordMessage(
+            interaction,
+            session,
+            true
+        );
 
         return;
     }
@@ -1256,7 +1300,9 @@ async function handleInteraction(interaction) {
             );
 
         const session =
-            sessions.get(sessionId);
+            sessions.get(
+                sessionId
+            );
 
         if (
             !await verifyPlayer(
@@ -1267,20 +1313,21 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        revealSolution(session);
+        revealSolution(
+            session
+        );
 
-        session.gaveUp = true;
+        session.gaveUp =
+            true;
 
         session.statusMessage =
             'The completed solution is shown above.';
 
-        await interaction.update({
-            content:
-                buildContent(session),
-
-            components:
-                buildComponents(session)
-        });
+        await updateCrosswordMessage(
+            interaction,
+            session,
+            true
+        );
 
         return;
     }
