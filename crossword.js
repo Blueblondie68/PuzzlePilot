@@ -1,12 +1,12 @@
 // crossword.js
 // PuzzlePilot Crossword Engine
-// First proper playable version:
+// Version 2
+//
 // - Individual player sessions
 // - Whole-answer entry
-// - Across + Down clue selection
-// - Interlocking answers
+// - Crossing answers preserved correctly
+// - Clear Answer only clears that clue
 // - Check puzzle
-// - Clear selected answer
 // - Give up / reveal
 // - Automatic completion detection
 
@@ -20,25 +20,9 @@ const {
     StringSelectMenuBuilder
 } = require('discord.js');
 
+
 // ─────────────────────────────────────────────
 // TEST CROSSWORD
-// ─────────────────────────────────────────────
-//
-// This is our FIRST engine-testing crossword.
-// Once the gameplay is working properly,
-// puzzles will be moved into crossword puzzle packs.
-//
-// Solution:
-//
-// H E A R T
-// E M B E R
-// A B U S E
-// R E S I N
-// T R E N D
-//
-// It is a word-square style crossword, which makes
-// it ideal for testing crossings before we build
-// the full puzzle bank.
 // ─────────────────────────────────────────────
 
 const TEST_PUZZLE = {
@@ -152,22 +136,16 @@ const TEST_PUZZLE = {
     ]
 };
 
+
 // ─────────────────────────────────────────────
-// ACTIVE GAME SESSIONS
-// ─────────────────────────────────────────────
-//
-// Each crossword gets its own session ID.
-//
-// This means:
-// Sue can play without affecting Fred.
-// Sue can even have more than one crossword open
-// without the grids sharing the same global state.
+// ACTIVE SESSIONS
 // ─────────────────────────────────────────────
 
 const sessions = new Map();
 
+
 // ─────────────────────────────────────────────
-// SESSION ID
+// CREATE SESSION ID
 // ─────────────────────────────────────────────
 
 function createSessionId() {
@@ -177,34 +155,162 @@ function createSessionId() {
     );
 }
 
+
 // ─────────────────────────────────────────────
-// EMPTY PLAYER GRID
+// CREATE EMPTY GRID
 // ─────────────────────────────────────────────
 
 function createEmptyGrid(size) {
     return Array.from(
         { length: size },
-        () =>
-            Array.from(
-                { length: size },
-                () => null
-            )
+        () => Array(size).fill(null)
     );
 }
 
+
 // ─────────────────────────────────────────────
-// CLUE NUMBERS FOR GRID
+// FIND CLUE
+// ─────────────────────────────────────────────
+
+function findClue(puzzle, clueId) {
+    return [
+        ...puzzle.across,
+        ...puzzle.down
+    ].find(clue => clue.id === clueId);
+}
+
+
+// ─────────────────────────────────────────────
+// GET CELLS FOR A CLUE
+// ─────────────────────────────────────────────
+
+function getClueCells(clue) {
+    const cells = [];
+
+    for (let i = 0; i < clue.answer.length; i++) {
+        let row = clue.row;
+        let col = clue.col;
+
+        if (clue.direction === 'across') {
+            col += i;
+        } else {
+            row += i;
+        }
+
+        cells.push({
+            row,
+            col
+        });
+    }
+
+    return cells;
+}
+
+
+// ─────────────────────────────────────────────
+// REBUILD GRID
+// ─────────────────────────────────────────────
+//
+// Important:
+//
+// The grid is rebuilt from all currently entered
+// answers.
+//
+// This means clearing one clue will NOT destroy
+// letters belonging to crossing clues.
+//
+// The most recently entered answer wins if two
+// answers disagree at a crossing.
+// ─────────────────────────────────────────────
+
+function rebuildGrid(session) {
+    const grid = createEmptyGrid(
+        session.puzzle.size
+    );
+
+    for (const clueId of session.answerOrder) {
+        const answer = session.answers[clueId];
+
+        if (!answer) {
+            continue;
+        }
+
+        const clue = findClue(
+            session.puzzle,
+            clueId
+        );
+
+        if (!clue) {
+            continue;
+        }
+
+        const cells = getClueCells(clue);
+
+        for (let i = 0; i < cells.length; i++) {
+            const cell = cells[i];
+
+            grid[cell.row][cell.col] =
+                answer[i];
+        }
+    }
+
+    session.grid = grid;
+}
+
+
+// ─────────────────────────────────────────────
+// STORE ANSWER
+// ─────────────────────────────────────────────
+
+function storeAnswer(session, clue, answer) {
+    session.answers[clue.id] = answer;
+
+    // Remove it from the old position if it
+    // had already been entered.
+    session.answerOrder =
+        session.answerOrder.filter(
+            id => id !== clue.id
+        );
+
+    // Put it at the end so the latest answer
+    // controls any conflicting crossing square.
+    session.answerOrder.push(
+        clue.id
+    );
+
+    rebuildGrid(session);
+}
+
+
+// ─────────────────────────────────────────────
+// CLEAR ONE ANSWER
+// ─────────────────────────────────────────────
+
+function clearStoredAnswer(session, clue) {
+    delete session.answers[clue.id];
+
+    session.answerOrder =
+        session.answerOrder.filter(
+            id => id !== clue.id
+        );
+
+    rebuildGrid(session);
+}
+
+
+// ─────────────────────────────────────────────
+// GRID NUMBERS
 // ─────────────────────────────────────────────
 
 function getCellNumbers(puzzle) {
     const numbers = {};
 
-    const allClues = [
+    const clues = [
         ...puzzle.across,
         ...puzzle.down
     ];
 
-    for (const clue of allClues) {
+    for (const clue of clues) {
         const key =
             `${clue.row}_${clue.col}`;
 
@@ -217,25 +323,18 @@ function getCellNumbers(puzzle) {
     return numbers;
 }
 
+
 // ─────────────────────────────────────────────
-// GRID RENDERING
+// RENDER GRID
 // ─────────────────────────────────────────────
 
 function renderGrid(session) {
-    const grid =
-        session.grid;
+    const grid = session.grid;
+    const puzzle = session.puzzle;
+    const numbers = getCellNumbers(puzzle);
+    const size = puzzle.size;
 
-    const puzzle =
-        session.puzzle;
-
-    const numbers =
-        getCellNumbers(puzzle);
-
-    const size =
-        puzzle.size;
-
-    const horizontal =
-        '────';
+    const horizontal = '────';
 
     let output =
         '┌' +
@@ -244,54 +343,32 @@ function renderGrid(session) {
             .join('┬') +
         '┐\n';
 
-    for (
-        let row = 0;
-        row < size;
-        row++
-    ) {
+    for (let row = 0; row < size; row++) {
         output += '│';
 
-        for (
-            let col = 0;
-            col < size;
-            col++
-        ) {
+        for (let col = 0; col < size; col++) {
             const key =
                 `${row}_${col}`;
 
             const number =
                 numbers[key]
-                    ? String(
-                        numbers[key]
-                    )
+                    ? String(numbers[key])
                     : '';
 
             const letter =
-                grid[row][col] ||
-                '·';
-
-            const numberText =
-                number.padStart(
-                    2,
-                    ' '
-                );
+                grid[row][col] || '·';
 
             output +=
-                `${numberText}${letter}│`;
+                `${number.padStart(2, ' ')}${letter}│`;
         }
 
         output += '\n';
 
-        if (
-            row <
-            size - 1
-        ) {
+        if (row < size - 1) {
             output +=
                 '├' +
                 Array(size)
-                    .fill(
-                        horizontal
-                    )
+                    .fill(horizontal)
                     .join('┼') +
                 '┤\n';
         }
@@ -307,31 +384,24 @@ function renderGrid(session) {
     return output;
 }
 
+
 // ─────────────────────────────────────────────
-// CLUE TEXT
+// RENDER CLUES
 // ─────────────────────────────────────────────
 
 function renderClues(puzzle) {
-    let output =
-        '**Across**\n';
+    let output = '**Across**\n';
 
-    for (
-        const clue
-        of puzzle.across
-    ) {
+    for (const clue of puzzle.across) {
         output +=
             `**${clue.id}** ` +
             `${clue.clue} ` +
             `(${clue.answer.length})\n`;
     }
 
-    output +=
-        '\n**Down**\n';
+    output += '\n**Down**\n';
 
-    for (
-        const clue
-        of puzzle.down
-    ) {
+    for (const clue of puzzle.down) {
         output +=
             `**${clue.id}** ` +
             `${clue.clue} ` +
@@ -341,51 +411,27 @@ function renderClues(puzzle) {
     return output;
 }
 
-// ─────────────────────────────────────────────
-// FIND A CLUE
-// ─────────────────────────────────────────────
-
-function findClue(
-    puzzle,
-    clueId
-) {
-    return [
-        ...puzzle.across,
-        ...puzzle.down
-    ].find(
-        clue =>
-            clue.id === clueId
-    );
-}
 
 // ─────────────────────────────────────────────
 // SELECTED CLUE TEXT
 // ─────────────────────────────────────────────
 
-function renderSelectedClue(
-    session
-) {
-    if (
-        !session.selectedClueId
-    ) {
+function renderSelectedClue(session) {
+    if (!session.selectedClueId) {
         return (
-            '🎯 **Selected clue:** ' +
-            'None\n' +
-            'Choose a clue from ' +
-            'the menu below.'
+            '🎯 **Selected clue:** None\n' +
+            'Choose a clue from the menu below.'
         );
     }
 
-    const clue =
-        findClue(
-            session.puzzle,
-            session.selectedClueId
-        );
+    const clue = findClue(
+        session.puzzle,
+        session.selectedClueId
+    );
 
     if (!clue) {
         return (
-            '🎯 **Selected clue:** ' +
-            'None'
+            '🎯 **Selected clue:** None'
         );
     }
 
@@ -397,8 +443,9 @@ function renderSelectedClue(
     );
 }
 
+
 // ─────────────────────────────────────────────
-// GAME MESSAGE CONTENT
+// BUILD MESSAGE
 // ─────────────────────────────────────────────
 
 function buildContent(session) {
@@ -434,9 +481,7 @@ function buildContent(session) {
             session
         );
 
-    if (
-        session.statusMessage
-    ) {
+    if (session.statusMessage) {
         content +=
             '\n\n' +
             session.statusMessage;
@@ -445,44 +490,33 @@ function buildContent(session) {
     return content;
 }
 
+
 // ─────────────────────────────────────────────
 // CLUE SELECT MENU
 // ─────────────────────────────────────────────
 
-function buildClueSelect(
-    session
-) {
+function buildClueSelect(session) {
     const options = [];
 
-    for (
-        const clue
-        of session.puzzle.across
-    ) {
+    for (const clue of session.puzzle.across) {
         options.push({
             label:
-                `${clue.id} — ` +
-                clue.clue,
+                `${clue.id} — ${clue.clue}`,
             value:
                 clue.id,
             description:
-                `Across • ` +
-                `${clue.answer.length} letters`
+                `Across • ${clue.answer.length} letters`
         });
     }
 
-    for (
-        const clue
-        of session.puzzle.down
-    ) {
+    for (const clue of session.puzzle.down) {
         options.push({
             label:
-                `${clue.id} — ` +
-                clue.clue,
+                `${clue.id} — ${clue.clue}`,
             value:
                 clue.id,
             description:
-                `Down • ` +
-                `${clue.answer.length} letters`
+                `Down • ${clue.answer.length} letters`
         });
     }
 
@@ -498,183 +532,101 @@ function buildClueSelect(
                 session.completed ||
                 session.gaveUp
             )
-            .addOptions(
-                options
-            );
+            .addOptions(options);
 
-    return (
-        new ActionRowBuilder()
-            .addComponents(
-                menu
-            )
-    );
+    return new ActionRowBuilder()
+        .addComponents(menu);
 }
 
+
 // ─────────────────────────────────────────────
-// CONTROL BUTTONS
+// BUTTONS
 // ─────────────────────────────────────────────
 
-function buildButtons(
-    session
-) {
+function buildButtons(session) {
     const disabled =
         session.completed ||
         session.gaveUp;
 
-    return (
-        new ActionRowBuilder()
-            .addComponents(
+    return new ActionRowBuilder()
+        .addComponents(
 
-                new ButtonBuilder()
-                    .setCustomId(
-                        `cw_enter_${session.id}`
-                    )
-                    .setLabel(
-                        'Enter Answer'
-                    )
-                    .setStyle(
-                        ButtonStyle.Primary
-                    )
-                    .setDisabled(
-                        disabled
-                    ),
+            new ButtonBuilder()
+                .setCustomId(
+                    `cw_enter_${session.id}`
+                )
+                .setLabel(
+                    'Enter Answer'
+                )
+                .setStyle(
+                    ButtonStyle.Primary
+                )
+                .setDisabled(
+                    disabled
+                ),
 
-                new ButtonBuilder()
-                    .setCustomId(
-                        `cw_check_${session.id}`
-                    )
-                    .setLabel(
-                        'Check'
-                    )
-                    .setStyle(
-                        ButtonStyle.Success
-                    )
-                    .setDisabled(
-                        disabled
-                    ),
+            new ButtonBuilder()
+                .setCustomId(
+                    `cw_check_${session.id}`
+                )
+                .setLabel(
+                    'Check'
+                )
+                .setStyle(
+                    ButtonStyle.Success
+                )
+                .setDisabled(
+                    disabled
+                ),
 
-                new ButtonBuilder()
-                    .setCustomId(
-                        `cw_clear_${session.id}`
-                    )
-                    .setLabel(
-                        'Clear Answer'
-                    )
-                    .setStyle(
-                        ButtonStyle.Secondary
-                    )
-                    .setDisabled(
-                        disabled
-                    ),
+            new ButtonBuilder()
+                .setCustomId(
+                    `cw_clear_${session.id}`
+                )
+                .setLabel(
+                    'Clear Answer'
+                )
+                .setStyle(
+                    ButtonStyle.Secondary
+                )
+                .setDisabled(
+                    disabled
+                ),
 
-                new ButtonBuilder()
-                    .setCustomId(
-                        `cw_giveup_${session.id}`
-                    )
-                    .setLabel(
-                        'Give Up'
-                    )
-                    .setStyle(
-                        ButtonStyle.Danger
-                    )
-                    .setDisabled(
-                        disabled
-                    )
-            )
-    );
+            new ButtonBuilder()
+                .setCustomId(
+                    `cw_giveup_${session.id}`
+                )
+                .setLabel(
+                    'Give Up'
+                )
+                .setStyle(
+                    ButtonStyle.Danger
+                )
+                .setDisabled(
+                    disabled
+                )
+        );
 }
+
 
 // ─────────────────────────────────────────────
 // ALL COMPONENTS
 // ─────────────────────────────────────────────
 
-function buildComponents(
-    session
-) {
+function buildComponents(session) {
     return [
-        buildClueSelect(
-            session
-        ),
-        buildButtons(
-            session
-        )
+        buildClueSelect(session),
+        buildButtons(session)
     ];
 }
 
-// ─────────────────────────────────────────────
-// PLACE ANSWER IN GRID
-// ─────────────────────────────────────────────
-
-function placeAnswer(
-    session,
-    clue,
-    answer
-) {
-    for (
-        let i = 0;
-        i < answer.length;
-        i++
-    ) {
-        let row =
-            clue.row;
-
-        let col =
-            clue.col;
-
-        if (
-            clue.direction ===
-            'across'
-        ) {
-            col += i;
-        } else {
-            row += i;
-        }
-
-        session.grid[row][col] =
-            answer[i];
-    }
-}
 
 // ─────────────────────────────────────────────
-// CLEAR SELECTED ANSWER
+// PUZZLE COMPLETE?
 // ─────────────────────────────────────────────
 
-function clearAnswer(
-    session,
-    clue
-) {
-    for (
-        let i = 0;
-        i < clue.answer.length;
-        i++
-    ) {
-        let row =
-            clue.row;
-
-        let col =
-            clue.col;
-
-        if (
-            clue.direction ===
-            'across'
-        ) {
-            col += i;
-        } else {
-            row += i;
-        }
-
-        session.grid[row][col] =
-            null;
-    }
-}
-
-// ─────────────────────────────────────────────
-// CHECK IF PUZZLE IS COMPLETE
-// ─────────────────────────────────────────────
-
-function isPuzzleComplete(
-    session
-) {
+function isPuzzleComplete(session) {
     const solution =
         session.puzzle.solution;
 
@@ -700,13 +652,12 @@ function isPuzzleComplete(
     return true;
 }
 
+
 // ─────────────────────────────────────────────
 // COUNT WRONG LETTERS
 // ─────────────────────────────────────────────
 
-function countIncorrectLetters(
-    session
-) {
+function countIncorrectLetters(session) {
     let incorrect = 0;
 
     const solution =
@@ -738,23 +689,16 @@ function countIncorrectLetters(
     return incorrect;
 }
 
+
 // ─────────────────────────────────────────────
 // COUNT EMPTY CELLS
 // ─────────────────────────────────────────────
 
-function countEmptyCells(
-    session
-) {
+function countEmptyCells(session) {
     let empty = 0;
 
-    for (
-        const row
-        of session.grid
-    ) {
-        for (
-            const cell
-            of row
-        ) {
+    for (const row of session.grid) {
+        for (const cell of row) {
             if (!cell) {
                 empty++;
             }
@@ -764,22 +708,21 @@ function countEmptyCells(
     return empty;
 }
 
+
 // ─────────────────────────────────────────────
 // REVEAL SOLUTION
 // ─────────────────────────────────────────────
 
-function revealSolution(
-    session
-) {
+function revealSolution(session) {
     session.grid =
         session.puzzle.solution.map(
-            row =>
-                [...row]
+            row => [...row]
         );
 }
 
+
 // ─────────────────────────────────────────────
-// VERIFY PLAYER OWNS SESSION
+// VERIFY PLAYER
 // ─────────────────────────────────────────────
 
 async function verifyPlayer(
@@ -815,13 +758,12 @@ async function verifyPlayer(
     return true;
 }
 
+
 // ─────────────────────────────────────────────
 // START CROSSWORD
 // ─────────────────────────────────────────────
 
-async function startCrossword(
-    interaction
-) {
+async function startCrossword(interaction) {
     const sessionId =
         createSessionId();
 
@@ -839,6 +781,15 @@ async function startCrossword(
             createEmptyGrid(
                 TEST_PUZZLE.size
             ),
+
+        // Each entered clue is stored separately.
+        answers:
+            {},
+
+        // Keeps track of the order answers were
+        // entered so crossings behave sensibly.
+        answerOrder:
+            [],
 
         selectedClueId:
             null,
@@ -861,26 +812,22 @@ async function startCrossword(
 
     await interaction.reply({
         content:
-            buildContent(
-                session
-            ),
+            buildContent(session),
 
         components:
-            buildComponents(
-                session
-            )
+            buildComponents(session)
     });
 }
 
+
 // ─────────────────────────────────────────────
-// HANDLE ALL CROSSWORD INTERACTIONS
+// HANDLE INTERACTIONS
 // ─────────────────────────────────────────────
 
-async function handleInteraction(
-    interaction
-) {
+async function handleInteraction(interaction) {
+
     // ─────────────────────────────────────
-    // CLUE SELECT MENU
+    // CLUE SELECT
     // ─────────────────────────────────────
 
     if (
@@ -896,9 +843,7 @@ async function handleInteraction(
             );
 
         const session =
-            sessions.get(
-                sessionId
-            );
+            sessions.get(sessionId);
 
         if (
             !await verifyPlayer(
@@ -918,18 +863,15 @@ async function handleInteraction(
 
         await interaction.update({
             content:
-                buildContent(
-                    session
-                ),
+                buildContent(session),
 
             components:
-                buildComponents(
-                    session
-                )
+                buildComponents(session)
         });
 
         return;
     }
+
 
     // ─────────────────────────────────────
     // ENTER ANSWER BUTTON
@@ -948,9 +890,7 @@ async function handleInteraction(
             );
 
         const session =
-            sessions.get(
-                sessionId
-            );
+            sessions.get(sessionId);
 
         if (
             !await verifyPlayer(
@@ -961,9 +901,7 @@ async function handleInteraction(
             return;
         }
 
-        if (
-            !session.selectedClueId
-        ) {
+        if (!session.selectedClueId) {
             await interaction.reply({
                 content:
                     'Choose a clue first.',
@@ -998,7 +936,7 @@ async function handleInteraction(
                     `${clue.id} Crossword Answer`
                 );
 
-        const answerInput =
+        const input =
             new TextInputBuilder()
                 .setCustomId(
                     'cw_answer'
@@ -1018,15 +956,11 @@ async function handleInteraction(
                 .setMaxLength(
                     clue.answer.length
                 )
-                .setRequired(
-                    true
-                );
+                .setRequired(true);
 
         modal.addComponents(
             new ActionRowBuilder()
-                .addComponents(
-                    answerInput
-                )
+                .addComponents(input)
         );
 
         await interaction.showModal(
@@ -1035,6 +969,7 @@ async function handleInteraction(
 
         return;
     }
+
 
     // ─────────────────────────────────────
     // ANSWER MODAL
@@ -1053,9 +988,7 @@ async function handleInteraction(
             );
 
         const session =
-            sessions.get(
-                sessionId
-            );
+            sessions.get(sessionId);
 
         if (!session) {
             await interaction.reply({
@@ -1124,48 +1057,41 @@ async function handleInteraction(
             return;
         }
 
-        placeAnswer(
+        storeAnswer(
             session,
             clue,
             answer
         );
 
         if (
-            isPuzzleComplete(
-                session
-            )
+            isPuzzleComplete(session)
         ) {
-            session.completed =
-                true;
+            session.completed = true;
 
             session.statusMessage =
                 '🏆 Brilliant! Every answer ' +
                 'is correct.';
         } else {
             session.statusMessage =
-                `✅ ${clue.id} entered. ` +
-                'Keep going!';
+                `✏️ ${clue.id} entered.`;
         }
 
         await interaction.deferUpdate();
 
         await interaction.editReply({
             content:
-                buildContent(
-                    session
-                ),
+                buildContent(session),
 
             components:
-                buildComponents(
-                    session
-                )
+                buildComponents(session)
         });
 
         return;
     }
 
+
     // ─────────────────────────────────────
-    // CHECK BUTTON
+    // CHECK
     // ─────────────────────────────────────
 
     if (
@@ -1181,9 +1107,7 @@ async function handleInteraction(
             );
 
         const session =
-            sessions.get(
-                sessionId
-            );
+            sessions.get(sessionId);
 
         if (
             !await verifyPlayer(
@@ -1208,8 +1132,7 @@ async function handleInteraction(
             incorrect === 0 &&
             empty === 0
         ) {
-            session.completed =
-                true;
+            session.completed = true;
 
             session.statusMessage =
                 '🎉 **Everything is correct!**';
@@ -1233,18 +1156,15 @@ async function handleInteraction(
 
         await interaction.update({
             content:
-                buildContent(
-                    session
-                ),
+                buildContent(session),
 
             components:
-                buildComponents(
-                    session
-                )
+                buildComponents(session)
         });
 
         return;
     }
+
 
     // ─────────────────────────────────────
     // CLEAR SELECTED ANSWER
@@ -1263,9 +1183,7 @@ async function handleInteraction(
             );
 
         const session =
-            sessions.get(
-                sessionId
-            );
+            sessions.get(sessionId);
 
         if (
             !await verifyPlayer(
@@ -1276,9 +1194,7 @@ async function handleInteraction(
             return;
         }
 
-        if (
-            !session.selectedClueId
-        ) {
+        if (!session.selectedClueId) {
             await interaction.reply({
                 content:
                     'Choose a clue first, ' +
@@ -1295,28 +1211,33 @@ async function handleInteraction(
                 session.selectedClueId
             );
 
-        clearAnswer(
-            session,
-            clue
-        );
+        if (
+            !session.answers[clue.id]
+        ) {
+            session.statusMessage =
+                `ℹ️ ${clue.id} has no entered ` +
+                `answer to clear.`;
+        } else {
+            clearStoredAnswer(
+                session,
+                clue
+            );
 
-        session.statusMessage =
-            `🧹 ${clue.id} cleared.`;
+            session.statusMessage =
+                `🧹 ${clue.id} cleared.`;
+        }
 
         await interaction.update({
             content:
-                buildContent(
-                    session
-                ),
+                buildContent(session),
 
             components:
-                buildComponents(
-                    session
-                )
+                buildComponents(session)
         });
 
         return;
     }
+
 
     // ─────────────────────────────────────
     // GIVE UP
@@ -1335,9 +1256,7 @@ async function handleInteraction(
             );
 
         const session =
-            sessions.get(
-                sessionId
-            );
+            sessions.get(sessionId);
 
         if (
             !await verifyPlayer(
@@ -1348,31 +1267,25 @@ async function handleInteraction(
             return;
         }
 
-        revealSolution(
-            session
-        );
+        revealSolution(session);
 
-        session.gaveUp =
-            true;
+        session.gaveUp = true;
 
         session.statusMessage =
             'The completed solution is shown above.';
 
         await interaction.update({
             content:
-                buildContent(
-                    session
-                ),
+                buildContent(session),
 
             components:
-                buildComponents(
-                    session
-                )
+                buildComponents(session)
         });
 
         return;
     }
 }
+
 
 // ─────────────────────────────────────────────
 // EXPORTS
@@ -1382,3 +1295,4 @@ module.exports = {
     startCrossword,
     handleInteraction
 };
+
