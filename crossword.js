@@ -1,16 +1,17 @@
 // crossword.js
 // PuzzlePilot Crossword Engine
-// Version 4
+// Version 5
 //
-// Proper blocked crossword support:
+// - Proper PNG crossword grid
 // - Black squares
-// - Real crossword numbering
+// - Automatic crossword numbering
+// - Puzzle validation
 // - Variable answer lengths
 // - Individual player sessions
 // - Whole-answer entry
 // - Crossing answers preserved
 // - Check / Clear / Give Up
-// - PNG grid via crosswordImage.js
+// - Automatic completion detection
 
 const {
     ActionRowBuilder,
@@ -29,22 +30,24 @@ const {
 
 
 // ─────────────────────────────────────────────
-// TEST CROSSWORD
+// RAW TEST CROSSWORD
 // ─────────────────────────────────────────────
 //
-// I F ■ H I
-// F L E E T
-// ■ E R A ■
-// H E A R T
-// I T ■ T O
+// IMPORTANT:
 //
-// This is now a genuine blocked mini crossword.
+// We no longer type clue numbers ourselves.
+//
+// PuzzlePilot looks at the grid and works out:
+//
+// 1A, 1D, 2D, 3A, 3D etc.
+//
+// automatically.
+//
 // ─────────────────────────────────────────────
 
-const TEST_PUZZLE = {
+const RAW_TEST_PUZZLE = {
     id: 'crossword_test_002',
     title: 'Mini Crossword',
-    size: 5,
     difficulty: 'Easy',
 
     solution: [
@@ -57,156 +60,99 @@ const TEST_PUZZLE = {
 
     across: [
         {
-            id: '1A',
-            number: 1,
             answer: 'IF',
             clue: 'Provided that',
             row: 0,
-            col: 0,
-            direction: 'across'
+            col: 0
         },
         {
-            id: '3A',
-            number: 3,
             answer: 'HI',
             clue: 'Casual greeting',
             row: 0,
-            col: 3,
-            direction: 'across'
+            col: 3
         },
         {
-            id: '5A',
-            number: 5,
             answer: 'FLEET',
             clue: 'Group of ships',
             row: 1,
-            col: 0,
-            direction: 'across'
+            col: 0
         },
         {
-            id: '7A',
-            number: 7,
             answer: 'ERA',
             clue: 'Period of history',
             row: 2,
-            col: 1,
-            direction: 'across'
+            col: 1
         },
         {
-            id: '8A',
-            number: 8,
             answer: 'HEART',
             clue: 'Organ that pumps blood',
             row: 3,
-            col: 0,
-            direction: 'across'
+            col: 0
         },
         {
-            id: '10A',
-            number: 10,
             answer: 'IT',
             clue: 'The thing being referred to',
             row: 4,
-            col: 0,
-            direction: 'across'
+            col: 0
         },
         {
-            id: '11A',
-            number: 11,
             answer: 'TO',
             clue: 'In the direction of',
             row: 4,
-            col: 3,
-            direction: 'across'
+            col: 3
         }
     ],
 
     down: [
         {
-            id: '1D',
-            number: 1,
             answer: 'IF',
             clue: 'On the condition that',
             row: 0,
-            col: 0,
-            direction: 'down'
+            col: 0
         },
         {
-            id: '2D',
-            number: 2,
             answer: 'FLEET',
             clue: 'Moving quickly',
             row: 0,
-            col: 1,
-            direction: 'down'
+            col: 1
         },
         {
-            id: '3D',
-            number: 3,
             answer: 'HEART',
             clue: 'Central or most important part',
             row: 0,
-            col: 3,
-            direction: 'down'
+            col: 3
         },
         {
-            id: '4D',
-            number: 4,
             answer: 'IT',
             clue: 'Pronoun for a thing',
             row: 0,
-            col: 4,
-            direction: 'down'
+            col: 4
         },
         {
-            id: '6D',
-            number: 6,
             answer: 'ERA',
             clue: 'Distinct period of time',
             row: 1,
-            col: 2,
-            direction: 'down'
+            col: 2
         },
         {
-            id: '8D',
-            number: 8,
             answer: 'HI',
             clue: 'Informal hello',
             row: 3,
-            col: 0,
-            direction: 'down'
+            col: 0
         },
         {
-            id: '9D',
-            number: 9,
             answer: 'TO',
             clue: 'Towards',
             row: 3,
-            col: 4,
-            direction: 'down'
+            col: 4
         }
     ]
 };
 
 
 // ─────────────────────────────────────────────
-// ACTIVE SESSIONS
+// BASIC HELPERS
 // ─────────────────────────────────────────────
-
-const sessions = new Map();
-
-
-// ─────────────────────────────────────────────
-// HELPERS
-// ─────────────────────────────────────────────
-
-function createSessionId() {
-    return (
-        Date.now().toString(36) +
-        Math.random().toString(36).slice(2, 7)
-    );
-}
-
 
 function isBlock(value) {
     return (
@@ -217,10 +163,598 @@ function isBlock(value) {
 }
 
 
-// Create a player's blank grid while preserving
-// the black squares from the solution.
+function cleanAnswer(answer) {
+    return String(answer)
+        .trim()
+        .toUpperCase()
+        .replace(/[^A-Z]/g, '');
+}
 
-function createPlayerGrid(puzzle) {
+
+// ─────────────────────────────────────────────
+// DOES A CELL START AN ACROSS ANSWER?
+// ─────────────────────────────────────────────
+
+function isAcrossStart(solution, row, col) {
+    if (
+        isBlock(solution[row][col])
+    ) {
+        return false;
+    }
+
+    const cols =
+        solution[row].length;
+
+    const leftIsEdgeOrBlock =
+        col === 0 ||
+        isBlock(
+            solution[row][col - 1]
+        );
+
+    const hasCellToRight =
+        col + 1 < cols &&
+        !isBlock(
+            solution[row][col + 1]
+        );
+
+    return (
+        leftIsEdgeOrBlock &&
+        hasCellToRight
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// DOES A CELL START A DOWN ANSWER?
+// ─────────────────────────────────────────────
+
+function isDownStart(solution, row, col) {
+    if (
+        isBlock(solution[row][col])
+    ) {
+        return false;
+    }
+
+    const rows =
+        solution.length;
+
+    const aboveIsEdgeOrBlock =
+        row === 0 ||
+        isBlock(
+            solution[row - 1][col]
+        );
+
+    const hasCellBelow =
+        row + 1 < rows &&
+        !isBlock(
+            solution[row + 1][col]
+        );
+
+    return (
+        aboveIsEdgeOrBlock &&
+        hasCellBelow
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// AUTOMATIC CROSSWORD NUMBERS
+// ─────────────────────────────────────────────
+//
+// Crossword numbering works row by row,
+// left to right.
+//
+// A square gets a number if it begins an
+// Across answer, a Down answer, or both.
+//
+// ─────────────────────────────────────────────
+
+function generateNumberMap(solution) {
+    const numberMap = {};
+
+    let nextNumber = 1;
+
+    for (
+        let row = 0;
+        row < solution.length;
+        row++
+    ) {
+        for (
+            let col = 0;
+            col < solution[row].length;
+            col++
+        ) {
+            if (
+                isBlock(
+                    solution[row][col]
+                )
+            ) {
+                continue;
+            }
+
+            const startsAcross =
+                isAcrossStart(
+                    solution,
+                    row,
+                    col
+                );
+
+            const startsDown =
+                isDownStart(
+                    solution,
+                    row,
+                    col
+                );
+
+            if (
+                startsAcross ||
+                startsDown
+            ) {
+                numberMap[
+                    `${row}_${col}`
+                ] = nextNumber;
+
+                nextNumber++;
+            }
+        }
+    }
+
+    return numberMap;
+}
+
+
+// ─────────────────────────────────────────────
+// READ ANSWER FROM GRID
+// ─────────────────────────────────────────────
+
+function readAnswerFromSolution(
+    solution,
+    row,
+    col,
+    direction
+) {
+    let answer = '';
+
+    let r = row;
+    let c = col;
+
+    while (
+        r >= 0 &&
+        r < solution.length &&
+        c >= 0 &&
+        c < solution[r].length &&
+        !isBlock(solution[r][c])
+    ) {
+        answer +=
+            solution[r][c];
+
+        if (
+            direction === 'across'
+        ) {
+            c++;
+        } else {
+            r++;
+        }
+    }
+
+    return answer;
+}
+
+
+// ─────────────────────────────────────────────
+// VALIDATE AND PREPARE PUZZLE
+// ─────────────────────────────────────────────
+
+function preparePuzzle(rawPuzzle) {
+    if (
+        !rawPuzzle ||
+        !Array.isArray(
+            rawPuzzle.solution
+        ) ||
+        rawPuzzle.solution.length === 0
+    ) {
+        throw new Error(
+            'Crossword has no solution grid.'
+        );
+    }
+
+    const size =
+        rawPuzzle.solution.length;
+
+    // ─────────────────────────────────────
+    // CHECK GRID IS SQUARE
+    // ─────────────────────────────────────
+
+    for (
+        let row = 0;
+        row < size;
+        row++
+    ) {
+        if (
+            !Array.isArray(
+                rawPuzzle.solution[row]
+            ) ||
+            rawPuzzle.solution[row].length !==
+            size
+        ) {
+            throw new Error(
+                `Crossword "${rawPuzzle.id}" ` +
+                `must be a square grid.`
+            );
+        }
+    }
+
+    // ─────────────────────────────────────
+    // NORMALISE GRID
+    // ─────────────────────────────────────
+
+    const solution =
+        rawPuzzle.solution.map(
+            row =>
+                row.map(
+                    cell => {
+                        if (
+                            isBlock(cell)
+                        ) {
+                            return '#';
+                        }
+
+                        const letter =
+                            String(cell)
+                                .trim()
+                                .toUpperCase();
+
+                        if (
+                            !/^[A-Z]$/.test(
+                                letter
+                            )
+                        ) {
+                            throw new Error(
+                                `Invalid grid character ` +
+                                `"${cell}" in ` +
+                                `"${rawPuzzle.id}".`
+                            );
+                        }
+
+                        return letter;
+                    }
+                )
+        );
+
+    const numberMap =
+        generateNumberMap(
+            solution
+        );
+
+    const preparedAcross = [];
+    const preparedDown = [];
+
+    const clueKeys =
+        new Set();
+
+    // ─────────────────────────────────────
+    // PREPARE CLUE
+    // ─────────────────────────────────────
+
+    function prepareClue(
+        rawClue,
+        direction
+    ) {
+        const row =
+            rawClue.row;
+
+        const col =
+            rawClue.col;
+
+        if (
+            !Number.isInteger(row) ||
+            !Number.isInteger(col) ||
+            row < 0 ||
+            col < 0 ||
+            row >= size ||
+            col >= size
+        ) {
+            throw new Error(
+                `Invalid clue position in ` +
+                `"${rawPuzzle.id}".`
+            );
+        }
+
+        const correctStart =
+            direction === 'across'
+                ? isAcrossStart(
+                    solution,
+                    row,
+                    col
+                )
+                : isDownStart(
+                    solution,
+                    row,
+                    col
+                );
+
+        if (
+            !correctStart
+        ) {
+            throw new Error(
+                `A ${direction} clue in ` +
+                `"${rawPuzzle.id}" starts at ` +
+                `row ${row + 1}, ` +
+                `column ${col + 1}, ` +
+                `but that square does not ` +
+                `begin a ${direction} answer.`
+            );
+        }
+
+        const expectedAnswer =
+            readAnswerFromSolution(
+                solution,
+                row,
+                col,
+                direction
+            );
+
+        const suppliedAnswer =
+            cleanAnswer(
+                rawClue.answer
+            );
+
+        if (
+            suppliedAnswer !==
+            expectedAnswer
+        ) {
+            throw new Error(
+                `Crossword "${rawPuzzle.id}" has ` +
+                `a bad ${direction} answer at ` +
+                `row ${row + 1}, ` +
+                `column ${col + 1}. ` +
+                `Grid says "${expectedAnswer}" ` +
+                `but clue says "${suppliedAnswer}".`
+            );
+        }
+
+        const number =
+            numberMap[
+                `${row}_${col}`
+            ];
+
+        if (!number) {
+            throw new Error(
+                `Could not number a clue in ` +
+                `"${rawPuzzle.id}".`
+            );
+        }
+
+        const suffix =
+            direction === 'across'
+                ? 'A'
+                : 'D';
+
+        const id =
+            `${number}${suffix}`;
+
+        const key =
+            `${direction}_${row}_${col}`;
+
+        if (
+            clueKeys.has(key)
+        ) {
+            throw new Error(
+                `Duplicate clue ${id} in ` +
+                `"${rawPuzzle.id}".`
+            );
+        }
+
+        clueKeys.add(key);
+
+        return {
+            id,
+            number,
+            answer:
+                expectedAnswer,
+            clue:
+                rawClue.clue,
+            row,
+            col,
+            direction
+        };
+    }
+
+    // ─────────────────────────────────────
+    // PREPARE ACROSS CLUES
+    // ─────────────────────────────────────
+
+    for (
+        const rawClue
+        of rawPuzzle.across
+    ) {
+        preparedAcross.push(
+            prepareClue(
+                rawClue,
+                'across'
+            )
+        );
+    }
+
+    // ─────────────────────────────────────
+    // PREPARE DOWN CLUES
+    // ─────────────────────────────────────
+
+    for (
+        const rawClue
+        of rawPuzzle.down
+    ) {
+        preparedDown.push(
+            prepareClue(
+                rawClue,
+                'down'
+            )
+        );
+    }
+
+    // ─────────────────────────────────────
+    // MAKE SURE NO CLUES ARE MISSING
+    // ─────────────────────────────────────
+
+    for (
+        let row = 0;
+        row < size;
+        row++
+    ) {
+        for (
+            let col = 0;
+            col < size;
+            col++
+        ) {
+            if (
+                isAcrossStart(
+                    solution,
+                    row,
+                    col
+                )
+            ) {
+                const exists =
+                    preparedAcross.some(
+                        clue =>
+                            clue.row === row &&
+                            clue.col === col
+                    );
+
+                if (!exists) {
+                    const number =
+                        numberMap[
+                            `${row}_${col}`
+                        ];
+
+                    throw new Error(
+                        `Missing clue ${number}A ` +
+                        `in "${rawPuzzle.id}".`
+                    );
+                }
+            }
+
+            if (
+                isDownStart(
+                    solution,
+                    row,
+                    col
+                )
+            ) {
+                const exists =
+                    preparedDown.some(
+                        clue =>
+                            clue.row === row &&
+                            clue.col === col
+                    );
+
+                if (!exists) {
+                    const number =
+                        numberMap[
+                            `${row}_${col}`
+                        ];
+
+                    throw new Error(
+                        `Missing clue ${number}D ` +
+                        `in "${rawPuzzle.id}".`
+                    );
+                }
+            }
+        }
+    }
+
+    preparedAcross.sort(
+        (a, b) =>
+            a.number - b.number
+    );
+
+    preparedDown.sort(
+        (a, b) =>
+            a.number - b.number
+    );
+
+    return {
+        id:
+            rawPuzzle.id,
+
+        title:
+            rawPuzzle.title,
+
+        difficulty:
+            rawPuzzle.difficulty,
+
+        size,
+
+        solution,
+
+        across:
+            preparedAcross,
+
+        down:
+            preparedDown
+    };
+}
+
+
+// ─────────────────────────────────────────────
+// PREPARE TEST PUZZLE
+// ─────────────────────────────────────────────
+//
+// If anything is wrong with the puzzle,
+// Render's log will tell us exactly what.
+//
+// ─────────────────────────────────────────────
+
+const TEST_PUZZLE =
+    preparePuzzle(
+        RAW_TEST_PUZZLE
+    );
+
+console.log(
+    `Crossword loaded: ${TEST_PUZZLE.id}`
+);
+
+console.log(
+    `Across clues: ${TEST_PUZZLE.across
+        .map(clue => clue.id)
+        .join(', ')}`
+);
+
+console.log(
+    `Down clues: ${TEST_PUZZLE.down
+        .map(clue => clue.id)
+        .join(', ')}`
+);
+
+
+// ─────────────────────────────────────────────
+// ACTIVE SESSIONS
+// ─────────────────────────────────────────────
+
+const sessions =
+    new Map();
+
+
+// ─────────────────────────────────────────────
+// CREATE SESSION ID
+// ─────────────────────────────────────────────
+
+function createSessionId() {
+    return (
+        Date.now().toString(36) +
+        Math.random()
+            .toString(36)
+            .slice(2, 7)
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// PLAYER GRID
+// ─────────────────────────────────────────────
+
+function createPlayerGrid(
+    puzzle
+) {
     return puzzle.solution.map(
         row =>
             row.map(
@@ -233,7 +767,14 @@ function createPlayerGrid(puzzle) {
 }
 
 
-function findClue(puzzle, clueId) {
+// ─────────────────────────────────────────────
+// FIND CLUE
+// ─────────────────────────────────────────────
+
+function findClue(
+    puzzle,
+    clueId
+) {
     return [
         ...puzzle.across,
         ...puzzle.down
@@ -244,7 +785,13 @@ function findClue(puzzle, clueId) {
 }
 
 
-function getClueCells(clue) {
+// ─────────────────────────────────────────────
+// CELLS BELONGING TO A CLUE
+// ─────────────────────────────────────────────
+
+function getClueCells(
+    clue
+) {
     const cells = [];
 
     for (
@@ -252,11 +799,15 @@ function getClueCells(clue) {
         i < clue.answer.length;
         i++
     ) {
-        let row = clue.row;
-        let col = clue.col;
+        let row =
+            clue.row;
+
+        let col =
+            clue.col;
 
         if (
-            clue.direction === 'across'
+            clue.direction ===
+            'across'
         ) {
             col += i;
         } else {
@@ -274,10 +825,12 @@ function getClueCells(clue) {
 
 
 // ─────────────────────────────────────────────
-// ANSWER STORAGE / CROSSINGS
+// REBUILD GRID
 // ─────────────────────────────────────────────
 
-function rebuildGrid(session) {
+function rebuildGrid(
+    session
+) {
     const grid =
         createPlayerGrid(
             session.puzzle
@@ -288,7 +841,9 @@ function rebuildGrid(session) {
         of session.answerOrder
     ) {
         const answer =
-            session.answers[clueId];
+            session.answers[
+                clueId
+            ];
 
         if (!answer) {
             continue;
@@ -305,7 +860,9 @@ function rebuildGrid(session) {
         }
 
         const cells =
-            getClueCells(clue);
+            getClueCells(
+                clue
+            );
 
         for (
             let i = 0;
@@ -322,17 +879,23 @@ function rebuildGrid(session) {
         }
     }
 
-    session.grid = grid;
+    session.grid =
+        grid;
 }
 
+
+// ─────────────────────────────────────────────
+// STORE ANSWER
+// ─────────────────────────────────────────────
 
 function storeAnswer(
     session,
     clue,
     answer
 ) {
-    session.answers[clue.id] =
-        answer;
+    session.answers[
+        clue.id
+    ] = answer;
 
     session.answerOrder =
         session.answerOrder.filter(
@@ -344,9 +907,15 @@ function storeAnswer(
         clue.id
     );
 
-    rebuildGrid(session);
+    rebuildGrid(
+        session
+    );
 }
 
+
+// ─────────────────────────────────────────────
+// CLEAR ANSWER
+// ─────────────────────────────────────────────
 
 function clearStoredAnswer(
     session,
@@ -362,15 +931,19 @@ function clearStoredAnswer(
                 id !== clue.id
         );
 
-    rebuildGrid(session);
+    rebuildGrid(
+        session
+    );
 }
 
 
 // ─────────────────────────────────────────────
-// CLUE TEXT
+// RENDER CLUES
 // ─────────────────────────────────────────────
 
-function renderClues(puzzle) {
+function renderClues(
+    puzzle
+) {
     let output =
         '**Across**\n';
 
@@ -400,6 +973,10 @@ function renderClues(puzzle) {
     return output;
 }
 
+
+// ─────────────────────────────────────────────
+// SELECTED CLUE
+// ─────────────────────────────────────────────
 
 function renderSelectedClue(
     session
@@ -438,7 +1015,9 @@ function renderSelectedClue(
 // MESSAGE CONTENT
 // ─────────────────────────────────────────────
 
-function buildContent(session) {
+function buildContent(
+    session
+) {
     let content =
         `🧩 **${session.puzzle.title}**\n` +
         `📏 ${session.puzzle.size} × ` +
@@ -483,7 +1062,7 @@ function buildContent(session) {
 
 
 // ─────────────────────────────────────────────
-// IMAGE
+// IMAGE ATTACHMENT
 // ─────────────────────────────────────────────
 
 async function buildImageAttachment(
@@ -520,8 +1099,10 @@ function buildClueSelect(
         options.push({
             label:
                 `${clue.id} — ${clue.clue}`,
+
             value:
                 clue.id,
+
             description:
                 `Across • ` +
                 `${clue.answer.length} letters`
@@ -535,8 +1116,10 @@ function buildClueSelect(
         options.push({
             label:
                 `${clue.id} — ${clue.clue}`,
+
             value:
                 clue.id,
+
             description:
                 `Down • ` +
                 `${clue.answer.length} letters`
@@ -570,7 +1153,9 @@ function buildClueSelect(
 // BUTTONS
 // ─────────────────────────────────────────────
 
-function buildButtons(session) {
+function buildButtons(
+    session
+) {
     const disabled =
         session.completed ||
         session.gaveUp;
@@ -652,7 +1237,7 @@ function buildComponents(
 
 
 // ─────────────────────────────────────────────
-// COMPLETION / CHECKING
+// IS COMPLETE?
 // ─────────────────────────────────────────────
 
 function isPuzzleComplete(
@@ -684,10 +1269,15 @@ function isPuzzleComplete(
 }
 
 
+// ─────────────────────────────────────────────
+// WRONG LETTER COUNT
+// ─────────────────────────────────────────────
+
 function countIncorrectLetters(
     session
 ) {
-    let incorrect = 0;
+    let incorrect =
+        0;
 
     const solution =
         session.puzzle.solution;
@@ -727,10 +1317,15 @@ function countIncorrectLetters(
 }
 
 
+// ─────────────────────────────────────────────
+// EMPTY CELL COUNT
+// ─────────────────────────────────────────────
+
 function countEmptyCells(
     session
 ) {
-    let empty = 0;
+    let empty =
+        0;
 
     const solution =
         session.puzzle.solution;
@@ -765,6 +1360,10 @@ function countEmptyCells(
 }
 
 
+// ─────────────────────────────────────────────
+// REVEAL
+// ─────────────────────────────────────────────
+
 function revealSolution(
     session
 ) {
@@ -789,7 +1388,8 @@ async function verifyPlayer(
             content:
                 '⚠️ This crossword session ' +
                 'is no longer active.',
-            ephemeral: true
+            ephemeral:
+                true
         });
 
         return false;
@@ -804,7 +1404,8 @@ async function verifyPlayer(
                 '🧩 This crossword belongs ' +
                 'to another player. ' +
                 'Start your own from /daily.',
-            ephemeral: true
+            ephemeral:
+                true
         });
 
         return false;
@@ -815,7 +1416,7 @@ async function verifyPlayer(
 
 
 // ─────────────────────────────────────────────
-// UPDATE MESSAGE
+// UPDATE CROSSWORD MESSAGE
 // ─────────────────────────────────────────────
 
 async function updateCrosswordMessage(
@@ -838,7 +1439,8 @@ async function updateCrosswordMessage(
             attachment
         ],
 
-        attachments: [],
+        attachments:
+            [],
 
         components:
             buildComponents(
@@ -846,7 +1448,9 @@ async function updateCrosswordMessage(
             )
     };
 
-    if (useUpdate) {
+    if (
+        useUpdate
+    ) {
         await interaction.update(
             payload
         );
@@ -939,7 +1543,9 @@ async function handleInteraction(
     interaction
 ) {
 
-    // CLUE SELECT
+    // ─────────────────────────────────────
+    // SELECT CLUE
+    // ─────────────────────────────────────
 
     if (
         interaction.isStringSelectMenu() &&
@@ -984,7 +1590,9 @@ async function handleInteraction(
     }
 
 
+    // ─────────────────────────────────────
     // ENTER ANSWER BUTTON
+    // ─────────────────────────────────────
 
     if (
         interaction.isButton() &&
@@ -1018,7 +1626,8 @@ async function handleInteraction(
             await interaction.reply({
                 content:
                     'Choose a clue first.',
-                ephemeral: true
+                ephemeral:
+                    true
             });
 
             return;
@@ -1034,7 +1643,8 @@ async function handleInteraction(
             await interaction.reply({
                 content:
                     'That clue could not be found.',
-                ephemeral: true
+                ephemeral:
+                    true
             });
 
             return;
@@ -1088,7 +1698,9 @@ async function handleInteraction(
     }
 
 
+    // ─────────────────────────────────────
     // ANSWER MODAL
+    // ─────────────────────────────────────
 
     if (
         interaction.isModalSubmit() &&
@@ -1112,7 +1724,8 @@ async function handleInteraction(
                 content:
                     '⚠️ This crossword session ' +
                     'is no longer active.',
-                ephemeral: true
+                ephemeral:
+                    true
             });
 
             return;
@@ -1126,7 +1739,8 @@ async function handleInteraction(
                 content:
                     'This crossword belongs ' +
                     'to another player.',
-                ephemeral: true
+                ephemeral:
+                    true
             });
 
             return;
@@ -1142,7 +1756,8 @@ async function handleInteraction(
             await interaction.reply({
                 content:
                     'No clue is currently selected.',
-                ephemeral: true
+                ephemeral:
+                    true
             });
 
             return;
@@ -1168,7 +1783,8 @@ async function handleInteraction(
                 content:
                     `That answer must be ` +
                     `${clue.answer.length} letters.`,
-                ephemeral: true
+                ephemeral:
+                    true
             });
 
             return;
@@ -1208,7 +1824,9 @@ async function handleInteraction(
     }
 
 
+    // ─────────────────────────────────────
     // CHECK
+    // ─────────────────────────────────────
 
     if (
         interaction.isButton() &&
@@ -1283,7 +1901,9 @@ async function handleInteraction(
     }
 
 
-    // CLEAR ANSWER
+    // ─────────────────────────────────────
+    // CLEAR
+    // ─────────────────────────────────────
 
     if (
         interaction.isButton() &&
@@ -1318,7 +1938,8 @@ async function handleInteraction(
                 content:
                     'Choose a clue first, ' +
                     'then you can clear it.',
-                ephemeral: true
+                ephemeral:
+                    true
             });
 
             return;
@@ -1358,7 +1979,9 @@ async function handleInteraction(
     }
 
 
+    // ─────────────────────────────────────
     // GIVE UP
+    // ─────────────────────────────────────
 
     if (
         interaction.isButton() &&
