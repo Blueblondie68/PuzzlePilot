@@ -1,15 +1,16 @@
 // crossword.js
 // PuzzlePilot Crossword Engine
-// Version 3
+// Version 4
 //
+// Proper blocked crossword support:
+// - Black squares
+// - Real crossword numbering
+// - Variable answer lengths
 // - Individual player sessions
 // - Whole-answer entry
-// - Crossing answers preserved correctly
-// - Clear Answer only clears that clue
-// - Check puzzle
-// - Give up / reveal
-// - Automatic completion detection
-// - Proper PNG crossword grid using crosswordImage.js
+// - Crossing answers preserved
+// - Check / Clear / Give Up
+// - PNG grid via crosswordImage.js
 
 const {
     ActionRowBuilder,
@@ -30,36 +31,54 @@ const {
 // ─────────────────────────────────────────────
 // TEST CROSSWORD
 // ─────────────────────────────────────────────
+//
+// I F ■ H I
+// F L E E T
+// ■ E R A ■
+// H E A R T
+// I T ■ T O
+//
+// This is now a genuine blocked mini crossword.
+// ─────────────────────────────────────────────
 
 const TEST_PUZZLE = {
-    id: 'crossword_test_001',
+    id: 'crossword_test_002',
     title: 'Mini Crossword',
     size: 5,
     difficulty: 'Easy',
 
     solution: [
+        ['I', 'F', '#', 'H', 'I'],
+        ['F', 'L', 'E', 'E', 'T'],
+        ['#', 'E', 'R', 'A', '#'],
         ['H', 'E', 'A', 'R', 'T'],
-        ['E', 'M', 'B', 'E', 'R'],
-        ['A', 'B', 'U', 'S', 'E'],
-        ['R', 'E', 'S', 'I', 'N'],
-        ['T', 'R', 'E', 'N', 'D']
+        ['I', 'T', '#', 'T', 'O']
     ],
 
     across: [
         {
             id: '1A',
             number: 1,
-            answer: 'HEART',
-            clue: 'Organ that pumps blood',
+            answer: 'IF',
+            clue: 'Provided that',
             row: 0,
             col: 0,
             direction: 'across'
         },
         {
-            id: '6A',
-            number: 6,
-            answer: 'EMBER',
-            clue: 'Glowing piece left from a fire',
+            id: '3A',
+            number: 3,
+            answer: 'HI',
+            clue: 'Casual greeting',
+            row: 0,
+            col: 3,
+            direction: 'across'
+        },
+        {
+            id: '5A',
+            number: 5,
+            answer: 'FLEET',
+            clue: 'Group of ships',
             row: 1,
             col: 0,
             direction: 'across'
@@ -67,28 +86,37 @@ const TEST_PUZZLE = {
         {
             id: '7A',
             number: 7,
-            answer: 'ABUSE',
-            clue: 'Treat cruelly or misuse',
+            answer: 'ERA',
+            clue: 'Period of history',
             row: 2,
-            col: 0,
+            col: 1,
             direction: 'across'
         },
         {
             id: '8A',
             number: 8,
-            answer: 'RESIN',
-            clue: 'Sticky substance produced by some trees',
+            answer: 'HEART',
+            clue: 'Organ that pumps blood',
             row: 3,
             col: 0,
             direction: 'across'
         },
         {
-            id: '9A',
-            number: 9,
-            answer: 'TREND',
-            clue: 'General direction of change',
+            id: '10A',
+            number: 10,
+            answer: 'IT',
+            clue: 'The thing being referred to',
             row: 4,
             col: 0,
+            direction: 'across'
+        },
+        {
+            id: '11A',
+            number: 11,
+            answer: 'TO',
+            clue: 'In the direction of',
+            row: 4,
+            col: 3,
             direction: 'across'
         }
     ],
@@ -97,8 +125,8 @@ const TEST_PUZZLE = {
         {
             id: '1D',
             number: 1,
-            answer: 'HEART',
-            clue: 'Symbol often associated with love',
+            answer: 'IF',
+            clue: 'On the condition that',
             row: 0,
             col: 0,
             direction: 'down'
@@ -106,8 +134,8 @@ const TEST_PUZZLE = {
         {
             id: '2D',
             number: 2,
-            answer: 'EMBER',
-            clue: 'Small glowing coal in a dying fire',
+            answer: 'FLEET',
+            clue: 'Moving quickly',
             row: 0,
             col: 1,
             direction: 'down'
@@ -115,27 +143,45 @@ const TEST_PUZZLE = {
         {
             id: '3D',
             number: 3,
-            answer: 'ABUSE',
-            clue: 'Improper use of something',
-            row: 0,
-            col: 2,
-            direction: 'down'
-        },
-        {
-            id: '4D',
-            number: 4,
-            answer: 'RESIN',
-            clue: 'Substance used in some varnishes',
+            answer: 'HEART',
+            clue: 'Central or most important part',
             row: 0,
             col: 3,
             direction: 'down'
         },
         {
-            id: '5D',
-            number: 5,
-            answer: 'TREND',
-            clue: 'A popular direction or fashion',
+            id: '4D',
+            number: 4,
+            answer: 'IT',
+            clue: 'Pronoun for a thing',
             row: 0,
+            col: 4,
+            direction: 'down'
+        },
+        {
+            id: '6D',
+            number: 6,
+            answer: 'ERA',
+            clue: 'Distinct period of time',
+            row: 1,
+            col: 2,
+            direction: 'down'
+        },
+        {
+            id: '8D',
+            number: 8,
+            answer: 'HI',
+            clue: 'Informal hello',
+            row: 3,
+            col: 0,
+            direction: 'down'
+        },
+        {
+            id: '9D',
+            number: 9,
+            answer: 'TO',
+            clue: 'Towards',
+            row: 3,
             col: 4,
             direction: 'down'
         }
@@ -151,7 +197,7 @@ const sessions = new Map();
 
 
 // ─────────────────────────────────────────────
-// CREATE SESSION ID
+// HELPERS
 // ─────────────────────────────────────────────
 
 function createSessionId() {
@@ -162,42 +208,56 @@ function createSessionId() {
 }
 
 
-// ─────────────────────────────────────────────
-// CREATE EMPTY GRID
-// ─────────────────────────────────────────────
-
-function createEmptyGrid(size) {
-    return Array.from(
-        { length: size },
-        () => Array(size).fill(null)
+function isBlock(value) {
+    return (
+        value === '#' ||
+        value === '█' ||
+        value === null
     );
 }
 
 
-// ─────────────────────────────────────────────
-// FIND CLUE
-// ─────────────────────────────────────────────
+// Create a player's blank grid while preserving
+// the black squares from the solution.
+
+function createPlayerGrid(puzzle) {
+    return puzzle.solution.map(
+        row =>
+            row.map(
+                cell =>
+                    isBlock(cell)
+                        ? '#'
+                        : null
+            )
+    );
+}
+
 
 function findClue(puzzle, clueId) {
     return [
         ...puzzle.across,
         ...puzzle.down
-    ].find(clue => clue.id === clueId);
+    ].find(
+        clue =>
+            clue.id === clueId
+    );
 }
 
-
-// ─────────────────────────────────────────────
-// GET CELLS FOR CLUE
-// ─────────────────────────────────────────────
 
 function getClueCells(clue) {
     const cells = [];
 
-    for (let i = 0; i < clue.answer.length; i++) {
+    for (
+        let i = 0;
+        i < clue.answer.length;
+        i++
+    ) {
         let row = clue.row;
         let col = clue.col;
 
-        if (clue.direction === 'across') {
+        if (
+            clue.direction === 'across'
+        ) {
             col += i;
         } else {
             row += i;
@@ -214,16 +274,19 @@ function getClueCells(clue) {
 
 
 // ─────────────────────────────────────────────
-// REBUILD GRID
+// ANSWER STORAGE / CROSSINGS
 // ─────────────────────────────────────────────
 
 function rebuildGrid(session) {
     const grid =
-        createEmptyGrid(
-            session.puzzle.size
+        createPlayerGrid(
+            session.puzzle
         );
 
-    for (const clueId of session.answerOrder) {
+    for (
+        const clueId
+        of session.answerOrder
+    ) {
         const answer =
             session.answers[clueId];
 
@@ -249,10 +312,12 @@ function rebuildGrid(session) {
             i < cells.length;
             i++
         ) {
-            const cell =
-                cells[i];
+            const {
+                row,
+                col
+            } = cells[i];
 
-            grid[cell.row][cell.col] =
+            grid[row][col] =
                 answer[i];
         }
     }
@@ -260,10 +325,6 @@ function rebuildGrid(session) {
     session.grid = grid;
 }
 
-
-// ─────────────────────────────────────────────
-// STORE ANSWER
-// ─────────────────────────────────────────────
 
 function storeAnswer(
     session,
@@ -275,7 +336,8 @@ function storeAnswer(
 
     session.answerOrder =
         session.answerOrder.filter(
-            id => id !== clue.id
+            id =>
+                id !== clue.id
         );
 
     session.answerOrder.push(
@@ -285,10 +347,6 @@ function storeAnswer(
     rebuildGrid(session);
 }
 
-
-// ─────────────────────────────────────────────
-// CLEAR ANSWER
-// ─────────────────────────────────────────────
 
 function clearStoredAnswer(
     session,
@@ -300,7 +358,8 @@ function clearStoredAnswer(
 
     session.answerOrder =
         session.answerOrder.filter(
-            id => id !== clue.id
+            id =>
+                id !== clue.id
         );
 
     rebuildGrid(session);
@@ -308,7 +367,7 @@ function clearStoredAnswer(
 
 
 // ─────────────────────────────────────────────
-// RENDER CLUES
+// CLUE TEXT
 // ─────────────────────────────────────────────
 
 function renderClues(puzzle) {
@@ -342,11 +401,9 @@ function renderClues(puzzle) {
 }
 
 
-// ─────────────────────────────────────────────
-// SELECTED CLUE
-// ─────────────────────────────────────────────
-
-function renderSelectedClue(session) {
+function renderSelectedClue(
+    session
+) {
     if (
         !session.selectedClueId
     ) {
@@ -378,7 +435,7 @@ function renderSelectedClue(session) {
 
 
 // ─────────────────────────────────────────────
-// BUILD MESSAGE TEXT
+// MESSAGE CONTENT
 // ─────────────────────────────────────────────
 
 function buildContent(session) {
@@ -388,12 +445,16 @@ function buildContent(session) {
         `${session.puzzle.size}` +
         ` • ${session.puzzle.difficulty}\n\n`;
 
-    if (session.completed) {
+    if (
+        session.completed
+    ) {
         content +=
             '🎉 **CROSSWORD COMPLETE!** 🎉\n\n';
     }
 
-    if (session.gaveUp) {
+    if (
+        session.gaveUp
+    ) {
         content +=
             '🏳️ **Solution revealed**\n\n';
     }
@@ -422,7 +483,7 @@ function buildContent(session) {
 
 
 // ─────────────────────────────────────────────
-// CREATE IMAGE ATTACHMENT
+// IMAGE
 // ─────────────────────────────────────────────
 
 async function buildImageAttachment(
@@ -444,10 +505,12 @@ async function buildImageAttachment(
 
 
 // ─────────────────────────────────────────────
-// CLUE SELECT MENU
+// CLUE MENU
 // ─────────────────────────────────────────────
 
-function buildClueSelect(session) {
+function buildClueSelect(
+    session
+) {
     const options = [];
 
     for (
@@ -460,7 +523,8 @@ function buildClueSelect(session) {
             value:
                 clue.id,
             description:
-                `Across • ${clue.answer.length} letters`
+                `Across • ` +
+                `${clue.answer.length} letters`
         });
     }
 
@@ -474,7 +538,8 @@ function buildClueSelect(session) {
             value:
                 clue.id,
             description:
-                `Down • ${clue.answer.length} letters`
+                `Down • ` +
+                `${clue.answer.length} letters`
         });
     }
 
@@ -572,23 +637,27 @@ function buildButtons(session) {
 }
 
 
-// ─────────────────────────────────────────────
-// COMPONENTS
-// ─────────────────────────────────────────────
-
-function buildComponents(session) {
+function buildComponents(
+    session
+) {
     return [
-        buildClueSelect(session),
-        buildButtons(session)
+        buildClueSelect(
+            session
+        ),
+        buildButtons(
+            session
+        )
     ];
 }
 
 
 // ─────────────────────────────────────────────
-// COMPLETE?
+// COMPLETION / CHECKING
 // ─────────────────────────────────────────────
 
-function isPuzzleComplete(session) {
+function isPuzzleComplete(
+    session
+) {
     const solution =
         session.puzzle.solution;
 
@@ -615,10 +684,6 @@ function isPuzzleComplete(session) {
 }
 
 
-// ─────────────────────────────────────────────
-// COUNT WRONG LETTERS
-// ─────────────────────────────────────────────
-
 function countIncorrectLetters(
     session
 ) {
@@ -637,6 +702,14 @@ function countIncorrectLetters(
             col < solution[row].length;
             col++
         ) {
+            if (
+                isBlock(
+                    solution[row][col]
+                )
+            ) {
+                continue;
+            }
+
             const playerLetter =
                 session.grid[row][col];
 
@@ -654,22 +727,35 @@ function countIncorrectLetters(
 }
 
 
-// ─────────────────────────────────────────────
-// COUNT EMPTY
-// ─────────────────────────────────────────────
-
-function countEmptyCells(session) {
+function countEmptyCells(
+    session
+) {
     let empty = 0;
 
+    const solution =
+        session.puzzle.solution;
+
     for (
-        const row
-        of session.grid
+        let row = 0;
+        row < solution.length;
+        row++
     ) {
         for (
-            const cell
-            of row
+            let col = 0;
+            col < solution[row].length;
+            col++
         ) {
-            if (!cell) {
+            if (
+                isBlock(
+                    solution[row][col]
+                )
+            ) {
+                continue;
+            }
+
+            if (
+                !session.grid[row][col]
+            ) {
                 empty++;
             }
         }
@@ -679,14 +765,13 @@ function countEmptyCells(session) {
 }
 
 
-// ─────────────────────────────────────────────
-// REVEAL SOLUTION
-// ─────────────────────────────────────────────
-
-function revealSolution(session) {
+function revealSolution(
+    session
+) {
     session.grid =
         session.puzzle.solution.map(
-            row => [...row]
+            row =>
+                [...row]
         );
 }
 
@@ -730,7 +815,7 @@ async function verifyPlayer(
 
 
 // ─────────────────────────────────────────────
-// UPDATE CROSSWORD MESSAGE
+// UPDATE MESSAGE
 // ─────────────────────────────────────────────
 
 async function updateCrosswordMessage(
@@ -794,8 +879,8 @@ async function startCrossword(
             TEST_PUZZLE,
 
         grid:
-            createEmptyGrid(
-                TEST_PUZZLE.size
+            createPlayerGrid(
+                TEST_PUZZLE
             ),
 
         answers:
@@ -854,9 +939,7 @@ async function handleInteraction(
     interaction
 ) {
 
-    // ─────────────────────────────────────
     // CLUE SELECT
-    // ─────────────────────────────────────
 
     if (
         interaction.isStringSelectMenu() &&
@@ -901,9 +984,7 @@ async function handleInteraction(
     }
 
 
-    // ─────────────────────────────────────
     // ENTER ANSWER BUTTON
-    // ─────────────────────────────────────
 
     if (
         interaction.isButton() &&
@@ -1007,9 +1088,7 @@ async function handleInteraction(
     }
 
 
-    // ─────────────────────────────────────
     // ANSWER MODAL
-    // ─────────────────────────────────────
 
     if (
         interaction.isModalSubmit() &&
@@ -1129,9 +1208,7 @@ async function handleInteraction(
     }
 
 
-    // ─────────────────────────────────────
     // CHECK
-    // ─────────────────────────────────────
 
     if (
         interaction.isButton() &&
@@ -1206,9 +1283,7 @@ async function handleInteraction(
     }
 
 
-    // ─────────────────────────────────────
-    // CLEAR
-    // ─────────────────────────────────────
+    // CLEAR ANSWER
 
     if (
         interaction.isButton() &&
@@ -1283,9 +1358,7 @@ async function handleInteraction(
     }
 
 
-    // ─────────────────────────────────────
     // GIVE UP
-    // ─────────────────────────────────────
 
     if (
         interaction.isButton() &&
