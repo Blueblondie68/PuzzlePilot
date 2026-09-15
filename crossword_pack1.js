@@ -1,7 +1,9 @@
 // crossword_pack1.js
 // PuzzlePilot Crossword Pack 1
 //
-// 5 verified 5x5 mini crosswords.
+// 5 verified 5x5 mini crosswords
+// plus our first 7x7 crossword.
+//
 // # means a black square.
 // row and col start counting from 0.
 // PuzzlePilot calculates clue numbers automatically.
@@ -539,6 +541,176 @@ const crosswordPack1 = [
                 clue: 'Speaker referring to themselves',
                 row: 3,
                 col: 4
+            }
+        ]
+    },
+
+    // =========================================================
+    // PUZZLE 006
+    // FIRST 7x7 CROSSWORD
+    // =========================================================
+    {
+        id: 'crossword_pack1_006',
+        title: 'Crossword 6',
+        difficulty: 'Medium',
+
+        solution: [
+            ['C', 'A', 'T', '#', 'D', 'O', 'G'],
+            ['A', 'R', 'E', '#', 'O', 'R', 'E'],
+            ['T', 'E', 'N', '#', 'G', 'E', 'M'],
+            ['#', '#', '#', '#', '#', '#', '#'],
+            ['S', 'U', 'N', '#', 'M', 'A', 'P'],
+            ['U', 'S', 'E', '#', 'A', 'P', 'E'],
+            ['N', 'E', 'T', '#', 'P', 'E', 'N']
+        ],
+
+        across: [
+            {
+                answer: 'CAT',
+                clue: 'Pet that purrs',
+                row: 0,
+                col: 0
+            },
+            {
+                answer: 'DOG',
+                clue: 'Pet that may bark',
+                row: 0,
+                col: 4
+            },
+            {
+                answer: 'ARE',
+                clue: 'Present-tense form of be',
+                row: 1,
+                col: 0
+            },
+            {
+                answer: 'ORE',
+                clue: 'Rock containing valuable minerals',
+                row: 1,
+                col: 4
+            },
+            {
+                answer: 'TEN',
+                clue: 'Number after nine',
+                row: 2,
+                col: 0
+            },
+            {
+                answer: 'GEM',
+                clue: 'Precious stone',
+                row: 2,
+                col: 4
+            },
+            {
+                answer: 'SUN',
+                clue: 'Star at the centre of our solar system',
+                row: 4,
+                col: 0
+            },
+            {
+                answer: 'MAP',
+                clue: 'Diagram showing roads or places',
+                row: 4,
+                col: 4
+            },
+            {
+                answer: 'USE',
+                clue: 'Put into service',
+                row: 5,
+                col: 0
+            },
+            {
+                answer: 'APE',
+                clue: 'Primate such as a gorilla',
+                row: 5,
+                col: 4
+            },
+            {
+                answer: 'NET',
+                clue: 'Mesh used to catch things',
+                row: 6,
+                col: 0
+            },
+            {
+                answer: 'PEN',
+                clue: 'Tool used for writing in ink',
+                row: 6,
+                col: 4
+            }
+        ],
+
+        down: [
+            {
+                answer: 'CAT',
+                clue: 'Feline household pet',
+                row: 0,
+                col: 0
+            },
+            {
+                answer: 'ARE',
+                clue: 'Word used with “we” before an adjective',
+                row: 0,
+                col: 1
+            },
+            {
+                answer: 'TEN',
+                clue: 'Half of twenty',
+                row: 0,
+                col: 2
+            },
+            {
+                answer: 'DOG',
+                clue: 'Canine companion',
+                row: 0,
+                col: 4
+            },
+            {
+                answer: 'ORE',
+                clue: 'Material mined for its metal content',
+                row: 0,
+                col: 5
+            },
+            {
+                answer: 'GEM',
+                clue: 'Jewel or precious stone',
+                row: 0,
+                col: 6
+            },
+            {
+                answer: 'SUN',
+                clue: 'Source of daylight',
+                row: 4,
+                col: 0
+            },
+            {
+                answer: 'USE',
+                clue: 'Purpose for which something is employed',
+                row: 4,
+                col: 1
+            },
+            {
+                answer: 'NET',
+                clue: 'What a goalkeeper guards',
+                row: 4,
+                col: 2
+            },
+            {
+                answer: 'MAP',
+                clue: 'Guide showing geographical locations',
+                row: 4,
+                col: 4
+            },
+            {
+                answer: 'APE',
+                clue: 'Large primate',
+                row: 4,
+                col: 5
+            },
+            {
+                answer: 'PEN',
+                clue: 'Enclosure for animals',
+                row: 4,
+                col: 6
             }
         ]
     }
