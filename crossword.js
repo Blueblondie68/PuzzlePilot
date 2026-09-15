@@ -28,6 +28,8 @@ const {
     createCrosswordImage
 } = require('./crosswordImage');
 
+const crosswordPack1 = require('./crossword_pack1');
+
 
 // ─────────────────────────────────────────────
 // RAW TEST CROSSWORD
@@ -706,7 +708,7 @@ function preparePuzzle(rawPuzzle) {
 
 const TEST_PUZZLE =
     preparePuzzle(
-        RAW_TEST_PUZZLE
+        crosswordPack1[0]
     );
 
 console.log(
@@ -2038,4 +2040,3 @@ module.exports = {
     startCrossword,
     handleInteraction
 };
-
