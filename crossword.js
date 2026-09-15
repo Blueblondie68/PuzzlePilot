@@ -708,7 +708,7 @@ function preparePuzzle(rawPuzzle) {
 
 const TEST_PUZZLE =
     preparePuzzle(
-        crosswordPack1[0]
+        crosswordPack1[5]
     );
 
 console.log(
