@@ -1826,7 +1826,7 @@ async function handleInteraction(
     }
 
 
-    // ─────────────────────────────────────
+       // ─────────────────────────────────────
     // CHECK
     // ─────────────────────────────────────
 
@@ -1855,6 +1855,11 @@ async function handleInteraction(
         ) {
             return;
         }
+
+        // Acknowledge the button immediately.
+        // The crossword image can then rebuild
+        // without making Discord appear to hang.
+        await interaction.deferUpdate();
 
         const incorrect =
             countIncorrectLetters(
@@ -1896,12 +1901,11 @@ async function handleInteraction(
         await updateCrosswordMessage(
             interaction,
             session,
-            true
+            false
         );
 
         return;
     }
-
 
     // ─────────────────────────────────────
     // CLEAR
