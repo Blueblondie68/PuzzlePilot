@@ -713,6 +713,177 @@ const crosswordPack1 = [
                 col: 6
             }
         ]
+
+    },
+
+    // =========================================================
+    // PUZZLE 007
+    // 7x7 CROSSWORD
+    // =========================================================
+    {
+        id: 'crossword_pack1_007',
+        title: 'Crossword 7',
+        difficulty: 'Medium',
+
+        solution: [
+            ['A', 'C', 'T', '#', 'A', 'G', 'E'],
+            ['C', 'A', 'R', '#', 'G', 'E', 'L'],
+            ['T', 'R', 'Y', '#', 'E', 'L', 'F'],
+            ['#', '#', '#', '#', '#', '#', '#'],
+            ['B', 'A', 'D', '#', 'H', 'E', 'N'],
+            ['A', 'R', 'E', '#', 'E', 'Y', 'E'],
+            ['D', 'E', 'N', '#', 'N', 'E', 'T']
+        ],
+
+        across: [
+            {
+                answer: 'ACT',
+                clue: 'Perform on stage',
+                row: 0,
+                col: 0
+            },
+            {
+                answer: 'AGE',
+                clue: 'Number of years someone has lived',
+                row: 0,
+                col: 4
+            },
+            {
+                answer: 'CAR',
+                clue: 'Four-wheeled road vehicle',
+                row: 1,
+                col: 0
+            },
+            {
+                answer: 'GEL',
+                clue: 'Thick jelly-like substance',
+                row: 1,
+                col: 4
+            },
+            {
+                answer: 'TRY',
+                clue: 'Make an attempt',
+                row: 2,
+                col: 0
+            },
+            {
+                answer: 'ELF',
+                clue: 'Small magical creature of folklore',
+                row: 2,
+                col: 4
+            },
+            {
+                answer: 'BAD',
+                clue: 'Opposite of good',
+                row: 4,
+                col: 0
+            },
+            {
+                answer: 'HEN',
+                clue: 'Female chicken',
+                row: 4,
+                col: 4
+            },
+            {
+                answer: 'ARE',
+                clue: 'Present-tense form of be',
+                row: 5,
+                col: 0
+            },
+            {
+                answer: 'EYE',
+                clue: 'Organ used for seeing',
+                row: 5,
+                col: 4
+            },
+            {
+                answer: 'DEN',
+                clue: 'Wild animal’s lair',
+                row: 6,
+                col: 0
+            },
+            {
+                answer: 'NET',
+                clue: 'Mesh used for catching things',
+                row: 6,
+                col: 4
+            }
+        ],
+
+        down: [
+            {
+                answer: 'ACT',
+                clue: 'Do something',
+                row: 0,
+                col: 0
+            },
+            {
+                answer: 'CAR',
+                clue: 'Vehicle driven on a road',
+                row: 0,
+                col: 1
+            },
+            {
+                answer: 'TRY',
+                clue: 'Have a go',
+                row: 0,
+                col: 2
+            },
+            {
+                answer: 'AGE',
+                clue: 'Length of time someone has been alive',
+                row: 0,
+                col: 4
+            },
+            {
+                answer: 'GEL',
+                clue: 'Semi-solid substance',
+                row: 0,
+                col: 5
+            },
+            {
+                answer: 'ELF',
+                clue: 'Mythical pointed-eared creature',
+                row: 0,
+                col: 6
+            },
+            {
+                answer: 'BAD',
+                clue: 'Not good',
+                row: 4,
+                col: 0
+            },
+            {
+                answer: 'ARE',
+                clue: 'Word used in “we are”',
+                row: 4,
+                col: 1
+            },
+            {
+                answer: 'DEN',
+                clue: 'Shelter used by a wild animal',
+                row: 4,
+                col: 2
+            },
+            {
+                answer: 'HEN',
+                clue: 'Egg-laying female bird',
+                row: 4,
+                col: 4
+            },
+            {
+                answer: 'EYE',
+                clue: 'Part of the body used to see',
+                row: 4,
+                col: 5
+            },
+            {
+                answer: 'NET',
+                clue: 'Mesh barrier in tennis',
+                row: 4,
+                col: 6
+            }
+        ]
     }
 ];
 
