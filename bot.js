@@ -345,19 +345,16 @@ client.on(
 
             return;
         }
-
         // ─────────────────────────────────────
-        // FULL CROSSWORD
+        // DAILY CROSSWORD
         // ─────────────────────────────────────
 
         if (
             choice ===
             'fullcrossword'
         ) {
-            await interaction.reply(
-                '🧩 **Daily Full Crossword**\n\n' +
-                'Coming soon! This will use the same crossword engine ' +
-                'as Continuous Crossword.'
+            await crossword.startDaily(
+                interaction
             );
 
             return;
@@ -478,7 +475,7 @@ client.on(
             interaction.customId ===
                 'cw_continuous_start'
         ) {
-            await crossword.startCrossword(
+            await crossword.startContinuous(
                 interaction
             );
 
@@ -558,4 +555,3 @@ client.on(
 client.login(
     process.env.TOKEN
 );
-
