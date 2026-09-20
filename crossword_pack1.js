@@ -1338,7 +1338,7 @@ const crosswordPack1 = [
         "####U#OCEAN",
         "#BUTTON#A#C",
         "K###U#K#D#I",
-        "N#SUMMER###L",
+        "N#SUMMER##L",
         "I#I#N#Y####",
         "FILM#R#####",
         "E#V##A#####",
