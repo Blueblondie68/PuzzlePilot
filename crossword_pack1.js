@@ -996,6 +996,572 @@ const crosswordPack1 = [
             }
         ]
     }
+
+ ,
+{
+    id: "crossword_pack1_009",
+    title: "Crossword 9",
+    difficulty: "Medium",
+    solution: [
+        "BROWSE#FORM",
+        "A#########I",
+        "SUN###C#SON",
+        "E#AIRPORT#D",
+        "##T#E#M#A##",
+        "#QUESTIONS#",
+        "S#R#U#N#D#W",
+        "T#A#L#G#A#I",
+        "A#LATE#ARTS",
+        "F##C####D#H",
+        "FEET#HOUSE#"
+    ].map(row => row.split('')),
+    across: [
+        ["BROWSE","Look through casually, as in a shop or online",0,0],
+        ["FORM","Shape or structure of something",0,7],
+        ["SUN","Star at the centre of our solar system",2,0],
+        ["SON","Male child",2,8],
+        ["AIRPORT","Place where passenger aircraft arrive and depart",3,2],
+        ["QUESTIONS","Things asked to obtain information",5,1],
+        ["LATE","After the expected or usual time",8,2],
+        ["ARTS","Creative subjects such as painting and music",8,7],
+        ["FEET","Plural of foot",10,0],
+        ["HOUSE","Building where people live",10,5]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["BASE","Bottom or supporting part",0,0],
+        ["STAFF","People employed by an organisation",6,0],
+        ["NATURAL","Existing in nature rather than made artificially",2,2],
+        ["ACT","Perform on stage",8,3],
+        ["RESULT","Outcome of an action or event",3,4],
+        ["COMING","Approaching or due to happen",2,6],
+        ["STANDARDS","Accepted levels of quality or behaviour",2,8],
+        ["MIND","Part of a person that thinks and remembers",0,10],
+        ["WISH","Hope for something to happen",6,10]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_010",
+    title: "Crossword 10",
+    difficulty: "Medium",
+    solution: [
+        "###########",
+        "P##B#M###P#",
+        "I##ROOF#DOG",
+        "CLUE#R#W#T#",
+        "T##A#N#EXAM",
+        "U##KNIFE#T#",
+        "R##F#N#K#O#",
+        "E#LAUGH####",
+        "###S#######",
+        "#BUTTER####",
+        "###########"
+    ].map(row => row.split('')),
+    across: [
+        ["ROOF","Top covering of a building",2,3],
+        ["DOG","Pet that may bark",2,8],
+        ["CLUE","Hint used to solve a puzzle",3,0],
+        ["EXAM","Formal test of knowledge",4,7],
+        ["KNIFE","Cutting utensil with a blade",5,3],
+        ["LAUGH","Make a sound showing amusement",7,2],
+        ["BUTTER","Dairy spread made from cream",9,1]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["PICTURE","Image, drawing or photograph",1,0],
+        ["BREAKFAST","First meal of the day",1,3],
+        ["MORNING","Early part of the day",1,5],
+        ["WEEK","Period of seven days",3,7],
+        ["POTATO","Starchy vegetable grown underground",1,9]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_011",
+    title: "Crossword 11",
+    difficulty: "Medium",
+    solution: [
+        "##H###J##",
+        "CROSSWORD",
+        "A#R###U#I",
+        "T#S###R#N",
+        "#LESSON#N",
+        "####M#EYE",
+        "#FAMILY#R",
+        "##R#L####",
+        "LETTER###"
+    ].map(row => row.split('')),
+    across: [
+        ["CROSSWORD","Word puzzle with intersecting answers",1,0],
+        ["LESSON","Period of teaching",4,1],
+        ["EYE","Organ used for seeing",5,6],
+        ["FAMILY","Group of related people",6,1],
+        ["LETTER","Written message sent to someone",8,0]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["CAT","Pet that purrs",1,0],
+        ["HORSE","Large animal often ridden",0,2],
+        ["ART","Creative expression through visual work",6,2],
+        ["SMILE","Happy expression on a face",4,4],
+        ["JOURNEY","Travel from one place to another",0,6],
+        ["DINNER","Main meal of the day",1,8]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_012",
+    title: "Crossword 12",
+    difficulty: "Medium",
+    solution: [
+        "####SCHOOL#",
+        "#####H####P",
+        "###FOOTBALL",
+        "#####C##R#A",
+        "###T#O##T#Y",
+        "##YELLOW##E",
+        "###A#A#A##R",
+        "###C#T#T###",
+        "##CHEESE##T",
+        "###E###RACE",
+        "BEDROOM###A"
+    ].map(row => row.split('')),
+    across: [
+        ["SCHOOL","Place where children are taught",0,4],
+        ["FOOTBALL","Game played with a round ball and goals",2,3],
+        ["YELLOW","Colour of a ripe lemon",5,2],
+        ["CHEESE","Food made from milk",8,2],
+        ["RACE","Contest to see who is fastest",9,7],
+        ["BEDROOM","Room used for sleeping",10,0]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["TEACHER","Person who teaches",4,3],
+        ["CHOCOLATE","Sweet food made from cocoa",0,5],
+        ["WATER","Clear liquid essential for life",5,7],
+        ["ART","Creative expression through visual work",2,8],
+        ["PLAYER","Person taking part in a game",1,10],
+        ["TEA","Drink made by infusing leaves in hot water",8,10]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_013",
+    title: "Crossword 13",
+    difficulty: "Medium",
+    solution: [
+        "#T#JUICE#",
+        "#E####A##",
+        "#ANSWER##",
+        "N###E####",
+        "O#BLACK##",
+        "S###T####",
+        "ELEPHANT#",
+        "####E####",
+        "BATHROOM#"
+    ].map(row => row.split('')),
+    across: [
+        ["JUICE","Drink made from fruit or vegetables",0,3],
+        ["ANSWER","Response to a question",2,1],
+        ["BLACK","Darkest colour",4,2],
+        ["ELEPHANT","Very large animal with a trunk",6,0],
+        ["BATHROOM","Room containing a bath or shower",8,0]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["NOSE","Part of the face used for smelling",3,0],
+        ["TEA","Drink made by infusing leaves in hot water",0,1],
+        ["WEATHER","State of the atmosphere at a particular time",2,4],
+        ["CAR","Four-wheeled road vehicle",0,6]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_014",
+    title: "Crossword 14",
+    difficulty: "Medium",
+    solution: [
+        "###########",
+        "##HAPPY####",
+        "#P##A##R###",
+        "#HOSPITAL#W",
+        "#O##E##I##I",
+        "#N#GREEN##N",
+        "YEAR###B##T",
+        "###A#PEOPLE",
+        "###P###W##R",
+        "##BEACH####",
+        "###########"
+    ].map(row => row.split('')),
+    across: [
+        ["HAPPY","Feeling pleased or cheerful",1,2],
+        ["HOSPITAL","Place where ill or injured people receive treatment",3,1],
+        ["GREEN","Colour of fresh grass",5,3],
+        ["YEAR","Period of twelve months",6,0],
+        ["PEOPLE","Human beings collectively",7,5],
+        ["BEACH","Sandy or pebbly shore",9,2]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["PHONE","Device used to make calls",2,1],
+        ["GRAPE","Small fruit that grows in bunches",5,3],
+        ["PAPER","Material used for writing or printing",1,4],
+        ["RAINBOW","Arc of colours sometimes seen after rain",2,7],
+        ["WINTER","Coldest season of the year",3,10]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_015",
+    title: "Crossword 15",
+    difficulty: "Medium",
+    solution: [
+        "C####SEED",
+        "LAPTOP##O",
+        "O##O#O##O",
+        "C##D#O##R",
+        "K#PAINT##",
+        "#B#Y##R##",
+        "#A##HEAD#",
+        "#L####I##",
+        "ELEPHANT#"
+    ].map(row => row.split('')),
+    across: [
+        ["SEED","Part of a plant from which a new one can grow",0,5],
+        ["LAPTOP","Portable computer",1,0],
+        ["PAINT","Coloured substance applied to a surface",4,2],
+        ["HEAD","Upper part of the body containing the brain",6,4],
+        ["ELEPHANT","Very large animal with a trunk",8,0]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["CLOCK","Device that tells the time",0,0],
+        ["BALL","Round object used in many sports",5,1],
+        ["TODAY","The present day",1,3],
+        ["SPOON","Utensil with a small bowl at the end",0,5],
+        ["TRAIN","Rail vehicle",4,6],
+        ["DOOR","Entrance that opens and closes",0,8]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_016",
+    title: "Crossword 16",
+    difficulty: "Medium",
+    solution: [
+        "######K####",
+        "##EVENING##",
+        "#B####T##S#",
+        "CAR#CYCLING",
+        "#N####H##O#",
+        "#A#SHEEP#W#",
+        "#N#P##N####",
+        "CARROT#####",
+        "###I#######",
+        "RUNNING####",
+        "###G#######"
+    ].map(row => row.split('')),
+    across: [
+        ["EVENING","Later part of the day",1,2],
+        ["CAR","Four-wheeled road vehicle",3,0],
+        ["CYCLING","Riding a bicycle",3,4],
+        ["SHEEP","Woolly farm animal",5,3],
+        ["CARROT","Long orange root vegetable",7,0],
+        ["RUNNING","Moving quickly on foot",9,0]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["BANANA","Long curved yellow fruit",2,1],
+        ["SPRING","Season after winter",5,3],
+        ["KITCHEN","Room where meals are prepared",0,6],
+        ["SNOW","Frozen flakes falling from clouds",2,9]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_017",
+    title: "Crossword 17",
+    difficulty: "Medium",
+    solution: [
+        "###B###GOLD",
+        "###U#W#A###",
+        "###SWIMMING",
+        "#####N#E##R",
+        "#N###D##TEA",
+        "#U#STORM##S",
+        "#M#T#W#O##S",
+        "#BIRD##U###",
+        "#E#E##STAMP",
+        "FRIEND#H###",
+        "###T#######"
+    ].map(row => row.split('')),
+    across: [
+        ["GOLD","Yellow precious metal",0,7],
+        ["SWIMMING","Moving through water as a sport or activity",2,3],
+        ["TEA","Drink made by infusing leaves in hot water",4,8],
+        ["STORM","Period of severe weather",5,3],
+        ["BIRD","Feathered animal with wings",7,1],
+        ["STAMP","Small piece stuck to a letter before posting",8,6],
+        ["FRIEND","Person you like and trust",9,0]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["NUMBER","Mathematical value or symbol",4,1],
+        ["BUS","Large road vehicle carrying passengers",0,3],
+        ["STREET","Public road in a town or city",5,3],
+        ["WINDOW","Glass opening in a wall",1,5],
+        ["GAME","Activity played for enjoyment",0,7],
+        ["MOUTH","Opening in the face used for eating and speaking",5,7],
+        ["GRASS","Common green ground-covering plant",2,10]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+}
+,
+{
+    id: "crossword_pack1_018",
+    title: "Crossword 18",
+    difficulty: "Medium",
+    solution: [
+        "##I#B#H##",
+        "##SCREEN#",
+        "S#L#I#A##",
+        "TEA#D#L##",
+        "A#NIGHT##",
+        "I#D#E#H##",
+        "R########",
+        "SPACE####",
+        "#########"
+    ].map(row => row.split('')),
+    across: [
+        ["SCREEN","Flat surface on which images or information are displayed",1,2],
+        ["TEA","Drink made by infusing leaves in hot water",3,0],
+        ["NIGHT","Time between evening and morning",4,2],
+        ["SPACE","Area or room available",7,0]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["STAIRS","Series of steps between different levels",2,0],
+        ["ISLAND","Piece of land surrounded by water",0,2],
+        ["BRIDGE","Structure carrying a route over an obstacle",0,4],
+        ["HEALTH","Condition of a person's body or mind",0,6]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_019",
+    title: "Crossword 19",
+    difficulty: "Medium",
+    solution: [
+        "########B#P",
+        "##TEA#M#R#E",
+        "####U#OCEAN",
+        "#BUTTON#A#C",
+        "K###U#K#D#I",
+        "N#SUMMER###L",
+        "I#I#N#Y####",
+        "FILM#R#####",
+        "E#V##A#####",
+        "#TENNIS####",
+        "##R##N#####"
+    ].map(row => row.split('')),
+    across: [
+        ["TEA","Drink made by infusing leaves in hot water",1,2],
+        ["OCEAN","Very large area of salt water",2,6],
+        ["BUTTON","Small fastener on clothing",3,1],
+        ["SUMMER","Warmest season of the year",5,2],
+        ["FILM","Motion picture",7,0],
+        ["TENNIS","Racket sport played across a net",9,1]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["KNIFE","Cutting utensil with a blade",4,0],
+        ["SILVER","Shiny grey precious metal",5,2],
+        ["AUTUMN","Season between summer and winter",1,4],
+        ["RAIN","Water falling from clouds",7,5],
+        ["MONKEY","Primate often known for climbing",1,6],
+        ["BREAD","Baked food commonly made from flour",0,8],
+        ["PENCIL","Writing or drawing tool with a graphite core",0,10]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_020",
+    title: "Crossword 20",
+    difficulty: "Medium",
+    solution: [
+        "R#######C",
+        "A###LAUGH",
+        "B#######O",
+        "BUS#W#S#C",
+        "I#PRICE#O",
+        "T#O#N#E#L",
+        "#GOLD#D#A",
+        "##N#O###T",
+        "####WHITE"
+    ].map(row => row.split('')),
+    across: [
+        ["LAUGH","Make a sound showing amusement",1,4],
+        ["BUS","Large road vehicle carrying passengers",3,0],
+        ["PRICE","Amount of money something costs",4,2],
+        ["GOLD","Yellow precious metal",6,1],
+        ["WHITE","Colour of fresh snow",8,4]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["RABBIT","Small animal with long ears",0,0],
+        ["SPOON","Utensil with a small bowl at the end",3,2],
+        ["WINDOW","Glass opening in a wall",3,4],
+        ["SEED","Part of a plant from which a new one can grow",3,6],
+        ["CHOCOLATE","Sweet food made from cocoa",0,8]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_021",
+    title: "Crossword 21",
+    difficulty: "Medium",
+    solution: [
+        "##C#CHANGE#",
+        "##H#I######",
+        "#WINNER####",
+        "##L#E##CUP#",
+        "##D#M####U#",
+        "#F#EARTH#Z#",
+        "#O#Y##O##Z#",
+        "TREE##M##L#",
+        "#E##ORANGE#",
+        "#S####T####",
+        "#T#COLOUR##"
+    ].map(row => row.split('')),
+    across: [
+        ["CHANGE","Make or become different",0,4],
+        ["WINNER","Person or team that wins",2,1],
+        ["CUP","Small drinking vessel",3,7],
+        ["EARTH","Planet on which we live",5,3],
+        ["TREE","Tall plant with a woody trunk",7,0],
+        ["ORANGE","Citrus fruit and a colour",8,4],
+        ["COLOUR","Appearance produced by reflected light",10,3]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["FOREST","Large area covered chiefly with trees",5,1],
+        ["CHILD","Young person",0,2],
+        ["EYE","Organ used for seeing",5,3],
+        ["CINEMA","Place where films are shown",0,4],
+        ["TOMATO","Red fruit often used as a vegetable",5,6],
+        ["PUZZLE","Problem or game designed to test ingenuity",3,9]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_022",
+    title: "Crossword 22",
+    difficulty: "Medium",
+    solution: [
+        "###D##P#E",
+        "#FLOWER#L",
+        "R##G##I#E",
+        "A#####CUP",
+        "C#TABLE#H",
+        "EAR#####A",
+        "##A##MOON",
+        "WHITE###T",
+        "##N######"
+    ].map(row => row.split('')),
+    across: [
+        ["FLOWER","Colourful part of many plants",1,1],
+        ["CUP","Small drinking vessel",3,6],
+        ["TABLE","Piece of furniture with a flat top",4,2],
+        ["EAR","Organ used for hearing",5,0],
+        ["MOON","Natural satellite of Earth",6,5],
+        ["WHITE","Colour of fresh snow",7,0]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["RACE","Contest to see who is fastest",2,0],
+        ["TRAIN","Rail vehicle",4,2],
+        ["DOG","Pet that may bark",0,3],
+        ["PRICE","Amount of money something costs",0,6],
+        ["ELEPHANT","Very large animal with a trunk",0,8]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_023",
+    title: "Crossword 23",
+    difficulty: "Medium",
+    solution: [
+        "##M########",
+        "CLOUD#PLANE",
+        "A#N#O#U####",
+        "M#T#CARROT#",
+        "E#H#T#P##I#",
+        "R##WORLD#G#",
+        "A###R#E##E#",
+        "#####A#WORD",
+        "#####R#A##O",
+        "###BOTTLE#G",
+        "#######L###"
+    ].map(row => row.split('')),
+    across: [
+        ["CLOUD","Visible mass of tiny water droplets in the sky",1,0],
+        ["PLANE","Aircraft with fixed wings",1,6],
+        ["CARROT","Long orange root vegetable",3,5],
+        ["WORLD","Earth and all its people and places",5,3],
+        ["WORD","Single unit of language",7,7],
+        ["BOTTLE","Container with a narrow neck",9,3]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["CAMERA","Device used for taking photographs",1,0],
+        ["MONTH","One of the twelve divisions of a year",0,2],
+        ["DOCTOR","Person qualified to practise medicine",1,4],
+        ["ART","Creative expression through visual work",7,5],
+        ["PURPLE","Colour made by combining red and blue",1,6],
+        ["WALL","Vertical structure forming the side of a room or building",7,7],
+        ["TIGER","Large striped wild cat",3,9],
+        ["DOG","Pet that may bark",7,10]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_024",
+    title: "Crossword 24",
+    difficulty: "Medium",
+    solution: [
+        "#########",
+        "#MUSIC###",
+        "###T##L##",
+        "###A##U##",
+        "#GARDEN#B",
+        "N#C###CAR",
+        "O#T#T#H#U",
+        "SCORE###S",
+        "E#R#ART#H"
+    ].map(row => row.split('')),
+    across: [
+        ["MUSIC","Sounds arranged to create rhythm or melody",1,1],
+        ["GARDEN","Area where flowers, vegetables or other plants are grown",4,1],
+        ["CAR","Four-wheeled road vehicle",5,6],
+        ["SCORE","Number of points achieved in a game",7,0],
+        ["ART","Creative expression through visual work",8,4]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["NOSE","Part of the face used for smelling",5,0],
+        ["ACTOR","Person who performs a role in a play or film",4,2],
+        ["STAR","Bright object seen in the night sky",1,3],
+        ["TEA","Drink made by infusing leaves in hot water",6,4],
+        ["LUNCH","Meal usually eaten around midday",2,6],
+        ["BRUSH","Tool with bristles used for cleaning or grooming",4,8]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+},
+{
+    id: "crossword_pack1_025",
+    title: "Crossword 25",
+    difficulty: "Medium",
+    solution: [
+        "#SPORT####W",
+        "#H#####P##I",
+        "#O#F##BROWN",
+        "APPLE##I##D",
+        "I##O###CUP#",
+        "R##WHITE###",
+        "P##E##A#S##",
+        "O##RABBIT##",
+        "R#####L#A##",
+        "T#MOUSE#M##",
+        "########P##"
+    ].map(row => row.split('')),
+    across: [
+        ["SPORT","Physical activity played or competed in",0,1],
+        ["BROWN","Colour of chocolate or soil",2,6],
+        ["APPLE","Round fruit that may be red or green",3,0],
+        ["CUP","Small drinking vessel",4,7],
+        ["WHITE","Colour of fresh snow",5,3],
+        ["RABBIT","Small animal with long ears",7,3],
+        ["MOUSE","Small rodent with a long tail",9,2]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col })),
+    down: [
+        ["AIRPORT","Place where passenger aircraft arrive and depart",3,0],
+        ["SHOP","Place where goods are sold",0,1],
+        ["FLOWER","Colourful part of many plants",2,3],
+        ["TABLE","Piece of furniture with a flat top",6,6],
+        ["PRICE","Amount of money something costs",1,7],
+        ["STAMP","Small piece stuck to a letter before posting",6,9],
+        ["WIND","Moving air",0,10]
+    ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
+}
 ];
 
 module.exports = crosswordPack1;
