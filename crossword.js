@@ -1,6 +1,6 @@
 // crossword.js
 // PuzzlePilot Crossword Engine
-// Version 5
+// Version 6
 //
 // - Proper PNG crossword grid
 // - Black squares
@@ -12,6 +12,8 @@
 // - Crossing answers preserved
 // - Check / Clear / Give Up
 // - Automatic completion detection
+// - Daily UK crossword
+// - Continuous random crosswords
 
 const {
     ActionRowBuilder,
@@ -29,127 +31,6 @@ const {
 } = require('./crosswordImage');
 
 const crosswordPack1 = require('./crossword_pack1');
-
-
-// ─────────────────────────────────────────────
-// RAW TEST CROSSWORD
-// ─────────────────────────────────────────────
-//
-// IMPORTANT:
-//
-// We no longer type clue numbers ourselves.
-//
-// PuzzlePilot looks at the grid and works out:
-//
-// 1A, 1D, 2D, 3A, 3D etc.
-//
-// automatically.
-//
-// ─────────────────────────────────────────────
-
-const RAW_TEST_PUZZLE = {
-    id: 'crossword_test_002',
-    title: 'Mini Crossword',
-    difficulty: 'Easy',
-
-    solution: [
-        ['I', 'F', '#', 'H', 'I'],
-        ['F', 'L', 'E', 'E', 'T'],
-        ['#', 'E', 'R', 'A', '#'],
-        ['H', 'E', 'A', 'R', 'T'],
-        ['I', 'T', '#', 'T', 'O']
-    ],
-
-    across: [
-        {
-            answer: 'IF',
-            clue: 'Provided that',
-            row: 0,
-            col: 0
-        },
-        {
-            answer: 'HI',
-            clue: 'Casual greeting',
-            row: 0,
-            col: 3
-        },
-        {
-            answer: 'FLEET',
-            clue: 'Group of ships',
-            row: 1,
-            col: 0
-        },
-        {
-            answer: 'ERA',
-            clue: 'Period of history',
-            row: 2,
-            col: 1
-        },
-        {
-            answer: 'HEART',
-            clue: 'Organ that pumps blood',
-            row: 3,
-            col: 0
-        },
-        {
-            answer: 'IT',
-            clue: 'The thing being referred to',
-            row: 4,
-            col: 0
-        },
-        {
-            answer: 'TO',
-            clue: 'In the direction of',
-            row: 4,
-            col: 3
-        }
-    ],
-
-    down: [
-        {
-            answer: 'IF',
-            clue: 'On the condition that',
-            row: 0,
-            col: 0
-        },
-        {
-            answer: 'FLEET',
-            clue: 'Moving quickly',
-            row: 0,
-            col: 1
-        },
-        {
-            answer: 'HEART',
-            clue: 'Central or most important part',
-            row: 0,
-            col: 3
-        },
-        {
-            answer: 'IT',
-            clue: 'Pronoun for a thing',
-            row: 0,
-            col: 4
-        },
-        {
-            answer: 'ERA',
-            clue: 'Distinct period of time',
-            row: 1,
-            col: 2
-        },
-        {
-            answer: 'HI',
-            clue: 'Informal hello',
-            row: 3,
-            col: 0
-        },
-        {
-            answer: 'TO',
-            clue: 'Towards',
-            row: 3,
-            col: 4
-        }
-    ]
-};
 
 
 // ─────────────────────────────────────────────
@@ -241,14 +122,6 @@ function isDownStart(solution, row, col) {
 
 // ─────────────────────────────────────────────
 // AUTOMATIC CROSSWORD NUMBERS
-// ─────────────────────────────────────────────
-//
-// Crossword numbering works row by row,
-// left to right.
-//
-// A square gets a number if it begins an
-// Across answer, a Down answer, or both.
-//
 // ─────────────────────────────────────────────
 
 function generateNumberMap(solution) {
@@ -363,10 +236,6 @@ function preparePuzzle(rawPuzzle) {
     const size =
         rawPuzzle.solution.length;
 
-    // ─────────────────────────────────────
-    // CHECK GRID IS SQUARE
-    // ─────────────────────────────────────
-
     for (
         let row = 0;
         row < size;
@@ -385,10 +254,6 @@ function preparePuzzle(rawPuzzle) {
             );
         }
     }
-
-    // ─────────────────────────────────────
-    // NORMALISE GRID
-    // ─────────────────────────────────────
 
     const solution =
         rawPuzzle.solution.map(
@@ -433,10 +298,6 @@ function preparePuzzle(rawPuzzle) {
 
     const clueKeys =
         new Set();
-
-    // ─────────────────────────────────────
-    // PREPARE CLUE
-    // ─────────────────────────────────────
 
     function prepareClue(
         rawClue,
@@ -562,10 +423,6 @@ function preparePuzzle(rawPuzzle) {
         };
     }
 
-    // ─────────────────────────────────────
-    // PREPARE ACROSS CLUES
-    // ─────────────────────────────────────
-
     for (
         const rawClue
         of rawPuzzle.across
@@ -578,10 +435,6 @@ function preparePuzzle(rawPuzzle) {
         );
     }
 
-    // ─────────────────────────────────────
-    // PREPARE DOWN CLUES
-    // ─────────────────────────────────────
-
     for (
         const rawClue
         of rawPuzzle.down
@@ -593,10 +446,6 @@ function preparePuzzle(rawPuzzle) {
             )
         );
     }
-
-    // ─────────────────────────────────────
-    // MAKE SURE NO CLUES ARE MISSING
-    // ─────────────────────────────────────
 
     for (
         let row = 0;
@@ -698,34 +547,104 @@ function preparePuzzle(rawPuzzle) {
 
 
 // ─────────────────────────────────────────────
-// PREPARE TEST PUZZLE
+// PREPARE CROSSWORD BANK
 // ─────────────────────────────────────────────
 //
-// If anything is wrong with the puzzle,
-// Render's log will tell us exactly what.
+// All 25 puzzles are checked when PuzzlePilot
+// starts. If one is broken, Render will tell us.
 //
 // ─────────────────────────────────────────────
 
-const TEST_PUZZLE =
-    preparePuzzle(
-        crosswordPack1[0]
+const PREPARED_CROSSWORDS =
+    crosswordPack1.map(
+        puzzle =>
+            preparePuzzle(
+                puzzle
+            )
     );
 
 console.log(
-    `Crossword loaded: ${TEST_PUZZLE.id}`
+    `Crossword bank loaded: ` +
+    `${PREPARED_CROSSWORDS.length} puzzles`
 );
 
-console.log(
-    `Across clues: ${TEST_PUZZLE.across
-        .map(clue => clue.id)
-        .join(', ')}`
-);
 
-console.log(
-    `Down clues: ${TEST_PUZZLE.down
-        .map(clue => clue.id)
-        .join(', ')}`
-);
+// ─────────────────────────────────────────────
+// UK DATE
+// ─────────────────────────────────────────────
+
+function getUKDateKey() {
+    return new Intl.DateTimeFormat(
+        'en-CA',
+        {
+            timeZone:
+                'Europe/London',
+            year:
+                'numeric',
+            month:
+                '2-digit',
+            day:
+                '2-digit'
+        }
+    ).format(
+        new Date()
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// DAILY CROSSWORD
+// ─────────────────────────────────────────────
+//
+// The UK date is turned into a number.
+// That means everyone gets the same crossword
+// on the same day.
+//
+// ─────────────────────────────────────────────
+
+function getDailyCrossword() {
+    const dateKey =
+        getUKDateKey();
+
+    let hash = 0;
+
+    for (
+        let i = 0;
+        i < dateKey.length;
+        i++
+    ) {
+        hash =
+            (
+                (hash * 31) +
+                dateKey.charCodeAt(i)
+            ) >>> 0;
+    }
+
+    const index =
+        hash %
+        PREPARED_CROSSWORDS.length;
+
+    return PREPARED_CROSSWORDS[
+        index
+    ];
+}
+
+
+// ─────────────────────────────────────────────
+// CONTINUOUS CROSSWORD
+// ─────────────────────────────────────────────
+
+function getRandomCrossword() {
+    const index =
+        Math.floor(
+            Math.random() *
+            PREPARED_CROSSWORDS.length
+        );
+
+    return PREPARED_CROSSWORDS[
+        index
+    ];
+}
 
 
 // ─────────────────────────────────────────────
@@ -937,8 +856,6 @@ function clearStoredAnswer(
         session
     );
 }
-
-
 // ─────────────────────────────────────────────
 // RENDER CLUES
 // ─────────────────────────────────────────────
@@ -1025,6 +942,22 @@ function buildContent(
         `📏 ${session.puzzle.size} × ` +
         `${session.puzzle.size}` +
         ` • ${session.puzzle.difficulty}\n\n`;
+
+    if (
+        session.mode === 'daily'
+    ) {
+        content =
+            '📅 **Daily Crossword**\n' +
+            content;
+    }
+
+    if (
+        session.mode === 'continuous'
+    ) {
+        content =
+            '🔄 **Continuous Crossword**\n' +
+            content;
+    }
 
     if (
         session.completed
@@ -1465,11 +1398,13 @@ async function updateCrosswordMessage(
 
 
 // ─────────────────────────────────────────────
-// START CROSSWORD
+// START A CROSSWORD SESSION
 // ─────────────────────────────────────────────
 
-async function startCrossword(
-    interaction
+async function startPuzzle(
+    interaction,
+    puzzle,
+    mode
 ) {
     const sessionId =
         createSessionId();
@@ -1481,12 +1416,13 @@ async function startCrossword(
         userId:
             interaction.user.id,
 
-        puzzle:
-            TEST_PUZZLE,
+        puzzle,
+
+        mode,
 
         grid:
             createPlayerGrid(
-                TEST_PUZZLE
+                puzzle
             ),
 
         answers:
@@ -1534,6 +1470,59 @@ async function startCrossword(
                 session
             )
     });
+}
+
+
+// ─────────────────────────────────────────────
+// DAILY CROSSWORD START
+// ─────────────────────────────────────────────
+
+async function startDaily(
+    interaction
+) {
+    const puzzle =
+        getDailyCrossword();
+
+    await startPuzzle(
+        interaction,
+        puzzle,
+        'daily'
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// CONTINUOUS CROSSWORD START
+// ─────────────────────────────────────────────
+
+async function startContinuous(
+    interaction
+) {
+    const puzzle =
+        getRandomCrossword();
+
+    await startPuzzle(
+        interaction,
+        puzzle,
+        'continuous'
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// OLD START NAME
+// ─────────────────────────────────────────────
+//
+// Kept temporarily so the current bot.js still
+// works until we update it next.
+//
+
+async function startCrossword(
+    interaction
+) {
+    await startContinuous(
+        interaction
+    );
 }
 
 
@@ -1826,7 +1815,7 @@ async function handleInteraction(
     }
 
 
-       // ─────────────────────────────────────
+    // ─────────────────────────────────────
     // CHECK
     // ─────────────────────────────────────
 
@@ -1856,9 +1845,6 @@ async function handleInteraction(
             return;
         }
 
-        // Acknowledge the button immediately.
-        // The crossword image can then rebuild
-        // without making Discord appear to hang.
         await interaction.deferUpdate();
 
         const incorrect =
@@ -1906,6 +1892,7 @@ async function handleInteraction(
 
         return;
     }
+
 
     // ─────────────────────────────────────
     // CLEAR
@@ -2042,5 +2029,7 @@ async function handleInteraction(
 
 module.exports = {
     startCrossword,
+    startDaily,
+    startContinuous,
     handleInteraction
 };
