@@ -1479,7 +1479,7 @@ const crosswordPack1 = [
     across: [
         ["CLOUD","Visible mass of tiny water droplets in the sky",1,0],
         ["PLANE","Aircraft with fixed wings",1,6],
-        ["CARROT","Long orange root vegetable",3,5],
+        ["CARROT","Long orange root vegetable",3,4],
         ["WORLD","Earth and all its people and places",5,3],
         ["WORD","Single unit of language",7,7],
         ["BOTTLE","Container with a narrow neck",9,3]
