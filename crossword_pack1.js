@@ -2,7 +2,7 @@
 // PuzzlePilot Crossword Pack 1
 //
 // 5 verified 5x5 mini crosswords
-// plus our first 7x7 crossword.
+// plus three 7x7 crosswords.
 //
 // # means a black square.
 // row and col start counting from 0.
@@ -881,6 +881,117 @@ const crosswordPack1 = [
                 answer: 'NET',
                 clue: 'Mesh barrier in tennis',
                 row: 4,
+                col: 6
+            }
+        ]
+    },
+
+    // =========================================================
+    // PUZZLE 008
+    // 7x7 WORD-SQUARE CROSSWORD
+    // ONE-OFF FULL GRID
+    // =========================================================
+    {
+        id: 'crossword_pack1_008',
+        title: 'Crossword 8',
+        difficulty: 'Medium',
+
+        solution: [
+            ['P', 'R', 'E', 'P', 'A', 'R', 'E'],
+            ['R', 'E', 'M', 'O', 'D', 'E', 'L'],
+            ['E', 'M', 'U', 'L', 'A', 'T', 'E'],
+            ['P', 'O', 'L', 'E', 'M', 'I', 'C'],
+            ['A', 'D', 'A', 'M', 'A', 'N', 'T'],
+            ['R', 'E', 'T', 'I', 'N', 'U', 'E'],
+            ['E', 'L', 'E', 'C', 'T', 'E', 'D']
+        ],
+
+        across: [
+            {
+                answer: 'PREPARE',
+                clue: 'Get ready for something',
+                row: 0,
+                col: 0
+            },
+            {
+                answer: 'REMODEL',
+                clue: 'Change the structure or appearance of something',
+                row: 1,
+                col: 0
+            },
+            {
+                answer: 'EMULATE',
+                clue: 'Try to match or equal',
+                row: 2,
+                col: 0
+            },
+            {
+                answer: 'POLEMIC',
+                clue: 'Strong written or spoken attack on an opinion',
+                row: 3,
+                col: 0
+            },
+            {
+                answer: 'ADAMANT',
+                clue: 'Refusing to change one’s mind',
+                row: 4,
+                col: 0
+            },
+            {
+                answer: 'RETINUE',
+                clue: 'Group of attendants accompanying an important person',
+                row: 5,
+                col: 0
+            },
+            {
+                answer: 'ELECTED',
+                clue: 'Chosen by a vote',
+                row: 6,
+                col: 0
+            }
+        ],
+
+        down: [
+            {
+                answer: 'PREPARE',
+                clue: 'Make something ready for use',
+                row: 0,
+                col: 0
+            },
+            {
+                answer: 'REMODEL',
+                clue: 'Alter or redesign',
+                row: 0,
+                col: 1
+            },
+            {
+                answer: 'EMULATE',
+                clue: 'Follow someone’s example in an attempt to equal them',
+                row: 0,
+                col: 2
+            },
+            {
+                answer: 'POLEMIC',
+                clue: 'Argument strongly opposing a particular view',
+                row: 0,
+                col: 3
+            },
+            {
+                answer: 'ADAMANT',
+                clue: 'Firm and unwilling to be persuaded',
+                row: 0,
+                col: 4
+            },
+            {
+                answer: 'RETINUE',
+                clue: 'Entourage of assistants or followers',
+                row: 0,
+                col: 5
+            },
+            {
+                answer: 'ELECTED',
+                clue: 'Selected for office through voting',
+                row: 0,
                 col: 6
             }
         ]
