@@ -1556,9 +1556,9 @@ const crosswordPack1 = [
         ["AIRPORT","Place where passenger aircraft arrive and depart",3,0],
         ["SHOP","Place where goods are sold",0,1],
         ["FLOWER","Colourful part of many plants",2,3],
-        ["TABLE","Piece of furniture with a flat top",6,6],
+        ["TABLE","Piece of furniture with a flat top",5,6],
         ["PRICE","Amount of money something costs",1,7],
-        ["STAMP","Small piece stuck to a letter before posting",6,9],
+        ["STAMP","Small piece stuck to a letter before posting",6,8],
         ["WIND","Moving air",0,10]
     ].map(([answer, clue, row, col]) => ({ answer, clue, row, col }))
 }
