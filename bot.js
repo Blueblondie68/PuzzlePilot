@@ -1,6 +1,6 @@
 // bot.js
 // Main PuzzlePilot hub
-// Daily menu + Crossword + Word Ladder + Logic Grid + Connections
+// Daily menu + Crossword + Word Ladder + Logic Grid + Connections + Quiz
 
 const {
     Client,
@@ -22,6 +22,7 @@ const crossword = require('./crossword');
 const wordladder = require('./wordladder');
 const logicgrid = require('./logicgrid');
 const connections = require('./connections');
+const quiz = require('./quiz');
 
 // ─────────────────────────────────────────────
 // CLIENT SETUP
@@ -118,6 +119,9 @@ function getUKDate() {
 //
 // Connections and Logic Grid calculate their own
 // daily puzzle from the current UK date.
+//
+// Quiz also calculates its Daily Quiz from the
+// current UK date when a player starts it.
 
 let lastUKDate =
     getUKDate();
@@ -241,6 +245,14 @@ client.on(
                             },
                             {
                                 label:
+                                    'Daily Quiz',
+                                value:
+                                    'dailyquiz',
+                                description:
+                                    'Answer today’s 10 quiz questions'
+                            },
+                            {
+                                label:
                                     'Continuous Word Ladder',
                                 value:
                                     'continuouswordladder',
@@ -269,7 +281,7 @@ client.on(
                                 value:
                                     'continuousconnections',
                                 description:
-                                    'Play a fresh Connections anytime'
+                                    'Play a fresh Connections puzzle anytime'
                             }
                         ])
                 );
@@ -363,6 +375,21 @@ client.on(
             'fullcrossword'
         ) {
             await crossword.startDaily(
+                interaction
+            );
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // DAILY QUIZ
+        // ─────────────────────────────────────
+
+        if (
+            choice ===
+            'dailyquiz'
+        ) {
+            await quiz.startDaily(
                 interaction
             );
 
@@ -567,6 +594,14 @@ client.on(
         // ─────────────────────────────────────
 
         await connections.handleInteraction(
+            interaction
+        );
+
+        // ─────────────────────────────────────
+        // QUIZ
+        // ─────────────────────────────────────
+
+        await quiz.handleInteraction(
             interaction
         );
     }
