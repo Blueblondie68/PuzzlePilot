@@ -314,9 +314,9 @@ function buildQuestionText(
 
     return (
         `${questionHeading(session)}\n\n` +
-        `${question.question}\n\n` +
         `⏱️ You have **15 seconds** to answer.\n` +
-        `Your first answer is final.`
+        `Your first answer is final.\n\n` +
+        `${question.question}`
     );
 }
 
