@@ -2,10 +2,10 @@
 // PuzzlePilot Word Ladder
 // Daily + continuous play
 //
-// Proper classic Word Ladder rules:
+// Classic Word Ladder rules:
 // - Start and target are the same length
 // - Change exactly one letter per move
-// - Every submitted word must be in PuzzlePilot's approved vocabulary
+// - Every submitted word must be a recognised English word
 // - Players enter one word at a time
 // - Alternative valid routes are accepted
 // - Continuous play avoids an immediate repeat
@@ -19,8 +19,49 @@ const {
     TextInputStyle
 } = require('discord.js');
 
-const pack1 = require('./wordladder_pack1.js');
-const approvedWords = require('./wordladder_words.js');
+const englishWords =
+    require('an-array-of-english-words');
+
+const pack1 =
+    require('./wordladder_pack1.js');
+
+// ─────────────────────────────────────────────
+// DICTIONARY
+// ─────────────────────────────────────────────
+//
+// Pack 1 currently uses four-letter ladders.
+//
+// The npm dictionary contains a very large English
+// vocabulary. We keep alphabetic four-letter entries.
+//
+// Using a Set makes checking a submitted word fast.
+
+const approvedWords =
+    new Set(
+        englishWords
+            .map(word =>
+                word.toLowerCase()
+            )
+            .filter(word =>
+                /^[a-z]{4}$/.test(word)
+            )
+    );
+
+// These are ordinary words that we specifically want
+// PuzzlePilot to recognise even if the underlying
+// dictionary ever changes.
+
+[
+    'lark',
+    'lust'
+].forEach(word =>
+    approvedWords.add(word)
+);
+
+console.log(
+    `Word Ladder dictionary loaded: ` +
+    `${approvedWords.size} four-letter words`
+);
 
 // ─────────────────────────────────────────────
 // PUZZLE BANK
@@ -36,13 +77,15 @@ const wordLadders = {
 // ACTIVE GAMES
 // ─────────────────────────────────────────────
 
-const sessions = new Map();
+const sessions =
+    new Map();
 
-// Remember the last continuous puzzle each player
-// received for each difficulty.
-const lastContinuousPuzzles = new Map();
+const lastContinuousPuzzles =
+    new Map();
 
-// Default daily puzzle until bot.js refreshes it.
+// Start with a random Medium ladder.
+// bot.js replaces this at the normal daily reset.
+
 let todaysLadder =
     wordLadders.medium[
         Math.floor(
@@ -55,20 +98,31 @@ let todaysLadder =
 // HELPERS
 // ─────────────────────────────────────────────
 
-function getDifficultyLabel(difficulty) {
-    if (difficulty === 'easy') {
+function getDifficultyLabel(
+    difficulty
+) {
+    if (
+        difficulty === 'easy'
+    ) {
         return 'Easy';
     }
 
-    if (difficulty === 'medium') {
+    if (
+        difficulty === 'medium'
+    ) {
         return 'Medium';
     }
 
     return 'Hard';
 }
 
-function puzzleKey(ladder) {
-    return `${ladder.start}_${ladder.end}`;
+function puzzleKey(
+    ladder
+) {
+    return (
+        `${ladder.start}_` +
+        `${ladder.end}`
+    );
 }
 
 function generateWordLadder(
@@ -76,14 +130,18 @@ function generateWordLadder(
     excludedPuzzleKey = null
 ) {
     const group =
-        wordLadders[difficulty];
+        wordLadders[
+            difficulty
+        ];
 
     if (
         !group ||
         group.length === 0
     ) {
         throw new Error(
-            `No Word Ladders found for difficulty: ${difficulty}`
+            `No Word Ladders found ` +
+            `for difficulty: ` +
+            `${difficulty}`
         );
     }
 
@@ -97,7 +155,9 @@ function generateWordLadder(
         choices =
             group.filter(
                 ladder =>
-                    puzzleKey(ladder) !==
+                    puzzleKey(
+                        ladder
+                    ) !==
                     excludedPuzzleKey
             );
     }
@@ -110,7 +170,9 @@ function generateWordLadder(
     ];
 }
 
-function setTodaysLadder(ladder) {
+function setTodaysLadder(
+    ladder
+) {
     todaysLadder =
         ladder;
 }
@@ -119,10 +181,14 @@ function makeSessionId(
     userId,
     mode
 ) {
-    return `${userId}_${mode}`;
+    return (
+        `${userId}_${mode}`
+    );
 }
 
-function isApprovedWord(word) {
+function isApprovedWord(
+    word
+) {
     return approvedWords.has(
         word.toLowerCase()
     );
@@ -157,7 +223,9 @@ function countDifferentLetters(
     return differences;
 }
 
-function ladderDisplay(session) {
+function ladderDisplay(
+    session
+) {
     return session.words
         .map(
             word =>
@@ -175,16 +243,22 @@ function buildGameText(
         `Start: **${session.start.toUpperCase()}**\n` +
         `Target: **${session.end.toUpperCase()}**\n`;
 
-    if (session.difficulty) {
+    if (
+        session.difficulty
+    ) {
         text +=
-            `Difficulty: **${getDifficultyLabel(session.difficulty)}**\n`;
+            `Difficulty: **${getDifficultyLabel(
+                session.difficulty
+            )}**\n`;
     }
 
     text +=
         `\n**Your ladder:**\n` +
         `${ladderDisplay(session)}\n\n`;
 
-    if (message) {
+    if (
+        message
+    ) {
         text +=
             `${message}\n\n`;
     }
@@ -196,7 +270,9 @@ function buildGameText(
     return text;
 }
 
-function gameButtons(sessionId) {
+function gameButtons(
+    sessionId
+) {
     return [
         new ActionRowBuilder()
             .addComponents(
@@ -227,32 +303,21 @@ function createSession(
         );
 
     const session = {
-        id:
-            sessionId,
-
-        userId:
-            userId,
-
-        mode:
-            mode,
-
+        id: sessionId,
+        userId: userId,
+        mode: mode,
         difficulty:
             difficulty,
-
         title:
             mode === 'daily'
                 ? 'Daily Word Ladder'
-                : `${getDifficultyLabel(difficulty)} Word Ladder`,
-
+                : `${getDifficultyLabel(
+                    difficulty
+                )} Word Ladder`,
         start:
             ladder.start.toLowerCase(),
-
         end:
             ladder.end.toLowerCase(),
-
-        shortestMoves:
-            ladder.shortestMoves || null,
-
         words: [
             ladder.start.toLowerCase()
         ]
@@ -267,10 +332,12 @@ function createSession(
 }
 
 // ─────────────────────────────────────────────
-// START DAILY
+// DAILY GAME
 // ─────────────────────────────────────────────
 
-async function startDaily(interaction) {
+async function startDaily(
+    interaction
+) {
     const session =
         createSession(
             interaction.user.id,
@@ -283,7 +350,6 @@ async function startDaily(interaction) {
             buildGameText(
                 session
             ),
-
         components:
             gameButtons(
                 session.id
@@ -292,15 +358,16 @@ async function startDaily(interaction) {
 }
 
 // ─────────────────────────────────────────────
-// START CONTINUOUS
+// CONTINUOUS GAME
 // ─────────────────────────────────────────────
 
-async function startContinuous(interaction) {
+async function startContinuous(
+    interaction
+) {
     await interaction.reply({
         content:
             `🧩 **Word Ladder**\n\n` +
             `Choose your difficulty.`,
-
         components: [
             new ActionRowBuilder()
                 .addComponents(
@@ -342,13 +409,15 @@ async function startContinuous(interaction) {
 }
 
 // ─────────────────────────────────────────────
-// HANDLE INTERACTIONS
+// INTERACTIONS
 // ─────────────────────────────────────────────
 
-async function handleInteraction(interaction) {
+async function handleInteraction(
+    interaction
+) {
 
     // ─────────────────────────────────────────
-    // DIFFICULTY BUTTON
+    // DIFFICULTY BUTTONS
     // ─────────────────────────────────────────
 
     if (
@@ -364,7 +433,8 @@ async function handleInteraction(interaction) {
             );
 
         const repeatKey =
-            `${interaction.user.id}_${difficulty}`;
+            `${interaction.user.id}_` +
+            `${difficulty}`;
 
         const previousPuzzle =
             lastContinuousPuzzles.get(
@@ -379,7 +449,9 @@ async function handleInteraction(interaction) {
 
         lastContinuousPuzzles.set(
             repeatKey,
-            puzzleKey(ladder)
+            puzzleKey(
+                ladder
+            )
         );
 
         const session =
@@ -395,7 +467,6 @@ async function handleInteraction(interaction) {
                 buildGameText(
                     session
                 ),
-
             components:
                 gameButtons(
                     session.id
@@ -426,11 +497,12 @@ async function handleInteraction(interaction) {
                 sessionId
             );
 
-        if (!session) {
+        if (
+            !session
+        ) {
             await interaction.reply({
                 content:
                     '⚠️ This Word Ladder is no longer active.',
-
                 ephemeral:
                     true
             });
@@ -445,7 +517,6 @@ async function handleInteraction(interaction) {
             await interaction.reply({
                 content:
                     '⚠️ This Word Ladder belongs to another player.',
-
                 ephemeral:
                     true
             });
@@ -473,7 +544,8 @@ async function handleInteraction(interaction) {
                     'wl_word'
                 )
                 .setLabel(
-                    `Change one letter in ${currentWord.toUpperCase()}`
+                    `Change one letter in ` +
+                    `${currentWord.toUpperCase()}`
                 )
                 .setStyle(
                     TextInputStyle.Short
@@ -523,11 +595,12 @@ async function handleInteraction(interaction) {
                 sessionId
             );
 
-        if (!session) {
+        if (
+            !session
+        ) {
             await interaction.reply({
                 content:
                     '⚠️ This Word Ladder is no longer active.',
-
                 ephemeral:
                     true
             });
@@ -542,7 +615,6 @@ async function handleInteraction(interaction) {
             await interaction.reply({
                 content:
                     '⚠️ This Word Ladder belongs to another player.',
-
                 ephemeral:
                     true
             });
@@ -565,10 +637,7 @@ async function handleInteraction(interaction) {
                 session.words.length - 1
             ];
 
-        // ─────────────────────────────────────
-        // LETTERS ONLY
-        // ─────────────────────────────────────
-
+        // Letters only
         if (
             !/^[a-z]+$/.test(
                 enteredWord
@@ -580,7 +649,6 @@ async function handleInteraction(interaction) {
                         session,
                         '❌ Please enter letters only.'
                     ),
-
                 components:
                     gameButtons(
                         session.id
@@ -590,10 +658,7 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        // ─────────────────────────────────────
-        // CORRECT LENGTH
-        // ─────────────────────────────────────
-
+        // Same length
         if (
             enteredWord.length !==
             currentWord.length
@@ -602,9 +667,9 @@ async function handleInteraction(interaction) {
                 content:
                     buildGameText(
                         session,
-                        `❌ Your next word must have **${currentWord.length} letters**.`
+                        `❌ Your next word must have ` +
+                        `**${currentWord.length} letters**.`
                     ),
-
                 components:
                     gameButtons(
                         session.id
@@ -614,10 +679,7 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        // ─────────────────────────────────────
-        // EXACTLY ONE LETTER CHANGED
-        // ─────────────────────────────────────
-
+        // Exactly one letter changed
         const differences =
             countDifferentLetters(
                 currentWord,
@@ -635,7 +697,6 @@ async function handleInteraction(interaction) {
                             ? '❌ You need to change one letter.'
                             : '❌ You can change only **one letter** at a time.'
                     ),
-
                 components:
                     gameButtons(
                         session.id
@@ -645,10 +706,7 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        // ─────────────────────────────────────
-        // APPROVED WORD
-        // ─────────────────────────────────────
-
+        // Recognised English word
         if (
             !isApprovedWord(
                 enteredWord
@@ -658,9 +716,10 @@ async function handleInteraction(interaction) {
                 content:
                     buildGameText(
                         session,
-                        `❌ **${enteredWord.toUpperCase()}** isn't in PuzzlePilot's word list. Try another word.`
+                        `❌ **${enteredWord.toUpperCase()}** ` +
+                        `isn't in PuzzlePilot's dictionary. ` +
+                        `Try another word.`
                     ),
-
                 components:
                     gameButtons(
                         session.id
@@ -670,10 +729,7 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        // ─────────────────────────────────────
-        // NO REUSING WORDS
-        // ─────────────────────────────────────
-
+        // No repeats in the same ladder
         if (
             session.words.includes(
                 enteredWord
@@ -683,9 +739,9 @@ async function handleInteraction(interaction) {
                 content:
                     buildGameText(
                         session,
-                        `❌ You've already used **${enteredWord.toUpperCase()}**.`
+                        `❌ You've already used ` +
+                        `**${enteredWord.toUpperCase()}**.`
                     ),
-
                 components:
                     gameButtons(
                         session.id
@@ -695,10 +751,7 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        // ─────────────────────────────────────
-        // VALID MOVE
-        // ─────────────────────────────────────
-
+        // Accept word
         session.words.push(
             enteredWord
         );
@@ -714,28 +767,13 @@ async function handleInteraction(interaction) {
             const moves =
                 session.words.length - 1;
 
-            let resultText =
+            const resultText =
                 `🎉 **Word Ladder solved!**\n\n` +
                 `${ladderDisplay(session)}\n\n` +
-                `You reached **${session.end.toUpperCase()}** ` +
-                `in **${moves} ${moves === 1 ? 'move' : 'moves'}**!`;
-
-            if (
-                session.shortestMoves
-            ) {
-                if (
-                    moves ===
-                    session.shortestMoves
-                ) {
-                    resultText +=
-                        `\n\n🏆 **Perfect route!** ` +
-                        `That is the shortest possible route.`;
-                } else {
-                    resultText +=
-                        `\n\nShortest known route: ` +
-                        `**${session.shortestMoves} moves**.`;
-                }
-            }
+                `You reached ` +
+                `**${session.end.toUpperCase()}** ` +
+                `in **${moves} ` +
+                `${moves === 1 ? 'move' : 'moves'}**!`;
 
             sessions.delete(
                 sessionId
@@ -744,7 +782,6 @@ async function handleInteraction(interaction) {
             await interaction.editReply({
                 content:
                     resultText,
-
                 components:
                     []
             });
@@ -752,17 +789,13 @@ async function handleInteraction(interaction) {
             return;
         }
 
-        // ─────────────────────────────────────
-        // CONTINUE GAME
-        // ─────────────────────────────────────
-
+        // Continue playing
         await interaction.editReply({
             content:
                 buildGameText(
                     session,
                     `✅ **${enteredWord.toUpperCase()}** accepted!`
                 ),
-
             components:
                 gameButtons(
                     session.id
@@ -785,4 +818,3 @@ module.exports = {
     startContinuous,
     handleInteraction
 };
-    
