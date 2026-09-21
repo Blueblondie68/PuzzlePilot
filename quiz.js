@@ -4,7 +4,8 @@
 //
 // Daily Quiz rules:
 // - 10 questions
-// - Same Daily Quiz for everybody
+// - Same Daily Quiz on every server
+// - Daily Quiz resets at midnight UK time
 // - Four multiple-choice answers
 // - Answer positions are shuffled
 // - First answer clicked is final
@@ -14,14 +15,22 @@
 // - Next question appears automatically
 // - Unanswered questions count as wrong
 // - Final score is shown automatically after question 10
-// - Each player may complete the Daily Quiz once per day
-// - Daily questions reset at midnight UK time
+// - Each player may complete the Daily Quiz once per server per day
+//
+// Persistent data:
+// - Today's 10 question IDs are saved globally
+// - Question-use history is saved globally
+// - Player completion data is saved separately for each server
+// - Restarting PuzzlePilot does not create a new Daily Quiz
 
 const {
     ActionRowBuilder,
     ButtonBuilder,
     ButtonStyle
 } = require('discord.js');
+
+const fs = require('fs');
+const path = require('path');
 
 const quizPack1 =
     require('./quiz_pack1.js');
@@ -52,33 +61,142 @@ console.log(
 );
 
 // ─────────────────────────────────────────────
+// DATA FILE
+// ─────────────────────────────────────────────
+
+const DATA_FILE =
+    path.join(
+        __dirname,
+        'quiz_data.json'
+    );
+
+function defaultQuizData() {
+    return {
+        daily: {
+            date: null,
+            questionIds: [],
+            questionHistory: {}
+        },
+        servers: {}
+    };
+}
+
+function loadQuizData() {
+    try {
+        if (
+            !fs.existsSync(
+                DATA_FILE
+            )
+        ) {
+            const freshData =
+                defaultQuizData();
+
+            fs.writeFileSync(
+                DATA_FILE,
+                JSON.stringify(
+                    freshData,
+                    null,
+                    2
+                )
+            );
+
+            return freshData;
+        }
+
+        const raw =
+            fs.readFileSync(
+                DATA_FILE,
+                'utf8'
+            );
+
+        const loaded =
+            JSON.parse(
+                raw
+            );
+
+        if (
+            !loaded.daily ||
+            typeof loaded.daily !==
+                'object'
+        ) {
+            loaded.daily =
+                defaultQuizData().daily;
+        }
+
+        if (
+            !loaded.daily.questionHistory ||
+            typeof loaded.daily.questionHistory !==
+                'object'
+        ) {
+            loaded.daily.questionHistory =
+                {};
+        }
+
+        if (
+            !Array.isArray(
+                loaded.daily.questionIds
+            )
+        ) {
+            loaded.daily.questionIds =
+                [];
+        }
+
+        if (
+            !loaded.servers ||
+            typeof loaded.servers !==
+                'object'
+        ) {
+            loaded.servers =
+                {};
+        }
+
+        return loaded;
+
+    } catch (
+        error
+    ) {
+        console.error(
+            'Could not load quiz_data.json:',
+            error
+        );
+
+        return defaultQuizData();
+    }
+}
+
+let quizData =
+    loadQuizData();
+
+function saveQuizData() {
+    try {
+        fs.writeFileSync(
+            DATA_FILE,
+            JSON.stringify(
+                quizData,
+                null,
+                2
+            )
+        );
+    } catch (
+        error
+    ) {
+        console.error(
+            'Could not save quiz_data.json:',
+            error
+        );
+    }
+}
+
+// ─────────────────────────────────────────────
 // ACTIVE SESSIONS
 // ─────────────────────────────────────────────
+//
+// Active games do not need to survive a restart.
+// Persistent Daily information is stored separately
+// in quiz_data.json.
 
 const sessions =
     new Map();
-
-// Players who have completed today's Daily Quiz.
-//
-// This is currently stored in memory while the
-// Daily Quiz is being tested.
-//
-// Before the finished Quiz goes live, this will
-// be moved to persistent storage so a bot restart
-// cannot allow somebody to replay the Daily Quiz.
-
-const dailyCompletions =
-    new Map();
-
-// ─────────────────────────────────────────────
-// DAILY QUIZ STATE
-// ─────────────────────────────────────────────
-
-let currentDailyDate = null;
-
-let todaysQuestions = [];
-
-const dailyQuestionHistory = [];
 
 // ─────────────────────────────────────────────
 // HELPERS
@@ -162,6 +280,56 @@ function getUKDateKey() {
     );
 }
 
+function getServerId(
+    interaction
+) {
+    // Daily Quiz is designed for Discord servers.
+    //
+    // If this is somehow called outside a guild,
+    // keep that data isolated rather than mixing it
+    // with a real server.
+
+    return (
+        interaction.guildId ||
+        `DM_${interaction.user.id}`
+    );
+}
+
+function getServerData(
+    serverId
+) {
+    if (
+        !quizData.servers[
+            serverId
+        ]
+    ) {
+        quizData.servers[
+            serverId
+        ] = {
+            completions: {}
+        };
+    }
+
+    if (
+        !quizData.servers[
+            serverId
+        ].completions ||
+        typeof quizData.servers[
+            serverId
+        ].completions !==
+            'object'
+    ) {
+        quizData.servers[
+            serverId
+        ].completions =
+            {};
+    }
+
+    return quizData.servers[
+        serverId
+    ];
+}
+
 function getEligibleDailyQuestions() {
     return questionBank.filter(
         question =>
@@ -170,7 +338,27 @@ function getEligibleDailyQuestions() {
     );
 }
 
-function selectDailyQuestions() {
+// ─────────────────────────────────────────────
+// DAILY QUESTION HISTORY
+// ─────────────────────────────────────────────
+//
+// questionHistory stores the last UK date on which
+// each question was used:
+//
+// {
+//     "music_0001": "2026-09-21",
+//     "tv_0004": "2026-09-22"
+// }
+//
+// Questions that have never been used are chosen
+// before questions that have already appeared.
+//
+// Once every eligible question has been used,
+// the oldest-used questions become available first.
+
+function selectDailyQuestions(
+    dateKey
+) {
     const eligible =
         getEligibleDailyQuestions();
 
@@ -185,91 +373,269 @@ function selectDailyQuestions() {
         );
     }
 
-    const recentIds =
-        new Set(
-            dailyQuestionHistory.flat()
-        );
+    const history =
+        quizData.daily
+            .questionHistory;
 
-    let unused =
+    const neverUsed =
         eligible.filter(
             question =>
-                !recentIds.has(
+                !history[
                     question.id
-                )
+                ]
         );
 
-    // The development bank is deliberately small.
-    // If there are not enough completely unused
-    // questions, older questions are allowed back in.
-    //
-    // The finished giant question bank will use
-    // persistent long-term repeat protection.
+    let selected = [];
+
+    // Use never-seen questions first.
 
     if (
-        unused.length <
-        DAILY_QUESTION_COUNT
+        neverUsed.length > 0
     ) {
-        unused = [
-            ...eligible
-        ];
+        selected =
+            shuffleArray(
+                neverUsed
+            )
+                .slice(
+                    0,
+                    DAILY_QUESTION_COUNT
+                );
     }
 
-    const selected =
-        shuffleArray(
-            unused
-        )
-            .slice(
-                0,
-                DAILY_QUESTION_COUNT
+    // If there are not enough never-used questions,
+    // fill the remaining spaces using the questions
+    // that were used longest ago.
+
+    if (
+        selected.length <
+        DAILY_QUESTION_COUNT
+    ) {
+        const selectedIds =
+            new Set(
+                selected.map(
+                    question =>
+                        question.id
+                )
             );
 
-    dailyQuestionHistory.push(
-        selected.map(
-            question =>
-                question.id
-        )
-    );
+        const previouslyUsed =
+            eligible
+                .filter(
+                    question =>
+                        !selectedIds.has(
+                            question.id
+                        )
+                )
+                .sort(
+                    (a, b) => {
+                        const dateA =
+                            history[
+                                a.id
+                            ] || '';
 
-    while (
-        dailyQuestionHistory.length >
-        2
+                        const dateB =
+                            history[
+                                b.id
+                            ] || '';
+
+                        return (
+                            dateA.localeCompare(
+                                dateB
+                            )
+                        );
+                    }
+                );
+
+        const needed =
+            DAILY_QUESTION_COUNT -
+            selected.length;
+
+        selected.push(
+            ...previouslyUsed.slice(
+                0,
+                needed
+            )
+        );
+    }
+
+    // Shuffle the final ten so the order is not
+    // determined by question history.
+
+    selected =
+        shuffleArray(
+            selected
+        );
+
+    // Record that these questions were used today.
+
+    for (
+        const question of selected
     ) {
-        dailyQuestionHistory.shift();
+        history[
+            question.id
+        ] = dateKey;
     }
 
     return selected;
 }
 
+function getQuestionsFromIds(
+    ids
+) {
+    const questions = [];
+
+    for (
+        const id of ids
+    ) {
+        const question =
+            questionBank.find(
+                item =>
+                    item.id ===
+                    id
+            );
+
+        if (
+            question
+        ) {
+            questions.push(
+                question
+            );
+        }
+    }
+
+    return questions;
+}
+
+// ─────────────────────────────────────────────
+// ENSURE TODAY'S DAILY QUIZ
+// ─────────────────────────────────────────────
+
 function ensureTodaysQuiz() {
     const dateKey =
         getUKDateKey();
 
+    // If quiz_data.json already contains today's
+    // Daily Quiz, rebuild it from the saved IDs.
+
     if (
-        currentDailyDate ===
+        quizData.daily.date ===
             dateKey &&
-        todaysQuestions.length ===
+        Array.isArray(
+            quizData.daily
+                .questionIds
+        ) &&
+        quizData.daily
+            .questionIds.length ===
             DAILY_QUESTION_COUNT
     ) {
-        return;
+        const savedQuestions =
+            getQuestionsFromIds(
+                quizData.daily
+                    .questionIds
+            );
+
+        // All ten saved IDs still exist in the
+        // question bank, so use exactly the same
+        // Daily Quiz after a restart.
+
+        if (
+            savedQuestions.length ===
+            DAILY_QUESTION_COUNT
+        ) {
+            return {
+                dateKey:
+                    dateKey,
+
+                questions:
+                    savedQuestions
+            };
+        }
+
+        console.warn(
+            'Saved Daily Quiz contains a question ' +
+            'that no longer exists. Selecting a new Daily Quiz.'
+        );
     }
 
-    currentDailyDate =
+    // It is a new UK day, or the saved Daily Quiz
+    // is incomplete. Select today's ten questions.
+
+    const selected =
+        selectDailyQuestions(
+            dateKey
+        );
+
+    quizData.daily.date =
         dateKey;
 
-    todaysQuestions =
-        selectDailyQuestions();
+    quizData.daily.questionIds =
+        selected.map(
+            question =>
+                question.id
+        );
+
+    // We do not need yesterday's completion records.
+    // Remove old completion dates while keeping each
+    // server's data separate.
+
+    for (
+        const serverId of
+        Object.keys(
+            quizData.servers
+        )
+    ) {
+        const server =
+            getServerData(
+                serverId
+            );
+
+        for (
+            const userId of
+            Object.keys(
+                server.completions
+            )
+        ) {
+            if (
+                server.completions[
+                    userId
+                ] !==
+                dateKey
+            ) {
+                delete server.completions[
+                    userId
+                ];
+            }
+        }
+    }
+
+    saveQuizData();
 
     console.log(
         `Daily Quiz selected for ` +
-        `${currentDailyDate}`
+        `${dateKey}`
     );
+
+    return {
+        dateKey:
+            dateKey,
+
+        questions:
+            selected
+    };
 }
 
+// ─────────────────────────────────────────────
+// SESSION HELPERS
+// ─────────────────────────────────────────────
+
 function makeSessionId(
+    serverId,
     userId
 ) {
     return (
-        `${userId}_daily_quiz`
+        `${serverId}_` +
+        `${userId}_` +
+        `daily_quiz`
     );
 }
 
@@ -320,6 +686,27 @@ function buildQuestionText(
     );
 }
 
+function progressMessage(
+    session
+) {
+    if (
+        session.questionIndex >=
+        session.questions.length - 1
+    ) {
+        return (
+            `Final score in 3 seconds...`
+        );
+    }
+
+    return (
+        `Next question in 3 seconds...`
+    );
+}
+
+// ─────────────────────────────────────────────
+// ANSWER BUTTONS
+// ─────────────────────────────────────────────
+
 function buildAnswerButtons(
     session
 ) {
@@ -344,7 +731,10 @@ function buildAnswerButtons(
 
         row.addComponents(
             rowAnswers.map(
-                (answer, offset) => {
+                (
+                    answer,
+                    offset
+                ) => {
                     const answerIndex =
                         rowStart +
                         offset;
@@ -406,7 +796,10 @@ function buildLockedAnswerButtons(
 
         row.addComponents(
             rowAnswers.map(
-                (answer, offset) => {
+                (
+                    answer,
+                    offset
+                ) => {
                     const answerIndex =
                         rowStart +
                         offset;
@@ -420,6 +813,7 @@ function buildLockedAnswerButtons(
                     ) {
                         style =
                             ButtonStyle.Success;
+
                     } else if (
                         selectedAnswer &&
                         answer ===
@@ -457,6 +851,10 @@ function buildLockedAnswerButtons(
 
     return rows;
 }
+
+// ─────────────────────────────────────────────
+// TIMERS
+// ─────────────────────────────────────────────
 
 function clearQuestionTimer(
     session
@@ -517,14 +915,16 @@ function prepareQuestion(
             ).answers
         );
 
-    // Each displayed question gets its own number.
-    //
-    // Timers check this number before doing anything.
-    // That prevents an old timer from changing a newer
-    // question if Discord or the bot is briefly delayed.
+    // Each displayed question receives a token.
+    // Old timers cannot interfere with a newer
+    // question.
 
     session.questionToken++;
 }
+
+// ─────────────────────────────────────────────
+// FINAL SCORE
+// ─────────────────────────────────────────────
 
 function finalScoreText(
     session
@@ -538,10 +938,6 @@ function finalScoreText(
         `UK time for a new Daily Quiz!`
     );
 }
-
-// ─────────────────────────────────────────────
-// FINISH DAILY QUIZ
-// ─────────────────────────────────────────────
 
 async function finishDailyQuiz(
     interaction,
@@ -564,10 +960,19 @@ async function finishDailyQuiz(
         session
     );
 
-    dailyCompletions.set(
-        session.userId,
-        session.dateKey
-    );
+    // Save this player's completion inside their
+    // own Discord server only.
+
+    const server =
+        getServerData(
+            session.serverId
+        );
+
+    server.completions[
+        session.userId
+    ] = session.dateKey;
+
+    saveQuizData();
 
     sessions.delete(
         session.id
@@ -582,6 +987,7 @@ async function finishDailyQuiz(
             components:
                 []
         });
+
     } catch (
         error
     ) {
@@ -622,9 +1028,6 @@ function scheduleNextQuestion(
                     return;
                 }
 
-                // If this timer belongs to an older
-                // question, it must not do anything.
-
                 if (
                     session.questionToken !==
                     questionToken
@@ -634,10 +1037,6 @@ function scheduleNextQuestion(
 
                 session.resultTimer =
                     null;
-
-                // Question 10 has finished.
-                // Show the final score instead of
-                // attempting to create question 11.
 
                 if (
                     session.questionIndex >=
@@ -695,9 +1094,6 @@ function startQuestionTimer(
                     return;
                 }
 
-                // Ignore a timer belonging to an
-                // earlier question.
-
                 if (
                     session.questionToken !==
                     questionToken
@@ -705,18 +1101,14 @@ function startQuestionTimer(
                     return;
                 }
 
-                // The player answered before the
-                // timer expired.
-
                 if (
                     session.answered
                 ) {
                     return;
                 }
 
-                // Lock the question BEFORE awaiting
-                // anything so a late button press
-                // cannot sneak through.
+                // Lock before awaiting anything.
+                // A late click cannot sneak through.
 
                 session.answered =
                     true;
@@ -744,7 +1136,9 @@ function startQuestionTimer(
                             `⏰ **Time's up!**\n\n` +
                             `The correct answer was ` +
                             `**${question.correctAnswer}**.\n\n` +
-                            `Next question in 3 seconds...`,
+                            `${progressMessage(
+                                session
+                            )}`,
                         components:
                             lockedRows
                     });
@@ -805,18 +1199,29 @@ async function showQuestion(
 async function startDaily(
     interaction
 ) {
-    ensureTodaysQuiz();
+    const daily =
+        ensureTodaysQuiz();
 
     const userId =
         interaction.user.id;
 
+    const serverId =
+        getServerId(
+            interaction
+        );
+
     const dateKey =
-        getUKDateKey();
+        daily.dateKey;
+
+    const server =
+        getServerData(
+            serverId
+        );
 
     const completedDate =
-        dailyCompletions.get(
+        server.completions[
             userId
-        );
+        ];
 
     if (
         completedDate ===
@@ -825,7 +1230,7 @@ async function startDaily(
         await interaction.reply({
             content:
                 `🧠 You've already completed ` +
-                `today's Daily Quiz.\n\n` +
+                `today's Daily Quiz on this server.\n\n` +
                 `Come back after midnight ` +
                 `UK time for a new one!`,
             ephemeral:
@@ -837,6 +1242,7 @@ async function startDaily(
 
     const sessionId =
         makeSessionId(
+            serverId,
             userId
         );
 
@@ -863,6 +1269,9 @@ async function startDaily(
         id:
             sessionId,
 
+        serverId:
+            serverId,
+
         userId:
             userId,
 
@@ -870,7 +1279,7 @@ async function startDaily(
             dateKey,
 
         questions:
-            todaysQuestions,
+            daily.questions,
 
         questionIndex:
             0,
@@ -991,10 +1400,24 @@ async function handleAnswer(
         return;
     }
 
+    if (
+        session.serverId !==
+        getServerId(
+            interaction
+        )
+    ) {
+        await interaction.reply({
+            content:
+                '⚠️ This Daily Quiz belongs to another server.',
+            ephemeral:
+                true
+        });
+
+        return;
+    }
+
     // First accepted click wins.
-    //
-    // This changes BEFORE any await so rapid
-    // double-clicking cannot change the answer.
+    // Lock before any await.
 
     if (
         session.answered
@@ -1078,7 +1501,10 @@ async function handleAnswer(
             `✅ **Correct!**\n\n` +
             `The answer is ` +
             `**${question.correctAnswer}**.\n\n` +
-            `Next question in 3 seconds...`;
+            `${progressMessage(
+                session
+            )}`;
+
     } else {
         resultText =
             `${questionHeading(
@@ -1090,7 +1516,9 @@ async function handleAnswer(
             `**${selectedAnswer}**.\n` +
             `The correct answer was ` +
             `**${question.correctAnswer}**.\n\n` +
-            `Next question in 3 seconds...`;
+            `${progressMessage(
+                session
+            )}`;
     }
 
     await interaction.editReply({
