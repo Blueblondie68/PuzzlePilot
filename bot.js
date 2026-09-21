@@ -241,6 +241,14 @@ client.on(
                             },
                             {
                                 label:
+                                    'Continuous Word Ladder',
+                                value:
+                                    'continuouswordladder',
+                                description:
+                                    'Play a fresh Word Ladder anytime'
+                            },
+                            {
+                                label:
                                     'Continuous Crossword',
                                 value:
                                     'continuouscrossword',
@@ -302,7 +310,7 @@ client.on(
             interaction.values[0];
 
         // ─────────────────────────────────────
-        // WORD LADDER
+        // DAILY WORD LADDER
         // ─────────────────────────────────────
 
         if (
@@ -345,6 +353,7 @@ client.on(
 
             return;
         }
+
         // ─────────────────────────────────────
         // DAILY CROSSWORD
         // ─────────────────────────────────────
@@ -354,6 +363,21 @@ client.on(
             'fullcrossword'
         ) {
             await crossword.startDaily(
+                interaction
+            );
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // CONTINUOUS WORD LADDER
+        // ─────────────────────────────────────
+
+        if (
+            choice ===
+            'continuouswordladder'
+        ) {
+            await wordladder.startContinuous(
                 interaction
             );
 
