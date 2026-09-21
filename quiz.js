@@ -9,9 +9,11 @@
 // - Answer positions are shuffled
 // - First answer clicked is final
 // - 15 seconds to answer each question
-// - Wrong answers reveal the correct answer
+// - Correct answer is shown after every question
+// - Result is shown for 3 seconds
+// - Next question appears automatically
 // - Unanswered questions count as wrong
-// - Final score is shown after question 10
+// - Final score is shown automatically after question 10
 // - Each player may complete the Daily Quiz once per day
 // - Daily questions reset at midnight UK time
 
@@ -32,6 +34,9 @@ const DAILY_QUESTION_COUNT = 10;
 
 const QUESTION_TIME_LIMIT =
     15 * 1000;
+
+const RESULT_DISPLAY_TIME =
+    3 * 1000;
 
 // ─────────────────────────────────────────────
 // QUESTION BANK
@@ -55,13 +60,12 @@ const sessions =
 
 // Players who have completed today's Daily Quiz.
 //
-// This is deliberately kept separate from the active
-// sessions so completing a quiz removes the live game
-// without forgetting that the player has already played.
+// This is currently stored in memory while the
+// Daily Quiz is being tested.
 //
-// Later, when the Daily Quiz is fully tested, this can
-// be moved to persistent storage so completion survives
-// a bot restart.
+// Before the finished Quiz goes live, this will
+// be moved to persistent storage so a bot restart
+// cannot allow somebody to replay the Daily Quiz.
 
 const dailyCompletions =
     new Map();
@@ -73,12 +77,6 @@ const dailyCompletions =
 let currentDailyDate = null;
 
 let todaysQuestions = [];
-
-// Keeps recent Daily question IDs.
-//
-// This first engine keeps the history in memory.
-// Once the gameplay is approved, we can persist this
-// before the giant question bank is added.
 
 const dailyQuestionHistory = [];
 
@@ -200,12 +198,12 @@ function selectDailyQuestions() {
                 )
         );
 
-    // With the small development pack we may eventually
-    // run out of completely unused questions.
-    // If that happens, allow older questions back in.
+    // The development bank is deliberately small.
+    // If there are not enough completely unused
+    // questions, older questions are allowed back in.
     //
-    // Once the enormous real bank exists this will very
-    // rarely be necessary.
+    // The finished giant question bank will use
+    // persistent long-term repeat protection.
 
     if (
         unused.length <
@@ -231,12 +229,6 @@ function selectDailyQuestions() {
                 question.id
         )
     );
-
-    // The test pack is small, so only retain the last
-    // two Daily sets for now.
-    //
-    // With the real bank we will use persistent history
-    // and much longer repeat protection.
 
     while (
         dailyQuestionHistory.length >
@@ -292,15 +284,6 @@ function makeAnswerId(
     );
 }
 
-function makeNextId(
-    sessionId
-) {
-    return (
-        `quiz_next_` +
-        `${sessionId}`
-    );
-}
-
 function getCurrentQuestion(
     session
 ) {
@@ -340,11 +323,6 @@ function buildQuestionText(
 function buildAnswerButtons(
     session
 ) {
-    const question =
-        getCurrentQuestion(
-            session
-        );
-
     const answers =
         session.shuffledAnswers;
 
@@ -428,7 +406,11 @@ function buildLockedAnswerButtons(
 
         row.addComponents(
             rowAnswers.map(
-                answer => {
+                (answer, offset) => {
+                    const answerIndex =
+                        rowStart +
+                        offset;
+
                     let style =
                         ButtonStyle.Secondary;
 
@@ -451,9 +433,8 @@ function buildLockedAnswerButtons(
                         new ButtonBuilder()
                             .setCustomId(
                                 `quiz_locked_` +
-                                `${session.id}_` +
-                                `${rowStart}_` +
-                                `${answer}`
+                                `${answerIndex}_` +
+                                `${session.id}`
                             )
                             .setLabel(
                                 answer
@@ -477,49 +458,52 @@ function buildLockedAnswerButtons(
     return rows;
 }
 
-function buildNextButton(
-    session
-) {
-    return (
-        new ActionRowBuilder()
-            .addComponents(
-                new ButtonBuilder()
-                    .setCustomId(
-                        makeNextId(
-                            session.id
-                        )
-                    )
-                    .setLabel(
-                        session.questionIndex ===
-                            session.questions.length - 1
-                            ? 'See Final Score'
-                            : 'Next Question'
-                    )
-                    .setStyle(
-                        ButtonStyle.Primary
-                    )
-            )
-    );
-}
-
 function clearQuestionTimer(
     session
 ) {
     if (
-        session.timer
+        session.questionTimer
     ) {
         clearTimeout(
-            session.timer
+            session.questionTimer
         );
 
-        session.timer = null;
+        session.questionTimer =
+            null;
     }
+}
+
+function clearResultTimer(
+    session
+) {
+    if (
+        session.resultTimer
+    ) {
+        clearTimeout(
+            session.resultTimer
+        );
+
+        session.resultTimer =
+            null;
+    }
+}
+
+function clearAllTimers(
+    session
+) {
+    clearQuestionTimer(
+        session
+    );
+
+    clearResultTimer(
+        session
+    );
 }
 
 function prepareQuestion(
     session
 ) {
-    clearQuestionTimer(
+    clearAllTimers(
         session
     );
 
@@ -532,6 +516,14 @@ function prepareQuestion(
                 session
             ).answers
         );
+
+    // Each displayed question gets its own number.
+    //
+    // Timers check this number before doing anything.
+    // That prevents an old timer from changing a newer
+    // question if Discord or the bot is briefly delayed.
+
+    session.questionToken++;
 }
 
 function finalScoreText(
@@ -548,22 +540,74 @@ function finalScoreText(
 }
 
 // ─────────────────────────────────────────────
-// QUESTION TIMER
+// FINISH DAILY QUIZ
 // ─────────────────────────────────────────────
 
-function startQuestionTimer(
-    session,
-    interaction
+async function finishDailyQuiz(
+    interaction,
+    session
 ) {
-    clearQuestionTimer(
+    const liveSession =
+        sessions.get(
+            session.id
+        );
+
+    if (
+        !liveSession ||
+        liveSession !==
+            session
+    ) {
+        return;
+    }
+
+    clearAllTimers(
         session
     );
 
-    session.timer =
+    dailyCompletions.set(
+        session.userId,
+        session.dateKey
+    );
+
+    sessions.delete(
+        session.id
+    );
+
+    try {
+        await interaction.editReply({
+            content:
+                finalScoreText(
+                    session
+                ),
+            components:
+                []
+        });
+    } catch (
+        error
+    ) {
+        console.error(
+            'Quiz final score update failed:',
+            error
+        );
+    }
+}
+
+// ─────────────────────────────────────────────
+// AUTOMATIC PROGRESSION
+// ─────────────────────────────────────────────
+
+function scheduleNextQuestion(
+    interaction,
+    session,
+    questionToken
+) {
+    clearResultTimer(
+        session
+    );
+
+    session.resultTimer =
         setTimeout(
             async () => {
-
-                // Make sure this is still the active session.
 
                 const liveSession =
                     sessions.get(
@@ -578,8 +622,91 @@ function startQuestionTimer(
                     return;
                 }
 
-                // If the player answered just before the
-                // timer fired, do nothing.
+                // If this timer belongs to an older
+                // question, it must not do anything.
+
+                if (
+                    session.questionToken !==
+                    questionToken
+                ) {
+                    return;
+                }
+
+                session.resultTimer =
+                    null;
+
+                // Question 10 has finished.
+                // Show the final score instead of
+                // attempting to create question 11.
+
+                if (
+                    session.questionIndex >=
+                    session.questions.length - 1
+                ) {
+                    await finishDailyQuiz(
+                        interaction,
+                        session
+                    );
+
+                    return;
+                }
+
+                session.questionIndex++;
+
+                await showQuestion(
+                    interaction,
+                    session
+                );
+
+            },
+            RESULT_DISPLAY_TIME
+        );
+}
+
+// ─────────────────────────────────────────────
+// QUESTION TIMER
+// ─────────────────────────────────────────────
+
+function startQuestionTimer(
+    session,
+    interaction
+) {
+    clearQuestionTimer(
+        session
+    );
+
+    const questionToken =
+        session.questionToken;
+
+    session.questionTimer =
+        setTimeout(
+            async () => {
+
+                const liveSession =
+                    sessions.get(
+                        session.id
+                    );
+
+                if (
+                    !liveSession ||
+                    liveSession !==
+                        session
+                ) {
+                    return;
+                }
+
+                // Ignore a timer belonging to an
+                // earlier question.
+
+                if (
+                    session.questionToken !==
+                    questionToken
+                ) {
+                    return;
+                }
+
+                // The player answered before the
+                // timer expired.
 
                 if (
                     session.answered
@@ -587,12 +714,14 @@ function startQuestionTimer(
                     return;
                 }
 
-                // Lock this question immediately.
+                // Lock the question BEFORE awaiting
+                // anything so a late button press
+                // cannot sneak through.
 
                 session.answered =
                     true;
 
-                session.timer =
+                session.questionTimer =
                     null;
 
                 const question =
@@ -605,12 +734,6 @@ function startQuestionTimer(
                         session
                     );
 
-                lockedRows.push(
-                    buildNextButton(
-                        session
-                    )
-                );
-
                 try {
                     await interaction.editReply({
                         content:
@@ -620,10 +743,18 @@ function startQuestionTimer(
                             `${question.question}\n\n` +
                             `⏰ **Time's up!**\n\n` +
                             `The correct answer was ` +
-                            `**${question.correctAnswer}**.`,
+                            `**${question.correctAnswer}**.\n\n` +
+                            `Next question in 3 seconds...`,
                         components:
                             lockedRows
                     });
+
+                    scheduleNextQuestion(
+                        interaction,
+                        session,
+                        questionToken
+                    );
+
                 } catch (
                     error
                 ) {
@@ -639,7 +770,7 @@ function startQuestionTimer(
 }
 
 // ─────────────────────────────────────────────
-// SHOW A QUESTION
+// SHOW QUESTION
 // ─────────────────────────────────────────────
 
 async function showQuestion(
@@ -704,11 +835,14 @@ async function startDaily(
         return;
     }
 
+    const sessionId =
+        makeSessionId(
+            userId
+        );
+
     const existingSession =
         sessions.get(
-            makeSessionId(
-                userId
-            )
+            sessionId
         );
 
     if (
@@ -724,11 +858,6 @@ async function startDaily(
 
         return;
     }
-
-    const sessionId =
-        makeSessionId(
-            userId
-        );
 
     const session = {
         id:
@@ -755,8 +884,14 @@ async function startDaily(
         shuffledAnswers:
             [],
 
-        timer:
-            null
+        questionTimer:
+            null,
+
+        resultTimer:
+            null,
+
+        questionToken:
+            0
     };
 
     sessions.set(
@@ -856,10 +991,10 @@ async function handleAnswer(
         return;
     }
 
-    // The first accepted click locks the question.
+    // First accepted click wins.
     //
-    // This flag is changed BEFORE any await so a second
-    // click cannot change the player's answer.
+    // This changes BEFORE any await so rapid
+    // double-clicking cannot change the answer.
 
     if (
         session.answered
@@ -899,6 +1034,9 @@ async function handleAnswer(
         session
     );
 
+    const questionToken =
+        session.questionToken;
+
     const question =
         getCurrentQuestion(
             session
@@ -927,12 +1065,6 @@ async function handleAnswer(
             selectedAnswer
         );
 
-    lockedRows.push(
-        buildNextButton(
-            session
-        )
-    );
-
     let resultText;
 
     if (
@@ -945,7 +1077,8 @@ async function handleAnswer(
             `${question.question}\n\n` +
             `✅ **Correct!**\n\n` +
             `The answer is ` +
-            `**${question.correctAnswer}**.`;
+            `**${question.correctAnswer}**.\n\n` +
+            `Next question in 3 seconds...`;
     } else {
         resultText =
             `${questionHeading(
@@ -956,7 +1089,8 @@ async function handleAnswer(
             `You chose ` +
             `**${selectedAnswer}**.\n` +
             `The correct answer was ` +
-            `**${question.correctAnswer}**.`;
+            `**${question.correctAnswer}**.\n\n` +
+            `Next question in 3 seconds...`;
     }
 
     await interaction.editReply({
@@ -965,110 +1099,11 @@ async function handleAnswer(
         components:
             lockedRows
     });
-}
 
-// ─────────────────────────────────────────────
-// HANDLE NEXT QUESTION
-// ─────────────────────────────────────────────
-
-async function handleNext(
-    interaction
-) {
-    const sessionId =
-        interaction.customId.replace(
-            'quiz_next_',
-            ''
-        );
-
-    const session =
-        sessions.get(
-            sessionId
-        );
-
-    if (
-        !session
-    ) {
-        await interaction.reply({
-            content:
-                '⚠️ This Daily Quiz is no longer active.',
-            ephemeral:
-                true
-        });
-
-        return;
-    }
-
-    if (
-        session.userId !==
-        interaction.user.id
-    ) {
-        await interaction.reply({
-            content:
-                '⚠️ This Daily Quiz belongs to another player.',
-            ephemeral:
-                true
-        });
-
-        return;
-    }
-
-    if (
-        !session.answered
-    ) {
-        await interaction.reply({
-            content:
-                '⚠️ Answer the question first.',
-            ephemeral:
-                true
-        });
-
-        return;
-    }
-
-    await interaction.deferUpdate();
-
-    // ─────────────────────────────────────────
-    // FINISHED ALL 10
-    // ─────────────────────────────────────────
-
-    if (
-        session.questionIndex >=
-        session.questions.length - 1
-    ) {
-        clearQuestionTimer(
-            session
-        );
-
-        dailyCompletions.set(
-            session.userId,
-            session.dateKey
-        );
-
-        sessions.delete(
-            session.id
-        );
-
-        await interaction.editReply({
-            content:
-                finalScoreText(
-                    session
-                ),
-            components:
-                []
-        });
-
-        return;
-    }
-
-    // ─────────────────────────────────────────
-    // NEXT QUESTION
-    // ─────────────────────────────────────────
-
-    session.questionIndex++;
-
-    await showQuestion(
+    scheduleNextQuestion(
         interaction,
-        session
+        session,
+        questionToken
     );
 }
 
@@ -1086,19 +1121,6 @@ async function handleInteraction(
         )
     ) {
         await handleAnswer(
-            interaction
-        );
-
-        return;
-    }
-
-    if (
-        interaction.isButton() &&
-        interaction.customId.startsWith(
-            'quiz_next_'
-        )
-    ) {
-        await handleNext(
             interaction
         );
 
