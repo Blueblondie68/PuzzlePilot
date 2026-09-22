@@ -37,9 +37,24 @@ const quizPack1 =
 
 const quizPack2 =
     require('./quiz_pack2.js');
-
 const quizPack3 =
     require('./quiz_pack3.js');
+
+const quizPack4 =
+    require('./quiz_pack4.js');
+
+const quizPack5 =
+    require('./quiz_pack5.js');
+
+const quizPack6 =
+    require('./quiz_pack6.js');
+
+const quizPack7 =
+    require('./quiz_pack7.js');
+
+const quizPack8 =
+    require('./quiz_pack8.js');
+
 
 // ─────────────────────────────────────────────
 // SETTINGS
@@ -59,9 +74,13 @@ const RESULT_DISPLAY_TIME =
 const questionBank = [
     ...quizPack1,
     ...quizPack2,
-    ...quizPack3
+    ...quizPack3,
+    ...quizPack4,
+    ...quizPack5,
+    ...quizPack6,
+    ...quizPack7,
+    ...quizPack8
 ];
-
 console.log(
     `Quiz question bank loaded: ` +
     `${questionBank.length} questions`
