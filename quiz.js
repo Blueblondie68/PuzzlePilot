@@ -35,6 +35,12 @@ const { Pool } = require('pg');
 const quizPack1 =
     require('./quiz_pack1.js');
 
+const quizPack2 =
+    require('./quiz_pack2.js');
+
+const quizPack3 =
+    require('./quiz_pack3.js');
+
 // ─────────────────────────────────────────────
 // SETTINGS
 // ─────────────────────────────────────────────
@@ -50,9 +56,10 @@ const RESULT_DISPLAY_TIME =
 // ─────────────────────────────────────────────
 // QUESTION BANK
 // ─────────────────────────────────────────────
-
 const questionBank = [
-    ...quizPack1
+    ...quizPack1,
+    ...quizPack2,
+    ...quizPack3
 ];
 
 console.log(
