@@ -12,21 +12,21 @@ const questions = [
         id: 'music_0093',
         category: 'Music',
         question:
-            'Which band released the 1977 album "Rumours"?',
+            'Which band released the 1985 hit "Don\'t You (Forget About Me)"?',
         answers: [
-            'Fleetwood Mac',
-            'Eagles',
-            'Supertramp',
-            'Bee Gees'
+            'Simple Minds',
+            'INXS',
+            'U2',
+            'The Cure'
         ],
         correctAnswer:
-            'Fleetwood Mac',
+            'Simple Minds',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1970s',
-            'albums',
-            'bands'
+            '1980s',
+            'bands',
+            'songs'
         ],
         dailyEligible:
             true
@@ -36,21 +36,21 @@ const questions = [
         id: 'music_0094',
         category: 'Music',
         question:
-            'Which singer had a 1987 hit with "Never Gonna Give You Up"?',
+            'Which singer released the 1988 hit "Orinoco Flow"?',
         answers: [
-            'Rick Astley',
-            'Jason Donovan',
-            'Nik Kershaw',
-            'Paul Young'
+            'Enya',
+            'Sinéad O\'Connor',
+            'Kate Bush',
+            'Clannad'
         ],
         correctAnswer:
-            'Rick Astley',
+            'Enya',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1980s',
-            'british',
-            'singers'
+            'singers',
+            'songs'
         ],
         dailyEligible:
             true
@@ -304,17 +304,17 @@ const questions = [
         id: 'tv_0097',
         category: 'Television',
         question:
-            'Which actor played Sherlock Holmes in the BBC series "Sherlock"?',
+            'Which actor played Edmund Reid in the television drama "Ripper Street"?',
         answers: [
-            'Benedict Cumberbatch',
-            'Martin Freeman',
-            'Andrew Scott',
-            'Tom Hiddleston'
+            'Matthew Macfadyen',
+            'Jerome Flynn',
+            'Rupert Penry-Jones',
+            'Douglas Henshall'
         ],
         correctAnswer:
-            'Benedict Cumberbatch',
+            'Matthew Macfadyen',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
             'drama',
@@ -352,21 +352,21 @@ const questions = [
         id: 'tv_0099',
         category: 'Television',
         question:
-            'Which actress played Ruth Jones\'s character Nessa\'s best friend Stacey in "Gavin & Stacey"?',
+            'Which actor played George Dent in the sitcom "Drop the Dead Donkey"?',
         answers: [
-            'Joanna Page',
-            'Sheridan Smith',
-            'Sally Lindsay',
-            'Katherine Parkinson'
+            'Jeff Rawle',
+            'Neil Pearson',
+            'Stephen Tompkinson',
+            'David Swift'
         ],
         correctAnswer:
-            'Joanna Page',
+            'Jeff Rawle',
         difficulty:
-            'Medium',
+            'Hard',
         tags: [
             'british',
-            'gavin and stacey',
-            'actors'
+            'sitcoms',
+            '1990s'
         ],
         dailyEligible:
             true
@@ -428,21 +428,21 @@ const questions = [
         id: 'film_0074',
         category: 'Film',
         question:
-            'Which film features the characters Danny Zuko and Sandy Olsson?',
+            'Which actor played the title character in the 1990 film "Edward Scissorhands"?',
         answers: [
-            'Grease',
-            'Footloose',
-            'Saturday Night Fever',
-            'Fame'
+            'Johnny Depp',
+            'Winona Ryder',
+            'Anthony Michael Hall',
+            'Dianne Wiest'
         ],
         correctAnswer:
-            'Grease',
+            'Johnny Depp',
         difficulty:
             'Easy',
         tags: [
-            '1970s',
-            'musicals',
-            'characters'
+            '1990s',
+            'actors',
+            'fantasy'
         ],
         dailyEligible:
             true
@@ -476,21 +476,21 @@ const questions = [
         id: 'film_0076',
         category: 'Film',
         question:
-            'Which 1999 film stars Bruce Willis as child psychologist Malcolm Crowe?',
+            'Which actress played Sarah Connor in the original 1984 film "The Terminator"?',
         answers: [
-            'The Sixth Sense',
-            'Unbreakable',
-            'Armageddon',
-            'The Jackal'
+            'Linda Hamilton',
+            'Sigourney Weaver',
+            'Jamie Lee Curtis',
+            'Geena Davis'
         ],
         correctAnswer:
-            'The Sixth Sense',
+            'Linda Hamilton',
         difficulty:
             'Medium',
         tags: [
-            '1990s',
-            'thriller',
-            'films'
+            '1980s',
+            'actors',
+            'science fiction'
         ],
         dailyEligible:
             true
@@ -500,21 +500,21 @@ const questions = [
         id: 'film_0077',
         category: 'Film',
         question:
-            'Which actress played the title character in the 2001 film "Amélie"?',
+            'Which actor played Lester Burnham in the 1999 film "American Beauty"?',
         answers: [
-            'Audrey Tautou',
-            'Juliette Binoche',
-            'Marion Cotillard',
-            'Sophie Marceau'
+            'Kevin Spacey',
+            'Tom Hanks',
+            'Kevin Costner',
+            'Michael Douglas'
         ],
         correctAnswer:
-            'Audrey Tautou',
+            'Kevin Spacey',
         difficulty:
             'Medium',
         tags: [
-            '2000s',
-            'french',
-            'actors'
+            '1990s',
+            'actors',
+            'drama'
         ],
         dailyEligible:
             true
@@ -576,20 +576,20 @@ const questions = [
         id: 'general_0038',
         category: 'General Knowledge',
         question:
-            'What is the name of the imaginary line that divides Earth into the Northern and Southern Hemispheres?',
+            'How many sides does a nonagon have?',
         answers: [
-            'Equator',
-            'Prime Meridian',
-            'Tropic of Cancer',
-            'International Date Line'
+            '9',
+            '8',
+            '10',
+            '11'
         ],
         correctAnswer:
-            'Equator',
+            '9',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'world',
-            'geography',
+            'shapes',
+            'numbers',
             'general knowledge'
         ],
         dailyEligible:
@@ -780,20 +780,20 @@ const questions = [
         id: 'science_0035',
         category: 'Science',
         question:
-            'Which gas makes up the largest proportion of Earth\'s atmosphere?',
+            'Which organ in the human body produces insulin?',
         answers: [
-            'Nitrogen',
-            'Oxygen',
-            'Carbon dioxide',
-            'Hydrogen'
+            'Pancreas',
+            'Liver',
+            'Kidney',
+            'Spleen'
         ],
         correctAnswer:
-            'Nitrogen',
+            'Pancreas',
         difficulty:
             'Medium',
         tags: [
-            'chemistry',
-            'atmosphere',
+            'biology',
+            'human body',
             'science'
         ],
         dailyEligible:
@@ -856,19 +856,19 @@ const questions = [
         id: 'food_0024',
         category: 'Food and Drink',
         question:
-            'Which nut is traditionally used to make marzipan?',
+            'Which type of pastry is traditionally used to make a Bakewell tart?',
         answers: [
-            'Almond',
-            'Hazelnut',
-            'Walnut',
-            'Cashew'
+            'Shortcrust pastry',
+            'Puff pastry',
+            'Choux pastry',
+            'Filo pastry'
         ],
         correctAnswer:
-            'Almond',
+            'Shortcrust pastry',
         difficulty:
             'Medium',
         tags: [
-            'ingredients',
+            'british',
             'baking',
             'food'
         ],
