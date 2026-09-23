@@ -12,21 +12,21 @@ const questions = [
         id: 'music_0085',
         category: 'Music',
         question:
-            'Which band released the 1986 hit "The Final Countdown"?',
+            'Which singer had a 1985 hit with "Running Up That Hill"?',
         answers: [
-            'Europe',
-            'Bon Jovi',
-            'Foreigner',
-            'Journey'
+            'Kate Bush',
+            'Alison Moyet',
+            'Annie Lennox',
+            'Kim Wilde'
         ],
         correctAnswer:
-            'Europe',
+            'Kate Bush',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1980s',
-            'bands',
-            'songs'
+            'british',
+            'singers'
         ],
         dailyEligible:
             true
@@ -84,21 +84,21 @@ const questions = [
         id: 'music_0088',
         category: 'Music',
         question:
-            'Which singer released the album "Jagged Little Pill" in 1995?',
+            'Which singer released the 1994 hit "Stay (I Missed You)"?',
         answers: [
-            'Alanis Morissette',
+            'Lisa Loeb',
             'Sheryl Crow',
-            'Natalie Imbruglia',
-            'Tori Amos'
+            'Alanis Morissette',
+            'Suzanne Vega'
         ],
         correctAnswer:
-            'Alanis Morissette',
+            'Lisa Loeb',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1990s',
-            'albums',
-            'singers'
+            'singers',
+            'songs'
         ],
         dailyEligible:
             true
@@ -132,21 +132,21 @@ const questions = [
         id: 'music_0090',
         category: 'Music',
         question:
-            'Which singer had a 1969 hit with "Son of a Preacher Man"?',
+            'Which singer had a 1964 hit with "My Boy Lollipop"?',
         answers: [
-            'Dusty Springfield',
+            'Millie Small',
+            'Sandie Shaw',
             'Cilla Black',
-            'Petula Clark',
-            'Sandie Shaw'
+            'Lulu'
         ],
         correctAnswer:
-            'Dusty Springfield',
+            'Millie Small',
         difficulty:
             'Medium',
         tags: [
             '1960s',
-            'british',
-            'singers'
+            'singers',
+            'songs'
         ],
         dailyEligible:
             true
@@ -256,17 +256,17 @@ const questions = [
         id: 'tv_0087',
         category: 'Television',
         question:
-            'Which actress played Patsy Stone in "Absolutely Fabulous"?',
+            'Which actress played Sybil Fawlty in "Fawlty Towers"?',
         answers: [
-            'Joanna Lumley',
-            'Jennifer Saunders',
-            'Julia Sawalha',
-            'Jane Horrocks'
+            'Prunella Scales',
+            'Penelope Keith',
+            'Wendy Craig',
+            'Felicity Kendal'
         ],
         correctAnswer:
-            'Joanna Lumley',
+            'Prunella Scales',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
             'sitcoms',
@@ -328,15 +328,15 @@ const questions = [
         id: 'tv_0090',
         category: 'Television',
         question:
-            'Which actor played Detective Inspector Jack Frost in "A Touch of Frost"?',
+            'Which actor played Detective Chief Inspector Tom Barnaby in "Midsomer Murders"?',
         answers: [
+            'John Nettles',
             'David Jason',
             'John Thaw',
-            'David Suchet',
             'Kevin Whately'
         ],
         correctAnswer:
-            'David Jason',
+            'John Nettles',
         difficulty:
             'Medium',
         tags: [
@@ -376,20 +376,20 @@ const questions = [
         id: 'tv_0092',
         category: 'Television',
         question:
-            'Which actress played Fleabag in the television series of the same name?',
+            'Which actress played Ruth Jones\'s character Nessa\'s best friend Stacey in "Gavin & Stacey"?',
         answers: [
-            'Phoebe Waller-Bridge',
-            'Olivia Colman',
-            'Jodie Comer',
-            'Sharon Horgan'
+            'Joanna Page',
+            'Sheridan Smith',
+            'Sally Lindsay',
+            'Katherine Parkinson'
         ],
         correctAnswer:
-            'Phoebe Waller-Bridge',
+            'Joanna Page',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'comedy',
+            'sitcoms',
             'actors'
         ],
         dailyEligible:
@@ -404,21 +404,21 @@ const questions = [
         id: 'film_0067',
         category: 'Film',
         question:
-            'Which actor played Indiana Jones in "Raiders of the Lost Ark"?',
+            'Which actor played the title character in the 1990 film "Cyrano de Bergerac"?',
         answers: [
-            'Harrison Ford',
-            'Michael Douglas',
-            'Kurt Russell',
-            'Tom Selleck'
+            'Gérard Depardieu',
+            'Jean Reno',
+            'Daniel Auteuil',
+            'Vincent Cassel'
         ],
         correctAnswer:
-            'Harrison Ford',
+            'Gérard Depardieu',
         difficulty:
-            'Easy',
+            'Hard',
         tags: [
-            '1980s',
+            '1990s',
             'actors',
-            'adventure'
+            'international film'
         ],
         dailyEligible:
             true
@@ -524,21 +524,21 @@ const questions = [
         id: 'film_0072',
         category: 'Film',
         question:
-            'Which film features the quote "Nobody puts Baby in a corner"?',
+            'Which actor played Ferris Bueller in the 1986 film "Ferris Bueller\'s Day Off"?',
         answers: [
-            'Dirty Dancing',
-            'Footloose',
-            'Flashdance',
-            'Fame'
+            'Matthew Broderick',
+            'Michael J. Fox',
+            'John Cusack',
+            'Emilio Estevez'
         ],
         correctAnswer:
-            'Dirty Dancing',
+            'Matthew Broderick',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1980s',
-            'romance',
-            'films'
+            'comedy',
+            'actors'
         ],
         dailyEligible:
             true
@@ -552,20 +552,20 @@ const questions = [
         id: 'general_0034',
         category: 'General Knowledge',
         question:
-            'How many colours are traditionally named in a rainbow?',
+            'How many faces does a standard tetrahedron have?',
         answers: [
-            '7',
+            '4',
             '6',
             '8',
-            '9'
+            '12'
         ],
         correctAnswer:
-            '7',
+            '4',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'numbers',
-            'nature',
+            'shapes',
             'general knowledge'
         ],
         dailyEligible:
@@ -576,17 +576,17 @@ const questions = [
         id: 'general_0035',
         category: 'General Knowledge',
         question:
-            'What is the name for a group of lions?',
+            'What is the collective name for a group of crows?',
         answers: [
+            'Murder',
             'Pride',
-            'Pack',
-            'Herd',
-            'Flock'
+            'Parliament',
+            'Pack'
         ],
         correctAnswer:
-            'Pride',
+            'Murder',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'animals',
             'words',
@@ -676,21 +676,21 @@ const questions = [
         id: 'history_0035',
         category: 'History',
         question:
-            'In which year did the Battle of Hastings take place?',
+            'Which English king signed the death warrant of Mary, Queen of Scots?',
         answers: [
-            '1066',
-            '1215',
-            '1415',
-            '1485'
+            'Elizabeth I',
+            'Henry VIII',
+            'James I',
+            'Edward VI'
         ],
         correctAnswer:
-            '1066',
+            'Elizabeth I',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'medieval',
-            'battles'
+            'tudors',
+            'monarchy'
         ],
         dailyEligible:
             true
@@ -780,15 +780,15 @@ const questions = [
         id: 'science_0032',
         category: 'Science',
         question:
-            'Which planet is closest to the Sun?',
+            'Which planet is known for the Great Red Spot?',
         answers: [
-            'Mercury',
-            'Venus',
-            'Earth',
-            'Mars'
+            'Jupiter',
+            'Saturn',
+            'Mars',
+            'Neptune'
         ],
         correctAnswer:
-            'Mercury',
+            'Jupiter',
         difficulty:
             'Easy',
         tags: [
@@ -804,15 +804,15 @@ const questions = [
         id: 'science_0033',
         category: 'Science',
         question:
-            'What is the name of the process by which a liquid changes into a gas?',
+            'What is the name of the process by which a gas changes into a liquid?',
         answers: [
-            'Evaporation',
             'Condensation',
-            'Freezing',
+            'Evaporation',
+            'Sublimation',
             'Melting'
         ],
         correctAnswer:
-            'Evaporation',
+            'Condensation',
         difficulty:
             'Easy',
         tags: [
@@ -856,21 +856,21 @@ const questions = [
         id: 'food_0022',
         category: 'Food and Drink',
         question:
-            'Which spirit is traditionally used as the base of a mojito?',
+            'Which spice is traditionally used to give paella much of its distinctive colour and flavour?',
         answers: [
-            'Rum',
-            'Gin',
-            'Vodka',
-            'Tequila'
+            'Saffron',
+            'Cinnamon',
+            'Nutmeg',
+            'Cloves'
         ],
         correctAnswer:
-            'Rum',
+            'Saffron',
         difficulty:
             'Medium',
         tags: [
-            'drinks',
-            'cocktails',
-            'ingredients'
+            'spanish',
+            'spices',
+            'food'
         ],
         dailyEligible:
             true
@@ -880,21 +880,21 @@ const questions = [
         id: 'food_0023',
         category: 'Food and Drink',
         question:
-            'What type of food is halloumi?',
+            'Which Italian cheese is traditionally used in a classic carbonara?',
         answers: [
-            'Cheese',
-            'Bread',
-            'Sausage',
-            'Pastry'
+            'Pecorino Romano',
+            'Gorgonzola',
+            'Mascarpone',
+            'Mozzarella'
         ],
         correctAnswer:
-            'Cheese',
+            'Pecorino Romano',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
+            'italian',
             'cheese',
-            'food',
-            'ingredients'
+            'food'
         ],
         dailyEligible:
             true
@@ -932,19 +932,19 @@ const questions = [
         id: 'sport_0023',
         category: 'Sport',
         question:
-            'How many points is the black ball worth in snooker?',
+            'How many players from one team are on court at a time in basketball?',
         answers: [
-            '7',
-            '6',
             '5',
+            '6',
+            '7',
             '8'
         ],
         correctAnswer:
-            '7',
+            '5',
         difficulty:
             'Easy',
         tags: [
-            'snooker',
+            'basketball',
             'rules',
             'sport'
         ],
@@ -984,21 +984,21 @@ const questions = [
         id: 'literature_0021',
         category: 'Literature',
         question:
-            'Which author created the detective Miss Marple?',
+            'Who wrote the novel "The Woman in White"?',
         answers: [
-            'Agatha Christie',
-            'Dorothy L. Sayers',
-            'P. D. James',
-            'Ruth Rendell'
+            'Wilkie Collins',
+            'Thomas Hardy',
+            'Charles Dickens',
+            'Anthony Trollope'
         ],
         correctAnswer:
-            'Agatha Christie',
+            'Wilkie Collins',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'crime',
-            'characters'
+            'authors',
+            'classics'
         ],
         dailyEligible:
             true
