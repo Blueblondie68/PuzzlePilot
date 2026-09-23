@@ -36,19 +36,19 @@ const questions = [
         id: 'music_0102',
         category: 'Music',
         question:
-            'Which singer released the 1998 hit "Torn"?',
+            'Which singer released the 1984 hit "What\'s Love Got to Do with It"?',
         answers: [
-            'Natalie Imbruglia',
-            'Sheryl Crow',
-            'Meredith Brooks',
-            'Paula Cole'
+            'Tina Turner',
+            'Cher',
+            'Diana Ross',
+            'Donna Summer'
         ],
         correctAnswer:
-            'Natalie Imbruglia',
+            'Tina Turner',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            '1990s',
+            '1980s',
             'singers',
             'songs'
         ],
@@ -132,21 +132,21 @@ const questions = [
         id: 'music_0106',
         category: 'Music',
         question:
-            'Which band released the 1981 hit "Tainted Love"?',
+            'Which singer released the 1986 hit "True Colors"?',
         answers: [
-            'Soft Cell',
-            'Human League',
-            'Depeche Mode',
-            'Ultravox'
+            'Cyndi Lauper',
+            'Belinda Carlisle',
+            'Kim Wilde',
+            'Pat Benatar'
         ],
         correctAnswer:
-            'Soft Cell',
+            'Cyndi Lauper',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1980s',
-            'british',
-            'bands'
+            'singers',
+            'songs'
         ],
         dailyEligible:
             true
@@ -256,15 +256,15 @@ const questions = [
         id: 'tv_0103',
         category: 'Television',
         question:
-            'Which actor played Basil Fawlty in "Fawlty Towers"?',
+            'Which actor played Victor Meldrew in "One Foot in the Grave"?',
         answers: [
-            'John Cleese',
-            'Ronnie Barker',
-            'Leonard Rossiter',
-            'Richard Briers'
+            'Richard Wilson',
+            'Richard Briers',
+            'David Jason',
+            'Ronnie Barker'
         ],
         correctAnswer:
-            'John Cleese',
+            'Richard Wilson',
         difficulty:
             'Easy',
         tags: [
@@ -304,15 +304,15 @@ const questions = [
         id: 'tv_0105',
         category: 'Television',
         question:
-            'Which actress played Catherine Cawood in "Happy Valley"?',
+            'Which actress played Anne Lister in the television drama "Gentleman Jack"?',
         answers: [
-            'Sarah Lancashire',
             'Suranne Jones',
+            'Sarah Lancashire',
             'Nicola Walker',
             'Maxine Peake'
         ],
         correctAnswer:
-            'Sarah Lancashire',
+            'Suranne Jones',
         difficulty:
             'Medium',
         tags: [
@@ -352,15 +352,15 @@ const questions = [
         id: 'tv_0107',
         category: 'Television',
         question:
-            'Which actress played DCI Jane Tennison in "Prime Suspect"?',
+            'Which actress played Detective Sergeant Ellie Miller in "Broadchurch"?',
         answers: [
-            'Helen Mirren',
-            'Julie Walters',
-            'Judi Dench',
-            'Brenda Blethyn'
+            'Olivia Colman',
+            'Jodie Whittaker',
+            'Sarah Parish',
+            'Julie Hesmondhalgh'
         ],
         correctAnswer:
-            'Helen Mirren',
+            'Olivia Colman',
         difficulty:
             'Medium',
         tags: [
@@ -404,21 +404,21 @@ const questions = [
         id: 'film_0079',
         category: 'Film',
         question:
-            'Which actress played Thelma Dickinson in "Thelma & Louise"?',
+            'Which actress played Clarice Starling in "The Silence of the Lambs"?',
         answers: [
-            'Geena Davis',
+            'Jodie Foster',
+            'Sigourney Weaver',
             'Susan Sarandon',
-            'Michelle Pfeiffer',
-            'Holly Hunter'
+            'Geena Davis'
         ],
         correctAnswer:
-            'Geena Davis',
+            'Jodie Foster',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             '1990s',
             'actors',
-            'drama'
+            'thriller'
         ],
         dailyEligible:
             true
@@ -452,21 +452,21 @@ const questions = [
         id: 'film_0081',
         category: 'Film',
         question:
-            'Which actor played Hans Gruber in "Die Hard"?',
+            'Which actor played the title role in the 1982 film "Gandhi"?',
         answers: [
-            'Alan Rickman',
-            'Jeremy Irons',
-            'Gary Oldman',
-            'Timothy Dalton'
+            'Ben Kingsley',
+            'Alec Guinness',
+            'Richard Attenborough',
+            'John Hurt'
         ],
         correctAnswer:
-            'Alan Rickman',
+            'Ben Kingsley',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1980s',
             'actors',
-            'action'
+            'biographical films'
         ],
         dailyEligible:
             true
@@ -804,15 +804,15 @@ const questions = [
         id: 'science_0039',
         category: 'Science',
         question:
-            'What is the chemical symbol for iron?',
+            'What is the chemical symbol for silver?',
         answers: [
-            'Fe',
-            'Ir',
-            'In',
-            'I'
+            'Ag',
+            'Si',
+            'Sv',
+            'Sr'
         ],
         correctAnswer:
-            'Fe',
+            'Ag',
         difficulty:
             'Medium',
         tags: [
@@ -856,21 +856,21 @@ const questions = [
         id: 'food_0026',
         category: 'Food and Drink',
         question:
-            'Which pulse is the main ingredient in traditional hummus?',
+            'Which cheese is traditionally used in a classic Caesar salad?',
         answers: [
-            'Chickpea',
-            'Lentil',
-            'Kidney bean',
-            'Butter bean'
+            'Parmesan',
+            'Feta',
+            'Cheddar',
+            'Brie'
         ],
         correctAnswer:
-            'Chickpea',
+            'Parmesan',
         difficulty:
             'Easy',
         tags: [
-            'ingredients',
-            'food',
-            'middle eastern'
+            'cheese',
+            'salads',
+            'food'
         ],
         dailyEligible:
             true
