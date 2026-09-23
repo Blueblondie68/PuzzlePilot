@@ -60,21 +60,21 @@ const questions = [
         id: 'music_0047',
         category: 'Music',
         question:
-            'Which singer had a 1978 hit with "Wuthering Heights"?',
+            'Which band released the 1985 hit "Take On Me"?',
         answers: [
-            'Kate Bush',
-            'Suzi Quatro',
-            'Elkie Brooks',
-            'Joan Armatrading'
+            'A-ha',
+            'Simple Minds',
+            'Ultravox',
+            'Talk Talk'
         ],
         correctAnswer:
-            'Kate Bush',
+            'A-ha',
         difficulty:
             'Easy',
         tags: [
-            '1970s',
-            'british',
-            'singers'
+            '1980s',
+            'bands',
+            'songs'
         ],
         dailyEligible:
             true
@@ -206,7 +206,7 @@ const questions = [
 
     {
         id: 'tv_0045',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actor played Victor Meldrew in "One Foot in the Grave"?',
         answers: [
@@ -230,7 +230,7 @@ const questions = [
 
     {
         id: 'tv_0046',
-        category: 'Television',
+        category: 'TV',
         question:
             'In "The Simpsons", what is the name of Homer Simpson\'s next-door neighbour?',
         answers: [
@@ -254,7 +254,7 @@ const questions = [
 
     {
         id: 'tv_0047',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actress played Sybil Fawlty in "Fawlty Towers"?',
         answers: [
@@ -278,7 +278,7 @@ const questions = [
 
     {
         id: 'tv_0048',
-        category: 'Television',
+        category: 'TV',
         question:
             'What is the surname of the family at the centre of "The Royle Family"?',
         answers: [
@@ -302,7 +302,7 @@ const questions = [
 
     {
         id: 'tv_0049',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actor played Sherlock Holmes in the BBC series "Sherlock"?',
         answers: [
@@ -326,7 +326,7 @@ const questions = [
 
     {
         id: 'tv_0050',
-        category: 'Television',
+        category: 'TV',
         question:
             'In "Dad\'s Army", what is Captain Mainwaring\'s civilian job?',
         answers: [
@@ -350,23 +350,24 @@ const questions = [
 
     {
         id: 'tv_0051',
-        category: 'Television',
+        category: 'TV',
         question:
-            'Which US television drama follows chemistry teacher Walter White after he begins making methamphetamine?',
+            'Which actor played Tony Soprano in "The Sopranos"?',
         answers: [
-            'Breaking Bad',
-            'The Wire',
-            'Ozark',
-            'Better Call Saul'
+            'James Gandolfini',
+            'Steve Buscemi',
+            'Michael Imperioli',
+            'Joe Pantoliano'
         ],
         correctAnswer:
-            'Breaking Bad',
+            'James Gandolfini',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'american',
             'drama',
-            '2000s'
+            '1990s',
+            'actors'
         ],
         dailyEligible:
             true
@@ -374,7 +375,7 @@ const questions = [
 
     {
         id: 'tv_0052',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which British comedy series featured the characters Tim, Dawn, Gareth and David Brent?',
         answers: [
@@ -500,19 +501,19 @@ const questions = [
         id: 'film_0041',
         category: 'Film',
         question:
-            'Which actor played the title role in the 1990 film "Edward Scissorhands"?',
+            'Which actor played the eccentric inventor Willy Wonka in the 1971 film "Willy Wonka & the Chocolate Factory"?',
         answers: [
-            'Johnny Depp',
-            'Tom Cruise',
-            'Keanu Reeves',
-            'Christian Slater'
+            'Gene Wilder',
+            'Peter Sellers',
+            'Dudley Moore',
+            'Richard Pryor'
         ],
         correctAnswer:
-            'Johnny Depp',
+            'Gene Wilder',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1990s',
+            '1970s',
             'actors',
             'films'
         ],
@@ -524,21 +525,21 @@ const questions = [
         id: 'film_0042',
         category: 'Film',
         question:
-            'Which 1985 film features the characters Marty McFly and Doc Brown?',
+            'Which actress played the title character in the 2001 film "Amélie"?',
         answers: [
-            'Back to the Future',
-            'The Goonies',
-            'Weird Science',
-            'Cocoon'
+            'Audrey Tautou',
+            'Juliette Binoche',
+            'Marion Cotillard',
+            'Sophie Marceau'
         ],
         correctAnswer:
-            'Back to the Future',
+            'Audrey Tautou',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1980s',
-            'science fiction',
-            'films'
+            '2000s',
+            'actors',
+            'french film'
         ],
         dailyEligible:
             true
@@ -773,27 +774,27 @@ const questions = [
     },
 
     // =========================================================
-    // SCIENCE
+    // SCIENCE & NATURE
     // =========================================================
 
     {
         id: 'science_0017',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
-            'What is the largest organ of the human body?',
+            'Which gas makes up the largest proportion of Earth\'s atmosphere?',
         answers: [
-            'Skin',
-            'Liver',
-            'Lungs',
-            'Heart'
+            'Nitrogen',
+            'Oxygen',
+            'Carbon dioxide',
+            'Hydrogen'
         ],
         correctAnswer:
-            'Skin',
+            'Nitrogen',
         difficulty:
             'Easy',
         tags: [
-            'biology',
-            'human body',
+            'earth',
+            'atmosphere',
             'science'
         ],
         dailyEligible:
@@ -802,7 +803,7 @@ const questions = [
 
     {
         id: 'science_0018',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'What is the chemical symbol for iron?',
         answers: [
@@ -826,7 +827,7 @@ const questions = [
 
     {
         id: 'science_0019',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'Which planet is famous for its prominent ring system?',
         answers: [
@@ -849,12 +850,12 @@ const questions = [
     },
 
     // =========================================================
-    // FOOD AND DRINK
+    // FOOD & DRINK
     // =========================================================
 
     {
         id: 'food_0012',
-        category: 'Food and Drink',
+        category: 'Food & Drink',
         question:
             'Which fruit is the main ingredient in guacamole?',
         answers: [
@@ -878,7 +879,7 @@ const questions = [
 
     {
         id: 'food_0013',
-        category: 'Food and Drink',
+        category: 'Food & Drink',
         question:
             'What type of food is Arborio?',
         answers: [
@@ -932,19 +933,19 @@ const questions = [
         id: 'sport_0013',
         category: 'Sport',
         question:
-            'In tennis, what word is used for a score of zero?',
+            'In cricket, how many runs are scored when the batter hits the ball over the boundary without it bouncing?',
         answers: [
-            'Love',
-            'Nil',
-            'Blank',
-            'Duck'
+            '6',
+            '4',
+            '5',
+            '8'
         ],
         correctAnswer:
-            'Love',
+            '6',
         difficulty:
             'Easy',
         tags: [
-            'tennis',
+            'cricket',
             'scoring',
             'sport'
         ],
