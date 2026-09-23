@@ -1,0 +1,1009 @@
+// quiz_pack10.js
+// PuzzlePilot Quiz - Question Pack 10
+// 40 additional questions
+
+const questions = [
+
+    // =========================================================
+    // MUSIC
+    // =========================================================
+
+    {
+        id: 'music_0069',
+        category: 'Music',
+        question:
+            'Which singer released the 1987 album "Faith"?',
+        answers: [
+            'George Michael',
+            'Phil Collins',
+            'Rick Astley',
+            'Bryan Adams'
+        ],
+        correctAnswer:
+            'George Michael',
+        difficulty:
+            'Easy',
+        tags: [
+            '1980s',
+            'albums',
+            'british'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'music_0070',
+        category: 'Music',
+        question:
+            'Which band recorded the 1994 hit "Parklife"?',
+        answers: [
+            'Blur',
+            'Oasis',
+            'Pulp',
+            'Suede'
+        ],
+        correctAnswer:
+            'Blur',
+        difficulty:
+            'Easy',
+        tags: [
+            '1990s',
+            'britpop',
+            'bands'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'music_0071',
+        category: 'Music',
+        question:
+            'Which singer had a hit with "Walking on Broken Glass" in 1992?',
+        answers: [
+            'Annie Lennox',
+            'Alison Moyet',
+            'Kate Bush',
+            'Kim Wilde'
+        ],
+        correctAnswer:
+            'Annie Lennox',
+        difficulty:
+            'Medium',
+        tags: [
+            '1990s',
+            'singers',
+            'british'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'music_0072',
+        category: 'Music',
+        question:
+            'Which band released the 1983 single "Every Breath You Take"?',
+        answers: [
+            'The Police',
+            'U2',
+            'INXS',
+            'Simple Minds'
+        ],
+        correctAnswer:
+            'The Police',
+        difficulty:
+            'Easy',
+        tags: [
+            '1980s',
+            'bands',
+            'songs'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'music_0073',
+        category: 'Music',
+        question:
+            'Who was the lead singer of the band T. Rex?',
+        answers: [
+            'Marc Bolan',
+            'Bryan Ferry',
+            'David Essex',
+            'Steve Harley'
+        ],
+        correctAnswer:
+            'Marc Bolan',
+        difficulty:
+            'Medium',
+        tags: [
+            '1970s',
+            'british',
+            'bands'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'music_0074',
+        category: 'Music',
+        question:
+            'Which singer released the 2000 hit "Spinning Around"?',
+        answers: [
+            'Kylie Minogue',
+            'Sophie Ellis-Bextor',
+            'Natalie Imbruglia',
+            'Geri Halliwell'
+        ],
+        correctAnswer:
+            'Kylie Minogue',
+        difficulty:
+            'Easy',
+        tags: [
+            '2000s',
+            'pop',
+            'singers'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'music_0075',
+        category: 'Music',
+        question:
+            'Which band released the album "The Joshua Tree" in 1987?',
+        answers: [
+            'U2',
+            'R.E.M.',
+            'INXS',
+            'Simple Minds'
+        ],
+        correctAnswer:
+            'U2',
+        difficulty:
+            'Medium',
+        tags: [
+            '1980s',
+            'albums',
+            'bands'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'music_0076',
+        category: 'Music',
+        question:
+            'Which singer had a 1964 hit with "Downtown"?',
+        answers: [
+            'Petula Clark',
+            'Cilla Black',
+            'Dusty Springfield',
+            'Sandie Shaw'
+        ],
+        correctAnswer:
+            'Petula Clark',
+        difficulty:
+            'Medium',
+        tags: [
+            '1960s',
+            'british',
+            'singers'
+        ],
+        dailyEligible:
+            true
+    },
+
+    // =========================================================
+    // TELEVISION
+    // =========================================================
+
+    {
+        id: 'tv_0069',
+        category: 'Television',
+        question:
+            'Which actor played David Brent in "The Office"?',
+        answers: [
+            'Ricky Gervais',
+            'Martin Freeman',
+            'Mackenzie Crook',
+            'Stephen Merchant'
+        ],
+        correctAnswer:
+            'Ricky Gervais',
+        difficulty:
+            'Easy',
+        tags: [
+            'british',
+            'sitcoms',
+            'actors'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'tv_0070',
+        category: 'Television',
+        question:
+            'In "Friends", what is Chandler Bing\'s middle name?',
+        answers: [
+            'Muriel',
+            'Michael',
+            'Matthew',
+            'Maurice'
+        ],
+        correctAnswer:
+            'Muriel',
+        difficulty:
+            'Medium',
+        tags: [
+            'american',
+            'friends',
+            'characters'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'tv_0071',
+        category: 'Television',
+        question:
+            'Which actor played Inspector Morse in the original television series?',
+        answers: [
+            'John Thaw',
+            'Kevin Whately',
+            'David Suchet',
+            'George Cole'
+        ],
+        correctAnswer:
+            'John Thaw',
+        difficulty:
+            'Medium',
+        tags: [
+            'british',
+            'crime',
+            'actors'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'tv_0072',
+        category: 'Television',
+        question:
+            'Which comedy series featured the characters Richie and Eddie, played by Rik Mayall and Adrian Edmondson?',
+        answers: [
+            'Bottom',
+            'The Young Ones',
+            'Men Behaving Badly',
+            'Black Books'
+        ],
+        correctAnswer:
+            'Bottom',
+        difficulty:
+            'Medium',
+        tags: [
+            'british',
+            'sitcoms',
+            '1990s'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'tv_0073',
+        category: 'Television',
+        question:
+            'In "Breaking Bad", what subject does Walter White teach before becoming involved in the drug trade?',
+        answers: [
+            'Chemistry',
+            'Physics',
+            'Biology',
+            'Mathematics'
+        ],
+        correctAnswer:
+            'Chemistry',
+        difficulty:
+            'Easy',
+        tags: [
+            'american',
+            'drama',
+            'breaking bad'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'tv_0074',
+        category: 'Television',
+        question:
+            'Which actress played Hyacinth Bucket in "Keeping Up Appearances"?',
+        answers: [
+            'Patricia Routledge',
+            'Penelope Keith',
+            'Judi Dench',
+            'Prunella Scales'
+        ],
+        correctAnswer:
+            'Patricia Routledge',
+        difficulty:
+            'Easy',
+        tags: [
+            'british',
+            'sitcoms',
+            'actors'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'tv_0075',
+        category: 'Television',
+        question:
+            'Which television series is set largely in the fictional Yorkshire village of Aidensfield?',
+        answers: [
+            'Heartbeat',
+            'Emmerdale',
+            'Last of the Summer Wine',
+            'All Creatures Great and Small'
+        ],
+        correctAnswer:
+            'Heartbeat',
+        difficulty:
+            'Medium',
+        tags: [
+            'british',
+            'drama',
+            '1990s'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'tv_0076',
+        category: 'Television',
+        question:
+            'Which actor played Frasier Crane in "Frasier"?',
+        answers: [
+            'Kelsey Grammer',
+            'David Hyde Pierce',
+            'Ted Danson',
+            'John Lithgow'
+        ],
+        correctAnswer:
+            'Kelsey Grammer',
+        difficulty:
+            'Easy',
+        tags: [
+            'american',
+            'sitcoms',
+            'actors'
+        ],
+        dailyEligible:
+            true
+    },
+
+    // =========================================================
+    // FILM
+    // =========================================================
+
+    {
+        id: 'film_0055',
+        category: 'Film',
+        question:
+            'Which actor played Maximus in the 2000 film "Gladiator"?',
+        answers: [
+            'Russell Crowe',
+            'Mel Gibson',
+            'Hugh Jackman',
+            'Gerard Butler'
+        ],
+        correctAnswer:
+            'Russell Crowe',
+        difficulty:
+            'Easy',
+        tags: [
+            '2000s',
+            'actors',
+            'films'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'film_0056',
+        category: 'Film',
+        question:
+            'Which actress played the title role in the 2001 film "Lara Croft: Tomb Raider"?',
+        answers: [
+            'Angelina Jolie',
+            'Charlize Theron',
+            'Milla Jovovich',
+            'Jennifer Garner'
+        ],
+        correctAnswer:
+            'Angelina Jolie',
+        difficulty:
+            'Easy',
+        tags: [
+            '2000s',
+            'actors',
+            'action'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'film_0057',
+        category: 'Film',
+        question:
+            'Which 1993 film centres on a theme park populated by cloned dinosaurs?',
+        answers: [
+            'Jurassic Park',
+            'Congo',
+            'Twister',
+            'Deep Impact'
+        ],
+        correctAnswer:
+            'Jurassic Park',
+        difficulty:
+            'Easy',
+        tags: [
+            '1990s',
+            'science fiction',
+            'films'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'film_0058',
+        category: 'Film',
+        question:
+            'Who played the male lead, Charles, in "Four Weddings and a Funeral"?',
+        answers: [
+            'Hugh Grant',
+            'Colin Firth',
+            'Alan Rickman',
+            'Rupert Everett'
+        ],
+        correctAnswer:
+            'Hugh Grant',
+        difficulty:
+            'Easy',
+        tags: [
+            '1990s',
+            'british',
+            'actors'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'film_0059',
+        category: 'Film',
+        question:
+            'In "The Wizard of Oz", what colour are Dorothy\'s famous slippers?',
+        answers: [
+            'Ruby red',
+            'Emerald green',
+            'Silver',
+            'Golden'
+        ],
+        correctAnswer:
+            'Ruby red',
+        difficulty:
+            'Easy',
+        tags: [
+            'classic film',
+            'characters',
+            'fantasy'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'film_0060',
+        category: 'Film',
+        question:
+            'Which actor played Hannibal Lecter in "The Silence of the Lambs"?',
+        answers: [
+            'Anthony Hopkins',
+            'Jack Nicholson',
+            'Jeremy Irons',
+            'Gary Oldman'
+        ],
+        correctAnswer:
+            'Anthony Hopkins',
+        difficulty:
+            'Medium',
+        tags: [
+            '1990s',
+            'actors',
+            'thriller'
+        ],
+        dailyEligible:
+            true
+    },
+
+    // =========================================================
+    // GENERAL KNOWLEDGE
+    // =========================================================
+
+    {
+        id: 'general_0028',
+        category: 'General Knowledge',
+        question:
+            'How many letters are there in the English alphabet?',
+        answers: [
+            '26',
+            '24',
+            '25',
+            '28'
+        ],
+        correctAnswer:
+            '26',
+        difficulty:
+            'Easy',
+        tags: [
+            'language',
+            'numbers',
+            'general knowledge'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'general_0029',
+        category: 'General Knowledge',
+        question:
+            'Which number is represented by the Roman numeral L?',
+        answers: [
+            '50',
+            '100',
+            '10',
+            '500'
+        ],
+        correctAnswer:
+            '50',
+        difficulty:
+            'Medium',
+        tags: [
+            'numbers',
+            'roman numerals',
+            'general knowledge'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'general_0030',
+        category: 'General Knowledge',
+        question:
+            'How many suits are there in a standard pack of playing cards?',
+        answers: [
+            '4',
+            '3',
+            '5',
+            '6'
+        ],
+        correctAnswer:
+            '4',
+        difficulty:
+            'Easy',
+        tags: [
+            'cards',
+            'games',
+            'general knowledge'
+        ],
+        dailyEligible:
+            true
+    },
+
+    // =========================================================
+    // HISTORY
+    // =========================================================
+
+    {
+        id: 'history_0027',
+        category: 'History',
+        question:
+            'Which queen ruled England at the time of the Spanish Armada in 1588?',
+        answers: [
+            'Elizabeth I',
+            'Mary I',
+            'Victoria',
+            'Anne'
+        ],
+        correctAnswer:
+            'Elizabeth I',
+        difficulty:
+            'Medium',
+        tags: [
+            'british',
+            'monarchy',
+            'tudors'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'history_0028',
+        category: 'History',
+        question:
+            'The Great Fire of London took place in which year?',
+        answers: [
+            '1666',
+            '1655',
+            '1677',
+            '1688'
+        ],
+        correctAnswer:
+            '1666',
+        difficulty:
+            'Easy',
+        tags: [
+            'british',
+            'london',
+            '17th century'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'history_0029',
+        category: 'History',
+        question:
+            'Which ancient civilisation built Machu Picchu?',
+        answers: [
+            'Inca',
+            'Maya',
+            'Aztec',
+            'Roman'
+        ],
+        correctAnswer:
+            'Inca',
+        difficulty:
+            'Medium',
+        tags: [
+            'ancient history',
+            'south america',
+            'civilisations'
+        ],
+        dailyEligible:
+            true
+    },
+
+    // =========================================================
+    // GEOGRAPHY
+    // =========================================================
+
+    {
+        id: 'geography_0027',
+        category: 'Geography',
+        question:
+            'What is the capital city of Canada?',
+        answers: [
+            'Ottawa',
+            'Toronto',
+            'Vancouver',
+            'Montreal'
+        ],
+        correctAnswer:
+            'Ottawa',
+        difficulty:
+            'Easy',
+        tags: [
+            'canada',
+            'capitals',
+            'north america'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'geography_0028',
+        category: 'Geography',
+        question:
+            'Which is the largest ocean on Earth?',
+        answers: [
+            'Pacific Ocean',
+            'Atlantic Ocean',
+            'Indian Ocean',
+            'Arctic Ocean'
+        ],
+        correctAnswer:
+            'Pacific Ocean',
+        difficulty:
+            'Easy',
+        tags: [
+            'oceans',
+            'world',
+            'geography'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'geography_0029',
+        category: 'Geography',
+        question:
+            'Which European city is divided by the River Danube into the historic areas of Buda and Pest?',
+        answers: [
+            'Budapest',
+            'Vienna',
+            'Prague',
+            'Bratislava'
+        ],
+        correctAnswer:
+            'Budapest',
+        difficulty:
+            'Medium',
+        tags: [
+            'europe',
+            'cities',
+            'rivers'
+        ],
+        dailyEligible:
+            true
+    },
+
+    // =========================================================
+    // SCIENCE
+    // =========================================================
+
+    {
+        id: 'science_0026',
+        category: 'Science',
+        question:
+            'Which gas do plants absorb from the atmosphere during photosynthesis?',
+        answers: [
+            'Carbon dioxide',
+            'Oxygen',
+            'Nitrogen',
+            'Hydrogen'
+        ],
+        correctAnswer:
+            'Carbon dioxide',
+        difficulty:
+            'Easy',
+        tags: [
+            'biology',
+            'plants',
+            'science'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'science_0027',
+        category: 'Science',
+        question:
+            'How many bones are normally found in the adult human body?',
+        answers: [
+            '206',
+            '196',
+            '216',
+            '226'
+        ],
+        correctAnswer:
+            '206',
+        difficulty:
+            'Medium',
+        tags: [
+            'biology',
+            'human body',
+            'science'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'science_0028',
+        category: 'Science',
+        question:
+            'What is the centre of an atom called?',
+        answers: [
+            'Nucleus',
+            'Electron',
+            'Proton',
+            'Orbit'
+        ],
+        correctAnswer:
+            'Nucleus',
+        difficulty:
+            'Easy',
+        tags: [
+            'physics',
+            'atoms',
+            'science'
+        ],
+        dailyEligible:
+            true
+    },
+
+    // =========================================================
+    // FOOD AND DRINK
+    // =========================================================
+
+    {
+        id: 'food_0018',
+        category: 'Food and Drink',
+        question:
+            'What is the main ingredient in traditional hummus?',
+        answers: [
+            'Chickpeas',
+            'Lentils',
+            'Kidney beans',
+            'Potatoes'
+        ],
+        correctAnswer:
+            'Chickpeas',
+        difficulty:
+            'Easy',
+        tags: [
+            'ingredients',
+            'food',
+            'international'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'food_0019',
+        category: 'Food and Drink',
+        question:
+            'Which herb is the main ingredient in traditional pesto Genovese?',
+        answers: [
+            'Basil',
+            'Parsley',
+            'Coriander',
+            'Mint'
+        ],
+        correctAnswer:
+            'Basil',
+        difficulty:
+            'Easy',
+        tags: [
+            'italian',
+            'ingredients',
+            'food'
+        ],
+        dailyEligible:
+            true
+    },
+
+    // =========================================================
+    // SPORT
+    // =========================================================
+
+    {
+        id: 'sport_0018',
+        category: 'Sport',
+        question:
+            'The Webb Ellis Cup is awarded in which sport?',
+        answers: [
+            'Rugby union',
+            'Cricket',
+            'Football',
+            'Rugby league'
+        ],
+        correctAnswer:
+            'Rugby union',
+        difficulty:
+            'Medium',
+        tags: [
+            'rugby',
+            'trophies',
+            'sport'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'sport_0019',
+        category: 'Sport',
+        question:
+            'How many points is a try worth in rugby union?',
+        answers: [
+            '5',
+            '3',
+            '6',
+            '7'
+        ],
+        correctAnswer:
+            '5',
+        difficulty:
+            'Easy',
+        tags: [
+            'rugby',
+            'rules',
+            'sport'
+        ],
+        dailyEligible:
+            true
+    },
+
+    // =========================================================
+    // LITERATURE
+    // =========================================================
+
+    {
+        id: 'literature_0016',
+        category: 'Literature',
+        question:
+            'Who wrote the novel "Rebecca"?',
+        answers: [
+            'Daphne du Maurier',
+            'Agatha Christie',
+            'Virginia Woolf',
+            'Iris Murdoch'
+        ],
+        correctAnswer:
+            'Daphne du Maurier',
+        difficulty:
+            'Medium',
+        tags: [
+            'british',
+            'authors',
+            'novels'
+        ],
+        dailyEligible:
+            true
+    },
+
+    {
+        id: 'literature_0017',
+        category: 'Literature',
+        question:
+            'Who wrote "The Wind in the Willows"?',
+        answers: [
+            'Kenneth Grahame',
+            'A. A. Milne',
+            'Beatrix Potter',
+            'Lewis Carroll'
+        ],
+        correctAnswer:
+            'Kenneth Grahame',
+        difficulty:
+            'Medium',
+        tags: [
+            'british',
+            'authors',
+            'classics'
+        ],
+        dailyEligible:
+            true
+    }
+
+];
+
+module.exports = questions;
