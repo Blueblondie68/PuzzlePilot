@@ -12,20 +12,21 @@ const questions = [
         id: 'music_0021',
         category: 'Music',
         question:
-            'Which band released the 1977 album "Rumours"?',
+            'Which band released the 1982 album "Rio"?',
         answers: [
-            'Fleetwood Mac',
-            'The Eagles',
-            'ABBA',
-            'Supertramp'
+            'Duran Duran',
+            'Spandau Ballet',
+            'Simple Minds',
+            'A-ha'
         ],
         correctAnswer:
-            'Fleetwood Mac',
+            'Duran Duran',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1970s',
+            '1980s',
             'albums',
+            'british',
             'bands'
         ],
         dailyEligible:
@@ -60,21 +61,22 @@ const questions = [
         id: 'music_0023',
         category: 'Music',
         question:
-            'Which British band released "Wonderwall" in 1995?',
+            'Which duo released the 1983 hit "Sweet Dreams (Are Made of This)"?',
         answers: [
-            'Oasis',
-            'Blur',
-            'Pulp',
-            'Suede'
+            'Eurythmics',
+            'Erasure',
+            'Pet Shop Boys',
+            'Wham!'
         ],
         correctAnswer:
-            'Oasis',
+            'Eurythmics',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1990s',
+            '1980s',
             'british',
-            'bands'
+            'duos',
+            'songs'
         ],
         dailyEligible:
             true
@@ -180,21 +182,22 @@ const questions = [
         id: 'music_0028',
         category: 'Music',
         question:
-            'Which American singer was known as the "King of Pop"?',
+            'Which singer released the 1984 album "Purple Rain"?',
         answers: [
-            'Michael Jackson',
             'Prince',
-            'Elvis Presley',
+            'Michael Jackson',
+            'Lionel Richie',
             'Stevie Wonder'
         ],
         correctAnswer:
-            'Michael Jackson',
+            'Prince',
         difficulty:
             'Easy',
         tags: [
-            'singers',
+            '1980s',
             'american',
-            'pop'
+            'albums',
+            'solo artists'
         ],
         dailyEligible:
             true
@@ -206,23 +209,24 @@ const questions = [
 
     {
         id: 'tv_0021',
-        category: 'Television',
+        category: 'TV',
         question:
-            'In "Only Fools and Horses", what is Rodney\'s surname?',
+            'Which British sitcom features Tom and Barbara Good trying to live self-sufficiently in Surbiton?',
         answers: [
-            'Trotter',
-            'Trigger',
-            'Boyce',
-            'Sullivan'
+            'The Good Life',
+            'Ever Decreasing Circles',
+            'To the Manor Born',
+            'Butterflies'
         ],
         correctAnswer:
-            'Trotter',
+            'The Good Life',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'sitcoms',
-            '1980s'
+            'comedy',
+            '1970s',
+            'sitcoms'
         ],
         dailyEligible:
             true
@@ -230,7 +234,7 @@ const questions = [
 
     {
         id: 'tv_0022',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actor played Basil Fawlty in "Fawlty Towers"?',
         answers: [
@@ -254,7 +258,7 @@ const questions = [
 
     {
         id: 'tv_0023',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which fictional town is the setting for "The Simpsons"?',
         answers: [
@@ -278,23 +282,24 @@ const questions = [
 
     {
         id: 'tv_0024',
-        category: 'Television',
+        category: 'TV',
         question:
-            'Which actress played the title character in "Killing Eve"?',
+            'Which actress played Eve Polastri in "Killing Eve"?',
         answers: [
+            'Sandra Oh',
             'Jodie Comer',
-            'Keeley Hawes',
-            'Suranne Jones',
-            'Sarah Lancashire'
+            'Fiona Shaw',
+            'Keeley Hawes'
         ],
         correctAnswer:
-            'Jodie Comer',
+            'Sandra Oh',
         difficulty:
             'Medium',
         tags: [
             'british',
             'drama',
-            'actors'
+            'actors',
+            'killing eve'
         ],
         dailyEligible:
             true
@@ -302,7 +307,7 @@ const questions = [
 
     {
         id: 'tv_0025',
-        category: 'Television',
+        category: 'TV',
         question:
             'In "Friends", which character works as a palaeontologist?',
         answers: [
@@ -326,7 +331,7 @@ const questions = [
 
     {
         id: 'tv_0026',
-        category: 'Television',
+        category: 'TV',
         question:
             'What is the name of the pub in "Coronation Street"?',
         answers: [
@@ -350,7 +355,7 @@ const questions = [
 
     {
         id: 'tv_0027',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actor played the Eleventh Doctor in "Doctor Who"?',
         answers: [
@@ -374,7 +379,7 @@ const questions = [
 
     {
         id: 'tv_0028',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which television series features the Shelby family?',
         answers: [
@@ -404,21 +409,22 @@ const questions = [
         id: 'film_0019',
         category: 'Film',
         question:
-            'Who played Jack Dawson in "Titanic"?',
+            'Which actress played Cher Horowitz in the 1995 film "Clueless"?',
         answers: [
-            'Leonardo DiCaprio',
-            'Brad Pitt',
-            'Matt Damon',
-            'Johnny Depp'
+            'Alicia Silverstone',
+            'Winona Ryder',
+            'Cameron Diaz',
+            'Sarah Michelle Gellar'
         ],
         correctAnswer:
-            'Leonardo DiCaprio',
+            'Alicia Silverstone',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1990s',
             'actors',
-            'titanic'
+            'comedy',
+            'clueless'
         ],
         dailyEligible:
             true
@@ -428,21 +434,21 @@ const questions = [
         id: 'film_0020',
         category: 'Film',
         question:
-            'Which film features the character Forrest Gump?',
+            'Which film features a man named Truman Burbank who unknowingly lives inside a television programme?',
         answers: [
-            'Forrest Gump',
-            'Cast Away',
-            'The Green Mile',
-            'Philadelphia'
+            'The Truman Show',
+            'Pleasantville',
+            'Groundhog Day',
+            'Being John Malkovich'
         ],
         correctAnswer:
-            'Forrest Gump',
+            'The Truman Show',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1990s',
             'films',
-            'characters'
+            'comedy drama'
         ],
         dailyEligible:
             true
@@ -476,21 +482,21 @@ const questions = [
         id: 'film_0022',
         category: 'Film',
         question:
-            'Which actress played Bridget Jones in the film series?',
+            'Which actress played Mia Wallace in "Pulp Fiction"?',
         answers: [
-            'Renée Zellweger',
-            'Sandra Bullock',
-            'Julia Roberts',
-            'Meg Ryan'
+            'Uma Thurman',
+            'Michelle Pfeiffer',
+            'Juliette Lewis',
+            'Patricia Arquette'
         ],
         correctAnswer:
-            'Renée Zellweger',
+            'Uma Thurman',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '2000s',
+            '1990s',
             'actors',
-            'british films'
+            'pulp fiction'
         ],
         dailyEligible:
             true
@@ -524,21 +530,22 @@ const questions = [
         id: 'film_0024',
         category: 'Film',
         question:
-            'Which actor played the title role in the 1990 film "Edward Scissorhands"?',
+            'Which actor played Jeff "The Dude" Lebowski in "The Big Lebowski"?',
         answers: [
-            'Johnny Depp',
-            'Tom Cruise',
-            'Keanu Reeves',
-            'Christian Slater'
+            'Jeff Bridges',
+            'John Goodman',
+            'Steve Buscemi',
+            'John Turturro'
         ],
         correctAnswer:
-            'Johnny Depp',
+            'Jeff Bridges',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1990s',
             'actors',
-            'films'
+            'comedy',
+            'the big lebowski'
         ],
         dailyEligible:
             true
@@ -576,20 +583,20 @@ const questions = [
         id: 'general_0011',
         category: 'General Knowledge',
         question:
-            'Which colour is traditionally associated with emeralds?',
+            'How many faces does a standard cube have?',
         answers: [
-            'Green',
-            'Blue',
-            'Red',
-            'Purple'
+            '6',
+            '4',
+            '8',
+            '12'
         ],
         correctAnswer:
-            'Green',
+            '6',
         difficulty:
             'Easy',
         tags: [
-            'colours',
-            'gemstones',
+            'numbers',
+            'shapes',
             'general knowledge'
         ],
         dailyEligible:
@@ -628,21 +635,21 @@ const questions = [
         id: 'history_0009',
         category: 'History',
         question:
-            'Which English king had six wives?',
+            'Which French leader was defeated at the Battle of Waterloo in 1815?',
         answers: [
-            'Henry VIII',
-            'Henry VII',
-            'Edward VI',
-            'Richard III'
+            'Napoleon Bonaparte',
+            'Louis XIV',
+            'Charles de Gaulle',
+            'Louis XVI'
         ],
         correctAnswer:
-            'Henry VIII',
+            'Napoleon Bonaparte',
         difficulty:
             'Easy',
         tags: [
-            'british',
-            'monarchy',
-            'tudors'
+            'europe',
+            '19th century',
+            'battles'
         ],
         dailyEligible:
             true
@@ -676,21 +683,21 @@ const questions = [
         id: 'history_0011',
         category: 'History',
         question:
-            'Which ancient civilisation built Machu Picchu?',
+            'Which Roman emperor ordered the invasion of Britain in AD 43?',
         answers: [
-            'Inca',
-            'Maya',
-            'Aztec',
-            'Roman'
+            'Claudius',
+            'Nero',
+            'Augustus',
+            'Hadrian'
         ],
         correctAnswer:
-            'Inca',
+            'Claudius',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'ancient history',
-            'south america',
-            'civilisations'
+            'roman',
+            'britain'
         ],
         dailyEligible:
             true
@@ -704,20 +711,20 @@ const questions = [
         id: 'geography_0009',
         category: 'Geography',
         question:
-            'What is the capital city of Australia?',
+            'What is the capital city of Brazil?',
         answers: [
-            'Canberra',
-            'Sydney',
-            'Melbourne',
-            'Perth'
+            'Brasília',
+            'Rio de Janeiro',
+            'São Paulo',
+            'Salvador'
         ],
         correctAnswer:
-            'Canberra',
+            'Brasília',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'capitals',
-            'australia',
+            'south america',
             'cities'
         ],
         dailyEligible:
@@ -728,21 +735,21 @@ const questions = [
         id: 'geography_0010',
         category: 'Geography',
         question:
-            'Which river flows through London?',
+            'Which river flows through Glasgow?',
         answers: [
-            'Thames',
-            'Severn',
-            'Mersey',
-            'Tyne'
+            'Clyde',
+            'Tay',
+            'Forth',
+            'Tweed'
         ],
         correctAnswer:
-            'Thames',
+            'Clyde',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
             'rivers',
-            'london'
+            'scotland'
         ],
         dailyEligible:
             true
@@ -773,28 +780,28 @@ const questions = [
     },
 
     // =========================================================
-    // SCIENCE
+    // SCIENCE & NATURE
     // =========================================================
 
     {
         id: 'science_0008',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
-            'Which gas do plants absorb from the atmosphere during photosynthesis?',
+            'At standard atmospheric pressure, at what temperature does pure water boil in degrees Celsius?',
         answers: [
-            'Carbon dioxide',
-            'Oxygen',
-            'Nitrogen',
-            'Hydrogen'
+            '100°C',
+            '90°C',
+            '80°C',
+            '110°C'
         ],
         correctAnswer:
-            'Carbon dioxide',
+            '100°C',
         difficulty:
             'Easy',
         tags: [
-            'biology',
-            'plants',
-            'science'
+            'physics',
+            'water',
+            'temperature'
         ],
         dailyEligible:
             true
@@ -802,7 +809,7 @@ const questions = [
 
     {
         id: 'science_0009',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'What is the hardest natural substance?',
         answers: [
@@ -826,7 +833,7 @@ const questions = [
 
     {
         id: 'science_0010',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'Which organ pumps blood around the human body?',
         answers: [
@@ -849,12 +856,12 @@ const questions = [
     },
 
     // =========================================================
-    // FOOD AND DRINK
+    // FOOD & DRINK
     // =========================================================
 
     {
         id: 'food_0006',
-        category: 'Food and Drink',
+        category: 'Food & Drink',
         question:
             'Which spirit is traditionally used in a mojito?',
         answers: [
@@ -878,23 +885,23 @@ const questions = [
 
     {
         id: 'food_0007',
-        category: 'Food and Drink',
+        category: 'Food & Drink',
         question:
-            'Which Italian dessert is made with coffee-soaked sponge or biscuits and mascarpone?',
+            'Which country is traditionally associated with the rice dish paella?',
         answers: [
-            'Tiramisu',
-            'Panna cotta',
-            'Cannoli',
-            'Gelato'
+            'Spain',
+            'Italy',
+            'Portugal',
+            'Greece'
         ],
         correctAnswer:
-            'Tiramisu',
+            'Spain',
         difficulty:
             'Easy',
         tags: [
-            'desserts',
-            'italian',
-            'food'
+            'food',
+            'europe',
+            'spanish'
         ],
         dailyEligible:
             true
@@ -908,20 +915,20 @@ const questions = [
         id: 'sport_0006',
         category: 'Sport',
         question:
-            'How many players does a football team have on the pitch at the start of a match?',
+            'What is the highest possible break in a standard frame of snooker without relying on a free ball?',
         answers: [
-            '11',
-            '10',
-            '12',
-            '9'
+            '147',
+            '155',
+            '140',
+            '150'
         ],
         correctAnswer:
-            '11',
+            '147',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'football',
-            'rules',
+            'snooker',
+            'british',
             'sport'
         ],
         dailyEligible:
@@ -960,15 +967,15 @@ const questions = [
         id: 'literature_0004',
         category: 'Literature',
         question:
-            'Who wrote "Pride and Prejudice"?',
+            'Who wrote the novel "Jane Eyre"?',
         answers: [
-            'Jane Austen',
             'Charlotte Brontë',
-            'George Eliot',
-            'Mary Shelley'
+            'Emily Brontë',
+            'Jane Austen',
+            'George Eliot'
         ],
         correctAnswer:
-            'Jane Austen',
+            'Charlotte Brontë',
         difficulty:
             'Easy',
         tags: [
