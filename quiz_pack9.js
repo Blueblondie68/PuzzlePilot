@@ -12,21 +12,21 @@ const questions = [
         id: 'music_0061',
         category: 'Music',
         question:
-            'Which band released the 1985 album "Brothers in Arms"?',
+            'Which band released the 1983 album "Synchronicity"?',
         answers: [
+            'The Police',
             'Dire Straits',
             'Simple Minds',
-            'Tears for Fears',
             'Duran Duran'
         ],
         correctAnswer:
-            'Dire Straits',
+            'The Police',
         difficulty:
             'Medium',
         tags: [
             '1980s',
             'albums',
-            'british'
+            'bands'
         ],
         dailyEligible:
             true
@@ -36,21 +36,21 @@ const questions = [
         id: 'music_0062',
         category: 'Music',
         question:
-            'Which singer had a 1984 hit with "What\'s Love Got to Do with It"?',
+            'Which singer had a 1989 hit with "All Around the World"?',
         answers: [
-            'Tina Turner',
-            'Diana Ross',
-            'Whitney Houston',
-            'Chaka Khan'
+            'Lisa Stansfield',
+            'Alison Moyet',
+            'Kim Wilde',
+            'Beverley Craven'
         ],
         correctAnswer:
-            'Tina Turner',
+            'Lisa Stansfield',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1980s',
-            'singers',
-            'songs'
+            'british',
+            'singers'
         ],
         dailyEligible:
             true
@@ -60,21 +60,21 @@ const questions = [
         id: 'music_0063',
         category: 'Music',
         question:
-            'Which British band featured Freddie Mercury as its lead singer?',
+            'Which band released the 1986 hit "The Final Countdown"?',
         answers: [
-            'Queen',
-            'The Who',
-            'Deep Purple',
-            'Status Quo'
+            'Europe',
+            'Bon Jovi',
+            'Foreigner',
+            'Survivor'
         ],
         correctAnswer:
-            'Queen',
+            'Europe',
         difficulty:
             'Easy',
         tags: [
-            'british',
+            '1980s',
             'bands',
-            'rock'
+            'songs'
         ],
         dailyEligible:
             true
@@ -206,19 +206,19 @@ const questions = [
 
     {
         id: 'tv_0061',
-        category: 'Television',
+        category: 'TV',
         question:
-            'Which actor played Basil Fawlty in "Fawlty Towers"?',
+            'Which actress played Margo Leadbetter in "The Good Life"?',
         answers: [
-            'John Cleese',
-            'Ronnie Barker',
-            'Richard Briers',
-            'David Jason'
+            'Penelope Keith',
+            'Felicity Kendal',
+            'Prunella Scales',
+            'Wendy Craig'
         ],
         correctAnswer:
-            'John Cleese',
+            'Penelope Keith',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
             'sitcoms',
@@ -230,19 +230,19 @@ const questions = [
 
     {
         id: 'tv_0062',
-        category: 'Television',
+        category: 'TV',
         question:
-            'In "The Simpsons", what is the name of the family\'s next-door neighbour?',
+            'Which actor provides the voice of Homer Simpson?',
         answers: [
-            'Ned Flanders',
-            'Barney Gumble',
-            'Seymour Skinner',
-            'Moe Szyslak'
+            'Dan Castellaneta',
+            'Hank Azaria',
+            'Harry Shearer',
+            'Yeardley Smith'
         ],
         correctAnswer:
-            'Ned Flanders',
+            'Dan Castellaneta',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'american',
             'animation',
@@ -254,21 +254,22 @@ const questions = [
 
     {
         id: 'tv_0063',
-        category: 'Television',
+        category: 'TV',
         question:
-            'Which actress played Geraldine Granger in "The Vicar of Dibley"?',
+            'Which actor played Father Dougal McGuire in "Father Ted"?',
         answers: [
-            'Dawn French',
-            'Jennifer Saunders',
-            'Caroline Quentin',
-            'Julie Walters'
+            'Ardal O\'Hanlon',
+            'Dermot Morgan',
+            'Frank Kelly',
+            'Dylan Moran'
         ],
         correctAnswer:
-            'Dawn French',
+            'Ardal O\'Hanlon',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
+            'irish',
             'sitcoms',
             'actors'
         ],
@@ -278,7 +279,7 @@ const questions = [
 
     {
         id: 'tv_0064',
-        category: 'Television',
+        category: 'TV',
         question:
             'What is the surname of brothers Sam and Dean in "Supernatural"?',
         answers: [
@@ -302,19 +303,19 @@ const questions = [
 
     {
         id: 'tv_0065',
-        category: 'Television',
+        category: 'TV',
         question:
-            'Which actor played Edmund Blackadder in the television series "Blackadder"?',
+            'Which actress played Patsy Stone in "Absolutely Fabulous"?',
         answers: [
-            'Rowan Atkinson',
-            'Hugh Laurie',
-            'Stephen Fry',
-            'Rik Mayall'
+            'Joanna Lumley',
+            'Jennifer Saunders',
+            'Julia Sawalha',
+            'Jane Horrocks'
         ],
         correctAnswer:
-            'Rowan Atkinson',
+            'Joanna Lumley',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
             'sitcoms',
@@ -326,7 +327,7 @@ const questions = [
 
     {
         id: 'tv_0066',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which television drama follows the Crawley family and their servants?',
         answers: [
@@ -350,7 +351,7 @@ const questions = [
 
     {
         id: 'tv_0067',
-        category: 'Television',
+        category: 'TV',
         question:
             'In "Doctor Who", what is the name of the Doctor\'s time machine?',
         answers: [
@@ -374,22 +375,22 @@ const questions = [
 
     {
         id: 'tv_0068',
-        category: 'Television',
+        category: 'TV',
         question:
-            'Which actress played Catherine Cawood in "Happy Valley"?',
+            'Which actor played Jonathan Creek in the television series of the same name?',
         answers: [
-            'Sarah Lancashire',
-            'Nicola Walker',
-            'Suranne Jones',
-            'Olivia Colman'
+            'Alan Davies',
+            'Stephen Fry',
+            'Hugh Laurie',
+            'Martin Clunes'
         ],
         correctAnswer:
-            'Sarah Lancashire',
+            'Alan Davies',
         difficulty:
             'Medium',
         tags: [
             'british',
-            'crime',
+            'mystery',
             'actors'
         ],
         dailyEligible:
@@ -404,21 +405,21 @@ const questions = [
         id: 'film_0049',
         category: 'Film',
         question:
-            'Which actor played the title character in the 1990 film "Edward Scissorhands"?',
+            'Which actress played Annie Wilkes in the 1990 film "Misery"?',
         answers: [
-            'Johnny Depp',
-            'Tom Cruise',
-            'Keanu Reeves',
-            'Christian Slater'
+            'Kathy Bates',
+            'Glenn Close',
+            'Jessica Lange',
+            'Susan Sarandon'
         ],
         correctAnswer:
-            'Johnny Depp',
+            'Kathy Bates',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1990s',
             'actors',
-            'fantasy'
+            'thriller'
         ],
         dailyEligible:
             true
@@ -452,21 +453,21 @@ const questions = [
         id: 'film_0051',
         category: 'Film',
         question:
-            'Which actor played Forrest Gump in the 1994 film?',
+            'Which actor played the title character in the 1992 film "Chaplin"?',
         answers: [
+            'Robert Downey Jr.',
+            'Johnny Depp',
             'Tom Hanks',
-            'Kevin Costner',
-            'Robin Williams',
-            'Michael Keaton'
+            'Kevin Kline'
         ],
         correctAnswer:
-            'Tom Hanks',
+            'Robert Downey Jr.',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1990s',
             'actors',
-            'films'
+            'biographical films'
         ],
         dailyEligible:
             true
@@ -500,21 +501,21 @@ const questions = [
         id: 'film_0053',
         category: 'Film',
         question:
-            'Who directed the 1975 film "Jaws"?',
+            'Which actress played Sally Albright in "When Harry Met Sally..."?',
         answers: [
-            'Steven Spielberg',
-            'George Lucas',
-            'Francis Ford Coppola',
-            'Martin Scorsese'
+            'Meg Ryan',
+            'Julia Roberts',
+            'Demi Moore',
+            'Michelle Pfeiffer'
         ],
         correctAnswer:
-            'Steven Spielberg',
+            'Meg Ryan',
         difficulty:
             'Medium',
         tags: [
-            '1970s',
-            'directors',
-            'films'
+            '1980s',
+            'actors',
+            'romantic comedy'
         ],
         dailyEligible:
             true
@@ -524,21 +525,21 @@ const questions = [
         id: 'film_0054',
         category: 'Film',
         question:
-            'Which actress played Bridget Jones in the 2001 film "Bridget Jones\'s Diary"?',
+            'Which actor played Dr Malcolm in the 1993 film "Jurassic Park"?',
         answers: [
-            'Renée Zellweger',
-            'Sandra Bullock',
-            'Julia Roberts',
-            'Meg Ryan'
+            'Jeff Goldblum',
+            'Sam Neill',
+            'Richard Attenborough',
+            'Wayne Knight'
         ],
         correctAnswer:
-            'Renée Zellweger',
+            'Jeff Goldblum',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '2000s',
+            '1990s',
             'actors',
-            'comedy'
+            'science fiction'
         ],
         dailyEligible:
             true
@@ -552,17 +553,17 @@ const questions = [
         id: 'general_0025',
         category: 'General Knowledge',
         question:
-            'How many sides does a dodecagon have?',
+            'How many sides does a heptagon have?',
         answers: [
-            '12',
-            '10',
+            '7',
+            '6',
             '8',
-            '14'
+            '9'
         ],
         correctAnswer:
-            '12',
+            '7',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             'numbers',
             'shapes',
@@ -576,20 +577,20 @@ const questions = [
         id: 'general_0026',
         category: 'General Knowledge',
         question:
-            'What colour are the stars on the flag of the European Union?',
+            'How many black squares are there on a standard chessboard?',
         answers: [
-            'Gold',
-            'White',
-            'Red',
-            'Silver'
+            '32',
+            '30',
+            '36',
+            '40'
         ],
         correctAnswer:
-            'Gold',
+            '32',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'europe',
-            'symbols',
+            'chess',
+            'numbers',
             'general knowledge'
         ],
         dailyEligible:
@@ -600,20 +601,20 @@ const questions = [
         id: 'general_0027',
         category: 'General Knowledge',
         question:
-            'Which traditional board game includes properties called Mayfair and Park Lane in its UK version?',
+            'Which Roman numeral represents 100?',
         answers: [
-            'Monopoly',
-            'Cluedo',
-            'Risk',
-            'Scrabble'
+            'C',
+            'L',
+            'D',
+            'M'
         ],
         correctAnswer:
-            'Monopoly',
+            'C',
         difficulty:
             'Easy',
         tags: [
-            'games',
-            'british',
+            'numbers',
+            'roman numerals',
             'general knowledge'
         ],
         dailyEligible:
@@ -628,21 +629,21 @@ const questions = [
         id: 'history_0024',
         category: 'History',
         question:
-            'Which English king had six wives?',
+            'Which English king was defeated at the Battle of Bosworth Field in 1485?',
         answers: [
-            'Henry VIII',
+            'Richard III',
             'Henry VII',
-            'Edward VI',
-            'Richard III'
+            'Edward IV',
+            'Henry VIII'
         ],
         correctAnswer:
-            'Henry VIII',
+            'Richard III',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
             'monarchy',
-            'tudors'
+            '15th century'
         ],
         dailyEligible:
             true
@@ -652,21 +653,21 @@ const questions = [
         id: 'history_0025',
         category: 'History',
         question:
-            'In which year did the Berlin Wall fall?',
+            'Which British nurse became known as the "Lady with the Lamp"?',
         answers: [
-            '1989',
-            '1987',
-            '1991',
-            '1993'
+            'Florence Nightingale',
+            'Mary Seacole',
+            'Edith Cavell',
+            'Elizabeth Garrett Anderson'
         ],
         correctAnswer:
-            '1989',
+            'Florence Nightingale',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            '20th century',
-            'germany',
-            'europe'
+            'british',
+            '19th century',
+            'people'
         ],
         dailyEligible:
             true
@@ -676,21 +677,21 @@ const questions = [
         id: 'history_0026',
         category: 'History',
         question:
-            'Which famous ship sank on its maiden voyage in April 1912?',
+            'Which explorer completed the first solo non-stop flight across the Atlantic in 1927?',
         answers: [
-            'Titanic',
-            'Lusitania',
-            'Britannic',
-            'Mauretania'
+            'Charles Lindbergh',
+            'Amelia Earhart',
+            'Howard Hughes',
+            'Louis Blériot'
         ],
         correctAnswer:
-            'Titanic',
+            'Charles Lindbergh',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '20th century',
-            'ships',
-            'history'
+            'aviation',
+            'exploration'
         ],
         dailyEligible:
             true
@@ -704,21 +705,21 @@ const questions = [
         id: 'geography_0024',
         category: 'Geography',
         question:
-            'What is the capital city of Portugal?',
+            'What is the capital city of Finland?',
         answers: [
-            'Lisbon',
-            'Porto',
-            'Madrid',
-            'Faro'
+            'Helsinki',
+            'Oslo',
+            'Stockholm',
+            'Copenhagen'
         ],
         correctAnswer:
-            'Lisbon',
+            'Helsinki',
         difficulty:
             'Easy',
         tags: [
             'europe',
             'capitals',
-            'portugal'
+            'finland'
         ],
         dailyEligible:
             true
@@ -728,19 +729,19 @@ const questions = [
         id: 'geography_0025',
         category: 'Geography',
         question:
-            'Which river flows through Paris?',
+            'Which river flows through the city of Florence?',
         answers: [
-            'Seine',
-            'Rhine',
-            'Loire',
-            'Danube'
+            'Arno',
+            'Tiber',
+            'Po',
+            'Adige'
         ],
         correctAnswer:
-            'Seine',
+            'Arno',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'france',
+            'italy',
             'rivers',
             'europe'
         ],
@@ -752,20 +753,20 @@ const questions = [
         id: 'geography_0026',
         category: 'Geography',
         question:
-            'Mount Kilimanjaro is located in which African country?',
+            'Which country has the city of Kraków?',
         answers: [
-            'Tanzania',
-            'Kenya',
-            'Uganda',
-            'Ethiopia'
+            'Poland',
+            'Hungary',
+            'Slovakia',
+            'Romania'
         ],
         correctAnswer:
-            'Tanzania',
+            'Poland',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            'africa',
-            'mountains',
+            'europe',
+            'cities',
             'countries'
         ],
         dailyEligible:
@@ -780,17 +781,17 @@ const questions = [
         id: 'science_0023',
         category: 'Science',
         question:
-            'What is the largest organ of the human body?',
+            'Which organ in the human body produces insulin?',
         answers: [
-            'Skin',
+            'Pancreas',
             'Liver',
-            'Lungs',
-            'Heart'
+            'Kidney',
+            'Spleen'
         ],
         correctAnswer:
-            'Skin',
+            'Pancreas',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'biology',
             'human body',
@@ -828,15 +829,15 @@ const questions = [
         id: 'science_0025',
         category: 'Science',
         question:
-            'Which planet is famous for its prominent ring system?',
+            'Which planet is the largest in our Solar System?',
         answers: [
+            'Jupiter',
             'Saturn',
-            'Mars',
-            'Venus',
-            'Mercury'
+            'Neptune',
+            'Uranus'
         ],
         correctAnswer:
-            'Saturn',
+            'Jupiter',
         difficulty:
             'Easy',
         tags: [
@@ -856,20 +857,20 @@ const questions = [
         id: 'food_0016',
         category: 'Food and Drink',
         question:
-            'Which type of pastry is traditionally used to make profiteroles?',
+            'Which Italian dessert is traditionally made with coffee-soaked sponge fingers and mascarpone?',
         answers: [
-            'Choux',
-            'Puff',
-            'Filo',
-            'Shortcrust'
+            'Tiramisu',
+            'Panna cotta',
+            'Cannoli',
+            'Zabaglione'
         ],
         correctAnswer:
-            'Choux',
+            'Tiramisu',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            'baking',
-            'pastry',
+            'italian',
+            'desserts',
             'food'
         ],
         dailyEligible:
@@ -880,20 +881,20 @@ const questions = [
         id: 'food_0017',
         category: 'Food and Drink',
         question:
-            'Which cheese is traditionally used in a Greek salad?',
+            'Which spice gives many curry dishes their distinctive yellow colour?',
         answers: [
-            'Feta',
-            'Brie',
-            'Gouda',
-            'Parmesan'
+            'Turmeric',
+            'Cumin',
+            'Paprika',
+            'Coriander'
         ],
         correctAnswer:
-            'Feta',
+            'Turmeric',
         difficulty:
             'Easy',
         tags: [
-            'greek',
-            'cheese',
+            'spices',
+            'ingredients',
             'food'
         ],
         dailyEligible:
@@ -908,20 +909,20 @@ const questions = [
         id: 'sport_0016',
         category: 'Sport',
         question:
-            'How many players does a football team have on the pitch at the start of a match?',
+            'How many points is a penalty kick worth in rugby union?',
         answers: [
-            '11',
-            '10',
-            '12',
-            '9'
+            '3',
+            '2',
+            '5',
+            '7'
         ],
         correctAnswer:
-            '11',
+            '3',
         difficulty:
             'Easy',
         tags: [
-            'football',
-            'rules',
+            'rugby union',
+            'scoring',
             'sport'
         ],
         dailyEligible:
@@ -932,20 +933,20 @@ const questions = [
         id: 'sport_0017',
         category: 'Sport',
         question:
-            'Which Grand Slam tennis tournament is played on grass?',
+            'Which sport uses the terms birdie, eagle and bogey?',
         answers: [
-            'Wimbledon',
-            'French Open',
-            'Australian Open',
-            'US Open'
+            'Golf',
+            'Tennis',
+            'Cricket',
+            'Badminton'
         ],
         correctAnswer:
-            'Wimbledon',
+            'Golf',
         difficulty:
             'Easy',
         tags: [
-            'tennis',
-            'wimbledon',
+            'golf',
+            'terminology',
             'sport'
         ],
         dailyEligible:
@@ -960,21 +961,21 @@ const questions = [
         id: 'literature_0014',
         category: 'Literature',
         question:
-            'Who wrote "Charlie and the Chocolate Factory"?',
+            'Who wrote "The Railway Children"?',
         answers: [
-            'Roald Dahl',
+            'E. Nesbit',
             'Enid Blyton',
-            'Michael Morpurgo',
-            'David Walliams'
+            'Frances Hodgson Burnett',
+            'Beatrix Potter'
         ],
         correctAnswer:
-            'Roald Dahl',
+            'E. Nesbit',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
             'authors',
-            'children'
+            'children\'s literature'
         ],
         dailyEligible:
             true
@@ -984,21 +985,21 @@ const questions = [
         id: 'literature_0015',
         category: 'Literature',
         question:
-            'Which detective was created by author Agatha Christie?',
+            'Which author wrote the novel "Rebecca"?',
         answers: [
-            'Hercule Poirot',
-            'Sherlock Holmes',
-            'Inspector Morse',
-            'Father Brown'
+            'Daphne du Maurier',
+            'Agatha Christie',
+            'Virginia Woolf',
+            'Iris Murdoch'
         ],
         correctAnswer:
-            'Hercule Poirot',
+            'Daphne du Maurier',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'crime',
-            'characters'
+            'authors',
+            'novels'
         ],
         dailyEligible:
             true
