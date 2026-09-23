@@ -12,15 +12,15 @@ const questions = [
         id: 'music_0061',
         category: 'Music',
         question:
-            'Which band released the 1983 album "Synchronicity"?',
+            'Which band released the 1985 album "Brothers in Arms"?',
         answers: [
-            'The Police',
             'Dire Straits',
             'Simple Minds',
-            'Duran Duran'
+            'Tears for Fears',
+            'INXS'
         ],
         correctAnswer:
-            'The Police',
+            'Dire Straits',
         difficulty:
             'Medium',
         tags: [
@@ -305,20 +305,20 @@ const questions = [
         id: 'tv_0065',
         category: 'TV',
         question:
-            'Which actress played Patsy Stone in "Absolutely Fabulous"?',
+            'Which actor played Detective Inspector Jack Frost in "A Touch of Frost"?',
         answers: [
-            'Joanna Lumley',
-            'Jennifer Saunders',
-            'Julia Sawalha',
-            'Jane Horrocks'
+            'David Jason',
+            'John Thaw',
+            'David Suchet',
+            'Kevin Whately'
         ],
         correctAnswer:
-            'Joanna Lumley',
+            'David Jason',
         difficulty:
             'Medium',
         tags: [
             'british',
-            'sitcoms',
+            'crime',
             'actors'
         ],
         dailyEligible:
@@ -377,20 +377,20 @@ const questions = [
         id: 'tv_0068',
         category: 'TV',
         question:
-            'Which actor played Jonathan Creek in the television series of the same name?',
+            'Which actress played DCI Vera Stanhope in the television series "Vera"?',
         answers: [
-            'Alan Davies',
-            'Stephen Fry',
-            'Hugh Laurie',
-            'Martin Clunes'
+            'Brenda Blethyn',
+            'Sarah Lancashire',
+            'Suranne Jones',
+            'Lesley Manville'
         ],
         correctAnswer:
-            'Alan Davies',
+            'Brenda Blethyn',
         difficulty:
             'Medium',
         tags: [
             'british',
-            'mystery',
+            'crime',
             'actors'
         ],
         dailyEligible:
@@ -857,20 +857,20 @@ const questions = [
         id: 'food_0016',
         category: 'Food and Drink',
         question:
-            'Which Italian dessert is traditionally made with coffee-soaked sponge fingers and mascarpone?',
+            'Which pastry is traditionally used to make profiteroles?',
         answers: [
-            'Tiramisu',
-            'Panna cotta',
-            'Cannoli',
-            'Zabaglione'
+            'Choux pastry',
+            'Puff pastry',
+            'Filo pastry',
+            'Shortcrust pastry'
         ],
         correctAnswer:
-            'Tiramisu',
+            'Choux pastry',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'italian',
             'desserts',
+            'baking',
             'food'
         ],
         dailyEligible:
