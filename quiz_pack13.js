@@ -428,21 +428,21 @@ const questions = [
         id: 'film_0074',
         category: 'Film',
         question:
-            'Which actor played the title character in the 1990 film "Edward Scissorhands"?',
+            'Which actress played Annie Reed in the 1993 film "Sleepless in Seattle"?',
         answers: [
-            'Johnny Depp',
-            'Winona Ryder',
-            'Anthony Michael Hall',
-            'Dianne Wiest'
+            'Meg Ryan',
+            'Julia Roberts',
+            'Michelle Pfeiffer',
+            'Andie MacDowell'
         ],
         correctAnswer:
-            'Johnny Depp',
+            'Meg Ryan',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1990s',
             'actors',
-            'fantasy'
+            'romantic comedy'
         ],
         dailyEligible:
             true
@@ -628,21 +628,21 @@ const questions = [
         id: 'history_0036',
         category: 'History',
         question:
-            'Which nurse became known as "The Lady with the Lamp" during the Crimean War?',
+            'Which English king had six wives?',
         answers: [
-            'Florence Nightingale',
-            'Mary Seacole',
-            'Edith Cavell',
-            'Elizabeth Garrett Anderson'
+            'Henry VIII',
+            'Henry VII',
+            'Edward VI',
+            'Charles II'
         ],
         correctAnswer:
-            'Florence Nightingale',
+            'Henry VIII',
         difficulty:
             'Easy',
         tags: [
             'british',
-            '19th century',
-            'people'
+            'tudors',
+            'monarchy'
         ],
         dailyEligible:
             true
@@ -676,21 +676,21 @@ const questions = [
         id: 'history_0038',
         category: 'History',
         question:
-            'Which king was defeated at the Battle of Bosworth Field in 1485?',
+            'Which English king was executed in 1649 following the English Civil War?',
         answers: [
-            'Richard III',
-            'Henry VI',
-            'Edward IV',
-            'Richard II'
+            'Charles I',
+            'Charles II',
+            'James II',
+            'William III'
         ],
         correctAnswer:
-            'Richard III',
+            'Charles I',
         difficulty:
             'Medium',
         tags: [
             'british',
-            'monarchy',
-            'medieval'
+            '17th century',
+            'monarchy'
         ],
         dailyEligible:
             true
@@ -704,21 +704,21 @@ const questions = [
         id: 'geography_0036',
         category: 'Geography',
         question:
-            'What is the capital city of Norway?',
+            'What is the capital city of Croatia?',
         answers: [
-            'Oslo',
-            'Bergen',
-            'Stockholm',
-            'Helsinki'
+            'Zagreb',
+            'Split',
+            'Dubrovnik',
+            'Ljubljana'
         ],
         correctAnswer:
-            'Oslo',
+            'Zagreb',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'europe',
             'capitals',
-            'norway'
+            'croatia'
         ],
         dailyEligible:
             true
@@ -780,20 +780,20 @@ const questions = [
         id: 'science_0035',
         category: 'Science',
         question:
-            'Which organ in the human body produces insulin?',
+            'Which gas makes up most of the Earth\'s atmosphere?',
         answers: [
-            'Pancreas',
-            'Liver',
-            'Kidney',
-            'Spleen'
+            'Nitrogen',
+            'Oxygen',
+            'Carbon dioxide',
+            'Hydrogen'
         ],
         correctAnswer:
-            'Pancreas',
+            'Nitrogen',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            'biology',
-            'human body',
+            'chemistry',
+            'earth',
             'science'
         ],
         dailyEligible:
@@ -932,20 +932,20 @@ const questions = [
         id: 'sport_0025',
         category: 'Sport',
         question:
-            'How many players are on the court for one netball team during play?',
+            'How many points is a touchdown worth in American football before any extra-point attempt?',
         answers: [
-            '7',
             '6',
-            '8',
-            '9'
+            '3',
+            '5',
+            '7'
         ],
         correctAnswer:
-            '7',
+            '6',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            'netball',
-            'rules',
+            'american football',
+            'scoring',
             'sport'
         ],
         dailyEligible:
