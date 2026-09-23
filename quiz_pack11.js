@@ -84,19 +84,19 @@ const questions = [
         id: 'music_0080',
         category: 'Music',
         question:
-            'Which singer released the 1990 hit "Nothing Compares 2 U"?',
+            'Which singer had a 1986 hit with "The Lady in Red"?',
         answers: [
-            'Sinéad O\'Connor',
-            'Annie Lennox',
-            'Dolores O\'Riordan',
-            'Alison Moyet'
+            'Chris de Burgh',
+            'Paul Young',
+            'Bryan Ferry',
+            'Peter Cetera'
         ],
         correctAnswer:
-            'Sinéad O\'Connor',
+            'Chris de Burgh',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1990s',
+            '1980s',
             'singers',
             'songs'
         ],
@@ -232,19 +232,20 @@ const questions = [
         id: 'tv_0078',
         category: 'Television',
         question:
-            'Which actor played Victor Meldrew in "One Foot in the Grave"?',
+            'Which actor played Father Jack Hackett in "Father Ted"?',
         answers: [
-            'Richard Wilson',
-            'Richard Briers',
-            'David Jason',
-            'Geoffrey Palmer'
+            'Frank Kelly',
+            'Dermot Morgan',
+            'Ardal O\'Hanlon',
+            'Pauline McLynn'
         ],
         correctAnswer:
-            'Richard Wilson',
+            'Frank Kelly',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
+            'irish',
             'sitcoms',
             'actors'
         ],
@@ -280,20 +281,20 @@ const questions = [
         id: 'tv_0080',
         category: 'Television',
         question:
-            'Which actor played the Eleventh Doctor in "Doctor Who"?',
+            'Which actor played Malcolm Tucker in "The Thick of It"?',
         answers: [
-            'Matt Smith',
-            'David Tennant',
             'Peter Capaldi',
-            'Christopher Eccleston'
+            'Chris Addison',
+            'Roger Allam',
+            'Steve Coogan'
         ],
         correctAnswer:
-            'Matt Smith',
+            'Peter Capaldi',
         difficulty:
             'Medium',
         tags: [
             'british',
-            'doctor who',
+            'comedy',
             'actors'
         ],
         dailyEligible:
@@ -304,21 +305,21 @@ const questions = [
         id: 'tv_0081',
         category: 'Television',
         question:
-            'Which US sitcom is centred on the employees of the Dunder Mifflin paper company?',
+            'Which actress played Fleabag\'s sister Claire in "Fleabag"?',
         answers: [
-            'The Office',
-            'Parks and Recreation',
-            '30 Rock',
-            'Brooklyn Nine-Nine'
+            'Sian Clifford',
+            'Olivia Colman',
+            'Phoebe Waller-Bridge',
+            'Fiona Shaw'
         ],
         correctAnswer:
-            'The Office',
+            'Sian Clifford',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'american',
-            'sitcoms',
-            'workplace'
+            'british',
+            'comedy',
+            'actors'
         ],
         dailyEligible:
             true
@@ -404,21 +405,21 @@ const questions = [
         id: 'film_0061',
         category: 'Film',
         question:
-            'Which actress played Vivian Ward in "Pretty Woman"?',
+            'Which actress played Bridget Gregory in the 1994 film "The Last Seduction"?',
         answers: [
-            'Julia Roberts',
-            'Sandra Bullock',
-            'Meg Ryan',
-            'Demi Moore'
+            'Linda Fiorentino',
+            'Sharon Stone',
+            'Demi Moore',
+            'Michelle Pfeiffer'
         ],
         correctAnswer:
-            'Julia Roberts',
+            'Linda Fiorentino',
         difficulty:
-            'Easy',
+            'Hard',
         tags: [
             '1990s',
             'actors',
-            'romance'
+            'thriller'
         ],
         dailyEligible:
             true
@@ -428,21 +429,21 @@ const questions = [
         id: 'film_0062',
         category: 'Film',
         question:
-            'Which actor played Rocky Balboa in the "Rocky" films?',
+            'Which actor played Vincent Vega in "Pulp Fiction"?',
         answers: [
-            'Sylvester Stallone',
-            'Arnold Schwarzenegger',
+            'John Travolta',
+            'Samuel L. Jackson',
             'Bruce Willis',
-            'Jean-Claude Van Damme'
+            'Tim Roth'
         ],
         correctAnswer:
-            'Sylvester Stallone',
+            'John Travolta',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
+            '1990s',
             'actors',
-            'characters',
-            'film series'
+            'crime'
         ],
         dailyEligible:
             true
@@ -452,21 +453,21 @@ const questions = [
         id: 'film_0063',
         category: 'Film',
         question:
-            'Which 1995 film features the characters Woody and Buzz Lightyear?',
+            'Which actor played Dr Emmett Brown in the "Back to the Future" films?',
         answers: [
-            'Toy Story',
-            'A Bug\'s Life',
-            'Monsters, Inc.',
-            'The Incredibles'
+            'Christopher Lloyd',
+            'Michael J. Fox',
+            'Thomas F. Wilson',
+            'Crispin Glover'
         ],
         correctAnswer:
-            'Toy Story',
+            'Christopher Lloyd',
         difficulty:
             'Easy',
         tags: [
-            '1990s',
-            'animation',
-            'characters'
+            '1980s',
+            'actors',
+            'science fiction'
         ],
         dailyEligible:
             true
@@ -476,7 +477,7 @@ const questions = [
         id: 'film_0064',
         category: 'Film',
         question:
-            'Which actor played the title role in the 1990 film "Ghost"?',
+            'Which actor played Sam Wheat in the 1990 film "Ghost"?',
         answers: [
             'Patrick Swayze',
             'Kevin Costner',
@@ -500,21 +501,21 @@ const questions = [
         id: 'film_0065',
         category: 'Film',
         question:
-            'Which 1984 film features the characters Peter Venkman, Ray Stantz and Egon Spengler?',
+            'Which actor played Axel Foley in the "Beverly Hills Cop" films?',
         answers: [
-            'Ghostbusters',
-            'Gremlins',
-            'The Goonies',
-            'Beetlejuice'
+            'Eddie Murphy',
+            'Richard Pryor',
+            'Dan Aykroyd',
+            'Bill Murray'
         ],
         correctAnswer:
-            'Ghostbusters',
+            'Eddie Murphy',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             '1980s',
-            'comedy',
-            'characters'
+            'actors',
+            'comedy'
         ],
         dailyEligible:
             true
@@ -576,20 +577,20 @@ const questions = [
         id: 'general_0032',
         category: 'General Knowledge',
         question:
-            'What name is given to a word that reads the same forwards and backwards?',
+            'What is the collective name for a group of lions?',
         answers: [
-            'Palindrome',
-            'Anagram',
-            'Acronym',
-            'Homonym'
+            'Pride',
+            'Pack',
+            'Herd',
+            'Flock'
         ],
         correctAnswer:
-            'Palindrome',
+            'Pride',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
+            'animals',
             'words',
-            'language',
             'general knowledge'
         ],
         dailyEligible:
@@ -600,20 +601,20 @@ const questions = [
         id: 'general_0033',
         category: 'General Knowledge',
         question:
-            'Which instrument is used to measure atmospheric pressure?',
+            'How many colours are traditionally listed in a rainbow?',
         answers: [
-            'Barometer',
-            'Thermometer',
-            'Hygrometer',
-            'Anemometer'
+            '7',
+            '6',
+            '8',
+            '9'
         ],
         correctAnswer:
-            'Barometer',
+            '7',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            'weather',
-            'instruments',
+            'nature',
+            'numbers',
             'general knowledge'
         ],
         dailyEligible:
@@ -652,21 +653,21 @@ const questions = [
         id: 'history_0031',
         category: 'History',
         question:
-            'Which British monarch was on the throne for most of the 19th century?',
+            'Which English king was nicknamed "Longshanks"?',
         answers: [
-            'Queen Victoria',
-            'Queen Anne',
-            'George III',
-            'Edward VII'
+            'Edward I',
+            'Edward II',
+            'Henry III',
+            'Richard I'
         ],
         correctAnswer:
-            'Queen Victoria',
+            'Edward I',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'monarchy',
-            'victorian'
+            'medieval',
+            'monarchy'
         ],
         dailyEligible:
             true
@@ -676,21 +677,21 @@ const questions = [
         id: 'history_0032',
         category: 'History',
         question:
-            'Which city was buried by the eruption of Mount Vesuvius in AD 79?',
+            'Which Roman emperor is traditionally associated with the conquest of Britain beginning in AD 43?',
         answers: [
-            'Pompeii',
-            'Athens',
-            'Sparta',
-            'Carthage'
+            'Claudius',
+            'Nero',
+            'Augustus',
+            'Caligula'
         ],
         correctAnswer:
-            'Pompeii',
+            'Claudius',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'ancient history',
             'romans',
-            'italy'
+            'britain'
         ],
         dailyEligible:
             true
@@ -704,21 +705,21 @@ const questions = [
         id: 'geography_0030',
         category: 'Geography',
         question:
-            'What is the capital city of New Zealand?',
+            'What is the capital city of Iceland?',
         answers: [
-            'Wellington',
-            'Auckland',
-            'Christchurch',
-            'Hamilton'
+            'Reykjavík',
+            'Oslo',
+            'Helsinki',
+            'Copenhagen'
         ],
         correctAnswer:
-            'Wellington',
+            'Reykjavík',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
+            'europe',
             'capitals',
-            'new zealand',
-            'oceania'
+            'iceland'
         ],
         dailyEligible:
             true
@@ -728,21 +729,21 @@ const questions = [
         id: 'geography_0031',
         category: 'Geography',
         question:
-            'Which river flows through the city of London?',
+            'Which river flows through the city of Glasgow?',
         answers: [
-            'Thames',
-            'Severn',
-            'Trent',
-            'Mersey'
+            'Clyde',
+            'Tay',
+            'Forth',
+            'Tweed'
         ],
         correctAnswer:
-            'Thames',
+            'Clyde',
         difficulty:
             'Easy',
         tags: [
             'british',
-            'rivers',
-            'london'
+            'scotland',
+            'rivers'
         ],
         dailyEligible:
             true
@@ -752,17 +753,17 @@ const questions = [
         id: 'geography_0032',
         category: 'Geography',
         question:
-            'Which country has the city of Dubrovnik on its Adriatic coast?',
+            'Which country has the city of Salzburg?',
         answers: [
-            'Croatia',
-            'Greece',
-            'Italy',
-            'Albania'
+            'Austria',
+            'Germany',
+            'Switzerland',
+            'Belgium'
         ],
         correctAnswer:
-            'Croatia',
+            'Austria',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             'europe',
             'cities',
@@ -780,17 +781,17 @@ const questions = [
         id: 'science_0029',
         category: 'Science',
         question:
-            'Which blood cells help the body fight infection?',
+            'Which blood component helps the blood to clot?',
         answers: [
-            'White blood cells',
-            'Red blood cells',
             'Platelets',
+            'Red blood cells',
+            'White blood cells',
             'Plasma'
         ],
         correctAnswer:
-            'White blood cells',
+            'Platelets',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'biology',
             'human body',
@@ -804,20 +805,20 @@ const questions = [
         id: 'science_0030',
         category: 'Science',
         question:
-            'What is the hardest natural substance?',
+            'Which metal is liquid at room temperature?',
         answers: [
-            'Diamond',
-            'Quartz',
-            'Granite',
-            'Iron'
+            'Mercury',
+            'Iron',
+            'Copper',
+            'Aluminium'
         ],
         correctAnswer:
-            'Diamond',
+            'Mercury',
         difficulty:
             'Easy',
         tags: [
-            'materials',
             'chemistry',
+            'elements',
             'science'
         ],
         dailyEligible:
@@ -856,20 +857,20 @@ const questions = [
         id: 'food_0020',
         category: 'Food and Drink',
         question:
-            'Which Italian dessert is traditionally made with coffee-soaked sponge fingers and mascarpone?',
+            'Which nuts are traditionally used to make marzipan?',
         answers: [
-            'Tiramisu',
-            'Panna cotta',
-            'Cannoli',
-            'Panettone'
+            'Almonds',
+            'Hazelnuts',
+            'Walnuts',
+            'Pistachios'
         ],
         correctAnswer:
-            'Tiramisu',
+            'Almonds',
         difficulty:
             'Easy',
         tags: [
-            'italian',
-            'desserts',
+            'ingredients',
+            'sweets',
             'food'
         ],
         dailyEligible:
@@ -880,20 +881,20 @@ const questions = [
         id: 'food_0021',
         category: 'Food and Drink',
         question:
-            'Which fruit is dried to make a prune?',
+            'Which fruit is the main ingredient in a traditional tarte Tatin?',
         answers: [
+            'Apple',
+            'Pear',
             'Plum',
-            'Apricot',
-            'Fig',
-            'Date'
+            'Peach'
         ],
         correctAnswer:
-            'Plum',
+            'Apple',
         difficulty:
             'Easy',
         tags: [
             'fruit',
-            'ingredients',
+            'desserts',
             'food'
         ],
         dailyEligible:
@@ -908,20 +909,20 @@ const questions = [
         id: 'sport_0020',
         category: 'Sport',
         question:
-            'In cricket, how many runs are awarded when the ball reaches the boundary without bouncing?',
+            'In snooker, which coloured ball is worth seven points?',
         answers: [
-            '6',
-            '4',
-            '5',
-            '8'
+            'Black',
+            'Pink',
+            'Blue',
+            'Brown'
         ],
         correctAnswer:
-            '6',
+            'Black',
         difficulty:
             'Easy',
         tags: [
-            'cricket',
-            'rules',
+            'snooker',
+            'scoring',
             'sport'
         ],
         dailyEligible:
@@ -960,21 +961,21 @@ const questions = [
         id: 'literature_0018',
         category: 'Literature',
         question:
-            'Who wrote the novel "Pride and Prejudice"?',
+            'Who wrote the novel "The Remains of the Day"?',
         answers: [
-            'Jane Austen',
-            'Charlotte Brontë',
-            'George Eliot',
-            'Elizabeth Gaskell'
+            'Kazuo Ishiguro',
+            'Ian McEwan',
+            'Julian Barnes',
+            'Martin Amis'
         ],
         correctAnswer:
-            'Jane Austen',
+            'Kazuo Ishiguro',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
             'authors',
-            'classics'
+            'novels'
         ],
         dailyEligible:
             true
