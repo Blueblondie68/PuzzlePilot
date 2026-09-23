@@ -629,15 +629,15 @@ const questions = [
         id: 'history_0030',
         category: 'History',
         question:
-            'Which English king was forced to agree to Magna Carta in 1215?',
+            'Which English king was killed at the Battle of Hastings in 1066?',
         answers: [
-            'King John',
-            'Henry II',
-            'Richard I',
-            'Edward I'
+            'Harold II',
+            'William I',
+            'Edward the Confessor',
+            'Henry I'
         ],
         correctAnswer:
-            'King John',
+            'Harold II',
         difficulty:
             'Medium',
         tags: [
@@ -677,21 +677,21 @@ const questions = [
         id: 'history_0032',
         category: 'History',
         question:
-            'Which Roman emperor is traditionally associated with the conquest of Britain beginning in AD 43?',
+            'Which Tudor monarch was the daughter of Henry VIII and Anne Boleyn?',
         answers: [
-            'Claudius',
-            'Nero',
-            'Augustus',
-            'Caligula'
+            'Elizabeth I',
+            'Mary I',
+            'Lady Jane Grey',
+            'Mary, Queen of Scots'
         ],
         correctAnswer:
-            'Claudius',
+            'Elizabeth I',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            'ancient history',
-            'romans',
-            'britain'
+            'british',
+            'tudors',
+            'monarchy'
         ],
         dailyEligible:
             true
@@ -729,21 +729,21 @@ const questions = [
         id: 'geography_0031',
         category: 'Geography',
         question:
-            'Which river flows through the city of Glasgow?',
+            'Which mountain is the highest in Wales?',
         answers: [
-            'Clyde',
-            'Tay',
-            'Forth',
-            'Tweed'
+            'Yr Wyddfa (Snowdon)',
+            'Pen y Fan',
+            'Cadair Idris',
+            'Tryfan'
         ],
         correctAnswer:
-            'Clyde',
+            'Yr Wyddfa (Snowdon)',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'scotland',
-            'rivers'
+            'wales',
+            'mountains'
         ],
         dailyEligible:
             true
@@ -909,20 +909,20 @@ const questions = [
         id: 'sport_0020',
         category: 'Sport',
         question:
-            'In snooker, which coloured ball is worth seven points?',
+            'How many players from one team are on the court at a time in volleyball?',
         answers: [
-            'Black',
-            'Pink',
-            'Blue',
-            'Brown'
+            '6',
+            '5',
+            '7',
+            '8'
         ],
         correctAnswer:
-            'Black',
+            '6',
         difficulty:
             'Easy',
         tags: [
-            'snooker',
-            'scoring',
+            'volleyball',
+            'players',
             'sport'
         ],
         dailyEligible:
