@@ -12,21 +12,21 @@ const questions = [
         id: 'music_0069',
         category: 'Music',
         question:
-            'Which singer released the 1987 album "Faith"?',
+            'Which singer released the 1986 hit "Holding Back the Years"?',
         answers: [
-            'George Michael',
-            'Phil Collins',
-            'Rick Astley',
-            'Bryan Adams'
+            'Mick Hucknall',
+            'Paul Young',
+            'Bryan Ferry',
+            'Nik Kershaw'
         ],
         correctAnswer:
-            'George Michael',
+            'Mick Hucknall',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1980s',
-            'albums',
-            'british'
+            'british',
+            'singers'
         ],
         dailyEligible:
             true
@@ -156,20 +156,20 @@ const questions = [
         id: 'music_0075',
         category: 'Music',
         question:
-            'Which band released the album "The Joshua Tree" in 1987?',
+            'Which band released the 1987 hit "Here I Go Again"?',
         answers: [
-            'U2',
-            'R.E.M.',
-            'INXS',
-            'Simple Minds'
+            'Whitesnake',
+            'Def Leppard',
+            'Bon Jovi',
+            'Europe'
         ],
         correctAnswer:
-            'U2',
+            'Whitesnake',
         difficulty:
             'Medium',
         tags: [
             '1980s',
-            'albums',
+            'rock',
             'bands'
         ],
         dailyEligible:
@@ -208,20 +208,20 @@ const questions = [
         id: 'tv_0069',
         category: 'Television',
         question:
-            'Which actor played David Brent in "The Office"?',
+            'Which actor played Alan Partridge in television series including "I\'m Alan Partridge"?',
         answers: [
-            'Ricky Gervais',
-            'Martin Freeman',
-            'Mackenzie Crook',
-            'Stephen Merchant'
+            'Steve Coogan',
+            'Rob Brydon',
+            'Chris Morris',
+            'Armando Iannucci'
         ],
         correctAnswer:
-            'Ricky Gervais',
+            'Steve Coogan',
         difficulty:
             'Easy',
         tags: [
             'british',
-            'sitcoms',
+            'comedy',
             'actors'
         ],
         dailyEligible:
@@ -256,20 +256,20 @@ const questions = [
         id: 'tv_0071',
         category: 'Television',
         question:
-            'Which actor played Inspector Morse in the original television series?',
+            'Which actress played Jean Pargetter in "As Time Goes By"?',
         answers: [
-            'John Thaw',
-            'Kevin Whately',
-            'David Suchet',
-            'George Cole'
+            'Judi Dench',
+            'Penelope Wilton',
+            'Patricia Routledge',
+            'Stephanie Cole'
         ],
         correctAnswer:
-            'John Thaw',
+            'Judi Dench',
         difficulty:
             'Medium',
         tags: [
             'british',
-            'crime',
+            'sitcoms',
             'actors'
         ],
         dailyEligible:
@@ -280,15 +280,15 @@ const questions = [
         id: 'tv_0072',
         category: 'Television',
         question:
-            'Which comedy series featured the characters Richie and Eddie, played by Rik Mayall and Adrian Edmondson?',
+            'Which British sitcom starred Simon Pegg as Tim Bisley and Jessica Hynes as Daisy Steiner?',
         answers: [
-            'Bottom',
-            'The Young Ones',
-            'Men Behaving Badly',
-            'Black Books'
+            'Spaced',
+            'Green Wing',
+            'Black Books',
+            'Coupling'
         ],
         correctAnswer:
-            'Bottom',
+            'Spaced',
         difficulty:
             'Medium',
         tags: [
@@ -304,21 +304,21 @@ const questions = [
         id: 'tv_0073',
         category: 'Television',
         question:
-            'In "Breaking Bad", what subject does Walter White teach before becoming involved in the drug trade?',
+            'Which actor played Niles Crane in the sitcom "Frasier"?',
         answers: [
-            'Chemistry',
-            'Physics',
-            'Biology',
-            'Mathematics'
+            'David Hyde Pierce',
+            'Kelsey Grammer',
+            'John Mahoney',
+            'Peri Gilpin'
         ],
         correctAnswer:
-            'Chemistry',
+            'David Hyde Pierce',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'american',
-            'drama',
-            'breaking bad'
+            'sitcoms',
+            'actors'
         ],
         dailyEligible:
             true
@@ -404,19 +404,19 @@ const questions = [
         id: 'film_0055',
         category: 'Film',
         question:
-            'Which actor played Maximus in the 2000 film "Gladiator"?',
+            'Which actor played William Wallace in the 1995 film "Braveheart"?',
         answers: [
-            'Russell Crowe',
             'Mel Gibson',
-            'Hugh Jackman',
-            'Gerard Butler'
+            'Liam Neeson',
+            'Kevin Costner',
+            'Russell Crowe'
         ],
         correctAnswer:
-            'Russell Crowe',
+            'Mel Gibson',
         difficulty:
             'Easy',
         tags: [
-            '2000s',
+            '1990s',
             'actors',
             'films'
         ],
@@ -428,21 +428,21 @@ const questions = [
         id: 'film_0056',
         category: 'Film',
         question:
-            'Which actress played the title role in the 2001 film "Lara Croft: Tomb Raider"?',
+            'Which actress played Cher Horowitz in the 1995 film "Clueless"?',
         answers: [
-            'Angelina Jolie',
-            'Charlize Theron',
-            'Milla Jovovich',
-            'Jennifer Garner'
+            'Alicia Silverstone',
+            'Reese Witherspoon',
+            'Sarah Michelle Gellar',
+            'Liv Tyler'
         ],
         correctAnswer:
-            'Angelina Jolie',
+            'Alicia Silverstone',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '2000s',
+            '1990s',
             'actors',
-            'action'
+            'comedy'
         ],
         dailyEligible:
             true
@@ -576,15 +576,15 @@ const questions = [
         id: 'general_0029',
         category: 'General Knowledge',
         question:
-            'Which number is represented by the Roman numeral L?',
+            'Which number is represented by the Roman numeral D?',
         answers: [
-            '50',
+            '500',
             '100',
-            '10',
-            '500'
+            '50',
+            '1000'
         ],
         correctAnswer:
-            '50',
+            '500',
         difficulty:
             'Medium',
         tags: [
@@ -704,21 +704,21 @@ const questions = [
         id: 'geography_0027',
         category: 'Geography',
         question:
-            'What is the capital city of Canada?',
+            'What is the capital city of Belgium?',
         answers: [
-            'Ottawa',
-            'Toronto',
-            'Vancouver',
-            'Montreal'
+            'Brussels',
+            'Bruges',
+            'Antwerp',
+            'Ghent'
         ],
         correctAnswer:
-            'Ottawa',
+            'Brussels',
         difficulty:
             'Easy',
         tags: [
-            'canada',
+            'europe',
             'capitals',
-            'north america'
+            'belgium'
         ],
         dailyEligible:
             true
@@ -752,15 +752,15 @@ const questions = [
         id: 'geography_0029',
         category: 'Geography',
         question:
-            'Which European city is divided by the River Danube into the historic areas of Buda and Pest?',
+            'Which European capital city stands on the River Vltava?',
         answers: [
-            'Budapest',
-            'Vienna',
             'Prague',
+            'Vienna',
+            'Warsaw',
             'Bratislava'
         ],
         correctAnswer:
-            'Budapest',
+            'Prague',
         difficulty:
             'Medium',
         tags: [
@@ -780,15 +780,15 @@ const questions = [
         id: 'science_0026',
         category: 'Science',
         question:
-            'Which gas do plants absorb from the atmosphere during photosynthesis?',
+            'Which part of a plant carries out most photosynthesis?',
         answers: [
-            'Carbon dioxide',
-            'Oxygen',
-            'Nitrogen',
-            'Hydrogen'
+            'Leaves',
+            'Roots',
+            'Flowers',
+            'Seeds'
         ],
         correctAnswer:
-            'Carbon dioxide',
+            'Leaves',
         difficulty:
             'Easy',
         tags: [
@@ -880,20 +880,20 @@ const questions = [
         id: 'food_0019',
         category: 'Food and Drink',
         question:
-            'Which herb is the main ingredient in traditional pesto Genovese?',
+            'Which type of cheese is traditionally used in a Greek moussaka topping?',
         answers: [
-            'Basil',
-            'Parsley',
-            'Coriander',
-            'Mint'
+            'Kefalotyri',
+            'Brie',
+            'Stilton',
+            'Gouda'
         ],
         correctAnswer:
-            'Basil',
+            'Kefalotyri',
         difficulty:
-            'Easy',
+            'Hard',
         tags: [
-            'italian',
-            'ingredients',
+            'greek',
+            'cheese',
             'food'
         ],
         dailyEligible:
@@ -932,20 +932,20 @@ const questions = [
         id: 'sport_0019',
         category: 'Sport',
         question:
-            'How many points is a try worth in rugby union?',
+            'In darts, what is the highest possible score with a single dart?',
         answers: [
-            '5',
-            '3',
-            '6',
-            '7'
+            '60',
+            '50',
+            '40',
+            '75'
         ],
         correctAnswer:
-            '5',
+            '60',
         difficulty:
             'Easy',
         tags: [
-            'rugby',
-            'rules',
+            'darts',
+            'scoring',
             'sport'
         ],
         dailyEligible:
@@ -960,15 +960,15 @@ const questions = [
         id: 'literature_0016',
         category: 'Literature',
         question:
-            'Who wrote the novel "Rebecca"?',
+            'Who wrote the novel "Atonement"?',
         answers: [
-            'Daphne du Maurier',
-            'Agatha Christie',
-            'Virginia Woolf',
-            'Iris Murdoch'
+            'Ian McEwan',
+            'Julian Barnes',
+            'Martin Amis',
+            'Kazuo Ishiguro'
         ],
         correctAnswer:
-            'Daphne du Maurier',
+            'Ian McEwan',
         difficulty:
             'Medium',
         tags: [
