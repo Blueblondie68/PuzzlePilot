@@ -12,21 +12,21 @@ const questions = [
         id: 'music_0069',
         category: 'Music',
         question:
-            'Which singer released the 1986 hit "Holding Back the Years"?',
+            'Which band released the 1985 single "Holding Back the Years"?',
         answers: [
-            'Mick Hucknall',
-            'Paul Young',
-            'Bryan Ferry',
-            'Nik Kershaw'
+            'Simply Red',
+            'Tears for Fears',
+            'Spandau Ballet',
+            'Level 42'
         ],
         correctAnswer:
-            'Mick Hucknall',
+            'Simply Red',
         difficulty:
             'Medium',
         tags: [
             '1980s',
             'british',
-            'singers'
+            'bands'
         ],
         dailyEligible:
             true
@@ -180,15 +180,15 @@ const questions = [
         id: 'music_0076',
         category: 'Music',
         question:
-            'Which singer had a 1964 hit with "Downtown"?',
+            'Which singer had a 1964 hit with "You Don\'t Have to Say You Love Me"?',
         answers: [
-            'Petula Clark',
-            'Cilla Black',
             'Dusty Springfield',
-            'Sandie Shaw'
+            'Cilla Black',
+            'Sandie Shaw',
+            'Lulu'
         ],
         correctAnswer:
-            'Petula Clark',
+            'Dusty Springfield',
         difficulty:
             'Medium',
         tags: [
@@ -428,21 +428,21 @@ const questions = [
         id: 'film_0056',
         category: 'Film',
         question:
-            'Which actress played Cher Horowitz in the 1995 film "Clueless"?',
+            'Which actress played Bridget Jones in the 2001 film "Bridget Jones\'s Diary"?',
         answers: [
-            'Alicia Silverstone',
-            'Reese Witherspoon',
-            'Sarah Michelle Gellar',
-            'Liv Tyler'
+            'Renée Zellweger',
+            'Sandra Bullock',
+            'Julia Roberts',
+            'Kate Winslet'
         ],
         correctAnswer:
-            'Alicia Silverstone',
+            'Renée Zellweger',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            '1990s',
+            '2000s',
             'actors',
-            'comedy'
+            'romantic comedy'
         ],
         dailyEligible:
             true
@@ -676,21 +676,21 @@ const questions = [
         id: 'history_0029',
         category: 'History',
         question:
-            'Which ancient civilisation built Machu Picchu?',
+            'Which English king sealed Magna Carta at Runnymede in 1215?',
         answers: [
-            'Inca',
-            'Maya',
-            'Aztec',
-            'Roman'
+            'King John',
+            'Henry II',
+            'Richard I',
+            'Edward I'
         ],
         correctAnswer:
-            'Inca',
+            'King John',
         difficulty:
             'Medium',
         tags: [
-            'ancient history',
-            'south america',
-            'civilisations'
+            'british',
+            'monarchy',
+            'medieval'
         ],
         dailyEligible:
             true
@@ -880,20 +880,20 @@ const questions = [
         id: 'food_0019',
         category: 'Food and Drink',
         question:
-            'Which type of cheese is traditionally used in a Greek moussaka topping?',
+            'Which fruit is dried to make a prune?',
         answers: [
-            'Kefalotyri',
-            'Brie',
-            'Stilton',
-            'Gouda'
+            'Plum',
+            'Apricot',
+            'Fig',
+            'Date'
         ],
         correctAnswer:
-            'Kefalotyri',
+            'Plum',
         difficulty:
-            'Hard',
+            'Easy',
         tags: [
-            'greek',
-            'cheese',
+            'fruit',
+            'ingredients',
             'food'
         ],
         dailyEligible:
