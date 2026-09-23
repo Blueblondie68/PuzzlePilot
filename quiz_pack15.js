@@ -132,21 +132,21 @@ const questions = [
         id: 'music_0114',
         category: 'Music',
         question:
-            'Which band released the 1994 album "Parklife"?',
+            'Which band released the 1996 hit "Breakfast at Tiffany\'s"?',
         answers: [
-            'Blur',
-            'Oasis',
-            'Pulp',
-            'Suede'
+            'Deep Blue Something',
+            'Semisonic',
+            'Third Eye Blind',
+            'Gin Blossoms'
         ],
         correctAnswer:
-            'Blur',
+            'Deep Blue Something',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1990s',
-            'british',
-            'albums'
+            'bands',
+            'songs'
         ],
         dailyEligible:
             true
@@ -156,15 +156,15 @@ const questions = [
         id: 'music_0115',
         category: 'Music',
         question:
-            'Which singer released the 1987 hit "Heaven Is a Place on Earth"?',
+            'Which singer released the 1987 hit "Luka"?',
         answers: [
-            'Belinda Carlisle',
-            'Kim Wilde',
+            'Suzanne Vega',
+            'Tracy Chapman',
             'Cyndi Lauper',
-            'Pat Benatar'
+            'Tori Amos'
         ],
         correctAnswer:
-            'Belinda Carlisle',
+            'Suzanne Vega',
         difficulty:
             'Medium',
         tags: [
@@ -328,15 +328,15 @@ const questions = [
         id: 'tv_0114',
         category: 'Television',
         question:
-            'Which actress played DCI Vera Stanhope in the television series "Vera"?',
+            'Which actress played Detective Inspector Alex Drake in "Ashes to Ashes"?',
         answers: [
-            'Brenda Blethyn',
-            'Sarah Lancashire',
+            'Keeley Hawes',
+            'Suranne Jones',
             'Nicola Walker',
-            'Suranne Jones'
+            'Anna Maxwell Martin'
         ],
         correctAnswer:
-            'Brenda Blethyn',
+            'Keeley Hawes',
         difficulty:
             'Medium',
         tags: [
@@ -476,21 +476,21 @@ const questions = [
         id: 'film_0088',
         category: 'Film',
         question:
-            'Which film features a character named Ferris Bueller who skips school for the day?',
+            'Which actress played Annie Wilkes in the 1990 film "Misery"?',
         answers: [
-            'Ferris Bueller\'s Day Off',
-            'The Breakfast Club',
-            'Pretty in Pink',
-            'Sixteen Candles'
+            'Kathy Bates',
+            'Jessica Lange',
+            'Susan Sarandon',
+            'Sissy Spacek'
         ],
         correctAnswer:
-            'Ferris Bueller\'s Day Off',
+            'Kathy Bates',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1980s',
-            'comedy',
-            'characters'
+            '1990s',
+            'thriller',
+            'actors'
         ],
         dailyEligible:
             true
@@ -676,21 +676,21 @@ const questions = [
         id: 'history_0044',
         category: 'History',
         question:
-            'Which Roman emperor ordered the construction of a wall across northern Britain?',
+            'Which English king lost the throne to William of Orange in the Glorious Revolution of 1688?',
         answers: [
-            'Hadrian',
-            'Nero',
-            'Augustus',
-            'Claudius'
+            'James II',
+            'Charles II',
+            'William II',
+            'George I'
         ],
         correctAnswer:
-            'Hadrian',
+            'James II',
         difficulty:
             'Medium',
         tags: [
-            'roman',
             'british',
-            'ancient history'
+            '17th century',
+            'monarchy'
         ],
         dailyEligible:
             true
