@@ -352,21 +352,21 @@ const questions = [
         id: 'tv_0051',
         category: 'TV',
         question:
-            'Which actor played Tony Soprano in "The Sopranos"?',
+            'Which actor played Omar Little in the television series "The Wire"?',
         answers: [
-            'James Gandolfini',
-            'Steve Buscemi',
-            'Michael Imperioli',
-            'Joe Pantoliano'
+            'Michael K. Williams',
+            'Idris Elba',
+            'Dominic West',
+            'Wendell Pierce'
         ],
         correctAnswer:
-            'James Gandolfini',
+            'Michael K. Williams',
         difficulty:
             'Medium',
         tags: [
             'american',
             'drama',
-            '1990s',
+            '2000s',
             'actors'
         ],
         dailyEligible:
