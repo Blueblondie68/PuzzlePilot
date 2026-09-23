@@ -12,17 +12,17 @@ const questions = [
         id: 'music_0101',
         category: 'Music',
         question:
-            'Which band released the 1985 hit "Everybody Wants to Rule the World"?',
+            'Which band released the 1987 hit "Never Let Me Down Again"?',
         answers: [
-            'Tears for Fears',
-            'Simple Minds',
-            'Duran Duran',
-            'Spandau Ballet'
+            'Depeche Mode',
+            'New Order',
+            'The Cure',
+            'Pet Shop Boys'
         ],
         correctAnswer:
-            'Tears for Fears',
+            'Depeche Mode',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1980s',
             'british',
@@ -36,15 +36,15 @@ const questions = [
         id: 'music_0102',
         category: 'Music',
         question:
-            'Which singer released the 1994 hit "Stay (I Missed You)"?',
+            'Which singer released the 1998 hit "Torn"?',
         answers: [
-            'Lisa Loeb',
+            'Natalie Imbruglia',
             'Sheryl Crow',
-            'Alanis Morissette',
+            'Meredith Brooks',
             'Paula Cole'
         ],
         correctAnswer:
-            'Lisa Loeb',
+            'Natalie Imbruglia',
         difficulty:
             'Medium',
         tags: [
@@ -132,21 +132,21 @@ const questions = [
         id: 'music_0106',
         category: 'Music',
         question:
-            'Which singer had a 1984 hit with "Girls Just Want to Have Fun"?',
+            'Which band released the 1981 hit "Tainted Love"?',
         answers: [
-            'Cyndi Lauper',
-            'Belinda Carlisle',
-            'Pat Benatar',
-            'Kim Wilde'
+            'Soft Cell',
+            'Human League',
+            'Depeche Mode',
+            'Ultravox'
         ],
         correctAnswer:
-            'Cyndi Lauper',
+            'Soft Cell',
         difficulty:
             'Easy',
         tags: [
             '1980s',
-            'singers',
-            'songs'
+            'british',
+            'bands'
         ],
         dailyEligible:
             true
@@ -256,21 +256,21 @@ const questions = [
         id: 'tv_0103',
         category: 'Television',
         question:
-            'What is the name of the pub in "Coronation Street"?',
+            'Which actor played Basil Fawlty in "Fawlty Towers"?',
         answers: [
-            'The Rovers Return',
-            'The Queen Victoria',
-            'The Woolpack',
-            'The Dog in the Pond'
+            'John Cleese',
+            'Ronnie Barker',
+            'Leonard Rossiter',
+            'Richard Briers'
         ],
         correctAnswer:
-            'The Rovers Return',
+            'John Cleese',
         difficulty:
             'Easy',
         tags: [
             'british',
-            'soaps',
-            'coronation street'
+            'sitcoms',
+            'actors'
         ],
         dailyEligible:
             true
@@ -304,21 +304,21 @@ const questions = [
         id: 'tv_0105',
         category: 'Television',
         question:
-            'Which US television series features the chemistry teacher Walter White?',
+            'Which actress played Catherine Cawood in "Happy Valley"?',
         answers: [
-            'Breaking Bad',
-            'Better Call Saul',
-            'The Wire',
-            'Dexter'
+            'Sarah Lancashire',
+            'Suranne Jones',
+            'Nicola Walker',
+            'Maxine Peake'
         ],
         correctAnswer:
-            'Breaking Bad',
+            'Sarah Lancashire',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'american',
+            'british',
             'drama',
-            'characters'
+            'actors'
         ],
         dailyEligible:
             true
@@ -328,20 +328,20 @@ const questions = [
         id: 'tv_0106',
         category: 'Television',
         question:
-            'Which actor played Edmund Blackadder in the "Blackadder" television series?',
+            'Which actor played David Brent\'s colleague Gareth Keenan in "The Office"?',
         answers: [
-            'Rowan Atkinson',
-            'Hugh Laurie',
-            'Stephen Fry',
-            'Tony Robinson'
+            'Mackenzie Crook',
+            'Martin Freeman',
+            'Ricky Gervais',
+            'Stephen Merchant'
         ],
         correctAnswer:
-            'Rowan Atkinson',
+            'Mackenzie Crook',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'comedy',
+            'sitcoms',
             'actors'
         ],
         dailyEligible:
@@ -352,21 +352,21 @@ const questions = [
         id: 'tv_0107',
         category: 'Television',
         question:
-            'What is the name of the fictional Yorkshire village in "Emmerdale"?',
+            'Which actress played DCI Jane Tennison in "Prime Suspect"?',
         answers: [
-            'Emmerdale',
-            'Weatherfield',
-            'Walford',
-            'Hollyoaks'
+            'Helen Mirren',
+            'Julie Walters',
+            'Judi Dench',
+            'Brenda Blethyn'
         ],
         correctAnswer:
-            'Emmerdale',
+            'Helen Mirren',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'soaps',
-            'locations'
+            'crime',
+            'actors'
         ],
         dailyEligible:
             true
@@ -376,17 +376,17 @@ const questions = [
         id: 'tv_0108',
         category: 'Television',
         question:
-            'Which actor played the title character in the television detective series "Luther"?',
+            'Which actor played Detective Inspector Alec Hardy in "Broadchurch"?',
         answers: [
-            'Idris Elba',
-            'Adrian Lester',
-            'David Oyelowo',
-            'Lennie James'
+            'David Tennant',
+            'Martin Freeman',
+            'John Simm',
+            'James Nesbitt'
         ],
         correctAnswer:
-            'Idris Elba',
+            'David Tennant',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
             'crime',
@@ -404,21 +404,21 @@ const questions = [
         id: 'film_0079',
         category: 'Film',
         question:
-            'Which actress played Ellen Ripley in the "Alien" films?',
+            'Which actress played Thelma Dickinson in "Thelma & Louise"?',
         answers: [
-            'Sigourney Weaver',
-            'Linda Hamilton',
-            'Jamie Lee Curtis',
-            'Geena Davis'
+            'Geena Davis',
+            'Susan Sarandon',
+            'Michelle Pfeiffer',
+            'Holly Hunter'
         ],
         correctAnswer:
-            'Sigourney Weaver',
+            'Geena Davis',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'science fiction',
+            '1990s',
             'actors',
-            'film series'
+            'drama'
         ],
         dailyEligible:
             true
@@ -476,21 +476,21 @@ const questions = [
         id: 'film_0082',
         category: 'Film',
         question:
-            'Which actress played Bridget Gregory in the 1994 film "The Last Seduction"?',
+            'Which actor played Billy Elliot\'s father Jackie in the 2000 film "Billy Elliot"?',
         answers: [
-            'Linda Fiorentino',
-            'Sharon Stone',
-            'Michelle Pfeiffer',
-            'Kim Basinger'
+            'Gary Lewis',
+            'Jim Broadbent',
+            'Robert Carlyle',
+            'Brendan Gleeson'
         ],
         correctAnswer:
-            'Linda Fiorentino',
+            'Gary Lewis',
         difficulty:
             'Hard',
         tags: [
-            '1990s',
-            'actors',
-            'thriller'
+            '2000s',
+            'british',
+            'actors'
         ],
         dailyEligible:
             true
@@ -500,21 +500,21 @@ const questions = [
         id: 'film_0083',
         category: 'Film',
         question:
-            'Which 1986 film stars Tom Cruise as fighter pilot Pete "Maverick" Mitchell?',
+            'Which actor played George Bailey in the 1946 film "It\'s a Wonderful Life"?',
         answers: [
-            'Top Gun',
-            'Days of Thunder',
-            'Cocktail',
-            'Risky Business'
+            'James Stewart',
+            'Cary Grant',
+            'Gregory Peck',
+            'Henry Fonda'
         ],
         correctAnswer:
-            'Top Gun',
+            'James Stewart',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1980s',
+            '1940s',
             'actors',
-            'action'
+            'classics'
         ],
         dailyEligible:
             true
@@ -552,15 +552,15 @@ const questions = [
         id: 'general_0040',
         category: 'General Knowledge',
         question:
-            'How many sides does an octagon have?',
+            'How many sides does a decagon have?',
         answers: [
-            '8',
-            '6',
             '10',
+            '8',
+            '9',
             '12'
         ],
         correctAnswer:
-            '8',
+            '10',
         difficulty:
             'Easy',
         tags: [
@@ -752,21 +752,21 @@ const questions = [
         id: 'geography_0041',
         category: 'Geography',
         question:
-            'Which is the largest island in the Mediterranean Sea?',
+            'Which European country has the city of Porto?',
         answers: [
-            'Sicily',
-            'Sardinia',
-            'Cyprus',
-            'Crete'
+            'Portugal',
+            'Spain',
+            'Italy',
+            'Greece'
         ],
         correctAnswer:
-            'Sicily',
+            'Portugal',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             'europe',
-            'islands',
-            'mediterranean'
+            'countries',
+            'cities'
         ],
         dailyEligible:
             true
@@ -780,15 +780,15 @@ const questions = [
         id: 'science_0038',
         category: 'Science',
         question:
-            'Which organ pumps blood around the human body?',
+            'Which organ in the human body filters waste from the blood to produce urine?',
         answers: [
-            'Heart',
+            'Kidneys',
             'Liver',
-            'Lung',
-            'Kidney'
+            'Lungs',
+            'Pancreas'
         ],
         correctAnswer:
-            'Heart',
+            'Kidneys',
         difficulty:
             'Easy',
         tags: [
@@ -804,15 +804,15 @@ const questions = [
         id: 'science_0039',
         category: 'Science',
         question:
-            'What is the chemical symbol for silver?',
+            'What is the chemical symbol for iron?',
         answers: [
-            'Ag',
-            'Si',
-            'Sr',
-            'S'
+            'Fe',
+            'Ir',
+            'In',
+            'I'
         ],
         correctAnswer:
-            'Ag',
+            'Fe',
         difficulty:
             'Medium',
         tags: [
@@ -828,15 +828,15 @@ const questions = [
         id: 'science_0040',
         category: 'Science',
         question:
-            'Which planet is famous for its Great Red Spot?',
+            'Which planet is best known for its prominent ring system?',
         answers: [
-            'Jupiter',
-            'Mars',
             'Saturn',
+            'Jupiter',
+            'Uranus',
             'Neptune'
         ],
         correctAnswer:
-            'Jupiter',
+            'Saturn',
         difficulty:
             'Easy',
         tags: [
@@ -856,21 +856,21 @@ const questions = [
         id: 'food_0026',
         category: 'Food and Drink',
         question:
-            'What is the main ingredient in guacamole?',
+            'Which pulse is the main ingredient in traditional hummus?',
         answers: [
-            'Avocado',
-            'Tomato',
             'Chickpea',
-            'Cucumber'
+            'Lentil',
+            'Kidney bean',
+            'Butter bean'
         ],
         correctAnswer:
-            'Avocado',
+            'Chickpea',
         difficulty:
             'Easy',
         tags: [
             'ingredients',
-            'mexican',
-            'food'
+            'food',
+            'middle eastern'
         ],
         dailyEligible:
             true
@@ -880,20 +880,20 @@ const questions = [
         id: 'food_0027',
         category: 'Food and Drink',
         question:
-            'Which fruit is traditionally used to make a tarte Tatin?',
+            'Which fruit is traditionally used as the base of a classic lemon curd?',
         answers: [
-            'Apple',
-            'Pear',
-            'Peach',
-            'Cherry'
+            'Lemon',
+            'Orange',
+            'Lime',
+            'Grapefruit'
         ],
         correctAnswer:
-            'Apple',
+            'Lemon',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            'desserts',
-            'french',
+            'fruit',
+            'british',
             'food'
         ],
         dailyEligible:
