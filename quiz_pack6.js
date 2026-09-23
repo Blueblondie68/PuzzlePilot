@@ -206,7 +206,7 @@ const questions = [
 
     {
         id: 'tv_0037',
-        category: 'Television',
+        category: 'TV',
         question:
             'In "Only Fools and Horses", what is Del Boy\'s first name?',
         answers: [
@@ -230,7 +230,7 @@ const questions = [
 
     {
         id: 'tv_0038',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actress played Fleabag in the television series of the same name?',
         answers: [
@@ -254,23 +254,24 @@ const questions = [
 
     {
         id: 'tv_0039',
-        category: 'Television',
+        category: 'TV',
         question:
-            'What is the name of the coffee shop regularly visited by the characters in "Friends"?',
+            'Which actor played David Addison in the television series "Moonlighting"?',
         answers: [
-            'Central Perk',
-            'Coffee Central',
-            'Java House',
-            'Manhattan Coffee'
+            'Bruce Willis',
+            'Don Johnson',
+            'Tom Selleck',
+            'Ted Danson'
         ],
         correctAnswer:
-            'Central Perk',
+            'Bruce Willis',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'american',
-            'friends',
-            'sitcoms'
+            '1980s',
+            'actors',
+            'comedy drama'
         ],
         dailyEligible:
             true
@@ -278,7 +279,7 @@ const questions = [
 
     {
         id: 'tv_0040',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actor played Detective Inspector Jack Frost in "A Touch of Frost"?',
         answers: [
@@ -302,23 +303,23 @@ const questions = [
 
     {
         id: 'tv_0041',
-        category: 'Television',
+        category: 'TV',
         question:
-            'Which fictional town is the setting of "Stranger Things"?',
+            'Which British sitcom featured Gary Strang and Tony Smart sharing a flat?',
         answers: [
-            'Hawkins',
-            'Sunnydale',
-            'Riverdale',
-            'Hill Valley'
+            'Men Behaving Badly',
+            'Bottom',
+            'The Young Ones',
+            'Game On'
         ],
         correctAnswer:
-            'Hawkins',
+            'Men Behaving Badly',
         difficulty:
             'Medium',
         tags: [
-            'american',
-            'drama',
-            'stranger things'
+            'british',
+            '1990s',
+            'sitcoms'
         ],
         dailyEligible:
             true
@@ -326,7 +327,7 @@ const questions = [
 
     {
         id: 'tv_0042',
-        category: 'Television',
+        category: 'TV',
         question:
             'In "Keeping Up Appearances", how does Hyacinth Bucket insist her surname is pronounced?',
         answers: [
@@ -350,7 +351,7 @@ const questions = [
 
     {
         id: 'tv_0043',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actor played the title character in the BBC series "Luther"?',
         answers: [
@@ -374,7 +375,7 @@ const questions = [
 
     {
         id: 'tv_0044',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which long-running British television series features the fictional village of Emmerdale?',
         answers: [
@@ -600,20 +601,20 @@ const questions = [
         id: 'general_0018',
         category: 'General Knowledge',
         question:
-            'Which board game includes the properties Mayfair and Park Lane in its standard UK edition?',
+            'How many dots are there in total on a standard six-sided die?',
         answers: [
-            'Monopoly',
-            'Cluedo',
-            'Risk',
-            'Scrabble'
+            '21',
+            '18',
+            '24',
+            '20'
         ],
         correctAnswer:
-            'Monopoly',
+            '21',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'games',
-            'british',
+            'numbers',
             'general knowledge'
         ],
         dailyEligible:
@@ -773,12 +774,12 @@ const questions = [
     },
 
     // =========================================================
-    // SCIENCE
+    // SCIENCE & NATURE
     // =========================================================
 
     {
         id: 'science_0014',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'What is the chemical symbol for potassium?',
         answers: [
@@ -802,7 +803,7 @@ const questions = [
 
     {
         id: 'science_0015',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'Which part of a plant usually carries out most photosynthesis?',
         answers: [
@@ -826,7 +827,7 @@ const questions = [
 
     {
         id: 'science_0016',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'Which blood type is commonly described as the universal donor for red blood cells?',
         answers: [
@@ -849,12 +850,12 @@ const questions = [
     },
 
     // =========================================================
-    // FOOD AND DRINK
+    // FOOD & DRINK
     // =========================================================
 
     {
         id: 'food_0010',
-        category: 'Food and Drink',
+        category: 'Food & Drink',
         question:
             'Which nut is traditionally used to make marzipan?',
         answers: [
@@ -878,7 +879,7 @@ const questions = [
 
     {
         id: 'food_0011',
-        category: 'Food and Drink',
+        category: 'Food & Drink',
         question:
             'Which cheese is traditionally used in a Greek salad?',
         answers: [
@@ -908,15 +909,15 @@ const questions = [
         id: 'sport_0010',
         category: 'Sport',
         question:
-            'How many points is a try worth in rugby union?',
+            'How many points is a conversion worth in rugby union?',
         answers: [
-            '5',
+            '2',
             '3',
-            '4',
-            '6'
+            '5',
+            '1'
         ],
         correctAnswer:
-            '5',
+            '2',
         difficulty:
             'Easy',
         tags: [
