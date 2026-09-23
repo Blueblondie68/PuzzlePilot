@@ -857,20 +857,20 @@ const questions = [
         id: 'food_0014',
         category: 'Food & Drink',
         question:
-            'Which herb is traditionally one of the main ingredients in pesto?',
+            'Which cheese is traditionally used in a Greek salad?',
         answers: [
-            'Basil',
-            'Parsley',
-            'Rosemary',
-            'Sage'
+            'Feta',
+            'Halloumi',
+            'Mozzarella',
+            'Brie'
         ],
         correctAnswer:
-            'Basil',
+            'Feta',
         difficulty:
             'Easy',
         tags: [
-            'italian',
-            'ingredients',
+            'greek',
+            'cheese',
             'food'
         ],
         dailyEligible:
