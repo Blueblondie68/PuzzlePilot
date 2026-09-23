@@ -180,21 +180,22 @@ const questions = [
         id: 'music_0036',
         category: 'Music',
         question:
-            'Which singer\'s debut solo album was titled "Faith"?',
+            'Which British duo released the 1982 single "Only You"?',
         answers: [
-            'George Michael',
-            'Sting',
-            'Phil Collins',
-            'Paul Young'
+            'Yazoo',
+            'Eurythmics',
+            'Erasure',
+            'Pet Shop Boys'
         ],
         correctAnswer:
-            'George Michael',
+            'Yazoo',
         difficulty:
             'Medium',
         tags: [
             '1980s',
-            'albums',
-            'british'
+            'british',
+            'duos',
+            'songs'
         ],
         dailyEligible:
             true
@@ -206,7 +207,7 @@ const questions = [
 
     {
         id: 'tv_0029',
-        category: 'Television',
+        category: 'TV',
         question:
             'In "Blackadder Goes Forth", what military rank does Blackadder hold?',
         answers: [
@@ -230,7 +231,7 @@ const questions = [
 
     {
         id: 'tv_0030',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actress played Catherine Cawood in "Happy Valley"?',
         answers: [
@@ -254,7 +255,7 @@ const questions = [
 
     {
         id: 'tv_0031',
-        category: 'Television',
+        category: 'TV',
         question:
             'What is the surname of Frasier and Niles in "Frasier"?',
         answers: [
@@ -278,7 +279,7 @@ const questions = [
 
     {
         id: 'tv_0032',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which comedy series featured the characters Richie and Eddie?',
         answers: [
@@ -302,23 +303,24 @@ const questions = [
 
     {
         id: 'tv_0033',
-        category: 'Television',
+        category: 'TV',
         question:
-            'In "Breaking Bad", what subject does Walter White teach before becoming involved in the drug trade?',
+            'Which actor played Manny Bianco in the sitcom "Black Books"?',
         answers: [
-            'Chemistry',
-            'Physics',
-            'Biology',
-            'Mathematics'
+            'Bill Bailey',
+            'Dylan Moran',
+            'Simon Pegg',
+            'Martin Freeman'
         ],
         correctAnswer:
-            'Chemistry',
+            'Bill Bailey',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'american',
-            'drama',
-            'breaking bad'
+            'british',
+            'comedy',
+            '2000s',
+            'actors'
         ],
         dailyEligible:
             true
@@ -326,7 +328,7 @@ const questions = [
 
     {
         id: 'tv_0034',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actor played Edmund Blackadder?',
         answers: [
@@ -350,7 +352,7 @@ const questions = [
 
     {
         id: 'tv_0035',
-        category: 'Television',
+        category: 'TV',
         question:
             'In "The Royle Family", what is the first name of Jim Royle\'s wife?',
         answers: [
@@ -374,7 +376,7 @@ const questions = [
 
     {
         id: 'tv_0036',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which US television drama is set in the fictional advertising agency Sterling Cooper?',
         answers: [
@@ -404,21 +406,21 @@ const questions = [
         id: 'film_0025',
         category: 'Film',
         question:
-            'Which actor played Indiana Jones in the original film series?',
+            'Which actor played the title character in the 1987 film "Withnail and I"?',
         answers: [
-            'Harrison Ford',
-            'Michael Douglas',
-            'Kurt Russell',
-            'Kevin Costner'
+            'Richard E. Grant',
+            'Paul McGann',
+            'Gary Oldman',
+            'Tim Roth'
         ],
         correctAnswer:
-            'Harrison Ford',
+            'Richard E. Grant',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'actors',
-            'adventure',
-            '1980s'
+            '1980s',
+            'british film',
+            'actors'
         ],
         dailyEligible:
             true
@@ -552,20 +554,20 @@ const questions = [
         id: 'general_0013',
         category: 'General Knowledge',
         question:
-            'What is the Roman numeral for 50?',
+            'On a standard six-sided die, what do the numbers on opposite faces always add up to?',
         answers: [
-            'L',
-            'C',
-            'X',
-            'V'
+            '7',
+            '6',
+            '8',
+            '9'
         ],
         correctAnswer:
-            'L',
+            '7',
         difficulty:
             'Easy',
         tags: [
+            'games',
             'numbers',
-            'roman numerals',
             'general knowledge'
         ],
         dailyEligible:
@@ -628,21 +630,21 @@ const questions = [
         id: 'history_0012',
         category: 'History',
         question:
-            'Which British monarch was on the throne when the First World War began in 1914?',
+            'In which year was the Battle of Trafalgar fought?',
         answers: [
-            'George V',
-            'Edward VII',
-            'George VI',
-            'Edward VIII'
+            '1805',
+            '1815',
+            '1798',
+            '1825'
         ],
         correctAnswer:
-            'George V',
+            '1805',
         difficulty:
             'Medium',
         tags: [
             'british',
-            'monarchy',
-            'first world war'
+            '19th century',
+            'battles'
         ],
         dailyEligible:
             true
@@ -652,21 +654,21 @@ const questions = [
         id: 'history_0013',
         category: 'History',
         question:
-            'Which city was buried by the eruption of Mount Vesuvius in AD 79?',
+            'Which Roman emperor gave his name to the wall built across northern Britain?',
         answers: [
-            'Pompeii',
-            'Athens',
-            'Sparta',
-            'Carthage'
+            'Hadrian',
+            'Claudius',
+            'Nero',
+            'Augustus'
         ],
         correctAnswer:
-            'Pompeii',
+            'Hadrian',
         difficulty:
             'Easy',
         tags: [
             'ancient history',
             'roman',
-            'italy'
+            'britain'
         ],
         dailyEligible:
             true
@@ -773,12 +775,12 @@ const questions = [
     },
 
     // =========================================================
-    // SCIENCE
+    // SCIENCE & NATURE
     // =========================================================
 
     {
         id: 'science_0011',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'What is the chemical symbol for silver?',
         answers: [
@@ -802,7 +804,7 @@ const questions = [
 
     {
         id: 'science_0012',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'Which planet is closest to the Sun?',
         answers: [
@@ -826,7 +828,7 @@ const questions = [
 
     {
         id: 'science_0013',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'What is the name of the process by which a liquid changes into a gas at its surface?',
         answers: [
@@ -849,24 +851,24 @@ const questions = [
     },
 
     // =========================================================
-    // FOOD AND DRINK
+    // FOOD & DRINK
     // =========================================================
 
     {
         id: 'food_0008',
-        category: 'Food and Drink',
+        category: 'Food & Drink',
         question:
-            'Which type of pastry is traditionally used to make profiteroles?',
+            'What is the main ingredient used to make a traditional meringue?',
         answers: [
-            'Choux',
-            'Puff',
-            'Filo',
-            'Shortcrust'
+            'Egg whites',
+            'Double cream',
+            'Butter',
+            'Flour'
         ],
         correctAnswer:
-            'Choux',
+            'Egg whites',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             'baking',
             'desserts',
@@ -878,7 +880,7 @@ const questions = [
 
     {
         id: 'food_0009',
-        category: 'Food and Drink',
+        category: 'Food & Drink',
         question:
             'Which fruit is dried to make a prune?',
         answers: [
