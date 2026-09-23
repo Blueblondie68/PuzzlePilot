@@ -60,20 +60,21 @@ const questions = [
         id: 'music_0055',
         category: 'Music',
         question:
-            'Which group had a 1976 hit with "Dancing Queen"?',
+            'Which singer had a 1981 hit with "Kids in America"?',
         answers: [
-            'ABBA',
-            'Boney M.',
-            'Brotherhood of Man',
-            'The Three Degrees'
+            'Kim Wilde',
+            'Toyah Willcox',
+            'Hazel O\'Connor',
+            'Sheena Easton'
         ],
         correctAnswer:
-            'ABBA',
+            'Kim Wilde',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1970s',
-            'groups',
+            '1980s',
+            'british',
+            'singers',
             'songs'
         ],
         dailyEligible:
@@ -206,7 +207,7 @@ const questions = [
 
     {
         id: 'tv_0053',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actress played Edina Monsoon in "Absolutely Fabulous"?',
         answers: [
@@ -230,7 +231,7 @@ const questions = [
 
     {
         id: 'tv_0054',
-        category: 'Television',
+        category: 'TV',
         question:
             'In "Friends", what is the first name of Ross Geller\'s sister?',
         answers: [
@@ -254,7 +255,7 @@ const questions = [
 
     {
         id: 'tv_0055',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actor played Gene Hunt in "Life on Mars"?',
         answers: [
@@ -278,7 +279,7 @@ const questions = [
 
     {
         id: 'tv_0056',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which sitcom features the characters Mark Corrigan and Jeremy Usborne?',
         answers: [
@@ -302,7 +303,7 @@ const questions = [
 
     {
         id: 'tv_0057',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actress played DCI Jane Tennison in "Prime Suspect"?',
         answers: [
@@ -326,7 +327,7 @@ const questions = [
 
     {
         id: 'tv_0058',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which British sitcom is set in the offices of Reynholm Industries?',
         answers: [
@@ -350,7 +351,7 @@ const questions = [
 
     {
         id: 'tv_0059',
-        category: 'Television',
+        category: 'TV',
         question:
             'Which actress played Villanelle in "Killing Eve"?',
         answers: [
@@ -374,7 +375,7 @@ const questions = [
 
     {
         id: 'tv_0060',
-        category: 'Television',
+        category: 'TV',
         question:
             'In "Only Fools and Horses", what is the name of Del Boy and Rodney\'s grandfather?',
         answers: [
@@ -773,27 +774,27 @@ const questions = [
     },
 
     // =========================================================
-    // SCIENCE
+    // SCIENCE & NATURE
     // =========================================================
 
     {
         id: 'science_0020',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
-            'What is the chemical symbol for gold?',
+            'Which gas do humans need to breathe in to survive?',
         answers: [
-            'Au',
-            'Ag',
-            'Gd',
-            'Go'
+            'Oxygen',
+            'Nitrogen',
+            'Carbon dioxide',
+            'Helium'
         ],
         correctAnswer:
-            'Au',
+            'Oxygen',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            'chemistry',
-            'elements',
+            'biology',
+            'human body',
             'science'
         ],
         dailyEligible:
@@ -802,7 +803,7 @@ const questions = [
 
     {
         id: 'science_0021',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'Which planet is closest in size to Earth?',
         answers: [
@@ -826,7 +827,7 @@ const questions = [
 
     {
         id: 'science_0022',
-        category: 'Science',
+        category: 'Science & Nature',
         question:
             'What force pulls objects towards the centre of the Earth?',
         answers: [
@@ -849,27 +850,27 @@ const questions = [
     },
 
     // =========================================================
-    // FOOD AND DRINK
+    // FOOD & DRINK
     // =========================================================
 
     {
         id: 'food_0014',
-        category: 'Food and Drink',
+        category: 'Food & Drink',
         question:
-            'Which fruit is traditionally used to make cider?',
+            'Which herb is traditionally one of the main ingredients in pesto?',
         answers: [
-            'Apple',
-            'Pear',
-            'Grape',
-            'Plum'
+            'Basil',
+            'Parsley',
+            'Rosemary',
+            'Sage'
         ],
         correctAnswer:
-            'Apple',
+            'Basil',
         difficulty:
             'Easy',
         tags: [
-            'drinks',
-            'fruit',
+            'italian',
+            'ingredients',
             'food'
         ],
         dailyEligible:
@@ -878,7 +879,7 @@ const questions = [
 
     {
         id: 'food_0015',
-        category: 'Food and Drink',
+        category: 'Food & Drink',
         question:
             'Which Italian dish is made with layers of pasta, sauce and typically cheese?',
         answers: [
