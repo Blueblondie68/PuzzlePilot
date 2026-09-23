@@ -256,17 +256,17 @@ const questions = [
         id: 'tv_0087',
         category: 'Television',
         question:
-            'Which actress played Sybil Fawlty in "Fawlty Towers"?',
+            'Which actress played Geraldine Granger in "The Vicar of Dibley"?',
         answers: [
-            'Prunella Scales',
-            'Penelope Keith',
-            'Wendy Craig',
-            'Felicity Kendal'
+            'Dawn French',
+            'Jennifer Saunders',
+            'Emma Chambers',
+            'Julie Walters'
         ],
         correctAnswer:
-            'Prunella Scales',
+            'Dawn French',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             'british',
             'sitcoms',
@@ -676,7 +676,7 @@ const questions = [
         id: 'history_0035',
         category: 'History',
         question:
-            'Which English king signed the death warrant of Mary, Queen of Scots?',
+            'Which English monarch signed the death warrant of Mary, Queen of Scots?',
         answers: [
             'Elizabeth I',
             'Henry VIII',
@@ -932,20 +932,20 @@ const questions = [
         id: 'sport_0023',
         category: 'Sport',
         question:
-            'How many players from one team are on court at a time in basketball?',
+            'How many players from one team are on the court at a time in netball?',
         answers: [
+            '7',
             '5',
             '6',
-            '7',
             '8'
         ],
         correctAnswer:
-            '5',
+            '7',
         difficulty:
             'Easy',
         tags: [
-            'basketball',
-            'rules',
+            'netball',
+            'players',
             'sport'
         ],
         dailyEligible:
