@@ -60,12 +60,12 @@ const questions = [
         id: 'music_0111',
         category: 'Music',
         question:
-            'Which British band had a 1978 hit with "Baker Street"?',
+            'Which Scottish singer-songwriter had a 1978 hit with "Baker Street"?',
         answers: [
             'Gerry Rafferty',
-            'Dire Straits',
-            '10cc',
-            'Roxy Music'
+            'Rod Stewart',
+            'Al Stewart',
+            'Donovan'
         ],
         correctAnswer:
             'Gerry Rafferty',
@@ -74,7 +74,7 @@ const questions = [
         tags: [
             '1970s',
             'british',
-            'songs'
+            'singers'
         ],
         dailyEligible:
             true
@@ -84,21 +84,21 @@ const questions = [
         id: 'music_0112',
         category: 'Music',
         question:
-            'Which group released the 1990 hit "Groove Is in the Heart"?',
+            'Which band released the 1983 hit "True"?',
         answers: [
-            'Deee-Lite',
-            'Snap!',
-            'Technotronic',
-            'Black Box'
+            'Spandau Ballet',
+            'Duran Duran',
+            'ABC',
+            'Culture Club'
         ],
         correctAnswer:
-            'Deee-Lite',
+            'Spandau Ballet',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            '1990s',
-            'dance',
-            'groups'
+            '1980s',
+            'british',
+            'bands'
         ],
         dailyEligible:
             true
@@ -108,21 +108,21 @@ const questions = [
         id: 'music_0113',
         category: 'Music',
         question:
-            'Which singer had a 1964 hit with "My Boy Lollipop"?',
+            'Which singer had a 1967 hit with "Puppet on a String"?',
         answers: [
-            'Millie Small',
             'Sandie Shaw',
             'Cilla Black',
-            'Lulu'
+            'Lulu',
+            'Dusty Springfield'
         ],
         correctAnswer:
-            'Millie Small',
+            'Sandie Shaw',
         difficulty:
             'Medium',
         tags: [
             '1960s',
-            'singers',
-            'songs'
+            'british',
+            'singers'
         ],
         dailyEligible:
             true
@@ -132,21 +132,21 @@ const questions = [
         id: 'music_0114',
         category: 'Music',
         question:
-            'Which band released the 1991 album "Out of Time"?',
+            'Which band released the 1994 album "Parklife"?',
         answers: [
-            'R.E.M.',
-            'U2',
-            'Nirvana',
-            'Pearl Jam'
+            'Blur',
+            'Oasis',
+            'Pulp',
+            'Suede'
         ],
         correctAnswer:
-            'R.E.M.',
+            'Blur',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             '1990s',
-            'albums',
-            'bands'
+            'british',
+            'albums'
         ],
         dailyEligible:
             true
@@ -156,15 +156,15 @@ const questions = [
         id: 'music_0115',
         category: 'Music',
         question:
-            'Which singer released the 1988 song "Orinoco Flow"?',
+            'Which singer released the 1987 hit "Heaven Is a Place on Earth"?',
         answers: [
-            'Enya',
-            'Sinéad O\'Connor',
-            'Clannad',
-            'Kate Bush'
+            'Belinda Carlisle',
+            'Kim Wilde',
+            'Cyndi Lauper',
+            'Pat Benatar'
         ],
         correctAnswer:
-            'Enya',
+            'Belinda Carlisle',
         difficulty:
             'Medium',
         tags: [
@@ -232,21 +232,21 @@ const questions = [
         id: 'tv_0110',
         category: 'Television',
         question:
-            'What is the name of the pub in "EastEnders"?',
+            'Which actor played Alf Garnett in "Till Death Us Do Part"?',
         answers: [
-            'The Queen Victoria',
-            'The Rovers Return',
-            'The Woolpack',
-            'The Dog in the Pond'
+            'Warren Mitchell',
+            'Harry H. Corbett',
+            'Wilfrid Brambell',
+            'Arthur English'
         ],
         correctAnswer:
-            'The Queen Victoria',
+            'Warren Mitchell',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'soaps',
-            'eastenders'
+            'sitcoms',
+            'actors'
         ],
         dailyEligible:
             true
@@ -280,21 +280,21 @@ const questions = [
         id: 'tv_0112',
         category: 'Television',
         question:
-            'Which comedy series features the characters Mark Corrigan and Jeremy Usborne?',
+            'Which actor played Maurice Moss in "The IT Crowd"?',
         answers: [
-            'Peep Show',
-            'Spaced',
-            'Green Wing',
-            'The Inbetweeners'
+            'Richard Ayoade',
+            'Chris O\'Dowd',
+            'Matt Berry',
+            'Noel Fielding'
         ],
         correctAnswer:
-            'Peep Show',
+            'Richard Ayoade',
         difficulty:
             'Easy',
         tags: [
             'british',
             'sitcoms',
-            'characters'
+            'actors'
         ],
         dailyEligible:
             true
@@ -304,21 +304,21 @@ const questions = [
         id: 'tv_0113',
         category: 'Television',
         question:
-            'In "The Simpsons", what is the name of the family\'s next-door neighbour?',
+            'Which actor played Arthur "The Fonz" Fonzarelli in "Happy Days"?',
         answers: [
-            'Ned Flanders',
-            'Moe Szyslak',
-            'Seymour Skinner',
-            'Barney Gumble'
+            'Henry Winkler',
+            'Ron Howard',
+            'Tom Bosley',
+            'Don Most'
         ],
         correctAnswer:
-            'Ned Flanders',
+            'Henry Winkler',
         difficulty:
             'Easy',
         tags: [
             'american',
-            'animation',
-            'characters'
+            'sitcoms',
+            'actors'
         ],
         dailyEligible:
             true
@@ -328,15 +328,15 @@ const questions = [
         id: 'tv_0114',
         category: 'Television',
         question:
-            'Which actress played Catherine Cawood in "Happy Valley"?',
+            'Which actress played DCI Vera Stanhope in the television series "Vera"?',
         answers: [
+            'Brenda Blethyn',
             'Sarah Lancashire',
-            'Suranne Jones',
             'Nicola Walker',
-            'Maxine Peake'
+            'Suranne Jones'
         ],
         correctAnswer:
-            'Sarah Lancashire',
+            'Brenda Blethyn',
         difficulty:
             'Medium',
         tags: [
@@ -352,21 +352,21 @@ const questions = [
         id: 'tv_0115',
         category: 'Television',
         question:
-            'In "The Vicar of Dibley", what is the first name of the vicar played by Dawn French?',
+            'Which actor played Tom Good in the sitcom "The Good Life"?',
         answers: [
-            'Geraldine',
-            'Alice',
-            'Letitia',
-            'Hilary'
+            'Richard Briers',
+            'Paul Eddington',
+            'Peter Bowles',
+            'Geoffrey Palmer'
         ],
         correctAnswer:
-            'Geraldine',
+            'Richard Briers',
         difficulty:
             'Medium',
         tags: [
             'british',
             'sitcoms',
-            'characters'
+            'actors'
         ],
         dailyEligible:
             true
@@ -404,21 +404,21 @@ const questions = [
         id: 'film_0085',
         category: 'Film',
         question:
-            'Which actress played Sarah Connor in the original 1984 film "The Terminator"?',
+            'Which actor played Atticus Finch in the 1962 film "To Kill a Mockingbird"?',
         answers: [
-            'Linda Hamilton',
-            'Sigourney Weaver',
-            'Jamie Lee Curtis',
-            'Geena Davis'
+            'Gregory Peck',
+            'James Stewart',
+            'Henry Fonda',
+            'Paul Newman'
         ],
         correctAnswer:
-            'Linda Hamilton',
+            'Gregory Peck',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1980s',
-            'science fiction',
-            'actors'
+            '1960s',
+            'actors',
+            'classics'
         ],
         dailyEligible:
             true
@@ -500,21 +500,21 @@ const questions = [
         id: 'film_0089',
         category: 'Film',
         question:
-            'Which actress played Clarice Starling in "The Silence of the Lambs"?',
+            'Which actor played Norman Bates in the 1960 film "Psycho"?',
         answers: [
-            'Jodie Foster',
-            'Julianne Moore',
-            'Susan Sarandon',
-            'Geena Davis'
+            'Anthony Perkins',
+            'James Mason',
+            'Rod Taylor',
+            'Laurence Harvey'
         ],
         correctAnswer:
-            'Jodie Foster',
+            'Anthony Perkins',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1990s',
-            'thriller',
-            'actors'
+            '1960s',
+            'actors',
+            'thriller'
         ],
         dailyEligible:
             true
@@ -676,21 +676,21 @@ const questions = [
         id: 'history_0044',
         category: 'History',
         question:
-            'Which ancient civilisation used a writing system known as hieroglyphics?',
+            'Which Roman emperor ordered the construction of a wall across northern Britain?',
         answers: [
-            'Ancient Egyptians',
-            'Vikings',
-            'Aztecs',
-            'Spartans'
+            'Hadrian',
+            'Nero',
+            'Augustus',
+            'Claudius'
         ],
         correctAnswer:
-            'Ancient Egyptians',
+            'Hadrian',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'ancient history',
-            'egypt',
-            'writing'
+            'roman',
+            'british',
+            'ancient history'
         ],
         dailyEligible:
             true
@@ -728,21 +728,21 @@ const questions = [
         id: 'geography_0043',
         category: 'Geography',
         question:
-            'Mount Fuji is located in which country?',
+            'Which country is home to the city of Bruges?',
         answers: [
-            'Japan',
-            'China',
-            'South Korea',
-            'Thailand'
+            'Belgium',
+            'Netherlands',
+            'France',
+            'Luxembourg'
         ],
         correctAnswer:
-            'Japan',
+            'Belgium',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'asia',
-            'mountains',
-            'countries'
+            'europe',
+            'countries',
+            'cities'
         ],
         dailyEligible:
             true
@@ -780,15 +780,15 @@ const questions = [
         id: 'science_0041',
         category: 'Science',
         question:
-            'What is the chemical symbol for potassium?',
+            'What is the chemical symbol for calcium?',
         answers: [
-            'K',
-            'P',
-            'Po',
-            'Pt'
+            'Ca',
+            'Cl',
+            'C',
+            'Cr'
         ],
         correctAnswer:
-            'K',
+            'Ca',
         difficulty:
             'Medium',
         tags: [
@@ -804,20 +804,20 @@ const questions = [
         id: 'science_0042',
         category: 'Science',
         question:
-            'Which part of a plant usually absorbs water from the soil?',
+            'Which blood vessels carry blood away from the heart?',
         answers: [
-            'Roots',
-            'Flowers',
-            'Fruit',
-            'Leaves'
+            'Arteries',
+            'Veins',
+            'Capillaries',
+            'Venules'
         ],
         correctAnswer:
-            'Roots',
+            'Arteries',
         difficulty:
             'Easy',
         tags: [
             'biology',
-            'plants',
+            'human body',
             'science'
         ],
         dailyEligible:
