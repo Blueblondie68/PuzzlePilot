@@ -12,21 +12,21 @@ module.exports = [
         id: 'music_0127',
         category: 'Music',
         question:
-            'Which British band released the 1995 single "Common People"?',
+            'Which band released the 1984 single "The Killing Moon"?',
         answers: [
-            'Pulp',
-            'Blur',
-            'Suede',
-            'Supergrass'
+            'Echo & the Bunnymen',
+            'The Cure',
+            'The Psychedelic Furs',
+            'The Teardrop Explodes'
         ],
         correctAnswer:
-            'Pulp',
+            'Echo & the Bunnymen',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'music',
-            '1990s',
-            'britpop'
+            '1980s',
+            'british'
         ],
         dailyEligible:
             true
@@ -36,21 +36,21 @@ module.exports = [
         id: 'music_0128',
         category: 'Music',
         question:
-            'Which singer had a 1988 hit with "Fast Car"?',
+            'Which British band released the 1985 single "Kayleigh"?',
         answers: [
-            'Tracy Chapman',
-            'Suzanne Vega',
-            'Tanita Tikaram',
-            'Joan Armatrading'
+            'Marillion',
+            'Genesis',
+            'Asia',
+            'Level 42'
         ],
         correctAnswer:
-            'Tracy Chapman',
+            'Marillion',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'music',
             '1980s',
-            'songs'
+            'british'
         ],
         dailyEligible:
             true
@@ -132,21 +132,21 @@ module.exports = [
         id: 'music_0132',
         category: 'Music',
         question:
-            'Which singer recorded the 1964 hit "My Guy"?',
+            'Which group recorded the 1967 hit "Nights in White Satin"?',
         answers: [
-            'Mary Wells',
-            'Martha Reeves',
-            'Diana Ross',
-            'Gladys Knight'
+            'The Moody Blues',
+            'Procol Harum',
+            'The Hollies',
+            'The Zombies'
         ],
         correctAnswer:
-            'Mary Wells',
+            'The Moody Blues',
         difficulty:
             'Medium',
         tags: [
             'music',
             '1960s',
-            'motown'
+            'british'
         ],
         dailyEligible:
             true
@@ -180,21 +180,21 @@ module.exports = [
         id: 'music_0134',
         category: 'Music',
         question:
-            'Which singer had a 1994 hit with "Stay (I Missed You)"?',
+            'Which band released the 1994 album "Dummy"?',
         answers: [
-            'Lisa Loeb',
-            'Sheryl Crow',
-            'Paula Cole',
-            'Meredith Brooks'
+            'Portishead',
+            'Massive Attack',
+            'Morcheeba',
+            'Sneaker Pimps'
         ],
         correctAnswer:
-            'Lisa Loeb',
+            'Portishead',
         difficulty:
             'Medium',
         tags: [
             'music',
             '1990s',
-            'songs'
+            'albums'
         ],
         dailyEligible:
             true
@@ -304,21 +304,21 @@ module.exports = [
         id: 'tv_0127',
         category: 'TV',
         question:
-            'Which actor played Jonathan Creek?',
+            'Which actress played Daisy Steiner in the sitcom "Spaced"?',
         answers: [
-            'Alan Davies',
-            'Stephen Fry',
-            'Hugh Laurie',
-            'Martin Clunes'
+            'Jessica Hynes',
+            'Julia Davis',
+            'Rebecca Front',
+            'Sally Phillips'
         ],
         correctAnswer:
-            'Alan Davies',
+            'Jessica Hynes',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'tv',
             'british',
-            'drama'
+            'comedy'
         ],
         dailyEligible:
             true
@@ -328,21 +328,21 @@ module.exports = [
         id: 'tv_0128',
         category: 'TV',
         question:
-            'In "The Royle Family", what is the first name of Jim Royle\'s wife?',
+            'Which actor played Manny Bianco in "Black Books"?',
         answers: [
-            'Barbara',
-            'Denise',
-            'Cheryl',
-            'Mary'
+            'Bill Bailey',
+            'Dylan Moran',
+            'Tamsin Greig',
+            'Simon Pegg'
         ],
         correctAnswer:
-            'Barbara',
+            'Bill Bailey',
         difficulty:
             'Medium',
         tags: [
             'tv',
             'british',
-            'sitcoms'
+            'comedy'
         ],
         dailyEligible:
             true
@@ -352,21 +352,21 @@ module.exports = [
         id: 'tv_0129',
         category: 'TV',
         question:
-            'Which actor played Malcolm Tucker in "The Thick of It"?',
+            'Which actor played Superintendent Ted Hastings in "Line of Duty"?',
         answers: [
-            'Peter Capaldi',
-            'Chris Addison',
-            'Roger Allam',
-            'Armando Iannucci'
+            'Adrian Dunbar',
+            'Martin Compston',
+            'Stephen Graham',
+            'Jason Watkins'
         ],
         correctAnswer:
-            'Peter Capaldi',
+            'Adrian Dunbar',
         difficulty:
             'Medium',
         tags: [
             'tv',
             'british',
-            'comedy'
+            'crime'
         ],
         dailyEligible:
             true
@@ -424,21 +424,21 @@ module.exports = [
         id: 'tv_0132',
         category: 'TV',
         question:
-            'Which actor played DI Alec Hardy in "Broadchurch"?',
+            'Which actor played Lance Stater in the sitcom "Detectorists"?',
         answers: [
-            'David Tennant',
-            'Andrew Scott',
-            'Martin Freeman',
-            'Jason Watkins'
+            'Toby Jones',
+            'Mackenzie Crook',
+            'Ralph Ineson',
+            'Paul Ritter'
         ],
         correctAnswer:
-            'David Tennant',
+            'Toby Jones',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'tv',
             'british',
-            'crime'
+            'comedy'
         ],
         dailyEligible:
             true
@@ -721,21 +721,21 @@ module.exports = [
         id: 'geography_0048',
         category: 'Geography',
         question:
-            'Which country has the city of Salzburg?',
+            'What is the capital city of Estonia?',
         answers: [
-            'Austria',
-            'Switzerland',
-            'Germany',
-            'Slovenia'
+            'Tallinn',
+            'Riga',
+            'Vilnius',
+            'Helsinki'
         ],
         correctAnswer:
-            'Austria',
+            'Tallinn',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'geography',
             'europe',
-            'cities'
+            'capitals'
         ],
         dailyEligible:
             true
@@ -769,21 +769,21 @@ module.exports = [
         id: 'geography_0050',
         category: 'Geography',
         question:
-            'Which country contains the ancient city of Petra?',
+            'Which country contains the city of Bruges?',
         answers: [
-            'Jordan',
-            'Egypt',
-            'Lebanon',
-            'Syria'
+            'Belgium',
+            'Netherlands',
+            'Luxembourg',
+            'France'
         ],
         correctAnswer:
-            'Jordan',
+            'Belgium',
         difficulty:
             'Easy',
         tags: [
             'geography',
-            'middle east',
-            'landmarks'
+            'europe',
+            'cities'
         ],
         dailyEligible:
             true
@@ -797,21 +797,21 @@ module.exports = [
         id: 'history_0048',
         category: 'History',
         question:
-            'Which English king signed the Magna Carta in 1215?',
+            'Which English king was victorious at the Battle of Agincourt in 1415?',
         answers: [
-            'King John',
-            'Richard I',
-            'Henry III',
-            'Edward I'
+            'Henry V',
+            'Henry IV',
+            'Edward IV',
+            'Richard III'
         ],
         correctAnswer:
-            'King John',
+            'Henry V',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'history',
             'british',
-            'monarchy'
+            'medieval'
         ],
         dailyEligible:
             true
@@ -849,21 +849,21 @@ module.exports = [
         id: 'science_0046',
         category: 'Science & Nature',
         question:
-            'Which blood vessels carry blood away from the heart?',
+            'What is the largest moon in the Solar System?',
         answers: [
-            'Arteries',
-            'Veins',
-            'Capillaries',
-            'Venules'
+            'Ganymede',
+            'Titan',
+            'Europa',
+            'Callisto'
         ],
         correctAnswer:
-            'Arteries',
+            'Ganymede',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'science',
-            'human body',
-            'biology'
+            'space',
+            'moons'
         ],
         dailyEligible:
             true
