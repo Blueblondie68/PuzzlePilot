@@ -305,20 +305,20 @@ const questions = [
         id: 'tv_0065',
         category: 'TV',
         question:
-            'Which actor played the title character Edmund Blackadder in the television series "Blackadder"?',
+            'Which actor played Detective Inspector Jack Frost in "A Touch of Frost"?',
         answers: [
-            'Rowan Atkinson',
-            'Tony Robinson',
-            'Stephen Fry',
-            'Hugh Laurie'
+            'David Jason',
+            'John Thaw',
+            'David Suchet',
+            'Martin Shaw'
         ],
         correctAnswer:
-            'Rowan Atkinson',
+            'David Jason',
         difficulty:
             'Easy',
         tags: [
             'british',
-            'sitcoms',
+            'crime',
             'actors'
         ],
         dailyEligible:
