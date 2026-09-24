@@ -37,6 +37,7 @@ const quizPack1 =
 
 const quizPack2 =
     require('./quiz_pack2.js');
+
 const quizPack3 =
     require('./quiz_pack3.js');
 
@@ -55,6 +56,33 @@ const quizPack7 =
 const quizPack8 =
     require('./quiz_pack8.js');
 
+const quizPack9 =
+    require('./quiz_pack9.js');
+
+const quizPack10 =
+    require('./quiz_pack10.js');
+
+const quizPack11 =
+    require('./quiz_pack11.js');
+
+const quizPack12 =
+    require('./quiz_pack12.js');
+
+const quizPack13 =
+    require('./quiz_pack13.js');
+
+const quizPack14 =
+    require('./quiz_pack14.js');
+
+const quizPack15 =
+    require('./quiz_pack15.js');
+
+const quizPack16 =
+    require('./quiz_pack16.js');
+
+const quizPack17 =
+    require('./quiz_pack17.js');
+
 
 // ─────────────────────────────────────────────
 // SETTINGS
@@ -71,6 +99,7 @@ const RESULT_DISPLAY_TIME =
 // ─────────────────────────────────────────────
 // QUESTION BANK
 // ─────────────────────────────────────────────
+
 const questionBank = [
     ...quizPack1,
     ...quizPack2,
@@ -79,8 +108,18 @@ const questionBank = [
     ...quizPack5,
     ...quizPack6,
     ...quizPack7,
-    ...quizPack8
+    ...quizPack8,
+    ...quizPack9,
+    ...quizPack10,
+    ...quizPack11,
+    ...quizPack12,
+    ...quizPack13,
+    ...quizPack14,
+    ...quizPack15,
+    ...quizPack16,
+    ...quizPack17
 ];
+
 console.log(
     `Quiz question bank loaded: ` +
     `${questionBank.length} questions`
@@ -621,7 +660,7 @@ async function ensureTodaysQuiz() {
 
                 if (
                     savedQuestions.length ===
-                    DAILY_QUESTION_COUNT
+                        DAILY_QUESTION_COUNT
                 ) {
                     await client.query(
                         'COMMIT'
@@ -723,9 +762,7 @@ async function ensureTodaysQuiz() {
     } finally {
         client.release();
     }
-}
-
-// ─────────────────────────────────────────────
+}// ─────────────────────────────────────────────
 // COMPLETION CHECK
 // ─────────────────────────────────────────────
 
@@ -1391,7 +1428,6 @@ async function showQuestion(
         interaction
     );
 }
-
 // ─────────────────────────────────────────────
 // START DAILY QUIZ
 // ─────────────────────────────────────────────
