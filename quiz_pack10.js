@@ -880,20 +880,20 @@ const questions = [
         id: 'food_0019',
         category: 'Food and Drink',
         question:
-            'Which nut is traditionally used to make marzipan?',
+            'Which French dessert consists of a caramelised custard topped with a hard layer of burnt sugar?',
         answers: [
-            'Almond',
-            'Hazelnut',
-            'Walnut',
-            'Pistachio'
+            'Crème brûlée',
+            'Crème caramel',
+            'Mille-feuille',
+            'Clafoutis'
         ],
         correctAnswer:
-            'Almond',
+            'Crème brûlée',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'ingredients',
-            'sweets',
+            'desserts',
+            'french',
             'food'
         ],
         dailyEligible:
