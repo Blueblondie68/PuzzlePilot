@@ -305,17 +305,17 @@ const questions = [
         id: 'tv_0065',
         category: 'TV',
         question:
-            'Which actress played Hyacinth Bucket in "Keeping Up Appearances"?',
+            'Which actor played the title character Edmund Blackadder in the television series "Blackadder"?',
         answers: [
-            'Patricia Routledge',
-            'Penelope Keith',
-            'Judi Dench',
-            'Pauline Collins'
+            'Rowan Atkinson',
+            'Tony Robinson',
+            'Stephen Fry',
+            'Hugh Laurie'
         ],
         correctAnswer:
-            'Patricia Routledge',
+            'Rowan Atkinson',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             'british',
             'sitcoms',
