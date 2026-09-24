@@ -628,21 +628,21 @@ const questions = [
         id: 'history_0036',
         category: 'History',
         question:
-            'Which military leader was defeated at the Battle of Waterloo in 1815?',
+            'Which British prime minister was assassinated in 1812?',
         answers: [
-            'Napoleon Bonaparte',
-            'Horatio Nelson',
-            'Arthur Wellesley',
-            'Louis XVIII'
+            'Spencer Perceval',
+            'William Pitt the Younger',
+            'Robert Peel',
+            'Lord Liverpool'
         ],
         correctAnswer:
-            'Napoleon Bonaparte',
+            'Spencer Perceval',
         difficulty:
-            'Medium',
+            'Hard',
         tags: [
-            'europe',
+            'british',
             '19th century',
-            'napoleonic wars'
+            'prime ministers'
         ],
         dailyEligible:
             true
