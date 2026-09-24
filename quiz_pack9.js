@@ -305,20 +305,20 @@ const questions = [
         id: 'tv_0065',
         category: 'TV',
         question:
-            'Which actor played Detective Inspector Jack Frost in "A Touch of Frost"?',
+            'Which actress played Dorien Green in the sitcom "Birds of a Feather"?',
         answers: [
-            'David Jason',
-            'John Thaw',
-            'David Suchet',
-            'Martin Shaw'
+            'Lesley Joseph',
+            'Pauline Quirke',
+            'Linda Robson',
+            'Doreen Mantle'
         ],
         correctAnswer:
-            'David Jason',
+            'Lesley Joseph',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
-            'crime',
+            'sitcoms',
             'actors'
         ],
         dailyEligible:
