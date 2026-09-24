@@ -628,21 +628,21 @@ const questions = [
         id: 'history_0036',
         category: 'History',
         question:
-            'Which English king had six wives?',
+            'Which military leader was defeated at the Battle of Waterloo in 1815?',
         answers: [
-            'Henry VIII',
-            'Henry VII',
-            'Edward VI',
-            'Charles II'
+            'Napoleon Bonaparte',
+            'Horatio Nelson',
+            'Arthur Wellesley',
+            'Louis XVIII'
         ],
         correctAnswer:
-            'Henry VIII',
+            'Napoleon Bonaparte',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'british',
-            'tudors',
-            'monarchy'
+            'europe',
+            '19th century',
+            'napoleonic wars'
         ],
         dailyEligible:
             true
