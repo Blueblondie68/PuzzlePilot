@@ -36,21 +36,21 @@ const questions = [
         id: 'music_0102',
         category: 'Music',
         question:
-            'Which singer released the 1985 hit "Running Up That Hill"?',
+            'Which band had a 1980 hit with "Turning Japanese"?',
         answers: [
-            'Kate Bush',
-            'Alison Moyet',
-            'Kim Wilde',
-            'Toyah Willcox'
+            'The Vapors',
+            'The Jam',
+            'The Undertones',
+            'XTC'
         ],
         correctAnswer:
-            'Kate Bush',
+            'The Vapors',
         difficulty:
             'Medium',
         tags: [
             '1980s',
             'british',
-            'singers'
+            'bands'
         ],
         dailyEligible:
             true
@@ -256,20 +256,20 @@ const questions = [
         id: 'tv_0103',
         category: 'Television',
         question:
-            'Which actor played Maurice Moss in the sitcom "The IT Crowd"?',
+            'Which actress played DCI Cassie Stuart in "Unforgotten"?',
         answers: [
-            'Richard Ayoade',
-            'Chris O\'Dowd',
-            'Matt Berry',
-            'Noel Fielding'
+            'Nicola Walker',
+            'Suranne Jones',
+            'Sarah Lancashire',
+            'Keeley Hawes'
         ],
         correctAnswer:
-            'Richard Ayoade',
+            'Nicola Walker',
         difficulty:
             'Medium',
         tags: [
             'british',
-            'sitcoms',
+            'crime',
             'actors'
         ],
         dailyEligible:
@@ -404,21 +404,21 @@ const questions = [
         id: 'film_0079',
         category: 'Film',
         question:
-            'Which actor played the title character in the 1990 film "Edward Scissorhands"?',
+            'Which actor played Del Griffith in the 1987 film "Planes, Trains and Automobiles"?',
         answers: [
-            'Johnny Depp',
-            'Tom Cruise',
-            'Keanu Reeves',
-            'Christian Slater'
+            'John Candy',
+            'Steve Martin',
+            'Dan Aykroyd',
+            'Chevy Chase'
         ],
         correctAnswer:
-            'Johnny Depp',
+            'John Candy',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '1990s',
+            '1980s',
             'actors',
-            'fantasy'
+            'comedy'
         ],
         dailyEligible:
             true
@@ -600,20 +600,20 @@ const questions = [
         id: 'general_0042',
         category: 'General Knowledge',
         question:
-            'Which instrument is used to measure atmospheric pressure?',
+            'Which country uses the forint as its currency?',
         answers: [
-            'Barometer',
-            'Thermometer',
-            'Hygrometer',
-            'Anemometer'
+            'Hungary',
+            'Poland',
+            'Romania',
+            'Croatia'
         ],
         correctAnswer:
-            'Barometer',
+            'Hungary',
         difficulty:
             'Medium',
         tags: [
-            'instruments',
-            'weather',
+            'currency',
+            'europe',
             'general knowledge'
         ],
         dailyEligible:
@@ -804,20 +804,20 @@ const questions = [
         id: 'science_0039',
         category: 'Science',
         question:
-            'What is the largest organ of the human body?',
+            'Which scientist developed the first successful smallpox vaccine?',
         answers: [
-            'Skin',
-            'Liver',
-            'Lungs',
-            'Brain'
+            'Edward Jenner',
+            'Louis Pasteur',
+            'Alexander Fleming',
+            'Robert Koch'
         ],
         correctAnswer:
-            'Skin',
+            'Edward Jenner',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'biology',
-            'human body',
+            'medicine',
+            'scientists',
             'science'
         ],
         dailyEligible:
