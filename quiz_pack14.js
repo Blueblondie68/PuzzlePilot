@@ -36,21 +36,21 @@ const questions = [
         id: 'music_0102',
         category: 'Music',
         question:
-            'Which singer released the 1984 hit "What\'s Love Got to Do with It"?',
+            'Which singer released the 1985 hit "Running Up That Hill"?',
         answers: [
-            'Tina Turner',
-            'Cher',
-            'Diana Ross',
-            'Donna Summer'
+            'Kate Bush',
+            'Alison Moyet',
+            'Kim Wilde',
+            'Toyah Willcox'
         ],
         correctAnswer:
-            'Tina Turner',
+            'Kate Bush',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             '1980s',
-            'singers',
-            'songs'
+            'british',
+            'singers'
         ],
         dailyEligible:
             true
@@ -256,17 +256,17 @@ const questions = [
         id: 'tv_0103',
         category: 'Television',
         question:
-            'Which actor played Victor Meldrew in "One Foot in the Grave"?',
+            'Which actor played Maurice Moss in the sitcom "The IT Crowd"?',
         answers: [
-            'Richard Wilson',
-            'Richard Briers',
-            'David Jason',
-            'Ronnie Barker'
+            'Richard Ayoade',
+            'Chris O\'Dowd',
+            'Matt Berry',
+            'Noel Fielding'
         ],
         correctAnswer:
-            'Richard Wilson',
+            'Richard Ayoade',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'british',
             'sitcoms',
@@ -404,21 +404,21 @@ const questions = [
         id: 'film_0079',
         category: 'Film',
         question:
-            'Which actress played Clarice Starling in "The Silence of the Lambs"?',
+            'Which actor played the title character in the 1990 film "Edward Scissorhands"?',
         answers: [
-            'Jodie Foster',
-            'Sigourney Weaver',
-            'Susan Sarandon',
-            'Geena Davis'
+            'Johnny Depp',
+            'Tom Cruise',
+            'Keanu Reeves',
+            'Christian Slater'
         ],
         correctAnswer:
-            'Jodie Foster',
+            'Johnny Depp',
         difficulty:
             'Easy',
         tags: [
             '1990s',
             'actors',
-            'thriller'
+            'fantasy'
         ],
         dailyEligible:
             true
@@ -600,20 +600,20 @@ const questions = [
         id: 'general_0042',
         category: 'General Knowledge',
         question:
-            'Which board game includes properties called Old Kent Road and Mayfair in its standard UK edition?',
+            'Which instrument is used to measure atmospheric pressure?',
         answers: [
-            'Monopoly',
-            'Cluedo',
-            'Risk',
-            'Scrabble'
+            'Barometer',
+            'Thermometer',
+            'Hygrometer',
+            'Anemometer'
         ],
         correctAnswer:
-            'Monopoly',
+            'Barometer',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'games',
-            'british',
+            'instruments',
+            'weather',
             'general knowledge'
         ],
         dailyEligible:
@@ -804,20 +804,20 @@ const questions = [
         id: 'science_0039',
         category: 'Science',
         question:
-            'What is the chemical symbol for silver?',
+            'What is the largest organ of the human body?',
         answers: [
-            'Ag',
-            'Si',
-            'Sv',
-            'Sr'
+            'Skin',
+            'Liver',
+            'Lungs',
+            'Brain'
         ],
         correctAnswer:
-            'Ag',
+            'Skin',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
-            'chemistry',
-            'elements',
+            'biology',
+            'human body',
             'science'
         ],
         dailyEligible:
