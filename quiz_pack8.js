@@ -857,20 +857,20 @@ const questions = [
         id: 'food_0014',
         category: 'Food & Drink',
         question:
-            'Which cheese is traditionally used in a Greek salad?',
+            'Which type of pastry is traditionally used to make baklava?',
         answers: [
-            'Feta',
-            'Halloumi',
-            'Mozzarella',
-            'Brie'
+            'Filo',
+            'Puff',
+            'Shortcrust',
+            'Choux'
         ],
         correctAnswer:
-            'Feta',
+            'Filo',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            'greek',
-            'cheese',
+            'pastry',
+            'desserts',
             'food'
         ],
         dailyEligible:
