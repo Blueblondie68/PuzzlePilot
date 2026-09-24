@@ -12,15 +12,15 @@ const questions = [
         id: 'music_0061',
         category: 'Music',
         question:
-            'Which band released the 1985 album "Brothers in Arms"?',
+            'Which Norwegian band released the 1985 album "Hunting High and Low"?',
         answers: [
-            'Dire Straits',
-            'Simple Minds',
-            'Tears for Fears',
-            'INXS'
+            'a-ha',
+            'Roxette',
+            'Europe',
+            'Alphaville'
         ],
         correctAnswer:
-            'Dire Straits',
+            'a-ha',
         difficulty:
             'Medium',
         tags: [
@@ -305,20 +305,20 @@ const questions = [
         id: 'tv_0065',
         category: 'TV',
         question:
-            'Which actor played Detective Inspector Jack Frost in "A Touch of Frost"?',
+            'Which actress played Hyacinth Bucket in "Keeping Up Appearances"?',
         answers: [
-            'David Jason',
-            'John Thaw',
-            'David Suchet',
-            'Kevin Whately'
+            'Patricia Routledge',
+            'Penelope Keith',
+            'Judi Dench',
+            'Pauline Collins'
         ],
         correctAnswer:
-            'David Jason',
+            'Patricia Routledge',
         difficulty:
             'Medium',
         tags: [
             'british',
-            'crime',
+            'sitcoms',
             'actors'
         ],
         dailyEligible:
