@@ -12,21 +12,21 @@ module.exports = [
         id: 'music_0117',
         category: 'Music',
         question:
-            'Which band released the 1979 album "The Wall"?',
+            'Which band released the 1979 single "Making Plans for Nigel"?',
         answers: [
-            'Pink Floyd',
-            'Genesis',
-            'Yes',
-            'Supertramp'
+            'XTC',
+            'Squeeze',
+            'The Jam',
+            'The Undertones'
         ],
         correctAnswer:
-            'Pink Floyd',
+            'XTC',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'music',
             '1970s',
-            'albums'
+            'british'
         ],
         dailyEligible:
             true
@@ -36,17 +36,17 @@ module.exports = [
         id: 'music_0118',
         category: 'Music',
         question:
-            'Which singer had a 1987 hit with "Never Gonna Give You Up"?',
+            'Which singer had a 1986 hit with "Holding Back the Years"?',
         answers: [
-            'Rick Astley',
-            'Jason Donovan',
-            'Nik Kershaw',
-            'Paul Young'
+            'Mick Hucknall',
+            'Paul Young',
+            'Roland Gift',
+            'Robert Palmer'
         ],
         correctAnswer:
-            'Rick Astley',
+            'Mick Hucknall',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'music',
             '1980s',
@@ -132,21 +132,21 @@ module.exports = [
         id: 'music_0122',
         category: 'Music',
         question:
-            'Which singer released the 1978 hit "Wuthering Heights"?',
+            'Which singer had a 1988 hit with "Orinoco Flow"?',
         answers: [
-            'Kate Bush',
-            'Siouxsie Sioux',
-            'Toyah Willcox',
-            'Annie Lennox'
+            'Enya',
+            'Clannad',
+            'Tanita Tikaram',
+            'Sade'
         ],
         correctAnswer:
-            'Kate Bush',
+            'Enya',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'music',
-            '1970s',
-            'british'
+            '1980s',
+            'songs'
         ],
         dailyEligible:
             true
@@ -228,21 +228,21 @@ module.exports = [
         id: 'music_0126',
         category: 'Music',
         question:
-            'Which Scottish band released the 1989 album "Peace and Love"?',
+            'Which Scottish band had a 1987 hit with "Labour of Love"?',
         answers: [
-            'The Pogues',
+            'Hue and Cry',
             'Deacon Blue',
-            'Texas',
-            'Simple Minds'
+            'Wet Wet Wet',
+            'The Blue Nile'
         ],
         correctAnswer:
-            'The Pogues',
+            'Hue and Cry',
         difficulty:
-            'Hard',
+            'Medium',
         tags: [
             'music',
             '1980s',
-            'albums'
+            'scottish'
         ],
         dailyEligible:
             true
@@ -256,17 +256,17 @@ module.exports = [
         id: 'tv_0117',
         category: 'TV',
         question:
-            'Which actress played DCI Jane Tennison in "Prime Suspect"?',
+            'Which actress played Detective Superintendent Stella Gibson in "The Fall"?',
         answers: [
-            'Helen Mirren',
-            'Amanda Redman',
-            'Caroline Quentin',
-            'Julie Walters'
+            'Gillian Anderson',
+            'Keeley Hawes',
+            'Suranne Jones',
+            'Nicola Walker'
         ],
         correctAnswer:
-            'Helen Mirren',
+            'Gillian Anderson',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'tv',
             'british',
@@ -304,21 +304,21 @@ module.exports = [
         id: 'tv_0119',
         category: 'TV',
         question:
-            'Which actor played Gene Hunt in "Life on Mars"?',
+            'Which actor played Detective Inspector Henry Crabbe in "Pie in the Sky"?',
         answers: [
-            'Philip Glenister',
-            'John Simm',
-            'Dean Andrews',
-            'Marshall Lancaster'
+            'Richard Griffiths',
+            'David Jason',
+            'John Thaw',
+            'Warren Clarke'
         ],
         correctAnswer:
-            'Philip Glenister',
+            'Richard Griffiths',
         difficulty:
             'Medium',
         tags: [
             'tv',
             'british',
-            'drama'
+            'crime'
         ],
         dailyEligible:
             true
@@ -328,15 +328,15 @@ module.exports = [
         id: 'tv_0120',
         category: 'TV',
         question:
-            'Which actress played Geraldine Granger in "The Vicar of Dibley"?',
+            'Which actress played the title character in the sitcom "Miranda"?',
         answers: [
-            'Dawn French',
-            'Jennifer Saunders',
-            'Emma Chambers',
-            'Caroline Aherne'
+            'Miranda Hart',
+            'Sally Phillips',
+            'Sarah Hadland',
+            'Tamsin Greig'
         ],
         correctAnswer:
-            'Dawn French',
+            'Miranda Hart',
         difficulty:
             'Easy',
         tags: [
@@ -352,17 +352,17 @@ module.exports = [
         id: 'tv_0121',
         category: 'TV',
         question:
-            'In "Red Dwarf", what is the name of the ship\'s computer?',
+            'In "Black Books", what is Bernard Black\'s occupation?',
         answers: [
-            'Holly',
-            'Kryten',
-            'Queeg',
-            'Talkie'
+            'Bookshop owner',
+            'Accountant',
+            'Journalist',
+            'Teacher'
         ],
         correctAnswer:
-            'Holly',
+            'Bookshop owner',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             'tv',
             'british',
@@ -400,21 +400,21 @@ module.exports = [
         id: 'tv_0123',
         category: 'TV',
         question:
-            'What is the name of the paper company in the US version of "The Office"?',
+            'In the sitcom "Frasier", what is the first name of Frasier and Niles\' father?',
         answers: [
-            'Dunder Mifflin',
-            'Wernham Hogg',
-            'Sabre Paper',
-            'Sterling Cooper'
+            'Martin',
+            'David',
+            'Frank',
+            'Robert'
         ],
         correctAnswer:
-            'Dunder Mifflin',
+            'Martin',
         difficulty:
             'Easy',
         tags: [
             'tv',
             'american',
-            'comedy'
+            'sitcoms'
         ],
         dailyEligible:
             true
@@ -424,17 +424,17 @@ module.exports = [
         id: 'tv_0124',
         category: 'TV',
         question:
-            'Which actress played Catherine Cawood in "Happy Valley"?',
+            'Which actress played Sergeant Catherine Cawood\'s sister Clare in "Happy Valley"?',
         answers: [
-            'Sarah Lancashire',
-            'Nicola Walker',
-            'Suranne Jones',
-            'Maxine Peake'
+            'Siobhan Finneran',
+            'Sally Wainwright',
+            'Amelia Bullmore',
+            'Susan Lynch'
         ],
         correctAnswer:
-            'Sarah Lancashire',
+            'Siobhan Finneran',
         difficulty:
-            'Medium',
+            'Hard',
         tags: [
             'tv',
             'british',
@@ -452,15 +452,15 @@ module.exports = [
         id: 'film_0091',
         category: 'Film',
         question:
-            'Which actor played Billy Elliot\'s father in the 2000 film "Billy Elliot"?',
+            'Which actor played Billy Elliot\'s dance teacher\'s husband, Tony, in the 2000 film "Billy Elliot"?',
         answers: [
+            'Colin MacLachlan',
             'Gary Lewis',
-            'Pete Postlethwaite',
-            'Brendan Gleeson',
-            'Robert Carlyle'
+            'Jamie Draven',
+            'Stuart Wells'
         ],
         correctAnswer:
-            'Gary Lewis',
+            'Colin MacLachlan',
         difficulty:
             'Hard',
         tags: [
@@ -476,17 +476,17 @@ module.exports = [
         id: 'film_0092',
         category: 'Film',
         question:
-            'Which actress played Bridget Gregory in the 1994 film "The Last Seduction"?',
+            'Which actress played the title character in the 1990 film "Mermaids"?',
         answers: [
-            'Linda Fiorentino',
-            'Geena Davis',
-            'Madeleine Stowe',
-            'Debra Winger'
+            'Cher',
+            'Susan Sarandon',
+            'Michelle Pfeiffer',
+            'Geena Davis'
         ],
         correctAnswer:
-            'Linda Fiorentino',
+            'Cher',
         difficulty:
-            'Hard',
+            'Medium',
         tags: [
             'film',
             '1990s',
@@ -500,7 +500,7 @@ module.exports = [
         id: 'film_0093',
         category: 'Film',
         question:
-            'Which 1988 comedy film stars Bette Midler and Barbara Hershey as lifelong friends?',
+            'Which 1988 comedy-drama stars Bette Midler and Barbara Hershey as lifelong friends?',
         answers: [
             'Beaches',
             'Big Business',
@@ -721,17 +721,17 @@ module.exports = [
         id: 'geography_0045',
         category: 'Geography',
         question:
-            'Which European capital stands on the River Vltava?',
+            'Which European capital is divided into Buda and Pest by the River Danube?',
         answers: [
-            'Prague',
-            'Vienna',
             'Budapest',
-            'Bratislava'
+            'Bratislava',
+            'Belgrade',
+            'Vienna'
         ],
         correctAnswer:
-            'Prague',
+            'Budapest',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             'geography',
             'europe',
@@ -797,17 +797,17 @@ module.exports = [
         id: 'history_0045',
         category: 'History',
         question:
-            'Which English monarch was known as the Virgin Queen?',
+            'Which English king lost the throne to William of Orange during the Glorious Revolution?',
         answers: [
-            'Elizabeth I',
-            'Mary I',
-            'Anne',
-            'Victoria'
+            'James II',
+            'Charles II',
+            'William II',
+            'George I'
         ],
         correctAnswer:
-            'Elizabeth I',
+            'James II',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
             'history',
             'british',
@@ -925,15 +925,15 @@ module.exports = [
         id: 'literature_0028',
         category: 'Literature',
         question:
-            'Who wrote the novel "The Remains of the Day"?',
+            'Who wrote the novel "The Prime of Miss Jean Brodie"?',
         answers: [
-            'Kazuo Ishiguro',
-            'Ian McEwan',
-            'Julian Barnes',
-            'Martin Amis'
+            'Muriel Spark',
+            'Iris Murdoch',
+            'Doris Lessing',
+            'Penelope Lively'
         ],
         correctAnswer:
-            'Kazuo Ishiguro',
+            'Muriel Spark',
         difficulty:
             'Medium',
         tags: [
@@ -949,15 +949,15 @@ module.exports = [
         id: 'literature_0029',
         category: 'Literature',
         question:
-            'Which author wrote "The Woman in White"?',
+            'Which author wrote the novel "The Thirty-Nine Steps"?',
         answers: [
+            'John Buchan',
             'Wilkie Collins',
-            'Thomas Hardy',
-            'Anthony Trollope',
-            'George Eliot'
+            'Graham Greene',
+            'H. G. Wells'
         ],
         correctAnswer:
-            'Wilkie Collins',
+            'John Buchan',
         difficulty:
             'Medium',
         tags: [
@@ -977,21 +977,21 @@ module.exports = [
         id: 'food_0030',
         category: 'Food & Drink',
         question:
-            'Which type of pastry is traditionally used to make profiteroles?',
+            'Which Italian cheese is traditionally used in tiramisu?',
         answers: [
-            'Choux pastry',
-            'Puff pastry',
-            'Shortcrust pastry',
-            'Filo pastry'
+            'Mascarpone',
+            'Ricotta',
+            'Mozzarella',
+            'Gorgonzola'
         ],
         correctAnswer:
-            'Choux pastry',
+            'Mascarpone',
         difficulty:
-            'Medium',
+            'Easy',
         tags: [
             'food',
-            'baking',
-            'desserts'
+            'desserts',
+            'italian'
         ],
         dailyEligible:
             true
