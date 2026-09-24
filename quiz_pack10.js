@@ -180,7 +180,7 @@ const questions = [
         id: 'music_0076',
         category: 'Music',
         question:
-            'Which singer had a 1964 hit with "You Don\'t Have to Say You Love Me"?',
+            'Which singer had a 1966 hit with "You Don\'t Have to Say You Love Me"?',
         answers: [
             'Dusty Springfield',
             'Cilla Black',
@@ -428,21 +428,21 @@ const questions = [
         id: 'film_0056',
         category: 'Film',
         question:
-            'Which actress played Bridget Jones in the 2001 film "Bridget Jones\'s Diary"?',
+            'Which actress played Marge Gunderson in the 1996 film "Fargo"?',
         answers: [
-            'Renée Zellweger',
-            'Sandra Bullock',
-            'Julia Roberts',
-            'Kate Winslet'
+            'Frances McDormand',
+            'Holly Hunter',
+            'Susan Sarandon',
+            'Geena Davis'
         ],
         correctAnswer:
-            'Renée Zellweger',
+            'Frances McDormand',
         difficulty:
-            'Easy',
+            'Medium',
         tags: [
-            '2000s',
+            '1990s',
             'actors',
-            'romantic comedy'
+            'crime'
         ],
         dailyEligible:
             true
@@ -880,20 +880,20 @@ const questions = [
         id: 'food_0019',
         category: 'Food and Drink',
         question:
-            'Which fruit is dried to make a prune?',
+            'Which nut is traditionally used to make marzipan?',
         answers: [
-            'Plum',
-            'Apricot',
-            'Fig',
-            'Date'
+            'Almond',
+            'Hazelnut',
+            'Walnut',
+            'Pistachio'
         ],
         correctAnswer:
-            'Plum',
+            'Almond',
         difficulty:
             'Easy',
         tags: [
-            'fruit',
             'ingredients',
+            'sweets',
             'food'
         ],
         dailyEligible:
