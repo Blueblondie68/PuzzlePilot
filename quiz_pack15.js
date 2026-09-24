@@ -476,20 +476,20 @@ const questions = [
         id: 'film_0088',
         category: 'Film',
         question:
-            'Which actress played Annie Wilkes in the 1990 film "Misery"?',
+            'Which actor played the eccentric inventor Caractacus Potts in the 1968 film "Chitty Chitty Bang Bang"?',
         answers: [
-            'Kathy Bates',
-            'Jessica Lange',
-            'Susan Sarandon',
-            'Sissy Spacek'
+            'Dick Van Dyke',
+            'David Niven',
+            'Peter Sellers',
+            'Rex Harrison'
         ],
         correctAnswer:
-            'Kathy Bates',
+            'Dick Van Dyke',
         difficulty:
             'Medium',
         tags: [
-            '1990s',
-            'thriller',
+            '1960s',
+            'british',
             'actors'
         ],
         dailyEligible:
@@ -652,15 +652,15 @@ const questions = [
         id: 'history_0043',
         category: 'History',
         question:
-            'Which English king was executed in 1649 following the English Civil War?',
+            'Which English king was on the throne when the Great Fire of London occurred in 1666?',
         answers: [
-            'Charles I',
             'Charles II',
-            'James I',
-            'James II'
+            'Charles I',
+            'James II',
+            'William III'
         ],
         correctAnswer:
-            'Charles I',
+            'Charles II',
         difficulty:
             'Medium',
         tags: [
