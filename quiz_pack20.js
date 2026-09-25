@@ -12,7 +12,7 @@ const questions = [
     {
         id: 'music_0157',
         category: 'Music',
-        question: 'Which singer had a 1984 hit with Smalltown Boy?',
+        question: 'Which band had a 1984 hit with Smalltown Boy?',
         answers: ['Bronski Beat', 'Erasure', 'Soft Cell', 'The Human League'],
         correctAnswer: 'Bronski Beat',
         difficulty: 'Medium',
@@ -82,21 +82,21 @@ const questions = [
     {
         id: 'music_0164',
         category: 'Music',
-        question: 'Who was the lead singer of Blondie?',
-        answers: ['Debbie Harry', 'Patti Smith', 'Chrissie Hynde', 'Joan Jett'],
-        correctAnswer: 'Debbie Harry',
-        difficulty: 'Easy',
-        tags: ['1970s', '1980s', 'bands'],
+        question: 'Which band recorded the 1985 hit Life in a Northern Town?',
+        answers: ['The Dream Academy', 'Tears for Fears', 'Talk Talk', 'The Style Council'],
+        correctAnswer: 'The Dream Academy',
+        difficulty: 'Medium',
+        tags: ['1980s', 'british', 'bands'],
         dailyEligible: true
     },
     {
         id: 'music_0165',
         category: 'Music',
-        question: 'Which singer had a 1987 hit with Luka?',
-        answers: ['Suzanne Vega', 'Tracy Chapman', 'Tanita Tikaram', 'Tori Amos'],
-        correctAnswer: 'Suzanne Vega',
+        question: 'Which British band had a 1987 hit with China in Your Hand?',
+        answers: ['T\'Pau', 'Heart', 'The Bangles', 'Transvision Vamp'],
+        correctAnswer: 'T\'Pau',
         difficulty: 'Medium',
-        tags: ['1980s', 'female artists', 'songs'],
+        tags: ['1980s', 'british', 'bands'],
         dailyEligible: true
     },
     {
@@ -117,21 +117,21 @@ const questions = [
     {
         id: 'tv_0149',
         category: 'TV',
-        question: 'Which actor played Jim Royle in The Royle Family?',
-        answers: ['Ricky Tomlinson', 'Craig Cash', 'Geoffrey Hughes', 'Ralf Little'],
-        correctAnswer: 'Ricky Tomlinson',
-        difficulty: 'Easy',
+        question: 'Which actor played Reginald Perrin in The Fall and Rise of Reginald Perrin?',
+        answers: ['Leonard Rossiter', 'Richard Briers', 'Paul Eddington', 'Geoffrey Palmer'],
+        correctAnswer: 'Leonard Rossiter',
+        difficulty: 'Medium',
         tags: ['british', 'sitcom', 'actors'],
         dailyEligible: true
     },
     {
         id: 'tv_0150',
         category: 'TV',
-        question: 'Which British sitcom featured Tom and Barbara Good attempting to live self-sufficiently?',
-        answers: ['The Good Life', 'Ever Decreasing Circles', 'To the Manor Born', 'Butterflies'],
-        correctAnswer: 'The Good Life',
-        difficulty: 'Easy',
-        tags: ['british', 'sitcom', '1970s'],
+        question: 'Which British sitcom featured the character Martin Bryce?',
+        answers: ['Ever Decreasing Circles', 'Butterflies', 'The Good Life', 'To the Manor Born'],
+        correctAnswer: 'Ever Decreasing Circles',
+        difficulty: 'Medium',
+        tags: ['british', 'sitcom', '1980s'],
         dailyEligible: true
     },
     {
@@ -157,10 +157,10 @@ const questions = [
     {
         id: 'tv_0153',
         category: 'TV',
-        question: 'Which actress played Edina Monsoon in Absolutely Fabulous?',
-        answers: ['Jennifer Saunders', 'Joanna Lumley', 'Dawn French', 'June Whitfield'],
-        correctAnswer: 'Jennifer Saunders',
-        difficulty: 'Easy',
+        question: 'Which actress played Miss Brahms in Are You Being Served?',
+        answers: ['Wendy Richard', 'Mollie Sugden', 'Pauline Collins', 'Penelope Keith'],
+        correctAnswer: 'Wendy Richard',
+        difficulty: 'Medium',
         tags: ['british', 'sitcom', 'actors'],
         dailyEligible: true
     },
@@ -177,21 +177,21 @@ const questions = [
     {
         id: 'tv_0155',
         category: 'TV',
-        question: 'Which actress played Sybil Fawlty in Fawlty Towers?',
-        answers: ['Prunella Scales', 'Connie Booth', 'Penelope Keith', 'Patricia Routledge'],
-        correctAnswer: 'Prunella Scales',
+        question: 'Which actor played Father Ted Crilly in Father Ted?',
+        answers: ['Dermot Morgan', 'Ardal O’Hanlon', 'Frank Kelly', 'Graham Linehan'],
+        correctAnswer: 'Dermot Morgan',
         difficulty: 'Easy',
-        tags: ['british', 'sitcom', 'actors'],
+        tags: ['british', 'irish', 'sitcom'],
         dailyEligible: true
     },
     {
         id: 'tv_0156',
         category: 'TV',
-        question: 'What is Sheldon Cooper’s profession in The Big Bang Theory?',
-        answers: ['Physicist', 'Chemist', 'Engineer', 'Doctor'],
-        correctAnswer: 'Physicist',
+        question: 'Which actress played Phoebe Buffay in Friends?',
+        answers: ['Lisa Kudrow', 'Courteney Cox', 'Jennifer Aniston', 'Jane Sibbett'],
+        correctAnswer: 'Lisa Kudrow',
         difficulty: 'Easy',
-        tags: ['american', 'sitcom', 'characters'],
+        tags: ['american', 'sitcom', 'actors'],
         dailyEligible: true
     },
 
@@ -212,21 +212,21 @@ const questions = [
     {
         id: 'film_0124',
         category: 'Film',
-        question: 'Which 1987 film starred Patrick Swayze as dance instructor Johnny Castle?',
-        answers: ['Dirty Dancing', 'Road House', 'Ghost', 'Footloose'],
-        correctAnswer: 'Dirty Dancing',
-        difficulty: 'Easy',
-        tags: ['1980s', 'film', 'romance'],
+        question: 'Which actress played Veronica Sawyer in the 1988 film Heathers?',
+        answers: ['Winona Ryder', 'Christian Slater', 'Shannen Doherty', 'Jennifer Jason Leigh'],
+        correctAnswer: 'Winona Ryder',
+        difficulty: 'Medium',
+        tags: ['1980s', 'actors', 'film'],
         dailyEligible: true
     },
     {
         id: 'film_0125',
         category: 'Film',
-        question: 'Which actress played Vivian Ward in Pretty Woman?',
-        answers: ['Julia Roberts', 'Meg Ryan', 'Sandra Bullock', 'Demi Moore'],
-        correctAnswer: 'Julia Roberts',
-        difficulty: 'Easy',
-        tags: ['1990s', 'actors', 'romantic comedy'],
+        question: 'Which actor played Jake Blues in the 1980 film The Blues Brothers?',
+        answers: ['John Belushi', 'Dan Aykroyd', 'Bill Murray', 'Chevy Chase'],
+        correctAnswer: 'John Belushi',
+        difficulty: 'Medium',
+        tags: ['1980s', 'actors', 'comedy'],
         dailyEligible: true
     },
     {
@@ -242,11 +242,11 @@ const questions = [
     {
         id: 'film_0127',
         category: 'Film',
-        question: 'Which actor played Norman Bates in the 1960 film Psycho?',
-        answers: ['Anthony Perkins', 'Gregory Peck', 'James Stewart', 'Tony Curtis'],
-        correctAnswer: 'Anthony Perkins',
+        question: 'Which actor played the title character in the 1982 film Tootsie?',
+        answers: ['Dustin Hoffman', 'Robin Williams', 'Gene Hackman', 'Richard Dreyfuss'],
+        correctAnswer: 'Dustin Hoffman',
         difficulty: 'Medium',
-        tags: ['1960s', 'actors', 'thriller'],
+        tags: ['1980s', 'actors', 'comedy'],
         dailyEligible: true
     },
     {
@@ -307,11 +307,11 @@ const questions = [
     {
         id: 'general_0061',
         category: 'General Knowledge',
-        question: 'Which month gains an extra day during a leap year?',
-        answers: ['February', 'January', 'March', 'April'],
-        correctAnswer: 'February',
-        difficulty: 'Easy',
-        tags: ['calendar', 'general knowledge'],
+        question: 'How many principal points are shown on a traditional mariner’s compass?',
+        answers: ['32', '16', '24', '36'],
+        correctAnswer: '32',
+        difficulty: 'Medium',
+        tags: ['general knowledge', 'navigation'],
         dailyEligible: true
     },
 
@@ -322,21 +322,21 @@ const questions = [
     {
         id: 'history_0054',
         category: 'History',
-        question: 'Which English king was defeated at the Battle of Bosworth Field in 1485?',
-        answers: ['Richard III', 'Henry VI', 'Edward IV', 'John'],
-        correctAnswer: 'Richard III',
+        question: 'Who was the first monarch of the Tudor dynasty?',
+        answers: ['Henry VII', 'Henry VIII', 'Edward IV', 'Richard III'],
+        correctAnswer: 'Henry VII',
         difficulty: 'Medium',
-        tags: ['british', 'monarchy', 'medieval'],
+        tags: ['british', 'monarchy', 'tudors'],
         dailyEligible: true
     },
     {
         id: 'history_0055',
         category: 'History',
-        question: 'Which nurse became famous for her work during the Crimean War?',
-        answers: ['Florence Nightingale', 'Edith Cavell', 'Mary Seacole', 'Clara Barton'],
-        correctAnswer: 'Florence Nightingale',
-        difficulty: 'Easy',
-        tags: ['british', '19th century', 'people'],
+        question: 'The Janissaries were elite soldiers of which empire?',
+        answers: ['Ottoman Empire', 'Roman Empire', 'Mughal Empire', 'Byzantine Empire'],
+        correctAnswer: 'Ottoman Empire',
+        difficulty: 'Medium',
+        tags: ['history', 'empires', 'military'],
         dailyEligible: true
     },
 
@@ -357,11 +357,11 @@ const questions = [
     {
         id: 'geography_0058',
         category: 'Geography',
-        question: 'Which sea lies between Great Britain and Scandinavia?',
-        answers: ['North Sea', 'Baltic Sea', 'Irish Sea', 'Mediterranean Sea'],
-        correctAnswer: 'North Sea',
-        difficulty: 'Easy',
-        tags: ['europe', 'seas', 'geography'],
+        question: 'Geirangerfjord is located in which European country?',
+        answers: ['Norway', 'Sweden', 'Finland', 'Iceland'],
+        correctAnswer: 'Norway',
+        difficulty: 'Medium',
+        tags: ['europe', 'geography', 'landmarks'],
         dailyEligible: true
     },
     {
@@ -382,20 +382,20 @@ const questions = [
     {
         id: 'science_0052',
         category: 'Science & Nature',
-        question: 'Which part of a plant carries out most photosynthesis?',
-        answers: ['Leaves', 'Roots', 'Flowers', 'Seeds'],
-        correctAnswer: 'Leaves',
-        difficulty: 'Easy',
-        tags: ['biology', 'plants'],
+        question: 'What is the scientific study of fungi called?',
+        answers: ['Mycology', 'Botany', 'Ecology', 'Entomology'],
+        correctAnswer: 'Mycology',
+        difficulty: 'Medium',
+        tags: ['biology', 'science'],
         dailyEligible: true
     },
     {
         id: 'science_0053',
         category: 'Science & Nature',
-        question: 'What is the largest organ of the human body?',
-        answers: ['Skin', 'Liver', 'Heart', 'Lungs'],
-        correctAnswer: 'Skin',
-        difficulty: 'Easy',
+        question: 'What is the hardest substance in the human body?',
+        answers: ['Tooth enamel', 'Bone', 'Dentine', 'Keratin'],
+        correctAnswer: 'Tooth enamel',
+        difficulty: 'Medium',
         tags: ['biology', 'human body'],
         dailyEligible: true
     },
@@ -407,11 +407,11 @@ const questions = [
     {
         id: 'food_0034',
         category: 'Food & Drink',
-        question: 'Which cheese is traditionally used in a Greek salad?',
-        answers: ['Feta', 'Brie', 'Cheddar', 'Gouda'],
-        correctAnswer: 'Feta',
+        question: 'Which type of pasta is shaped like small bow ties?',
+        answers: ['Farfalle', 'Penne', 'Fusilli', 'Rigatoni'],
+        correctAnswer: 'Farfalle',
         difficulty: 'Easy',
-        tags: ['food', 'cheese'],
+        tags: ['food', 'italian', 'pasta'],
         dailyEligible: true
     },
 
@@ -422,11 +422,11 @@ const questions = [
     {
         id: 'sport_0034',
         category: 'Sport',
-        question: 'Which sport uses the terms love, deuce and ace?',
-        answers: ['Tennis', 'Badminton', 'Squash', 'Table tennis'],
-        correctAnswer: 'Tennis',
+        question: 'Which sport features both scrums and line-outs?',
+        answers: ['Rugby union', 'Rugby league', 'American football', 'Australian rules football'],
+        correctAnswer: 'Rugby union',
         difficulty: 'Easy',
-        tags: ['tennis', 'sport'],
+        tags: ['rugby', 'sport'],
         dailyEligible: true
     },
 
@@ -437,9 +437,9 @@ const questions = [
     {
         id: 'literature_0034',
         category: 'Literature',
-        question: 'Who wrote The Railway Children?',
-        answers: ['E. Nesbit', 'Frances Hodgson Burnett', 'Enid Blyton', 'Louisa May Alcott'],
-        correctAnswer: 'E. Nesbit',
+        question: 'Who wrote the children’s novel The Borrowers?',
+        answers: ['Mary Norton', 'E. Nesbit', 'Enid Blyton', 'Noel Streatfeild'],
+        correctAnswer: 'Mary Norton',
         difficulty: 'Medium',
         tags: ['british', 'children', 'authors'],
         dailyEligible: true
