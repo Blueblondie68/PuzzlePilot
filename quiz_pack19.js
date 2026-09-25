@@ -1,6 +1,7 @@
 // quiz_pack19.js
 // PuzzlePilot Big Quiz
 // Pack 19 - 40 questions
+// Corrected after duplicate check
 
 const questions = [
 
@@ -41,11 +42,11 @@ const questions = [
     {
         id: 'music_0150',
         category: 'Music',
-        question: 'Which singer had hits with Kids in America and You Keep Me Hangin’ On?',
-        answers: ['Kim Wilde', 'Toyah Willcox', 'Hazel O’Connor', 'Alison Moyet'],
-        correctAnswer: 'Kim Wilde',
+        question: 'Which singer had a 1988 hit with Orinoco Flow?',
+        answers: ['Enya', 'Sinéad O’Connor', 'Clannad', 'Kate Bush'],
+        correctAnswer: 'Enya',
         difficulty: 'Medium',
-        tags: ['1980s', 'british', 'female artists'],
+        tags: ['1980s', 'irish', 'female artists'],
         dailyEligible: true
     },
     {
@@ -61,11 +62,11 @@ const questions = [
     {
         id: 'music_0152',
         category: 'Music',
-        question: 'Who sang the 1990 hit Nothing Compares 2 U?',
-        answers: ['Sinéad O’Connor', 'Annie Lennox', 'Enya', 'Dolores O’Riordan'],
-        correctAnswer: 'Sinéad O’Connor',
-        difficulty: 'Easy',
-        tags: ['1990s', 'female artists', 'songs'],
+        question: 'Which singer had a 1984 hit with Together in Electric Dreams alongside Giorgio Moroder?',
+        answers: ['Philip Oakey', 'Howard Jones', 'Nik Kershaw', 'Paul Young'],
+        correctAnswer: 'Philip Oakey',
+        difficulty: 'Medium',
+        tags: ['1980s', 'british', 'songs'],
         dailyEligible: true
     },
     {
@@ -116,11 +117,11 @@ const questions = [
     {
         id: 'tv_0141',
         category: 'TV',
-        question: 'Which sitcom featured the characters Tom and Barbara Good?',
-        answers: ['The Good Life', 'Ever Decreasing Circles', 'To the Manor Born', 'Butterflies'],
-        correctAnswer: 'The Good Life',
-        difficulty: 'Medium',
-        tags: ['british', 'sitcom', '1970s'],
+        question: 'Which British sitcom featured the character Alan Partridge?',
+        answers: ['I’m Alan Partridge', 'The Office', 'Black Books', 'Men Behaving Badly'],
+        correctAnswer: 'I’m Alan Partridge',
+        difficulty: 'Easy',
+        tags: ['british', 'sitcom', '1990s'],
         dailyEligible: true
     },
     {
@@ -136,11 +137,11 @@ const questions = [
     {
         id: 'tv_0143',
         category: 'TV',
-        question: 'Which actor played Inspector Morse in the original television series?',
-        answers: ['John Thaw', 'Kevin Whately', 'David Suchet', 'John Nettles'],
-        correctAnswer: 'John Thaw',
+        question: 'Which actor played Detective Inspector Tom Barnaby in Midsomer Murders?',
+        answers: ['John Nettles', 'John Thaw', 'David Jason', 'Kevin Whately'],
+        correctAnswer: 'John Nettles',
         difficulty: 'Easy',
-        tags: ['british', 'crime', '1980s'],
+        tags: ['british', 'crime', 'actors'],
         dailyEligible: true
     },
     {
@@ -166,10 +167,10 @@ const questions = [
     {
         id: 'tv_0146',
         category: 'TV',
-        question: 'In The Vicar of Dibley, what is the first name of the vicar?',
-        answers: ['Geraldine', 'Alice', 'Rosemary', 'Margaret'],
-        correctAnswer: 'Geraldine',
-        difficulty: 'Easy',
+        question: 'Which actress played Alice Tinker in The Vicar of Dibley?',
+        answers: ['Emma Chambers', 'Dawn French', 'Liz Smith', 'Pauline McLynn'],
+        correctAnswer: 'Emma Chambers',
+        difficulty: 'Medium',
         tags: ['british', 'sitcom', '1990s'],
         dailyEligible: true
     },
@@ -201,30 +202,30 @@ const questions = [
     {
         id: 'film_0115',
         category: 'Film',
-        question: 'Which actor played the title character in Mrs Doubtfire?',
-        answers: ['Robin Williams', 'Tom Hanks', 'Steve Martin', 'Billy Crystal'],
+        question: 'Which actor played Dr Malcolm Sayer in the 1990 film Awakenings?',
+        answers: ['Robin Williams', 'Robert De Niro', 'Dustin Hoffman', 'Richard Dreyfuss'],
         correctAnswer: 'Robin Williams',
-        difficulty: 'Easy',
-        tags: ['1990s', 'comedy', 'actors'],
+        difficulty: 'Medium',
+        tags: ['1990s', 'actors', 'drama'],
         dailyEligible: true
     },
     {
         id: 'film_0116',
         category: 'Film',
-        question: 'Which 1993 film features dinosaurs brought back to life in a theme park?',
-        answers: ['Jurassic Park', 'Congo', 'Jumanji', 'Godzilla'],
-        correctAnswer: 'Jurassic Park',
+        question: 'Which 1995 film features a magical board game that brings jungle dangers into the real world?',
+        answers: ['Jumanji', 'Casper', 'Matilda', 'Hook'],
+        correctAnswer: 'Jumanji',
         difficulty: 'Easy',
-        tags: ['1990s', 'science fiction', 'film'],
+        tags: ['1990s', 'fantasy', 'film'],
         dailyEligible: true
     },
     {
         id: 'film_0117',
         category: 'Film',
-        question: 'Who played the female lead, Vivian Ward, in Pretty Woman?',
-        answers: ['Julia Roberts', 'Meg Ryan', 'Demi Moore', 'Sandra Bullock'],
-        correctAnswer: 'Julia Roberts',
-        difficulty: 'Easy',
+        question: 'Which actress played Annie Reed in Sleepless in Seattle?',
+        answers: ['Meg Ryan', 'Julia Roberts', 'Sandra Bullock', 'Demi Moore'],
+        correctAnswer: 'Meg Ryan',
+        difficulty: 'Medium',
         tags: ['1990s', 'romance', 'actors'],
         dailyEligible: true
     },
@@ -261,11 +262,11 @@ const questions = [
     {
         id: 'film_0121',
         category: 'Film',
-        question: 'Which actress played Sarah Connor in Terminator 2: Judgment Day?',
-        answers: ['Linda Hamilton', 'Sigourney Weaver', 'Jamie Lee Curtis', 'Geena Davis'],
-        correctAnswer: 'Linda Hamilton',
-        difficulty: 'Medium',
-        tags: ['1990s', 'science fiction', 'actors'],
+        question: 'Which actress played Ripley in the Alien film series?',
+        answers: ['Sigourney Weaver', 'Linda Hamilton', 'Jamie Lee Curtis', 'Geena Davis'],
+        correctAnswer: 'Sigourney Weaver',
+        difficulty: 'Easy',
+        tags: ['science fiction', 'actors', 'film'],
         dailyEligible: true
     },
     {
@@ -306,11 +307,11 @@ const questions = [
     {
         id: 'general_0057',
         category: 'General Knowledge',
-        question: 'How many colours are traditionally named in a rainbow?',
-        answers: ['7', '6', '8', '9'],
-        correctAnswer: '7',
-        difficulty: 'Easy',
-        tags: ['general knowledge', 'numbers'],
+        question: 'How many dots are there in total on a standard six-sided die?',
+        answers: ['21', '18', '24', '20'],
+        correctAnswer: '21',
+        difficulty: 'Medium',
+        tags: ['numbers', 'games'],
         dailyEligible: true
     },
 
@@ -366,11 +367,11 @@ const questions = [
     {
         id: 'geography_0056',
         category: 'Geography',
-        question: 'Which river runs through London?',
-        answers: ['Thames', 'Severn', 'Trent', 'Mersey'],
-        correctAnswer: 'Thames',
+        question: 'Which English city stands on the River Avon and is famous for its Roman baths?',
+        answers: ['Bath', 'Bristol', 'Oxford', 'Exeter'],
+        correctAnswer: 'Bath',
         difficulty: 'Easy',
-        tags: ['british', 'rivers', 'london'],
+        tags: ['british', 'england', 'cities'],
         dailyEligible: true
     },
 
@@ -436,11 +437,11 @@ const questions = [
     {
         id: 'literature_0032',
         category: 'Literature',
-        question: 'Which author created the detective Hercule Poirot?',
-        answers: ['Agatha Christie', 'Arthur Conan Doyle', 'Dorothy L. Sayers', 'P. D. James'],
-        correctAnswer: 'Agatha Christie',
-        difficulty: 'Easy',
-        tags: ['british', 'crime', 'authors'],
+        question: 'Who wrote the novel Rebecca?',
+        answers: ['Daphne du Maurier', 'Agatha Christie', 'Virginia Woolf', 'Iris Murdoch'],
+        correctAnswer: 'Daphne du Maurier',
+        difficulty: 'Medium',
+        tags: ['british', 'novels', 'authors'],
         dailyEligible: true
     }
 
