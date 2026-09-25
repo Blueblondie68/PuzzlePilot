@@ -1,450 +1,64 @@
 // quiz_pack18.js
-// PuzzlePilot Big Quiz
-// Pack 18
-// Corrected after full duplicate review
+// PuzzlePilot Big Quiz - Pack 18
+// 39 questions
 
-const questions = [
-
-    // =========================================================
+module.exports = [
     // MUSIC
-    // =========================================================
+    { id:'music_0137', category:'Music', question:'Which singer had a 1987 hit with "I Think We\'re Alone Now"?', answers:['Tiffany','Belinda Carlisle','Kim Wilde','Debbie Gibson'], correctAnswer:'Tiffany', difficulty:'Medium', tags:['music','1980s','songs'], dailyEligible:true },
+    { id:'music_0138', category:'Music', question:'Which singer performed "Together in Electric Dreams" with Giorgio Moroder?', answers:['Philip Oakey','Paul Young','Howard Jones','Nik Kershaw'], correctAnswer:'Philip Oakey', difficulty:'Medium', tags:['music','1980s','british'], dailyEligible:true },
+    { id:'music_0139', category:'Music', question:'Which group recorded the 1965 hit "California Dreamin\'"?', answers:['The Mamas & the Papas','The Byrds','The Beach Boys','The Monkees'], correctAnswer:'The Mamas & the Papas', difficulty:'Medium', tags:['music','1960s','groups'], dailyEligible:true },
+    { id:'music_0140', category:'Music', question:'Which band had a 1979 hit with "Video Killed the Radio Star"?', answers:['The Buggles','The Knack','Blondie','Squeeze'], correctAnswer:'The Buggles', difficulty:'Medium', tags:['music','1970s','songs'], dailyEligible:true },
+       { id:'music_0141', category:'Music', question:'Which Scottish duo had a 1988 hit with "I\'m Gonna Be (500 Miles)"?', answers:['The Proclaimers','Hue and Cry','Wet Wet Wet','The Bluebells'], correctAnswer:'The Proclaimers', difficulty:'Easy', tags:['music','1980s','british'], dailyEligible:true }, 
+    { id:'music_0142', category:'Music', question:'Which band had a 1989 hit with "She Drives Me Crazy"?', answers:['Fine Young Cannibals','Simply Red','Level 42','Wet Wet Wet'], correctAnswer:'Fine Young Cannibals', difficulty:'Medium', tags:['music','1980s','british'], dailyEligible:true },
+    { id:'music_0143', category:'Music', question:'Which singer-songwriter had a 1976 hit with "Love and Affection"?', answers:['Joan Armatrading','Elkie Brooks','Judie Tzuke','Beverley Craven'], correctAnswer:'Joan Armatrading', difficulty:'Medium', tags:['music','1970s','british'], dailyEligible:true },
+    { id:'music_0144', category:'Music', question:'Which group had a 1986 hit with "Walk Like an Egyptian"?', answers:['The Bangles','The Go-Go\'s','Bananarama','Wilson Phillips'], correctAnswer:'The Bangles', difficulty:'Easy', tags:['music','1980s','groups'], dailyEligible:true },
+    { id:'music_0145', category:'Music', question:'Which band recorded the 1985 hit "Walking on Sunshine"?', answers:['Katrina and the Waves','The Bangles','Heart','The Pretenders'], correctAnswer:'Katrina and the Waves', difficulty:'Easy', tags:['music','1980s','songs'], dailyEligible:true },
+    { id:'music_0146', category:'Music', question:'Which band had a 1988 number-one hit with "Perfect"?', answers:['Fairground Attraction','The Beautiful South','Deacon Blue','Texas'], correctAnswer:'Fairground Attraction', difficulty:'Medium', tags:['music','1980s','british'], dailyEligible:true },
 
-    {
-        id: 'music_0137',
-        category: 'Music',
-        question: 'Which band released the 1977 album Rumours?',
-        answers: ['Fleetwood Mac', 'Eagles', 'ABBA', 'Queen'],
-        correctAnswer: 'Fleetwood Mac',
-        difficulty: 'Easy',
-        tags: ['1970s', 'albums', 'bands'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0138',
-        category: 'Music',
-        question: 'Which singer had a 1987 hit with Never Gonna Give You Up?',
-        answers: ['Rick Astley', 'Jason Donovan', 'Nik Kershaw', 'Paul Young'],
-        correctAnswer: 'Rick Astley',
-        difficulty: 'Easy',
-        tags: ['1980s', 'british', 'pop'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0139',
-        category: 'Music',
-        question: 'Which group recorded the song California Dreamin’?',
-        answers: ['The Mamas & the Papas', 'The Beach Boys', 'The Monkees', 'The Byrds'],
-        correctAnswer: 'The Mamas & the Papas',
-        difficulty: 'Medium',
-        tags: ['1960s', 'groups', 'songs'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0140',
-        category: 'Music',
-        question: 'Which singer had a 1985 hit with Running Up That Hill?',
-        answers: ['Kate Bush', 'Alison Moyet', 'Kim Wilde', 'Toyah Willcox'],
-        correctAnswer: 'Kate Bush',
-        difficulty: 'Easy',
-        tags: ['1980s', 'british', 'female artists'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0141',
-        category: 'Music',
-        question: 'Which British band had hits with Rio and Hungry Like the Wolf?',
-        answers: ['Duran Duran', 'Spandau Ballet', 'Ultravox', 'Culture Club'],
-        correctAnswer: 'Duran Duran',
-        difficulty: 'Easy',
-        tags: ['1980s', 'british', 'bands'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0142',
-        category: 'Music',
-        question: 'Who was the lead singer of the band T. Rex?',
-        answers: ['Marc Bolan', 'Bryan Ferry', 'David Essex', 'Steve Harley'],
-        correctAnswer: 'Marc Bolan',
-        difficulty: 'Medium',
-        tags: ['1970s', 'british', 'glam rock'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0143',
-        category: 'Music',
-        question: 'Which singer released the 1983 hit Total Eclipse of the Heart?',
-        answers: ['Bonnie Tyler', 'Kim Carnes', 'Laura Branigan', 'Pat Benatar'],
-        correctAnswer: 'Bonnie Tyler',
-        difficulty: 'Easy',
-        tags: ['1980s', 'british', 'female artists'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0144',
-        category: 'Music',
-        question: 'Which duo consisted of George Michael and Andrew Ridgeley?',
-        answers: ['Wham!', 'Erasure', 'Pet Shop Boys', 'Soft Cell'],
-        correctAnswer: 'Wham!',
-        difficulty: 'Easy',
-        tags: ['1980s', 'british', 'duos'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0145',
-        category: 'Music',
-        question: 'Which singer had a hit with Walking on Sunshine in 1985?',
-        answers: ['Katrina and the Waves', 'Kim Wilde', 'Belinda Carlisle', 'Cyndi Lauper'],
-        correctAnswer: 'Katrina and the Waves',
-        difficulty: 'Medium',
-        tags: ['1980s', 'songs', 'pop'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0146',
-        category: 'Music',
-        question: 'Which Scottish band had a 1988 hit with Perfect?',
-        answers: ['Fairground Attraction', 'Texas', 'Deacon Blue', 'Wet Wet Wet'],
-        correctAnswer: 'Fairground Attraction',
-        difficulty: 'Medium',
-        tags: ['1980s', 'british', 'bands'],
-        dailyEligible: true
-    },
-
-    // =========================================================
     // TV
-    // =========================================================
+    { id:'tv_0133', category:'TV', question:'Which actor played Del Boy in "Only Fools and Horses"?', answers:['David Jason','Nicholas Lyndhurst','Roger Lloyd-Pack','John Challis'], correctAnswer:'David Jason', difficulty:'Easy', tags:['tv','british','sitcoms'], dailyEligible:true },
+    { id:'tv_0134', category:'TV', question:'In "Father Ted", what is the name of the priests\' housekeeper?', answers:['Mrs Doyle','Mrs Brown','Mrs Kelly','Mrs Byrne'], correctAnswer:'Mrs Doyle', difficulty:'Easy', tags:['tv','comedy','sitcoms'], dailyEligible:true },
+    { id:'tv_0135', category:'TV', question:'In "Cheers", which two characters had a famous on-off romance?', answers:['Sam Malone and Diane Chambers','Norm Peterson and Carla Tortelli','Cliff Clavin and Rebecca Howe','Woody Boyd and Lilith Sternin'], correctAnswer:'Sam Malone and Diane Chambers', difficulty:'Medium', tags:['tv','american','sitcoms'], dailyEligible:true },
+    { id:'tv_0136', category:'TV', question:'What is the first name of Victor Meldrew\'s wife in "One Foot in the Grave"?', answers:['Margaret','Jean','Susan','Dorothy'], correctAnswer:'Margaret', difficulty:'Medium', tags:['tv','british','sitcoms'], dailyEligible:true },
+    { id:'tv_0137', category:'TV', question:'Which actor played Richard Bucket in "Keeping Up Appearances"?', answers:['Clive Swift','Geoffrey Hughes','Josephine Tewson','David Griffin'], correctAnswer:'Clive Swift', difficulty:'Medium', tags:['tv','british','sitcoms'], dailyEligible:true },
+    { id:'tv_0138', category:'TV', question:'In "Dad\'s Army", what is the name of the seaside town defended by Captain Mainwaring\'s platoon?', answers:['Walmington-on-Sea','Warmington-on-Sea','Walford-on-Sea','Wellington-on-Sea'], correctAnswer:'Walmington-on-Sea', difficulty:'Medium', tags:['tv','british','comedy'], dailyEligible:true },
+    { id:'tv_0139', category:'TV', question:'Which actor played the television detective Columbo?', answers:['Peter Falk','Telly Savalas','James Garner','Jack Klugman'], correctAnswer:'Peter Falk', difficulty:'Easy', tags:['tv','american','crime'], dailyEligible:true },
+    { id:'tv_0140', category:'TV', question:'What is Basil\'s surname in the sitcom "Fawlty Towers"?', answers:['Fawlty','Faulty','Fawley','Fawlty-Smith'], correctAnswer:'Fawlty', difficulty:'Easy', tags:['tv','british','sitcoms'], dailyEligible:true },
 
-    {
-        id: 'tv_0133',
-        category: 'TV',
-        question: 'Which actor played Del Boy in Only Fools and Horses?',
-        answers: ['David Jason', 'Nicholas Lyndhurst', 'John Sullivan', 'Roger Lloyd-Pack'],
-        correctAnswer: 'David Jason',
-        difficulty: 'Easy',
-        tags: ['british', 'sitcom', '1980s'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0134',
-        category: 'TV',
-        question: 'What is the name of the pub in Coronation Street?',
-        answers: ['The Rovers Return', 'The Queen Vic', 'The Woolpack', 'The Dog in the Pond'],
-        correctAnswer: 'The Rovers Return',
-        difficulty: 'Easy',
-        tags: ['british', 'soap', 'coronation street'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0135',
-        category: 'TV',
-        question: 'Which US sitcom featured the characters Sam Malone and Diane Chambers?',
-        answers: ['Cheers', 'Frasier', 'Taxi', 'Seinfeld'],
-        correctAnswer: 'Cheers',
-        difficulty: 'Medium',
-        tags: ['american', 'sitcom', '1980s'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0136',
-        category: 'TV',
-        question: 'Which actress played Hyacinth Bucket in Keeping Up Appearances?',
-        answers: ['Patricia Routledge', 'Penelope Keith', 'Judi Dench', 'Prunella Scales'],
-        correctAnswer: 'Patricia Routledge',
-        difficulty: 'Easy',
-        tags: ['british', 'sitcom', '1990s'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0137',
-        category: 'TV',
-        question: 'In Friends, what is Chandler Bing’s middle name?',
-        answers: ['Muriel', 'Michael', 'Matthew', 'Marcel'],
-        correctAnswer: 'Muriel',
-        difficulty: 'Medium',
-        tags: ['friends', 'american', 'sitcom'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0138',
-        category: 'TV',
-        question: 'Which British comedy series was set in the fictional seaside resort of Walmington-on-Sea?',
-        answers: ['Dad’s Army', 'Hi-de-Hi!', 'It Ain’t Half Hot Mum', 'Are You Being Served?'],
-        correctAnswer: 'Dad’s Army',
-        difficulty: 'Medium',
-        tags: ['british', 'comedy', 'classic tv'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0139',
-        category: 'TV',
-        question: 'Which actor played the title character in the TV detective series Columbo?',
-        answers: ['Peter Falk', 'Telly Savalas', 'Jack Klugman', 'James Garner'],
-        correctAnswer: 'Peter Falk',
-        difficulty: 'Easy',
-        tags: ['american', 'crime', 'classic tv'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0140',
-        category: 'TV',
-        question: 'Which comedy series featured hotel owner Basil Fawlty?',
-        answers: ['Fawlty Towers', 'The Good Life', 'Rising Damp', 'Porridge'],
-        correctAnswer: 'Fawlty Towers',
-        difficulty: 'Easy',
-        tags: ['british', 'sitcom', '1970s'],
-        dailyEligible: true
-    },
-
-    // =========================================================
     // FILM
-    // =========================================================
+    { id:'film_0107', category:'Film', question:'Which actress played Tess McGill in the 1988 film "Working Girl"?', answers:['Melanie Griffith','Sigourney Weaver','Michelle Pfeiffer','Geena Davis'], correctAnswer:'Melanie Griffith', difficulty:'Medium', tags:['film','1980s','actors'], dailyEligible:true },
+    { id:'film_0108', category:'Film', question:'Which actor played Josh Baskin as an adult in the 1988 film "Big"?', answers:['Tom Hanks','Michael Keaton','Steve Martin','Billy Crystal'], correctAnswer:'Tom Hanks', difficulty:'Easy', tags:['film','1980s','comedy'], dailyEligible:true },
+    { id:'film_0109', category:'Film', question:'What is the name of the friendly Mogwai in the film "Gremlins"?', answers:['Gizmo','Stripe','Moggy','Spike'], correctAnswer:'Gizmo', difficulty:'Easy', tags:['film','1980s','comedy'], dailyEligible:true },
+    { id:'film_0110', category:'Film', question:'Which archaeologist is the central character in "Raiders of the Lost Ark"?', answers:['Indiana Jones','Henry Jones','Marcus Brody','René Belloq'], correctAnswer:'Indiana Jones', difficulty:'Easy', tags:['film','1980s','adventure'], dailyEligible:true },
+    { id:'film_0111', category:'Film', question:'Who directed the 1982 film "E.T. the Extra-Terrestrial"?', answers:['Steven Spielberg','George Lucas','Robert Zemeckis','Ron Howard'], correctAnswer:'Steven Spielberg', difficulty:'Easy', tags:['film','1980s','directors'], dailyEligible:true },
+    { id:'film_0112', category:'Film', question:'Which actor played Daniel LaRusso in the original "The Karate Kid"?', answers:['Ralph Macchio','Pat Morita','William Zabka','C. Thomas Howell'], correctAnswer:'Ralph Macchio', difficulty:'Medium', tags:['film','1980s','actors'], dailyEligible:true },
+    { id:'film_0113', category:'Film', question:'Which actress played Celie in the 1985 film "The Color Purple"?', answers:['Whoopi Goldberg','Oprah Winfrey','Alfre Woodard','Cicely Tyson'], correctAnswer:'Whoopi Goldberg', difficulty:'Medium', tags:['film','1980s','actors'], dailyEligible:true },
+    { id:'film_0114', category:'Film', question:'Which actor played the title character in the 1988 film "Beetlejuice"?', answers:['Michael Keaton','Alec Baldwin','Jeff Goldblum','Bill Murray'], correctAnswer:'Michael Keaton', difficulty:'Easy', tags:['film','1980s','comedy'], dailyEligible:true },
 
-    {
-        id: 'film_0107',
-        category: 'Film',
-        question: 'Which actress played the title role in the 1988 film Working Girl?',
-        answers: ['Melanie Griffith', 'Michelle Pfeiffer', 'Kathleen Turner', 'Geena Davis'],
-        correctAnswer: 'Melanie Griffith',
-        difficulty: 'Medium',
-        tags: ['1980s', 'actors', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0108',
-        category: 'Film',
-        question: 'Which 1985 film features a time-travelling DeLorean?',
-        answers: ['Back to the Future', 'The Goonies', 'Short Circuit', 'Weird Science'],
-        correctAnswer: 'Back to the Future',
-        difficulty: 'Easy',
-        tags: ['1980s', 'science fiction', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0109',
-        category: 'Film',
-        question: 'Which actor played the villain Hans Gruber in Die Hard?',
-        answers: ['Alan Rickman', 'Jeremy Irons', 'Gary Oldman', 'Timothy Dalton'],
-        correctAnswer: 'Alan Rickman',
-        difficulty: 'Easy',
-        tags: ['1980s', 'actors', 'action'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0110',
-        category: 'Film',
-        question: 'Which film features the character Indiana Jones?',
-        answers: ['Raiders of the Lost Ark', 'Top Gun', 'Die Hard', 'Rocky'],
-        correctAnswer: 'Raiders of the Lost Ark',
-        difficulty: 'Easy',
-        tags: ['1980s', 'adventure', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0111',
-        category: 'Film',
-        question: 'Who directed the 1982 science-fiction film E.T. the Extra-Terrestrial?',
-        answers: ['Steven Spielberg', 'George Lucas', 'Ridley Scott', 'James Cameron'],
-        correctAnswer: 'Steven Spielberg',
-        difficulty: 'Medium',
-        tags: ['1980s', 'directors', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0112',
-        category: 'Film',
-        question: 'Which actor played the eccentric inventor Caractacus Potts in Chitty Chitty Bang Bang?',
-        answers: ['Dick Van Dyke', 'Gene Wilder', 'Peter Sellers', 'David Niven'],
-        correctAnswer: 'Dick Van Dyke',
-        difficulty: 'Medium',
-        tags: ['1960s', 'actors', 'musical'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0113',
-        category: 'Film',
-        question: 'In The Wizard of Oz, what colour are Dorothy’s famous slippers?',
-        answers: ['Ruby red', 'Emerald green', 'Silver', 'Gold'],
-        correctAnswer: 'Ruby red',
-        difficulty: 'Easy',
-        tags: ['classic film', '1930s', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0114',
-        category: 'Film',
-        question: 'Which actor played Maximus in Gladiator?',
-        answers: ['Russell Crowe', 'Mel Gibson', 'Hugh Jackman', 'Clive Owen'],
-        correctAnswer: 'Russell Crowe',
-        difficulty: 'Easy',
-        tags: ['2000s', 'actors', 'film'],
-        dailyEligible: true
-    },
-
-    // =========================================================
     // GENERAL KNOWLEDGE
-    // =========================================================
+    { id:'general_0052', category:'General Knowledge', question:'What is the name of the symbol &?', answers:['Ampersand','Asterisk','Apostrophe','At sign'], correctAnswer:'Ampersand', difficulty:'Easy', tags:['general knowledge','symbols'], dailyEligible:true },
+    { id:'general_0053', category:'General Knowledge', question:'How many pawns does each player begin with in a standard game of chess?', answers:['8','6','10','12'], correctAnswer:'8', difficulty:'Easy', tags:['general knowledge','games'], dailyEligible:true },
+    { id:'general_0054', category:'General Knowledge', question:'How many numbered sections are there on a standard dartboard?', answers:['20','18','16','24'], correctAnswer:'20', difficulty:'Easy', tags:['general knowledge','games'], dailyEligible:true },
 
-    {
-        id: 'general_0052',
-        category: 'General Knowledge',
-        question: 'What is the name of the imaginary line dividing Earth into the Northern and Southern Hemispheres?',
-        answers: ['Equator', 'Prime Meridian', 'Tropic of Cancer', 'International Date Line'],
-        correctAnswer: 'Equator',
-        difficulty: 'Easy',
-        tags: ['general knowledge', 'earth'],
-        dailyEligible: true
-    },
-    {
-        id: 'general_0053',
-        category: 'General Knowledge',
-        question: 'What colour is traditionally associated with an emerald?',
-        answers: ['Green', 'Blue', 'Red', 'Purple'],
-        correctAnswer: 'Green',
-        difficulty: 'Easy',
-        tags: ['gems', 'general knowledge'],
-        dailyEligible: true
-    },
-    {
-        id: 'general_0054',
-        category: 'General Knowledge',
-        question: 'What is the Roman numeral for 50?',
-        answers: ['L', 'C', 'X', 'V'],
-        correctAnswer: 'L',
-        difficulty: 'Easy',
-        tags: ['numbers', 'roman numerals'],
-        dailyEligible: true
-    },
-
-    // =========================================================
     // HISTORY
-    // =========================================================
+    { id:'history_0050', category:'History', question:'Which empire built the temple complex of Angkor Wat?', answers:['Khmer Empire','Roman Empire','Mughal Empire','Ottoman Empire'], correctAnswer:'Khmer Empire', difficulty:'Medium', tags:['history','ancient history','asia'], dailyEligible:true },
+    { id:'history_0051', category:'History', question:'The Hanging Gardens were traditionally associated with which ancient city?', answers:['Babylon','Athens','Rome','Alexandria'], correctAnswer:'Babylon', difficulty:'Medium', tags:['history','ancient history'], dailyEligible:true },
 
-    {
-        id: 'history_0050',
-        category: 'History',
-        question: 'In which year did the Berlin Wall fall?',
-        answers: ['1989', '1987', '1991', '1985'],
-        correctAnswer: '1989',
-        difficulty: 'Easy',
-        tags: ['20th century', 'europe'],
-        dailyEligible: true
-    },
-    {
-        id: 'history_0051',
-        category: 'History',
-        question: 'Which English king had six wives?',
-        answers: ['Henry VIII', 'Henry VII', 'Richard III', 'Edward VI'],
-        correctAnswer: 'Henry VIII',
-        difficulty: 'Easy',
-        tags: ['british', 'tudors', 'monarchy'],
-        dailyEligible: true
-    },
-
-    // =========================================================
     // GEOGRAPHY
-    // =========================================================
+    { id:'geography_0051', category:'Geography', question:'Transylvania is a historical region of which country?', answers:['Romania','Hungary','Bulgaria','Serbia'], correctAnswer:'Romania', difficulty:'Easy', tags:['geography','europe','cities'], dailyEligible:true },
+    { id:'geography_0052', category:'Geography', question:'Lake Titicaca lies on the border of Peru and which other country?', answers:['Bolivia','Chile','Ecuador','Brazil'], correctAnswer:'Bolivia', difficulty:'Easy', tags:['geography','south america','lakes'], dailyEligible:true },
+    { id:'geography_0053', category:'Geography', question:'Canterbury is a city in which English county?', answers:['Kent','Surrey','Sussex','Essex'], correctAnswer:'Kent', difficulty:'Easy', tags:['geography','british','cities'], dailyEligible:true },
 
-    {
-        id: 'geography_0051',
-        category: 'Geography',
-        question: 'Which European country has Tallinn as its capital?',
-        answers: ['Estonia', 'Latvia', 'Lithuania', 'Finland'],
-        correctAnswer: 'Estonia',
-        difficulty: 'Medium',
-        tags: ['europe', 'countries', 'capitals'],
-        dailyEligible: true
-    },
-    {
-        id: 'geography_0052',
-        category: 'Geography',
-        question: 'What is the capital city of Portugal?',
-        answers: ['Lisbon', 'Porto', 'Madrid', 'Faro'],
-        correctAnswer: 'Lisbon',
-        difficulty: 'Easy',
-        tags: ['europe', 'capitals'],
-        dailyEligible: true
-    },
-    {
-        id: 'geography_0053',
-        category: 'Geography',
-        question: 'Which English county contains the city of Canterbury?',
-        answers: ['Kent', 'Essex', 'Surrey', 'Sussex'],
-        correctAnswer: 'Kent',
-        difficulty: 'Medium',
-        tags: ['british', 'england', 'counties'],
-        dailyEligible: true
-    },
-
-    // =========================================================
     // SCIENCE & NATURE
-    // =========================================================
+    { id:'science_0048', category:'Science & Nature', question:'What is the longest bone in the human body?', answers:['Femur','Tibia','Humerus','Fibula'], correctAnswer:'Femur', difficulty:'Easy', tags:['science','human body'], dailyEligible:true },
+    { id:'science_0049', category:'Science & Nature', question:'How many teeth does a typical adult human have, including wisdom teeth?', answers:['32','28','30','36'], correctAnswer:'32', difficulty:'Easy', tags:['science','human body'], dailyEligible:true },
 
-    {
-        id: 'science_0048',
-        category: 'Science & Nature',
-        question: 'Which blood cells help the body fight infection?',
-        answers: ['White blood cells', 'Red blood cells', 'Platelets', 'Plasma cells'],
-        correctAnswer: 'White blood cells',
-        difficulty: 'Easy',
-        tags: ['biology', 'human body'],
-        dailyEligible: true
-    },
-    {
-        id: 'science_0049',
-        category: 'Science & Nature',
-        question: 'What gas do plants absorb from the atmosphere during photosynthesis?',
-        answers: ['Carbon dioxide', 'Oxygen', 'Nitrogen', 'Hydrogen'],
-        correctAnswer: 'Carbon dioxide',
-        difficulty: 'Easy',
-        tags: ['biology', 'plants'],
-        dailyEligible: true
-    },
-
-    // =========================================================
     // FOOD & DRINK
-    // =========================================================
+    { id:'food_0032', category:'Food & Drink', question:'Gazpacho is a cold soup traditionally associated with which country?', answers:['Spain','Italy','France','Greece'], correctAnswer:'Spain', difficulty:'Easy', tags:['food','europe'], dailyEligible:true },
 
-    {
-        id: 'food_0032',
-        category: 'Food & Drink',
-        question: 'Which nut is traditionally used to make marzipan?',
-        answers: ['Almond', 'Hazelnut', 'Walnut', 'Pistachio'],
-        correctAnswer: 'Almond',
-        difficulty: 'Easy',
-        tags: ['food', 'ingredients'],
-        dailyEligible: true
-    },
-
-    // =========================================================
     // SPORT
-    // =========================================================
+    { id:'sport_0032', category:'Sport', question:'In the Tour de France, what colour jersey is worn by the overall race leader?', answers:['Yellow','Green','White','Red'], correctAnswer:'Yellow', difficulty:'Easy', tags:['sport','cycling'], dailyEligible:true },
 
-    {
-        id: 'sport_0032',
-        category: 'Sport',
-        question: 'How many players from one team are on the pitch at the start of a football match?',
-        answers: ['11', '10', '12', '9'],
-        correctAnswer: '11',
-        difficulty: 'Easy',
-        tags: ['football', 'rules'],
-        dailyEligible: true
-    },
-
-    // =========================================================
     // LITERATURE
-    // =========================================================
-
-    {
-        id: 'literature_0031',
-        category: 'Literature',
-        question: 'Who wrote The Wind in the Willows?',
-        answers: ['Kenneth Grahame', 'A. A. Milne', 'Beatrix Potter', 'Lewis Carroll'],
-        correctAnswer: 'Kenneth Grahame',
-        difficulty: 'Medium',
-        tags: ['british', 'classic literature', 'authors'],
-        dailyEligible: true
-    }
-
+    { id:'literature_0031', category:'Literature', question:'Who wrote the novel "Watership Down"?', answers:['Richard Adams','Roald Dahl','Michael Morpurgo','Kenneth Grahame'], correctAnswer:'Richard Adams', difficulty:'Medium', tags:['literature','novels','british'], dailyEligible:true }
 ];
-
-module.exports = questions;
