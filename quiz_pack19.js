@@ -22,11 +22,11 @@ const questions = [
     {
         id: 'music_0148',
         category: 'Music',
-        question: 'Which singer had a 1986 hit with The Lady in Red?',
-        answers: ['Chris de Burgh', 'Bryan Adams', 'Richard Marx', 'Paul Young'],
-        correctAnswer: 'Chris de Burgh',
-        difficulty: 'Easy',
-        tags: ['1980s', 'songs', 'male artists'],
+        question: 'Which singer had a 1984 hit with Love Resurrection?',
+        answers: ['Alison Moyet', 'Kim Wilde', 'Hazel O\'Connor', 'Toyah Willcox'],
+        correctAnswer: 'Alison Moyet',
+        difficulty: 'Medium',
+        tags: ['1980s', 'british', 'female artists'],
         dailyEligible: true
     },
     {
@@ -62,21 +62,21 @@ const questions = [
     {
         id: 'music_0152',
         category: 'Music',
-        question: 'Which singer had a 1985 hit with Kayleigh?',
-        answers: ['Marillion', 'Genesis', 'Yes', 'Foreigner'],
-        correctAnswer: 'Marillion',
+        question: 'Which singer had a 1984 hit with Wouldn\'t It Be Good?',
+        answers: ['Nik Kershaw', 'Howard Jones', 'Paul Young', 'Limahl'],
+        correctAnswer: 'Nik Kershaw',
         difficulty: 'Medium',
-        tags: ['1980s', 'british', 'bands'],
+        tags: ['1980s', 'british', 'male artists'],
         dailyEligible: true
     },
     {
         id: 'music_0153',
         category: 'Music',
-        question: 'Which British band released the album Brothers in Arms?',
-        answers: ['Dire Straits', 'Genesis', 'Queen', 'Simple Minds'],
-        correctAnswer: 'Dire Straits',
-        difficulty: 'Easy',
-        tags: ['1980s', 'british', 'albums'],
+        question: 'Which singer had a 1981 hit with It\'s a Mystery?',
+        answers: ['Toyah Willcox', 'Kim Wilde', 'Hazel O\'Connor', 'Siouxsie Sioux'],
+        correctAnswer: 'Toyah Willcox',
+        difficulty: 'Medium',
+        tags: ['1980s', 'british', 'female artists'],
         dailyEligible: true
     },
     {
@@ -117,11 +117,11 @@ const questions = [
     {
         id: 'tv_0141',
         category: 'TV',
-        question: 'Which comedy character was created and played by Steve Coogan?',
-        answers: ['Alan Partridge', 'David Brent', 'Gordon Brittas', 'Victor Meldrew'],
-        correctAnswer: 'Alan Partridge',
-        difficulty: 'Easy',
-        tags: ['british', 'comedy', 'characters'],
+        question: 'Which actor played Tom Chance in the sitcom Chance in a Million?',
+        answers: ['Simon Callow', 'Richard Briers', 'David Jason', 'Geoffrey Palmer'],
+        correctAnswer: 'Simon Callow',
+        difficulty: 'Medium',
+        tags: ['british', 'sitcom', 'actors'],
         dailyEligible: true
     },
     {
@@ -137,11 +137,11 @@ const questions = [
     {
         id: 'tv_0143',
         category: 'TV',
-        question: 'Which actor originally played DCI Tom Barnaby in Midsomer Murders?',
-        answers: ['John Nettles', 'Neil Dudgeon', 'Kevin Whately', 'Martin Shaw'],
-        correctAnswer: 'John Nettles',
+        question: 'Which actress played Bren in the sitcom dinnerladies?',
+        answers: ['Victoria Wood', 'Julie Walters', 'Celia Imrie', 'Anne Reid'],
+        correctAnswer: 'Victoria Wood',
         difficulty: 'Medium',
-        tags: ['british', 'crime', 'actors'],
+        tags: ['british', 'sitcom', 'actors'],
         dailyEligible: true
     },
     {
@@ -157,11 +157,11 @@ const questions = [
     {
         id: 'tv_0145',
         category: 'TV',
-        question: 'Which actor played psychiatrist Frasier Crane?',
-        answers: ['Kelsey Grammer', 'David Hyde Pierce', 'Ted Danson', 'John Lithgow'],
-        correctAnswer: 'Kelsey Grammer',
+        question: 'Which British sitcom stars Lee Mack as a character called Lee?',
+        answers: ['Not Going Out', 'Would I Lie to You?', 'The IT Crowd', 'Coupling'],
+        correctAnswer: 'Not Going Out',
         difficulty: 'Easy',
-        tags: ['american', 'sitcom', 'actors'],
+        tags: ['british', 'sitcom', 'comedy'],
         dailyEligible: true
     },
     {
@@ -212,61 +212,61 @@ const questions = [
     {
         id: 'film_0116',
         category: 'Film',
-        question: 'Which 1986 film starred Tom Cruise as naval aviator Pete Mitchell?',
-        answers: ['Top Gun', 'Cocktail', 'Days of Thunder', 'Risky Business'],
-        correctAnswer: 'Top Gun',
-        difficulty: 'Easy',
-        tags: ['1980s', 'film', 'actors'],
+        question: 'Which actress played the mermaid Madison in the 1984 film Splash?',
+        answers: ['Daryl Hannah', 'Kim Basinger', 'Kathleen Turner', 'Meg Ryan'],
+        correctAnswer: 'Daryl Hannah',
+        difficulty: 'Medium',
+        tags: ['1980s', 'actors', 'film'],
         dailyEligible: true
     },
     {
         id: 'film_0117',
         category: 'Film',
-        question: 'Which actress played Sally Albright in When Harry Met Sally...?',
-        answers: ['Meg Ryan', 'Demi Moore', 'Michelle Pfeiffer', 'Andie MacDowell'],
-        correctAnswer: 'Meg Ryan',
+        question: 'Which actress played novelist Joan Wilder in Romancing the Stone?',
+        answers: ['Kathleen Turner', 'Daryl Hannah', 'Michelle Pfeiffer', 'Debra Winger'],
+        correctAnswer: 'Kathleen Turner',
         difficulty: 'Medium',
-        tags: ['1980s', 'romantic comedy', 'actors'],
+        tags: ['1980s', 'actors', 'film'],
         dailyEligible: true
     },
     {
         id: 'film_0118',
         category: 'Film',
-        question: 'Which actor played the title character in Forrest Gump?',
-        answers: ['Tom Hanks', 'Kevin Costner', 'Robin Williams', 'Michael Keaton'],
-        correctAnswer: 'Tom Hanks',
-        difficulty: 'Easy',
-        tags: ['1990s', 'actors', 'film'],
+        question: 'Which actor played Eliot Ness in the 1987 film The Untouchables?',
+        answers: ['Kevin Costner', 'Sean Connery', 'Andy Garcia', 'Robert De Niro'],
+        correctAnswer: 'Kevin Costner',
+        difficulty: 'Medium',
+        tags: ['1980s', 'actors', 'film'],
         dailyEligible: true
     },
     {
         id: 'film_0119',
         category: 'Film',
-        question: 'Which road movie stars Geena Davis and Susan Sarandon as two friends on the run?',
-        answers: ['Thelma & Louise', 'Fried Green Tomatoes', 'Steel Magnolias', 'Beaches'],
-        correctAnswer: 'Thelma & Louise',
-        difficulty: 'Easy',
-        tags: ['1990s', 'film', 'road movies'],
+        question: 'Which actress played Alex Forrest in the 1987 film Fatal Attraction?',
+        answers: ['Glenn Close', 'Sigourney Weaver', 'Jessica Lange', 'Meryl Streep'],
+        correctAnswer: 'Glenn Close',
+        difficulty: 'Medium',
+        tags: ['1980s', 'actors', 'film'],
         dailyEligible: true
     },
     {
         id: 'film_0120',
         category: 'Film',
-        question: 'Who directed the 1994 film Pulp Fiction?',
-        answers: ['Quentin Tarantino', 'Martin Scorsese', 'David Fincher', 'Oliver Stone'],
-        correctAnswer: 'Quentin Tarantino',
-        difficulty: 'Easy',
-        tags: ['1990s', 'directors', 'film'],
+        question: 'Which actor played FBI agent Johnny Utah in the 1991 film Point Break?',
+        answers: ['Keanu Reeves', 'Patrick Swayze', 'Val Kilmer', 'Christian Slater'],
+        correctAnswer: 'Keanu Reeves',
+        difficulty: 'Medium',
+        tags: ['1990s', 'actors', 'film'],
         dailyEligible: true
     },
     {
         id: 'film_0121',
         category: 'Film',
-        question: 'Which actress played Clarice Starling in The Silence of the Lambs?',
-        answers: ['Jodie Foster', 'Julianne Moore', 'Susan Sarandon', 'Sigourney Weaver'],
-        correctAnswer: 'Jodie Foster',
-        difficulty: 'Easy',
-        tags: ['1990s', 'actors', 'thriller'],
+        question: 'Which actor played Gordon Gekko in the 1987 film Wall Street?',
+        answers: ['Michael Douglas', 'Charlie Sheen', 'Tom Berenger', 'William Hurt'],
+        correctAnswer: 'Michael Douglas',
+        difficulty: 'Medium',
+        tags: ['1980s', 'actors', 'film'],
         dailyEligible: true
     },
     {
@@ -297,31 +297,31 @@ const questions = [
     {
         id: 'general_0056',
         category: 'General Knowledge',
-        question: 'Which board game features properties including Mayfair and Park Lane in its UK version?',
-        answers: ['Monopoly', 'Cluedo', 'Risk', 'Scrabble'],
-        correctAnswer: 'Monopoly',
+        question: 'What do the letters WWW stand for in a website address?',
+        answers: ['World Wide Web', 'World Web Window', 'Wide World Web', 'Web World Wide'],
+        correctAnswer: 'World Wide Web',
         difficulty: 'Easy',
-        tags: ['games', 'general knowledge'],
+        tags: ['technology', 'general knowledge'],
         dailyEligible: true
     },
     {
         id: 'general_0057',
         category: 'General Knowledge',
-        question: 'How many dots are there in total on a standard six-sided die?',
-        answers: ['21', '18', '24', '20'],
-        correctAnswer: '21',
+        question: 'How many keys does a standard modern piano have?',
+        answers: ['88', '76', '92', '84'],
+        correctAnswer: '88',
         difficulty: 'Medium',
-        tags: ['numbers', 'general knowledge'],
+        tags: ['music', 'general knowledge'],
         dailyEligible: true
     },
     {
         id: 'general_0058',
         category: 'General Knowledge',
-        question: 'Which colour is produced by mixing blue and yellow paint?',
-        answers: ['Green', 'Purple', 'Orange', 'Brown'],
-        correctAnswer: 'Green',
-        difficulty: 'Easy',
-        tags: ['colours', 'general knowledge'],
+        question: 'How many semitones are there in a standard musical octave?',
+        answers: ['12', '8', '10', '14'],
+        correctAnswer: '12',
+        difficulty: 'Medium',
+        tags: ['music', 'general knowledge'],
         dailyEligible: true
     },
 
@@ -332,21 +332,21 @@ const questions = [
     {
         id: 'history_0052',
         category: 'History',
-        question: 'Which ancient civilisation built the city of Machu Picchu?',
-        answers: ['Inca', 'Maya', 'Aztec', 'Roman'],
-        correctAnswer: 'Inca',
-        difficulty: 'Easy',
-        tags: ['ancient history', 'south america'],
+        question: 'Who was British Prime Minister when the Second World War began in 1939?',
+        answers: ['Neville Chamberlain', 'Winston Churchill', 'Clement Attlee', 'Stanley Baldwin'],
+        correctAnswer: 'Neville Chamberlain',
+        difficulty: 'Medium',
+        tags: ['british', '20th century', 'politics'],
         dailyEligible: true
     },
     {
         id: 'history_0053',
         category: 'History',
-        question: 'Which English queen was known as the Virgin Queen?',
-        answers: ['Elizabeth I', 'Mary I', 'Victoria', 'Anne'],
-        correctAnswer: 'Elizabeth I',
-        difficulty: 'Easy',
-        tags: ['british', 'monarchy', 'tudors'],
+        question: 'Which British monarch reigned immediately before Queen Victoria?',
+        answers: ['William IV', 'George IV', 'George III', 'Edward VII'],
+        correctAnswer: 'William IV',
+        difficulty: 'Medium',
+        tags: ['british', 'monarchy', '19th century'],
         dailyEligible: true
     },
 
@@ -357,21 +357,21 @@ const questions = [
     {
         id: 'geography_0054',
         category: 'Geography',
-        question: 'What is the capital city of Canada?',
-        answers: ['Ottawa', 'Toronto', 'Vancouver', 'Montreal'],
-        correctAnswer: 'Ottawa',
+        question: 'Which country is home to the city of Krakow?',
+        answers: ['Poland', 'Hungary', 'Czech Republic', 'Slovakia'],
+        correctAnswer: 'Poland',
         difficulty: 'Easy',
-        tags: ['capitals', 'north america'],
+        tags: ['europe', 'cities'],
         dailyEligible: true
     },
     {
         id: 'geography_0055',
         category: 'Geography',
-        question: 'Mount Kilimanjaro is in which African country?',
-        answers: ['Tanzania', 'Kenya', 'Uganda', 'Ethiopia'],
-        correctAnswer: 'Tanzania',
-        difficulty: 'Easy',
-        tags: ['africa', 'mountains'],
+        question: 'Lake Geneva lies on the border of Switzerland and which other country?',
+        answers: ['France', 'Italy', 'Germany', 'Austria'],
+        correctAnswer: 'France',
+        difficulty: 'Medium',
+        tags: ['europe', 'lakes'],
         dailyEligible: true
     },
     {
@@ -402,11 +402,11 @@ const questions = [
     {
         id: 'science_0051',
         category: 'Science & Nature',
-        question: 'Which organ pumps blood around the human body?',
-        answers: ['Heart', 'Liver', 'Lung', 'Kidney'],
-        correctAnswer: 'Heart',
+        question: 'Which chemical element has the symbol Fe?',
+        answers: ['Iron', 'Fluorine', 'Francium', 'Fermium'],
+        correctAnswer: 'Iron',
         difficulty: 'Easy',
-        tags: ['biology', 'human body'],
+        tags: ['chemistry', 'elements'],
         dailyEligible: true
     },
 
@@ -417,11 +417,11 @@ const questions = [
     {
         id: 'food_0033',
         category: 'Food & Drink',
-        question: 'Which fruit is the main ingredient in a traditional tarte Tatin?',
-        answers: ['Apple', 'Pear', 'Peach', 'Plum'],
-        correctAnswer: 'Apple',
-        difficulty: 'Easy',
-        tags: ['food', 'desserts'],
+        question: 'Which dairy ingredient forms the base of traditional tzatziki?',
+        answers: ['Yoghurt', 'Cream', 'Soft cheese', 'Buttermilk'],
+        correctAnswer: 'Yoghurt',
+        difficulty: 'Medium',
+        tags: ['food', 'greek'],
         dailyEligible: true
     },
 
@@ -432,11 +432,11 @@ const questions = [
     {
         id: 'sport_0033',
         category: 'Sport',
-        question: 'What colour is the ball worth seven points in snooker?',
-        answers: ['Black', 'Pink', 'Blue', 'Brown'],
-        correctAnswer: 'Black',
+        question: 'On which surface is the Wimbledon tennis tournament played?',
+        answers: ['Grass', 'Clay', 'Hard court', 'Carpet'],
+        correctAnswer: 'Grass',
         difficulty: 'Easy',
-        tags: ['snooker', 'sport'],
+        tags: ['tennis', 'sport'],
         dailyEligible: true
     },
 
@@ -447,21 +447,21 @@ const questions = [
     {
         id: 'literature_0032',
         category: 'Literature',
-        question: 'Who wrote the novel The Woman in White?',
-        answers: ['Wilkie Collins', 'Thomas Hardy', 'Charles Dickens', 'Anthony Trollope'],
-        correctAnswer: 'Wilkie Collins',
+        question: 'Who wrote the novel I Capture the Castle?',
+        answers: ['Dodie Smith', 'Daphne du Maurier', 'Elizabeth Bowen', 'Nancy Mitford'],
+        correctAnswer: 'Dodie Smith',
         difficulty: 'Medium',
-        tags: ['british', 'classic literature', 'authors'],
+        tags: ['british', 'novels', 'authors'],
         dailyEligible: true
     },
     {
         id: 'literature_0033',
         category: 'Literature',
-        question: 'Which author created the character Paddington Bear?',
-        answers: ['Michael Bond', 'A. A. Milne', 'Kenneth Grahame', 'Roald Dahl'],
-        correctAnswer: 'Michael Bond',
-        difficulty: 'Easy',
-        tags: ['british', 'children', 'authors'],
+        question: 'Who wrote the novel A Kestrel for a Knave?',
+        answers: ['Barry Hines', 'Alan Sillitoe', 'Stan Barstow', 'Keith Waterhouse'],
+        correctAnswer: 'Barry Hines',
+        difficulty: 'Medium',
+        tags: ['british', 'novels', 'authors'],
         dailyEligible: true
     }
 
