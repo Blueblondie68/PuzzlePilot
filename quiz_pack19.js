@@ -357,11 +357,11 @@ const questions = [
     {
         id: 'geography_0054',
         category: 'Geography',
-        question: 'Which country is home to the city of Krakow?',
-        answers: ['Poland', 'Hungary', 'Czech Republic', 'Slovakia'],
-        correctAnswer: 'Poland',
+        question: 'The Giant’s Causeway is located in which part of the United Kingdom?',
+        answers: ['Northern Ireland', 'Scotland', 'Wales', 'England'],
+        correctAnswer: 'Northern Ireland',
         difficulty: 'Easy',
-        tags: ['europe', 'cities'],
+        tags: ['british', 'landmarks', 'geography'],
         dailyEligible: true
     },
     {
