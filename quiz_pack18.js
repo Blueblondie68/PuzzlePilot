@@ -1,6 +1,7 @@
 // quiz_pack18.js
 // PuzzlePilot Big Quiz
 // Pack 18 - 40 questions
+// Corrected after duplicate check
 
 const questions = [
 
@@ -41,11 +42,11 @@ const questions = [
     {
         id: 'music_0140',
         category: 'Music',
-        question: 'Who released the album Jagged Little Pill in 1995?',
-        answers: ['Alanis Morissette', 'Sheryl Crow', 'Natalie Imbruglia', 'Tori Amos'],
-        correctAnswer: 'Alanis Morissette',
+        question: 'Which singer had a 1985 hit with Running Up That Hill?',
+        answers: ['Kate Bush', 'Alison Moyet', 'Kim Wilde', 'Toyah Willcox'],
+        correctAnswer: 'Kate Bush',
         difficulty: 'Easy',
-        tags: ['1990s', 'albums', 'female artists'],
+        tags: ['1980s', 'british', 'female artists'],
         dailyEligible: true
     },
     {
@@ -71,11 +72,11 @@ const questions = [
     {
         id: 'music_0143',
         category: 'Music',
-        question: 'Which singer released the 2006 hit Rehab?',
-        answers: ['Amy Winehouse', 'Duffy', 'Adele', 'Lily Allen'],
-        correctAnswer: 'Amy Winehouse',
+        question: 'Which singer released the 1983 hit Total Eclipse of the Heart?',
+        answers: ['Bonnie Tyler', 'Kim Carnes', 'Laura Branigan', 'Pat Benatar'],
+        correctAnswer: 'Bonnie Tyler',
         difficulty: 'Easy',
-        tags: ['2000s', 'british', 'female artists'],
+        tags: ['1980s', 'british', 'female artists'],
         dailyEligible: true
     },
     {
@@ -101,10 +102,10 @@ const questions = [
     {
         id: 'music_0146',
         category: 'Music',
-        question: 'Which band released the 1994 album Parklife?',
-        answers: ['Blur', 'Oasis', 'Pulp', 'Suede'],
-        correctAnswer: 'Blur',
-        difficulty: 'Easy',
+        question: 'Which band released the 1995 album Different Class?',
+        answers: ['Pulp', 'Blur', 'Suede', 'Supergrass'],
+        correctAnswer: 'Pulp',
+        difficulty: 'Medium',
         tags: ['1990s', 'britpop', 'albums'],
         dailyEligible: true
     },
@@ -201,11 +202,11 @@ const questions = [
     {
         id: 'film_0107',
         category: 'Film',
-        question: 'Who played the title role in the 1990 film Edward Scissorhands?',
-        answers: ['Johnny Depp', 'Tom Cruise', 'Brad Pitt', 'Keanu Reeves'],
-        correctAnswer: 'Johnny Depp',
+        question: 'Which actor played Axel Foley in Beverly Hills Cop?',
+        answers: ['Eddie Murphy', 'Richard Pryor', 'Danny Glover', 'Carl Weathers'],
+        correctAnswer: 'Eddie Murphy',
         difficulty: 'Easy',
-        tags: ['1990s', 'actors', 'film'],
+        tags: ['1980s', 'actors', 'comedy'],
         dailyEligible: true
     },
     {
@@ -241,21 +242,21 @@ const questions = [
     {
         id: 'film_0111',
         category: 'Film',
-        question: 'Who directed the film Jaws?',
-        answers: ['Steven Spielberg', 'George Lucas', 'Martin Scorsese', 'Francis Ford Coppola'],
+        question: 'Who directed the 1982 science-fiction film E.T. the Extra-Terrestrial?',
+        answers: ['Steven Spielberg', 'George Lucas', 'Ridley Scott', 'James Cameron'],
         correctAnswer: 'Steven Spielberg',
-        difficulty: 'Easy',
-        tags: ['1970s', 'directors', 'film'],
+        difficulty: 'Medium',
+        tags: ['1980s', 'directors', 'film'],
         dailyEligible: true
     },
     {
         id: 'film_0112',
         category: 'Film',
-        question: 'Which actress played the title character in Erin Brockovich?',
-        answers: ['Julia Roberts', 'Meg Ryan', 'Nicole Kidman', 'Jodie Foster'],
-        correctAnswer: 'Julia Roberts',
+        question: 'Which actress played the lead role of Gracie Hart in Miss Congeniality?',
+        answers: ['Sandra Bullock', 'Julia Roberts', 'Meg Ryan', 'Cameron Diaz'],
+        correctAnswer: 'Sandra Bullock',
         difficulty: 'Medium',
-        tags: ['2000s', 'actors', 'film'],
+        tags: ['2000s', 'actors', 'comedy'],
         dailyEligible: true
     },
     {
@@ -286,11 +287,11 @@ const questions = [
     {
         id: 'general_0052',
         category: 'General Knowledge',
-        question: 'How many sides does a dodecagon have?',
-        answers: ['12', '10', '8', '14'],
-        correctAnswer: '12',
+        question: 'What is the name of the imaginary line dividing Earth into the Northern and Southern Hemispheres?',
+        answers: ['Equator', 'Prime Meridian', 'Tropic of Cancer', 'International Date Line'],
+        correctAnswer: 'Equator',
         difficulty: 'Easy',
-        tags: ['numbers', 'shapes'],
+        tags: ['general knowledge', 'earth'],
         dailyEligible: true
     },
     {
@@ -346,11 +347,11 @@ const questions = [
     {
         id: 'geography_0051',
         category: 'Geography',
-        question: 'Which river flows through Paris?',
-        answers: ['Seine', 'Rhine', 'Danube', 'Loire'],
-        correctAnswer: 'Seine',
-        difficulty: 'Easy',
-        tags: ['europe', 'rivers', 'cities'],
+        question: 'Which European capital stands on the River Vltava?',
+        answers: ['Prague', 'Vienna', 'Budapest', 'Warsaw'],
+        correctAnswer: 'Prague',
+        difficulty: 'Medium',
+        tags: ['europe', 'rivers', 'capitals'],
         dailyEligible: true
     },
     {
@@ -381,11 +382,11 @@ const questions = [
     {
         id: 'science_0048',
         category: 'Science & Nature',
-        question: 'What is the largest planet in the Solar System?',
-        answers: ['Jupiter', 'Saturn', 'Neptune', 'Earth'],
-        correctAnswer: 'Jupiter',
+        question: 'Which blood cells help the body fight infection?',
+        answers: ['White blood cells', 'Red blood cells', 'Platelets', 'Plasma cells'],
+        correctAnswer: 'White blood cells',
         difficulty: 'Easy',
-        tags: ['space', 'planets'],
+        tags: ['biology', 'human body'],
         dailyEligible: true
     },
     {
@@ -406,11 +407,11 @@ const questions = [
     {
         id: 'food_0032',
         category: 'Food & Drink',
-        question: 'Which fruit is traditionally used to make cider?',
-        answers: ['Apple', 'Pear', 'Grape', 'Plum'],
-        correctAnswer: 'Apple',
+        question: 'Which Italian dessert is made with coffee-soaked sponge fingers and mascarpone?',
+        answers: ['Tiramisu', 'Panna cotta', 'Cannoli', 'Zabaglione'],
+        correctAnswer: 'Tiramisu',
         difficulty: 'Easy',
-        tags: ['drinks', 'fruit'],
+        tags: ['italian', 'desserts'],
         dailyEligible: true
     },
 
