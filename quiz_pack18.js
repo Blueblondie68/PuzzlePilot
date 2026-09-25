@@ -1,7 +1,7 @@
 // quiz_pack18.js
 // PuzzlePilot Big Quiz
-// Pack 18 - 40 questions
-// Corrected after duplicate check
+// Pack 18
+// Corrected after full duplicate review
 
 const questions = [
 
@@ -102,11 +102,11 @@ const questions = [
     {
         id: 'music_0146',
         category: 'Music',
-        question: 'Which band released the 1995 album Different Class?',
-        answers: ['Pulp', 'Blur', 'Suede', 'Supergrass'],
-        correctAnswer: 'Pulp',
+        question: 'Which Scottish band had a 1988 hit with Perfect?',
+        answers: ['Fairground Attraction', 'Texas', 'Deacon Blue', 'Wet Wet Wet'],
+        correctAnswer: 'Fairground Attraction',
         difficulty: 'Medium',
-        tags: ['1990s', 'britpop', 'albums'],
+        tags: ['1980s', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -202,11 +202,11 @@ const questions = [
     {
         id: 'film_0107',
         category: 'Film',
-        question: 'Which actor played Axel Foley in Beverly Hills Cop?',
-        answers: ['Eddie Murphy', 'Richard Pryor', 'Danny Glover', 'Carl Weathers'],
-        correctAnswer: 'Eddie Murphy',
-        difficulty: 'Easy',
-        tags: ['1980s', 'actors', 'comedy'],
+        question: 'Which actress played the title role in the 1988 film Working Girl?',
+        answers: ['Melanie Griffith', 'Michelle Pfeiffer', 'Kathleen Turner', 'Geena Davis'],
+        correctAnswer: 'Melanie Griffith',
+        difficulty: 'Medium',
+        tags: ['1980s', 'actors', 'film'],
         dailyEligible: true
     },
     {
@@ -222,11 +222,11 @@ const questions = [
     {
         id: 'film_0109',
         category: 'Film',
-        question: 'Which actress played Bridget Jones in Bridget Jones’s Diary?',
-        answers: ['Renée Zellweger', 'Sandra Bullock', 'Julia Roberts', 'Kate Winslet'],
-        correctAnswer: 'Renée Zellweger',
+        question: 'Which actor played the villain Hans Gruber in Die Hard?',
+        answers: ['Alan Rickman', 'Jeremy Irons', 'Gary Oldman', 'Timothy Dalton'],
+        correctAnswer: 'Alan Rickman',
         difficulty: 'Easy',
-        tags: ['2000s', 'british film', 'actors'],
+        tags: ['1980s', 'actors', 'action'],
         dailyEligible: true
     },
     {
@@ -252,11 +252,11 @@ const questions = [
     {
         id: 'film_0112',
         category: 'Film',
-        question: 'Which actress played the lead role of Gracie Hart in Miss Congeniality?',
-        answers: ['Sandra Bullock', 'Julia Roberts', 'Meg Ryan', 'Cameron Diaz'],
-        correctAnswer: 'Sandra Bullock',
+        question: 'Which actor played the eccentric inventor Caractacus Potts in Chitty Chitty Bang Bang?',
+        answers: ['Dick Van Dyke', 'Gene Wilder', 'Peter Sellers', 'David Niven'],
+        correctAnswer: 'Dick Van Dyke',
         difficulty: 'Medium',
-        tags: ['2000s', 'actors', 'comedy'],
+        tags: ['1960s', 'actors', 'musical'],
         dailyEligible: true
     },
     {
@@ -347,11 +347,11 @@ const questions = [
     {
         id: 'geography_0051',
         category: 'Geography',
-        question: 'Which European capital stands on the River Vltava?',
-        answers: ['Prague', 'Vienna', 'Budapest', 'Warsaw'],
-        correctAnswer: 'Prague',
+        question: 'Which European country has Tallinn as its capital?',
+        answers: ['Estonia', 'Latvia', 'Lithuania', 'Finland'],
+        correctAnswer: 'Estonia',
         difficulty: 'Medium',
-        tags: ['europe', 'rivers', 'capitals'],
+        tags: ['europe', 'countries', 'capitals'],
         dailyEligible: true
     },
     {
@@ -407,11 +407,11 @@ const questions = [
     {
         id: 'food_0032',
         category: 'Food & Drink',
-        question: 'Which Italian dessert is made with coffee-soaked sponge fingers and mascarpone?',
-        answers: ['Tiramisu', 'Panna cotta', 'Cannoli', 'Zabaglione'],
-        correctAnswer: 'Tiramisu',
+        question: 'Which nut is traditionally used to make marzipan?',
+        answers: ['Almond', 'Hazelnut', 'Walnut', 'Pistachio'],
+        correctAnswer: 'Almond',
         difficulty: 'Easy',
-        tags: ['italian', 'desserts'],
+        tags: ['food', 'ingredients'],
         dailyEligible: true
     },
 
