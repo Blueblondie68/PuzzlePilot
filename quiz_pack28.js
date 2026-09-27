@@ -280,11 +280,11 @@ const questions = [
     {
         id: 'music_0891',
         category: 'Music',
-        question: 'Which artist recorded Cold as Ice?',
-        answers: ['Foreigner', 'Boston', 'Kansas', 'Journey'],
+        question: 'Which artist recorded Urgent?',
+        answers: ['Foreigner', 'Journey', 'REO Speedwagon', 'Toto'],
         correctAnswer: 'Foreigner',
         difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'foreigner', 'songs'],
+        tags: ['1980s', 'rock', 'foreigner', 'songs'],
         dailyEligible: true
     },
 
@@ -386,7 +386,6 @@ const questions = [
         tags: ['1970s', 'rock', 'eagles', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0901',
         category: 'Music',
@@ -537,10 +536,10 @@ const questions = [
     {
         id: 'music_0914',
         category: 'Music',
-        question: 'Which artist recorded Broken Wings?',
+        question: 'Which artist recorded Is It Love?',
         answers: ['Mr. Mister', 'Toto', 'Journey', 'Foreigner'],
         correctAnswer: 'Mr. Mister',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'rock', 'mr mister', 'songs'],
         dailyEligible: true
     },
@@ -566,6 +565,7 @@ const questions = [
         tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
+
     {
         id: 'music_0917',
         category: 'Music',
@@ -624,10 +624,10 @@ const questions = [
     {
         id: 'music_0922',
         category: 'Music',
-        question: 'Which artist recorded Owner of a Lonely Heart?',
+        question: 'Which artist recorded Love Will Find a Way?',
         answers: ['Yes', 'Genesis', 'Asia', 'Foreigner'],
         correctAnswer: 'Yes',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'yes', 'songs'],
         dailyEligible: true
     },
@@ -635,10 +635,10 @@ const questions = [
     {
         id: 'music_0923',
         category: 'Music',
-        question: 'Which artist recorded Heat of the Moment?',
+        question: 'Which artist recorded Don\'t Cry?',
         answers: ['Asia', 'Yes', 'Foreigner', 'Toto'],
         correctAnswer: 'Asia',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'asia', 'songs'],
         dailyEligible: true
     },
@@ -646,10 +646,10 @@ const questions = [
     {
         id: 'music_0924',
         category: 'Music',
-        question: 'Which artist recorded Keep on Loving You?',
+        question: 'Which artist recorded Take It on the Run?',
         answers: ['REO Speedwagon', 'Journey', 'Foreigner', 'Toto'],
         correctAnswer: 'REO Speedwagon',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'reo speedwagon', 'songs'],
         dailyEligible: true
     },
@@ -668,10 +668,10 @@ const questions = [
     {
         id: 'music_0926',
         category: 'Music',
-        question: 'Which artist recorded I Want to Know What Love Is?',
+        question: 'Which artist recorded That Was Yesterday?',
         answers: ['Foreigner', 'Journey', 'REO Speedwagon', 'Toto'],
         correctAnswer: 'Foreigner',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'foreigner', 'songs'],
         dailyEligible: true
     },
@@ -694,7 +694,7 @@ const questions = [
     {
         id: 'music_0928',
         category: 'Music',
-        question: 'Which artist recorded Unfinished Sympathy?',
+        question: 'Which artist recorded Protection?',
         answers: ['Massive Attack', 'Portishead', 'Soul II Soul', 'Everything but the Girl'],
         correctAnswer: 'Massive Attack',
         difficulty: 'Medium',
@@ -705,7 +705,7 @@ const questions = [
     {
         id: 'music_0929',
         category: 'Music',
-        question: 'Which artist recorded Glory Box?',
+        question: 'Which artist recorded All Mine?',
         answers: ['Portishead', 'Massive Attack', 'Morcheeba', 'Everything but the Girl'],
         correctAnswer: 'Portishead',
         difficulty: 'Medium',
@@ -756,7 +756,6 @@ const questions = [
         tags: ['1990s', 'britpop', 'the bluetones', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0934',
         category: 'Music',
