@@ -335,7 +335,7 @@ const questions = [
     {
         id: 'music_0696',
         category: 'Music',
-        question: 'Which artist recorded Baker Street?',
+        question: 'Which artist recorded Night Owl?',
         answers: ['Gerry Rafferty', 'Dire Straits', 'Chris Rea', 'Al Stewart'],
         correctAnswer: 'Gerry Rafferty',
         difficulty: 'Easy',
@@ -386,7 +386,6 @@ const questions = [
         tags: ['1970s', 'rock', 'america', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0701',
         category: 'Music',
@@ -412,7 +411,7 @@ const questions = [
     {
         id: 'music_0703',
         category: 'Music',
-        question: 'Which artist recorded January?',
+        question: 'Which artist recorded Just a Smile?',
         answers: ['Pilot', 'Sailor', 'Smokie', '10cc'],
         correctAnswer: 'Pilot',
         difficulty: 'Medium',
@@ -434,7 +433,7 @@ const questions = [
     {
         id: 'music_0705',
         category: 'Music',
-        question: 'Which artist recorded Bye Bye Baby in 1975?',
+        question: 'Which artist recorded Summerlove Sensation?',
         answers: ['Bay City Rollers', 'Sweet', 'Mud', 'Slade'],
         correctAnswer: 'Bay City Rollers',
         difficulty: 'Easy',
@@ -460,7 +459,7 @@ const questions = [
     {
         id: 'music_0707',
         category: 'Music',
-        question: 'Which artist recorded Relax?',
+        question: 'Which artist recorded Welcome to the Pleasuredome?',
         answers: ['Frankie Goes to Hollywood', 'Duran Duran', 'Spandau Ballet', 'ABC'],
         correctAnswer: 'Frankie Goes to Hollywood',
         difficulty: 'Easy',
@@ -471,7 +470,7 @@ const questions = [
     {
         id: 'music_0708',
         category: 'Music',
-        question: 'Which artist recorded Two Tribes?',
+        question: 'Which artist recorded Warriors of the Wasteland?',
         answers: ['Frankie Goes to Hollywood', 'Duran Duran', 'ABC', 'Ultravox'],
         correctAnswer: 'Frankie Goes to Hollywood',
         difficulty: 'Easy',
@@ -482,7 +481,7 @@ const questions = [
     {
         id: 'music_0709',
         category: 'Music',
-        question: 'Which artist recorded Red Red Wine in 1983?',
+        question: 'Which artist recorded Kingston Town?',
         answers: ['UB40', 'Madness', 'The Specials', 'The Beat'],
         correctAnswer: 'UB40',
         difficulty: 'Easy',
@@ -515,7 +514,7 @@ const questions = [
     {
         id: 'music_0712',
         category: 'Music',
-        question: 'Which artist recorded Walking on the Moon?',
+        question: 'Which artist recorded So Lonely?',
         answers: ['The Police', 'The Jam', 'The Clash', 'The Specials'],
         correctAnswer: 'The Police',
         difficulty: 'Easy',
@@ -566,6 +565,7 @@ const questions = [
         tags: ['1980s', 'rock', 'dire straits', 'songs'],
         dailyEligible: true
     },
+
     {
         id: 'music_0717',
         category: 'Music',
@@ -602,7 +602,7 @@ const questions = [
     {
         id: 'music_0720',
         category: 'Music',
-        question: 'Which artist recorded Sledgehammer?',
+        question: 'Which artist recorded Shock the Monkey?',
         answers: ['Peter Gabriel', 'Phil Collins', 'Genesis', 'Sting'],
         correctAnswer: 'Peter Gabriel',
         difficulty: 'Easy',
@@ -624,7 +624,7 @@ const questions = [
     {
         id: 'music_0722',
         category: 'Music',
-        question: 'Which artist recorded In the Air Tonight?',
+        question: 'Which artist recorded I Missed Again?',
         answers: ['Phil Collins', 'Peter Gabriel', 'Genesis', 'Sting'],
         correctAnswer: 'Phil Collins',
         difficulty: 'Easy',
@@ -635,7 +635,7 @@ const questions = [
     {
         id: 'music_0723',
         category: 'Music',
-        question: 'Which artist recorded Easy Lover with Philip Bailey?',
+        question: 'Which artist recorded Don\'t Lose My Number?',
         answers: ['Phil Collins', 'Peter Gabriel', 'Lionel Richie', 'Billy Ocean'],
         correctAnswer: 'Phil Collins',
         difficulty: 'Easy',
@@ -646,7 +646,7 @@ const questions = [
     {
         id: 'music_0724',
         category: 'Music',
-        question: 'Which artist recorded Invisible Touch?',
+        question: 'Which artist recorded Mama?',
         answers: ['Genesis', 'Phil Collins', 'Peter Gabriel', 'Mike + The Mechanics'],
         correctAnswer: 'Genesis',
         difficulty: 'Easy',
@@ -668,7 +668,7 @@ const questions = [
     {
         id: 'music_0726',
         category: 'Music',
-        question: 'Which artist recorded Don\'t You (Forget About Me)?',
+        question: 'Which artist recorded Waterfront?',
         answers: ['Simple Minds', 'U2', 'INXS', 'Tears for Fears'],
         correctAnswer: 'Simple Minds',
         difficulty: 'Easy',
@@ -679,7 +679,7 @@ const questions = [
     {
         id: 'music_0727',
         category: 'Music',
-        question: 'Which artist recorded Alive and Kicking?',
+        question: 'Which artist recorded Promised You a Miracle?',
         answers: ['Simple Minds', 'U2', 'INXS', 'Tears for Fears'],
         correctAnswer: 'Simple Minds',
         difficulty: 'Medium',
@@ -690,7 +690,7 @@ const questions = [
     {
         id: 'music_0728',
         category: 'Music',
-        question: 'Which artist recorded Need You Tonight?',
+        question: 'Which artist recorded Mystify?',
         answers: ['INXS', 'Simple Minds', 'U2', 'Duran Duran'],
         correctAnswer: 'INXS',
         difficulty: 'Easy',
@@ -701,7 +701,7 @@ const questions = [
     {
         id: 'music_0729',
         category: 'Music',
-        question: 'Which artist recorded New Sensation?',
+        question: 'Which artist recorded Devil Inside?',
         answers: ['INXS', 'Simple Minds', 'U2', 'Duran Duran'],
         correctAnswer: 'INXS',
         difficulty: 'Medium',
@@ -712,7 +712,7 @@ const questions = [
     {
         id: 'music_0730',
         category: 'Music',
-        question: 'Which artist recorded Shout?',
+        question: 'Which artist recorded Mad World?',
         answers: ['Tears for Fears', 'Simple Minds', 'Duran Duran', 'Spandau Ballet'],
         correctAnswer: 'Tears for Fears',
         difficulty: 'Easy',
@@ -734,7 +734,7 @@ const questions = [
     {
         id: 'music_0732',
         category: 'Music',
-        question: 'Which artist recorded Gold?',
+        question: 'Which artist recorded Only When You Leave?',
         answers: ['Spandau Ballet', 'Duran Duran', 'ABC', 'Ultravox'],
         correctAnswer: 'Spandau Ballet',
         difficulty: 'Easy',
@@ -745,18 +745,17 @@ const questions = [
     {
         id: 'music_0733',
         category: 'Music',
-        question: 'Which artist recorded The Reflex?',
+        question: 'Which artist recorded Union of the Snake?',
         answers: ['Duran Duran', 'Spandau Ballet', 'ABC', 'A-ha'],
         correctAnswer: 'Duran Duran',
         difficulty: 'Easy',
         tags: ['1980s', 'pop', 'duran duran', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0734',
         category: 'Music',
-        question: 'Which artist recorded The Look of Love?',
+        question: 'Which artist recorded When Smokey Sings?',
         answers: ['ABC', 'Duran Duran', 'Spandau Ballet', 'Heaven 17'],
         correctAnswer: 'ABC',
         difficulty: 'Medium',
@@ -767,7 +766,7 @@ const questions = [
     {
         id: 'music_0735',
         category: 'Music',
-        question: 'Which artist recorded Temptation?',
+        question: 'Which artist recorded Crushed by the Wheels of Industry?',
         answers: ['Heaven 17', 'ABC', 'Human League', 'Ultravox'],
         correctAnswer: 'Heaven 17',
         difficulty: 'Medium',
@@ -778,7 +777,7 @@ const questions = [
     {
         id: 'music_0736',
         category: 'Music',
-        question: 'Which artist recorded Vienna?',
+        question: 'Which artist recorded Dancing with Tears in My Eyes?',
         answers: ['Ultravox', 'Human League', 'Heaven 17', 'Visage'],
         correctAnswer: 'Ultravox',
         difficulty: 'Easy',
@@ -789,7 +788,7 @@ const questions = [
     {
         id: 'music_0737',
         category: 'Music',
-        question: 'Which artist recorded Fade to Grey?',
+        question: 'Which artist recorded Mind of a Toy?',
         answers: ['Visage', 'Ultravox', 'Human League', 'Heaven 17'],
         correctAnswer: 'Visage',
         difficulty: 'Medium',
@@ -811,7 +810,7 @@ const questions = [
     {
         id: 'music_0739',
         category: 'Music',
-        question: 'Which artist recorded Love Action (I Believe in Love)?',
+        question: 'Which artist recorded Mirror Man?',
         answers: ['The Human League', 'Heaven 17', 'Ultravox', 'Visage'],
         correctAnswer: 'The Human League',
         difficulty: 'Medium',
@@ -822,7 +821,7 @@ const questions = [
     {
         id: 'music_0740',
         category: 'Music',
-        question: 'Which artist recorded Enola Gay?',
+        question: 'Which artist recorded Joan of Arc?',
         answers: ['Orchestral Manoeuvres in the Dark', 'Ultravox', 'The Human League', 'Visage'],
         correctAnswer: 'Orchestral Manoeuvres in the Dark',
         difficulty: 'Medium',
@@ -848,7 +847,7 @@ const questions = [
     {
         id: 'music_0742',
         category: 'Music',
-        question: 'Which artist recorded Unbelievable?',
+        question: 'Which artist recorded I Believe?',
         answers: ['EMF', 'Jesus Jones', 'The Farm', 'Happy Mondays'],
         correctAnswer: 'EMF',
         difficulty: 'Easy',
@@ -859,7 +858,7 @@ const questions = [
     {
         id: 'music_0743',
         category: 'Music',
-        question: 'Which artist recorded Right Here, Right Now in 1990?',
+        question: 'Which artist recorded Real Real Real?',
         answers: ['Jesus Jones', 'EMF', 'The Farm', 'Happy Mondays'],
         correctAnswer: 'Jesus Jones',
         difficulty: 'Medium',
@@ -870,7 +869,7 @@ const questions = [
     {
         id: 'music_0744',
         category: 'Music',
-        question: 'Which artist recorded All Together Now?',
+        question: 'Which artist recorded Groovy Train?',
         answers: ['The Farm', 'EMF', 'Jesus Jones', 'Happy Mondays'],
         correctAnswer: 'The Farm',
         difficulty: 'Medium',
@@ -881,7 +880,7 @@ const questions = [
     {
         id: 'music_0745',
         category: 'Music',
-        question: 'Which artist recorded Step On?',
+        question: 'Which artist recorded Loose Fit?',
         answers: ['Happy Mondays', 'The Stone Roses', 'The Farm', 'Inspiral Carpets'],
         correctAnswer: 'Happy Mondays',
         difficulty: 'Easy',
@@ -903,7 +902,7 @@ const questions = [
     {
         id: 'music_0747',
         category: 'Music',
-        question: 'Which artist recorded This Is How It Feels?',
+        question: 'Which artist recorded Dragging Me Down?',
         answers: ['Inspiral Carpets', 'Happy Mondays', 'The Stone Roses', 'James'],
         correctAnswer: 'Inspiral Carpets',
         difficulty: 'Medium',
@@ -914,7 +913,7 @@ const questions = [
     {
         id: 'music_0748',
         category: 'Music',
-        question: 'Which artist recorded Sit Down?',
+        question: 'Which artist recorded Come Home?',
         answers: ['James', 'Inspiral Carpets', 'The Stone Roses', 'Happy Mondays'],
         correctAnswer: 'James',
         difficulty: 'Easy',
@@ -936,7 +935,7 @@ const questions = [
     {
         id: 'music_0750',
         category: 'Music',
-        question: 'Which artist recorded There She Goes?',
+        question: 'Which artist recorded Timeless Melody?',
         answers: ['The La\'s', 'James', 'The Stone Roses', 'The Charlatans'],
         correctAnswer: 'The La\'s',
         difficulty: 'Easy',
@@ -947,7 +946,7 @@ const questions = [
     {
         id: 'music_0751',
         category: 'Music',
-        question: 'Which artist recorded The Only One I Know?',
+        question: 'Which artist recorded Then?',
         answers: ['The Charlatans', 'The Stone Roses', 'Happy Mondays', 'Inspiral Carpets'],
         correctAnswer: 'The Charlatans',
         difficulty: 'Medium',
@@ -991,7 +990,7 @@ const questions = [
     {
         id: 'music_0755',
         category: 'Music',
-        question: 'Which artist recorded Country House?',
+        question: 'Which artist recorded Charmless Man?',
         answers: ['Blur', 'Oasis', 'Pulp', 'Supergrass'],
         correctAnswer: 'Blur',
         difficulty: 'Easy',
@@ -1002,7 +1001,7 @@ const questions = [
     {
         id: 'music_0756',
         category: 'Music',
-        question: 'Which artist recorded Disco 2000?',
+        question: 'Which artist recorded Babies?',
         answers: ['Pulp', 'Blur', 'Suede', 'Supergrass'],
         correctAnswer: 'Pulp',
         difficulty: 'Easy',
@@ -1057,7 +1056,7 @@ const questions = [
     {
         id: 'music_0761',
         category: 'Music',
-        question: 'Which artist recorded Alright?',
+        question: 'Which artist recorded Richard III?',
         answers: ['Supergrass', 'Blur', 'Pulp', 'Cast'],
         correctAnswer: 'Supergrass',
         difficulty: 'Easy',
