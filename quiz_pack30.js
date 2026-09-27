@@ -236,10 +236,10 @@ const questions = [
     {
         id: 'music_1087',
         category: 'Music',
-        question: 'Which artist recorded Stuck in the Middle with You?',
+        question: 'Which artist recorded Star?',
         answers: ['Stealers Wheel', 'Gerry Rafferty', 'America', '10cc'],
         correctAnswer: 'Stealers Wheel',
-        difficulty: 'Easy',
+        difficulty: 'Hard',
         tags: ['1970s', 'rock', 'stealers wheel', 'songs'],
         dailyEligible: true
     },
@@ -379,10 +379,10 @@ const questions = [
     {
         id: 'music_1100',
         category: 'Music',
-        question: 'Which artist recorded Tiger Feet?',
+        question: 'Which artist recorded The Cat Crept In?',
         answers: ['Mud', 'Sweet', 'Slade', 'Showaddywaddy'],
         correctAnswer: 'Mud',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1970s', 'glam rock', 'mud', 'songs'],
         dailyEligible: true
     },
@@ -566,7 +566,6 @@ const questions = [
         tags: ['1980s', 'pop', 'joe jackson', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_1117',
         category: 'Music',
@@ -614,11 +613,11 @@ const questions = [
     {
         id: 'music_1121',
         category: 'Music',
-        question: 'Which artist recorded Together in Electric Dreams with Giorgio Moroder?',
-        answers: ['Philip Oakey', 'Howard Jones', 'Midge Ure', 'Nik Kershaw'],
-        correctAnswer: 'Philip Oakey',
-        difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'synthpop', 'songs'],
+        question: 'Which artist recorded Yellow Pearl?',
+        answers: ['Phil Lynott', 'Midge Ure', 'Nik Kershaw', 'Howard Jones'],
+        correctAnswer: 'Phil Lynott',
+        difficulty: 'Medium',
+        tags: ['1980s', 'rock', 'pop', 'phil lynott', 'songs'],
         dailyEligible: true
     },
 
@@ -636,10 +635,10 @@ const questions = [
     {
         id: 'music_1123',
         category: 'Music',
-        question: 'Which artist recorded Kayleigh?',
+        question: 'Which artist recorded Incommunicado?',
         answers: ['Marillion', 'Genesis', 'Asia', 'Yes'],
         correctAnswer: 'Marillion',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'marillion', 'songs'],
         dailyEligible: true
     },
@@ -706,10 +705,10 @@ const questions = [
     {
         id: 'music_1129',
         category: 'Music',
-        question: 'Which artist recorded Walking in Memphis?',
+        question: 'Which artist recorded Silver Thunderbird?',
         answers: ['Marc Cohn', 'Bruce Hornsby', 'Richard Marx', 'Don Henley'],
         correctAnswer: 'Marc Cohn',
-        difficulty: 'Easy',
+        difficulty: 'Hard',
         tags: ['1990s', 'pop', 'rock', 'marc cohn', 'songs'],
         dailyEligible: true
     },
