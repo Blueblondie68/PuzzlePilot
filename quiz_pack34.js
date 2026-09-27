@@ -515,18 +515,18 @@ const quizPack34 = [
         dailyEligible: true
     },
 
-    {
+        {
         id: 'music_1499',
         category: 'Music',
-        question: 'Which artist recorded Cry?',
+        question: 'Which artist recorded An Englishman in New York?',
         answers: [
             'Godley & Creme',
-            'Tears for Fears',
-            'The Blow Monkeys',
-            'Talk Talk'
+            '10cc',
+            'The Buggles',
+            'Squeeze'
         ],
         correctAnswer: 'Godley & Creme',
-        difficulty: 'Easy',
+        difficulty: 'Hard',
         tags: ['1980s', 'pop', 'godley and creme', 'songs'],
         dailyEligible: true
     },
@@ -534,15 +534,15 @@ const quizPack34 = [
     {
         id: 'music_1500',
         category: 'Music',
-        question: 'Which artist recorded Under Your Thumb?',
+        question: 'Which artist recorded Snack Attack?',
         answers: [
             'Godley & Creme',
             '10cc',
-            'Squeeze',
-            'The Motors'
+            'The Buggles',
+            'Squeeze'
         ],
         correctAnswer: 'Godley & Creme',
-        difficulty: 'Medium',
+        difficulty: 'Hard',
         tags: ['1980s', 'pop', 'godley and creme', 'songs'],
         dailyEligible: true
     },
@@ -550,15 +550,15 @@ const quizPack34 = [
     {
         id: 'music_1501',
         category: 'Music',
-        question: 'Which artist recorded Wedding Bells?',
+        question: 'Which artist recorded Golden Boy?',
         answers: [
             'Godley & Creme',
             '10cc',
-            'Squeeze',
-            'The Buggles'
+            'The Buggles',
+            'The Motors'
         ],
         correctAnswer: 'Godley & Creme',
-        difficulty: 'Medium',
+        difficulty: 'Hard',
         tags: ['1980s', 'pop', 'godley and creme', 'songs'],
         dailyEligible: true
     },
