@@ -12,10 +12,10 @@ const questions = [
     {
         id: 'music_0767',
         category: 'Music',
-        question: 'Which artist recorded You Don\'t Have to Say You Love Me?',
+        question: 'Which artist recorded I Close My Eyes and Count to Ten?',
         answers: ['Dusty Springfield', 'Cilla Black', 'Petula Clark', 'Sandie Shaw'],
         correctAnswer: 'Dusty Springfield',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1960s', 'pop', 'dusty springfield', 'songs'],
         dailyEligible: true
     },
@@ -236,10 +236,10 @@ const questions = [
     {
         id: 'music_0787',
         category: 'Music',
-        question: 'Which artist recorded Wuthering Heights?',
+        question: 'Which artist recorded The Man with the Child in His Eyes?',
         answers: ['Kate Bush', 'Elkie Brooks', 'Joan Armatrading', 'Judie Tzuke'],
         correctAnswer: 'Kate Bush',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1970s', 'pop', 'kate bush', 'songs'],
         dailyEligible: true
     },
@@ -423,10 +423,10 @@ const questions = [
     {
         id: 'music_0804',
         category: 'Music',
-        question: 'Which artist recorded Tiger Feet?',
+        question: 'Which artist recorded Dyna-mite?',
         answers: ['Mud', 'Sweet', 'Slade', 'The Rubettes'],
         correctAnswer: 'Mud',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1970s', 'glam rock', 'mud', 'songs'],
         dailyEligible: true
     },
@@ -515,7 +515,7 @@ const questions = [
     {
         id: 'music_0812',
         category: 'Music',
-        question: 'Which artist recorded Love Resurrection?',
+        question: 'Which artist recorded Invisible?',
         answers: ['Alison Moyet', 'Annie Lennox', 'Kim Wilde', 'Toyah'],
         correctAnswer: 'Alison Moyet',
         difficulty: 'Medium',
@@ -537,10 +537,10 @@ const questions = [
     {
         id: 'music_0814',
         category: 'Music',
-        question: 'Which artist recorded Kids in America?',
+        question: 'Which artist recorded Chequered Love?',
         answers: ['Kim Wilde', 'Belinda Carlisle', 'Toyah', 'Alison Moyet'],
         correctAnswer: 'Kim Wilde',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'kim wilde', 'songs'],
         dailyEligible: true
     },
@@ -566,7 +566,6 @@ const questions = [
         tags: ['1980s', 'new wave', 'toyah', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0817',
         category: 'Music',
@@ -728,10 +727,10 @@ const questions = [
     {
         id: 'music_0831',
         category: 'Music',
-        question: 'Which artist recorded All Around the World?',
+        question: 'Which artist recorded This Is the Right Time?',
         answers: ['Lisa Stansfield', 'Gabrielle', 'Des\'ree', 'Beverley Knight'],
         correctAnswer: 'Lisa Stansfield',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'soul', 'lisa stansfield', 'songs'],
         dailyEligible: true
     },
@@ -739,10 +738,10 @@ const questions = [
     {
         id: 'music_0832',
         category: 'Music',
-        question: 'Which artist recorded Dreamer in 1994?',
+        question: 'Which artist recorded Don\'t Stop Movin\'?',
         answers: ['Livin\' Joy', 'Baby D', 'Strike', 'N-Trance'],
         correctAnswer: 'Livin\' Joy',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'dance', 'livin joy', 'songs'],
         dailyEligible: true
     },
@@ -1073,10 +1072,10 @@ const questions = [
     {
         id: 'music_0862',
         category: 'Music',
-        question: 'Which artist recorded Independence Day?',
+        question: 'Which artist recorded Wild Angels?',
         answers: ['Martina McBride', 'Faith Hill', 'Trisha Yearwood', 'Deana Carter'],
         correctAnswer: 'Martina McBride',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'country', 'martina mcbride', 'songs'],
         dailyEligible: true
     },
@@ -1117,10 +1116,10 @@ const questions = [
     {
         id: 'music_0866',
         category: 'Music',
-        question: 'Which artist recorded Amazed?',
+        question: 'Which artist recorded No News?',
         answers: ['Lonestar', 'Diamond Rio', 'Alabama', 'Brooks & Dunn'],
         correctAnswer: 'Lonestar',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'country', 'lonestar', 'songs'],
         dailyEligible: true
     }
