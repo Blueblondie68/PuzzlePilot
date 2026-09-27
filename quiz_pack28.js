@@ -236,10 +236,10 @@ const questions = [
     {
         id: 'music_0887',
         category: 'Music',
-        question: 'Which artist recorded Maggie May?',
+        question: 'Which artist recorded Tonight\'s the Night (Gonna Be Alright)?',
         answers: ['Rod Stewart', 'Elton John', 'David Bowie', 'Leo Sayer'],
         correctAnswer: 'Rod Stewart',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1970s', 'rock', 'rod stewart', 'songs'],
         dailyEligible: true
     },
@@ -379,7 +379,7 @@ const questions = [
     {
         id: 'music_0900',
         category: 'Music',
-        question: 'Which artist recorded Heartache Tonight?',
+        question: 'Which artist recorded New Kid in Town?',
         answers: ['Eagles', 'Fleetwood Mac', 'America', 'The Doobie Brothers'],
         correctAnswer: 'Eagles',
         difficulty: 'Easy',
@@ -493,10 +493,10 @@ const questions = [
     {
         id: 'music_0910',
         category: 'Music',
-        question: 'Which artist recorded The Power of Love in 1985?',
+        question: 'Which artist recorded Hip to Be Square?',
         answers: ['Huey Lewis and the News', 'Foreigner', 'REO Speedwagon', 'Journey'],
         correctAnswer: 'Huey Lewis and the News',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'huey lewis and the news', 'songs'],
         dailyEligible: true
     },
@@ -566,7 +566,6 @@ const questions = [
         tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0917',
         category: 'Music',
@@ -761,10 +760,10 @@ const questions = [
     {
         id: 'music_0934',
         category: 'Music',
-        question: 'Which artist recorded The Day We Caught the Train?',
+        question: 'Which artist recorded Hundred Mile High City?',
         answers: ['Ocean Colour Scene', 'The Bluetones', 'Dodgy', 'Cast'],
         correctAnswer: 'Ocean Colour Scene',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'britpop', 'ocean colour scene', 'songs'],
         dailyEligible: true
     },
@@ -772,10 +771,10 @@ const questions = [
     {
         id: 'music_0935',
         category: 'Music',
-        question: 'Which artist recorded Alright in 1995?',
+        question: 'Which artist recorded Pumping on Your Stereo?',
         answers: ['Supergrass', 'Blur', 'Pulp', 'Dodgy'],
         correctAnswer: 'Supergrass',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'britpop', 'supergrass', 'songs'],
         dailyEligible: true
     },
@@ -783,7 +782,7 @@ const questions = [
     {
         id: 'music_0936',
         category: 'Music',
-        question: 'Which artist recorded Walkaway?',
+        question: 'Which artist recorded Guiding Star?',
         answers: ['Cast', 'Ocean Colour Scene', 'Dodgy', 'The Bluetones'],
         correctAnswer: 'Cast',
         difficulty: 'Medium',
@@ -871,10 +870,10 @@ const questions = [
     {
         id: 'music_0944',
         category: 'Music',
-        question: 'Which artist recorded Torn?',
+        question: 'Which artist recorded Big Mistake?',
         answers: ['Natalie Imbruglia', 'Meredith Brooks', 'Alanis Morissette', 'Sheryl Crow'],
         correctAnswer: 'Natalie Imbruglia',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'pop', 'natalie imbruglia', 'songs'],
         dailyEligible: true
     },
@@ -882,10 +881,10 @@ const questions = [
     {
         id: 'music_0945',
         category: 'Music',
-        question: 'Which artist recorded Kiss Me?',
+        question: 'Which artist recorded I Can\'t Catch You?',
         answers: ['Sixpence None the Richer', 'The Corrs', 'The Cardigans', 'Natalie Imbruglia'],
         correctAnswer: 'Sixpence None the Richer',
-        difficulty: 'Easy',
+        difficulty: 'Hard',
         tags: ['1990s', 'pop', 'songs'],
         dailyEligible: true
     },
@@ -908,10 +907,10 @@ const questions = [
     {
         id: 'music_0947',
         category: 'Music',
-        question: 'Which artist recorded Suddenly I See?',
+        question: 'Which artist recorded Other Side of the World?',
         answers: ['KT Tunstall', 'Duffy', 'Natasha Bedingfield', 'Nerina Pallot'],
         correctAnswer: 'KT Tunstall',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['2000s', 'pop', 'rock', 'kt tunstall', 'songs'],
         dailyEligible: true
     },
@@ -1040,7 +1039,7 @@ const questions = [
     {
         id: 'music_0959',
         category: 'Music',
-        question: 'Which artist recorded Because of You in 2004?',
+        question: 'Which artist recorded Breakaway?',
         answers: ['Kelly Clarkson', 'Jordin Sparks', 'Pink', 'Avril Lavigne'],
         correctAnswer: 'Kelly Clarkson',
         difficulty: 'Easy',
@@ -1106,10 +1105,10 @@ const questions = [
     {
         id: 'music_0965',
         category: 'Music',
-        question: 'Which artist recorded Strawberry Wine?',
+        question: 'Which artist recorded We Danced Anyway?',
         answers: ['Deana Carter', 'Sara Evans', 'Jo Dee Messina', 'Trisha Yearwood'],
         correctAnswer: 'Deana Carter',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'country', 'deana carter', 'songs'],
         dailyEligible: true
     },
