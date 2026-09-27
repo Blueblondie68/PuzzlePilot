@@ -18,11 +18,11 @@ const questions = [
     {
         id: 'music_0468',
         category: 'Music',
-        question: 'Which artist recorded Vienna?',
-        answers: ['Visage', 'Ultravox', 'Japan', 'The Buggles'],
-        correctAnswer: 'Ultravox',
-        difficulty: 'Easy',
-        tags: ['1980s', 'new wave', 'ultravox', 'songs'],
+        question: 'Which artist recorded Living on the Ceiling?',
+        answers: ['Blancmange', 'Soft Cell', 'Yazoo', 'Heaven 17'],
+        correctAnswer: 'Blancmange',
+        difficulty: 'Medium',
+        tags: ['1980s', 'synth-pop', 'blancmange', 'songs'],
         dailyEligible: true
     },
 
@@ -51,8 +51,8 @@ const questions = [
     {
         id: 'music_0471',
         category: 'Music',
-        question: 'Which artist recorded Enola Gay?',
-        answers: ['Orchestral Manoeuvres in the Dark', 'The Human League', 'Heaven 17', 'Ultravox'],
+        question: 'Which artist recorded Souvenir?',
+        answers: ['Orchestral Manoeuvres in the Dark', 'Ultravox', 'Japan', 'Visage'],
         correctAnswer: 'Orchestral Manoeuvres in the Dark',
         difficulty: 'Medium',
         tags: ['1980s', 'synth-pop', 'omd', 'songs'],
@@ -62,11 +62,11 @@ const questions = [
     {
         id: 'music_0472',
         category: 'Music',
-        question: 'Which artist recorded Temptation?',
-        answers: ['The Human League', 'Heaven 17', 'ABC', 'Orchestral Manoeuvres in the Dark'],
+        question: 'Which artist recorded Come Live with Me?',
+        answers: ['Heaven 17', 'The Human League', 'ABC', 'Soft Cell'],
         correctAnswer: 'Heaven 17',
         difficulty: 'Medium',
-        tags: ['1980s', 'synth-pop', 'songs'],
+        tags: ['1980s', 'synth-pop', 'heaven 17', 'songs'],
         dailyEligible: true
     },
 
@@ -95,8 +95,8 @@ const questions = [
     {
         id: 'music_0475',
         category: 'Music',
-        question: 'Which artist recorded Love Action (I Believe in Love)?',
-        answers: ['Soft Cell', 'The Human League', 'Heaven 17', 'ABC'],
+        question: 'Which artist recorded The Lebanon?',
+        answers: ['The Human League', 'Heaven 17', 'Ultravox', 'ABC'],
         correctAnswer: 'The Human League',
         difficulty: 'Medium',
         tags: ['1980s', 'synth-pop', 'the human league', 'songs'],
@@ -106,11 +106,11 @@ const questions = [
     {
         id: 'music_0476',
         category: 'Music',
-        question: 'Which artist recorded Only You?',
-        answers: ['Yazoo', 'Erasure', 'Alison Moyet', 'Soft Cell'],
+        question: 'Which artist recorded Nobody\'s Diary?',
+        answers: ['Yazoo', 'Erasure', 'Soft Cell', 'Bronski Beat'],
         correctAnswer: 'Yazoo',
         difficulty: 'Medium',
-        tags: ['1980s', 'synth-pop', 'songs'],
+        tags: ['1980s', 'synth-pop', 'yazoo', 'songs'],
         dailyEligible: true
     },
 
@@ -194,21 +194,21 @@ const questions = [
     {
         id: 'music_0484',
         category: 'Music',
-        question: 'Which artist recorded Gold?',
-        answers: ['Culture Club', 'Duran Duran', 'Spandau Ballet', 'Frankie Goes to Hollywood'],
+        question: 'Which artist recorded Chant No. 1 (I Don\'t Need This Pressure On)?',
+        answers: ['Spandau Ballet', 'Duran Duran', 'ABC', 'Culture Club'],
         correctAnswer: 'Spandau Ballet',
-        difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'spandau ballet', 'songs'],
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'new wave', 'spandau ballet', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0485',
         category: 'Music',
-        question: 'Which artist recorded Karma Chameleon?',
-        answers: ['Duran Duran', 'Culture Club', 'Spandau Ballet', 'Wham!'],
+        question: 'Which artist recorded Church of the Poison Mind?',
+        answers: ['Culture Club', 'Duran Duran', 'Spandau Ballet', 'Wham!'],
         correctAnswer: 'Culture Club',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'culture club', 'songs'],
         dailyEligible: true
     },
@@ -227,8 +227,8 @@ const questions = [
     {
         id: 'music_0487',
         category: 'Music',
-        question: 'Which artist recorded The Look of Love?',
-        answers: ['ABC', 'Spandau Ballet', 'Duran Duran', 'Culture Club'],
+        question: 'Which artist recorded All of My Heart?',
+        answers: ['ABC', 'Spandau Ballet', 'Duran Duran', 'Heaven 17'],
         correctAnswer: 'ABC',
         difficulty: 'Medium',
         tags: ['1980s', 'pop', 'abc', 'songs'],
@@ -366,7 +366,6 @@ const questions = [
         tags: ['1980s', 'alternative', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0500',
         category: 'Music',
@@ -729,7 +728,6 @@ const questions = [
         tags: ['1980s', 'pop', 'a-ha', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0533',
         category: 'Music',
