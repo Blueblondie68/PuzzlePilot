@@ -51,11 +51,11 @@ const questions = [
     {
         id: 'music_0471',
         category: 'Music',
-        question: 'Which artist recorded Souvenir?',
-        answers: ['Orchestral Manoeuvres in the Dark', 'Ultravox', 'Japan', 'Visage'],
+        question: 'Which artist recorded Electricity?',
+        answers: ['Orchestral Manoeuvres in the Dark', 'The Human League', 'Ultravox', 'Heaven 17'],
         correctAnswer: 'Orchestral Manoeuvres in the Dark',
         difficulty: 'Medium',
-        tags: ['1980s', 'synth-pop', 'omd', 'songs'],
+        tags: ['1970s', 'synth-pop', 'omd', 'songs'],
         dailyEligible: true
     },
 
@@ -194,11 +194,11 @@ const questions = [
     {
         id: 'music_0484',
         category: 'Music',
-        question: 'Which artist recorded Chant No. 1 (I Don\'t Need This Pressure On)?',
-        answers: ['Spandau Ballet', 'Duran Duran', 'ABC', 'Culture Club'],
+        question: 'Which artist recorded Lifeline?',
+        answers: ['Spandau Ballet', 'ABC', 'Duran Duran', 'Culture Club'],
         correctAnswer: 'Spandau Ballet',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'new wave', 'spandau ballet', 'songs'],
+        tags: ['1980s', 'pop', 'spandau ballet', 'songs'],
         dailyEligible: true
     },
 
@@ -534,10 +534,10 @@ const questions = [
     {
         id: 'music_0515',
         category: 'Music',
-        question: 'Which artist recorded Kids in America?',
+        question: 'Which artist recorded Chequered Love?',
         answers: ['Kim Wilde', 'Toyah', 'Hazel O\'Connor', 'Altered Images'],
         correctAnswer: 'Kim Wilde',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'kim wilde', 'songs'],
         dailyEligible: true
     },
@@ -589,7 +589,7 @@ const questions = [
     {
         id: 'music_0520',
         category: 'Music',
-        question: 'Which artist recorded Too Much Too Young?',
+        question: 'Which artist recorded Do Nothing?',
         answers: ['The Specials', 'Madness', 'The Beat', 'The Selecter'],
         correctAnswer: 'The Specials',
         difficulty: 'Medium',
@@ -600,10 +600,10 @@ const questions = [
     {
         id: 'music_0521',
         category: 'Music',
-        question: 'Which artist recorded Baggy Trousers?',
+        question: 'Which artist recorded Embarrassment?',
         answers: ['The Specials', 'Madness', 'The Beat', 'Bad Manners'],
         correctAnswer: 'Madness',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'ska', 'madness', 'songs'],
         dailyEligible: true
     },
@@ -633,10 +633,10 @@ const questions = [
     {
         id: 'music_0524',
         category: 'Music',
-        question: 'Which artist recorded Our House?',
+        question: 'Which artist recorded Driving in My Car?',
         answers: ['Madness', 'The Specials', 'The Beat', 'Dexys Midnight Runners'],
         correctAnswer: 'Madness',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'ska', 'madness', 'songs'],
         dailyEligible: true
     },
@@ -644,10 +644,10 @@ const questions = [
     {
         id: 'music_0525',
         category: 'Music',
-        question: 'Which artist recorded Town Called Malice?',
-        answers: ['The Jam', 'The Clash', 'The Specials', 'Madness'],
+        question: 'Which artist recorded Funeral Pyre?',
+        answers: ['The Jam', 'The Clash', 'The Specials', 'The Style Council'],
         correctAnswer: 'The Jam',
-        difficulty: 'Easy',
+        difficulty: 'Hard',
         tags: ['1980s', 'rock', 'the jam', 'songs'],
         dailyEligible: true
     },
@@ -655,7 +655,7 @@ const questions = [
     {
         id: 'music_0526',
         category: 'Music',
-        question: 'Which artist recorded Start!?',
+        question: 'Which artist recorded Absolute Beginners?',
         answers: ['The Jam', 'The Clash', 'The Who', 'The Style Council'],
         correctAnswer: 'The Jam',
         difficulty: 'Medium',
@@ -731,10 +731,10 @@ const questions = [
     {
         id: 'music_0533',
         category: 'Music',
-        question: 'Which artist recorded The Final Countdown?',
-        answers: ['A-ha', 'Europe', 'Bon Jovi', 'Cutting Crew'],
+        question: 'Which artist recorded Rock the Night?',
+        answers: ['Europe', 'Bon Jovi', 'Def Leppard', 'Scorpions'],
         correctAnswer: 'Europe',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'europe', 'songs'],
         dailyEligible: true
     },
@@ -775,10 +775,10 @@ const questions = [
     {
         id: 'music_0537',
         category: 'Music',
-        question: 'Which artist recorded Total Eclipse of the Heart?',
-        answers: ['Tina Turner', 'Bonnie Tyler', 'Cher', 'Pat Benatar'],
+        question: 'Which artist recorded If You Were a Woman (And I Was a Man)?',
+        answers: ['Bonnie Tyler', 'Tina Turner', 'Cher', 'Pat Benatar'],
         correctAnswer: 'Bonnie Tyler',
-        difficulty: 'Easy',
+        difficulty: 'Hard',
         tags: ['1980s', 'pop', 'rock', 'bonnie tyler', 'songs'],
         dailyEligible: true
     },
@@ -808,11 +808,11 @@ const questions = [
     {
         id: 'music_0540',
         category: 'Music',
-        question: 'Which artist recorded We Built This City?',
-        answers: ['Heart', 'Starship', 'Foreigner', 'REO Speedwagon'],
+        question: 'Which artist recorded Sara?',
+        answers: ['Starship', 'Heart', 'Foreigner', 'REO Speedwagon'],
         correctAnswer: 'Starship',
-        difficulty: 'Easy',
-        tags: ['1980s', 'rock', 'songs'],
+        difficulty: 'Medium',
+        tags: ['1980s', 'rock', 'starship', 'songs'],
         dailyEligible: true
     },
 
@@ -885,10 +885,10 @@ const questions = [
     {
         id: 'music_0547',
         category: 'Music',
-        question: 'Which artist recorded Sledgehammer?',
+        question: 'Which artist recorded Big Time?',
         answers: ['Peter Gabriel', 'Phil Collins', 'Genesis', 'Sting'],
         correctAnswer: 'Peter Gabriel',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'peter gabriel', 'songs'],
         dailyEligible: true
     },
@@ -1072,11 +1072,11 @@ const questions = [
     {
         id: 'music_0564',
         category: 'Music',
-        question: 'Which artist recorded Ebeneezer Goode?',
-        answers: ['The Farm', 'The Shamen', 'EMF', 'KLF'],
+        question: 'Which artist recorded L.S.I. (Love Sex Intelligence)?',
+        answers: ['The Shamen', 'KLF', 'EMF', 'The Prodigy'],
         correctAnswer: 'The Shamen',
-        difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        difficulty: 'Hard',
+        tags: ['1990s', 'dance', 'the shamen', 'songs'],
         dailyEligible: true
     },
 
@@ -1094,10 +1094,10 @@ const questions = [
     {
         id: 'music_0566',
         category: 'Music',
-        question: 'Which artist recorded Firestarter?',
+        question: 'Which artist recorded Voodoo People?',
         answers: ['KLF', 'The Prodigy', 'The Chemical Brothers', 'Orbital'],
         correctAnswer: 'The Prodigy',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'dance', 'the prodigy', 'songs'],
         dailyEligible: true
     }
