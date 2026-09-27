@@ -236,10 +236,10 @@ const questions = [
     {
         id: 'music_0987',
         category: 'Music',
-        question: 'Which artist recorded Baker Street?',
+        question: 'Which artist recorded Right Down the Line?',
         answers: ['Gerry Rafferty', 'Al Stewart', 'Chris Rea', 'Dire Straits'],
         correctAnswer: 'Gerry Rafferty',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1970s', 'rock', 'gerry rafferty', 'songs'],
         dailyEligible: true
     },
@@ -313,10 +313,10 @@ const questions = [
     {
         id: 'music_0994',
         category: 'Music',
-        question: 'Which artist recorded January?',
+        question: 'Which artist recorded Call Me Round?',
         answers: ['Pilot', 'Sailor', 'Slik', 'Smokie'],
         correctAnswer: 'Pilot',
-        difficulty: 'Medium',
+        difficulty: 'Hard',
         tags: ['1970s', 'pop', 'pilot', 'songs'],
         dailyEligible: true
     },
@@ -460,10 +460,10 @@ const questions = [
     {
         id: 'music_1007',
         category: 'Music',
-        question: 'Which artist recorded Geno?',
+        question: 'Which artist recorded There, There, My Dear?',
         answers: ['Dexys Midnight Runners', 'The Beat', 'Madness', 'The Specials'],
         correctAnswer: 'Dexys Midnight Runners',
-        difficulty: 'Medium',
+        difficulty: 'Hard',
         tags: ['1980s', 'pop', 'dexys midnight runners', 'songs'],
         dailyEligible: true
     },
@@ -471,7 +471,7 @@ const questions = [
     {
         id: 'music_1008',
         category: 'Music',
-        question: 'Which artist recorded Mirror in the Bathroom?',
+        question: 'Which artist recorded Hands Off...She\'s Mine?',
         answers: ['The Beat', 'The Specials', 'Madness', 'Bad Manners'],
         correctAnswer: 'The Beat',
         difficulty: 'Medium',
@@ -493,11 +493,11 @@ const questions = [
     {
         id: 'music_1010',
         category: 'Music',
-        question: 'Which artist recorded Too Much Too Young?',
+        question: 'Which artist recorded A Message to You Rudy?',
         answers: ['The Specials', 'Madness', 'The Beat', 'Bad Manners'],
         correctAnswer: 'The Specials',
         difficulty: 'Easy',
-        tags: ['1980s', 'ska', 'the specials', 'songs'],
+        tags: ['1970s', 'ska', 'the specials', 'songs'],
         dailyEligible: true
     },
 
@@ -566,14 +566,13 @@ const questions = [
         tags: ['1980s', 'new wave', 'talk talk', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_1017',
         category: 'Music',
-        question: 'Which artist recorded Alive and Kicking?',
+        question: 'Which artist recorded Sanctify Yourself?',
         answers: ['Simple Minds', 'U2', 'Big Country', 'The Alarm'],
         correctAnswer: 'Simple Minds',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'simple minds', 'songs'],
         dailyEligible: true
     },
@@ -625,10 +624,10 @@ const questions = [
     {
         id: 'music_1022',
         category: 'Music',
-        question: 'Which artist recorded Fast Car?',
+        question: 'Which artist recorded Talkin\' Bout a Revolution?',
         answers: ['Tracy Chapman', 'Suzanne Vega', 'Tanita Tikaram', 'Kirsty MacColl'],
         correctAnswer: 'Tracy Chapman',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'folk', 'pop', 'tracy chapman', 'songs'],
         dailyEligible: true
     },
@@ -647,7 +646,7 @@ const questions = [
     {
         id: 'music_1024',
         category: 'Music',
-        question: 'Which artist recorded Circle in the Sand?',
+        question: 'Which artist recorded Leave a Light On?',
         answers: ['Belinda Carlisle', 'Kim Wilde', 'Tiffany', 'Debbie Gibson'],
         correctAnswer: 'Belinda Carlisle',
         difficulty: 'Medium',
@@ -658,10 +657,10 @@ const questions = [
     {
         id: 'music_1025',
         category: 'Music',
-        question: 'Which artist recorded Tell It to My Heart?',
+        question: 'Which artist recorded Prove Your Love?',
         answers: ['Taylor Dayne', 'Belinda Carlisle', 'Debbie Gibson', 'Martika'],
         correctAnswer: 'Taylor Dayne',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'taylor dayne', 'songs'],
         dailyEligible: true
     },
@@ -669,10 +668,10 @@ const questions = [
     {
         id: 'music_1026',
         category: 'Music',
-        question: 'Which artist recorded Toy Soldiers?',
+        question: 'Which artist recorded More Than You Know?',
         answers: ['Martika', 'Taylor Dayne', 'Debbie Gibson', 'Tiffany'],
         correctAnswer: 'Martika',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'martika', 'songs'],
         dailyEligible: true
     },
@@ -827,10 +826,10 @@ const questions = [
     {
         id: 'music_1040',
         category: 'Music',
-        question: 'Which artist recorded Laid?',
+        question: 'Which artist recorded She\'s a Star?',
         answers: ['James', 'The Charlatans', 'The Lightning Seeds', 'Inspiral Carpets'],
         correctAnswer: 'James',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'indie', 'james', 'songs'],
         dailyEligible: true
     },
@@ -838,7 +837,7 @@ const questions = [
     {
         id: 'music_1041',
         category: 'Music',
-        question: 'Which artist recorded This Is How It Feels?',
+        question: 'Which artist recorded Saturn 5?',
         answers: ['Inspiral Carpets', 'James', 'The Charlatans', 'Happy Mondays'],
         correctAnswer: 'Inspiral Carpets',
         difficulty: 'Medium',
@@ -849,10 +848,10 @@ const questions = [
     {
         id: 'music_1042',
         category: 'Music',
-        question: 'Which artist recorded The Only One I Know?',
+        question: 'Which artist recorded Weirdo?',
         answers: ['The Charlatans', 'Inspiral Carpets', 'James', 'Happy Mondays'],
         correctAnswer: 'The Charlatans',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'indie', 'the charlatans', 'songs'],
         dailyEligible: true
     },
@@ -860,21 +859,21 @@ const questions = [
     {
         id: 'music_1043',
         category: 'Music',
-        question: 'Which artist recorded Kinky Afro?',
+        question: 'Which artist recorded Hallelujah?',
         answers: ['Happy Mondays', 'The Charlatans', 'Inspiral Carpets', 'Primal Scream'],
         correctAnswer: 'Happy Mondays',
         difficulty: 'Medium',
-        tags: ['1990s', 'indie', 'happy mondays', 'songs'],
+        tags: ['1980s', 'indie', 'happy mondays', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_1044',
         category: 'Music',
-        question: 'Which artist recorded Rocks?',
+        question: 'Which artist recorded Movin\' on Up?',
         answers: ['Primal Scream', 'Happy Mondays', 'The Charlatans', 'James'],
         correctAnswer: 'Primal Scream',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'rock', 'primal scream', 'songs'],
         dailyEligible: true
     },
@@ -882,7 +881,7 @@ const questions = [
     {
         id: 'music_1045',
         category: 'Music',
-        question: 'Which artist recorded Trash?',
+        question: 'Which artist recorded Filmstar?',
         answers: ['Suede', 'Pulp', 'Blur', 'Manic Street Preachers'],
         correctAnswer: 'Suede',
         difficulty: 'Medium',
@@ -1117,10 +1116,10 @@ const questions = [
     {
         id: 'music_1066',
         category: 'Music',
-        question: 'Which artist recorded Mercy in 2008?',
+        question: 'Which artist recorded Stepping Stone?',
         answers: ['Duffy', 'Adele', 'Amy Winehouse', 'Paloma Faith'],
         correctAnswer: 'Duffy',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['2000s', 'pop', 'soul', 'duffy', 'songs'],
         dailyEligible: true
     }
