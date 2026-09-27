@@ -386,7 +386,6 @@ const questions = [
         tags: ['1970s', 'pop', 'terry jacks', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_1001',
         category: 'Music',
@@ -493,11 +492,11 @@ const questions = [
     {
         id: 'music_1010',
         category: 'Music',
-        question: 'Which artist recorded A Message to You Rudy?',
+        question: 'Which artist recorded Rat Race?',
         answers: ['The Specials', 'Madness', 'The Beat', 'Bad Manners'],
         correctAnswer: 'The Specials',
-        difficulty: 'Easy',
-        tags: ['1970s', 'ska', 'the specials', 'songs'],
+        difficulty: 'Medium',
+        tags: ['1980s', 'ska', 'the specials', 'songs'],
         dailyEligible: true
     },
 
@@ -566,6 +565,7 @@ const questions = [
         tags: ['1980s', 'new wave', 'talk talk', 'songs'],
         dailyEligible: true
     },
+
     {
         id: 'music_1017',
         category: 'Music',
@@ -580,10 +580,10 @@ const questions = [
     {
         id: 'music_1018',
         category: 'Music',
-        question: 'Which artist recorded In a Big Country?',
+        question: 'Which artist recorded Fields of Fire?',
         answers: ['Big Country', 'Simple Minds', 'The Alarm', 'The Waterboys'],
         correctAnswer: 'Big Country',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'big country', 'songs'],
         dailyEligible: true
     },
@@ -591,7 +591,7 @@ const questions = [
     {
         id: 'music_1019',
         category: 'Music',
-        question: 'Which artist recorded Rain in the Summertime?',
+        question: 'Which artist recorded Absolute Reality?',
         answers: ['The Alarm', 'Big Country', 'Simple Minds', 'The Waterboys'],
         correctAnswer: 'The Alarm',
         difficulty: 'Medium',
@@ -683,10 +683,10 @@ const questions = [
     {
         id: 'music_1027',
         category: 'Music',
-        question: 'Which artist recorded Killer?',
+        question: 'Which artist recorded N-R-G?',
         answers: ['Adamski', 'Seal', 'Massive Attack', 'Soul II Soul'],
         correctAnswer: 'Adamski',
-        difficulty: 'Medium',
+        difficulty: 'Hard',
         tags: ['1990s', 'dance', 'adamski', 'songs'],
         dailyEligible: true
     },
@@ -694,7 +694,7 @@ const questions = [
     {
         id: 'music_1028',
         category: 'Music',
-        question: 'Which artist recorded Crazy in 1991?',
+        question: 'Which artist recorded Prayer for the Dying?',
         answers: ['Seal', 'George Michael', 'Simply Red', 'Terence Trent D\'Arby'],
         correctAnswer: 'Seal',
         difficulty: 'Medium',
@@ -756,7 +756,6 @@ const questions = [
         tags: ['1990s', 'pop', 'rock', 'texas', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_1034',
         category: 'Music',
