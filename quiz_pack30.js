@@ -324,10 +324,10 @@ const questions = [
     {
         id: 'music_1095',
         category: 'Music',
-        question: 'Which artist recorded Can\'t Get Enough?',
+        question: 'Which artist recorded Rock Steady?',
         answers: ['Bad Company', 'Free', 'Foreigner', 'Status Quo'],
         correctAnswer: 'Bad Company',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1970s', 'rock', 'bad company', 'songs'],
         dailyEligible: true
     },
@@ -386,7 +386,6 @@ const questions = [
         tags: ['1970s', 'glam rock', 'mud', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_1101',
         category: 'Music',
@@ -566,6 +565,7 @@ const questions = [
         tags: ['1980s', 'pop', 'joe jackson', 'songs'],
         dailyEligible: true
     },
+
     {
         id: 'music_1117',
         category: 'Music',
@@ -591,10 +591,10 @@ const questions = [
     {
         id: 'music_1119',
         category: 'Music',
-        question: 'Which artist recorded Hold Me Now?',
+        question: 'Which artist recorded King for a Day?',
         answers: ['Thompson Twins', 'Howard Jones', 'Nik Kershaw', 'Heaven 17'],
         correctAnswer: 'Thompson Twins',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'thompson twins', 'songs'],
         dailyEligible: true
     },
@@ -657,10 +657,10 @@ const questions = [
     {
         id: 'music_1125',
         category: 'Music',
-        question: 'Which artist recorded The Living Years?',
+        question: 'Which artist recorded Silent Running (On Dangerous Ground)?',
         answers: ['Mike + The Mechanics', 'Genesis', 'Marillion', 'Mr. Mister'],
         correctAnswer: 'Mike + The Mechanics',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'rock', 'mike and the mechanics', 'songs'],
         dailyEligible: true
     },
@@ -756,7 +756,6 @@ const questions = [
         tags: ['1990s', 'rock', 'pop', 'barenaked ladies', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_1134',
         category: 'Music',
