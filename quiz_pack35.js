@@ -165,44 +165,44 @@ const quizPack35 = [
         correctAnswer: 'Echo and the Bunnymen'
     },
 
-    {
+       {
         id: 'music_1587',
         category: 'Music',
-        question: 'Which artist recorded Love My Way?',
-        answers: ['Echo and the Bunnymen', 'The Psychedelic Furs', 'The Cure', 'The Associates'],
-        correctAnswer: 'The Psychedelic Furs'
+        question: 'Which artist recorded Walk Away?',
+        answers: ['The Cure', 'The Sisters of Mercy', 'The Mission', 'Killing Joke'],
+        correctAnswer: 'The Sisters of Mercy'
     },
 
     {
         id: 'music_1588',
         category: 'Music',
-        question: 'Which artist recorded The Ghost in You?',
-        answers: ['The Psychedelic Furs', 'Echo and the Bunnymen', 'The Smiths', 'The Cure'],
-        correctAnswer: 'The Psychedelic Furs'
+        question: 'Which artist recorded Christine?',
+        answers: ['Siouxsie and the Banshees', 'The Cure', 'The Sisters of Mercy', 'The Mission'],
+        correctAnswer: 'Siouxsie and the Banshees'
     },
 
     {
         id: 'music_1589',
         category: 'Music',
-        question: 'Which artist recorded Heaven?',
-        answers: ['The Cure', 'Echo and the Bunnymen', 'The Psychedelic Furs', 'Teardrop Explodes'],
-        correctAnswer: 'The Psychedelic Furs'
+        question: 'Which artist recorded Tower of Strength?',
+        answers: ['Killing Joke', 'The Sisters of Mercy', 'The Mission', 'The Cure'],
+        correctAnswer: 'The Mission'
     },
 
     {
         id: 'music_1590',
         category: 'Music',
-        question: 'Which artist recorded Heartbreak Beat?',
-        answers: ['Echo and the Bunnymen', 'The Cure', 'The Smiths', 'The Psychedelic Furs'],
-        correctAnswer: 'The Psychedelic Furs'
+        question: 'Which artist recorded Lucretia My Reflection?',
+        answers: ['The Mission', 'Killing Joke', 'The Cure', 'The Sisters of Mercy'],
+        correctAnswer: 'The Sisters of Mercy'
     },
 
     {
         id: 'music_1591',
         category: 'Music',
-        question: 'Which artist recorded Pretty in Pink?',
-        answers: ['The Psychedelic Furs', 'The Cure', 'Echo and the Bunnymen', 'The Associates'],
-        correctAnswer: 'The Psychedelic Furs'
+        question: 'Which artist recorded Eighties?',
+        answers: ['Killing Joke', 'The Mission', 'The Sisters of Mercy', 'The Cure'],
+        correctAnswer: 'Killing Joke'
     },
     {
         id: 'music_1592',
