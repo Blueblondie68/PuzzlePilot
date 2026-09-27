@@ -199,22 +199,22 @@ const questions = [
     {
         id: 'music_0384',
         category: 'Music',
-        question: 'Which artist recorded You Wear It Well?',
-        answers: ['Rod Stewart', 'Elton John', 'David Essex', 'Leo Sayer'],
-        correctAnswer: 'Rod Stewart',
+        question: 'Which artist recorded Dancing the Night Away?',
+        answers: ['The Motors', 'Dr. Feelgood', 'Eddie and the Hot Rods', 'Ducks Deluxe'],
+        correctAnswer: 'The Motors',
         difficulty: 'Medium',
-        tags: ['1970s', 'rock', 'rod stewart', 'songs'],
+        tags: ['1970s', 'rock', 'power pop', 'the motors', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0385',
         category: 'Music',
-        question: 'Which artist recorded Goodbye Yellow Brick Road?',
-        answers: ['Billy Joel', 'Elton John', 'Rod Stewart', 'David Bowie'],
-        correctAnswer: 'Elton John',
-        difficulty: 'Easy',
-        tags: ['1970s', 'pop', 'rock', 'elton john', 'songs'],
+        question: 'Which artist recorded Back of My Hand?',
+        answers: ['The Jags', 'The Motors', 'The Records', 'The Knack'],
+        correctAnswer: 'The Jags',
+        difficulty: 'Medium',
+        tags: ['1970s', 'power pop', 'the jags', 'songs'],
         dailyEligible: true
     },
 
@@ -371,7 +371,6 @@ const questions = [
         tags: ['1970s', 'rock', 'eagles', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0400',
         category: 'Music',
@@ -474,33 +473,33 @@ const questions = [
     {
         id: 'music_0409',
         category: 'Music',
-        question: 'Which artist recorded Roxanne?',
-        answers: ['The Police', 'The Jam', 'The Clash', 'The Stranglers'],
-        correctAnswer: 'The Police',
-        difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'new wave', 'the police', 'songs'],
+        question: 'Which artist recorded Whole Wide World?',
+        answers: ['Wreckless Eric', 'Nick Lowe', 'Ian Dury', 'Elvis Costello'],
+        correctAnswer: 'Wreckless Eric',
+        difficulty: 'Medium',
+        tags: ['1970s', 'rock', 'power pop', 'wreckless eric', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0410',
         category: 'Music',
-        question: 'Which artist recorded Message in a Bottle?',
-        answers: ['The Jam', 'The Police', 'The Clash', 'The Stranglers'],
-        correctAnswer: 'The Police',
-        difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'new wave', 'the police', 'songs'],
+        question: 'Which artist recorded Up the Junction?',
+        answers: ['Squeeze', 'The Jam', 'The Motors', 'The Undertones'],
+        correctAnswer: 'Squeeze',
+        difficulty: 'Medium',
+        tags: ['1970s', 'new wave', 'squeeze', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0411',
         category: 'Music',
-        question: 'Which artist recorded Going Underground?',
-        answers: ['The Clash', 'The Police', 'The Jam', 'Buzzcocks'],
-        correctAnswer: 'The Jam',
-        difficulty: 'Easy',
-        tags: ['1980s', 'rock', 'mod revival', 'the jam', 'songs'],
+        question: 'Which artist recorded Another Girl, Another Planet?',
+        answers: ['The Only Ones', 'Buzzcocks', 'The Undertones', 'The Stranglers'],
+        correctAnswer: 'The Only Ones',
+        difficulty: 'Medium',
+        tags: ['1970s', 'new wave', 'power pop', 'the only ones', 'songs'],
         dailyEligible: true
     },
 
@@ -518,11 +517,11 @@ const questions = [
     {
         id: 'music_0413',
         category: 'Music',
-        question: 'Which artist recorded Ghost Town?',
-        answers: ['Madness', 'The Specials', 'The Beat', 'The Selecter'],
-        correctAnswer: 'The Specials',
-        difficulty: 'Easy',
-        tags: ['1980s', 'ska', 'british', 'the specials', 'songs'],
+        question: 'Which artist recorded Milk and Alcohol?',
+        answers: ['Dr. Feelgood', 'The Motors', 'Eddie and the Hot Rods', 'Ian Dury and the Blockheads'],
+        correctAnswer: 'Dr. Feelgood',
+        difficulty: 'Medium',
+        tags: ['1970s', 'pub rock', 'dr feelgood', 'songs'],
         dailyEligible: true
     },
 
@@ -628,11 +627,11 @@ const questions = [
     {
         id: 'music_0423',
         category: 'Music',
-        question: 'Which artist recorded The Reflex?',
-        answers: ['Culture Club', 'ABC', 'Duran Duran', 'Spandau Ballet'],
-        correctAnswer: 'Duran Duran',
-        difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'duran duran', 'songs'],
+        question: 'Which artist recorded No More Heroes?',
+        answers: ['The Stranglers', 'The Clash', 'The Jam', 'Buzzcocks'],
+        correctAnswer: 'The Stranglers',
+        difficulty: 'Medium',
+        tags: ['1970s', 'punk', 'new wave', 'the stranglers', 'songs'],
         dailyEligible: true
     },
 
@@ -738,14 +737,13 @@ const questions = [
     {
         id: 'music_0433',
         category: 'Music',
-        question: 'Which artist recorded Girls Just Want to Have Fun?',
-        answers: ['Belinda Carlisle', 'Cyndi Lauper', 'Kim Wilde', 'Pat Benatar'],
-        correctAnswer: 'Cyndi Lauper',
-        difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'cyndi lauper', 'songs'],
+        question: 'Which artist recorded King Rocker?',
+        answers: ['Generation X', 'Buzzcocks', 'The Undertones', 'Sham 69'],
+        correctAnswer: 'Generation X',
+        difficulty: 'Medium',
+        tags: ['1970s', 'punk', 'generation x', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0434',
         category: 'Music',
