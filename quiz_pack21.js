@@ -507,10 +507,10 @@ const questions = [
     {
         id: 'music_0212',
         category: 'Music',
-        question: 'Which artist recorded Heaven Is a Place on Earth?',
+        question: 'Which artist recorded Summer Rain?',
         answers: ['Dexys Midnight Runners', 'Culture Club', 'Frankie Goes to Hollywood', 'Belinda Carlisle'],
         correctAnswer: 'Belinda Carlisle',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
@@ -518,7 +518,7 @@ const questions = [
     {
         id: 'music_0213',
         category: 'Music',
-        question: 'Which artist recorded Kids in America?',
+        question: 'Which artist recorded View from a Bridge?',
         answers: ['Culture Club', 'Frankie Goes to Hollywood', 'Kim Wilde', 'Dexys Midnight Runners'],
         correctAnswer: 'Kim Wilde',
         difficulty: 'Medium',
@@ -529,10 +529,10 @@ const questions = [
     {
         id: 'music_0214',
         category: 'Music',
-        question: 'Which artist recorded I Think We\'re Alone Now?',
+        question: 'Which artist recorded Could\'ve Been?',
         answers: ['Frankie Goes to Hollywood', 'Tiffany', 'Dexys Midnight Runners', 'Culture Club'],
         correctAnswer: 'Tiffany',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
@@ -551,7 +551,7 @@ const questions = [
     {
         id: 'music_0216',
         category: 'Music',
-        question: 'Which artist recorded Never Gonna Give You Up?',
+        question: 'Which artist recorded Together in Electric Dreams?',
         answers: ['Dexys Midnight Runners', 'Culture Club', 'Frankie Goes to Hollywood', 'Rick Astley'],
         correctAnswer: 'Rick Astley',
         difficulty: 'Medium',
