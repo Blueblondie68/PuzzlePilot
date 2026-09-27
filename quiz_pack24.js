@@ -1,550 +1,545 @@
 // quiz_pack24.js
 // PuzzlePilot Big Quiz
 // Pack 24 - 100 Music questions
-// Music specialist bank - artist/song questions
 
 const questions = [
-
-    // =========================================================
-    // MUSIC - 100
-    // =========================================================
 
     {
         id: 'music_0467',
         category: 'Music',
-        question: 'Which artist recorded All You Need Is Love?',
-        answers: ['The Beatles', 'The Kinks', 'The Who', 'The Hollies'],
-        correctAnswer: 'The Beatles',
+        question: 'Which artist recorded Video Killed the Radio Star?',
+        answers: ['The Buggles', 'Ultravox', 'Visage', 'Japan'],
+        correctAnswer: 'The Buggles',
         difficulty: 'Easy',
-        tags: ['1960s', 'pop', 'rock', 'the beatles', 'songs'],
+        tags: ['1970s', 'new wave', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0468',
         category: 'Music',
-        question: 'Which artist recorded Eleanor Rigby?',
-        answers: ['The Hollies', 'The Beatles', 'The Kinks', 'The Who'],
-        correctAnswer: 'The Beatles',
+        question: 'Which artist recorded Vienna?',
+        answers: ['Visage', 'Ultravox', 'Japan', 'The Buggles'],
+        correctAnswer: 'Ultravox',
         difficulty: 'Easy',
-        tags: ['1960s', 'pop', 'rock', 'the beatles', 'songs'],
+        tags: ['1980s', 'new wave', 'ultravox', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0469',
         category: 'Music',
-        question: 'Which artist recorded Ruby Tuesday?',
-        answers: ['The Kinks', 'The Who', 'The Rolling Stones', 'The Beatles'],
-        correctAnswer: 'The Rolling Stones',
-        difficulty: 'Easy',
-        tags: ['1960s', 'rock', 'the rolling stones', 'songs'],
+        question: 'Which artist recorded Fade to Grey?',
+        answers: ['Ultravox', 'Japan', 'Visage', 'The Buggles'],
+        correctAnswer: 'Visage',
+        difficulty: 'Medium',
+        tags: ['1980s', 'new wave', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0470',
         category: 'Music',
-        question: 'Which artist recorded Honky Tonk Women?',
-        answers: ['The Rolling Stones', 'The Who', 'The Animals', 'The Kinks'],
-        correctAnswer: 'The Rolling Stones',
-        difficulty: 'Easy',
-        tags: ['1960s', 'rock', 'the rolling stones', 'songs'],
+        question: 'Which artist recorded Ghosts?',
+        answers: ['Japan', 'Visage', 'Ultravox', 'The Human League'],
+        correctAnswer: 'Japan',
+        difficulty: 'Medium',
+        tags: ['1980s', 'new wave', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0471',
         category: 'Music',
-        question: 'Which artist recorded Pinball Wizard?',
-        answers: ['The Who', 'The Kinks', 'The Small Faces', 'The Animals'],
-        correctAnswer: 'The Who',
-        difficulty: 'Easy',
-        tags: ['1960s', 'rock', 'the who', 'songs'],
+        question: 'Which artist recorded Enola Gay?',
+        answers: ['Orchestral Manoeuvres in the Dark', 'The Human League', 'Heaven 17', 'Ultravox'],
+        correctAnswer: 'Orchestral Manoeuvres in the Dark',
+        difficulty: 'Medium',
+        tags: ['1980s', 'synth-pop', 'omd', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0472',
         category: 'Music',
-        question: 'Which artist recorded Substitute?',
-        answers: ['The Kinks', 'The Who', 'The Hollies', 'The Small Faces'],
-        correctAnswer: 'The Who',
+        question: 'Which artist recorded Temptation?',
+        answers: ['The Human League', 'Heaven 17', 'ABC', 'Orchestral Manoeuvres in the Dark'],
+        correctAnswer: 'Heaven 17',
         difficulty: 'Medium',
-        tags: ['1960s', 'rock', 'the who', 'songs'],
+        tags: ['1980s', 'synth-pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0473',
         category: 'Music',
-        question: 'Which artist recorded Dedicated Follower of Fashion?',
-        answers: ['The Kinks', 'The Who', 'The Hollies', 'The Small Faces'],
-        correctAnswer: 'The Kinks',
+        question: 'Which artist recorded Poison Arrow?',
+        answers: ['ABC', 'Heaven 17', 'The Human League', 'Soft Cell'],
+        correctAnswer: 'ABC',
         difficulty: 'Medium',
-        tags: ['1960s', 'pop', 'rock', 'the kinks', 'songs'],
+        tags: ['1980s', 'pop', 'new wave', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0474',
         category: 'Music',
-        question: 'Which artist recorded Carrie Anne?',
-        answers: ['The Searchers', 'The Hollies', 'The Tremeloes', 'The Animals'],
-        correctAnswer: 'The Hollies',
+        question: 'Which artist recorded Torch?',
+        answers: ['ABC', 'Soft Cell', 'The Human League', 'Heaven 17'],
+        correctAnswer: 'Soft Cell',
         difficulty: 'Medium',
-        tags: ['1960s', 'pop', 'british', 'songs'],
+        tags: ['1980s', 'synth-pop', 'soft cell', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0475',
         category: 'Music',
-        question: 'Which artist recorded Itchycoo Park?',
-        answers: ['The Small Faces', 'The Kinks', 'The Who', 'The Move'],
-        correctAnswer: 'The Small Faces',
+        question: 'Which artist recorded Love Action (I Believe in Love)?',
+        answers: ['Soft Cell', 'The Human League', 'Heaven 17', 'ABC'],
+        correctAnswer: 'The Human League',
         difficulty: 'Medium',
-        tags: ['1960s', 'rock', 'british', 'songs'],
+        tags: ['1980s', 'synth-pop', 'the human league', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0476',
         category: 'Music',
-        question: 'Which artist recorded Flowers in the Rain?',
-        answers: ['The Small Faces', 'The Move', 'The Tremeloes', 'The Hollies'],
-        correctAnswer: 'The Move',
+        question: 'Which artist recorded Only You?',
+        answers: ['Yazoo', 'Erasure', 'Alison Moyet', 'Soft Cell'],
+        correctAnswer: 'Yazoo',
         difficulty: 'Medium',
-        tags: ['1960s', 'pop', 'rock', 'british', 'songs'],
+        tags: ['1980s', 'synth-pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0477',
         category: 'Music',
-        question: 'Which artist recorded Jimmy Mack?',
-        answers: ['The Supremes', 'Martha and the Vandellas', 'The Marvelettes', 'The Velvelettes'],
-        correctAnswer: 'Martha and the Vandellas',
-        difficulty: 'Medium',
-        tags: ['1960s', 'motown', 'soul', 'songs'],
+        question: 'Which artist recorded A Little Respect?',
+        answers: ['Yazoo', 'Erasure', 'Pet Shop Boys', 'Bronski Beat'],
+        correctAnswer: 'Erasure',
+        difficulty: 'Easy',
+        tags: ['1980s', 'synth-pop', 'erasure', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0478',
         category: 'Music',
-        question: 'Which artist recorded My Cherie Amour?',
-        answers: ['Marvin Gaye', 'Stevie Wonder', 'Smokey Robinson', 'Four Tops'],
-        correctAnswer: 'Stevie Wonder',
-        difficulty: 'Easy',
-        tags: ['1960s', 'motown', 'soul', 'stevie wonder', 'songs'],
+        question: 'Which artist recorded Love Resurrection?',
+        answers: ['Alison Moyet', 'Yazoo', 'Annie Lennox', 'Erasure'],
+        correctAnswer: 'Alison Moyet',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0479',
         category: 'Music',
-        question: 'Which artist recorded Ain\'t Too Proud to Beg?',
-        answers: ['Four Tops', 'The Temptations', 'The Miracles', 'The Isley Brothers'],
-        correctAnswer: 'The Temptations',
-        difficulty: 'Medium',
-        tags: ['1960s', 'motown', 'soul', 'the temptations', 'songs'],
+        question: 'Which artist recorded West End Girls?',
+        answers: ['Erasure', 'Pet Shop Boys', 'Bronski Beat', 'Communards'],
+        correctAnswer: 'Pet Shop Boys',
+        difficulty: 'Easy',
+        tags: ['1980s', 'synth-pop', 'pet shop boys', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0480',
         category: 'Music',
-        question: 'Which artist recorded This Old Heart of Mine?',
-        answers: ['The Isley Brothers', 'Four Tops', 'The Temptations', 'The Miracles'],
-        correctAnswer: 'The Isley Brothers',
-        difficulty: 'Medium',
-        tags: ['1960s', 'motown', 'soul', 'the isley brothers', 'songs'],
+        question: 'Which artist recorded It\'s a Sin?',
+        answers: ['Pet Shop Boys', 'Erasure', 'Communards', 'Bronski Beat'],
+        correctAnswer: 'Pet Shop Boys',
+        difficulty: 'Easy',
+        tags: ['1980s', 'synth-pop', 'pet shop boys', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0481',
         category: 'Music',
-        question: 'Which artist recorded Band of Gold?',
-        answers: ['Freda Payne', 'Diana Ross', 'Gladys Knight', 'Aretha Franklin'],
-        correctAnswer: 'Freda Payne',
+        question: 'Which artist recorded Don\'t Leave Me This Way?',
+        answers: ['Bronski Beat', 'Communards', 'Erasure', 'Pet Shop Boys'],
+        correctAnswer: 'Communards',
         difficulty: 'Medium',
-        tags: ['1970s', 'soul', 'pop', 'songs'],
+        tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0482',
         category: 'Music',
-        question: 'Which artist recorded Rock Your Baby?',
-        answers: ['George McCrae', 'Barry White', 'Billy Ocean', 'George Benson'],
-        correctAnswer: 'George McCrae',
-        difficulty: 'Medium',
-        tags: ['1970s', 'disco', 'soul', 'songs'],
+        question: 'Which artist recorded Relax?',
+        answers: ['Frankie Goes to Hollywood', 'Duran Duran', 'Spandau Ballet', 'Culture Club'],
+        correctAnswer: 'Frankie Goes to Hollywood',
+        difficulty: 'Easy',
+        tags: ['1980s', 'pop', 'frankie goes to hollywood', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0483',
         category: 'Music',
-        question: 'Which artist recorded All the Young Dudes?',
-        answers: ['Mott the Hoople', 'David Bowie', 'T. Rex', 'Slade'],
-        correctAnswer: 'Mott the Hoople',
+        question: 'Which artist recorded Two Tribes?',
+        answers: ['Duran Duran', 'Frankie Goes to Hollywood', 'Culture Club', 'Spandau Ballet'],
+        correctAnswer: 'Frankie Goes to Hollywood',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'rock', 'songs'],
+        tags: ['1980s', 'pop', 'frankie goes to hollywood', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0484',
         category: 'Music',
-        question: 'Which artist recorded Virginia Plain?',
-        answers: ['Roxy Music', 'David Bowie', 'T. Rex', 'Mott the Hoople'],
-        correctAnswer: 'Roxy Music',
-        difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'roxy music', 'songs'],
+        question: 'Which artist recorded Gold?',
+        answers: ['Culture Club', 'Duran Duran', 'Spandau Ballet', 'Frankie Goes to Hollywood'],
+        correctAnswer: 'Spandau Ballet',
+        difficulty: 'Easy',
+        tags: ['1980s', 'pop', 'spandau ballet', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0485',
         category: 'Music',
-        question: 'Which artist recorded Love Is the Drug?',
-        answers: ['Roxy Music', '10cc', 'Sweet', 'Sparks'],
-        correctAnswer: 'Roxy Music',
+        question: 'Which artist recorded Karma Chameleon?',
+        answers: ['Duran Duran', 'Culture Club', 'Spandau Ballet', 'Wham!'],
+        correctAnswer: 'Culture Club',
         difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'glam rock', 'roxy music', 'songs'],
+        tags: ['1980s', 'pop', 'culture club', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0486',
         category: 'Music',
-        question: 'Which artist recorded This Town Ain\'t Big Enough for Both of Us?',
-        answers: ['Sparks', 'Roxy Music', 'Sweet', '10cc'],
-        correctAnswer: 'Sparks',
-        difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'pop', 'songs'],
+        question: 'Which artist recorded Club Tropicana?',
+        answers: ['Culture Club', 'Wham!', 'Duran Duran', 'Spandau Ballet'],
+        correctAnswer: 'Wham!',
+        difficulty: 'Easy',
+        tags: ['1980s', 'pop', 'wham', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0487',
         category: 'Music',
-        question: 'Which artist recorded Co-Co?',
-        answers: ['Mud', 'Sweet', 'Slade', 'T. Rex'],
-        correctAnswer: 'Sweet',
+        question: 'Which artist recorded The Look of Love?',
+        answers: ['ABC', 'Spandau Ballet', 'Duran Duran', 'Culture Club'],
+        correctAnswer: 'ABC',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'sweet', 'songs'],
+        tags: ['1980s', 'pop', 'abc', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0488',
         category: 'Music',
-        question: 'Which artist recorded Merry Xmas Everybody?',
-        answers: ['Mud', 'Slade', 'Sweet', 'Wizzard'],
-        correctAnswer: 'Slade',
-        difficulty: 'Easy',
-        tags: ['1970s', 'glam rock', 'christmas', 'slade', 'songs'],
+        question: 'Which artist recorded Too Shy?',
+        answers: ['Kajagoogoo', 'Duran Duran', 'A Flock of Seagulls', 'Thompson Twins'],
+        correctAnswer: 'Kajagoogoo',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0489',
         category: 'Music',
-        question: 'Which artist recorded I Wish It Could Be Christmas Everyday?',
-        answers: ['Slade', 'Wizzard', 'Mud', 'Sweet'],
-        correctAnswer: 'Wizzard',
-        difficulty: 'Easy',
-        tags: ['1970s', 'glam rock', 'christmas', 'songs'],
+        question: 'Which artist recorded I Ran (So Far Away)?',
+        answers: ['Kajagoogoo', 'A Flock of Seagulls', 'Thompson Twins', 'Talk Talk'],
+        correctAnswer: 'A Flock of Seagulls',
+        difficulty: 'Medium',
+        tags: ['1980s', 'new wave', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0490',
         category: 'Music',
-        question: 'Which artist recorded Can the Can?',
-        answers: ['Suzi Quatro', 'Sweet', 'Mud', 'Slade'],
-        correctAnswer: 'Suzi Quatro',
+        question: 'Which artist recorded Hold Me Now?',
+        answers: ['A Flock of Seagulls', 'Thompson Twins', 'Talk Talk', 'Kajagoogoo'],
+        correctAnswer: 'Thompson Twins',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'suzi quatro', 'songs'],
+        tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0491',
         category: 'Music',
-        question: 'Which artist recorded 48 Crash?',
-        answers: ['Suzi Quatro', 'Mud', 'Sweet', 'Slade'],
-        correctAnswer: 'Suzi Quatro',
+        question: 'Which artist recorded Life\'s What You Make It?',
+        answers: ['Talk Talk', 'Thompson Twins', 'Tears for Fears', 'Simple Minds'],
+        correctAnswer: 'Talk Talk',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'suzi quatro', 'songs'],
+        tags: ['1980s', 'new wave', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0492',
         category: 'Music',
-        question: 'Which artist recorded See My Baby Jive?',
-        answers: ['Wizzard', 'Mud', 'Sweet', 'Slade'],
-        correctAnswer: 'Wizzard',
-        difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'songs'],
+        question: 'Which artist recorded Shout?',
+        answers: ['Simple Minds', 'Tears for Fears', 'Talk Talk', 'INXS'],
+        correctAnswer: 'Tears for Fears',
+        difficulty: 'Easy',
+        tags: ['1980s', 'pop', 'tears for fears', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0493',
         category: 'Music',
-        question: 'Which artist recorded Rock On?',
-        answers: ['David Essex', 'Alvin Stardust', 'Leo Sayer', 'David Cassidy'],
-        correctAnswer: 'David Essex',
+        question: 'Which artist recorded Alive and Kicking?',
+        answers: ['Tears for Fears', 'Simple Minds', 'INXS', 'U2'],
+        correctAnswer: 'Simple Minds',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'pop', 'david essex', 'songs'],
+        tags: ['1980s', 'rock', 'simple minds', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0494',
         category: 'Music',
-        question: 'Which artist recorded Hold Me Close?',
-        answers: ['David Essex', 'Leo Sayer', 'Alvin Stardust', 'David Cassidy'],
-        correctAnswer: 'David Essex',
+        question: 'Which artist recorded New Sensation?',
+        answers: ['Simple Minds', 'INXS', 'U2', 'Talk Talk'],
+        correctAnswer: 'INXS',
         difficulty: 'Medium',
-        tags: ['1970s', 'pop', 'david essex', 'songs'],
+        tags: ['1980s', 'rock', 'inxs', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0495',
         category: 'Music',
-        question: 'Which artist recorded Don\'t Go Breaking My Heart with Kiki Dee?',
-        answers: ['Elton John', 'Billy Joel', 'Rod Stewart', 'Leo Sayer'],
-        correctAnswer: 'Elton John',
+        question: 'Which artist recorded Pride (In the Name of Love)?',
+        answers: ['INXS', 'U2', 'Simple Minds', 'The Alarm'],
+        correctAnswer: 'U2',
         difficulty: 'Easy',
-        tags: ['1970s', 'pop', 'elton john', 'duets', 'songs'],
+        tags: ['1980s', 'rock', 'u2', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0496',
         category: 'Music',
-        question: 'Which artist recorded Young Americans?',
-        answers: ['David Bowie', 'Roxy Music', 'Elton John', 'Lou Reed'],
-        correctAnswer: 'David Bowie',
+        question: 'Which artist recorded The Whole of the Moon?',
+        answers: ['The Waterboys', 'The Alarm', 'Big Country', 'Simple Minds'],
+        correctAnswer: 'The Waterboys',
         difficulty: 'Medium',
-        tags: ['1970s', 'rock', 'david bowie', 'songs'],
+        tags: ['1980s', 'rock', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0497',
         category: 'Music',
-        question: 'Which artist recorded Golden Years?',
-        answers: ['David Bowie', 'Elton John', 'Roxy Music', 'T. Rex'],
-        correctAnswer: 'David Bowie',
+        question: 'Which artist recorded In a Big Country?',
+        answers: ['The Alarm', 'Big Country', 'The Waterboys', 'Simple Minds'],
+        correctAnswer: 'Big Country',
         difficulty: 'Medium',
-        tags: ['1970s', 'rock', 'david bowie', 'songs'],
+        tags: ['1980s', 'rock', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0498',
         category: 'Music',
-        question: 'Which artist recorded Don\'t Stop Me Now?',
-        answers: ['Queen', 'Electric Light Orchestra', '10cc', 'Supertramp'],
-        correctAnswer: 'Queen',
-        difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'queen', 'songs'],
+        question: 'Which artist recorded Rain in the Summertime?',
+        answers: ['Big Country', 'The Alarm', 'The Waterboys', 'U2'],
+        correctAnswer: 'The Alarm',
+        difficulty: 'Hard',
+        tags: ['1980s', 'rock', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0499',
         category: 'Music',
-        question: 'Which artist recorded Fat Bottomed Girls?',
-        answers: ['Queen', 'Electric Light Orchestra', 'Status Quo', 'Thin Lizzy'],
-        correctAnswer: 'Queen',
-        difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'queen', 'songs'],
+        question: 'Which artist recorded The Cutter?',
+        answers: ['Echo & the Bunnymen', 'The Teardrop Explodes', 'The Psychedelic Furs', 'The Cure'],
+        correctAnswer: 'Echo & the Bunnymen',
+        difficulty: 'Medium',
+        tags: ['1980s', 'alternative', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0500',
         category: 'Music',
-        question: 'Which artist recorded Mr. Blue Sky?',
-        answers: ['Electric Light Orchestra', '10cc', 'Supertramp', 'Queen'],
-        correctAnswer: 'Electric Light Orchestra',
-        difficulty: 'Easy',
-        tags: ['1970s', 'pop', 'rock', 'electric light orchestra', 'songs'],
+        question: 'Which artist recorded Reward?',
+        answers: ['Echo & the Bunnymen', 'The Teardrop Explodes', 'The Psychedelic Furs', 'The Cure'],
+        correctAnswer: 'The Teardrop Explodes',
+        difficulty: 'Hard',
+        tags: ['1980s', 'alternative', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0501',
         category: 'Music',
-        question: 'Which artist recorded Livin\' Thing?',
-        answers: ['10cc', 'Electric Light Orchestra', 'Supertramp', 'Queen'],
-        correctAnswer: 'Electric Light Orchestra',
+        question: 'Which artist recorded Pretty in Pink?',
+        answers: ['The Cure', 'The Psychedelic Furs', 'Echo & the Bunnymen', 'The Smiths'],
+        correctAnswer: 'The Psychedelic Furs',
         difficulty: 'Medium',
-        tags: ['1970s', 'pop', 'rock', 'electric light orchestra', 'songs'],
+        tags: ['1980s', 'alternative', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0502',
         category: 'Music',
-        question: 'Which artist recorded I\'m Not in Love?',
-        answers: ['10cc', 'Supertramp', 'Electric Light Orchestra', 'Roxy Music'],
-        correctAnswer: '10cc',
-        difficulty: 'Easy',
-        tags: ['1970s', 'pop', 'rock', '10cc', 'songs'],
+        question: 'Which artist recorded The Lovecats?',
+        answers: ['The Smiths', 'Echo & the Bunnymen', 'The Cure', 'The Psychedelic Furs'],
+        correctAnswer: 'The Cure',
+        difficulty: 'Medium',
+        tags: ['1980s', 'alternative', 'the cure', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0503',
         category: 'Music',
-        question: 'Which artist recorded The Logical Song?',
-        answers: ['10cc', 'Supertramp', 'Electric Light Orchestra', 'Genesis'],
-        correctAnswer: 'Supertramp',
+        question: 'Which artist recorded This Charming Man?',
+        answers: ['The Cure', 'The Smiths', 'Echo & the Bunnymen', 'New Order'],
+        correctAnswer: 'The Smiths',
         difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'supertramp', 'songs'],
+        tags: ['1980s', 'alternative', 'the smiths', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0504',
         category: 'Music',
-        question: 'Which artist recorded Don\'t Bring Me Down?',
-        answers: ['Electric Light Orchestra', 'Supertramp', '10cc', 'Foreigner'],
-        correctAnswer: 'Electric Light Orchestra',
-        difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'electric light orchestra', 'songs'],
+        question: 'Which artist recorded True Faith?',
+        answers: ['The Smiths', 'New Order', 'Joy Division', 'The Cure'],
+        correctAnswer: 'New Order',
+        difficulty: 'Medium',
+        tags: ['1980s', 'new wave', 'new order', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0505',
         category: 'Music',
-        question: 'Which artist recorded Y.M.C.A.?',
-        answers: ['Village People', 'Boney M.', 'Chic', 'KC and the Sunshine Band'],
-        correctAnswer: 'Village People',
-        difficulty: 'Easy',
-        tags: ['1970s', 'disco', 'village people', 'songs'],
+        question: 'Which artist recorded Atmosphere?',
+        answers: ['New Order', 'Joy Division', 'The Cure', 'The Smiths'],
+        correctAnswer: 'Joy Division',
+        difficulty: 'Medium',
+        tags: ['1980s', 'post-punk', 'joy division', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0506',
         category: 'Music',
-        question: 'Which artist recorded Daddy Cool?',
-        answers: ['Boney M.', 'Village People', 'Chic', 'Ottawan'],
-        correctAnswer: 'Boney M.',
-        difficulty: 'Easy',
-        tags: ['1970s', 'disco', 'boney m', 'songs'],
+        question: 'Which artist recorded Love Like Blood?',
+        answers: ['Killing Joke', 'The Cure', 'Siouxsie and the Banshees', 'Bauhaus'],
+        correctAnswer: 'Killing Joke',
+        difficulty: 'Hard',
+        tags: ['1980s', 'post-punk', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0507',
         category: 'Music',
-        question: 'Which artist recorded Boogie Wonderland?',
-        answers: ['Earth, Wind & Fire', 'Chic', 'Heatwave', 'Kool & the Gang'],
-        correctAnswer: 'Earth, Wind & Fire',
-        difficulty: 'Easy',
-        tags: ['1970s', 'disco', 'funk', 'earth wind & fire', 'songs'],
+        question: 'Which artist recorded Cities in Dust?',
+        answers: ['Killing Joke', 'Siouxsie and the Banshees', 'Bauhaus', 'The Cure'],
+        correctAnswer: 'Siouxsie and the Banshees',
+        difficulty: 'Medium',
+        tags: ['1980s', 'post-punk', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0508',
         category: 'Music',
-        question: 'Which artist recorded Ladies\' Night?',
-        answers: ['Kool & the Gang', 'Chic', 'Heatwave', 'Earth, Wind & Fire'],
-        correctAnswer: 'Kool & the Gang',
-        difficulty: 'Medium',
-        tags: ['1970s', 'disco', 'funk', 'kool & the gang', 'songs'],
+        question: 'Which artist recorded Bela Lugosi\'s Dead?',
+        answers: ['Siouxsie and the Banshees', 'Bauhaus', 'Killing Joke', 'The Sisters of Mercy'],
+        correctAnswer: 'Bauhaus',
+        difficulty: 'Hard',
+        tags: ['1970s', 'goth', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0509',
         category: 'Music',
-        question: 'Which artist recorded Ring My Bell?',
-        answers: ['Anita Ward', 'Donna Summer', 'Gloria Gaynor', 'Amii Stewart'],
-        correctAnswer: 'Anita Ward',
-        difficulty: 'Medium',
-        tags: ['1970s', 'disco', 'songs'],
+        question: 'Which artist recorded Temple of Love?',
+        answers: ['Bauhaus', 'The Sisters of Mercy', 'The Mission', 'Killing Joke'],
+        correctAnswer: 'The Sisters of Mercy',
+        difficulty: 'Hard',
+        tags: ['1980s', 'goth', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0510',
         category: 'Music',
-        question: 'Which artist recorded Knock on Wood in 1979?',
-        answers: ['Amii Stewart', 'Anita Ward', 'Donna Summer', 'Gloria Gaynor'],
-        correctAnswer: 'Amii Stewart',
-        difficulty: 'Medium',
-        tags: ['1970s', 'disco', 'songs'],
+        question: 'Which artist recorded Wasteland?',
+        answers: ['The Sisters of Mercy', 'The Mission', 'Bauhaus', 'The Cult'],
+        correctAnswer: 'The Mission',
+        difficulty: 'Hard',
+        tags: ['1980s', 'goth', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0511',
         category: 'Music',
-        question: 'Which artist recorded Video Killed the Radio Star?',
-        answers: ['The Buggles', 'The Cars', 'Blondie', 'The Knack'],
-        correctAnswer: 'The Buggles',
-        difficulty: 'Easy',
-        tags: ['1970s', 'new wave', 'pop', 'songs'],
+        question: 'Which artist recorded She Sells Sanctuary?',
+        answers: ['The Mission', 'The Cult', 'The Sisters of Mercy', 'Bauhaus'],
+        correctAnswer: 'The Cult',
+        difficulty: 'Medium',
+        tags: ['1980s', 'rock', 'the cult', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0512',
         category: 'Music',
-        question: 'Which artist recorded Oliver\'s Army?',
-        answers: ['Elvis Costello and the Attractions', 'The Jam', 'The Clash', 'Squeeze'],
-        correctAnswer: 'Elvis Costello and the Attractions',
+        question: 'Which artist recorded Love Removal Machine?',
+        answers: ['The Cult', 'The Mission', 'The Sisters of Mercy', 'The Cure'],
+        correctAnswer: 'The Cult',
         difficulty: 'Medium',
-        tags: ['1970s', 'new wave', 'british', 'elvis costello', 'songs'],
+        tags: ['1980s', 'rock', 'the cult', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0513',
         category: 'Music',
-        question: 'Which artist recorded Cool for Cats?',
-        answers: ['Squeeze', 'The Jam', 'The Police', 'Elvis Costello and the Attractions'],
-        correctAnswer: 'Squeeze',
-        difficulty: 'Medium',
-        tags: ['1970s', 'new wave', 'british', 'squeeze', 'songs'],
+        question: 'Which artist recorded Rebel Yell?',
+        answers: ['Billy Idol', 'The Cult', 'INXS', 'Simple Minds'],
+        correctAnswer: 'Billy Idol',
+        difficulty: 'Easy',
+        tags: ['1980s', 'rock', 'billy idol', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0514',
         category: 'Music',
-        question: 'Which artist recorded Peaches?',
-        answers: ['The Stranglers', 'The Clash', 'The Jam', 'Buzzcocks'],
-        correctAnswer: 'The Stranglers',
-        difficulty: 'Medium',
-        tags: ['1970s', 'punk', 'new wave', 'the stranglers', 'songs'],
+        question: 'Which artist recorded White Wedding?',
+        answers: ['The Cult', 'Billy Idol', 'INXS', 'The Alarm'],
+        correctAnswer: 'Billy Idol',
+        difficulty: 'Easy',
+        tags: ['1980s', 'rock', 'billy idol', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0515',
         category: 'Music',
-        question: 'Which artist recorded Should I Stay or Should I Go?',
-        answers: ['The Clash', 'The Jam', 'The Stranglers', 'The Police'],
-        correctAnswer: 'The Clash',
+        question: 'Which artist recorded Kids in America?',
+        answers: ['Kim Wilde', 'Toyah', 'Hazel O\'Connor', 'Altered Images'],
+        correctAnswer: 'Kim Wilde',
         difficulty: 'Easy',
-        tags: ['1980s', 'punk', 'rock', 'the clash', 'songs'],
+        tags: ['1980s', 'pop', 'kim wilde', 'songs'],
         dailyEligible: true
     },
 
@@ -552,21 +547,21 @@ const questions = [
         id: 'music_0516',
         category: 'Music',
         question: 'Which artist recorded Mirror in the Bathroom?',
-        answers: ['The Beat', 'The Specials', 'Madness', 'Bad Manners'],
+        answers: ['The Beat', 'The Specials', 'Madness', 'The Selecter'],
         correctAnswer: 'The Beat',
         difficulty: 'Medium',
-        tags: ['1980s', 'ska', 'british', 'the beat', 'songs'],
+        tags: ['1980s', 'ska', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0517',
         category: 'Music',
-        question: 'Which artist recorded Lip Up Fatty?',
-        answers: ['Bad Manners', 'Madness', 'The Beat', 'The Specials'],
-        correctAnswer: 'Bad Manners',
+        question: 'Which artist recorded On My Radio?',
+        answers: ['The Beat', 'The Selecter', 'The Specials', 'Madness'],
+        correctAnswer: 'The Selecter',
         difficulty: 'Medium',
-        tags: ['1980s', 'ska', 'british', 'bad manners', 'songs'],
+        tags: ['1970s', 'ska', 'songs'],
         dailyEligible: true
     },
 
@@ -574,7 +569,7 @@ const questions = [
         id: 'music_0518',
         category: 'Music',
         question: 'Which artist recorded One Step Beyond?',
-        answers: ['Madness', 'The Specials', 'Bad Manners', 'The Beat'],
+        answers: ['The Specials', 'Madness', 'The Beat', 'The Selecter'],
         correctAnswer: 'Madness',
         difficulty: 'Easy',
         tags: ['1970s', 'ska', 'madness', 'songs'],
@@ -584,33 +579,33 @@ const questions = [
     {
         id: 'music_0519',
         category: 'Music',
-        question: 'Which artist recorded Driving in My Car?',
-        answers: ['Madness', 'The Specials', 'The Beat', 'Bad Manners'],
-        correctAnswer: 'Madness',
-        difficulty: 'Medium',
-        tags: ['1980s', 'ska', 'pop', 'madness', 'songs'],
+        question: 'Which artist recorded A Message to You Rudy?',
+        answers: ['Madness', 'The Specials', 'The Beat', 'The Selecter'],
+        correctAnswer: 'The Specials',
+        difficulty: 'Easy',
+        tags: ['1970s', 'ska', 'the specials', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0520',
         category: 'Music',
-        question: 'Which artist recorded Love Plus One?',
-        answers: ['Haircut 100', 'ABC', 'Spandau Ballet', 'Duran Duran'],
-        correctAnswer: 'Haircut 100',
+        question: 'Which artist recorded Too Much Too Young?',
+        answers: ['The Specials', 'Madness', 'The Beat', 'The Selecter'],
+        correctAnswer: 'The Specials',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'new wave', 'haircut 100', 'songs'],
+        tags: ['1980s', 'ska', 'the specials', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0521',
         category: 'Music',
-        question: 'Which artist recorded Reward?',
-        answers: ['The Teardrop Explodes', 'Echo & the Bunnymen', 'The Cure', 'The Psychedelic Furs'],
-        correctAnswer: 'The Teardrop Explodes',
-        difficulty: 'Medium',
-        tags: ['1980s', 'new wave', 'british', 'songs'],
+        question: 'Which artist recorded Baggy Trousers?',
+        answers: ['The Specials', 'Madness', 'The Beat', 'Bad Manners'],
+        correctAnswer: 'Madness',
+        difficulty: 'Easy',
+        tags: ['1980s', 'ska', 'madness', 'songs'],
         dailyEligible: true
     },
 
@@ -618,149 +613,160 @@ const questions = [
         id: 'music_0522',
         category: 'Music',
         question: 'Which artist recorded Geno?',
-        answers: ['Dexys Midnight Runners', 'The Specials', 'The Beat', 'Madness'],
+        answers: ['Dexys Midnight Runners', 'The Beat', 'Madness', 'The Specials'],
         correctAnswer: 'Dexys Midnight Runners',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'soul', 'dexys midnight runners', 'songs'],
+        tags: ['1980s', 'pop', 'dexys midnight runners', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0523',
         category: 'Music',
-        question: 'Which artist recorded Poison Arrow?',
-        answers: ['ABC', 'Duran Duran', 'Spandau Ballet', 'Heaven 17'],
-        correctAnswer: 'ABC',
-        difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'new wave', 'abc', 'songs'],
+        question: 'Which artist recorded Jackie Wilson Said (I\'m in Heaven When You Smile)?',
+        answers: ['Dexys Midnight Runners', 'Van Morrison', 'The Beat', 'Madness'],
+        correctAnswer: 'Dexys Midnight Runners',
+        difficulty: 'Hard',
+        tags: ['1980s', 'pop', 'dexys midnight runners', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0524',
         category: 'Music',
-        question: 'Which artist recorded Don\'t Go?',
-        answers: ['Yazoo', 'Erasure', 'Depeche Mode', 'The Human League'],
-        correctAnswer: 'Yazoo',
-        difficulty: 'Medium',
-        tags: ['1980s', 'synth-pop', 'yazoo', 'songs'],
+        question: 'Which artist recorded Our House?',
+        answers: ['Madness', 'The Specials', 'The Beat', 'Dexys Midnight Runners'],
+        correctAnswer: 'Madness',
+        difficulty: 'Easy',
+        tags: ['1980s', 'pop', 'ska', 'madness', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0525',
         category: 'Music',
-        question: 'Which artist recorded A Little Respect?',
-        answers: ['Erasure', 'Pet Shop Boys', 'Yazoo', 'Depeche Mode'],
-        correctAnswer: 'Erasure',
+        question: 'Which artist recorded Town Called Malice?',
+        answers: ['The Jam', 'The Clash', 'The Specials', 'Madness'],
+        correctAnswer: 'The Jam',
         difficulty: 'Easy',
-        tags: ['1980s', 'synth-pop', 'erasure', 'songs'],
+        tags: ['1980s', 'rock', 'the jam', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0526',
         category: 'Music',
-        question: 'Which artist recorded Sometimes?',
-        answers: ['Erasure', 'Pet Shop Boys', 'Depeche Mode', 'Yazoo'],
-        correctAnswer: 'Erasure',
+        question: 'Which artist recorded Start!?',
+        answers: ['The Jam', 'The Clash', 'The Who', 'The Style Council'],
+        correctAnswer: 'The Jam',
         difficulty: 'Medium',
-        tags: ['1980s', 'synth-pop', 'erasure', 'songs'],
+        tags: ['1980s', 'rock', 'the jam', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0527',
         category: 'Music',
-        question: 'Which artist recorded West End Girls?',
-        answers: ['Pet Shop Boys', 'Erasure', 'Depeche Mode', 'New Order'],
-        correctAnswer: 'Pet Shop Boys',
-        difficulty: 'Easy',
-        tags: ['1980s', 'synth-pop', 'pet shop boys', 'songs'],
+        question: 'Which artist recorded Shout to the Top!?',
+        answers: ['The Style Council', 'The Jam', 'Dexys Midnight Runners', 'The Blow Monkeys'],
+        correctAnswer: 'The Style Council',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0528',
         category: 'Music',
-        question: 'Which artist recorded It\'s a Sin?',
-        answers: ['Pet Shop Boys', 'Erasure', 'New Order', 'Depeche Mode'],
-        correctAnswer: 'Pet Shop Boys',
-        difficulty: 'Easy',
-        tags: ['1980s', 'synth-pop', 'pet shop boys', 'songs'],
+        question: 'Which artist recorded Digging Your Scene?',
+        answers: ['The Style Council', 'The Blow Monkeys', 'Curiosity Killed the Cat', 'Johnny Hates Jazz'],
+        correctAnswer: 'The Blow Monkeys',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0529',
         category: 'Music',
-        question: 'Which artist recorded Blue Monday?',
-        answers: ['New Order', 'Depeche Mode', 'Pet Shop Boys', 'The Cure'],
-        correctAnswer: 'New Order',
-        difficulty: 'Easy',
-        tags: ['1980s', 'new wave', 'electronic', 'new order', 'songs'],
+        question: 'Which artist recorded Down to Earth?',
+        answers: ['Curiosity Killed the Cat', 'The Blow Monkeys', 'Johnny Hates Jazz', 'Living in a Box'],
+        correctAnswer: 'Curiosity Killed the Cat',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0530',
         category: 'Music',
-        question: 'Which artist recorded Just Like Heaven?',
-        answers: ['The Cure', 'New Order', 'The Smiths', 'Echo & the Bunnymen'],
-        correctAnswer: 'The Cure',
+        question: 'Which artist recorded Shattered Dreams?',
+        answers: ['Living in a Box', 'Johnny Hates Jazz', 'Curiosity Killed the Cat', 'The Blow Monkeys'],
+        correctAnswer: 'Johnny Hates Jazz',
         difficulty: 'Medium',
-        tags: ['1980s', 'alternative', 'the cure', 'songs'],
+        tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0531',
         category: 'Music',
-        question: 'Which artist recorded There Is a Light That Never Goes Out?',
-        answers: ['The Smiths', 'The Cure', 'New Order', 'Echo & the Bunnymen'],
-        correctAnswer: 'The Smiths',
+        question: 'Which artist recorded Living in a Box?',
+        answers: ['Johnny Hates Jazz', 'Living in a Box', 'Curiosity Killed the Cat', 'The Blow Monkeys'],
+        correctAnswer: 'Living in a Box',
         difficulty: 'Medium',
-        tags: ['1980s', 'alternative', 'the smiths', 'songs'],
+        tags: ['1980s', 'pop', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0532',
         category: 'Music',
-        question: 'Which artist recorded Sweet Dreams (Are Made of This)?',
-        answers: ['Eurythmics', 'Yazoo', 'The Human League', 'Berlin'],
-        correctAnswer: 'Eurythmics',
-        difficulty: 'Easy',
-        tags: ['1980s', 'synth-pop', 'eurythmics', 'songs'],
+        question: 'Which artist recorded The Sun Always Shines on T.V.?',
+        answers: ['A-ha', 'Alphaville', 'Europe', 'Cutting Crew'],
+        correctAnswer: 'A-ha',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'a-ha', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0533',
         category: 'Music',
-        question: 'Which artist recorded Thorn in My Side?',
-        answers: ['Eurythmics', 'The Pretenders', 'Heart', 'T\'Pau'],
-        correctAnswer: 'Eurythmics',
-        difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'eurythmics', 'songs'],
+        question: 'Which artist recorded The Final Countdown?',
+        answers: ['A-ha', 'Europe', 'Bon Jovi', 'Cutting Crew'],
+        correctAnswer: 'Europe',
+        difficulty: 'Easy',
+        tags: ['1980s', 'rock', 'europe', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0534',
         category: 'Music',
-        question: 'Which artist recorded The Power of Love in 1985?',
-        answers: ['Huey Lewis and the News', 'Starship', 'Foreigner', 'REO Speedwagon'],
-        correctAnswer: 'Huey Lewis and the News',
+        question: 'Which artist recorded (I Just) Died in Your Arms?',
+        answers: ['Europe', 'Cutting Crew', 'Foreigner', 'Mr. Mister'],
+        correctAnswer: 'Cutting Crew',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'rock', 'songs'],
+        tags: ['1980s', 'rock', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0535',
         category: 'Music',
-        question: 'Which artist recorded We Don\'t Need Another Hero?',
+        question: 'Which artist recorded Broken Wings?',
+        answers: ['Cutting Crew', 'Mr. Mister', 'Foreigner', 'Toto'],
+        correctAnswer: 'Mr. Mister',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'rock', 'songs'],
+        dailyEligible: true
+    },
+
+    {
+        id: 'music_0536',
+        category: 'Music',
+        question: 'Which artist recorded Private Dancer?',
         answers: ['Tina Turner', 'Cher', 'Bonnie Tyler', 'Pat Benatar'],
         correctAnswer: 'Tina Turner',
         difficulty: 'Easy',
@@ -769,79 +775,68 @@ const questions = [
     },
 
     {
-        id: 'music_0536',
-        category: 'Music',
-        question: 'Which artist recorded What\'s Love Got to Do with It?',
-        answers: ['Tina Turner', 'Cher', 'Whitney Houston', 'Pat Benatar'],
-        correctAnswer: 'Tina Turner',
-        difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'tina turner', 'songs'],
-        dailyEligible: true
-    },
-
-    {
         id: 'music_0537',
         category: 'Music',
-        question: 'Which artist recorded Love Is a Battlefield?',
-        answers: ['Pat Benatar', 'Heart', 'Bonnie Tyler', 'Tina Turner'],
-        correctAnswer: 'Pat Benatar',
-        difficulty: 'Medium',
-        tags: ['1980s', 'rock', 'pat benatar', 'songs'],
+        question: 'Which artist recorded Total Eclipse of the Heart?',
+        answers: ['Tina Turner', 'Bonnie Tyler', 'Cher', 'Pat Benatar'],
+        correctAnswer: 'Bonnie Tyler',
+        difficulty: 'Easy',
+        tags: ['1980s', 'pop', 'rock', 'bonnie tyler', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0538',
         category: 'Music',
-        question: 'Which artist recorded Here I Go Again?',
-        answers: ['Whitesnake', 'Bon Jovi', 'Def Leppard', 'Europe'],
-        correctAnswer: 'Whitesnake',
-        difficulty: 'Easy',
-        tags: ['1980s', 'rock', 'whitesnake', 'songs'],
+        question: 'Which artist recorded Love Is a Battlefield?',
+        answers: ['Bonnie Tyler', 'Pat Benatar', 'Tina Turner', 'Heart'],
+        correctAnswer: 'Pat Benatar',
+        difficulty: 'Medium',
+        tags: ['1980s', 'rock', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0539',
         category: 'Music',
-        question: 'Which artist recorded You Give Love a Bad Name?',
-        answers: ['Bon Jovi', 'Def Leppard', 'Whitesnake', 'Europe'],
-        correctAnswer: 'Bon Jovi',
-        difficulty: 'Easy',
-        tags: ['1980s', 'rock', 'bon jovi', 'songs'],
+        question: 'Which artist recorded These Dreams?',
+        answers: ['Pat Benatar', 'Heart', 'Starship', 'Berlin'],
+        correctAnswer: 'Heart',
+        difficulty: 'Medium',
+        tags: ['1980s', 'rock', 'heart', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0540',
         category: 'Music',
-        question: 'Which artist recorded Animal?',
-        answers: ['Def Leppard', 'Bon Jovi', 'Whitesnake', 'Europe'],
-        correctAnswer: 'Def Leppard',
-        difficulty: 'Medium',
-        tags: ['1980s', 'rock', 'def leppard', 'songs'],
+        question: 'Which artist recorded We Built This City?',
+        answers: ['Heart', 'Starship', 'Foreigner', 'REO Speedwagon'],
+        correctAnswer: 'Starship',
+        difficulty: 'Easy',
+        tags: ['1980s', 'rock', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0541',
         category: 'Music',
-        question: 'Which artist recorded Paradise City?',
-        answers: ['Guns N\' Roses', 'Bon Jovi', 'Aerosmith', 'Def Leppard'],
-        correctAnswer: 'Guns N\' Roses',
+        question: 'Which artist recorded I Want to Know What Love Is?',
+        answers: ['Starship', 'Foreigner', 'REO Speedwagon', 'Journey'],
+        correctAnswer: 'Foreigner',
         difficulty: 'Easy',
-        tags: ['1980s', 'rock', 'guns n roses', 'songs'],
+        tags: ['1980s', 'rock', 'foreigner', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0542',
         category: 'Music',
-        question: 'Which artist recorded Dude (Looks Like a Lady)?',
-        answers: ['Aerosmith', 'Guns N\' Roses', 'Bon Jovi', 'Van Halen'],
-        correctAnswer: 'Aerosmith',
+        question: 'Which artist recorded Keep on Loving You?',
+        answers: ['Foreigner', 'REO Speedwagon', 'Journey', 'Toto'],
+        correctAnswer: 'REO Speedwagon',
         difficulty: 'Medium',
-        tags: ['1980s', 'rock', 'aerosmith', 'songs'],
+        tags: ['1980s', 'rock', 'songs'],
         dailyEligible: true
     },
 
@@ -851,7 +846,7 @@ const questions = [
         question: 'Which artist recorded Kayleigh?',
         answers: ['Marillion', 'Genesis', 'Yes', 'Asia'],
         correctAnswer: 'Marillion',
-        difficulty: 'Medium',
+        difficulty: 'Easy',
         tags: ['1980s', 'rock', 'marillion', 'songs'],
         dailyEligible: true
     },
@@ -859,52 +854,118 @@ const questions = [
     {
         id: 'music_0544',
         category: 'Music',
-        question: 'Which artist recorded Real Gone Kid?',
-        answers: ['Deacon Blue', 'Wet Wet Wet', 'Simple Minds', 'Del Amitri'],
-        correctAnswer: 'Deacon Blue',
-        difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'rock', 'deacon blue', 'songs'],
+        question: 'Which artist recorded Invisible Touch?',
+        answers: ['Marillion', 'Genesis', 'Yes', 'Asia'],
+        correctAnswer: 'Genesis',
+        difficulty: 'Easy',
+        tags: ['1980s', 'rock', 'genesis', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0545',
         category: 'Music',
-        question: 'Which artist recorded Perfect?',
-        answers: ['Fairground Attraction', 'Texas', 'The Beautiful South', 'Deacon Blue'],
-        correctAnswer: 'Fairground Attraction',
+        question: 'Which artist recorded Owner of a Lonely Heart?',
+        answers: ['Genesis', 'Yes', 'Asia', 'Marillion'],
+        correctAnswer: 'Yes',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'british', 'songs'],
+        tags: ['1980s', 'rock', 'yes', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0546',
         category: 'Music',
-        question: 'Which artist recorded Good Thing?',
-        answers: ['Fine Young Cannibals', 'Simply Red', 'Curiosity Killed the Cat', 'Living in a Box'],
-        correctAnswer: 'Fine Young Cannibals',
+        question: 'Which artist recorded Heat of the Moment?',
+        answers: ['Yes', 'Asia', 'Genesis', 'Marillion'],
+        correctAnswer: 'Asia',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'british', 'songs'],
+        tags: ['1980s', 'rock', 'asia', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0547',
         category: 'Music',
-        question: 'Which artist recorded Holding Back the Years?',
-        answers: ['Simply Red', 'Fine Young Cannibals', 'Wet Wet Wet', 'Level 42'],
-        correctAnswer: 'Simply Red',
+        question: 'Which artist recorded Sledgehammer?',
+        answers: ['Peter Gabriel', 'Phil Collins', 'Genesis', 'Sting'],
+        correctAnswer: 'Peter Gabriel',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'soul', 'simply red', 'songs'],
+        tags: ['1980s', 'rock', 'peter gabriel', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0548',
         category: 'Music',
+        question: 'Which artist recorded In the Air Tonight?',
+        answers: ['Peter Gabriel', 'Phil Collins', 'Genesis', 'Sting'],
+        correctAnswer: 'Phil Collins',
+        difficulty: 'Easy',
+        tags: ['1980s', 'pop', 'rock', 'phil collins', 'songs'],
+        dailyEligible: true
+    },
+
+    {
+        id: 'music_0549',
+        category: 'Music',
+        question: 'Which artist recorded Englishman in New York?',
+        answers: ['Phil Collins', 'Sting', 'Peter Gabriel', 'George Michael'],
+        correctAnswer: 'Sting',
+        difficulty: 'Easy',
+        tags: ['1980s', 'pop', 'sting', 'songs'],
+        dailyEligible: true
+    },
+
+    {
+        id: 'music_0550',
+        category: 'Music',
+        question: 'Which artist recorded Father Figure?',
+        answers: ['Sting', 'George Michael', 'Phil Collins', 'Paul Young'],
+        correctAnswer: 'George Michael',
+        difficulty: 'Easy',
+        tags: ['1980s', 'pop', 'george michael', 'songs'],
+        dailyEligible: true
+    },
+
+    {
+        id: 'music_0551',
+        category: 'Music',
+        question: 'Which artist recorded Every Time You Go Away?',
+        answers: ['George Michael', 'Paul Young', 'Phil Collins', 'Sting'],
+        correctAnswer: 'Paul Young',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'paul young', 'songs'],
+        dailyEligible: true
+    },
+
+    {
+        id: 'music_0552',
+        category: 'Music',
+        question: 'Which artist recorded Wouldn\'t It Be Good?',
+        answers: ['Nik Kershaw', 'Howard Jones', 'Paul Young', 'Level 42'],
+        correctAnswer: 'Nik Kershaw',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'songs'],
+        dailyEligible: true
+    },
+
+    {
+        id: 'music_0553',
+        category: 'Music',
+        question: 'Which artist recorded What Is Love?',
+        answers: ['Nik Kershaw', 'Howard Jones', 'Level 42', 'Paul Young'],
+        correctAnswer: 'Howard Jones',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'songs'],
+        dailyEligible: true
+    },
+
+    {
+        id: 'music_0554',
+        category: 'Music',
         question: 'Which artist recorded Lessons in Love?',
-        answers: ['Level 42', 'Simply Red', 'Living in a Box', 'Johnny Hates Jazz'],
+        answers: ['Howard Jones', 'Level 42', 'Nik Kershaw', 'Paul Young'],
         correctAnswer: 'Level 42',
         difficulty: 'Medium',
         tags: ['1980s', 'pop', 'level 42', 'songs'],
@@ -912,200 +973,134 @@ const questions = [
     },
 
     {
-        id: 'music_0549',
-        category: 'Music',
-        question: 'Which artist recorded Shattered Dreams?',
-        answers: ['Johnny Hates Jazz', 'Level 42', 'Living in a Box', 'Curiosity Killed the Cat'],
-        correctAnswer: 'Johnny Hates Jazz',
-        difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'british', 'songs'],
-        dailyEligible: true
-    },
-
-    {
-        id: 'music_0550',
-        category: 'Music',
-        question: 'Which artist recorded Unbelievable?',
-        answers: ['EMF', 'Jesus Jones', 'The Farm', 'Happy Mondays'],
-        correctAnswer: 'EMF',
-        difficulty: 'Easy',
-        tags: ['1990s', 'alternative', 'dance', 'emf', 'songs'],
-        dailyEligible: true
-    },
-
-    {
-        id: 'music_0551',
-        category: 'Music',
-        question: 'Which artist recorded Right Here, Right Now?',
-        answers: ['Jesus Jones', 'EMF', 'The Farm', 'Inspiral Carpets'],
-        correctAnswer: 'Jesus Jones',
-        difficulty: 'Medium',
-        tags: ['1990s', 'alternative', 'british', 'songs'],
-        dailyEligible: true
-    },
-
-    {
-        id: 'music_0552',
-        category: 'Music',
-        question: 'Which artist recorded Groovy Train?',
-        answers: ['The Farm', 'Happy Mondays', 'Inspiral Carpets', 'James'],
-        correctAnswer: 'The Farm',
-        difficulty: 'Medium',
-        tags: ['1990s', 'alternative', 'british', 'songs'],
-        dailyEligible: true
-    },
-
-    {
-        id: 'music_0553',
-        category: 'Music',
-        question: 'Which artist recorded Sit Down?',
-        answers: ['James', 'The Farm', 'Happy Mondays', 'Inspiral Carpets'],
-        correctAnswer: 'James',
-        difficulty: 'Easy',
-        tags: ['1990s', 'alternative', 'british', 'james', 'songs'],
-        dailyEligible: true
-    },
-
-    {
-        id: 'music_0554',
-        category: 'Music',
-        question: 'Which artist recorded There She Goes?',
-        answers: ['The La\'s', 'James', 'The Charlatans', 'Inspiral Carpets'],
-        correctAnswer: 'The La\'s',
-        difficulty: 'Easy',
-        tags: ['1990s', 'indie', 'british', 'songs'],
-        dailyEligible: true
-    },
-
-    {
         id: 'music_0555',
         category: 'Music',
         question: 'Which artist recorded The Only One I Know?',
-        answers: ['The Charlatans', 'The La\'s', 'James', 'Inspiral Carpets'],
+        answers: ['The Charlatans', 'Inspiral Carpets', 'Happy Mondays', 'The Stone Roses'],
         correctAnswer: 'The Charlatans',
         difficulty: 'Medium',
-        tags: ['1990s', 'indie', 'british', 'the charlatans', 'songs'],
+        tags: ['1990s', 'indie', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0556',
         category: 'Music',
-        question: 'Which artist recorded Step On?',
-        answers: ['Happy Mondays', 'The Stone Roses', 'The Charlatans', 'Primal Scream'],
-        correctAnswer: 'Happy Mondays',
-        difficulty: 'Easy',
-        tags: ['1990s', 'alternative', 'dance', 'happy mondays', 'songs'],
+        question: 'Which artist recorded This Is How It Feels?',
+        answers: ['The Charlatans', 'Inspiral Carpets', 'Happy Mondays', 'The Stone Roses'],
+        correctAnswer: 'Inspiral Carpets',
+        difficulty: 'Medium',
+        tags: ['1990s', 'indie', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0557',
         category: 'Music',
-        question: 'Which artist recorded Loaded?',
-        answers: ['Primal Scream', 'Happy Mondays', 'The Stone Roses', 'The Charlatans'],
-        correctAnswer: 'Primal Scream',
-        difficulty: 'Medium',
-        tags: ['1990s', 'alternative', 'dance', 'primal scream', 'songs'],
+        question: 'Which artist recorded Step On?',
+        answers: ['Inspiral Carpets', 'Happy Mondays', 'The Charlatans', 'The Stone Roses'],
+        correctAnswer: 'Happy Mondays',
+        difficulty: 'Easy',
+        tags: ['1990s', 'indie', 'happy mondays', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0558',
         category: 'Music',
-        question: 'Which artist recorded Animal Nitrate?',
-        answers: ['Suede', 'Blur', 'Pulp', 'Manic Street Preachers'],
-        correctAnswer: 'Suede',
-        difficulty: 'Medium',
-        tags: ['1990s', 'britpop', 'suede', 'songs'],
+        question: 'Which artist recorded Fools Gold?',
+        answers: ['Happy Mondays', 'The Stone Roses', 'Inspiral Carpets', 'The Charlatans'],
+        correctAnswer: 'The Stone Roses',
+        difficulty: 'Easy',
+        tags: ['1980s', 'indie', 'the stone roses', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0559',
         category: 'Music',
-        question: 'Which artist recorded If You Tolerate This Your Children Will Be Next?',
-        answers: ['Manic Street Preachers', 'Suede', 'Stereophonics', 'The Verve'],
-        correctAnswer: 'Manic Street Preachers',
-        difficulty: 'Medium',
-        tags: ['1990s', 'rock', 'british', 'manic street preachers', 'songs'],
+        question: 'Which artist recorded Sit Down?',
+        answers: ['James', 'The Stone Roses', 'The Charlatans', 'Happy Mondays'],
+        correctAnswer: 'James',
+        difficulty: 'Easy',
+        tags: ['1990s', 'indie', 'james', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0560',
         category: 'Music',
-        question: 'Which artist recorded Stop?',
-        answers: ['Spice Girls', 'All Saints', 'B*Witched', 'Eternal'],
-        correctAnswer: 'Spice Girls',
+        question: 'Which artist recorded There She Goes?',
+        answers: ['James', 'The La\'s', 'The Stone Roses', 'The Charlatans'],
+        correctAnswer: 'The La\'s',
         difficulty: 'Easy',
-        tags: ['1990s', 'pop', 'spice girls', 'songs'],
+        tags: ['1980s', 'indie', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0561',
         category: 'Music',
-        question: 'Which artist recorded Pure Shores?',
-        answers: ['All Saints', 'Spice Girls', 'Sugababes', 'Atomic Kitten'],
-        correctAnswer: 'All Saints',
+        question: 'Which artist recorded Unbelievable?',
+        answers: ['EMF', 'Jesus Jones', 'The Farm', 'The Shamen'],
+        correctAnswer: 'EMF',
         difficulty: 'Easy',
-        tags: ['2000s', 'pop', 'all saints', 'songs'],
+        tags: ['1990s', 'alternative', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0562',
         category: 'Music',
-        question: 'Which artist recorded Freak Like Me?',
-        answers: ['Sugababes', 'All Saints', 'Girls Aloud', 'Atomic Kitten'],
-        correctAnswer: 'Sugababes',
+        question: 'Which artist recorded Right Here, Right Now?',
+        answers: ['EMF', 'Jesus Jones', 'The Farm', 'The Shamen'],
+        correctAnswer: 'Jesus Jones',
         difficulty: 'Medium',
-        tags: ['2000s', 'pop', 'sugababes', 'songs'],
+        tags: ['1990s', 'alternative', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0563',
         category: 'Music',
-        question: 'Which artist recorded Biology?',
-        answers: ['Girls Aloud', 'Sugababes', 'Atomic Kitten', 'The Saturdays'],
-        correctAnswer: 'Girls Aloud',
+        question: 'Which artist recorded All Together Now?',
+        answers: ['Jesus Jones', 'The Farm', 'EMF', 'The Shamen'],
+        correctAnswer: 'The Farm',
         difficulty: 'Medium',
-        tags: ['2000s', 'pop', 'girls aloud', 'songs'],
+        tags: ['1990s', 'indie', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0564',
         category: 'Music',
-        question: 'Which artist recorded Whole Again?',
-        answers: ['Atomic Kitten', 'Sugababes', 'Girls Aloud', 'All Saints'],
-        correctAnswer: 'Atomic Kitten',
-        difficulty: 'Easy',
-        tags: ['2000s', 'pop', 'atomic kitten', 'songs'],
+        question: 'Which artist recorded Ebeneezer Goode?',
+        answers: ['The Farm', 'The Shamen', 'EMF', 'KLF'],
+        correctAnswer: 'The Shamen',
+        difficulty: 'Medium',
+        tags: ['1990s', 'dance', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0565',
         category: 'Music',
-        question: 'Which artist recorded Before He Cheats?',
-        answers: ['Carrie Underwood', 'Faith Hill', 'Martina McBride', 'LeAnn Rimes'],
-        correctAnswer: 'Carrie Underwood',
-        difficulty: 'Easy',
-        tags: ['2000s', 'country', 'carrie underwood', 'songs'],
+        question: 'Which artist recorded 3 A.M. Eternal?',
+        answers: ['The Shamen', 'KLF', 'The Prodigy', 'Orbital'],
+        correctAnswer: 'KLF',
+        difficulty: 'Medium',
+        tags: ['1990s', 'dance', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0566',
         category: 'Music',
-        question: 'Which artist recorded The River?',
-        answers: ['Garth Brooks', 'Alan Jackson', 'Tim McGraw', 'George Strait'],
-        correctAnswer: 'Garth Brooks',
-        difficulty: 'Medium',
-        tags: ['1990s', 'country', 'garth brooks', 'songs'],
+        question: 'Which artist recorded Firestarter?',
+        answers: ['KLF', 'The Prodigy', 'The Chemical Brothers', 'Orbital'],
+        correctAnswer: 'The Prodigy',
+        difficulty: 'Easy',
+        tags: ['1990s', 'dance', 'the prodigy', 'songs'],
         dailyEligible: true
     }
 
