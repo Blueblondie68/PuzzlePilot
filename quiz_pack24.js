@@ -534,7 +534,7 @@ const questions = [
     {
         id: 'music_0515',
         category: 'Music',
-        question: 'Which artist recorded Chequered Love?',
+        question: 'Which artist recorded Water on Glass?',
         answers: ['Kim Wilde', 'Toyah', 'Hazel O\'Connor', 'Altered Images'],
         correctAnswer: 'Kim Wilde',
         difficulty: 'Medium',
@@ -600,8 +600,8 @@ const questions = [
     {
         id: 'music_0521',
         category: 'Music',
-        question: 'Which artist recorded Embarrassment?',
-        answers: ['The Specials', 'Madness', 'The Beat', 'Bad Manners'],
+        question: 'Which artist recorded Grey Day?',
+        answers: ['Madness', 'The Specials', 'The Beat', 'Bad Manners'],
         correctAnswer: 'Madness',
         difficulty: 'Medium',
         tags: ['1980s', 'ska', 'madness', 'songs'],
@@ -885,7 +885,7 @@ const questions = [
     {
         id: 'music_0547',
         category: 'Music',
-        question: 'Which artist recorded Big Time?',
+        question: 'Which artist recorded Games Without Frontiers?',
         answers: ['Peter Gabriel', 'Phil Collins', 'Genesis', 'Sting'],
         correctAnswer: 'Peter Gabriel',
         difficulty: 'Medium',
