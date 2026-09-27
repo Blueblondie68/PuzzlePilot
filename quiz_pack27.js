@@ -280,7 +280,7 @@ const questions = [
     {
         id: 'music_0791',
         category: 'Music',
-        question: 'Which artist recorded Year of the Cat?',
+        question: 'Which artist recorded On the Border?',
         answers: ['Al Stewart', 'Gerry Rafferty', 'Chris Rea', 'Leo Sayer'],
         correctAnswer: 'Al Stewart',
         difficulty: 'Medium',
@@ -386,7 +386,6 @@ const questions = [
         tags: ['1970s', 'pop', 'gilbert osullivan', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0801',
         category: 'Music',
@@ -434,7 +433,7 @@ const questions = [
     {
         id: 'music_0805',
         category: 'Music',
-        question: 'Which artist recorded Fox on the Run?',
+        question: 'Which artist recorded Action?',
         answers: ['Sweet', 'Slade', 'Mud', 'T. Rex'],
         correctAnswer: 'Sweet',
         difficulty: 'Easy',
@@ -445,7 +444,7 @@ const questions = [
     {
         id: 'music_0806',
         category: 'Music',
-        question: 'Which artist recorded Hot Love?',
+        question: 'Which artist recorded Jeepster?',
         answers: ['T. Rex', 'Sweet', 'Slade', 'Mud'],
         correctAnswer: 'T. Rex',
         difficulty: 'Easy',
@@ -460,7 +459,7 @@ const questions = [
     {
         id: 'music_0807',
         category: 'Music',
-        question: 'Which artist recorded Too Shy?',
+        question: 'Which artist recorded Big Apple?',
         answers: ['Kajagoogoo', 'Duran Duran', 'Spandau Ballet', 'A Flock of Seagulls'],
         correctAnswer: 'Kajagoogoo',
         difficulty: 'Easy',
@@ -471,7 +470,7 @@ const questions = [
     {
         id: 'music_0808',
         category: 'Music',
-        question: 'Which artist recorded I Ran (So Far Away)?',
+        question: 'Which artist recorded Wishing (If I Had a Photograph of You)?',
         answers: ['A Flock of Seagulls', 'Kajagoogoo', 'Talk Talk', 'Visage'],
         correctAnswer: 'A Flock of Seagulls',
         difficulty: 'Medium',
@@ -566,6 +565,7 @@ const questions = [
         tags: ['1980s', 'new wave', 'toyah', 'songs'],
         dailyEligible: true
     },
+
     {
         id: 'music_0817',
         category: 'Music',
@@ -580,18 +580,18 @@ const questions = [
     {
         id: 'music_0818',
         category: 'Music',
-        question: 'Which artist recorded Golden Brown?',
+        question: 'Which artist recorded Something Better Change?',
         answers: ['The Stranglers', 'The Cure', 'The Jam', 'The Psychedelic Furs'],
         correctAnswer: 'The Stranglers',
         difficulty: 'Easy',
-        tags: ['1980s', 'rock', 'new wave', 'the stranglers', 'songs'],
+        tags: ['1970s', 'rock', 'new wave', 'the stranglers', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0819',
         category: 'Music',
-        question: 'Which artist recorded Pretty in Pink?',
+        question: 'Which artist recorded Heaven?',
         answers: ['The Psychedelic Furs', 'The Cure', 'Echo & the Bunnymen', 'The Stranglers'],
         correctAnswer: 'The Psychedelic Furs',
         difficulty: 'Medium',
@@ -613,7 +613,7 @@ const questions = [
     {
         id: 'music_0821',
         category: 'Music',
-        question: 'Which artist recorded This Charming Man?',
+        question: 'Which artist recorded Bigmouth Strikes Again?',
         answers: ['The Smiths', 'The Cure', 'Echo & the Bunnymen', 'New Order'],
         correctAnswer: 'The Smiths',
         difficulty: 'Easy',
@@ -624,7 +624,7 @@ const questions = [
     {
         id: 'music_0822',
         category: 'Music',
-        question: 'Which artist recorded True Faith?',
+        question: 'Which artist recorded Bizarre Love Triangle?',
         answers: ['New Order', 'Depeche Mode', 'The Cure', 'Pet Shop Boys'],
         correctAnswer: 'New Order',
         difficulty: 'Medium',
@@ -756,7 +756,6 @@ const questions = [
         tags: ['1990s', 'dance', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0834',
         category: 'Music',
