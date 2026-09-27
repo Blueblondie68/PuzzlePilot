@@ -357,11 +357,11 @@ const questions = [
     {
         id: 'music_0598',
         category: 'Music',
-        question: 'Which artist recorded Lonely This Christmas?',
-        answers: ['Sweet', 'Mud', 'Slade', 'Bay City Rollers'],
+        question: 'Which artist recorded Rocket?',
+        answers: ['Mud', 'Sweet', 'Slade', 'T. Rex'],
         correctAnswer: 'Mud',
-        difficulty: 'Easy',
-        tags: ['1970s', 'pop', 'christmas', 'mud', 'songs'],
+        difficulty: 'Medium',
+        tags: ['1970s', 'glam rock', 'mud', 'songs'],
         dailyEligible: true
     },
 
@@ -375,12 +375,11 @@ const questions = [
         tags: ['1970s', 'glam rock', 'sweet', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0600',
         category: 'Music',
-        question: 'Which artist recorded Mama Weer All Crazee Now?',
-        answers: ['Sweet', 'Slade', 'Mud', 'T. Rex'],
+        question: 'Which artist recorded Gudbuy T Jane?',
+        answers: ['Slade', 'Sweet', 'Mud', 'T. Rex'],
         correctAnswer: 'Slade',
         difficulty: 'Medium',
         tags: ['1970s', 'glam rock', 'slade', 'songs'],
@@ -434,7 +433,7 @@ const questions = [
     {
         id: 'music_0605',
         category: 'Music',
-        question: 'Which artist recorded Make Me Smile (Come Up and See Me)?',
+        question: 'Which artist recorded Mr. Soft?',
         answers: ['Steve Harley & Cockney Rebel', 'Roxy Music', 'Mott the Hoople', '10cc'],
         correctAnswer: 'Steve Harley & Cockney Rebel',
         difficulty: 'Medium',
@@ -489,10 +488,10 @@ const questions = [
     {
         id: 'music_0610',
         category: 'Music',
-        question: 'Which artist recorded Heart of Glass?',
+        question: 'Which artist recorded Dreaming?',
         answers: ['Blondie', 'The Pretenders', 'The Police', 'The Cars'],
         correctAnswer: 'Blondie',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1970s', 'new wave', 'blondie', 'songs'],
         dailyEligible: true
     },
@@ -500,11 +499,11 @@ const questions = [
     {
         id: 'music_0611',
         category: 'Music',
-        question: 'Which artist recorded Brass in Pocket?',
+        question: 'Which artist recorded Talk of the Town?',
         answers: ['Blondie', 'The Pretenders', 'The Police', 'The Cars'],
         correctAnswer: 'The Pretenders',
-        difficulty: 'Easy',
-        tags: ['1970s', 'new wave', 'the pretenders', 'songs'],
+        difficulty: 'Medium',
+        tags: ['1980s', 'new wave', 'the pretenders', 'songs'],
         dailyEligible: true
     },
 
@@ -520,7 +519,7 @@ const questions = [
     },
 
     // =========================================================
-    // MUSIC - 1980s
+    // MUSIC - 1980s / 1990s
     // =========================================================
 
     {
@@ -559,13 +558,14 @@ const questions = [
     {
         id: 'music_0616',
         category: 'Music',
-        question: 'Which artist recorded What Is Love?',
+        question: 'Which artist recorded Life?',
         answers: ['Haddaway', 'Snap!', 'Dr. Alban', 'Corona'],
         correctAnswer: 'Haddaway',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'dance', 'haddaway', 'songs'],
         dailyEligible: true
     },
+
     {
         id: 'music_0617',
         category: 'Music',
@@ -591,44 +591,44 @@ const questions = [
     {
         id: 'music_0619',
         category: 'Music',
-        question: 'Which artist recorded The Rhythm of the Night?',
+        question: 'Which artist recorded Baby Baby?',
         answers: ['Corona', 'Snap!', 'Haddaway', 'Dr. Alban'],
         correctAnswer: 'Corona',
-        difficulty: 'Easy',
-        tags: ['1990s', 'dance', 'songs'],
+        difficulty: 'Medium',
+        tags: ['1990s', 'dance', 'corona', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0620',
         category: 'Music',
-        question: 'Which artist recorded Rhythm Is a Dancer?',
+        question: 'Which artist recorded The First the Last Eternity?',
         answers: ['Corona', 'Snap!', 'Haddaway', '2 Unlimited'],
         correctAnswer: 'Snap!',
-        difficulty: 'Easy',
-        tags: ['1990s', 'dance', 'songs'],
+        difficulty: 'Medium',
+        tags: ['1990s', 'dance', 'snap', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0621',
         category: 'Music',
-        question: 'Which artist recorded No Limit?',
+        question: 'Which artist recorded Tribal Dance?',
         answers: ['2 Unlimited', 'Snap!', 'Culture Beat', 'Technotronic'],
         correctAnswer: '2 Unlimited',
-        difficulty: 'Easy',
-        tags: ['1990s', 'dance', 'songs'],
+        difficulty: 'Medium',
+        tags: ['1990s', 'dance', '2 unlimited', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0622',
         category: 'Music',
-        question: 'Which artist recorded Mr. Vain?',
+        question: 'Which artist recorded Got to Get It?',
         answers: ['2 Unlimited', 'Culture Beat', 'Technotronic', 'Real McCoy'],
         correctAnswer: 'Culture Beat',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'culture beat', 'songs'],
         dailyEligible: true
     },
 
@@ -712,10 +712,10 @@ const questions = [
     {
         id: 'music_0630',
         category: 'Music',
-        question: 'Which artist recorded Insomnia?',
+        question: 'Which artist recorded God Is a DJ?',
         answers: ['Faithless', 'The Prodigy', 'Underworld', 'Orbital'],
         correctAnswer: 'Faithless',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'dance', 'faithless', 'songs'],
         dailyEligible: true
     },
@@ -723,11 +723,11 @@ const questions = [
     {
         id: 'music_0631',
         category: 'Music',
-        question: 'Which artist recorded Born Slippy .NUXX?',
+        question: 'Which artist recorded Cowgirl?',
         answers: ['Faithless', 'Underworld', 'Orbital', 'The Chemical Brothers'],
         correctAnswer: 'Underworld',
-        difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        difficulty: 'Hard',
+        tags: ['1990s', 'dance', 'underworld', 'songs'],
         dailyEligible: true
     },
 
@@ -741,15 +741,14 @@ const questions = [
         tags: ['1990s', 'dance', 'songs'],
         dailyEligible: true
     },
-
     {
         id: 'music_0633',
         category: 'Music',
-        question: 'Which artist recorded Block Rockin\' Beats?',
+        question: 'Which artist recorded Let Forever Be?',
         answers: ['Orbital', 'The Chemical Brothers', 'The Prodigy', 'Leftfield'],
         correctAnswer: 'The Chemical Brothers',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'the chemical brothers', 'songs'],
         dailyEligible: true
     },
 
@@ -877,7 +876,7 @@ const questions = [
     {
         id: 'music_0645',
         category: 'Music',
-        question: 'Which artist recorded Raspberry Beret?',
+        question: 'Which artist recorded I Could Never Take the Place of Your Man?',
         answers: ['Prince', 'Michael Jackson', 'George Michael', 'Lionel Richie'],
         correctAnswer: 'Prince',
         difficulty: 'Medium',
@@ -888,10 +887,10 @@ const questions = [
     {
         id: 'music_0646',
         category: 'Music',
-        question: 'Which artist recorded Man in the Mirror?',
+        question: 'Which artist recorded Another Part of Me?',
         answers: ['Prince', 'Michael Jackson', 'Lionel Richie', 'George Michael'],
         correctAnswer: 'Michael Jackson',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1980s', 'pop', 'michael jackson', 'songs'],
         dailyEligible: true
     },
@@ -1075,10 +1074,10 @@ const questions = [
     {
         id: 'music_0663',
         category: 'Music',
-        question: 'Which artist recorded Common People?',
+        question: 'Which artist recorded Do You Remember the First Time?',
         answers: ['Pulp', 'Blur', 'Suede', 'Supergrass'],
         correctAnswer: 'Pulp',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'britpop', 'pulp', 'songs'],
         dailyEligible: true
     },
@@ -1086,10 +1085,10 @@ const questions = [
     {
         id: 'music_0664',
         category: 'Music',
-        question: 'Which artist recorded Girls & Boys?',
+        question: 'Which artist recorded Beetlebum?',
         answers: ['Pulp', 'Blur', 'Suede', 'Supergrass'],
         correctAnswer: 'Blur',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'britpop', 'blur', 'songs'],
         dailyEligible: true
     },
@@ -1108,10 +1107,10 @@ const questions = [
     {
         id: 'music_0666',
         category: 'Music',
-        question: 'Which artist recorded Alright?',
+        question: 'Which artist recorded Moving?',
         answers: ['Suede', 'Supergrass', 'Blur', 'Pulp'],
         correctAnswer: 'Supergrass',
-        difficulty: 'Easy',
+        difficulty: 'Medium',
         tags: ['1990s', 'britpop', 'supergrass', 'songs'],
         dailyEligible: true
     }
