@@ -309,8 +309,8 @@ const questions = [
     {
         id: 'music_0294',
         category: 'Music',
-        question: 'Which artist recorded Crocodile Rock?',
-        answers: ['Elton John', 'Rod Stewart', 'David Bowie', 'Billy Joel'],
+        question: 'Which artist recorded Goodbye Yellow Brick Road?',
+        answers: ['Rod Stewart', 'Elton John', 'David Bowie', 'Lou Reed'],
         correctAnswer: 'Elton John',
         difficulty: 'Easy',
         tags: ['1970s', 'pop', 'rock', 'elton john', 'songs'],
@@ -321,7 +321,7 @@ const questions = [
         id: 'music_0295',
         category: 'Music',
         question: 'Which artist recorded Maggie May?',
-        answers: ['Elton John', 'Rod Stewart', 'David Bowie', 'Billy Joel'],
+        answers: ['Lou Reed', 'David Bowie', 'Rod Stewart', 'Elton John'],
         correctAnswer: 'Rod Stewart',
         difficulty: 'Easy',
         tags: ['1970s', 'rock', 'rod stewart', 'songs'],
@@ -331,18 +331,40 @@ const questions = [
     {
         id: 'music_0296',
         category: 'Music',
-        question: 'Which artist recorded Go Your Own Way?',
-        answers: ['Fleetwood Mac', 'Eagles', 'Boston', 'Foreigner'],
-        correctAnswer: 'Fleetwood Mac',
-        difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'fleetwood mac', 'songs'],
+        question: 'Which artist recorded You Wear It Well?',
+        answers: ['Elton John', 'Rod Stewart', 'Lou Reed', 'David Bowie'],
+        correctAnswer: 'Rod Stewart',
+        difficulty: 'Medium',
+        tags: ['1970s', 'rock', 'rod stewart', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0297',
         category: 'Music',
-        question: 'Which artist recorded Dreams?',
+        question: 'Which artist recorded Walk on the Wild Side?',
+        answers: ['Lou Reed', 'David Bowie', 'Elton John', 'Rod Stewart'],
+        correctAnswer: 'Lou Reed',
+        difficulty: 'Medium',
+        tags: ['1970s', 'rock', 'lou reed', 'songs'],
+        dailyEligible: true
+    },
+
+    {
+        id: 'music_0298',
+        category: 'Music',
+        question: 'Which artist recorded Hotel California?',
+        answers: ['Fleetwood Mac', 'Eagles', 'Boston', 'Foreigner'],
+        correctAnswer: 'Eagles',
+        difficulty: 'Easy',
+        tags: ['1970s', 'rock', 'eagles', 'songs'],
+        dailyEligible: true
+    },
+
+    {
+        id: 'music_0299',
+        category: 'Music',
+        question: 'Which artist recorded Go Your Own Way?',
         answers: ['Eagles', 'Fleetwood Mac', 'Foreigner', 'Boston'],
         correctAnswer: 'Fleetwood Mac',
         difficulty: 'Easy',
@@ -351,266 +373,244 @@ const questions = [
     },
 
     {
-        id: 'music_0298',
-        category: 'Music',
-        question: 'Which artist recorded Don\'t Stop?',
-        answers: ['Boston', 'Foreigner', 'Fleetwood Mac', 'Eagles'],
-        correctAnswer: 'Fleetwood Mac',
-        difficulty: 'Medium',
-        tags: ['1970s', 'rock', 'fleetwood mac', 'songs'],
-        dailyEligible: true
-    },
-
-    {
-        id: 'music_0299',
-        category: 'Music',
-        question: 'Which artist recorded Hotel California?',
-        answers: ['Fleetwood Mac', 'Boston', 'Foreigner', 'Eagles'],
-        correctAnswer: 'Eagles',
-        difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'eagles', 'songs'],
-        dailyEligible: true
-    },
-
-    {
         id: 'music_0300',
         category: 'Music',
-        question: 'Which artist recorded More Than a Feeling?',
-        answers: ['Boston', 'Eagles', 'Fleetwood Mac', 'Foreigner'],
-        correctAnswer: 'Boston',
-        difficulty: 'Medium',
-        tags: ['1970s', 'rock', 'songs'],
+        question: 'Which artist recorded Dreams?',
+        answers: ['Boston', 'Foreigner', 'Fleetwood Mac', 'Eagles'],
+        correctAnswer: 'Fleetwood Mac',
+        difficulty: 'Easy',
+        tags: ['1970s', 'rock', 'fleetwood mac', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0301',
         category: 'Music',
-        question: 'Which artist recorded Stayin\' Alive?',
-        answers: ['KC and the Sunshine Band', 'Bee Gees', 'Boney M.', 'Earth, Wind & Fire'],
-        correctAnswer: 'Bee Gees',
-        difficulty: 'Easy',
-        tags: ['1970s', 'disco', 'bee gees', 'songs'],
+        question: 'Which artist recorded More Than a Feeling?',
+        answers: ['Fleetwood Mac', 'Eagles', 'Foreigner', 'Boston'],
+        correctAnswer: 'Boston',
+        difficulty: 'Medium',
+        tags: ['1970s', 'rock', 'boston', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0302',
         category: 'Music',
-        question: 'Which artist recorded Night Fever?',
-        answers: ['Boney M.', 'Earth, Wind & Fire', 'Bee Gees', 'KC and the Sunshine Band'],
-        correctAnswer: 'Bee Gees',
-        difficulty: 'Easy',
-        tags: ['1970s', 'disco', 'bee gees', 'songs'],
+        question: 'Which artist recorded Cold as Ice?',
+        answers: ['Foreigner', 'Boston', 'Eagles', 'Fleetwood Mac'],
+        correctAnswer: 'Foreigner',
+        difficulty: 'Medium',
+        tags: ['1970s', 'rock', 'foreigner', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0303',
         category: 'Music',
-        question: 'Which artist recorded Rasputin?',
-        answers: ['Bee Gees', 'KC and the Sunshine Band', 'Earth, Wind & Fire', 'Boney M.'],
-        correctAnswer: 'Boney M.',
-        difficulty: 'Medium',
-        tags: ['1970s', 'disco', 'boney m', 'songs'],
+        question: 'Which artist recorded Don\'t Bring Me Down?',
+        answers: ['10cc', 'Electric Light Orchestra', 'Supertramp', 'Queen'],
+        correctAnswer: 'Electric Light Orchestra',
+        difficulty: 'Easy',
+        tags: ['1970s', 'rock', 'elo', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0304',
         category: 'Music',
-        question: 'Which artist recorded September?',
-        answers: ['Earth, Wind & Fire', 'Boney M.', 'Bee Gees', 'KC and the Sunshine Band'],
-        correctAnswer: 'Earth, Wind & Fire',
+        question: 'Which artist recorded Mr. Blue Sky?',
+        answers: ['Queen', 'Supertramp', 'Electric Light Orchestra', '10cc'],
+        correctAnswer: 'Electric Light Orchestra',
         difficulty: 'Easy',
-        tags: ['1970s', 'disco', 'funk', 'songs'],
+        tags: ['1970s', 'rock', 'elo', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0305',
         category: 'Music',
-        question: 'Which artist recorded That\'s the Way (I Like It)?',
-        answers: ['Earth, Wind & Fire', 'KC and the Sunshine Band', 'Boney M.', 'Bee Gees'],
-        correctAnswer: 'KC and the Sunshine Band',
+        question: 'Which artist recorded I\'m Not in Love?',
+        answers: ['Supertramp', 'Queen', '10cc', 'Electric Light Orchestra'],
+        correctAnswer: '10cc',
         difficulty: 'Medium',
-        tags: ['1970s', 'disco', 'funk', 'songs'],
+        tags: ['1970s', 'rock', '10cc', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0306',
         category: 'Music',
-        question: 'Which artist recorded I Feel Love?',
-        answers: ['Donna Summer', 'Diana Ross', 'Gloria Gaynor', 'Chaka Khan'],
-        correctAnswer: 'Donna Summer',
-        difficulty: 'Easy',
-        tags: ['1970s', 'disco', 'donna summer', 'songs'],
+        question: 'Which artist recorded The Logical Song?',
+        answers: ['Electric Light Orchestra', '10cc', 'Queen', 'Supertramp'],
+        correctAnswer: 'Supertramp',
+        difficulty: 'Medium',
+        tags: ['1970s', 'rock', 'supertramp', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0307',
         category: 'Music',
-        question: 'Which artist recorded Hot Stuff?',
-        answers: ['Chaka Khan', 'Donna Summer', 'Diana Ross', 'Gloria Gaynor'],
-        correctAnswer: 'Donna Summer',
+        question: 'Which artist recorded Baker Street?',
+        answers: ['Gerry Rafferty', 'Al Stewart', 'Chris Rea', 'Dire Straits'],
+        correctAnswer: 'Gerry Rafferty',
         difficulty: 'Easy',
-        tags: ['1970s', 'disco', 'donna summer', 'songs'],
+        tags: ['1970s', 'rock', 'gerry rafferty', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0308',
         category: 'Music',
-        question: 'Which artist recorded I\'m Every Woman?',
-        answers: ['Diana Ross', 'Gloria Gaynor', 'Chaka Khan', 'Donna Summer'],
-        correctAnswer: 'Chaka Khan',
+        question: 'Which artist recorded Year of the Cat?',
+        answers: ['Gerry Rafferty', 'Al Stewart', 'Chris Rea', 'Dire Straits'],
+        correctAnswer: 'Al Stewart',
         difficulty: 'Medium',
-        tags: ['1970s', 'disco', 'soul', 'chaka khan', 'songs'],
+        tags: ['1970s', 'rock', 'al stewart', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0309',
         category: 'Music',
-        question: 'Which artist recorded Anarchy in the U.K.?',
-        answers: ['Sex Pistols', 'The Clash', 'The Jam', 'Buzzcocks'],
-        correctAnswer: 'Sex Pistols',
+        question: 'Which artist recorded Brass in Pocket?',
+        answers: ['Blondie', 'The Pretenders', 'Siouxsie and the Banshees', 'The Police'],
+        correctAnswer: 'The Pretenders',
         difficulty: 'Easy',
-        tags: ['1970s', 'punk', 'british', 'songs'],
+        tags: ['1970s', 'new wave', 'the pretenders', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0310',
         category: 'Music',
-        question: 'Which artist recorded London Calling?',
-        answers: ['Sex Pistols', 'The Clash', 'Buzzcocks', 'The Jam'],
-        correctAnswer: 'The Clash',
+        question: 'Which artist recorded Roxanne?',
+        answers: ['The Pretenders', 'The Police', 'Blondie', 'The Jam'],
+        correctAnswer: 'The Police',
         difficulty: 'Easy',
-        tags: ['1970s', 'punk', 'british', 'the clash', 'songs'],
+        tags: ['1970s', 'rock', 'new wave', 'the police', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0311',
         category: 'Music',
-        question: 'Which artist recorded Ever Fallen in Love (With Someone You Shouldn\'t\'ve)?',
-        answers: ['The Jam', 'Buzzcocks', 'The Clash', 'Sex Pistols'],
-        correctAnswer: 'Buzzcocks',
-        difficulty: 'Medium',
-        tags: ['1970s', 'punk', 'british', 'songs'],
+        question: 'Which artist recorded Message in a Bottle?',
+        answers: ['The Jam', 'The Pretenders', 'The Police', 'Blondie'],
+        correctAnswer: 'The Police',
+        difficulty: 'Easy',
+        tags: ['1970s', 'rock', 'new wave', 'the police', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0312',
         category: 'Music',
-        question: 'Which artist recorded Teenage Kicks?',
-        answers: ['The Clash', 'Sex Pistols', 'The Jam', 'The Undertones'],
-        correctAnswer: 'The Undertones',
+        question: 'Which artist recorded London Calling?',
+        answers: ['The Clash', 'The Jam', 'Sex Pistols', 'The Stranglers'],
+        correctAnswer: 'The Clash',
         difficulty: 'Easy',
-        tags: ['1970s', 'punk', 'british', 'songs'],
+        tags: ['1970s', 'punk', 'the clash', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0313',
         category: 'Music',
-        question: 'Which artist recorded Brass in Pocket?',
-        answers: ['The Pretenders', 'Blondie', 'Siouxsie and the Banshees', 'The Selecter'],
-        correctAnswer: 'The Pretenders',
+        question: 'Which artist recorded Going Underground?',
+        answers: ['The Clash', 'The Jam', 'The Stranglers', 'Sex Pistols'],
+        correctAnswer: 'The Jam',
         difficulty: 'Medium',
-        tags: ['1970s', 'new wave', 'british', 'songs'],
+        tags: ['1980s', 'mod revival', 'the jam', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0314',
         category: 'Music',
-        question: 'Which artist recorded Call Me?',
-        answers: ['The Pretenders', 'Blondie', 'The Go-Go\'s', 'The Bangles'],
-        correctAnswer: 'Blondie',
-        difficulty: 'Easy',
-        tags: ['1980s', 'new wave', 'blondie', 'songs'],
+        question: 'Which artist recorded Golden Brown?',
+        answers: ['The Jam', 'The Clash', 'The Stranglers', 'The Police'],
+        correctAnswer: 'The Stranglers',
+        difficulty: 'Medium',
+        tags: ['1980s', 'new wave', 'the stranglers', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0315',
         category: 'Music',
-        question: 'Which artist recorded Atomic?',
-        answers: ['The Go-Go\'s', 'The Pretenders', 'Blondie', 'The Bangles'],
-        correctAnswer: 'Blondie',
-        difficulty: 'Medium',
-        tags: ['1980s', 'new wave', 'blondie', 'songs'],
+        question: 'Which artist recorded Love Will Tear Us Apart?',
+        answers: ['Joy Division', 'New Order', 'The Cure', 'The Smiths'],
+        correctAnswer: 'Joy Division',
+        difficulty: 'Easy',
+        tags: ['1980s', 'post-punk', 'joy division', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0316',
         category: 'Music',
-        question: 'Which artist recorded Billie Jean?',
-        answers: ['Prince', 'Michael Jackson', 'Lionel Richie', 'Stevie Wonder'],
-        correctAnswer: 'Michael Jackson',
+        question: 'Which artist recorded Blue Monday?',
+        answers: ['Joy Division', 'New Order', 'Depeche Mode', 'The Cure'],
+        correctAnswer: 'New Order',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'michael jackson', 'songs'],
+        tags: ['1980s', 'new wave', 'new order', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0317',
         category: 'Music',
-        question: 'Which artist recorded Beat It?',
-        answers: ['Lionel Richie', 'Prince', 'Michael Jackson', 'Stevie Wonder'],
-        correctAnswer: 'Michael Jackson',
-        difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'rock', 'michael jackson', 'songs'],
+        question: 'Which artist recorded Just Like Heaven?',
+        answers: ['The Smiths', 'New Order', 'The Cure', 'Depeche Mode'],
+        correctAnswer: 'The Cure',
+        difficulty: 'Medium',
+        tags: ['1980s', 'alternative', 'the cure', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0318',
         category: 'Music',
-        question: 'Which artist recorded Thriller?',
-        answers: ['Michael Jackson', 'Stevie Wonder', 'Lionel Richie', 'Prince'],
-        correctAnswer: 'Michael Jackson',
-        difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'michael jackson', 'songs'],
+        question: 'Which artist recorded There Is a Light That Never Goes Out?',
+        answers: ['The Cure', 'The Smiths', 'New Order', 'Joy Division'],
+        correctAnswer: 'The Smiths',
+        difficulty: 'Medium',
+        tags: ['1980s', 'alternative', 'the smiths', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0319',
         category: 'Music',
-        question: 'Which artist recorded When Doves Cry?',
-        answers: ['Michael Jackson', 'Prince', 'Lionel Richie', 'Stevie Wonder'],
-        correctAnswer: 'Prince',
-        difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'funk', 'prince', 'songs'],
+        question: 'Which artist recorded Personal Jesus?',
+        answers: ['Depeche Mode', 'New Order', 'The Cure', 'The Smiths'],
+        correctAnswer: 'Depeche Mode',
+        difficulty: 'Easy',
+        tags: ['1980s', 'alternative', 'depeche mode', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0320',
         category: 'Music',
-        question: 'Which artist recorded Purple Rain?',
-        answers: ['Lionel Richie', 'Stevie Wonder', 'Prince', 'Michael Jackson'],
-        correctAnswer: 'Prince',
+        question: 'Which artist recorded Sweet Dreams (Are Made of This)?',
+        answers: ['Eurythmics', 'Yazoo', 'The Human League', 'Soft Cell'],
+        correctAnswer: 'Eurythmics',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'rock', 'prince', 'songs'],
+        tags: ['1980s', 'synth-pop', 'eurythmics', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0321',
         category: 'Music',
-        question: 'Which artist recorded All Night Long (All Night)?',
-        answers: ['Prince', 'Lionel Richie', 'Michael Jackson', 'Stevie Wonder'],
-        correctAnswer: 'Lionel Richie',
+        question: 'Which artist recorded Girls Just Want to Have Fun?',
+        answers: ['Madonna', 'Cyndi Lauper', 'Belinda Carlisle', 'Kim Wilde'],
+        correctAnswer: 'Cyndi Lauper',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'soul', 'lionel richie', 'songs'],
+        tags: ['1980s', 'pop', 'cyndi lauper', 'songs'],
         dailyEligible: true
     },
 
@@ -621,95 +621,95 @@ const questions = [
         answers: ['Duran Duran', 'Wham!', 'Spandau Ballet', 'Culture Club'],
         correctAnswer: 'Wham!',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'wham', 'george michael', 'songs'],
+        tags: ['1980s', 'pop', 'wham', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0323',
         category: 'Music',
-        question: 'Which artist recorded Club Tropicana?',
-        answers: ['Culture Club', 'Duran Duran', 'Wham!', 'Spandau Ballet'],
-        correctAnswer: 'Wham!',
+        question: 'Which artist recorded Rio?',
+        answers: ['Wham!', 'Duran Duran', 'Spandau Ballet', 'A-ha'],
+        correctAnswer: 'Duran Duran',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'wham', 'george michael', 'songs'],
+        tags: ['1980s', 'new wave', 'duran duran', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0324',
         category: 'Music',
-        question: 'Which artist recorded Freedom in 1984?',
-        answers: ['Wham!', 'Spandau Ballet', 'Culture Club', 'Duran Duran'],
-        correctAnswer: 'Wham!',
+        question: 'Which artist recorded The Reflex?',
+        answers: ['Spandau Ballet', 'A-ha', 'Duran Duran', 'Wham!'],
+        correctAnswer: 'Duran Duran',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'wham', 'george michael', 'songs'],
+        tags: ['1980s', 'new wave', 'duran duran', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0325',
         category: 'Music',
-        question: 'Which artist recorded Faith?',
-        answers: ['George Michael', 'Phil Collins', 'Bryan Adams', 'Paul Young'],
-        correctAnswer: 'George Michael',
-        difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'george michael', 'songs'],
+        question: 'Which artist recorded Take My Breath Away?',
+        answers: ['Berlin', 'Heart', 'Starship', 'Foreigner'],
+        correctAnswer: 'Berlin',
+        difficulty: 'Medium',
+        tags: ['1980s', 'pop', 'rock', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0326',
         category: 'Music',
-        question: 'Which artist recorded Father Figure?',
-        answers: ['Phil Collins', 'George Michael', 'Paul Young', 'Bryan Adams'],
-        correctAnswer: 'George Michael',
+        question: 'Which artist recorded Alone?',
+        answers: ['Berlin', 'Heart', 'Starship', 'Foreigner'],
+        correctAnswer: 'Heart',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'george michael', 'songs'],
+        tags: ['1980s', 'rock', 'heart', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0327',
         category: 'Music',
-        question: 'Which artist recorded Rio?',
-        answers: ['Spandau Ballet', 'Culture Club', 'Duran Duran', 'Wham!'],
-        correctAnswer: 'Duran Duran',
+        question: 'Which artist recorded Heaven Is a Place on Earth?',
+        answers: ['Cyndi Lauper', 'Belinda Carlisle', 'Kim Wilde', 'Tiffany'],
+        correctAnswer: 'Belinda Carlisle',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'new wave', 'duran duran', 'songs'],
+        tags: ['1980s', 'pop', 'belinda carlisle', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0328',
         category: 'Music',
-        question: 'Which artist recorded Hungry Like the Wolf?',
-        answers: ['Culture Club', 'Duran Duran', 'Wham!', 'Spandau Ballet'],
-        correctAnswer: 'Duran Duran',
+        question: 'Which artist recorded Kids in America?',
+        answers: ['Belinda Carlisle', 'Kim Wilde', 'Tiffany', 'Cyndi Lauper'],
+        correctAnswer: 'Kim Wilde',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'new wave', 'duran duran', 'songs'],
+        tags: ['1980s', 'pop', 'kim wilde', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0329',
         category: 'Music',
-        question: 'Which artist recorded Girls on Film?',
-        answers: ['Duran Duran', 'Spandau Ballet', 'Culture Club', 'Wham!'],
-        correctAnswer: 'Duran Duran',
+        question: 'Which artist recorded I Think We\'re Alone Now?',
+        answers: ['Kim Wilde', 'Tiffany', 'Belinda Carlisle', 'Cyndi Lauper'],
+        correctAnswer: 'Tiffany',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'new wave', 'duran duran', 'songs'],
+        tags: ['1980s', 'pop', 'tiffany', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0330',
         category: 'Music',
-        question: 'Which artist recorded Don\'t You (Forget About Me)?',
-        answers: ['Simple Minds', 'Tears for Fears', 'INXS', 'Depeche Mode'],
-        correctAnswer: 'Simple Minds',
+        question: 'Which artist recorded Never Gonna Give You Up?',
+        answers: ['Rick Astley', 'Jason Donovan', 'Bros', 'Paul Young'],
+        correctAnswer: 'Rick Astley',
         difficulty: 'Easy',
-        tags: ['1980s', 'new wave', 'rock', 'songs'],
+        tags: ['1980s', 'pop', 'rick astley', 'songs'],
         dailyEligible: true
     },
 
@@ -717,21 +717,21 @@ const questions = [
         id: 'music_0331',
         category: 'Music',
         question: 'Which artist recorded Everybody Wants to Rule the World?',
-        answers: ['INXS', 'Simple Minds', 'Tears for Fears', 'Depeche Mode'],
+        answers: ['Tears for Fears', 'Simple Minds', 'INXS', 'Talk Talk'],
         correctAnswer: 'Tears for Fears',
         difficulty: 'Easy',
-        tags: ['1980s', 'new wave', 'pop', 'songs'],
+        tags: ['1980s', 'pop', 'new wave', 'tears for fears', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0332',
         category: 'Music',
-        question: 'Which artist recorded Shout?',
-        answers: ['Depeche Mode', 'Tears for Fears', 'Simple Minds', 'INXS'],
-        correctAnswer: 'Tears for Fears',
-        difficulty: 'Medium',
-        tags: ['1980s', 'new wave', 'pop', 'songs'],
+        question: 'Which artist recorded Don\'t You (Forget About Me)?',
+        answers: ['Tears for Fears', 'Simple Minds', 'INXS', 'U2'],
+        correctAnswer: 'Simple Minds',
+        difficulty: 'Easy',
+        tags: ['1980s', 'rock', 'simple minds', 'songs'],
         dailyEligible: true
     },
 
@@ -739,54 +739,54 @@ const questions = [
         id: 'music_0333',
         category: 'Music',
         question: 'Which artist recorded Need You Tonight?',
-        answers: ['Simple Minds', 'Depeche Mode', 'Tears for Fears', 'INXS'],
+        answers: ['Simple Minds', 'INXS', 'Tears for Fears', 'Talk Talk'],
         correctAnswer: 'INXS',
-        difficulty: 'Easy',
-        tags: ['1980s', 'rock', 'new wave', 'songs'],
+        difficulty: 'Medium',
+        tags: ['1980s', 'rock', 'inxs', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0334',
         category: 'Music',
-        question: 'Which artist recorded You Keep Me Hangin\' On in 1986?',
-        answers: ['Kim Wilde', 'Kylie Minogue', 'Belinda Carlisle', 'Tiffany'],
-        correctAnswer: 'Kim Wilde',
-        difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'kim wilde', 'songs'],
+        question: 'Which artist recorded Red Red Wine?',
+        answers: ['UB40', 'Madness', 'The Specials', 'The Beat'],
+        correctAnswer: 'UB40',
+        difficulty: 'Easy',
+        tags: ['1980s', 'reggae', 'british', 'ub40', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0335',
         category: 'Music',
-        question: 'Which artist recorded I Should Be So Lucky?',
-        answers: ['Belinda Carlisle', 'Kylie Minogue', 'Kim Wilde', 'Tiffany'],
-        correctAnswer: 'Kylie Minogue',
-        difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'kylie minogue', 'songs'],
+        question: 'Which artist recorded Ghost Town?',
+        answers: ['Madness', 'The Specials', 'UB40', 'The Beat'],
+        correctAnswer: 'The Specials',
+        difficulty: 'Medium',
+        tags: ['1980s', 'ska', 'british', 'the specials', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0336',
         category: 'Music',
-        question: 'Which artist recorded The Loco-Motion in 1987?',
-        answers: ['Tiffany', 'Kim Wilde', 'Kylie Minogue', 'Belinda Carlisle'],
-        correctAnswer: 'Kylie Minogue',
+        question: 'Which artist recorded Town Called Malice?',
+        answers: ['The Jam', 'The Specials', 'Madness', 'The Clash'],
+        correctAnswer: 'The Jam',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'kylie minogue', 'songs'],
+        tags: ['1980s', 'rock', 'mod revival', 'the jam', 'songs'],
         dailyEligible: true
     },
 
     {
         id: 'music_0337',
         category: 'Music',
-        question: 'Which artist recorded Especially for You with Jason Donovan?',
-        answers: ['Kylie Minogue', 'Belinda Carlisle', 'Tiffany', 'Kim Wilde'],
-        correctAnswer: 'Kylie Minogue',
+        question: 'Which artist recorded Smalltown Boy?',
+        answers: ['Bronski Beat', 'Erasure', 'Pet Shop Boys', 'Communards'],
+        correctAnswer: 'Bronski Beat',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'kylie minogue', 'duets', 'songs'],
+        tags: ['1980s', 'synth-pop', 'british', 'songs'],
         dailyEligible: true
     },
 
