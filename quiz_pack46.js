@@ -432,9 +432,9 @@ const quizPack46 = [
     {
         id: "music_2728",
         category: "Music",
-        question: "Which artist recorded Can You Do It?",
-        answers: ["The Contours", "The Monitors", "The Temptations", "The Miracles"],
-        correctAnswer: "The Contours"
+        question: "Which artist recorded Choosey Beggar?",
+        answers: ["The Miracles", "The Temptations", "Four Tops", "The Contours"],
+        correctAnswer: "The Miracles"
     },
     {
         id: "music_2729",
