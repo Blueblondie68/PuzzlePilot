@@ -2,44 +2,44 @@ const quizPack76 = [
     {
         id: "music_5667",
         category: "Music",
-        question: "Which artist recorded 'Nothing Compares 2 U'?",
-        answers: ["Sinéad O’Connor", "Madonna", "Maria McKee", "Cher"],
-        correctAnswer: "Sinéad O’Connor"
+        question: "Which group recorded 'Old Red Eyes Is Back'?",
+        answers: ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"],
+        correctAnswer: "The Beautiful South"
     },
     {
         id: "music_5668",
         category: "Music",
-        question: "Which artist recorded 'Vogue'?",
-        answers: ["Madonna", "Sinéad O’Connor", "Paula Abdul", "Cher"],
-        correctAnswer: "Madonna"
+        question: "Which group recorded 'Rotterdam'?",
+        answers: ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"],
+        correctAnswer: "The Beautiful South"
     },
     {
         id: "music_5669",
         category: "Music",
-        question: "Which artist recorded 'Killer'?",
-        answers: ["Adamski", "Seal", "The Shamen", "Faithless"],
-        correctAnswer: "Adamski"
+        question: "Which group recorded 'Everybody’s Talkin'?",
+        answers: ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"],
+        correctAnswer: "The Beautiful South"
     },
     {
         id: "music_5670",
         category: "Music",
-        question: "Which group recorded 'Groove Is in the Heart'?",
-        answers: ["Deee-Lite", "C+C Music Factory", "Snap!", "K-Klass"],
-        correctAnswer: "Deee-Lite"
+        question: "Which group recorded 'Prettiest Eyes'?",
+        answers: ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"],
+        correctAnswer: "The Beautiful South"
     },
     {
         id: "music_5671",
         category: "Music",
-        question: "Which artist recorded 'The One and Only'?",
-        answers: ["Chesney Hawkes", "Seal", "Julian Lennon", "Marc Cohn"],
-        correctAnswer: "Chesney Hawkes"
+        question: "Which group recorded 'Dream a Little Dream'?",
+        answers: ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"],
+        correctAnswer: "The Beautiful South"
     },
     {
         id: "music_5672",
         category: "Music",
-        question: "Which group recorded 'Unbelievable'?",
-        answers: ["EMF", "The Shamen", "Republica", "Stereo MC’s"],
-        correctAnswer: "EMF"
+        question: "Which group recorded 'For Your Babies'?",
+        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
+        correctAnswer: "Simply Red"
     },
     {
         id: "music_5673",
@@ -58,9 +58,9 @@ const quizPack76 = [
     {
         id: "music_5675",
         category: "Music",
-        question: "Which group recorded 'King of the Road'?",
-        answers: ["The Proclaimers", "The Farm", "James", "Happy Mondays"],
-        correctAnswer: "The Proclaimers"
+        question: "Which group recorded 'Something Got Me Started'?",
+        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
+        correctAnswer: "Simply Red"
     },
     {
         id: "music_5676",
@@ -79,23 +79,23 @@ const quizPack76 = [
     {
         id: "music_5678",
         category: "Music",
-        question: "Which group recorded 'Step On'?",
-        answers: ["Happy Mondays", "The Farm", "Primal Scream", "The Stone Roses"],
-        correctAnswer: "Happy Mondays"
+        question: "Which group recorded 'Fairground'?",
+        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
+        correctAnswer: "Simply Red"
     },
     {
         id: "music_5679",
         category: "Music",
-        question: "Which group recorded 'Loaded'?",
-        answers: ["Primal Scream", "Happy Mondays", "The Charlatans", "The Farm"],
-        correctAnswer: "Primal Scream"
+        question: "Which group recorded 'Remembering the First Time'?",
+        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
+        correctAnswer: "Simply Red"
     },
     {
         id: "music_5680",
         category: "Music",
-        question: "Which group recorded 'There She Goes'?",
-        answers: ["The La’s", "The Bluetones", "The Boo Radleys", "Ocean Colour Scene"],
-        correctAnswer: "The La’s"
+        question: "Which group recorded 'Angel'?",
+        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
+        correctAnswer: "Simply Red"
     },
     {
         id: "music_5681",
@@ -121,9 +121,9 @@ const quizPack76 = [
     {
         id: "music_5684",
         category: "Music",
-        question: "Which artist recorded 'Crazy'?",
-        answers: ["Seal", "Adamski", "Haddaway", "Mark Morrison"],
-        correctAnswer: "Seal"
+        question: "Which group recorded 'Your Mirror'?",
+        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
+        correctAnswer: "Simply Red"
     },
     {
         id: "music_5685",
@@ -135,16 +135,16 @@ const quizPack76 = [
     {
         id: "music_5686",
         category: "Music",
-        question: "Which group recorded 'All Together Now'?",
-        answers: ["The Farm", "Happy Mondays", "James", "The Proclaimers"],
-        correctAnswer: "The Farm"
+        question: "Which group recorded 'Pray'?",
+        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
+        correctAnswer: "Take That"
     },
     {
         id: "music_5687",
         category: "Music",
-        question: "Which group recorded 'Sit Down'?",
-        answers: ["James", "The Farm", "Happy Mondays", "The Charlatans"],
-        correctAnswer: "James"
+        question: "Which group recorded 'Everything Changes'?",
+        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
+        correctAnswer: "Take That"
     },
     {
         id: "music_5688",
@@ -156,9 +156,9 @@ const quizPack76 = [
     {
         id: "music_5689",
         category: "Music",
-        question: "Which group recorded 'Joyride'?",
-        answers: ["Roxette", "Wet Wet Wet", "Erasure", "Shakespears Sister"],
-        correctAnswer: "Roxette"
+        question: "Which group recorded 'Sure'?",
+        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
+        correctAnswer: "Take That"
     },
     {
         id: "music_5690",
@@ -177,9 +177,9 @@ const quizPack76 = [
     {
         id: "music_5692",
         category: "Music",
-        question: "Which artist recorded 'Gypsy Woman (She’s Homeless)'?",
-        answers: ["Crystal Waters", "CeCe Peniston", "Gala", "Robin S."],
-        correctAnswer: "Crystal Waters"
+        question: "Which group recorded 'Babe'?",
+        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
+        correctAnswer: "Take That"
     },
     {
         id: "music_5693",
@@ -233,9 +233,9 @@ const quizPack76 = [
     {
         id: "music_5700",
         category: "Music",
-        question: "Which artist recorded 'Walking in Memphis'?",
-        answers: ["Marc Cohn", "Julian Lennon", "Seal", "Chesney Hawkes"],
-        correctAnswer: "Marc Cohn"
+        question: "Which group recorded 'Never Forget'?",
+        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
+        correctAnswer: "Take That"
     },
     {
         id: "music_5701",
@@ -317,16 +317,16 @@ const quizPack76 = [
     {
         id: "music_5712",
         category: "Music",
-        question: "Which group recorded 'Connected'?",
-        answers: ["Stereo MC’s", "EMF", "The Shamen", "Beats International"],
-        correctAnswer: "Stereo MC’s"
+        question: "Which group recorded 'How Deep Is Your Love'?",
+        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
+        correctAnswer: "Take That"
     },
     {
         id: "music_5713",
         category: "Music",
-        question: "Which group recorded 'Ebeneezer Goode'?",
-        answers: ["The Shamen", "Stereo MC’s", "K-Klass", "2 Unlimited"],
-        correctAnswer: "The Shamen"
+        question: "Which group recorded 'Could It Be Magic'?",
+        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
+        correctAnswer: "Take That"
     },
     {
         id: "music_5714",
@@ -338,65 +338,65 @@ const quizPack76 = [
     {
         id: "music_5715",
         category: "Music",
-        question: "Which group recorded 'Goodnight Girl'?",
-        answers: ["Wet Wet Wet", "Roxette", "Erasure", "Shakespears Sister"],
-        correctAnswer: "Wet Wet Wet"
+        question: "Which group recorded 'Love Ain’t Here Anymore'?",
+        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
+        correctAnswer: "Take That"
     },
     {
         id: "music_5716",
         category: "Music",
-        question: "Which group recorded 'Stay'?",
-        answers: ["Shakespears Sister", "Wet Wet Wet", "Roxette", "The Cranberries"],
-        correctAnswer: "Shakespears Sister"
+        question: "Which group recorded 'Stay Another Day'?",
+        answers: ["East 17", "Take That", "Boyzone", "911"],
+        correctAnswer: "East 17"
     },
     {
         id: "music_5717",
         category: "Music",
-        question: "Which group recorded 'Common People'?",
-        answers: ["Pulp", "Blur", "Oasis", "The Verve"],
-        correctAnswer: "Pulp"
+        question: "Which group recorded 'House of Love'?",
+        answers: ["East 17", "Take That", "Boyzone", "911"],
+        correctAnswer: "East 17"
     },
     {
         id: "music_5718",
         category: "Music",
-        question: "Which group recorded 'Disco 2000'?",
-        answers: ["Pulp", "Blur", "Supergrass", "The Bluetones"],
-        correctAnswer: "Pulp"
+        question: "Which group recorded 'Deep'?",
+        answers: ["East 17", "Take That", "Boyzone", "911"],
+        correctAnswer: "East 17"
     },
     {
         id: "music_5719",
         category: "Music",
-        question: "Which group recorded 'Parklife'?",
-        answers: ["Blur", "Pulp", "Oasis", "Supergrass"],
-        correctAnswer: "Blur"
+        question: "Which group recorded 'It’s Alright'?",
+        answers: ["East 17", "Take That", "Boyzone", "911"],
+        correctAnswer: "East 17"
     },
     {
         id: "music_5720",
         category: "Music",
-        question: "Which group recorded 'Girls & Boys'?",
-        answers: ["Blur", "Pulp", "Supergrass", "Elastica"],
-        correctAnswer: "Blur"
+        question: "Which group recorded 'Steam'?",
+        answers: ["East 17", "Take That", "Boyzone", "911"],
+        correctAnswer: "East 17"
     },
     {
         id: "music_5721",
         category: "Music",
-        question: "Which group recorded 'Country House'?",
-        answers: ["Blur", "Oasis", "Pulp", "The Verve"],
-        correctAnswer: "Blur"
+        question: "Which group recorded 'Thunder'?",
+        answers: ["East 17", "Take That", "Boyzone", "911"],
+        correctAnswer: "East 17"
     },
     {
         id: "music_5722",
         category: "Music",
-        question: "Which group recorded 'Wonderwall'?",
-        answers: ["Oasis", "Blur", "The Verve", "Pulp"],
-        correctAnswer: "Oasis"
+        question: "Which group recorded 'If You Ever'?",
+        answers: ["East 17", "Take That", "Boyzone", "911"],
+        correctAnswer: "East 17"
     },
     {
         id: "music_5723",
         category: "Music",
-        question: "Which group recorded 'Don’t Look Back in Anger'?",
-        answers: ["Oasis", "Blur", "The Verve", "Ocean Colour Scene"],
-        correctAnswer: "Oasis"
+        question: "Which group recorded 'Love Me for a Reason'?",
+        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
+        correctAnswer: "Boyzone"
     },
     {
         id: "music_5724",
@@ -415,16 +415,16 @@ const quizPack76 = [
     {
         id: "music_5726",
         category: "Music",
-        question: "Which group recorded 'Bitter Sweet Symphony'?",
-        answers: ["The Verve", "Oasis", "Blur", "Ocean Colour Scene"],
-        correctAnswer: "The Verve"
+        question: "Which group recorded 'Words'?",
+        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
+        correctAnswer: "Boyzone"
     },
     {
         id: "music_5727",
         category: "Music",
-        question: "Which group recorded 'The Drugs Don’t Work'?",
-        answers: ["The Verve", "Oasis", "Radiohead", "Manic Street Preachers"],
-        correctAnswer: "The Verve"
+        question: "Which group recorded 'Picture of You'?",
+        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
+        correctAnswer: "Boyzone"
     },
     {
         id: "music_5728",
@@ -485,9 +485,9 @@ const quizPack76 = [
     {
         id: "music_5736",
         category: "Music",
-        question: "Which group recorded 'A Design for Life'?",
-        answers: ["Manic Street Preachers", "The Verve", "Radiohead", "Placebo"],
-        correctAnswer: "Manic Street Preachers"
+        question: "Which group recorded 'When the Going Gets Tough'?",
+        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
+        correctAnswer: "Boyzone"
     },
     {
         id: "music_5737",
@@ -499,23 +499,23 @@ const quizPack76 = [
     {
         id: "music_5738",
         category: "Music",
-        question: "Which group recorded 'Ready to Go'?",
-        answers: ["Republica", "Elastica", "Catatonia", "Garbage"],
-        correctAnswer: "Republica"
+        question: "Which group recorded 'A Different Beat'?",
+        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
+        correctAnswer: "Boyzone"
     },
     {
         id: "music_5739",
         category: "Music",
-        question: "Which group recorded 'Connection'?",
-        answers: ["Elastica", "Republica", "Catatonia", "Garbage"],
-        correctAnswer: "Elastica"
+        question: "Which group recorded 'Coming Home Now'?",
+        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
+        correctAnswer: "Boyzone"
     },
     {
         id: "music_5740",
         category: "Music",
-        question: "Which group recorded 'Female of the Species'?",
-        answers: ["Space", "Supergrass", "The Bluetones", "The Boo Radleys"],
-        correctAnswer: "Space"
+        question: "Which group recorded 'C’est la Vie'?",
+        answers: ["B*Witched", "All Saints", "Eternal", "Spice Girls"],
+        correctAnswer: "B*Witched"
     },
     {
         id: "music_5741",
@@ -541,30 +541,30 @@ const quizPack76 = [
     {
         id: "music_5744",
         category: "Music",
-        question: "Which group recorded 'The Day We Caught the Train'?",
-        answers: ["Ocean Colour Scene", "Reef", "The Bluetones", "Supergrass"],
-        correctAnswer: "Ocean Colour Scene"
+        question: "Which group recorded 'Rollercoaster'?",
+        answers: ["B*Witched", "All Saints", "Eternal", "Spice Girls"],
+        correctAnswer: "B*Witched"
     },
     {
         id: "music_5745",
         category: "Music",
-        question: "Which group recorded 'The Riverboat Song'?",
-        answers: ["Ocean Colour Scene", "Reef", "Supergrass", "The Bluetones"],
-        correctAnswer: "Ocean Colour Scene"
+        question: "Which group recorded 'To You I Belong'?",
+        answers: ["B*Witched", "All Saints", "Eternal", "Spice Girls"],
+        correctAnswer: "B*Witched"
     },
     {
         id: "music_5746",
         category: "Music",
-        question: "Which group recorded 'Alright'?",
-        answers: ["Supergrass", "Blur", "The Bluetones", "The Boo Radleys"],
-        correctAnswer: "Supergrass"
+        question: "Which group recorded 'Blame It on the Weatherman'?",
+        answers: ["B*Witched", "All Saints", "Eternal", "Spice Girls"],
+        correctAnswer: "B*Witched"
     },
     {
         id: "music_5747",
         category: "Music",
-        question: "Which group recorded 'Moving'?",
-        answers: ["Supergrass", "The Bluetones", "Ocean Colour Scene", "Reef"],
-        correctAnswer: "Supergrass"
+        question: "Which group recorded 'Stay'?",
+        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
+        correctAnswer: "Eternal"
     },
     {
         id: "music_5748",
@@ -576,9 +576,9 @@ const quizPack76 = [
     {
         id: "music_5749",
         category: "Music",
-        question: "Which group recorded 'Slight Return'?",
-        answers: ["The Bluetones", "The Boo Radleys", "Ocean Colour Scene", "Supergrass"],
-        correctAnswer: "The Bluetones"
+        question: "Which group recorded 'Power of a Woman'?",
+        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
+        correctAnswer: "Eternal"
     },
     {
         id: "music_5750",
@@ -604,93 +604,93 @@ const quizPack76 = [
     {
         id: "music_5753",
         category: "Music",
-        question: "Which group recorded 'Insomnia'?",
-        answers: ["Faithless", "The Prodigy", "Underworld", "The Shamen"],
-        correctAnswer: "Faithless"
+        question: "Which group recorded 'I Wanna Be the Only One'?",
+        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
+        correctAnswer: "Eternal"
     },
     {
         id: "music_5754",
         category: "Music",
-        question: "Which group recorded 'Firestarter'?",
-        answers: ["The Prodigy", "Faithless", "Underworld", "The Shamen"],
-        correctAnswer: "The Prodigy"
+        question: "Which group recorded 'Just a Step from Heaven'?",
+        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
+        correctAnswer: "Eternal"
     },
     {
         id: "music_5755",
         category: "Music",
-        question: "Which group recorded 'Breathe'?",
-        answers: ["The Prodigy", "Faithless", "Underworld", "The Shamen"],
-        correctAnswer: "The Prodigy"
+        question: "Which group recorded 'Oh Baby I'?",
+        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
+        correctAnswer: "Eternal"
     },
     {
         id: "music_5756",
         category: "Music",
-        question: "Which group recorded 'Born Slippy .NUXX'?",
-        answers: ["Underworld", "Faithless", "The Prodigy", "The Shamen"],
-        correctAnswer: "Underworld"
+        question: "Which group recorded 'Angel of Mine'?",
+        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
+        correctAnswer: "Eternal"
     },
     {
         id: "music_5757",
         category: "Music",
-        question: "Which artist recorded 'Children'?",
-        answers: ["Robert Miles", "Haddaway", "Scatman John", "Mark Morrison"],
-        correctAnswer: "Robert Miles"
+        question: "Which artist recorded 'Going Nowhere'?",
+        answers: ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"],
+        correctAnswer: "Gabrielle"
     },
     {
         id: "music_5758",
         category: "Music",
-        question: "Which artist recorded 'Freed from Desire'?",
-        answers: ["Gala", "CeCe Peniston", "Robin S.", "Crystal Waters"],
-        correctAnswer: "Gala"
+        question: "Which artist recorded 'Give Me a Little More Time'?",
+        answers: ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"],
+        correctAnswer: "Gabrielle"
     },
     {
         id: "music_5759",
         category: "Music",
-        question: "Which group recorded 'Missing'?",
-        answers: ["Everything but the Girl", "The Cranberries", "Republica", "Catatonia"],
-        correctAnswer: "Everything but the Girl"
+        question: "Which artist recorded 'Walk On By'?",
+        answers: ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"],
+        correctAnswer: "Gabrielle"
     },
     {
         id: "music_5760",
         category: "Music",
-        question: "Which artist recorded 'Finally'?",
-        answers: ["CeCe Peniston", "Crystal Waters", "Robin S.", "Gala"],
-        correctAnswer: "CeCe Peniston"
+        question: "Which artist recorded 'Sunshine'?",
+        answers: ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"],
+        correctAnswer: "Gabrielle"
     },
     {
         id: "music_5761",
         category: "Music",
-        question: "Which group recorded 'Rhythm Is a Dancer'?",
-        answers: ["Snap!", "Culture Beat", "2 Unlimited", "K-Klass"],
-        correctAnswer: "Snap!"
+        question: "Which artist recorded 'Rise'?",
+        answers: ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"],
+        correctAnswer: "Gabrielle"
     },
     {
         id: "music_5762",
         category: "Music",
-        question: "Which group recorded 'Mr. Vain'?",
-        answers: ["Culture Beat", "Snap!", "2 Unlimited", "K-Klass"],
-        correctAnswer: "Culture Beat"
+        question: "Which group recorded 'Moving on Up'?",
+        answers: ["M People", "Eternal", "Simply Red", "The Beautiful South"],
+        correctAnswer: "M People"
     },
     {
         id: "music_5763",
         category: "Music",
-        question: "Which group recorded 'No Limit'?",
-        answers: ["2 Unlimited", "Snap!", "Culture Beat", "K-Klass"],
-        correctAnswer: "2 Unlimited"
+        question: "Which group recorded 'One Night in Heaven'?",
+        answers: ["M People", "Eternal", "Simply Red", "The Beautiful South"],
+        correctAnswer: "M People"
     },
     {
         id: "music_5764",
         category: "Music",
-        question: "Which artist recorded 'What Is Love'?",
-        answers: ["Haddaway", "Robert Miles", "Scatman John", "Mark Morrison"],
-        correctAnswer: "Haddaway"
+        question: "Which group recorded 'Search for the Hero'?",
+        answers: ["M People", "Eternal", "Simply Red", "The Beautiful South"],
+        correctAnswer: "M People"
     },
     {
         id: "music_5765",
         category: "Music",
-        question: "Which group recorded 'Dreamer'?",
-        answers: ["Livin’ Joy", "K-Klass", "Snap!", "Culture Beat"],
-        correctAnswer: "Livin’ Joy"
+        question: "Which group recorded 'Open Your Heart'?",
+        answers: ["M People", "Eternal", "Simply Red", "The Beautiful South"],
+        correctAnswer: "M People"
     },
     {
         id: "music_5766",
