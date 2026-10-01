@@ -8,9 +8,9 @@ const quizPack77 = [
         id: "music_5767",
         category: "Music",
         difficulty: "Easy",
-        question: "Which artist recorded 'Show Me Love'?",
-        answers: ["Robin S.", "CeCe Peniston", "Crystal Waters", "Gala"],
-        correctAnswer: "Robin S."
+        question: "Which group recorded 'Only Happy When It Rains'?",
+        answers: ["Garbage", "Republica", "Elastica", "The Cardigans"],
+        correctAnswer: "Garbage"
     },
     {
         id: "music_5768",
@@ -40,17 +40,17 @@ const quizPack77 = [
         id: "music_5771",
         category: "Music",
         difficulty: "Easy",
-        question: "Which group recorded 'Never Ever'?",
-        answers: ["All Saints", "Eternal", "Spice Girls", "B*Witched"],
-        correctAnswer: "All Saints"
+        question: "Which group recorded 'Queer'?",
+        answers: ["Garbage", "Republica", "Elastica", "The Cardigans"],
+        correctAnswer: "Garbage"
     },
     {
         id: "music_5772",
         category: "Music",
         difficulty: "Easy",
-        question: "Which group recorded 'Wannabe'?",
-        answers: ["Spice Girls", "All Saints", "B*Witched", "Eternal"],
-        correctAnswer: "Spice Girls"
+        question: "Which group recorded 'Special'?",
+        answers: ["Garbage", "Republica", "Elastica", "The Cardigans"],
+        correctAnswer: "Garbage"
     },
     {
         id: "music_5773",
@@ -64,9 +64,9 @@ const quizPack77 = [
         id: "music_5774",
         category: "Music",
         difficulty: "Easy",
-        question: "Which group recorded 'Back for Good'?",
-        answers: ["Take That", "Boyzone", "East 17", "Westlife"],
-        correctAnswer: "Take That"
+        question: "Which group recorded 'My Favourite Game'?",
+        answers: ["The Cardigans", "Garbage", "The Corrs", "Republica"],
+        correctAnswer: "The Cardigans"
     },
     {
         id: "music_5775",
@@ -97,17 +97,17 @@ const quizPack77 = [
         id: "music_5778",
         category: "Music",
         difficulty: "Easy",
-        question: "Which group recorded 'Breakfast at Tiffany’s'?",
-        answers: ["Deep Blue Something", "Semisonic", "Third Eye Blind", "Matchbox Twenty"],
-        correctAnswer: "Deep Blue Something"
+        question: "Which group recorded 'Erase/Rewind'?",
+        answers: ["The Cardigans", "Garbage", "The Corrs", "Republica"],
+        correctAnswer: "The Cardigans"
     },
     {
         id: "music_5779",
         category: "Music",
         difficulty: "Easy",
-        question: "Which singer recorded 'One of Us'?",
-        answers: ["Joan Osborne", "Sheryl Crow", "Meredith Brooks", "Alanis Morissette"],
-        correctAnswer: "Joan Osborne"
+        question: "Which group recorded 'Runaway'?",
+        answers: ["The Corrs", "The Cardigans", "Texas", "The Cranberries"],
+        correctAnswer: "The Corrs"
     },
     {
         id: "music_5780",
@@ -129,9 +129,9 @@ const quizPack77 = [
         id: "music_5782",
         category: "Music",
         difficulty: "Easy",
-        question: "Which group recorded 'How Bizarre'?",
-        answers: ["OMC", "Len", "Cornershop", "Chumbawamba"],
-        correctAnswer: "OMC"
+        question: "Which group recorded 'What Can I Do'?",
+        answers: ["The Corrs", "The Cardigans", "Texas", "The Cranberries"],
+        correctAnswer: "The Corrs"
     },
     {
         id: "music_5783",
@@ -161,41 +161,41 @@ const quizPack77 = [
         id: "music_5786",
         category: "Music",
         difficulty: "Easy",
-        question: "Which singer recorded 'You Oughta Know'?",
-        answers: ["Alanis Morissette", "Sheryl Crow", "Natalie Imbruglia", "Meredith Brooks"],
-        correctAnswer: "Alanis Morissette"
+        question: "Which group recorded 'So Young'?",
+        answers: ["The Corrs", "The Cardigans", "Texas", "The Cranberries"],
+        correctAnswer: "The Corrs"
     },
     {
         id: "music_5787",
         category: "Music",
         difficulty: "Easy",
-        question: "Which singer recorded 'Ironic'?",
-        answers: ["Alanis Morissette", "Sheryl Crow", "Joan Osborne", "Natalie Imbruglia"],
-        correctAnswer: "Alanis Morissette"
+        question: "Which group recorded 'Say What You Want'?",
+        answers: ["Texas", "The Corrs", "The Cranberries", "Garbage"],
+        correctAnswer: "Texas"
     },
     {
         id: "music_5788",
         category: "Music",
         difficulty: "Medium",
-        question: "Which singer recorded 'Hand in My Pocket'?",
-        answers: ["Alanis Morissette", "Sheryl Crow", "Meredith Brooks", "Suzanne Vega"],
-        correctAnswer: "Alanis Morissette"
+        question: "Which group recorded 'Summer Son'?",
+        answers: ["Texas", "The Corrs", "The Cranberries", "Garbage"],
+        correctAnswer: "Texas"
     },
     {
         id: "music_5789",
         category: "Music",
         difficulty: "Easy",
-        question: "Which singer recorded 'Torn'?",
-        answers: ["Natalie Imbruglia", "Alanis Morissette", "Sheryl Crow", "Donna Lewis"],
-        correctAnswer: "Natalie Imbruglia"
+        question: "Which group recorded 'Pure'?",
+        answers: ["The Lightning Seeds", "The Charlatans", "James", "The Stone Roses"],
+        correctAnswer: "The Lightning Seeds"
     },
     {
         id: "music_5790",
         category: "Music",
         difficulty: "Easy",
-        question: "Which group recorded 'Kiss Me'?",
-        answers: ["Sixpence None the Richer", "The Cardigans", "The Corrs", "The Cranberries"],
-        correctAnswer: "Sixpence None the Richer"
+        question: "Which group recorded 'Destiny Calling'?",
+        answers: ["James", "The Charlatans", "The Lightning Seeds", "The Stone Roses"],
+        correctAnswer: "James"
     },
     {
         id: "music_5791",
@@ -225,9 +225,9 @@ const quizPack77 = [
         id: "music_5794",
         category: "Music",
         difficulty: "Easy",
-        question: "Which singer recorded 'All I Wanna Do'?",
-        answers: ["Sheryl Crow", "Alanis Morissette", "Joan Osborne", "Natalie Imbruglia"],
-        correctAnswer: "Sheryl Crow"
+        question: "Which group recorded 'One to Another'?",
+        answers: ["The Charlatans", "James", "The Stone Roses", "Happy Mondays"],
+        correctAnswer: "The Charlatans"
     },
     {
         id: "music_5795",
@@ -265,9 +265,9 @@ const quizPack77 = [
         id: "music_5799",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Hush'?",
-        answers: ["Kula Shaker", "Ocean Colour Scene", "Cast", "Dodgy"],
-        correctAnswer: "Kula Shaker"
+        question: "Which group recorded 'North Country Boy'?",
+        answers: ["The Charlatans", "James", "The Stone Roses", "Happy Mondays"],
+        correctAnswer: "The Charlatans"
     },
     {
         id: "music_5800",
@@ -321,17 +321,17 @@ const quizPack77 = [
         id: "music_5806",
         category: "Music",
         difficulty: "Easy",
-        question: "Which group recorded 'Lucky Man'?",
-        answers: ["The Verve", "Oasis", "Blur", "Suede"],
-        correctAnswer: "The Verve"
+        question: "Which group recorded 'Love Spreads'?",
+        answers: ["The Stone Roses", "The Charlatans", "Happy Mondays", "Primal Scream"],
+        correctAnswer: "The Stone Roses"
     },
     {
         id: "music_5807",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Sonnet'?",
-        answers: ["The Verve", "Oasis", "Suede", "Cast"],
-        correctAnswer: "The Verve"
+        question: "Which group recorded 'Ten Storey Love Song'?",
+        answers: ["The Stone Roses", "The Charlatans", "Happy Mondays", "Primal Scream"],
+        correctAnswer: "The Stone Roses"
     },
     {
         id: "music_5808",
@@ -345,17 +345,17 @@ const quizPack77 = [
         id: "music_5809",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Animal Nitrate'?",
-        answers: ["Suede", "Pulp", "Blur", "Mansun"],
-        correctAnswer: "Suede"
+        question: "Which group recorded 'The Size of a Cow'?",
+        answers: ["The Wonder Stuff", "Jesus Jones", "EMF", "The Charlatans"],
+        correctAnswer: "The Wonder Stuff"
     },
     {
         id: "music_5810",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Trash'?",
-        answers: ["Suede", "Pulp", "Blur", "Sleeper"],
-        correctAnswer: "Suede"
+        question: "Which group recorded 'International Bright Young Thing'?",
+        answers: ["Jesus Jones", "The Wonder Stuff", "EMF", "The Charlatans"],
+        correctAnswer: "Jesus Jones"
     },
     {
         id: "music_5811",
@@ -385,17 +385,17 @@ const quizPack77 = [
         id: "music_5814",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Charmless Man'?",
-        answers: ["Blur", "Oasis", "Pulp", "Suede"],
-        correctAnswer: "Blur"
+        question: "Which group recorded 'Always the Last to Know'?",
+        answers: ["Del Amitri", "Crowded House", "Texas", "The Beautiful South"],
+        correctAnswer: "Del Amitri"
     },
     {
         id: "music_5815",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Beetlebum'?",
-        answers: ["Blur", "Oasis", "The Verve", "Supergrass"],
-        correctAnswer: "Blur"
+        question: "Which group recorded 'Roll to Me'?",
+        answers: ["Del Amitri", "Crowded House", "Texas", "The Beautiful South"],
+        correctAnswer: "Del Amitri"
     },
     {
         id: "music_5816",
@@ -441,9 +441,9 @@ const quizPack77 = [
         id: "music_5821",
         category: "Music",
         difficulty: "Easy",
-        question: "Which group recorded 'Champagne Supernova'?",
-        answers: ["Oasis", "The Verve", "Blur", "Suede"],
-        correctAnswer: "Oasis"
+        question: "Which group recorded 'Distant Sun'?",
+        answers: ["Crowded House", "Del Amitri", "R.E.M.", "The Beautiful South"],
+        correctAnswer: "Crowded House"
     },
     {
         id: "music_5822",
@@ -481,9 +481,9 @@ const quizPack77 = [
         id: "music_5826",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Morning Glory'?",
-        answers: ["Oasis", "Blur", "The Verve", "Cast"],
-        correctAnswer: "Oasis"
+        question: "Which group recorded 'Everybody Hurts'?",
+        answers: ["R.E.M.", "U2", "Crowded House", "Radiohead"],
+        correctAnswer: "R.E.M."
     },
     {
         id: "music_5827",
@@ -497,9 +497,9 @@ const quizPack77 = [
         id: "music_5828",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Walkaway'?",
-        answers: ["Cast", "Dodgy", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Cast"
+        question: "Which group recorded 'Man on the Moon'?",
+        answers: ["R.E.M.", "U2", "Crowded House", "Radiohead"],
+        correctAnswer: "R.E.M."
     },
     {
         id: "music_5829",
@@ -513,9 +513,9 @@ const quizPack77 = [
         id: "music_5830",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Guiding Star'?",
-        answers: ["Cast", "Shed Seven", "The Bluetones", "Dodgy"],
-        correctAnswer: "Cast"
+        question: "Which group recorded 'What’s the Frequency, Kenneth?'?",
+        answers: ["R.E.M.", "U2", "Crowded House", "Radiohead"],
+        correctAnswer: "R.E.M."
     },
     {
         id: "music_5831",
@@ -569,25 +569,25 @@ const quizPack77 = [
         id: "music_5837",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Inbetweener'?",
-        answers: ["Sleeper", "Echobelly", "Elastica", "Republica"],
-        correctAnswer: "Sleeper"
+        question: "Which group recorded 'One'?",
+        answers: ["U2", "R.E.M.", "Simple Minds", "INXS"],
+        correctAnswer: "U2"
     },
     {
         id: "music_5838",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Sale of the Century'?",
-        answers: ["Sleeper", "Echobelly", "Elastica", "Shed Seven"],
-        correctAnswer: "Sleeper"
+        question: "Which group recorded 'Mysterious Ways'?",
+        answers: ["U2", "R.E.M.", "Simple Minds", "INXS"],
+        correctAnswer: "U2"
     },
     {
         id: "music_5839",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'What Do I Do Now?'?",
-        answers: ["Sleeper", "Echobelly", "Elastica", "Republica"],
-        correctAnswer: "Sleeper"
+        question: "Which group recorded 'Give It Away'?",
+        answers: ["Red Hot Chili Peppers", "Foo Fighters", "Pearl Jam", "Nirvana"],
+        correctAnswer: "Red Hot Chili Peppers"
     },
     {
         id: "music_5840",
@@ -617,9 +617,9 @@ const quizPack77 = [
         id: "music_5843",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Good Enough'?",
-        answers: ["Dodgy", "Cast", "The Bluetones", "Shed Seven"],
-        correctAnswer: "Dodgy"
+        question: "Which group recorded 'Scar Tissue'?",
+        answers: ["Red Hot Chili Peppers", "Foo Fighters", "Pearl Jam", "Nirvana"],
+        correctAnswer: "Red Hot Chili Peppers"
     },
     {
         id: "music_5844",
@@ -641,17 +641,17 @@ const quizPack77 = [
         id: "music_5846",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Caught by the Fuzz'?",
-        answers: ["Supergrass", "Blur", "Dodgy", "The Bluetones"],
-        correctAnswer: "Supergrass"
+        question: "Which group recorded 'This Is a Call'?",
+        answers: ["Foo Fighters", "Red Hot Chili Peppers", "Pearl Jam", "Nirvana"],
+        correctAnswer: "Foo Fighters"
     },
     {
         id: "music_5847",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Richard III'?",
-        answers: ["Supergrass", "Blur", "Suede", "Mansun"],
-        correctAnswer: "Supergrass"
+        question: "Which group recorded 'Everlong'?",
+        answers: ["Foo Fighters", "Red Hot Chili Peppers", "Pearl Jam", "Nirvana"],
+        correctAnswer: "Foo Fighters"
     },
     {
         id: "music_5848",
@@ -665,9 +665,9 @@ const quizPack77 = [
         id: "music_5849",
         category: "Music",
         difficulty: "Medium",
-        question: "Which group recorded 'Pumping on Your Stereo'?",
-        answers: ["Supergrass", "Blur", "Stereophonics", "Feeder"],
-        correctAnswer: "Supergrass"
+        question: "Which group recorded '1979'?",
+        answers: ["The Smashing Pumpkins", "Nirvana", "Pearl Jam", "Soundgarden"],
+        correctAnswer: "The Smashing Pumpkins"
     },
     {
         id: "music_5850",
@@ -753,9 +753,9 @@ const quizPack77 = [
         id: "music_5860",
         category: "Music",
         difficulty: "Easy",
-        question: "Which group recorded 'Why Does It Always Rain on Me?'?",
-        answers: ["Travis", "Stereophonics", "Feeder", "Reef"],
-        correctAnswer: "Travis"
+        question: "Which artist recorded 'Loser'?",
+        answers: ["Beck", "Weezer", "Blur", "The Smashing Pumpkins"],
+        correctAnswer: "Beck"
     },
     {
         id: "music_5861",
