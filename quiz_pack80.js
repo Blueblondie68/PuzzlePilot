@@ -40,9 +40,9 @@ const quizPack80 = [
         id: "music_6071",
         category: "Music",
         difficulty: "Easy",
-        question: "Which group recorded 'Every You Every Me'?",
-        answers: ["Placebo", "Ash", "Feeder", "Mansun"],
-        correctAnswer: "Placebo"
+        question: "Which group recorded 'Heartbeat'?",
+        answers: ["Steps", "S Club 7", "B*Witched", "Five"],
+        correctAnswer: "Steps"
     },
     {
         id: "music_6072",
