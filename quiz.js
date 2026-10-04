@@ -6,6 +6,7 @@
 // - 10 questions
 // - Same Daily Quiz on every server
 // - Daily Quiz resets at midnight UK time
+// - Categories are balanced before individual questions are chosen
 // - Four multiple-choice answers
 // - Answer positions are shuffled
 // - First answer clicked is final
@@ -17,113 +18,64 @@
 // - Final score is shown automatically after question 10
 // - Each player may complete the Daily Quiz once per server per day
 //
-// Persistent data is stored in PostgreSQL / Neon:
-// - Today's 10 question IDs are saved globally
-// - Question-use history is saved globally
-// - Player completion data is saved separately for each server
-// - Player scores are saved for future statistics / leaderboards
-// - Restarting or redeploying PuzzlePilot does not create a new Daily Quiz
+// Persistent data is stored in PostgreSQL / Neon.
 
 const {
     ActionRowBuilder,
     ButtonBuilder,
-    ButtonStyle
+    ButtonStyle,
+    ContainerBuilder,
+    MessageFlags,
+    SeparatorBuilder,
+    TextDisplayBuilder
 } = require('discord.js');
 
 const { Pool } = require('pg');
 
-const quizPack1 =
-    require('./quiz_pack1.js');
+// ─────────────────────────────────────────────
+// QUESTION PACKS
+// ─────────────────────────────────────────────
+// Keep the currently-live Packs 1-17 while the new
+// selection system and new display are tested.
 
-const quizPack2 =
-    require('./quiz_pack2.js');
+const quizPacks = [
+    require('./quiz_pack1.js'),
+    require('./quiz_pack2.js'),
+    require('./quiz_pack3.js'),
+    require('./quiz_pack4.js'),
+    require('./quiz_pack5.js'),
+    require('./quiz_pack6.js'),
+    require('./quiz_pack7.js'),
+    require('./quiz_pack8.js'),
+    require('./quiz_pack9.js'),
+    require('./quiz_pack10.js'),
+    require('./quiz_pack11.js'),
+    require('./quiz_pack12.js'),
+    require('./quiz_pack13.js'),
+    require('./quiz_pack14.js'),
+    require('./quiz_pack15.js'),
+    require('./quiz_pack16.js'),
+    require('./quiz_pack17.js')
+];
 
-const quizPack3 =
-    require('./quiz_pack3.js');
+const questionBank = quizPacks.flat();
 
-const quizPack4 =
-    require('./quiz_pack4.js');
-
-const quizPack5 =
-    require('./quiz_pack5.js');
-
-const quizPack6 =
-    require('./quiz_pack6.js');
-
-const quizPack7 =
-    require('./quiz_pack7.js');
-
-const quizPack8 =
-    require('./quiz_pack8.js');
-
-const quizPack9 =
-    require('./quiz_pack9.js');
-
-const quizPack10 =
-    require('./quiz_pack10.js');
-
-const quizPack11 =
-    require('./quiz_pack11.js');
-
-const quizPack12 =
-    require('./quiz_pack12.js');
-
-const quizPack13 =
-    require('./quiz_pack13.js');
-
-const quizPack14 =
-    require('./quiz_pack14.js');
-
-const quizPack15 =
-    require('./quiz_pack15.js');
-
-const quizPack16 =
-    require('./quiz_pack16.js');
-
-const quizPack17 =
-    require('./quiz_pack17.js');
-
+console.log(
+    `Quiz question bank loaded: ${questionBank.length} questions`
+);
 
 // ─────────────────────────────────────────────
 // SETTINGS
 // ─────────────────────────────────────────────
 
 const DAILY_QUESTION_COUNT = 10;
+const QUESTION_TIME_LIMIT = 15 * 1000;
+const RESULT_DISPLAY_TIME = 3 * 1000;
 
-const QUESTION_TIME_LIMIT =
-    15 * 1000;
-
-const RESULT_DISPLAY_TIME =
-    3 * 1000;
-
-// ─────────────────────────────────────────────
-// QUESTION BANK
-// ─────────────────────────────────────────────
-
-const questionBank = [
-    ...quizPack1,
-    ...quizPack2,
-    ...quizPack3,
-    ...quizPack4,
-    ...quizPack5,
-    ...quizPack6,
-    ...quizPack7,
-    ...quizPack8,
-    ...quizPack9,
-    ...quizPack10,
-    ...quizPack11,
-    ...quizPack12,
-    ...quizPack13,
-    ...quizPack14,
-    ...quizPack15,
-    ...quizPack16,
-    ...quizPack17
-];
-
-console.log(
-    `Quiz question bank loaded: ` +
-    `${questionBank.length} questions`
-);
+const QUIZ_ACCENT = 0x8B5CF6;
+const SUCCESS_ACCENT = 0x57F287;
+const WRONG_ACCENT = 0xED4245;
+const TIMEOUT_ACCENT = 0xFEE75C;
 
 // ─────────────────────────────────────────────
 // DATABASE
@@ -131,28 +83,15 @@ console.log(
 
 if (!process.env.DATABASE_URL) {
     console.error(
-        'DATABASE_URL is missing. ' +
-        'The Daily Quiz database cannot start.'
+        'DATABASE_URL is missing. The Daily Quiz database cannot start.'
     );
 }
 
 const pool = new Pool({
-    connectionString:
-        process.env.DATABASE_URL
+    connectionString: process.env.DATABASE_URL
 });
 
-// Keep database setup in one promise.
-//
-// startDaily waits for this before doing anything,
-// so the tables will exist before the first player
-// starts the Daily Quiz.
-
-const databaseReady =
-    initialiseDatabase();
-
-// ─────────────────────────────────────────────
-// DATABASE SETUP
-// ─────────────────────────────────────────────
+const databaseReady = initialiseDatabase();
 
 async function initialiseDatabase() {
     if (!process.env.DATABASE_URL) {
@@ -161,8 +100,7 @@ async function initialiseDatabase() {
         );
     }
 
-    const client =
-        await pool.connect();
+    const client = await pool.connect();
 
     try {
         await client.query(`
@@ -203,10 +141,6 @@ async function initialiseDatabase() {
     }
 }
 
-// Make sure a database startup problem is visible
-// in Render's logs rather than becoming an
-// unhandled promise rejection.
-
 databaseReady.catch(
     error => {
         console.error(
@@ -219,27 +153,15 @@ databaseReady.catch(
 // ─────────────────────────────────────────────
 // ACTIVE SESSIONS
 // ─────────────────────────────────────────────
-//
-// Active games do not need to survive a restart.
-//
-// Permanent Daily information is stored in Neon.
-// If PuzzlePilot restarts halfway through someone's
-// quiz, that player can simply start again because
-// their completion is only recorded after question 10.
 
-const sessions =
-    new Map();
+const sessions = new Map();
 
 // ─────────────────────────────────────────────
-// HELPERS
+// GENERAL HELPERS
 // ─────────────────────────────────────────────
 
-function shuffleArray(
-    array
-) {
-    const copy = [
-        ...array
-    ];
+function shuffleArray(array) {
+    const copy = [...array];
 
     for (
         let i = copy.length - 1;
@@ -271,13 +193,10 @@ function getUKDateKey() {
             {
                 timeZone:
                     'Europe/London',
-
                 year:
                     'numeric',
-
                 month:
                     '2-digit',
-
                 day:
                     '2-digit'
             }
@@ -307,20 +226,12 @@ function getUKDateKey() {
                 'day'
         ).value;
 
-    return (
-        `${year}-${month}-${day}`
-    );
+    return `${year}-${month}-${day}`;
 }
 
 function getServerId(
     interaction
 ) {
-    // Daily Quiz is designed for Discord servers.
-    //
-    // If this is somehow called outside a guild,
-    // keep that data isolated rather than mixing it
-    // with a real server.
-
     return (
         interaction.guildId ||
         `DM_${interaction.user.id}`
@@ -338,38 +249,23 @@ function getEligibleDailyQuestions() {
 function getQuestionsFromIds(
     ids
 ) {
-    const questions = [];
+    const byId =
+        new Map(
+            questionBank.map(
+                question => [
+                    question.id,
+                    question
+                ]
+            )
+        );
 
-    for (
-        const id of ids
-    ) {
-        const question =
-            questionBank.find(
-                item =>
-                    item.id ===
-                    id
-            );
-
-        if (
-            question
-        ) {
-            questions.push(
-                question
-            );
-        }
-    }
-
-    return questions;
+    return ids
+        .map(
+            id =>
+                byId.get(id)
+        )
+        .filter(Boolean);
 }
-
-// ─────────────────────────────────────────────
-// DATABASE DATE HELPER
-// ─────────────────────────────────────────────
-//
-// PostgreSQL DATE values can sometimes arrive as
-// JavaScript Date objects depending on configuration.
-//
-// This helper always gives us YYYY-MM-DD.
 
 function databaseDateKey(
     value
@@ -410,9 +306,7 @@ function databaseDateKey(
                 '0'
             );
 
-        return (
-            `${year}-${month}-${day}`
-        );
+        return `${year}-${month}-${day}`;
     }
 
     return String(
@@ -423,18 +317,97 @@ function databaseDateKey(
     );
 }
 
+function categoryName(
+    question
+) {
+    const category =
+        String(
+            question.category ||
+            ''
+        ).trim();
+
+    return (
+        category ||
+        'General Knowledge'
+    );
+}
+
 // ─────────────────────────────────────────────
-// DAILY QUESTION SELECTION
+// BALANCED DAILY QUESTION SELECTION
 // ─────────────────────────────────────────────
 //
-// Questions that have never appeared in a Daily
-// Quiz are used before previously used questions.
+// The category is chosen first, then a question is
+// chosen inside that category.
 //
-// When recycling eventually becomes necessary,
-// the questions used longest ago are chosen first.
+// A huge Music bank can therefore increase Music
+// variety without making Music dominate the Daily.
 //
-// Ties are shuffled so the same ordering is not
-// repeated every time.
+// Within each category:
+// 1. Never-used questions are preferred.
+// 2. Once recycling is necessary, the question used
+//    longest ago is preferred.
+//
+// If there are at least 10 categories, today's Daily
+// uses 10 different categories.
+//
+// If there are fewer, categories are shared as evenly
+// as possible across the 10 slots.
+
+function rankCategoryQuestions(
+    questions,
+    history
+) {
+    const shuffled =
+        shuffleArray(
+            questions
+        );
+
+    shuffled.sort(
+        (a, b) => {
+            const aUsed =
+                history.has(
+                    a.id
+                );
+
+            const bUsed =
+                history.has(
+                    b.id
+                );
+
+            if (
+                aUsed !==
+                bUsed
+            ) {
+                return (
+                    aUsed ?
+                        1 :
+                        -1
+                );
+            }
+
+            if (
+                !aUsed &&
+                !bUsed
+            ) {
+                return 0;
+            }
+
+            return databaseDateKey(
+                history.get(
+                    a.id
+                )
+            ).localeCompare(
+                databaseDateKey(
+                    history.get(
+                        b.id
+                    )
+                )
+            );
+        }
+    );
+
+    return shuffled;
+}
 
 async function selectDailyQuestions(
     client,
@@ -476,100 +449,158 @@ async function selectDailyQuestions(
         );
     }
 
-    const neverUsed =
-        shuffleArray(
-            eligible.filter(
-                question =>
-                    !history.has(
-                        question.id
-                    )
+    const groups =
+        new Map();
+
+    for (
+        const question of eligible
+    ) {
+        const category =
+            categoryName(
+                question
+            );
+
+        if (
+            !groups.has(
+                category
             )
+        ) {
+            groups.set(
+                category,
+                []
+            );
+        }
+
+        groups
+            .get(category)
+            .push(question);
+    }
+
+    const categories =
+        shuffleArray(
+            [
+                ...groups.keys()
+            ]
         );
 
-    let selected =
-        neverUsed.slice(
-            0,
-            DAILY_QUESTION_COUNT
+    if (
+        categories.length ===
+        0
+    ) {
+        throw new Error(
+            'The Daily Quiz has no eligible categories.'
         );
+    }
+
+    const rankedByCategory =
+        new Map();
+
+    for (
+        const category of categories
+    ) {
+        rankedByCategory.set(
+            category,
+            rankCategoryQuestions(
+                groups.get(
+                    category
+                ),
+                history
+            )
+        );
+    }
+
+    const selected = [];
+
+    let roundCategories =
+        shuffleArray(
+            categories
+        );
+
+    let categoryIndex =
+        0;
+
+    while (
+        selected.length <
+        DAILY_QUESTION_COUNT
+    ) {
+        if (
+            categoryIndex >=
+            roundCategories.length
+        ) {
+            roundCategories =
+                shuffleArray(
+                    categories
+                );
+
+            categoryIndex =
+                0;
+        }
+
+        const category =
+            roundCategories[
+                categoryIndex
+            ];
+
+        categoryIndex++;
+
+        const ranked =
+            rankedByCategory.get(
+                category
+            );
+
+        if (
+            !ranked ||
+            ranked.length ===
+            0
+        ) {
+            continue;
+        }
+
+        selected.push(
+            ranked.shift()
+        );
+
+        const remaining =
+            [
+                ...rankedByCategory.values()
+            ]
+                .reduce(
+                    (
+                        total,
+                        list
+                    ) =>
+                        total +
+                        list.length,
+                    0
+                );
+
+        if (
+            selected.length <
+                DAILY_QUESTION_COUNT &&
+            remaining ===
+                0
+        ) {
+            break;
+        }
+    }
 
     if (
         selected.length <
         DAILY_QUESTION_COUNT
     ) {
-        const selectedIds =
-            new Set(
-                selected.map(
-                    question =>
-                        question.id
-                )
-            );
-
-        const previouslyUsed =
-            eligible
-                .filter(
-                    question =>
-                        !selectedIds.has(
-                            question.id
-                        )
-                )
-                .map(
-                    question => ({
-                        question:
-                            question,
-
-                        lastUsed:
-                            history.get(
-                                question.id
-                            ) || ''
-                    })
-                );
-
-        // Shuffle first so questions with exactly
-        // the same last-used date do not always win
-        // the tie in question-bank order.
-
-        const shuffledPreviouslyUsed =
-            shuffleArray(
-                previouslyUsed
-            );
-
-        shuffledPreviouslyUsed.sort(
-            (a, b) =>
-                a.lastUsed.localeCompare(
-                    b.lastUsed
-                )
-        );
-
-        const needed =
-            DAILY_QUESTION_COUNT -
-            selected.length;
-
-        selected.push(
-            ...shuffledPreviouslyUsed
-                .slice(
-                    0,
-                    needed
-                )
-                .map(
-                    item =>
-                        item.question
-                )
+        throw new Error(
+            `The Quiz could only select ` +
+            `${selected.length} Daily questions.`
         );
     }
 
-    // The final ten are shuffled so question order
-    // is not determined by question history.
-
-    selected =
+    const finalSelection =
         shuffleArray(
             selected
         );
 
-    // Record the last-used date for every selected
-    // question.
-
     for (
-        const question of selected
+        const question of finalSelection
     ) {
         await client.query(
             `
@@ -590,19 +621,18 @@ async function selectDailyQuestions(
         );
     }
 
-    return selected;
+    return finalSelection;
 }
 
 // ─────────────────────────────────────────────
 // ENSURE TODAY'S DAILY QUIZ
 // ─────────────────────────────────────────────
 //
-// This uses a PostgreSQL advisory lock while today's
-// quiz is being checked/created.
+// Today's saved Daily always wins.
 //
-// That means even if two Discord servers ask for the
-// Daily Quiz at almost exactly the same moment, only
-// one official set of ten can be created.
+// Deploying a new version of PuzzlePilot does not
+// replace a quiz already created for the current
+// UK date.
 
 async function ensureTodaysQuiz() {
     await databaseReady;
@@ -617,11 +647,6 @@ async function ensureTodaysQuiz() {
         await client.query(
             'BEGIN'
         );
-
-        // PuzzlePilot Daily Quiz lock.
-        //
-        // The number itself is simply a fixed lock ID
-        // used only while choosing/checking the Daily.
 
         await client.query(
             'SELECT pg_advisory_xact_lock(74629101)'
@@ -640,7 +665,8 @@ async function ensureTodaysQuiz() {
             );
 
         if (
-            existingResult.rows.length > 0
+            existingResult.rows.length >
+            0
         ) {
             const savedIds =
                 existingResult.rows[0]
@@ -660,7 +686,7 @@ async function ensureTodaysQuiz() {
 
                 if (
                     savedQuestions.length ===
-                        DAILY_QUESTION_COUNT
+                    DAILY_QUESTION_COUNT
                 ) {
                     await client.query(
                         'COMMIT'
@@ -676,13 +702,10 @@ async function ensureTodaysQuiz() {
                 }
             }
 
-            // This should only happen if a question
-            // used in today's saved Daily has later
-            // been removed from the question bank.
-
             console.warn(
                 'Saved Daily Quiz contains a question ' +
-                'that no longer exists. Rebuilding today\'s quiz.'
+                'that no longer exists. ' +
+                'Rebuilding today\'s quiz.'
             );
 
             await client.query(
@@ -748,6 +771,7 @@ async function ensureTodaysQuiz() {
             await client.query(
                 'ROLLBACK'
             );
+
         } catch (
             rollbackError
         ) {
@@ -762,8 +786,10 @@ async function ensureTodaysQuiz() {
     } finally {
         client.release();
     }
-}// ─────────────────────────────────────────────
-// COMPLETION CHECK
+}
+
+// ─────────────────────────────────────────────
+// COMPLETION STORAGE
 // ─────────────────────────────────────────────
 
 async function hasCompletedDaily(
@@ -791,13 +817,10 @@ async function hasCompletedDaily(
         );
 
     return (
-        result.rows.length > 0
+        result.rows.length >
+        0
     );
 }
-
-// ─────────────────────────────────────────────
-// SAVE COMPLETION
-// ─────────────────────────────────────────────
 
 async function saveCompletion(
     session
@@ -863,48 +886,39 @@ function getCurrentQuestion(
     ];
 }
 
-function questionHeading(
+function progressText(
     session
 ) {
+    const answered =
+        session.questionIndex;
+
+    const remaining =
+        session.questions.length -
+        session.questionIndex;
+
     return (
-        `🧠 **Daily Quiz**\n\n` +
-        `**Question ` +
-        `${session.questionIndex + 1}` +
-        ` of ` +
-        `${session.questions.length}**`
+        `**Score:** ` +
+        `${session.score}/${answered}` +
+        `   •   ` +
+        `**Remaining:** ${remaining}`
     );
 }
 
-function buildQuestionText(
-    session
-) {
-    const question =
-        getCurrentQuestion(
-            session
-        );
-
-    return (
-        `${questionHeading(session)}\n\n` +
-        `⏱️ You have **15 seconds** to answer.\n` +
-        `Your first answer is final.\n\n` +
-        `${question.question}`
-    );
-}
-
-function progressMessage(
+function nextMessage(
     session
 ) {
     if (
         session.questionIndex >=
-        session.questions.length - 1
+        session.questions.length -
+            1
     ) {
         return (
-            `Final score in 3 seconds...`
+            'Final score in 3 seconds...'
         );
     }
 
     return (
-        `Next question in 3 seconds...`
+        'Next question in 3 seconds...'
     );
 }
 
@@ -912,68 +926,10 @@ function progressMessage(
 // ANSWER BUTTONS
 // ─────────────────────────────────────────────
 
-function buildAnswerButtons(
-    session
-) {
-    const answers =
-        session.shuffledAnswers;
-
-    const rows = [];
-
-    for (
-        let rowStart = 0;
-        rowStart < answers.length;
-        rowStart += 2
-    ) {
-        const row =
-            new ActionRowBuilder();
-
-        const rowAnswers =
-            answers.slice(
-                rowStart,
-                rowStart + 2
-            );
-
-        row.addComponents(
-            rowAnswers.map(
-                (
-                    answer,
-                    offset
-                ) => {
-                    const answerIndex =
-                        rowStart +
-                        offset;
-
-                    return (
-                        new ButtonBuilder()
-                            .setCustomId(
-                                makeAnswerId(
-                                    session.id,
-                                    answerIndex
-                                )
-                            )
-                            .setLabel(
-                                answer
-                            )
-                            .setStyle(
-                                ButtonStyle.Primary
-                            )
-                    );
-                }
-            )
-        );
-
-        rows.push(
-            row
-        );
-    }
-
-    return rows;
-}
-
-function buildLockedAnswerButtons(
+function buildAnswerRows(
     session,
-    selectedAnswer = null
+    selectedAnswer = null,
+    locked = false
 ) {
     const question =
         getCurrentQuestion(
@@ -987,7 +943,8 @@ function buildLockedAnswerButtons(
 
     for (
         let rowStart = 0;
-        rowStart < answers.length;
+        rowStart <
+            answers.length;
         rowStart += 2
     ) {
         const row =
@@ -1010,30 +967,44 @@ function buildLockedAnswerButtons(
                         offset;
 
                     let style =
-                        ButtonStyle.Secondary;
+                        ButtonStyle.Primary;
 
                     if (
-                        answer ===
-                        question.correctAnswer
+                        locked
                     ) {
                         style =
-                            ButtonStyle.Success;
+                            ButtonStyle.Secondary;
 
-                    } else if (
-                        selectedAnswer &&
-                        answer ===
-                            selectedAnswer
-                    ) {
-                        style =
-                            ButtonStyle.Danger;
+                        if (
+                            answer ===
+                            question.correctAnswer
+                        ) {
+                            style =
+                                ButtonStyle.Success;
+
+                        } else if (
+                            selectedAnswer &&
+                            answer ===
+                                selectedAnswer
+                        ) {
+                            style =
+                                ButtonStyle.Danger;
+                        }
                     }
 
                     return (
                         new ButtonBuilder()
                             .setCustomId(
-                                `quiz_locked_` +
-                                `${answerIndex}_` +
-                                `${session.id}`
+                                locked
+                                    ?
+                                    `quiz_locked_` +
+                                    `${answerIndex}_` +
+                                    `${session.id}`
+                                    :
+                                    makeAnswerId(
+                                        session.id,
+                                        answerIndex
+                                    )
                             )
                             .setLabel(
                                 answer
@@ -1042,7 +1013,7 @@ function buildLockedAnswerButtons(
                                 style
                             )
                             .setDisabled(
-                                true
+                                locked
                             )
                     );
                 }
@@ -1055,6 +1026,340 @@ function buildLockedAnswerButtons(
     }
 
     return rows;
+}
+
+// ─────────────────────────────────────────────
+// COMPONENTS V2 DISPLAY
+// ─────────────────────────────────────────────
+
+function addAnswerRows(
+    container,
+    rows
+) {
+    for (
+        const row of rows
+    ) {
+        container.addActionRowComponents(
+            row
+        );
+    }
+
+    return container;
+}
+
+function buildQuestionContainer(
+    session
+) {
+    const question =
+        getCurrentQuestion(
+            session
+        );
+
+    const container =
+        new ContainerBuilder()
+            .setAccentColor(
+                QUIZ_ACCENT
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        `# 🧠 PUZZLEPILOT\n` +
+                        `## DAILY QUIZ`
+                    )
+            )
+            .addSeparatorComponents(
+                new SeparatorBuilder()
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        `### QUESTION ` +
+                        `${session.questionIndex + 1} ` +
+                        `OF ` +
+                        `${session.questions.length}\n` +
+                        `${progressText(session)}\n\n` +
+                        `⏱️ **15 seconds** • ` +
+                        `Your first answer is final.`
+                    )
+            )
+            .addSeparatorComponents(
+                new SeparatorBuilder()
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        `## ${question.question}`
+                    )
+            );
+
+    addAnswerRows(
+        container,
+        buildAnswerRows(
+            session
+        )
+    );
+
+    container
+        .addSeparatorComponents(
+            new SeparatorBuilder()
+        )
+        .addTextDisplayComponents(
+            new TextDisplayBuilder()
+                .setContent(
+                    `*Daily Quiz • ` +
+                    `New quiz after midnight ` +
+                    `UK time*`
+                )
+        );
+
+    return container;
+}
+
+function buildResultContainer(
+    session,
+    selectedAnswer,
+    resultType
+) {
+    const question =
+        getCurrentQuestion(
+            session
+        );
+
+    let accent =
+        QUIZ_ACCENT;
+
+    let resultHeading =
+        '';
+
+    let resultBody =
+        '';
+
+    if (
+        resultType ===
+        'correct'
+    ) {
+        accent =
+            SUCCESS_ACCENT;
+
+        resultHeading =
+            '✅ CORRECT!';
+
+        resultBody =
+            `The answer is ` +
+            `**${question.correctAnswer}**.`;
+
+    } else if (
+        resultType ===
+        'wrong'
+    ) {
+        accent =
+            WRONG_ACCENT;
+
+        resultHeading =
+            '❌ WRONG!';
+
+        resultBody =
+            `You chose ` +
+            `**${selectedAnswer}**.\n` +
+            `The correct answer was ` +
+            `**${question.correctAnswer}**.`;
+
+    } else {
+        accent =
+            TIMEOUT_ACCENT;
+
+        resultHeading =
+            '⏰ TIME IS UP!';
+
+        resultBody =
+            `The correct answer was ` +
+            `**${question.correctAnswer}**.`;
+    }
+
+    const container =
+        new ContainerBuilder()
+            .setAccentColor(
+                accent
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        `# 🧠 PUZZLEPILOT\n` +
+                        `## DAILY QUIZ`
+                    )
+            )
+            .addSeparatorComponents(
+                new SeparatorBuilder()
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        `### QUESTION ` +
+                        `${session.questionIndex + 1} ` +
+                        `OF ` +
+                        `${session.questions.length}\n` +
+                        `**Score:** ` +
+                        `${session.score}/` +
+                        `${session.questionIndex + 1}`
+                    )
+            )
+            .addSeparatorComponents(
+                new SeparatorBuilder()
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        `**${question.question}**\n\n` +
+                        `## ${resultHeading}\n` +
+                        `${resultBody}`
+                    )
+            );
+
+    addAnswerRows(
+        container,
+        buildAnswerRows(
+            session,
+            selectedAnswer,
+            true
+        )
+    );
+
+    container
+        .addSeparatorComponents(
+            new SeparatorBuilder()
+        )
+        .addTextDisplayComponents(
+            new TextDisplayBuilder()
+                .setContent(
+                    `*${nextMessage(
+                        session
+                    )}*`
+                )
+        );
+
+    return container;
+}
+
+function buildFinalContainer(
+    session
+) {
+    const score =
+        session.score;
+
+    const total =
+        session.questions.length;
+
+    let message;
+
+    if (
+        score ===
+        total
+    ) {
+        message =
+            'Perfect score — outstanding! 🏆';
+
+    } else if (
+        score >=
+        8
+    ) {
+        message =
+            'Excellent work! 🌟';
+
+    } else if (
+        score >=
+        6
+    ) {
+        message =
+            'Nicely done! 👏';
+
+    } else if (
+        score >=
+        4
+    ) {
+        message =
+            'A respectable run — tomorrow is another quiz!';
+
+    } else {
+        message =
+            'That was a tough one — there is always tomorrow!';
+    }
+
+    return (
+        new ContainerBuilder()
+            .setAccentColor(
+                SUCCESS_ACCENT
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        `# 🧠 PUZZLEPILOT\n` +
+                        `## 🎉 DAILY QUIZ COMPLETE!`
+                    )
+            )
+            .addSeparatorComponents(
+                new SeparatorBuilder()
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        `# ${score}/${total}\n` +
+                        `**${message}**`
+                    )
+            )
+            .addSeparatorComponents(
+                new SeparatorBuilder()
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        `Come back after ` +
+                        `**midnight UK time** ` +
+                        `for a new Daily Quiz.`
+                    )
+            )
+    );
+}
+
+function buildSimpleContainer(
+    title,
+    message,
+    accent = QUIZ_ACCENT
+) {
+    return (
+        new ContainerBuilder()
+            .setAccentColor(
+                accent
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        `# 🧠 PUZZLEPILOT\n` +
+                        `## ${title}`
+                    )
+            )
+            .addSeparatorComponents(
+                new SeparatorBuilder()
+            )
+            .addTextDisplayComponents(
+                new TextDisplayBuilder()
+                    .setContent(
+                        message
+                    )
+            )
+    );
+}
+
+function v2Payload(
+    container
+) {
+    return {
+        components: [
+            container
+        ],
+
+        flags:
+            MessageFlags.IsComponentsV2
+    };
 }
 
 // ─────────────────────────────────────────────
@@ -1120,29 +1425,12 @@ function prepareQuestion(
             ).answers
         );
 
-    // Each displayed question receives a token.
-    // Old timers cannot interfere with a newer
-    // question.
-
     session.questionToken++;
 }
 
 // ─────────────────────────────────────────────
-// FINAL SCORE
+// FINISH DAILY QUIZ
 // ─────────────────────────────────────────────
-
-function finalScoreText(
-    session
-) {
-    return (
-        `🎉 **Daily Quiz complete!**\n\n` +
-        `You scored ` +
-        `**${session.score}/` +
-        `${session.questions.length}**.\n\n` +
-        `Come back after midnight ` +
-        `UK time for a new Daily Quiz!`
-    );
-}
 
 async function finishDailyQuiz(
     interaction,
@@ -1165,10 +1453,6 @@ async function finishDailyQuiz(
         session
     );
 
-    // Save completion to Neon before removing the
-    // active session. This is the important bit that
-    // survives a Render restart or redeploy.
-
     try {
         await saveCompletion(
             session
@@ -1182,22 +1466,26 @@ async function finishDailyQuiz(
             error
         );
 
-        // Do not pretend the completion was safely
-        // stored if the database could not save it.
-        //
-        // Leave the session active so the problem is
-        // visible rather than silently losing data.
-
         try {
-            await interaction.editReply({
-                content:
-                    `⚠️ **Your quiz finished, but ` +
-                    `PuzzlePilot couldn't save the result.**\n\n` +
-                    `Please try again once the database ` +
-                    `connection has been checked.`,
-                components:
-                    []
-            });
+            const container =
+                buildSimpleContainer(
+                    'QUIZ SAVE PROBLEM',
+
+                    `⚠️ Your quiz finished, but ` +
+                    `PuzzlePilot couldn't save ` +
+                    `the result.\n\n` +
+                    `Please try again once the ` +
+                    `database connection has ` +
+                    `been checked.`,
+
+                    WRONG_ACCENT
+                );
+
+            await interaction.editReply(
+                v2Payload(
+                    container
+                )
+            );
 
         } catch (
             editError
@@ -1216,14 +1504,13 @@ async function finishDailyQuiz(
     );
 
     try {
-        await interaction.editReply({
-            content:
-                finalScoreText(
+        await interaction.editReply(
+            v2Payload(
+                buildFinalContainer(
                     session
-                ),
-            components:
-                []
-        });
+                )
+            )
+        );
 
     } catch (
         error
@@ -1251,7 +1538,6 @@ function scheduleNextQuestion(
     session.resultTimer =
         setTimeout(
             async () => {
-
                 const liveSession =
                     sessions.get(
                         session.id
@@ -1277,7 +1563,8 @@ function scheduleNextQuestion(
 
                 if (
                     session.questionIndex >=
-                    session.questions.length - 1
+                    session.questions.length -
+                        1
                 ) {
                     await finishDailyQuiz(
                         interaction,
@@ -1293,8 +1580,8 @@ function scheduleNextQuestion(
                     interaction,
                     session
                 );
-
             },
+
             RESULT_DISPLAY_TIME
         );
 }
@@ -1317,7 +1604,6 @@ function startQuestionTimer(
     session.questionTimer =
         setTimeout(
             async () => {
-
                 const liveSession =
                     sessions.get(
                         session.id
@@ -1344,41 +1630,22 @@ function startQuestionTimer(
                     return;
                 }
 
-                // Lock before awaiting anything.
-                // A late click cannot sneak through.
-
                 session.answered =
                     true;
 
                 session.questionTimer =
                     null;
 
-                const question =
-                    getCurrentQuestion(
-                        session
-                    );
-
-                const lockedRows =
-                    buildLockedAnswerButtons(
-                        session
-                    );
-
                 try {
-                    await interaction.editReply({
-                        content:
-                            `${questionHeading(
-                                session
-                            )}\n\n` +
-                            `${question.question}\n\n` +
-                            `⏰ **Time's up!**\n\n` +
-                            `The correct answer was ` +
-                            `**${question.correctAnswer}**.\n\n` +
-                            `${progressMessage(
-                                session
-                            )}`,
-                        components:
-                            lockedRows
-                    });
+                    await interaction.editReply(
+                        v2Payload(
+                            buildResultContainer(
+                                session,
+                                null,
+                                'timeout'
+                            )
+                        )
+                    );
 
                     scheduleNextQuestion(
                         interaction,
@@ -1394,8 +1661,8 @@ function startQuestionTimer(
                         error
                     );
                 }
-
             },
+
             QUESTION_TIME_LIMIT
         );
 }
@@ -1412,22 +1679,20 @@ async function showQuestion(
         session
     );
 
-    await interaction.editReply({
-        content:
-            buildQuestionText(
-                session
-            ),
-        components:
-            buildAnswerButtons(
+    await interaction.editReply(
+        v2Payload(
+            buildQuestionContainer(
                 session
             )
-    });
+        )
+    );
 
     startQuestionTimer(
         session,
         interaction
     );
 }
+
 // ─────────────────────────────────────────────
 // START DAILY QUIZ
 // ─────────────────────────────────────────────
@@ -1435,13 +1700,6 @@ async function showQuestion(
 async function startDaily(
     interaction
 ) {
-    // Database work can take a moment, especially
-    // if Neon's free database has been idle.
-    //
-    // Acknowledge the Discord interaction immediately
-    // so Discord does not report that PuzzlePilot
-    // failed to respond.
-
     await interaction.deferReply();
 
     try {
@@ -1469,15 +1727,20 @@ async function startDaily(
         if (
             completed
         ) {
-            await interaction.editReply({
-                content:
-                    `🧠 You've already completed ` +
-                    `today's Daily Quiz on this server.\n\n` +
-                    `Come back after midnight ` +
-                    `UK time for a new one!`,
-                components:
-                    []
-            });
+            await interaction.editReply(
+                v2Payload(
+                    buildSimpleContainer(
+                        'DAILY QUIZ',
+
+                        `You've already completed ` +
+                        `today's Daily Quiz on this ` +
+                        `server.\n\n` +
+                        `Come back after ` +
+                        `**midnight UK time** ` +
+                        `for a new one!`
+                    )
+                )
+            );
 
             return;
         }
@@ -1496,13 +1759,16 @@ async function startDaily(
         if (
             existingSession
         ) {
-            await interaction.editReply({
-                content:
-                    `🧠 You already have today's ` +
-                    `Daily Quiz in progress.`,
-                components:
-                    []
-            });
+            await interaction.editReply(
+                v2Payload(
+                    buildSimpleContainer(
+                        'DAILY QUIZ',
+
+                        `You already have today's ` +
+                        `Daily Quiz in progress.`
+                    )
+                )
+            );
 
             return;
         }
@@ -1550,24 +1816,9 @@ async function startDaily(
             session
         );
 
-        prepareQuestion(
+        await showQuestion(
+            interaction,
             session
-        );
-
-        await interaction.editReply({
-            content:
-                buildQuestionText(
-                    session
-                ),
-            components:
-                buildAnswerButtons(
-                    session
-                )
-        });
-
-        startQuestionTimer(
-            session,
-            interaction
         );
 
     } catch (
@@ -1585,6 +1836,7 @@ async function startDaily(
                     `today's Daily Quiz.\n\n` +
                     `The database connection needs ` +
                     `to be checked.`,
+
                 components:
                     []
             });
@@ -1621,7 +1873,8 @@ async function handleAnswer(
         );
 
     if (
-        separator === -1
+        separator ===
+        -1
     ) {
         return;
     }
@@ -1650,6 +1903,7 @@ async function handleAnswer(
         await interaction.reply({
             content:
                 '⚠️ This Daily Quiz is no longer active.',
+
             ephemeral:
                 true
         });
@@ -1664,6 +1918,7 @@ async function handleAnswer(
         await interaction.reply({
             content:
                 '⚠️ This Daily Quiz belongs to another player.',
+
             ephemeral:
                 true
         });
@@ -1680,6 +1935,7 @@ async function handleAnswer(
         await interaction.reply({
             content:
                 '⚠️ This Daily Quiz belongs to another server.',
+
             ephemeral:
                 true
         });
@@ -1687,15 +1943,13 @@ async function handleAnswer(
         return;
     }
 
-    // First accepted click wins.
-    // Lock before any await.
-
     if (
         session.answered
     ) {
         await interaction.reply({
             content:
                 '⚠️ Your answer is already locked in.',
+
             ephemeral:
                 true
         });
@@ -1707,19 +1961,24 @@ async function handleAnswer(
         !Number.isInteger(
             answerIndex
         ) ||
-        answerIndex < 0 ||
+        answerIndex <
+            0 ||
         answerIndex >=
             session.shuffledAnswers.length
     ) {
         await interaction.reply({
             content:
                 '⚠️ That answer is not valid.',
+
             ephemeral:
                 true
         });
 
         return;
     }
+
+    // First accepted click wins.
+    // Lock before awaiting anything.
 
     session.answered =
         true;
@@ -1753,51 +2012,19 @@ async function handleAnswer(
 
     await interaction.deferUpdate();
 
-    const lockedRows =
-        buildLockedAnswerButtons(
-            session,
-            selectedAnswer
-        );
-
-    let resultText;
-
-    if (
-        correct
-    ) {
-        resultText =
-            `${questionHeading(
-                session
-            )}\n\n` +
-            `${question.question}\n\n` +
-            `✅ **Correct!**\n\n` +
-            `The answer is ` +
-            `**${question.correctAnswer}**.\n\n` +
-            `${progressMessage(
-                session
-            )}`;
-
-    } else {
-        resultText =
-            `${questionHeading(
-                session
-            )}\n\n` +
-            `${question.question}\n\n` +
-            `❌ **Wrong!**\n\n` +
-            `You chose ` +
-            `**${selectedAnswer}**.\n` +
-            `The correct answer was ` +
-            `**${question.correctAnswer}**.\n\n` +
-            `${progressMessage(
-                session
-            )}`;
-    }
-
-    await interaction.editReply({
-        content:
-            resultText,
-        components:
-            lockedRows
-    });
+    await interaction.editReply(
+        v2Payload(
+            buildResultContainer(
+                session,
+                selectedAnswer,
+                correct
+                    ?
+                    'correct'
+                    :
+                    'wrong'
+            )
+        )
+    );
 
     scheduleNextQuestion(
         interaction,
@@ -1822,8 +2049,6 @@ async function handleInteraction(
         await handleAnswer(
             interaction
         );
-
-        return;
     }
 }
 
