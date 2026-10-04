@@ -7,11 +7,19 @@ module.exports = [
     {
         id: 'lg1',
         title: 'Pets',
-        introduction: 'Three friends each own a different pet. Use the clues to work out who owns which pet.',
+        introduction: 'Three friends each own a different pet. Work out who owns which pet.',
         rowLabel: 'Person',
         columnLabel: 'Pet',
-        rows: ['Alice', 'Bob', 'Carol'],
-        columns: ['Dog', 'Cat', 'Bird'],
+        rows: [
+            'Alice',
+            'Bob',
+            'Carol'
+        ],
+        columns: [
+            'Dog',
+            'Cat',
+            'Bird'
+        ],
         clues: [
             'Neither Alice nor Bob owns the dog.',
             'Alice does not own the cat.'
@@ -26,74 +34,105 @@ module.exports = [
     {
         id: 'lg2',
         title: 'Hot Drinks',
-        introduction: 'Three friends each chose a different hot drink. Work out who chose what.',
+        introduction: 'Three people each ordered a different hot drink. Work out who ordered what.',
         rowLabel: 'Person',
         columnLabel: 'Drink',
-        rows: ['Mia', 'Noah', 'Leo'],
-        columns: ['Tea', 'Coffee', 'Cocoa'],
+        rows: [
+            'Mia',
+            'Noah',
+            'Leo'
+        ],
+        columns: [
+            'Tea',
+            'Coffee',
+            'Hot Chocolate'
+        ],
         clues: [
-            'Noah chose neither tea nor coffee.',
-            'Mia did not choose tea.'
+            'Noah ordered neither tea nor coffee.',
+            'Mia did not order tea.'
         ],
         solution: {
             Mia: 'Coffee',
-            Noah: 'Cocoa',
+            Noah: 'Hot Chocolate',
             Leo: 'Tea'
         }
     },
 
     {
         id: 'lg3',
-        title: 'Hobbies',
-        introduction: 'Each person has a different favourite hobby. Match each person to their hobby.',
-        rowLabel: 'Person',
-        columnLabel: 'Hobby',
-        rows: ['Ruby', 'Owen', 'Zara'],
-        columns: ['Painting', 'Cycling', 'Chess'],
+        title: 'Fruit Bowls',
+        introduction: 'Three children each chose a different fruit. Work out who chose which fruit.',
+        rowLabel: 'Child',
+        columnLabel: 'Fruit',
+        rows: [
+            'Ruby',
+            'Oscar',
+            'Lily'
+        ],
+        columns: [
+            'Apple',
+            'Banana',
+            'Orange'
+        ],
         clues: [
-            'The cyclist is not Ruby.',
-            'Owen prefers painting.',
-            'Zara does not play chess.'
+            'Ruby did not choose the apple.',
+            'Oscar chose neither the banana nor the orange.'
         ],
         solution: {
-            Ruby: 'Chess',
-            Owen: 'Painting',
-            Zara: 'Cycling'
+            Ruby: 'Banana',
+            Oscar: 'Apple',
+            Lily: 'Orange'
         }
     },
 
     {
         id: 'lg4',
-        title: 'Jobs',
-        introduction: 'Three people have three different jobs. Use the clues to match each person to a job.',
-        rowLabel: 'Person',
-        columnLabel: 'Job',
-        rows: ['Finn', 'Grace', 'Ivy'],
-        columns: ['Chef', 'Teacher', 'Pilot'],
+        title: 'School Subjects',
+        introduction: 'Three pupils each chose a different favourite subject. Work out who chose what.',
+        rowLabel: 'Pupil',
+        columnLabel: 'Subject',
+        rows: [
+            'Freddie',
+            'Grace',
+            'Henry'
+        ],
+        columns: [
+            'Maths',
+            'History',
+            'Science'
+        ],
         clues: [
-            'Ivy is not the teacher.',
-            'The chef is not Finn.',
-            'Grace is the pilot.'
+            'Grace did not choose history.',
+            'Henry chose neither maths nor science.'
         ],
         solution: {
-            Finn: 'Teacher',
-            Grace: 'Pilot',
-            Ivy: 'Chef'
+            Freddie: 'Science',
+            Grace: 'Maths',
+            Henry: 'History'
         }
     },
 
     {
         id: 'lg5',
         title: 'Transport',
-        introduction: 'Three friends used three different ways to travel. Work out how each person travelled.',
+        introduction: 'Three commuters each used a different form of transport. Work out who travelled how.',
         rowLabel: 'Person',
         columnLabel: 'Transport',
-        rows: ['Jack', 'Ella', 'Sam'],
-        columns: ['Bus', 'Bike', 'Train'],
+        rows: [
+            'Jack',
+            'Ella',
+            'Sam'
+        ],
+        columns: [
+            'Bus',
+            'Bike',
+            'Train'
+        ],
         clues: [
             'Ella did not travel by bike.',
             'The train passenger was not Sam.',
-            'Jack did not take the bus.'
+            'Jack did not take the bus.',
+            'Ella did not travel by train.'
         ],
         solution: {
             Jack: 'Train',
@@ -105,14 +144,23 @@ module.exports = [
     {
         id: 'lg6',
         title: 'Desserts',
-        introduction: 'Each person chose a different dessert. Match each person to their dessert.',
-        rowLabel: 'Person',
+        introduction: 'Three diners each ordered a different dessert. Work out who ordered what.',
+        rowLabel: 'Diner',
         columnLabel: 'Dessert',
-        rows: ['Amy', 'Ben', 'Cara'],
-        columns: ['Cake', 'Pie', 'Ice Cream'],
+        rows: [
+            'Amy',
+            'Ben',
+            'Cara'
+        ],
+        columns: [
+            'Cake',
+            'Pie',
+            'Ice Cream'
+        ],
         clues: [
             'Ben did not order pie.',
-            'Amy chose neither cake nor ice cream.'
+            'Amy chose neither cake nor ice cream.',
+            'Ben did not order ice cream.'
         ],
         solution: {
             Amy: 'Pie',
@@ -123,110 +171,155 @@ module.exports = [
 
     {
         id: 'lg7',
-        title: 'Holiday Destinations',
-        introduction: 'Three travellers each visited a different city. Use the clues to find each destination.',
-        rowLabel: 'Person',
-        columnLabel: 'City',
-        rows: ['Liam', 'Nina', 'Theo'],
-        columns: ['Rome', 'Paris', 'Lisbon'],
+        title: 'Garden Flowers',
+        introduction: 'Three neighbours each planted a different flower. Work out who planted which flower.',
+        rowLabel: 'Neighbour',
+        columnLabel: 'Flower',
+        rows: [
+            'Ivy',
+            'George',
+            'Nina'
+        ],
+        columns: [
+            'Rose',
+            'Tulip',
+            'Daisy'
+        ],
         clues: [
-            'Neither Liam nor Nina went to Paris.',
-            'Nina did not visit Lisbon.'
+            'George did not plant roses.',
+            'Nina planted neither tulips nor daisies.'
         ],
         solution: {
-            Liam: 'Lisbon',
-            Nina: 'Rome',
-            Theo: 'Paris'
+            Ivy: 'Tulip',
+            George: 'Daisy',
+            Nina: 'Rose'
         }
     },
 
     {
         id: 'lg8',
-        title: 'Favourite Colours',
-        introduction: 'Each person has a different favourite colour. Work out who likes which colour.',
-        rowLabel: 'Person',
-        columnLabel: 'Colour',
-        rows: ['Evie', 'Max', 'Isla'],
-        columns: ['Red', 'Blue', 'Green'],
+        title: 'Cinema Snacks',
+        introduction: 'Three friends each bought a different cinema snack. Work out who bought what.',
+        rowLabel: 'Friend',
+        columnLabel: 'Snack',
+        rows: [
+            'Ethan',
+            'Sophie',
+            'Max'
+        ],
+        columns: [
+            'Popcorn',
+            'Nachos',
+            'Sweets'
+        ],
         clues: [
-            'Max does not favour red.',
-            "Isla's favourite colour is red.",
-            "Evie's favourite colour is not green."
+            'Sophie did not buy popcorn.',
+            'Ethan bought neither nachos nor sweets.'
         ],
         solution: {
-            Evie: 'Blue',
-            Max: 'Green',
-            Isla: 'Red'
+            Ethan: 'Popcorn',
+            Sophie: 'Sweets',
+            Max: 'Nachos'
         }
     },
 
     {
         id: 'lg9',
-        title: 'Sports',
-        introduction: 'Three friends each play a different sport. Match each person to their sport.',
-        rowLabel: 'Person',
-        columnLabel: 'Sport',
-        rows: ['Ava', 'Luke', 'Maya'],
-        columns: ['Tennis', 'Football', 'Swimming'],
+        title: 'Weekend Jobs',
+        introduction: 'Three teenagers each have a different weekend job. Work out who does which job.',
+        rowLabel: 'Teenager',
+        columnLabel: 'Job',
+        rows: [
+            'Holly',
+            'Daniel',
+            'Finn'
+        ],
+        columns: [
+            'Cafe',
+            'Shop',
+            'Cinema'
+        ],
         clues: [
-            'Luke plays neither football nor swimming.',
-            'Ava does not play football.'
+            'Daniel does not work at the cafe.',
+            'Finn works neither in the shop nor the cinema.'
         ],
         solution: {
-            Ava: 'Swimming',
-            Luke: 'Tennis',
-            Maya: 'Football'
+            Holly: 'Shop',
+            Daniel: 'Cinema',
+            Finn: 'Cafe'
         }
     },
 
     {
         id: 'lg10',
-        title: 'Breakfast',
-        introduction: 'Each person ate a different breakfast. Work out who ate what.',
+        title: 'Favourite Colours',
+        introduction: 'Three people each chose a different favourite colour. Work out who chose which colour.',
         rowLabel: 'Person',
-        columnLabel: 'Breakfast',
-        rows: ['Holly', 'Ryan', 'Jude'],
-        columns: ['Toast', 'Cereal', 'Pancakes'],
+        columnLabel: 'Colour',
+        rows: [
+            'Molly',
+            'Luke',
+            'Evie'
+        ],
+        columns: [
+            'Red',
+            'Blue',
+            'Green'
+        ],
         clues: [
-            'Ryan did not eat cereal.',
-            'Holly did not have toast.',
-            'Jude had toast.'
+            'Luke did not choose green.',
+            'Molly chose neither red nor blue.'
         ],
         solution: {
-            Holly: 'Cereal',
-            Ryan: 'Pancakes',
-            Jude: 'Toast'
+            Molly: 'Green',
+            Luke: 'Red',
+            Evie: 'Blue'
         }
     },
 
     {
         id: 'lg11',
-        title: 'Music',
-        introduction: 'Three musicians each play a different instrument. Match them correctly.',
+        title: 'Breakfast',
+        introduction: 'Three people each ate a different breakfast. Work out who ate what.',
         rowLabel: 'Person',
-        columnLabel: 'Instrument',
-        rows: ['Sophie', 'Ethan', 'Kai'],
-        columns: ['Guitar', 'Piano', 'Drums'],
+        columnLabel: 'Breakfast',
+        rows: [
+            'Tom',
+            'Sarah',
+            'Ben'
+        ],
+        columns: [
+            'Toast',
+            'Cereal',
+            'Porridge'
+        ],
         clues: [
-            'The drummer is not Ethan.',
-            'Neither Sophie nor Ethan plays guitar.',
-            'Sophie does not play piano.'
+            'Sarah did not eat toast.',
+            'Ben ate neither cereal nor porridge.'
         ],
         solution: {
-            Sophie: 'Drums',
-            Ethan: 'Piano',
-            Kai: 'Guitar'
+            Tom: 'Cereal',
+            Sarah: 'Porridge',
+            Ben: 'Toast'
         }
     },
 
     {
         id: 'lg12',
         title: 'Books',
-        introduction: 'Three readers each chose a different type of book. Work out who chose which genre.',
-        rowLabel: 'Person',
-        columnLabel: 'Genre',
-        rows: ['Lucy', 'Adam', 'Molly'],
-        columns: ['Mystery', 'Fantasy', 'History'],
+        introduction: 'Three readers each chose a different type of book. Work out who chose which one.',
+        rowLabel: 'Reader',
+        columnLabel: 'Book',
+        rows: [
+            'Lucy',
+            'Adam',
+            'Molly'
+        ],
+        columns: [
+            'Mystery',
+            'History',
+            'Fantasy'
+        ],
         clues: [
             'Lucy did not choose history.',
             'The mystery reader was Molly.'
@@ -240,132 +333,186 @@ module.exports = [
 
     {
         id: 'lg13',
-        title: 'Sandwiches',
-        introduction: 'Each person ordered a different sandwich filling. Match each person to their choice.',
-        rowLabel: 'Person',
-        columnLabel: 'Filling',
-        rows: ['Dylan', 'Chloe', 'Oscar'],
-        columns: ['Cheese', 'Ham', 'Tuna'],
+        title: 'Ice Cream Flavours',
+        introduction: 'Three friends each chose a different ice cream flavour. Work out who chose what.',
+        rowLabel: 'Friend',
+        columnLabel: 'Flavour',
+        rows: [
+            'Oliver',
+            'Emily',
+            'Harry'
+        ],
+        columns: [
+            'Vanilla',
+            'Chocolate',
+            'Strawberry'
+        ],
         clues: [
-            'Neither Dylan nor Chloe ordered ham.',
-            'Chloe did not choose tuna.'
+            'Emily did not choose vanilla.',
+            'Harry chose neither chocolate nor strawberry.'
         ],
         solution: {
-            Dylan: 'Tuna',
-            Chloe: 'Cheese',
-            Oscar: 'Ham'
+            Oliver: 'Chocolate',
+            Emily: 'Strawberry',
+            Harry: 'Vanilla'
         }
     },
 
     {
         id: 'lg14',
-        title: 'Garden Flowers',
-        introduction: 'Three gardeners each planted a different flower. Work out who planted what.',
-        rowLabel: 'Person',
-        columnLabel: 'Flower',
-        rows: ['Freya', 'Tom', 'Lily'],
-        columns: ['Rose', 'Tulip', 'Daisy'],
+        title: 'Musical Instruments',
+        introduction: 'Three pupils each play a different instrument. Work out who plays which instrument.',
+        rowLabel: 'Pupil',
+        columnLabel: 'Instrument',
+        rows: [
+            'Chloe',
+            'James',
+            'Theo'
+        ],
+        columns: [
+            'Piano',
+            'Guitar',
+            'Drums'
+        ],
         clues: [
-            'Tom planted neither roses nor tulips.',
-            'Lily did not plant tulips.'
+            'James does not play piano.',
+            'Theo plays neither guitar nor drums.'
         ],
         solution: {
-            Freya: 'Tulip',
-            Tom: 'Daisy',
-            Lily: 'Rose'
+            Chloe: 'Guitar',
+            James: 'Drums',
+            Theo: 'Piano'
         }
     },
 
     {
         id: 'lg15',
-        title: 'Film Night',
-        introduction: 'Three friends each picked a different type of film. Match each person to their choice.',
-        rowLabel: 'Person',
-        columnLabel: 'Film',
-        rows: ['Megan', 'Josh', 'Nora'],
-        columns: ['Comedy', 'Action', 'Animation'],
+        title: 'Lunch Choices',
+        introduction: 'Three colleagues each chose a different lunch. Work out who ate what.',
+        rowLabel: 'Colleague',
+        columnLabel: 'Lunch',
+        rows: [
+            'Anna',
+            'Mark',
+            'Julie'
+        ],
+        columns: [
+            'Sandwich',
+            'Salad',
+            'Soup'
+        ],
         clues: [
-            'Josh did not choose action.',
-            "The animation was Megan's choice.",
-            'Nora did not choose comedy.'
+            'Mark did not choose soup.',
+            'Anna chose neither the sandwich nor salad.'
         ],
         solution: {
-            Megan: 'Animation',
-            Josh: 'Comedy',
-            Nora: 'Action'
+            Anna: 'Soup',
+            Mark: 'Sandwich',
+            Julie: 'Salad'
         }
     },
 
     {
         id: 'lg16',
-        title: 'Ice Cream Flavours',
-        introduction: 'Each person chose a different ice cream flavour. Work out who chose what.',
-        rowLabel: 'Person',
-        columnLabel: 'Flavour',
-        rows: ['Erin', 'Caleb', 'Poppy'],
-        columns: ['Vanilla', 'Chocolate', 'Strawberry'],
+        title: 'Holiday Destinations',
+        introduction: 'Three travellers each visited a different destination. Work out who went where.',
+        rowLabel: 'Traveller',
+        columnLabel: 'Destination',
+        rows: [
+            'Ryan',
+            'Beth',
+            'Callum'
+        ],
+        columns: [
+            'Spain',
+            'France',
+            'Italy'
+        ],
         clues: [
-            'Caleb did not choose chocolate.',
-            'Neither Erin nor Caleb chose strawberry.',
-            'Erin did not choose vanilla.'
+            'Beth did not visit Spain.',
+            'Callum visited neither France nor Italy.'
         ],
         solution: {
-            Erin: 'Chocolate',
-            Caleb: 'Vanilla',
-            Poppy: 'Strawberry'
+            Ryan: 'France',
+            Beth: 'Italy',
+            Callum: 'Spain'
         }
     },
 
     {
         id: 'lg17',
-        title: 'After-School Clubs',
-        introduction: 'Three pupils each joined a different club. Match each pupil to their club.',
-        rowLabel: 'Pupil',
-        columnLabel: 'Club',
-        rows: ['Maisie', 'Henry', 'Arlo'],
-        columns: ['Drama', 'Science', 'Art'],
+        title: 'Sports',
+        introduction: 'Three friends each play a different sport. Work out who plays which sport.',
+        rowLabel: 'Friend',
+        columnLabel: 'Sport',
+        rows: [
+            'Katie',
+            'Josh',
+            'Lewis'
+        ],
+        columns: [
+            'Football',
+            'Tennis',
+            'Swimming'
+        ],
         clues: [
-            'Maisie did not join drama.',
-            'Henry joined science.',
-            'Arlo did not join art.'
+            'Josh does not play football.',
+            'Lewis plays neither tennis nor swimming.'
         ],
         solution: {
-            Maisie: 'Art',
-            Henry: 'Science',
-            Arlo: 'Drama'
+            Katie: 'Tennis',
+            Josh: 'Swimming',
+            Lewis: 'Football'
         }
     },
 
     {
         id: 'lg18',
-        title: 'Fruit',
-        introduction: 'Three people each chose a different fruit. Work out who chose which one.',
-        rowLabel: 'Person',
-        columnLabel: 'Fruit',
-        rows: ['Millie', 'George', 'Tara'],
-        columns: ['Apple', 'Banana', 'Orange'],
+        title: 'Pets at the Vet',
+        introduction: 'Three owners each brought a different animal to the vet. Work out who brought which pet.',
+        rowLabel: 'Owner',
+        columnLabel: 'Pet',
+        rows: [
+            'Daisy',
+            'Peter',
+            'Amir'
+        ],
+        columns: [
+            'Rabbit',
+            'Cat',
+            'Dog'
+        ],
         clues: [
-            'The apple was not chosen by Millie or George.',
-            'Millie did not choose the orange.'
+            'Peter did not bring the rabbit.',
+            'Daisy brought neither the cat nor dog.'
         ],
         solution: {
-            Millie: 'Banana',
-            George: 'Orange',
-            Tara: 'Apple'
+            Daisy: 'Rabbit',
+            Peter: 'Dog',
+            Amir: 'Cat'
         }
     },
 
     {
         id: 'lg19',
         title: 'Weekend Activities',
-        introduction: 'Three friends each chose a different weekend activity. Match each person to their activity.',
-        rowLabel: 'Person',
+        introduction: 'Three friends each did a different activity at the weekend. Work out who did what.',
+        rowLabel: 'Friend',
         columnLabel: 'Activity',
-        rows: ['Archie', 'Layla', 'Eli'],
-        columns: ['Cinema', 'Bowling', 'Museum'],
+        rows: [
+            'Archie',
+            'Layla',
+            'Eli'
+        ],
+        columns: [
+            'Cinema',
+            'Bowling',
+            'Museum'
+        ],
         clues: [
             'Layla did not visit the museum.',
-            'Archie chose neither the cinema nor bowling.'
+            'Archie chose neither the cinema nor bowling.',
+            'Layla did not go to the cinema.'
         ],
         solution: {
             Archie: 'Museum',
@@ -376,14 +523,21 @@ module.exports = [
 
     {
         id: 'lg20',
-        title: 'Lunches',
-        introduction: 'Each person had a different lunch. Work out who ate what.',
-        rowLabel: 'Person',
+        title: 'Cafe Lunch',
+        introduction: 'Three customers each ordered a different lunch. Work out who ordered what.',
+        rowLabel: 'Customer',
         columnLabel: 'Lunch',
-        rows: ['Rosie', 'Jamie', 'Aiden'],
-        columns: ['Soup', 'Salad', 'Pasta'],
+        rows: [
+            'Rosie',
+            'Jamie',
+            'Aiden'
+        ],
+        columns: [
+            'Soup',
+            'Salad',
+            'Pasta'
+        ],
         clues: [
-            'Rosie did not have soup.',
             'Aiden had pasta.',
             'Jamie did not have salad.'
         ],
@@ -393,7 +547,6 @@ module.exports = [
             Aiden: 'Pasta'
         }
     },
-
     {
         id: 'lg21',
         title: 'Bakery Orders',
@@ -501,7 +654,8 @@ module.exports = [
         columns: ['Mango', 'Berry', 'Banana'],
         clues: [
             'Mabel did not order mango.',
-            'Kieran chose neither berry nor banana.'
+            'Kieran chose neither berry nor banana.',
+            'Mabel did not order berry.'
         ],
         solution: {
             Kieran: 'Mango',
@@ -540,7 +694,8 @@ module.exports = [
         columns: ['Mushroom', 'Pepper', 'Ham'],
         clues: [
             'Nathan chose neither mushroom nor ham.',
-            'Georgia did not choose pepper.'
+            'Georgia did not choose pepper.',
+            'Georgia did not choose mushroom.'
         ],
         solution: {
             Olive: 'Mushroom',
@@ -677,7 +832,8 @@ module.exports = [
         columns: ['Pirate', 'Wizard', 'Robot'],
         clues: [
             'Matilda was not dressed as a wizard.',
-            'Reuben wore neither the pirate nor robot costume.'
+            'Reuben wore neither the pirate nor robot costume.',
+            'Matilda was not dressed as a pirate.'
         ],
         solution: {
             Reuben: 'Wizard',
@@ -716,7 +872,8 @@ module.exports = [
         columns: ['Chips', 'Ice Cream', 'Doughnut'],
         clues: [
             "The chips were not Aaron's.",
-            'Elsie bought neither the ice cream nor the doughnut.'
+            'Elsie bought neither the ice cream nor the doughnut.',
+            'Aaron did not buy the ice cream.'
         ],
         solution: {
             Elsie: 'Chips',
@@ -782,7 +939,6 @@ module.exports = [
             Rafi: 'Orange'
         }
     },
-
     {
         id: 'lg41',
         title: 'Cinema Snacks',
@@ -1085,7 +1241,8 @@ module.exports = [
         columns: ['Sprinkles', 'Cherry', 'Chocolate'],
         clues: [
             'Cole did not use sprinkles.',
-            'Annie used neither the cherry nor chocolate.'
+            'Annie used neither the cherry nor chocolate.',
+            'Cole did not use the cherry.'
         ],
         solution: {
             Annie: 'Sprinkles',
@@ -1171,396 +1328,397 @@ module.exports = [
             George: 'Photography'
         }
     },
-
     {
         id: 'lg61',
-        title: 'Breakfast Drinks',
-        introduction: 'Three people each chose a different drink with breakfast. Work out who drank what.',
+        title: 'Breakfast Cereals',
+        introduction: 'Three people each chose a different cereal for breakfast. Work out who chose what.',
         rowLabel: 'Person',
-        columnLabel: 'Drink',
-        rows: ['Cora', 'Jamie', 'Bilal'],
-        columns: ['Juice', 'Tea', 'Coffee'],
+        columnLabel: 'Cereal',
+        rows: ['Dylan', 'Maisie', 'Harvey'],
+        columns: ['Cornflakes', 'Muesli', 'Porridge'],
         clues: [
-            'Jamie did not drink coffee.',
-            'Neither Cora nor Jamie chose juice.'
+            'Maisie did not choose cornflakes.',
+            'Harvey chose neither muesli nor porridge.'
         ],
         solution: {
-            Cora: 'Coffee',
-            Jamie: 'Tea',
-            Bilal: 'Juice'
+            Dylan: 'Muesli',
+            Maisie: 'Porridge',
+            Harvey: 'Cornflakes'
         }
     },
 
     {
         id: 'lg62',
-        title: 'Bowling Shoes',
-        introduction: 'Three bowlers each wore a different colour pair of shoes. Match each bowler to their colour.',
-        rowLabel: 'Bowler',
-        columnLabel: 'Colour',
-        rows: ['Marnie', 'Theo', 'Jasper'],
-        columns: ['Red', 'Blue', 'Green'],
+        title: 'Pet Names',
+        introduction: 'Three owners each have a pet with a different name. Work out which pet name belongs to each owner.',
+        rowLabel: 'Owner',
+        columnLabel: 'Pet Name',
+        rows: ['Megan', 'Arthur', 'Lily'],
+        columns: ['Buddy', 'Milo', 'Luna'],
         clues: [
-            'Jasper wore neither red nor blue.',
-            'Marnie did not wear blue.'
+            "Milo is not Megan's pet.",
+            "Luna belongs to Lily.",
+            "Arthur's pet is not Luna."
         ],
         solution: {
-            Marnie: 'Red',
-            Theo: 'Blue',
-            Jasper: 'Green'
+            Megan: 'Buddy',
+            Arthur: 'Milo',
+            Lily: 'Luna'
         }
     },
 
     {
         id: 'lg63',
-        title: 'Sandcastle Contest',
-        introduction: 'Three children each built a different type of sandcastle. Work out who built what.',
+        title: 'Sandcastle Flags',
+        introduction: 'Three children each put a different coloured flag on their sandcastle. Work out who used which colour.',
         rowLabel: 'Child',
-        columnLabel: 'Castle',
-        rows: ['Penny', 'Adam', 'Rosa'],
-        columns: ['Tower', 'Fort', 'Palace'],
+        columnLabel: 'Flag',
+        rows: ['Ellie', 'Zach', 'Freya'],
+        columns: ['Red', 'Blue', 'Yellow'],
         clues: [
-            'Adam did not build the tower.',
-            'Rosa built the palace.',
-            'Penny did not build the palace.'
+            'Zach used neither the red nor yellow flag.',
+            'Freya did not use red.'
         ],
         solution: {
-            Penny: 'Tower',
-            Adam: 'Fort',
-            Rosa: 'Palace'
+            Ellie: 'Red',
+            Zach: 'Blue',
+            Freya: 'Yellow'
         }
     },
 
     {
         id: 'lg64',
-        title: 'Fruit Juice',
-        introduction: 'Three customers each ordered a different fruit juice. Work out who ordered which one.',
+        title: 'Coffee Shop',
+        introduction: 'Three customers each ordered a different coffee. Match each customer to their drink.',
         rowLabel: 'Customer',
-        columnLabel: 'Juice',
-        rows: ['Hannah', 'Rory', 'Zara'],
-        columns: ['Apple', 'Orange', 'Pineapple'],
+        columnLabel: 'Coffee',
+        rows: ['Marcus', 'Elise', 'Tommy'],
+        columns: ['Latte', 'Mocha', 'Espresso'],
         clues: [
-            "The orange juice was not Rory's.",
-            'Hannah chose neither orange nor pineapple.'
+            'Elise did not order the latte.',
+            'Neither Marcus nor Elise ordered espresso.',
+            'Marcus did not order mocha.'
         ],
         solution: {
-            Hannah: 'Apple',
-            Rory: 'Pineapple',
-            Zara: 'Orange'
+            Marcus: 'Latte',
+            Elise: 'Mocha',
+            Tommy: 'Espresso'
         }
     },
 
     {
         id: 'lg65',
-        title: 'Music Lessons',
-        introduction: 'Three pupils each have a lesson on a different instrument. Match each pupil to their instrument.',
+        title: 'Art Class',
+        introduction: 'Three pupils each used a different art material. Work out who used what.',
         rowLabel: 'Pupil',
-        columnLabel: 'Instrument',
-        rows: ['Freddie', 'Lila', 'Mason'],
-        columns: ['Violin', 'Flute', 'Trumpet'],
+        columnLabel: 'Material',
+        rows: ['Hannah', 'Leon', 'Priya'],
+        columns: ['Paint', 'Charcoal', 'Pastels'],
         clues: [
-            'Lila does not play trumpet.',
-            'Neither Freddie nor Lila plays violin.',
-            'Mason does not play flute.'
+            'Leon used the charcoal.',
+            'Hannah did not use pastels.',
+            'Priya did not use charcoal.'
         ],
         solution: {
-            Freddie: 'Trumpet',
-            Lila: 'Flute',
-            Mason: 'Violin'
+            Hannah: 'Paint',
+            Leon: 'Charcoal',
+            Priya: 'Pastels'
         }
     },
 
     {
         id: 'lg66',
-        title: 'Jacket Pockets',
-        introduction: 'Three friends each found a different item in a jacket pocket. Work out who found what.',
+        title: 'Fruit Juice',
+        introduction: 'Three friends each chose a different fruit juice. Work out who chose which one.',
         rowLabel: 'Person',
-        columnLabel: 'Item',
-        rows: ['Ruth', 'Elliot', 'Sami'],
-        columns: ['Coin', 'Ticket', 'Key'],
+        columnLabel: 'Juice',
+        rows: ['Jasper', 'Mia', 'Cole'],
+        columns: ['Apple', 'Orange', 'Pineapple'],
         clues: [
-            'Sami found the key.',
-            'Ruth did not find the ticket.',
-            'Elliot did not find the key.'
+            'Mia chose neither apple nor pineapple.',
+            'Cole did not choose apple.'
         ],
         solution: {
-            Ruth: 'Coin',
-            Elliot: 'Ticket',
-            Sami: 'Key'
+            Jasper: 'Apple',
+            Mia: 'Orange',
+            Cole: 'Pineapple'
         }
     },
 
     {
         id: 'lg67',
-        title: 'Pancake Toppings',
-        introduction: 'Three diners each chose a different topping for their pancakes. Work out who chose what.',
-        rowLabel: 'Diner',
-        columnLabel: 'Topping',
-        rows: ['Leo', 'Sophie', 'Nate'],
-        columns: ['Honey', 'Berries', 'Chocolate'],
+        title: 'Music Lessons',
+        introduction: 'Three pupils each have a lesson on a different instrument. Match each pupil to their instrument.',
+        rowLabel: 'Pupil',
+        columnLabel: 'Instrument',
+        rows: ['Grace', 'Elliot', 'Nina'],
+        columns: ['Violin', 'Piano', 'Guitar'],
         clues: [
-            'Neither Leo nor Nate chose berries.',
-            'Nate did not choose honey.'
+            'Elliot does not play violin.',
+            'Nina plays guitar.',
+            'Grace does not play guitar.'
         ],
         solution: {
-            Leo: 'Honey',
-            Sophie: 'Berries',
-            Nate: 'Chocolate'
+            Grace: 'Violin',
+            Elliot: 'Piano',
+            Nina: 'Guitar'
         }
     },
 
     {
         id: 'lg68',
-        title: 'Bookshop Bags',
-        introduction: 'Three shoppers each bought a different kind of book. Match each shopper to their purchase.',
-        rowLabel: 'Shopper',
-        columnLabel: 'Book',
-        rows: ['Dina', 'Patrick', 'Elise'],
-        columns: ['Novel', 'Cookbook', 'Travel Guide'],
+        title: 'Farm Shop',
+        introduction: 'Three customers each bought a different item from the farm shop. Work out who bought what.',
+        rowLabel: 'Customer',
+        columnLabel: 'Item',
+        rows: ['Martha', 'Joel', 'Anika'],
+        columns: ['Eggs', 'Honey', 'Cheese'],
         clues: [
-            'Patrick bought neither the novel nor travel guide.',
-            'Elise did not buy the novel.'
+            'Neither Martha nor Joel bought cheese.',
+            'Joel did not buy eggs.'
         ],
         solution: {
-            Dina: 'Novel',
-            Patrick: 'Cookbook',
-            Elise: 'Travel Guide'
+            Martha: 'Eggs',
+            Joel: 'Honey',
+            Anika: 'Cheese'
         }
     },
 
     {
         id: 'lg69',
-        title: 'Garden Birds',
-        introduction: 'Three people each spotted a different bird in the garden. Work out who spotted which bird.',
-        rowLabel: 'Person',
-        columnLabel: 'Bird',
-        rows: ['Marcus', 'Jenny', 'Asha'],
-        columns: ['Robin', 'Blackbird', 'Sparrow'],
+        title: 'After-School Clubs',
+        introduction: 'Three pupils each attend a different after-school club. Work out who attends which club.',
+        rowLabel: 'Pupil',
+        columnLabel: 'Club',
+        rows: ['Ollie', 'Bethany', 'Kai'],
+        columns: ['Drama', 'Chess', 'Football'],
         clues: [
-            'Jenny did not see the sparrow.',
-            'The blackbird was spotted by Marcus.',
-            'Asha did not see the blackbird.'
+            'Kai does not attend drama.',
+            'Ollie attends the chess club.',
+            'Bethany does not attend chess.'
         ],
         solution: {
-            Marcus: 'Blackbird',
-            Jenny: 'Robin',
-            Asha: 'Sparrow'
+            Ollie: 'Chess',
+            Bethany: 'Drama',
+            Kai: 'Football'
         }
     },
 
     {
         id: 'lg70',
         title: 'Sandwich Lunch',
-        introduction: 'Three colleagues each chose a different sandwich. Work out who chose which filling.',
+        introduction: 'Three friends each chose a different sandwich filling. Work out who chose what.',
         rowLabel: 'Person',
         columnLabel: 'Filling',
-        rows: ['Derek', 'Mina', 'Grace'],
-        columns: ['Chicken', 'Cheese', 'Egg'],
+        rows: ['Grace', 'Ethan', 'Molly'],
+        columns: ['Ham', 'Cheese', 'Tuna'],
         clues: [
-            'Grace did not choose chicken.',
-            'Derek chose neither cheese nor egg.'
+            'Ethan chose neither ham nor tuna.',
+            'Grace did not choose tuna.',
+            'Grace did not choose cheese.'
         ],
         solution: {
-            Derek: 'Chicken',
-            Mina: 'Cheese',
-            Grace: 'Egg'
+            Grace: 'Ham',
+            Ethan: 'Cheese',
+            Molly: 'Tuna'
         }
     },
 
     {
         id: 'lg71',
-        title: 'Treasure Hunt',
-        introduction: 'Three players each found a different object during a treasure hunt. Work out who found what.',
-        rowLabel: 'Player',
-        columnLabel: 'Object',
-        rows: ['Molly', 'Finn', 'Kira'],
-        columns: ['Map', 'Key', 'Coin'],
+        title: 'Garden Birds',
+        introduction: 'Three people each spotted a different bird in the garden. Work out who saw which bird.',
+        rowLabel: 'Person',
+        columnLabel: 'Bird',
+        rows: ['Alice', 'Darren', 'Suki'],
+        columns: ['Robin', 'Blackbird', 'Sparrow'],
         clues: [
-            'The map was not found by Finn.',
-            'Kira found neither the map nor key.'
+            'Darren did not see the robin.',
+            'Suki saw neither the blackbird nor sparrow.'
         ],
         solution: {
-            Molly: 'Map',
-            Finn: 'Key',
-            Kira: 'Coin'
+            Alice: 'Blackbird',
+            Darren: 'Sparrow',
+            Suki: 'Robin'
         }
     },
 
     {
         id: 'lg72',
-        title: 'Milkshakes',
-        introduction: 'Three friends each ordered a different milkshake flavour. Work out who ordered what.',
-        rowLabel: 'Person',
+        title: 'Ice Lollies',
+        introduction: 'Three children each chose a different ice lolly flavour. Work out who chose which one.',
+        rowLabel: 'Child',
         columnLabel: 'Flavour',
-        rows: ['Archie', 'Nia', 'Tom'],
-        columns: ['Vanilla', 'Chocolate', 'Banana'],
+        rows: ['Poppy', 'Jamie', 'Rohan'],
+        columns: ['Orange', 'Cola', 'Lime'],
         clues: [
-            'Tom did not order chocolate.',
-            'Nia ordered banana.',
-            'Archie did not order banana.'
+            'Jamie did not choose orange.',
+            'Poppy chose neither cola nor lime.'
         ],
         solution: {
-            Archie: 'Chocolate',
-            Nia: 'Banana',
-            Tom: 'Vanilla'
+            Poppy: 'Orange',
+            Jamie: 'Lime',
+            Rohan: 'Cola'
         }
     },
 
     {
         id: 'lg73',
-        title: 'School Bags',
-        introduction: 'Three pupils each have a different colour school bag. Match each pupil to their bag.',
-        rowLabel: 'Pupil',
-        columnLabel: 'Colour',
-        rows: ['Elsa', 'Dylan', 'Hamid'],
-        columns: ['Navy', 'Green', 'Red'],
+        title: 'Bookshop',
+        introduction: 'Three customers each bought a different kind of book. Match each customer to their purchase.',
+        rowLabel: 'Customer',
+        columnLabel: 'Book',
+        rows: ['Sophie', 'Caleb', 'Imani'],
+        columns: ['Crime', 'Travel', 'Cookery'],
         clues: [
-            'Neither Elsa nor Hamid has the green bag.',
-            'Elsa does not have the red bag.'
+            'Caleb bought the travel book.',
+            'Sophie did not buy cookery.',
+            'Imani did not buy travel.'
         ],
         solution: {
-            Elsa: 'Navy',
-            Dylan: 'Green',
-            Hamid: 'Red'
+            Sophie: 'Crime',
+            Caleb: 'Travel',
+            Imani: 'Cookery'
         }
     },
 
     {
         id: 'lg74',
-        title: 'Pizza Sizes',
-        introduction: 'Three customers each ordered a different size pizza. Work out who ordered which size.',
-        rowLabel: 'Customer',
-        columnLabel: 'Size',
-        rows: ['Poppy', 'Dan', 'Alicia'],
-        columns: ['Small', 'Medium', 'Large'],
+        title: 'Bowling Shoes',
+        introduction: 'Three players each wore a different colour pair of bowling shoes. Work out who wore which colour.',
+        rowLabel: 'Player',
+        columnLabel: 'Colour',
+        rows: ['Finn', 'Georgia', 'Max'],
+        columns: ['Red', 'Blue', 'Green'],
         clues: [
-            'Dan ordered neither the small nor large pizza.',
-            'Poppy did not order the large pizza.'
+            'Georgia did not wear green.',
+            'Neither Finn nor Georgia wore blue.',
+            'Finn did not wear red.'
         ],
         solution: {
-            Poppy: 'Small',
-            Dan: 'Medium',
-            Alicia: 'Large'
+            Finn: 'Green',
+            Georgia: 'Red',
+            Max: 'Blue'
         }
     },
 
     {
         id: 'lg75',
-        title: 'Winter Clothes',
-        introduction: 'Three friends each bought a different item of winter clothing. Match each friend to their purchase.',
+        title: 'Biscuit Tin',
+        introduction: 'Three people each chose a different biscuit. Work out who chose what.',
         rowLabel: 'Person',
-        columnLabel: 'Clothing',
-        rows: ['Cerys', 'Noah', 'Imran'],
-        columns: ['Gloves', 'Scarf', 'Hat'],
+        columnLabel: 'Biscuit',
+        rows: ['Ruby', 'Nathan', 'Clara'],
+        columns: ['Digestive', 'Ginger', 'Shortbread'],
         clues: [
-            'Noah did not buy the hat.',
-            'Imran bought the gloves.',
-            'Cerys did not buy gloves.'
+            'Nathan did not choose the digestive.',
+            'Clara chose shortbread.',
+            'Ruby did not choose shortbread.'
         ],
         solution: {
-            Cerys: 'Hat',
-            Noah: 'Scarf',
-            Imran: 'Gloves'
+            Ruby: 'Digestive',
+            Nathan: 'Ginger',
+            Clara: 'Shortbread'
         }
     },
 
     {
         id: 'lg76',
         title: 'Park Benches',
-        introduction: 'Three friends each sat beside a different feature in the park. Work out who sat where.',
+        introduction: 'Three people each sat beside a different park feature. Work out who sat where.',
         rowLabel: 'Person',
         columnLabel: 'Feature',
-        rows: ['Jenna', 'Luke', 'Omar'],
+        rows: ['Luke', 'Amina', 'George'],
         columns: ['Pond', 'Fountain', 'Playground'],
         clues: [
-            "The pond was not beside Luke's bench.",
-            'Jenna sat beside neither the fountain nor playground.'
+            'Amina sat neither beside the pond nor playground.',
+            'Luke did not sit beside the playground.',
+            'Luke did not sit beside the fountain.'
         ],
         solution: {
-            Jenna: 'Pond',
-            Luke: 'Playground',
-            Omar: 'Fountain'
+            Luke: 'Pond',
+            Amina: 'Fountain',
+            George: 'Playground'
         }
     },
 
     {
         id: 'lg77',
-        title: 'Biscuit Tin',
-        introduction: 'Three people each chose a different biscuit. Work out who chose which one.',
+        title: 'Jacket Colours',
+        introduction: 'Three friends each wore a different coloured jacket. Work out who wore which colour.',
         rowLabel: 'Person',
-        columnLabel: 'Biscuit',
-        rows: ['Gina', 'Arthur', 'Leila'],
-        columns: ['Custard Cream', 'Digestive', 'Ginger Nut'],
+        columnLabel: 'Jacket',
+        rows: ['Toby', 'Megan', 'Arlo'],
+        columns: ['Black', 'Red', 'Blue'],
         clues: [
-            'Gina did not choose the custard cream.',
-            'Neither Arthur nor Leila chose the ginger nut.',
-            'Arthur did not choose the digestive.'
+            'Megan did not wear black.',
+            'Arlo wore neither red nor blue.'
         ],
         solution: {
-            Gina: 'Ginger Nut',
-            Arthur: 'Custard Cream',
-            Leila: 'Digestive'
+            Toby: 'Red',
+            Megan: 'Blue',
+            Arlo: 'Black'
         }
     },
 
     {
         id: 'lg78',
-        title: 'Art Gallery',
-        introduction: 'Three visitors each preferred a different type of artwork. Match each visitor to their favourite.',
-        rowLabel: 'Visitor',
-        columnLabel: 'Artwork',
-        rows: ['Holly', 'Ravi', 'Emilia'],
-        columns: ['Portrait', 'Landscape', 'Sculpture'],
+        title: 'Breakfast Toast',
+        introduction: 'Three people each chose a different topping for their toast. Work out who chose what.',
+        rowLabel: 'Person',
+        columnLabel: 'Topping',
+        rows: ['Nora', 'Sam', 'Ellis'],
+        columns: ['Jam', 'Honey', 'Marmalade'],
         clues: [
-            'Emilia preferred sculpture.',
-            'Holly did not choose landscape.',
-            'Ravi did not choose sculpture.'
+            'Sam chose the honey.',
+            'Nora did not choose marmalade.',
+            'Ellis did not choose honey.'
         ],
         solution: {
-            Holly: 'Portrait',
-            Ravi: 'Landscape',
-            Emilia: 'Sculpture'
+            Nora: 'Jam',
+            Sam: 'Honey',
+            Ellis: 'Marmalade'
         }
     },
 
     {
         id: 'lg79',
-        title: 'Afternoon Tea',
-        introduction: 'Three guests each chose a different treat at afternoon tea. Work out who chose what.',
-        rowLabel: 'Guest',
-        columnLabel: 'Treat',
-        rows: ['Megan', 'Colin', 'Farah'],
-        columns: ['Scone', 'Tart', 'Cake'],
+        title: 'Bike Colours',
+        introduction: 'Three cyclists each ride a different coloured bike. Work out who rides which colour.',
+        rowLabel: 'Cyclist',
+        columnLabel: 'Bike',
+        rows: ['Amir', 'Jess', 'Leo'],
+        columns: ['Silver', 'Green', 'Orange'],
         clues: [
-            'Colin did not choose cake.',
-            'Megan chose neither the tart nor cake.'
+            'Jess rides neither the silver nor orange bike.',
+            'Leo does not ride the silver bike.'
         ],
         solution: {
-            Megan: 'Scone',
-            Colin: 'Tart',
-            Farah: 'Cake'
+            Amir: 'Silver',
+            Jess: 'Green',
+            Leo: 'Orange'
         }
     },
 
     {
         id: 'lg80',
-        title: 'Plant Pots',
-        introduction: 'Three gardeners each planted a different herb in a pot. Work out who planted what.',
-        rowLabel: 'Gardener',
-        columnLabel: 'Herb',
-        rows: ['Zoe', 'Martin', 'Priya'],
-        columns: ['Basil', 'Mint', 'Rosemary'],
+        title: 'Cinema Seats',
+        introduction: 'Three friends each sat in a different numbered cinema seat. Work out who sat where.',
+        rowLabel: 'Person',
+        columnLabel: 'Seat',
+        rows: ['Cara', 'Miles', 'Zoe'],
+        columns: ['Seat 1', 'Seat 2', 'Seat 3'],
         clues: [
-            'The basil was not planted by Zoe.',
-            'Priya planted rosemary.',
-            'Martin did not plant rosemary.'
+            'Miles did not sit in Seat 1.',
+            'Cara sat in Seat 2.',
+            'Zoe did not sit in Seat 2.'
         ],
         solution: {
-            Zoe: 'Mint',
-            Martin: 'Basil',
-            Priya: 'Rosemary'
+            Cara: 'Seat 2',
+            Miles: 'Seat 3',
+            Zoe: 'Seat 1'
         }
     },
-
     {
         id: 'lg81',
         title: 'Fairground Treats',
@@ -1629,7 +1787,8 @@ module.exports = [
         columns: ['Beach', 'Woods', 'Canal'],
         clues: [
             "The woods were not Clare's destination.",
-            'Ethan chose neither the beach nor canal.'
+            'Ethan chose neither the beach nor canal.',
+            'Clare did not choose the canal.'
         ],
         solution: {
             Ethan: 'Woods',
@@ -1687,7 +1846,8 @@ module.exports = [
         columns: ['Pear', 'Apple', 'Grapes'],
         clues: [
             'Leo did not bring grapes.',
-            'Maisie brought neither the pear nor apple.'
+            'Maisie brought neither the pear nor apple.',
+            'Leo did not bring the apple.'
         ],
         solution: {
             Maisie: 'Grapes',
@@ -1822,7 +1982,8 @@ module.exports = [
         columns: ['Ham', 'Olives', 'Cheese'],
         clues: [
             'The olives were not bought by Ross.',
-            'Helena bought neither the ham nor cheese.'
+            'Helena bought neither the ham nor cheese.',
+            'Ross did not buy the cheese.'
         ],
         solution: {
             Helena: 'Olives',
