@@ -1,10 +1,11 @@
 // logicgrid.js
-// Logic Grid game engine
+// PuzzlePilot Logic Grid game engine
 // Uses puzzles from logicgrid_pack1.js
 //
 // Features:
 // - Daily puzzle is the same for everyone
 // - Daily puzzle changes at midnight UK time
+// - Daily rotation can use the full puzzle bank
 // - Continuous mode uses random puzzles
 // - Continuous Play Again avoids the previous puzzle
 // - Grid itself is the answer
@@ -12,15 +13,20 @@
 // - ✓ automatically rules out other choices
 // - Reset Grid
 // - Check Solution
+// - Components V2 presentation
 
 const {
     ActionRowBuilder,
     ButtonBuilder,
     ButtonStyle,
-    EmbedBuilder
+    ContainerBuilder,
+    MessageFlags,
+    SeparatorBuilder,
+    TextDisplayBuilder
 } = require('discord.js');
 
-const logicGridPack1 = require('./logicgrid_pack1.js');
+const logicGridPack1 =
+    require('./logicgrid_pack1.js');
 
 // ─────────────────────────────────────────────
 // PUZZLE BANK
@@ -31,19 +37,74 @@ const logicGridPuzzles = [
 ];
 
 // Active games
-const grids = new Map();
+const grids =
+    new Map();
+
+// ─────────────────────────────────────────────
+// COLOURS
+// ─────────────────────────────────────────────
+
+const COLOUR_PURPLE =
+    0x8B5CF6;
+
+const COLOUR_GREEN =
+    0x22C55E;
+
+const COLOUR_RED =
+    0xEF4444;
 
 // ─────────────────────────────────────────────
 // UK DATE
 // ─────────────────────────────────────────────
 
-function getUKDate() {
-    return new Intl.DateTimeFormat('en-GB', {
-        timeZone: 'Europe/London',
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit'
-    }).format(new Date());
+function getUKDateParts() {
+    const parts =
+        new Intl.DateTimeFormat(
+            'en-GB',
+            {
+                timeZone:
+                    'Europe/London',
+                year:
+                    'numeric',
+                month:
+                    '2-digit',
+                day:
+                    '2-digit'
+            }
+        ).formatToParts(
+            new Date()
+        );
+
+    const values = {};
+
+    for (
+        const part of parts
+    ) {
+        if (
+            part.type ===
+                'year' ||
+            part.type ===
+                'month' ||
+            part.type ===
+                'day'
+        ) {
+            values[
+                part.type
+            ] =
+                Number(
+                    part.value
+                );
+        }
+    }
+
+    return {
+        year:
+            values.year,
+        month:
+            values.month,
+        day:
+            values.day
+    };
 }
 
 // ─────────────────────────────────────────────
@@ -51,48 +112,86 @@ function getUKDate() {
 // ─────────────────────────────────────────────
 
 function getDailyPuzzle() {
-    const ukDate = getUKDate();
+    if (
+        logicGridPuzzles.length === 0
+    ) {
+        return null;
+    }
 
-    const numbers =
-        ukDate.match(/\d+/g);
+    const {
+        year,
+        month,
+        day
+    } =
+        getUKDateParts();
 
-    const day =
-        Number(numbers[0]);
+    // Use a real consecutive day number rather than
+    // YYYYMMDD % bank size.
+    //
+    // With a 100-puzzle bank, YYYYMMDD % 100 only
+    // leaves the day of the month, meaning most of
+    // the bank can never become the Daily.
+    //
+    // This advances by one position on each UK date
+    // and can therefore rotate through all puzzles.
 
-    const month =
-        Number(numbers[1]);
-
-    const year =
-        Number(numbers[2]);
-
-    const seed =
-        year * 10000 +
-        month * 100 +
-        day;
+    const dayNumber =
+        Math.floor(
+            Date.UTC(
+                year,
+                month - 1,
+                day
+            ) /
+            86400000
+        );
 
     const index =
-        seed % logicGridPuzzles.length;
+        (
+            (
+                dayNumber %
+                logicGridPuzzles.length
+            ) +
+            logicGridPuzzles.length
+        ) %
+        logicGridPuzzles.length;
 
-    return logicGridPuzzles[index];
+    return logicGridPuzzles[
+        index
+    ];
 }
 
-function getRandomPuzzle(excludePuzzle = null) {
-    if (logicGridPuzzles.length <= 1) {
+function getRandomPuzzle(
+    excludePuzzle = null
+) {
+    if (
+        logicGridPuzzles.length === 0
+    ) {
+        return null;
+    }
+
+    if (
+        logicGridPuzzles.length <= 1
+    ) {
         return logicGridPuzzles[0];
     }
 
     let choices =
         logicGridPuzzles;
 
-    if (excludePuzzle) {
+    if (
+        excludePuzzle
+    ) {
         choices =
             logicGridPuzzles.filter(
                 puzzle =>
-                    puzzle !== excludePuzzle
+                    puzzle !==
+                    excludePuzzle
             );
     }
 
-    if (choices.length === 0) {
+    if (
+        choices.length === 0
+    ) {
         choices =
             logicGridPuzzles;
     }
@@ -109,11 +208,14 @@ function getRandomPuzzle(excludePuzzle = null) {
 // GRID STATE
 // ─────────────────────────────────────────────
 
-function createBlankGrid(puzzle) {
+function createBlankGrid(
+    puzzle
+) {
     return puzzle.rows.map(
         () =>
             puzzle.columns.map(
-                () => 'blank'
+                () =>
+                    'blank'
             )
     );
 }
@@ -123,14 +225,22 @@ function createState(
     mode
 ) {
     return {
-        puzzle,
-        mode,
+        puzzle:
+            puzzle,
+
+        mode:
+            mode,
+
         grid:
             createBlankGrid(
                 puzzle
             ),
-        notice: null,
-        finished: false
+
+        notice:
+            null,
+
+        finished:
+            false
     };
 }
 
@@ -150,51 +260,78 @@ function cycleCell(
             columnIndex
         ];
 
-    if (current === 'blank') {
-        // Mark this cell YES
+    if (
+        current ===
+        'blank'
+    ) {
+        // Mark this cell YES.
+
         state.grid[
             rowIndex
         ][
             columnIndex
-        ] = 'yes';
+        ] =
+            'yes';
 
-        // Other cells in this row become NO
+        // Other cells in this row become NO.
+
         for (
             let c = 0;
-            c < state.puzzle.columns.length;
+            c <
+                state.puzzle
+                    .columns
+                    .length;
             c++
         ) {
-            if (c !== columnIndex) {
+            if (
+                c !==
+                columnIndex
+            ) {
                 state.grid[
                     rowIndex
-                ][c] = 'no';
+                ][
+                    c
+                ] =
+                    'no';
             }
         }
 
-        // Other cells in this column become NO
+        // Other cells in this column become NO.
+
         for (
             let r = 0;
-            r < state.puzzle.rows.length;
+            r <
+                state.puzzle
+                    .rows
+                    .length;
             r++
         ) {
-            if (r !== rowIndex) {
+            if (
+                r !==
+                rowIndex
+            ) {
                 state.grid[
                     r
                 ][
                     columnIndex
-                ] = 'no';
+                ] =
+                    'no';
             }
         }
 
         return;
     }
 
-    if (current === 'yes') {
+    if (
+        current ===
+        'yes'
+    ) {
         state.grid[
             rowIndex
         ][
             columnIndex
-        ] = 'no';
+        ] =
+            'no';
 
         return;
     }
@@ -203,10 +340,13 @@ function cycleCell(
         rowIndex
     ][
         columnIndex
-    ] = 'blank';
+    ] =
+        'blank';
 }
 
-function resetGrid(state) {
+function resetGrid(
+    state
+) {
     state.grid =
         createBlankGrid(
             state.puzzle
@@ -223,120 +363,343 @@ function resetGrid(state) {
 // DISPLAY HELPERS
 // ─────────────────────────────────────────────
 
-function escapeMarkdown(text) {
-    return String(text).replace(
+function escapeMarkdown(
+    text
+) {
+    return String(
+        text
+    ).replace(
         /([\\_*~`|>])/g,
         '\\$1'
     );
 }
 
-function getModeTitle(state) {
-    return state.mode === 'daily'
-        ? `🧠 Daily Logic Grid — ${state.puzzle.title}`
-        : `🧠 Continuous Logic Grid — ${state.puzzle.title}`;
+function getModeHeading(
+    state
+) {
+    return state.mode ===
+        'daily'
+        ?
+        'DAILY LOGIC GRID'
+        :
+        'LOGIC GRID';
 }
 
-function getModeFooter(state) {
-    return state.mode === 'daily'
-        ? 'Daily puzzle • Changes at midnight UK time'
-        : 'Continuous mode • Play as many puzzles as you like';
+function getModeFooter(
+    state
+) {
+    return state.mode ===
+        'daily'
+        ?
+        'Daily puzzle • Changes at midnight UK time'
+        :
+        'Continuous mode • Play as many puzzles as you like';
 }
 
-function buildGridGuide(puzzle) {
+function buildGridGuide(
+    puzzle
+) {
     return puzzle.columns
         .map(
-            (column, index) =>
-                `${index + 1}. ${escapeMarkdown(column)}`
+            (
+                column,
+                index
+            ) =>
+                `**${index + 1}.** ` +
+                `${escapeMarkdown(
+                    column
+                )}`
         )
-        .join('   •   ');
+        .join(
+            '   •   '
+        );
 }
 
-function buildClueText(puzzle) {
+function buildClueText(
+    puzzle
+) {
     return puzzle.clues
         .map(
-            (clue, index) =>
-                `${index + 1}. ${escapeMarkdown(clue)}`
+            (
+                clue,
+                index
+            ) =>
+                `**${index + 1}.** ` +
+                `${escapeMarkdown(
+                    clue
+                )}`
         )
-        .join('\n');
+        .join(
+            '\n'
+        );
+}
+
+function separator() {
+    return new SeparatorBuilder();
 }
 
 // ─────────────────────────────────────────────
-// EMBEDS
+// COMPONENTS V2 BOARD
 // ─────────────────────────────────────────────
 
-function buildBoardEmbed(state) {
+function buildBoardContainer(
+    state
+) {
     const puzzle =
         state.puzzle;
 
-    const embed =
-        new EmbedBuilder()
-            .setColor(
-                0x5865F2
-            )
-            .setTitle(
-                getModeTitle(
-                    state
-                )
-            )
-            .setDescription(
-                `${escapeMarkdown(puzzle.introduction)}\n\n` +
-                `**Clues**\n` +
-                `${buildClueText(puzzle)}\n\n` +
-                `**${escapeMarkdown(puzzle.columnLabel)} columns:** ` +
-                `${buildGridGuide(puzzle)}\n\n` +
-                'Click a cell to cycle **blank → ✓ → ✗ → blank**.\n' +
-                'A ✓ automatically rules out the other choices in its row and column.'
-            )
-            .setFooter({
-                text:
-                    `${getModeFooter(state)} • ` +
-                    'Press Check Solution when you are ready.'
-            });
+    const container =
+        new ContainerBuilder()
+            .setAccentColor(
+                state.notice &&
+                state.notice.type ===
+                    'error'
+                    ?
+                    COLOUR_RED
+                    :
+                    COLOUR_PURPLE
+            );
 
-    if (state.notice) {
-        embed.addFields({
-            name:
-                state.notice.title,
-            value:
-                state.notice.text
-        });
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `# 🧩 PUZZLEPILOT\n` +
+                `## ${getModeHeading(
+                    state
+                )}`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `### ${escapeMarkdown(
+                    puzzle.title
+                )}\n` +
+                `${escapeMarkdown(
+                    puzzle.introduction
+                )}`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `### CLUES\n` +
+                `${buildClueText(
+                    puzzle
+                )}`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `### ${escapeMarkdown(
+                    puzzle.columnLabel
+                ).toUpperCase()} COLUMNS\n` +
+                `${buildGridGuide(
+                    puzzle
+                )}`
+            )
+    );
+
+    if (
+        state.notice
+    ) {
+        container.addSeparatorComponents(
+            separator()
+        );
+
+        container.addTextDisplayComponents(
+            new TextDisplayBuilder()
+                .setContent(
+                    `### ${state.notice.title}\n` +
+                    `${state.notice.text}`
+                )
+        );
     }
 
-    return embed;
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `Click a cell to cycle ` +
+                `**blank → ✓ → ✗ → blank**.\n` +
+                `A **✓** automatically rules out ` +
+                `the other choices in its row and column.`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `${getModeFooter(
+                    state
+                )}\n` +
+                `Press **Check Solution** when you are ready.`
+            )
+    );
+
+    return container;
 }
 
-function buildWinEmbed(state) {
+function boardPayload(
+    state
+) {
+    return {
+        components: [
+            buildBoardContainer(
+                state
+            ),
+            ...renderGridComponents(
+                state
+            )
+        ],
+
+        flags:
+            MessageFlags
+                .IsComponentsV2
+    };
+}
+
+// ─────────────────────────────────────────────
+// COMPONENTS V2 COMPLETION
+// ─────────────────────────────────────────────
+
+function buildWinContainer(
+    state
+) {
     const puzzle =
         state.puzzle;
 
     const solutionLines =
         puzzle.rows.map(
             row =>
-                `**${escapeMarkdown(row)}** → ` +
-                `${escapeMarkdown(puzzle.solution[row])}`
+                `**${escapeMarkdown(
+                    row
+                )}** → ` +
+                `${escapeMarkdown(
+                    puzzle.solution[
+                        row
+                    ]
+                )}`
         );
 
-    return new EmbedBuilder()
-        .setColor(
-            0x57F287
-        )
-        .setTitle(
-            '🎉 Logic Grid Complete!'
-        )
-        .setDescription(
-            `You solved **${escapeMarkdown(puzzle.title)}** correctly.\n\n` +
-            solutionLines.join('\n')
-        )
-        .setFooter({
-            text:
+    const container =
+        new ContainerBuilder()
+            .setAccentColor(
+                COLOUR_GREEN
+            );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `# 🧩 PUZZLEPILOT\n` +
+                `## 🎉 LOGIC GRID COMPLETE!`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `You solved **${escapeMarkdown(
+                    puzzle.title
+                )}** correctly.`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `### SOLUTION\n` +
+                `${solutionLines.join(
+                    '\n'
+                )}`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
                 getModeFooter(
                     state
                 )
-        });
+            )
+    );
+
+    if (
+        state.mode ===
+        'daily'
+    ) {
+        container.addSeparatorComponents(
+            separator()
+        );
+
+        container.addTextDisplayComponents(
+            new TextDisplayBuilder()
+                .setContent(
+                    `Come back after **midnight UK time** ` +
+                    `for a new Daily Logic Grid.`
+                )
+        );
+    }
+
+    return container;
+}
+
+function winPayload(
+    state
+) {
+    return {
+        components: [
+            buildWinContainer(
+                state
+            ),
+            ...renderFinishedControls(
+                state
+            )
+        ],
+
+        flags:
+            MessageFlags
+                .IsComponentsV2
+    };
 }
 
 // ─────────────────────────────────────────────
-// BUTTONS
+// GRID BUTTONS
 // ─────────────────────────────────────────────
 
 function getCellButton(
@@ -351,20 +714,29 @@ function getCellButton(
             columnIndex
         ];
 
-    let label = '•';
+    let label =
+        '•';
 
     let style =
         ButtonStyle.Secondary;
 
-    if (cellState === 'yes') {
-        label = '✓';
+    if (
+        cellState ===
+        'yes'
+    ) {
+        label =
+            '✓';
 
         style =
             ButtonStyle.Success;
     }
 
-    if (cellState === 'no') {
-        label = '✗';
+    if (
+        cellState ===
+        'no'
+    ) {
+        label =
+            '✗';
 
         style =
             ButtonStyle.Danger;
@@ -385,7 +757,9 @@ function getCellButton(
         );
 }
 
-function renderGridComponents(state) {
+function renderGridComponents(
+    state
+) {
     const rows = [];
 
     const puzzle =
@@ -393,7 +767,8 @@ function renderGridComponents(state) {
 
     for (
         let rowIndex = 0;
-        rowIndex < puzzle.rows.length;
+        rowIndex <
+            puzzle.rows.length;
         rowIndex++
     ) {
         const actionRow =
@@ -419,7 +794,8 @@ function renderGridComponents(state) {
 
         for (
             let columnIndex = 0;
-            columnIndex < puzzle.columns.length;
+            columnIndex <
+                puzzle.columns.length;
             columnIndex++
         ) {
             actionRow.addComponents(
@@ -475,7 +851,9 @@ function renderGridComponents(state) {
     return rows;
 }
 
-function renderFinishedControls(state) {
+function renderFinishedControls(
+    state
+) {
     if (
         state.mode !==
         'continuous'
@@ -511,12 +889,15 @@ function getSelectedColumnForRow(
     state,
     rowIndex
 ) {
-    const yesIndexes = [];
+    const yesIndexes =
+        [];
 
     for (
         let columnIndex = 0;
         columnIndex <
-            state.puzzle.columns.length;
+            state.puzzle
+                .columns
+                .length;
         columnIndex++
     ) {
         if (
@@ -524,7 +905,8 @@ function getSelectedColumnForRow(
                 rowIndex
             ][
                 columnIndex
-            ] === 'yes'
+            ] ===
+                'yes'
         ) {
             yesIndexes.push(
                 columnIndex
@@ -533,7 +915,8 @@ function getSelectedColumnForRow(
     }
 
     if (
-        yesIndexes.length !== 1
+        yesIndexes.length !==
+        1
     ) {
         return null;
     }
@@ -541,23 +924,33 @@ function getSelectedColumnForRow(
     return yesIndexes[0];
 }
 
-function isGridComplete(state) {
-    return state.puzzle.rows.every(
-        (_, rowIndex) =>
-            getSelectedColumnForRow(
-                state,
+function isGridComplete(
+    state
+) {
+    return state.puzzle.rows
+        .every(
+            (
+                _,
                 rowIndex
-            ) !== null
-    );
+            ) =>
+                getSelectedColumnForRow(
+                    state,
+                    rowIndex
+                ) !==
+                null
+        );
 }
 
-function isGridCorrect(state) {
+function isGridCorrect(
+    state
+) {
     const puzzle =
         state.puzzle;
 
     for (
         let rowIndex = 0;
-        rowIndex < puzzle.rows.length;
+        rowIndex <
+            puzzle.rows.length;
         rowIndex++
     ) {
         const selectedColumnIndex =
@@ -586,7 +979,8 @@ function isGridCorrect(state) {
         if (
             puzzle.solution[
                 rowName
-            ] !== selectedColumn
+            ] !==
+            selectedColumn
         ) {
             return false;
         }
@@ -604,9 +998,25 @@ async function startGame(
     mode
 ) {
     const puzzle =
-        mode === 'daily'
-            ? getDailyPuzzle()
-            : getRandomPuzzle();
+        mode ===
+            'daily'
+            ?
+            getDailyPuzzle()
+            :
+            getRandomPuzzle();
+
+    if (
+        !puzzle
+    ) {
+        await interaction.reply({
+            content:
+                '❌ Sorry, there are no Logic Grid puzzles available.',
+            ephemeral:
+                true
+        });
+
+        return;
+    }
 
     const state =
         createState(
@@ -615,20 +1025,15 @@ async function startGame(
         );
 
     try {
-        await interaction.reply({
-            embeds: [
-                buildBoardEmbed(
-                    state
-                )
-            ],
-            components:
-                renderGridComponents(
-                    state
-                )
-        });
+        await interaction.reply(
+            boardPayload(
+                state
+            )
+        );
 
         const message =
-            await interaction.fetchReply();
+            await interaction
+                .fetchReply();
 
         grids.set(
             message.id,
@@ -636,10 +1041,16 @@ async function startGame(
         );
 
         console.log(
-            `${getModeTitle(state)} created: ${message.id}`
+            `${getModeHeading(
+                state
+            )} created: ` +
+            `${message.id} — ` +
+            `${state.puzzle.id}`
         );
 
-    } catch (error) {
+    } catch (
+        error
+    ) {
         console.error(
             `Error starting ${mode} Logic Grid:`,
             error
@@ -677,8 +1088,9 @@ async function startContinuous(
     );
 }
 
-// Keep this temporarily so anything old
-// still calling startLogicGrid will not break.
+// Keep this so anything old still calling
+// startLogicGrid will not break.
+
 async function startLogicGrid(
     interaction
 ) {
@@ -695,17 +1107,11 @@ async function updateBoard(
     interaction,
     state
 ) {
-    await interaction.update({
-        embeds: [
-            buildBoardEmbed(
-                state
-            )
-        ],
-        components:
-            renderGridComponents(
-                state
-            )
-    });
+    await interaction.update(
+        boardPayload(
+            state
+        )
+    );
 }
 
 // ─────────────────────────────────────────────
@@ -717,9 +1123,10 @@ async function handleCellClick(
     state
 ) {
     const parts =
-        interaction.customId.split(
-            '_'
-        );
+        interaction.customId
+            .split(
+                '_'
+            );
 
     const rowIndex =
         Number(
@@ -745,7 +1152,8 @@ async function handleCellClick(
             rowIndex
         ][
             columnIndex
-        ] === 'undefined'
+        ] ===
+            'undefined'
     ) {
         await interaction.reply({
             content:
@@ -804,10 +1212,15 @@ async function handleCheck(
         )
     ) {
         state.notice = {
+            type:
+                'error',
+
             title:
-                '🧩 Not finished yet',
+                '🧩 NOT FINISHED YET',
+
             text:
-                'Each person needs exactly one ✓ before you check the solution.'
+                'Each person needs exactly one ✓ ' +
+                'before you check the solution.'
         };
 
         await updateBoard(
@@ -824,10 +1237,15 @@ async function handleCheck(
         )
     ) {
         state.notice = {
+            type:
+                'error',
+
             title:
-                '❌ Not quite',
+                '❌ NOT QUITE',
+
             text:
-                'Something in the grid is still incorrect. Have another look at the clues.'
+                'Something in the grid is still incorrect. ' +
+                'Have another look at the clues.'
         };
 
         await updateBoard(
@@ -844,17 +1262,11 @@ async function handleCheck(
     state.notice =
         null;
 
-    await interaction.update({
-        embeds: [
-            buildWinEmbed(
-                state
-            )
-        ],
-        components:
-            renderFinishedControls(
-                state
-            )
-    });
+    await interaction.update(
+        winPayload(
+            state
+        )
+    );
 }
 
 // ─────────────────────────────────────────────
@@ -885,6 +1297,19 @@ async function handlePlayAgain(
             state.puzzle
         );
 
+    if (
+        !puzzle
+    ) {
+        await interaction.reply({
+            content:
+                '❌ Sorry, there are no Logic Grid puzzles available.',
+            ephemeral:
+                true
+        });
+
+        return;
+    }
+
     const newState =
         createState(
             puzzle,
@@ -896,20 +1321,16 @@ async function handlePlayAgain(
         newState
     );
 
-    await interaction.update({
-        embeds: [
-            buildBoardEmbed(
-                newState
-            )
-        ],
-        components:
-            renderGridComponents(
-                newState
-            )
-    });
+    await interaction.update(
+        boardPayload(
+            newState
+        )
+    );
 
     console.log(
-        `Continuous Logic Grid restarted: ${messageId}`
+        `Continuous Logic Grid restarted: ` +
+        `${messageId} — ` +
+        `${newState.puzzle.id}`
     );
 }
 
@@ -927,9 +1348,10 @@ async function handleInteraction(
     }
 
     const isLogicGridButton =
-        interaction.customId.startsWith(
-            'lg_cell_'
-        ) ||
+        interaction.customId
+            .startsWith(
+                'lg_cell_'
+            ) ||
         interaction.customId ===
             'lg_reset' ||
         interaction.customId ===
@@ -951,7 +1373,9 @@ async function handleInteraction(
             messageId
         );
 
-    if (!state) {
+    if (
+        !state
+    ) {
         console.error(
             `Logic Grid state not found for message ${messageId}`
         );
@@ -1000,9 +1424,10 @@ async function handleInteraction(
         }
 
         if (
-            interaction.customId.startsWith(
-                'lg_cell_'
-            )
+            interaction.customId
+                .startsWith(
+                    'lg_cell_'
+                )
         ) {
             await handleCellClick(
                 interaction,
@@ -1034,7 +1459,9 @@ async function handleInteraction(
             );
         }
 
-    } catch (error) {
+    } catch (
+        error
+    ) {
         console.error(
             'Error handling Logic Grid interaction:',
             error
