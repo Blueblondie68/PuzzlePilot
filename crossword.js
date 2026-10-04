@@ -2,7 +2,6 @@
 // PuzzlePilot Crossword Engine
 // Components V2 makeover
 //
-// Keeps the existing crossword engine:
 // - Proper PNG crossword grid
 // - Black squares
 // - Automatic crossword numbering
@@ -13,6 +12,9 @@
 // - Crossing answers preserved
 // - Check / Clear / Give Up
 // - Automatic completion detection
+// - Daily UK-date rotation
+// - Continuous random play
+// - Continuous Play Again
 //
 // Presentation:
 // - PuzzlePilot Components V2 layout
@@ -629,43 +631,120 @@ function preparePuzzle(
 
 
 // ─────────────────────────────────────────────
-// PREPARE CROSSWORD
-// ─────────────────────────────────────────────
-//
-// Keep the same puzzle source used by the
-// existing working crossword.
-//
+// PREPARE CROSSWORD BANK
 // ─────────────────────────────────────────────
 
-const TEST_PUZZLE =
-    preparePuzzle(
-        crosswordPack1[0]
+const crosswordPuzzles =
+    crosswordPack1.map(
+        puzzle =>
+            preparePuzzle(puzzle)
     );
 
 console.log(
-    `Crossword loaded: ` +
-    `${TEST_PUZZLE.id}`
+    `Crosswords loaded: ${crosswordPuzzles.length}`
 );
 
-console.log(
-    `Across clues: ` +
-    `${TEST_PUZZLE.across
-        .map(
-            clue =>
-                clue.id
-        )
-        .join(', ')}`
-);
 
-console.log(
-    `Down clues: ` +
-    `${TEST_PUZZLE.down
-        .map(
-            clue =>
-                clue.id
+// ─────────────────────────────────────────────
+// UK DATE / DAILY ROTATION
+// ─────────────────────────────────────────────
+
+function getUKDateParts() {
+    const parts =
+        new Intl.DateTimeFormat(
+            'en-GB',
+            {
+                timeZone:
+                    'Europe/London',
+                year:
+                    'numeric',
+                month:
+                    '2-digit',
+                day:
+                    '2-digit'
+            }
+        ).formatToParts(
+            new Date()
+        );
+
+    const values = {};
+
+    for (const part of parts) {
+        if (
+            part.type !==
+            'literal'
+        ) {
+            values[part.type] =
+                Number(part.value);
+        }
+    }
+
+    return {
+        year:
+            values.year,
+        month:
+            values.month,
+        day:
+            values.day
+    };
+}
+
+
+function getDailyPuzzle() {
+    const {
+        year,
+        month,
+        day
+    } = getUKDateParts();
+
+    const dayNumber =
+        Math.floor(
+            Date.UTC(
+                year,
+                month - 1,
+                day
+            ) /
+            86400000
+        );
+
+    const index =
+        ((dayNumber % crosswordPuzzles.length) +
+            crosswordPuzzles.length) %
+        crosswordPuzzles.length;
+
+    return crosswordPuzzles[index];
+}
+
+
+let lastContinuousPuzzleId =
+    null;
+
+
+function getRandomPuzzle(
+    excludedPuzzleId = null
+) {
+    let choices =
+        crosswordPuzzles;
+
+    if (
+        excludedPuzzleId &&
+        crosswordPuzzles.length > 1
+    ) {
+        choices =
+            crosswordPuzzles.filter(
+                puzzle =>
+                    puzzle.id !==
+                    excludedPuzzleId
+            );
+    }
+
+    return choices[
+        Math.floor(
+            Math.random() *
+            choices.length
         )
-        .join(', ')}`
-);
+    ];
+}
 
 
 // ─────────────────────────────────────────────
@@ -885,29 +964,25 @@ function clearStoredAnswer(
         session
     );
 }
-
-
 // ─────────────────────────────────────────────
-// CLUE TEXT
+// RENDER CLUE SECTION
 // ─────────────────────────────────────────────
 
 function renderClueSection(
-    title,
+    heading,
     clues
 ) {
     let output =
-        `### ${title}\n`;
+        `### ${heading}\n`;
 
     for (
         const clue
         of clues
     ) {
         output +=
-            `**${clue.id}**  ` +
-            `${escapeMarkdown(
-                clue.clue
-            )} ` +
-            `*(${clue.answer.length})*\n`;
+            `**${clue.id}** ` +
+            `${escapeMarkdown(clue.clue)} ` +
+            `(${clue.answer.length})\n`;
     }
 
     return output.trim();
@@ -918,36 +993,31 @@ function renderClueSection(
 // SELECTED CLUE
 // ─────────────────────────────────────────────
 
-function getSelectedClue(
+function renderSelectedClue(
     session
 ) {
     if (
         !session.selectedClueId
     ) {
-        return null;
+        return (
+            `### 🎯 CHOOSE A CLUE\n` +
+            `The crossword grid above is a picture, ` +
+            `so choose an **Across** or **Down** clue ` +
+            `from the menu below to start entering answers.`
+        );
     }
 
-    return findClue(
-        session.puzzle,
-        session.selectedClueId
-    );
-}
-
-
-function renderSelectedClue(
-    session
-) {
     const clue =
-        getSelectedClue(
-            session
+        findClue(
+            session.puzzle,
+            session.selectedClueId
         );
 
     if (!clue) {
         return (
-            `### 👇 CHOOSE A CLUE\n` +
-            `The crossword grid is a picture, ` +
-            `so start by choosing an **Across** ` +
-            `or **Down** clue from the menu below.`
+            `### 🎯 CHOOSE A CLUE\n` +
+            `Choose an **Across** or **Down** clue ` +
+            `from the menu below.`
         );
     }
 
@@ -960,19 +1030,16 @@ function renderSelectedClue(
             'Down';
 
     return (
-        `### ✏️ SELECTED CLUE\n` +
-        `**${clue.id} — ${direction}**\n` +
-        `${escapeMarkdown(
-            clue.clue
-        )}\n` +
-        `**${clue.answer.length} letters**\n\n` +
-        `Press **Enter Answer** below to fill it in.`
+        `### ✏️ ${clue.id} ${direction}\n` +
+        `**${escapeMarkdown(clue.clue)}**\n` +
+        `${clue.answer.length} letters\n\n` +
+        `Press **Enter Answer** below when you're ready.`
     );
 }
 
 
 // ─────────────────────────────────────────────
-// STATUS TEXT
+// STATUS
 // ─────────────────────────────────────────────
 
 function renderStatus(
@@ -981,7 +1048,7 @@ function renderStatus(
     if (
         !session.statusMessage
     ) {
-        return null;
+        return '';
     }
 
     return session.statusMessage;
@@ -989,29 +1056,7 @@ function renderStatus(
 
 
 // ─────────────────────────────────────────────
-// IMAGE ATTACHMENT
-// ─────────────────────────────────────────────
-
-async function buildImageAttachment(
-    session
-) {
-    const imageBuffer =
-        await createCrosswordImage(
-            session
-        );
-
-    return new AttachmentBuilder(
-        imageBuffer,
-        {
-            name:
-                `crossword-${session.id}.png`
-        }
-    );
-}
-
-
-// ─────────────────────────────────────────────
-// CLUE MENU
+// CLUE SELECT MENU
 // ─────────────────────────────────────────────
 
 function buildClueSelect(
@@ -1025,15 +1070,19 @@ function buildClueSelect(
     ) {
         options.push({
             label:
-                `${clue.id} — ` +
-                `${clue.clue}`,
-
+                `${clue.id} Across`,
+            description:
+                String(
+                    clue.clue
+                ).slice(
+                    0,
+                    100
+                ),
             value:
                 clue.id,
-
-            description:
-                `Across • ` +
-                `${clue.answer.length} letters`
+            default:
+                session.selectedClueId ===
+                clue.id
         });
     }
 
@@ -1043,15 +1092,19 @@ function buildClueSelect(
     ) {
         options.push({
             label:
-                `${clue.id} — ` +
-                `${clue.clue}`,
-
+                `${clue.id} Down`,
+            description:
+                String(
+                    clue.clue
+                ).slice(
+                    0,
+                    100
+                ),
             value:
                 clue.id,
-
-            description:
-                `Down • ` +
-                `${clue.answer.length} letters`
+            default:
+                session.selectedClueId ===
+                clue.id
         });
     }
 
@@ -1061,16 +1114,7 @@ function buildClueSelect(
                 `cw_select_${session.id}`
             )
             .setPlaceholder(
-                session.selectedClueId
-                    ?
-                    `Selected: ` +
-                    `${session.selectedClueId}`
-                    :
-                    '👇 Choose an Across or Down clue'
-            )
-            .setDisabled(
-                session.completed ||
-                session.gaveUp
+                'Choose an Across or Down clue'
             )
             .addOptions(
                 options
@@ -1084,103 +1128,258 @@ function buildClueSelect(
 
 
 // ─────────────────────────────────────────────
-// BUTTONS
+// GAME BUTTONS
 // ─────────────────────────────────────────────
 
 function buildButtons(
     session
 ) {
-    const finished =
-        session.completed ||
-        session.gaveUp;
+    const enterButton =
+        new ButtonBuilder()
+            .setCustomId(
+                `cw_enter_${session.id}`
+            )
+            .setLabel(
+                session.selectedClueId
+                    ?
+                    'Enter Answer'
+                    :
+                    'Choose a Clue First'
+            )
+            .setStyle(
+                ButtonStyle.Primary
+            )
+            .setDisabled(
+                !session.selectedClueId
+            );
 
-    const hasSelectedClue =
-        Boolean(
-            session.selectedClueId
-        );
+    const checkButton =
+        new ButtonBuilder()
+            .setCustomId(
+                `cw_check_${session.id}`
+            )
+            .setLabel(
+                'Check'
+            )
+            .setStyle(
+                ButtonStyle.Success
+            );
+
+    const clearButton =
+        new ButtonBuilder()
+            .setCustomId(
+                `cw_clear_${session.id}`
+            )
+            .setLabel(
+                'Clear Answer'
+            )
+            .setStyle(
+                ButtonStyle.Secondary
+            )
+            .setDisabled(
+                !session.selectedClueId
+            );
+
+    const giveUpButton =
+        new ButtonBuilder()
+            .setCustomId(
+                `cw_giveup_${session.id}`
+            )
+            .setLabel(
+                'Give Up'
+            )
+            .setStyle(
+                ButtonStyle.Danger
+            );
 
     return new ActionRowBuilder()
         .addComponents(
+            enterButton,
+            checkButton,
+            clearButton,
+            giveUpButton
+        );
+}
 
+
+// ─────────────────────────────────────────────
+// CONTINUOUS PLAY AGAIN BUTTON
+// ─────────────────────────────────────────────
+
+function buildPlayAgainButton(
+    session
+) {
+    return new ActionRowBuilder()
+        .addComponents(
             new ButtonBuilder()
                 .setCustomId(
-                    `cw_enter_${session.id}`
+                    `cw_again_${session.id}`
                 )
                 .setLabel(
-                    hasSelectedClue
-                        ?
-                        'Enter Answer'
-                        :
-                        'Choose a Clue First'
-                )
-                .setEmoji(
-                    '✏️'
-                )
-                .setStyle(
-                    ButtonStyle.Primary
-                )
-                .setDisabled(
-                    finished ||
-                    !hasSelectedClue
-                ),
-
-            new ButtonBuilder()
-                .setCustomId(
-                    `cw_check_${session.id}`
-                )
-                .setLabel(
-                    'Check'
-                )
-                .setEmoji(
-                    '✅'
+                    'Play Again'
                 )
                 .setStyle(
                     ButtonStyle.Success
-                )
-                .setDisabled(
-                    finished
-                ),
-
-            new ButtonBuilder()
-                .setCustomId(
-                    `cw_clear_${session.id}`
-                )
-                .setLabel(
-                    'Clear Answer'
-                )
-                .setEmoji(
-                    '🧹'
-                )
-                .setStyle(
-                    ButtonStyle.Secondary
-                )
-                .setDisabled(
-                    finished ||
-                    !hasSelectedClue
-                ),
-
-            new ButtonBuilder()
-                .setCustomId(
-                    `cw_giveup_${session.id}`
-                )
-                .setLabel(
-                    'Give Up'
-                )
-                .setEmoji(
-                    '🏳️'
-                )
-                .setStyle(
-                    ButtonStyle.Danger
-                )
-                .setDisabled(
-                    finished
                 )
         );
 }
 
 
 // ─────────────────────────────────────────────
-// V2 CONTAINER
+// COUNT INCORRECT LETTERS
+// ─────────────────────────────────────────────
+
+function countIncorrectLetters(
+    session
+) {
+    let incorrect = 0;
+
+    for (
+        let row = 0;
+        row <
+        session.puzzle.size;
+        row++
+    ) {
+        for (
+            let col = 0;
+            col <
+            session.puzzle.size;
+            col++
+        ) {
+            if (
+                isBlock(
+                    session.puzzle
+                        .solution[row][col]
+                )
+            ) {
+                continue;
+            }
+
+            const entered =
+                session.grid[row][col];
+
+            if (
+                entered &&
+                entered !==
+                session.puzzle
+                    .solution[row][col]
+            ) {
+                incorrect++;
+            }
+        }
+    }
+
+    return incorrect;
+}
+
+
+// ─────────────────────────────────────────────
+// COUNT EMPTY CELLS
+// ─────────────────────────────────────────────
+
+function countEmptyCells(
+    session
+) {
+    let empty = 0;
+
+    for (
+        let row = 0;
+        row <
+        session.puzzle.size;
+        row++
+    ) {
+        for (
+            let col = 0;
+            col <
+            session.puzzle.size;
+            col++
+        ) {
+            if (
+                isBlock(
+                    session.puzzle
+                        .solution[row][col]
+                )
+            ) {
+                continue;
+            }
+
+            if (
+                !session.grid[row][col]
+            ) {
+                empty++;
+            }
+        }
+    }
+
+    return empty;
+}
+
+
+// ─────────────────────────────────────────────
+// PUZZLE COMPLETE?
+// ─────────────────────────────────────────────
+
+function isPuzzleComplete(
+    session
+) {
+    return (
+        countIncorrectLetters(
+            session
+        ) === 0 &&
+        countEmptyCells(
+            session
+        ) === 0
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// REVEAL SOLUTION
+// ─────────────────────────────────────────────
+
+function revealSolution(
+    session
+) {
+    session.grid =
+        session.puzzle.solution.map(
+            row =>
+                row.map(
+                    cell =>
+                        isBlock(cell)
+                            ?
+                            '#'
+                            :
+                            cell
+                )
+        );
+}
+
+
+// ─────────────────────────────────────────────
+// IMAGE ATTACHMENT
+// ─────────────────────────────────────────────
+
+async function buildImageAttachment(
+    session
+) {
+    const image =
+        await createCrosswordImage(
+            session.puzzle,
+            session.grid
+        );
+
+    return new AttachmentBuilder(
+        image,
+        {
+            name:
+                `crossword-${session.id}.png`
+        }
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// CROSSWORD CONTAINER
 // ─────────────────────────────────────────────
 
 function buildCrosswordContainer(
@@ -1209,27 +1408,25 @@ function buildCrosswordContainer(
                 accentColour
             );
 
+    const modeHeading =
+        session.mode ===
+            'daily'
+            ?
+            'DAILY CROSSWORD'
+            :
+            'CROSSWORD';
+
     container.addTextDisplayComponents(
         new TextDisplayBuilder()
             .setContent(
                 `# 🧩 PUZZLEPILOT\n` +
-                `## CROSSWORD`
-            )
-    );
-
-    container.addSeparatorComponents(
-        new SeparatorBuilder()
-    );
-
-    container.addTextDisplayComponents(
-        new TextDisplayBuilder()
-            .setContent(
-                `### ${escapeMarkdown(
+                `## ${modeHeading}\n` +
+                `**${escapeMarkdown(
                     session.puzzle.title
-                )}\n` +
-                `**${session.puzzle.size} × ` +
-                `${session.puzzle.size}** ` +
-                `• ${escapeMarkdown(
+                )}**\n` +
+                `${session.puzzle.size} × ` +
+                `${session.puzzle.size} • ` +
+                `${escapeMarkdown(
                     session.puzzle.difficulty
                 )}`
             )
@@ -1238,9 +1435,6 @@ function buildCrosswordContainer(
     container.addSeparatorComponents(
         new SeparatorBuilder()
     );
-
-    // Put the actual crossword grid prominently
-    // inside the V2 card.
 
     const gallery =
         new MediaGalleryBuilder()
@@ -1358,20 +1552,44 @@ function buildCrosswordContainer(
         new SeparatorBuilder()
     );
 
+    let footer;
+
+    if (
+        session.completed
+    ) {
+        footer =
+            session.mode ===
+                'daily'
+                ?
+                `Daily Crossword complete • ` +
+                `Come back after midnight UK time ` +
+                `for a new one!`
+                :
+                `Continuous Crossword complete • ` +
+                `Fancy another one?`;
+    } else if (
+        session.gaveUp
+    ) {
+        footer =
+            session.mode ===
+                'daily'
+                ?
+                `Daily Crossword finished • ` +
+                `Solution shown`
+                :
+                `Continuous Crossword finished • ` +
+                `Solution shown`;
+    } else {
+        footer =
+            `💡 **How to play:** Choose a clue ` +
+            `from the menu, then press ` +
+            `**Enter Answer**.`;
+    }
+
     container.addTextDisplayComponents(
         new TextDisplayBuilder()
             .setContent(
-                session.completed
-                    ?
-                    `Puzzle complete • Nice work!`
-                    :
-                    session.gaveUp
-                        ?
-                        `Puzzle finished • Solution shown`
-                        :
-                        `💡 **How to play:** Choose a clue ` +
-                        `from the menu, then press ` +
-                        `**Enter Answer**.`
+                footer
             )
     );
 
@@ -1414,6 +1632,21 @@ async function buildCrosswordPayload(
         );
     }
 
+    if (
+        (
+            session.completed ||
+            session.gaveUp
+        ) &&
+        session.mode ===
+            'continuous'
+    ) {
+        components.push(
+            buildPlayAgainButton(
+                session
+            )
+        );
+    }
+
     return {
         components,
 
@@ -1432,143 +1665,6 @@ async function buildCrosswordPayload(
 
 
 // ─────────────────────────────────────────────
-// IS COMPLETE?
-// ─────────────────────────────────────────────
-
-function isPuzzleComplete(
-    session
-) {
-    const solution =
-        session.puzzle.solution;
-
-    for (
-        let row = 0;
-        row < solution.length;
-        row++
-    ) {
-        for (
-            let col = 0;
-            col < solution[row].length;
-            col++
-        ) {
-            if (
-                session.grid[row][col] !==
-                solution[row][col]
-            ) {
-                return false;
-            }
-        }
-    }
-
-    return true;
-}
-
-
-// ─────────────────────────────────────────────
-// WRONG LETTER COUNT
-// ─────────────────────────────────────────────
-
-function countIncorrectLetters(
-    session
-) {
-    let incorrect = 0;
-
-    const solution =
-        session.puzzle.solution;
-
-    for (
-        let row = 0;
-        row < solution.length;
-        row++
-    ) {
-        for (
-            let col = 0;
-            col < solution[row].length;
-            col++
-        ) {
-            if (
-                isBlock(
-                    solution[row][col]
-                )
-            ) {
-                continue;
-            }
-
-            const playerLetter =
-                session.grid[row][col];
-
-            if (
-                playerLetter &&
-                playerLetter !==
-                    solution[row][col]
-            ) {
-                incorrect++;
-            }
-        }
-    }
-
-    return incorrect;
-}
-
-
-// ─────────────────────────────────────────────
-// EMPTY CELL COUNT
-// ─────────────────────────────────────────────
-
-function countEmptyCells(
-    session
-) {
-    let empty = 0;
-
-    const solution =
-        session.puzzle.solution;
-
-    for (
-        let row = 0;
-        row < solution.length;
-        row++
-    ) {
-        for (
-            let col = 0;
-            col < solution[row].length;
-            col++
-        ) {
-            if (
-                isBlock(
-                    solution[row][col]
-                )
-            ) {
-                continue;
-            }
-
-            if (
-                !session.grid[row][col]
-            ) {
-                empty++;
-            }
-        }
-    }
-
-    return empty;
-}
-
-
-// ─────────────────────────────────────────────
-// REVEAL
-// ─────────────────────────────────────────────
-
-function revealSolution(
-    session
-) {
-    session.grid =
-        session.puzzle.solution.map(
-            row =>
-                [...row]
-        );
-}
-
-
-// ─────────────────────────────────────────────
 // VERIFY PLAYER
 // ─────────────────────────────────────────────
 
@@ -1581,7 +1677,6 @@ async function verifyPlayer(
             content:
                 '⚠️ This crossword session ' +
                 'is no longer active.',
-
             ephemeral:
                 true
         });
@@ -1598,7 +1693,6 @@ async function verifyPlayer(
                 '🧩 This crossword belongs ' +
                 'to another player. ' +
                 'Start your own from /daily.',
-
             ephemeral:
                 true
         });
@@ -1624,7 +1718,9 @@ async function updateCrosswordMessage(
             session
         );
 
-    if (useUpdate) {
+    if (
+        useUpdate
+    ) {
         await interaction.update(
             payload
         );
@@ -1637,11 +1733,13 @@ async function updateCrosswordMessage(
 
 
 // ─────────────────────────────────────────────
-// START CROSSWORD
+// CREATE A NEW CROSSWORD SESSION
 // ─────────────────────────────────────────────
 
-async function startCrossword(
-    interaction
+function createSession(
+    interaction,
+    puzzle,
+    mode
 ) {
     const sessionId =
         createSessionId();
@@ -1653,12 +1751,13 @@ async function startCrossword(
         userId:
             interaction.user.id,
 
-        puzzle:
-            TEST_PUZZLE,
+        puzzle,
+
+        mode,
 
         grid:
             createPlayerGrid(
-                TEST_PUZZLE
+                puzzle
             ),
 
         answers:
@@ -1677,13 +1776,34 @@ async function startCrossword(
             false,
 
         statusMessage:
-            null
+            '💡 Choose a clue, then press ' +
+            '**Enter Answer**.'
     };
 
     sessions.set(
         sessionId,
         session
     );
+
+    return session;
+}
+
+
+// ─────────────────────────────────────────────
+// SEND NEW CROSSWORD
+// ─────────────────────────────────────────────
+
+async function sendNewCrossword(
+    interaction,
+    puzzle,
+    mode
+) {
+    const session =
+        createSession(
+            interaction,
+            puzzle,
+            mode
+        );
 
     const payload =
         await buildCrosswordPayload(
@@ -1692,6 +1812,62 @@ async function startCrossword(
 
     await interaction.reply(
         payload
+    );
+
+    return session;
+}
+
+
+// ─────────────────────────────────────────────
+// START DAILY CROSSWORD
+// ─────────────────────────────────────────────
+
+async function startDaily(
+    interaction
+) {
+    const puzzle =
+        getDailyPuzzle();
+
+    return sendNewCrossword(
+        interaction,
+        puzzle,
+        'daily'
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// START CONTINUOUS CROSSWORD
+// ─────────────────────────────────────────────
+
+async function startContinuous(
+    interaction
+) {
+    const puzzle =
+        getRandomPuzzle(
+            lastContinuousPuzzleId
+        );
+
+    lastContinuousPuzzleId =
+        puzzle.id;
+
+    return sendNewCrossword(
+        interaction,
+        puzzle,
+        'continuous'
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// BACKWARDS-COMPATIBLE START
+// ─────────────────────────────────────────────
+
+async function startCrossword(
+    interaction
+) {
+    return startDaily(
+        interaction
     );
 }
 
@@ -1709,8 +1885,7 @@ async function handleInteraction(
     // ─────────────────────────────────────
 
     if (
-        interaction
-            .isStringSelectMenu() &&
+        interaction.isStringSelectMenu() &&
         interaction.customId
             .startsWith(
                 'cw_select_'
@@ -1741,7 +1916,8 @@ async function handleInteraction(
             interaction.values[0];
 
         session.statusMessage =
-            null;
+            '✏️ Press **Enter Answer** ' +
+            'to fill this clue.';
 
         await updateCrosswordMessage(
             interaction,
@@ -1863,8 +2039,6 @@ async function handleInteraction(
 
         return;
     }
-
-
     // ─────────────────────────────────────
     // ANSWER MODAL
     // ─────────────────────────────────────
@@ -1978,11 +2152,11 @@ async function handleInteraction(
                 true;
 
             session.statusMessage =
-                null;
+                '🏆 Brilliant! Every answer ' +
+                'is correct.';
         } else {
             session.statusMessage =
-                `✏️ **${clue.id} entered.** ` +
-                `Choose another clue when you're ready.`;
+                `✏️ ${clue.id} entered.`;
         }
 
         await interaction.deferUpdate();
@@ -2029,8 +2203,9 @@ async function handleInteraction(
             return;
         }
 
-        // Acknowledge immediately because rebuilding
-        // the crossword PNG can take a moment.
+        // Acknowledge immediately so Discord
+        // does not appear to hang while the
+        // crossword image is rebuilt.
 
         await interaction.deferUpdate();
 
@@ -2052,22 +2227,19 @@ async function handleInteraction(
                 true;
 
             session.statusMessage =
-                null;
-
+                '🎉 **Everything is correct!**';
         } else if (
             incorrect === 0
         ) {
             session.statusMessage =
-                `### ✅ LOOKING GOOD\n` +
-                `Everything entered so far is correct.\n` +
-                `**${empty} square` +
+                `✅ Everything entered so far ` +
+                `is correct. ` +
+                `${empty} square` +
                 `${empty === 1 ? '' : 's'} ` +
                 `still empty.`;
-
         } else {
             session.statusMessage =
-                `### ⚠️ HAVE ANOTHER LOOK\n` +
-                `There ` +
+                `⚠️ There ` +
                 `${incorrect === 1 ? 'is' : 'are'} ` +
                 `**${incorrect} incorrect ` +
                 `letter${incorrect === 1 ? '' : 's'}** ` +
@@ -2155,9 +2327,8 @@ async function handleInteraction(
             ]
         ) {
             session.statusMessage =
-                `### ℹ️ NOTHING TO CLEAR\n` +
-                `**${clue.id}** has no entered answer yet.`;
-
+                `ℹ️ ${clue.id} has no entered ` +
+                `answer to clear.`;
         } else {
             clearStoredAnswer(
                 session,
@@ -2165,8 +2336,7 @@ async function handleInteraction(
             );
 
             session.statusMessage =
-                `### 🧹 ANSWER CLEARED\n` +
-                `**${clue.id}** has been cleared.`;
+                `🧹 ${clue.id} cleared.`;
         }
 
         await updateCrosswordMessage(
@@ -2219,12 +2389,94 @@ async function handleInteraction(
             true;
 
         session.statusMessage =
-            null;
+            'The completed solution is shown above.';
 
         await updateCrosswordMessage(
             interaction,
             session,
             true
+        );
+
+        return;
+    }
+
+
+    // ─────────────────────────────────────
+    // CONTINUOUS PLAY AGAIN
+    // ─────────────────────────────────────
+
+    if (
+        interaction.isButton() &&
+        interaction.customId
+            .startsWith(
+                'cw_again_'
+            )
+    ) {
+        const oldSessionId =
+            interaction.customId
+                .replace(
+                    'cw_again_',
+                    ''
+                );
+
+        const oldSession =
+            sessions.get(
+                oldSessionId
+            );
+
+        if (
+            !await verifyPlayer(
+                interaction,
+                oldSession
+            )
+        ) {
+            return;
+        }
+
+        if (
+            oldSession.mode !==
+            'continuous'
+        ) {
+            await interaction.reply({
+                content:
+                    'Play Again is only available ' +
+                    'for Continuous Crossword.',
+
+                ephemeral:
+                    true
+            });
+
+            return;
+        }
+
+        const puzzle =
+            getRandomPuzzle(
+                oldSession.puzzle.id
+            );
+
+        lastContinuousPuzzleId =
+            puzzle.id;
+
+        const newSession =
+            createSession(
+                interaction,
+                puzzle,
+                'continuous'
+            );
+
+        sessions.delete(
+            oldSessionId
+        );
+
+        await interaction.deferUpdate();
+
+        const payload =
+            await buildCrosswordPayload(
+                newSession
+            );
+
+        await interaction.editReply(
+            payload
         );
 
         return;
@@ -2237,6 +2489,8 @@ async function handleInteraction(
 // ─────────────────────────────────────────────
 
 module.exports = {
+    startDaily,
+    startContinuous,
     startCrossword,
     handleInteraction
 };
