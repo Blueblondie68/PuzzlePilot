@@ -1364,8 +1364,7 @@ async function buildImageAttachment(
 ) {
     const image =
         await createCrosswordImage(
-            session.puzzle,
-            session.grid
+            session
         );
 
     return new AttachmentBuilder(
@@ -1796,7 +1795,8 @@ function createSession(
 async function sendNewCrossword(
     interaction,
     puzzle,
-    mode
+    mode,
+    useUpdate = false
 ) {
     const session =
         createSession(
@@ -1810,9 +1810,17 @@ async function sendNewCrossword(
             session
         );
 
-    await interaction.reply(
-        payload
-    );
+    if (
+        useUpdate
+    ) {
+        await interaction.update(
+            payload
+        );
+    } else {
+        await interaction.reply(
+            payload
+        );
+    }
 
     return session;
 }
@@ -1831,7 +1839,8 @@ async function startDaily(
     return sendNewCrossword(
         interaction,
         puzzle,
-        'daily'
+        'daily',
+        false
     );
 }
 
@@ -1854,7 +1863,8 @@ async function startContinuous(
     return sendNewCrossword(
         interaction,
         puzzle,
-        'continuous'
+        'continuous',
+        interaction.isButton()
     );
 }
 
@@ -1866,7 +1876,7 @@ async function startContinuous(
 async function startCrossword(
     interaction
 ) {
-    return startDaily(
+    return startContinuous(
         interaction
     );
 }
@@ -2039,6 +2049,8 @@ async function handleInteraction(
 
         return;
     }
+
+
     // ─────────────────────────────────────
     // ANSWER MODAL
     // ─────────────────────────────────────
@@ -2457,29 +2469,16 @@ async function handleInteraction(
         lastContinuousPuzzleId =
             puzzle.id;
 
-        const newSession =
-            createSession(
-                interaction,
-                puzzle,
-                'continuous'
-            );
-
         sessions.delete(
             oldSessionId
         );
 
-        await interaction.deferUpdate();
-
-        const payload =
-            await buildCrosswordPayload(
-                newSession
-            );
-
-        await interaction.editReply(
-            payload
+        return sendNewCrossword(
+            interaction,
+            puzzle,
+            'continuous',
+            true
         );
-
-        return;
     }
 }
 
