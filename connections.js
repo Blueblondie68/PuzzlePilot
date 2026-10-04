@@ -1,31 +1,20 @@
 // connections.js
-// Connections game engine
+// PuzzlePilot Connections
+// Components V2 game display
 // Uses puzzles from connections_pack1.js
-//
-// Features:
-// - Daily puzzle is the same for everyone
-// - Daily puzzle changes at midnight UK time
-// - 4 mistakes allowed
-// - Wrong submitted groups use one mistake
-// - Solved groups stay displayed at the top
-// - Solved group names AND words are displayed
-// - Continuous Connections uses a random puzzle
-// - Submit, Deselect All and Shuffle controls
-// - "One away" feedback for near misses
-// - Play Again button for Continuous mode
-// - Continuous Play Again avoids immediately repeating the same puzzle
-// - Daily Share Results button with spoiler-free emoji results
-// - Group colours stay fixed for a puzzle based on group order
-// - Puzzle bank is kept separate from this file
 
 const {
     ActionRowBuilder,
     ButtonBuilder,
     ButtonStyle,
-    EmbedBuilder
+    ContainerBuilder,
+    TextDisplayBuilder,
+    SeparatorBuilder,
+    MessageFlags
 } = require('discord.js');
 
-const connectionsPack1 = require('./connections_pack1.js');
+const connectionsPack1 =
+    require('./connections_pack1.js');
 
 // ─────────────────────────────────────────────
 // PUZZLE BANK
@@ -41,76 +30,128 @@ const connectionsPuzzles = [
 
 const STARTING_LIVES = 4;
 
-// Group colours are fixed by the order the groups
-// appear in each puzzle:
+// Fixed Connections group order:
+//
 // 1st = yellow
 // 2nd = green
 // 3rd = blue
 // 4th = purple
 
 const GROUP_DISPLAY = [
-    { emoji: '🟨', colour: 0xF1C40F },
-    { emoji: '🟩', colour: 0x57F287 },
-    { emoji: '🟦', colour: 0x3498DB },
-    { emoji: '🟪', colour: 0x9B59B6 }
+    {
+        emoji: '🟨',
+        colour: 0xF1C40F
+    },
+    {
+        emoji: '🟩',
+        colour: 0x57F287
+    },
+    {
+        emoji: '🟦',
+        colour: 0x3498DB
+    },
+    {
+        emoji: '🟪',
+        colour: 0x9B59B6
+    }
 ];
 
-// Active game boards
+// Main PuzzlePilot accent colour.
+
+const GAME_COLOUR = 0x5865F2;
+
+// Active game boards.
+
 const boards = new Map();
 
 // ─────────────────────────────────────────────
 // PUZZLE SELECTION
 // ─────────────────────────────────────────────
 
-function getRandomPuzzle(excludePuzzle = null) {
+function getRandomPuzzle(
+    excludePuzzle = null
+) {
 
-    if (connectionsPuzzles.length <= 1) {
+    if (
+        connectionsPuzzles.length <= 1
+    ) {
         return connectionsPuzzles[0];
     }
 
-    let choices = connectionsPuzzles;
+    let choices =
+        connectionsPuzzles;
 
     if (excludePuzzle) {
 
-        choices = connectionsPuzzles.filter(
-            puzzle => puzzle !== excludePuzzle
-        );
+        choices =
+            connectionsPuzzles.filter(
+                puzzle =>
+                    puzzle !==
+                    excludePuzzle
+            );
     }
 
-    if (choices.length === 0) {
-        choices = connectionsPuzzles;
+    if (
+        choices.length === 0
+    ) {
+        choices =
+            connectionsPuzzles;
     }
 
     return choices[
-        Math.floor(Math.random() * choices.length)
+        Math.floor(
+            Math.random() *
+            choices.length
+        )
     ];
 }
 
 function getUKDate() {
 
-    return new Intl.DateTimeFormat('en-GB', {
-        timeZone: 'Europe/London',
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit'
-    }).format(new Date());
+    return new Intl.DateTimeFormat(
+        'en-GB',
+        {
+            timeZone:
+                'Europe/London',
+
+            year:
+                'numeric',
+
+            month:
+                '2-digit',
+
+            day:
+                '2-digit'
+        }
+    ).format(
+        new Date()
+    );
 }
 
 function getDailyPuzzle() {
 
-    const ukDate = getUKDate();
+    const ukDate =
+        getUKDate();
 
     const numbers =
-        ukDate.match(/\d+/g);
+        ukDate.match(
+            /\d+/g
+        );
 
     const day =
-        Number(numbers[0]);
+        Number(
+            numbers[0]
+        );
 
     const month =
-        Number(numbers[1]);
+        Number(
+            numbers[1]
+        );
 
     const year =
-        Number(numbers[2]);
+        Number(
+            numbers[2]
+        );
 
     const seed =
         year * 10000 +
@@ -118,35 +159,44 @@ function getDailyPuzzle() {
         day;
 
     const index =
-        seed % connectionsPuzzles.length;
+        seed %
+        connectionsPuzzles.length;
 
-    return connectionsPuzzles[index];
+    return connectionsPuzzles[
+        index
+    ];
 }
 
 // ─────────────────────────────────────────────
-// HELPERS
+// GENERAL HELPERS
 // ─────────────────────────────────────────────
 
 function shuffle(array) {
 
     return array
-        .map(value => ({
-            value,
-            sort: Math.random()
-        }))
-        .sort((a, b) =>
-            a.sort - b.sort
+        .map(
+            value => ({
+                value,
+                sort:
+                    Math.random()
+            })
         )
-        .map(({ value }) =>
-            value
+        .sort(
+            (a, b) =>
+                a.sort -
+                b.sort
+        )
+        .map(
+            item =>
+                item.value
         );
 }
 
-function getModeTitle(mode) {
+function getModeName(mode) {
 
     return mode === 'daily'
-        ? '🔗 Daily Connections'
-        : '🔗 Continuous Connections';
+        ? 'DAILY CONNECTIONS'
+        : 'CONTINUOUS CONNECTIONS';
 }
 
 function getModeFooter(mode) {
@@ -156,20 +206,30 @@ function getModeFooter(mode) {
         : 'Continuous mode • Play as many puzzles as you like';
 }
 
-function getMistakesDisplay(lives) {
+function getMistakesDisplay(
+    lives
+) {
 
     const remaining =
-        '● '.repeat(lives);
+        '● '.repeat(
+            lives
+        );
 
     const used =
         '○ '.repeat(
-            STARTING_LIVES - lives
+            STARTING_LIVES -
+            lives
         );
 
-    return `${remaining}${used}`.trim();
+    return (
+        remaining +
+        used
+    ).trim();
 }
 
-function getPuzzleGroupNames(puzzle) {
+function getPuzzleGroupNames(
+    puzzle
+) {
 
     return Object.keys(
         puzzle.groups
@@ -183,15 +243,22 @@ function getGroupIndex(
 
     return getPuzzleGroupNames(
         puzzle
-    ).indexOf(groupName);
+    ).indexOf(
+        groupName
+    );
 }
 
-function getGroupDisplay(index) {
+function getGroupDisplay(
+    index
+) {
 
-    return GROUP_DISPLAY[index] || {
-        emoji: '⬜',
-        colour: 0x99AAB5
-    };
+    return (
+        GROUP_DISPLAY[index] ||
+        {
+            emoji: '⬜',
+            colour: 0x99AAB5
+        }
+    );
 }
 
 function getGroupNameForTile(
@@ -200,11 +267,20 @@ function getGroupNameForTile(
 ) {
 
     for (
-        const [groupName, groupTiles]
-        of Object.entries(puzzle.groups)
+        const [
+            groupName,
+            groupTiles
+        ]
+        of Object.entries(
+            puzzle.groups
+        )
     ) {
 
-        if (groupTiles.includes(tile)) {
+        if (
+            groupTiles.includes(
+                tile
+            )
+        ) {
             return groupName;
         }
     }
@@ -238,15 +314,22 @@ function getTileEmoji(
     ).emoji;
 }
 
-function getUnsolvedTiles(board) {
+function getUnsolvedTiles(
+    board
+) {
 
     return board.tiles.filter(
         tile => {
 
-            return !board.solvedGroups.includes(
+            const groupName =
                 getGroupNameForTile(
                     board.puzzle,
                     tile
+                );
+
+            return (
+                !board.solvedGroups.includes(
+                    groupName
                 )
             );
         }
@@ -261,7 +344,10 @@ function isOneAway(
     return Object.entries(
         board.puzzle.groups
     ).some(
-        ([groupName, groupTiles]) => {
+        ([
+            groupName,
+            groupTiles
+        ]) => {
 
             if (
                 board.solvedGroups.includes(
@@ -274,23 +360,33 @@ function isOneAway(
             const matches =
                 selectedTiles.filter(
                     tile =>
-                        groupTiles.includes(tile)
+                        groupTiles.includes(
+                            tile
+                        )
                 ).length;
 
-            return matches === 3;
+            return (
+                matches === 3
+            );
         }
     );
 }
 
-function escapeMarkdownText(text) {
+function escapeMarkdownText(
+    text
+) {
 
-    return String(text).replace(
+    return String(
+        text
+    ).replace(
         /([\\_*~`|>])/g,
         '\\$1'
     );
 }
 
-function formatGroupName(groupName) {
+function formatGroupName(
+    groupName
+) {
 
     return escapeMarkdownText(
         groupName.toUpperCase()
@@ -299,26 +395,47 @@ function formatGroupName(groupName) {
 
 function getDailyPuzzleNumber() {
 
-    const ukDate = getUKDate();
+    const ukDate =
+        getUKDate();
 
     const numbers =
-        ukDate.match(/\d+/g);
+        ukDate.match(
+            /\d+/g
+        );
 
     const day =
-        String(numbers[0])
-            .padStart(2, '0');
+        String(
+            numbers[0]
+        ).padStart(
+            2,
+            '0'
+        );
 
     const month =
-        String(numbers[1])
-            .padStart(2, '0');
+        String(
+            numbers[1]
+        ).padStart(
+            2,
+            '0'
+        );
 
     const year =
-        String(numbers[2]);
+        String(
+            numbers[2]
+        );
 
-    return `${day}/${month}/${year}`;
+    return (
+        `${day}/${month}/${year}`
+    );
 }
 
-function buildShareText(board) {
+// ─────────────────────────────────────────────
+// SHARE RESULTS
+// ─────────────────────────────────────────────
+
+function buildShareText(
+    board
+) {
 
     const rows =
         board.guessHistory
@@ -357,9 +474,13 @@ function createBoard(
 
     for (
         const group
-        of Object.values(puzzle.groups)
+        of Object.values(
+            puzzle.groups
+        )
     ) {
-        allTiles.push(...group);
+        allTiles.push(
+            ...group
+        );
     }
 
     return {
@@ -369,7 +490,9 @@ function createBoard(
         mode,
 
         tiles:
-            shuffle(allTiles),
+            shuffle(
+                allTiles
+            ),
 
         solvedGroups: [],
 
@@ -390,244 +513,170 @@ function createBoard(
 }
 
 // ─────────────────────────────────────────────
-// SOLVED GROUP DISPLAY
+// COMPONENT HELPERS
 // ─────────────────────────────────────────────
 
-function addSolvedGroupsToEmbed(
-    embed,
+function makeText(
+    content
+) {
+
+    return new TextDisplayBuilder()
+        .setContent(
+            content
+        );
+}
+
+function makeSeparator() {
+
+    return new SeparatorBuilder();
+}
+
+function addHeader(
+    container,
     board
 ) {
 
-    const sortedSolvedGroups = [
+    container.addTextDisplayComponents(
+        makeText(
+            '# 🔗 PUZZLEPILOT\n' +
+            `## ${getModeName(board.mode)}`
+        )
+    );
+
+    container.addSeparatorComponents(
+        makeSeparator()
+    );
+
+    container.addTextDisplayComponents(
+        makeText(
+            '**Find four groups of four connected words.**\n\n' +
+            `**Mistakes remaining:** ${getMistakesDisplay(board.lives)}`
+        )
+    );
+}
+
+// ─────────────────────────────────────────────
+// SOLVED GROUP DISPLAY
+// ─────────────────────────────────────────────
+
+function getSortedSolvedGroups(
+    board
+) {
+
+    return [
         ...board.solvedGroups
     ].sort(
-        (a, b) => {
+        (a, b) =>
+            getGroupIndex(
+                board.puzzle,
+                a
+            ) -
+            getGroupIndex(
+                board.puzzle,
+                b
+            )
+    );
+}
 
-            return (
+function addSolvedGroups(
+    container,
+    board
+) {
+
+    const solvedGroups =
+        getSortedSolvedGroups(
+            board
+        );
+
+    if (
+        solvedGroups.length === 0
+    ) {
+        return;
+    }
+
+    container.addSeparatorComponents(
+        makeSeparator()
+    );
+
+    solvedGroups.forEach(
+        groupName => {
+
+            const groupIndex =
                 getGroupIndex(
                     board.puzzle,
-                    a
-                ) -
-                getGroupIndex(
-                    board.puzzle,
-                    b
+                    groupName
+                );
+
+            const display =
+                getGroupDisplay(
+                    groupIndex
+                );
+
+            const words =
+                board.puzzle.groups[
+                    groupName
+                ];
+
+            const wordLine =
+                words
+                    .map(
+                        escapeMarkdownText
+                    )
+                    .join(
+                        ' • '
+                    );
+
+            container.addTextDisplayComponents(
+                makeText(
+                    `### ${display.emoji} ${formatGroupName(groupName)}\n` +
+                    `**${wordLine}**`
                 )
             );
         }
     );
-
-    sortedSolvedGroups.forEach(
-        groupName => {
-
-            const groupIndex =
-                getGroupIndex(
-                    board.puzzle,
-                    groupName
-                );
-
-            const display =
-                getGroupDisplay(
-                    groupIndex
-                );
-
-            const words =
-                board.puzzle.groups[
-                    groupName
-                ];
-
-            embed.addFields({
-
-                name:
-                    `${display.emoji} ${formatGroupName(groupName)}`,
-
-                value:
-                    words
-                        .map(
-                            escapeMarkdownText
-                        )
-                        .join(' • ')
-            });
-        }
-    );
 }
 
 // ─────────────────────────────────────────────
-// EMBED DISPLAY
+// NOTICE DISPLAY
 // ─────────────────────────────────────────────
 
-function buildBoardEmbed(board) {
-
-    const embed =
-        new EmbedBuilder()
-
-            .setColor(
-                0x5865F2
-            )
-
-            .setTitle(
-                getModeTitle(
-                    board.mode
-                )
-            )
-
-            .setDescription(
-                '**Find four groups of four connected words.**\n' +
-                `Mistakes remaining: ${getMistakesDisplay(board.lives)}\n` +
-                `Selected: **${board.selected.length}/4**`
-            )
-
-            .setFooter({
-                text:
-                    getModeFooter(
-                        board.mode
-                    )
-            });
-
-    addSolvedGroupsToEmbed(
-        embed,
-        board
-    );
-
-    if (board.notice) {
-
-        embed.addFields({
-
-            name:
-                board.notice.title,
-
-            value:
-                board.notice.text
-        });
-    }
+function addNotice(
+    container,
+    board
+) {
 
     if (
-        board.selected.length > 0
+        !board.notice
     ) {
-
-        embed.addFields({
-
-            name:
-                'Selected tiles',
-
-            value:
-                board.selected
-                    .map(
-                        escapeMarkdownText
-                    )
-                    .join(' • ')
-        });
+        return;
     }
 
-    return embed;
-}
-
-function buildWinEmbed(board) {
-
-    const embed =
-        new EmbedBuilder()
-
-            .setColor(
-                0x57F287
-            )
-
-            .setTitle(
-                '🎉 Connections Complete!'
-            )
-
-            .setDescription(
-                '**You found all four groups!**\n' +
-                `Mistakes remaining: ${getMistakesDisplay(board.lives)}`
-            )
-
-            .setFooter({
-                text:
-                    getModeFooter(
-                        board.mode
-                    )
-            });
-
-    addSolvedGroupsToEmbed(
-        embed,
-        board
+    container.addSeparatorComponents(
+        makeSeparator()
     );
 
-    return embed;
-}
-
-function buildGameOverEmbed(board) {
-
-    const embed =
-        new EmbedBuilder()
-
-            .setColor(
-                0xED4245
-            )
-
-            .setTitle(
-                '💀 Connections Over'
-            )
-
-            .setDescription(
-                '**No mistakes remaining.**\n\n' +
-                'The four groups were:'
-            )
-
-            .setFooter({
-                text:
-                    getModeFooter(
-                        board.mode
-                    )
-            });
-
-    getPuzzleGroupNames(
-        board.puzzle
-    ).forEach(
-        groupName => {
-
-            const groupIndex =
-                getGroupIndex(
-                    board.puzzle,
-                    groupName
-                );
-
-            const display =
-                getGroupDisplay(
-                    groupIndex
-                );
-
-            const words =
-                board.puzzle.groups[
-                    groupName
-                ];
-
-            embed.addFields({
-
-                name:
-                    `${display.emoji} ${formatGroupName(groupName)}`,
-
-                value:
-                    words
-                        .map(
-                            escapeMarkdownText
-                        )
-                        .join(' • ')
-            });
-        }
+    container.addTextDisplayComponents(
+        makeText(
+            `### ${board.notice.title}\n` +
+            board.notice.text
+        )
     );
-
-    return embed;
 }
 
 // ─────────────────────────────────────────────
-// GAME BOARD BUTTONS
+// TILE BUTTONS
 // ─────────────────────────────────────────────
 
-function renderBoard(board) {
+function buildTileRows(
+    board
+) {
 
     const rows = [];
 
     const unsolvedTiles =
-        getUnsolvedTiles(board);
+        getUnsolvedTiles(
+            board
+        );
 
     for (
         let i = 0;
@@ -672,87 +721,171 @@ function renderBoard(board) {
                 }
             );
 
-        rows.push(row);
+        rows.push(
+            row
+        );
     }
-
-    const controls =
-        new ActionRowBuilder()
-
-            .addComponents(
-
-                new ButtonBuilder()
-
-                    .setCustomId(
-                        'conn_clear'
-                    )
-
-                    .setLabel(
-                        'Deselect All'
-                    )
-
-                    .setEmoji(
-                        '↩️'
-                    )
-
-                    .setStyle(
-                        ButtonStyle.Secondary
-                    )
-
-                    .setDisabled(
-                        board.selected.length === 0
-                    ),
-
-                new ButtonBuilder()
-
-                    .setCustomId(
-                        'conn_shuffle'
-                    )
-
-                    .setLabel(
-                        'Shuffle'
-                    )
-
-                    .setEmoji(
-                        '🔀'
-                    )
-
-                    .setStyle(
-                        ButtonStyle.Secondary
-                    ),
-
-                new ButtonBuilder()
-
-                    .setCustomId(
-                        'conn_submit'
-                    )
-
-                    .setLabel(
-                        'Submit'
-                    )
-
-                    .setEmoji(
-                        '✅'
-                    )
-
-                    .setStyle(
-                        ButtonStyle.Success
-                    )
-
-                    .setDisabled(
-                        board.selected.length !== 4
-                    )
-            );
-
-    rows.push(controls);
 
     return rows;
 }
 
 // ─────────────────────────────────────────────
-// FINISHED GAME BUTTONS
+// CONTROL BUTTONS
 // ─────────────────────────────────────────────
 
-function renderFinishedControls(board) {
+function buildControlRow(
+    board
+) {
+
+    return new ActionRowBuilder()
+
+        .addComponents(
+
+            new ButtonBuilder()
+
+                .setCustomId(
+                    'conn_clear'
+                )
+
+                .setLabel(
+                    'Deselect'
+                )
+
+                .setEmoji(
+                    '↩️'
+                )
+
+                .setStyle(
+                    ButtonStyle.Secondary
+                )
+
+                .setDisabled(
+                    board.selected.length === 0
+                ),
+
+            new ButtonBuilder()
+
+                .setCustomId(
+                    'conn_shuffle'
+                )
+
+                .setLabel(
+                    'Shuffle'
+                )
+
+                .setEmoji(
+                    '🔀'
+                )
+
+                .setStyle(
+                    ButtonStyle.Secondary
+                ),
+
+            new ButtonBuilder()
+
+                .setCustomId(
+                    'conn_submit'
+                )
+
+                .setLabel(
+                    'Submit'
+                )
+
+                .setEmoji(
+                    '✅'
+                )
+
+                .setStyle(
+                    ButtonStyle.Success
+                )
+
+                .setDisabled(
+                    board.selected.length !== 4
+                )
+        );
+}
+
+// ─────────────────────────────────────────────
+// ACTIVE GAME DISPLAY
+// ─────────────────────────────────────────────
+
+function buildGameComponents(
+    board
+) {
+
+    const container =
+        new ContainerBuilder()
+            .setAccentColor(
+                GAME_COLOUR
+            );
+
+    addHeader(
+        container,
+        board
+    );
+
+    addSolvedGroups(
+        container,
+        board
+    );
+
+    addNotice(
+        container,
+        board
+    );
+
+    container.addSeparatorComponents(
+        makeSeparator()
+    );
+
+    container.addTextDisplayComponents(
+        makeText(
+            `**Selected: ${board.selected.length}/4**`
+        )
+    );
+
+    const tileRows =
+        buildTileRows(
+            board
+        );
+
+    tileRows.forEach(
+        row => {
+
+            container.addActionRowComponents(
+                row
+            );
+        }
+    );
+
+    container.addSeparatorComponents(
+        makeSeparator()
+    );
+
+    container.addActionRowComponents(
+        buildControlRow(
+            board
+        )
+    );
+
+    container.addTextDisplayComponents(
+        makeText(
+            `-# ${getModeFooter(board.mode)}`
+        )
+    );
+
+    return [
+        container
+    ];
+}
+
+// ─────────────────────────────────────────────
+// FINISHED CONTROLS
+// ─────────────────────────────────────────────
+
+function buildFinishedControlRow(
+    board
+) {
 
     const buttons = [];
 
@@ -813,16 +946,167 @@ function renderFinishedControls(board) {
     if (
         buttons.length === 0
     ) {
-        return [];
+        return null;
     }
 
+    return new ActionRowBuilder()
+        .addComponents(
+            ...buttons
+        );
+}
+
+// ─────────────────────────────────────────────
+// WIN DISPLAY
+// ─────────────────────────────────────────────
+
+function buildWinComponents(
+    board
+) {
+
+    const container =
+        new ContainerBuilder()
+            .setAccentColor(
+                0x57F287
+            );
+
+    container.addTextDisplayComponents(
+        makeText(
+            '# 🎉 CONNECTIONS COMPLETE!\n' +
+            '**You found all four groups!**'
+        )
+    );
+
+    container.addSeparatorComponents(
+        makeSeparator()
+    );
+
+    container.addTextDisplayComponents(
+        makeText(
+            `**Mistakes remaining:** ${getMistakesDisplay(board.lives)}`
+        )
+    );
+
+    addSolvedGroups(
+        container,
+        board
+    );
+
+    const controls =
+        buildFinishedControlRow(
+            board
+        );
+
+    if (controls) {
+
+        container.addSeparatorComponents(
+            makeSeparator()
+        );
+
+        container.addActionRowComponents(
+            controls
+        );
+    }
+
+    container.addTextDisplayComponents(
+        makeText(
+            `-# ${getModeFooter(board.mode)}`
+        )
+    );
+
     return [
+        container
+    ];
+}
 
-        new ActionRowBuilder()
+// ─────────────────────────────────────────────
+// GAME OVER DISPLAY
+// ─────────────────────────────────────────────
 
-            .addComponents(
-                ...buttons
-            )
+function buildGameOverComponents(
+    board
+) {
+
+    const container =
+        new ContainerBuilder()
+            .setAccentColor(
+                0xED4245
+            );
+
+    container.addTextDisplayComponents(
+        makeText(
+            '# 💀 CONNECTIONS OVER\n' +
+            '**No mistakes remaining.**\n\n' +
+            'The four groups were:'
+        )
+    );
+
+    container.addSeparatorComponents(
+        makeSeparator()
+    );
+
+    getPuzzleGroupNames(
+        board.puzzle
+    ).forEach(
+        groupName => {
+
+            const groupIndex =
+                getGroupIndex(
+                    board.puzzle,
+                    groupName
+                );
+
+            const display =
+                getGroupDisplay(
+                    groupIndex
+                );
+
+            const words =
+                board.puzzle.groups[
+                    groupName
+                ];
+
+            const wordLine =
+                words
+                    .map(
+                        escapeMarkdownText
+                    )
+                    .join(
+                        ' • '
+                    );
+
+            container.addTextDisplayComponents(
+                makeText(
+                    `### ${display.emoji} ${formatGroupName(groupName)}\n` +
+                    `**${wordLine}**`
+                )
+            );
+        }
+    );
+
+    const controls =
+        buildFinishedControlRow(
+            board
+        );
+
+    if (controls) {
+
+        container.addSeparatorComponents(
+            makeSeparator()
+        );
+
+        container.addActionRowComponents(
+            controls
+        );
+    }
+
+    container.addTextDisplayComponents(
+        makeText(
+            `-# ${getModeFooter(board.mode)}`
+        )
+    );
+
+    return [
+        container
     ];
 }
 
@@ -850,16 +1134,13 @@ async function startGame(
 
         await interaction.reply({
 
-            embeds: [
-                buildBoardEmbed(
-                    board
-                )
-            ],
-
             components:
-                renderBoard(
+                buildGameComponents(
                     board
-                )
+                ),
+
+            flags:
+                MessageFlags.IsComponentsV2
         });
 
         const message =
@@ -871,7 +1152,7 @@ async function startGame(
         );
 
         console.log(
-            `${getModeTitle(mode)} board created: ${message.id}`
+            `${getModeName(mode)} board created: ${message.id}`
         );
 
     } catch (error) {
@@ -919,7 +1200,7 @@ async function startContinuous(
 }
 
 // ─────────────────────────────────────────────
-// UPDATE BOARD
+// UPDATE ACTIVE BOARD
 // ─────────────────────────────────────────────
 
 async function updateBoard(
@@ -929,14 +1210,8 @@ async function updateBoard(
 
     await interaction.update({
 
-        embeds: [
-            buildBoardEmbed(
-                state
-            )
-        ],
-
         components:
-            renderBoard(
+            buildGameComponents(
                 state
             )
     });
@@ -957,7 +1232,8 @@ async function handleTileClick(
             ''
         );
 
-    state.notice = null;
+    state.notice =
+        null;
 
     if (
         state.selected.includes(
@@ -968,7 +1244,8 @@ async function handleTileClick(
         state.selected =
             state.selected.filter(
                 selectedTile =>
-                    selectedTile !== tile
+                    selectedTile !==
+                    tile
             );
 
         await updateBoard(
@@ -1007,7 +1284,7 @@ async function handleTileClick(
 }
 
 // ─────────────────────────────────────────────
-// DESELECT ALL
+// DESELECT
 // ─────────────────────────────────────────────
 
 async function handleClear(
@@ -1017,7 +1294,8 @@ async function handleClear(
 
     state.selected = [];
 
-    state.notice = null;
+    state.notice =
+        null;
 
     await updateBoard(
         interaction,
@@ -1056,7 +1334,8 @@ async function handleShuffle(
 
     state.selected = [];
 
-    state.notice = null;
+    state.notice =
+        null;
 
     await updateBoard(
         interaction,
@@ -1094,8 +1373,8 @@ async function handleSubmit(
         ...state.selected
     ];
 
-    // Save this guess as four colour squares
-    // for spoiler-free Daily sharing.
+    // Save the colour pattern for
+    // spoiler-free Daily sharing.
 
     state.guessHistory.push(
 
@@ -1112,7 +1391,10 @@ async function handleSubmit(
         null;
 
     for (
-        const [groupName, groupTiles]
+        const [
+            groupName,
+            groupTiles
+        ]
         of Object.entries(
             state.puzzle.groups
         )
@@ -1155,24 +1437,20 @@ async function handleSubmit(
 
         state.selected = [];
 
-        state.notice = null;
+        state.notice =
+            null;
 
         if (
             state.solvedGroups.length === 4
         ) {
 
-            state.finished = true;
+            state.finished =
+                true;
 
             await interaction.update({
 
-                embeds: [
-                    buildWinEmbed(
-                        state
-                    )
-                ],
-
                 components:
-                    renderFinishedControls(
+                    buildWinComponents(
                         state
                     )
             });
@@ -1210,18 +1488,13 @@ async function handleSubmit(
         state.lives <= 0
     ) {
 
-        state.finished = true;
+        state.finished =
+            true;
 
         await interaction.update({
 
-            embeds: [
-                buildGameOverEmbed(
-                    state
-                )
-            ],
-
             components:
-                renderFinishedControls(
+                buildGameOverComponents(
                     state
                 )
         });
@@ -1289,8 +1562,6 @@ async function handlePlayAgain(
         return;
     }
 
-    // Exclude the puzzle that was just played.
-
     const puzzle =
         getRandomPuzzle(
             state.puzzle
@@ -1309,14 +1580,8 @@ async function handlePlayAgain(
 
     await interaction.update({
 
-        embeds: [
-            buildBoardEmbed(
-                newBoard
-            )
-        ],
-
         components:
-            renderBoard(
+            buildGameComponents(
                 newBoard
             )
     });
@@ -1449,8 +1714,8 @@ async function handleInteraction(
 
     try {
 
-        // These buttons still need to work
-        // after the game has finished.
+        // These buttons still work after
+        // the puzzle has finished.
 
         if (
             interaction.customId ===
@@ -1479,7 +1744,7 @@ async function handleInteraction(
             return;
         }
 
-        // All other buttons stop once finished.
+        // Other controls stop once finished.
 
         if (
             state.finished
