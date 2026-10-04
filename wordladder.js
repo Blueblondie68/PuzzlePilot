@@ -14,7 +14,11 @@ const {
     ActionRowBuilder,
     ButtonBuilder,
     ButtonStyle,
+    ContainerBuilder,
+    MessageFlags,
     ModalBuilder,
+    SeparatorBuilder,
+    TextDisplayBuilder,
     TextInputBuilder,
     TextInputStyle
 } = require('discord.js');
@@ -24,6 +28,14 @@ const englishWords =
 
 const pack1 =
     require('./wordladder_pack1.js');
+
+// ─────────────────────────────────────────────
+// COLOURS
+// ─────────────────────────────────────────────
+
+const COLOUR_PURPLE = 0x8B5CF6;
+const COLOUR_GREEN = 0x22C55E;
+const COLOUR_RED = 0xEF4444;
 
 // ─────────────────────────────────────────────
 // DICTIONARY
@@ -326,65 +338,9 @@ function ladderDisplay(
     return session.words
         .map(
             word =>
-                word.toUpperCase()
+                `**${word.toUpperCase()}**`
         )
-        .join(' → ');
-}
-
-function buildGameText(
-    session,
-    message = ''
-) {
-    let text =
-        `🧩 **${session.title}**\n\n` +
-        `Start: **${session.start.toUpperCase()}**\n` +
-        `Target: **${session.end.toUpperCase()}**\n`;
-
-    if (
-        session.difficulty
-    ) {
-        text +=
-            `Difficulty: **${getDifficultyLabel(
-                session.difficulty
-            )}**\n`;
-    }
-
-    text +=
-        `\n**Your ladder:**\n` +
-        `${ladderDisplay(session)}\n\n`;
-
-    if (
-        message
-    ) {
-        text +=
-            `${message}\n\n`;
-    }
-
-    text +=
-        `Change **exactly one letter** each move.\n` +
-        `Every entry must be a recognised word.`;
-
-    return text;
-}
-
-function gameButtons(
-    sessionId
-) {
-    return [
-        new ActionRowBuilder()
-            .addComponents(
-                new ButtonBuilder()
-                    .setCustomId(
-                        `wl_next_${sessionId}`
-                    )
-                    .setLabel(
-                        'Enter Next Word'
-                    )
-                    .setStyle(
-                        ButtonStyle.Primary
-                    )
-            )
-    ];
+        .join('  →  ');
 }
 
 function createSession(
@@ -441,6 +397,395 @@ function createSession(
 }
 
 // ─────────────────────────────────────────────
+// COMPONENTS V2 BUILDERS
+// ─────────────────────────────────────────────
+
+function separator() {
+    return new SeparatorBuilder();
+}
+
+function headerText(
+    session
+) {
+    const modeTitle =
+        session.mode === 'daily'
+            ?
+            'DAILY WORD LADDER'
+            :
+            'WORD LADDER';
+
+    let text =
+        `# 🧩 PUZZLEPILOT\n` +
+        `## ${modeTitle}`;
+
+    if (
+        session.mode !== 'daily' &&
+        session.difficulty
+    ) {
+        text +=
+            `\n**${getDifficultyLabel(
+                session.difficulty
+            )} difficulty**`;
+    }
+
+    return text;
+}
+
+function targetText(
+    session
+) {
+    return (
+        `### START\n` +
+        `# ${session.start.toUpperCase()}\n\n` +
+        `### TARGET\n` +
+        `# ${session.end.toUpperCase()}`
+    );
+}
+
+function ladderText(
+    session
+) {
+    const moves =
+        session.words.length - 1;
+
+    return (
+        `### YOUR LADDER\n` +
+        `${ladderDisplay(session)}\n\n` +
+        `**Moves so far:** ${moves}`
+    );
+}
+
+function rulesText() {
+    return (
+        `Change **exactly one letter** each move.\n` +
+        `Every entry must be a recognised English word.`
+    );
+}
+
+function gameButtons(
+    sessionId
+) {
+    return new ActionRowBuilder()
+        .addComponents(
+            new ButtonBuilder()
+                .setCustomId(
+                    `wl_next_${sessionId}`
+                )
+                .setLabel(
+                    'Enter Next Word'
+                )
+                .setStyle(
+                    ButtonStyle.Primary
+                )
+        );
+}
+
+function buildGameContainer(
+    session,
+    message = '',
+    messageType = 'normal'
+) {
+    let accentColour =
+        COLOUR_PURPLE;
+
+    if (
+        messageType === 'success'
+    ) {
+        accentColour =
+            COLOUR_GREEN;
+    }
+
+    if (
+        messageType === 'error'
+    ) {
+        accentColour =
+            COLOUR_RED;
+    }
+
+    const container =
+        new ContainerBuilder()
+            .setAccentColor(
+                accentColour
+            );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                headerText(
+                    session
+                )
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                targetText(
+                    session
+                )
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                ladderText(
+                    session
+                )
+            )
+    );
+
+    if (
+        message
+    ) {
+        container.addSeparatorComponents(
+            separator()
+        );
+
+        container.addTextDisplayComponents(
+            new TextDisplayBuilder()
+                .setContent(
+                    message
+                )
+        );
+    }
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                rulesText()
+            )
+    );
+
+    container.addActionRowComponents(
+        gameButtons(
+            session.id
+        )
+    );
+
+    return container;
+}
+
+function gamePayload(
+    session,
+    message = '',
+    messageType = 'normal'
+) {
+    return {
+        components: [
+            buildGameContainer(
+                session,
+                message,
+                messageType
+            )
+        ],
+        flags:
+            MessageFlags.IsComponentsV2
+    };
+}
+
+function buildDifficultyContainer() {
+    const container =
+        new ContainerBuilder()
+            .setAccentColor(
+                COLOUR_PURPLE
+            );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `# 🧩 PUZZLEPILOT\n` +
+                `## WORD LADDER`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `Choose your difficulty.\n\n` +
+                `Change **one letter at a time** ` +
+                `until you reach the target word.`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addActionRowComponents(
+        new ActionRowBuilder()
+            .addComponents(
+                new ButtonBuilder()
+                    .setCustomId(
+                        'wl_diff_easy'
+                    )
+                    .setLabel(
+                        'Easy'
+                    )
+                    .setStyle(
+                        ButtonStyle.Success
+                    ),
+
+                new ButtonBuilder()
+                    .setCustomId(
+                        'wl_diff_medium'
+                    )
+                    .setLabel(
+                        'Medium'
+                    )
+                    .setStyle(
+                        ButtonStyle.Primary
+                    ),
+
+                new ButtonBuilder()
+                    .setCustomId(
+                        'wl_diff_hard'
+                    )
+                    .setLabel(
+                        'Hard'
+                    )
+                    .setStyle(
+                        ButtonStyle.Danger
+                    )
+            )
+    );
+
+    return container;
+}
+
+function difficultyPayload() {
+    return {
+        components: [
+            buildDifficultyContainer()
+        ],
+        flags:
+            MessageFlags.IsComponentsV2
+    };
+}
+
+function buildSolvedContainer(
+    session,
+    moves
+) {
+    const container =
+        new ContainerBuilder()
+            .setAccentColor(
+                COLOUR_GREEN
+            );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `# 🧩 PUZZLEPILOT\n` +
+                `## 🎉 WORD LADDER COMPLETE!`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `### YOUR LADDER\n` +
+                `${ladderDisplay(
+                    session
+                )}`
+            )
+    );
+
+    container.addSeparatorComponents(
+        separator()
+    );
+
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(
+                `You reached **${session.end.toUpperCase()}** ` +
+                `in **${moves} ` +
+                `${moves === 1 ? 'move' : 'moves'}**!`
+            )
+    );
+
+    if (
+        session.mode === 'daily'
+    ) {
+        container.addSeparatorComponents(
+            separator()
+        );
+
+        container.addTextDisplayComponents(
+            new TextDisplayBuilder()
+                .setContent(
+                    `Come back after **midnight UK time** ` +
+                    `for a new Daily Word Ladder.`
+                )
+        );
+    }
+
+    return container;
+}
+
+function solvedPayload(
+    session,
+    moves
+) {
+    return {
+        components: [
+            buildSolvedContainer(
+                session,
+                moves
+            )
+        ],
+        flags:
+            MessageFlags.IsComponentsV2
+    };
+}
+
+// ─────────────────────────────────────────────
+// SMALL EPHEMERAL MESSAGES
+// ─────────────────────────────────────────────
+
+async function replyInactive(
+    interaction
+) {
+    await interaction.reply({
+        content:
+            '⚠️ This Word Ladder is no longer active.',
+        ephemeral:
+            true
+    });
+}
+
+async function replyWrongPlayer(
+    interaction
+) {
+    await interaction.reply({
+        content:
+            '⚠️ This Word Ladder belongs to another player.',
+        ephemeral:
+            true
+    });
+}
+
+// ─────────────────────────────────────────────
 // DAILY GAME
 // ─────────────────────────────────────────────
 
@@ -461,17 +806,11 @@ async function startDaily(
             todaysLadder
         );
 
-    await interaction.reply({
-        content:
-            buildGameText(
-                session
-            ),
-
-        components:
-            gameButtons(
-                session.id
-            )
-    });
+    await interaction.reply(
+        gamePayload(
+            session
+        )
+    );
 }
 
 // ─────────────────────────────────────────────
@@ -481,49 +820,9 @@ async function startDaily(
 async function startContinuous(
     interaction
 ) {
-    await interaction.reply({
-        content:
-            `🧩 **Word Ladder**\n\n` +
-            `Choose your difficulty.`,
-
-        components: [
-            new ActionRowBuilder()
-                .addComponents(
-                    new ButtonBuilder()
-                        .setCustomId(
-                            'wl_diff_easy'
-                        )
-                        .setLabel(
-                            'Easy'
-                        )
-                        .setStyle(
-                            ButtonStyle.Success
-                        ),
-
-                    new ButtonBuilder()
-                        .setCustomId(
-                            'wl_diff_medium'
-                        )
-                        .setLabel(
-                            'Medium'
-                        )
-                        .setStyle(
-                            ButtonStyle.Primary
-                        ),
-
-                    new ButtonBuilder()
-                        .setCustomId(
-                            'wl_diff_hard'
-                        )
-                        .setLabel(
-                            'Hard'
-                        )
-                        .setStyle(
-                            ButtonStyle.Danger
-                        )
-                )
-        ]
-    });
+    await interaction.reply(
+        difficultyPayload()
+    );
 }
 
 // ─────────────────────────────────────────────
@@ -580,17 +879,11 @@ async function handleInteraction(
                 difficulty
             );
 
-        await interaction.reply({
-            content:
-                buildGameText(
-                    session
-                ),
-
-            components:
-                gameButtons(
-                    session.id
-                )
-        });
+        await interaction.reply(
+            gamePayload(
+                session
+            )
+        );
 
         return;
     }
@@ -619,13 +912,9 @@ async function handleInteraction(
         if (
             !session
         ) {
-            await interaction.reply({
-                content:
-                    '⚠️ This Word Ladder is no longer active.',
-
-                ephemeral:
-                    true
-            });
+            await replyInactive(
+                interaction
+            );
 
             return;
         }
@@ -634,13 +923,9 @@ async function handleInteraction(
             session.userId !==
             interaction.user.id
         ) {
-            await interaction.reply({
-                content:
-                    '⚠️ This Word Ladder belongs to another player.',
-
-                ephemeral:
-                    true
-            });
+            await replyWrongPlayer(
+                interaction
+            );
 
             return;
         }
@@ -719,13 +1004,9 @@ async function handleInteraction(
         if (
             !session
         ) {
-            await interaction.reply({
-                content:
-                    '⚠️ This Word Ladder is no longer active.',
-
-                ephemeral:
-                    true
-            });
+            await replyInactive(
+                interaction
+            );
 
             return;
         }
@@ -734,13 +1015,9 @@ async function handleInteraction(
             session.userId !==
             interaction.user.id
         ) {
-            await interaction.reply({
-                content:
-                    '⚠️ This Word Ladder belongs to another player.',
-
-                ephemeral:
-                    true
-            });
+            await replyWrongPlayer(
+                interaction
+            );
 
             return;
         }
@@ -760,53 +1037,51 @@ async function handleInteraction(
                 session.words.length - 1
             ];
 
-        // Letters only
+        // ─────────────────────────────────────
+        // LETTERS ONLY
+        // ─────────────────────────────────────
 
         if (
             !/^[a-z]+$/.test(
                 enteredWord
             )
         ) {
-            await interaction.editReply({
-                content:
-                    buildGameText(
-                        session,
-                        '❌ Please enter letters only.'
-                    ),
-
-                components:
-                    gameButtons(
-                        session.id
-                    )
-            });
+            await interaction.editReply(
+                gamePayload(
+                    session,
+                    `### ❌ NOT QUITE\n` +
+                    `Please enter letters only.`,
+                    'error'
+                )
+            );
 
             return;
         }
 
-        // Same length
+        // ─────────────────────────────────────
+        // SAME LENGTH
+        // ─────────────────────────────────────
 
         if (
             enteredWord.length !==
             currentWord.length
         ) {
-            await interaction.editReply({
-                content:
-                    buildGameText(
-                        session,
-                        `❌ Your next word must have ` +
-                        `**${currentWord.length} letters**.`
-                    ),
-
-                components:
-                    gameButtons(
-                        session.id
-                    )
-            });
+            await interaction.editReply(
+                gamePayload(
+                    session,
+                    `### ❌ NOT QUITE\n` +
+                    `Your next word must have ` +
+                    `**${currentWord.length} letters**.`,
+                    'error'
+                )
+            );
 
             return;
         }
 
-        // Exactly one letter changed
+        // ─────────────────────────────────────
+        // EXACTLY ONE LETTER CHANGED
+        // ─────────────────────────────────────
 
         const differences =
             countDifferentLetters(
@@ -817,76 +1092,74 @@ async function handleInteraction(
         if (
             differences !== 1
         ) {
-            await interaction.editReply({
-                content:
-                    buildGameText(
-                        session,
-                        differences === 0
-                            ?
-                            '❌ You need to change one letter.'
-                            :
-                            '❌ You can change only **one letter** at a time.'
-                    ),
+            const errorMessage =
+                differences === 0
+                    ?
+                    `You need to change **one letter**.`
+                    :
+                    `You can change only **one letter** ` +
+                    `at a time.`;
 
-                components:
-                    gameButtons(
-                        session.id
-                    )
-            });
+            await interaction.editReply(
+                gamePayload(
+                    session,
+                    `### ❌ NOT QUITE\n` +
+                    errorMessage,
+                    'error'
+                )
+            );
 
             return;
         }
 
-        // Recognised English word
+        // ─────────────────────────────────────
+        // RECOGNISED ENGLISH WORD
+        // ─────────────────────────────────────
 
         if (
             !isApprovedWord(
                 enteredWord
             )
         ) {
-            await interaction.editReply({
-                content:
-                    buildGameText(
-                        session,
-                        `❌ **${enteredWord.toUpperCase()}** ` +
-                        `isn't in PuzzlePilot's dictionary. ` +
-                        `Try another word.`
-                    ),
-
-                components:
-                    gameButtons(
-                        session.id
-                    )
-            });
+            await interaction.editReply(
+                gamePayload(
+                    session,
+                    `### ❌ WORD NOT RECOGNISED\n` +
+                    `**${enteredWord.toUpperCase()}** ` +
+                    `isn't in PuzzlePilot's dictionary.\n` +
+                    `Try another word.`,
+                    'error'
+                )
+            );
 
             return;
         }
 
-        // No repeats in the same ladder
+        // ─────────────────────────────────────
+        // NO REPEATS IN SAME LADDER
+        // ─────────────────────────────────────
 
         if (
             session.words.includes(
                 enteredWord
             )
         ) {
-            await interaction.editReply({
-                content:
-                    buildGameText(
-                        session,
-                        `❌ You've already used ` +
-                        `**${enteredWord.toUpperCase()}**.`
-                    ),
-
-                components:
-                    gameButtons(
-                        session.id
-                    )
-            });
+            await interaction.editReply(
+                gamePayload(
+                    session,
+                    `### ❌ ALREADY USED\n` +
+                    `You've already used ` +
+                    `**${enteredWord.toUpperCase()}**.`,
+                    'error'
+                )
+            );
 
             return;
         }
 
-        // Accept word
+        // ─────────────────────────────────────
+        // ACCEPT WORD
+        // ─────────────────────────────────────
 
         session.words.push(
             enteredWord
@@ -903,43 +1176,33 @@ async function handleInteraction(
             const moves =
                 session.words.length - 1;
 
-            const resultText =
-                `🎉 **Word Ladder solved!**\n\n` +
-                `${ladderDisplay(session)}\n\n` +
-                `You reached ` +
-                `**${session.end.toUpperCase()}** ` +
-                `in **${moves} ` +
-                `${moves === 1 ? 'move' : 'moves'}**!`;
-
             sessions.delete(
                 sessionId
             );
 
-            await interaction.editReply({
-                content:
-                    resultText,
-
-                components:
-                    []
-            });
+            await interaction.editReply(
+                solvedPayload(
+                    session,
+                    moves
+                )
+            );
 
             return;
         }
 
-        // Continue playing
+        // ─────────────────────────────────────
+        // CONTINUE PLAYING
+        // ─────────────────────────────────────
 
-        await interaction.editReply({
-            content:
-                buildGameText(
-                    session,
-                    `✅ **${enteredWord.toUpperCase()}** accepted!`
-                ),
-
-            components:
-                gameButtons(
-                    session.id
-                )
-        });
+        await interaction.editReply(
+            gamePayload(
+                session,
+                `### ✅ WORD ACCEPTED\n` +
+                `**${enteredWord.toUpperCase()}** ` +
+                `has been added to your ladder.`,
+                'success'
+            )
+        );
 
         return;
     }
