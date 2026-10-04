@@ -1813,7 +1813,20 @@ async function sendNewCrossword(
     if (
         useUpdate
     ) {
-        await interaction.update(
+        // The Continuous Crossword launcher is a
+        // legacy Discord message. A Components V2
+        // payload cannot replace it directly while
+        // that legacy content still exists.
+        //
+        // Acknowledge the launcher button, remove
+        // the old launcher message, then send the
+        // new V2 crossword as a clean message.
+
+        await interaction.deferUpdate();
+
+        await interaction.deleteReply();
+
+        await interaction.followUp(
             payload
         );
     } else {
@@ -2473,12 +2486,28 @@ async function handleInteraction(
             oldSessionId
         );
 
-        return sendNewCrossword(
-            interaction,
-            puzzle,
-            'continuous',
-            true
+        // This is already a Components V2
+        // crossword message, so Play Again can
+        // replace it directly with the next V2
+        // crossword.
+
+        const newSession =
+            createSession(
+                interaction,
+                puzzle,
+                'continuous'
+            );
+
+        const payload =
+            await buildCrosswordPayload(
+                newSession
+            );
+
+        await interaction.update(
+            payload
         );
+
+        return newSession;
     }
 }
 
