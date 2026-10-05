@@ -2,6 +2,7 @@
 // PuzzlePilot Crossword Engine
 // Components V2 makeover
 //
+// Features:
 // - Proper PNG crossword grid
 // - Black squares
 // - Automatic crossword numbering
@@ -1594,8 +1595,6 @@ function buildCrosswordContainer(
 
     return container;
 }
-
-
 // ─────────────────────────────────────────────
 // FULL V2 PAYLOAD
 // ─────────────────────────────────────────────
@@ -1902,7 +1901,6 @@ async function startCrossword(
 async function handleInteraction(
     interaction
 ) {
-
     // ─────────────────────────────────────
     // SELECT CLUE
     // ─────────────────────────────────────
@@ -1935,6 +1933,13 @@ async function handleInteraction(
             return;
         }
 
+        // Acknowledge the clue selection immediately.
+        // Rebuilding the crossword PNG can take long
+        // enough for Discord to show an interaction
+        // failure even though the update later succeeds.
+
+        await interaction.deferUpdate();
+
         session.selectedClueId =
             interaction.values[0];
 
@@ -1945,7 +1950,7 @@ async function handleInteraction(
         await updateCrosswordMessage(
             interaction,
             session,
-            true
+            false
         );
 
         return;
@@ -2372,8 +2377,6 @@ async function handleInteraction(
 
         return;
     }
-
-
     // ─────────────────────────────────────
     // GIVE UP
     // ─────────────────────────────────────
