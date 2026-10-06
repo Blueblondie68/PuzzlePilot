@@ -116,7 +116,13 @@ const songs = [
     ["Welcome to My Life", "Simple Plan"],
     ["Shut Up", "Simple Plan"],
     ["Untitled (How Could This Happen to Me?)", "Simple Plan"],
-    ["When I'm Gone", "Simple Plan"]
+    ["When I'm Gone", "Simple Plan"],
+    ["Your Love Is a Lie", "Simple Plan"],
+
+    ["The Great Escape", "Boys Like Girls"],
+    ["Hero/Heroine", "Boys Like Girls"],
+    ["Thunder", "Boys Like Girls"],
+    ["Love Drunk", "Boys Like Girls"]
 ];
 
 const artists = [
