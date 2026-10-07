@@ -130,14 +130,13 @@ const songs = [
     ['Thank You', 'MKTO'],
     ['Swalla', 'Jason Derulo'],
 
-    ['Greyhound', 'Swedish House Mafia'],
-    ['Fade into Darkness', 'Avicii'],
+    ['Sweet but Psycho', 'Ava Max'],
+    ['So Am I', 'Ava Max'],
+    ['Torn', 'Ava Max'],
 
-    ['It Ain\'t Me', 'Kygo'],
-    ['First Time', 'Kygo'],
-
-    ['Babel', 'Mumford & Sons'],
-    ['Hopeless Wanderer', 'Mumford & Sons']
+    ['Don\'t Call Me Up', 'Mabel'],
+    ['Mad Love', 'Mabel'],
+    ['Finders Keepers', 'Mabel']
 ];
 
 const artists = [
