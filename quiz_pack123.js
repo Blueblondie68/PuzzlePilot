@@ -136,7 +136,8 @@ const songs = [
     ['It Ain\'t Me', 'Kygo'],
     ['First Time', 'Kygo'],
 
-    ['Babel', 'Mumford & Sons']
+    ['Babel', 'Mumford & Sons'],
+    ['Hopeless Wanderer', 'Mumford & Sons']
 ];
 
 const artists = [
