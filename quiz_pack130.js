@@ -13,7 +13,9 @@ const songs = [
     ["The Hellcat Spangled Shalalala", "Arctic Monkeys"],
     ["Suck It and See", "Arctic Monkeys"],
     ["Black Treacle", "Arctic Monkeys"],
-    ["Why'd You Only Call Me When You're High?", "Arctic Monkeys"],
+
+    // BOMBAY BICYCLE CLUB — REPLACEMENT
+    ["Home by Now", "Bombay Bicycle Club"],
 
     // THE 1975
     ["Menswear", "The 1975"],
