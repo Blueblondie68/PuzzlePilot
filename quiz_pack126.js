@@ -1,5 +1,3 @@
-
-```javascript
 // =========================================================
 // PUZZLEPILOT - MUSIC QUIZ PACK 126
 // 2010s SONGS AND ARTISTS
@@ -225,4 +223,6 @@ const questions = songs.map((song, index) => {
 });
 
 module.exports = questions;
-```
+
+
+
