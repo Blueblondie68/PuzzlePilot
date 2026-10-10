@@ -2,7 +2,6 @@
 // PuzzlePilot Crossword Engine
 // Components V2 makeover
 //
-// Features:
 // - Proper PNG crossword grid
 // - Black squares
 // - Automatic crossword numbering
@@ -47,6 +46,18 @@ const {
 
 const crosswordPack1 =
     require('./crossword_pack1');
+
+const crosswordPack2 =
+    require('./crossword_pack2');
+
+const crosswordPack3 =
+    require('./crossword_pack3');
+
+const crosswordPack4 =
+    require('./crossword_pack4');
+
+const crosswordPack5 =
+    require('./crossword_pack5');
 
 
 // ─────────────────────────────────────────────
@@ -636,7 +647,13 @@ function preparePuzzle(
 // ─────────────────────────────────────────────
 
 const crosswordPuzzles =
-    crosswordPack1.map(
+    [
+        ...crosswordPack1,
+        ...crosswordPack2,
+        ...crosswordPack3,
+        ...crosswordPack4,
+        ...crosswordPack5
+    ].map(
         puzzle =>
             preparePuzzle(puzzle)
     );
@@ -851,383 +868,92 @@ function getClueCells(
 
 
 // ─────────────────────────────────────────────
-// REBUILD GRID
+// CURRENT ANSWER FOR A CLUE
 // ─────────────────────────────────────────────
 
-function rebuildGrid(
-    session
+function getCurrentAnswer(
+    session,
+    clue
 ) {
-    const grid =
-        createPlayerGrid(
-            session.puzzle
-        );
-
-    for (
-        const clueId
-        of session.answerOrder
-    ) {
-        const answer =
-            session.answers[
-                clueId
-            ];
-
-        if (!answer) {
-            continue;
-        }
-
-        const clue =
-            findClue(
-                session.puzzle,
-                clueId
-            );
-
-        if (!clue) {
-            continue;
-        }
-
-        const cells =
-            getClueCells(
-                clue
-            );
-
-        for (
-            let i = 0;
-            i < cells.length;
-            i++
-        ) {
-            const {
-                row,
-                col
-            } =
-                cells[i];
-
-            grid[row][col] =
-                answer[i];
-        }
-    }
-
-    session.grid =
-        grid;
+    return getClueCells(
+        clue
+    ).map(
+        cell =>
+            session.grid[
+                cell.row
+            ][
+                cell.col
+            ] || ''
+    ).join('');
 }
 
 
 // ─────────────────────────────────────────────
-// STORE ANSWER
+// WRITE AN ANSWER INTO GRID
 // ─────────────────────────────────────────────
 
-function storeAnswer(
+function writeAnswer(
     session,
     clue,
     answer
 ) {
-    session.answers[
-        clue.id
-    ] =
-        answer;
+    const cleaned =
+        cleanAnswer(answer);
 
-    session.answerOrder =
-        session.answerOrder.filter(
-            id =>
-                id !==
-                clue.id
-        );
+    if (
+        cleaned.length !==
+        clue.answer.length
+    ) {
+        return false;
+    }
 
-    session.answerOrder.push(
-        clue.id
-    );
+    const cells =
+        getClueCells(clue);
 
-    rebuildGrid(
-        session
-    );
+    for (
+        let i = 0;
+        i < cells.length;
+        i++
+    ) {
+        const cell =
+            cells[i];
+
+        session.grid[
+            cell.row
+        ][
+            cell.col
+        ] =
+            cleaned[i];
+    }
+
+    return true;
 }
 
 
 // ─────────────────────────────────────────────
-// CLEAR ANSWER
+// CLEAR SELECTED ANSWER
 // ─────────────────────────────────────────────
 
-function clearStoredAnswer(
+function clearAnswer(
     session,
     clue
 ) {
-    delete session.answers[
-        clue.id
-    ];
+    const cells =
+        getClueCells(clue);
 
-    session.answerOrder =
-        session.answerOrder.filter(
-            id =>
-                id !==
-                clue.id
-        );
-
-    rebuildGrid(
-        session
-    );
-}
-// ─────────────────────────────────────────────
-// RENDER CLUE SECTION
-// ─────────────────────────────────────────────
-
-function renderClueSection(
-    heading,
-    clues
-) {
-    let output =
-        `### ${heading}\n`;
-
-    for (
-        const clue
-        of clues
-    ) {
-        output +=
-            `**${clue.id}** ` +
-            `${escapeMarkdown(clue.clue)} ` +
-            `(${clue.answer.length})\n`;
+    for (const cell of cells) {
+        session.grid[
+            cell.row
+        ][
+            cell.col
+        ] =
+            null;
     }
-
-    return output.trim();
 }
 
 
 // ─────────────────────────────────────────────
-// SELECTED CLUE
-// ─────────────────────────────────────────────
-
-function renderSelectedClue(
-    session
-) {
-    if (
-        !session.selectedClueId
-    ) {
-        return (
-            `### 🎯 CHOOSE A CLUE\n` +
-            `The crossword grid above is a picture, ` +
-            `so choose an **Across** or **Down** clue ` +
-            `from the menu below to start entering answers.`
-        );
-    }
-
-    const clue =
-        findClue(
-            session.puzzle,
-            session.selectedClueId
-        );
-
-    if (!clue) {
-        return (
-            `### 🎯 CHOOSE A CLUE\n` +
-            `Choose an **Across** or **Down** clue ` +
-            `from the menu below.`
-        );
-    }
-
-    const direction =
-        clue.direction ===
-            'across'
-            ?
-            'Across'
-            :
-            'Down';
-
-    return (
-        `### ✏️ ${clue.id} ${direction}\n` +
-        `**${escapeMarkdown(clue.clue)}**\n` +
-        `${clue.answer.length} letters\n\n` +
-        `Press **Enter Answer** below when you're ready.`
-    );
-}
-
-
-// ─────────────────────────────────────────────
-// STATUS
-// ─────────────────────────────────────────────
-
-function renderStatus(
-    session
-) {
-    if (
-        !session.statusMessage
-    ) {
-        return '';
-    }
-
-    return session.statusMessage;
-}
-
-
-// ─────────────────────────────────────────────
-// CLUE SELECT MENU
-// ─────────────────────────────────────────────
-
-function buildClueSelect(
-    session
-) {
-    const options = [];
-
-    for (
-        const clue
-        of session.puzzle.across
-    ) {
-        options.push({
-            label:
-                `${clue.id} Across`,
-            description:
-                String(
-                    clue.clue
-                ).slice(
-                    0,
-                    100
-                ),
-            value:
-                clue.id,
-            default:
-                session.selectedClueId ===
-                clue.id
-        });
-    }
-
-    for (
-        const clue
-        of session.puzzle.down
-    ) {
-        options.push({
-            label:
-                `${clue.id} Down`,
-            description:
-                String(
-                    clue.clue
-                ).slice(
-                    0,
-                    100
-                ),
-            value:
-                clue.id,
-            default:
-                session.selectedClueId ===
-                clue.id
-        });
-    }
-
-    const menu =
-        new StringSelectMenuBuilder()
-            .setCustomId(
-                `cw_select_${session.id}`
-            )
-            .setPlaceholder(
-                'Choose an Across or Down clue'
-            )
-            .addOptions(
-                options
-            );
-
-    return new ActionRowBuilder()
-        .addComponents(
-            menu
-        );
-}
-
-
-// ─────────────────────────────────────────────
-// GAME BUTTONS
-// ─────────────────────────────────────────────
-
-function buildButtons(
-    session
-) {
-    const enterButton =
-        new ButtonBuilder()
-            .setCustomId(
-                `cw_enter_${session.id}`
-            )
-            .setLabel(
-                session.selectedClueId
-                    ?
-                    'Enter Answer'
-                    :
-                    'Choose a Clue First'
-            )
-            .setStyle(
-                ButtonStyle.Primary
-            )
-            .setDisabled(
-                !session.selectedClueId
-            );
-
-    const checkButton =
-        new ButtonBuilder()
-            .setCustomId(
-                `cw_check_${session.id}`
-            )
-            .setLabel(
-                'Check'
-            )
-            .setStyle(
-                ButtonStyle.Success
-            );
-
-    const clearButton =
-        new ButtonBuilder()
-            .setCustomId(
-                `cw_clear_${session.id}`
-            )
-            .setLabel(
-                'Clear Answer'
-            )
-            .setStyle(
-                ButtonStyle.Secondary
-            )
-            .setDisabled(
-                !session.selectedClueId
-            );
-
-    const giveUpButton =
-        new ButtonBuilder()
-            .setCustomId(
-                `cw_giveup_${session.id}`
-            )
-            .setLabel(
-                'Give Up'
-            )
-            .setStyle(
-                ButtonStyle.Danger
-            );
-
-    return new ActionRowBuilder()
-        .addComponents(
-            enterButton,
-            checkButton,
-            clearButton,
-            giveUpButton
-        );
-}
-
-
-// ─────────────────────────────────────────────
-// CONTINUOUS PLAY AGAIN BUTTON
-// ─────────────────────────────────────────────
-
-function buildPlayAgainButton(
-    session
-) {
-    return new ActionRowBuilder()
-        .addComponents(
-            new ButtonBuilder()
-                .setCustomId(
-                    `cw_again_${session.id}`
-                )
-                .setLabel(
-                    'Play Again'
-                )
-                .setStyle(
-                    ButtonStyle.Success
-                )
-        );
-}
-
-
-// ─────────────────────────────────────────────
-// COUNT INCORRECT LETTERS
+// CHECK GRID
 // ─────────────────────────────────────────────
 
 function countIncorrectLetters(
@@ -1237,33 +963,38 @@ function countIncorrectLetters(
 
     for (
         let row = 0;
-        row <
-        session.puzzle.size;
+        row < session.puzzle.size;
         row++
     ) {
         for (
             let col = 0;
-            col <
-            session.puzzle.size;
+            col < session.puzzle.size;
             col++
         ) {
+            const expected =
+                session.puzzle.solution[
+                    row
+                ][
+                    col
+                ];
+
             if (
-                isBlock(
-                    session.puzzle
-                        .solution[row][col]
-                )
+                isBlock(expected)
             ) {
                 continue;
             }
 
-            const entered =
-                session.grid[row][col];
+            const actual =
+                session.grid[
+                    row
+                ][
+                    col
+                ];
 
             if (
-                entered &&
-                entered !==
-                session.puzzle
-                    .solution[row][col]
+                actual &&
+                actual !==
+                expected
             ) {
                 incorrect++;
             }
@@ -1285,27 +1016,32 @@ function countEmptyCells(
 
     for (
         let row = 0;
-        row <
-        session.puzzle.size;
+        row < session.puzzle.size;
         row++
     ) {
         for (
             let col = 0;
-            col <
-            session.puzzle.size;
+            col < session.puzzle.size;
             col++
         ) {
             if (
                 isBlock(
-                    session.puzzle
-                        .solution[row][col]
+                    session.puzzle.solution[
+                        row
+                    ][
+                        col
+                    ]
                 )
             ) {
                 continue;
             }
 
             if (
-                !session.grid[row][col]
+                !session.grid[
+                    row
+                ][
+                    col
+                ]
             ) {
                 empty++;
             }
@@ -1317,20 +1053,49 @@ function countEmptyCells(
 
 
 // ─────────────────────────────────────────────
-// PUZZLE COMPLETE?
+// IS PUZZLE COMPLETE?
 // ─────────────────────────────────────────────
 
 function isPuzzleComplete(
     session
 ) {
-    return (
-        countIncorrectLetters(
-            session
-        ) === 0 &&
-        countEmptyCells(
-            session
-        ) === 0
-    );
+    for (
+        let row = 0;
+        row < session.puzzle.size;
+        row++
+    ) {
+        for (
+            let col = 0;
+            col < session.puzzle.size;
+            col++
+        ) {
+            const expected =
+                session.puzzle.solution[
+                    row
+                ][
+                    col
+                ];
+
+            if (
+                isBlock(expected)
+            ) {
+                continue;
+            }
+
+            if (
+                session.grid[
+                    row
+                ][
+                    col
+                ] !==
+                expected
+            ) {
+                return false;
+            }
+        }
+    }
+
+    return true;
 }
 
 
@@ -1344,96 +1109,383 @@ function revealSolution(
     session.grid =
         session.puzzle.solution.map(
             row =>
-                row.map(
-                    cell =>
-                        isBlock(cell)
-                            ?
-                            '#'
-                            :
-                            cell
+                [...row]
+        );
+}
+
+
+// ─────────────────────────────────────────────
+// CLUE LIST TEXT
+// ─────────────────────────────────────────────
+
+function buildClueList(
+    clues
+) {
+    return clues.map(
+        clue =>
+            `**${clue.number}.** ` +
+            `${escapeMarkdown(clue.clue)} ` +
+            `(${clue.answer.length})`
+    ).join('\n');
+}
+
+
+// ─────────────────────────────────────────────
+// SELECTED CLUE TEXT
+// ─────────────────────────────────────────────
+
+function buildSelectedClueText(
+    session
+) {
+    if (
+        !session.selectedClueId
+    ) {
+        return (
+            'Choose a clue from the ' +
+            'dropdown below to start.'
+        );
+    }
+
+    const clue =
+        findClue(
+            session.puzzle,
+            session.selectedClueId
+        );
+
+    if (!clue) {
+        return (
+            'Choose a clue from the ' +
+            'dropdown below to start.'
+        );
+    }
+
+    const direction =
+        clue.direction ===
+            'across'
+            ?
+            'Across'
+            :
+            'Down';
+
+    const current =
+        getCurrentAnswer(
+            session,
+            clue
+        );
+
+    const display =
+        current.length > 0
+            ?
+            current
+                .split('')
+                .map(
+                    letter =>
+                        letter || '•'
+                )
+                .join(' ')
+            :
+            Array(
+                clue.answer.length
+            ).fill('•').join(' ');
+
+    return (
+        `### ${clue.number} ${direction}\n` +
+        `**${escapeMarkdown(clue.clue)}**\n` +
+        `Answer: \`${display}\``
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// BUILD CROSSWORD IMAGE
+// ─────────────────────────────────────────────
+
+async function buildCrosswordImage(
+    session
+) {
+    return await createCrosswordImage({
+        puzzle:
+            session.puzzle,
+
+        grid:
+            session.grid,
+
+        selectedClueId:
+            session.selectedClueId,
+
+        completed:
+            session.completed,
+
+        gaveUp:
+            session.gaveUp
+    });
+}
+
+
+// ─────────────────────────────────────────────
+// COMPONENT HELPERS
+// ─────────────────────────────────────────────
+
+function addText(
+    container,
+    text
+) {
+    container.addTextDisplayComponents(
+        new TextDisplayBuilder()
+            .setContent(text)
+    );
+}
+
+
+function addSeparator(
+    container
+) {
+    container.addSeparatorComponents(
+        new SeparatorBuilder()
+    );
+}
+
+
+// ─────────────────────────────────────────────
+// BUILD CLUE SELECT MENU
+// ─────────────────────────────────────────────
+
+function buildClueSelect(
+    session
+) {
+    const puzzle =
+        session.puzzle;
+
+    const allClues = [
+        ...puzzle.across,
+        ...puzzle.down
+    ];
+
+    const options =
+        allClues.map(
+            clue => {
+                const direction =
+                    clue.direction ===
+                        'across'
+                        ?
+                        'Across'
+                        :
+                        'Down';
+
+                const label =
+                    `${clue.number} ${direction}`;
+
+                const description =
+                    `${clue.clue} ` +
+                    `(${clue.answer.length})`;
+
+                return {
+                    label:
+                        label.slice(
+                            0,
+                            100
+                        ),
+
+                    description:
+                        description.slice(
+                            0,
+                            100
+                        ),
+
+                    value:
+                        clue.id
+                };
+            }
+        );
+
+    const select =
+        new StringSelectMenuBuilder()
+            .setCustomId(
+                `cw_select_${session.id}`
+            )
+            .setPlaceholder(
+                'Choose a crossword clue'
+            )
+            .addOptions(
+                options
+            );
+
+    return new ActionRowBuilder()
+        .addComponents(
+            select
+        );
+}
+
+
+// ─────────────────────────────────────────────
+// BUILD BUTTONS
+// ─────────────────────────────────────────────
+
+function buildButtons(
+    session
+) {
+    const buttons = [];
+
+    buttons.push(
+        new ButtonBuilder()
+            .setCustomId(
+                `cw_enter_${session.id}`
+            )
+            .setLabel(
+                'Enter Answer'
+            )
+            .setStyle(
+                ButtonStyle.Primary
+            )
+            .setDisabled(
+                !session.selectedClueId ||
+                session.completed ||
+                session.gaveUp
+            )
+    );
+
+    buttons.push(
+        new ButtonBuilder()
+            .setCustomId(
+                `cw_clear_${session.id}`
+            )
+            .setLabel(
+                'Clear Answer'
+            )
+            .setStyle(
+                ButtonStyle.Secondary
+            )
+            .setDisabled(
+                !session.selectedClueId ||
+                session.completed ||
+                session.gaveUp
+            )
+    );
+
+    buttons.push(
+        new ButtonBuilder()
+            .setCustomId(
+                `cw_check_${session.id}`
+            )
+            .setLabel(
+                'Check'
+            )
+            .setStyle(
+                ButtonStyle.Success
+            )
+            .setDisabled(
+                session.completed ||
+                session.gaveUp
+            )
+    );
+
+    buttons.push(
+        new ButtonBuilder()
+            .setCustomId(
+                `cw_giveup_${session.id}`
+            )
+            .setLabel(
+                'Give Up'
+            )
+            .setStyle(
+                ButtonStyle.Danger
+            )
+            .setDisabled(
+                session.completed ||
+                session.gaveUp
+            )
+    );
+
+    return new ActionRowBuilder()
+        .addComponents(
+            buttons
+        );
+}
+
+
+// ─────────────────────────────────────────────
+// BUILD PLAY AGAIN BUTTON
+// ─────────────────────────────────────────────
+
+function buildPlayAgainButton(
+    session
+) {
+    return new ActionRowBuilder()
+        .addComponents(
+            new ButtonBuilder()
+                .setCustomId(
+                    `cw_again_${session.id}`
+                )
+                .setLabel(
+                    'Play Again'
+                )
+                .setStyle(
+                    ButtonStyle.Primary
                 )
         );
 }
 
 
 // ─────────────────────────────────────────────
-// IMAGE ATTACHMENT
+// BUILD CROSSWORD DISPLAY
 // ─────────────────────────────────────────────
 
-async function buildImageAttachment(
+async function buildCrosswordDisplay(
     session
 ) {
-    const image =
-        await createCrosswordImage(
+    const imageBuffer =
+        await buildCrosswordImage(
             session
         );
 
-    return new AttachmentBuilder(
-        image,
-        {
-            name:
-                `crossword-${session.id}.png`
-        }
-    );
-}
+    const imageName =
+        `crossword_${session.id}.png`;
 
-
-// ─────────────────────────────────────────────
-// CROSSWORD CONTAINER
-// ─────────────────────────────────────────────
-
-function buildCrosswordContainer(
-    session
-) {
-    let accentColour =
-        COLOUR_PURPLE;
-
-    if (
-        session.completed
-    ) {
-        accentColour =
-            COLOUR_GREEN;
-    }
-
-    if (
-        session.gaveUp
-    ) {
-        accentColour =
-            COLOUR_RED;
-    }
+    const attachment =
+        new AttachmentBuilder(
+            imageBuffer,
+            {
+                name:
+                    imageName
+            }
+        );
 
     const container =
         new ContainerBuilder()
             .setAccentColor(
-                accentColour
+                session.completed
+                    ?
+                    COLOUR_GREEN
+                    :
+                    session.gaveUp
+                        ?
+                        COLOUR_RED
+                        :
+                        COLOUR_PURPLE
             );
 
-    const modeHeading =
+    const title =
         session.mode ===
             'daily'
             ?
             'DAILY CROSSWORD'
             :
-            'CROSSWORD';
+            'CONTINUOUS CROSSWORD';
 
-    container.addTextDisplayComponents(
-        new TextDisplayBuilder()
-            .setContent(
-                `# 🧩 PUZZLEPILOT\n` +
-                `## ${modeHeading}\n` +
-                `**${escapeMarkdown(
-                    session.puzzle.title
-                )}**\n` +
-                `${session.puzzle.size} × ` +
-                `${session.puzzle.size} • ` +
-                `${escapeMarkdown(
-                    session.puzzle.difficulty
-                )}`
-            )
+    addText(
+        container,
+        `# 🧩 ${title}`
     );
 
-    container.addSeparatorComponents(
-        new SeparatorBuilder()
+    addText(
+        container,
+        `**${escapeMarkdown(session.puzzle.title)}** ` +
+        `• ${session.puzzle.size}×${session.puzzle.size} ` +
+        `• ${session.puzzle.difficulty}`
+    );
+
+    addSeparator(
+        container
     );
 
     const gallery =
@@ -1441,10 +1493,7 @@ function buildCrosswordContainer(
             .addItems(
                 new MediaGalleryItemBuilder()
                     .setURL(
-                        `attachment://crossword-${session.id}.png`
-                    )
-                    .setDescription(
-                        `${session.puzzle.title} crossword grid`
+                        `attachment://${imageName}`
                     )
             );
 
@@ -1452,165 +1501,87 @@ function buildCrosswordContainer(
         gallery
     );
 
-    container.addSeparatorComponents(
-        new SeparatorBuilder()
+    addSeparator(
+        container
     );
 
     if (
         session.completed
     ) {
-        container.addTextDisplayComponents(
-            new TextDisplayBuilder()
-                .setContent(
-                    `## 🎉 CROSSWORD COMPLETE!\n` +
-                    `Brilliant — every answer is correct.`
-                )
+        addText(
+            container,
+            '## 🎉 Crossword completed!'
         );
 
-        container.addSeparatorComponents(
-            new SeparatorBuilder()
+        addText(
+            container,
+            'Every letter is correct. ' +
+            'Well played!'
         );
-    }
-
-    if (
-        session.gaveUp
-    ) {
-        container.addTextDisplayComponents(
-            new TextDisplayBuilder()
-                .setContent(
-                    `## 🏳️ SOLUTION REVEALED\n` +
-                    `The completed crossword is shown above.`
-                )
-        );
-
-        container.addSeparatorComponents(
-            new SeparatorBuilder()
-        );
-    }
-
-    container.addTextDisplayComponents(
-        new TextDisplayBuilder()
-            .setContent(
-                renderClueSection(
-                    'ACROSS',
-                    session.puzzle.across
-                )
-            )
-    );
-
-    container.addSeparatorComponents(
-        new SeparatorBuilder()
-    );
-
-    container.addTextDisplayComponents(
-        new TextDisplayBuilder()
-            .setContent(
-                renderClueSection(
-                    'DOWN',
-                    session.puzzle.down
-                )
-            )
-    );
-
-    if (
-        !session.completed &&
-        !session.gaveUp
-    ) {
-        container.addSeparatorComponents(
-            new SeparatorBuilder()
-        );
-
-        container.addTextDisplayComponents(
-            new TextDisplayBuilder()
-                .setContent(
-                    renderSelectedClue(
-                        session
-                    )
-                )
-        );
-    }
-
-    const status =
-        renderStatus(
-            session
-        );
-
-    if (status) {
-        container.addSeparatorComponents(
-            new SeparatorBuilder()
-        );
-
-        container.addTextDisplayComponents(
-            new TextDisplayBuilder()
-                .setContent(
-                    status
-                )
-        );
-    }
-
-    container.addSeparatorComponents(
-        new SeparatorBuilder()
-    );
-
-    let footer;
-
-    if (
-        session.completed
-    ) {
-        footer =
-            session.mode ===
-                'daily'
-                ?
-                `Daily Crossword complete • ` +
-                `Come back after midnight UK time ` +
-                `for a new one!`
-                :
-                `Continuous Crossword complete • ` +
-                `Fancy another one?`;
     } else if (
         session.gaveUp
     ) {
-        footer =
-            session.mode ===
-                'daily'
-                ?
-                `Daily Crossword finished • ` +
-                `Solution shown`
-                :
-                `Continuous Crossword finished • ` +
-                `Solution shown`;
-    } else {
-        footer =
-            `💡 **How to play:** Choose a clue ` +
-            `from the menu, then press ` +
-            `**Enter Answer**.`;
-    }
-
-    container.addTextDisplayComponents(
-        new TextDisplayBuilder()
-            .setContent(
-                footer
-            )
-    );
-
-    return container;
-}
-// ─────────────────────────────────────────────
-// FULL V2 PAYLOAD
-// ─────────────────────────────────────────────
-
-async function buildCrosswordPayload(
-    session
-) {
-    const attachment =
-        await buildImageAttachment(
-            session
+        addText(
+            container,
+            '## 🏳️ Crossword revealed'
         );
 
+        addText(
+            container,
+            'The full solution is now shown.'
+        );
+    } else {
+        addText(
+            container,
+            '## Choose a Clue'
+        );
+
+        addText(
+            container,
+            buildSelectedClueText(
+                session
+            )
+        );
+
+        addSeparator(
+            container
+        );
+
+        addText(
+            container,
+            '### Across\n' +
+            buildClueList(
+                session.puzzle.across
+            )
+        );
+
+        addSeparator(
+            container
+        );
+
+        addText(
+            container,
+            '### Down\n' +
+            buildClueList(
+                session.puzzle.down
+            )
+        );
+
+        addSeparator(
+            container
+        );
+
+        addText(
+            container,
+            'Choose a clue, then press ' +
+            '**Enter Answer** to fill it in. ' +
+            'Crossing letters are kept ' +
+            'unless you change them.'
+        );
+    }
+
     const components = [
-        buildCrosswordContainer(
-            session
-        )
+        container
     ];
 
     if (
@@ -1628,15 +1599,9 @@ async function buildCrosswordPayload(
                 session
             )
         );
-    }
-
-    if (
-        (
-            session.completed ||
-            session.gaveUp
-        ) &&
+    } else if (
         session.mode ===
-            'continuous'
+        'continuous'
     ) {
         components.push(
             buildPlayAgainButton(
@@ -1646,24 +1611,23 @@ async function buildCrosswordPayload(
     }
 
     return {
+        content:
+            '',
+
         components,
 
         files: [
             attachment
         ],
 
-        attachments:
-            [],
-
         flags:
-            MessageFlags
-                .IsComponentsV2
+            MessageFlags.IsComponentsV2
     };
 }
 
 
 // ─────────────────────────────────────────────
-// VERIFY PLAYER
+// PLAYER VERIFICATION
 // ─────────────────────────────────────────────
 
 async function verifyPlayer(
@@ -1673,10 +1637,12 @@ async function verifyPlayer(
     if (!session) {
         await interaction.reply({
             content:
-                '⚠️ This crossword session ' +
-                'is no longer active.',
-            ephemeral:
-                true
+                'This crossword session ' +
+                'has expired. Please start ' +
+                'a new crossword.',
+
+            flags:
+                MessageFlags.Ephemeral
         });
 
         return false;
@@ -1688,11 +1654,12 @@ async function verifyPlayer(
     ) {
         await interaction.reply({
             content:
-                '🧩 This crossword belongs ' +
-                'to another player. ' +
-                'Start your own from /daily.',
-            ephemeral:
-                true
+                'This is somebody else’s ' +
+                'crossword. Start your own ' +
+                'game from the daily menu.',
+
+            flags:
+                MessageFlags.Ephemeral
         });
 
         return false;
@@ -1703,66 +1670,30 @@ async function verifyPlayer(
 
 
 // ─────────────────────────────────────────────
-// UPDATE CROSSWORD MESSAGE
-// ─────────────────────────────────────────────
-
-async function updateCrosswordMessage(
-    interaction,
-    session,
-    useUpdate = true
-) {
-    const payload =
-        await buildCrosswordPayload(
-            session
-        );
-
-    if (
-        useUpdate
-    ) {
-        await interaction.update(
-            payload
-        );
-    } else {
-        await interaction.editReply(
-            payload
-        );
-    }
-}
-
-
-// ─────────────────────────────────────────────
-// CREATE A NEW CROSSWORD SESSION
+// CREATE NEW SESSION
 // ─────────────────────────────────────────────
 
 function createSession(
-    interaction,
-    puzzle,
-    mode
+    userId,
+    mode,
+    puzzle
 ) {
-    const sessionId =
+    const id =
         createSessionId();
 
     const session = {
-        id:
-            sessionId,
+        id,
 
-        userId:
-            interaction.user.id,
-
-        puzzle,
+        userId,
 
         mode,
+
+        puzzle,
 
         grid:
             createPlayerGrid(
                 puzzle
             ),
-
-        answers:
-            {},
-
-        answerOrder:
-            [],
 
         selectedClueId:
             null,
@@ -1773,66 +1704,14 @@ function createSession(
         gaveUp:
             false,
 
-        statusMessage:
-            '💡 Choose a clue, then press ' +
-            '**Enter Answer**.'
+        startedAt:
+            Date.now()
     };
 
     sessions.set(
-        sessionId,
+        id,
         session
     );
-
-    return session;
-}
-
-
-// ─────────────────────────────────────────────
-// SEND NEW CROSSWORD
-// ─────────────────────────────────────────────
-
-async function sendNewCrossword(
-    interaction,
-    puzzle,
-    mode,
-    useUpdate = false
-) {
-    const session =
-        createSession(
-            interaction,
-            puzzle,
-            mode
-        );
-
-    const payload =
-        await buildCrosswordPayload(
-            session
-        );
-
-    if (
-        useUpdate
-    ) {
-        // The Continuous Crossword launcher is a
-        // legacy Discord message. A Components V2
-        // payload cannot replace it directly while
-        // that legacy content still exists.
-        //
-        // Acknowledge the launcher button, remove
-        // the old launcher message, then send the
-        // new V2 crossword as a clean message.
-
-        await interaction.deferUpdate();
-
-        await interaction.deleteReply();
-
-        await interaction.followUp(
-            payload
-        );
-    } else {
-        await interaction.reply(
-            payload
-        );
-    }
 
     return session;
 }
@@ -1848,11 +1727,20 @@ async function startDaily(
     const puzzle =
         getDailyPuzzle();
 
-    return sendNewCrossword(
-        interaction,
-        puzzle,
-        'daily',
-        false
+    const session =
+        createSession(
+            interaction.user.id,
+            'daily',
+            puzzle
+        );
+
+    const display =
+        await buildCrosswordDisplay(
+            session
+        );
+
+    await interaction.reply(
+        display
     );
 }
 
@@ -1872,52 +1760,63 @@ async function startContinuous(
     lastContinuousPuzzleId =
         puzzle.id;
 
-    return sendNewCrossword(
-        interaction,
-        puzzle,
-        'continuous',
-        interaction.isButton()
+    const session =
+        createSession(
+            interaction.user.id,
+            'continuous',
+            puzzle
+        );
+
+    const display =
+        await buildCrosswordDisplay(
+            session
+        );
+
+    await interaction.reply(
+        display
     );
 }
 
 
 // ─────────────────────────────────────────────
-// BACKWARDS-COMPATIBLE START
+// UPDATE EXISTING DISPLAY
 // ─────────────────────────────────────────────
 
-async function startCrossword(
-    interaction
+async function updateDisplay(
+    interaction,
+    session
 ) {
-    return startContinuous(
-        interaction
+    const display =
+        await buildCrosswordDisplay(
+            session
+        );
+
+    await interaction.editReply(
+        display
     );
 }
 
 
 // ─────────────────────────────────────────────
-// HANDLE INTERACTIONS
+// INTERACTION HANDLER
 // ─────────────────────────────────────────────
 
 async function handleInteraction(
     interaction
 ) {
-    // ─────────────────────────────────────
-    // SELECT CLUE
-    // ─────────────────────────────────────
+    // Select clue.
 
     if (
         interaction.isStringSelectMenu() &&
-        interaction.customId
-            .startsWith(
-                'cw_select_'
-            )
+        interaction.customId.startsWith(
+            'cw_select_'
+        )
     ) {
         const sessionId =
-            interaction.customId
-                .replace(
-                    'cw_select_',
-                    ''
-                );
+            interaction.customId.replace(
+                'cw_select_',
+                ''
+            );
 
         const session =
             sessions.get(
@@ -1933,47 +1832,33 @@ async function handleInteraction(
             return;
         }
 
-        // Acknowledge the clue selection immediately.
-        // Rebuilding the crossword PNG can take long
-        // enough for Discord to show an interaction
-        // failure even though the update later succeeds.
-
-        await interaction.deferUpdate();
-
         session.selectedClueId =
             interaction.values[0];
 
-        session.statusMessage =
-            '✏️ Press **Enter Answer** ' +
-            'to fill this clue.';
+        await interaction.deferUpdate();
 
-        await updateCrosswordMessage(
+        await updateDisplay(
             interaction,
-            session,
-            false
+            session
         );
 
         return;
     }
 
 
-    // ─────────────────────────────────────
-    // ENTER ANSWER BUTTON
-    // ─────────────────────────────────────
+    // Enter answer button.
 
     if (
         interaction.isButton() &&
-        interaction.customId
-            .startsWith(
-                'cw_enter_'
-            )
+        interaction.customId.startsWith(
+            'cw_enter_'
+        )
     ) {
         const sessionId =
-            interaction.customId
-                .replace(
-                    'cw_enter_',
-                    ''
-                );
+            interaction.customId.replace(
+                'cw_enter_',
+                ''
+            );
 
         const session =
             sessions.get(
@@ -1986,20 +1871,6 @@ async function handleInteraction(
                 session
             )
         ) {
-            return;
-        }
-
-        if (
-            !session.selectedClueId
-        ) {
-            await interaction.reply({
-                content:
-                    'Choose a clue first.',
-
-                ephemeral:
-                    true
-            });
-
             return;
         }
 
@@ -2012,10 +1883,10 @@ async function handleInteraction(
         if (!clue) {
             await interaction.reply({
                 content:
-                    'That clue could not be found.',
+                    'Please choose a clue first.',
 
-                ephemeral:
-                    true
+                flags:
+                    MessageFlags.Ephemeral
             });
 
             return;
@@ -2024,34 +1895,45 @@ async function handleInteraction(
         const modal =
             new ModalBuilder()
                 .setCustomId(
-                    `cw_modal_${session.id}`
+                    `cw_modal_${session.id}_${clue.id}`
                 )
                 .setTitle(
-                    `${clue.id} Crossword Answer`
+                    `Answer ${clue.number} ` +
+                    (
+                        clue.direction ===
+                            'across'
+                            ?
+                            'Across'
+                            :
+                            'Down'
+                    )
                 );
+
+        const current =
+            getCurrentAnswer(
+                session,
+                clue
+            );
 
         const input =
             new TextInputBuilder()
                 .setCustomId(
-                    'cw_answer'
+                    'cw_answer_input'
                 )
                 .setLabel(
-                    `${clue.answer.length}-letter answer`
-                )
-                .setPlaceholder(
-                    clue.clue
+                    `${clue.answer.length} letters`
                 )
                 .setStyle(
                     TextInputStyle.Short
                 )
-                .setMinLength(
-                    clue.answer.length
+                .setRequired(
+                    true
                 )
                 .setMaxLength(
                     clue.answer.length
                 )
-                .setRequired(
-                    true
+                .setValue(
+                    current
                 );
 
         modal.addComponents(
@@ -2069,155 +1951,35 @@ async function handleInteraction(
     }
 
 
-    // ─────────────────────────────────────
-    // ANSWER MODAL
-    // ─────────────────────────────────────
+    // Modal answer submitted.
 
     if (
         interaction.isModalSubmit() &&
-        interaction.customId
-            .startsWith(
-                'cw_modal_'
-            )
+        interaction.customId.startsWith(
+            'cw_modal_'
+        )
     ) {
-        const sessionId =
-            interaction.customId
-                .replace(
-                    'cw_modal_',
-                    ''
-                );
-
-        const session =
-            sessions.get(
-                sessionId
+        const rest =
+            interaction.customId.replace(
+                'cw_modal_',
+                ''
             );
 
-        if (!session) {
-            await interaction.reply({
-                content:
-                    '⚠️ This crossword session ' +
-                    'is no longer active.',
-
-                ephemeral:
-                    true
-            });
-
-            return;
-        }
-
-        if (
-            interaction.user.id !==
-            session.userId
-        ) {
-            await interaction.reply({
-                content:
-                    'This crossword belongs ' +
-                    'to another player.',
-
-                ephemeral:
-                    true
-            });
-
-            return;
-        }
-
-        const clue =
-            findClue(
-                session.puzzle,
-                session.selectedClueId
+        const lastUnderscore =
+            rest.lastIndexOf(
+                '_'
             );
 
-        if (!clue) {
-            await interaction.reply({
-                content:
-                    'No clue is currently selected.',
-
-                ephemeral:
-                    true
-            });
-
-            return;
-        }
-
-        const answer =
-            interaction.fields
-                .getTextInputValue(
-                    'cw_answer'
-                )
-                .trim()
-                .toUpperCase()
-                .replace(
-                    /[^A-Z]/g,
-                    ''
-                );
-
-        if (
-            answer.length !==
-            clue.answer.length
-        ) {
-            await interaction.reply({
-                content:
-                    `That answer must be ` +
-                    `${clue.answer.length} letters.`,
-
-                ephemeral:
-                    true
-            });
-
-            return;
-        }
-
-        storeAnswer(
-            session,
-            clue,
-            answer
-        );
-
-        if (
-            isPuzzleComplete(
-                session
-            )
-        ) {
-            session.completed =
-                true;
-
-            session.statusMessage =
-                '🏆 Brilliant! Every answer ' +
-                'is correct.';
-        } else {
-            session.statusMessage =
-                `✏️ ${clue.id} entered.`;
-        }
-
-        await interaction.deferUpdate();
-
-        await updateCrosswordMessage(
-            interaction,
-            session,
-            false
-        );
-
-        return;
-    }
-
-
-    // ─────────────────────────────────────
-    // CHECK
-    // ─────────────────────────────────────
-
-    if (
-        interaction.isButton() &&
-        interaction.customId
-            .startsWith(
-                'cw_check_'
-            )
-    ) {
         const sessionId =
-            interaction.customId
-                .replace(
-                    'cw_check_',
-                    ''
-                );
+            rest.slice(
+                0,
+                lastUnderscore
+            );
+
+        const clueId =
+            rest.slice(
+                lastUnderscore + 1
+            );
 
         const session =
             sessions.get(
@@ -2233,11 +1995,167 @@ async function handleInteraction(
             return;
         }
 
-        // Acknowledge immediately so Discord
-        // does not appear to hang while the
-        // crossword image is rebuilt.
+        const clue =
+            findClue(
+                session.puzzle,
+                clueId
+            );
+
+        if (!clue) {
+            await interaction.reply({
+                content:
+                    'That clue could not be found.',
+
+                flags:
+                    MessageFlags.Ephemeral
+            });
+
+            return;
+        }
+
+        const answer =
+            interaction.fields
+                .getTextInputValue(
+                    'cw_answer_input'
+                );
+
+        const cleaned =
+            cleanAnswer(
+                answer
+            );
+
+        if (
+            cleaned.length !==
+            clue.answer.length
+        ) {
+            await interaction.reply({
+                content:
+                    `That answer needs ` +
+                    `${clue.answer.length} letters.`,
+
+                flags:
+                    MessageFlags.Ephemeral
+            });
+
+            return;
+        }
+
+        writeAnswer(
+            session,
+            clue,
+            cleaned
+        );
+
+        if (
+            isPuzzleComplete(
+                session
+            )
+        ) {
+            session.completed =
+                true;
+        }
 
         await interaction.deferUpdate();
+
+        await updateDisplay(
+            interaction,
+            session
+        );
+
+        return;
+    }
+
+
+    // Clear selected answer.
+
+    if (
+        interaction.isButton() &&
+        interaction.customId.startsWith(
+            'cw_clear_'
+        )
+    ) {
+        const sessionId =
+            interaction.customId.replace(
+                'cw_clear_',
+                ''
+            );
+
+        const session =
+            sessions.get(
+                sessionId
+            );
+
+        if (
+            !await verifyPlayer(
+                interaction,
+                session
+            )
+        ) {
+            return;
+        }
+
+        const clue =
+            findClue(
+                session.puzzle,
+                session.selectedClueId
+            );
+
+        if (!clue) {
+            await interaction.reply({
+                content:
+                    'Please choose a clue first.',
+
+                flags:
+                    MessageFlags.Ephemeral
+            });
+
+            return;
+        }
+
+        clearAnswer(
+            session,
+            clue
+        );
+
+        await interaction.deferUpdate();
+
+        await updateDisplay(
+            interaction,
+            session
+        );
+
+        return;
+    }
+
+    // ─────────────────────────────────────
+    // CHECK ANSWERS
+    // ─────────────────────────────────────
+
+    if (
+        interaction.isButton() &&
+        interaction.customId.startsWith(
+            'cw_check_'
+        )
+    ) {
+        const sessionId =
+            interaction.customId.replace(
+                'cw_check_',
+                ''
+            );
+
+        const session =
+            sessions.get(
+                sessionId
+            );
+
+        if (
+            !await verifyPlayer(
+                interaction,
+                session
+            )
+        ) {
+            return;
+        }
 
         const incorrect =
             countIncorrectLetters(
@@ -2255,145 +2173,46 @@ async function handleInteraction(
         ) {
             session.completed =
                 true;
-
-            session.statusMessage =
-                '🎉 **Everything is correct!**';
-        } else if (
-            incorrect === 0
-        ) {
-            session.statusMessage =
-                `✅ Everything entered so far ` +
-                `is correct. ` +
-                `${empty} square` +
-                `${empty === 1 ? '' : 's'} ` +
-                `still empty.`;
-        } else {
-            session.statusMessage =
-                `⚠️ There ` +
-                `${incorrect === 1 ? 'is' : 'are'} ` +
-                `**${incorrect} incorrect ` +
-                `letter${incorrect === 1 ? '' : 's'}** ` +
-                `somewhere in the grid.`;
         }
 
-        await updateCrosswordMessage(
+        await interaction.deferUpdate();
+
+        await updateDisplay(
             interaction,
-            session,
-            false
+            session
         );
+
+        await interaction.followUp({
+            content:
+                session.completed
+                    ?
+                    '🎉 Well done! You have completed the crossword!'
+                    :
+                    `Check complete: ${incorrect} incorrect letters and ${empty} empty squares.`,
+
+            flags:
+                MessageFlags.Ephemeral
+        });
 
         return;
     }
 
 
     // ─────────────────────────────────────
-    // CLEAR ANSWER
+    // GIVE UP AND REVEAL
     // ─────────────────────────────────────
 
     if (
         interaction.isButton() &&
-        interaction.customId
-            .startsWith(
-                'cw_clear_'
-            )
+        interaction.customId.startsWith(
+            'cw_giveup_'
+        )
     ) {
         const sessionId =
-            interaction.customId
-                .replace(
-                    'cw_clear_',
-                    ''
-                );
-
-        const session =
-            sessions.get(
-                sessionId
+            interaction.customId.replace(
+                'cw_giveup_',
+                ''
             );
-
-        if (
-            !await verifyPlayer(
-                interaction,
-                session
-            )
-        ) {
-            return;
-        }
-
-        if (
-            !session.selectedClueId
-        ) {
-            await interaction.reply({
-                content:
-                    'Choose a clue first, ' +
-                    'then you can clear it.',
-
-                ephemeral:
-                    true
-            });
-
-            return;
-        }
-
-        const clue =
-            findClue(
-                session.puzzle,
-                session.selectedClueId
-            );
-
-        if (!clue) {
-            await interaction.reply({
-                content:
-                    'That clue could not be found.',
-
-                ephemeral:
-                    true
-            });
-
-            return;
-        }
-
-        if (
-            !session.answers[
-                clue.id
-            ]
-        ) {
-            session.statusMessage =
-                `ℹ️ ${clue.id} has no entered ` +
-                `answer to clear.`;
-        } else {
-            clearStoredAnswer(
-                session,
-                clue
-            );
-
-            session.statusMessage =
-                `🧹 ${clue.id} cleared.`;
-        }
-
-        await updateCrosswordMessage(
-            interaction,
-            session,
-            true
-        );
-
-        return;
-    }
-    // ─────────────────────────────────────
-    // GIVE UP
-    // ─────────────────────────────────────
-
-    if (
-        interaction.isButton() &&
-        interaction.customId
-            .startsWith(
-                'cw_giveup_'
-            )
-    ) {
-        const sessionId =
-            interaction.customId
-                .replace(
-                    'cw_giveup_',
-                    ''
-                );
 
         const session =
             sessions.get(
@@ -2416,13 +2235,11 @@ async function handleInteraction(
         session.gaveUp =
             true;
 
-        session.statusMessage =
-            'The completed solution is shown above.';
+        await interaction.deferUpdate();
 
-        await updateCrosswordMessage(
+        await updateDisplay(
             interaction,
-            session,
-            true
+            session
         );
 
         return;
@@ -2435,21 +2252,19 @@ async function handleInteraction(
 
     if (
         interaction.isButton() &&
-        interaction.customId
-            .startsWith(
-                'cw_again_'
-            )
+        interaction.customId.startsWith(
+            'cw_again_'
+        )
     ) {
-        const oldSessionId =
-            interaction.customId
-                .replace(
-                    'cw_again_',
-                    ''
-                );
+        const sessionId =
+            interaction.customId.replace(
+                'cw_again_',
+                ''
+            );
 
         const oldSession =
             sessions.get(
-                oldSessionId
+                sessionId
             );
 
         if (
@@ -2468,10 +2283,10 @@ async function handleInteraction(
             await interaction.reply({
                 content:
                     'Play Again is only available ' +
-                    'for Continuous Crossword.',
+                    'for continuous crosswords.',
 
-                ephemeral:
-                    true
+                flags:
+                    MessageFlags.Ephemeral
             });
 
             return;
@@ -2486,32 +2301,47 @@ async function handleInteraction(
             puzzle.id;
 
         sessions.delete(
-            oldSessionId
+            sessionId
         );
 
-        // This is already a Components V2
-        // crossword message, so Play Again can
-        // replace it directly with the next V2
-        // crossword.
-
-        const newSession =
+        const session =
             createSession(
-                interaction,
-                puzzle,
-                'continuous'
+                interaction.user.id,
+                'continuous',
+                puzzle
             );
 
-        const payload =
-            await buildCrosswordPayload(
-                newSession
-            );
+        await interaction.deferUpdate();
 
-        await interaction.update(
-            payload
+        await updateDisplay(
+            interaction,
+            session
         );
 
-        return newSession;
+        return;
     }
+}
+
+
+// ─────────────────────────────────────────────
+// START CROSSWORD
+// ─────────────────────────────────────────────
+
+async function startCrossword(
+    interaction,
+    mode = 'daily'
+) {
+    if (
+        mode === 'continuous'
+    ) {
+        return startContinuous(
+            interaction
+        );
+    }
+
+    return startDaily(
+        interaction
+    );
 }
 
 
