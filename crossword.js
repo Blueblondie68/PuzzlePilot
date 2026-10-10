@@ -1,4 +1,4 @@
-// crossword.js
+ // crossword.js
 // PuzzlePilot Crossword Engine
 // Components V2 makeover
 //
@@ -43,6 +43,8 @@ const {
 const {
     createCrosswordImage
 } = require('./crosswordImage');
+
+const { getDatabaseClient } = require('./quiz_database');
 
 const crosswordPack1 =
     require('./crossword_pack1');
@@ -663,6 +665,92 @@ console.log(
 );
 
 
+// Daily completions use the existing PostgreSQL connection,
+// but have their own table and never touch quiz results.
+const crosswordDatabaseReady = (async () => {
+    const client = await getDatabaseClient();
+    try {
+        await client.query(`
+            CREATE TABLE IF NOT EXISTS crossword_completions (
+                guild_id TEXT NOT NULL,
+                user_id TEXT NOT NULL,
+                completion_date DATE NOT NULL,
+                puzzle_id TEXT NOT NULL,
+                completed_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                PRIMARY KEY (guild_id, user_id, completion_date)
+            )
+        `);
+    } finally {
+        client.release();
+    }
+})();
+
+crosswordDatabaseReady.catch(error =>
+    console.error('Crossword database setup failed:', error)
+);
+
+function crosswordServerId(interaction) {
+    return interaction.guildId || `DM_${interaction.user.id}`;
+}
+
+function crosswordDateKey() {
+    const { year, month, day } = getUKDateParts();
+    return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+}
+
+async function hasCrosswordCompletion(serverId, userId, dateKey) {
+    await crosswordDatabaseReady;
+    const client = await getDatabaseClient();
+    try {
+        const result = await client.query(
+            `SELECT 1 FROM crossword_completions
+             WHERE guild_id = $1 AND user_id = $2
+             AND completion_date = $3 LIMIT 1`,
+            [serverId, userId, dateKey]
+        );
+        return result.rows.length > 0;
+    } finally {
+        client.release();
+    }
+}
+
+async function saveCrosswordCompletion(session) {
+    if (session.mode !== 'daily' || session.completionSaved) return;
+    await crosswordDatabaseReady;
+    const client = await getDatabaseClient();
+    try {
+        await client.query(
+            `INSERT INTO crossword_completions
+             (guild_id, user_id, completion_date, puzzle_id)
+             VALUES ($1, $2, $3, $4)
+             ON CONFLICT (guild_id, user_id, completion_date) DO NOTHING`,
+            [session.serverId, session.userId, session.dateKey, session.puzzle.id]
+        );
+        session.completionSaved = true;
+    } finally {
+        client.release();
+    }
+}
+
+const dailySessions = new Map();
+function dailySessionKey(serverId, userId, dateKey) {
+    return `${serverId}:${userId}:${dateKey}`;
+}
+
+async function finishCrosswordIfComplete(session) {
+    if (!isPuzzleComplete(session)) return false;
+    // Save before declaring completion, so a database failure cannot
+    // silently allow another daily game after a restart.
+    await saveCrosswordCompletion(session);
+    session.completed = true;
+    if (session.mode === 'daily') {
+        dailySessions.delete(dailySessionKey(
+            session.serverId, session.userId, session.dateKey
+        ));
+    }
+    return true;
+}
+
 // ─────────────────────────────────────────────
 // UK DATE / DAILY ROTATION
 // ─────────────────────────────────────────────
@@ -732,7 +820,6 @@ function getDailyPuzzle() {
 
     return crosswordPuzzles[index];
 }
-
 
 let lastContinuousPuzzleId =
     null;
@@ -1005,7 +1092,7 @@ function countIncorrectLetters(
 }
 
 
-// ─────────────────────────────────────────────
+ // ─────────────────────────────────────────────
 // COUNT EMPTY CELLS
 // ─────────────────────────────────────────────
 
@@ -1059,43 +1146,14 @@ function countEmptyCells(
 function isPuzzleComplete(
     session
 ) {
-    for (
-        let row = 0;
-        row < session.puzzle.size;
-        row++
-    ) {
-        for (
-            let col = 0;
-            col < session.puzzle.size;
-            col++
-        ) {
-            const expected =
-                session.puzzle.solution[
-                    row
-                ][
-                    col
-                ];
-
-            if (
-                isBlock(expected)
-            ) {
-                continue;
-            }
-
-            if (
-                session.grid[
-                    row
-                ][
-                    col
-                ] !==
-                expected
-            ) {
-                return false;
-            }
-        }
-    }
-
-    return true;
+    return (
+        countIncorrectLetters(
+            session
+        ) === 0 &&
+        countEmptyCells(
+            session
+        ) === 0
+    );
 }
 
 
@@ -1109,10 +1167,68 @@ function revealSolution(
     session.grid =
         session.puzzle.solution.map(
             row =>
-                [...row]
+                row.map(
+                    cell =>
+                        isBlock(cell)
+                            ?
+                            '#'
+                            :
+                            cell
+                )
         );
 }
 
+
+// ─────────────────────────────────────────────
+// CREATE SESSION
+// ─────────────────────────────────────────────
+
+function createSession(
+    userId,
+    mode,
+    puzzle
+) {
+    const id =
+        createSessionId();
+
+    const session = {
+        id,
+
+        userId,
+
+        mode,
+
+        puzzle,
+
+        grid:
+            createPlayerGrid(
+                puzzle
+            ),
+
+        selectedClueId:
+            null,
+
+        completed:
+            false,
+
+        gaveUp:
+            false,
+
+        startedAt:
+            Date.now(),
+
+        serverId: null,
+        dateKey: null,
+        completionSaved: false
+    };
+
+    sessions.set(
+        id,
+        session
+    );
+
+    return session;
+}
 
 // ─────────────────────────────────────────────
 // CLUE LIST TEXT
@@ -1167,26 +1283,10 @@ function buildSelectedClueText(
             :
             'Down';
 
-    const current =
-        getCurrentAnswer(
-            session,
-            clue
-        );
-
-    const display =
-        current.length > 0
-            ?
-            current
-                .split('')
-                .map(
-                    letter =>
-                        letter || '•'
-                )
-                .join(' ')
-            :
-            Array(
-                clue.answer.length
-            ).fill('•').join(' ');
+    // Preserve the positions of crossing letters, including blanks.
+    const display = getClueCells(clue).map(cell =>
+        session.grid[cell.row][cell.col] || '•'
+    ).join(' ');
 
     return (
         `### ${clue.number} ${direction}\n` +
@@ -1266,33 +1366,27 @@ function buildClueSelect(
             clue => {
                 const direction =
                     clue.direction ===
-                        'across'
-                        ?
-                        'Across'
-                        :
-                        'Down';
-
-                const label =
-                    `${clue.number} ${direction}`;
-
-                const description =
-                    `${clue.clue} ` +
-                    `(${clue.answer.length})`;
+                    'across'
+                    ?
+                    'Across'
+                    :
+                    'Down';
 
                 return {
                     label:
-                        label.slice(
-                            0,
-                            100
-                        ),
+                        `${clue.number} ${direction}`,
 
                     description:
-                        description.slice(
+                        `${clue.clue}`.slice(
                             0,
                             100
                         ),
 
                     value:
+                        clue.id,
+
+                    default:
+                        session.selectedClueId ===
                         clue.id
                 };
             }
@@ -1304,18 +1398,13 @@ function buildClueSelect(
                 `cw_select_${session.id}`
             )
             .setPlaceholder(
-                'Choose a crossword clue'
+                'Choose a clue'
             )
-            .addOptions(
-                options
-            );
+            .addOptions(options);
 
     return new ActionRowBuilder()
-        .addComponents(
-            select
-        );
+        .addComponents(select);
 }
-
 
 // ─────────────────────────────────────────────
 // BUILD BUTTONS
@@ -1424,7 +1513,6 @@ function buildPlayAgainButton(
                 )
         );
 }
-
 
 // ─────────────────────────────────────────────
 // BUILD CROSSWORD DISPLAY
@@ -1625,7 +1713,6 @@ async function buildCrosswordDisplay(
     };
 }
 
-
 // ─────────────────────────────────────────────
 // PLAYER VERIFICATION
 // ─────────────────────────────────────────────
@@ -1670,78 +1757,103 @@ async function verifyPlayer(
 
 
 // ─────────────────────────────────────────────
-// CREATE NEW SESSION
-// ─────────────────────────────────────────────
-
-function createSession(
-    userId,
-    mode,
-    puzzle
-) {
-    const id =
-        createSessionId();
-
-    const session = {
-        id,
-
-        userId,
-
-        mode,
-
-        puzzle,
-
-        grid:
-            createPlayerGrid(
-                puzzle
-            ),
-
-        selectedClueId:
-            null,
-
-        completed:
-            false,
-
-        gaveUp:
-            false,
-
-        startedAt:
-            Date.now()
-    };
-
-    sessions.set(
-        id,
-        session
-    );
-
-    return session;
-}
-
-
-// ─────────────────────────────────────────────
 // START DAILY CROSSWORD
 // ─────────────────────────────────────────────
 
-async function startDaily(
-    interaction
-) {
-    const puzzle =
-        getDailyPuzzle();
+async function startDaily(interaction) {
+    await interaction.deferReply();
 
-    const session =
-        createSession(
-            interaction.user.id,
-            'daily',
-            puzzle
+    const serverId =
+        crosswordServerId(interaction);
+
+    const userId =
+        interaction.user.id;
+
+    const dateKey =
+        crosswordDateKey();
+
+    const key =
+        dailySessionKey(
+            serverId,
+            userId,
+            dateKey
         );
 
-    const display =
-        await buildCrosswordDisplay(
-            session
+    try {
+        if (
+            await hasCrosswordCompletion(
+                serverId,
+                userId,
+                dateKey
+            )
+        ) {
+            await interaction.editReply({
+                content:
+                    '🧩 You have already completed ' +
+                    'today’s Daily Crossword. ' +
+                    'Come back after midnight UK time!',
+                components: []
+            });
+
+            return;
+        }
+
+        if (dailySessions.has(key)) {
+            await interaction.editReply({
+                content:
+                    '🧩 You already have today’s ' +
+                    'Daily Crossword in progress. ' +
+                    'Please return to that game.',
+                components: []
+            });
+
+            return;
+        }
+
+        const session =
+            createSession(
+                userId,
+                'daily',
+                getDailyPuzzle()
+            );
+
+        session.serverId =
+            serverId;
+
+        session.dateKey =
+            dateKey;
+
+        dailySessions.set(
+            key,
+            session.id
         );
 
-    await interaction.reply(
-        display
-    );
+        try {
+            await interaction.editReply(
+                await buildCrosswordDisplay(
+                    session
+                )
+            );
+        } catch (error) {
+            dailySessions.delete(key);
+            sessions.delete(session.id);
+            throw error;
+        }
+
+    } catch (error) {
+        console.error(
+            'Daily Crossword start failed:',
+            error
+        );
+
+        await interaction.editReply({
+            content:
+                '⚠️ The Daily Crossword could ' +
+                'not be opened. Please check ' +
+                'the Render logs and database connection.',
+            components: []
+        });
+    }
 }
 
 
@@ -1776,7 +1888,6 @@ async function startContinuous(
         display
     );
 }
-
 
 // ─────────────────────────────────────────────
 // UPDATE EXISTING DISPLAY
@@ -1909,12 +2020,6 @@ async function handleInteraction(
                     )
                 );
 
-        const current =
-            getCurrentAnswer(
-                session,
-                clue
-            );
-
         const input =
             new TextInputBuilder()
                 .setCustomId(
@@ -1932,8 +2037,8 @@ async function handleInteraction(
                 .setMaxLength(
                     clue.answer.length
                 )
-                .setValue(
-                    current
+                .setPlaceholder(
+                    'Type the complete answer'
                 );
 
         modal.addComponents(
@@ -1950,8 +2055,9 @@ async function handleInteraction(
         return;
     }
 
-
-    // Modal answer submitted.
+    // ─────────────────────────────────────────────
+    // MODAL ANSWER SUBMITTED
+    // ─────────────────────────────────────────────
 
     if (
         interaction.isModalSubmit() &&
@@ -2046,16 +2152,30 @@ async function handleInteraction(
             cleaned
         );
 
-        if (
-            isPuzzleComplete(
-                session
-            )
-        ) {
-            session.completed =
-                true;
-        }
-
         await interaction.deferUpdate();
+
+        try {
+            await finishCrosswordIfComplete(
+                session
+            );
+        } catch (error) {
+            console.error(
+                'Crossword completion save failed:',
+                error
+            );
+
+            await interaction.followUp({
+                content:
+                    '⚠️ Your answer was entered, ' +
+                    'but the completion could not ' +
+                    'be saved. Please try Check again.',
+
+                flags:
+                    MessageFlags.Ephemeral
+            });
+
+            return;
+        }
 
         await updateDisplay(
             interaction,
@@ -2066,7 +2186,9 @@ async function handleInteraction(
     }
 
 
-    // Clear selected answer.
+    // ─────────────────────────────────────────────
+    // CLEAR SELECTED ANSWER
+    // ─────────────────────────────────────────────
 
     if (
         interaction.isButton() &&
@@ -2167,15 +2289,20 @@ async function handleInteraction(
                 session
             );
 
-        if (
-            incorrect === 0 &&
-            empty === 0
-        ) {
-            session.completed =
-                true;
-        }
-
         await interaction.deferUpdate();
+
+        if (incorrect === 0 && empty === 0) {
+            try {
+                await finishCrosswordIfComplete(session);
+            } catch (error) {
+                console.error('Crossword completion save failed:', error);
+                await interaction.followUp({
+                    content: '⚠️ The crossword is correct, but the completion could not be saved. Please try Check again.',
+                    flags: MessageFlags.Ephemeral
+                });
+                return;
+            }
+        }
 
         await updateDisplay(
             interaction,
@@ -2244,7 +2371,6 @@ async function handleInteraction(
 
         return;
     }
-
 
     // ─────────────────────────────────────
     // CONTINUOUS PLAY AGAIN
@@ -2355,3 +2481,4 @@ module.exports = {
     startCrossword,
     handleInteraction
 };
+
