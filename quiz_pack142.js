@@ -1,5 +1,5 @@
 
-{(() => `// quiz_pack142.js
+// quiz_pack142.js
 // PuzzlePilot - The Bigggggg Quiz
 // Music Albums: Pack 142
 // 100 different albums from the 1950s and 1960s.
@@ -114,7 +114,7 @@ const albumFacts = [
 ];
 
 const normalise = value =>
-    value.trim().toLowerCase().replace(/\\s+/g, ' ');
+    value.trim().toLowerCase().replace(/\s+/g, ' ');
 
 // Sanity checks run immediately when this pack is loaded.
 if (albumFacts.length !== 100) {
@@ -177,8 +177,8 @@ const questions = albumFacts.map(([album, artist, song, year], index) => {
         id: 'music_' + (12201 + index),
         category: 'Music',
         question: isSongQuestion
-            ? \`Which album features "\${song}" by \${artist}?\`
-            : \`Which artist released the \${year} album "\${album}"?\`,
+            ? `Which album features "${song}" by ${artist}?`
+            : `Which artist released the ${year} album "${album}"?`,
         answers,
         correctAnswer,
         difficulty: index % 11 === 0 ? 'Hard' :
@@ -201,4 +201,4 @@ for (const q of questions) {
 }
 
 module.exports = questions;
-`)()}
+
