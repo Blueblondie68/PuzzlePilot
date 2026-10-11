@@ -14,7 +14,7 @@ const songs = [
 
     // Joel Corry
     ["Lonely", "Joel Corry"],
-    ["Sorry", "Joel Corry"],
+    ["People Pleaser", "Cat Burns"],
     ["Out Out", "Joel Corry and Jax Jones"],
     ["I Wish", "Joel Corry and Mabel"],
     ["Lionheart (Fearless)", "Joel Corry and Tom Grennan"],
@@ -22,7 +22,7 @@ const songs = [
     ["History", "Joel Corry and Becky Hill"],
 
     // Nathan Dawe
-    ["Flowers", "Nathan Dawe and Jaykae"],
+    ["Know That You're Not Alone", "Cat Burns"],
     ["Lighter", "Nathan Dawe and KSI"],
     ["No Time for Tears", "Nathan Dawe and Little Mix"],
     ["Goodbye", "Nathan Dawe and Talia Mar"],
@@ -85,7 +85,7 @@ const songs = [
     ["Beautiful Boy", "The Last Dinner Party"],
 
     // Blossoms
-    ["If You Think This Is Real Life", "Blossoms"],
+    ["End Game", "Cat Burns"],
     ["Oh No (I Think I'm in Love)", "Blossoms"],
     ["Care For", "Blossoms"],
     ["Ribbon Around the Bomb", "Blossoms"],
@@ -118,7 +118,7 @@ const songs = [
     ["Hollywood", "Victoria Monét"],
     ["Coastin'", "Victoria Monét"],
     ["Moment", "Victoria Monét"],
-    ["Ass Like That", "Victoria Monét"],
+    ["NDA", "Billie Eilish"],
 
     // Tyla
     ["On and On", "Tyla"],
@@ -139,7 +139,7 @@ const songs = [
     ["Be My Own Boyfriend", "Olivia Dean"],
     ["Reason to Stay", "Olivia Dean"],
     ["Danger", "Olivia Dean"],
-    ["OK Love You Bye", "Olivia Dean"],
+    ["Male Fantasy", "Billie Eilish"],
 
     // RAYE
     ["Flip a Switch.", "RAYE"],
@@ -300,3 +300,4 @@ if (
 }
 
 module.exports = quizPack140;
+
