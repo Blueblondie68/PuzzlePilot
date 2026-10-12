@@ -16,497 +16,232 @@ const {
     saveDailyIds
 } = require('./quiz_database');
 
-
 // ─────────────────────────────────────────────
 // SETTINGS
 // ─────────────────────────────────────────────
 
 const DAILY_QUESTION_COUNT = 10;
-
+const DAILY_MUSIC_COUNT = 2;
 
 // ─────────────────────────────────────────────
 // GENERAL HELPERS
 // ─────────────────────────────────────────────
 
-function shuffleArray(
-    array
-) {
-    const copy =
-        [...array];
+function shuffleArray(array) {
+    const copy = [...array];
 
-    for (
-        let i = copy.length - 1;
-        i > 0;
-        i--
-    ) {
-        const j =
-            Math.floor(
-                Math.random() *
-                (i + 1)
-            );
-
-        [
-            copy[i],
-            copy[j]
-        ] = [
-            copy[j],
-            copy[i]
-        ];
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
     }
 
     return copy;
 }
 
-
 function getUKDateKey() {
-    const parts =
-        new Intl.DateTimeFormat(
-            'en-GB',
-            {
-                timeZone:
-                    'Europe/London',
-                year:
-                    'numeric',
-                month:
-                    '2-digit',
-                day:
-                    '2-digit'
-            }
-        )
-            .formatToParts(
-                new Date()
-            );
+    const parts = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Europe/London',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+    }).formatToParts(new Date());
 
-    const year =
-        parts.find(
-            part =>
-                part.type ===
-                'year'
-        ).value;
-
-    const month =
-        parts.find(
-            part =>
-                part.type ===
-                'month'
-        ).value;
-
-    const day =
-        parts.find(
-            part =>
-                part.type ===
-                'day'
-        ).value;
+    const year = parts.find(part => part.type === 'year').value;
+    const month = parts.find(part => part.type === 'month').value;
+    const day = parts.find(part => part.type === 'day').value;
 
     return `${year}-${month}-${day}`;
 }
 
+function categoryName(question) {
+    const category = String(question.category || '').trim();
+    const name = category.toLowerCase();
 
-function categoryName(
-    question
-) {
-    const category =
-        String(
-            question.category ||
-            ''
-        ).trim();
+    // Older packs use some different names for the same subject.
+    if (name === 'tv' || name === 'television') {
+        return 'Television';
+    }
 
-    return (
-        category ||
-        'General Knowledge'
-    );
+    if (name === 'food & drink' || name === 'food and drink') {
+        return 'Food & Drink';
+    }
+
+    if (name === 'science' || name === 'science & nature') {
+        return 'Science & Nature';
+    }
+
+    if (name === 'music') {
+        return 'Music';
+    }
+
+    return category || 'General Knowledge';
 }
 
-
 // ─────────────────────────────────────────────
-// BALANCED DAILY QUESTION SELECTION
+// DAILY QUESTION SELECTION
 // ─────────────────────────────────────────────
-//
-// The category is chosen first, then a question is
-// chosen inside that category.
-//
-// A huge Music bank can therefore increase Music
-// variety without making Music dominate the Daily.
-//
-// Within each category:
-// 1. Never-used questions are preferred.
-// 2. Once recycling is necessary, the question used
-//    longest ago is preferred.
-//
-// If there are at least 10 categories, today's Daily
-// uses 10 different categories.
-//
-// If there are fewer, categories are shared as evenly
-// as possible across the 10 slots.
+// Exactly 2 Music questions plus 8 from other subjects.
+// Prefer different non-Music categories. If there are
+// fewer than 8, cycle through them again as needed.
+// Never-used questions are chosen first. Once they run
+// out, choose those used longest ago.
 
-function rankCategoryQuestions(
-    questions,
-    history
-) {
-    const shuffled =
-        shuffleArray(
-            questions
-        );
+function rankCategoryQuestions(questions, history) {
+    const shuffled = shuffleArray(questions);
 
-    shuffled.sort(
-        (a, b) => {
-            const aUsed =
-                history.has(
-                    a.id
-                );
+    shuffled.sort((a, b) => {
+        const aUsed = history.has(a.id);
+        const bUsed = history.has(b.id);
 
-            const bUsed =
-                history.has(
-                    b.id
-                );
-
-            if (
-                aUsed !==
-                bUsed
-            ) {
-                return (
-                    aUsed ?
-                        1 :
-                        -1
-                );
-            }
-
-            if (
-                !aUsed &&
-                !bUsed
-            ) {
-                return 0;
-            }
-
-            return String(
-                history.get(
-                    a.id
-                )
-            ).localeCompare(
-                String(
-                    history.get(
-                        b.id
-                    )
-                )
-            );
+        if (aUsed !== bUsed) {
+            return aUsed ? 1 : -1;
         }
-    );
+
+        if (!aUsed) {
+            return 0;
+        }
+
+        return String(history.get(a.id)).localeCompare(
+            String(history.get(b.id))
+        );
+    });
 
     return shuffled;
 }
 
+async function selectDailyQuestions(client, dateKey) {
+    const eligible = getEligibleDailyQuestions();
 
-async function selectDailyQuestions(
-    client,
-    dateKey
-) {
-    const eligible =
-        getEligibleDailyQuestions();
-
-    if (
-        eligible.length <
-        DAILY_QUESTION_COUNT
-    ) {
+    if (eligible.length < DAILY_QUESTION_COUNT) {
         throw new Error(
-            `The Quiz needs at least ` +
-            `${DAILY_QUESTION_COUNT} ` +
-            `Daily-eligible questions.`
+            `The Quiz needs at least ${DAILY_QUESTION_COUNT} Daily-eligible questions.`
         );
     }
 
-    const history =
-        await getQuestionHistory(
-            client
-        );
+    const history = await getQuestionHistory(client);
+    const groups = new Map();
 
-    const groups =
-        new Map();
+    for (const question of eligible) {
+        const category = categoryName(question);
 
-    for (
-        const question of eligible
-    ) {
-        const category =
-            categoryName(
-                question
-            );
-
-        if (
-            !groups.has(
-                category
-            )
-        ) {
-            groups.set(
-                category,
-                []
-            );
+        if (!groups.has(category)) {
+            groups.set(category, []);
         }
 
-        groups
-            .get(category)
-            .push(question);
+        groups.get(category).push(question);
     }
 
-    const categories =
-        shuffleArray(
-            [
-                ...groups.keys()
-            ]
-        );
+    const music = groups.get('Music') || [];
+    const otherCount = eligible.length - music.length;
 
-    if (
-        categories.length ===
-        0
-    ) {
+    if (music.length < DAILY_MUSIC_COUNT ||
+        otherCount < DAILY_QUESTION_COUNT - DAILY_MUSIC_COUNT) {
         throw new Error(
-            'The Daily Quiz has no eligible categories.'
+            'The Daily Quiz needs at least 2 Music questions and 8 non-Music questions.'
         );
     }
 
-    const rankedByCategory =
-        new Map();
+    const selected = rankCategoryQuestions(music, history)
+        .slice(0, DAILY_MUSIC_COUNT);
 
-    for (
-        const category of categories
-    ) {
+    const otherCategories = shuffleArray(
+        [...groups.keys()].filter(category => category !== 'Music')
+    );
+
+    const rankedByCategory = new Map();
+
+    for (const category of otherCategories) {
         rankedByCategory.set(
             category,
-            rankCategoryQuestions(
-                groups.get(
-                    category
-                ),
-                history
-            )
+            rankCategoryQuestions(groups.get(category), history)
         );
     }
 
-    const selected = [];
+    // Each round draws at most one question per subject.
+    // When more rounds are needed, reshuffle the subjects.
+    while (selected.length < DAILY_QUESTION_COUNT) {
+        let addedThisRound = 0;
 
-    let roundCategories =
-        shuffleArray(
-            categories
-        );
+        for (const category of shuffleArray(otherCategories)) {
+            if (selected.length === DAILY_QUESTION_COUNT) {
+                break;
+            }
 
-    let categoryIndex =
-        0;
+            const questions = rankedByCategory.get(category);
 
-    while (
-        selected.length <
-        DAILY_QUESTION_COUNT
-    ) {
-        if (
-            categoryIndex >=
-            roundCategories.length
-        ) {
-            roundCategories =
-                shuffleArray(
-                    categories
-                );
-
-            categoryIndex =
-                0;
+            if (questions.length > 0) {
+                selected.push(questions.shift());
+                addedThisRound++;
+            }
         }
 
-        const category =
-            roundCategories[
-                categoryIndex
-            ];
-
-        categoryIndex++;
-
-        const ranked =
-            rankedByCategory.get(
-                category
+        if (addedThisRound === 0) {
+            throw new Error(
+                'Not enough non-Music questions for the Daily Quiz.'
             );
-
-        if (
-            !ranked ||
-            ranked.length ===
-            0
-        ) {
-            continue;
-        }
-
-        selected.push(
-            ranked.shift()
-        );
-
-        const remaining =
-            [
-                ...rankedByCategory.values()
-            ]
-                .reduce(
-                    (
-                        total,
-                        list
-                    ) =>
-                        total +
-                        list.length,
-                    0
-                );
-
-        if (
-            selected.length <
-                DAILY_QUESTION_COUNT &&
-            remaining ===
-                0
-        ) {
-            break;
         }
     }
 
-    if (
-        selected.length <
-        DAILY_QUESTION_COUNT
-    ) {
-        throw new Error(
-            `The Quiz could only select ` +
-            `${selected.length} Daily questions.`
-        );
-    }
+    const finalSelection = shuffleArray(selected);
 
-    const finalSelection =
-        shuffleArray(
-            selected
-        );
-
-    for (
-        const question of finalSelection
-    ) {
-        await saveQuestionHistory(
-            client,
-            question.id,
-            dateKey
-        );
+    for (const question of finalSelection) {
+        await saveQuestionHistory(client, question.id, dateKey);
     }
 
     return finalSelection;
 }
 
-
 // ─────────────────────────────────────────────
 // ENSURE TODAY'S DAILY QUIZ
 // ─────────────────────────────────────────────
-//
-// Today's saved Daily always wins.
-//
-// Deploying a new version of PuzzlePilot does not
-// replace a quiz already created for the current
-// UK date.
+// A Daily Quiz already saved for the UK date stays
+// unchanged, even if PuzzlePilot is redeployed.
 
 async function ensureTodaysQuiz() {
-    const dateKey =
-        getUKDateKey();
-
-    const client =
-        await getDatabaseClient();
+    const dateKey = getUKDateKey();
+    const client = await getDatabaseClient();
 
     try {
-        await client.query(
-            'BEGIN'
-        );
-
+        await client.query('BEGIN');
         await client.query(
             'SELECT pg_advisory_xact_lock(74629101)'
         );
 
-        const savedIds =
-            await getSavedDailyIds(
-                client,
-                dateKey
-            );
+        const savedIds = await getSavedDailyIds(client, dateKey);
 
-        if (
-            Array.isArray(
-                savedIds
-            ) &&
-            savedIds.length ===
-                DAILY_QUESTION_COUNT
-        ) {
-            const savedQuestions =
-                getQuestionsFromIds(
-                    savedIds
-                );
+        if (Array.isArray(savedIds) &&
+            savedIds.length === DAILY_QUESTION_COUNT) {
+            const savedQuestions = getQuestionsFromIds(savedIds);
 
-            if (
-                savedQuestions.length ===
-                DAILY_QUESTION_COUNT
-            ) {
-                await client.query(
-                    'COMMIT'
-                );
-
-                return {
-                    dateKey:
-                        dateKey,
-
-                    questions:
-                        savedQuestions
-                };
+            if (savedQuestions.length === DAILY_QUESTION_COUNT) {
+                await client.query('COMMIT');
+                return { dateKey, questions: savedQuestions };
             }
         }
 
-        if (
-            savedIds !==
-            null
-        ) {
+        if (savedIds !== null) {
             console.warn(
-                'Saved Daily Quiz contains a question ' +
-                'that no longer exists. ' +
+                'Saved Daily Quiz contains a question that no longer exists. ' +
                 'Rebuilding today\'s quiz.'
             );
 
-            await deleteSavedDaily(
-                client,
-                dateKey
-            );
+            await deleteSavedDaily(client, dateKey);
         }
 
-        const selected =
-            await selectDailyQuestions(
-                client,
-                dateKey
-            );
+        const selected = await selectDailyQuestions(client, dateKey);
+        const questionIds = selected.map(question => question.id);
 
-        const questionIds =
-            selected.map(
-                question =>
-                    question.id
-            );
+        await saveDailyIds(client, dateKey, questionIds);
+        await client.query('COMMIT');
 
-        await saveDailyIds(
-            client,
-            dateKey,
-            questionIds
-        );
+        console.log(`Daily Quiz selected for ${dateKey}`);
 
-        await client.query(
-            'COMMIT'
-        );
+        return { dateKey, questions: selected };
 
-        console.log(
-            `Daily Quiz selected for ` +
-            `${dateKey}`
-        );
-
-        return {
-            dateKey:
-                dateKey,
-
-            questions:
-                selected
-        };
-
-    } catch (
-        error
-    ) {
+    } catch (error) {
         try {
-            await client.query(
-                'ROLLBACK'
-            );
-
-        } catch (
-            rollbackError
-        ) {
+            await client.query('ROLLBACK');
+        } catch (rollbackError) {
             console.error(
                 'Quiz database rollback failed:',
                 rollbackError
@@ -519,7 +254,6 @@ async function ensureTodaysQuiz() {
         client.release();
     }
 }
-
 
 // ─────────────────────────────────────────────
 // EXPORTS
