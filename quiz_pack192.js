@@ -1,0 +1,131 @@
+
+ // quiz_pack192.js
+// PuzzlePilot - The Bigggggg Quiz
+// Television: Emmerdale - 1999 to 2000
+// 100 questions: tv_3101 to tv_3200
+// Leave quiz_bank.js unchanged until the end of the session.
+
+const facts = [
+    // 1999 - Changes at Home Farm, Rachel Hughes and the Tate kidnapping
+    ["Which couple faced trial over the stolen horse Orsino in January 1999?", "Kim and Steve Marchant", ["Chris and Zoe Tate", "Jack and Sarah Sugden", "Roy and Kelly Glover"], "Medium", "1999", "Crime"],
+    ["Which character fled Emmerdale with her baby son in January 1999?", "Kim Marchant", ["Kathy Glover", "Rachel Hughes", "Viv Windsor"], "Easy", "1999", "Departures"],
+    ["Which son left Emmerdale with Kim Marchant in 1999?", "James Tate", ["Joseph Tate", "Robert Sugden", "Noah Tate"], "Easy", "1999", "Families"],
+    ["How long a prison sentence did Steve Marchant receive for his crimes in 1999?", "Twelve years", ["Two years", "Five years", "Twenty years"], "Medium", "1999", "Crime"],
+    ["Which villager discovered Chris Tate unconscious with the help of his dog Charlie in January 1999?", "Seth Armstrong", ["Alan Turner", "Paddy Kirk", "Eric Pollard"], "Medium", "1999", "Storylines"],
+    ["Which member of the Cairns family left the village in January 1999?", "Will Cairns", ["Tony Cairns", "Emma Cairns", "Charlie Cairns"], "Medium", "1999", "Departures"],
+    ["To which Spanish island did Ned Glover move with Dawn Wilkins in 1999?", "Ibiza", ["Majorca", "Tenerife", "Menorca"], "Medium", "1999", "Departures"],
+    ["Which two women had a mud fight outside The Woolpack in February 1999?", "Tricia Stokes and Mandy Dingle", ["Kelly Windsor and Donna Windsor", "Bernice Blackstock and Viv Windsor", "Kim Tate and Kathy Glover"], "Medium", "1999", "Storylines"],
+    ["Who became manager of The Woolpack in February 1999?", "Bernice Blackstock", ["Tricia Stokes", "Viv Windsor", "Betty Eagleton"], "Easy", "1999", "Businesses"],
+    ["Which Glover proposed to Kelly Windsor in March 1999?", "Roy Glover", ["Dave Glover", "Ned Glover", "Biff Fowler"], "Easy", "1999", "Relationships"],
+    ["Which of Zak Dingle's brothers arrived in an ice-cream van in March 1999?", "Ezra Dingle", ["Albert Dingle", "Shadrach Dingle", "Caleb Dingle"], "Medium", "1999", "Characters"],
+    ["What was the name of Ezra Dingle's wife, who visited in March 1999?", "Gwen", ["Nellie", "Lisa", "Faith"], "Medium", "1999", "Families"],
+    ["Which actor played Ezra Dingle in 1999?", "John Henshaw", ["Steve Halliwell", "Bobby Knutt", "Paul Loughran"], "Hard", "1999", "Actors"],
+    ["Which baby was christened during the Dingle family's March 1999 gathering?", "Belle Dingle", ["Joseph Tate", "Geri Cairns", "James Tate"], "Medium", "1999", "Families"],
+    ["Which businessman first appeared in March 1999 as head of the Reynolds family?", "Sean Reynolds", ["Tony Cairns", "Steve Marchant", "Graham Clark"], "Medium", "1999", "Characters"],
+    ["Which actor played Sean Reynolds?", "Stephen McGann", ["Edward Peel", "Peter Amory", "Stuart Wade"], "Medium", "1999", "Actors"],
+    ["What was Angie Reynolds's job when she arrived in Emmerdale in 1999?", "Police sergeant", ["Schoolteacher", "Veterinary nurse", "Solicitor"], "Medium", "1999", "Jobs"],
+    ["Which actress played Angie Reynolds?", "Freya Copeland", ["Alyson Spiro", "Samantha Giles", "Sarah Neville"], "Medium", "1999", "Actors"],
+    ["Who proposed to Mandy Dingle in March 1999?", "Paddy Kirk", ["Marlon Dingle", "Butch Dingle", "Scott Windsor"], "Easy", "1999", "Relationships"],
+    ["Whose birthday party was ruined when Scott Windsor admitted sleeping with Lyn Hutchinson?", "Marlon Dingle's", ["Paddy Kirk's", "Roy Glover's", "Andy Sugden's"], "Medium", "1999", "Relationships"],
+    ["Which Tate-owned transport business merged with Sean Reynolds's haulage operation?", "Tate Haulage", ["Windsor Deliveries", "Home Farm Coaches", "Dingle Transport"], "Medium", "1999", "Businesses"],
+    ["Which lorry driver attracted Zoe Tate's romantic interest in 1999?", "Frankie Smith", ["Angie Reynolds", "Lyn Hutchinson", "Claudia Nash"], "Medium", "1999", "Relationships"],
+    ["Which actress first played lorry driver Frankie Smith in 1999?", "Gina Aris", ["Madeleine Bowyer", "Leah Bracknell", "Freya Copeland"], "Hard", "1999", "Actors"],
+    ["What did Graham Clark secretly plant in Rachel Hughes's handbag in April 1999?", "Cannabis", ["A stolen watch", "Counterfeit money", "A forged passport"], "Medium", "1999", "Crime"],
+    ["Which Woolpack regular suffered a heart attack in April 1999 during an argument?", "Alan Turner", ["Seth Armstrong", "Eric Pollard", "Terry Woods"], "Medium", "1999", "Storylines"],
+    ["Which character played by Robert Beck arrived in May 1999?", "Gavin Ferris", ["Graham Clark", "Richie Carter", "Jason Kirk"], "Medium", "1999", "Actors"],
+    ["Which shy newcomer began working for Viv Windsor in May 1999?", "Emily Wylie", ["Ollie Reynolds", "Frankie Smith", "Claudia Nash"], "Easy", "1999", "Characters"],
+    ["Which actress played Emily Wylie when she joined Emmerdale in 1999?", "Kate McGregor", ["Vicky Binns", "Lisa Riley", "Sally Walsh"], "Easy", "1999", "Actors"],
+    ["Who killed Rachel Hughes in May 1999?", "Graham Clark", ["Richie Carter", "Chris Tate", "Jack Sugden"], "Easy", "1999", "Deaths"],
+    ["How did Rachel Hughes die in 1999?", "She was pushed off a cliff", ["She drowned in a river", "She died in a house fire", "She was killed in a car collision"], "Easy", "1999", "Deaths"],
+    ["Which two men found Rachel Hughes's body in May 1999?", "Jack Sugden and Zak Dingle", ["Chris Tate and Terry Woods", "Paddy Kirk and Marlon Dingle", "Sean Reynolds and Alan Turner"], "Medium", "1999", "Storylines"],
+    ["Which character played by Glenn Lamont first appeared in May 1999?", "Richie Carter", ["Liam Hammond", "Gavin Ferris", "Sean Reynolds"], "Medium", "1999", "Actors"],
+    ["Who married Roy Glover in May 1999?", "Kelly Windsor", ["Tricia Stokes", "Kathy Glover", "Lyn Hutchinson"], "Easy", "1999", "Marriages"],
+    ["Which Reynolds daughter, played by Vicky Binns, arrived in June 1999?", "Ollie Reynolds", ["Emma Cairns", "Donna Windsor", "Kirsty Hutchinson"], "Medium", "1999", "Actors"],
+    ["Which actor played Marc Reynolds, who arrived alongside his sister Ollie?", "Anthony Lewis", ["Stephen McGann", "Ben Freeman", "Glenn Lamont"], "Medium", "1999", "Actors"],
+    ["Who proposed to Kathy Glover during a Hollywood-themed night at The Woolpack in June 1999?", "Biff Fowler", ["Graham Clark", "Chris Tate", "Roy Glover"], "Medium", "1999", "Relationships"],
+    ["At which village event did Kathy Glover accept Biff Fowler's proposal in July 1999?", "The summer fair", ["The Christmas show", "Belle's christening", "The harvest festival"], "Medium", "1999", "Relationships"],
+    ["Which villager was sentenced to three months in prison after the 1999 summer fair?", "Mandy Dingle", ["Bernice Blackstock", "Tricia Stokes", "Viv Windsor"], "Medium", "1999", "Crime"],
+    ["Who was Emily Wylie's overprotective father?", "John Wylie", ["Sean Reynolds", "Alan Turner", "Frank Tate"], "Medium", "1999", "Families"],
+    ["Which Dingle saved Emily Wylie and her father from their overturned vehicle in July 1999?", "Butch Dingle", ["Sam Dingle", "Zak Dingle", "Marlon Dingle"], "Medium", "1999", "Storylines"],
+    ["Which lottery winner received a marriage proposal from Alan Turner in July 1999?", "Stella Jones", ["Bernice Blackstock", "Betty Eagleton", "Diane Blackstock"], "Medium", "1999", "Relationships"],
+    ["Who jilted Kathy Glover on their wedding day in August 1999?", "Biff Fowler", ["Graham Clark", "Roy Glover", "Chris Tate"], "Easy", "1999", "Marriages"],
+    ["Which teacher had kissed Kathy Glover shortly before Biff Fowler called off their wedding?", "Graham Clark", ["Tom Bainbridge", "Sean Rossi", "Ashley Thomas"], "Medium", "1999", "Relationships"],
+    ["Who gave Bernice Blackstock the money to buy The Woolpack in August 1999?", "Stella Jones", ["Kim Marchant", "Viv Windsor", "Diane Blackstock"], "Medium", "1999", "Businesses"],
+    ["Which former partner of Nick Bates returned with plans concerning daughter Alice in September 1999?", "Elsa Chappell", ["Kathy Glover", "Caroline Bates", "Claudia Nash"], "Medium", "1999", "Families"],
+    ["Which daughter moved to Australia with her mother Elsa in November 1999?", "Alice Bates", ["Kelly Windsor", "Geri Cairns", "Victoria Sugden"], "Medium", "1999", "Departures"],
+    ["Which Tate family member was kidnapped in September 1999?", "Chris Tate", ["Zoe Tate", "Joseph Tate", "Kim Marchant"], "Easy", "1999", "Crime"],
+    ["Which Tate Haulage employee held Chris Tate captive in 1999?", "Liam Hammond", ["Pete Collins", "Sean Reynolds", "Richie Carter"], "Medium", "1999", "Crime"],
+    ["Who was revealed to be Liam Hammond's father?", "Frank Tate", ["Chris Tate", "Steve Marchant", "Eric Pollard"], "Easy", "1999", "Families"],
+    ["Which two characters married in October 1999?", "Paddy Kirk and Mandy Dingle", ["Marlon Dingle and Tricia Stokes", "Butch Dingle and Emily Wylie", "Ashley Thomas and Bernice Blackstock"], "Easy", "1999", "Marriages"],
+    ["Which Dingle marriage was annulled in September 1999?", "Butch and Mandy's", ["Zak and Lisa's", "Paddy and Mandy's", "Roy and Kelly's"], "Medium", "1999", "Marriages"],
+    ["Who shot Liam Hammond dead in November 1999 after he threatened her family?", "Zoe Tate", ["Kim Marchant", "Angie Reynolds", "Rachel Hughes"], "Easy", "1999", "Deaths"],
+    ["Which character arrived in November 1999 as Bernice Blackstock's mother?", "Diane Blackstock", ["Betty Eagleton", "Stella Jones", "Becky Cairns"], "Easy", "1999", "Characters"],
+    ["Which actress began playing Diane Blackstock in 1999?", "Elizabeth Estensen", ["Paula Tilbrook", "Samantha Giles", "Claire King"], "Medium", "1999", "Actors"],
+    ["Which cousin of Paddy Kirk arrived in December 1999?", "Jason Kirk", ["Carlos Diaz", "Gavin Ferris", "Richie Carter"], "Medium", "1999", "Families"],
+
+    // 2000 - The minibus crash, new Dingles and Sarah Sugden's death
+    ["Who joined her daughter Bernice as landlady of The Woolpack in 2000?", "Diane Blackstock", ["Betty Eagleton", "Viv Windsor", "Kathy Glover"], "Medium", "2000", "Businesses"],
+    ["Which woman returned in January 2000 and developed a relationship with Zoe Tate?", "Frankie Smith", ["Emma Nightingale", "Susie Wilde", "Rachel Hughes"], "Medium", "2000", "Relationships"],
+    ["Which actress took over the role of Frankie Smith in 2000?", "Madeleine Bowyer", ["Gina Aris", "Kate McGregor", "Vicky Binns"], "Hard", "2000", "Actors"],
+    ["Which sinister schoolteacher died in a car crash and explosion in February 2000?", "Graham Clark", ["Tom Bainbridge", "John Wylie", "Sean Reynolds"], "Easy", "2000", "Deaths"],
+    ["Which woman had begun seeing Graham Clark after he murdered Rachel Hughes?", "Kathy Glover", ["Kim Tate", "Viv Windsor", "Diane Blackstock"], "Medium", "2000", "Relationships"],
+    ["Which two villagers tried to expose Graham Clark's murderous past in early 2000?", "Eric Pollard and Marlon Dingle", ["Chris Tate and Terry Woods", "Paddy Kirk and Alan Turner", "Zak Dingle and Jack Sugden"], "Medium", "2000", "Storylines"],
+    ["Which chef arrived in Emmerdale in March 2000?", "Carlos Diaz", ["Sean Rossi", "Joe Fisher", "Bob Hope"], "Medium", "2000", "Characters"],
+    ["Which actor played Carlos Diaz?", "Gary Turner", ["Mark Cameron", "John Middleton", "Patrick Mower"], "Hard", "2000", "Actors"],
+    ["What kind of vehicle collided with a Tate Haulage lorry in March 2000?", "A community minibus", ["A school coach", "A police car", "A tractor"], "Easy", "2000", "Storylines"],
+    ["Which haulage company owned the lorry involved in the March 2000 minibus crash?", "Tate Haulage", ["Reynolds Coaches", "Windsor Deliveries", "Dingle Transport"], "Easy", "2000", "Businesses"],
+    ["Who was driving the lorry when it collided with a village minibus in March 2000?", "Pete Collins", ["Sean Reynolds", "Richie Carter", "Scott Windsor"], "Medium", "2000", "Deaths"],
+    ["Which Tate ordered Pete Collins to make the delivery despite concerns about the lorry?", "Chris Tate", ["Zoe Tate", "Kim Marchant", "James Tate"], "Medium", "2000", "Storylines"],
+    ["Which Dingle mechanic had not finished repairing the lorry involved in the minibus crash?", "Lisa Dingle", ["Zak Dingle", "Marlon Dingle", "Sam Dingle"], "Medium", "2000", "Jobs"],
+    ["Which Dingle was fatally injured in the March 2000 village minibus crash?", "Butch Dingle", ["Marlon Dingle", "Zak Dingle", "Sam Dingle"], "Easy", "2000", "Deaths"],
+    ["Whom did Butch Dingle marry in hospital shortly before he died in March 2000?", "Emily Wylie", ["Mandy Dingle", "Kathy Glover", "Tricia Stokes"], "Easy", "2000", "Marriages"],
+    ["Which Dingle was buried beside his brother Ben following the March 2000 crash?", "Butch Dingle", ["Marlon Dingle", "Sam Dingle", "Zak Dingle"], "Medium", "2000", "Deaths"],
+    ["Which new Dingle, played by Jeff Hordley, arrived for Butch's funeral?", "Cain Dingle", ["Shadrach Dingle", "Caleb Dingle", "Marlon Dingle"], "Easy", "2000", "Actors"],
+    ["Which actress first played Charity Dingle in 2000?", "Emma Atkins", ["Lisa Riley", "Jane Cox", "Adele Silva"], "Easy", "2000", "Actors"],
+    ["Which Dingle relative was introduced alongside Cain at Butch's funeral in 2000?", "Charity Dingle", ["Mandy Dingle", "Lisa Dingle", "Belle Dingle"], "Easy", "2000", "Characters"],
+    ["Which of Zak Dingle's brothers appeared in 2000 and was initially believed to be Cain's father?", "Shadrach Dingle", ["Albert Dingle", "Ezra Dingle", "Marlon Dingle"], "Medium", "2000", "Families"],
+    ["Whose wallet did Charity Dingle steal at Butch's funeral in 2000?", "Eric Pollard's", ["Alan Turner's", "Chris Tate's", "Jack Sugden's"], "Medium", "2000", "Crime"],
+    ["Which Dingle did Charity let take the blame for stealing Eric Pollard's wallet?", "Sam Dingle", ["Marlon Dingle", "Zak Dingle", "Cain Dingle"], "Medium", "2000", "Storylines"],
+    ["Which councillor did Charity Dingle help Eric Pollard compromise with photographs in 2000?", "Councillor Ecclestone", ["Councillor Simmonds", "Councillor Bainbridge", "Councillor Wilks"], "Hard", "2000", "Crime"],
+    ["Which Reynolds teenager took jewellery from the Sugden home in 2000?", "Ollie Reynolds", ["Marc Reynolds", "Angie Reynolds", "Emma Cairns"], "Medium", "2000", "Crime"],
+    ["Who was the married woman with whom Richie Carter had an affair in 2000?", "Sarah Sugden", ["Viv Windsor", "Kathy Glover", "Bernice Blackstock"], "Easy", "2000", "Relationships"],
+    ["Who was Richie's business partner before his affair with Sarah Sugden?", "Scott Windsor", ["Roy Glover", "Chris Tate", "Paddy Kirk"], "Medium", "2000", "Businesses"],
+    ["Which Sugden daughter did Sarah win custody of after leaving Jack in 2000?", "Victoria Sugden", ["Donna Windsor", "Alice Bates", "Belle Dingle"], "Medium", "2000", "Families"],
+    ["Which salesman, played by Tony Audenshaw, arrived in Emmerdale in September 2000?", "Bob Hope", ["Rodney Blackstock", "Joe Fisher", "Gavin Ferris"], "Easy", "2000", "Characters"],
+    ["What product was Bob Hope selling when he first met Viv Windsor in 2000?", "Hosiery", ["Vacuum cleaners", "Cookware", "Car insurance"], "Medium", "2000", "Jobs"],
+    ["Which village shopkeeper became romantically involved with Bob Hope after his arrival?", "Viv Windsor", ["Bernice Blackstock", "Kathy Glover", "Betty Eagleton"], "Easy", "2000", "Relationships"],
+    ["Which estranged father of Bernice Blackstock first arrived in October 2000?", "Rodney Blackstock", ["Alan Turner", "Eric Pollard", "Seth Armstrong"], "Medium", "2000", "Families"],
+    ["Which actor played Rodney Blackstock on his arrival in 2000?", "Patrick Mower", ["Richard Thorp", "Norman Bowler", "Peter Amory"], "Medium", "2000", "Actors"],
+    ["Who invited Rodney Blackstock to the village before Bernice's Christmas wedding?", "Ashley Thomas", ["Alan Turner", "Terry Woods", "Paddy Kirk"], "Medium", "2000", "Storylines"],
+    ["Which Dingle woman revealed in late 2000 that Zak was Cain's biological father?", "Faith Dingle", ["Nellie Dingle", "Lisa Dingle", "Mandy Dingle"], "Medium", "2000", "Families"],
+    ["Who deliberately started the barn fire that killed Sarah Sugden in November 2000?", "Andy Sugden", ["Jack Sugden", "Richie Carter", "Robert Sugden"], "Easy", "2000", "Deaths"],
+    ["Why did Andy Sugden set the barn alight in November 2000?", "To help the family claim insurance money", ["To destroy stolen goods", "To hide evidence of a robbery", "To frighten a trespasser"], "Medium", "2000", "Storylines"],
+    ["Who escaped from the burning barn in which Sarah Sugden died?", "Richie Carter", ["Graham Clark", "Sean Reynolds", "Scott Windsor"], "Medium", "2000", "Storylines"],
+    ["Which Sugden was remanded in custody after Sarah's death in 2000?", "Jack Sugden", ["Robert Sugden", "Andy Sugden", "Victoria Sugden"], "Easy", "2000", "Crime"],
+    ["Why did Tricia Stokes marry Australian Joe Fisher in December 2000?", "To help him remain in Britain", ["To inherit a family business", "To win a village competition", "To obtain custody of a child"], "Medium", "2000", "Marriages"],
+    ["Which character was Joe Fisher's boyfriend when Joe married Tricia Stokes?", "Jason Kirk", ["Paddy Kirk", "Marlon Dingle", "Gavin Ferris"], "Medium", "2000", "Relationships"],
+    ["Which couple married at St Mary's Church over Christmas 2000?", "Bernice Blackstock and Ashley Thomas", ["Viv Windsor and Bob Hope", "Kathy Glover and Biff Fowler", "Tricia Stokes and Marlon Dingle"], "Easy", "2000", "Marriages"],
+    ["Which friend of Viv Windsor, played by Helen Pearson, arrived in November 2000?", "Carol Wareing", ["Claudia Nash", "Frankie Smith", "Bev Mansfield"], "Medium", "2000", "Characters"],
+    ["Which new character was played by Amy Nuttall from December 2000?", "Chloe Atkinson", ["Ollie Reynolds", "Emily Wylie", "Frankie Smith"], "Medium", "2000", "Actors"],
+    ["Which actor played the vicar who married Bernice Blackstock at Christmas 2000?", "John Middleton", ["Patrick Mower", "Dominic Brunt", "Richard Thorp"], "Easy", "2000", "Actors"],
+    ["Which village character was jailed while the Sugdens faced Christmas 2000 without him?", "Jack Sugden", ["Robert Sugden", "Andy Sugden", "Seth Armstrong"], "Medium", "2000", "Storylines"]
+];
+
+const questions = facts.map((fact, index) => {
+    const [question, correctAnswer, wrongAnswers, difficulty, year, topic] = fact;
+    const answers = wrongAnswers.slice();
+    answers.splice(index % 4, 0, correctAnswer);
+
+    return {
+        id: 'tv_' + String(3101 + index).padStart(4, '0'),
+        category: 'Television',
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: ['Soaps', 'Emmerdale', year === '1999' ? '1990s' : '2000s', year, topic],
+        dailyEligible: true
+    };
+});
+
+module.exports = questions;
