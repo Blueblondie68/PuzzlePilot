@@ -1,12 +1,11 @@
-
- // quiz_bank.js
+// quiz_bank.js
 // PuzzlePilot Quiz
 // Question bank loader
 //
 // This file controls which quiz packs are currently
 // connected to the live PuzzlePilot quiz.
 //
-// Packs 1-195 are connected to the live quiz bank.
+// Packs 1-208 are connected to the live quiz bank.
 //
 
 // =====================================================
@@ -14,7 +13,7 @@
 // =====================================================
 
 const FIRST_QUIZ_PACK = 1;
-const LAST_QUIZ_PACK = 195;
+const LAST_QUIZ_PACK = 208;
 
 // =====================================================
 // LOAD QUIZ PACKS
