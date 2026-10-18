@@ -1,0 +1,151 @@
+// quiz_pack232.js
+// PuzzlePilot - The Bigggggg Quiz
+// Television: EastEnders - 1994, the year of Sharongate
+// 100 questions: tv_7004 to tv_7103
+// Leave quiz_bank.js unchanged until the end of the session.
+
+const facts = [
+    // SHARONGATE (12)
+    ["What nickname was given to the scandal when Grant discovered Sharon had slept with Phil?", "Sharongate", ["Who Shot Phil?", "The Vic Siege", "The Mitchell Feud"], "Easy", "Sharongate"],
+    ["Which friend recorded the conversation in which Sharon confessed to her affair with Phil?", "Michelle Fowler", ["Kathy Beale", "Pat Butcher", "Bianca Jackson"], "Easy", "Sharongate"],
+    ["Why was Michelle Fowler making a recording of her conversation with Sharon?", "For a college project", ["For a police investigation", "For a radio competition", "For a pub promotion"], "Medium", "Sharongate"],
+    ["What kind of recording revealed Sharon's affair to Grant?", "An audio cassette", ["A videotape", "A voicemail message", "A television interview"], "Easy", "Sharongate"],
+    ["Which Mitchell brother discovered the incriminating recording in his vehicle?", "Grant Mitchell", ["Phil Mitchell", "Billy Mitchell", "Jamie Mitchell"], "Easy", "Sharongate"],
+    ["Where did Grant publicly play the tape revealing Sharon's affair?", "The Queen Victoria", ["The Arches", "The launderette", "The market office"], "Easy", "Sharongate"],
+    ["What special occasion was taking place when Grant played Sharon's confession?", "Phil and Kathy's engagement celebration", ["Nigel and Debbie's wedding reception", "Ian's birthday party", "A Christmas party"], "Medium", "Sharongate"],
+    ["Whose voice on the cassette admitted to sleeping with Phil Mitchell?", "Sharon Mitchell's", ["Kathy Beale's", "Michelle Fowler's", "Nadia Mitchell's"], "Easy", "Sharongate"],
+    ["Which brother did Grant violently attack after hearing the tape?", "Phil Mitchell", ["Nigel Bates", "Ricky Butcher", "David Wicks"], "Easy", "Sharongate"],
+    ["What serious medical complication followed Grant's attack on Phil?", "A blood clot on the brain", ["A collapsed lung", "A broken pelvis", "A ruptured appendix"], "Medium", "Sharongate"],
+    ["What documents did Sharon sign over Christmas as her marriage to Grant collapsed?", "Divorce papers", ["Adoption papers", "A new pub lease", "A house deed"], "Medium", "Sharongate"],
+    ["Which EastEnders writer scripted the famous Sharongate confrontation?", "Tony Jordan", ["Tony Holland", "Julia Smith", "Simon Ashdown"], "Medium", "Sharongate"],
+
+    // FRANK'S CAR LOT FIRE (11)
+    ["Which desperate businessman asked Phil Mitchell to burn down his car lot?", "Frank Butcher", ["David Wicks", "Roy Evans", "Ian Beale"], "Easy", "Frank's Disappearance"],
+    ["Why did Frank want his car lot set on fire?", "To claim insurance money", ["To hide a stolen car", "To clear land for housing", "To frighten a business rival"], "Easy", "Frank's Disappearance"],
+    ["Who actually started the fire in Frank Butcher's car lot?", "Phil Mitchell", ["Grant Mitchell", "Ricky Butcher", "David Wicks"], "Easy", "Frank's Disappearance"],
+    ["What was the name of the homeless man who died following the car lot blaze?", "Alan Hall", ["Joe Wallace", "Kevin Masters", "Jack Woodman"], "Medium", "Frank's Disappearance"],
+    ["Where had the homeless man fallen asleep before the car lot was set alight?", "Inside a car", ["Inside the garage office", "Behind the market stalls", "On a bench outside the Vic"], "Medium", "Frank's Disappearance"],
+    ["Which actor, later famous for Hollyoaks, played the homeless man in the fire storyline?", "Nick Pickard", ["Ross Kemp", "Dean Gaffney", "Paul Bradley"], "Medium", "Frank's Disappearance"],
+    ["What type of crime did police suspect in the fire at Frank's car lot?", "Arson", ["Burglary", "Armed robbery", "Blackmail"], "Easy", "Frank's Disappearance"],
+    ["Who unwittingly handed over Frank's business accounts to the insurance investigator?", "Pat Butcher", ["Sharon Mitchell", "Diane Butcher", "Bianca Jackson"], "Medium", "Frank's Disappearance"],
+    ["What happened to Frank Butcher after he could no longer cope with guilt and money troubles?", "He disappeared from Walford", ["He bought the Queen Vic", "He joined the police", "He emigrated with Ricky"], "Easy", "Frank's Disappearance"],
+    ["Which Butcher family member visited Walford with news that Frank had been seen in France?", "Diane Butcher", ["Clare Butcher", "Ricky Butcher", "Janine Butcher"], "Medium", "Frank's Disappearance"],
+    ["What news about Frank did Diane bring back to Pat?", "He was alive but would not return", ["He had bought a French hotel", "He was working for the police", "He had remarried"], "Medium", "Frank's Disappearance"],
+
+    // DAVID WICKS AND BIANCA (9)
+    ["Which long-absent son turned up unexpectedly at Pat Butcher's door?", "David Wicks", ["Simon Wicks", "Ricky Butcher", "Ian Beale"], "Easy", "David Wicks"],
+    ["Which actress played David Wicks' mother Pat?", "Pam St Clement", ["Wendy Richard", "Gillian Taylforth", "June Brown"], "Easy", "David Wicks"],
+    ["Which actor played David Wicks on his return to Albert Square?", "Michael French", ["Nick Berry", "Sid Owen", "Gary Webster"], "Easy", "David Wicks"],
+    ["What name did David and Ricky give their second-hand car business?", "Deals on Wheels", ["Frank's Autos", "Walford Motors", "The Arches"], "Easy", "David Wicks"],
+    ["With which younger Butcher did David Wicks go into the car business?", "Ricky Butcher", ["Janine Butcher", "Diane Butcher", "Clare Butcher"], "Easy", "David Wicks"],
+    ["Which old girlfriend of David Wicks was alarmed when he began flirting with her daughter?", "Carol Jackson", ["Pat Butcher", "Sharon Mitchell", "Gita Kapoor"], "Medium", "David Wicks"],
+    ["Who did Carol reveal was the biological father of Bianca Jackson?", "David Wicks", ["Alan Jackson", "Terry Cant", "Frank Butcher"], "Easy", "David Wicks"],
+    ["How did David react when Carol told him the truth about Bianca's parentage?", "He kept his distance from Bianca", ["He told Bianca immediately", "He left for New Zealand", "He proposed to Carol"], "Medium", "David Wicks"],
+    ["Which resident was David Wicks' half-brother through their father Pete Beale?", "Ian Beale", ["Simon Wicks", "Arthur Fowler", "Martin Fowler"], "Medium", "David Wicks"],
+
+    // RICKY, BIANCA AND NATALIE (6)
+    ["Which Jackson daughter began dating Ricky Butcher?", "Bianca Jackson", ["Sonia Jackson", "Natalie Price", "Hattie Tavernier"], "Easy", "Ricky and Bianca"],
+    ["Which actress portrayed Ricky's new girlfriend Bianca Jackson?", "Patsy Palmer", ["Natalie Cassidy", "Lucy Speed", "Danniella Westbrook"], "Easy", "Ricky and Bianca"],
+    ["Which new teenage character was Bianca Jackson's close friend?", "Natalie Price", ["Mandy Salter", "Della Alexander", "Ruth Aitken"], "Medium", "Ricky and Bianca"],
+    ["Which actress played Natalie Price?", "Lucy Speed", ["Patsy Palmer", "Nicola Stapleton", "Gemma Bissix"], "Medium", "Ricky and Bianca"],
+    ["Which young Butcher had a brief encounter with Mandy Salter before she left Walford?", "Ricky Butcher", ["Frank Butcher", "David Wicks", "Nigel Bates"], "Medium", "Ricky and Bianca"],
+    ["Which relative was Bianca's mother, who disapproved of her flirtation with David Wicks?", "Carol Jackson", ["Pat Butcher", "Blossom Jackson", "Debbie Tyler"], "Easy", "Ricky and Bianca"],
+
+    // THE QUEEN VIC SIEGE (9)
+    ["Which former soldier held residents hostage inside the Queen Victoria?", "Dougie Briggs", ["Nick Cotton", "Liam Tyler", "Richard Cole"], "Easy", "The Queen Vic Siege"],
+    ["Who played the dangerous former soldier Dougie Briggs?", "Max Gold", ["Ross Kemp", "Tony Caunter", "Mark Monero"], "Medium", "The Queen Vic Siege"],
+    ["Which pub landlord had served in the army alongside Dougie Briggs?", "Grant Mitchell", ["Nigel Bates", "Phil Mitchell", "Eddie Royle"], "Easy", "The Queen Vic Siege"],
+    ["During which conflict had Dougie Briggs served alongside Grant?", "The Falklands War", ["The Gulf War", "The Korean War", "The Vietnam War"], "Medium", "The Queen Vic Siege"],
+    ["How many episodes a week did EastEnders begin broadcasting when the Queen Vic siege storyline aired?", "Three", ["Two", "Four", "Five"], "Medium", "The Queen Vic Siege"],
+    ["What weapon did Dougie Briggs use to terrorise people in the pub?", "A sawn-off shotgun", ["A crossbow", "A handgun", "A hunting knife"], "Medium", "The Queen Vic Siege"],
+    ["What robbery had Dougie persuaded Grant to consider helping him carry out?", "A supermarket raid", ["A bank heist", "A jewellery shop robbery", "A post office robbery"], "Medium", "The Queen Vic Siege"],
+    ["Which Fowler daughter was wounded by a gunshot during the siege?", "Michelle Fowler", ["Pauline Fowler", "Vicki Fowler", "Ruth Aitken"], "Easy", "The Queen Vic Siege"],
+    ["How did Dougie Briggs' siege eventually end for him?", "He was arrested by police", ["He escaped abroad", "He became the new landlord", "He handed himself in at the market"], "Medium", "The Queen Vic Siege"],
+
+    // NIGEL AND DEBBIE (9)
+    ["Which gentle Walford favourite married Debbie Tyler?", "Nigel Bates", ["Arthur Fowler", "Ian Beale", "Sanjay Kapoor"], "Easy", "Nigel and Debbie"],
+    ["What surname did Debbie Tyler take when she married Nigel?", "Bates", ["Mitchell", "Butcher", "Jackson"], "Easy", "Nigel and Debbie"],
+    ["Whose wedding marked the programme's publicly celebrated 1,000th instalment?", "Nigel and Debbie's", ["Sharon and Grant's", "Ricky and Sam's", "Phil and Kathy's"], "Medium", "Nigel and Debbie"],
+    ["Which of Debbie Tyler's former partners tried to disrupt her wedding?", "Liam Tyler", ["David Wicks", "Richard Cole", "Frank Butcher"], "Medium", "Nigel and Debbie"],
+    ["Who was Nigel Bates' best man at his wedding to Debbie Tyler?", "Grant Mitchell", ["Phil Mitchell", "Arthur Fowler", "Ricky Butcher"], "Medium", "Nigel and Debbie"],
+    ["Who was the young daughter Nigel became stepfather to after marrying Debbie?", "Clare", ["Janine", "Bianca", "Vicki"], "Easy", "Nigel and Debbie"],
+    ["What was the name of Debbie Tyler's mother who came to Walford?", "Maxine Palmer", ["Blossom Jackson", "Nellie Ellis", "Ethel Skinner"], "Medium", "Nigel and Debbie"],
+    ["What kind of shop hired Debbie Bates after her marriage to Nigel?", "A betting shop", ["A chemist", "A record shop", "A bookshop"], "Medium", "Nigel and Debbie"],
+    ["Which Walford resident applied for a betting-shop job alongside Debbie Bates?", "Michelle Fowler", ["Carol Jackson", "Kathy Beale", "Pauline Fowler"], "Medium", "Nigel and Debbie"],
+
+    // DELLA AND BINNIE (8)
+    ["Which new hairdresser opened a salon with Steve Elliot?", "Della Alexander", ["Binnie Roberts", "Natalie Price", "Shelley Lewis"], "Easy", "Della and Binnie"],
+    ["Which actress played Della Alexander?", "Michelle Joseph", ["Sophie Langham", "Michelle Gayle", "Nicola Duffett"], "Medium", "Della and Binnie"],
+    ["What was the name of the hair salon run by Della and Steve?", "Kool for Kutz", ["Julie's", "The Cutting Edge", "Walford Waves"], "Easy", "Della and Binnie"],
+    ["What job did Steve Elliot have at the Queen Victoria when he teamed up with Della?", "Barman", ["Chef", "Cellarman", "Security guard"], "Medium", "Della and Binnie"],
+    ["Which woman was revealed to be Della Alexander's girlfriend?", "Binnie Roberts", ["Ruth Aitken", "Natalie Price", "Gita Kapoor"], "Easy", "Della and Binnie"],
+    ["Which actress played Binnie Roberts?", "Sophie Langham", ["Michelle Joseph", "Patsy Palmer", "Caroline Paterson"], "Medium", "Della and Binnie"],
+    ["What revelation shocked Steve Elliot when he pursued a relationship with Della?", "She was in a relationship with a woman", ["She was married to his brother", "She was emigrating to Canada", "She owned the Queen Victoria"], "Medium", "Della and Binnie"],
+    ["Which of the couple was more openly comfortable talking about being a lesbian?", "Binnie Roberts", ["Della Alexander", "Michelle Fowler", "Shelley Lewis"], "Medium", "Della and Binnie"],
+
+    // MARK AND RUTH (8)
+    ["Which Scottish woman became Mark Fowler's new girlfriend?", "Ruth Aitken", ["Rachel Kominski", "Shelley Lewis", "Gill Robinson"], "Easy", "Mark and Ruth"],
+    ["Where did Mark Fowler first meet Ruth Aitken?", "At a hospice", ["At the Queen Vic", "At a garage", "At a football match"], "Medium", "Mark and Ruth"],
+    ["Who was Ruth visiting in the hospice when she met Mark?", "Her friend Anna", ["Her brother Jamie", "Her mother Mary", "Her cousin Gill"], "Medium", "Mark and Ruth"],
+    ["Which Scottish city was Ruth Aitken originally from?", "Edinburgh", ["Glasgow", "Dundee", "Aberdeen"], "Medium", "Mark and Ruth"],
+    ["What was the profession of Ruth Aitken's strict father?", "Minister", ["Police officer", "School headmaster", "Doctor"], "Medium", "Mark and Ruth"],
+    ["Which former Walford cook died of an AIDS-related illness, deeply affecting Mark?", "Joe Wallace", ["Steve Elliot", "Danny Whiting", "Kevin Masters"], "Medium", "Mark and Ruth"],
+    ["Which former girlfriend nearly revealed Mark's HIV status publicly as their relationship ended?", "Shelley Lewis", ["Ruth Aitken", "Diane Butcher", "Rachel Kominski"], "Medium", "Mark and Ruth"],
+    ["What kind of work did Ruth take on after becoming part of Mark's life?", "Childcare", ["Taxi driving", "Car sales", "Market inspection"], "Medium", "Mark and Ruth"],
+
+    // PHIL AND KATHY (7)
+    ["Which woman accepted Phil Mitchell's proposal of marriage while he was still legally married to Nadia?", "Kathy Beale", ["Sharon Mitchell", "Pat Butcher", "Gita Kapoor"], "Easy", "Phil and Kathy"],
+    ["Which woman did Phil need to divorce before he could marry Kathy?", "Nadia Mitchell", ["Sharon Mitchell", "Anne Howes", "Rachel Kominski"], "Easy", "Phil and Kathy"],
+    ["Who was Nadia's boyfriend, whom Phil contacted during his search for her?", "Marku", ["Sanjay", "Liam", "Alfie"], "Medium", "Phil and Kathy"],
+    ["How much did Nadia demand from Phil before agreeing to divorce him?", "£1,000", ["£100", "£5,000", "£10,000"], "Medium", "Phil and Kathy"],
+    ["To which country did Nadia plan to move after accepting Phil's divorce payment?", "Germany", ["Romania", "France", "Spain"], "Medium", "Phil and Kathy"],
+    ["Which man's former wife did Phil visit while trying to find Kathy's attacker?", "James Willmott-Brown's", ["Frank Butcher's", "Den Watts'", "Pete Beale's"], "Medium", "Phil and Kathy"],
+    ["What did Willmott-Brown's former wife reveal about his criminal history?", "He had been jailed for another rape", ["He had stolen from the Queen Vic", "He had been deported", "He had faked his death"], "Medium", "Phil and Kathy"],
+
+    // THE KAPOORS (5)
+    ["With which close relative did Gita Kapoor catch Sanjay being unfaithful?", "Her sister Meena", ["Her cousin Naima", "Her friend Sharon", "Her mother Sufia"], "Easy", "The Kapoors"],
+    ["Which market inspector received heart-patterned boxer shorts as a prank?", "Richard Cole", ["Arthur Fowler", "Pete Beale", "Nigel Bates"], "Medium", "The Kapoors"],
+    ["Who bought the novelty boxer shorts to play a trick on the market inspector?", "Sanjay Kapoor", ["David Wicks", "Phil Mitchell", "Ricky Butcher"], "Medium", "The Kapoors"],
+    ["What was thrown through Gita Kapoor's window during a racist incident?", "A brick", ["A bottle", "A stone wrapped in paper", "A firework"], "Medium", "The Kapoors"],
+    ["Why did Gita resist police surveillance after the attack on her home?", "She did not want to be treated as a victim", ["She was leaving for Australia", "She had sold her home", "She knew the attacker was family"], "Medium", "The Kapoors"],
+
+    // JACKSON FAMILY AND WELLARD (6)
+    ["Which older woman arrived as the grandmother of Alan Jackson?", "Blossom Jackson", ["Nellie Ellis", "Mo Butcher", "Ethel Skinner"], "Easy", "The Jacksons"],
+    ["Which actress played Jackson family elder Blossom?", "Mona Hammond", ["Elizabeth Kelly", "Pat Coombs", "Jacqui Gordon-Lawrence"], "Medium", "The Jacksons"],
+    ["Which actor played Carol's partner Alan Jackson?", "Howard Antony", ["Gary Webster", "Paul Bradley", "Michael French"], "Medium", "The Jacksons"],
+    ["What was the name of Robbie Jackson's much-loved dog?", "Wellard", ["Roly", "Willy", "Sugar"], "Easy", "The Jacksons"],
+    ["Which Jackson teenager crashed a stolen car into a garden after taking it for a joyride?", "Robbie Jackson", ["Billie Jackson", "Bianca Jackson", "Sonia Jackson"], "Medium", "The Jacksons"],
+    ["Which friend was with Robbie when he took Frank Butcher's car without permission?", "Kevin", ["Nigel", "Aidan", "Steve"], "Medium", "The Jacksons"],
+
+    // MICHELLE AND GEOFF (4)
+    ["Which older university lecturer began a relationship with Michelle Fowler?", "Geoff Barnes", ["Richard Cole", "David Wicks", "Russell Nash"], "Easy", "Michelle and Geoff"],
+    ["Which actor portrayed university lecturer Geoff Barnes?", "David Roper", ["Paul Bradley", "Tony Caunter", "Michael French"], "Medium", "Michelle and Geoff"],
+    ["What was Geoff Barnes' professional connection to Michelle before they became romantically involved?", "He was her university tutor", ["He was her employer at the café", "He was her solicitor", "He was her GP"], "Medium", "Michelle and Geoff"],
+    ["Which Fowler parent objected to the age gap between Michelle and Geoff?", "Arthur Fowler", ["Pauline Fowler", "Martin Fowler", "Mark Fowler"], "Medium", "Michelle and Geoff"],
+
+    // OTHER NEWCOMERS AND DRAMAS (6)
+    ["Which lifeguard began an affair with Cindy Beale?", "Matt", ["Steve", "Marku", "Liam"], "Medium", "Other Walford Stories"],
+    ["Where did Cindy Beale first meet the lifeguard who became her lover?", "At the swimming pool", ["At the Queen Vic", "At the garage", "At the launderette"], "Easy", "Other Walford Stories"],
+    ["Which elderly relative moved in with Arthur and Pauline and constantly irritated Arthur?", "Nellie Ellis", ["Blossom Jackson", "Mo Butcher", "Ethel Skinner"], "Easy", "Other Walford Stories"],
+    ["Which used-car dealer met Pat Butcher near the end of the year and later became her partner?", "Roy Evans", ["Eddie Royle", "Sanjay Kapoor", "Richard Cole"], "Easy", "Other Walford Stories"],
+    ["Which actor played car dealer Roy Evans?", "Tony Caunter", ["Michael Melia", "Mike Reid", "Pavel Douglas"], "Medium", "Other Walford Stories"],
+    ["Which future Walford regular, the son of Roy Evans, first appeared at the end of the year?", "Barry Evans", ["Nigel Bates", "Danny Taurus", "Robbie Jackson"], "Easy", "Other Walford Stories"],
+];
+
+const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty, topic], index) => {
+    const answers = [...wrongAnswers];
+    answers.splice(index % 4, 0, correctAnswer);
+
+    return {
+        id: 'tv_' + String(7004 + index).padStart(4, '0'),
+        category: 'Television',
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: ['British Television', 'Soaps', 'EastEnders', '1994', topic],
+        dailyEligible: true
+    };
+});
+
+module.exports = questions;
