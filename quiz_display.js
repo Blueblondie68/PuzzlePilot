@@ -1,4 +1,4 @@
-// quiz_display.js
+ // quiz_display.js
 // PuzzlePilot Quiz
 // Components V2 display and answer buttons
 
@@ -83,6 +83,131 @@ function nextMessage(
     return (
         'Next question in 3 seconds...'
     );
+}
+
+
+// ─────────────────────────────────────────────
+// QUESTION SUBJECT LABEL
+// ─────────────────────────────────────────────
+// Show the actual TV programme when its tag is available.
+// Do not mistake a storyline tag or year for a programme.
+
+const TELEVISION_PROGRAMMES = [
+    'EastEnders',
+    'Coronation Street',
+    'Emmerdale',
+    'Emmerdale Farm',
+    'Brookside',
+    'Crossroads',
+    'Eldorado',
+    'Family Affairs',
+    'Hollyoaks',
+    'Doctors',
+    'Neighbours',
+    'Home and Away',
+    'Take the High Road',
+    'River City',
+    'The Chase',
+    'The Weakest Link',
+    'Mastermind',
+    'University Challenge',
+    'Pointless',
+    'Who Wants to Be a Millionaire?',
+    'Catchphrase',
+    'Blockbusters',
+    'Bullseye',
+    'Family Fortunes',
+    'The Crystal Maze',
+    'Countdown',
+    'The Generation Game',
+    'Play Your Cards Right',
+    'Blankety Blank',
+    'The Price Is Right'
+];
+
+const PROGRAMME_GROUPS = new Set([
+    'soaps',
+    'soap operas',
+    'quiz shows',
+    'game shows',
+    'quiz and game shows',
+    'quiz & game shows',
+    'sitcoms',
+    'dramas',
+    'drama series',
+    'tv dramas',
+    'television dramas',
+    'comedies',
+    'reality shows',
+    "children's television",
+    "children's tv"
+]);
+
+function getProgrammeName(question) {
+    for (const field of ['programme', 'program', 'show', 'series']) {
+        if (
+            typeof question[field] === 'string' &&
+            question[field].trim()
+        ) {
+            return question[field].trim();
+        }
+    }
+
+    const tags = Array.isArray(question.tags)
+        ? question.tags.filter(tag => typeof tag === 'string')
+        : [];
+
+    // Recent packs use a subject, genre, programme,
+    // year and storyline in that order.
+    for (let i = 0; i < tags.length - 1; i++) {
+        if (PROGRAMME_GROUPS.has(tags[i].trim().toLowerCase())) {
+            const candidate = tags[i + 1].trim();
+
+            if (
+                candidate &&
+                !PROGRAMME_GROUPS.has(candidate.toLowerCase()) &&
+                !/^(?:19|20)\d{2}(?:s)?$/.test(candidate)
+            ) {
+                return candidate;
+            }
+        }
+    }
+
+    // Older packs may put the programme in a
+    // different position within their tags.
+    for (const programme of TELEVISION_PROGRAMMES) {
+        if (
+            tags.some(
+                tag =>
+                    tag.trim().toLowerCase() ===
+                    programme.toLowerCase()
+            )
+        ) {
+            return programme;
+        }
+    }
+
+    return null;
+}
+
+
+function questionSubjectLabel(question) {
+    const category =
+        String(question.category || 'General Knowledge').trim();
+
+    const isTelevision =
+        /^(?:tv|television)$/i.test(category);
+
+    if (isTelevision) {
+        const programme =
+            getProgrammeName(question);
+
+        return programme
+            ? `TELEVISION • ${programme.toUpperCase()}`
+            : 'TELEVISION';
+    }
+
+    return category.toUpperCase();
 }
 
 
@@ -254,6 +379,7 @@ function buildQuestionContainer(
             .addTextDisplayComponents(
                 new TextDisplayBuilder()
                     .setContent(
+                        `**${questionSubjectLabel(question)}**\n` +
                         `## ${question.question}`
                     )
             );
@@ -376,6 +502,7 @@ function buildResultContainer(
             .addTextDisplayComponents(
                 new TextDisplayBuilder()
                     .setContent(
+                        `**${questionSubjectLabel(question)}**\n` +
                         `**${question.question}**\n\n` +
                         `## ${resultHeading}\n` +
                         `${resultBody}`
