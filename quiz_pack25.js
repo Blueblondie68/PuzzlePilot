@@ -16,7 +16,7 @@ const questions = [
         answers: ['The Beatles', 'The Hollies', 'The Kinks', 'The Searchers'],
         correctAnswer: 'The Beatles',
         difficulty: 'Easy',
-        tags: ['1960s', 'pop', 'rock', 'the beatles', 'songs'],
+        tags: ['1960s', 'pop', 'rock', 'the beatles', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -27,7 +27,7 @@ const questions = [
         answers: ['The Byrds', 'The Beatles', 'The Kinks', 'The Hollies'],
         correctAnswer: 'The Beatles',
         difficulty: 'Medium',
-        tags: ['1960s', 'rock', 'the beatles', 'songs'],
+        tags: ['1960s', 'rock', 'the beatles', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -38,7 +38,7 @@ const questions = [
         answers: ['The Who', 'The Animals', 'The Rolling Stones', 'The Kinks'],
         correctAnswer: 'The Rolling Stones',
         difficulty: 'Medium',
-        tags: ['1960s', 'rock', 'the rolling stones', 'songs'],
+        tags: ['1960s', 'rock', 'the rolling stones', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -49,7 +49,7 @@ const questions = [
         answers: ['The Who', 'The Kinks', 'The Hollies', 'The Small Faces'],
         correctAnswer: 'The Who',
         difficulty: 'Medium',
-        tags: ['1960s', 'rock', 'the who', 'songs'],
+        tags: ['1960s', 'rock', 'the who', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -60,7 +60,7 @@ const questions = [
         answers: ['The Kinks', 'The Who', 'The Hollies', 'The Small Faces'],
         correctAnswer: 'The Kinks',
         difficulty: 'Medium',
-        tags: ['1960s', 'pop', 'rock', 'the kinks', 'songs'],
+        tags: ['1960s', 'pop', 'rock', 'the kinks', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -71,7 +71,7 @@ const questions = [
         answers: ['Procol Harum', 'The Moody Blues', 'Traffic', 'The Zombies'],
         correctAnswer: 'Procol Harum',
         difficulty: 'Easy',
-        tags: ['1960s', 'rock', 'british', 'songs'],
+        tags: ['1960s', 'rock', 'british', 'songs', 'bands', 'procol harum'],
         dailyEligible: true
     },
 
@@ -82,7 +82,7 @@ const questions = [
         answers: ['Procol Harum', 'The Moody Blues', 'Traffic', 'The Zombies'],
         correctAnswer: 'The Moody Blues',
         difficulty: 'Easy',
-        tags: ['1960s', 'rock', 'british', 'songs'],
+        tags: ['1960s', 'rock', 'british', 'songs', 'bands', 'the moody blues'],
         dailyEligible: true
     },
 
@@ -93,7 +93,7 @@ const questions = [
         answers: ['The Zombies', 'The Hollies', 'The Searchers', 'The Animals'],
         correctAnswer: 'The Zombies',
         difficulty: 'Medium',
-        tags: ['1960s', 'pop', 'rock', 'british', 'songs'],
+        tags: ['1960s', 'pop', 'rock', 'british', 'songs', 'bands', 'the zombies'],
         dailyEligible: true
     },
 
@@ -104,7 +104,7 @@ const questions = [
         answers: ['Sandie Shaw', 'Petula Clark', 'Cilla Black', 'Dusty Springfield'],
         correctAnswer: 'Petula Clark',
         difficulty: 'Medium',
-        tags: ['1960s', 'pop', 'british', 'songs'],
+        tags: ['1960s', 'pop', 'british', 'songs', 'singers', 'petula clark'],
         dailyEligible: true
     },
 
@@ -115,7 +115,7 @@ const questions = [
         answers: ['Lulu', 'Cilla Black', 'Sandie Shaw', 'Petula Clark'],
         correctAnswer: 'Sandie Shaw',
         difficulty: 'Medium',
-        tags: ['1960s', 'pop', 'eurovision', 'british', 'songs'],
+        tags: ['1960s', 'pop', 'british', 'songs', 'singers', 'sandie shaw', 'uk number ones'],
         dailyEligible: true
     },
 
@@ -126,7 +126,7 @@ const questions = [
         answers: ['Lulu', 'Dusty Springfield', 'Cilla Black', 'Sandie Shaw'],
         correctAnswer: 'Lulu',
         difficulty: 'Medium',
-        tags: ['1960s', 'pop', 'british', 'songs'],
+        tags: ['1960s', 'pop', 'british', 'songs', 'scottish', 'singers', 'lulu', 'film soundtracks', 'to sir with love'],
         dailyEligible: true
     },
 
@@ -137,7 +137,7 @@ const questions = [
         answers: ['Petula Clark', 'Cilla Black', 'Sandie Shaw', 'Lulu'],
         correctAnswer: 'Cilla Black',
         difficulty: 'Medium',
-        tags: ['1960s', 'pop', 'british', 'songs'],
+        tags: ['1960s', 'pop', 'british', 'songs', 'singers', 'cilla black', 'covers', 'uk number ones'],
         dailyEligible: true
     },
 
@@ -148,7 +148,7 @@ const questions = [
         answers: ['The Foundations', 'Four Tops', 'The Drifters', 'The Temptations'],
         correctAnswer: 'The Foundations',
         difficulty: 'Medium',
-        tags: ['1960s', 'soul', 'pop', 'british', 'songs'],
+        tags: ['1960s', 'soul', 'pop', 'british', 'songs', 'bands', 'the foundations'],
         dailyEligible: true
     },
 
@@ -159,7 +159,7 @@ const questions = [
         answers: ['The Monkees', 'The Archies', 'The Turtles', 'The Association'],
         correctAnswer: 'The Archies',
         difficulty: 'Easy',
-        tags: ['1960s', 'pop', 'songs'],
+        tags: ['1960s', 'pop', 'songs', 'american', 'fictional bands', 'the archies', 'cartoon music', 'bubblegum pop', 'television cartoons'],
         dailyEligible: true
     },
 
@@ -170,7 +170,7 @@ const questions = [
         answers: ['The Turtles', 'The Monkees', 'The Byrds', 'The Beach Boys'],
         correctAnswer: 'The Turtles',
         difficulty: 'Medium',
-        tags: ['1960s', 'pop', 'rock', 'songs'],
+        tags: ['1960s', 'pop', 'rock', 'songs', 'american', 'bands', 'the turtles'],
         dailyEligible: true
     },
 
@@ -181,7 +181,7 @@ const questions = [
         answers: ['The Beach Boys', 'The Byrds', 'The Turtles', 'The Monkees'],
         correctAnswer: 'The Beach Boys',
         difficulty: 'Easy',
-        tags: ['1960s', 'pop', 'rock', 'the beach boys', 'songs'],
+        tags: ['1960s', 'pop', 'rock', 'the beach boys', 'songs', 'american', 'bands'],
         dailyEligible: true
     },
 
@@ -192,7 +192,7 @@ const questions = [
         answers: ['Otis Redding', 'Wilson Pickett', 'Sam Cooke', 'Marvin Gaye'],
         correctAnswer: 'Wilson Pickett',
         difficulty: 'Medium',
-        tags: ['1960s', 'soul', 'songs'],
+        tags: ['1960s', 'soul', 'songs', 'american', 'singers', 'wilson pickett'],
         dailyEligible: true
     },
 
@@ -203,7 +203,7 @@ const questions = [
         answers: ['Diana Ross', 'Aretha Franklin', 'Gladys Knight', 'Etta James'],
         correctAnswer: 'Aretha Franklin',
         difficulty: 'Medium',
-        tags: ['1960s', 'soul', 'aretha franklin', 'songs'],
+        tags: ['1960s', 'soul', 'aretha franklin', 'songs', 'american', 'singers'],
         dailyEligible: true
     },
 
@@ -214,7 +214,7 @@ const questions = [
         answers: ['The Temptations', 'Four Tops', 'The Miracles', 'The Drifters'],
         correctAnswer: 'Four Tops',
         difficulty: 'Medium',
-        tags: ['1960s', 'motown', 'soul', 'songs'],
+        tags: ['1960s', 'motown', 'soul', 'songs', 'american', 'vocal groups', 'four tops'],
         dailyEligible: true
     },
 
@@ -225,7 +225,7 @@ const questions = [
         answers: ['Tina Turner', 'Aretha Franklin', 'Etta James', 'Diana Ross'],
         correctAnswer: 'Tina Turner',
         difficulty: 'Medium',
-        tags: ['1960s', 'soul', 'rock', 'tina turner', 'songs'],
+        tags: ['1960s', 'soul', 'rock', 'tina turner', 'songs', 'american', 'singers', 'ike and tina turner', 'collaborations'],
         dailyEligible: true
     },
 
@@ -240,7 +240,7 @@ const questions = [
         answers: ['Deep Purple', 'Led Zeppelin', 'Pink Floyd', 'Black Sabbath'],
         correctAnswer: 'Led Zeppelin',
         difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'led zeppelin', 'songs'],
+        tags: ['1970s', 'rock', 'led zeppelin', 'songs', 'british', 'bands', 'hard rock'],
         dailyEligible: true
     },
 
@@ -251,7 +251,7 @@ const questions = [
         answers: ['Led Zeppelin', 'Deep Purple', 'Black Sabbath', 'Free'],
         correctAnswer: 'Deep Purple',
         difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'deep purple', 'songs'],
+        tags: ['1970s', 'rock', 'deep purple', 'songs', 'british', 'bands', 'hard rock'],
         dailyEligible: true
     },
 
@@ -262,7 +262,7 @@ const questions = [
         answers: ['Deep Purple', 'Led Zeppelin', 'Black Sabbath', 'Free'],
         correctAnswer: 'Black Sabbath',
         difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'black sabbath', 'songs'],
+        tags: ['1970s', 'rock', 'black sabbath', 'songs', 'british', 'bands', 'heavy metal'],
         dailyEligible: true
     },
 
@@ -273,7 +273,7 @@ const questions = [
         answers: ['Free', 'Bad Company', 'Deep Purple', 'Thin Lizzy'],
         correctAnswer: 'Free',
         difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'free', 'songs'],
+        tags: ['1970s', 'rock', 'free', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -284,7 +284,7 @@ const questions = [
         answers: ['Free', 'Thin Lizzy', 'Bad Company', 'UFO'],
         correctAnswer: 'Thin Lizzy',
         difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'thin lizzy', 'songs'],
+        tags: ['1970s', 'rock', 'thin lizzy', 'songs', 'irish', 'bands'],
         dailyEligible: true
     },
 
@@ -295,7 +295,7 @@ const questions = [
         answers: ['Bad Company', 'Free', 'Thin Lizzy', 'UFO'],
         correctAnswer: 'Bad Company',
         difficulty: 'Medium',
-        tags: ['1970s', 'rock', 'bad company', 'songs'],
+        tags: ['1970s', 'rock', 'bad company', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -306,7 +306,7 @@ const questions = [
         answers: ['Supertramp', '10cc', 'Electric Light Orchestra', 'Genesis'],
         correctAnswer: 'Supertramp',
         difficulty: 'Medium',
-        tags: ['1970s', 'rock', 'supertramp', 'songs'],
+        tags: ['1970s', 'rock', 'supertramp', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -317,7 +317,7 @@ const questions = [
         answers: ['Supertramp', '10cc', 'Electric Light Orchestra', 'Pilot'],
         correctAnswer: '10cc',
         difficulty: 'Medium',
-        tags: ['1970s', 'pop', 'rock', '10cc', 'songs'],
+        tags: ['1970s', 'pop', 'rock', '10cc', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -328,7 +328,7 @@ const questions = [
         answers: ['10cc', 'Electric Light Orchestra', 'Supertramp', 'Pilot'],
         correctAnswer: 'Electric Light Orchestra',
         difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'elo', 'songs'],
+        tags: ['1970s', 'rock', 'elo', 'songs', 'british', 'bands', 'electric light orchestra'],
         dailyEligible: true
     },
 
@@ -339,7 +339,7 @@ const questions = [
         answers: ['Pilot', 'Bay City Rollers', 'Mud', 'Sweet'],
         correctAnswer: 'Pilot',
         difficulty: 'Medium',
-        tags: ['1970s', 'pop', 'british', 'songs'],
+        tags: ['1970s', 'pop', 'british', 'songs', 'scottish', 'bands', 'pilot'],
         dailyEligible: true
     },
 
@@ -350,7 +350,7 @@ const questions = [
         answers: ['Pilot', 'Bay City Rollers', 'Mud', 'Sweet'],
         correctAnswer: 'Bay City Rollers',
         difficulty: 'Easy',
-        tags: ['1970s', 'pop', 'bay city rollers', 'songs'],
+        tags: ['1970s', 'pop', 'bay city rollers', 'songs', 'british', 'scottish', 'bands', 'covers'],
         dailyEligible: true
     },
 
@@ -361,7 +361,7 @@ const questions = [
         answers: ['Mud', 'Sweet', 'Slade', 'T. Rex'],
         correctAnswer: 'Mud',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'mud', 'songs'],
+        tags: ['1970s', 'glam rock', 'mud', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -372,7 +372,7 @@ const questions = [
         answers: ['Mud', 'Sweet', 'Slade', 'T. Rex'],
         correctAnswer: 'Sweet',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'sweet', 'songs'],
+        tags: ['1970s', 'glam rock', 'sweet', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
     {
@@ -382,7 +382,7 @@ const questions = [
         answers: ['Slade', 'Sweet', 'Mud', 'T. Rex'],
         correctAnswer: 'Slade',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'slade', 'songs'],
+        tags: ['1970s', 'glam rock', 'slade', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -393,7 +393,7 @@ const questions = [
         answers: ['T. Rex', 'Slade', 'Sweet', 'David Bowie'],
         correctAnswer: 'T. Rex',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 't rex', 'songs'],
+        tags: ['1970s', 'glam rock', 't rex', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -404,7 +404,7 @@ const questions = [
         answers: ['T. Rex', 'David Bowie', 'Roxy Music', 'Mott the Hoople'],
         correctAnswer: 'David Bowie',
         difficulty: 'Medium',
-        tags: ['1970s', 'rock', 'glam rock', 'david bowie', 'songs'],
+        tags: ['1970s', 'rock', 'glam rock', 'david bowie', 'songs', 'british', 'singers'],
         dailyEligible: true
     },
 
@@ -415,7 +415,7 @@ const questions = [
         answers: ['David Bowie', 'Roxy Music', 'Mott the Hoople', 'T. Rex'],
         correctAnswer: 'Roxy Music',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'roxy music', 'songs'],
+        tags: ['1970s', 'glam rock', 'roxy music', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -426,7 +426,7 @@ const questions = [
         answers: ['Roxy Music', 'Mott the Hoople', 'T. Rex', 'David Bowie'],
         correctAnswer: 'Mott the Hoople',
         difficulty: 'Medium',
-        tags: ['1970s', 'glam rock', 'songs'],
+        tags: ['1970s', 'glam rock', 'songs', 'british', 'bands', 'mott the hoople'],
         dailyEligible: true
     },
 
@@ -437,7 +437,7 @@ const questions = [
         answers: ['Steve Harley & Cockney Rebel', 'Roxy Music', 'Mott the Hoople', '10cc'],
         correctAnswer: 'Steve Harley & Cockney Rebel',
         difficulty: 'Medium',
-        tags: ['1970s', 'rock', 'british', 'songs'],
+        tags: ['1970s', 'rock', 'british', 'songs', 'bands', 'steve harley and cockney rebel'],
         dailyEligible: true
     },
 
@@ -448,7 +448,7 @@ const questions = [
         answers: ['John Miles', 'Leo Sayer', 'David Essex', 'Cliff Richard'],
         correctAnswer: 'John Miles',
         difficulty: 'Medium',
-        tags: ['1970s', 'pop', 'rock', 'british', 'songs'],
+        tags: ['1970s', 'pop', 'rock', 'british', 'songs', 'singers', 'john miles', 'progressive rock'],
         dailyEligible: true
     },
 
@@ -459,7 +459,7 @@ const questions = [
         answers: ['John Miles', 'David Essex', 'Leo Sayer', 'Cliff Richard'],
         correctAnswer: 'David Essex',
         difficulty: 'Medium',
-        tags: ['1970s', 'pop', 'british', 'songs'],
+        tags: ['1970s', 'pop', 'british', 'songs', 'singers', 'david essex'],
         dailyEligible: true
     },
 
@@ -470,7 +470,7 @@ const questions = [
         answers: ['David Essex', 'Leo Sayer', 'Cliff Richard', 'John Miles'],
         correctAnswer: 'Leo Sayer',
         difficulty: 'Medium',
-        tags: ['1970s', 'pop', 'leo sayer', 'songs'],
+        tags: ['1970s', 'pop', 'leo sayer', 'songs', 'british', 'singers'],
         dailyEligible: true
     },
 
@@ -481,7 +481,7 @@ const questions = [
         answers: ['Leo Sayer', 'Cliff Richard', 'David Essex', 'John Miles'],
         correctAnswer: 'Cliff Richard',
         difficulty: 'Medium',
-        tags: ['1970s', 'pop', 'cliff richard', 'songs'],
+        tags: ['1970s', 'pop', 'cliff richard', 'songs', 'british', 'singers'],
         dailyEligible: true
     },
 
@@ -492,7 +492,7 @@ const questions = [
         answers: ['Blondie', 'The Pretenders', 'The Police', 'The Cars'],
         correctAnswer: 'Blondie',
         difficulty: 'Medium',
-        tags: ['1970s', 'new wave', 'blondie', 'songs'],
+        tags: ['1970s', 'new wave', 'blondie', 'songs', 'american', 'bands'],
         dailyEligible: true
     },
 
@@ -503,7 +503,7 @@ const questions = [
         answers: ['Blondie', 'The Pretenders', 'The Police', 'The Cars'],
         correctAnswer: 'The Pretenders',
         difficulty: 'Medium',
-        tags: ['1980s', 'new wave', 'the pretenders', 'songs'],
+        tags: ['1980s', 'new wave', 'the pretenders', 'songs', 'british', 'american', 'bands'],
         dailyEligible: true
     },
 
@@ -514,7 +514,7 @@ const questions = [
         answers: ['The Pretenders', 'The Police', 'Blondie', 'The Jam'],
         correctAnswer: 'The Police',
         difficulty: 'Easy',
-        tags: ['1970s', 'rock', 'new wave', 'the police', 'songs'],
+        tags: ['1970s', 'rock', 'new wave', 'the police', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -529,7 +529,7 @@ const questions = [
         answers: ['Nik Kershaw', 'Howard Jones', 'Paul Young', 'Level 42'],
         correctAnswer: 'Nik Kershaw',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'british', 'songs'],
+        tags: ['1980s', 'pop', 'british', 'songs', 'singers', 'nik kershaw'],
         dailyEligible: true
     },
 
@@ -540,7 +540,7 @@ const questions = [
         answers: ['Nik Kershaw', 'Howard Jones', 'Paul Young', 'Level 42'],
         correctAnswer: 'Howard Jones',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'british', 'songs'],
+        tags: ['1980s', 'pop', 'british', 'songs', 'singers', 'howard jones'],
         dailyEligible: true
     },
 
@@ -551,7 +551,7 @@ const questions = [
         answers: ['Howard Jones', 'Level 42', 'Nik Kershaw', 'Paul Young'],
         correctAnswer: 'Level 42',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'level 42', 'songs'],
+        tags: ['1980s', 'pop', 'level 42', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -562,7 +562,7 @@ const questions = [
         answers: ['Haddaway', 'Snap!', 'Dr. Alban', 'Corona'],
         correctAnswer: 'Haddaway',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'haddaway', 'songs'],
+        tags: ['1990s', 'dance', 'haddaway', 'songs', 'eurodance', 'singers'],
         dailyEligible: true
     },
 
@@ -573,7 +573,7 @@ const questions = [
         answers: ['Snap!', 'Haddaway', 'Dr. Alban', 'Corona'],
         correctAnswer: 'Snap!',
         difficulty: 'Easy',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'german', 'dance groups', 'snap', 'eurodance'],
         dailyEligible: true
     },
 
@@ -584,7 +584,7 @@ const questions = [
         answers: ['Dr. Alban', 'Snap!', 'Haddaway', 'Corona'],
         correctAnswer: 'Dr. Alban',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'swedish', 'singers', 'dr alban', 'eurodance'],
         dailyEligible: true
     },
 
@@ -595,7 +595,7 @@ const questions = [
         answers: ['Corona', 'Snap!', 'Haddaway', 'Dr. Alban'],
         correctAnswer: 'Corona',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'corona', 'songs'],
+        tags: ['1990s', 'dance', 'corona', 'songs', 'italian', 'dance groups', 'eurodance'],
         dailyEligible: true
     },
 
@@ -606,7 +606,7 @@ const questions = [
         answers: ['Corona', 'Snap!', 'Haddaway', '2 Unlimited'],
         correctAnswer: 'Snap!',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'snap', 'songs'],
+        tags: ['1990s', 'dance', 'snap', 'songs', 'german', 'dance groups', 'eurodance'],
         dailyEligible: true
     },
 
@@ -617,7 +617,7 @@ const questions = [
         answers: ['2 Unlimited', 'Snap!', 'Culture Beat', 'Technotronic'],
         correctAnswer: '2 Unlimited',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', '2 unlimited', 'songs'],
+        tags: ['1990s', 'dance', '2 unlimited', 'songs', 'dutch', 'belgian', 'duos', 'eurodance'],
         dailyEligible: true
     },
 
@@ -628,7 +628,7 @@ const questions = [
         answers: ['2 Unlimited', 'Culture Beat', 'Technotronic', 'Real McCoy'],
         correctAnswer: 'Culture Beat',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'culture beat', 'songs'],
+        tags: ['1990s', 'dance', 'culture beat', 'songs', 'german', 'dance groups', 'eurodance'],
         dailyEligible: true
     },
 
@@ -639,7 +639,7 @@ const questions = [
         answers: ['Culture Beat', 'Technotronic', 'Snap!', 'Black Box'],
         correctAnswer: 'Technotronic',
         difficulty: 'Easy',
-        tags: ['1980s', 'dance', 'songs'],
+        tags: ['1980s', 'dance', 'songs', 'belgian', 'dance groups', 'technotronic', 'house'],
         dailyEligible: true
     },
 
@@ -650,7 +650,7 @@ const questions = [
         answers: ['Technotronic', 'Black Box', 'Snap!', 'KLF'],
         correctAnswer: 'Black Box',
         difficulty: 'Medium',
-        tags: ['1980s', 'dance', 'songs'],
+        tags: ['1980s', 'dance', 'songs', 'italian', 'dance groups', 'black box', 'house'],
         dailyEligible: true
     },
 
@@ -661,7 +661,7 @@ const questions = [
         answers: ['Deee-Lite', 'Black Box', 'Technotronic', 'Snap!'],
         correctAnswer: 'Deee-Lite',
         difficulty: 'Easy',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'american', 'dance groups', 'deee-lite', 'house'],
         dailyEligible: true
     },
 
@@ -672,7 +672,7 @@ const questions = [
         answers: ['CeCe Peniston', 'Crystal Waters', 'Robin S.', 'Ultra Naté'],
         correctAnswer: 'CeCe Peniston',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'american', 'singers', 'cece peniston', 'house'],
         dailyEligible: true
     },
 
@@ -683,7 +683,7 @@ const questions = [
         answers: ['CeCe Peniston', 'Crystal Waters', 'Robin S.', 'Ultra Naté'],
         correctAnswer: 'Crystal Waters',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'american', 'singers', 'crystal waters', 'house'],
         dailyEligible: true
     },
 
@@ -694,7 +694,7 @@ const questions = [
         answers: ['Crystal Waters', 'Robin S.', 'CeCe Peniston', 'Ultra Naté'],
         correctAnswer: 'Robin S.',
         difficulty: 'Easy',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'american', 'singers', 'robin s', 'house'],
         dailyEligible: true
     },
 
@@ -705,7 +705,7 @@ const questions = [
         answers: ['Robin S.', 'Ultra Naté', 'CeCe Peniston', 'Crystal Waters'],
         correctAnswer: 'Ultra Naté',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'american', 'singers', 'ultra nate', 'house'],
         dailyEligible: true
     },
 
@@ -716,7 +716,7 @@ const questions = [
         answers: ['Faithless', 'The Prodigy', 'Underworld', 'Orbital'],
         correctAnswer: 'Faithless',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'faithless', 'songs'],
+        tags: ['1990s', 'dance', 'faithless', 'songs', 'british', 'dance groups', 'electronic'],
         dailyEligible: true
     },
 
@@ -727,7 +727,7 @@ const questions = [
         answers: ['Faithless', 'Underworld', 'Orbital', 'The Chemical Brothers'],
         correctAnswer: 'Underworld',
         difficulty: 'Hard',
-        tags: ['1990s', 'dance', 'underworld', 'songs'],
+        tags: ['1990s', 'dance', 'underworld', 'songs', 'british', 'dance groups', 'electronic'],
         dailyEligible: true
     },
 
@@ -738,9 +738,10 @@ const questions = [
         answers: ['Underworld', 'Orbital', 'The Chemical Brothers', 'Leftfield'],
         correctAnswer: 'Orbital',
         difficulty: 'Hard',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'british', 'duos', 'orbital', 'electronic', 'techno'],
         dailyEligible: true
     },
+
     {
         id: 'music_0633',
         category: 'Music',
@@ -748,7 +749,7 @@ const questions = [
         answers: ['Orbital', 'The Chemical Brothers', 'The Prodigy', 'Leftfield'],
         correctAnswer: 'The Chemical Brothers',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'the chemical brothers', 'songs'],
+        tags: ['1990s', 'dance', 'the chemical brothers', 'songs', 'british', 'duos', 'electronic'],
         dailyEligible: true
     },
 
@@ -759,7 +760,7 @@ const questions = [
         answers: ['The Chemical Brothers', 'Leftfield', 'Orbital', 'Underworld'],
         correctAnswer: 'Leftfield',
         difficulty: 'Hard',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'british', 'duos', 'leftfield', 'electronic', 'john lydon', 'collaborations'],
         dailyEligible: true
     },
 
@@ -770,7 +771,7 @@ const questions = [
         answers: ['The Chemical Brothers', 'The Prodigy', 'Underworld', 'Orbital'],
         correctAnswer: 'The Chemical Brothers',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'british', 'duos', 'electronic', 'noel gallagher', 'collaborations'],
         dailyEligible: true
     },
 
@@ -781,7 +782,7 @@ const questions = [
         answers: ['The Prodigy', 'The Chemical Brothers', 'Faithless', 'Underworld'],
         correctAnswer: 'The Prodigy',
         difficulty: 'Easy',
-        tags: ['1990s', 'dance', 'the prodigy', 'songs'],
+        tags: ['1990s', 'dance', 'the prodigy', 'songs', 'british', 'dance groups', 'electronic'],
         dailyEligible: true
     },
 
@@ -792,7 +793,7 @@ const questions = [
         answers: ['Fatboy Slim', 'The Chemical Brothers', 'The Prodigy', 'Groove Armada'],
         correctAnswer: 'Fatboy Slim',
         difficulty: 'Easy',
-        tags: ['1990s', 'dance', 'fatboy slim', 'songs'],
+        tags: ['1990s', 'dance', 'fatboy slim', 'songs', 'british', 'djs', 'big beat'],
         dailyEligible: true
     },
 
@@ -803,7 +804,7 @@ const questions = [
         answers: ['The Chemical Brothers', 'Fatboy Slim', 'Groove Armada', 'Basement Jaxx'],
         correctAnswer: 'Fatboy Slim',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'fatboy slim', 'songs'],
+        tags: ['1990s', 'dance', 'fatboy slim', 'songs', 'british', 'djs', 'big beat'],
         dailyEligible: true
     },
 
@@ -814,7 +815,7 @@ const questions = [
         answers: ['Basement Jaxx', 'Groove Armada', 'Fatboy Slim', 'Daft Punk'],
         correctAnswer: 'Basement Jaxx',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'british', 'duos', 'basement jaxx', 'house'],
         dailyEligible: true
     },
 
@@ -825,7 +826,7 @@ const questions = [
         answers: ['Basement Jaxx', 'Groove Armada', 'Daft Punk', 'Moloko'],
         correctAnswer: 'Groove Armada',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'british', 'duos', 'groove armada', 'house'],
         dailyEligible: true
     },
 
@@ -836,7 +837,7 @@ const questions = [
         answers: ['Groove Armada', 'Moloko', 'Basement Jaxx', 'Daft Punk'],
         correctAnswer: 'Moloko',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'songs'],
+        tags: ['1990s', 'dance', 'songs', 'british', 'irish', 'duos', 'moloko', 'house'],
         dailyEligible: true
     },
 
@@ -847,7 +848,7 @@ const questions = [
         answers: ['Daft Punk', 'Air', 'Cassius', 'Basement Jaxx'],
         correctAnswer: 'Daft Punk',
         difficulty: 'Easy',
-        tags: ['1990s', 'dance', 'daft punk', 'songs'],
+        tags: ['1990s', 'dance', 'daft punk', 'songs', 'french', 'duos', 'house', 'french house'],
         dailyEligible: true
     },
 
@@ -858,7 +859,7 @@ const questions = [
         answers: ['Daft Punk', 'Air', 'Cassius', 'Phoenix'],
         correctAnswer: 'Air',
         difficulty: 'Medium',
-        tags: ['1990s', 'electronic', 'songs'],
+        tags: ['1990s', 'electronic', 'songs', 'french', 'duos', 'air', 'french electronic'],
         dailyEligible: true
     },
 
@@ -869,7 +870,7 @@ const questions = [
         answers: ['Prince', 'Michael Jackson', 'George Michael', 'Terence Trent D\'Arby'],
         correctAnswer: 'Prince',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'prince', 'songs'],
+        tags: ['1980s', 'pop', 'prince', 'songs', 'american', 'singers'],
         dailyEligible: true
     },
 
@@ -880,7 +881,7 @@ const questions = [
         answers: ['Prince', 'Michael Jackson', 'George Michael', 'Lionel Richie'],
         correctAnswer: 'Prince',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'prince', 'songs'],
+        tags: ['1980s', 'pop', 'prince', 'songs', 'american', 'singers'],
         dailyEligible: true
     },
 
@@ -891,7 +892,7 @@ const questions = [
         answers: ['Prince', 'Michael Jackson', 'Lionel Richie', 'George Michael'],
         correctAnswer: 'Michael Jackson',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'michael jackson', 'songs'],
+        tags: ['1980s', 'pop', 'michael jackson', 'songs', 'american', 'singers'],
         dailyEligible: true
     },
 
@@ -902,7 +903,7 @@ const questions = [
         answers: ['Michael Jackson', 'Prince', 'George Michael', 'Lionel Richie'],
         correctAnswer: 'Michael Jackson',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'rock', 'michael jackson', 'songs'],
+        tags: ['1980s', 'pop', 'rock', 'michael jackson', 'songs', 'american', 'singers'],
         dailyEligible: true
     },
 
@@ -913,7 +914,7 @@ const questions = [
         answers: ['Lionel Richie', 'Michael Jackson', 'Billy Ocean', 'Luther Vandross'],
         correctAnswer: 'Lionel Richie',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'lionel richie', 'songs'],
+        tags: ['1980s', 'pop', 'lionel richie', 'songs', 'american', 'singers'],
         dailyEligible: true
     },
 
@@ -924,7 +925,7 @@ const questions = [
         answers: ['Lionel Richie', 'Billy Ocean', 'Luther Vandross', 'Alexander O\'Neal'],
         correctAnswer: 'Billy Ocean',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'billy ocean', 'songs'],
+        tags: ['1980s', 'pop', 'billy ocean', 'songs', 'british', 'singers'],
         dailyEligible: true
     },
 
@@ -935,7 +936,7 @@ const questions = [
         answers: ['Billy Ocean', 'Luther Vandross', 'Alexander O\'Neal', 'Lionel Richie'],
         correctAnswer: 'Luther Vandross',
         difficulty: 'Medium',
-        tags: ['1980s', 'soul', 'luther vandross', 'songs'],
+        tags: ['1980s', 'soul', 'luther vandross', 'songs', 'american', 'singers'],
         dailyEligible: true
     },
 
@@ -946,7 +947,7 @@ const questions = [
         answers: ['Luther Vandross', 'Alexander O\'Neal', 'Billy Ocean', 'Terence Trent D\'Arby'],
         correctAnswer: 'Alexander O\'Neal',
         difficulty: 'Medium',
-        tags: ['1980s', 'soul', 'songs'],
+        tags: ['1980s', 'soul', 'songs', 'american', 'singers', 'alexander oneal'],
         dailyEligible: true
     },
 
@@ -957,7 +958,7 @@ const questions = [
         answers: ['Alexander O\'Neal', 'Terence Trent D\'Arby', 'Billy Ocean', 'Luther Vandross'],
         correctAnswer: 'Terence Trent D\'Arby',
         difficulty: 'Medium',
-        tags: ['1980s', 'soul', 'pop', 'songs'],
+        tags: ['1980s', 'soul', 'pop', 'songs', 'american', 'singers', 'terence trent darby'],
         dailyEligible: true
     },
 
@@ -968,7 +969,7 @@ const questions = [
         answers: ['Neneh Cherry', 'Soul II Soul', 'Lisa Stansfield', 'Mica Paris'],
         correctAnswer: 'Neneh Cherry',
         difficulty: 'Medium',
-        tags: ['1980s', 'pop', 'hip hop', 'songs'],
+        tags: ['1980s', 'pop', 'hip hop', 'songs', 'swedish', 'singers', 'neneh cherry'],
         dailyEligible: true
     },
 
@@ -979,7 +980,7 @@ const questions = [
         answers: ['Neneh Cherry', 'Lisa Stansfield', 'Mica Paris', 'Soul II Soul'],
         correctAnswer: 'Lisa Stansfield',
         difficulty: 'Easy',
-        tags: ['1980s', 'pop', 'soul', 'lisa stansfield', 'songs'],
+        tags: ['1980s', 'pop', 'soul', 'lisa stansfield', 'songs', 'british', 'singers'],
         dailyEligible: true
     },
 
@@ -990,7 +991,7 @@ const questions = [
         answers: ['Lisa Stansfield', 'Mica Paris', 'Neneh Cherry', 'Soul II Soul'],
         correctAnswer: 'Mica Paris',
         difficulty: 'Hard',
-        tags: ['1980s', 'soul', 'british', 'songs'],
+        tags: ['1980s', 'soul', 'british', 'songs', 'singers', 'mica paris'],
         dailyEligible: true
     },
 
@@ -1001,7 +1002,7 @@ const questions = [
         answers: ['Soul II Soul', 'Neneh Cherry', 'Lisa Stansfield', 'Mica Paris'],
         correctAnswer: 'Soul II Soul',
         difficulty: 'Medium',
-        tags: ['1980s', 'soul', 'british', 'songs'],
+        tags: ['1980s', 'soul', 'british', 'songs', 'dance groups', 'soul ii soul', 'r&b'],
         dailyEligible: true
     },
 
@@ -1009,10 +1010,10 @@ const questions = [
         id: 'music_0657',
         category: 'Music',
         question: 'Which artist recorded Killer?',
-        answers: ['Adamski', 'Seal', 'Massive Attack', 'Soul II Soul'],
+        answers: ['Adamski', 'The KLF', 'Massive Attack', 'Soul II Soul'],
         correctAnswer: 'Adamski',
         difficulty: 'Medium',
-        tags: ['1990s', 'dance', 'british', 'songs'],
+        tags: ['1990s', 'dance', 'british', 'songs', 'djs', 'adamski', 'seal', 'collaborations'],
         dailyEligible: true
     },
 
@@ -1023,7 +1024,7 @@ const questions = [
         answers: ['Seal', 'Adamski', 'George Michael', 'Terence Trent D\'Arby'],
         correctAnswer: 'Seal',
         difficulty: 'Medium',
-        tags: ['1990s', 'pop', 'seal', 'songs'],
+        tags: ['1990s', 'pop', 'seal', 'songs', 'british', 'singers'],
         dailyEligible: true
     },
 
@@ -1034,7 +1035,7 @@ const questions = [
         answers: ['Massive Attack', 'Portishead', 'Soul II Soul', 'Morcheeba'],
         correctAnswer: 'Massive Attack',
         difficulty: 'Medium',
-        tags: ['1990s', 'trip hop', 'massive attack', 'songs'],
+        tags: ['1990s', 'trip hop', 'massive attack', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -1045,7 +1046,7 @@ const questions = [
         answers: ['Massive Attack', 'Portishead', 'Morcheeba', 'Tricky'],
         correctAnswer: 'Portishead',
         difficulty: 'Medium',
-        tags: ['1990s', 'trip hop', 'portishead', 'songs'],
+        tags: ['1990s', 'trip hop', 'portishead', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -1056,7 +1057,7 @@ const questions = [
         answers: ['Portishead', 'Morcheeba', 'Massive Attack', 'Tricky'],
         correctAnswer: 'Morcheeba',
         difficulty: 'Hard',
-        tags: ['1990s', 'trip hop', 'songs'],
+        tags: ['1990s', 'trip hop', 'songs', 'british', 'bands', 'morcheeba'],
         dailyEligible: true
     },
 
@@ -1067,7 +1068,7 @@ const questions = [
         answers: ['Portishead', 'Massive Attack', 'Morcheeba', 'Tricky'],
         correctAnswer: 'Portishead',
         difficulty: 'Medium',
-        tags: ['1990s', 'trip hop', 'portishead', 'songs'],
+        tags: ['1990s', 'trip hop', 'portishead', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -1078,7 +1079,7 @@ const questions = [
         answers: ['Pulp', 'Blur', 'Suede', 'Supergrass'],
         correctAnswer: 'Pulp',
         difficulty: 'Medium',
-        tags: ['1990s', 'britpop', 'pulp', 'songs'],
+        tags: ['1990s', 'britpop', 'pulp', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -1089,7 +1090,7 @@ const questions = [
         answers: ['Pulp', 'Blur', 'Suede', 'Supergrass'],
         correctAnswer: 'Blur',
         difficulty: 'Medium',
-        tags: ['1990s', 'britpop', 'blur', 'songs'],
+        tags: ['1990s', 'britpop', 'blur', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -1100,7 +1101,7 @@ const questions = [
         answers: ['Blur', 'Suede', 'Pulp', 'Supergrass'],
         correctAnswer: 'Suede',
         difficulty: 'Medium',
-        tags: ['1990s', 'britpop', 'suede', 'songs'],
+        tags: ['1990s', 'britpop', 'suede', 'songs', 'british', 'bands'],
         dailyEligible: true
     },
 
@@ -1111,7 +1112,7 @@ const questions = [
         answers: ['Suede', 'Supergrass', 'Blur', 'Pulp'],
         correctAnswer: 'Supergrass',
         difficulty: 'Medium',
-        tags: ['1990s', 'britpop', 'supergrass', 'songs'],
+        tags: ['1990s', 'britpop', 'supergrass', 'songs', 'british', 'bands'],
         dailyEligible: true
     }
 
