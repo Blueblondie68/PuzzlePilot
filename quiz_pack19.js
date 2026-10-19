@@ -1,470 +1,810 @@
 // quiz_pack19.js
-// PuzzlePilot Big Quiz
-// Pack 19 - 41 questions
-// Corrected after full duplicate review
+// PuzzlePilot Big Quiz - Mixed Question Pack 19
+// Original 41 IDs preserved; corrected duplicates, fuller tags and 28 new questions.
+// No additional Music or Television questions.
 
 const questions = [
 
-    // =========================================================
-    // MUSIC - 10
-    // =========================================================
+    // ======================================================
+    // MUSIC
+    // ======================================================
 
     {
-        id: 'music_0147',
-        category: 'Music',
-        question: 'Which band had a 1982 hit with Come On Eileen?',
-        answers: ['Dexys Midnight Runners', 'Madness', 'The Specials', 'The Jam'],
-        correctAnswer: 'Dexys Midnight Runners',
-        difficulty: 'Easy',
-        tags: ['1980s', 'british', 'bands'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0148',
-        category: 'Music',
-        question: 'Which singer had a 1984 hit with Love Resurrection?',
-        answers: ['Alison Moyet', 'Kim Wilde', 'Hazel O\'Connor', 'Toyah Willcox'],
-        correctAnswer: 'Alison Moyet',
-        difficulty: 'Medium',
-        tags: ['1980s', 'british', 'female artists'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0149',
-        category: 'Music',
-        question: 'Who was the lead singer of The Police?',
-        answers: ['Sting', 'Andy Summers', 'Stewart Copeland', 'Joe Strummer'],
-        correctAnswer: 'Sting',
-        difficulty: 'Easy',
-        tags: ['1970s', '1980s', 'bands'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0150',
-        category: 'Music',
-        question: 'Which singer had a 1984 hit with Self Control?',
-        answers: ['Laura Branigan', 'Pat Benatar', 'Belinda Carlisle', 'Kim Carnes'],
-        correctAnswer: 'Laura Branigan',
-        difficulty: 'Medium',
-        tags: ['1980s', 'female artists', 'songs'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0151',
-        category: 'Music',
-        question: 'Which group recorded the disco hit YMCA?',
-        answers: ['Village People', 'Boney M.', 'Chic', 'Earth, Wind & Fire'],
-        correctAnswer: 'Village People',
-        difficulty: 'Easy',
-        tags: ['1970s', 'disco', 'groups'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0152',
-        category: 'Music',
-        question: 'Which singer had a 1984 hit with Wouldn\'t It Be Good?',
-        answers: ['Nik Kershaw', 'Howard Jones', 'Paul Young', 'Limahl'],
-        correctAnswer: 'Nik Kershaw',
-        difficulty: 'Medium',
-        tags: ['1980s', 'british', 'male artists'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0153',
-        category: 'Music',
-        question: 'Which singer had a 1981 hit with It\'s a Mystery?',
-        answers: ['Toyah Willcox', 'Kim Wilde', 'Hazel O\'Connor', 'Siouxsie Sioux'],
-        correctAnswer: 'Toyah Willcox',
-        difficulty: 'Medium',
-        tags: ['1980s', 'british', 'female artists'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0154',
-        category: 'Music',
-        question: 'What was Freddie Mercury’s birth name?',
-        answers: ['Farrokh Bulsara', 'Frederick Bulsara', 'Farhad Mercury', 'Freddie Farrokh'],
-        correctAnswer: 'Farrokh Bulsara',
-        difficulty: 'Medium',
-        tags: ['queen', 'music', 'artists'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0155',
-        category: 'Music',
-        question: 'Which British girl group had hits with Push the Button and About You Now?',
-        answers: ['Sugababes', 'Girls Aloud', 'All Saints', 'Atomic Kitten'],
-        correctAnswer: 'Sugababes',
-        difficulty: 'Easy',
-        tags: ['2000s', 'british', 'groups'],
-        dailyEligible: true
-    },
-    {
-        id: 'music_0156',
-        category: 'Music',
-        question: 'Which singer released the 1981 hit Bette Davis Eyes?',
-        answers: ['Kim Carnes', 'Pat Benatar', 'Bonnie Tyler', 'Stevie Nicks'],
-        correctAnswer: 'Kim Carnes',
-        difficulty: 'Medium',
-        tags: ['1980s', 'female artists', 'songs'],
+        id: "music_0147",
+        category: "Music",
+        question: "Which band had a 1982 hit with Come On Eileen?",
+        answers: ["Dexys Midnight Runners", "Madness", "The Specials", "The Jam"],
+        correctAnswer: "Dexys Midnight Runners",
+        difficulty: "Easy",
+        tags: ["1980s", "british", "bands", "songs", "new wave", "dexys midnight runners"],
         dailyEligible: true
     },
 
-    // =========================================================
-    // TV - 8
-    // =========================================================
-
     {
-        id: 'tv_0141',
-        category: 'TV',
-        question: 'Which actor played Tom Chance in the sitcom Chance in a Million?',
-        answers: ['Simon Callow', 'Richard Briers', 'David Jason', 'Geoffrey Palmer'],
-        correctAnswer: 'Simon Callow',
-        difficulty: 'Medium',
-        tags: ['british', 'sitcom', 'actors'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0142',
-        category: 'TV',
-        question: 'What is the surname of Ross and Monica in Friends?',
-        answers: ['Geller', 'Bing', 'Green', 'Tribbiani'],
-        correctAnswer: 'Geller',
-        difficulty: 'Easy',
-        tags: ['friends', 'american', 'sitcom'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0143',
-        category: 'TV',
-        question: 'Which actress played Bren in the sitcom dinnerladies?',
-        answers: ['Victoria Wood', 'Julie Walters', 'Celia Imrie', 'Anne Reid'],
-        correctAnswer: 'Victoria Wood',
-        difficulty: 'Medium',
-        tags: ['british', 'sitcom', 'actors'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0144',
-        category: 'TV',
-        question: 'Which department store featured in Are You Being Served?',
-        answers: ['Grace Brothers', 'Harrods', 'Selfridges', 'Lewis & Co.'],
-        correctAnswer: 'Grace Brothers',
-        difficulty: 'Medium',
-        tags: ['british', 'sitcom', '1970s'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0145',
-        category: 'TV',
-        question: 'Which British sitcom stars Lee Mack as a character called Lee?',
-        answers: ['Not Going Out', 'Would I Lie to You?', 'The IT Crowd', 'Coupling'],
-        correctAnswer: 'Not Going Out',
-        difficulty: 'Easy',
-        tags: ['british', 'sitcom', 'comedy'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0146',
-        category: 'TV',
-        question: 'Which actress played Alice Tinker in The Vicar of Dibley?',
-        answers: ['Emma Chambers', 'Dawn French', 'Liz Smith', 'Pauline McLynn'],
-        correctAnswer: 'Emma Chambers',
-        difficulty: 'Medium',
-        tags: ['british', 'sitcom', 'actors'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0147',
-        category: 'TV',
-        question: 'In which fictional English county is Midsomer Murders set?',
-        answers: ['Midsomer', 'Kemble', 'Barsetshire', 'Wessex'],
-        correctAnswer: 'Midsomer',
-        difficulty: 'Medium',
-        tags: ['british', 'crime', 'tv'],
-        dailyEligible: true
-    },
-    {
-        id: 'tv_0148',
-        category: 'TV',
-        question: 'Which actor played Arthur Daley in Minder?',
-        answers: ['George Cole', 'Dennis Waterman', 'David Jason', 'Bob Hoskins'],
-        correctAnswer: 'George Cole',
-        difficulty: 'Medium',
-        tags: ['british', '1980s', 'actors'],
+        id: "music_0148",
+        category: "Music",
+        question: "Which singer had a 1984 hit with Love Resurrection?",
+        answers: ["Alison Moyet", "Kim Wilde", "Hazel O'Connor", "Toyah Willcox"],
+        correctAnswer: "Alison Moyet",
+        difficulty: "Medium",
+        tags: ["1980s", "british", "singers", "songs", "pop", "alison moyet"],
         dailyEligible: true
     },
 
-    // =========================================================
-    // FILM - 8
-    // =========================================================
-
     {
-        id: 'film_0115',
-        category: 'Film',
-        question: 'Which actor played teacher John Keating in Dead Poets Society?',
-        answers: ['Robin Williams', 'Tom Hanks', 'Dustin Hoffman', 'Richard Dreyfuss'],
-        correctAnswer: 'Robin Williams',
-        difficulty: 'Medium',
-        tags: ['1980s', 'actors', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0116',
-        category: 'Film',
-        question: 'Which actress played the mermaid Madison in the 1984 film Splash?',
-        answers: ['Daryl Hannah', 'Kim Basinger', 'Kathleen Turner', 'Meg Ryan'],
-        correctAnswer: 'Daryl Hannah',
-        difficulty: 'Medium',
-        tags: ['1980s', 'actors', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0117',
-        category: 'Film',
-        question: 'Which actress played novelist Joan Wilder in Romancing the Stone?',
-        answers: ['Kathleen Turner', 'Daryl Hannah', 'Michelle Pfeiffer', 'Debra Winger'],
-        correctAnswer: 'Kathleen Turner',
-        difficulty: 'Medium',
-        tags: ['1980s', 'actors', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0118',
-        category: 'Film',
-        question: 'Which actor played Eliot Ness in the 1987 film The Untouchables?',
-        answers: ['Kevin Costner', 'Sean Connery', 'Andy Garcia', 'Robert De Niro'],
-        correctAnswer: 'Kevin Costner',
-        difficulty: 'Medium',
-        tags: ['1980s', 'actors', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0119',
-        category: 'Film',
-        question: 'Which actress played Alex Forrest in the 1987 film Fatal Attraction?',
-        answers: ['Glenn Close', 'Sigourney Weaver', 'Jessica Lange', 'Meryl Streep'],
-        correctAnswer: 'Glenn Close',
-        difficulty: 'Medium',
-        tags: ['1980s', 'actors', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0120',
-        category: 'Film',
-        question: 'Which actor played FBI agent Johnny Utah in the 1991 film Point Break?',
-        answers: ['Keanu Reeves', 'Patrick Swayze', 'Val Kilmer', 'Christian Slater'],
-        correctAnswer: 'Keanu Reeves',
-        difficulty: 'Medium',
-        tags: ['1990s', 'actors', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0121',
-        category: 'Film',
-        question: 'Which actor played Gordon Gekko in the 1987 film Wall Street?',
-        answers: ['Michael Douglas', 'Charlie Sheen', 'Tom Berenger', 'William Hurt'],
-        correctAnswer: 'Michael Douglas',
-        difficulty: 'Medium',
-        tags: ['1980s', 'actors', 'film'],
-        dailyEligible: true
-    },
-    {
-        id: 'film_0122',
-        category: 'Film',
-        question: 'Which musical film features the song Summer Nights?',
-        answers: ['Grease', 'Saturday Night Fever', 'Footloose', 'Fame'],
-        correctAnswer: 'Grease',
-        difficulty: 'Easy',
-        tags: ['1970s', 'musicals', 'film'],
+        id: "music_0149",
+        category: "Music",
+        question: "Who was the lead singer of The Police?",
+        answers: ["Sting", "Andy Summers", "Stewart Copeland", "Joe Strummer"],
+        correctAnswer: "Sting",
+        difficulty: "Easy",
+        tags: ["1970s", "1980s", "british", "bands", "lead singers", "the police", "sting"],
         dailyEligible: true
     },
 
-    // =========================================================
-    // GENERAL KNOWLEDGE - 4
-    // =========================================================
-
     {
-        id: 'general_0055',
-        category: 'General Knowledge',
-        question: 'How many cards are there in a standard deck, excluding jokers?',
-        answers: ['52', '54', '48', '50'],
-        correctAnswer: '52',
-        difficulty: 'Easy',
-        tags: ['general knowledge', 'cards'],
-        dailyEligible: true
-    },
-    {
-        id: 'general_0056',
-        category: 'General Knowledge',
-        question: 'What do the letters WWW stand for in a website address?',
-        answers: ['World Wide Web', 'World Web Window', 'Wide World Web', 'Web World Wide'],
-        correctAnswer: 'World Wide Web',
-        difficulty: 'Easy',
-        tags: ['technology', 'general knowledge'],
-        dailyEligible: true
-    },
-    {
-        id: 'general_0057',
-        category: 'General Knowledge',
-        question: 'How many keys does a standard modern piano have?',
-        answers: ['88', '76', '92', '84'],
-        correctAnswer: '88',
-        difficulty: 'Medium',
-        tags: ['music', 'general knowledge'],
-        dailyEligible: true
-    },
-    {
-        id: 'general_0058',
-        category: 'General Knowledge',
-        question: 'How many semitones are there in a standard musical octave?',
-        answers: ['12', '8', '10', '14'],
-        correctAnswer: '12',
-        difficulty: 'Medium',
-        tags: ['music', 'general knowledge'],
+        id: "music_0150",
+        category: "Music",
+        question: "Which singer had a 1984 hit with Self Control?",
+        answers: ["Laura Branigan", "Pat Benatar", "Belinda Carlisle", "Kim Carnes"],
+        correctAnswer: "Laura Branigan",
+        difficulty: "Medium",
+        tags: ["1980s", "american", "singers", "songs", "pop", "laura branigan"],
         dailyEligible: true
     },
 
-    // =========================================================
-    // HISTORY - 2
-    // =========================================================
-
     {
-        id: 'history_0052',
-        category: 'History',
-        question: 'Who was British Prime Minister when the Second World War began in 1939?',
-        answers: ['Neville Chamberlain', 'Winston Churchill', 'Clement Attlee', 'Stanley Baldwin'],
-        correctAnswer: 'Neville Chamberlain',
-        difficulty: 'Medium',
-        tags: ['british', '20th century', 'politics'],
-        dailyEligible: true
-    },
-    {
-        id: 'history_0053',
-        category: 'History',
-        question: 'Which British monarch reigned immediately before Queen Victoria?',
-        answers: ['William IV', 'George IV', 'George III', 'Edward VII'],
-        correctAnswer: 'William IV',
-        difficulty: 'Medium',
-        tags: ['british', 'monarchy', '19th century'],
+        id: "music_0151",
+        category: "Music",
+        question: "Which group recorded the disco hit YMCA?",
+        answers: ["Village People", "Boney M.", "Chic", "Earth, Wind & Fire"],
+        correctAnswer: "Village People",
+        difficulty: "Easy",
+        tags: ["1970s", "american", "groups", "songs", "disco", "village people"],
         dailyEligible: true
     },
 
-    // =========================================================
-    // GEOGRAPHY - 3
-    // =========================================================
-
     {
-        id: 'geography_0054',
-        category: 'Geography',
-        question: 'The Giant’s Causeway is located in which part of the United Kingdom?',
-        answers: ['Northern Ireland', 'Scotland', 'Wales', 'England'],
-        correctAnswer: 'Northern Ireland',
-        difficulty: 'Easy',
-        tags: ['british', 'landmarks', 'geography'],
-        dailyEligible: true
-    },
-    {
-        id: 'geography_0055',
-        category: 'Geography',
-        question: 'Lake Geneva lies on the border of Switzerland and which other country?',
-        answers: ['France', 'Italy', 'Germany', 'Austria'],
-        correctAnswer: 'France',
-        difficulty: 'Medium',
-        tags: ['europe', 'lakes'],
-        dailyEligible: true
-    },
-    {
-        id: 'geography_0056',
-        category: 'Geography',
-        question: 'Which English city is famous for its Roman-built baths?',
-        answers: ['Bath', 'York', 'Chester', 'Lincoln'],
-        correctAnswer: 'Bath',
-        difficulty: 'Easy',
-        tags: ['british', 'cities', 'england'],
+        id: "music_0152",
+        category: "Music",
+        question: "Which singer had a 1984 hit with Wouldn't It Be Good?",
+        answers: ["Nik Kershaw", "Howard Jones", "Paul Young", "Limahl"],
+        correctAnswer: "Nik Kershaw",
+        difficulty: "Medium",
+        tags: ["1980s", "british", "singers", "songs", "pop", "nik kershaw"],
         dailyEligible: true
     },
 
-    // =========================================================
-    // SCIENCE & NATURE - 2
-    // =========================================================
-
     {
-        id: 'science_0050',
-        category: 'Science & Nature',
-        question: 'Which chemical element has the symbol Au?',
-        answers: ['Gold', 'Silver', 'Copper', 'Aluminium'],
-        correctAnswer: 'Gold',
-        difficulty: 'Easy',
-        tags: ['chemistry', 'elements'],
-        dailyEligible: true
-    },
-    {
-        id: 'science_0051',
-        category: 'Science & Nature',
-        question: 'Which chemical element has the symbol Fe?',
-        answers: ['Iron', 'Fluorine', 'Francium', 'Fermium'],
-        correctAnswer: 'Iron',
-        difficulty: 'Easy',
-        tags: ['chemistry', 'elements'],
+        id: "music_0153",
+        category: "Music",
+        question: "Which singer had a hit with \"It's a Mystery\"?",
+        answers: ["Toyah Willcox", "Kim Wilde", "Hazel O'Connor", "Siouxsie Sioux"],
+        correctAnswer: "Toyah Willcox",
+        difficulty: "Medium",
+        tags: ["1980s", "british", "singers", "songs", "pop", "toyah"],
         dailyEligible: true
     },
 
-    // =========================================================
-    // FOOD & DRINK - 1
-    // =========================================================
-
     {
-        id: 'food_0033',
-        category: 'Food & Drink',
-        question: 'Which dairy ingredient forms the base of traditional tzatziki?',
-        answers: ['Yoghurt', 'Cream', 'Soft cheese', 'Buttermilk'],
-        correctAnswer: 'Yoghurt',
-        difficulty: 'Medium',
-        tags: ['food', 'greek'],
+        id: "music_0154",
+        category: "Music",
+        question: "What was Freddie Mercury's birth name?",
+        answers: ["Farrokh Bulsara", "Frederick Bulsara", "Farhad Mercury", "Freddie Farrokh"],
+        correctAnswer: "Farrokh Bulsara",
+        difficulty: "Medium",
+        tags: ["british", "singers", "queen", "freddie mercury", "biography"],
         dailyEligible: true
     },
 
-    // =========================================================
-    // SPORT - 1
-    // =========================================================
-
     {
-        id: 'sport_0033',
-        category: 'Sport',
-        question: 'On which surface is the Wimbledon tennis tournament played?',
-        answers: ['Grass', 'Clay', 'Hard court', 'Carpet'],
-        correctAnswer: 'Grass',
-        difficulty: 'Easy',
-        tags: ['tennis', 'sport'],
+        id: "music_0155",
+        category: "Music",
+        question: "Which British girl group had hits with Push the Button and About You Now?",
+        answers: ["Sugababes", "Girls Aloud", "All Saints", "Atomic Kitten"],
+        correctAnswer: "Sugababes",
+        difficulty: "Easy",
+        tags: ["2000s", "british", "girl groups", "songs", "pop", "sugababes"],
         dailyEligible: true
     },
 
-    // =========================================================
-    // LITERATURE - 2
-    // =========================================================
-
     {
-        id: 'literature_0032',
-        category: 'Literature',
-        question: 'Who wrote the novel I Capture the Castle?',
-        answers: ['Dodie Smith', 'Daphne du Maurier', 'Elizabeth Bowen', 'Nancy Mitford'],
-        correctAnswer: 'Dodie Smith',
-        difficulty: 'Medium',
-        tags: ['british', 'novels', 'authors'],
+        id: "music_0156",
+        category: "Music",
+        question: "Which singer released the 1981 hit Bette Davis Eyes?",
+        answers: ["Kim Carnes", "Pat Benatar", "Bonnie Tyler", "Stevie Nicks"],
+        correctAnswer: "Kim Carnes",
+        difficulty: "Medium",
+        tags: ["1980s", "american", "singers", "songs", "pop", "kim carnes"],
         dailyEligible: true
     },
+
+    // ======================================================
+    // TELEVISION
+    // ======================================================
+
     {
-        id: 'literature_0033',
-        category: 'Literature',
-        question: 'Who wrote the novel A Kestrel for a Knave?',
-        answers: ['Barry Hines', 'Alan Sillitoe', 'Stan Barstow', 'Keith Waterhouse'],
-        correctAnswer: 'Barry Hines',
-        difficulty: 'Medium',
-        tags: ['british', 'novels', 'authors'],
+        id: "tv_0141",
+        category: "TV",
+        question: "Which actor played Tom Chance in the sitcom Chance in a Million?",
+        answers: ["Simon Callow", "Richard Briers", "David Jason", "Geoffrey Palmer"],
+        correctAnswer: "Simon Callow",
+        difficulty: "Medium",
+        tags: ["british", "comedy", "1980s", "actors", "chance in a million"],
+        dailyEligible: true
+    },
+
+    {
+        id: "tv_0142",
+        category: "TV",
+        question: "What is the surname of Ross and Monica in Friends?",
+        answers: ["Geller", "Bing", "Green", "Tribbiani"],
+        correctAnswer: "Geller",
+        difficulty: "Easy",
+        tags: ["american", "comedy", "1990s", "friends", "characters"],
+        dailyEligible: true
+    },
+
+    {
+        id: "tv_0143",
+        category: "TV",
+        question: "Which actress played Bren in the sitcom dinnerladies?",
+        answers: ["Victoria Wood", "Julie Walters", "Celia Imrie", "Anne Reid"],
+        correctAnswer: "Victoria Wood",
+        difficulty: "Medium",
+        tags: ["british", "comedy", "1990s", "actors", "dinnerladies"],
+        dailyEligible: true
+    },
+
+    {
+        id: "tv_0144",
+        category: "TV",
+        question: "Which department store featured in Are You Being Served?",
+        answers: ["Grace Brothers", "Harrods", "Selfridges", "Lewis & Co."],
+        correctAnswer: "Grace Brothers",
+        difficulty: "Medium",
+        tags: ["british", "comedy", "1970s", "are you being served"],
+        dailyEligible: true
+    },
+
+    {
+        id: "tv_0145",
+        category: "TV",
+        question: "Which British sitcom stars Lee Mack as a character called Lee?",
+        answers: ["Not Going Out", "Would I Lie to You?", "The IT Crowd", "Coupling"],
+        correctAnswer: "Not Going Out",
+        difficulty: "Easy",
+        tags: ["british", "comedy", "2000s", "not going out"],
+        dailyEligible: true
+    },
+
+    {
+        id: "tv_0146",
+        category: "TV",
+        question: "Which actress played Alice Tinker in The Vicar of Dibley?",
+        answers: ["Emma Chambers", "Dawn French", "Liz Smith", "Pauline McLynn"],
+        correctAnswer: "Emma Chambers",
+        difficulty: "Medium",
+        tags: ["british", "comedy", "1990s", "actors", "the vicar of dibley"],
+        dailyEligible: true
+    },
+
+    {
+        id: "tv_0147",
+        category: "TV",
+        question: "What is the name of the fictional county where Midsomer Murders is set?",
+        answers: ["Midsomer", "Kemble", "Barsetshire", "Wessex"],
+        correctAnswer: "Midsomer",
+        difficulty: "Medium",
+        tags: ["british", "crime", "drama", "1990s", "midsomer murders"],
+        dailyEligible: true
+    },
+
+    {
+        id: "tv_0148",
+        category: "TV",
+        question: "Which actor played Arthur Daley in Minder?",
+        answers: ["George Cole", "Dennis Waterman", "David Jason", "Bob Hoskins"],
+        correctAnswer: "George Cole",
+        difficulty: "Medium",
+        tags: ["british", "crime", "comedy drama", "1970s", "actors", "minder"],
+        dailyEligible: true
+    },
+
+    // ======================================================
+    // FILM
+    // ======================================================
+
+    {
+        id: "film_0115",
+        category: "Film",
+        question: "Which film stars Robert De Niro as boxer Jake LaMotta?",
+        answers: ["Raging Bull", "The Deer Hunter", "Rocky", "The Fighter"],
+        correctAnswer: "Raging Bull",
+        difficulty: "Medium",
+        tags: ["1980s", "american", "actors", "biographical film", "raging bull"],
+        dailyEligible: true
+    },
+
+    {
+        id: "film_0116",
+        category: "Film",
+        question: "Which actress played the mermaid Madison in the 1984 film Splash?",
+        answers: ["Daryl Hannah", "Kim Basinger", "Kathleen Turner", "Meg Ryan"],
+        correctAnswer: "Daryl Hannah",
+        difficulty: "Medium",
+        tags: ["1980s", "american", "actors", "romantic comedy", "splash"],
+        dailyEligible: true
+    },
+
+    {
+        id: "film_0117",
+        category: "Film",
+        question: "Which actress played novelist Joan Wilder in Romancing the Stone?",
+        answers: ["Kathleen Turner", "Daryl Hannah", "Michelle Pfeiffer", "Debra Winger"],
+        correctAnswer: "Kathleen Turner",
+        difficulty: "Medium",
+        tags: ["1980s", "american", "actors", "adventure", "romancing the stone"],
+        dailyEligible: true
+    },
+
+    {
+        id: "film_0118",
+        category: "Film",
+        question: "Which actor played Eliot Ness in the 1987 film The Untouchables?",
+        answers: ["Kevin Costner", "Sean Connery", "Andy Garcia", "Robert De Niro"],
+        correctAnswer: "Kevin Costner",
+        difficulty: "Medium",
+        tags: ["1980s", "american", "actors", "crime", "the untouchables"],
+        dailyEligible: true
+    },
+
+    {
+        id: "film_0119",
+        category: "Film",
+        question: "Which actress played Alex Forrest in the 1987 film Fatal Attraction?",
+        answers: ["Glenn Close", "Sigourney Weaver", "Jessica Lange", "Meryl Streep"],
+        correctAnswer: "Glenn Close",
+        difficulty: "Medium",
+        tags: ["1980s", "american", "actors", "thriller", "fatal attraction"],
+        dailyEligible: true
+    },
+
+    {
+        id: "film_0120",
+        category: "Film",
+        question: "Which actor played FBI agent Johnny Utah in the 1991 film Point Break?",
+        answers: ["Keanu Reeves", "Patrick Swayze", "Val Kilmer", "Christian Slater"],
+        correctAnswer: "Keanu Reeves",
+        difficulty: "Medium",
+        tags: ["1990s", "american", "actors", "action", "point break"],
+        dailyEligible: true
+    },
+
+    {
+        id: "film_0121",
+        category: "Film",
+        question: "Which actor played Gordon Gekko in the 1987 film Wall Street?",
+        answers: ["Michael Douglas", "Charlie Sheen", "Tom Berenger", "William Hurt"],
+        correctAnswer: "Michael Douglas",
+        difficulty: "Medium",
+        tags: ["1980s", "american", "actors", "drama", "wall street"],
+        dailyEligible: true
+    },
+
+    {
+        id: "film_0122",
+        category: "Film",
+        question: "Which musical film features the song \"Cell Block Tango\"?",
+        answers: ["Chicago", "Grease", "Cabaret", "Moulin Rouge!"],
+        correctAnswer: "Chicago",
+        difficulty: "Easy",
+        tags: ["2000s", "american", "musical films", "songs", "chicago"],
+        dailyEligible: true
+    },
+
+    {
+        id: "film_0194",
+        category: "Film",
+        question: "Which actress played Sally Bowles in the film Cabaret?",
+        answers: ["Liza Minnelli", "Julie Andrews", "Barbra Streisand", "Jane Fonda"],
+        correctAnswer: "Liza Minnelli",
+        difficulty: "Medium",
+        tags: ["1970s", "american", "actors", "musical films", "cabaret"],
+        dailyEligible: true
+    },
+
+    {
+        id: "film_0195",
+        category: "Film",
+        question: "Which director made the French romantic comedy Amélie?",
+        answers: ["Jean-Pierre Jeunet", "Luc Besson", "François Ozon", "Michel Gondry"],
+        correctAnswer: "Jean-Pierre Jeunet",
+        difficulty: "Medium",
+        tags: ["2000s", "french", "directors", "romantic comedy", "amelie"],
+        dailyEligible: true
+    },
+
+    // ======================================================
+    // GENERAL KNOWLEDGE
+    // ======================================================
+
+    {
+        id: "general_0055",
+        category: "General Knowledge",
+        question: "How many cards are there in a standard deck, excluding jokers?",
+        answers: ["52", "54", "48", "50"],
+        correctAnswer: "52",
+        difficulty: "Easy",
+        tags: ["cards", "games", "numbers"],
+        dailyEligible: true
+    },
+
+    {
+        id: "general_0056",
+        category: "General Knowledge",
+        question: "What do the letters WWW stand for in a website address?",
+        answers: ["World Wide Web", "World Web Window", "Wide World Web", "Web World Wide"],
+        correctAnswer: "World Wide Web",
+        difficulty: "Easy",
+        tags: ["internet", "abbreviations", "technology"],
+        dailyEligible: true
+    },
+
+    {
+        id: "general_0057",
+        category: "General Knowledge",
+        question: "How many keys does a standard modern piano have?",
+        answers: ["88", "76", "92", "84"],
+        correctAnswer: "88",
+        difficulty: "Medium",
+        tags: ["musical instruments", "piano", "numbers"],
+        dailyEligible: true
+    },
+
+    {
+        id: "general_0058",
+        category: "General Knowledge",
+        question: "How many semitones are there in a standard musical octave?",
+        answers: ["12", "8", "10", "14"],
+        correctAnswer: "12",
+        difficulty: "Medium",
+        tags: ["music theory", "numbers", "terminology"],
+        dailyEligible: true
+    },
+
+    {
+        id: "general_0115",
+        category: "General Knowledge",
+        question: "Which traditional Chinese game uses tiles often decorated with bamboo, characters and circles?",
+        answers: ["Mahjong", "Dominoes", "Go", "Shogi"],
+        correctAnswer: "Mahjong",
+        difficulty: "Medium",
+        tags: ["chinese", "board games", "traditional games"],
+        dailyEligible: true
+    },
+
+    {
+        id: "general_0116",
+        category: "General Knowledge",
+        question: "Which portable device is used to count the steps a person takes?",
+        answers: ["Pedometer", "Altimeter", "Chronometer", "Hygrometer"],
+        correctAnswer: "Pedometer",
+        difficulty: "Medium",
+        tags: ["fitness", "instruments", "measurements"],
+        dailyEligible: true
+    },
+
+    {
+        id: "general_0117",
+        category: "General Knowledge",
+        question: "What is the term for someone who collects or studies postage stamps?",
+        answers: ["Philatelist", "Numismatist", "Genealogist", "Cartographer"],
+        correctAnswer: "Philatelist",
+        difficulty: "Medium",
+        tags: ["collecting", "postage stamps", "terminology"],
+        dailyEligible: true
+    },
+
+    // ======================================================
+    // HISTORY
+    // ======================================================
+
+    {
+        id: "history_0052",
+        category: "History",
+        question: "Who was British Prime Minister when the Second World War began in 1939?",
+        answers: ["Neville Chamberlain", "Winston Churchill", "Clement Attlee", "Stanley Baldwin"],
+        correctAnswer: "Neville Chamberlain",
+        difficulty: "Medium",
+        tags: ["british", "20th century", "prime ministers", "second world war"],
+        dailyEligible: true
+    },
+
+    {
+        id: "history_0053",
+        category: "History",
+        question: "Which British monarch reigned immediately before Queen Victoria?",
+        answers: ["William IV", "George IV", "George III", "Edward VII"],
+        correctAnswer: "William IV",
+        difficulty: "Medium",
+        tags: ["british", "19th century", "monarchy"],
+        dailyEligible: true
+    },
+
+    {
+        id: "history_0147",
+        category: "History",
+        question: "Which British aviator was the first woman to fly solo from Britain to Australia?",
+        answers: ["Amy Johnson", "Amelia Earhart", "Beryl Markham", "Jacqueline Auriol"],
+        correctAnswer: "Amy Johnson",
+        difficulty: "Medium",
+        tags: ["british", "aviation", "20th century", "women in history"],
+        dailyEligible: true
+    },
+
+    {
+        id: "history_0148",
+        category: "History",
+        question: "Which Haitian revolutionary leader proclaimed independence in 1804 and became Emperor Jacques I?",
+        answers: ["Jean-Jacques Dessalines", "Toussaint Louverture", "Henri Christophe", "Alexandre Pétion"],
+        correctAnswer: "Jean-Jacques Dessalines",
+        difficulty: "Medium",
+        tags: ["haiti", "19th century", "independence"],
+        dailyEligible: true
+    },
+
+    {
+        id: "history_0149",
+        category: "History",
+        question: "Who became Ireland’s first female president?",
+        answers: ["Mary Robinson", "Mary McAleese", "Constance Markievicz", "Máire Geoghegan-Quinn"],
+        correctAnswer: "Mary Robinson",
+        difficulty: "Medium",
+        tags: ["ireland", "20th century", "women in history", "politics"],
+        dailyEligible: true
+    },
+
+    {
+        id: "history_0150",
+        category: "History",
+        question: "Which Chinese dynasty built most of the sections of the Great Wall that survive today?",
+        answers: ["Ming dynasty", "Han dynasty", "Tang dynasty", "Qing dynasty"],
+        correctAnswer: "Ming dynasty",
+        difficulty: "Medium",
+        tags: ["china", "dynasties", "architecture"],
+        dailyEligible: true
+    },
+
+    {
+        id: "history_0151",
+        category: "History",
+        question: "Which African country gained independence from Britain under Kwame Nkrumah?",
+        answers: ["Ghana", "Kenya", "Nigeria", "Uganda"],
+        correctAnswer: "Ghana",
+        difficulty: "Medium",
+        tags: ["africa", "ghana", "20th century", "independence"],
+        dailyEligible: true
+    },
+
+    // ======================================================
+    // GEOGRAPHY
+    // ======================================================
+
+    {
+        id: "geography_0054",
+        category: "Geography",
+        question: "The Giant's Causeway is located in which part of the United Kingdom?",
+        answers: ["Northern Ireland", "Scotland", "Wales", "England"],
+        correctAnswer: "Northern Ireland",
+        difficulty: "Easy",
+        tags: ["british", "northern ireland", "natural landmarks", "giants causeway"],
+        dailyEligible: true
+    },
+
+    {
+        id: "geography_0055",
+        category: "Geography",
+        question: "Lake Geneva lies on the border of Switzerland and which other country?",
+        answers: ["France", "Italy", "Germany", "Austria"],
+        correctAnswer: "France",
+        difficulty: "Medium",
+        tags: ["europe", "switzerland", "france", "lakes"],
+        dailyEligible: true
+    },
+
+    {
+        id: "geography_0056",
+        category: "Geography",
+        question: "Which English city is famous for its Roman-built baths?",
+        answers: ["Bath", "York", "Chester", "Lincoln"],
+        correctAnswer: "Bath",
+        difficulty: "Easy",
+        tags: ["british", "england", "cities", "roman history", "bath"],
+        dailyEligible: true
+    },
+
+    {
+        id: "geography_0114",
+        category: "Geography",
+        question: "Which Spanish city is home to the Alhambra palace complex?",
+        answers: ["Granada", "Seville", "Córdoba", "Toledo"],
+        correctAnswer: "Granada",
+        difficulty: "Medium",
+        tags: ["europe", "spain", "cities", "landmarks"],
+        dailyEligible: true
+    },
+
+    {
+        id: "geography_0115",
+        category: "Geography",
+        question: "Which African country has Kigali as its capital?",
+        answers: ["Rwanda", "Burundi", "Uganda", "Malawi"],
+        correctAnswer: "Rwanda",
+        difficulty: "Medium",
+        tags: ["africa", "rwanda", "capitals"],
+        dailyEligible: true
+    },
+
+    {
+        id: "geography_0116",
+        category: "Geography",
+        question: "Which sea lies between Australia and New Zealand?",
+        answers: ["Tasman Sea", "Coral Sea", "Arafura Sea", "Timor Sea"],
+        correctAnswer: "Tasman Sea",
+        difficulty: "Medium",
+        tags: ["oceania", "australia", "new zealand", "seas"],
+        dailyEligible: true
+    },
+
+    // ======================================================
+    // SCIENCE & NATURE
+    // ======================================================
+
+    {
+        id: "science_0050",
+        category: "Science & Nature",
+        question: "Which chemical element has the symbol Au?",
+        answers: ["Gold", "Silver", "Copper", "Aluminium"],
+        correctAnswer: "Gold",
+        difficulty: "Easy",
+        tags: ["chemistry", "elements", "symbols", "gold"],
+        dailyEligible: true
+    },
+
+    {
+        id: "science_0051",
+        category: "Science & Nature",
+        question: "Which chemical element has the symbol Fe?",
+        answers: ["Iron", "Fluorine", "Francium", "Fermium"],
+        correctAnswer: "Iron",
+        difficulty: "Easy",
+        tags: ["chemistry", "elements", "symbols", "iron"],
+        dailyEligible: true
+    },
+
+    {
+        id: "science_0112",
+        category: "Science & Nature",
+        question: "Which scientist first proposed the theory of continental drift?",
+        answers: ["Alfred Wegener", "Charles Lyell", "James Hutton", "Louis Agassiz"],
+        correctAnswer: "Alfred Wegener",
+        difficulty: "Medium",
+        tags: ["earth science", "geology", "scientists"],
+        dailyEligible: true
+    },
+
+    {
+        id: "science_0113",
+        category: "Science & Nature",
+        question: "Which particle in an atomic nucleus has no electric charge?",
+        answers: ["Neutron", "Proton", "Electron", "Positron"],
+        correctAnswer: "Neutron",
+        difficulty: "Medium",
+        tags: ["physics", "atoms", "particles"],
+        dailyEligible: true
+    },
+
+    {
+        id: "science_0114",
+        category: "Science & Nature",
+        question: "Which organ stores bile produced by the liver?",
+        answers: ["Gallbladder", "Pancreas", "Spleen", "Appendix"],
+        correctAnswer: "Gallbladder",
+        difficulty: "Medium",
+        tags: ["biology", "human body", "anatomy"],
+        dailyEligible: true
+    },
+
+    {
+        id: "science_0115",
+        category: "Science & Nature",
+        question: "Which layer of Earth’s atmosphere contains most of the ozone layer?",
+        answers: ["Stratosphere", "Troposphere", "Mesosphere", "Thermosphere"],
+        correctAnswer: "Stratosphere",
+        difficulty: "Medium",
+        tags: ["earth science", "atmosphere", "ozone"],
+        dailyEligible: true
+    },
+
+    // ======================================================
+    // FOOD & DRINK
+    // ======================================================
+
+    {
+        id: "food_0033",
+        category: "Food & Drink",
+        question: "Which dairy ingredient forms the base of traditional tzatziki?",
+        answers: ["Yoghurt", "Cream", "Soft cheese", "Buttermilk"],
+        correctAnswer: "Yoghurt",
+        difficulty: "Medium",
+        tags: ["greek", "dips", "yoghurt", "tzatziki"],
+        dailyEligible: true
+    },
+
+    {
+        id: "food_0125",
+        category: "Food & Drink",
+        question: "Which Italian dish is prepared by slowly braising cross-cut veal shanks?",
+        answers: ["Ossobuco", "Saltimbocca", "Vitello tonnato", "Scaloppine"],
+        correctAnswer: "Ossobuco",
+        difficulty: "Medium",
+        tags: ["italian", "veal", "traditional dishes"],
+        dailyEligible: true
+    },
+
+    {
+        id: "food_0126",
+        category: "Food & Drink",
+        question: "Which West African rice dish is cooked with tomatoes and peppers?",
+        answers: ["Jollof rice", "Pilau", "Risotto", "Biryani"],
+        correctAnswer: "Jollof rice",
+        difficulty: "Medium",
+        tags: ["west african", "rice", "traditional dishes"],
+        dailyEligible: true
+    },
+
+    {
+        id: "food_0127",
+        category: "Food & Drink",
+        question: "What is the Dutch name for small deep-fried balls filled with savoury meat ragout?",
+        answers: ["Bitterballen", "Poffertjes", "Stroopwafels", "Kroketbroodjes"],
+        correctAnswer: "Bitterballen",
+        difficulty: "Medium",
+        tags: ["dutch", "snacks", "traditional dishes"],
+        dailyEligible: true
+    },
+
+    {
+        id: "food_0128",
+        category: "Food & Drink",
+        question: "What are Japanese rice balls, often filled and wrapped in seaweed, called?",
+        answers: ["Onigiri", "Mochi", "Inari sushi", "Okonomiyaki"],
+        correctAnswer: "Onigiri",
+        difficulty: "Medium",
+        tags: ["japanese", "rice", "traditional dishes"],
+        dailyEligible: true
+    },
+
+    {
+        id: "food_0129",
+        category: "Food & Drink",
+        question: "Which Mexican dish consists of rolled tortillas with a filling and a chilli-based sauce?",
+        answers: ["Enchiladas", "Tostadas", "Quesadillas", "Tamales"],
+        correctAnswer: "Enchiladas",
+        difficulty: "Medium",
+        tags: ["mexican", "traditional dishes", "tortillas"],
+        dailyEligible: true
+    },
+
+    // ======================================================
+    // SPORT
+    // ======================================================
+
+    {
+        id: "sport_0033",
+        category: "Sport",
+        question: "On which surface is the Wimbledon tennis tournament played?",
+        answers: ["Grass", "Clay", "Hard court", "Carpet"],
+        correctAnswer: "Grass",
+        difficulty: "Easy",
+        tags: ["tennis", "wimbledon", "playing surfaces"],
+        dailyEligible: true
+    },
+
+    {
+        id: "sport_0088",
+        category: "Sport",
+        question: "Which racecourse hosts the Grand National steeplechase?",
+        answers: ["Aintree", "Cheltenham", "Ascot", "Epsom"],
+        correctAnswer: "Aintree",
+        difficulty: "Medium",
+        tags: ["horse racing", "british", "venues", "grand national"],
+        dailyEligible: true
+    },
+
+    {
+        id: "sport_0089",
+        category: "Sport",
+        question: "Which England cricketer took all ten wickets in a Test innings against Australia in 1956?",
+        answers: ["Jim Laker", "Fred Trueman", "Ian Botham", "Bob Willis"],
+        correctAnswer: "Jim Laker",
+        difficulty: "Medium",
+        tags: ["cricket", "british", "1950s", "records"],
+        dailyEligible: true
+    },
+
+    {
+        id: "sport_0090",
+        category: "Sport",
+        question: "Which rugby union position traditionally wears the number 9 shirt?",
+        answers: ["Scrum-half", "Fly-half", "Full-back", "Hooker"],
+        correctAnswer: "Scrum-half",
+        difficulty: "Medium",
+        tags: ["rugby union", "positions", "numbers"],
+        dailyEligible: true
+    },
+
+    // ======================================================
+    // LITERATURE
+    // ======================================================
+
+    {
+        id: "literature_0032",
+        category: "Literature",
+        question: "Who wrote the novel I Capture the Castle?",
+        answers: ["Dodie Smith", "Daphne du Maurier", "Elizabeth Bowen", "Nancy Mitford"],
+        correctAnswer: "Dodie Smith",
+        difficulty: "Medium",
+        tags: ["british", "authors", "novels", "dodie smith"],
+        dailyEligible: true
+    },
+
+    {
+        id: "literature_0033",
+        category: "Literature",
+        question: "Who wrote the novel A Kestrel for a Knave?",
+        answers: ["Barry Hines", "Alan Sillitoe", "Stan Barstow", "Keith Waterhouse"],
+        correctAnswer: "Barry Hines",
+        difficulty: "Medium",
+        tags: ["british", "authors", "novels", "barry hines"],
+        dailyEligible: true
+    },
+
+    {
+        id: "literature_0075",
+        category: "Literature",
+        question: "Which British novelist wrote The Go-Between?",
+        answers: ["L. P. Hartley", "E. M. Forster", "Graham Greene", "John Fowles"],
+        correctAnswer: "L. P. Hartley",
+        difficulty: "Medium",
+        tags: ["british", "authors", "novels"],
+        dailyEligible: true
+    },
+
+    {
+        id: "literature_0076",
+        category: "Literature",
+        question: "Which American author wrote the novel The Secret History?",
+        answers: ["Donna Tartt", "Gillian Flynn", "Patricia Highsmith", "Alice Sebold"],
+        correctAnswer: "Donna Tartt",
+        difficulty: "Medium",
+        tags: ["american", "authors", "novels"],
+        dailyEligible: true
+    },
+
+    {
+        id: "literature_0077",
+        category: "Literature",
+        question: "Which author wrote the novel The English Patient?",
+        answers: ["Michael Ondaatje", "Salman Rushdie", "Patrick O’Brian", "J. M. Coetzee"],
+        correctAnswer: "Michael Ondaatje",
+        difficulty: "Medium",
+        tags: ["canadian", "authors", "novels"],
         dailyEligible: true
     }
 
 ];
 
 module.exports = questions;
+
