@@ -1,707 +1,309 @@
 // quiz_pack38.js
-// 100 Music questions - 1980s
+// PuzzlePilot Bigggggg Quiz - Pack 38
+// Music: mainly 1980s songs, artists and bands
+// Tagging audit: original question IDs preserved; one incorrect song title corrected.
 
 const quizPack38 = [
-    {
-        id: "music_1867",
-        category: "Music",
-        question: "Which artist recorded Letters to a Friend?",
-        answers: ["Hue and Cry", "Voice of the Beehive", "I Start Counting", "Heaven 17"],
-        correctAnswer: "I Start Counting"
-    },
-    {
-        id: "music_1868",
-        category: "Music",
-        question: "Which artist recorded My Face?",
-        answers: ["The Teardrop Explodes", "Henry Badowski", "Pictures Like This", "The Sisters of Mercy"],
-        correctAnswer: "Henry Badowski"
-    },
-    {
-        id: "music_1869",
-        category: "Music",
-        question: "Which artist recorded Nothing But a Friend?",
-        answers: ["The Icicle Works", "Eternal Triangle", "The Sugarcubes", "The Chameleons"],
-        correctAnswer: "Eternal Triangle"
-    },
-    {
-        id: "music_1870",
-        category: "Music",
-        question: "Which artist recorded A Night's Vendetta?",
-        answers: ["White Door", "Level 42", "New Model Army", "Pictures Like This"],
-        correctAnswer: "Pictures Like This"
-    },
-    {
-        id: "music_1871",
-        category: "Music",
-        question: "Which artist recorded No Surprise?",
-        answers: ["VHF", "Talk Talk", "Furniture", "The Mission"],
-        correctAnswer: "VHF"
-    },
-    {
-        id: "music_1872",
-        category: "Music",
-        question: "Which artist recorded Life's Illusion?",
-        answers: ["The Cure", "Ice the Falling Rain", "The Waterboys", "Squeeze"],
-        correctAnswer: "Ice the Falling Rain"
-    },
-    {
-        id: "music_1873",
-        category: "Music",
-        question: "Which artist recorded Windows?",
-        answers: ["White Door", "Killing Joke", "The Lotus Eaters", "The Chameleons"],
-        correctAnswer: "White Door"
-    },
-    {
-        id: "music_1874",
-        category: "Music",
-        question: "Which artist recorded Blue City?",
-        answers: ["Almost Alone", "Red Guitars", "Public Image Ltd", "Secession"],
-        correctAnswer: "Almost Alone"
-    },
-    {
-        id: "music_1875",
-        category: "Music",
-        question: "Which artist recorded Touch Part 1?",
-        answers: ["The Psychedelic Furs", "Secession", "I Start Counting", "The Icicle Works"],
-        correctAnswer: "Secession"
-    },
-    {
-        id: "music_1876",
-        category: "Music",
-        question: "Which artist recorded Lucifer's Friend?",
-        answers: ["Vision", "The Mission", "The Chameleons", "Killing Joke"],
-        correctAnswer: "Vision"
-    },
-    {
-        id: "music_1877",
-        category: "Music",
-        question: "Which artist recorded All That Money Wants?",
-        answers: ["The Psychedelic Furs", "The Cure", "The Waterboys", "Talk Talk"],
-        correctAnswer: "The Psychedelic Furs"
-    },
-    {
-        id: "music_1878",
-        category: "Music",
-        question: "Which artist recorded Pearly-Dewdrops' Drops?",
-        answers: ["The Sugarcubes", "Cocteau Twins", "The March Violets", "The Chameleons"],
-        correctAnswer: "Cocteau Twins"
-    },
-    {
-        id: "music_1879",
-        category: "Music",
-        question: "Which artist recorded Spiritwalker?",
-        answers: ["New Model Army", "The Cult", "The Mission", "Killing Joke"],
-        correctAnswer: "The Cult"
-    },
-    {
-        id: "music_1880",
-        category: "Music",
-        question: "Which artist recorded Walk into the Sun?",
-        answers: ["The March Violets", "The Cult", "The Sisters of Mercy", "The Cure"],
-        correctAnswer: "The March Violets"
-    },
-    {
-        id: "music_1881",
-        category: "Music",
-        question: "Which artist recorded Marimba Jive?",
-        answers: ["Furniture", "Red Guitars", "The Wedding Present", "The Waterboys"],
-        correctAnswer: "Red Guitars"
-    },
-    {
-        id: "music_1882",
-        category: "Music",
-        question: "Which artist recorded The Price?",
-        answers: ["The Mission", "New Model Army", "The Cult", "Killing Joke"],
-        correctAnswer: "New Model Army"
-    },
-    {
-        id: "music_1883",
-        category: "Music",
-        question: "Which artist recorded Nellie the Elephant?",
-        answers: ["Toy Dolls", "The Wedding Present", "Squeeze", "The Teardrop Explodes"],
-        correctAnswer: "Toy Dolls"
-    },
-    {
-        id: "music_1884",
-        category: "Music",
-        question: "Which artist recorded Behind the Wheel?",
-        answers: ["Erasure", "Talk Talk", "Depeche Mode", "The Human League"],
-        correctAnswer: "Depeche Mode"
-    },
-    {
-        id: "music_1885",
-        category: "Music",
-        question: "Which artist recorded Coldsweat?",
-        answers: ["Cocteau Twins", "The Sugarcubes", "The Cure", "Siouxsie and the Banshees"],
-        correctAnswer: "The Sugarcubes"
-    },
-    {
-        id: "music_1886",
-        category: "Music",
-        question: "Which artist recorded Ship of Fools?",
-        answers: ["Depeche Mode", "Erasure", "Talk Talk", "Alison Moyet"],
-        correctAnswer: "Erasure"
-    },
-    {
-        id: "music_1887",
-        category: "Music",
-        question: "Which artist recorded Victim of Love?",
-        answers: ["Alison Moyet", "Erasure", "Depeche Mode", "Talk Talk"],
-        correctAnswer: "Erasure"
-    },
-    {
-        id: "music_1888",
-        category: "Music",
-        question: "Which artist recorded Sometimes?",
-        answers: ["Erasure", "Alison Moyet", "Depeche Mode", "Level 42"],
-        correctAnswer: "Erasure"
-    },
-    {
-        id: "music_1889",
-        category: "Music",
-        question: "Which artist recorded It Doesn't Have to Be?",
-        answers: ["Talk Talk", "Erasure", "The Human League", "Alison Moyet"],
-        correctAnswer: "Erasure"
-    },
-    {
-        id: "music_1890",
-        category: "Music",
-        question: "Which artist recorded Drama!?",
-        answers: ["Erasure", "Depeche Mode", "Level 42", "Heaven 17"],
-        correctAnswer: "Erasure"
-    },
-    {
-        id: "music_1891",
-        category: "Music",
-        question: "Which artist recorded Chorus?",
-        answers: ["Talk Talk", "Alison Moyet", "Erasure", "Depeche Mode"],
-        correctAnswer: "Erasure"
-    },
-    {
-        id: "music_1892",
-        category: "Music",
-        question: "Which artist recorded All Cried Out?",
-        answers: ["Alison Moyet", "Erasure", "Kirsty MacColl", "Voice of the Beehive"],
-        correctAnswer: "Alison Moyet"
-    },
-    {
-        id: "music_1893",
-        category: "Music",
-        question: "Which artist recorded Ordinary Girl?",
-        answers: ["Voice of the Beehive", "Kirsty MacColl", "Alison Moyet", "The Sugarcubes"],
-        correctAnswer: "Alison Moyet"
-    },
-    {
-        id: "music_1894",
-        category: "Music",
-        question: "Which artist recorded Talk to Me?",
-        answers: ["Erasure", "Alison Moyet", "Talk Talk", "Kirsty MacColl"],
-        correctAnswer: "Alison Moyet"
-    },
-    {
-        id: "music_1895",
-        category: "Music",
-        question: "Which artist recorded Love Is a Wonderful Colour?",
-        answers: ["The Icicle Works", "The Chameleons", "The Waterboys", "The Psychedelic Furs"],
-        correctAnswer: "The Icicle Works"
-    },
-    {
-        id: "music_1896",
-        category: "Music",
-        question: "Which artist recorded Birds Fly (Whisper to a Scream)?",
-        answers: ["The Waterboys", "The Icicle Works", "The Chameleons", "New Model Army"],
-        correctAnswer: "The Icicle Works"
-    },
-    {
-        id: "music_1897",
-        category: "Music",
-        question: "Which artist recorded Understanding Jane?",
-        answers: ["The Psychedelic Furs", "The Icicle Works", "The Waterboys", "The Mission"],
-        correctAnswer: "The Icicle Works"
-    },
-    {
-        id: "music_1898",
-        category: "Music",
-        question: "Which artist recorded Hollow Horse?",
-        answers: ["The Chameleons", "The Icicle Works", "The Waterboys", "The Cult"],
-        correctAnswer: "The Icicle Works"
-    },
-    {
-        id: "music_1899",
-        category: "Music",
-        question: "Which artist recorded Up the Down Escalator?",
-        answers: ["The Chameleons", "The Mission", "The Cult", "The Icicle Works"],
-        correctAnswer: "The Chameleons"
-    },
-    {
-        id: "music_1900",
-        category: "Music",
-        question: "Which artist recorded Don't Fall?",
-        answers: ["The Mission", "The Chameleons", "New Model Army", "The Sisters of Mercy"],
-        correctAnswer: "The Chameleons"
-    },
-    {
-        id: "music_1901",
-        category: "Music",
-        question: "Which artist recorded Swamp Thing?",
-        answers: ["The Cult", "The Chameleons", "The Mission", "Killing Joke"],
-        correctAnswer: "The Chameleons"
-    },
-    {
-        id: "music_1902",
-        category: "Music",
-        question: "Which artist recorded Tears?",
-        answers: ["The Chameleons", "The Waterboys", "The Mission", "The Cure"],
-        correctAnswer: "The Chameleons"
-    },
-    {
-        id: "music_1903",
-        category: "Music",
-        question: "Which artist recorded The Fan and the Bellows?",
-        answers: ["The Sisters of Mercy", "The Chameleons", "The Cult", "New Model Army"],
-        correctAnswer: "The Chameleons"
-    },
-    {
-        id: "music_1904",
-        category: "Music",
-        question: "Which artist recorded Beyond the Pale?",
-        answers: ["The Mission", "The Sisters of Mercy", "The Cult", "The Chameleons"],
-        correctAnswer: "The Mission"
-    },
-    {
-        id: "music_1905",
-        category: "Music",
-        question: "Which artist recorded Severina?",
-        answers: ["The Mission", "The Chameleons", "The Sisters of Mercy", "Killing Joke"],
-        correctAnswer: "The Mission"
-    },
-    {
-        id: "music_1906",
-        category: "Music",
-        question: "Which artist recorded Stay with Me?",
-        answers: ["The Cult", "The Mission", "The Sisters of Mercy", "New Model Army"],
-        correctAnswer: "The Mission"
-    },
-    {
-        id: "music_1907",
-        category: "Music",
-        question: "Which artist recorded Butterfly on a Wheel?",
-        answers: ["The Mission", "The Chameleons", "The Cult", "The Sisters of Mercy"],
-        correctAnswer: "The Mission"
-    },
-    {
-        id: "music_1908",
-        category: "Music",
-        question: "Which artist recorded Dominion?",
-        answers: ["The Mission", "The Sisters of Mercy", "Killing Joke", "The Cult"],
-        correctAnswer: "The Sisters of Mercy"
-    },
-    {
-        id: "music_1909",
-        category: "Music",
-        question: "Which artist recorded This Corrosion?",
-        answers: ["The Sisters of Mercy", "The Mission", "The Chameleons", "Killing Joke"],
-        correctAnswer: "The Sisters of Mercy"
-    },
-    {
-        id: "music_1910",
-        category: "Music",
-        question: "Which artist recorded No Time to Cry?",
-        answers: ["The Cult", "The Sisters of Mercy", "The Mission", "New Model Army"],
-        correctAnswer: "The Sisters of Mercy"
-    },
-    {
-        id: "music_1911",
-        category: "Music",
-        question: "Which artist recorded Adorations?",
-        answers: ["Killing Joke", "The Sisters of Mercy", "The Cult", "The Chameleons"],
-        correctAnswer: "Killing Joke"
-    },
-    {
-        id: "music_1912",
-        category: "Music",
-        question: "Which artist recorded Sanity?",
-        answers: ["The Mission", "Killing Joke", "New Model Army", "The Cult"],
-        correctAnswer: "Killing Joke"
-    },
-    {
-        id: "music_1913",
-        category: "Music",
-        question: "Which artist recorded America?",
-        answers: ["The Chameleons", "Killing Joke", "The Sisters of Mercy", "The Waterboys"],
-        correctAnswer: "Killing Joke"
-    },
-    {
-        id: "music_1914",
-        category: "Music",
-        question: "Which artist recorded Fisherman's Blues?",
-        answers: ["The Waterboys", "The Icicle Works", "The Chameleons", "The Mission"],
-        correctAnswer: "The Waterboys"
-    },
-    {
-        id: "music_1915",
-        category: "Music",
-        question: "Which artist recorded A Girl Called Johnny?",
-        answers: ["The Icicle Works", "The Waterboys", "The Psychedelic Furs", "The Chameleons"],
-        correctAnswer: "The Waterboys"
-    },
-    {
-        id: "music_1916",
-        category: "Music",
-        question: "Which artist recorded The Big Music?",
-        answers: ["The Chameleons", "The Waterboys", "The Icicle Works", "New Model Army"],
-        correctAnswer: "The Waterboys"
-    },
-    {
-        id: "music_1917",
-        category: "Music",
-        question: "Which artist recorded And a Bang on the Ear?",
-        answers: ["The Waterboys", "The Icicle Works", "The Mission", "The Chameleons"],
-        correctAnswer: "The Waterboys"
-    },
-    {
-        id: "music_1918",
-        category: "Music",
-        question: "Which artist recorded Beat of Love?",
-        answers: ["Alison Moyet", "Voice of the Beehive", "Kirsty MacColl", "The Sugarcubes"],
-        correctAnswer: "Voice of the Beehive"
-    },
-    {
-        id: "music_1919",
-        category: "Music",
-        question: "Which artist recorded Strength to Strength?",
-        answers: ["Hue and Cry", "Level 42", "Heaven 17", "Talk Talk"],
-        correctAnswer: "Hue and Cry"
-    },
-    {
-        id: "music_1920",
-        category: "Music",
-        question: "Which artist recorded Set Me Apart?",
-        answers: ["The Lotus Eaters", "The Icicle Works", "The Chameleons", "Furniture"],
-        correctAnswer: "The Lotus Eaters"
-    },
-    {
-        id: "music_1921",
-        category: "Music",
-        question: "Which artist recorded You Fill Me with Need?",
-        answers: ["Furniture", "The Lotus Eaters", "The Icicle Works", "The Psychedelic Furs"],
-        correctAnswer: "The Lotus Eaters"
-    },
-    {
-        id: "music_1922",
-        category: "Music",
-        question: "Which artist recorded Out of Nowhere?",
-        answers: ["The Icicle Works", "The Lotus Eaters", "The Waterboys", "The Chameleons"],
-        correctAnswer: "The Lotus Eaters"
-    },
-    {
-        id: "music_1923",
-        category: "Music",
-        question: "Which artist recorded Colours Fly Away?",
-        answers: ["The Teardrop Explodes", "The Psychedelic Furs", "The Icicle Works", "The Cure"],
-        correctAnswer: "The Teardrop Explodes"
-    },
-    {
-        id: "music_1924",
-        category: "Music",
-        question: "Which artist recorded Tiny Children?",
-        answers: ["The Waterboys", "The Teardrop Explodes", "The Chameleons", "The Cure"],
-        correctAnswer: "The Teardrop Explodes"
-    },
-    {
-        id: "music_1925",
-        category: "Music",
-        question: "Which artist recorded Rise?",
-        answers: ["Public Image Ltd", "Killing Joke", "The Cure", "The Cult"],
-        correctAnswer: "Public Image Ltd"
-    },
-    {
-        id: "music_1926",
-        category: "Music",
-        question: "Which artist recorded This Is Not a Love Song?",
-        answers: ["Killing Joke", "Public Image Ltd", "The Sisters of Mercy", "The Chameleons"],
-        correctAnswer: "Public Image Ltd"
-    },
-    {
-        id: "music_1927",
-        category: "Music",
-        question: "Which artist recorded Bad Life?",
-        answers: ["The Cult", "Public Image Ltd", "Killing Joke", "New Model Army"],
-        correctAnswer: "Public Image Ltd"
-    },
-    {
-        id: "music_1928",
-        category: "Music",
-        question: "Which artist recorded Seattle?",
-        answers: ["Public Image Ltd", "The Cure", "The Mission", "Killing Joke"],
-        correctAnswer: "Public Image Ltd"
-    },
-    {
-        id: "music_1929",
-        category: "Music",
-        question: "Which artist recorded Disappointed?",
-        answers: ["The Chameleons", "Public Image Ltd", "Killing Joke", "The Cult"],
-        correctAnswer: "Public Image Ltd"
-    },
-    {
-        id: "music_1930",
-        category: "Music",
-        question: "Which artist recorded Spellbound?",
-        answers: ["Siouxsie and the Banshees", "The Cure", "The Sisters of Mercy", "Cocteau Twins"],
-        correctAnswer: "Siouxsie and the Banshees"
-    },
-    {
-        id: "music_1931",
-        category: "Music",
-        question: "Which artist recorded Arabian Knights?",
-        answers: ["The Cure", "Siouxsie and the Banshees", "Cocteau Twins", "The Chameleons"],
-        correctAnswer: "Siouxsie and the Banshees"
-    },
-    {
-        id: "music_1932",
-        category: "Music",
-        question: "Which artist recorded Dear Prudence?",
-        answers: ["Siouxsie and the Banshees", "The Cure", "The Mission", "The Sisters of Mercy"],
-        correctAnswer: "Siouxsie and the Banshees"
-    },
-    {
-        id: "music_1933",
-        category: "Music",
-        question: "Which artist recorded Peek-a-Boo?",
-        answers: ["Cocteau Twins", "The Sugarcubes", "Siouxsie and the Banshees", "The Cure"],
-        correctAnswer: "Siouxsie and the Banshees"
-    },
-    {
-        id: "music_1934",
-        category: "Music",
-        question: "Which artist recorded Happy House?",
-        answers: ["The Cure", "Siouxsie and the Banshees", "The Chameleons", "Cocteau Twins"],
-        correctAnswer: "Siouxsie and the Banshees"
-    },
-    {
-        id: "music_1935",
-        category: "Music",
-        question: "Which artist recorded Primary?",
-        answers: ["The Cure", "Siouxsie and the Banshees", "The Chameleons", "The Psychedelic Furs"],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_1936",
-        category: "Music",
-        question: "Which artist recorded Charlotte Sometimes?",
-        answers: ["The Chameleons", "The Cure", "Siouxsie and the Banshees", "The Mission"],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_1937",
-        category: "Music",
-        question: "Which artist recorded The Caterpillar?",
-        answers: ["The Cure", "The Psychedelic Furs", "The Chameleons", "Cocteau Twins"],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_1938",
-        category: "Music",
-        question: "Which artist recorded In Between Days?",
-        answers: ["The Chameleons", "The Cure", "The Waterboys", "The Psychedelic Furs"],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_1939",
-        category: "Music",
-        question: "Which artist recorded Close to Me?",
-        answers: ["The Cure", "Talk Talk", "The Psychedelic Furs", "The Chameleons"],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_1940",
-        category: "Music",
-        question: "Which artist recorded Why Can't I Be You?",
-        answers: ["The Psychedelic Furs", "The Cure", "The Chameleons", "Siouxsie and the Banshees"],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_1941",
-        category: "Music",
-        question: "Which artist recorded Hot Hot Hot?",
-        answers: ["The Cure", "The Sugarcubes", "The Psychedelic Furs", "The Chameleons"],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_1942",
-        category: "Music",
-        question: "Which artist recorded Lullaby?",
-        answers: ["Siouxsie and the Banshees", "The Cure", "The Chameleons", "Cocteau Twins"],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_1943",
-        category: "Music",
-        question: "Which artist recorded A Forest?",
-        answers: ["The Cure", "The Chameleons", "The Mission", "The Sisters of Mercy"],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_1944",
-        category: "Music",
-        question: "Which artist recorded Today?",
-        answers: ["Talk Talk", "Level 42", "Heaven 17", "Depeche Mode"],
-        correctAnswer: "Talk Talk"
-    },
-    {
-        id: "music_1945",
-        category: "Music",
-        question: "Which artist recorded Life Is What You Make It?",
-        answers: ["Level 42", "Talk Talk", "Heaven 17", "Depeche Mode"],
-        correctAnswer: "Talk Talk"
-    },
-    {
-        id: "music_1946",
-        category: "Music",
-        question: "Which artist recorded Indian Summer?",
-        answers: ["The Dream Academy", "The Waterboys", "The Icicle Works", "The Psychedelic Furs"],
-        correctAnswer: "The Dream Academy"
-    },
-    {
-        id: "music_1947",
-        category: "Music",
-        question: "Which artist recorded Please Please Please Let Me Get What I Want?",
-        answers: ["The Waterboys", "The Dream Academy", "The Cure", "The Wedding Present"],
-        correctAnswer: "The Dream Academy"
-    },
-    {
-        id: "music_1948",
-        category: "Music",
-        question: "Which artist recorded She Gets Out the Scrapbook?",
-        answers: ["Furniture", "The Lotus Eaters", "Red Guitars", "The Wedding Present"],
-        correctAnswer: "Furniture"
-    },
-    {
-        id: "music_1949",
-        category: "Music",
-        question: "Which artist recorded Slow Motion?",
-        answers: ["The Lotus Eaters", "Furniture", "The Icicle Works", "Red Guitars"],
-        correctAnswer: "Furniture"
-    },
-    {
-        id: "music_1950",
-        category: "Music",
-        question: "Which artist recorded Love Is All?",
-        answers: ["The Icicle Works", "The Chameleons", "The Mission", "The Waterboys"],
-        correctAnswer: "The Chameleons"
-    },
-    {
-        id: "music_1951",
-        category: "Music",
-        question: "Which artist recorded Days?",
-        answers: ["Kirsty MacColl", "Alison Moyet", "Voice of the Beehive", "The Sugarcubes"],
-        correctAnswer: "Kirsty MacColl"
-    },
-    {
-        id: "music_1952",
-        category: "Music",
-        question: "Which artist recorded Free World?",
-        answers: ["Voice of the Beehive", "Kirsty MacColl", "Alison Moyet", "The Sugarcubes"],
-        correctAnswer: "Kirsty MacColl"
-    },
-    {
-        id: "music_1953",
-        category: "Music",
-        question: "Which artist recorded He's on the Beach?",
-        answers: ["Kirsty MacColl", "Voice of the Beehive", "Alison Moyet", "The Dream Academy"],
-        correctAnswer: "Kirsty MacColl"
-    },
-    {
-        id: "music_1954",
-        category: "Music",
-        question: "Which artist recorded Everyone Thinks He Looks Daft?",
-        answers: ["The Wedding Present", "The Housemartins", "The Waterboys", "The Lotus Eaters"],
-        correctAnswer: "The Wedding Present"
-    },
-    {
-        id: "music_1955",
-        category: "Music",
-        question: "Which artist recorded Another Nail in My Heart?",
-        answers: ["Squeeze", "Level 42", "Heaven 17", "Talk Talk"],
-        correctAnswer: "Squeeze"
-    },
-    {
-        id: "music_1956",
-        category: "Music",
-        question: "Which artist recorded Hourglass?",
-        answers: ["Level 42", "Squeeze", "Talk Talk", "Heaven 17"],
-        correctAnswer: "Squeeze"
-    },
-    {
-        id: "music_1957",
-        category: "Music",
-        question: "Which artist recorded Is That Love?",
-        answers: ["Squeeze", "Level 42", "The Human League", "Talk Talk"],
-        correctAnswer: "Squeeze"
-    },
-    {
-        id: "music_1958",
-        category: "Music",
-        question: "Which artist recorded The Sun Goes Down?",
-        answers: ["Talk Talk", "Level 42", "Heaven 17", "Squeeze"],
-        correctAnswer: "Level 42"
-    },
-    {
-        id: "music_1959",
-        category: "Music",
-        question: "Which artist recorded Hot Water?",
-        answers: ["Level 42", "Heaven 17", "Talk Talk", "Squeeze"],
-        correctAnswer: "Level 42"
-    },
-    {
-        id: "music_1960",
-        category: "Music",
-        question: "Which artist recorded Leaving Me Now?",
-        answers: ["Talk Talk", "Level 42", "Heaven 17", "Squeeze"],
-        correctAnswer: "Level 42"
-    },
-    {
-        id: "music_1961",
-        category: "Music",
-        question: "Which artist recorded Running in the Family?",
-        answers: ["Level 42", "Heaven 17", "Squeeze", "Talk Talk"],
-        correctAnswer: "Level 42"
-    },
-    {
-        id: "music_1962",
-        category: "Music",
-        question: "Which artist recorded To Be with You Again?",
-        answers: ["Heaven 17", "Talk Talk", "Level 42", "Squeeze"],
-        correctAnswer: "Level 42"
-    },
-    {
-        id: "music_1963",
-        category: "Music",
-        question: "Which artist recorded Children Say?",
-        answers: ["Squeeze", "Level 42", "Talk Talk", "Heaven 17"],
-        correctAnswer: "Level 42"
-    },
-    {
-        id: "music_1964",
-        category: "Music",
-        question: "Which artist recorded Heaven in My Hands?",
-        answers: ["Talk Talk", "Heaven 17", "Level 42", "Squeeze"],
-        correctAnswer: "Level 42"
-    },
-    {
-        id: "music_1965",
-        category: "Music",
-        question: "Which artist recorded Tracie?",
-        answers: ["Level 42", "Squeeze", "Talk Talk", "Heaven 17"],
-        correctAnswer: "Level 42"
-    },
-    {
-        id: "music_1966",
-        category: "Music",
-        question: "Which artist recorded Contenders?",
-        answers: ["Talk Talk", "Heaven 17", "Level 42", "The Human League"],
-        correctAnswer: "Heaven 17"
-    }
+    { id: "music_1867", category: "Music", question: "Which artist recorded Letters to a Friend?",
+      answers: ["Hue and Cry", "Voice of the Beehive", "I Start Counting", "Heaven 17"], correctAnswer: "I Start Counting", difficulty: "Hard",
+      tags: ["1980s", "synth-pop", "i start counting", "songs", "british", "duos", "electronic", "david baker", "simon leonard"], dailyEligible: true },
+    { id: "music_1868", category: "Music", question: "Which artist recorded My Face?",
+      answers: ["The Teardrop Explodes", "Henry Badowski", "Pictures Like This", "The Sisters of Mercy"], correctAnswer: "Henry Badowski", difficulty: "Hard",
+      tags: ["1980s", "new wave", "henry badowski", "songs", "british", "singers", "post-punk", "multi-instrumentalists"], dailyEligible: true },
+    { id: "music_1869", category: "Music", question: "Which artist recorded Nothing But a Friend?",
+      answers: ["The Icicle Works", "Eternal Triangle", "The Sugarcubes", "The Chameleons"], correctAnswer: "Eternal Triangle", difficulty: "Hard",
+      tags: ["1980s", "synth-pop", "eternal triangle", "songs", "british", "bands", "new wave", "situation two records", "1984 singles"], dailyEligible: true },
+    { id: "music_1870", category: "Music", question: "Which artist recorded A Night's Vendetta?",
+      answers: ["White Door", "Level 42", "New Model Army", "Pictures Like This"], correctAnswer: "Pictures Like This", difficulty: "Hard",
+      tags: ["1980s", "new wave", "pictures like this", "songs", "british", "bands", "post-punk", "1983 singles"], dailyEligible: true },
+    { id: "music_1871", category: "Music", question: "Which artist recorded No Surprise?",
+      answers: ["VHF", "Talk Talk", "Furniture", "The Mission"], correctAnswer: "VHF", difficulty: "Hard",
+      tags: ["1980s", "new wave", "vhf", "songs", "british", "bands", "synth-pop"], dailyEligible: true },
+    { id: "music_1872", category: "Music", question: "Which artist recorded Life's Illusion?",
+      answers: ["The Cure", "Ice the Falling Rain", "The Waterboys", "Squeeze"], correctAnswer: "Ice the Falling Rain", difficulty: "Hard",
+      tags: ["1980s", "new wave", "ice the falling rain", "songs", "british", "bands", "post-punk"], dailyEligible: true },
+    { id: "music_1873", category: "Music", question: "Which artist recorded Windows?",
+      answers: ["White Door", "Killing Joke", "The Lotus Eaters", "The Chameleons"], correctAnswer: "White Door", difficulty: "Hard",
+      tags: ["1980s", "synth-pop", "white door", "songs", "british", "bands", "new wave"], dailyEligible: true },
+    { id: "music_1874", category: "Music", question: "Which artist recorded Blue City?",
+      answers: ["Almost Alone", "Red Guitars", "Public Image Ltd", "Secession"], correctAnswer: "Almost Alone", difficulty: "Hard",
+      tags: ["1980s", "new wave", "almost alone", "songs", "bands", "post-punk"], dailyEligible: true },
+    { id: "music_1875", category: "Music", question: "Which artist recorded Touch Part 1?",
+      answers: ["The Psychedelic Furs", "Secession", "I Start Counting", "The Icicle Works"], correctAnswer: "Secession", difficulty: "Hard",
+      tags: ["1980s", "synth-pop", "secession", "songs", "scottish", "bands", "new wave"], dailyEligible: true },
+    { id: "music_1876", category: "Music", question: "Which artist recorded Lucifer's Friend?",
+      answers: ["Vision", "The Mission", "The Chameleons", "Killing Joke"], correctAnswer: "Vision", difficulty: "Hard",
+      tags: ["1980s", "new wave", "vision", "songs", "british", "bands", "synth-pop"], dailyEligible: true },
+    { id: "music_1877", category: "Music", question: "Which artist recorded All That Money Wants?",
+      answers: ["The Psychedelic Furs", "The Cure", "The Waterboys", "Talk Talk"], correctAnswer: "The Psychedelic Furs", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the psychedelic furs", "songs", "british", "bands", "new wave", "richard butler"], dailyEligible: true },
+    { id: "music_1878", category: "Music", question: "Which artist recorded Pearly-Dewdrops' Drops?",
+      answers: ["The Sugarcubes", "Cocteau Twins", "The March Violets", "The Chameleons"], correctAnswer: "Cocteau Twins", difficulty: "Medium",
+      tags: ["1980s", "dream pop", "cocteau twins", "songs", "scottish", "bands", "ethereal wave", "elizabeth fraser", "robin guthrie", "1984 singles"], dailyEligible: true },
+    { id: "music_1879", category: "Music", question: "Which artist recorded Spiritwalker?",
+      answers: ["New Model Army", "The Cult", "The Mission", "Killing Joke"], correctAnswer: "The Cult", difficulty: "Medium",
+      tags: ["1980s", "gothic rock", "the cult", "songs", "british", "bands", "post-punk", "ian astbury", "billy duffy"], dailyEligible: true },
+    { id: "music_1880", category: "Music", question: "Which artist recorded Walk into the Sun?",
+      answers: ["The March Violets", "The Cult", "The Sisters of Mercy", "The Cure"], correctAnswer: "The March Violets", difficulty: "Hard",
+      tags: ["1980s", "gothic rock", "the march violets", "songs", "british", "bands", "post-punk", "leeds"], dailyEligible: true },
+    { id: "music_1881", category: "Music", question: "Which artist recorded Marimba Jive?",
+      answers: ["Furniture", "Red Guitars", "The Wedding Present", "The Waterboys"], correctAnswer: "Red Guitars", difficulty: "Hard",
+      tags: ["1980s", "indie rock", "red guitars", "songs", "british", "bands", "post-punk", "hull"], dailyEligible: true },
+    { id: "music_1882", category: "Music", question: "Which artist recorded The Price?",
+      answers: ["The Mission", "New Model Army", "The Cult", "Killing Joke"], correctAnswer: "New Model Army", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "new model army", "songs", "british", "bands", "alternative rock", "justin sullivan", "bradford"], dailyEligible: true },
+    { id: "music_1883", category: "Music", question: "Which artist recorded Nellie the Elephant?",
+      answers: ["Toy Dolls", "The Wedding Present", "Squeeze", "The Teardrop Explodes"], correctAnswer: "Toy Dolls", difficulty: "Easy",
+      tags: ["1980s", "punk rock", "toy dolls", "songs", "british", "bands", "novelty songs", "sunderland", "covers", "children’s songs"], dailyEligible: true },
+    { id: "music_1884", category: "Music", question: "Which artist recorded Behind the Wheel?",
+      answers: ["Erasure", "Talk Talk", "Depeche Mode", "The Human League"], correctAnswer: "Depeche Mode", difficulty: "Medium",
+      tags: ["1980s", "synth-pop", "depeche mode", "songs", "british", "bands", "new wave", "basildon", "dave gahan", "1987 singles"], dailyEligible: true },
+    { id: "music_1885", category: "Music", question: "Which artist recorded Coldsweat?",
+      answers: ["Cocteau Twins", "The Sugarcubes", "The Cure", "Siouxsie and the Banshees"], correctAnswer: "The Sugarcubes", difficulty: "Medium",
+      tags: ["1980s", "alternative rock", "the sugarcubes", "songs", "icelandic", "bands", "post-punk", "björk"], dailyEligible: true },
+    { id: "music_1886", category: "Music", question: "Which artist recorded Ship of Fools?",
+      answers: ["Depeche Mode", "Erasure", "Talk Talk", "Alison Moyet"], correctAnswer: "Erasure", difficulty: "Easy",
+      tags: ["1980s", "synth-pop", "erasure", "songs", "british", "duos", "new wave", "andy bell", "vince clarke"], dailyEligible: true },
+    { id: "music_1887", category: "Music", question: "Which artist recorded Victim of Love?",
+      answers: ["Alison Moyet", "Erasure", "Depeche Mode", "Talk Talk"], correctAnswer: "Erasure", difficulty: "Medium",
+      tags: ["1980s", "synth-pop", "erasure", "songs", "british", "duos", "new wave", "andy bell", "vince clarke"], dailyEligible: true },
+    { id: "music_1888", category: "Music", question: "Which artist recorded Sometimes?",
+      answers: ["Erasure", "Alison Moyet", "Depeche Mode", "Level 42"], correctAnswer: "Erasure", difficulty: "Easy",
+      tags: ["1980s", "synth-pop", "erasure", "songs", "british", "duos", "new wave", "andy bell", "vince clarke"], dailyEligible: true },
+    { id: "music_1889", category: "Music", question: "Which artist recorded It Doesn't Have to Be?",
+      answers: ["Talk Talk", "Erasure", "The Human League", "Alison Moyet"], correctAnswer: "Erasure", difficulty: "Medium",
+      tags: ["1980s", "synth-pop", "erasure", "songs", "british", "duos", "new wave", "andy bell", "vince clarke"], dailyEligible: true },
+    { id: "music_1890", category: "Music", question: "Which artist recorded Drama!?",
+      answers: ["Erasure", "Depeche Mode", "Level 42", "Heaven 17"], correctAnswer: "Erasure", difficulty: "Medium",
+      tags: ["1980s", "synth-pop", "erasure", "songs", "british", "duos", "new wave", "andy bell", "vince clarke"], dailyEligible: true },
+    { id: "music_1891", category: "Music", question: "Which artist recorded Chorus?",
+      answers: ["Talk Talk", "Alison Moyet", "Erasure", "Depeche Mode"], correctAnswer: "Erasure", difficulty: "Medium",
+      tags: ["1990s", "synth-pop", "erasure", "songs", "british", "duos", "new wave", "andy bell", "vince clarke", "1991 singles"], dailyEligible: true },
+    { id: "music_1892", category: "Music", question: "Which artist recorded All Cried Out?",
+      answers: ["Alison Moyet", "Erasure", "Kirsty MacColl", "Voice of the Beehive"], correctAnswer: "Alison Moyet", difficulty: "Easy",
+      tags: ["1980s", "pop", "alison moyet", "songs", "british", "singers", "soul", "yazoo", "1984 singles"], dailyEligible: true },
+    { id: "music_1893", category: "Music", question: "Which artist recorded Ordinary Girl?",
+      answers: ["Voice of the Beehive", "Kirsty MacColl", "Alison Moyet", "The Sugarcubes"], correctAnswer: "Alison Moyet", difficulty: "Hard",
+      tags: ["1980s", "pop", "alison moyet", "songs", "british", "singers", "soul", "yazoo"], dailyEligible: true },
+    { id: "music_1894", category: "Music", question: "Which artist recorded Talk to Me?",
+      answers: ["Erasure", "Alison Moyet", "Talk Talk", "Kirsty MacColl"], correctAnswer: "Alison Moyet", difficulty: "Hard",
+      tags: ["1980s", "pop", "alison moyet", "songs", "british", "singers", "soul", "yazoo"], dailyEligible: true },
+    { id: "music_1895", category: "Music", question: "Which artist recorded Love Is a Wonderful Colour?",
+      answers: ["The Icicle Works", "The Chameleons", "The Waterboys", "The Psychedelic Furs"], correctAnswer: "The Icicle Works", difficulty: "Easy",
+      tags: ["1980s", "alternative rock", "the icicle works", "songs", "british", "bands", "new wave", "liverpool", "ian mcnabb"], dailyEligible: true },
+    { id: "music_1896", category: "Music", question: "Which artist recorded Birds Fly (Whisper to a Scream)?",
+      answers: ["The Waterboys", "The Icicle Works", "The Chameleons", "New Model Army"], correctAnswer: "The Icicle Works", difficulty: "Medium",
+      tags: ["1980s", "alternative rock", "the icicle works", "songs", "british", "bands", "new wave", "liverpool", "ian mcnabb"], dailyEligible: true },
+    { id: "music_1897", category: "Music", question: "Which artist recorded Understanding Jane?",
+      answers: ["The Psychedelic Furs", "The Icicle Works", "The Waterboys", "The Mission"], correctAnswer: "The Icicle Works", difficulty: "Medium",
+      tags: ["1980s", "alternative rock", "the icicle works", "songs", "british", "bands", "new wave", "liverpool", "ian mcnabb"], dailyEligible: true },
+    { id: "music_1898", category: "Music", question: "Which artist recorded Hollow Horse?",
+      answers: ["The Chameleons", "The Icicle Works", "The Waterboys", "The Cult"], correctAnswer: "The Icicle Works", difficulty: "Hard",
+      tags: ["1980s", "alternative rock", "the icicle works", "songs", "british", "bands", "new wave", "liverpool", "ian mcnabb"], dailyEligible: true },
+    { id: "music_1899", category: "Music", question: "Which artist recorded Up the Down Escalator?",
+      answers: ["The Chameleons", "The Mission", "The Cult", "The Icicle Works"], correctAnswer: "The Chameleons", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the chameleons", "songs", "british", "bands", "alternative rock", "manchester", "mark burgess"], dailyEligible: true },
+    { id: "music_1900", category: "Music", question: "Which artist recorded Don't Fall?",
+      answers: ["The Mission", "The Chameleons", "New Model Army", "The Sisters of Mercy"], correctAnswer: "The Chameleons", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the chameleons", "songs", "british", "bands", "alternative rock", "manchester", "mark burgess"], dailyEligible: true },
+    { id: "music_1901", category: "Music", question: "Which artist recorded Swamp Thing?",
+      answers: ["The Cult", "The Chameleons", "The Mission", "Killing Joke"], correctAnswer: "The Chameleons", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the chameleons", "songs", "british", "bands", "alternative rock", "manchester", "mark burgess"], dailyEligible: true },
+    { id: "music_1902", category: "Music", question: "Which artist recorded Tears?",
+      answers: ["The Chameleons", "The Waterboys", "The Mission", "The Cure"], correctAnswer: "The Chameleons", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the chameleons", "songs", "british", "bands", "alternative rock", "manchester", "mark burgess"], dailyEligible: true },
+    { id: "music_1903", category: "Music", question: "Which artist recorded The Fan and the Bellows?",
+      answers: ["The Sisters of Mercy", "The Chameleons", "The Cult", "New Model Army"], correctAnswer: "The Chameleons", difficulty: "Hard",
+      tags: ["1980s", "post-punk", "the chameleons", "songs", "british", "bands", "alternative rock", "manchester", "mark burgess"], dailyEligible: true },
+    { id: "music_1904", category: "Music", question: "Which artist recorded Beyond the Pale?",
+      answers: ["The Mission", "The Sisters of Mercy", "The Cult", "The Chameleons"], correctAnswer: "The Mission", difficulty: "Medium",
+      tags: ["1980s", "gothic rock", "the mission", "songs", "british", "bands", "alternative rock", "wayne hussey"], dailyEligible: true },
+    { id: "music_1905", category: "Music", question: "Which artist recorded Severina?",
+      answers: ["The Mission", "The Chameleons", "The Sisters of Mercy", "Killing Joke"], correctAnswer: "The Mission", difficulty: "Medium",
+      tags: ["1980s", "gothic rock", "the mission", "songs", "british", "bands", "alternative rock", "wayne hussey"], dailyEligible: true },
+    { id: "music_1906", category: "Music", question: "Which artist recorded Stay with Me?",
+      answers: ["The Cult", "The Mission", "The Sisters of Mercy", "New Model Army"], correctAnswer: "The Mission", difficulty: "Medium",
+      tags: ["1980s", "gothic rock", "the mission", "songs", "british", "bands", "alternative rock", "wayne hussey"], dailyEligible: true },
+    { id: "music_1907", category: "Music", question: "Which artist recorded Butterfly on a Wheel?",
+      answers: ["The Mission", "The Chameleons", "The Cult", "The Sisters of Mercy"], correctAnswer: "The Mission", difficulty: "Medium",
+      tags: ["1990s", "gothic rock", "the mission", "songs", "british", "bands", "alternative rock", "wayne hussey", "1990 singles"], dailyEligible: true },
+    { id: "music_1908", category: "Music", question: "Which artist recorded Dominion?",
+      answers: ["The Mission", "The Sisters of Mercy", "Killing Joke", "The Cult"], correctAnswer: "The Sisters of Mercy", difficulty: "Medium",
+      tags: ["1980s", "gothic rock", "the sisters of mercy", "songs", "british", "bands", "post-punk", "andrew eldritch", "leeds"], dailyEligible: true },
+    { id: "music_1909", category: "Music", question: "Which artist recorded This Corrosion?",
+      answers: ["The Sisters of Mercy", "The Mission", "The Chameleons", "Killing Joke"], correctAnswer: "The Sisters of Mercy", difficulty: "Easy",
+      tags: ["1980s", "gothic rock", "the sisters of mercy", "songs", "british", "bands", "post-punk", "andrew eldritch", "leeds"], dailyEligible: true },
+    { id: "music_1910", category: "Music", question: "Which artist recorded No Time to Cry?",
+      answers: ["The Cult", "The Sisters of Mercy", "The Mission", "New Model Army"], correctAnswer: "The Sisters of Mercy", difficulty: "Medium",
+      tags: ["1980s", "gothic rock", "the sisters of mercy", "songs", "british", "bands", "post-punk", "andrew eldritch", "leeds"], dailyEligible: true },
+    { id: "music_1911", category: "Music", question: "Which artist recorded Adorations?",
+      answers: ["Killing Joke", "The Sisters of Mercy", "The Cult", "The Chameleons"], correctAnswer: "Killing Joke", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "killing joke", "songs", "british", "bands", "industrial rock", "jaz coleman"], dailyEligible: true },
+    { id: "music_1912", category: "Music", question: "Which artist recorded Sanity?",
+      answers: ["The Mission", "Killing Joke", "New Model Army", "The Cult"], correctAnswer: "Killing Joke", difficulty: "Hard",
+      tags: ["1980s", "post-punk", "killing joke", "songs", "british", "bands", "industrial rock", "jaz coleman"], dailyEligible: true },
+    { id: "music_1913", category: "Music", question: "Which artist recorded America?",
+      answers: ["The Chameleons", "Killing Joke", "The Sisters of Mercy", "The Waterboys"], correctAnswer: "Killing Joke", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "killing joke", "songs", "british", "bands", "industrial rock", "jaz coleman"], dailyEligible: true },
+    { id: "music_1914", category: "Music", question: "Which artist recorded Fisherman's Blues?",
+      answers: ["The Waterboys", "The Icicle Works", "The Chameleons", "The Mission"], correctAnswer: "The Waterboys", difficulty: "Easy",
+      tags: ["1980s", "folk rock", "the waterboys", "songs", "british", "bands", "celtic rock", "mike scott", "1988 singles"], dailyEligible: true },
+    { id: "music_1915", category: "Music", question: "Which artist recorded A Girl Called Johnny?",
+      answers: ["The Icicle Works", "The Waterboys", "The Psychedelic Furs", "The Chameleons"], correctAnswer: "The Waterboys", difficulty: "Medium",
+      tags: ["1980s", "folk rock", "the waterboys", "songs", "british", "bands", "celtic rock", "mike scott"], dailyEligible: true },
+    { id: "music_1916", category: "Music", question: "Which artist recorded The Big Music?",
+      answers: ["The Chameleons", "The Waterboys", "The Icicle Works", "New Model Army"], correctAnswer: "The Waterboys", difficulty: "Hard",
+      tags: ["1980s", "folk rock", "the waterboys", "songs", "british", "bands", "celtic rock", "mike scott"], dailyEligible: true },
+    { id: "music_1917", category: "Music", question: "Which artist recorded And a Bang on the Ear?",
+      answers: ["The Waterboys", "The Icicle Works", "The Mission", "The Chameleons"], correctAnswer: "The Waterboys", difficulty: "Hard",
+      tags: ["1980s", "folk rock", "the waterboys", "songs", "british", "bands", "celtic rock", "mike scott"], dailyEligible: true },
+    { id: "music_1918", category: "Music", question: "Which artist recorded Beat of Love?",
+      answers: ["Alison Moyet", "Voice of the Beehive", "Kirsty MacColl", "The Sugarcubes"], correctAnswer: "Voice of the Beehive", difficulty: "Medium",
+      tags: ["1980s", "pop rock", "voice of the beehive", "songs", "british", "bands", "alternative rock", "tracey bryn", "melissa bryn"], dailyEligible: true },
+    { id: "music_1919", category: "Music", question: "Which artist recorded Strength to Strength?",
+      answers: ["Hue and Cry", "Level 42", "Heaven 17", "Talk Talk"], correctAnswer: "Hue and Cry", difficulty: "Hard",
+      tags: ["1980s", "sophisti-pop", "hue and cry", "songs", "scottish", "duos", "pop", "pat kane", "greg kane"], dailyEligible: true },
+    { id: "music_1920", category: "Music", question: "Which artist recorded Set Me Apart?",
+      answers: ["The Lotus Eaters", "The Icicle Works", "The Chameleons", "Furniture"], correctAnswer: "The Lotus Eaters", difficulty: "Hard",
+      tags: ["1980s", "new wave", "the lotus eaters", "songs", "british", "bands", "jangle pop", "liverpool", "peter coyle"], dailyEligible: true },
+    { id: "music_1921", category: "Music", question: "Which artist recorded You Fill Me with Need?",
+      answers: ["Furniture", "The Lotus Eaters", "The Icicle Works", "The Psychedelic Furs"], correctAnswer: "The Lotus Eaters", difficulty: "Hard",
+      tags: ["1980s", "new wave", "the lotus eaters", "songs", "british", "bands", "jangle pop", "liverpool", "peter coyle"], dailyEligible: true },
+    { id: "music_1922", category: "Music", question: "Which artist recorded Out of Nowhere?",
+      answers: ["The Icicle Works", "The Lotus Eaters", "The Waterboys", "The Chameleons"], correctAnswer: "The Lotus Eaters", difficulty: "Hard",
+      tags: ["1980s", "new wave", "the lotus eaters", "songs", "british", "bands", "jangle pop", "liverpool", "peter coyle"], dailyEligible: true },
+    { id: "music_1923", category: "Music", question: "Which artist recorded Colours Fly Away?",
+      answers: ["The Teardrop Explodes", "The Psychedelic Furs", "The Icicle Works", "The Cure"], correctAnswer: "The Teardrop Explodes", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the teardrop explodes", "songs", "british", "bands", "neo-psychedelia", "julian cope", "liverpool"], dailyEligible: true },
+    { id: "music_1924", category: "Music", question: "Which artist recorded Tiny Children?",
+      answers: ["The Waterboys", "The Teardrop Explodes", "The Chameleons", "The Cure"], correctAnswer: "The Teardrop Explodes", difficulty: "Hard",
+      tags: ["1980s", "post-punk", "the teardrop explodes", "songs", "british", "bands", "neo-psychedelia", "julian cope", "liverpool"], dailyEligible: true },
+    { id: "music_1925", category: "Music", question: "Which artist recorded Rise?",
+      answers: ["Public Image Ltd", "Killing Joke", "The Cure", "The Cult"], correctAnswer: "Public Image Ltd", difficulty: "Easy",
+      tags: ["1980s", "post-punk", "public image ltd", "songs", "british", "bands", "alternative rock", "john lydon"], dailyEligible: true },
+    { id: "music_1926", category: "Music", question: "Which artist recorded This Is Not a Love Song?",
+      answers: ["Killing Joke", "Public Image Ltd", "The Sisters of Mercy", "The Chameleons"], correctAnswer: "Public Image Ltd", difficulty: "Easy",
+      tags: ["1980s", "post-punk", "public image ltd", "songs", "british", "bands", "alternative rock", "john lydon"], dailyEligible: true },
+    { id: "music_1927", category: "Music", question: "Which artist recorded Bad Life?",
+      answers: ["The Cult", "Public Image Ltd", "Killing Joke", "New Model Army"], correctAnswer: "Public Image Ltd", difficulty: "Hard",
+      tags: ["1980s", "post-punk", "public image ltd", "songs", "british", "bands", "alternative rock", "john lydon"], dailyEligible: true },
+    { id: "music_1928", category: "Music", question: "Which artist recorded Seattle?",
+      answers: ["Public Image Ltd", "The Cure", "The Mission", "Killing Joke"], correctAnswer: "Public Image Ltd", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "public image ltd", "songs", "british", "bands", "alternative rock", "john lydon"], dailyEligible: true },
+    { id: "music_1929", category: "Music", question: "Which artist recorded Disappointed?",
+      answers: ["The Chameleons", "Public Image Ltd", "Killing Joke", "The Cult"], correctAnswer: "Public Image Ltd", difficulty: "Hard",
+      tags: ["1980s", "post-punk", "public image ltd", "songs", "british", "bands", "alternative rock", "john lydon", "1989 singles"], dailyEligible: true },
+    { id: "music_1930", category: "Music", question: "Which artist recorded Spellbound?",
+      answers: ["Siouxsie and the Banshees", "The Cure", "The Sisters of Mercy", "Cocteau Twins"], correctAnswer: "Siouxsie and the Banshees", difficulty: "Easy",
+      tags: ["1980s", "post-punk", "siouxsie and the banshees", "songs", "british", "bands", "gothic rock", "siouxsie sioux"], dailyEligible: true },
+    { id: "music_1931", category: "Music", question: "Which artist recorded Arabian Knights?",
+      answers: ["The Cure", "Siouxsie and the Banshees", "Cocteau Twins", "The Chameleons"], correctAnswer: "Siouxsie and the Banshees", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "siouxsie and the banshees", "songs", "british", "bands", "gothic rock", "siouxsie sioux"], dailyEligible: true },
+    { id: "music_1932", category: "Music", question: "Which artist recorded Dear Prudence?",
+      answers: ["Siouxsie and the Banshees", "The Cure", "The Mission", "The Sisters of Mercy"], correctAnswer: "Siouxsie and the Banshees", difficulty: "Easy",
+      tags: ["1980s", "post-punk", "siouxsie and the banshees", "songs", "british", "bands", "gothic rock", "siouxsie sioux", "covers", "the beatles"], dailyEligible: true },
+    { id: "music_1933", category: "Music", question: "Which artist recorded Peek-a-Boo?",
+      answers: ["Cocteau Twins", "The Sugarcubes", "Siouxsie and the Banshees", "The Cure"], correctAnswer: "Siouxsie and the Banshees", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "siouxsie and the banshees", "songs", "british", "bands", "gothic rock", "siouxsie sioux"], dailyEligible: true },
+    { id: "music_1934", category: "Music", question: "Which artist recorded Happy House?",
+      answers: ["The Cure", "Siouxsie and the Banshees", "The Chameleons", "Cocteau Twins"], correctAnswer: "Siouxsie and the Banshees", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "siouxsie and the banshees", "songs", "british", "bands", "gothic rock", "siouxsie sioux"], dailyEligible: true },
+    { id: "music_1935", category: "Music", question: "Which artist recorded Primary?",
+      answers: ["The Cure", "Siouxsie and the Banshees", "The Chameleons", "The Psychedelic Furs"], correctAnswer: "The Cure", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the cure", "songs", "british", "bands", "gothic rock", "robert smith"], dailyEligible: true },
+    { id: "music_1936", category: "Music", question: "Which artist recorded Charlotte Sometimes?",
+      answers: ["The Chameleons", "The Cure", "Siouxsie and the Banshees", "The Mission"], correctAnswer: "The Cure", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the cure", "songs", "british", "bands", "gothic rock", "robert smith"], dailyEligible: true },
+    { id: "music_1937", category: "Music", question: "Which artist recorded The Caterpillar?",
+      answers: ["The Cure", "The Psychedelic Furs", "The Chameleons", "Cocteau Twins"], correctAnswer: "The Cure", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the cure", "songs", "british", "bands", "gothic rock", "robert smith"], dailyEligible: true },
+    { id: "music_1938", category: "Music", question: "Which artist recorded In Between Days?",
+      answers: ["The Chameleons", "The Cure", "The Waterboys", "The Psychedelic Furs"], correctAnswer: "The Cure", difficulty: "Easy",
+      tags: ["1980s", "post-punk", "the cure", "songs", "british", "bands", "gothic rock", "robert smith", "1985 singles"], dailyEligible: true },
+    { id: "music_1939", category: "Music", question: "Which artist recorded Close to Me?",
+      answers: ["The Cure", "Talk Talk", "The Psychedelic Furs", "The Chameleons"], correctAnswer: "The Cure", difficulty: "Easy",
+      tags: ["1980s", "post-punk", "the cure", "songs", "british", "bands", "gothic rock", "robert smith"], dailyEligible: true },
+    { id: "music_1940", category: "Music", question: "Which artist recorded Why Can't I Be You?",
+      answers: ["The Psychedelic Furs", "The Cure", "The Chameleons", "Siouxsie and the Banshees"], correctAnswer: "The Cure", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the cure", "songs", "british", "bands", "gothic rock", "robert smith"], dailyEligible: true },
+    { id: "music_1941", category: "Music", question: "Which artist recorded Hot Hot Hot?",
+      answers: ["The Cure", "The Sugarcubes", "The Psychedelic Furs", "The Chameleons"], correctAnswer: "The Cure", difficulty: "Medium",
+      tags: ["1980s", "post-punk", "the cure", "songs", "british", "bands", "gothic rock", "robert smith"], dailyEligible: true },
+    { id: "music_1942", category: "Music", question: "Which artist recorded Lullaby?",
+      answers: ["Siouxsie and the Banshees", "The Cure", "The Chameleons", "Cocteau Twins"], correctAnswer: "The Cure", difficulty: "Easy",
+      tags: ["1980s", "post-punk", "the cure", "songs", "british", "bands", "gothic rock", "robert smith", "1989 singles"], dailyEligible: true },
+    { id: "music_1943", category: "Music", question: "Which artist recorded A Forest?",
+      answers: ["The Cure", "The Chameleons", "The Mission", "The Sisters of Mercy"], correctAnswer: "The Cure", difficulty: "Easy",
+      tags: ["1980s", "post-punk", "the cure", "songs", "british", "bands", "gothic rock", "robert smith"], dailyEligible: true },
+    { id: "music_1944", category: "Music", question: "Which artist recorded Today?",
+      answers: ["Talk Talk", "Level 42", "Heaven 17", "Depeche Mode"], correctAnswer: "Talk Talk", difficulty: "Medium",
+      tags: ["1980s", "sophisti-pop", "talk talk", "songs", "british", "bands", "new wave", "mark hollis"], dailyEligible: true },
+    { id: "music_1945", category: "Music", question: "Which artist recorded Life Is What You Make It?",
+      answers: ["Level 42", "Talk Talk", "Heaven 17", "Depeche Mode"], correctAnswer: "Talk Talk", difficulty: "Easy",
+      tags: ["1980s", "sophisti-pop", "talk talk", "songs", "british", "bands", "new wave", "mark hollis"], dailyEligible: true },
+    { id: "music_1946", category: "Music", question: "Which artist recorded Indian Summer?",
+      answers: ["The Dream Academy", "The Waterboys", "The Icicle Works", "The Psychedelic Furs"], correctAnswer: "The Dream Academy", difficulty: "Hard",
+      tags: ["1980s", "dream pop", "the dream academy", "songs", "british", "bands", "folk rock", "nick laird-clowes", "1980s albums"], dailyEligible: true },
+    { id: "music_1947", category: "Music", question: "Which artist recorded Please Please Please Let Me Get What I Want?",
+      answers: ["The Waterboys", "The Dream Academy", "The Cure", "The Wedding Present"], correctAnswer: "The Dream Academy", difficulty: "Medium",
+      tags: ["1980s", "dream pop", "the dream academy", "songs", "british", "bands", "folk rock", "nick laird-clowes", "covers", "the smiths"], dailyEligible: true },
+    { id: "music_1948", category: "Music", question: "Which artist recorded She Gets Out the Scrapbook?",
+      answers: ["Furniture", "The Lotus Eaters", "Red Guitars", "The Wedding Present"], correctAnswer: "Furniture", difficulty: "Hard",
+      tags: ["1980s", "new wave", "furniture", "songs", "british", "bands", "pop rock", "jim irvin"], dailyEligible: true },
+    { id: "music_1949", category: "Music", question: "Which artist recorded Slow Motion?",
+      answers: ["The Lotus Eaters", "Furniture", "The Icicle Works", "Red Guitars"], correctAnswer: "Furniture", difficulty: "Hard",
+      tags: ["1980s", "new wave", "furniture", "songs", "british", "bands", "pop rock", "jim irvin"], dailyEligible: true },
+    { id: "music_1950", category: "Music", question: "Which artist recorded Love Is?",
+      answers: ["The Icicle Works", "The Chameleons", "The Mission", "The Waterboys"], correctAnswer: "The Chameleons", difficulty: "Hard",
+      tags: ["1980s", "post-punk", "the chameleons", "songs", "british", "bands", "alternative rock", "manchester", "mark burgess", "1980s demos", "archival releases"], dailyEligible: true },
+    { id: "music_1951", category: "Music", question: "Which artist recorded Days?",
+      answers: ["Kirsty MacColl", "Alison Moyet", "Voice of the Beehive", "The Sugarcubes"], correctAnswer: "Kirsty MacColl", difficulty: "Easy",
+      tags: ["1980s", "pop rock", "kirsty maccoll", "songs", "british", "singers", "singer-songwriters", "covers", "the kinks"], dailyEligible: true },
+    { id: "music_1952", category: "Music", question: "Which artist recorded Free World?",
+      answers: ["Voice of the Beehive", "Kirsty MacColl", "Alison Moyet", "The Sugarcubes"], correctAnswer: "Kirsty MacColl", difficulty: "Medium",
+      tags: ["1980s", "pop rock", "kirsty maccoll", "songs", "british", "singers", "singer-songwriters"], dailyEligible: true },
+    { id: "music_1953", category: "Music", question: "Which artist recorded He's on the Beach?",
+      answers: ["Kirsty MacColl", "Voice of the Beehive", "Alison Moyet", "The Dream Academy"], correctAnswer: "Kirsty MacColl", difficulty: "Hard",
+      tags: ["1980s", "pop rock", "kirsty maccoll", "songs", "british", "singers", "singer-songwriters"], dailyEligible: true },
+    { id: "music_1954", category: "Music", question: "Which artist recorded Everyone Thinks He Looks Daft?",
+      answers: ["The Wedding Present", "The Housemartins", "The Waterboys", "The Lotus Eaters"], correctAnswer: "The Wedding Present", difficulty: "Hard",
+      tags: ["1980s", "indie rock", "the wedding present", "songs", "british", "bands", "alternative rock", "leeds", "david gedge"], dailyEligible: true },
+    { id: "music_1955", category: "Music", question: "Which artist recorded Another Nail in My Heart?",
+      answers: ["Squeeze", "Level 42", "Heaven 17", "Talk Talk"], correctAnswer: "Squeeze", difficulty: "Easy",
+      tags: ["1980s", "new wave", "squeeze", "songs", "british", "bands", "pop rock", "glenn tilbrook", "chris difford"], dailyEligible: true },
+    { id: "music_1956", category: "Music", question: "Which artist recorded Hourglass?",
+      answers: ["Level 42", "Squeeze", "Talk Talk", "Heaven 17"], correctAnswer: "Squeeze", difficulty: "Easy",
+      tags: ["1980s", "new wave", "squeeze", "songs", "british", "bands", "pop rock", "glenn tilbrook", "chris difford"], dailyEligible: true },
+    { id: "music_1957", category: "Music", question: "Which artist recorded Is That Love?",
+      answers: ["Squeeze", "Level 42", "The Human League", "Talk Talk"], correctAnswer: "Squeeze", difficulty: "Medium",
+      tags: ["1980s", "new wave", "squeeze", "songs", "british", "bands", "pop rock", "glenn tilbrook", "chris difford"], dailyEligible: true },
+    { id: "music_1958", category: "Music", question: "Which artist recorded The Sun Goes Down?",
+      answers: ["Talk Talk", "Level 42", "Heaven 17", "Squeeze"], correctAnswer: "Level 42", difficulty: "Easy",
+      tags: ["1980s", "jazz-funk", "level 42", "songs", "british", "bands", "pop rock", "mark king", "isle of wight", "1983 singles"], dailyEligible: true },
+    { id: "music_1959", category: "Music", question: "Which artist recorded Hot Water?",
+      answers: ["Level 42", "Heaven 17", "Talk Talk", "Squeeze"], correctAnswer: "Level 42", difficulty: "Easy",
+      tags: ["1980s", "jazz-funk", "level 42", "songs", "british", "bands", "pop rock", "mark king", "isle of wight"], dailyEligible: true },
+    { id: "music_1960", category: "Music", question: "Which artist recorded Leaving Me Now?",
+      answers: ["Talk Talk", "Level 42", "Heaven 17", "Squeeze"], correctAnswer: "Level 42", difficulty: "Medium",
+      tags: ["1980s", "jazz-funk", "level 42", "songs", "british", "bands", "pop rock", "mark king", "isle of wight"], dailyEligible: true },
+    { id: "music_1961", category: "Music", question: "Which artist recorded Running in the Family?",
+      answers: ["Level 42", "Heaven 17", "Squeeze", "Talk Talk"], correctAnswer: "Level 42", difficulty: "Easy",
+      tags: ["1980s", "jazz-funk", "level 42", "songs", "british", "bands", "pop rock", "mark king", "isle of wight"], dailyEligible: true },
+    { id: "music_1962", category: "Music", question: "Which artist recorded To Be with You Again?",
+      answers: ["Heaven 17", "Talk Talk", "Level 42", "Squeeze"], correctAnswer: "Level 42", difficulty: "Medium",
+      tags: ["1980s", "jazz-funk", "level 42", "songs", "british", "bands", "pop rock", "mark king", "isle of wight"], dailyEligible: true },
+    { id: "music_1963", category: "Music", question: "Which artist recorded Children Say?",
+      answers: ["Squeeze", "Level 42", "Talk Talk", "Heaven 17"], correctAnswer: "Level 42", difficulty: "Medium",
+      tags: ["1980s", "jazz-funk", "level 42", "songs", "british", "bands", "pop rock", "mark king", "isle of wight"], dailyEligible: true },
+    { id: "music_1964", category: "Music", question: "Which artist recorded Heaven in My Hands?",
+      answers: ["Talk Talk", "Heaven 17", "Level 42", "Squeeze"], correctAnswer: "Level 42", difficulty: "Medium",
+      tags: ["1980s", "jazz-funk", "level 42", "songs", "british", "bands", "pop rock", "mark king", "isle of wight"], dailyEligible: true },
+    { id: "music_1965", category: "Music", question: "Which artist recorded Tracie?",
+      answers: ["Level 42", "Squeeze", "Talk Talk", "Heaven 17"], correctAnswer: "Level 42", difficulty: "Medium",
+      tags: ["1980s", "jazz-funk", "level 42", "songs", "british", "bands", "pop rock", "mark king", "isle of wight"], dailyEligible: true },
+    { id: "music_1966", category: "Music", question: "Which artist recorded Contenders?",
+      answers: ["Talk Talk", "Heaven 17", "Level 42", "The Human League"], correctAnswer: "Heaven 17", difficulty: "Hard",
+      tags: ["1980s", "synth-pop", "heaven 17", "songs", "british", "bands", "new wave", "martyn ware", "glenn gregory", "sheffield", "1986 albums"], dailyEligible: true }
 ];
 
 module.exports = quizPack38;
