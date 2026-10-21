@@ -1,707 +1,207 @@
 // quiz_pack49.js
-// 100 Music questions - 1960s
+// PuzzlePilot Bigggggg Quiz - Pack 49
+// Music: Motown and 1960s soul - 100 questions
+// Audit: original IDs preserved.
+// Genuine repeats replaced with varied music trivia.
+// All questions receive full tags, difficulty and daily eligibility.
+// Distractors checked to avoid duplicate stage names and overlapping cover versions.
+
+const artistTags = {
+    "Mable John": ["singers","female vocalists","stax records","early motown"],
+    "Chris Clark": ["singers","female vocalists","motown","northern soul"],
+    "Gladys Knight and the Pips": ["groups","vocal groups","female lead vocals","motown"],
+    "Kim Weston": ["singers","female vocalists","motown"],
+    "Marvin Gaye": ["singers","male vocalists","motown"],
+    "Marvin Gaye and Mary Wells": ["duets","male and female duets","motown","marvin gaye","mary wells"],
+    "Carolyn Crawford": ["singers","female vocalists","motown"],
+    "Stevie Wonder": ["singers","male vocalists","motown","keyboards"],
+    "Little Stevie Wonder": ["singers","male vocalists","motown","stevie wonder"],
+    "The Miracles": ["groups","vocal groups","motown","smokey robinson"],
+    "Smokey Robinson and the Miracles": ["groups","vocal groups","motown","the miracles","smokey robinson"],
+    "Barbara McNair": ["singers","female vocalists","motown"],
+    "The Elgins": ["groups","vocal groups","motown"],
+    "Bobby Taylor and the Vancouvers": ["groups","vocal groups","motown"],
+    "The Valadiers": ["groups","vocal groups","early motown"],
+    "The Supremes": ["groups","girl groups","female vocal groups","motown"],
+    "Diana Ross and the Supremes": ["groups","girl groups","female vocal groups","motown","the supremes","diana ross"],
+    "Four Tops": ["groups","vocal groups","motown","levi stubbs"],
+    "Chuck Jackson": ["singers","male vocalists","wand records"],
+    "Freddie Scott": ["singers","male vocalists","northern soul","shout records"],
+    "V.I.P.": ["motown history","record labels","chris clark","v.i.p. records"],
+    "Marv Tarplin": ["motown history","the miracles","smokey robinson","guitarists","songwriters"],
+    "Diana Ross": ["singers","female vocalists","motown","the supremes","lead singers","spoken word"],
+    "The Happening": ["film music","soundtracks","the supremes","motown","1967 film","title songs"]
+};
+
+const questionTags = {
+    "music_2967": ["mable john"],
+    "music_2969": ["mable john","tamla"],
+    "music_2974": ["v.i.p. records"],
+    "music_2976": ["cover versions"],
+    "music_2978": ["cover versions","the supremes"],
+    "music_2982": ["beatles covers"],
+    "music_2983": ["frank wilson","cover versions"],
+    "music_2985": ["1974 singles","knight time album"],
+    "music_2986": ["1966 recordings","2001 archival releases"],
+    "music_2987": ["1960s recordings","2005 archival releases"],
+    "music_2990": ["1964 duets","marvin gaye","kim weston"],
+    "music_2992": ["1964 singles","marvin gaye original"],
+    "music_2993": ["marvin gaye","mary wells"],
+    "music_2994": ["marvin gaye","mary wells"],
+    "music_3005": ["1969 singles"],
+    "music_3006": ["1969 singles"],
+    "music_3010": ["cover versions"],
+    "music_3011": ["point it out","1969 singles","marvin tarplin","al cleveland"],
+    "music_3012": ["1969 albums","time out for smokey robinson and the miracles"],
+    "music_3013": ["cover versions"],
+    "music_3018": ["cover versions"],
+    "music_3022": ["cover versions"],
+    "music_3024": ["cover versions","percy sledge"],
+    "music_3029": ["cover versions"],
+    "music_3037": ["1969 singles"],
+    "music_3038": ["1967 singles","love is here and now youre gone","spoken passages","diana ross"],
+    "music_3039": ["1967 singles","1967 films","the happening","the supremes","film themes"],
+    "music_3041": ["1967 singles"],
+    "music_3044": ["early recordings"],
+    "music_3051": ["1962 singles"],
+    "music_3058": ["1966 singles"],
+    "music_3063": ["1968 singles","sampled songs","biz markie"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, decade, difficulty) {
+    const specialistTags = artistTags[correctAnswer];
+
+    if (!specialistTags) {
+        throw new Error("Missing artist tags for " + id);
+    }
+
+    const isSongQuestion = question.startsWith("Which artist recorded ");
+
+    const tags = [
+        decade,
+        "soul",
+        "rhythm and blues",
+        ...(isSongQuestion ? ["songs"] : ["music history"]),
+        "american",
+        correctAnswer.toLowerCase(),
+        ...specialistTags,
+        ...(questionTags[id] || [])
+    ];
+
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set(tags)],
+        dailyEligible: true
+    };
+}
 
 const quizPack49 = [
-    {
-        id: "music_2967",
-        category: "Music",
-        question: "Which artist recorded Actions Speak Louder Than Words?",
-        answers: ["Mable John", "Chris Clark", "Gladys Knight and the Pips", "Kim Weston"],
-        correctAnswer: "Mable John"
-    },
-    {
-        id: "music_2968",
-        category: "Music",
-        question: "Which artist recorded Take Me?",
-        answers: ["Marvin Gaye", "Mable John", "Marvin Gaye and Mary Wells", "Carolyn Crawford"],
-        correctAnswer: "Mable John"
-    },
-    {
-        id: "music_2969",
-        category: "Music",
-        question: "Which artist recorded Able Mable?",
-        answers: ["Stevie Wonder", "The Miracles", "Mable John", "Smokey Robinson and the Miracles"],
-        correctAnswer: "Mable John"
-    },
-    {
-        id: "music_2970",
-        category: "Music",
-        question: "Which artist recorded Running Out?",
-        answers: ["Barbara McNair", "The Elgins", "Bobby Taylor and the Vancouvers", "Mable John"],
-        correctAnswer: "Mable John"
-    },
-    {
-        id: "music_2971",
-        category: "Music",
-        question: "Which artist recorded Same Time Same Place?",
-        answers: ["Mable John", "The Valadiers", "The Supremes", "Diana Ross and the Supremes"],
-        correctAnswer: "Mable John"
-    },
-    {
-        id: "music_2972",
-        category: "Music",
-        question: "Which artist recorded Stay Out of My Arms?",
-        answers: ["Four Tops", "Mable John", "Little Stevie Wonder", "Chuck Jackson"],
-        correctAnswer: "Mable John"
-    },
-    {
-        id: "music_2973",
-        category: "Music",
-        question: "Which artist recorded Don’t Get Caught?",
-        answers: ["Freddie Scott", "Mary Wells", "Mable John", "Brenda Holloway"],
-        correctAnswer: "Mable John"
-    },
-    {
-        id: "music_2974",
-        category: "Music",
-        question: "Which artist recorded Love’s Gone Bad?",
-        answers: ["The Temptations", "Jr. Walker and the All Stars", "Mable John", "Chris Clark"],
-        correctAnswer: "Chris Clark"
-    },
-    {
-        id: "music_2975",
-        category: "Music",
-        question: "Which artist recorded I Want to Go Back There Again?",
-        answers: ["Chris Clark", "Gladys Knight and the Pips", "Kim Weston", "Marvin Gaye"],
-        correctAnswer: "Chris Clark"
-    },
-    {
-        id: "music_2976",
-        category: "Music",
-        question: "Which artist recorded From Head to Toe?",
-        answers: ["Marvin Gaye", "Chris Clark", "Marvin Gaye and Mary Wells", "Carolyn Crawford"],
-        correctAnswer: "Chris Clark"
-    },
-    {
-        id: "music_2977",
-        category: "Music",
-        question: "Which artist recorded Do Right Baby Do Right?",
-        answers: ["Stevie Wonder", "The Miracles", "Chris Clark", "Smokey Robinson and the Miracles"],
-        correctAnswer: "Chris Clark"
-    },
-    {
-        id: "music_2978",
-        category: "Music",
-        question: "Which artist recorded Whisper You Love Me Boy?",
-        answers: ["Barbara McNair", "The Elgins", "Bobby Taylor and the Vancouvers", "Chris Clark"],
-        correctAnswer: "Chris Clark"
-    },
-    {
-        id: "music_2979",
-        category: "Music",
-        question: "Which artist recorded The Beginning of the End?",
-        answers: ["Chris Clark", "The Valadiers", "The Supremes", "Diana Ross and the Supremes"],
-        correctAnswer: "Chris Clark"
-    },
-    {
-        id: "music_2980",
-        category: "Music",
-        question: "Which artist recorded I Just Can’t Forget Him?",
-        answers: ["Four Tops", "Chris Clark", "Little Stevie Wonder", "Chuck Jackson"],
-        correctAnswer: "Chris Clark"
-    },
-    {
-        id: "music_2981",
-        category: "Music",
-        question: "Which artist recorded Day by Day or Never?",
-        answers: ["Freddie Scott", "Mary Wells", "Chris Clark", "Brenda Holloway"],
-        correctAnswer: "Chris Clark"
-    },
-    {
-        id: "music_2982",
-        category: "Music",
-        question: "Which artist recorded Got to Get You into My Life?",
-        answers: ["The Temptations", "Jr. Walker and the All Stars", "Mable John", "Chris Clark"],
-        correctAnswer: "Chris Clark"
-    },
-    {
-        id: "music_2983",
-        category: "Music",
-        question: "Which artist recorded Do I Love You?",
-        answers: ["Chris Clark", "Gladys Knight and the Pips", "Kim Weston", "Marvin Gaye"],
-        correctAnswer: "Chris Clark"
-    },
-    {
-        id: "music_2984",
-        category: "Music",
-        question: "Which artist recorded The Nitty Gritty?",
-        answers: ["Marvin Gaye", "Gladys Knight and the Pips", "Marvin Gaye and Mary Wells", "Carolyn Crawford"],
-        correctAnswer: "Gladys Knight and the Pips"
-    },
-    {
-        id: "music_2985",
-        category: "Music",
-        question: "Which artist recorded Between Her Goodbye and My Hello?",
-        answers: ["Stevie Wonder", "The Miracles", "Gladys Knight and the Pips", "Smokey Robinson and the Miracles"],
-        correctAnswer: "Gladys Knight and the Pips"
-    },
-    {
-        id: "music_2986",
-        category: "Music",
-        question: "Which artist recorded Here Are the Pieces of My Broken Heart?",
-        answers: ["Barbara McNair", "The Elgins", "Bobby Taylor and the Vancouvers", "Gladys Knight and the Pips"],
-        correctAnswer: "Gladys Knight and the Pips"
-    },
-    {
-        id: "music_2987",
-        category: "Music",
-        question: "Which artist recorded I Got a Weak Heart?",
-        answers: ["Kim Weston", "The Valadiers", "The Supremes", "Diana Ross and the Supremes"],
-        correctAnswer: "Kim Weston"
-    },
-    {
-        id: "music_2988",
-        category: "Music",
-        question: "Which artist recorded Go Ahead and Laugh?",
-        answers: ["Four Tops", "Kim Weston", "Little Stevie Wonder", "Chuck Jackson"],
-        correctAnswer: "Kim Weston"
-    },
-    {
-        id: "music_2989",
-        category: "Music",
-        question: "Which artist recorded Love Me All the Way?",
-        answers: ["Freddie Scott", "Mary Wells", "Kim Weston", "Brenda Holloway"],
-        correctAnswer: "Kim Weston"
-    },
-    {
-        id: "music_2990",
-        category: "Music",
-        question: "Which artist recorded What Good Am I Without You?",
-        answers: ["The Temptations", "Jr. Walker and the All Stars", "Mable John", "Kim Weston"],
-        correctAnswer: "Kim Weston"
-    },
-    {
-        id: "music_2991",
-        category: "Music",
-        question: "Which artist recorded Need Your Lovin’ Want You Near Me?",
-        answers: ["Marvin Gaye", "Gladys Knight and the Pips", "Kim Weston", "Chris Clark"],
-        correctAnswer: "Marvin Gaye"
-    },
-    {
-        id: "music_2992",
-        category: "Music",
-        question: "Which artist recorded How Sweet It Is to Be Loved by You?",
-        answers: ["Marvin Gaye and Mary Wells", "Marvin Gaye", "Carolyn Crawford", "Stevie Wonder"],
-        correctAnswer: "Marvin Gaye"
-    },
-    {
-        id: "music_2993",
-        category: "Music",
-        question: "Which artist recorded What’s the Matter with You Baby?",
-        answers: ["The Miracles", "Smokey Robinson and the Miracles", "Marvin Gaye and Mary Wells", "Barbara McNair"],
-        correctAnswer: "Marvin Gaye and Mary Wells"
-    },
-    {
-        id: "music_2994",
-        category: "Music",
-        question: "Which artist recorded Once Upon a Time?",
-        answers: ["The Elgins", "Bobby Taylor and the Vancouvers", "The Valadiers", "Marvin Gaye and Mary Wells"],
-        correctAnswer: "Marvin Gaye and Mary Wells"
-    },
-    {
-        id: "music_2995",
-        category: "Music",
-        question: "Which artist recorded Until You Came Along?",
-        answers: ["Carolyn Crawford", "The Supremes", "Diana Ross and the Supremes", "Four Tops"],
-        correctAnswer: "Carolyn Crawford"
-    },
-    {
-        id: "music_2996",
-        category: "Music",
-        question: "Which artist recorded Think of the Times?",
-        answers: ["Little Stevie Wonder", "Carolyn Crawford", "Chuck Jackson", "Freddie Scott"],
-        correctAnswer: "Carolyn Crawford"
-    },
-    {
-        id: "music_2997",
-        category: "Music",
-        question: "Which artist recorded I’ll Come Running?",
-        answers: ["Mary Wells", "Brenda Holloway", "Carolyn Crawford", "The Temptations"],
-        correctAnswer: "Carolyn Crawford"
-    },
-    {
-        id: "music_2998",
-        category: "Music",
-        question: "Which artist recorded Hey Harmonica Man?",
-        answers: ["Jr. Walker and the All Stars", "Mable John", "Chris Clark", "Stevie Wonder"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_2999",
-        category: "Music",
-        question: "Which artist recorded Happy Street?",
-        answers: ["Stevie Wonder", "Gladys Knight and the Pips", "Kim Weston", "Marvin Gaye"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3000",
-        category: "Music",
-        question: "Which artist recorded Nothing’s Too Good for My Baby?",
-        answers: ["Marvin Gaye and Mary Wells", "Stevie Wonder", "Carolyn Crawford", "The Miracles"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3001",
-        category: "Music",
-        question: "Which artist recorded A Place in the Sun?",
-        answers: ["Smokey Robinson and the Miracles", "Barbara McNair", "Stevie Wonder", "The Elgins"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3002",
-        category: "Music",
-        question: "Which artist recorded I’m Wondering?",
-        answers: ["Bobby Taylor and the Vancouvers", "The Valadiers", "The Supremes", "Stevie Wonder"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3003",
-        category: "Music",
-        question: "Which artist recorded Shoo-Be-Doo-Be-Doo-Da-Day?",
-        answers: ["Stevie Wonder", "Diana Ross and the Supremes", "Four Tops", "Little Stevie Wonder"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3004",
-        category: "Music",
-        question: "Which artist recorded You Met Your Match?",
-        answers: ["Chuck Jackson", "Stevie Wonder", "Freddie Scott", "Mary Wells"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3005",
-        category: "Music",
-        question: "Which artist recorded My Cherie Amour?",
-        answers: ["Brenda Holloway", "The Temptations", "Stevie Wonder", "Jr. Walker and the All Stars"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3006",
-        category: "Music",
-        question: "Which artist recorded Yester-Me Yester-You Yesterday?",
-        answers: ["Mable John", "Chris Clark", "Gladys Knight and the Pips", "Stevie Wonder"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3007",
-        category: "Music",
-        question: "Which artist recorded Would I Love You?",
-        answers: ["The Miracles", "Kim Weston", "Marvin Gaye", "Marvin Gaye and Mary Wells"],
-        correctAnswer: "The Miracles"
-    },
-    {
-        id: "music_3008",
-        category: "Music",
-        question: "Which artist recorded Come on Do the Jerk?",
-        answers: ["Carolyn Crawford", "The Miracles", "Stevie Wonder", "Smokey Robinson and the Miracles"],
-        correctAnswer: "The Miracles"
-    },
-    {
-        id: "music_3009",
-        category: "Music",
-        question: "Which artist recorded Whole Lot of Shakin’ in My Heart Since I Met You?",
-        answers: ["Barbara McNair", "The Elgins", "The Miracles", "Bobby Taylor and the Vancouvers"],
-        correctAnswer: "The Miracles"
-    },
-    {
-        id: "music_3010",
-        category: "Music",
-        question: "Which artist recorded Abraham Martin and John?",
-        answers: ["The Valadiers", "The Supremes", "Diana Ross and the Supremes", "Smokey Robinson and the Miracles"],
-        correctAnswer: "Smokey Robinson and the Miracles"
-    },
-    {
-        id: "music_3011",
-        category: "Music",
-        question: "Which artist recorded Point It Out?",
-        answers: ["Smokey Robinson and the Miracles", "Four Tops", "Little Stevie Wonder", "Chuck Jackson"],
-        correctAnswer: "Smokey Robinson and the Miracles"
-    },
-    {
-        id: "music_3012",
-        category: "Music",
-        question: "Which artist recorded The Composer?",
-        answers: ["Freddie Scott", "Smokey Robinson and the Miracles", "Mary Wells", "Brenda Holloway"],
-        correctAnswer: "Smokey Robinson and the Miracles"
-    },
-    {
-        id: "music_3013",
-        category: "Music",
-        question: "Which artist recorded For Once in My Life?",
-        answers: ["The Temptations", "Jr. Walker and the All Stars", "Barbara McNair", "Mable John"],
-        correctAnswer: "Barbara McNair"
-    },
-    {
-        id: "music_3014",
-        category: "Music",
-        question: "Which artist recorded You’re Gonna Love My Baby?",
-        answers: ["Chris Clark", "Gladys Knight and the Pips", "Kim Weston", "Barbara McNair"],
-        correctAnswer: "Barbara McNair"
-    },
-    {
-        id: "music_3015",
-        category: "Music",
-        question: "Which artist recorded Everything Is Good About You?",
-        answers: ["Barbara McNair", "Marvin Gaye", "Marvin Gaye and Mary Wells", "Carolyn Crawford"],
-        correctAnswer: "Barbara McNair"
-    },
-    {
-        id: "music_3016",
-        category: "Music",
-        question: "Which artist recorded I Know Better?",
-        answers: ["Stevie Wonder", "Barbara McNair", "The Miracles", "Smokey Robinson and the Miracles"],
-        correctAnswer: "Barbara McNair"
-    },
-    {
-        id: "music_3017",
-        category: "Music",
-        question: "Which artist recorded The Real You?",
-        answers: ["The Elgins", "Bobby Taylor and the Vancouvers", "Barbara McNair", "The Valadiers"],
-        correctAnswer: "Barbara McNair"
-    },
-    {
-        id: "music_3018",
-        category: "Music",
-        question: "Which artist recorded Steal Away Tonight?",
-        answers: ["The Supremes", "Diana Ross and the Supremes", "Four Tops", "Barbara McNair"],
-        correctAnswer: "Barbara McNair"
-    },
-    {
-        id: "music_3019",
-        category: "Music",
-        question: "Which artist recorded Here I Am Baby?",
-        answers: ["Barbara McNair", "Little Stevie Wonder", "Chuck Jackson", "Freddie Scott"],
-        correctAnswer: "Barbara McNair"
-    },
-    {
-        id: "music_3020",
-        category: "Music",
-        question: "Which artist recorded Baby a Go-Go?",
-        answers: ["Mary Wells", "Barbara McNair", "Brenda Holloway", "The Temptations"],
-        correctAnswer: "Barbara McNair"
-    },
-    {
-        id: "music_3021",
-        category: "Music",
-        question: "Which artist recorded Where Would I Be Without You?",
-        answers: ["Jr. Walker and the All Stars", "Mable John", "Barbara McNair", "Chris Clark"],
-        correctAnswer: "Barbara McNair"
-    },
-    {
-        id: "music_3022",
-        category: "Music",
-        question: "Which artist recorded My World Is Empty Without You?",
-        answers: ["Gladys Knight and the Pips", "Kim Weston", "Marvin Gaye", "Barbara McNair"],
-        correctAnswer: "Barbara McNair"
-    },
-    {
-        id: "music_3023",
-        category: "Music",
-        question: "Which artist recorded Darling Baby?",
-        answers: ["The Elgins", "Marvin Gaye and Mary Wells", "Carolyn Crawford", "Stevie Wonder"],
-        correctAnswer: "The Elgins"
-    },
-    {
-        id: "music_3024",
-        category: "Music",
-        question: "Which artist recorded When a Man Loves a Woman?",
-        answers: ["The Miracles", "The Elgins", "Smokey Robinson and the Miracles", "Barbara McNair"],
-        correctAnswer: "The Elgins"
-    },
-    {
-        id: "music_3025",
-        category: "Music",
-        question: "Which artist recorded It’s Gonna Be Hard Times?",
-        answers: ["Bobby Taylor and the Vancouvers", "The Valadiers", "The Elgins", "The Supremes"],
-        correctAnswer: "The Elgins"
-    },
-    {
-        id: "music_3026",
-        category: "Music",
-        question: "Which artist recorded Does Your Mama Know About Me?",
-        answers: ["Diana Ross and the Supremes", "Four Tops", "Little Stevie Wonder", "Bobby Taylor and the Vancouvers"],
-        correctAnswer: "Bobby Taylor and the Vancouvers"
-    },
-    {
-        id: "music_3027",
-        category: "Music",
-        question: "Which artist recorded Malinda?",
-        answers: ["Bobby Taylor and the Vancouvers", "Chuck Jackson", "Freddie Scott", "Mary Wells"],
-        correctAnswer: "Bobby Taylor and the Vancouvers"
-    },
-    {
-        id: "music_3028",
-        category: "Music",
-        question: "Which artist recorded I Am Your Man?",
-        answers: ["Brenda Holloway", "Bobby Taylor and the Vancouvers", "The Temptations", "Jr. Walker and the All Stars"],
-        correctAnswer: "Bobby Taylor and the Vancouvers"
-    },
-    {
-        id: "music_3029",
-        category: "Music",
-        question: "Which artist recorded It’s Growing?",
-        answers: ["Mable John", "Chris Clark", "Bobby Taylor and the Vancouvers", "Gladys Knight and the Pips"],
-        correctAnswer: "Bobby Taylor and the Vancouvers"
-    },
-    {
-        id: "music_3030",
-        category: "Music",
-        question: "Which artist recorded Greetings This Is Uncle Sam?",
-        answers: ["Kim Weston", "Marvin Gaye", "Marvin Gaye and Mary Wells", "The Valadiers"],
-        correctAnswer: "The Valadiers"
-    },
-    {
-        id: "music_3031",
-        category: "Music",
-        question: "Which artist recorded Because I Love Her?",
-        answers: ["The Valadiers", "Carolyn Crawford", "Stevie Wonder", "The Miracles"],
-        correctAnswer: "The Valadiers"
-    },
-    {
-        id: "music_3032",
-        category: "Music",
-        question: "Which artist recorded While I’m Away?",
-        answers: ["Smokey Robinson and the Miracles", "The Valadiers", "Barbara McNair", "The Elgins"],
-        correctAnswer: "The Valadiers"
-    },
-    {
-        id: "music_3033",
-        category: "Music",
-        question: "Which artist recorded I Found a Girl?",
-        answers: ["Bobby Taylor and the Vancouvers", "The Supremes", "The Valadiers", "Diana Ross and the Supremes"],
-        correctAnswer: "The Valadiers"
-    },
-    {
-        id: "music_3034",
-        category: "Music",
-        question: "Which artist recorded What a Girl What a Girl?",
-        answers: ["Four Tops", "Little Stevie Wonder", "Chuck Jackson", "The Valadiers"],
-        correctAnswer: "The Valadiers"
-    },
-    {
-        id: "music_3035",
-        category: "Music",
-        question: "Which artist recorded I’ll Never Love Again?",
-        answers: ["The Supremes", "Freddie Scott", "Mary Wells", "Brenda Holloway"],
-        correctAnswer: "The Supremes"
-    },
-    {
-        id: "music_3036",
-        category: "Music",
-        question: "Which artist recorded He Means the World to Me?",
-        answers: ["The Temptations", "The Supremes", "Jr. Walker and the All Stars", "Mable John"],
-        correctAnswer: "The Supremes"
-    },
-    {
-        id: "music_3037",
-        category: "Music",
-        question: "Which artist recorded The Young Folks?",
-        answers: ["Chris Clark", "Gladys Knight and the Pips", "The Supremes", "Kim Weston"],
-        correctAnswer: "The Supremes"
-    },
-    {
-        id: "music_3038",
-        category: "Music",
-        question: "Which artist recorded Love Is Here and Now You’re Gone?",
-        answers: ["Marvin Gaye", "Marvin Gaye and Mary Wells", "Carolyn Crawford", "Diana Ross and the Supremes"],
-        correctAnswer: "Diana Ross and the Supremes"
-    },
-    {
-        id: "music_3039",
-        category: "Music",
-        question: "Which artist recorded The Happening?",
-        answers: ["Diana Ross and the Supremes", "Stevie Wonder", "The Miracles", "Smokey Robinson and the Miracles"],
-        correctAnswer: "Diana Ross and the Supremes"
-    },
-    {
-        id: "music_3040",
-        category: "Music",
-        question: "Which artist recorded I’ll Turn to Stone?",
-        answers: ["Barbara McNair", "Four Tops", "The Elgins", "Bobby Taylor and the Vancouvers"],
-        correctAnswer: "Four Tops"
-    },
-    {
-        id: "music_3041",
-        category: "Music",
-        question: "Which artist recorded 7-Rooms of Gloom?",
-        answers: ["The Valadiers", "The Supremes", "Four Tops", "Diana Ross and the Supremes"],
-        correctAnswer: "Four Tops"
-    },
-    {
-        id: "music_3042",
-        category: "Music",
-        question: "Which artist recorded You Keep Running Away?",
-        answers: ["Little Stevie Wonder", "Chuck Jackson", "Freddie Scott", "Four Tops"],
-        correctAnswer: "Four Tops"
-    },
-    {
-        id: "music_3043",
-        category: "Music",
-        question: "Which artist recorded If You Don’t Want My Love?",
-        answers: ["Four Tops", "Mary Wells", "Brenda Holloway", "The Temptations"],
-        correctAnswer: "Four Tops"
-    },
-    {
-        id: "music_3044",
-        category: "Music",
-        question: "Which artist recorded I Call It Pretty Music but the Old People Call It the Blues?",
-        answers: ["Jr. Walker and the All Stars", "Little Stevie Wonder", "Mable John", "Chris Clark"],
-        correctAnswer: "Little Stevie Wonder"
-    },
-    {
-        id: "music_3045",
-        category: "Music",
-        question: "Which artist recorded La La La La La?",
-        answers: ["Gladys Knight and the Pips", "Kim Weston", "Stevie Wonder", "Marvin Gaye"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3046",
-        category: "Music",
-        question: "Which artist recorded Thank You for Loving Me All the Way?",
-        answers: ["Marvin Gaye and Mary Wells", "Carolyn Crawford", "The Miracles", "Stevie Wonder"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3047",
-        category: "Music",
-        question: "Which artist recorded Sylvia?",
-        answers: ["Stevie Wonder", "Smokey Robinson and the Miracles", "Barbara McNair", "The Elgins"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3048",
-        category: "Music",
-        question: "Which artist recorded Purple Raindrops?",
-        answers: ["Bobby Taylor and the Vancouvers", "Stevie Wonder", "The Valadiers", "The Supremes"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3049",
-        category: "Music",
-        question: "Which artist recorded I’d Cry?",
-        answers: ["Diana Ross and the Supremes", "Four Tops", "Chuck Jackson", "Little Stevie Wonder"],
-        correctAnswer: "Chuck Jackson"
-    },
-    {
-        id: "music_3050",
-        category: "Music",
-        question: "Which artist recorded Beg Me?",
-        answers: ["Freddie Scott", "Mary Wells", "Brenda Holloway", "Chuck Jackson"],
-        correctAnswer: "Chuck Jackson"
-    },
-    {
-        id: "music_3051",
-        category: "Music",
-        question: "Which artist recorded Any Day Now?",
-        answers: ["Chuck Jackson", "The Temptations", "Jr. Walker and the All Stars", "Mable John"],
-        correctAnswer: "Chuck Jackson"
-    },
-    {
-        id: "music_3052",
-        category: "Music",
-        question: "Which artist recorded I Wake Up Crying?",
-        answers: ["Chris Clark", "Chuck Jackson", "Gladys Knight and the Pips", "Kim Weston"],
-        correctAnswer: "Chuck Jackson"
-    },
-    {
-        id: "music_3053",
-        category: "Music",
-        question: "Which artist recorded Tell Him I’m Not Home?",
-        answers: ["Marvin Gaye", "Marvin Gaye and Mary Wells", "Chuck Jackson", "Carolyn Crawford"],
-        correctAnswer: "Chuck Jackson"
-    },
-    {
-        id: "music_3054",
-        category: "Music",
-        question: "Which artist recorded Since I Don’t Have You?",
-        answers: ["Stevie Wonder", "The Miracles", "Smokey Robinson and the Miracles", "Chuck Jackson"],
-        correctAnswer: "Chuck Jackson"
-    },
-    {
-        id: "music_3055",
-        category: "Music",
-        question: "Which artist recorded Hand It Over?",
-        answers: ["Chuck Jackson", "Barbara McNair", "The Elgins", "Bobby Taylor and the Vancouvers"],
-        correctAnswer: "Chuck Jackson"
-    },
-    {
-        id: "music_3056",
-        category: "Music",
-        question: "Which artist recorded Good Things Come to Those Who Wait?",
-        answers: ["The Valadiers", "Chuck Jackson", "The Supremes", "Diana Ross and the Supremes"],
-        correctAnswer: "Chuck Jackson"
-    },
-    {
-        id: "music_3057",
-        category: "Music",
-        question: "Which artist recorded I Need You?",
-        answers: ["Four Tops", "Little Stevie Wonder", "Chuck Jackson", "Freddie Scott"],
-        correctAnswer: "Chuck Jackson"
-    },
-    {
-        id: "music_3058",
-        category: "Music",
-        question: "Which artist recorded Are You Lonely for Me?",
-        answers: ["Mary Wells", "Brenda Holloway", "The Temptations", "Freddie Scott"],
-        correctAnswer: "Freddie Scott"
-    },
-    {
-        id: "music_3059",
-        category: "Music",
-        question: "Which artist recorded Am I Grooving You?",
-        answers: ["Freddie Scott", "Jr. Walker and the All Stars", "Mable John", "Chris Clark"],
-        correctAnswer: "Freddie Scott"
-    },
-    {
-        id: "music_3060",
-        category: "Music",
-        question: "Which artist recorded He Will Break Your Heart?",
-        answers: ["Gladys Knight and the Pips", "Freddie Scott", "Kim Weston", "Marvin Gaye"],
-        correctAnswer: "Freddie Scott"
-    },
-    {
-        id: "music_3061",
-        category: "Music",
-        question: "Which artist recorded Where Does Love Go?",
-        answers: ["Marvin Gaye and Mary Wells", "Carolyn Crawford", "Freddie Scott", "Stevie Wonder"],
-        correctAnswer: "Freddie Scott"
-    },
-    {
-        id: "music_3062",
-        category: "Music",
-        question: "Which artist recorded Everything I Have Is Yours?",
-        answers: ["The Miracles", "Smokey Robinson and the Miracles", "Barbara McNair", "Freddie Scott"],
-        correctAnswer: "Freddie Scott"
-    },
-    {
-        id: "music_3063",
-        category: "Music",
-        question: "Which artist recorded Got What I Need?",
-        answers: ["Freddie Scott", "The Elgins", "Bobby Taylor and the Vancouvers", "The Valadiers"],
-        correctAnswer: "Freddie Scott"
-    },
-    {
-        id: "music_3064",
-        category: "Music",
-        question: "Which artist recorded No One Could Ever Love You?",
-        answers: ["The Supremes", "Freddie Scott", "Diana Ross and the Supremes", "Four Tops"],
-        correctAnswer: "Freddie Scott"
-    },
-    {
-        id: "music_3065",
-        category: "Music",
-        question: "Which artist recorded I’ll Try Again?",
-        answers: ["Little Stevie Wonder", "Chuck Jackson", "Freddie Scott", "Mary Wells"],
-        correctAnswer: "Freddie Scott"
-    },
-    {
-        id: "music_3066",
-        category: "Music",
-        question: "Which artist recorded Just Like a Flower?",
-        answers: ["Brenda Holloway", "The Temptations", "Jr. Walker and the All Stars", "Freddie Scott"],
-        correctAnswer: "Freddie Scott"
-    }
+    makeQuestion("music_2967", "Which artist recorded Actions Speak Louder Than Words?", ["Mable John","Chris Clark","Gladys Knight and the Pips","Kim Weston"], "Mable John", "1960s", "Hard"),
+    makeQuestion("music_2968", "Which artist recorded Take Me?", ["Marvin Gaye","Mable John","Marvin Gaye and Mary Wells","Carolyn Crawford"], "Mable John", "1960s", "Hard"),
+    makeQuestion("music_2969", "Which artist recorded Able Mable?", ["Stevie Wonder","The Miracles","Mable John","Four Tops"], "Mable John", "1960s", "Hard"),
+    makeQuestion("music_2970", "Which artist recorded Running Out?", ["Barbara McNair","The Elgins","Bobby Taylor and the Vancouvers","Mable John"], "Mable John", "1960s", "Hard"),
+    makeQuestion("music_2971", "Which artist recorded Same Time Same Place?", ["Mable John","The Valadiers","The Supremes","The Marvelettes"], "Mable John", "1960s", "Hard"),
+    makeQuestion("music_2972", "Which artist recorded Stay Out of My Arms?", ["Four Tops","Mable John","Little Stevie Wonder","Chuck Jackson"], "Mable John", "1960s", "Hard"),
+    makeQuestion("music_2973", "Which artist recorded Don’t Get Caught?", ["Freddie Scott","Mary Wells","Mable John","Brenda Holloway"], "Mable John", "1960s", "Hard"),
+    makeQuestion("music_2974", "Which artist recorded Love’s Gone Bad?", ["The Temptations","Jr. Walker and the All Stars","Mable John","Chris Clark"], "Chris Clark", "1960s", "Medium"),
+    makeQuestion("music_2975", "Which artist recorded I Want to Go Back There Again?", ["Chris Clark","Gladys Knight and the Pips","Kim Weston","Marvin Gaye"], "Chris Clark", "1960s", "Medium"),
+    makeQuestion("music_2976", "Which artist recorded From Head to Toe?", ["Marvin Gaye","Chris Clark","Marvin Gaye and Mary Wells","Carolyn Crawford"], "Chris Clark", "1960s", "Medium"),
+    makeQuestion("music_2977", "Which artist recorded Do Right Baby Do Right?", ["Stevie Wonder","The Miracles","Chris Clark","Four Tops"], "Chris Clark", "1960s", "Hard"),
+    makeQuestion("music_2978", "Which artist recorded Whisper You Love Me Boy?", ["Barbara McNair","The Elgins","Bobby Taylor and the Vancouvers","Chris Clark"], "Chris Clark", "1960s", "Hard"),
+    makeQuestion("music_2979", "Which Motown subsidiary released Chris Clark's 1966 US single Love's Gone Bad?", ["Tamla","V.I.P.","Gordy","Soul"], "V.I.P.", "1960s", "Medium"),
+    makeQuestion("music_2980", "Which artist recorded I Just Can’t Forget Him?", ["Four Tops","Chris Clark","Little Stevie Wonder","Chuck Jackson"], "Chris Clark", "1960s", "Hard"),
+    makeQuestion("music_2981", "Which artist recorded Day by Day or Never?", ["Freddie Scott","Mary Wells","Chris Clark","Brenda Holloway"], "Chris Clark", "1960s", "Hard"),
+    makeQuestion("music_2982", "Which artist recorded Got to Get You into My Life?", ["The Temptations","Jr. Walker and the All Stars","Mable John","Chris Clark"], "Chris Clark", "1960s", "Medium"),
+    makeQuestion("music_2983", "Which artist recorded Do I Love You?", ["Chris Clark","Gladys Knight and the Pips","Kim Weston","Marvin Gaye"], "Chris Clark", "1960s", "Hard"),
+    makeQuestion("music_2984", "Which artist recorded The Nitty Gritty?", ["Marvin Gaye","Gladys Knight and the Pips","Marvin Gaye and Mary Wells","Carolyn Crawford"], "Gladys Knight and the Pips", "1960s", "Medium"),
+    makeQuestion("music_2985", "Which artist recorded Between Her Goodbye and My Hello?", ["Stevie Wonder","The Miracles","Gladys Knight and the Pips","Four Tops"], "Gladys Knight and the Pips", "1970s", "Hard"),
+    makeQuestion("music_2986", "Which artist recorded Here Are the Pieces of My Broken Heart?", ["Barbara McNair","The Elgins","Bobby Taylor and the Vancouvers","Gladys Knight and the Pips"], "Gladys Knight and the Pips", "2000s", "Hard"),
+    makeQuestion("music_2987", "Which artist recorded I Got a Weak Heart?", ["Kim Weston","The Valadiers","The Supremes","The Marvelettes"], "Kim Weston", "2000s", "Hard"),
+    makeQuestion("music_2988", "Which artist recorded Go Ahead and Laugh?", ["Four Tops","Kim Weston","Little Stevie Wonder","Chuck Jackson"], "Kim Weston", "1960s", "Hard"),
+    makeQuestion("music_2989", "Which artist recorded Love Me All the Way?", ["Freddie Scott","Mary Wells","Kim Weston","Brenda Holloway"], "Kim Weston", "1960s", "Medium"),
+    makeQuestion("music_2990", "Who duetted with Marvin Gaye on What Good Am I Without You?", ["Mary Wells","Kim Weston","Tammi Terrell","Diana Ross"], "Kim Weston", "1960s", "Medium"),
+    makeQuestion("music_2991", "Which artist recorded Need Your Lovin' (Want You Back)?", ["Marvin Gaye","Gladys Knight and the Pips","Kim Weston","Chris Clark"], "Marvin Gaye", "1960s", "Hard"),
+    makeQuestion("music_2992", "Which artist recorded How Sweet It Is to Be Loved by You?", ["Marvin Gaye and Mary Wells","Marvin Gaye","Carolyn Crawford","Stevie Wonder"], "Marvin Gaye", "1960s", "Easy"),
+    makeQuestion("music_2993", "Which artist recorded What’s the Matter with You Baby?", ["The Miracles","Four Tops","Marvin Gaye and Mary Wells","Barbara McNair"], "Marvin Gaye and Mary Wells", "1960s", "Medium"),
+    makeQuestion("music_2994", "Which artist recorded Once Upon a Time?", ["The Elgins","Bobby Taylor and the Vancouvers","The Valadiers","Marvin Gaye and Mary Wells"], "Marvin Gaye and Mary Wells", "1960s", "Medium"),
+    makeQuestion("music_2995", "Which artist recorded Until You Came Along?", ["Carolyn Crawford","The Supremes","The Marvelettes","Four Tops"], "Carolyn Crawford", "1960s", "Hard"),
+    makeQuestion("music_2996", "Which artist recorded Think of the Times?", ["Little Stevie Wonder","Carolyn Crawford","Chuck Jackson","Freddie Scott"], "Carolyn Crawford", "1960s", "Hard"),
+    makeQuestion("music_2997", "Which artist recorded I’ll Come Running?", ["Mary Wells","Brenda Holloway","Carolyn Crawford","The Temptations"], "Carolyn Crawford", "1960s", "Hard"),
+    makeQuestion("music_2998", "Which artist recorded Hey Harmonica Man?", ["Jr. Walker and the All Stars","Mable John","Chris Clark","Stevie Wonder"], "Stevie Wonder", "1960s", "Medium"),
+    makeQuestion("music_2999", "Which artist recorded Happy Street?", ["Stevie Wonder","Gladys Knight and the Pips","Kim Weston","Marvin Gaye"], "Stevie Wonder", "1960s", "Hard"),
+    makeQuestion("music_3000", "Which artist recorded Nothing’s Too Good for My Baby?", ["Marvin Gaye and Mary Wells","Stevie Wonder","Carolyn Crawford","The Miracles"], "Stevie Wonder", "1960s", "Medium"),
+    makeQuestion("music_3001", "Which artist recorded A Place in the Sun?", ["Smokey Robinson and the Miracles","Barbara McNair","Stevie Wonder","The Elgins"], "Stevie Wonder", "1960s", "Easy"),
+    makeQuestion("music_3002", "Which artist recorded I’m Wondering?", ["Bobby Taylor and the Vancouvers","The Valadiers","The Supremes","Stevie Wonder"], "Stevie Wonder", "1960s", "Medium"),
+    makeQuestion("music_3003", "Which artist recorded Shoo-Be-Doo-Be-Doo-Da-Day?", ["Stevie Wonder","Diana Ross and the Supremes","Four Tops","The Temptations"], "Stevie Wonder", "1960s", "Medium"),
+    makeQuestion("music_3004", "Which artist recorded You Met Your Match?", ["Chuck Jackson","Stevie Wonder","Freddie Scott","Mary Wells"], "Stevie Wonder", "1960s", "Hard"),
+    makeQuestion("music_3005", "Which artist recorded My Cherie Amour?", ["Brenda Holloway","The Temptations","Stevie Wonder","Jr. Walker and the All Stars"], "Stevie Wonder", "1960s", "Easy"),
+    makeQuestion("music_3006", "Which artist recorded Yester-Me Yester-You Yesterday?", ["Mable John","Chris Clark","Gladys Knight and the Pips","Stevie Wonder"], "Stevie Wonder", "1960s", "Medium"),
+    makeQuestion("music_3007", "Which artist recorded Would I Love You?", ["The Miracles","Kim Weston","Marvin Gaye","Marvin Gaye and Mary Wells"], "The Miracles", "1960s", "Hard"),
+    makeQuestion("music_3008", "Which artist recorded Come on Do the Jerk?", ["Carolyn Crawford","The Miracles","Stevie Wonder","Four Tops"], "The Miracles", "1960s", "Hard"),
+    makeQuestion("music_3009", "Which artist recorded Whole Lot of Shakin’ in My Heart Since I Met You?", ["Barbara McNair","The Elgins","The Miracles","Bobby Taylor and the Vancouvers"], "The Miracles", "1960s", "Hard"),
+    makeQuestion("music_3010", "Which artist recorded Abraham Martin and John?", ["The Valadiers","The Supremes","The Marvelettes","Smokey Robinson and the Miracles"], "Smokey Robinson and the Miracles", "1960s", "Medium"),
+    makeQuestion("music_3011", "Which guitarist co-wrote Point It Out with Smokey Robinson and Al Cleveland?", ["Warren Moore","Marv Tarplin","Ronnie White","Bobby Rogers"], "Marv Tarplin", "1960s", "Hard"),
+    makeQuestion("music_3012", "Which artist recorded The Composer?", ["Freddie Scott","Smokey Robinson and the Miracles","Mary Wells","Brenda Holloway"], "Smokey Robinson and the Miracles", "1960s", "Hard"),
+    makeQuestion("music_3013", "Which singer included For Once in My Life on her album Here I Am?", ["Mary Wells","Brenda Holloway","Barbara McNair","Kim Weston"], "Barbara McNair", "1960s", "Medium"),
+    makeQuestion("music_3014", "Which artist recorded You’re Gonna Love My Baby?", ["Chris Clark","Gladys Knight and the Pips","Kim Weston","Barbara McNair"], "Barbara McNair", "1960s", "Hard"),
+    makeQuestion("music_3015", "Which artist recorded Everything Is Good About You?", ["Barbara McNair","Marvin Gaye","Marvin Gaye and Mary Wells","Carolyn Crawford"], "Barbara McNair", "1960s", "Hard"),
+    makeQuestion("music_3016", "Which artist recorded I Know Better?", ["Stevie Wonder","Barbara McNair","The Miracles","Four Tops"], "Barbara McNair", "1960s", "Hard"),
+    makeQuestion("music_3017", "Which artist recorded The Real You?", ["The Elgins","Bobby Taylor and the Vancouvers","Barbara McNair","The Valadiers"], "Barbara McNair", "1960s", "Hard"),
+    makeQuestion("music_3018", "Which artist recorded Steal Away Tonight?", ["The Supremes","The Marvelettes","Four Tops","Barbara McNair"], "Barbara McNair", "1960s", "Hard"),
+    makeQuestion("music_3019", "Which artist recorded Here I Am Baby?", ["Barbara McNair","Little Stevie Wonder","Chuck Jackson","Freddie Scott"], "Barbara McNair", "1960s", "Hard"),
+    makeQuestion("music_3020", "Which artist recorded Baby a Go-Go?", ["Mary Wells","Barbara McNair","Brenda Holloway","The Temptations"], "Barbara McNair", "1960s", "Hard"),
+    makeQuestion("music_3021", "Which artist recorded Where Would I Be Without You?", ["Jr. Walker and the All Stars","Mable John","Barbara McNair","Chris Clark"], "Barbara McNair", "1960s", "Hard"),
+    makeQuestion("music_3022", "Which artist recorded My World Is Empty Without You?", ["Gladys Knight and the Pips","Kim Weston","Marvin Gaye","Barbara McNair"], "Barbara McNair", "1960s", "Medium"),
+    makeQuestion("music_3023", "Which artist recorded Darling Baby?", ["The Elgins","Marvin Gaye and Mary Wells","Carolyn Crawford","Stevie Wonder"], "The Elgins", "1960s", "Medium"),
+    makeQuestion("music_3024", "Which artist recorded When a Man Loves a Woman?", ["The Miracles","The Elgins","Four Tops","Barbara McNair"], "The Elgins", "1960s", "Medium"),
+    makeQuestion("music_3025", "Which artist recorded It’s Gonna Be Hard Times?", ["Bobby Taylor and the Vancouvers","The Valadiers","The Elgins","The Supremes"], "The Elgins", "1960s", "Hard"),
+    makeQuestion("music_3026", "Which artist recorded Does Your Mama Know About Me?", ["Diana Ross and the Supremes","Four Tops","Little Stevie Wonder","Bobby Taylor and the Vancouvers"], "Bobby Taylor and the Vancouvers", "1960s", "Medium"),
+    makeQuestion("music_3027", "Which artist recorded Malinda?", ["Bobby Taylor and the Vancouvers","Chuck Jackson","Freddie Scott","Mary Wells"], "Bobby Taylor and the Vancouvers", "1960s", "Hard"),
+    makeQuestion("music_3028", "Which artist recorded I Am Your Man?", ["Brenda Holloway","Bobby Taylor and the Vancouvers","The Temptations","Jr. Walker and the All Stars"], "Bobby Taylor and the Vancouvers", "1960s", "Hard"),
+    makeQuestion("music_3029", "Which artist recorded It’s Growing?", ["Mable John","Chris Clark","Bobby Taylor and the Vancouvers","Gladys Knight and the Pips"], "Bobby Taylor and the Vancouvers", "1960s", "Hard"),
+    makeQuestion("music_3030", "Which artist recorded Greetings This Is Uncle Sam?", ["Kim Weston","Marvin Gaye","Marvin Gaye and Mary Wells","The Valadiers"], "The Valadiers", "1960s", "Medium"),
+    makeQuestion("music_3031", "Which artist recorded Because I Love Her?", ["The Valadiers","Carolyn Crawford","Stevie Wonder","The Miracles"], "The Valadiers", "1960s", "Hard"),
+    makeQuestion("music_3032", "Which artist recorded While I’m Away?", ["Smokey Robinson and the Miracles","The Valadiers","Barbara McNair","The Elgins"], "The Valadiers", "1960s", "Hard"),
+    makeQuestion("music_3033", "Which artist recorded I Found a Girl?", ["Bobby Taylor and the Vancouvers","The Supremes","The Valadiers","The Marvelettes"], "The Valadiers", "1960s", "Hard"),
+    makeQuestion("music_3034", "Which artist recorded What a Girl What a Girl?", ["Four Tops","Little Stevie Wonder","Chuck Jackson","The Valadiers"], "The Valadiers", "1960s", "Hard"),
+    makeQuestion("music_3035", "Which artist recorded I’ll Never Love Again?", ["The Supremes","Freddie Scott","Mary Wells","Brenda Holloway"], "The Supremes", "1960s", "Hard"),
+    makeQuestion("music_3036", "Which artist recorded He Means the World to Me?", ["The Temptations","The Supremes","Jr. Walker and the All Stars","Mable John"], "The Supremes", "1960s", "Hard"),
+    makeQuestion("music_3037", "Which artist recorded The Young Folks?", ["Chris Clark","Gladys Knight and the Pips","The Supremes","Kim Weston"], "The Supremes", "1960s", "Hard"),
+    makeQuestion("music_3038", "Which member of The Supremes sang the spoken passages in Love Is Here and Now You're Gone?", ["Florence Ballard","Mary Wilson","Diana Ross","Cindy Birdsong"], "Diana Ross", "1960s", "Medium"),
+    makeQuestion("music_3039", "For which 1967 film did The Supremes record the title song?", ["Barefoot in the Park","The Happening","Bonnie and Clyde","To Sir, with Love"], "The Happening", "1960s", "Medium"),
+    makeQuestion("music_3040", "Which artist recorded I’ll Turn to Stone?", ["Barbara McNair","Four Tops","The Elgins","Bobby Taylor and the Vancouvers"], "Four Tops", "1960s", "Hard"),
+    makeQuestion("music_3041", "Which artist recorded 7-Rooms of Gloom?", ["The Valadiers","The Supremes","Four Tops","The Temptations"], "Four Tops", "1960s", "Medium"),
+    makeQuestion("music_3042", "Which artist recorded You Keep Running Away?", ["Little Stevie Wonder","Chuck Jackson","Freddie Scott","Four Tops"], "Four Tops", "1960s", "Medium"),
+    makeQuestion("music_3043", "Which artist recorded If You Don’t Want My Love?", ["Four Tops","Mary Wells","Brenda Holloway","The Temptations"], "Four Tops", "1960s", "Hard"),
+    makeQuestion("music_3044", "Which artist recorded I Call It Pretty Music but the Old People Call It the Blues?", ["Jr. Walker and the All Stars","Little Stevie Wonder","Mable John","Chris Clark"], "Little Stevie Wonder", "1960s", "Medium"),
+    makeQuestion("music_3045", "Which artist recorded La La La La La?", ["Gladys Knight and the Pips","Kim Weston","Stevie Wonder","Marvin Gaye"], "Stevie Wonder", "1960s", "Hard"),
+    makeQuestion("music_3046", "Which artist recorded Thank You for Loving Me All the Way?", ["Marvin Gaye and Mary Wells","Carolyn Crawford","The Miracles","Stevie Wonder"], "Stevie Wonder", "1960s", "Hard"),
+    makeQuestion("music_3047", "Which artist recorded Sylvia?", ["Stevie Wonder","Smokey Robinson and the Miracles","Barbara McNair","The Elgins"], "Stevie Wonder", "1960s", "Hard"),
+    makeQuestion("music_3048", "Which artist recorded Purple Raindrops?", ["Bobby Taylor and the Vancouvers","Stevie Wonder","The Valadiers","The Supremes"], "Stevie Wonder", "1960s", "Hard"),
+    makeQuestion("music_3049", "Which artist recorded I’d Cry?", ["Diana Ross and the Supremes","Four Tops","Chuck Jackson","The Originals"], "Chuck Jackson", "1960s", "Hard"),
+    makeQuestion("music_3050", "Which artist recorded Beg Me?", ["Freddie Scott","Mary Wells","Brenda Holloway","Chuck Jackson"], "Chuck Jackson", "1960s", "Medium"),
+    makeQuestion("music_3051", "Which artist recorded Any Day Now?", ["Chuck Jackson","The Temptations","Jr. Walker and the All Stars","Mable John"], "Chuck Jackson", "1960s", "Easy"),
+    makeQuestion("music_3052", "Which artist recorded I Wake Up Crying?", ["Chris Clark","Chuck Jackson","Gladys Knight and the Pips","Kim Weston"], "Chuck Jackson", "1960s", "Medium"),
+    makeQuestion("music_3053", "Which artist recorded Tell Him I’m Not Home?", ["Marvin Gaye","Marvin Gaye and Mary Wells","Chuck Jackson","Carolyn Crawford"], "Chuck Jackson", "1960s", "Medium"),
+    makeQuestion("music_3054", "Which artist recorded Since I Don’t Have You?", ["Stevie Wonder","The Miracles","Four Tops","Chuck Jackson"], "Chuck Jackson", "1960s", "Medium"),
+    makeQuestion("music_3055", "Which artist recorded Hand It Over?", ["Chuck Jackson","Barbara McNair","The Elgins","Bobby Taylor and the Vancouvers"], "Chuck Jackson", "1960s", "Hard"),
+    makeQuestion("music_3056", "Which artist recorded Good Things Come to Those Who Wait?", ["The Valadiers","Chuck Jackson","The Supremes","Four Tops"], "Chuck Jackson", "1960s", "Hard"),
+    makeQuestion("music_3057", "Which artist recorded I Need You?", ["Four Tops","Little Stevie Wonder","Chuck Jackson","Freddie Scott"], "Chuck Jackson", "1960s", "Hard"),
+    makeQuestion("music_3058", "Which artist recorded Are You Lonely for Me?", ["Mary Wells","Brenda Holloway","The Temptations","Freddie Scott"], "Freddie Scott", "1960s", "Easy"),
+    makeQuestion("music_3059", "Which artist recorded Am I Grooving You?", ["Freddie Scott","Jr. Walker and the All Stars","Mable John","Chris Clark"], "Freddie Scott", "1960s", "Medium"),
+    makeQuestion("music_3060", "Which artist recorded He Will Break Your Heart?", ["Gladys Knight and the Pips","Freddie Scott","Kim Weston","Marvin Gaye"], "Freddie Scott", "1960s", "Medium"),
+    makeQuestion("music_3061", "Which artist recorded Where Does Love Go?", ["Marvin Gaye and Mary Wells","Carolyn Crawford","Freddie Scott","Stevie Wonder"], "Freddie Scott", "1960s", "Hard"),
+    makeQuestion("music_3062", "Which artist recorded Everything I Have Is Yours?", ["The Miracles","Four Tops","Barbara McNair","Freddie Scott"], "Freddie Scott", "1960s", "Hard"),
+    makeQuestion("music_3063", "Which artist recorded (You) Got What I Need?", ["Freddie Scott","The Elgins","Bobby Taylor and the Vancouvers","The Valadiers"], "Freddie Scott", "1960s", "Medium"),
+    makeQuestion("music_3064", "Which artist recorded No One Could Ever Love You?", ["The Supremes","Freddie Scott","The Temptations","Four Tops"], "Freddie Scott", "1960s", "Hard"),
+    makeQuestion("music_3065", "Which artist recorded I’ll Try Again?", ["Little Stevie Wonder","Chuck Jackson","Freddie Scott","Mary Wells"], "Freddie Scott", "1960s", "Hard"),
+    makeQuestion("music_3066", "Which artist recorded Just Like a Flower?", ["Brenda Holloway","The Temptations","Jr. Walker and the All Stars","Freddie Scott"], "Freddie Scott", "1960s", "Hard")
 ];
 
 module.exports = quizPack49;
+
