@@ -1,707 +1,166 @@
 // quiz_pack48.js
-// 100 Music questions - 1960s
+// PuzzlePilot Bigggggg Quiz - Pack 48
+// Music tagging audit: 100 questions, IDs music_2867-music_2966.
+// Complete, self-contained WordPad replacement.
+
+// Shared tags; each question receives its own artist, decade and optional track tags.
+const artistTags = {
+    "Edwin Starr": ["singers"],
+    "Jr. Walker and the All Stars": ["groups", "motown", "saxophone", "funk"],
+    "Barrett Strong": ["singers", "motown", "tamla", "early motown"],
+    "Mary Wells": ["singers", "motown", "female vocalists"],
+    "Marv Johnson": ["singers", "early motown", "male vocalists", "united artists records"],
+    "Brenda Holloway": ["singers", "motown", "female vocalists"],
+    "Martha and the Vandellas": ["groups", "motown", "girl groups", "female vocal groups"],
+    "The Monitors": ["groups", "motown", "vocal groups"],
+    "Frank Wilson": ["singers", "motown", "northern soul", "producer"],
+    "Patrice Holloway": ["singers", "female vocalists", "capitol records", "northern soul"],
+    "Eddie Holland": ["singers", "motown", "holland dozier holland", "songwriters", "male vocalists"],
+    "Lamont Dozier": ["singers", "songwriters", "holland dozier holland", "male vocalists"],
+    "Barbara Randolph": ["singers", "motown", "female vocalists"],
+    "The Ikettes": ["groups", "girl groups", "female vocal groups", "ike and tina turner"],
+    "Johnnie Taylor": ["singers", "stax records", "male vocalists", "southern soul"],
+    "Carla Thomas": ["singers", "stax records", "female vocalists", "southern soul"],
+    "Mable John": ["singers", "female vocalists"],
+};
+
+const trackTags = {
+    "music_2868": ["cover versions", "1969 singles"],
+    "music_2880": ["cover versions", "1966 singles", "marvin gaye original"],
+    "music_2882": ["1959 singles"],
+    "music_2899": ["1959 singles", "tamla first release"],
+    "music_2919": ["rare records", "1965 pressings"],
+    "music_2932": ["1972 singles", "invictus records"],
+    "music_2964": ["stax records", "1966 singles"],
+    "music_2874": ["1970 singles"],
+    "music_2875": ["1971 singles"],
+    "music_2876": ["1971 singles"],
+    "music_2877": ["1972 singles"],
+    "music_2883": ["1959 b sides"],
+    "music_2900": ["1959 singles"],
+    "music_2920": ["1965 recordings"],
+    "music_2934": ["1974 singles", "abc records"],
+    "music_2946": ["1973 singles"],
+    "music_2965": ["tamla"],
+    "music_2966": ["tamla"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, decade, difficulty) {
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [decade, "soul", "rhythm and blues", correctAnswer.toLowerCase(), "songs", "american",
+            ...artistTags[correctAnswer], ...(trackTags[id] || [])],
+        dailyEligible: true
+    };
+}
 
 const quizPack48 = [
-    {
-        id: "music_2867",
-        category: "Music",
-        question: "Which artist recorded My Weakness Is You?",
-        answers: ["Edwin Starr", "Stevie Wonder", "Marvin Gaye", "Jimmy Ruffin"],
-        correctAnswer: "Edwin Starr"
-    },
-    {
-        id: "music_2868",
-        category: "Music",
-        question: "Which artist recorded These Eyes?",
-        answers: ["The Contours", "Four Tops", "Jr. Walker and the All Stars", "The Temptations"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2869",
-        category: "Music",
-        question: "Which artist recorded Home Cookin?",
-        answers: ["Four Tops", "Jr. Walker and the All Stars", "The Contours", "The Originals"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2870",
-        category: "Music",
-        question: "Which artist recorded What Does It Take to Win Your Love?",
-        answers: ["Jr. Walker and the All Stars", "The Temptations", "Four Tops", "The Contours"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2871",
-        category: "Music",
-        question: "Which artist recorded Come See About Me?",
-        answers: ["The Contours", "Four Tops", "The Temptations", "Jr. Walker and the All Stars"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2872",
-        category: "Music",
-        question: "Which artist recorded Hip City Part 2?",
-        answers: ["Four Tops", "The Contours", "Jr. Walker and the All Stars", "The Originals"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2873",
-        category: "Music",
-        question: "Which artist recorded Shoot Your Shot?",
-        answers: ["Jr. Walker and the All Stars", "The Contours", "Four Tops", "The Temptations"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2874",
-        category: "Music",
-        question: "Which artist recorded Do You See My Love for You Growing?",
-        answers: ["The Temptations", "Jr. Walker and the All Stars", "The Contours", "Four Tops"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2875",
-        category: "Music",
-        question: "Which artist recorded Take Me Girl I’m Ready?",
-        answers: ["The Contours", "Four Tops", "Jr. Walker and the All Stars", "The Originals"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2876",
-        category: "Music",
-        question: "Which artist recorded Way Back Home?",
-        answers: ["Four Tops", "The Contours", "The Temptations", "Jr. Walker and the All Stars"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2877",
-        category: "Music",
-        question: "Which artist recorded Walk in the Night?",
-        answers: ["Jr. Walker and the All Stars", "The Temptations", "Four Tops", "The Contours"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2878",
-        category: "Music",
-        question: "Which artist recorded Shake and Fingerpop?",
-        answers: ["The Contours", "Jr. Walker and the All Stars", "Four Tops", "The Originals"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2879",
-        category: "Music",
-        question: "Which artist recorded Cleo’s Mood?",
-        answers: ["Four Tops", "The Contours", "Jr. Walker and the All Stars", "The Temptations"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2880",
-        category: "Music",
-        question: "Which artist recorded How Sweet It Is to Be Loved by You?",
-        answers: ["Jr. Walker and the All Stars", "Marvin Gaye", "Edwin Starr", "Stevie Wonder"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2881",
-        category: "Music",
-        question: "Which artist recorded Pucker Up Buttercup?",
-        answers: ["The Temptations", "Four Tops", "The Contours", "Jr. Walker and the All Stars"],
-        correctAnswer: "Jr. Walker and the All Stars"
-    },
-    {
-        id: "music_2882",
-        category: "Music",
-        question: "Which artist recorded Money That’s What I Want?",
-        answers: ["Marv Johnson", "Barrett Strong", "Edwin Starr", "Marvin Gaye"],
-        correctAnswer: "Barrett Strong"
-    },
-    {
-        id: "music_2883",
-        category: "Music",
-        question: "Which artist recorded Oh I Apologize?",
-        answers: ["Barrett Strong", "Marv Johnson", "Edwin Starr", "Jimmy Ruffin"],
-        correctAnswer: "Barrett Strong"
-    },
-    {
-        id: "music_2884",
-        category: "Music",
-        question: "Which artist recorded Misery?",
-        answers: ["Marvin Gaye", "Edwin Starr", "Barrett Strong", "Marv Johnson"],
-        correctAnswer: "Barrett Strong"
-    },
-    {
-        id: "music_2885",
-        category: "Music",
-        question: "Which artist recorded You Know What to Do?",
-        answers: ["Marv Johnson", "Barrett Strong", "Jimmy Ruffin", "Edwin Starr"],
-        correctAnswer: "Barrett Strong"
-    },
-    {
-        id: "music_2886",
-        category: "Music",
-        question: "Which artist recorded Yes No Maybe So?",
-        answers: ["Barrett Strong", "Edwin Starr", "Marv Johnson", "Marvin Gaye"],
-        correctAnswer: "Barrett Strong"
-    },
-    {
-        id: "music_2887",
-        category: "Music",
-        question: "Which artist recorded What’s Easy for Two Is Hard for One?",
-        answers: ["Brenda Holloway", "Mary Wells", "Kim Weston", "Tammi Terrell"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2888",
-        category: "Music",
-        question: "Which artist recorded Your Old Standby?",
-        answers: ["Mary Wells", "Kim Weston", "Brenda Holloway", "Tammi Terrell"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2889",
-        category: "Music",
-        question: "Which artist recorded You Lost the Sweetest Boy?",
-        answers: ["Tammi Terrell", "Brenda Holloway", "Mary Wells", "Kim Weston"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2890",
-        category: "Music",
-        question: "Which artist recorded What Love Has Joined Together?",
-        answers: ["Kim Weston", "Mary Wells", "Tammi Terrell", "Brenda Holloway"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2891",
-        category: "Music",
-        question: "Which artist recorded Laughing Boy?",
-        answers: ["Mary Wells", "Brenda Holloway", "Kim Weston", "Tammi Terrell"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2892",
-        category: "Music",
-        question: "Which artist recorded Two Lovers?",
-        answers: ["Brenda Holloway", "Tammi Terrell", "Mary Wells", "Kim Weston"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2893",
-        category: "Music",
-        question: "Which artist recorded The One Who Really Loves You?",
-        answers: ["Kim Weston", "Mary Wells", "Brenda Holloway", "Tammi Terrell"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2894",
-        category: "Music",
-        question: "Which artist recorded You Beat Me to the Punch?",
-        answers: ["Mary Wells", "Tammi Terrell", "Kim Weston", "Brenda Holloway"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2895",
-        category: "Music",
-        question: "Which artist recorded I Don’t Want to Take a Chance?",
-        answers: ["Tammi Terrell", "Brenda Holloway", "Mary Wells", "Kim Weston"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2896",
-        category: "Music",
-        question: "Which artist recorded Bye Bye Baby?",
-        answers: ["Kim Weston", "Mary Wells", "Brenda Holloway", "Tammi Terrell"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2897",
-        category: "Music",
-        question: "Which artist recorded Old Love Let’s Try It Again?",
-        answers: ["Mary Wells", "Brenda Holloway", "Tammi Terrell", "Kim Weston"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2898",
-        category: "Music",
-        question: "Which artist recorded I’m Gonna Stay?",
-        answers: ["Brenda Holloway", "Kim Weston", "Mary Wells", "Tammi Terrell"],
-        correctAnswer: "Mary Wells"
-    },
-    {
-        id: "music_2899",
-        category: "Music",
-        question: "Which artist recorded Come to Me?",
-        answers: ["Marv Johnson", "Barrett Strong", "Edwin Starr", "Jimmy Ruffin"],
-        correctAnswer: "Marv Johnson"
-    },
-    {
-        id: "music_2900",
-        category: "Music",
-        question: "Which artist recorded You Got What It Takes?",
-        answers: ["Barrett Strong", "Edwin Starr", "Marv Johnson", "Marvin Gaye"],
-        correctAnswer: "Marv Johnson"
-    },
-    {
-        id: "music_2901",
-        category: "Music",
-        question: "Which artist recorded I Love the Way You Love?",
-        answers: ["Edwin Starr", "Marv Johnson", "Jimmy Ruffin", "Barrett Strong"],
-        correctAnswer: "Marv Johnson"
-    },
-    {
-        id: "music_2902",
-        category: "Music",
-        question: "Which artist recorded Ain’t Gonna Be That Way?",
-        answers: ["Marv Johnson", "Marvin Gaye", "Barrett Strong", "Edwin Starr"],
-        correctAnswer: "Marv Johnson"
-    },
-    {
-        id: "music_2903",
-        category: "Music",
-        question: "Which artist recorded Move Two Mountains?",
-        answers: ["Jimmy Ruffin", "Barrett Strong", "Edwin Starr", "Marv Johnson"],
-        correctAnswer: "Marv Johnson"
-    },
-    {
-        id: "music_2904",
-        category: "Music",
-        question: "Which artist recorded Happy Days?",
-        answers: ["Barrett Strong", "Marv Johnson", "Marvin Gaye", "Edwin Starr"],
-        correctAnswer: "Marv Johnson"
-    },
-    {
-        id: "music_2905",
-        category: "Music",
-        question: "Which artist recorded Merry-Go-Round?",
-        answers: ["Edwin Starr", "Jimmy Ruffin", "Marv Johnson", "Barrett Strong"],
-        correctAnswer: "Marv Johnson"
-    },
-    {
-        id: "music_2906",
-        category: "Music",
-        question: "Which artist recorded How Can We Tell Him?",
-        answers: ["Marv Johnson", "Barrett Strong", "Edwin Starr", "Marvin Gaye"],
-        correctAnswer: "Marv Johnson"
-    },
-    {
-        id: "music_2907",
-        category: "Music",
-        question: "Which artist recorded You Can Cry on My Shoulder?",
-        answers: ["Kim Weston", "Tammi Terrell", "Mary Wells", "Brenda Holloway"],
-        correctAnswer: "Brenda Holloway"
-    },
-    {
-        id: "music_2908",
-        category: "Music",
-        question: "Which artist recorded Think It Over Before You Break My Heart?",
-        answers: ["Brenda Holloway", "Mary Wells", "Kim Weston", "Tammi Terrell"],
-        correctAnswer: "Brenda Holloway"
-    },
-    {
-        id: "music_2909",
-        category: "Music",
-        question: "Which artist recorded Sad Song?",
-        answers: ["Mary Wells", "Brenda Holloway", "Tammi Terrell", "Kim Weston"],
-        correctAnswer: "Brenda Holloway"
-    },
-    {
-        id: "music_2910",
-        category: "Music",
-        question: "Which artist recorded I’ve Been Good to You?",
-        answers: ["Tammi Terrell", "Kim Weston", "Brenda Holloway", "Mary Wells"],
-        correctAnswer: "Brenda Holloway"
-    },
-    {
-        id: "music_2911",
-        category: "Music",
-        question: "Which artist recorded How Many Times Did You Mean It?",
-        answers: ["Brenda Holloway", "Kim Weston", "Mary Wells", "Tammi Terrell"],
-        correctAnswer: "Brenda Holloway"
-    },
-    {
-        id: "music_2912",
-        category: "Music",
-        question: "Which artist recorded I’ll Be Available?",
-        answers: ["Kim Weston", "Mary Wells", "Tammi Terrell", "Brenda Holloway"],
-        correctAnswer: "Brenda Holloway"
-    },
-    {
-        id: "music_2913",
-        category: "Music",
-        question: "Which artist recorded A Favor for a Girl with a Love Sick Heart?",
-        answers: ["Mary Wells", "Brenda Holloway", "Kim Weston", "Tammi Terrell"],
-        correctAnswer: "Brenda Holloway"
-    },
-    {
-        id: "music_2914",
-        category: "Music",
-        question: "Which artist recorded My World Is Crumbling?",
-        answers: ["Tammi Terrell", "Kim Weston", "Brenda Holloway", "Mary Wells"],
-        correctAnswer: "Brenda Holloway"
-    },
-    {
-        id: "music_2915",
-        category: "Music",
-        question: "Which artist recorded Don’t Compare Me with Her?",
-        answers: ["Brenda Holloway", "Mary Wells", "Tammi Terrell", "Kim Weston"],
-        correctAnswer: "Brenda Holloway"
-    },
-    {
-        id: "music_2916",
-        category: "Music",
-        question: "Which artist recorded Can’t Hold the Feeling Back?",
-        answers: ["Kim Weston", "Tammi Terrell", "Mary Wells", "Brenda Holloway"],
-        correctAnswer: "Brenda Holloway"
-    },
-    {
-        id: "music_2917",
-        category: "Music",
-        question: "Which artist recorded Love Makes Me Do Foolish Things?",
-        answers: ["The Supremes", "Martha and the Vandellas", "The Marvelettes", "The Velvelettes"],
-        correctAnswer: "Martha and the Vandellas"
-    },
-    {
-        id: "music_2918",
-        category: "Music",
-        question: "Which artist recorded Take a Look at Your Baby?",
-        answers: ["The Monitors", "The Contours", "The Originals", "Four Tops"],
-        correctAnswer: "The Monitors"
-    },
-    {
-        id: "music_2919",
-        category: "Music",
-        question: "Which artist recorded Do I Love You Indeed I Do?",
-        answers: ["Frank Wilson", "Edwin Starr", "Marv Johnson", "Barrett Strong"],
-        correctAnswer: "Frank Wilson"
-    },
-    {
-        id: "music_2920",
-        category: "Music",
-        question: "Which artist recorded Sweeter as the Days Go By?",
-        answers: ["Barrett Strong", "Frank Wilson", "Edwin Starr", "Marv Johnson"],
-        correctAnswer: "Frank Wilson"
-    },
-    {
-        id: "music_2921",
-        category: "Music",
-        question: "Which artist recorded The Touch of Venus?",
-        answers: ["Brenda Holloway", "Patrice Holloway", "Kim Weston", "Tammi Terrell"],
-        correctAnswer: "Patrice Holloway"
-    },
-    {
-        id: "music_2922",
-        category: "Music",
-        question: "Which artist recorded Love and Desire?",
-        answers: ["Kim Weston", "Brenda Holloway", "Patrice Holloway", "Mary Wells"],
-        correctAnswer: "Patrice Holloway"
-    },
-    {
-        id: "music_2923",
-        category: "Music",
-        question: "Which artist recorded Stay with Your Own Kind?",
-        answers: ["Patrice Holloway", "Mary Wells", "Brenda Holloway", "Kim Weston"],
-        correctAnswer: "Patrice Holloway"
-    },
-    {
-        id: "music_2924",
-        category: "Music",
-        question: "Which artist recorded Just Ain’t Enough Love?",
-        answers: ["Eddie Holland", "Lamont Dozier", "Barrett Strong", "Marv Johnson"],
-        correctAnswer: "Eddie Holland"
-    },
-    {
-        id: "music_2925",
-        category: "Music",
-        question: "Which artist recorded Leaving Here?",
-        answers: ["Lamont Dozier", "Barrett Strong", "Eddie Holland", "Edwin Starr"],
-        correctAnswer: "Eddie Holland"
-    },
-    {
-        id: "music_2926",
-        category: "Music",
-        question: "Which artist recorded Jamie?",
-        answers: ["Barrett Strong", "Eddie Holland", "Marv Johnson", "Lamont Dozier"],
-        correctAnswer: "Eddie Holland"
-    },
-    {
-        id: "music_2927",
-        category: "Music",
-        question: "Which artist recorded If Cleopatra Took a Chance?",
-        answers: ["Eddie Holland", "Lamont Dozier", "Edwin Starr", "Barrett Strong"],
-        correctAnswer: "Eddie Holland"
-    },
-    {
-        id: "music_2928",
-        category: "Music",
-        question: "Which artist recorded Candy to Me?",
-        answers: ["Lamont Dozier", "Marv Johnson", "Barrett Strong", "Eddie Holland"],
-        correctAnswer: "Eddie Holland"
-    },
-    {
-        id: "music_2929",
-        category: "Music",
-        question: "Which artist recorded I’m on the Outside Looking In?",
-        answers: ["Barrett Strong", "Eddie Holland", "Lamont Dozier", "Edwin Starr"],
-        correctAnswer: "Eddie Holland"
-    },
-    {
-        id: "music_2930",
-        category: "Music",
-        question: "Which artist recorded Everybody’s Going?",
-        answers: ["Eddie Holland", "Marv Johnson", "Lamont Dozier", "Barrett Strong"],
-        correctAnswer: "Eddie Holland"
-    },
-    {
-        id: "music_2931",
-        category: "Music",
-        question: "Which artist recorded Baby Shake?",
-        answers: ["Lamont Dozier", "Barrett Strong", "Eddie Holland", "Marv Johnson"],
-        correctAnswer: "Eddie Holland"
-    },
-    {
-        id: "music_2932",
-        category: "Music",
-        question: "Which artist recorded Why Can’t We Be Lovers?",
-        answers: ["Eddie Holland", "Lamont Dozier", "Barrett Strong", "Marv Johnson"],
-        correctAnswer: "Lamont Dozier"
-    },
-    {
-        id: "music_2933",
-        category: "Music",
-        question: "Which artist recorded Dearest One?",
-        answers: ["Lamont Dozier", "Eddie Holland", "Edwin Starr", "Barrett Strong"],
-        correctAnswer: "Lamont Dozier"
-    },
-    {
-        id: "music_2934",
-        category: "Music",
-        question: "Which artist recorded Fish Ain’t Bitin’?",
-        answers: ["Barrett Strong", "Eddie Holland", "Lamont Dozier", "Marv Johnson"],
-        correctAnswer: "Lamont Dozier"
-    },
-    {
-        id: "music_2935",
-        category: "Music",
-        question: "Which artist recorded I Got a Feeling?",
-        answers: ["Barbara Randolph", "Mable John", "Carla Thomas", "Patrice Holloway"],
-        correctAnswer: "Barbara Randolph"
-    },
-    {
-        id: "music_2936",
-        category: "Music",
-        question: "Which artist recorded Can I Get a Witness?",
-        answers: ["Mable John", "Carla Thomas", "Barbara Randolph", "Patrice Holloway"],
-        correctAnswer: "Barbara Randolph"
-    },
-    {
-        id: "music_2937",
-        category: "Music",
-        question: "Which artist recorded You Got Me Hurtin’ All Over?",
-        answers: ["Carla Thomas", "Barbara Randolph", "Patrice Holloway", "Mable John"],
-        correctAnswer: "Barbara Randolph"
-    },
-    {
-        id: "music_2938",
-        category: "Music",
-        question: "Which artist recorded I’m So Thankful?",
-        answers: ["The Ikettes", "The Marvelettes", "The Velvelettes", "The Supremes"],
-        correctAnswer: "The Ikettes"
-    },
-    {
-        id: "music_2939",
-        category: "Music",
-        question: "Which artist recorded Peaches ’N’ Cream?",
-        answers: ["The Velvelettes", "The Ikettes", "The Marvelettes", "Martha and the Vandellas"],
-        correctAnswer: "The Ikettes"
-    },
-    {
-        id: "music_2940",
-        category: "Music",
-        question: "Which artist recorded I’m Blue The Gong-Gong Song?",
-        answers: ["The Marvelettes", "The Velvelettes", "The Ikettes", "The Supremes"],
-        correctAnswer: "The Ikettes"
-    },
-    {
-        id: "music_2941",
-        category: "Music",
-        question: "Which artist recorded Camel Walk?",
-        answers: ["The Ikettes", "The Velvelettes", "The Marvelettes", "Martha and the Vandellas"],
-        correctAnswer: "The Ikettes"
-    },
-    {
-        id: "music_2942",
-        category: "Music",
-        question: "Which artist recorded Troubles on My Mind?",
-        answers: ["The Velvelettes", "The Marvelettes", "The Supremes", "The Ikettes"],
-        correctAnswer: "The Ikettes"
-    },
-    {
-        id: "music_2943",
-        category: "Music",
-        question: "Which artist recorded What’cha Gonna Do?",
-        answers: ["The Marvelettes", "The Ikettes", "The Velvelettes", "Martha and the Vandellas"],
-        correctAnswer: "The Ikettes"
-    },
-    {
-        id: "music_2944",
-        category: "Music",
-        question: "Which artist recorded I Had a Dream?",
-        answers: ["Johnnie Taylor", "Otis Redding", "Wilson Pickett", "Eddie Floyd"],
-        correctAnswer: "Johnnie Taylor"
-    },
-    {
-        id: "music_2945",
-        category: "Music",
-        question: "Which artist recorded Changes?",
-        answers: ["Wilson Pickett", "Eddie Floyd", "Johnnie Taylor", "Otis Redding"],
-        correctAnswer: "Johnnie Taylor"
-    },
-    {
-        id: "music_2946",
-        category: "Music",
-        question: "Which artist recorded I Believe in You You Believe in Me?",
-        answers: ["Eddie Floyd", "Johnnie Taylor", "Otis Redding", "Wilson Pickett"],
-        correctAnswer: "Johnnie Taylor"
-    },
-    {
-        id: "music_2947",
-        category: "Music",
-        question: "Which artist recorded Who’s Making Love?",
-        answers: ["Johnnie Taylor", "Wilson Pickett", "Eddie Floyd", "Otis Redding"],
-        correctAnswer: "Johnnie Taylor"
-    },
-    {
-        id: "music_2948",
-        category: "Music",
-        question: "Which artist recorded Take Care of Your Homework?",
-        answers: ["Otis Redding", "Eddie Floyd", "Wilson Pickett", "Johnnie Taylor"],
-        correctAnswer: "Johnnie Taylor"
-    },
-    {
-        id: "music_2949",
-        category: "Music",
-        question: "Which artist recorded Testify I Wonna?",
-        answers: ["Wilson Pickett", "Johnnie Taylor", "Otis Redding", "Eddie Floyd"],
-        correctAnswer: "Johnnie Taylor"
-    },
-    {
-        id: "music_2950",
-        category: "Music",
-        question: "Which artist recorded Somebody’s Sleeping in My Bed?",
-        answers: ["Eddie Floyd", "Wilson Pickett", "Johnnie Taylor", "Otis Redding"],
-        correctAnswer: "Johnnie Taylor"
-    },
-    {
-        id: "music_2951",
-        category: "Music",
-        question: "Which artist recorded I Could Never Be President?",
-        answers: ["Johnnie Taylor", "Otis Redding", "Eddie Floyd", "Wilson Pickett"],
-        correctAnswer: "Johnnie Taylor"
-    },
-    {
-        id: "music_2952",
-        category: "Music",
-        question: "Which artist recorded Toe Hold?",
-        answers: ["Otis Redding", "Johnnie Taylor", "Wilson Pickett", "Eddie Floyd"],
-        correctAnswer: "Johnnie Taylor"
-    },
-    {
-        id: "music_2953",
-        category: "Music",
-        question: "Which artist recorded Next Time?",
-        answers: ["Wilson Pickett", "Eddie Floyd", "Otis Redding", "Johnnie Taylor"],
-        correctAnswer: "Johnnie Taylor"
-    },
-    {
-        id: "music_2954",
-        category: "Music",
-        question: "Which artist recorded Comfort Me?",
-        answers: ["Carla Thomas", "Mable John", "Barbara Randolph", "Patrice Holloway"],
-        correctAnswer: "Carla Thomas"
-    },
-    {
-        id: "music_2955",
-        category: "Music",
-        question: "Which artist recorded Let Me Be Good to You?",
-        answers: ["Mable John", "Barbara Randolph", "Carla Thomas", "Patrice Holloway"],
-        correctAnswer: "Carla Thomas"
-    },
-    {
-        id: "music_2956",
-        category: "Music",
-        question: "Which artist recorded B-A-B-Y?",
-        answers: ["Barbara Randolph", "Carla Thomas", "Mable John", "Patrice Holloway"],
-        correctAnswer: "Carla Thomas"
-    },
-    {
-        id: "music_2957",
-        category: "Music",
-        question: "Which artist recorded I’ve Got No Time to Lose?",
-        answers: ["Carla Thomas", "Patrice Holloway", "Mable John", "Barbara Randolph"],
-        correctAnswer: "Carla Thomas"
-    },
-    {
-        id: "music_2958",
-        category: "Music",
-        question: "Which artist recorded A Love of My Own?",
-        answers: ["Mable John", "Carla Thomas", "Patrice Holloway", "Barbara Randolph"],
-        correctAnswer: "Carla Thomas"
-    },
-    {
-        id: "music_2959",
-        category: "Music",
-        question: "Which artist recorded What a Fool I’ve Been?",
-        answers: ["Patrice Holloway", "Barbara Randolph", "Carla Thomas", "Mable John"],
-        correctAnswer: "Carla Thomas"
-    },
-    {
-        id: "music_2960",
-        category: "Music",
-        question: "Which artist recorded I Like What You’re Doing to Me?",
-        answers: ["Carla Thomas", "Mable John", "Barbara Randolph", "Patrice Holloway"],
-        correctAnswer: "Carla Thomas"
-    },
-    {
-        id: "music_2961",
-        category: "Music",
-        question: "Which artist recorded Pick Up the Pieces?",
-        answers: ["Barbara Randolph", "Carla Thomas", "Mable John", "Patrice Holloway"],
-        correctAnswer: "Carla Thomas"
-    },
-    {
-        id: "music_2962",
-        category: "Music",
-        question: "Which artist recorded Separation?",
-        answers: ["Mable John", "Patrice Holloway", "Carla Thomas", "Barbara Randolph"],
-        correctAnswer: "Carla Thomas"
-    },
-    {
-        id: "music_2963",
-        category: "Music",
-        question: "Which artist recorded Something Good Is Going to Happen to You?",
-        answers: ["Carla Thomas", "Barbara Randolph", "Patrice Holloway", "Mable John"],
-        correctAnswer: "Carla Thomas"
-    },
-    {
-        id: "music_2964",
-        category: "Music",
-        question: "Which artist recorded Your Good Thing Is About to End?",
-        answers: ["Mable John", "Carla Thomas", "Barbara Randolph", "Patrice Holloway"],
-        correctAnswer: "Mable John"
-    },
-    {
-        id: "music_2965",
-        category: "Music",
-        question: "Which artist recorded Who Wouldn’t Love a Man Like That?",
-        answers: ["Carla Thomas", "Barbara Randolph", "Mable John", "Patrice Holloway"],
-        correctAnswer: "Mable John"
-    },
-    {
-        id: "music_2966",
-        category: "Music",
-        question: "Which artist recorded No Love?",
-        answers: ["Barbara Randolph", "Mable John", "Patrice Holloway", "Carla Thomas"],
-        correctAnswer: "Mable John"
-    }
+    makeQuestion("music_2867","Which artist recorded My Weakness Is You?",["Edwin Starr", "Stevie Wonder", "Marvin Gaye", "Jimmy Ruffin"],"Edwin Starr","1960s","Hard"),
+    makeQuestion("music_2868","Which artist recorded These Eyes?",["The Contours", "Four Tops", "Jr. Walker and the All Stars", "The Temptations"],"Jr. Walker and the All Stars","1960s","Easy"),
+    makeQuestion("music_2869","Which artist recorded Home Cookin'?",["Four Tops", "Jr. Walker and the All Stars", "The Contours", "The Originals"],"Jr. Walker and the All Stars","1960s","Medium"),
+    makeQuestion("music_2870","Which artist recorded What Does It Take (to Win Your Love)?",["Jr. Walker and the All Stars", "The Temptations", "Four Tops", "The Contours"],"Jr. Walker and the All Stars","1960s","Easy"),
+    makeQuestion("music_2871","Which artist recorded Come See About Me?",["The Contours", "Four Tops", "The Temptations", "Jr. Walker and the All Stars"],"Jr. Walker and the All Stars","1960s","Easy"),
+    makeQuestion("music_2872","Which artist recorded Hip City Part 2?",["Four Tops", "The Contours", "Jr. Walker and the All Stars", "The Originals"],"Jr. Walker and the All Stars","1960s","Hard"),
+    makeQuestion("music_2873","Which artist recorded Shoot Your Shot?",["Jr. Walker and the All Stars", "The Contours", "Four Tops", "The Temptations"],"Jr. Walker and the All Stars","1960s","Hard"),
+    makeQuestion("music_2874","Which artist recorded Do You See My Love (For You Growing)?",["The Temptations", "Jr. Walker and the All Stars", "The Contours", "Four Tops"],"Jr. Walker and the All Stars","1970s","Hard"),
+    makeQuestion("music_2875","Which artist recorded Take Me Girl, I'm Ready?",["The Contours", "Four Tops", "Jr. Walker and the All Stars", "The Originals"],"Jr. Walker and the All Stars","1970s","Hard"),
+    makeQuestion("music_2876","Which artist recorded Way Back Home?",["Four Tops", "The Contours", "The Temptations", "Jr. Walker and the All Stars"],"Jr. Walker and the All Stars","1970s","Medium"),
+    makeQuestion("music_2877","Which artist recorded Walk in the Night?",["Jr. Walker and the All Stars", "The Temptations", "Four Tops", "The Contours"],"Jr. Walker and the All Stars","1970s","Easy"),
+    makeQuestion("music_2878","Which artist recorded Shake and Fingerpop?",["The Contours", "Jr. Walker and the All Stars", "Four Tops", "The Originals"],"Jr. Walker and the All Stars","1960s","Medium"),
+    makeQuestion("music_2879","Which artist recorded Cleo's Mood?",["Four Tops", "The Contours", "Jr. Walker and the All Stars", "The Temptations"],"Jr. Walker and the All Stars","1960s","Hard"),
+    makeQuestion("music_2880","Which Motown act had a hit in 1966 with a cover of Marvin Gaye's How Sweet It Is (To Be Loved by You)?",["Jr. Walker and the All Stars", "Marvin Gaye", "Edwin Starr", "Stevie Wonder"],"Jr. Walker and the All Stars","1960s","Easy"),
+    makeQuestion("music_2881","Which artist recorded Pucker Up Buttercup?",["The Temptations", "Four Tops", "The Contours", "Jr. Walker and the All Stars"],"Jr. Walker and the All Stars","1960s","Medium"),
+    makeQuestion("music_2882","Which artist recorded Money (That's What I Want)?",["Marv Johnson", "Barrett Strong", "Edwin Starr", "Marvin Gaye"],"Barrett Strong","1950s","Easy"),
+    makeQuestion("music_2883","Which artist recorded Oh I Apologize?",["Barrett Strong", "Marv Johnson", "Edwin Starr", "Jimmy Ruffin"],"Barrett Strong","1950s","Hard"),
+    makeQuestion("music_2884","Which artist recorded Misery?",["Marvin Gaye", "Edwin Starr", "Barrett Strong", "Marv Johnson"],"Barrett Strong","1960s","Hard"),
+    makeQuestion("music_2885","Which artist recorded You Know What to Do?",["Marv Johnson", "Barrett Strong", "Jimmy Ruffin", "Edwin Starr"],"Barrett Strong","1960s","Hard"),
+    makeQuestion("music_2886","Which artist recorded Yes No Maybe So?",["Barrett Strong", "Edwin Starr", "Marv Johnson", "Marvin Gaye"],"Barrett Strong","1960s","Hard"),
+    makeQuestion("music_2887","Which artist recorded What's Easy for Two Is So Hard for One?",["Brenda Holloway", "Mary Wells", "Kim Weston", "Tammi Terrell"],"Mary Wells","1960s","Hard"),
+    makeQuestion("music_2888","Which artist recorded Your Old Standby?",["Mary Wells", "Kim Weston", "Brenda Holloway", "Tammi Terrell"],"Mary Wells","1960s","Medium"),
+    makeQuestion("music_2889","Which artist recorded You Lost the Sweetest Boy?",["Tammi Terrell", "Brenda Holloway", "Mary Wells", "Kim Weston"],"Mary Wells","1960s","Medium"),
+    makeQuestion("music_2890","Which artist recorded What Love Has Joined Together?",["Kim Weston", "Mary Wells", "Tammi Terrell", "Brenda Holloway"],"Mary Wells","1960s","Hard"),
+    makeQuestion("music_2891","Which artist recorded Laughing Boy?",["Mary Wells", "Brenda Holloway", "Kim Weston", "Tammi Terrell"],"Mary Wells","1960s","Medium"),
+    makeQuestion("music_2892","Which artist recorded Two Lovers?",["Brenda Holloway", "Tammi Terrell", "Mary Wells", "Kim Weston"],"Mary Wells","1960s","Easy"),
+    makeQuestion("music_2893","Which artist recorded The One Who Really Loves You?",["Kim Weston", "Mary Wells", "Brenda Holloway", "Tammi Terrell"],"Mary Wells","1960s","Easy"),
+    makeQuestion("music_2894","Which artist recorded You Beat Me to the Punch?",["Mary Wells", "Tammi Terrell", "Kim Weston", "Brenda Holloway"],"Mary Wells","1960s","Easy"),
+    makeQuestion("music_2895","Which artist recorded I Don’t Want to Take a Chance?",["Tammi Terrell", "Brenda Holloway", "Mary Wells", "Kim Weston"],"Mary Wells","1960s","Medium"),
+    makeQuestion("music_2896","Which artist recorded Bye Bye Baby?",["Kim Weston", "Mary Wells", "Brenda Holloway", "Tammi Terrell"],"Mary Wells","1960s","Medium"),
+    makeQuestion("music_2897","Which artist recorded Old Love Let’s Try It Again?",["Mary Wells", "Brenda Holloway", "Tammi Terrell", "Kim Weston"],"Mary Wells","1960s","Hard"),
+    makeQuestion("music_2898","Which artist recorded I’m Gonna Stay?",["Brenda Holloway", "Kim Weston", "Mary Wells", "Tammi Terrell"],"Mary Wells","1960s","Hard"),
+    makeQuestion("music_2899","Which artist recorded Come to Me?",["Marv Johnson", "Barrett Strong", "Edwin Starr", "Jimmy Ruffin"],"Marv Johnson","1950s","Easy"),
+    makeQuestion("music_2900","Which artist recorded You Got What It Takes?",["Barrett Strong", "Edwin Starr", "Marv Johnson", "Marvin Gaye"],"Marv Johnson","1950s","Easy"),
+    makeQuestion("music_2901","Which artist recorded I Love the Way You Love?",["Edwin Starr", "Marv Johnson", "Jimmy Ruffin", "Barrett Strong"],"Marv Johnson","1960s","Medium"),
+    makeQuestion("music_2902","Which artist recorded Ain’t Gonna Be That Way?",["Marv Johnson", "Marvin Gaye", "Barrett Strong", "Edwin Starr"],"Marv Johnson","1960s","Hard"),
+    makeQuestion("music_2903","Which artist recorded (You've Got To) Move Two Mountains?",["Jimmy Ruffin", "Barrett Strong", "Edwin Starr", "Marv Johnson"],"Marv Johnson","1960s","Medium"),
+    makeQuestion("music_2904","Which artist recorded Happy Days?",["Barrett Strong", "Marv Johnson", "Marvin Gaye", "Edwin Starr"],"Marv Johnson","1960s","Hard"),
+    makeQuestion("music_2905","Which artist recorded Merry-Go-Round?",["Edwin Starr", "Jimmy Ruffin", "Marv Johnson", "Barrett Strong"],"Marv Johnson","1960s","Hard"),
+    makeQuestion("music_2906","Which artist recorded How Can We Tell Him?",["Marv Johnson", "Barrett Strong", "Edwin Starr", "Marvin Gaye"],"Marv Johnson","1960s","Hard"),
+    makeQuestion("music_2907","Which artist recorded You Can Cry on My Shoulder?",["Kim Weston", "Tammi Terrell", "Mary Wells", "Brenda Holloway"],"Brenda Holloway","1960s","Medium"),
+    makeQuestion("music_2908","Which artist recorded Think It Over Before You Break My Heart?",["Brenda Holloway", "Mary Wells", "Kim Weston", "Tammi Terrell"],"Brenda Holloway","1960s","Hard"),
+    makeQuestion("music_2909","Which artist recorded Sad Song?",["Mary Wells", "Brenda Holloway", "Tammi Terrell", "Kim Weston"],"Brenda Holloway","1960s","Hard"),
+    makeQuestion("music_2910","Which artist recorded I’ve Been Good to You?",["Tammi Terrell", "Kim Weston", "Brenda Holloway", "Mary Wells"],"Brenda Holloway","1960s","Medium"),
+    makeQuestion("music_2911","Which artist recorded How Many Times Did You Mean It?",["Brenda Holloway", "Kim Weston", "Mary Wells", "Tammi Terrell"],"Brenda Holloway","1960s","Hard"),
+    makeQuestion("music_2912","Which artist recorded I’ll Be Available?",["Kim Weston", "Mary Wells", "Tammi Terrell", "Brenda Holloway"],"Brenda Holloway","1960s","Hard"),
+    makeQuestion("music_2913","Which artist recorded A Favor for a Girl with a Love Sick Heart?",["Mary Wells", "Brenda Holloway", "Kim Weston", "Tammi Terrell"],"Brenda Holloway","1960s","Hard"),
+    makeQuestion("music_2914","Which artist recorded My World Is Crumbling?",["Tammi Terrell", "Kim Weston", "Brenda Holloway", "Mary Wells"],"Brenda Holloway","1960s","Hard"),
+    makeQuestion("music_2915","Which artist recorded Don’t Compare Me with Her?",["Brenda Holloway", "Mary Wells", "Tammi Terrell", "Kim Weston"],"Brenda Holloway","1960s","Hard"),
+    makeQuestion("music_2916","Which artist recorded Can’t Hold the Feeling Back?",["Kim Weston", "Tammi Terrell", "Mary Wells", "Brenda Holloway"],"Brenda Holloway","1960s","Hard"),
+    makeQuestion("music_2917","Which artist recorded Love Makes Me Do Foolish Things?",["The Supremes", "Martha and the Vandellas", "The Marvelettes", "The Velvelettes"],"Martha and the Vandellas","1960s","Medium"),
+    makeQuestion("music_2918","Which artist recorded Take a Look at Your Baby?",["The Monitors", "The Contours", "The Originals", "Four Tops"],"The Monitors","1960s","Hard"),
+    makeQuestion("music_2919","Which artist recorded Do I Love You (Indeed I Do)?",["Frank Wilson", "Edwin Starr", "Marv Johnson", "Barrett Strong"],"Frank Wilson","1960s","Easy"),
+    makeQuestion("music_2920","Which artist recorded Sweeter as the Days Go By?",["Barrett Strong", "Frank Wilson", "Edwin Starr", "Marv Johnson"],"Frank Wilson","1960s","Hard"),
+    makeQuestion("music_2921","Which artist recorded The Touch of Venus?",["Brenda Holloway", "Patrice Holloway", "Kim Weston", "Tammi Terrell"],"Patrice Holloway","1960s","Hard"),
+    makeQuestion("music_2922","Which artist recorded Love and Desire?",["Kim Weston", "Brenda Holloway", "Patrice Holloway", "Mary Wells"],"Patrice Holloway","1960s","Hard"),
+    makeQuestion("music_2923","Which artist recorded Stay with Your Own Kind?",["Patrice Holloway", "Mary Wells", "Brenda Holloway", "Kim Weston"],"Patrice Holloway","1960s","Hard"),
+    makeQuestion("music_2924","Which artist recorded Just Ain’t Enough Love?",["Eddie Holland", "Lamont Dozier", "Barrett Strong", "Marv Johnson"],"Eddie Holland","1960s","Hard"),
+    makeQuestion("music_2925","Which artist recorded Leaving Here?",["Lamont Dozier", "Barrett Strong", "Eddie Holland", "Edwin Starr"],"Eddie Holland","1960s","Easy"),
+    makeQuestion("music_2926","Which artist recorded Jamie?",["Barrett Strong", "Eddie Holland", "Marv Johnson", "Lamont Dozier"],"Eddie Holland","1960s","Easy"),
+    makeQuestion("music_2927","Which artist recorded If Cleopatra Took a Chance?",["Eddie Holland", "Lamont Dozier", "Edwin Starr", "Barrett Strong"],"Eddie Holland","1960s","Hard"),
+    makeQuestion("music_2928","Which artist recorded Candy to Me?",["Lamont Dozier", "Marv Johnson", "Barrett Strong", "Eddie Holland"],"Eddie Holland","1960s","Hard"),
+    makeQuestion("music_2929","Which artist recorded I’m on the Outside Looking In?",["Barrett Strong", "Eddie Holland", "Lamont Dozier", "Edwin Starr"],"Eddie Holland","1960s","Hard"),
+    makeQuestion("music_2930","Which artist recorded Everybody’s Going?",["Eddie Holland", "Marv Johnson", "Lamont Dozier", "Barrett Strong"],"Eddie Holland","1960s","Hard"),
+    makeQuestion("music_2931","Which artist recorded Baby Shake?",["Lamont Dozier", "Barrett Strong", "Eddie Holland", "Marv Johnson"],"Eddie Holland","1960s","Hard"),
+    makeQuestion("music_2932","Which artist recorded Why Can't We Be Lovers?",["Eddie Holland", "Lamont Dozier", "Barrett Strong", "Marv Johnson"],"Lamont Dozier","1970s","Medium"),
+    makeQuestion("music_2933","Which artist recorded Dearest One?",["Lamont Dozier", "Eddie Holland", "Edwin Starr", "Barrett Strong"],"Lamont Dozier","1960s","Hard"),
+    makeQuestion("music_2934","Which artist recorded Fish Ain’t Bitin’?",["Barrett Strong", "Eddie Holland", "Lamont Dozier", "Marv Johnson"],"Lamont Dozier","1970s","Hard"),
+    makeQuestion("music_2935","Which artist recorded I Got a Feeling?",["Barbara Randolph", "Mable John", "Carla Thomas", "Patrice Holloway"],"Barbara Randolph","1960s","Medium"),
+    makeQuestion("music_2936","Which artist recorded Can I Get a Witness?",["Mable John", "Carla Thomas", "Barbara Randolph", "Patrice Holloway"],"Barbara Randolph","1960s","Medium"),
+    makeQuestion("music_2937","Which artist recorded You Got Me Hurtin’ All Over?",["Carla Thomas", "Barbara Randolph", "Patrice Holloway", "Mable John"],"Barbara Randolph","1960s","Hard"),
+    makeQuestion("music_2938","Which artist recorded I’m So Thankful?",["The Ikettes", "The Marvelettes", "The Velvelettes", "The Supremes"],"The Ikettes","1960s","Hard"),
+    makeQuestion("music_2939","Which artist recorded Peaches ’N’ Cream?",["The Velvelettes", "The Ikettes", "The Marvelettes", "Martha and the Vandellas"],"The Ikettes","1960s","Easy"),
+    makeQuestion("music_2940","Which artist recorded I'm Blue (The Gong-Gong Song)?",["The Marvelettes", "The Velvelettes", "The Ikettes", "The Supremes"],"The Ikettes","1960s","Easy"),
+    makeQuestion("music_2941","Which artist recorded Camel Walk?",["The Ikettes", "The Velvelettes", "The Marvelettes", "Martha and the Vandellas"],"The Ikettes","1960s","Hard"),
+    makeQuestion("music_2942","Which artist recorded Troubles on My Mind?",["The Velvelettes", "The Marvelettes", "The Supremes", "The Ikettes"],"The Ikettes","1960s","Hard"),
+    makeQuestion("music_2943","Which artist recorded What’cha Gonna Do?",["The Marvelettes", "The Ikettes", "The Velvelettes", "Martha and the Vandellas"],"The Ikettes","1960s","Hard"),
+    makeQuestion("music_2944","Which artist recorded I Had a Dream?",["Johnnie Taylor", "Otis Redding", "Wilson Pickett", "Eddie Floyd"],"Johnnie Taylor","1960s","Medium"),
+    makeQuestion("music_2945","Which artist recorded Changes?",["Wilson Pickett", "Eddie Floyd", "Johnnie Taylor", "Otis Redding"],"Johnnie Taylor","1960s","Hard"),
+    makeQuestion("music_2946","Which artist recorded I Believe in You (You Believe in Me)?",["Eddie Floyd", "Johnnie Taylor", "Otis Redding", "Wilson Pickett"],"Johnnie Taylor","1970s","Medium"),
+    makeQuestion("music_2947","Which artist recorded Who's Making Love?",["Johnnie Taylor", "Wilson Pickett", "Eddie Floyd", "Otis Redding"],"Johnnie Taylor","1960s","Easy"),
+    makeQuestion("music_2948","Which artist recorded Take Care of Your Homework?",["Otis Redding", "Eddie Floyd", "Wilson Pickett", "Johnnie Taylor"],"Johnnie Taylor","1960s","Medium"),
+    makeQuestion("music_2949","Which artist recorded Testify (I Wonna)?",["Wilson Pickett", "Johnnie Taylor", "Otis Redding", "Eddie Floyd"],"Johnnie Taylor","1960s","Hard"),
+    makeQuestion("music_2950","Which artist recorded Somebody’s Sleeping in My Bed?",["Eddie Floyd", "Wilson Pickett", "Johnnie Taylor", "Otis Redding"],"Johnnie Taylor","1960s","Hard"),
+    makeQuestion("music_2951","Which artist recorded I Could Never Be President?",["Johnnie Taylor", "Otis Redding", "Eddie Floyd", "Wilson Pickett"],"Johnnie Taylor","1960s","Hard"),
+    makeQuestion("music_2952","Which artist recorded Toe Hold?",["Otis Redding", "Johnnie Taylor", "Wilson Pickett", "Eddie Floyd"],"Johnnie Taylor","1960s","Medium"),
+    makeQuestion("music_2953","Which artist recorded Next Time?",["Wilson Pickett", "Eddie Floyd", "Otis Redding", "Johnnie Taylor"],"Johnnie Taylor","1960s","Hard"),
+    makeQuestion("music_2954","Which artist recorded Comfort Me?",["Carla Thomas", "Mable John", "Barbara Randolph", "Patrice Holloway"],"Carla Thomas","1960s","Medium"),
+    makeQuestion("music_2955","Which artist recorded Let Me Be Good to You?",["Mable John", "Barbara Randolph", "Carla Thomas", "Patrice Holloway"],"Carla Thomas","1960s","Medium"),
+    makeQuestion("music_2956","Which artist recorded B-A-B-Y?",["Barbara Randolph", "Carla Thomas", "Mable John", "Patrice Holloway"],"Carla Thomas","1960s","Easy"),
+    makeQuestion("music_2957","Which artist recorded I’ve Got No Time to Lose?",["Carla Thomas", "Patrice Holloway", "Mable John", "Barbara Randolph"],"Carla Thomas","1960s","Hard"),
+    makeQuestion("music_2958","Which artist recorded A Love of My Own?",["Mable John", "Carla Thomas", "Patrice Holloway", "Barbara Randolph"],"Carla Thomas","1960s","Hard"),
+    makeQuestion("music_2959","Which artist recorded What a Fool I’ve Been?",["Patrice Holloway", "Barbara Randolph", "Carla Thomas", "Mable John"],"Carla Thomas","1960s","Hard"),
+    makeQuestion("music_2960","Which artist recorded I Like What You’re Doing to Me?",["Carla Thomas", "Mable John", "Barbara Randolph", "Patrice Holloway"],"Carla Thomas","1960s","Medium"),
+    makeQuestion("music_2961","Which artist recorded Pick Up the Pieces?",["Barbara Randolph", "Carla Thomas", "Mable John", "Patrice Holloway"],"Carla Thomas","1960s","Hard"),
+    makeQuestion("music_2962","Which artist recorded Separation?",["Mable John", "Patrice Holloway", "Carla Thomas", "Barbara Randolph"],"Carla Thomas","1960s","Hard"),
+    makeQuestion("music_2963","Which artist recorded Something Good Is Going to Happen to You?",["Carla Thomas", "Barbara Randolph", "Patrice Holloway", "Mable John"],"Carla Thomas","1960s","Hard"),
+    makeQuestion("music_2964","Which artist recorded Your Good Thing (Is About to End)?",["Mable John", "Carla Thomas", "Barbara Randolph", "Patrice Holloway"],"Mable John","1960s","Easy"),
+    makeQuestion("music_2965","Which artist recorded Who Wouldn’t Love a Man Like That?",["Carla Thomas", "Barbara Randolph", "Mable John", "Patrice Holloway"],"Mable John","1960s","Hard"),
+    makeQuestion("music_2966","Which artist recorded No Love?",["Barbara Randolph", "Mable John", "Patrice Holloway", "Carla Thomas"],"Mable John","1960s","Hard")
 ];
 
 module.exports = quizPack48;
+
