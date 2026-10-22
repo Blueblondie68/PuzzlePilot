@@ -1,716 +1,294 @@
 // quiz_pack55.js
-// PuzzlePilot Big Quiz
-// Music Pack 55
-// 100 questions
-// IDs: music_3567 to music_3666
+// PuzzlePilot Bigggggg Quiz — Pack 55
+// Complete 100-question replacement, checked against the original.
+// Avoids the repeated Dollar-members question from Pack 33.
+// Artist, recording, era and specialist tags generated at runtime.
+
+const artistTags = {
+    "Howard Jones": ["synth-pop", "new wave", "pop", "male singers", "british", "solo artists", "keyboard players"],
+    "Paul Young": ["pop", "blue-eyed soul", "male singers", "british", "solo artists"],
+    "Kajagoogoo": ["synth-pop", "new wave", "new romantic", "british", "bands", "limahl", "nick beggs"],
+    "Living in a Box": ["pop rock", "sophisti-pop", "blue-eyed soul", "british", "bands", "richard darbyshire"],
+    "The Blow Monkeys": ["sophisti-pop", "pop", "blue-eyed soul", "british", "bands", "dr robert"],
+    "Squeeze": ["new wave", "pop rock", "british", "bands", "glenn tilbrook", "chris difford"],
+    "Danny Wilson": ["pop rock", "sophisti-pop", "scottish", "british", "bands", "gary clark", "dundee"],
+    "Landscape": ["synth-pop", "electronic music", "new wave", "british", "bands", "richard james burgess"],
+    "New Musik": ["synth-pop", "new wave", "british", "bands", "tony mansfield"],
+    "Haircut One Hundred": ["new wave", "pop", "british", "bands"],
+    "Blue Zoo": ["new wave", "synth-pop", "british", "bands", "tim parry"],
+    "Strawberry Switchblade": ["synth-pop", "new wave", "scottish", "british", "female duos", "rose mcdowall", "jill bryson"],
+    "RAH Band": ["synth-pop", "jazz-funk", "electronic music", "british", "richard anthony hewson", "music projects"],
+    "Double": ["pop", "sophisti-pop", "swiss", "duos", "kurt maloo", "felix haug"],
+    "King": ["new wave", "pop rock", "british", "bands", "paul king"],
+    "Level 42": ["pop rock", "jazz-funk", "british", "bands", "mark king", "bass guitarists"],
+    "Propaganda": ["synth-pop", "new wave", "german", "bands", "ztt records"],
+    "Red Box": ["synth-pop", "new wave", "british", "bands", "simon toulson-clarke"],
+    "It's Immaterial": ["new wave", "art pop", "british", "bands", "liverpool"],
+    "Black": ["pop", "sophisti-pop", "male singers", "british", "solo artists", "colin vearncombe"],
+    "It Bites": ["progressive rock", "pop rock", "british", "bands", "francis dunnery"],
+    "Marillion": ["progressive rock", "neo-progressive rock", "british", "bands", "fish"],
+    "Voice of the Beehive": ["alternative rock", "pop rock", "british american", "bands", "tracey bryn"],
+    "Pepsi & Shirlie": ["pop", "dance-pop", "british", "female duos", "wham backing singers"],
+    "Wax": ["pop rock", "soft rock", "british american", "duos", "andrew gold", "graham gouldman"],
+    "Graham Gouldman": ["songwriters", "male musicians", "british", "10cc", "wax", "andrew gold", "bass guitarists"],
+    "Altered Images": ["new wave", "post-punk", "scottish", "british", "bands", "clare grogan"],
+    "Dollar": ["synth-pop", "pop", "british", "duos", "david van day", "thereza bazar"],
+    "Orchestral Manoeuvres in the Dark": ["synth-pop", "new wave", "electronic music", "british", "bands", "andy mccluskey", "paul humphreys"],
+    "Japan": ["art pop", "new wave", "new romantic", "british", "bands", "david sylvian", "mick karn"],
+    "Haysi Fantayzee": ["new wave", "pop", "british", "bands", "kate garner", "jeremy healy"],
+    "The Tweets": ["novelty music", "british", "groups"],
+    "Aneka": ["pop", "new wave", "female singers", "scottish", "british", "solo artists"],
+    "The Firm": ["novelty music", "comedy songs", "british", "groups"],
+    "Trio": ["new wave", "minimal wave", "german", "bands"],
+    "Marilyn": ["new wave", "pop", "male singers", "british", "solo artists"],
+    "Freddie Mercury": ["rock", "pop rock", "male singers", "british", "solo artists", "queen", "film music"]
+};
+
+const recordingTags = {
+    "music_3567": ["1984 singles", "human liberation era"],
+    "music_3568": ["1985 album tracks", "1986 singles", "dream into action album"],
+    "music_3569": ["1983 singles", "no parlez album"],
+    "music_3570": ["1983 singles", "white feathers album"],
+    "music_3571": ["1983 singles", "white feathers album"],
+    "music_3572": ["1984 singles", "islands album"],
+    "music_3573": ["1989 singles", "gatecrashing album"],
+    "music_3574": ["1989 singles", "whoops there goes the neighbourhood album"],
+    "music_3575": ["1987 singles", "babylon and on album"],
+    "music_3576": ["1989 singles", "bebop moptop album"],
+    "music_3577": ["1988 singles", "meet danny wilson album"],
+    "music_3578": ["1989 singles", "bebop moptop album"],
+    "music_3579": ["1989 songs", "bebop moptop album"],
+    "music_3580": ["1981 singles", "from the tea rooms of mars album"],
+    "music_3581": ["1980 singles", "1981 reissues", "early electronic dance music"],
+    "music_3582": ["1982 singles", "manhattan boogie-woogie album"],
+    "music_3583": ["1982 singles"],
+    "music_3584": ["1981 songs", "anywhere album"],
+    "music_3585": ["1983 singles", "post nick heyward lineup"],
+    "music_3586": ["1982 singles", "two by two album"],
+    "music_3587": ["1983 singles", "two by two era"],
+    "music_3588": ["1980s songs", "somewhere in the world album"],
+    "music_3589": ["1985 singles", "cover versions", "dolly parton original"],
+    "music_3590": ["1985 singles", "mystery album", "science fiction themes"],
+    "music_3591": ["1983 singles", "electro-funk"],
+    "music_3592": ["1980 singles", "instrumental music"],
+    "music_3593": ["1985 singles", "mystery album", "funka nova"],
+    "music_3594": ["1985 singles", "mystery album"],
+    "music_3595": ["1985 singles", "blue album", "piano pop"],
+    "music_3596": ["1980s songs", "swiss pop"],
+    "music_3597": ["1980s songs", "swiss pop"],
+    "music_3598": ["1980s songs", "swiss pop"],
+    "music_3599": ["1980s songs", "swiss pop"],
+    "music_3600": ["1985 singles", "steps in time album"],
+    "music_3601": ["1985 singles", "bitter sweet album"],
+    "music_3602": ["1983 singles", "standing in the light album"],
+    "music_3603": ["1985 singles", "world machine album"],
+    "music_3604": ["1985 singles", "a secret wish album", "cover versions", "josef k original"],
+    "music_3605": ["1980s songs", "the circle and the square era"],
+    "music_3606": ["1980s songs", "the circle and the square era"],
+    "music_3607": ["1986 singles", "lifes hard and then you die album"],
+    "music_3608": ["1980s songs", "lifes hard and then you die era"],
+    "music_3609": ["1980s songs", "lifes hard and then you die era"],
+    "music_3610": ["1980s songs", "wonderful life era"],
+    "music_3611": ["1980s songs", "the big lad in the windmill era"],
+    "music_3612": ["1980s songs", "the big lad in the windmill era"],
+    "music_3613": ["1989 singles", "eat me in st louis album"],
+    "music_3614": ["1987 singles", "clutching at straws album"],
+    "music_3615": ["1987 songs", "clutching at straws album"],
+    "music_3616": ["1988 singles", "let it bee album"],
+    "music_3617": ["1987 singles", "all right now album"],
+    "music_3618": ["1987 singles", "all right now album", "cover versions", "free original"],
+    "music_3619": ["1987 singles", "all right now album"],
+    "music_3620": ["1987 singles", "american english album"],
+    "music_3621": ["1986 singles", "magnetic heaven album"],
+    "music_3622": ["1986 songs", "magnetic heaven album"],
+    "music_3623": ["1987 singles", "american english album"],
+    "music_3624": ["1980s songs", "pop rock duos"],
+    "music_3625": ["1982 singles", "pinky blue album"],
+    "music_3626": ["1983 singles", "bite album"],
+    "music_3627": ["wax duo", "graham gouldman", "andrew gold", "10cc", "group members", "music history"],
+    "music_3628": ["1987 singles", "cover versions", "erasure original"],
+    "music_3629": ["1980s pop duos", "trevor horn", "record producers", "music history", "the dollar album"],
+    "music_3630": ["1979 singles", "shooting stars album"],
+    "music_3631": ["1984 singles", "junk culture album"],
+    "music_3632": ["1984 singles", "junk culture album"],
+    "music_3633": ["1986 singles", "the pacific age album"],
+    "music_3634": ["1993 singles", "liberator album", "barry white interpolation"],
+    "music_3635": ["1983 singles", "dazzle ships album"],
+    "music_3636": ["1984 singles", "junk culture album"],
+    "music_3637": ["1985 singles", "crush album"],
+    "music_3638": ["1981 singles", "tin drum album"],
+    "music_3639": ["1982 singles", "tin drum album"],
+    "music_3640": ["1980 singles", "1982 reissues", "cover versions", "smokey robinson and the miracles original"],
+    "music_3641": ["1979 singles", "1981 reissues", "1982 remixes", "giorgio moroder production"],
+    "music_3642": ["1978 songs", "1982 singles", "obscure alternatives album"],
+    "music_3643": ["1982 singles", "gentlemen take polaroids album"],
+    "music_3644": ["1981 singles", "tin drum era"],
+    "music_3645": ["1980 singles", "gentlemen take polaroids album"],
+    "music_3646": ["1982 singles", "battle hymns for children singing album"],
+    "music_3647": ["1982 singles", "battle hymns for children singing album"],
+    "music_3648": ["1983 songs", "battle hymns for children singing era"],
+    "music_3649": ["1983 singles", "battle hymns for children singing album"],
+    "music_3650": ["1983 album tracks", "battle hymns for children singing album"],
+    "music_3651": ["1984 singles", "islands album", "post limahl lineup"],
+    "music_3652": ["1985 singles", "crazy peoples right to speak album"],
+    "music_3653": ["1980s songs", "kajagoogoo deep cuts"],
+    "music_3654": ["1983 album tracks", "white feathers album"],
+    "music_3655": ["1983 album tracks", "white feathers album"],
+    "music_3656": ["1981 singles", "novelty songs", "dance songs", "birdie dance"],
+    "music_3657": ["1981 singles", "uk number one singles"],
+    "music_3658": ["1987 singles", "uk number one singles", "novelty songs", "star trek parodies"],
+    "music_3659": ["1982 singles", "novelty songs", "minder television"],
+    "music_3660": ["1982 singles", "novelty songs", "german language"],
+    "music_3661": ["1984 singles", "despite straight lines album"],
+    "music_3662": ["1983 singles", "despite straight lines album"],
+    "music_3663": ["1984 singles", "despite straight lines album"],
+    "music_3664": ["1985 singles", "despite straight lines album"],
+    "music_3665": ["1985 albums", "debut albums", "marilyn album discography", "mercury records"],
+    "music_3666": ["1984 singles", "metropolis film", "film soundtracks", "giorgio moroder production"]
+};
+
+const specialEraTags = {
+    "music_3630": ["1970s", "1970s music"],
+    "music_3634": ["1990s", "1990s music"],
+    "music_3641": ["1970s", "1970s music", "1980s reissues"],
+    "music_3642": ["1970s", "1970s music", "1980s reissues"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const performer = artistTags[correctAnswer];
+    const recording = recordingTags[id];
+    if (!performer || !recording) throw new Error(`Missing tags for ${id}`);
+
+    const isAlbum = id === "music_3665";
+    const isWaxHistory = id === "music_3627";
+    const isProducerQuestion = id === "music_3629";
+    const isTrivia = isWaxHistory || isProducerQuestion;
+    const match = question.match(/'(.+)'/);
+    if (!match && !isTrivia) throw new Error(`Missing title for ${id}`);
+    const era = specialEraTags[id] || ["1980s", "1980s music"];
+
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            ...era, "music",
+            isWaxHistory ? "group members" : (isProducerQuestion ? "record producers" : (isAlbum ? "albums" : "songs")),
+            isTrivia ? "music history" : (isAlbum ? "album titles" : "recordings"),
+            isWaxHistory ? "wax graham gouldman and andrew gold" :
+                (isProducerQuestion ? "dollar trevor horn collaboration" : match[1].toLowerCase()),
+            correctAnswer.toLowerCase(),
+            ...performer,
+            ...recording
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack55 = [
-
-    {
-        id: "music_3567",
-        category: "Music",
-        question: "Which artist recorded 'Like to Get to Know You Well'?",
-        answers: ["Howard Jones", "Nik Kershaw", "Paul Young", "Thomas Dolby"],
-        correctAnswer: "Howard Jones"
-    },
-    {
-        id: "music_3568",
-        category: "Music",
-        question: "Which artist recorded 'No One Is to Blame'?",
-        answers: ["Howard Jones", "Paul Young", "Nik Kershaw", "John Parr"],
-        correctAnswer: "Howard Jones"
-    },
-    {
-        id: "music_3569",
-        category: "Music",
-        question: "Which artist recorded 'Come Back and Stay'?",
-        answers: ["Paul Young", "Howard Jones", "John Parr", "Nik Kershaw"],
-        correctAnswer: "Paul Young"
-    },
-    {
-        id: "music_3570",
-        category: "Music",
-        question: "Which group recorded 'Ooh to Be Ah'?",
-        answers: ["Kajagoogoo", "Japan", "Level 42", "Haircut One Hundred"],
-        correctAnswer: "Kajagoogoo"
-    },
-    {
-        id: "music_3571",
-        category: "Music",
-        question: "Which group recorded 'Hang on Now'?",
-        answers: ["Kajagoogoo", "Level 42", "Japan", "China Crisis"],
-        correctAnswer: "Kajagoogoo"
-    },
-    {
-        id: "music_3572",
-        category: "Music",
-        question: "Which group recorded 'Turn Your Back on Me'?",
-        answers: ["Kajagoogoo", "China Crisis", "Level 42", "Japan"],
-        correctAnswer: "Kajagoogoo"
-    },
-    {
-        id: "music_3573",
-        category: "Music",
-        question: "Which group recorded 'Gatecrashing'?",
-        answers: ["Living in a Box", "The Blow Monkeys", "Hue and Cry", "Wax"],
-        correctAnswer: "Living in a Box"
-    },
-    {
-        id: "music_3574",
-        category: "Music",
-        question: "Which group recorded 'This Is Your Life'?",
-        answers: ["The Blow Monkeys", "Living in a Box", "Hue and Cry", "Red Box"],
-        correctAnswer: "The Blow Monkeys"
-    },
-    {
-        id: "music_3575",
-        category: "Music",
-        question: "Which group recorded '853-5937'?",
-        answers: ["Squeeze", "Level 42", "Wax", "It Bites"],
-        correctAnswer: "Squeeze"
-    },
-    {
-        id: "music_3576",
-        category: "Music",
-        question: "Which group recorded 'The Second Summer of Love'?",
-        answers: ["Danny Wilson", "Deacon Blue", "Hue and Cry", "The Blow Monkeys"],
-        correctAnswer: "Danny Wilson"
-    },
-    {
-        id: "music_3577",
-        category: "Music",
-        question: "Which group recorded 'Davy'?",
-        answers: ["Danny Wilson", "Deacon Blue", "Hue and Cry", "China Crisis"],
-        correctAnswer: "Danny Wilson"
-    },
-    {
-        id: "music_3578",
-        category: "Music",
-        question: "Which group recorded 'Never Gonna Be the Same'?",
-        answers: ["Danny Wilson", "Deacon Blue", "The Blow Monkeys", "Living in a Box"],
-        correctAnswer: "Danny Wilson"
-    },
-    {
-        id: "music_3579",
-        category: "Music",
-        question: "Which group recorded 'If Everything You Said Was True'?",
-        answers: ["Danny Wilson", "Hue and Cry", "Deacon Blue", "China Crisis"],
-        correctAnswer: "Danny Wilson"
-    },
-
-    {
-        id: "music_3580",
-        category: "Music",
-        question: "Which group recorded 'Norman Bates'?",
-        answers: ["Landscape", "New Musik", "China Crisis", "Red Box"],
-        correctAnswer: "Landscape"
-    },
-    {
-        id: "music_3581",
-        category: "Music",
-        question: "Which group recorded 'European Man'?",
-        answers: ["Landscape", "New Musik", "Japan", "China Crisis"],
-        correctAnswer: "Landscape"
-    },
-    {
-        id: "music_3582",
-        category: "Music",
-        question: "Which group recorded 'Eastern Girls'?",
-        answers: ["Landscape", "Japan", "China Crisis", "New Musik"],
-        correctAnswer: "Landscape"
-    },
-    {
-        id: "music_3583",
-        category: "Music",
-        question: "Which group recorded 'It's Not My Real Name'?",
-        answers: ["Landscape", "New Musik", "Red Box", "China Crisis"],
-        correctAnswer: "Landscape"
-    },
-    {
-        id: "music_3584",
-        category: "Music",
-        question: "Which group recorded 'Luxury'?",
-        answers: ["New Musik", "Landscape", "China Crisis", "Japan"],
-        correctAnswer: "New Musik"
-    },
-    {
-        id: "music_3585",
-        category: "Music",
-        question: "Which group recorded 'Prime Time'?",
-        answers: ["Haircut One Hundred", "Kajagoogoo", "China Crisis", "New Musik"],
-        correctAnswer: "Haircut One Hundred"
-    },
-    {
-        id: "music_3586",
-        category: "Music",
-        question: "Which group recorded 'I'm Your Man'?",
-        answers: ["Blue Zoo", "Kajagoogoo", "King", "Red Box"],
-        correctAnswer: "Blue Zoo"
-    },
-    {
-        id: "music_3587",
-        category: "Music",
-        question: "Which group recorded 'Somewhere in the World There's a Cowboy Smiling'?",
-        answers: ["Blue Zoo", "Red Box", "The Lotus Eaters", "China Crisis"],
-        correctAnswer: "Blue Zoo"
-    },
-    {
-        id: "music_3588",
-        category: "Music",
-        question: "Which group recorded 'For All I Really Care'?",
-        answers: ["Blue Zoo", "The Lotus Eaters", "Red Box", "Landscape"],
-        correctAnswer: "Blue Zoo"
-    },
-    {
-        id: "music_3589",
-        category: "Music",
-        question: "Which group recorded 'Jolene'?",
-        answers: ["Strawberry Switchblade", "The Lotus Eaters", "Voice of the Beehive", "Altered Images"],
-        correctAnswer: "Strawberry Switchblade"
-    },
-    {
-        id: "music_3590",
-        category: "Music",
-        question: "Which group recorded 'Clouds Across the Moon'?",
-        answers: ["RAH Band", "Red Box", "Double", "Wax"],
-        correctAnswer: "RAH Band"
-    },
-    {
-        id: "music_3591",
-        category: "Music",
-        question: "Which group recorded 'Messages from the Stars'?",
-        answers: ["RAH Band", "Double", "Red Box", "Landscape"],
-        correctAnswer: "RAH Band"
-    },
-    {
-        id: "music_3592",
-        category: "Music",
-        question: "Which group recorded 'Falcon'?",
-        answers: ["RAH Band", "Red Box", "Double", "New Musik"],
-        correctAnswer: "RAH Band"
-    },
-    {
-        id: "music_3593",
-        category: "Music",
-        question: "Which group recorded 'Are You Satisfied?'?",
-        answers: ["RAH Band", "Double", "Wax", "Red Box"],
-        correctAnswer: "RAH Band"
-    },
-    {
-        id: "music_3594",
-        category: "Music",
-        question: "Which group recorded 'Sorry Doesn't Make It Anymore'?",
-        answers: ["RAH Band", "Red Box", "Double", "Landscape"],
-        correctAnswer: "RAH Band"
-    },
-    {
-        id: "music_3595",
-        category: "Music",
-        question: "Which group recorded 'The Captain of Her Heart'?",
-        answers: ["Double", "Wax", "Red Box", "RAH Band"],
-        correctAnswer: "Double"
-    },
-    {
-        id: "music_3596",
-        category: "Music",
-        question: "Which group recorded 'Woman of the World'?",
-        answers: ["Double", "Red Box", "Wax", "RAH Band"],
-        correctAnswer: "Double"
-    },
-    {
-        id: "music_3597",
-        category: "Music",
-        question: "Which group recorded 'Devils Ball'?",
-        answers: ["Double", "Wax", "Red Box", "Landscape"],
-        correctAnswer: "Double"
-    },
-    {
-        id: "music_3598",
-        category: "Music",
-        question: "Which group recorded 'Tomorrow'?",
-        answers: ["Double", "RAH Band", "Wax", "Red Box"],
-        correctAnswer: "Double"
-    },
-    {
-        id: "music_3599",
-        category: "Music",
-        question: "Which group recorded 'Gliding'?",
-        answers: ["Double", "Wax", "RAH Band", "Red Box"],
-        correctAnswer: "Double"
-    },
-    {
-        id: "music_3600",
-        category: "Music",
-        question: "Which group recorded 'Won't You Hold My Hand Now'?",
-        answers: ["King", "Living in a Box", "Red Box", "Wax"],
-        correctAnswer: "King"
-    },
-    {
-        id: "music_3601",
-        category: "Music",
-        question: "Which group recorded 'Torture'?",
-        answers: ["King", "Red Box", "Wax", "Living in a Box"],
-        correctAnswer: "King"
-    },
-
-    {
-        id: "music_3602",
-        category: "Music",
-        question: "Which group recorded 'The Sun Goes Down (Living It Up)'?",
-        answers: ["Level 42", "Living in a Box", "It Bites", "Wax"],
-        correctAnswer: "Level 42"
-    },
-    {
-        id: "music_3603",
-        category: "Music",
-        question: "Which group recorded 'Something About You'?",
-        answers: ["Level 42", "It Bites", "Wax", "Red Box"],
-        correctAnswer: "Level 42"
-    },
-    {
-        id: "music_3604",
-        category: "Music",
-        question: "Which group recorded 'Sorry for Laughing'?",
-        answers: ["Propaganda", "Japan", "China Crisis", "New Musik"],
-        correctAnswer: "Propaganda"
-    },
-    {
-        id: "music_3605",
-        category: "Music",
-        question: "Which group recorded 'Heart of the Sun'?",
-        answers: ["Red Box", "Wax", "Double", "It Bites"],
-        correctAnswer: "Red Box"
-    },
-    {
-        id: "music_3606",
-        category: "Music",
-        question: "Which group recorded 'Train'?",
-        answers: ["Red Box", "Wax", "Double", "New Musik"],
-        correctAnswer: "Red Box"
-    },
-    {
-        id: "music_3607",
-        category: "Music",
-        question: "Which group recorded 'Driving Away from Home (Jim's Tune)'?",
-        answers: ["It's Immaterial", "It Bites", "Red Box", "Wax"],
-        correctAnswer: "It's Immaterial"
-    },
-    {
-        id: "music_3608",
-        category: "Music",
-        question: "Which group recorded 'Space'?",
-        answers: ["It's Immaterial", "Red Box", "It Bites", "New Musik"],
-        correctAnswer: "It's Immaterial"
-    },
-    {
-        id: "music_3609",
-        category: "Music",
-        question: "Which group recorded 'White Man's Hut'?",
-        answers: ["It's Immaterial", "Red Box", "Wax", "It Bites"],
-        correctAnswer: "It's Immaterial"
-    },
-    {
-        id: "music_3610",
-        category: "Music",
-        question: "Which artist recorded 'I'm Not Afraid'?",
-        answers: ["Black", "Paul Young", "Howard Jones", "John Parr"],
-        correctAnswer: "Black"
-    },
-    {
-        id: "music_3611",
-        category: "Music",
-        question: "Which group recorded 'Whole New World'?",
-        answers: ["It Bites", "Wax", "Red Box", "Living in a Box"],
-        correctAnswer: "It Bites"
-    },
-    {
-        id: "music_3612",
-        category: "Music",
-        question: "Which group recorded 'Midnight'?",
-        answers: ["It Bites", "Red Box", "Wax", "Level 42"],
-        correctAnswer: "It Bites"
-    },
-    {
-        id: "music_3613",
-        category: "Music",
-        question: "Which group recorded 'Still Too Young to Remember'?",
-        answers: ["It Bites", "Marillion", "Level 42", "Wax"],
-        correctAnswer: "It Bites"
-    },
-    {
-        id: "music_3614",
-        category: "Music",
-        question: "Which group recorded 'Sugar Mice'?",
-        answers: ["Marillion", "It Bites", "Japan", "China Crisis"],
-        correctAnswer: "Marillion"
-    },
-    {
-        id: "music_3615",
-        category: "Music",
-        question: "Which group recorded 'Warm Wet Circles'?",
-        answers: ["Marillion", "It Bites", "Japan", "China Crisis"],
-        correctAnswer: "Marillion"
-    },
-    {
-        id: "music_3616",
-        category: "Music",
-        question: "Which group recorded 'Man in the Moon'?",
-        answers: ["Voice of the Beehive", "Altered Images", "Strawberry Switchblade", "The Blow Monkeys"],
-        correctAnswer: "Voice of the Beehive"
-    },
-    {
-        id: "music_3617",
-        category: "Music",
-        question: "Which duo recorded 'Can't Give Me Love'?",
-        answers: ["Pepsi & Shirlie", "Mel & Kim", "Dollar", "Shakespears Sister"],
-        correctAnswer: "Pepsi & Shirlie"
-    },
-    {
-        id: "music_3618",
-        category: "Music",
-        question: "Which duo recorded 'All Right Now'?",
-        answers: ["Pepsi & Shirlie", "Mel & Kim", "Dollar", "Shakespears Sister"],
-        correctAnswer: "Pepsi & Shirlie"
-    },
-    {
-        id: "music_3619",
-        category: "Music",
-        question: "Which duo recorded 'Hightime'?",
-        answers: ["Pepsi & Shirlie", "Mel & Kim", "Dollar", "Shakespears Sister"],
-        correctAnswer: "Pepsi & Shirlie"
-    },
-    {
-        id: "music_3620",
-        category: "Music",
-        question: "Which duo recorded 'Bridge to Your Heart'?",
-        answers: ["Wax", "Double", "Dollar", "Pepsi & Shirlie"],
-        correctAnswer: "Wax"
-    },
-    {
-        id: "music_3621",
-        category: "Music",
-        question: "Which duo recorded 'Right Between the Eyes'?",
-        answers: ["Wax", "Double", "Dollar", "Pepsi & Shirlie"],
-        correctAnswer: "Wax"
-    },
-    {
-        id: "music_3622",
-        category: "Music",
-        question: "Which duo recorded 'Shadows of Love'?",
-        answers: ["Wax", "Double", "Dollar", "Pepsi & Shirlie"],
-        correctAnswer: "Wax"
-    },
-    {
-        id: "music_3623",
-        category: "Music",
-        question: "Which duo recorded 'American English'?",
-        answers: ["Wax", "Double", "Dollar", "Pepsi & Shirlie"],
-        correctAnswer: "Wax"
-    },
-    {
-        id: "music_3624",
-        category: "Music",
-        question: "Which duo recorded 'Ball and Chain'?",
-        answers: ["Wax", "Double", "Dollar", "Pepsi & Shirlie"],
-        correctAnswer: "Wax"
-    },
-
-    {
-        id: "music_3625",
-        category: "Music",
-        question: "Which group recorded 'Pinky Blue'?",
-        answers: ["Altered Images", "Strawberry Switchblade", "Voice of the Beehive", "Haysi Fantayzee"],
-        correctAnswer: "Altered Images"
-    },
-    {
-        id: "music_3626",
-        category: "Music",
-        question: "Which group recorded 'Bring Me Closer'?",
-        answers: ["Altered Images", "Strawberry Switchblade", "Voice of the Beehive", "Haysi Fantayzee"],
-        correctAnswer: "Altered Images"
-    },
-    {
-        id: "music_3627",
-        category: "Music",
-        question: "Which duo recorded 'Mirror Man'?",
-        answers: ["Dollar", "Wax", "Double", "Pepsi & Shirlie"],
-        correctAnswer: "Dollar"
-    },
-    {
-        id: "music_3628",
-        category: "Music",
-        question: "Which duo recorded 'Oh L'amour'?",
-        answers: ["Dollar", "Wax", "Pepsi & Shirlie", "Mel & Kim"],
-        correctAnswer: "Dollar"
-    },
-    {
-        id: "music_3629",
-        category: "Music",
-        question: "Which duo recorded 'Give Me Some Kinda Magic'?",
-        answers: ["Dollar", "Wax", "Double", "Pepsi & Shirlie"],
-        correctAnswer: "Dollar"
-    },
-    {
-        id: "music_3630",
-        category: "Music",
-        question: "Which duo recorded 'Who Were You with in the Moonlight'?",
-        answers: ["Dollar", "Wax", "Double", "Pepsi & Shirlie"],
-        correctAnswer: "Dollar"
-    },
-    {
-        id: "music_3631",
-        category: "Music",
-        question: "Which group recorded 'Locomotion'?",
-        answers: ["Orchestral Manoeuvres in the Dark", "New Musik", "Japan", "China Crisis"],
-        correctAnswer: "Orchestral Manoeuvres in the Dark"
-    },
-    {
-        id: "music_3632",
-        category: "Music",
-        question: "Which group recorded 'Tesla Girls'?",
-        answers: ["Orchestral Manoeuvres in the Dark", "Japan", "New Musik", "China Crisis"],
-        correctAnswer: "Orchestral Manoeuvres in the Dark"
-    },
-    {
-        id: "music_3633",
-        category: "Music",
-        question: "Which group recorded 'Forever Live and Die'?",
-        answers: ["Orchestral Manoeuvres in the Dark", "Japan", "China Crisis", "New Musik"],
-        correctAnswer: "Orchestral Manoeuvres in the Dark"
-    },
-    {
-        id: "music_3634",
-        category: "Music",
-        question: "Which group recorded 'Dream of Me (Based on Love's Theme)'?",
-        answers: ["Orchestral Manoeuvres in the Dark", "Japan", "China Crisis", "New Musik"],
-        correctAnswer: "Orchestral Manoeuvres in the Dark"
-    },
-    {
-        id: "music_3635",
-        category: "Music",
-        question: "Which group recorded 'Genetic Engineering'?",
-        answers: ["Orchestral Manoeuvres in the Dark", "New Musik", "Japan", "China Crisis"],
-        correctAnswer: "Orchestral Manoeuvres in the Dark"
-    },
-    {
-        id: "music_3636",
-        category: "Music",
-        question: "Which group recorded 'Talking Loud and Clear'?",
-        answers: ["Orchestral Manoeuvres in the Dark", "China Crisis", "Japan", "New Musik"],
-        correctAnswer: "Orchestral Manoeuvres in the Dark"
-    },
-    {
-        id: "music_3637",
-        category: "Music",
-        question: "Which group recorded 'Secret'?",
-        answers: ["Orchestral Manoeuvres in the Dark", "Japan", "China Crisis", "New Musik"],
-        correctAnswer: "Orchestral Manoeuvres in the Dark"
-    },
-    {
-        id: "music_3638",
-        category: "Music",
-        question: "Which group recorded 'Visions of China'?",
-        answers: ["Japan", "China Crisis", "Orchestral Manoeuvres in the Dark", "New Musik"],
-        correctAnswer: "Japan"
-    },
-    {
-        id: "music_3639",
-        category: "Music",
-        question: "Which group recorded 'Cantonese Boy'?",
-        answers: ["Japan", "China Crisis", "Orchestral Manoeuvres in the Dark", "Landscape"],
-        correctAnswer: "Japan"
-    },
-    {
-        id: "music_3640",
-        category: "Music",
-        question: "Which group recorded 'I Second That Emotion'?",
-        answers: ["Japan", "China Crisis", "New Musik", "Landscape"],
-        correctAnswer: "Japan"
-    },
-    {
-        id: "music_3641",
-        category: "Music",
-        question: "Which group recorded 'Life in Tokyo'?",
-        answers: ["Japan", "China Crisis", "New Musik", "Landscape"],
-        correctAnswer: "Japan"
-    },
-    {
-        id: "music_3642",
-        category: "Music",
-        question: "Which group recorded 'European Son'?",
-        answers: ["Japan", "China Crisis", "Landscape", "New Musik"],
-        correctAnswer: "Japan"
-    },
-    {
-        id: "music_3643",
-        category: "Music",
-        question: "Which group recorded 'Nightporter'?",
-        answers: ["Japan", "China Crisis", "Landscape", "New Musik"],
-        correctAnswer: "Japan"
-    },
-    {
-        id: "music_3644",
-        category: "Music",
-        question: "Which group recorded 'The Art of Parties'?",
-        answers: ["Japan", "China Crisis", "New Musik", "Landscape"],
-        correctAnswer: "Japan"
-    },
-    {
-        id: "music_3645",
-        category: "Music",
-        question: "Which group recorded 'Gentlemen Take Polaroids'?",
-        answers: ["Japan", "China Crisis", "Orchestral Manoeuvres in the Dark", "New Musik"],
-        correctAnswer: "Japan"
-    },
-    {
-        id: "music_3646",
-        category: "Music",
-        question: "Which group recorded 'Shiny Shiny'?",
-        answers: ["Haysi Fantayzee", "Altered Images", "Strawberry Switchblade", "Voice of the Beehive"],
-        correctAnswer: "Haysi Fantayzee"
-    },
-    {
-        id: "music_3647",
-        category: "Music",
-        question: "Which group recorded 'John Wayne Is Big Leggy'?",
-        answers: ["Haysi Fantayzee", "Altered Images", "Strawberry Switchblade", "Voice of the Beehive"],
-        correctAnswer: "Haysi Fantayzee"
-    },
-    {
-        id: "music_3648",
-        category: "Music",
-        question: "Which group recorded 'Holy Joe'?",
-        answers: ["Haysi Fantayzee", "Altered Images", "Strawberry Switchblade", "Blue Zoo"],
-        correctAnswer: "Haysi Fantayzee"
-    },
-    {
-        id: "music_3649",
-        category: "Music",
-        question: "Which group recorded 'Sister Friction'?",
-        answers: ["Haysi Fantayzee", "Altered Images", "Strawberry Switchblade", "Voice of the Beehive"],
-        correctAnswer: "Haysi Fantayzee"
-    },
-    {
-        id: "music_3650",
-        category: "Music",
-        question: "Which group recorded 'Chizoola'?",
-        answers: ["Haysi Fantayzee", "Altered Images", "Blue Zoo", "Strawberry Switchblade"],
-        correctAnswer: "Haysi Fantayzee"
-    },
-    {
-        id: "music_3651",
-        category: "Music",
-        question: "Which group recorded 'The Lion's Mouth'?",
-        answers: ["Kajagoogoo", "Japan", "China Crisis", "Haircut One Hundred"],
-        correctAnswer: "Kajagoogoo"
-    },
-    {
-        id: "music_3652",
-        category: "Music",
-        question: "Which group recorded 'Shouldn't Do That'?",
-        answers: ["Kajagoogoo", "Japan", "China Crisis", "Haircut One Hundred"],
-        correctAnswer: "Kajagoogoo"
-    },
-    {
-        id: "music_3653",
-        category: "Music",
-        question: "Which group recorded 'Rivers'?",
-        answers: ["Kajagoogoo", "Japan", "China Crisis", "Haircut One Hundred"],
-        correctAnswer: "Kajagoogoo"
-    },
-    {
-        id: "music_3654",
-        category: "Music",
-        question: "Which group recorded 'Frayo'?",
-        answers: ["Kajagoogoo", "Japan", "China Crisis", "Haircut One Hundred"],
-        correctAnswer: "Kajagoogoo"
-    },
-    {
-        id: "music_3655",
-        category: "Music",
-        question: "Which group recorded 'Take Another View'?",
-        answers: ["Kajagoogoo", "Japan", "China Crisis", "Haircut One Hundred"],
-        correctAnswer: "Kajagoogoo"
-    },
-    {
-        id: "music_3656",
-        category: "Music",
-        question: "Which group recorded 'Birdie Song'?",
-        answers: ["The Tweets", "The Firm", "Trio", "Haysi Fantayzee"],
-        correctAnswer: "The Tweets"
-    },
-    {
-        id: "music_3657",
-        category: "Music",
-        question: "Which artist recorded 'Japanese Boy'?",
-        answers: ["Aneka", "Toyah", "Hazel O'Connor", "Kim Wilde"],
-        correctAnswer: "Aneka"
-    },
-    {
-        id: "music_3658",
-        category: "Music",
-        question: "Which group recorded 'Star Trekkin''?",
-        answers: ["The Firm", "The Tweets", "Trio", "Haysi Fantayzee"],
-        correctAnswer: "The Firm"
-    },
-    {
-        id: "music_3659",
-        category: "Music",
-        question: "Which group recorded 'Arthur Daley ('E's Alright)'?",
-        answers: ["The Firm", "The Tweets", "Trio", "Haysi Fantayzee"],
-        correctAnswer: "The Firm"
-    },
-    {
-        id: "music_3660",
-        category: "Music",
-        question: "Which group recorded 'Da Da Da'?",
-        answers: ["Trio", "The Firm", "The Tweets", "Haysi Fantayzee"],
-        correctAnswer: "Trio"
-    },
-
-    {
-        id: "music_3661",
-        category: "Music",
-        question: "Which artist recorded 'Cry and Be Free'?",
-        answers: ["Marilyn", "Boy George", "Paul Young", "Limahl"],
-        correctAnswer: "Marilyn"
-    },
-    {
-        id: "music_3662",
-        category: "Music",
-        question: "Which artist recorded 'Calling Your Name'?",
-        answers: ["Marilyn", "Limahl", "Boy George", "Paul Young"],
-        correctAnswer: "Marilyn"
-    },
-    {
-        id: "music_3663",
-        category: "Music",
-        question: "Which artist recorded 'You Don't Love Me'?",
-        answers: ["Marilyn", "Boy George", "Limahl", "Paul Young"],
-        correctAnswer: "Marilyn"
-    },
-    {
-        id: "music_3664",
-        category: "Music",
-        question: "Which artist recorded 'Baby U Left Me'?",
-        answers: ["Marilyn", "Limahl", "Boy George", "Paul Young"],
-        correctAnswer: "Marilyn"
-    },
-    {
-        id: "music_3665",
-        category: "Music",
-        question: "Which artist recorded 'Despite Straight Lines'?",
-        answers: ["Marilyn", "Boy George", "Limahl", "Paul Young"],
-        correctAnswer: "Marilyn"
-    },
-    {
-        id: "music_3666",
-        category: "Music",
-        question: "Which artist recorded 'Love Kills'?",
-        answers: ["Freddie Mercury", "David Bowie", "Billy Idol", "Robert Palmer"],
-        correctAnswer: "Freddie Mercury"
-    }
-
+    makeQuestion("music_3567", "Which artist recorded 'Like to Get to Know You Well'?", ["Howard Jones", "Nik Kershaw", "Paul Young", "Thomas Dolby"], "Howard Jones", "Easy"),
+    makeQuestion("music_3568", "Which artist recorded 'No One Is to Blame'?", ["Howard Jones", "Paul Young", "Nik Kershaw", "John Parr"], "Howard Jones", "Medium"),
+    makeQuestion("music_3569", "Which artist recorded 'Come Back and Stay'?", ["Paul Young", "Howard Jones", "John Parr", "Nik Kershaw"], "Paul Young", "Easy"),
+    makeQuestion("music_3570", "Which group recorded 'Ooh to Be Ah'?", ["Kajagoogoo", "Japan", "Level 42", "Haircut One Hundred"], "Kajagoogoo", "Easy"),
+    makeQuestion("music_3571", "Which group recorded 'Hang on Now'?", ["Kajagoogoo", "Level 42", "Japan", "China Crisis"], "Kajagoogoo", "Medium"),
+    makeQuestion("music_3572", "Which group recorded 'Turn Your Back on Me'?", ["Kajagoogoo", "China Crisis", "Level 42", "Japan"], "Kajagoogoo", "Medium"),
+    makeQuestion("music_3573", "Which group recorded 'Gatecrashing'?", ["Living in a Box", "The Blow Monkeys", "Hue and Cry", "Wax"], "Living in a Box", "Medium"),
+    makeQuestion("music_3574", "Which group recorded 'This Is Your Life'?", ["The Blow Monkeys", "Living in a Box", "Hue and Cry", "Red Box"], "The Blow Monkeys", "Medium"),
+    makeQuestion("music_3575", "Which group recorded '853-5937'?", ["Squeeze", "Level 42", "Wax", "It Bites"], "Squeeze", "Easy"),
+    makeQuestion("music_3576", "Which group recorded 'The Second Summer of Love'?", ["Danny Wilson", "Deacon Blue", "Hue and Cry", "The Blow Monkeys"], "Danny Wilson", "Medium"),
+    makeQuestion("music_3577", "Which group recorded 'Davy'?", ["Danny Wilson", "Deacon Blue", "Hue and Cry", "China Crisis"], "Danny Wilson", "Medium"),
+    makeQuestion("music_3578", "Which group recorded 'Never Gonna Be the Same'?", ["Danny Wilson", "Deacon Blue", "The Blow Monkeys", "Living in a Box"], "Danny Wilson", "Hard"),
+    makeQuestion("music_3579", "Which group recorded 'If Everything You Said Was True'?", ["Danny Wilson", "Hue and Cry", "Deacon Blue", "China Crisis"], "Danny Wilson", "Hard"),
+    makeQuestion("music_3580", "Which group recorded 'Norman Bates'?", ["Landscape", "New Musik", "China Crisis", "Red Box"], "Landscape", "Easy"),
+    makeQuestion("music_3581", "Which group recorded 'European Man'?", ["Landscape", "New Musik", "Japan", "China Crisis"], "Landscape", "Medium"),
+    makeQuestion("music_3582", "Which group recorded 'Eastern Girls'?", ["Landscape", "Japan", "China Crisis", "New Musik"], "Landscape", "Hard"),
+    makeQuestion("music_3583", "Which group recorded 'It's Not My Real Name'?", ["Landscape", "New Musik", "Red Box", "China Crisis"], "Landscape", "Hard"),
+    makeQuestion("music_3584", "Which group recorded 'Luxury'?", ["New Musik", "Landscape", "China Crisis", "Japan"], "New Musik", "Hard"),
+    makeQuestion("music_3585", "Which group recorded 'Prime Time'?", ["Haircut One Hundred", "Kajagoogoo", "China Crisis", "New Musik"], "Haircut One Hundred", "Medium"),
+    makeQuestion("music_3586", "Which group recorded 'I'm Your Man'?", ["Blue Zoo", "Kajagoogoo", "King", "Red Box"], "Blue Zoo", "Medium"),
+    makeQuestion("music_3587", "Which group recorded 'Somewhere in the World There's a Cowboy Smiling'?", ["Blue Zoo", "Red Box", "The Lotus Eaters", "China Crisis"], "Blue Zoo", "Hard"),
+    makeQuestion("music_3588", "Which group recorded 'For All I Really Care'?", ["Blue Zoo", "The Lotus Eaters", "Red Box", "Landscape"], "Blue Zoo", "Hard"),
+    makeQuestion("music_3589", "Which group recorded 'Jolene'?", ["Strawberry Switchblade", "The Lotus Eaters", "Voice of the Beehive", "Altered Images"], "Strawberry Switchblade", "Medium"),
+    makeQuestion("music_3590", "Which group recorded 'Clouds Across the Moon'?", ["RAH Band", "Red Box", "Double", "Wax"], "RAH Band", "Easy"),
+    makeQuestion("music_3591", "Which group recorded 'Messages from the Stars'?", ["RAH Band", "Double", "Red Box", "Landscape"], "RAH Band", "Medium"),
+    makeQuestion("music_3592", "Which group recorded 'Falcon'?", ["RAH Band", "Red Box", "Double", "New Musik"], "RAH Band", "Hard"),
+    makeQuestion("music_3593", "Which group recorded 'Are You Satisfied?'?", ["RAH Band", "Double", "Wax", "Red Box"], "RAH Band", "Hard"),
+    makeQuestion("music_3594", "Which group recorded 'Sorry Doesn't Make It Anymore'?", ["RAH Band", "Red Box", "Double", "Landscape"], "RAH Band", "Hard"),
+    makeQuestion("music_3595", "Which group recorded 'The Captain of Her Heart'?", ["Double", "Wax", "Red Box", "RAH Band"], "Double", "Easy"),
+    makeQuestion("music_3596", "Which group recorded 'Woman of the World'?", ["Double", "Red Box", "Wax", "RAH Band"], "Double", "Hard"),
+    makeQuestion("music_3597", "Which group recorded 'Devils Ball'?", ["Double", "Wax", "Red Box", "Landscape"], "Double", "Hard"),
+    makeQuestion("music_3598", "Which group recorded 'Tomorrow'?", ["Double", "RAH Band", "Wax", "Red Box"], "Double", "Hard"),
+    makeQuestion("music_3599", "Which group recorded 'Gliding'?", ["Double", "Wax", "RAH Band", "Red Box"], "Double", "Hard"),
+    makeQuestion("music_3600", "Which group recorded 'Won't You Hold My Hand Now'?", ["King", "Living in a Box", "Red Box", "Wax"], "King", "Medium"),
+    makeQuestion("music_3601", "Which group recorded 'Torture'?", ["King", "Red Box", "Wax", "Living in a Box"], "King", "Hard"),
+    makeQuestion("music_3602", "Which group recorded 'The Sun Goes Down (Living It Up)'?", ["Level 42", "Living in a Box", "It Bites", "Wax"], "Level 42", "Easy"),
+    makeQuestion("music_3603", "Which group recorded 'Something About You'?", ["Level 42", "It Bites", "Wax", "Red Box"], "Level 42", "Easy"),
+    makeQuestion("music_3604", "Which group recorded 'Sorry for Laughing'?", ["Propaganda", "Japan", "China Crisis", "New Musik"], "Propaganda", "Medium"),
+    makeQuestion("music_3605", "Which group recorded 'Heart of the Sun'?", ["Red Box", "Wax", "Double", "It Bites"], "Red Box", "Medium"),
+    makeQuestion("music_3606", "Which group recorded 'Train'?", ["Red Box", "Wax", "Double", "New Musik"], "Red Box", "Hard"),
+    makeQuestion("music_3607", "Which group recorded 'Driving Away from Home (Jim's Tune)'?", ["It's Immaterial", "It Bites", "Red Box", "Wax"], "It's Immaterial", "Medium"),
+    makeQuestion("music_3608", "Which group recorded 'Space'?", ["It's Immaterial", "Red Box", "It Bites", "New Musik"], "It's Immaterial", "Hard"),
+    makeQuestion("music_3609", "Which group recorded 'White Man's Hut'?", ["It's Immaterial", "Red Box", "Wax", "It Bites"], "It's Immaterial", "Hard"),
+    makeQuestion("music_3610", "Which artist recorded 'I'm Not Afraid'?", ["Black", "Paul Young", "Howard Jones", "John Parr"], "Black", "Hard"),
+    makeQuestion("music_3611", "Which group recorded 'Whole New World'?", ["It Bites", "Wax", "Red Box", "Living in a Box"], "It Bites", "Hard"),
+    makeQuestion("music_3612", "Which group recorded 'Midnight'?", ["It Bites", "Red Box", "Wax", "Level 42"], "It Bites", "Hard"),
+    makeQuestion("music_3613", "Which group recorded 'Still Too Young to Remember'?", ["It Bites", "Marillion", "Level 42", "Wax"], "It Bites", "Hard"),
+    makeQuestion("music_3614", "Which group recorded 'Sugar Mice'?", ["Marillion", "It Bites", "Japan", "China Crisis"], "Marillion", "Easy"),
+    makeQuestion("music_3615", "Which group recorded 'Warm Wet Circles'?", ["Marillion", "It Bites", "Japan", "China Crisis"], "Marillion", "Hard"),
+    makeQuestion("music_3616", "Which group recorded 'Man in the Moon'?", ["Voice of the Beehive", "Altered Images", "Strawberry Switchblade", "The Blow Monkeys"], "Voice of the Beehive", "Medium"),
+    makeQuestion("music_3617", "Which duo recorded 'Can't Give Me Love'?", ["Pepsi & Shirlie", "Mel & Kim", "Dollar", "Shakespears Sister"], "Pepsi & Shirlie", "Medium"),
+    makeQuestion("music_3618", "Which duo recorded 'All Right Now'?", ["Pepsi & Shirlie", "Mel & Kim", "Dollar", "Shakespears Sister"], "Pepsi & Shirlie", "Medium"),
+    makeQuestion("music_3619", "Which duo recorded 'Hightime'?", ["Pepsi & Shirlie", "Mel & Kim", "Dollar", "Shakespears Sister"], "Pepsi & Shirlie", "Hard"),
+    makeQuestion("music_3620", "Which duo recorded 'Bridge to Your Heart'?", ["Wax", "Double", "Dollar", "Pepsi & Shirlie"], "Wax", "Easy"),
+    makeQuestion("music_3621", "Which duo recorded 'Right Between the Eyes'?", ["Wax", "Double", "Dollar", "Pepsi & Shirlie"], "Wax", "Medium"),
+    makeQuestion("music_3622", "Which duo recorded 'Shadows of Love'?", ["Wax", "Double", "Dollar", "Pepsi & Shirlie"], "Wax", "Hard"),
+    makeQuestion("music_3623", "Which duo recorded 'American English'?", ["Wax", "Double", "Dollar", "Pepsi & Shirlie"], "Wax", "Medium"),
+    makeQuestion("music_3624", "Which duo recorded 'Ball and Chain'?", ["Wax", "Double", "Dollar", "Pepsi & Shirlie"], "Wax", "Hard"),
+    makeQuestion("music_3625", "Which group recorded 'Pinky Blue'?", ["Altered Images", "Strawberry Switchblade", "Voice of the Beehive", "Haysi Fantayzee"], "Altered Images", "Medium"),
+    makeQuestion("music_3626", "Which group recorded 'Bring Me Closer'?", ["Altered Images", "Strawberry Switchblade", "Voice of the Beehive", "Haysi Fantayzee"], "Altered Images", "Medium"),
+    makeQuestion("music_3627", "Which former 10cc member formed the duo Wax with Andrew Gold?", ["Graham Gouldman", "Eric Stewart", "Kevin Godley", "Lol Creme"], "Graham Gouldman", "Medium"),
+    makeQuestion("music_3628", "Which duo recorded 'Oh L'amour'?", ["Dollar", "Wax", "Pepsi & Shirlie", "Mel & Kim"], "Dollar", "Medium"),
+    makeQuestion("music_3629", "Which British pop duo worked with producer Trevor Horn on several early-1980s hits?", ["Dollar", "Wax", "Double", "Pepsi & Shirlie"], "Dollar", "Medium"),
+    makeQuestion("music_3630", "Which duo recorded 'Who Were You with in the Moonlight'?", ["Dollar", "Wax", "Double", "Pepsi & Shirlie"], "Dollar", "Medium"),
+    makeQuestion("music_3631", "Which group recorded 'Locomotion'?", ["Orchestral Manoeuvres in the Dark", "New Musik", "Japan", "China Crisis"], "Orchestral Manoeuvres in the Dark", "Easy"),
+    makeQuestion("music_3632", "Which group recorded 'Tesla Girls'?", ["Orchestral Manoeuvres in the Dark", "Japan", "New Musik", "China Crisis"], "Orchestral Manoeuvres in the Dark", "Medium"),
+    makeQuestion("music_3633", "Which group recorded 'Forever Live and Die'?", ["Orchestral Manoeuvres in the Dark", "Japan", "China Crisis", "New Musik"], "Orchestral Manoeuvres in the Dark", "Easy"),
+    makeQuestion("music_3634", "Which group recorded 'Dream of Me (Based on Love's Theme)'?", ["Orchestral Manoeuvres in the Dark", "Japan", "China Crisis", "New Musik"], "Orchestral Manoeuvres in the Dark", "Hard"),
+    makeQuestion("music_3635", "Which group recorded 'Genetic Engineering'?", ["Orchestral Manoeuvres in the Dark", "New Musik", "Japan", "China Crisis"], "Orchestral Manoeuvres in the Dark", "Medium"),
+    makeQuestion("music_3636", "Which group recorded 'Talking Loud and Clear'?", ["Orchestral Manoeuvres in the Dark", "China Crisis", "Japan", "New Musik"], "Orchestral Manoeuvres in the Dark", "Medium"),
+    makeQuestion("music_3637", "Which group recorded 'Secret'?", ["Orchestral Manoeuvres in the Dark", "Japan", "China Crisis", "New Musik"], "Orchestral Manoeuvres in the Dark", "Easy"),
+    makeQuestion("music_3638", "Which group recorded 'Visions of China'?", ["Japan", "China Crisis", "Orchestral Manoeuvres in the Dark", "New Musik"], "Japan", "Easy"),
+    makeQuestion("music_3639", "Which group recorded 'Cantonese Boy'?", ["Japan", "China Crisis", "Orchestral Manoeuvres in the Dark", "Landscape"], "Japan", "Medium"),
+    makeQuestion("music_3640", "Which group recorded 'I Second That Emotion'?", ["Japan", "China Crisis", "New Musik", "Landscape"], "Japan", "Medium"),
+    makeQuestion("music_3641", "Which group recorded 'Life in Tokyo'?", ["Japan", "China Crisis", "New Musik", "Landscape"], "Japan", "Medium"),
+    makeQuestion("music_3642", "Which group recorded 'European Son'?", ["Japan", "China Crisis", "Landscape", "New Musik"], "Japan", "Hard"),
+    makeQuestion("music_3643", "Which group recorded 'Nightporter'?", ["Japan", "China Crisis", "Landscape", "New Musik"], "Japan", "Medium"),
+    makeQuestion("music_3644", "Which group recorded 'The Art of Parties'?", ["Japan", "China Crisis", "New Musik", "Landscape"], "Japan", "Medium"),
+    makeQuestion("music_3645", "Which group recorded 'Gentlemen Take Polaroids'?", ["Japan", "China Crisis", "Orchestral Manoeuvres in the Dark", "New Musik"], "Japan", "Easy"),
+    makeQuestion("music_3646", "Which group recorded 'Shiny Shiny'?", ["Haysi Fantayzee", "Altered Images", "Strawberry Switchblade", "Voice of the Beehive"], "Haysi Fantayzee", "Easy"),
+    makeQuestion("music_3647", "Which group recorded 'John Wayne Is Big Leggy'?", ["Haysi Fantayzee", "Altered Images", "Strawberry Switchblade", "Voice of the Beehive"], "Haysi Fantayzee", "Medium"),
+    makeQuestion("music_3648", "Which group recorded 'Holy Joe'?", ["Haysi Fantayzee", "Altered Images", "Strawberry Switchblade", "Blue Zoo"], "Haysi Fantayzee", "Hard"),
+    makeQuestion("music_3649", "Which group recorded 'Sister Friction'?", ["Haysi Fantayzee", "Altered Images", "Strawberry Switchblade", "Voice of the Beehive"], "Haysi Fantayzee", "Hard"),
+    makeQuestion("music_3650", "Which group recorded 'Chizoola'?", ["Haysi Fantayzee", "Altered Images", "Blue Zoo", "Strawberry Switchblade"], "Haysi Fantayzee", "Hard"),
+    makeQuestion("music_3651", "Which group recorded 'The Lion's Mouth'?", ["Kajagoogoo", "Japan", "China Crisis", "Haircut One Hundred"], "Kajagoogoo", "Medium"),
+    makeQuestion("music_3652", "Which group recorded 'Shouldn't Do That'?", ["Kajagoogoo", "Japan", "China Crisis", "Haircut One Hundred"], "Kajagoogoo", "Medium"),
+    makeQuestion("music_3653", "Which group recorded 'Rivers'?", ["Kajagoogoo", "Japan", "China Crisis", "Haircut One Hundred"], "Kajagoogoo", "Hard"),
+    makeQuestion("music_3654", "Which group recorded 'Frayo'?", ["Kajagoogoo", "Japan", "China Crisis", "Haircut One Hundred"], "Kajagoogoo", "Hard"),
+    makeQuestion("music_3655", "Which group recorded 'Take Another View'?", ["Kajagoogoo", "Japan", "China Crisis", "Haircut One Hundred"], "Kajagoogoo", "Hard"),
+    makeQuestion("music_3656", "Which group recorded 'Birdie Song'?", ["The Tweets", "The Firm", "Trio", "Haysi Fantayzee"], "The Tweets", "Easy"),
+    makeQuestion("music_3657", "Which artist recorded 'Japanese Boy'?", ["Aneka", "Toyah", "Hazel O'Connor", "Kim Wilde"], "Aneka", "Easy"),
+    makeQuestion("music_3658", "Which group recorded 'Star Trekkin''?", ["The Firm", "The Tweets", "Trio", "Haysi Fantayzee"], "The Firm", "Easy"),
+    makeQuestion("music_3659", "Which group recorded 'Arthur Daley ('E's Alright)'?", ["The Firm", "The Tweets", "Trio", "Haysi Fantayzee"], "The Firm", "Medium"),
+    makeQuestion("music_3660", "Which group recorded 'Da Da Da'?", ["Trio", "The Firm", "The Tweets", "Haysi Fantayzee"], "Trio", "Easy"),
+    makeQuestion("music_3661", "Which artist recorded 'Cry and Be Free'?", ["Marilyn", "Boy George", "Paul Young", "Limahl"], "Marilyn", "Medium"),
+    makeQuestion("music_3662", "Which artist recorded 'Calling Your Name'?", ["Marilyn", "Limahl", "Boy George", "Paul Young"], "Marilyn", "Easy"),
+    makeQuestion("music_3663", "Which artist recorded 'You Don't Love Me'?", ["Marilyn", "Boy George", "Limahl", "Paul Young"], "Marilyn", "Medium"),
+    makeQuestion("music_3664", "Which artist recorded 'Baby U Left Me (In the Cold)'?", ["Marilyn", "Limahl", "Boy George", "Paul Young"], "Marilyn", "Hard"),
+    makeQuestion("music_3665", "Which artist released the album 'Despite Straight Lines'?", ["Marilyn", "Boy George", "Limahl", "Paul Young"], "Marilyn", "Medium"),
+    makeQuestion("music_3666", "Which artist recorded 'Love Kills'?", ["Freddie Mercury", "David Bowie", "Billy Idol", "Robert Palmer"], "Freddie Mercury", "Easy")
 ];
 
 module.exports = quizPack55;
