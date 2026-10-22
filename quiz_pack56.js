@@ -1,786 +1,260 @@
 // quiz_pack56.js
-// PuzzlePilot Big Quiz
-// Music Pack 56
-// 100 questions
-// IDs: music_3667 - music_3766
+// PuzzlePilot Bigggggg Quiz - Music Pack 56
+// 100 questions: music_3667 to music_3766.
+// Artist, recording and era tags generated at runtime.
+
+const artistTags = {
+    "Billy Joel": ["pop rock", "soft rock", "american", "male singers", "solo artists", "pianists", "singer-songwriters", "new york"],
+    "Bruce Springsteen": ["heartland rock", "rock", "american", "male singers", "solo artists", "singer-songwriters", "new jersey", "the e street band"],
+    "Tina Turner": ["pop rock", "soul", "rock", "female singers", "american", "solo artists", "powerful vocals"],
+    "Lionel Richie": ["pop", "soul", "rhythm and blues", "male singers", "american", "solo artists", "the commodores"],
+    "Daryl Hall & John Oates": ["blue-eyed soul", "pop rock", "soft rock", "american", "duos", "daryl hall", "john oates"],
+    "Pat Benatar": ["rock", "pop rock", "female singers", "american", "solo artists", "female rock singers"],
+    "Billy Idol": ["rock", "new wave", "punk rock", "male singers", "british", "solo artists", "generation x"],
+    "Prince": ["funk", "pop", "rock", "rhythm and blues", "male singers", "american", "solo artists", "minneapolis"],
+    "George Michael": ["pop", "blue-eyed soul", "dance-pop", "male singers", "british", "solo artists", "wham"],
+    "Bonnie Tyler": ["pop rock", "rock", "female singers", "welsh", "british", "solo artists", "husky voices"],
+    "Foreigner": ["arena rock", "hard rock", "soft rock", "british american", "bands", "lou gramm", "mick jones"],
+    "Journey": ["arena rock", "hard rock", "soft rock", "american", "bands", "steve perry"],
+    "Starship": ["pop rock", "arena rock", "american", "bands", "grace slick", "mickey thomas"],
+    "Heart": ["rock", "hard rock", "pop rock", "american", "bands", "ann wilson", "nancy wilson"],
+    "Steve Winwood": ["blue-eyed soul", "pop rock", "rock", "male singers", "british", "solo artists", "keyboard players", "traffic"]
+};
+
+const recordingTags = {
+    "music_3667": ["1980 recordings", "1980 singles", "glass houses album", "rock songs"],
+    "music_3668": ["1980 recordings", "1980 singles", "glass houses album", "us number one singles"],
+    "music_3669": ["1980 recordings", "1980 singles", "glass houses album", "pop rock singles"],
+    "music_3670": ["1980 recordings", "1980 singles", "glass houses album", "telephone songs"],
+    "music_3671": ["1980 recordings", "1980 album tracks", "glass houses album", "album tracks"],
+    "music_3672": ["1982 recordings", "1982 singles", "the nylon curtain album", "pressure songs"],
+    "music_3673": ["1982 recordings", "1982 singles", "the nylon curtain album", "pennsylvania songs", "industrial decline"],
+    "music_3674": ["1982 album tracks", "1983 singles", "the nylon curtain album", "vietnam war songs", "antiwar songs"],
+    "music_3675": ["1982 recordings", "1982 album tracks", "the nylon curtain album", "christmas songs", "album tracks"],
+    "music_3676": ["1983 recordings", "1983 singles", "an innocent man album", "motown inspired"],
+    "music_3677": ["1983 recordings", "1983 singles", "an innocent man album", "doo-wop inspired"],
+    "music_3678": ["1984 recordings", "1984 singles", "an innocent man album", "doo-wop inspired", "vocal harmony"],
+    "music_3679": ["1984 recordings", "1984 singles", "an innocent man album", "stevie wonder harmonica"],
+    "music_3680": ["1984 recordings", "1984 singles", "an innocent man album", "retro pop"],
+    "music_3681": ["1985 recordings", "1985 singles", "greatest hits volume i and ii", "mental health awareness"],
+    "music_3682": ["1986 recordings", "1986 singles", "the bridge album"],
+    "music_3683": ["1986 recordings", "1986 singles", "ruthless people film", "soundtrack songs"],
+    "music_3684": ["1987 recordings", "1987 singles", "the bridge album", "ballads"],
+    "music_3685": ["1987 recordings", "1987 singles", "the bridge album", "ray charles duet", "duets", "piano songs"],
+    "music_3686": ["1986 recordings", "1986 album tracks", "the bridge album", "jazz influences"],
+    "music_3687": ["1989 recordings", "1989 singles", "storm front album", "history songs", "historical references"],
+    "music_3688": ["1989 album tracks", "1990 singles", "storm front album", "fishing industry songs"],
+    "music_3689": ["1980 recordings", "1980 singles", "the river album", "heartland rock songs"],
+    "music_3690": ["1982 recordings", "1982 album tracks", "nebraska album", "storytelling songs"],
+    "music_3691": ["1984 recordings", "1984 singles", "born in the usa album"],
+    "music_3692": ["1984 recordings", "1984 singles", "born in the usa album", "vietnam veterans songs"],
+    "music_3693": ["1985 recordings", "1985 singles", "born in the usa album", "ballads"],
+    "music_3694": ["1985 recordings", "1985 singles", "born in the usa album", "nostalgia songs"],
+    "music_3695": ["1985 recordings", "1985 singles", "born in the usa album", "small town songs"],
+    "music_3696": ["1987 recordings", "1987 singles", "tunnel of love album", "relationship songs"],
+    "music_3697": ["1987 recordings", "1987 singles", "tunnel of love album", "album title tracks", "relationship songs"],
+    "music_3698": ["1984 recordings", "1984 singles", "private dancer album", "rock pop singles"],
+    "music_3699": ["1985 recordings", "1985 singles", "mad max beyond thunderdome film", "film songs", "movie soundtracks"],
+    "music_3700": ["1986 recordings", "1986 singles", "break every rule album", "pop rock singles"],
+    "music_3701": ["1986 recordings", "1986 singles", "break every rule album", "relationship songs"],
+    "music_3702": ["1987 recordings", "1987 singles", "break every rule album", "pop rock singles"],
+    "music_3703": ["1982 recordings", "1982 singles", "lionel richie debut album", "ballads"],
+    "music_3704": ["1983 recordings", "1983 singles", "lionel richie debut album", "soft rock ballads"],
+    "music_3705": ["1983 recordings", "1983 singles", "lionel richie debut album", "soft rock ballads"],
+    "music_3706": ["1983 recordings", "1983 singles", "cant slow down album", "dance-pop"],
+    "music_3707": ["1983 recordings", "1983 singles", "cant slow down album", "rock pop"],
+    "music_3708": ["1984 recordings", "1984 singles", "cant slow down album", "ballads"],
+    "music_3709": ["1984 recordings", "1984 singles", "cant slow down album", "country pop influences"],
+    "music_3710": ["1984 recordings", "1984 singles", "cant slow down album", "ballads"],
+    "music_3711": ["1985 recordings", "1985 singles", "white nights film", "film songs", "academy award winning songs"],
+    "music_3712": ["1981 recordings", "1981 singles", "voices album", "pop rock singles"],
+    "music_3713": ["1981 recordings", "1981 singles", "voices album", "pop rock singles"],
+    "music_3714": ["1981 recordings", "1981 singles", "private eyes album"],
+    "music_3715": ["1981 recordings", "1981 singles", "private eyes album", "soul pop"],
+    "music_3716": ["1982 recordings", "1982 singles", "h2o album", "us number one singles"],
+    "music_3717": ["1983 recordings", "1983 singles", "h2o album", "ballads"],
+    "music_3718": ["1984 recordings", "1984 singles", "big bam boom album", "synth-pop influences"],
+    "music_3719": ["1984 recordings", "1984 singles", "big bam boom album", "synth-pop influences"],
+    "music_3720": ["1980 recordings", "1980 singles", "crimes of passion album", "rock singles"],
+    "music_3721": ["1984 recordings", "1984 singles", "tropico album", "anthem songs"],
+    "music_3722": ["1982 recordings", "1982 singles", "get nervous album", "rock singles"],
+    "music_3723": ["1985 recordings", "1985 singles", "seven the hard way album", "the legend of billie jean film", "film songs"],
+    "music_3724": ["1988 recordings", "1988 singles", "wide awake in dreamland album", "rock singles"],
+    "music_3725": ["1981 recordings", "1981 singles", "precious time album", "rock singles"],
+    "music_3726": ["1982 recordings", "1982 singles", "billy idol debut album", "new wave rock"],
+    "music_3727": ["1984 recordings", "1984 singles", "rebel yell album", "ballads"],
+    "music_3728": ["1984 recordings", "1984 singles", "rebel yell album", "dance rock"],
+    "music_3729": ["1986 recordings", "1986 singles", "whiplash smile album", "cover versions", "william bell original"],
+    "music_3730": ["1987 recordings", "1987 singles", "whiplash smile album", "ballads"],
+    "music_3731": ["1983 recordings", "1983 singles", "1999 album", "funk rock"],
+    "music_3732": ["1983 recordings", "1983 singles", "1999 album", "synth-funk"],
+    "music_3733": ["1984 recordings", "1984 singles", "purple rain album", "purple rain film", "film songs"],
+    "music_3734": ["1984 recordings", "1984 singles", "purple rain album", "purple rain film", "film songs"],
+    "music_3735": ["1984 recordings", "1984 singles", "purple rain album", "purple rain film", "film songs"],
+    "music_3736": ["1987 recordings", "1987 singles", "sign o the times album", "social commentary songs"],
+    "music_3737": ["1987 recordings", "1987 singles", "faith album", "beverly hills cop ii film", "film songs"],
+    "music_3738": ["1988 recordings", "1988 singles", "faith album", "soul ballads"],
+    "music_3739": ["1988 recordings", "1988 singles", "faith album", "dance-pop"],
+    "music_3740": ["1988 recordings", "1988 singles", "faith album", "jazz-pop ballads"],
+    "music_3741": ["1983 recordings", "1983 singles", "faster than the speed of night album", "cover versions", "creedence clearwater revival original"],
+    "music_3742": ["1985 singles", "1986 album tracks", "secret dreams and forbidden fire era", "todd rundgren duet", "duets"],
+    "music_3743": ["1988 singles", "original recording before tina turner", "hide your heart album", "original recordings", "tina turner cover versions"],
+    "music_3744": ["1981 recordings", "1981 singles", "4 album", "power ballads"],
+    "music_3745": ["1982 recordings", "1982 singles", "4 album", "arena rock songs"],
+    "music_3746": ["1987 recordings", "1987 singles", "inside information album", "rock singles"],
+    "music_3747": ["1988 recordings", "1988 singles", "inside information album", "soft rock ballads"],
+    "music_3748": ["1980 recordings", "1980 singles", "departure album", "arena rock singles"],
+    "music_3749": ["1981 recordings", "1981 singles", "escape album", "arena rock singles"],
+    "music_3750": ["1982 recordings", "1982 singles", "escape album", "power ballads"],
+    "music_3751": ["1983 recordings", "1983 singles", "frontiers album", "arena rock singles"],
+    "music_3752": ["1983 recordings", "1983 singles", "frontiers album", "power ballads"],
+    "music_3753": ["1985 recordings", "1985 singles", "vision quest film", "film songs"],
+    "music_3754": ["1986 recordings", "1986 singles", "raised on radio album", "arena rock singles"],
+    "music_3755": ["1987 recordings", "1987 singles", "no protection album", "pop rock singles"],
+    "music_3756": ["1985 recordings", "1985 singles", "heart album", "power ballads"],
+    "music_3757": ["1985 recordings", "1985 singles", "heart album", "arena rock singles"],
+    "music_3758": ["1987 recordings", "1987 singles", "bad animals album", "power ballads"],
+    "music_3759": ["1987 recordings", "1987 singles", "bad animals album", "power ballads"],
+    "music_3760": ["1990 recordings", "1990 singles", "brigade album", "power ballads", "robert john mutt lange songwriter"],
+    "music_3761": ["1986 recordings", "1986 singles", "heart album", "power ballads"],
+    "music_3762": ["1986 recordings", "1986 singles", "back in the high life album", "chaka khan backing vocals", "pop soul"],
+    "music_3763": ["1987 recordings", "1987 singles", "back in the high life album", "james taylor backing vocals"],
+    "music_3764": ["1982 singles", "1987 remixes", "talking back to the night album", "1987 remix", "chronicles compilation"],
+    "music_3765": ["1988 recordings", "1988 singles", "roll with it album", "rock and soul"],
+    "music_3766": ["1981 recordings", "1981 singles", "arc of a diver album", "synth-pop influences"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const performer = artistTags[correctAnswer];
+    const recording = recordingTags[id];
+    if (!performer || !recording) throw new Error(`Missing tags for ${id}`);
+
+    const match = question.match(/'(.+)'/);
+    if (!match) throw new Error(`Missing song title for ${id}`);
+
+    const yearTag = recording.find(tag => /^\d{4} (singles|recordings)$/.test(tag));
+    if (!yearTag) throw new Error(`Missing year for ${id}`);
+
+    const year = Number(yearTag.slice(0, 4));
+    const era = `${Math.floor(year / 10) * 10}s`;
+
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            era, `${era} music`, "music", "songs", "recordings",
+            match[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...performer, ...recording
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack56 = [
-
-    // =========================================================
-    // BILLY JOEL
-    // =========================================================
-
-    {
-        id: "music_3667",
-        category: "Music",
-        question: "Which artist recorded 'You May Be Right'?",
-        answers: ["Billy Joel", "Bruce Springsteen", "Bob Seger", "Jackson Browne"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3668",
-        category: "Music",
-        question: "Which artist recorded 'It's Still Rock and Roll to Me'?",
-        answers: ["Billy Joel", "Elton John", "Huey Lewis", "John Mellencamp"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3669",
-        category: "Music",
-        question: "Which artist recorded 'Don't Ask Me Why'?",
-        answers: ["Billy Joel", "Paul Simon", "Eric Carmen", "Christopher Cross"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3670",
-        category: "Music",
-        question: "Which artist recorded 'Sometimes a Fantasy'?",
-        answers: ["Billy Joel", "Rick Springfield", "Eddie Money", "Don Henley"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3671",
-        category: "Music",
-        question: "Which artist recorded 'All for Leyna'?",
-        answers: ["Billy Joel", "Jackson Browne", "John Mellencamp", "Boz Scaggs"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3672",
-        category: "Music",
-        question: "Which artist recorded 'Pressure'?",
-        answers: ["Billy Joel", "Peter Gabriel", "Phil Collins", "Steve Winwood"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3673",
-        category: "Music",
-        question: "Which artist recorded 'Allentown'?",
-        answers: ["Billy Joel", "Bruce Springsteen", "Bob Seger", "John Mellencamp"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3674",
-        category: "Music",
-        question: "Which artist recorded 'Goodnight Saigon'?",
-        answers: ["Billy Joel", "Bruce Springsteen", "Don Henley", "Bob Seger"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3675",
-        category: "Music",
-        question: "Which artist recorded 'She's Right on Time'?",
-        answers: ["Billy Joel", "Elton John", "Paul Simon", "James Taylor"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3676",
-        category: "Music",
-        question: "Which artist recorded 'Tell Her About It'?",
-        answers: ["Billy Joel", "Lionel Richie", "Hall & Oates", "Paul Young"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3677",
-        category: "Music",
-        question: "Which artist recorded 'An Innocent Man'?",
-        answers: ["Billy Joel", "Elton John", "George Michael", "Lionel Richie"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3678",
-        category: "Music",
-        question: "Which artist recorded 'The Longest Time'?",
-        answers: ["Billy Joel", "Huey Lewis and the News", "Hall & Oates", "The Cars"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3679",
-        category: "Music",
-        question: "Which artist recorded 'Leave a Tender Moment Alone'?",
-        answers: ["Billy Joel", "Lionel Richie", "Elton John", "Paul Young"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3680",
-        category: "Music",
-        question: "Which artist recorded 'Keeping the Faith'?",
-        answers: ["Billy Joel", "Bruce Springsteen", "John Mellencamp", "Bob Seger"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3681",
-        category: "Music",
-        question: "Which artist recorded 'You're Only Human (Second Wind)'?",
-        answers: ["Billy Joel", "Steve Winwood", "Don Henley", "Peter Cetera"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3682",
-        category: "Music",
-        question: "Which artist recorded 'A Matter of Trust'?",
-        answers: ["Billy Joel", "Bryan Adams", "Bruce Springsteen", "Richard Marx"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3683",
-        category: "Music",
-        question: "Which artist recorded 'Modern Woman'?",
-        answers: ["Billy Joel", "Rick Springfield", "Steve Winwood", "Robert Palmer"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3684",
-        category: "Music",
-        question: "Which artist recorded 'This Is the Time'?",
-        answers: ["Billy Joel", "Peter Cetera", "Richard Marx", "Lionel Richie"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3685",
-        category: "Music",
-        question: "Which artist recorded 'Baby Grand'?",
-        answers: ["Billy Joel", "Elton John", "Joe Cocker", "Steve Winwood"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3686",
-        category: "Music",
-        question: "Which artist recorded 'Big Man on Mulberry Street'?",
-        answers: ["Billy Joel", "Bruce Springsteen", "John Mellencamp", "Tom Waits"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3687",
-        category: "Music",
-        question: "Which artist recorded 'We Didn't Start the Fire'?",
-        answers: ["Billy Joel", "Bruce Springsteen", "Don Henley", "John Mellencamp"],
-        correctAnswer: "Billy Joel"
-    },
-    {
-        id: "music_3688",
-        category: "Music",
-        question: "Which artist recorded 'The Downeaster Alexa'?",
-        answers: ["Billy Joel", "Bruce Springsteen", "Jackson Browne", "Bob Seger"],
-        correctAnswer: "Billy Joel"
-    },
-
-    // =========================================================
-    // BRUCE SPRINGSTEEN
-    // =========================================================
-
-    {
-        id: "music_3689",
-        category: "Music",
-        question: "Which artist recorded 'Hungry Heart'?",
-        answers: ["Bruce Springsteen", "Billy Joel", "Bob Seger", "John Mellencamp"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_3690",
-        category: "Music",
-        question: "Which artist recorded 'Atlantic City'?",
-        answers: ["Bruce Springsteen", "Don Henley", "Tom Petty", "Bob Seger"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_3691",
-        category: "Music",
-        question: "Which artist recorded 'Cover Me'?",
-        answers: ["Bruce Springsteen", "Bryan Adams", "John Mellencamp", "Billy Joel"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_3692",
-        category: "Music",
-        question: "Which artist recorded 'Born in the U.S.A.'?",
-        answers: ["Bruce Springsteen", "Bob Seger", "John Mellencamp", "Tom Petty"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_3693",
-        category: "Music",
-        question: "Which artist recorded 'I'm on Fire'?",
-        answers: ["Bruce Springsteen", "Billy Idol", "Bryan Adams", "Don Henley"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_3694",
-        category: "Music",
-        question: "Which artist recorded 'Glory Days'?",
-        answers: ["Bruce Springsteen", "Billy Joel", "John Mellencamp", "Bob Seger"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_3695",
-        category: "Music",
-        question: "Which artist recorded 'My Hometown'?",
-        answers: ["Bruce Springsteen", "John Mellencamp", "Tom Petty", "Bob Seger"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_3696",
-        category: "Music",
-        question: "Which artist recorded 'Brilliant Disguise'?",
-        answers: ["Bruce Springsteen", "Don Henley", "Bryan Adams", "Billy Joel"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_3697",
-        category: "Music",
-        question: "Which artist recorded 'Tunnel of Love'?",
-        answers: ["Bruce Springsteen", "Dire Straits", "Chris Rea", "John Mellencamp"],
-        correctAnswer: "Bruce Springsteen"
-    },
-
-    // =========================================================
-    // TINA TURNER
-    // =========================================================
-
-    {
-        id: "music_3698",
-        category: "Music",
-        question: "Which artist recorded 'Better Be Good to Me'?",
-        answers: ["Tina Turner", "Pat Benatar", "Cher", "Bonnie Tyler"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_3699",
-        category: "Music",
-        question: "Which artist recorded 'We Don't Need Another Hero (Thunderdome)'?",
-        answers: ["Tina Turner", "Bonnie Tyler", "Cher", "Pat Benatar"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_3700",
-        category: "Music",
-        question: "Which artist recorded 'Typical Male'?",
-        answers: ["Tina Turner", "Cher", "Diana Ross", "Donna Summer"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_3701",
-        category: "Music",
-        question: "Which artist recorded 'Two People'?",
-        answers: ["Tina Turner", "Diana Ross", "Anita Baker", "Chaka Khan"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_3702",
-        category: "Music",
-        question: "Which artist recorded 'What You Get Is What You See'?",
-        answers: ["Tina Turner", "Pat Benatar", "Cher", "Bonnie Tyler"],
-        correctAnswer: "Tina Turner"
-    },
-
-    // =========================================================
-    // LIONEL RICHIE
-    // =========================================================
-
-    {
-        id: "music_3703",
-        category: "Music",
-        question: "Which artist recorded 'Truly'?",
-        answers: ["Lionel Richie", "Luther Vandross", "Billy Ocean", "Peabo Bryson"],
-        correctAnswer: "Lionel Richie"
-    },
-    {
-        id: "music_3704",
-        category: "Music",
-        question: "Which artist recorded 'You Are'?",
-        answers: ["Lionel Richie", "Billy Ocean", "Luther Vandross", "George Benson"],
-        correctAnswer: "Lionel Richie"
-    },
-    {
-        id: "music_3705",
-        category: "Music",
-        question: "Which artist recorded 'My Love'?",
-        answers: ["Lionel Richie", "Billy Ocean", "Luther Vandross", "Jeffrey Osborne"],
-        correctAnswer: "Lionel Richie"
-    },
-    {
-        id: "music_3706",
-        category: "Music",
-        question: "Which artist recorded 'All Night Long (All Night)'?",
-        answers: ["Lionel Richie", "Billy Ocean", "Kool & the Gang", "Luther Vandross"],
-        correctAnswer: "Lionel Richie"
-    },
-    {
-        id: "music_3707",
-        category: "Music",
-        question: "Which artist recorded 'Running with the Night'?",
-        answers: ["Lionel Richie", "Billy Ocean", "George Benson", "Jeffrey Osborne"],
-        correctAnswer: "Lionel Richie"
-    },
-    {
-        id: "music_3708",
-        category: "Music",
-        question: "Which artist recorded 'Hello'?",
-        answers: ["Lionel Richie", "Luther Vandross", "Billy Ocean", "Peabo Bryson"],
-        correctAnswer: "Lionel Richie"
-    },
-    {
-        id: "music_3709",
-        category: "Music",
-        question: "Which artist recorded 'Stuck on You'?",
-        answers: ["Lionel Richie", "Billy Ocean", "George Benson", "Luther Vandross"],
-        correctAnswer: "Lionel Richie"
-    },
-    {
-        id: "music_3710",
-        category: "Music",
-        question: "Which artist recorded 'Penny Lover'?",
-        answers: ["Lionel Richie", "Billy Ocean", "Luther Vandross", "Jeffrey Osborne"],
-        correctAnswer: "Lionel Richie"
-    },
-    {
-        id: "music_3711",
-        category: "Music",
-        question: "Which artist recorded 'Say You, Say Me'?",
-        answers: ["Lionel Richie", "Billy Ocean", "Luther Vandross", "George Benson"],
-        correctAnswer: "Lionel Richie"
-    },
-
-    // =========================================================
-    // DARYL HALL & JOHN OATES
-    // =========================================================
-
-    {
-        id: "music_3712",
-        category: "Music",
-        question: "Which duo recorded 'Kiss on My List'?",
-        answers: ["Daryl Hall & John Oates", "Wham!", "Go West", "The Blow Monkeys"],
-        correctAnswer: "Daryl Hall & John Oates"
-    },
-    {
-        id: "music_3713",
-        category: "Music",
-        question: "Which duo recorded 'You Make My Dreams'?",
-        answers: ["Daryl Hall & John Oates", "Wham!", "Go West", "Hue and Cry"],
-        correctAnswer: "Daryl Hall & John Oates"
-    },
-    {
-        id: "music_3714",
-        category: "Music",
-        question: "Which duo recorded 'Private Eyes'?",
-        answers: ["Daryl Hall & John Oates", "Wham!", "Go West", "Wang Chung"],
-        correctAnswer: "Daryl Hall & John Oates"
-    },
-    {
-        id: "music_3715",
-        category: "Music",
-        question: "Which duo recorded 'I Can't Go for That (No Can Do)'?",
-        answers: ["Daryl Hall & John Oates", "Wham!", "Go West", "Hue and Cry"],
-        correctAnswer: "Daryl Hall & John Oates"
-    },
-    {
-        id: "music_3716",
-        category: "Music",
-        question: "Which duo recorded 'Maneater'?",
-        answers: ["Daryl Hall & John Oates", "Wham!", "Go West", "Wang Chung"],
-        correctAnswer: "Daryl Hall & John Oates"
-    },
-    {
-        id: "music_3717",
-        category: "Music",
-        question: "Which duo recorded 'One on One'?",
-        answers: ["Daryl Hall & John Oates", "Wham!", "Go West", "Hue and Cry"],
-        correctAnswer: "Daryl Hall & John Oates"
-    },
-    {
-        id: "music_3718",
-        category: "Music",
-        question: "Which duo recorded 'Out of Touch'?",
-        answers: ["Daryl Hall & John Oates", "Wham!", "Go West", "Wang Chung"],
-        correctAnswer: "Daryl Hall & John Oates"
-    },
-    {
-        id: "music_3719",
-        category: "Music",
-        question: "Which duo recorded 'Method of Modern Love'?",
-        answers: ["Daryl Hall & John Oates", "Go West", "Hue and Cry", "Wang Chung"],
-        correctAnswer: "Daryl Hall & John Oates"
-    },
-
-    // =========================================================
-    // PAT BENATAR
-    // =========================================================
-
-    {
-        id: "music_3720",
-        category: "Music",
-        question: "Which artist recorded 'Hit Me with Your Best Shot'?",
-        answers: ["Pat Benatar", "Joan Jett", "Heart", "Bonnie Tyler"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_3721",
-        category: "Music",
-        question: "Which artist recorded 'We Belong'?",
-        answers: ["Pat Benatar", "Heart", "Bonnie Tyler", "Kim Carnes"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_3722",
-        category: "Music",
-        question: "Which artist recorded 'Shadows of the Night'?",
-        answers: ["Pat Benatar", "Heart", "Bonnie Tyler", "Joan Jett"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_3723",
-        category: "Music",
-        question: "Which artist recorded 'Invincible'?",
-        answers: ["Pat Benatar", "Heart", "Bonnie Tyler", "Cher"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_3724",
-        category: "Music",
-        question: "Which artist recorded 'All Fired Up'?",
-        answers: ["Pat Benatar", "Joan Jett", "Heart", "Bonnie Tyler"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_3725",
-        category: "Music",
-        question: "Which artist recorded 'Fire and Ice'?",
-        answers: ["Pat Benatar", "Heart", "Kim Carnes", "Joan Jett"],
-        correctAnswer: "Pat Benatar"
-    },
-
-    // =========================================================
-    // BILLY IDOL
-    // =========================================================
-
-    {
-        id: "music_3726",
-        category: "Music",
-        question: "Which artist recorded 'Hot in the City'?",
-        answers: ["Billy Idol", "David Bowie", "Robert Palmer", "Bryan Adams"],
-        correctAnswer: "Billy Idol"
-    },
-    {
-        id: "music_3727",
-        category: "Music",
-        question: "Which artist recorded 'Eyes Without a Face'?",
-        answers: ["Billy Idol", "David Bowie", "Robert Palmer", "INXS"],
-        correctAnswer: "Billy Idol"
-    },
-    {
-        id: "music_3728",
-        category: "Music",
-        question: "Which artist recorded 'Flesh for Fantasy'?",
-        answers: ["Billy Idol", "David Bowie", "Robert Palmer", "Adam Ant"],
-        correctAnswer: "Billy Idol"
-    },
-    {
-        id: "music_3729",
-        category: "Music",
-        question: "Which artist recorded 'To Be a Lover'?",
-        answers: ["Billy Idol", "Robert Palmer", "Bryan Adams", "David Bowie"],
-        correctAnswer: "Billy Idol"
-    },
-    {
-        id: "music_3730",
-        category: "Music",
-        question: "Which artist recorded 'Sweet Sixteen'?",
-        answers: ["Billy Idol", "Bryan Adams", "Robert Palmer", "David Bowie"],
-        correctAnswer: "Billy Idol"
-    },
-
-    // =========================================================
-    // PRINCE
-    // =========================================================
-
-    {
-        id: "music_3731",
-        category: "Music",
-        question: "Which artist recorded 'Little Red Corvette'?",
-        answers: ["Prince", "Michael Jackson", "Terence Trent D'Arby", "George Michael"],
-        correctAnswer: "Prince"
-    },
-    {
-        id: "music_3732",
-        category: "Music",
-        question: "Which artist recorded 'Delirious'?",
-        answers: ["Prince", "Michael Jackson", "George Michael", "Rick James"],
-        correctAnswer: "Prince"
-    },
-    {
-        id: "music_3733",
-        category: "Music",
-        question: "Which artist recorded 'When Doves Cry'?",
-        answers: ["Prince", "Michael Jackson", "George Michael", "Terence Trent D'Arby"],
-        correctAnswer: "Prince"
-    },
-    {
-        id: "music_3734",
-        category: "Music",
-        question: "Which artist recorded 'Let's Go Crazy'?",
-        answers: ["Prince", "Michael Jackson", "George Michael", "Rick James"],
-        correctAnswer: "Prince"
-    },
-    {
-        id: "music_3735",
-        category: "Music",
-        question: "Which artist recorded 'I Would Die 4 U'?",
-        answers: ["Prince", "Michael Jackson", "George Michael", "Terence Trent D'Arby"],
-        correctAnswer: "Prince"
-    },
-    {
-        id: "music_3736",
-        category: "Music",
-        question: "Which artist recorded 'Sign o' the Times'?",
-        answers: ["Prince", "George Michael", "Michael Jackson", "Terence Trent D'Arby"],
-        correctAnswer: "Prince"
-    },
-
-    // =========================================================
-    // GEORGE MICHAEL
-    // =========================================================
-
-    {
-        id: "music_3737",
-        category: "Music",
-        question: "Which artist recorded 'I Want Your Sex'?",
-        answers: ["George Michael", "Prince", "Terence Trent D'Arby", "Rick Astley"],
-        correctAnswer: "George Michael"
-    },
-    {
-        id: "music_3738",
-        category: "Music",
-        question: "Which artist recorded 'One More Try'?",
-        answers: ["George Michael", "Prince", "Michael Bolton", "Richard Marx"],
-        correctAnswer: "George Michael"
-    },
-    {
-        id: "music_3739",
-        category: "Music",
-        question: "Which artist recorded 'Monkey'?",
-        answers: ["George Michael", "Prince", "Michael Jackson", "Terence Trent D'Arby"],
-        correctAnswer: "George Michael"
-    },
-    {
-        id: "music_3740",
-        category: "Music",
-        question: "Which artist recorded 'Kissing a Fool'?",
-        answers: ["George Michael", "Michael Bolton", "Richard Marx", "Paul Young"],
-        correctAnswer: "George Michael"
-    },
-
-    // =========================================================
-    // BONNIE TYLER
-    // =========================================================
-
-    {
-        id: "music_3741",
-        category: "Music",
-        question: "Which artist recorded 'Have You Ever Seen the Rain?'?",
-        answers: ["Bonnie Tyler", "Tina Turner", "Cher", "Pat Benatar"],
-        correctAnswer: "Bonnie Tyler"
-    },
-    {
-        id: "music_3742",
-        category: "Music",
-        question: "Which artist recorded 'Loving You's a Dirty Job but Somebody's Gotta Do It'?",
-        answers: ["Bonnie Tyler", "Tina Turner", "Cher", "Pat Benatar"],
-        correctAnswer: "Bonnie Tyler"
-    },
-    {
-        id: "music_3743",
-        category: "Music",
-        question: "Which artist recorded 'The Best'?",
-        answers: ["Bonnie Tyler", "Tina Turner", "Cher", "Pat Benatar"],
-        correctAnswer: "Bonnie Tyler"
-    },
-
-    // =========================================================
-    // FOREIGNER
-    // =========================================================
-
-    {
-        id: "music_3744",
-        category: "Music",
-        question: "Which group recorded 'Waiting for a Girl Like You'?",
-        answers: ["Foreigner", "Journey", "Toto", "REO Speedwagon"],
-        correctAnswer: "Foreigner"
-    },
-    {
-        id: "music_3745",
-        category: "Music",
-        question: "Which group recorded 'Juke Box Hero'?",
-        answers: ["Foreigner", "Journey", "Boston", "REO Speedwagon"],
-        correctAnswer: "Foreigner"
-    },
-    {
-        id: "music_3746",
-        category: "Music",
-        question: "Which group recorded 'Say You Will'?",
-        answers: ["Foreigner", "Journey", "Toto", "REO Speedwagon"],
-        correctAnswer: "Foreigner"
-    },
-    {
-        id: "music_3747",
-        category: "Music",
-        question: "Which group recorded 'I Don't Want to Live Without You'?",
-        answers: ["Foreigner", "Journey", "Toto", "Chicago"],
-        correctAnswer: "Foreigner"
-    },
-
-    // =========================================================
-    // JOURNEY
-    // =========================================================
-
-    {
-        id: "music_3748",
-        category: "Music",
-        question: "Which group recorded 'Any Way You Want It'?",
-        answers: ["Journey", "Foreigner", "Boston", "REO Speedwagon"],
-        correctAnswer: "Journey"
-    },
-    {
-        id: "music_3749",
-        category: "Music",
-        question: "Which group recorded 'Who's Crying Now'?",
-        answers: ["Journey", "Foreigner", "Toto", "REO Speedwagon"],
-        correctAnswer: "Journey"
-    },
-    {
-        id: "music_3750",
-        category: "Music",
-        question: "Which group recorded 'Open Arms'?",
-        answers: ["Journey", "Foreigner", "Chicago", "REO Speedwagon"],
-        correctAnswer: "Journey"
-    },
-    {
-        id: "music_3751",
-        category: "Music",
-        question: "Which group recorded 'Separate Ways (Worlds Apart)'?",
-        answers: ["Journey", "Foreigner", "Boston", "Toto"],
-        correctAnswer: "Journey"
-    },
-    {
-        id: "music_3752",
-        category: "Music",
-        question: "Which group recorded 'Faithfully'?",
-        answers: ["Journey", "Foreigner", "Chicago", "REO Speedwagon"],
-        correctAnswer: "Journey"
-    },
-    {
-        id: "music_3753",
-        category: "Music",
-        question: "Which group recorded 'Only the Young'?",
-        answers: ["Journey", "Foreigner", "Toto", "Boston"],
-        correctAnswer: "Journey"
-    },
-    {
-        id: "music_3754",
-        category: "Music",
-        question: "Which group recorded 'Be Good to Yourself'?",
-        answers: ["Journey", "Foreigner", "REO Speedwagon", "Boston"],
-        correctAnswer: "Journey"
-    },
-
-    // =========================================================
-    // STARSHIP
-    // =========================================================
-
-    {
-        id: "music_3755",
-        category: "Music",
-        question: "Which group recorded 'It's Not Over ('Til It's Over)'?",
-        answers: ["Starship", "Journey", "Foreigner", "Heart"],
-        correctAnswer: "Starship"
-    },
-
-    // =========================================================
-    // HEART
-    // =========================================================
-
-    {
-        id: "music_3756",
-        category: "Music",
-        question: "Which group recorded 'What About Love'?",
-        answers: ["Heart", "Starship", "Foreigner", "REO Speedwagon"],
-        correctAnswer: "Heart"
-    },
-    {
-        id: "music_3757",
-        category: "Music",
-        question: "Which group recorded 'Never'?",
-        answers: ["Heart", "Starship", "Foreigner", "Berlin"],
-        correctAnswer: "Heart"
-    },
-    {
-        id: "music_3758",
-        category: "Music",
-        question: "Which group recorded 'Who Will You Run To'?",
-        answers: ["Heart", "Starship", "Foreigner", "Berlin"],
-        correctAnswer: "Heart"
-    },
-    {
-        id: "music_3759",
-        category: "Music",
-        question: "Which group recorded 'There's the Girl'?",
-        answers: ["Heart", "Starship", "Berlin", "Foreigner"],
-        correctAnswer: "Heart"
-    },
-    {
-        id: "music_3760",
-        category: "Music",
-        question: "Which group recorded 'All I Wanna Do Is Make Love to You'?",
-        answers: ["Heart", "Starship", "Foreigner", "Berlin"],
-        correctAnswer: "Heart"
-    },
-    {
-        id: "music_3761",
-        category: "Music",
-        question: "Which group recorded 'Nothin' at All'?",
-        answers: ["Heart", "Starship", "Foreigner", "Berlin"],
-        correctAnswer: "Heart"
-    },
-
-    // =========================================================
-    // STEVE WINWOOD
-    // =========================================================
-
-    {
-        id: "music_3762",
-        category: "Music",
-        question: "Which artist recorded 'Higher Love'?",
-        answers: ["Steve Winwood", "Peter Gabriel", "Phil Collins", "Robert Palmer"],
-        correctAnswer: "Steve Winwood"
-    },
-    {
-        id: "music_3763",
-        category: "Music",
-        question: "Which artist recorded 'Back in the High Life Again'?",
-        answers: ["Steve Winwood", "Peter Gabriel", "Phil Collins", "Don Henley"],
-        correctAnswer: "Steve Winwood"
-    },
-    {
-        id: "music_3764",
-        category: "Music",
-        question: "Which artist recorded 'Valerie'?",
-        answers: ["Steve Winwood", "Robert Palmer", "Peter Gabriel", "Phil Collins"],
-        correctAnswer: "Steve Winwood"
-    },
-    {
-        id: "music_3765",
-        category: "Music",
-        question: "Which artist recorded 'Roll with It'?",
-        answers: ["Steve Winwood", "Robert Palmer", "Phil Collins", "Peter Gabriel"],
-        correctAnswer: "Steve Winwood"
-    },
-    {
-        id: "music_3766",
-        category: "Music",
-        question: "Which artist recorded 'While You See a Chance'?",
-        answers: ["Steve Winwood", "Peter Gabriel", "Phil Collins", "Robert Palmer"],
-        correctAnswer: "Steve Winwood"
-    }
-
+    makeQuestion("music_3667", "Which artist recorded 'You May Be Right'?", ["Billy Joel", "Bruce Springsteen", "Bob Seger", "Jackson Browne"], "Billy Joel", "Medium"),
+    makeQuestion("music_3668", "Which artist recorded 'It's Still Rock and Roll to Me'?", ["Billy Joel", "Elton John", "Huey Lewis", "John Mellencamp"], "Billy Joel", "Easy"),
+    makeQuestion("music_3669", "Which artist recorded 'Don't Ask Me Why'?", ["Billy Joel", "Paul Simon", "Eric Carmen", "Christopher Cross"], "Billy Joel", "Medium"),
+    makeQuestion("music_3670", "Which artist recorded 'Sometimes a Fantasy'?", ["Billy Joel", "Rick Springfield", "Eddie Money", "Don Henley"], "Billy Joel", "Medium"),
+    makeQuestion("music_3671", "Which artist recorded 'All for Leyna'?", ["Billy Joel", "Jackson Browne", "John Mellencamp", "Boz Scaggs"], "Billy Joel", "Hard"),
+    makeQuestion("music_3672", "Which artist recorded 'Pressure'?", ["Billy Joel", "Peter Gabriel", "Phil Collins", "Steve Winwood"], "Billy Joel", "Medium"),
+    makeQuestion("music_3673", "Which artist recorded 'Allentown'?", ["Billy Joel", "Bruce Springsteen", "Bob Seger", "John Mellencamp"], "Billy Joel", "Medium"),
+    makeQuestion("music_3674", "Which artist recorded 'Goodnight Saigon'?", ["Billy Joel", "Bruce Springsteen", "Don Henley", "Bob Seger"], "Billy Joel", "Medium"),
+    makeQuestion("music_3675", "Which artist recorded 'She's Right on Time'?", ["Billy Joel", "Elton John", "Paul Simon", "James Taylor"], "Billy Joel", "Hard"),
+    makeQuestion("music_3676", "Which artist recorded 'Tell Her About It'?", ["Billy Joel", "Lionel Richie", "Hall & Oates", "Paul Young"], "Billy Joel", "Easy"),
+    makeQuestion("music_3677", "Which artist recorded 'An Innocent Man'?", ["Billy Joel", "Elton John", "George Michael", "Lionel Richie"], "Billy Joel", "Medium"),
+    makeQuestion("music_3678", "Which artist recorded 'The Longest Time'?", ["Billy Joel", "Huey Lewis and the News", "Hall & Oates", "The Cars"], "Billy Joel", "Easy"),
+    makeQuestion("music_3679", "Which artist recorded 'Leave a Tender Moment Alone'?", ["Billy Joel", "Lionel Richie", "Elton John", "Paul Young"], "Billy Joel", "Medium"),
+    makeQuestion("music_3680", "Which artist recorded 'Keeping the Faith'?", ["Billy Joel", "Bruce Springsteen", "John Mellencamp", "Bob Seger"], "Billy Joel", "Medium"),
+    makeQuestion("music_3681", "Which artist recorded 'You're Only Human (Second Wind)'?", ["Billy Joel", "Steve Winwood", "Don Henley", "Peter Cetera"], "Billy Joel", "Hard"),
+    makeQuestion("music_3682", "Which artist recorded 'A Matter of Trust'?", ["Billy Joel", "Bryan Adams", "Bruce Springsteen", "Richard Marx"], "Billy Joel", "Medium"),
+    makeQuestion("music_3683", "Which artist recorded 'Modern Woman'?", ["Billy Joel", "Rick Springfield", "Steve Winwood", "Robert Palmer"], "Billy Joel", "Medium"),
+    makeQuestion("music_3684", "Which artist recorded 'This Is the Time'?", ["Billy Joel", "Peter Cetera", "Richard Marx", "Lionel Richie"], "Billy Joel", "Hard"),
+    makeQuestion("music_3685", "Which artist recorded 'Baby Grand'?", ["Billy Joel", "Elton John", "Joe Cocker", "Steve Winwood"], "Billy Joel", "Hard"),
+    makeQuestion("music_3686", "Which artist recorded 'Big Man on Mulberry Street'?", ["Billy Joel", "Bruce Springsteen", "John Mellencamp", "Tom Waits"], "Billy Joel", "Hard"),
+    makeQuestion("music_3687", "Which artist recorded 'We Didn't Start the Fire'?", ["Billy Joel", "Bruce Springsteen", "Don Henley", "John Mellencamp"], "Billy Joel", "Easy"),
+    makeQuestion("music_3688", "Which artist recorded 'The Downeaster Alexa'?", ["Billy Joel", "Bruce Springsteen", "Jackson Browne", "Bob Seger"], "Billy Joel", "Medium"),
+    makeQuestion("music_3689", "Which artist recorded 'Hungry Heart'?", ["Bruce Springsteen", "Billy Joel", "Bob Seger", "John Mellencamp"], "Bruce Springsteen", "Easy"),
+    makeQuestion("music_3690", "Which artist recorded 'Atlantic City'?", ["Bruce Springsteen", "Don Henley", "Tom Petty", "Bob Seger"], "Bruce Springsteen", "Hard"),
+    makeQuestion("music_3691", "Which artist recorded 'Cover Me'?", ["Bruce Springsteen", "Bryan Adams", "John Mellencamp", "Billy Joel"], "Bruce Springsteen", "Medium"),
+    makeQuestion("music_3692", "Which artist recorded 'Born in the U.S.A.'?", ["Bruce Springsteen", "Bob Seger", "John Mellencamp", "Tom Petty"], "Bruce Springsteen", "Easy"),
+    makeQuestion("music_3693", "Which artist recorded 'I'm on Fire'?", ["Bruce Springsteen", "Billy Idol", "Bryan Adams", "Don Henley"], "Bruce Springsteen", "Easy"),
+    makeQuestion("music_3694", "Which artist recorded 'Glory Days'?", ["Bruce Springsteen", "Billy Joel", "John Mellencamp", "Bob Seger"], "Bruce Springsteen", "Easy"),
+    makeQuestion("music_3695", "Which artist recorded 'My Hometown'?", ["Bruce Springsteen", "John Mellencamp", "Tom Petty", "Bob Seger"], "Bruce Springsteen", "Medium"),
+    makeQuestion("music_3696", "Which artist recorded 'Brilliant Disguise'?", ["Bruce Springsteen", "Don Henley", "Bryan Adams", "Billy Joel"], "Bruce Springsteen", "Medium"),
+    makeQuestion("music_3697", "Which artist recorded the title track of the 1987 album 'Tunnel of Love'?", ["Bruce Springsteen", "Dire Straits", "Chris Rea", "John Mellencamp"], "Bruce Springsteen", "Hard"),
+    makeQuestion("music_3698", "Which artist recorded 'Better Be Good to Me'?", ["Tina Turner", "Pat Benatar", "Cher", "Bonnie Tyler"], "Tina Turner", "Medium"),
+    makeQuestion("music_3699", "Which artist recorded 'We Don't Need Another Hero (Thunderdome)'?", ["Tina Turner", "Bonnie Tyler", "Cher", "Pat Benatar"], "Tina Turner", "Easy"),
+    makeQuestion("music_3700", "Which artist recorded 'Typical Male'?", ["Tina Turner", "Cher", "Diana Ross", "Donna Summer"], "Tina Turner", "Medium"),
+    makeQuestion("music_3701", "Which artist recorded 'Two People'?", ["Tina Turner", "Diana Ross", "Anita Baker", "Chaka Khan"], "Tina Turner", "Hard"),
+    makeQuestion("music_3702", "Which artist recorded 'What You Get Is What You See'?", ["Tina Turner", "Pat Benatar", "Cher", "Bonnie Tyler"], "Tina Turner", "Hard"),
+    makeQuestion("music_3703", "Which artist recorded 'Truly'?", ["Lionel Richie", "Luther Vandross", "Billy Ocean", "Peabo Bryson"], "Lionel Richie", "Easy"),
+    makeQuestion("music_3704", "Which artist recorded 'You Are'?", ["Lionel Richie", "Billy Ocean", "Luther Vandross", "George Benson"], "Lionel Richie", "Medium"),
+    makeQuestion("music_3705", "Which artist recorded 'My Love'?", ["Lionel Richie", "Billy Ocean", "Luther Vandross", "Jeffrey Osborne"], "Lionel Richie", "Hard"),
+    makeQuestion("music_3706", "Which artist recorded 'All Night Long (All Night)'?", ["Lionel Richie", "Billy Ocean", "Kool & the Gang", "Luther Vandross"], "Lionel Richie", "Easy"),
+    makeQuestion("music_3707", "Which artist recorded 'Running with the Night'?", ["Lionel Richie", "Billy Ocean", "George Benson", "Jeffrey Osborne"], "Lionel Richie", "Hard"),
+    makeQuestion("music_3708", "Which artist recorded 'Hello'?", ["Lionel Richie", "Luther Vandross", "Billy Ocean", "Peabo Bryson"], "Lionel Richie", "Easy"),
+    makeQuestion("music_3709", "Which artist recorded 'Stuck on You'?", ["Lionel Richie", "Billy Ocean", "George Benson", "Luther Vandross"], "Lionel Richie", "Medium"),
+    makeQuestion("music_3710", "Which artist recorded 'Penny Lover'?", ["Lionel Richie", "Billy Ocean", "Luther Vandross", "Jeffrey Osborne"], "Lionel Richie", "Hard"),
+    makeQuestion("music_3711", "Which artist recorded 'Say You, Say Me'?", ["Lionel Richie", "Billy Ocean", "Luther Vandross", "George Benson"], "Lionel Richie", "Easy"),
+    makeQuestion("music_3712", "Which duo recorded 'Kiss on My List'?", ["Daryl Hall & John Oates", "Wham!", "Go West", "The Blow Monkeys"], "Daryl Hall & John Oates", "Easy"),
+    makeQuestion("music_3713", "Which duo recorded 'You Make My Dreams'?", ["Daryl Hall & John Oates", "Wham!", "Go West", "Hue and Cry"], "Daryl Hall & John Oates", "Easy"),
+    makeQuestion("music_3714", "Which duo recorded 'Private Eyes'?", ["Daryl Hall & John Oates", "Wham!", "Go West", "Wang Chung"], "Daryl Hall & John Oates", "Easy"),
+    makeQuestion("music_3715", "Which duo recorded 'I Can't Go for That (No Can Do)'?", ["Daryl Hall & John Oates", "Wham!", "Go West", "Hue and Cry"], "Daryl Hall & John Oates", "Easy"),
+    makeQuestion("music_3716", "Which duo recorded 'Maneater'?", ["Daryl Hall & John Oates", "Wham!", "Go West", "Wang Chung"], "Daryl Hall & John Oates", "Easy"),
+    makeQuestion("music_3717", "Which duo recorded 'One on One'?", ["Daryl Hall & John Oates", "Wham!", "Go West", "Hue and Cry"], "Daryl Hall & John Oates", "Medium"),
+    makeQuestion("music_3718", "Which duo recorded 'Out of Touch'?", ["Daryl Hall & John Oates", "Wham!", "Go West", "Wang Chung"], "Daryl Hall & John Oates", "Easy"),
+    makeQuestion("music_3719", "Which duo recorded 'Method of Modern Love'?", ["Daryl Hall & John Oates", "Go West", "Hue and Cry", "Wang Chung"], "Daryl Hall & John Oates", "Hard"),
+    makeQuestion("music_3720", "Which artist recorded 'Hit Me with Your Best Shot'?", ["Pat Benatar", "Joan Jett", "Heart", "Bonnie Tyler"], "Pat Benatar", "Easy"),
+    makeQuestion("music_3721", "Which artist recorded 'We Belong'?", ["Pat Benatar", "Heart", "Bonnie Tyler", "Kim Carnes"], "Pat Benatar", "Easy"),
+    makeQuestion("music_3722", "Which artist recorded 'Shadows of the Night'?", ["Pat Benatar", "Heart", "Bonnie Tyler", "Joan Jett"], "Pat Benatar", "Medium"),
+    makeQuestion("music_3723", "Which artist recorded 'Invincible'?", ["Pat Benatar", "Heart", "Bonnie Tyler", "Cher"], "Pat Benatar", "Hard"),
+    makeQuestion("music_3724", "Which artist recorded 'All Fired Up'?", ["Pat Benatar", "Joan Jett", "Heart", "Bonnie Tyler"], "Pat Benatar", "Medium"),
+    makeQuestion("music_3725", "Which artist recorded 'Fire and Ice'?", ["Pat Benatar", "Heart", "Kim Carnes", "Joan Jett"], "Pat Benatar", "Medium"),
+    makeQuestion("music_3726", "Which artist recorded 'Hot in the City'?", ["Billy Idol", "David Bowie", "Robert Palmer", "Bryan Adams"], "Billy Idol", "Easy"),
+    makeQuestion("music_3727", "Which artist recorded 'Eyes Without a Face'?", ["Billy Idol", "David Bowie", "Robert Palmer", "INXS"], "Billy Idol", "Easy"),
+    makeQuestion("music_3728", "Which artist recorded 'Flesh for Fantasy'?", ["Billy Idol", "David Bowie", "Robert Palmer", "Adam Ant"], "Billy Idol", "Medium"),
+    makeQuestion("music_3729", "Which artist recorded 'To Be a Lover'?", ["Billy Idol", "Robert Palmer", "Bryan Adams", "David Bowie"], "Billy Idol", "Hard"),
+    makeQuestion("music_3730", "Which artist recorded 'Sweet Sixteen'?", ["Billy Idol", "Bryan Adams", "Robert Palmer", "David Bowie"], "Billy Idol", "Hard"),
+    makeQuestion("music_3731", "Which artist recorded 'Little Red Corvette'?", ["Prince", "Michael Jackson", "Terence Trent D'Arby", "George Michael"], "Prince", "Easy"),
+    makeQuestion("music_3732", "Which artist recorded 'Delirious'?", ["Prince", "Michael Jackson", "George Michael", "Rick James"], "Prince", "Hard"),
+    makeQuestion("music_3733", "Which artist recorded 'When Doves Cry'?", ["Prince", "Michael Jackson", "George Michael", "Terence Trent D'Arby"], "Prince", "Easy"),
+    makeQuestion("music_3734", "Which artist recorded 'Let's Go Crazy'?", ["Prince", "Michael Jackson", "George Michael", "Rick James"], "Prince", "Easy"),
+    makeQuestion("music_3735", "Which artist recorded 'I Would Die 4 U'?", ["Prince", "Michael Jackson", "George Michael", "Terence Trent D'Arby"], "Prince", "Hard"),
+    makeQuestion("music_3736", "Which artist recorded 'Sign o' the Times'?", ["Prince", "George Michael", "Michael Jackson", "Terence Trent D'Arby"], "Prince", "Easy"),
+    makeQuestion("music_3737", "Which artist recorded 'I Want Your Sex'?", ["George Michael", "Prince", "Terence Trent D'Arby", "Rick Astley"], "George Michael", "Easy"),
+    makeQuestion("music_3738", "Which artist recorded 'One More Try'?", ["George Michael", "Prince", "Michael Bolton", "Richard Marx"], "George Michael", "Easy"),
+    makeQuestion("music_3739", "Which artist recorded 'Monkey'?", ["George Michael", "Prince", "Michael Jackson", "Terence Trent D'Arby"], "George Michael", "Medium"),
+    makeQuestion("music_3740", "Which artist recorded 'Kissing a Fool'?", ["George Michael", "Michael Bolton", "Richard Marx", "Paul Young"], "George Michael", "Medium"),
+    makeQuestion("music_3741", "Which artist recorded 'Have You Ever Seen the Rain?'?", ["Bonnie Tyler", "Tina Turner", "Cher", "Pat Benatar"], "Bonnie Tyler", "Medium"),
+    makeQuestion("music_3742", "Which artist recorded 'Loving You's a Dirty Job but Somebody's Gotta Do It'?", ["Bonnie Tyler", "Tina Turner", "Cher", "Pat Benatar"], "Bonnie Tyler", "Hard"),
+    makeQuestion("music_3743", "Which singer first released 'The Best' in 1988, before Tina Turner's famous version?", ["Bonnie Tyler", "Tina Turner", "Cher", "Pat Benatar"], "Bonnie Tyler", "Easy"),
+    makeQuestion("music_3744", "Which group recorded 'Waiting for a Girl Like You'?", ["Foreigner", "Journey", "Toto", "REO Speedwagon"], "Foreigner", "Easy"),
+    makeQuestion("music_3745", "Which group recorded 'Juke Box Hero'?", ["Foreigner", "Journey", "Boston", "REO Speedwagon"], "Foreigner", "Medium"),
+    makeQuestion("music_3746", "Which group recorded 'Say You Will'?", ["Foreigner", "Journey", "Toto", "REO Speedwagon"], "Foreigner", "Hard"),
+    makeQuestion("music_3747", "Which group recorded 'I Don't Want to Live Without You'?", ["Foreigner", "Journey", "Toto", "Chicago"], "Foreigner", "Hard"),
+    makeQuestion("music_3748", "Which group recorded 'Any Way You Want It'?", ["Journey", "Foreigner", "Boston", "REO Speedwagon"], "Journey", "Easy"),
+    makeQuestion("music_3749", "Which group recorded 'Who's Crying Now'?", ["Journey", "Foreigner", "Toto", "REO Speedwagon"], "Journey", "Medium"),
+    makeQuestion("music_3750", "Which group recorded 'Open Arms'?", ["Journey", "Foreigner", "Chicago", "REO Speedwagon"], "Journey", "Easy"),
+    makeQuestion("music_3751", "Which group recorded 'Separate Ways (Worlds Apart)'?", ["Journey", "Foreigner", "Boston", "Toto"], "Journey", "Easy"),
+    makeQuestion("music_3752", "Which group recorded 'Faithfully'?", ["Journey", "Foreigner", "Chicago", "REO Speedwagon"], "Journey", "Easy"),
+    makeQuestion("music_3753", "Which group recorded 'Only the Young'?", ["Journey", "Foreigner", "Toto", "Boston"], "Journey", "Hard"),
+    makeQuestion("music_3754", "Which group recorded 'Be Good to Yourself'?", ["Journey", "Foreigner", "REO Speedwagon", "Boston"], "Journey", "Hard"),
+    makeQuestion("music_3755", "Which group recorded 'It's Not Over ('Til It's Over)'?", ["Starship", "Journey", "Foreigner", "Heart"], "Starship", "Hard"),
+    makeQuestion("music_3756", "Which group recorded 'What About Love'?", ["Heart", "Starship", "Foreigner", "REO Speedwagon"], "Heart", "Easy"),
+    makeQuestion("music_3757", "Which group recorded 'Never'?", ["Heart", "Starship", "Foreigner", "Berlin"], "Heart", "Easy"),
+    makeQuestion("music_3758", "Which group recorded 'Who Will You Run To'?", ["Heart", "Starship", "Foreigner", "Berlin"], "Heart", "Medium"),
+    makeQuestion("music_3759", "Which group recorded 'There's the Girl'?", ["Heart", "Starship", "Berlin", "Foreigner"], "Heart", "Hard"),
+    makeQuestion("music_3760", "Which group recorded 'All I Wanna Do Is Make Love to You'?", ["Heart", "Starship", "Foreigner", "Berlin"], "Heart", "Easy"),
+    makeQuestion("music_3761", "Which group recorded 'Nothin' at All'?", ["Heart", "Starship", "Foreigner", "Berlin"], "Heart", "Hard"),
+    makeQuestion("music_3762", "Which artist recorded 'Higher Love'?", ["Steve Winwood", "Peter Gabriel", "Phil Collins", "Robert Palmer"], "Steve Winwood", "Easy"),
+    makeQuestion("music_3763", "Which artist recorded 'Back in the High Life Again'?", ["Steve Winwood", "Peter Gabriel", "Phil Collins", "Don Henley"], "Steve Winwood", "Hard"),
+    makeQuestion("music_3764", "Which artist recorded 'Valerie'?", ["Steve Winwood", "Robert Palmer", "Peter Gabriel", "Phil Collins"], "Steve Winwood", "Medium"),
+    makeQuestion("music_3765", "Which artist recorded 'Roll with It'?", ["Steve Winwood", "Robert Palmer", "Phil Collins", "Peter Gabriel"], "Steve Winwood", "Easy"),
+    makeQuestion("music_3766", "Which artist recorded 'While You See a Chance'?", ["Steve Winwood", "Peter Gabriel", "Phil Collins", "Robert Palmer"], "Steve Winwood", "Hard")
 ];
 
 module.exports = quizPack56;
