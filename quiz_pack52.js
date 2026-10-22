@@ -1,704 +1,278 @@
+ // quiz_pack52.js
+// PuzzlePilot Bigggggg Quiz — Pack 52
+// Pre-1960s music: rock and roll, doo-wop, pop, rhythm and blues, country and folk.
+// Original question IDs and answers preserved. One ambiguous question clarified.
+// Every question receives tags, difficulty and dailyEligible when loaded.
+
+const artistTags = {
+    "Elvis Presley": ["rock and roll", "rockabilly", "male singers", "american", "guitarists", "sun records"],
+    "Buddy Holly": ["rock and roll", "rockabilly", "male singers", "american", "guitarists", "songwriters", "the crickets"],
+    "The Everly Brothers": ["rock and roll", "country pop", "duos", "brothers", "american", "vocal harmony"],
+    "Roy Orbison": ["rock and roll", "rockabilly", "male singers", "american", "guitarists", "songwriters", "sun records"],
+    "Duane Eddy": ["instrumental rock", "rock and roll", "guitarists", "american", "electric guitar", "instrumentals"],
+    "Jackie Wilson": ["rhythm and blues", "soul", "rock and roll", "male singers", "american"],
+    "Sam Cooke": ["soul", "rhythm and blues", "gospel", "male singers", "american", "songwriters"],
+    "The Crickets": ["rock and roll", "rockabilly", "bands", "american", "guitarists", "buddy holly", "brunswick records"],
+    "The Diamonds": ["doo-wop", "pop", "rock and roll", "vocal groups", "canadian"],
+    "The Del-Vikings": ["doo-wop", "rhythm and blues", "vocal groups", "american"],
+    "The Five Satins": ["doo-wop", "rhythm and blues", "vocal groups", "american"],
+    "The Monotones": ["doo-wop", "rhythm and blues", "vocal groups", "american"],
+    "The Silhouettes": ["doo-wop", "rhythm and blues", "vocal groups", "american"],
+    "Frankie Avalon": ["pop", "teen idols", "male singers", "american"],
+    "Dion and the Belmonts": ["doo-wop", "rock and roll", "vocal groups", "american", "new york"],
+    "The Fleetwoods": ["doo-wop", "traditional pop", "vocal trios", "american", "vocal harmony"],
+    "Lloyd Price": ["rhythm and blues", "rock and roll", "male singers", "american", "new orleans", "songwriters"],
+    "Frankie Ford": ["rock and roll", "rhythm and blues", "male singers", "american", "new orleans"],
+    "Johnny and the Hurricanes": ["instrumental rock", "rock and roll", "bands", "american", "saxophone", "organ", "instrumentals"],
+    "The Skyliners": ["doo-wop", "traditional pop", "vocal groups", "american"],
+    "Wilbert Harrison": ["rhythm and blues", "rock and roll", "male singers", "american"],
+    "Phil Phillips": ["rhythm and blues", "swamp pop", "male singers", "american", "louisiana"],
+    "Dale Hawkins": ["rockabilly", "swamp rock", "rock and roll", "male singers", "american", "louisiana"],
+    "Jody Reynolds": ["rockabilly", "rock and roll", "male singers", "american"],
+    "The Olympics": ["doo-wop", "rhythm and blues", "rock and roll", "vocal groups", "american"],
+    "The Videos": ["doo-wop", "rhythm and blues", "vocal groups", "american"],
+    "The Spaniels": ["doo-wop", "rhythm and blues", "vocal groups", "american"],
+    "Fats Domino": ["rock and roll", "rhythm and blues", "male singers", "american", "pianists", "new orleans"],
+    "Chuck Berry": ["rock and roll", "rhythm and blues", "male singers", "american", "guitarists", "songwriters"],
+    "Little Richard": ["rock and roll", "rhythm and blues", "male singers", "american", "pianists"],
+    "Jerry Lee Lewis": ["rock and roll", "rockabilly", "male singers", "american", "pianists", "sun records"],
+    "Johnny Mathis": ["traditional pop", "ballads", "male singers", "american"],
+    "Pat Boone": ["traditional pop", "pop", "male singers", "american"],
+    "Brenda Lee": ["rockabilly", "pop", "country", "female singers", "american", "decca records"],
+    "The Chantels": ["doo-wop", "rhythm and blues", "female vocal groups", "american"],
+    "The Flamingos": ["doo-wop", "rhythm and blues", "vocal groups", "american"],
+    "The Moonglows": ["doo-wop", "rhythm and blues", "vocal groups", "american", "chess records"],
+    "The Clovers": ["doo-wop", "rhythm and blues", "vocal groups", "american", "atlantic records"],
+    "Tennessee Ernie Ford": ["country", "traditional pop", "gospel", "male singers", "american"],
+    "Hank Snow": ["country", "male singers", "canadian", "guitarists"],
+    "Hank Williams": ["country", "honky-tonk", "male singers", "american", "songwriters", "guitarists"],
+    "Ray Price": ["country", "honky-tonk", "male singers", "american"],
+    "Sonny James": ["country", "country pop", "male singers", "american"],
+    "Johnny Horton": ["country", "rockabilly", "male singers", "american", "historical ballads"],
+    "Guy Mitchell": ["traditional pop", "country pop", "male singers", "american"],
+    "Andy Williams": ["traditional pop", "pop", "male singers", "american"],
+    "Jimmie Rodgers": ["folk pop", "traditional pop", "male singers", "american", "1950s pop singer"],
+    "The Kingston Trio": ["folk", "folk revival", "vocal trios", "american", "acoustic guitar"],
+    "Sheb Wooley": ["novelty music", "country", "male singers", "american", "actors"]
+};
+
+const recordingTags = {
+    "music_3267": ["1955 singles", "sun records", "cover versions", "junior parker original"],
+    "music_3268": ["1956 singles", "film music", "love me tender film"],
+    "music_3269": ["1954 singles", "sun records", "cover versions", "bill monroe original", "bluegrass"],
+    "music_3270": ["1958 recordings", "1959 singles", "paul anka songwriter"],
+    "music_3271": ["1958 recordings", "1960 singles", "posthumous releases", "orchestral arrangements"],
+    "music_3272": ["1958 singles", "the crickets"],
+    "music_3273": ["1958 singles"],
+    "music_3274": ["1958 singles"],
+    "music_3275": ["1958 singles", "roy orbison songwriter"],
+    "music_3276": ["1956 singles", "sun records"],
+    "music_3277": ["1956 singles", "sun records"],
+    "music_3278": ["1958 singles", "guitar instrumentals"],
+    "music_3279": ["1959 singles", "guitar instrumentals", "television themes", "henry mancini"],
+    "music_3280": ["1958 singles"],
+    "music_3281": ["1957 singles", "1986 uk number one singles", "revival hits"],
+    "music_3282": ["1957 singles"],
+    "music_3283": ["1959 singles"],
+    "music_3284": ["1959 singles"],
+    "music_3285": ["1957 singles", "buddy holly vocals", "bo diddley beat"],
+    "music_3286": ["1957 singles", "cover versions", "the gladiolas original"],
+    "music_3287": ["1957 singles", "dance songs"],
+    "music_3288": ["1957 singles"],
+    "music_3289": ["1957 singles"],
+    "music_3290": ["1956 singles"],
+    "music_3291": ["1958 singles"],
+    "music_3292": ["1958 singles"],
+    "music_3293": ["1959 singles"],
+    "music_3294": ["1959 singles"],
+    "music_3295": ["1959 singles"],
+    "music_3296": ["1959 singles"],
+    "music_3297": ["1958 singles"],
+    "music_3298": ["1959 singles", "cover versions", "musical theatre songs", "rodgers and hart"],
+    "music_3299": ["1959 singles"],
+    "music_3300": ["1959 singles"],
+    "music_3301": ["1959 singles"],
+    "music_3302": ["1958 singles", "traditional ballads"],
+    "music_3303": ["1952 singles"],
+    "music_3304": ["1959 singles", "new orleans rhythm and blues"],
+    "music_3305": ["1959 singles", "instrumentals", "organ instrumentals"],
+    "music_3306": ["1959 singles", "instrumentals"],
+    "music_3307": ["1959 singles"],
+    "music_3308": ["1959 singles"],
+    "music_3309": ["1959 singles", "cover versions", "leiber and stoller"],
+    "music_3310": ["1959 singles"],
+    "music_3311": ["1957 singles"],
+    "music_3312": ["1958 singles"],
+    "music_3313": ["1958 singles"],
+    "music_3314": ["1958 singles"],
+    "music_3315": ["1954 singles"],
+    "music_3316": ["1956 singles"],
+    "music_3317": ["1958 singles"],
+    "music_3318": ["1959 singles"],
+    "music_3319": ["1958 singles"],
+    "music_3320": ["1956 singles"],
+    "music_3321": ["1958 singles"],
+    "music_3322": ["1959 singles"],
+    "music_3323": ["1957 singles", "specialty records"],
+    "music_3324": ["1957 singles", "specialty records"],
+    "music_3325": ["1956 singles", "specialty records"],
+    "music_3326": ["1957 singles"],
+    "music_3327": ["1959 singles"],
+    "music_3328": ["1959 singles"],
+    "music_3329": ["1958 singles"],
+    "music_3330": ["1958 singles"],
+    "music_3331": ["1957 singles"],
+    "music_3332": ["1957 singles"],
+    "music_3333": ["1957 singles"],
+    "music_3334": ["1957 singles"],
+    "music_3335": ["1957 singles", "film music", "april love film"],
+    "music_3336": ["1958 singles", "gospel pop"],
+    "music_3337": ["1957 singles"],
+    "music_3338": ["1958 recordings", "1958 singles", "christmas songs", "christmas music", "johnny marks songwriter", "seasonal music"],
+    "music_3339": ["1959 recordings", "1959 singles", "1960 uk hits"],
+    "music_3340": ["1957 singles"],
+    "music_3341": ["1959 singles", "cover versions", "1930s songs"],
+    "music_3342": ["1954 singles"],
+    "music_3343": ["1958 singles"],
+    "music_3344": ["1954 recordings", "1955 singles", "atlantic records", "cover versions", "tony bennett original"],
+    "music_3345": ["1959 singles", "leiber and stoller"],
+    "music_3346": ["1956 singles"],
+    "music_3347": ["1955 singles", "cover versions", "merle travis songwriter"],
+    "music_3348": ["1955 singles", "television themes", "davy crockett"],
+    "music_3349": ["1950 singles"],
+    "music_3350": ["1952 recordings", "1953 singles", "posthumous releases"],
+    "music_3351": ["1951 singles"],
+    "music_3352": ["1952 singles"],
+    "music_3353": ["1948 singles", "gospel songs"],
+    "music_3354": ["1956 singles"],
+    "music_3355": ["1956 singles"],
+    "music_3356": ["1959 singles", "historical ballads", "american history"],
+    "music_3357": ["1956 singles"],
+    "music_3358": ["1956 singles", "cover versions", "marty robbins original"],
+    "music_3359": ["1959 singles", "cover versions", "ray price original"],
+    "music_3360": ["1957 singles"],
+    "music_3361": ["1957 singles"],
+    "music_3362": ["1956 singles"],
+    "music_3363": ["1957 singles", "cover versions", "the weavers original"],
+    "music_3364": ["1957 singles"],
+    "music_3365": ["1958 singles", "folk revival", "traditional ballads"],
+    "music_3366": ["1958 singles", "novelty songs", "science fiction themes", "monster songs"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, decade, difficulty) {
+    const performerTags = artistTags[correctAnswer];
+    if (!performerTags) throw new Error(`Missing performer tags: ${id}`);
+    const match = question.match(/^Which (?:artist|group) recorded ['‘](.*)['’]\?$/);
+    const title = match ? match[1] : (question.match(/['‘](.*?)['’]/) || [])[1];
+    const titleTags = title ? ["songs", "recordings", title.toLowerCase()] : ["music history"];
+    return {
+        id, category: "Music", question, answers, correctAnswer, difficulty,
+        tags: [...new Set([decade, ...titleTags, correctAnswer.toLowerCase(), ...performerTags, ...(recordingTags[id] || [])])],
+        dailyEligible: true
+    };
+}
+
 const quizPack52 = [
-    {
-        id: "music_3267",
-        category: "Music",
-        question: "Which artist recorded 'Mystery Train'?",
-        answers: ["Elvis Presley", "Buddy Holly", "Roy Orbison", "Sam Cooke"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3268",
-        category: "Music",
-        question: "Which artist recorded 'Love Me Tender'?",
-        answers: ["Buddy Holly", "Elvis Presley", "Jackie Wilson", "Roy Orbison"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3269",
-        category: "Music",
-        question: "Which artist recorded 'Blue Moon of Kentucky'?",
-        answers: ["Roy Orbison", "Sam Cooke", "Elvis Presley", "Buddy Holly"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3270",
-        category: "Music",
-        question: "Which artist recorded 'It Doesn't Matter Anymore'?",
-        answers: ["Elvis Presley", "Buddy Holly", "Roy Orbison", "Jackie Wilson"],
-        correctAnswer: "Buddy Holly"
-    },
-    {
-        id: "music_3271",
-        category: "Music",
-        question: "Which artist recorded 'True Love Ways'?",
-        answers: ["Sam Cooke", "Roy Orbison", "Buddy Holly", "Elvis Presley"],
-        correctAnswer: "Buddy Holly"
-    },
-    {
-        id: "music_3272",
-        category: "Music",
-        question: "Which artist recorded 'Think It Over'?",
-        answers: ["Roy Orbison", "Buddy Holly", "Elvis Presley", "Sam Cooke"],
-        correctAnswer: "Buddy Holly"
-    },
-    {
-        id: "music_3273",
-        category: "Music",
-        question: "Which group recorded 'Bird Dog'?",
-        answers: ["The Everly Brothers", "The Diamonds", "The Del-Vikings", "The Crickets"],
-        correctAnswer: "The Everly Brothers"
-    },
-    {
-        id: "music_3274",
-        category: "Music",
-        question: "Which group recorded 'Problems'?",
-        answers: ["The Diamonds", "The Crickets", "The Everly Brothers", "The Del-Vikings"],
-        correctAnswer: "The Everly Brothers"
-    },
-    {
-        id: "music_3275",
-        category: "Music",
-        question: "Which group recorded 'Claudette'?",
-        answers: ["The Del-Vikings", "The Everly Brothers", "The Crickets", "The Diamonds"],
-        correctAnswer: "The Everly Brothers"
-    },
-    {
-        id: "music_3276",
-        category: "Music",
-        question: "Which artist recorded 'Ooby Dooby'?",
-        answers: ["Duane Eddy", "Roy Orbison", "Jackie Wilson", "Sam Cooke"],
-        correctAnswer: "Roy Orbison"
-    },
-    {
-        id: "music_3277",
-        category: "Music",
-        question: "Which artist recorded 'Rock House'?",
-        answers: ["Roy Orbison", "Jackie Wilson", "Sam Cooke", "Duane Eddy"],
-        correctAnswer: "Roy Orbison"
-    },
-    {
-        id: "music_3278",
-        category: "Music",
-        question: "Which artist recorded 'Rebel Rouser'?",
-        answers: ["Jackie Wilson", "Sam Cooke", "Duane Eddy", "Roy Orbison"],
-        correctAnswer: "Duane Eddy"
-    },
-    {
-        id: "music_3279",
-        category: "Music",
-        question: "Which artist recorded 'Peter Gunn'?",
-        answers: ["Sam Cooke", "Duane Eddy", "Roy Orbison", "Jackie Wilson"],
-        correctAnswer: "Duane Eddy"
-    },
-    {
-        id: "music_3280",
-        category: "Music",
-        question: "Which artist recorded 'Lonely Teardrops'?",
-        answers: ["Jackie Wilson", "Sam Cooke", "Roy Orbison", "Lloyd Price"],
-        correctAnswer: "Jackie Wilson"
-    },
-    {
-        id: "music_3281",
-        category: "Music",
-        question: "Which artist recorded 'Reet Petite'?",
-        answers: ["Lloyd Price", "Jackie Wilson", "Sam Cooke", "Frankie Avalon"],
-        correctAnswer: "Jackie Wilson"
-    },
-    {
-        id: "music_3282",
-        category: "Music",
-        question: "Which artist recorded 'You Send Me'?",
-        answers: ["Jackie Wilson", "Lloyd Price", "Sam Cooke", "Frankie Avalon"],
-        correctAnswer: "Sam Cooke"
-    },
-    {
-        id: "music_3283",
-        category: "Music",
-        question: "Which artist recorded 'Only Sixteen'?",
-        answers: ["Frankie Avalon", "Sam Cooke", "Jackie Wilson", "Lloyd Price"],
-        correctAnswer: "Sam Cooke"
-    },
-    {
-        id: "music_3284",
-        category: "Music",
-        question: "Which artist recorded 'Everybody Loves to Cha Cha Cha'?",
-        answers: ["Lloyd Price", "Jackie Wilson", "Frankie Avalon", "Sam Cooke"],
-        correctAnswer: "Sam Cooke"
-    },
-    {
-        id: "music_3285",
-        category: "Music",
-        question: "Which group recorded 'Not Fade Away'?",
-        answers: ["The Crickets", "The Diamonds", "The Del-Vikings", "The Five Satins"],
-        correctAnswer: "The Crickets"
-    },
-    {
-        id: "music_3286",
-        category: "Music",
-        question: "Which group recorded 'Little Darlin''?",
-        answers: ["The Del-Vikings", "The Diamonds", "The Five Satins", "The Monotones"],
-        correctAnswer: "The Diamonds"
-    },
-    {
-        id: "music_3287",
-        category: "Music",
-        question: "Which group recorded 'The Stroll'?",
-        answers: ["The Diamonds", "The Five Satins", "The Monotones", "The Silhouettes"],
-        correctAnswer: "The Diamonds"
-    },
-    {
-        id: "music_3288",
-        category: "Music",
-        question: "Which group recorded 'Come Go with Me'?",
-        answers: ["The Five Satins", "The Del-Vikings", "The Diamonds", "The Monotones"],
-        correctAnswer: "The Del-Vikings"
-    },
-    {
-        id: "music_3289",
-        category: "Music",
-        question: "Which group recorded 'Whispering Bells'?",
-        answers: ["The Monotones", "The Diamonds", "The Del-Vikings", "The Five Satins"],
-        correctAnswer: "The Del-Vikings"
-    },
-    {
-        id: "music_3290",
-        category: "Music",
-        question: "Which group recorded 'In the Still of the Night'?",
-        answers: ["The Five Satins", "The Monotones", "The Silhouettes", "The Fleetwoods"],
-        correctAnswer: "The Five Satins"
-    },
-    {
-        id: "music_3291",
-        category: "Music",
-        question: "Which group recorded 'Book of Love'?",
-        answers: ["The Silhouettes", "The Monotones", "The Five Satins", "The Fleetwoods"],
-        correctAnswer: "The Monotones"
-    },
-    {
-        id: "music_3292",
-        category: "Music",
-        question: "Which group recorded 'Get a Job'?",
-        answers: ["The Fleetwoods", "The Five Satins", "The Silhouettes", "The Monotones"],
-        correctAnswer: "The Silhouettes"
-    },
-    {
-        id: "music_3293",
-        category: "Music",
-        question: "Which artist recorded 'Venus'?",
-        answers: ["Frankie Avalon", "Lloyd Price", "Wilbert Harrison", "Phil Phillips"],
-        correctAnswer: "Frankie Avalon"
-    },
-    {
-        id: "music_3294",
-        category: "Music",
-        question: "Which artist recorded 'Why'?",
-        answers: ["Lloyd Price", "Frankie Avalon", "Phil Phillips", "Wilbert Harrison"],
-        correctAnswer: "Frankie Avalon"
-    },
-    {
-        id: "music_3295",
-        category: "Music",
-        question: "Which artist recorded 'A Boy Without a Girl'?",
-        answers: ["Wilbert Harrison", "Phil Phillips", "Frankie Avalon", "Lloyd Price"],
-        correctAnswer: "Frankie Avalon"
-    },
-    {
-        id: "music_3296",
-        category: "Music",
-        question: "Which group recorded 'A Teenager in Love'?",
-        answers: ["The Fleetwoods", "Dion and the Belmonts", "The Skyliners", "The Five Satins"],
-        correctAnswer: "Dion and the Belmonts"
-    },
-    {
-        id: "music_3297",
-        category: "Music",
-        question: "Which group recorded 'I Wonder Why'?",
-        answers: ["The Skyliners", "The Fleetwoods", "Dion and the Belmonts", "The Monotones"],
-        correctAnswer: "Dion and the Belmonts"
-    },
-    {
-        id: "music_3298",
-        category: "Music",
-        question: "Which group recorded 'Where or When'?",
-        answers: ["Dion and the Belmonts", "The Skyliners", "The Fleetwoods", "The Diamonds"],
-        correctAnswer: "Dion and the Belmonts"
-    },
-    {
-        id: "music_3299",
-        category: "Music",
-        question: "Which group recorded 'Come Softly to Me'?",
-        answers: ["The Skyliners", "The Fleetwoods", "Dion and the Belmonts", "The Silhouettes"],
-        correctAnswer: "The Fleetwoods"
-    },
-    {
-        id: "music_3300",
-        category: "Music",
-        question: "Which group recorded 'Mr. Blue'?",
-        answers: ["The Fleetwoods", "Dion and the Belmonts", "The Skyliners", "The Five Satins"],
-        correctAnswer: "The Fleetwoods"
-    },
-    {
-        id: "music_3301",
-        category: "Music",
-        question: "Which artist recorded 'Personality'?",
-        answers: ["Wilbert Harrison", "Lloyd Price", "Phil Phillips", "Dale Hawkins"],
-        correctAnswer: "Lloyd Price"
-    },
-    {
-        id: "music_3302",
-        category: "Music",
-        question: "Which artist recorded 'Stagger Lee'?",
-        answers: ["Lloyd Price", "Phil Phillips", "Dale Hawkins", "Wilbert Harrison"],
-        correctAnswer: "Lloyd Price"
-    },
-    {
-        id: "music_3303",
-        category: "Music",
-        question: "Which artist recorded 'Lawdy Miss Clawdy'?",
-        answers: ["Dale Hawkins", "Wilbert Harrison", "Lloyd Price", "Phil Phillips"],
-        correctAnswer: "Lloyd Price"
-    },
-    {
-        id: "music_3304",
-        category: "Music",
-        question: "Which artist recorded 'Sea Cruise'?",
-        answers: ["Frankie Ford", "Jody Reynolds", "Dale Hawkins", "Phil Phillips"],
-        correctAnswer: "Frankie Ford"
-    },
-    {
-        id: "music_3305",
-        category: "Music",
-        question: "Which group recorded 'Red River Rock'?",
-        answers: ["The Olympics", "Johnny and the Hurricanes", "The Videos", "The Spaniels"],
-        correctAnswer: "Johnny and the Hurricanes"
-    },
-    {
-        id: "music_3306",
-        category: "Music",
-        question: "Which group recorded 'Crossfire'?",
-        answers: ["Johnny and the Hurricanes", "The Olympics", "The Videos", "The Skyliners"],
-        correctAnswer: "Johnny and the Hurricanes"
-    },
-    {
-        id: "music_3307",
-        category: "Music",
-        question: "Which group recorded 'Since I Don't Have You'?",
-        answers: ["The Videos", "The Skyliners", "The Spaniels", "The Olympics"],
-        correctAnswer: "The Skyliners"
-    },
-    {
-        id: "music_3308",
-        category: "Music",
-        question: "Which group recorded 'This I Swear'?",
-        answers: ["The Skyliners", "The Spaniels", "The Videos", "The Olympics"],
-        correctAnswer: "The Skyliners"
-    },
-    {
-        id: "music_3309",
-        category: "Music",
-        question: "Which artist recorded 'Kansas City'?",
-        answers: ["Phil Phillips", "Dale Hawkins", "Wilbert Harrison", "Jody Reynolds"],
-        correctAnswer: "Wilbert Harrison"
-    },
-    {
-        id: "music_3310",
-        category: "Music",
-        question: "Which artist recorded 'Sea of Love'?",
-        answers: ["Wilbert Harrison", "Phil Phillips", "Dale Hawkins", "Frankie Ford"],
-        correctAnswer: "Phil Phillips"
-    },
-    {
-        id: "music_3311",
-        category: "Music",
-        question: "Which artist recorded 'Susie Q'?",
-        answers: ["Dale Hawkins", "Jody Reynolds", "Phil Phillips", "Wilbert Harrison"],
-        correctAnswer: "Dale Hawkins"
-    },
-    {
-        id: "music_3312",
-        category: "Music",
-        question: "Which artist recorded 'Endless Sleep'?",
-        answers: ["Phil Phillips", "Dale Hawkins", "Jody Reynolds", "Frankie Ford"],
-        correctAnswer: "Jody Reynolds"
-    },
-    {
-        id: "music_3313",
-        category: "Music",
-        question: "Which group recorded 'Western Movies'?",
-        answers: ["The Olympics", "The Videos", "The Spaniels", "The Skyliners"],
-        correctAnswer: "The Olympics"
-    },
-    {
-        id: "music_3314",
-        category: "Music",
-        question: "Which group recorded 'Trickle, Trickle'?",
-        answers: ["The Spaniels", "The Videos", "The Olympics", "The Skyliners"],
-        correctAnswer: "The Videos"
-    },
-    {
-        id: "music_3315",
-        category: "Music",
-        question: "Which group recorded 'Goodnight, Sweetheart, Goodnight'?",
-        answers: ["The Videos", "The Olympics", "The Spaniels", "The Skyliners"],
-        correctAnswer: "The Spaniels"
-    },
-    {
-        id: "music_3316",
-        category: "Music",
-        question: "Which artist recorded 'Blue Monday'?",
-        answers: ["Little Richard", "Fats Domino", "Jerry Lee Lewis", "Chuck Berry"],
-        correctAnswer: "Fats Domino"
-    },
-    {
-        id: "music_3317",
-        category: "Music",
-        question: "Which artist recorded 'Wear My Ring Around Your Neck'?",
-        answers: ["Elvis Presley", "Chuck Berry", "Little Richard", "Fats Domino"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3318",
-        category: "Music",
-        question: "Which artist recorded 'A Big Hunk o' Love'?",
-        answers: ["Chuck Berry", "Elvis Presley", "Jerry Lee Lewis", "Little Richard"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3319",
-        category: "Music",
-        question: "Which artist recorded 'I Beg of You'?",
-        answers: ["Little Richard", "Fats Domino", "Elvis Presley", "Chuck Berry"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3320",
-        category: "Music",
-        question: "Which artist recorded 'Brown Eyed Handsome Man'?",
-        answers: ["Fats Domino", "Chuck Berry", "Little Richard", "Jerry Lee Lewis"],
-        correctAnswer: "Chuck Berry"
-    },
-    {
-        id: "music_3321",
-        category: "Music",
-        question: "Which artist recorded 'Carol'?",
-        answers: ["Chuck Berry", "Jerry Lee Lewis", "Fats Domino", "Little Richard"],
-        correctAnswer: "Chuck Berry"
-    },
-    {
-        id: "music_3322",
-        category: "Music",
-        question: "Which artist recorded 'Almost Grown'?",
-        answers: ["Little Richard", "Chuck Berry", "Fats Domino", "Elvis Presley"],
-        correctAnswer: "Chuck Berry"
-    },
-    {
-        id: "music_3323",
-        category: "Music",
-        question: "Which artist recorded 'Lucille'?",
-        answers: ["Jerry Lee Lewis", "Little Richard", "Fats Domino", "Chuck Berry"],
-        correctAnswer: "Little Richard"
-    },
-    {
-        id: "music_3324",
-        category: "Music",
-        question: "Which artist recorded 'Keep A-Knockin''?",
-        answers: ["Fats Domino", "Jerry Lee Lewis", "Little Richard", "Chuck Berry"],
-        correctAnswer: "Little Richard"
-    },
-    {
-        id: "music_3325",
-        category: "Music",
-        question: "Which artist recorded 'Slippin' and Slidin''?",
-        answers: ["Little Richard", "Fats Domino", "Jerry Lee Lewis", "Chuck Berry"],
-        correctAnswer: "Little Richard"
-    },
-    {
-        id: "music_3326",
-        category: "Music",
-        question: "Which artist recorded 'I'm Walkin''?",
-        answers: ["Jerry Lee Lewis", "Fats Domino", "Little Richard", "Chuck Berry"],
-        correctAnswer: "Fats Domino"
-    },
-    {
-        id: "music_3327",
-        category: "Music",
-        question: "Which artist recorded 'I Want to Walk You Home'?",
-        answers: ["Fats Domino", "Little Richard", "Jerry Lee Lewis", "Elvis Presley"],
-        correctAnswer: "Fats Domino"
-    },
-    {
-        id: "music_3328",
-        category: "Music",
-        question: "Which artist recorded 'Be My Guest'?",
-        answers: ["Chuck Berry", "Jerry Lee Lewis", "Fats Domino", "Little Richard"],
-        correctAnswer: "Fats Domino"
-    },
-    {
-        id: "music_3329",
-        category: "Music",
-        question: "Which artist recorded 'High School Confidential'?",
-        answers: ["Jerry Lee Lewis", "Little Richard", "Fats Domino", "Chuck Berry"],
-        correctAnswer: "Jerry Lee Lewis"
-    },
-    {
-        id: "music_3330",
-        category: "Music",
-        question: "Which artist recorded 'Breathless'?",
-        answers: ["Chuck Berry", "Jerry Lee Lewis", "Little Richard", "Fats Domino"],
-        correctAnswer: "Jerry Lee Lewis"
-    },
-    {
-        id: "music_3331",
-        category: "Music",
-        question: "Which artist recorded 'Chances Are'?",
-        answers: ["Pat Boone", "Johnny Mathis", "Andy Williams", "Guy Mitchell"],
-        correctAnswer: "Johnny Mathis"
-    },
-    {
-        id: "music_3332",
-        category: "Music",
-        question: "Which artist recorded 'It's Not for Me to Say'?",
-        answers: ["Johnny Mathis", "Andy Williams", "Pat Boone", "Guy Mitchell"],
-        correctAnswer: "Johnny Mathis"
-    },
-    {
-        id: "music_3333",
-        category: "Music",
-        question: "Which artist recorded 'The Twelfth of Never'?",
-        answers: ["Guy Mitchell", "Pat Boone", "Johnny Mathis", "Andy Williams"],
-        correctAnswer: "Johnny Mathis"
-    },
-    {
-        id: "music_3334",
-        category: "Music",
-        question: "Which artist recorded 'Love Letters in the Sand'?",
-        answers: ["Andy Williams", "Pat Boone", "Johnny Mathis", "Guy Mitchell"],
-        correctAnswer: "Pat Boone"
-    },
-    {
-        id: "music_3335",
-        category: "Music",
-        question: "Which artist recorded 'April Love'?",
-        answers: ["Pat Boone", "Johnny Mathis", "Guy Mitchell", "Andy Williams"],
-        correctAnswer: "Pat Boone"
-    },
-    {
-        id: "music_3336",
-        category: "Music",
-        question: "Which artist recorded 'A Wonderful Time Up There'?",
-        answers: ["Johnny Mathis", "Andy Williams", "Pat Boone", "Guy Mitchell"],
-        correctAnswer: "Pat Boone"
-    },
-    {
-        id: "music_3337",
-        category: "Music",
-        question: "Which artist recorded 'One Step at a Time'?",
-        answers: ["Connie Francis", "Brenda Lee", "Patsy Cline", "Wanda Jackson"],
-        correctAnswer: "Brenda Lee"
-    },
-    {
-        id: "music_3338",
-        category: "Music",
-        question: "Which artist recorded 'Rockin' Around the Christmas Tree'?",
-        answers: ["Wanda Jackson", "Connie Francis", "Brenda Lee", "Patsy Cline"],
-        correctAnswer: "Brenda Lee"
-    },
-    {
-        id: "music_3339",
-        category: "Music",
-        question: "Which artist recorded 'Sweet Nothin's'?",
-        answers: ["Brenda Lee", "Patsy Cline", "Connie Francis", "Wanda Jackson"],
-        correctAnswer: "Brenda Lee"
-    },
-    {
-        id: "music_3340",
-        category: "Music",
-        question: "Which group recorded 'Maybe'?",
-        answers: ["The Chantels", "The Flamingos", "The Moonglows", "The Clovers"],
-        correctAnswer: "The Chantels"
-    },
-    {
-        id: "music_3341",
-        category: "Music",
-        question: "Which group recorded 'I Only Have Eyes for You'?",
-        answers: ["The Moonglows", "The Clovers", "The Flamingos", "The Chantels"],
-        correctAnswer: "The Flamingos"
-    },
-    {
-        id: "music_3342",
-        category: "Music",
-        question: "Which group recorded 'Sincerely'?",
-        answers: ["The Clovers", "The Moonglows", "The Flamingos", "The Chantels"],
-        correctAnswer: "The Moonglows"
-    },
-    {
-        id: "music_3343",
-        category: "Music",
-        question: "Which group recorded 'Ten Commandments of Love'?",
-        answers: ["The Moonglows", "The Flamingos", "The Clovers", "The Chantels"],
-        correctAnswer: "The Moonglows"
-    },
-    {
-        id: "music_3344",
-        category: "Music",
-        question: "Which group recorded 'Blue Velvet'?",
-        answers: ["The Flamingos", "The Clovers", "The Moonglows", "The Chantels"],
-        correctAnswer: "The Clovers"
-    },
-    {
-        id: "music_3345",
-        category: "Music",
-        question: "Which group recorded 'Love Potion No. 9'?",
-        answers: ["The Clovers", "The Moonglows", "The Flamingos", "The Chantels"],
-        correctAnswer: "The Clovers"
-    },
-    {
-        id: "music_3346",
-        category: "Music",
-        question: "Which group recorded 'Devil or Angel'?",
-        answers: ["The Chantels", "The Flamingos", "The Clovers", "The Moonglows"],
-        correctAnswer: "The Clovers"
-    },
-    {
-        id: "music_3347",
-        category: "Music",
-        question: "Which artist recorded 'Sixteen Tons'?",
-        answers: ["Hank Snow", "Tennessee Ernie Ford", "Hank Williams", "Johnny Horton"],
-        correctAnswer: "Tennessee Ernie Ford"
-    },
-    {
-        id: "music_3348",
-        category: "Music",
-        question: "Which artist recorded 'Ballad of Davy Crockett'?",
-        answers: ["Johnny Horton", "Hank Williams", "Tennessee Ernie Ford", "Hank Snow"],
-        correctAnswer: "Tennessee Ernie Ford"
-    },
-    {
-        id: "music_3349",
-        category: "Music",
-        question: "Which artist recorded 'I'm Movin' On'?",
-        answers: ["Hank Snow", "Hank Williams", "Ray Price", "Sonny James"],
-        correctAnswer: "Hank Snow"
-    },
-    {
-        id: "music_3350",
-        category: "Music",
-        question: "Which artist recorded 'Your Cheatin' Heart'?",
-        answers: ["Ray Price", "Hank Williams", "Hank Snow", "Johnny Horton"],
-        correctAnswer: "Hank Williams"
-    },
-    {
-        id: "music_3351",
-        category: "Music",
-        question: "Which artist recorded 'Hey, Good Lookin''?",
-        answers: ["Hank Snow", "Johnny Horton", "Hank Williams", "Ray Price"],
-        correctAnswer: "Hank Williams"
-    },
-    {
-        id: "music_3352",
-        category: "Music",
-        question: "Which artist recorded 'Jambalaya'?",
-        answers: ["Johnny Horton", "Hank Williams", "Ray Price", "Sonny James"],
-        correctAnswer: "Hank Williams"
-    },
-    {
-        id: "music_3353",
-        category: "Music",
-        question: "Which artist recorded 'I Saw the Light'?",
-        answers: ["Hank Williams", "Hank Snow", "Ray Price", "Johnny Horton"],
-        correctAnswer: "Hank Williams"
-    },
-    {
-        id: "music_3354",
-        category: "Music",
-        question: "Which artist recorded 'Crazy Arms'?",
-        answers: ["Sonny James", "Ray Price", "Johnny Horton", "Hank Snow"],
-        correctAnswer: "Ray Price"
-    },
-    {
-        id: "music_3355",
-        category: "Music",
-        question: "Which artist recorded 'Young Love'?",
-        answers: ["Johnny Horton", "Hank Snow", "Sonny James", "Ray Price"],
-        correctAnswer: "Sonny James"
-    },
-    {
-        id: "music_3356",
-        category: "Music",
-        question: "Which artist recorded 'The Battle of New Orleans'?",
-        answers: ["Johnny Horton", "Guy Mitchell", "Sonny James", "Ray Price"],
-        correctAnswer: "Johnny Horton"
-    },
-    {
-        id: "music_3357",
-        category: "Music",
-        question: "Which artist recorded 'Honky Tonk Man'?",
-        answers: ["Ray Price", "Johnny Horton", "Hank Snow", "Guy Mitchell"],
-        correctAnswer: "Johnny Horton"
-    },
-    {
-        id: "music_3358",
-        category: "Music",
-        question: "Which artist recorded 'Singing the Blues'?",
-        answers: ["Andy Williams", "Guy Mitchell", "Jimmie Rodgers", "Johnny Mathis"],
-        correctAnswer: "Guy Mitchell"
-    },
-    {
-        id: "music_3359",
-        category: "Music",
-        question: "Which artist recorded 'Heartaches by the Number'?",
-        answers: ["Jimmie Rodgers", "Andy Williams", "Guy Mitchell", "Pat Boone"],
-        correctAnswer: "Guy Mitchell"
-    },
-    {
-        id: "music_3360",
-        category: "Music",
-        question: "Which artist recorded 'Rock-a-Billy'?",
-        answers: ["Guy Mitchell", "Pat Boone", "Andy Williams", "Jimmie Rodgers"],
-        correctAnswer: "Guy Mitchell"
-    },
-    {
-        id: "music_3361",
-        category: "Music",
-        question: "Which artist recorded 'Butterfly'?",
-        answers: ["Pat Boone", "Andy Williams", "Johnny Mathis", "Guy Mitchell"],
-        correctAnswer: "Andy Williams"
-    },
-    {
-        id: "music_3362",
-        category: "Music",
-        question: "Which artist recorded 'Canadian Sunset'?",
-        answers: ["Andy Williams", "Johnny Mathis", "Guy Mitchell", "Pat Boone"],
-        correctAnswer: "Andy Williams"
-    },
-    {
-        id: "music_3363",
-        category: "Music",
-        question: "Which artist recorded 'Kisses Sweeter Than Wine'?",
-        answers: ["Guy Mitchell", "Jimmie Rodgers", "Andy Williams", "Pat Boone"],
-        correctAnswer: "Jimmie Rodgers"
-    },
-    {
-        id: "music_3364",
-        category: "Music",
-        question: "Which artist recorded 'Honeycomb'?",
-        answers: ["Jimmie Rodgers", "Andy Williams", "Guy Mitchell", "Johnny Mathis"],
-        correctAnswer: "Jimmie Rodgers"
-    },
-    {
-        id: "music_3365",
-        category: "Music",
-        question: "Which group recorded 'Tom Dooley'?",
-        answers: ["The Kingston Trio", "The Clovers", "The Fleetwoods", "The Diamonds"],
-        correctAnswer: "The Kingston Trio"
-    },
-    {
-        id: "music_3366",
-        category: "Music",
-        question: "Which artist recorded 'The Purple People Eater'?",
-        answers: ["Jimmie Rodgers", "Sheb Wooley", "Guy Mitchell", "Johnny Horton"],
-        correctAnswer: "Sheb Wooley"
-    }
+    makeQuestion("music_3267", "Which artist recorded 'Mystery Train'?", ["Elvis Presley", "Buddy Holly", "Roy Orbison", "Sam Cooke"], "Elvis Presley", "1950s", "Medium"),
+    makeQuestion("music_3268", "Which artist recorded 'Love Me Tender'?", ["Buddy Holly", "Elvis Presley", "Jackie Wilson", "Roy Orbison"], "Elvis Presley", "1950s", "Easy"),
+    makeQuestion("music_3269", "Which artist recorded 'Blue Moon of Kentucky'?", ["Roy Orbison", "Sam Cooke", "Elvis Presley", "Buddy Holly"], "Elvis Presley", "1950s", "Easy"),
+    makeQuestion("music_3270", "Which artist recorded 'It Doesn't Matter Anymore'?", ["Elvis Presley", "Buddy Holly", "Roy Orbison", "Jackie Wilson"], "Buddy Holly", "1950s", "Easy"),
+    makeQuestion("music_3271", "Which artist recorded 'True Love Ways'?", ["Sam Cooke", "Roy Orbison", "Buddy Holly", "Elvis Presley"], "Buddy Holly", "1950s", "Medium"),
+    makeQuestion("music_3272", "Which artist recorded 'Think It Over'?", ["Roy Orbison", "Buddy Holly", "Elvis Presley", "Sam Cooke"], "Buddy Holly", "1950s", "Hard"),
+    makeQuestion("music_3273", "Which group recorded 'Bird Dog'?", ["The Everly Brothers", "The Diamonds", "The Del-Vikings", "The Crickets"], "The Everly Brothers", "1950s", "Easy"),
+    makeQuestion("music_3274", "Which group recorded 'Problems'?", ["The Diamonds", "The Crickets", "The Everly Brothers", "The Del-Vikings"], "The Everly Brothers", "1950s", "Medium"),
+    makeQuestion("music_3275", "Which group recorded 'Claudette'?", ["The Del-Vikings", "The Everly Brothers", "The Crickets", "The Diamonds"], "The Everly Brothers", "1950s", "Hard"),
+    makeQuestion("music_3276", "Which artist recorded 'Ooby Dooby'?", ["Duane Eddy", "Roy Orbison", "Jackie Wilson", "Sam Cooke"], "Roy Orbison", "1950s", "Easy"),
+    makeQuestion("music_3277", "Which artist recorded 'Rock House'?", ["Roy Orbison", "Jackie Wilson", "Sam Cooke", "Duane Eddy"], "Roy Orbison", "1950s", "Hard"),
+    makeQuestion("music_3278", "Which artist recorded 'Rebel Rouser'?", ["Jackie Wilson", "Sam Cooke", "Duane Eddy", "Roy Orbison"], "Duane Eddy", "1950s", "Easy"),
+    makeQuestion("music_3279", "Which artist recorded 'Peter Gunn'?", ["Sam Cooke", "Duane Eddy", "Roy Orbison", "Jackie Wilson"], "Duane Eddy", "1950s", "Medium"),
+    makeQuestion("music_3280", "Which artist recorded 'Lonely Teardrops'?", ["Jackie Wilson", "Sam Cooke", "Roy Orbison", "Lloyd Price"], "Jackie Wilson", "1950s", "Medium"),
+    makeQuestion("music_3281", "Which artist recorded 'Reet Petite'?", ["Lloyd Price", "Jackie Wilson", "Sam Cooke", "Frankie Avalon"], "Jackie Wilson", "1950s", "Easy"),
+    makeQuestion("music_3282", "Which artist recorded 'You Send Me'?", ["Jackie Wilson", "Lloyd Price", "Sam Cooke", "Frankie Avalon"], "Sam Cooke", "1950s", "Easy"),
+    makeQuestion("music_3283", "Which artist recorded 'Only Sixteen'?", ["Frankie Avalon", "Sam Cooke", "Jackie Wilson", "Lloyd Price"], "Sam Cooke", "1950s", "Medium"),
+    makeQuestion("music_3284", "Which artist recorded 'Everybody Loves to Cha Cha Cha'?", ["Lloyd Price", "Jackie Wilson", "Frankie Avalon", "Sam Cooke"], "Sam Cooke", "1950s", "Hard"),
+    makeQuestion("music_3285", "Which group recorded 'Not Fade Away'?", ["The Crickets", "The Diamonds", "The Del-Vikings", "The Five Satins"], "The Crickets", "1950s", "Easy"),
+    makeQuestion("music_3286", "Which group recorded 'Little Darlin''?", ["The Del-Vikings", "The Diamonds", "The Five Satins", "The Monotones"], "The Diamonds", "1950s", "Medium"),
+    makeQuestion("music_3287", "Which group recorded 'The Stroll'?", ["The Diamonds", "The Five Satins", "The Monotones", "The Silhouettes"], "The Diamonds", "1950s", "Hard"),
+    makeQuestion("music_3288", "Which group recorded 'Come Go with Me'?", ["The Five Satins", "The Del-Vikings", "The Diamonds", "The Monotones"], "The Del-Vikings", "1950s", "Easy"),
+    makeQuestion("music_3289", "Which group recorded 'Whispering Bells'?", ["The Monotones", "The Diamonds", "The Del-Vikings", "The Five Satins"], "The Del-Vikings", "1950s", "Hard"),
+    makeQuestion("music_3290", "Which group recorded 'In the Still of the Night'?", ["The Five Satins", "The Monotones", "The Silhouettes", "The Fleetwoods"], "The Five Satins", "1950s", "Medium"),
+    makeQuestion("music_3291", "Which group recorded 'Book of Love'?", ["The Silhouettes", "The Monotones", "The Five Satins", "The Fleetwoods"], "The Monotones", "1950s", "Hard"),
+    makeQuestion("music_3292", "Which group recorded 'Get a Job'?", ["The Fleetwoods", "The Five Satins", "The Silhouettes", "The Monotones"], "The Silhouettes", "1950s", "Medium"),
+    makeQuestion("music_3293", "Which artist recorded 'Venus'?", ["Frankie Avalon", "Lloyd Price", "Wilbert Harrison", "Phil Phillips"], "Frankie Avalon", "1950s", "Easy"),
+    makeQuestion("music_3294", "Which artist recorded 'Why'?", ["Lloyd Price", "Frankie Avalon", "Phil Phillips", "Wilbert Harrison"], "Frankie Avalon", "1950s", "Medium"),
+    makeQuestion("music_3295", "Which artist recorded 'A Boy Without a Girl'?", ["Wilbert Harrison", "Phil Phillips", "Frankie Avalon", "Lloyd Price"], "Frankie Avalon", "1950s", "Hard"),
+    makeQuestion("music_3296", "Which group recorded 'A Teenager in Love'?", ["The Fleetwoods", "Dion and the Belmonts", "The Skyliners", "The Five Satins"], "Dion and the Belmonts", "1950s", "Easy"),
+    makeQuestion("music_3297", "Which group recorded 'I Wonder Why'?", ["The Skyliners", "The Fleetwoods", "Dion and the Belmonts", "The Monotones"], "Dion and the Belmonts", "1950s", "Medium"),
+    makeQuestion("music_3298", "Which group recorded 'Where or When'?", ["Dion and the Belmonts", "The Skyliners", "The Fleetwoods", "The Diamonds"], "Dion and the Belmonts", "1950s", "Medium"),
+    makeQuestion("music_3299", "Which group recorded 'Come Softly to Me'?", ["The Skyliners", "The Fleetwoods", "Dion and the Belmonts", "The Silhouettes"], "The Fleetwoods", "1950s", "Easy"),
+    makeQuestion("music_3300", "Which group recorded 'Mr. Blue'?", ["The Fleetwoods", "Dion and the Belmonts", "The Skyliners", "The Five Satins"], "The Fleetwoods", "1950s", "Medium"),
+    makeQuestion("music_3301", "Which artist recorded 'Personality'?", ["Wilbert Harrison", "Lloyd Price", "Phil Phillips", "Dale Hawkins"], "Lloyd Price", "1950s", "Medium"),
+    makeQuestion("music_3302", "Which artist recorded 'Stagger Lee'?", ["Lloyd Price", "Phil Phillips", "Dale Hawkins", "Wilbert Harrison"], "Lloyd Price", "1950s", "Easy"),
+    makeQuestion("music_3303", "Which artist recorded 'Lawdy Miss Clawdy'?", ["Dale Hawkins", "Wilbert Harrison", "Lloyd Price", "Phil Phillips"], "Lloyd Price", "1950s", "Medium"),
+    makeQuestion("music_3304", "Which artist recorded 'Sea Cruise'?", ["Frankie Ford", "Jody Reynolds", "Dale Hawkins", "Phil Phillips"], "Frankie Ford", "1950s", "Medium"),
+    makeQuestion("music_3305", "Which group recorded 'Red River Rock'?", ["The Olympics", "Johnny and the Hurricanes", "The Videos", "The Spaniels"], "Johnny and the Hurricanes", "1950s", "Medium"),
+    makeQuestion("music_3306", "Which group recorded 'Crossfire'?", ["Johnny and the Hurricanes", "The Olympics", "The Videos", "The Skyliners"], "Johnny and the Hurricanes", "1950s", "Hard"),
+    makeQuestion("music_3307", "Which group recorded 'Since I Don't Have You'?", ["The Videos", "The Skyliners", "The Spaniels", "The Olympics"], "The Skyliners", "1950s", "Medium"),
+    makeQuestion("music_3308", "Which group recorded 'This I Swear'?", ["The Skyliners", "The Spaniels", "The Videos", "The Olympics"], "The Skyliners", "1950s", "Hard"),
+    makeQuestion("music_3309", "Which artist recorded 'Kansas City'?", ["Phil Phillips", "Dale Hawkins", "Wilbert Harrison", "Jody Reynolds"], "Wilbert Harrison", "1950s", "Easy"),
+    makeQuestion("music_3310", "Which artist recorded 'Sea of Love'?", ["Wilbert Harrison", "Phil Phillips", "Dale Hawkins", "Frankie Ford"], "Phil Phillips", "1950s", "Easy"),
+    makeQuestion("music_3311", "Which artist recorded 'Susie Q'?", ["Dale Hawkins", "Jody Reynolds", "Phil Phillips", "Wilbert Harrison"], "Dale Hawkins", "1950s", "Easy"),
+    makeQuestion("music_3312", "Which artist recorded 'Endless Sleep'?", ["Phil Phillips", "Dale Hawkins", "Jody Reynolds", "Frankie Ford"], "Jody Reynolds", "1950s", "Hard"),
+    makeQuestion("music_3313", "Which group recorded 'Western Movies'?", ["The Olympics", "The Videos", "The Spaniels", "The Skyliners"], "The Olympics", "1950s", "Medium"),
+    makeQuestion("music_3314", "Which group recorded 'Trickle, Trickle'?", ["The Spaniels", "The Videos", "The Olympics", "The Skyliners"], "The Videos", "1950s", "Hard"),
+    makeQuestion("music_3315", "Which group recorded 'Goodnight, Sweetheart, Goodnight'?", ["The Videos", "The Olympics", "The Spaniels", "The Skyliners"], "The Spaniels", "1950s", "Medium"),
+    makeQuestion("music_3316", "Which artist recorded 'Blue Monday'?", ["Little Richard", "Fats Domino", "Jerry Lee Lewis", "Chuck Berry"], "Fats Domino", "1950s", "Easy"),
+    makeQuestion("music_3317", "Which artist recorded 'Wear My Ring Around Your Neck'?", ["Elvis Presley", "Chuck Berry", "Little Richard", "Fats Domino"], "Elvis Presley", "1950s", "Easy"),
+    makeQuestion("music_3318", "Which artist recorded 'A Big Hunk o' Love'?", ["Chuck Berry", "Elvis Presley", "Jerry Lee Lewis", "Little Richard"], "Elvis Presley", "1950s", "Easy"),
+    makeQuestion("music_3319", "Which artist recorded 'I Beg of You'?", ["Little Richard", "Fats Domino", "Elvis Presley", "Chuck Berry"], "Elvis Presley", "1950s", "Medium"),
+    makeQuestion("music_3320", "Which artist recorded 'Brown Eyed Handsome Man'?", ["Fats Domino", "Chuck Berry", "Little Richard", "Jerry Lee Lewis"], "Chuck Berry", "1950s", "Easy"),
+    makeQuestion("music_3321", "Which artist recorded 'Carol'?", ["Chuck Berry", "Jerry Lee Lewis", "Fats Domino", "Little Richard"], "Chuck Berry", "1950s", "Medium"),
+    makeQuestion("music_3322", "Which artist recorded 'Almost Grown'?", ["Little Richard", "Chuck Berry", "Fats Domino", "Elvis Presley"], "Chuck Berry", "1950s", "Hard"),
+    makeQuestion("music_3323", "Which artist recorded 'Lucille'?", ["Jerry Lee Lewis", "Little Richard", "Fats Domino", "Chuck Berry"], "Little Richard", "1950s", "Easy"),
+    makeQuestion("music_3324", "Which artist recorded 'Keep A-Knockin''?", ["Fats Domino", "Jerry Lee Lewis", "Little Richard", "Chuck Berry"], "Little Richard", "1950s", "Medium"),
+    makeQuestion("music_3325", "Which artist recorded 'Slippin' and Slidin''?", ["Little Richard", "Fats Domino", "Jerry Lee Lewis", "Chuck Berry"], "Little Richard", "1950s", "Medium"),
+    makeQuestion("music_3326", "Which artist recorded 'I'm Walkin''?", ["Jerry Lee Lewis", "Fats Domino", "Little Richard", "Chuck Berry"], "Fats Domino", "1950s", "Easy"),
+    makeQuestion("music_3327", "Which artist recorded 'I Want to Walk You Home'?", ["Fats Domino", "Little Richard", "Jerry Lee Lewis", "Elvis Presley"], "Fats Domino", "1950s", "Medium"),
+    makeQuestion("music_3328", "Which artist recorded 'Be My Guest'?", ["Chuck Berry", "Jerry Lee Lewis", "Fats Domino", "Little Richard"], "Fats Domino", "1950s", "Medium"),
+    makeQuestion("music_3329", "Which artist recorded 'High School Confidential'?", ["Jerry Lee Lewis", "Little Richard", "Fats Domino", "Chuck Berry"], "Jerry Lee Lewis", "1950s", "Medium"),
+    makeQuestion("music_3330", "Which artist recorded 'Breathless'?", ["Chuck Berry", "Jerry Lee Lewis", "Little Richard", "Fats Domino"], "Jerry Lee Lewis", "1950s", "Medium"),
+    makeQuestion("music_3331", "Which artist recorded 'Chances Are'?", ["Pat Boone", "Johnny Mathis", "Andy Williams", "Guy Mitchell"], "Johnny Mathis", "1950s", "Easy"),
+    makeQuestion("music_3332", "Which artist recorded 'It's Not for Me to Say'?", ["Johnny Mathis", "Andy Williams", "Pat Boone", "Guy Mitchell"], "Johnny Mathis", "1950s", "Medium"),
+    makeQuestion("music_3333", "Which artist recorded 'The Twelfth of Never'?", ["Guy Mitchell", "Pat Boone", "Johnny Mathis", "Andy Williams"], "Johnny Mathis", "1950s", "Easy"),
+    makeQuestion("music_3334", "Which artist recorded 'Love Letters in the Sand'?", ["Andy Williams", "Pat Boone", "Johnny Mathis", "Guy Mitchell"], "Pat Boone", "1950s", "Easy"),
+    makeQuestion("music_3335", "Which artist recorded 'April Love'?", ["Pat Boone", "Johnny Mathis", "Guy Mitchell", "Andy Williams"], "Pat Boone", "1950s", "Medium"),
+    makeQuestion("music_3336", "Which artist recorded 'A Wonderful Time Up There'?", ["Johnny Mathis", "Andy Williams", "Pat Boone", "Guy Mitchell"], "Pat Boone", "1950s", "Hard"),
+    makeQuestion("music_3337", "Which artist recorded 'One Step at a Time'?", ["Connie Francis", "Brenda Lee", "Patsy Cline", "Wanda Jackson"], "Brenda Lee", "1950s", "Medium"),
+    makeQuestion("music_3338", "Which artist recorded 'Rockin' Around the Christmas Tree'?", ["Wanda Jackson", "Connie Francis", "Brenda Lee", "Patsy Cline"], "Brenda Lee", "1950s", "Easy"),
+    makeQuestion("music_3339", "Which artist recorded 'Sweet Nothin's'?", ["Brenda Lee", "Patsy Cline", "Connie Francis", "Wanda Jackson"], "Brenda Lee", "1950s", "Medium"),
+    makeQuestion("music_3340", "Which group recorded 'Maybe'?", ["The Chantels", "The Flamingos", "The Moonglows", "The Clovers"], "The Chantels", "1950s", "Medium"),
+    makeQuestion("music_3341", "Which group recorded 'I Only Have Eyes for You'?", ["The Moonglows", "The Clovers", "The Flamingos", "The Chantels"], "The Flamingos", "1950s", "Easy"),
+    makeQuestion("music_3342", "Which group recorded 'Sincerely'?", ["The Clovers", "The Moonglows", "The Flamingos", "The Chantels"], "The Moonglows", "1950s", "Medium"),
+    makeQuestion("music_3343", "Which group recorded 'Ten Commandments of Love'?", ["The Moonglows", "The Flamingos", "The Clovers", "The Chantels"], "The Moonglows", "1950s", "Hard"),
+    makeQuestion("music_3344", "Which group released 'Blue Velvet' on Atlantic Records in 1955?", ["The Flamingos", "The Clovers", "The Moonglows", "The Chantels"], "The Clovers", "1950s", "Hard"),
+    makeQuestion("music_3345", "Which group recorded 'Love Potion No. 9'?", ["The Clovers", "The Moonglows", "The Flamingos", "The Chantels"], "The Clovers", "1950s", "Easy"),
+    makeQuestion("music_3346", "Which group recorded 'Devil or Angel'?", ["The Chantels", "The Flamingos", "The Clovers", "The Moonglows"], "The Clovers", "1950s", "Hard"),
+    makeQuestion("music_3347", "Which artist recorded 'Sixteen Tons'?", ["Hank Snow", "Tennessee Ernie Ford", "Hank Williams", "Johnny Horton"], "Tennessee Ernie Ford", "1950s", "Easy"),
+    makeQuestion("music_3348", "Which artist recorded 'Ballad of Davy Crockett'?", ["Johnny Horton", "Hank Williams", "Tennessee Ernie Ford", "Hank Snow"], "Tennessee Ernie Ford", "1950s", "Medium"),
+    makeQuestion("music_3349", "Which artist recorded 'I'm Movin' On'?", ["Hank Snow", "Hank Williams", "Ray Price", "Sonny James"], "Hank Snow", "1950s", "Medium"),
+    makeQuestion("music_3350", "Which artist recorded 'Your Cheatin' Heart'?", ["Ray Price", "Hank Williams", "Hank Snow", "Johnny Horton"], "Hank Williams", "1950s", "Easy"),
+    makeQuestion("music_3351", "Which artist recorded 'Hey, Good Lookin''?", ["Hank Snow", "Johnny Horton", "Hank Williams", "Ray Price"], "Hank Williams", "1950s", "Easy"),
+    makeQuestion("music_3352", "Which artist recorded 'Jambalaya'?", ["Johnny Horton", "Hank Williams", "Ray Price", "Sonny James"], "Hank Williams", "1950s", "Easy"),
+    makeQuestion("music_3353", "Which artist recorded 'I Saw the Light'?", ["Hank Williams", "Hank Snow", "Ray Price", "Johnny Horton"], "Hank Williams", "1940s", "Medium"),
+    makeQuestion("music_3354", "Which artist recorded 'Crazy Arms'?", ["Sonny James", "Ray Price", "Johnny Horton", "Hank Snow"], "Ray Price", "1950s", "Medium"),
+    makeQuestion("music_3355", "Which artist recorded 'Young Love'?", ["Johnny Horton", "Hank Snow", "Sonny James", "Ray Price"], "Sonny James", "1950s", "Easy"),
+    makeQuestion("music_3356", "Which artist recorded 'The Battle of New Orleans'?", ["Johnny Horton", "Guy Mitchell", "Sonny James", "Ray Price"], "Johnny Horton", "1950s", "Easy"),
+    makeQuestion("music_3357", "Which artist recorded 'Honky Tonk Man'?", ["Ray Price", "Johnny Horton", "Hank Snow", "Guy Mitchell"], "Johnny Horton", "1950s", "Hard"),
+    makeQuestion("music_3358", "Which artist recorded 'Singing the Blues'?", ["Andy Williams", "Guy Mitchell", "Jimmie Rodgers", "Johnny Mathis"], "Guy Mitchell", "1950s", "Easy"),
+    makeQuestion("music_3359", "Which artist recorded 'Heartaches by the Number'?", ["Jimmie Rodgers", "Andy Williams", "Guy Mitchell", "Pat Boone"], "Guy Mitchell", "1950s", "Hard"),
+    makeQuestion("music_3360", "Which artist recorded 'Rock-a-Billy'?", ["Guy Mitchell", "Pat Boone", "Andy Williams", "Jimmie Rodgers"], "Guy Mitchell", "1950s", "Hard"),
+    makeQuestion("music_3361", "Which artist recorded 'Butterfly'?", ["Pat Boone", "Andy Williams", "Johnny Mathis", "Guy Mitchell"], "Andy Williams", "1950s", "Medium"),
+    makeQuestion("music_3362", "Which artist recorded 'Canadian Sunset'?", ["Andy Williams", "Johnny Mathis", "Guy Mitchell", "Pat Boone"], "Andy Williams", "1950s", "Medium"),
+    makeQuestion("music_3363", "Which artist recorded 'Kisses Sweeter Than Wine'?", ["Guy Mitchell", "Jimmie Rodgers", "Andy Williams", "Pat Boone"], "Jimmie Rodgers", "1950s", "Medium"),
+    makeQuestion("music_3364", "Which artist recorded 'Honeycomb'?", ["Jimmie Rodgers", "Andy Williams", "Guy Mitchell", "Johnny Mathis"], "Jimmie Rodgers", "1950s", "Medium"),
+    makeQuestion("music_3365", "Which group recorded 'Tom Dooley'?", ["The Kingston Trio", "The Clovers", "The Fleetwoods", "The Diamonds"], "The Kingston Trio", "1950s", "Easy"),
+    makeQuestion("music_3366", "Which artist recorded 'The Purple People Eater'?", ["Jimmie Rodgers", "Sheb Wooley", "Guy Mitchell", "Johnny Horton"], "Sheb Wooley", "1950s", "Easy")
 ];
 
 module.exports = quizPack52;
