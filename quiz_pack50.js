@@ -1,707 +1,190 @@
 // quiz_pack50.js
-// 100 Music questions - 1960s
+// PuzzlePilot Bigggggg Quiz - Pack 50
+// Music: 1960s soul, gospel, rhythm and blues (including earlier/later recordings)
+// Tagging audit: original IDs and valid questions retained; one internal repeat replaced
+// with a different form of music trivia. All 100 questions receive complete metadata.
+
+// Artist-specific metadata is added to every question when the pack loads.
+const artistTags = {
+    "Freddie Scott": ["soul", "rhythm and blues", "singers", "male vocalists", "american", "shout records"],
+    "Roy Redmond": ["soul", "rhythm and blues", "singers", "male vocalists", "american", "loma records"],
+    "The Artistics": ["soul", "rhythm and blues", "groups", "vocal groups", "american", "chicago soul", "brunswick records"],
+    "Johnny Howard": ["soul", "rhythm and blues", "singers", "male vocalists", "american", "northern soul"],
+    "The Radiants": ["soul", "rhythm and blues", "groups", "vocal groups", "american", "chicago soul", "chess records"],
+    "Mitty Collier": ["soul", "rhythm and blues", "singers", "female vocalists", "american", "chess records", "chicago soul"],
+    "The Soul Stirrers": ["gospel", "groups", "gospel groups", "vocal groups", "american"],
+    "The Staple Singers": ["gospel", "soul", "groups", "family groups", "vocal groups", "american", "chicago music"],
+    "The Falcons": ["soul", "rhythm and blues", "doo-wop", "groups", "vocal groups", "american", "detroit music"],
+    "Little Milton": ["blues", "soul", "soul blues", "rhythm and blues", "singers", "male vocalists", "guitarists", "american"],
+    "Johnny Sayles": ["soul", "rhythm and blues", "singers", "male vocalists", "american", "northern soul"],
+    "Chess Records": ["record labels", "chicago music", "the radiants", "soul", "rhythm and blues", "american"]
+};
+
+// Additional recording-specific tags, including accurate historical decades.
+const questionTags = {
+    "music_3069": ["beatles covers", "lennon and mccartney"],
+    "music_3084": ["1965 singles", "radiants 1965 hit"],
+    "music_3089": ["chess records", "record labels", "chicago", "1960s music industry"],
+    "music_3092": ["1964 singles", "chess records"],
+    "music_3104": ["1960s gospel", "civil rights music"],
+    "music_3106": ["buffalo springfield covers", "1967 recordings"],
+    "music_3107": ["1964 recordings"],
+    "music_3108": ["1962 recordings"],
+    "music_3109": ["1956 recordings", "vee jay records"],
+    "music_3110": ["1963 recordings"],
+    "music_3111": ["1960 recordings"],
+    "music_3112": ["1961 recordings"],
+    "music_3113": ["1960 recordings", "gospel influences on rock"],
+    "music_3114": ["1954 recordings", "united records"],
+    "music_3115": ["1963 recordings"],
+    "music_3116": ["1958 recordings"],
+    "music_3117": ["early 1960s recordings"],
+    "music_3118": ["early 1960s recordings"],
+    "music_3119": ["1967 recordings"],
+    "music_3120": ["1960 recordings"],
+    "music_3121": ["1961 recordings"],
+    "music_3123": ["1957 recordings"],
+    "music_3124": ["1958 recordings"],
+    "music_3125": ["1959 recordings"],
+    "music_3126": ["1955 recordings", "1966 re-recordings", "1960s"],
+    "music_3127": ["1962 recordings"],
+    "music_3128": ["1962 recordings"],
+    "music_3129": ["1962 recordings"],
+    "music_3130": ["1956 recordings", "vee jay records"],
+    "music_3131": ["1960 recordings"],
+    "music_3133": ["wilson pickett", "1962 singles"],
+    "music_3134": ["1959 singles", "unart records"],
+    "music_3142": ["1971 singles", "stax records"],
+    "music_3143": ["1965 singles", "checker records"],
+    "music_3144": ["1965 singles", "checker records"],
+    "music_3145": ["1969 singles", "checker records"],
+    "music_3146": ["1967 singles", "checker records"],
+    "music_3147": ["1969 singles", "1970 charts", "checker records"],
+    "music_3154": ["1969 singles", "dakar records", "original recording"],
+    "music_3165": ["dakar records", "1969 singles"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, decade, difficulty) {
+    const performerTags = artistTags[correctAnswer];
+    if (!performerTags) throw new Error("Missing tags for " + id);
+    const artistQuestion = question.startsWith("Which artist recorded ");
+    const songTitle = artistQuestion
+        ? question.slice("Which artist recorded ".length).replace(/\?$/, "").toLowerCase()
+        : null;
+    const tags = [
+        decade,
+        ...(artistQuestion ? ["songs", "recordings", songTitle] : ["music history"]),
+        correctAnswer.toLowerCase(),
+        ...performerTags,
+        ...(questionTags[id] || [])
+    ];
+    return {
+        id, category: "Music", question, answers, correctAnswer,
+        difficulty, tags: [...new Set(tags)], dailyEligible: true
+    };
+}
 
 const quizPack50 = [
-    {
-        id: "music_3067",
-        category: "Music",
-        question: "Which artist recorded Cry to Me?",
-        answers: ["Freddie Scott", "Roy Redmond", "The Artistics", "Johnny Howard"],
-        correctAnswer: "Freddie Scott"
-    },
-    {
-        id: "music_3068",
-        category: "Music",
-        question: "Which artist recorded Ain’t That Terrible?",
-        answers: ["The Artistics", "Roy Redmond", "Johnny Howard", "The Radiants"],
-        correctAnswer: "Roy Redmond"
-    },
-    {
-        id: "music_3069",
-        category: "Music",
-        question: "Which artist recorded Good Day Sunshine?",
-        answers: ["The Artistics", "Johnny Howard", "Roy Redmond", "The Radiants"],
-        correctAnswer: "Roy Redmond"
-    },
-    {
-        id: "music_3070",
-        category: "Music",
-        question: "Which artist recorded That Old Time Feeling?",
-        answers: ["The Artistics", "Johnny Howard", "The Radiants", "Roy Redmond"],
-        correctAnswer: "Roy Redmond"
-    },
-    {
-        id: "music_3071",
-        category: "Music",
-        question: "Which artist recorded Come on Back to Me?",
-        answers: ["Roy Redmond", "The Artistics", "Johnny Howard", "The Radiants"],
-        correctAnswer: "Roy Redmond"
-    },
-    {
-        id: "music_3072",
-        category: "Music",
-        question: "Which artist recorded I’m Gonna Miss You?",
-        answers: ["Johnny Howard", "The Artistics", "The Radiants", "Mitty Collier"],
-        correctAnswer: "The Artistics"
-    },
-    {
-        id: "music_3073",
-        category: "Music",
-        question: "Which artist recorded Girl I Need You?",
-        answers: ["Johnny Howard", "The Radiants", "The Artistics", "Mitty Collier"],
-        correctAnswer: "The Artistics"
-    },
-    {
-        id: "music_3074",
-        category: "Music",
-        question: "Which artist recorded Hope We Have?",
-        answers: ["Johnny Howard", "The Radiants", "Mitty Collier", "The Artistics"],
-        correctAnswer: "The Artistics"
-    },
-    {
-        id: "music_3075",
-        category: "Music",
-        question: "Which artist recorded This Heart of Mine?",
-        answers: ["The Artistics", "Johnny Howard", "The Radiants", "Mitty Collier"],
-        correctAnswer: "The Artistics"
-    },
-    {
-        id: "music_3076",
-        category: "Music",
-        question: "Which artist recorded Patty Cake?",
-        answers: ["Johnny Howard", "The Artistics", "The Radiants", "Mitty Collier"],
-        correctAnswer: "The Artistics"
-    },
-    {
-        id: "music_3077",
-        category: "Music",
-        question: "Which artist recorded Get My Hands on Some Lovin?",
-        answers: ["Johnny Howard", "The Radiants", "The Artistics", "Mitty Collier"],
-        correctAnswer: "The Artistics"
-    },
-    {
-        id: "music_3078",
-        category: "Music",
-        question: "Which artist recorded The Chase Is On?",
-        answers: ["The Radiants", "Mitty Collier", "The Soul Stirrers", "Johnny Howard"],
-        correctAnswer: "Johnny Howard"
-    },
-    {
-        id: "music_3079",
-        category: "Music",
-        question: "Which artist recorded I Miss My Lady?",
-        answers: ["Johnny Howard", "The Radiants", "Mitty Collier", "The Soul Stirrers"],
-        correctAnswer: "Johnny Howard"
-    },
-    {
-        id: "music_3080",
-        category: "Music",
-        question: "Which artist recorded You’re All I Need?",
-        answers: ["The Radiants", "Johnny Howard", "Mitty Collier", "The Soul Stirrers"],
-        correctAnswer: "Johnny Howard"
-    },
-    {
-        id: "music_3081",
-        category: "Music",
-        question: "Which artist recorded The Way You Look Tonight?",
-        answers: ["The Radiants", "Mitty Collier", "Johnny Howard", "The Soul Stirrers"],
-        correctAnswer: "Johnny Howard"
-    },
-    {
-        id: "music_3082",
-        category: "Music",
-        question: "Which artist recorded My Baby’s Gone?",
-        answers: ["Mitty Collier", "The Soul Stirrers", "The Staple Singers", "The Radiants"],
-        correctAnswer: "The Radiants"
-    },
-    {
-        id: "music_3083",
-        category: "Music",
-        question: "Which artist recorded Voice Your Choice?",
-        answers: ["The Radiants", "Mitty Collier", "The Soul Stirrers", "The Staple Singers"],
-        correctAnswer: "The Radiants"
-    },
-    {
-        id: "music_3084",
-        category: "Music",
-        question: "Which artist recorded Ain’t No Big Thing?",
-        answers: ["Mitty Collier", "The Radiants", "The Soul Stirrers", "The Staple Singers"],
-        correctAnswer: "The Radiants"
-    },
-    {
-        id: "music_3085",
-        category: "Music",
-        question: "Which artist recorded Hold On?",
-        answers: ["Mitty Collier", "The Soul Stirrers", "The Radiants", "The Staple Singers"],
-        correctAnswer: "The Radiants"
-    },
-    {
-        id: "music_3086",
-        category: "Music",
-        question: "Which artist recorded I’m the One Who Loves You?",
-        answers: ["Mitty Collier", "The Soul Stirrers", "The Staple Singers", "The Radiants"],
-        correctAnswer: "The Radiants"
-    },
-    {
-        id: "music_3087",
-        category: "Music",
-        question: "Which artist recorded Don’t Take Your Love?",
-        answers: ["The Radiants", "Mitty Collier", "The Soul Stirrers", "The Staple Singers"],
-        correctAnswer: "The Radiants"
-    },
-    {
-        id: "music_3088",
-        category: "Music",
-        question: "Which artist recorded Baby You’ve Got It?",
-        answers: ["Mitty Collier", "The Radiants", "The Soul Stirrers", "The Staple Singers"],
-        correctAnswer: "The Radiants"
-    },
-    {
-        id: "music_3089",
-        category: "Music",
-        question: "Which artist recorded It Ain’t No Big Thing?",
-        answers: ["Mitty Collier", "The Soul Stirrers", "The Radiants", "The Staple Singers"],
-        correctAnswer: "The Radiants"
-    },
-    {
-        id: "music_3090",
-        category: "Music",
-        question: "Which artist recorded Shy Guy?",
-        answers: ["Mitty Collier", "The Soul Stirrers", "The Staple Singers", "The Radiants"],
-        correctAnswer: "The Radiants"
-    },
-    {
-        id: "music_3091",
-        category: "Music",
-        question: "Which artist recorded One Day I’ll Show You?",
-        answers: ["The Radiants", "Mitty Collier", "The Soul Stirrers", "The Staple Singers"],
-        correctAnswer: "The Radiants"
-    },
-    {
-        id: "music_3092",
-        category: "Music",
-        question: "Which artist recorded I Had a Talk with My Man?",
-        answers: ["The Soul Stirrers", "Mitty Collier", "The Staple Singers", "The Falcons"],
-        correctAnswer: "Mitty Collier"
-    },
-    {
-        id: "music_3093",
-        category: "Music",
-        question: "Which artist recorded No Faith No Love?",
-        answers: ["The Soul Stirrers", "The Staple Singers", "Mitty Collier", "The Falcons"],
-        correctAnswer: "Mitty Collier"
-    },
-    {
-        id: "music_3094",
-        category: "Music",
-        question: "Which artist recorded Sharing You?",
-        answers: ["The Soul Stirrers", "The Staple Singers", "The Falcons", "Mitty Collier"],
-        correctAnswer: "Mitty Collier"
-    },
-    {
-        id: "music_3095",
-        category: "Music",
-        question: "Which artist recorded For My Man?",
-        answers: ["Mitty Collier", "The Soul Stirrers", "The Staple Singers", "The Falcons"],
-        correctAnswer: "Mitty Collier"
-    },
-    {
-        id: "music_3096",
-        category: "Music",
-        question: "Which artist recorded I’ve Got Love?",
-        answers: ["The Soul Stirrers", "Mitty Collier", "The Staple Singers", "The Falcons"],
-        correctAnswer: "Mitty Collier"
-    },
-    {
-        id: "music_3097",
-        category: "Music",
-        question: "Which artist recorded My Party?",
-        answers: ["The Soul Stirrers", "The Staple Singers", "Mitty Collier", "The Falcons"],
-        correctAnswer: "Mitty Collier"
-    },
-    {
-        id: "music_3098",
-        category: "Music",
-        question: "Which artist recorded Come Back Baby?",
-        answers: ["The Soul Stirrers", "The Staple Singers", "The Falcons", "Mitty Collier"],
-        correctAnswer: "Mitty Collier"
-    },
-    {
-        id: "music_3099",
-        category: "Music",
-        question: "Which artist recorded You Cannot Hurt Me?",
-        answers: ["Mitty Collier", "The Soul Stirrers", "The Staple Singers", "The Falcons"],
-        correctAnswer: "Mitty Collier"
-    },
-    {
-        id: "music_3100",
-        category: "Music",
-        question: "Which artist recorded Ain’t That Love?",
-        answers: ["The Soul Stirrers", "Mitty Collier", "The Staple Singers", "The Falcons"],
-        correctAnswer: "Mitty Collier"
-    },
-    {
-        id: "music_3101",
-        category: "Music",
-        question: "Which artist recorded Help Me?",
-        answers: ["The Soul Stirrers", "The Staple Singers", "Mitty Collier", "The Falcons"],
-        correctAnswer: "Mitty Collier"
-    },
-    {
-        id: "music_3102",
-        category: "Music",
-        question: "Which artist recorded You Can’t Take Love?",
-        answers: ["The Staple Singers", "The Falcons", "Little Milton", "The Soul Stirrers"],
-        correctAnswer: "The Soul Stirrers"
-    },
-    {
-        id: "music_3103",
-        category: "Music",
-        question: "Which artist recorded Don’t You Worry?",
-        answers: ["The Soul Stirrers", "The Staple Singers", "The Falcons", "Little Milton"],
-        correctAnswer: "The Soul Stirrers"
-    },
-    {
-        id: "music_3104",
-        category: "Music",
-        question: "Which artist recorded Why Am I Treated So Bad?",
-        answers: ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3105",
-        category: "Music",
-        question: "Which artist recorded Why Why Why?",
-        answers: ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3106",
-        category: "Music",
-        question: "Which artist recorded For What It’s Worth?",
-        answers: ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3107",
-        category: "Music",
-        question: "Which artist recorded What Are They Doing in Heaven Today?",
-        answers: ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3108",
-        category: "Music",
-        question: "Which artist recorded Hammer and Nails?",
-        answers: ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3109",
-        category: "Music",
-        question: "Which artist recorded Uncloudy Day?",
-        answers: ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3110",
-        category: "Music",
-        question: "Which artist recorded Wish I Had Answered?",
-        answers: ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3111",
-        category: "Music",
-        question: "Which artist recorded Pray On?",
-        answers: ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3112",
-        category: "Music",
-        question: "Which artist recorded I’ve Been Scorned?",
-        answers: ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3113",
-        category: "Music",
-        question: "Which artist recorded This May Be the Last Time?",
-        answers: ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3114",
-        category: "Music",
-        question: "Which artist recorded It Rained Children?",
-        answers: ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3115",
-        category: "Music",
-        question: "Which artist recorded I’m So Glad?",
-        answers: ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3116",
-        category: "Music",
-        question: "Which artist recorded Help Me Jesus?",
-        answers: ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3117",
-        category: "Music",
-        question: "Which artist recorded Nobody Knows the Trouble I’ve Seen?",
-        answers: ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3118",
-        category: "Music",
-        question: "Which artist recorded Swing Low?",
-        answers: ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3119",
-        category: "Music",
-        question: "Which artist recorded Good News?",
-        answers: ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3120",
-        category: "Music",
-        question: "Which artist recorded Will the Circle Be Unbroken?",
-        answers: ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3121",
-        category: "Music",
-        question: "Which artist recorded Don’t Knock?",
-        answers: ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3122",
-        category: "Music",
-        question: "Which artist recorded Why Wait?",
-        answers: ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3123",
-        category: "Music",
-        question: "Which artist recorded I’m Coming Home?",
-        answers: ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3124",
-        category: "Music",
-        question: "Which artist recorded Low Is the Way?",
-        answers: ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3125",
-        category: "Music",
-        question: "Which artist recorded Downward Road?",
-        answers: ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3126",
-        category: "Music",
-        question: "Which artist recorded If I Could Hear My Mother Pray Again?",
-        answers: ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3127",
-        category: "Music",
-        question: "Which artist recorded There Was a Star?",
-        answers: ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3128",
-        category: "Music",
-        question: "Which artist recorded Stand by Me?",
-        answers: ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3129",
-        category: "Music",
-        question: "Which artist recorded Calling Me?",
-        answers: ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3130",
-        category: "Music",
-        question: "Which artist recorded I Know I’ve Got Religion?",
-        answers: ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3131",
-        category: "Music",
-        question: "Which artist recorded Too Close?",
-        answers: ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"],
-        correctAnswer: "The Staple Singers"
-    },
-    {
-        id: "music_3132",
-        category: "Music",
-        question: "Which artist recorded Just for You and Me?",
-        answers: ["Little Milton", "The Falcons", "Johnny Sayles", "The Knight Brothers"],
-        correctAnswer: "The Falcons"
-    },
-    {
-        id: "music_3133",
-        category: "Music",
-        question: "Which artist recorded I Found a Love?",
-        answers: ["Little Milton", "Johnny Sayles", "The Falcons", "The Knight Brothers"],
-        correctAnswer: "The Falcons"
-    },
-    {
-        id: "music_3134",
-        category: "Music",
-        question: "Which artist recorded You’re So Fine?",
-        answers: ["Little Milton", "Johnny Sayles", "The Knight Brothers", "The Falcons"],
-        correctAnswer: "The Falcons"
-    },
-    {
-        id: "music_3135",
-        category: "Music",
-        question: "Which artist recorded I Gotta Have Your Love?",
-        answers: ["The Falcons", "Little Milton", "Johnny Sayles", "The Knight Brothers"],
-        correctAnswer: "The Falcons"
-    },
-    {
-        id: "music_3136",
-        category: "Music",
-        question: "Which artist recorded Take This Love I’ve Got?",
-        answers: ["Little Milton", "The Falcons", "Johnny Sayles", "The Knight Brothers"],
-        correctAnswer: "The Falcons"
-    },
-    {
-        id: "music_3137",
-        category: "Music",
-        question: "Which artist recorded The Teacher?",
-        answers: ["Little Milton", "Johnny Sayles", "The Falcons", "The Knight Brothers"],
-        correctAnswer: "The Falcons"
-    },
-    {
-        id: "music_3138",
-        category: "Music",
-        question: "Which artist recorded Good Good Feeling?",
-        answers: ["Little Milton", "Johnny Sayles", "The Knight Brothers", "The Falcons"],
-        correctAnswer: "The Falcons"
-    },
-    {
-        id: "music_3139",
-        category: "Music",
-        question: "Which artist recorded What to Do?",
-        answers: ["The Falcons", "Little Milton", "Johnny Sayles", "The Knight Brothers"],
-        correctAnswer: "The Falcons"
-    },
-    {
-        id: "music_3140",
-        category: "Music",
-        question: "Which artist recorded Has It Happened to You Yet?",
-        answers: ["Little Milton", "The Falcons", "Johnny Sayles", "The Knight Brothers"],
-        correctAnswer: "The Falcons"
-    },
-    {
-        id: "music_3141",
-        category: "Music",
-        question: "Which artist recorded Waiting for You?",
-        answers: ["Little Milton", "Johnny Sayles", "The Falcons", "The Knight Brothers"],
-        correctAnswer: "The Falcons"
-    },
-    {
-        id: "music_3142",
-        category: "Music",
-        question: "Which artist recorded That’s What Love Will Make You Do?",
-        answers: ["Johnny Sayles", "The Knight Brothers", "The Tripps", "Little Milton"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3143",
-        category: "Music",
-        question: "Which artist recorded We’re Gonna Make It?",
-        answers: ["Little Milton", "Johnny Sayles", "The Knight Brothers", "The Tripps"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3144",
-        category: "Music",
-        question: "Which artist recorded Who’s Cheating Who?",
-        answers: ["Johnny Sayles", "Little Milton", "The Knight Brothers", "The Tripps"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3145",
-        category: "Music",
-        question: "Which artist recorded Grits Ain’t Groceries?",
-        answers: ["Johnny Sayles", "The Knight Brothers", "Little Milton", "The Tripps"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3146",
-        category: "Music",
-        question: "Which artist recorded Feel So Bad?",
-        answers: ["Johnny Sayles", "The Knight Brothers", "The Tripps", "Little Milton"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3147",
-        category: "Music",
-        question: "Which artist recorded If Walls Could Talk?",
-        answers: ["Little Milton", "Johnny Sayles", "The Knight Brothers", "The Tripps"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3148",
-        category: "Music",
-        question: "Which artist recorded Blind Man?",
-        answers: ["Johnny Sayles", "Little Milton", "The Knight Brothers", "The Tripps"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3149",
-        category: "Music",
-        question: "Which artist recorded More and More?",
-        answers: ["Johnny Sayles", "The Knight Brothers", "Little Milton", "The Tripps"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3150",
-        category: "Music",
-        question: "Which artist recorded Man Loves Two?",
-        answers: ["Johnny Sayles", "The Knight Brothers", "The Tripps", "Little Milton"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3151",
-        category: "Music",
-        question: "Which artist recorded Without My Sweet Baby?",
-        answers: ["Little Milton", "Johnny Sayles", "The Knight Brothers", "The Tripps"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3152",
-        category: "Music",
-        question: "Which artist recorded Poor Man?",
-        answers: ["Johnny Sayles", "Little Milton", "The Knight Brothers", "The Tripps"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3153",
-        category: "Music",
-        question: "Which artist recorded So Mean to Me?",
-        answers: ["Johnny Sayles", "The Knight Brothers", "Little Milton", "The Tripps"],
-        correctAnswer: "Little Milton"
-    },
-    {
-        id: "music_3154",
-        category: "Music",
-        question: "Which artist recorded Somebody’s Changin’ My Sweet Baby’s Mind?",
-        answers: ["The Knight Brothers", "The Tripps", "The Vogues", "Johnny Sayles"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3155",
-        category: "Music",
-        question: "Which artist recorded I Can’t Get Enough of Your Love?",
-        answers: ["Johnny Sayles", "The Knight Brothers", "The Tripps", "The Vogues"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3156",
-        category: "Music",
-        question: "Which artist recorded Anything for You?",
-        answers: ["The Knight Brothers", "Johnny Sayles", "The Tripps", "The Vogues"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3157",
-        category: "Music",
-        question: "Which artist recorded You Told a Lie?",
-        answers: ["The Knight Brothers", "The Tripps", "Johnny Sayles", "The Vogues"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3158",
-        category: "Music",
-        question: "Which artist recorded Don’t Turn Your Back on Me?",
-        answers: ["The Knight Brothers", "The Tripps", "The Vogues", "Johnny Sayles"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3159",
-        category: "Music",
-        question: "Which artist recorded I’m Just What She Needs?",
-        answers: ["Johnny Sayles", "The Knight Brothers", "The Tripps", "The Vogues"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3160",
-        category: "Music",
-        question: "Which artist recorded My Love’s a Monster?",
-        answers: ["The Knight Brothers", "Johnny Sayles", "The Tripps", "The Vogues"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3161",
-        category: "Music",
-        question: "Which artist recorded The Concentration?",
-        answers: ["The Knight Brothers", "The Tripps", "Johnny Sayles", "The Vogues"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3162",
-        category: "Music",
-        question: "Which artist recorded You Did Me Wrong?",
-        answers: ["The Knight Brothers", "The Tripps", "The Vogues", "Johnny Sayles"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3163",
-        category: "Music",
-        question: "Which artist recorded I Got Everything I Need?",
-        answers: ["Johnny Sayles", "The Knight Brothers", "The Tripps", "The Vogues"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3164",
-        category: "Music",
-        question: "Which artist recorded Whole Lot of Lovin’?",
-        answers: ["The Knight Brothers", "Johnny Sayles", "The Tripps", "The Vogues"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3165",
-        category: "Music",
-        question: "Which artist recorded You’re So Right for Me?",
-        answers: ["The Knight Brothers", "The Tripps", "Johnny Sayles", "The Vogues"],
-        correctAnswer: "Johnny Sayles"
-    },
-    {
-        id: "music_3166",
-        category: "Music",
-        question: "Which artist recorded I’m a Big Boy Now?",
-        answers: ["The Knight Brothers", "The Tripps", "The Vogues", "Johnny Sayles"],
-        correctAnswer: "Johnny Sayles"
-    }
+    makeQuestion("music_3067", "Which artist recorded Cry to Me?", ["Freddie Scott", "Roy Redmond", "The Artistics", "Johnny Howard"], "Freddie Scott", "1960s", "Medium"),
+    makeQuestion("music_3068", "Which artist recorded Ain’t That Terrible?", ["The Artistics", "Roy Redmond", "Johnny Howard", "The Radiants"], "Roy Redmond", "1960s", "Hard"),
+    makeQuestion("music_3069", "Which artist recorded Good Day Sunshine?", ["The Artistics", "Johnny Howard", "Roy Redmond", "The Radiants"], "Roy Redmond", "1960s", "Hard"),
+    makeQuestion("music_3070", "Which artist recorded That Old Time Feeling?", ["The Artistics", "Johnny Howard", "The Radiants", "Roy Redmond"], "Roy Redmond", "1960s", "Hard"),
+    makeQuestion("music_3071", "Which artist recorded Come on Back to Me?", ["Roy Redmond", "The Artistics", "Johnny Howard", "The Radiants"], "Roy Redmond", "1960s", "Hard"),
+    makeQuestion("music_3072", "Which artist recorded I’m Gonna Miss You?", ["Johnny Howard", "The Artistics", "The Radiants", "Mitty Collier"], "The Artistics", "1960s", "Medium"),
+    makeQuestion("music_3073", "Which artist recorded Girl I Need You?", ["Johnny Howard", "The Radiants", "The Artistics", "Mitty Collier"], "The Artistics", "1960s", "Hard"),
+    makeQuestion("music_3074", "Which artist recorded Hope We Have?", ["Johnny Howard", "The Radiants", "Mitty Collier", "The Artistics"], "The Artistics", "1960s", "Hard"),
+    makeQuestion("music_3075", "Which artist recorded This Heart of Mine?", ["The Artistics", "Johnny Howard", "The Radiants", "Mitty Collier"], "The Artistics", "1960s", "Hard"),
+    makeQuestion("music_3076", "Which artist recorded Patty Cake?", ["Johnny Howard", "The Artistics", "The Radiants", "Mitty Collier"], "The Artistics", "1960s", "Hard"),
+    makeQuestion("music_3077", "Which artist recorded Get My Hands on Some Lovin?", ["Johnny Howard", "The Radiants", "The Artistics", "Mitty Collier"], "The Artistics", "1960s", "Hard"),
+    makeQuestion("music_3078", "Which artist recorded The Chase Is On?", ["The Radiants", "Mitty Collier", "The Soul Stirrers", "Johnny Howard"], "Johnny Howard", "1960s", "Hard"),
+    makeQuestion("music_3079", "Which artist recorded I Miss My Lady?", ["Johnny Howard", "The Radiants", "Mitty Collier", "The Soul Stirrers"], "Johnny Howard", "1960s", "Hard"),
+    makeQuestion("music_3080", "Which artist recorded You’re All I Need?", ["The Radiants", "Johnny Howard", "Mitty Collier", "The Soul Stirrers"], "Johnny Howard", "1960s", "Hard"),
+    makeQuestion("music_3081", "Which artist recorded The Way You Look Tonight?", ["The Radiants", "Mitty Collier", "Johnny Howard", "The Soul Stirrers"], "Johnny Howard", "1960s", "Hard"),
+    makeQuestion("music_3082", "Which artist recorded My Baby’s Gone?", ["Mitty Collier", "The Soul Stirrers", "The Staple Singers", "The Radiants"], "The Radiants", "1960s", "Hard"),
+    makeQuestion("music_3083", "Which artist recorded Voice Your Choice?", ["The Radiants", "Mitty Collier", "The Soul Stirrers", "The Staple Singers"], "The Radiants", "1960s", "Medium"),
+    makeQuestion("music_3084", "Which artist recorded It Ain't No Big Thing?", ["Mitty Collier", "The Radiants", "The Soul Stirrers", "The Staple Singers"], "The Radiants", "1960s", "Medium"),
+    makeQuestion("music_3085", "Which artist recorded Hold On?", ["Mitty Collier", "The Soul Stirrers", "The Radiants", "The Staple Singers"], "The Radiants", "1960s", "Hard"),
+    makeQuestion("music_3086", "Which artist recorded I’m the One Who Loves You?", ["Mitty Collier", "The Soul Stirrers", "The Staple Singers", "The Radiants"], "The Radiants", "1960s", "Hard"),
+    makeQuestion("music_3087", "Which artist recorded Don’t Take Your Love?", ["The Radiants", "Mitty Collier", "The Soul Stirrers", "The Staple Singers"], "The Radiants", "1960s", "Hard"),
+    makeQuestion("music_3088", "Which artist recorded Baby You’ve Got It?", ["Mitty Collier", "The Radiants", "The Soul Stirrers", "The Staple Singers"], "The Radiants", "1960s", "Hard"),
+    makeQuestion("music_3089", "Which record label released The Radiants’ 1960s singles?", ["Stax Records", "Chess Records", "Motown Records", "Atlantic Records"], "Chess Records", "1960s", "Medium"),
+    makeQuestion("music_3090", "Which artist recorded Shy Guy?", ["Mitty Collier", "The Soul Stirrers", "The Staple Singers", "The Radiants"], "The Radiants", "1960s", "Hard"),
+    makeQuestion("music_3091", "Which artist recorded One Day I’ll Show You?", ["The Radiants", "Mitty Collier", "The Soul Stirrers", "The Staple Singers"], "The Radiants", "1960s", "Hard"),
+    makeQuestion("music_3092", "Which artist recorded I Had a Talk with My Man?", ["The Soul Stirrers", "Mitty Collier", "The Staple Singers", "The Falcons"], "Mitty Collier", "1960s", "Hard"),
+    makeQuestion("music_3093", "Which artist recorded No Faith No Love?", ["The Soul Stirrers", "The Staple Singers", "Mitty Collier", "The Falcons"], "Mitty Collier", "1960s", "Hard"),
+    makeQuestion("music_3094", "Which artist recorded Sharing You?", ["The Soul Stirrers", "The Staple Singers", "The Falcons", "Mitty Collier"], "Mitty Collier", "1960s", "Hard"),
+    makeQuestion("music_3095", "Which artist recorded For My Man?", ["Mitty Collier", "The Soul Stirrers", "The Staple Singers", "The Falcons"], "Mitty Collier", "1960s", "Hard"),
+    makeQuestion("music_3096", "Which artist recorded I’ve Got Love?", ["The Soul Stirrers", "Mitty Collier", "The Staple Singers", "The Falcons"], "Mitty Collier", "1960s", "Hard"),
+    makeQuestion("music_3097", "Which artist recorded My Party?", ["The Soul Stirrers", "The Staple Singers", "Mitty Collier", "The Falcons"], "Mitty Collier", "1960s", "Hard"),
+    makeQuestion("music_3098", "Which artist recorded Come Back Baby?", ["The Soul Stirrers", "The Staple Singers", "The Falcons", "Mitty Collier"], "Mitty Collier", "1960s", "Hard"),
+    makeQuestion("music_3099", "Which artist recorded You Cannot Hurt Me?", ["Mitty Collier", "The Soul Stirrers", "The Staple Singers", "The Falcons"], "Mitty Collier", "1960s", "Hard"),
+    makeQuestion("music_3100", "Which artist recorded Ain’t That Love?", ["The Soul Stirrers", "Mitty Collier", "The Staple Singers", "The Falcons"], "Mitty Collier", "1960s", "Hard"),
+    makeQuestion("music_3101", "Which artist recorded Help Me?", ["The Soul Stirrers", "The Staple Singers", "Mitty Collier", "The Falcons"], "Mitty Collier", "1960s", "Hard"),
+    makeQuestion("music_3102", "Which artist recorded You Can’t Take Love?", ["The Staple Singers", "The Falcons", "Little Milton", "The Soul Stirrers"], "The Soul Stirrers", "1960s", "Hard"),
+    makeQuestion("music_3103", "Which artist recorded Don’t You Worry?", ["The Soul Stirrers", "The Staple Singers", "The Falcons", "Little Milton"], "The Soul Stirrers", "1960s", "Hard"),
+    makeQuestion("music_3104", "Which artist recorded Why Am I Treated So Bad?", ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Medium"),
+    makeQuestion("music_3105", "Which artist recorded Why Why Why?", ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3106", "Which artist recorded For What It’s Worth?", ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"], "The Staple Singers", "1960s", "Medium"),
+    makeQuestion("music_3107", "Which artist recorded What Are They Doing in Heaven Today?", ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3108", "Which artist recorded Hammer and Nails?", ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3109", "Which artist recorded Uncloudy Day?", ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"], "The Staple Singers", "1950s", "Medium"),
+    makeQuestion("music_3110", "Which artist recorded Wish I Had Answered?", ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3111", "Which artist recorded Pray On?", ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3112", "Which artist recorded I’ve Been Scorned?", ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3113", "Which artist recorded This May Be the Last Time?", ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"], "The Staple Singers", "1960s", "Medium"),
+    makeQuestion("music_3114", "Which artist recorded It Rained Children?", ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"], "The Staple Singers", "1950s", "Hard"),
+    makeQuestion("music_3115", "Which artist recorded I’m So Glad?", ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3116", "Which artist recorded Help Me Jesus?", ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1950s", "Hard"),
+    makeQuestion("music_3117", "Which artist recorded Nobody Knows the Trouble I’ve Seen?", ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3118", "Which artist recorded Swing Low?", ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3119", "Which artist recorded Good News?", ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3120", "Which artist recorded Will the Circle Be Unbroken?", ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Medium"),
+    makeQuestion("music_3121", "Which artist recorded Don’t Knock?", ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3122", "Which artist recorded Why Wait?", ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3123", "Which artist recorded I’m Coming Home?", ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1950s", "Hard"),
+    makeQuestion("music_3124", "Which artist recorded Low Is the Way?", ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1950s", "Hard"),
+    makeQuestion("music_3125", "Which artist recorded Downward Road?", ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"], "The Staple Singers", "1950s", "Hard"),
+    makeQuestion("music_3126", "Which artist recorded If I Could Hear My Mother Pray Again?", ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3127", "Which artist recorded There Was a Star?", ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3128", "Which artist recorded Stand by Me?", ["The Falcons", "The Staple Singers", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3129", "Which artist recorded Calling Me?", ["The Falcons", "Little Milton", "The Staple Singers", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3130", "Which artist recorded I Know I Got Religion?", ["The Falcons", "Little Milton", "Johnny Sayles", "The Staple Singers"], "The Staple Singers", "1950s", "Hard"),
+    makeQuestion("music_3131", "Which artist recorded Too Close?", ["The Staple Singers", "The Falcons", "Little Milton", "Johnny Sayles"], "The Staple Singers", "1960s", "Hard"),
+    makeQuestion("music_3132", "Which artist recorded Just for You and Me?", ["Little Milton", "The Falcons", "Johnny Sayles", "The Knight Brothers"], "The Falcons", "1960s", "Hard"),
+    makeQuestion("music_3133", "Which artist recorded I Found a Love?", ["Little Milton", "Johnny Sayles", "The Falcons", "The Knight Brothers"], "The Falcons", "1960s", "Medium"),
+    makeQuestion("music_3134", "Which artist recorded You’re So Fine?", ["Little Milton", "Johnny Sayles", "The Knight Brothers", "The Falcons"], "The Falcons", "1950s", "Medium"),
+    makeQuestion("music_3135", "Which artist recorded I Gotta Have Your Love?", ["The Falcons", "Little Milton", "Johnny Sayles", "The Knight Brothers"], "The Falcons", "1960s", "Hard"),
+    makeQuestion("music_3136", "Which artist recorded Take This Love I’ve Got?", ["Little Milton", "The Falcons", "Johnny Sayles", "The Knight Brothers"], "The Falcons", "1960s", "Hard"),
+    makeQuestion("music_3137", "Which artist recorded The Teacher?", ["Little Milton", "Johnny Sayles", "The Falcons", "The Knight Brothers"], "The Falcons", "1960s", "Hard"),
+    makeQuestion("music_3138", "Which artist recorded Good Good Feeling?", ["Little Milton", "Johnny Sayles", "The Knight Brothers", "The Falcons"], "The Falcons", "1960s", "Hard"),
+    makeQuestion("music_3139", "Which artist recorded What to Do?", ["The Falcons", "Little Milton", "Johnny Sayles", "The Knight Brothers"], "The Falcons", "1960s", "Hard"),
+    makeQuestion("music_3140", "Which artist recorded Has It Happened to You Yet?", ["Little Milton", "The Falcons", "Johnny Sayles", "The Knight Brothers"], "The Falcons", "1960s", "Hard"),
+    makeQuestion("music_3141", "Which artist recorded Waiting for You?", ["Little Milton", "Johnny Sayles", "The Falcons", "The Knight Brothers"], "The Falcons", "1960s", "Hard"),
+    makeQuestion("music_3142", "Which artist recorded That’s What Love Will Make You Do?", ["Johnny Sayles", "The Knight Brothers", "The Tripps", "Little Milton"], "Little Milton", "1970s", "Medium"),
+    makeQuestion("music_3143", "Which artist recorded We’re Gonna Make It?", ["Little Milton", "Johnny Sayles", "The Knight Brothers", "The Tripps"], "Little Milton", "1960s", "Medium"),
+    makeQuestion("music_3144", "Which artist recorded Who’s Cheating Who?", ["Johnny Sayles", "Little Milton", "The Knight Brothers", "The Tripps"], "Little Milton", "1960s", "Medium"),
+    makeQuestion("music_3145", "Which artist recorded Grits Ain’t Groceries?", ["Johnny Sayles", "The Knight Brothers", "Little Milton", "The Tripps"], "Little Milton", "1960s", "Medium"),
+    makeQuestion("music_3146", "Which artist recorded Feel So Bad?", ["Johnny Sayles", "The Knight Brothers", "The Tripps", "Little Milton"], "Little Milton", "1960s", "Medium"),
+    makeQuestion("music_3147", "Which artist recorded If Walls Could Talk?", ["Little Milton", "Johnny Sayles", "The Knight Brothers", "The Tripps"], "Little Milton", "1960s", "Medium"),
+    makeQuestion("music_3148", "Which artist recorded Blind Man?", ["Johnny Sayles", "Little Milton", "The Knight Brothers", "The Tripps"], "Little Milton", "1960s", "Hard"),
+    makeQuestion("music_3149", "Which artist recorded More and More?", ["Johnny Sayles", "The Knight Brothers", "Little Milton", "The Tripps"], "Little Milton", "1960s", "Hard"),
+    makeQuestion("music_3150", "Which artist recorded Man Loves Two?", ["Johnny Sayles", "The Knight Brothers", "The Tripps", "Little Milton"], "Little Milton", "1960s", "Hard"),
+    makeQuestion("music_3151", "Which artist recorded Without My Sweet Baby?", ["Little Milton", "Johnny Sayles", "The Knight Brothers", "The Tripps"], "Little Milton", "1960s", "Hard"),
+    makeQuestion("music_3152", "Which artist recorded Poor Man?", ["Johnny Sayles", "Little Milton", "The Knight Brothers", "The Tripps"], "Little Milton", "1960s", "Hard"),
+    makeQuestion("music_3153", "Which artist recorded So Mean to Me?", ["Johnny Sayles", "The Knight Brothers", "Little Milton", "The Tripps"], "Little Milton", "1960s", "Hard"),
+    makeQuestion("music_3154", "Which artist recorded Somebody’s Changin’ My Sweet Baby’s Mind?", ["The Knight Brothers", "The Tripps", "The Vogues", "Johnny Sayles"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3155", "Which artist recorded I Can’t Get Enough of Your Love?", ["Johnny Sayles", "The Knight Brothers", "The Tripps", "The Vogues"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3156", "Which artist recorded Anything for You?", ["The Knight Brothers", "Johnny Sayles", "The Tripps", "The Vogues"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3157", "Which artist recorded You Told a Lie?", ["The Knight Brothers", "The Tripps", "Johnny Sayles", "The Vogues"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3158", "Which artist recorded Don’t Turn Your Back on Me?", ["The Knight Brothers", "The Tripps", "The Vogues", "Johnny Sayles"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3159", "Which artist recorded I’m Just What She Needs?", ["Johnny Sayles", "The Knight Brothers", "The Tripps", "The Vogues"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3160", "Which artist recorded My Love’s a Monster?", ["The Knight Brothers", "Johnny Sayles", "The Tripps", "The Vogues"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3161", "Which artist recorded The Concentration?", ["The Knight Brothers", "The Tripps", "Johnny Sayles", "The Vogues"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3162", "Which artist recorded You Did Me Wrong?", ["The Knight Brothers", "The Tripps", "The Vogues", "Johnny Sayles"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3163", "Which artist recorded I Got Everything I Need?", ["Johnny Sayles", "The Knight Brothers", "The Tripps", "The Vogues"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3164", "Which artist recorded Whole Lot of Lovin’?", ["The Knight Brothers", "Johnny Sayles", "The Tripps", "The Vogues"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3165", "Which artist recorded You’re So Right for Me?", ["The Knight Brothers", "The Tripps", "Johnny Sayles", "The Vogues"], "Johnny Sayles", "1960s", "Hard"),
+    makeQuestion("music_3166", "Which artist recorded I’m a Big Boy Now?", ["The Knight Brothers", "The Tripps", "The Vogues", "Johnny Sayles"], "Johnny Sayles", "1960s", "Hard")
 ];
 
 module.exports = quizPack50;
