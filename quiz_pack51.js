@@ -1,704 +1,205 @@
+// quiz_pack51.js
+// PuzzlePilot Bigggggg Quiz — Pack 51
+// Pre-1960s music: rock and roll, doo-wop, pop, jazz, country and wartime songs.
+// All original IDs preserved. Decades refer to the relevant recordings.
+// Full metadata is generated when the pack is loaded.
+
+const artistTags = {
+    "Elvis Presley": ["rock and roll", "rockabilly", "pop", "male singers", "american", "memphis", "guitarists"],
+    "Buddy Holly": ["rock and roll", "rockabilly", "male singers", "american", "guitarists", "the crickets"],
+    "Chuck Berry": ["rock and roll", "rhythm and blues", "male singers", "american", "guitarists", "songwriters"],
+    "Little Richard": ["rock and roll", "rhythm and blues", "male singers", "american", "pianists"],
+    "Fats Domino": ["rock and roll", "rhythm and blues", "new orleans", "male singers", "american", "pianists"],
+    "Jerry Lee Lewis": ["rock and roll", "rockabilly", "male singers", "american", "pianists"],
+    "The Everly Brothers": ["rock and roll", "country", "pop", "duos", "brothers", "american", "vocal harmony"],
+    "Bill Haley & His Comets": ["rock and roll", "bands", "american", "bill haley"],
+    "Eddie Cochran": ["rock and roll", "rockabilly", "male singers", "american", "guitarists"],
+    "Gene Vincent": ["rock and roll", "rockabilly", "male singers", "american"],
+    "Carl Perkins": ["rock and roll", "rockabilly", "country", "male singers", "american", "guitarists", "sun records"],
+    "Ricky Nelson": ["rock and roll", "rockabilly", "pop", "male singers", "american"],
+    "Paul Anka": ["traditional pop", "pop", "male singers", "canadian", "songwriters"],
+    "The Platters": ["doo-wop", "rhythm and blues", "traditional pop", "vocal groups", "american"],
+    "Frankie Lymon & The Teenagers": ["doo-wop", "rock and roll", "vocal groups", "american", "frankie lymon"],
+    "Danny & the Juniors": ["doo-wop", "rock and roll", "vocal groups", "american"],
+    "The Big Bopper": ["rock and roll", "rockabilly", "male singers", "american", "songwriters", "j p richardson"],
+    "Ritchie Valens": ["rock and roll", "rockabilly", "male singers", "american", "latin rock", "guitarists"],
+    "Frank Sinatra": ["traditional pop", "jazz", "crooners", "male singers", "american", "capitol records"],
+    "Nat King Cole": ["traditional pop", "jazz", "crooners", "male singers", "american", "pianists"],
+    "Dean Martin": ["traditional pop", "crooners", "male singers", "american", "capitol records"],
+    "Doris Day": ["traditional pop", "female singers", "american", "film music"],
+    "Perry Como": ["traditional pop", "crooners", "male singers", "american"],
+    "Peggy Lee": ["jazz", "traditional pop", "female singers", "american", "swing"],
+    "Rosemary Clooney": ["traditional pop", "jazz", "female singers", "american"],
+    "The Andrews Sisters": ["swing", "traditional pop", "female vocal groups", "vocal trios", "american", "wartime music"],
+    "Glenn Miller": ["big band", "swing", "jazz", "orchestras", "american", "trombonists"],
+    "Bing Crosby": ["traditional pop", "crooners", "male singers", "american", "film music"],
+    "Vera Lynn": ["traditional pop", "female singers", "british", "wartime music", "world war ii"],
+    "Édith Piaf": ["chanson", "traditional pop", "female singers", "french", "paris"],
+    "Bobby Darin": ["traditional pop", "rock and roll", "male singers", "american", "atco records"],
+    "Connie Francis": ["traditional pop", "pop", "female singers", "american"],
+    "The Chordettes": ["doo-wop", "traditional pop", "female vocal groups", "american"],
+    "The Coasters": ["doo-wop", "rock and roll", "rhythm and blues", "vocal groups", "american", "leiber and stoller"],
+    "The Drifters": ["doo-wop", "rhythm and blues", "vocal groups", "american", "atlantic records"],
+    "Johnny Cash": ["country", "rockabilly", "male singers", "american", "guitarists", "sun records"],
+    "Ray Charles": ["rhythm and blues", "soul", "jazz", "male singers", "american", "pianists"],
+    "The Chords": ["doo-wop", "rhythm and blues", "vocal groups", "american"],
+    "The Penguins": ["doo-wop", "rhythm and blues", "vocal groups", "american"],
+    "The Champs": ["rock and roll", "instrumentals", "bands", "american", "saxophone"]
+};
+
+const recordingTags = {
+    "music_3168": ["1956 singles", "cover versions", "big mama thornton original"],
+    "music_3173": ["the crickets", "1957 singles"],
+    "music_3175": ["the crickets"],
+    "music_3176": ["the crickets"],
+    "music_3185": ["cover versions", "1940s song"],
+    "music_3193": ["cover versions", "big joe turner original"],
+    "music_3194": ["cover versions", "bobby charles original"],
+    "music_3201": ["original recordings", "elvis presley cover"],
+    "music_3217": ["1958 albums", "come fly with me album"],
+    "music_3219": ["1954 singles", "uk number one singles", "film themes", "three coins in the fountain"],
+    "music_3220": ["1953 recordings", "young at heart", "musical films"],
+    "music_3223": ["1957 uk hits", "uk top ten singles", "love is the thing album", "when i fall in love"],
+    "music_3227": ["1958 singles", "nel blu dipinto di blu", "italian song covers"],
+    "music_3228": ["film music", "the man who knew too much"],
+    "music_3229": ["film music", "calamity jane"],
+    "music_3233": ["1958 singles", "cover versions", "little willie john original"],
+    "music_3234": ["1942 recordings", "1947 recordings", "why dont you do right"],
+    "music_3236": ["1954 singles", "uk number one singles", "this ole house"],
+    "music_3237": ["1941 recordings", "world war ii"],
+    "music_3238": ["1939 recordings"],
+    "music_3239": ["1939 recordings"],
+    "music_3240": ["1942 recordings", "christmas songs", "irving berlin", "best selling singles", "white christmas"],
+    "music_3241": ["1944 recordings", "academy awards", "film music"],
+    "music_3242": ["1944 recordings", "the andrews sisters", "duets", "cole porter"],
+    "music_3243": ["1939 recordings", "world war ii", "wartime songs"],
+    "music_3244": ["1942 recordings", "world war ii", "wartime songs"],
+    "music_3245": ["1946 recordings", "1947 singles", "la vie en rose", "french songs"],
+    "music_3246": ["threepenny opera", "1959 singles"],
+    "music_3252": ["1954 singles"],
+    "music_3253": ["1958 singles"],
+    "music_3257": ["1959 singles"],
+    "music_3259": ["1955 singles"],
+    "music_3261": ["1959 singles"],
+    "music_3262": ["1954 singles"],
+    "music_3264": ["1954 singles"],
+    "music_3265": ["1954 singles"],
+    "music_3266": ["1958 singles"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, decade, difficulty) {
+    const performerTags = artistTags[correctAnswer];
+    if (!performerTags) throw new Error(`Missing performer tags: ${id}`);
+    const match = question.match(/^Which (?:artist|group) recorded ['‘](.*)['’]\?$/);
+    const titleTags = match ? ["songs", "recordings", match[1].toLowerCase()] : ["music history"];
+    return {
+        id, category: "Music", question, answers, correctAnswer, difficulty,
+        tags: [...new Set([decade, ...titleTags, correctAnswer.toLowerCase(), ...performerTags, ...(recordingTags[id] || [])])],
+        dailyEligible: true
+    };
+}
+
 const quizPack51 = [
-    {
-        id: "music_3167",
-        category: "Music",
-        question: "Which artist recorded 'Heartbreak Hotel'?",
-        answers: ["Elvis Presley", "Buddy Holly", "Chuck Berry", "Little Richard"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3168",
-        category: "Music",
-        question: "Which artist recorded 'Hound Dog'?",
-        answers: ["Buddy Holly", "Chuck Berry", "Little Richard", "Elvis Presley"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3169",
-        category: "Music",
-        question: "Which artist recorded 'All Shook Up'?",
-        answers: ["Chuck Berry", "Little Richard", "Elvis Presley", "Buddy Holly"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3170",
-        category: "Music",
-        question: "Which artist recorded 'Jailhouse Rock'?",
-        answers: ["Little Richard", "Elvis Presley", "Buddy Holly", "Chuck Berry"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3171",
-        category: "Music",
-        question: "Which artist recorded 'Don't Be Cruel'?",
-        answers: ["Elvis Presley", "Buddy Holly", "Chuck Berry", "Little Richard"],
-        correctAnswer: "Elvis Presley"
-    },
-    {
-        id: "music_3172",
-        category: "Music",
-        question: "Which artist recorded 'Peggy Sue'?",
-        answers: ["Chuck Berry", "Little Richard", "Fats Domino", "Buddy Holly"],
-        correctAnswer: "Buddy Holly"
-    },
-    {
-        id: "music_3173",
-        category: "Music",
-        question: "Which artist recorded 'That'll Be the Day'?",
-        answers: ["Little Richard", "Fats Domino", "Buddy Holly", "Chuck Berry"],
-        correctAnswer: "Buddy Holly"
-    },
-    {
-        id: "music_3174",
-        category: "Music",
-        question: "Which artist recorded 'Rave On'?",
-        answers: ["Fats Domino", "Buddy Holly", "Chuck Berry", "Little Richard"],
-        correctAnswer: "Buddy Holly"
-    },
-    {
-        id: "music_3175",
-        category: "Music",
-        question: "Which artist recorded 'Oh, Boy!'?",
-        answers: ["Buddy Holly", "Chuck Berry", "Little Richard", "Fats Domino"],
-        correctAnswer: "Buddy Holly"
-    },
-    {
-        id: "music_3176",
-        category: "Music",
-        question: "Which artist recorded 'Maybe Baby'?",
-        answers: ["Chuck Berry", "Little Richard", "Fats Domino", "Buddy Holly"],
-        correctAnswer: "Buddy Holly"
-    },
-    {
-        id: "music_3177",
-        category: "Music",
-        question: "Which artist recorded 'Johnny B. Goode'?",
-        answers: ["Fats Domino", "Jerry Lee Lewis", "Chuck Berry", "Little Richard"],
-        correctAnswer: "Chuck Berry"
-    },
-    {
-        id: "music_3178",
-        category: "Music",
-        question: "Which artist recorded 'Maybellene'?",
-        answers: ["Jerry Lee Lewis", "Chuck Berry", "Little Richard", "Fats Domino"],
-        correctAnswer: "Chuck Berry"
-    },
-    {
-        id: "music_3179",
-        category: "Music",
-        question: "Which artist recorded 'Roll Over Beethoven'?",
-        answers: ["Chuck Berry", "Little Richard", "Fats Domino", "Jerry Lee Lewis"],
-        correctAnswer: "Chuck Berry"
-    },
-    {
-        id: "music_3180",
-        category: "Music",
-        question: "Which artist recorded 'Sweet Little Sixteen'?",
-        answers: ["Little Richard", "Fats Domino", "Jerry Lee Lewis", "Chuck Berry"],
-        correctAnswer: "Chuck Berry"
-    },
-    {
-        id: "music_3181",
-        category: "Music",
-        question: "Which artist recorded 'Rock and Roll Music'?",
-        answers: ["Fats Domino", "Jerry Lee Lewis", "Chuck Berry", "Little Richard"],
-        correctAnswer: "Chuck Berry"
-    },
-    {
-        id: "music_3182",
-        category: "Music",
-        question: "Which artist recorded 'Tutti Frutti'?",
-        answers: ["The Everly Brothers", "Little Richard", "Fats Domino", "Jerry Lee Lewis"],
-        correctAnswer: "Little Richard"
-    },
-    {
-        id: "music_3183",
-        category: "Music",
-        question: "Which artist recorded 'Long Tall Sally'?",
-        answers: ["Little Richard", "Fats Domino", "Jerry Lee Lewis", "The Everly Brothers"],
-        correctAnswer: "Little Richard"
-    },
-    {
-        id: "music_3184",
-        category: "Music",
-        question: "Which artist recorded 'Good Golly, Miss Molly'?",
-        answers: ["Fats Domino", "Jerry Lee Lewis", "The Everly Brothers", "Little Richard"],
-        correctAnswer: "Little Richard"
-    },
-    {
-        id: "music_3185",
-        category: "Music",
-        question: "Which artist recorded 'Blueberry Hill'?",
-        answers: ["Jerry Lee Lewis", "The Everly Brothers", "Fats Domino", "Bill Haley & His Comets"],
-        correctAnswer: "Fats Domino"
-    },
-    {
-        id: "music_3186",
-        category: "Music",
-        question: "Which artist recorded 'Ain't That a Shame'?",
-        answers: ["The Everly Brothers", "Fats Domino", "Jerry Lee Lewis", "Bill Haley & His Comets"],
-        correctAnswer: "Fats Domino"
-    },
-    {
-        id: "music_3187",
-        category: "Music",
-        question: "Which artist recorded 'Great Balls of Fire'?",
-        answers: ["Jerry Lee Lewis", "The Everly Brothers", "Bill Haley & His Comets", "Eddie Cochran"],
-        correctAnswer: "Jerry Lee Lewis"
-    },
-    {
-        id: "music_3188",
-        category: "Music",
-        question: "Which artist recorded 'Whole Lotta Shakin' Goin' On'?",
-        answers: ["The Everly Brothers", "Bill Haley & His Comets", "Eddie Cochran", "Jerry Lee Lewis"],
-        correctAnswer: "Jerry Lee Lewis"
-    },
-    {
-        id: "music_3189",
-        category: "Music",
-        question: "Which artist recorded 'Wake Up Little Susie'?",
-        answers: ["Bill Haley & His Comets", "Eddie Cochran", "The Everly Brothers", "Gene Vincent"],
-        correctAnswer: "The Everly Brothers"
-    },
-    {
-        id: "music_3190",
-        category: "Music",
-        question: "Which artist recorded 'All I Have to Do Is Dream'?",
-        answers: ["Eddie Cochran", "The Everly Brothers", "Gene Vincent", "Bill Haley & His Comets"],
-        correctAnswer: "The Everly Brothers"
-    },
-    {
-        id: "music_3191",
-        category: "Music",
-        question: "Which artist recorded 'Bye Bye Love'?",
-        answers: ["The Everly Brothers", "Bill Haley & His Comets", "Eddie Cochran", "Gene Vincent"],
-        correctAnswer: "The Everly Brothers"
-    },
-    {
-        id: "music_3192",
-        category: "Music",
-        question: "Which artist recorded 'Rock Around the Clock'?",
-        answers: ["Eddie Cochran", "Gene Vincent", "Carl Perkins", "Bill Haley & His Comets"],
-        correctAnswer: "Bill Haley & His Comets"
-    },
-    {
-        id: "music_3193",
-        category: "Music",
-        question: "Which artist recorded 'Shake, Rattle and Roll'?",
-        answers: ["Gene Vincent", "Carl Perkins", "Bill Haley & His Comets", "Ricky Nelson"],
-        correctAnswer: "Bill Haley & His Comets"
-    },
-    {
-        id: "music_3194",
-        category: "Music",
-        question: "Which artist recorded 'See You Later, Alligator'?",
-        answers: ["Carl Perkins", "Bill Haley & His Comets", "Ricky Nelson", "Eddie Cochran"],
-        correctAnswer: "Bill Haley & His Comets"
-    },
-    {
-        id: "music_3195",
-        category: "Music",
-        question: "Which artist recorded 'Summertime Blues'?",
-        answers: ["Eddie Cochran", "Gene Vincent", "Carl Perkins", "Ricky Nelson"],
-        correctAnswer: "Eddie Cochran"
-    },
-    {
-        id: "music_3196",
-        category: "Music",
-        question: "Which artist recorded 'C'mon Everybody'?",
-        answers: ["Gene Vincent", "Carl Perkins", "Ricky Nelson", "Eddie Cochran"],
-        correctAnswer: "Eddie Cochran"
-    },
-    {
-        id: "music_3197",
-        category: "Music",
-        question: "Which artist recorded 'Somethin' Else'?",
-        answers: ["Carl Perkins", "Ricky Nelson", "Eddie Cochran", "Gene Vincent"],
-        correctAnswer: "Eddie Cochran"
-    },
-    {
-        id: "music_3198",
-        category: "Music",
-        question: "Which artist recorded 'Be-Bop-A-Lula'?",
-        answers: ["Ricky Nelson", "Gene Vincent", "Carl Perkins", "Paul Anka"],
-        correctAnswer: "Gene Vincent"
-    },
-    {
-        id: "music_3199",
-        category: "Music",
-        question: "Which artist recorded 'Bluejean Bop'?",
-        answers: ["Gene Vincent", "Carl Perkins", "Ricky Nelson", "Paul Anka"],
-        correctAnswer: "Gene Vincent"
-    },
-    {
-        id: "music_3200",
-        category: "Music",
-        question: "Which artist recorded 'Race with the Devil'?",
-        answers: ["Carl Perkins", "Ricky Nelson", "Paul Anka", "Gene Vincent"],
-        correctAnswer: "Gene Vincent"
-    },
-    {
-        id: "music_3201",
-        category: "Music",
-        question: "Which artist recorded 'Blue Suede Shoes'?",
-        answers: ["Ricky Nelson", "Paul Anka", "Carl Perkins", "The Platters"],
-        correctAnswer: "Carl Perkins"
-    },
-    {
-        id: "music_3202",
-        category: "Music",
-        question: "Which artist recorded 'Matchbox'?",
-        answers: ["Paul Anka", "Carl Perkins", "The Platters", "Ricky Nelson"],
-        correctAnswer: "Carl Perkins"
-    },
-    {
-        id: "music_3203",
-        category: "Music",
-        question: "Which artist recorded 'Boppin' the Blues'?",
-        answers: ["Carl Perkins", "Ricky Nelson", "Paul Anka", "The Platters"],
-        correctAnswer: "Carl Perkins"
-    },
-    {
-        id: "music_3204",
-        category: "Music",
-        question: "Which artist recorded 'Poor Little Fool'?",
-        answers: ["Paul Anka", "The Platters", "Frankie Lymon & The Teenagers", "Ricky Nelson"],
-        correctAnswer: "Ricky Nelson"
-    },
-    {
-        id: "music_3205",
-        category: "Music",
-        question: "Which artist recorded 'Lonesome Town'?",
-        answers: ["The Platters", "Frankie Lymon & The Teenagers", "Ricky Nelson", "Paul Anka"],
-        correctAnswer: "Ricky Nelson"
-    },
-    {
-        id: "music_3206",
-        category: "Music",
-        question: "Which artist recorded 'Diana'?",
-        answers: ["Frankie Lymon & The Teenagers", "Paul Anka", "The Platters", "Danny & the Juniors"],
-        correctAnswer: "Paul Anka"
-    },
-    {
-        id: "music_3207",
-        category: "Music",
-        question: "Which artist recorded 'Lonely Boy'?",
-        answers: ["Paul Anka", "The Platters", "Frankie Lymon & The Teenagers", "Danny & the Juniors"],
-        correctAnswer: "Paul Anka"
-    },
-    {
-        id: "music_3208",
-        category: "Music",
-        question: "Which artist recorded 'Put Your Head on My Shoulder'?",
-        answers: ["The Platters", "Frankie Lymon & The Teenagers", "Danny & the Juniors", "Paul Anka"],
-        correctAnswer: "Paul Anka"
-    },
-    {
-        id: "music_3209",
-        category: "Music",
-        question: "Which artist recorded 'Only You'?",
-        answers: ["Frankie Lymon & The Teenagers", "Danny & the Juniors", "The Platters", "The Big Bopper"],
-        correctAnswer: "The Platters"
-    },
-    {
-        id: "music_3210",
-        category: "Music",
-        question: "Which artist recorded 'The Great Pretender'?",
-        answers: ["Danny & the Juniors", "The Platters", "The Big Bopper", "Frankie Lymon & The Teenagers"],
-        correctAnswer: "The Platters"
-    },
-    {
-        id: "music_3211",
-        category: "Music",
-        question: "Which artist recorded 'Smoke Gets in Your Eyes'?",
-        answers: ["The Platters", "Frankie Lymon & The Teenagers", "Danny & the Juniors", "The Big Bopper"],
-        correctAnswer: "The Platters"
-    },
-    {
-        id: "music_3212",
-        category: "Music",
-        question: "Which artist recorded 'Why Do Fools Fall in Love'?",
-        answers: ["Danny & the Juniors", "The Big Bopper", "Ritchie Valens", "Frankie Lymon & The Teenagers"],
-        correctAnswer: "Frankie Lymon & The Teenagers"
-    },
-    {
-        id: "music_3213",
-        category: "Music",
-        question: "Which artist recorded 'At the Hop'?",
-        answers: ["The Big Bopper", "Ritchie Valens", "Danny & the Juniors", "Frank Sinatra"],
-        correctAnswer: "Danny & the Juniors"
-    },
-    {
-        id: "music_3214",
-        category: "Music",
-        question: "Which artist recorded 'Chantilly Lace'?",
-        answers: ["Ritchie Valens", "The Big Bopper", "Frank Sinatra", "Nat King Cole"],
-        correctAnswer: "The Big Bopper"
-    },
-    {
-        id: "music_3215",
-        category: "Music",
-        question: "Which artist recorded 'La Bamba'?",
-        answers: ["Ritchie Valens", "The Big Bopper", "Frank Sinatra", "Nat King Cole"],
-        correctAnswer: "Ritchie Valens"
-    },
-    {
-        id: "music_3216",
-        category: "Music",
-        question: "Which artist recorded 'A Teenager's Romance'?",
-        answers: ["Frank Sinatra", "Nat King Cole", "Dean Martin", "Ricky Nelson"],
-        correctAnswer: "Ricky Nelson"
-    },
-    {
-        id: "music_3217",
-        category: "Music",
-        question: "Which artist recorded 'Come Fly with Me'?",
-        answers: ["Nat King Cole", "Dean Martin", "Frank Sinatra", "Doris Day"],
-        correctAnswer: "Frank Sinatra"
-    },
-    {
-        id: "music_3218",
-        category: "Music",
-        question: "Which artist recorded 'Love and Marriage'?",
-        answers: ["Dean Martin", "Frank Sinatra", "Doris Day", "Nat King Cole"],
-        correctAnswer: "Frank Sinatra"
-    },
-    {
-        id: "music_3219",
-        category: "Music",
-        question: "Which artist recorded 'Three Coins in the Fountain'?",
-        answers: ["Frank Sinatra", "Nat King Cole", "Dean Martin", "Doris Day"],
-        correctAnswer: "Frank Sinatra"
-    },
-    {
-        id: "music_3220",
-        category: "Music",
-        question: "Which artist recorded 'Young at Heart'?",
-        answers: ["Nat King Cole", "Dean Martin", "Doris Day", "Frank Sinatra"],
-        correctAnswer: "Frank Sinatra"
-    },
-    {
-        id: "music_3221",
-        category: "Music",
-        question: "Which artist recorded 'Mona Lisa'?",
-        answers: ["Dean Martin", "Doris Day", "Nat King Cole", "Perry Como"],
-        correctAnswer: "Nat King Cole"
-    },
-    {
-        id: "music_3222",
-        category: "Music",
-        question: "Which artist recorded 'Unforgettable'?",
-        answers: ["Doris Day", "Nat King Cole", "Perry Como", "Dean Martin"],
-        correctAnswer: "Nat King Cole"
-    },
-    {
-        id: "music_3223",
-        category: "Music",
-        question: "Which artist recorded 'When I Fall in Love'?",
-        answers: ["Nat King Cole", "Dean Martin", "Doris Day", "Perry Como"],
-        correctAnswer: "Nat King Cole"
-    },
-    {
-        id: "music_3224",
-        category: "Music",
-        question: "Which artist recorded 'Too Young'?",
-        answers: ["Dean Martin", "Doris Day", "Perry Como", "Nat King Cole"],
-        correctAnswer: "Nat King Cole"
-    },
-    {
-        id: "music_3225",
-        category: "Music",
-        question: "Which artist recorded 'That's Amore'?",
-        answers: ["Doris Day", "Perry Como", "Dean Martin", "Peggy Lee"],
-        correctAnswer: "Dean Martin"
-    },
-    {
-        id: "music_3226",
-        category: "Music",
-        question: "Which artist recorded 'Memories Are Made of This'?",
-        answers: ["Perry Como", "Dean Martin", "Peggy Lee", "Doris Day"],
-        correctAnswer: "Dean Martin"
-    },
-    {
-        id: "music_3227",
-        category: "Music",
-        question: "Which artist recorded 'Volare'?",
-        answers: ["Dean Martin", "Doris Day", "Perry Como", "Peggy Lee"],
-        correctAnswer: "Dean Martin"
-    },
-    {
-        id: "music_3228",
-        category: "Music",
-        question: "Which artist recorded 'Que Sera, Sera'?",
-        answers: ["Perry Como", "Peggy Lee", "Rosemary Clooney", "Doris Day"],
-        correctAnswer: "Doris Day"
-    },
-    {
-        id: "music_3229",
-        category: "Music",
-        question: "Which artist recorded 'Secret Love'?",
-        answers: ["Peggy Lee", "Rosemary Clooney", "Doris Day", "Perry Como"],
-        correctAnswer: "Doris Day"
-    },
-    {
-        id: "music_3230",
-        category: "Music",
-        question: "Which artist recorded 'Magic Moments'?",
-        answers: ["Rosemary Clooney", "Perry Como", "Peggy Lee", "The Andrews Sisters"],
-        correctAnswer: "Perry Como"
-    },
-    {
-        id: "music_3231",
-        category: "Music",
-        question: "Which artist recorded 'Catch a Falling Star'?",
-        answers: ["Perry Como", "Peggy Lee", "Rosemary Clooney", "The Andrews Sisters"],
-        correctAnswer: "Perry Como"
-    },
-    {
-        id: "music_3232",
-        category: "Music",
-        question: "Which artist recorded 'Papa Loves Mambo'?",
-        answers: ["Peggy Lee", "Rosemary Clooney", "The Andrews Sisters", "Perry Como"],
-        correctAnswer: "Perry Como"
-    },
-    {
-        id: "music_3233",
-        category: "Music",
-        question: "Which artist recorded 'Fever'?",
-        answers: ["Rosemary Clooney", "The Andrews Sisters", "Peggy Lee", "Glenn Miller"],
-        correctAnswer: "Peggy Lee"
-    },
-    {
-        id: "music_3234",
-        category: "Music",
-        question: "Which artist recorded 'Why Don't You Do Right?'?",
-        answers: ["The Andrews Sisters", "Peggy Lee", "Glenn Miller", "Rosemary Clooney"],
-        correctAnswer: "Peggy Lee"
-    },
-    {
-        id: "music_3235",
-        category: "Music",
-        question: "Which artist recorded 'Mambo Italiano'?",
-        answers: ["Rosemary Clooney", "The Andrews Sisters", "Glenn Miller", "Bing Crosby"],
-        correctAnswer: "Rosemary Clooney"
-    },
-    {
-        id: "music_3236",
-        category: "Music",
-        question: "Which artist recorded 'This Ole House'?",
-        answers: ["The Andrews Sisters", "Glenn Miller", "Bing Crosby", "Rosemary Clooney"],
-        correctAnswer: "Rosemary Clooney"
-    },
-    {
-        id: "music_3237",
-        category: "Music",
-        question: "Which artist recorded 'Boogie Woogie Bugle Boy'?",
-        answers: ["Glenn Miller", "Bing Crosby", "The Andrews Sisters", "Vera Lynn"],
-        correctAnswer: "The Andrews Sisters"
-    },
-    {
-        id: "music_3238",
-        category: "Music",
-        question: "Which artist recorded 'In the Mood'?",
-        answers: ["Bing Crosby", "Glenn Miller", "Vera Lynn", "The Andrews Sisters"],
-        correctAnswer: "Glenn Miller"
-    },
-    {
-        id: "music_3239",
-        category: "Music",
-        question: "Which artist recorded 'Moonlight Serenade'?",
-        answers: ["Glenn Miller", "Bing Crosby", "Vera Lynn", "Édith Piaf"],
-        correctAnswer: "Glenn Miller"
-    },
-    {
-        id: "music_3240",
-        category: "Music",
-        question: "Which artist recorded 'White Christmas'?",
-        answers: ["Vera Lynn", "Édith Piaf", "Bobby Darin", "Bing Crosby"],
-        correctAnswer: "Bing Crosby"
-    },
-    {
-        id: "music_3241",
-        category: "Music",
-        question: "Which artist recorded 'Swinging on a Star'?",
-        answers: ["Édith Piaf", "Bobby Darin", "Bing Crosby", "Vera Lynn"],
-        correctAnswer: "Bing Crosby"
-    },
-    {
-        id: "music_3242",
-        category: "Music",
-        question: "Which artist recorded 'Don't Fence Me In'?",
-        answers: ["Bobby Darin", "Bing Crosby", "Vera Lynn", "Édith Piaf"],
-        correctAnswer: "Bing Crosby"
-    },
-    {
-        id: "music_3243",
-        category: "Music",
-        question: "Which artist recorded 'We'll Meet Again'?",
-        answers: ["Vera Lynn", "Édith Piaf", "Bobby Darin", "Connie Francis"],
-        correctAnswer: "Vera Lynn"
-    },
-    {
-        id: "music_3244",
-        category: "Music",
-        question: "Which artist recorded 'The White Cliffs of Dover'?",
-        answers: ["Édith Piaf", "Bobby Darin", "Connie Francis", "Vera Lynn"],
-        correctAnswer: "Vera Lynn"
-    },
-    {
-        id: "music_3245",
-        category: "Music",
-        question: "Which artist recorded 'La Vie en rose'?",
-        answers: ["Bobby Darin", "Connie Francis", "Édith Piaf", "The Chordettes"],
-        correctAnswer: "Édith Piaf"
-    },
-    {
-        id: "music_3246",
-        category: "Music",
-        question: "Which artist recorded 'Mack the Knife'?",
-        answers: ["Connie Francis", "Bobby Darin", "The Chordettes", "The Coasters"],
-        correctAnswer: "Bobby Darin"
-    },
-    {
-        id: "music_3247",
-        category: "Music",
-        question: "Which artist recorded 'Dream Lover'?",
-        answers: ["Bobby Darin", "Connie Francis", "The Chordettes", "The Coasters"],
-        correctAnswer: "Bobby Darin"
-    },
-    {
-        id: "music_3248",
-        category: "Music",
-        question: "Which artist recorded 'Splish Splash'?",
-        answers: ["Connie Francis", "The Chordettes", "The Coasters", "Bobby Darin"],
-        correctAnswer: "Bobby Darin"
-    },
-    {
-        id: "music_3249",
-        category: "Music",
-        question: "Which artist recorded 'Who's Sorry Now'?",
-        answers: ["The Chordettes", "The Coasters", "Connie Francis", "The Drifters"],
-        correctAnswer: "Connie Francis"
-    },
-    {
-        id: "music_3250",
-        category: "Music",
-        question: "Which artist recorded 'Stupid Cupid'?",
-        answers: ["The Coasters", "Connie Francis", "The Drifters", "The Chordettes"],
-        correctAnswer: "Connie Francis"
-    },
-    {
-        id: "music_3251",
-        category: "Music",
-        question: "Which artist recorded 'Lipstick on Your Collar'?",
-        answers: ["Connie Francis", "The Chordettes", "The Coasters", "The Drifters"],
-        correctAnswer: "Connie Francis"
-    },
-    {
-        id: "music_3252",
-        category: "Music",
-        question: "Which artist recorded 'Mr. Sandman'?",
-        answers: ["The Coasters", "The Drifters", "Johnny Cash", "The Chordettes"],
-        correctAnswer: "The Chordettes"
-    },
-    {
-        id: "music_3253",
-        category: "Music",
-        question: "Which artist recorded 'Lollipop'?",
-        answers: ["The Drifters", "Johnny Cash", "The Chordettes", "The Coasters"],
-        correctAnswer: "The Chordettes"
-    },
-    {
-        id: "music_3254",
-        category: "Music",
-        question: "Which artist recorded 'Yakety Yak'?",
-        answers: ["Johnny Cash", "The Coasters", "The Drifters", "Ray Charles"],
-        correctAnswer: "The Coasters"
-    },
-    {
-        id: "music_3255",
-        category: "Music",
-        question: "Which artist recorded 'Charlie Brown'?",
-        answers: ["The Coasters", "The Drifters", "Johnny Cash", "Ray Charles"],
-        correctAnswer: "The Coasters"
-    },
-    {
-        id: "music_3256",
-        category: "Music",
-        question: "Which artist recorded 'Poison Ivy'?",
-        answers: ["The Drifters", "Johnny Cash", "Ray Charles", "The Coasters"],
-        correctAnswer: "The Coasters"
-    },
-    {
-        id: "music_3257",
-        category: "Music",
-        question: "Which artist recorded 'There Goes My Baby'?",
-        answers: ["Johnny Cash", "Ray Charles", "The Chords", "The Drifters"],
-        correctAnswer: "The Drifters"
-    },
-    {
-        id: "music_3258",
-        category: "Music",
-        question: "Which artist recorded 'I Walk the Line'?",
-        answers: ["Ray Charles", "The Chords", "Johnny Cash", "The Penguins"],
-        correctAnswer: "Johnny Cash"
-    },
-    {
-        id: "music_3259",
-        category: "Music",
-        question: "Which artist recorded 'Folsom Prison Blues'?",
-        answers: ["The Chords", "Johnny Cash", "The Penguins", "Ray Charles"],
-        correctAnswer: "Johnny Cash"
-    },
-    {
-        id: "music_3260",
-        category: "Music",
-        question: "Which artist recorded 'Big River'?",
-        answers: ["Johnny Cash", "Ray Charles", "The Chords", "The Penguins"],
-        correctAnswer: "Johnny Cash"
-    },
-    {
-        id: "music_3261",
-        category: "Music",
-        question: "Which artist recorded 'What'd I Say'?",
-        answers: ["The Chords", "The Penguins", "The Champs", "Ray Charles"],
-        correctAnswer: "Ray Charles"
-    },
-    {
-        id: "music_3262",
-        category: "Music",
-        question: "Which artist recorded 'I Got a Woman'?",
-        answers: ["The Penguins", "The Champs", "Ray Charles", "Johnny Cash"],
-        correctAnswer: "Ray Charles"
-    },
-    {
-        id: "music_3263",
-        category: "Music",
-        question: "Which artist recorded 'Hallelujah I Love Her So'?",
-        answers: ["The Champs", "Ray Charles", "Johnny Cash", "The Chords"],
-        correctAnswer: "Ray Charles"
-    },
-    {
-        id: "music_3264",
-        category: "Music",
-        question: "Which group recorded 'Sh-Boom'?",
-        answers: ["The Chords", "The Penguins", "The Champs", "The Coasters"],
-        correctAnswer: "The Chords"
-    },
-    {
-        id: "music_3265",
-        category: "Music",
-        question: "Which group recorded 'Earth Angel'?",
-        answers: ["The Penguins", "The Champs", "The Chords", "The Platters"],
-        correctAnswer: "The Penguins"
-    },
-    {
-        id: "music_3266",
-        category: "Music",
-        question: "Which group recorded 'Tequila'?",
-        answers: ["The Chords", "The Penguins", "The Champs", "The Coasters"],
-        correctAnswer: "The Champs"
-    }
+    makeQuestion("music_3167", "Which artist recorded 'Heartbreak Hotel'?", ["Elvis Presley","Buddy Holly","Chuck Berry","Little Richard"], "Elvis Presley", "1950s", "Easy"),
+    makeQuestion("music_3168", "Which artist recorded 'Hound Dog'?", ["Buddy Holly","Chuck Berry","Little Richard","Elvis Presley"], "Elvis Presley", "1950s", "Easy"),
+    makeQuestion("music_3169", "Which artist recorded 'All Shook Up'?", ["Chuck Berry","Little Richard","Elvis Presley","Buddy Holly"], "Elvis Presley", "1950s", "Easy"),
+    makeQuestion("music_3170", "Which artist recorded 'Jailhouse Rock'?", ["Little Richard","Elvis Presley","Buddy Holly","Chuck Berry"], "Elvis Presley", "1950s", "Easy"),
+    makeQuestion("music_3171", "Which artist recorded 'Don't Be Cruel'?", ["Elvis Presley","Buddy Holly","Chuck Berry","Little Richard"], "Elvis Presley", "1950s", "Medium"),
+    makeQuestion("music_3172", "Which artist recorded 'Peggy Sue'?", ["Chuck Berry","Little Richard","Fats Domino","Buddy Holly"], "Buddy Holly", "1950s", "Easy"),
+    makeQuestion("music_3173", "Which artist recorded 'That'll Be the Day'?", ["Little Richard","Fats Domino","Buddy Holly","Chuck Berry"], "Buddy Holly", "1950s", "Easy"),
+    makeQuestion("music_3174", "Which artist recorded 'Rave On'?", ["Fats Domino","Buddy Holly","Chuck Berry","Little Richard"], "Buddy Holly", "1950s", "Medium"),
+    makeQuestion("music_3175", "Which artist recorded 'Oh, Boy!'?", ["Buddy Holly","Chuck Berry","Little Richard","Fats Domino"], "Buddy Holly", "1950s", "Medium"),
+    makeQuestion("music_3176", "Which artist recorded 'Maybe Baby'?", ["Chuck Berry","Little Richard","Fats Domino","Buddy Holly"], "Buddy Holly", "1950s", "Medium"),
+    makeQuestion("music_3177", "Which artist recorded 'Johnny B. Goode'?", ["Fats Domino","Jerry Lee Lewis","Chuck Berry","Little Richard"], "Chuck Berry", "1950s", "Easy"),
+    makeQuestion("music_3178", "Which artist recorded 'Maybellene'?", ["Jerry Lee Lewis","Chuck Berry","Little Richard","Fats Domino"], "Chuck Berry", "1950s", "Medium"),
+    makeQuestion("music_3179", "Which artist recorded 'Roll Over Beethoven'?", ["Chuck Berry","Little Richard","Fats Domino","Jerry Lee Lewis"], "Chuck Berry", "1950s", "Easy"),
+    makeQuestion("music_3180", "Which artist recorded 'Sweet Little Sixteen'?", ["Little Richard","Fats Domino","Jerry Lee Lewis","Chuck Berry"], "Chuck Berry", "1950s", "Medium"),
+    makeQuestion("music_3181", "Which artist recorded 'Rock and Roll Music'?", ["Fats Domino","Jerry Lee Lewis","Chuck Berry","Little Richard"], "Chuck Berry", "1950s", "Medium"),
+    makeQuestion("music_3182", "Which artist recorded 'Tutti Frutti'?", ["The Everly Brothers","Little Richard","Fats Domino","Jerry Lee Lewis"], "Little Richard", "1950s", "Easy"),
+    makeQuestion("music_3183", "Which artist recorded 'Long Tall Sally'?", ["Little Richard","Fats Domino","Jerry Lee Lewis","The Everly Brothers"], "Little Richard", "1950s", "Easy"),
+    makeQuestion("music_3184", "Which artist recorded 'Good Golly, Miss Molly'?", ["Fats Domino","Jerry Lee Lewis","The Everly Brothers","Little Richard"], "Little Richard", "1950s", "Easy"),
+    makeQuestion("music_3185", "Which artist recorded 'Blueberry Hill'?", ["Jerry Lee Lewis","The Everly Brothers","Fats Domino","Bill Haley & His Comets"], "Fats Domino", "1950s", "Easy"),
+    makeQuestion("music_3186", "Which artist recorded 'Ain't That a Shame'?", ["The Everly Brothers","Fats Domino","Jerry Lee Lewis","Bill Haley & His Comets"], "Fats Domino", "1950s", "Easy"),
+    makeQuestion("music_3187", "Which artist recorded 'Great Balls of Fire'?", ["Jerry Lee Lewis","The Everly Brothers","Bill Haley & His Comets","Eddie Cochran"], "Jerry Lee Lewis", "1950s", "Easy"),
+    makeQuestion("music_3188", "Which artist recorded 'Whole Lotta Shakin' Goin' On'?", ["The Everly Brothers","Bill Haley & His Comets","Eddie Cochran","Jerry Lee Lewis"], "Jerry Lee Lewis", "1950s", "Easy"),
+    makeQuestion("music_3189", "Which artist recorded 'Wake Up Little Susie'?", ["Bill Haley & His Comets","Eddie Cochran","The Everly Brothers","Gene Vincent"], "The Everly Brothers", "1950s", "Easy"),
+    makeQuestion("music_3190", "Which artist recorded 'All I Have to Do Is Dream'?", ["Eddie Cochran","The Everly Brothers","Gene Vincent","Bill Haley & His Comets"], "The Everly Brothers", "1950s", "Easy"),
+    makeQuestion("music_3191", "Which artist recorded 'Bye Bye Love'?", ["The Everly Brothers","Bill Haley & His Comets","Eddie Cochran","Gene Vincent"], "The Everly Brothers", "1950s", "Easy"),
+    makeQuestion("music_3192", "Which artist recorded 'Rock Around the Clock'?", ["Eddie Cochran","Gene Vincent","Carl Perkins","Bill Haley & His Comets"], "Bill Haley & His Comets", "1950s", "Easy"),
+    makeQuestion("music_3193", "Which artist recorded 'Shake, Rattle and Roll'?", ["Gene Vincent","Carl Perkins","Bill Haley & His Comets","Ricky Nelson"], "Bill Haley & His Comets", "1950s", "Medium"),
+    makeQuestion("music_3194", "Which artist recorded 'See You Later, Alligator'?", ["Carl Perkins","Bill Haley & His Comets","Ricky Nelson","Eddie Cochran"], "Bill Haley & His Comets", "1950s", "Medium"),
+    makeQuestion("music_3195", "Which artist recorded 'Summertime Blues'?", ["Eddie Cochran","Gene Vincent","Carl Perkins","Ricky Nelson"], "Eddie Cochran", "1950s", "Easy"),
+    makeQuestion("music_3196", "Which artist recorded 'C'mon Everybody'?", ["Gene Vincent","Carl Perkins","Ricky Nelson","Eddie Cochran"], "Eddie Cochran", "1950s", "Medium"),
+    makeQuestion("music_3197", "Which artist recorded 'Somethin' Else'?", ["Carl Perkins","Ricky Nelson","Eddie Cochran","Gene Vincent"], "Eddie Cochran", "1950s", "Medium"),
+    makeQuestion("music_3198", "Which artist recorded 'Be-Bop-A-Lula'?", ["Ricky Nelson","Gene Vincent","Carl Perkins","Paul Anka"], "Gene Vincent", "1950s", "Easy"),
+    makeQuestion("music_3199", "Which artist recorded 'Bluejean Bop'?", ["Gene Vincent","Carl Perkins","Ricky Nelson","Paul Anka"], "Gene Vincent", "1950s", "Hard"),
+    makeQuestion("music_3200", "Which artist recorded 'Race with the Devil'?", ["Carl Perkins","Ricky Nelson","Paul Anka","Gene Vincent"], "Gene Vincent", "1950s", "Hard"),
+    makeQuestion("music_3201", "Which artist recorded 'Blue Suede Shoes'?", ["Ricky Nelson","Paul Anka","Carl Perkins","The Platters"], "Carl Perkins", "1950s", "Easy"),
+    makeQuestion("music_3202", "Which artist recorded 'Matchbox'?", ["Paul Anka","Carl Perkins","The Platters","Ricky Nelson"], "Carl Perkins", "1950s", "Hard"),
+    makeQuestion("music_3203", "Which artist recorded 'Boppin' the Blues'?", ["Carl Perkins","Ricky Nelson","Paul Anka","The Platters"], "Carl Perkins", "1950s", "Hard"),
+    makeQuestion("music_3204", "Which artist recorded 'Poor Little Fool'?", ["Paul Anka","The Platters","Frankie Lymon & The Teenagers","Ricky Nelson"], "Ricky Nelson", "1950s", "Medium"),
+    makeQuestion("music_3205", "Which artist recorded 'Lonesome Town'?", ["The Platters","Frankie Lymon & The Teenagers","Ricky Nelson","Paul Anka"], "Ricky Nelson", "1950s", "Medium"),
+    makeQuestion("music_3206", "Which artist recorded 'Diana'?", ["Frankie Lymon & The Teenagers","Paul Anka","The Platters","Danny & the Juniors"], "Paul Anka", "1950s", "Easy"),
+    makeQuestion("music_3207", "Which artist recorded 'Lonely Boy'?", ["Paul Anka","The Platters","Frankie Lymon & The Teenagers","Danny & the Juniors"], "Paul Anka", "1950s", "Medium"),
+    makeQuestion("music_3208", "Which artist recorded 'Put Your Head on My Shoulder'?", ["The Platters","Frankie Lymon & The Teenagers","Danny & the Juniors","Paul Anka"], "Paul Anka", "1950s", "Easy"),
+    makeQuestion("music_3209", "Which artist recorded 'Only You'?", ["Frankie Lymon & The Teenagers","Danny & the Juniors","The Platters","The Big Bopper"], "The Platters", "1950s", "Easy"),
+    makeQuestion("music_3210", "Which artist recorded 'The Great Pretender'?", ["Danny & the Juniors","The Platters","The Big Bopper","Frankie Lymon & The Teenagers"], "The Platters", "1950s", "Medium"),
+    makeQuestion("music_3211", "Which artist recorded 'Smoke Gets in Your Eyes'?", ["The Platters","Frankie Lymon & The Teenagers","Danny & the Juniors","The Big Bopper"], "The Platters", "1950s", "Medium"),
+    makeQuestion("music_3212", "Which artist recorded 'Why Do Fools Fall in Love'?", ["Danny & the Juniors","The Big Bopper","Ritchie Valens","Frankie Lymon & The Teenagers"], "Frankie Lymon & The Teenagers", "1950s", "Easy"),
+    makeQuestion("music_3213", "Which artist recorded 'At the Hop'?", ["The Big Bopper","Ritchie Valens","Danny & the Juniors","Frank Sinatra"], "Danny & the Juniors", "1950s", "Easy"),
+    makeQuestion("music_3214", "Which artist recorded 'Chantilly Lace'?", ["Ritchie Valens","The Big Bopper","Frank Sinatra","Nat King Cole"], "The Big Bopper", "1950s", "Medium"),
+    makeQuestion("music_3215", "Which artist recorded 'La Bamba'?", ["Ritchie Valens","The Big Bopper","Frank Sinatra","Nat King Cole"], "Ritchie Valens", "1950s", "Easy"),
+    makeQuestion("music_3216", "Which artist recorded 'A Teenager's Romance'?", ["Frank Sinatra","Nat King Cole","Dean Martin","Ricky Nelson"], "Ricky Nelson", "1950s", "Hard"),
+    makeQuestion("music_3217", "Which artist recorded 'Come Fly with Me'?", ["Nat King Cole","Dean Martin","Frank Sinatra","Doris Day"], "Frank Sinatra", "1950s", "Easy"),
+    makeQuestion("music_3218", "Which artist recorded 'Love and Marriage'?", ["Dean Martin","Frank Sinatra","Doris Day","Nat King Cole"], "Frank Sinatra", "1950s", "Medium"),
+    makeQuestion("music_3219", "Who sang 'Three Coins in the Fountain' over the opening credits of the film?", ["Frank Sinatra","Nat King Cole","Dean Martin","Doris Day"], "Frank Sinatra", "1950s", "Medium"),
+    makeQuestion("music_3220", "Which singer starred alongside Doris Day in the film 'Young at Heart'?", ["Nat King Cole","Dean Martin","Bing Crosby","Frank Sinatra"], "Frank Sinatra", "1950s", "Medium"),
+    makeQuestion("music_3221", "Which artist recorded 'Mona Lisa'?", ["Dean Martin","Doris Day","Nat King Cole","Perry Como"], "Nat King Cole", "1950s", "Easy"),
+    makeQuestion("music_3222", "Which artist recorded 'Unforgettable'?", ["Doris Day","Nat King Cole","Perry Como","Dean Martin"], "Nat King Cole", "1950s", "Easy"),
+    makeQuestion("music_3223", "Which singer took 'When I Fall in Love' to number two in the UK charts?", ["Nat King Cole","Dean Martin","Doris Day","Perry Como"], "Nat King Cole", "1950s", "Easy"),
+    makeQuestion("music_3224", "Which artist recorded 'Too Young'?", ["Dean Martin","Doris Day","Perry Como","Nat King Cole"], "Nat King Cole", "1950s", "Medium"),
+    makeQuestion("music_3225", "Which artist recorded 'That's Amore'?", ["Doris Day","Perry Como","Dean Martin","Peggy Lee"], "Dean Martin", "1950s", "Easy"),
+    makeQuestion("music_3226", "Which artist recorded 'Memories Are Made of This'?", ["Perry Como","Dean Martin","Peggy Lee","Doris Day"], "Dean Martin", "1950s", "Medium"),
+    makeQuestion("music_3227", "Which artist recorded 'Volare'?", ["Dean Martin","Doris Day","Perry Como","Peggy Lee"], "Dean Martin", "1950s", "Easy"),
+    makeQuestion("music_3228", "Which artist recorded 'Que Sera, Sera'?", ["Perry Como","Peggy Lee","Rosemary Clooney","Doris Day"], "Doris Day", "1950s", "Easy"),
+    makeQuestion("music_3229", "Which artist recorded 'Secret Love'?", ["Peggy Lee","Rosemary Clooney","Doris Day","Perry Como"], "Doris Day", "1950s", "Medium"),
+    makeQuestion("music_3230", "Which artist recorded 'Magic Moments'?", ["Rosemary Clooney","Perry Como","Peggy Lee","The Andrews Sisters"], "Perry Como", "1950s", "Medium"),
+    makeQuestion("music_3231", "Which artist recorded 'Catch a Falling Star'?", ["Perry Como","Peggy Lee","Rosemary Clooney","The Andrews Sisters"], "Perry Como", "1950s", "Hard"),
+    makeQuestion("music_3232", "Which artist recorded 'Papa Loves Mambo'?", ["Peggy Lee","Rosemary Clooney","The Andrews Sisters","Perry Como"], "Perry Como", "1950s", "Easy"),
+    makeQuestion("music_3233", "Which artist recorded 'Fever'?", ["Rosemary Clooney","The Andrews Sisters","Peggy Lee","Glenn Miller"], "Peggy Lee", "1950s", "Hard"),
+    makeQuestion("music_3234", "Which artist recorded 'Why Don't You Do Right?'?", ["The Andrews Sisters","Peggy Lee","Glenn Miller","Rosemary Clooney"], "Peggy Lee", "1940s", "Medium"),
+    makeQuestion("music_3235", "Which artist recorded 'Mambo Italiano'?", ["Rosemary Clooney","The Andrews Sisters","Glenn Miller","Bing Crosby"], "Rosemary Clooney", "1950s", "Medium"),
+    makeQuestion("music_3236", "Who took 'This Ole House' to number one in the UK charts?", ["The Andrews Sisters","Glenn Miller","Bing Crosby","Rosemary Clooney"], "Rosemary Clooney", "1950s", "Medium"),
+    makeQuestion("music_3237", "Which artist recorded 'Boogie Woogie Bugle Boy'?", ["Glenn Miller","Bing Crosby","The Andrews Sisters","Vera Lynn"], "The Andrews Sisters", "1940s", "Easy"),
+    makeQuestion("music_3238", "Which artist recorded 'In the Mood'?", ["Bing Crosby","Glenn Miller","Vera Lynn","The Andrews Sisters"], "Glenn Miller", "1930s", "Medium"),
+    makeQuestion("music_3239", "Which artist recorded 'Moonlight Serenade'?", ["Glenn Miller","Bing Crosby","Vera Lynn","Édith Piaf"], "Glenn Miller", "1930s", "Medium"),
+    makeQuestion("music_3240", "Which artist recorded 'White Christmas'?", ["Vera Lynn","Édith Piaf","Bobby Darin","Bing Crosby"], "Bing Crosby", "1940s", "Easy"),
+    makeQuestion("music_3241", "Which artist recorded 'Swinging on a Star'?", ["Édith Piaf","Bobby Darin","Bing Crosby","Vera Lynn"], "Bing Crosby", "1940s", "Medium"),
+    makeQuestion("music_3242", "Which artist recorded 'Don't Fence Me In'?", ["Bobby Darin","Bing Crosby","Vera Lynn","Édith Piaf"], "Bing Crosby", "1940s", "Medium"),
+    makeQuestion("music_3243", "Which artist recorded 'We'll Meet Again'?", ["Vera Lynn","Édith Piaf","Bobby Darin","Connie Francis"], "Vera Lynn", "1930s", "Medium"),
+    makeQuestion("music_3244", "Which artist recorded 'The White Cliffs of Dover'?", ["Édith Piaf","Bobby Darin","Connie Francis","Vera Lynn"], "Vera Lynn", "1940s", "Medium"),
+    makeQuestion("music_3245", "Which artist recorded 'La Vie en rose'?", ["Bobby Darin","Connie Francis","Édith Piaf","The Chordettes"], "Édith Piaf", "1940s", "Easy"),
+    makeQuestion("music_3246", "Which artist recorded 'Mack the Knife'?", ["Connie Francis","Bobby Darin","The Chordettes","The Coasters"], "Bobby Darin", "1950s", "Medium"),
+    makeQuestion("music_3247", "Which artist recorded 'Dream Lover'?", ["Bobby Darin","Connie Francis","The Chordettes","The Coasters"], "Bobby Darin", "1950s", "Medium"),
+    makeQuestion("music_3248", "Which artist recorded 'Splish Splash'?", ["Connie Francis","The Chordettes","The Coasters","Bobby Darin"], "Bobby Darin", "1950s", "Easy"),
+    makeQuestion("music_3249", "Which artist recorded 'Who's Sorry Now'?", ["The Chordettes","The Coasters","Connie Francis","The Drifters"], "Connie Francis", "1950s", "Easy"),
+    makeQuestion("music_3250", "Which artist recorded 'Stupid Cupid'?", ["The Coasters","Connie Francis","The Drifters","The Chordettes"], "Connie Francis", "1950s", "Medium"),
+    makeQuestion("music_3251", "Which artist recorded 'Lipstick on Your Collar'?", ["Connie Francis","The Chordettes","The Coasters","The Drifters"], "Connie Francis", "1950s", "Medium"),
+    makeQuestion("music_3252", "Which artist recorded 'Mr. Sandman'?", ["The Coasters","The Drifters","Johnny Cash","The Chordettes"], "The Chordettes", "1950s", "Medium"),
+    makeQuestion("music_3253", "Which artist recorded 'Lollipop'?", ["The Drifters","Johnny Cash","The Chordettes","The Coasters"], "The Chordettes", "1950s", "Medium"),
+    makeQuestion("music_3254", "Which artist recorded 'Yakety Yak'?", ["Johnny Cash","The Coasters","The Drifters","Ray Charles"], "The Coasters", "1950s", "Medium"),
+    makeQuestion("music_3255", "Which artist recorded 'Charlie Brown'?", ["The Coasters","The Drifters","Johnny Cash","Ray Charles"], "The Coasters", "1950s", "Medium"),
+    makeQuestion("music_3256", "Which artist recorded 'Poison Ivy'?", ["The Drifters","Johnny Cash","Ray Charles","The Coasters"], "The Coasters", "1950s", "Medium"),
+    makeQuestion("music_3257", "Which artist recorded 'There Goes My Baby'?", ["Johnny Cash","Ray Charles","The Chords","The Drifters"], "The Drifters", "1950s", "Hard"),
+    makeQuestion("music_3258", "Which artist recorded 'I Walk the Line'?", ["Ray Charles","The Chords","Johnny Cash","The Penguins"], "Johnny Cash", "1950s", "Easy"),
+    makeQuestion("music_3259", "Which artist recorded 'Folsom Prison Blues'?", ["The Chords","Johnny Cash","The Penguins","Ray Charles"], "Johnny Cash", "1950s", "Easy"),
+    makeQuestion("music_3260", "Which artist recorded 'Big River'?", ["Johnny Cash","Ray Charles","The Chords","The Penguins"], "Johnny Cash", "1950s", "Hard"),
+    makeQuestion("music_3261", "Which artist recorded 'What'd I Say'?", ["The Chords","The Penguins","The Champs","Ray Charles"], "Ray Charles", "1950s", "Easy"),
+    makeQuestion("music_3262", "Which artist recorded 'I Got a Woman'?", ["The Penguins","The Champs","Ray Charles","Johnny Cash"], "Ray Charles", "1950s", "Medium"),
+    makeQuestion("music_3263", "Which artist recorded 'Hallelujah I Love Her So'?", ["The Champs","Ray Charles","Johnny Cash","The Chords"], "Ray Charles", "1950s", "Medium"),
+    makeQuestion("music_3264", "Which group recorded 'Sh-Boom'?", ["The Chords","The Penguins","The Champs","The Coasters"], "The Chords", "1950s", "Hard"),
+    makeQuestion("music_3265", "Which group recorded 'Earth Angel'?", ["The Penguins","The Champs","The Chords","The Platters"], "The Penguins", "1950s", "Medium"),
+    makeQuestion("music_3266", "Which group recorded 'Tequila'?", ["The Chords","The Penguins","The Champs","The Coasters"], "The Champs", "1950s", "Medium")
 ];
 
 module.exports = quizPack51;
