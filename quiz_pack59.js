@@ -1,828 +1,278 @@
 // quiz_pack59.js
-// PuzzlePilot Big Quiz
-// Music Pack 59
-// 100 questions
-// IDs: music_3967 - music_4066
+// PuzzlePilot Bigggggg Quiz - Music Pack 59
+// 100 questions, IDs music_3967 to music_4066.
+// All 100 questions receive full metadata at runtime.
+
+const artistTags = {
+    "The Pointer Sisters": ["pop", "soul", "rhythm and blues", "american", "girl groups", "sibling groups", "june pointer", "ruth pointer", "anita pointer"],
+    "Commodores": ["funk", "soul", "rhythm and blues", "american", "bands", "motown", "lionel richie", "walter orange"],
+    "Kool & the Gang": ["funk", "soul", "disco", "american", "bands", "james jt taylor", "robert kool bell"],
+    "The Brothers Johnson": ["funk", "disco", "soul", "american", "duos", "sibling groups", "george johnson", "louis johnson"],
+    "George Benson": ["jazz", "jazz-funk", "soul", "rhythm and blues", "american", "male singers", "solo artists", "guitarists"],
+    "Luther Vandross": ["soul", "rhythm and blues", "quiet storm", "american", "male singers", "solo artists", "singer-songwriters"],
+    "Anita Baker": ["soul", "rhythm and blues", "quiet storm", "american", "female singers", "solo artists"],
+    "Chaka Khan": ["funk", "soul", "rhythm and blues", "american", "female singers", "solo artists", "rufus"],
+    "Patrice Rushen": ["funk", "rhythm and blues", "post-disco", "american", "female singers", "solo artists", "keyboard players"],
+    "Mary Jane Girls": ["funk", "rhythm and blues", "american", "girl groups", "rick james"],
+    "Jocelyn Brown": ["soul", "disco", "rhythm and blues", "american", "female singers", "solo artists"],
+    "Womack & Womack": ["soul", "rhythm and blues", "american", "duos", "husband and wife duos", "cecil womack", "linda womack"],
+    "Ashford & Simpson": ["soul", "rhythm and blues", "american", "duos", "songwriters", "nickolas ashford", "valerie simpson"],
+    "Jody Watley": ["dance-pop", "rhythm and blues", "new jack swing", "american", "female singers", "solo artists", "shalamar"],
+    "Stephanie Mills": ["soul", "rhythm and blues", "disco", "american", "female singers", "solo artists", "the wiz musical"],
+    "Lionel Richie": ["pop soul", "soft rock", "rhythm and blues", "american", "male singers", "solo artists", "commodores", "songwriters"],
+    "Billy Ocean": ["pop soul", "rhythm and blues", "british", "male singers", "solo artists", "caribbean-born"],
+    "Debbie Gibson": ["pop", "dance-pop", "american", "female singers", "solo artists", "singer-songwriters", "keyboard players"],
+    "Martika": ["pop", "dance-pop", "american", "female singers", "solo artists"],
+    "Exposé": ["freestyle", "dance-pop", "american", "girl groups", "jeanette jurado", "ann curless", "gioia bruno"],
+    "Debbie Harry": ["new wave", "pop rock", "american", "female singers", "solo artists", "blondie"],
+    "Kim Carnes": ["pop rock", "soft rock", "american", "female singers", "solo artists", "singer-songwriters"],
+    "Sheena Easton": ["pop", "dance-pop", "scottish", "british", "female singers", "solo artists"],
+    "Laura Branigan": ["pop rock", "pop", "american", "female singers", "solo artists", "power ballads"],
+    "Taylor Dayne": ["dance-pop", "pop", "american", "female singers", "solo artists", "power ballads"],
+    "Tiffany": ["pop", "teen pop", "american", "female singers", "solo artists"],
+    "Samantha Fox": ["dance-pop", "pop", "british", "female singers", "solo artists", "stock aitken waterman"],
+    "Sinitta": ["dance-pop", "pop", "british", "female singers", "solo artists", "stock aitken waterman"],
+    "Mel & Kim": ["dance-pop", "british", "duos", "sibling groups", "mel appleby", "kim appleby", "stock aitken waterman"],
+    "Five Star": ["pop", "rhythm and blues", "british", "sibling groups", "bands", "pearson family"],
+    "David Grant and Jaki Graham": ["pop soul", "british", "duets", "male and female duets", "cover versions"],
+    "Jaki Graham": ["pop soul", "rhythm and blues", "british", "female singers", "solo artists"],
+    "Terence Trent D'Arby": ["soul", "funk", "rhythm and blues", "american", "male singers", "solo artists", "singer-songwriters", "sananda maitreya"],
+    "Johnny Hates Jazz": ["sophisti-pop", "new wave", "pop", "british", "bands", "clark datchler"],
+    "Curiosity Killed the Cat": ["sophisti-pop", "pop soul", "british", "bands", "ben volpeliere-pierrot"],
+    "Wet Wet Wet": ["pop soul", "soft rock", "scottish", "british", "bands", "marti pellow"],
+    "Bros": ["teen pop", "dance-pop", "british", "bands", "matt goss", "luke goss", "craig logan"],
+    "The Christians": ["pop soul", "soul", "british", "bands", "liverpool", "garry christian"],
+};
+
+const recordingTags = {
+    "music_3967": [1984, "break out album", "1983 album tracks", "1984 singles", "dance-pop"],
+    "music_3968": [1984, "break out album", "1983 album tracks", "1984 singles", "beverly hills cop soundtrack", "film songs"],
+    "music_3969": [1981, "in the pocket album", "1981 singles", "lionel richie lead vocals", "ballads"],
+    "music_3970": [1985, "nightshift album", "1985 singles", "album title tracks", "marvin gaye tribute", "jackie wilson tribute"],
+    "music_3971": [1981, "something special album", "1981 singles", "1982 uk chart success", "funk"],
+    "music_3972": [1983, "in the heart album", "1983 singles", "soul ballads"],
+    "music_3973": [1984, "emergency album", "1984 singles", "1985 chart success", "funk"],
+    "music_3974": [1980, "light up the night album", "1980 singles", "quincy jones production", "funk"],
+    "music_3975": [1980, "give me the night album", "1980 singles", "quincy jones production", "rod temperton songwriter", "jazz-funk"],
+    "music_3976": [1981, "the george benson collection album", "1981 singles", "jay graydon production", "steve lukather co-writer", "bill champlin co-writer"],
+    "music_3977": [1986, "give me the reason album", "1986 singles", "dance soul"],
+    "music_3978": [1986, "give me the reason album", "1986 singles", "ruthless people soundtrack", "film songs", "album title tracks"],
+    "music_3979": [1986, "give me the reason album", "1986 singles", "ballads", "dionne warwick original"],
+    "music_3980": [1986, "rapture album", "1986 singles", "soul ballads"],
+    "music_3981": [1986, "rapture album", "1986 singles", "quiet storm"],
+    "music_3982": [1988, "giving you the best that i got album", "1988 singles", "album title tracks", "soul ballads"],
+    "music_3983": [1984, "i feel for you album", "1984 singles", "prince songwriter", "prince original", "melle mel rap", "stevie wonder harmonica", "cover versions"],
+    "music_3984": [1982, "straight from the heart album", "1982 singles", "funk", "men in black sample"],
+    "music_3985": [1983, "mary jane girls album", "1983 singles", "rick james production", "funk"],
+    "music_3986": [1984, "somebody elses guy album", "1984 singles", "album title tracks", "disco"],
+    "music_3987": [1983, "love wars album", "1983 singles", "album title tracks", "soul"],
+    "music_3988": [1988, "conscience album", "1988 singles", "soul", "uk chart hits"],
+    "music_3989": [1984, "solid album", "1984 singles", "album title tracks", "1985 chart success", "soul"],
+    "music_3990": [1987, "jody watley debut album", "1987 singles", "dance-pop"],
+    "music_3991": [1989, "larger than life album", "1989 singles", "dance-pop"],
+    "music_3992": [1989, "larger than life album", "1989 singles", "eric b and rakim guest appearance", "hip hop crossover"],
+    "music_3993": [1980, "sweet sensation album", "1980 singles", "james mtume songwriter", "reggie lucas songwriter", "disco"],
+    "music_3994": [1984, "ive got the cure album", "1984 singles", "dance music"],
+    "music_3995": [1986, "dancing on the ceiling album", "1986 singles", "soft rock"],
+    "music_3996": [1986, "dancing on the ceiling album", "1986 singles", "1987 chart success", "ballads"],
+    "music_3997": [1986, "love zone album", "1986 singles", "album title tracks", "soul"],
+    "music_3998": [1988, "tear down these walls album", "1988 singles", "soul pop"],
+    "music_3999": [1987, "out of the blue album", "1987 singles", "teen pop"],
+    "music_4000": [1988, "out of the blue album", "1987 album tracks", "1988 singles", "us number one singles", "self written hits"],
+    "music_4001": [1989, "electric youth album", "1989 singles", "us number one singles", "pop ballads"],
+    "music_4002": [1989, "martika debut album", "1988 album tracks", "1989 singles", "us number one singles", "teen pop"],
+    "music_4003": [1987, "exposure album", "1984 original recording", "1985 earlier single", "1987 rerecording", "1987 singles", "freestyle"],
+    "music_4004": [1987, "exposure album", "1987 singles", "1988 us number one singles", "pop ballads"],
+    "music_4005": [1987, "exposure album", "1987 singles", "freestyle"],
+    "music_4006": [1986, "rockbird album", "1986 singles", "pop rock"],
+    "music_4007": [1987, "rockbird album", "1986 album tracks", "1987 singles", "dance-pop"],
+    "music_4008": [1989, "def dumb and blonde album", "1989 singles", "pop rock"],
+    "music_4009": [1980, "romance dance album", "1980 singles", "smokey robinson original", "cover versions"],
+    "music_4010": [1981, "mistaken identity album", "1981 singles", "new wave"],
+    "music_4011": [1982, "voyeur album", "1982 singles", "album title tracks", "pop rock"],
+    "music_4012": [1985, "barking at airplanes album", "1985 singles", "pop rock"],
+    "music_4013": [1980, "take my time album", "1980 singles", "1981 reissue", "pop"],
+    "music_4014": [1980, "take my time album", "1980 uk singles", "1981 us singles", "nine to five uk title", "morning train us title"],
+    "music_4015": [1981, "for your eyes only film", "1981 singles", "james bond theme songs", "film songs"],
+    "music_4016": [1983, "best kept secret album", "1983 singles", "dance-pop"],
+    "music_4017": [1984, "a private heaven album", "1984 singles", "dance-pop"],
+    "music_4018": [1984, "a private heaven album", "1984 singles", "prince songwriter", "alexander nevermind pseudonym"],
+    "music_4019": [1983, "branigan 2 album", "1983 singles", "michael bolton songwriter", "ballads"],
+    "music_4020": [1987, "touch album", "1987 singles", "jennifer rush original", "cover versions", "power ballads"],
+    "music_4021": [1987, "tell it to my heart album", "1987 singles", "1988 album release", "dance-pop"],
+    "music_4022": [1988, "tell it to my heart album", "1988 singles", "ballads"],
+    "music_4023": [1988, "tell it to my heart album", "1988 singles", "dance-pop"],
+    "music_4024": [1989, "cant fight fate album", "1989 singles", "1990 chart success", "dance-pop"],
+    "music_4025": [1988, "tiffany debut album", "1987 album tracks", "1988 singles", "beatles cover versions"],
+    "music_4026": [1988, "hold an old friends hand album", "1988 singles", "ballads"],
+    "music_4027": [1989, "hold an old friends hand album", "1989 singles", "teen pop"],
+    "music_4028": [1986, "touch me album", "1986 singles", "album title tracks", "dance-pop"],
+    "music_4029": [1986, "touch me album", "1986 singles", "dance-pop"],
+    "music_4030": [1987, "samantha fox album", "1987 singles", "stock aitken waterman production"],
+    "music_4031": [1987, "samantha fox album", "1987 singles", "dance-pop"],
+    "music_4032": [1985, "so macho first release", "1986 uk hit", "dance-pop"],
+    "music_4033": [1986, "flm album", "1986 singles", "1987 album release", "stock aitken waterman production"],
+    "music_4034": [1987, "flm album", "1987 singles", "1987 uk number one singles", "stock aitken waterman production"],
+    "music_4035": [1987, "flm album", "1987 singles", "album title tracks"],
+    "music_4036": [1988, "1988 singles", "stock aitken waterman production", "dance-pop"],
+    "music_4037": [1986, "silk and steel album", "1986 singles", "rhythm and blues"],
+    "music_4038": [1987, "silk and steel album", "1987 singles", "sibling pop"],
+    "music_4039": [1987, "silk and steel album", "1987 singles", "dance-pop"],
+    "music_4040": [1985, "1985 singles", "the spinners original", "cover versions", "duets"],
+    "music_4041": [1986, "breaking away album", "1986 singles", "album title tracks", "dance-pop"],
+    "music_4042": [1987, "introducing the hardline album", "1987 singles", "soul"],
+    "music_4043": [1987, "introducing the hardline album", "1987 singles", "funk"],
+    "music_4044": [1987, "introducing the hardline album", "1987 uk singles", "1988 us chart success", "soul ballads"],
+    "music_4045": [1987, "introducing the hardline album", "1987 album tracks", "1988 remix single", "funk rock"],
+    "music_4046": [1987, "turn back the clock album", "1987 singles", "1988 album release", "antiwar songs"],
+    "music_4047": [1987, "turn back the clock album", "1987 singles", "1988 album release", "album title tracks"],
+    "music_4048": [1988, "turn back the clock album", "1988 singles", "sophisti-pop"],
+    "music_4049": [1987, "keep your distance album", "1987 singles", "sophisti-pop"],
+    "music_4050": [1986, "keep your distance album", "1986 original singles", "1987 rerelease", "andy warhol video"],
+    "music_4051": [1989, "getahead album", "1989 singles", "pop soul"],
+    "music_4052": [1987, "popped in souled out album", "1987 singles", "debut singles"],
+    "music_4053": [1987, "popped in souled out album", "1987 singles", "pop soul"],
+    "music_4054": [1987, "popped in souled out album", "1987 singles", "pop ballads"],
+    "music_4055": [1988, "popped in souled out album", "1987 album tracks", "1988 singles", "pop soul"],
+    "music_4056": [1988, "1988 charity single", "1988 uk number one singles", "the beatles original", "cover versions", "charity records"],
+    "music_4057": [1987, "push album", "1987 original single", "1988 rerelease", "teen pop"],
+    "music_4058": [1988, "push album", "1988 singles", "teen pop"],
+    "music_4059": [1987, "push album", "1987 original single", "1988 rerelease", "1988 uk number one singles"],
+    "music_4060": [1988, "push album", "1988 singles", "teen pop"],
+    "music_4061": [1989, "the time album", "1989 singles", "dance-pop"],
+    "music_4062": [1987, "the christians debut album", "1987 singles", "soul pop"],
+    "music_4063": [1987, "the christians debut album", "1987 singles", "soul pop"],
+    "music_4064": [1987, "the christians debut album", "1987 singles", "soul pop"],
+    "music_4065": [1987, "the christians debut album", "1987 singles", "soul pop"],
+    "music_4066": [1988, "1988 singles", "the isley brothers original", "cover versions", "soul"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const detail = recordingTags[id];
+    if (!artist || !detail) throw new Error(`Missing metadata for ${id}`);
+    const song = question.match(/'(.+)'/);
+    if (!song) throw new Error(`Missing song title for ${id}`);
+
+    const year = detail[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", "songs", "recordings", decade, `${decade} music`,
+            `${year} releases`, song[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...artist, ...detail.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack59 = [
-
-    // THE POINTER SISTERS
-
-    {
-        id: "music_3967",
-        category: "Music",
-        question: "Which group recorded 'Jump (For My Love)'?",
-        answers: ["The Pointer Sisters", "Sister Sledge", "The Three Degrees", "The Weather Girls"],
-        correctAnswer: "The Pointer Sisters"
-    },
-    {
-        id: "music_3968",
-        category: "Music",
-        question: "Which group recorded 'Neutron Dance'?",
-        answers: ["The Pointer Sisters", "Sister Sledge", "The Three Degrees", "The Weather Girls"],
-        correctAnswer: "The Pointer Sisters"
-    },
-
-    // COMMODORES
-
-    {
-        id: "music_3969",
-        category: "Music",
-        question: "Which group recorded 'Oh No'?",
-        answers: ["Commodores", "Kool & the Gang", "Earth, Wind & Fire", "The Whispers"],
-        correctAnswer: "Commodores"
-    },
-    {
-        id: "music_3970",
-        category: "Music",
-        question: "Which group recorded 'Nightshift'?",
-        answers: ["Commodores", "Kool & the Gang", "Earth, Wind & Fire", "The Whispers"],
-        correctAnswer: "Commodores"
-    },
-
-    // KOOL & THE GANG
-
-    {
-        id: "music_3971",
-        category: "Music",
-        question: "Which group recorded 'Get Down on It'?",
-        answers: ["Kool & the Gang", "Commodores", "Earth, Wind & Fire", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_3972",
-        category: "Music",
-        question: "Which group recorded 'Joanna'?",
-        answers: ["Kool & the Gang", "Commodores", "Earth, Wind & Fire", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_3973",
-        category: "Music",
-        question: "Which group recorded 'Fresh'?",
-        answers: ["Kool & the Gang", "Commodores", "Earth, Wind & Fire", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-
-    // THE BROTHERS JOHNSON
-
-    {
-        id: "music_3974",
-        category: "Music",
-        question: "Which group recorded 'Stomp!'?",
-        answers: ["The Brothers Johnson", "Kool & the Gang", "The Whispers", "Shalamar"],
-        correctAnswer: "The Brothers Johnson"
-    },
-
-    // GEORGE BENSON
-
-    {
-        id: "music_3975",
-        category: "Music",
-        question: "Which artist recorded 'Give Me the Night'?",
-        answers: ["George Benson", "Luther Vandross", "Billy Ocean", "Lionel Richie"],
-        correctAnswer: "George Benson"
-    },
-    {
-        id: "music_3976",
-        category: "Music",
-        question: "Which artist recorded 'Turn Your Love Around'?",
-        answers: ["George Benson", "Luther Vandross", "Billy Ocean", "Lionel Richie"],
-        correctAnswer: "George Benson"
-    },
-
-    // LUTHER VANDROSS
-
-    {
-        id: "music_3977",
-        category: "Music",
-        question: "Which artist recorded 'Stop to Love'?",
-        answers: ["Luther Vandross", "George Benson", "Alexander O'Neal", "Billy Ocean"],
-        correctAnswer: "Luther Vandross"
-    },
-    {
-        id: "music_3978",
-        category: "Music",
-        question: "Which artist recorded 'Give Me the Reason'?",
-        answers: ["Luther Vandross", "George Benson", "Alexander O'Neal", "Billy Ocean"],
-        correctAnswer: "Luther Vandross"
-    },
-    {
-        id: "music_3979",
-        category: "Music",
-        question: "Which artist recorded 'So Amazing'?",
-        answers: ["Luther Vandross", "George Benson", "Alexander O'Neal", "Billy Ocean"],
-        correctAnswer: "Luther Vandross"
-    },
-
-    // ANITA BAKER
-
-    {
-        id: "music_3980",
-        category: "Music",
-        question: "Which artist recorded 'Sweet Love'?",
-        answers: ["Anita Baker", "Chaka Khan", "Stephanie Mills", "Jody Watley"],
-        correctAnswer: "Anita Baker"
-    },
-    {
-        id: "music_3981",
-        category: "Music",
-        question: "Which artist recorded 'Caught Up in the Rapture'?",
-        answers: ["Anita Baker", "Chaka Khan", "Stephanie Mills", "Jody Watley"],
-        correctAnswer: "Anita Baker"
-    },
-    {
-        id: "music_3982",
-        category: "Music",
-        question: "Which artist recorded 'Giving You the Best That I Got'?",
-        answers: ["Anita Baker", "Chaka Khan", "Stephanie Mills", "Jody Watley"],
-        correctAnswer: "Anita Baker"
-    },
-
-    // CHAKA KHAN
-
-    {
-        id: "music_3983",
-        category: "Music",
-        question: "Which artist recorded 'I Feel for You'?",
-        answers: ["Chaka Khan", "Anita Baker", "Stephanie Mills", "Jody Watley"],
-        correctAnswer: "Chaka Khan"
-    },
-
-    // PATRICE RUSHEN
-
-    {
-        id: "music_3984",
-        category: "Music",
-        question: "Which artist recorded 'Forget Me Nots'?",
-        answers: ["Patrice Rushen", "Chaka Khan", "Evelyn King", "Jody Watley"],
-        correctAnswer: "Patrice Rushen"
-    },
-
-    // MARY JANE GIRLS
-
-    {
-        id: "music_3985",
-        category: "Music",
-        question: "Which group recorded 'All Night Long'?",
-        answers: ["Mary Jane Girls", "The Pointer Sisters", "Sister Sledge", "The Jets"],
-        correctAnswer: "Mary Jane Girls"
-    },
-
-    // JOCELYN BROWN
-
-    {
-        id: "music_3986",
-        category: "Music",
-        question: "Which artist recorded 'Somebody Else's Guy'?",
-        answers: ["Jocelyn Brown", "Chaka Khan", "Evelyn King", "Patrice Rushen"],
-        correctAnswer: "Jocelyn Brown"
-    },
-
-    // WOMACK & WOMACK
-
-    {
-        id: "music_3987",
-        category: "Music",
-        question: "Which duo recorded 'Love Wars'?",
-        answers: ["Womack & Womack", "Ashford & Simpson", "Mel & Kim", "Pepsi & Shirlie"],
-        correctAnswer: "Womack & Womack"
-    },
-    {
-        id: "music_3988",
-        category: "Music",
-        question: "Which duo recorded 'Teardrops'?",
-        answers: ["Womack & Womack", "Ashford & Simpson", "Mel & Kim", "Pepsi & Shirlie"],
-        correctAnswer: "Womack & Womack"
-    },
-
-    // ASHFORD & SIMPSON
-
-    {
-        id: "music_3989",
-        category: "Music",
-        question: "Which duo recorded 'Solid'?",
-        answers: ["Ashford & Simpson", "Womack & Womack", "Mel & Kim", "Pepsi & Shirlie"],
-        correctAnswer: "Ashford & Simpson"
-    },
-
-    // JODY WATLEY
-
-    {
-        id: "music_3990",
-        category: "Music",
-        question: "Which artist recorded 'Looking for a New Love'?",
-        answers: ["Jody Watley", "Taylor Dayne", "Anita Baker", "Stephanie Mills"],
-        correctAnswer: "Jody Watley"
-    },
-    {
-        id: "music_3991",
-        category: "Music",
-        question: "Which artist recorded 'Real Love'?",
-        answers: ["Jody Watley", "Taylor Dayne", "Anita Baker", "Stephanie Mills"],
-        correctAnswer: "Jody Watley"
-    },
-    {
-        id: "music_3992",
-        category: "Music",
-        question: "Which artist recorded 'Friends'?",
-        answers: ["Jody Watley", "Taylor Dayne", "Anita Baker", "Stephanie Mills"],
-        correctAnswer: "Jody Watley"
-    },
-
-    // STEPHANIE MILLS
-
-    {
-        id: "music_3993",
-        category: "Music",
-        question: "Which artist recorded 'Never Knew Love Like This'?",
-        answers: ["Stephanie Mills", "Jody Watley", "Anita Baker", "Chaka Khan"],
-        correctAnswer: "Stephanie Mills"
-    },
-    {
-        id: "music_3994",
-        category: "Music",
-        question: "Which artist recorded 'Medicine Song'?",
-        answers: ["Stephanie Mills", "Jody Watley", "Anita Baker", "Chaka Khan"],
-        correctAnswer: "Stephanie Mills"
-    },
-
-    // LIONEL RICHIE
-
-    {
-        id: "music_3995",
-        category: "Music",
-        question: "Which artist recorded 'Love Will Conquer All'?",
-        answers: ["Lionel Richie", "Billy Ocean", "George Benson", "Luther Vandross"],
-        correctAnswer: "Lionel Richie"
-    },
-    {
-        id: "music_3996",
-        category: "Music",
-        question: "Which artist recorded 'Ballerina Girl'?",
-        answers: ["Lionel Richie", "Billy Ocean", "George Benson", "Luther Vandross"],
-        correctAnswer: "Lionel Richie"
-    },
-
-    // BILLY OCEAN
-
-    {
-        id: "music_3997",
-        category: "Music",
-        question: "Which artist recorded 'Love Zone'?",
-        answers: ["Billy Ocean", "Lionel Richie", "George Benson", "Luther Vandross"],
-        correctAnswer: "Billy Ocean"
-    },
-    {
-        id: "music_3998",
-        category: "Music",
-        question: "Which artist recorded 'Colour of Love'?",
-        answers: ["Billy Ocean", "Lionel Richie", "George Benson", "Luther Vandross"],
-        correctAnswer: "Billy Ocean"
-    },
-
-    // DEBBIE GIBSON
-
-    {
-        id: "music_3999",
-        category: "Music",
-        question: "Which artist recorded 'Shake Your Love'?",
-        answers: ["Debbie Gibson", "Tiffany", "Martika", "Taylor Dayne"],
-        correctAnswer: "Debbie Gibson"
-    },
-
-    // MUSIC QUESTION 4000
-
-    {
-        id: "music_4000",
-        category: "Music",
-        question: "Which artist recorded 'Foolish Beat'?",
-        answers: ["Debbie Gibson", "Tiffany", "Martika", "Taylor Dayne"],
-        correctAnswer: "Debbie Gibson"
-    },
-    {
-        id: "music_4001",
-        category: "Music",
-        question: "Which artist recorded 'Lost in Your Eyes'?",
-        answers: ["Debbie Gibson", "Tiffany", "Martika", "Taylor Dayne"],
-        correctAnswer: "Debbie Gibson"
-    },
-
-    // MARTIKA
-
-    {
-        id: "music_4002",
-        category: "Music",
-        question: "Which artist recorded 'Toy Soldiers'?",
-        answers: ["Martika", "Debbie Gibson", "Tiffany", "Taylor Dayne"],
-        correctAnswer: "Martika"
-    },
-
-    // EXPOSÉ
-
-    {
-        id: "music_4003",
-        category: "Music",
-        question: "Which group recorded 'Point of No Return'?",
-        answers: ["Exposé", "Bananarama", "The Jets", "Five Star"],
-        correctAnswer: "Exposé"
-    },
-    {
-        id: "music_4004",
-        category: "Music",
-        question: "Which group recorded 'Seasons Change'?",
-        answers: ["Exposé", "Bananarama", "The Jets", "Five Star"],
-        correctAnswer: "Exposé"
-    },
-    {
-        id: "music_4005",
-        category: "Music",
-        question: "Which group recorded 'Come Go with Me'?",
-        answers: ["Exposé", "Bananarama", "The Jets", "Five Star"],
-        correctAnswer: "Exposé"
-    },
-
-    // DEBBIE HARRY
-
-    {
-        id: "music_4006",
-        category: "Music",
-        question: "Which artist recorded 'French Kissin' in the USA'?",
-        answers: ["Debbie Harry", "Kim Wilde", "Belinda Carlisle", "Cyndi Lauper"],
-        correctAnswer: "Debbie Harry"
-    },
-    {
-        id: "music_4007",
-        category: "Music",
-        question: "Which artist recorded 'In Love with Love'?",
-        answers: ["Debbie Harry", "Kim Wilde", "Belinda Carlisle", "Cyndi Lauper"],
-        correctAnswer: "Debbie Harry"
-    },
-    {
-        id: "music_4008",
-        category: "Music",
-        question: "Which artist recorded 'I Want That Man'?",
-        answers: ["Debbie Harry", "Kim Wilde", "Belinda Carlisle", "Cyndi Lauper"],
-        correctAnswer: "Debbie Harry"
-    },
-
-    // KIM CARNES
-
-    {
-        id: "music_4009",
-        category: "Music",
-        question: "Which artist recorded 'More Love'?",
-        answers: ["Kim Carnes", "Laura Branigan", "Sheena Easton", "Pat Benatar"],
-        correctAnswer: "Kim Carnes"
-    },
-    {
-        id: "music_4010",
-        category: "Music",
-        question: "Which artist recorded 'Draw of the Cards'?",
-        answers: ["Kim Carnes", "Laura Branigan", "Sheena Easton", "Pat Benatar"],
-        correctAnswer: "Kim Carnes"
-    },
-    {
-        id: "music_4011",
-        category: "Music",
-        question: "Which artist recorded 'Voyeur'?",
-        answers: ["Kim Carnes", "Laura Branigan", "Sheena Easton", "Pat Benatar"],
-        correctAnswer: "Kim Carnes"
-    },
-    {
-        id: "music_4012",
-        category: "Music",
-        question: "Which artist recorded 'Crazy in the Night (Barking at Airplanes)'?",
-        answers: ["Kim Carnes", "Laura Branigan", "Sheena Easton", "Pat Benatar"],
-        correctAnswer: "Kim Carnes"
-    },
-
-    // SHEENA EASTON
-
-    {
-        id: "music_4013",
-        category: "Music",
-        question: "Which artist recorded 'Modern Girl'?",
-        answers: ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"],
-        correctAnswer: "Sheena Easton"
-    },
-    {
-        id: "music_4014",
-        category: "Music",
-        question: "Which artist recorded 'Morning Train (Nine to Five)'?",
-        answers: ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"],
-        correctAnswer: "Sheena Easton"
-    },
-    {
-        id: "music_4015",
-        category: "Music",
-        question: "Which artist recorded 'For Your Eyes Only'?",
-        answers: ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"],
-        correctAnswer: "Sheena Easton"
-    },
-    {
-        id: "music_4016",
-        category: "Music",
-        question: "Which artist recorded 'Telefone (Long Distance Love Affair)'?",
-        answers: ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"],
-        correctAnswer: "Sheena Easton"
-    },
-    {
-        id: "music_4017",
-        category: "Music",
-        question: "Which artist recorded 'Strut'?",
-        answers: ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"],
-        correctAnswer: "Sheena Easton"
-    },
-    {
-        id: "music_4018",
-        category: "Music",
-        question: "Which artist recorded 'Sugar Walls'?",
-        answers: ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"],
-        correctAnswer: "Sheena Easton"
-    },
-
-    // LAURA BRANIGAN
-
-    {
-        id: "music_4019",
-        category: "Music",
-        question: "Which artist recorded 'How Am I Supposed to Live Without You'?",
-        answers: ["Laura Branigan", "Sheena Easton", "Kim Carnes", "Taylor Dayne"],
-        correctAnswer: "Laura Branigan"
-    },
-    {
-        id: "music_4020",
-        category: "Music",
-        question: "Which artist recorded 'Power of Love'?",
-        answers: ["Laura Branigan", "Sheena Easton", "Kim Carnes", "Taylor Dayne"],
-        correctAnswer: "Laura Branigan"
-    },
-
-    // TAYLOR DAYNE
-
-    {
-        id: "music_4021",
-        category: "Music",
-        question: "Which artist recorded 'Tell It to My Heart'?",
-        answers: ["Taylor Dayne", "Debbie Gibson", "Tiffany", "Martika"],
-        correctAnswer: "Taylor Dayne"
-    },
-    {
-        id: "music_4022",
-        category: "Music",
-        question: "Which artist recorded 'I'll Always Love You'?",
-        answers: ["Taylor Dayne", "Debbie Gibson", "Tiffany", "Martika"],
-        correctAnswer: "Taylor Dayne"
-    },
-    {
-        id: "music_4023",
-        category: "Music",
-        question: "Which artist recorded 'Don't Rush Me'?",
-        answers: ["Taylor Dayne", "Debbie Gibson", "Tiffany", "Martika"],
-        correctAnswer: "Taylor Dayne"
-    },
-    {
-        id: "music_4024",
-        category: "Music",
-        question: "Which artist recorded 'With Every Beat of My Heart'?",
-        answers: ["Taylor Dayne", "Debbie Gibson", "Tiffany", "Martika"],
-        correctAnswer: "Taylor Dayne"
-    },
-
-    // TIFFANY
-
-    {
-        id: "music_4025",
-        category: "Music",
-        question: "Which artist recorded 'I Saw Him Standing There'?",
-        answers: ["Tiffany", "Debbie Gibson", "Martika", "Taylor Dayne"],
-        correctAnswer: "Tiffany"
-    },
-    {
-        id: "music_4026",
-        category: "Music",
-        question: "Which artist recorded 'All This Time'?",
-        answers: ["Tiffany", "Debbie Gibson", "Martika", "Taylor Dayne"],
-        correctAnswer: "Tiffany"
-    },
-    {
-        id: "music_4027",
-        category: "Music",
-        question: "Which artist recorded 'Radio Romance'?",
-        answers: ["Tiffany", "Debbie Gibson", "Martika", "Taylor Dayne"],
-        correctAnswer: "Tiffany"
-    },
-
-    // SAMANTHA FOX
-
-    {
-        id: "music_4028",
-        category: "Music",
-        question: "Which artist recorded 'Touch Me (I Want Your Body)'?",
-        answers: ["Samantha Fox", "Sinitta", "Kim Wilde", "Sheena Easton"],
-        correctAnswer: "Samantha Fox"
-    },
-    {
-        id: "music_4029",
-        category: "Music",
-        question: "Which artist recorded 'Do Ya Do Ya (Wanna Please Me)'?",
-        answers: ["Samantha Fox", "Sinitta", "Kim Wilde", "Sheena Easton"],
-        correctAnswer: "Samantha Fox"
-    },
-    {
-        id: "music_4030",
-        category: "Music",
-        question: "Which artist recorded 'Nothing's Gonna Stop Me Now'?",
-        answers: ["Samantha Fox", "Sinitta", "Kim Wilde", "Sheena Easton"],
-        correctAnswer: "Samantha Fox"
-    },
-    {
-        id: "music_4031",
-        category: "Music",
-        question: "Which artist recorded 'I Surrender (To the Spirit of the Night)'?",
-        answers: ["Samantha Fox", "Sinitta", "Kim Wilde", "Sheena Easton"],
-        correctAnswer: "Samantha Fox"
-    },
-
-    // SINITTA
-
-    {
-        id: "music_4032",
-        category: "Music",
-        question: "Which artist recorded 'So Macho'?",
-        answers: ["Sinitta", "Samantha Fox", "Hazell Dean", "Sonia"],
-        correctAnswer: "Sinitta"
-    },
-
-    // MEL & KIM
-
-    {
-        id: "music_4033",
-        category: "Music",
-        question: "Which duo recorded 'Showing Out (Get Fresh at the Weekend)'?",
-        answers: ["Mel & Kim", "Pepsi & Shirlie", "Dollar", "Womack & Womack"],
-        correctAnswer: "Mel & Kim"
-    },
-    {
-        id: "music_4034",
-        category: "Music",
-        question: "Which duo recorded 'Respectable'?",
-        answers: ["Mel & Kim", "Pepsi & Shirlie", "Dollar", "Womack & Womack"],
-        correctAnswer: "Mel & Kim"
-    },
-    {
-        id: "music_4035",
-        category: "Music",
-        question: "Which duo recorded 'F.L.M.'?",
-        answers: ["Mel & Kim", "Pepsi & Shirlie", "Dollar", "Womack & Womack"],
-        correctAnswer: "Mel & Kim"
-    },
-    {
-        id: "music_4036",
-        category: "Music",
-        question: "Which duo recorded 'That's the Way It Is'?",
-        answers: ["Mel & Kim", "Pepsi & Shirlie", "Dollar", "Womack & Womack"],
-        correctAnswer: "Mel & Kim"
-    },
-
-    // FIVE STAR
-
-    {
-        id: "music_4037",
-        category: "Music",
-        question: "Which group recorded 'Can't Wait Another Minute'?",
-        answers: ["Five Star", "The Jets", "Loose Ends", "Shalamar"],
-        correctAnswer: "Five Star"
-    },
-    {
-        id: "music_4038",
-        category: "Music",
-        question: "Which group recorded 'Stay Out of My Life'?",
-        answers: ["Five Star", "The Jets", "Loose Ends", "Shalamar"],
-        correctAnswer: "Five Star"
-    },
-    {
-        id: "music_4039",
-        category: "Music",
-        question: "Which group recorded 'The Slightest Touch'?",
-        answers: ["Five Star", "The Jets", "Loose Ends", "Shalamar"],
-        correctAnswer: "Five Star"
-    },
-
-    // DAVID GRANT AND JAKI GRAHAM
-
-    {
-        id: "music_4040",
-        category: "Music",
-        question: "Which duo recorded 'Could It Be I'm Falling in Love'?",
-        answers: ["David Grant and Jaki Graham", "Womack & Womack", "Ashford & Simpson", "Pepsi & Shirlie"],
-        correctAnswer: "David Grant and Jaki Graham"
-    },
-
-    // JAKI GRAHAM
-
-    {
-        id: "music_4041",
-        category: "Music",
-        question: "Which artist recorded 'Breaking Away'?",
-        answers: ["Jaki Graham", "Jocelyn Brown", "Mica Paris", "Ruby Turner"],
-        correctAnswer: "Jaki Graham"
-    },
-
-    // TERENCE TRENT D'ARBY
-
-    {
-        id: "music_4042",
-        category: "Music",
-        question: "Which artist recorded 'If You Let Me Stay'?",
-        answers: ["Terence Trent D'Arby", "Alexander O'Neal", "Billy Ocean", "Jermaine Stewart"],
-        correctAnswer: "Terence Trent D'Arby"
-    },
-    {
-        id: "music_4043",
-        category: "Music",
-        question: "Which artist recorded 'Dance Little Sister'?",
-        answers: ["Terence Trent D'Arby", "Alexander O'Neal", "Billy Ocean", "Jermaine Stewart"],
-        correctAnswer: "Terence Trent D'Arby"
-    },
-    {
-        id: "music_4044",
-        category: "Music",
-        question: "Which artist recorded 'Sign Your Name'?",
-        answers: ["Terence Trent D'Arby", "Alexander O'Neal", "Billy Ocean", "Jermaine Stewart"],
-        correctAnswer: "Terence Trent D'Arby"
-    },
-    {
-        id: "music_4045",
-        category: "Music",
-        question: "Which artist recorded 'Rain'?",
-        answers: ["Terence Trent D'Arby", "Alexander O'Neal", "Billy Ocean", "Jermaine Stewart"],
-        correctAnswer: "Terence Trent D'Arby"
-    },
-
-    // JOHNNY HATES JAZZ
-
-    {
-        id: "music_4046",
-        category: "Music",
-        question: "Which group recorded 'I Don't Want to Be a Hero'?",
-        answers: ["Johnny Hates Jazz", "Curiosity Killed the Cat", "Living in a Box", "The Christians"],
-        correctAnswer: "Johnny Hates Jazz"
-    },
-    {
-        id: "music_4047",
-        category: "Music",
-        question: "Which group recorded 'Turn Back the Clock'?",
-        answers: ["Johnny Hates Jazz", "Curiosity Killed the Cat", "Living in a Box", "The Christians"],
-        correctAnswer: "Johnny Hates Jazz"
-    },
-    {
-        id: "music_4048",
-        category: "Music",
-        question: "Which group recorded 'Heart of Gold'?",
-        answers: ["Johnny Hates Jazz", "Curiosity Killed the Cat", "Living in a Box", "The Christians"],
-        correctAnswer: "Johnny Hates Jazz"
-    },
-
-    // CURIOSITY KILLED THE CAT
-
-    {
-        id: "music_4049",
-        category: "Music",
-        question: "Which group recorded 'Ordinary Day'?",
-        answers: ["Curiosity Killed the Cat", "Johnny Hates Jazz", "Living in a Box", "The Blow Monkeys"],
-        correctAnswer: "Curiosity Killed the Cat"
-    },
-    {
-        id: "music_4050",
-        category: "Music",
-        question: "Which group recorded 'Misfit'?",
-        answers: ["Curiosity Killed the Cat", "Johnny Hates Jazz", "Living in a Box", "The Blow Monkeys"],
-        correctAnswer: "Curiosity Killed the Cat"
-    },
-    {
-        id: "music_4051",
-        category: "Music",
-        question: "Which group recorded 'Name and Number'?",
-        answers: ["Curiosity Killed the Cat", "Johnny Hates Jazz", "Living in a Box", "The Blow Monkeys"],
-        correctAnswer: "Curiosity Killed the Cat"
-    },
-
-    // WET WET WET
-
-    {
-        id: "music_4052",
-        category: "Music",
-        question: "Which group recorded 'Wishing I Was Lucky'?",
-        answers: ["Wet Wet Wet", "Deacon Blue", "Hue and Cry", "Danny Wilson"],
-        correctAnswer: "Wet Wet Wet"
-    },
-    {
-        id: "music_4053",
-        category: "Music",
-        question: "Which group recorded 'Sweet Little Mystery'?",
-        answers: ["Wet Wet Wet", "Deacon Blue", "Hue and Cry", "Danny Wilson"],
-        correctAnswer: "Wet Wet Wet"
-    },
-    {
-        id: "music_4054",
-        category: "Music",
-        question: "Which group recorded 'Angel Eyes (Home and Away)'?",
-        answers: ["Wet Wet Wet", "Deacon Blue", "Hue and Cry", "Danny Wilson"],
-        correctAnswer: "Wet Wet Wet"
-    },
-    {
-        id: "music_4055",
-        category: "Music",
-        question: "Which group recorded 'Temptation'?",
-        answers: ["Wet Wet Wet", "Deacon Blue", "Hue and Cry", "Danny Wilson"],
-        correctAnswer: "Wet Wet Wet"
-    },
-    {
-        id: "music_4056",
-        category: "Music",
-        question: "Which group recorded 'With a Little Help from My Friends'?",
-        answers: ["Wet Wet Wet", "Deacon Blue", "Hue and Cry", "Danny Wilson"],
-        correctAnswer: "Wet Wet Wet"
-    },
-
-    // BROS
-
-    {
-        id: "music_4057",
-        category: "Music",
-        question: "Which group recorded 'When Will I Be Famous?'?",
-        answers: ["Bros", "Brother Beyond", "Curiosity Killed the Cat", "Johnny Hates Jazz"],
-        correctAnswer: "Bros"
-    },
-    {
-        id: "music_4058",
-        category: "Music",
-        question: "Which group recorded 'Drop the Boy'?",
-        answers: ["Bros", "Brother Beyond", "Curiosity Killed the Cat", "Johnny Hates Jazz"],
-        correctAnswer: "Bros"
-    },
-    {
-        id: "music_4059",
-        category: "Music",
-        question: "Which group recorded 'I Owe You Nothing'?",
-        answers: ["Bros", "Brother Beyond", "Curiosity Killed the Cat", "Johnny Hates Jazz"],
-        correctAnswer: "Bros"
-    },
-    {
-        id: "music_4060",
-        category: "Music",
-        question: "Which group recorded 'Cat Among the Pigeons'?",
-        answers: ["Bros", "Brother Beyond", "Curiosity Killed the Cat", "Johnny Hates Jazz"],
-        correctAnswer: "Bros"
-    },
-    {
-        id: "music_4061",
-        category: "Music",
-        question: "Which group recorded 'Too Much'?",
-        answers: ["Bros", "Brother Beyond", "Curiosity Killed the Cat", "Johnny Hates Jazz"],
-        correctAnswer: "Bros"
-    },
-
-    // THE CHRISTIANS
-
-    {
-        id: "music_4062",
-        category: "Music",
-        question: "Which group recorded 'Forgotten Town'?",
-        answers: ["The Christians", "Wet Wet Wet", "Deacon Blue", "The Blow Monkeys"],
-        correctAnswer: "The Christians"
-    },
-    {
-        id: "music_4063",
-        category: "Music",
-        question: "Which group recorded 'Hooverville'?",
-        answers: ["The Christians", "Wet Wet Wet", "Deacon Blue", "The Blow Monkeys"],
-        correctAnswer: "The Christians"
-    },
-    {
-        id: "music_4064",
-        category: "Music",
-        question: "Which group recorded 'Ideal World'?",
-        answers: ["The Christians", "Wet Wet Wet", "Deacon Blue", "The Blow Monkeys"],
-        correctAnswer: "The Christians"
-    },
-    {
-        id: "music_4065",
-        category: "Music",
-        question: "Which group recorded 'Born Again'?",
-        answers: ["The Christians", "Wet Wet Wet", "Deacon Blue", "The Blow Monkeys"],
-        correctAnswer: "The Christians"
-    },
-    {
-        id: "music_4066",
-        category: "Music",
-        question: "Which group recorded 'Harvest for the World'?",
-        answers: ["The Christians", "Wet Wet Wet", "Deacon Blue", "The Blow Monkeys"],
-        correctAnswer: "The Christians"
-    }
-
+    makeQuestion("music_3967", "Which group recorded 'Jump (For My Love)'?", ["The Pointer Sisters", "Sister Sledge", "The Three Degrees", "The Weather Girls"], "The Pointer Sisters", "Easy"),
+    makeQuestion("music_3968", "Which group recorded 'Neutron Dance'?", ["The Pointer Sisters", "Sister Sledge", "The Three Degrees", "The Weather Girls"], "The Pointer Sisters", "Easy"),
+    makeQuestion("music_3969", "Which group recorded 'Oh No'?", ["Commodores", "Kool & the Gang", "Earth, Wind & Fire", "The Whispers"], "Commodores", "Hard"),
+    makeQuestion("music_3970", "Which group recorded 'Nightshift'?", ["Commodores", "Kool & the Gang", "Earth, Wind & Fire", "The Whispers"], "Commodores", "Easy"),
+    makeQuestion("music_3971", "Which group recorded 'Get Down on It'?", ["Kool & the Gang", "Commodores", "Earth, Wind & Fire", "The Whispers"], "Kool & the Gang", "Easy"),
+    makeQuestion("music_3972", "Which group recorded 'Joanna'?", ["Kool & the Gang", "Commodores", "Earth, Wind & Fire", "The Whispers"], "Kool & the Gang", "Easy"),
+    makeQuestion("music_3973", "Which group recorded 'Fresh'?", ["Kool & the Gang", "Commodores", "Earth, Wind & Fire", "The Whispers"], "Kool & the Gang", "Easy"),
+    makeQuestion("music_3974", "Which group recorded 'Stomp!'?", ["The Brothers Johnson", "Kool & the Gang", "The Whispers", "Shalamar"], "The Brothers Johnson", "Easy"),
+    makeQuestion("music_3975", "Which artist recorded 'Give Me the Night'?", ["George Benson", "Luther Vandross", "Billy Ocean", "Lionel Richie"], "George Benson", "Easy"),
+    makeQuestion("music_3976", "Which artist recorded 'Turn Your Love Around'?", ["George Benson", "Luther Vandross", "Billy Ocean", "Lionel Richie"], "George Benson", "Medium"),
+    makeQuestion("music_3977", "Which artist recorded 'Stop to Love'?", ["Luther Vandross", "George Benson", "Alexander O'Neal", "Billy Ocean"], "Luther Vandross", "Medium"),
+    makeQuestion("music_3978", "Which artist recorded 'Give Me the Reason'?", ["Luther Vandross", "George Benson", "Alexander O'Neal", "Billy Ocean"], "Luther Vandross", "Medium"),
+    makeQuestion("music_3979", "Which artist recorded 'So Amazing'?", ["Luther Vandross", "George Benson", "Alexander O'Neal", "Billy Ocean"], "Luther Vandross", "Hard"),
+    makeQuestion("music_3980", "Which artist recorded 'Sweet Love'?", ["Anita Baker", "Chaka Khan", "Stephanie Mills", "Jody Watley"], "Anita Baker", "Easy"),
+    makeQuestion("music_3981", "Which artist recorded 'Caught Up in the Rapture'?", ["Anita Baker", "Chaka Khan", "Stephanie Mills", "Jody Watley"], "Anita Baker", "Hard"),
+    makeQuestion("music_3982", "Which artist recorded 'Giving You the Best That I Got'?", ["Anita Baker", "Chaka Khan", "Stephanie Mills", "Jody Watley"], "Anita Baker", "Easy"),
+    makeQuestion("music_3983", "Which artist recorded 'I Feel for You'?", ["Chaka Khan", "Anita Baker", "Stephanie Mills", "Jody Watley"], "Chaka Khan", "Easy"),
+    makeQuestion("music_3984", "Which artist recorded 'Forget Me Nots'?", ["Patrice Rushen", "Chaka Khan", "Evelyn King", "Jody Watley"], "Patrice Rushen", "Easy"),
+    makeQuestion("music_3985", "Which group recorded 'All Night Long'?", ["Mary Jane Girls", "The Pointer Sisters", "Sister Sledge", "The Jets"], "Mary Jane Girls", "Hard"),
+    makeQuestion("music_3986", "Which artist recorded 'Somebody Else's Guy'?", ["Jocelyn Brown", "Chaka Khan", "Evelyn King", "Patrice Rushen"], "Jocelyn Brown", "Easy"),
+    makeQuestion("music_3987", "Which duo recorded 'Love Wars'?", ["Womack & Womack", "Ashford & Simpson", "Mel & Kim", "Pepsi & Shirlie"], "Womack & Womack", "Hard"),
+    makeQuestion("music_3988", "Which duo recorded 'Teardrops'?", ["Womack & Womack", "Ashford & Simpson", "Mel & Kim", "Pepsi & Shirlie"], "Womack & Womack", "Easy"),
+    makeQuestion("music_3989", "Which duo recorded 'Solid'?", ["Ashford & Simpson", "Womack & Womack", "Mel & Kim", "Pepsi & Shirlie"], "Ashford & Simpson", "Easy"),
+    makeQuestion("music_3990", "Which artist recorded 'Looking for a New Love'?", ["Jody Watley", "Taylor Dayne", "Anita Baker", "Stephanie Mills"], "Jody Watley", "Easy"),
+    makeQuestion("music_3991", "Which artist recorded 'Real Love'?", ["Jody Watley", "Taylor Dayne", "Anita Baker", "Stephanie Mills"], "Jody Watley", "Medium"),
+    makeQuestion("music_3992", "Which artist recorded 'Friends'?", ["Jody Watley", "Taylor Dayne", "Anita Baker", "Stephanie Mills"], "Jody Watley", "Hard"),
+    makeQuestion("music_3993", "Which artist recorded 'Never Knew Love Like This Before'?", ["Stephanie Mills", "Jody Watley", "Anita Baker", "Chaka Khan"], "Stephanie Mills", "Easy"),
+    makeQuestion("music_3994", "Which artist recorded 'Medicine Song'?", ["Stephanie Mills", "Jody Watley", "Anita Baker", "Chaka Khan"], "Stephanie Mills", "Hard"),
+    makeQuestion("music_3995", "Which artist recorded 'Love Will Conquer All'?", ["Lionel Richie", "Billy Ocean", "George Benson", "Luther Vandross"], "Lionel Richie", "Easy"),
+    makeQuestion("music_3996", "Which artist recorded 'Ballerina Girl'?", ["Lionel Richie", "Billy Ocean", "George Benson", "Luther Vandross"], "Lionel Richie", "Easy"),
+    makeQuestion("music_3997", "Which artist recorded 'Love Zone'?", ["Billy Ocean", "Lionel Richie", "George Benson", "Luther Vandross"], "Billy Ocean", "Easy"),
+    makeQuestion("music_3998", "Which artist recorded 'Colour of Love'?", ["Billy Ocean", "Lionel Richie", "George Benson", "Luther Vandross"], "Billy Ocean", "Hard"),
+    makeQuestion("music_3999", "Which artist recorded 'Shake Your Love'?", ["Debbie Gibson", "Tiffany", "Martika", "Taylor Dayne"], "Debbie Gibson", "Easy"),
+    makeQuestion("music_4000", "Which artist recorded 'Foolish Beat'?", ["Debbie Gibson", "Tiffany", "Martika", "Taylor Dayne"], "Debbie Gibson", "Easy"),
+    makeQuestion("music_4001", "Which artist recorded 'Lost in Your Eyes'?", ["Debbie Gibson", "Tiffany", "Martika", "Taylor Dayne"], "Debbie Gibson", "Easy"),
+    makeQuestion("music_4002", "Which artist recorded 'Toy Soldiers'?", ["Martika", "Debbie Gibson", "Tiffany", "Taylor Dayne"], "Martika", "Easy"),
+    makeQuestion("music_4003", "Which group recorded 'Point of No Return'?", ["Exposé", "Bananarama", "The Jets", "Five Star"], "Exposé", "Hard"),
+    makeQuestion("music_4004", "Which group recorded 'Seasons Change'?", ["Exposé", "Bananarama", "The Jets", "Five Star"], "Exposé", "Easy"),
+    makeQuestion("music_4005", "Which group recorded 'Come Go with Me'?", ["Exposé", "Bananarama", "The Jets", "Five Star"], "Exposé", "Hard"),
+    makeQuestion("music_4006", "Which artist recorded 'French Kissin' in the USA'?", ["Debbie Harry", "Kim Wilde", "Belinda Carlisle", "Cyndi Lauper"], "Debbie Harry", "Medium"),
+    makeQuestion("music_4007", "Which artist recorded 'In Love with Love'?", ["Debbie Harry", "Kim Wilde", "Belinda Carlisle", "Cyndi Lauper"], "Debbie Harry", "Hard"),
+    makeQuestion("music_4008", "Which artist recorded 'I Want That Man'?", ["Debbie Harry", "Kim Wilde", "Belinda Carlisle", "Cyndi Lauper"], "Debbie Harry", "Medium"),
+    makeQuestion("music_4009", "Which artist recorded 'More Love'?", ["Kim Carnes", "Laura Branigan", "Sheena Easton", "Pat Benatar"], "Kim Carnes", "Hard"),
+    makeQuestion("music_4010", "Which artist recorded 'Draw of the Cards'?", ["Kim Carnes", "Laura Branigan", "Sheena Easton", "Pat Benatar"], "Kim Carnes", "Hard"),
+    makeQuestion("music_4011", "Which artist recorded 'Voyeur'?", ["Kim Carnes", "Laura Branigan", "Sheena Easton", "Pat Benatar"], "Kim Carnes", "Hard"),
+    makeQuestion("music_4012", "Which artist recorded 'Crazy in the Night (Barking at Airplanes)'?", ["Kim Carnes", "Laura Branigan", "Sheena Easton", "Pat Benatar"], "Kim Carnes", "Hard"),
+    makeQuestion("music_4013", "Which artist recorded 'Modern Girl'?", ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"], "Sheena Easton", "Medium"),
+    makeQuestion("music_4014", "Which artist recorded 'Morning Train (Nine to Five)'?", ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"], "Sheena Easton", "Easy"),
+    makeQuestion("music_4015", "Which artist recorded 'For Your Eyes Only'?", ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"], "Sheena Easton", "Easy"),
+    makeQuestion("music_4016", "Which artist recorded 'Telefone (Long Distance Love Affair)'?", ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"], "Sheena Easton", "Hard"),
+    makeQuestion("music_4017", "Which artist recorded 'Strut'?", ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"], "Sheena Easton", "Medium"),
+    makeQuestion("music_4018", "Which artist recorded 'Sugar Walls'?", ["Sheena Easton", "Kim Wilde", "Laura Branigan", "Kim Carnes"], "Sheena Easton", "Hard"),
+    makeQuestion("music_4019", "Which artist recorded 'How Am I Supposed to Live Without You'?", ["Laura Branigan", "Sheena Easton", "Kim Carnes", "Taylor Dayne"], "Laura Branigan", "Easy"),
+    makeQuestion("music_4020", "Which artist recorded 'The Power of Love'?", ["Laura Branigan", "Sheena Easton", "Kim Carnes", "Taylor Dayne"], "Laura Branigan", "Hard"),
+    makeQuestion("music_4021", "Which artist recorded 'Tell It to My Heart'?", ["Taylor Dayne", "Debbie Gibson", "Tiffany", "Martika"], "Taylor Dayne", "Easy"),
+    makeQuestion("music_4022", "Which artist recorded 'I'll Always Love You'?", ["Taylor Dayne", "Debbie Gibson", "Tiffany", "Martika"], "Taylor Dayne", "Medium"),
+    makeQuestion("music_4023", "Which artist recorded 'Don't Rush Me'?", ["Taylor Dayne", "Debbie Gibson", "Tiffany", "Martika"], "Taylor Dayne", "Medium"),
+    makeQuestion("music_4024", "Which artist recorded 'With Every Beat of My Heart'?", ["Taylor Dayne", "Debbie Gibson", "Tiffany", "Martika"], "Taylor Dayne", "Hard"),
+    makeQuestion("music_4025", "Which artist recorded 'I Saw Him Standing There'?", ["Tiffany", "Debbie Gibson", "Martika", "Taylor Dayne"], "Tiffany", "Easy"),
+    makeQuestion("music_4026", "Which artist recorded 'All This Time'?", ["Tiffany", "Debbie Gibson", "Martika", "Taylor Dayne"], "Tiffany", "Medium"),
+    makeQuestion("music_4027", "Which artist recorded 'Radio Romance'?", ["Tiffany", "Debbie Gibson", "Martika", "Taylor Dayne"], "Tiffany", "Hard"),
+    makeQuestion("music_4028", "Which artist recorded 'Touch Me (I Want Your Body)'?", ["Samantha Fox", "Sinitta", "Kim Wilde", "Sheena Easton"], "Samantha Fox", "Easy"),
+    makeQuestion("music_4029", "Which artist recorded 'Do Ya Do Ya (Wanna Please Me)'?", ["Samantha Fox", "Sinitta", "Kim Wilde", "Sheena Easton"], "Samantha Fox", "Medium"),
+    makeQuestion("music_4030", "Which artist recorded 'Nothing's Gonna Stop Me Now'?", ["Samantha Fox", "Sinitta", "Kim Wilde", "Sheena Easton"], "Samantha Fox", "Easy"),
+    makeQuestion("music_4031", "Which artist recorded 'I Surrender (To the Spirit of the Night)'?", ["Samantha Fox", "Sinitta", "Kim Wilde", "Sheena Easton"], "Samantha Fox", "Hard"),
+    makeQuestion("music_4032", "Which artist recorded 'So Macho'?", ["Sinitta", "Samantha Fox", "Hazell Dean", "Sonia"], "Sinitta", "Easy"),
+    makeQuestion("music_4033", "Which duo recorded 'Showing Out (Get Fresh at the Weekend)'?", ["Mel & Kim", "Pepsi & Shirlie", "Dollar", "Womack & Womack"], "Mel & Kim", "Medium"),
+    makeQuestion("music_4034", "Which duo recorded 'Respectable'?", ["Mel & Kim", "Pepsi & Shirlie", "Dollar", "Womack & Womack"], "Mel & Kim", "Easy"),
+    makeQuestion("music_4035", "Which duo recorded 'F.L.M.'?", ["Mel & Kim", "Pepsi & Shirlie", "Dollar", "Womack & Womack"], "Mel & Kim", "Hard"),
+    makeQuestion("music_4036", "Which duo recorded 'That's the Way It Is'?", ["Mel & Kim", "Pepsi & Shirlie", "Dollar", "Womack & Womack"], "Mel & Kim", "Hard"),
+    makeQuestion("music_4037", "Which group recorded 'Can't Wait Another Minute'?", ["Five Star", "The Jets", "Loose Ends", "Shalamar"], "Five Star", "Easy"),
+    makeQuestion("music_4038", "Which group recorded 'Stay Out of My Life'?", ["Five Star", "The Jets", "Loose Ends", "Shalamar"], "Five Star", "Hard"),
+    makeQuestion("music_4039", "Which group recorded 'The Slightest Touch'?", ["Five Star", "The Jets", "Loose Ends", "Shalamar"], "Five Star", "Hard"),
+    makeQuestion("music_4040", "Which duo recorded 'Could It Be I'm Falling in Love'?", ["David Grant and Jaki Graham", "Womack & Womack", "Ashford & Simpson", "Pepsi & Shirlie"], "David Grant and Jaki Graham", "Easy"),
+    makeQuestion("music_4041", "Which artist recorded 'Breaking Away'?", ["Jaki Graham", "Jocelyn Brown", "Mica Paris", "Ruby Turner"], "Jaki Graham", "Medium"),
+    makeQuestion("music_4042", "Which artist recorded 'If You Let Me Stay'?", ["Terence Trent D'Arby", "Alexander O'Neal", "Billy Ocean", "Jermaine Stewart"], "Terence Trent D'Arby", "Medium"),
+    makeQuestion("music_4043", "Which artist recorded 'Dance Little Sister'?", ["Terence Trent D'Arby", "Alexander O'Neal", "Billy Ocean", "Jermaine Stewart"], "Terence Trent D'Arby", "Hard"),
+    makeQuestion("music_4044", "Which artist recorded 'Sign Your Name'?", ["Terence Trent D'Arby", "Alexander O'Neal", "Billy Ocean", "Jermaine Stewart"], "Terence Trent D'Arby", "Easy"),
+    makeQuestion("music_4045", "Which artist recorded 'Rain'?", ["Terence Trent D'Arby", "Alexander O'Neal", "Billy Ocean", "Jermaine Stewart"], "Terence Trent D'Arby", "Hard"),
+    makeQuestion("music_4046", "Which group recorded 'I Don't Want to Be a Hero'?", ["Johnny Hates Jazz", "Curiosity Killed the Cat", "Living in a Box", "The Christians"], "Johnny Hates Jazz", "Medium"),
+    makeQuestion("music_4047", "Which group recorded 'Turn Back the Clock'?", ["Johnny Hates Jazz", "Curiosity Killed the Cat", "Living in a Box", "The Christians"], "Johnny Hates Jazz", "Easy"),
+    makeQuestion("music_4048", "Which group recorded 'Heart of Gold'?", ["Johnny Hates Jazz", "Curiosity Killed the Cat", "Living in a Box", "The Christians"], "Johnny Hates Jazz", "Hard"),
+    makeQuestion("music_4049", "Which group recorded 'Ordinary Day'?", ["Curiosity Killed the Cat", "Johnny Hates Jazz", "Living in a Box", "The Blow Monkeys"], "Curiosity Killed the Cat", "Hard"),
+    makeQuestion("music_4050", "Which group recorded 'Misfit'?", ["Curiosity Killed the Cat", "Johnny Hates Jazz", "Living in a Box", "The Blow Monkeys"], "Curiosity Killed the Cat", "Medium"),
+    makeQuestion("music_4051", "Which group recorded 'Name and Number'?", ["Curiosity Killed the Cat", "Johnny Hates Jazz", "Living in a Box", "The Blow Monkeys"], "Curiosity Killed the Cat", "Hard"),
+    makeQuestion("music_4052", "Which group recorded 'Wishing I Was Lucky'?", ["Wet Wet Wet", "Deacon Blue", "Hue and Cry", "Danny Wilson"], "Wet Wet Wet", "Easy"),
+    makeQuestion("music_4053", "Which group recorded 'Sweet Little Mystery'?", ["Wet Wet Wet", "Deacon Blue", "Hue and Cry", "Danny Wilson"], "Wet Wet Wet", "Easy"),
+    makeQuestion("music_4054", "Which group recorded 'Angel Eyes (Home and Away)'?", ["Wet Wet Wet", "Deacon Blue", "Hue and Cry", "Danny Wilson"], "Wet Wet Wet", "Medium"),
+    makeQuestion("music_4055", "Which group recorded 'Temptation'?", ["Wet Wet Wet", "Deacon Blue", "Hue and Cry", "Danny Wilson"], "Wet Wet Wet", "Easy"),
+    makeQuestion("music_4056", "Which group recorded 'With a Little Help from My Friends'?", ["Wet Wet Wet", "Deacon Blue", "Hue and Cry", "Danny Wilson"], "Wet Wet Wet", "Easy"),
+    makeQuestion("music_4057", "Which group recorded 'When Will I Be Famous?'?", ["Bros", "Brother Beyond", "Curiosity Killed the Cat", "Johnny Hates Jazz"], "Bros", "Easy"),
+    makeQuestion("music_4058", "Which group recorded 'Drop the Boy'?", ["Bros", "Brother Beyond", "Curiosity Killed the Cat", "Johnny Hates Jazz"], "Bros", "Medium"),
+    makeQuestion("music_4059", "Which group recorded 'I Owe You Nothing'?", ["Bros", "Brother Beyond", "Curiosity Killed the Cat", "Johnny Hates Jazz"], "Bros", "Easy"),
+    makeQuestion("music_4060", "Which group recorded 'Cat Among the Pigeons'?", ["Bros", "Brother Beyond", "Curiosity Killed the Cat", "Johnny Hates Jazz"], "Bros", "Hard"),
+    makeQuestion("music_4061", "Which group recorded 'Too Much'?", ["Bros", "Brother Beyond", "Curiosity Killed the Cat", "Johnny Hates Jazz"], "Bros", "Medium"),
+    makeQuestion("music_4062", "Which group recorded 'Forgotten Town'?", ["The Christians", "Wet Wet Wet", "Deacon Blue", "The Blow Monkeys"], "The Christians", "Medium"),
+    makeQuestion("music_4063", "Which group recorded 'Hooverville'?", ["The Christians", "Wet Wet Wet", "Deacon Blue", "The Blow Monkeys"], "The Christians", "Hard"),
+    makeQuestion("music_4064", "Which group recorded 'Ideal World'?", ["The Christians", "Wet Wet Wet", "Deacon Blue", "The Blow Monkeys"], "The Christians", "Easy"),
+    makeQuestion("music_4065", "Which group recorded 'Born Again'?", ["The Christians", "Wet Wet Wet", "Deacon Blue", "The Blow Monkeys"], "The Christians", "Medium"),
+    makeQuestion("music_4066", "Which group recorded 'Harvest for the World'?", ["The Christians", "Wet Wet Wet", "Deacon Blue", "The Blow Monkeys"], "The Christians", "Easy"),
 ];
 
 module.exports = quizPack59;
