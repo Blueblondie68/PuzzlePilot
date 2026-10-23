@@ -1,762 +1,259 @@
 // quiz_pack57.js
-// PuzzlePilot Big Quiz
-// Music Pack 57
-// 100 questions
-// IDs: music_3767 - music_3866
+// PuzzlePilot Bigggggg Quiz - Pack 57
+// Full 100-question tagging audit. IDs music_3767 through music_3866.
+// Preserves original questions and answers. Tags are generated at runtime.
+
+const artistTags = {
+    "Michael Jackson": ["pop", "funk", "soul", "rhythm and blues", "american", "male singers", "solo artists", "the jackson 5", "quincy jones productions"],
+    "Stevie Wonder": ["soul", "funk", "rhythm and blues", "motown", "american", "male singers", "solo artists", "singer-songwriters", "keyboard players"],
+    "Elton John": ["pop rock", "soft rock", "british", "male singers", "solo artists", "pianists", "singer-songwriters", "bernie taupin"],
+    "David Bowie": ["art rock", "pop rock", "new wave", "british", "male singers", "solo artists", "songwriters"],
+    "Paul McCartney": ["pop rock", "soft rock", "british", "male singers", "solo artists", "the beatles", "wings", "bass guitarists", "songwriters"],
+    "Rod Stewart": ["pop rock", "soft rock", "british", "male singers", "solo artists", "raspy vocals", "faces"],
+    "Janet Jackson": ["dance-pop", "new jack swing", "rhythm and blues", "american", "female singers", "solo artists", "jimmy jam and terry lewis"],
+    "Whitney Houston": ["pop", "soul", "rhythm and blues", "american", "female singers", "solo artists", "power ballads"],
+    "Diana Ross": ["pop", "soul", "disco", "american", "female singers", "solo artists", "the supremes", "motown"],
+    "Cher": ["pop rock", "rock", "american", "female singers", "solo artists", "sonny and cher"],
+    "Cyndi Lauper": ["pop", "new wave", "pop rock", "american", "female singers", "solo artists", "singer-songwriters"],
+    "Bryan Adams": ["rock", "pop rock", "canadian", "male singers", "solo artists", "singer-songwriters", "guitarists"],
+    "Phil Collins": ["pop rock", "soft rock", "british", "male singers", "solo artists", "drummers", "genesis"],
+    "Genesis": ["progressive rock", "pop rock", "british", "bands", "phil collins", "mike rutherford", "tony banks"],
+    "Peter Gabriel": ["art rock", "progressive rock", "pop rock", "british", "male singers", "solo artists", "genesis", "singer-songwriters"],
+    "Sting": ["pop rock", "jazz rock", "new wave", "british", "male singers", "solo artists", "the police", "bass guitarists"],
+    "Dire Straits": ["rock", "roots rock", "british", "bands", "mark knopfler", "guitar rock"]
+};
+
+const recordingTags = {
+    "music_3767": [1979, "off the wall album", "1979 singles", "quincy jones production", "rod temperton songwriter", "disco"],
+    "music_3768": [1979, "off the wall album", "1979 uk singles", "1980 us singles", "rod temperton songwriter", "album title tracks", "disco"],
+    "music_3769": [1980, "off the wall album", "1980 singles", "ballads", "1979 album tracks"],
+    "music_3770": [1983, "thriller album", "1983 singles", "funk", "quincy jones production"],
+    "music_3771": [1983, "thriller album", "1983 singles", "steve porcaro songwriter", "soft rock"],
+    "music_3772": [1983, "thriller album", "1983 singles", "rod temperton songwriter", "dance music"],
+    "music_3773": [1987, "bad album", "1987 singles", "1980s number one hits", "dance-pop"],
+    "music_3774": [1980, "hotter than july album", "1980 singles", "bob marley tribute", "reggae influences"],
+    "music_3775": [1980, "hotter than july album", "1981 singles", "ballads"],
+    "music_3776": [1980, "hotter than july album", "1981 singles", "martin luther king jr", "civil rights songs"],
+    "music_3777": [1982, "original musiquarium i compilation", "1982 singles", "funk"],
+    "music_3778": [1982, "original musiquarium i compilation", "1982 singles", "dizzy gillespie guest appearance", "funk"],
+    "music_3779": [1984, "the woman in red soundtrack", "1984 singles", "film songs", "1980s number one hits"],
+    "music_3780": [1984, "the woman in red soundtrack", "1984 singles", "film songs"],
+    "music_3781": [1985, "in square circle album", "1985 singles", "1980s number one hits", "luther vandross backing vocals"],
+    "music_3782": [1980, "21 at 33 album", "1980 singles", "soft rock"],
+    "music_3783": [1982, "jump up album", "1982 singles", "ballads"],
+    "music_3784": [1983, "too low for zero album", "1983 singles", "stevie wonder harmonica", "bernie taupin lyrics"],
+    "music_3785": [1984, "breaking hearts album", "1984 singles", "pop rock"],
+    "music_3786": [1985, "ice on fire album", "1985 singles", "love songs"],
+    "music_3787": [1989, "sleeping with the past album", "1989 singles", "1990 uk rerelease", "1990 uk number one singles", "ballads"],
+    "music_3788": [1989, "sleeping with the past album", "1989 singles", "1990 uk rerelease", "1990 uk number one singles"],
+    "music_3789": [1980, "scary monsters and super creeps album", "1980 singles", "major tom character", "new wave"],
+    "music_3790": [1980, "scary monsters and super creeps album", "1980 singles", "new wave"],
+    "music_3791": [1981, "scary monsters and super creeps album", "1980 album tracks", "1981 singles", "album title tracks"],
+    "music_3792": [1983, "lets dance album", "1983 singles", "nile rodgers production", "dance rock"],
+    "music_3793": [1983, "lets dance album", "1983 singles", "iggy pop co-writer", "cover versions", "iggy pop original"],
+    "music_3794": [1983, "lets dance album", "1983 singles", "nile rodgers production"],
+    "music_3795": [1984, "tonight album", "1984 singles", "pop rock"],
+    "music_3796": [1986, "absolute beginners film", "1986 singles", "film songs", "soundtracks"],
+    "music_3797": [1980, "mccartney ii album", "1980 singles", "synth-pop"],
+    "music_3798": [1980, "mccartney ii album", "1980 singles", "ballads"],
+    "music_3799": [1982, "tug of war album", "1982 singles", "pop rock"],
+    "music_3800": [1983, "pipes of peace album", "1983 singles", "1983 uk number one singles", "antiwar songs"],
+    "music_3801": [1984, "give my regards to broad street film", "1984 singles", "film songs", "david gilmour guitar"],
+    "music_3802": [1985, "spies like us film", "1985 singles", "film songs"],
+    "music_3803": [1989, "flowers in the dirt album", "1989 singles", "elvis costello co-writer"],
+    "music_3804": [1989, "flowers in the dirt album", "1989 singles", "pop rock"],
+    "music_3805": [1980, "foolish behaviour album", "1980 singles", "pop rock"],
+    "music_3806": [1981, "tonight im yours album", "1981 singles", "young turks"],
+    "music_3807": [1983, "body wishes album", "1983 singles", "1983 uk number one singles"],
+    "music_3808": [1986, "every beat of my heart album", "1986 singles", "ballads"],
+    "music_3809": [1988, "out of order album", "1988 singles", "pop rock"],
+    "music_3810": [1988, "out of order album", "1988 singles", "coming of age songs", "songwriters legal disputes"],
+    "music_3811": [1989, "out of order album", "1989 singles", "pop rock"],
+    "music_3812": [1983, "body wishes album", "1983 singles", "pop rock"],
+    "music_3813": [1986, "control album", "1986 singles", "jimmy jam and terry lewis production", "new jack swing"],
+    "music_3814": [1986, "control album", "1986 singles", "us number one singles", "dance-pop"],
+    "music_3815": [1986, "control album", "1986 singles", "album title tracks", "independence songs"],
+    "music_3816": [1987, "control album", "1987 singles", "ballads"],
+    "music_3817": [1989, "janet jackson rhythm nation 1814 album", "1989 singles", "dance-pop"],
+    "music_3818": [1989, "janet jackson rhythm nation 1814 album", "1989 singles", "social commentary songs", "album title tracks"],
+    "music_3819": [1990, "janet jackson rhythm nation 1814 album", "1989 album tracks", "1990 singles", "us number one singles", "dance-pop"],
+    "music_3820": [1985, "whitney houston debut album", "1985 singles", "rhythm and blues"],
+    "music_3821": [1985, "whitney houston debut album", "1985 singles", "cover versions", "marilyn mccoo and billy davis jr original"],
+    "music_3822": [1987, "whitney album", "1987 singles", "ballads", "us number one singles"],
+    "music_3823": [1988, "whitney album", "1988 singles", "ballads", "us number one singles"],
+    "music_3824": [1988, "whitney album", "1988 singles", "dance-pop"],
+    "music_3825": [1980, "diana album", "1980 singles", "nile rodgers production", "disco", "us number one singles"],
+    "music_3826": [1980, "diana album", "1980 singles", "nile rodgers production", "disco", "empowerment songs"],
+    "music_3827": [1980, "its my turn film", "1980 singles", "film songs", "soundtracks"],
+    "music_3828": [1981, "why do fools fall in love album", "1981 singles", "cover versions", "frankie lymon and the teenagers original"],
+    "music_3829": [1982, "silk electric album", "1982 singles", "michael jackson songwriter"],
+    "music_3830": [1985, "eaten alive album", "1985 singles", "1986 uk number one singles", "bee gees songwriters"],
+    "music_3831": [1991, "the force behind the power album", "1991 singles", "ballads"],
+    "music_3832": [1987, "cher album", "1987 singles", "cover versions", "laura branigan original"],
+    "music_3833": [1988, "cher album", "1988 singles", "power ballads"],
+    "music_3834": [1989, "heart of stone album", "1989 singles", "pop rock"],
+    "music_3835": [1990, "heart of stone album", "1990 singles", "album title tracks", "rock"],
+    "music_3836": [1989, "chances are film", "1989 singles", "film songs", "duets", "peter cetera duet"],
+    "music_3837": [1984, "shes so unusual album", "1984 singles", "ballads"],
+    "music_3838": [1984, "shes so unusual album", "1984 singles", "the brains cover versions"],
+    "music_3839": [1983, "shes so unusual album", "1983 album tracks", "prince original", "cover versions"],
+    "music_3840": [1987, "true colors album", "1987 singles", "marvin gaye original", "cover versions", "protest songs"],
+    "music_3841": [1986, "true colors album", "1986 album tracks", "cover versions", "jock a mo original"],
+    "music_3842": [1983, "cuts like a knife album", "1983 singles", "album title tracks"],
+    "music_3843": [1983, "cuts like a knife album", "1983 singles", "ballads"],
+    "music_3844": [1985, "reckless album", "1985 singles", "duets", "tina turner duet"],
+    "music_3845": [1987, "into the fire album", "1987 singles", "rock singles"],
+    "music_3846": [1987, "into the fire album", "1987 singles", "rock singles"],
+    "music_3847": [1986, "no jacket required album", "1986 singles", "ballads"],
+    "music_3848": [1988, "buster film", "1988 singles", "film songs", "cover versions", "the mindbenders original"],
+    "music_3849": [1988, "buster film", "1988 singles", "film songs", "soundtracks"],
+    "music_3850": [1990, "but seriously album", "1989 album tracks", "1990 singles", "eric clapton guitar", "power ballads"],
+    "music_3851": [1990, "but seriously album", "1989 album tracks", "1990 singles", "pop rock"],
+    "music_3852": [1990, "but seriously album", "1989 album tracks", "1990 singles", "ballads"],
+    "music_3853": [1980, "duke album", "1980 singles", "pop rock"],
+    "music_3854": [1980, "duke album", "1980 singles", "pop rock"],
+    "music_3855": [1981, "abacab album", "1981 singles", "album title tracks"],
+    "music_3856": [1983, "genesis self titled album", "1983 singles", "pop rock"],
+    "music_3857": [1987, "invisible touch album", "1986 album tracks", "1987 singles", "rock"],
+    "music_3858": [1977, "peter gabriel debut album", "1977 singles", "1982 reissues", "1990 reissues", "solo debut"],
+    "music_3859": [1987, "so album", "1986 album tracks", "1987 singles", "art rock"],
+    "music_3860": [1985, "the dream of the blue turtles album", "1985 singles", "solo debut"],
+    "music_3861": [1985, "the dream of the blue turtles album", "1985 singles", "cold war songs"],
+    "music_3862": [1987, "nothing like the sun album", "1987 singles", "pop rock"],
+    "music_3863": [1981, "making movies album", "1980 album tracks", "1981 singles", "mark knopfler songwriter"],
+    "music_3864": [1982, "love over gold album", "1982 singles", "cinematic rock"],
+    "music_3865": [1985, "brothers in arms album", "1985 singles", "soft rock"],
+    "music_3866": [1986, "brothers in arms album", "1985 album tracks", "1986 singles", "saxophone solos"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const performer = artistTags[correctAnswer];
+    const release = recordingTags[id];
+    if (!performer || !release) throw new Error(`Missing metadata for ${id}`);
+
+    const match = question.match(/'(.+)'/);
+    if (!match) throw new Error(`Missing song title for ${id}`);
+
+    const year = release[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            decade, `${decade} music`, "music", "songs", "recordings",
+            `${year} releases`, match[1].toLowerCase(),
+            correctAnswer.toLowerCase(), ...performer, ...release.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack57 = [
-
-    // MICHAEL JACKSON
-
-    {
-        id: "music_3767",
-        category: "Music",
-        question: "Which artist recorded 'Rock with You'?",
-        answers: ["Michael Jackson", "Prince", "Lionel Richie", "Stevie Wonder"],
-        correctAnswer: "Michael Jackson"
-    },
-    {
-        id: "music_3768",
-        category: "Music",
-        question: "Which artist recorded 'Off the Wall'?",
-        answers: ["Michael Jackson", "Prince", "George Michael", "Lionel Richie"],
-        correctAnswer: "Michael Jackson"
-    },
-    {
-        id: "music_3769",
-        category: "Music",
-        question: "Which artist recorded 'She's Out of My Life'?",
-        answers: ["Michael Jackson", "Lionel Richie", "Stevie Wonder", "George Michael"],
-        correctAnswer: "Michael Jackson"
-    },
-    {
-        id: "music_3770",
-        category: "Music",
-        question: "Which artist recorded 'Wanna Be Startin' Somethin''?",
-        answers: ["Michael Jackson", "Prince", "Stevie Wonder", "Lionel Richie"],
-        correctAnswer: "Michael Jackson"
-    },
-    {
-        id: "music_3771",
-        category: "Music",
-        question: "Which artist recorded 'Human Nature'?",
-        answers: ["Michael Jackson", "Prince", "George Michael", "Stevie Wonder"],
-        correctAnswer: "Michael Jackson"
-    },
-    {
-        id: "music_3772",
-        category: "Music",
-        question: "Which artist recorded 'P.Y.T. (Pretty Young Thing)'?",
-        answers: ["Michael Jackson", "Prince", "Lionel Richie", "George Michael"],
-        correctAnswer: "Michael Jackson"
-    },
-    {
-        id: "music_3773",
-        category: "Music",
-        question: "Which artist recorded 'The Way You Make Me Feel'?",
-        answers: ["Michael Jackson", "Prince", "George Michael", "Lionel Richie"],
-        correctAnswer: "Michael Jackson"
-    },
-
-    // STEVIE WONDER
-
-    {
-        id: "music_3774",
-        category: "Music",
-        question: "Which artist recorded 'Master Blaster (Jammin')'?",
-        answers: ["Stevie Wonder", "Lionel Richie", "Billy Ocean", "George Benson"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3775",
-        category: "Music",
-        question: "Which artist recorded 'Lately'?",
-        answers: ["Stevie Wonder", "Lionel Richie", "Luther Vandross", "George Benson"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3776",
-        category: "Music",
-        question: "Which artist recorded 'Happy Birthday'?",
-        answers: ["Stevie Wonder", "Lionel Richie", "Michael Jackson", "Billy Ocean"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3777",
-        category: "Music",
-        question: "Which artist recorded 'That Girl'?",
-        answers: ["Stevie Wonder", "Lionel Richie", "George Benson", "Luther Vandross"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3778",
-        category: "Music",
-        question: "Which artist recorded 'Do I Do'?",
-        answers: ["Stevie Wonder", "Lionel Richie", "Billy Ocean", "George Benson"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3779",
-        category: "Music",
-        question: "Which artist recorded 'I Just Called to Say I Love You'?",
-        answers: ["Stevie Wonder", "Lionel Richie", "Billy Ocean", "Luther Vandross"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3780",
-        category: "Music",
-        question: "Which artist recorded 'Love Light in Flight'?",
-        answers: ["Stevie Wonder", "Lionel Richie", "George Benson", "Billy Ocean"],
-        correctAnswer: "Stevie Wonder"
-    },
-    {
-        id: "music_3781",
-        category: "Music",
-        question: "Which artist recorded 'Part-Time Lover'?",
-        answers: ["Stevie Wonder", "Lionel Richie", "Billy Ocean", "Luther Vandross"],
-        correctAnswer: "Stevie Wonder"
-    },
-
-    // ELTON JOHN
-
-    {
-        id: "music_3782",
-        category: "Music",
-        question: "Which artist recorded 'Little Jeannie'?",
-        answers: ["Elton John", "Billy Joel", "Phil Collins", "Rod Stewart"],
-        correctAnswer: "Elton John"
-    },
-    {
-        id: "music_3783",
-        category: "Music",
-        question: "Which artist recorded 'Blue Eyes'?",
-        answers: ["Elton John", "Billy Joel", "Rod Stewart", "Paul McCartney"],
-        correctAnswer: "Elton John"
-    },
-    {
-        id: "music_3784",
-        category: "Music",
-        question: "Which artist recorded 'I Guess That's Why They Call It the Blues'?",
-        answers: ["Elton John", "Billy Joel", "Phil Collins", "Rod Stewart"],
-        correctAnswer: "Elton John"
-    },
-    {
-        id: "music_3785",
-        category: "Music",
-        question: "Which artist recorded 'Sad Songs (Say So Much)'?",
-        answers: ["Elton John", "Billy Joel", "Rod Stewart", "Paul McCartney"],
-        correctAnswer: "Elton John"
-    },
-    {
-        id: "music_3786",
-        category: "Music",
-        question: "Which artist recorded 'Nikita'?",
-        answers: ["Elton John", "Billy Joel", "Phil Collins", "Rod Stewart"],
-        correctAnswer: "Elton John"
-    },
-    {
-        id: "music_3787",
-        category: "Music",
-        question: "Which artist recorded 'Sacrifice'?",
-        answers: ["Elton John", "George Michael", "Phil Collins", "Rod Stewart"],
-        correctAnswer: "Elton John"
-    },
-    {
-        id: "music_3788",
-        category: "Music",
-        question: "Which artist recorded 'Healing Hands'?",
-        answers: ["Elton John", "Phil Collins", "Rod Stewart", "Billy Joel"],
-        correctAnswer: "Elton John"
-    },
-
-    // DAVID BOWIE
-
-    {
-        id: "music_3789",
-        category: "Music",
-        question: "Which artist recorded 'Ashes to Ashes'?",
-        answers: ["David Bowie", "Peter Gabriel", "Bryan Ferry", "Gary Numan"],
-        correctAnswer: "David Bowie"
-    },
-    {
-        id: "music_3790",
-        category: "Music",
-        question: "Which artist recorded 'Fashion'?",
-        answers: ["David Bowie", "Bryan Ferry", "Gary Numan", "Peter Gabriel"],
-        correctAnswer: "David Bowie"
-    },
-    {
-        id: "music_3791",
-        category: "Music",
-        question: "Which artist recorded 'Scary Monsters (and Super Creeps)'?",
-        answers: ["David Bowie", "Peter Gabriel", "Gary Numan", "Bryan Ferry"],
-        correctAnswer: "David Bowie"
-    },
-    {
-        id: "music_3792",
-        category: "Music",
-        question: "Which artist recorded 'Let's Dance'?",
-        answers: ["David Bowie", "Bryan Ferry", "Robert Palmer", "Peter Gabriel"],
-        correctAnswer: "David Bowie"
-    },
-    {
-        id: "music_3793",
-        category: "Music",
-        question: "Which artist recorded 'China Girl'?",
-        answers: ["David Bowie", "Bryan Ferry", "Peter Gabriel", "Robert Palmer"],
-        correctAnswer: "David Bowie"
-    },
-    {
-        id: "music_3794",
-        category: "Music",
-        question: "Which artist recorded 'Modern Love'?",
-        answers: ["David Bowie", "Bryan Ferry", "Robert Palmer", "Peter Gabriel"],
-        correctAnswer: "David Bowie"
-    },
-    {
-        id: "music_3795",
-        category: "Music",
-        question: "Which artist recorded 'Blue Jean'?",
-        answers: ["David Bowie", "Bryan Ferry", "Robert Palmer", "Peter Gabriel"],
-        correctAnswer: "David Bowie"
-    },
-    {
-        id: "music_3796",
-        category: "Music",
-        question: "Which artist recorded 'Absolute Beginners'?",
-        answers: ["David Bowie", "Bryan Ferry", "Peter Gabriel", "Robert Palmer"],
-        correctAnswer: "David Bowie"
-    },
-
-    // PAUL McCARTNEY
-
-    {
-        id: "music_3797",
-        category: "Music",
-        question: "Which artist recorded 'Coming Up'?",
-        answers: ["Paul McCartney", "Elton John", "Billy Joel", "Rod Stewart"],
-        correctAnswer: "Paul McCartney"
-    },
-    {
-        id: "music_3798",
-        category: "Music",
-        question: "Which artist recorded 'Waterfalls'?",
-        answers: ["Paul McCartney", "Elton John", "Billy Joel", "George Harrison"],
-        correctAnswer: "Paul McCartney"
-    },
-    {
-        id: "music_3799",
-        category: "Music",
-        question: "Which artist recorded 'Take It Away'?",
-        answers: ["Paul McCartney", "Elton John", "George Harrison", "Billy Joel"],
-        correctAnswer: "Paul McCartney"
-    },
-    {
-        id: "music_3800",
-        category: "Music",
-        question: "Which artist recorded 'Pipes of Peace'?",
-        answers: ["Paul McCartney", "Elton John", "George Harrison", "Rod Stewart"],
-        correctAnswer: "Paul McCartney"
-    },
-    {
-        id: "music_3801",
-        category: "Music",
-        question: "Which artist recorded 'No More Lonely Nights'?",
-        answers: ["Paul McCartney", "Elton John", "Billy Joel", "Phil Collins"],
-        correctAnswer: "Paul McCartney"
-    },
-    {
-        id: "music_3802",
-        category: "Music",
-        question: "Which artist recorded 'Spies Like Us'?",
-        answers: ["Paul McCartney", "Elton John", "George Harrison", "Billy Joel"],
-        correctAnswer: "Paul McCartney"
-    },
-    {
-        id: "music_3803",
-        category: "Music",
-        question: "Which artist recorded 'My Brave Face'?",
-        answers: ["Paul McCartney", "Elton John", "George Harrison", "Rod Stewart"],
-        correctAnswer: "Paul McCartney"
-    },
-    {
-        id: "music_3804",
-        category: "Music",
-        question: "Which artist recorded 'This One'?",
-        answers: ["Paul McCartney", "Elton John", "George Harrison", "Billy Joel"],
-        correctAnswer: "Paul McCartney"
-    },
-
-    // ROD STEWART
-
-    {
-        id: "music_3805",
-        category: "Music",
-        question: "Which artist recorded 'Passion'?",
-        answers: ["Rod Stewart", "Elton John", "Robert Palmer", "Bryan Ferry"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_3806",
-        category: "Music",
-        question: "Which artist recorded 'Young Turks'?",
-        answers: ["Rod Stewart", "Elton John", "Robert Palmer", "Bryan Adams"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_3807",
-        category: "Music",
-        question: "Which artist recorded 'Baby Jane'?",
-        answers: ["Rod Stewart", "Elton John", "Robert Palmer", "Bryan Ferry"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_3808",
-        category: "Music",
-        question: "Which artist recorded 'Every Beat of My Heart'?",
-        answers: ["Rod Stewart", "Bryan Adams", "Elton John", "Robert Palmer"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_3809",
-        category: "Music",
-        question: "Which artist recorded 'Lost in You'?",
-        answers: ["Rod Stewart", "Bryan Adams", "Robert Palmer", "Elton John"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_3810",
-        category: "Music",
-        question: "Which artist recorded 'Forever Young'?",
-        answers: ["Rod Stewart", "Bryan Adams", "Robert Palmer", "Elton John"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_3811",
-        category: "Music",
-        question: "Which artist recorded 'Crazy About Her'?",
-        answers: ["Rod Stewart", "Robert Palmer", "Bryan Adams", "Elton John"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_3812",
-        category: "Music",
-        question: "Which artist recorded 'What Am I Gonna Do (I'm So in Love with You)'?",
-        answers: ["Rod Stewart", "Elton John", "Robert Palmer", "Bryan Adams"],
-        correctAnswer: "Rod Stewart"
-    },
-
-    // JANET JACKSON
-
-    {
-        id: "music_3813",
-        category: "Music",
-        question: "Which artist recorded 'What Have You Done for Me Lately'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Jody Watley", "Paula Abdul"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_3814",
-        category: "Music",
-        question: "Which artist recorded 'When I Think of You'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Jody Watley", "Paula Abdul"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_3815",
-        category: "Music",
-        question: "Which artist recorded 'Control'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Jody Watley", "Paula Abdul"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_3816",
-        category: "Music",
-        question: "Which artist recorded 'Let's Wait Awhile'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Jody Watley", "Anita Baker"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_3817",
-        category: "Music",
-        question: "Which artist recorded 'Miss You Much'?",
-        answers: ["Janet Jackson", "Paula Abdul", "Jody Watley", "Whitney Houston"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_3818",
-        category: "Music",
-        question: "Which artist recorded 'Rhythm Nation'?",
-        answers: ["Janet Jackson", "Paula Abdul", "Jody Watley", "Whitney Houston"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_3819",
-        category: "Music",
-        question: "Which artist recorded 'Escapade'?",
-        answers: ["Janet Jackson", "Paula Abdul", "Jody Watley", "Whitney Houston"],
-        correctAnswer: "Janet Jackson"
-    },
-
-    // WHITNEY HOUSTON
-
-    {
-        id: "music_3820",
-        category: "Music",
-        question: "Which artist recorded 'You Give Good Love'?",
-        answers: ["Whitney Houston", "Janet Jackson", "Anita Baker", "Diana Ross"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_3821",
-        category: "Music",
-        question: "Which artist recorded 'Saving All My Love for You'?",
-        answers: ["Whitney Houston", "Anita Baker", "Diana Ross", "Janet Jackson"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_3822",
-        category: "Music",
-        question: "Which artist recorded 'Didn't We Almost Have It All'?",
-        answers: ["Whitney Houston", "Anita Baker", "Diana Ross", "Janet Jackson"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_3823",
-        category: "Music",
-        question: "Which artist recorded 'Where Do Broken Hearts Go'?",
-        answers: ["Whitney Houston", "Anita Baker", "Diana Ross", "Janet Jackson"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_3824",
-        category: "Music",
-        question: "Which artist recorded 'Love Will Save the Day'?",
-        answers: ["Whitney Houston", "Janet Jackson", "Diana Ross", "Anita Baker"],
-        correctAnswer: "Whitney Houston"
-    },
-
-    // DIANA ROSS
-
-    {
-        id: "music_3825",
-        category: "Music",
-        question: "Which artist recorded 'Upside Down'?",
-        answers: ["Diana Ross", "Donna Summer", "Chaka Khan", "Pointer Sisters"],
-        correctAnswer: "Diana Ross"
-    },
-    {
-        id: "music_3826",
-        category: "Music",
-        question: "Which artist recorded 'I'm Coming Out'?",
-        answers: ["Diana Ross", "Donna Summer", "Chaka Khan", "Whitney Houston"],
-        correctAnswer: "Diana Ross"
-    },
-    {
-        id: "music_3827",
-        category: "Music",
-        question: "Which artist recorded 'It's My Turn'?",
-        answers: ["Diana Ross", "Donna Summer", "Anita Baker", "Chaka Khan"],
-        correctAnswer: "Diana Ross"
-    },
-    {
-        id: "music_3828",
-        category: "Music",
-        question: "Which artist recorded 'Why Do Fools Fall in Love'?",
-        answers: ["Diana Ross", "Donna Summer", "Chaka Khan", "Whitney Houston"],
-        correctAnswer: "Diana Ross"
-    },
-    {
-        id: "music_3829",
-        category: "Music",
-        question: "Which artist recorded 'Muscles'?",
-        answers: ["Diana Ross", "Donna Summer", "Chaka Khan", "Pointer Sisters"],
-        correctAnswer: "Diana Ross"
-    },
-    {
-        id: "music_3830",
-        category: "Music",
-        question: "Which artist recorded 'Chain Reaction'?",
-        answers: ["Diana Ross", "Donna Summer", "Chaka Khan", "Whitney Houston"],
-        correctAnswer: "Diana Ross"
-    },
-    {
-        id: "music_3831",
-        category: "Music",
-        question: "Which artist recorded 'When You Tell Me That You Love Me'?",
-        answers: ["Diana Ross", "Whitney Houston", "Anita Baker", "Chaka Khan"],
-        correctAnswer: "Diana Ross"
-    },
-
-    // CHER
-
-    {
-        id: "music_3832",
-        category: "Music",
-        question: "Which artist recorded 'I Found Someone'?",
-        answers: ["Cher", "Tina Turner", "Bonnie Tyler", "Pat Benatar"],
-        correctAnswer: "Cher"
-    },
-    {
-        id: "music_3833",
-        category: "Music",
-        question: "Which artist recorded 'We All Sleep Alone'?",
-        answers: ["Cher", "Tina Turner", "Bonnie Tyler", "Pat Benatar"],
-        correctAnswer: "Cher"
-    },
-    {
-        id: "music_3834",
-        category: "Music",
-        question: "Which artist recorded 'Just Like Jesse James'?",
-        answers: ["Cher", "Tina Turner", "Bonnie Tyler", "Pat Benatar"],
-        correctAnswer: "Cher"
-    },
-    {
-        id: "music_3835",
-        category: "Music",
-        question: "Which artist recorded 'Heart of Stone'?",
-        answers: ["Cher", "Tina Turner", "Bonnie Tyler", "Pat Benatar"],
-        correctAnswer: "Cher"
-    },
-    {
-        id: "music_3836",
-        category: "Music",
-        question: "Which artist recorded 'After All'?",
-        answers: ["Cher", "Tina Turner", "Bonnie Tyler", "Pat Benatar"],
-        correctAnswer: "Cher"
-    },
-
-    // CYNDI LAUPER
-
-    {
-        id: "music_3837",
-        category: "Music",
-        question: "Which artist recorded 'Time After Time'?",
-        answers: ["Cyndi Lauper", "Madonna", "Belinda Carlisle", "Kim Wilde"],
-        correctAnswer: "Cyndi Lauper"
-    },
-    {
-        id: "music_3838",
-        category: "Music",
-        question: "Which artist recorded 'Money Changes Everything'?",
-        answers: ["Cyndi Lauper", "Madonna", "Belinda Carlisle", "Kim Wilde"],
-        correctAnswer: "Cyndi Lauper"
-    },
-    {
-        id: "music_3839",
-        category: "Music",
-        question: "Which artist recorded 'When You Were Mine'?",
-        answers: ["Cyndi Lauper", "Madonna", "Belinda Carlisle", "Kim Wilde"],
-        correctAnswer: "Cyndi Lauper"
-    },
-    {
-        id: "music_3840",
-        category: "Music",
-        question: "Which artist recorded 'What's Going On'?",
-        answers: ["Cyndi Lauper", "Madonna", "Belinda Carlisle", "Kim Wilde"],
-        correctAnswer: "Cyndi Lauper"
-    },
-    {
-        id: "music_3841",
-        category: "Music",
-        question: "Which artist recorded 'Iko Iko'?",
-        answers: ["Cyndi Lauper", "Belinda Carlisle", "Kim Wilde", "Madonna"],
-        correctAnswer: "Cyndi Lauper"
-    },
-
-    // BRYAN ADAMS
-
-    {
-        id: "music_3842",
-        category: "Music",
-        question: "Which artist recorded 'Cuts Like a Knife'?",
-        answers: ["Bryan Adams", "Bruce Springsteen", "John Mellencamp", "Rick Springfield"],
-        correctAnswer: "Bryan Adams"
-    },
-    {
-        id: "music_3843",
-        category: "Music",
-        question: "Which artist recorded 'Straight from the Heart'?",
-        answers: ["Bryan Adams", "Richard Marx", "Bruce Springsteen", "Rick Springfield"],
-        correctAnswer: "Bryan Adams"
-    },
-    {
-        id: "music_3844",
-        category: "Music",
-        question: "Which artist recorded 'It's Only Love'?",
-        answers: ["Bryan Adams", "Bruce Springsteen", "John Mellencamp", "Richard Marx"],
-        correctAnswer: "Bryan Adams"
-    },
-    {
-        id: "music_3845",
-        category: "Music",
-        question: "Which artist recorded 'Heat of the Night'?",
-        answers: ["Bryan Adams", "Bruce Springsteen", "Richard Marx", "John Mellencamp"],
-        correctAnswer: "Bryan Adams"
-    },
-    {
-        id: "music_3846",
-        category: "Music",
-        question: "Which artist recorded 'Hearts on Fire'?",
-        answers: ["Bryan Adams", "Bruce Springsteen", "Richard Marx", "Rick Springfield"],
-        correctAnswer: "Bryan Adams"
-    },
-
-    // PHIL COLLINS
-
-    {
-        id: "music_3847",
-        category: "Music",
-        question: "Which artist recorded 'Take Me Home'?",
-        answers: ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Sting"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_3848",
-        category: "Music",
-        question: "Which artist recorded 'A Groovy Kind of Love'?",
-        answers: ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Elton John"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_3849",
-        category: "Music",
-        question: "Which artist recorded 'Two Hearts'?",
-        answers: ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Sting"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_3850",
-        category: "Music",
-        question: "Which artist recorded 'I Wish It Would Rain Down'?",
-        answers: ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Elton John"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_3851",
-        category: "Music",
-        question: "Which artist recorded 'Something Happened on the Way to Heaven'?",
-        answers: ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Sting"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_3852",
-        category: "Music",
-        question: "Which artist recorded 'Do You Remember?'?",
-        answers: ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Elton John"],
-        correctAnswer: "Phil Collins"
-    },
-
-    // GENESIS
-
-    {
-        id: "music_3853",
-        category: "Music",
-        question: "Which group recorded 'Turn It On Again'?",
-        answers: ["Genesis", "Yes", "Asia", "Supertramp"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_3854",
-        category: "Music",
-        question: "Which group recorded 'Misunderstanding'?",
-        answers: ["Genesis", "Yes", "Asia", "Supertramp"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_3855",
-        category: "Music",
-        question: "Which group recorded 'Abacab'?",
-        answers: ["Genesis", "Yes", "Asia", "Supertramp"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_3856",
-        category: "Music",
-        question: "Which group recorded 'That's All'?",
-        answers: ["Genesis", "Yes", "Asia", "Supertramp"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_3857",
-        category: "Music",
-        question: "Which group recorded 'Tonight, Tonight, Tonight'?",
-        answers: ["Genesis", "Yes", "Asia", "Supertramp"],
-        correctAnswer: "Genesis"
-    },
-
-    // PETER GABRIEL
-
-    {
-        id: "music_3858",
-        category: "Music",
-        question: "Which artist recorded 'Solsbury Hill'?",
-        answers: ["Peter Gabriel", "Phil Collins", "Steve Winwood", "Sting"],
-        correctAnswer: "Peter Gabriel"
-    },
-    {
-        id: "music_3859",
-        category: "Music",
-        question: "Which artist recorded 'Red Rain'?",
-        answers: ["Peter Gabriel", "Phil Collins", "Steve Winwood", "Sting"],
-        correctAnswer: "Peter Gabriel"
-    },
-
-    // STING
-
-    {
-        id: "music_3860",
-        category: "Music",
-        question: "Which artist recorded 'If You Love Somebody Set Them Free'?",
-        answers: ["Sting", "Peter Gabriel", "Phil Collins", "Steve Winwood"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_3861",
-        category: "Music",
-        question: "Which artist recorded 'Russians'?",
-        answers: ["Sting", "Peter Gabriel", "David Bowie", "Phil Collins"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_3862",
-        category: "Music",
-        question: "Which artist recorded 'We'll Be Together'?",
-        answers: ["Sting", "Peter Gabriel", "Steve Winwood", "Phil Collins"],
-        correctAnswer: "Sting"
-    },
-
-    // DIRE STRAITS
-
-    {
-        id: "music_3863",
-        category: "Music",
-        question: "Which group recorded 'Romeo and Juliet'?",
-        answers: ["Dire Straits", "The Police", "Genesis", "Simple Minds"],
-        correctAnswer: "Dire Straits"
-    },
-    {
-        id: "music_3864",
-        category: "Music",
-        question: "Which group recorded 'Private Investigations'?",
-        answers: ["Dire Straits", "The Police", "Genesis", "Simple Minds"],
-        correctAnswer: "Dire Straits"
-    },
-    {
-        id: "music_3865",
-        category: "Music",
-        question: "Which group recorded 'So Far Away'?",
-        answers: ["Dire Straits", "The Police", "Genesis", "Simple Minds"],
-        correctAnswer: "Dire Straits"
-    },
-    {
-        id: "music_3866",
-        category: "Music",
-        question: "Which group recorded 'Your Latest Trick'?",
-        answers: ["Dire Straits", "The Police", "Genesis", "Simple Minds"],
-        correctAnswer: "Dire Straits"
-    }
-
+    makeQuestion("music_3767", "Which artist recorded 'Rock with You'?", ["Michael Jackson", "Prince", "Lionel Richie", "Stevie Wonder"], "Michael Jackson", "Easy"),
+    makeQuestion("music_3768", "Which artist recorded 'Off the Wall'?", ["Michael Jackson", "Prince", "George Michael", "Lionel Richie"], "Michael Jackson", "Easy"),
+    makeQuestion("music_3769", "Which artist recorded 'She's Out of My Life'?", ["Michael Jackson", "Lionel Richie", "Stevie Wonder", "George Michael"], "Michael Jackson", "Easy"),
+    makeQuestion("music_3770", "Which artist recorded 'Wanna Be Startin' Somethin''?", ["Michael Jackson", "Prince", "Stevie Wonder", "Lionel Richie"], "Michael Jackson", "Easy"),
+    makeQuestion("music_3771", "Which artist recorded 'Human Nature'?", ["Michael Jackson", "Prince", "George Michael", "Stevie Wonder"], "Michael Jackson", "Medium"),
+    makeQuestion("music_3772", "Which artist recorded 'P.Y.T. (Pretty Young Thing)'?", ["Michael Jackson", "Prince", "Lionel Richie", "George Michael"], "Michael Jackson", "Medium"),
+    makeQuestion("music_3773", "Which artist recorded 'The Way You Make Me Feel'?", ["Michael Jackson", "Prince", "George Michael", "Lionel Richie"], "Michael Jackson", "Easy"),
+    makeQuestion("music_3774", "Which artist recorded 'Master Blaster (Jammin')'?", ["Stevie Wonder", "Lionel Richie", "Billy Ocean", "George Benson"], "Stevie Wonder", "Medium"),
+    makeQuestion("music_3775", "Which artist recorded 'Lately'?", ["Stevie Wonder", "Lionel Richie", "Luther Vandross", "George Benson"], "Stevie Wonder", "Medium"),
+    makeQuestion("music_3776", "Which artist recorded 'Happy Birthday'?", ["Stevie Wonder", "Lionel Richie", "Michael Jackson", "Billy Ocean"], "Stevie Wonder", "Easy"),
+    makeQuestion("music_3777", "Which artist recorded 'That Girl'?", ["Stevie Wonder", "Lionel Richie", "George Benson", "Luther Vandross"], "Stevie Wonder", "Medium"),
+    makeQuestion("music_3778", "Which artist recorded 'Do I Do'?", ["Stevie Wonder", "Lionel Richie", "Billy Ocean", "George Benson"], "Stevie Wonder", "Hard"),
+    makeQuestion("music_3779", "Which artist recorded 'I Just Called to Say I Love You'?", ["Stevie Wonder", "Lionel Richie", "Billy Ocean", "Luther Vandross"], "Stevie Wonder", "Easy"),
+    makeQuestion("music_3780", "Which artist recorded 'Love Light in Flight'?", ["Stevie Wonder", "Lionel Richie", "George Benson", "Billy Ocean"], "Stevie Wonder", "Hard"),
+    makeQuestion("music_3781", "Which artist recorded 'Part-Time Lover'?", ["Stevie Wonder", "Lionel Richie", "Billy Ocean", "Luther Vandross"], "Stevie Wonder", "Easy"),
+    makeQuestion("music_3782", "Which artist recorded 'Little Jeannie'?", ["Elton John", "Billy Joel", "Phil Collins", "Rod Stewart"], "Elton John", "Hard"),
+    makeQuestion("music_3783", "Which artist recorded 'Blue Eyes'?", ["Elton John", "Billy Joel", "Rod Stewart", "Paul McCartney"], "Elton John", "Medium"),
+    makeQuestion("music_3784", "Which artist recorded 'I Guess That's Why They Call It the Blues'?", ["Elton John", "Billy Joel", "Phil Collins", "Rod Stewart"], "Elton John", "Easy"),
+    makeQuestion("music_3785", "Which artist recorded 'Sad Songs (Say So Much)'?", ["Elton John", "Billy Joel", "Rod Stewart", "Paul McCartney"], "Elton John", "Easy"),
+    makeQuestion("music_3786", "Which artist recorded 'Nikita'?", ["Elton John", "Billy Joel", "Phil Collins", "Rod Stewart"], "Elton John", "Easy"),
+    makeQuestion("music_3787", "Which artist recorded 'Sacrifice'?", ["Elton John", "George Michael", "Phil Collins", "Rod Stewart"], "Elton John", "Easy"),
+    makeQuestion("music_3788", "Which artist recorded 'Healing Hands'?", ["Elton John", "Phil Collins", "Rod Stewart", "Billy Joel"], "Elton John", "Medium"),
+    makeQuestion("music_3789", "Which artist recorded 'Ashes to Ashes'?", ["David Bowie", "Peter Gabriel", "Bryan Ferry", "Gary Numan"], "David Bowie", "Easy"),
+    makeQuestion("music_3790", "Which artist recorded 'Fashion'?", ["David Bowie", "Bryan Ferry", "Gary Numan", "Peter Gabriel"], "David Bowie", "Medium"),
+    makeQuestion("music_3791", "Which artist recorded 'Scary Monsters (and Super Creeps)'?", ["David Bowie", "Peter Gabriel", "Gary Numan", "Bryan Ferry"], "David Bowie", "Hard"),
+    makeQuestion("music_3792", "Which artist recorded 'Let's Dance'?", ["David Bowie", "Bryan Ferry", "Robert Palmer", "Peter Gabriel"], "David Bowie", "Easy"),
+    makeQuestion("music_3793", "Which artist recorded 'China Girl'?", ["David Bowie", "Bryan Ferry", "Peter Gabriel", "Robert Palmer"], "David Bowie", "Easy"),
+    makeQuestion("music_3794", "Which artist recorded 'Modern Love'?", ["David Bowie", "Bryan Ferry", "Robert Palmer", "Peter Gabriel"], "David Bowie", "Easy"),
+    makeQuestion("music_3795", "Which artist recorded 'Blue Jean'?", ["David Bowie", "Bryan Ferry", "Robert Palmer", "Peter Gabriel"], "David Bowie", "Medium"),
+    makeQuestion("music_3796", "Which artist recorded 'Absolute Beginners'?", ["David Bowie", "Bryan Ferry", "Peter Gabriel", "Robert Palmer"], "David Bowie", "Easy"),
+    makeQuestion("music_3797", "Which artist recorded 'Coming Up'?", ["Paul McCartney", "Elton John", "Billy Joel", "Rod Stewart"], "Paul McCartney", "Medium"),
+    makeQuestion("music_3798", "Which artist recorded 'Waterfalls'?", ["Paul McCartney", "Elton John", "Billy Joel", "George Harrison"], "Paul McCartney", "Hard"),
+    makeQuestion("music_3799", "Which artist recorded 'Take It Away'?", ["Paul McCartney", "Elton John", "George Harrison", "Billy Joel"], "Paul McCartney", "Medium"),
+    makeQuestion("music_3800", "Which artist recorded 'Pipes of Peace'?", ["Paul McCartney", "Elton John", "George Harrison", "Rod Stewart"], "Paul McCartney", "Easy"),
+    makeQuestion("music_3801", "Which artist recorded 'No More Lonely Nights'?", ["Paul McCartney", "Elton John", "Billy Joel", "Phil Collins"], "Paul McCartney", "Easy"),
+    makeQuestion("music_3802", "Which artist recorded 'Spies Like Us'?", ["Paul McCartney", "Elton John", "George Harrison", "Billy Joel"], "Paul McCartney", "Hard"),
+    makeQuestion("music_3803", "Which artist recorded 'My Brave Face'?", ["Paul McCartney", "Elton John", "George Harrison", "Rod Stewart"], "Paul McCartney", "Medium"),
+    makeQuestion("music_3804", "Which artist recorded 'This One'?", ["Paul McCartney", "Elton John", "George Harrison", "Billy Joel"], "Paul McCartney", "Hard"),
+    makeQuestion("music_3805", "Which artist recorded 'Passion'?", ["Rod Stewart", "Elton John", "Robert Palmer", "Bryan Ferry"], "Rod Stewart", "Medium"),
+    makeQuestion("music_3806", "Which artist recorded 'Young Turks'?", ["Rod Stewart", "Elton John", "Robert Palmer", "Bryan Adams"], "Rod Stewart", "Medium"),
+    makeQuestion("music_3807", "Which artist recorded 'Baby Jane'?", ["Rod Stewart", "Elton John", "Robert Palmer", "Bryan Ferry"], "Rod Stewart", "Easy"),
+    makeQuestion("music_3808", "Which artist recorded 'Every Beat of My Heart'?", ["Rod Stewart", "Bryan Adams", "Elton John", "Robert Palmer"], "Rod Stewart", "Hard"),
+    makeQuestion("music_3809", "Which artist recorded 'Lost in You'?", ["Rod Stewart", "Bryan Adams", "Robert Palmer", "Elton John"], "Rod Stewart", "Hard"),
+    makeQuestion("music_3810", "Which artist recorded 'Forever Young'?", ["Rod Stewart", "Bryan Adams", "Robert Palmer", "Elton John"], "Rod Stewart", "Easy"),
+    makeQuestion("music_3811", "Which artist recorded 'Crazy About Her'?", ["Rod Stewart", "Robert Palmer", "Bryan Adams", "Elton John"], "Rod Stewart", "Hard"),
+    makeQuestion("music_3812", "Which artist recorded 'What Am I Gonna Do (I'm So in Love with You)'?", ["Rod Stewart", "Elton John", "Robert Palmer", "Bryan Adams"], "Rod Stewart", "Hard"),
+    makeQuestion("music_3813", "Which artist recorded 'What Have You Done for Me Lately'?", ["Janet Jackson", "Whitney Houston", "Jody Watley", "Paula Abdul"], "Janet Jackson", "Easy"),
+    makeQuestion("music_3814", "Which artist recorded 'When I Think of You'?", ["Janet Jackson", "Whitney Houston", "Jody Watley", "Paula Abdul"], "Janet Jackson", "Easy"),
+    makeQuestion("music_3815", "Which artist recorded 'Control'?", ["Janet Jackson", "Whitney Houston", "Jody Watley", "Paula Abdul"], "Janet Jackson", "Medium"),
+    makeQuestion("music_3816", "Which artist recorded 'Let's Wait Awhile'?", ["Janet Jackson", "Whitney Houston", "Jody Watley", "Anita Baker"], "Janet Jackson", "Hard"),
+    makeQuestion("music_3817", "Which artist recorded 'Miss You Much'?", ["Janet Jackson", "Paula Abdul", "Jody Watley", "Whitney Houston"], "Janet Jackson", "Easy"),
+    makeQuestion("music_3818", "Which artist recorded 'Rhythm Nation'?", ["Janet Jackson", "Paula Abdul", "Jody Watley", "Whitney Houston"], "Janet Jackson", "Easy"),
+    makeQuestion("music_3819", "Which artist recorded 'Escapade'?", ["Janet Jackson", "Paula Abdul", "Jody Watley", "Whitney Houston"], "Janet Jackson", "Medium"),
+    makeQuestion("music_3820", "Which artist recorded 'You Give Good Love'?", ["Whitney Houston", "Janet Jackson", "Anita Baker", "Diana Ross"], "Whitney Houston", "Medium"),
+    makeQuestion("music_3821", "Which artist recorded 'Saving All My Love for You'?", ["Whitney Houston", "Anita Baker", "Diana Ross", "Janet Jackson"], "Whitney Houston", "Easy"),
+    makeQuestion("music_3822", "Which artist recorded 'Didn't We Almost Have It All'?", ["Whitney Houston", "Anita Baker", "Diana Ross", "Janet Jackson"], "Whitney Houston", "Easy"),
+    makeQuestion("music_3823", "Which artist recorded 'Where Do Broken Hearts Go'?", ["Whitney Houston", "Anita Baker", "Diana Ross", "Janet Jackson"], "Whitney Houston", "Medium"),
+    makeQuestion("music_3824", "Which artist recorded 'Love Will Save the Day'?", ["Whitney Houston", "Janet Jackson", "Diana Ross", "Anita Baker"], "Whitney Houston", "Hard"),
+    makeQuestion("music_3825", "Which artist recorded 'Upside Down'?", ["Diana Ross", "Donna Summer", "Chaka Khan", "Pointer Sisters"], "Diana Ross", "Easy"),
+    makeQuestion("music_3826", "Which artist recorded 'I'm Coming Out'?", ["Diana Ross", "Donna Summer", "Chaka Khan", "Whitney Houston"], "Diana Ross", "Easy"),
+    makeQuestion("music_3827", "Which artist recorded 'It's My Turn'?", ["Diana Ross", "Donna Summer", "Anita Baker", "Chaka Khan"], "Diana Ross", "Hard"),
+    makeQuestion("music_3828", "Which artist recorded 'Why Do Fools Fall in Love'?", ["Diana Ross", "Donna Summer", "Chaka Khan", "Whitney Houston"], "Diana Ross", "Easy"),
+    makeQuestion("music_3829", "Which artist recorded 'Muscles'?", ["Diana Ross", "Donna Summer", "Chaka Khan", "Pointer Sisters"], "Diana Ross", "Hard"),
+    makeQuestion("music_3830", "Which artist recorded 'Chain Reaction'?", ["Diana Ross", "Donna Summer", "Chaka Khan", "Whitney Houston"], "Diana Ross", "Easy"),
+    makeQuestion("music_3831", "Which artist recorded 'When You Tell Me That You Love Me'?", ["Diana Ross", "Whitney Houston", "Anita Baker", "Chaka Khan"], "Diana Ross", "Medium"),
+    makeQuestion("music_3832", "Which artist recorded 'I Found Someone'?", ["Cher", "Tina Turner", "Bonnie Tyler", "Pat Benatar"], "Cher", "Medium"),
+    makeQuestion("music_3833", "Which artist recorded 'We All Sleep Alone'?", ["Cher", "Tina Turner", "Bonnie Tyler", "Pat Benatar"], "Cher", "Medium"),
+    makeQuestion("music_3834", "Which artist recorded 'Just Like Jesse James'?", ["Cher", "Tina Turner", "Bonnie Tyler", "Pat Benatar"], "Cher", "Medium"),
+    makeQuestion("music_3835", "Which artist recorded 'Heart of Stone'?", ["Cher", "Tina Turner", "Bonnie Tyler", "Pat Benatar"], "Cher", "Hard"),
+    makeQuestion("music_3836", "Which artist recorded 'After All'?", ["Cher", "Tina Turner", "Bonnie Tyler", "Pat Benatar"], "Cher", "Medium"),
+    makeQuestion("music_3837", "Which artist recorded 'Time After Time'?", ["Cyndi Lauper", "Madonna", "Belinda Carlisle", "Kim Wilde"], "Cyndi Lauper", "Easy"),
+    makeQuestion("music_3838", "Which artist recorded 'Money Changes Everything'?", ["Cyndi Lauper", "Madonna", "Belinda Carlisle", "Kim Wilde"], "Cyndi Lauper", "Medium"),
+    makeQuestion("music_3839", "Which artist recorded 'When You Were Mine'?", ["Cyndi Lauper", "Madonna", "Belinda Carlisle", "Kim Wilde"], "Cyndi Lauper", "Hard"),
+    makeQuestion("music_3840", "Which artist recorded 'What's Going On'?", ["Cyndi Lauper", "Madonna", "Belinda Carlisle", "Kim Wilde"], "Cyndi Lauper", "Medium"),
+    makeQuestion("music_3841", "Which artist recorded 'Iko Iko'?", ["Cyndi Lauper", "Belinda Carlisle", "Kim Wilde", "Madonna"], "Cyndi Lauper", "Hard"),
+    makeQuestion("music_3842", "Which artist recorded 'Cuts Like a Knife'?", ["Bryan Adams", "Bruce Springsteen", "John Mellencamp", "Rick Springfield"], "Bryan Adams", "Easy"),
+    makeQuestion("music_3843", "Which artist recorded 'Straight from the Heart'?", ["Bryan Adams", "Richard Marx", "Bruce Springsteen", "Rick Springfield"], "Bryan Adams", "Medium"),
+    makeQuestion("music_3844", "Which artist recorded 'It's Only Love'?", ["Bryan Adams", "Bruce Springsteen", "John Mellencamp", "Richard Marx"], "Bryan Adams", "Easy"),
+    makeQuestion("music_3845", "Which artist recorded 'Heat of the Night'?", ["Bryan Adams", "Bruce Springsteen", "Richard Marx", "John Mellencamp"], "Bryan Adams", "Medium"),
+    makeQuestion("music_3846", "Which artist recorded 'Hearts on Fire'?", ["Bryan Adams", "Bruce Springsteen", "Richard Marx", "Rick Springfield"], "Bryan Adams", "Hard"),
+    makeQuestion("music_3847", "Which artist recorded 'Take Me Home'?", ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Sting"], "Phil Collins", "Medium"),
+    makeQuestion("music_3848", "Which artist recorded 'A Groovy Kind of Love'?", ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Elton John"], "Phil Collins", "Easy"),
+    makeQuestion("music_3849", "Which artist recorded 'Two Hearts'?", ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Sting"], "Phil Collins", "Medium"),
+    makeQuestion("music_3850", "Which artist recorded 'I Wish It Would Rain Down'?", ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Elton John"], "Phil Collins", "Medium"),
+    makeQuestion("music_3851", "Which artist recorded 'Something Happened on the Way to Heaven'?", ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Sting"], "Phil Collins", "Medium"),
+    makeQuestion("music_3852", "Which artist recorded 'Do You Remember?'?", ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Elton John"], "Phil Collins", "Hard"),
+    makeQuestion("music_3853", "Which group recorded 'Turn It On Again'?", ["Genesis", "Yes", "Asia", "Supertramp"], "Genesis", "Easy"),
+    makeQuestion("music_3854", "Which group recorded 'Misunderstanding'?", ["Genesis", "Yes", "Asia", "Supertramp"], "Genesis", "Medium"),
+    makeQuestion("music_3855", "Which group recorded 'Abacab'?", ["Genesis", "Yes", "Asia", "Supertramp"], "Genesis", "Medium"),
+    makeQuestion("music_3856", "Which group recorded 'That's All'?", ["Genesis", "Yes", "Asia", "Supertramp"], "Genesis", "Easy"),
+    makeQuestion("music_3857", "Which group recorded 'Tonight, Tonight, Tonight'?", ["Genesis", "Yes", "Asia", "Supertramp"], "Genesis", "Medium"),
+    makeQuestion("music_3858", "Which artist recorded 'Solsbury Hill'?", ["Peter Gabriel", "Phil Collins", "Steve Winwood", "Sting"], "Peter Gabriel", "Easy"),
+    makeQuestion("music_3859", "Which artist recorded 'Red Rain'?", ["Peter Gabriel", "Phil Collins", "Steve Winwood", "Sting"], "Peter Gabriel", "Medium"),
+    makeQuestion("music_3860", "Which artist recorded 'If You Love Somebody Set Them Free'?", ["Sting", "Peter Gabriel", "Phil Collins", "Steve Winwood"], "Sting", "Medium"),
+    makeQuestion("music_3861", "Which artist recorded 'Russians'?", ["Sting", "Peter Gabriel", "David Bowie", "Phil Collins"], "Sting", "Medium"),
+    makeQuestion("music_3862", "Which artist recorded 'We'll Be Together'?", ["Sting", "Peter Gabriel", "Steve Winwood", "Phil Collins"], "Sting", "Hard"),
+    makeQuestion("music_3863", "Which group recorded 'Romeo and Juliet'?", ["Dire Straits", "The Police", "Genesis", "Simple Minds"], "Dire Straits", "Easy"),
+    makeQuestion("music_3864", "Which group recorded 'Private Investigations'?", ["Dire Straits", "The Police", "Genesis", "Simple Minds"], "Dire Straits", "Medium"),
+    makeQuestion("music_3865", "Which group recorded 'So Far Away'?", ["Dire Straits", "The Police", "Genesis", "Simple Minds"], "Dire Straits", "Medium"),
+    makeQuestion("music_3866", "Which group recorded 'Your Latest Trick'?", ["Dire Straits", "The Police", "Genesis", "Simple Minds"], "Dire Straits", "Hard")
 ];
 
 module.exports = quizPack57;
