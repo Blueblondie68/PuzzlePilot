@@ -1,704 +1,293 @@
+// quiz_pack70.js
+// PuzzlePilot Bigggggg Quiz - Music Pack 70
+// 100 audited questions: music_5067 through music_5166.
+// Full artist and recording tags expand onto every question.
+
+const artistTags = {
+    "Donnie Iris": ["power pop", "rock", "american", "male singers", "solo artists", "the cruisers", "mark avsec"],
+    "INXS": ["new wave", "pop rock", "australian", "bands", "michael hutchence", "andrew farriss", "sydney"],
+    "Divinyls": ["new wave", "rock", "australian", "bands", "chrissy amphlett", "mark mcentes", "female lead singers"],
+    "The Church": ["alternative rock", "jangle pop", "australian", "bands", "steve kilbey", "peter koppes", "marty willson-piper"],
+    "The Swingers": ["new wave", "rock", "new zealand", "bands", "phil judd", "bones hillman", "buster stiggs"],
+    "Split Enz": ["new wave", "pop rock", "new zealand", "bands", "tim finn", "neil finn", "noel crombie"],
+    "Tim Finn": ["pop rock", "new wave", "new zealand", "male singers", "solo artists", "split enz", "finn brothers"],
+    "Netherworld Dancing Toys": ["pop rock", "soul", "new zealand", "bands", "malcolm black", "australasian music"],
+    "Dave Dobbyn with Herbs": ["pop rock", "reggae", "new zealand", "collaborations", "dave dobbyn", "herbs", "duets"],
+    "Dave Dobbyn": ["pop rock", "rock", "new zealand", "male singers", "solo artists", "dd smash", "singer-songwriters"],
+    "Herbs": ["reggae", "pacific reggae", "new zealand", "bands", "polynesian music", "pacific island music", "political songs"],
+    "Sharon O'Neill": ["pop rock", "pop", "new zealand", "female singers", "solo artists", "singer-songwriters"],
+    "Margaret Urlich": ["pop", "r&b", "new zealand", "female singers", "solo artists", "peking man"],
+    "Dynamic Hepnotics": ["soul", "funk", "australian", "bands", "robert susz", "sydney", "horn section"],
+    "Kids in the Kitchen": ["synth-pop", "new wave", "australian", "bands", "scott carne", "melbourne"],
+    "Koo De Tah": ["synth-pop", "new wave", "australian", "bands", "tina cross", "leon berger", "female lead singers"],
+    "Renée Geyer": ["soul", "r&b", "australian", "female singers", "solo artists", "singer-songwriters"],
+    "Mental as Anything": ["new wave", "pop rock", "australian", "bands", "greedy smith", "martin plaza", "reg mombassa"],
+    "Paul Kelly and the Coloured Girls": ["folk rock", "pub rock", "australian", "bands", "paul kelly", "steve connolly", "australian songwriting"],
+    "GANGgajang": ["pop rock", "new wave", "australian", "bands", "mark callaghan", "graham bidstrup", "geoffrey stapleton"],
+    "Hoodoo Gurus": ["garage rock", "power pop", "australian", "bands", "dave faulkner", "brad shepherd", "sydney"],
+    "Noiseworks": ["pop rock", "pub rock", "australian", "bands", "jon stevens", "stuart fraser", "steve balbi"],
+    "Johnny Diesel and the Injectors": ["blues rock", "pub rock", "australian", "bands", "johnny diesel", "mark lizotte", "terry manning production"],
+    "Ian Moss": ["blues rock", "pop rock", "australian", "male singers", "solo artists", "cold chisel", "guitarists"],
+    "Sunnyboys": ["power pop", "new wave", "australian", "bands", "jeremy oxley", "sydney"],
+    "The Go-Betweens": ["indie rock", "jangle pop", "australian", "bands", "grant mclennan", "robert forster", "brisbane"],
+    "Midnight Oil": ["rock", "alternative rock", "australian", "bands", "peter garrett", "rob hirst", "political songs"],
+    "Eurogliders": ["synth-pop", "new wave", "australian", "bands", "grace knight", "bernie lynch", "female lead singers"],
+    "Boom Crash Opera": ["pop rock", "new wave", "australian", "bands", "dale ryder", "peter maslen", "richard pleasance"],
+    "Big Pig": ["alternative rock", "post-punk", "australian", "bands", "sheri hilton", "drummers", "female lead singers"],
+    "The Sports": ["pub rock", "power pop", "australian", "bands", "stephen cummings", "andrew pendlebury", "melbourne"],
+    "Little River Band": ["soft rock", "pop rock", "australian", "bands", "glenn shorrock", "john farnham", "beeb birtles"],
+    "Pat Wilson": ["pop", "new wave", "australian", "female singers", "solo artists", "ross wilson"],
+    "Austen Tayshus": ["comedy music", "spoken word", "australian", "male performers", "solo artists", "billy birmingham", "australian humour"],
+    "The Cockroaches": ["pop rock", "australian", "bands", "anthony field", "paul field", "jeff fatt", "the wiggles origins"],
+    "Jimmy Barnes": ["pub rock", "rock", "australian", "male singers", "solo artists", "cold chisel", "scottish born"],
+    "Cold Chisel": ["pub rock", "rock", "australian", "bands", "jimmy barnes", "ian moss", "don walker"],
+    "Do-Ré-Mi": ["alternative rock", "post-punk", "australian", "bands", "deborah conway", "female lead singers"],
+    "Models": ["new wave", "synth-pop", "australian", "bands", "sean kelly", "james freud", "melbourne"],
+    "Mondo Rock": ["pop rock", "rock", "australian", "bands", "ross wilson", "eric mccusker", "melbourne"],
+    "I'm Talking": ["dance-pop", "funk", "australian", "bands", "kate ceberano", "zan abeyratne", "female lead singers"],
+    "Pseudo Echo": ["synth-pop", "new wave", "australian", "bands", "brian canham", "melbourne"],
+    "Uncanny X-Men": ["pop rock", "new wave", "australian", "bands", "brian mannix", "melbourne"],
+    "Matt Finish": ["rock", "australian", "bands", "matt moffitt", "sydney"],
+    "Hunters & Collectors": ["rock", "pub rock", "australian", "bands", "mark seymour", "john archer", "horn of contempt"],
+    "The Choirboys": ["pub rock", "hard rock", "australian", "bands", "mark gable", "sydney"],
+    "Rose Tattoo": ["hard rock", "blues rock", "australian", "bands", "angry anderson", "peter wells"],
+    "Little Heroes": ["new wave", "pop rock", "australian", "bands", "roger hart", "melbourne"],
+    "The Dugites": ["new wave", "pop rock", "australian", "bands", "lynda nutter", "female lead singers", "perth"],
+    "The Chords": ["mod revival", "power pop", "british", "bands", "chris pope", "uk mod revival"],
+    "The Party Boys": ["rock", "australian", "supergroups", "bands", "john swan", "australian cover bands"],
+    "Redgum": ["folk rock", "political songs", "australian", "bands", "john schumann", "antiwar songs"],
+};
+
+const recordingTags = {
+    "music_5067": [1982, "king cool album", "1982 single", "donnie iris and mark avsec songwriting"],
+    "music_5068": [1985, "listen like thieves album", "1985 single", "michael hutchence vocals"],
+    "music_5069": [1988, "temperamental album", "1988 single", "chrissy amphlett vocals"],
+    "music_5070": [1982, "the blurred crusade album", "1982 album track", "steve kilbey songwriting"],
+    "music_5071": [1981, "practical jokers album", "1981 single", "australia and new zealand chart topper"],
+    "music_5072": [1980, "ripper records single", "1980 debut single", "phil judd vocals"],
+    "music_5073": [1980, "true colours album", "1980 single", "tim finn songwriter"],
+    "music_5074": [1983, "conflicting emotions album", "1983 single", "tim finn vocals"],
+    "music_5075": [1983, "escapade album", "1983 album track", "debut solo album"],
+    "music_5076": [1985, "painted years album", "1985 single", "new zealand number one"],
+    "music_5077": [1986, "footrot flats film soundtrack", "1986 single", "new zealand music", "film songs", "herbs backing vocals"],
+    "music_5078": [1986, "footrot flats film soundtrack", "1986 single", "new zealand film songs"],
+    "music_5079": [1982, "light of the pacific album", "1982 single", "anti nuclear protest", "french nuclear testing"],
+    "music_5080": [1987, "sensitive to a smile album", "1987 single", "album title track"],
+    "music_5081": [1983, "foreign affairs album", "1983 single", "new zealand pop rock"],
+    "music_5082": [1980, "sharon oneill album", "1980 single", "sharon oneill songwriting"],
+    "music_5083": [1989, "safety in numbers album", "1989 debut solo single", "new zealand number one", "robyn smith and barry blue songwriting"],
+    "music_5084": [1984, "take you higher album", "1984 single", "australian soul"],
+    "music_5085": [1985, "shine album", "1985 single", "australian synth pop"],
+    "music_5086": [1985, "shine album", "1985 single", "scott carne vocals"],
+    "music_5087": [1985, "koo de tah album", "1985 debut single", "leon berger songwriter"],
+    "music_5088": [1985, "koo de tah album", "1985 single", "leon berger songwriter"],
+    "music_5089": [1981, "so lucky album", "1981 single", "australian top ten singles"],
+    "music_5090": [1987, "mouth to mouth album", "1987 single", "greedy smith vocals"],
+    "music_5091": [1987, "under the sun album", "1987 single", "paul kelly songwriter"],
+    "music_5092": [1986, "gossip album", "1986 recording", "paul kelly songwriter"],
+    "music_5093": [1984, "ganggajang debut single", "1985 debut album", "mark callaghan and graham bidstrup songwriting"],
+    "music_5094": [1985, "mars needs guitars album", "1985 single", "dave faulkner songwriting"],
+    "music_5095": [1987, "blow your cool album", "1987 single", "brad shepherd songwriting"],
+    "music_5096": [1993, "crank album", "1993 lead single", "1994 album release", "dave faulkner songwriting"],
+    "music_5097": [1987, "noiseworks album", "1987 debut single", "jon stevens vocals"],
+    "music_5098": [1987, "noiseworks album", "1987 single", "jon stevens vocals"],
+    "music_5099": [1988, "touch album", "1988 lead single", "chris kimsey production"],
+    "music_5100": [1988, "touch album", "1989 single", "chris kimsey production"],
+    "music_5101": [1989, "johnny diesel and the injectors album", "1989 single", "terry manning production"],
+    "music_5102": [1989, "johnny diesel and the injectors album", "1989 single", "terry manning production"],
+    "music_5103": [1988, "johnny diesel and the injectors album", "1988 debut single", "1989 album release"],
+    "music_5104": [1989, "matchbook album", "1989 debut solo single", "don walker songwriter"],
+    "music_5105": [1989, "matchbook album", "1989 single", "don walker songwriter"],
+    "music_5106": [1981, "sunnyboys debut album", "1981 single", "jeremy oxley songwriter"],
+    "music_5107": [1981, "sunnyboys debut album", "1981 album track", "jeremy oxley vocals"],
+    "music_5108": [1983, "get some fun album", "1983 single", "jeremy oxley songwriter"],
+    "music_5109": [1986, "liberty belle and the black diamond express album", "1986 single", "grant mclennan songwriting"],
+    "music_5110": [1981, "place without a postcard album", "1981 single", "peter garrett vocals"],
+    "music_5111": [1982, "10 to 1 album", "1982 album track", "peter garrett vocals"],
+    "music_5112": [1982, "10 to 1 album", "1982 single", "political rock"],
+    "music_5113": [1984, "this island album", "1984 single", "grace knight vocals"],
+    "music_5114": [1985, "absolutely album", "1985 single", "grace knight vocals"],
+    "music_5115": [1985, "absolutely album", "1985 single", "grace knight vocals"],
+    "music_5116": [1985, "absolutely album", "1985 single", "album title track"],
+    "music_5117": [1986, "boom crash opera debut album", "1986 debut single", "1987 album release"],
+    "music_5118": [1986, "boom crash opera debut album", "1986 single", "1987 album release"],
+    "music_5119": [1989, "these here are crazy times album", "1989 single", "richard pleasance songwriting"],
+    "music_5120": [1988, "bonk album", "1988 single", "australian top ten single"],
+    "music_5121": [1986, "bonk album", "1986 debut single", "1988 album release"],
+    "music_5122": [1981, "the loved one early recording", "1981 single", "1987 kick album re recording", "cover versions", "the loved ones original"],
+    "music_5123": [1981, "underneath the colours album", "1981 single", "michael hutchence vocals"],
+    "music_5124": [1978, "reckless debut album", "1978 studio album", "album trivia", "stephen cummings vocals"],
+    "music_5125": [1980, "suddenly album", "1980 single", "stephen cummings vocals"],
+    "music_5126": [1981, "sondra album", "1981 single", "stephen cummings vocals"],
+    "music_5127": [1984, "playing to win album", "1984 single", "john farnham vocals"],
+    "music_5128": [1982, "the net album", "1982 single", "glenn shorrock vocals"],
+    "music_5129": [1982, "time exposure album", "1982 single", "glenn shorrock vocals"],
+    "music_5130": [1983, "the net album", "1983 single", "john farnham vocals"],
+    "music_5131": [1983, "bop girl single", "1983 single", "ross wilson production"],
+    "music_5132": [1983, "australiana comedy single", "1983 release", "australian novelty music"],
+    "music_5133": [1987, "the cockroaches debut album", "1987 single", "pre wiggles group"],
+    "music_5134": [1987, "the cockroaches debut album", "1987 single", "pre wiggles group"],
+    "music_5135": [1989, "freight train heart album", "1989 single", "jimmy barnes vocals"],
+    "music_5136": [1984, "twentieth century album", "1984 single", "don walker songwriting"],
+    "music_5137": [1983, "twentieth century album", "1983 double a side single", "1984 album release"],
+    "music_5138": [1983, "twentieth century album", "1983 double a side single", "1984 album release"],
+    "music_5139": [1985, "domestic harmony album", "1985 debut single", "deborah conway vocals"],
+    "music_5140": [1986, "the happiest place in town album", "1986 single", "deborah conway vocals"],
+    "music_5141": [1981, "local and or general album", "1981 single", "album title track"],
+    "music_5142": [1983, "the modern bop album", "1983 recording", "album title track"],
+    "music_5143": [1984, "bear witness album", "1984 single", "kate ceberano vocals"],
+    "music_5144": [1986, "bear witness album", "1986 single", "kate ceberano vocals"],
+    "music_5145": [1986, "bear witness album", "1986 single", "dance music"],
+    "music_5146": [1985, "love an adventure album", "1985 single", "album title track"],
+    "music_5147": [1985, "cos life hurts album", "1985 single", "brian mannix vocals"],
+    "music_5148": [1985, "cos life hurts album", "1985 single", "brian mannix vocals"],
+    "music_5149": [1983, "word of mouth album", "1983 recording", "matt moffitt vocals"],
+    "music_5150": [1984, "the swing album", "1984 single", "michael hutchence vocals"],
+    "music_5151": [1986, "human frailty album", "1986 single", "mark seymour vocals"],
+    "music_5152": [1984, "throw your arms around me first single", "1986 human frailty re recording", "mark seymour songwriter"],
+    "music_5153": [1987, "whats a few men album", "1987 single", "mark seymour vocals"],
+    "music_5154": [1989, "ghost nation album", "1989 single", "mark seymour songwriter"],
+    "music_5155": [1987, "big bad noise album", "1987 single", "mark gable vocals"],
+    "music_5156": [1987, "big bad noise album", "1988 single", "mark gable vocals"],
+    "music_5157": [1982, "scarred for life album", "1982 single", "album title track"],
+    "music_5158": [1982, "play by numbers album", "1982 single", "roger hart vocals"],
+    "music_5159": [1981, "west of the world album", "1981 studio album", "album trivia", "lynda nutter vocals"],
+    "music_5160": [1980, "dugites debut album", "1980 single", "lynda nutter vocals"],
+    "music_5161": [1980, "so far away album", "1980 single", "chris pope songwriting"],
+    "music_5162": [1980, "the british way of life single", "1980 single", "mod revival"],
+    "music_5163": [1978, "reckless album", "1978 single", "jackie deshannon original", "cover versions"],
+    "music_5164": [1987, "the party boys album", "1987 single", "john kongos original", "cover versions"],
+    "music_5165": [1987, "the party boys album", "1987 single", "argent original", "cover versions"],
+    "music_5166": [1983, "caught in the act album", "1983 single", "john schumann songwriter", "vietnam war veterans"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const detail = recordingTags[id];
+    if (!artist || !detail) throw new Error(`Missing metadata for ${id}`);
+    const work = question.match(/'(.+)'/);
+    if (!work) throw new Error(`Missing title for ${id}`);
+    const albumQuestion = id === 'music_5124' || id === 'music_5159';
+    const year = detail[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", albumQuestion ? "albums" : "songs",
+            albumQuestion ? "album trivia" : "recordings", decade, `${decade} music`,
+            `${year} releases`, work[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...artist, ...detail.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
 const quizPack70 = [
-    {
-        id: "music_5067",
-        category: "Music",
-        question: "Which artist recorded 'My Girl'?",
-        answers: ["Donnie Iris", "Billy Squier", "Eddie Money", "Sammy Hagar"],
-        correctAnswer: "Donnie Iris"
-    },
-    {
-        id: "music_5068",
-        category: "Music",
-        question: "Which group recorded 'This Time'?",
-        answers: ["INXS", "Icehouse", "Models", "Pseudo Echo"],
-        correctAnswer: "INXS"
-    },
-    {
-        id: "music_5069",
-        category: "Music",
-        question: "Which group recorded 'Hey Little Boy'?",
-        answers: ["Divinyls", "The Go-Go's", "The Motels", "Berlin"],
-        correctAnswer: "Divinyls"
-    },
-    {
-        id: "music_5070",
-        category: "Music",
-        question: "Which group recorded 'When You Were Mine'?",
-        answers: ["The Church", "The Triffids", "The Go-Betweens", "Hoodoo Gurus"],
-        correctAnswer: "The Church"
-    },
-    {
-        id: "music_5071",
-        category: "Music",
-        question: "Which group recorded 'Counting the Beat'?",
-        answers: ["The Swingers", "Split Enz", "Mi-Sex", "The Sports"],
-        correctAnswer: "The Swingers"
-    },
-    {
-        id: "music_5072",
-        category: "Music",
-        question: "Which group recorded 'One Good Reason'?",
-        answers: ["The Swingers", "Split Enz", "Mi-Sex", "The Sports"],
-        correctAnswer: "The Swingers"
-    },
-    {
-        id: "music_5073",
-        category: "Music",
-        question: "Which group recorded 'I Hope I Never'?",
-        answers: ["Split Enz", "Crowded House", "The Swingers", "Icehouse"],
-        correctAnswer: "Split Enz"
-    },
-    {
-        id: "music_5074",
-        category: "Music",
-        question: "Which group recorded 'Straight Old Line'?",
-        answers: ["Split Enz", "Crowded House", "The Swingers", "Icehouse"],
-        correctAnswer: "Split Enz"
-    },
-    {
-        id: "music_5075",
-        category: "Music",
-        question: "Which artist recorded 'Staring at the Embers'?",
-        answers: ["Tim Finn", "Dave Dobbyn", "Neil Finn", "Ian Moss"],
-        correctAnswer: "Tim Finn"
-    },
-    {
-        id: "music_5076",
-        category: "Music",
-        question: "Which group recorded 'For Today'?",
-        answers: ["Netherworld Dancing Toys", "The Swingers", "Mi-Sex", "Split Enz"],
-        correctAnswer: "Netherworld Dancing Toys"
-    },
-    {
-        id: "music_5077",
-        category: "Music",
-        question: "Which artists recorded 'Slice of Heaven'?",
-        answers: ["Dave Dobbyn with Herbs", "Tim Finn with Herbs", "Neil Finn with Herbs", "Split Enz with Herbs"],
-        correctAnswer: "Dave Dobbyn with Herbs"
-    },
-    {
-        id: "music_5078",
-        category: "Music",
-        question: "Which artist recorded 'Oughta Be in Love'?",
-        answers: ["Dave Dobbyn", "Tim Finn", "Neil Finn", "Ian Moss"],
-        correctAnswer: "Dave Dobbyn"
-    },
-    {
-        id: "music_5079",
-        category: "Music",
-        question: "Which group recorded 'French Letter'?",
-        answers: ["Herbs", "Split Enz", "The Swingers", "Mi-Sex"],
-        correctAnswer: "Herbs"
-    },
-    {
-        id: "music_5080",
-        category: "Music",
-        question: "Which group recorded 'Sensitive to a Smile'?",
-        answers: ["Herbs", "Split Enz", "The Swingers", "Mi-Sex"],
-        correctAnswer: "Herbs"
-    },
-    {
-        id: "music_5081",
-        category: "Music",
-        question: "Which artist recorded 'Maxine'?",
-        answers: ["Sharon O'Neill", "Margaret Urlich", "Renée Geyer", "Pat Wilson"],
-        correctAnswer: "Sharon O'Neill"
-    },
-    {
-        id: "music_5082",
-        category: "Music",
-        question: "Which artist recorded 'Asian Paradise'?",
-        answers: ["Sharon O'Neill", "Margaret Urlich", "Renée Geyer", "Pat Wilson"],
-        correctAnswer: "Sharon O'Neill"
-    },
-    {
-        id: "music_5083",
-        category: "Music",
-        question: "Which artist recorded 'Escaping'?",
-        answers: ["Margaret Urlich", "Sharon O'Neill", "Renée Geyer", "Pat Wilson"],
-        correctAnswer: "Margaret Urlich"
-    },
-    {
-        id: "music_5084",
-        category: "Music",
-        question: "Which group recorded 'Soul Kind of Feeling'?",
-        answers: ["Dynamic Hepnotics", "Models", "Machinations", "Pseudo Echo"],
-        correctAnswer: "Dynamic Hepnotics"
-    },
-    {
-        id: "music_5085",
-        category: "Music",
-        question: "Which group recorded 'Current Stand'?",
-        answers: ["Kids in the Kitchen", "Models", "Machinations", "Pseudo Echo"],
-        correctAnswer: "Kids in the Kitchen"
-    },
-    {
-        id: "music_5086",
-        category: "Music",
-        question: "Which group recorded 'Change in Mood'?",
-        answers: ["Kids in the Kitchen", "Models", "Machinations", "Pseudo Echo"],
-        correctAnswer: "Kids in the Kitchen"
-    },
-    {
-        id: "music_5087",
-        category: "Music",
-        question: "Which group recorded 'Too Young for Promises'?",
-        answers: ["Koo De Tah", "Models", "Machinations", "Pseudo Echo"],
-        correctAnswer: "Koo De Tah"
-    },
-    {
-        id: "music_5088",
-        category: "Music",
-        question: "Which group recorded 'Body Talk'?",
-        answers: ["Koo De Tah", "Models", "Machinations", "Pseudo Echo"],
-        correctAnswer: "Koo De Tah"
-    },
-    {
-        id: "music_5089",
-        category: "Music",
-        question: "Which artist recorded 'Say I Love You'?",
-        answers: ["Renée Geyer", "Sharon O'Neill", "Margaret Urlich", "Pat Wilson"],
-        correctAnswer: "Renée Geyer"
-    },
-    {
-        id: "music_5090",
-        category: "Music",
-        question: "Which group recorded 'Romeo and Juliet'?",
-        answers: ["Mental as Anything", "Australian Crawl", "Hoodoo Gurus", "The Sports"],
-        correctAnswer: "Mental as Anything"
-    },
-    {
-        id: "music_5091",
-        category: "Music",
-        question: "Which artists recorded 'Dumb Things'?",
-        answers: ["Paul Kelly and the Coloured Girls", "Hunters & Collectors", "Mental as Anything", "Australian Crawl"],
-        correctAnswer: "Paul Kelly and the Coloured Girls"
-    },
-    {
-        id: "music_5092",
-        category: "Music",
-        question: "Which artists recorded 'Leaps and Bounds'?",
-        answers: ["Paul Kelly and the Coloured Girls", "Hunters & Collectors", "Mental as Anything", "Australian Crawl"],
-        correctAnswer: "Paul Kelly and the Coloured Girls"
-    },
-    {
-        id: "music_5093",
-        category: "Music",
-        question: "Which group recorded 'Gimme Some Lovin''?",
-        answers: ["GANGgajang", "Models", "Hoodoo Gurus", "Noiseworks"],
-        correctAnswer: "GANGgajang"
-    },
-    {
-        id: "music_5094",
-        category: "Music",
-        question: "Which group recorded 'Death Defying'?",
-        answers: ["Hoodoo Gurus", "The Church", "The Triffids", "The Go-Betweens"],
-        correctAnswer: "Hoodoo Gurus"
-    },
-    {
-        id: "music_5095",
-        category: "Music",
-        question: "Which group recorded 'Good Times'?",
-        answers: ["Hoodoo Gurus", "The Church", "The Triffids", "The Go-Betweens"],
-        correctAnswer: "Hoodoo Gurus"
-    },
-    {
-        id: "music_5096",
-        category: "Music",
-        question: "Which group recorded 'The Right Time'?",
-        answers: ["Hoodoo Gurus", "The Church", "The Triffids", "The Go-Betweens"],
-        correctAnswer: "Hoodoo Gurus"
-    },
-    {
-        id: "music_5097",
-        category: "Music",
-        question: "Which group recorded 'No Lies'?",
-        answers: ["Noiseworks", "Models", "Pseudo Echo", "Icehouse"],
-        correctAnswer: "Noiseworks"
-    },
-    {
-        id: "music_5098",
-        category: "Music",
-        question: "Which group recorded 'Take Me Back'?",
-        answers: ["Noiseworks", "Models", "Pseudo Echo", "Icehouse"],
-        correctAnswer: "Noiseworks"
-    },
-    {
-        id: "music_5099",
-        category: "Music",
-        question: "Which group recorded 'Touch'?",
-        answers: ["Noiseworks", "Models", "Pseudo Echo", "Icehouse"],
-        correctAnswer: "Noiseworks"
-    },
-    {
-        id: "music_5100",
-        category: "Music",
-        question: "Which group recorded 'Voice of Reason'?",
-        answers: ["Noiseworks", "Models", "Pseudo Echo", "Icehouse"],
-        correctAnswer: "Noiseworks"
-    },
-    {
-        id: "music_5101",
-        category: "Music",
-        question: "Which group recorded 'Cry in Shame'?",
-        answers: ["Johnny Diesel and the Injectors", "Noiseworks", "Cold Chisel", "The Choirboys"],
-        correctAnswer: "Johnny Diesel and the Injectors"
-    },
-    {
-        id: "music_5102",
-        category: "Music",
-        question: "Which group recorded 'Soul Revival'?",
-        answers: ["Johnny Diesel and the Injectors", "Noiseworks", "Cold Chisel", "The Choirboys"],
-        correctAnswer: "Johnny Diesel and the Injectors"
-    },
-    {
-        id: "music_5103",
-        category: "Music",
-        question: "Which group recorded 'Don't Need Love'?",
-        answers: ["Johnny Diesel and the Injectors", "Noiseworks", "Cold Chisel", "The Choirboys"],
-        correctAnswer: "Johnny Diesel and the Injectors"
-    },
-    {
-        id: "music_5104",
-        category: "Music",
-        question: "Which artist recorded 'Tucker's Daughter'?",
-        answers: ["Ian Moss", "Jimmy Barnes", "John Farnham", "Dave Dobbyn"],
-        correctAnswer: "Ian Moss"
-    },
-    {
-        id: "music_5105",
-        category: "Music",
-        question: "Which artist recorded 'Telephone Booth'?",
-        answers: ["Ian Moss", "Jimmy Barnes", "John Farnham", "Dave Dobbyn"],
-        correctAnswer: "Ian Moss"
-    },
-    {
-        id: "music_5106",
-        category: "Music",
-        question: "Which group recorded 'Alone with You'?",
-        answers: ["Sunnyboys", "Hoodoo Gurus", "The Church", "The Triffids"],
-        correctAnswer: "Sunnyboys"
-    },
-    {
-        id: "music_5107",
-        category: "Music",
-        question: "Which group recorded 'Happy Man'?",
-        answers: ["Sunnyboys", "Hoodoo Gurus", "The Church", "The Triffids"],
-        correctAnswer: "Sunnyboys"
-    },
-    {
-        id: "music_5108",
-        category: "Music",
-        question: "Which group recorded 'Show Me Some Discipline'?",
-        answers: ["Sunnyboys", "Hoodoo Gurus", "The Church", "The Triffids"],
-        correctAnswer: "Sunnyboys"
-    },
-    {
-        id: "music_5109",
-        category: "Music",
-        question: "Which group recorded 'Head Full of Steam'?",
-        answers: ["The Go-Betweens", "The Church", "The Triffids", "Hoodoo Gurus"],
-        correctAnswer: "The Go-Betweens"
-    },
-    {
-        id: "music_5110",
-        category: "Music",
-        question: "Which group recorded 'Don't Wanna Be the One'?",
-        answers: ["Midnight Oil", "INXS", "Icehouse", "Australian Crawl"],
-        correctAnswer: "Midnight Oil"
-    },
-    {
-        id: "music_5111",
-        category: "Music",
-        question: "Which group recorded 'Armistice Day'?",
-        answers: ["Midnight Oil", "INXS", "Icehouse", "Australian Crawl"],
-        correctAnswer: "Midnight Oil"
-    },
-    {
-        id: "music_5112",
-        category: "Music",
-        question: "Which group recorded 'Read About It'?",
-        answers: ["Midnight Oil", "INXS", "Icehouse", "Australian Crawl"],
-        correctAnswer: "Midnight Oil"
-    },
-    {
-        id: "music_5113",
-        category: "Music",
-        question: "Which group recorded 'Heaven (Must Be There)'?",
-        answers: ["Eurogliders", "Models", "Pseudo Echo", "Machinations"],
-        correctAnswer: "Eurogliders"
-    },
-    {
-        id: "music_5114",
-        category: "Music",
-        question: "Which group recorded 'We Will Together'?",
-        answers: ["Eurogliders", "Models", "Pseudo Echo", "Machinations"],
-        correctAnswer: "Eurogliders"
-    },
-    {
-        id: "music_5115",
-        category: "Music",
-        question: "Which group recorded 'Can't Wait to See You'?",
-        answers: ["Eurogliders", "Models", "Pseudo Echo", "Machinations"],
-        correctAnswer: "Eurogliders"
-    },
-    {
-        id: "music_5116",
-        category: "Music",
-        question: "Which group recorded 'Absolutely'?",
-        answers: ["Eurogliders", "Models", "Pseudo Echo", "Machinations"],
-        correctAnswer: "Eurogliders"
-    },
-    {
-        id: "music_5117",
-        category: "Music",
-        question: "Which group recorded 'Great Wall'?",
-        answers: ["Boom Crash Opera", "Noiseworks", "Models", "Pseudo Echo"],
-        correctAnswer: "Boom Crash Opera"
-    },
-    {
-        id: "music_5118",
-        category: "Music",
-        question: "Which group recorded 'Hands Up in the Air'?",
-        answers: ["Boom Crash Opera", "Noiseworks", "Models", "Pseudo Echo"],
-        correctAnswer: "Boom Crash Opera"
-    },
-    {
-        id: "music_5119",
-        category: "Music",
-        question: "Which group recorded 'Onion Skin'?",
-        answers: ["Boom Crash Opera", "Noiseworks", "Models", "Pseudo Echo"],
-        correctAnswer: "Boom Crash Opera"
-    },
-    {
-        id: "music_5120",
-        category: "Music",
-        question: "Which group recorded 'Breakaway'?",
-        answers: ["Big Pig", "Models", "Pseudo Echo", "Machinations"],
-        correctAnswer: "Big Pig"
-    },
-    {
-        id: "music_5121",
-        category: "Music",
-        question: "Which group recorded 'Hungry Town'?",
-        answers: ["Big Pig", "Models", "Pseudo Echo", "Machinations"],
-        correctAnswer: "Big Pig"
-    },
-    {
-        id: "music_5122",
-        category: "Music",
-        question: "Which group recorded 'The Loved One'?",
-        answers: ["INXS", "Icehouse", "Models", "Pseudo Echo"],
-        correctAnswer: "INXS"
-    },
-    {
-        id: "music_5123",
-        category: "Music",
-        question: "Which group recorded 'Stay Young'?",
-        answers: ["INXS", "Icehouse", "Models", "Pseudo Echo"],
-        correctAnswer: "INXS"
-    },
-    {
-        id: "music_5124",
-        category: "Music",
-        question: "Which group recorded 'Boys in Light'?",
-        answers: ["The Sports", "Australian Crawl", "Mental as Anything", "Hoodoo Gurus"],
-        correctAnswer: "The Sports"
-    },
-    {
-        id: "music_5125",
-        category: "Music",
-        question: "Which group recorded 'Strangers on a Train'?",
-        answers: ["The Sports", "Australian Crawl", "Mental as Anything", "Hoodoo Gurus"],
-        correctAnswer: "The Sports"
-    },
-    {
-        id: "music_5126",
-        category: "Music",
-        question: "Which group recorded 'How Come'?",
-        answers: ["The Sports", "Australian Crawl", "Mental as Anything", "Hoodoo Gurus"],
-        correctAnswer: "The Sports"
-    },
-    {
-        id: "music_5127",
-        category: "Music",
-        question: "Which group recorded 'Playing to Win'?",
-        answers: ["Little River Band", "Mondo Rock", "Australian Crawl", "Cold Chisel"],
-        correctAnswer: "Little River Band"
-    },
-    {
-        id: "music_5128",
-        category: "Music",
-        question: "Which group recorded 'The Other Guy'?",
-        answers: ["Little River Band", "Mondo Rock", "Australian Crawl", "Cold Chisel"],
-        correctAnswer: "Little River Band"
-    },
-    {
-        id: "music_5129",
-        category: "Music",
-        question: "Which group recorded 'Down on the Border'?",
-        answers: ["Little River Band", "Mondo Rock", "Australian Crawl", "Cold Chisel"],
-        correctAnswer: "Little River Band"
-    },
-    {
-        id: "music_5130",
-        category: "Music",
-        question: "Which group recorded 'We Two'?",
-        answers: ["Little River Band", "Mondo Rock", "Australian Crawl", "Cold Chisel"],
-        correctAnswer: "Little River Band"
-    },
-    {
-        id: "music_5131",
-        category: "Music",
-        question: "Which artist recorded 'Bop Girl'?",
-        answers: ["Pat Wilson", "Sharon O'Neill", "Renée Geyer", "Margaret Urlich"],
-        correctAnswer: "Pat Wilson"
-    },
-    {
-        id: "music_5132",
-        category: "Music",
-        question: "Which artist recorded 'Australiana'?",
-        answers: ["Austen Tayshus", "Kevin Bloody Wilson", "Paul Kelly", "John Williamson"],
-        correctAnswer: "Austen Tayshus"
-    },
-    {
-        id: "music_5133",
-        category: "Music",
-        question: "Which group recorded 'She's the One'?",
-        answers: ["The Cockroaches", "The Sports", "Sunnyboys", "Hoodoo Gurus"],
-        correctAnswer: "The Cockroaches"
-    },
-    {
-        id: "music_5134",
-        category: "Music",
-        question: "Which group recorded 'Some Kind of Girl'?",
-        answers: ["The Cockroaches", "The Sports", "Sunnyboys", "Hoodoo Gurus"],
-        correctAnswer: "The Cockroaches"
-    },
-    {
-        id: "music_5135",
-        category: "Music",
-        question: "Which artist recorded 'Driving Wheels'?",
-        answers: ["Jimmy Barnes", "Ian Moss", "John Farnham", "Dave Dobbyn"],
-        correctAnswer: "Jimmy Barnes"
-    },
-    {
-        id: "music_5136",
-        category: "Music",
-        question: "Which group recorded 'Flame Trees'?",
-        answers: ["Cold Chisel", "Australian Crawl", "Noiseworks", "The Choirboys"],
-        correctAnswer: "Cold Chisel"
-    },
-    {
-        id: "music_5137",
-        category: "Music",
-        question: "Which group recorded 'No Sense'?",
-        answers: ["Cold Chisel", "Australian Crawl", "Noiseworks", "The Choirboys"],
-        correctAnswer: "Cold Chisel"
-    },
-    {
-        id: "music_5138",
-        category: "Music",
-        question: "Which group recorded 'Hold Me Tight'?",
-        answers: ["Cold Chisel", "Australian Crawl", "Noiseworks", "The Choirboys"],
-        correctAnswer: "Cold Chisel"
-    },
-    {
-        id: "music_5139",
-        category: "Music",
-        question: "Which group recorded 'Man Overboard'?",
-        answers: ["Do-Ré-Mi", "Models", "I'm Talking", "Machinations"],
-        correctAnswer: "Do-Ré-Mi"
-    },
-    {
-        id: "music_5140",
-        category: "Music",
-        question: "Which group recorded 'Warnings Moving Clockwise'?",
-        answers: ["Do-Ré-Mi", "Models", "I'm Talking", "Machinations"],
-        correctAnswer: "Do-Ré-Mi"
-    },
-    {
-        id: "music_5141",
-        category: "Music",
-        question: "Which group recorded 'Local and/or General'?",
-        answers: ["Models", "Machinations", "Pseudo Echo", "Real Life"],
-        correctAnswer: "Models"
-    },
-    {
-        id: "music_5142",
-        category: "Music",
-        question: "Which group recorded 'The Modern Bop'?",
-        answers: ["Mondo Rock", "Models", "Machinations", "Pseudo Echo"],
-        correctAnswer: "Mondo Rock"
-    },
-    {
-        id: "music_5143",
-        category: "Music",
-        question: "Which group recorded 'Trust Me'?",
-        answers: ["I'm Talking", "Models", "Machinations", "Pseudo Echo"],
-        correctAnswer: "I'm Talking"
-    },
-    {
-        id: "music_5144",
-        category: "Music",
-        question: "Which group recorded 'Do You Wanna Be?'?",
-        answers: ["I'm Talking", "Models", "Machinations", "Pseudo Echo"],
-        correctAnswer: "I'm Talking"
-    },
-    {
-        id: "music_5145",
-        category: "Music",
-        question: "Which group recorded 'Holy Word'?",
-        answers: ["I'm Talking", "Models", "Machinations", "Pseudo Echo"],
-        correctAnswer: "I'm Talking"
-    },
-    {
-        id: "music_5146",
-        category: "Music",
-        question: "Which group recorded 'Love an Adventure'?",
-        answers: ["Pseudo Echo", "Real Life", "Models", "Machinations"],
-        correctAnswer: "Pseudo Echo"
-    },
-    {
-        id: "music_5147",
-        category: "Music",
-        question: "Which group recorded 'Everybody Wants to Work'?",
-        answers: ["Uncanny X-Men", "Pseudo Echo", "Real Life", "Models"],
-        correctAnswer: "Uncanny X-Men"
-    },
-    {
-        id: "music_5148",
-        category: "Music",
-        question: "Which group recorded '50 Years'?",
-        answers: ["Uncanny X-Men", "Pseudo Echo", "Real Life", "Models"],
-        correctAnswer: "Uncanny X-Men"
-    },
-    {
-        id: "music_5149",
-        category: "Music",
-        question: "Which group recorded 'Mancini Shuffle'?",
-        answers: ["Matt Finish", "The Church", "Sunnyboys", "The Triffids"],
-        correctAnswer: "Matt Finish"
-    },
-    {
-        id: "music_5150",
-        category: "Music",
-        question: "Which group recorded 'Melting in the Sun'?",
-        answers: ["INXS", "Icehouse", "Models", "Pseudo Echo"],
-        correctAnswer: "INXS"
-    },
-    {
-        id: "music_5151",
-        category: "Music",
-        question: "Which group recorded 'Say Goodbye'?",
-        answers: ["Hunters & Collectors", "Midnight Oil", "Hoodoo Gurus", "The Church"],
-        correctAnswer: "Hunters & Collectors"
-    },
-    {
-        id: "music_5152",
-        category: "Music",
-        question: "Which group recorded 'Throw Your Arms Around Me'?",
-        answers: ["Hunters & Collectors", "Midnight Oil", "Hoodoo Gurus", "The Church"],
-        correctAnswer: "Hunters & Collectors"
-    },
-    {
-        id: "music_5153",
-        category: "Music",
-        question: "Which group recorded 'Do You See What I See?'?",
-        answers: ["Hunters & Collectors", "Midnight Oil", "Hoodoo Gurus", "The Church"],
-        correctAnswer: "Hunters & Collectors"
-    },
-    {
-        id: "music_5154",
-        category: "Music",
-        question: "Which group recorded 'When the River Runs Dry'?",
-        answers: ["Hunters & Collectors", "Midnight Oil", "Hoodoo Gurus", "The Church"],
-        correctAnswer: "Hunters & Collectors"
-    },
-    {
-        id: "music_5155",
-        category: "Music",
-        question: "Which group recorded 'Run to Paradise'?",
-        answers: ["The Choirboys", "Noiseworks", "Cold Chisel", "Australian Crawl"],
-        correctAnswer: "The Choirboys"
-    },
-    {
-        id: "music_5156",
-        category: "Music",
-        question: "Which group recorded 'Boys Will Be Boys'?",
-        answers: ["The Choirboys", "Noiseworks", "Cold Chisel", "Australian Crawl"],
-        correctAnswer: "The Choirboys"
-    },
-    {
-        id: "music_5157",
-        category: "Music",
-        question: "Which group recorded 'Scarred for Life'?",
-        answers: ["Rose Tattoo", "Cold Chisel", "The Angels", "The Choirboys"],
-        correctAnswer: "Rose Tattoo"
-    },
-    {
-        id: "music_5158",
-        category: "Music",
-        question: "Which group recorded 'One Perfect Day'?",
-        answers: ["Little Heroes", "The Sports", "Sunnyboys", "The Church"],
-        correctAnswer: "Little Heroes"
-    },
-    {
-        id: "music_5159",
-        category: "Music",
-        question: "Which group recorded 'Listening'?",
-        answers: ["The Dugites", "The Sports", "Sunnyboys", "The Church"],
-        correctAnswer: "The Dugites"
-    },
-    {
-        id: "music_5160",
-        category: "Music",
-        question: "Which group recorded 'In Your Car'?",
-        answers: ["The Dugites", "The Sports", "Sunnyboys", "The Church"],
-        correctAnswer: "The Dugites"
-    },
-    {
-        id: "music_5161",
-        category: "Music",
-        question: "Which group recorded 'Maybe Tomorrow'?",
-        answers: ["The Chords", "The Jam", "Secret Affair", "The Lambrettas"],
-        correctAnswer: "The Chords"
-    },
-    {
-        id: "music_5162",
-        category: "Music",
-        question: "Which group recorded 'The British Way of Life'?",
-        answers: ["The Chords", "The Jam", "Secret Affair", "The Lambrettas"],
-        correctAnswer: "The Chords"
-    },
-    {
-        id: "music_5163",
-        category: "Music",
-        question: "Which group recorded 'When You Walk in the Room'?",
-        answers: ["The Sports", "Australian Crawl", "Mental as Anything", "Hoodoo Gurus"],
-        correctAnswer: "The Sports"
-    },
-    {
-        id: "music_5164",
-        category: "Music",
-        question: "Which group recorded 'He's Gonna Step on You Again'?",
-        answers: ["The Party Boys", "Noiseworks", "The Choirboys", "Rose Tattoo"],
-        correctAnswer: "The Party Boys"
-    },
-    {
-        id: "music_5165",
-        category: "Music",
-        question: "Which group recorded 'Hold Your Head Up'?",
-        answers: ["The Party Boys", "Noiseworks", "The Choirboys", "Rose Tattoo"],
-        correctAnswer: "The Party Boys"
-    },
-    {
-        id: "music_5166",
-        category: "Music",
-        question: "Which group recorded 'I Was Only 19'?",
-        answers: ["Redgum", "Midnight Oil", "Goanna", "Warumpi Band"],
-        correctAnswer: "Redgum"
-    }
+    makeQuestion("music_5067", "Which artist recorded 'My Girl'?", ["Donnie Iris", "Billy Squier", "Eddie Money", "Sammy Hagar"], "Donnie Iris", "Medium"),
+    makeQuestion("music_5068", "Which group recorded 'This Time'?", ["INXS", "Icehouse", "Models", "Pseudo Echo"], "INXS", "Easy"),
+    makeQuestion("music_5069", "Which group recorded 'Hey Little Boy'?", ["Divinyls", "The Go-Go's", "The Motels", "Berlin"], "Divinyls", "Medium"),
+    makeQuestion("music_5070", "Which group recorded 'When You Were Mine'?", ["The Church", "The Triffids", "The Go-Betweens", "Hoodoo Gurus"], "The Church", "Medium"),
+    makeQuestion("music_5071", "Which group recorded 'Counting the Beat'?", ["The Swingers", "Split Enz", "Mi-Sex", "The Sports"], "The Swingers", "Easy"),
+    makeQuestion("music_5072", "Which group recorded 'One Good Reason'?", ["The Swingers", "Split Enz", "Mi-Sex", "The Sports"], "The Swingers", "Hard"),
+    makeQuestion("music_5073", "Which group recorded 'I Hope I Never'?", ["Split Enz", "Crowded House", "The Swingers", "Icehouse"], "Split Enz", "Easy"),
+    makeQuestion("music_5074", "Which group recorded 'Straight Old Line'?", ["Split Enz", "Crowded House", "The Swingers", "Icehouse"], "Split Enz", "Medium"),
+    makeQuestion("music_5075", "Which artist recorded 'Staring at the Embers'?", ["Tim Finn", "Dave Dobbyn", "Neil Finn", "Ian Moss"], "Tim Finn", "Hard"),
+    makeQuestion("music_5076", "Which group recorded 'For Today'?", ["Netherworld Dancing Toys", "The Swingers", "Mi-Sex", "Split Enz"], "Netherworld Dancing Toys", "Medium"),
+    makeQuestion("music_5077", "Which artists recorded 'Slice of Heaven'?", ["Dave Dobbyn with Herbs", "Tim Finn with Herbs", "Neil Finn with Herbs", "Split Enz with Herbs"], "Dave Dobbyn with Herbs", "Easy"),
+    makeQuestion("music_5078", "Which artist recorded 'Oughta Be in Love'?", ["Dave Dobbyn", "Tim Finn", "Neil Finn", "Ian Moss"], "Dave Dobbyn", "Medium"),
+    makeQuestion("music_5079", "Which group recorded 'French Letter'?", ["Herbs", "Split Enz", "The Swingers", "Mi-Sex"], "Herbs", "Medium"),
+    makeQuestion("music_5080", "Which group recorded 'Sensitive to a Smile'?", ["Herbs", "Split Enz", "The Swingers", "Mi-Sex"], "Herbs", "Medium"),
+    makeQuestion("music_5081", "Which artist recorded 'Maxine'?", ["Sharon O'Neill", "Margaret Urlich", "Renée Geyer", "Pat Wilson"], "Sharon O'Neill", "Easy"),
+    makeQuestion("music_5082", "Which artist recorded 'Asian Paradise'?", ["Sharon O'Neill", "Margaret Urlich", "Renée Geyer", "Pat Wilson"], "Sharon O'Neill", "Hard"),
+    makeQuestion("music_5083", "Which artist recorded 'Escaping'?", ["Margaret Urlich", "Sharon O'Neill", "Renée Geyer", "Pat Wilson"], "Margaret Urlich", "Easy"),
+    makeQuestion("music_5084", "Which group recorded 'Soul Kind of Feeling'?", ["Dynamic Hepnotics", "Models", "Machinations", "Pseudo Echo"], "Dynamic Hepnotics", "Medium"),
+    makeQuestion("music_5085", "Which group recorded 'Current Stand'?", ["Kids in the Kitchen", "Models", "Machinations", "Pseudo Echo"], "Kids in the Kitchen", "Medium"),
+    makeQuestion("music_5086", "Which group recorded 'Change in Mood'?", ["Kids in the Kitchen", "Models", "Machinations", "Pseudo Echo"], "Kids in the Kitchen", "Medium"),
+    makeQuestion("music_5087", "Which group recorded 'Too Young for Promises'?", ["Koo De Tah", "Models", "Machinations", "Pseudo Echo"], "Koo De Tah", "Easy"),
+    makeQuestion("music_5088", "Which group recorded 'Body Talk'?", ["Koo De Tah", "Models", "Machinations", "Pseudo Echo"], "Koo De Tah", "Medium"),
+    makeQuestion("music_5089", "Which artist recorded 'Say I Love You'?", ["Renée Geyer", "Sharon O'Neill", "Margaret Urlich", "Pat Wilson"], "Renée Geyer", "Medium"),
+    makeQuestion("music_5090", "Which group recorded 'Romeo and Juliet'?", ["Mental as Anything", "Australian Crawl", "Hoodoo Gurus", "The Sports"], "Mental as Anything", "Medium"),
+    makeQuestion("music_5091", "Which artists recorded 'Dumb Things'?", ["Paul Kelly and the Coloured Girls", "Hunters & Collectors", "Mental as Anything", "Australian Crawl"], "Paul Kelly and the Coloured Girls", "Easy"),
+    makeQuestion("music_5092", "Which artists recorded 'Leaps and Bounds'?", ["Paul Kelly and the Coloured Girls", "Hunters & Collectors", "Mental as Anything", "Australian Crawl"], "Paul Kelly and the Coloured Girls", "Easy"),
+    makeQuestion("music_5093", "Which group recorded 'Gimme Some Loving'?", ["GANGgajang", "Models", "Hoodoo Gurus", "Noiseworks"], "GANGgajang", "Medium"),
+    makeQuestion("music_5094", "Which group recorded 'Death Defying'?", ["Hoodoo Gurus", "The Church", "The Triffids", "The Go-Betweens"], "Hoodoo Gurus", "Medium"),
+    makeQuestion("music_5095", "Which group recorded 'Good Times'?", ["Hoodoo Gurus", "The Church", "The Triffids", "The Go-Betweens"], "Hoodoo Gurus", "Easy"),
+    makeQuestion("music_5096", "Which group recorded 'The Right Time'?", ["Hoodoo Gurus", "The Church", "The Triffids", "The Go-Betweens"], "Hoodoo Gurus", "Hard"),
+    makeQuestion("music_5097", "Which group recorded 'No Lies'?", ["Noiseworks", "Models", "Pseudo Echo", "Icehouse"], "Noiseworks", "Easy"),
+    makeQuestion("music_5098", "Which group recorded 'Take Me Back'?", ["Noiseworks", "Models", "Pseudo Echo", "Icehouse"], "Noiseworks", "Hard"),
+    makeQuestion("music_5099", "Which group recorded 'Touch'?", ["Noiseworks", "Models", "Pseudo Echo", "Icehouse"], "Noiseworks", "Medium"),
+    makeQuestion("music_5100", "Which group recorded 'Voice of Reason'?", ["Noiseworks", "Models", "Pseudo Echo", "Icehouse"], "Noiseworks", "Hard"),
+    makeQuestion("music_5101", "Which group recorded 'Cry in Shame'?", ["Johnny Diesel and the Injectors", "Noiseworks", "Cold Chisel", "The Choirboys"], "Johnny Diesel and the Injectors", "Medium"),
+    makeQuestion("music_5102", "Which group recorded 'Soul Revival'?", ["Johnny Diesel and the Injectors", "Noiseworks", "Cold Chisel", "The Choirboys"], "Johnny Diesel and the Injectors", "Easy"),
+    makeQuestion("music_5103", "Which group recorded 'Don't Need Love'?", ["Johnny Diesel and the Injectors", "Noiseworks", "Cold Chisel", "The Choirboys"], "Johnny Diesel and the Injectors", "Medium"),
+    makeQuestion("music_5104", "Which artist recorded 'Tucker's Daughter'?", ["Ian Moss", "Jimmy Barnes", "John Farnham", "Dave Dobbyn"], "Ian Moss", "Easy"),
+    makeQuestion("music_5105", "Which artist recorded 'Telephone Booth'?", ["Ian Moss", "Jimmy Barnes", "John Farnham", "Dave Dobbyn"], "Ian Moss", "Medium"),
+    makeQuestion("music_5106", "Which group recorded 'Alone with You'?", ["Sunnyboys", "Hoodoo Gurus", "The Church", "The Triffids"], "Sunnyboys", "Medium"),
+    makeQuestion("music_5107", "Which group recorded 'Happy Man'?", ["Sunnyboys", "Hoodoo Gurus", "The Church", "The Triffids"], "Sunnyboys", "Hard"),
+    makeQuestion("music_5108", "Which group recorded 'Show Me Some Discipline'?", ["Sunnyboys", "Hoodoo Gurus", "The Church", "The Triffids"], "Sunnyboys", "Hard"),
+    makeQuestion("music_5109", "Which group recorded 'Head Full of Steam'?", ["The Go-Betweens", "The Church", "The Triffids", "Hoodoo Gurus"], "The Go-Betweens", "Medium"),
+    makeQuestion("music_5110", "Which group recorded 'Don't Wanna Be the One'?", ["Midnight Oil", "INXS", "Icehouse", "Australian Crawl"], "Midnight Oil", "Medium"),
+    makeQuestion("music_5111", "Which group recorded 'Armistice Day'?", ["Midnight Oil", "INXS", "Icehouse", "Australian Crawl"], "Midnight Oil", "Hard"),
+    makeQuestion("music_5112", "Which group recorded 'Read About It'?", ["Midnight Oil", "INXS", "Icehouse", "Australian Crawl"], "Midnight Oil", "Easy"),
+    makeQuestion("music_5113", "Which group recorded 'Heaven (Must Be There)'?", ["Eurogliders", "Models", "Pseudo Echo", "Machinations"], "Eurogliders", "Easy"),
+    makeQuestion("music_5114", "Which group recorded 'We Will Together'?", ["Eurogliders", "Models", "Pseudo Echo", "Machinations"], "Eurogliders", "Medium"),
+    makeQuestion("music_5115", "Which group recorded 'Can't Wait to See You'?", ["Eurogliders", "Models", "Pseudo Echo", "Machinations"], "Eurogliders", "Hard"),
+    makeQuestion("music_5116", "Which group recorded 'Absolutely'?", ["Eurogliders", "Models", "Pseudo Echo", "Machinations"], "Eurogliders", "Hard"),
+    makeQuestion("music_5117", "Which group recorded 'Great Wall'?", ["Boom Crash Opera", "Noiseworks", "Models", "Pseudo Echo"], "Boom Crash Opera", "Medium"),
+    makeQuestion("music_5118", "Which group recorded 'Hands Up in the Air'?", ["Boom Crash Opera", "Noiseworks", "Models", "Pseudo Echo"], "Boom Crash Opera", "Hard"),
+    makeQuestion("music_5119", "Which group recorded 'Onion Skin'?", ["Boom Crash Opera", "Noiseworks", "Models", "Pseudo Echo"], "Boom Crash Opera", "Medium"),
+    makeQuestion("music_5120", "Which group recorded 'Breakaway'?", ["Big Pig", "Models", "Pseudo Echo", "Machinations"], "Big Pig", "Medium"),
+    makeQuestion("music_5121", "Which group recorded 'Hungry Town'?", ["Big Pig", "Models", "Pseudo Echo", "Machinations"], "Big Pig", "Hard"),
+    makeQuestion("music_5122", "Which group recorded 'The Loved One'?", ["INXS", "Icehouse", "Models", "Pseudo Echo"], "INXS", "Easy"),
+    makeQuestion("music_5123", "Which group recorded 'Stay Young'?", ["INXS", "Icehouse", "Models", "Pseudo Echo"], "INXS", "Medium"),
+    makeQuestion("music_5124", "Which group released the album 'Reckless'?", ["The Sports", "Australian Crawl", "Mental as Anything", "Hoodoo Gurus"], "The Sports", "Hard"),
+    makeQuestion("music_5125", "Which group recorded 'Strangers on a Train'?", ["The Sports", "Australian Crawl", "Mental as Anything", "Hoodoo Gurus"], "The Sports", "Hard"),
+    makeQuestion("music_5126", "Which group recorded 'How Come'?", ["The Sports", "Australian Crawl", "Mental as Anything", "Hoodoo Gurus"], "The Sports", "Hard"),
+    makeQuestion("music_5127", "Which group recorded 'Playing to Win'?", ["Little River Band", "Mondo Rock", "Australian Crawl", "Cold Chisel"], "Little River Band", "Easy"),
+    makeQuestion("music_5128", "Which group recorded 'The Other Guy'?", ["Little River Band", "Mondo Rock", "Australian Crawl", "Cold Chisel"], "Little River Band", "Medium"),
+    makeQuestion("music_5129", "Which group recorded 'Down on the Border'?", ["Little River Band", "Mondo Rock", "Australian Crawl", "Cold Chisel"], "Little River Band", "Hard"),
+    makeQuestion("music_5130", "Which group recorded 'We Two'?", ["Little River Band", "Mondo Rock", "Australian Crawl", "Cold Chisel"], "Little River Band", "Medium"),
+    makeQuestion("music_5131", "Which artist recorded 'Bop Girl'?", ["Pat Wilson", "Sharon O'Neill", "Renée Geyer", "Margaret Urlich"], "Pat Wilson", "Medium"),
+    makeQuestion("music_5132", "Which artist recorded 'Australiana'?", ["Austen Tayshus", "Kevin Bloody Wilson", "Paul Kelly", "John Williamson"], "Austen Tayshus", "Easy"),
+    makeQuestion("music_5133", "Which group recorded 'She's the One'?", ["The Cockroaches", "The Sports", "Sunnyboys", "Hoodoo Gurus"], "The Cockroaches", "Hard"),
+    makeQuestion("music_5134", "Which group recorded 'Some Kind of Girl'?", ["The Cockroaches", "The Sports", "Sunnyboys", "Hoodoo Gurus"], "The Cockroaches", "Hard"),
+    makeQuestion("music_5135", "Which artist recorded 'Driving Wheels'?", ["Jimmy Barnes", "Ian Moss", "John Farnham", "Dave Dobbyn"], "Jimmy Barnes", "Medium"),
+    makeQuestion("music_5136", "Which group recorded 'Flame Trees'?", ["Cold Chisel", "Australian Crawl", "Noiseworks", "The Choirboys"], "Cold Chisel", "Easy"),
+    makeQuestion("music_5137", "Which group recorded 'No Sense'?", ["Cold Chisel", "Australian Crawl", "Noiseworks", "The Choirboys"], "Cold Chisel", "Hard"),
+    makeQuestion("music_5138", "Which group recorded 'Hold Me Tight'?", ["Cold Chisel", "Australian Crawl", "Noiseworks", "The Choirboys"], "Cold Chisel", "Hard"),
+    makeQuestion("music_5139", "Which group recorded 'Man Overboard'?", ["Do-Ré-Mi", "Models", "I'm Talking", "Machinations"], "Do-Ré-Mi", "Hard"),
+    makeQuestion("music_5140", "Which group recorded 'Warnings Moving Clockwise'?", ["Do-Ré-Mi", "Models", "I'm Talking", "Machinations"], "Do-Ré-Mi", "Hard"),
+    makeQuestion("music_5141", "Which group recorded 'Local and/or General'?", ["Models", "Machinations", "Pseudo Echo", "Real Life"], "Models", "Hard"),
+    makeQuestion("music_5142", "Which group recorded 'The Modern Bop'?", ["Mondo Rock", "Models", "Machinations", "Pseudo Echo"], "Mondo Rock", "Hard"),
+    makeQuestion("music_5143", "Which group recorded 'Trust Me'?", ["I'm Talking", "Models", "Machinations", "Pseudo Echo"], "I'm Talking", "Medium"),
+    makeQuestion("music_5144", "Which group recorded 'Do You Wanna Be?'?", ["I'm Talking", "Models", "Machinations", "Pseudo Echo"], "I'm Talking", "Hard"),
+    makeQuestion("music_5145", "Which group recorded 'Holy Word'?", ["I'm Talking", "Models", "Machinations", "Pseudo Echo"], "I'm Talking", "Medium"),
+    makeQuestion("music_5146", "Which group recorded 'Love an Adventure'?", ["Pseudo Echo", "Real Life", "Models", "Machinations"], "Pseudo Echo", "Hard"),
+    makeQuestion("music_5147", "Which group recorded 'Everybody Wants to Work'?", ["Uncanny X-Men", "Pseudo Echo", "Real Life", "Models"], "Uncanny X-Men", "Hard"),
+    makeQuestion("music_5148", "Which group recorded '50 Years'?", ["Uncanny X-Men", "Pseudo Echo", "Real Life", "Models"], "Uncanny X-Men", "Hard"),
+    makeQuestion("music_5149", "Which group recorded 'Mancini Shuffle'?", ["Matt Finish", "The Church", "Sunnyboys", "The Triffids"], "Matt Finish", "Hard"),
+    makeQuestion("music_5150", "Which group recorded 'Melting in the Sun'?", ["INXS", "Icehouse", "Models", "Pseudo Echo"], "INXS", "Hard"),
+    makeQuestion("music_5151", "Which group recorded 'Say Goodbye'?", ["Hunters & Collectors", "Midnight Oil", "Hoodoo Gurus", "The Church"], "Hunters & Collectors", "Medium"),
+    makeQuestion("music_5152", "Which group recorded 'Throw Your Arms Around Me'?", ["Hunters & Collectors", "Midnight Oil", "Hoodoo Gurus", "The Church"], "Hunters & Collectors", "Easy"),
+    makeQuestion("music_5153", "Which group recorded 'Do You See What I See?'?", ["Hunters & Collectors", "Midnight Oil", "Hoodoo Gurus", "The Church"], "Hunters & Collectors", "Medium"),
+    makeQuestion("music_5154", "Which group recorded 'When the River Runs Dry'?", ["Hunters & Collectors", "Midnight Oil", "Hoodoo Gurus", "The Church"], "Hunters & Collectors", "Hard"),
+    makeQuestion("music_5155", "Which group recorded 'Run to Paradise'?", ["The Choirboys", "Noiseworks", "Cold Chisel", "Australian Crawl"], "The Choirboys", "Easy"),
+    makeQuestion("music_5156", "Which group recorded 'Boys Will Be Boys'?", ["The Choirboys", "Noiseworks", "Cold Chisel", "Australian Crawl"], "The Choirboys", "Hard"),
+    makeQuestion("music_5157", "Which group recorded 'Scarred for Life'?", ["Rose Tattoo", "Cold Chisel", "The Angels", "The Choirboys"], "Rose Tattoo", "Medium"),
+    makeQuestion("music_5158", "Which group recorded 'One Perfect Day'?", ["Little Heroes", "The Sports", "Sunnyboys", "The Church"], "Little Heroes", "Hard"),
+    makeQuestion("music_5159", "Which group released the album 'West of the World'?", ["The Dugites", "The Sports", "Sunnyboys", "The Church"], "The Dugites", "Hard"),
+    makeQuestion("music_5160", "Which group recorded 'In Your Car'?", ["The Dugites", "The Sports", "Sunnyboys", "The Church"], "The Dugites", "Hard"),
+    makeQuestion("music_5161", "Which group recorded 'Maybe Tomorrow'?", ["The Chords", "The Jam", "Secret Affair", "The Lambrettas"], "The Chords", "Medium"),
+    makeQuestion("music_5162", "Which group recorded 'The British Way of Life'?", ["The Chords", "The Jam", "Secret Affair", "The Lambrettas"], "The Chords", "Hard"),
+    makeQuestion("music_5163", "Which group recorded 'When You Walk in the Room'?", ["The Sports", "Australian Crawl", "Mental as Anything", "Hoodoo Gurus"], "The Sports", "Hard"),
+    makeQuestion("music_5164", "Which group recorded 'He's Gonna Step on You Again'?", ["The Party Boys", "Noiseworks", "The Choirboys", "Rose Tattoo"], "The Party Boys", "Easy"),
+    makeQuestion("music_5165", "Which group recorded 'Hold Your Head Up'?", ["The Party Boys", "Noiseworks", "The Choirboys", "Rose Tattoo"], "The Party Boys", "Hard"),
+    makeQuestion("music_5166", "Which group recorded 'I Was Only 19'?", ["Redgum", "Midnight Oil", "Goanna", "Warumpi Band"], "Redgum", "Easy"),
 ];
 
 module.exports = quizPack70;
