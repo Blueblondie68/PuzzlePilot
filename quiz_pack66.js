@@ -1,712 +1,276 @@
 // quiz_pack66.js
-// PuzzlePilot Big Quiz
-// Music Pack 66
-// 100 questions
-// IDs: music_4667 - music_4766
+// PuzzlePilot Bigggggg Quiz - Music Pack 66
+// 100 audited questions: music_4667 through music_4766.
+// Artist and recording metadata expand into full tags for every question.
+
+const artistTags = {
+    "Icehouse": ["new wave", "synth-pop", "australian", "bands", "sydney", "iva davies", "formerly flowers"],
+    "Mondo Rock": ["rock", "pop rock", "australian", "bands", "ross wilson", "eric mccusker", "melbourne"],
+    "Goanna": ["folk rock", "australian", "bands", "shane howard", "trevor lucas", "australian protest songs"],
+    "Moving Pictures": ["pop rock", "australian", "bands", "alex smith", "charles fisher"],
+    "Matt Finish": ["rock", "australian", "bands", "matt moffitt", "sydney"],
+    "Rose Tattoo": ["hard rock", "blues rock", "australian", "bands", "angry anderson", "vanda and young production"],
+    "The Angels": ["hard rock", "pub rock", "australian", "bands", "doc neeson", "brewster brothers"],
+    "Cold Chisel": ["pub rock", "rock", "australian", "bands", "jimmy barnes", "ian moss", "don walker"],
+    "Mental as Anything": ["new wave", "pop rock", "australian", "bands", "sydney", "greedy smith", "martin plaza", "reg mombassa"],
+    "Australian Crawl": ["pub rock", "rock", "australian", "bands", "james reyne", "melbourne"],
+    "Split Enz": ["new wave", "pop rock", "new zealand", "bands", "tim finn", "neil finn", "australasian music"],
+    "Tim Finn": ["new wave", "pop rock", "new zealand", "male singers", "solo artists", "split enz", "finn brothers"],
+    "Donnie Iris": ["power pop", "rock", "american", "male singers", "solo artists", "the cruisers", "mark avsec"],
+    "Aldo Nova": ["arena rock", "hard rock", "canadian", "male singers", "solo artists", "singer-songwriters"],
+    "Loverboy": ["arena rock", "hard rock", "canadian", "bands", "mike reno", "paul dean"],
+    "Glass Tiger": ["pop rock", "canadian", "bands", "alan frew", "jim vallance"],
+    "Honeymoon Suite": ["arena rock", "pop rock", "canadian", "bands", "johnnie dee", "derry grehan"],
+    "Kim Mitchell": ["rock", "canadian", "male singers", "solo artists", "max webster", "singer-songwriters"],
+    "Red Rider": ["rock", "canadian", "bands", "tom cochrane", "ken greer"],
+    "Tom Cochrane and Red Rider": ["rock", "canadian", "bands", "tom cochrane", "red rider", "joint artist credit"],
+    "Paul Carrack": ["blue-eyed soul", "pop rock", "british", "male singers", "solo artists", "ace", "squeeze", "mike and the mechanics"],
+    "Rod Stewart": ["pop rock", "rock", "british", "male singers", "solo artists", "raspy vocals", "faces band"],
+    "Christopher Cross": ["soft rock", "yacht rock", "american", "male singers", "solo artists", "singer-songwriters"],
+    "Robbie Dupree": ["soft rock", "yacht rock", "american", "male singers", "solo artists"],
+    "Bertie Higgins": ["soft rock", "yacht rock", "american", "male singers", "solo artists"],
+    "Paul Davis": ["soft rock", "pop rock", "american", "male singers", "solo artists", "singer-songwriters"],
+    "Karla Bonoff": ["soft rock", "folk rock", "american", "female singers", "solo artists", "singer-songwriters"],
+    "Charlie Dore": ["soft rock", "pop rock", "british", "female singers", "solo artists", "singer-songwriters"],
+    "Leo Sayer": ["pop", "soft rock", "british", "male singers", "solo artists", "singer-songwriters"],
+    "Howard Jones": ["synth-pop", "new wave", "british", "male singers", "solo artists", "singer-songwriters"],
+    "The The": ["post-punk", "alternative rock", "british", "bands", "matt johnson", "political rock"],
+    "The Alarm": ["alternative rock", "new wave", "welsh", "bands", "mike peters", "eddie macdonald"],
+    "Big Country": ["rock", "celtic rock", "scottish", "bands", "stuart adamson", "bruce watson"],
+    "Kim Wilde": ["synth-pop", "new wave", "british", "female singers", "solo artists", "ricky wilde", "marty wilde"],
+    "The Colourfield": ["new wave", "jangle pop", "british", "bands", "terry hall", "fun boy three"],
+    "Thomas Dolby": ["synth-pop", "new wave", "british", "male singers", "solo artists", "record producers"],
+};
+
+const recordingTags = {
+    "music_4667": [1989, "great southern land compilation", "1989 singles", "iva davies songwriting"],
+    "music_4668": [1980, "chemistry album", "1980 singles", "ross wilson lead vocals", "rick springfield later cover"],
+    "music_4669": [1981, "chemistry album", "1981 singles"],
+    "music_4670": [1981, "chemistry album", "1981 singles", "album title tracks"],
+    "music_4671": [1983, "the modern bop album", "1983 singles", "1984 album release", "eric mccusker songwriter"],
+    "music_4672": [1981, "chemistry album", "1981 singles"],
+    "music_4673": [1982, "spirit of place album", "1982 singles", "shane howard songwriter", "indigenous land rights", "australian top five singles"],
+    "music_4674": [1982, "spirit of place album", "1983 singles", "shane howard songwriter"],
+    "music_4675": [1982, "days of innocence album", "1982 singles", "alex smith vocals", "shannon noll later cover"],
+    "music_4676": [1981, "days of innocence album", "1982 singles", "australian top twenty singles"],
+    "music_4677": [1981, "short note album", "1981 singles", "album title tracks", "matt moffitt vocals"],
+    "music_4678": [1977, "rose tattoo debut album", "1977 debut single", "1978 album release", "ian rilen songwriter"],
+    "music_4679": [1982, "scarred for life album", "1982 singles", "angry anderson vocals"],
+    "music_4680": [1980, "dark room album", "1980 singles", "doc neeson vocals", "not rose tattoo same title"],
+    "music_4681": [1979, "no exit album", "1979 singles", "doc neeson vocals"],
+    "music_4682": [1978, "face to face album", "1978 singles", "doc neeson vocals"],
+    "music_4683": [1978, "face to face album", "1978 album tracks", "1979 singles", "doc neeson vocals"],
+    "music_4684": [1980, "dark room album", "1981 singles", "doc neeson vocals"],
+    "music_4685": [1982, "watch the red era", "1982 singles", "1983 album release", "doc neeson vocals"],
+    "music_4686": [1980, "east album", "1980 singles", "jimmy barnes lead vocals"],
+    "music_4687": [1979, "breakfast at sweethearts album", "1979 singles", "jimmy barnes vocals"],
+    "music_4688": [1980, "east album", "1980 singles", "jimmy barnes vocals"],
+    "music_4689": [1982, "circus animals album", "1982 singles", "steve prestwich songwriting"],
+    "music_4690": [1982, "circus animals album", "1982 singles", "steve prestwich songwriting"],
+    "music_4691": [1984, "twentieth century album", "1984 singles", "ian moss and jimmy barnes vocals", "don walker songwriter"],
+    "music_4692": [1982, "circus animals album", "1982 album tracks", "ian moss lead vocals"],
+    "music_4693": [1979, "get wet album", "1979 singles", "martin plaza vocals"],
+    "music_4694": [1980, "espresso bongo album", "1980 singles", "sydney new wave"],
+    "music_4695": [1981, "cats and dogs album", "1981 singles", "greedy smith songwriting"],
+    "music_4696": [1982, "creatures of leisure album", "1982 singles"],
+    "music_4697": [1984, "1984 christmas single", "martin plaza and reg mombassa songwriters", "christmas music", "seasonal music"],
+    "music_4698": [1979, "the boys light up album", "1979 singles"],
+    "music_4699": [1980, "the boys light up album", "1980 singles"],
+    "music_4700": [1981, "sirocco album", "1981 singles", "james reyne vocals"],
+    "music_4701": [1982, "sons of beaches album", "1982 singles"],
+    "music_4702": [1985, "between a rock and a hard place album", "1985 singles", "james reyne songwriter"],
+    "music_4703": [1981, "waiata corroboree album", "1981 singles", "neil finn songwriter"],
+    "music_4704": [1982, "time and tide album", "1982 singles", "neil finn songwriter"],
+    "music_4705": [1983, "conflicting emotions album", "1983 album tracks", "1984 singles", "neil finn songwriter"],
+    "music_4706": [1984, "see ya round album", "1984 singles", "neil finn songwriter"],
+    "music_4707": [1983, "escapade album", "1983 singles", "debut solo album"],
+    "music_4708": [1983, "escapade album", "1983 singles", "debut solo album"],
+    "music_4709": [1980, "back on the streets album", "1980 singles", "power pop"],
+    "music_4710": [1981, "king cool album", "1981 singles", "power pop"],
+    "music_4711": [1983, "fortune 410 album", "1983 singles", "power pop"],
+    "music_4712": [1982, "aldo nova debut album", "1982 singles", "album oriented rock"],
+    "music_4713": [1983, "subject aldo nova album", "1983 singles", "canadian rock"],
+    "music_4714": [1980, "loverboy debut album", "1980 singles", "canadian rock"],
+    "music_4715": [1980, "loverboy debut album", "1980 singles", "canadian rock"],
+    "music_4716": [1981, "get lucky album", "1981 singles", "american top forty singles"],
+    "music_4717": [1981, "get lucky album", "1982 singles", "arena rock"],
+    "music_4718": [1983, "keep it up album", "1983 singles", "canadian rock"],
+    "music_4719": [1983, "keep it up album", "1983 singles", "arena rock"],
+    "music_4720": [1988, "diamond sun album", "1988 singles", "canadian pop rock"],
+    "music_4721": [1984, "honeymoon suite debut album", "1984 singles", "debut singles"],
+    "music_4722": [1984, "honeymoon suite debut album", "1984 singles", "arena rock"],
+    "music_4723": [1986, "the big prize album", "1986 singles", "arena rock"],
+    "music_4724": [1986, "the big prize album", "1986 singles", "one crazy summer film soundtrack"],
+    "music_4725": [1984, "akimbo alogo album", "1984 singles", "canadian rock"],
+    "music_4726": [1986, "shakin like a human being album", "1986 singles", "canadian rock"],
+    "music_4727": [1981, "as far as siam album", "1981 singles", "tom cochrane vocals"],
+    "music_4728": [1983, "neruda album", "1983 singles", "tom cochrane vocals"],
+    "music_4729": [1986, "tom cochrane and red rider album", "1986 singles", "tom cochrane vocals"],
+    "music_4730": [1987, "one good reason album", "1987 singles", "american top ten singles"],
+    "music_4731": [1987, "one good reason album", "1987 singles", "jackie deshannon original", "cover versions", "australian top ten singles"],
+    "music_4732": [1984, "camouflage album", "1984 singles", "the persuaders original", "cover versions"],
+    "music_4733": [1984, "camouflage album", "1984 singles", "pop rock"],
+    "music_4734": [1986, "every beat of my heart album", "1986 singles", "legal eagles film soundtrack"],
+    "music_4735": [1983, "another page album", "1983 singles", "soft rock"],
+    "music_4736": [1983, "another page album", "1983 singles", "general hospital television association"],
+    "music_4737": [1981, "arthur film soundtrack", "1981 singles", "film songs", "academy award best original song"],
+    "music_4738": [1980, "robbie dupree debut album", "1980 singles", "american top ten singles"],
+    "music_4739": [1980, "robbie dupree debut album", "1980 singles", "yacht rock"],
+    "music_4740": [1981, "just another day in paradise album", "1982 singles", "american top ten singles"],
+    "music_4741": [1981, "cool night album", "1981 singles", "american top twenty singles"],
+    "music_4742": [1982, "cool night album", "1982 singles", "american top ten singles"],
+    "music_4743": [1982, "wild heart of the young album", "1982 singles", "karla bonoff vocals"],
+    "music_4744": [1979, "where to now album", "1979 singles", "1980 american chart success"],
+    "music_4745": [1980, "living in a fantasy album", "1980 singles", "buddy holly and the crickets original", "cover versions"],
+    "music_4746": [1983, "have you ever been in love album", "1983 singles", "british pop ballads"],
+    "music_4747": [1982, "world radio album", "1982 singles", "1983 compilation title track"],
+    "music_4748": [1984, "humans lib album", "1984 singles", "synth-pop"],
+    "music_4749": [1984, "humans lib album", "1984 singles", "synth-pop"],
+    "music_4750": [1985, "dream into action album", "1985 singles", "synth-pop"],
+    "music_4751": [1986, "one to one album", "1986 singles", "arif mardin production"],
+    "music_4752": [1986, "one to one album", "1986 singles", "arif mardin production"],
+    "music_4753": [1986, "infected album", "1986 singles", "album title tracks", "matt johnson songwriter"],
+    "music_4754": [2011, "the sound and the fury album", "2011 recording", "1987 song origins", "mike peters and eddie macdonald songwriting"],
+    "music_4755": [1987, "eye of the hurricane album", "1988 singles", "mike peters vocals"],
+    "music_4756": [1984, "steeltown album", "1984 singles", "scottish rock"],
+    "music_4757": [1982, "1982 standalone single", "ricky wilde production"],
+    "music_4758": [1983, "catch as catch can album", "1983 singles", "ricky wilde production"],
+    "music_4759": [1983, "catch as catch can album", "1983 singles", "nicky chinn and paul gurvitz songwriting"],
+    "music_4760": [1984, "teases and dares album", "1984 singles", "uk single go for it"],
+    "music_4761": [1985, "teases and dares album", "1985 singles", "rockabilly influence"],
+    "music_4762": [1986, "another step album", "1986 singles", "australian chart release"],
+    "music_4763": [1986, "another step album", "1987 duet single", "junior giscombe guest vocals", "duets"],
+    "music_4764": [1985, "virgins and philistines album", "1985 singles", "terry hall vocals"],
+    "music_4765": [1984, "the flat earth album", "1984 singles", "funk influenced synth-pop"],
+    "music_4766": [1984, "the flat earth album", "1984 recording", "dan hicks original", "cover versions"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const detail = recordingTags[id];
+    if (!artist || !detail) throw new Error(`Missing metadata for ${id}`);
+    // Start at "recorded" to preserve apostrophes within song titles.
+    const song = question.match(/recorded '(.+)'/);
+    if (!song) throw new Error(`Missing song title for ${id}`);
+    const year = detail[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", "songs", "recordings", decade, `${decade} music`,
+            `${year} releases`, song[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...artist, ...detail.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack66 = [
-
-    {
-        id: "music_4667",
-        category: "Music",
-        question: "Which group recorded 'Touch the Fire'?",
-        answers: ["Icehouse", "INXS", "Models", "Pseudo Echo"],
-        correctAnswer: "Icehouse"
-    },
-    {
-        id: "music_4668",
-        category: "Music",
-        question: "Which group recorded 'State of the Heart'?",
-        answers: ["Mondo Rock", "Icehouse", "Australian Crawl", "Split Enz"],
-        correctAnswer: "Mondo Rock"
-    },
-    {
-        id: "music_4669",
-        category: "Music",
-        question: "Which group recorded 'Cool World'?",
-        answers: ["Mondo Rock", "Icehouse", "Australian Crawl", "Split Enz"],
-        correctAnswer: "Mondo Rock"
-    },
-    {
-        id: "music_4670",
-        category: "Music",
-        question: "Which group recorded 'Chemistry'?",
-        answers: ["Mondo Rock", "Icehouse", "Australian Crawl", "Split Enz"],
-        correctAnswer: "Mondo Rock"
-    },
-    {
-        id: "music_4671",
-        category: "Music",
-        question: "Which group recorded 'Come Said the Boy'?",
-        answers: ["Mondo Rock", "Icehouse", "Australian Crawl", "Split Enz"],
-        correctAnswer: "Mondo Rock"
-    },
-    {
-        id: "music_4672",
-        category: "Music",
-        question: "Which group recorded 'Summer of '81'?",
-        answers: ["Mondo Rock", "Icehouse", "Australian Crawl", "Split Enz"],
-        correctAnswer: "Mondo Rock"
-    },
-    {
-        id: "music_4673",
-        category: "Music",
-        question: "Which group recorded 'Solid Rock'?",
-        answers: ["Goanna", "Mondo Rock", "Australian Crawl", "Cold Chisel"],
-        correctAnswer: "Goanna"
-    },
-    {
-        id: "music_4674",
-        category: "Music",
-        question: "Which group recorded 'Razor's Edge'?",
-        answers: ["Goanna", "Mondo Rock", "Australian Crawl", "Cold Chisel"],
-        correctAnswer: "Goanna"
-    },
-    {
-        id: "music_4675",
-        category: "Music",
-        question: "Which group recorded 'What About Me?'?",
-        answers: ["Moving Pictures", "Goanna", "Mondo Rock", "Australian Crawl"],
-        correctAnswer: "Moving Pictures"
-    },
-    {
-        id: "music_4676",
-        category: "Music",
-        question: "Which group recorded 'Winners'?",
-        answers: ["Moving Pictures", "Goanna", "Mondo Rock", "Australian Crawl"],
-        correctAnswer: "Moving Pictures"
-    },
-    {
-        id: "music_4677",
-        category: "Music",
-        question: "Which group recorded 'Short Note'?",
-        answers: ["Matt Finish", "Moving Pictures", "Goanna", "Mondo Rock"],
-        correctAnswer: "Matt Finish"
-    },
-    {
-        id: "music_4678",
-        category: "Music",
-        question: "Which group recorded 'Bad Boy for Love'?",
-        answers: ["Rose Tattoo", "The Angels", "Cold Chisel", "Australian Crawl"],
-        correctAnswer: "Rose Tattoo"
-    },
-    {
-        id: "music_4679",
-        category: "Music",
-        question: "Which group recorded 'We Can't Be Beaten'?",
-        answers: ["Rose Tattoo", "The Angels", "Cold Chisel", "Australian Crawl"],
-        correctAnswer: "Rose Tattoo"
-    },
-    {
-        id: "music_4680",
-        category: "Music",
-        question: "Which group recorded 'No Secrets'?",
-        answers: ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"],
-        correctAnswer: "The Angels"
-    },
-    {
-        id: "music_4681",
-        category: "Music",
-        question: "Which group recorded 'Shadow Boxer'?",
-        answers: ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"],
-        correctAnswer: "The Angels"
-    },
-    {
-        id: "music_4682",
-        category: "Music",
-        question: "Which group recorded 'Take a Long Line'?",
-        answers: ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"],
-        correctAnswer: "The Angels"
-    },
-    {
-        id: "music_4683",
-        category: "Music",
-        question: "Which group recorded 'Marseilles'?",
-        answers: ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"],
-        correctAnswer: "The Angels"
-    },
-    {
-        id: "music_4684",
-        category: "Music",
-        question: "Which group recorded 'Fashion and Fame'?",
-        answers: ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"],
-        correctAnswer: "The Angels"
-    },
-    {
-        id: "music_4685",
-        category: "Music",
-        question: "Which group recorded 'Stand Up'?",
-        answers: ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"],
-        correctAnswer: "The Angels"
-    },
-    {
-        id: "music_4686",
-        category: "Music",
-        question: "Which group recorded 'Cheap Wine'?",
-        answers: ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"],
-        correctAnswer: "Cold Chisel"
-    },
-    {
-        id: "music_4687",
-        category: "Music",
-        question: "Which group recorded 'Choirgirl'?",
-        answers: ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"],
-        correctAnswer: "Cold Chisel"
-    },
-    {
-        id: "music_4688",
-        category: "Music",
-        question: "Which group recorded 'My Baby'?",
-        answers: ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"],
-        correctAnswer: "Cold Chisel"
-    },
-    {
-        id: "music_4689",
-        category: "Music",
-        question: "Which group recorded 'Forever Now'?",
-        answers: ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"],
-        correctAnswer: "Cold Chisel"
-    },
-    {
-        id: "music_4690",
-        category: "Music",
-        question: "Which group recorded 'When the War Is Over'?",
-        answers: ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"],
-        correctAnswer: "Cold Chisel"
-    },
-    {
-        id: "music_4691",
-        category: "Music",
-        question: "Which group recorded 'Saturday Night'?",
-        answers: ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"],
-        correctAnswer: "Cold Chisel"
-    },
-    {
-        id: "music_4692",
-        category: "Music",
-        question: "Which group recorded 'Bow River'?",
-        answers: ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"],
-        correctAnswer: "Cold Chisel"
-    },
-    {
-        id: "music_4693",
-        category: "Music",
-        question: "Which group recorded 'The Nips Are Getting Bigger'?",
-        answers: ["Mental as Anything", "Australian Crawl", "Split Enz", "Mondo Rock"],
-        correctAnswer: "Mental as Anything"
-    },
-    {
-        id: "music_4694",
-        category: "Music",
-        question: "Which group recorded 'Come Around'?",
-        answers: ["Mental as Anything", "Australian Crawl", "Split Enz", "Mondo Rock"],
-        correctAnswer: "Mental as Anything"
-    },
-    {
-        id: "music_4695",
-        category: "Music",
-        question: "Which group recorded 'Berserk Warriors'?",
-        answers: ["Mental as Anything", "Australian Crawl", "Split Enz", "Mondo Rock"],
-        correctAnswer: "Mental as Anything"
-    },
-    {
-        id: "music_4696",
-        category: "Music",
-        question: "Which group recorded 'Spirit Got Lost'?",
-        answers: ["Mental as Anything", "Australian Crawl", "Split Enz", "Mondo Rock"],
-        correctAnswer: "Mental as Anything"
-    },
-    {
-        id: "music_4697",
-        category: "Music",
-        question: "Which group recorded 'Apocalypso (Wiping the Smile Off Santa's Face)'?",
-        answers: ["Mental as Anything", "Australian Crawl", "Split Enz", "Mondo Rock"],
-        correctAnswer: "Mental as Anything"
-    },
-    {
-        id: "music_4698",
-        category: "Music",
-        question: "Which group recorded 'Beautiful People'?",
-        answers: ["Australian Crawl", "Mental as Anything", "Split Enz", "Mondo Rock"],
-        correctAnswer: "Australian Crawl"
-    },
-    {
-        id: "music_4699",
-        category: "Music",
-        question: "Which group recorded 'Indisposed'?",
-        answers: ["Australian Crawl", "Mental as Anything", "Split Enz", "Mondo Rock"],
-        correctAnswer: "Australian Crawl"
-    },
-    {
-        id: "music_4700",
-        category: "Music",
-        question: "Which group recorded 'Oh No Not You Again'?",
-        answers: ["Australian Crawl", "Mental as Anything", "Split Enz", "Mondo Rock"],
-        correctAnswer: "Australian Crawl"
-    },
-    {
-        id: "music_4701",
-        category: "Music",
-        question: "Which group recorded 'Shutdown'?",
-        answers: ["Australian Crawl", "Mental as Anything", "Split Enz", "Mondo Rock"],
-        correctAnswer: "Australian Crawl"
-    },
-    {
-        id: "music_4702",
-        category: "Music",
-        question: "Which group recorded 'Two Can Play'?",
-        answers: ["Australian Crawl", "Mental as Anything", "Split Enz", "Mondo Rock"],
-        correctAnswer: "Australian Crawl"
-    },
-    {
-        id: "music_4703",
-        category: "Music",
-        question: "Which group recorded 'History Never Repeats'?",
-        answers: ["Split Enz", "Australian Crawl", "Mental as Anything", "Icehouse"],
-        correctAnswer: "Split Enz"
-    },
-    {
-        id: "music_4704",
-        category: "Music",
-        question: "Which group recorded 'Dirty Creature'?",
-        answers: ["Split Enz", "Australian Crawl", "Mental as Anything", "Icehouse"],
-        correctAnswer: "Split Enz"
-    },
-    {
-        id: "music_4705",
-        category: "Music",
-        question: "Which group recorded 'Message to My Girl'?",
-        answers: ["Split Enz", "Australian Crawl", "Mental as Anything", "Icehouse"],
-        correctAnswer: "Split Enz"
-    },
-    {
-        id: "music_4706",
-        category: "Music",
-        question: "Which group recorded 'I Walk Away'?",
-        answers: ["Split Enz", "Australian Crawl", "Mental as Anything", "Icehouse"],
-        correctAnswer: "Split Enz"
-    },
-    {
-        id: "music_4707",
-        category: "Music",
-        question: "Which artist recorded 'Fraction Too Much Friction'?",
-        answers: ["Tim Finn", "Colin Hay", "Jimmy Barnes", "Paul Kelly"],
-        correctAnswer: "Tim Finn"
-    },
-    {
-        id: "music_4708",
-        category: "Music",
-        question: "Which artist recorded 'Made My Day'?",
-        answers: ["Tim Finn", "Colin Hay", "Jimmy Barnes", "Paul Kelly"],
-        correctAnswer: "Tim Finn"
-    },
-    {
-        id: "music_4709",
-        category: "Music",
-        question: "Which artist recorded 'Ah! Leah!'?",
-        answers: ["Donnie Iris", "Aldo Nova", "Kim Mitchell", "Paul Carrack"],
-        correctAnswer: "Donnie Iris"
-    },
-    {
-        id: "music_4710",
-        category: "Music",
-        question: "Which artist recorded 'Love Is Like a Rock'?",
-        answers: ["Donnie Iris", "Aldo Nova", "Kim Mitchell", "Paul Carrack"],
-        correctAnswer: "Donnie Iris"
-    },
-    {
-        id: "music_4711",
-        category: "Music",
-        question: "Which artist recorded 'Do You Compute?'?",
-        answers: ["Donnie Iris", "Aldo Nova", "Kim Mitchell", "Paul Carrack"],
-        correctAnswer: "Donnie Iris"
-    },
-    {
-        id: "music_4712",
-        category: "Music",
-        question: "Which artist recorded 'Fantasy'?",
-        answers: ["Aldo Nova", "Donnie Iris", "Kim Mitchell", "Paul Carrack"],
-        correctAnswer: "Aldo Nova"
-    },
-    {
-        id: "music_4713",
-        category: "Music",
-        question: "Which artist recorded 'Monkey on Your Back'?",
-        answers: ["Aldo Nova", "Donnie Iris", "Kim Mitchell", "Paul Carrack"],
-        correctAnswer: "Aldo Nova"
-    },
-    {
-        id: "music_4714",
-        category: "Music",
-        question: "Which group recorded 'Turn Me Loose'?",
-        answers: ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"],
-        correctAnswer: "Loverboy"
-    },
-    {
-        id: "music_4715",
-        category: "Music",
-        question: "Which group recorded 'The Kid Is Hot Tonite'?",
-        answers: ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"],
-        correctAnswer: "Loverboy"
-    },
-    {
-        id: "music_4716",
-        category: "Music",
-        question: "Which group recorded 'Working for the Weekend'?",
-        answers: ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"],
-        correctAnswer: "Loverboy"
-    },
-    {
-        id: "music_4717",
-        category: "Music",
-        question: "Which group recorded 'When It's Over'?",
-        answers: ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"],
-        correctAnswer: "Loverboy"
-    },
-    {
-        id: "music_4718",
-        category: "Music",
-        question: "Which group recorded 'Hot Girls in Love'?",
-        answers: ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"],
-        correctAnswer: "Loverboy"
-    },
-    {
-        id: "music_4719",
-        category: "Music",
-        question: "Which group recorded 'Queen of the Broken Hearts'?",
-        answers: ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"],
-        correctAnswer: "Loverboy"
-    },
-    {
-        id: "music_4720",
-        category: "Music",
-        question: "Which group recorded 'I'm Still Searching'?",
-        answers: ["Glass Tiger", "Loverboy", "Honeymoon Suite", "Red Rider"],
-        correctAnswer: "Glass Tiger"
-    },
-    {
-        id: "music_4721",
-        category: "Music",
-        question: "Which group recorded 'New Girl Now'?",
-        answers: ["Honeymoon Suite", "Glass Tiger", "Loverboy", "Red Rider"],
-        correctAnswer: "Honeymoon Suite"
-    },
-    {
-        id: "music_4722",
-        category: "Music",
-        question: "Which group recorded 'Burning in Love'?",
-        answers: ["Honeymoon Suite", "Glass Tiger", "Loverboy", "Red Rider"],
-        correctAnswer: "Honeymoon Suite"
-    },
-    {
-        id: "music_4723",
-        category: "Music",
-        question: "Which group recorded 'Feel It Again'?",
-        answers: ["Honeymoon Suite", "Glass Tiger", "Loverboy", "Red Rider"],
-        correctAnswer: "Honeymoon Suite"
-    },
-    {
-        id: "music_4724",
-        category: "Music",
-        question: "Which group recorded 'What Does It Take'?",
-        answers: ["Honeymoon Suite", "Glass Tiger", "Loverboy", "Red Rider"],
-        correctAnswer: "Honeymoon Suite"
-    },
-    {
-        id: "music_4725",
-        category: "Music",
-        question: "Which artist recorded 'Go for Soda'?",
-        answers: ["Kim Mitchell", "Donnie Iris", "Aldo Nova", "Paul Carrack"],
-        correctAnswer: "Kim Mitchell"
-    },
-    {
-        id: "music_4726",
-        category: "Music",
-        question: "Which artist recorded 'Patio Lanterns'?",
-        answers: ["Kim Mitchell", "Donnie Iris", "Aldo Nova", "Paul Carrack"],
-        correctAnswer: "Kim Mitchell"
-    },
-    {
-        id: "music_4727",
-        category: "Music",
-        question: "Which group recorded 'Lunatic Fringe'?",
-        answers: ["Red Rider", "Loverboy", "Glass Tiger", "Honeymoon Suite"],
-        correctAnswer: "Red Rider"
-    },
-    {
-        id: "music_4728",
-        category: "Music",
-        question: "Which group recorded 'Human Race'?",
-        answers: ["Red Rider", "Loverboy", "Glass Tiger", "Honeymoon Suite"],
-        correctAnswer: "Red Rider"
-    },
-    {
-        id: "music_4729",
-        category: "Music",
-        question: "Which artists recorded 'Boy Inside the Man'?",
-        answers: ["Tom Cochrane and Red Rider", "Bryan Adams and Loverboy", "Kim Mitchell and Red Rider", "Tom Cochrane and Glass Tiger"],
-        correctAnswer: "Tom Cochrane and Red Rider"
-    },
-    {
-        id: "music_4730",
-        category: "Music",
-        question: "Which artist recorded 'Don't Shed a Tear'?",
-        answers: ["Paul Carrack", "Paul Young", "Christopher Cross", "Leo Sayer"],
-        correctAnswer: "Paul Carrack"
-    },
-    {
-        id: "music_4731",
-        category: "Music",
-        question: "Which artist recorded 'When You Walk in the Room'?",
-        answers: ["Paul Carrack", "Paul Young", "Christopher Cross", "Leo Sayer"],
-        correctAnswer: "Paul Carrack"
-    },
-    {
-        id: "music_4732",
-        category: "Music",
-        question: "Which artist recorded 'Some Guys Have All the Luck'?",
-        answers: ["Rod Stewart", "Paul Young", "Leo Sayer", "Christopher Cross"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_4733",
-        category: "Music",
-        question: "Which artist recorded 'Infatuation'?",
-        answers: ["Rod Stewart", "Paul Young", "Leo Sayer", "Christopher Cross"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_4734",
-        category: "Music",
-        question: "Which artist recorded 'Love Touch'?",
-        answers: ["Rod Stewart", "Paul Young", "Leo Sayer", "Christopher Cross"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_4735",
-        category: "Music",
-        question: "Which artist recorded 'All Right'?",
-        answers: ["Christopher Cross", "Robbie Dupree", "Paul Davis", "Bertie Higgins"],
-        correctAnswer: "Christopher Cross"
-    },
-    {
-        id: "music_4736",
-        category: "Music",
-        question: "Which artist recorded 'Think of Laura'?",
-        answers: ["Christopher Cross", "Robbie Dupree", "Paul Davis", "Bertie Higgins"],
-        correctAnswer: "Christopher Cross"
-    },
-    {
-        id: "music_4737",
-        category: "Music",
-        question: "Which artist recorded 'Arthur's Theme (Best That You Can Do)'?",
-        answers: ["Christopher Cross", "Robbie Dupree", "Paul Davis", "Bertie Higgins"],
-        correctAnswer: "Christopher Cross"
-    },
-    {
-        id: "music_4738",
-        category: "Music",
-        question: "Which artist recorded 'Steal Away'?",
-        answers: ["Robbie Dupree", "Christopher Cross", "Paul Davis", "Bertie Higgins"],
-        correctAnswer: "Robbie Dupree"
-    },
-    {
-        id: "music_4739",
-        category: "Music",
-        question: "Which artist recorded 'Hot Rod Hearts'?",
-        answers: ["Robbie Dupree", "Christopher Cross", "Paul Davis", "Bertie Higgins"],
-        correctAnswer: "Robbie Dupree"
-    },
-    {
-        id: "music_4740",
-        category: "Music",
-        question: "Which artist recorded 'Key Largo'?",
-        answers: ["Bertie Higgins", "Robbie Dupree", "Paul Davis", "Christopher Cross"],
-        correctAnswer: "Bertie Higgins"
-    },
-    {
-        id: "music_4741",
-        category: "Music",
-        question: "Which artist recorded 'Cool Night'?",
-        answers: ["Paul Davis", "Robbie Dupree", "Bertie Higgins", "Christopher Cross"],
-        correctAnswer: "Paul Davis"
-    },
-    {
-        id: "music_4742",
-        category: "Music",
-        question: "Which artist recorded ''65 Love Affair'?",
-        answers: ["Paul Davis", "Robbie Dupree", "Bertie Higgins", "Christopher Cross"],
-        correctAnswer: "Paul Davis"
-    },
-    {
-        id: "music_4743",
-        category: "Music",
-        question: "Which artist recorded 'Personally'?",
-        answers: ["Karla Bonoff", "Charlie Dore", "Jenny Morris", "Kim Wilde"],
-        correctAnswer: "Karla Bonoff"
-    },
-    {
-        id: "music_4744",
-        category: "Music",
-        question: "Which artist recorded 'Pilot of the Airwaves'?",
-        answers: ["Charlie Dore", "Karla Bonoff", "Jenny Morris", "Kim Wilde"],
-        correctAnswer: "Charlie Dore"
-    },
-    {
-        id: "music_4745",
-        category: "Music",
-        question: "Which artist recorded 'More Than I Can Say'?",
-        answers: ["Leo Sayer", "Paul Young", "Paul Carrack", "Christopher Cross"],
-        correctAnswer: "Leo Sayer"
-    },
-    {
-        id: "music_4746",
-        category: "Music",
-        question: "Which artist recorded 'Orchard Road'?",
-        answers: ["Leo Sayer", "Paul Young", "Paul Carrack", "Christopher Cross"],
-        correctAnswer: "Leo Sayer"
-    },
-    {
-        id: "music_4747",
-        category: "Music",
-        question: "Which artist recorded 'Have You Ever Been in Love'?",
-        answers: ["Leo Sayer", "Paul Young", "Paul Carrack", "Christopher Cross"],
-        correctAnswer: "Leo Sayer"
-    },
-    {
-        id: "music_4748",
-        category: "Music",
-        question: "Which artist recorded 'Hide and Seek'?",
-        answers: ["Howard Jones", "Nik Kershaw", "Thomas Dolby", "Paul Young"],
-        correctAnswer: "Howard Jones"
-    },
-    {
-        id: "music_4749",
-        category: "Music",
-        question: "Which artist recorded 'Pearl in the Shell'?",
-        answers: ["Howard Jones", "Nik Kershaw", "Thomas Dolby", "Paul Young"],
-        correctAnswer: "Howard Jones"
-    },
-    {
-        id: "music_4750",
-        category: "Music",
-        question: "Which artist recorded 'Life in One Day'?",
-        answers: ["Howard Jones", "Nik Kershaw", "Thomas Dolby", "Paul Young"],
-        correctAnswer: "Howard Jones"
-    },
-    {
-        id: "music_4751",
-        category: "Music",
-        question: "Which artist recorded 'All I Want'?",
-        answers: ["Howard Jones", "Nik Kershaw", "Thomas Dolby", "Paul Young"],
-        correctAnswer: "Howard Jones"
-    },
-    {
-        id: "music_4752",
-        category: "Music",
-        question: "Which artist recorded 'You Know I Love You... Don't You?'?",
-        answers: ["Howard Jones", "Nik Kershaw", "Thomas Dolby", "Paul Young"],
-        correctAnswer: "Howard Jones"
-    },
-    {
-        id: "music_4753",
-        category: "Music",
-        question: "Which group recorded 'Infected'?",
-        answers: ["The The", "The Alarm", "Big Country", "The Colourfield"],
-        correctAnswer: "The The"
-    },
-    {
-        id: "music_4754",
-        category: "Music",
-        question: "Which group recorded 'Strength to Strength'?",
-        answers: ["The Alarm", "Big Country", "The The", "The Colourfield"],
-        correctAnswer: "The Alarm"
-    },
-    {
-        id: "music_4755",
-        category: "Music",
-        question: "Which group recorded 'Presence of Love'?",
-        answers: ["The Alarm", "Big Country", "The The", "The Colourfield"],
-        correctAnswer: "The Alarm"
-    },
-    {
-        id: "music_4756",
-        category: "Music",
-        question: "Which group recorded 'Where the Rose Is Sown'?",
-        answers: ["Big Country", "The Alarm", "The The", "The Colourfield"],
-        correctAnswer: "Big Country"
-    },
-    {
-        id: "music_4757",
-        category: "Music",
-        question: "Which artist recorded 'Child Come Away'?",
-        answers: ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"],
-        correctAnswer: "Kim Wilde"
-    },
-    {
-        id: "music_4758",
-        category: "Music",
-        question: "Which artist recorded 'Love Blonde'?",
-        answers: ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"],
-        correctAnswer: "Kim Wilde"
-    },
-    {
-        id: "music_4759",
-        category: "Music",
-        question: "Which artist recorded 'Dancing in the Dark'?",
-        answers: ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"],
-        correctAnswer: "Kim Wilde"
-    },
-    {
-        id: "music_4760",
-        category: "Music",
-        question: "Which artist recorded 'The Second Time'?",
-        answers: ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"],
-        correctAnswer: "Kim Wilde"
-    },
-    {
-        id: "music_4761",
-        category: "Music",
-        question: "Which artist recorded 'Rage to Love'?",
-        answers: ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"],
-        correctAnswer: "Kim Wilde"
-    },
-    {
-        id: "music_4762",
-        category: "Music",
-        question: "Which artist recorded 'Schoolgirl'?",
-        answers: ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"],
-        correctAnswer: "Kim Wilde"
-    },
-    {
-        id: "music_4763",
-        category: "Music",
-        question: "Which artist recorded 'Another Step (Closer to You)'?",
-        answers: ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"],
-        correctAnswer: "Kim Wilde"
-    },
-    {
-        id: "music_4764",
-        category: "Music",
-        question: "Which group recorded 'Castles in the Air'?",
-        answers: ["The Colourfield", "The Alarm", "The The", "Big Country"],
-        correctAnswer: "The Colourfield"
-    },
-    {
-        id: "music_4765",
-        category: "Music",
-        question: "Which artist recorded 'Hyperactive!'?",
-        answers: ["Thomas Dolby", "Howard Jones", "Nik Kershaw", "Gary Numan"],
-        correctAnswer: "Thomas Dolby"
-    },
-    {
-        id: "music_4766",
-        category: "Music",
-        question: "Which artist recorded 'I Scare Myself'?",
-        answers: ["Thomas Dolby", "Howard Jones", "Nik Kershaw", "Gary Numan"],
-        correctAnswer: "Thomas Dolby"
-    }
-
+    makeQuestion("music_4667", "Which group recorded 'Touch the Fire'?", ["Icehouse", "INXS", "Models", "Pseudo Echo"], "Icehouse", "Easy"),
+    makeQuestion("music_4668", "Which group recorded 'State of the Heart'?", ["Mondo Rock", "Icehouse", "Australian Crawl", "Split Enz"], "Mondo Rock", "Easy"),
+    makeQuestion("music_4669", "Which group recorded 'Cool World'?", ["Mondo Rock", "Icehouse", "Australian Crawl", "Split Enz"], "Mondo Rock", "Medium"),
+    makeQuestion("music_4670", "Which group recorded 'Chemistry'?", ["Mondo Rock", "Icehouse", "Australian Crawl", "Split Enz"], "Mondo Rock", "Medium"),
+    makeQuestion("music_4671", "Which group recorded 'Come Said the Boy'?", ["Mondo Rock", "Icehouse", "Australian Crawl", "Split Enz"], "Mondo Rock", "Medium"),
+    makeQuestion("music_4672", "Which group recorded 'Summer of '81'?", ["Mondo Rock", "Icehouse", "Australian Crawl", "Split Enz"], "Mondo Rock", "Medium"),
+    makeQuestion("music_4673", "Which group recorded 'Solid Rock'?", ["Goanna", "Mondo Rock", "Australian Crawl", "Cold Chisel"], "Goanna", "Easy"),
+    makeQuestion("music_4674", "Which group recorded 'Razor's Edge'?", ["Goanna", "Mondo Rock", "Australian Crawl", "Cold Chisel"], "Goanna", "Medium"),
+    makeQuestion("music_4675", "Which group recorded 'What About Me?'?", ["Moving Pictures", "Goanna", "Mondo Rock", "Australian Crawl"], "Moving Pictures", "Easy"),
+    makeQuestion("music_4676", "Which group recorded 'Winners'?", ["Moving Pictures", "Goanna", "Mondo Rock", "Australian Crawl"], "Moving Pictures", "Hard"),
+    makeQuestion("music_4677", "Which group recorded 'Short Note'?", ["Matt Finish", "Moving Pictures", "Goanna", "Mondo Rock"], "Matt Finish", "Hard"),
+    makeQuestion("music_4678", "Which group recorded 'Bad Boy for Love'?", ["Rose Tattoo", "The Angels", "Cold Chisel", "Australian Crawl"], "Rose Tattoo", "Medium"),
+    makeQuestion("music_4679", "Which group recorded 'We Can't Be Beaten'?", ["Rose Tattoo", "The Angels", "Cold Chisel", "Australian Crawl"], "Rose Tattoo", "Medium"),
+    makeQuestion("music_4680", "Which group recorded 'No Secrets' for the album Dark Room?", ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"], "The Angels", "Easy"),
+    makeQuestion("music_4681", "Which group recorded 'Shadow Boxer'?", ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"], "The Angels", "Medium"),
+    makeQuestion("music_4682", "Which group recorded 'Take a Long Line'?", ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"], "The Angels", "Medium"),
+    makeQuestion("music_4683", "Which group recorded 'Marseilles'?", ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"], "The Angels", "Medium"),
+    makeQuestion("music_4684", "Which group recorded 'Fashion and Fame'?", ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"], "The Angels", "Hard"),
+    makeQuestion("music_4685", "Which group recorded 'Stand Up'?", ["The Angels", "Rose Tattoo", "Cold Chisel", "Australian Crawl"], "The Angels", "Hard"),
+    makeQuestion("music_4686", "Which group recorded 'Cheap Wine'?", ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"], "Cold Chisel", "Easy"),
+    makeQuestion("music_4687", "Which group recorded 'Choirgirl'?", ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"], "Cold Chisel", "Easy"),
+    makeQuestion("music_4688", "Which group recorded 'My Baby'?", ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"], "Cold Chisel", "Medium"),
+    makeQuestion("music_4689", "Which group recorded 'Forever Now'?", ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"], "Cold Chisel", "Hard"),
+    makeQuestion("music_4690", "Which group recorded 'When the War Is Over'?", ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"], "Cold Chisel", "Easy"),
+    makeQuestion("music_4691", "Which group recorded 'Saturday Night'?", ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"], "Cold Chisel", "Medium"),
+    makeQuestion("music_4692", "Which group recorded 'Bow River'?", ["Cold Chisel", "The Angels", "Rose Tattoo", "Australian Crawl"], "Cold Chisel", "Medium"),
+    makeQuestion("music_4693", "Which group recorded 'The Nips Are Getting Bigger'?", ["Mental as Anything", "Australian Crawl", "Split Enz", "Mondo Rock"], "Mental as Anything", "Easy"),
+    makeQuestion("music_4694", "Which group recorded 'Come Around'?", ["Mental as Anything", "Australian Crawl", "Split Enz", "Mondo Rock"], "Mental as Anything", "Medium"),
+    makeQuestion("music_4695", "Which group recorded 'Berserk Warriors'?", ["Mental as Anything", "Australian Crawl", "Split Enz", "Mondo Rock"], "Mental as Anything", "Hard"),
+    makeQuestion("music_4696", "Which group recorded 'Spirit Got Lost'?", ["Mental as Anything", "Australian Crawl", "Split Enz", "Mondo Rock"], "Mental as Anything", "Hard"),
+    makeQuestion("music_4697", "Which group recorded 'Apocalypso (Wiping the Smile Off Santa's Face)'?", ["Mental as Anything", "Australian Crawl", "Split Enz", "Mondo Rock"], "Mental as Anything", "Hard"),
+    makeQuestion("music_4698", "Which group recorded 'Beautiful People'?", ["Australian Crawl", "Mental as Anything", "Split Enz", "Mondo Rock"], "Australian Crawl", "Easy"),
+    makeQuestion("music_4699", "Which group recorded 'Indisposed'?", ["Australian Crawl", "Mental as Anything", "Split Enz", "Mondo Rock"], "Australian Crawl", "Medium"),
+    makeQuestion("music_4700", "Which group recorded 'Oh No Not You Again'?", ["Australian Crawl", "Mental as Anything", "Split Enz", "Mondo Rock"], "Australian Crawl", "Medium"),
+    makeQuestion("music_4701", "Which group recorded 'Shutdown'?", ["Australian Crawl", "Mental as Anything", "Split Enz", "Mondo Rock"], "Australian Crawl", "Hard"),
+    makeQuestion("music_4702", "Which group recorded 'Two Can Play'?", ["Australian Crawl", "Mental as Anything", "Split Enz", "Mondo Rock"], "Australian Crawl", "Hard"),
+    makeQuestion("music_4703", "Which group recorded 'History Never Repeats'?", ["Split Enz", "Australian Crawl", "Mental as Anything", "Icehouse"], "Split Enz", "Easy"),
+    makeQuestion("music_4704", "Which group recorded 'Dirty Creature'?", ["Split Enz", "Australian Crawl", "Mental as Anything", "Icehouse"], "Split Enz", "Medium"),
+    makeQuestion("music_4705", "Which group recorded 'Message to My Girl'?", ["Split Enz", "Australian Crawl", "Mental as Anything", "Icehouse"], "Split Enz", "Easy"),
+    makeQuestion("music_4706", "Which group recorded 'I Walk Away'?", ["Split Enz", "Australian Crawl", "Mental as Anything", "Icehouse"], "Split Enz", "Hard"),
+    makeQuestion("music_4707", "Which artist recorded 'Fraction Too Much Friction'?", ["Tim Finn", "Colin Hay", "Jimmy Barnes", "Paul Kelly"], "Tim Finn", "Medium"),
+    makeQuestion("music_4708", "Which artist recorded 'Made My Day'?", ["Tim Finn", "Colin Hay", "Jimmy Barnes", "Paul Kelly"], "Tim Finn", "Hard"),
+    makeQuestion("music_4709", "Which artist recorded 'Ah! Leah!'?", ["Donnie Iris", "Aldo Nova", "Kim Mitchell", "Paul Carrack"], "Donnie Iris", "Easy"),
+    makeQuestion("music_4710", "Which artist recorded 'Love Is Like a Rock'?", ["Donnie Iris", "Aldo Nova", "Kim Mitchell", "Paul Carrack"], "Donnie Iris", "Medium"),
+    makeQuestion("music_4711", "Which artist recorded 'Do You Compute?'?", ["Donnie Iris", "Aldo Nova", "Kim Mitchell", "Paul Carrack"], "Donnie Iris", "Hard"),
+    makeQuestion("music_4712", "Which artist recorded 'Fantasy'?", ["Aldo Nova", "Donnie Iris", "Kim Mitchell", "Paul Carrack"], "Aldo Nova", "Easy"),
+    makeQuestion("music_4713", "Which artist recorded 'Monkey on Your Back'?", ["Aldo Nova", "Donnie Iris", "Kim Mitchell", "Paul Carrack"], "Aldo Nova", "Hard"),
+    makeQuestion("music_4714", "Which group recorded 'Turn Me Loose'?", ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"], "Loverboy", "Easy"),
+    makeQuestion("music_4715", "Which group recorded 'The Kid Is Hot Tonite'?", ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"], "Loverboy", "Hard"),
+    makeQuestion("music_4716", "Which group recorded 'Working for the Weekend'?", ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"], "Loverboy", "Easy"),
+    makeQuestion("music_4717", "Which group recorded 'When It's Over'?", ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"], "Loverboy", "Hard"),
+    makeQuestion("music_4718", "Which group recorded 'Hot Girls in Love'?", ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"], "Loverboy", "Medium"),
+    makeQuestion("music_4719", "Which group recorded 'Queen of the Broken Hearts'?", ["Loverboy", "Glass Tiger", "Honeymoon Suite", "Red Rider"], "Loverboy", "Hard"),
+    makeQuestion("music_4720", "Which group recorded 'I'm Still Searching'?", ["Glass Tiger", "Loverboy", "Honeymoon Suite", "Red Rider"], "Glass Tiger", "Hard"),
+    makeQuestion("music_4721", "Which group recorded 'New Girl Now'?", ["Honeymoon Suite", "Glass Tiger", "Loverboy", "Red Rider"], "Honeymoon Suite", "Medium"),
+    makeQuestion("music_4722", "Which group recorded 'Burning in Love'?", ["Honeymoon Suite", "Glass Tiger", "Loverboy", "Red Rider"], "Honeymoon Suite", "Hard"),
+    makeQuestion("music_4723", "Which group recorded 'Feel It Again'?", ["Honeymoon Suite", "Glass Tiger", "Loverboy", "Red Rider"], "Honeymoon Suite", "Medium"),
+    makeQuestion("music_4724", "Which group recorded 'What Does It Take'?", ["Honeymoon Suite", "Glass Tiger", "Loverboy", "Red Rider"], "Honeymoon Suite", "Hard"),
+    makeQuestion("music_4725", "Which artist recorded 'Go for Soda'?", ["Kim Mitchell", "Donnie Iris", "Aldo Nova", "Paul Carrack"], "Kim Mitchell", "Easy"),
+    makeQuestion("music_4726", "Which artist recorded 'Patio Lanterns'?", ["Kim Mitchell", "Donnie Iris", "Aldo Nova", "Paul Carrack"], "Kim Mitchell", "Easy"),
+    makeQuestion("music_4727", "Which group recorded 'Lunatic Fringe'?", ["Red Rider", "Loverboy", "Glass Tiger", "Honeymoon Suite"], "Red Rider", "Easy"),
+    makeQuestion("music_4728", "Which group recorded 'Human Race'?", ["Red Rider", "Loverboy", "Glass Tiger", "Honeymoon Suite"], "Red Rider", "Hard"),
+    makeQuestion("music_4729", "Which artists recorded 'Boy Inside the Man'?", ["Tom Cochrane and Red Rider", "Bryan Adams and Loverboy", "Kim Mitchell and Red Rider", "Tom Cochrane and Glass Tiger"], "Tom Cochrane and Red Rider", "Hard"),
+    makeQuestion("music_4730", "Which artist recorded 'Don't Shed a Tear'?", ["Paul Carrack", "Paul Young", "Christopher Cross", "Leo Sayer"], "Paul Carrack", "Easy"),
+    makeQuestion("music_4731", "Which artist recorded 'When You Walk in the Room'?", ["Paul Carrack", "Paul Young", "Christopher Cross", "Leo Sayer"], "Paul Carrack", "Medium"),
+    makeQuestion("music_4732", "Which artist recorded 'Some Guys Have All the Luck'?", ["Rod Stewart", "Paul Young", "Leo Sayer", "Christopher Cross"], "Rod Stewart", "Easy"),
+    makeQuestion("music_4733", "Which artist recorded 'Infatuation'?", ["Rod Stewart", "Paul Young", "Leo Sayer", "Christopher Cross"], "Rod Stewart", "Medium"),
+    makeQuestion("music_4734", "Which artist recorded 'Love Touch'?", ["Rod Stewart", "Paul Young", "Leo Sayer", "Christopher Cross"], "Rod Stewart", "Easy"),
+    makeQuestion("music_4735", "Which artist recorded 'All Right'?", ["Christopher Cross", "Robbie Dupree", "Paul Davis", "Bertie Higgins"], "Christopher Cross", "Hard"),
+    makeQuestion("music_4736", "Which artist recorded 'Think of Laura'?", ["Christopher Cross", "Robbie Dupree", "Paul Davis", "Bertie Higgins"], "Christopher Cross", "Hard"),
+    makeQuestion("music_4737", "Which artist recorded 'Arthur's Theme (Best That You Can Do)'?", ["Christopher Cross", "Robbie Dupree", "Paul Davis", "Bertie Higgins"], "Christopher Cross", "Easy"),
+    makeQuestion("music_4738", "Which artist recorded 'Steal Away'?", ["Robbie Dupree", "Christopher Cross", "Paul Davis", "Bertie Higgins"], "Robbie Dupree", "Medium"),
+    makeQuestion("music_4739", "Which artist recorded 'Hot Rod Hearts'?", ["Robbie Dupree", "Christopher Cross", "Paul Davis", "Bertie Higgins"], "Robbie Dupree", "Hard"),
+    makeQuestion("music_4740", "Which artist recorded 'Key Largo'?", ["Bertie Higgins", "Robbie Dupree", "Paul Davis", "Christopher Cross"], "Bertie Higgins", "Easy"),
+    makeQuestion("music_4741", "Which artist recorded 'Cool Night'?", ["Paul Davis", "Robbie Dupree", "Bertie Higgins", "Christopher Cross"], "Paul Davis", "Medium"),
+    makeQuestion("music_4742", "Which artist recorded ''65 Love Affair'?", ["Paul Davis", "Robbie Dupree", "Bertie Higgins", "Christopher Cross"], "Paul Davis", "Easy"),
+    makeQuestion("music_4743", "Which artist recorded 'Personally'?", ["Karla Bonoff", "Charlie Dore", "Jenny Morris", "Kim Wilde"], "Karla Bonoff", "Hard"),
+    makeQuestion("music_4744", "Which artist recorded 'Pilot of the Airwaves'?", ["Charlie Dore", "Karla Bonoff", "Jenny Morris", "Kim Wilde"], "Charlie Dore", "Hard"),
+    makeQuestion("music_4745", "Which artist recorded 'More Than I Can Say'?", ["Leo Sayer", "Paul Young", "Paul Carrack", "Christopher Cross"], "Leo Sayer", "Easy"),
+    makeQuestion("music_4746", "Which artist recorded 'Orchard Road'?", ["Leo Sayer", "Paul Young", "Paul Carrack", "Christopher Cross"], "Leo Sayer", "Hard"),
+    makeQuestion("music_4747", "Which artist recorded 'Have You Ever Been in Love'?", ["Leo Sayer", "Paul Young", "Paul Carrack", "Christopher Cross"], "Leo Sayer", "Hard"),
+    makeQuestion("music_4748", "Which artist recorded 'Hide and Seek'?", ["Howard Jones", "Nik Kershaw", "Thomas Dolby", "Paul Young"], "Howard Jones", "Easy"),
+    makeQuestion("music_4749", "Which artist recorded 'Pearl in the Shell'?", ["Howard Jones", "Nik Kershaw", "Thomas Dolby", "Paul Young"], "Howard Jones", "Easy"),
+    makeQuestion("music_4750", "Which artist recorded 'Life in One Day'?", ["Howard Jones", "Nik Kershaw", "Thomas Dolby", "Paul Young"], "Howard Jones", "Easy"),
+    makeQuestion("music_4751", "Which artist recorded 'All I Want'?", ["Howard Jones", "Nik Kershaw", "Thomas Dolby", "Paul Young"], "Howard Jones", "Hard"),
+    makeQuestion("music_4752", "Which artist recorded 'You Know I Love You... Don't You?'?", ["Howard Jones", "Nik Kershaw", "Thomas Dolby", "Paul Young"], "Howard Jones", "Hard"),
+    makeQuestion("music_4753", "Which group recorded 'Infected'?", ["The The", "The Alarm", "Big Country", "The Colourfield"], "The The", "Easy"),
+    makeQuestion("music_4754", "Which group recorded 'Strength to Strength'?", ["The Alarm", "Big Country", "The The", "The Colourfield"], "The Alarm", "Hard"),
+    makeQuestion("music_4755", "Which group recorded 'Presence of Love'?", ["The Alarm", "Big Country", "The The", "The Colourfield"], "The Alarm", "Hard"),
+    makeQuestion("music_4756", "Which group recorded 'Where the Rose Is Sown'?", ["Big Country", "The Alarm", "The The", "The Colourfield"], "Big Country", "Easy"),
+    makeQuestion("music_4757", "Which artist recorded 'Child Come Away'?", ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"], "Kim Wilde", "Hard"),
+    makeQuestion("music_4758", "Which artist recorded 'Love Blonde'?", ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"], "Kim Wilde", "Medium"),
+    makeQuestion("music_4759", "Which artist recorded 'Dancing in the Dark'?", ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"], "Kim Wilde", "Hard"),
+    makeQuestion("music_4760", "Which artist recorded 'The Second Time'?", ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"], "Kim Wilde", "Hard"),
+    makeQuestion("music_4761", "Which artist recorded 'Rage to Love'?", ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"], "Kim Wilde", "Easy"),
+    makeQuestion("music_4762", "Which artist recorded 'Schoolgirl'?", ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"], "Kim Wilde", "Hard"),
+    makeQuestion("music_4763", "Which female singer recorded 'Another Step (Closer to You)' with Junior Giscombe?", ["Kim Wilde", "Alison Moyet", "Toyah", "Hazell Dean"], "Kim Wilde", "Medium"),
+    makeQuestion("music_4764", "Which group recorded 'Castles in the Air'?", ["The Colourfield", "The Alarm", "The The", "Big Country"], "The Colourfield", "Hard"),
+    makeQuestion("music_4765", "Which artist recorded 'Hyperactive!'?", ["Thomas Dolby", "Howard Jones", "Nik Kershaw", "Gary Numan"], "Thomas Dolby", "Easy"),
+    makeQuestion("music_4766", "Which artist recorded 'I Scare Myself'?", ["Thomas Dolby", "Howard Jones", "Nik Kershaw", "Gary Numan"], "Thomas Dolby", "Hard"),
 ];
 
 module.exports = quizPack66;
