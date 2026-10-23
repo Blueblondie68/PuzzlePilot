@@ -1,774 +1,260 @@
 // quiz_pack64.js
-// PuzzlePilot Big Quiz
-// Music Pack 64
-// 100 questions
-// IDs: music_4467 - music_4566
+// PuzzlePilot Bigggggg Quiz - Music Pack 64
+// 100 audited questions: music_4467 through music_4566.
+// Every question has recording metadata and artist-specific tags.
+
+const artistTags = {
+    "John Waite": ["pop rock", "soft rock", "arena rock", "british", "male singers", "solo artists", "the babys", "bad english", "rock vocalists"],
+    "Steve Perry": ["arena rock", "soft rock", "american", "male singers", "solo artists", "journey band", "rock vocalists"],
+    "Richard Marx": ["pop rock", "soft rock", "american", "male singers", "solo artists", "singer-songwriters", "adult contemporary"],
+    "Don Henley": ["rock", "soft rock", "american", "male singers", "solo artists", "eagles band", "singer-songwriters"],
+    "Glenn Frey": ["rock", "soft rock", "american", "male singers", "solo artists", "eagles band", "singer-songwriters"],
+    "Eddie Money": ["rock", "pop rock", "american", "male singers", "solo artists", "album oriented rock"],
+    "Kenny Loggins": ["soft rock", "pop rock", "american", "male singers", "solo artists", "singer-songwriters", "film soundtrack hits", "loggins and messina"],
+    "Mr. Mister": ["pop rock", "soft rock", "synth-rock", "american", "bands", "richard page", "steve george"],
+    "Huey Lewis and the News": ["pop rock", "rock and roll", "american", "bands", "huey lewis", "johnny colla", "san francisco"],
+    "John Mellencamp": ["heartland rock", "roots rock", "american", "male singers", "solo artists", "singer-songwriters", "john cougar"],
+    "Bryan Adams": ["rock", "pop rock", "canadian", "male singers", "solo artists", "singer-songwriters", "jim vallance"],
+    "Corey Hart": ["pop rock", "synth-pop", "canadian", "male singers", "solo artists", "singer-songwriters"],
+    "Robert Palmer": ["pop rock", "blue-eyed soul", "new wave", "british", "male singers", "solo artists", "the power station", "island records"],
+    "Split Enz": ["new wave", "pop rock", "new zealand", "bands", "australasian music", "tim finn", "neil finn", "finn brothers"],
+    "Mental as Anything": ["new wave", "pop rock", "australian", "bands", "sydney", "greedy smith", "martin plaza", "reg mombassa"],
+    "Models": ["new wave", "synth-pop", "australian", "bands", "melbourne", "sean kelly", "james freud"],
+    "Hoodoo Gurus": ["alternative rock", "garage rock", "power pop", "australian", "bands", "sydney", "dave faulkner", "brad shepherd"],
+    "Icehouse": ["new wave", "synth-pop", "rock", "australian", "bands", "iva davies", "formerly flowers", "sydney"],
+    "Australian Crawl": ["pub rock", "rock", "australian", "bands", "james reyne", "melbourne", "simon binks"],
+    "Dragon": ["rock", "pop rock", "new zealand", "australian rock scene", "bands", "marc hunter", "todd hunter"],
+    "Machinations": ["new wave", "synth-pop", "australian", "bands", "sydney", "fred loneragan", "tony starr"],
+};
+
+const recordingTags = {
+    "music_4467": [1982, "ignition album", "1982 original single", "1985 vision quest film soundtrack", "holly knight songwriter", "cover versions"],
+    "music_4468": [1984, "no brakes album", "1984 singles", "us album rock chart success"],
+    "music_4469": [1985, "mask of smiles album", "1985 singles", "us top forty singles"],
+    "music_4470": [1986, "1986 film soundtrack recording", "1986 singles", "about last night film soundtrack", "jd souther co-writer"],
+    "music_4471": [1984, "no brakes album", "1984 album tracks", "1985 singles"],
+    "music_4472": [1987, "rovers return album", "1987 singles", "album oriented rock"],
+    "music_4473": [1984, "street talk album", "1984 singles", "us top five singles", "steve perry songwriter"],
+    "music_4474": [1984, "street talk album", "1984 singles", "1985 chart success", "soft rock ballads"],
+    "music_4475": [1984, "street talk album", "1984 singles", "solo debut era"],
+    "music_4476": [1987, "richard marx debut album", "1987 singles", "us top five singles", "bruce gaitsch co-writer"],
+    "music_4477": [1987, "richard marx debut album", "1987 singles", "us top five singles"],
+    "music_4478": [1988, "richard marx debut album", "1988 singles", "us number two singles"],
+    "music_4479": [1988, "richard marx debut album", "1988 singles", "us number one singles", "power ballads"],
+    "music_4480": [1989, "repeat offender album", "1989 singles", "us number one singles"],
+    "music_4481": [1989, "repeat offender album", "1989 singles", "pop rock"],
+    "music_4482": [1982, "i cant stand still album", "1982 singles", "literacy themed songs"],
+    "music_4483": [1982, "i cant stand still album", "1982 singles", "album title tracks"],
+    "music_4484": [1982, "no fun aloud album", "1982 singles", "solo debut era"],
+    "music_4485": [1982, "no fun aloud album", "1982 singles", "soft rock ballads"],
+    "music_4486": [1984, "the allnighter album", "1984 singles", "pop rock"],
+    "music_4487": [1984, "beverly hills cop film soundtrack", "1984 singles", "1985 chart success", "harold faltermeyer co-writer", "keith forsey production"],
+    "music_4488": [1984, "the allnighter album", "1985 singles", "miami vice television soundtrack", "jack tempchin co-writer"],
+    "music_4489": [1985, "miami vice television soundtrack", "1985 singles", "us number two singles", "jack tempchin co-writer"],
+    "music_4490": [1988, "soul searchin album", "1988 singles", "blue-eyed soul"],
+    "music_4491": [1982, "no control album", "1982 singles", "album oriented rock"],
+    "music_4492": [1982, "no control album", "1982 singles", "rock"],
+    "music_4493": [1986, "cant hold back album", "1986 singles", "ronnie spector featured vocals", "us top five singles"],
+    "music_4494": [1986, "cant hold back album", "1986 album tracks", "1987 singles", "billy satellite original", "cover versions"],
+    "music_4495": [1987, "cant hold back album", "1986 album tracks", "1987 singles", "rock"],
+    "music_4496": [1988, "nothing to lose album", "1988 singles", "us top ten singles"],
+    "music_4497": [1979, "keep the fire album", "1979 singles", "michael mcdonald co-writer", "us top twenty singles"],
+    "music_4498": [1980, "caddyshack film soundtrack", "1980 singles", "film songs", "us top ten singles"],
+    "music_4499": [1982, "high adventure album", "1982 singles", "michael mcdonald co-writer", "david foster co-writer"],
+    "music_4500": [1984, "footloose film soundtrack", "1984 singles", "film songs", "dean pitchford co-writer"],
+    "music_4501": [1987, "over the top film soundtrack", "1987 singles", "giorgio moroder co-writer", "film songs"],
+    "music_4502": [1988, "caddyshack ii film soundtrack", "back to avalon album", "1988 singles", "us top ten singles", "film songs"],
+    "music_4503": [1984, "i wear the face album", "1984 singles", "early mr mister"],
+    "music_4504": [1987, "go on album", "1987 singles", "pop rock"],
+    "music_4505": [1982, "picture this album", "1982 singles", "robert john mutt lange songwriting"],
+    "music_4506": [1982, "picture this album", "1982 singles", "rock and roll"],
+    "music_4507": [1983, "sports album", "1983 singles", "1984 chart success", "mike chapman and nicky chinn songwriting"],
+    "music_4508": [1983, "sports album", "1984 singles", "rock and roll"],
+    "music_4509": [1983, "sports album", "1984 singles", "album oriented rock"],
+    "music_4510": [1984, "sports album", "1984 singles", "us top ten singles"],
+    "music_4511": [1984, "sports album", "1984 singles", "vietnam war themed songs"],
+    "music_4512": [1986, "fore album", "1987 singles", "bruce hornsby songwriting", "us number one singles"],
+    "music_4513": [1981, "nothin matters and what if it did album", "1981 singles", "john cougar era"],
+    "music_4514": [1982, "american fool album", "1982 singles", "us top five singles", "john cougar era"],
+    "music_4515": [1983, "uh huh album", "1983 singles", "heartland rock"],
+    "music_4516": [1983, "uh huh album", "1983 singles", "1984 chart success", "small town america themes"],
+    "music_4517": [1983, "uh huh album", "1984 singles", "heartland rock"],
+    "music_4518": [1985, "scarecrow album", "1985 singles", "heartland rock"],
+    "music_4519": [1985, "scarecrow album", "1986 singles", "album oriented rock", "american rock history"],
+    "music_4520": [1987, "the lonesome jubilee album", "1987 singles", "folk rock influences"],
+    "music_4521": [1987, "the lonesome jubilee album", "1987 singles", "heartland rock"],
+    "music_4522": [1981, "you want it you got it album", "1982 singles", "jim vallance co-writer"],
+    "music_4523": [1983, "cuts like a knife album", "1983 singles", "jim vallance co-writer"],
+    "music_4524": [1983, "first offense album", "1983 canada release", "1984 us chart success", "debut singles"],
+    "music_4525": [1984, "first offense album", "1984 singles", "canadian rock"],
+    "music_4526": [1985, "boy in the box album", "1985 singles", "canadian number one singles"],
+    "music_4527": [1985, "boy in the box album", "1985 singles", "album title tracks"],
+    "music_4528": [1986, "fields of fire album", "1986 singles", "elvis presley earlier recording", "cover versions"],
+    "music_4529": [1983, "pride album", "1983 singles", "the system original", "cover versions"],
+    "music_4530": [1983, "pride album", "1983 singles", "album title tracks"],
+    "music_4531": [1986, "riptide album", "1985 album tracks", "1986 singles", "bernard edwards production"],
+    "music_4532": [1980, "true colours album", "1980 singles", "neil finn songwriter", "australian number one singles"],
+    "music_4533": [1980, "corroboree waiata album", "1980 australia singles", "1981 international singles", "neil finn songwriter"],
+    "music_4534": [1982, "time and tide album", "1982 singles", "tim finn songwriter"],
+    "music_4535": [1981, "cats and dogs album", "1981 singles", "1988 rerecording"],
+    "music_4536": [1981, "cats and dogs album", "1981 singles"],
+    "music_4537": [1985, "fundamental album", "1985 singles", "1987 european chart success"],
+    "music_4538": [1985, "fundamental album", "1985 singles"],
+    "music_4539": [1987, "mouth to mouth album", "1987 singles"],
+    "music_4540": [1983, "the pleasure of your company album", "1983 singles", "nick launay production"],
+    "music_4541": [1984, "out of mind out of sight album", "1984 singles", "1985 album release"],
+    "music_4542": [1985, "out of mind out of sight album", "1985 singles", "australian top five singles"],
+    "music_4543": [1985, "out of mind out of sight album", "1985 singles", "album title tracks", "australian number one singles"],
+    "music_4544": [1982, "stoneage romeos album", "1982 debut single", "1984 album release"],
+    "music_4545": [1983, "stoneage romeos album", "1983 singles"],
+    "music_4546": [1983, "stoneage romeos album", "1983 singles", "australian top forty singles"],
+    "music_4547": [1984, "stoneage romeos album", "1984 singles"],
+    "music_4548": [1985, "mars needs guitars album", "1985 singles", "australian top twenty singles"],
+    "music_4549": [1987, "blow your cool album", "1987 singles", "australian top five singles"],
+    "music_4550": [1985, "mars needs guitars album", "1985 singles", "australian top twenty singles"],
+    "music_4551": [1980, "icehouse debut album", "1980 singles", "flowers original band name", "1981 icehouse international release"],
+    "music_4552": [1980, "icehouse debut album", "1980 singles", "flowers original band name", "1981 icehouse international release"],
+    "music_4553": [1981, "icehouse debut album", "1980 album tracks", "1981 singles", "flowers original band name"],
+    "music_4554": [1983, "primitive man album", "1982 album tracks", "1983 singles", "iva davies songwriter"],
+    "music_4555": [1988, "man of colours album", "1987 album tracks", "1988 singles", "album title tracks"],
+    "music_4556": [1980, "the boys light up album", "1980 singles", "album title tracks"],
+    "music_4557": [1980, "the boys light up album", "1980 singles", "1981 chart success"],
+    "music_4558": [1981, "sirocco album", "1981 singles", "james reyne vocals"],
+    "music_4559": [1981, "sirocco album", "1981 singles", "james reyne vocals"],
+    "music_4560": [1983, "semantics ep", "1983 singles", "australian number one singles", "james reyne songwriter"],
+    "music_4561": [1983, "body and the beat album", "1983 singles", "australian number two singles"],
+    "music_4562": [1983, "body and the beat album", "1983 singles"],
+    "music_4563": [1984, "body and the beat album", "1984 singles"],
+    "music_4564": [1989, "bondi road album", "1989 singles"],
+    "music_4565": [1983, "esteem album", "1983 singles", "australian top forty singles", "synth-pop"],
+    "music_4566": [1984, "big music album", "1984 singles", "australian top twenty singles", "julian mendelsohn production"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const detail = recordingTags[id];
+    if (!artist || !detail) throw new Error(`Missing metadata for ${id}`);
+    const song = question.match(/recorded '(.+)'/);
+    if (!song) throw new Error(`Missing song title for ${id}`);
+    const year = detail[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", "songs", "recordings", decade, `${decade} music`,
+            `${year} releases`, song[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...artist, ...detail.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack64 = [
-
-    // JOHN WAITE
-
-    {
-        id: "music_4467",
-        category: "Music",
-        question: "Which artist recorded 'Change'?",
-        answers: ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"],
-        correctAnswer: "John Waite"
-    },
-    {
-        id: "music_4468",
-        category: "Music",
-        question: "Which artist recorded 'Tears'?",
-        answers: ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"],
-        correctAnswer: "John Waite"
-    },
-    {
-        id: "music_4469",
-        category: "Music",
-        question: "Which artist recorded 'Every Step of the Way'?",
-        answers: ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"],
-        correctAnswer: "John Waite"
-    },
-    {
-        id: "music_4470",
-        category: "Music",
-        question: "Which artist recorded 'If Anybody Had a Heart'?",
-        answers: ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"],
-        correctAnswer: "John Waite"
-    },
-    {
-        id: "music_4471",
-        category: "Music",
-        question: "Which artist recorded 'Restless Heart'?",
-        answers: ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"],
-        correctAnswer: "John Waite"
-    },
-    {
-        id: "music_4472",
-        category: "Music",
-        question: "Which artist recorded 'These Times Are Hard for Lovers'?",
-        answers: ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"],
-        correctAnswer: "John Waite"
-    },
-
-    // STEVE PERRY
-
-    {
-        id: "music_4473",
-        category: "Music",
-        question: "Which artist recorded 'Oh Sherrie'?",
-        answers: ["Steve Perry", "John Waite", "Richard Marx", "Eddie Money"],
-        correctAnswer: "Steve Perry"
-    },
-    {
-        id: "music_4474",
-        category: "Music",
-        question: "Which artist recorded 'Foolish Heart'?",
-        answers: ["Steve Perry", "John Waite", "Richard Marx", "Eddie Money"],
-        correctAnswer: "Steve Perry"
-    },
-    {
-        id: "music_4475",
-        category: "Music",
-        question: "Which artist recorded 'She's Mine'?",
-        answers: ["Steve Perry", "John Waite", "Richard Marx", "Eddie Money"],
-        correctAnswer: "Steve Perry"
-    },
-
-    // RICHARD MARX
-
-    {
-        id: "music_4476",
-        category: "Music",
-        question: "Which artist recorded 'Don't Mean Nothing'?",
-        answers: ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"],
-        correctAnswer: "Richard Marx"
-    },
-    {
-        id: "music_4477",
-        category: "Music",
-        question: "Which artist recorded 'Should've Known Better'?",
-        answers: ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"],
-        correctAnswer: "Richard Marx"
-    },
-    {
-        id: "music_4478",
-        category: "Music",
-        question: "Which artist recorded 'Endless Summer Nights'?",
-        answers: ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"],
-        correctAnswer: "Richard Marx"
-    },
-    {
-        id: "music_4479",
-        category: "Music",
-        question: "Which artist recorded 'Hold On to the Nights'?",
-        answers: ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"],
-        correctAnswer: "Richard Marx"
-    },
-    {
-        id: "music_4480",
-        category: "Music",
-        question: "Which artist recorded 'Satisfied'?",
-        answers: ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"],
-        correctAnswer: "Richard Marx"
-    },
-    {
-        id: "music_4481",
-        category: "Music",
-        question: "Which artist recorded 'Angelia'?",
-        answers: ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"],
-        correctAnswer: "Richard Marx"
-    },
-
-    // DON HENLEY
-
-    {
-        id: "music_4482",
-        category: "Music",
-        question: "Which artist recorded 'Johnny Can't Read'?",
-        answers: ["Don Henley", "Glenn Frey", "Eddie Money", "John Mellencamp"],
-        correctAnswer: "Don Henley"
-    },
-    {
-        id: "music_4483",
-        category: "Music",
-        question: "Which artist recorded 'I Can't Stand Still'?",
-        answers: ["Don Henley", "Glenn Frey", "Eddie Money", "John Mellencamp"],
-        correctAnswer: "Don Henley"
-    },
-
-    // GLENN FREY
-
-    {
-        id: "music_4484",
-        category: "Music",
-        question: "Which artist recorded 'I Found Somebody'?",
-        answers: ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"],
-        correctAnswer: "Glenn Frey"
-    },
-    {
-        id: "music_4485",
-        category: "Music",
-        question: "Which artist recorded 'The One You Love'?",
-        answers: ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"],
-        correctAnswer: "Glenn Frey"
-    },
-    {
-        id: "music_4486",
-        category: "Music",
-        question: "Which artist recorded 'Sexy Girl'?",
-        answers: ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"],
-        correctAnswer: "Glenn Frey"
-    },
-    {
-        id: "music_4487",
-        category: "Music",
-        question: "Which artist recorded 'The Heat Is On'?",
-        answers: ["Glenn Frey", "Don Henley", "Eddie Money", "Kenny Loggins"],
-        correctAnswer: "Glenn Frey"
-    },
-    {
-        id: "music_4488",
-        category: "Music",
-        question: "Which artist recorded 'Smuggler's Blues'?",
-        answers: ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"],
-        correctAnswer: "Glenn Frey"
-    },
-    {
-        id: "music_4489",
-        category: "Music",
-        question: "Which artist recorded 'You Belong to the City'?",
-        answers: ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"],
-        correctAnswer: "Glenn Frey"
-    },
-    {
-        id: "music_4490",
-        category: "Music",
-        question: "Which artist recorded 'True Love'?",
-        answers: ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"],
-        correctAnswer: "Glenn Frey"
-    },
-
-    // EDDIE MONEY
-
-    {
-        id: "music_4491",
-        category: "Music",
-        question: "Which artist recorded 'Think I'm in Love'?",
-        answers: ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"],
-        correctAnswer: "Eddie Money"
-    },
-    {
-        id: "music_4492",
-        category: "Music",
-        question: "Which artist recorded 'Shakin''?",
-        answers: ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"],
-        correctAnswer: "Eddie Money"
-    },
-    {
-        id: "music_4493",
-        category: "Music",
-        question: "Which artist recorded 'Take Me Home Tonight'?",
-        answers: ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"],
-        correctAnswer: "Eddie Money"
-    },
-    {
-        id: "music_4494",
-        category: "Music",
-        question: "Which artist recorded 'I Wanna Go Back'?",
-        answers: ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"],
-        correctAnswer: "Eddie Money"
-    },
-    {
-        id: "music_4495",
-        category: "Music",
-        question: "Which artist recorded 'Endless Nights'?",
-        answers: ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"],
-        correctAnswer: "Eddie Money"
-    },
-    {
-        id: "music_4496",
-        category: "Music",
-        question: "Which artist recorded 'Walk on Water'?",
-        answers: ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"],
-        correctAnswer: "Eddie Money"
-    },
-
-    // KENNY LOGGINS
-
-    {
-        id: "music_4497",
-        category: "Music",
-        question: "Which artist recorded 'This Is It'?",
-        answers: ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"],
-        correctAnswer: "Kenny Loggins"
-    },
-    {
-        id: "music_4498",
-        category: "Music",
-        question: "Which artist recorded 'I'm Alright'?",
-        answers: ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"],
-        correctAnswer: "Kenny Loggins"
-    },
-    {
-        id: "music_4499",
-        category: "Music",
-        question: "Which artist recorded 'Heart to Heart'?",
-        answers: ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"],
-        correctAnswer: "Kenny Loggins"
-    },
-    {
-        id: "music_4500",
-        category: "Music",
-        question: "Which artist recorded 'I'm Free (Heaven Helps the Man)'?",
-        answers: ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"],
-        correctAnswer: "Kenny Loggins"
-    },
-    {
-        id: "music_4501",
-        category: "Music",
-        question: "Which artist recorded 'Meet Me Half Way'?",
-        answers: ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"],
-        correctAnswer: "Kenny Loggins"
-    },
-    {
-        id: "music_4502",
-        category: "Music",
-        question: "Which artist recorded 'Nobody's Fool'?",
-        answers: ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"],
-        correctAnswer: "Kenny Loggins"
-    },
-
-    // MR. MISTER
-
-    {
-        id: "music_4503",
-        category: "Music",
-        question: "Which group recorded 'Hunters of the Night'?",
-        answers: ["Mr. Mister", "Toto", "Survivor", "Night Ranger"],
-        correctAnswer: "Mr. Mister"
-    },
-    {
-        id: "music_4504",
-        category: "Music",
-        question: "Which group recorded 'Something Real (Inside Me/Inside You)'?",
-        answers: ["Mr. Mister", "Toto", "Survivor", "Night Ranger"],
-        correctAnswer: "Mr. Mister"
-    },
-
-    // HUEY LEWIS AND THE NEWS
-
-    {
-        id: "music_4505",
-        category: "Music",
-        question: "Which group recorded 'Do You Believe in Love'?",
-        answers: ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_4506",
-        category: "Music",
-        question: "Which group recorded 'Hope You Love Me Like You Say You Do'?",
-        answers: ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_4507",
-        category: "Music",
-        question: "Which group recorded 'Heart and Soul'?",
-        answers: ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_4508",
-        category: "Music",
-        question: "Which group recorded 'I Want a New Drug'?",
-        answers: ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_4509",
-        category: "Music",
-        question: "Which group recorded 'The Heart of Rock & Roll'?",
-        answers: ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_4510",
-        category: "Music",
-        question: "Which group recorded 'If This Is It'?",
-        answers: ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_4511",
-        category: "Music",
-        question: "Which group recorded 'Walking on a Thin Line'?",
-        answers: ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_4512",
-        category: "Music",
-        question: "Which group recorded 'Jacob's Ladder'?",
-        answers: ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-
-    // JOHN MELLENCAMP
-
-    {
-        id: "music_4513",
-        category: "Music",
-        question: "Which artist recorded 'Ain't Even Done with the Night'?",
-        answers: ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_4514",
-        category: "Music",
-        question: "Which artist recorded 'Hurts So Good'?",
-        answers: ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_4515",
-        category: "Music",
-        question: "Which artist recorded 'Crumblin' Down'?",
-        answers: ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_4516",
-        category: "Music",
-        question: "Which artist recorded 'Pink Houses'?",
-        answers: ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_4517",
-        category: "Music",
-        question: "Which artist recorded 'Authority Song'?",
-        answers: ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_4518",
-        category: "Music",
-        question: "Which artist recorded 'Small Town'?",
-        answers: ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_4519",
-        category: "Music",
-        question: "Which artist recorded 'R.O.C.K. in the U.S.A.'?",
-        answers: ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_4520",
-        category: "Music",
-        question: "Which artist recorded 'Paper in Fire'?",
-        answers: ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_4521",
-        category: "Music",
-        question: "Which artist recorded 'Cherry Bomb'?",
-        answers: ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"],
-        correctAnswer: "John Mellencamp"
-    },
-
-    // BRYAN ADAMS
-
-    {
-        id: "music_4522",
-        category: "Music",
-        question: "Which artist recorded 'Lonely Nights'?",
-        answers: ["Bryan Adams", "John Mellencamp", "Corey Hart", "Richard Marx"],
-        correctAnswer: "Bryan Adams"
-    },
-    {
-        id: "music_4523",
-        category: "Music",
-        question: "Which artist recorded 'This Time'?",
-        answers: ["Bryan Adams", "John Mellencamp", "Corey Hart", "Richard Marx"],
-        correctAnswer: "Bryan Adams"
-    },
-
-    // COREY HART
-
-    {
-        id: "music_4524",
-        category: "Music",
-        question: "Which artist recorded 'Sunglasses at Night'?",
-        answers: ["Corey Hart", "Bryan Adams", "Richard Marx", "John Waite"],
-        correctAnswer: "Corey Hart"
-    },
-    {
-        id: "music_4525",
-        category: "Music",
-        question: "Which artist recorded 'It Ain't Enough'?",
-        answers: ["Corey Hart", "Bryan Adams", "Richard Marx", "John Waite"],
-        correctAnswer: "Corey Hart"
-    },
-    {
-        id: "music_4526",
-        category: "Music",
-        question: "Which artist recorded 'Never Surrender'?",
-        answers: ["Corey Hart", "Bryan Adams", "Richard Marx", "John Waite"],
-        correctAnswer: "Corey Hart"
-    },
-    {
-        id: "music_4527",
-        category: "Music",
-        question: "Which artist recorded 'Boy in the Box'?",
-        answers: ["Corey Hart", "Bryan Adams", "Richard Marx", "John Waite"],
-        correctAnswer: "Corey Hart"
-    },
-    {
-        id: "music_4528",
-        category: "Music",
-        question: "Which artist recorded 'Can't Help Falling in Love'?",
-        answers: ["Corey Hart", "Bryan Adams", "Richard Marx", "John Waite"],
-        correctAnswer: "Corey Hart"
-    },
-
-    // ROBERT PALMER
-
-    {
-        id: "music_4529",
-        category: "Music",
-        question: "Which artist recorded 'You Are in My System'?",
-        answers: ["Robert Palmer", "Corey Hart", "Bryan Adams", "John Waite"],
-        correctAnswer: "Robert Palmer"
-    },
-    {
-        id: "music_4530",
-        category: "Music",
-        question: "Which artist recorded 'Pride'?",
-        answers: ["Robert Palmer", "Corey Hart", "Bryan Adams", "John Waite"],
-        correctAnswer: "Robert Palmer"
-    },
-    {
-        id: "music_4531",
-        category: "Music",
-        question: "Which artist recorded 'Hyperactive'?",
-        answers: ["Robert Palmer", "Corey Hart", "Bryan Adams", "John Waite"],
-        correctAnswer: "Robert Palmer"
-    },
-
-    // SPLIT ENZ
-
-    {
-        id: "music_4532",
-        category: "Music",
-        question: "Which group recorded 'I Got You'?",
-        answers: ["Split Enz", "Icehouse", "Models", "Mental as Anything"],
-        correctAnswer: "Split Enz"
-    },
-    {
-        id: "music_4533",
-        category: "Music",
-        question: "Which group recorded 'One Step Ahead'?",
-        answers: ["Split Enz", "Icehouse", "Models", "Mental as Anything"],
-        correctAnswer: "Split Enz"
-    },
-    {
-        id: "music_4534",
-        category: "Music",
-        question: "Which group recorded 'Six Months in a Leaky Boat'?",
-        answers: ["Split Enz", "Icehouse", "Models", "Mental as Anything"],
-        correctAnswer: "Split Enz"
-    },
-
-    // MENTAL AS ANYTHING
-
-    {
-        id: "music_4535",
-        category: "Music",
-        question: "Which group recorded 'If You Leave Me, Can I Come Too?'?",
-        answers: ["Mental as Anything", "Split Enz", "Models", "Icehouse"],
-        correctAnswer: "Mental as Anything"
-    },
-    {
-        id: "music_4536",
-        category: "Music",
-        question: "Which group recorded 'Too Many Times'?",
-        answers: ["Mental as Anything", "Split Enz", "Models", "Icehouse"],
-        correctAnswer: "Mental as Anything"
-    },
-    {
-        id: "music_4537",
-        category: "Music",
-        question: "Which group recorded 'Live It Up'?",
-        answers: ["Mental as Anything", "Split Enz", "Models", "Icehouse"],
-        correctAnswer: "Mental as Anything"
-    },
-    {
-        id: "music_4538",
-        category: "Music",
-        question: "Which group recorded 'You're So Strong'?",
-        answers: ["Mental as Anything", "Split Enz", "Models", "Icehouse"],
-        correctAnswer: "Mental as Anything"
-    },
-    {
-        id: "music_4539",
-        category: "Music",
-        question: "Which group recorded 'He's Just No Good for You'?",
-        answers: ["Mental as Anything", "Split Enz", "Models", "Icehouse"],
-        correctAnswer: "Mental as Anything"
-    },
-
-    // MODELS
-
-    {
-        id: "music_4540",
-        category: "Music",
-        question: "Which group recorded 'I Hear Motion'?",
-        answers: ["Models", "Icehouse", "Mental as Anything", "Hoodoo Gurus"],
-        correctAnswer: "Models"
-    },
-    {
-        id: "music_4541",
-        category: "Music",
-        question: "Which group recorded 'Big on Love'?",
-        answers: ["Models", "Icehouse", "Mental as Anything", "Hoodoo Gurus"],
-        correctAnswer: "Models"
-    },
-    {
-        id: "music_4542",
-        category: "Music",
-        question: "Which group recorded 'Barbados'?",
-        answers: ["Models", "Icehouse", "Mental as Anything", "Hoodoo Gurus"],
-        correctAnswer: "Models"
-    },
-    {
-        id: "music_4543",
-        category: "Music",
-        question: "Which group recorded 'Out of Mind, Out of Sight'?",
-        answers: ["Models", "Icehouse", "Mental as Anything", "Hoodoo Gurus"],
-        correctAnswer: "Models"
-    },
-
-    // HOODOO GURUS
-
-    {
-        id: "music_4544",
-        category: "Music",
-        question: "Which group recorded 'Leilani'?",
-        answers: ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"],
-        correctAnswer: "Hoodoo Gurus"
-    },
-    {
-        id: "music_4545",
-        category: "Music",
-        question: "Which group recorded 'Tojo'?",
-        answers: ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"],
-        correctAnswer: "Hoodoo Gurus"
-    },
-    {
-        id: "music_4546",
-        category: "Music",
-        question: "Which group recorded 'My Girl'?",
-        answers: ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"],
-        correctAnswer: "Hoodoo Gurus"
-    },
-    {
-        id: "music_4547",
-        category: "Music",
-        question: "Which group recorded 'I Want You Back'?",
-        answers: ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"],
-        correctAnswer: "Hoodoo Gurus"
-    },
-    {
-        id: "music_4548",
-        category: "Music",
-        question: "Which group recorded 'Bittersweet'?",
-        answers: ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"],
-        correctAnswer: "Hoodoo Gurus"
-    },
-    {
-        id: "music_4549",
-        category: "Music",
-        question: "Which group recorded 'What's My Scene'?",
-        answers: ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"],
-        correctAnswer: "Hoodoo Gurus"
-    },
-    {
-        id: "music_4550",
-        category: "Music",
-        question: "Which group recorded 'Like Wow - Wipeout!'?",
-        answers: ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"],
-        correctAnswer: "Hoodoo Gurus"
-    },
-
-    // ICEHOUSE
-
-    {
-        id: "music_4551",
-        category: "Music",
-        question: "Which group recorded 'Can't Help Myself'?",
-        answers: ["Icehouse", "Models", "Split Enz", "Hoodoo Gurus"],
-        correctAnswer: "Icehouse"
-    },
-    {
-        id: "music_4552",
-        category: "Music",
-        question: "Which group recorded 'We Can Get Together'?",
-        answers: ["Icehouse", "Models", "Split Enz", "Hoodoo Gurus"],
-        correctAnswer: "Icehouse"
-    },
-    {
-        id: "music_4553",
-        category: "Music",
-        question: "Which group recorded 'Walls'?",
-        answers: ["Icehouse", "Models", "Split Enz", "Hoodoo Gurus"],
-        correctAnswer: "Icehouse"
-    },
-    {
-        id: "music_4554",
-        category: "Music",
-        question: "Which group recorded 'Street Cafe'?",
-        answers: ["Icehouse", "Models", "Split Enz", "Hoodoo Gurus"],
-        correctAnswer: "Icehouse"
-    },
-    {
-        id: "music_4555",
-        category: "Music",
-        question: "Which group recorded 'Man of Colours'?",
-        answers: ["Icehouse", "Models", "Split Enz", "Hoodoo Gurus"],
-        correctAnswer: "Icehouse"
-    },
-
-    // AUSTRALIAN CRAWL
-
-    {
-        id: "music_4556",
-        category: "Music",
-        question: "Which group recorded 'The Boys Light Up'?",
-        answers: ["Australian Crawl", "Dragon", "Models", "Mental as Anything"],
-        correctAnswer: "Australian Crawl"
-    },
-    {
-        id: "music_4557",
-        category: "Music",
-        question: "Which group recorded 'Downhearted'?",
-        answers: ["Australian Crawl", "Dragon", "Models", "Mental as Anything"],
-        correctAnswer: "Australian Crawl"
-    },
-    {
-        id: "music_4558",
-        category: "Music",
-        question: "Which group recorded 'Things Don't Seem'?",
-        answers: ["Australian Crawl", "Dragon", "Models", "Mental as Anything"],
-        correctAnswer: "Australian Crawl"
-    },
-    {
-        id: "music_4559",
-        category: "Music",
-        question: "Which group recorded 'Errol'?",
-        answers: ["Australian Crawl", "Dragon", "Models", "Mental as Anything"],
-        correctAnswer: "Australian Crawl"
-    },
-    {
-        id: "music_4560",
-        category: "Music",
-        question: "Which group recorded 'Reckless (Don't Be So...)'?",
-        answers: ["Australian Crawl", "Dragon", "Models", "Mental as Anything"],
-        correctAnswer: "Australian Crawl"
-    },
-
-    // DRAGON
-
-    {
-        id: "music_4561",
-        category: "Music",
-        question: "Which group recorded 'Rain'?",
-        answers: ["Dragon", "Australian Crawl", "Models", "Mental as Anything"],
-        correctAnswer: "Dragon"
-    },
-    {
-        id: "music_4562",
-        category: "Music",
-        question: "Which group recorded 'Magic'?",
-        answers: ["Dragon", "Australian Crawl", "Models", "Mental as Anything"],
-        correctAnswer: "Dragon"
-    },
-    {
-        id: "music_4563",
-        category: "Music",
-        question: "Which group recorded 'Cry'?",
-        answers: ["Dragon", "Australian Crawl", "Models", "Mental as Anything"],
-        correctAnswer: "Dragon"
-    },
-    {
-        id: "music_4564",
-        category: "Music",
-        question: "Which group recorded 'Young Years'?",
-        answers: ["Dragon", "Australian Crawl", "Models", "Mental as Anything"],
-        correctAnswer: "Dragon"
-    },
-
-    // MACHINATIONS
-
-    {
-        id: "music_4565",
-        category: "Music",
-        question: "Which group recorded 'Pressure Sway'?",
-        answers: ["Machinations", "Models", "Pseudo Echo", "Real Life"],
-        correctAnswer: "Machinations"
-    },
-    {
-        id: "music_4566",
-        category: "Music",
-        question: "Which group recorded 'No Say in It'?",
-        answers: ["Machinations", "Models", "Pseudo Echo", "Real Life"],
-        correctAnswer: "Machinations"
-    }
-
+    makeQuestion("music_4467", "Which artist recorded 'Change'?", ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"], "John Waite", "Medium"),
+    makeQuestion("music_4468", "Which artist recorded 'Tears'?", ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"], "John Waite", "Hard"),
+    makeQuestion("music_4469", "Which artist recorded 'Every Step of the Way'?", ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"], "John Waite", "Hard"),
+    makeQuestion("music_4470", "Which artist recorded 'If Anybody Had a Heart'?", ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"], "John Waite", "Hard"),
+    makeQuestion("music_4471", "Which artist recorded 'Restless Heart'?", ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"], "John Waite", "Hard"),
+    makeQuestion("music_4472", "Which artist recorded 'These Times Are Hard for Lovers'?", ["John Waite", "Steve Perry", "Richard Marx", "Eddie Money"], "John Waite", "Hard"),
+    makeQuestion("music_4473", "Which artist recorded 'Oh Sherrie'?", ["Steve Perry", "John Waite", "Richard Marx", "Eddie Money"], "Steve Perry", "Easy"),
+    makeQuestion("music_4474", "Which artist recorded 'Foolish Heart'?", ["Steve Perry", "John Waite", "Richard Marx", "Eddie Money"], "Steve Perry", "Easy"),
+    makeQuestion("music_4475", "Which artist recorded 'She's Mine'?", ["Steve Perry", "John Waite", "Richard Marx", "Eddie Money"], "Steve Perry", "Hard"),
+    makeQuestion("music_4476", "Which artist recorded 'Don't Mean Nothing'?", ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"], "Richard Marx", "Easy"),
+    makeQuestion("music_4477", "Which artist recorded 'Should've Known Better'?", ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"], "Richard Marx", "Medium"),
+    makeQuestion("music_4478", "Which artist recorded 'Endless Summer Nights'?", ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"], "Richard Marx", "Easy"),
+    makeQuestion("music_4479", "Which artist recorded 'Hold On to the Nights'?", ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"], "Richard Marx", "Easy"),
+    makeQuestion("music_4480", "Which artist recorded 'Satisfied'?", ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"], "Richard Marx", "Easy"),
+    makeQuestion("music_4481", "Which artist recorded 'Angelia'?", ["Richard Marx", "John Waite", "Steve Perry", "Eddie Money"], "Richard Marx", "Medium"),
+    makeQuestion("music_4482", "Which artist recorded 'Johnny Can't Read'?", ["Don Henley", "Glenn Frey", "Eddie Money", "John Mellencamp"], "Don Henley", "Hard"),
+    makeQuestion("music_4483", "Which artist recorded 'I Can't Stand Still'?", ["Don Henley", "Glenn Frey", "Eddie Money", "John Mellencamp"], "Don Henley", "Hard"),
+    makeQuestion("music_4484", "Which artist recorded 'I Found Somebody'?", ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"], "Glenn Frey", "Hard"),
+    makeQuestion("music_4485", "Which artist recorded 'The One You Love'?", ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"], "Glenn Frey", "Medium"),
+    makeQuestion("music_4486", "Which artist recorded 'Sexy Girl'?", ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"], "Glenn Frey", "Hard"),
+    makeQuestion("music_4487", "Which artist recorded 'The Heat Is On'?", ["Glenn Frey", "Don Henley", "Eddie Money", "Kenny Loggins"], "Glenn Frey", "Easy"),
+    makeQuestion("music_4488", "Which artist recorded 'Smuggler's Blues'?", ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"], "Glenn Frey", "Medium"),
+    makeQuestion("music_4489", "Which artist recorded 'You Belong to the City'?", ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"], "Glenn Frey", "Easy"),
+    makeQuestion("music_4490", "Which artist recorded 'True Love'?", ["Glenn Frey", "Don Henley", "Eddie Money", "John Mellencamp"], "Glenn Frey", "Hard"),
+    makeQuestion("music_4491", "Which artist recorded 'Think I'm in Love'?", ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"], "Eddie Money", "Medium"),
+    makeQuestion("music_4492", "Which artist recorded 'Shakin''?", ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"], "Eddie Money", "Medium"),
+    makeQuestion("music_4493", "Which artist recorded 'Take Me Home Tonight'?", ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"], "Eddie Money", "Easy"),
+    makeQuestion("music_4494", "Which artist recorded 'I Wanna Go Back'?", ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"], "Eddie Money", "Easy"),
+    makeQuestion("music_4495", "Which artist recorded 'Endless Nights'?", ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"], "Eddie Money", "Hard"),
+    makeQuestion("music_4496", "Which artist recorded 'Walk on Water'?", ["Eddie Money", "John Waite", "Glenn Frey", "John Mellencamp"], "Eddie Money", "Easy"),
+    makeQuestion("music_4497", "Which artist recorded 'This Is It'?", ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"], "Kenny Loggins", "Medium"),
+    makeQuestion("music_4498", "Which artist recorded 'I'm Alright'?", ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"], "Kenny Loggins", "Easy"),
+    makeQuestion("music_4499", "Which artist recorded 'Heart to Heart'?", ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"], "Kenny Loggins", "Medium"),
+    makeQuestion("music_4500", "Which artist recorded 'I'm Free (Heaven Helps the Man)'?", ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"], "Kenny Loggins", "Easy"),
+    makeQuestion("music_4501", "Which artist recorded 'Meet Me Half Way'?", ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"], "Kenny Loggins", "Easy"),
+    makeQuestion("music_4502", "Which artist recorded 'Nobody's Fool'?", ["Kenny Loggins", "Eddie Money", "John Waite", "Steve Perry"], "Kenny Loggins", "Easy"),
+    makeQuestion("music_4503", "Which group recorded 'Hunters of the Night'?", ["Mr. Mister", "Toto", "Survivor", "Night Ranger"], "Mr. Mister", "Hard"),
+    makeQuestion("music_4504", "Which group recorded 'Something Real (Inside Me/Inside You)'?", ["Mr. Mister", "Toto", "Survivor", "Night Ranger"], "Mr. Mister", "Hard"),
+    makeQuestion("music_4505", "Which group recorded 'Do You Believe in Love'?", ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"], "Huey Lewis and the News", "Easy"),
+    makeQuestion("music_4506", "Which group recorded 'Hope You Love Me Like You Say You Do'?", ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"], "Huey Lewis and the News", "Hard"),
+    makeQuestion("music_4507", "Which group recorded 'Heart and Soul'?", ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"], "Huey Lewis and the News", "Easy"),
+    makeQuestion("music_4508", "Which group recorded 'I Want a New Drug'?", ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"], "Huey Lewis and the News", "Easy"),
+    makeQuestion("music_4509", "Which group recorded 'The Heart of Rock & Roll'?", ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"], "Huey Lewis and the News", "Easy"),
+    makeQuestion("music_4510", "Which group recorded 'If This Is It'?", ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"], "Huey Lewis and the News", "Easy"),
+    makeQuestion("music_4511", "Which group recorded 'Walking on a Thin Line'?", ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"], "Huey Lewis and the News", "Hard"),
+    makeQuestion("music_4512", "Which group recorded 'Jacob's Ladder'?", ["Huey Lewis and the News", "The Outfield", "The Hooters", "Cheap Trick"], "Huey Lewis and the News", "Easy"),
+    makeQuestion("music_4513", "Which artist recorded 'Ain't Even Done with the Night'?", ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"], "John Mellencamp", "Hard"),
+    makeQuestion("music_4514", "Which artist recorded 'Hurts So Good'?", ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"], "John Mellencamp", "Easy"),
+    makeQuestion("music_4515", "Which artist recorded 'Crumblin' Down'?", ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"], "John Mellencamp", "Medium"),
+    makeQuestion("music_4516", "Which artist recorded 'Pink Houses'?", ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"], "John Mellencamp", "Easy"),
+    makeQuestion("music_4517", "Which artist recorded 'Authority Song'?", ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"], "John Mellencamp", "Medium"),
+    makeQuestion("music_4518", "Which artist recorded 'Small Town'?", ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"], "John Mellencamp", "Easy"),
+    makeQuestion("music_4519", "Which artist recorded 'R.O.C.K. in the U.S.A.'?", ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"], "John Mellencamp", "Easy"),
+    makeQuestion("music_4520", "Which artist recorded 'Paper in Fire'?", ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"], "John Mellencamp", "Medium"),
+    makeQuestion("music_4521", "Which artist recorded 'Cherry Bomb'?", ["John Mellencamp", "Bryan Adams", "Eddie Money", "Don Henley"], "John Mellencamp", "Easy"),
+    makeQuestion("music_4522", "Which artist recorded 'Lonely Nights'?", ["Bryan Adams", "John Mellencamp", "Corey Hart", "Richard Marx"], "Bryan Adams", "Hard"),
+    makeQuestion("music_4523", "Which artist recorded 'This Time'?", ["Bryan Adams", "John Mellencamp", "Corey Hart", "Richard Marx"], "Bryan Adams", "Easy"),
+    makeQuestion("music_4524", "Which artist recorded 'Sunglasses at Night'?", ["Corey Hart", "Bryan Adams", "Richard Marx", "John Waite"], "Corey Hart", "Easy"),
+    makeQuestion("music_4525", "Which artist recorded 'It Ain't Enough'?", ["Corey Hart", "Bryan Adams", "Richard Marx", "John Waite"], "Corey Hart", "Hard"),
+    makeQuestion("music_4526", "Which artist recorded 'Never Surrender'?", ["Corey Hart", "Bryan Adams", "Richard Marx", "John Waite"], "Corey Hart", "Easy"),
+    makeQuestion("music_4527", "Which artist recorded 'Boy in the Box'?", ["Corey Hart", "Bryan Adams", "Richard Marx", "John Waite"], "Corey Hart", "Hard"),
+    makeQuestion("music_4528", "Which artist recorded 'Can't Help Falling in Love'?", ["Corey Hart", "Bryan Adams", "Richard Marx", "John Waite"], "Corey Hart", "Easy"),
+    makeQuestion("music_4529", "Which artist recorded 'You Are in My System'?", ["Robert Palmer", "Corey Hart", "Bryan Adams", "John Waite"], "Robert Palmer", "Medium"),
+    makeQuestion("music_4530", "Which artist recorded 'Pride'?", ["Robert Palmer", "Corey Hart", "Bryan Adams", "John Waite"], "Robert Palmer", "Hard"),
+    makeQuestion("music_4531", "Which artist recorded 'Hyperactive'?", ["Robert Palmer", "Corey Hart", "Bryan Adams", "John Waite"], "Robert Palmer", "Hard"),
+    makeQuestion("music_4532", "Which group recorded 'I Got You'?", ["Split Enz", "Icehouse", "Models", "Mental as Anything"], "Split Enz", "Easy"),
+    makeQuestion("music_4533", "Which group recorded 'One Step Ahead'?", ["Split Enz", "Icehouse", "Models", "Mental as Anything"], "Split Enz", "Hard"),
+    makeQuestion("music_4534", "Which group recorded 'Six Months in a Leaky Boat'?", ["Split Enz", "Icehouse", "Models", "Mental as Anything"], "Split Enz", "Easy"),
+    makeQuestion("music_4535", "Which group recorded 'If You Leave Me, Can I Come Too?'?", ["Mental as Anything", "Split Enz", "Models", "Icehouse"], "Mental as Anything", "Hard"),
+    makeQuestion("music_4536", "Which group recorded 'Too Many Times'?", ["Mental as Anything", "Split Enz", "Models", "Icehouse"], "Mental as Anything", "Hard"),
+    makeQuestion("music_4537", "Which group recorded 'Live It Up'?", ["Mental as Anything", "Split Enz", "Models", "Icehouse"], "Mental as Anything", "Easy"),
+    makeQuestion("music_4538", "Which group recorded 'You're So Strong'?", ["Mental as Anything", "Split Enz", "Models", "Icehouse"], "Mental as Anything", "Hard"),
+    makeQuestion("music_4539", "Which group recorded 'He's Just No Good for You'?", ["Mental as Anything", "Split Enz", "Models", "Icehouse"], "Mental as Anything", "Hard"),
+    makeQuestion("music_4540", "Which group recorded 'I Hear Motion'?", ["Models", "Icehouse", "Mental as Anything", "Hoodoo Gurus"], "Models", "Hard"),
+    makeQuestion("music_4541", "Which group recorded 'Big on Love'?", ["Models", "Icehouse", "Mental as Anything", "Hoodoo Gurus"], "Models", "Hard"),
+    makeQuestion("music_4542", "Which group recorded 'Barbados'?", ["Models", "Icehouse", "Mental as Anything", "Hoodoo Gurus"], "Models", "Medium"),
+    makeQuestion("music_4543", "Which group recorded 'Out of Mind, Out of Sight'?", ["Models", "Icehouse", "Mental as Anything", "Hoodoo Gurus"], "Models", "Easy"),
+    makeQuestion("music_4544", "Which group recorded 'Leilani'?", ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"], "Hoodoo Gurus", "Hard"),
+    makeQuestion("music_4545", "Which group recorded 'Tojo'?", ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"], "Hoodoo Gurus", "Hard"),
+    makeQuestion("music_4546", "Which group recorded 'My Girl'?", ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"], "Hoodoo Gurus", "Hard"),
+    makeQuestion("music_4547", "Which group recorded 'I Want You Back'?", ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"], "Hoodoo Gurus", "Hard"),
+    makeQuestion("music_4548", "Which group recorded 'Bittersweet'?", ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"], "Hoodoo Gurus", "Easy"),
+    makeQuestion("music_4549", "Which group recorded 'What's My Scene'?", ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"], "Hoodoo Gurus", "Easy"),
+    makeQuestion("music_4550", "Which group recorded 'Like Wow - Wipeout!'?", ["Hoodoo Gurus", "Models", "Icehouse", "Mental as Anything"], "Hoodoo Gurus", "Medium"),
+    makeQuestion("music_4551", "Which band, then called Flowers, recorded 'Can't Help Myself'?", ["Icehouse", "Models", "Split Enz", "Hoodoo Gurus"], "Icehouse", "Hard"),
+    makeQuestion("music_4552", "Which band, then called Flowers, recorded 'We Can Get Together'?", ["Icehouse", "Models", "Split Enz", "Hoodoo Gurus"], "Icehouse", "Hard"),
+    makeQuestion("music_4553", "Which band, then called Flowers, recorded 'Walls'?", ["Icehouse", "Models", "Split Enz", "Hoodoo Gurus"], "Icehouse", "Hard"),
+    makeQuestion("music_4554", "Which group recorded 'Street Cafe'?", ["Icehouse", "Models", "Split Enz", "Hoodoo Gurus"], "Icehouse", "Easy"),
+    makeQuestion("music_4555", "Which group recorded 'Man of Colours'?", ["Icehouse", "Models", "Split Enz", "Hoodoo Gurus"], "Icehouse", "Easy"),
+    makeQuestion("music_4556", "Which group recorded 'The Boys Light Up'?", ["Australian Crawl", "Dragon", "Models", "Mental as Anything"], "Australian Crawl", "Hard"),
+    makeQuestion("music_4557", "Which group recorded 'Downhearted'?", ["Australian Crawl", "Dragon", "Models", "Mental as Anything"], "Australian Crawl", "Hard"),
+    makeQuestion("music_4558", "Which group recorded 'Things Don't Seem'?", ["Australian Crawl", "Dragon", "Models", "Mental as Anything"], "Australian Crawl", "Hard"),
+    makeQuestion("music_4559", "Which group recorded 'Errol'?", ["Australian Crawl", "Dragon", "Models", "Mental as Anything"], "Australian Crawl", "Hard"),
+    makeQuestion("music_4560", "Which group recorded 'Reckless (Don't Be So...)'?", ["Australian Crawl", "Dragon", "Models", "Mental as Anything"], "Australian Crawl", "Easy"),
+    makeQuestion("music_4561", "Which group recorded 'Rain'?", ["Dragon", "Australian Crawl", "Models", "Mental as Anything"], "Dragon", "Easy"),
+    makeQuestion("music_4562", "Which group recorded 'Magic'?", ["Dragon", "Australian Crawl", "Models", "Mental as Anything"], "Dragon", "Hard"),
+    makeQuestion("music_4563", "Which group recorded 'Cry'?", ["Dragon", "Australian Crawl", "Models", "Mental as Anything"], "Dragon", "Hard"),
+    makeQuestion("music_4564", "Which group recorded 'Young Years'?", ["Dragon", "Australian Crawl", "Models", "Mental as Anything"], "Dragon", "Hard"),
+    makeQuestion("music_4565", "Which group recorded 'Pressure Sway'?", ["Machinations", "Models", "Pseudo Echo", "Real Life"], "Machinations", "Hard"),
+    makeQuestion("music_4566", "Which group recorded 'No Say in It'?", ["Machinations", "Models", "Pseudo Echo", "Real Life"], "Machinations", "Hard"),
 ];
 
 module.exports = quizPack64;
