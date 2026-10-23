@@ -1,771 +1,263 @@
 // quiz_pack63.js
-// PuzzlePilot Big Quiz
-// Music Pack 63
-// 100 questions
-// IDs: music_4367 - music_4466
+// PuzzlePilot Bigggggg Quiz - Music Pack 63
+// 100 audited questions: music_4367 through music_4466.
+// Artist and recording details expand into full tags for every question.
+
+const artistTags = {
+    "Alexander O'Neal": ["soul", "r&b", "contemporary r&b", "american", "male singers", "solo artists", "minneapolis sound", "jimmy jam", "terry lewis", "tabu records"],
+    "Cherrelle": ["soul", "r&b", "dance-pop", "american", "female singers", "solo artists", "minneapolis sound", "jimmy jam", "terry lewis", "tabu records"],
+    "The S.O.S. Band": ["post-disco", "funk", "r&b", "american", "bands", "atlanta", "tabu records", "jimmy jam", "terry lewis", "mary davis"],
+    "Loose Ends": ["britfunk", "r&b", "soul", "british", "bands", "carl mcintosh", "jane eugene", "steve nichol", "virgin records"],
+    "Imagination": ["post-disco", "britfunk", "soul", "british", "bands", "leee john", "ashley ingram", "errol kennedy", "jolley and swain"],
+    "Shalamar": ["post-disco", "funk", "r&b", "american", "bands", "soul train", "howard hewett", "jody watley", "jeffrey daniel"],
+    "The Whispers": ["soul", "r&b", "funk", "american", "bands", "male vocal groups", "scott twins", "solar records"],
+    "Atlantic Starr": ["soul", "r&b", "pop", "american", "bands", "david lewis", "wayne lewis", "barbara weathers"],
+    "Cameo": ["funk", "r&b", "post-disco", "american", "bands", "larry blackmon", "tomi jenkins", "atlanta artists"],
+    "The Gap Band": ["funk", "r&b", "post-disco", "american", "bands", "wilson brothers", "charlie wilson", "ronnie wilson", "robert wilson", "tulsa"],
+    "Kool & the Gang": ["funk", "r&b", "soul", "american", "bands", "robert kool bell", "ronald bell", "james jt taylor"],
+    "Change": ["post-disco", "italo disco", "r&b", "italian american", "bands", "jacques fred petrus", "mauro malavasi"],
+    "Luther Vandross": ["soul", "r&b", "quiet storm", "american", "male singers", "solo artists", "singer-songwriters", "grammy winners"],
+    "Anita Baker": ["soul", "r&b", "quiet storm", "american", "female singers", "solo artists", "grammy winners"],
+    "Freddie Jackson": ["soul", "r&b", "quiet storm", "american", "male singers", "solo artists", "capitol records"],
+    "Jeffrey Osborne": ["soul", "r&b", "quiet storm", "american", "male singers", "solo artists", "ltd band"],
+    "Deniece Williams": ["soul", "r&b", "gospel influenced soul", "american", "female singers", "solo artists"],
+    "Phyllis Hyman": ["soul", "r&b", "quiet storm", "american", "female singers", "solo artists", "arista records"],
+    "Gwen Guthrie": ["post-disco", "r&b", "dance", "american", "female singers", "solo artists", "singer-songwriters", "garage house"],
+    "Melba Moore": ["post-disco", "soul", "r&b", "american", "female singers", "solo artists", "broadway performers"],
+};
+
+const recordingTags = {
+    "music_4367": [1985, "alexander oneal album", "1985 singles", "jimmy jam and terry lewis production"],
+    "music_4368": [1985, "alexander oneal album", "1985 singles", "1986 uk chart return", "jimmy jam and terry lewis production"],
+    "music_4369": [1987, "hearsay album", "1987 album tracks", "1988 singles", "jimmy jam and terry lewis production"],
+    "music_4370": [1984, "fragile album", "1984 singles", "robert palmer cover", "original versions"],
+    "music_4371": [1985, "high priority album", "1985 singles", "1986 uk chart success", "alexander oneal duet", "duets"],
+    "music_4372": [1987, "hearsay album", "1987 album tracks", "1988 singles", "alexander oneal duet", "duets"],
+    "music_4373": [1980, "the sos band debut album", "1980 singles", "us r&b number one singles", "post-disco"],
+    "music_4374": [1983, "on the rise album", "1983 singles", "jimmy jam and terry lewis production", "electro funk"],
+    "music_4375": [1983, "on the rise album", "1983 singles", "jimmy jam and terry lewis production", "slow jams"],
+    "music_4376": [1984, "just the way you like it album", "1984 singles", "album title tracks", "jimmy jam and terry lewis production"],
+    "music_4377": [1986, "sands of time album", "1986 singles", "jimmy jam and terry lewis production", "r&b hits"],
+    "music_4378": [1984, "just the way you like it album", "1984 singles", "jimmy jam and terry lewis production", "r&b hits"],
+    "music_4379": [1984, "a little spice album", "1984 singles", "album title tracks", "britfunk"],
+    "music_4380": [1985, "so where are you album", "1985 singles", "us r&b number one singles", "britfunk"],
+    "music_4381": [1985, "so where are you album", "1985 singles", "britfunk"],
+    "music_4382": [1985, "so where are you album", "1985 singles", "david bowie original", "cover versions"],
+    "music_4383": [1986, "zagora album", "1986 singles", "britfunk"],
+    "music_4384": [1986, "zagora album", "1986 singles", "us r&b number one singles", "britfunk"],
+    "music_4385": [1988, "the real chuckeeboo album", "1988 singles", "new jack swing influences"],
+    "music_4386": [1981, "body talk album", "1981 singles", "debut singles", "britfunk"],
+    "music_4387": [1981, "body talk album", "1981 singles", "britfunk"],
+    "music_4388": [1981, "body talk album", "1981 singles", "post-disco"],
+    "music_4389": [1982, "in the heat of the night album", "1982 singles", "uk top five singles", "post-disco"],
+    "music_4390": [1982, "in the heat of the night album", "1982 singles", "uk top five singles", "post-disco"],
+    "music_4391": [1982, "in the heat of the night album", "1982 singles", "post-disco"],
+    "music_4392": [1983, "scandalous album", "1983 singles", "post-disco"],
+    "music_4393": [1983, "scandalous album", "1983 singles", "post-disco"],
+    "music_4394": [1979, "big fun album", "1979 singles", "1980 chart success", "us r&b number one singles", "solar records"],
+    "music_4395": [1984, "heartbreak album", "1984 singles", "footloose film soundtrack", "film songs"],
+    "music_4396": [1979, "the whispers album", "1979 singles", "1980 uk chart success", "solar records"],
+    "music_4397": [1980, "imagination album", "1981 singles", "uk top ten singles", "solar records"],
+    "music_4398": [1980, "imagination album", "1981 singles", "solar records"],
+    "music_4399": [1983, "love for love album", "1983 singles", "solar records"],
+    "music_4400": [1983, "love for love album", "1983 singles", "solar records"],
+    "music_4401": [1984, "so good album", "1984 singles", "solar records"],
+    "music_4402": [1987, "just gets better with time album", "1987 singles", "us r&b number one singles", "babyface songwriting"],
+    "music_4403": [1982, "brilliance album", "1982 singles", "post-disco"],
+    "music_4404": [1983, "yours forever album", "1983 singles", "r&b hits"],
+    "music_4405": [1985, "as the band turns album", "1985 album tracks", "1986 singles", "duet vocals", "barbara weathers"],
+    "music_4406": [1986, "as the band turns album", "1985 album tracks", "1986 singles", "r&b ballads"],
+    "music_4407": [1987, "all in the name of love album", "1987 singles", "us number one singles", "power ballads"],
+    "music_4408": [1989, "were movin up album", "1989 singles", "us r&b number one singles", "porscha martin vocals"],
+    "music_4409": [1980, "cameosis album", "1980 singles", "funk"],
+    "music_4410": [1984, "shes strange album", "1984 singles", "album title tracks", "funk"],
+    "music_4411": [1984, "shes strange album", "1984 singles", "funk"],
+    "music_4412": [1985, "single life album", "1985 singles", "album title tracks", "funk"],
+    "music_4413": [1986, "word up album", "1986 singles", "uk top five singles", "funk"],
+    "music_4414": [1986, "word up album", "1986 singles", "funk"],
+    "music_4415": [1987, "word up album", "1986 album tracks", "1987 singles", "funk"],
+    "music_4416": [1988, "machismo album", "1988 singles", "1989 uk chart success", "funk"],
+    "music_4417": [1980, "gap band iii album", "1980 singles", "funk"],
+    "music_4418": [1980, "gap band iii album", "1981 singles", "slow jams"],
+    "music_4419": [1982, "gap band iv album", "1982 singles", "funk"],
+    "music_4420": [1982, "gap band iv album", "1982 singles", "funk"],
+    "music_4421": [1982, "gap band iv album", "1982 singles", "r&b hits"],
+    "music_4422": [1983, "gap band v jammin album", "1983 singles", "funk"],
+    "music_4423": [1986, "gap band 8 album", "1986 singles", "funk"],
+    "music_4424": [1979, "ladies night album", "1979 singles", "1980 chart success", "r&b ballads"],
+    "music_4425": [1981, "something special album", "1981 singles", "funk"],
+    "music_4426": [1982, "as one album", "1982 singles", "funk"],
+    "music_4427": [1984, "emergency album", "1984 singles", "pop rock influences"],
+    "music_4428": [1986, "forever album", "1986 album tracks", "1987 singles", "pop soul"],
+    "music_4429": [1980, "the glow of love album", "1980 singles", "post-disco"],
+    "music_4430": [1980, "the glow of love album", "1980 singles", "luther vandross lead vocals", "post-disco"],
+    "music_4431": [1980, "the glow of love album", "1980 singles", "luther vandross lead vocals", "album title tracks"],
+    "music_4432": [1981, "miracles album", "1981 singles", "post-disco"],
+    "music_4433": [1984, "change of heart album", "1984 singles", "album title tracks", "jimmy jam and terry lewis songwriting"],
+    "music_4434": [1985, "turn on your radio album", "1985 singles", "paul hardcastle remix", "post-disco"],
+    "music_4435": [1981, "never too much album", "1981 singles", "r&b"],
+    "music_4436": [1982, "forever for always for love album", "1982 album tracks", "1983 singles", "sam cooke having a party cover", "medleys"],
+    "music_4437": [1985, "the night i fell in love album", "1985 singles", "the temptations original", "cover versions"],
+    "music_4438": [1986, "give me the reason album", "1986 album tracks", "1987 singles", "gregory hines duet", "duets"],
+    "music_4439": [1988, "any love album", "1988 singles", "album title tracks", "r&b"],
+    "music_4440": [1983, "the songstress album", "1983 singles", "quiet storm"],
+    "music_4441": [1986, "rapture album", "1986 singles", "quiet storm"],
+    "music_4442": [1986, "rapture album", "1986 singles", "quiet storm"],
+    "music_4443": [1988, "giving you the best that i got album", "1988 album tracks", "1989 singles", "quiet storm"],
+    "music_4444": [1985, "rock me tonight album", "1985 singles", "debut album", "us r&b number one singles"],
+    "music_4445": [1985, "rock me tonight album", "1985 singles", "slow jams"],
+    "music_4446": [1986, "just like the first time album", "1986 singles", "quiet storm"],
+    "music_4447": [1986, "just like the first time album", "1986 singles", "us r&b number one singles"],
+    "music_4448": [1986, "just like the first time album", "1986 singles", "quiet storm"],
+    "music_4449": [1987, "just like the first time album", "1986 album tracks", "1987 singles", "quiet storm"],
+    "music_4450": [1988, "dont let love slip away album", "1988 singles", "us r&b number one singles"],
+    "music_4451": [1982, "jeffrey osborne album", "1982 singles", "love ballads"],
+    "music_4452": [1983, "stay with me tonight album", "1983 singles", "album title tracks"],
+    "music_4453": [1983, "stay with me tonight album", "1983 singles", "r&b"],
+    "music_4454": [1983, "stay with me tonight album", "1983 album tracks", "1984 singles", "love ballads"],
+    "music_4455": [1986, "emotional album", "1986 singles", "the woo woo song", "r&b"],
+    "music_4456": [1982, "niecy album", "1982 singles", "royalettes original", "cover versions"],
+    "music_4457": [1984, "lets hear it for the boy album", "1984 singles", "footloose film soundtrack", "us number one singles"],
+    "music_4458": [1984, "lets hear it for the boy album", "1984 singles", "r&b"],
+    "music_4459": [1986, "hot on the trail album", "1986 singles", "greg mathieson production"],
+    "music_4460": [1979, "you know how to love me album", "1979 singles", "album title tracks"],
+    "music_4461": [1981, "cant we fall in love again album", "1981 singles", "michael henderson duet", "duets"],
+    "music_4462": [1986, "living all alone album", "1986 singles", "album title tracks"],
+    "music_4463": [1982, "gwen guthrie album", "1982 singles", "1985 uk reissue", "dance music"],
+    "music_4464": [1983, "padlock ep", "1983 singles", "larry levan remix", "garage house"],
+    "music_4465": [1986, "good to go lover album", "1986 singles", "uk top five singles", "dance music"],
+    "music_4466": [1982, "the other side of the rainbow album", "1982 singles", "uk top twenty singles", "post-disco"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const detail = recordingTags[id];
+    if (!artist || !detail) throw new Error(`Missing metadata for ${id}`);
+
+    // Find the song title after "recorded" or "on", avoiding
+    // apostrophes in names such as Alexander O'Neal.
+    const song = question.match(/(?:recorded|on)\s+'(.+)'/);
+    if (!song) throw new Error(`Missing song title for ${id}`);
+
+    const year = detail[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", "songs", "recordings", decade, `${decade} music`,
+            `${year} releases`, song[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...artist, ...detail.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack63 = [
-
-    // ALEXANDER O'NEAL
-
-    {
-        id: "music_4367",
-        category: "Music",
-        question: "Which artist recorded 'What's Missing'?",
-        answers: ["Alexander O'Neal", "Luther Vandross", "Freddie Jackson", "Jeffrey Osborne"],
-        correctAnswer: "Alexander O'Neal"
-    },
-    {
-        id: "music_4368",
-        category: "Music",
-        question: "Which artist recorded 'A Broken Heart Can Mend'?",
-        answers: ["Alexander O'Neal", "Luther Vandross", "Freddie Jackson", "Jeffrey Osborne"],
-        correctAnswer: "Alexander O'Neal"
-    },
-    {
-        id: "music_4369",
-        category: "Music",
-        question: "Which artist recorded 'What Can I Say to Make You Love Me'?",
-        answers: ["Alexander O'Neal", "Luther Vandross", "Freddie Jackson", "Jeffrey Osborne"],
-        correctAnswer: "Alexander O'Neal"
-    },
-
-    // CHERRELLE
-
-    {
-        id: "music_4370",
-        category: "Music",
-        question: "Which artist recorded 'I Didn't Mean to Turn You On'?",
-        answers: ["Cherrelle", "Anita Baker", "Deniece Williams", "Phyllis Hyman"],
-        correctAnswer: "Cherrelle"
-    },
-    {
-        id: "music_4371",
-        category: "Music",
-        question: "Which artist recorded 'Saturday Love'?",
-        answers: ["Cherrelle", "Anita Baker", "Deniece Williams", "Phyllis Hyman"],
-        correctAnswer: "Cherrelle"
-    },
-    {
-        id: "music_4372",
-        category: "Music",
-        question: "Which artist recorded 'Never Knew Love Like This'?",
-        answers: ["Cherrelle", "Anita Baker", "Deniece Williams", "Phyllis Hyman"],
-        correctAnswer: "Cherrelle"
-    },
-
-    // THE S.O.S. BAND
-
-    {
-        id: "music_4373",
-        category: "Music",
-        question: "Which group recorded 'Take Your Time (Do It Right)'?",
-        answers: ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"],
-        correctAnswer: "The S.O.S. Band"
-    },
-    {
-        id: "music_4374",
-        category: "Music",
-        question: "Which group recorded 'Just Be Good to Me'?",
-        answers: ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"],
-        correctAnswer: "The S.O.S. Band"
-    },
-    {
-        id: "music_4375",
-        category: "Music",
-        question: "Which group recorded 'Tell Me If You Still Care'?",
-        answers: ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"],
-        correctAnswer: "The S.O.S. Band"
-    },
-    {
-        id: "music_4376",
-        category: "Music",
-        question: "Which group recorded 'Just the Way You Like It'?",
-        answers: ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"],
-        correctAnswer: "The S.O.S. Band"
-    },
-    {
-        id: "music_4377",
-        category: "Music",
-        question: "Which group recorded 'The Finest'?",
-        answers: ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"],
-        correctAnswer: "The S.O.S. Band"
-    },
-    {
-        id: "music_4378",
-        category: "Music",
-        question: "Which group recorded 'No One's Gonna Love You'?",
-        answers: ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"],
-        correctAnswer: "The S.O.S. Band"
-    },
-
-    // LOOSE ENDS
-
-    {
-        id: "music_4379",
-        category: "Music",
-        question: "Which group recorded 'A Little Spice'?",
-        answers: ["Loose Ends", "Imagination", "Shalamar", "The Whispers"],
-        correctAnswer: "Loose Ends"
-    },
-    {
-        id: "music_4380",
-        category: "Music",
-        question: "Which group recorded 'Hangin' on a String (Contemplating)'?",
-        answers: ["Loose Ends", "Imagination", "Shalamar", "The Whispers"],
-        correctAnswer: "Loose Ends"
-    },
-    {
-        id: "music_4381",
-        category: "Music",
-        question: "Which group recorded 'Magic Touch'?",
-        answers: ["Loose Ends", "Imagination", "Shalamar", "The Whispers"],
-        correctAnswer: "Loose Ends"
-    },
-    {
-        id: "music_4382",
-        category: "Music",
-        question: "Which group recorded 'Golden Years'?",
-        answers: ["Loose Ends", "Imagination", "Shalamar", "The Whispers"],
-        correctAnswer: "Loose Ends"
-    },
-    {
-        id: "music_4383",
-        category: "Music",
-        question: "Which group recorded 'Stay a Little While, Child'?",
-        answers: ["Loose Ends", "Imagination", "Shalamar", "The Whispers"],
-        correctAnswer: "Loose Ends"
-    },
-    {
-        id: "music_4384",
-        category: "Music",
-        question: "Which group recorded 'Slow Down'?",
-        answers: ["Loose Ends", "Imagination", "Shalamar", "The Whispers"],
-        correctAnswer: "Loose Ends"
-    },
-    {
-        id: "music_4385",
-        category: "Music",
-        question: "Which group recorded 'Watching You'?",
-        answers: ["Loose Ends", "Imagination", "Shalamar", "The Whispers"],
-        correctAnswer: "Loose Ends"
-    },
-
-    // IMAGINATION
-
-    {
-        id: "music_4386",
-        category: "Music",
-        question: "Which group recorded 'Body Talk'?",
-        answers: ["Imagination", "Loose Ends", "Shalamar", "The Whispers"],
-        correctAnswer: "Imagination"
-    },
-    {
-        id: "music_4387",
-        category: "Music",
-        question: "Which group recorded 'In and Out of Love'?",
-        answers: ["Imagination", "Loose Ends", "Shalamar", "The Whispers"],
-        correctAnswer: "Imagination"
-    },
-    {
-        id: "music_4388",
-        category: "Music",
-        question: "Which group recorded 'Flashback'?",
-        answers: ["Imagination", "Loose Ends", "Shalamar", "The Whispers"],
-        correctAnswer: "Imagination"
-    },
-    {
-        id: "music_4389",
-        category: "Music",
-        question: "Which group recorded 'Just an Illusion'?",
-        answers: ["Imagination", "Loose Ends", "Shalamar", "The Whispers"],
-        correctAnswer: "Imagination"
-    },
-    {
-        id: "music_4390",
-        category: "Music",
-        question: "Which group recorded 'Music and Lights'?",
-        answers: ["Imagination", "Loose Ends", "Shalamar", "The Whispers"],
-        correctAnswer: "Imagination"
-    },
-    {
-        id: "music_4391",
-        category: "Music",
-        question: "Which group recorded 'Changes'?",
-        answers: ["Imagination", "Loose Ends", "Shalamar", "The Whispers"],
-        correctAnswer: "Imagination"
-    },
-    {
-        id: "music_4392",
-        category: "Music",
-        question: "Which group recorded 'Looking at Midnight'?",
-        answers: ["Imagination", "Loose Ends", "Shalamar", "The Whispers"],
-        correctAnswer: "Imagination"
-    },
-    {
-        id: "music_4393",
-        category: "Music",
-        question: "Which group recorded 'New Dimension'?",
-        answers: ["Imagination", "Loose Ends", "Shalamar", "The Whispers"],
-        correctAnswer: "Imagination"
-    },
-
-    // SHALAMAR
-
-    {
-        id: "music_4394",
-        category: "Music",
-        question: "Which group recorded 'The Second Time Around'?",
-        answers: ["Shalamar", "The Whispers", "Atlantic Starr", "The S.O.S. Band"],
-        correctAnswer: "Shalamar"
-    },
-    {
-        id: "music_4395",
-        category: "Music",
-        question: "Which group recorded 'Dancing in the Sheets'?",
-        answers: ["Shalamar", "The Whispers", "Atlantic Starr", "The S.O.S. Band"],
-        correctAnswer: "Shalamar"
-    },
-
-    // THE WHISPERS
-
-    {
-        id: "music_4396",
-        category: "Music",
-        question: "Which group recorded 'And the Beat Goes On'?",
-        answers: ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"],
-        correctAnswer: "The Whispers"
-    },
-    {
-        id: "music_4397",
-        category: "Music",
-        question: "Which group recorded 'It's a Love Thing'?",
-        answers: ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"],
-        correctAnswer: "The Whispers"
-    },
-    {
-        id: "music_4398",
-        category: "Music",
-        question: "Which group recorded 'I Can Make It Better'?",
-        answers: ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"],
-        correctAnswer: "The Whispers"
-    },
-    {
-        id: "music_4399",
-        category: "Music",
-        question: "Which group recorded 'Tonight'?",
-        answers: ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"],
-        correctAnswer: "The Whispers"
-    },
-    {
-        id: "music_4400",
-        category: "Music",
-        question: "Which group recorded 'Keep on Lovin' Me'?",
-        answers: ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"],
-        correctAnswer: "The Whispers"
-    },
-    {
-        id: "music_4401",
-        category: "Music",
-        question: "Which group recorded 'Contagious'?",
-        answers: ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"],
-        correctAnswer: "The Whispers"
-    },
-    {
-        id: "music_4402",
-        category: "Music",
-        question: "Which group recorded 'Rock Steady'?",
-        answers: ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"],
-        correctAnswer: "The Whispers"
-    },
-
-    // ATLANTIC STARR
-
-    {
-        id: "music_4403",
-        category: "Music",
-        question: "Which group recorded 'Circles'?",
-        answers: ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"],
-        correctAnswer: "Atlantic Starr"
-    },
-    {
-        id: "music_4404",
-        category: "Music",
-        question: "Which group recorded 'Touch a Four Leaf Clover'?",
-        answers: ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"],
-        correctAnswer: "Atlantic Starr"
-    },
-    {
-        id: "music_4405",
-        category: "Music",
-        question: "Which group recorded 'Secret Lovers'?",
-        answers: ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"],
-        correctAnswer: "Atlantic Starr"
-    },
-    {
-        id: "music_4406",
-        category: "Music",
-        question: "Which group recorded 'If Your Heart Isn't in It'?",
-        answers: ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"],
-        correctAnswer: "Atlantic Starr"
-    },
-    {
-        id: "music_4407",
-        category: "Music",
-        question: "Which group recorded 'Always'?",
-        answers: ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"],
-        correctAnswer: "Atlantic Starr"
-    },
-    {
-        id: "music_4408",
-        category: "Music",
-        question: "Which group recorded 'My First Love'?",
-        answers: ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"],
-        correctAnswer: "Atlantic Starr"
-    },
-
-    // CAMEO
-
-    {
-        id: "music_4409",
-        category: "Music",
-        question: "Which group recorded 'Shake Your Pants'?",
-        answers: ["Cameo", "The Gap Band", "Kool & the Gang", "Change"],
-        correctAnswer: "Cameo"
-    },
-    {
-        id: "music_4410",
-        category: "Music",
-        question: "Which group recorded 'She's Strange'?",
-        answers: ["Cameo", "The Gap Band", "Kool & the Gang", "Change"],
-        correctAnswer: "Cameo"
-    },
-    {
-        id: "music_4411",
-        category: "Music",
-        question: "Which group recorded 'Talkin' Out the Side of Your Neck'?",
-        answers: ["Cameo", "The Gap Band", "Kool & the Gang", "Change"],
-        correctAnswer: "Cameo"
-    },
-    {
-        id: "music_4412",
-        category: "Music",
-        question: "Which group recorded 'Single Life'?",
-        answers: ["Cameo", "The Gap Band", "Kool & the Gang", "Change"],
-        correctAnswer: "Cameo"
-    },
-    {
-        id: "music_4413",
-        category: "Music",
-        question: "Which group recorded 'Word Up!'?",
-        answers: ["Cameo", "The Gap Band", "Kool & the Gang", "Change"],
-        correctAnswer: "Cameo"
-    },
-    {
-        id: "music_4414",
-        category: "Music",
-        question: "Which group recorded 'Candy'?",
-        answers: ["Cameo", "The Gap Band", "Kool & the Gang", "Change"],
-        correctAnswer: "Cameo"
-    },
-    {
-        id: "music_4415",
-        category: "Music",
-        question: "Which group recorded 'Back and Forth'?",
-        answers: ["Cameo", "The Gap Band", "Kool & the Gang", "Change"],
-        correctAnswer: "Cameo"
-    },
-    {
-        id: "music_4416",
-        category: "Music",
-        question: "Which group recorded 'Skin I'm In'?",
-        answers: ["Cameo", "The Gap Band", "Kool & the Gang", "Change"],
-        correctAnswer: "Cameo"
-    },
-
-    // THE GAP BAND
-
-    {
-        id: "music_4417",
-        category: "Music",
-        question: "Which group recorded 'Burn Rubber on Me (Why You Wanna Hurt Me)'?",
-        answers: ["The Gap Band", "Cameo", "Kool & the Gang", "Change"],
-        correctAnswer: "The Gap Band"
-    },
-    {
-        id: "music_4418",
-        category: "Music",
-        question: "Which group recorded 'Yearning for Your Love'?",
-        answers: ["The Gap Band", "Cameo", "Kool & the Gang", "Change"],
-        correctAnswer: "The Gap Band"
-    },
-    {
-        id: "music_4419",
-        category: "Music",
-        question: "Which group recorded 'Early in the Morning'?",
-        answers: ["The Gap Band", "Cameo", "Kool & the Gang", "Change"],
-        correctAnswer: "The Gap Band"
-    },
-    {
-        id: "music_4420",
-        category: "Music",
-        question: "Which group recorded 'You Dropped a Bomb on Me'?",
-        answers: ["The Gap Band", "Cameo", "Kool & the Gang", "Change"],
-        correctAnswer: "The Gap Band"
-    },
-    {
-        id: "music_4421",
-        category: "Music",
-        question: "Which group recorded 'Outstanding'?",
-        answers: ["The Gap Band", "Cameo", "Kool & the Gang", "Change"],
-        correctAnswer: "The Gap Band"
-    },
-    {
-        id: "music_4422",
-        category: "Music",
-        question: "Which group recorded 'Party Train'?",
-        answers: ["The Gap Band", "Cameo", "Kool & the Gang", "Change"],
-        correctAnswer: "The Gap Band"
-    },
-    {
-        id: "music_4423",
-        category: "Music",
-        question: "Which group recorded 'Big Fun'?",
-        answers: ["The Gap Band", "Cameo", "Kool & the Gang", "Change"],
-        correctAnswer: "The Gap Band"
-    },
-
-    // KOOL & THE GANG
-
-    {
-        id: "music_4424",
-        category: "Music",
-        question: "Which group recorded 'Too Hot'?",
-        answers: ["Kool & the Gang", "The Gap Band", "Cameo", "Change"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_4425",
-        category: "Music",
-        question: "Which group recorded 'Take My Heart (You Can Have It If You Want It)'?",
-        answers: ["Kool & the Gang", "The Gap Band", "Cameo", "Change"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_4426",
-        category: "Music",
-        question: "Which group recorded 'Let's Go Dancin' (Ooh La, La, La)'?",
-        answers: ["Kool & the Gang", "The Gap Band", "Cameo", "Change"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_4427",
-        category: "Music",
-        question: "Which group recorded 'Misled'?",
-        answers: ["Kool & the Gang", "The Gap Band", "Cameo", "Change"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_4428",
-        category: "Music",
-        question: "Which group recorded 'Stone Love'?",
-        answers: ["Kool & the Gang", "The Gap Band", "Cameo", "Change"],
-        correctAnswer: "Kool & the Gang"
-    },
-
-    // CHANGE
-
-    {
-        id: "music_4429",
-        category: "Music",
-        question: "Which group recorded 'A Lover's Holiday'?",
-        answers: ["Change", "Cameo", "The Gap Band", "Atlantic Starr"],
-        correctAnswer: "Change"
-    },
-    {
-        id: "music_4430",
-        category: "Music",
-        question: "Which group recorded 'Searching'?",
-        answers: ["Change", "Cameo", "The Gap Band", "Atlantic Starr"],
-        correctAnswer: "Change"
-    },
-    {
-        id: "music_4431",
-        category: "Music",
-        question: "Which group recorded 'The Glow of Love'?",
-        answers: ["Change", "Cameo", "The Gap Band", "Atlantic Starr"],
-        correctAnswer: "Change"
-    },
-    {
-        id: "music_4432",
-        category: "Music",
-        question: "Which group recorded 'Paradise'?",
-        answers: ["Change", "Cameo", "The Gap Band", "Atlantic Starr"],
-        correctAnswer: "Change"
-    },
-    {
-        id: "music_4433",
-        category: "Music",
-        question: "Which group recorded 'Change of Heart'?",
-        answers: ["Change", "Cameo", "The Gap Band", "Atlantic Starr"],
-        correctAnswer: "Change"
-    },
-    {
-        id: "music_4434",
-        category: "Music",
-        question: "Which group recorded 'Let's Go Together'?",
-        answers: ["Change", "Cameo", "The Gap Band", "Atlantic Starr"],
-        correctAnswer: "Change"
-    },
-
-    // LUTHER VANDROSS
-
-    {
-        id: "music_4435",
-        category: "Music",
-        question: "Which artist recorded 'Don't You Know That?'?",
-        answers: ["Luther Vandross", "Freddie Jackson", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Luther Vandross"
-    },
-    {
-        id: "music_4436",
-        category: "Music",
-        question: "Which artist recorded 'Bad Boy / Having a Party'?",
-        answers: ["Luther Vandross", "Freddie Jackson", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Luther Vandross"
-    },
-    {
-        id: "music_4437",
-        category: "Music",
-        question: "Which artist recorded 'Since I Lost My Baby'?",
-        answers: ["Luther Vandross", "Freddie Jackson", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Luther Vandross"
-    },
-    {
-        id: "music_4438",
-        category: "Music",
-        question: "Which artist recorded 'There's Nothing Better Than Love'?",
-        answers: ["Luther Vandross", "Freddie Jackson", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Luther Vandross"
-    },
-    {
-        id: "music_4439",
-        category: "Music",
-        question: "Which artist recorded 'Any Love'?",
-        answers: ["Luther Vandross", "Freddie Jackson", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Luther Vandross"
-    },
-
-    // ANITA BAKER
-
-    {
-        id: "music_4440",
-        category: "Music",
-        question: "Which artist recorded 'Angel'?",
-        answers: ["Anita Baker", "Deniece Williams", "Phyllis Hyman", "Cherrelle"],
-        correctAnswer: "Anita Baker"
-    },
-    {
-        id: "music_4441",
-        category: "Music",
-        question: "Which artist recorded 'Same Ole Love (365 Days a Year)'?",
-        answers: ["Anita Baker", "Deniece Williams", "Phyllis Hyman", "Cherrelle"],
-        correctAnswer: "Anita Baker"
-    },
-    {
-        id: "music_4442",
-        category: "Music",
-        question: "Which artist recorded 'No One in the World'?",
-        answers: ["Anita Baker", "Deniece Williams", "Phyllis Hyman", "Cherrelle"],
-        correctAnswer: "Anita Baker"
-    },
-    {
-        id: "music_4443",
-        category: "Music",
-        question: "Which artist recorded 'Just Because'?",
-        answers: ["Anita Baker", "Deniece Williams", "Phyllis Hyman", "Cherrelle"],
-        correctAnswer: "Anita Baker"
-    },
-
-    // FREDDIE JACKSON
-
-    {
-        id: "music_4444",
-        category: "Music",
-        question: "Which artist recorded 'Rock Me Tonight (For Old Times Sake)'?",
-        answers: ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Freddie Jackson"
-    },
-    {
-        id: "music_4445",
-        category: "Music",
-        question: "Which artist recorded 'You Are My Lady'?",
-        answers: ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Freddie Jackson"
-    },
-    {
-        id: "music_4446",
-        category: "Music",
-        question: "Which artist recorded 'He'll Never Love You (Like I Do)'?",
-        answers: ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Freddie Jackson"
-    },
-    {
-        id: "music_4447",
-        category: "Music",
-        question: "Which artist recorded 'Tasty Love'?",
-        answers: ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Freddie Jackson"
-    },
-    {
-        id: "music_4448",
-        category: "Music",
-        question: "Which artist recorded 'Have You Ever Loved Somebody'?",
-        answers: ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Freddie Jackson"
-    },
-    {
-        id: "music_4449",
-        category: "Music",
-        question: "Which artist recorded 'Jam Tonight'?",
-        answers: ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Freddie Jackson"
-    },
-    {
-        id: "music_4450",
-        category: "Music",
-        question: "Which artist recorded 'Nice 'N' Slow'?",
-        answers: ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"],
-        correctAnswer: "Freddie Jackson"
-    },
-
-    // JEFFREY OSBORNE
-
-    {
-        id: "music_4451",
-        category: "Music",
-        question: "Which artist recorded 'On the Wings of Love'?",
-        answers: ["Jeffrey Osborne", "Freddie Jackson", "Luther Vandross", "Alexander O'Neal"],
-        correctAnswer: "Jeffrey Osborne"
-    },
-    {
-        id: "music_4452",
-        category: "Music",
-        question: "Which artist recorded 'Stay with Me Tonight'?",
-        answers: ["Jeffrey Osborne", "Freddie Jackson", "Luther Vandross", "Alexander O'Neal"],
-        correctAnswer: "Jeffrey Osborne"
-    },
-    {
-        id: "music_4453",
-        category: "Music",
-        question: "Which artist recorded 'Don't You Get So Mad'?",
-        answers: ["Jeffrey Osborne", "Freddie Jackson", "Luther Vandross", "Alexander O'Neal"],
-        correctAnswer: "Jeffrey Osborne"
-    },
-    {
-        id: "music_4454",
-        category: "Music",
-        question: "Which artist recorded 'We're Going All the Way'?",
-        answers: ["Jeffrey Osborne", "Freddie Jackson", "Luther Vandross", "Alexander O'Neal"],
-        correctAnswer: "Jeffrey Osborne"
-    },
-    {
-        id: "music_4455",
-        category: "Music",
-        question: "Which artist recorded 'You Should Be Mine (The Woo Woo Song)'?",
-        answers: ["Jeffrey Osborne", "Freddie Jackson", "Luther Vandross", "Alexander O'Neal"],
-        correctAnswer: "Jeffrey Osborne"
-    },
-
-    // DENIECE WILLIAMS
-
-    {
-        id: "music_4456",
-        category: "Music",
-        question: "Which artist recorded 'It's Gonna Take a Miracle'?",
-        answers: ["Deniece Williams", "Anita Baker", "Phyllis Hyman", "Cherrelle"],
-        correctAnswer: "Deniece Williams"
-    },
-    {
-        id: "music_4457",
-        category: "Music",
-        question: "Which artist recorded 'Let's Hear It for the Boy'?",
-        answers: ["Deniece Williams", "Anita Baker", "Phyllis Hyman", "Cherrelle"],
-        correctAnswer: "Deniece Williams"
-    },
-    {
-        id: "music_4458",
-        category: "Music",
-        question: "Which artist recorded 'Black Butterfly'?",
-        answers: ["Deniece Williams", "Anita Baker", "Phyllis Hyman", "Cherrelle"],
-        correctAnswer: "Deniece Williams"
-    },
-    {
-        id: "music_4459",
-        category: "Music",
-        question: "Which artist recorded 'Wiser and Weaker'?",
-        answers: ["Deniece Williams", "Anita Baker", "Phyllis Hyman", "Cherrelle"],
-        correctAnswer: "Deniece Williams"
-    },
-
-    // PHYLLIS HYMAN
-
-    {
-        id: "music_4460",
-        category: "Music",
-        question: "Which artist recorded 'You Know How to Love Me'?",
-        answers: ["Phyllis Hyman", "Anita Baker", "Deniece Williams", "Cherrelle"],
-        correctAnswer: "Phyllis Hyman"
-    },
-    {
-        id: "music_4461",
-        category: "Music",
-        question: "Which artist recorded 'Can't We Fall in Love Again'?",
-        answers: ["Phyllis Hyman", "Anita Baker", "Deniece Williams", "Cherrelle"],
-        correctAnswer: "Phyllis Hyman"
-    },
-    {
-        id: "music_4462",
-        category: "Music",
-        question: "Which artist recorded 'Living All Alone'?",
-        answers: ["Phyllis Hyman", "Anita Baker", "Deniece Williams", "Cherrelle"],
-        correctAnswer: "Phyllis Hyman"
-    },
-
-    // GWEN GUTHRIE
-
-    {
-        id: "music_4463",
-        category: "Music",
-        question: "Which artist recorded 'It Should Have Been You'?",
-        answers: ["Gwen Guthrie", "Joyce Sims", "Melba Moore", "Deniece Williams"],
-        correctAnswer: "Gwen Guthrie"
-    },
-    {
-        id: "music_4464",
-        category: "Music",
-        question: "Which artist recorded 'Padlock'?",
-        answers: ["Gwen Guthrie", "Joyce Sims", "Melba Moore", "Deniece Williams"],
-        correctAnswer: "Gwen Guthrie"
-    },
-    {
-        id: "music_4465",
-        category: "Music",
-        question: "Which artist recorded 'Ain't Nothin' Goin' on but the Rent'?",
-        answers: ["Gwen Guthrie", "Joyce Sims", "Melba Moore", "Deniece Williams"],
-        correctAnswer: "Gwen Guthrie"
-    },
-
-    // MELBA MOORE
-
-    {
-        id: "music_4466",
-        category: "Music",
-        question: "Which artist recorded 'Love's Comin' at Ya'?",
-        answers: ["Melba Moore", "Gwen Guthrie", "Joyce Sims", "Deniece Williams"],
-        correctAnswer: "Melba Moore"
-    }
-
+    makeQuestion("music_4367", "Which artist recorded 'What's Missing'?", ["Alexander O'Neal", "Luther Vandross", "Freddie Jackson", "Jeffrey Osborne"], "Alexander O'Neal", "Hard"),
+    makeQuestion("music_4368", "Which artist recorded 'A Broken Heart Can Mend'?", ["Alexander O'Neal", "Luther Vandross", "Freddie Jackson", "Jeffrey Osborne"], "Alexander O'Neal", "Hard"),
+    makeQuestion("music_4369", "Which artist recorded 'What Can I Say to Make You Love Me'?", ["Alexander O'Neal", "Luther Vandross", "Freddie Jackson", "Jeffrey Osborne"], "Alexander O'Neal", "Medium"),
+    makeQuestion("music_4370", "Which artist recorded 'I Didn't Mean to Turn You On'?", ["Cherrelle", "Anita Baker", "Deniece Williams", "Phyllis Hyman"], "Cherrelle", "Medium"),
+    makeQuestion("music_4371", "Which female singer duetted with Alexander O'Neal on 'Saturday Love'?", ["Cherrelle", "Anita Baker", "Deniece Williams", "Phyllis Hyman"], "Cherrelle", "Easy"),
+    makeQuestion("music_4372", "Which female singer duetted with Alexander O'Neal on 'Never Knew Love Like This'?", ["Cherrelle", "Anita Baker", "Deniece Williams", "Phyllis Hyman"], "Cherrelle", "Easy"),
+    makeQuestion("music_4373", "Which group recorded 'Take Your Time (Do It Right)'?", ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"], "The S.O.S. Band", "Easy"),
+    makeQuestion("music_4374", "Which group recorded 'Just Be Good to Me'?", ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"], "The S.O.S. Band", "Easy"),
+    makeQuestion("music_4375", "Which group recorded 'Tell Me If You Still Care'?", ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"], "The S.O.S. Band", "Medium"),
+    makeQuestion("music_4376", "Which group recorded 'Just the Way You Like It'?", ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"], "The S.O.S. Band", "Medium"),
+    makeQuestion("music_4377", "Which group recorded 'The Finest'?", ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"], "The S.O.S. Band", "Easy"),
+    makeQuestion("music_4378", "Which group recorded 'No One's Gonna Love You'?", ["The S.O.S. Band", "Shalamar", "The Whispers", "Atlantic Starr"], "The S.O.S. Band", "Medium"),
+    makeQuestion("music_4379", "Which group recorded 'A Little Spice'?", ["Loose Ends", "Imagination", "Shalamar", "The Whispers"], "Loose Ends", "Hard"),
+    makeQuestion("music_4380", "Which group recorded 'Hangin' on a String (Contemplating)'?", ["Loose Ends", "Imagination", "Shalamar", "The Whispers"], "Loose Ends", "Easy"),
+    makeQuestion("music_4381", "Which group recorded 'Magic Touch'?", ["Loose Ends", "Imagination", "Shalamar", "The Whispers"], "Loose Ends", "Easy"),
+    makeQuestion("music_4382", "Which group recorded 'Golden Years'?", ["Loose Ends", "Imagination", "Shalamar", "The Whispers"], "Loose Ends", "Hard"),
+    makeQuestion("music_4383", "Which group recorded 'Stay a Little While, Child'?", ["Loose Ends", "Imagination", "Shalamar", "The Whispers"], "Loose Ends", "Medium"),
+    makeQuestion("music_4384", "Which group recorded 'Slow Down'?", ["Loose Ends", "Imagination", "Shalamar", "The Whispers"], "Loose Ends", "Easy"),
+    makeQuestion("music_4385", "Which group recorded 'Watching You'?", ["Loose Ends", "Imagination", "Shalamar", "The Whispers"], "Loose Ends", "Medium"),
+    makeQuestion("music_4386", "Which group recorded 'Body Talk'?", ["Imagination", "Loose Ends", "Shalamar", "The Whispers"], "Imagination", "Easy"),
+    makeQuestion("music_4387", "Which group recorded 'In and Out of Love'?", ["Imagination", "Loose Ends", "Shalamar", "The Whispers"], "Imagination", "Hard"),
+    makeQuestion("music_4388", "Which group recorded 'Flashback'?", ["Imagination", "Loose Ends", "Shalamar", "The Whispers"], "Imagination", "Easy"),
+    makeQuestion("music_4389", "Which group recorded 'Just an Illusion'?", ["Imagination", "Loose Ends", "Shalamar", "The Whispers"], "Imagination", "Easy"),
+    makeQuestion("music_4390", "Which group recorded 'Music and Lights'?", ["Imagination", "Loose Ends", "Shalamar", "The Whispers"], "Imagination", "Easy"),
+    makeQuestion("music_4391", "Which group recorded 'Changes'?", ["Imagination", "Loose Ends", "Shalamar", "The Whispers"], "Imagination", "Medium"),
+    makeQuestion("music_4392", "Which group recorded 'Looking at Midnight'?", ["Imagination", "Loose Ends", "Shalamar", "The Whispers"], "Imagination", "Hard"),
+    makeQuestion("music_4393", "Which group recorded 'New Dimension'?", ["Imagination", "Loose Ends", "Shalamar", "The Whispers"], "Imagination", "Hard"),
+    makeQuestion("music_4394", "Which group recorded 'The Second Time Around'?", ["Shalamar", "The Whispers", "Atlantic Starr", "The S.O.S. Band"], "Shalamar", "Easy"),
+    makeQuestion("music_4395", "Which group recorded 'Dancing in the Sheets'?", ["Shalamar", "The Whispers", "Atlantic Starr", "The S.O.S. Band"], "Shalamar", "Easy"),
+    makeQuestion("music_4396", "Which group recorded 'And the Beat Goes On'?", ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"], "The Whispers", "Easy"),
+    makeQuestion("music_4397", "Which group recorded 'It's a Love Thing'?", ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"], "The Whispers", "Easy"),
+    makeQuestion("music_4398", "Which group recorded 'I Can Make It Better'?", ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"], "The Whispers", "Hard"),
+    makeQuestion("music_4399", "Which group recorded 'Tonight'?", ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"], "The Whispers", "Hard"),
+    makeQuestion("music_4400", "Which group recorded 'Keep on Lovin' Me'?", ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"], "The Whispers", "Hard"),
+    makeQuestion("music_4401", "Which group recorded 'Contagious'?", ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"], "The Whispers", "Hard"),
+    makeQuestion("music_4402", "Which group recorded 'Rock Steady'?", ["The Whispers", "Shalamar", "Atlantic Starr", "The S.O.S. Band"], "The Whispers", "Easy"),
+    makeQuestion("music_4403", "Which group recorded 'Circles'?", ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"], "Atlantic Starr", "Medium"),
+    makeQuestion("music_4404", "Which group recorded 'Touch a Four Leaf Clover'?", ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"], "Atlantic Starr", "Hard"),
+    makeQuestion("music_4405", "Which group recorded 'Secret Lovers'?", ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"], "Atlantic Starr", "Easy"),
+    makeQuestion("music_4406", "Which group recorded 'If Your Heart Isn't in It'?", ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"], "Atlantic Starr", "Hard"),
+    makeQuestion("music_4407", "Which group recorded 'Always'?", ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"], "Atlantic Starr", "Easy"),
+    makeQuestion("music_4408", "Which group recorded 'My First Love'?", ["Atlantic Starr", "The Whispers", "Shalamar", "The S.O.S. Band"], "Atlantic Starr", "Hard"),
+    makeQuestion("music_4409", "Which group recorded 'Shake Your Pants'?", ["Cameo", "The Gap Band", "Kool & the Gang", "Change"], "Cameo", "Easy"),
+    makeQuestion("music_4410", "Which group recorded 'She's Strange'?", ["Cameo", "The Gap Band", "Kool & the Gang", "Change"], "Cameo", "Easy"),
+    makeQuestion("music_4411", "Which group recorded 'Talkin' Out the Side of Your Neck'?", ["Cameo", "The Gap Band", "Kool & the Gang", "Change"], "Cameo", "Hard"),
+    makeQuestion("music_4412", "Which group recorded 'Single Life'?", ["Cameo", "The Gap Band", "Kool & the Gang", "Change"], "Cameo", "Easy"),
+    makeQuestion("music_4413", "Which group recorded 'Word Up!'?", ["Cameo", "The Gap Band", "Kool & the Gang", "Change"], "Cameo", "Easy"),
+    makeQuestion("music_4414", "Which group recorded 'Candy'?", ["Cameo", "The Gap Band", "Kool & the Gang", "Change"], "Cameo", "Easy"),
+    makeQuestion("music_4415", "Which group recorded 'Back and Forth'?", ["Cameo", "The Gap Band", "Kool & the Gang", "Change"], "Cameo", "Easy"),
+    makeQuestion("music_4416", "Which group recorded 'Skin I'm In'?", ["Cameo", "The Gap Band", "Kool & the Gang", "Change"], "Cameo", "Hard"),
+    makeQuestion("music_4417", "Which group recorded 'Burn Rubber on Me (Why You Wanna Hurt Me)'?", ["The Gap Band", "Cameo", "Kool & the Gang", "Change"], "The Gap Band", "Medium"),
+    makeQuestion("music_4418", "Which group recorded 'Yearning for Your Love'?", ["The Gap Band", "Cameo", "Kool & the Gang", "Change"], "The Gap Band", "Medium"),
+    makeQuestion("music_4419", "Which group recorded 'Early in the Morning'?", ["The Gap Band", "Cameo", "Kool & the Gang", "Change"], "The Gap Band", "Easy"),
+    makeQuestion("music_4420", "Which group recorded 'You Dropped a Bomb on Me'?", ["The Gap Band", "Cameo", "Kool & the Gang", "Change"], "The Gap Band", "Easy"),
+    makeQuestion("music_4421", "Which group recorded 'Outstanding'?", ["The Gap Band", "Cameo", "Kool & the Gang", "Change"], "The Gap Band", "Easy"),
+    makeQuestion("music_4422", "Which group recorded 'Party Train'?", ["The Gap Band", "Cameo", "Kool & the Gang", "Change"], "The Gap Band", "Medium"),
+    makeQuestion("music_4423", "Which group recorded 'Big Fun'?", ["The Gap Band", "Cameo", "Kool & the Gang", "Change"], "The Gap Band", "Hard"),
+    makeQuestion("music_4424", "Which group recorded 'Too Hot'?", ["Kool & the Gang", "The Gap Band", "Cameo", "Change"], "Kool & the Gang", "Easy"),
+    makeQuestion("music_4425", "Which group recorded 'Take My Heart (You Can Have It If You Want It)'?", ["Kool & the Gang", "The Gap Band", "Cameo", "Change"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_4426", "Which group recorded 'Let's Go Dancin' (Ooh La, La, La)'?", ["Kool & the Gang", "The Gap Band", "Cameo", "Change"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_4427", "Which group recorded 'Misled'?", ["Kool & the Gang", "The Gap Band", "Cameo", "Change"], "Kool & the Gang", "Easy"),
+    makeQuestion("music_4428", "Which group recorded 'Stone Love'?", ["Kool & the Gang", "The Gap Band", "Cameo", "Change"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_4429", "Which group recorded 'A Lover's Holiday'?", ["Change", "Cameo", "The Gap Band", "Atlantic Starr"], "Change", "Easy"),
+    makeQuestion("music_4430", "Which group recorded 'Searching'?", ["Change", "Cameo", "The Gap Band", "Atlantic Starr"], "Change", "Medium"),
+    makeQuestion("music_4431", "Which group recorded 'The Glow of Love'?", ["Change", "Cameo", "The Gap Band", "Atlantic Starr"], "Change", "Easy"),
+    makeQuestion("music_4432", "Which group recorded 'Paradise'?", ["Change", "Cameo", "The Gap Band", "Atlantic Starr"], "Change", "Hard"),
+    makeQuestion("music_4433", "Which group recorded 'Change of Heart'?", ["Change", "Cameo", "The Gap Band", "Atlantic Starr"], "Change", "Medium"),
+    makeQuestion("music_4434", "Which group recorded 'Let's Go Together'?", ["Change", "Cameo", "The Gap Band", "Atlantic Starr"], "Change", "Hard"),
+    makeQuestion("music_4435", "Which artist recorded 'Don't You Know That?'?", ["Luther Vandross", "Freddie Jackson", "Jeffrey Osborne", "Alexander O'Neal"], "Luther Vandross", "Easy"),
+    makeQuestion("music_4436", "Which artist recorded 'Bad Boy / Having a Party'?", ["Luther Vandross", "Freddie Jackson", "Jeffrey Osborne", "Alexander O'Neal"], "Luther Vandross", "Hard"),
+    makeQuestion("music_4437", "Which artist recorded 'Since I Lost My Baby'?", ["Luther Vandross", "Freddie Jackson", "Jeffrey Osborne", "Alexander O'Neal"], "Luther Vandross", "Easy"),
+    makeQuestion("music_4438", "Which artist recorded 'There's Nothing Better Than Love' with Gregory Hines?", ["Luther Vandross", "Freddie Jackson", "Jeffrey Osborne", "Alexander O'Neal"], "Luther Vandross", "Easy"),
+    makeQuestion("music_4439", "Which artist recorded 'Any Love'?", ["Luther Vandross", "Freddie Jackson", "Jeffrey Osborne", "Alexander O'Neal"], "Luther Vandross", "Easy"),
+    makeQuestion("music_4440", "Which artist recorded 'Angel'?", ["Anita Baker", "Deniece Williams", "Phyllis Hyman", "Cherrelle"], "Anita Baker", "Easy"),
+    makeQuestion("music_4441", "Which artist recorded 'Same Ole Love (365 Days a Year)'?", ["Anita Baker", "Deniece Williams", "Phyllis Hyman", "Cherrelle"], "Anita Baker", "Easy"),
+    makeQuestion("music_4442", "Which artist recorded 'No One in the World'?", ["Anita Baker", "Deniece Williams", "Phyllis Hyman", "Cherrelle"], "Anita Baker", "Medium"),
+    makeQuestion("music_4443", "Which artist recorded 'Just Because'?", ["Anita Baker", "Deniece Williams", "Phyllis Hyman", "Cherrelle"], "Anita Baker", "Hard"),
+    makeQuestion("music_4444", "Which artist recorded 'Rock Me Tonight (For Old Times Sake)'?", ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"], "Freddie Jackson", "Easy"),
+    makeQuestion("music_4445", "Which artist recorded 'You Are My Lady'?", ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"], "Freddie Jackson", "Easy"),
+    makeQuestion("music_4446", "Which artist recorded 'He'll Never Love You (Like I Do)'?", ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"], "Freddie Jackson", "Hard"),
+    makeQuestion("music_4447", "Which artist recorded 'Tasty Love'?", ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"], "Freddie Jackson", "Easy"),
+    makeQuestion("music_4448", "Which artist recorded 'Have You Ever Loved Somebody'?", ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"], "Freddie Jackson", "Medium"),
+    makeQuestion("music_4449", "Which artist recorded 'Jam Tonight'?", ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"], "Freddie Jackson", "Hard"),
+    makeQuestion("music_4450", "Which artist recorded 'Nice 'N' Slow'?", ["Freddie Jackson", "Luther Vandross", "Jeffrey Osborne", "Alexander O'Neal"], "Freddie Jackson", "Hard"),
+    makeQuestion("music_4451", "Which artist recorded 'On the Wings of Love'?", ["Jeffrey Osborne", "Freddie Jackson", "Luther Vandross", "Alexander O'Neal"], "Jeffrey Osborne", "Easy"),
+    makeQuestion("music_4452", "Which artist recorded 'Stay with Me Tonight'?", ["Jeffrey Osborne", "Freddie Jackson", "Luther Vandross", "Alexander O'Neal"], "Jeffrey Osborne", "Medium"),
+    makeQuestion("music_4453", "Which artist recorded 'Don't You Get So Mad'?", ["Jeffrey Osborne", "Freddie Jackson", "Luther Vandross", "Alexander O'Neal"], "Jeffrey Osborne", "Medium"),
+    makeQuestion("music_4454", "Which artist recorded 'We're Going All the Way'?", ["Jeffrey Osborne", "Freddie Jackson", "Luther Vandross", "Alexander O'Neal"], "Jeffrey Osborne", "Hard"),
+    makeQuestion("music_4455", "Which artist recorded 'You Should Be Mine (The Woo Woo Song)'?", ["Jeffrey Osborne", "Freddie Jackson", "Luther Vandross", "Alexander O'Neal"], "Jeffrey Osborne", "Medium"),
+    makeQuestion("music_4456", "Which artist recorded 'It's Gonna Take a Miracle'?", ["Deniece Williams", "Anita Baker", "Phyllis Hyman", "Cherrelle"], "Deniece Williams", "Easy"),
+    makeQuestion("music_4457", "Which artist recorded 'Let's Hear It for the Boy'?", ["Deniece Williams", "Anita Baker", "Phyllis Hyman", "Cherrelle"], "Deniece Williams", "Easy"),
+    makeQuestion("music_4458", "Which artist recorded 'Black Butterfly'?", ["Deniece Williams", "Anita Baker", "Phyllis Hyman", "Cherrelle"], "Deniece Williams", "Medium"),
+    makeQuestion("music_4459", "Which artist recorded 'Wiser and Weaker'?", ["Deniece Williams", "Anita Baker", "Phyllis Hyman", "Cherrelle"], "Deniece Williams", "Hard"),
+    makeQuestion("music_4460", "Which artist recorded 'You Know How to Love Me'?", ["Phyllis Hyman", "Anita Baker", "Deniece Williams", "Cherrelle"], "Phyllis Hyman", "Medium"),
+    makeQuestion("music_4461", "Which singer duetted with Michael Henderson on 'Can't We Fall in Love Again'?", ["Phyllis Hyman", "Anita Baker", "Deniece Williams", "Cherrelle"], "Phyllis Hyman", "Hard"),
+    makeQuestion("music_4462", "Which artist recorded 'Living All Alone'?", ["Phyllis Hyman", "Anita Baker", "Deniece Williams", "Cherrelle"], "Phyllis Hyman", "Medium"),
+    makeQuestion("music_4463", "Which artist recorded 'It Should Have Been You'?", ["Gwen Guthrie", "Joyce Sims", "Melba Moore", "Deniece Williams"], "Gwen Guthrie", "Hard"),
+    makeQuestion("music_4464", "Which artist recorded 'Padlock'?", ["Gwen Guthrie", "Joyce Sims", "Melba Moore", "Deniece Williams"], "Gwen Guthrie", "Hard"),
+    makeQuestion("music_4465", "Which artist recorded 'Ain't Nothin' Goin' on but the Rent'?", ["Gwen Guthrie", "Joyce Sims", "Melba Moore", "Deniece Williams"], "Gwen Guthrie", "Easy"),
+    makeQuestion("music_4466", "Which artist recorded 'Love's Comin' at Ya'?", ["Melba Moore", "Gwen Guthrie", "Joyce Sims", "Deniece Williams"], "Melba Moore", "Easy"),
 ];
 
 module.exports = quizPack63;
