@@ -1,786 +1,265 @@
 // quiz_pack62.js
-// PuzzlePilot Big Quiz
-// Music Pack 62
-// 100 questions
-// IDs: music_4267 - music_4366
+// PuzzlePilot Bigggggg Quiz - Music Pack 62
+// 100 audited questions: music_4267 through music_4366.
+// Song-specific and artist-specific tags are built for every question.
+
+const artistTags = {
+    "The Primitives": ["indie pop", "jangle pop", "alternative rock", "british", "bands", "coventry", "female lead singers", "tracy tracy", "paul court"],
+    "The Darling Buds": ["indie pop", "alternative rock", "british", "welsh", "bands", "female lead singers", "andrea lewis"],
+    "The Wonder Stuff": ["indie rock", "alternative rock", "british", "bands", "west midlands", "miles hunt", "malcolm treece"],
+    "The Mighty Lemon Drops": ["indie rock", "alternative rock", "british", "bands", "wolverhampton", "paul marsh"],
+    "The Wedding Present": ["indie rock", "jangle pop", "british", "bands", "leeds", "david gedge"],
+    "The House of Love": ["indie rock", "alternative rock", "british", "bands", "guy chadwick", "terry bickers", "creation records"],
+    "The Jesus and Mary Chain": ["noise pop", "alternative rock", "post-punk", "scottish", "british", "bands", "jim reid", "william reid", "sibling groups"],
+    "The Psychedelic Furs": ["post-punk", "new wave", "alternative rock", "british", "bands", "richard butler", "tim butler"],
+    "The Church": ["alternative rock", "new wave", "psychedelic rock", "australian", "bands", "steve kilbey", "marty willson-piper"],
+    "The Blue Nile": ["sophisti-pop", "synth-pop", "scottish", "british", "bands", "paul buchanan", "robert bell", "glasgow"],
+    "Prefab Sprout": ["sophisti-pop", "pop rock", "british", "bands", "paddy mcaloon", "north east england"],
+    "Lloyd Cole and the Commotions": ["jangle pop", "indie pop", "scottish", "british", "bands", "glasgow", "lloyd cole"],
+    "The Blow Monkeys": ["sophisti-pop", "pop soul", "british", "bands", "dr robert", "robert howard"],
+    "Scritti Politti": ["synth-pop", "sophisti-pop", "new wave", "british", "bands", "green gartside"],
+    "The Associates": ["art pop", "new wave", "post-punk", "scottish", "british", "bands", "billy mackenzie", "alan rankine"],
+    "Orange Juice": ["post-punk", "indie pop", "scottish", "british", "bands", "edwyn collins", "postcard records"],
+    "The Alarm": ["alternative rock", "new wave", "welsh", "british", "bands", "mike peters", "dave sharp"],
+    "Big Country": ["rock", "new wave", "scottish", "british", "bands", "stuart adamson", "bruce watson"],
+    "Simple Minds": ["new wave", "synth-pop", "scottish", "british", "bands", "jim kerr", "charlie burchill", "glasgow"],
+    "The Skids": ["punk rock", "new wave", "scottish", "british", "bands", "richard jobson", "stuart adamson", "dunfermline"],
+    "The Undertones": ["punk rock", "power pop", "northern irish", "bands", "derry", "feargal sharkey", "john oneill"],
+    "Stiff Little Fingers": ["punk rock", "northern irish", "bands", "belfast", "jake burns"],
+    "The Boomtown Rats": ["new wave", "punk rock", "irish", "bands", "bob geldof", "johnnie fingers"],
+    "The Pogues": ["celtic punk", "folk punk", "irish folk", "british irish", "bands", "shane macgowan", "spider stacy", "london"],
+    "The Pogues and The Dubliners": ["irish folk", "celtic punk", "folk music", "joint recordings", "collaborations", "the pogues", "the dubliners", "shane macgowan", "ronnie drew"],
+    "The Men They Couldn't Hang": ["folk punk", "folk rock", "british", "bands", "political folk", "phil odgers", "paul simmonds"],
+};
+
+const recordingTags = {
+    "music_4267": [1986, "1986 original single", "1987 rerecording", "independent releases", "1987 chart single"],
+    "music_4268": [1988, "lovely album", "1988 singles", "uk top five singles", "indie pop"],
+    "music_4269": [1988, "lovely album", "1988 singles", "indie pop"],
+    "music_4270": [1988, "pure album", "1988 singles", "1989 album release"],
+    "music_4271": [1989, "pure album", "1989 singles", "indie pop"],
+    "music_4272": [1987, "1987 debut single", "1988 later recordings", "indie pop"],
+    "music_4273": [1988, "pop said album", "1988 single release", "1989 uk chart run", "indie pop"],
+    "music_4274": [1989, "pop said album", "1989 singles", "indie pop"],
+    "music_4275": [1988, "pop said album", "1988 singles", "indie pop"],
+    "music_4276": [1987, "eight legged groove machine album", "1987 original single", "1988 single reissue", "1994 rerelease"],
+    "music_4277": [1988, "eight legged groove machine album", "1988 singles", "indie rock"],
+    "music_4278": [1988, "eight legged groove machine album", "1988 singles", "indie rock"],
+    "music_4279": [1988, "eight legged groove machine album", "1988 singles", "indie rock"],
+    "music_4280": [1989, "1989 standalone single", "non album singles", "indie rock"],
+    "music_4281": [1989, "hup album", "1989 singles", "indie rock"],
+    "music_4282": [1989, "hup album", "1989 singles", "indie rock"],
+    "music_4283": [1985, "1985 debut single", "independent releases", "indie rock"],
+    "music_4284": [1986, "happy head album", "1986 singles", "indie rock"],
+    "music_4285": [1988, "world without end album", "1988 singles", "indie rock"],
+    "music_4286": [1988, "world without end era", "1988 singles", "indie rock"],
+    "music_4287": [1987, "1987 singles", "reception records", "david gedge songwriter"],
+    "music_4288": [1988, "tommy compilation", "1988 singles", "reception records"],
+    "music_4289": [1988, "the house of love debut album", "1988 singles", "creation records"],
+    "music_4290": [1987, "1987 original single", "1990 rerecorded hit", "1990 uk top twenty", "creation records"],
+    "music_4291": [1988, "1988 standalone single", "creation records", "indie rock"],
+    "music_4292": [1989, "1989 singles", "1990 fontana album", "indie rock"],
+    "music_4293": [1985, "psychocandy album", "1985 singles", "noise pop"],
+    "music_4294": [1985, "psychocandy album", "1985 singles", "noise pop"],
+    "music_4295": [1985, "psychocandy album", "1985 singles", "lost in translation film soundtrack"],
+    "music_4296": [1986, "some candy talking ep", "1986 singles", "noise pop"],
+    "music_4297": [1987, "darklands album", "1987 singles", "uk top ten singles"],
+    "music_4298": [1987, "darklands album", "1987 singles", "noise pop"],
+    "music_4299": [1987, "darklands album", "1987 singles", "album title tracks"],
+    "music_4300": [1988, "barbed wire kisses compilation", "1988 singles", "noise pop"],
+    "music_4301": [1989, "automatic album", "1989 singles", "alternative rock"],
+    "music_4302": [1980, "the psychedelic furs debut album", "1980 singles", "post-punk"],
+    "music_4303": [1981, "of skins and heart album", "1981 singles", "australian rock"],
+    "music_4304": [1982, "the blurred crusade album", "1982 singles", "australian rock"],
+    "music_4305": [1988, "starfish album", "1988 singles", "steve kilbey co-writer", "us alternative rock hits"],
+    "music_4306": [1988, "starfish album", "1988 singles", "psychedelic rock"],
+    "music_4307": [1984, "a walk across the rooftops album", "1984 singles", "sophisti-pop"],
+    "music_4308": [1984, "a walk across the rooftops album", "1984 singles", "glasgow songs"],
+    "music_4309": [1989, "hats album", "1989 singles", "sophisti-pop"],
+    "music_4310": [1984, "swoon album", "1984 singles", "paddy mcaloon songwriter"],
+    "music_4311": [1984, "rattlesnakes album", "1984 singles", "album title tracks"],
+    "music_4312": [1985, "easy pieces album", "1985 singles", "indie pop"],
+    "music_4313": [1985, "animal magic album", "1985 singles", "pop soul"],
+    "music_4314": [1981, "songs to remember album", "1981 singles", "early scritti politti"],
+    "music_4315": [1984, "cupid and psyche 85 album", "1984 singles", "synth-pop"],
+    "music_4316": [1984, "cupid and psyche 85 album", "1984 singles", "synth-pop"],
+    "music_4317": [1984, "cupid and psyche 85 album", "1984 singles", "synth-pop"],
+    "music_4318": [1985, "cupid and psyche 85 album", "1985 singles", "ranking ann vocals", "reggae influenced"],
+    "music_4319": [1985, "cupid and psyche 85 album", "1985 singles", "us top twenty singles"],
+    "music_4320": [1988, "provision album", "1988 singles", "miles davis trumpet"],
+    "music_4321": [1982, "sulk album", "1982 singles", "art pop"],
+    "music_4322": [1982, "1982 singles", "love hangover double a side", "billy mackenzie vocals"],
+    "music_4323": [1984, "perhaps album", "1984 singles", "billy mackenzie vocals"],
+    "music_4324": [1980, "1980 debut single", "postcard records", "scottish indie"],
+    "music_4325": [1983, "rip it up album", "1983 singles", "uk top ten singles", "edwyn collins songwriter"],
+    "music_4326": [1984, "the orange juice album", "1984 singles", "scottish indie"],
+    "music_4327": [1983, "declaration album", "1983 singles", "early alarm hits"],
+    "music_4328": [1983, "declaration album", "1983 singles", "uk top twenty singles"],
+    "music_4329": [1984, "declaration album", "1984 singles", "new wave"],
+    "music_4330": [1985, "strength album", "1985 singles", "album title tracks"],
+    "music_4331": [1986, "strength album", "1985 album tracks", "1986 singles", "mike peters songwriter"],
+    "music_4332": [1987, "eye of the hurricane album", "1987 singles", "mike peters songwriter"],
+    "music_4333": [1983, "the crossing album", "1983 singles", "uk top ten singles"],
+    "music_4334": [1984, "wonderland ep", "1984 singles", "uk top ten singles"],
+    "music_4335": [1984, "steeltown album", "1984 singles", "stuart adamson songwriter"],
+    "music_4336": [1985, "steeltown album", "1985 singles", "stuart adamson songwriter"],
+    "music_4337": [1986, "the seer album", "1986 singles", "uk top ten singles"],
+    "music_4338": [1986, "the seer album", "1986 singles", "stuart adamson songwriter"],
+    "music_4339": [1988, "peace in our time album", "1988 singles", "stuart adamson songwriter"],
+    "music_4340": [1989, "peace in our time album", "1988 album tracks", "1989 singles", "album title tracks"],
+    "music_4341": [1980, "empires and dance album", "1980 singles", "synth-pop"],
+    "music_4342": [1981, "sons and fascination album", "1981 singles", "new wave"],
+    "music_4343": [1984, "sparkle in the rain album", "1983 album tracks", "1984 singles", "new wave"],
+    "music_4344": [1980, "days in europa album", "1980 singles", "punk rock"],
+    "music_4345": [1980, "the absolute game album", "1980 singles", "punk rock"],
+    "music_4346": [1980, "the absolute game era", "1980 singles", "punk rock"],
+    "music_4347": [1980, "hypnotised album", "1980 singles", "northern irish punk"],
+    "music_4348": [1981, "positive touch album", "1981 singles", "northern irish punk"],
+    "music_4349": [1981, "positive touch album", "1981 singles", "northern irish punk"],
+    "music_4350": [1980, "nobodys heroes album", "1980 singles", "northern irish punk"],
+    "music_4351": [1980, "nobodys heroes album", "1980 singles", "album title tracks"],
+    "music_4352": [1981, "go for it album", "1981 singles", "northern irish punk"],
+    "music_4353": [1982, "now then album", "1982 singles", "northern irish punk"],
+    "music_4354": [1980, "the fine art of surfacing album", "1980 singles", "new wave"],
+    "music_4355": [1980, "mondo bongo album", "1980 singles", "irish rock", "anti establishment songs"],
+    "music_4356": [1981, "mondo bongo album", "1981 singles", "also titled the elephants graveyard guilty"],
+    "music_4357": [1981, "v deep album", "1981 singles", "new wave"],
+    "music_4358": [1982, "v deep album", "1982 singles", "new wave"],
+    "music_4359": [1984, "red roses for me album", "1984 singles", "debut singles"],
+    "music_4360": [1985, "rum sodomy and the lash album", "1985 singles", "shane macgowan songwriter"],
+    "music_4361": [1985, "rum sodomy and the lash album", "1985 singles", "shane macgowan songwriter"],
+    "music_4362": [1985, "rum sodomy and the lash album", "1985 singles", "ewan maccoll songwriter", "cover versions"],
+    "music_4363": [1987, "1987 collaborative single", "the irish rover traditional song", "celtic music", "stiff records"],
+    "music_4364": [1984, "night of a thousand candles album", "1984 debut single", "eric bogle songwriter", "antiwar songs", "cover versions"],
+    "music_4365": [1985, "night of a thousand candles album", "1985 singles", "industrial history songs"],
+    "music_4366": [1988, "waiting for bonaparte album", "1988 singles", "folk punk"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const detail = recordingTags[id];
+    if (!artist || !detail) throw new Error(`Missing metadata for ${id}`);
+    const song = question.match(/'(.+)'/);
+    if (!song) throw new Error(`Missing song title for ${id}`);
+    const year = detail[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", "songs", "recordings", decade, `${decade} music`,
+            `${year} releases`, song[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...artist, ...detail.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack62 = [
-
-    // THE PRIMITIVES
-
-    {
-        id: "music_4267",
-        category: "Music",
-        question: "Which group recorded 'Thru the Flowers'?",
-        answers: ["The Primitives", "The Darling Buds", "Transvision Vamp", "Voice of the Beehive"],
-        correctAnswer: "The Primitives"
-    },
-    {
-        id: "music_4268",
-        category: "Music",
-        question: "Which group recorded 'Crash'?",
-        answers: ["The Primitives", "The Darling Buds", "The Wonder Stuff", "The House of Love"],
-        correctAnswer: "The Primitives"
-    },
-    {
-        id: "music_4269",
-        category: "Music",
-        question: "Which group recorded 'Out of Reach'?",
-        answers: ["The Primitives", "The Darling Buds", "Transvision Vamp", "The House of Love"],
-        correctAnswer: "The Primitives"
-    },
-    {
-        id: "music_4270",
-        category: "Music",
-        question: "Which group recorded 'Way Behind Me'?",
-        answers: ["The Primitives", "The Darling Buds", "Voice of the Beehive", "The Wonder Stuff"],
-        correctAnswer: "The Primitives"
-    },
-    {
-        id: "music_4271",
-        category: "Music",
-        question: "Which group recorded 'Sick of It'?",
-        answers: ["The Primitives", "The Darling Buds", "The Wonder Stuff", "The House of Love"],
-        correctAnswer: "The Primitives"
-    },
-
-    // THE DARLING BUDS
-
-    {
-        id: "music_4272",
-        category: "Music",
-        question: "Which group recorded 'If I Said'?",
-        answers: ["The Darling Buds", "The Primitives", "Voice of the Beehive", "Transvision Vamp"],
-        correctAnswer: "The Darling Buds"
-    },
-    {
-        id: "music_4273",
-        category: "Music",
-        question: "Which group recorded 'Hit the Ground'?",
-        answers: ["The Darling Buds", "The Primitives", "The Wonder Stuff", "The House of Love"],
-        correctAnswer: "The Darling Buds"
-    },
-    {
-        id: "music_4274",
-        category: "Music",
-        question: "Which group recorded 'You've Got to Choose'?",
-        answers: ["The Darling Buds", "The Primitives", "Voice of the Beehive", "Transvision Vamp"],
-        correctAnswer: "The Darling Buds"
-    },
-    {
-        id: "music_4275",
-        category: "Music",
-        question: "Which group recorded 'Burst'?",
-        answers: ["The Darling Buds", "The Primitives", "The Wonder Stuff", "The House of Love"],
-        correctAnswer: "The Darling Buds"
-    },
-
-    // THE WONDER STUFF
-
-    {
-        id: "music_4276",
-        category: "Music",
-        question: "Which group recorded 'Unbearable'?",
-        answers: ["The Wonder Stuff", "The House of Love", "The Wedding Present", "The Mighty Lemon Drops"],
-        correctAnswer: "The Wonder Stuff"
-    },
-    {
-        id: "music_4277",
-        category: "Music",
-        question: "Which group recorded 'Give Give Give Me More More More'?",
-        answers: ["The Wonder Stuff", "The Wedding Present", "The House of Love", "The Mighty Lemon Drops"],
-        correctAnswer: "The Wonder Stuff"
-    },
-    {
-        id: "music_4278",
-        category: "Music",
-        question: "Which group recorded 'A Wish Away'?",
-        answers: ["The Wonder Stuff", "The House of Love", "The Wedding Present", "The Mighty Lemon Drops"],
-        correctAnswer: "The Wonder Stuff"
-    },
-    {
-        id: "music_4279",
-        category: "Music",
-        question: "Which group recorded 'It's Yer Money I'm After, Baby'?",
-        answers: ["The Wonder Stuff", "The Wedding Present", "The House of Love", "The Mighty Lemon Drops"],
-        correctAnswer: "The Wonder Stuff"
-    },
-    {
-        id: "music_4280",
-        category: "Music",
-        question: "Which group recorded 'Who Wants to Be the Disco King?'?",
-        answers: ["The Wonder Stuff", "The Wedding Present", "The House of Love", "The Mighty Lemon Drops"],
-        correctAnswer: "The Wonder Stuff"
-    },
-    {
-        id: "music_4281",
-        category: "Music",
-        question: "Which group recorded 'Don't Let Me Down, Gently'?",
-        answers: ["The Wonder Stuff", "The Wedding Present", "The House of Love", "The Mighty Lemon Drops"],
-        correctAnswer: "The Wonder Stuff"
-    },
-    {
-        id: "music_4282",
-        category: "Music",
-        question: "Which group recorded 'Golden Green'?",
-        answers: ["The Wonder Stuff", "The Wedding Present", "The House of Love", "The Mighty Lemon Drops"],
-        correctAnswer: "The Wonder Stuff"
-    },
-
-    // THE MIGHTY LEMON DROPS
-
-    {
-        id: "music_4283",
-        category: "Music",
-        question: "Which group recorded 'Like an Angel'?",
-        answers: ["The Mighty Lemon Drops", "The House of Love", "The Wonder Stuff", "The Wedding Present"],
-        correctAnswer: "The Mighty Lemon Drops"
-    },
-    {
-        id: "music_4284",
-        category: "Music",
-        question: "Which group recorded 'The Other Side of You'?",
-        answers: ["The Mighty Lemon Drops", "The House of Love", "The Wonder Stuff", "The Wedding Present"],
-        correctAnswer: "The Mighty Lemon Drops"
-    },
-    {
-        id: "music_4285",
-        category: "Music",
-        question: "Which group recorded 'Inside Out'?",
-        answers: ["The Mighty Lemon Drops", "The House of Love", "The Wonder Stuff", "The Wedding Present"],
-        correctAnswer: "The Mighty Lemon Drops"
-    },
-    {
-        id: "music_4286",
-        category: "Music",
-        question: "Which group recorded 'Fall Down (Like the Rain)'?",
-        answers: ["The Mighty Lemon Drops", "The House of Love", "The Wonder Stuff", "The Wedding Present"],
-        correctAnswer: "The Mighty Lemon Drops"
-    },
-
-    // THE WEDDING PRESENT
-
-    {
-        id: "music_4287",
-        category: "Music",
-        question: "Which group recorded 'Anyone Can Make a Mistake'?",
-        answers: ["The Wedding Present", "The Wonder Stuff", "The House of Love", "The Mighty Lemon Drops"],
-        correctAnswer: "The Wedding Present"
-    },
-    {
-        id: "music_4288",
-        category: "Music",
-        question: "Which group recorded 'Nobody's Twisting Your Arm'?",
-        answers: ["The Wedding Present", "The Wonder Stuff", "The House of Love", "The Mighty Lemon Drops"],
-        correctAnswer: "The Wedding Present"
-    },
-
-    // THE HOUSE OF LOVE
-
-    {
-        id: "music_4289",
-        category: "Music",
-        question: "Which group recorded 'Christine'?",
-        answers: ["The House of Love", "The Wedding Present", "The Mighty Lemon Drops", "The Jesus and Mary Chain"],
-        correctAnswer: "The House of Love"
-    },
-    {
-        id: "music_4290",
-        category: "Music",
-        question: "Which group recorded 'Shine On'?",
-        answers: ["The House of Love", "The Wedding Present", "The Mighty Lemon Drops", "The Jesus and Mary Chain"],
-        correctAnswer: "The House of Love"
-    },
-    {
-        id: "music_4291",
-        category: "Music",
-        question: "Which group recorded 'Destroy the Heart'?",
-        answers: ["The House of Love", "The Wedding Present", "The Mighty Lemon Drops", "The Jesus and Mary Chain"],
-        correctAnswer: "The House of Love"
-    },
-    {
-        id: "music_4292",
-        category: "Music",
-        question: "Which group recorded 'Never'?",
-        answers: ["The House of Love", "The Wedding Present", "The Mighty Lemon Drops", "The Jesus and Mary Chain"],
-        correctAnswer: "The House of Love"
-    },
-
-    // THE JESUS AND MARY CHAIN
-
-    {
-        id: "music_4293",
-        category: "Music",
-        question: "Which group recorded 'Never Understand'?",
-        answers: ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"],
-        correctAnswer: "The Jesus and Mary Chain"
-    },
-    {
-        id: "music_4294",
-        category: "Music",
-        question: "Which group recorded 'You Trip Me Up'?",
-        answers: ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"],
-        correctAnswer: "The Jesus and Mary Chain"
-    },
-    {
-        id: "music_4295",
-        category: "Music",
-        question: "Which group recorded 'Just Like Honey'?",
-        answers: ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"],
-        correctAnswer: "The Jesus and Mary Chain"
-    },
-    {
-        id: "music_4296",
-        category: "Music",
-        question: "Which group recorded 'Some Candy Talking'?",
-        answers: ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"],
-        correctAnswer: "The Jesus and Mary Chain"
-    },
-    {
-        id: "music_4297",
-        category: "Music",
-        question: "Which group recorded 'April Skies'?",
-        answers: ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"],
-        correctAnswer: "The Jesus and Mary Chain"
-    },
-    {
-        id: "music_4298",
-        category: "Music",
-        question: "Which group recorded 'Happy When It Rains'?",
-        answers: ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"],
-        correctAnswer: "The Jesus and Mary Chain"
-    },
-    {
-        id: "music_4299",
-        category: "Music",
-        question: "Which group recorded 'Darklands'?",
-        answers: ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"],
-        correctAnswer: "The Jesus and Mary Chain"
-    },
-    {
-        id: "music_4300",
-        category: "Music",
-        question: "Which group recorded 'Sidewalking'?",
-        answers: ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"],
-        correctAnswer: "The Jesus and Mary Chain"
-    },
-    {
-        id: "music_4301",
-        category: "Music",
-        question: "Which group recorded 'Blues from a Gun'?",
-        answers: ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"],
-        correctAnswer: "The Jesus and Mary Chain"
-    },
-
-    // THE PSYCHEDELIC FURS
-
-    {
-        id: "music_4302",
-        category: "Music",
-        question: "Which group recorded 'Sister Europe'?",
-        answers: ["The Psychedelic Furs", "The Church", "The Jesus and Mary Chain", "The House of Love"],
-        correctAnswer: "The Psychedelic Furs"
-    },
-
-    // THE CHURCH
-
-    {
-        id: "music_4303",
-        category: "Music",
-        question: "Which group recorded 'The Unguarded Moment'?",
-        answers: ["The Church", "The Psychedelic Furs", "The Jesus and Mary Chain", "The House of Love"],
-        correctAnswer: "The Church"
-    },
-    {
-        id: "music_4304",
-        category: "Music",
-        question: "Which group recorded 'Almost with You'?",
-        answers: ["The Church", "The Psychedelic Furs", "The Jesus and Mary Chain", "The House of Love"],
-        correctAnswer: "The Church"
-    },
-    {
-        id: "music_4305",
-        category: "Music",
-        question: "Which group recorded 'Under the Milky Way'?",
-        answers: ["The Church", "The Psychedelic Furs", "The Jesus and Mary Chain", "The House of Love"],
-        correctAnswer: "The Church"
-    },
-    {
-        id: "music_4306",
-        category: "Music",
-        question: "Which group recorded 'Reptile'?",
-        answers: ["The Church", "The Psychedelic Furs", "The Jesus and Mary Chain", "The House of Love"],
-        correctAnswer: "The Church"
-    },
-
-    // THE BLUE NILE
-
-    {
-        id: "music_4307",
-        category: "Music",
-        question: "Which group recorded 'Stay'?",
-        answers: ["The Blue Nile", "Aztec Camera", "Prefab Sprout", "Lloyd Cole and the Commotions"],
-        correctAnswer: "The Blue Nile"
-    },
-    {
-        id: "music_4308",
-        category: "Music",
-        question: "Which group recorded 'Tinseltown in the Rain'?",
-        answers: ["The Blue Nile", "Aztec Camera", "Prefab Sprout", "Lloyd Cole and the Commotions"],
-        correctAnswer: "The Blue Nile"
-    },
-    {
-        id: "music_4309",
-        category: "Music",
-        question: "Which group recorded 'The Downtown Lights'?",
-        answers: ["The Blue Nile", "Aztec Camera", "Prefab Sprout", "Lloyd Cole and the Commotions"],
-        correctAnswer: "The Blue Nile"
-    },
-
-    // PREFAB SPROUT
-
-    {
-        id: "music_4310",
-        category: "Music",
-        question: "Which group recorded 'Don't Sing'?",
-        answers: ["Prefab Sprout", "Aztec Camera", "The Blue Nile", "Lloyd Cole and the Commotions"],
-        correctAnswer: "Prefab Sprout"
-    },
-
-    // LLOYD COLE AND THE COMMOTIONS
-
-    {
-        id: "music_4311",
-        category: "Music",
-        question: "Which group recorded 'Rattlesnakes'?",
-        answers: ["Lloyd Cole and the Commotions", "Prefab Sprout", "Aztec Camera", "The Blue Nile"],
-        correctAnswer: "Lloyd Cole and the Commotions"
-    },
-    {
-        id: "music_4312",
-        category: "Music",
-        question: "Which group recorded 'Cut Me Down'?",
-        answers: ["Lloyd Cole and the Commotions", "Prefab Sprout", "Aztec Camera", "The Blue Nile"],
-        correctAnswer: "Lloyd Cole and the Commotions"
-    },
-
-    // THE BLOW MONKEYS
-
-    {
-        id: "music_4313",
-        category: "Music",
-        question: "Which group recorded 'Forbidden Fruit'?",
-        answers: ["The Blow Monkeys", "Scritti Politti", "Prefab Sprout", "Aztec Camera"],
-        correctAnswer: "The Blow Monkeys"
-    },
-
-    // SCRITTI POLITTI
-
-    {
-        id: "music_4314",
-        category: "Music",
-        question: "Which group recorded 'The Sweetest Girl'?",
-        answers: ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"],
-        correctAnswer: "Scritti Politti"
-    },
-    {
-        id: "music_4315",
-        category: "Music",
-        question: "Which group recorded 'Wood Beez (Pray Like Aretha Franklin)'?",
-        answers: ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"],
-        correctAnswer: "Scritti Politti"
-    },
-    {
-        id: "music_4316",
-        category: "Music",
-        question: "Which group recorded 'Absolute'?",
-        answers: ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"],
-        correctAnswer: "Scritti Politti"
-    },
-    {
-        id: "music_4317",
-        category: "Music",
-        question: "Which group recorded 'Hypnotize'?",
-        answers: ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"],
-        correctAnswer: "Scritti Politti"
-    },
-    {
-        id: "music_4318",
-        category: "Music",
-        question: "Which group recorded 'The Word Girl'?",
-        answers: ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"],
-        correctAnswer: "Scritti Politti"
-    },
-    {
-        id: "music_4319",
-        category: "Music",
-        question: "Which group recorded 'Perfect Way'?",
-        answers: ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"],
-        correctAnswer: "Scritti Politti"
-    },
-    {
-        id: "music_4320",
-        category: "Music",
-        question: "Which group recorded 'Oh Patti (Don't Feel Sorry for Loverboy)'?",
-        answers: ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"],
-        correctAnswer: "Scritti Politti"
-    },
-
-    // THE ASSOCIATES
-
-    {
-        id: "music_4321",
-        category: "Music",
-        question: "Which group recorded 'Club Country'?",
-        answers: ["The Associates", "Orange Juice", "Scritti Politti", "The Blue Nile"],
-        correctAnswer: "The Associates"
-    },
-    {
-        id: "music_4322",
-        category: "Music",
-        question: "Which group recorded '18 Carat Love Affair'?",
-        answers: ["The Associates", "Orange Juice", "Scritti Politti", "The Blue Nile"],
-        correctAnswer: "The Associates"
-    },
-    {
-        id: "music_4323",
-        category: "Music",
-        question: "Which group recorded 'Those First Impressions'?",
-        answers: ["The Associates", "Orange Juice", "Scritti Politti", "The Blue Nile"],
-        correctAnswer: "The Associates"
-    },
-
-    // ORANGE JUICE
-
-    {
-        id: "music_4324",
-        category: "Music",
-        question: "Which group recorded 'Falling and Laughing'?",
-        answers: ["Orange Juice", "The Associates", "Aztec Camera", "The Blue Nile"],
-        correctAnswer: "Orange Juice"
-    },
-    {
-        id: "music_4325",
-        category: "Music",
-        question: "Which group recorded 'Rip It Up'?",
-        answers: ["Orange Juice", "The Associates", "Aztec Camera", "The Blue Nile"],
-        correctAnswer: "Orange Juice"
-    },
-    {
-        id: "music_4326",
-        category: "Music",
-        question: "Which group recorded 'What Presence?!'?",
-        answers: ["Orange Juice", "The Associates", "Aztec Camera", "The Blue Nile"],
-        correctAnswer: "Orange Juice"
-    },
-
-    // THE ALARM
-
-    {
-        id: "music_4327",
-        category: "Music",
-        question: "Which group recorded 'The Stand'?",
-        answers: ["The Alarm", "Big Country", "Simple Minds", "The Skids"],
-        correctAnswer: "The Alarm"
-    },
-    {
-        id: "music_4328",
-        category: "Music",
-        question: "Which group recorded 'Sixty Eight Guns'?",
-        answers: ["The Alarm", "Big Country", "Simple Minds", "The Skids"],
-        correctAnswer: "The Alarm"
-    },
-    {
-        id: "music_4329",
-        category: "Music",
-        question: "Which group recorded 'Where Were You Hiding When the Storm Broke?'?",
-        answers: ["The Alarm", "Big Country", "Simple Minds", "The Skids"],
-        correctAnswer: "The Alarm"
-    },
-    {
-        id: "music_4330",
-        category: "Music",
-        question: "Which group recorded 'Strength'?",
-        answers: ["The Alarm", "Big Country", "Simple Minds", "The Skids"],
-        correctAnswer: "The Alarm"
-    },
-    {
-        id: "music_4331",
-        category: "Music",
-        question: "Which group recorded 'Spirit of '76'?",
-        answers: ["The Alarm", "Big Country", "Simple Minds", "The Skids"],
-        correctAnswer: "The Alarm"
-    },
-    {
-        id: "music_4332",
-        category: "Music",
-        question: "Which group recorded 'Rescue Me'?",
-        answers: ["The Alarm", "Big Country", "Simple Minds", "The Skids"],
-        correctAnswer: "The Alarm"
-    },
-
-    // BIG COUNTRY
-
-    {
-        id: "music_4333",
-        category: "Music",
-        question: "Which group recorded 'Chance'?",
-        answers: ["Big Country", "The Alarm", "Simple Minds", "The Skids"],
-        correctAnswer: "Big Country"
-    },
-    {
-        id: "music_4334",
-        category: "Music",
-        question: "Which group recorded 'Wonderland'?",
-        answers: ["Big Country", "The Alarm", "Simple Minds", "The Skids"],
-        correctAnswer: "Big Country"
-    },
-    {
-        id: "music_4335",
-        category: "Music",
-        question: "Which group recorded 'East of Eden'?",
-        answers: ["Big Country", "The Alarm", "Simple Minds", "The Skids"],
-        correctAnswer: "Big Country"
-    },
-    {
-        id: "music_4336",
-        category: "Music",
-        question: "Which group recorded 'Just a Shadow'?",
-        answers: ["Big Country", "The Alarm", "Simple Minds", "The Skids"],
-        correctAnswer: "Big Country"
-    },
-    {
-        id: "music_4337",
-        category: "Music",
-        question: "Which group recorded 'Look Away'?",
-        answers: ["Big Country", "The Alarm", "Simple Minds", "The Skids"],
-        correctAnswer: "Big Country"
-    },
-    {
-        id: "music_4338",
-        category: "Music",
-        question: "Which group recorded 'One Great Thing'?",
-        answers: ["Big Country", "The Alarm", "Simple Minds", "The Skids"],
-        correctAnswer: "Big Country"
-    },
-    {
-        id: "music_4339",
-        category: "Music",
-        question: "Which group recorded 'King of Emotion'?",
-        answers: ["Big Country", "The Alarm", "Simple Minds", "The Skids"],
-        correctAnswer: "Big Country"
-    },
-    {
-        id: "music_4340",
-        category: "Music",
-        question: "Which group recorded 'Peace in Our Time'?",
-        answers: ["Big Country", "The Alarm", "Simple Minds", "The Skids"],
-        correctAnswer: "Big Country"
-    },
-
-    // SIMPLE MINDS
-
-    {
-        id: "music_4341",
-        category: "Music",
-        question: "Which group recorded 'I Travel'?",
-        answers: ["Simple Minds", "Big Country", "The Alarm", "The Skids"],
-        correctAnswer: "Simple Minds"
-    },
-    {
-        id: "music_4342",
-        category: "Music",
-        question: "Which group recorded 'Love Song'?",
-        answers: ["Simple Minds", "Big Country", "The Alarm", "The Skids"],
-        correctAnswer: "Simple Minds"
-    },
-    {
-        id: "music_4343",
-        category: "Music",
-        question: "Which group recorded 'Speed Your Love to Me'?",
-        answers: ["Simple Minds", "Big Country", "The Alarm", "The Skids"],
-        correctAnswer: "Simple Minds"
-    },
-
-    // THE SKIDS
-
-    {
-        id: "music_4344",
-        category: "Music",
-        question: "Which group recorded 'Animation'?",
-        answers: ["The Skids", "Stiff Little Fingers", "The Undertones", "The Alarm"],
-        correctAnswer: "The Skids"
-    },
-    {
-        id: "music_4345",
-        category: "Music",
-        question: "Which group recorded 'Circus Games'?",
-        answers: ["The Skids", "Stiff Little Fingers", "The Undertones", "The Alarm"],
-        correctAnswer: "The Skids"
-    },
-    {
-        id: "music_4346",
-        category: "Music",
-        question: "Which group recorded 'Goodbye Civilian'?",
-        answers: ["The Skids", "Stiff Little Fingers", "The Undertones", "The Alarm"],
-        correctAnswer: "The Skids"
-    },
-
-    // THE UNDERTONES
-
-    {
-        id: "music_4347",
-        category: "Music",
-        question: "Which group recorded 'Wednesday Week'?",
-        answers: ["The Undertones", "Stiff Little Fingers", "The Skids", "The Boomtown Rats"],
-        correctAnswer: "The Undertones"
-    },
-    {
-        id: "music_4348",
-        category: "Music",
-        question: "Which group recorded 'It's Going to Happen!'?",
-        answers: ["The Undertones", "Stiff Little Fingers", "The Skids", "The Boomtown Rats"],
-        correctAnswer: "The Undertones"
-    },
-    {
-        id: "music_4349",
-        category: "Music",
-        question: "Which group recorded 'Julie Ocean'?",
-        answers: ["The Undertones", "Stiff Little Fingers", "The Skids", "The Boomtown Rats"],
-        correctAnswer: "The Undertones"
-    },
-
-    // STIFF LITTLE FINGERS
-
-    {
-        id: "music_4350",
-        category: "Music",
-        question: "Which group recorded 'At the Edge'?",
-        answers: ["Stiff Little Fingers", "The Undertones", "The Skids", "The Boomtown Rats"],
-        correctAnswer: "Stiff Little Fingers"
-    },
-    {
-        id: "music_4351",
-        category: "Music",
-        question: "Which group recorded 'Nobody's Hero'?",
-        answers: ["Stiff Little Fingers", "The Undertones", "The Skids", "The Boomtown Rats"],
-        correctAnswer: "Stiff Little Fingers"
-    },
-    {
-        id: "music_4352",
-        category: "Music",
-        question: "Which group recorded 'Just Fade Away'?",
-        answers: ["Stiff Little Fingers", "The Undertones", "The Skids", "The Boomtown Rats"],
-        correctAnswer: "Stiff Little Fingers"
-    },
-    {
-        id: "music_4353",
-        category: "Music",
-        question: "Which group recorded 'Listen'?",
-        answers: ["Stiff Little Fingers", "The Undertones", "The Skids", "The Boomtown Rats"],
-        correctAnswer: "Stiff Little Fingers"
-    },
-
-    // THE BOOMTOWN RATS
-
-    {
-        id: "music_4354",
-        category: "Music",
-        question: "Which group recorded 'Someone's Looking at You'?",
-        answers: ["The Boomtown Rats", "The Undertones", "Stiff Little Fingers", "The Skids"],
-        correctAnswer: "The Boomtown Rats"
-    },
-    {
-        id: "music_4355",
-        category: "Music",
-        question: "Which group recorded 'Banana Republic'?",
-        answers: ["The Boomtown Rats", "The Undertones", "Stiff Little Fingers", "The Skids"],
-        correctAnswer: "The Boomtown Rats"
-    },
-    {
-        id: "music_4356",
-        category: "Music",
-        question: "Which group recorded 'The Elephant's Graveyard'?",
-        answers: ["The Boomtown Rats", "The Undertones", "Stiff Little Fingers", "The Skids"],
-        correctAnswer: "The Boomtown Rats"
-    },
-    {
-        id: "music_4357",
-        category: "Music",
-        question: "Which group recorded 'Never in a Million Years'?",
-        answers: ["The Boomtown Rats", "The Undertones", "Stiff Little Fingers", "The Skids"],
-        correctAnswer: "The Boomtown Rats"
-    },
-    {
-        id: "music_4358",
-        category: "Music",
-        question: "Which group recorded 'House on Fire'?",
-        answers: ["The Boomtown Rats", "The Undertones", "Stiff Little Fingers", "The Skids"],
-        correctAnswer: "The Boomtown Rats"
-    },
-
-    // THE POGUES
-
-    {
-        id: "music_4359",
-        category: "Music",
-        question: "Which group recorded 'Dark Streets of London'?",
-        answers: ["The Pogues", "The Dubliners", "The Waterboys", "The Men They Couldn't Hang"],
-        correctAnswer: "The Pogues"
-    },
-    {
-        id: "music_4360",
-        category: "Music",
-        question: "Which group recorded 'A Pair of Brown Eyes'?",
-        answers: ["The Pogues", "The Dubliners", "The Waterboys", "The Men They Couldn't Hang"],
-        correctAnswer: "The Pogues"
-    },
-    {
-        id: "music_4361",
-        category: "Music",
-        question: "Which group recorded 'Sally MacLennane'?",
-        answers: ["The Pogues", "The Dubliners", "The Waterboys", "The Men They Couldn't Hang"],
-        correctAnswer: "The Pogues"
-    },
-    {
-        id: "music_4362",
-        category: "Music",
-        question: "Which group recorded 'Dirty Old Town'?",
-        answers: ["The Pogues", "The Dubliners", "The Waterboys", "The Men They Couldn't Hang"],
-        correctAnswer: "The Pogues"
-    },
-    {
-        id: "music_4363",
-        category: "Music",
-        question: "Which group recorded 'The Irish Rover'?",
-        answers: ["The Pogues and The Dubliners", "The Pogues", "The Dubliners", "The Waterboys"],
-        correctAnswer: "The Pogues and The Dubliners"
-    },
-
-    // THE MEN THEY COULDN'T HANG
-
-    {
-        id: "music_4364",
-        category: "Music",
-        question: "Which group recorded 'The Green Fields of France'?",
-        answers: ["The Men They Couldn't Hang", "The Pogues", "The Waterboys", "The Dubliners"],
-        correctAnswer: "The Men They Couldn't Hang"
-    },
-    {
-        id: "music_4365",
-        category: "Music",
-        question: "Which group recorded 'Ironmasters'?",
-        answers: ["The Men They Couldn't Hang", "The Pogues", "The Waterboys", "The Alarm"],
-        correctAnswer: "The Men They Couldn't Hang"
-    },
-    {
-        id: "music_4366",
-        category: "Music",
-        question: "Which group recorded 'The Colours'?",
-        answers: ["The Men They Couldn't Hang", "The Pogues", "The Waterboys", "The Alarm"],
-        correctAnswer: "The Men They Couldn't Hang"
-    }
-
+    makeQuestion("music_4267", "Which group recorded 'Thru the Flowers'?", ["The Primitives", "The Darling Buds", "Transvision Vamp", "Voice of the Beehive"], "The Primitives", "Medium"),
+    makeQuestion("music_4268", "Which group recorded 'Crash'?", ["The Primitives", "The Darling Buds", "The Wonder Stuff", "The House of Love"], "The Primitives", "Easy"),
+    makeQuestion("music_4269", "Which group recorded 'Out of Reach'?", ["The Primitives", "The Darling Buds", "Transvision Vamp", "The House of Love"], "The Primitives", "Medium"),
+    makeQuestion("music_4270", "Which group recorded 'Way Behind Me'?", ["The Primitives", "The Darling Buds", "Voice of the Beehive", "The Wonder Stuff"], "The Primitives", "Medium"),
+    makeQuestion("music_4271", "Which group recorded 'Sick of It'?", ["The Primitives", "The Darling Buds", "The Wonder Stuff", "The House of Love"], "The Primitives", "Medium"),
+    makeQuestion("music_4272", "Which group recorded 'If I Said'?", ["The Darling Buds", "The Primitives", "Voice of the Beehive", "Transvision Vamp"], "The Darling Buds", "Hard"),
+    makeQuestion("music_4273", "Which group recorded 'Hit the Ground'?", ["The Darling Buds", "The Primitives", "The Wonder Stuff", "The House of Love"], "The Darling Buds", "Easy"),
+    makeQuestion("music_4274", "Which group recorded 'You've Got to Choose'?", ["The Darling Buds", "The Primitives", "Voice of the Beehive", "Transvision Vamp"], "The Darling Buds", "Hard"),
+    makeQuestion("music_4275", "Which group recorded 'Burst'?", ["The Darling Buds", "The Primitives", "The Wonder Stuff", "The House of Love"], "The Darling Buds", "Medium"),
+    makeQuestion("music_4276", "Which group recorded 'Unbearable'?", ["The Wonder Stuff", "The House of Love", "The Wedding Present", "The Mighty Lemon Drops"], "The Wonder Stuff", "Medium"),
+    makeQuestion("music_4277", "Which group recorded 'Give Give Give Me More More More'?", ["The Wonder Stuff", "The Wedding Present", "The House of Love", "The Mighty Lemon Drops"], "The Wonder Stuff", "Medium"),
+    makeQuestion("music_4278", "Which group recorded 'A Wish Away'?", ["The Wonder Stuff", "The House of Love", "The Wedding Present", "The Mighty Lemon Drops"], "The Wonder Stuff", "Hard"),
+    makeQuestion("music_4279", "Which group recorded 'It's Yer Money I'm After, Baby'?", ["The Wonder Stuff", "The Wedding Present", "The House of Love", "The Mighty Lemon Drops"], "The Wonder Stuff", "Easy"),
+    makeQuestion("music_4280", "Which group recorded 'Who Wants to Be the Disco King?'?", ["The Wonder Stuff", "The Wedding Present", "The House of Love", "The Mighty Lemon Drops"], "The Wonder Stuff", "Hard"),
+    makeQuestion("music_4281", "Which group recorded 'Don't Let Me Down, Gently'?", ["The Wonder Stuff", "The Wedding Present", "The House of Love", "The Mighty Lemon Drops"], "The Wonder Stuff", "Easy"),
+    makeQuestion("music_4282", "Which group recorded 'Golden Green'?", ["The Wonder Stuff", "The Wedding Present", "The House of Love", "The Mighty Lemon Drops"], "The Wonder Stuff", "Medium"),
+    makeQuestion("music_4283", "Which group recorded 'Like an Angel'?", ["The Mighty Lemon Drops", "The House of Love", "The Wonder Stuff", "The Wedding Present"], "The Mighty Lemon Drops", "Hard"),
+    makeQuestion("music_4284", "Which group recorded 'The Other Side of You'?", ["The Mighty Lemon Drops", "The House of Love", "The Wonder Stuff", "The Wedding Present"], "The Mighty Lemon Drops", "Hard"),
+    makeQuestion("music_4285", "Which group recorded 'Inside Out'?", ["The Mighty Lemon Drops", "The House of Love", "The Wonder Stuff", "The Wedding Present"], "The Mighty Lemon Drops", "Medium"),
+    makeQuestion("music_4286", "Which group recorded 'Fall Down (Like the Rain)'?", ["The Mighty Lemon Drops", "The House of Love", "The Wonder Stuff", "The Wedding Present"], "The Mighty Lemon Drops", "Hard"),
+    makeQuestion("music_4287", "Which group recorded 'Anyone Can Make a Mistake'?", ["The Wedding Present", "The Wonder Stuff", "The House of Love", "The Mighty Lemon Drops"], "The Wedding Present", "Hard"),
+    makeQuestion("music_4288", "Which group recorded 'Nobody's Twisting Your Arm'?", ["The Wedding Present", "The Wonder Stuff", "The House of Love", "The Mighty Lemon Drops"], "The Wedding Present", "Hard"),
+    makeQuestion("music_4289", "Which group recorded 'Christine'?", ["The House of Love", "The Wedding Present", "The Mighty Lemon Drops", "The Jesus and Mary Chain"], "The House of Love", "Easy"),
+    makeQuestion("music_4290", "Which group recorded 'Shine On'?", ["The House of Love", "The Wedding Present", "The Mighty Lemon Drops", "The Jesus and Mary Chain"], "The House of Love", "Easy"),
+    makeQuestion("music_4291", "Which group recorded 'Destroy the Heart'?", ["The House of Love", "The Wedding Present", "The Mighty Lemon Drops", "The Jesus and Mary Chain"], "The House of Love", "Medium"),
+    makeQuestion("music_4292", "Which group recorded 'Never'?", ["The House of Love", "The Wedding Present", "The Mighty Lemon Drops", "The Jesus and Mary Chain"], "The House of Love", "Hard"),
+    makeQuestion("music_4293", "Which group recorded 'Never Understand'?", ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"], "The Jesus and Mary Chain", "Medium"),
+    makeQuestion("music_4294", "Which group recorded 'You Trip Me Up'?", ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"], "The Jesus and Mary Chain", "Hard"),
+    makeQuestion("music_4295", "Which group recorded 'Just Like Honey'?", ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"], "The Jesus and Mary Chain", "Easy"),
+    makeQuestion("music_4296", "Which group recorded 'Some Candy Talking'?", ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"], "The Jesus and Mary Chain", "Hard"),
+    makeQuestion("music_4297", "Which group recorded 'April Skies'?", ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"], "The Jesus and Mary Chain", "Easy"),
+    makeQuestion("music_4298", "Which group recorded 'Happy When It Rains'?", ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"], "The Jesus and Mary Chain", "Medium"),
+    makeQuestion("music_4299", "Which group recorded 'Darklands'?", ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"], "The Jesus and Mary Chain", "Medium"),
+    makeQuestion("music_4300", "Which group recorded 'Sidewalking'?", ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"], "The Jesus and Mary Chain", "Medium"),
+    makeQuestion("music_4301", "Which group recorded 'Blues from a Gun'?", ["The Jesus and Mary Chain", "The House of Love", "The Psychedelic Furs", "The Church"], "The Jesus and Mary Chain", "Medium"),
+    makeQuestion("music_4302", "Which group recorded 'Sister Europe'?", ["The Psychedelic Furs", "The Church", "The Jesus and Mary Chain", "The House of Love"], "The Psychedelic Furs", "Hard"),
+    makeQuestion("music_4303", "Which group recorded 'The Unguarded Moment'?", ["The Church", "The Psychedelic Furs", "The Jesus and Mary Chain", "The House of Love"], "The Church", "Medium"),
+    makeQuestion("music_4304", "Which group recorded 'Almost with You'?", ["The Church", "The Psychedelic Furs", "The Jesus and Mary Chain", "The House of Love"], "The Church", "Hard"),
+    makeQuestion("music_4305", "Which group recorded 'Under the Milky Way'?", ["The Church", "The Psychedelic Furs", "The Jesus and Mary Chain", "The House of Love"], "The Church", "Easy"),
+    makeQuestion("music_4306", "Which group recorded 'Reptile'?", ["The Church", "The Psychedelic Furs", "The Jesus and Mary Chain", "The House of Love"], "The Church", "Medium"),
+    makeQuestion("music_4307", "Which group recorded 'Stay'?", ["The Blue Nile", "Aztec Camera", "Prefab Sprout", "Lloyd Cole and the Commotions"], "The Blue Nile", "Medium"),
+    makeQuestion("music_4308", "Which group recorded 'Tinseltown in the Rain'?", ["The Blue Nile", "Aztec Camera", "Prefab Sprout", "Lloyd Cole and the Commotions"], "The Blue Nile", "Easy"),
+    makeQuestion("music_4309", "Which group recorded 'The Downtown Lights'?", ["The Blue Nile", "Aztec Camera", "Prefab Sprout", "Lloyd Cole and the Commotions"], "The Blue Nile", "Easy"),
+    makeQuestion("music_4310", "Which group recorded 'Don't Sing'?", ["Prefab Sprout", "Aztec Camera", "The Blue Nile", "Lloyd Cole and the Commotions"], "Prefab Sprout", "Hard"),
+    makeQuestion("music_4311", "Which group recorded 'Rattlesnakes'?", ["Lloyd Cole and the Commotions", "Prefab Sprout", "Aztec Camera", "The Blue Nile"], "Lloyd Cole and the Commotions", "Medium"),
+    makeQuestion("music_4312", "Which group recorded 'Cut Me Down'?", ["Lloyd Cole and the Commotions", "Prefab Sprout", "Aztec Camera", "The Blue Nile"], "Lloyd Cole and the Commotions", "Hard"),
+    makeQuestion("music_4313", "Which group recorded 'Forbidden Fruit'?", ["The Blow Monkeys", "Scritti Politti", "Prefab Sprout", "Aztec Camera"], "The Blow Monkeys", "Hard"),
+    makeQuestion("music_4314", "Which group recorded 'The Sweetest Girl'?", ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"], "Scritti Politti", "Medium"),
+    makeQuestion("music_4315", "Which group recorded 'Wood Beez (Pray Like Aretha Franklin)'?", ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"], "Scritti Politti", "Easy"),
+    makeQuestion("music_4316", "Which group recorded 'Absolute'?", ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"], "Scritti Politti", "Easy"),
+    makeQuestion("music_4317", "Which group recorded 'Hypnotize'?", ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"], "Scritti Politti", "Hard"),
+    makeQuestion("music_4318", "Which group recorded 'The Word Girl'?", ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"], "Scritti Politti", "Easy"),
+    makeQuestion("music_4319", "Which group recorded 'Perfect Way'?", ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"], "Scritti Politti", "Easy"),
+    makeQuestion("music_4320", "Which group recorded 'Oh Patti (Don't Feel Sorry for Loverboy)'?", ["Scritti Politti", "The Blow Monkeys", "Prefab Sprout", "Aztec Camera"], "Scritti Politti", "Medium"),
+    makeQuestion("music_4321", "Which group recorded 'Club Country'?", ["The Associates", "Orange Juice", "Scritti Politti", "The Blue Nile"], "The Associates", "Medium"),
+    makeQuestion("music_4322", "Which group recorded '18 Carat Love Affair'?", ["The Associates", "Orange Juice", "Scritti Politti", "The Blue Nile"], "The Associates", "Hard"),
+    makeQuestion("music_4323", "Which group recorded 'Those First Impressions'?", ["The Associates", "Orange Juice", "Scritti Politti", "The Blue Nile"], "The Associates", "Hard"),
+    makeQuestion("music_4324", "Which group recorded 'Falling and Laughing'?", ["Orange Juice", "The Associates", "Aztec Camera", "The Blue Nile"], "Orange Juice", "Hard"),
+    makeQuestion("music_4325", "Which group recorded 'Rip It Up'?", ["Orange Juice", "The Associates", "Aztec Camera", "The Blue Nile"], "Orange Juice", "Easy"),
+    makeQuestion("music_4326", "Which group recorded 'What Presence?!'?", ["Orange Juice", "The Associates", "Aztec Camera", "The Blue Nile"], "Orange Juice", "Hard"),
+    makeQuestion("music_4327", "Which group recorded 'The Stand'?", ["The Alarm", "Big Country", "Simple Minds", "The Skids"], "The Alarm", "Medium"),
+    makeQuestion("music_4328", "Which group recorded 'Sixty Eight Guns'?", ["The Alarm", "Big Country", "Simple Minds", "The Skids"], "The Alarm", "Easy"),
+    makeQuestion("music_4329", "Which group recorded 'Where Were You Hiding When the Storm Broke?'?", ["The Alarm", "Big Country", "Simple Minds", "The Skids"], "The Alarm", "Medium"),
+    makeQuestion("music_4330", "Which group recorded 'Strength'?", ["The Alarm", "Big Country", "Simple Minds", "The Skids"], "The Alarm", "Easy"),
+    makeQuestion("music_4331", "Which group recorded 'Spirit of '76'?", ["The Alarm", "Big Country", "Simple Minds", "The Skids"], "The Alarm", "Medium"),
+    makeQuestion("music_4332", "Which group recorded 'Rescue Me'?", ["The Alarm", "Big Country", "Simple Minds", "The Skids"], "The Alarm", "Medium"),
+    makeQuestion("music_4333", "Which group recorded 'Chance'?", ["Big Country", "The Alarm", "Simple Minds", "The Skids"], "Big Country", "Easy"),
+    makeQuestion("music_4334", "Which group recorded 'Wonderland'?", ["Big Country", "The Alarm", "Simple Minds", "The Skids"], "Big Country", "Easy"),
+    makeQuestion("music_4335", "Which group recorded 'East of Eden'?", ["Big Country", "The Alarm", "Simple Minds", "The Skids"], "Big Country", "Medium"),
+    makeQuestion("music_4336", "Which group recorded 'Just a Shadow'?", ["Big Country", "The Alarm", "Simple Minds", "The Skids"], "Big Country", "Medium"),
+    makeQuestion("music_4337", "Which group recorded 'Look Away'?", ["Big Country", "The Alarm", "Simple Minds", "The Skids"], "Big Country", "Easy"),
+    makeQuestion("music_4338", "Which group recorded 'One Great Thing'?", ["Big Country", "The Alarm", "Simple Minds", "The Skids"], "Big Country", "Easy"),
+    makeQuestion("music_4339", "Which group recorded 'King of Emotion'?", ["Big Country", "The Alarm", "Simple Minds", "The Skids"], "Big Country", "Easy"),
+    makeQuestion("music_4340", "Which group recorded 'Peace in Our Time'?", ["Big Country", "The Alarm", "Simple Minds", "The Skids"], "Big Country", "Easy"),
+    makeQuestion("music_4341", "Which group recorded 'I Travel'?", ["Simple Minds", "Big Country", "The Alarm", "The Skids"], "Simple Minds", "Medium"),
+    makeQuestion("music_4342", "Which group recorded 'Love Song'?", ["Simple Minds", "Big Country", "The Alarm", "The Skids"], "Simple Minds", "Easy"),
+    makeQuestion("music_4343", "Which group recorded 'Speed Your Love to Me'?", ["Simple Minds", "Big Country", "The Alarm", "The Skids"], "Simple Minds", "Medium"),
+    makeQuestion("music_4344", "Which group recorded 'Animation'?", ["The Skids", "Stiff Little Fingers", "The Undertones", "The Alarm"], "The Skids", "Hard"),
+    makeQuestion("music_4345", "Which group recorded 'Circus Games'?", ["The Skids", "Stiff Little Fingers", "The Undertones", "The Alarm"], "The Skids", "Medium"),
+    makeQuestion("music_4346", "Which group recorded 'Goodbye Civilian'?", ["The Skids", "Stiff Little Fingers", "The Undertones", "The Alarm"], "The Skids", "Hard"),
+    makeQuestion("music_4347", "Which group recorded 'Wednesday Week'?", ["The Undertones", "Stiff Little Fingers", "The Skids", "The Boomtown Rats"], "The Undertones", "Easy"),
+    makeQuestion("music_4348", "Which group recorded 'It's Going to Happen!'?", ["The Undertones", "Stiff Little Fingers", "The Skids", "The Boomtown Rats"], "The Undertones", "Easy"),
+    makeQuestion("music_4349", "Which group recorded 'Julie Ocean'?", ["The Undertones", "Stiff Little Fingers", "The Skids", "The Boomtown Rats"], "The Undertones", "Hard"),
+    makeQuestion("music_4350", "Which group recorded 'At the Edge'?", ["Stiff Little Fingers", "The Undertones", "The Skids", "The Boomtown Rats"], "Stiff Little Fingers", "Easy"),
+    makeQuestion("music_4351", "Which group recorded 'Nobody's Hero'?", ["Stiff Little Fingers", "The Undertones", "The Skids", "The Boomtown Rats"], "Stiff Little Fingers", "Easy"),
+    makeQuestion("music_4352", "Which group recorded 'Just Fade Away'?", ["Stiff Little Fingers", "The Undertones", "The Skids", "The Boomtown Rats"], "Stiff Little Fingers", "Medium"),
+    makeQuestion("music_4353", "Which group recorded 'Listen'?", ["Stiff Little Fingers", "The Undertones", "The Skids", "The Boomtown Rats"], "Stiff Little Fingers", "Hard"),
+    makeQuestion("music_4354", "Which group recorded 'Someone's Looking at You'?", ["The Boomtown Rats", "The Undertones", "Stiff Little Fingers", "The Skids"], "The Boomtown Rats", "Easy"),
+    makeQuestion("music_4355", "Which group recorded 'Banana Republic'?", ["The Boomtown Rats", "The Undertones", "Stiff Little Fingers", "The Skids"], "The Boomtown Rats", "Easy"),
+    makeQuestion("music_4356", "Which group recorded 'The Elephant's Graveyard'?", ["The Boomtown Rats", "The Undertones", "Stiff Little Fingers", "The Skids"], "The Boomtown Rats", "Medium"),
+    makeQuestion("music_4357", "Which group recorded 'Never in a Million Years'?", ["The Boomtown Rats", "The Undertones", "Stiff Little Fingers", "The Skids"], "The Boomtown Rats", "Hard"),
+    makeQuestion("music_4358", "Which group recorded 'House on Fire'?", ["The Boomtown Rats", "The Undertones", "Stiff Little Fingers", "The Skids"], "The Boomtown Rats", "Medium"),
+    makeQuestion("music_4359", "Which group recorded 'Dark Streets of London'?", ["The Pogues", "The Dubliners", "The Waterboys", "The Men They Couldn't Hang"], "The Pogues", "Easy"),
+    makeQuestion("music_4360", "Which group recorded 'A Pair of Brown Eyes'?", ["The Pogues", "The Dubliners", "The Waterboys", "The Men They Couldn't Hang"], "The Pogues", "Easy"),
+    makeQuestion("music_4361", "Which group recorded 'Sally MacLennane'?", ["The Pogues", "The Dubliners", "The Waterboys", "The Men They Couldn't Hang"], "The Pogues", "Easy"),
+    makeQuestion("music_4362", "Which group recorded 'Dirty Old Town' for their album Rum, Sodomy & the Lash?", ["The Pogues", "The Dubliners", "The Waterboys", "The Men They Couldn't Hang"], "The Pogues", "Easy"),
+    makeQuestion("music_4363", "Which two groups recorded the 1987 hit version of 'The Irish Rover' together?", ["The Pogues and The Dubliners", "The Pogues", "The Dubliners", "The Waterboys"], "The Pogues and The Dubliners", "Easy"),
+    makeQuestion("music_4364", "Which group released 'The Green Fields of France' as its debut single?", ["The Men They Couldn't Hang", "The Pogues", "The Waterboys", "The Dubliners"], "The Men They Couldn't Hang", "Easy"),
+    makeQuestion("music_4365", "Which group recorded 'Ironmasters'?", ["The Men They Couldn't Hang", "The Pogues", "The Waterboys", "The Alarm"], "The Men They Couldn't Hang", "Hard"),
+    makeQuestion("music_4366", "Which group recorded 'The Colours'?", ["The Men They Couldn't Hang", "The Pogues", "The Waterboys", "The Alarm"], "The Men They Couldn't Hang", "Hard"),
 ];
 
 module.exports = quizPack62;
