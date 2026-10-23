@@ -1,715 +1,274 @@
 // quiz_pack60.js
-// PuzzlePilot Big Quiz
-// Music Pack 60
-// 100 questions
-// IDs: music_4067 - music_4166
+// PuzzlePilot Bigggggg Quiz - Music Pack 60
+// Full 100-question tagging audit. IDs music_4067 to music_4166.
+// Preserves original questions and choices. Tags generated at runtime.
+
+const artistTags = {
+    "Deacon Blue": ["pop rock", "blue-eyed soul", "scottish", "british", "bands", "ricky ross", "lorraine mcintosh"],
+    "The Proclaimers": ["folk rock", "pop rock", "scottish", "british", "duos", "twin brothers", "craig reid", "charlie reid", "edinburgh"],
+    "The Style Council": ["sophisti-pop", "pop soul", "british", "bands", "paul weller", "mick talbot", "the jam"],
+    "The Housemartins": ["jangle pop", "indie pop", "british", "bands", "paul heaton", "norman cook", "hull"],
+    "The Beautiful South": ["pop rock", "sophisti-pop", "british", "bands", "paul heaton", "dave rotheray", "hull", "the housemartins"],
+    "Everything but the Girl": ["sophisti-pop", "jazz pop", "british", "duos", "tracey thorn", "ben watt"],
+    "Swing Out Sister": ["sophisti-pop", "blue-eyed soul", "british", "bands", "corinne drewery", "andy connell"],
+    "Fiction Factory": ["new wave", "synth-pop", "scottish", "british", "bands", "kevin patterson"],
+    "The Jam": ["mod revival", "punk rock", "new wave", "british", "bands", "paul weller", "bruce foxton", "rick buckler"],
+    "Paul Weller": ["rock", "britpop", "soul", "british", "male singers", "solo artists", "the jam", "the style council", "singer-songwriters"],
+    "Madness": ["ska", "2 tone", "new wave", "british", "bands", "suggs", "camden"],
+    "The Beat": ["ska", "2 tone", "new wave", "british", "bands", "ranking roger", "dave wakeling", "birmingham"],
+    "Bad Manners": ["ska", "2 tone", "british", "bands", "buster bloodvessel"],
+    "UB40": ["reggae", "pop reggae", "british", "bands", "birmingham", "ali campbell", "robin campbell"],
+    "Dexys Midnight Runners": ["pop soul", "new wave", "british", "bands", "kevin rowland", "birmingham"],
+    "REO Speedwagon": ["arena rock", "pop rock", "american", "bands", "kevin cronin", "neal doughty", "illinois"],
+    "Survivor": ["arena rock", "pop rock", "american", "bands", "jim peterik", "frankie sullivan"],
+    "Toto": ["soft rock", "pop rock", "american", "bands", "steve lukather", "david paich"],
+    "Boston": ["arena rock", "hard rock", "american", "bands", "tom scholz", "brad delp"],
+    "Night Ranger": ["arena rock", "hard rock", "american", "bands", "kelly keagy", "jack blades"],
+    "Cutting Crew": ["pop rock", "soft rock", "british", "bands", "nick van eede", "kevin macmichael"],
+    "John Parr": ["rock", "pop rock", "british", "male singers", "solo artists", "guitarists"],
+    "Mike + The Mechanics": ["pop rock", "soft rock", "british", "bands", "mike rutherford", "paul carrack", "paul young", "genesis"],
+    "Glass Tiger": ["pop rock", "soft rock", "canadian", "bands", "alan frew", "jim vallance"],
+    "Cheap Trick": ["power pop", "hard rock", "american", "bands", "robin zander", "rick nielsen"],
+    "Pat Benatar": ["hard rock", "pop rock", "american", "female singers", "solo artists", "neil giraldo"],
+    "Joan Jett": ["hard rock", "punk rock", "american", "female singers", "solo artists", "the runaways", "the blackhearts"],
+    "Joan Jett & the Blackhearts": ["hard rock", "punk rock", "american", "bands", "female lead singers", "joan jett", "the runaways"],
+    "The Hooters": ["rock", "folk rock", "pop rock", "american", "bands", "eric bazilian", "rob hyman", "philadelphia"],
+    "The Outfield": ["power pop", "pop rock", "british", "bands", "tony lewis", "john spinks"],
+    "The Fixx": ["new wave", "pop rock", "british", "bands", "cy curnin", "jamie west-oram"],
+    "Men at Work": ["new wave", "pop rock", "australian", "bands", "colin hay", "greg ham"],
+    "Icehouse": ["new wave", "synth-pop", "pop rock", "australian", "bands", "iva davies"],
+    "Midnight Oil": ["alternative rock", "rock", "australian", "bands", "peter garrett", "rob hirst", "political songs"],
+    "Crowded House": ["pop rock", "alternative rock", "australian-new zealand", "bands", "neil finn", "paul hester", "nick seymour", "split enz"],
+};
+
+const recordingTags = {
+    "music_4067": [1987, "raintown album", "1987 singles", "pop rock"],
+    "music_4068": [1987, "this is the story album", "1987 singles", "scottish migration songs", "1987 uk top five"],
+    "music_4069": [1988, "sunshine on leith album", "1988 singles", "album title tracks", "hibernian football anthem", "folk ballads"],
+    "music_4070": [1989, "sunshine on leith album", "1988 album tracks", "1989 singles", "shrek film soundtrack"],
+    "music_4071": [1983, "1983 singles", "introducing the style council ep", "debut singles", "paul weller songwriter"],
+    "music_4072": [1983, "a paris ep", "1983 singles", "summer songs", "pop soul"],
+    "music_4073": [1984, "cafe bleu album", "1984 singles", "paul weller songwriter", "love songs"],
+    "music_4074": [1986, "london 0 hull 4 album", "1986 singles", "indie pop"],
+    "music_4075": [1986, "london 0 hull 4 album", "1986 singles", "social commentary"],
+    "music_4076": [1986, "1986 singles", "isley jasper isley original", "cover versions", "a cappella", "uk number one singles"],
+    "music_4077": [1989, "welcome to the beautiful south album", "1989 singles", "debut singles"],
+    "music_4078": [1989, "welcome to the beautiful south album", "1989 singles", "pop rock"],
+    "music_4079": [1984, "eden album", "1984 singles", "debut singles", "jazz pop"],
+    "music_4080": [1985, "love not money album", "1985 singles", "jazz pop"],
+    "music_4081": [1988, "idlewild album", "1988 singles", "crazy horse original", "rod stewart cover", "cover versions"],
+    "music_4082": [1986, "its better to travel album", "1986 singles", "1987 album release", "1980s uk top ten", "sophisti-pop"],
+    "music_4083": [1987, "its better to travel album", "1987 singles", "sophisti-pop"],
+    "music_4084": [1987, "its better to travel album", "1987 singles", "sophisti-pop"],
+    "music_4085": [1987, "its better to travel album", "1987 singles", "northern soul influences"],
+    "music_4086": [1983, "throw the warped wheel out album", "1983 singles", "1984 album release", "1984 uk chart success", "synth-pop"],
+    "music_4087": [1980, "sound affects album", "1980 album tracks", "1981 german single", "1983 uk single", "paul weller songwriter"],
+    "music_4088": [1991, "paul weller debut album", "1991 singles", "1992 album release", "solo debut single"],
+    "music_4089": [1981, "absolutely album", "1981 singles", "instrumentals", "ska"],
+    "music_4090": [1983, "keep moving album", "1983 singles", "1984 album release", "rain songs"],
+    "music_4091": [1981, "whappen album", "1981 singles", "two tone ska", "all out to get you double a side"],
+    "music_4092": [1980, "1980 singles", "cover versions", "dicky doo and the donts original", "novelty ska"],
+    "music_4093": [1980, "signing off album", "1980 singles", "debut singles", "king double a side", "reggae"],
+    "music_4094": [1980, "1980 singles", "i think its going to rain today double a side", "reggae"],
+    "music_4095": [1980, "1980 singles", "dream a lie double a side", "antiwar songs", "reggae"],
+    "music_4096": [1981, "present arms album", "1981 singles", "social commentary", "unemployment songs"],
+    "music_4097": [1983, "labour of love album", "1983 singles", "jimmy cliff original", "cover versions"],
+    "music_4098": [1984, "labour of love album", "1983 album tracks", "1984 singles", "eric donaldson original", "cover versions"],
+    "music_4099": [1984, "geffery morgan album", "1984 singles", "reggae"],
+    "music_4100": [1981, "1981 singles", "pop soul"],
+    "music_4101": [1981, "1981 singles", "pop soul"],
+    "music_4102": [1981, "hi infidelity album", "1980 album tracks", "1981 singles", "arena rock"],
+    "music_4103": [1982, "good trouble album", "1982 singles", "arena rock"],
+    "music_4104": [1985, "wheels are turnin album", "1985 singles", "soft rock"],
+    "music_4105": [1987, "life as we know it album", "1987 singles", "pop rock"],
+    "music_4106": [1985, "1985 singles", "rocky iv soundtrack", "film songs"],
+    "music_4107": [1984, "vital signs album", "1984 singles", "arena rock"],
+    "music_4108": [1985, "vital signs album", "1985 singles", "power ballads"],
+    "music_4109": [1986, "when seconds count album", "1986 singles", "1987 us chart success", "soft rock"],
+    "music_4110": [1986, "fahrenheit album", "1986 singles", "soft rock", "michael mcdonald backing vocals"],
+    "music_4111": [1986, "third stage album", "1986 singles", "us number one singles", "power ballads"],
+    "music_4112": [1986, "third stage album", "1986 singles", "arena rock"],
+    "music_4113": [1987, "third stage album", "1987 singles", "arena rock"],
+    "music_4114": [1984, "midnight madness album", "1983 album tracks", "1984 singles", "power ballads", "kelly keagy lead vocals"],
+    "music_4115": [1984, "midnight madness album", "1984 singles", "arena rock"],
+    "music_4116": [1985, "7 wishes album", "1985 singles", "arena rock"],
+    "music_4117": [1986, "broadcast album", "1986 singles", "1987 us chart success", "soft rock"],
+    "music_4118": [1987, "broadcast album", "1986 album tracks", "1987 singles", "pop rock"],
+    "music_4119": [1984, "john parr debut album", "1984 singles", "arena rock"],
+    "music_4120": [1986, "mike and the mechanics debut album", "1985 album tracks", "1986 singles", "1986 chart success", "pop rock"],
+    "music_4121": [1988, "living years album", "1988 singles", "pop rock"],
+    "music_4122": [1986, "the thin red line album", "1986 singles", "bryan adams backing vocals", "canadian number one singles"],
+    "music_4123": [1986, "the thin red line album", "1986 singles", "1987 uk chart success", "pop rock"],
+    "music_4124": [1988, "diamond sun album", "1988 singles", "album title tracks", "pop rock"],
+    "music_4125": [1979, "dream police album", "1979 singles", "album title tracks", "power pop"],
+    "music_4126": [1979, "dream police album", "1979 singles", "rock ballads"],
+    "music_4127": [1982, "one on one album", "1982 singles", "power pop"],
+    "music_4128": [1988, "lap of luxury album", "1988 singles", "us number one singles", "power ballads"],
+    "music_4129": [1988, "lap of luxury album", "1988 singles", "elvis presley original", "cover versions"],
+    "music_4130": [1980, "crimes of passion album", "1980 singles", "young rascals original", "cover versions", "mtv music videos"],
+    "music_4131": [1981, "crimes of passion album", "1980 album tracks", "1981 singles", "hard rock"],
+    "music_4132": [1982, "get nervous album", "1982 singles", "1983 chart success", "pop rock"],
+    "music_4133": [1980, "bad reputation album", "1980 singles", "punk rock"],
+    "music_4134": [1982, "i love rock n roll album", "1982 singles", "gary glitter original", "cover versions"],
+    "music_4135": [1981, "i love rock n roll album", "1981 singles", "1982 uk singles", "arrows original", "cover versions", "us number one singles"],
+    "music_4136": [1982, "i love rock n roll album", "1982 singles", "tommy james and the shondells original", "cover versions"],
+    "music_4137": [1988, "up your alley album", "1988 singles", "hard rock"],
+    "music_4138": [1985, "nervous night album", "1982 original singles", "1983 first studio recording", "1985 rerecording", "1985 singles", "folk rock"],
+    "music_4139": [1985, "nervous night album", "1985 singles", "rock"],
+    "music_4140": [1985, "nervous night album", "1985 singles", "folk rock"],
+    "music_4141": [1987, "one way home album", "1987 singles", "folk rock"],
+    "music_4142": [1987, "one way home album", "1987 singles", "rock"],
+    "music_4143": [1986, "play deep album", "1985 album tracks", "1986 us singles", "power pop"],
+    "music_4144": [1986, "play deep album", "1985 album tracks", "1986 singles", "power pop"],
+    "music_4145": [1987, "bangin album", "1987 singles", "power pop"],
+    "music_4146": [1989, "voices of babylon album", "1989 singles", "album title tracks", "power pop"],
+    "music_4147": [1982, "shuttered room album", "1982 singles", "new wave"],
+    "music_4148": [1982, "shuttered room album", "1982 singles", "new wave"],
+    "music_4149": [1983, "reach the beach album", "1983 singles", "new wave"],
+    "music_4150": [1983, "reach the beach album", "1983 singles", "new wave"],
+    "music_4151": [1984, "phantoms album", "1984 singles", "new wave"],
+    "music_4152": [1986, "walkabout album", "1986 singles", "new wave"],
+    "music_4153": [1981, "business as usual album", "1981 australian singles", "1982 us singles", "new wave"],
+    "music_4154": [1981, "business as usual album", "1981 australian singles", "1982 uk singles", "1983 us number one singles", "australia songs"],
+    "music_4155": [1982, "business as usual album", "1982 singles", "new wave"],
+    "music_4156": [1983, "cargo album", "1983 singles", "pop rock"],
+    "music_4157": [1983, "cargo album", "1983 singles", "antiwar songs"],
+    "music_4158": [1987, "man of colours album", "1987 singles", "john oates co-writer", "synth-pop"],
+    "music_4159": [1987, "man of colours album", "1987 australian singles", "1988 us singles", "synth-pop"],
+    "music_4160": [1983, "10 9 8 7 6 5 4 3 2 1 album", "1983 singles", "political rock"],
+    "music_4161": [1987, "diesel and dust album", "1987 singles", "indigenous australian rights", "protest songs"],
+    "music_4162": [1986, "1986 singles", "1987 diesel and dust album", "indigenous australian rights", "protest songs"],
+    "music_4163": [1986, "crowded house debut album", "1986 singles", "neil finn songwriter"],
+    "music_4164": [1986, "crowded house debut album", "1986 singles", "neil finn songwriter"],
+    "music_4165": [1987, "crowded house debut album", "1986 album tracks", "1987 singles", "1987 us chart success", "neil finn songwriter"],
+    "music_4166": [1988, "temple of low men album", "1988 singles", "neil finn songwriter", "soft rock"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const detail = recordingTags[id];
+    if (!artist || !detail) throw new Error(`Missing metadata for ${id}`);
+    const song = question.match(/'(.+)'/);
+    if (!song) throw new Error(`Missing song title for ${id}`);
+    const year = detail[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", "songs", "recordings", decade, `${decade} music`,
+            `${year} releases`, song[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...artist, ...detail.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack60 = [
-
-    {
-        id: "music_4067",
-        category: "Music",
-        question: "Which group recorded 'Loaded'?",
-        answers: ["Deacon Blue", "Simple Minds", "Wet Wet Wet", "Del Amitri"],
-        correctAnswer: "Deacon Blue"
-    },
-    {
-        id: "music_4068",
-        category: "Music",
-        question: "Which duo recorded 'Letter from America'?",
-        answers: ["The Proclaimers", "Hue and Cry", "The Communards", "Erasure"],
-        correctAnswer: "The Proclaimers"
-    },
-    {
-        id: "music_4069",
-        category: "Music",
-        question: "Which duo recorded 'Sunshine on Leith'?",
-        answers: ["The Proclaimers", "Hue and Cry", "The Communards", "The Associates"],
-        correctAnswer: "The Proclaimers"
-    },
-    {
-        id: "music_4070",
-        category: "Music",
-        question: "Which duo recorded 'I'm on My Way'?",
-        answers: ["The Proclaimers", "Hue and Cry", "Go West", "The Communards"],
-        correctAnswer: "The Proclaimers"
-    },
-    {
-        id: "music_4071",
-        category: "Music",
-        question: "Which group recorded 'Speak Like a Child'?",
-        answers: ["The Style Council", "The Jam", "Prefab Sprout", "Aztec Camera"],
-        correctAnswer: "The Style Council"
-    },
-    {
-        id: "music_4072",
-        category: "Music",
-        question: "Which group recorded 'Long Hot Summer'?",
-        answers: ["The Style Council", "The Jam", "The Housemartins", "Everything but the Girl"],
-        correctAnswer: "The Style Council"
-    },
-    {
-        id: "music_4073",
-        category: "Music",
-        question: "Which group recorded 'You're the Best Thing'?",
-        answers: ["The Style Council", "Prefab Sprout", "The Jam", "Deacon Blue"],
-        correctAnswer: "The Style Council"
-    },
-    {
-        id: "music_4074",
-        category: "Music",
-        question: "Which group recorded 'Happy Hour'?",
-        answers: ["The Housemartins", "The Beautiful South", "The Style Council", "The Smiths"],
-        correctAnswer: "The Housemartins"
-    },
-    {
-        id: "music_4075",
-        category: "Music",
-        question: "Which group recorded 'Think for a Minute'?",
-        answers: ["The Housemartins", "The Beautiful South", "The Christians", "The Smiths"],
-        correctAnswer: "The Housemartins"
-    },
-    {
-        id: "music_4076",
-        category: "Music",
-        question: "Which group recorded 'Caravan of Love'?",
-        answers: ["The Housemartins", "The Beautiful South", "The Christians", "The Style Council"],
-        correctAnswer: "The Housemartins"
-    },
-    {
-        id: "music_4077",
-        category: "Music",
-        question: "Which group recorded 'Song for Whoever'?",
-        answers: ["The Beautiful South", "The Housemartins", "Deacon Blue", "The Christians"],
-        correctAnswer: "The Beautiful South"
-    },
-    {
-        id: "music_4078",
-        category: "Music",
-        question: "Which group recorded 'You Keep It All In'?",
-        answers: ["The Beautiful South", "The Housemartins", "Deacon Blue", "Prefab Sprout"],
-        correctAnswer: "The Beautiful South"
-    },
-    {
-        id: "music_4079",
-        category: "Music",
-        question: "Which duo recorded 'Each and Every One'?",
-        answers: ["Everything but the Girl", "Swing Out Sister", "The Communards", "Eurythmics"],
-        correctAnswer: "Everything but the Girl"
-    },
-    {
-        id: "music_4080",
-        category: "Music",
-        question: "Which duo recorded 'When All's Well'?",
-        answers: ["Everything but the Girl", "Swing Out Sister", "The Communards", "Hue and Cry"],
-        correctAnswer: "Everything but the Girl"
-    },
-    {
-        id: "music_4081",
-        category: "Music",
-        question: "Which duo recorded 'I Don't Want to Talk About It'?",
-        answers: ["Everything but the Girl", "Eurythmics", "Swing Out Sister", "The Communards"],
-        correctAnswer: "Everything but the Girl"
-    },
-    {
-        id: "music_4082",
-        category: "Music",
-        question: "Which group recorded 'Breakout'?",
-        answers: ["Swing Out Sister", "Everything but the Girl", "Five Star", "The Jets"],
-        correctAnswer: "Swing Out Sister"
-    },
-    {
-        id: "music_4083",
-        category: "Music",
-        question: "Which group recorded 'Surrender'?",
-        answers: ["Swing Out Sister", "Everything but the Girl", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Swing Out Sister"
-    },
-    {
-        id: "music_4084",
-        category: "Music",
-        question: "Which group recorded 'Twilight World'?",
-        answers: ["Swing Out Sister", "Everything but the Girl", "Prefab Sprout", "The Blow Monkeys"],
-        correctAnswer: "Swing Out Sister"
-    },
-    {
-        id: "music_4085",
-        category: "Music",
-        question: "Which group recorded 'Fooled by a Smile'?",
-        answers: ["Swing Out Sister", "Everything but the Girl", "The Blow Monkeys", "Five Star"],
-        correctAnswer: "Swing Out Sister"
-    },
-    {
-        id: "music_4086",
-        category: "Music",
-        question: "Which group recorded '(Feels Like) Heaven'?",
-        answers: ["Fiction Factory", "The Lotus Eaters", "China Crisis", "The Blue Nile"],
-        correctAnswer: "Fiction Factory"
-    },
-
-    {
-        id: "music_4087",
-        category: "Music",
-        question: "Which group recorded 'That's Entertainment'?",
-        answers: ["The Jam", "The Style Council", "The Clash", "The Specials"],
-        correctAnswer: "The Jam"
-    },
-    {
-        id: "music_4088",
-        category: "Music",
-        question: "Which artist recorded 'Into Tomorrow'?",
-        answers: ["Paul Weller", "Elvis Costello", "Joe Jackson", "Nick Lowe"],
-        correctAnswer: "Paul Weller"
-    },
-    {
-        id: "music_4089",
-        category: "Music",
-        question: "Which group recorded 'The Return of the Los Palmas 7'?",
-        answers: ["Madness", "The Specials", "Bad Manners", "The Beat"],
-        correctAnswer: "Madness"
-    },
-    {
-        id: "music_4090",
-        category: "Music",
-        question: "Which group recorded 'The Sun and the Rain'?",
-        answers: ["Madness", "The Specials", "The Beat", "Bad Manners"],
-        correctAnswer: "Madness"
-    },
-    {
-        id: "music_4091",
-        category: "Music",
-        question: "Which group recorded 'Drowning'?",
-        answers: ["The Beat", "The Specials", "The Selecter", "Madness"],
-        correctAnswer: "The Beat"
-    },
-    {
-        id: "music_4092",
-        category: "Music",
-        question: "Which group recorded 'Ne-Ne Na-Na Na-Na Nu-Nu'?",
-        answers: ["Bad Manners", "Madness", "The Beat", "The Specials"],
-        correctAnswer: "Bad Manners"
-    },
-    {
-        id: "music_4093",
-        category: "Music",
-        question: "Which group recorded 'Food for Thought'?",
-        answers: ["UB40", "The Specials", "The Beat", "Madness"],
-        correctAnswer: "UB40"
-    },
-    {
-        id: "music_4094",
-        category: "Music",
-        question: "Which group recorded 'My Way of Thinking'?",
-        answers: ["UB40", "The Beat", "The Specials", "Bad Manners"],
-        correctAnswer: "UB40"
-    },
-    {
-        id: "music_4095",
-        category: "Music",
-        question: "Which group recorded 'The Earth Dies Screaming'?",
-        answers: ["UB40", "The Specials", "The Beat", "Madness"],
-        correctAnswer: "UB40"
-    },
-    {
-        id: "music_4096",
-        category: "Music",
-        question: "Which group recorded 'One in Ten'?",
-        answers: ["UB40", "The Specials", "The Beat", "The Selecter"],
-        correctAnswer: "UB40"
-    },
-    {
-        id: "music_4097",
-        category: "Music",
-        question: "Which group recorded 'Many Rivers to Cross'?",
-        answers: ["UB40", "The Beat", "Madness", "Bad Manners"],
-        correctAnswer: "UB40"
-    },
-    {
-        id: "music_4098",
-        category: "Music",
-        question: "Which group recorded 'Cherry Oh Baby'?",
-        answers: ["UB40", "The Specials", "The Beat", "Madness"],
-        correctAnswer: "UB40"
-    },
-    {
-        id: "music_4099",
-        category: "Music",
-        question: "Which group recorded 'If It Happens Again'?",
-        answers: ["UB40", "The Beat", "The Specials", "Bad Manners"],
-        correctAnswer: "UB40"
-    },
-    {
-        id: "music_4100",
-        category: "Music",
-        question: "Which group recorded 'Show Me'?",
-        answers: ["Dexys Midnight Runners", "The Teardrop Explodes", "The Beat", "The Style Council"],
-        correctAnswer: "Dexys Midnight Runners"
-    },
-    {
-        id: "music_4101",
-        category: "Music",
-        question: "Which group recorded 'Liars A to E'?",
-        answers: ["Dexys Midnight Runners", "The Teardrop Explodes", "The Beat", "The Specials"],
-        correctAnswer: "Dexys Midnight Runners"
-    },
-
-    {
-        id: "music_4102",
-        category: "Music",
-        question: "Which group recorded 'Don't Let Him Go'?",
-        answers: ["REO Speedwagon", "Journey", "Foreigner", "Survivor"],
-        correctAnswer: "REO Speedwagon"
-    },
-    {
-        id: "music_4103",
-        category: "Music",
-        question: "Which group recorded 'Keep the Fire Burnin''?",
-        answers: ["REO Speedwagon", "Journey", "Foreigner", "Boston"],
-        correctAnswer: "REO Speedwagon"
-    },
-    {
-        id: "music_4104",
-        category: "Music",
-        question: "Which group recorded 'One Lonely Night'?",
-        answers: ["REO Speedwagon", "Journey", "Survivor", "Foreigner"],
-        correctAnswer: "REO Speedwagon"
-    },
-    {
-        id: "music_4105",
-        category: "Music",
-        question: "Which group recorded 'In My Dreams'?",
-        answers: ["REO Speedwagon", "Journey", "Boston", "Foreigner"],
-        correctAnswer: "REO Speedwagon"
-    },
-    {
-        id: "music_4106",
-        category: "Music",
-        question: "Which group recorded 'Burning Heart'?",
-        answers: ["Survivor", "Journey", "Foreigner", "REO Speedwagon"],
-        correctAnswer: "Survivor"
-    },
-    {
-        id: "music_4107",
-        category: "Music",
-        question: "Which group recorded 'High on You'?",
-        answers: ["Survivor", "Journey", "Foreigner", "Toto"],
-        correctAnswer: "Survivor"
-    },
-    {
-        id: "music_4108",
-        category: "Music",
-        question: "Which group recorded 'The Search Is Over'?",
-        answers: ["Survivor", "Journey", "REO Speedwagon", "Foreigner"],
-        correctAnswer: "Survivor"
-    },
-    {
-        id: "music_4109",
-        category: "Music",
-        question: "Which group recorded 'Is This Love'?",
-        answers: ["Survivor", "Foreigner", "Journey", "REO Speedwagon"],
-        correctAnswer: "Survivor"
-    },
-    {
-        id: "music_4110",
-        category: "Music",
-        question: "Which group recorded 'I'll Be Over You'?",
-        answers: ["Toto", "Journey", "Boston", "Foreigner"],
-        correctAnswer: "Toto"
-    },
-    {
-        id: "music_4111",
-        category: "Music",
-        question: "Which group recorded 'Amanda'?",
-        answers: ["Boston", "Journey", "Foreigner", "REO Speedwagon"],
-        correctAnswer: "Boston"
-    },
-    {
-        id: "music_4112",
-        category: "Music",
-        question: "Which group recorded 'We're Ready'?",
-        answers: ["Boston", "Journey", "Foreigner", "Survivor"],
-        correctAnswer: "Boston"
-    },
-    {
-        id: "music_4113",
-        category: "Music",
-        question: "Which group recorded 'Can'tcha Say (You Believe in Me)'?",
-        answers: ["Boston", "Journey", "REO Speedwagon", "Foreigner"],
-        correctAnswer: "Boston"
-    },
-    {
-        id: "music_4114",
-        category: "Music",
-        question: "Which group recorded 'Sister Christian'?",
-        answers: ["Night Ranger", "Survivor", "Journey", "Foreigner"],
-        correctAnswer: "Night Ranger"
-    },
-    {
-        id: "music_4115",
-        category: "Music",
-        question: "Which group recorded 'When You Close Your Eyes'?",
-        answers: ["Night Ranger", "Journey", "Survivor", "REO Speedwagon"],
-        correctAnswer: "Night Ranger"
-    },
-    {
-        id: "music_4116",
-        category: "Music",
-        question: "Which group recorded 'Sentimental Street'?",
-        answers: ["Night Ranger", "Journey", "Boston", "Foreigner"],
-        correctAnswer: "Night Ranger"
-    },
-    {
-        id: "music_4117",
-        category: "Music",
-        question: "Which group recorded 'I've Been in Love Before'?",
-        answers: ["Cutting Crew", "Mr. Mister", "The Outfield", "Glass Tiger"],
-        correctAnswer: "Cutting Crew"
-    },
-    {
-        id: "music_4118",
-        category: "Music",
-        question: "Which group recorded 'One for the Mockingbird'?",
-        answers: ["Cutting Crew", "The Outfield", "Mr. Mister", "Glass Tiger"],
-        correctAnswer: "Cutting Crew"
-    },
-    {
-        id: "music_4119",
-        category: "Music",
-        question: "Which artist recorded 'Naughty Naughty'?",
-        answers: ["John Parr", "John Waite", "Robert Palmer", "Billy Squier"],
-        correctAnswer: "John Parr"
-    },
-    {
-        id: "music_4120",
-        category: "Music",
-        question: "Which group recorded 'All I Need Is a Miracle'?",
-        answers: ["Mike + The Mechanics", "Genesis", "Mr. Mister", "The Outfield"],
-        correctAnswer: "Mike + The Mechanics"
-    },
-    {
-        id: "music_4121",
-        category: "Music",
-        question: "Which group recorded 'Nobody's Perfect'?",
-        answers: ["Mike + The Mechanics", "Genesis", "Mr. Mister", "Glass Tiger"],
-        correctAnswer: "Mike + The Mechanics"
-    },
-    {
-        id: "music_4122",
-        category: "Music",
-        question: "Which group recorded 'Don't Forget Me (When I'm Gone)'?",
-        answers: ["Glass Tiger", "The Outfield", "Cutting Crew", "Mr. Mister"],
-        correctAnswer: "Glass Tiger"
-    },
-    {
-        id: "music_4123",
-        category: "Music",
-        question: "Which group recorded 'Someday'?",
-        answers: ["Glass Tiger", "The Outfield", "Cutting Crew", "Night Ranger"],
-        correctAnswer: "Glass Tiger"
-    },
-    {
-        id: "music_4124",
-        category: "Music",
-        question: "Which group recorded 'Diamond Sun'?",
-        answers: ["Glass Tiger", "The Outfield", "Cutting Crew", "Mr. Mister"],
-        correctAnswer: "Glass Tiger"
-    },
-
-    {
-        id: "music_4125",
-        category: "Music",
-        question: "Which group recorded 'Dream Police'?",
-        answers: ["Cheap Trick", "The Cars", "The Knack", "Foreigner"],
-        correctAnswer: "Cheap Trick"
-    },
-    {
-        id: "music_4126",
-        category: "Music",
-        question: "Which group recorded 'Voices'?",
-        answers: ["Cheap Trick", "The Cars", "The Outfield", "The Fixx"],
-        correctAnswer: "Cheap Trick"
-    },
-    {
-        id: "music_4127",
-        category: "Music",
-        question: "Which group recorded 'If You Want My Love'?",
-        answers: ["Cheap Trick", "The Cars", "Foreigner", "REO Speedwagon"],
-        correctAnswer: "Cheap Trick"
-    },
-    {
-        id: "music_4128",
-        category: "Music",
-        question: "Which group recorded 'The Flame'?",
-        answers: ["Cheap Trick", "Foreigner", "Journey", "REO Speedwagon"],
-        correctAnswer: "Cheap Trick"
-    },
-    {
-        id: "music_4129",
-        category: "Music",
-        question: "Which group recorded 'Don't Be Cruel'?",
-        answers: ["Cheap Trick", "The Cars", "The Knack", "The Outfield"],
-        correctAnswer: "Cheap Trick"
-    },
-    {
-        id: "music_4130",
-        category: "Music",
-        question: "Which artist recorded 'You Better Run'?",
-        answers: ["Pat Benatar", "Joan Jett", "Kim Carnes", "Stevie Nicks"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_4131",
-        category: "Music",
-        question: "Which artist recorded 'Treat Me Right'?",
-        answers: ["Pat Benatar", "Joan Jett", "Bonnie Tyler", "Kim Carnes"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_4132",
-        category: "Music",
-        question: "Which artist recorded 'Little Too Late'?",
-        answers: ["Pat Benatar", "Joan Jett", "Stevie Nicks", "Kim Carnes"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_4133",
-        category: "Music",
-        question: "Which artist recorded 'Bad Reputation'?",
-        answers: ["Joan Jett", "Pat Benatar", "Lita Ford", "Suzi Quatro"],
-        correctAnswer: "Joan Jett"
-    },
-    {
-        id: "music_4134",
-        category: "Music",
-        question: "Which artist recorded 'Do You Wanna Touch Me (Oh Yeah)'?",
-        answers: ["Joan Jett", "Pat Benatar", "Lita Ford", "Kim Wilde"],
-        correctAnswer: "Joan Jett"
-    },
-    {
-        id: "music_4135",
-        category: "Music",
-        question: "Which group recorded 'I Love Rock 'n Roll'?",
-        answers: ["Joan Jett & the Blackhearts", "The Runaways", "Heart", "Blondie"],
-        correctAnswer: "Joan Jett & the Blackhearts"
-    },
-    {
-        id: "music_4136",
-        category: "Music",
-        question: "Which group recorded 'Crimson and Clover'?",
-        answers: ["Joan Jett & the Blackhearts", "The Runaways", "Heart", "The Pretenders"],
-        correctAnswer: "Joan Jett & the Blackhearts"
-    },
-    {
-        id: "music_4137",
-        category: "Music",
-        question: "Which group recorded 'I Hate Myself for Loving You'?",
-        answers: ["Joan Jett & the Blackhearts", "Heart", "The Pretenders", "The Runaways"],
-        correctAnswer: "Joan Jett & the Blackhearts"
-    },
-    {
-        id: "music_4138",
-        category: "Music",
-        question: "Which group recorded 'All You Zombies'?",
-        answers: ["The Hooters", "The Outfield", "The Fixx", "Glass Tiger"],
-        correctAnswer: "The Hooters"
-    },
-    {
-        id: "music_4139",
-        category: "Music",
-        question: "Which group recorded 'And We Danced'?",
-        answers: ["The Hooters", "The Outfield", "The Fixx", "Glass Tiger"],
-        correctAnswer: "The Hooters"
-    },
-    {
-        id: "music_4140",
-        category: "Music",
-        question: "Which group recorded 'Day by Day'?",
-        answers: ["The Hooters", "The Outfield", "The Fixx", "Crowded House"],
-        correctAnswer: "The Hooters"
-    },
-    {
-        id: "music_4141",
-        category: "Music",
-        question: "Which group recorded 'Johnny B'?",
-        answers: ["The Hooters", "The Outfield", "Glass Tiger", "The Fixx"],
-        correctAnswer: "The Hooters"
-    },
-    {
-        id: "music_4142",
-        category: "Music",
-        question: "Which group recorded 'Satellite'?",
-        answers: ["The Hooters", "The Outfield", "The Fixx", "Glass Tiger"],
-        correctAnswer: "The Hooters"
-    },
-    {
-        id: "music_4143",
-        category: "Music",
-        question: "Which group recorded 'Your Love'?",
-        answers: ["The Outfield", "The Hooters", "Glass Tiger", "The Fixx"],
-        correctAnswer: "The Outfield"
-    },
-    {
-        id: "music_4144",
-        category: "Music",
-        question: "Which group recorded 'All the Love in the World'?",
-        answers: ["The Outfield", "The Hooters", "Glass Tiger", "Cutting Crew"],
-        correctAnswer: "The Outfield"
-    },
-    {
-        id: "music_4145",
-        category: "Music",
-        question: "Which group recorded 'Since You've Been Gone'?",
-        answers: ["The Outfield", "The Hooters", "The Fixx", "Glass Tiger"],
-        correctAnswer: "The Outfield"
-    },
-    {
-        id: "music_4146",
-        category: "Music",
-        question: "Which group recorded 'Voices of Babylon'?",
-        answers: ["The Outfield", "The Fixx", "The Hooters", "Glass Tiger"],
-        correctAnswer: "The Outfield"
-    },
-    {
-        id: "music_4147",
-        category: "Music",
-        question: "Which group recorded 'Stand or Fall'?",
-        answers: ["The Fixx", "The Outfield", "The Hooters", "Men at Work"],
-        correctAnswer: "The Fixx"
-    },
-    {
-        id: "music_4148",
-        category: "Music",
-        question: "Which group recorded 'Red Skies'?",
-        answers: ["The Fixx", "The Outfield", "The Hooters", "Icehouse"],
-        correctAnswer: "The Fixx"
-    },
-    {
-        id: "music_4149",
-        category: "Music",
-        question: "Which group recorded 'Saved by Zero'?",
-        answers: ["The Fixx", "The Outfield", "The Hooters", "Mr. Mister"],
-        correctAnswer: "The Fixx"
-    },
-    {
-        id: "music_4150",
-        category: "Music",
-        question: "Which group recorded 'One Thing Leads to Another'?",
-        answers: ["The Fixx", "The Outfield", "The Hooters", "Men at Work"],
-        correctAnswer: "The Fixx"
-    },
-    {
-        id: "music_4151",
-        category: "Music",
-        question: "Which group recorded 'Are We Ourselves?'?",
-        answers: ["The Fixx", "The Outfield", "Icehouse", "The Hooters"],
-        correctAnswer: "The Fixx"
-    },
-    {
-        id: "music_4152",
-        category: "Music",
-        question: "Which group recorded 'Secret Separation'?",
-        answers: ["The Fixx", "The Outfield", "Mr. Mister", "Glass Tiger"],
-        correctAnswer: "The Fixx"
-    },
-    {
-        id: "music_4153",
-        category: "Music",
-        question: "Which group recorded 'Who Can It Be Now?'?",
-        answers: ["Men at Work", "INXS", "Icehouse", "Split Enz"],
-        correctAnswer: "Men at Work"
-    },
-    {
-        id: "music_4154",
-        category: "Music",
-        question: "Which group recorded 'Down Under'?",
-        answers: ["Men at Work", "INXS", "Icehouse", "Crowded House"],
-        correctAnswer: "Men at Work"
-    },
-    {
-        id: "music_4155",
-        category: "Music",
-        question: "Which group recorded 'Be Good Johnny'?",
-        answers: ["Men at Work", "INXS", "Icehouse", "Split Enz"],
-        correctAnswer: "Men at Work"
-    },
-    {
-        id: "music_4156",
-        category: "Music",
-        question: "Which group recorded 'Overkill'?",
-        answers: ["Men at Work", "INXS", "Icehouse", "The Fixx"],
-        correctAnswer: "Men at Work"
-    },
-    {
-        id: "music_4157",
-        category: "Music",
-        question: "Which group recorded 'It's a Mistake'?",
-        answers: ["Men at Work", "INXS", "Icehouse", "Midnight Oil"],
-        correctAnswer: "Men at Work"
-    },
-    {
-        id: "music_4158",
-        category: "Music",
-        question: "Which group recorded 'Electric Blue'?",
-        answers: ["Icehouse", "INXS", "Men at Work", "Midnight Oil"],
-        correctAnswer: "Icehouse"
-    },
-    {
-        id: "music_4159",
-        category: "Music",
-        question: "Which group recorded 'My Obsession'?",
-        answers: ["Icehouse", "INXS", "Men at Work", "The Church"],
-        correctAnswer: "Icehouse"
-    },
-    {
-        id: "music_4160",
-        category: "Music",
-        question: "Which group recorded 'The Power and the Passion'?",
-        answers: ["Midnight Oil", "INXS", "Icehouse", "Men at Work"],
-        correctAnswer: "Midnight Oil"
-    },
-    {
-        id: "music_4161",
-        category: "Music",
-        question: "Which group recorded 'Beds Are Burning'?",
-        answers: ["Midnight Oil", "INXS", "Icehouse", "Men at Work"],
-        correctAnswer: "Midnight Oil"
-    },
-    {
-        id: "music_4162",
-        category: "Music",
-        question: "Which group recorded 'The Dead Heart'?",
-        answers: ["Midnight Oil", "INXS", "Icehouse", "Crowded House"],
-        correctAnswer: "Midnight Oil"
-    },
-    {
-        id: "music_4163",
-        category: "Music",
-        question: "Which group recorded 'Mean to Me'?",
-        answers: ["Crowded House", "Split Enz", "Icehouse", "INXS"],
-        correctAnswer: "Crowded House"
-    },
-    {
-        id: "music_4164",
-        category: "Music",
-        question: "Which group recorded 'World Where You Live'?",
-        answers: ["Crowded House", "Split Enz", "Icehouse", "Men at Work"],
-        correctAnswer: "Crowded House"
-    },
-    {
-        id: "music_4165",
-        category: "Music",
-        question: "Which group recorded 'Something So Strong'?",
-        answers: ["Crowded House", "Split Enz", "Icehouse", "INXS"],
-        correctAnswer: "Crowded House"
-    },
-    {
-        id: "music_4166",
-        category: "Music",
-        question: "Which group recorded 'Better Be Home Soon'?",
-        answers: ["Crowded House", "Split Enz", "Icehouse", "Men at Work"],
-        correctAnswer: "Crowded House"
-    }
-
+    makeQuestion("music_4067", "Which group recorded 'Loaded'?", ["Deacon Blue", "Simple Minds", "Wet Wet Wet", "Del Amitri"], "Deacon Blue", "Medium"),
+    makeQuestion("music_4068", "Which duo recorded 'Letter from America'?", ["The Proclaimers", "Hue and Cry", "The Communards", "Erasure"], "The Proclaimers", "Easy"),
+    makeQuestion("music_4069", "Which duo recorded 'Sunshine on Leith'?", ["The Proclaimers", "Hue and Cry", "The Communards", "The Associates"], "The Proclaimers", "Easy"),
+    makeQuestion("music_4070", "Which duo recorded 'I'm on My Way'?", ["The Proclaimers", "Hue and Cry", "Go West", "The Communards"], "The Proclaimers", "Easy"),
+    makeQuestion("music_4071", "Which group recorded 'Speak Like a Child'?", ["The Style Council", "The Jam", "Prefab Sprout", "Aztec Camera"], "The Style Council", "Medium"),
+    makeQuestion("music_4072", "Which group recorded 'Long Hot Summer'?", ["The Style Council", "The Jam", "The Housemartins", "Everything but the Girl"], "The Style Council", "Easy"),
+    makeQuestion("music_4073", "Which group recorded 'You're the Best Thing'?", ["The Style Council", "Prefab Sprout", "The Jam", "Deacon Blue"], "The Style Council", "Easy"),
+    makeQuestion("music_4074", "Which group recorded 'Happy Hour'?", ["The Housemartins", "The Beautiful South", "The Style Council", "The Smiths"], "The Housemartins", "Easy"),
+    makeQuestion("music_4075", "Which group recorded 'Think for a Minute'?", ["The Housemartins", "The Beautiful South", "The Christians", "The Smiths"], "The Housemartins", "Medium"),
+    makeQuestion("music_4076", "Which group recorded 'Caravan of Love'?", ["The Housemartins", "The Beautiful South", "The Christians", "The Style Council"], "The Housemartins", "Easy"),
+    makeQuestion("music_4077", "Which group recorded 'Song for Whoever'?", ["The Beautiful South", "The Housemartins", "Deacon Blue", "The Christians"], "The Beautiful South", "Easy"),
+    makeQuestion("music_4078", "Which group recorded 'You Keep It All In'?", ["The Beautiful South", "The Housemartins", "Deacon Blue", "Prefab Sprout"], "The Beautiful South", "Medium"),
+    makeQuestion("music_4079", "Which duo recorded 'Each and Every One'?", ["Everything but the Girl", "Swing Out Sister", "The Communards", "Eurythmics"], "Everything but the Girl", "Medium"),
+    makeQuestion("music_4080", "Which duo recorded 'When All's Well'?", ["Everything but the Girl", "Swing Out Sister", "The Communards", "Hue and Cry"], "Everything but the Girl", "Hard"),
+    makeQuestion("music_4081", "Which duo recorded 'I Don't Want to Talk About It'?", ["Everything but the Girl", "Eurythmics", "Swing Out Sister", "The Communards"], "Everything but the Girl", "Easy"),
+    makeQuestion("music_4082", "Which group recorded 'Breakout'?", ["Swing Out Sister", "Everything but the Girl", "Five Star", "The Jets"], "Swing Out Sister", "Easy"),
+    makeQuestion("music_4083", "Which group recorded 'Surrender'?", ["Swing Out Sister", "Everything but the Girl", "The Blow Monkeys", "Curiosity Killed the Cat"], "Swing Out Sister", "Medium"),
+    makeQuestion("music_4084", "Which group recorded 'Twilight World'?", ["Swing Out Sister", "Everything but the Girl", "Prefab Sprout", "The Blow Monkeys"], "Swing Out Sister", "Medium"),
+    makeQuestion("music_4085", "Which group recorded 'Fooled by a Smile'?", ["Swing Out Sister", "Everything but the Girl", "The Blow Monkeys", "Five Star"], "Swing Out Sister", "Hard"),
+    makeQuestion("music_4086", "Which group recorded '(Feels Like) Heaven'?", ["Fiction Factory", "The Lotus Eaters", "China Crisis", "The Blue Nile"], "Fiction Factory", "Easy"),
+    makeQuestion("music_4087", "Which group recorded 'That's Entertainment'?", ["The Jam", "The Style Council", "The Clash", "The Specials"], "The Jam", "Easy"),
+    makeQuestion("music_4088", "Which artist recorded 'Into Tomorrow'?", ["Paul Weller", "Elvis Costello", "Joe Jackson", "Nick Lowe"], "Paul Weller", "Hard"),
+    makeQuestion("music_4089", "Which group recorded 'The Return of the Los Palmas 7'?", ["Madness", "The Specials", "Bad Manners", "The Beat"], "Madness", "Easy"),
+    makeQuestion("music_4090", "Which group recorded 'The Sun and the Rain'?", ["Madness", "The Specials", "The Beat", "Bad Manners"], "Madness", "Medium"),
+    makeQuestion("music_4091", "Which group recorded 'Drowning'?", ["The Beat", "The Specials", "The Selecter", "Madness"], "The Beat", "Medium"),
+    makeQuestion("music_4092", "Which group recorded 'Ne-Ne Na-Na Na-Na Nu-Nu'?", ["Bad Manners", "Madness", "The Beat", "The Specials"], "Bad Manners", "Medium"),
+    makeQuestion("music_4093", "Which group recorded 'Food for Thought'?", ["UB40", "The Specials", "The Beat", "Madness"], "UB40", "Easy"),
+    makeQuestion("music_4094", "Which group recorded 'My Way of Thinking'?", ["UB40", "The Beat", "The Specials", "Bad Manners"], "UB40", "Medium"),
+    makeQuestion("music_4095", "Which group recorded 'The Earth Dies Screaming'?", ["UB40", "The Specials", "The Beat", "Madness"], "UB40", "Medium"),
+    makeQuestion("music_4096", "Which group recorded 'One in Ten'?", ["UB40", "The Specials", "The Beat", "The Selecter"], "UB40", "Easy"),
+    makeQuestion("music_4097", "Which group recorded 'Many Rivers to Cross'?", ["UB40", "The Beat", "Madness", "Bad Manners"], "UB40", "Easy"),
+    makeQuestion("music_4098", "Which group recorded 'Cherry Oh Baby'?", ["UB40", "The Specials", "The Beat", "Madness"], "UB40", "Easy"),
+    makeQuestion("music_4099", "Which group recorded 'If It Happens Again'?", ["UB40", "The Beat", "The Specials", "Bad Manners"], "UB40", "Medium"),
+    makeQuestion("music_4100", "Which group recorded 'Show Me'?", ["Dexys Midnight Runners", "The Teardrop Explodes", "The Beat", "The Style Council"], "Dexys Midnight Runners", "Hard"),
+    makeQuestion("music_4101", "Which group recorded 'Liars A to E'?", ["Dexys Midnight Runners", "The Teardrop Explodes", "The Beat", "The Specials"], "Dexys Midnight Runners", "Hard"),
+    makeQuestion("music_4102", "Which group recorded 'Don't Let Him Go'?", ["REO Speedwagon", "Journey", "Foreigner", "Survivor"], "REO Speedwagon", "Medium"),
+    makeQuestion("music_4103", "Which group recorded 'Keep the Fire Burnin''?", ["REO Speedwagon", "Journey", "Foreigner", "Boston"], "REO Speedwagon", "Hard"),
+    makeQuestion("music_4104", "Which group recorded 'One Lonely Night'?", ["REO Speedwagon", "Journey", "Survivor", "Foreigner"], "REO Speedwagon", "Hard"),
+    makeQuestion("music_4105", "Which group recorded 'In My Dreams'?", ["REO Speedwagon", "Journey", "Boston", "Foreigner"], "REO Speedwagon", "Medium"),
+    makeQuestion("music_4106", "Which group recorded 'Burning Heart'?", ["Survivor", "Journey", "Foreigner", "REO Speedwagon"], "Survivor", "Easy"),
+    makeQuestion("music_4107", "Which group recorded 'High on You'?", ["Survivor", "Journey", "Foreigner", "Toto"], "Survivor", "Medium"),
+    makeQuestion("music_4108", "Which group recorded 'The Search Is Over'?", ["Survivor", "Journey", "REO Speedwagon", "Foreigner"], "Survivor", "Easy"),
+    makeQuestion("music_4109", "Which group recorded 'Is This Love'?", ["Survivor", "Foreigner", "Journey", "REO Speedwagon"], "Survivor", "Medium"),
+    makeQuestion("music_4110", "Which group recorded 'I'll Be Over You'?", ["Toto", "Journey", "Boston", "Foreigner"], "Toto", "Easy"),
+    makeQuestion("music_4111", "Which group recorded 'Amanda'?", ["Boston", "Journey", "Foreigner", "REO Speedwagon"], "Boston", "Easy"),
+    makeQuestion("music_4112", "Which group recorded 'We're Ready'?", ["Boston", "Journey", "Foreigner", "Survivor"], "Boston", "Medium"),
+    makeQuestion("music_4113", "Which group recorded 'Can'tcha Say (You Believe in Me)'?", ["Boston", "Journey", "REO Speedwagon", "Foreigner"], "Boston", "Hard"),
+    makeQuestion("music_4114", "Which group recorded 'Sister Christian'?", ["Night Ranger", "Survivor", "Journey", "Foreigner"], "Night Ranger", "Easy"),
+    makeQuestion("music_4115", "Which group recorded 'When You Close Your Eyes'?", ["Night Ranger", "Journey", "Survivor", "REO Speedwagon"], "Night Ranger", "Medium"),
+    makeQuestion("music_4116", "Which group recorded 'Sentimental Street'?", ["Night Ranger", "Journey", "Boston", "Foreigner"], "Night Ranger", "Hard"),
+    makeQuestion("music_4117", "Which group recorded 'I've Been in Love Before'?", ["Cutting Crew", "Mr. Mister", "The Outfield", "Glass Tiger"], "Cutting Crew", "Medium"),
+    makeQuestion("music_4118", "Which group recorded 'One for the Mockingbird'?", ["Cutting Crew", "The Outfield", "Mr. Mister", "Glass Tiger"], "Cutting Crew", "Hard"),
+    makeQuestion("music_4119", "Which artist recorded 'Naughty Naughty'?", ["John Parr", "John Waite", "Robert Palmer", "Billy Squier"], "John Parr", "Medium"),
+    makeQuestion("music_4120", "Which group recorded 'All I Need Is a Miracle'?", ["Mike + The Mechanics", "Genesis", "Mr. Mister", "The Outfield"], "Mike + The Mechanics", "Easy"),
+    makeQuestion("music_4121", "Which group recorded 'Nobody's Perfect'?", ["Mike + The Mechanics", "Genesis", "Mr. Mister", "Glass Tiger"], "Mike + The Mechanics", "Medium"),
+    makeQuestion("music_4122", "Which group recorded 'Don't Forget Me (When I'm Gone)'?", ["Glass Tiger", "The Outfield", "Cutting Crew", "Mr. Mister"], "Glass Tiger", "Easy"),
+    makeQuestion("music_4123", "Which group recorded 'Someday'?", ["Glass Tiger", "The Outfield", "Cutting Crew", "Night Ranger"], "Glass Tiger", "Medium"),
+    makeQuestion("music_4124", "Which group recorded 'Diamond Sun'?", ["Glass Tiger", "The Outfield", "Cutting Crew", "Mr. Mister"], "Glass Tiger", "Hard"),
+    makeQuestion("music_4125", "Which group recorded 'Dream Police'?", ["Cheap Trick", "The Cars", "The Knack", "Foreigner"], "Cheap Trick", "Medium"),
+    makeQuestion("music_4126", "Which group recorded 'Voices'?", ["Cheap Trick", "The Cars", "The Outfield", "The Fixx"], "Cheap Trick", "Hard"),
+    makeQuestion("music_4127", "Which group recorded 'If You Want My Love'?", ["Cheap Trick", "The Cars", "Foreigner", "REO Speedwagon"], "Cheap Trick", "Medium"),
+    makeQuestion("music_4128", "Which group recorded 'The Flame'?", ["Cheap Trick", "Foreigner", "Journey", "REO Speedwagon"], "Cheap Trick", "Easy"),
+    makeQuestion("music_4129", "Which group recorded 'Don't Be Cruel'?", ["Cheap Trick", "The Cars", "The Knack", "The Outfield"], "Cheap Trick", "Hard"),
+    makeQuestion("music_4130", "Which artist recorded 'You Better Run'?", ["Pat Benatar", "Joan Jett", "Kim Carnes", "Stevie Nicks"], "Pat Benatar", "Medium"),
+    makeQuestion("music_4131", "Which artist recorded 'Treat Me Right'?", ["Pat Benatar", "Joan Jett", "Bonnie Tyler", "Kim Carnes"], "Pat Benatar", "Medium"),
+    makeQuestion("music_4132", "Which artist recorded 'Little Too Late'?", ["Pat Benatar", "Joan Jett", "Stevie Nicks", "Kim Carnes"], "Pat Benatar", "Medium"),
+    makeQuestion("music_4133", "Which artist recorded 'Bad Reputation'?", ["Joan Jett", "Pat Benatar", "Lita Ford", "Suzi Quatro"], "Joan Jett", "Easy"),
+    makeQuestion("music_4134", "Which artist recorded 'Do You Wanna Touch Me (Oh Yeah)'?", ["Joan Jett", "Pat Benatar", "Lita Ford", "Kim Wilde"], "Joan Jett", "Medium"),
+    makeQuestion("music_4135", "Which group recorded 'I Love Rock 'n Roll'?", ["Joan Jett & the Blackhearts", "The Runaways", "Heart", "Blondie"], "Joan Jett & the Blackhearts", "Easy"),
+    makeQuestion("music_4136", "Which group recorded 'Crimson and Clover'?", ["Joan Jett & the Blackhearts", "The Runaways", "Heart", "The Pretenders"], "Joan Jett & the Blackhearts", "Easy"),
+    makeQuestion("music_4137", "Which group recorded 'I Hate Myself for Loving You'?", ["Joan Jett & the Blackhearts", "Heart", "The Pretenders", "The Runaways"], "Joan Jett & the Blackhearts", "Easy"),
+    makeQuestion("music_4138", "Which group recorded 'All You Zombies'?", ["The Hooters", "The Outfield", "The Fixx", "Glass Tiger"], "The Hooters", "Medium"),
+    makeQuestion("music_4139", "Which group recorded 'And We Danced'?", ["The Hooters", "The Outfield", "The Fixx", "Glass Tiger"], "The Hooters", "Medium"),
+    makeQuestion("music_4140", "Which group recorded 'Day by Day'?", ["The Hooters", "The Outfield", "The Fixx", "Crowded House"], "The Hooters", "Medium"),
+    makeQuestion("music_4141", "Which group recorded 'Johnny B'?", ["The Hooters", "The Outfield", "Glass Tiger", "The Fixx"], "The Hooters", "Hard"),
+    makeQuestion("music_4142", "Which group recorded 'Satellite'?", ["The Hooters", "The Outfield", "The Fixx", "Glass Tiger"], "The Hooters", "Medium"),
+    makeQuestion("music_4143", "Which group recorded 'Your Love'?", ["The Outfield", "The Hooters", "Glass Tiger", "The Fixx"], "The Outfield", "Easy"),
+    makeQuestion("music_4144", "Which group recorded 'All the Love in the World'?", ["The Outfield", "The Hooters", "Glass Tiger", "Cutting Crew"], "The Outfield", "Hard"),
+    makeQuestion("music_4145", "Which group recorded 'Since You've Been Gone'?", ["The Outfield", "The Hooters", "The Fixx", "Glass Tiger"], "The Outfield", "Medium"),
+    makeQuestion("music_4146", "Which group recorded 'Voices of Babylon'?", ["The Outfield", "The Fixx", "The Hooters", "Glass Tiger"], "The Outfield", "Medium"),
+    makeQuestion("music_4147", "Which group recorded 'Stand or Fall'?", ["The Fixx", "The Outfield", "The Hooters", "Men at Work"], "The Fixx", "Medium"),
+    makeQuestion("music_4148", "Which group recorded 'Red Skies'?", ["The Fixx", "The Outfield", "The Hooters", "Icehouse"], "The Fixx", "Medium"),
+    makeQuestion("music_4149", "Which group recorded 'Saved by Zero'?", ["The Fixx", "The Outfield", "The Hooters", "Mr. Mister"], "The Fixx", "Medium"),
+    makeQuestion("music_4150", "Which group recorded 'One Thing Leads to Another'?", ["The Fixx", "The Outfield", "The Hooters", "Men at Work"], "The Fixx", "Easy"),
+    makeQuestion("music_4151", "Which group recorded 'Are We Ourselves?'?", ["The Fixx", "The Outfield", "Icehouse", "The Hooters"], "The Fixx", "Hard"),
+    makeQuestion("music_4152", "Which group recorded 'Secret Separation'?", ["The Fixx", "The Outfield", "Mr. Mister", "Glass Tiger"], "The Fixx", "Hard"),
+    makeQuestion("music_4153", "Which group recorded 'Who Can It Be Now?'?", ["Men at Work", "INXS", "Icehouse", "Split Enz"], "Men at Work", "Easy"),
+    makeQuestion("music_4154", "Which group recorded 'Down Under'?", ["Men at Work", "INXS", "Icehouse", "Crowded House"], "Men at Work", "Easy"),
+    makeQuestion("music_4155", "Which group recorded 'Be Good Johnny'?", ["Men at Work", "INXS", "Icehouse", "Split Enz"], "Men at Work", "Medium"),
+    makeQuestion("music_4156", "Which group recorded 'Overkill'?", ["Men at Work", "INXS", "Icehouse", "The Fixx"], "Men at Work", "Easy"),
+    makeQuestion("music_4157", "Which group recorded 'It's a Mistake'?", ["Men at Work", "INXS", "Icehouse", "Midnight Oil"], "Men at Work", "Easy"),
+    makeQuestion("music_4158", "Which group recorded 'Electric Blue'?", ["Icehouse", "INXS", "Men at Work", "Midnight Oil"], "Icehouse", "Easy"),
+    makeQuestion("music_4159", "Which group recorded 'My Obsession'?", ["Icehouse", "INXS", "Men at Work", "The Church"], "Icehouse", "Medium"),
+    makeQuestion("music_4160", "Which group recorded 'Power and the Passion'?", ["Midnight Oil", "INXS", "Icehouse", "Men at Work"], "Midnight Oil", "Medium"),
+    makeQuestion("music_4161", "Which group recorded 'Beds Are Burning'?", ["Midnight Oil", "INXS", "Icehouse", "Men at Work"], "Midnight Oil", "Easy"),
+    makeQuestion("music_4162", "Which group recorded 'The Dead Heart'?", ["Midnight Oil", "INXS", "Icehouse", "Crowded House"], "Midnight Oil", "Medium"),
+    makeQuestion("music_4163", "Which group recorded 'Mean to Me'?", ["Crowded House", "Split Enz", "Icehouse", "INXS"], "Crowded House", "Medium"),
+    makeQuestion("music_4164", "Which group recorded 'World Where You Live'?", ["Crowded House", "Split Enz", "Icehouse", "Men at Work"], "Crowded House", "Medium"),
+    makeQuestion("music_4165", "Which group recorded 'Something So Strong'?", ["Crowded House", "Split Enz", "Icehouse", "INXS"], "Crowded House", "Easy"),
+    makeQuestion("music_4166", "Which group recorded 'Better Be Home Soon'?", ["Crowded House", "Split Enz", "Icehouse", "Men at Work"], "Crowded House", "Easy"),
 ];
 
 module.exports = quizPack60;
