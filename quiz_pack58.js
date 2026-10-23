@@ -1,795 +1,269 @@
 // quiz_pack58.js
-// PuzzlePilot Big Quiz
-// Music Pack 58
-// 100 questions
-// IDs: music_3867 - music_3966
+// PuzzlePilot Bigggggg Quiz - Music Pack 58
+// 100 questions, IDs music_3867 to music_3966.
+// Question-specific recording and artist tags generated at runtime.
+
+const artistTags = {
+    "Fleetwood Mac": ["rock", "soft rock", "pop rock", "british american", "bands", "stevie nicks", "lindsey buckingham", "christine mcvie"],
+    "Don Henley": ["rock", "soft rock", "pop rock", "american", "male singers", "solo artists", "eagles", "singer-songwriters", "drummers"],
+    "Belinda Carlisle": ["pop rock", "pop", "american", "female singers", "solo artists", "the go-gos"],
+    "The Bangles": ["pop rock", "jangle pop", "american", "female bands", "bands", "susanna hoffs", "vicki peterson"],
+    "Roxette": ["pop rock", "swedish", "duos", "marie fredriksson", "per gessle"],
+    "Simply Red": ["pop soul", "blue-eyed soul", "british", "bands", "mick hucknall"],
+    "Tears for Fears": ["new wave", "synth-pop", "pop rock", "british", "duos", "roland orzabal", "curt smith"],
+    "U2": ["rock", "alternative rock", "irish", "bands", "bono", "the edge"],
+    "R.E.M.": ["alternative rock", "college rock", "american", "bands", "michael stipe", "peter buck"],
+    "The Human League": ["synth-pop", "new wave", "british", "bands", "phil oakey", "susan ann sulley", "joanne catherall"],
+    "Simple Minds": ["new wave", "rock", "scottish", "british", "bands", "jim kerr", "charlie burchill"],
+    "Eurythmics": ["synth-pop", "new wave", "pop rock", "british", "duos", "annie lennox", "dave stewart"],
+    "Talking Heads": ["new wave", "art rock", "american", "bands", "david byrne", "tina weymouth"],
+    "The Cars": ["new wave", "pop rock", "american", "bands", "ric ocasek", "benjamin orr"],
+    "Duran Duran": ["new romantic", "new wave", "synth-pop", "british", "bands", "simon le bon", "nick rhodes"],
+    "The Police": ["new wave", "rock", "british", "bands", "sting", "andy summers", "stewart copeland"],
+    "Pretenders": ["new wave", "rock", "british american", "bands", "chrissie hynde"],
+    "Blondie": ["new wave", "pop rock", "american", "bands", "debbie harry", "chris stein"],
+    "INXS": ["rock", "new wave", "australian", "bands", "michael hutchence"],
+    "The Smiths": ["indie rock", "alternative rock", "british", "bands", "morrissey", "johnny marr", "manchester"],
+    "New Order": ["post-punk", "synth-pop", "new wave", "british", "bands", "bernard sumner", "peter hook", "manchester"],
+    "Erasure": ["synth-pop", "dance-pop", "british", "duos", "andy bell", "vince clarke"],
+    "Pet Shop Boys": ["synth-pop", "dance-pop", "british", "duos", "neil tennant", "chris lowe"],
+    "ABC": ["new wave", "sophisti-pop", "blue-eyed soul", "british", "bands", "martin fry"],
+    "Culture Club": ["new romantic", "pop", "soul", "british", "bands", "boy george"],
+    "Billy Ocean": ["soul", "pop", "rhythm and blues", "british", "male singers", "solo artists", "caribbean-born"],
+    "Bananarama": ["pop", "dance-pop", "british", "girl groups", "keren woodward", "sara dallin", "siobhan fahey"],
+    "The Pointer Sisters": ["pop", "soul", "rhythm and blues", "american", "girl groups", "sibling groups"],
+};
+
+const recordingTags = {
+    "music_3867": [1979, "tusk album", "1979 singles", "usc marching band", "lindsey buckingham songwriter"],
+    "music_3868": [1979, "tusk album", "1979 us singles", "1980 uk singles", "stevie nicks songwriter", "soft rock"],
+    "music_3869": [1982, "mirage album", "1982 singles", "stevie nicks songwriter", "soft rock"],
+    "music_3870": [1982, "i cant stand still album", "1982 singles", "media criticism songs"],
+    "music_3871": [1984, "building the perfect beast album", "1984 singles", "mike campbell co-writer", "nostalgia songs"],
+    "music_3872": [1985, "building the perfect beast album", "1985 singles", "dance-rock"],
+    "music_3873": [1985, "building the perfect beast album", "1985 singles", "rock ballads"],
+    "music_3874": [1985, "building the perfect beast album", "1985 singles", "los angeles songs"],
+    "music_3875": [1989, "the end of the innocence album", "1989 singles", "bruce hornsby co-writer", "piano rock"],
+    "music_3876": [1989, "the end of the innocence album", "1989 singles", "soft rock"],
+    "music_3877": [1988, "heaven on earth album", "1987 album tracks", "1988 singles", "diane warren songwriter"],
+    "music_3878": [1984, "all over the place album", "1984 singles", "jangle pop"],
+    "music_3879": [1986, "different light album", "1986 singles", "cover versions", "jules shear original"],
+    "music_3880": [1987, "different light album", "1986 album tracks", "1987 singles", "pop rock"],
+    "music_3881": [1987, "less than zero soundtrack", "1987 us singles", "1988 uk singles", "film songs", "cover versions", "simon and garfunkel original"],
+    "music_3882": [1988, "everything album", "1988 singles", "pop rock"],
+    "music_3883": [1988, "look sharp album", "1988 swedish singles", "1989 international singles", "pop rock"],
+    "music_3884": [1988, "look sharp album", "1988 swedish singles", "1989 international singles", "power ballads"],
+    "music_3885": [1989, "look sharp album", "1988 album tracks", "1989 singles", "1990 chart success", "pop rock"],
+    "music_3886": [1989, "a new flame album", "1989 singles", "cover versions", "harold melvin and the blue notes original", "soul ballads"],
+    "music_3887": [1989, "a new flame album", "1989 singles", "barry white original", "cover versions", "soul pop"],
+    "music_3888": [1985, "songs from the big chair album", "1985 singles", "piano ballads"],
+    "music_3889": [1989, "the seeds of love album", "1989 singles", "psychedelic pop"],
+    "music_3890": [1980, "boy album", "1980 singles", "post-punk"],
+    "music_3891": [1981, "october album", "1981 singles", "rock singles"],
+    "music_3892": [1983, "war album", "1983 singles", "political songs"],
+    "music_3893": [1983, "war album", "1983 singles", "political songs", "northern ireland conflict"],
+    "music_3894": [1985, "the unforgettable fire album", "1984 album tracks", "1985 singles", "album title tracks"],
+    "music_3895": [1987, "the joshua tree album", "1987 singles", "us number one singles"],
+    "music_3896": [1987, "the joshua tree album", "1987 singles", "gospel influences", "us number one singles"],
+    "music_3897": [1981, "1981 independent singles", "1983 murmur album rerecording", "1983 singles", "college rock"],
+    "music_3898": [1984, "reckoning album", "1984 singles", "college rock"],
+    "music_3899": [1985, "fables of the reconstruction album", "1985 singles", "alternative rock"],
+    "music_3900": [1986, "lifes rich pageant album", "1986 singles", "alternative rock"],
+    "music_3901": [1987, "document album", "1987 singles", "alternative rock"],
+    "music_3902": [1987, "document album", "1987 singles", "alternative rock", "rapid fire lyrics"],
+    "music_3903": [1988, "green album", "1988 singles", "1989 international charts", "alternative rock"],
+    "music_3904": [1983, "fascination ep", "1983 singles", "synth-pop"],
+    "music_3905": [1982, "new gold dream 81 82 83 84 album", "1982 singles", "new wave"],
+    "music_3906": [1984, "sparkle in the rain album", "1984 singles", "new wave"],
+    "music_3907": [1983, "touch album", "1983 singles", "new wave"],
+    "music_3908": [1984, "1984 for the love of big brother soundtrack", "1984 singles", "film songs", "george orwell nineteen eighty four"],
+    "music_3909": [1986, "revenge album", "1986 singles", "pop rock"],
+    "music_3910": [1981, "remain in light album", "1980 album tracks", "1981 singles", "brian eno production"],
+    "music_3911": [1983, "speaking in tongues album", "1983 singles", "dance-rock"],
+    "music_3912": [1983, "speaking in tongues album", "1983 singles", "love songs", "naive melody"],
+    "music_3913": [1985, "little creatures album", "1985 singles", "pop rock"],
+    "music_3914": [1985, "little creatures album", "1985 singles", "pop rock"],
+    "music_3915": [1986, "true stories album", "1986 singles", "film songs"],
+    "music_3916": [1988, "naked album", "1988 singles", "environmental themes", "alternative rock"],
+    "music_3917": [1980, "panorama album", "1980 singles", "new wave"],
+    "music_3918": [1981, "shake it up album", "1981 singles", "album title tracks"],
+    "music_3919": [1982, "shake it up album", "1982 singles", "pop rock"],
+    "music_3920": [1984, "heartbeat city album", "1984 singles", "mtv music videos"],
+    "music_3921": [1984, "heartbeat city album", "1984 singles", "pop rock"],
+    "music_3922": [1984, "heartbeat city album", "1984 singles", "power ballads", "benjamin orr lead vocals"],
+    "music_3923": [1984, "heartbeat city album", "1984 us singles", "1985 uk singles", "andy warhol music video"],
+    "music_3924": [1981, "duran duran debut album", "1981 singles", "new romantic"],
+    "music_3925": [1981, "duran duran debut album", "1981 singles", "new romantic"],
+    "music_3926": [1981, "1981 original single", "1982 rio album remake", "new romantic"],
+    "music_3927": [1984, "arena album", "1984 singles", "studio song on live album"],
+    "music_3928": [1986, "notorious album", "1986 singles", "nile rodgers production", "funk rock"],
+    "music_3929": [1980, "zenyatta mondatta album", "1980 singles", "new wave"],
+    "music_3930": [1978, "pretenders band members", "frontwomen", "chrissie hynde lead singer", "british rock history", "1978 band formation"],
+    "music_3931": [1980, "pretenders ii album", "1980 singles", "1981 album release", "new wave"],
+    "music_3932": [1981, "pretenders ii album", "1981 singles", "new wave"],
+    "music_3933": [1982, "learning to crawl album", "1982 singles", "1984 album release", "new wave"],
+    "music_3934": [1983, "learning to crawl album", "1983 us singles", "1984 uk singles", "new wave"],
+    "music_3935": [1986, "get close album", "1986 singles", "pop rock"],
+    "music_3936": [1987, "get close album", "1986 album tracks", "1987 singles", "pop rock"],
+    "music_3937": [1980, "american gigolo soundtrack", "1980 singles", "film songs", "giorgio moroder production", "us number one singles"],
+    "music_3938": [1986, "listen like thieves album", "1985 album tracks", "1986 singles", "album title tracks"],
+    "music_3939": [1990, "x album", "1990 singles", "harmonica riffs", "alternative rock"],
+    "music_3940": [1983, "1983 singles", "1984 the smiths debut album", "indie rock"],
+    "music_3941": [1984, "the smiths debut album", "1984 singles", "indie rock"],
+    "music_3942": [1984, "hatful of hollow compilation", "1984 singles", "indie rock"],
+    "music_3943": [1984, "hatful of hollow compilation", "1984 singles", "indie rock"],
+    "music_3944": [1984, "1984 b side original", "1985 singles", "meat is murder us edition", "hatful of hollow compilation"],
+    "music_3945": [1985, "the queen is dead album", "1985 singles", "1986 album release", "indie rock"],
+    "music_3946": [1981, "1981 singles", "post joy division", "post-punk"],
+    "music_3947": [1982, "1982 singles", "synth-pop", "dance-rock"],
+    "music_3948": [1983, "1983 singles", "arthur baker production", "electro"],
+    "music_3949": [1984, "1984 singles", "dance-rock"],
+    "music_3950": [1985, "low life album", "1985 singles", "jonathan demme music video"],
+    "music_3951": [1987, "the circus album", "1987 singles", "album title tracks"],
+    "music_3952": [1988, "actually album", "1987 album tracks", "1988 singles", "uk number one singles"],
+    "music_3953": [1987, "alphabet city album", "1987 singles", "sophisti-pop"],
+    "music_3954": [1982, "kissing to be clever album", "1982 uk singles", "1983 us singles", "new romantic"],
+    "music_3955": [1984, "suddenly album", "1984 singles", "1985 international success", "us number one singles"],
+    "music_3956": [1984, "suddenly album", "1984 singles", "dance-pop"],
+    "music_3957": [1985, "suddenly album", "1984 album tracks", "1985 singles", "soul ballads"],
+    "music_3958": [1986, "love zone album", "1986 singles", "jewel of the nile film", "film songs"],
+    "music_3959": [1986, "love zone album", "1986 singles", "soul ballads", "us number one singles"],
+    "music_3960": [1982, "deep sea skiving album", "1982 singles", "1983 album release", "pop"],
+    "music_3961": [1983, "bananarama album", "1983 singles", "1984 album release", "pop"],
+    "music_3962": [1984, "bananarama album", "1984 singles", "robert de niro reference", "pop"],
+    "music_3963": [1987, "wow album", "1987 singles", "stock aitken waterman production", "dance-pop"],
+    "music_3964": [1980, "special things album", "1980 singles", "rhythm and blues"],
+    "music_3965": [1981, "black and white album", "1981 singles", "soft rock", "soul"],
+    "music_3966": [1984, "break out album", "1984 singles", "synth-funk"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const performer = artistTags[correctAnswer] || (id === "music_3930" ? artistTags["Pretenders"] : null);
+    const release = recordingTags[id];
+    if (!performer || !release) throw new Error(`Missing tags for ${id}`);
+    const title = question.match(/'(.+)'/);
+    if (!title && id !== "music_3930") throw new Error(`Missing song title for ${id}`);
+
+    const year = release[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", decade, `${decade} music`,
+            ...(title ? ["songs", "recordings", `${year} releases`, title[1].toLowerCase()]
+                     : ["music history", "band members", "lead singers"]),
+            correctAnswer.toLowerCase(), ...performer, ...release.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack58 = [
-
-    // FLEETWOOD MAC
-
-    {
-        id: "music_3867",
-        category: "Music",
-        question: "Which group recorded 'Tusk'?",
-        answers: ["Fleetwood Mac", "Eagles", "Supertramp", "Dire Straits"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_3868",
-        category: "Music",
-        question: "Which group recorded 'Sara'?",
-        answers: ["Fleetwood Mac", "Eagles", "Heart", "Dire Straits"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_3869",
-        category: "Music",
-        question: "Which group recorded 'Gypsy'?",
-        answers: ["Fleetwood Mac", "Heart", "Pretenders", "Blondie"],
-        correctAnswer: "Fleetwood Mac"
-    },
-
-    // DON HENLEY
-
-    {
-        id: "music_3870",
-        category: "Music",
-        question: "Which artist recorded 'Dirty Laundry'?",
-        answers: ["Don Henley", "Bryan Adams", "John Mellencamp", "Bruce Springsteen"],
-        correctAnswer: "Don Henley"
-    },
-    {
-        id: "music_3871",
-        category: "Music",
-        question: "Which artist recorded 'The Boys of Summer'?",
-        answers: ["Don Henley", "Bryan Adams", "John Mellencamp", "Bruce Springsteen"],
-        correctAnswer: "Don Henley"
-    },
-    {
-        id: "music_3872",
-        category: "Music",
-        question: "Which artist recorded 'All She Wants to Do Is Dance'?",
-        answers: ["Don Henley", "Bryan Adams", "John Mellencamp", "Robert Palmer"],
-        correctAnswer: "Don Henley"
-    },
-    {
-        id: "music_3873",
-        category: "Music",
-        question: "Which artist recorded 'Not Enough Love in the World'?",
-        answers: ["Don Henley", "Bryan Adams", "Richard Marx", "John Mellencamp"],
-        correctAnswer: "Don Henley"
-    },
-    {
-        id: "music_3874",
-        category: "Music",
-        question: "Which artist recorded 'Sunset Grill'?",
-        answers: ["Don Henley", "Bruce Springsteen", "Bryan Adams", "John Mellencamp"],
-        correctAnswer: "Don Henley"
-    },
-    {
-        id: "music_3875",
-        category: "Music",
-        question: "Which artist recorded 'The End of the Innocence'?",
-        answers: ["Don Henley", "Bruce Springsteen", "Richard Marx", "Bryan Adams"],
-        correctAnswer: "Don Henley"
-    },
-    {
-        id: "music_3876",
-        category: "Music",
-        question: "Which artist recorded 'The Last Worthless Evening'?",
-        answers: ["Don Henley", "Richard Marx", "Bryan Adams", "John Mellencamp"],
-        correctAnswer: "Don Henley"
-    },
-
-    // BELINDA CARLISLE
-
-    {
-        id: "music_3877",
-        category: "Music",
-        question: "Which artist recorded 'World Without You'?",
-        answers: ["Belinda Carlisle", "Kim Wilde", "Cyndi Lauper", "Taylor Dayne"],
-        correctAnswer: "Belinda Carlisle"
-    },
-
-    // THE BANGLES
-
-    {
-        id: "music_3878",
-        category: "Music",
-        question: "Which group recorded 'Hero Takes a Fall'?",
-        answers: ["The Bangles", "Bananarama", "The Go-Go's", "Pretenders"],
-        correctAnswer: "The Bangles"
-    },
-    {
-        id: "music_3879",
-        category: "Music",
-        question: "Which group recorded 'If She Knew What She Wants'?",
-        answers: ["The Bangles", "Bananarama", "The Go-Go's", "Pretenders"],
-        correctAnswer: "The Bangles"
-    },
-    {
-        id: "music_3880",
-        category: "Music",
-        question: "Which group recorded 'Walking Down Your Street'?",
-        answers: ["The Bangles", "Bananarama", "The Go-Go's", "Pretenders"],
-        correctAnswer: "The Bangles"
-    },
-    {
-        id: "music_3881",
-        category: "Music",
-        question: "Which group recorded 'Hazy Shade of Winter'?",
-        answers: ["The Bangles", "Bananarama", "The Go-Go's", "Pretenders"],
-        correctAnswer: "The Bangles"
-    },
-    {
-        id: "music_3882",
-        category: "Music",
-        question: "Which group recorded 'In Your Room'?",
-        answers: ["The Bangles", "Bananarama", "The Go-Go's", "Pretenders"],
-        correctAnswer: "The Bangles"
-    },
-
-    // ROXETTE
-
-    {
-        id: "music_3883",
-        category: "Music",
-        question: "Which duo recorded 'Dressed for Success'?",
-        answers: ["Roxette", "Eurythmics", "Erasure", "Dollar"],
-        correctAnswer: "Roxette"
-    },
-    {
-        id: "music_3884",
-        category: "Music",
-        question: "Which duo recorded 'Listen to Your Heart'?",
-        answers: ["Roxette", "Eurythmics", "Erasure", "Dollar"],
-        correctAnswer: "Roxette"
-    },
-    {
-        id: "music_3885",
-        category: "Music",
-        question: "Which duo recorded 'Dangerous'?",
-        answers: ["Roxette", "Eurythmics", "Erasure", "Dollar"],
-        correctAnswer: "Roxette"
-    },
-
-    // SIMPLY RED
-
-    {
-        id: "music_3886",
-        category: "Music",
-        question: "Which group recorded 'If You Don't Know Me by Now'?",
-        answers: ["Simply Red", "Level 42", "Wet Wet Wet", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_3887",
-        category: "Music",
-        question: "Which group recorded 'It's Only Love'?",
-        answers: ["Simply Red", "Level 42", "Wet Wet Wet", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-
-    // TEARS FOR FEARS
-
-    {
-        id: "music_3888",
-        category: "Music",
-        question: "Which group recorded 'I Believe'?",
-        answers: ["Tears for Fears", "Simple Minds", "Talk Talk", "The Human League"],
-        correctAnswer: "Tears for Fears"
-    },
-    {
-        id: "music_3889",
-        category: "Music",
-        question: "Which group recorded 'Sowing the Seeds of Love'?",
-        answers: ["Tears for Fears", "Simple Minds", "Talk Talk", "The Human League"],
-        correctAnswer: "Tears for Fears"
-    },
-
-    // U2
-
-    {
-        id: "music_3890",
-        category: "Music",
-        question: "Which group recorded 'I Will Follow'?",
-        answers: ["U2", "Simple Minds", "INXS", "R.E.M."],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_3891",
-        category: "Music",
-        question: "Which group recorded 'Gloria'?",
-        answers: ["U2", "Simple Minds", "INXS", "R.E.M."],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_3892",
-        category: "Music",
-        question: "Which group recorded 'New Year's Day'?",
-        answers: ["U2", "Simple Minds", "INXS", "R.E.M."],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_3893",
-        category: "Music",
-        question: "Which group recorded 'Sunday Bloody Sunday'?",
-        answers: ["U2", "Simple Minds", "INXS", "R.E.M."],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_3894",
-        category: "Music",
-        question: "Which group recorded 'The Unforgettable Fire'?",
-        answers: ["U2", "Simple Minds", "INXS", "R.E.M."],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_3895",
-        category: "Music",
-        question: "Which group recorded 'With or Without You'?",
-        answers: ["U2", "Simple Minds", "INXS", "R.E.M."],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_3896",
-        category: "Music",
-        question: "Which group recorded 'I Still Haven't Found What I'm Looking For'?",
-        answers: ["U2", "Simple Minds", "INXS", "R.E.M."],
-        correctAnswer: "U2"
-    },
-
-    // R.E.M.
-
-    {
-        id: "music_3897",
-        category: "Music",
-        question: "Which group recorded 'Radio Free Europe'?",
-        answers: ["R.E.M.", "U2", "Talking Heads", "The Cure"],
-        correctAnswer: "R.E.M."
-    },
-    {
-        id: "music_3898",
-        category: "Music",
-        question: "Which group recorded 'So. Central Rain (I'm Sorry)'?",
-        answers: ["R.E.M.", "U2", "Talking Heads", "The Cure"],
-        correctAnswer: "R.E.M."
-    },
-    {
-        id: "music_3899",
-        category: "Music",
-        question: "Which group recorded 'Can't Get There from Here'?",
-        answers: ["R.E.M.", "U2", "Talking Heads", "The Cure"],
-        correctAnswer: "R.E.M."
-    },
-    {
-        id: "music_3900",
-        category: "Music",
-        question: "Which group recorded 'Fall on Me'?",
-        answers: ["R.E.M.", "U2", "Talking Heads", "The Cure"],
-        correctAnswer: "R.E.M."
-    },
-    {
-        id: "music_3901",
-        category: "Music",
-        question: "Which group recorded 'The One I Love'?",
-        answers: ["R.E.M.", "U2", "Talking Heads", "The Cure"],
-        correctAnswer: "R.E.M."
-    },
-    {
-        id: "music_3902",
-        category: "Music",
-        question: "Which group recorded 'It's the End of the World as We Know It (And I Feel Fine)'?",
-        answers: ["R.E.M.", "U2", "Talking Heads", "The Cure"],
-        correctAnswer: "R.E.M."
-    },
-    {
-        id: "music_3903",
-        category: "Music",
-        question: "Which group recorded 'Stand'?",
-        answers: ["R.E.M.", "U2", "Talking Heads", "The Cure"],
-        correctAnswer: "R.E.M."
-    },
-
-    // THE HUMAN LEAGUE
-
-    {
-        id: "music_3904",
-        category: "Music",
-        question: "Which group recorded '(Keep Feeling) Fascination'?",
-        answers: ["The Human League", "Heaven 17", "OMD", "Ultravox"],
-        correctAnswer: "The Human League"
-    },
-
-    // SIMPLE MINDS
-
-    {
-        id: "music_3905",
-        category: "Music",
-        question: "Which group recorded 'Glittering Prize'?",
-        answers: ["Simple Minds", "U2", "INXS", "Big Country"],
-        correctAnswer: "Simple Minds"
-    },
-    {
-        id: "music_3906",
-        category: "Music",
-        question: "Which group recorded 'Up on the Catwalk'?",
-        answers: ["Simple Minds", "U2", "INXS", "Big Country"],
-        correctAnswer: "Simple Minds"
-    },
-
-    // EURYTHMICS
-
-    {
-        id: "music_3907",
-        category: "Music",
-        question: "Which duo recorded 'Right by Your Side'?",
-        answers: ["Eurythmics", "Erasure", "Yazoo", "Roxette"],
-        correctAnswer: "Eurythmics"
-    },
-    {
-        id: "music_3908",
-        category: "Music",
-        question: "Which duo recorded 'Sexcrime (Nineteen Eighty-Four)'?",
-        answers: ["Eurythmics", "Erasure", "Yazoo", "Roxette"],
-        correctAnswer: "Eurythmics"
-    },
-    {
-        id: "music_3909",
-        category: "Music",
-        question: "Which duo recorded 'Thorn in My Side'?",
-        answers: ["Eurythmics", "Erasure", "Yazoo", "Roxette"],
-        correctAnswer: "Eurythmics"
-    },
-
-    // TALKING HEADS
-
-    {
-        id: "music_3910",
-        category: "Music",
-        question: "Which group recorded 'Once in a Lifetime'?",
-        answers: ["Talking Heads", "R.E.M.", "The Cars", "Devo"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_3911",
-        category: "Music",
-        question: "Which group recorded 'Burning Down the House'?",
-        answers: ["Talking Heads", "R.E.M.", "The Cars", "Devo"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_3912",
-        category: "Music",
-        question: "Which group recorded 'This Must Be the Place (Naive Melody)'?",
-        answers: ["Talking Heads", "R.E.M.", "The Cars", "Devo"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_3913",
-        category: "Music",
-        question: "Which group recorded 'Road to Nowhere'?",
-        answers: ["Talking Heads", "R.E.M.", "The Cars", "Devo"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_3914",
-        category: "Music",
-        question: "Which group recorded 'And She Was'?",
-        answers: ["Talking Heads", "R.E.M.", "The Cars", "Devo"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_3915",
-        category: "Music",
-        question: "Which group recorded 'Wild Wild Life'?",
-        answers: ["Talking Heads", "R.E.M.", "The Cars", "Devo"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_3916",
-        category: "Music",
-        question: "Which group recorded 'Nothing but Flowers'?",
-        answers: ["Talking Heads", "R.E.M.", "The Cars", "Devo"],
-        correctAnswer: "Talking Heads"
-    },
-
-    // THE CARS
-
-    {
-        id: "music_3917",
-        category: "Music",
-        question: "Which group recorded 'Touch and Go'?",
-        answers: ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"],
-        correctAnswer: "The Cars"
-    },
-    {
-        id: "music_3918",
-        category: "Music",
-        question: "Which group recorded 'Shake It Up'?",
-        answers: ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"],
-        correctAnswer: "The Cars"
-    },
-    {
-        id: "music_3919",
-        category: "Music",
-        question: "Which group recorded 'Since You're Gone'?",
-        answers: ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"],
-        correctAnswer: "The Cars"
-    },
-    {
-        id: "music_3920",
-        category: "Music",
-        question: "Which group recorded 'You Might Think'?",
-        answers: ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"],
-        correctAnswer: "The Cars"
-    },
-    {
-        id: "music_3921",
-        category: "Music",
-        question: "Which group recorded 'Magic'?",
-        answers: ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"],
-        correctAnswer: "The Cars"
-    },
-    {
-        id: "music_3922",
-        category: "Music",
-        question: "Which group recorded 'Drive'?",
-        answers: ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"],
-        correctAnswer: "The Cars"
-    },
-    {
-        id: "music_3923",
-        category: "Music",
-        question: "Which group recorded 'Hello Again'?",
-        answers: ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"],
-        correctAnswer: "The Cars"
-    },
-
-    // DURAN DURAN
-
-    {
-        id: "music_3924",
-        category: "Music",
-        question: "Which group recorded 'Planet Earth'?",
-        answers: ["Duran Duran", "Spandau Ballet", "ABC", "Japan"],
-        correctAnswer: "Duran Duran"
-    },
-    {
-        id: "music_3925",
-        category: "Music",
-        question: "Which group recorded 'Careless Memories'?",
-        answers: ["Duran Duran", "Spandau Ballet", "ABC", "Japan"],
-        correctAnswer: "Duran Duran"
-    },
-    {
-        id: "music_3926",
-        category: "Music",
-        question: "Which group recorded 'My Own Way'?",
-        answers: ["Duran Duran", "Spandau Ballet", "ABC", "Japan"],
-        correctAnswer: "Duran Duran"
-    },
-    {
-        id: "music_3927",
-        category: "Music",
-        question: "Which group recorded 'The Wild Boys'?",
-        answers: ["Duran Duran", "Spandau Ballet", "ABC", "Japan"],
-        correctAnswer: "Duran Duran"
-    },
-    {
-        id: "music_3928",
-        category: "Music",
-        question: "Which group recorded 'Notorious'?",
-        answers: ["Duran Duran", "Spandau Ballet", "ABC", "Japan"],
-        correctAnswer: "Duran Duran"
-    },
-
-    // THE POLICE
-
-    {
-        id: "music_3929",
-        category: "Music",
-        question: "Which group recorded 'De Do Do Do, De Da Da Da'?",
-        answers: ["The Police", "Dire Straits", "U2", "Simple Minds"],
-        correctAnswer: "The Police"
-    },
-
-    // PRETENDERS
-
-    {
-        id: "music_3930",
-        category: "Music",
-        question: "Which group recorded 'Brass in Pocket'?",
-        answers: ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"],
-        correctAnswer: "Pretenders"
-    },
-    {
-        id: "music_3931",
-        category: "Music",
-        question: "Which group recorded 'Talk of the Town'?",
-        answers: ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"],
-        correctAnswer: "Pretenders"
-    },
-    {
-        id: "music_3932",
-        category: "Music",
-        question: "Which group recorded 'Message of Love'?",
-        answers: ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"],
-        correctAnswer: "Pretenders"
-    },
-    {
-        id: "music_3933",
-        category: "Music",
-        question: "Which group recorded 'Back on the Chain Gang'?",
-        answers: ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"],
-        correctAnswer: "Pretenders"
-    },
-    {
-        id: "music_3934",
-        category: "Music",
-        question: "Which group recorded 'Middle of the Road'?",
-        answers: ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"],
-        correctAnswer: "Pretenders"
-    },
-    {
-        id: "music_3935",
-        category: "Music",
-        question: "Which group recorded 'Don't Get Me Wrong'?",
-        answers: ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"],
-        correctAnswer: "Pretenders"
-    },
-    {
-        id: "music_3936",
-        category: "Music",
-        question: "Which group recorded 'My Baby'?",
-        answers: ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"],
-        correctAnswer: "Pretenders"
-    },
-
-    // BLONDIE
-
-    {
-        id: "music_3937",
-        category: "Music",
-        question: "Which group recorded 'Call Me'?",
-        answers: ["Blondie", "Pretenders", "The Bangles", "The Go-Go's"],
-        correctAnswer: "Blondie"
-    },
-
-    // INXS
-
-    {
-        id: "music_3938",
-        category: "Music",
-        question: "Which group recorded 'Listen Like Thieves'?",
-        answers: ["INXS", "Simple Minds", "U2", "The Church"],
-        correctAnswer: "INXS"
-    },
-    {
-        id: "music_3939",
-        category: "Music",
-        question: "Which group recorded 'Suicide Blonde'?",
-        answers: ["INXS", "Simple Minds", "U2", "The Church"],
-        correctAnswer: "INXS"
-    },
-
-    // THE SMITHS
-
-    {
-        id: "music_3940",
-        category: "Music",
-        question: "Which group recorded 'Hand in Glove'?",
-        answers: ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"],
-        correctAnswer: "The Smiths"
-    },
-    {
-        id: "music_3941",
-        category: "Music",
-        question: "Which group recorded 'What Difference Does It Make?'?",
-        answers: ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"],
-        correctAnswer: "The Smiths"
-    },
-    {
-        id: "music_3942",
-        category: "Music",
-        question: "Which group recorded 'Heaven Knows I'm Miserable Now'?",
-        answers: ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"],
-        correctAnswer: "The Smiths"
-    },
-    {
-        id: "music_3943",
-        category: "Music",
-        question: "Which group recorded 'William, It Was Really Nothing'?",
-        answers: ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"],
-        correctAnswer: "The Smiths"
-    },
-    {
-        id: "music_3944",
-        category: "Music",
-        question: "Which group recorded 'How Soon Is Now?'?",
-        answers: ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"],
-        correctAnswer: "The Smiths"
-    },
-    {
-        id: "music_3945",
-        category: "Music",
-        question: "Which group recorded 'The Boy with the Thorn in His Side'?",
-        answers: ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"],
-        correctAnswer: "The Smiths"
-    },
-
-    // NEW ORDER
-
-    {
-        id: "music_3946",
-        category: "Music",
-        question: "Which group recorded 'Ceremony'?",
-        answers: ["New Order", "The Cure", "The Smiths", "Depeche Mode"],
-        correctAnswer: "New Order"
-    },
-    {
-        id: "music_3947",
-        category: "Music",
-        question: "Which group recorded 'Temptation'?",
-        answers: ["New Order", "The Cure", "The Smiths", "Depeche Mode"],
-        correctAnswer: "New Order"
-    },
-    {
-        id: "music_3948",
-        category: "Music",
-        question: "Which group recorded 'Confusion'?",
-        answers: ["New Order", "The Cure", "The Smiths", "Depeche Mode"],
-        correctAnswer: "New Order"
-    },
-    {
-        id: "music_3949",
-        category: "Music",
-        question: "Which group recorded 'Thieves Like Us'?",
-        answers: ["New Order", "The Cure", "The Smiths", "Depeche Mode"],
-        correctAnswer: "New Order"
-    },
-    {
-        id: "music_3950",
-        category: "Music",
-        question: "Which group recorded 'The Perfect Kiss'?",
-        answers: ["New Order", "The Cure", "The Smiths", "Depeche Mode"],
-        correctAnswer: "New Order"
-    },
-
-    // ERASURE
-
-    {
-        id: "music_3951",
-        category: "Music",
-        question: "Which duo recorded 'The Circus'?",
-        answers: ["Erasure", "Pet Shop Boys", "Eurythmics", "Yazoo"],
-        correctAnswer: "Erasure"
-    },
-
-    // PET SHOP BOYS
-
-    {
-        id: "music_3952",
-        category: "Music",
-        question: "Which duo recorded 'Heart'?",
-        answers: ["Pet Shop Boys", "Erasure", "Eurythmics", "Yazoo"],
-        correctAnswer: "Pet Shop Boys"
-    },
-
-    // ABC
-
-    {
-        id: "music_3953",
-        category: "Music",
-        question: "Which group recorded 'King Without a Crown'?",
-        answers: ["ABC", "Spandau Ballet", "Heaven 17", "The Human League"],
-        correctAnswer: "ABC"
-    },
-
-    // CULTURE CLUB
-
-    {
-        id: "music_3954",
-        category: "Music",
-        question: "Which group recorded 'Time (Clock of the Heart)'?",
-        answers: ["Culture Club", "Wham!", "ABC", "Spandau Ballet"],
-        correctAnswer: "Culture Club"
-    },
-
-    // BILLY OCEAN
-
-    {
-        id: "music_3955",
-        category: "Music",
-        question: "Which artist recorded 'Caribbean Queen (No More Love on the Run)'?",
-        answers: ["Billy Ocean", "Lionel Richie", "Luther Vandross", "George Benson"],
-        correctAnswer: "Billy Ocean"
-    },
-    {
-        id: "music_3956",
-        category: "Music",
-        question: "Which artist recorded 'Loverboy'?",
-        answers: ["Billy Ocean", "Lionel Richie", "Luther Vandross", "George Benson"],
-        correctAnswer: "Billy Ocean"
-    },
-    {
-        id: "music_3957",
-        category: "Music",
-        question: "Which artist recorded 'Suddenly'?",
-        answers: ["Billy Ocean", "Lionel Richie", "Luther Vandross", "George Benson"],
-        correctAnswer: "Billy Ocean"
-    },
-    {
-        id: "music_3958",
-        category: "Music",
-        question: "Which artist recorded 'When the Going Gets Tough, the Tough Get Going'?",
-        answers: ["Billy Ocean", "Lionel Richie", "Luther Vandross", "George Benson"],
-        correctAnswer: "Billy Ocean"
-    },
-    {
-        id: "music_3959",
-        category: "Music",
-        question: "Which artist recorded 'There'll Be Sad Songs (To Make You Cry)'?",
-        answers: ["Billy Ocean", "Lionel Richie", "Luther Vandross", "George Benson"],
-        correctAnswer: "Billy Ocean"
-    },
-
-    // BANANARAMA
-
-    {
-        id: "music_3960",
-        category: "Music",
-        question: "Which group recorded 'Shy Boy'?",
-        answers: ["Bananarama", "The Bangles", "The Go-Go's", "Belle Stars"],
-        correctAnswer: "Bananarama"
-    },
-    {
-        id: "music_3961",
-        category: "Music",
-        question: "Which group recorded 'Cruel Summer'?",
-        answers: ["Bananarama", "The Bangles", "The Go-Go's", "Belle Stars"],
-        correctAnswer: "Bananarama"
-    },
-    {
-        id: "music_3962",
-        category: "Music",
-        question: "Which group recorded 'Robert De Niro's Waiting'?",
-        answers: ["Bananarama", "The Bangles", "The Go-Go's", "Belle Stars"],
-        correctAnswer: "Bananarama"
-    },
-    {
-        id: "music_3963",
-        category: "Music",
-        question: "Which group recorded 'Love in the First Degree'?",
-        answers: ["Bananarama", "The Bangles", "The Go-Go's", "Belle Stars"],
-        correctAnswer: "Bananarama"
-    },
-
-    // THE POINTER SISTERS
-
-    {
-        id: "music_3964",
-        category: "Music",
-        question: "Which group recorded 'He's So Shy'?",
-        answers: ["The Pointer Sisters", "Sister Sledge", "The Three Degrees", "The Weather Girls"],
-        correctAnswer: "The Pointer Sisters"
-    },
-    {
-        id: "music_3965",
-        category: "Music",
-        question: "Which group recorded 'Slow Hand'?",
-        answers: ["The Pointer Sisters", "Sister Sledge", "The Three Degrees", "The Weather Girls"],
-        correctAnswer: "The Pointer Sisters"
-    },
-    {
-        id: "music_3966",
-        category: "Music",
-        question: "Which group recorded 'Automatic'?",
-        answers: ["The Pointer Sisters", "Sister Sledge", "The Three Degrees", "The Weather Girls"],
-        correctAnswer: "The Pointer Sisters"
-    }
-
+    makeQuestion("music_3867", "Which group recorded 'Tusk'?", ["Fleetwood Mac", "Eagles", "Supertramp", "Dire Straits"], "Fleetwood Mac", "Easy"),
+    makeQuestion("music_3868", "Which group recorded 'Sara'?", ["Fleetwood Mac", "Eagles", "Heart", "Dire Straits"], "Fleetwood Mac", "Easy"),
+    makeQuestion("music_3869", "Which group recorded 'Gypsy'?", ["Fleetwood Mac", "Heart", "Pretenders", "Blondie"], "Fleetwood Mac", "Medium"),
+    makeQuestion("music_3870", "Which artist recorded 'Dirty Laundry'?", ["Don Henley", "Bryan Adams", "John Mellencamp", "Bruce Springsteen"], "Don Henley", "Medium"),
+    makeQuestion("music_3871", "Which artist recorded 'The Boys of Summer'?", ["Don Henley", "Bryan Adams", "John Mellencamp", "Bruce Springsteen"], "Don Henley", "Easy"),
+    makeQuestion("music_3872", "Which artist recorded 'All She Wants to Do Is Dance'?", ["Don Henley", "Bryan Adams", "John Mellencamp", "Robert Palmer"], "Don Henley", "Medium"),
+    makeQuestion("music_3873", "Which artist recorded 'Not Enough Love in the World'?", ["Don Henley", "Bryan Adams", "Richard Marx", "John Mellencamp"], "Don Henley", "Hard"),
+    makeQuestion("music_3874", "Which artist recorded 'Sunset Grill'?", ["Don Henley", "Bruce Springsteen", "Bryan Adams", "John Mellencamp"], "Don Henley", "Hard"),
+    makeQuestion("music_3875", "Which artist recorded 'The End of the Innocence'?", ["Don Henley", "Bruce Springsteen", "Richard Marx", "Bryan Adams"], "Don Henley", "Medium"),
+    makeQuestion("music_3876", "Which artist recorded 'The Last Worthless Evening'?", ["Don Henley", "Richard Marx", "Bryan Adams", "John Mellencamp"], "Don Henley", "Hard"),
+    makeQuestion("music_3877", "Which artist recorded 'World Without You'?", ["Belinda Carlisle", "Kim Wilde", "Cyndi Lauper", "Taylor Dayne"], "Belinda Carlisle", "Hard"),
+    makeQuestion("music_3878", "Which group recorded 'Hero Takes a Fall'?", ["The Bangles", "Bananarama", "The Go-Go's", "Pretenders"], "The Bangles", "Hard"),
+    makeQuestion("music_3879", "Which group recorded 'If She Knew What She Wants'?", ["The Bangles", "Bananarama", "The Go-Go's", "Pretenders"], "The Bangles", "Medium"),
+    makeQuestion("music_3880", "Which group recorded 'Walking Down Your Street'?", ["The Bangles", "Bananarama", "The Go-Go's", "Pretenders"], "The Bangles", "Hard"),
+    makeQuestion("music_3881", "Which group recorded 'Hazy Shade of Winter'?", ["The Bangles", "Bananarama", "The Go-Go's", "Pretenders"], "The Bangles", "Easy"),
+    makeQuestion("music_3882", "Which group recorded 'In Your Room'?", ["The Bangles", "Bananarama", "The Go-Go's", "Pretenders"], "The Bangles", "Hard"),
+    makeQuestion("music_3883", "Which duo recorded 'Dressed for Success'?", ["Roxette", "Eurythmics", "Erasure", "Dollar"], "Roxette", "Hard"),
+    makeQuestion("music_3884", "Which duo recorded 'Listen to Your Heart'?", ["Roxette", "Eurythmics", "Erasure", "Dollar"], "Roxette", "Easy"),
+    makeQuestion("music_3885", "Which duo recorded 'Dangerous'?", ["Roxette", "Eurythmics", "Erasure", "Dollar"], "Roxette", "Hard"),
+    makeQuestion("music_3886", "Which group recorded 'If You Don't Know Me by Now'?", ["Simply Red", "Level 42", "Wet Wet Wet", "Curiosity Killed the Cat"], "Simply Red", "Easy"),
+    makeQuestion("music_3887", "Which group recorded 'It's Only Love'?", ["Simply Red", "Level 42", "Wet Wet Wet", "Curiosity Killed the Cat"], "Simply Red", "Medium"),
+    makeQuestion("music_3888", "Which group recorded 'I Believe'?", ["Tears for Fears", "Simple Minds", "Talk Talk", "The Human League"], "Tears for Fears", "Hard"),
+    makeQuestion("music_3889", "Which group recorded 'Sowing the Seeds of Love'?", ["Tears for Fears", "Simple Minds", "Talk Talk", "The Human League"], "Tears for Fears", "Easy"),
+    makeQuestion("music_3890", "Which group recorded 'I Will Follow'?", ["U2", "Simple Minds", "INXS", "R.E.M."], "U2", "Medium"),
+    makeQuestion("music_3891", "Which group recorded 'Gloria'?", ["U2", "Simple Minds", "INXS", "R.E.M."], "U2", "Medium"),
+    makeQuestion("music_3892", "Which group recorded 'New Year's Day'?", ["U2", "Simple Minds", "INXS", "R.E.M."], "U2", "Easy"),
+    makeQuestion("music_3893", "Which group recorded 'Sunday Bloody Sunday'?", ["U2", "Simple Minds", "INXS", "R.E.M."], "U2", "Easy"),
+    makeQuestion("music_3894", "Which group recorded 'The Unforgettable Fire'?", ["U2", "Simple Minds", "INXS", "R.E.M."], "U2", "Medium"),
+    makeQuestion("music_3895", "Which group recorded 'With or Without You'?", ["U2", "Simple Minds", "INXS", "R.E.M."], "U2", "Easy"),
+    makeQuestion("music_3896", "Which group recorded 'I Still Haven't Found What I'm Looking For'?", ["U2", "Simple Minds", "INXS", "R.E.M."], "U2", "Easy"),
+    makeQuestion("music_3897", "Which group recorded 'Radio Free Europe'?", ["R.E.M.", "U2", "Talking Heads", "The Cure"], "R.E.M.", "Medium"),
+    makeQuestion("music_3898", "Which group recorded 'So. Central Rain (I'm Sorry)'?", ["R.E.M.", "U2", "Talking Heads", "The Cure"], "R.E.M.", "Hard"),
+    makeQuestion("music_3899", "Which group recorded 'Can't Get There from Here'?", ["R.E.M.", "U2", "Talking Heads", "The Cure"], "R.E.M.", "Hard"),
+    makeQuestion("music_3900", "Which group recorded 'Fall on Me'?", ["R.E.M.", "U2", "Talking Heads", "The Cure"], "R.E.M.", "Medium"),
+    makeQuestion("music_3901", "Which group recorded 'The One I Love'?", ["R.E.M.", "U2", "Talking Heads", "The Cure"], "R.E.M.", "Easy"),
+    makeQuestion("music_3902", "Which group recorded 'It's the End of the World as We Know It (And I Feel Fine)'?", ["R.E.M.", "U2", "Talking Heads", "The Cure"], "R.E.M.", "Easy"),
+    makeQuestion("music_3903", "Which group recorded 'Stand'?", ["R.E.M.", "U2", "Talking Heads", "The Cure"], "R.E.M.", "Medium"),
+    makeQuestion("music_3904", "Which group recorded '(Keep Feeling) Fascination'?", ["The Human League", "Heaven 17", "OMD", "Ultravox"], "The Human League", "Easy"),
+    makeQuestion("music_3905", "Which group recorded 'Glittering Prize'?", ["Simple Minds", "U2", "INXS", "Big Country"], "Simple Minds", "Medium"),
+    makeQuestion("music_3906", "Which group recorded 'Up on the Catwalk'?", ["Simple Minds", "U2", "INXS", "Big Country"], "Simple Minds", "Hard"),
+    makeQuestion("music_3907", "Which duo recorded 'Right by Your Side'?", ["Eurythmics", "Erasure", "Yazoo", "Roxette"], "Eurythmics", "Medium"),
+    makeQuestion("music_3908", "Which duo recorded 'Sexcrime (Nineteen Eighty-Four)'?", ["Eurythmics", "Erasure", "Yazoo", "Roxette"], "Eurythmics", "Hard"),
+    makeQuestion("music_3909", "Which duo recorded 'Thorn in My Side'?", ["Eurythmics", "Erasure", "Yazoo", "Roxette"], "Eurythmics", "Easy"),
+    makeQuestion("music_3910", "Which group recorded 'Once in a Lifetime'?", ["Talking Heads", "R.E.M.", "The Cars", "Devo"], "Talking Heads", "Easy"),
+    makeQuestion("music_3911", "Which group recorded 'Burning Down the House'?", ["Talking Heads", "R.E.M.", "The Cars", "Devo"], "Talking Heads", "Easy"),
+    makeQuestion("music_3912", "Which group recorded 'This Must Be the Place (Naive Melody)'?", ["Talking Heads", "R.E.M.", "The Cars", "Devo"], "Talking Heads", "Medium"),
+    makeQuestion("music_3913", "Which group recorded 'Road to Nowhere'?", ["Talking Heads", "R.E.M.", "The Cars", "Devo"], "Talking Heads", "Easy"),
+    makeQuestion("music_3914", "Which group recorded 'And She Was'?", ["Talking Heads", "R.E.M.", "The Cars", "Devo"], "Talking Heads", "Medium"),
+    makeQuestion("music_3915", "Which group recorded 'Wild Wild Life'?", ["Talking Heads", "R.E.M.", "The Cars", "Devo"], "Talking Heads", "Medium"),
+    makeQuestion("music_3916", "Which group recorded 'Nothing but Flowers'?", ["Talking Heads", "R.E.M.", "The Cars", "Devo"], "Talking Heads", "Hard"),
+    makeQuestion("music_3917", "Which group recorded 'Touch and Go'?", ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"], "The Cars", "Hard"),
+    makeQuestion("music_3918", "Which group recorded 'Shake It Up'?", ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"], "The Cars", "Easy"),
+    makeQuestion("music_3919", "Which group recorded 'Since You're Gone'?", ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"], "The Cars", "Hard"),
+    makeQuestion("music_3920", "Which group recorded 'You Might Think'?", ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"], "The Cars", "Easy"),
+    makeQuestion("music_3921", "Which group recorded 'Magic'?", ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"], "The Cars", "Medium"),
+    makeQuestion("music_3922", "Which group recorded 'Drive'?", ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"], "The Cars", "Easy"),
+    makeQuestion("music_3923", "Which group recorded 'Hello Again'?", ["The Cars", "Talking Heads", "The Knack", "The J. Geils Band"], "The Cars", "Hard"),
+    makeQuestion("music_3924", "Which group recorded 'Planet Earth'?", ["Duran Duran", "Spandau Ballet", "ABC", "Japan"], "Duran Duran", "Easy"),
+    makeQuestion("music_3925", "Which group recorded 'Careless Memories'?", ["Duran Duran", "Spandau Ballet", "ABC", "Japan"], "Duran Duran", "Hard"),
+    makeQuestion("music_3926", "Which group recorded 'My Own Way'?", ["Duran Duran", "Spandau Ballet", "ABC", "Japan"], "Duran Duran", "Hard"),
+    makeQuestion("music_3927", "Which group recorded 'The Wild Boys'?", ["Duran Duran", "Spandau Ballet", "ABC", "Japan"], "Duran Duran", "Easy"),
+    makeQuestion("music_3928", "Which group recorded 'Notorious'?", ["Duran Duran", "Spandau Ballet", "ABC", "Japan"], "Duran Duran", "Easy"),
+    makeQuestion("music_3929", "Which group recorded 'De Do Do Do, De Da Da Da'?", ["The Police", "Dire Straits", "U2", "Simple Minds"], "The Police", "Easy"),
+    makeQuestion("music_3930", "Who was the lead singer of the Pretenders?", ["Chrissie Hynde", "Debbie Harry", "Siouxsie Sioux", "Susanna Hoffs"], "Chrissie Hynde", "Easy"),
+    makeQuestion("music_3931", "Which group recorded 'Talk of the Town'?", ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"], "Pretenders", "Medium"),
+    makeQuestion("music_3932", "Which group recorded 'Message of Love'?", ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"], "Pretenders", "Hard"),
+    makeQuestion("music_3933", "Which group recorded 'Back on the Chain Gang'?", ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"], "Pretenders", "Easy"),
+    makeQuestion("music_3934", "Which group recorded 'Middle of the Road'?", ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"], "Pretenders", "Medium"),
+    makeQuestion("music_3935", "Which group recorded 'Don't Get Me Wrong'?", ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"], "Pretenders", "Easy"),
+    makeQuestion("music_3936", "Which group recorded 'My Baby'?", ["Pretenders", "Blondie", "The Bangles", "The Go-Go's"], "Pretenders", "Hard"),
+    makeQuestion("music_3937", "Which group recorded 'Call Me'?", ["Blondie", "Pretenders", "The Bangles", "The Go-Go's"], "Blondie", "Easy"),
+    makeQuestion("music_3938", "Which group recorded 'Listen Like Thieves'?", ["INXS", "Simple Minds", "U2", "The Church"], "INXS", "Hard"),
+    makeQuestion("music_3939", "Which group recorded 'Suicide Blonde'?", ["INXS", "Simple Minds", "U2", "The Church"], "INXS", "Easy"),
+    makeQuestion("music_3940", "Which group recorded 'Hand in Glove'?", ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"], "The Smiths", "Medium"),
+    makeQuestion("music_3941", "Which group recorded 'What Difference Does It Make?'?", ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"], "The Smiths", "Medium"),
+    makeQuestion("music_3942", "Which group recorded 'Heaven Knows I'm Miserable Now'?", ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"], "The Smiths", "Easy"),
+    makeQuestion("music_3943", "Which group recorded 'William, It Was Really Nothing'?", ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"], "The Smiths", "Hard"),
+    makeQuestion("music_3944", "Which group recorded 'How Soon Is Now?'?", ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"], "The Smiths", "Easy"),
+    makeQuestion("music_3945", "Which group recorded 'The Boy with the Thorn in His Side'?", ["The Smiths", "The Cure", "Echo & the Bunnymen", "New Order"], "The Smiths", "Medium"),
+    makeQuestion("music_3946", "Which group recorded 'Ceremony'?", ["New Order", "The Cure", "The Smiths", "Depeche Mode"], "New Order", "Medium"),
+    makeQuestion("music_3947", "Which group recorded 'Temptation'?", ["New Order", "The Cure", "The Smiths", "Depeche Mode"], "New Order", "Easy"),
+    makeQuestion("music_3948", "Which group recorded 'Confusion'?", ["New Order", "The Cure", "The Smiths", "Depeche Mode"], "New Order", "Hard"),
+    makeQuestion("music_3949", "Which group recorded 'Thieves Like Us'?", ["New Order", "The Cure", "The Smiths", "Depeche Mode"], "New Order", "Hard"),
+    makeQuestion("music_3950", "Which group recorded 'The Perfect Kiss'?", ["New Order", "The Cure", "The Smiths", "Depeche Mode"], "New Order", "Hard"),
+    makeQuestion("music_3951", "Which duo recorded 'The Circus'?", ["Erasure", "Pet Shop Boys", "Eurythmics", "Yazoo"], "Erasure", "Hard"),
+    makeQuestion("music_3952", "Which duo recorded 'Heart'?", ["Pet Shop Boys", "Erasure", "Eurythmics", "Yazoo"], "Pet Shop Boys", "Easy"),
+    makeQuestion("music_3953", "Which group recorded 'King Without a Crown'?", ["ABC", "Spandau Ballet", "Heaven 17", "The Human League"], "ABC", "Hard"),
+    makeQuestion("music_3954", "Which group recorded 'Time (Clock of the Heart)'?", ["Culture Club", "Wham!", "ABC", "Spandau Ballet"], "Culture Club", "Easy"),
+    makeQuestion("music_3955", "Which artist recorded 'Caribbean Queen (No More Love on the Run)'?", ["Billy Ocean", "Lionel Richie", "Luther Vandross", "George Benson"], "Billy Ocean", "Easy"),
+    makeQuestion("music_3956", "Which artist recorded 'Loverboy'?", ["Billy Ocean", "Lionel Richie", "Luther Vandross", "George Benson"], "Billy Ocean", "Medium"),
+    makeQuestion("music_3957", "Which artist recorded 'Suddenly'?", ["Billy Ocean", "Lionel Richie", "Luther Vandross", "George Benson"], "Billy Ocean", "Medium"),
+    makeQuestion("music_3958", "Which artist recorded 'When the Going Gets Tough, the Tough Get Going'?", ["Billy Ocean", "Lionel Richie", "Luther Vandross", "George Benson"], "Billy Ocean", "Easy"),
+    makeQuestion("music_3959", "Which artist recorded 'There'll Be Sad Songs (To Make You Cry)'?", ["Billy Ocean", "Lionel Richie", "Luther Vandross", "George Benson"], "Billy Ocean", "Medium"),
+    makeQuestion("music_3960", "Which group recorded 'Shy Boy'?", ["Bananarama", "The Bangles", "The Go-Go's", "Belle Stars"], "Bananarama", "Medium"),
+    makeQuestion("music_3961", "Which group recorded 'Cruel Summer'?", ["Bananarama", "The Bangles", "The Go-Go's", "Belle Stars"], "Bananarama", "Easy"),
+    makeQuestion("music_3962", "Which group recorded 'Robert De Niro's Waiting'?", ["Bananarama", "The Bangles", "The Go-Go's", "Belle Stars"], "Bananarama", "Easy"),
+    makeQuestion("music_3963", "Which group recorded 'Love in the First Degree'?", ["Bananarama", "The Bangles", "The Go-Go's", "Belle Stars"], "Bananarama", "Easy"),
+    makeQuestion("music_3964", "Which group recorded 'He's So Shy'?", ["The Pointer Sisters", "Sister Sledge", "The Three Degrees", "The Weather Girls"], "The Pointer Sisters", "Hard"),
+    makeQuestion("music_3965", "Which group recorded 'Slow Hand'?", ["The Pointer Sisters", "Sister Sledge", "The Three Degrees", "The Weather Girls"], "The Pointer Sisters", "Medium"),
+    makeQuestion("music_3966", "Which group recorded 'Automatic'?", ["The Pointer Sisters", "Sister Sledge", "The Three Degrees", "The Weather Girls"], "The Pointer Sisters", "Easy"),
 ];
 
 module.exports = quizPack58;
