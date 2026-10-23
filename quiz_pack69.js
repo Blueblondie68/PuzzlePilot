@@ -1,709 +1,268 @@
+// quiz_pack69.js
+// PuzzlePilot Bigggggg Quiz - Music Pack 69
+// 100 audited questions: music_4967 through music_5066.
+// Every question expands into accurate artist and recording tags.
+
+const artistTags = {
+    "Stevie Nicks": ["pop rock", "soft rock", "american", "female singers", "solo artists", "fleetwood mac", "singer-songwriters"],
+    "Pat Benatar": ["rock", "pop rock", "american", "female singers", "solo artists", "neil giraldo", "grammy winners"],
+    "Fleetwood Mac": ["pop rock", "soft rock", "british-american", "bands", "lindsey buckingham", "stevie nicks", "christine mcvie", "mick fleetwood", "john mcvie"],
+    "Lindsey Buckingham": ["pop rock", "rock", "american", "male singers", "solo artists", "fleetwood mac", "guitarists", "singer-songwriters"],
+    "Christine McVie": ["soft rock", "pop rock", "british", "female singers", "solo artists", "fleetwood mac", "singer-songwriters"],
+    "Belinda Carlisle": ["pop rock", "pop", "american", "female singers", "solo artists", "the go-gos", "rick nowels"],
+    "The Go-Go's": ["new wave", "power pop", "american", "bands", "female bands", "belinda carlisle", "jane wiedlin", "charlotte caffey"],
+    "Scandal": ["pop rock", "arena rock", "american", "bands", "patty smyth", "female lead singers", "zack smith"],
+    "Phil Collins": ["pop rock", "soft rock", "british", "male singers", "solo artists", "genesis", "drummers", "singer-songwriters"],
+    "Genesis": ["progressive rock", "pop rock", "british", "bands", "phil collins", "mike rutherford", "tony banks"],
+    "Mike + The Mechanics": ["pop rock", "soft rock", "british", "bands", "mike rutherford", "paul carrack", "paul young singer mike mechanics"],
+    "The Alan Parsons Project": ["progressive rock", "soft rock", "british", "studio projects", "alan parsons", "eric woolfson", "art rock"],
+    "Asia": ["progressive rock", "arena rock", "british", "supergroups", "john wetton", "geoff downes", "steve howe", "carl palmer"],
+    "Yes": ["progressive rock", "british", "bands", "jon anderson", "chris squire", "trevor rabin", "tony kaye"],
+    "Marillion": ["progressive rock", "neo-progressive rock", "british", "bands", "fish vocalist", "steve rothery", "scottish lead singers"],
+    "XTC": ["new wave", "post-punk", "alternative rock", "british", "bands", "swindon", "andy partridge", "colin moulding"],
+    "The Cure": ["alternative rock", "gothic rock", "british", "bands", "robert smith", "post-punk"],
+    "Siouxsie and the Banshees": ["post-punk", "gothic rock", "british", "bands", "siouxsie sioux", "budgie drummer"],
+    "The Cult": ["hard rock", "gothic rock", "british", "bands", "ian astbury", "billy duffy"],
+    "Tom Petty and the Heartbreakers": ["heartland rock", "rock", "american", "bands", "tom petty", "mike campbell", "benmont tench"],
+    "John Mellencamp": ["heartland rock", "rock", "american", "male singers", "solo artists", "singer-songwriters", "john cougar mellencamp", "john cougar"],
+    "John Cougar": ["heartland rock", "rock", "american", "male singers", "solo artists", "john mellencamp", "john cougar mellencamp", "stage names"],
+    "Billy Squier": ["hard rock", "arena rock", "american", "male singers", "solo artists", "guitarists"],
+    "Sammy Hagar": ["hard rock", "arena rock", "american", "male singers", "solo artists", "van halen", "montrose band", "red rocker"],
+    "38 Special": ["southern rock", "arena rock", "american", "bands", "don barnes", "donnie van zant", "larry junstrom"],
+    "The Fabulous Thunderbirds": ["blues rock", "texas blues", "american", "bands", "kim wilson", "jimmie vaughan", "dave edmunds production"],
+    "The Georgia Satellites": ["southern rock", "rock", "american", "bands", "dan baird", "rick richards", "atlanta"],
+    "Rossington Collins Band": ["southern rock", "american", "bands", "gary rossington", "allen collins", "dale krantz", "lynyrd skynyrd members"],
+};
+
+const recordingTags = {
+    "music_4967": [1985, "rock a little album", "1986 singles", "stevie nicks ballads"],
+    "music_4968": [1989, "the other side of the mirror album", "1989 singles", "rupert hine production"],
+    "music_4969": [1983, "the wild heart album", "1983 singles", "sandy stewart duet vocals", "duets"],
+    "music_4970": [1981, "bella donna album", "1982 singles", "country rock influences"],
+    "music_4971": [1983, "the wild heart album", "1983 singles", "sandy stewart songwriting"],
+    "music_4972": [1985, "seven the hard way album", "1985 singles", "holly knight songwriter"],
+    "music_4973": [1985, "seven the hard way album", "1986 singles", "rock vocals"],
+    "music_4974": [1984, "tropico album", "1985 singles", "neil giraldo production"],
+    "music_4975": [1987, "tango in the night album", "1987 singles", "lindsey buckingham lead vocals"],
+    "music_4976": [1987, "tango in the night album", "1988 singles", "christine mcvie lead vocals"],
+    "music_4977": [1984, "go insane album", "1984 singles", "album title tracks"],
+    "music_4978": [1984, "go insane album", "1984 singles", "solo career"],
+    "music_4979": [1983, "national lampoons vacation film soundtrack", "1983 singles", "film songs", "film themes"],
+    "music_4980": [1981, "law and order album", "1981 singles", "solo debut album"],
+    "music_4981": [1984, "christine mcvie self titled album", "1984 singles", "solo pop rock"],
+    "music_4982": [1984, "christine mcvie self titled album", "1984 singles", "solo pop rock"],
+    "music_4983": [1987, "heaven on earth album", "1988 uk single", "charlotte caffey songwriting"],
+    "music_4984": [1984, "talk show album", "1984 singles", "charlotte caffey songwriter"],
+    "music_4985": [1984, "talk show album", "1984 singles", "charlotte caffey songwriter"],
+    "music_4986": [1982, "vacation album", "1982 singles", "album title tracks"],
+    "music_4987": [1982, "vacation album", "1982 singles", "new wave"],
+    "music_4988": [1984, "warrior album", "1984 singles", "patty smyth vocals", "holly knight songwriter"],
+    "music_4989": [1982, "scandal ep", "1982 singles", "patty smyth vocals"],
+    "music_4990": [1984, "warrior album", "1984 singles", "patty smyth vocals"],
+    "music_4991": [1979, "in the heat of the night album", "1979 singles", "jenny darren original", "cover versions"],
+    "music_4992": [1981, "precious time album", "1981 singles", "neil giraldo guitar"],
+    "music_4993": [1985, "no jacket required album", "1985 album tracks", "daryl stuermer co-writer"],
+    "music_4994": [1983, "genesis self titled album", "1984 singles", "phil collins vocals"],
+    "music_4995": [1983, "genesis self titled album", "1984 singles", "phil collins vocals"],
+    "music_4996": [1986, "invisible touch album", "1986 singles", "phil collins vocals"],
+    "music_4997": [1986, "invisible touch album", "1986 singles", "phil collins vocals"],
+    "music_4998": [1985, "mike and the mechanics debut album", "1986 singles", "paul young lead vocals"],
+    "music_4999": [1984, "ammonia avenue album", "1984 singles", "eric woolfson vocals"],
+    "music_5000": [1983, "the wild heart album", "1983 singles", "prince synthesizer influence", "pop rock"],
+    "music_5001": [1984, "ammonia avenue album", "1984 singles", "eric woolfson lead vocals"],
+    "music_5002": [1982, "eye in the sky album", "1982 singles", "eric woolfson lead vocals"],
+    "music_5003": [1980, "the turn of a friendly card album", "1980 singles", "lenny zakatek vocals"],
+    "music_5004": [1980, "the turn of a friendly card album", "1981 singles", "eric woolfson lead vocals"],
+    "music_5005": [1982, "asia debut album", "1982 singles", "john wetton lead vocals"],
+    "music_5006": [1983, "alpha album", "1983 singles", "john wetton lead vocals"],
+    "music_5007": [1985, "astra album", "1985 singles", "john wetton lead vocals"],
+    "music_5008": [1983, "90125 album", "1984 singles", "trevor rabin songwriting"],
+    "music_5009": [1983, "90125 album", "1984 singles", "trevor rabin songwriting"],
+    "music_5010": [1987, "big generator album", "1987 singles", "trevor rabin guitar"],
+    "music_5011": [1985, "misplaced childhood album", "1985 singles", "fish vocals"],
+    "music_5012": [1982, "english settlement album", "1982 singles", "colin moulding songwriter"],
+    "music_5013": [1983, "mummer album", "1983 singles", "colin moulding songwriter"],
+    "music_5014": [1984, "the big express album", "1984 singles", "andy partridge songwriter"],
+    "music_5015": [1986, "skylarking album", "1987 singles", "colin moulding songwriter"],
+    "music_5016": [1986, "skylarking album", "1987 singles", "andy partridge songwriter", "controversial song"],
+    "music_5017": [1989, "oranges and lemons album", "1989 singles", "andy partridge songwriter"],
+    "music_5018": [1989, "disintegration album", "1989 singles", "robert smith vocals"],
+    "music_5019": [1982, "1982 standalone single", "1982 singles", "siouxsie sioux vocals"],
+    "music_5020": [1984, "hyaena album", "1984 singles", "siouxsie sioux vocals"],
+    "music_5021": [1985, "love album", "1985 singles", "gothic rock"],
+    "music_5022": [1985, "love album", "1985 singles", "gothic rock"],
+    "music_5023": [1987, "electric album", "1987 singles", "hard rock"],
+    "music_5024": [1987, "electric album", "1987 singles", "hard rock"],
+    "music_5025": [1989, "sonic temple album", "1989 singles", "hard rock"],
+    "music_5026": [1989, "sonic temple album", "1989 singles", "edie sedgwick inspiration"],
+    "music_5027": [1982, "long after dark album", "1983 singles", "tom petty songwriting"],
+    "music_5028": [1987, "let me up ive had enough album", "1987 singles", "bob dylan co-writer"],
+    "music_5029": [1985, "southern accents album", "1985 singles", "tom petty songwriting"],
+    "music_5030": [1985, "southern accents album", "1985 singles", "heartland rock"],
+    "music_5031": [1981, "hard promises album", "1981 singles", "tom petty songwriting"],
+    "music_5032": [1982, "long after dark album", "1982 singles", "tom petty songwriting"],
+    "music_5033": [1985, "scarecrow album", "1986 singles", "farming and rural america"],
+    "music_5034": [1985, "scarecrow album", "1986 singles", "american heartland rock"],
+    "music_5035": [1987, "the lonesome jubilee album", "1988 singles", "roots rock"],
+    "music_5036": [1978, "a biography album", "1978 first single", "1979 us reissue", "john cougar stage name", "pat benatar later cover"],
+    "music_5037": [1980, "nothin matters and what if it did album", "1980 singles", "john cougar stage name"],
+    "music_5038": [1980, "nothin matters and what if it did album", "1981 singles", "john cougar stage name"],
+    "music_5039": [1982, "american fool album", "1982 singles", "john cougar stage name", "us top ten singles"],
+    "music_5040": [1982, "american fool album", "1982 singles", "john cougar stage name"],
+    "music_5041": [1981, "dont say no album", "1981 singles", "arena rock"],
+    "music_5042": [1982, "emotions in motion album", "1982 singles", "us mainstream rock number one"],
+    "music_5043": [1982, "emotions in motion album", "1982 singles", "arena rock"],
+    "music_5044": [1984, "signs of life album", "1984 singles", "mtv music videos"],
+    "music_5045": [1984, "signs of life album", "1984 singles", "jim steinman production"],
+    "music_5046": [1982, "three lock box album", "1982 singles", "1983 american chart success"],
+    "music_5047": [1984, "voa album", "1984 singles", "power ballads"],
+    "music_5048": [1987, "over the top film soundtrack", "1987 singles", "film songs", "giorgio moroder and tom whitlock songwriting"],
+    "music_5049": [1987, "i never said goodbye album", "1987 singles", "hard rock"],
+    "music_5050": [1987, "i never said goodbye album", "1987 singles", "hard rock"],
+    "music_5051": [1981, "wild eyed southern boys album", "1981 singles", "southern rock"],
+    "music_5052": [1981, "wild eyed southern boys album", "1981 singles", "album title tracks"],
+    "music_5053": [1983, "tour de force album", "1983 singles", "us top twenty singles"],
+    "music_5054": [1983, "tour de force album", "1984 singles", "gary oconnor songwriter"],
+    "music_5055": [1984, "teachers film soundtrack", "1984 singles", "bryan adams and jim vallance songwriting", "film songs"],
+    "music_5056": [1986, "strength in numbers album", "1986 singles", "arena rock"],
+    "music_5057": [1979, "rockin into the night album", "1980 singles", "album title tracks"],
+    "music_5058": [1981, "wild eyed southern boys album", "1981 singles", "southern rock"],
+    "music_5059": [1986, "tuff enuff album", "1986 singles", "kim wilson songwriting"],
+    "music_5060": [1986, "tuff enuff album", "1986 singles", "sam and dave original", "cover versions", "isaac hayes and david porter songwriting"],
+    "music_5061": [1988, "cocktail film soundtrack", "1988 singles", "1989 powerful stuff album", "film songs"],
+    "music_5062": [1986, "georgia satellites debut album", "1986 singles", "dan baird songwriter"],
+    "music_5063": [1986, "georgia satellites debut album", "1987 singles", "terry anderson songwriter"],
+    "music_5064": [1988, "cocktail film soundtrack", "1988 singles", "chan romero original", "cover versions"],
+    "music_5065": [1980, "anytime anyplace anywhere album", "1980 singles", "dale krantz vocals", "lynyrd skynyrd related groups"],
+    "music_5066": [1981, "this is the way album", "1982 singles", "dale krantz and gary rossington songwriting"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const detail = recordingTags[id];
+    if (!artist || !detail) throw new Error(`Missing metadata for ${id}`);
+    const song = question.match(/recorded '(.+)'/);
+    if (!song) throw new Error(`Missing song title for ${id}`);
+    const year = detail[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", "songs", "recordings", decade, `${decade} music`,
+            `${year} releases`, song[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...artist, ...detail.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
 const quizPack69 = [
-    {
-        id: "music_4967",
-        category: "Music",
-        question: "Which artist recorded 'Has Anyone Ever Written Anything for You'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Belinda Carlisle", "Bonnie Tyler"],
-        correctAnswer: "Stevie Nicks"
-    },
-    {
-        id: "music_4968",
-        category: "Music",
-        question: "Which artist recorded 'Long Way to Go'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Cher", "Belinda Carlisle"],
-        correctAnswer: "Stevie Nicks"
-    },
-    {
-        id: "music_4969",
-        category: "Music",
-        question: "Which artist recorded 'Nightbird'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Tyler"],
-        correctAnswer: "Stevie Nicks"
-    },
-    {
-        id: "music_4970",
-        category: "Music",
-        question: "Which artist recorded 'After the Glitter Fades'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Belinda Carlisle"],
-        correctAnswer: "Stevie Nicks"
-    },
-    {
-        id: "music_4971",
-        category: "Music",
-        question: "Which artist recorded 'If Anyone Falls'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Cher", "Bonnie Tyler"],
-        correctAnswer: "Stevie Nicks"
-    },
-    {
-        id: "music_4972",
-        category: "Music",
-        question: "Which artist recorded 'Sex as a Weapon'?",
-        answers: ["Pat Benatar", "Stevie Nicks", "Kim Wilde", "Bonnie Tyler"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_4973",
-        category: "Music",
-        question: "Which artist recorded 'Le Bel Age'?",
-        answers: ["Pat Benatar", "Stevie Nicks", "Belinda Carlisle", "Kim Carnes"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_4974",
-        category: "Music",
-        question: "Which artist recorded 'Ooh Ooh Song'?",
-        answers: ["Pat Benatar", "Stevie Nicks", "Bonnie Tyler", "Kim Wilde"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_4975",
-        category: "Music",
-        question: "Which group recorded 'Family Man'?",
-        answers: ["Fleetwood Mac", "Genesis", "Heart", "Foreigner"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_4976",
-        category: "Music",
-        question: "Which group recorded 'Isn't It Midnight'?",
-        answers: ["Fleetwood Mac", "Heart", "Genesis", "Foreigner"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_4977",
-        category: "Music",
-        question: "Which artist recorded 'Go Insane'?",
-        answers: ["Lindsey Buckingham", "Don Henley", "Steve Winwood", "Glenn Frey"],
-        correctAnswer: "Lindsey Buckingham"
-    },
-    {
-        id: "music_4978",
-        category: "Music",
-        question: "Which artist recorded 'Slow Dancing'?",
-        answers: ["Lindsey Buckingham", "Don Henley", "Glenn Frey", "Steve Winwood"],
-        correctAnswer: "Lindsey Buckingham"
-    },
-    {
-        id: "music_4979",
-        category: "Music",
-        question: "Which artist recorded 'Holiday Road'?",
-        answers: ["Lindsey Buckingham", "Don Henley", "Glenn Frey", "Steve Winwood"],
-        correctAnswer: "Lindsey Buckingham"
-    },
-    {
-        id: "music_4980",
-        category: "Music",
-        question: "Which artist recorded 'Trouble'?",
-        answers: ["Lindsey Buckingham", "Don Henley", "Glenn Frey", "Steve Winwood"],
-        correctAnswer: "Lindsey Buckingham"
-    },
-    {
-        id: "music_4981",
-        category: "Music",
-        question: "Which artist recorded 'Got a Hold on Me'?",
-        answers: ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"],
-        correctAnswer: "Christine McVie"
-    },
-    {
-        id: "music_4982",
-        category: "Music",
-        question: "Which artist recorded 'Love Will Show Us How'?",
-        answers: ["Christine McVie", "Stevie Nicks", "Belinda Carlisle", "Kim Carnes"],
-        correctAnswer: "Christine McVie"
-    },
-    {
-        id: "music_4983",
-        category: "Music",
-        question: "Which artist recorded 'Love Never Dies'?",
-        answers: ["Belinda Carlisle", "Pat Benatar", "Kim Wilde", "Stevie Nicks"],
-        correctAnswer: "Belinda Carlisle"
-    },
-    {
-        id: "music_4984",
-        category: "Music",
-        question: "Which group recorded 'Head Over Heels'?",
-        answers: ["The Go-Go's", "The Bangles", "The Pretenders", "The Motels"],
-        correctAnswer: "The Go-Go's"
-    },
-    {
-        id: "music_4985",
-        category: "Music",
-        question: "Which group recorded 'Turn to You'?",
-        answers: ["The Go-Go's", "The Bangles", "The Pretenders", "The Motels"],
-        correctAnswer: "The Go-Go's"
-    },
-    {
-        id: "music_4986",
-        category: "Music",
-        question: "Which group recorded 'Vacation'?",
-        answers: ["The Go-Go's", "The Bangles", "The Pretenders", "The Motels"],
-        correctAnswer: "The Go-Go's"
-    },
-    {
-        id: "music_4987",
-        category: "Music",
-        question: "Which group recorded 'Get Up and Go'?",
-        answers: ["The Go-Go's", "The Bangles", "The Pretenders", "The Motels"],
-        correctAnswer: "The Go-Go's"
-    },
-    {
-        id: "music_4988",
-        category: "Music",
-        question: "Which group recorded 'The Warrior'?",
-        answers: ["Scandal", "Berlin", "The Motels", "Romeo Void"],
-        correctAnswer: "Scandal"
-    },
-    {
-        id: "music_4989",
-        category: "Music",
-        question: "Which group recorded 'Goodbye to You'?",
-        answers: ["Scandal", "Berlin", "The Motels", "Missing Persons"],
-        correctAnswer: "Scandal"
-    },
-    {
-        id: "music_4990",
-        category: "Music",
-        question: "Which group recorded 'Hands Tied'?",
-        answers: ["Scandal", "Berlin", "The Motels", "Romeo Void"],
-        correctAnswer: "Scandal"
-    },
-    {
-        id: "music_4991",
-        category: "Music",
-        question: "Which artist recorded 'Heartbreaker'?",
-        answers: ["Pat Benatar", "Stevie Nicks", "Kim Carnes", "Bonnie Tyler"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_4992",
-        category: "Music",
-        question: "Which artist recorded 'Promises in the Dark'?",
-        answers: ["Pat Benatar", "Stevie Nicks", "Bonnie Tyler", "Kim Wilde"],
-        correctAnswer: "Pat Benatar"
-    },
-    {
-        id: "music_4993",
-        category: "Music",
-        question: "Which artist recorded 'I Don't Wanna Know'?",
-        answers: ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Paul Carrack"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_4994",
-        category: "Music",
-        question: "Which group recorded 'Illegal Alien'?",
-        answers: ["Genesis", "Yes", "Asia", "Foreigner"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_4995",
-        category: "Music",
-        question: "Which group recorded 'Taking It All Too Hard'?",
-        answers: ["Genesis", "Yes", "Asia", "Foreigner"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_4996",
-        category: "Music",
-        question: "Which group recorded 'In Too Deep'?",
-        answers: ["Genesis", "Yes", "Asia", "Foreigner"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_4997",
-        category: "Music",
-        question: "Which group recorded 'Throwing It All Away'?",
-        answers: ["Genesis", "Yes", "Asia", "Foreigner"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_4998",
-        category: "Music",
-        question: "Which group recorded 'Taken In'?",
-        answers: ["Mike + The Mechanics", "Genesis", "Asia", "Yes"],
-        correctAnswer: "Mike + The Mechanics"
-    },
-    {
-        id: "music_4999",
-        category: "Music",
-        question: "Which group recorded 'Don't Answer Me'?",
-        answers: ["The Alan Parsons Project", "Supertramp", "Toto", "Asia"],
-        correctAnswer: "The Alan Parsons Project"
-    },
-
-    // =========================================================
-    // MUSIC QUESTION 5000
-    // =========================================================
-    {
-        id: "music_5000",
-        category: "Music",
-        question: "Which artist recorded 'Stand Back'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Belinda Carlisle", "Kim Carnes"],
-        correctAnswer: "Stevie Nicks"
-    },
-
-    {
-        id: "music_5001",
-        category: "Music",
-        question: "Which group recorded 'Prime Time'?",
-        answers: ["The Alan Parsons Project", "Supertramp", "Toto", "Asia"],
-        correctAnswer: "The Alan Parsons Project"
-    },
-    {
-        id: "music_5002",
-        category: "Music",
-        question: "Which group recorded 'Eye in the Sky'?",
-        answers: ["The Alan Parsons Project", "Supertramp", "Toto", "Asia"],
-        correctAnswer: "The Alan Parsons Project"
-    },
-    {
-        id: "music_5003",
-        category: "Music",
-        question: "Which group recorded 'Games People Play'?",
-        answers: ["The Alan Parsons Project", "Supertramp", "Toto", "Asia"],
-        correctAnswer: "The Alan Parsons Project"
-    },
-    {
-        id: "music_5004",
-        category: "Music",
-        question: "Which group recorded 'Time'?",
-        answers: ["The Alan Parsons Project", "Supertramp", "Toto", "Asia"],
-        correctAnswer: "The Alan Parsons Project"
-    },
-    {
-        id: "music_5005",
-        category: "Music",
-        question: "Which group recorded 'Only Time Will Tell'?",
-        answers: ["Asia", "Yes", "Journey", "Foreigner"],
-        correctAnswer: "Asia"
-    },
-    {
-        id: "music_5006",
-        category: "Music",
-        question: "Which group recorded 'The Smile Has Left Your Eyes'?",
-        answers: ["Asia", "Yes", "Journey", "Foreigner"],
-        correctAnswer: "Asia"
-    },
-    {
-        id: "music_5007",
-        category: "Music",
-        question: "Which group recorded 'Go'?",
-        answers: ["Asia", "Yes", "Journey", "Foreigner"],
-        correctAnswer: "Asia"
-    },
-    {
-        id: "music_5008",
-        category: "Music",
-        question: "Which group recorded 'Leave It'?",
-        answers: ["Yes", "Asia", "Genesis", "Rush"],
-        correctAnswer: "Yes"
-    },
-    {
-        id: "music_5009",
-        category: "Music",
-        question: "Which group recorded 'It Can Happen'?",
-        answers: ["Yes", "Asia", "Genesis", "Rush"],
-        correctAnswer: "Yes"
-    },
-    {
-        id: "music_5010",
-        category: "Music",
-        question: "Which group recorded 'Rhythm of Love'?",
-        answers: ["Yes", "Asia", "Genesis", "Rush"],
-        correctAnswer: "Yes"
-    },
-    {
-        id: "music_5011",
-        category: "Music",
-        question: "Which group recorded 'Heart of Lothian'?",
-        answers: ["Marillion", "Genesis", "Yes", "Asia"],
-        correctAnswer: "Marillion"
-    },
-    {
-        id: "music_5012",
-        category: "Music",
-        question: "Which group recorded 'Ball and Chain'?",
-        answers: ["XTC", "Squeeze", "The Jam", "The Stranglers"],
-        correctAnswer: "XTC"
-    },
-    {
-        id: "music_5013",
-        category: "Music",
-        question: "Which group recorded 'Wonderland'?",
-        answers: ["XTC", "Squeeze", "The Jam", "The Stranglers"],
-        correctAnswer: "XTC"
-    },
-    {
-        id: "music_5014",
-        category: "Music",
-        question: "Which group recorded 'All You Pretty Girls'?",
-        answers: ["XTC", "Squeeze", "The Jam", "The Stranglers"],
-        correctAnswer: "XTC"
-    },
-    {
-        id: "music_5015",
-        category: "Music",
-        question: "Which group recorded 'The Meeting Place'?",
-        answers: ["XTC", "Squeeze", "The Jam", "The Stranglers"],
-        correctAnswer: "XTC"
-    },
-    {
-        id: "music_5016",
-        category: "Music",
-        question: "Which group recorded 'Dear God'?",
-        answers: ["XTC", "Squeeze", "The Jam", "The Stranglers"],
-        correctAnswer: "XTC"
-    },
-    {
-        id: "music_5017",
-        category: "Music",
-        question: "Which group recorded 'The Mayor of Simpleton'?",
-        answers: ["XTC", "Squeeze", "The Jam", "The Stranglers"],
-        correctAnswer: "XTC"
-    },
-    {
-        id: "music_5018",
-        category: "Music",
-        question: "Which group recorded 'Fascination Street'?",
-        answers: ["The Cure", "The Cult", "Siouxsie and the Banshees", "The Mission"],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_5019",
-        category: "Music",
-        question: "Which group recorded 'Fireworks'?",
-        answers: ["Siouxsie and the Banshees", "The Cure", "The Cult", "The Mission"],
-        correctAnswer: "Siouxsie and the Banshees"
-    },
-    {
-        id: "music_5020",
-        category: "Music",
-        question: "Which group recorded 'Swimming Horses'?",
-        answers: ["Siouxsie and the Banshees", "The Cure", "The Cult", "The Mission"],
-        correctAnswer: "Siouxsie and the Banshees"
-    },
-    {
-        id: "music_5021",
-        category: "Music",
-        question: "Which group recorded 'Rain'?",
-        answers: ["The Cult", "The Mission", "The Cure", "Killing Joke"],
-        correctAnswer: "The Cult"
-    },
-    {
-        id: "music_5022",
-        category: "Music",
-        question: "Which group recorded 'Revolution'?",
-        answers: ["The Cult", "The Mission", "The Cure", "Killing Joke"],
-        correctAnswer: "The Cult"
-    },
-    {
-        id: "music_5023",
-        category: "Music",
-        question: "Which group recorded 'Lil' Devil'?",
-        answers: ["The Cult", "The Mission", "The Cure", "Killing Joke"],
-        correctAnswer: "The Cult"
-    },
-    {
-        id: "music_5024",
-        category: "Music",
-        question: "Which group recorded 'Wild Flower'?",
-        answers: ["The Cult", "The Mission", "The Cure", "Killing Joke"],
-        correctAnswer: "The Cult"
-    },
-    {
-        id: "music_5025",
-        category: "Music",
-        question: "Which group recorded 'Fire Woman'?",
-        answers: ["The Cult", "The Mission", "The Cure", "Killing Joke"],
-        correctAnswer: "The Cult"
-    },
-    {
-        id: "music_5026",
-        category: "Music",
-        question: "Which group recorded 'Edie (Ciao Baby)'?",
-        answers: ["The Cult", "The Mission", "The Cure", "Killing Joke"],
-        correctAnswer: "The Cult"
-    },
-    {
-        id: "music_5027",
-        category: "Music",
-        question: "Which group recorded 'Change of Heart'?",
-        answers: ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5028",
-        category: "Music",
-        question: "Which group recorded 'Jammin' Me'?",
-        answers: ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5029",
-        category: "Music",
-        question: "Which group recorded 'Make It Better (Forget About Me)'?",
-        answers: ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5030",
-        category: "Music",
-        question: "Which group recorded 'Rebels'?",
-        answers: ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5031",
-        category: "Music",
-        question: "Which group recorded 'A Woman in Love (It's Not Me)'?",
-        answers: ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5032",
-        category: "Music",
-        question: "Which group recorded 'You Got Lucky'?",
-        answers: ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5033",
-        category: "Music",
-        question: "Which artist recorded 'Rain on the Scarecrow'?",
-        answers: ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_5034",
-        category: "Music",
-        question: "Which artist recorded 'Rumbleseat'?",
-        answers: ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_5035",
-        category: "Music",
-        question: "Which artist recorded 'Check It Out'?",
-        answers: ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_5036",
-        category: "Music",
-        question: "Which artist recorded 'I Need a Lover'?",
-        answers: ["John Cougar", "Eddie Money", "Billy Squier", "Rick Springfield"],
-        correctAnswer: "John Cougar"
-    },
-    {
-        id: "music_5037",
-        category: "Music",
-        question: "Which artist recorded 'This Time'?",
-        answers: ["John Cougar", "Eddie Money", "Billy Squier", "Rick Springfield"],
-        correctAnswer: "John Cougar"
-    },
-    {
-        id: "music_5038",
-        category: "Music",
-        question: "Which artist recorded 'Ain't Even Done with the Night'?",
-        answers: ["John Cougar", "Eddie Money", "Billy Squier", "Rick Springfield"],
-        correctAnswer: "John Cougar"
-    },
-    {
-        id: "music_5039",
-        category: "Music",
-        question: "Which artist recorded 'Hurts So Good'?",
-        answers: ["John Cougar", "Eddie Money", "Billy Squier", "Rick Springfield"],
-        correctAnswer: "John Cougar"
-    },
-    {
-        id: "music_5040",
-        category: "Music",
-        question: "Which artist recorded 'Hand to Hold on To'?",
-        answers: ["John Cougar", "Eddie Money", "Billy Squier", "Rick Springfield"],
-        correctAnswer: "John Cougar"
-    },
-    {
-        id: "music_5041",
-        category: "Music",
-        question: "Which artist recorded 'My Kinda Lover'?",
-        answers: ["Billy Squier", "Eddie Money", "Sammy Hagar", "Rick Springfield"],
-        correctAnswer: "Billy Squier"
-    },
-    {
-        id: "music_5042",
-        category: "Music",
-        question: "Which artist recorded 'Everybody Wants You'?",
-        answers: ["Billy Squier", "Eddie Money", "Sammy Hagar", "Rick Springfield"],
-        correctAnswer: "Billy Squier"
-    },
-    {
-        id: "music_5043",
-        category: "Music",
-        question: "Which artist recorded 'Learn How to Live'?",
-        answers: ["Billy Squier", "Eddie Money", "Sammy Hagar", "Rick Springfield"],
-        correctAnswer: "Billy Squier"
-    },
-    {
-        id: "music_5044",
-        category: "Music",
-        question: "Which artist recorded 'Rock Me Tonite'?",
-        answers: ["Billy Squier", "Eddie Money", "Sammy Hagar", "Rick Springfield"],
-        correctAnswer: "Billy Squier"
-    },
-    {
-        id: "music_5045",
-        category: "Music",
-        question: "Which artist recorded 'All Night Long'?",
-        answers: ["Billy Squier", "Eddie Money", "Sammy Hagar", "Rick Springfield"],
-        correctAnswer: "Billy Squier"
-    },
-    {
-        id: "music_5046",
-        category: "Music",
-        question: "Which artist recorded 'Your Love Is Driving Me Crazy'?",
-        answers: ["Sammy Hagar", "Billy Squier", "Eddie Money", "Rick Springfield"],
-        correctAnswer: "Sammy Hagar"
-    },
-    {
-        id: "music_5047",
-        category: "Music",
-        question: "Which artist recorded 'Two Sides of Love'?",
-        answers: ["Sammy Hagar", "Billy Squier", "Eddie Money", "Rick Springfield"],
-        correctAnswer: "Sammy Hagar"
-    },
-    {
-        id: "music_5048",
-        category: "Music",
-        question: "Which artist recorded 'Winner Takes It All'?",
-        answers: ["Sammy Hagar", "Billy Squier", "Eddie Money", "Rick Springfield"],
-        correctAnswer: "Sammy Hagar"
-    },
-    {
-        id: "music_5049",
-        category: "Music",
-        question: "Which artist recorded 'Give to Live'?",
-        answers: ["Sammy Hagar", "Billy Squier", "Eddie Money", "Rick Springfield"],
-        correctAnswer: "Sammy Hagar"
-    },
-    {
-        id: "music_5050",
-        category: "Music",
-        question: "Which artist recorded 'Eagles Fly'?",
-        answers: ["Sammy Hagar", "Billy Squier", "Eddie Money", "Rick Springfield"],
-        correctAnswer: "Sammy Hagar"
-    },
-    {
-        id: "music_5051",
-        category: "Music",
-        question: "Which group recorded 'Fantasy Girl'?",
-        answers: ["38 Special", "Foreigner", "Loverboy", "Survivor"],
-        correctAnswer: "38 Special"
-    },
-    {
-        id: "music_5052",
-        category: "Music",
-        question: "Which group recorded 'Wild-Eyed Southern Boys'?",
-        answers: ["38 Special", "Foreigner", "Loverboy", "Survivor"],
-        correctAnswer: "38 Special"
-    },
-    {
-        id: "music_5053",
-        category: "Music",
-        question: "Which group recorded 'If I'd Been the One'?",
-        answers: ["38 Special", "Foreigner", "Loverboy", "Survivor"],
-        correctAnswer: "38 Special"
-    },
-    {
-        id: "music_5054",
-        category: "Music",
-        question: "Which group recorded 'Back Where You Belong'?",
-        answers: ["38 Special", "Foreigner", "Loverboy", "Survivor"],
-        correctAnswer: "38 Special"
-    },
-    {
-        id: "music_5055",
-        category: "Music",
-        question: "Which group recorded 'Teacher Teacher'?",
-        answers: ["38 Special", "Foreigner", "Loverboy", "Survivor"],
-        correctAnswer: "38 Special"
-    },
-    {
-        id: "music_5056",
-        category: "Music",
-        question: "Which group recorded 'Like No Other Night'?",
-        answers: ["38 Special", "Foreigner", "Loverboy", "Survivor"],
-        correctAnswer: "38 Special"
-    },
-    {
-        id: "music_5057",
-        category: "Music",
-        question: "Which group recorded 'Rockin' into the Night'?",
-        answers: ["38 Special", "Foreigner", "Loverboy", "Survivor"],
-        correctAnswer: "38 Special"
-    },
-    {
-        id: "music_5058",
-        category: "Music",
-        question: "Which group recorded 'Hold On Loosely'?",
-        answers: ["38 Special", "Foreigner", "Loverboy", "Survivor"],
-        correctAnswer: "38 Special"
-    },
-    {
-        id: "music_5059",
-        category: "Music",
-        question: "Which group recorded 'Tuff Enuff'?",
-        answers: ["The Fabulous Thunderbirds", "The Georgia Satellites", "38 Special", "The Outfield"],
-        correctAnswer: "The Fabulous Thunderbirds"
-    },
-    {
-        id: "music_5060",
-        category: "Music",
-        question: "Which group recorded 'Wrap It Up'?",
-        answers: ["The Fabulous Thunderbirds", "The Georgia Satellites", "38 Special", "The Outfield"],
-        correctAnswer: "The Fabulous Thunderbirds"
-    },
-    {
-        id: "music_5061",
-        category: "Music",
-        question: "Which group recorded 'Powerful Stuff'?",
-        answers: ["The Fabulous Thunderbirds", "The Georgia Satellites", "38 Special", "The Outfield"],
-        correctAnswer: "The Fabulous Thunderbirds"
-    },
-    {
-        id: "music_5062",
-        category: "Music",
-        question: "Which group recorded 'Keep Your Hands to Yourself'?",
-        answers: ["The Georgia Satellites", "The Fabulous Thunderbirds", "38 Special", "The Outfield"],
-        correctAnswer: "The Georgia Satellites"
-    },
-    {
-        id: "music_5063",
-        category: "Music",
-        question: "Which group recorded 'Battleship Chains'?",
-        answers: ["The Georgia Satellites", "The Fabulous Thunderbirds", "38 Special", "The Outfield"],
-        correctAnswer: "The Georgia Satellites"
-    },
-    {
-        id: "music_5064",
-        category: "Music",
-        question: "Which group recorded 'Hippy Hippy Shake'?",
-        answers: ["The Georgia Satellites", "The Fabulous Thunderbirds", "38 Special", "The Outfield"],
-        correctAnswer: "The Georgia Satellites"
-    },
-    {
-        id: "music_5065",
-        category: "Music",
-        question: "Which group recorded 'Don't Misunderstand Me'?",
-        answers: ["Rossington Collins Band", "38 Special", "The Georgia Satellites", "The Fabulous Thunderbirds"],
-        correctAnswer: "Rossington Collins Band"
-    },
-    {
-        id: "music_5066",
-        category: "Music",
-        question: "Which group recorded 'Tashauna'?",
-        answers: ["Rossington Collins Band", "38 Special", "The Georgia Satellites", "The Fabulous Thunderbirds"],
-        correctAnswer: "Rossington Collins Band"
-    }
+    makeQuestion("music_4967", "Which artist recorded 'Has Anyone Ever Written Anything for You'?", ["Stevie Nicks", "Pat Benatar", "Belinda Carlisle", "Bonnie Tyler"], "Stevie Nicks", "Medium"),
+    makeQuestion("music_4968", "Which artist recorded 'Long Way to Go'?", ["Stevie Nicks", "Pat Benatar", "Cher", "Belinda Carlisle"], "Stevie Nicks", "Hard"),
+    makeQuestion("music_4969", "Which artist recorded 'Nightbird'?", ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Tyler"], "Stevie Nicks", "Medium"),
+    makeQuestion("music_4970", "Which artist recorded 'After the Glitter Fades'?", ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Belinda Carlisle"], "Stevie Nicks", "Hard"),
+    makeQuestion("music_4971", "Which artist recorded 'If Anyone Falls'?", ["Stevie Nicks", "Pat Benatar", "Cher", "Bonnie Tyler"], "Stevie Nicks", "Easy"),
+    makeQuestion("music_4972", "Which artist recorded 'Sex as a Weapon'?", ["Pat Benatar", "Stevie Nicks", "Kim Wilde", "Bonnie Tyler"], "Pat Benatar", "Medium"),
+    makeQuestion("music_4973", "Which artist recorded 'Le Bel Age'?", ["Pat Benatar", "Stevie Nicks", "Belinda Carlisle", "Kim Carnes"], "Pat Benatar", "Hard"),
+    makeQuestion("music_4974", "Which artist recorded 'Ooh Ooh Song'?", ["Pat Benatar", "Stevie Nicks", "Bonnie Tyler", "Kim Wilde"], "Pat Benatar", "Medium"),
+    makeQuestion("music_4975", "Which group recorded 'Family Man'?", ["Fleetwood Mac", "Genesis", "Heart", "Foreigner"], "Fleetwood Mac", "Easy"),
+    makeQuestion("music_4976", "Which group recorded 'Isn't It Midnight'?", ["Fleetwood Mac", "Heart", "Genesis", "Foreigner"], "Fleetwood Mac", "Medium"),
+    makeQuestion("music_4977", "Which artist recorded 'Go Insane'?", ["Lindsey Buckingham", "Don Henley", "Steve Winwood", "Glenn Frey"], "Lindsey Buckingham", "Medium"),
+    makeQuestion("music_4978", "Which artist recorded 'Slow Dancing'?", ["Lindsey Buckingham", "Don Henley", "Glenn Frey", "Steve Winwood"], "Lindsey Buckingham", "Hard"),
+    makeQuestion("music_4979", "Which artist recorded 'Holiday Road'?", ["Lindsey Buckingham", "Don Henley", "Glenn Frey", "Steve Winwood"], "Lindsey Buckingham", "Medium"),
+    makeQuestion("music_4980", "Which artist recorded 'Trouble'?", ["Lindsey Buckingham", "Don Henley", "Glenn Frey", "Steve Winwood"], "Lindsey Buckingham", "Medium"),
+    makeQuestion("music_4981", "Which artist recorded 'Got a Hold on Me'?", ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"], "Christine McVie", "Medium"),
+    makeQuestion("music_4982", "Which artist recorded 'Love Will Show Us How'?", ["Christine McVie", "Stevie Nicks", "Belinda Carlisle", "Kim Carnes"], "Christine McVie", "Hard"),
+    makeQuestion("music_4983", "Which artist recorded 'Love Never Dies'?", ["Belinda Carlisle", "Pat Benatar", "Kim Wilde", "Stevie Nicks"], "Belinda Carlisle", "Medium"),
+    makeQuestion("music_4984", "Which group recorded 'Head Over Heels'?", ["The Go-Go's", "The Bangles", "The Pretenders", "The Motels"], "The Go-Go's", "Easy"),
+    makeQuestion("music_4985", "Which group recorded 'Turn to You'?", ["The Go-Go's", "The Bangles", "The Pretenders", "The Motels"], "The Go-Go's", "Medium"),
+    makeQuestion("music_4986", "Which group recorded 'Vacation'?", ["The Go-Go's", "The Bangles", "The Pretenders", "The Motels"], "The Go-Go's", "Easy"),
+    makeQuestion("music_4987", "Which group recorded 'Get Up and Go'?", ["The Go-Go's", "The Bangles", "The Pretenders", "The Motels"], "The Go-Go's", "Hard"),
+    makeQuestion("music_4988", "Which group recorded 'The Warrior'?", ["Scandal", "Berlin", "The Motels", "Romeo Void"], "Scandal", "Easy"),
+    makeQuestion("music_4989", "Which group recorded 'Goodbye to You'?", ["Scandal", "Berlin", "The Motels", "Missing Persons"], "Scandal", "Medium"),
+    makeQuestion("music_4990", "Which group recorded 'Hands Tied'?", ["Scandal", "Berlin", "The Motels", "Romeo Void"], "Scandal", "Hard"),
+    makeQuestion("music_4991", "Which artist recorded 'Heartbreaker'?", ["Pat Benatar", "Stevie Nicks", "Kim Carnes", "Bonnie Tyler"], "Pat Benatar", "Easy"),
+    makeQuestion("music_4992", "Which artist recorded 'Promises in the Dark'?", ["Pat Benatar", "Stevie Nicks", "Bonnie Tyler", "Kim Wilde"], "Pat Benatar", "Medium"),
+    makeQuestion("music_4993", "Which artist recorded 'I Don't Wanna Know'?", ["Phil Collins", "Peter Gabriel", "Steve Winwood", "Paul Carrack"], "Phil Collins", "Hard"),
+    makeQuestion("music_4994", "Which group recorded 'Illegal Alien'?", ["Genesis", "Yes", "Asia", "Foreigner"], "Genesis", "Medium"),
+    makeQuestion("music_4995", "Which group recorded 'Taking It All Too Hard'?", ["Genesis", "Yes", "Asia", "Foreigner"], "Genesis", "Medium"),
+    makeQuestion("music_4996", "Which group recorded 'In Too Deep'?", ["Genesis", "Yes", "Asia", "Foreigner"], "Genesis", "Easy"),
+    makeQuestion("music_4997", "Which group recorded 'Throwing It All Away'?", ["Genesis", "Yes", "Asia", "Foreigner"], "Genesis", "Easy"),
+    makeQuestion("music_4998", "Which group recorded 'Taken In'?", ["Mike + The Mechanics", "Genesis", "Asia", "Yes"], "Mike + The Mechanics", "Medium"),
+    makeQuestion("music_4999", "Which group recorded 'Don't Answer Me'?", ["The Alan Parsons Project", "Supertramp", "Toto", "Asia"], "The Alan Parsons Project", "Easy"),
+    // Milestone: the 5,000th Music question.
+    makeQuestion("music_5000", "Which artist recorded 'Stand Back'?", ["Stevie Nicks", "Pat Benatar", "Belinda Carlisle", "Kim Carnes"], "Stevie Nicks", "Easy"),
+    makeQuestion("music_5001", "Which group recorded 'Prime Time'?", ["The Alan Parsons Project", "Supertramp", "Toto", "Asia"], "The Alan Parsons Project", "Medium"),
+    makeQuestion("music_5002", "Which group recorded 'Eye in the Sky'?", ["The Alan Parsons Project", "Supertramp", "Toto", "Asia"], "The Alan Parsons Project", "Easy"),
+    makeQuestion("music_5003", "Which group recorded 'Games People Play'?", ["The Alan Parsons Project", "Supertramp", "Toto", "Asia"], "The Alan Parsons Project", "Medium"),
+    makeQuestion("music_5004", "Which group recorded 'Time'?", ["The Alan Parsons Project", "Supertramp", "Toto", "Asia"], "The Alan Parsons Project", "Medium"),
+    makeQuestion("music_5005", "Which group recorded 'Only Time Will Tell'?", ["Asia", "Yes", "Journey", "Foreigner"], "Asia", "Easy"),
+    makeQuestion("music_5006", "Which group recorded 'The Smile Has Left Your Eyes'?", ["Asia", "Yes", "Journey", "Foreigner"], "Asia", "Medium"),
+    makeQuestion("music_5007", "Which group recorded 'Go'?", ["Asia", "Yes", "Journey", "Foreigner"], "Asia", "Hard"),
+    makeQuestion("music_5008", "Which group recorded 'Leave It'?", ["Yes", "Asia", "Genesis", "Rush"], "Yes", "Easy"),
+    makeQuestion("music_5009", "Which group recorded 'It Can Happen'?", ["Yes", "Asia", "Genesis", "Rush"], "Yes", "Medium"),
+    makeQuestion("music_5010", "Which group recorded 'Rhythm of Love'?", ["Yes", "Asia", "Genesis", "Rush"], "Yes", "Medium"),
+    makeQuestion("music_5011", "Which group recorded 'Heart of Lothian'?", ["Marillion", "Genesis", "Yes", "Asia"], "Marillion", "Medium"),
+    makeQuestion("music_5012", "Which group recorded 'Ball and Chain'?", ["XTC", "Squeeze", "The Jam", "The Stranglers"], "XTC", "Hard"),
+    makeQuestion("music_5013", "Which group recorded 'Wonderland'?", ["XTC", "Squeeze", "The Jam", "The Stranglers"], "XTC", "Hard"),
+    makeQuestion("music_5014", "Which group recorded 'All You Pretty Girls'?", ["XTC", "Squeeze", "The Jam", "The Stranglers"], "XTC", "Hard"),
+    makeQuestion("music_5015", "Which group recorded 'The Meeting Place'?", ["XTC", "Squeeze", "The Jam", "The Stranglers"], "XTC", "Hard"),
+    makeQuestion("music_5016", "Which group recorded 'Dear God'?", ["XTC", "Squeeze", "The Jam", "The Stranglers"], "XTC", "Easy"),
+    makeQuestion("music_5017", "Which group recorded 'The Mayor of Simpleton'?", ["XTC", "Squeeze", "The Jam", "The Stranglers"], "XTC", "Hard"),
+    makeQuestion("music_5018", "Which group recorded 'Fascination Street'?", ["The Cure", "The Cult", "Siouxsie and the Banshees", "The Mission"], "The Cure", "Medium"),
+    makeQuestion("music_5019", "Which group recorded 'Fireworks'?", ["Siouxsie and the Banshees", "The Cure", "The Cult", "The Mission"], "Siouxsie and the Banshees", "Medium"),
+    makeQuestion("music_5020", "Which group recorded 'Swimming Horses'?", ["Siouxsie and the Banshees", "The Cure", "The Cult", "The Mission"], "Siouxsie and the Banshees", "Hard"),
+    makeQuestion("music_5021", "Which group recorded 'Rain'?", ["The Cult", "The Mission", "The Cure", "Killing Joke"], "The Cult", "Medium"),
+    makeQuestion("music_5022", "Which group recorded 'Revolution'?", ["The Cult", "The Mission", "The Cure", "Killing Joke"], "The Cult", "Medium"),
+    makeQuestion("music_5023", "Which group recorded 'Lil' Devil'?", ["The Cult", "The Mission", "The Cure", "Killing Joke"], "The Cult", "Medium"),
+    makeQuestion("music_5024", "Which group recorded 'Wild Flower'?", ["The Cult", "The Mission", "The Cure", "Killing Joke"], "The Cult", "Medium"),
+    makeQuestion("music_5025", "Which group recorded 'Fire Woman'?", ["The Cult", "The Mission", "The Cure", "Killing Joke"], "The Cult", "Easy"),
+    makeQuestion("music_5026", "Which group recorded 'Edie (Ciao Baby)'?", ["The Cult", "The Mission", "The Cure", "Killing Joke"], "The Cult", "Hard"),
+    makeQuestion("music_5027", "Which group recorded 'Change of Heart'?", ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"], "Tom Petty and the Heartbreakers", "Medium"),
+    makeQuestion("music_5028", "Which group recorded 'Jammin' Me'?", ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"], "Tom Petty and the Heartbreakers", "Medium"),
+    makeQuestion("music_5029", "Which group recorded 'Make It Better (Forget About Me)'?", ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"], "Tom Petty and the Heartbreakers", "Hard"),
+    makeQuestion("music_5030", "Which group recorded 'Rebels'?", ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"], "Tom Petty and the Heartbreakers", "Hard"),
+    makeQuestion("music_5031", "Which group recorded 'A Woman in Love (It's Not Me)'?", ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"], "Tom Petty and the Heartbreakers", "Hard"),
+    makeQuestion("music_5032", "Which group recorded 'You Got Lucky'?", ["Tom Petty and the Heartbreakers", "38 Special", "Foreigner", "The Cars"], "Tom Petty and the Heartbreakers", "Easy"),
+    makeQuestion("music_5033", "Which artist recorded 'Rain on the Scarecrow'?", ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Mellencamp", "Medium"),
+    makeQuestion("music_5034", "Which artist recorded 'Rumbleseat'?", ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Mellencamp", "Hard"),
+    makeQuestion("music_5035", "Which artist recorded 'Check It Out'?", ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Mellencamp", "Medium"),
+    makeQuestion("music_5036", "Which artist recorded 'I Need a Lover'?", ["John Cougar", "Eddie Money", "Billy Squier", "Rick Springfield"], "John Cougar", "Medium"),
+    makeQuestion("music_5037", "Which artist recorded 'This Time'?", ["John Cougar", "Eddie Money", "Billy Squier", "Rick Springfield"], "John Cougar", "Hard"),
+    makeQuestion("music_5038", "Which artist recorded 'Ain't Even Done with the Night'?", ["John Cougar", "Eddie Money", "Billy Squier", "Rick Springfield"], "John Cougar", "Hard"),
+    makeQuestion("music_5039", "Which artist recorded 'Hurts So Good'?", ["John Cougar", "Eddie Money", "Billy Squier", "Rick Springfield"], "John Cougar", "Easy"),
+    makeQuestion("music_5040", "Which artist recorded 'Hand to Hold on To'?", ["John Cougar", "Eddie Money", "Billy Squier", "Rick Springfield"], "John Cougar", "Hard"),
+    makeQuestion("music_5041", "Which artist recorded 'My Kinda Lover'?", ["Billy Squier", "Eddie Money", "Sammy Hagar", "Rick Springfield"], "Billy Squier", "Medium"),
+    makeQuestion("music_5042", "Which artist recorded 'Everybody Wants You'?", ["Billy Squier", "Eddie Money", "Sammy Hagar", "Rick Springfield"], "Billy Squier", "Easy"),
+    makeQuestion("music_5043", "Which artist recorded 'Learn How to Live'?", ["Billy Squier", "Eddie Money", "Sammy Hagar", "Rick Springfield"], "Billy Squier", "Hard"),
+    makeQuestion("music_5044", "Which artist recorded 'Rock Me Tonite'?", ["Billy Squier", "Eddie Money", "Sammy Hagar", "Rick Springfield"], "Billy Squier", "Medium"),
+    makeQuestion("music_5045", "Which artist recorded 'All Night Long'?", ["Billy Squier", "Eddie Money", "Sammy Hagar", "Rick Springfield"], "Billy Squier", "Hard"),
+    makeQuestion("music_5046", "Which artist recorded 'Your Love Is Driving Me Crazy'?", ["Sammy Hagar", "Billy Squier", "Eddie Money", "Rick Springfield"], "Sammy Hagar", "Easy"),
+    makeQuestion("music_5047", "Which artist recorded 'Two Sides of Love'?", ["Sammy Hagar", "Billy Squier", "Eddie Money", "Rick Springfield"], "Sammy Hagar", "Medium"),
+    makeQuestion("music_5048", "Which artist recorded 'Winner Takes It All'?", ["Sammy Hagar", "Billy Squier", "Eddie Money", "Rick Springfield"], "Sammy Hagar", "Medium"),
+    makeQuestion("music_5049", "Which artist recorded 'Give to Live'?", ["Sammy Hagar", "Billy Squier", "Eddie Money", "Rick Springfield"], "Sammy Hagar", "Medium"),
+    makeQuestion("music_5050", "Which artist recorded 'Eagles Fly'?", ["Sammy Hagar", "Billy Squier", "Eddie Money", "Rick Springfield"], "Sammy Hagar", "Medium"),
+    makeQuestion("music_5051", "Which group recorded 'Fantasy Girl'?", ["38 Special", "Foreigner", "Loverboy", "Survivor"], "38 Special", "Hard"),
+    makeQuestion("music_5052", "Which group recorded 'Wild-Eyed Southern Boys'?", ["38 Special", "Foreigner", "Loverboy", "Survivor"], "38 Special", "Hard"),
+    makeQuestion("music_5053", "Which group recorded 'If I'd Been the One'?", ["38 Special", "Foreigner", "Loverboy", "Survivor"], "38 Special", "Easy"),
+    makeQuestion("music_5054", "Which group recorded 'Back Where You Belong'?", ["38 Special", "Foreigner", "Loverboy", "Survivor"], "38 Special", "Medium"),
+    makeQuestion("music_5055", "Which group recorded 'Teacher Teacher'?", ["38 Special", "Foreigner", "Loverboy", "Survivor"], "38 Special", "Medium"),
+    makeQuestion("music_5056", "Which group recorded 'Like No Other Night'?", ["38 Special", "Foreigner", "Loverboy", "Survivor"], "38 Special", "Hard"),
+    makeQuestion("music_5057", "Which group recorded 'Rockin' into the Night'?", ["38 Special", "Foreigner", "Loverboy", "Survivor"], "38 Special", "Hard"),
+    makeQuestion("music_5058", "Which group recorded 'Hold On Loosely'?", ["38 Special", "Foreigner", "Loverboy", "Survivor"], "38 Special", "Easy"),
+    makeQuestion("music_5059", "Which group recorded 'Tuff Enuff'?", ["The Fabulous Thunderbirds", "The Georgia Satellites", "38 Special", "The Outfield"], "The Fabulous Thunderbirds", "Easy"),
+    makeQuestion("music_5060", "Which group recorded 'Wrap It Up'?", ["The Fabulous Thunderbirds", "The Georgia Satellites", "38 Special", "The Outfield"], "The Fabulous Thunderbirds", "Medium"),
+    makeQuestion("music_5061", "Which group recorded 'Powerful Stuff'?", ["The Fabulous Thunderbirds", "The Georgia Satellites", "38 Special", "The Outfield"], "The Fabulous Thunderbirds", "Hard"),
+    makeQuestion("music_5062", "Which group recorded 'Keep Your Hands to Yourself'?", ["The Georgia Satellites", "The Fabulous Thunderbirds", "38 Special", "The Outfield"], "The Georgia Satellites", "Easy"),
+    makeQuestion("music_5063", "Which group recorded 'Battleship Chains'?", ["The Georgia Satellites", "The Fabulous Thunderbirds", "38 Special", "The Outfield"], "The Georgia Satellites", "Hard"),
+    makeQuestion("music_5064", "Which group recorded 'Hippy Hippy Shake'?", ["The Georgia Satellites", "The Fabulous Thunderbirds", "38 Special", "The Outfield"], "The Georgia Satellites", "Medium"),
+    makeQuestion("music_5065", "Which group recorded 'Don't Misunderstand Me'?", ["Rossington Collins Band", "38 Special", "The Georgia Satellites", "The Fabulous Thunderbirds"], "Rossington Collins Band", "Medium"),
+    makeQuestion("music_5066", "Which group recorded 'Tashauna'?", ["Rossington Collins Band", "38 Special", "The Georgia Satellites", "The Fabulous Thunderbirds"], "Rossington Collins Band", "Hard"),
 ];
 
 module.exports = quizPack69;
