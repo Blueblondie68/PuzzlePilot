@@ -1,704 +1,269 @@
-const quizPack75 = [
-    {
-        id: "music_5567",
-        category: "Music",
-        question: "Which group recorded 'You've Got the Touch'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5568",
-        category: "Music",
-        question: "Which group recorded 'Fallin' Again'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5569",
-        category: "Music",
-        question: "Which group recorded 'Tar Top'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5570",
-        category: "Music",
-        question: "Which group recorded 'Dixieland Delight'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5571",
-        category: "Music",
-        question: "Which group recorded 'The Closer You Get'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5572",
-        category: "Music",
-        question: "Which group recorded 'Love in the First Degree'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5573",
-        category: "Music",
-        question: "Which group recorded 'Mountain Music'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5574",
-        category: "Music",
-        question: "Which group recorded 'Take Me Down'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5575",
-        category: "Music",
-        question: "Which group recorded 'Feels So Right'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5576",
-        category: "Music",
-        question: "Which group recorded 'Old Flame'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5577",
-        category: "Music",
-        question: "Which group recorded 'Forty Hour Week (For a Livin')'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5578",
-        category: "Music",
-        question: "Which group recorded 'Can't Keep a Good Man Down'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5579",
-        category: "Music",
-        question: "Which group recorded 'Roll On (Eighteen Wheeler)'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5580",
-        category: "Music",
-        question: "Which group recorded 'If You're Gonna Play in Texas (You Gotta Have a Fiddle in the Band)'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5581",
-        category: "Music",
-        question: "Which group recorded 'There's a Fire in the Night'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5582",
-        category: "Music",
-        question: "Which group recorded 'When We Make Love'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5583",
-        category: "Music",
-        question: "Which group recorded 'Lady Down on Love'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5584",
-        category: "Music",
-        question: "Which group recorded 'Christmas in Dixie'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5585",
-        category: "Music",
-        question: "Which group recorded 'Close Enough to Perfect'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5586",
-        category: "Music",
-        question: "Which artist recorded 'Love Me Like You Used To'?",
-        answers: ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"],
-        correctAnswer: "Tanya Tucker"
-    },
-    {
-        id: "music_5587",
-        category: "Music",
-        question: "Which artist recorded 'Strong Enough to Bend'?",
-        answers: ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"],
-        correctAnswer: "Tanya Tucker"
-    },
-    {
-        id: "music_5588",
-        category: "Music",
-        question: "Which artist recorded 'If It Don't Come Easy'?",
-        answers: ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"],
-        correctAnswer: "Tanya Tucker"
-    },
-    {
-        id: "music_5589",
-        category: "Music",
-        question: "Which artists recorded 'I Won't Take Less Than Your Love'?",
-        answers: ["Tanya Tucker, Paul Davis and Paul Overstreet", "Tanya Tucker and Glen Campbell", "Tanya Tucker and T. Graham Brown", "Tanya Tucker and Delbert McClinton"],
-        correctAnswer: "Tanya Tucker, Paul Davis and Paul Overstreet"
-    },
-    {
-        id: "music_5590",
-        category: "Music",
-        question: "Which artist recorded 'One Love at a Time'?",
-        answers: ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"],
-        correctAnswer: "Tanya Tucker"
-    },
-    {
-        id: "music_5591",
-        category: "Music",
-        question: "Which artist recorded 'Just Another Love'?",
-        answers: ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"],
-        correctAnswer: "Tanya Tucker"
-    },
-    {
-        id: "music_5592",
-        category: "Music",
-        question: "Which artist recorded 'Walking Shoes'?",
-        answers: ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"],
-        correctAnswer: "Tanya Tucker"
-    },
-    {
-        id: "music_5593",
-        category: "Music",
-        question: "Which artist recorded 'Can I See You Tonight'?",
-        answers: ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"],
-        correctAnswer: "Tanya Tucker"
-    },
-    {
-        id: "music_5594",
-        category: "Music",
-        question: "Which artist recorded 'Texas (When I Die)'?",
-        answers: ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"],
-        correctAnswer: "Tanya Tucker"
-    },
-    {
-        id: "music_5595",
-        category: "Music",
-        question: "Which artist recorded 'Pecos Promenade'?",
-        answers: ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"],
-        correctAnswer: "Tanya Tucker"
-    },
-    {
-        id: "music_5596",
-        category: "Music",
-        question: "Which artists recorded 'Dream Lover'?",
-        answers: ["Tanya Tucker and Glen Campbell", "Tanya Tucker and T. Graham Brown", "Tanya Tucker and Delbert McClinton", "Tanya Tucker and Kenny Rogers"],
-        correctAnswer: "Tanya Tucker and Glen Campbell"
-    },
-    {
-        id: "music_5597",
-        category: "Music",
-        question: "Which group recorded 'Come to My Aid'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5598",
-        category: "Music",
-        question: "Which group recorded 'A New Flame'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5599",
-        category: "Music",
-        question: "Which group recorded 'You've Got It'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5600",
-        category: "Music",
-        question: "Which group recorded 'To Be with You'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5601",
-        category: "Music",
-        question: "Which group recorded 'I Won't Feel Bad'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5602",
-        category: "Music",
-        question: "Which group recorded 'Love Fire'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5603",
-        category: "Music",
-        question: "Which group recorded 'Suffer'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5604",
-        category: "Music",
-        question: "Which group recorded 'Look at You Now'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5605",
-        category: "Music",
-        question: "Which group recorded 'Sad Old Red'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5606",
-        category: "Music",
-        question: "Which group recorded 'Heaven'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5607",
-        category: "Music",
-        question: "Which group recorded 'Move on Out'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5608",
-        category: "Music",
-        question: "Which group recorded 'Let Me Have It All'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5609",
-        category: "Music",
-        question: "Which group recorded 'Ev'ry Time We Say Goodbye'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5610",
-        category: "Music",
-        question: "Which group recorded 'Shine'?",
-        answers: ["Aswad", "UB40", "Steel Pulse", "Musical Youth"],
-        correctAnswer: "Aswad"
-    },
-    {
-        id: "music_5611",
-        category: "Music",
-        question: "Which group recorded 'Set Them Free'?",
-        answers: ["Aswad", "UB40", "Steel Pulse", "Musical Youth"],
-        correctAnswer: "Aswad"
-    },
-    {
-        id: "music_5612",
-        category: "Music",
-        question: "Which group recorded 'Chasing for the Breeze'?",
-        answers: ["Aswad", "UB40", "Steel Pulse", "Musical Youth"],
-        correctAnswer: "Aswad"
-    },
-    {
-        id: "music_5613",
-        category: "Music",
-        question: "Which group recorded 'Need Your Love (Each and Every Day)'?",
-        answers: ["Aswad", "UB40", "Steel Pulse", "Musical Youth"],
-        correctAnswer: "Aswad"
-    },
-    {
-        id: "music_5614",
-        category: "Music",
-        question: "Which group recorded 'Hooked on You'?",
-        answers: ["Aswad", "UB40", "Steel Pulse", "Musical Youth"],
-        correctAnswer: "Aswad"
-    },
-    {
-        id: "music_5615",
-        category: "Music",
-        question: "Which group recorded '54-46 (Was My Number)'?",
-        answers: ["Aswad", "UB40", "Steel Pulse", "Musical Youth"],
-        correctAnswer: "Aswad"
-    },
-    {
-        id: "music_5616",
-        category: "Music",
-        question: "Which group recorded 'Dub Fire'?",
-        answers: ["Aswad", "UB40", "Steel Pulse", "Musical Youth"],
-        correctAnswer: "Aswad"
-    },
-    {
-        id: "music_5617",
-        category: "Music",
-        question: "Which group recorded 'Rockers Medley'?",
-        answers: ["Aswad", "UB40", "Steel Pulse", "Musical Youth"],
-        correctAnswer: "Aswad"
-    },
-    {
-        id: "music_5618",
-        category: "Music",
-        question: "Which artist recorded 'Dear God'?",
-        answers: ["Midge Ure", "Howard Jones", "Nik Kershaw", "Thomas Dolby"],
-        correctAnswer: "Midge Ure"
-    },
-    {
-        id: "music_5619",
-        category: "Music",
-        question: "Which artist recorded 'Cold Cold Heart'?",
-        answers: ["Midge Ure", "Howard Jones", "Nik Kershaw", "Thomas Dolby"],
-        correctAnswer: "Midge Ure"
-    },
-    {
-        id: "music_5620",
-        category: "Music",
-        question: "Which artist recorded 'Wastelands'?",
-        answers: ["Midge Ure", "Howard Jones", "Nik Kershaw", "Thomas Dolby"],
-        correctAnswer: "Midge Ure"
-    },
-    {
-        id: "music_5621",
-        category: "Music",
-        question: "Which artist recorded 'The Man Who Sold the World'?",
-        answers: ["Midge Ure", "Howard Jones", "Nik Kershaw", "Thomas Dolby"],
-        correctAnswer: "Midge Ure"
-    },
-    {
-        id: "music_5622",
-        category: "Music",
-        question: "Which artists recorded 'After a Fashion'?",
-        answers: ["Midge Ure and Mick Karn", "Midge Ure and Phil Lynott", "Midge Ure and David Sylvian", "Midge Ure and Peter Gabriel"],
-        correctAnswer: "Midge Ure and Mick Karn"
-    },
-    {
-        id: "music_5623",
-        category: "Music",
-        question: "Which artist recorded 'Old Town'?",
-        answers: ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"],
-        correctAnswer: "Phil Lynott"
-    },
-    {
-        id: "music_5624",
-        category: "Music",
-        question: "Which artist recorded 'King's Call'?",
-        answers: ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"],
-        correctAnswer: "Phil Lynott"
-    },
-    {
-        id: "music_5625",
-        category: "Music",
-        question: "Which artist recorded 'Dear Miss Lonely Hearts'?",
-        answers: ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"],
-        correctAnswer: "Phil Lynott"
-    },
-    {
-        id: "music_5626",
-        category: "Music",
-        question: "Which artist recorded 'Solo in Soho'?",
-        answers: ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"],
-        correctAnswer: "Phil Lynott"
-    },
-    {
-        id: "music_5627",
-        category: "Music",
-        question: "Which artist recorded 'Together'?",
-        answers: ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"],
-        correctAnswer: "Phil Lynott"
-    },
-    {
-        id: "music_5628",
-        category: "Music",
-        question: "Which artist recorded 'Nineteen'?",
-        answers: ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"],
-        correctAnswer: "Phil Lynott"
-    },
-    {
-        id: "music_5629",
-        category: "Music",
-        question: "Which group recorded 'Chinatown'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5630",
-        category: "Music",
-        question: "Which group recorded 'Killer on the Loose'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5631",
-        category: "Music",
-        question: "Which group recorded 'Trouble Boys'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5632",
-        category: "Music",
-        question: "Which group recorded 'Hollywood (Down on Your Luck)'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5633",
-        category: "Music",
-        question: "Which group recorded 'Cold Sweat'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5634",
-        category: "Music",
-        question: "Which group recorded 'Thunder and Lightning'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5635",
-        category: "Music",
-        question: "Which group recorded 'The Sun Goes Down'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5636",
-        category: "Music",
-        question: "Which group recorded 'Renegade'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5637",
-        category: "Music",
-        question: "Which group recorded 'Angel of Death'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5638",
-        category: "Music",
-        question: "Which group recorded 'We Will Be Strong'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5639",
-        category: "Music",
-        question: "Which group recorded 'This Is the One'?",
-        answers: ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"],
-        correctAnswer: "Thin Lizzy"
-    },
-    {
-        id: "music_5640",
-        category: "Music",
-        question: "Which artists recorded 'Out in the Fields'?",
-        answers: ["Gary Moore and Phil Lynott", "Gary Moore and Glenn Hughes", "Gary Moore and Ozzy Osbourne", "Gary Moore and Midge Ure"],
-        correctAnswer: "Gary Moore and Phil Lynott"
-    },
-    {
-        id: "music_5641",
-        category: "Music",
-        question: "Which artist recorded 'Empty Rooms'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5642",
-        category: "Music",
-        question: "Which artist recorded 'Over the Hills and Far Away'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5643",
-        category: "Music",
-        question: "Which artist recorded 'Wild Frontier'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5644",
-        category: "Music",
-        question: "Which artist recorded 'Friday on My Mind'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5645",
-        category: "Music",
-        question: "Which artist recorded 'After the War'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5646",
-        category: "Music",
-        question: "Which artist recorded 'Run for Cover'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5647",
-        category: "Music",
-        question: "Which artist recorded 'Military Man'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5648",
-        category: "Music",
-        question: "Which artist recorded 'Victims of the Future'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5649",
-        category: "Music",
-        question: "Which artist recorded 'Shapes of Things'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5650",
-        category: "Music",
-        question: "Which artist recorded 'Murder in the Skies'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5651",
-        category: "Music",
-        question: "Which artist recorded 'Don't Take Me for a Loser'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5652",
-        category: "Music",
-        question: "Which artist recorded 'End of the World'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5653",
-        category: "Music",
-        question: "Which artist recorded 'Always Gonna Love You'?",
-        answers: ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"],
-        correctAnswer: "Gary Moore"
-    },
-    {
-        id: "music_5654",
-        category: "Music",
-        question: "Which group recorded 'Girlfriend Is Better'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5655",
-        category: "Music",
-        question: "Which group recorded 'Slippery People'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5656",
-        category: "Music",
-        question: "Which group recorded 'Love for Sale'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5657",
-        category: "Music",
-        question: "Which group recorded 'Blind'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5658",
-        category: "Music",
-        question: "Which group recorded 'Puzzlin' Evidence'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5659",
-        category: "Music",
-        question: "Which group recorded 'Radio Head'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5660",
-        category: "Music",
-        question: "Which group recorded 'People Like Us'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5661",
-        category: "Music",
-        question: "Which group recorded 'Swamp'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5662",
-        category: "Music",
-        question: "Which group recorded 'Making Flippy Floppy'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5663",
-        category: "Music",
-        question: "Which group recorded 'Crosseyed and Painless'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5664",
-        category: "Music",
-        question: "Which group recorded 'Houses in Motion'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5665",
-        category: "Music",
-        question: "Which group recorded 'Seen and Not Seen'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
-    },
-    {
-        id: "music_5666",
-        category: "Music",
-        question: "Which group recorded 'Stay Up Late'?",
-        answers: ["Talking Heads", "Devo", "The B-52's", "Blondie"],
-        correctAnswer: "Talking Heads"
+ // quiz_pack75.js
+// PuzzlePilot Bigggggg Quiz - Music Pack 75
+// 100 audited questions: music_5567 through music_5666.
+// Complete tags generated from performer and recording metadata.
+// music_5571, music_5574 and music_5647 corrected to resolve ambiguous performer credits.
+
+const answerTags = {
+    "Alabama": ["american", "country music", "country pop", "country bands", "randy owen", "teddy gentry", "jeff cook", "mark herndon"],
+    "J.P. Pennington and Mark Gray": ["american", "country music", "songwriters", "exile band", "j p pennington", "mark gray", "alabama", "country songwriting"],
+    "Mountain Music": ["american", "country music", "country albums", "alabama", "mountain music album", "album tracks"],
+    "Tanya Tucker": ["american", "country music", "country pop", "female singers", "solo artists", "texas", "country singers"],
+    "Tanya Tucker, Paul Davis and Paul Overstreet": ["american", "country music", "country pop", "collaborations", "vocal trios", "tanya tucker", "paul davis", "paul overstreet"],
+    "Tanya Tucker and Glen Campbell": ["american", "country music", "country pop", "duets", "tanya tucker", "glen campbell"],
+    "Simply Red": ["british", "sophisti-pop", "blue-eyed soul", "pop", "soul", "bands", "mick hucknall", "manchester"],
+    "Aswad": ["british", "reggae", "roots reggae", "reggae pop", "bands", "brinsley forde", "angus gaye", "tony gad robinson", "london"],
+    "Midge Ure": ["scottish", "british", "synth-pop", "new wave", "male singers", "solo artists", "ultravox", "visage"],
+    "Midge Ure and Mick Karn": ["scottish", "british", "new wave", "synth-pop", "duets", "midge ure", "mick karn", "japan band"],
+    "Phil Lynott": ["irish", "rock", "hard rock", "male singers", "songwriters", "bass guitar", "thin lizzy", "solo artists"],
+    "Thin Lizzy": ["irish", "hard rock", "classic rock", "bands", "phil lynott", "scott gorham", "brian downey"],
+    "Gary Moore and Phil Lynott": ["irish", "hard rock", "rock", "duets", "collaborations", "gary moore", "phil lynott", "thin lizzy"],
+    "Gary Moore": ["northern irish", "hard rock", "blues rock", "rock guitar", "male singers", "guitarists", "solo artists", "thin lizzy"],
+    "Talking Heads": ["american", "new wave", "art rock", "post-punk", "bands", "david byrne", "tina weymouth", "chris frantz", "jerry harrison"]
+};
+
+const recordingTags = {
+    "music_5567": [1986, "the touch album", "1987 country single"],
+    "music_5568": [1987, "just us album", "1988 country single"],
+    "music_5569": [1987, "just us album", "1987 country single"],
+    "music_5570": [1983, "the closer you get album", "1983 country single"],
+    "music_5571": [1983, "the closer you get album", "j p pennington", "mark gray", "exile songwriting"],
+    "music_5572": [1981, "feels so right album", "1981 country single"],
+    "music_5573": [1982, "mountain music album", "1982 country single"],
+    "music_5574": [1982, "mountain music album", "alabama discography", "1982 country single"],
+    "music_5575": [1981, "feels so right album", "1981 country single"],
+    "music_5576": [1981, "feels so right album", "1981 country single"],
+    "music_5577": [1985, "40 hour week album", "working life songs"],
+    "music_5578": [1985, "40 hour week album", "1985 country single"],
+    "music_5579": [1984, "roll on album", "truck driving songs"],
+    "music_5580": [1984, "roll on album", "fiddle", "country instruments"],
+    "music_5581": [1984, "roll on album", "1984 country single"],
+    "music_5582": [1984, "roll on album", "1984 country single"],
+    "music_5583": [1983, "the closer you get album", "1983 country single"],
+    "music_5584": [1982, "a country christmas compilation", "christmas songs", "seasonal music", "1985 alabama christmas album"],
+    "music_5585": [1982, "mountain music album", "1982 country single"],
+    "music_5586": [1987, "love me like you used to album", "1987 country single"],
+    "music_5587": [1988, "strong enough to bend album", "1988 country single"],
+    "music_5588": [1988, "strong enough to bend album", "1988 country single"],
+    "music_5589": [1987, "love me like you used to album", "1988 country single", "vocal trio"],
+    "music_5590": [1986, "girls like me album", "1986 country single"],
+    "music_5591": [1986, "girls like me album", "1986 country single"],
+    "music_5592": [1990, "tennessee woman album", "1990 country single"],
+    "music_5593": [1980, "dreamlovers album", "1980 country single"],
+    "music_5594": [1978, "tnt album", "1979 country single"],
+    "music_5595": [1980, "smokey and the bandit ii soundtrack", "film songs", "1980 country single"],
+    "music_5596": [1980, "dreamlovers album", "bobby darin cover", "duets"],
+    "music_5597": [1985, "picture book album", "1985 single"],
+    "music_5598": [1989, "a new flame album", "1989 single"],
+    "music_5599": [1989, "a new flame album", "1989 single"],
+    "music_5600": [1989, "a new flame album", "album track"],
+    "music_5601": [1985, "picture book album", "album track"],
+    "music_5602": [1985, "picture book album", "album track"],
+    "music_5603": [1987, "men and women album", "album track"],
+    "music_5604": [1985, "picture book album", "album track"],
+    "music_5605": [1985, "picture book album", "album track"],
+    "music_5606": [1985, "picture book album", "talking heads cover"],
+    "music_5607": [1987, "men and women album", "album track"],
+    "music_5608": [1987, "men and women album", "sly and the family stone cover"],
+    "music_5609": [1987, "men and women album", "cole porter songwriting", "jazz standards"],
+    "music_5610": [1994, "rise and shine album", "1994 uk top ten single"],
+    "music_5611": [1988, "distant thunder album", "1988 single"],
+    "music_5612": [1984, "rebel souls album", "1984 single"],
+    "music_5613": [1984, "rebel souls album", "lovers rock"],
+    "music_5614": [1986, "to the top album", "1987 single"],
+    "music_5615": [1984, "rebel souls album", "toots and the maytals cover"],
+    "music_5616": [1982, "a new chapter of dub album", "dub reggae", "instrumental music"],
+    "music_5617": [1983, "live and direct album", "live recordings", "notting hill carnival", "reggae medleys"],
+    "music_5618": [1988, "answers to nothing album", "1988 single"],
+    "music_5619": [1991, "pure album", "1991 single"],
+    "music_5620": [1985, "the gift album", "1986 single"],
+    "music_5621": [1982, "party party soundtrack", "david bowie cover", "film songs"],
+    "music_5622": [1983, "after a fashion single", "mick karn collaboration"],
+    "music_5623": [1982, "the philip lynott album", "1982 single"],
+    "music_5624": [1980, "solo in soho album", "mark knopfler guitar", "tribute songs"],
+    "music_5625": [1980, "solo in soho album", "1980 single"],
+    "music_5626": [1980, "solo in soho album", "album title track"],
+    "music_5627": [1982, "the philip lynott album", "midge ure production"],
+    "music_5628": [1985, "nineteen single", "paul hardcastle production"],
+    "music_5629": [1980, "chinatown album", "1980 single"],
+    "music_5630": [1980, "chinatown album", "1980 single"],
+    "music_5631": [1981, "trouble boys single", "dave edmunds cover", "non album single"],
+    "music_5632": [1981, "renegade album", "1981 single"],
+    "music_5633": [1983, "thunder and lightning album", "1983 single"],
+    "music_5634": [1983, "thunder and lightning album", "album title track"],
+    "music_5635": [1983, "thunder and lightning album", "1983 single"],
+    "music_5636": [1981, "renegade album", "album title track"],
+    "music_5637": [1981, "renegade album", "album track"],
+    "music_5638": [1980, "chinatown album", "album track"],
+    "music_5639": [1983, "thunder and lightning album", "album track"],
+    "music_5640": [1985, "run for cover album", "1985 single", "collaborations"],
+    "music_5641": [1984, "victims of the future album", "1985 rerecording", "1985 hit single"],
+    "music_5642": [1987, "wild frontier album", "1986 single"],
+    "music_5643": [1987, "wild frontier album", "1987 single"],
+    "music_5644": [1987, "wild frontier album", "easybeats cover"],
+    "music_5645": [1989, "after the war album", "album title track"],
+    "music_5646": [1985, "run for cover album", "album title track"],
+    "music_5647": [1985, "run for cover album", "military man songwriting", "phil lynott vocals", "gary moore collaboration"],
+    "music_5648": [1984, "victims of the future album", "album title track"],
+    "music_5649": [1984, "victims of the future album", "yardbirds cover"],
+    "music_5650": [1984, "victims of the future album", "1984 single"],
+    "music_5651": [1982, "corridors of power album", "album track"],
+    "music_5652": [1982, "corridors of power album", "album track"],
+    "music_5653": [1982, "corridors of power album", "1982 single"],
+    "music_5654": [1983, "speaking in tongues album", "1984 single"],
+    "music_5655": [1983, "speaking in tongues album", "1984 live single", "stop making sense concert film"],
+    "music_5656": [1986, "true stories album", "1986 single"],
+    "music_5657": [1988, "naked album", "1988 single"],
+    "music_5658": [1986, "true stories album", "album track"],
+    "music_5659": [1986, "true stories album", "radiohead band name inspiration"],
+    "music_5660": [1986, "true stories album", "1986 single"],
+    "music_5661": [1983, "speaking in tongues album", "album track"],
+    "music_5662": [1983, "speaking in tongues album", "album track"],
+    "music_5663": [1980, "remain in light album", "1980 single"],
+    "music_5664": [1980, "remain in light album", "album track"],
+    "music_5665": [1980, "remain in light album", "spoken word"],
+    "music_5666": [1985, "little creatures album", "1985 single"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const answerMetadata = answerTags[correctAnswer];
+    const releaseTags = recordingTags[id];
+    if (!answerMetadata || !releaseTags) {
+        throw new Error(`Missing music metadata for ${id}`);
     }
+    const title = question.match(/'(.+)'/);
+    if (!title) {
+        throw new Error(`Missing song title for ${id}`);
+    }
+
+    const year = releaseTags[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    const isSongwritingQuestion = id === "music_5571" || id === "music_5647";
+    const isAlbumQuestion = id === "music_5574";
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music",
+            isSongwritingQuestion ? "songwriting" : (isAlbumQuestion ? "albums" : "songs"),
+            isSongwritingQuestion ? "songwriters" : (isAlbumQuestion ? "album tracks" : "recordings"),
+            decade,
+            `${decade} music`,
+            `${year} releases`,
+            title[1].toLowerCase(),
+            correctAnswer.toLowerCase(),
+            ...answerMetadata,
+            ...releaseTags.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
+const quizPack75 = [
+    makeQuestion("music_5567", "Which group recorded 'You've Got the Touch'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Medium"),
+    makeQuestion("music_5568", "Which group recorded 'Fallin' Again'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Medium"),
+    makeQuestion("music_5569", "Which group recorded 'Tar Top'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Medium"),
+    makeQuestion("music_5570", "Which group recorded 'Dixieland Delight'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5571", "Which two members of Exile wrote the Alabama hit 'The Closer You Get'?", ["J.P. Pennington and Mark Gray", "Randy Owen and Teddy Gentry", "Jeff Cook and Teddy Gentry", "Paul Overstreet and Don Schlitz"], "J.P. Pennington and Mark Gray", "Hard"),
+    makeQuestion("music_5572", "Which group recorded 'Love in the First Degree'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5573", "Which group recorded 'Mountain Music'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5574", "On which Alabama album would you find 'Take Me Down'?", ["Mountain Music", "Roll On", "Feels So Right", "The Closer You Get..."], "Mountain Music", "Medium"),
+    makeQuestion("music_5575", "Which group recorded 'Feels So Right'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5576", "Which group recorded 'Old Flame'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5577", "Which group recorded 'Forty Hour Week (For a Livin')'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Medium"),
+    makeQuestion("music_5578", "Which group recorded 'Can't Keep a Good Man Down'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Hard"),
+    makeQuestion("music_5579", "Which group recorded 'Roll On (Eighteen Wheeler)'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5580", "Which group recorded 'If You're Gonna Play in Texas (You Gotta Have a Fiddle in the Band)'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5581", "Which group recorded 'There's a Fire in the Night'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Medium"),
+    makeQuestion("music_5582", "Which group recorded 'When We Make Love'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Medium"),
+    makeQuestion("music_5583", "Which group recorded 'Lady Down on Love'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Medium"),
+    makeQuestion("music_5584", "Which group recorded 'Christmas in Dixie'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5585", "Which group recorded 'Close Enough to Perfect'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Medium"),
+    makeQuestion("music_5586", "Which artist recorded 'Love Me Like You Used To'?", ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"], "Tanya Tucker", "Easy"),
+    makeQuestion("music_5587", "Which artist recorded 'Strong Enough to Bend'?", ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"], "Tanya Tucker", "Easy"),
+    makeQuestion("music_5588", "Which artist recorded 'If It Don't Come Easy'?", ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"], "Tanya Tucker", "Medium"),
+    makeQuestion("music_5589", "Which artists recorded 'I Won't Take Less Than Your Love'?", ["Tanya Tucker, Paul Davis and Paul Overstreet", "Tanya Tucker and Glen Campbell", "Tanya Tucker and T. Graham Brown", "Tanya Tucker and Delbert McClinton"], "Tanya Tucker, Paul Davis and Paul Overstreet", "Medium"),
+    makeQuestion("music_5590", "Which artist recorded 'One Love at a Time'?", ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"], "Tanya Tucker", "Easy"),
+    makeQuestion("music_5591", "Which artist recorded 'Just Another Love'?", ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"], "Tanya Tucker", "Medium"),
+    makeQuestion("music_5592", "Which artist recorded 'Walking Shoes'?", ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"], "Tanya Tucker", "Medium"),
+    makeQuestion("music_5593", "Which artist recorded 'Can I See You Tonight'?", ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"], "Tanya Tucker", "Medium"),
+    makeQuestion("music_5594", "Which artist recorded 'Texas (When I Die)'?", ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"], "Tanya Tucker", "Easy"),
+    makeQuestion("music_5595", "Which artist recorded 'Pecos Promenade'?", ["Tanya Tucker", "Reba McEntire", "Rosanne Cash", "Juice Newton"], "Tanya Tucker", "Easy"),
+    makeQuestion("music_5596", "Which artists recorded 'Dream Lover'?", ["Tanya Tucker and Glen Campbell", "Tanya Tucker and T. Graham Brown", "Tanya Tucker and Delbert McClinton", "Tanya Tucker and Kenny Rogers"], "Tanya Tucker and Glen Campbell", "Medium"),
+    makeQuestion("music_5597", "Which group recorded 'Come to My Aid'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Medium"),
+    makeQuestion("music_5598", "Which group recorded 'A New Flame'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Easy"),
+    makeQuestion("music_5599", "Which group recorded 'You've Got It'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Easy"),
+    makeQuestion("music_5600", "Which group recorded 'To Be with You'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Medium"),
+    makeQuestion("music_5601", "Which group recorded 'I Won't Feel Bad'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Hard"),
+    makeQuestion("music_5602", "Which group recorded 'Love Fire'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Hard"),
+    makeQuestion("music_5603", "Which group recorded 'Suffer'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Hard"),
+    makeQuestion("music_5604", "Which group recorded 'Look at You Now'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Hard"),
+    makeQuestion("music_5605", "Which group recorded 'Sad Old Red'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Hard"),
+    makeQuestion("music_5606", "Which group recorded 'Heaven'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Medium"),
+    makeQuestion("music_5607", "Which group recorded 'Move on Out'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Hard"),
+    makeQuestion("music_5608", "Which group recorded 'Let Me Have It All'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Hard"),
+    makeQuestion("music_5609", "Which group recorded 'Ev'ry Time We Say Goodbye'?", ["Simply Red", "Wet Wet Wet", "The Blow Monkeys", "Curiosity Killed the Cat"], "Simply Red", "Easy"),
+    makeQuestion("music_5610", "Which group recorded 'Shine'?", ["Aswad", "UB40", "Steel Pulse", "Musical Youth"], "Aswad", "Easy"),
+    makeQuestion("music_5611", "Which group recorded 'Set Them Free'?", ["Aswad", "UB40", "Steel Pulse", "Musical Youth"], "Aswad", "Medium"),
+    makeQuestion("music_5612", "Which group recorded 'Chasing for the Breeze'?", ["Aswad", "UB40", "Steel Pulse", "Musical Youth"], "Aswad", "Medium"),
+    makeQuestion("music_5613", "Which group recorded 'Need Your Love (Each and Every Day)'?", ["Aswad", "UB40", "Steel Pulse", "Musical Youth"], "Aswad", "Medium"),
+    makeQuestion("music_5614", "Which group recorded 'Hooked on You'?", ["Aswad", "UB40", "Steel Pulse", "Musical Youth"], "Aswad", "Medium"),
+    makeQuestion("music_5615", "Which group recorded '54-46 (Was My Number)'?", ["Aswad", "UB40", "Steel Pulse", "Musical Youth"], "Aswad", "Easy"),
+    makeQuestion("music_5616", "Which group recorded 'Dub Fire'?", ["Aswad", "UB40", "Steel Pulse", "Musical Youth"], "Aswad", "Hard"),
+    makeQuestion("music_5617", "Which group recorded 'Rockers Medley'?", ["Aswad", "UB40", "Steel Pulse", "Musical Youth"], "Aswad", "Hard"),
+    makeQuestion("music_5618", "Which artist recorded 'Dear God'?", ["Midge Ure", "Howard Jones", "Nik Kershaw", "Thomas Dolby"], "Midge Ure", "Medium"),
+    makeQuestion("music_5619", "Which artist recorded 'Cold Cold Heart'?", ["Midge Ure", "Howard Jones", "Nik Kershaw", "Thomas Dolby"], "Midge Ure", "Medium"),
+    makeQuestion("music_5620", "Which artist recorded 'Wastelands'?", ["Midge Ure", "Howard Jones", "Nik Kershaw", "Thomas Dolby"], "Midge Ure", "Easy"),
+    makeQuestion("music_5621", "Which artist recorded 'The Man Who Sold the World'?", ["Midge Ure", "Howard Jones", "Nik Kershaw", "Thomas Dolby"], "Midge Ure", "Medium"),
+    makeQuestion("music_5622", "Which artists recorded 'After a Fashion'?", ["Midge Ure and Mick Karn", "Midge Ure and Phil Lynott", "Midge Ure and David Sylvian", "Midge Ure and Peter Gabriel"], "Midge Ure and Mick Karn", "Medium"),
+    makeQuestion("music_5623", "Which artist recorded 'Old Town'?", ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"], "Phil Lynott", "Easy"),
+    makeQuestion("music_5624", "Which artist recorded 'King's Call'?", ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"], "Phil Lynott", "Easy"),
+    makeQuestion("music_5625", "Which artist recorded 'Dear Miss Lonely Hearts'?", ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"], "Phil Lynott", "Medium"),
+    makeQuestion("music_5626", "Which artist recorded 'Solo in Soho'?", ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"], "Phil Lynott", "Hard"),
+    makeQuestion("music_5627", "Which artist recorded 'Together'?", ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"], "Phil Lynott", "Hard"),
+    makeQuestion("music_5628", "Which artist recorded 'Nineteen'?", ["Phil Lynott", "Gary Moore", "Midge Ure", "Bob Geldof"], "Phil Lynott", "Medium"),
+    makeQuestion("music_5629", "Which group recorded 'Chinatown'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Easy"),
+    makeQuestion("music_5630", "Which group recorded 'Killer on the Loose'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Easy"),
+    makeQuestion("music_5631", "Which group recorded 'Trouble Boys'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Hard"),
+    makeQuestion("music_5632", "Which group recorded 'Hollywood (Down on Your Luck)'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Medium"),
+    makeQuestion("music_5633", "Which group recorded 'Cold Sweat'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Easy"),
+    makeQuestion("music_5634", "Which group recorded 'Thunder and Lightning'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Easy"),
+    makeQuestion("music_5635", "Which group recorded 'The Sun Goes Down'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Easy"),
+    makeQuestion("music_5636", "Which group recorded 'Renegade'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Medium"),
+    makeQuestion("music_5637", "Which group recorded 'Angel of Death'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Hard"),
+    makeQuestion("music_5638", "Which group recorded 'We Will Be Strong'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Medium"),
+    makeQuestion("music_5639", "Which group recorded 'This Is the One'?", ["Thin Lizzy", "UFO", "Whitesnake", "Rainbow"], "Thin Lizzy", "Hard"),
+    makeQuestion("music_5640", "Which artists recorded 'Out in the Fields'?", ["Gary Moore and Phil Lynott", "Gary Moore and Glenn Hughes", "Gary Moore and Ozzy Osbourne", "Gary Moore and Midge Ure"], "Gary Moore and Phil Lynott", "Easy"),
+    makeQuestion("music_5641", "Which artist recorded 'Empty Rooms'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Easy"),
+    makeQuestion("music_5642", "Which artist recorded 'Over the Hills and Far Away'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Easy"),
+    makeQuestion("music_5643", "Which artist recorded 'Wild Frontier'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Easy"),
+    makeQuestion("music_5644", "Which artist recorded 'Friday on My Mind'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Easy"),
+    makeQuestion("music_5645", "Which artist recorded 'After the War'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Medium"),
+    makeQuestion("music_5646", "Which artist recorded 'Run for Cover'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Medium"),
+    makeQuestion("music_5647", "Who wrote 'Military Man', featured on the Gary Moore album Run for Cover?", ["Phil Lynott", "Gary Moore", "Rory Gallagher", "Michael Schenker"], "Phil Lynott", "Medium"),
+    makeQuestion("music_5648", "Which artist recorded 'Victims of the Future'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Medium"),
+    makeQuestion("music_5649", "Which artist recorded 'Shapes of Things'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Medium"),
+    makeQuestion("music_5650", "Which artist recorded 'Murder in the Skies'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Medium"),
+    makeQuestion("music_5651", "Which artist recorded 'Don't Take Me for a Loser'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Hard"),
+    makeQuestion("music_5652", "Which artist recorded 'End of the World'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Hard"),
+    makeQuestion("music_5653", "Which artist recorded 'Always Gonna Love You'?", ["Gary Moore", "Phil Lynott", "Rory Gallagher", "Michael Schenker"], "Gary Moore", "Hard"),
+    makeQuestion("music_5654", "Which group recorded 'Girlfriend Is Better'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Medium"),
+    makeQuestion("music_5655", "Which group recorded 'Slippery People'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Medium"),
+    makeQuestion("music_5656", "Which group recorded 'Love for Sale'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Medium"),
+    makeQuestion("music_5657", "Which group recorded 'Blind'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Medium"),
+    makeQuestion("music_5658", "Which group recorded 'Puzzlin' Evidence'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Hard"),
+    makeQuestion("music_5659", "Which group recorded 'Radio Head'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Medium"),
+    makeQuestion("music_5660", "Which group recorded 'People Like Us'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Hard"),
+    makeQuestion("music_5661", "Which group recorded 'Swamp'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Medium"),
+    makeQuestion("music_5662", "Which group recorded 'Making Flippy Floppy'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Hard"),
+    makeQuestion("music_5663", "Which group recorded 'Crosseyed and Painless'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Easy"),
+    makeQuestion("music_5664", "Which group recorded 'Houses in Motion'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Medium"),
+    makeQuestion("music_5665", "Which group recorded 'Seen and Not Seen'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Hard"),
+    makeQuestion("music_5666", "Which group recorded 'Stay Up Late'?", ["Talking Heads", "Devo", "The B-52's", "Blondie"], "Talking Heads", "Easy")
 ];
 
 module.exports = quizPack75;
