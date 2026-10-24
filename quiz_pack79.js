@@ -1,815 +1,275 @@
 // quiz_pack79.js
-// PuzzlePilot Big Quiz
-// Music Pack 79 - 1990s
+// PuzzlePilot Bigggggg Quiz - Music Pack 79 (mainly 1990s)
+// 100 audited questions: music_5967 through music_6066.
+// Original IDs, answers and difficulty settings preserved.
+// Three song-title corrections: music_5967, music_5984, music_6058.
+// 2001 Ash recording retained and accurately tagged as 2000s.
+
+const performerTags = {
+    "Skunk Anansie": ["british", "alternative rock", "rock", "bands", "skin", "deborah dyer"],
+    "Edwyn Collins": ["scottish", "british", "indie pop", "alternative rock", "male singers", "solo artists", "orange juice"],
+    "Ocean Colour Scene": ["british", "english", "britpop", "rock", "bands", "simon fowler", "steve cradock"],
+    "The Wannadies": ["swedish", "power pop", "indie rock", "bands", "par wiksten"],
+    "Longpigs": ["british", "english", "britpop", "alternative rock", "bands", "crispin hunt"],
+    "Gene": ["british", "english", "britpop", "indie rock", "bands", "martin rossiter"],
+    "Marion": ["british", "english", "britpop", "alternative rock", "bands", "jaime harding"],
+    "Rialto": ["british", "english", "britpop", "indie rock", "bands", "louis eliot"],
+    "The Divine Comedy": ["northern irish", "british", "chamber pop", "baroque pop", "bands", "neil hannon"],
+    "Super Furry Animals": ["welsh", "british", "psychedelic rock", "indie rock", "bands", "gruff rhys"],
+    "Feeder": ["welsh", "british", "alternative rock", "rock", "bands", "grant nicholas"],
+    "Reef": ["british", "english", "rock", "britpop", "bands", "gary stringer"],
+    "Republica": ["british", "english", "alternative rock", "dance rock", "bands", "saffron"],
+    "Space": ["british", "english", "britpop", "alternative rock", "bands", "tommy scott", "liverpool"],
+    "Echobelly": ["british", "english", "britpop", "indie rock", "bands", "sonya madan"],
+    "Sleeper": ["british", "english", "britpop", "indie rock", "bands", "louise wener"],
+    "Mansun": ["british", "english", "alternative rock", "britpop", "bands", "paul draper"],
+    "Dodgy": ["british", "english", "britpop", "indie rock", "bands", "nigel clark"],
+    "Cast": ["british", "english", "britpop", "rock", "bands", "john power", "liverpool"],
+    "Shed Seven": ["british", "english", "britpop", "indie rock", "bands", "rick witter", "york"],
+    "Travis": ["scottish", "british", "indie rock", "alternative rock", "bands", "fran healy"],
+    "Stereophonics": ["welsh", "british", "rock", "alternative rock", "bands", "kelly jones"],
+    "Blur": ["british", "english", "britpop", "alternative rock", "bands", "damon albarn", "graham coxon"],
+    "Suede": ["british", "english", "britpop", "alternative rock", "bands", "brett anderson"],
+    "McAlmont and Butler": ["british", "english", "soul", "pop rock", "duos", "david mcalmont", "bernard butler"],
+    "Menswear": ["british", "english", "britpop", "indie rock", "bands", "johnny dean"],
+    "Ash": ["northern irish", "british", "alternative rock", "power pop", "bands", "tim wheeler", "charlotte hatherley"],
+    "The Cardigans": ["swedish", "alternative rock", "pop rock", "bands", "nina persson"]
+};
+
+const recordingTags = {
+    "music_5967": [1996, "stoosh album", "1997 uk single"],
+    "music_5968": [1995, "paranoid and sunburnt album", "1995 single"],
+    "music_5969": [1994, "gorgeous george album", "1995 uk breakthrough"],
+    "music_5970": [1996, "moseley shoals album", "1996 single"],
+    "music_5971": [1994, "be a girl album", "1996 uk hit", "romeo and juliet soundtrack"],
+    "music_5972": [1999, "post orgasmic chill album", "1999 single"],
+    "music_5973": [1999, "post orgasmic chill album", "1999 single"],
+    "music_5974": [1996, "the sun is often out album", "album track"],
+    "music_5975": [1995, "olympian album", "1995 single"],
+    "music_5976": [1994, "olympian album", "debut single"],
+    "music_5977": [1996, "drawn to the deep end album", "1997 album release"],
+    "music_5978": [1995, "this world and body album", "1996 reissue"],
+    "music_5979": [1996, "this world and body album", "1996 single"],
+    "music_5980": [1997, "rialto album", "1998 album release", "1997 uk single"],
+    "music_5981": [1998, "rialto album", "1998 uk top 20"],
+    "music_5982": [1996, "casanova album", "1996 uk single"],
+    "music_5983": [1998, "fin de siecle album", "1999 uk top 10"],
+    "music_5984": [1997, "a short album about love", "1997 uk single"],
+    "music_5985": [1997, "radiator album", "1997 single"],
+    "music_5986": [1997, "radiator album", "1997 single"],
+    "music_5987": [1997, "polythene album", "1997 single"],
+    "music_5988": [1996, "swim ep", "1997 polythene album"],
+    "music_5989": [1997, "polythene album", "1997 single"],
+    "music_5990": [1999, "yesterday went too soon album", "1999 single"],
+    "music_5991": [1999, "yesterday went too soon album", "1999 single"],
+    "music_5992": [1997, "glow album", "1997 single"],
+    "music_5993": [1998, "speed ballads album", "album track"],
+    "music_5994": [1998, "tin planet album", "1998 recording"],
+    "music_5995": [1994, "everybodys got one album", "1994 single"],
+    "music_5996": [1996, "the it girl album", "1996 single"],
+    "music_5997": [1997, "attack of the grey lantern album", "1997 single"],
+    "music_5998": [1996, "free peace sweet album", "1996 single"],
+    "music_5999": [1996, "standalone single", "1996 uk top 5"],
+    "music_6000": [1997, "mother nature calls album", "1997 single"],
+    "music_6001": [1997, "cast discography", "1990s live recordings"],
+    "music_6002": [1998, "let it ride album", "1998 single"],
+    "music_6003": [1996, "a maximum high album", "1996 single"],
+    "music_6004": [1996, "a maximum high album", "1996 single"],
+    "music_6005": [1997, "closed for business ep", "1997 single"],
+    "music_6006": [1996, "attack of the grey lantern album", "1996 single"],
+    "music_6007": [1996, "good feeling album", "1997 album release", "debut single"],
+    "music_6008": [1997, "good feeling album", "1997 single"],
+    "music_6009": [1997, "good feeling album", "album track"],
+    "music_6010": [1997, "good feeling album", "1997 single"],
+    "music_6011": [1997, "word gets around album", "1997 single"],
+    "music_6012": [1997, "word gets around album", "1997 single"],
+    "music_6013": [1999, "performance and cocktails album", "1999 album track"],
+    "music_6014": [1997, "glow album", "1997 single"],
+    "music_6015": [1997, "glow album", "1997 recording"],
+    "music_6016": [null, "summer in the city cover", "the lovin spoonful cover", "dodgy recordings"],
+    "music_6017": [1998, "1998 single", "britpop"],
+    "music_6018": [1997, "free peace sweet album", "1997 single"],
+    "music_6019": [1994, "homegrown album", "1994 album track"],
+    "music_6020": [1994, "homegrown album", "the melod ep"],
+    "music_6021": [1997, "blur album", "1997 single"],
+    "music_6022": [1997, "blur album", "1997 single"],
+    "music_6023": [1999, "13 album", "1999 single"],
+    "music_6024": [1999, "13 album", "1999 single"],
+    "music_6025": [1995, "the great escape album", "1996 single"],
+    "music_6026": [1994, "parklife album", "1994 single"],
+    "music_6027": [1993, "modern life is rubbish album", "1993 single"],
+    "music_6028": [1993, "modern life is rubbish album", "1993 single"],
+    "music_6029": [1992, "standalone single", "1992 single"],
+    "music_6030": [1996, "coming up album", "1997 single"],
+    "music_6031": [1996, "coming up album", "1997 single"],
+    "music_6032": [1999, "head music album", "1999 single"],
+    "music_6033": [1999, "head music album", "1999 single"],
+    "music_6034": [1994, "dog man star album", "1995 single"],
+    "music_6035": [1994, "dog man star album", "1994 single"],
+    "music_6036": [1994, "non album single", "1994 single"],
+    "music_6037": [1992, "suede album", "1993 debut album"],
+    "music_6038": [1993, "suede album", "1993 single"],
+    "music_6039": [1995, "the sound of mcalmont and butler album", "1995 uk top 10"],
+    "music_6040": [1995, "the sound of mcalmont and butler album", "1995 single"],
+    "music_6041": [1997, "lustra album", "1997 single"],
+    "music_6042": [1996, "the it girl album", "1996 single"],
+    "music_6043": [1995, "smart album", "1995 single"],
+    "music_6044": [1995, "nuisance album", "1995 debut single"],
+    "music_6045": [1995, "nuisance album", "1996 single"],
+    "music_6046": [1995, "nuisance album", "1995 single"],
+    "music_6047": [1995, "nuisance album", "1995 recording"],
+    "music_6048": [1994, "olympian album", "1995 album release"],
+    "music_6049": [1995, "olympian album", "1995 single"],
+    "music_6050": [1995, "olympian album", "album track"],
+    "music_6051": [1997, "drawn to the deep end album", "1997 single"],
+    "music_6052": [1997, "drawn to the deep end album", "1997 single"],
+    "music_6053": [1999, "one from the modern album", "2000 single", "1999 album recording"],
+    "music_6054": [1999, "one from the modern album", "1999 single"],
+    "music_6055": [1995, "trailer album", "1995 single"],
+    "music_6056": [1995, "1977 album", "1996 album release", "1995 single"],
+    "music_6057": [1998, "nu clear sounds album", "1998 single"],
+    "music_6058": [1998, "nu clear sounds album", "1998 single"],
+    "music_6059": [1998, "nu clear sounds album", "album track"],
+    "music_6060": [2001, "free all angels album", "2001 single", "2000s music"],
+    "music_6061": [1994, "trailer album", "1994 single"],
+    "music_6062": [1998, "gran turismo album", "1998 single"],
+    "music_6063": [1995, "life album", "1995 single"],
+    "music_6064": [1994, "emmerdale album", "1994 single"],
+    "music_6065": [1994, "emmerdale album", "1994 single"],
+    "music_6066": [1996, "first band on the moon album", "1996 recording"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const performer = performerTags[correctAnswer];
+    const recording = recordingTags[id];
+    if (!performer || !recording) {
+        throw new Error(`Missing music metadata for ${id}`);
+    }
+    const titleMatch = question.match(/'(.+)'/);
+    if (!titleMatch) {
+        throw new Error(`Missing quoted song title for ${id}`);
+    }
+    const year = recording[0];
+    const decade = year === null ? "1990s" : `${Math.floor(year / 10) * 10}s`;
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", "songs", "recordings",
+            decade, `${decade} music`,
+            ...(year === null ? [] : [`${year} releases`]),
+            titleMatch[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...performer, ...recording.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack79 = [
-
-    {
-        id: "music_5967",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Brazen Weep'?",
-        answers: ["Skunk Anansie", "Garbage", "Republica", "Elastica"],
-        correctAnswer: "Skunk Anansie"
-    },
-    {
-        id: "music_5968",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Selling Jesus'?",
-        answers: ["Skunk Anansie", "Garbage", "Republica", "Elastica"],
-        correctAnswer: "Skunk Anansie"
-    },
-    {
-        id: "music_5969",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'A Girl Like You'?",
-        answers: ["Edwyn Collins", "Paul Weller", "Ian McCulloch", "Richard Ashcroft"],
-        correctAnswer: "Edwyn Collins"
-    },
-    {
-        id: "music_5970",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'The Circle'?",
-        answers: ["Ocean Colour Scene", "Cast", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Ocean Colour Scene"
-    },
-    {
-        id: "music_5971",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'You and Me Song'?",
-        answers: ["The Wannadies", "The Cardigans", "The Bluetones", "Dodgy"],
-        correctAnswer: "The Wannadies"
-    },
-    {
-        id: "music_5972",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Charlie Big Potato'?",
-        answers: ["Skunk Anansie", "Garbage", "Republica", "Elastica"],
-        correctAnswer: "Skunk Anansie"
-    },
-    {
-        id: "music_5973",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Secretly'?",
-        answers: ["Skunk Anansie", "Garbage", "Republica", "Elastica"],
-        correctAnswer: "Skunk Anansie"
-    },
-    {
-        id: "music_5974",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Blue Skies'?",
-        answers: ["Longpigs", "Mansun", "Gene", "Marion"],
-        correctAnswer: "Longpigs"
-    },
-    {
-        id: "music_5975",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Olympian'?",
-        answers: ["Gene", "Marion", "Longpigs", "Menswear"],
-        correctAnswer: "Gene"
-    },
-    {
-        id: "music_5976",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'For the Dead'?",
-        answers: ["Gene", "Marion", "Longpigs", "Menswear"],
-        correctAnswer: "Gene"
-    },
-    {
-        id: "music_5977",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Fighting Fit'?",
-        answers: ["Gene", "Marion", "Longpigs", "Menswear"],
-        correctAnswer: "Gene"
-    },
-    {
-        id: "music_5978",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Sleep'?",
-        answers: ["Marion", "Gene", "Longpigs", "Menswear"],
-        correctAnswer: "Marion"
-    },
-    {
-        id: "music_5979",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Time'?",
-        answers: ["Marion", "Gene", "Longpigs", "Menswear"],
-        correctAnswer: "Marion"
-    },
-    {
-        id: "music_5980",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Monday Morning 5.19'?",
-        answers: ["Rialto", "Gene", "Mansun", "Menswear"],
-        correctAnswer: "Rialto"
-    },
-    {
-        id: "music_5981",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Untouchable'?",
-        answers: ["Rialto", "Gene", "Mansun", "Menswear"],
-        correctAnswer: "Rialto"
-    },
-    {
-        id: "music_5982",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Something for the Weekend'?",
-        answers: ["The Divine Comedy", "The Bluetones", "Super Furry Animals", "Shed Seven"],
-        correctAnswer: "The Divine Comedy"
-    },
-    {
-        id: "music_5983",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'National Express'?",
-        answers: ["The Divine Comedy", "The Bluetones", "Super Furry Animals", "Shed Seven"],
-        correctAnswer: "The Divine Comedy"
-    },
-    {
-        id: "music_5984",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Everybody Knows'?",
-        answers: ["The Divine Comedy", "The Bluetones", "Super Furry Animals", "Shed Seven"],
-        correctAnswer: "The Divine Comedy"
-    },
-    {
-        id: "music_5985",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Hermann Loves Pauline'?",
-        answers: ["Super Furry Animals", "The Divine Comedy", "The Boo Radleys", "The Bluetones"],
-        correctAnswer: "Super Furry Animals"
-    },
-    {
-        id: "music_5986",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Demons'?",
-        answers: ["Super Furry Animals", "The Divine Comedy", "The Boo Radleys", "The Bluetones"],
-        correctAnswer: "Super Furry Animals"
-    },
-    {
-        id: "music_5987",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'High'?",
-        answers: ["Feeder", "Reef", "Ash", "Stereophonics"],
-        correctAnswer: "Feeder"
-    },
-    {
-        id: "music_5988",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Descend'?",
-        answers: ["Feeder", "Reef", "Ash", "Stereophonics"],
-        correctAnswer: "Feeder"
-    },
-    {
-        id: "music_5989",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Tangerine'?",
-        answers: ["Feeder", "Reef", "Ash", "Stereophonics"],
-        correctAnswer: "Feeder"
-    },
-    {
-        id: "music_5990",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Insomnia'?",
-        answers: ["Feeder", "Reef", "Ash", "Stereophonics"],
-        correctAnswer: "Feeder"
-    },
-    {
-        id: "music_5991",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Yesterday Went Too Soon'?",
-        answers: ["Feeder", "Reef", "Ash", "Stereophonics"],
-        correctAnswer: "Feeder"
-    },
-    {
-        id: "music_5992",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Yer Old'?",
-        answers: ["Reef", "Feeder", "Ash", "Stereophonics"],
-        correctAnswer: "Reef"
-    },
-    {
-        id: "music_5993",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Out of This World'?",
-        answers: ["Republica", "Elastica", "Garbage", "Echobelly"],
-        correctAnswer: "Republica"
-    },
-    {
-        id: "music_5994",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Dark Clouds'?",
-        answers: ["Space", "Republica", "Catatonia", "The Supernaturals"],
-        correctAnswer: "Space"
-    },
-    {
-        id: "music_5995",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Insomniac'?",
-        answers: ["Echobelly", "Sleeper", "Elastica", "Lush"],
-        correctAnswer: "Echobelly"
-    },
-    {
-        id: "music_5996",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Nice Guy Eddie'?",
-        answers: ["Sleeper", "Echobelly", "Elastica", "Lush"],
-        correctAnswer: "Sleeper"
-    },
-    {
-        id: "music_5997",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'She Makes My Nose Bleed'?",
-        answers: ["Mansun", "Gene", "Longpigs", "Marion"],
-        correctAnswer: "Mansun"
-    },
-    {
-        id: "music_5998",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'In a Room'?",
-        answers: ["Dodgy", "Cast", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Dodgy"
-    },
-    {
-        id: "music_5999",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Flying'?",
-        answers: ["Cast", "Dodgy", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Cast"
-    },
-    {
-        id: "music_6000",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Free Me'?",
-        answers: ["Cast", "Dodgy", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Cast"
-    },
-    {
-        id: "music_6001",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'History'?",
-        answers: ["Cast", "Dodgy", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Cast"
-    },
-    {
-        id: "music_6002",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'She Left Me on Friday'?",
-        answers: ["Shed Seven", "Cast", "Dodgy", "The Bluetones"],
-        correctAnswer: "Shed Seven"
-    },
-    {
-        id: "music_6003",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'On Standby'?",
-        answers: ["Shed Seven", "Cast", "Dodgy", "The Bluetones"],
-        correctAnswer: "Shed Seven"
-    },
-    {
-        id: "music_6004",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Getting Better'?",
-        answers: ["Shed Seven", "Cast", "Dodgy", "The Bluetones"],
-        correctAnswer: "Shed Seven"
-    },
-    {
-        id: "music_6005",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Closed for Business'?",
-        answers: ["Mansun", "Gene", "Longpigs", "Marion"],
-        correctAnswer: "Mansun"
-    },
-    {
-        id: "music_6006",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Stripper Vicar'?",
-        answers: ["Mansun", "Gene", "Longpigs", "Marion"],
-        correctAnswer: "Mansun"
-    },
-    {
-        id: "music_6007",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'All I Want to Do Is Rock'?",
-        answers: ["Travis", "Stereophonics", "Feeder", "Reef"],
-        correctAnswer: "Travis"
-    },
-    {
-        id: "music_6008",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'U16 Girls'?",
-        answers: ["Travis", "Stereophonics", "Feeder", "Reef"],
-        correctAnswer: "Travis"
-    },
-    {
-        id: "music_6009",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Happy'?",
-        answers: ["Travis", "Stereophonics", "Feeder", "Reef"],
-        correctAnswer: "Travis"
-    },
-    {
-        id: "music_6010",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'More Than Us'?",
-        answers: ["Travis", "Stereophonics", "Feeder", "Reef"],
-        correctAnswer: "Travis"
-    },
-    {
-        id: "music_6011",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'More Life in a Tramp's Vest'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6012",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Traffic'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6013",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Half the Lies You Tell Ain't True'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6014",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'I've Got Something to Say'?",
-        answers: ["Reef", "Feeder", "Ash", "Stereophonics"],
-        correctAnswer: "Reef"
-    },
-    {
-        id: "music_6015",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'New Bird'?",
-        answers: ["Reef", "Feeder", "Ash", "Stereophonics"],
-        correctAnswer: "Reef"
-    },
-    {
-        id: "music_6016",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Summer in the City'?",
-        answers: ["Dodgy", "Cast", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Dodgy"
-    },
-    {
-        id: "music_6017",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Every Single Day'?",
-        answers: ["Dodgy", "Cast", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Dodgy"
-    },
-    {
-        id: "music_6018",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Found You'?",
-        answers: ["Dodgy", "Cast", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Dodgy"
-    },
-    {
-        id: "music_6019",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Grassman'?",
-        answers: ["Dodgy", "Cast", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Dodgy"
-    },
-    {
-        id: "music_6020",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Melodies Haunt You'?",
-        answers: ["Dodgy", "Cast", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Dodgy"
-    },
-    {
-        id: "music_6021",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'M.O.R.'?",
-        answers: ["Blur", "Suede", "Pulp", "Supergrass"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_6022",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'On Your Own'?",
-        answers: ["Blur", "Suede", "Pulp", "Supergrass"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_6023",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'No Distance Left to Run'?",
-        answers: ["Blur", "Suede", "Pulp", "Supergrass"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_6024",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Tender'?",
-        answers: ["Blur", "Suede", "Pulp", "Supergrass"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_6025",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Stereotypes'?",
-        answers: ["Blur", "Suede", "Pulp", "Supergrass"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_6026",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'End of a Century'?",
-        answers: ["Blur", "Suede", "Pulp", "Supergrass"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_6027",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Chemical World'?",
-        answers: ["Blur", "Suede", "Pulp", "Supergrass"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_6028",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'For Tomorrow'?",
-        answers: ["Blur", "Suede", "Pulp", "Supergrass"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_6029",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Popscene'?",
-        answers: ["Blur", "Suede", "Pulp", "Supergrass"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_6030",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Saturday Night'?",
-        answers: ["Suede", "Blur", "Pulp", "Mansun"],
-        correctAnswer: "Suede"
-    },
-    {
-        id: "music_6031",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Lazy'?",
-        answers: ["Suede", "Blur", "Pulp", "Mansun"],
-        correctAnswer: "Suede"
-    },
-    {
-        id: "music_6032",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Electricity'?",
-        answers: ["Suede", "Blur", "Pulp", "Mansun"],
-        correctAnswer: "Suede"
-    },
-    {
-        id: "music_6033",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'She's in Fashion'?",
-        answers: ["Suede", "Blur", "Pulp", "Mansun"],
-        correctAnswer: "Suede"
-    },
-    {
-        id: "music_6034",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'New Generation'?",
-        answers: ["Suede", "Blur", "Pulp", "Mansun"],
-        correctAnswer: "Suede"
-    },
-    {
-        id: "music_6035",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'We Are the Pigs'?",
-        answers: ["Suede", "Blur", "Pulp", "Mansun"],
-        correctAnswer: "Suede"
-    },
-    {
-        id: "music_6036",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Stay Together'?",
-        answers: ["Suede", "Blur", "Pulp", "Mansun"],
-        correctAnswer: "Suede"
-    },
-    {
-        id: "music_6037",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Metal Mickey'?",
-        answers: ["Suede", "Blur", "Pulp", "Mansun"],
-        correctAnswer: "Suede"
-    },
-    {
-        id: "music_6038",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'So Young'?",
-        answers: ["Suede", "Blur", "Pulp", "Mansun"],
-        correctAnswer: "Suede"
-    },
-    {
-        id: "music_6039",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which duo recorded 'Yes'?",
-        answers: ["McAlmont and Butler", "Electronic", "The Chemical Brothers", "Shakespears Sister"],
-        correctAnswer: "McAlmont and Butler"
-    },
-    {
-        id: "music_6040",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which duo recorded 'You Do'?",
-        answers: ["McAlmont and Butler", "Electronic", "The Chemical Brothers", "Shakespears Sister"],
-        correctAnswer: "McAlmont and Butler"
-    },
-
-    // ---------------------------------------------------------
-    // Additional CLEAR songs from candidate batch two
-    // ---------------------------------------------------------
-
-    {
-        id: "music_6041",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'The World Is Flat'?",
-        answers: ["Echobelly", "Sleeper", "Elastica", "Lush"],
-        correctAnswer: "Echobelly"
-    },
-    {
-        id: "music_6042",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Statuesque'?",
-        answers: ["Sleeper", "Echobelly", "Elastica", "Lush"],
-        correctAnswer: "Sleeper"
-    },
-    {
-        id: "music_6043",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Vegas'?",
-        answers: ["Sleeper", "Echobelly", "Elastica", "Lush"],
-        correctAnswer: "Sleeper"
-    },
-    {
-        id: "music_6044",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Daydreamer'?",
-        answers: ["Menswear", "Gene", "Marion", "Longpigs"],
-        correctAnswer: "Menswear"
-    },
-    {
-        id: "music_6045",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Being Brave'?",
-        answers: ["Menswear", "Gene", "Marion", "Longpigs"],
-        correctAnswer: "Menswear"
-    },
-    {
-        id: "music_6046",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Sleeping In'?",
-        answers: ["Menswear", "Gene", "Marion", "Longpigs"],
-        correctAnswer: "Menswear"
-    },
-    {
-        id: "music_6047",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Stardust'?",
-        answers: ["Menswear", "Gene", "Marion", "Longpigs"],
-        correctAnswer: "Menswear"
-    },
-    {
-        id: "music_6048",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Sleep Well Tonight'?",
-        answers: ["Gene", "Menswear", "Marion", "Longpigs"],
-        correctAnswer: "Gene"
-    },
-    {
-        id: "music_6049",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Haunted by You'?",
-        answers: ["Gene", "Menswear", "Marion", "Longpigs"],
-        correctAnswer: "Gene"
-    },
-    {
-        id: "music_6050",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'London Can You Wait'?",
-        answers: ["Gene", "Menswear", "Marion", "Longpigs"],
-        correctAnswer: "Gene"
-    },
-    {
-        id: "music_6051",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Where Are They Now?'?",
-        answers: ["Gene", "Menswear", "Marion", "Longpigs"],
-        correctAnswer: "Gene"
-    },
-    {
-        id: "music_6052",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Speak to Me Someone'?",
-        answers: ["Gene", "Menswear", "Marion", "Longpigs"],
-        correctAnswer: "Gene"
-    },
-    {
-        id: "music_6053",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'July'?",
-        answers: ["Ocean Colour Scene", "Cast", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Ocean Colour Scene"
-    },
-    {
-        id: "music_6054",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Profit in Peace'?",
-        answers: ["Ocean Colour Scene", "Cast", "Shed Seven", "The Bluetones"],
-        correctAnswer: "Ocean Colour Scene"
-    },
-    {
-        id: "music_6055",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Kung Fu'?",
-        answers: ["Ash", "Feeder", "Reef", "Placebo"],
-        correctAnswer: "Ash"
-    },
-    {
-        id: "music_6056",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Angel Interceptor'?",
-        answers: ["Ash", "Feeder", "Reef", "Placebo"],
-        correctAnswer: "Ash"
-    },
-    {
-        id: "music_6057",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Jesus Says'?",
-        answers: ["Ash", "Feeder", "Reef", "Placebo"],
-        correctAnswer: "Ash"
-    },
-    {
-        id: "music_6058",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Wildsurf'?",
-        answers: ["Ash", "Feeder", "Reef", "Placebo"],
-        correctAnswer: "Ash"
-    },
-    {
-        id: "music_6059",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Numbskull'?",
-        answers: ["Ash", "Feeder", "Reef", "Placebo"],
-        correctAnswer: "Ash"
-    },
-    {
-        id: "music_6060",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Sometimes'?",
-        answers: ["Ash", "Feeder", "Reef", "Placebo"],
-        correctAnswer: "Ash"
-    },
-    {
-        id: "music_6061",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Joyrider'?",
-        answers: ["Ash", "Feeder", "Reef", "Placebo"],
-        correctAnswer: "Ash"
-    },
-    {
-        id: "music_6062",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Hanging Around'?",
-        answers: ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"],
-        correctAnswer: "The Cardigans"
-    },
-    {
-        id: "music_6063",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Carnival'?",
-        answers: ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"],
-        correctAnswer: "The Cardigans"
-    },
-    {
-        id: "music_6064",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Rise and Shine'?",
-        answers: ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"],
-        correctAnswer: "The Cardigans"
-    },
-    {
-        id: "music_6065",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Sick and Tired'?",
-        answers: ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"],
-        correctAnswer: "The Cardigans"
-    },
-    {
-        id: "music_6066",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Been It'?",
-        answers: ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"],
-        correctAnswer: "The Cardigans"
-    }
-
+    makeQuestion("music_5967", "Which group recorded 'Brazen (Weep)'?", ["Skunk Anansie", "Garbage", "Republica", "Elastica"], "Skunk Anansie", "Medium"),
+    makeQuestion("music_5968", "Which group recorded 'Selling Jesus'?", ["Skunk Anansie", "Garbage", "Republica", "Elastica"], "Skunk Anansie", "Medium"),
+    makeQuestion("music_5969", "Which singer recorded 'A Girl Like You'?", ["Edwyn Collins", "Paul Weller", "Ian McCulloch", "Richard Ashcroft"], "Edwyn Collins", "Easy"),
+    makeQuestion("music_5970", "Which group recorded 'The Circle'?", ["Ocean Colour Scene", "Cast", "Shed Seven", "The Bluetones"], "Ocean Colour Scene", "Medium"),
+    makeQuestion("music_5971", "Which group recorded 'You and Me Song'?", ["The Wannadies", "The Cardigans", "The Bluetones", "Dodgy"], "The Wannadies", "Medium"),
+    makeQuestion("music_5972", "Which group recorded 'Charlie Big Potato'?", ["Skunk Anansie", "Garbage", "Republica", "Elastica"], "Skunk Anansie", "Medium"),
+    makeQuestion("music_5973", "Which group recorded 'Secretly'?", ["Skunk Anansie", "Garbage", "Republica", "Elastica"], "Skunk Anansie", "Medium"),
+    makeQuestion("music_5974", "Which group recorded 'Blue Skies'?", ["Longpigs", "Mansun", "Gene", "Marion"], "Longpigs", "Hard"),
+    makeQuestion("music_5975", "Which group recorded 'Olympian'?", ["Gene", "Marion", "Longpigs", "Menswear"], "Gene", "Medium"),
+    makeQuestion("music_5976", "Which group recorded 'For the Dead'?", ["Gene", "Marion", "Longpigs", "Menswear"], "Gene", "Medium"),
+    makeQuestion("music_5977", "Which group recorded 'Fighting Fit'?", ["Gene", "Marion", "Longpigs", "Menswear"], "Gene", "Medium"),
+    makeQuestion("music_5978", "Which group recorded 'Sleep'?", ["Marion", "Gene", "Longpigs", "Menswear"], "Marion", "Hard"),
+    makeQuestion("music_5979", "Which group recorded 'Time'?", ["Marion", "Gene", "Longpigs", "Menswear"], "Marion", "Hard"),
+    makeQuestion("music_5980", "Which group recorded 'Monday Morning 5.19'?", ["Rialto", "Gene", "Mansun", "Menswear"], "Rialto", "Medium"),
+    makeQuestion("music_5981", "Which group recorded 'Untouchable'?", ["Rialto", "Gene", "Mansun", "Menswear"], "Rialto", "Hard"),
+    makeQuestion("music_5982", "Which group recorded 'Something for the Weekend'?", ["The Divine Comedy", "The Bluetones", "Super Furry Animals", "Shed Seven"], "The Divine Comedy", "Easy"),
+    makeQuestion("music_5983", "Which group recorded 'National Express'?", ["The Divine Comedy", "The Bluetones", "Super Furry Animals", "Shed Seven"], "The Divine Comedy", "Easy"),
+    makeQuestion("music_5984", "Which group recorded 'Everybody Knows (Except You)'?", ["The Divine Comedy", "The Bluetones", "Super Furry Animals", "Shed Seven"], "The Divine Comedy", "Medium"),
+    makeQuestion("music_5985", "Which group recorded 'Hermann Loves Pauline'?", ["Super Furry Animals", "The Divine Comedy", "The Boo Radleys", "The Bluetones"], "Super Furry Animals", "Hard"),
+    makeQuestion("music_5986", "Which group recorded 'Demons'?", ["Super Furry Animals", "The Divine Comedy", "The Boo Radleys", "The Bluetones"], "Super Furry Animals", "Medium"),
+    makeQuestion("music_5987", "Which group recorded 'High'?", ["Feeder", "Reef", "Ash", "Stereophonics"], "Feeder", "Medium"),
+    makeQuestion("music_5988", "Which group recorded 'Descend'?", ["Feeder", "Reef", "Ash", "Stereophonics"], "Feeder", "Hard"),
+    makeQuestion("music_5989", "Which group recorded 'Tangerine'?", ["Feeder", "Reef", "Ash", "Stereophonics"], "Feeder", "Medium"),
+    makeQuestion("music_5990", "Which group recorded 'Insomnia'?", ["Feeder", "Reef", "Ash", "Stereophonics"], "Feeder", "Medium"),
+    makeQuestion("music_5991", "Which group recorded 'Yesterday Went Too Soon'?", ["Feeder", "Reef", "Ash", "Stereophonics"], "Feeder", "Medium"),
+    makeQuestion("music_5992", "Which group recorded 'Yer Old'?", ["Reef", "Feeder", "Ash", "Stereophonics"], "Reef", "Hard"),
+    makeQuestion("music_5993", "Which group recorded 'Out of This World'?", ["Republica", "Elastica", "Garbage", "Echobelly"], "Republica", "Hard"),
+    makeQuestion("music_5994", "Which group recorded 'Dark Clouds'?", ["Space", "Republica", "Catatonia", "The Supernaturals"], "Space", "Hard"),
+    makeQuestion("music_5995", "Which group recorded 'Insomniac'?", ["Echobelly", "Sleeper", "Elastica", "Lush"], "Echobelly", "Medium"),
+    makeQuestion("music_5996", "Which group recorded 'Nice Guy Eddie'?", ["Sleeper", "Echobelly", "Elastica", "Lush"], "Sleeper", "Medium"),
+    makeQuestion("music_5997", "Which group recorded 'She Makes My Nose Bleed'?", ["Mansun", "Gene", "Longpigs", "Marion"], "Mansun", "Medium"),
+    makeQuestion("music_5998", "Which group recorded 'In a Room'?", ["Dodgy", "Cast", "Shed Seven", "The Bluetones"], "Dodgy", "Medium"),
+    makeQuestion("music_5999", "Which group recorded 'Flying'?", ["Cast", "Dodgy", "Shed Seven", "The Bluetones"], "Cast", "Hard"),
+    makeQuestion("music_6000", "Which group recorded 'Free Me'?", ["Cast", "Dodgy", "Shed Seven", "The Bluetones"], "Cast", "Hard"),
+    makeQuestion("music_6001", "Which group recorded 'History'?", ["Cast", "Dodgy", "Shed Seven", "The Bluetones"], "Cast", "Medium"),
+    makeQuestion("music_6002", "Which group recorded 'She Left Me on Friday'?", ["Shed Seven", "Cast", "Dodgy", "The Bluetones"], "Shed Seven", "Hard"),
+    makeQuestion("music_6003", "Which group recorded 'On Standby'?", ["Shed Seven", "Cast", "Dodgy", "The Bluetones"], "Shed Seven", "Hard"),
+    makeQuestion("music_6004", "Which group recorded 'Getting Better'?", ["Shed Seven", "Cast", "Dodgy", "The Bluetones"], "Shed Seven", "Medium"),
+    makeQuestion("music_6005", "Which group recorded 'Closed for Business'?", ["Mansun", "Gene", "Longpigs", "Marion"], "Mansun", "Hard"),
+    makeQuestion("music_6006", "Which group recorded 'Stripper Vicar'?", ["Mansun", "Gene", "Longpigs", "Marion"], "Mansun", "Hard"),
+    makeQuestion("music_6007", "Which group recorded 'All I Want to Do Is Rock'?", ["Travis", "Stereophonics", "Feeder", "Reef"], "Travis", "Medium"),
+    makeQuestion("music_6008", "Which group recorded 'U16 Girls'?", ["Travis", "Stereophonics", "Feeder", "Reef"], "Travis", "Hard"),
+    makeQuestion("music_6009", "Which group recorded 'Happy'?", ["Travis", "Stereophonics", "Feeder", "Reef"], "Travis", "Hard"),
+    makeQuestion("music_6010", "Which group recorded 'More Than Us'?", ["Travis", "Stereophonics", "Feeder", "Reef"], "Travis", "Medium"),
+    makeQuestion("music_6011", "Which group recorded 'More Life in a Tramp's Vest'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6012", "Which group recorded 'Traffic'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Medium"),
+    makeQuestion("music_6013", "Which group recorded 'Half the Lies You Tell Ain't True'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6014", "Which group recorded 'I've Got Something to Say'?", ["Reef", "Feeder", "Ash", "Stereophonics"], "Reef", "Hard"),
+    makeQuestion("music_6015", "Which group recorded 'New Bird'?", ["Reef", "Feeder", "Ash", "Stereophonics"], "Reef", "Hard"),
+    makeQuestion("music_6016", "Which group recorded 'Summer in the City'?", ["Dodgy", "Cast", "Shed Seven", "The Bluetones"], "Dodgy", "Medium"),
+    makeQuestion("music_6017", "Which group recorded 'Every Single Day'?", ["Dodgy", "Cast", "Shed Seven", "The Bluetones"], "Dodgy", "Hard"),
+    makeQuestion("music_6018", "Which group recorded 'Found You'?", ["Dodgy", "Cast", "Shed Seven", "The Bluetones"], "Dodgy", "Hard"),
+    makeQuestion("music_6019", "Which group recorded 'Grassman'?", ["Dodgy", "Cast", "Shed Seven", "The Bluetones"], "Dodgy", "Hard"),
+    makeQuestion("music_6020", "Which group recorded 'Melodies Haunt You'?", ["Dodgy", "Cast", "Shed Seven", "The Bluetones"], "Dodgy", "Hard"),
+    makeQuestion("music_6021", "Which group recorded 'M.O.R.'?", ["Blur", "Suede", "Pulp", "Supergrass"], "Blur", "Medium"),
+    makeQuestion("music_6022", "Which group recorded 'On Your Own'?", ["Blur", "Suede", "Pulp", "Supergrass"], "Blur", "Medium"),
+    makeQuestion("music_6023", "Which group recorded 'No Distance Left to Run'?", ["Blur", "Suede", "Pulp", "Supergrass"], "Blur", "Medium"),
+    makeQuestion("music_6024", "Which group recorded 'Tender'?", ["Blur", "Suede", "Pulp", "Supergrass"], "Blur", "Easy"),
+    makeQuestion("music_6025", "Which group recorded 'Stereotypes'?", ["Blur", "Suede", "Pulp", "Supergrass"], "Blur", "Medium"),
+    makeQuestion("music_6026", "Which group recorded 'End of a Century'?", ["Blur", "Suede", "Pulp", "Supergrass"], "Blur", "Medium"),
+    makeQuestion("music_6027", "Which group recorded 'Chemical World'?", ["Blur", "Suede", "Pulp", "Supergrass"], "Blur", "Medium"),
+    makeQuestion("music_6028", "Which group recorded 'For Tomorrow'?", ["Blur", "Suede", "Pulp", "Supergrass"], "Blur", "Medium"),
+    makeQuestion("music_6029", "Which group recorded 'Popscene'?", ["Blur", "Suede", "Pulp", "Supergrass"], "Blur", "Medium"),
+    makeQuestion("music_6030", "Which group recorded 'Saturday Night'?", ["Suede", "Blur", "Pulp", "Mansun"], "Suede", "Medium"),
+    makeQuestion("music_6031", "Which group recorded 'Lazy'?", ["Suede", "Blur", "Pulp", "Mansun"], "Suede", "Medium"),
+    makeQuestion("music_6032", "Which group recorded 'Electricity'?", ["Suede", "Blur", "Pulp", "Mansun"], "Suede", "Medium"),
+    makeQuestion("music_6033", "Which group recorded 'She's in Fashion'?", ["Suede", "Blur", "Pulp", "Mansun"], "Suede", "Medium"),
+    makeQuestion("music_6034", "Which group recorded 'New Generation'?", ["Suede", "Blur", "Pulp", "Mansun"], "Suede", "Hard"),
+    makeQuestion("music_6035", "Which group recorded 'We Are the Pigs'?", ["Suede", "Blur", "Pulp", "Mansun"], "Suede", "Hard"),
+    makeQuestion("music_6036", "Which group recorded 'Stay Together'?", ["Suede", "Blur", "Pulp", "Mansun"], "Suede", "Hard"),
+    makeQuestion("music_6037", "Which group recorded 'Metal Mickey'?", ["Suede", "Blur", "Pulp", "Mansun"], "Suede", "Medium"),
+    makeQuestion("music_6038", "Which group recorded 'So Young'?", ["Suede", "Blur", "Pulp", "Mansun"], "Suede", "Medium"),
+    makeQuestion("music_6039", "Which duo recorded 'Yes'?", ["McAlmont and Butler", "Electronic", "The Chemical Brothers", "Shakespears Sister"], "McAlmont and Butler", "Medium"),
+    makeQuestion("music_6040", "Which duo recorded 'You Do'?", ["McAlmont and Butler", "Electronic", "The Chemical Brothers", "Shakespears Sister"], "McAlmont and Butler", "Hard"),
+    makeQuestion("music_6041", "Which group recorded 'The World Is Flat'?", ["Echobelly", "Sleeper", "Elastica", "Lush"], "Echobelly", "Hard"),
+    makeQuestion("music_6042", "Which group recorded 'Statuesque'?", ["Sleeper", "Echobelly", "Elastica", "Lush"], "Sleeper", "Hard"),
+    makeQuestion("music_6043", "Which group recorded 'Vegas'?", ["Sleeper", "Echobelly", "Elastica", "Lush"], "Sleeper", "Hard"),
+    makeQuestion("music_6044", "Which group recorded 'Daydreamer'?", ["Menswear", "Gene", "Marion", "Longpigs"], "Menswear", "Medium"),
+    makeQuestion("music_6045", "Which group recorded 'Being Brave'?", ["Menswear", "Gene", "Marion", "Longpigs"], "Menswear", "Hard"),
+    makeQuestion("music_6046", "Which group recorded 'Sleeping In'?", ["Menswear", "Gene", "Marion", "Longpigs"], "Menswear", "Hard"),
+    makeQuestion("music_6047", "Which group recorded 'Stardust'?", ["Menswear", "Gene", "Marion", "Longpigs"], "Menswear", "Hard"),
+    makeQuestion("music_6048", "Which group recorded 'Sleep Well Tonight'?", ["Gene", "Menswear", "Marion", "Longpigs"], "Gene", "Hard"),
+    makeQuestion("music_6049", "Which group recorded 'Haunted by You'?", ["Gene", "Menswear", "Marion", "Longpigs"], "Gene", "Hard"),
+    makeQuestion("music_6050", "Which group recorded 'London Can You Wait'?", ["Gene", "Menswear", "Marion", "Longpigs"], "Gene", "Hard"),
+    makeQuestion("music_6051", "Which group recorded 'Where Are They Now?'?", ["Gene", "Menswear", "Marion", "Longpigs"], "Gene", "Hard"),
+    makeQuestion("music_6052", "Which group recorded 'Speak to Me Someone'?", ["Gene", "Menswear", "Marion", "Longpigs"], "Gene", "Hard"),
+    makeQuestion("music_6053", "Which group recorded 'July'?", ["Ocean Colour Scene", "Cast", "Shed Seven", "The Bluetones"], "Ocean Colour Scene", "Hard"),
+    makeQuestion("music_6054", "Which group recorded 'Profit in Peace'?", ["Ocean Colour Scene", "Cast", "Shed Seven", "The Bluetones"], "Ocean Colour Scene", "Hard"),
+    makeQuestion("music_6055", "Which group recorded 'Kung Fu'?", ["Ash", "Feeder", "Reef", "Placebo"], "Ash", "Hard"),
+    makeQuestion("music_6056", "Which group recorded 'Angel Interceptor'?", ["Ash", "Feeder", "Reef", "Placebo"], "Ash", "Hard"),
+    makeQuestion("music_6057", "Which group recorded 'Jesus Says'?", ["Ash", "Feeder", "Reef", "Placebo"], "Ash", "Medium"),
+    makeQuestion("music_6058", "Which group recorded 'Wild Surf'?", ["Ash", "Feeder", "Reef", "Placebo"], "Ash", "Hard"),
+    makeQuestion("music_6059", "Which group recorded 'Numbskull'?", ["Ash", "Feeder", "Reef", "Placebo"], "Ash", "Hard"),
+    makeQuestion("music_6060", "Which group recorded 'Sometimes'?", ["Ash", "Feeder", "Reef", "Placebo"], "Ash", "Medium"),
+    makeQuestion("music_6061", "Which group recorded 'Joyrider'?", ["Ash", "Feeder", "Reef", "Placebo"], "Ash", "Hard"),
+    makeQuestion("music_6062", "Which group recorded 'Hanging Around'?", ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"], "The Cardigans", "Medium"),
+    makeQuestion("music_6063", "Which group recorded 'Carnival'?", ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"], "The Cardigans", "Medium"),
+    makeQuestion("music_6064", "Which group recorded 'Rise and Shine'?", ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"], "The Cardigans", "Hard"),
+    makeQuestion("music_6065", "Which group recorded 'Sick and Tired'?", ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"], "The Cardigans", "Hard"),
+    makeQuestion("music_6066", "Which group recorded 'Been It'?", ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"], "The Cardigans", "Hard")
 ];
 
 module.exports = quizPack79;
