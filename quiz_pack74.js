@@ -1,704 +1,279 @@
-const quizPack74 = [
-    {
-        id: "music_5467",
-        category: "Music",
-        question: "Which artist recorded 'Minutes to Memories'?",
-        answers: ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_5468",
-        category: "Music",
-        question: "Which artist recorded 'Rooty Toot Toot'?",
-        answers: ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_5469",
-        category: "Music",
-        question: "Which artist recorded 'Pop Singer'?",
-        answers: ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_5470",
-        category: "Music",
-        question: "Which artist recorded 'Jackie Brown'?",
-        answers: ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_5471",
-        category: "Music",
-        question: "Which artist recorded 'Hard Times for an Honest Man'?",
-        answers: ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_5472",
-        category: "Music",
-        question: "Which artist recorded 'Lonely Ol' Night'?",
-        answers: ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Mellencamp"
-    },
-    {
-        id: "music_5473",
-        category: "Music",
-        question: "Which artist recorded 'Jack & Diane'?",
-        answers: ["John Cougar", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Cougar"
-    },
-    {
-        id: "music_5474",
-        category: "Music",
-        question: "Which artist recorded 'Thundering Hearts'?",
-        answers: ["John Cougar", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Cougar"
-    },
-    {
-        id: "music_5475",
-        category: "Music",
-        question: "Which artist recorded 'Miami'?",
-        answers: ["John Cougar", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Cougar"
-    },
-    {
-        id: "music_5476",
-        category: "Music",
-        question: "Which artist recorded 'Hot Night in a Cold Town'?",
-        answers: ["John Cougar", "Bruce Springsteen", "Tom Petty", "Bob Seger"],
-        correctAnswer: "John Cougar"
-    },
-    {
-        id: "music_5477",
-        category: "Music",
-        question: "Which artist recorded 'Sweetheart Like You'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5478",
-        category: "Music",
-        question: "Which artist recorded 'Jokerman'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5479",
-        category: "Music",
-        question: "Which artist recorded 'Tight Connection to My Heart (Has Anybody Seen My Love)'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5480",
-        category: "Music",
-        question: "Which artist recorded 'Emotionally Yours'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5481",
-        category: "Music",
-        question: "Which artist recorded 'Silvio'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5482",
-        category: "Music",
-        question: "Which artist recorded 'Everything Is Broken'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5483",
-        category: "Music",
-        question: "Which artist recorded 'Political World'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5484",
-        category: "Music",
-        question: "Which artist recorded 'Most of the Time'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5485",
-        category: "Music",
-        question: "Which artist recorded 'Ring Them Bells'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5486",
-        category: "Music",
-        question: "Which artist recorded 'Man in the Long Black Coat'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5487",
-        category: "Music",
-        question: "Which artist recorded 'Brownsville Girl'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5488",
-        category: "Music",
-        question: "Which artist recorded 'When the Night Comes Falling from the Sky'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5489",
-        category: "Music",
-        question: "Which artist recorded 'Band of the Hand (It's Hell Time, Man)'?",
-        answers: ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"],
-        correctAnswer: "Bob Dylan"
-    },
-    {
-        id: "music_5490",
-        category: "Music",
-        question: "Which group recorded 'Handle with Care'?",
-        answers: ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"],
-        correctAnswer: "Traveling Wilburys"
-    },
-    {
-        id: "music_5491",
-        category: "Music",
-        question: "Which group recorded 'End of the Line'?",
-        answers: ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"],
-        correctAnswer: "Traveling Wilburys"
-    },
-    {
-        id: "music_5492",
-        category: "Music",
-        question: "Which group recorded 'Heading for the Light'?",
-        answers: ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"],
-        correctAnswer: "Traveling Wilburys"
-    },
-    {
-        id: "music_5493",
-        category: "Music",
-        question: "Which group recorded 'Last Night'?",
-        answers: ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"],
-        correctAnswer: "Traveling Wilburys"
-    },
-    {
-        id: "music_5494",
-        category: "Music",
-        question: "Which group recorded 'Tweeter and the Monkey Man'?",
-        answers: ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"],
-        correctAnswer: "Traveling Wilburys"
-    },
-    {
-        id: "music_5495",
-        category: "Music",
-        question: "Which group recorded 'Congratulations'?",
-        answers: ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"],
-        correctAnswer: "Traveling Wilburys"
-    },
-    {
-        id: "music_5496",
-        category: "Music",
-        question: "Which group recorded 'Dirty World'?",
-        answers: ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"],
-        correctAnswer: "Traveling Wilburys"
-    },
-    {
-        id: "music_5497",
-        category: "Music",
-        question: "Which group recorded 'Not Alone Any More'?",
-        answers: ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"],
-        correctAnswer: "Traveling Wilburys"
-    },
-    {
-        id: "music_5498",
-        category: "Music",
-        question: "Which group recorded 'Margarita'?",
-        answers: ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"],
-        correctAnswer: "Traveling Wilburys"
-    },
-    {
-        id: "music_5499",
-        category: "Music",
-        question: "Which group recorded 'Rattled'?",
-        answers: ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"],
-        correctAnswer: "Traveling Wilburys"
-    },
-    {
-        id: "music_5500",
-        category: "Music",
-        question: "Which artists recorded 'Stop Draggin' My Heart Around'?",
-        answers: ["Stevie Nicks and Tom Petty and the Heartbreakers", "Stevie Nicks and Don Henley", "Stevie Nicks and Lindsey Buckingham", "Stevie Nicks and Kenny Loggins"],
-        correctAnswer: "Stevie Nicks and Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5501",
-        category: "Music",
-        question: "Which artists recorded 'Leather and Lace'?",
-        answers: ["Stevie Nicks and Don Henley", "Stevie Nicks and Tom Petty", "Stevie Nicks and Lindsey Buckingham", "Stevie Nicks and Kenny Loggins"],
-        correctAnswer: "Stevie Nicks and Don Henley"
-    },
-    {
-        id: "music_5502",
-        category: "Music",
-        question: "Which artist recorded 'Edge of Seventeen'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Raitt"],
-        correctAnswer: "Stevie Nicks"
-    },
-    {
-        id: "music_5503",
-        category: "Music",
-        question: "Which artist recorded 'Beauty and the Beast'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Raitt"],
-        correctAnswer: "Stevie Nicks"
-    },
-    {
-        id: "music_5504",
-        category: "Music",
-        question: "Which artist recorded 'Imperial Hotel'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Raitt"],
-        correctAnswer: "Stevie Nicks"
-    },
-    {
-        id: "music_5505",
-        category: "Music",
-        question: "Which artist recorded 'Whole Lotta Trouble'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Raitt"],
-        correctAnswer: "Stevie Nicks"
-    },
-    {
-        id: "music_5506",
-        category: "Music",
-        question: "Which artist recorded 'Two Kinds of Love'?",
-        answers: ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Raitt"],
-        correctAnswer: "Stevie Nicks"
-    },
-    {
-        id: "music_5507",
-        category: "Music",
-        question: "Which group recorded 'Don't Do Me Like That'?",
-        answers: ["Tom Petty and the Heartbreakers", "Traveling Wilburys", "The J. Geils Band", "Dire Straits"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5508",
-        category: "Music",
-        question: "Which group recorded 'Here Comes My Girl'?",
-        answers: ["Tom Petty and the Heartbreakers", "Traveling Wilburys", "The J. Geils Band", "Dire Straits"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5509",
-        category: "Music",
-        question: "Which group recorded 'The Waiting'?",
-        answers: ["Tom Petty and the Heartbreakers", "Traveling Wilburys", "The J. Geils Band", "Dire Straits"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5510",
-        category: "Music",
-        question: "Which group recorded 'Straight into Darkness'?",
-        answers: ["Tom Petty and the Heartbreakers", "Traveling Wilburys", "The J. Geils Band", "Dire Straits"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5511",
-        category: "Music",
-        question: "Which group recorded 'All Mixed Up'?",
-        answers: ["Tom Petty and the Heartbreakers", "Traveling Wilburys", "The J. Geils Band", "Dire Straits"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_5512",
-        category: "Music",
-        question: "Which group recorded 'Think About Me'?",
-        answers: ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_5513",
-        category: "Music",
-        question: "Which group recorded 'Love in Store'?",
-        answers: ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_5514",
-        category: "Music",
-        question: "Which group recorded 'Oh Diane'?",
-        answers: ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_5515",
-        category: "Music",
-        question: "Which group recorded 'Can't Go Back'?",
-        answers: ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_5516",
-        category: "Music",
-        question: "Which group recorded 'Eyes of the World'?",
-        answers: ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_5517",
-        category: "Music",
-        question: "Which group recorded 'Book of Love'?",
-        answers: ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_5518",
-        category: "Music",
-        question: "Which group recorded 'Caroline'?",
-        answers: ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"],
-        correctAnswer: "Fleetwood Mac"
-    },
-    {
-        id: "music_5519",
-        category: "Music",
-        question: "Which artist recorded 'D.W. Suite'?",
-        answers: ["Lindsey Buckingham", "Don Henley", "Tom Petty", "Peter Gabriel"],
-        correctAnswer: "Lindsey Buckingham"
-    },
-    {
-        id: "music_5520",
-        category: "Music",
-        question: "Which artist recorded 'It Was I'?",
-        answers: ["Lindsey Buckingham", "Don Henley", "Tom Petty", "Peter Gabriel"],
-        correctAnswer: "Lindsey Buckingham"
-    },
-    {
-        id: "music_5521",
-        category: "Music",
-        question: "Which artist recorded 'I'm the One'?",
-        answers: ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"],
-        correctAnswer: "Christine McVie"
-    },
-    {
-        id: "music_5522",
-        category: "Music",
-        question: "Which artist recorded 'Ask Anybody'?",
-        answers: ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"],
-        correctAnswer: "Christine McVie"
-    },
-    {
-        id: "music_5523",
-        category: "Music",
-        question: "Which artist recorded 'The Challenge'?",
-        answers: ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"],
-        correctAnswer: "Christine McVie"
-    },
-    {
-        id: "music_5524",
-        category: "Music",
-        question: "Which artist recorded 'Keeping Secrets'?",
-        answers: ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"],
-        correctAnswer: "Christine McVie"
-    },
-    {
-        id: "music_5525",
-        category: "Music",
-        question: "Which artist recorded 'One in a Million'?",
-        answers: ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"],
-        correctAnswer: "Christine McVie"
-    },
-    {
-        id: "music_5526",
-        category: "Music",
-        question: "Which artist recorded 'Talk to Me'?",
-        answers: ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"],
-        correctAnswer: "Chaka Khan"
-    },
-    {
-        id: "music_5527",
-        category: "Music",
-        question: "Which artist recorded 'We Can Work It Out'?",
-        answers: ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"],
-        correctAnswer: "Chaka Khan"
-    },
-    {
-        id: "music_5528",
-        category: "Music",
-        question: "Which artist recorded 'Got to Be There'?",
-        answers: ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"],
-        correctAnswer: "Chaka Khan"
-    },
-    {
-        id: "music_5529",
-        category: "Music",
-        question: "Which artist recorded 'Love of a Lifetime'?",
-        answers: ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"],
-        correctAnswer: "Chaka Khan"
-    },
-    {
-        id: "music_5530",
-        category: "Music",
-        question: "Which artist recorded 'It's My Party'?",
-        answers: ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"],
-        correctAnswer: "Chaka Khan"
-    },
-    {
-        id: "music_5531",
-        category: "Music",
-        question: "Which artist recorded 'Earth to Mickey'?",
-        answers: ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"],
-        correctAnswer: "Chaka Khan"
-    },
-    {
-        id: "music_5532",
-        category: "Music",
-        question: "Which artist recorded 'Papillon (Hot Butterfly)'?",
-        answers: ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"],
-        correctAnswer: "Chaka Khan"
-    },
-    {
-        id: "music_5533",
-        category: "Music",
-        question: "Which artist recorded 'Clouds'?",
-        answers: ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"],
-        correctAnswer: "Chaka Khan"
-    },
-    {
-        id: "music_5534",
-        category: "Music",
-        question: "Which artist recorded 'What Am I Missing?'?",
-        answers: ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"],
-        correctAnswer: "Chaka Khan"
-    },
-    {
-        id: "music_5535",
-        category: "Music",
-        question: "Which group recorded 'One Million Kisses'?",
-        answers: ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"],
-        correctAnswer: "Rufus and Chaka Khan"
-    },
-    {
-        id: "music_5536",
-        category: "Music",
-        question: "Which group recorded 'Blue Love'?",
-        answers: ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"],
-        correctAnswer: "Rufus and Chaka Khan"
-    },
-    {
-        id: "music_5537",
-        category: "Music",
-        question: "Which group recorded 'Don't Go to Strangers'?",
-        answers: ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"],
-        correctAnswer: "Rufus and Chaka Khan"
-    },
-    {
-        id: "music_5538",
-        category: "Music",
-        question: "Which group recorded 'Live in Me'?",
-        answers: ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"],
-        correctAnswer: "Rufus and Chaka Khan"
-    },
-    {
-        id: "music_5539",
-        category: "Music",
-        question: "Which group recorded 'Do You Love What You Feel'?",
-        answers: ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"],
-        correctAnswer: "Rufus and Chaka Khan"
-    },
-    {
-        id: "music_5540",
-        category: "Music",
-        question: "Which group recorded 'Sharing the Love'?",
-        answers: ["Rufus with Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"],
-        correctAnswer: "Rufus with Chaka Khan"
-    },
-    {
-        id: "music_5541",
-        category: "Music",
-        question: "Which group recorded 'Tonight We Love'?",
-        answers: ["Rufus with Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"],
-        correctAnswer: "Rufus with Chaka Khan"
-    },
-    {
-        id: "music_5542",
-        category: "Music",
-        question: "Which group recorded 'Better Together'?",
-        answers: ["Rufus with Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"],
-        correctAnswer: "Rufus with Chaka Khan"
-    },
-    {
-        id: "music_5543",
-        category: "Music",
-        question: "Which group recorded 'Take It to the Top'?",
-        answers: ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5544",
-        category: "Music",
-        question: "Which group recorded 'Steppin' Out'?",
-        answers: ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5545",
-        category: "Music",
-        question: "Which group recorded 'Stand Up and Sing'?",
-        answers: ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5546",
-        category: "Music",
-        question: "Which group recorded 'Street Kids'?",
-        answers: ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5547",
-        category: "Music",
-        question: "Which group recorded 'Hi De Hi, Hi De Ho'?",
-        answers: ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5548",
-        category: "Music",
-        question: "Which group recorded 'Be My Lady'?",
-        answers: ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5549",
-        category: "Music",
-        question: "Which group recorded 'Straight Ahead'?",
-        answers: ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5550",
-        category: "Music",
-        question: "Which group recorded 'Home Is Where the Heart Is'?",
-        answers: ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5551",
-        category: "Music",
-        question: "Which group recorded 'Special Way'?",
-        answers: ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5552",
-        category: "Music",
-        question: "Which group recorded 'God's Country'?",
-        answers: ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5553",
-        category: "Music",
-        question: "Which group recorded 'Waiting Game'?",
-        answers: ["Swing Out Sister", "The Blow Monkeys", "Curiosity Killed the Cat", "Matt Bianco"],
-        correctAnswer: "Swing Out Sister"
-    },
-    {
-        id: "music_5554",
-        category: "Music",
-        question: "Which group recorded 'You on My Mind'?",
-        answers: ["Swing Out Sister", "The Blow Monkeys", "Curiosity Killed the Cat", "Matt Bianco"],
-        correctAnswer: "Swing Out Sister"
-    },
-    {
-        id: "music_5555",
-        category: "Music",
-        question: "Which group recorded 'Where in the World'?",
-        answers: ["Swing Out Sister", "The Blow Monkeys", "Curiosity Killed the Cat", "Matt Bianco"],
-        correctAnswer: "Swing Out Sister"
-    },
-    {
-        id: "music_5556",
-        category: "Music",
-        question: "Which artists recorded 'Surrender to Me'?",
-        answers: ["Ann Wilson and Robin Zander", "Ann Wilson and Mike Reno", "Stevie Nicks and Don Henley", "Pat Benatar and Neil Giraldo"],
-        correctAnswer: "Ann Wilson and Robin Zander"
-    },
-    {
-        id: "music_5557",
-        category: "Music",
-        question: "Which artist recorded 'The Best Man in the World'?",
-        answers: ["Ann Wilson", "Pat Benatar", "Stevie Nicks", "Kim Carnes"],
-        correctAnswer: "Ann Wilson"
-    },
-    {
-        id: "music_5558",
-        category: "Music",
-        question: "Which artists recorded 'Almost Paradise'?",
-        answers: ["Mike Reno and Ann Wilson", "Ann Wilson and Robin Zander", "Stevie Nicks and Don Henley", "Pat Benatar and Neil Giraldo"],
-        correctAnswer: "Mike Reno and Ann Wilson"
-    },
-    {
-        id: "music_5559",
-        category: "Music",
-        question: "Which group recorded 'There's No Way'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5560",
-        category: "Music",
-        question: "Which group recorded 'Song of the South'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5561",
-        category: "Music",
-        question: "Which group recorded 'If I Had You'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5562",
-        category: "Music",
-        question: "Which group recorded 'High Cotton'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5563",
-        category: "Music",
-        question: "Which group recorded 'Southern Star'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5564",
-        category: "Music",
-        question: "Which group recorded 'She and I'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5565",
-        category: "Music",
-        question: "Which group recorded 'Touch Me When We're Dancing'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
-    },
-    {
-        id: "music_5566",
-        category: "Music",
-        question: "Which group recorded 'Face to Face'?",
-        answers: ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"],
-        correctAnswer: "Alabama"
+ // quiz_pack74.js
+// PuzzlePilot Bigggggg Quiz - Music Pack 74
+// 100 audited questions: music_5467 through music_5566.
+// Tags assembled from artist and recording metadata.
+// Recording-credit corrections: 5534 and 5541.
+// music_5526 tests album production instead of song identification.
+
+const answerTags = {
+    "John Mellencamp": ["american", "heartland rock", "roots rock", "rock", "male singers", "singer-songwriters", "solo artists", "indiana", "john cougar mellencamp"],
+    "John Cougar": ["american", "heartland rock", "rock", "male singers", "singer-songwriters", "solo artists", "john mellencamp", "john cougar mellencamp"],
+    "Bob Dylan": ["american", "folk rock", "rock", "singer-songwriters", "male singers", "solo artists", "harmonica", "songwriting"],
+    "Traveling Wilburys": ["american", "british", "rock", "supergroups", "bands", "george harrison", "bob dylan", "tom petty", "roy orbison", "jeff lynne"],
+    "Stevie Nicks and Tom Petty and the Heartbreakers": ["american", "rock", "duets", "collaborations", "stevie nicks", "tom petty", "heartbreakers"],
+    "Stevie Nicks and Don Henley": ["american", "soft rock", "duets", "collaborations", "stevie nicks", "don henley", "eagles", "fleetwood mac"],
+    "Stevie Nicks": ["american", "rock", "soft rock", "female singers", "solo artists", "fleetwood mac"],
+    "Tom Petty and the Heartbreakers": ["american", "rock", "heartland rock", "bands", "tom petty", "mike campbell", "benmont tench", "florida"],
+    "Fleetwood Mac": ["british", "american", "pop rock", "soft rock", "bands", "christine mcvie", "stevie nicks", "lindsey buckingham", "mick fleetwood", "john mcvie"],
+    "Lindsey Buckingham": ["american", "pop rock", "rock", "male singers", "solo artists", "singer-songwriters", "guitarists", "fleetwood mac"],
+    "Christine McVie": ["british", "pop rock", "soft rock", "female singers", "solo artists", "songwriters", "keyboards", "fleetwood mac"],
+    "Chaka Khan": ["american", "soul", "funk", "r&b", "female singers", "solo artists", "yvette marie stevens", "rufus", "warner records"],
+    "Arif Mardin": ["turkish", "american", "record producers", "music producers", "r&b", "soul", "chaka khan", "atlantic records", "album production"],
+    "Rufus and Chaka Khan": ["american", "funk", "soul", "r&b", "bands", "chaka khan", "rufus", "quincy jones"],
+    "Rufus with Chaka Khan": ["american", "funk", "soul", "r&b", "bands", "chaka khan", "rufus"],
+    "Rufus": ["american", "funk", "soul", "r&b", "bands", "tony maiden", "david hawk wolinski"],
+    "Kool & the Gang": ["american", "funk", "soul", "r&b", "bands", "robert kool bell", "ronald bell", "james jt taylor"],
+    "Swing Out Sister": ["british", "sophisti-pop", "pop", "soul", "bands", "corinne drewery", "andy connell"],
+    "Ann Wilson and Robin Zander": ["american", "rock", "soft rock", "duets", "ann wilson", "robin zander", "heart", "cheap trick"],
+    "Ann Wilson": ["american", "rock", "female singers", "solo artists", "heart", "nancy wilson"],
+    "Mike Reno and Ann Wilson": ["american", "canadian", "rock", "soft rock", "duets", "mike reno", "ann wilson", "heart", "loverboy"],
+    "Alabama": ["american", "country music", "country pop", "bands", "randy owen", "teddy gentry", "jeff cook", "country vocal groups"]
+};
+
+const recordingTags = {
+    "music_5467": [1985, "scarecrow album", "heartland rock"],
+    "music_5468": [1987, "the lonesome jubilee album", "heartland rock"],
+    "music_5469": [1989, "big daddy album", "heartland rock"],
+    "music_5470": [1989, "big daddy album", "storytelling songs"],
+    "music_5471": [1985, "scarecrow album", "heartland rock"],
+    "music_5472": [1985, "scarecrow album", "1985 single"],
+    "music_5473": [1982, "american fool album", "john cougar stage name"],
+    "music_5474": [1982, "american fool album", "john cougar stage name"],
+    "music_5475": [1979, "john cougar album", "john cougar stage name"],
+    "music_5476": [1980, "nothin matters and what if it did album", "john cougar stage name"],
+    "music_5477": [1983, "infidels album", "mark knopfler production"],
+    "music_5478": [1983, "infidels album", "mark knopfler production"],
+    "music_5479": [1985, "empire burlesque album", "1985 single"],
+    "music_5480": [1985, "empire burlesque album", "1985 single"],
+    "music_5481": [1988, "down in the groove album", "robert hunter songwriting"],
+    "music_5482": [1989, "oh mercy album", "daniel lanois production"],
+    "music_5483": [1989, "oh mercy album", "daniel lanois production"],
+    "music_5484": [1989, "oh mercy album", "daniel lanois production"],
+    "music_5485": [1989, "oh mercy album", "daniel lanois production"],
+    "music_5486": [1989, "oh mercy album", "daniel lanois production"],
+    "music_5487": [1986, "knocked out loaded album", "sam shepard co writer"],
+    "music_5488": [1985, "empire burlesque album"],
+    "music_5489": [1986, "band of the hand film soundtrack", "film songs", "tom petty and the heartbreakers backing band"],
+    "music_5490": [1988, "traveling wilburys vol 1 album", "supergroups"],
+    "music_5491": [1988, "traveling wilburys vol 1 album", "group lead vocals"],
+    "music_5492": [1988, "traveling wilburys vol 1 album", "george harrison lead vocals"],
+    "music_5493": [1988, "traveling wilburys vol 1 album", "tom petty lead vocals"],
+    "music_5494": [1988, "traveling wilburys vol 1 album", "bob dylan lead vocals"],
+    "music_5495": [1988, "traveling wilburys vol 1 album", "bob dylan lead vocals"],
+    "music_5496": [1988, "traveling wilburys vol 1 album", "bob dylan lead vocals"],
+    "music_5497": [1988, "traveling wilburys vol 1 album", "roy orbison lead vocals"],
+    "music_5498": [1988, "traveling wilburys vol 1 album", "group vocals"],
+    "music_5499": [1988, "traveling wilburys vol 1 album", "rockabilly"],
+    "music_5500": [1981, "bella donna album", "stevie nicks solo debut", "duets"],
+    "music_5501": [1981, "bella donna album", "duets"],
+    "music_5502": [1981, "bella donna album", "1982 single"],
+    "music_5503": [1983, "the wild heart album", "piano ballads"],
+    "music_5504": [1985, "rock a little album", "heartbreakers collaborations"],
+    "music_5505": [1989, "the other side of the mirror album"],
+    "music_5506": [1989, "the other side of the mirror album", "bruce hornsby guest vocals"],
+    "music_5507": [1979, "damn the torpedoes album", "1980 single"],
+    "music_5508": [1979, "damn the torpedoes album", "1980 single"],
+    "music_5509": [1981, "hard promises album", "1981 single"],
+    "music_5510": [1982, "long after dark album", "1982 single"],
+    "music_5511": [1987, "let me up ive had enough album", "1987 album track"],
+    "music_5512": [1979, "tusk album", "christine mcvie lead vocals"],
+    "music_5513": [1982, "mirage album", "christine mcvie lead vocals"],
+    "music_5514": [1982, "mirage album", "lindsey buckingham lead vocals"],
+    "music_5515": [1982, "mirage album", "lindsey buckingham lead vocals"],
+    "music_5516": [1982, "mirage album", "lindsey buckingham lead vocals"],
+    "music_5517": [1982, "mirage album", "lindsey buckingham lead vocals"],
+    "music_5518": [1987, "tango in the night album", "lindsey buckingham lead vocals"],
+    "music_5519": [1984, "go insane album", "dennis wilson tribute"],
+    "music_5520": [1981, "law and order album", "solo debut album"],
+    "music_5521": [1984, "christine mcvie album", "1984 album track"],
+    "music_5522": [1984, "christine mcvie album", "steve winwood co writer"],
+    "music_5523": [1984, "christine mcvie album", "1984 album track"],
+    "music_5524": [1984, "christine mcvie album", "1984 album track"],
+    "music_5525": [1984, "christine mcvie album", "steve winwood duet"],
+    "music_5526": [1981, "what cha gonna do for me album", "album production", "arif mardin"],
+    "music_5527": [1981, "what cha gonna do for me album", "beatles cover version"],
+    "music_5528": [1982, "chaka khan album", "michael jackson song cover"],
+    "music_5529": [1986, "destiny album", "1986 single"],
+    "music_5530": [1988, "ck album", "1988 single"],
+    "music_5531": [1986, "destiny album", "1986 single"],
+    "music_5532": [1980, "naughty album", "1980 single"],
+    "music_5533": [1980, "naughty album", "1980 single"],
+    "music_5534": [1979, "masterjam album", "quincy jones production", "rufus group recordings"],
+    "music_5535": [1983, "stompin at the savoy album", "studio track on live album", "1983 single"],
+    "music_5536": [1978, "street player album", "rufus group recordings"],
+    "music_5537": [1983, "stompin at the savoy album", "studio track on live album"],
+    "music_5538": [1979, "masterjam album", "rod temperton songwriting", "quincy jones production"],
+    "music_5539": [1979, "masterjam album", "quincy jones production", "1980 single"],
+    "music_5540": [1981, "camouflage album", "rufus group recordings"],
+    "music_5541": [1981, "party til youre broke album", "chaka khan absent from recording"],
+    "music_5542": [1981, "camouflage album", "rufus group recordings"],
+    "music_5543": [1980, "celebrate album", "1980 single"],
+    "music_5544": [1981, "something special album", "1981 single"],
+    "music_5545": [1981, "something special album", "album track"],
+    "music_5546": [1982, "as one album", "1982 album track"],
+    "music_5547": [1982, "as one album", "1982 album track"],
+    "music_5548": [1981, "something special album", "1981 album track"],
+    "music_5549": [1983, "in the heart album", "1983 album track"],
+    "music_5550": [1983, "in the heart album", "1983 album track"],
+    "music_5551": [1986, "forever album", "1986 album track"],
+    "music_5552": [1986, "forever album", "1986 album track"],
+    "music_5553": [1989, "kaleidoscope world album", "1989 single"],
+    "music_5554": [1989, "kaleidoscope world album", "1989 single"],
+    "music_5555": [1989, "kaleidoscope world album", "1989 single"],
+    "music_5556": [1988, "tequila sunrise film soundtrack", "film songs", "duets"],
+    "music_5557": [1986, "the golden child film soundtrack", "film songs"],
+    "music_5558": [1984, "footloose film soundtrack", "film songs", "duets"],
+    "music_5559": [1985, "40 hour week album", "1985 single", "country number one"],
+    "music_5560": [1989, "southern star album", "1988 single", "country number one"],
+    "music_5561": [1989, "southern star album", "1989 single", "country number one"],
+    "music_5562": [1989, "southern star album", "1989 single", "country number one"],
+    "music_5563": [1989, "southern star album", "1989 single", "country number one"],
+    "music_5564": [1986, "greatest hits album", "1986 single", "country number one"],
+    "music_5565": [1986, "the touch album", "1986 single", "country number one"],
+    "music_5566": [1987, "just us album", "1988 single", "kt oslin duet"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const answerMetadata = answerTags[correctAnswer];
+    const recording = recordingTags[id];
+
+    if (!answerMetadata || !recording) {
+        throw new Error(`Missing music metadata for ${id}`);
     }
+
+    const titleMatch = question.match(/'(.+)'/);
+    if (!titleMatch) {
+        throw new Error(`Missing song or album title for ${id}`);
+    }
+
+    const isProductionQuestion = id === "music_5526";
+    const year = recording[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music",
+            isProductionQuestion ? "albums" : "songs",
+            isProductionQuestion ? "music production" : "recordings",
+            decade,
+            `${decade} music`,
+            `${year} releases`,
+            titleMatch[1].toLowerCase(),
+            correctAnswer.toLowerCase(),
+            ...answerMetadata,
+            ...recording.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
+const quizPack74 = [
+    makeQuestion("music_5467", "Which artist recorded 'Minutes to Memories'?", ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Mellencamp", "Hard"),
+    makeQuestion("music_5468", "Which artist recorded 'Rooty Toot Toot'?", ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Mellencamp", "Hard"),
+    makeQuestion("music_5469", "Which artist recorded 'Pop Singer'?", ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Mellencamp", "Medium"),
+    makeQuestion("music_5470", "Which artist recorded 'Jackie Brown'?", ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Mellencamp", "Hard"),
+    makeQuestion("music_5471", "Which artist recorded 'Hard Times for an Honest Man'?", ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Mellencamp", "Hard"),
+    makeQuestion("music_5472", "Which artist recorded 'Lonely Ol' Night'?", ["John Mellencamp", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Mellencamp", "Easy"),
+    makeQuestion("music_5473", "Which artist recorded 'Jack & Diane'?", ["John Cougar", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Cougar", "Easy"),
+    makeQuestion("music_5474", "Which artist recorded 'Thundering Hearts'?", ["John Cougar", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Cougar", "Hard"),
+    makeQuestion("music_5475", "Which artist recorded 'Miami'?", ["John Cougar", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Cougar", "Hard"),
+    makeQuestion("music_5476", "Which artist recorded 'Hot Night in a Cold Town'?", ["John Cougar", "Bruce Springsteen", "Tom Petty", "Bob Seger"], "John Cougar", "Hard"),
+    makeQuestion("music_5477", "Which artist recorded 'Sweetheart Like You'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Medium"),
+    makeQuestion("music_5478", "Which artist recorded 'Jokerman'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Easy"),
+    makeQuestion("music_5479", "Which artist recorded 'Tight Connection to My Heart (Has Anybody Seen My Love)'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Hard"),
+    makeQuestion("music_5480", "Which artist recorded 'Emotionally Yours'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Hard"),
+    makeQuestion("music_5481", "Which artist recorded 'Silvio'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Medium"),
+    makeQuestion("music_5482", "Which artist recorded 'Everything Is Broken'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Medium"),
+    makeQuestion("music_5483", "Which artist recorded 'Political World'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Medium"),
+    makeQuestion("music_5484", "Which artist recorded 'Most of the Time'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Hard"),
+    makeQuestion("music_5485", "Which artist recorded 'Ring Them Bells'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Hard"),
+    makeQuestion("music_5486", "Which artist recorded 'Man in the Long Black Coat'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Hard"),
+    makeQuestion("music_5487", "Which artist recorded 'Brownsville Girl'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Hard"),
+    makeQuestion("music_5488", "Which artist recorded 'When the Night Comes Falling from the Sky'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Hard"),
+    makeQuestion("music_5489", "Which artist recorded 'Band of the Hand (It's Hell Time, Man)'?", ["Bob Dylan", "Neil Young", "Tom Petty", "Bruce Springsteen"], "Bob Dylan", "Hard"),
+    makeQuestion("music_5490", "Which group recorded 'Handle with Care'?", ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"], "Traveling Wilburys", "Easy"),
+    makeQuestion("music_5491", "Which group recorded 'End of the Line'?", ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"], "Traveling Wilburys", "Easy"),
+    makeQuestion("music_5492", "Which group recorded 'Heading for the Light'?", ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"], "Traveling Wilburys", "Medium"),
+    makeQuestion("music_5493", "Which group recorded 'Last Night'?", ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"], "Traveling Wilburys", "Medium"),
+    makeQuestion("music_5494", "Which group recorded 'Tweeter and the Monkey Man'?", ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"], "Traveling Wilburys", "Medium"),
+    makeQuestion("music_5495", "Which group recorded 'Congratulations'?", ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"], "Traveling Wilburys", "Hard"),
+    makeQuestion("music_5496", "Which group recorded 'Dirty World'?", ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"], "Traveling Wilburys", "Hard"),
+    makeQuestion("music_5497", "Which group recorded 'Not Alone Any More'?", ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"], "Traveling Wilburys", "Hard"),
+    makeQuestion("music_5498", "Which group recorded 'Margarita'?", ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"], "Traveling Wilburys", "Hard"),
+    makeQuestion("music_5499", "Which group recorded 'Rattled'?", ["Traveling Wilburys", "Tom Petty and the Heartbreakers", "Dire Straits", "The Traveling Band"], "Traveling Wilburys", "Hard"),
+    makeQuestion("music_5500", "Which artists recorded 'Stop Draggin' My Heart Around'?", ["Stevie Nicks and Tom Petty and the Heartbreakers", "Stevie Nicks and Don Henley", "Stevie Nicks and Lindsey Buckingham", "Stevie Nicks and Kenny Loggins"], "Stevie Nicks and Tom Petty and the Heartbreakers", "Easy"),
+    makeQuestion("music_5501", "Which artists recorded 'Leather and Lace'?", ["Stevie Nicks and Don Henley", "Stevie Nicks and Tom Petty", "Stevie Nicks and Lindsey Buckingham", "Stevie Nicks and Kenny Loggins"], "Stevie Nicks and Don Henley", "Easy"),
+    makeQuestion("music_5502", "Which artist recorded 'Edge of Seventeen'?", ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Raitt"], "Stevie Nicks", "Easy"),
+    makeQuestion("music_5503", "Which artist recorded 'Beauty and the Beast'?", ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Raitt"], "Stevie Nicks", "Hard"),
+    makeQuestion("music_5504", "Which artist recorded 'Imperial Hotel'?", ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Raitt"], "Stevie Nicks", "Hard"),
+    makeQuestion("music_5505", "Which artist recorded 'Whole Lotta Trouble'?", ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Raitt"], "Stevie Nicks", "Hard"),
+    makeQuestion("music_5506", "Which artist recorded 'Two Kinds of Love'?", ["Stevie Nicks", "Pat Benatar", "Kim Carnes", "Bonnie Raitt"], "Stevie Nicks", "Hard"),
+    makeQuestion("music_5507", "Which group recorded 'Don't Do Me Like That'?", ["Tom Petty and the Heartbreakers", "Traveling Wilburys", "The J. Geils Band", "Dire Straits"], "Tom Petty and the Heartbreakers", "Easy"),
+    makeQuestion("music_5508", "Which group recorded 'Here Comes My Girl'?", ["Tom Petty and the Heartbreakers", "Traveling Wilburys", "The J. Geils Band", "Dire Straits"], "Tom Petty and the Heartbreakers", "Easy"),
+    makeQuestion("music_5509", "Which group recorded 'The Waiting'?", ["Tom Petty and the Heartbreakers", "Traveling Wilburys", "The J. Geils Band", "Dire Straits"], "Tom Petty and the Heartbreakers", "Easy"),
+    makeQuestion("music_5510", "Which group recorded 'Straight into Darkness'?", ["Tom Petty and the Heartbreakers", "Traveling Wilburys", "The J. Geils Band", "Dire Straits"], "Tom Petty and the Heartbreakers", "Hard"),
+    makeQuestion("music_5511", "Which group recorded 'All Mixed Up'?", ["Tom Petty and the Heartbreakers", "Traveling Wilburys", "The J. Geils Band", "Dire Straits"], "Tom Petty and the Heartbreakers", "Hard"),
+    makeQuestion("music_5512", "Which group recorded 'Think About Me'?", ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"], "Fleetwood Mac", "Easy"),
+    makeQuestion("music_5513", "Which group recorded 'Love in Store'?", ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"], "Fleetwood Mac", "Medium"),
+    makeQuestion("music_5514", "Which group recorded 'Oh Diane'?", ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"], "Fleetwood Mac", "Easy"),
+    makeQuestion("music_5515", "Which group recorded 'Can't Go Back'?", ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"], "Fleetwood Mac", "Hard"),
+    makeQuestion("music_5516", "Which group recorded 'Eyes of the World'?", ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"], "Fleetwood Mac", "Hard"),
+    makeQuestion("music_5517", "Which group recorded 'Book of Love'?", ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"], "Fleetwood Mac", "Hard"),
+    makeQuestion("music_5518", "Which group recorded 'Caroline'?", ["Fleetwood Mac", "Heart", "Starship", "The Pretenders"], "Fleetwood Mac", "Hard"),
+    makeQuestion("music_5519", "Which artist recorded 'D.W. Suite'?", ["Lindsey Buckingham", "Don Henley", "Tom Petty", "Peter Gabriel"], "Lindsey Buckingham", "Hard"),
+    makeQuestion("music_5520", "Which artist recorded 'It Was I'?", ["Lindsey Buckingham", "Don Henley", "Tom Petty", "Peter Gabriel"], "Lindsey Buckingham", "Hard"),
+    makeQuestion("music_5521", "Which artist recorded 'I'm the One'?", ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"], "Christine McVie", "Hard"),
+    makeQuestion("music_5522", "Which artist recorded 'Ask Anybody'?", ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"], "Christine McVie", "Hard"),
+    makeQuestion("music_5523", "Which artist recorded 'The Challenge'?", ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"], "Christine McVie", "Hard"),
+    makeQuestion("music_5524", "Which artist recorded 'Keeping Secrets'?", ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"], "Christine McVie", "Hard"),
+    makeQuestion("music_5525", "Which artist recorded 'One in a Million'?", ["Christine McVie", "Stevie Nicks", "Pat Benatar", "Kim Carnes"], "Christine McVie", "Hard"),
+    makeQuestion("music_5526", "Who produced the Chaka Khan album 'What Cha' Gonna Do for Me'?", ["Arif Mardin", "Quincy Jones", "Nile Rodgers", "Giorgio Moroder"], "Arif Mardin", "Hard"),
+    makeQuestion("music_5527", "Which artist recorded 'We Can Work It Out'?", ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"], "Chaka Khan", "Easy"),
+    makeQuestion("music_5528", "Which artist recorded 'Got to Be There'?", ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"], "Chaka Khan", "Hard"),
+    makeQuestion("music_5529", "Which artist recorded 'Love of a Lifetime'?", ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"], "Chaka Khan", "Easy"),
+    makeQuestion("music_5530", "Which artist recorded 'It's My Party'?", ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"], "Chaka Khan", "Hard"),
+    makeQuestion("music_5531", "Which artist recorded 'Earth to Mickey'?", ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"], "Chaka Khan", "Hard"),
+    makeQuestion("music_5532", "Which artist recorded 'Papillon (Hot Butterfly)'?", ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"], "Chaka Khan", "Easy"),
+    makeQuestion("music_5533", "Which artist recorded 'Clouds'?", ["Chaka Khan", "Diana Ross", "Patti LaBelle", "Stephanie Mills"], "Chaka Khan", "Medium"),
+    makeQuestion("music_5534", "Which group recorded 'What Am I Missing?'?", ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"], "Rufus and Chaka Khan", "Hard"),
+    makeQuestion("music_5535", "Which group recorded 'One Million Kisses'?", ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"], "Rufus and Chaka Khan", "Medium"),
+    makeQuestion("music_5536", "Which group recorded 'Blue Love'?", ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"], "Rufus and Chaka Khan", "Hard"),
+    makeQuestion("music_5537", "Which group recorded 'Don't Go to Strangers'?", ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"], "Rufus and Chaka Khan", "Hard"),
+    makeQuestion("music_5538", "Which group recorded 'Live in Me'?", ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"], "Rufus and Chaka Khan", "Hard"),
+    makeQuestion("music_5539", "Which group recorded 'Do You Love What You Feel'?", ["Rufus and Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"], "Rufus and Chaka Khan", "Easy"),
+    makeQuestion("music_5540", "Which group recorded 'Sharing the Love'?", ["Rufus with Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"], "Rufus with Chaka Khan", "Hard"),
+    makeQuestion("music_5541", "Which group recorded 'Tonight We Love'?", ["Rufus", "Kool & the Gang", "The Commodores", "Shalamar"], "Rufus", "Hard"),
+    makeQuestion("music_5542", "Which group recorded 'Better Together'?", ["Rufus with Chaka Khan", "Kool & the Gang", "The Commodores", "Shalamar"], "Rufus with Chaka Khan", "Hard"),
+    makeQuestion("music_5543", "Which group recorded 'Take It to the Top'?", ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"], "Kool & the Gang", "Easy"),
+    makeQuestion("music_5544", "Which group recorded 'Steppin' Out'?", ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"], "Kool & the Gang", "Easy"),
+    makeQuestion("music_5545", "Which group recorded 'Stand Up and Sing'?", ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_5546", "Which group recorded 'Street Kids'?", ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_5547", "Which group recorded 'Hi De Hi, Hi De Ho'?", ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"], "Kool & the Gang", "Easy"),
+    makeQuestion("music_5548", "Which group recorded 'Be My Lady'?", ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_5549", "Which group recorded 'Straight Ahead'?", ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_5550", "Which group recorded 'Home Is Where the Heart Is'?", ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_5551", "Which group recorded 'Special Way'?", ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_5552", "Which group recorded 'God's Country'?", ["Kool & the Gang", "The Commodores", "Shalamar", "The Whispers"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_5553", "Which group recorded 'Waiting Game'?", ["Swing Out Sister", "The Blow Monkeys", "Curiosity Killed the Cat", "Matt Bianco"], "Swing Out Sister", "Hard"),
+    makeQuestion("music_5554", "Which group recorded 'You on My Mind'?", ["Swing Out Sister", "The Blow Monkeys", "Curiosity Killed the Cat", "Matt Bianco"], "Swing Out Sister", "Easy"),
+    makeQuestion("music_5555", "Which group recorded 'Where in the World'?", ["Swing Out Sister", "The Blow Monkeys", "Curiosity Killed the Cat", "Matt Bianco"], "Swing Out Sister", "Hard"),
+    makeQuestion("music_5556", "Which artists recorded 'Surrender to Me'?", ["Ann Wilson and Robin Zander", "Ann Wilson and Mike Reno", "Stevie Nicks and Don Henley", "Pat Benatar and Neil Giraldo"], "Ann Wilson and Robin Zander", "Easy"),
+    makeQuestion("music_5557", "Which artist recorded 'The Best Man in the World'?", ["Ann Wilson", "Pat Benatar", "Stevie Nicks", "Kim Carnes"], "Ann Wilson", "Hard"),
+    makeQuestion("music_5558", "Which artists recorded 'Almost Paradise'?", ["Mike Reno and Ann Wilson", "Ann Wilson and Robin Zander", "Stevie Nicks and Don Henley", "Pat Benatar and Neil Giraldo"], "Mike Reno and Ann Wilson", "Easy"),
+    makeQuestion("music_5559", "Which group recorded 'There's No Way'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5560", "Which group recorded 'Song of the South'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5561", "Which group recorded 'If I Had You'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Medium"),
+    makeQuestion("music_5562", "Which group recorded 'High Cotton'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Medium"),
+    makeQuestion("music_5563", "Which group recorded 'Southern Star'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Hard"),
+    makeQuestion("music_5564", "Which group recorded 'She and I'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5565", "Which group recorded 'Touch Me When We're Dancing'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Easy"),
+    makeQuestion("music_5566", "Which group recorded 'Face to Face'?", ["Alabama", "Restless Heart", "Exile", "The Oak Ridge Boys"], "Alabama", "Hard")
 ];
 
 module.exports = quizPack74;
