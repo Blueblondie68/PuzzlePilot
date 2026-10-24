@@ -1,704 +1,283 @@
+// quiz_pack71.js
+// PuzzlePilot Bigggggg Quiz - Music Pack 71
+// 100 audited questions: music_5167 through music_5266.
+// Shared artist and recording metadata expand to full tags per question.
+
+const artistTags = {
+    "Redgum": ["australian", "folk rock", "political music", "bands", "john schumann", "antiwar music"],
+    "Warumpi Band": ["australian", "aboriginal rock", "indigenous australian music", "bands", "george burarrwanga", "neil murray"],
+    "The Triffids": ["australian", "alternative rock", "indie rock", "bands", "david mccomb", "perth"],
+    "The Stems": ["australian", "garage rock", "power pop", "bands", "dom mariani", "perth"],
+    "The Black Sorrows": ["australian", "blues rock", "pop rock", "bands", "joe camilleri"],
+    "Paul Kelly": ["australian", "folk rock", "singer-songwriters", "male singers", "solo artists"],
+    "Jo Jo Zep & The Falcons": ["australian", "pub rock", "new wave", "bands", "joe camilleri"],
+    "Hunters & Collectors": ["australian", "pub rock", "alternative rock", "bands", "mark seymour"],
+    "Michael Hutchence": ["australian", "pop rock", "male singers", "solo artists", "inxs", "film soundtracks"],
+    "Icehouse": ["australian", "new wave", "synth-pop", "bands", "iva davies"],
+    "Models": ["australian", "new wave", "synth-pop", "bands", "sean kelly", "james freud"],
+    "Real Life": ["australian", "synth-pop", "new wave", "bands", "david sterry", "richard zatorski"],
+    "Tim Finn": ["new zealand", "pop rock", "male singers", "solo artists", "split enz", "singer-songwriters"],
+    "Dave Dobbyn": ["new zealand", "pop rock", "male singers", "solo artists", "dd smash", "singer-songwriters"],
+    "The Dance Exponents": ["new zealand", "pop rock", "bands", "jordan luck", "exponents"],
+    "When the Cat's Away": ["new zealand", "pop", "female vocal groups", "bands", "annie crummer", "margaret urlich"],
+    "Fra Lippo Lippi": ["norwegian", "synth-pop", "new wave", "bands", "per oystein sorensen", "rune kristoffersen"],
+    "Floy Joy": ["british", "sophisti-pop", "soul", "bands", "michael ward", "don was production"],
+    "Suzanne Vega": ["american", "folk pop", "singer-songwriters", "female singers", "solo artists"],
+    "Indigo Girls": ["american", "folk rock", "duos", "amy ray", "emily saliers", "female singers"],
+    "Sinéad O'Connor": ["irish", "alternative rock", "female singers", "solo artists", "singer-songwriters"],
+    "Neneh Cherry": ["swedish", "british", "hip hop", "dance-pop", "female singers", "solo artists"],
+    "Meat Loaf": ["american", "rock", "arena rock", "male singers", "solo artists"],
+    "Paul Carrack": ["british", "blue-eyed soul", "pop rock", "male singers", "solo artists", "ace band", "mike and the mechanics"],
+    "Naked Eyes": ["british", "synth-pop", "new wave", "duos", "pete byrne", "rob fisher"],
+    "Seona Dancing": ["british", "synth-pop", "new wave", "duos", "ricky gervais", "bill macrae"],
+    "Animotion": ["american", "synth-pop", "new wave", "bands", "bill wadhams", "astrid plane"],
+    "Nu Shooz": ["american", "dance-pop", "freestyle music", "groups", "valerie day", "john smith musician", "portland oregon"],
+    "Stacey Q": ["american", "dance-pop", "freestyle music", "female singers", "solo artists"],
+    "Exposé": ["american", "freestyle music", "dance-pop", "female groups", "miami", "jeanette jurado"],
+    "The Cover Girls": ["american", "freestyle music", "dance-pop", "female groups", "new york"],
+    "Company B": ["american", "freestyle music", "dance-pop", "female groups", "miami"],
+    "Shannon": ["american", "freestyle music", "dance-pop", "female singers", "solo artists"],
+    "Lisa Lisa and Cult Jam": ["american", "freestyle music", "r&b", "groups", "lisa velez", "full force production"],
+    "Joyce Sims": ["american", "freestyle music", "r&b", "female singers", "solo artists", "singer-songwriters"],
+    "Dionne Warwick and Jeffrey Osborne": ["american", "soul", "r&b", "duets", "dionne warwick", "jeffrey osborne"],
+    "Melissa Manchester": ["american", "pop", "adult contemporary", "female singers", "solo artists", "singer-songwriters"],
+    "Cliff Richard": ["british", "pop rock", "male singers", "solo artists", "uk chart hits"],
+    "Shakin' Stevens": ["welsh", "rock and roll revival", "pop rock", "male singers", "solo artists", "uk chart hits"],
+    "Ph.D.": ["british", "synth-pop", "pop rock", "bands", "jim diamond", "tony hymas"],
+    "Limahl": ["british", "synth-pop", "male singers", "solo artists", "kajagoogoo", "christopher hamill"],
+    "The Alan Parsons Project": ["british", "progressive rock", "art rock", "studio groups", "alan parsons", "eric woolfson"],
+    "The Damned": ["british", "punk rock", "gothic rock", "bands", "dave vanian", "captain sensible"],
+    "Felt": ["british", "indie pop", "post-punk", "bands", "lawrence hayward", "martin duffy"],
+    "The Waterboys": ["british", "folk rock", "rock", "bands", "mike scott"],
+    "Cinderella": ["american", "glam metal", "hard rock", "bands", "tom keifer", "mercury records"],
+};
+
+const recordingTags = {
+    "music_5167": [1984, "frontline album", "1984 single", "australian satire", "john schumann songwriter"],
+    "music_5168": [1985, "big name no blankets album", "political songs"],
+    "music_5169": [1987, "go bush album", "neil murray songwriter", "christine anu later cover", "elcho island"],
+    "music_5170": [1986, "born sandy devotional album", "wide open road single"],
+    "music_5171": [1987, "calenture album", "1987 single"],
+    "music_5172": [1987, "calenture album", "1988 single", "david mccomb songwriter"],
+    "music_5173": [1987, "at first sight violets are blue album", "1987 single"],
+    "music_5174": [1985, "love will grow but the stems will stay ep", "australian garage rock"],
+    "music_5175": [1988, "hold on to me album", "1989 single", "joe camilleri vocals"],
+    "music_5176": [1985, "post album", "paul kelly songwriter"],
+    "music_5177": [1985, "post album", "paul kelly songwriter"],
+    "music_5178": [1980, "hats off step lively album", "australian pub rock"],
+    "music_5179": [1982, "taxi mary single", "jane clifton duet", "duets"],
+    "music_5180": [1987, "whats a few men album", "1988 north american single"],
+    "music_5181": [1986, "dogs in space soundtrack", "1987 single", "ollie olsen songwriter"],
+    "music_5182": [1987, "calenture album", "album trivia", "island records"],
+    "music_5183": [1987, "calenture album", "1988 single"],
+    "music_5184": [1987, "calenture album", "album tracks"],
+    "music_5185": [1986, "born sandy devotional album", "album tracks"],
+    "music_5186": [1986, "measure for measure album", "1986 single"],
+    "music_5187": [1986, "models media album", "1986 single"],
+    "music_5188": [1983, "heartland album", "1983 single"],
+    "music_5189": [1983, "escapade album", "1983 single"],
+    "music_5190": [1988, "loyal single", "new zealand chart hits"],
+    "music_5191": [1984, "the optimist album", "1984 dd smash single", "dd smash", "dave dobbyn songwriter"],
+    "music_5192": [1983, "1983 dd smash single", "dd smash", "dave dobbyn songwriter"],
+    "music_5193": [1982, "prayers be answered album", "new zealand pop rock"],
+    "music_5194": [1983, "prayers be answered album", "1984 single", "new zealand pop rock"],
+    "music_5195": [1988, "melting pot single", "blue mink original", "cover versions", "new zealand chart topper"],
+    "music_5196": [1985, "songs album", "1986 international single", "norwegian new wave"],
+    "music_5197": [1986, "songs album", "norwegian new wave"],
+    "music_5198": [1986, "weak in the presence of beauty album", "1986 single", "alison moyet later cover"],
+    "music_5199": [1984, "into the hot album", "1984 single", "michael ward songwriter"],
+    "music_5200": [1985, "suzanne vega debut album", "1985 single"],
+    "music_5201": [1987, "solitude standing album", "album title track"],
+    "music_5202": [1989, "indigo girls album", "1989 single", "amy ray and emily saliers"],
+    "music_5203": [1987, "the lion and the cobra album", "1988 single"],
+    "music_5204": [1987, "the lion and the cobra album", "1987 single"],
+    "music_5205": [1989, "raw like sushi album", "1989 single"],
+    "music_5206": [1984, "bad attitude album", "1984 single"],
+    "music_5207": [1983, "midnight at the lost and found album", "1983 single", "album title track"],
+    "music_5208": [1983, "midnight at the lost and found album", "album track"],
+    "music_5209": [1986, "blind before i stop album", "1987 single", "album title track"],
+    "music_5210": [1987, "one good reason album", "1987 single", "album title track"],
+    "music_5211": [1983, "burning bridges album", "1983 single", "bacharach and david songwriting", "cover versions"],
+    "music_5212": [1983, "burning bridges album", "1983 single"],
+    "music_5213": [1983, "burning bridges album", "1983 single"],
+    "music_5214": [1983, "more to lose single", "ricky gervais vocals"],
+    "music_5215": [1983, "bitter heart single", "ricky gervais vocals"],
+    "music_5216": [1984, "animotion album", "1984 single", "holly knight and michael des barres songwriters"],
+    "music_5217": [1985, "animotion album", "1985 single"],
+    "music_5218": [1986, "strange behavior album", "1986 single"],
+    "music_5219": [1986, "poolside album", "album trivia", "valerie day and john smith"],
+    "music_5220": [1985, "poolside album", "1986 international single"],
+    "music_5221": [1986, "poolside album", "1987 single"],
+    "music_5222": [1986, "better than heaven album", "1986 single"],
+    "music_5223": [1986, "better than heaven album", "1987 single"],
+    "music_5224": [1989, "what you dont know album", "1989 single", "album title track"],
+    "music_5225": [1986, "show me album", "1986 debut single"],
+    "music_5226": [1987, "show me album", "1987 single"],
+    "music_5227": [1989, "we cant go wrong album", "1989 single"],
+    "music_5228": [1986, "company b album", "1987 single"],
+    "music_5229": [1987, "company b album", "1987 single"],
+    "music_5230": [1983, "let the music play album", "1983 single", "album title track"],
+    "music_5231": [1984, "let the music play album", "1984 single"],
+    "music_5232": [1985, "do you wanna get away album", "1985 single", "album title track"],
+    "music_5233": [1985, "lisa lisa and cult jam debut album", "1985 single", "full force production"],
+    "music_5234": [1987, "spanish fly album", "1987 single", "us number one"],
+    "music_5235": [1987, "spanish fly album", "1987 single", "us number one"],
+    "music_5236": [1985, "lisa lisa and cult jam debut album", "1986 single", "duets", "full force production"],
+    "music_5237": [1987, "come into my life album", "1987 single", "album title track"],
+    "music_5238": [1987, "come into my life album", "1988 single"],
+    "music_5239": [1987, "reservations for two album", "1987 single", "duets"],
+    "music_5240": [1982, "hey ricky album", "1982 single", "grammy awards"],
+    "music_5241": [1980, "im no hero album", "1980 single"],
+    "music_5242": [1980, "im no hero album", "1981 single"],
+    "music_5243": [1981, "wired for sound album", "1981 single", "album title track"],
+    "music_5244": [1982, "now you see me now you dont album", "1982 single"],
+    "music_5245": [1983, "silver album", "1983 single"],
+    "music_5246": [1983, "cry just a little bit single", "1983 single"],
+    "music_5247": [1984, "a letter to you single", "1984 single", "cover versions"],
+    "music_5248": [1984, "teardrops single", "1984 single"],
+    "music_5249": [1987, "what do you want to make those eyes at me for single", "1987 single", "cover versions"],
+    "music_5250": [1981, "phd album", "1982 uk chart success"],
+    "music_5251": [1981, "phd album", "1981 single"],
+    "music_5252": [1984, "the neverending story film soundtrack", "1984 single", "giorgio moroder production", "film songs"],
+    "music_5253": [1983, "only for love single", "1983 single"],
+    "music_5254": [1984, "vulture culture album", "1984 album track"],
+    "music_5255": [1986, "eloise single", "1986 single", "barry ryan original", "cover versions"],
+    "music_5256": [1986, "anything album", "1986 single", "album title track"],
+    "music_5257": [1985, "phantasmagoria album", "1985 single"],
+    "music_5258": [1985, "ignite the seven cannons album", "1985 single", "elizabeth fraser guest vocals"],
+    "music_5259": [1986, "ballad of the band ep", "1986 title track"],
+    "music_5260": [1985, "this is the sea album", "1985 album track"],
+    "music_5261": [1988, "married to the mob film soundtrack", "1988 single", "film songs"],
+    "music_5262": [1986, "pretty in pink film soundtrack", "1986 single", "film songs", "joe jackson piano"],
+    "music_5263": [1989, "indigo girls album", "1989 album track", "michael stipe guest vocals"],
+    "music_5264": [1989, "raw like sushi album", "1989 single"],
+    "music_5265": [1988, "long cold winter album", "1988 single", "power ballad"],
+    "music_5266": [1986, "night songs album", "1986 single", "power ballad"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const recording = recordingTags[id];
+    if (!artist || !recording) throw new Error(`Missing metadata for ${id}`);
+    const match = question.match(/'(.+)'/);
+    if (!match) throw new Error(`Missing song or album title for ${id}`);
+    const albumQuestion = id === "music_5182" || id === "music_5219";
+    const year = recording[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id, category: "Music", question, answers, correctAnswer, difficulty,
+        tags: [...new Set([
+            "music", albumQuestion ? "albums" : "songs",
+            albumQuestion ? "album trivia" : "recordings",
+            decade, `${decade} music`, `${year} releases`,
+            match[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...artist, ...recording.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
 const quizPack71 = [
-    {
-        id: "music_5167",
-        category: "Music",
-        question: "Which group recorded 'I've Been to Bali Too'?",
-        answers: ["Redgum", "Goanna", "Midnight Oil", "Warumpi Band"],
-        correctAnswer: "Redgum"
-    },
-    {
-        id: "music_5168",
-        category: "Music",
-        question: "Which group recorded 'Blackfella/Whitefella'?",
-        answers: ["Warumpi Band", "Redgum", "Goanna", "Midnight Oil"],
-        correctAnswer: "Warumpi Band"
-    },
-    {
-        id: "music_5169",
-        category: "Music",
-        question: "Which group recorded 'My Island Home'?",
-        answers: ["Warumpi Band", "Redgum", "Goanna", "Midnight Oil"],
-        correctAnswer: "Warumpi Band"
-    },
-    {
-        id: "music_5170",
-        category: "Music",
-        question: "Which group recorded 'Wide Open Road'?",
-        answers: ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"],
-        correctAnswer: "The Triffids"
-    },
-    {
-        id: "music_5171",
-        category: "Music",
-        question: "Which group recorded 'Bury Me Deep in Love'?",
-        answers: ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"],
-        correctAnswer: "The Triffids"
-    },
-    {
-        id: "music_5172",
-        category: "Music",
-        question: "Which group recorded 'Trick of the Light'?",
-        answers: ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"],
-        correctAnswer: "The Triffids"
-    },
-    {
-        id: "music_5173",
-        category: "Music",
-        question: "Which group recorded 'At First Sight'?",
-        answers: ["The Stems", "Sunnyboys", "The Triffids", "Hoodoo Gurus"],
-        correctAnswer: "The Stems"
-    },
-    {
-        id: "music_5174",
-        category: "Music",
-        question: "Which group recorded 'Sad Girl'?",
-        answers: ["The Stems", "Sunnyboys", "The Triffids", "Hoodoo Gurus"],
-        correctAnswer: "The Stems"
-    },
-    {
-        id: "music_5175",
-        category: "Music",
-        question: "Which group recorded 'Chained to the Wheel'?",
-        answers: ["The Black Sorrows", "Noiseworks", "The Choirboys", "Cold Chisel"],
-        correctAnswer: "The Black Sorrows"
-    },
-    {
-        id: "music_5176",
-        category: "Music",
-        question: "Which artist recorded 'From St Kilda to Kings Cross'?",
-        answers: ["Paul Kelly", "Ian Moss", "Dave Dobbyn", "Tim Finn"],
-        correctAnswer: "Paul Kelly"
-    },
-    {
-        id: "music_5177",
-        category: "Music",
-        question: "Which artist recorded 'Look So Fine, Feel So Low'?",
-        answers: ["Paul Kelly", "Ian Moss", "Dave Dobbyn", "Tim Finn"],
-        correctAnswer: "Paul Kelly"
-    },
-    {
-        id: "music_5178",
-        category: "Music",
-        question: "Which group recorded 'Wide Boy'?",
-        answers: ["Jo Jo Zep & The Falcons", "The Sports", "Mental as Anything", "Australian Crawl"],
-        correctAnswer: "Jo Jo Zep & The Falcons"
-    },
-    {
-        id: "music_5179",
-        category: "Music",
-        question: "Which group recorded 'Taxi Mary'?",
-        answers: ["Jo Jo Zep & The Falcons", "The Sports", "Mental as Anything", "Australian Crawl"],
-        correctAnswer: "Jo Jo Zep & The Falcons"
-    },
-    {
-        id: "music_5180",
-        category: "Music",
-        question: "Which group recorded 'Back on the Breadline'?",
-        answers: ["Hunters & Collectors", "Midnight Oil", "Hoodoo Gurus", "The Church"],
-        correctAnswer: "Hunters & Collectors"
-    },
-    {
-        id: "music_5181",
-        category: "Music",
-        question: "Which artist recorded 'Rooms for the Memory'?",
-        answers: ["Michael Hutchence", "Jimmy Barnes", "Ian Moss", "Tim Finn"],
-        correctAnswer: "Michael Hutchence"
-    },
-    {
-        id: "music_5182",
-        category: "Music",
-        question: "Which group recorded 'A Trick of the Light'?",
-        answers: ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"],
-        correctAnswer: "The Triffids"
-    },
-    {
-        id: "music_5183",
-        category: "Music",
-        question: "Which group recorded 'Holy Water'?",
-        answers: ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"],
-        correctAnswer: "The Triffids"
-    },
-    {
-        id: "music_5184",
-        category: "Music",
-        question: "Which group recorded 'Jerdacuttup Man'?",
-        answers: ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"],
-        correctAnswer: "The Triffids"
-    },
-    {
-        id: "music_5185",
-        category: "Music",
-        question: "Which group recorded 'The Seabirds'?",
-        answers: ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"],
-        correctAnswer: "The Triffids"
-    },
-    {
-        id: "music_5186",
-        category: "Music",
-        question: "Which group recorded 'Mr. Big'?",
-        answers: ["Icehouse", "INXS", "Models", "Pseudo Echo"],
-        correctAnswer: "Icehouse"
-    },
-    {
-        id: "music_5187",
-        category: "Music",
-        question: "Which group recorded 'Evolution'?",
-        answers: ["Models", "Machinations", "Pseudo Echo", "Real Life"],
-        correctAnswer: "Models"
-    },
-    {
-        id: "music_5188",
-        category: "Music",
-        question: "Which group recorded 'Openhearted'?",
-        answers: ["Real Life", "Pseudo Echo", "Models", "Machinations"],
-        correctAnswer: "Real Life"
-    },
-    {
-        id: "music_5189",
-        category: "Music",
-        question: "Which artist recorded 'Through the Years'?",
-        answers: ["Tim Finn", "Dave Dobbyn", "Neil Finn", "Ian Moss"],
-        correctAnswer: "Tim Finn"
-    },
-    {
-        id: "music_5190",
-        category: "Music",
-        question: "Which artist recorded 'Loyal'?",
-        answers: ["Dave Dobbyn", "Tim Finn", "Neil Finn", "Ian Moss"],
-        correctAnswer: "Dave Dobbyn"
-    },
-    {
-        id: "music_5191",
-        category: "Music",
-        question: "Which artist recorded 'Whaling'?",
-        answers: ["Dave Dobbyn", "Tim Finn", "Neil Finn", "Ian Moss"],
-        correctAnswer: "Dave Dobbyn"
-    },
-    {
-        id: "music_5192",
-        category: "Music",
-        question: "Which artist recorded 'Outlook for Thursday'?",
-        answers: ["Dave Dobbyn", "Tim Finn", "Neil Finn", "Ian Moss"],
-        correctAnswer: "Dave Dobbyn"
-    },
-    {
-        id: "music_5193",
-        category: "Music",
-        question: "Which group recorded 'Victoria'?",
-        answers: ["The Dance Exponents", "Split Enz", "The Swingers", "The Triffids"],
-        correctAnswer: "The Dance Exponents"
-    },
-    {
-        id: "music_5194",
-        category: "Music",
-        question: "Which group recorded 'I'll Say Goodbye'?",
-        answers: ["The Dance Exponents", "Split Enz", "The Swingers", "The Triffids"],
-        correctAnswer: "The Dance Exponents"
-    },
-    {
-        id: "music_5195",
-        category: "Music",
-        question: "Which group recorded 'Melting Pot'?",
-        answers: ["When the Cat's Away", "The Swingers", "Split Enz", "The Dance Exponents"],
-        correctAnswer: "When the Cat's Away"
-    },
-    {
-        id: "music_5196",
-        category: "Music",
-        question: "Which group recorded 'Shouldn't Have to Be Like That'?",
-        answers: ["Fra Lippo Lippi", "A-ha", "Alphaville", "Camouflage"],
-        correctAnswer: "Fra Lippo Lippi"
-    },
-    {
-        id: "music_5197",
-        category: "Music",
-        question: "Which group recorded 'Everytime I See You'?",
-        answers: ["Fra Lippo Lippi", "A-ha", "Alphaville", "Camouflage"],
-        correctAnswer: "Fra Lippo Lippi"
-    },
-    {
-        id: "music_5198",
-        category: "Music",
-        question: "Which group recorded 'Weak in the Presence of Beauty'?",
-        answers: ["Floy Joy", "Swing Out Sister", "The Blow Monkeys", "Hipsway"],
-        correctAnswer: "Floy Joy"
-    },
-    {
-        id: "music_5199",
-        category: "Music",
-        question: "Which group recorded 'Until You Come Back to Me'?",
-        answers: ["Floy Joy", "Swing Out Sister", "The Blow Monkeys", "Hipsway"],
-        correctAnswer: "Floy Joy"
-    },
-    {
-        id: "music_5200",
-        category: "Music",
-        question: "Which artist recorded 'Marlene on the Wall'?",
-        answers: ["Suzanne Vega", "Sinéad O'Connor", "Tanita Tikaram", "Tracy Chapman"],
-        correctAnswer: "Suzanne Vega"
-    },
-    {
-        id: "music_5201",
-        category: "Music",
-        question: "Which artist recorded 'Solitude Standing'?",
-        answers: ["Suzanne Vega", "Sinéad O'Connor", "Tanita Tikaram", "Tracy Chapman"],
-        correctAnswer: "Suzanne Vega"
-    },
-    {
-        id: "music_5202",
-        category: "Music",
-        question: "Which duo recorded 'Closer to Fine'?",
-        answers: ["Indigo Girls", "The Judds", "Shakespears Sister", "Wendy & Lisa"],
-        correctAnswer: "Indigo Girls"
-    },
-    {
-        id: "music_5203",
-        category: "Music",
-        question: "Which artist recorded 'Mandinka'?",
-        answers: ["Sinéad O'Connor", "Suzanne Vega", "Tanita Tikaram", "Neneh Cherry"],
-        correctAnswer: "Sinéad O'Connor"
-    },
-    {
-        id: "music_5204",
-        category: "Music",
-        question: "Which artist recorded 'Troy'?",
-        answers: ["Sinéad O'Connor", "Suzanne Vega", "Tanita Tikaram", "Neneh Cherry"],
-        correctAnswer: "Sinéad O'Connor"
-    },
-    {
-        id: "music_5205",
-        category: "Music",
-        question: "Which artist recorded 'Manchild'?",
-        answers: ["Neneh Cherry", "Sinéad O'Connor", "Tanita Tikaram", "Suzanne Vega"],
-        correctAnswer: "Neneh Cherry"
-    },
-    {
-        id: "music_5206",
-        category: "Music",
-        question: "Which artist recorded 'Modern Girl'?",
-        answers: ["Meat Loaf", "Bon Jovi", "Foreigner", "REO Speedwagon"],
-        correctAnswer: "Meat Loaf"
-    },
-    {
-        id: "music_5207",
-        category: "Music",
-        question: "Which artist recorded 'Midnight at the Lost and Found'?",
-        answers: ["Meat Loaf", "Billy Squier", "Eddie Money", "Sammy Hagar"],
-        correctAnswer: "Meat Loaf"
-    },
-    {
-        id: "music_5208",
-        category: "Music",
-        question: "Which artist recorded 'Razor's Edge'?",
-        answers: ["Meat Loaf", "Billy Squier", "Eddie Money", "Sammy Hagar"],
-        correctAnswer: "Meat Loaf"
-    },
-    {
-        id: "music_5209",
-        category: "Music",
-        question: "Which artist recorded 'Blind Before I Stop'?",
-        answers: ["Meat Loaf", "Billy Squier", "Eddie Money", "Sammy Hagar"],
-        correctAnswer: "Meat Loaf"
-    },
-    {
-        id: "music_5210",
-        category: "Music",
-        question: "Which artist recorded 'One Good Reason'?",
-        answers: ["Paul Carrack", "Robert Palmer", "Steve Winwood", "Paul Young"],
-        correctAnswer: "Paul Carrack"
-    },
-    {
-        id: "music_5211",
-        category: "Music",
-        question: "Which group recorded 'Always Something There to Remind Me'?",
-        answers: ["Naked Eyes", "Animotion", "When in Rome", "Nu Shooz"],
-        correctAnswer: "Naked Eyes"
-    },
-    {
-        id: "music_5212",
-        category: "Music",
-        question: "Which group recorded 'Promises, Promises'?",
-        answers: ["Naked Eyes", "Animotion", "When in Rome", "Nu Shooz"],
-        correctAnswer: "Naked Eyes"
-    },
-    {
-        id: "music_5213",
-        category: "Music",
-        question: "Which group recorded 'When the Lights Go Out'?",
-        answers: ["Naked Eyes", "Animotion", "When in Rome", "Nu Shooz"],
-        correctAnswer: "Naked Eyes"
-    },
-    {
-        id: "music_5214",
-        category: "Music",
-        question: "Which duo recorded 'More to Lose'?",
-        answers: ["Seona Dancing", "Naked Eyes", "Go West", "Wang Chung"],
-        correctAnswer: "Seona Dancing"
-    },
-    {
-        id: "music_5215",
-        category: "Music",
-        question: "Which duo recorded 'Bitter Heart'?",
-        answers: ["Seona Dancing", "Naked Eyes", "Go West", "Wang Chung"],
-        correctAnswer: "Seona Dancing"
-    },
-    {
-        id: "music_5216",
-        category: "Music",
-        question: "Which group recorded 'Obsession'?",
-        answers: ["Animotion", "Nu Shooz", "Exposé", "Company B"],
-        correctAnswer: "Animotion"
-    },
-    {
-        id: "music_5217",
-        category: "Music",
-        question: "Which group recorded 'Let Him Go'?",
-        answers: ["Animotion", "Nu Shooz", "Exposé", "Company B"],
-        correctAnswer: "Animotion"
-    },
-    {
-        id: "music_5218",
-        category: "Music",
-        question: "Which group recorded 'I Engineer'?",
-        answers: ["Animotion", "Nu Shooz", "Exposé", "Company B"],
-        correctAnswer: "Animotion"
-    },
-    {
-        id: "music_5219",
-        category: "Music",
-        question: "Which group recorded 'Point of No Return'?",
-        answers: ["Nu Shooz", "Exposé", "Company B", "Animotion"],
-        correctAnswer: "Nu Shooz"
-    },
-    {
-        id: "music_5220",
-        category: "Music",
-        question: "Which group recorded 'I Can't Wait'?",
-        answers: ["Nu Shooz", "Exposé", "Company B", "Animotion"],
-        correctAnswer: "Nu Shooz"
-    },
-    {
-        id: "music_5221",
-        category: "Music",
-        question: "Which group recorded 'Should I Say Yes?'?",
-        answers: ["Nu Shooz", "Exposé", "Company B", "Animotion"],
-        correctAnswer: "Nu Shooz"
-    },
-    {
-        id: "music_5222",
-        category: "Music",
-        question: "Which artist recorded 'Two of Hearts'?",
-        answers: ["Stacey Q", "Shannon", "Joyce Sims", "Jocelyn Brown"],
-        correctAnswer: "Stacey Q"
-    },
-    {
-        id: "music_5223",
-        category: "Music",
-        question: "Which artist recorded 'We Connect'?",
-        answers: ["Stacey Q", "Shannon", "Joyce Sims", "Jocelyn Brown"],
-        correctAnswer: "Stacey Q"
-    },
-    {
-        id: "music_5224",
-        category: "Music",
-        question: "Which group recorded 'What You Don't Know'?",
-        answers: ["Exposé", "The Cover Girls", "Company B", "Nu Shooz"],
-        correctAnswer: "Exposé"
-    },
-    {
-        id: "music_5225",
-        category: "Music",
-        question: "Which group recorded 'Show Me'?",
-        answers: ["The Cover Girls", "Exposé", "Company B", "Nu Shooz"],
-        correctAnswer: "The Cover Girls"
-    },
-    {
-        id: "music_5226",
-        category: "Music",
-        question: "Which group recorded 'Because of You'?",
-        answers: ["The Cover Girls", "Exposé", "Company B", "Nu Shooz"],
-        correctAnswer: "The Cover Girls"
-    },
-    {
-        id: "music_5227",
-        category: "Music",
-        question: "Which group recorded 'My Heart Skips a Beat'?",
-        answers: ["The Cover Girls", "Exposé", "Company B", "Nu Shooz"],
-        correctAnswer: "The Cover Girls"
-    },
-    {
-        id: "music_5228",
-        category: "Music",
-        question: "Which group recorded 'Fascinated'?",
-        answers: ["Company B", "The Cover Girls", "Exposé", "Nu Shooz"],
-        correctAnswer: "Company B"
-    },
-    {
-        id: "music_5229",
-        category: "Music",
-        question: "Which group recorded 'Full Circle'?",
-        answers: ["Company B", "The Cover Girls", "Exposé", "Nu Shooz"],
-        correctAnswer: "Company B"
-    },
-    {
-        id: "music_5230",
-        category: "Music",
-        question: "Which artist recorded 'Let the Music Play'?",
-        answers: ["Shannon", "Stacey Q", "Joyce Sims", "Jocelyn Brown"],
-        correctAnswer: "Shannon"
-    },
-    {
-        id: "music_5231",
-        category: "Music",
-        question: "Which artist recorded 'Give Me Tonight'?",
-        answers: ["Shannon", "Stacey Q", "Joyce Sims", "Jocelyn Brown"],
-        correctAnswer: "Shannon"
-    },
-    {
-        id: "music_5232",
-        category: "Music",
-        question: "Which artist recorded 'Do You Wanna Get Away'?",
-        answers: ["Shannon", "Stacey Q", "Joyce Sims", "Jocelyn Brown"],
-        correctAnswer: "Shannon"
-    },
-    {
-        id: "music_5233",
-        category: "Music",
-        question: "Which group recorded 'I Wonder If I Take You Home'?",
-        answers: ["Lisa Lisa and Cult Jam", "Exposé", "The Cover Girls", "Company B"],
-        correctAnswer: "Lisa Lisa and Cult Jam"
-    },
-    {
-        id: "music_5234",
-        category: "Music",
-        question: "Which group recorded 'Head to Toe'?",
-        answers: ["Lisa Lisa and Cult Jam", "Exposé", "The Cover Girls", "Company B"],
-        correctAnswer: "Lisa Lisa and Cult Jam"
-    },
-    {
-        id: "music_5235",
-        category: "Music",
-        question: "Which group recorded 'Lost in Emotion'?",
-        answers: ["Lisa Lisa and Cult Jam", "Exposé", "The Cover Girls", "Company B"],
-        correctAnswer: "Lisa Lisa and Cult Jam"
-    },
-    {
-        id: "music_5236",
-        category: "Music",
-        question: "Which group recorded 'All Cried Out'?",
-        answers: ["Lisa Lisa and Cult Jam", "Exposé", "The Cover Girls", "Company B"],
-        correctAnswer: "Lisa Lisa and Cult Jam"
-    },
-    {
-        id: "music_5237",
-        category: "Music",
-        question: "Which artist recorded 'Come into My Life'?",
-        answers: ["Joyce Sims", "Shannon", "Stacey Q", "Jocelyn Brown"],
-        correctAnswer: "Joyce Sims"
-    },
-    {
-        id: "music_5238",
-        category: "Music",
-        question: "Which artist recorded 'Lifetime Love'?",
-        answers: ["Joyce Sims", "Shannon", "Stacey Q", "Jocelyn Brown"],
-        correctAnswer: "Joyce Sims"
-    },
-    {
-        id: "music_5239",
-        category: "Music",
-        question: "Which artists recorded 'Love Power'?",
-        answers: ["Dionne Warwick and Jeffrey Osborne", "Dionne Warwick and Luther Vandross", "Patti LaBelle and Michael McDonald", "Aretha Franklin and George Michael"],
-        correctAnswer: "Dionne Warwick and Jeffrey Osborne"
-    },
-    {
-        id: "music_5240",
-        category: "Music",
-        question: "Which artist recorded 'You Should Hear How She Talks About You'?",
-        answers: ["Melissa Manchester", "Laura Branigan", "Kim Carnes", "Juice Newton"],
-        correctAnswer: "Melissa Manchester"
-    },
-    {
-        id: "music_5241",
-        category: "Music",
-        question: "Which artist recorded 'Dreamin''?",
-        answers: ["Cliff Richard", "Shakin' Stevens", "Leo Sayer", "Chris Rea"],
-        correctAnswer: "Cliff Richard"
-    },
-    {
-        id: "music_5242",
-        category: "Music",
-        question: "Which artist recorded 'A Little in Love'?",
-        answers: ["Cliff Richard", "Shakin' Stevens", "Leo Sayer", "Chris Rea"],
-        correctAnswer: "Cliff Richard"
-    },
-    {
-        id: "music_5243",
-        category: "Music",
-        question: "Which artist recorded 'Wired for Sound'?",
-        answers: ["Cliff Richard", "Shakin' Stevens", "Leo Sayer", "Chris Rea"],
-        correctAnswer: "Cliff Richard"
-    },
-    {
-        id: "music_5244",
-        category: "Music",
-        question: "Which artist recorded 'The Only Way Out'?",
-        answers: ["Cliff Richard", "Shakin' Stevens", "Leo Sayer", "Chris Rea"],
-        correctAnswer: "Cliff Richard"
-    },
-    {
-        id: "music_5245",
-        category: "Music",
-        question: "Which artist recorded 'Please Don't Fall in Love'?",
-        answers: ["Cliff Richard", "Shakin' Stevens", "Leo Sayer", "Chris Rea"],
-        correctAnswer: "Cliff Richard"
-    },
-    {
-        id: "music_5246",
-        category: "Music",
-        question: "Which artist recorded 'Cry Just a Little Bit'?",
-        answers: ["Shakin' Stevens", "Cliff Richard", "Leo Sayer", "Chris Rea"],
-        correctAnswer: "Shakin' Stevens"
-    },
-    {
-        id: "music_5247",
-        category: "Music",
-        question: "Which artist recorded 'A Letter to You'?",
-        answers: ["Shakin' Stevens", "Cliff Richard", "Leo Sayer", "Chris Rea"],
-        correctAnswer: "Shakin' Stevens"
-    },
-    {
-        id: "music_5248",
-        category: "Music",
-        question: "Which artist recorded 'Teardrops'?",
-        answers: ["Shakin' Stevens", "Cliff Richard", "Leo Sayer", "Chris Rea"],
-        correctAnswer: "Shakin' Stevens"
-    },
-    {
-        id: "music_5249",
-        category: "Music",
-        question: "Which artist recorded 'What Do You Want to Make Those Eyes at Me For'?",
-        answers: ["Shakin' Stevens", "Cliff Richard", "Leo Sayer", "Chris Rea"],
-        correctAnswer: "Shakin' Stevens"
-    },
-    {
-        id: "music_5250",
-        category: "Music",
-        question: "Which group recorded 'I Won't Let You Down'?",
-        answers: ["Ph.D.", "Naked Eyes", "Go West", "Wang Chung"],
-        correctAnswer: "Ph.D."
-    },
-    {
-        id: "music_5251",
-        category: "Music",
-        question: "Which group recorded 'Little Suzi's on the Up'?",
-        answers: ["Ph.D.", "Naked Eyes", "Go West", "Wang Chung"],
-        correctAnswer: "Ph.D."
-    },
-    {
-        id: "music_5252",
-        category: "Music",
-        question: "Which artist recorded 'Never Ending Story'?",
-        answers: ["Limahl", "Nik Kershaw", "Howard Jones", "Paul Young"],
-        correctAnswer: "Limahl"
-    },
-    {
-        id: "music_5253",
-        category: "Music",
-        question: "Which artist recorded 'Only for Love'?",
-        answers: ["Limahl", "Nik Kershaw", "Howard Jones", "Paul Young"],
-        correctAnswer: "Limahl"
-    },
-    {
-        id: "music_5254",
-        category: "Music",
-        question: "Which group recorded 'Days Are Numbers (The Traveller)'?",
-        answers: ["The Alan Parsons Project", "Asia", "Yes", "Genesis"],
-        correctAnswer: "The Alan Parsons Project"
-    },
-    {
-        id: "music_5255",
-        category: "Music",
-        question: "Which group recorded 'Eloise'?",
-        answers: ["The Damned", "The Cult", "The Mission", "The Sisters of Mercy"],
-        correctAnswer: "The Damned"
-    },
-    {
-        id: "music_5256",
-        category: "Music",
-        question: "Which group recorded 'Anything'?",
-        answers: ["The Damned", "The Cult", "The Mission", "The Sisters of Mercy"],
-        correctAnswer: "The Damned"
-    },
-    {
-        id: "music_5257",
-        category: "Music",
-        question: "Which group recorded 'Grimly Fiendish'?",
-        answers: ["The Damned", "The Cult", "The Mission", "The Sisters of Mercy"],
-        correctAnswer: "The Damned"
-    },
-    {
-        id: "music_5258",
-        category: "Music",
-        question: "Which group recorded 'Primitive Painters'?",
-        answers: ["Felt", "The House of Love", "The Chameleons", "The Jesus and Mary Chain"],
-        correctAnswer: "Felt"
-    },
-    {
-        id: "music_5259",
-        category: "Music",
-        question: "Which group recorded 'Ballad of the Band'?",
-        answers: ["Felt", "The House of Love", "The Chameleons", "The Jesus and Mary Chain"],
-        correctAnswer: "Felt"
-    },
-    {
-        id: "music_5260",
-        category: "Music",
-        question: "Which group recorded 'The Pan Within'?",
-        answers: ["The Waterboys", "Big Country", "The Alarm", "The Pogues"],
-        correctAnswer: "The Waterboys"
-    },
-    {
-        id: "music_5261",
-        category: "Music",
-        question: "Which artist recorded 'Jump in the River'?",
-        answers: ["Sinéad O'Connor", "Suzanne Vega", "Tanita Tikaram", "Neneh Cherry"],
-        correctAnswer: "Sinéad O'Connor"
-    },
-    {
-        id: "music_5262",
-        category: "Music",
-        question: "Which artist recorded 'Left of Center'?",
-        answers: ["Suzanne Vega", "Sinéad O'Connor", "Tanita Tikaram", "Tracy Chapman"],
-        correctAnswer: "Suzanne Vega"
-    },
-    {
-        id: "music_5263",
-        category: "Music",
-        question: "Which duo recorded 'Kid Fears'?",
-        answers: ["Indigo Girls", "The Judds", "Wendy & Lisa", "Shakespears Sister"],
-        correctAnswer: "Indigo Girls"
-    },
-    {
-        id: "music_5264",
-        category: "Music",
-        question: "Which artist recorded 'Kisses on the Wind'?",
-        answers: ["Neneh Cherry", "Sinéad O'Connor", "Tanita Tikaram", "Suzanne Vega"],
-        correctAnswer: "Neneh Cherry"
-    },
-    {
-        id: "music_5265",
-        category: "Music",
-        question: "Which group recorded 'Don't Know What You Got (Till It's Gone)'?",
-        answers: ["Cinderella", "Great White", "White Lion", "Warrant"],
-        correctAnswer: "Cinderella"
-    },
-    {
-        id: "music_5266",
-        category: "Music",
-        question: "Which group recorded 'Nobody's Fool'?",
-        answers: ["Cinderella", "Great White", "White Lion", "Warrant"],
-        correctAnswer: "Cinderella"
-    }
+    makeQuestion("music_5167", "Which group recorded 'I've Been to Bali Too'?", ["Redgum", "Goanna", "Midnight Oil", "Warumpi Band"], "Redgum", "Easy"),
+    makeQuestion("music_5168", "Which group recorded 'Blackfella/Whitefella'?", ["Warumpi Band", "Redgum", "Goanna", "Midnight Oil"], "Warumpi Band", "Easy"),
+    makeQuestion("music_5169", "Which group recorded 'My Island Home'?", ["Warumpi Band", "Redgum", "Goanna", "Midnight Oil"], "Warumpi Band", "Easy"),
+    makeQuestion("music_5170", "Which group recorded 'Wide Open Road'?", ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"], "The Triffids", "Easy"),
+    makeQuestion("music_5171", "Which group recorded 'Bury Me Deep in Love'?", ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"], "The Triffids", "Easy"),
+    makeQuestion("music_5172", "Which group recorded 'Trick of the Light'?", ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"], "The Triffids", "Medium"),
+    makeQuestion("music_5173", "Which group recorded 'At First Sight'?", ["The Stems", "Sunnyboys", "The Triffids", "Hoodoo Gurus"], "The Stems", "Medium"),
+    makeQuestion("music_5174", "Which group recorded 'Sad Girl'?", ["The Stems", "Sunnyboys", "The Triffids", "Hoodoo Gurus"], "The Stems", "Hard"),
+    makeQuestion("music_5175", "Which group recorded 'Chained to the Wheel'?", ["The Black Sorrows", "Noiseworks", "The Choirboys", "Cold Chisel"], "The Black Sorrows", "Easy"),
+    makeQuestion("music_5176", "Which artist recorded 'From St Kilda to Kings Cross'?", ["Paul Kelly", "Ian Moss", "Dave Dobbyn", "Tim Finn"], "Paul Kelly", "Medium"),
+    makeQuestion("music_5177", "Which artist recorded 'Look So Fine, Feel So Low'?", ["Paul Kelly", "Ian Moss", "Dave Dobbyn", "Tim Finn"], "Paul Kelly", "Hard"),
+    makeQuestion("music_5178", "Which group recorded 'Wide Boy'?", ["Jo Jo Zep & The Falcons", "The Sports", "Mental as Anything", "Australian Crawl"], "Jo Jo Zep & The Falcons", "Hard"),
+    makeQuestion("music_5179", "Which group recorded 'Taxi Mary'?", ["Jo Jo Zep & The Falcons", "The Sports", "Mental as Anything", "Australian Crawl"], "Jo Jo Zep & The Falcons", "Hard"),
+    makeQuestion("music_5180", "Which group recorded 'Back on the Breadline'?", ["Hunters & Collectors", "Midnight Oil", "Hoodoo Gurus", "The Church"], "Hunters & Collectors", "Hard"),
+    makeQuestion("music_5181", "Which artist recorded 'Rooms for the Memory'?", ["Michael Hutchence", "Jimmy Barnes", "Ian Moss", "Tim Finn"], "Michael Hutchence", "Medium"),
+    makeQuestion("music_5182", "Which group released the album 'Calenture'?", ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"], "The Triffids", "Medium"),
+    makeQuestion("music_5183", "Which group recorded 'Holy Water'?", ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"], "The Triffids", "Hard"),
+    makeQuestion("music_5184", "Which group recorded 'Jerdacuttup Man'?", ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"], "The Triffids", "Hard"),
+    makeQuestion("music_5185", "Which group recorded 'The Seabirds'?", ["The Triffids", "The Church", "The Go-Betweens", "Hoodoo Gurus"], "The Triffids", "Hard"),
+    makeQuestion("music_5186", "Which group recorded 'Mr. Big'?", ["Icehouse", "INXS", "Models", "Pseudo Echo"], "Icehouse", "Hard"),
+    makeQuestion("music_5187", "Which group recorded 'Evolution'?", ["Models", "Machinations", "Pseudo Echo", "Real Life"], "Models", "Hard"),
+    makeQuestion("music_5188", "Which group recorded 'Openhearted'?", ["Real Life", "Pseudo Echo", "Models", "Machinations"], "Real Life", "Hard"),
+    makeQuestion("music_5189", "Which artist recorded 'Through the Years'?", ["Tim Finn", "Dave Dobbyn", "Neil Finn", "Ian Moss"], "Tim Finn", "Hard"),
+    makeQuestion("music_5190", "Which artist recorded 'Loyal'?", ["Dave Dobbyn", "Tim Finn", "Neil Finn", "Ian Moss"], "Dave Dobbyn", "Medium"),
+    makeQuestion("music_5191", "Which singer fronted DD Smash on 'Whaling'?", ["Dave Dobbyn", "Tim Finn", "Neil Finn", "Ian Moss"], "Dave Dobbyn", "Medium"),
+    makeQuestion("music_5192", "Which singer fronted DD Smash on 'Outlook for Thursday'?", ["Dave Dobbyn", "Tim Finn", "Neil Finn", "Ian Moss"], "Dave Dobbyn", "Hard"),
+    makeQuestion("music_5193", "Which group recorded 'Victoria'?", ["The Dance Exponents", "Split Enz", "The Swingers", "The Triffids"], "The Dance Exponents", "Medium"),
+    makeQuestion("music_5194", "Which group recorded 'I'll Say Goodbye'?", ["The Dance Exponents", "Split Enz", "The Swingers", "The Triffids"], "The Dance Exponents", "Hard"),
+    makeQuestion("music_5195", "Which group recorded 'Melting Pot'?", ["When the Cat's Away", "The Swingers", "Split Enz", "The Dance Exponents"], "When the Cat's Away", "Medium"),
+    makeQuestion("music_5196", "Which group recorded 'Shouldn't Have to Be Like That'?", ["Fra Lippo Lippi", "A-ha", "Alphaville", "Camouflage"], "Fra Lippo Lippi", "Hard"),
+    makeQuestion("music_5197", "Which group recorded 'Everytime I See You'?", ["Fra Lippo Lippi", "A-ha", "Alphaville", "Camouflage"], "Fra Lippo Lippi", "Hard"),
+    makeQuestion("music_5198", "Which group recorded 'Weak in the Presence of Beauty'?", ["Floy Joy", "Swing Out Sister", "The Blow Monkeys", "Hipsway"], "Floy Joy", "Medium"),
+    makeQuestion("music_5199", "Which group recorded 'Until You Come Back to Me'?", ["Floy Joy", "Swing Out Sister", "The Blow Monkeys", "Hipsway"], "Floy Joy", "Hard"),
+    makeQuestion("music_5200", "Which artist recorded 'Marlene on the Wall'?", ["Suzanne Vega", "Sinéad O'Connor", "Tanita Tikaram", "Tracy Chapman"], "Suzanne Vega", "Easy"),
+    makeQuestion("music_5201", "Which artist recorded 'Solitude Standing'?", ["Suzanne Vega", "Sinéad O'Connor", "Tanita Tikaram", "Tracy Chapman"], "Suzanne Vega", "Hard"),
+    makeQuestion("music_5202", "Which duo recorded 'Closer to Fine'?", ["Indigo Girls", "The Judds", "Shakespears Sister", "Wendy & Lisa"], "Indigo Girls", "Easy"),
+    makeQuestion("music_5203", "Which artist recorded 'Mandinka'?", ["Sinéad O'Connor", "Suzanne Vega", "Tanita Tikaram", "Neneh Cherry"], "Sinéad O'Connor", "Easy"),
+    makeQuestion("music_5204", "Which artist recorded 'Troy'?", ["Sinéad O'Connor", "Suzanne Vega", "Tanita Tikaram", "Neneh Cherry"], "Sinéad O'Connor", "Medium"),
+    makeQuestion("music_5205", "Which artist recorded 'Manchild'?", ["Neneh Cherry", "Sinéad O'Connor", "Tanita Tikaram", "Suzanne Vega"], "Neneh Cherry", "Easy"),
+    makeQuestion("music_5206", "Which artist recorded 'Modern Girl'?", ["Meat Loaf", "Bon Jovi", "Foreigner", "REO Speedwagon"], "Meat Loaf", "Medium"),
+    makeQuestion("music_5207", "Which artist recorded 'Midnight at the Lost and Found'?", ["Meat Loaf", "Billy Squier", "Eddie Money", "Sammy Hagar"], "Meat Loaf", "Medium"),
+    makeQuestion("music_5208", "Which artist recorded 'Razor's Edge'?", ["Meat Loaf", "Billy Squier", "Eddie Money", "Sammy Hagar"], "Meat Loaf", "Hard"),
+    makeQuestion("music_5209", "Which artist recorded 'Blind Before I Stop'?", ["Meat Loaf", "Billy Squier", "Eddie Money", "Sammy Hagar"], "Meat Loaf", "Hard"),
+    makeQuestion("music_5210", "Which artist recorded 'One Good Reason'?", ["Paul Carrack", "Robert Palmer", "Steve Winwood", "Paul Young"], "Paul Carrack", "Hard"),
+    makeQuestion("music_5211", "Which group recorded 'Always Something There to Remind Me'?", ["Naked Eyes", "Animotion", "When in Rome", "Nu Shooz"], "Naked Eyes", "Easy"),
+    makeQuestion("music_5212", "Which group recorded 'Promises, Promises'?", ["Naked Eyes", "Animotion", "When in Rome", "Nu Shooz"], "Naked Eyes", "Medium"),
+    makeQuestion("music_5213", "Which group recorded 'When the Lights Go Out'?", ["Naked Eyes", "Animotion", "When in Rome", "Nu Shooz"], "Naked Eyes", "Hard"),
+    makeQuestion("music_5214", "Which duo recorded 'More to Lose'?", ["Seona Dancing", "Naked Eyes", "Go West", "Wang Chung"], "Seona Dancing", "Hard"),
+    makeQuestion("music_5215", "Which duo recorded 'Bitter Heart'?", ["Seona Dancing", "Naked Eyes", "Go West", "Wang Chung"], "Seona Dancing", "Hard"),
+    makeQuestion("music_5216", "Which group recorded 'Obsession'?", ["Animotion", "Nu Shooz", "Exposé", "Company B"], "Animotion", "Easy"),
+    makeQuestion("music_5217", "Which group recorded 'Let Him Go'?", ["Animotion", "Nu Shooz", "Exposé", "Company B"], "Animotion", "Hard"),
+    makeQuestion("music_5218", "Which group recorded 'I Engineer'?", ["Animotion", "Nu Shooz", "Exposé", "Company B"], "Animotion", "Medium"),
+    makeQuestion("music_5219", "Which group released the album 'Poolside'?", ["Nu Shooz", "Exposé", "Company B", "Animotion"], "Nu Shooz", "Medium"),
+    makeQuestion("music_5220", "Which group recorded 'I Can't Wait'?", ["Nu Shooz", "Exposé", "Company B", "Animotion"], "Nu Shooz", "Easy"),
+    makeQuestion("music_5221", "Which group recorded 'Should I Say Yes?'?", ["Nu Shooz", "Exposé", "Company B", "Animotion"], "Nu Shooz", "Hard"),
+    makeQuestion("music_5222", "Which artist recorded 'Two of Hearts'?", ["Stacey Q", "Shannon", "Joyce Sims", "Jocelyn Brown"], "Stacey Q", "Easy"),
+    makeQuestion("music_5223", "Which artist recorded 'We Connect'?", ["Stacey Q", "Shannon", "Joyce Sims", "Jocelyn Brown"], "Stacey Q", "Hard"),
+    makeQuestion("music_5224", "Which group recorded 'What You Don't Know'?", ["Exposé", "The Cover Girls", "Company B", "Nu Shooz"], "Exposé", "Hard"),
+    makeQuestion("music_5225", "Which group recorded 'Show Me'?", ["The Cover Girls", "Exposé", "Company B", "Nu Shooz"], "The Cover Girls", "Medium"),
+    makeQuestion("music_5226", "Which group recorded 'Because of You'?", ["The Cover Girls", "Exposé", "Company B", "Nu Shooz"], "The Cover Girls", "Medium"),
+    makeQuestion("music_5227", "Which group recorded 'My Heart Skips a Beat'?", ["The Cover Girls", "Exposé", "Company B", "Nu Shooz"], "The Cover Girls", "Hard"),
+    makeQuestion("music_5228", "Which group recorded 'Fascinated'?", ["Company B", "The Cover Girls", "Exposé", "Nu Shooz"], "Company B", "Easy"),
+    makeQuestion("music_5229", "Which group recorded 'Full Circle'?", ["Company B", "The Cover Girls", "Exposé", "Nu Shooz"], "Company B", "Hard"),
+    makeQuestion("music_5230", "Which artist recorded 'Let the Music Play'?", ["Shannon", "Stacey Q", "Joyce Sims", "Jocelyn Brown"], "Shannon", "Easy"),
+    makeQuestion("music_5231", "Which artist recorded 'Give Me Tonight'?", ["Shannon", "Stacey Q", "Joyce Sims", "Jocelyn Brown"], "Shannon", "Medium"),
+    makeQuestion("music_5232", "Which artist recorded 'Do You Wanna Get Away'?", ["Shannon", "Stacey Q", "Joyce Sims", "Jocelyn Brown"], "Shannon", "Hard"),
+    makeQuestion("music_5233", "Which group recorded 'I Wonder If I Take You Home'?", ["Lisa Lisa and Cult Jam", "Exposé", "The Cover Girls", "Company B"], "Lisa Lisa and Cult Jam", "Easy"),
+    makeQuestion("music_5234", "Which group recorded 'Head to Toe'?", ["Lisa Lisa and Cult Jam", "Exposé", "The Cover Girls", "Company B"], "Lisa Lisa and Cult Jam", "Easy"),
+    makeQuestion("music_5235", "Which group recorded 'Lost in Emotion'?", ["Lisa Lisa and Cult Jam", "Exposé", "The Cover Girls", "Company B"], "Lisa Lisa and Cult Jam", "Easy"),
+    makeQuestion("music_5236", "Which group recorded 'All Cried Out'?", ["Lisa Lisa and Cult Jam", "Exposé", "The Cover Girls", "Company B"], "Lisa Lisa and Cult Jam", "Hard"),
+    makeQuestion("music_5237", "Which artist recorded 'Come into My Life'?", ["Joyce Sims", "Shannon", "Stacey Q", "Jocelyn Brown"], "Joyce Sims", "Medium"),
+    makeQuestion("music_5238", "Which artist recorded 'Lifetime Love'?", ["Joyce Sims", "Shannon", "Stacey Q", "Jocelyn Brown"], "Joyce Sims", "Hard"),
+    makeQuestion("music_5239", "Which artists recorded 'Love Power'?", ["Dionne Warwick and Jeffrey Osborne", "Dionne Warwick and Luther Vandross", "Patti LaBelle and Michael McDonald", "Aretha Franklin and George Michael"], "Dionne Warwick and Jeffrey Osborne", "Medium"),
+    makeQuestion("music_5240", "Which artist recorded 'You Should Hear How She Talks About You'?", ["Melissa Manchester", "Laura Branigan", "Kim Carnes", "Juice Newton"], "Melissa Manchester", "Easy"),
+    makeQuestion("music_5241", "Which artist recorded 'Dreamin''?", ["Cliff Richard", "Shakin' Stevens", "Leo Sayer", "Chris Rea"], "Cliff Richard", "Medium"),
+    makeQuestion("music_5242", "Which artist recorded 'A Little in Love'?", ["Cliff Richard", "Shakin' Stevens", "Leo Sayer", "Chris Rea"], "Cliff Richard", "Medium"),
+    makeQuestion("music_5243", "Which artist recorded 'Wired for Sound'?", ["Cliff Richard", "Shakin' Stevens", "Leo Sayer", "Chris Rea"], "Cliff Richard", "Easy"),
+    makeQuestion("music_5244", "Which artist recorded 'The Only Way Out'?", ["Cliff Richard", "Shakin' Stevens", "Leo Sayer", "Chris Rea"], "Cliff Richard", "Medium"),
+    makeQuestion("music_5245", "Which artist recorded 'Please Don't Fall in Love'?", ["Cliff Richard", "Shakin' Stevens", "Leo Sayer", "Chris Rea"], "Cliff Richard", "Medium"),
+    makeQuestion("music_5246", "Which artist recorded 'Cry Just a Little Bit'?", ["Shakin' Stevens", "Cliff Richard", "Leo Sayer", "Chris Rea"], "Shakin' Stevens", "Easy"),
+    makeQuestion("music_5247", "Which artist recorded 'A Letter to You'?", ["Shakin' Stevens", "Cliff Richard", "Leo Sayer", "Chris Rea"], "Shakin' Stevens", "Medium"),
+    makeQuestion("music_5248", "Which artist recorded 'Teardrops'?", ["Shakin' Stevens", "Cliff Richard", "Leo Sayer", "Chris Rea"], "Shakin' Stevens", "Medium"),
+    makeQuestion("music_5249", "Which artist recorded 'What Do You Want to Make Those Eyes at Me For'?", ["Shakin' Stevens", "Cliff Richard", "Leo Sayer", "Chris Rea"], "Shakin' Stevens", "Easy"),
+    makeQuestion("music_5250", "Which group recorded 'I Won't Let You Down'?", ["Ph.D.", "Naked Eyes", "Go West", "Wang Chung"], "Ph.D.", "Easy"),
+    makeQuestion("music_5251", "Which group recorded 'Little Suzi's on the Up'?", ["Ph.D.", "Naked Eyes", "Go West", "Wang Chung"], "Ph.D.", "Hard"),
+    makeQuestion("music_5252", "Which artist recorded 'Never Ending Story'?", ["Limahl", "Nik Kershaw", "Howard Jones", "Paul Young"], "Limahl", "Easy"),
+    makeQuestion("music_5253", "Which artist recorded 'Only for Love'?", ["Limahl", "Nik Kershaw", "Howard Jones", "Paul Young"], "Limahl", "Medium"),
+    makeQuestion("music_5254", "Which group recorded 'Days Are Numbers (The Traveller)'?", ["The Alan Parsons Project", "Asia", "Yes", "Genesis"], "The Alan Parsons Project", "Hard"),
+    makeQuestion("music_5255", "Which group recorded 'Eloise'?", ["The Damned", "The Cult", "The Mission", "The Sisters of Mercy"], "The Damned", "Easy"),
+    makeQuestion("music_5256", "Which group recorded 'Anything'?", ["The Damned", "The Cult", "The Mission", "The Sisters of Mercy"], "The Damned", "Medium"),
+    makeQuestion("music_5257", "Which group recorded 'Grimly Fiendish'?", ["The Damned", "The Cult", "The Mission", "The Sisters of Mercy"], "The Damned", "Medium"),
+    makeQuestion("music_5258", "Which group recorded 'Primitive Painters'?", ["Felt", "The House of Love", "The Chameleons", "The Jesus and Mary Chain"], "Felt", "Hard"),
+    makeQuestion("music_5259", "Which group recorded 'Ballad of the Band'?", ["Felt", "The House of Love", "The Chameleons", "The Jesus and Mary Chain"], "Felt", "Hard"),
+    makeQuestion("music_5260", "Which group recorded 'The Pan Within'?", ["The Waterboys", "Big Country", "The Alarm", "The Pogues"], "The Waterboys", "Hard"),
+    makeQuestion("music_5261", "Which artist recorded 'Jump in the River'?", ["Sinéad O'Connor", "Suzanne Vega", "Tanita Tikaram", "Neneh Cherry"], "Sinéad O'Connor", "Hard"),
+    makeQuestion("music_5262", "Which artist recorded 'Left of Center'?", ["Suzanne Vega", "Sinéad O'Connor", "Tanita Tikaram", "Tracy Chapman"], "Suzanne Vega", "Medium"),
+    makeQuestion("music_5263", "Which duo recorded 'Kid Fears'?", ["Indigo Girls", "The Judds", "Wendy & Lisa", "Shakespears Sister"], "Indigo Girls", "Hard"),
+    makeQuestion("music_5264", "Which artist recorded 'Kisses on the Wind'?", ["Neneh Cherry", "Sinéad O'Connor", "Tanita Tikaram", "Suzanne Vega"], "Neneh Cherry", "Medium"),
+    makeQuestion("music_5265", "Which group recorded 'Don't Know What You Got (Till It's Gone)'?", ["Cinderella", "Great White", "White Lion", "Warrant"], "Cinderella", "Easy"),
+    makeQuestion("music_5266", "Which group recorded 'Nobody's Fool'?", ["Cinderella", "Great White", "White Lion", "Warrant"], "Cinderella", "Easy"),
 ];
 
 module.exports = quizPack71;
