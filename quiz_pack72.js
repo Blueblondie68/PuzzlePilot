@@ -1,704 +1,286 @@
+// quiz_pack72.js
+// PuzzlePilot Bigggggg Quiz - Music Pack 72
+// 100 audited questions: music_5267 through music_5366.
+// Artist and release metadata expand to complete tags for each question.
+
+const artistTags = {
+    "Cinderella": ["american", "glam metal", "hard rock", "bands", "tom keifer", "jeff labar", "mercury records"],
+    "Great White": ["american", "hard rock", "glam metal", "bands", "jack russell", "mark kendall", "capitol records"],
+    "White Lion": ["american", "glam metal", "hard rock", "bands", "mike tramp", "vito bratta", "atlantic records"],
+    "Kix": ["american", "hard rock", "glam metal", "bands", "steve whiteman", "baltimore", "atlantic records"],
+    "Enuff Z'Nuff": ["american", "power pop", "glam metal", "bands", "chip znuff", "donnie vie", "chicago"],
+    "Warrant": ["american", "glam metal", "hard rock", "bands", "jani lane", "los angeles", "columbia records"],
+    "Winger": ["american", "hard rock", "glam metal", "bands", "kip winger", "reb beach", "atlantic records"],
+    "Bad English": ["american", "arena rock", "hard rock", "supergroups", "bands", "john waite", "neal schon", "jonathan cain", "journey members"],
+    "Vixen": ["american", "glam metal", "hard rock", "all female bands", "female lead singers", "janet gardner", "jan kuehnemund"],
+    "Lita Ford": ["american", "hard rock", "glam metal", "female singers", "solo artists", "the runaways", "guitarists"],
+    "Lita Ford and Ozzy Osbourne": ["american", "british", "hard rock", "heavy metal", "duets", "collaborations", "lita ford", "ozzy osbourne", "power ballads"],
+    "Autograph": ["american", "hard rock", "glam metal", "bands", "steve plunkett", "los angeles"],
+    "BulletBoys": ["american", "hard rock", "glam metal", "bands", "marq torien", "los angeles"],
+    "Y&T": ["american", "hard rock", "heavy metal", "bands", "dave meniketti", "san francisco"],
+    "Giuffria": ["american", "arena rock", "hard rock", "bands", "gregg giuffria", "david glen eisley"],
+    "Balance": ["american", "arena rock", "aor", "bands", "peppy castro", "bob kulick", "doug katsaros"],
+    "The Alarm": ["welsh", "alternative rock", "rock", "bands", "mike peters", "dave sharp", "political rock"],
+    "Goodbye Mr Mackenzie": ["scottish", "alternative rock", "post-punk", "bands", "martin metcalfe", "shirley manson", "edinburgh"],
+    "Bow Wow Wow": ["british", "new wave", "post-punk", "bands", "annabella lwin", "malcolm mclaren", "female lead singers"],
+    "Belouis Some": ["british", "synth-pop", "new wave", "male singers", "solo artists", "neville keighley"],
+    "Go West": ["british", "pop rock", "synth-pop", "duos", "peter cox", "richard drummie", "chrysalis records"],
+    "Sting": ["british", "pop rock", "jazz rock", "male singers", "solo artists", "the police", "singer-songwriters"],
+    "Bronski Beat": ["british", "synth-pop", "new wave", "bands", "jimmy somerville", "steve bronski", "larry steinbachek"],
+    "The Communards": ["british", "synth-pop", "dance-pop", "duos", "jimmy somerville", "richard coles"],
+    "Kon Kan": ["canadian", "synth-pop", "dance-pop", "bands", "barry harris", "kevin wynne", "toronto"],
+    "Men Without Hats": ["canadian", "synth-pop", "new wave", "bands", "ivan doroschuk", "montreal"],
+    "Martha and the Muffins": ["canadian", "new wave", "synth-pop", "bands", "martha johnson", "mark gane", "toronto"],
+    "Parachute Club": ["canadian", "new wave", "pop rock", "bands", "lorraine segato", "billy bryans", "toronto"],
+    "Idle Eyes": ["canadian", "new wave", "pop rock", "bands", "tad campbell", "vancouver"],
+    "Rough Trade": ["canadian", "new wave", "rock", "bands", "carole pope", "kevan staples", "toronto", "female lead singers"],
+    "The Kings": ["canadian", "new wave", "rock", "bands", "david diamond", "mister zero", "toronto"],
+    "Red Rider": ["canadian", "rock", "new wave", "bands", "tom cochrane", "ken greer"],
+    "Tom Cochrane and Red Rider": ["canadian", "rock", "heartland rock", "bands", "tom cochrane", "red rider"],
+    "Honeymoon Suite": ["canadian", "arena rock", "hard rock", "bands", "johnnie dee", "derry grehan", "niagara falls"],
+    "Kim Mitchell": ["canadian", "rock", "arena rock", "male singers", "solo artists", "max webster", "guitarists"],
+    "Loverboy": ["canadian", "arena rock", "hard rock", "bands", "mike reno", "paul dean"],
+    "Toronto": ["canadian", "hard rock", "arena rock", "bands", "holly woods", "brian allen", "sheron alton"],
+    "Headpins": ["canadian", "hard rock", "arena rock", "bands", "darby mills", "brian macleod", "female lead singers", "vancouver"],
+    "Platinum Blonde": ["canadian", "new wave", "pop rock", "bands", "mark holmes", "sergio galli", "toronto"],
+    "Maestro Fresh-Wes": ["canadian", "hip hop", "rap", "male rappers", "solo artists", "wesley williams", "toronto"],
+    "Bruce Cockburn": ["canadian", "folk rock", "singer-songwriters", "male singers", "solo artists", "social commentary"],
+    "Inner City": ["american", "detroit techno", "house music", "dance music", "bands", "kevin saunderson", "paris grey"],
+    "Joe Smooth": ["american", "chicago house", "house music", "dance music", "djs", "music producers"],
+    "Royal House": ["american", "house music", "dance music", "todd terry", "music projects", "new york"],
+    "Rhythim Is Rhythim": ["american", "detroit techno", "techno music", "derrick may", "recording aliases", "electronic music"],
+    "Lil Louis": ["american", "chicago house", "house music", "djs", "music producers", "electronic music"],
+    "Coldcut featuring Lisa Stansfield": ["british", "house music", "dance music", "collaborations", "coldcut", "lisa stansfield", "matt black", "jonathan more"],
+    "S'Express": ["british", "acid house", "house music", "dance music", "mark moore", "electronic music"],
+    "Yazz and the Plastic Population": ["british", "house music", "dance-pop", "collaborations", "yazz", "coldcut", "1980s dance music"],
+};
+
+const recordingTags = {
+    "music_5267": [1988, "long cold winter album", "1988 single", "tom keifer vocals"],
+    "music_5268": [1986, "night songs album", "1986 single", "tom keifer vocals"],
+    "music_5269": [1986, "night songs album", "1987 single", "tom keifer vocals"],
+    "music_5270": [1988, "long cold winter album", "1989 single", "country rock influence"],
+    "music_5271": [1989, "twice shy album", "1989 single", "ian hunter original", "cover versions"],
+    "music_5272": [1987, "once bitten album", "1987 single", "jack russell vocals"],
+    "music_5273": [1987, "once bitten album", "1988 single", "power ballads"],
+    "music_5274": [1987, "once bitten album", "1987 single", "jack russell vocals"],
+    "music_5275": [1987, "pride album", "1987 single", "1988 chart success"],
+    "music_5276": [1987, "pride album", "1988 single", "power ballads"],
+    "music_5277": [1987, "pride album", "1987 single", "mike tramp vocals"],
+    "music_5278": [1988, "blow my fuse album", "1989 single", "power ballads"],
+    "music_5279": [1988, "blow my fuse album", "1988 single", "album title track"],
+    "music_5280": [1988, "blow my fuse album", "1988 single", "steve whiteman vocals"],
+    "music_5281": [1989, "enuff znuff debut album", "1990 single", "donnie vie vocals"],
+    "music_5282": [1989, "enuff znuff debut album", "1989 single", "chip znuff bass"],
+    "music_5283": [1989, "dirty rotten filthy stinking rich album", "1989 single", "power ballads"],
+    "music_5284": [1989, "dirty rotten filthy stinking rich album", "1989 single", "jani lane vocals"],
+    "music_5285": [1989, "dirty rotten filthy stinking rich album", "1989 album track"],
+    "music_5286": [1989, "dirty rotten filthy stinking rich album", "1990 single", "power ballads"],
+    "music_5287": [1988, "winger debut album", "1988 single", "kip winger vocals"],
+    "music_5288": [1988, "winger debut album", "1989 single", "power ballads"],
+    "music_5289": [1988, "winger debut album", "1988 single", "reb beach guitar"],
+    "music_5290": [1988, "winger debut album", "1989 single", "kip winger vocals"],
+    "music_5291": [1989, "bad english debut album", "1989 single", "diane warren songwriter", "us number one singles"],
+    "music_5292": [1989, "bad english debut album", "1989 single", "john waite vocals"],
+    "music_5293": [1989, "bad english debut album", "1989 single", "arena rock"],
+    "music_5294": [1988, "vixen debut album", "1988 single", "richard marx songwriter"],
+    "music_5295": [1988, "vixen debut album", "1989 single", "janet gardner vocals"],
+    "music_5296": [1988, "vixen debut album", "1988 album track", "janet gardner vocals"],
+    "music_5297": [1988, "lita album", "1988 single", "lita ford vocals"],
+    "music_5298": [1988, "lita album", "1989 single", "duets", "power ballads"],
+    "music_5299": [1988, "lita album", "1988 single", "hard rock"],
+    "music_5300": [1984, "sign in please album", "1984 single", "steve plunkett vocals"],
+    "music_5301": [1985, "thats the stuff album", "1985 single", "hard rock"],
+    "music_5302": [1988, "bulletboys debut album", "1988 single", "marq torien vocals"],
+    "music_5303": [1984, "in rock we trust album", "1984 single", "dave meniketti vocals"],
+    "music_5304": [1985, "down for the count album", "1985 single", "dave meniketti vocals"],
+    "music_5305": [1983, "mean streak album", "1983 single", "album title track"],
+    "music_5306": [1984, "giuffria debut album", "1984 single", "david glen eisley vocals"],
+    "music_5307": [1986, "silk and steel album", "1986 single", "arena rock"],
+    "music_5308": [1982, "in for the count album", "album trivia", "second studio album"],
+    "music_5309": [1981, "balance debut album", "1981 single", "american top forty singles"],
+    "music_5310": [1984, "declaration album", "album trivia", "the alarm debut album", "irs records"],
+    "music_5311": [1989, "change album", "1989 single", "mike peters vocals"],
+    "music_5312": [1988, "good deeds and dirty rags album", "1988 single", "edinburgh band"],
+    "music_5313": [1986, "rattler single", "1986 single", "scottish alternative rock"],
+    "music_5314": [1980, "c30 c60 c90 go single", "1980 debut single", "cassette tape culture"],
+    "music_5315": [1981, "see jungle album", "1982 single", "annabella lwin vocals"],
+    "music_5316": [1983, "when the going gets tough the tough get going album", "1983 single", "annabella lwin vocals"],
+    "music_5317": [1986, "pretty in pink film soundtrack", "1986 single", "film songs", "bernard edwards producer"],
+    "music_5318": [1985, "go west debut album", "1985 remix single", "the sequel version"],
+    "music_5319": [1987, "dancing on the couch album", "1987 single", "peter cox vocals"],
+    "music_5320": [1987, "dancing on the couch album", "1987 single", "kate bush backing vocals on album version"],
+    "music_5321": [1985, "the dream of the blue turtles album", "1985 single", "sting solo debut era"],
+    "music_5322": [1985, "the dream of the blue turtles album", "1985 single", "sting songwriter"],
+    "music_5323": [1984, "the age of consent album", "1984 album track", "jimmy somerville vocals"],
+    "music_5324": [1985, "truthdare doubledare album", "1985 single", "john foster vocals", "1986 album release"],
+    "music_5325": [1986, "truthdare doubledare album", "1986 single", "john foster vocals"],
+    "music_5326": [1986, "communards debut album", "1986 single", "jimmy somerville vocals"],
+    "music_5327": [1987, "red album", "1988 single", "tribute to mark ashton"],
+    "music_5328": [1985, "you are my world debut single", "1986 communards debut album", "jimmy somerville vocals"],
+    "music_5329": [1988, "move to move album", "1988 single", "sample based dance pop"],
+    "music_5330": [1989, "move to move album", "1989 single", "barry harris vocals"],
+    "music_5331": [1984, "folk of the 80s part iii album", "1984 single", "ivan doroschuk vocals"],
+    "music_5332": [1983, "danseparc album", "1983 single", "album title track"],
+    "music_5333": [1983, "parachute club debut album", "1983 single", "lorraine segato vocals"],
+    "music_5334": [1984, "at the feet of the moon album", "1984 single", "album title track"],
+    "music_5335": [1985, "idle eyes album", "1985 single", "canadian new wave"],
+    "music_5336": [1980, "avoid freud album", "1980 single", "carole pope vocals"],
+    "music_5337": [1981, "for those who think young album", "1981 single", "carole pope vocals"],
+    "music_5338": [1980, "the kings are here album", "1980 single", "this beat goes on medley"],
+    "music_5339": [1980, "the kings are here album", "1980 single", "switchin to glide medley"],
+    "music_5340": [1979, "dont fight it album", "1979 single", "tom cochrane vocals"],
+    "music_5341": [1986, "tom cochrane and red rider album", "1986 single", "tom cochrane vocals"],
+    "music_5342": [1988, "racing after midnight album", "1988 single", "johnnie dee vocals"],
+    "music_5343": [1984, "akimbo alogo album", "1985 single", "kim mitchell vocals"],
+    "music_5344": [1985, "lovin every minute of it album", "1985 single", "album title track"],
+    "music_5345": [1985, "lovin every minute of it album", "1986 single", "mike reno vocals"],
+    "music_5346": [1982, "get it on credit album", "1982 single", "holly woods vocals"],
+    "music_5347": [1982, "get it on credit album", "1982 single", "holly woods vocals"],
+    "music_5348": [1982, "turn it loud album", "1982 single", "darby mills vocals"],
+    "music_5349": [1983, "line of fire album", "1983 single", "darby mills vocals"],
+    "music_5350": [1982, "get it on credit album", "album trivia", "1982 canadian platinum album"],
+    "music_5351": [1984, "standing in the dark album", "1984 single", "canadian new wave"],
+    "music_5352": [1985, "alien shores album", "1985 single", "mark holmes vocals"],
+    "music_5353": [1985, "alien shores album", "1985 single", "mark holmes vocals"],
+    "music_5354": [1989, "symphony in effect album", "1989 single", "canadian hip hop history"],
+    "music_5355": [1980, "humans album", "1980 single", "bruce cockburn songwriting"],
+    "music_5356": [1988, "paradise album", "1988 single", "paris grey vocals"],
+    "music_5357": [1988, "paradise album", "1988 single", "kevin saunderson production"],
+    "music_5358": [1989, "paradise album", "1989 single", "paris grey vocals"],
+    "music_5359": [1987, "promised land single", "1987 single", "chicago house classic"],
+    "music_5360": [1988, "can you party single", "1988 single", "todd terry production"],
+    "music_5361": [1987, "strings of life single", "1987 single", "derrick may production", "detroit techno classic"],
+    "music_5362": [1989, "french kiss single", "1989 single", "chicago house classic"],
+    "music_5363": [1989, "whats that noise album", "1989 single", "lisa stansfield vocals"],
+    "music_5364": [1989, "original sound of sheffield album", "1989 single", "mark moore production"],
+    "music_5365": [1988, "original sound of sheffield album", "1988 single", "uk number one single"],
+    "music_5366": [1988, "wanted album", "1988 single", "coldcut production", "otis clay original", "cover versions"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const detail = recordingTags[id];
+    if (!artist || !detail) throw new Error(`Missing metadata for ${id}`);
+    const title = question.match(/'(.+)'/);
+    if (!title) throw new Error(`Missing title for ${id}`);
+    const albumQuestion = id === "music_5308" || id === "music_5310" || id === "music_5350";
+    const year = detail[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return {
+        id, category: "Music", question, answers, correctAnswer, difficulty,
+        tags: [...new Set([
+            "music", albumQuestion ? "albums" : "songs",
+            albumQuestion ? "album trivia" : "recordings",
+            decade, `${decade} music`, `${year} releases`,
+            title[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...artist, ...detail.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
 const quizPack72 = [
-    {
-        id: "music_5267",
-        category: "Music",
-        question: "Which group recorded 'Gypsy Road'?",
-        answers: ["Cinderella", "Great White", "White Lion", "Warrant"],
-        correctAnswer: "Cinderella"
-    },
-    {
-        id: "music_5268",
-        category: "Music",
-        question: "Which group recorded 'Shake Me'?",
-        answers: ["Cinderella", "Great White", "White Lion", "Warrant"],
-        correctAnswer: "Cinderella"
-    },
-    {
-        id: "music_5269",
-        category: "Music",
-        question: "Which group recorded 'Somebody Save Me'?",
-        answers: ["Cinderella", "Great White", "White Lion", "Warrant"],
-        correctAnswer: "Cinderella"
-    },
-    {
-        id: "music_5270",
-        category: "Music",
-        question: "Which group recorded 'Coming Home'?",
-        answers: ["Cinderella", "Great White", "White Lion", "Warrant"],
-        correctAnswer: "Cinderella"
-    },
-    {
-        id: "music_5271",
-        category: "Music",
-        question: "Which group recorded 'Once Bitten, Twice Shy'?",
-        answers: ["Great White", "Cinderella", "White Lion", "Warrant"],
-        correctAnswer: "Great White"
-    },
-    {
-        id: "music_5272",
-        category: "Music",
-        question: "Which group recorded 'Rock Me'?",
-        answers: ["Great White", "Cinderella", "White Lion", "Warrant"],
-        correctAnswer: "Great White"
-    },
-    {
-        id: "music_5273",
-        category: "Music",
-        question: "Which group recorded 'Save Your Love'?",
-        answers: ["Great White", "Cinderella", "White Lion", "Warrant"],
-        correctAnswer: "Great White"
-    },
-    {
-        id: "music_5274",
-        category: "Music",
-        question: "Which group recorded 'Lady Red Light'?",
-        answers: ["Great White", "Cinderella", "White Lion", "Warrant"],
-        correctAnswer: "Great White"
-    },
-    {
-        id: "music_5275",
-        category: "Music",
-        question: "Which group recorded 'Wait'?",
-        answers: ["White Lion", "Great White", "Cinderella", "Warrant"],
-        correctAnswer: "White Lion"
-    },
-    {
-        id: "music_5276",
-        category: "Music",
-        question: "Which group recorded 'When the Children Cry'?",
-        answers: ["White Lion", "Great White", "Cinderella", "Warrant"],
-        correctAnswer: "White Lion"
-    },
-    {
-        id: "music_5277",
-        category: "Music",
-        question: "Which group recorded 'Tell Me'?",
-        answers: ["White Lion", "Great White", "Cinderella", "Warrant"],
-        correctAnswer: "White Lion"
-    },
-    {
-        id: "music_5278",
-        category: "Music",
-        question: "Which group recorded 'Don't Close Your Eyes'?",
-        answers: ["Kix", "Warrant", "Winger", "Great White"],
-        correctAnswer: "Kix"
-    },
-    {
-        id: "music_5279",
-        category: "Music",
-        question: "Which group recorded 'Blow My Fuse'?",
-        answers: ["Kix", "Warrant", "Winger", "Great White"],
-        correctAnswer: "Kix"
-    },
-    {
-        id: "music_5280",
-        category: "Music",
-        question: "Which group recorded 'Cold Blood'?",
-        answers: ["Kix", "Warrant", "Winger", "Great White"],
-        correctAnswer: "Kix"
-    },
-    {
-        id: "music_5281",
-        category: "Music",
-        question: "Which group recorded 'Fly High Michelle'?",
-        answers: ["Enuff Z'Nuff", "Warrant", "Winger", "Vixen"],
-        correctAnswer: "Enuff Z'Nuff"
-    },
-    {
-        id: "music_5282",
-        category: "Music",
-        question: "Which group recorded 'New Thing'?",
-        answers: ["Enuff Z'Nuff", "Warrant", "Winger", "Vixen"],
-        correctAnswer: "Enuff Z'Nuff"
-    },
-    {
-        id: "music_5283",
-        category: "Music",
-        question: "Which group recorded 'Heaven'?",
-        answers: ["Warrant", "Winger", "Great White", "White Lion"],
-        correctAnswer: "Warrant"
-    },
-    {
-        id: "music_5284",
-        category: "Music",
-        question: "Which group recorded 'Down Boys'?",
-        answers: ["Warrant", "Winger", "Great White", "White Lion"],
-        correctAnswer: "Warrant"
-    },
-    {
-        id: "music_5285",
-        category: "Music",
-        question: "Which group recorded 'Big Talk'?",
-        answers: ["Warrant", "Winger", "Great White", "White Lion"],
-        correctAnswer: "Warrant"
-    },
-    {
-        id: "music_5286",
-        category: "Music",
-        question: "Which group recorded 'Sometimes She Cries'?",
-        answers: ["Warrant", "Winger", "Great White", "White Lion"],
-        correctAnswer: "Warrant"
-    },
-    {
-        id: "music_5287",
-        category: "Music",
-        question: "Which group recorded 'Seventeen'?",
-        answers: ["Winger", "Warrant", "Great White", "White Lion"],
-        correctAnswer: "Winger"
-    },
-    {
-        id: "music_5288",
-        category: "Music",
-        question: "Which group recorded 'Headed for a Heartbreak'?",
-        answers: ["Winger", "Warrant", "Great White", "White Lion"],
-        correctAnswer: "Winger"
-    },
-    {
-        id: "music_5289",
-        category: "Music",
-        question: "Which group recorded 'Madalaine'?",
-        answers: ["Winger", "Warrant", "Great White", "White Lion"],
-        correctAnswer: "Winger"
-    },
-    {
-        id: "music_5290",
-        category: "Music",
-        question: "Which group recorded 'Hungry'?",
-        answers: ["Winger", "Warrant", "Great White", "White Lion"],
-        correctAnswer: "Winger"
-    },
-    {
-        id: "music_5291",
-        category: "Music",
-        question: "Which group recorded 'When I See You Smile'?",
-        answers: ["Bad English", "Winger", "Warrant", "Great White"],
-        correctAnswer: "Bad English"
-    },
-    {
-        id: "music_5292",
-        category: "Music",
-        question: "Which group recorded 'Forget Me Not'?",
-        answers: ["Bad English", "Winger", "Warrant", "Great White"],
-        correctAnswer: "Bad English"
-    },
-    {
-        id: "music_5293",
-        category: "Music",
-        question: "Which group recorded 'Best of What I Got'?",
-        answers: ["Bad English", "Winger", "Warrant", "Great White"],
-        correctAnswer: "Bad English"
-    },
-    {
-        id: "music_5294",
-        category: "Music",
-        question: "Which group recorded 'Edge of a Broken Heart'?",
-        answers: ["Vixen", "Heart", "The Bangles", "Scandal"],
-        correctAnswer: "Vixen"
-    },
-    {
-        id: "music_5295",
-        category: "Music",
-        question: "Which group recorded 'Cryin''?",
-        answers: ["Vixen", "Heart", "The Bangles", "Scandal"],
-        correctAnswer: "Vixen"
-    },
-    {
-        id: "music_5296",
-        category: "Music",
-        question: "Which group recorded 'Love Made Me'?",
-        answers: ["Vixen", "Heart", "The Bangles", "Scandal"],
-        correctAnswer: "Vixen"
-    },
-    {
-        id: "music_5297",
-        category: "Music",
-        question: "Which artist recorded 'Kiss Me Deadly'?",
-        answers: ["Lita Ford", "Pat Benatar", "Joan Jett", "Cher"],
-        correctAnswer: "Lita Ford"
-    },
-    {
-        id: "music_5298",
-        category: "Music",
-        question: "Which artists recorded 'Close My Eyes Forever'?",
-        answers: ["Lita Ford and Ozzy Osbourne", "Lita Ford and Alice Cooper", "Lita Ford and Billy Idol", "Lita Ford and David Coverdale"],
-        correctAnswer: "Lita Ford and Ozzy Osbourne"
-    },
-    {
-        id: "music_5299",
-        category: "Music",
-        question: "Which artist recorded 'Back to the Cave'?",
-        answers: ["Lita Ford", "Pat Benatar", "Joan Jett", "Cher"],
-        correctAnswer: "Lita Ford"
-    },
-    {
-        id: "music_5300",
-        category: "Music",
-        question: "Which group recorded 'Turn Up the Radio'?",
-        answers: ["Autograph", "Giuffria", "Y&T", "Balance"],
-        correctAnswer: "Autograph"
-    },
-    {
-        id: "music_5301",
-        category: "Music",
-        question: "Which group recorded 'Blondes in Black Cars'?",
-        answers: ["Autograph", "Giuffria", "Y&T", "Balance"],
-        correctAnswer: "Autograph"
-    },
-    {
-        id: "music_5302",
-        category: "Music",
-        question: "Which group recorded 'Smooth Up in Ya'?",
-        answers: ["BulletBoys", "Warrant", "Winger", "Kix"],
-        correctAnswer: "BulletBoys"
-    },
-    {
-        id: "music_5303",
-        category: "Music",
-        question: "Which group recorded 'Don't Stop Runnin''?",
-        answers: ["Y&T", "Giuffria", "Autograph", "Balance"],
-        correctAnswer: "Y&T"
-    },
-    {
-        id: "music_5304",
-        category: "Music",
-        question: "Which group recorded 'Summertime Girls'?",
-        answers: ["Y&T", "Giuffria", "Autograph", "Balance"],
-        correctAnswer: "Y&T"
-    },
-    {
-        id: "music_5305",
-        category: "Music",
-        question: "Which group recorded 'Mean Streak'?",
-        answers: ["Y&T", "Giuffria", "Autograph", "Balance"],
-        correctAnswer: "Y&T"
-    },
-    {
-        id: "music_5306",
-        category: "Music",
-        question: "Which group recorded 'Call to the Heart'?",
-        answers: ["Giuffria", "Y&T", "Autograph", "Balance"],
-        correctAnswer: "Giuffria"
-    },
-    {
-        id: "music_5307",
-        category: "Music",
-        question: "Which group recorded 'Lonely in Love'?",
-        answers: ["Giuffria", "Y&T", "Autograph", "Balance"],
-        correctAnswer: "Giuffria"
-    },
-    {
-        id: "music_5308",
-        category: "Music",
-        question: "Which group recorded 'Don't Run Away'?",
-        answers: ["Balance", "Giuffria", "Y&T", "Autograph"],
-        correctAnswer: "Balance"
-    },
-    {
-        id: "music_5309",
-        category: "Music",
-        question: "Which group recorded 'Breaking Away'?",
-        answers: ["Balance", "Giuffria", "Y&T", "Autograph"],
-        correctAnswer: "Balance"
-    },
-    {
-        id: "music_5310",
-        category: "Music",
-        question: "Which group recorded 'Strength of Character'?",
-        answers: ["The Alarm", "Big Country", "The Waterboys", "The Icicle Works"],
-        correctAnswer: "The Alarm"
-    },
-    {
-        id: "music_5311",
-        category: "Music",
-        question: "Which group recorded 'Sold Me Down the River'?",
-        answers: ["The Alarm", "Big Country", "The Waterboys", "The Icicle Works"],
-        correctAnswer: "The Alarm"
-    },
-    {
-        id: "music_5312",
-        category: "Music",
-        question: "Which group recorded 'Goodbye Mr Mackenzie'?",
-        answers: ["Goodbye Mr Mackenzie", "The Alarm", "Big Country", "The Wonder Stuff"],
-        correctAnswer: "Goodbye Mr Mackenzie"
-    },
-    {
-        id: "music_5313",
-        category: "Music",
-        question: "Which group recorded 'The Rattler'?",
-        answers: ["Goodbye Mr Mackenzie", "The Alarm", "Big Country", "The Wonder Stuff"],
-        correctAnswer: "Goodbye Mr Mackenzie"
-    },
-    {
-        id: "music_5314",
-        category: "Music",
-        question: "Which group recorded 'C30 C60 C90 Go'?",
-        answers: ["Bow Wow Wow", "Altered Images", "The Belle Stars", "The Waitresses"],
-        correctAnswer: "Bow Wow Wow"
-    },
-    {
-        id: "music_5315",
-        category: "Music",
-        question: "Which group recorded 'Go Wild in the Country'?",
-        answers: ["Bow Wow Wow", "Altered Images", "The Belle Stars", "The Waitresses"],
-        correctAnswer: "Bow Wow Wow"
-    },
-    {
-        id: "music_5316",
-        category: "Music",
-        question: "Which group recorded 'Do You Wanna Hold Me?'?",
-        answers: ["Bow Wow Wow", "Altered Images", "The Belle Stars", "The Waitresses"],
-        correctAnswer: "Bow Wow Wow"
-    },
-    {
-        id: "music_5317",
-        category: "Music",
-        question: "Which artist recorded 'Round, Round'?",
-        answers: ["Belouis Some", "Howard Jones", "Nik Kershaw", "Thomas Dolby"],
-        correctAnswer: "Belouis Some"
-    },
-    {
-        id: "music_5318",
-        category: "Music",
-        question: "Which group recorded 'Don't Look Down - The Sequel'?",
-        answers: ["Go West", "Wang Chung", "Naked Eyes", "Living in a Box"],
-        correctAnswer: "Go West"
-    },
-    {
-        id: "music_5319",
-        category: "Music",
-        question: "Which group recorded 'From Baltimore to Paris'?",
-        answers: ["Go West", "Wang Chung", "Naked Eyes", "Living in a Box"],
-        correctAnswer: "Go West"
-    },
-    {
-        id: "music_5320",
-        category: "Music",
-        question: "Which group recorded 'The King Is Dead'?",
-        answers: ["Go West", "Wang Chung", "Naked Eyes", "Living in a Box"],
-        correctAnswer: "Go West"
-    },
-    {
-        id: "music_5321",
-        category: "Music",
-        question: "Which artist recorded 'Love Is the Seventh Wave'?",
-        answers: ["Sting", "Peter Gabriel", "Bryan Ferry", "Robert Palmer"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_5322",
-        category: "Music",
-        question: "Which artist recorded 'Fortress Around Your Heart'?",
-        answers: ["Sting", "Peter Gabriel", "Bryan Ferry", "Robert Palmer"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_5323",
-        category: "Music",
-        question: "Which group recorded 'Love and Money'?",
-        answers: ["Bronski Beat", "The Communards", "Erasure", "Pet Shop Boys"],
-        correctAnswer: "Bronski Beat"
-    },
-    {
-        id: "music_5324",
-        category: "Music",
-        question: "Which group recorded 'Hit That Perfect Beat'?",
-        answers: ["Bronski Beat", "The Communards", "Erasure", "Pet Shop Boys"],
-        correctAnswer: "Bronski Beat"
-    },
-    {
-        id: "music_5325",
-        category: "Music",
-        question: "Which group recorded 'C'mon! C'mon!'?",
-        answers: ["Bronski Beat", "The Communards", "Erasure", "Pet Shop Boys"],
-        correctAnswer: "Bronski Beat"
-    },
-    {
-        id: "music_5326",
-        category: "Music",
-        question: "Which group recorded 'So Cold the Night'?",
-        answers: ["The Communards", "Bronski Beat", "Erasure", "Pet Shop Boys"],
-        correctAnswer: "The Communards"
-    },
-    {
-        id: "music_5327",
-        category: "Music",
-        question: "Which group recorded 'For a Friend'?",
-        answers: ["The Communards", "Bronski Beat", "Erasure", "Pet Shop Boys"],
-        correctAnswer: "The Communards"
-    },
-    {
-        id: "music_5328",
-        category: "Music",
-        question: "Which group recorded 'You Are My World'?",
-        answers: ["The Communards", "Bronski Beat", "Erasure", "Pet Shop Boys"],
-        correctAnswer: "The Communards"
-    },
-    {
-        id: "music_5329",
-        category: "Music",
-        question: "Which group recorded 'I Beg Your Pardon'?",
-        answers: ["Kon Kan", "Men Without Hats", "Platinum Blonde", "Spoons"],
-        correctAnswer: "Kon Kan"
-    },
-    {
-        id: "music_5330",
-        category: "Music",
-        question: "Which group recorded 'Harry Houdini'?",
-        answers: ["Kon Kan", "Men Without Hats", "Platinum Blonde", "Spoons"],
-        correctAnswer: "Kon Kan"
-    },
-    {
-        id: "music_5331",
-        category: "Music",
-        question: "Which group recorded 'Where Do the Boys Go?'?",
-        answers: ["Men Without Hats", "Kon Kan", "Platinum Blonde", "Spoons"],
-        correctAnswer: "Men Without Hats"
-    },
-    {
-        id: "music_5332",
-        category: "Music",
-        question: "Which group recorded 'Danseparc'?",
-        answers: ["Martha and the Muffins", "Parachute Club", "Rough Trade", "Spoons"],
-        correctAnswer: "Martha and the Muffins"
-    },
-    {
-        id: "music_5333",
-        category: "Music",
-        question: "Which group recorded 'Rise Up'?",
-        answers: ["Parachute Club", "Martha and the Muffins", "Rough Trade", "Spoons"],
-        correctAnswer: "Parachute Club"
-    },
-    {
-        id: "music_5334",
-        category: "Music",
-        question: "Which group recorded 'At the Feet of the Moon'?",
-        answers: ["Parachute Club", "Martha and the Muffins", "Rough Trade", "Spoons"],
-        correctAnswer: "Parachute Club"
-    },
-    {
-        id: "music_5335",
-        category: "Music",
-        question: "Which group recorded 'Tokyo Rose'?",
-        answers: ["Idle Eyes", "Platinum Blonde", "Spoons", "The Kings"],
-        correctAnswer: "Idle Eyes"
-    },
-    {
-        id: "music_5336",
-        category: "Music",
-        question: "Which group recorded 'High School Confidential'?",
-        answers: ["Rough Trade", "Toronto", "Headpins", "Parachute Club"],
-        correctAnswer: "Rough Trade"
-    },
-    {
-        id: "music_5337",
-        category: "Music",
-        question: "Which group recorded 'All Touch'?",
-        answers: ["Rough Trade", "Toronto", "Headpins", "Parachute Club"],
-        correctAnswer: "Rough Trade"
-    },
-    {
-        id: "music_5338",
-        category: "Music",
-        question: "Which group recorded 'Switchin' to Glide'?",
-        answers: ["The Kings", "Spoons", "Platinum Blonde", "Idle Eyes"],
-        correctAnswer: "The Kings"
-    },
-    {
-        id: "music_5339",
-        category: "Music",
-        question: "Which group recorded 'This Beat Goes On'?",
-        answers: ["The Kings", "Spoons", "Platinum Blonde", "Idle Eyes"],
-        correctAnswer: "The Kings"
-    },
-    {
-        id: "music_5340",
-        category: "Music",
-        question: "Which group recorded 'White Hot'?",
-        answers: ["Red Rider", "The Kings", "Toronto", "Headpins"],
-        correctAnswer: "Red Rider"
-    },
-    {
-        id: "music_5341",
-        category: "Music",
-        question: "Which group recorded 'The Untouchable One'?",
-        answers: ["Tom Cochrane and Red Rider", "Loverboy", "Honeymoon Suite", "Platinum Blonde"],
-        correctAnswer: "Tom Cochrane and Red Rider"
-    },
-    {
-        id: "music_5342",
-        category: "Music",
-        question: "Which group recorded 'Love Changes Everything'?",
-        answers: ["Honeymoon Suite", "Loverboy", "Toronto", "Headpins"],
-        correctAnswer: "Honeymoon Suite"
-    },
-    {
-        id: "music_5343",
-        category: "Music",
-        question: "Which artist recorded 'All We Are'?",
-        answers: ["Kim Mitchell", "Bryan Adams", "Tom Cochrane", "Gino Vannelli"],
-        correctAnswer: "Kim Mitchell"
-    },
-    {
-        id: "music_5344",
-        category: "Music",
-        question: "Which group recorded 'Lovin' Every Minute of It'?",
-        answers: ["Loverboy", "Honeymoon Suite", "Toronto", "Headpins"],
-        correctAnswer: "Loverboy"
-    },
-    {
-        id: "music_5345",
-        category: "Music",
-        question: "Which group recorded 'This Could Be the Night'?",
-        answers: ["Loverboy", "Honeymoon Suite", "Toronto", "Headpins"],
-        correctAnswer: "Loverboy"
-    },
-    {
-        id: "music_5346",
-        category: "Music",
-        question: "Which group recorded 'Your Daddy Don't Know'?",
-        answers: ["Toronto", "Headpins", "Loverboy", "Honeymoon Suite"],
-        correctAnswer: "Toronto"
-    },
-    {
-        id: "music_5347",
-        category: "Music",
-        question: "Which group recorded 'Start Tellin' the Truth'?",
-        answers: ["Toronto", "Headpins", "Loverboy", "Honeymoon Suite"],
-        correctAnswer: "Toronto"
-    },
-    {
-        id: "music_5348",
-        category: "Music",
-        question: "Which group recorded 'Don't It Make Ya Feel'?",
-        answers: ["Headpins", "Toronto", "Loverboy", "Honeymoon Suite"],
-        correctAnswer: "Headpins"
-    },
-    {
-        id: "music_5349",
-        category: "Music",
-        question: "Which group recorded 'Just One More Time'?",
-        answers: ["Headpins", "Toronto", "Loverboy", "Honeymoon Suite"],
-        correctAnswer: "Headpins"
-    },
-    {
-        id: "music_5350",
-        category: "Music",
-        question: "Which group recorded 'Fantasy'?",
-        answers: ["Toronto", "Headpins", "Loverboy", "Honeymoon Suite"],
-        correctAnswer: "Toronto"
-    },
-    {
-        id: "music_5351",
-        category: "Music",
-        question: "Which group recorded 'Situation Critical'?",
-        answers: ["Platinum Blonde", "Spoons", "Idle Eyes", "The Kings"],
-        correctAnswer: "Platinum Blonde"
-    },
-    {
-        id: "music_5352",
-        category: "Music",
-        question: "Which group recorded 'Crying Over You'?",
-        answers: ["Platinum Blonde", "Spoons", "Idle Eyes", "The Kings"],
-        correctAnswer: "Platinum Blonde"
-    },
-    {
-        id: "music_5353",
-        category: "Music",
-        question: "Which group recorded 'Somebody Somewhere'?",
-        answers: ["Platinum Blonde", "Spoons", "Idle Eyes", "The Kings"],
-        correctAnswer: "Platinum Blonde"
-    },
-    {
-        id: "music_5354",
-        category: "Music",
-        question: "Which artist recorded 'Let Your Backbone Slide'?",
-        answers: ["Maestro Fresh-Wes", "Kool Moe Dee", "Tone Loc", "Young MC"],
-        correctAnswer: "Maestro Fresh-Wes"
-    },
-    {
-        id: "music_5355",
-        category: "Music",
-        question: "Which artist recorded 'Rumours of Glory'?",
-        answers: ["Bruce Cockburn", "Tom Cochrane", "Kim Mitchell", "Gino Vannelli"],
-        correctAnswer: "Bruce Cockburn"
-    },
-    {
-        id: "music_5356",
-        category: "Music",
-        question: "Which group recorded 'Good Life'?",
-        answers: ["Inner City", "S'Express", "Bomb the Bass", "Coldcut"],
-        correctAnswer: "Inner City"
-    },
-    {
-        id: "music_5357",
-        category: "Music",
-        question: "Which group recorded 'Big Fun'?",
-        answers: ["Inner City", "S'Express", "Bomb the Bass", "Coldcut"],
-        correctAnswer: "Inner City"
-    },
-    {
-        id: "music_5358",
-        category: "Music",
-        question: "Which group recorded 'Ain't Nobody Better'?",
-        answers: ["Inner City", "S'Express", "Bomb the Bass", "Coldcut"],
-        correctAnswer: "Inner City"
-    },
-    {
-        id: "music_5359",
-        category: "Music",
-        question: "Which artist recorded 'Promised Land'?",
-        answers: ["Joe Smooth", "Lil Louis", "Simon Harris", "Yazz"],
-        correctAnswer: "Joe Smooth"
-    },
-    {
-        id: "music_5360",
-        category: "Music",
-        question: "Which group recorded 'Can You Party'?",
-        answers: ["Royal House", "Inner City", "S'Express", "Bomb the Bass"],
-        correctAnswer: "Royal House"
-    },
-    {
-        id: "music_5361",
-        category: "Music",
-        question: "Which artist recorded 'Strings of Life'?",
-        answers: ["Rhythim Is Rhythim", "Joe Smooth", "Lil Louis", "Simon Harris"],
-        correctAnswer: "Rhythim Is Rhythim"
-    },
-    {
-        id: "music_5362",
-        category: "Music",
-        question: "Which artist recorded 'French Kiss'?",
-        answers: ["Lil Louis", "Joe Smooth", "Simon Harris", "Yazz"],
-        correctAnswer: "Lil Louis"
-    },
-    {
-        id: "music_5363",
-        category: "Music",
-        question: "Which artists recorded 'People Hold On'?",
-        answers: ["Coldcut featuring Lisa Stansfield", "S'Express featuring Yazz", "Bomb the Bass featuring Neneh Cherry", "Inner City featuring Lisa Stansfield"],
-        correctAnswer: "Coldcut featuring Lisa Stansfield"
-    },
-    {
-        id: "music_5364",
-        category: "Music",
-        question: "Which group recorded 'Hey Music Lover'?",
-        answers: ["S'Express", "Bomb the Bass", "Coldcut", "Inner City"],
-        correctAnswer: "S'Express"
-    },
-    {
-        id: "music_5365",
-        category: "Music",
-        question: "Which group recorded 'Theme from S-Express'?",
-        answers: ["S'Express", "Bomb the Bass", "Coldcut", "Inner City"],
-        correctAnswer: "S'Express"
-    },
-    {
-        id: "music_5366",
-        category: "Music",
-        question: "Which group recorded 'The Only Way Is Up'?",
-        answers: ["Yazz and the Plastic Population", "S'Express", "Bomb the Bass", "Coldcut"],
-        correctAnswer: "Yazz and the Plastic Population"
-    }
+    makeQuestion("music_5267", "Which group recorded 'Gypsy Road'?", ["Cinderella", "Great White", "White Lion", "Warrant"], "Cinderella", "Easy"),
+    makeQuestion("music_5268", "Which group recorded 'Shake Me'?", ["Cinderella", "Great White", "White Lion", "Warrant"], "Cinderella", "Medium"),
+    makeQuestion("music_5269", "Which group recorded 'Somebody Save Me'?", ["Cinderella", "Great White", "White Lion", "Warrant"], "Cinderella", "Medium"),
+    makeQuestion("music_5270", "Which group recorded 'Coming Home'?", ["Cinderella", "Great White", "White Lion", "Warrant"], "Cinderella", "Medium"),
+    makeQuestion("music_5271", "Which group recorded 'Once Bitten, Twice Shy'?", ["Great White", "Cinderella", "White Lion", "Warrant"], "Great White", "Easy"),
+    makeQuestion("music_5272", "Which group recorded 'Rock Me'?", ["Great White", "Cinderella", "White Lion", "Warrant"], "Great White", "Easy"),
+    makeQuestion("music_5273", "Which group recorded 'Save Your Love'?", ["Great White", "Cinderella", "White Lion", "Warrant"], "Great White", "Medium"),
+    makeQuestion("music_5274", "Which group recorded 'Lady Red Light'?", ["Great White", "Cinderella", "White Lion", "Warrant"], "Great White", "Medium"),
+    makeQuestion("music_5275", "Which group recorded 'Wait'?", ["White Lion", "Great White", "Cinderella", "Warrant"], "White Lion", "Easy"),
+    makeQuestion("music_5276", "Which group recorded 'When the Children Cry'?", ["White Lion", "Great White", "Cinderella", "Warrant"], "White Lion", "Easy"),
+    makeQuestion("music_5277", "Which group recorded 'Tell Me'?", ["White Lion", "Great White", "Cinderella", "Warrant"], "White Lion", "Medium"),
+    makeQuestion("music_5278", "Which group recorded 'Don't Close Your Eyes'?", ["Kix", "Warrant", "Winger", "Great White"], "Kix", "Medium"),
+    makeQuestion("music_5279", "Which group recorded 'Blow My Fuse'?", ["Kix", "Warrant", "Winger", "Great White"], "Kix", "Medium"),
+    makeQuestion("music_5280", "Which group recorded 'Cold Blood'?", ["Kix", "Warrant", "Winger", "Great White"], "Kix", "Medium"),
+    makeQuestion("music_5281", "Which group recorded 'Fly High Michelle'?", ["Enuff Z'Nuff", "Warrant", "Winger", "Vixen"], "Enuff Z'Nuff", "Hard"),
+    makeQuestion("music_5282", "Which group recorded 'New Thing'?", ["Enuff Z'Nuff", "Warrant", "Winger", "Vixen"], "Enuff Z'Nuff", "Medium"),
+    makeQuestion("music_5283", "Which group recorded 'Heaven'?", ["Warrant", "Winger", "Great White", "White Lion"], "Warrant", "Easy"),
+    makeQuestion("music_5284", "Which group recorded 'Down Boys'?", ["Warrant", "Winger", "Great White", "White Lion"], "Warrant", "Medium"),
+    makeQuestion("music_5285", "Which group recorded 'Big Talk'?", ["Warrant", "Winger", "Great White", "White Lion"], "Warrant", "Hard"),
+    makeQuestion("music_5286", "Which group recorded 'Sometimes She Cries'?", ["Warrant", "Winger", "Great White", "White Lion"], "Warrant", "Medium"),
+    makeQuestion("music_5287", "Which group recorded 'Seventeen'?", ["Winger", "Warrant", "Great White", "White Lion"], "Winger", "Easy"),
+    makeQuestion("music_5288", "Which group recorded 'Headed for a Heartbreak'?", ["Winger", "Warrant", "Great White", "White Lion"], "Winger", "Medium"),
+    makeQuestion("music_5289", "Which group recorded 'Madalaine'?", ["Winger", "Warrant", "Great White", "White Lion"], "Winger", "Medium"),
+    makeQuestion("music_5290", "Which group recorded 'Hungry'?", ["Winger", "Warrant", "Great White", "White Lion"], "Winger", "Medium"),
+    makeQuestion("music_5291", "Which group recorded 'When I See You Smile'?", ["Bad English", "Winger", "Warrant", "Great White"], "Bad English", "Easy"),
+    makeQuestion("music_5292", "Which group recorded 'Forget Me Not'?", ["Bad English", "Winger", "Warrant", "Great White"], "Bad English", "Medium"),
+    makeQuestion("music_5293", "Which group recorded 'Best of What I Got'?", ["Bad English", "Winger", "Warrant", "Great White"], "Bad English", "Hard"),
+    makeQuestion("music_5294", "Which group recorded 'Edge of a Broken Heart'?", ["Vixen", "Heart", "The Bangles", "Scandal"], "Vixen", "Easy"),
+    makeQuestion("music_5295", "Which group recorded 'Cryin''?", ["Vixen", "Heart", "The Bangles", "Scandal"], "Vixen", "Medium"),
+    makeQuestion("music_5296", "Which group recorded 'Love Made Me'?", ["Vixen", "Heart", "The Bangles", "Scandal"], "Vixen", "Medium"),
+    makeQuestion("music_5297", "Which artist recorded 'Kiss Me Deadly'?", ["Lita Ford", "Pat Benatar", "Joan Jett", "Cher"], "Lita Ford", "Easy"),
+    makeQuestion("music_5298", "Which artists recorded 'Close My Eyes Forever'?", ["Lita Ford and Ozzy Osbourne", "Lita Ford and Alice Cooper", "Lita Ford and Billy Idol", "Lita Ford and David Coverdale"], "Lita Ford and Ozzy Osbourne", "Easy"),
+    makeQuestion("music_5299", "Which artist recorded 'Back to the Cave'?", ["Lita Ford", "Pat Benatar", "Joan Jett", "Cher"], "Lita Ford", "Medium"),
+    makeQuestion("music_5300", "Which group recorded 'Turn Up the Radio'?", ["Autograph", "Giuffria", "Y&T", "Balance"], "Autograph", "Easy"),
+    makeQuestion("music_5301", "Which group recorded 'Blondes in Black Cars'?", ["Autograph", "Giuffria", "Y&T", "Balance"], "Autograph", "Hard"),
+    makeQuestion("music_5302", "Which group recorded 'Smooth Up in Ya'?", ["BulletBoys", "Warrant", "Winger", "Kix"], "BulletBoys", "Medium"),
+    makeQuestion("music_5303", "Which group recorded 'Don't Stop Runnin''?", ["Y&T", "Giuffria", "Autograph", "Balance"], "Y&T", "Medium"),
+    makeQuestion("music_5304", "Which group recorded 'Summertime Girls'?", ["Y&T", "Giuffria", "Autograph", "Balance"], "Y&T", "Medium"),
+    makeQuestion("music_5305", "Which group recorded 'Mean Streak'?", ["Y&T", "Giuffria", "Autograph", "Balance"], "Y&T", "Medium"),
+    makeQuestion("music_5306", "Which group recorded 'Call to the Heart'?", ["Giuffria", "Y&T", "Autograph", "Balance"], "Giuffria", "Medium"),
+    makeQuestion("music_5307", "Which group recorded 'Lonely in Love'?", ["Giuffria", "Y&T", "Autograph", "Balance"], "Giuffria", "Hard"),
+    makeQuestion("music_5308", "Which group released the album 'In for the Count'?", ["Balance", "Giuffria", "Y&T", "Autograph"], "Balance", "Hard"),
+    makeQuestion("music_5309", "Which group recorded 'Breaking Away'?", ["Balance", "Giuffria", "Y&T", "Autograph"], "Balance", "Hard"),
+    makeQuestion("music_5310", "Which group released the album 'Declaration'?", ["The Alarm", "Big Country", "The Waterboys", "The Icicle Works"], "The Alarm", "Hard"),
+    makeQuestion("music_5311", "Which group recorded 'Sold Me Down the River'?", ["The Alarm", "Big Country", "The Waterboys", "The Icicle Works"], "The Alarm", "Easy"),
+    makeQuestion("music_5312", "Which group recorded 'Goodbye Mr Mackenzie'?", ["Goodbye Mr Mackenzie", "The Alarm", "Big Country", "The Wonder Stuff"], "Goodbye Mr Mackenzie", "Hard"),
+    makeQuestion("music_5313", "Which group recorded 'The Rattler'?", ["Goodbye Mr Mackenzie", "The Alarm", "Big Country", "The Wonder Stuff"], "Goodbye Mr Mackenzie", "Hard"),
+    makeQuestion("music_5314", "Which group recorded 'C30 C60 C90 Go'?", ["Bow Wow Wow", "Altered Images", "The Belle Stars", "The Waitresses"], "Bow Wow Wow", "Medium"),
+    makeQuestion("music_5315", "Which group recorded 'Go Wild in the Country'?", ["Bow Wow Wow", "Altered Images", "The Belle Stars", "The Waitresses"], "Bow Wow Wow", "Easy"),
+    makeQuestion("music_5316", "Which group recorded 'Do You Wanna Hold Me?'?", ["Bow Wow Wow", "Altered Images", "The Belle Stars", "The Waitresses"], "Bow Wow Wow", "Medium"),
+    makeQuestion("music_5317", "Which artist recorded 'Round, Round'?", ["Belouis Some", "Howard Jones", "Nik Kershaw", "Thomas Dolby"], "Belouis Some", "Hard"),
+    makeQuestion("music_5318", "Which group recorded 'Don't Look Down - The Sequel'?", ["Go West", "Wang Chung", "Naked Eyes", "Living in a Box"], "Go West", "Medium"),
+    makeQuestion("music_5319", "Which group recorded 'From Baltimore to Paris'?", ["Go West", "Wang Chung", "Naked Eyes", "Living in a Box"], "Go West", "Medium"),
+    makeQuestion("music_5320", "Which group recorded 'The King Is Dead'?", ["Go West", "Wang Chung", "Naked Eyes", "Living in a Box"], "Go West", "Hard"),
+    makeQuestion("music_5321", "Which artist recorded 'Love Is the Seventh Wave'?", ["Sting", "Peter Gabriel", "Bryan Ferry", "Robert Palmer"], "Sting", "Easy"),
+    makeQuestion("music_5322", "Which artist recorded 'Fortress Around Your Heart'?", ["Sting", "Peter Gabriel", "Bryan Ferry", "Robert Palmer"], "Sting", "Easy"),
+    makeQuestion("music_5323", "Which group recorded 'Love and Money'?", ["Bronski Beat", "The Communards", "Erasure", "Pet Shop Boys"], "Bronski Beat", "Medium"),
+    makeQuestion("music_5324", "Which group recorded 'Hit That Perfect Beat'?", ["Bronski Beat", "The Communards", "Erasure", "Pet Shop Boys"], "Bronski Beat", "Easy"),
+    makeQuestion("music_5325", "Which group recorded 'C'mon! C'mon!'?", ["Bronski Beat", "The Communards", "Erasure", "Pet Shop Boys"], "Bronski Beat", "Medium"),
+    makeQuestion("music_5326", "Which group recorded 'So Cold the Night'?", ["The Communards", "Bronski Beat", "Erasure", "Pet Shop Boys"], "The Communards", "Easy"),
+    makeQuestion("music_5327", "Which group recorded 'For a Friend'?", ["The Communards", "Bronski Beat", "Erasure", "Pet Shop Boys"], "The Communards", "Medium"),
+    makeQuestion("music_5328", "Which group recorded 'You Are My World'?", ["The Communards", "Bronski Beat", "Erasure", "Pet Shop Boys"], "The Communards", "Medium"),
+    makeQuestion("music_5329", "Which group recorded 'I Beg Your Pardon'?", ["Kon Kan", "Men Without Hats", "Platinum Blonde", "Spoons"], "Kon Kan", "Hard"),
+    makeQuestion("music_5330", "Which group recorded 'Harry Houdini'?", ["Kon Kan", "Men Without Hats", "Platinum Blonde", "Spoons"], "Kon Kan", "Hard"),
+    makeQuestion("music_5331", "Which group recorded 'Where Do the Boys Go?'?", ["Men Without Hats", "Kon Kan", "Platinum Blonde", "Spoons"], "Men Without Hats", "Medium"),
+    makeQuestion("music_5332", "Which group recorded 'Danseparc'?", ["Martha and the Muffins", "Parachute Club", "Rough Trade", "Spoons"], "Martha and the Muffins", "Hard"),
+    makeQuestion("music_5333", "Which group recorded 'Rise Up'?", ["Parachute Club", "Martha and the Muffins", "Rough Trade", "Spoons"], "Parachute Club", "Easy"),
+    makeQuestion("music_5334", "Which group recorded 'At the Feet of the Moon'?", ["Parachute Club", "Martha and the Muffins", "Rough Trade", "Spoons"], "Parachute Club", "Hard"),
+    makeQuestion("music_5335", "Which group recorded 'Tokyo Rose'?", ["Idle Eyes", "Platinum Blonde", "Spoons", "The Kings"], "Idle Eyes", "Hard"),
+    makeQuestion("music_5336", "Which group recorded 'High School Confidential'?", ["Rough Trade", "Toronto", "Headpins", "Parachute Club"], "Rough Trade", "Medium"),
+    makeQuestion("music_5337", "Which group recorded 'All Touch'?", ["Rough Trade", "Toronto", "Headpins", "Parachute Club"], "Rough Trade", "Hard"),
+    makeQuestion("music_5338", "Which group recorded 'Switchin' to Glide'?", ["The Kings", "Spoons", "Platinum Blonde", "Idle Eyes"], "The Kings", "Hard"),
+    makeQuestion("music_5339", "Which group recorded 'This Beat Goes On'?", ["The Kings", "Spoons", "Platinum Blonde", "Idle Eyes"], "The Kings", "Hard"),
+    makeQuestion("music_5340", "Which group recorded 'White Hot'?", ["Red Rider", "The Kings", "Toronto", "Headpins"], "Red Rider", "Hard"),
+    makeQuestion("music_5341", "Which group recorded 'The Untouchable One'?", ["Tom Cochrane and Red Rider", "Loverboy", "Honeymoon Suite", "Platinum Blonde"], "Tom Cochrane and Red Rider", "Hard"),
+    makeQuestion("music_5342", "Which group recorded 'Love Changes Everything'?", ["Honeymoon Suite", "Loverboy", "Toronto", "Headpins"], "Honeymoon Suite", "Medium"),
+    makeQuestion("music_5343", "Which artist recorded 'All We Are'?", ["Kim Mitchell", "Bryan Adams", "Tom Cochrane", "Gino Vannelli"], "Kim Mitchell", "Medium"),
+    makeQuestion("music_5344", "Which group recorded 'Lovin' Every Minute of It'?", ["Loverboy", "Honeymoon Suite", "Toronto", "Headpins"], "Loverboy", "Easy"),
+    makeQuestion("music_5345", "Which group recorded 'This Could Be the Night'?", ["Loverboy", "Honeymoon Suite", "Toronto", "Headpins"], "Loverboy", "Medium"),
+    makeQuestion("music_5346", "Which group recorded 'Your Daddy Don't Know'?", ["Toronto", "Headpins", "Loverboy", "Honeymoon Suite"], "Toronto", "Hard"),
+    makeQuestion("music_5347", "Which group recorded 'Start Tellin' the Truth'?", ["Toronto", "Headpins", "Loverboy", "Honeymoon Suite"], "Toronto", "Hard"),
+    makeQuestion("music_5348", "Which group recorded 'Don't It Make Ya Feel'?", ["Headpins", "Toronto", "Loverboy", "Honeymoon Suite"], "Headpins", "Hard"),
+    makeQuestion("music_5349", "Which group recorded 'Just One More Time'?", ["Headpins", "Toronto", "Loverboy", "Honeymoon Suite"], "Headpins", "Hard"),
+    makeQuestion("music_5350", "Which group released the album 'Get It on Credit'?", ["Toronto", "Headpins", "Loverboy", "Honeymoon Suite"], "Toronto", "Hard"),
+    makeQuestion("music_5351", "Which group recorded 'Situation Critical'?", ["Platinum Blonde", "Spoons", "Idle Eyes", "The Kings"], "Platinum Blonde", "Hard"),
+    makeQuestion("music_5352", "Which group recorded 'Crying Over You'?", ["Platinum Blonde", "Spoons", "Idle Eyes", "The Kings"], "Platinum Blonde", "Hard"),
+    makeQuestion("music_5353", "Which group recorded 'Somebody Somewhere'?", ["Platinum Blonde", "Spoons", "Idle Eyes", "The Kings"], "Platinum Blonde", "Hard"),
+    makeQuestion("music_5354", "Which artist recorded 'Let Your Backbone Slide'?", ["Maestro Fresh-Wes", "Kool Moe Dee", "Tone Loc", "Young MC"], "Maestro Fresh-Wes", "Hard"),
+    makeQuestion("music_5355", "Which artist recorded 'Rumours of Glory'?", ["Bruce Cockburn", "Tom Cochrane", "Kim Mitchell", "Gino Vannelli"], "Bruce Cockburn", "Hard"),
+    makeQuestion("music_5356", "Which group recorded 'Good Life'?", ["Inner City", "S'Express", "Bomb the Bass", "Coldcut"], "Inner City", "Easy"),
+    makeQuestion("music_5357", "Which group recorded 'Big Fun'?", ["Inner City", "S'Express", "Bomb the Bass", "Coldcut"], "Inner City", "Easy"),
+    makeQuestion("music_5358", "Which group recorded 'Ain't Nobody Better'?", ["Inner City", "S'Express", "Bomb the Bass", "Coldcut"], "Inner City", "Hard"),
+    makeQuestion("music_5359", "Which artist recorded 'Promised Land'?", ["Joe Smooth", "Lil Louis", "Simon Harris", "Yazz"], "Joe Smooth", "Hard"),
+    makeQuestion("music_5360", "Which group recorded 'Can You Party'?", ["Royal House", "Inner City", "S'Express", "Bomb the Bass"], "Royal House", "Hard"),
+    makeQuestion("music_5361", "Which artist recorded 'Strings of Life'?", ["Rhythim Is Rhythim", "Joe Smooth", "Lil Louis", "Simon Harris"], "Rhythim Is Rhythim", "Hard"),
+    makeQuestion("music_5362", "Which artist recorded 'French Kiss'?", ["Lil Louis", "Joe Smooth", "Simon Harris", "Yazz"], "Lil Louis", "Medium"),
+    makeQuestion("music_5363", "Which artists recorded 'People Hold On'?", ["Coldcut featuring Lisa Stansfield", "S'Express featuring Yazz", "Bomb the Bass featuring Neneh Cherry", "Inner City featuring Lisa Stansfield"], "Coldcut featuring Lisa Stansfield", "Hard"),
+    makeQuestion("music_5364", "Which group recorded 'Hey Music Lover'?", ["S'Express", "Bomb the Bass", "Coldcut", "Inner City"], "S'Express", "Hard"),
+    makeQuestion("music_5365", "Which group recorded 'Theme from S-Express'?", ["S'Express", "Bomb the Bass", "Coldcut", "Inner City"], "S'Express", "Medium"),
+    makeQuestion("music_5366", "Which group recorded 'The Only Way Is Up'?", ["Yazz and the Plastic Population", "S'Express", "Bomb the Bass", "Coldcut"], "Yazz and the Plastic Population", "Easy"),
 ];
 
 module.exports = quizPack72;
