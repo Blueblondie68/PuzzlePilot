@@ -1,704 +1,284 @@
-const quizPack73 = [
-    {
-        id: "music_5367",
-        category: "Music",
-        question: "Which artist recorded 'Stand Up for Your Love Rights'?",
-        answers: ["Yazz", "Sinitta", "Hazell Dean", "Princess"],
-        correctAnswer: "Yazz"
-    },
-    {
-        id: "music_5368",
-        category: "Music",
-        question: "Which group recorded 'Beat Dis'?",
-        answers: ["Bomb the Bass", "S'Express", "Coldcut", "Inner City"],
-        correctAnswer: "Bomb the Bass"
-    },
-    {
-        id: "music_5369",
-        category: "Music",
-        question: "Which group recorded 'Don't Make Me Wait'?",
-        answers: ["Bomb the Bass", "S'Express", "Coldcut", "Inner City"],
-        correctAnswer: "Bomb the Bass"
-    },
-    {
-        id: "music_5370",
-        category: "Music",
-        question: "Which artists recorded 'Doctorin' the House'?",
-        answers: ["Coldcut featuring Yazz and the Plastic Population", "Bomb the Bass featuring Yazz", "S'Express featuring Yazz", "Inner City featuring Yazz"],
-        correctAnswer: "Coldcut featuring Yazz and the Plastic Population"
-    },
-    {
-        id: "music_5371",
-        category: "Music",
-        question: "Which artist recorded 'Bass (How Low Can You Go)'?",
-        answers: ["Simon Harris", "Joe Smooth", "Lil Louis", "Yazz"],
-        correctAnswer: "Simon Harris"
-    },
-    {
-        id: "music_5372",
-        category: "Music",
-        question: "Which group recorded 'Jack to the Sound of the Underground'?",
-        answers: ["Hithouse", "Royal House", "Inner City", "S'Express"],
-        correctAnswer: "Hithouse"
-    },
-    {
-        id: "music_5373",
-        category: "Music",
-        question: "Which group recorded 'I'd Rather Jack'?",
-        answers: ["The Reynolds Girls", "Mel and Kim", "Bananarama", "The Belle Stars"],
-        correctAnswer: "The Reynolds Girls"
-    },
-    {
-        id: "music_5374",
-        category: "Music",
-        question: "Which duo recorded 'Beethoven (I Love to Listen To)'?",
-        answers: ["Eurythmics", "Erasure", "Yazoo", "Soft Cell"],
-        correctAnswer: "Eurythmics"
-    },
-    {
-        id: "music_5375",
-        category: "Music",
-        question: "Which group recorded 'Torture'?",
-        answers: ["The Jacksons", "Kool & the Gang", "Earth, Wind & Fire", "The Commodores"],
-        correctAnswer: "The Jacksons"
-    },
-    {
-        id: "music_5376",
-        category: "Music",
-        question: "Which group recorded 'Body'?",
-        answers: ["The Jacksons", "Kool & the Gang", "Earth, Wind & Fire", "The Commodores"],
-        correctAnswer: "The Jacksons"
-    },
-    {
-        id: "music_5377",
-        category: "Music",
-        question: "Which group recorded 'Nothin' (That Compares 2 U)'?",
-        answers: ["The Jacksons", "Kool & the Gang", "Earth, Wind & Fire", "The Commodores"],
-        correctAnswer: "The Jacksons"
-    },
-    {
-        id: "music_5378",
-        category: "Music",
-        question: "Which group recorded 'One More Chance'?",
-        answers: ["The Jacksons", "Kool & the Gang", "Earth, Wind & Fire", "The Commodores"],
-        correctAnswer: "The Jacksons"
-    },
-    {
-        id: "music_5379",
-        category: "Music",
-        question: "Which group recorded 'State of Shock'?",
-        answers: ["The Jacksons", "Kool & the Gang", "Earth, Wind & Fire", "The Commodores"],
-        correctAnswer: "The Jacksons"
-    },
-    {
-        id: "music_5380",
-        category: "Music",
-        question: "Which group recorded 'Victory'?",
-        answers: ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5381",
-        category: "Music",
-        question: "Which group recorded 'Cherish'?",
-        answers: ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5382",
-        category: "Music",
-        question: "Which group recorded 'Holiday'?",
-        answers: ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5383",
-        category: "Music",
-        question: "Which group recorded 'Big Fun'?",
-        answers: ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5384",
-        category: "Music",
-        question: "Which group recorded 'Tonight'?",
-        answers: ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5385",
-        category: "Music",
-        question: "Which group recorded 'Emergency'?",
-        answers: ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5386",
-        category: "Music",
-        question: "Which group recorded 'Love Festival'?",
-        answers: ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"],
-        correctAnswer: "Kool & the Gang"
-    },
-    {
-        id: "music_5387",
-        category: "Music",
-        question: "Which group recorded 'I Know What I Like'?",
-        answers: ["Huey Lewis and the News", "The J. Geils Band", "Loverboy", "Night Ranger"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_5388",
-        category: "Music",
-        question: "Which group recorded 'Doin' It (All for My Baby)'?",
-        answers: ["Huey Lewis and the News", "The J. Geils Band", "Loverboy", "Night Ranger"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_5389",
-        category: "Music",
-        question: "Which group recorded 'Back in Time'?",
-        answers: ["Huey Lewis and the News", "The J. Geils Band", "Loverboy", "Night Ranger"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_5390",
-        category: "Music",
-        question: "Which group recorded 'Workin' for a Livin''?",
-        answers: ["Huey Lewis and the News", "The J. Geils Band", "Loverboy", "Night Ranger"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_5391",
-        category: "Music",
-        question: "Which group recorded 'Trouble in Paradise'?",
-        answers: ["Huey Lewis and the News", "The J. Geils Band", "Loverboy", "Night Ranger"],
-        correctAnswer: "Huey Lewis and the News"
-    },
-    {
-        id: "music_5392",
-        category: "Music",
-        question: "Which artist recorded 'Heart Hotels'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5393",
-        category: "Music",
-        question: "Which artist recorded 'Same Old Lang Syne'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5394",
-        category: "Music",
-        question: "Which artist recorded 'Hard to Say'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5395",
-        category: "Music",
-        question: "Which artist recorded 'Run for the Roses'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5396",
-        category: "Music",
-        question: "Which artist recorded 'Make Love Stay'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5397",
-        category: "Music",
-        question: "Which artist recorded 'The Language of Love'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5398",
-        category: "Music",
-        question: "Which artist recorded 'Leader of the Band'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5399",
-        category: "Music",
-        question: "Which artist recorded 'Missing You'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5400",
-        category: "Music",
-        question: "Which artist recorded 'Believe in Me'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5401",
-        category: "Music",
-        question: "Which artist recorded 'Lonely in Love'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5402",
-        category: "Music",
-        question: "Which artist recorded 'Seeing You Again'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5403",
-        category: "Music",
-        question: "Which artist recorded 'The Wild Places'?",
-        answers: ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"],
-        correctAnswer: "Dan Fogelberg"
-    },
-    {
-        id: "music_5404",
-        category: "Music",
-        question: "Which group recorded 'Sweetheart'?",
-        answers: ["Frankie and the Knockouts", "The J. Geils Band", "Loverboy", "Night Ranger"],
-        correctAnswer: "Frankie and the Knockouts"
-    },
-    {
-        id: "music_5405",
-        category: "Music",
-        question: "Which group recorded 'Without You (Not Another Lonely Night)'?",
-        answers: ["Frankie and the Knockouts", "The J. Geils Band", "Loverboy", "Night Ranger"],
-        correctAnswer: "Frankie and the Knockouts"
-    },
-    {
-        id: "music_5406",
-        category: "Music",
-        question: "Which group recorded 'You're My Girl'?",
-        answers: ["Frankie and the Knockouts", "The J. Geils Band", "Loverboy", "Night Ranger"],
-        correctAnswer: "Frankie and the Knockouts"
-    },
-    {
-        id: "music_5407",
-        category: "Music",
-        question: "Which group recorded 'Come Back'?",
-        answers: ["The J. Geils Band", "Frankie and the Knockouts", "Loverboy", "Night Ranger"],
-        correctAnswer: "The J. Geils Band"
-    },
-    {
-        id: "music_5408",
-        category: "Music",
-        question: "Which group recorded 'Love Stinks'?",
-        answers: ["The J. Geils Band", "Frankie and the Knockouts", "Loverboy", "Night Ranger"],
-        correctAnswer: "The J. Geils Band"
-    },
-    {
-        id: "music_5409",
-        category: "Music",
-        question: "Which group recorded 'Night Time'?",
-        answers: ["The J. Geils Band", "Frankie and the Knockouts", "Loverboy", "Night Ranger"],
-        correctAnswer: "The J. Geils Band"
-    },
-    {
-        id: "music_5410",
-        category: "Music",
-        question: "Which group recorded 'Flamethrower'?",
-        answers: ["The J. Geils Band", "Frankie and the Knockouts", "Loverboy", "Night Ranger"],
-        correctAnswer: "The J. Geils Band"
-    },
-    {
-        id: "music_5411",
-        category: "Music",
-        question: "Which group recorded 'Angel in Blue'?",
-        answers: ["The J. Geils Band", "Frankie and the Knockouts", "Loverboy", "Night Ranger"],
-        correctAnswer: "The J. Geils Band"
-    },
-    {
-        id: "music_5412",
-        category: "Music",
-        question: "Which group recorded 'I Do'?",
-        answers: ["The J. Geils Band", "Frankie and the Knockouts", "Loverboy", "Night Ranger"],
-        correctAnswer: "The J. Geils Band"
-    },
-    {
-        id: "music_5413",
-        category: "Music",
-        question: "Which group recorded 'Concealed Weapons'?",
-        answers: ["The J. Geils Band", "Frankie and the Knockouts", "Loverboy", "Night Ranger"],
-        correctAnswer: "The J. Geils Band"
-    },
-    {
-        id: "music_5414",
-        category: "Music",
-        question: "Which artist recorded 'Love's Been a Little Bit Hard on Me'?",
-        answers: ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"],
-        correctAnswer: "Juice Newton"
-    },
-    {
-        id: "music_5415",
-        category: "Music",
-        question: "Which artist recorded 'Break It to Me Gently'?",
-        answers: ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"],
-        correctAnswer: "Juice Newton"
-    },
-    {
-        id: "music_5416",
-        category: "Music",
-        question: "Which artist recorded 'Heart of the Night'?",
-        answers: ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"],
-        correctAnswer: "Juice Newton"
-    },
-    {
-        id: "music_5417",
-        category: "Music",
-        question: "Which artist recorded 'Tell Her No'?",
-        answers: ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"],
-        correctAnswer: "Juice Newton"
-    },
-    {
-        id: "music_5418",
-        category: "Music",
-        question: "Which artist recorded 'Old Flame'?",
-        answers: ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"],
-        correctAnswer: "Juice Newton"
-    },
-    {
-        id: "music_5419",
-        category: "Music",
-        question: "Which artist recorded 'You Make Me Want to Make You Mine'?",
-        answers: ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"],
-        correctAnswer: "Juice Newton"
-    },
-    {
-        id: "music_5420",
-        category: "Music",
-        question: "Which artist recorded 'Cheap Love'?",
-        answers: ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"],
-        correctAnswer: "Juice Newton"
-    },
-    {
-        id: "music_5421",
-        category: "Music",
-        question: "Which artist recorded 'What Can I Do with My Heart'?",
-        answers: ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"],
-        correctAnswer: "Juice Newton"
-    },
-    {
-        id: "music_5422",
-        category: "Music",
-        question: "Which artist recorded 'First Time Caller'?",
-        answers: ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"],
-        correctAnswer: "Juice Newton"
-    },
-    {
-        id: "music_5423",
-        category: "Music",
-        question: "Which artist recorded 'Emotion'?",
-        answers: ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Barbra Streisand"
-    },
-    {
-        id: "music_5424",
-        category: "Music",
-        question: "Which artists recorded 'Make No Mistake, He's Mine'?",
-        answers: ["Barbra Streisand and Kim Carnes", "Barbra Streisand and Barry Gibb", "Dionne Warwick and Luther Vandross", "Kenny Rogers and Kim Carnes"],
-        correctAnswer: "Barbra Streisand and Kim Carnes"
-    },
-    {
-        id: "music_5425",
-        category: "Music",
-        question: "Which artist recorded 'Left in the Dark'?",
-        answers: ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Barbra Streisand"
-    },
-    {
-        id: "music_5426",
-        category: "Music",
-        question: "Which artists recorded 'Till I Loved You'?",
-        answers: ["Barbra Streisand and Don Johnson", "Barbra Streisand and Barry Gibb", "Dionne Warwick and Luther Vandross", "Kenny Rogers and Kim Carnes"],
-        correctAnswer: "Barbra Streisand and Don Johnson"
-    },
-    {
-        id: "music_5427",
-        category: "Music",
-        question: "Which artist recorded 'All I Ask of You'?",
-        answers: ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Barbra Streisand"
-    },
-    {
-        id: "music_5428",
-        category: "Music",
-        question: "Which artist recorded 'We're Not Makin' Love Anymore'?",
-        answers: ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Barbra Streisand"
-    },
-    {
-        id: "music_5429",
-        category: "Music",
-        question: "Which artist recorded 'Someone That I Used to Love'?",
-        answers: ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Barbra Streisand"
-    },
-    {
-        id: "music_5430",
-        category: "Music",
-        question: "Which artist recorded 'Memory'?",
-        answers: ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Barbra Streisand"
-    },
-    {
-        id: "music_5431",
-        category: "Music",
-        question: "Which artist recorded 'Comin' In and Out of Your Life'?",
-        answers: ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Barbra Streisand"
-    },
-    {
-        id: "music_5432",
-        category: "Music",
-        question: "Which artists recorded 'Guilty'?",
-        answers: ["Barbra Streisand and Barry Gibb", "Barbra Streisand and Kim Carnes", "Dionne Warwick and Luther Vandross", "Kenny Rogers and Kim Carnes"],
-        correctAnswer: "Barbra Streisand and Barry Gibb"
-    },
-    {
-        id: "music_5433",
-        category: "Music",
-        question: "Which artists recorded 'What Kind of Fool'?",
-        answers: ["Barbra Streisand and Barry Gibb", "Barbra Streisand and Kim Carnes", "Dionne Warwick and Luther Vandross", "Kenny Rogers and Kim Carnes"],
-        correctAnswer: "Barbra Streisand and Barry Gibb"
-    },
-    {
-        id: "music_5434",
-        category: "Music",
-        question: "Which artist recorded 'Promises'?",
-        answers: ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Barbra Streisand"
-    },
-    {
-        id: "music_5435",
-        category: "Music",
-        question: "Which artist recorded 'Woman in Love'?",
-        answers: ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Barbra Streisand"
-    },
-    {
-        id: "music_5436",
-        category: "Music",
-        question: "Which artist recorded 'Heartbreaker'?",
-        answers: ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Dionne Warwick"
-    },
-    {
-        id: "music_5437",
-        category: "Music",
-        question: "Which artist recorded 'All the Love in the World'?",
-        answers: ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Dionne Warwick"
-    },
-    {
-        id: "music_5438",
-        category: "Music",
-        question: "Which artist recorded 'Take the Short Way Home'?",
-        answers: ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Dionne Warwick"
-    },
-    {
-        id: "music_5439",
-        category: "Music",
-        question: "Which artist recorded 'That's What Friends Are For'?",
-        answers: ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Dionne Warwick"
-    },
-    {
-        id: "music_5440",
-        category: "Music",
-        question: "Which artist recorded 'Whisper in the Dark'?",
-        answers: ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Dionne Warwick"
-    },
-    {
-        id: "music_5441",
-        category: "Music",
-        question: "Which artists recorded 'Reservations for Two'?",
-        answers: ["Dionne Warwick and Kashif", "Dionne Warwick and Luther Vandross", "Dionne Warwick and Johnny Mathis", "Dionne Warwick and Glenn Jones"],
-        correctAnswer: "Dionne Warwick and Kashif"
-    },
-    {
-        id: "music_5442",
-        category: "Music",
-        question: "Which artists recorded 'Finder of Lost Loves'?",
-        answers: ["Dionne Warwick and Glenn Jones", "Dionne Warwick and Kashif", "Dionne Warwick and Luther Vandross", "Dionne Warwick and Johnny Mathis"],
-        correctAnswer: "Dionne Warwick and Glenn Jones"
-    },
-    {
-        id: "music_5443",
-        category: "Music",
-        question: "Which artist recorded 'Some Changes Are for Good'?",
-        answers: ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Dionne Warwick"
-    },
-    {
-        id: "music_5444",
-        category: "Music",
-        question: "Which artist recorded 'No Night So Long'?",
-        answers: ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Dionne Warwick"
-    },
-    {
-        id: "music_5445",
-        category: "Music",
-        question: "Which artists recorded 'How Many Times Can We Say Goodbye'?",
-        answers: ["Dionne Warwick and Luther Vandross", "Dionne Warwick and Kashif", "Dionne Warwick and Johnny Mathis", "Dionne Warwick and Glenn Jones"],
-        correctAnswer: "Dionne Warwick and Luther Vandross"
-    },
-    {
-        id: "music_5446",
-        category: "Music",
-        question: "Which artist recorded 'Got a Date'?",
-        answers: ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"],
-        correctAnswer: "Dionne Warwick"
-    },
-    {
-        id: "music_5447",
-        category: "Music",
-        question: "Which artists recorded 'Friends in Love'?",
-        answers: ["Dionne Warwick and Johnny Mathis", "Dionne Warwick and Kashif", "Dionne Warwick and Luther Vandross", "Dionne Warwick and Glenn Jones"],
-        correctAnswer: "Dionne Warwick and Johnny Mathis"
-    },
-    {
-        id: "music_5448",
-        category: "Music",
-        question: "Which artist recorded 'Love Will Turn You Around'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5449",
-        category: "Music",
-        question: "Which artist recorded 'This Woman'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5450",
-        category: "Music",
-        question: "Which artists recorded 'What About Me?'?",
-        answers: ["Kenny Rogers, Kim Carnes and James Ingram", "Kenny Rogers, Dolly Parton and Lionel Richie", "Kenny Rogers, Sheena Easton and Barry Gibb", "Kenny Rogers, Dottie West and James Ingram"],
-        correctAnswer: "Kenny Rogers, Kim Carnes and James Ingram"
-    },
-    {
-        id: "music_5451",
-        category: "Music",
-        question: "Which artist recorded 'Morning Desire'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5452",
-        category: "Music",
-        question: "Which artist recorded 'Twenty Years Ago'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5453",
-        category: "Music",
-        question: "Which artist recorded 'The Factory'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5454",
-        category: "Music",
-        question: "Which artist recorded 'Crazy'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5455",
-        category: "Music",
-        question: "Which artists recorded 'Real Love'?",
-        answers: ["Kenny Rogers and Dolly Parton", "Kenny Rogers and Dottie West", "Kenny Rogers and Kim Carnes", "Kenny Rogers and Sheena Easton"],
-        correctAnswer: "Kenny Rogers and Dolly Parton"
-    },
-    {
-        id: "music_5456",
-        category: "Music",
-        question: "Which artist recorded 'Buried Treasure'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5457",
-        category: "Music",
-        question: "Which artist recorded 'I Don't Need You'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5458",
-        category: "Music",
-        question: "Which artist recorded 'Through the Years'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5459",
-        category: "Music",
-        question: "Which artist recorded 'Share Your Love with Me'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5460",
-        category: "Music",
-        question: "Which artist recorded 'Scarlet Fever'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5461",
-        category: "Music",
-        question: "Which artists recorded 'We've Got Tonight'?",
-        answers: ["Kenny Rogers and Sheena Easton", "Kenny Rogers and Dolly Parton", "Kenny Rogers and Dottie West", "Kenny Rogers and Kim Carnes"],
-        correctAnswer: "Kenny Rogers and Sheena Easton"
-    },
-    {
-        id: "music_5462",
-        category: "Music",
-        question: "Which artist recorded 'Eyes That See in the Dark'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5463",
-        category: "Music",
-        question: "Which artists recorded 'Islands in the Stream'?",
-        answers: ["Kenny Rogers and Dolly Parton", "Kenny Rogers and Dottie West", "Kenny Rogers and Kim Carnes", "Kenny Rogers and Sheena Easton"],
-        correctAnswer: "Kenny Rogers and Dolly Parton"
-    },
-    {
-        id: "music_5464",
-        category: "Music",
-        question: "Which artist recorded 'Lady'?",
-        answers: ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"],
-        correctAnswer: "Kenny Rogers"
-    },
-    {
-        id: "music_5465",
-        category: "Music",
-        question: "Which artists recorded 'Don't Fall in Love with a Dreamer'?",
-        answers: ["Kenny Rogers and Kim Carnes", "Kenny Rogers and Dolly Parton", "Kenny Rogers and Dottie West", "Kenny Rogers and Sheena Easton"],
-        correctAnswer: "Kenny Rogers and Kim Carnes"
-    },
-    {
-        id: "music_5466",
-        category: "Music",
-        question: "Which artist recorded 'Lesson in Leavin''?",
-        answers: ["Dottie West", "Juice Newton", "Kim Carnes", "Sheena Easton"],
-        correctAnswer: "Dottie West"
+// quiz_pack73.js
+// PuzzlePilot Bigggggg Quiz - Music Pack 73
+// 100 audited questions: music_5367 through music_5466.
+// Complete tags assembled from artist and recording metadata.
+
+const artistTags = {
+    "Yazz": ["british", "dance-pop", "house music", "female singers", "solo artists", "yasmin evans"],
+    "Bomb the Bass": ["british", "acid house", "hip hop", "dance music", "music projects", "tim simenon", "sampling"],
+    "Coldcut featuring Yazz and the Plastic Population": ["british", "house music", "hip house", "dance music", "collaborations", "coldcut", "yazz", "plastic population", "matt black", "jonathan more"],
+    "Simon Harris": ["british", "hip hop", "house music", "sample based music", "music producers", "djs"],
+    "Hithouse": ["dutch", "acid house", "house music", "music projects", "peter slaghuis"],
+    "The Reynolds Girls": ["british", "dance-pop", "synth-pop", "female duos", "linda reynolds", "aisling reynolds", "stock aitken waterman"],
+    "Eurythmics": ["british", "synth-pop", "new wave", "duos", "annie lennox", "dave stewart"],
+    "The Jacksons": ["american", "pop", "r&b", "soul", "funk", "bands", "jackson family", "jermaine jackson", "jackie jackson", "tito jackson", "marlon jackson"],
+    "Kool & the Gang": ["american", "funk", "r&b", "soul", "bands", "james jt taylor", "robert kool bell", "ronald bell"],
+    "Huey Lewis and the News": ["american", "pop rock", "rock", "bands", "huey lewis", "sean hopper", "johnny colla", "san francisco"],
+    "Dan Fogelberg": ["american", "soft rock", "folk rock", "singer-songwriters", "male singers", "solo artists"],
+    "Franke and the Knockouts": ["american", "pop rock", "soft rock", "bands", "franke previte", "new jersey", "steve verroca"],
+    "The J. Geils Band": ["american", "rock", "blues rock", "bands", "peter wolf", "seth justman", "j geils", "boston"],
+    "Juice Newton": ["american", "country pop", "country rock", "female singers", "solo artists", "richard landis"],
+    "Barbra Streisand": ["american", "pop", "adult contemporary", "female singers", "solo artists", "broadway", "film and stage music"],
+    "Barbra Streisand and Kim Carnes": ["american", "pop", "adult contemporary", "female singers", "duets", "barbra streisand", "kim carnes"],
+    "Barbra Streisand and Don Johnson": ["american", "pop", "adult contemporary", "duets", "barbra streisand", "don johnson"],
+    "Barbra Streisand and Barry Gibb": ["american", "british", "pop", "soft rock", "duets", "barbra streisand", "barry gibb", "bee gees"],
+    "Dionne Warwick": ["american", "pop", "soul", "r&b", "female singers", "solo artists", "arista records", "burt bacharach"],
+    "Dionne Warwick and Friends": ["american", "british", "pop", "soul", "r&b", "charity singles", "collaborations", "dionne warwick", "elton john", "gladys knight", "stevie wonder"],
+    "Dionne Warwick and Kashif": ["american", "r&b", "soul", "duets", "dionne warwick", "kashif"],
+    "Dionne Warwick and Glenn Jones": ["american", "r&b", "soul", "duets", "dionne warwick", "glenn jones"],
+    "Dionne Warwick and Luther Vandross": ["american", "r&b", "soul", "duets", "dionne warwick", "luther vandross"],
+    "Dionne Warwick and Johnny Mathis": ["american", "pop", "soul", "adult contemporary", "duets", "dionne warwick", "johnny mathis"],
+    "Kenny Rogers": ["american", "country pop", "country music", "male singers", "solo artists", "adult contemporary"],
+    "Kenny Rogers, Kim Carnes and James Ingram": ["american", "pop", "adult contemporary", "vocal trios", "collaborations", "kenny rogers", "kim carnes", "james ingram"],
+    "Kenny Rogers and Dolly Parton": ["american", "country pop", "country music", "duets", "kenny rogers", "dolly parton"],
+    "Kenny Rogers and Sheena Easton": ["american", "scottish", "country pop", "adult contemporary", "duets", "kenny rogers", "sheena easton"],
+    "Kenny Rogers and Kim Carnes": ["american", "country pop", "soft rock", "duets", "kenny rogers", "kim carnes"],
+    "Dottie West": ["american", "country music", "country pop", "female singers", "solo artists"]
+};
+
+const recordingTags = {
+    "music_5367": [1988, "wanted album", "uk singles chart"],
+    "music_5368": [1988, "into the dragon album", "breakbeat", "sampling"],
+    "music_5369": [1988, "into the dragon album", "lorraine featured vocals"],
+    "music_5370": [1988, "whats that noise album", "yazz guest vocals"],
+    "music_5371": [1988, "bass how low can you go single", "sampling"],
+    "music_5372": [1988, "jack to the sound of the underground single", "acid house"],
+    "music_5373": [1989, "id rather jack single", "stock aitken waterman production"],
+    "music_5374": [1987, "savage album", "annie lennox vocals"],
+    "music_5375": [1984, "victory album", "jermaine jackson and michael jackson lead vocals"],
+    "music_5376": [1984, "victory album", "marlon jackson lead vocals"],
+    "music_5377": [1989, "2300 jackson street album", "jermaine jackson and randy jackson lead vocals", "la reid and babyface songwriting"],
+    "music_5378": [1984, "victory album", "1984 album track", "randy jackson songwriting"],
+    "music_5379": [1984, "victory album", "mick jagger guest vocals", "duets"],
+    "music_5380": [1986, "forever album", "jt taylor vocals"],
+    "music_5381": [1984, "emergency album", "1985 single", "jt taylor vocals", "ballads"],
+    "music_5382": [1986, "forever album", "1987 single", "jt taylor vocals"],
+    "music_5383": [1982, "as one album", "eumir deodato production"],
+    "music_5384": [1983, "in the heart album", "1984 single", "jt taylor vocals"],
+    "music_5385": [1984, "emergency album", "1985 single", "album title track"],
+    "music_5386": [1980, "celebrate album", "album track", "eumir deodato production"],
+    "music_5387": [1986, "fore album", "1987 single", "huey lewis vocals"],
+    "music_5388": [1986, "fore album", "1987 single", "huey lewis vocals"],
+    "music_5389": [1985, "back to the future film soundtrack", "film songs"],
+    "music_5390": [1982, "picture this album", "1982 single"],
+    "music_5391": [1980, "huey lewis and the news debut album", "album track"],
+    "music_5392": [1979, "phoenix album", "1980 single"],
+    "music_5393": [1980, "the innocent age album", "christmas eve", "christmas songs", "1980 single"],
+    "music_5394": [1981, "the innocent age album", "1981 single"],
+    "music_5395": [1981, "the innocent age album", "1982 single", "kentucky derby", "horse racing songs"],
+    "music_5396": [1982, "greatest hits album", "1983 single", "new studio recording"],
+    "music_5397": [1984, "windows and walls album", "1984 single"],
+    "music_5398": [1981, "the innocent age album", "father tribute", "1981 single"],
+    "music_5399": [1982, "greatest hits album", "new studio recording", "1982 single"],
+    "music_5400": [1984, "windows and walls album", "1984 single"],
+    "music_5401": [1987, "exiles album", "1987 single"],
+    "music_5402": [1987, "exiles album", "1987 single"],
+    "music_5403": [1990, "the wild places album", "environmental themes"],
+    "music_5404": [1981, "franke and the knockouts album", "1981 debut single"],
+    "music_5405": [1982, "below the belt album", "1982 single"],
+    "music_5406": [1981, "franke and the knockouts album", "1981 single"],
+    "music_5407": [1980, "love stinks album", "1980 single"],
+    "music_5408": [1980, "love stinks album", "1980 single"],
+    "music_5409": [1980, "love stinks album", "night time cover version"],
+    "music_5410": [1981, "freeze frame album", "1982 dance chart success"],
+    "music_5411": [1981, "freeze frame album", "1982 single"],
+    "music_5412": [1982, "showtime live album", "1982 live hit", "1977 studio recording"],
+    "music_5413": [1984, "youre gettin even while im gettin odd album", "1984 single"],
+    "music_5414": [1982, "quiet lies album", "1982 single"],
+    "music_5415": [1982, "quiet lies album", "1982 single", "brenda lee cover version"],
+    "music_5416": [1982, "quiet lies album", "1982 single"],
+    "music_5417": [1983, "dirty looks album", "zombies cover version"],
+    "music_5418": [1985, "old flame album", "1985 single"],
+    "music_5419": [1985, "old flame album", "1985 single"],
+    "music_5420": [1985, "old flame album", "1986 single"],
+    "music_5421": [1985, "old flame album", "1986 single"],
+    "music_5422": [1987, "emotion album", "1987 single"],
+    "music_5423": [1984, "emotion album", "1984 single"],
+    "music_5424": [1984, "emotion album", "kim carnes duet"],
+    "music_5425": [1984, "emotion album", "jim steinman songwriter"],
+    "music_5426": [1988, "till i loved you album", "don johnson duet"],
+    "music_5427": [1988, "till i loved you album", "the phantom of the opera", "andrew lloyd webber"],
+    "music_5428": [1989, "a collection greatest hits and more album", "1989 single"],
+    "music_5429": [1980, "wet album", "1980 single"],
+    "music_5430": [1981, "memories album", "cats musical", "andrew lloyd webber"],
+    "music_5431": [1981, "memories album", "1981 single"],
+    "music_5432": [1980, "guilty album", "barry gibb songwriting"],
+    "music_5433": [1980, "guilty album", "barry gibb songwriting"],
+    "music_5434": [1980, "guilty album", "1980 single"],
+    "music_5435": [1980, "guilty album", "barry gibb songwriting", "1980 single"],
+    "music_5436": [1982, "heartbreaker album", "bee gees songwriting", "barry gibb"],
+    "music_5437": [1982, "heartbreaker album", "bee gees songwriting"],
+    "music_5438": [1982, "heartbreaker album", "bee gees songwriting"],
+    "music_5439": [1985, "friends album", "1985 charity single", "aids fundraising", "burt bacharach and carole bayer sager songwriting"],
+    "music_5440": [1985, "friends album", "1986 single"],
+    "music_5441": [1987, "reservations for two album", "kashif duet"],
+    "music_5442": [1985, "finder of lost loves album", "1985 duet"],
+    "music_5443": [1981, "hot live and otherwise album", "1981 single"],
+    "music_5444": [1980, "no night so long album", "1980 single"],
+    "music_5445": [1983, "how many times can we say goodbye album", "luther vandross duet"],
+    "music_5446": [1983, "how many times can we say goodbye album", "1983 single"],
+    "music_5447": [1982, "friends in love album", "johnny mathis duet"],
+    "music_5448": [1982, "love will turn you around album", "1982 single", "six pack film soundtrack"],
+    "music_5449": [1983, "eyes that see in the dark album", "1984 single", "barry gibb songwriting"],
+    "music_5450": [1984, "what about me album", "vocal trio", "1984 single"],
+    "music_5451": [1985, "the heart of the matter album", "1985 single"],
+    "music_5452": [1986, "they dont make them like they used to album", "1986 single"],
+    "music_5453": [1987, "i prefer the moonlight album", "1988 single"],
+    "music_5454": [1984, "what about me album", "1985 single"],
+    "music_5455": [1985, "real love album", "dolly parton duet", "1985 single"],
+    "music_5456": [1983, "eyes that see in the dark album", "1984 single", "bee gees songwriting"],
+    "music_5457": [1981, "share your love album", "1981 single", "lionel richie songwriting"],
+    "music_5458": [1981, "share your love album", "1982 single", "lionel richie production"],
+    "music_5459": [1981, "share your love album", "1981 single"],
+    "music_5460": [1983, "weve got tonight album", "1983 single"],
+    "music_5461": [1983, "weve got tonight album", "bob seger original song", "1983 single"],
+    "music_5462": [1983, "eyes that see in the dark album", "1983 title track", "bee gees songwriting"],
+    "music_5463": [1983, "eyes that see in the dark album", "bee gees songwriting", "dolly parton duet"],
+    "music_5464": [1980, "greatest hits album", "lionel richie songwriting", "1980 single"],
+    "music_5465": [1980, "gideon album", "kim carnes duet", "1980 single"],
+    "music_5466": [1979, "special delivery album", "1980 country single"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const detail = recordingTags[id];
+
+    if (!artist || !detail) {
+        throw new Error(`Missing metadata for ${id}`);
     }
+
+    const match = question.match(/'(.+)'/);
+    if (!match) {
+        throw new Error(`Missing song title for ${id}`);
+    }
+
+    const year = detail[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music",
+            "songs",
+            "recordings",
+            decade,
+            `${decade} music`,
+            `${year} releases`,
+            match[1].toLowerCase(),
+            correctAnswer.toLowerCase(),
+            ...artist,
+            ...detail.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
+const quizPack73 = [
+    makeQuestion("music_5367", "Which artist recorded 'Stand Up for Your Love Rights'?", ["Yazz", "Sinitta", "Hazell Dean", "Princess"], "Yazz", "Easy"),
+    makeQuestion("music_5368", "Which group recorded 'Beat Dis'?", ["Bomb the Bass", "S'Express", "Coldcut", "Inner City"], "Bomb the Bass", "Medium"),
+    makeQuestion("music_5369", "Which group recorded 'Don't Make Me Wait'?", ["Bomb the Bass", "S'Express", "Coldcut", "Inner City"], "Bomb the Bass", "Medium"),
+    makeQuestion("music_5370", "Which artists recorded 'Doctorin' the House'?", ["Coldcut featuring Yazz and the Plastic Population", "Bomb the Bass featuring Yazz", "S'Express featuring Yazz", "Inner City featuring Yazz"], "Coldcut featuring Yazz and the Plastic Population", "Medium"),
+    makeQuestion("music_5371", "Which artist recorded 'Bass (How Low Can You Go)'?", ["Simon Harris", "Joe Smooth", "Lil Louis", "Yazz"], "Simon Harris", "Hard"),
+    makeQuestion("music_5372", "Which group recorded 'Jack to the Sound of the Underground'?", ["Hithouse", "Royal House", "Inner City", "S'Express"], "Hithouse", "Medium"),
+    makeQuestion("music_5373", "Which group recorded 'I'd Rather Jack'?", ["The Reynolds Girls", "Mel and Kim", "Bananarama", "The Belle Stars"], "The Reynolds Girls", "Easy"),
+    makeQuestion("music_5374", "Which duo recorded 'Beethoven (I Love to Listen To)'?", ["Eurythmics", "Erasure", "Yazoo", "Soft Cell"], "Eurythmics", "Easy"),
+    makeQuestion("music_5375", "Which group recorded 'Torture'?", ["The Jacksons", "Kool & the Gang", "Earth, Wind & Fire", "The Commodores"], "The Jacksons", "Easy"),
+    makeQuestion("music_5376", "Which group recorded 'Body'?", ["The Jacksons", "Kool & the Gang", "Earth, Wind & Fire", "The Commodores"], "The Jacksons", "Medium"),
+    makeQuestion("music_5377", "Which group recorded 'Nothin' (That Compares 2 U)'?", ["The Jacksons", "Kool & the Gang", "Earth, Wind & Fire", "The Commodores"], "The Jacksons", "Hard"),
+    makeQuestion("music_5378", "Which group recorded 'One More Chance'?", ["The Jacksons", "Kool & the Gang", "Earth, Wind & Fire", "The Commodores"], "The Jacksons", "Hard"),
+    makeQuestion("music_5379", "Which group recorded 'State of Shock'?", ["The Jacksons", "Kool & the Gang", "Earth, Wind & Fire", "The Commodores"], "The Jacksons", "Easy"),
+    makeQuestion("music_5380", "Which group recorded 'Victory'?", ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_5381", "Which group recorded 'Cherish'?", ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"], "Kool & the Gang", "Easy"),
+    makeQuestion("music_5382", "Which group recorded 'Holiday'?", ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"], "Kool & the Gang", "Medium"),
+    makeQuestion("music_5383", "Which group recorded 'Big Fun'?", ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"], "Kool & the Gang", "Medium"),
+    makeQuestion("music_5384", "Which group recorded 'Tonight'?", ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"], "Kool & the Gang", "Medium"),
+    makeQuestion("music_5385", "Which group recorded 'Emergency'?", ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"], "Kool & the Gang", "Medium"),
+    makeQuestion("music_5386", "Which group recorded 'Love Festival'?", ["Kool & the Gang", "The Jacksons", "The Commodores", "Earth, Wind & Fire"], "Kool & the Gang", "Hard"),
+    makeQuestion("music_5387", "Which group recorded 'I Know What I Like'?", ["Huey Lewis and the News", "The J. Geils Band", "Loverboy", "Night Ranger"], "Huey Lewis and the News", "Medium"),
+    makeQuestion("music_5388", "Which group recorded 'Doin' It (All for My Baby)'?", ["Huey Lewis and the News", "The J. Geils Band", "Loverboy", "Night Ranger"], "Huey Lewis and the News", "Easy"),
+    makeQuestion("music_5389", "Which group recorded 'Back in Time'?", ["Huey Lewis and the News", "The J. Geils Band", "Loverboy", "Night Ranger"], "Huey Lewis and the News", "Medium"),
+    makeQuestion("music_5390", "Which group recorded 'Workin' for a Livin''?", ["Huey Lewis and the News", "The J. Geils Band", "Loverboy", "Night Ranger"], "Huey Lewis and the News", "Medium"),
+    makeQuestion("music_5391", "Which group recorded 'Trouble in Paradise'?", ["Huey Lewis and the News", "The J. Geils Band", "Loverboy", "Night Ranger"], "Huey Lewis and the News", "Hard"),
+    makeQuestion("music_5392", "Which artist recorded 'Heart Hotels'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Medium"),
+    makeQuestion("music_5393", "Which artist recorded 'Same Old Lang Syne'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Easy"),
+    makeQuestion("music_5394", "Which artist recorded 'Hard to Say'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Medium"),
+    makeQuestion("music_5395", "Which artist recorded 'Run for the Roses'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Medium"),
+    makeQuestion("music_5396", "Which artist recorded 'Make Love Stay'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Medium"),
+    makeQuestion("music_5397", "Which artist recorded 'The Language of Love'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Medium"),
+    makeQuestion("music_5398", "Which artist recorded 'Leader of the Band'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Easy"),
+    makeQuestion("music_5399", "Which artist recorded 'Missing You'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Medium"),
+    makeQuestion("music_5400", "Which artist recorded 'Believe in Me'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Medium"),
+    makeQuestion("music_5401", "Which artist recorded 'Lonely in Love'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Hard"),
+    makeQuestion("music_5402", "Which artist recorded 'Seeing You Again'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Hard"),
+    makeQuestion("music_5403", "Which artist recorded 'The Wild Places'?", ["Dan Fogelberg", "Kenny Loggins", "Christopher Cross", "Boz Scaggs"], "Dan Fogelberg", "Hard"),
+    makeQuestion("music_5404", "Which group recorded 'Sweetheart'?", ["Franke and the Knockouts", "The J. Geils Band", "Loverboy", "Night Ranger"], "Franke and the Knockouts", "Medium"),
+    makeQuestion("music_5405", "Which group recorded 'Without You (Not Another Lonely Night)'?", ["Franke and the Knockouts", "The J. Geils Band", "Loverboy", "Night Ranger"], "Franke and the Knockouts", "Hard"),
+    makeQuestion("music_5406", "Which group recorded 'You're My Girl'?", ["Franke and the Knockouts", "The J. Geils Band", "Loverboy", "Night Ranger"], "Franke and the Knockouts", "Hard"),
+    makeQuestion("music_5407", "Which group recorded 'Come Back'?", ["The J. Geils Band", "Franke and the Knockouts", "Loverboy", "Night Ranger"], "The J. Geils Band", "Medium"),
+    makeQuestion("music_5408", "Which group recorded 'Love Stinks'?", ["The J. Geils Band", "Franke and the Knockouts", "Loverboy", "Night Ranger"], "The J. Geils Band", "Easy"),
+    makeQuestion("music_5409", "Which group recorded 'Night Time'?", ["The J. Geils Band", "Franke and the Knockouts", "Loverboy", "Night Ranger"], "The J. Geils Band", "Hard"),
+    makeQuestion("music_5410", "Which group recorded 'Flamethrower'?", ["The J. Geils Band", "Franke and the Knockouts", "Loverboy", "Night Ranger"], "The J. Geils Band", "Hard"),
+    makeQuestion("music_5411", "Which group recorded 'Angel in Blue'?", ["The J. Geils Band", "Franke and the Knockouts", "Loverboy", "Night Ranger"], "The J. Geils Band", "Medium"),
+    makeQuestion("music_5412", "Which group recorded 'I Do'?", ["The J. Geils Band", "Franke and the Knockouts", "Loverboy", "Night Ranger"], "The J. Geils Band", "Hard"),
+    makeQuestion("music_5413", "Which group recorded 'Concealed Weapons'?", ["The J. Geils Band", "Franke and the Knockouts", "Loverboy", "Night Ranger"], "The J. Geils Band", "Hard"),
+    makeQuestion("music_5414", "Which artist recorded 'Love's Been a Little Bit Hard on Me'?", ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"], "Juice Newton", "Medium"),
+    makeQuestion("music_5415", "Which artist recorded 'Break It to Me Gently'?", ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"], "Juice Newton", "Easy"),
+    makeQuestion("music_5416", "Which artist recorded 'Heart of the Night'?", ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"], "Juice Newton", "Hard"),
+    makeQuestion("music_5417", "Which artist recorded 'Tell Her No'?", ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"], "Juice Newton", "Medium"),
+    makeQuestion("music_5418", "Which artist recorded 'Old Flame'?", ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"], "Juice Newton", "Hard"),
+    makeQuestion("music_5419", "Which artist recorded 'You Make Me Want to Make You Mine'?", ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"], "Juice Newton", "Medium"),
+    makeQuestion("music_5420", "Which artist recorded 'Cheap Love'?", ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"], "Juice Newton", "Hard"),
+    makeQuestion("music_5421", "Which artist recorded 'What Can I Do with My Heart'?", ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"], "Juice Newton", "Hard"),
+    makeQuestion("music_5422", "Which artist recorded 'First Time Caller'?", ["Juice Newton", "Kim Carnes", "Sheena Easton", "Dottie West"], "Juice Newton", "Hard"),
+    makeQuestion("music_5423", "Which artist recorded 'Emotion'?", ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"], "Barbra Streisand", "Medium"),
+    makeQuestion("music_5424", "Which artists recorded 'Make No Mistake, He's Mine'?", ["Barbra Streisand and Kim Carnes", "Barbra Streisand and Barry Gibb", "Dionne Warwick and Luther Vandross", "Kenny Rogers and Kim Carnes"], "Barbra Streisand and Kim Carnes", "Easy"),
+    makeQuestion("music_5425", "Which artist recorded 'Left in the Dark'?", ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"], "Barbra Streisand", "Medium"),
+    makeQuestion("music_5426", "Which artists recorded 'Till I Loved You'?", ["Barbra Streisand and Don Johnson", "Barbra Streisand and Barry Gibb", "Dionne Warwick and Luther Vandross", "Kenny Rogers and Kim Carnes"], "Barbra Streisand and Don Johnson", "Medium"),
+    makeQuestion("music_5427", "Which artist recorded 'All I Ask of You'?", ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"], "Barbra Streisand", "Easy"),
+    makeQuestion("music_5428", "Which artist recorded 'We're Not Makin' Love Anymore'?", ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"], "Barbra Streisand", "Medium"),
+    makeQuestion("music_5429", "Which artist recorded 'Someone That I Used to Love'?", ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"], "Barbra Streisand", "Hard"),
+    makeQuestion("music_5430", "Which artist recorded 'Memory'?", ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"], "Barbra Streisand", "Easy"),
+    makeQuestion("music_5431", "Which artist recorded 'Comin' In and Out of Your Life'?", ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"], "Barbra Streisand", "Medium"),
+    makeQuestion("music_5432", "Which artists recorded 'Guilty'?", ["Barbra Streisand and Barry Gibb", "Barbra Streisand and Kim Carnes", "Dionne Warwick and Luther Vandross", "Kenny Rogers and Kim Carnes"], "Barbra Streisand and Barry Gibb", "Easy"),
+    makeQuestion("music_5433", "Which artists recorded 'What Kind of Fool'?", ["Barbra Streisand and Barry Gibb", "Barbra Streisand and Kim Carnes", "Dionne Warwick and Luther Vandross", "Kenny Rogers and Kim Carnes"], "Barbra Streisand and Barry Gibb", "Medium"),
+    makeQuestion("music_5434", "Which artist recorded 'Promises'?", ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"], "Barbra Streisand", "Hard"),
+    makeQuestion("music_5435", "Which artist recorded 'Woman in Love'?", ["Barbra Streisand", "Dionne Warwick", "Diana Ross", "Sheena Easton"], "Barbra Streisand", "Easy"),
+    makeQuestion("music_5436", "Which artist recorded 'Heartbreaker'?", ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"], "Dionne Warwick", "Easy"),
+    makeQuestion("music_5437", "Which artist recorded 'All the Love in the World'?", ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"], "Dionne Warwick", "Medium"),
+    makeQuestion("music_5438", "Which artist recorded 'Take the Short Way Home'?", ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"], "Dionne Warwick", "Hard"),
+    makeQuestion("music_5439", "Which collaboration recorded 'That's What Friends Are For'?", ["Dionne Warwick and Friends", "Barbra Streisand", "Diana Ross", "Sheena Easton"], "Dionne Warwick and Friends", "Easy"),
+    makeQuestion("music_5440", "Which artist recorded 'Whisper in the Dark'?", ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"], "Dionne Warwick", "Medium"),
+    makeQuestion("music_5441", "Which artists recorded 'Reservations for Two'?", ["Dionne Warwick and Kashif", "Dionne Warwick and Luther Vandross", "Dionne Warwick and Johnny Mathis", "Dionne Warwick and Glenn Jones"], "Dionne Warwick and Kashif", "Hard"),
+    makeQuestion("music_5442", "Which artists recorded 'Finder of Lost Loves'?", ["Dionne Warwick and Glenn Jones", "Dionne Warwick and Kashif", "Dionne Warwick and Luther Vandross", "Dionne Warwick and Johnny Mathis"], "Dionne Warwick and Glenn Jones", "Hard"),
+    makeQuestion("music_5443", "Which artist recorded 'Some Changes Are for Good'?", ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"], "Dionne Warwick", "Hard"),
+    makeQuestion("music_5444", "Which artist recorded 'No Night So Long'?", ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"], "Dionne Warwick", "Medium"),
+    makeQuestion("music_5445", "Which artists recorded 'How Many Times Can We Say Goodbye'?", ["Dionne Warwick and Luther Vandross", "Dionne Warwick and Kashif", "Dionne Warwick and Johnny Mathis", "Dionne Warwick and Glenn Jones"], "Dionne Warwick and Luther Vandross", "Hard"),
+    makeQuestion("music_5446", "Which artist recorded 'Got a Date'?", ["Dionne Warwick", "Barbra Streisand", "Diana Ross", "Sheena Easton"], "Dionne Warwick", "Hard"),
+    makeQuestion("music_5447", "Which artists recorded 'Friends in Love'?", ["Dionne Warwick and Johnny Mathis", "Dionne Warwick and Kashif", "Dionne Warwick and Luther Vandross", "Dionne Warwick and Glenn Jones"], "Dionne Warwick and Johnny Mathis", "Hard"),
+    makeQuestion("music_5448", "Which artist recorded 'Love Will Turn You Around'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Medium"),
+    makeQuestion("music_5449", "Which artist recorded 'This Woman'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Medium"),
+    makeQuestion("music_5450", "Which artists recorded 'What About Me?'?", ["Kenny Rogers, Kim Carnes and James Ingram", "Kenny Rogers, Dolly Parton and Lionel Richie", "Kenny Rogers, Sheena Easton and Barry Gibb", "Kenny Rogers, Dottie West and James Ingram"], "Kenny Rogers, Kim Carnes and James Ingram", "Medium"),
+    makeQuestion("music_5451", "Which artist recorded 'Morning Desire'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Medium"),
+    makeQuestion("music_5452", "Which artist recorded 'Twenty Years Ago'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Hard"),
+    makeQuestion("music_5453", "Which artist recorded 'The Factory'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Hard"),
+    makeQuestion("music_5454", "Which artist recorded 'Crazy'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Medium"),
+    makeQuestion("music_5455", "Which artists recorded 'Real Love'?", ["Kenny Rogers and Dolly Parton", "Kenny Rogers and Dottie West", "Kenny Rogers and Kim Carnes", "Kenny Rogers and Sheena Easton"], "Kenny Rogers and Dolly Parton", "Medium"),
+    makeQuestion("music_5456", "Which artist recorded 'Buried Treasure'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Hard"),
+    makeQuestion("music_5457", "Which artist recorded 'I Don't Need You'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Easy"),
+    makeQuestion("music_5458", "Which artist recorded 'Through the Years'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Easy"),
+    makeQuestion("music_5459", "Which artist recorded 'Share Your Love with Me'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Hard"),
+    makeQuestion("music_5460", "Which artist recorded 'Scarlet Fever'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Hard"),
+    makeQuestion("music_5461", "Which artists recorded 'We've Got Tonight'?", ["Kenny Rogers and Sheena Easton", "Kenny Rogers and Dolly Parton", "Kenny Rogers and Dottie West", "Kenny Rogers and Kim Carnes"], "Kenny Rogers and Sheena Easton", "Easy"),
+    makeQuestion("music_5462", "Which artist recorded 'Eyes That See in the Dark'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Medium"),
+    makeQuestion("music_5463", "Which artists recorded 'Islands in the Stream'?", ["Kenny Rogers and Dolly Parton", "Kenny Rogers and Dottie West", "Kenny Rogers and Kim Carnes", "Kenny Rogers and Sheena Easton"], "Kenny Rogers and Dolly Parton", "Easy"),
+    makeQuestion("music_5464", "Which artist recorded 'Lady'?", ["Kenny Rogers", "Willie Nelson", "Eddie Rabbitt", "Kenny Loggins"], "Kenny Rogers", "Easy"),
+    makeQuestion("music_5465", "Which artists recorded 'Don't Fall in Love with a Dreamer'?", ["Kenny Rogers and Kim Carnes", "Kenny Rogers and Dolly Parton", "Kenny Rogers and Dottie West", "Kenny Rogers and Sheena Easton"], "Kenny Rogers and Kim Carnes", "Easy"),
+    makeQuestion("music_5466", "Which artist recorded 'Lesson in Leavin''?", ["Dottie West", "Juice Newton", "Kim Carnes", "Sheena Easton"], "Dottie West", "Hard")
 ];
 
 module.exports = quizPack73;
