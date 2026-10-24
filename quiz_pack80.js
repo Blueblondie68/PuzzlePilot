@@ -1,815 +1,268 @@
 // quiz_pack80.js
-// PuzzlePilot Big Quiz
-// Music Pack 80 - 1990s
+// PuzzlePilot Bigggggg Quiz - Music Pack 80 (mainly 1990s)
+// 100 audited questions: music_6067 through music_6166.
+// Original IDs, correct answers and difficulty ratings preserved.
+// Four corrected titles: music_6081, 6088, 6147, 6158.
+// Out-of-decade recordings retain accurate 2000s tags.
 
-const quizPack80 = [
+const performerTags = {
+    "The Cardigans": ["swedish", "pop rock", "alternative rock", "bands", "nina persson"],
+    "Placebo": ["british", "alternative rock", "bands", "brian molko", "stefan olsdal"],
+    "Steps": ["british", "dance pop", "pop", "vocal groups", "claire richards", "ian watkins"],
+    "Supergrass": ["british", "english", "britpop", "rock", "bands", "gaz coombes", "oxford"],
+    "Stereophonics": ["welsh", "british", "rock", "bands", "kelly jones", "richard jones"],
+    "Morcheeba": ["british", "english", "trip hop", "downtempo", "electronic music", "bands", "skye edwards", "ross godfrey", "paul godfrey"],
+    "Portishead": ["british", "bristol", "trip hop", "electronic music", "bands", "beth gibbons", "geoff barrow", "adrian utley"],
+    "Massive Attack": ["british", "bristol", "trip hop", "electronic music", "collectives", "robert del naja", "grant marshall", "andrew vowles"],
+    "Leftfield": ["british", "electronic music", "progressive house", "dance music", "duos", "neil barnes", "paul daley"],
+    "Charles & Eddie": ["american", "soul", "pop", "duos", "charles pettigrew", "eddie chacon"],
+    "Seal": ["british", "english", "soul", "pop", "male singers", "solo artists"],
+    "Eternal": ["british", "english", "r and b", "pop", "girl groups", "easther bennett", "vernie bennett"],
+    "Gabrielle": ["british", "english", "soul", "r and b", "female singers", "solo artists"],
+    "M People": ["british", "english", "house music", "dance pop", "bands", "heather small", "mike pickering"],
+    "Alex Party": ["italian", "eurodance", "house music", "dance acts"],
+    "Ice MC": ["british", "english", "eurodance", "hip hop", "male performers", "solo artists"],
+    "D:Ream": ["british", "northern irish", "dance pop", "electronic music", "bands", "peter cunnah"],
+    "Five": ["british", "english", "boybands", "pop", "bands", "r and b"],
+};
 
-    {
-        id: "music_6067",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Your New Cuckoo'?",
-        answers: ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"],
-        correctAnswer: "The Cardigans"
-    },
-    {
-        id: "music_6068",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Daddy Cool'?",
-        answers: ["Placebo", "Ash", "Feeder", "Mansun"],
-        correctAnswer: "Placebo"
-    },
-    {
-        id: "music_6069",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded '36 Degrees'?",
-        answers: ["Placebo", "Ash", "Feeder", "Mansun"],
-        correctAnswer: "Placebo"
-    },
-    {
-        id: "music_6070",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Teenage Angst'?",
-        answers: ["Placebo", "Ash", "Feeder", "Mansun"],
-        correctAnswer: "Placebo"
-    },
-    {
-        id: "music_6071",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Heartbeat'?",
-        answers: ["Steps", "S Club 7", "B*Witched", "Five"],
-        correctAnswer: "Steps"
-    },
-    {
-        id: "music_6072",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Lenny'?",
-        answers: ["Supergrass", "Blur", "Ash", "The Bluetones"],
-        correctAnswer: "Supergrass"
-    },
-    {
-        id: "music_6073",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Late in the Day'?",
-        answers: ["Supergrass", "Blur", "Ash", "The Bluetones"],
-        correctAnswer: "Supergrass"
-    },
-    {
-        id: "music_6074",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Mary'?",
-        answers: ["Supergrass", "Blur", "Ash", "The Bluetones"],
-        correctAnswer: "Supergrass"
-    },
-    {
-        id: "music_6075",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'In It for the Money'?",
-        answers: ["Supergrass", "Blur", "Ash", "The Bluetones"],
-        correctAnswer: "Supergrass"
-    },
-    {
-        id: "music_6076",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Cheapskate'?",
-        answers: ["Supergrass", "Blur", "Ash", "The Bluetones"],
-        correctAnswer: "Supergrass"
-    },
-    {
-        id: "music_6077",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Lose It'?",
-        answers: ["Supergrass", "Blur", "Ash", "The Bluetones"],
-        correctAnswer: "Supergrass"
-    },
-    {
-        id: "music_6078",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Not Up to You'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6079",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Looks Like Chaplin'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6080",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Same Size Feet'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6081",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Billy Dave's Daughters'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6082",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Too Many Sandwiches'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6083",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Last of the Big Time Drinkers'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6084",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Goldfish Bowl'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6085",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Roll Up and Shine'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6086",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Vegas Two Times'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6087",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Plastic California'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6088",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Is Yesterday Tomorrow Today?'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6089",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'She Takes Her Clothes Off'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6090",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'I Stopped to Fill My Car Up'?",
-        answers: ["Stereophonics", "Travis", "Feeder", "Reef"],
-        correctAnswer: "Stereophonics"
-    },
-    {
-        id: "music_6091",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Part of the Process'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6092",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Blindfold'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6093",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Trigger Hippie'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6094",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Tape Loop'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6095",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Shoulder Holster'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6096",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Friction'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6097",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Never an Easy Way'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6098",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Big Calm'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6099",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Over and Over'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6100",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Fear and Love'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6101",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Moog Island'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6102",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Post Houmous'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6103",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Otherwise'?",
-        answers: ["Morcheeba", "Portishead", "Massive Attack", "Moloko"],
-        correctAnswer: "Morcheeba"
-    },
-    {
-        id: "music_6104",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Numb'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6105",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Over'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6106",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Only You'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6107",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Cowboys'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6108",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Half Day Closing'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6109",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Seven Months'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6110",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Undenied'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6111",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Western Eyes'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6112",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Mysterons'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6113",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Roads'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6114",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Wandering Star'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6115",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Strangers'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6116",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'It Could Be Sweet'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6117",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Biscuit'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6118",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Pedestal'?",
-        answers: ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"],
-        correctAnswer: "Portishead"
-    },
-    {
-        id: "music_6119",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Karmacoma'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6120",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Risingson'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6121",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Angel'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6122",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Inertia Creeps'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6123",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Dissolved Girl'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6124",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Exchange'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6125",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Man Next Door'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6126",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Black Milk'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6127",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Group Four'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6128",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Five Man Army'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6129",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Safe from Harm'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6130",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Daydreaming'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6131",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Hymn of the Big Wheel'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6132",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'One Love'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6133",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Blue Lines'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6134",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Be Thankful for What You've Got'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6135",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Lately'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6136",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Weather Storm'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6137",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Better Things'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6138",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Eurochild'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6139",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Spying Glass'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6140",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Heat Miser'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6141",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Light My Fire'?",
-        answers: ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"],
-        correctAnswer: "Massive Attack"
-    },
-    {
-        id: "music_6142",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Dusted'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
-    {
-        id: "music_6143",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Original'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
-    {
-        id: "music_6144",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Release the Pressure'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
-    {
-        id: "music_6145",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Afro Left'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
-    {
-        id: "music_6146",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Space Shanty'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
-    {
-        id: "music_6147",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Inspection Check One'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
-    {
-        id: "music_6148",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Storm 3000'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
-    {
-        id: "music_6149",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Song of Life'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
-    {
-        id: "music_6150",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Black Flute'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
-    {
-        id: "music_6151",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Melt'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
-    {
-        id: "music_6152",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded '21st Century Poem'?",
-        answers: ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"],
-        correctAnswer: "Leftfield"
-    },
+const recordingTags = {
+    "music_6067": [1996, "first band on the moon album", "1997 single"],
+    "music_6068": [2003, "covers album", "boney m cover", "sleeping with ghosts bonus disc"],
+    "music_6069": [1996, "placebo debut album", "1996 single"],
+    "music_6070": [1996, "placebo debut album", "1996 single"],
+    "music_6071": [1998, "step one album", "1998 single"],
+    "music_6072": [1995, "i should coco album"],
+    "music_6077": [1995, "i should coco album"],
+    "music_6073": [1997, "in it for the money album"],
+    "music_6075": [1997, "in it for the money album"],
+    "music_6076": [1997, "in it for the money album"],
+    "music_6074": [1999, "supergrass 1999 album"],
+    "music_6078": [1997, "word gets around album", "debut album"],
+    "music_6079": [1997, "word gets around album", "debut album"],
+    "music_6080": [1997, "word gets around album", "debut album"],
+    "music_6081": [1997, "word gets around album", "debut album", "correct title billy daveys daughter"],
+    "music_6082": [1997, "word gets around album", "debut album"],
+    "music_6083": [1997, "word gets around album", "debut album"],
+    "music_6084": [1997, "word gets around album", "debut album"],
+    "music_6085": [1999, "performance and cocktails album"],
+    "music_6087": [1999, "performance and cocktails album"],
+    "music_6088": [1999, "performance and cocktails album", "correct title is yesterday tomorrow today"],
+    "music_6089": [1999, "performance and cocktails album"],
+    "music_6090": [1999, "performance and cocktails album"],
+    "music_6086": [2001, "just enough education to perform album", "2002 single"],
+    "music_6091": [1998, "big calm album"],
+    "music_6092": [1998, "big calm album", "1998 single"],
+    "music_6095": [1998, "big calm album"],
+    "music_6096": [1998, "big calm album"],
+    "music_6098": [1998, "big calm album"],
+    "music_6099": [1998, "big calm album"],
+    "music_6100": [1998, "big calm album"],
+    "music_6093": [1996, "who can you trust album"],
+    "music_6094": [1996, "who can you trust album"],
+    "music_6097": [1996, "who can you trust album"],
+    "music_6101": [1996, "who can you trust album"],
+    "music_6102": [1996, "who can you trust album", "short instrumental album track"],
+    "music_6103": [2002, "charango album", "2002 single"],
+    "music_6104": [1994, "dummy album"],
+    "music_6112": [1994, "dummy album"],
+    "music_6113": [1994, "dummy album"],
+    "music_6114": [1994, "dummy album"],
+    "music_6115": [1994, "dummy album"],
+    "music_6116": [1994, "dummy album"],
+    "music_6117": [1994, "dummy album"],
+    "music_6118": [1994, "dummy album"],
+    "music_6105": [1997, "portishead 1997 album"],
+    "music_6106": [1997, "portishead 1997 album"],
+    "music_6107": [1997, "portishead 1997 album"],
+    "music_6108": [1997, "portishead 1997 album"],
+    "music_6109": [1997, "portishead 1997 album"],
+    "music_6110": [1997, "portishead 1997 album"],
+    "music_6111": [1997, "portishead 1997 album"],
+    "music_6119": [1994, "protection album", "tricky vocals"],
+    "music_6136": [1994, "protection album"],
+    "music_6137": [1994, "protection album", "tracey thorn vocals"],
+    "music_6138": [1994, "protection album"],
+    "music_6139": [1994, "protection album", "horace andy vocals"],
+    "music_6140": [1994, "protection album"],
+    "music_6141": [1994, "protection album", "live recording", "the doors cover", "horace andy vocals"],
+    "music_6120": [1998, "mezzanine album"],
+    "music_6121": [1998, "mezzanine album", "horace andy vocals"],
+    "music_6122": [1998, "mezzanine album"],
+    "music_6123": [1998, "mezzanine album", "sarah jay vocals"],
+    "music_6124": [1998, "mezzanine album"],
+    "music_6125": [1998, "mezzanine album", "john holt cover", "horace andy vocals"],
+    "music_6126": [1998, "mezzanine album", "elizabeth fraser vocals"],
+    "music_6127": [1998, "mezzanine album", "elizabeth fraser vocals"],
+    "music_6128": [1991, "blue lines album"],
+    "music_6129": [1991, "blue lines album", "shara nelson vocals"],
+    "music_6130": [1991, "blue lines album", "1990 single", "shara nelson vocals", "tricky vocals"],
+    "music_6131": [1991, "blue lines album"],
+    "music_6132": [1991, "blue lines album"],
+    "music_6133": [1991, "blue lines album"],
+    "music_6134": [1991, "blue lines album", "william devaughn cover"],
+    "music_6135": [1991, "blue lines album"],
+    "music_6142": [1999, "rhythm and stealth album"],
+    "music_6143": [1995, "leftism album", "toni halliday vocals"],
+    "music_6144": [1995, "leftism album", "1992 original single", "earl sixteen vocals"],
+    "music_6145": [1995, "leftism album"],
+    "music_6146": [1995, "leftism album"],
+    "music_6147": [1995, "leftism album", "inspection check one"],
+    "music_6148": [1995, "leftism album"],
+    "music_6149": [1995, "leftism album", "1992 original single"],
+    "music_6150": [1995, "leftism album"],
+    "music_6151": [1995, "leftism album"],
+    "music_6152": [1995, "leftism album"],
+    "music_6153": [1992, "duophonic album", "1992 single"],
+    "music_6154": [1994, "seal ii album", "1995 batman forever soundtrack", "1995 uk single"],
+    "music_6155": [1997, "before the rain album", "1997 single"],
+    "music_6156": [2000, "rise album", "1999 album track", "2000 single"],
+    "music_6157": [1993, "elegant slumming album", "dennis edwards cover"],
+    "music_6158": [1995, "1995 uk hit", "1994 original release", "title corrected to dont give me your life"],
+    "music_6159": [1994, "ice n green album", "1994 single"],
+    "music_6160": [1993, "d ream on vol 1 album", "1994 uk number one", "1997 labour election campaign"],
+    "music_6161": [1998, "five 1998 album", "1998 single"],
+    "music_6162": [1998, "five 1998 album", "1998 single"],
+    "music_6163": [1998, "five 1998 album", "1998 single"],
+    "music_6164": [1999, "invincible album", "1999 single"],
+    "music_6165": [1999, "invincible album", "1999 single"],
+    "music_6166": [1998, "step one album", "1998 single"],
+};
 
-    // ---------------------------------------------------------
-    // Mainstream 1990s additions
-    // ---------------------------------------------------------
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const performer = performerTags[correctAnswer];
+    const record = recordingTags[id];
 
-    {
-        id: "music_6153",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which duo recorded 'Would I Lie to You?'?",
-        answers: ["Charles & Eddie", "Shakespears Sister", "Go West", "The Rembrandts"],
-        correctAnswer: "Charles & Eddie"
-    },
-    {
-        id: "music_6154",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Kiss from a Rose'?",
-        answers: ["Seal", "George Michael", "Terence Trent D'Arby", "Lenny Kravitz"],
-        correctAnswer: "Seal"
-    },
-    {
-        id: "music_6155",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Don't You Love Me'?",
-        answers: ["Eternal", "All Saints", "En Vogue", "SWV"],
-        correctAnswer: "Eternal"
-    },
-    {
-        id: "music_6156",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'When a Woman'?",
-        answers: ["Gabrielle", "Des'ree", "Beverley Knight", "Dina Carroll"],
-        correctAnswer: "Gabrielle"
-    },
-    {
-        id: "music_6157",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Don't Look Any Further'?",
-        answers: ["M People", "Eternal", "Soul II Soul", "The Brand New Heavies"],
-        correctAnswer: "M People"
-    },
-    {
-        id: "music_6158",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which act recorded 'Don't Give Me Your Love'?",
-        answers: ["Alex Party", "Livin' Joy", "Strike", "N-Trance"],
-        correctAnswer: "Alex Party"
-    },
-    {
-        id: "music_6159",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which artist recorded 'Think About the Way'?",
-        answers: ["Ice MC", "Haddaway", "Dr. Alban", "Culture Beat"],
-        correctAnswer: "Ice MC"
-    },
-    {
-        id: "music_6160",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Things Can Only Get Better'?",
-        answers: ["D:Ream", "M People", "The Shamen", "East 17"],
-        correctAnswer: "D:Ream"
-    },
-    {
-        id: "music_6161",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Everybody Get Up'?",
-        answers: ["Five", "911", "East 17", "Boyzone"],
-        correctAnswer: "Five"
-    },
-    {
-        id: "music_6162",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Got the Feelin''?",
-        answers: ["Five", "911", "East 17", "Boyzone"],
-        correctAnswer: "Five"
-    },
-    {
-        id: "music_6163",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'When the Lights Go Out'?",
-        answers: ["Five", "911", "East 17", "Boyzone"],
-        correctAnswer: "Five"
-    },
-    {
-        id: "music_6164",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Keep On Movin''?",
-        answers: ["Five", "911", "East 17", "Boyzone"],
-        correctAnswer: "Five"
-    },
-    {
-        id: "music_6165",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'If Ya Gettin' Down'?",
-        answers: ["Five", "911", "East 17", "Boyzone"],
-        correctAnswer: "Five"
-    },
-    {
-        id: "music_6166",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'One for Sorrow'?",
-        answers: ["Steps", "Five", "S Club 7", "B*Witched"],
-        correctAnswer: "Steps"
+    if (!performer || !record) {
+        throw new Error(`Missing metadata for ${id}`);
     }
 
+    const title = question.match(/'(.+)'/);
+    if (!title) {
+        throw new Error(`Missing quoted title for ${id}`);
+    }
+
+    const year = record[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music", "songs", "recordings", decade,
+            `${decade} music`, `${year} releases`,
+            title[1].toLowerCase(), correctAnswer.toLowerCase(),
+            ...performer, ...record.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
+const quizPack80 = [
+    makeQuestion("music_6067", "Which group recorded 'Your New Cuckoo'?", ["The Cardigans", "The Wannadies", "The Cranberries", "Republica"], "The Cardigans", "Medium"),
+    makeQuestion("music_6068", "Which group recorded 'Daddy Cool'?", ["Placebo", "Ash", "Feeder", "Mansun"], "Placebo", "Hard"),
+    makeQuestion("music_6069", "Which group recorded '36 Degrees'?", ["Placebo", "Ash", "Feeder", "Mansun"], "Placebo", "Medium"),
+    makeQuestion("music_6070", "Which group recorded 'Teenage Angst'?", ["Placebo", "Ash", "Feeder", "Mansun"], "Placebo", "Medium"),
+    makeQuestion("music_6071", "Which group recorded 'Heartbeat'?", ["Steps", "S Club 7", "B*Witched", "Five"], "Steps", "Easy"),
+    makeQuestion("music_6072", "Which group recorded 'Lenny'?", ["Supergrass", "Blur", "Ash", "The Bluetones"], "Supergrass", "Hard"),
+    makeQuestion("music_6073", "Which group recorded 'Late in the Day'?", ["Supergrass", "Blur", "Ash", "The Bluetones"], "Supergrass", "Medium"),
+    makeQuestion("music_6074", "Which group recorded 'Mary'?", ["Supergrass", "Blur", "Ash", "The Bluetones"], "Supergrass", "Medium"),
+    makeQuestion("music_6075", "Which group recorded 'In It for the Money'?", ["Supergrass", "Blur", "Ash", "The Bluetones"], "Supergrass", "Medium"),
+    makeQuestion("music_6076", "Which group recorded 'Cheapskate'?", ["Supergrass", "Blur", "Ash", "The Bluetones"], "Supergrass", "Hard"),
+    makeQuestion("music_6077", "Which group recorded 'Lose It'?", ["Supergrass", "Blur", "Ash", "The Bluetones"], "Supergrass", "Hard"),
+    makeQuestion("music_6078", "Which group recorded 'Not Up to You'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6079", "Which group recorded 'Looks Like Chaplin'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6080", "Which group recorded 'Same Size Feet'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6081", "Which group recorded 'Billy Davey's Daughter'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6082", "Which group recorded 'Too Many Sandwiches'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6083", "Which group recorded 'Last of the Big Time Drinkers'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6084", "Which group recorded 'Goldfish Bowl'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6085", "Which group recorded 'Roll Up and Shine'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6086", "Which group recorded 'Vegas Two Times'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6087", "Which group recorded 'Plastic California'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6088", "Which group recorded 'Is Yesterday, Tomorrow, Today?'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6089", "Which group recorded 'She Takes Her Clothes Off'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6090", "Which group recorded 'I Stopped to Fill My Car Up'?", ["Stereophonics", "Travis", "Feeder", "Reef"], "Stereophonics", "Hard"),
+    makeQuestion("music_6091", "Which group recorded 'Part of the Process'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Medium"),
+    makeQuestion("music_6092", "Which group recorded 'Blindfold'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Medium"),
+    makeQuestion("music_6093", "Which group recorded 'Trigger Hippie'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Medium"),
+    makeQuestion("music_6094", "Which group recorded 'Tape Loop'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Hard"),
+    makeQuestion("music_6095", "Which group recorded 'Shoulder Holster'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Hard"),
+    makeQuestion("music_6096", "Which group recorded 'Friction'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Hard"),
+    makeQuestion("music_6097", "Which group recorded 'Never an Easy Way'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Hard"),
+    makeQuestion("music_6098", "Which group recorded 'Big Calm'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Hard"),
+    makeQuestion("music_6099", "Which group recorded 'Over and Over'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Hard"),
+    makeQuestion("music_6100", "Which group recorded 'Fear and Love'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Hard"),
+    makeQuestion("music_6101", "Which group recorded 'Moog Island'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Hard"),
+    makeQuestion("music_6102", "Which group recorded 'Post Houmous'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Hard"),
+    makeQuestion("music_6103", "Which group recorded 'Otherwise'?", ["Morcheeba", "Portishead", "Massive Attack", "Moloko"], "Morcheeba", "Hard"),
+    makeQuestion("music_6104", "Which group recorded 'Numb'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Medium"),
+    makeQuestion("music_6105", "Which group recorded 'Over'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Medium"),
+    makeQuestion("music_6106", "Which group recorded 'Only You'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Medium"),
+    makeQuestion("music_6107", "Which group recorded 'Cowboys'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Hard"),
+    makeQuestion("music_6108", "Which group recorded 'Half Day Closing'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Hard"),
+    makeQuestion("music_6109", "Which group recorded 'Seven Months'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Hard"),
+    makeQuestion("music_6110", "Which group recorded 'Undenied'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Hard"),
+    makeQuestion("music_6111", "Which group recorded 'Western Eyes'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Hard"),
+    makeQuestion("music_6112", "Which group recorded 'Mysterons'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Medium"),
+    makeQuestion("music_6113", "Which group recorded 'Roads'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Medium"),
+    makeQuestion("music_6114", "Which group recorded 'Wandering Star'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Hard"),
+    makeQuestion("music_6115", "Which group recorded 'Strangers'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Hard"),
+    makeQuestion("music_6116", "Which group recorded 'It Could Be Sweet'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Hard"),
+    makeQuestion("music_6117", "Which group recorded 'Biscuit'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Hard"),
+    makeQuestion("music_6118", "Which group recorded 'Pedestal'?", ["Portishead", "Morcheeba", "Massive Attack", "Sneaker Pimps"], "Portishead", "Hard"),
+    makeQuestion("music_6119", "Which group recorded 'Karmacoma'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Medium"),
+    makeQuestion("music_6120", "Which group recorded 'Risingson'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Medium"),
+    makeQuestion("music_6121", "Which group recorded 'Angel'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Medium"),
+    makeQuestion("music_6122", "Which group recorded 'Inertia Creeps'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Medium"),
+    makeQuestion("music_6123", "Which group recorded 'Dissolved Girl'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6124", "Which group recorded 'Exchange'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6125", "Which group recorded 'Man Next Door'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Medium"),
+    makeQuestion("music_6126", "Which group recorded 'Black Milk'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6127", "Which group recorded 'Group Four'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6128", "Which group recorded 'Five Man Army'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6129", "Which group recorded 'Safe from Harm'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Medium"),
+    makeQuestion("music_6130", "Which group recorded 'Daydreaming'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Medium"),
+    makeQuestion("music_6131", "Which group recorded 'Hymn of the Big Wheel'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6132", "Which group recorded 'One Love'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6133", "Which group recorded 'Blue Lines'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Medium"),
+    makeQuestion("music_6134", "Which group recorded 'Be Thankful for What You've Got'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6135", "Which group recorded 'Lately'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6136", "Which group recorded 'Weather Storm'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6137", "Which group recorded 'Better Things'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6138", "Which group recorded 'Eurochild'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6139", "Which group recorded 'Spying Glass'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6140", "Which group recorded 'Heat Miser'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6141", "Which group recorded 'Light My Fire'?", ["Massive Attack", "Portishead", "Morcheeba", "Leftfield"], "Massive Attack", "Hard"),
+    makeQuestion("music_6142", "Which group recorded 'Dusted'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Hard"),
+    makeQuestion("music_6143", "Which group recorded 'Original'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Medium"),
+    makeQuestion("music_6144", "Which group recorded 'Release the Pressure'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Medium"),
+    makeQuestion("music_6145", "Which group recorded 'Afro Left'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Medium"),
+    makeQuestion("music_6146", "Which group recorded 'Space Shanty'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Hard"),
+    makeQuestion("music_6147", "Which group recorded 'Inspection (Check One)'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Hard"),
+    makeQuestion("music_6148", "Which group recorded 'Storm 3000'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Hard"),
+    makeQuestion("music_6149", "Which group recorded 'Song of Life'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Hard"),
+    makeQuestion("music_6150", "Which group recorded 'Black Flute'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Hard"),
+    makeQuestion("music_6151", "Which group recorded 'Melt'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Hard"),
+    makeQuestion("music_6152", "Which group recorded '21st Century Poem'?", ["Leftfield", "Massive Attack", "Underworld", "The Chemical Brothers"], "Leftfield", "Hard"),
+    makeQuestion("music_6153", "Which duo recorded 'Would I Lie to You?'?", ["Charles & Eddie", "Shakespears Sister", "Go West", "The Rembrandts"], "Charles & Eddie", "Easy"),
+    makeQuestion("music_6154", "Which singer recorded 'Kiss from a Rose'?", ["Seal", "George Michael", "Terence Trent D'Arby", "Lenny Kravitz"], "Seal", "Easy"),
+    makeQuestion("music_6155", "Which group recorded 'Don't You Love Me'?", ["Eternal", "All Saints", "En Vogue", "SWV"], "Eternal", "Medium"),
+    makeQuestion("music_6156", "Which singer recorded 'When a Woman'?", ["Gabrielle", "Des'ree", "Beverley Knight", "Dina Carroll"], "Gabrielle", "Medium"),
+    makeQuestion("music_6157", "Which group recorded 'Don't Look Any Further'?", ["M People", "Eternal", "Soul II Soul", "The Brand New Heavies"], "M People", "Medium"),
+    makeQuestion("music_6158", "Which act recorded 'Don't Give Me Your Life'?", ["Alex Party", "Livin' Joy", "Strike", "N-Trance"], "Alex Party", "Medium"),
+    makeQuestion("music_6159", "Which artist recorded 'Think About the Way'?", ["Ice MC", "Haddaway", "Dr. Alban", "Culture Beat"], "Ice MC", "Medium"),
+    makeQuestion("music_6160", "Which group recorded 'Things Can Only Get Better'?", ["D:Ream", "M People", "The Shamen", "East 17"], "D:Ream", "Easy"),
+    makeQuestion("music_6161", "Which group recorded 'Everybody Get Up'?", ["Five", "911", "East 17", "Boyzone"], "Five", "Easy"),
+    makeQuestion("music_6162", "Which group recorded 'Got the Feelin''?", ["Five", "911", "East 17", "Boyzone"], "Five", "Easy"),
+    makeQuestion("music_6163", "Which group recorded 'When the Lights Go Out'?", ["Five", "911", "East 17", "Boyzone"], "Five", "Easy"),
+    makeQuestion("music_6164", "Which group recorded 'Keep On Movin''?", ["Five", "911", "East 17", "Boyzone"], "Five", "Easy"),
+    makeQuestion("music_6165", "Which group recorded 'If Ya Gettin' Down'?", ["Five", "911", "East 17", "Boyzone"], "Five", "Medium"),
+    makeQuestion("music_6166", "Which group recorded 'One for Sorrow'?", ["Steps", "Five", "S Club 7", "B*Witched"], "Steps", "Easy"),
 ];
 
 module.exports = quizPack80;
