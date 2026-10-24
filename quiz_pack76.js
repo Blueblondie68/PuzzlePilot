@@ -1,704 +1,307 @@
-const quizPack76 = [
-    {
-        id: "music_5667",
-        category: "Music",
-        question: "Which group recorded 'Old Red Eyes Is Back'?",
-        answers: ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"],
-        correctAnswer: "The Beautiful South"
-    },
-    {
-        id: "music_5668",
-        category: "Music",
-        question: "Which group recorded 'Rotterdam'?",
-        answers: ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"],
-        correctAnswer: "The Beautiful South"
-    },
-    {
-        id: "music_5669",
-        category: "Music",
-        question: "Which group recorded 'Everybody’s Talkin'?",
-        answers: ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"],
-        correctAnswer: "The Beautiful South"
-    },
-    {
-        id: "music_5670",
-        category: "Music",
-        question: "Which group recorded 'Prettiest Eyes'?",
-        answers: ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"],
-        correctAnswer: "The Beautiful South"
-    },
-    {
-        id: "music_5671",
-        category: "Music",
-        question: "Which group recorded 'Dream a Little Dream'?",
-        answers: ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"],
-        correctAnswer: "The Beautiful South"
-    },
-    {
-        id: "music_5672",
-        category: "Music",
-        question: "Which group recorded 'For Your Babies'?",
-        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5673",
-        category: "Music",
-        question: "Which artist recorded 'Ice Ice Baby'?",
-        answers: ["Vanilla Ice", "MC Hammer", "Mark Morrison", "Haddaway"],
-        correctAnswer: "Vanilla Ice"
-    },
-    {
-        id: "music_5674",
-        category: "Music",
-        question: "Which artist recorded 'Show Me Heaven'?",
-        answers: ["Maria McKee", "Beverley Craven", "Sinéad O’Connor", "Cher"],
-        correctAnswer: "Maria McKee"
-    },
-    {
-        id: "music_5675",
-        category: "Music",
-        question: "Which group recorded 'Something Got Me Started'?",
-        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5676",
-        category: "Music",
-        question: "Which group recorded 'It Must Have Been Love'?",
-        answers: ["Roxette", "Wet Wet Wet", "Shakespears Sister", "The Cranberries"],
-        correctAnswer: "Roxette"
-    },
-    {
-        id: "music_5677",
-        category: "Music",
-        question: "Which group recorded 'Enjoy the Silence'?",
-        answers: ["Depeche Mode", "Erasure", "The Cure", "New Order"],
-        correctAnswer: "Depeche Mode"
-    },
-    {
-        id: "music_5678",
-        category: "Music",
-        question: "Which group recorded 'Fairground'?",
-        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5679",
-        category: "Music",
-        question: "Which group recorded 'Remembering the First Time'?",
-        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5680",
-        category: "Music",
-        question: "Which group recorded 'Angel'?",
-        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5681",
-        category: "Music",
-        question: "Which group recorded 'Dub Be Good to Me'?",
-        answers: ["Beats International", "Stereo MC’s", "The Shamen", "K-Klass"],
-        correctAnswer: "Beats International"
-    },
-    {
-        id: "music_5682",
-        category: "Music",
-        question: "Which act recorded 'Tom’s Diner'?",
-        answers: ["DNA featuring Suzanne Vega", "Everything but the Girl", "Beats International", "Deee-Lite"],
-        correctAnswer: "DNA featuring Suzanne Vega"
-    },
-    {
-        id: "music_5683",
-        category: "Music",
-        question: "Which group recorded 'Gonna Make You Sweat (Everybody Dance Now)'?",
-        answers: ["C+C Music Factory", "Snap!", "Culture Beat", "2 Unlimited"],
-        correctAnswer: "C+C Music Factory"
-    },
-    {
-        id: "music_5684",
-        category: "Music",
-        question: "Which group recorded 'Your Mirror'?",
-        answers: ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_5685",
-        category: "Music",
-        question: "Which group recorded 'Sadeness (Part I)'?",
-        answers: ["Enigma", "The Shamen", "Faithless", "Underworld"],
-        correctAnswer: "Enigma"
-    },
-    {
-        id: "music_5686",
-        category: "Music",
-        question: "Which group recorded 'Pray'?",
-        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
-        correctAnswer: "Take That"
-    },
-    {
-        id: "music_5687",
-        category: "Music",
-        question: "Which group recorded 'Everything Changes'?",
-        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
-        correctAnswer: "Take That"
-    },
-    {
-        id: "music_5688",
-        category: "Music",
-        question: "Which group had a 1991 UK hit with 'Should I Stay or Should I Go'?",
-        answers: ["The Clash", "The Cure", "Depeche Mode", "The Waterboys"],
-        correctAnswer: "The Clash"
-    },
-    {
-        id: "music_5689",
-        category: "Music",
-        question: "Which group recorded 'Sure'?",
-        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
-        correctAnswer: "Take That"
-    },
-    {
-        id: "music_5690",
-        category: "Music",
-        question: "Which artist recorded 'The Shoop Shoop Song (It’s in His Kiss)'?",
-        answers: ["Cher", "Madonna", "Paula Abdul", "Sinéad O’Connor"],
-        correctAnswer: "Cher"
-    },
-    {
-        id: "music_5691",
-        category: "Music",
-        question: "Which group recorded 'I’m Too Sexy'?",
-        answers: ["Right Said Fred", "EMF", "The Shamen", "Stereo MC’s"],
-        correctAnswer: "Right Said Fred"
-    },
-    {
-        id: "music_5692",
-        category: "Music",
-        question: "Which group recorded 'Babe'?",
-        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
-        correctAnswer: "Take That"
-    },
-    {
-        id: "music_5693",
-        category: "Music",
-        question: "Which group recorded 'Rhythm Is a Mystery'?",
-        answers: ["K-Klass", "Snap!", "Culture Beat", "2 Unlimited"],
-        correctAnswer: "K-Klass"
-    },
-    {
-        id: "music_5694",
-        category: "Music",
-        question: "Which group recorded 'Things That Make You Go Hmmm...'?",
-        answers: ["C+C Music Factory", "Deee-Lite", "Snap!", "Culture Beat"],
-        correctAnswer: "C+C Music Factory"
-    },
-    {
-        id: "music_5695",
-        category: "Music",
-        question: "Which group recorded 'Set Adrift on Memory Bliss'?",
-        answers: ["P.M. Dawn", "Stereo MC’s", "Beats International", "EMF"],
-        correctAnswer: "P.M. Dawn"
-    },
-    {
-        id: "music_5696",
-        category: "Music",
-        question: "Which artist recorded 'Saltwater'?",
-        answers: ["Julian Lennon", "Marc Cohn", "Chesney Hawkes", "Seal"],
-        correctAnswer: "Julian Lennon"
-    },
-    {
-        id: "music_5697",
-        category: "Music",
-        question: "Which artist recorded 'Rush Rush'?",
-        answers: ["Paula Abdul", "Madonna", "Cher", "Maria McKee"],
-        correctAnswer: "Paula Abdul"
-    },
-    {
-        id: "music_5698",
-        category: "Music",
-        question: "Which group recorded 'Love to Hate You'?",
-        answers: ["Erasure", "Depeche Mode", "The Cure", "Wet Wet Wet"],
-        correctAnswer: "Erasure"
-    },
-    {
-        id: "music_5699",
-        category: "Music",
-        question: "Which group returned to the UK charts with 'The Whole of the Moon' in 1991?",
-        answers: ["The Waterboys", "The Clash", "The Cure", "James"],
-        correctAnswer: "The Waterboys"
-    },
-    {
-        id: "music_5700",
-        category: "Music",
-        question: "Which group recorded 'Never Forget'?",
-        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
-        correctAnswer: "Take That"
-    },
-    {
-        id: "music_5701",
-        category: "Music",
-        question: "Which artist recorded 'Promise Me'?",
-        answers: ["Beverley Craven", "Maria McKee", "Sinéad O’Connor", "Paula Abdul"],
-        correctAnswer: "Beverley Craven"
-    },
-    {
-        id: "music_5702",
-        category: "Music",
-        question: "Which group recorded 'Wind of Change'?",
-        answers: ["Scorpions", "Extreme", "Metallica", "Guns N’ Roses"],
-        correctAnswer: "Scorpions"
-    },
-    {
-        id: "music_5703",
-        category: "Music",
-        question: "Which group recorded 'More Than Words'?",
-        answers: ["Extreme", "Scorpions", "Guns N’ Roses", "Metallica"],
-        correctAnswer: "Extreme"
-    },
-    {
-        id: "music_5704",
-        category: "Music",
-        question: "Which artist recorded 'Black or White'?",
-        answers: ["Michael Jackson", "Prince", "George Michael", "Seal"],
-        correctAnswer: "Michael Jackson"
-    },
-    {
-        id: "music_5705",
-        category: "Music",
-        question: "Which group recorded 'Smells Like Teen Spirit'?",
-        answers: ["Nirvana", "Pearl Jam", "Soundgarden", "Alice in Chains"],
-        correctAnswer: "Nirvana"
-    },
-    {
-        id: "music_5706",
-        category: "Music",
-        question: "Which group recorded 'Losing My Religion'?",
-        answers: ["R.E.M.", "The Cure", "Radiohead", "The Cranberries"],
-        correctAnswer: "R.E.M."
-    },
-    {
-        id: "music_5707",
-        category: "Music",
-        question: "Which group recorded 'Alive'?",
-        answers: ["Pearl Jam", "Nirvana", "Soundgarden", "Alice in Chains"],
-        correctAnswer: "Pearl Jam"
-    },
-    {
-        id: "music_5708",
-        category: "Music",
-        question: "Which group recorded 'Enter Sandman'?",
-        answers: ["Metallica", "Guns N’ Roses", "Scorpions", "Extreme"],
-        correctAnswer: "Metallica"
-    },
-    {
-        id: "music_5709",
-        category: "Music",
-        question: "Which group recorded 'November Rain'?",
-        answers: ["Guns N’ Roses", "Metallica", "Extreme", "Scorpions"],
-        correctAnswer: "Guns N’ Roses"
-    },
-    {
-        id: "music_5710",
-        category: "Music",
-        question: "Which group recorded 'Under the Bridge'?",
-        answers: ["Red Hot Chili Peppers", "Pearl Jam", "Nirvana", "R.E.M."],
-        correctAnswer: "Red Hot Chili Peppers"
-    },
-    {
-        id: "music_5711",
-        category: "Music",
-        question: "Which group recorded 'Friday I’m in Love'?",
-        answers: ["The Cure", "Depeche Mode", "Erasure", "R.E.M."],
-        correctAnswer: "The Cure"
-    },
-    {
-        id: "music_5712",
-        category: "Music",
-        question: "Which group recorded 'How Deep Is Your Love'?",
-        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
-        correctAnswer: "Take That"
-    },
-    {
-        id: "music_5713",
-        category: "Music",
-        question: "Which group recorded 'Could It Be Magic'?",
-        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
-        correctAnswer: "Take That"
-    },
-    {
-        id: "music_5714",
-        category: "Music",
-        question: "Which group returned to the UK Top 40 with 'Temptation' in 1992?",
-        answers: ["Heaven 17", "Erasure", "Depeche Mode", "The Cure"],
-        correctAnswer: "Heaven 17"
-    },
-    {
-        id: "music_5715",
-        category: "Music",
-        question: "Which group recorded 'Love Ain’t Here Anymore'?",
-        answers: ["Take That", "East 17", "Boyzone", "Westlife"],
-        correctAnswer: "Take That"
-    },
-    {
-        id: "music_5716",
-        category: "Music",
-        question: "Which group recorded 'Stay Another Day'?",
-        answers: ["East 17", "Take That", "Boyzone", "911"],
-        correctAnswer: "East 17"
-    },
-    {
-        id: "music_5717",
-        category: "Music",
-        question: "Which group recorded 'House of Love'?",
-        answers: ["East 17", "Take That", "Boyzone", "911"],
-        correctAnswer: "East 17"
-    },
-    {
-        id: "music_5718",
-        category: "Music",
-        question: "Which group recorded 'Deep'?",
-        answers: ["East 17", "Take That", "Boyzone", "911"],
-        correctAnswer: "East 17"
-    },
-    {
-        id: "music_5719",
-        category: "Music",
-        question: "Which group recorded 'It’s Alright'?",
-        answers: ["East 17", "Take That", "Boyzone", "911"],
-        correctAnswer: "East 17"
-    },
-    {
-        id: "music_5720",
-        category: "Music",
-        question: "Which group recorded 'Steam'?",
-        answers: ["East 17", "Take That", "Boyzone", "911"],
-        correctAnswer: "East 17"
-    },
-    {
-        id: "music_5721",
-        category: "Music",
-        question: "Which group recorded 'Thunder'?",
-        answers: ["East 17", "Take That", "Boyzone", "911"],
-        correctAnswer: "East 17"
-    },
-    {
-        id: "music_5722",
-        category: "Music",
-        question: "Which group recorded 'If You Ever'?",
-        answers: ["East 17", "Take That", "Boyzone", "911"],
-        correctAnswer: "East 17"
-    },
-    {
-        id: "music_5723",
-        category: "Music",
-        question: "Which group recorded 'Love Me for a Reason'?",
-        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
-        correctAnswer: "Boyzone"
-    },
-    {
-        id: "music_5724",
-        category: "Music",
-        question: "Which group recorded 'Live Forever'?",
-        answers: ["Oasis", "Blur", "The Verve", "Pulp"],
-        correctAnswer: "Oasis"
-    },
-    {
-        id: "music_5725",
-        category: "Music",
-        question: "Which group recorded 'Supersonic'?",
-        answers: ["Oasis", "Blur", "Supergrass", "The Bluetones"],
-        correctAnswer: "Oasis"
-    },
-    {
-        id: "music_5726",
-        category: "Music",
-        question: "Which group recorded 'Words'?",
-        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
-        correctAnswer: "Boyzone"
-    },
-    {
-        id: "music_5727",
-        category: "Music",
-        question: "Which group recorded 'Picture of You'?",
-        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
-        correctAnswer: "Boyzone"
-    },
-    {
-        id: "music_5728",
-        category: "Music",
-        question: "Which group recorded 'Zombie'?",
-        answers: ["The Cranberries", "Republica", "Elastica", "Catatonia"],
-        correctAnswer: "The Cranberries"
-    },
-    {
-        id: "music_5729",
-        category: "Music",
-        question: "Which group recorded 'Dreams'?",
-        answers: ["The Cranberries", "Catatonia", "Republica", "Elastica"],
-        correctAnswer: "The Cranberries"
-    },
-    {
-        id: "music_5730",
-        category: "Music",
-        question: "Which group recorded 'Creep'?",
-        answers: ["Radiohead", "Placebo", "The Verve", "Manic Street Preachers"],
-        correctAnswer: "Radiohead"
-    },
-    {
-        id: "music_5731",
-        category: "Music",
-        question: "Which group recorded 'High and Dry'?",
-        answers: ["Radiohead", "The Verve", "Placebo", "Manic Street Preachers"],
-        correctAnswer: "Radiohead"
-    },
-    {
-        id: "music_5732",
-        category: "Music",
-        question: "Which group recorded 'Basket Case'?",
-        answers: ["Green Day", "Blink-182", "The Offspring", "Weezer"],
-        correctAnswer: "Green Day"
-    },
-    {
-        id: "music_5733",
-        category: "Music",
-        question: "Which group recorded 'Good Riddance (Time of Your Life)'?",
-        answers: ["Green Day", "The Offspring", "Weezer", "Blink-182"],
-        correctAnswer: "Green Day"
-    },
-    {
-        id: "music_5734",
-        category: "Music",
-        question: "Which group recorded 'Song 2'?",
-        answers: ["Blur", "Supergrass", "Pulp", "Oasis"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_5735",
-        category: "Music",
-        question: "Which group recorded 'Place Your Hands'?",
-        answers: ["Reef", "Ocean Colour Scene", "Supergrass", "The Bluetones"],
-        correctAnswer: "Reef"
-    },
-    {
-        id: "music_5736",
-        category: "Music",
-        question: "Which group recorded 'When the Going Gets Tough'?",
-        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
-        correctAnswer: "Boyzone"
-    },
-    {
-        id: "music_5737",
-        category: "Music",
-        question: "Which group recorded 'Motorcycle Emptiness'?",
-        answers: ["Manic Street Preachers", "Radiohead", "Placebo", "The Verve"],
-        correctAnswer: "Manic Street Preachers"
-    },
-    {
-        id: "music_5738",
-        category: "Music",
-        question: "Which group recorded 'A Different Beat'?",
-        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
-        correctAnswer: "Boyzone"
-    },
-    {
-        id: "music_5739",
-        category: "Music",
-        question: "Which group recorded 'Coming Home Now'?",
-        answers: ["Boyzone", "Take That", "East 17", "Westlife"],
-        correctAnswer: "Boyzone"
-    },
-    {
-        id: "music_5740",
-        category: "Music",
-        question: "Which group recorded 'C’est la Vie'?",
-        answers: ["B*Witched", "All Saints", "Eternal", "Spice Girls"],
-        correctAnswer: "B*Witched"
-    },
-    {
-        id: "music_5741",
-        category: "Music",
-        question: "Which artist recorded 'You’re Gorgeous'?",
-        answers: ["Babybird", "Chesney Hawkes", "Marc Cohn", "Julian Lennon"],
-        correctAnswer: "Babybird"
-    },
-    {
-        id: "music_5742",
-        category: "Music",
-        question: "Which group recorded 'Tubthumping'?",
-        answers: ["Chumbawamba", "Cornershop", "Space", "Republica"],
-        correctAnswer: "Chumbawamba"
-    },
-    {
-        id: "music_5743",
-        category: "Music",
-        question: "Which group recorded 'Brimful of Asha'?",
-        answers: ["Cornershop", "Chumbawamba", "Space", "The Boo Radleys"],
-        correctAnswer: "Cornershop"
-    },
-    {
-        id: "music_5744",
-        category: "Music",
-        question: "Which group recorded 'Rollercoaster'?",
-        answers: ["B*Witched", "All Saints", "Eternal", "Spice Girls"],
-        correctAnswer: "B*Witched"
-    },
-    {
-        id: "music_5745",
-        category: "Music",
-        question: "Which group recorded 'To You I Belong'?",
-        answers: ["B*Witched", "All Saints", "Eternal", "Spice Girls"],
-        correctAnswer: "B*Witched"
-    },
-    {
-        id: "music_5746",
-        category: "Music",
-        question: "Which group recorded 'Blame It on the Weatherman'?",
-        answers: ["B*Witched", "All Saints", "Eternal", "Spice Girls"],
-        correctAnswer: "B*Witched"
-    },
-    {
-        id: "music_5747",
-        category: "Music",
-        question: "Which group recorded 'Stay'?",
-        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
-        correctAnswer: "Eternal"
-    },
-    {
-        id: "music_5748",
-        category: "Music",
-        question: "Which group recorded 'Wake Up Boo!'?",
-        answers: ["The Boo Radleys", "The Bluetones", "Supergrass", "Space"],
-        correctAnswer: "The Boo Radleys"
-    },
-    {
-        id: "music_5749",
-        category: "Music",
-        question: "Which group recorded 'Power of a Woman'?",
-        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
-        correctAnswer: "Eternal"
-    },
-    {
-        id: "music_5750",
-        category: "Music",
-        question: "Which group recorded 'Nancy Boy'?",
-        answers: ["Placebo", "Radiohead", "Manic Street Preachers", "The Verve"],
-        correctAnswer: "Placebo"
-    },
-    {
-        id: "music_5751",
-        category: "Music",
-        question: "Which group recorded 'Mulder and Scully'?",
-        answers: ["Catatonia", "Republica", "Elastica", "Garbage"],
-        correctAnswer: "Catatonia"
-    },
-    {
-        id: "music_5752",
-        category: "Music",
-        question: "Which group recorded 'Road Rage'?",
-        answers: ["Catatonia", "Elastica", "Republica", "Garbage"],
-        correctAnswer: "Catatonia"
-    },
-    {
-        id: "music_5753",
-        category: "Music",
-        question: "Which group recorded 'I Wanna Be the Only One'?",
-        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
-        correctAnswer: "Eternal"
-    },
-    {
-        id: "music_5754",
-        category: "Music",
-        question: "Which group recorded 'Just a Step from Heaven'?",
-        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
-        correctAnswer: "Eternal"
-    },
-    {
-        id: "music_5755",
-        category: "Music",
-        question: "Which group recorded 'Oh Baby I'?",
-        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
-        correctAnswer: "Eternal"
-    },
-    {
-        id: "music_5756",
-        category: "Music",
-        question: "Which group recorded 'Angel of Mine'?",
-        answers: ["Eternal", "All Saints", "B*Witched", "Spice Girls"],
-        correctAnswer: "Eternal"
-    },
-    {
-        id: "music_5757",
-        category: "Music",
-        question: "Which artist recorded 'Going Nowhere'?",
-        answers: ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"],
-        correctAnswer: "Gabrielle"
-    },
-    {
-        id: "music_5758",
-        category: "Music",
-        question: "Which artist recorded 'Give Me a Little More Time'?",
-        answers: ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"],
-        correctAnswer: "Gabrielle"
-    },
-    {
-        id: "music_5759",
-        category: "Music",
-        question: "Which artist recorded 'Walk On By'?",
-        answers: ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"],
-        correctAnswer: "Gabrielle"
-    },
-    {
-        id: "music_5760",
-        category: "Music",
-        question: "Which artist recorded 'Sunshine'?",
-        answers: ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"],
-        correctAnswer: "Gabrielle"
-    },
-    {
-        id: "music_5761",
-        category: "Music",
-        question: "Which artist recorded 'Rise'?",
-        answers: ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"],
-        correctAnswer: "Gabrielle"
-    },
-    {
-        id: "music_5762",
-        category: "Music",
-        question: "Which group recorded 'Moving on Up'?",
-        answers: ["M People", "Eternal", "Simply Red", "The Beautiful South"],
-        correctAnswer: "M People"
-    },
-    {
-        id: "music_5763",
-        category: "Music",
-        question: "Which group recorded 'One Night in Heaven'?",
-        answers: ["M People", "Eternal", "Simply Red", "The Beautiful South"],
-        correctAnswer: "M People"
-    },
-    {
-        id: "music_5764",
-        category: "Music",
-        question: "Which group recorded 'Search for the Hero'?",
-        answers: ["M People", "Eternal", "Simply Red", "The Beautiful South"],
-        correctAnswer: "M People"
-    },
-    {
-        id: "music_5765",
-        category: "Music",
-        question: "Which group recorded 'Open Your Heart'?",
-        answers: ["M People", "Eternal", "Simply Red", "The Beautiful South"],
-        correctAnswer: "M People"
-    },
-    {
-        id: "music_5766",
-        category: "Music",
-        question: "Which group recorded 'Another Night'?",
-        answers: ["Real McCoy", "La Bouche", "Culture Beat", "2 Unlimited"],
-        correctAnswer: "Real McCoy"
+ // quiz_pack76.js
+// PuzzlePilot Bigggggg Quiz - Music Pack 76
+// 100 audited questions: music_5667 through music_5766.
+// Original questions and answers preserved.
+// Complete tags, difficulty and Daily Quiz eligibility added.
+
+const artistTags = {
+    "The Beautiful South": ["british", "english", "pop rock", "sophisti pop", "bands", "paul heaton", "dave rotheray", "hull"],
+    "Simply Red": ["british", "english", "pop", "soul", "blue eyed soul", "bands", "mick hucknall", "manchester"],
+    "Vanilla Ice": ["american", "hip hop", "rap", "male performers", "solo artists", "1990s rap"],
+    "Maria McKee": ["american", "pop rock", "rock ballads", "female singers", "solo artists", "lone justice"],
+    "Roxette": ["swedish", "pop rock", "duos", "marie fredriksson", "per gessle"],
+    "Depeche Mode": ["british", "english", "synth pop", "electronic music", "bands", "dave gahan", "martin gore"],
+    "Beats International": ["british", "dance music", "electronic music", "collectives", "norman cook", "fatboy slim"],
+    "DNA featuring Suzanne Vega": ["british", "american", "dance music", "remixes", "collaborations", "suzanne vega", "dna duo"],
+    "C+C Music Factory": ["american", "dance pop", "house music", "dance acts", "robert clivilles", "david cole"],
+    "Enigma": ["german", "electronic music", "new age", "studio projects", "michael cretu"],
+    "Take That": ["british", "english", "pop", "boybands", "bands", "gary barlow", "robbie williams", "mark owen", "howard donald", "jason orange"],
+    "The Clash": ["british", "english", "punk rock", "rock", "bands", "joe strummer", "mick jones", "paul simonon"],
+    "Cher": ["american", "pop", "female singers", "solo artists", "film soundtracks"],
+    "Right Said Fred": ["british", "english", "pop", "dance pop", "duos", "richard fairbrass", "fred fairbrass"],
+    "K-Klass": ["british", "house music", "dance music", "dance acts", "manchester"],
+    "P.M. Dawn": ["american", "hip hop", "alternative hip hop", "duos", "prince be"],
+    "Julian Lennon": ["british", "english", "pop rock", "singer songwriters", "male singers", "solo artists"],
+    "Paula Abdul": ["american", "pop", "dance pop", "female singers", "solo artists", "dancers"],
+    "Erasure": ["british", "english", "synth pop", "electronic music", "duos", "andy bell", "vince clarke"],
+    "The Waterboys": ["british", "irish", "folk rock", "rock", "bands", "mike scott"],
+    "Beverley Craven": ["british", "english", "pop ballads", "singer songwriters", "female singers", "solo artists", "piano"],
+    "Scorpions": ["german", "hard rock", "rock", "bands", "klaus meine", "rudolf schenker"],
+    "Extreme": ["american", "hard rock", "rock", "bands", "gary cherone", "nuno bettencourt"],
+    "Michael Jackson": ["american", "pop", "r and b", "male singers", "solo artists", "king of pop"],
+    "Nirvana": ["american", "grunge", "alternative rock", "bands", "kurt cobain", "krist novoselic", "dave grohl"],
+    "R.E.M.": ["american", "alternative rock", "rock", "bands", "michael stipe", "peter buck"],
+    "Pearl Jam": ["american", "grunge", "rock", "bands", "eddie vedder", "mike mccready"],
+    "Metallica": ["american", "heavy metal", "metal", "bands", "james hetfield", "lars ulrich", "kirk hammett"],
+    "Guns N’ Roses": ["american", "hard rock", "rock", "bands", "axl rose", "slash", "duff mckagan"],
+    "Red Hot Chili Peppers": ["american", "funk rock", "alternative rock", "bands", "anthony kiedis", "flea", "john frusciante"],
+    "The Cure": ["british", "english", "alternative rock", "gothic rock", "bands", "robert smith"],
+    "Heaven 17": ["british", "english", "synth pop", "new wave", "bands", "glenn gregory", "martyn ware"],
+    "East 17": ["british", "english", "pop", "boybands", "bands", "brian harvey", "tony mortimer", "london"],
+    "Boyzone": ["irish", "pop", "boybands", "bands", "ronan keating", "stephen gately", "mikey graham"],
+    "Oasis": ["british", "english", "britpop", "rock", "bands", "liam gallagher", "noel gallagher", "manchester"],
+    "The Cranberries": ["irish", "alternative rock", "rock", "bands", "dolores oriordan", "noel hogan"],
+    "Radiohead": ["british", "english", "alternative rock", "rock", "bands", "thom yorke", "jonny greenwood", "oxford"],
+    "Green Day": ["american", "punk rock", "pop punk", "bands", "billie joe armstrong", "mike dirnt", "tre cool"],
+    "Blur": ["british", "english", "britpop", "rock", "bands", "damon albarn", "graham coxon"],
+    "Reef": ["british", "english", "rock", "britpop", "bands", "gary stringer"],
+    "Manic Street Preachers": ["welsh", "british", "rock", "alternative rock", "bands", "james dean bradfield", "nicky wire"],
+    "B*Witched": ["irish", "pop", "girl groups", "bands", "edele lynch", "keavy lynch", "sinead ocarroll", "lindsay armaou"],
+    "Babybird": ["british", "english", "indie rock", "rock", "stephen jones", "solo projects"],
+    "Chumbawamba": ["british", "english", "alternative rock", "pop rock", "bands", "anarcho punk"],
+    "Cornershop": ["british", "english", "indie rock", "alternative rock", "bands", "tjinder singh"],
+    "Eternal": ["british", "english", "r and b", "pop", "girl groups", "louise nurding", "easther bennett", "vernie bennett"],
+    "The Boo Radleys": ["british", "english", "britpop", "indie rock", "bands", "martin carr", "sice"],
+    "Placebo": ["british", "alternative rock", "bands", "brian molko", "stefan olsdal"],
+    "Catatonia": ["welsh", "british", "alternative rock", "britpop", "bands", "cerys matthews"],
+    "Gabrielle": ["british", "english", "soul", "r and b", "female singers", "solo artists", "london"],
+    "M People": ["british", "english", "house music", "dance pop", "bands", "heather small", "mike pickering"],
+    "Real McCoy": ["german", "eurodance", "dance pop", "dance acts", "olaf jeglitza"]
+};
+
+const recordingTags = {
+    "music_5667": [1992, "0898 beautiful south album", "1991 original single", "1992 uk hit"],
+    "music_5668": [1996, "blue is the colour album", "1996 uk single", "paul heaton"],
+    "music_5669": [1994, "miaow album", "fred neil cover", "1994 uk single"],
+    "music_5670": [1994, "miaow album", "1994 uk single", "paul heaton"],
+    "music_5671": [1995, "french kiss soundtrack", "classic standards", "cover versions"],
+    "music_5672": [1991, "stars album", "1992 single", "mick hucknall"],
+    "music_5673": [1990, "to the extreme album", "hip hop", "uk number one"],
+    "music_5674": [1990, "days of thunder soundtrack", "film songs", "power ballads"],
+    "music_5675": [1991, "stars album", "1991 single", "mick hucknall"],
+    "music_5676": [1990, "pretty woman soundtrack", "film songs", "1987 original version"],
+    "music_5677": [1990, "violator album", "synth pop", "1990 single"],
+    "music_5678": [1995, "life album", "1995 single", "uk number one"],
+    "music_5679": [1995, "life album", "1995 single", "mick hucknall"],
+    "music_5680": [1996, "greatest hits album", "aretha franklin cover", "fugees collaboration"],
+    "music_5681": [1990, "let them eat bingo album", "norman cook", "dance music", "1990 uk number one"],
+    "music_5682": [1990, "toms diner remix", "suzanne vega original 1987", "dna remix", "sampling"],
+    "music_5683": [1990, "gonna make you sweat album", "dance music", "1991 chart hit"],
+    "music_5684": [1991, "stars album", "1992 single", "mick hucknall"],
+    "music_5685": [1990, "mcmxc a d album", "new age", "chant samples", "1990 single"],
+    "music_5686": [1993, "everything changes album", "1993 uk number one", "gary barlow"],
+    "music_5687": [1994, "everything changes album", "1994 uk number one", "gary barlow"],
+    "music_5688": [1991, "combat rock album", "1982 original release", "1991 reissue", "uk number one"],
+    "music_5689": [1994, "nobody else album", "1994 uk number one", "gary barlow"],
+    "music_5690": [1990, "mermaids film soundtrack", "1991 uk number one", "cover versions"],
+    "music_5691": [1991, "up album", "british dance pop", "1991 uk number one"],
+    "music_5692": [1993, "everything changes album", "1993 uk number one", "gary barlow"],
+    "music_5693": [1991, "rhythm is a mystery single", "house music", "uk dance charts"],
+    "music_5694": [1991, "gonna make you sweat album", "dance music", "1991 single"],
+    "music_5695": [1991, "of the heart of the soul and of the cross album", "spandau ballet sample", "1991 single"],
+    "music_5696": [1991, "help yourself album", "environmental themes", "1991 single"],
+    "music_5697": [1991, "spellbound album", "1991 single", "keanu reeves music video"],
+    "music_5698": [1991, "chorus album", "synth pop", "1991 single"],
+    "music_5699": [1991, "this is the sea album", "1985 original single", "1991 reissue", "uk number three"],
+    "music_5700": [1995, "nobody else album", "howard donald lead vocals", "1995 uk number one"],
+    "music_5701": [1990, "beverley craven album", "1991 uk chart breakthrough", "1991 single"],
+    "music_5702": [1990, "crazy world album", "1991 international single", "power ballads"],
+    "music_5703": [1990, "pornograffitti album", "1991 single", "acoustic ballads"],
+    "music_5704": [1991, "dangerous album", "1991 single", "pop rock"],
+    "music_5705": [1991, "nevermind album", "grunge", "1991 single"],
+    "music_5706": [1991, "out of time album", "mandolin", "1991 single"],
+    "music_5707": [1991, "ten album", "grunge", "1991 single"],
+    "music_5708": [1991, "metallica black album", "heavy metal", "1991 single"],
+    "music_5709": [1991, "use your illusion i album", "1992 single", "piano ballad"],
+    "music_5710": [1991, "blood sugar sex magik album", "1992 single", "alternative rock"],
+    "music_5711": [1992, "wish album", "1992 single", "alternative rock"],
+    "music_5712": [1996, "greatest hits album", "bee gees cover", "1996 uk number one"],
+    "music_5713": [1992, "take that and party album", "barry manilow cover", "1992 single"],
+    "music_5714": [1992, "brothers in rhythm remix", "1983 original release", "1992 uk top 10", "remixes"],
+    "music_5715": [1994, "everything changes album", "1994 uk single", "gary barlow"],
+    "music_5716": [1994, "steam album", "1994 christmas number one", "holiday charts"],
+    "music_5717": [1992, "walthamstow album", "1992 single", "brian harvey"],
+    "music_5718": [1993, "walthamstow album", "1993 single", "brian harvey"],
+    "music_5719": [1993, "walthamstow album", "1993 single", "brian harvey"],
+    "music_5720": [1994, "steam album", "1994 single", "brian harvey"],
+    "music_5721": [1995, "up all night album", "1995 single", "brian harvey"],
+    "music_5722": [1996, "around the world compilation", "gabrielle duet", "1996 uk number two"],
+    "music_5723": [1994, "said and done album", "the osmonds cover", "1994 single"],
+    "music_5724": [1994, "definitely maybe album", "britpop", "1994 single"],
+    "music_5725": [1994, "definitely maybe album", "britpop", "debut single"],
+    "music_5726": [1996, "a different beat album", "bee gees cover", "1996 uk number one"],
+    "music_5727": [1997, "bean film soundtrack", "where we belong album", "1997 uk single"],
+    "music_5728": [1994, "no need to argue album", "irish rock", "1994 single"],
+    "music_5729": [1992, "everybody else is doing it so why cant we album", "1993 single", "dream pop"],
+    "music_5730": [1992, "pablo honey album", "1993 reissue", "alternative rock"],
+    "music_5731": [1995, "the bends album", "1995 single", "british alternative rock"],
+    "music_5732": [1994, "dookie album", "pop punk", "1994 single"],
+    "music_5733": [1997, "nimrod album", "acoustic song", "1997 single"],
+    "music_5734": [1997, "blur album", "britpop", "1997 uk single"],
+    "music_5735": [1996, "glow album", "1997 uk hit", "britpop"],
+    "music_5736": [1999, "comic relief single", "billy ocean cover", "charity records"],
+    "music_5737": [1992, "generation terrorists album", "welsh rock", "1992 single"],
+    "music_5738": [1996, "a different beat album", "1996 single", "irish boybands"],
+    "music_5739": [1996, "said and done album", "1996 single", "irish boybands"],
+    "music_5740": [1998, "b witched album", "1998 uk number one", "irish girl groups"],
+    "music_5741": [1996, "ugly beautiful album", "1996 uk single", "british indie rock"],
+    "music_5742": [1997, "tubthumper album", "1997 uk single", "alternative rock"],
+    "music_5743": [1997, "when i was born for the seventh time album", "1998 fatboy slim remix", "british indie rock"],
+    "music_5744": [1998, "b witched album", "1998 uk number one", "irish girl groups"],
+    "music_5745": [1998, "b witched album", "1998 uk number one", "irish girl groups"],
+    "music_5746": [1999, "b witched album", "1999 uk number one", "irish girl groups"],
+    "music_5747": [1993, "always and forever album", "1993 debut single", "british r and b"],
+    "music_5748": [1995, "wake up album", "1995 uk top ten", "britpop"],
+    "music_5749": [1995, "power of a woman album", "1995 uk single", "british r and b"],
+    "music_5750": [1996, "placebo album", "1997 uk hit", "alternative rock"],
+    "music_5751": [1998, "international velvet album", "1998 uk single", "welsh rock"],
+    "music_5752": [1998, "international velvet album", "1998 uk single", "welsh rock"],
+    "music_5753": [1997, "before the rain album", "bebe winans collaboration", "1997 uk number one"],
+    "music_5754": [1994, "always and forever album", "1994 single", "british r and b"],
+    "music_5755": [1994, "always and forever album", "1994 single", "british r and b"],
+    "music_5756": [1997, "before the rain album", "1997 single", "british r and b"],
+    "music_5757": [1993, "find your way album", "1993 uk single", "british soul"],
+    "music_5758": [1996, "gabrielle album", "1996 uk single", "british soul"],
+    "music_5759": [1997, "gabrielle album", "bacharach and david songwriting", "1997 single", "cover versions"],
+    "music_5760": [1999, "rise album", "1999 single", "british soul"],
+    "music_5761": [2000, "rise album", "1999 album recording", "bob dylan sample", "2000 uk number one"],
+    "music_5762": [1993, "elegant slumming album", "1993 uk single", "dance pop"],
+    "music_5763": [1993, "elegant slumming album", "1993 uk single", "dance pop"],
+    "music_5764": [1995, "bizarre fruit album", "1995 uk single", "british dance music"],
+    "music_5765": [1995, "bizarre fruit album", "1995 uk single", "british dance music"],
+    "music_5766": [1993, "another night single", "1994 international hit", "eurodance"]
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artist = artistTags[correctAnswer];
+    const release = recordingTags[id];
+
+    if (!artist || !release) {
+        throw new Error(`Missing music metadata for ${id}`);
     }
+
+    const titleMatch = question.match(/'(.+)'/);
+    if (!titleMatch) {
+        throw new Error(`Missing quoted song title for ${id}`);
+    }
+
+    const year = release[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+
+    return {
+        id,
+        category: "Music",
+        question,
+        answers,
+        correctAnswer,
+        difficulty,
+        tags: [...new Set([
+            "music",
+            "songs",
+            "recordings",
+            decade,
+            `${decade} music`,
+            `${year} releases`,
+            titleMatch[1].toLowerCase(),
+            correctAnswer.toLowerCase(),
+            ...artist,
+            ...release.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
+const quizPack76 = [
+    makeQuestion("music_5667", "Which group recorded 'Old Red Eyes Is Back'?", ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"], "The Beautiful South", "Medium"),
+    makeQuestion("music_5668", "Which group recorded 'Rotterdam'?", ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"], "The Beautiful South", "Easy"),
+    makeQuestion("music_5669", "Which group recorded 'Everybody’s Talkin'?", ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"], "The Beautiful South", "Hard"),
+    makeQuestion("music_5670", "Which group recorded 'Prettiest Eyes'?", ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"], "The Beautiful South", "Hard"),
+    makeQuestion("music_5671", "Which group recorded 'Dream a Little Dream'?", ["The Beautiful South", "Simply Red", "Wet Wet Wet", "The Lightning Seeds"], "The Beautiful South", "Hard"),
+    makeQuestion("music_5672", "Which group recorded 'For Your Babies'?", ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"], "Simply Red", "Medium"),
+    makeQuestion("music_5673", "Which artist recorded 'Ice Ice Baby'?", ["Vanilla Ice", "MC Hammer", "Mark Morrison", "Haddaway"], "Vanilla Ice", "Easy"),
+    makeQuestion("music_5674", "Which artist recorded 'Show Me Heaven'?", ["Maria McKee", "Beverley Craven", "Sinéad O’Connor", "Cher"], "Maria McKee", "Easy"),
+    makeQuestion("music_5675", "Which group recorded 'Something Got Me Started'?", ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"], "Simply Red", "Medium"),
+    makeQuestion("music_5676", "Which group recorded 'It Must Have Been Love'?", ["Roxette", "Wet Wet Wet", "Shakespears Sister", "The Cranberries"], "Roxette", "Easy"),
+    makeQuestion("music_5677", "Which group recorded 'Enjoy the Silence'?", ["Depeche Mode", "Erasure", "The Cure", "New Order"], "Depeche Mode", "Easy"),
+    makeQuestion("music_5678", "Which group recorded 'Fairground'?", ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"], "Simply Red", "Easy"),
+    makeQuestion("music_5679", "Which group recorded 'Remembering the First Time'?", ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"], "Simply Red", "Hard"),
+    makeQuestion("music_5680", "Which group recorded 'Angel'?", ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"], "Simply Red", "Hard"),
+    makeQuestion("music_5681", "Which group recorded 'Dub Be Good to Me'?", ["Beats International", "Stereo MC’s", "The Shamen", "K-Klass"], "Beats International", "Easy"),
+    makeQuestion("music_5682", "Which act recorded 'Tom’s Diner'?", ["DNA featuring Suzanne Vega", "Everything but the Girl", "Beats International", "Deee-Lite"], "DNA featuring Suzanne Vega", "Medium"),
+    makeQuestion("music_5683", "Which group recorded 'Gonna Make You Sweat (Everybody Dance Now)'?", ["C+C Music Factory", "Snap!", "Culture Beat", "2 Unlimited"], "C+C Music Factory", "Easy"),
+    makeQuestion("music_5684", "Which group recorded 'Your Mirror'?", ["Simply Red", "The Beautiful South", "Wet Wet Wet", "M People"], "Simply Red", "Hard"),
+    makeQuestion("music_5685", "Which group recorded 'Sadeness (Part I)'?", ["Enigma", "The Shamen", "Faithless", "Underworld"], "Enigma", "Medium"),
+    makeQuestion("music_5686", "Which group recorded 'Pray'?", ["Take That", "East 17", "Boyzone", "Westlife"], "Take That", "Easy"),
+    makeQuestion("music_5687", "Which group recorded 'Everything Changes'?", ["Take That", "East 17", "Boyzone", "Westlife"], "Take That", "Easy"),
+    makeQuestion("music_5688", "Which group had a 1991 UK hit with 'Should I Stay or Should I Go'?", ["The Clash", "The Cure", "Depeche Mode", "The Waterboys"], "The Clash", "Easy"),
+    makeQuestion("music_5689", "Which group recorded 'Sure'?", ["Take That", "East 17", "Boyzone", "Westlife"], "Take That", "Medium"),
+    makeQuestion("music_5690", "Which artist recorded 'The Shoop Shoop Song (It’s in His Kiss)'?", ["Cher", "Madonna", "Paula Abdul", "Sinéad O’Connor"], "Cher", "Easy"),
+    makeQuestion("music_5691", "Which group recorded 'I’m Too Sexy'?", ["Right Said Fred", "EMF", "The Shamen", "Stereo MC’s"], "Right Said Fred", "Easy"),
+    makeQuestion("music_5692", "Which group recorded 'Babe'?", ["Take That", "East 17", "Boyzone", "Westlife"], "Take That", "Easy"),
+    makeQuestion("music_5693", "Which group recorded 'Rhythm Is a Mystery'?", ["K-Klass", "Snap!", "Culture Beat", "2 Unlimited"], "K-Klass", "Hard"),
+    makeQuestion("music_5694", "Which group recorded 'Things That Make You Go Hmmm...'?", ["C+C Music Factory", "Deee-Lite", "Snap!", "Culture Beat"], "C+C Music Factory", "Hard"),
+    makeQuestion("music_5695", "Which group recorded 'Set Adrift on Memory Bliss'?", ["P.M. Dawn", "Stereo MC’s", "Beats International", "EMF"], "P.M. Dawn", "Hard"),
+    makeQuestion("music_5696", "Which artist recorded 'Saltwater'?", ["Julian Lennon", "Marc Cohn", "Chesney Hawkes", "Seal"], "Julian Lennon", "Easy"),
+    makeQuestion("music_5697", "Which artist recorded 'Rush Rush'?", ["Paula Abdul", "Madonna", "Cher", "Maria McKee"], "Paula Abdul", "Easy"),
+    makeQuestion("music_5698", "Which group recorded 'Love to Hate You'?", ["Erasure", "Depeche Mode", "The Cure", "Wet Wet Wet"], "Erasure", "Easy"),
+    makeQuestion("music_5699", "Which group returned to the UK charts with 'The Whole of the Moon' in 1991?", ["The Waterboys", "The Clash", "The Cure", "James"], "The Waterboys", "Hard"),
+    makeQuestion("music_5700", "Which group recorded 'Never Forget'?", ["Take That", "East 17", "Boyzone", "Westlife"], "Take That", "Easy"),
+    makeQuestion("music_5701", "Which artist recorded 'Promise Me'?", ["Beverley Craven", "Maria McKee", "Sinéad O’Connor", "Paula Abdul"], "Beverley Craven", "Medium"),
+    makeQuestion("music_5702", "Which group recorded 'Wind of Change'?", ["Scorpions", "Extreme", "Metallica", "Guns N’ Roses"], "Scorpions", "Easy"),
+    makeQuestion("music_5703", "Which group recorded 'More Than Words'?", ["Extreme", "Scorpions", "Guns N’ Roses", "Metallica"], "Extreme", "Easy"),
+    makeQuestion("music_5704", "Which artist recorded 'Black or White'?", ["Michael Jackson", "Prince", "George Michael", "Seal"], "Michael Jackson", "Easy"),
+    makeQuestion("music_5705", "Which group recorded 'Smells Like Teen Spirit'?", ["Nirvana", "Pearl Jam", "Soundgarden", "Alice in Chains"], "Nirvana", "Easy"),
+    makeQuestion("music_5706", "Which group recorded 'Losing My Religion'?", ["R.E.M.", "The Cure", "Radiohead", "The Cranberries"], "R.E.M.", "Easy"),
+    makeQuestion("music_5707", "Which group recorded 'Alive'?", ["Pearl Jam", "Nirvana", "Soundgarden", "Alice in Chains"], "Pearl Jam", "Medium"),
+    makeQuestion("music_5708", "Which group recorded 'Enter Sandman'?", ["Metallica", "Guns N’ Roses", "Scorpions", "Extreme"], "Metallica", "Easy"),
+    makeQuestion("music_5709", "Which group recorded 'November Rain'?", ["Guns N’ Roses", "Metallica", "Extreme", "Scorpions"], "Guns N’ Roses", "Easy"),
+    makeQuestion("music_5710", "Which group recorded 'Under the Bridge'?", ["Red Hot Chili Peppers", "Pearl Jam", "Nirvana", "R.E.M."], "Red Hot Chili Peppers", "Easy"),
+    makeQuestion("music_5711", "Which group recorded 'Friday I’m in Love'?", ["The Cure", "Depeche Mode", "Erasure", "R.E.M."], "The Cure", "Easy"),
+    makeQuestion("music_5712", "Which group recorded 'How Deep Is Your Love'?", ["Take That", "East 17", "Boyzone", "Westlife"], "Take That", "Easy"),
+    makeQuestion("music_5713", "Which group recorded 'Could It Be Magic'?", ["Take That", "East 17", "Boyzone", "Westlife"], "Take That", "Easy"),
+    makeQuestion("music_5714", "Which group returned to the UK Top 40 with 'Temptation' in 1992?", ["Heaven 17", "Erasure", "Depeche Mode", "The Cure"], "Heaven 17", "Hard"),
+    makeQuestion("music_5715", "Which group recorded 'Love Ain’t Here Anymore'?", ["Take That", "East 17", "Boyzone", "Westlife"], "Take That", "Medium"),
+    makeQuestion("music_5716", "Which group recorded 'Stay Another Day'?", ["East 17", "Take That", "Boyzone", "911"], "East 17", "Easy"),
+    makeQuestion("music_5717", "Which group recorded 'House of Love'?", ["East 17", "Take That", "Boyzone", "911"], "East 17", "Medium"),
+    makeQuestion("music_5718", "Which group recorded 'Deep'?", ["East 17", "Take That", "Boyzone", "911"], "East 17", "Medium"),
+    makeQuestion("music_5719", "Which group recorded 'It’s Alright'?", ["East 17", "Take That", "Boyzone", "911"], "East 17", "Medium"),
+    makeQuestion("music_5720", "Which group recorded 'Steam'?", ["East 17", "Take That", "Boyzone", "911"], "East 17", "Medium"),
+    makeQuestion("music_5721", "Which group recorded 'Thunder'?", ["East 17", "Take That", "Boyzone", "911"], "East 17", "Hard"),
+    makeQuestion("music_5722", "Which group recorded 'If You Ever'?", ["East 17", "Take That", "Boyzone", "911"], "East 17", "Hard"),
+    makeQuestion("music_5723", "Which group recorded 'Love Me for a Reason'?", ["Boyzone", "Take That", "East 17", "Westlife"], "Boyzone", "Easy"),
+    makeQuestion("music_5724", "Which group recorded 'Live Forever'?", ["Oasis", "Blur", "The Verve", "Pulp"], "Oasis", "Easy"),
+    makeQuestion("music_5725", "Which group recorded 'Supersonic'?", ["Oasis", "Blur", "Supergrass", "The Bluetones"], "Oasis", "Easy"),
+    makeQuestion("music_5726", "Which group recorded 'Words'?", ["Boyzone", "Take That", "East 17", "Westlife"], "Boyzone", "Medium"),
+    makeQuestion("music_5727", "Which group recorded 'Picture of You'?", ["Boyzone", "Take That", "East 17", "Westlife"], "Boyzone", "Hard"),
+    makeQuestion("music_5728", "Which group recorded 'Zombie'?", ["The Cranberries", "Republica", "Elastica", "Catatonia"], "The Cranberries", "Easy"),
+    makeQuestion("music_5729", "Which group recorded 'Dreams'?", ["The Cranberries", "Catatonia", "Republica", "Elastica"], "The Cranberries", "Easy"),
+    makeQuestion("music_5730", "Which group recorded 'Creep'?", ["Radiohead", "Placebo", "The Verve", "Manic Street Preachers"], "Radiohead", "Easy"),
+    makeQuestion("music_5731", "Which group recorded 'High and Dry'?", ["Radiohead", "The Verve", "Placebo", "Manic Street Preachers"], "Radiohead", "Medium"),
+    makeQuestion("music_5732", "Which group recorded 'Basket Case'?", ["Green Day", "Blink-182", "The Offspring", "Weezer"], "Green Day", "Easy"),
+    makeQuestion("music_5733", "Which group recorded 'Good Riddance (Time of Your Life)'?", ["Green Day", "The Offspring", "Weezer", "Blink-182"], "Green Day", "Easy"),
+    makeQuestion("music_5734", "Which group recorded 'Song 2'?", ["Blur", "Supergrass", "Pulp", "Oasis"], "Blur", "Easy"),
+    makeQuestion("music_5735", "Which group recorded 'Place Your Hands'?", ["Reef", "Ocean Colour Scene", "Supergrass", "The Bluetones"], "Reef", "Easy"),
+    makeQuestion("music_5736", "Which group recorded 'When the Going Gets Tough'?", ["Boyzone", "Take That", "East 17", "Westlife"], "Boyzone", "Easy"),
+    makeQuestion("music_5737", "Which group recorded 'Motorcycle Emptiness'?", ["Manic Street Preachers", "Radiohead", "Placebo", "The Verve"], "Manic Street Preachers", "Medium"),
+    makeQuestion("music_5738", "Which group recorded 'A Different Beat'?", ["Boyzone", "Take That", "East 17", "Westlife"], "Boyzone", "Hard"),
+    makeQuestion("music_5739", "Which group recorded 'Coming Home Now'?", ["Boyzone", "Take That", "East 17", "Westlife"], "Boyzone", "Hard"),
+    makeQuestion("music_5740", "Which group recorded 'C’est la Vie'?", ["B*Witched", "All Saints", "Eternal", "Spice Girls"], "B*Witched", "Easy"),
+    makeQuestion("music_5741", "Which artist recorded 'You’re Gorgeous'?", ["Babybird", "Chesney Hawkes", "Marc Cohn", "Julian Lennon"], "Babybird", "Medium"),
+    makeQuestion("music_5742", "Which group recorded 'Tubthumping'?", ["Chumbawamba", "Cornershop", "Space", "Republica"], "Chumbawamba", "Easy"),
+    makeQuestion("music_5743", "Which group recorded 'Brimful of Asha'?", ["Cornershop", "Chumbawamba", "Space", "The Boo Radleys"], "Cornershop", "Easy"),
+    makeQuestion("music_5744", "Which group recorded 'Rollercoaster'?", ["B*Witched", "All Saints", "Eternal", "Spice Girls"], "B*Witched", "Easy"),
+    makeQuestion("music_5745", "Which group recorded 'To You I Belong'?", ["B*Witched", "All Saints", "Eternal", "Spice Girls"], "B*Witched", "Hard"),
+    makeQuestion("music_5746", "Which group recorded 'Blame It on the Weatherman'?", ["B*Witched", "All Saints", "Eternal", "Spice Girls"], "B*Witched", "Hard"),
+    makeQuestion("music_5747", "Which group recorded 'Stay'?", ["Eternal", "All Saints", "B*Witched", "Spice Girls"], "Eternal", "Easy"),
+    makeQuestion("music_5748", "Which group recorded 'Wake Up Boo!'?", ["The Boo Radleys", "The Bluetones", "Supergrass", "Space"], "The Boo Radleys", "Easy"),
+    makeQuestion("music_5749", "Which group recorded 'Power of a Woman'?", ["Eternal", "All Saints", "B*Witched", "Spice Girls"], "Eternal", "Hard"),
+    makeQuestion("music_5750", "Which group recorded 'Nancy Boy'?", ["Placebo", "Radiohead", "Manic Street Preachers", "The Verve"], "Placebo", "Easy"),
+    makeQuestion("music_5751", "Which group recorded 'Mulder and Scully'?", ["Catatonia", "Republica", "Elastica", "Garbage"], "Catatonia", "Easy"),
+    makeQuestion("music_5752", "Which group recorded 'Road Rage'?", ["Catatonia", "Elastica", "Republica", "Garbage"], "Catatonia", "Easy"),
+    makeQuestion("music_5753", "Which group recorded 'I Wanna Be the Only One'?", ["Eternal", "All Saints", "B*Witched", "Spice Girls"], "Eternal", "Easy"),
+    makeQuestion("music_5754", "Which group recorded 'Just a Step from Heaven'?", ["Eternal", "All Saints", "B*Witched", "Spice Girls"], "Eternal", "Hard"),
+    makeQuestion("music_5755", "Which group recorded 'Oh Baby I'?", ["Eternal", "All Saints", "B*Witched", "Spice Girls"], "Eternal", "Hard"),
+    makeQuestion("music_5756", "Which group recorded 'Angel of Mine'?", ["Eternal", "All Saints", "B*Witched", "Spice Girls"], "Eternal", "Easy"),
+    makeQuestion("music_5757", "Which artist recorded 'Going Nowhere'?", ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"], "Gabrielle", "Medium"),
+    makeQuestion("music_5758", "Which artist recorded 'Give Me a Little More Time'?", ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"], "Gabrielle", "Easy"),
+    makeQuestion("music_5759", "Which artist recorded 'Walk On By'?", ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"], "Gabrielle", "Hard"),
+    makeQuestion("music_5760", "Which artist recorded 'Sunshine'?", ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"], "Gabrielle", "Easy"),
+    makeQuestion("music_5761", "Which artist recorded 'Rise'?", ["Gabrielle", "Des’ree", "Dina Carroll", "Shola Ama"], "Gabrielle", "Easy"),
+    makeQuestion("music_5762", "Which group recorded 'Moving on Up'?", ["M People", "Eternal", "Simply Red", "The Beautiful South"], "M People", "Easy"),
+    makeQuestion("music_5763", "Which group recorded 'One Night in Heaven'?", ["M People", "Eternal", "Simply Red", "The Beautiful South"], "M People", "Easy"),
+    makeQuestion("music_5764", "Which group recorded 'Search for the Hero'?", ["M People", "Eternal", "Simply Red", "The Beautiful South"], "M People", "Easy"),
+    makeQuestion("music_5765", "Which group recorded 'Open Your Heart'?", ["M People", "Eternal", "Simply Red", "The Beautiful South"], "M People", "Hard"),
+    makeQuestion("music_5766", "Which group recorded 'Another Night'?", ["Real McCoy", "La Bouche", "Culture Beat", "2 Unlimited"], "Real McCoy", "Easy")
 ];
 
 module.exports = quizPack76;
