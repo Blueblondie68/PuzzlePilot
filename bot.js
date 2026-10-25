@@ -1,4 +1,4 @@
-// bot.js
+ // bot.js
 // Main PuzzlePilot hub
 // Daily menu + Crossword + Word Ladder + Logic Grid + Connections + Quiz
 
@@ -23,6 +23,7 @@ const wordladder = require('./wordladder');
 const logicgrid = require('./logicgrid');
 const connections = require('./connections');
 const quiz = require('./quiz');
+const quizContinuous = require('./quiz_continuous');
 
 // ─────────────────────────────────────────────
 // CLIENT SETUP
@@ -253,6 +254,14 @@ client.on(
                             },
                             {
                                 label:
+                                    'Continuous Quiz',
+                                value:
+                                    'continuousquiz',
+                                description:
+                                    'Choose subjects and play as long as you like'
+                            },
+                            {
+                                label:
                                     'Continuous Word Ladder',
                                 value:
                                     'continuouswordladder',
@@ -390,6 +399,21 @@ client.on(
             'dailyquiz'
         ) {
             await quiz.startDaily(
+                interaction
+            );
+
+            return;
+        }
+
+        // ─────────────────────────────────────
+        // CONTINUOUS QUIZ
+        // ─────────────────────────────────────
+
+        if (
+            choice ===
+            'continuousquiz'
+        ) {
+            await quizContinuous.startContinuous(
                 interaction
             );
 
@@ -602,6 +626,14 @@ client.on(
         // ─────────────────────────────────────
 
         await quiz.handleInteraction(
+            interaction
+        );
+
+        // ─────────────────────────────────────
+        // CONTINUOUS QUIZ
+        // ─────────────────────────────────────
+
+        await quizContinuous.handleInteraction(
             interaction
         );
     }
