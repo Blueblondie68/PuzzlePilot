@@ -1,320 +1,266 @@
 // quiz_pack88.js
-// PuzzlePilot Big Quiz
-// Music Pack 88
-// 100 questions
-// IDs: music_6867 to music_6966
+// PuzzlePilot Bigggggg Quiz - Music Pack 88 (mainly 1990s)
+// Tagging audit: 100 questions, music_6867 through music_6966.
+// Original IDs, answers, answer options and difficulties preserved.
+// music_6941 clarified: both Trisha Yearwood and LeAnn Rimes recorded the song.
+// music_6958: corrected punctuation of the Liz Phair song title.
+// Year tags use the original recordings; later single releases are noted.
+
+const performerTags = {
+    "Veruca Salt": ["american", "alternative rock", "grunge", "bands", "nina gordon", "louise post"],
+    "Liz Phair": ["american", "alternative rock", "indie rock", "female singers", "singer songwriters", "solo artists"],
+    "Fiona Apple": ["american", "alternative rock", "art pop", "female singers", "singer songwriters", "piano", "solo artists"],
+    "K's Choice": ["belgian", "alternative rock", "bands", "sam bettens", "gert bettens"],
+    "The Breeders": ["american", "alternative rock", "indie rock", "bands", "kim deal", "kelley deal"],
+    "Belly": ["american", "alternative rock", "dream pop", "bands", "tanya donelly"],
+    "L7": ["american", "grunge", "punk rock", "bands", "female fronted bands", "donita sparks"],
+    "Silverchair": ["australian", "alternative rock", "grunge", "bands", "daniel johns"],
+    "Sponge": ["american", "alternative rock", "post grunge", "bands", "vinnie dombroski"],
+    "Candlebox": ["american", "grunge", "alternative rock", "bands", "kevin martin"],
+    "Screaming Trees": ["american", "grunge", "alternative rock", "bands", "mark lanegan"],
+    "Mudhoney": ["american", "grunge", "garage rock", "bands", "mark arm", "seattle"],
+    "Primus": ["american", "funk metal", "alternative rock", "bands", "les claypool"],
+    "The Presidents of the United States of America": ["american", "alternative rock", "pop rock", "bands", "chris ballew", "seattle"],
+    "The Refreshments": ["american", "alternative rock", "roots rock", "bands", "roger clyne"],
+    "Cracker": ["american", "alternative rock", "alternative country", "bands", "david lowery", "johnny hickman"],
+    "Superdrag": ["american", "alternative rock", "power pop", "bands", "john davis"],
+    "Porno for Pyros": ["american", "alternative rock", "psychedelic rock", "bands", "perry farrell", "stephen perkins"],
+    "Garth Brooks": ["american", "country", "male singers", "solo artists", "oklahoma"],
+    "Trisha Yearwood": ["american", "country", "female singers", "solo artists", "georgia"],
+    "Martina McBride": ["american", "country", "country pop", "female singers", "solo artists"],
+    "Toby Keith": ["american", "country", "male singers", "solo artists", "oklahoma"],
+    "Shania Twain": ["canadian", "country pop", "female singers", "solo artists", "singer songwriters"],
+    "Faith Hill": ["american", "country pop", "female singers", "solo artists"],
+    "Hole": ["american", "grunge", "alternative rock", "bands", "courtney love"],
+    "Soul Coughing": ["american", "alternative rock", "jazz rock", "trip hop", "bands", "mike doughty"],
+};
+
+const recordingTags = {
+    "music_6867": [1997, "eight arms to hold you album"],
+    "music_6868": [1994, "american thighs album", "1995 single"],
+    "music_6869": [1997, "eight arms to hold you album"],
+    "music_6870": [1994, "american thighs album", "1995 single"],
+    "music_6871": [1994, "whip smart album"],
+    "music_6872": [1998, "whitechocolatespaceegg album"],
+    "music_6873": [1993, "exile in guyville album"],
+    "music_6874": [1996, "tidal album", "1997 single"],
+    "music_6875": [1996, "tidal album"],
+    "music_6876": [1996, "tidal album"],
+    "music_6877": [1999, "when the pawn album"],
+    "music_6878": [1995, "paradise in me album", "1996 international hit"],
+    "music_6879": [1998, "cocoon crash album"],
+    "music_6880": [1993, "last splash album", "1994 single"],
+    "music_6881": [1992, "safari ep"],
+    "music_6882": [1993, "star album"],
+    "music_6883": [1993, "star album"],
+    "music_6884": [1995, "king album"],
+    "music_6885": [1995, "king album"],
+    "music_6886": [1992, "bricks are heavy album"],
+    "music_6887": [1994, "hungry for stink album"],
+    "music_6888": [1994, "hungry for stink album", "1997 prodigy cover", "cover versions"],
+    "music_6889": [1994, "hungry for stink album", "album track"],
+    "music_6890": [1994, "tomorrow ep", "1995 frogstomp album", "1995 rerecorded us version"],
+    "music_6891": [1995, "frogstomp album"],
+    "music_6892": [1997, "freak show album"],
+    "music_6893": [1997, "freak show album"],
+    "music_6894": [1999, "neon ballroom album"],
+    "music_6895": [1994, "rotting pinata album"],
+    "music_6896": [1994, "rotting pinata album", "1995 rerecorded single version"],
+    "music_6897": [1996, "wax ecstatic album"],
+    "music_6898": [1996, "wax ecstatic album"],
+    "music_6899": [1993, "candlebox debut album"],
+    "music_6900": [1993, "candlebox debut album"],
+    "music_6901": [1993, "candlebox debut album"],
+    "music_6902": [1993, "candlebox debut album"],
+    "music_6903": [1992, "sweet oblivion album", "singles soundtrack", "film soundtracks"],
+    "music_6904": [1992, "sweet oblivion album"],
+    "music_6905": [1996, "dust album"],
+    "music_6906": [1996, "dust album"],
+    "music_6907": [1988, "superfuzz bigmuff ep", "grunge history"],
+    "music_6908": [1992, "piece of cake album"],
+    "music_6909": [1995, "my brother the cow album"],
+    "music_6910": [1995, "my brother the cow album"],
+    "music_6911": [1991, "sailing the seas of cheese album"],
+    "music_6912": [1993, "pork soda album"],
+    "music_6913": [1995, "tales from the punchbowl album"],
+    "music_6914": [1997, "brown album"],
+    "music_6915": [1995, "the presidents of the united states of america debut album"],
+    "music_6916": [1995, "the presidents of the united states of america debut album"],
+    "music_6917": [1995, "the presidents of the united states of america debut album"],
+    "music_6918": [1996, "ii album"],
+    "music_6919": [1996, "ii album"],
+    "music_6920": [1996, "fizzy fuzzy big and buzzy album"],
+    "music_6921": [1996, "fizzy fuzzy big and buzzy album"],
+    "music_6922": [1996, "fizzy fuzzy big and buzzy album", "album track"],
+    "music_6923": [1993, "kerosene hat album"],
+    "music_6924": [1993, "kerosene hat album", "1994 single"],
+    "music_6925": [1992, "tucson ep", "1993 kerosene hat album", "1994 single"],
+    "music_6926": [1996, "the golden age album"],
+    "music_6927": [1992, "cracker debut album"],
+    "music_6928": [1996, "regretfully yours album"],
+    "music_6929": [1996, "regretfully yours album", "album track"],
+    "music_6930": [1998, "head trip in every key album"],
+    "music_6931": [1993, "porno for pyros debut album"],
+    "music_6932": [1996, "good gods urge album"],
+    "music_6933": [1997, "private parts soundtrack", "film soundtracks", "flea bass guitar", "dave navarro guitar"],
+    "music_6934": [1993, "in pieces album"],
+    "music_6935": [1990, "no fences album", "1991 single"],
+    "music_6936": [1993, "in pieces album"],
+    "music_6937": [1993, "in pieces album", "1994 single", "new grass revival cover", "cover versions"],
+    "music_6938": [1991, "trisha yearwood debut album"],
+    "music_6939": [1992, "hearts in armor album", "don henley guest vocals"],
+    "music_6940": [1994, "thinkin about you album", "1995 single"],
+    "music_6941": [1997, "con air film", "film soundtracks", "diane warren", "leann rimes alternative recording", "songbook a collection of hits album"],
+    "music_6942": [1997, "evolution album"],
+    "music_6943": [1997, "evolution album", "jim brickman piano", "duets"],
+    "music_6944": [1993, "toby keith debut album"],
+    "music_6945": [1994, "boomtown album"],
+    "music_6946": [1999, "how do you like me now album", "2000 hit single"],
+    "music_6947": [1997, "come on over album", "1998 single"],
+    "music_6948": [1997, "come on over album", "1998 single", "bryan white duet version", "duets"],
+    "music_6949": [1998, "faith album"],
+    "music_6950": [1994, "live through this album"],
+    "music_6951": [1994, "live through this album"],
+    "music_6952": [1994, "live through this album", "album track"],
+    "music_6953": [1993, "beautiful son single", "non album single"],
+    "music_6954": [1994, "american thighs album", "album track"],
+    "music_6955": [1994, "american thighs album"],
+    "music_6956": [1994, "american thighs album", "album track"],
+    "music_6957": [1997, "eight arms to hold you album", "album track"],
+    "music_6958": [1993, "exile in guyville album", "album track"],
+    "music_6959": [1996, "tidal album", "album track"],
+    "music_6960": [1996, "tidal album", "album track"],
+    "music_6961": [1996, "tidal album", "album track"],
+    "music_6962": [1996, "tidal album", "album track"],
+    "music_6963": [1996, "irresistible bliss album"],
+    "music_6964": [1998, "el oso album"],
+    "music_6965": [1994, "ruby vroom album", "album track"],
+    "music_6966": [1996, "irresistible bliss album", "album track"],
+};
 
 const songs = [
-    ["Volcano Girls", "Veruca Salt", "Medium",
-        ["Veruca Salt", "Hole", "L7", "The Breeders"]],
-
-    ["Seether", "Veruca Salt", "Medium",
-        ["Veruca Salt", "Hole", "Belly", "L7"]],
-
-    ["Shutterbug", "Veruca Salt", "Hard",
-        ["Veruca Salt", "Hole", "The Breeders", "Belly"]],
-
-    ["Number One Blind", "Veruca Salt", "Hard",
-        ["Veruca Salt", "L7", "Hole", "The Breeders"]],
-
-    ["Supernova", "Liz Phair", "Medium",
-        ["Liz Phair", "Fiona Apple", "Tracy Bonham", "Sheryl Crow"]],
-
-    ["Polyester Bride", "Liz Phair", "Hard",
-        ["Liz Phair", "Fiona Apple", "Lisa Loeb", "Tracy Bonham"]],
-
-    ["Never Said", "Liz Phair", "Hard",
-        ["Liz Phair", "Fiona Apple", "Sheryl Crow", "Lisa Loeb"]],
-
-    ["Criminal", "Fiona Apple", "Easy",
-        ["Fiona Apple", "Liz Phair", "Tori Amos", "Tracy Bonham"]],
-
-    ["Shadowboxer", "Fiona Apple", "Medium",
-        ["Fiona Apple", "Tori Amos", "Liz Phair", "Sarah McLachlan"]],
-
-    ["Sleep to Dream", "Fiona Apple", "Medium",
-        ["Fiona Apple", "Tori Amos", "Liz Phair", "Jewel"]],
-
-    ["Fast as You Can", "Fiona Apple", "Medium",
-        ["Fiona Apple", "Tori Amos", "Liz Phair", "Tracy Bonham"]],
-
-    ["Not an Addict", "K's Choice", "Medium",
-        ["K's Choice", "Republica", "Garbage", "The Cardigans"]],
-
-    ["Everything for Free", "K's Choice", "Hard",
-        ["K's Choice", "Republica", "Garbage", "Veruca Salt"]],
-
-    ["Saints", "The Breeders", "Hard",
-        ["The Breeders", "Belly", "Veruca Salt", "Hole"]],
-
-    ["Safari", "The Breeders", "Hard",
-        ["The Breeders", "Belly", "L7", "Veruca Salt"]],
-
-    ["Feed the Tree", "Belly", "Medium",
-        ["Belly", "The Breeders", "Veruca Salt", "Hole"]],
-
-    ["Gepetto", "Belly", "Hard",
-        ["Belly", "The Breeders", "Veruca Salt", "L7"]],
-
-    ["Now They'll Sleep", "Belly", "Hard",
-        ["Belly", "The Breeders", "Hole", "Veruca Salt"]],
-
-    ["Super-Connected", "Belly", "Hard",
-        ["Belly", "The Breeders", "Veruca Salt", "L7"]],
-
-    ["Pretend We're Dead", "L7", "Medium",
-        ["L7", "Hole", "Veruca Salt", "The Breeders"]],
-
-    ["Andres", "L7", "Hard",
-        ["L7", "Hole", "Veruca Salt", "Belly"]],
-
-    ["Fuel My Fire", "L7", "Hard",
-        ["L7", "Hole", "The Breeders", "Veruca Salt"]],
-
-    ["Stuck Here Again", "L7", "Hard",
-        ["L7", "Hole", "Belly", "Veruca Salt"]],
-
-    ["Tomorrow", "Silverchair", "Easy",
-        ["Silverchair", "Bush", "Candlebox", "Screaming Trees"]],
-
-    ["Pure Massacre", "Silverchair", "Medium",
-        ["Silverchair", "Bush", "Candlebox", "Sponge"]],
-
-    ["Freak", "Silverchair", "Medium",
-        ["Silverchair", "Bush", "Sponge", "Local H"]],
-
-    ["Abuse Me", "Silverchair", "Medium",
-        ["Silverchair", "Bush", "Candlebox", "Fuel"]],
-
-    ["Anthem for the Year 2000", "Silverchair", "Medium",
-        ["Silverchair", "Bush", "Sponge", "Fuel"]],
-
-    ["Plowed", "Sponge", "Medium",
-        ["Sponge", "Candlebox", "Local H", "Fuel"]],
-
-    ["Molly (16 Candles Down the Drain)", "Sponge", "Hard",
-        ["Sponge", "Candlebox", "Local H", "Everclear"]],
-
-    ["Wax Ecstatic", "Sponge", "Hard",
-        ["Sponge", "Candlebox", "Fuel", "Local H"]],
-
-    ["Have You Seen Mary", "Sponge", "Hard",
-        ["Sponge", "Candlebox", "Everclear", "Fuel"]],
-
-    ["Far Behind", "Candlebox", "Medium",
-        ["Candlebox", "Screaming Trees", "Silverchair", "Sponge"]],
-
-    ["You", "Candlebox", "Hard",
-        ["Candlebox", "Screaming Trees", "Silverchair", "Fuel"]],
-
-    ["Cover Me", "Candlebox", "Hard",
-        ["Candlebox", "Screaming Trees", "Sponge", "Local H"]],
-
-    ["Change", "Candlebox", "Hard",
-        ["Candlebox", "Screaming Trees", "Silverchair", "Sponge"]],
-
-    ["Nearly Lost You", "Screaming Trees", "Medium",
-        ["Screaming Trees", "Mudhoney", "Candlebox", "Alice in Chains"]],
-
-    ["Dollar Bill", "Screaming Trees", "Hard",
-        ["Screaming Trees", "Mudhoney", "Candlebox", "Soundgarden"]],
-
-    ["All I Know", "Screaming Trees", "Hard",
-        ["Screaming Trees", "Mudhoney", "Candlebox", "Silverchair"]],
-
-    ["Sworn and Broken", "Screaming Trees", "Hard",
-        ["Screaming Trees", "Mudhoney", "Candlebox", "Local H"]],
-
-    ["Touch Me I'm Sick", "Mudhoney", "Medium",
-        ["Mudhoney", "Screaming Trees", "Melvins", "L7"]],
-
-    ["Suck You Dry", "Mudhoney", "Hard",
-        ["Mudhoney", "Screaming Trees", "Melvins", "Candlebox"]],
-
-    ["Generation Spokesmodel", "Mudhoney", "Hard",
-        ["Mudhoney", "Screaming Trees", "Melvins", "Local H"]],
-
-    ["Into Your Shtik", "Mudhoney", "Hard",
-        ["Mudhoney", "Screaming Trees", "Melvins", "Sponge"]],
-
-    ["Jerry Was a Race Car Driver", "Primus", "Medium",
-        ["Primus", "Faith No More", "Helmet", "Filter"]],
-
-    ["My Name Is Mud", "Primus", "Medium",
-        ["Primus", "Faith No More", "Helmet", "Mudhoney"]],
-
-    ["Wynona's Big Brown Beaver", "Primus", "Medium",
-        ["Primus", "Faith No More", "Helmet", "Filter"]],
-
-    ["Over the Falls", "Primus", "Hard",
-        ["Primus", "Faith No More", "Helmet", "Mudhoney"]],
-
-    ["Peaches", "The Presidents of the United States of America", "Easy",
-        ["The Presidents of the United States of America", "Weezer", "Nada Surf", "Superdrag"]],
-
-    ["Lump", "The Presidents of the United States of America", "Easy",
-        ["The Presidents of the United States of America", "Weezer", "Nada Surf", "The Refreshments"]],
-
-    ["Kitty", "The Presidents of the United States of America", "Medium",
-        ["The Presidents of the United States of America", "Weezer", "Superdrag", "The Refreshments"]],
-
-    ["Mach 5", "The Presidents of the United States of America", "Hard",
-        ["The Presidents of the United States of America", "Weezer", "Nada Surf", "Superdrag"]],
-
-    ["Volcano", "The Presidents of the United States of America", "Hard",
-        ["The Presidents of the United States of America", "Weezer", "The Refreshments", "Superdrag"]],
-
-    ["Banditos", "The Refreshments", "Medium",
-        ["The Refreshments", "Fastball", "Cracker", "Gin Blossoms"]],
-
-    ["Down Together", "The Refreshments", "Hard",
-        ["The Refreshments", "Fastball", "Cracker", "Semisonic"]],
-
-    ["Mekong", "The Refreshments", "Hard",
-        ["The Refreshments", "Fastball", "Cracker", "Gin Blossoms"]],
-
-    ["Low", "Cracker", "Medium",
-        ["Cracker", "The Refreshments", "Soul Asylum", "Gin Blossoms"]],
-
-    ["Get Off This", "Cracker", "Hard",
-        ["Cracker", "The Refreshments", "Soul Asylum", "Fastball"]],
-
-    ["Euro-Trash Girl", "Cracker", "Hard",
-        ["Cracker", "The Refreshments", "Soul Asylum", "Semisonic"]],
-
-    ["I Hate My Generation", "Cracker", "Hard",
-        ["Cracker", "The Refreshments", "Soul Asylum", "Superdrag"]],
-
-    ["Teen Angst (What the World Needs Now)", "Cracker", "Hard",
-        ["Cracker", "The Refreshments", "Soul Asylum", "Fastball"]],
-
-    ["Sucked Out", "Superdrag", "Medium",
-        ["Superdrag", "Nada Surf", "Local H", "The Refreshments"]],
-
-    ["Destination Ursa Major", "Superdrag", "Hard",
-        ["Superdrag", "Nada Surf", "Local H", "The Refreshments"]],
-
-    ["Do the Vampire", "Superdrag", "Hard",
-        ["Superdrag", "Nada Surf", "Local H", "Harvey Danger"]],
-
-    ["Pets", "Porno for Pyros", "Medium",
-        ["Porno for Pyros", "Jane's Addiction", "Primus", "Faith No More"]],
-
-    ["Tahitian Moon", "Porno for Pyros", "Medium",
-        ["Porno for Pyros", "Jane's Addiction", "Primus", "Faith No More"]],
-
-    ["Hard Charger", "Porno for Pyros", "Hard",
-        ["Porno for Pyros", "Jane's Addiction", "Primus", "Helmet"]],
-
-    ["Standing Outside the Fire", "Garth Brooks", "Medium",
-        ["Garth Brooks", "Toby Keith", "Alan Jackson", "Tim McGraw"]],
-
-    ["The Thunder Rolls", "Garth Brooks", "Easy",
-        ["Garth Brooks", "Toby Keith", "Alan Jackson", "Clint Black"]],
-
-    ["Ain't Going Down (Til the Sun Comes Up)", "Garth Brooks", "Medium",
-        ["Garth Brooks", "Toby Keith", "Alan Jackson", "Tim McGraw"]],
-
-    ["Callin' Baton Rouge", "Garth Brooks", "Medium",
-        ["Garth Brooks", "Toby Keith", "Clint Black", "Alan Jackson"]],
-
-    ["She's in Love with the Boy", "Trisha Yearwood", "Medium",
-        ["Trisha Yearwood", "Faith Hill", "Martina McBride", "Shania Twain"]],
-
-    ["Walkaway Joe", "Trisha Yearwood", "Medium",
-        ["Trisha Yearwood", "Faith Hill", "Martina McBride", "Patty Loveless"]],
-
-    ["XXX's and OOO's (An American Girl)", "Trisha Yearwood", "Medium",
-        ["Trisha Yearwood", "Faith Hill", "Martina McBride", "Shania Twain"]],
-
-    ["How Do I Live", "Trisha Yearwood", "Medium",
-        ["Trisha Yearwood", "LeAnn Rimes", "Faith Hill", "Martina McBride"]],
-
-    ["A Broken Wing", "Martina McBride", "Medium",
-        ["Martina McBride", "Trisha Yearwood", "Faith Hill", "Shania Twain"]],
-
-    ["Valentine", "Martina McBride", "Medium",
-        ["Martina McBride", "Trisha Yearwood", "Faith Hill", "LeAnn Rimes"]],
-
-    ["Should've Been a Cowboy", "Toby Keith", "Easy",
-        ["Toby Keith", "Garth Brooks", "Alan Jackson", "Tim McGraw"]],
-
-    ["Who's That Man", "Toby Keith", "Medium",
-        ["Toby Keith", "Garth Brooks", "Alan Jackson", "Clint Black"]],
-
-    ["How Do You Like Me Now", "Toby Keith", "Medium",
-        ["Toby Keith", "Garth Brooks", "Tim McGraw", "Alan Jackson"]],
-
-    ["Honey I'm Home", "Shania Twain", "Easy",
-        ["Shania Twain", "Faith Hill", "Trisha Yearwood", "Martina McBride"]],
-
-    ["From This Moment On", "Shania Twain", "Easy",
-        ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Trisha Yearwood"]],
-
-    ["Let Me Let Go", "Faith Hill", "Medium",
-        ["Faith Hill", "Shania Twain", "Trisha Yearwood", "Martina McBride"]],
-
-    ["Miss World", "Hole", "Medium",
-        ["Hole", "Veruca Salt", "L7", "The Breeders"]],
-
-    ["Doll Parts", "Hole", "Medium",
-        ["Hole", "Veruca Salt", "L7", "The Breeders"]],
-
-    ["Softer, Softest", "Hole", "Hard",
-        ["Hole", "Veruca Salt", "L7", "Belly"]],
-
-    ["Beautiful Son", "Hole", "Hard",
-        ["Hole", "Veruca Salt", "The Breeders", "L7"]],
-
-    ["Forsythia", "Veruca Salt", "Hard",
-        ["Veruca Salt", "Hole", "Belly", "The Breeders"]],
-
-    ["All Hail Me", "Veruca Salt", "Hard",
-        ["Veruca Salt", "Hole", "L7", "Belly"]],
-
-    ["Victrola", "Veruca Salt", "Hard",
-        ["Veruca Salt", "Hole", "The Breeders", "Belly"]],
-
-    ["Straight", "Veruca Salt", "Hard",
-        ["Veruca Salt", "Hole", "L7", "The Breeders"]],
-
-    ["Girls Girls Girls", "Liz Phair", "Hard",
-        ["Liz Phair", "Fiona Apple", "Tracy Bonham", "Lisa Loeb"]],
-
-    ["Never Is a Promise", "Fiona Apple", "Hard",
-        ["Fiona Apple", "Tori Amos", "Liz Phair", "Sarah McLachlan"]],
-
-    ["The Child Is Gone", "Fiona Apple", "Hard",
-        ["Fiona Apple", "Tori Amos", "Liz Phair", "Tracy Bonham"]],
-
-    ["Carrion", "Fiona Apple", "Hard",
-        ["Fiona Apple", "Tori Amos", "Liz Phair", "Sarah McLachlan"]],
-
-    ["Slow Like Honey", "Fiona Apple", "Hard",
-        ["Fiona Apple", "Tori Amos", "Liz Phair", "Lisa Loeb"]],
-
-    ["Super Bon Bon", "Soul Coughing", "Medium",
-        ["Soul Coughing", "Cake", "Primus", "Cracker"]],
-
-    ["Circles", "Soul Coughing", "Hard",
-        ["Soul Coughing", "Cake", "Primus", "Cracker"]],
-
-    ["Screenwriter's Blues", "Soul Coughing", "Hard",
-        ["Soul Coughing", "Cake", "Primus", "Cracker"]],
-
-    ["Soundtrack to Mary", "Soul Coughing", "Hard",
-        ["Soul Coughing", "Cake", "Primus", "Superdrag"]]
+    ["Volcano Girls", "Veruca Salt", "Medium", ["Veruca Salt", "Hole", "L7", "The Breeders"]],
+    ["Seether", "Veruca Salt", "Medium", ["Veruca Salt", "Hole", "Belly", "L7"]],
+    ["Shutterbug", "Veruca Salt", "Hard", ["Veruca Salt", "Hole", "The Breeders", "Belly"]],
+    ["Number One Blind", "Veruca Salt", "Hard", ["Veruca Salt", "L7", "Hole", "The Breeders"]],
+    ["Supernova", "Liz Phair", "Medium", ["Liz Phair", "Fiona Apple", "Tracy Bonham", "Sheryl Crow"]],
+    ["Polyester Bride", "Liz Phair", "Hard", ["Liz Phair", "Fiona Apple", "Lisa Loeb", "Tracy Bonham"]],
+    ["Never Said", "Liz Phair", "Hard", ["Liz Phair", "Fiona Apple", "Sheryl Crow", "Lisa Loeb"]],
+    ["Criminal", "Fiona Apple", "Easy", ["Fiona Apple", "Liz Phair", "Tori Amos", "Tracy Bonham"]],
+    ["Shadowboxer", "Fiona Apple", "Medium", ["Fiona Apple", "Tori Amos", "Liz Phair", "Sarah McLachlan"]],
+    ["Sleep to Dream", "Fiona Apple", "Medium", ["Fiona Apple", "Tori Amos", "Liz Phair", "Jewel"]],
+    ["Fast as You Can", "Fiona Apple", "Medium", ["Fiona Apple", "Tori Amos", "Liz Phair", "Tracy Bonham"]],
+    ["Not an Addict", "K's Choice", "Medium", ["K's Choice", "Republica", "Garbage", "The Cardigans"]],
+    ["Everything for Free", "K's Choice", "Hard", ["K's Choice", "Republica", "Garbage", "Veruca Salt"]],
+    ["Saints", "The Breeders", "Hard", ["The Breeders", "Belly", "Veruca Salt", "Hole"]],
+    ["Safari", "The Breeders", "Hard", ["The Breeders", "Belly", "L7", "Veruca Salt"]],
+    ["Feed the Tree", "Belly", "Medium", ["Belly", "The Breeders", "Veruca Salt", "Hole"]],
+    ["Gepetto", "Belly", "Hard", ["Belly", "The Breeders", "Veruca Salt", "L7"]],
+    ["Now They'll Sleep", "Belly", "Hard", ["Belly", "The Breeders", "Hole", "Veruca Salt"]],
+    ["Super-Connected", "Belly", "Hard", ["Belly", "The Breeders", "Veruca Salt", "L7"]],
+    ["Pretend We're Dead", "L7", "Medium", ["L7", "Hole", "Veruca Salt", "The Breeders"]],
+    ["Andres", "L7", "Hard", ["L7", "Hole", "Veruca Salt", "Belly"]],
+    ["Fuel My Fire", "L7", "Hard", ["L7", "Hole", "The Breeders", "Veruca Salt"]],
+    ["Stuck Here Again", "L7", "Hard", ["L7", "Hole", "Belly", "Veruca Salt"]],
+    ["Tomorrow", "Silverchair", "Easy", ["Silverchair", "Bush", "Candlebox", "Screaming Trees"]],
+    ["Pure Massacre", "Silverchair", "Medium", ["Silverchair", "Bush", "Candlebox", "Sponge"]],
+    ["Freak", "Silverchair", "Medium", ["Silverchair", "Bush", "Sponge", "Local H"]],
+    ["Abuse Me", "Silverchair", "Medium", ["Silverchair", "Bush", "Candlebox", "Fuel"]],
+    ["Anthem for the Year 2000", "Silverchair", "Medium", ["Silverchair", "Bush", "Sponge", "Fuel"]],
+    ["Plowed", "Sponge", "Medium", ["Sponge", "Candlebox", "Local H", "Fuel"]],
+    ["Molly (16 Candles Down the Drain)", "Sponge", "Hard", ["Sponge", "Candlebox", "Local H", "Everclear"]],
+    ["Wax Ecstatic", "Sponge", "Hard", ["Sponge", "Candlebox", "Fuel", "Local H"]],
+    ["Have You Seen Mary", "Sponge", "Hard", ["Sponge", "Candlebox", "Everclear", "Fuel"]],
+    ["Far Behind", "Candlebox", "Medium", ["Candlebox", "Screaming Trees", "Silverchair", "Sponge"]],
+    ["You", "Candlebox", "Hard", ["Candlebox", "Screaming Trees", "Silverchair", "Fuel"]],
+    ["Cover Me", "Candlebox", "Hard", ["Candlebox", "Screaming Trees", "Sponge", "Local H"]],
+    ["Change", "Candlebox", "Hard", ["Candlebox", "Screaming Trees", "Silverchair", "Sponge"]],
+    ["Nearly Lost You", "Screaming Trees", "Medium", ["Screaming Trees", "Mudhoney", "Candlebox", "Alice in Chains"]],
+    ["Dollar Bill", "Screaming Trees", "Hard", ["Screaming Trees", "Mudhoney", "Candlebox", "Soundgarden"]],
+    ["All I Know", "Screaming Trees", "Hard", ["Screaming Trees", "Mudhoney", "Candlebox", "Silverchair"]],
+    ["Sworn and Broken", "Screaming Trees", "Hard", ["Screaming Trees", "Mudhoney", "Candlebox", "Local H"]],
+    ["Touch Me I'm Sick", "Mudhoney", "Medium", ["Mudhoney", "Screaming Trees", "Melvins", "L7"]],
+    ["Suck You Dry", "Mudhoney", "Hard", ["Mudhoney", "Screaming Trees", "Melvins", "Candlebox"]],
+    ["Generation Spokesmodel", "Mudhoney", "Hard", ["Mudhoney", "Screaming Trees", "Melvins", "Local H"]],
+    ["Into Your Shtik", "Mudhoney", "Hard", ["Mudhoney", "Screaming Trees", "Melvins", "Sponge"]],
+    ["Jerry Was a Race Car Driver", "Primus", "Medium", ["Primus", "Faith No More", "Helmet", "Filter"]],
+    ["My Name Is Mud", "Primus", "Medium", ["Primus", "Faith No More", "Helmet", "Mudhoney"]],
+    ["Wynona's Big Brown Beaver", "Primus", "Medium", ["Primus", "Faith No More", "Helmet", "Filter"]],
+    ["Over the Falls", "Primus", "Hard", ["Primus", "Faith No More", "Helmet", "Mudhoney"]],
+    ["Peaches", "The Presidents of the United States of America", "Easy", ["The Presidents of the United States of America", "Weezer", "Nada Surf", "Superdrag"]],
+    ["Lump", "The Presidents of the United States of America", "Easy", ["The Presidents of the United States of America", "Weezer", "Nada Surf", "The Refreshments"]],
+    ["Kitty", "The Presidents of the United States of America", "Medium", ["The Presidents of the United States of America", "Weezer", "Superdrag", "The Refreshments"]],
+    ["Mach 5", "The Presidents of the United States of America", "Hard", ["The Presidents of the United States of America", "Weezer", "Nada Surf", "Superdrag"]],
+    ["Volcano", "The Presidents of the United States of America", "Hard", ["The Presidents of the United States of America", "Weezer", "The Refreshments", "Superdrag"]],
+    ["Banditos", "The Refreshments", "Medium", ["The Refreshments", "Fastball", "Cracker", "Gin Blossoms"]],
+    ["Down Together", "The Refreshments", "Hard", ["The Refreshments", "Fastball", "Cracker", "Semisonic"]],
+    ["Mekong", "The Refreshments", "Hard", ["The Refreshments", "Fastball", "Cracker", "Gin Blossoms"]],
+    ["Low", "Cracker", "Medium", ["Cracker", "The Refreshments", "Soul Asylum", "Gin Blossoms"]],
+    ["Get Off This", "Cracker", "Hard", ["Cracker", "The Refreshments", "Soul Asylum", "Fastball"]],
+    ["Euro-Trash Girl", "Cracker", "Hard", ["Cracker", "The Refreshments", "Soul Asylum", "Semisonic"]],
+    ["I Hate My Generation", "Cracker", "Hard", ["Cracker", "The Refreshments", "Soul Asylum", "Superdrag"]],
+    ["Teen Angst (What the World Needs Now)", "Cracker", "Hard", ["Cracker", "The Refreshments", "Soul Asylum", "Fastball"]],
+    ["Sucked Out", "Superdrag", "Medium", ["Superdrag", "Nada Surf", "Local H", "The Refreshments"]],
+    ["Destination Ursa Major", "Superdrag", "Hard", ["Superdrag", "Nada Surf", "Local H", "The Refreshments"]],
+    ["Do the Vampire", "Superdrag", "Hard", ["Superdrag", "Nada Surf", "Local H", "Harvey Danger"]],
+    ["Pets", "Porno for Pyros", "Medium", ["Porno for Pyros", "Jane's Addiction", "Primus", "Faith No More"]],
+    ["Tahitian Moon", "Porno for Pyros", "Medium", ["Porno for Pyros", "Jane's Addiction", "Primus", "Faith No More"]],
+    ["Hard Charger", "Porno for Pyros", "Hard", ["Porno for Pyros", "Jane's Addiction", "Primus", "Helmet"]],
+    ["Standing Outside the Fire", "Garth Brooks", "Medium", ["Garth Brooks", "Toby Keith", "Alan Jackson", "Tim McGraw"]],
+    ["The Thunder Rolls", "Garth Brooks", "Easy", ["Garth Brooks", "Toby Keith", "Alan Jackson", "Clint Black"]],
+    ["Ain't Going Down (Til the Sun Comes Up)", "Garth Brooks", "Medium", ["Garth Brooks", "Toby Keith", "Alan Jackson", "Tim McGraw"]],
+    ["Callin' Baton Rouge", "Garth Brooks", "Medium", ["Garth Brooks", "Toby Keith", "Clint Black", "Alan Jackson"]],
+    ["She's in Love with the Boy", "Trisha Yearwood", "Medium", ["Trisha Yearwood", "Faith Hill", "Martina McBride", "Shania Twain"]],
+    ["Walkaway Joe", "Trisha Yearwood", "Medium", ["Trisha Yearwood", "Faith Hill", "Martina McBride", "Patty Loveless"]],
+    ["XXX's and OOO's (An American Girl)", "Trisha Yearwood", "Medium", ["Trisha Yearwood", "Faith Hill", "Martina McBride", "Shania Twain"]],
+    ["How Do I Live", "Trisha Yearwood", "Medium", ["Trisha Yearwood", "LeAnn Rimes", "Faith Hill", "Martina McBride"]],
+    ["A Broken Wing", "Martina McBride", "Medium", ["Martina McBride", "Trisha Yearwood", "Faith Hill", "Shania Twain"]],
+    ["Valentine", "Martina McBride", "Medium", ["Martina McBride", "Trisha Yearwood", "Faith Hill", "LeAnn Rimes"]],
+    ["Should've Been a Cowboy", "Toby Keith", "Easy", ["Toby Keith", "Garth Brooks", "Alan Jackson", "Tim McGraw"]],
+    ["Who's That Man", "Toby Keith", "Medium", ["Toby Keith", "Garth Brooks", "Alan Jackson", "Clint Black"]],
+    ["How Do You Like Me Now", "Toby Keith", "Medium", ["Toby Keith", "Garth Brooks", "Tim McGraw", "Alan Jackson"]],
+    ["Honey I'm Home", "Shania Twain", "Easy", ["Shania Twain", "Faith Hill", "Trisha Yearwood", "Martina McBride"]],
+    ["From This Moment On", "Shania Twain", "Easy", ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Trisha Yearwood"]],
+    ["Let Me Let Go", "Faith Hill", "Medium", ["Faith Hill", "Shania Twain", "Trisha Yearwood", "Martina McBride"]],
+    ["Miss World", "Hole", "Medium", ["Hole", "Veruca Salt", "L7", "The Breeders"]],
+    ["Doll Parts", "Hole", "Medium", ["Hole", "Veruca Salt", "L7", "The Breeders"]],
+    ["Softer, Softest", "Hole", "Hard", ["Hole", "Veruca Salt", "L7", "Belly"]],
+    ["Beautiful Son", "Hole", "Hard", ["Hole", "Veruca Salt", "The Breeders", "L7"]],
+    ["Forsythia", "Veruca Salt", "Hard", ["Veruca Salt", "Hole", "Belly", "The Breeders"]],
+    ["All Hail Me", "Veruca Salt", "Hard", ["Veruca Salt", "Hole", "L7", "Belly"]],
+    ["Victrola", "Veruca Salt", "Hard", ["Veruca Salt", "Hole", "The Breeders", "Belly"]],
+    ["Straight", "Veruca Salt", "Hard", ["Veruca Salt", "Hole", "L7", "The Breeders"]],
+    ["Girls! Girls! Girls!", "Liz Phair", "Hard", ["Liz Phair", "Fiona Apple", "Tracy Bonham", "Lisa Loeb"]],
+    ["Never Is a Promise", "Fiona Apple", "Hard", ["Fiona Apple", "Tori Amos", "Liz Phair", "Sarah McLachlan"]],
+    ["The Child Is Gone", "Fiona Apple", "Hard", ["Fiona Apple", "Tori Amos", "Liz Phair", "Tracy Bonham"]],
+    ["Carrion", "Fiona Apple", "Hard", ["Fiona Apple", "Tori Amos", "Liz Phair", "Sarah McLachlan"]],
+    ["Slow Like Honey", "Fiona Apple", "Hard", ["Fiona Apple", "Tori Amos", "Liz Phair", "Lisa Loeb"]],
+    ["Super Bon Bon", "Soul Coughing", "Medium", ["Soul Coughing", "Cake", "Primus", "Cracker"]],
+    ["Circles", "Soul Coughing", "Hard", ["Soul Coughing", "Cake", "Primus", "Cracker"]],
+    ["Screenwriter's Blues", "Soul Coughing", "Hard", ["Soul Coughing", "Cake", "Primus", "Cracker"]],
+    ["Soundtrack to Mary", "Soul Coughing", "Hard", ["Soul Coughing", "Cake", "Primus", "Superdrag"]],
 ];
 
-const quizPack88 = songs.map(
-    ([title, artist, difficulty, answers], index) => ({
-        id: `music_${6867 + index}`,
-        category: "Music",
-        difficulty,
-        question: `Which artist recorded '${title}'?`,
-        answers,
-        correctAnswer: artist
-    })
-);
+const quizPack88 = songs.map(([title, artist, difficulty, answers], index) => {
+    const id = `music_${6867 + index}`;
+    const recording = recordingTags[id];
+    const artistTags = performerTags[artist];
+    if (!recording || !artistTags) throw new Error(`Missing metadata for ${id}`);
+    const year = recording[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    const albumTrack = recording.includes("album track");
+    const question = id === "music_6941"
+        ? "Whose version of 'How Do I Live' was used in the film Con Air?"
+        : `Which artist recorded '${title}'?`;
+    return {
+        id, category: "Music", difficulty, question, answers, correctAnswer: artist,
+        tags: [...new Set([
+            "music", "songs", "recordings", albumTrack ? "album tracks" : "singles",
+            decade, `${decade} music`, `${year} releases`, title.toLowerCase(),
+            artist.toLowerCase(), ...artistTags, ...recording.slice(1)
+        ])],
+        dailyEligible: true
+    };
+});
 
 module.exports = quizPack88;
