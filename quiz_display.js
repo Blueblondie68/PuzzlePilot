@@ -1,6 +1,7 @@
- // quiz_display.js
-// PuzzlePilot Quiz
-// Components V2 display and answer buttons
+// quiz_display.js
+// PuzzlePilot Bigggggg Quiz
+// Daily Quiz display refresh - Discord Components V2
+// Appearance only: quiz timing, scoring and progression stay in quiz.js.
 
 const {
     ActionRowBuilder,
@@ -12,85 +13,32 @@ const {
     TextDisplayBuilder
 } = require('discord.js');
 
-
-// ─────────────────────────────────────────────
-// COLOURS
-// ─────────────────────────────────────────────
-
+// Keep the existing accent colours and exported names.
 const QUIZ_ACCENT = 0x8B5CF6;
 const SUCCESS_ACCENT = 0x57F287;
 const WRONG_ACCENT = 0xED4245;
 const TIMEOUT_ACCENT = 0xFEE75C;
 
-
-// ─────────────────────────────────────────────
-// SESSION HELPERS
-// ─────────────────────────────────────────────
-
-function makeAnswerId(
-    sessionId,
-    answerIndex
-) {
-    return (
-        `quiz_answer_` +
-        `${answerIndex}_` +
-        `${sessionId}`
-    );
+function getCurrentQuestion(session) {
+    return session.questions[session.questionIndex];
 }
 
-
-function getCurrentQuestion(
-    session
-) {
-    return session.questions[
-        session.questionIndex
-    ];
+function makeAnswerId(sessionId, answerIndex) {
+    // quiz.js uses this exact prefix and answer index to handle clicks.
+    return `quiz_answer_${answerIndex}_${sessionId}`;
 }
 
-
-function progressText(
-    session
-) {
-    const answered =
-        session.questionIndex;
-
-    const remaining =
-        session.questions.length -
-        session.questionIndex;
-
-    return (
-        `**Score:** ` +
-        `${session.score}/${answered}` +
-        `   •   ` +
-        `**Remaining:** ${remaining}`
-    );
+function nextMessage(session) {
+    return session.questionIndex >= session.questions.length - 1
+        ? 'Final score in 3 seconds...'
+        : 'Next question in 3 seconds...';
 }
-
-
-function nextMessage(
-    session
-) {
-    if (
-        session.questionIndex >=
-        session.questions.length -
-            1
-    ) {
-        return (
-            'Final score in 3 seconds...'
-        );
-    }
-
-    return (
-        'Next question in 3 seconds...'
-    );
-}
-
 
 // ─────────────────────────────────────────────
-// QUESTION SUBJECT LABEL
+// TELEVISION PROGRAMME LABELS
 // ─────────────────────────────────────────────
-// Show the actual TV programme when its tag is available.
-// Do not mistake a storyline tag or year for a programme.
+// Preserve programme names from the newer display file.
+// Use a named show when the question or its tags identify one.
 
 const TELEVISION_PROGRAMMES = [
     'EastEnders',
@@ -145,10 +93,7 @@ const PROGRAMME_GROUPS = new Set([
 
 function getProgrammeName(question) {
     for (const field of ['programme', 'program', 'show', 'series']) {
-        if (
-            typeof question[field] === 'string' &&
-            question[field].trim()
-        ) {
+        if (typeof question[field] === 'string' && question[field].trim()) {
             return question[field].trim();
         }
     }
@@ -157,12 +102,9 @@ function getProgrammeName(question) {
         ? question.tags.filter(tag => typeof tag === 'string')
         : [];
 
-    // Recent packs use a subject, genre, programme,
-    // year and storyline in that order.
     for (let i = 0; i < tags.length - 1; i++) {
         if (PROGRAMME_GROUPS.has(tags[i].trim().toLowerCase())) {
             const candidate = tags[i + 1].trim();
-
             if (
                 candidate &&
                 !PROGRAMME_GROUPS.has(candidate.toLowerCase()) &&
@@ -173,16 +115,8 @@ function getProgrammeName(question) {
         }
     }
 
-    // Older packs may put the programme in a
-    // different position within their tags.
     for (const programme of TELEVISION_PROGRAMMES) {
-        if (
-            tags.some(
-                tag =>
-                    tag.trim().toLowerCase() ===
-                    programme.toLowerCase()
-            )
-        ) {
+        if (tags.some(tag => tag.trim().toLowerCase() === programme.toLowerCase())) {
             return programme;
         }
     }
@@ -190,479 +124,240 @@ function getProgrammeName(question) {
     return null;
 }
 
-
 function questionSubjectLabel(question) {
-    const category =
-        String(question.category || 'General Knowledge').trim();
-
-    const isTelevision =
-        /^(?:tv|television)$/i.test(category);
-
-    if (isTelevision) {
-        const programme =
-            getProgrammeName(question);
-
+    const category = String(question.category || 'General Knowledge').trim();
+    if (/^(?:tv|television)$/i.test(category)) {
+        const programme = getProgrammeName(question);
         return programme
             ? `TELEVISION • ${programme.toUpperCase()}`
             : 'TELEVISION';
     }
-
     return category.toUpperCase();
 }
 
-
 // ─────────────────────────────────────────────
-// ANSWER BUTTONS
+// SHARED DISPLAY HELPERS
 // ─────────────────────────────────────────────
 
-function buildAnswerRows(
-    session,
-    selectedAnswer = null,
-    locked = false
-) {
-    const question =
-        getCurrentQuestion(
-            session
+function displayText(content) {
+    return new TextDisplayBuilder().setContent(content);
+}
+
+function newQuizContainer(accent = QUIZ_ACCENT) {
+    return new ContainerBuilder()
+        .setAccentColor(accent)
+        .addTextDisplayComponents(
+            displayText('## 🧠 PUZZLEPILOT  •  DAILY QUIZ')
         );
+}
 
-    const answers =
-        session.shuffledAnswers;
+function addSeparator(container) {
+    return container.addSeparatorComponents(new SeparatorBuilder());
+}
 
+function progressText(session, includeCurrent = false) {
+    const total = session.questions.length;
+    const completed = Math.min(
+        total,
+        session.questionIndex + (includeCurrent ? 1 : 0)
+    );
+    return `**Correct:** ${session.score}  •  **Completed:** ${completed}/${total}`;
+}
+
+function questionNumberText(session) {
+    return `**QUESTION ${session.questionIndex + 1} OF ${session.questions.length}**`;
+}
+
+// Buttons stay in two rows of two, as Discord does not offer
+// arbitrary button sizes or full-width native answer buttons.
+// Keep answer IDs, positions and red/green reveal unchanged.
+function buildAnswerRows(session, selectedAnswer = null, locked = false) {
+    const question = getCurrentQuestion(session);
+    const answers = session.shuffledAnswers;
     const rows = [];
 
-    for (
-        let rowStart = 0;
-        rowStart <
-            answers.length;
-        rowStart += 2
-    ) {
-        const row =
-            new ActionRowBuilder();
+    for (let rowStart = 0; rowStart < answers.length; rowStart += 2) {
+        const row = new ActionRowBuilder();
+        for (
+            let answerIndex = rowStart;
+            answerIndex < Math.min(rowStart + 2, answers.length);
+            answerIndex++
+        ) {
+            const answer = answers[answerIndex];
+            let style = ButtonStyle.Primary;
 
-        const rowAnswers =
-            answers.slice(
-                rowStart,
-                rowStart + 2
-            );
-
-        row.addComponents(
-            rowAnswers.map(
-                (
-                    answer,
-                    offset
-                ) => {
-                    const answerIndex =
-                        rowStart +
-                        offset;
-
-                    let style =
-                        ButtonStyle.Primary;
-
-                    if (
-                        locked
-                    ) {
-                        style =
-                            ButtonStyle.Secondary;
-
-                        if (
-                            answer ===
-                            question.correctAnswer
-                        ) {
-                            style =
-                                ButtonStyle.Success;
-
-                        } else if (
-                            selectedAnswer &&
-                            answer ===
-                                selectedAnswer
-                        ) {
-                            style =
-                                ButtonStyle.Danger;
-                        }
-                    }
-
-                    return (
-                        new ButtonBuilder()
-                            .setCustomId(
-                                locked
-                                    ?
-                                    `quiz_locked_` +
-                                    `${answerIndex}_` +
-                                    `${session.id}`
-                                    :
-                                    makeAnswerId(
-                                        session.id,
-                                        answerIndex
-                                    )
-                            )
-                            .setLabel(
-                                answer
-                            )
-                            .setStyle(
-                                style
-                            )
-                            .setDisabled(
-                                locked
-                            )
-                    );
+            if (locked) {
+                style = ButtonStyle.Secondary;
+                if (answer === question.correctAnswer) {
+                    style = ButtonStyle.Success;
+                } else if (selectedAnswer !== null && answer === selectedAnswer) {
+                    style = ButtonStyle.Danger;
                 }
-            )
-        );
+            }
 
-        rows.push(
-            row
-        );
+            const letter = String.fromCharCode(65 + answerIndex);
+            const button = new ButtonBuilder()
+                .setCustomId(
+                    locked
+                        ? `quiz_locked_${answerIndex}_${session.id}`
+                        : makeAnswerId(session.id, answerIndex)
+                )
+                .setLabel(answer.length <= 77 ? `${letter}. ${answer}` : answer)
+                .setStyle(style)
+                .setDisabled(locked);
+
+            row.addComponents(button);
+        }
+        rows.push(row);
     }
 
     return rows;
 }
 
-
-// ─────────────────────────────────────────────
-// COMPONENTS V2 DISPLAY
-// ─────────────────────────────────────────────
-
-function addAnswerRows(
-    container,
-    rows
-) {
-    for (
-        const row of rows
-    ) {
-        container.addActionRowComponents(
-            row
-        );
+function addAnswerRows(container, rows) {
+    for (const row of rows) {
+        container.addActionRowComponents(row);
     }
-
     return container;
 }
 
+// ─────────────────────────────────────────────
+// QUESTION SCREEN
+// ─────────────────────────────────────────────
 
-function buildQuestionContainer(
-    session
-) {
-    const question =
-        getCurrentQuestion(
-            session
-        );
+function buildQuestionContainer(session) {
+    const question = getCurrentQuestion(session);
+    const container = newQuizContainer();
 
-    const container =
-        new ContainerBuilder()
-            .setAccentColor(
-                QUIZ_ACCENT
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        `# 🧠 PUZZLEPILOT\n` +
-                        `## DAILY QUIZ`
-                    )
-            )
-            .addSeparatorComponents(
-                new SeparatorBuilder()
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        `### QUESTION ` +
-                        `${session.questionIndex + 1} ` +
-                        `OF ` +
-                        `${session.questions.length}\n` +
-                        `${progressText(session)}\n\n` +
-                        `⏱️ **15 seconds** • ` +
-                        `Your first answer is final.`
-                    )
-            )
-            .addSeparatorComponents(
-                new SeparatorBuilder()
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        `**${questionSubjectLabel(question)}**\n` +
-                        `## ${question.question}`
-                    )
-            );
-
-    addAnswerRows(
-        container,
-        buildAnswerRows(
-            session
+    container.addTextDisplayComponents(
+        displayText(
+            `${questionNumberText(session)}\n` +
+            `${progressText(session)}\n` +
+            '⏱️ **15 seconds** to answer • First choice is final'
+        )
+    );
+    addSeparator(container);
+    container.addTextDisplayComponents(
+        displayText(
+            `**${questionSubjectLabel(question)}**\n` +
+            `## ${question.question}`
         )
     );
 
-    container
-        .addSeparatorComponents(
-            new SeparatorBuilder()
-        )
-        .addTextDisplayComponents(
-            new TextDisplayBuilder()
-                .setContent(
-                    `*Daily Quiz • ` +
-                    `New quiz after midnight ` +
-                    `UK time*`
-                )
-        );
+    addAnswerRows(container, buildAnswerRows(session));
+    addSeparator(container);
+    container.addTextDisplayComponents(
+        displayText('*New Daily Quiz after midnight UK time*')
+    );
 
     return container;
 }
 
+// ─────────────────────────────────────────────
+// ANSWER REVEAL SCREEN
+// ─────────────────────────────────────────────
 
-function buildResultContainer(
-    session,
-    selectedAnswer,
-    resultType
-) {
-    const question =
-        getCurrentQuestion(
-            session
-        );
+function buildResultContainer(session, selectedAnswer, resultType) {
+    const question = getCurrentQuestion(session);
+    let accent;
+    let heading;
+    let details;
 
-    let accent =
-        QUIZ_ACCENT;
-
-    let resultHeading =
-        '';
-
-    let resultBody =
-        '';
-
-    if (
-        resultType ===
-        'correct'
-    ) {
-        accent =
-            SUCCESS_ACCENT;
-
-        resultHeading =
-            '✅ CORRECT!';
-
-        resultBody =
-            `The answer is ` +
-            `**${question.correctAnswer}**.`;
-
-    } else if (
-        resultType ===
-        'wrong'
-    ) {
-        accent =
-            WRONG_ACCENT;
-
-        resultHeading =
-            '❌ WRONG!';
-
-        resultBody =
-            `You chose ` +
-            `**${selectedAnswer}**.\n` +
-            `The correct answer was ` +
-            `**${question.correctAnswer}**.`;
-
+    if (resultType === 'correct') {
+        accent = SUCCESS_ACCENT;
+        heading = '✅ CORRECT!';
+        details = `**Answer:** ${question.correctAnswer}`;
+    } else if (resultType === 'wrong') {
+        accent = WRONG_ACCENT;
+        heading = '❌ NOT QUITE!';
+        details =
+            `**You chose:** ${selectedAnswer}\n` +
+            `**Correct answer:** ${question.correctAnswer}`;
     } else {
-        accent =
-            TIMEOUT_ACCENT;
-
-        resultHeading =
-            '⏰ TIME IS UP!';
-
-        resultBody =
-            `The correct answer was ` +
-            `**${question.correctAnswer}**.`;
+        accent = TIMEOUT_ACCENT;
+        heading = '⏰ TIME IS UP!';
+        details = `**Correct answer:** ${question.correctAnswer}`;
     }
 
-    const container =
-        new ContainerBuilder()
-            .setAccentColor(
-                accent
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        `# 🧠 PUZZLEPILOT\n` +
-                        `## DAILY QUIZ`
-                    )
-            )
-            .addSeparatorComponents(
-                new SeparatorBuilder()
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        `### QUESTION ` +
-                        `${session.questionIndex + 1} ` +
-                        `OF ` +
-                        `${session.questions.length}\n` +
-                        `**Score:** ` +
-                        `${session.score}/` +
-                        `${session.questionIndex + 1}`
-                    )
-            )
-            .addSeparatorComponents(
-                new SeparatorBuilder()
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        `**${questionSubjectLabel(question)}**\n` +
-                        `**${question.question}**\n\n` +
-                        `## ${resultHeading}\n` +
-                        `${resultBody}`
-                    )
-            );
-
-    addAnswerRows(
-        container,
-        buildAnswerRows(
-            session,
-            selectedAnswer,
-            true
+    const container = newQuizContainer(accent);
+    container.addTextDisplayComponents(
+        displayText(
+            `${questionNumberText(session)}\n` +
+            progressText(session, true)
         )
     );
-
-    container
-        .addSeparatorComponents(
-            new SeparatorBuilder()
+    addSeparator(container);
+    container.addTextDisplayComponents(
+        displayText(
+            `**${questionSubjectLabel(question)}**\n` +
+            `## ${question.question}`
         )
-        .addTextDisplayComponents(
-            new TextDisplayBuilder()
-                .setContent(
-                    `*${nextMessage(
-                        session
-                    )}*`
-                )
-        );
+    );
+    container.addTextDisplayComponents(
+        displayText(`### ${heading}\n${details}`)
+    );
+
+    addAnswerRows(container, buildAnswerRows(session, selectedAnswer, true));
+    addSeparator(container);
+    container.addTextDisplayComponents(
+        displayText(`*${nextMessage(session)}*`)
+    );
 
     return container;
 }
 
+// ─────────────────────────────────────────────
+// FINAL SCORE
+// ─────────────────────────────────────────────
 
-function buildFinalContainer(
-    session
-) {
-    const score =
-        session.score;
-
-    const total =
-        session.questions.length;
-
+function buildFinalContainer(session) {
+    const score = session.score;
+    const total = session.questions.length;
+    const percent = total ? Math.round((score / total) * 100) : 0;
     let message;
 
-    if (
-        score ===
-        total
-    ) {
-        message =
-            'Perfect score — outstanding! 🏆';
-
-    } else if (
-        score >=
-        8
-    ) {
-        message =
-            'Excellent work! 🌟';
-
-    } else if (
-        score >=
-        6
-    ) {
-        message =
-            'Nicely done! 👏';
-
-    } else if (
-        score >=
-        4
-    ) {
-        message =
-            'A respectable run — tomorrow is another quiz!';
-
+    if (score === total) {
+        message = 'Perfect score — outstanding! 🏆';
+    } else if (score >= 8) {
+        message = 'Excellent work! 🌟';
+    } else if (score >= 6) {
+        message = 'Nicely done! 👏';
+    } else if (score >= 4) {
+        message = 'A respectable run — tomorrow is another quiz!';
     } else {
-        message =
-            'That was a tough one — there is always tomorrow!';
+        message = 'That was a tough one — there is always tomorrow!';
     }
 
-    return (
-        new ContainerBuilder()
-            .setAccentColor(
-                SUCCESS_ACCENT
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        `# 🧠 PUZZLEPILOT\n` +
-                        `## 🎉 DAILY QUIZ COMPLETE!`
-                    )
-            )
-            .addSeparatorComponents(
-                new SeparatorBuilder()
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        `# ${score}/${total}\n` +
-                        `**${message}**`
-                    )
-            )
-            .addSeparatorComponents(
-                new SeparatorBuilder()
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        `Come back after ` +
-                        `**midnight UK time** ` +
-                        `for a new Daily Quiz.`
-                    )
-            )
+    const container = newQuizContainer(SUCCESS_ACCENT);
+    addSeparator(container);
+    container.addTextDisplayComponents(
+        displayText(
+            '## 🎉 DAILY QUIZ COMPLETE!\n' +
+            `# ${score} / ${total}\n` +
+            `**${percent}% correct**  •  ${message}`
+        )
     );
+    addSeparator(container);
+    container.addTextDisplayComponents(
+        displayText('Come back after **midnight UK time** for a new Daily Quiz.')
+    );
+    return container;
 }
 
-
-function buildSimpleContainer(
-    title,
-    message,
-    accent = QUIZ_ACCENT
-) {
-    return (
-        new ContainerBuilder()
-            .setAccentColor(
-                accent
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        `# 🧠 PUZZLEPILOT\n` +
-                        `## ${title}`
-                    )
-            )
-            .addSeparatorComponents(
-                new SeparatorBuilder()
-            )
-            .addTextDisplayComponents(
-                new TextDisplayBuilder()
-                    .setContent(
-                        message
-                    )
-            )
-    );
+// Used for already-played and error messages by quiz.js.
+function buildSimpleContainer(title, message, accent = QUIZ_ACCENT) {
+    const container = newQuizContainer(accent);
+    addSeparator(container);
+    container.addTextDisplayComponents(displayText(`## ${title}\n${message}`));
+    return container;
 }
 
-
-function v2Payload(
-    container
-) {
+function v2Payload(container) {
     return {
-        components: [
-            container
-        ],
-
-        flags:
-            MessageFlags.IsComponentsV2
+        components: [container],
+        flags: MessageFlags.IsComponentsV2
     };
 }
-
-
-// ─────────────────────────────────────────────
-// EXPORTS
-// ─────────────────────────────────────────────
 
 module.exports = {
     QUIZ_ACCENT,
@@ -676,3 +371,4 @@ module.exports = {
     buildSimpleContainer,
     v2Payload
 };
+
