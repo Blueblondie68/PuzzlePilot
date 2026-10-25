@@ -1,5 +1,4 @@
-
-// quiz_continuous.js
+ // quiz_continuous.js
 // PuzzlePilot - Bigggggg Quiz continuous solo play
 // Separate from the Daily Quiz: no daily completion or history changes.
 
@@ -192,6 +191,57 @@ function tagChoices(bank, category) {
         );
 }
 
+// Display labels only. Never change the underlying tag:
+// the exact original tag is needed to filter questions.
+function displayName(value) {
+    const original = String(value || 'All subjects').trim();
+    const lower = original.toLowerCase();
+
+    const names = {
+        'eastenders': 'EastEnders',
+        'coronation street': 'Coronation Street',
+        'emmerdale': 'Emmerdale',
+        'emmerdale farm': 'Emmerdale Farm',
+        'home and away': 'Home and Away',
+        'family affairs': 'Family Affairs',
+        'the weakest link': 'The Weakest Link',
+        'who wants to be a millionaire?': 'Who Wants to Be a Millionaire?',
+        'take the high road': 'Take the High Road',
+        'play your cards right': 'Play Your Cards Right',
+        'never mind the buzzcocks': 'Never Mind the Buzzcocks'
+    };
+
+    if (Object.prototype.hasOwnProperty.call(names, lower)) {
+        return names[lower];
+    }
+
+    const acronyms = {
+        tv: 'TV',
+        bbc: 'BBC',
+        itv: 'ITV',
+        uk: 'UK',
+        usa: 'USA',
+        us: 'US'
+    };
+
+    // Preserve names already correctly capitalised, such as
+    // Doctor Who or BBC, and format all-lowercase older tags.
+    if (original !== lower) {
+        return original;
+    }
+
+    return original.split(/(\s+)/).map(part => {
+        if (/^\s+$/.test(part)) return part;
+        const key = part.toLowerCase();
+        if (acronyms[key]) return acronyms[key];
+        return part.charAt(0).toUpperCase() + part.slice(1);
+    }).join('');
+}
+
+function resultSubjectName(s) {
+    return displayName(s.tag || s.category || 'All subjects');
+}
+
 // ─────────────────────────────────────────────
 // DISCORD DISPLAY HELPERS
 // ─────────────────────────────────────────────
@@ -204,7 +254,7 @@ function container(accent = PURPLE) {
     return new ContainerBuilder()
         .setAccentColor(accent)
         .addTextDisplayComponents(
-            text('## 🧠 PUZZLEPILOT  •  CONTINUOUS QUIZ')
+            text('# 🧠 PUZZLEPILOT\n**CONTINUOUS QUIZ  •  SOLO PLAY**')
         );
 }
 
@@ -297,14 +347,15 @@ function categoryScreen(lobby) {
     c.addTextDisplayComponents(
         text(
             '### Choose your subject\n' +
-            'Pick a subject, or use all subjects for a mixed quiz.'
+            `**${shortCount(lobby.bank.length)}** to play.\n` +
+            'Choose a subject or select **All subjects** for a mixed quiz.'
         )
     );
 
     line(c);
 
     const choices = p.entries.map((x, i) => ({
-        label: x.name.slice(0, 100),
+        label: displayName(x.name).slice(0, 100),
         value: String(p.page * PAGE_SIZE + i),
         description: shortCount(x.count).slice(0, 100)
     }));
@@ -332,8 +383,8 @@ function tagScreen(lobby) {
 
     c.addTextDisplayComponents(
         text(
-            `### ${lobby.category}\n` +
-            'Play the whole subject, or choose a more specific tagged topic.'
+            `### ${displayName(lobby.category)}\n` +
+            'Play everything in this subject, or choose a specific topic.'
         )
     );
 
@@ -350,7 +401,7 @@ function tagScreen(lobby) {
                     .setPlaceholder('Choose a tagged topic (optional)')
                     .addOptions(
                         p.entries.map((x, i) => ({
-                            label: x.name.slice(0, 100),
+                            label: displayName(x.name).slice(0, 100),
                             description: shortCount(x.count).slice(0, 100),
                             value: String(p.page * PAGE_SIZE + i)
                         }))
@@ -365,7 +416,7 @@ function tagScreen(lobby) {
         row(
             button(
                 `cq_alltag_${lobby.id}`,
-                `All ${lobby.category}`.slice(0, 80),
+                `All ${displayName(lobby.category)}`.slice(0, 80),
                 ButtonStyle.Success
             ),
             button(`cq_back_${lobby.id}`, 'Back')
@@ -395,10 +446,10 @@ function lengthScreen(lobby) {
 
     c.addTextDisplayComponents(
         text(
-            `### ${chosen}\n` +
-            `${shortCount(count)} available.\n` +
-            'Choose the number of questions, or play Endless. ' +
-            'You can stop at any time.'
+            `### ${displayName(chosen)}\n` +
+            `**${shortCount(count)} available**\n` +
+            'Choose a quiz length, or play **Endless**. ' +
+            'You can stop whenever you like.'
         )
     );
 
@@ -452,54 +503,73 @@ function lengthScreen(lobby) {
 // QUESTION SUBJECT LABEL
 // ─────────────────────────────────────────────
 
+// Programme tags can be at different positions in old
+// and new quiz packs. Use the same programme names and
+// genre conventions as the Daily Quiz display.
+const TV_PROGRAMMES = [
+    'EastEnders', 'Coronation Street', 'Emmerdale',
+    'Emmerdale Farm', 'Brookside', 'Crossroads',
+    'Eldorado', 'Family Affairs', 'Hollyoaks',
+    'Doctors', 'Neighbours', 'Home and Away',
+    'Take the High Road', 'River City', 'The Chase',
+    'The Weakest Link', 'Mastermind', 'University Challenge',
+    'Pointless', 'Who Wants to Be a Millionaire?',
+    'Catchphrase', 'Blockbusters', 'Bullseye',
+    'Family Fortunes', 'The Crystal Maze',
+    'Countdown', 'The Generation Game',
+    'Play Your Cards Right', 'Blankety Blank',
+    'The Price Is Right'
+];
+
+const TV_GROUPS = new Set([
+    'soaps', 'soap operas', 'quiz shows', 'game shows',
+    'quiz and game shows', 'quiz & game shows',
+    'sitcoms', 'dramas', 'drama series', 'tv dramas',
+    'television dramas', 'comedies', 'reality shows',
+    "children's television", "children's tv"
+]);
+
 function questionLabel(q) {
     const category = subjectName(q);
 
     if (category !== 'Television') {
-        return category.toUpperCase();
+        return displayName(category).toUpperCase();
     }
 
-    const programme = [
-        'programme',
-        'program',
-        'show',
-        'series'
-    ]
-        .map(k => q[k])
-        .find(x =>
-            typeof x === 'string' && x.trim()
-        );
-
-    if (programme) {
-        return `TELEVISION • ${programme.toUpperCase()}`;
+    for (const field of ['programme', 'program', 'show', 'series']) {
+        if (typeof q[field] === 'string' && q[field].trim()) {
+            return `TELEVISION • ${displayName(q[field]).toUpperCase()}`;
+        }
     }
 
-    const tags = Array.isArray(q.tags) ? q.tags : [];
+    const tags = Array.isArray(q.tags)
+        ? q.tags.filter(t => typeof t === 'string')
+        : [];
 
-    const groups = new Set([
-        'soaps',
-        'soap operas',
-        'quiz shows',
-        'game shows',
-        'quiz and game shows',
-        'quiz & game shows'
-    ]);
+    for (let i = 0; i < tags.length - 1; i++) {
+        if (!TV_GROUPS.has(tags[i].trim().toLowerCase())) {
+            continue;
+        }
 
-    const index = tags.findIndex(t =>
-        typeof t === 'string' &&
-        groups.has(t.trim().toLowerCase())
-    );
+        const candidate = tags[i + 1].trim();
 
-    const possible = index >= 0
-        ? tags[index + 1]
-        : null;
+        if (
+            candidate &&
+            !TV_GROUPS.has(candidate.toLowerCase()) &&
+            !/^(?:19|20)\d{2}(?:s)?$/.test(candidate)
+        ) {
+            return `TELEVISION • ${displayName(candidate).toUpperCase()}`;
+        }
+    }
 
-    if (
-        typeof possible === 'string' &&
-        possible.trim() &&
-        !/^(?:19|20)\d{2}(?:s)?$/.test(possible.trim())
-    ) {
-        return `TELEVISION • ${possible.trim().toUpperCase()}`;
+    for (const programme of TV_PROGRAMMES) {
+        if (
+            tags.some(t =>
+                t.trim().toLowerCase() === programme.toLowerCase()
+            )
+        ) {
+            return `TELEVISION • ${programme.toUpperCase()}`;
+        }
     }
 
     return 'TELEVISION';
@@ -561,25 +631,21 @@ function gameScreen(s, result = null, selected = null) {
     if (result === 'timeout') accent = YELLOW;
 
     const c = container(accent);
+    const maximum = s.limit === null ? 'ENDLESS' : s.limit;
+    const number = result ? s.completed : s.completed + 1;
 
-    const maximum =
-        s.limit === null ? 'ENDLESS' : s.limit;
-
-    const current =
-        result ? s.completed : s.completed + 1;
+    // Avoid showing 0/0 before the first answer.
+    const progress = s.limit === null
+        ? `${s.completed} completed`
+        : `${s.completed}/${s.limit} completed`;
 
     c.addTextDisplayComponents(
         text(
-            `**QUESTION ${current} OF ${maximum}**\n` +
-            `**Correct:** ${s.score}  •  ` +
-            `**Completed:** ${s.completed}` +
-            (s.limit === null ? '' : `/${s.limit}`) +
-            '\n' +
-            (
-                result
-                    ? ''
-                    : '⏱️ **15 seconds** • First choice is final'
-            )
+            `### QUESTION ${number} OF ${maximum}\n` +
+            `**Score:** ${s.score}   •   **${progress}**\n` +
+            (result
+                ? 'Answer revealed • Moving on automatically'
+                : '⏱️ **15 seconds** to answer • First choice is final')
         )
     );
 
@@ -593,22 +659,20 @@ function gameScreen(s, result = null, selected = null) {
     );
 
     if (result) {
-        const title =
-            result === 'correct'
-                ? '✅ CORRECT!'
-                : result === 'wrong'
-                    ? '❌ NOT QUITE!'
-                    : '⏰ TIME IS UP!';
+        const title = result === 'correct'
+            ? '✅ CORRECT!'
+            : result === 'wrong'
+                ? '❌ NOT QUITE!'
+                : '⏰ TIME IS UP!';
 
-        const detail =
-            result === 'wrong'
-                ? `You chose: **${selected}**\n`
-                : '';
+        const detail = result === 'wrong'
+            ? `Your answer: **${selected}**\n`
+            : '';
 
         c.addTextDisplayComponents(
             text(
                 `### ${title}\n` +
-                `${detail}` +
+                detail +
                 `Correct answer: **${s.question.correctAnswer}**`
             )
         );
@@ -625,10 +689,10 @@ function gameScreen(s, result = null, selected = null) {
             result
                 ? `*${
                     s.limit !== null && s.completed >= s.limit
-                        ? 'Final result'
+                        ? 'Final results'
                         : 'Next question'
                 } in 3 seconds...*`
-                : '*Stop whenever you like. Your score will be shown.*'
+                : '*Stop at any time to see your results.*'
         )
     );
 
@@ -649,56 +713,40 @@ function gameScreen(s, result = null, selected = null) {
 // FINAL RESULTS
 // ─────────────────────────────────────────────
 
-// Tags from older packs can be lowercase. Keep the proper
-// spelling of well-known programme names on result screens.
-function resultSubjectName(s) {
-    const name = s.tag || s.category || 'All subjects';
-    const programmes = {
-        eastenders: 'EastEnders',
-        'coronation street': 'Coronation Street',
-        emmerdale: 'Emmerdale',
-        'emmerdale farm': 'Emmerdale Farm',
-        brookside: 'Brookside',
-        hollyoaks: 'Hollyoaks',
-        neighbours: 'Neighbours',
-        'home and away': 'Home and Away',
-        'family affairs': 'Family Affairs'
-    };
-
-    return programmes[name.toLowerCase()] || name;
-}
-
 function finishedScreen(s, stopped, idle = false) {
     const total = s.completed;
-
     const percent = total
         ? Math.round(s.score / total * 100)
         : 0;
 
-    const c = container(GREEN);
+    const accent = idle ? YELLOW : stopped ? PURPLE : GREEN;
+    const c = container(accent);
 
     line(c);
 
     c.addTextDisplayComponents(
         text(
-            `## ${
-                stopped ? 'QUIZ STOPPED' : '🎉 QUIZ COMPLETE!'
-            }\n` +
+            `### ${stopped ? 'QUIZ STOPPED' : '🎉 QUIZ COMPLETE!'}\n` +
             `# ${s.score} / ${total}\n` +
-            `**${percent}% correct**\n` +
-            `Subject: **${resultSubjectName(s)}**\n\n` +
-            (
-                idle
-                    ? 'Stopped after three unanswered questions. '
-                    : ''
-            ) +
-            'Press **Play Again** to choose another quiz.'
+            `**${percent}% correct**`
         )
     );
 
-    // The owner and server are encoded so a finished quiz
-    // needs no active session or database record to restart.
+    line(c);
+
+    c.addTextDisplayComponents(
+        text(
+            `**Subject:** ${resultSubjectName(s)}\n` +
+            (idle
+                ? '*Stopped after three unanswered questions.*\n'
+                : '') +
+            'Choose **Play Again** to start another quiz.'
+        )
+    );
+
+    // Play Again needs no active session or database record.
     const serverId = s.playerKey.split(':')[0];
+
     c.addActionRowComponents(
         row(
             button(
