@@ -1,810 +1,285 @@
-// quiz_pack81.js
-// PuzzlePilot Big Quiz
-// Music Pack 81 - 1990s
+ // quiz_pack81.js
+// PuzzlePilot Bigggggg Quiz - Music Pack 81 (1990s)
+// 100 audited questions: music_6167 through music_6266.
+// All original question IDs, answers and difficulty ratings retained,
+// except artist credit X-pansions -> Xpansions (music_6179).
+// Each question receives complete music, artist, genre, decade,
+// recording-year, title and relevant album tags.
 
-const quizPack81 = [
+const performerTags = {
+    "Steps": ["british", "dance pop", "pop", "vocal groups", "claire richards", "ian watkins"],
+    "Sunscreem": ["british", "electronic music", "dance music", "techno", "lucia holm", "paul carnell"],
+    "SL2": ["british", "breakbeat hardcore", "rave", "electronic music", "dance acts", "dj slipmatt", "dj lime"],
+    "Smart E's": ["british", "breakbeat hardcore", "rave", "electronic music", "dance acts", "luna c"],
+    "The Shamen": ["scottish", "british", "electronic music", "dance music", "rave", "bands", "colin angus", "mr c"],
+    "Cappella": ["italian", "eurodance", "dance music", "electronic music", "dance acts", "gianfranco bortolotti"],
+    "Xpansions": ["british", "house music", "rave", "dance music", "dance acts", "richie malone"],
+    "Urban Cookie Collective": ["british", "eurodance", "house music", "dance acts", "diane charlemagne", "rohan heath"],
+    "The Beloved": ["british", "synth pop", "house music", "electronic music", "duos", "jon marsh"],
+    "Billie Ray Martin": ["german", "house music", "dance pop", "female singers", "solo artists", "electribe 101"],
+    "Tori Amos": ["american", "alternative rock", "singer songwriters", "female singers", "piano", "solo artists"],
+    "Des'ree": ["british", "soul", "pop", "female singers", "solo artists"],
+    "Lighthouse Family": ["british", "soul", "pop", "duos", "tunde baiyewu", "paul tucker"],
+    "Simply Red": ["british", "soul", "pop", "bands", "mick hucknall"],
+    "Lisa Stansfield": ["british", "soul", "pop", "female singers", "solo artists"],
+    "Mariah Carey": ["american", "pop", "r and b", "female singers", "solo artists"],
+    "Mariah Carey and Boyz II Men": ["american", "pop", "r and b", "duets", "collaborations", "mariah carey", "boyz ii men"],
+    "Whitney Houston": ["american", "soul", "pop", "r and b", "female singers", "solo artists"],
+    "Whitney Houston and CeCe Winans": ["american", "r and b", "gospel", "duets", "collaborations", "whitney houston", "cece winans"],
+    "Janet Jackson": ["american", "r and b", "dance pop", "female singers", "solo artists"],
+    "TLC": ["american", "r and b", "hip hop soul", "girl groups", "t-boz", "chilli", "left eye"],
+    "En Vogue": ["american", "r and b", "soul", "girl groups"],
+    "Salt-N-Pepa and En Vogue": ["american", "hip hop", "r and b", "collaborations", "salt n pepa", "en vogue"],
+    "SWV": ["american", "r and b", "soul", "girl groups", "sisters with voices"],
+    "Brandy and Monica": ["american", "r and b", "duets", "collaborations", "brandy", "monica"],
+    "Brandy": ["american", "r and b", "pop", "female singers", "solo artists"],
+    "Monica": ["american", "r and b", "soul", "female singers", "solo artists"],
+    "Destiny's Child": ["american", "r and b", "pop", "girl groups", "beyonce knowles", "kelly rowland"],
+    "Jennifer Lopez": ["american", "latin pop", "r and b", "pop", "female singers", "solo artists"],
+    "Christina Aguilera": ["american", "pop", "female singers", "solo artists"],
+    "Britney Spears": ["american", "pop", "teen pop", "female singers", "solo artists"],
+};
 
-    {
-        id: "music_6167",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Better Best Forgotten'?",
-        answers: ["Steps", "S Club 7", "Five", "B*Witched"],
-        correctAnswer: "Steps"
-    },
-    {
-        id: "music_6168",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Love U More'?",
-        answers: ["Sunscreem", "The Shamen", "Cappella", "The Beloved"],
-        correctAnswer: "Sunscreem"
-    },
-    {
-        id: "music_6169",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Perfect Motion'?",
-        answers: ["Sunscreem", "The Shamen", "Cappella", "The Beloved"],
-        correctAnswer: "Sunscreem"
-    },
-    {
-        id: "music_6170",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'On a Ragga Tip'?",
-        answers: ["SL2", "The Shamen", "Cappella", "Smart E's"],
-        correctAnswer: "SL2"
-    },
-    {
-        id: "music_6171",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Way in My Brain'?",
-        answers: ["SL2", "The Shamen", "Cappella", "Smart E's"],
-        correctAnswer: "SL2"
-    },
-    {
-        id: "music_6172",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Sesame's Treet'?",
-        answers: ["Smart E's", "SL2", "The Shamen", "Cappella"],
-        correctAnswer: "Smart E's"
-    },
-    {
-        id: "music_6173",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Boss Drum'?",
-        answers: ["The Shamen", "Sunscreem", "Cappella", "The Beloved"],
-        correctAnswer: "The Shamen"
-    },
-    {
-        id: "music_6174",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Phorever People'?",
-        answers: ["The Shamen", "Sunscreem", "Cappella", "The Beloved"],
-        correctAnswer: "The Shamen"
-    },
-    {
-        id: "music_6175",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Move Any Mountain'?",
-        answers: ["The Shamen", "Sunscreem", "Cappella", "The Beloved"],
-        correctAnswer: "The Shamen"
-    },
-    {
-        id: "music_6176",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'U Got 2 Let the Music'?",
-        answers: ["Cappella", "The Shamen", "Sunscreem", "SL2"],
-        correctAnswer: "Cappella"
-    },
-    {
-        id: "music_6177",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Move on Baby'?",
-        answers: ["Cappella", "The Shamen", "Sunscreem", "SL2"],
-        correctAnswer: "Cappella"
-    },
-    {
-        id: "music_6178",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'U & Me'?",
-        answers: ["Cappella", "The Shamen", "Sunscreem", "SL2"],
-        correctAnswer: "Cappella"
-    },
-    {
-        id: "music_6179",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Move Your Body'?",
-        answers: ["X-pansions", "Cappella", "SL2", "Sunscreem"],
-        correctAnswer: "X-pansions"
-    },
-    {
-        id: "music_6180",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'The Key, the Secret'?",
-        answers: ["Urban Cookie Collective", "Cappella", "The Shamen", "Sunscreem"],
-        correctAnswer: "Urban Cookie Collective"
-    },
-    {
-        id: "music_6181",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Feels Like Heaven'?",
-        answers: ["Urban Cookie Collective", "Cappella", "The Shamen", "Sunscreem"],
-        correctAnswer: "Urban Cookie Collective"
-    },
-    {
-        id: "music_6182",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Sail Away'?",
-        answers: ["Urban Cookie Collective", "Cappella", "The Shamen", "Sunscreem"],
-        correctAnswer: "Urban Cookie Collective"
-    },
-    {
-        id: "music_6183",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Sweet Harmony'?",
-        answers: ["The Beloved", "The Shamen", "Sunscreem", "Cappella"],
-        correctAnswer: "The Beloved"
-    },
-    {
-        id: "music_6184",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Deliver Me'?",
-        answers: ["The Beloved", "The Shamen", "Sunscreem", "Cappella"],
-        correctAnswer: "The Beloved"
-    },
-    {
-        id: "music_6185",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Satellite'?",
-        answers: ["The Beloved", "The Shamen", "Sunscreem", "Cappella"],
-        correctAnswer: "The Beloved"
-    },
-    {
-        id: "music_6186",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Hello'?",
-        answers: ["The Beloved", "The Shamen", "Sunscreem", "Cappella"],
-        correctAnswer: "The Beloved"
-    },
-    {
-        id: "music_6187",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Your Loving Arms'?",
-        answers: ["Billie Ray Martin", "Tori Amos", "Lisa Stansfield", "Des'ree"],
-        correctAnswer: "Billie Ray Martin"
-    },
-    {
-        id: "music_6188",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Professional Widow'?",
-        answers: ["Tori Amos", "Lisa Stansfield", "Des'ree", "Billie Ray Martin"],
-        correctAnswer: "Tori Amos"
-    },
-    {
-        id: "music_6189",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Cornflake Girl'?",
-        answers: ["Tori Amos", "Lisa Stansfield", "Des'ree", "Billie Ray Martin"],
-        correctAnswer: "Tori Amos"
-    },
-    {
-        id: "music_6190",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Caught a Lite Sneeze'?",
-        answers: ["Tori Amos", "Lisa Stansfield", "Des'ree", "Billie Ray Martin"],
-        correctAnswer: "Tori Amos"
-    },
-    {
-        id: "music_6191",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Crucify'?",
-        answers: ["Tori Amos", "Lisa Stansfield", "Des'ree", "Billie Ray Martin"],
-        correctAnswer: "Tori Amos"
-    },
-    {
-        id: "music_6192",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Silent All These Years'?",
-        answers: ["Tori Amos", "Lisa Stansfield", "Des'ree", "Billie Ray Martin"],
-        correctAnswer: "Tori Amos"
-    },
-    {
-        id: "music_6193",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Life'?",
-        answers: ["Des'ree", "Gabrielle", "Lisa Stansfield", "Dina Carroll"],
-        correctAnswer: "Des'ree"
-    },
-    {
-        id: "music_6194",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Feel So High'?",
-        answers: ["Des'ree", "Gabrielle", "Lisa Stansfield", "Dina Carroll"],
-        correctAnswer: "Des'ree"
-    },
-    {
-        id: "music_6195",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'What's Your Sign?'?",
-        answers: ["Des'ree", "Gabrielle", "Lisa Stansfield", "Dina Carroll"],
-        correctAnswer: "Des'ree"
-    },
-    {
-        id: "music_6196",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Lifted'?",
-        answers: ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"],
-        correctAnswer: "Lighthouse Family"
-    },
-    {
-        id: "music_6197",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Ocean Drive'?",
-        answers: ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"],
-        correctAnswer: "Lighthouse Family"
-    },
-    {
-        id: "music_6198",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'High'?",
-        answers: ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"],
-        correctAnswer: "Lighthouse Family"
-    },
-    {
-        id: "music_6199",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Raincloud'?",
-        answers: ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"],
-        correctAnswer: "Lighthouse Family"
-    },
-    {
-        id: "music_6200",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Lost in Space'?",
-        answers: ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"],
-        correctAnswer: "Lighthouse Family"
-    },
-    {
-        id: "music_6201",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Question of Faith'?",
-        answers: ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"],
-        correctAnswer: "Lighthouse Family"
-    },
-    {
-        id: "music_6202",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Say You Love Me'?",
-        answers: ["Simply Red", "Lighthouse Family", "M People", "The Beautiful South"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_6203",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Change'?",
-        answers: ["Lisa Stansfield", "Des'ree", "Gabrielle", "Dina Carroll"],
-        correctAnswer: "Lisa Stansfield"
-    },
-    {
-        id: "music_6204",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'All Woman'?",
-        answers: ["Lisa Stansfield", "Des'ree", "Gabrielle", "Dina Carroll"],
-        correctAnswer: "Lisa Stansfield"
-    },
-    {
-        id: "music_6205",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'The Real Thing'?",
-        answers: ["Lisa Stansfield", "Des'ree", "Gabrielle", "Dina Carroll"],
-        correctAnswer: "Lisa Stansfield"
-    },
-    {
-        id: "music_6206",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Never, Never Gonna Give You Up'?",
-        answers: ["Lisa Stansfield", "Des'ree", "Gabrielle", "Dina Carroll"],
-        correctAnswer: "Lisa Stansfield"
-    },
-    {
-        id: "music_6207",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'In All the Right Places'?",
-        answers: ["Lisa Stansfield", "Des'ree", "Gabrielle", "Dina Carroll"],
-        correctAnswer: "Lisa Stansfield"
-    },
-    {
-        id: "music_6208",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Someday'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6209",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Emotions'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6210",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Make It Happen'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6211",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Dreamlover'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6212",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Hero'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Celine Dion", "Toni Braxton"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6213",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Without You'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Celine Dion", "Toni Braxton"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6214",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Anytime You Need a Friend'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Celine Dion", "Toni Braxton"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6215",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Fantasy'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6216",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which artists recorded 'One Sweet Day'?",
-        answers: ["Mariah Carey and Boyz II Men", "Whitney Houston and CeCe Winans", "Brandy and Monica", "Diana Ross and Westlife"],
-        correctAnswer: "Mariah Carey and Boyz II Men"
-    },
-    {
-        id: "music_6217",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Always Be My Baby'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6218",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Honey'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6219",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'My All'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Celine Dion", "Toni Braxton"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6220",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Heartbreaker'?",
-        answers: ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"],
-        correctAnswer: "Mariah Carey"
-    },
-    {
-        id: "music_6221",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'All the Man That I Need'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Celine Dion", "Toni Braxton"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6222",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'My Name Is Not Susan'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Janet Jackson", "Toni Braxton"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6223",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'I Have Nothing'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Celine Dion", "Toni Braxton"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6224",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Run to You'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Celine Dion", "Toni Braxton"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6225",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Queen of the Night'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Janet Jackson", "Toni Braxton"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6226",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Exhale (Shoop Shoop)'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Brandy", "Monica"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6227",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which artists recorded 'Count on Me'?",
-        answers: ["Whitney Houston and CeCe Winans", "Mariah Carey and Boyz II Men", "Brandy and Monica", "Janet Jackson and Luther Vandross"],
-        correctAnswer: "Whitney Houston and CeCe Winans"
-    },
-    {
-        id: "music_6228",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'It's Not Right but It's Okay'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Janet Jackson", "Toni Braxton"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6229",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'My Love Is Your Love'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Janet Jackson", "Toni Braxton"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6230",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Love Will Never Do (Without You)'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_6231",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'That's the Way Love Goes'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_6232",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'If'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_6233",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Again'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_6234",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Because of Love'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_6235",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Any Time, Any Place'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_6236",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Together Again'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_6237",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'I Get Lonely'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_6238",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Go Deep'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_6239",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Every Time'?",
-        answers: ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Janet Jackson"
-    },
-    {
-        id: "music_6240",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Unpretty'?",
-        answers: ["TLC", "En Vogue", "SWV", "Destiny's Child"],
-        correctAnswer: "TLC"
-    },
-    {
-        id: "music_6241",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Creep'?",
-        answers: ["TLC", "En Vogue", "SWV", "Destiny's Child"],
-        correctAnswer: "TLC"
-    },
-    {
-        id: "music_6242",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Red Light Special'?",
-        answers: ["TLC", "En Vogue", "SWV", "Destiny's Child"],
-        correctAnswer: "TLC"
-    },
-    {
-        id: "music_6243",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Diggin' on You'?",
-        answers: ["TLC", "En Vogue", "SWV", "Destiny's Child"],
-        correctAnswer: "TLC"
-    },
-    {
-        id: "music_6244",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Don't Let Go (Love)'?",
-        answers: ["En Vogue", "TLC", "SWV", "Destiny's Child"],
-        correctAnswer: "En Vogue"
-    },
-    {
-        id: "music_6245",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'My Lovin' (You're Never Gonna Get It)'?",
-        answers: ["En Vogue", "TLC", "SWV", "Destiny's Child"],
-        correctAnswer: "En Vogue"
-    },
-    {
-        id: "music_6246",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Giving Him Something He Can Feel'?",
-        answers: ["En Vogue", "TLC", "SWV", "Destiny's Child"],
-        correctAnswer: "En Vogue"
-    },
-    {
-        id: "music_6247",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Free Your Mind'?",
-        answers: ["En Vogue", "TLC", "SWV", "Destiny's Child"],
-        correctAnswer: "En Vogue"
-    },
-    {
-        id: "music_6248",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which artists recorded 'Whatta Man'?",
-        answers: ["Salt-N-Pepa and En Vogue", "TLC and SWV", "Brandy and Monica", "Destiny's Child and En Vogue"],
-        correctAnswer: "Salt-N-Pepa and En Vogue"
-    },
-    {
-        id: "music_6249",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Weak'?",
-        answers: ["SWV", "TLC", "En Vogue", "Destiny's Child"],
-        correctAnswer: "SWV"
-    },
-    {
-        id: "music_6250",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Right Here'?",
-        answers: ["SWV", "TLC", "En Vogue", "Destiny's Child"],
-        correctAnswer: "SWV"
-    },
-    {
-        id: "music_6251",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'I'm So into You'?",
-        answers: ["SWV", "TLC", "En Vogue", "Destiny's Child"],
-        correctAnswer: "SWV"
-    },
-    {
-        id: "music_6252",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Anything'?",
-        answers: ["SWV", "TLC", "En Vogue", "Destiny's Child"],
-        correctAnswer: "SWV"
-    },
-    {
-        id: "music_6253",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'You're the One'?",
-        answers: ["SWV", "TLC", "En Vogue", "Destiny's Child"],
-        correctAnswer: "SWV"
-    },
-    {
-        id: "music_6254",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singers recorded 'The Boy Is Mine'?",
-        answers: ["Brandy and Monica", "Whitney Houston and Mariah Carey", "Brandy and Aaliyah", "Monica and Toni Braxton"],
-        correctAnswer: "Brandy and Monica"
-    },
-    {
-        id: "music_6255",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Sittin' Up in My Room'?",
-        answers: ["Brandy", "Monica", "Aaliyah", "Toni Braxton"],
-        correctAnswer: "Brandy"
-    },
-    {
-        id: "music_6256",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Have You Ever?'?",
-        answers: ["Brandy", "Monica", "Aaliyah", "Toni Braxton"],
-        correctAnswer: "Brandy"
-    },
-    {
-        id: "music_6257",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Almost Doesn't Count'?",
-        answers: ["Brandy", "Monica", "Aaliyah", "Toni Braxton"],
-        correctAnswer: "Brandy"
-    },
-    {
-        id: "music_6258",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Angel of Mine'?",
-        answers: ["Monica", "Brandy", "Aaliyah", "Toni Braxton"],
-        correctAnswer: "Monica"
-    },
-    {
-        id: "music_6259",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'The First Night'?",
-        answers: ["Monica", "Brandy", "Aaliyah", "Toni Braxton"],
-        correctAnswer: "Monica"
-    },
-    {
-        id: "music_6260",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Bills, Bills, Bills'?",
-        answers: ["Destiny's Child", "TLC", "En Vogue", "SWV"],
-        correctAnswer: "Destiny's Child"
-    },
-    {
-        id: "music_6261",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Bug a Boo'?",
-        answers: ["Destiny's Child", "TLC", "En Vogue", "SWV"],
-        correctAnswer: "Destiny's Child"
-    },
-    {
-        id: "music_6262",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'No, No, No'?",
-        answers: ["Destiny's Child", "TLC", "En Vogue", "SWV"],
-        correctAnswer: "Destiny's Child"
-    },
-    {
-        id: "music_6263",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'If You Had My Love'?",
-        answers: ["Jennifer Lopez", "Christina Aguilera", "Britney Spears", "Brandy"],
-        correctAnswer: "Jennifer Lopez"
-    },
-    {
-        id: "music_6264",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Waiting for Tonight'?",
-        answers: ["Jennifer Lopez", "Christina Aguilera", "Britney Spears", "Brandy"],
-        correctAnswer: "Jennifer Lopez"
-    },
-    {
-        id: "music_6265",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'What a Girl Wants'?",
-        answers: ["Christina Aguilera", "Britney Spears", "Jennifer Lopez", "Jessica Simpson"],
-        correctAnswer: "Christina Aguilera"
-    },
-    {
-        id: "music_6266",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Sometimes'?",
-        answers: ["Britney Spears", "Christina Aguilera", "Jennifer Lopez", "Jessica Simpson"],
-        correctAnswer: "Britney Spears"
+const recordingTags = {
+    "music_6167": [1999, "step one album", "1999 single"],
+    "music_6168": [1992, "o3 album", "1992 single"],
+    "music_6169": [1992, "o3 album", "1992 single"],
+    "music_6170": [1992, "1992 single", "xl recordings"],
+    "music_6171": [1991, "1991 original single", "1992 reissue", "xl recordings"],
+    "music_6172": [1992, "1992 single", "sesame street sample"],
+    "music_6173": [1992, "boss drum album", "1992 single"],
+    "music_6174": [1992, "boss drum album", "1992 single"],
+    "music_6175": [1991, "en tact album", "1991 single"],
+    "music_6176": [1993, "u got 2 know album", "1993 single"],
+    "music_6177": [1994, "u got 2 know album", "1994 single"],
+    "music_6178": [1994, "u got 2 know album", "1994 single"],
+    "music_6179": [1991, "1991 uk hit", "also known as elevation"],
+    "music_6180": [1993, "high on a happy vibe album", "1993 single"],
+    "music_6181": [1993, "high on a happy vibe album", "1993 single"],
+    "music_6182": [1994, "high on a happy vibe album", "1994 single"],
+    "music_6183": [1993, "conscience album", "1993 single"],
+    "music_6184": [1996, "x album", "1996 single"],
+    "music_6185": [1996, "x album", "1996 single"],
+    "music_6186": [1990, "happiness album", "1990 single"],
+    "music_6187": [1994, "deadline for my memories album", "1994 original single", "1995 uk hit"],
+    "music_6188": [1996, "boys for pele album", "armand van helden remix"],
+    "music_6189": [1994, "under the pink album", "1994 single"],
+    "music_6190": [1996, "boys for pele album", "1996 single"],
+    "music_6191": [1992, "little earthquakes album", "1992 single"],
+    "music_6192": [1991, "little earthquakes album", "1991 debut single"],
+    "music_6193": [1998, "supernatural album", "1998 single"],
+    "music_6194": [1991, "mind adventures album", "1991 single"],
+    "music_6195": [1998, "supernatural album", "1998 single"],
+    "music_6196": [1995, "ocean drive album", "1995 original single", "1996 uk reissue"],
+    "music_6197": [1995, "ocean drive album", "1995 original single", "1996 uk reissue"],
+    "music_6198": [1997, "postcards from heaven album", "1997 single"],
+    "music_6199": [1997, "postcards from heaven album", "1997 single"],
+    "music_6200": [1998, "postcards from heaven album", "1998 single"],
+    "music_6201": [1998, "postcards from heaven album", "1998 single"],
+    "music_6202": [1998, "blue album", "1998 single", "mick hucknall songwriter"],
+    "music_6203": [1991, "real love album", "1991 single"],
+    "music_6204": [1991, "real love album", "1991 single"],
+    "music_6205": [1997, "lisa stansfield 1997 album", "1997 single"],
+    "music_6206": [1997, "lisa stansfield 1997 album", "barry white cover", "1997 single"],
+    "music_6207": [1993, "so natural album", "indecent proposal soundtrack", "1993 single"],
+    "music_6208": [1990, "mariah carey debut album", "1990 single"],
+    "music_6209": [1991, "emotions album", "1991 single"],
+    "music_6210": [1992, "emotions album", "1992 single"],
+    "music_6211": [1993, "music box album", "1993 single"],
+    "music_6212": [1993, "music box album", "1993 single"],
+    "music_6213": [1994, "music box album", "badfinger song cover", "1994 single"],
+    "music_6214": [1994, "music box album", "1994 single"],
+    "music_6215": [1995, "daydream album", "1995 single"],
+    "music_6216": [1995, "daydream album", "1995 single", "mariah carey and boyz ii men duet"],
+    "music_6217": [1996, "daydream album", "1996 single"],
+    "music_6218": [1997, "butterfly album", "1997 single"],
+    "music_6219": [1998, "butterfly album", "1998 single"],
+    "music_6220": [1999, "rainbow album", "1999 single", "jay z guest appearance"],
+    "music_6221": [1990, "im your baby tonight album", "1990 single"],
+    "music_6222": [1991, "im your baby tonight album", "1991 single"],
+    "music_6223": [1993, "the bodyguard soundtrack", "1993 single"],
+    "music_6224": [1993, "the bodyguard soundtrack", "1993 single"],
+    "music_6225": [1993, "the bodyguard soundtrack", "1993 single"],
+    "music_6226": [1995, "waiting to exhale soundtrack", "1995 single"],
+    "music_6227": [1996, "waiting to exhale soundtrack", "1996 single", "duet"],
+    "music_6228": [1999, "my love is your love album", "1999 single"],
+    "music_6229": [1999, "my love is your love album", "1999 single"],
+    "music_6230": [1990, "rhythm nation 1814 album", "1990 single"],
+    "music_6231": [1993, "janet album", "1993 single"],
+    "music_6232": [1993, "janet album", "1993 single"],
+    "music_6233": [1993, "janet album", "1993 single"],
+    "music_6234": [1994, "janet album", "1994 single"],
+    "music_6235": [1994, "janet album", "1994 single"],
+    "music_6236": [1997, "the velvet rope album", "1997 single"],
+    "music_6237": [1998, "the velvet rope album", "1998 single"],
+    "music_6238": [1998, "the velvet rope album", "1998 single"],
+    "music_6239": [1998, "the velvet rope album", "1998 single"],
+    "music_6240": [1999, "fanmail album", "1999 single"],
+    "music_6241": [1994, "crazysexycool album", "1994 single"],
+    "music_6242": [1995, "crazysexycool album", "1995 single"],
+    "music_6243": [1995, "crazysexycool album", "1995 single"],
+    "music_6244": [1996, "ev3 album", "set it off soundtrack", "1996 single"],
+    "music_6245": [1992, "funky divas album", "1992 single"],
+    "music_6246": [1992, "funky divas album", "aretha franklin cover", "1992 single"],
+    "music_6247": [1992, "funky divas album", "1992 single"],
+    "music_6248": [1994, "very necessary album", "1994 uk hit", "collaboration"],
+    "music_6249": [1992, "its about time album", "1993 single"],
+    "music_6250": [1992, "its about time album", "1993 human nature remix"],
+    "music_6251": [1992, "its about time album", "1993 single"],
+    "music_6252": [1994, "its about time album", "above the rim soundtrack remix", "1994 single"],
+    "music_6253": [1996, "new beginning album", "1996 single"],
+    "music_6254": [1998, "never say never album", "the boy is mine album", "1998 single", "duet"],
+    "music_6255": [1995, "waiting to exhale soundtrack", "1995 single"],
+    "music_6256": [1998, "never say never album", "1998 single"],
+    "music_6257": [1999, "never say never album", "1999 single"],
+    "music_6258": [1998, "the boy is mine album", "eternal original song", "1998 single"],
+    "music_6259": [1998, "the boy is mine album", "1998 single"],
+    "music_6260": [1999, "the writings on the wall album", "1999 single"],
+    "music_6261": [1999, "the writings on the wall album", "1999 single"],
+    "music_6262": [1997, "destinys child debut album", "1997 single"],
+    "music_6263": [1999, "on the 6 album", "1999 debut single"],
+    "music_6264": [1999, "on the 6 album", "1999 single"],
+    "music_6265": [1999, "christina aguilera debut album", "1999 single"],
+    "music_6266": [1999, "baby one more time album", "1999 single"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const performer = performerTags[correctAnswer];
+    const recording = recordingTags[id];
+
+    if (!performer || !recording) {
+        throw new Error(`Missing Pack 81 metadata for ${id}`);
     }
 
+    const title = question.match(/'(.+)'/);
+
+    if (!title) {
+        throw new Error(`Missing song title for ${id}`);
+    }
+
+    const year = recording[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+
+    return {
+        id,
+        category: "Music",
+        difficulty,
+        question,
+        answers,
+        correctAnswer,
+        tags: [...new Set([
+            "music", "songs", "recordings", decade,
+            `${decade} music`, `${year} releases`,
+            title[1].toLowerCase(),
+            correctAnswer.toLowerCase(),
+            ...performer,
+            ...recording.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
+const quizPack81 = [
+    makeQuestion("music_6167", "Which group recorded 'Better Best Forgotten'?", ["Steps", "S Club 7", "Five", "B*Witched"], "Steps", "Easy"),
+    makeQuestion("music_6168", "Which group recorded 'Love U More'?", ["Sunscreem", "The Shamen", "Cappella", "The Beloved"], "Sunscreem", "Medium"),
+    makeQuestion("music_6169", "Which group recorded 'Perfect Motion'?", ["Sunscreem", "The Shamen", "Cappella", "The Beloved"], "Sunscreem", "Medium"),
+    makeQuestion("music_6170", "Which group recorded 'On a Ragga Tip'?", ["SL2", "The Shamen", "Cappella", "Smart E's"], "SL2", "Easy"),
+    makeQuestion("music_6171", "Which group recorded 'Way in My Brain'?", ["SL2", "The Shamen", "Cappella", "Smart E's"], "SL2", "Medium"),
+    makeQuestion("music_6172", "Which group recorded 'Sesame's Treet'?", ["Smart E's", "SL2", "The Shamen", "Cappella"], "Smart E's", "Medium"),
+    makeQuestion("music_6173", "Which group recorded 'Boss Drum'?", ["The Shamen", "Sunscreem", "Cappella", "The Beloved"], "The Shamen", "Medium"),
+    makeQuestion("music_6174", "Which group recorded 'Phorever People'?", ["The Shamen", "Sunscreem", "Cappella", "The Beloved"], "The Shamen", "Medium"),
+    makeQuestion("music_6175", "Which group recorded 'Move Any Mountain'?", ["The Shamen", "Sunscreem", "Cappella", "The Beloved"], "The Shamen", "Easy"),
+    makeQuestion("music_6176", "Which group recorded 'U Got 2 Let the Music'?", ["Cappella", "The Shamen", "Sunscreem", "SL2"], "Cappella", "Medium"),
+    makeQuestion("music_6177", "Which group recorded 'Move on Baby'?", ["Cappella", "The Shamen", "Sunscreem", "SL2"], "Cappella", "Medium"),
+    makeQuestion("music_6178", "Which group recorded 'U & Me'?", ["Cappella", "The Shamen", "Sunscreem", "SL2"], "Cappella", "Medium"),
+    makeQuestion("music_6179", "Which dance act recorded 'Move Your Body'?", ["Xpansions", "Cappella", "SL2", "Sunscreem"], "Xpansions", "Hard"),
+    makeQuestion("music_6180", "Which group recorded 'The Key, the Secret'?", ["Urban Cookie Collective", "Cappella", "The Shamen", "Sunscreem"], "Urban Cookie Collective", "Easy"),
+    makeQuestion("music_6181", "Which group recorded 'Feels Like Heaven'?", ["Urban Cookie Collective", "Cappella", "The Shamen", "Sunscreem"], "Urban Cookie Collective", "Medium"),
+    makeQuestion("music_6182", "Which group recorded 'Sail Away'?", ["Urban Cookie Collective", "Cappella", "The Shamen", "Sunscreem"], "Urban Cookie Collective", "Medium"),
+    makeQuestion("music_6183", "Which group recorded 'Sweet Harmony'?", ["The Beloved", "The Shamen", "Sunscreem", "Cappella"], "The Beloved", "Easy"),
+    makeQuestion("music_6184", "Which group recorded 'Deliver Me'?", ["The Beloved", "The Shamen", "Sunscreem", "Cappella"], "The Beloved", "Medium"),
+    makeQuestion("music_6185", "Which group recorded 'Satellite'?", ["The Beloved", "The Shamen", "Sunscreem", "Cappella"], "The Beloved", "Medium"),
+    makeQuestion("music_6186", "Which group recorded 'Hello'?", ["The Beloved", "The Shamen", "Sunscreem", "Cappella"], "The Beloved", "Medium"),
+    makeQuestion("music_6187", "Which singer recorded 'Your Loving Arms'?", ["Billie Ray Martin", "Tori Amos", "Lisa Stansfield", "Des'ree"], "Billie Ray Martin", "Medium"),
+    makeQuestion("music_6188", "Which singer recorded 'Professional Widow'?", ["Tori Amos", "Lisa Stansfield", "Des'ree", "Billie Ray Martin"], "Tori Amos", "Easy"),
+    makeQuestion("music_6189", "Which singer recorded 'Cornflake Girl'?", ["Tori Amos", "Lisa Stansfield", "Des'ree", "Billie Ray Martin"], "Tori Amos", "Easy"),
+    makeQuestion("music_6190", "Which singer recorded 'Caught a Lite Sneeze'?", ["Tori Amos", "Lisa Stansfield", "Des'ree", "Billie Ray Martin"], "Tori Amos", "Medium"),
+    makeQuestion("music_6191", "Which singer recorded 'Crucify'?", ["Tori Amos", "Lisa Stansfield", "Des'ree", "Billie Ray Martin"], "Tori Amos", "Medium"),
+    makeQuestion("music_6192", "Which singer recorded 'Silent All These Years'?", ["Tori Amos", "Lisa Stansfield", "Des'ree", "Billie Ray Martin"], "Tori Amos", "Medium"),
+    makeQuestion("music_6193", "Which singer recorded 'Life'?", ["Des'ree", "Gabrielle", "Lisa Stansfield", "Dina Carroll"], "Des'ree", "Easy"),
+    makeQuestion("music_6194", "Which singer recorded 'Feel So High'?", ["Des'ree", "Gabrielle", "Lisa Stansfield", "Dina Carroll"], "Des'ree", "Medium"),
+    makeQuestion("music_6195", "Which singer recorded 'What's Your Sign?'?", ["Des'ree", "Gabrielle", "Lisa Stansfield", "Dina Carroll"], "Des'ree", "Medium"),
+    makeQuestion("music_6196", "Which group recorded 'Lifted'?", ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"], "Lighthouse Family", "Easy"),
+    makeQuestion("music_6197", "Which group recorded 'Ocean Drive'?", ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"], "Lighthouse Family", "Easy"),
+    makeQuestion("music_6198", "Which group recorded 'High'?", ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"], "Lighthouse Family", "Easy"),
+    makeQuestion("music_6199", "Which group recorded 'Raincloud'?", ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"], "Lighthouse Family", "Medium"),
+    makeQuestion("music_6200", "Which group recorded 'Lost in Space'?", ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"], "Lighthouse Family", "Medium"),
+    makeQuestion("music_6201", "Which group recorded 'Question of Faith'?", ["Lighthouse Family", "Simply Red", "M People", "The Beautiful South"], "Lighthouse Family", "Medium"),
+    makeQuestion("music_6202", "Which group recorded 'Say You Love Me'?", ["Simply Red", "Lighthouse Family", "M People", "The Beautiful South"], "Simply Red", "Medium"),
+    makeQuestion("music_6203", "Which singer recorded 'Change'?", ["Lisa Stansfield", "Des'ree", "Gabrielle", "Dina Carroll"], "Lisa Stansfield", "Medium"),
+    makeQuestion("music_6204", "Which singer recorded 'All Woman'?", ["Lisa Stansfield", "Des'ree", "Gabrielle", "Dina Carroll"], "Lisa Stansfield", "Easy"),
+    makeQuestion("music_6205", "Which singer recorded 'The Real Thing'?", ["Lisa Stansfield", "Des'ree", "Gabrielle", "Dina Carroll"], "Lisa Stansfield", "Medium"),
+    makeQuestion("music_6206", "Which singer recorded 'Never, Never Gonna Give You Up'?", ["Lisa Stansfield", "Des'ree", "Gabrielle", "Dina Carroll"], "Lisa Stansfield", "Medium"),
+    makeQuestion("music_6207", "Which singer recorded 'In All the Right Places'?", ["Lisa Stansfield", "Des'ree", "Gabrielle", "Dina Carroll"], "Lisa Stansfield", "Medium"),
+    makeQuestion("music_6208", "Which singer recorded 'Someday'?", ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"], "Mariah Carey", "Medium"),
+    makeQuestion("music_6209", "Which singer recorded 'Emotions'?", ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"], "Mariah Carey", "Easy"),
+    makeQuestion("music_6210", "Which singer recorded 'Make It Happen'?", ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"], "Mariah Carey", "Medium"),
+    makeQuestion("music_6211", "Which singer recorded 'Dreamlover'?", ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"], "Mariah Carey", "Easy"),
+    makeQuestion("music_6212", "Which singer recorded 'Hero'?", ["Mariah Carey", "Whitney Houston", "Celine Dion", "Toni Braxton"], "Mariah Carey", "Easy"),
+    makeQuestion("music_6213", "Which singer recorded 'Without You'?", ["Mariah Carey", "Whitney Houston", "Celine Dion", "Toni Braxton"], "Mariah Carey", "Easy"),
+    makeQuestion("music_6214", "Which singer recorded 'Anytime You Need a Friend'?", ["Mariah Carey", "Whitney Houston", "Celine Dion", "Toni Braxton"], "Mariah Carey", "Medium"),
+    makeQuestion("music_6215", "Which singer recorded 'Fantasy'?", ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"], "Mariah Carey", "Easy"),
+    makeQuestion("music_6216", "Which artists recorded 'One Sweet Day'?", ["Mariah Carey and Boyz II Men", "Whitney Houston and CeCe Winans", "Brandy and Monica", "Diana Ross and Westlife"], "Mariah Carey and Boyz II Men", "Easy"),
+    makeQuestion("music_6217", "Which singer recorded 'Always Be My Baby'?", ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"], "Mariah Carey", "Easy"),
+    makeQuestion("music_6218", "Which singer recorded 'Honey'?", ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"], "Mariah Carey", "Easy"),
+    makeQuestion("music_6219", "Which singer recorded 'My All'?", ["Mariah Carey", "Whitney Houston", "Celine Dion", "Toni Braxton"], "Mariah Carey", "Easy"),
+    makeQuestion("music_6220", "Which singer recorded 'Heartbreaker'?", ["Mariah Carey", "Whitney Houston", "Janet Jackson", "Brandy"], "Mariah Carey", "Easy"),
+    makeQuestion("music_6221", "Which singer recorded 'All the Man That I Need'?", ["Whitney Houston", "Mariah Carey", "Celine Dion", "Toni Braxton"], "Whitney Houston", "Easy"),
+    makeQuestion("music_6222", "Which singer recorded 'My Name Is Not Susan'?", ["Whitney Houston", "Mariah Carey", "Janet Jackson", "Toni Braxton"], "Whitney Houston", "Medium"),
+    makeQuestion("music_6223", "Which singer recorded 'I Have Nothing'?", ["Whitney Houston", "Mariah Carey", "Celine Dion", "Toni Braxton"], "Whitney Houston", "Easy"),
+    makeQuestion("music_6224", "Which singer recorded 'Run to You'?", ["Whitney Houston", "Mariah Carey", "Celine Dion", "Toni Braxton"], "Whitney Houston", "Easy"),
+    makeQuestion("music_6225", "Which singer recorded 'Queen of the Night'?", ["Whitney Houston", "Mariah Carey", "Janet Jackson", "Toni Braxton"], "Whitney Houston", "Medium"),
+    makeQuestion("music_6226", "Which singer recorded 'Exhale (Shoop Shoop)'?", ["Whitney Houston", "Mariah Carey", "Brandy", "Monica"], "Whitney Houston", "Medium"),
+    makeQuestion("music_6227", "Which artists recorded 'Count on Me'?", ["Whitney Houston and CeCe Winans", "Mariah Carey and Boyz II Men", "Brandy and Monica", "Janet Jackson and Luther Vandross"], "Whitney Houston and CeCe Winans", "Medium"),
+    makeQuestion("music_6228", "Which singer recorded 'It's Not Right but It's Okay'?", ["Whitney Houston", "Mariah Carey", "Janet Jackson", "Toni Braxton"], "Whitney Houston", "Easy"),
+    makeQuestion("music_6229", "Which singer recorded 'My Love Is Your Love'?", ["Whitney Houston", "Mariah Carey", "Janet Jackson", "Toni Braxton"], "Whitney Houston", "Easy"),
+    makeQuestion("music_6230", "Which singer recorded 'Love Will Never Do (Without You)'?", ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"], "Janet Jackson", "Medium"),
+    makeQuestion("music_6231", "Which singer recorded 'That's the Way Love Goes'?", ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"], "Janet Jackson", "Easy"),
+    makeQuestion("music_6232", "Which singer recorded 'If'?", ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"], "Janet Jackson", "Medium"),
+    makeQuestion("music_6233", "Which singer recorded 'Again'?", ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"], "Janet Jackson", "Easy"),
+    makeQuestion("music_6234", "Which singer recorded 'Because of Love'?", ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"], "Janet Jackson", "Medium"),
+    makeQuestion("music_6235", "Which singer recorded 'Any Time, Any Place'?", ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"], "Janet Jackson", "Medium"),
+    makeQuestion("music_6236", "Which singer recorded 'Together Again'?", ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"], "Janet Jackson", "Easy"),
+    makeQuestion("music_6237", "Which singer recorded 'I Get Lonely'?", ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"], "Janet Jackson", "Medium"),
+    makeQuestion("music_6238", "Which singer recorded 'Go Deep'?", ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"], "Janet Jackson", "Medium"),
+    makeQuestion("music_6239", "Which singer recorded 'Every Time'?", ["Janet Jackson", "Whitney Houston", "Mariah Carey", "Toni Braxton"], "Janet Jackson", "Medium"),
+    makeQuestion("music_6240", "Which group recorded 'Unpretty'?", ["TLC", "En Vogue", "SWV", "Destiny's Child"], "TLC", "Easy"),
+    makeQuestion("music_6241", "Which group recorded 'Creep'?", ["TLC", "En Vogue", "SWV", "Destiny's Child"], "TLC", "Easy"),
+    makeQuestion("music_6242", "Which group recorded 'Red Light Special'?", ["TLC", "En Vogue", "SWV", "Destiny's Child"], "TLC", "Medium"),
+    makeQuestion("music_6243", "Which group recorded 'Diggin' on You'?", ["TLC", "En Vogue", "SWV", "Destiny's Child"], "TLC", "Medium"),
+    makeQuestion("music_6244", "Which group recorded 'Don't Let Go (Love)'?", ["En Vogue", "TLC", "SWV", "Destiny's Child"], "En Vogue", "Easy"),
+    makeQuestion("music_6245", "Which group recorded 'My Lovin' (You're Never Gonna Get It)'?", ["En Vogue", "TLC", "SWV", "Destiny's Child"], "En Vogue", "Easy"),
+    makeQuestion("music_6246", "Which group recorded 'Giving Him Something He Can Feel'?", ["En Vogue", "TLC", "SWV", "Destiny's Child"], "En Vogue", "Medium"),
+    makeQuestion("music_6247", "Which group recorded 'Free Your Mind'?", ["En Vogue", "TLC", "SWV", "Destiny's Child"], "En Vogue", "Easy"),
+    makeQuestion("music_6248", "Which artists recorded 'Whatta Man'?", ["Salt-N-Pepa and En Vogue", "TLC and SWV", "Brandy and Monica", "Destiny's Child and En Vogue"], "Salt-N-Pepa and En Vogue", "Easy"),
+    makeQuestion("music_6249", "Which group recorded 'Weak'?", ["SWV", "TLC", "En Vogue", "Destiny's Child"], "SWV", "Easy"),
+    makeQuestion("music_6250", "Which group recorded 'Right Here'?", ["SWV", "TLC", "En Vogue", "Destiny's Child"], "SWV", "Medium"),
+    makeQuestion("music_6251", "Which group recorded 'I'm So into You'?", ["SWV", "TLC", "En Vogue", "Destiny's Child"], "SWV", "Medium"),
+    makeQuestion("music_6252", "Which group recorded 'Anything'?", ["SWV", "TLC", "En Vogue", "Destiny's Child"], "SWV", "Medium"),
+    makeQuestion("music_6253", "Which group recorded 'You're the One'?", ["SWV", "TLC", "En Vogue", "Destiny's Child"], "SWV", "Medium"),
+    makeQuestion("music_6254", "Which singers recorded 'The Boy Is Mine'?", ["Brandy and Monica", "Whitney Houston and Mariah Carey", "Brandy and Aaliyah", "Monica and Toni Braxton"], "Brandy and Monica", "Easy"),
+    makeQuestion("music_6255", "Which singer recorded 'Sittin' Up in My Room'?", ["Brandy", "Monica", "Aaliyah", "Toni Braxton"], "Brandy", "Medium"),
+    makeQuestion("music_6256", "Which singer recorded 'Have You Ever?'?", ["Brandy", "Monica", "Aaliyah", "Toni Braxton"], "Brandy", "Medium"),
+    makeQuestion("music_6257", "Which singer recorded 'Almost Doesn't Count'?", ["Brandy", "Monica", "Aaliyah", "Toni Braxton"], "Brandy", "Medium"),
+    makeQuestion("music_6258", "Which singer recorded 'Angel of Mine'?", ["Monica", "Brandy", "Aaliyah", "Toni Braxton"], "Monica", "Medium"),
+    makeQuestion("music_6259", "Which singer recorded 'The First Night'?", ["Monica", "Brandy", "Aaliyah", "Toni Braxton"], "Monica", "Medium"),
+    makeQuestion("music_6260", "Which group recorded 'Bills, Bills, Bills'?", ["Destiny's Child", "TLC", "En Vogue", "SWV"], "Destiny's Child", "Easy"),
+    makeQuestion("music_6261", "Which group recorded 'Bug a Boo'?", ["Destiny's Child", "TLC", "En Vogue", "SWV"], "Destiny's Child", "Medium"),
+    makeQuestion("music_6262", "Which group recorded 'No, No, No'?", ["Destiny's Child", "TLC", "En Vogue", "SWV"], "Destiny's Child", "Medium"),
+    makeQuestion("music_6263", "Which singer recorded 'If You Had My Love'?", ["Jennifer Lopez", "Christina Aguilera", "Britney Spears", "Brandy"], "Jennifer Lopez", "Easy"),
+    makeQuestion("music_6264", "Which singer recorded 'Waiting for Tonight'?", ["Jennifer Lopez", "Christina Aguilera", "Britney Spears", "Brandy"], "Jennifer Lopez", "Easy"),
+    makeQuestion("music_6265", "Which singer recorded 'What a Girl Wants'?", ["Christina Aguilera", "Britney Spears", "Jennifer Lopez", "Jessica Simpson"], "Christina Aguilera", "Easy"),
+    makeQuestion("music_6266", "Which singer recorded 'Sometimes'?", ["Britney Spears", "Christina Aguilera", "Jennifer Lopez", "Jessica Simpson"], "Britney Spears", "Easy"),
 ];
 
 module.exports = quizPack81;
