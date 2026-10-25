@@ -1,3 +1,4 @@
+
 // quiz_continuous.js
 // PuzzlePilot - Bigggggg Quiz continuous solo play
 // Separate from the Daily Quiz: no daily completion or history changes.
@@ -648,6 +649,25 @@ function gameScreen(s, result = null, selected = null) {
 // FINAL RESULTS
 // ─────────────────────────────────────────────
 
+// Tags from older packs can be lowercase. Keep the proper
+// spelling of well-known programme names on result screens.
+function resultSubjectName(s) {
+    const name = s.tag || s.category || 'All subjects';
+    const programmes = {
+        eastenders: 'EastEnders',
+        'coronation street': 'Coronation Street',
+        emmerdale: 'Emmerdale',
+        'emmerdale farm': 'Emmerdale Farm',
+        brookside: 'Brookside',
+        hollyoaks: 'Hollyoaks',
+        neighbours: 'Neighbours',
+        'home and away': 'Home and Away',
+        'family affairs': 'Family Affairs'
+    };
+
+    return programmes[name.toLowerCase()] || name;
+}
+
 function finishedScreen(s, stopped, idle = false) {
     const total = s.completed;
 
@@ -666,16 +686,26 @@ function finishedScreen(s, stopped, idle = false) {
             }\n` +
             `# ${s.score} / ${total}\n` +
             `**${percent}% correct**\n` +
-            `Subject: **${
-                s.tag || s.category || 'All subjects'
-            }**\n\n` +
+            `Subject: **${resultSubjectName(s)}**\n\n` +
             (
                 idle
                     ? 'Stopped after three unanswered questions. '
                     : ''
             ) +
-            'Choose Continuous Quiz again from the PuzzlePilot menu ' +
-            'to start a new run.'
+            'Press **Play Again** to choose another quiz.'
+        )
+    );
+
+    // The owner and server are encoded so a finished quiz
+    // needs no active session or database record to restart.
+    const serverId = s.playerKey.split(':')[0];
+    c.addActionRowComponents(
+        row(
+            button(
+                `cq_again_${s.owner}_${serverId}`,
+                'Play Again',
+                ButtonStyle.Success
+            )
         )
     );
 
@@ -850,7 +880,7 @@ async function notice(interaction, message) {
 // OPEN CONTINUOUS QUIZ
 // ─────────────────────────────────────────────
 
-async function startContinuous(interaction) {
+async function openSubjectSelector(interaction, updateExisting = false) {
     const key = playerKey(interaction);
 
     if (sessionsByPlayer.has(key)) {
@@ -897,9 +927,17 @@ async function startContinuous(interaction) {
     lobbies.set(lobby.id, lobby);
     lobbiesByPlayer.set(key, lobby.id);
 
-    await interaction.reply(
-        payload(categoryScreen(lobby))
-    );
+    const screen = payload(categoryScreen(lobby));
+
+    if (updateExisting) {
+        await interaction.update(screen);
+    } else {
+        await interaction.reply(screen);
+    }
+}
+
+async function startContinuous(interaction) {
+    return openSubjectSelector(interaction);
 }
 
 // ─────────────────────────────────────────────
@@ -922,6 +960,26 @@ async function handleInteraction(interaction) {
 
     const type = parts[1];
     const entryId = parts[2];
+
+    // Play Again operates on a finished quiz, so its active
+    // session has already been removed. Check the owner and
+    // server before replacing the results with a fresh lobby.
+    if (type === 'again' && interaction.isButton()) {
+        const expectedOwner = parts[2];
+        const expectedServer = parts[3];
+
+        if (
+            expectedOwner !== interaction.user.id ||
+            expectedServer !== (interaction.guildId || 'DM')
+        ) {
+            return notice(
+                interaction,
+                'This quiz belongs to another player.'
+            );
+        }
+
+        return openSubjectSelector(interaction, true);
+    }
 
     const s = sessions.get(entryId);
     const lobby = lobbies.get(entryId);
