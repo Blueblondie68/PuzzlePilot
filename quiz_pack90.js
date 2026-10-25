@@ -1,13 +1,140 @@
 // quiz_pack90.js
-// PuzzlePilot Big Quiz
-// Music Pack 90
-// 100 questions
-// IDs: music_7067 to music_7166
+// PuzzlePilot Bigggggg Quiz - Music Pack 90
+// Tagging audit: 100 questions, IDs music_7067 to music_7166.
+// Preserves original IDs, answer sets, correct answers and difficulties.
+// Clarifies the Josh Wink aliases and Moby's James Bond re-version.
+// Corrects punctuation in Stone Temple Pilots' "Trippin'..." title.
+// Date tags reflect first recordings or releases, not just later hit singles.
+
+const performerTags = {
+    "Haddaway": ["trinidadian", "german dance music", "eurodance", "male singers", "solo artists"],
+    "2 Unlimited": ["dutch", "belgian", "eurodance", "dance music", "duos", "ray slijngaard", "anita doth"],
+    "Snap": ["german", "eurodance", "house music", "groups", "snap!", "penny ford", "turbo b"],
+    "Moby": ["american", "electronic music", "dance music", "music producers", "djs", "solo artists", "richard melville hall"],
+    "Josh Wink": ["american", "house music", "acid house", "techno", "djs", "music producers", "wink", "winx"],
+    "Ruffneck": ["american", "house music", "garage house", "dance music", "music projects", "yavahn"],
+    "The Bucketheads": ["american", "house music", "disco house", "music projects", "kenny dope", "kenny gonzalez"],
+    "Mighty Dub Katz": ["british", "english", "house music", "big beat", "music projects", "norman cook", "fatboy slim"],
+    "Tori Amos": ["american", "alternative rock", "piano", "female singers", "singer songwriters", "solo artists"],
+    "Bjork": ["icelandic", "alternative pop", "art pop", "electronic music", "female singers", "solo artists", "björk"],
+    "Tricky": ["british", "english", "trip hop", "alternative hip hop", "male singers", "music producers", "solo artists", "bristol"],
+    "Sneaker Pimps": ["british", "english", "trip hop", "electronica", "bands", "kelli ali", "chris corner"],
+    "Garbage": ["american", "scottish", "alternative rock", "bands", "shirley manson", "butch vig"],
+    "Elastica": ["british", "english", "britpop", "alternative rock", "bands", "justine frischmann"],
+    "Stone Temple Pilots": ["american", "alternative rock", "grunge", "bands", "scott weiland", "dean deleo"],
+    "New Radicals": ["american", "alternative rock", "pop rock", "bands", "gregg alexander"],
+    "Aimee Mann": ["american", "alternative rock", "pop rock", "female singers", "singer songwriters", "solo artists"],
+    "Prefab Sprout": ["british", "english", "pop rock", "sophisti pop", "bands", "paddy mcaloon"],
+    "Aztec Camera": ["scottish", "british", "pop rock", "new wave", "bands", "roddy frame"],
+    "Love and Money": ["scottish", "british", "sophisti pop", "pop rock", "bands", "james grant", "glasgow"],
+};
+
+const recordingTags = {
+    "music_7067": [1995, "the drive album"],
+    "music_7068": [1995, "the drive album"],
+    "music_7069": [1994, "real things album"],
+    "music_7070": [1994, "real things album"],
+    "music_7071": [1993, "no limits album"],
+    "music_7072": [1994, "real things album", "1995 single"],
+    "music_7073": [1994, "real things album"],
+    "music_7074": [1992, "get ready album"],
+    "music_7075": [1992, "get ready album"],
+    "music_7076": [1991, "get ready album", "1992 album"],
+    "music_7077": [1993, "no limits album"],
+    "music_7078": [1992, "get ready album"],
+    "music_7079": [1995, "hits unlimited compilation", "1996 single"],
+    "music_7080": [1995, "hits unlimited compilation", "1996 single"],
+    "music_7081": [1990, "world power album"],
+    "music_7082": [1990, "world power album"],
+    "music_7083": [1990, "world power album"],
+    "music_7084": [1991, "the madmans return album", "1992 album"],
+    "music_7085": [1992, "the madmans return album", "1993 single"],
+    "music_7086": [1994, "welcome to tomorrow album"],
+    "music_7087": [1992, "the madmans return album", "1993 single"],
+    "music_7088": [1993, "move ep"],
+    "music_7089": [1994, "everything is wrong album", "1995 album"],
+    "music_7090": [1995, "everything is wrong album"],
+    "music_7091": [1995, "everything is wrong album", "mimi goese vocals"],
+    "music_7092": [1994, "everything is wrong album", "1995 album"],
+    "music_7093": [1997, "i like to score album", "monty norman theme", "james bond theme remix"],
+    "music_7094": [1998, "play album", "1999 album"],
+    "music_7095": [1999, "play album"],
+    "music_7096": [1999, "play album"],
+    "music_7097": [1991, "moby debut album", "1992 album"],
+    "music_7098": [1995, "higher state of consciousness single", "wink alias"],
+    "music_7099": [1995, "dont laugh single", "winx alias"],
+    "music_7100": [1996, "are you there single", "wink alias", "1997 chart hit"],
+    "music_7101": [1995, "everybody be somebody single", "yavahn vocals"],
+    "music_7102": [1995, "all in the mind album", "chicago street player sample", "sampling"],
+    "music_7103": [1995, "magic carpet ride single", "norman cook alias"],
+    "music_7104": [1996, "its just another groove single", "norman cook alias"],
+    "music_7105": [1996, "boys for pele album"],
+    "music_7106": [1996, "boys for pele album"],
+    "music_7107": [1998, "from the choirgirl hotel album"],
+    "music_7108": [1994, "under the pink album"],
+    "music_7109": [1992, "little earthquakes album"],
+    "music_7110": [1992, "little earthquakes album"],
+    "music_7111": [1995, "post album"],
+    "music_7112": [1995, "post album"],
+    "music_7113": [1995, "post album"],
+    "music_7114": [1995, "post album", "1997 single"],
+    "music_7115": [1997, "homogenic album"],
+    "music_7116": [1997, "homogenic album"],
+    "music_7117": [1997, "homogenic album"],
+    "music_7118": [1993, "debut album"],
+    "music_7119": [1993, "debut album"],
+    "music_7120": [1995, "post album"],
+    "music_7121": [1993, "the young americans soundtrack", "film soundtracks", "david arnold collaboration"],
+    "music_7122": [1993, "debut album"],
+    "music_7123": [1993, "debut album"],
+    "music_7124": [1995, "post album", "cover versions", "betty hutton cover"],
+    "music_7125": [1997, "homogenic album", "1999 single"],
+    "music_7126": [1995, "maxinquaye album", "martina topley bird vocals"],
+    "music_7127": [1995, "maxinquaye album", "martina topley bird vocals"],
+    "music_7128": [1995, "maxinquaye album", "public enemy cover", "cover versions"],
+    "music_7129": [1995, "maxinquaye album", "martina topley bird vocals"],
+    "music_7130": [1996, "pre millennium tension album"],
+    "music_7131": [1996, "pre millennium tension album"],
+    "music_7132": [1996, "becoming x album"],
+    "music_7133": [1996, "becoming x album", "armand van helden remix"],
+    "music_7134": [1996, "becoming x album"],
+    "music_7135": [1996, "becoming x album"],
+    "music_7136": [1999, "splinter album", "chris corner vocals"],
+    "music_7137": [1995, "garbage debut album", "album track"],
+    "music_7138": [1995, "elastica debut album", "album track"],
+    "music_7139": [1994, "purple album"],
+    "music_7140": [1994, "purple album"],
+    "music_7141": [1994, "purple album"],
+    "music_7142": [1994, "purple album", "album track"],
+    "music_7143": [1996, "tiny music songs from the vatican gift shop album"],
+    "music_7144": [1996, "tiny music songs from the vatican gift shop album"],
+    "music_7145": [1996, "tiny music songs from the vatican gift shop album"],
+    "music_7146": [1999, "no 4 album"],
+    "music_7147": [1992, "core album"],
+    "music_7148": [1992, "core album"],
+    "music_7149": [1998, "maybe youve been brainwashed too album", "album track"],
+    "music_7150": [1998, "maybe youve been brainwashed too album", "album track"],
+    "music_7151": [1998, "maybe youve been brainwashed too album", "album track"],
+    "music_7152": [1998, "maybe youve been brainwashed too album", "album track"],
+    "music_7153": [1995, "im with stupid album"],
+    "music_7154": [1995, "im with stupid album"],
+    "music_7155": [1995, "im with stupid album"],
+    "music_7156": [1993, "whatever album"],
+    "music_7157": [1995, "im with stupid album"],
+    "music_7158": [1995, "im with stupid album", "album track"],
+    "music_7159": [2000, "bachelor no 2 album", "album track"],
+    "music_7160": [1997, "andromeda heights album"],
+    "music_7161": [1992, "dreamland album"],
+    "music_7162": [1993, "dreamland album", "1992 album"],
+    "music_7163": [1995, "frestonia album"],
+    "music_7164": [1986, "all you need is album", "1987 single"],
+    "music_7165": [1988, "strange kind of love album", "1989 single"],
+    "music_7166": [1988, "strange kind of love album", "1989 single"],
+};
 
 const songs = [
     ["Catch a Fire", "Haddaway", "Hard"],
     ["Fly Away", "Haddaway", "Hard"],
-
     ["The Real Thing", "2 Unlimited", "Medium"],
     ["Here I Go", "2 Unlimited", "Hard"],
     ["Maximum Overdrive", "2 Unlimited", "Hard"],
@@ -20,7 +147,6 @@ const songs = [
     ["The Magic Friend", "2 Unlimited", "Hard"],
     ["Jump for Joy", "2 Unlimited", "Hard"],
     ["Spread Your Love", "2 Unlimited", "Hard"],
-
     ["Ooops Up", "Snap", "Medium"],
     ["Cult of Snap", "Snap", "Hard"],
     ["Mary Had a Little Boy", "Snap", "Hard"],
@@ -28,36 +154,29 @@ const songs = [
     ["Do You See the Light", "Snap", "Medium"],
     ["Welcome to Tomorrow", "Snap", "Medium"],
     ["Exterminate", "Snap", "Medium"],
-
     ["Move", "Moby", "Hard"],
     ["Feeling So Real", "Moby", "Medium"],
     ["Everytime You Touch Me", "Moby", "Hard"],
     ["Into the Blue", "Moby", "Hard"],
     ["Hymn", "Moby", "Hard"],
-    ["James Bond Theme", "Moby", "Medium"],
+    ["James Bond Theme (Moby's Re-Version)", "Moby", "Medium"],
     ["Honey", "Moby", "Medium"],
     ["Bodyrock", "Moby", "Medium"],
     ["Why Does My Heart Feel So Bad", "Moby", "Easy"],
     ["Go", "Moby", "Medium"],
-
     ["Higher State of Consciousness", "Josh Wink", "Medium"],
     ["Don't Laugh", "Josh Wink", "Hard"],
     ["Are You There", "Josh Wink", "Hard"],
-
     ["Everybody Be Somebody", "Ruffneck", "Hard"],
-
     ["The Bomb (These Sounds Fall into My Mind)", "The Bucketheads", "Medium"],
-
     ["Magic Carpet Ride", "Mighty Dub Katz", "Hard"],
     ["It's Just Another Groove", "Mighty Dub Katz", "Hard"],
-
     ["Hey Jupiter", "Tori Amos", "Medium"],
     ["Talula", "Tori Amos", "Hard"],
     ["Raspberry Swirl", "Tori Amos", "Hard"],
     ["God", "Tori Amos", "Medium"],
     ["China", "Tori Amos", "Hard"],
     ["Winter", "Tori Amos", "Medium"],
-
     ["Army of Me", "Bjork", "Medium"],
     ["Hyperballad", "Bjork", "Medium"],
     ["Possibly Maybe", "Bjork", "Hard"],
@@ -73,40 +192,33 @@ const songs = [
     ["Venus as a Boy", "Bjork", "Medium"],
     ["It's Oh So Quiet", "Bjork", "Easy"],
     ["All Is Full of Love", "Bjork", "Medium"],
-
     ["Overcome", "Tricky", "Hard"],
     ["Hell Is Round the Corner", "Tricky", "Medium"],
     ["Black Steel", "Tricky", "Medium"],
     ["Pumpkin", "Tricky", "Hard"],
     ["Makes Me Wanna Die", "Tricky", "Hard"],
     ["Christiansands", "Tricky", "Hard"],
-
     ["6 Underground", "Sneaker Pimps", "Easy"],
     ["Spin Spin Sugar", "Sneaker Pimps", "Medium"],
     ["Post-Modern Sleaze", "Sneaker Pimps", "Hard"],
     ["Tesko Suicide", "Sneaker Pimps", "Hard"],
     ["Low Five", "Sneaker Pimps", "Hard"],
-
     ["Supervixen", "Garbage", "Hard"],
-
     ["Never Here", "Elastica", "Hard"],
-
     ["Vasoline", "Stone Temple Pilots", "Medium"],
     ["Interstate Love Song", "Stone Temple Pilots", "Easy"],
     ["Big Empty", "Stone Temple Pilots", "Medium"],
     ["Pretty Penny", "Stone Temple Pilots", "Hard"],
-    ["Trippin on a Hole in a Paper Heart", "Stone Temple Pilots", "Medium"],
+    ["Trippin' on a Hole in a Paper Heart", "Stone Temple Pilots", "Medium"],
     ["Lady Picture Show", "Stone Temple Pilots", "Medium"],
     ["Big Bang Baby", "Stone Temple Pilots", "Medium"],
     ["Down", "Stone Temple Pilots", "Hard"],
     ["Plush", "Stone Temple Pilots", "Easy"],
     ["Creep", "Stone Temple Pilots", "Medium"],
-
     ["Mother We Just Can't Get Enough", "New Radicals", "Hard"],
     ["Maybe You've Been Brainwashed Too", "New Radicals", "Hard"],
     ["Technicolor Lover", "New Radicals", "Hard"],
     ["Cryin' Like a Church on Monday", "New Radicals", "Hard"],
-
     ["Choice in the Matter", "Aimee Mann", "Hard"],
     ["That's Just What You Are", "Aimee Mann", "Medium"],
     ["You Could Make a Killing", "Aimee Mann", "Hard"],
@@ -114,70 +226,60 @@ const songs = [
     ["Long Shot", "Aimee Mann", "Hard"],
     ["Ray", "Aimee Mann", "Hard"],
     ["Calling It Quits", "Aimee Mann", "Hard"],
-
     ["Electric Guitars", "Prefab Sprout", "Hard"],
-
     ["Spanish Horses", "Aztec Camera", "Hard"],
     ["Birds", "Aztec Camera", "Hard"],
     ["Sun", "Aztec Camera", "Hard"],
-
     ["River of People", "Love and Money", "Hard"],
     ["Jocelyn Square", "Love and Money", "Hard"],
-    ["Strange Kind of Love", "Love and Money", "Hard"]
+    ["Strange Kind of Love", "Love and Money", "Hard"],
 ];
 
-const artists = [...new Set(
-    songs.map(song => song[1])
-)];
+const artists = [...new Set(songs.map(song => song[1]))];
 
 function makeAnswers(correctArtist, index) {
     const wrong = [];
-
-    for (
-        let offset = 1;
-        wrong.length < 3;
-        offset++
-    ) {
-        const candidate =
-            artists[
-                (index + offset) %
-                artists.length
-            ];
-
-        if (
-            candidate !== correctArtist &&
-            wrong.includes(candidate) === false
-        ) {
-            wrong.push(candidate);
-        }
+    for (let offset = 1; wrong.length < 3; offset++) {
+        const candidate = artists[(index + offset) % artists.length];
+        if (candidate !== correctArtist && !wrong.includes(candidate)) wrong.push(candidate);
     }
-
-    const answers = [
-        correctArtist,
-        ...wrong
-    ];
-
+    const answers = [correctArtist, ...wrong];
     const shift = index % 4;
-
-    return [
-        ...answers.slice(shift),
-        ...answers.slice(0, shift)
-    ];
+    return [...answers.slice(shift), ...answers.slice(0, shift)];
 }
 
-const quizPack90 = songs.map(
-    ([title, artist, difficulty], index) => ({
-        id: `music_${7067 + index}`,
-        category: "Music",
+const questionOverrides = {
+    "music_7093": "Which artist released 'James Bond Theme (Moby's Re-Version)'?",
+    "music_7098": "Which DJ, also known as Wink, recorded 'Higher State of Consciousness'?",
+    "music_7099": "Which DJ recorded 'Don't Laugh' under the name Winx?",
+    "music_7100": "Which DJ, recording as Wink, released 'Are You There'?"
+};
+
+const quizPack90 = songs.map(([title, artist, difficulty], index) => {
+    const id = `music_${7067 + index}`;
+    const artistTags = performerTags[artist];
+    const recording = recordingTags[id];
+    if (!artistTags || !recording) throw new Error(`Missing metadata for ${id}`);
+    const year = recording[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    const albumTrack = recording.includes('album track');
+
+    return {
+        id,
+        category: 'Music',
         difficulty,
-        question:
-            `Which artist recorded '${title}'?`,
-        answers: makeAnswers(
-            artist,
-            index
-        ),
-        correctAnswer: artist
-    })
-);
+        question: questionOverrides[id] || `Which artist recorded '${title}'?`,
+        answers: makeAnswers(artist, index),
+        correctAnswer: artist,
+        tags: [...new Set([
+            'music', 'songs', 'recordings',
+            ...(albumTrack ? ['album tracks'] : []),
+            decade, `${decade} music`, `${year} releases`,
+            title.toLowerCase(), artist.toLowerCase(),
+            ...artistTags, ...recording.slice(1)
+        ])],
+        dailyEligible: true
+    };
+});
 
 module.exports = quizPack90;
