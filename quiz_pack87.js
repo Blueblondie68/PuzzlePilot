@@ -1,321 +1,276 @@
 // quiz_pack87.js
-// PuzzlePilot Big Quiz
-// Music Pack 87
-// 100 questions
-// IDs: music_6767 to music_6866
-
-const songs = [
-    ["Found Out About You", "Gin Blossoms", "Medium",
-        ["Gin Blossoms", "Soul Asylum", "Semisonic", "Fastball"]],
-
-    ["Until I Fall Away", "Gin Blossoms", "Hard",
-        ["Gin Blossoms", "Soul Asylum", "Third Eye Blind", "Fastball"]],
-
-    ["Follow You Down", "Gin Blossoms", "Medium",
-        ["Gin Blossoms", "Semisonic", "Fastball", "The Wallflowers"]],
-
-    ["Til I Hear It from You", "Gin Blossoms", "Medium",
-        ["Gin Blossoms", "Soul Asylum", "Semisonic", "The Wallflowers"]],
-
-    ["All for You", "Sister Hazel", "Medium",
-        ["Sister Hazel", "Gin Blossoms", "Fastball", "Semisonic"]],
-
-    ["Change Your Mind", "Sister Hazel", "Hard",
-        ["Sister Hazel", "Gin Blossoms", "Everclear", "Fastball"]],
-
-    ["Run-Around", "Blues Traveler", "Medium",
-        ["Blues Traveler", "Spin Doctors", "Gin Blossoms", "The Wallflowers"]],
-
-    ["Hook", "Blues Traveler", "Medium",
-        ["Blues Traveler", "Spin Doctors", "Fastball", "Sister Hazel"]],
-
-    ["But Anyway", "Blues Traveler", "Hard",
-        ["Blues Traveler", "Spin Doctors", "Gin Blossoms", "The Wallflowers"]],
-
-    ["The Mountains Win Again", "Blues Traveler", "Hard",
-        ["Blues Traveler", "Spin Doctors", "Sister Hazel", "Fastball"]],
-
-    ["Little Miss Can't Be Wrong", "Spin Doctors", "Medium",
-        ["Spin Doctors", "Blues Traveler", "Gin Blossoms", "Soul Asylum"]],
-
-    ["Jimmy Olsen's Blues", "Spin Doctors", "Medium",
-        ["Spin Doctors", "Blues Traveler", "Sister Hazel", "Fastball"]],
-
-    ["What Time Is It", "Spin Doctors", "Hard",
-        ["Spin Doctors", "Blues Traveler", "Gin Blossoms", "Semisonic"]],
-
-    ["Cleopatra's Cat", "Spin Doctors", "Hard",
-        ["Spin Doctors", "Blues Traveler", "Soul Asylum", "Fastball"]],
-
-    ["One Headlight", "The Wallflowers", "Easy",
-        ["The Wallflowers", "Gin Blossoms", "Counting Crows", "Semisonic"]],
-
-    ["The Difference", "The Wallflowers", "Medium",
-        ["The Wallflowers", "Gin Blossoms", "Soul Asylum", "Fastball"]],
-
-    ["Three Marlenas", "The Wallflowers", "Hard",
-        ["The Wallflowers", "Counting Crows", "Gin Blossoms", "Semisonic"]],
-
-    ["6th Avenue Heartache", "The Wallflowers", "Medium",
-        ["The Wallflowers", "Counting Crows", "Soul Asylum", "Gin Blossoms"]],
-
-    ["Heroes", "The Wallflowers", "Medium",
-        ["The Wallflowers", "Counting Crows", "Gin Blossoms", "Fastball"]],
-
-    ["Shimmer", "Fuel", "Medium",
-        ["Fuel", "Everclear", "Local H", "Toadies"]],
-
-    ["Bittersweet", "Fuel", "Hard",
-        ["Fuel", "Everclear", "Local H", "Dishwalla"]],
-
-    ["Jesus or a Gun", "Fuel", "Hard",
-        ["Fuel", "Local H", "Toadies", "Everclear"]],
-
-    ["Everything to Everyone", "Everclear", "Medium",
-        ["Everclear", "Fuel", "Local H", "Eve 6"]],
-
-    ["Father of Mine", "Everclear", "Medium",
-        ["Everclear", "Fuel", "Semisonic", "Local H"]],
-
-    ["I Will Buy You a New Life", "Everclear", "Medium",
-        ["Everclear", "Fuel", "Gin Blossoms", "Dishwalla"]],
-
-    ["Santa Monica", "Everclear", "Easy",
-        ["Everclear", "Fuel", "Local H", "Toadies"]],
-
-    ["Inside Out", "Eve 6", "Medium",
-        ["Eve 6", "Semisonic", "Fastball", "Everclear"]],
-
-    ["Leech", "Eve 6", "Hard",
-        ["Eve 6", "Semisonic", "Fuel", "Local H"]],
-
-    ["Singing in My Sleep", "Semisonic", "Hard",
-        ["Semisonic", "Fastball", "Eve 6", "Gin Blossoms"]],
-
-    ["Secret Smile", "Semisonic", "Medium",
-        ["Semisonic", "Fastball", "Gin Blossoms", "The Wallflowers"]],
-
-    ["The Way", "Fastball", "Easy",
-        ["Fastball", "Semisonic", "Gin Blossoms", "Everclear"]],
-
-    ["Out of My Head", "Fastball", "Medium",
-        ["Fastball", "Semisonic", "Gin Blossoms", "Sister Hazel"]],
-
-    ["Fire Escape", "Fastball", "Hard",
-        ["Fastball", "Semisonic", "Everclear", "Eve 6"]],
-
-    ["You're an Ocean", "Fastball", "Hard",
-        ["Fastball", "Semisonic", "Gin Blossoms", "Sister Hazel"]],
-
-    ["Sex and Candy", "Marcy Playground", "Easy",
-        ["Marcy Playground", "Harvey Danger", "Toadies", "Local H"]],
-
-    ["Saint Joe on the School Bus", "Marcy Playground", "Hard",
-        ["Marcy Playground", "Harvey Danger", "Toadies", "Local H"]],
-
-    ["Sherry Fraser", "Marcy Playground", "Hard",
-        ["Marcy Playground", "Harvey Danger", "Local H", "Everclear"]],
-
-    ["Flagpole Sitta", "Harvey Danger", "Medium",
-        ["Harvey Danger", "Marcy Playground", "Local H", "Toadies"]],
-
-    ["Private Helicopter", "Harvey Danger", "Hard",
-        ["Harvey Danger", "Marcy Playground", "Local H", "Eve 6"]],
-
-    ["Save It for Later", "Harvey Danger", "Hard",
-        ["Harvey Danger", "Marcy Playground", "Everclear", "Semisonic"]],
-
-    ["Possum Kingdom", "Toadies", "Medium",
-        ["Toadies", "Local H", "Fuel", "Everclear"]],
-
-    ["Away", "Toadies", "Hard",
-        ["Toadies", "Local H", "Fuel", "Marcy Playground"]],
-
-    ["Tyler", "Toadies", "Hard",
-        ["Toadies", "Local H", "Fuel", "Harvey Danger"]],
-
-    ["Everything Falls Apart", "Dogs Eye View", "Hard",
-        ["Dogs Eye View", "Dishwalla", "Deep Blue Something", "Fastball"]],
-
-    ["Halo", "Deep Blue Something", "Hard",
-        ["Deep Blue Something", "Dishwalla", "Semisonic", "Fastball"]],
-
-    ["Josey", "Deep Blue Something", "Hard",
-        ["Deep Blue Something", "Dishwalla", "Gin Blossoms", "Fastball"]],
-
-    ["Counting Blue Cars", "Dishwalla", "Medium",
-        ["Dishwalla", "Deep Blue Something", "Fastball", "Semisonic"]],
-
-    ["Charlie Brown's Parents", "Dishwalla", "Hard",
-        ["Dishwalla", "Deep Blue Something", "Everclear", "Fastball"]],
-
-    ["Give", "Dishwalla", "Hard",
-        ["Dishwalla", "Deep Blue Something", "Fastball", "Fuel"]],
-
-    ["Amnesia", "Chumbawamba", "Medium",
-        ["Chumbawamba", "Republica", "Space", "Cornershop"]],
-
-    ["Enough Is Enough", "Chumbawamba", "Hard",
-        ["Chumbawamba", "Republica", "Space", "The Wonder Stuff"]],
-
-    ["Top of the World (Ole Ole Ole)", "Chumbawamba", "Hard",
-        ["Chumbawamba", "Republica", "Space", "Cornershop"]],
-
-    ["On the Run", "OMC", "Hard",
-        ["OMC", "Len", "Bran Van 3000", "New Radicals"]],
-
-    ["Land of Plenty", "OMC", "Hard",
-        ["OMC", "Len", "Bran Van 3000", "New Radicals"]],
-
-    ["Standing Outside a Broken Phone Booth with Money in My Hand",
-        "Primitive Radio Gods", "Medium",
-        ["Primitive Radio Gods", "Marcy Playground", "Harvey Danger", "Nada Surf"]],
-
-    ["Mother Mother", "Tracy Bonham", "Medium",
-        ["Tracy Bonham", "Meredith Brooks", "Fiona Apple", "Liz Phair"]],
-
-    ["The One", "Tracy Bonham", "Hard",
-        ["Tracy Bonham", "Meredith Brooks", "Liz Phair", "Paula Cole"]],
-
-    ["Everything's Fine", "Tracy Bonham", "Hard",
-        ["Tracy Bonham", "Meredith Brooks", "Fiona Apple", "Liz Phair"]],
-
-    ["What Would Happen", "Meredith Brooks", "Medium",
-        ["Meredith Brooks", "Tracy Bonham", "Paula Cole", "Sheryl Crow"]],
-
-    ["Stop", "Meredith Brooks", "Hard",
-        ["Meredith Brooks", "Tracy Bonham", "Paula Cole", "Lisa Loeb"]],
-
-    ["Get Out of This House", "Shawn Colvin", "Hard",
-        ["Shawn Colvin", "Paula Cole", "Lisa Loeb", "Jewel"]],
-
-    ["You and the Mona Lisa", "Shawn Colvin", "Hard",
-        ["Shawn Colvin", "Paula Cole", "Lisa Loeb", "Sarah McLachlan"]],
-
-    ["Every Little Thing", "Shawn Colvin", "Hard",
-        ["Shawn Colvin", "Paula Cole", "Jewel", "Lisa Loeb"]],
-
-    ["Who Will Save Your Soul", "Jewel", "Easy",
-        ["Jewel", "Paula Cole", "Lisa Loeb", "Sarah McLachlan"]],
-
-    ["You Were Meant for Me", "Jewel", "Easy",
-        ["Jewel", "Paula Cole", "Sheryl Crow", "Lisa Loeb"]],
-
-    ["Foolish Games", "Jewel", "Medium",
-        ["Jewel", "Sarah McLachlan", "Paula Cole", "Lisa Loeb"]],
-
-    ["Hands", "Jewel", "Medium",
-        ["Jewel", "Sarah McLachlan", "Sheryl Crow", "Paula Cole"]],
-
-    ["Down So Long", "Jewel", "Medium",
-        ["Jewel", "Sheryl Crow", "Paula Cole", "Lisa Loeb"]],
-
-    ["Truthfully", "Lisa Loeb", "Hard",
-        ["Lisa Loeb", "Jewel", "Paula Cole", "Shawn Colvin"]],
-
-    ["Waiting for Wednesday", "Lisa Loeb", "Hard",
-        ["Lisa Loeb", "Jewel", "Shawn Colvin", "Paula Cole"]],
-
-    ["Building a Mystery", "Sarah McLachlan", "Medium",
-        ["Sarah McLachlan", "Jewel", "Paula Cole", "Lisa Loeb"]],
-
-    ["Sweet Surrender", "Sarah McLachlan", "Medium",
-        ["Sarah McLachlan", "Jewel", "Paula Cole", "Shawn Colvin"]],
-
-    ["Adia", "Sarah McLachlan", "Medium",
-        ["Sarah McLachlan", "Jewel", "Lisa Loeb", "Paula Cole"]],
-
-    ["Angel", "Sarah McLachlan", "Easy",
-        ["Sarah McLachlan", "Jewel", "Paula Cole", "Sheryl Crow"]],
-
-    ["Possession", "Sarah McLachlan", "Medium",
-        ["Sarah McLachlan", "Jewel", "Paula Cole", "Lisa Loeb"]],
-
-    ["Into the Fire", "Sarah McLachlan", "Hard",
-        ["Sarah McLachlan", "Jewel", "Paula Cole", "Shawn Colvin"]],
-
-    ["I Love You Always Forever", "Donna Lewis", "Easy",
-        ["Donna Lewis", "Des'ree", "Lisa Loeb", "Paula Cole"]],
-
-    ["Without Love", "Donna Lewis", "Hard",
-        ["Donna Lewis", "Des'ree", "Lisa Loeb", "Shawn Colvin"]],
-
-    ["Love and Affection", "Donna Lewis", "Hard",
-        ["Donna Lewis", "Des'ree", "Lisa Loeb", "Paula Cole"]],
-
-    ["Barely Breathing", "Duncan Sheik", "Medium",
-        ["Duncan Sheik", "Marc Cohn", "Joshua Kadison", "Curtis Stigers"]],
-
-    ["She Runs Away", "Duncan Sheik", "Hard",
-        ["Duncan Sheik", "Marc Cohn", "Joshua Kadison", "Eagle-Eye Cherry"]],
-
-    ["Wishful Thinking", "Duncan Sheik", "Hard",
-        ["Duncan Sheik", "Marc Cohn", "Joshua Kadison", "Eagle-Eye Cherry"]],
-
-    ["Indecision", "Eagle-Eye Cherry", "Hard",
-        ["Eagle-Eye Cherry", "Duncan Sheik", "David Gray", "Marc Cohn"]],
-
-    ["Desperately Wanting", "Better Than Ezra", "Medium",
-        ["Better Than Ezra", "Semisonic", "Fastball", "Gin Blossoms"]],
-
-    ["Good", "Better Than Ezra", "Medium",
-        ["Better Than Ezra", "Semisonic", "Fastball", "Everclear"]],
-
-    ["King of New Orleans", "Better Than Ezra", "Hard",
-        ["Better Than Ezra", "Semisonic", "Fastball", "Gin Blossoms"]],
-
-    ["In the Blood", "Better Than Ezra", "Hard",
-        ["Better Than Ezra", "Semisonic", "Fastball", "Everclear"]],
-
-    ["At the Stars", "Better Than Ezra", "Hard",
-        ["Better Than Ezra", "Semisonic", "Gin Blossoms", "Fastball"]],
-
-    ["Bound for the Floor", "Local H", "Medium",
-        ["Local H", "Toadies", "Fuel", "Everclear"]],
-
-    ["Eddie's Head", "Local H", "Hard",
-        ["Local H", "Toadies", "Fuel", "Harvey Danger"]],
-
-    ["All the Kids Are Right", "Local H", "Hard",
-        ["Local H", "Toadies", "Everclear", "Fuel"]],
-
-    ["Popular", "Nada Surf", "Medium",
-        ["Nada Surf", "Marcy Playground", "Harvey Danger", "Local H"]],
-
-    ["Treehouse", "Nada Surf", "Hard",
-        ["Nada Surf", "Marcy Playground", "Harvey Danger", "Semisonic"]],
-
-    ["Beautiful in My Eyes", "Joshua Kadison", "Medium",
-        ["Joshua Kadison", "Marc Cohn", "Curtis Stigers", "Duncan Sheik"]],
-
-    ["Jessie", "Joshua Kadison", "Medium",
-        ["Joshua Kadison", "Marc Cohn", "Curtis Stigers", "Duncan Sheik"]],
-
-    ["Picture Postcards from LA", "Joshua Kadison", "Hard",
-        ["Joshua Kadison", "Marc Cohn", "Curtis Stigers", "Duncan Sheik"]],
-
-    ["In the Meantime", "Spacehog", "Medium",
-        ["Spacehog", "Nada Surf", "Local H", "Marcy Playground"]],
-
-    ["Mungo City", "Spacehog", "Hard",
-        ["Spacehog", "Nada Surf", "Local H", "Harvey Danger"]],
-
-    ["Cruel to Be Kind", "Spacehog", "Hard",
-        ["Spacehog", "Nada Surf", "Local H", "Marcy Playground"]],
-
-    ["Awful", "Hole", "Hard",
-        ["Hole", "Veruca Salt", "Garbage", "L7"]]
+// PuzzlePilot Bigggggg Quiz - Music Pack 87 (mainly 1990s)
+// Tagging audit: 100 questions, IDs music_6767 through music_6866.
+// Original IDs, answer options and difficulties kept except factual/typing fixes below.
+// music_6810: standard artist name Dog's Eye View.
+// music_6817: clarified the Chumbawamba / Credit to the Nation collaboration.
+// music_6824: replaced non-existent song title with a verified album question.
+// music_6856: corrected Local H title from Eddie's Head to Eddie Vedder.
+// Release year tags refer to the first identified album/recording; later singles are labelled.
+
+const performerTags = {
+    "Gin Blossoms": ["american", "alternative rock", "jangle pop", "bands", "arizona", "robin wilson", "doug hopkins"],
+    "Sister Hazel": ["american", "southern rock", "pop rock", "bands", "florida", "ken block"],
+    "Blues Traveler": ["american", "blues rock", "jam bands", "bands", "john popper", "harmonica"],
+    "Spin Doctors": ["american", "alternative rock", "funk rock", "bands", "chris barron"],
+    "The Wallflowers": ["american", "alternative rock", "roots rock", "bands", "jakob dylan"],
+    "Fuel": ["american", "post grunge", "alternative rock", "bands", "brett scallions"],
+    "Everclear": ["american", "alternative rock", "post grunge", "bands", "art alexakis"],
+    "Eve 6": ["american", "alternative rock", "pop punk", "bands", "max collins"],
+    "Semisonic": ["american", "alternative rock", "pop rock", "bands", "dan wilson"],
+    "Fastball": ["american", "alternative rock", "pop rock", "bands", "tony scalzo", "miles zuniga"],
+    "Marcy Playground": ["american", "alternative rock", "post grunge", "bands", "john wozniak"],
+    "Harvey Danger": ["american", "alternative rock", "indie rock", "bands", "seattle", "sean nelson"],
+    "Toadies": ["american", "alternative rock", "post grunge", "bands", "texas", "vaden todd lewis"],
+    "Dog's Eye View": ["american", "alternative rock", "pop rock", "bands", "peter stuart"],
+    "Deep Blue Something": ["american", "alternative rock", "pop rock", "bands", "texas", "todd pipes"],
+    "Dishwalla": ["american", "alternative rock", "post grunge", "bands", "jr richards"],
+    "Chumbawamba": ["british", "english", "alternative rock", "anarcho punk", "bands", "political music"],
+    "OMC": ["new zealand", "pacific music", "pop rock", "alternative hip hop", "music projects", "pauly fuemana", "alan jansson"],
+    "Primitive Radio Gods": ["american", "alternative rock", "trip hop", "bands", "chris oconnor"],
+    "Tracy Bonham": ["american", "alternative rock", "female singers", "singer songwriters", "solo artists", "violin"],
+    "Meredith Brooks": ["american", "pop rock", "female singers", "singer songwriters", "solo artists"],
+    "Shawn Colvin": ["american", "folk rock", "female singers", "singer songwriters", "solo artists"],
+    "Jewel": ["american", "folk pop", "pop rock", "female singers", "singer songwriters", "solo artists"],
+    "Lisa Loeb": ["american", "pop rock", "folk rock", "female singers", "singer songwriters", "solo artists"],
+    "Sarah McLachlan": ["canadian", "pop rock", "adult alternative", "female singers", "singer songwriters", "solo artists"],
+    "Donna Lewis": ["welsh", "british", "pop", "soft rock", "female singers", "singer songwriters", "solo artists"],
+    "Duncan Sheik": ["american", "pop rock", "alternative rock", "male singers", "singer songwriters", "solo artists"],
+    "Eagle-Eye Cherry": ["swedish", "pop rock", "male singers", "singer songwriters", "solo artists"],
+    "Better Than Ezra": ["american", "alternative rock", "pop rock", "bands", "kevin griffin", "new orleans"],
+    "Local H": ["american", "alternative rock", "post grunge", "duos", "scott lucas"],
+    "Nada Surf": ["american", "alternative rock", "indie rock", "bands", "matthew caws"],
+    "Joshua Kadison": ["american", "soft rock", "pop rock", "male singers", "piano", "singer songwriters", "solo artists"],
+    "Spacehog": ["british", "english", "alternative rock", "glam rock", "bands", "royston langdon"],
+    "Hole": ["american", "alternative rock", "grunge", "bands", "courtney love"],
+};
+
+const recordingTags = {
+    "music_6767": [1992, "new miserable experience album", "1993 single"],
+    "music_6768": [1992, "new miserable experience album", "1994 single"],
+    "music_6769": [1996, "congratulations im sorry album"],
+    "music_6770": [1995, "empire records soundtrack", "film soundtracks", "1996 congratulations im sorry album"],
+    "music_6771": [1997, "somewhere more familiar album", "1994 early recording"],
+    "music_6772": [2000, "fortress album", "bedazzled soundtrack", "film soundtracks"],
+    "music_6773": [1994, "four album", "1995 hit single"],
+    "music_6774": [1994, "four album", "1995 hit single"],
+    "music_6775": [1990, "blues traveler debut album", "1996 rerecorded single"],
+    "music_6776": [1994, "four album", "1996 single"],
+    "music_6777": [1991, "pocket full of kryptonite album", "1992 single"],
+    "music_6778": [1991, "pocket full of kryptonite album", "superman comics reference", "album track"],
+    "music_6779": [1991, "pocket full of kryptonite album", "1993 single"],
+    "music_6780": [1994, "turn it upside down album"],
+    "music_6781": [1996, "bringing down the horse album", "1997 hit single"],
+    "music_6782": [1996, "bringing down the horse album", "1997 single"],
+    "music_6783": [1996, "bringing down the horse album", "1997 single"],
+    "music_6784": [1996, "bringing down the horse album", "1996 single"],
+    "music_6785": [1998, "godzilla soundtrack", "david bowie cover", "cover versions", "film soundtracks"],
+    "music_6786": [1998, "sunburn album"],
+    "music_6787": [1998, "sunburn album"],
+    "music_6788": [1998, "sunburn album", "album track"],
+    "music_6789": [1997, "so much for the afterglow album"],
+    "music_6790": [1997, "so much for the afterglow album", "1998 single"],
+    "music_6791": [1997, "so much for the afterglow album", "1998 single"],
+    "music_6792": [1995, "sparkle and fade album", "santa monica watch the world die"],
+    "music_6793": [1998, "eve 6 debut album"],
+    "music_6794": [1998, "eve 6 debut album"],
+    "music_6795": [1998, "feeling strangely fine album"],
+    "music_6796": [1998, "feeling strangely fine album", "1999 uk hit"],
+    "music_6797": [1998, "all the pain money can buy album"],
+    "music_6798": [1998, "all the pain money can buy album", "1999 single"],
+    "music_6799": [1998, "all the pain money can buy album"],
+    "music_6800": [2000, "the harsh light of day album"],
+    "music_6801": [1997, "marcy playground debut album"],
+    "music_6802": [1997, "marcy playground debut album"],
+    "music_6803": [1997, "marcy playground debut album", "album track"],
+    "music_6804": [1997, "where have all the merrymakers gone album", "1998 single"],
+    "music_6805": [1997, "where have all the merrymakers gone album", "1998 single"],
+    "music_6806": [1999, "200 cigarettes soundtrack", "film soundtracks", "the beat cover", "cover versions", "1982 original"],
+    "music_6807": [1994, "rubberneck album", "1995 hit single"],
+    "music_6808": [1994, "rubberneck album"],
+    "music_6809": [1994, "rubberneck album"],
+    "music_6810": [1995, "happy nowhere album", "1996 single"],
+    "music_6811": [1995, "home album"],
+    "music_6812": [1995, "home album", "album track"],
+    "music_6813": [1995, "pet your friends album", "1996 single"],
+    "music_6814": [1995, "pet your friends album"],
+    "music_6815": [1995, "pet your friends album", "album track"],
+    "music_6816": [1997, "tubthumper album", "1998 single"],
+    "music_6817": [1993, "enough is enough single", "credit to the nation collaboration", "political music"],
+    "music_6818": [1998, "1998 fifa world cup", "football anthems", "world cup songs"],
+    "music_6819": [1996, "how bizarre album", "1997 single"],
+    "music_6820": [1996, "how bizarre album", "1997 single"],
+    "music_6821": [1996, "rocket album", "bb king sample", "sampling"],
+    "music_6822": [1996, "the burdens of being upright album"],
+    "music_6823": [1996, "the burdens of being upright album", "album track"],
+    "music_6824": [1996, "the burdens of being upright album", "debut album", "tracy bonham", "albums"],
+    "music_6825": [1997, "blurring the edges album"],
+    "music_6826": [1997, "blurring the edges album", "1998 single"],
+    "music_6827": [1996, "a few small repairs album"],
+    "music_6828": [1996, "a few small repairs album", "1997 single"],
+    "music_6829": [1992, "fat city album"],
+    "music_6830": [1995, "pieces of you album", "1996 single"],
+    "music_6831": [1995, "pieces of you album", "1996 single"],
+    "music_6832": [1995, "pieces of you album", "1997 single", "batman and robin soundtrack", "film soundtracks"],
+    "music_6833": [1998, "spirit album"],
+    "music_6834": [1998, "spirit album", "1999 single"],
+    "music_6835": [1997, "firecracker album"],
+    "music_6836": [1995, "tails album", "lisa loeb and nine stories", "album track"],
+    "music_6837": [1997, "surfacing album"],
+    "music_6838": [1997, "surfacing album"],
+    "music_6839": [1997, "surfacing album", "1998 single"],
+    "music_6840": [1997, "surfacing album", "1998 single"],
+    "music_6841": [1993, "fumbling towards ecstasy album", "1994 single"],
+    "music_6842": [1991, "solace album"],
+    "music_6843": [1996, "now in a minute album"],
+    "music_6844": [1996, "now in a minute album", "1997 single"],
+    "music_6845": [1996, "now in a minute album", "album track"],
+    "music_6846": [1996, "duncan sheik debut album"],
+    "music_6847": [1996, "duncan sheik debut album"],
+    "music_6848": [1997, "great expectations soundtrack", "1998 film", "film soundtracks"],
+    "music_6849": [1997, "desireless album", "1998 international single"],
+    "music_6850": [1996, "friction baby album"],
+    "music_6851": [1993, "deluxe album", "1995 major label release", "1995 hit single"],
+    "music_6852": [1996, "friction baby album"],
+    "music_6853": [1993, "deluxe album", "1995 major label release", "1995 single"],
+    "music_6854": [1998, "how does your garden grow album"],
+    "music_6855": [1996, "as good as dead album"],
+    "music_6856": [1996, "as good as dead album", "1997 single", "pearl jam singer", "eddie vedder"],
+    "music_6857": [1998, "pack up the cats album"],
+    "music_6858": [1996, "high low album"],
+    "music_6859": [1996, "high low album", "album track"],
+    "music_6860": [1993, "painted desert serenade album", "1994 single"],
+    "music_6861": [1993, "painted desert serenade album", "1994 single"],
+    "music_6862": [1993, "painted desert serenade album"],
+    "music_6863": [1995, "resident alien album", "1996 single"],
+    "music_6864": [1998, "the chinese album"],
+    "music_6865": [1995, "resident alien album", "1996 single"],
+    "music_6866": [1998, "celebrity skin album"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artistTags = performerTags[correctAnswer];
+    const recording = recordingTags[id];
+    if (!artistTags || !recording) throw new Error(`Missing metadata for ${id}`);
+    const year = recording[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    const albumQuestion = id === "music_6824";
+    const subject = question.match(/'(.+)'/)?.[1]?.toLowerCase();
+    if (!subject) throw new Error(`Missing question subject for ${id}`);
+    const albumTrack = recording.includes("album track");
+    return {
+        id, category: "Music", difficulty, question, answers, correctAnswer,
+        tags: [...new Set([
+            "music", albumQuestion ? "albums" : "songs", "recordings",
+            ...(albumQuestion ? [] : [albumTrack ? "album tracks" : "singles"]),
+            decade, `${decade} music`, `${year} releases`, subject,
+            correctAnswer.toLowerCase(), ...artistTags, ...recording.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
+
+const quizPack87 = [
+    makeQuestion("music_6767", "Which artist recorded 'Found Out About You'?", ["Gin Blossoms", "Soul Asylum", "Semisonic", "Fastball"], "Gin Blossoms", "Medium"),
+    makeQuestion("music_6768", "Which artist recorded 'Until I Fall Away'?", ["Gin Blossoms", "Soul Asylum", "Third Eye Blind", "Fastball"], "Gin Blossoms", "Hard"),
+    makeQuestion("music_6769", "Which artist recorded 'Follow You Down'?", ["Gin Blossoms", "Semisonic", "Fastball", "The Wallflowers"], "Gin Blossoms", "Medium"),
+    makeQuestion("music_6770", "Which artist recorded 'Til I Hear It from You'?", ["Gin Blossoms", "Soul Asylum", "Semisonic", "The Wallflowers"], "Gin Blossoms", "Medium"),
+    makeQuestion("music_6771", "Which artist recorded 'All for You'?", ["Sister Hazel", "Gin Blossoms", "Fastball", "Semisonic"], "Sister Hazel", "Medium"),
+    makeQuestion("music_6772", "Which artist recorded 'Change Your Mind'?", ["Sister Hazel", "Gin Blossoms", "Everclear", "Fastball"], "Sister Hazel", "Hard"),
+    makeQuestion("music_6773", "Which artist recorded 'Run-Around'?", ["Blues Traveler", "Spin Doctors", "Gin Blossoms", "The Wallflowers"], "Blues Traveler", "Medium"),
+    makeQuestion("music_6774", "Which artist recorded 'Hook'?", ["Blues Traveler", "Spin Doctors", "Fastball", "Sister Hazel"], "Blues Traveler", "Medium"),
+    makeQuestion("music_6775", "Which artist recorded 'But Anyway'?", ["Blues Traveler", "Spin Doctors", "Gin Blossoms", "The Wallflowers"], "Blues Traveler", "Hard"),
+    makeQuestion("music_6776", "Which artist recorded 'The Mountains Win Again'?", ["Blues Traveler", "Spin Doctors", "Sister Hazel", "Fastball"], "Blues Traveler", "Hard"),
+    makeQuestion("music_6777", "Which artist recorded 'Little Miss Can't Be Wrong'?", ["Spin Doctors", "Blues Traveler", "Gin Blossoms", "Soul Asylum"], "Spin Doctors", "Medium"),
+    makeQuestion("music_6778", "Which artist recorded 'Jimmy Olsen's Blues'?", ["Spin Doctors", "Blues Traveler", "Sister Hazel", "Fastball"], "Spin Doctors", "Medium"),
+    makeQuestion("music_6779", "Which artist recorded 'What Time Is It'?", ["Spin Doctors", "Blues Traveler", "Gin Blossoms", "Semisonic"], "Spin Doctors", "Hard"),
+    makeQuestion("music_6780", "Which artist recorded 'Cleopatra's Cat'?", ["Spin Doctors", "Blues Traveler", "Soul Asylum", "Fastball"], "Spin Doctors", "Hard"),
+    makeQuestion("music_6781", "Which artist recorded 'One Headlight'?", ["The Wallflowers", "Gin Blossoms", "Counting Crows", "Semisonic"], "The Wallflowers", "Easy"),
+    makeQuestion("music_6782", "Which artist recorded 'The Difference'?", ["The Wallflowers", "Gin Blossoms", "Soul Asylum", "Fastball"], "The Wallflowers", "Medium"),
+    makeQuestion("music_6783", "Which artist recorded 'Three Marlenas'?", ["The Wallflowers", "Counting Crows", "Gin Blossoms", "Semisonic"], "The Wallflowers", "Hard"),
+    makeQuestion("music_6784", "Which artist recorded '6th Avenue Heartache'?", ["The Wallflowers", "Counting Crows", "Soul Asylum", "Gin Blossoms"], "The Wallflowers", "Medium"),
+    makeQuestion("music_6785", "Which artist recorded 'Heroes'?", ["The Wallflowers", "Counting Crows", "Gin Blossoms", "Fastball"], "The Wallflowers", "Medium"),
+    makeQuestion("music_6786", "Which artist recorded 'Shimmer'?", ["Fuel", "Everclear", "Local H", "Toadies"], "Fuel", "Medium"),
+    makeQuestion("music_6787", "Which artist recorded 'Bittersweet'?", ["Fuel", "Everclear", "Local H", "Dishwalla"], "Fuel", "Hard"),
+    makeQuestion("music_6788", "Which artist recorded 'Jesus or a Gun'?", ["Fuel", "Local H", "Toadies", "Everclear"], "Fuel", "Hard"),
+    makeQuestion("music_6789", "Which artist recorded 'Everything to Everyone'?", ["Everclear", "Fuel", "Local H", "Eve 6"], "Everclear", "Medium"),
+    makeQuestion("music_6790", "Which artist recorded 'Father of Mine'?", ["Everclear", "Fuel", "Semisonic", "Local H"], "Everclear", "Medium"),
+    makeQuestion("music_6791", "Which artist recorded 'I Will Buy You a New Life'?", ["Everclear", "Fuel", "Gin Blossoms", "Dishwalla"], "Everclear", "Medium"),
+    makeQuestion("music_6792", "Which artist recorded 'Santa Monica'?", ["Everclear", "Fuel", "Local H", "Toadies"], "Everclear", "Easy"),
+    makeQuestion("music_6793", "Which artist recorded 'Inside Out'?", ["Eve 6", "Semisonic", "Fastball", "Everclear"], "Eve 6", "Medium"),
+    makeQuestion("music_6794", "Which artist recorded 'Leech'?", ["Eve 6", "Semisonic", "Fuel", "Local H"], "Eve 6", "Hard"),
+    makeQuestion("music_6795", "Which artist recorded 'Singing in My Sleep'?", ["Semisonic", "Fastball", "Eve 6", "Gin Blossoms"], "Semisonic", "Hard"),
+    makeQuestion("music_6796", "Which artist recorded 'Secret Smile'?", ["Semisonic", "Fastball", "Gin Blossoms", "The Wallflowers"], "Semisonic", "Medium"),
+    makeQuestion("music_6797", "Which artist recorded 'The Way'?", ["Fastball", "Semisonic", "Gin Blossoms", "Everclear"], "Fastball", "Easy"),
+    makeQuestion("music_6798", "Which artist recorded 'Out of My Head'?", ["Fastball", "Semisonic", "Gin Blossoms", "Sister Hazel"], "Fastball", "Medium"),
+    makeQuestion("music_6799", "Which artist recorded 'Fire Escape'?", ["Fastball", "Semisonic", "Everclear", "Eve 6"], "Fastball", "Hard"),
+    makeQuestion("music_6800", "Which artist recorded 'You're an Ocean'?", ["Fastball", "Semisonic", "Gin Blossoms", "Sister Hazel"], "Fastball", "Hard"),
+    makeQuestion("music_6801", "Which artist recorded 'Sex and Candy'?", ["Marcy Playground", "Harvey Danger", "Toadies", "Local H"], "Marcy Playground", "Easy"),
+    makeQuestion("music_6802", "Which artist recorded 'Saint Joe on the School Bus'?", ["Marcy Playground", "Harvey Danger", "Toadies", "Local H"], "Marcy Playground", "Hard"),
+    makeQuestion("music_6803", "Which artist recorded 'Sherry Fraser'?", ["Marcy Playground", "Harvey Danger", "Local H", "Everclear"], "Marcy Playground", "Hard"),
+    makeQuestion("music_6804", "Which artist recorded 'Flagpole Sitta'?", ["Harvey Danger", "Marcy Playground", "Local H", "Toadies"], "Harvey Danger", "Medium"),
+    makeQuestion("music_6805", "Which artist recorded 'Private Helicopter'?", ["Harvey Danger", "Marcy Playground", "Local H", "Eve 6"], "Harvey Danger", "Hard"),
+    makeQuestion("music_6806", "Which artist recorded 'Save It for Later'?", ["Harvey Danger", "Marcy Playground", "Everclear", "Semisonic"], "Harvey Danger", "Hard"),
+    makeQuestion("music_6807", "Which artist recorded 'Possum Kingdom'?", ["Toadies", "Local H", "Fuel", "Everclear"], "Toadies", "Medium"),
+    makeQuestion("music_6808", "Which artist recorded 'Away'?", ["Toadies", "Local H", "Fuel", "Marcy Playground"], "Toadies", "Hard"),
+    makeQuestion("music_6809", "Which artist recorded 'Tyler'?", ["Toadies", "Local H", "Fuel", "Harvey Danger"], "Toadies", "Hard"),
+    makeQuestion("music_6810", "Which artist recorded 'Everything Falls Apart'?", ["Dog's Eye View", "Dishwalla", "Deep Blue Something", "Fastball"], "Dog's Eye View", "Hard"),
+    makeQuestion("music_6811", "Which artist recorded 'Halo'?", ["Deep Blue Something", "Dishwalla", "Semisonic", "Fastball"], "Deep Blue Something", "Hard"),
+    makeQuestion("music_6812", "Which artist recorded 'Josey'?", ["Deep Blue Something", "Dishwalla", "Gin Blossoms", "Fastball"], "Deep Blue Something", "Hard"),
+    makeQuestion("music_6813", "Which artist recorded 'Counting Blue Cars'?", ["Dishwalla", "Deep Blue Something", "Fastball", "Semisonic"], "Dishwalla", "Medium"),
+    makeQuestion("music_6814", "Which artist recorded 'Charlie Brown's Parents'?", ["Dishwalla", "Deep Blue Something", "Everclear", "Fastball"], "Dishwalla", "Hard"),
+    makeQuestion("music_6815", "Which artist recorded 'Give'?", ["Dishwalla", "Deep Blue Something", "Fastball", "Fuel"], "Dishwalla", "Hard"),
+    makeQuestion("music_6816", "Which artist recorded 'Amnesia'?", ["Chumbawamba", "Republica", "Space", "Cornershop"], "Chumbawamba", "Medium"),
+    makeQuestion("music_6817", "Which group recorded 'Enough Is Enough' with Credit to the Nation?", ["Chumbawamba", "Republica", "Space", "The Wonder Stuff"], "Chumbawamba", "Hard"),
+    makeQuestion("music_6818", "Which artist recorded 'Top of the World (Ole Ole Ole)'?", ["Chumbawamba", "Republica", "Space", "Cornershop"], "Chumbawamba", "Hard"),
+    makeQuestion("music_6819", "Which artist recorded 'On the Run'?", ["OMC", "Len", "Bran Van 3000", "New Radicals"], "OMC", "Hard"),
+    makeQuestion("music_6820", "Which artist recorded 'Land of Plenty'?", ["OMC", "Len", "Bran Van 3000", "New Radicals"], "OMC", "Hard"),
+    makeQuestion("music_6821", "Which artist recorded 'Standing Outside a Broken Phone Booth with Money in My Hand'?", ["Primitive Radio Gods", "Marcy Playground", "Harvey Danger", "Nada Surf"], "Primitive Radio Gods", "Medium"),
+    makeQuestion("music_6822", "Which artist recorded 'Mother Mother'?", ["Tracy Bonham", "Meredith Brooks", "Fiona Apple", "Liz Phair"], "Tracy Bonham", "Medium"),
+    makeQuestion("music_6823", "Which artist recorded 'The One'?", ["Tracy Bonham", "Meredith Brooks", "Liz Phair", "Paula Cole"], "Tracy Bonham", "Hard"),
+    makeQuestion("music_6824", "Which singer released the album 'The Burdens of Being Upright'?", ["Tracy Bonham", "Meredith Brooks", "Fiona Apple", "Liz Phair"], "Tracy Bonham", "Hard"),
+    makeQuestion("music_6825", "Which artist recorded 'What Would Happen'?", ["Meredith Brooks", "Tracy Bonham", "Paula Cole", "Sheryl Crow"], "Meredith Brooks", "Medium"),
+    makeQuestion("music_6826", "Which artist recorded 'Stop'?", ["Meredith Brooks", "Tracy Bonham", "Paula Cole", "Lisa Loeb"], "Meredith Brooks", "Hard"),
+    makeQuestion("music_6827", "Which artist recorded 'Get Out of This House'?", ["Shawn Colvin", "Paula Cole", "Lisa Loeb", "Jewel"], "Shawn Colvin", "Hard"),
+    makeQuestion("music_6828", "Which artist recorded 'You and the Mona Lisa'?", ["Shawn Colvin", "Paula Cole", "Lisa Loeb", "Sarah McLachlan"], "Shawn Colvin", "Hard"),
+    makeQuestion("music_6829", "Which artist recorded 'Every Little Thing'?", ["Shawn Colvin", "Paula Cole", "Jewel", "Lisa Loeb"], "Shawn Colvin", "Hard"),
+    makeQuestion("music_6830", "Which artist recorded 'Who Will Save Your Soul'?", ["Jewel", "Paula Cole", "Lisa Loeb", "Sarah McLachlan"], "Jewel", "Easy"),
+    makeQuestion("music_6831", "Which artist recorded 'You Were Meant for Me'?", ["Jewel", "Paula Cole", "Sheryl Crow", "Lisa Loeb"], "Jewel", "Easy"),
+    makeQuestion("music_6832", "Which artist recorded 'Foolish Games'?", ["Jewel", "Sarah McLachlan", "Paula Cole", "Lisa Loeb"], "Jewel", "Medium"),
+    makeQuestion("music_6833", "Which artist recorded 'Hands'?", ["Jewel", "Sarah McLachlan", "Sheryl Crow", "Paula Cole"], "Jewel", "Medium"),
+    makeQuestion("music_6834", "Which artist recorded 'Down So Long'?", ["Jewel", "Sheryl Crow", "Paula Cole", "Lisa Loeb"], "Jewel", "Medium"),
+    makeQuestion("music_6835", "Which artist recorded 'Truthfully'?", ["Lisa Loeb", "Jewel", "Paula Cole", "Shawn Colvin"], "Lisa Loeb", "Hard"),
+    makeQuestion("music_6836", "Which artist recorded 'Waiting for Wednesday'?", ["Lisa Loeb", "Jewel", "Shawn Colvin", "Paula Cole"], "Lisa Loeb", "Hard"),
+    makeQuestion("music_6837", "Which artist recorded 'Building a Mystery'?", ["Sarah McLachlan", "Jewel", "Paula Cole", "Lisa Loeb"], "Sarah McLachlan", "Medium"),
+    makeQuestion("music_6838", "Which artist recorded 'Sweet Surrender'?", ["Sarah McLachlan", "Jewel", "Paula Cole", "Shawn Colvin"], "Sarah McLachlan", "Medium"),
+    makeQuestion("music_6839", "Which artist recorded 'Adia'?", ["Sarah McLachlan", "Jewel", "Lisa Loeb", "Paula Cole"], "Sarah McLachlan", "Medium"),
+    makeQuestion("music_6840", "Which artist recorded 'Angel'?", ["Sarah McLachlan", "Jewel", "Paula Cole", "Sheryl Crow"], "Sarah McLachlan", "Easy"),
+    makeQuestion("music_6841", "Which artist recorded 'Possession'?", ["Sarah McLachlan", "Jewel", "Paula Cole", "Lisa Loeb"], "Sarah McLachlan", "Medium"),
+    makeQuestion("music_6842", "Which artist recorded 'Into the Fire'?", ["Sarah McLachlan", "Jewel", "Paula Cole", "Shawn Colvin"], "Sarah McLachlan", "Hard"),
+    makeQuestion("music_6843", "Which artist recorded 'I Love You Always Forever'?", ["Donna Lewis", "Des'ree", "Lisa Loeb", "Paula Cole"], "Donna Lewis", "Easy"),
+    makeQuestion("music_6844", "Which artist recorded 'Without Love'?", ["Donna Lewis", "Des'ree", "Lisa Loeb", "Shawn Colvin"], "Donna Lewis", "Hard"),
+    makeQuestion("music_6845", "Which artist recorded 'Love and Affection'?", ["Donna Lewis", "Des'ree", "Lisa Loeb", "Paula Cole"], "Donna Lewis", "Hard"),
+    makeQuestion("music_6846", "Which artist recorded 'Barely Breathing'?", ["Duncan Sheik", "Marc Cohn", "Joshua Kadison", "Curtis Stigers"], "Duncan Sheik", "Medium"),
+    makeQuestion("music_6847", "Which artist recorded 'She Runs Away'?", ["Duncan Sheik", "Marc Cohn", "Joshua Kadison", "Eagle-Eye Cherry"], "Duncan Sheik", "Hard"),
+    makeQuestion("music_6848", "Which artist recorded 'Wishful Thinking'?", ["Duncan Sheik", "Marc Cohn", "Joshua Kadison", "Eagle-Eye Cherry"], "Duncan Sheik", "Hard"),
+    makeQuestion("music_6849", "Which artist recorded 'Indecision'?", ["Eagle-Eye Cherry", "Duncan Sheik", "David Gray", "Marc Cohn"], "Eagle-Eye Cherry", "Hard"),
+    makeQuestion("music_6850", "Which artist recorded 'Desperately Wanting'?", ["Better Than Ezra", "Semisonic", "Fastball", "Gin Blossoms"], "Better Than Ezra", "Medium"),
+    makeQuestion("music_6851", "Which artist recorded 'Good'?", ["Better Than Ezra", "Semisonic", "Fastball", "Everclear"], "Better Than Ezra", "Medium"),
+    makeQuestion("music_6852", "Which artist recorded 'King of New Orleans'?", ["Better Than Ezra", "Semisonic", "Fastball", "Gin Blossoms"], "Better Than Ezra", "Hard"),
+    makeQuestion("music_6853", "Which artist recorded 'In the Blood'?", ["Better Than Ezra", "Semisonic", "Fastball", "Everclear"], "Better Than Ezra", "Hard"),
+    makeQuestion("music_6854", "Which artist recorded 'At the Stars'?", ["Better Than Ezra", "Semisonic", "Gin Blossoms", "Fastball"], "Better Than Ezra", "Hard"),
+    makeQuestion("music_6855", "Which artist recorded 'Bound for the Floor'?", ["Local H", "Toadies", "Fuel", "Everclear"], "Local H", "Medium"),
+    makeQuestion("music_6856", "Which artist recorded 'Eddie Vedder'?", ["Local H", "Toadies", "Fuel", "Harvey Danger"], "Local H", "Hard"),
+    makeQuestion("music_6857", "Which artist recorded 'All the Kids Are Right'?", ["Local H", "Toadies", "Everclear", "Fuel"], "Local H", "Hard"),
+    makeQuestion("music_6858", "Which artist recorded 'Popular'?", ["Nada Surf", "Marcy Playground", "Harvey Danger", "Local H"], "Nada Surf", "Medium"),
+    makeQuestion("music_6859", "Which artist recorded 'Treehouse'?", ["Nada Surf", "Marcy Playground", "Harvey Danger", "Semisonic"], "Nada Surf", "Hard"),
+    makeQuestion("music_6860", "Which artist recorded 'Beautiful in My Eyes'?", ["Joshua Kadison", "Marc Cohn", "Curtis Stigers", "Duncan Sheik"], "Joshua Kadison", "Medium"),
+    makeQuestion("music_6861", "Which artist recorded 'Jessie'?", ["Joshua Kadison", "Marc Cohn", "Curtis Stigers", "Duncan Sheik"], "Joshua Kadison", "Medium"),
+    makeQuestion("music_6862", "Which artist recorded 'Picture Postcards from LA'?", ["Joshua Kadison", "Marc Cohn", "Curtis Stigers", "Duncan Sheik"], "Joshua Kadison", "Hard"),
+    makeQuestion("music_6863", "Which artist recorded 'In the Meantime'?", ["Spacehog", "Nada Surf", "Local H", "Marcy Playground"], "Spacehog", "Medium"),
+    makeQuestion("music_6864", "Which artist recorded 'Mungo City'?", ["Spacehog", "Nada Surf", "Local H", "Harvey Danger"], "Spacehog", "Hard"),
+    makeQuestion("music_6865", "Which artist recorded 'Cruel to Be Kind'?", ["Spacehog", "Nada Surf", "Local H", "Marcy Playground"], "Spacehog", "Hard"),
+    makeQuestion("music_6866", "Which artist recorded 'Awful'?", ["Hole", "Veruca Salt", "Garbage", "L7"], "Hole", "Hard"),
 ];
-
-const quizPack87 = songs.map(
-    ([title, artist, difficulty, answers], index) => ({
-        id: `music_${6767 + index}`,
-        category: "Music",
-        difficulty,
-        question: `Which artist recorded '${title}'?`,
-        answers,
-        correctAnswer: artist
-    })
-);
 
 module.exports = quizPack87;
