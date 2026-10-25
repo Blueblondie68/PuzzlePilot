@@ -1,812 +1,253 @@
-// quiz_pack84.js
-// PuzzlePilot Big Quiz
-// Music Pack 84
-// 100 questions
-// IDs: music_6467 - music_6566
+ // quiz_pack84.js
+// PuzzlePilot Bigggggg Quiz - Music Pack 84 (mostly 1990s)
+// Tagging audit: 100 questions, music_6467 to music_6566.
+// Only music_6476 clarified: both Whitney Houston and Celine Dion recorded a song called Miracle.
+// Original IDs, options, answers and difficulties preserved.
+
+const performerTags = {
+    "Tina Turner": ["american", "rock", "pop rock", "soul", "female singers", "solo artists", "tina turner"],
+    "Whitney Houston": ["american", "pop", "r and b", "soul", "female singers", "solo artists"],
+    "Toni Braxton": ["american", "r and b", "soul", "pop", "female singers", "solo artists"],
+    "TLC": ["american", "r and b", "hip hop", "new jack swing", "girl groups", "vocal groups", "t boz", "left eye", "chilli"],
+    "En Vogue": ["american", "r and b", "new jack swing", "soul", "girl groups", "vocal groups", "terry ellis", "cindy herron", "dawn robinson"],
+    "Boyz II Men": ["american", "r and b", "soul", "boybands", "vocal groups", "philadelphia", "nathan morris", "wanya morris", "shawn stockman"],
+    "R. Kelly": ["american", "r and b", "soul", "male singers", "solo artists"],
+    "Sting": ["british", "english", "rock", "pop rock", "male singers", "singer songwriters", "solo artists", "the police"],
+    "Phil Collins": ["british", "english", "pop rock", "soft rock", "male singers", "drummers", "solo artists", "genesis"],
+    "Rod Stewart": ["british", "scottish", "rock", "pop rock", "male singers", "solo artists", "faces"],
+    "Richard Marx": ["american", "pop rock", "soft rock", "male singers", "singer songwriters", "solo artists"],
+    "Michael Bolton": ["american", "pop rock", "soft rock", "blue eyed soul", "male singers", "solo artists"],
+    "Shania Twain": ["canadian", "country", "country pop", "female singers", "singer songwriters", "solo artists"],
+    "Sheryl Crow": ["american", "rock", "pop rock", "female singers", "singer songwriters", "solo artists"],
+    "Alanis Morissette": ["canadian", "alternative rock", "pop rock", "female singers", "singer songwriters", "solo artists"],
+    "No Doubt": ["american", "ska punk", "pop rock", "alternative rock", "bands", "gwen stefani", "california"],
+    "Garbage": ["american", "british", "alternative rock", "electronic rock", "bands", "shirley manson", "butch vig"],
+    "Texas": ["scottish", "british", "pop rock", "rock", "bands", "sharleen spiteri", "johnny mcelhone"],
+};
+
+const recordingTags = {
+    "music_6467": [1993, "whats love got to do with it soundtrack", "film soundtracks"],
+    "music_6468": [1993, "whats love got to do with it soundtrack", "film soundtracks", "the trammps song cover", "cover versions"],
+    "music_6469": [1993, "whats love got to do with it soundtrack", "film soundtracks"],
+    "music_6470": [1995, "goldeneye soundtrack", "james bond", "bond themes", "film soundtracks", "bono", "the edge"],
+    "music_6471": [1996, "wildest dreams album"],
+    "music_6472": [1996, "wildest dreams album", "sting featured artist", "guest vocals"],
+    "music_6473": [1996, "wildest dreams album", "john waite song cover", "cover versions"],
+    "music_6474": [1996, "wildest dreams album", "barry white duet", "duets"],
+    "music_6475": [1999, "twenty four seven album"],
+    "music_6476": [1991, "im your baby tonight album", "babyface", "la reid"],
+    "music_6477": [1996, "waiting to exhale soundtrack", "film soundtracks", "cece winans duet", "duets", "babyface"],
+    "music_6478": [1996, "the preachers wife soundtrack", "film soundtracks", "annie lennox song cover", "cover versions"],
+    "music_6479": [1998, "my love is your love album", "faith evans", "kelly price", "featured artists"],
+    "music_6480": [1993, "toni braxton debut album", "babyface"],
+    "music_6481": [1993, "toni braxton debut album", "babyface"],
+    "music_6482": [1994, "toni braxton debut album"],
+    "music_6483": [1994, "toni braxton debut album"],
+    "music_6484": [1996, "secrets album"],
+    "music_6485": [1997, "secrets album", "diane warren"],
+    "music_6486": [1991, "oooooohhh on the tlc tip album", "1992 single"],
+    "music_6487": [1992, "oooooohhh on the tlc tip album"],
+    "music_6488": [1992, "oooooohhh on the tlc tip album"],
+    "music_6489": [1990, "born to sing album", "debut singles"],
+    "music_6490": [1990, "born to sing album"],
+    "music_6491": [1990, "born to sing album"],
+    "music_6492": [1992, "funky divas album", "1993 single"],
+    "music_6493": [1997, "ev3 album", "babyface"],
+    "music_6494": [1991, "cooleyhighharmony album", "debut singles"],
+    "music_6495": [1991, "cooleyhighharmony album", "g c cameron song cover", "cover versions"],
+    "music_6496": [1992, "boomerang soundtrack", "film soundtracks", "babyface"],
+    "music_6497": [1994, "ii album", "babyface"],
+    "music_6498": [1994, "ii album"],
+    "music_6499": [1995, "ii album", "babyface"],
+    "music_6500": [1997, "evolution album"],
+    "music_6501": [1997, "evolution album", "soul food soundtrack", "film soundtracks"],
+    "music_6502": [1991, "born into the 90s album", "public announcement"],
+    "music_6503": [1994, "12 play album"],
+    "music_6504": [1994, "12 play album"],
+    "music_6505": [1995, "r kelly 1995 album"],
+    "music_6506": [1996, "r kelly 1995 album"],
+    "music_6507": [1996, "space jam soundtrack", "film soundtracks"],
+    "music_6508": [1997, "batman and robin soundtrack", "film soundtracks"],
+    "music_6509": [1991, "the soul cages album"],
+    "music_6510": [1991, "the soul cages album"],
+    "music_6511": [1991, "the soul cages album"],
+    "music_6512": [1993, "ten summoners tales album"],
+    "music_6513": [1993, "ten summoners tales album"],
+    "music_6514": [1993, "ten summoners tales album"],
+    "music_6515": [1993, "ten summoners tales album"],
+    "music_6516": [1996, "mercury falling album"],
+    "music_6517": [1990, "but seriously album", "1989 album"],
+    "music_6518": [1993, "both sides album"],
+    "music_6519": [1993, "both sides album"],
+    "music_6520": [1996, "dance into the light album"],
+    "music_6521": [1996, "dance into the light album"],
+    "music_6522": [1998, "hits album", "cyndi lauper song cover", "cover versions"],
+    "music_6523": [1991, "vagabond heart album"],
+    "music_6524": [1991, "vagabond heart album", "the temptations featured artists"],
+    "music_6525": [1991, "vagabond heart album", "robbie robertson song cover", "cover versions"],
+    "music_6526": [1991, "vagabond heart album", "van morrison song cover", "cover versions", "1993 live version"],
+    "music_6527": [1993, "unplugged and seated album", "live recordings", "1993 rerecording", "tim hardin song cover", "cover versions", "1971 original recording"],
+    "music_6528": [1995, "a spanner in the works album", "tom petty songwriter"],
+    "music_6529": [1991, "rush street album"],
+    "music_6530": [1992, "rush street album"],
+    "music_6531": [1994, "paid vacation album"],
+    "music_6532": [1994, "paid vacation album"],
+    "music_6533": [1997, "flesh and bone album"],
+    "music_6534": [1989, "soul provider album", "laura branigan original", "cover versions", "1990 uk hit"],
+    "music_6535": [1990, "soul provider album"],
+    "music_6536": [1991, "time love and tenderness album"],
+    "music_6537": [1991, "time love and tenderness album"],
+    "music_6538": [1991, "time love and tenderness album", "percy sledge song cover", "cover versions"],
+    "music_6539": [1993, "the one thing album"],
+    "music_6540": [1995, "the woman in me album"],
+    "music_6541": [1995, "the woman in me album"],
+    "music_6542": [1995, "the woman in me album"],
+    "music_6543": [1996, "the woman in me album"],
+    "music_6544": [1996, "the woman in me album"],
+    "music_6545": [1997, "come on over album"],
+    "music_6546": [1997, "come on over album", "1997 us country single", "2000 uk hit"],
+    "music_6547": [1995, "tuesday night music club album"],
+    "music_6548": [1997, "sheryl crow 1996 album"],
+    "music_6549": [1998, "the globe sessions album", "1999 us single"],
+    "music_6550": [1999, "the globe sessions album", "1998 album"],
+    "music_6551": [1996, "jagged little pill album", "1995 album"],
+    "music_6552": [1996, "jagged little pill album", "1995 album"],
+    "music_6553": [1996, "jagged little pill album", "1995 album"],
+    "music_6554": [1998, "supposed former infatuation junkie album"],
+    "music_6555": [1999, "supposed former infatuation junkie album", "1998 album"],
+    "music_6556": [1995, "tragic kingdom album", "1996 single"],
+    "music_6557": [1995, "tragic kingdom album", "1996 single"],
+    "music_6558": [1997, "tragic kingdom album", "1995 album"],
+    "music_6559": [1995, "garbage debut album", "debut singles"],
+    "music_6560": [1996, "garbage debut album", "1995 album"],
+    "music_6561": [1998, "version 2 0 album"],
+    "music_6562": [1998, "version 2 0 album"],
+    "music_6563": [1999, "version 2 0 album", "1998 album"],
+    "music_6564": [1997, "white on blonde album"],
+    "music_6565": [1998, "white on blonde album", "1997 album", "say what you want all day every day double a side"],
+    "music_6566": [1999, "the hush album"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artistTags = performerTags[correctAnswer];
+    const recording = recordingTags[id];
+    if (!artistTags || !recording) throw new Error(`Missing metadata for ${id}`);
+    const year = recording[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    const song = id === "music_6476" ? "miracle" : question.match(/recorded '(.+)'\?/)?.[1]?.toLowerCase();
+    if (!song) throw new Error(`Missing song title for ${id}`);
+    return {
+        id, category: "Music", difficulty, question, answers, correctAnswer,
+        tags: [...new Set([
+            "music", "songs", "recordings", "singles", decade, `${decade} music`,
+            `${year} releases`, song, correctAnswer.toLowerCase(),
+            ...artistTags, ...recording.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack84 = [
-
-    {
-        id: "music_6467",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'I Don't Wanna Fight'?",
-        answers: ["Tina Turner", "Cher", "Annie Lennox", "Bonnie Tyler"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6468",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Disco Inferno'?",
-        answers: ["Tina Turner", "Diana Ross", "Chaka Khan", "Gloria Gaynor"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6469",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Why Must We Wait Until Tonight'?",
-        answers: ["Tina Turner", "Cher", "Pat Benatar", "Belinda Carlisle"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6470",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'GoldenEye'?",
-        answers: ["Tina Turner", "Shirley Bassey", "Gladys Knight", "Sheena Easton"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6471",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Whatever You Want'?",
-        answers: ["Tina Turner", "Cher", "Annie Lennox", "Alison Moyet"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6472",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'On Silent Wings'?",
-        answers: ["Tina Turner", "Celine Dion", "Cher", "Bonnie Tyler"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6473",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Missing You'?",
-        answers: ["Tina Turner", "Sheryl Crow", "Annie Lennox", "Belinda Carlisle"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6474",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'In Your Wildest Dreams'?",
-        answers: ["Tina Turner", "Cher", "Whitney Houston", "Diana Ross"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6475",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'When the Heartache Is Over'?",
-        answers: ["Tina Turner", "Cher", "Shania Twain", "Annie Lennox"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6476",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Miracle'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Toni Braxton", "Celine Dion"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6477",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Count on Me'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Janet Jackson", "Toni Braxton"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6478",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Step by Step'?",
-        answers: ["Whitney Houston", "Celine Dion", "Mariah Carey", "Toni Braxton"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6479",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Heartbreak Hotel'?",
-        answers: ["Whitney Houston", "Toni Braxton", "Janet Jackson", "Brandy"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6480",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Another Sad Love Song'?",
-        answers: ["Toni Braxton", "Whitney Houston", "Brandy", "Monica"],
-        correctAnswer: "Toni Braxton"
-    },
-    {
-        id: "music_6481",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Breathe Again'?",
-        answers: ["Toni Braxton", "Mariah Carey", "Celine Dion", "Janet Jackson"],
-        correctAnswer: "Toni Braxton"
-    },
-    {
-        id: "music_6482",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'You Mean the World to Me'?",
-        answers: ["Toni Braxton", "Brandy", "Monica", "Whitney Houston"],
-        correctAnswer: "Toni Braxton"
-    },
-    {
-        id: "music_6483",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'How Many Ways'?",
-        answers: ["Toni Braxton", "Mariah Carey", "Brandy", "Janet Jackson"],
-        correctAnswer: "Toni Braxton"
-    },
-    {
-        id: "music_6484",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'You're Makin' Me High'?",
-        answers: ["Toni Braxton", "Monica", "Brandy", "Aaliyah"],
-        correctAnswer: "Toni Braxton"
-    },
-    {
-        id: "music_6485",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'I Don't Want To'?",
-        answers: ["Toni Braxton", "Whitney Houston", "Mariah Carey", "Brandy"],
-        correctAnswer: "Toni Braxton"
-    },
-    {
-        id: "music_6486",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Ain't 2 Proud 2 Beg'?",
-        answers: ["TLC", "En Vogue", "SWV", "Eternal"],
-        correctAnswer: "TLC"
-    },
-    {
-        id: "music_6487",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Baby-Baby-Baby'?",
-        answers: ["TLC", "En Vogue", "All Saints", "SWV"],
-        correctAnswer: "TLC"
-    },
-    {
-        id: "music_6488",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'What About Your Friends'?",
-        answers: ["TLC", "En Vogue", "Eternal", "SWV"],
-        correctAnswer: "TLC"
-    },
-    {
-        id: "music_6489",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Hold On'?",
-        answers: ["En Vogue", "TLC", "Eternal", "SWV"],
-        correctAnswer: "En Vogue"
-    },
-    {
-        id: "music_6490",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Lies'?",
-        answers: ["En Vogue", "TLC", "All Saints", "Eternal"],
-        correctAnswer: "En Vogue"
-    },
-    {
-        id: "music_6491",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'You Don't Have to Worry'?",
-        answers: ["En Vogue", "SWV", "TLC", "Eternal"],
-        correctAnswer: "En Vogue"
-    },
-    {
-        id: "music_6492",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Give It Up, Turn It Loose'?",
-        answers: ["En Vogue", "TLC", "SWV", "All Saints"],
-        correctAnswer: "En Vogue"
-    },
-    {
-        id: "music_6493",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Whatever'?",
-        answers: ["En Vogue", "TLC", "Eternal", "SWV"],
-        correctAnswer: "En Vogue"
-    },
-    {
-        id: "music_6494",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Motownphilly'?",
-        answers: ["Boyz II Men", "New Edition", "Jodeci", "Color Me Badd"],
-        correctAnswer: "Boyz II Men"
-    },
-    {
-        id: "music_6495",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'It's So Hard to Say Goodbye to Yesterday'?",
-        answers: ["Boyz II Men", "Jodeci", "New Edition", "All-4-One"],
-        correctAnswer: "Boyz II Men"
-    },
-    {
-        id: "music_6496",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'End of the Road'?",
-        answers: ["Boyz II Men", "All-4-One", "Jodeci", "Color Me Badd"],
-        correctAnswer: "Boyz II Men"
-    },
-    {
-        id: "music_6497",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'I'll Make Love to You'?",
-        answers: ["Boyz II Men", "All-4-One", "Jodeci", "New Edition"],
-        correctAnswer: "Boyz II Men"
-    },
-    {
-        id: "music_6498",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'On Bended Knee'?",
-        answers: ["Boyz II Men", "Jodeci", "All-4-One", "Color Me Badd"],
-        correctAnswer: "Boyz II Men"
-    },
-    {
-        id: "music_6499",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Water Runs Dry'?",
-        answers: ["Boyz II Men", "Jodeci", "New Edition", "All-4-One"],
-        correctAnswer: "Boyz II Men"
-    },
-    {
-        id: "music_6500",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded '4 Seasons of Loneliness'?",
-        answers: ["Boyz II Men", "All-4-One", "Jodeci", "Blackstreet"],
-        correctAnswer: "Boyz II Men"
-    },
-    {
-        id: "music_6501",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'A Song for Mama'?",
-        answers: ["Boyz II Men", "Jodeci", "Blackstreet", "All-4-One"],
-        correctAnswer: "Boyz II Men"
-    },
-    {
-        id: "music_6502",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'She's Got That Vibe'?",
-        answers: ["R. Kelly", "Usher", "Montell Jordan", "Keith Sweat"],
-        correctAnswer: "R. Kelly"
-    },
-    {
-        id: "music_6503",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Bump n' Grind'?",
-        answers: ["R. Kelly", "Usher", "Ginuwine", "Montell Jordan"],
-        correctAnswer: "R. Kelly"
-    },
-    {
-        id: "music_6504",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Your Body's Callin''?",
-        answers: ["R. Kelly", "Keith Sweat", "Usher", "Ginuwine"],
-        correctAnswer: "R. Kelly"
-    },
-    {
-        id: "music_6505",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'You Remind Me of Something'?",
-        answers: ["R. Kelly", "Usher", "Montell Jordan", "Ginuwine"],
-        correctAnswer: "R. Kelly"
-    },
-    {
-        id: "music_6506",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'I Can't Sleep Baby (If I)'?",
-        answers: ["R. Kelly", "Keith Sweat", "Usher", "Montell Jordan"],
-        correctAnswer: "R. Kelly"
-    },
-    {
-        id: "music_6507",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'I Believe I Can Fly'?",
-        answers: ["R. Kelly", "Seal", "Luther Vandross", "Babyface"],
-        correctAnswer: "R. Kelly"
-    },
-    {
-        id: "music_6508",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Gotham City'?",
-        answers: ["R. Kelly", "Usher", "Babyface", "Montell Jordan"],
-        correctAnswer: "R. Kelly"
-    },
-    {
-        id: "music_6509",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'All This Time'?",
-        answers: ["Sting", "Phil Collins", "Peter Gabriel", "Bryan Adams"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_6510",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Mad About You'?",
-        answers: ["Sting", "Phil Collins", "George Michael", "Peter Gabriel"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_6511",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Why Should I Cry for You'?",
-        answers: ["Sting", "Peter Gabriel", "Phil Collins", "Bryan Adams"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_6512",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'If I Ever Lose My Faith in You'?",
-        answers: ["Sting", "George Michael", "Phil Collins", "Peter Gabriel"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_6513",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Fields of Gold'?",
-        answers: ["Sting", "Bryan Adams", "Phil Collins", "Rod Stewart"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_6514",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Shape of My Heart'?",
-        answers: ["Sting", "George Michael", "Peter Gabriel", "Bryan Adams"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_6515",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Seven Days'?",
-        answers: ["Sting", "Phil Collins", "Peter Gabriel", "Rod Stewart"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_6516",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Let Your Soul Be Your Pilot'?",
-        answers: ["Sting", "Peter Gabriel", "George Michael", "Phil Collins"],
-        correctAnswer: "Sting"
-    },
-    {
-        id: "music_6517",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Hang in Long Enough'?",
-        answers: ["Phil Collins", "Sting", "Peter Gabriel", "Rod Stewart"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_6518",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Both Sides of the Story'?",
-        answers: ["Phil Collins", "Peter Gabriel", "Sting", "Bryan Adams"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_6519",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Everyday'?",
-        answers: ["Phil Collins", "Sting", "Rod Stewart", "Peter Gabriel"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_6520",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Dance into the Light'?",
-        answers: ["Phil Collins", "Peter Gabriel", "Sting", "George Michael"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_6521",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'It's in Your Eyes'?",
-        answers: ["Phil Collins", "Sting", "Rod Stewart", "Bryan Adams"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_6522",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'True Colors'?",
-        answers: ["Phil Collins", "Sting", "Peter Gabriel", "Rod Stewart"],
-        correctAnswer: "Phil Collins"
-    },
-    {
-        id: "music_6523",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Rhythm of My Heart'?",
-        answers: ["Rod Stewart", "Bryan Adams", "Phil Collins", "Sting"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_6524",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'The Motown Song'?",
-        answers: ["Rod Stewart", "Elton John", "Phil Collins", "Bryan Adams"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_6525",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Broken Arrow'?",
-        answers: ["Rod Stewart", "Bryan Adams", "Sting", "Richard Marx"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_6526",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Have I Told You Lately'?",
-        answers: ["Rod Stewart", "Elton John", "Bryan Adams", "Michael Bolton"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_6527",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Reason to Believe'?",
-        answers: ["Rod Stewart", "Phil Collins", "Bryan Adams", "Sting"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_6528",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Leave Virginia Alone'?",
-        answers: ["Rod Stewart", "Bryan Adams", "Richard Marx", "Michael Bolton"],
-        correctAnswer: "Rod Stewart"
-    },
-    {
-        id: "music_6529",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Keep Coming Back'?",
-        answers: ["Richard Marx", "Michael Bolton", "Bryan Adams", "Jon Secada"],
-        correctAnswer: "Richard Marx"
-    },
-    {
-        id: "music_6530",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Take This Heart'?",
-        answers: ["Richard Marx", "Bryan Adams", "Michael Bolton", "Jon Secada"],
-        correctAnswer: "Richard Marx"
-    },
-    {
-        id: "music_6531",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Now and Forever'?",
-        answers: ["Richard Marx", "Michael Bolton", "Bryan Adams", "Rod Stewart"],
-        correctAnswer: "Richard Marx"
-    },
-    {
-        id: "music_6532",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'The Way She Loves Me'?",
-        answers: ["Richard Marx", "Jon Secada", "Michael Bolton", "Bryan Adams"],
-        correctAnswer: "Richard Marx"
-    },
-    {
-        id: "music_6533",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Until I Find You Again'?",
-        answers: ["Richard Marx", "Michael Bolton", "Jon Secada", "Bryan Adams"],
-        correctAnswer: "Richard Marx"
-    },
-    {
-        id: "music_6534",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'How Am I Supposed to Live Without You'?",
-        answers: ["Michael Bolton", "Richard Marx", "Bryan Adams", "Jon Secada"],
-        correctAnswer: "Michael Bolton"
-    },
-    {
-        id: "music_6535",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'How Can We Be Lovers'?",
-        answers: ["Michael Bolton", "Richard Marx", "Bryan Adams", "Rod Stewart"],
-        correctAnswer: "Michael Bolton"
-    },
-    {
-        id: "music_6536",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Love Is a Wonderful Thing'?",
-        answers: ["Michael Bolton", "Richard Marx", "Jon Secada", "Bryan Adams"],
-        correctAnswer: "Michael Bolton"
-    },
-    {
-        id: "music_6537",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Time, Love and Tenderness'?",
-        answers: ["Michael Bolton", "Richard Marx", "Bryan Adams", "Rod Stewart"],
-        correctAnswer: "Michael Bolton"
-    },
-    {
-        id: "music_6538",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'When a Man Loves a Woman'?",
-        answers: ["Michael Bolton", "Richard Marx", "Bryan Adams", "Jon Secada"],
-        correctAnswer: "Michael Bolton"
-    },
-    {
-        id: "music_6539",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Said I Loved You...But I Lied'?",
-        answers: ["Michael Bolton", "Richard Marx", "Bryan Adams", "Rod Stewart"],
-        correctAnswer: "Michael Bolton"
-    },
-    {
-        id: "music_6540",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Whose Bed Have Your Boots Been Under?'?",
-        answers: ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Trisha Yearwood"],
-        correctAnswer: "Shania Twain"
-    },
-    {
-        id: "music_6541",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Any Man of Mine'?",
-        answers: ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Trisha Yearwood"],
-        correctAnswer: "Shania Twain"
-    },
-    {
-        id: "music_6542",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'The Woman in Me (Needs the Man in You)'?",
-        answers: ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Martina McBride"],
-        correctAnswer: "Shania Twain"
-    },
-    {
-        id: "music_6543",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'You Win My Love'?",
-        answers: ["Shania Twain", "Faith Hill", "Trisha Yearwood", "LeAnn Rimes"],
-        correctAnswer: "Shania Twain"
-    },
-    {
-        id: "music_6544",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'No One Needs to Know'?",
-        answers: ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Martina McBride"],
-        correctAnswer: "Shania Twain"
-    },
-    {
-        id: "music_6545",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Love Gets Me Every Time'?",
-        answers: ["Shania Twain", "Faith Hill", "Trisha Yearwood", "LeAnn Rimes"],
-        correctAnswer: "Shania Twain"
-    },
-    {
-        id: "music_6546",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Don't Be Stupid (You Know I Love You)'?",
-        answers: ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Martina McBride"],
-        correctAnswer: "Shania Twain"
-    },
-    {
-        id: "music_6547",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Can't Cry Anymore'?",
-        answers: ["Sheryl Crow", "Alanis Morissette", "Meredith Brooks", "Natalie Imbruglia"],
-        correctAnswer: "Sheryl Crow"
-    },
-    {
-        id: "music_6548",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Home'?",
-        answers: ["Sheryl Crow", "Alanis Morissette", "Suzanne Vega", "Joan Osborne"],
-        correctAnswer: "Sheryl Crow"
-    },
-    {
-        id: "music_6549",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'There Goes the Neighborhood'?",
-        answers: ["Sheryl Crow", "Alanis Morissette", "Meredith Brooks", "Joan Osborne"],
-        correctAnswer: "Sheryl Crow"
-    },
-    {
-        id: "music_6550",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Anything but Down'?",
-        answers: ["Sheryl Crow", "Alanis Morissette", "Natalie Imbruglia", "Meredith Brooks"],
-        correctAnswer: "Sheryl Crow"
-    },
-    {
-        id: "music_6551",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'You Learn'?",
-        answers: ["Alanis Morissette", "Sheryl Crow", "Meredith Brooks", "Natalie Imbruglia"],
-        correctAnswer: "Alanis Morissette"
-    },
-    {
-        id: "music_6552",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Head over Feet'?",
-        answers: ["Alanis Morissette", "Sheryl Crow", "Joan Osborne", "Natalie Imbruglia"],
-        correctAnswer: "Alanis Morissette"
-    },
-    {
-        id: "music_6553",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'All I Really Want'?",
-        answers: ["Alanis Morissette", "Sheryl Crow", "Meredith Brooks", "Joan Osborne"],
-        correctAnswer: "Alanis Morissette"
-    },
-    {
-        id: "music_6554",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Thank U'?",
-        answers: ["Alanis Morissette", "Sheryl Crow", "Natalie Imbruglia", "Meredith Brooks"],
-        correctAnswer: "Alanis Morissette"
-    },
-    {
-        id: "music_6555",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Joining You'?",
-        answers: ["Alanis Morissette", "Sheryl Crow", "Joan Osborne", "Meredith Brooks"],
-        correctAnswer: "Alanis Morissette"
-    },
-    {
-        id: "music_6556",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Spiderwebs'?",
-        answers: ["No Doubt", "Garbage", "Republica", "Elastica"],
-        correctAnswer: "No Doubt"
-    },
-    {
-        id: "music_6557",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Excuse Me Mr.'?",
-        answers: ["No Doubt", "Garbage", "Republica", "Elastica"],
-        correctAnswer: "No Doubt"
-    },
-    {
-        id: "music_6558",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Sunday Morning'?",
-        answers: ["No Doubt", "Garbage", "Republica", "Elastica"],
-        correctAnswer: "No Doubt"
-    },
-    {
-        id: "music_6559",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Vow'?",
-        answers: ["Garbage", "Republica", "Elastica", "Sleeper"],
-        correctAnswer: "Garbage"
-    },
-    {
-        id: "music_6560",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Milk'?",
-        answers: ["Garbage", "No Doubt", "Republica", "Elastica"],
-        correctAnswer: "Garbage"
-    },
-    {
-        id: "music_6561",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Push It'?",
-        answers: ["Garbage", "Republica", "Elastica", "Sleeper"],
-        correctAnswer: "Garbage"
-    },
-    {
-        id: "music_6562",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'I Think I'm Paranoid'?",
-        answers: ["Garbage", "No Doubt", "Republica", "Elastica"],
-        correctAnswer: "Garbage"
-    },
-    {
-        id: "music_6563",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'When I Grow Up'?",
-        answers: ["Garbage", "Republica", "No Doubt", "Sleeper"],
-        correctAnswer: "Garbage"
-    },
-    {
-        id: "music_6564",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Halo'?",
-        answers: ["Texas", "The Corrs", "The Cranberries", "The Cardigans"],
-        correctAnswer: "Texas"
-    },
-    {
-        id: "music_6565",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Insane'?",
-        answers: ["Texas", "The Corrs", "Garbage", "The Cardigans"],
-        correctAnswer: "Texas"
-    },
-    {
-        id: "music_6566",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'When We Are Together'?",
-        answers: ["Texas", "The Corrs", "The Cranberries", "The Cardigans"],
-        correctAnswer: "Texas"
-    }
-
+    makeQuestion("music_6467", "Which singer recorded 'I Don't Wanna Fight'?", ["Tina Turner", "Cher", "Annie Lennox", "Bonnie Tyler"], "Tina Turner", "Easy"),
+    makeQuestion("music_6468", "Which singer recorded 'Disco Inferno'?", ["Tina Turner", "Diana Ross", "Chaka Khan", "Gloria Gaynor"], "Tina Turner", "Medium"),
+    makeQuestion("music_6469", "Which singer recorded 'Why Must We Wait Until Tonight'?", ["Tina Turner", "Cher", "Pat Benatar", "Belinda Carlisle"], "Tina Turner", "Hard"),
+    makeQuestion("music_6470", "Which singer recorded 'GoldenEye'?", ["Tina Turner", "Shirley Bassey", "Gladys Knight", "Sheena Easton"], "Tina Turner", "Easy"),
+    makeQuestion("music_6471", "Which singer recorded 'Whatever You Want'?", ["Tina Turner", "Cher", "Annie Lennox", "Alison Moyet"], "Tina Turner", "Medium"),
+    makeQuestion("music_6472", "Which singer recorded 'On Silent Wings'?", ["Tina Turner", "Celine Dion", "Cher", "Bonnie Tyler"], "Tina Turner", "Medium"),
+    makeQuestion("music_6473", "Which singer recorded 'Missing You'?", ["Tina Turner", "Sheryl Crow", "Annie Lennox", "Belinda Carlisle"], "Tina Turner", "Medium"),
+    makeQuestion("music_6474", "Which singer recorded 'In Your Wildest Dreams'?", ["Tina Turner", "Cher", "Whitney Houston", "Diana Ross"], "Tina Turner", "Hard"),
+    makeQuestion("music_6475", "Which singer recorded 'When the Heartache Is Over'?", ["Tina Turner", "Cher", "Shania Twain", "Annie Lennox"], "Tina Turner", "Medium"),
+    makeQuestion("music_6476", "Which singer recorded 'Miracle' for the album I'm Your Baby Tonight?", ["Whitney Houston", "Mariah Carey", "Toni Braxton", "Celine Dion"], "Whitney Houston", "Medium"),
+    makeQuestion("music_6477", "Which singer recorded 'Count on Me'?", ["Whitney Houston", "Mariah Carey", "Janet Jackson", "Toni Braxton"], "Whitney Houston", "Medium"),
+    makeQuestion("music_6478", "Which singer recorded 'Step by Step'?", ["Whitney Houston", "Celine Dion", "Mariah Carey", "Toni Braxton"], "Whitney Houston", "Easy"),
+    makeQuestion("music_6479", "Which singer recorded 'Heartbreak Hotel'?", ["Whitney Houston", "Toni Braxton", "Janet Jackson", "Brandy"], "Whitney Houston", "Medium"),
+    makeQuestion("music_6480", "Which singer recorded 'Another Sad Love Song'?", ["Toni Braxton", "Whitney Houston", "Brandy", "Monica"], "Toni Braxton", "Easy"),
+    makeQuestion("music_6481", "Which singer recorded 'Breathe Again'?", ["Toni Braxton", "Mariah Carey", "Celine Dion", "Janet Jackson"], "Toni Braxton", "Easy"),
+    makeQuestion("music_6482", "Which singer recorded 'You Mean the World to Me'?", ["Toni Braxton", "Brandy", "Monica", "Whitney Houston"], "Toni Braxton", "Medium"),
+    makeQuestion("music_6483", "Which singer recorded 'How Many Ways'?", ["Toni Braxton", "Mariah Carey", "Brandy", "Janet Jackson"], "Toni Braxton", "Hard"),
+    makeQuestion("music_6484", "Which singer recorded 'You're Makin' Me High'?", ["Toni Braxton", "Monica", "Brandy", "Aaliyah"], "Toni Braxton", "Medium"),
+    makeQuestion("music_6485", "Which singer recorded 'I Don't Want To'?", ["Toni Braxton", "Whitney Houston", "Mariah Carey", "Brandy"], "Toni Braxton", "Medium"),
+    makeQuestion("music_6486", "Which group recorded 'Ain't 2 Proud 2 Beg'?", ["TLC", "En Vogue", "SWV", "Eternal"], "TLC", "Medium"),
+    makeQuestion("music_6487", "Which group recorded 'Baby-Baby-Baby'?", ["TLC", "En Vogue", "All Saints", "SWV"], "TLC", "Medium"),
+    makeQuestion("music_6488", "Which group recorded 'What About Your Friends'?", ["TLC", "En Vogue", "Eternal", "SWV"], "TLC", "Medium"),
+    makeQuestion("music_6489", "Which group recorded 'Hold On'?", ["En Vogue", "TLC", "Eternal", "SWV"], "En Vogue", "Easy"),
+    makeQuestion("music_6490", "Which group recorded 'Lies'?", ["En Vogue", "TLC", "All Saints", "Eternal"], "En Vogue", "Hard"),
+    makeQuestion("music_6491", "Which group recorded 'You Don't Have to Worry'?", ["En Vogue", "SWV", "TLC", "Eternal"], "En Vogue", "Hard"),
+    makeQuestion("music_6492", "Which group recorded 'Give It Up, Turn It Loose'?", ["En Vogue", "TLC", "SWV", "All Saints"], "En Vogue", "Medium"),
+    makeQuestion("music_6493", "Which group recorded 'Whatever'?", ["En Vogue", "TLC", "Eternal", "SWV"], "En Vogue", "Hard"),
+    makeQuestion("music_6494", "Which group recorded 'Motownphilly'?", ["Boyz II Men", "New Edition", "Jodeci", "Color Me Badd"], "Boyz II Men", "Easy"),
+    makeQuestion("music_6495", "Which group recorded 'It's So Hard to Say Goodbye to Yesterday'?", ["Boyz II Men", "Jodeci", "New Edition", "All-4-One"], "Boyz II Men", "Medium"),
+    makeQuestion("music_6496", "Which group recorded 'End of the Road'?", ["Boyz II Men", "All-4-One", "Jodeci", "Color Me Badd"], "Boyz II Men", "Easy"),
+    makeQuestion("music_6497", "Which group recorded 'I'll Make Love to You'?", ["Boyz II Men", "All-4-One", "Jodeci", "New Edition"], "Boyz II Men", "Easy"),
+    makeQuestion("music_6498", "Which group recorded 'On Bended Knee'?", ["Boyz II Men", "Jodeci", "All-4-One", "Color Me Badd"], "Boyz II Men", "Easy"),
+    makeQuestion("music_6499", "Which group recorded 'Water Runs Dry'?", ["Boyz II Men", "Jodeci", "New Edition", "All-4-One"], "Boyz II Men", "Medium"),
+    makeQuestion("music_6500", "Which group recorded '4 Seasons of Loneliness'?", ["Boyz II Men", "All-4-One", "Jodeci", "Blackstreet"], "Boyz II Men", "Medium"),
+    makeQuestion("music_6501", "Which group recorded 'A Song for Mama'?", ["Boyz II Men", "Jodeci", "Blackstreet", "All-4-One"], "Boyz II Men", "Medium"),
+    makeQuestion("music_6502", "Which singer recorded 'She's Got That Vibe'?", ["R. Kelly", "Usher", "Montell Jordan", "Keith Sweat"], "R. Kelly", "Medium"),
+    makeQuestion("music_6503", "Which singer recorded 'Bump n' Grind'?", ["R. Kelly", "Usher", "Ginuwine", "Montell Jordan"], "R. Kelly", "Easy"),
+    makeQuestion("music_6504", "Which singer recorded 'Your Body's Callin''?", ["R. Kelly", "Keith Sweat", "Usher", "Ginuwine"], "R. Kelly", "Medium"),
+    makeQuestion("music_6505", "Which singer recorded 'You Remind Me of Something'?", ["R. Kelly", "Usher", "Montell Jordan", "Ginuwine"], "R. Kelly", "Medium"),
+    makeQuestion("music_6506", "Which singer recorded 'I Can't Sleep Baby (If I)'?", ["R. Kelly", "Keith Sweat", "Usher", "Montell Jordan"], "R. Kelly", "Hard"),
+    makeQuestion("music_6507", "Which singer recorded 'I Believe I Can Fly'?", ["R. Kelly", "Seal", "Luther Vandross", "Babyface"], "R. Kelly", "Easy"),
+    makeQuestion("music_6508", "Which singer recorded 'Gotham City'?", ["R. Kelly", "Usher", "Babyface", "Montell Jordan"], "R. Kelly", "Medium"),
+    makeQuestion("music_6509", "Which singer recorded 'All This Time'?", ["Sting", "Phil Collins", "Peter Gabriel", "Bryan Adams"], "Sting", "Medium"),
+    makeQuestion("music_6510", "Which singer recorded 'Mad About You'?", ["Sting", "Phil Collins", "George Michael", "Peter Gabriel"], "Sting", "Medium"),
+    makeQuestion("music_6511", "Which singer recorded 'Why Should I Cry for You'?", ["Sting", "Peter Gabriel", "Phil Collins", "Bryan Adams"], "Sting", "Hard"),
+    makeQuestion("music_6512", "Which singer recorded 'If I Ever Lose My Faith in You'?", ["Sting", "George Michael", "Phil Collins", "Peter Gabriel"], "Sting", "Easy"),
+    makeQuestion("music_6513", "Which singer recorded 'Fields of Gold'?", ["Sting", "Bryan Adams", "Phil Collins", "Rod Stewart"], "Sting", "Easy"),
+    makeQuestion("music_6514", "Which singer recorded 'Shape of My Heart'?", ["Sting", "George Michael", "Peter Gabriel", "Bryan Adams"], "Sting", "Medium"),
+    makeQuestion("music_6515", "Which singer recorded 'Seven Days'?", ["Sting", "Phil Collins", "Peter Gabriel", "Rod Stewart"], "Sting", "Medium"),
+    makeQuestion("music_6516", "Which singer recorded 'Let Your Soul Be Your Pilot'?", ["Sting", "Peter Gabriel", "George Michael", "Phil Collins"], "Sting", "Hard"),
+    makeQuestion("music_6517", "Which singer recorded 'Hang in Long Enough'?", ["Phil Collins", "Sting", "Peter Gabriel", "Rod Stewart"], "Phil Collins", "Medium"),
+    makeQuestion("music_6518", "Which singer recorded 'Both Sides of the Story'?", ["Phil Collins", "Peter Gabriel", "Sting", "Bryan Adams"], "Phil Collins", "Medium"),
+    makeQuestion("music_6519", "Which singer recorded 'Everyday'?", ["Phil Collins", "Sting", "Rod Stewart", "Peter Gabriel"], "Phil Collins", "Medium"),
+    makeQuestion("music_6520", "Which singer recorded 'Dance into the Light'?", ["Phil Collins", "Peter Gabriel", "Sting", "George Michael"], "Phil Collins", "Medium"),
+    makeQuestion("music_6521", "Which singer recorded 'It's in Your Eyes'?", ["Phil Collins", "Sting", "Rod Stewart", "Bryan Adams"], "Phil Collins", "Hard"),
+    makeQuestion("music_6522", "Which singer recorded 'True Colors'?", ["Phil Collins", "Sting", "Peter Gabriel", "Rod Stewart"], "Phil Collins", "Medium"),
+    makeQuestion("music_6523", "Which singer recorded 'Rhythm of My Heart'?", ["Rod Stewart", "Bryan Adams", "Phil Collins", "Sting"], "Rod Stewart", "Easy"),
+    makeQuestion("music_6524", "Which singer recorded 'The Motown Song'?", ["Rod Stewart", "Elton John", "Phil Collins", "Bryan Adams"], "Rod Stewart", "Medium"),
+    makeQuestion("music_6525", "Which singer recorded 'Broken Arrow'?", ["Rod Stewart", "Bryan Adams", "Sting", "Richard Marx"], "Rod Stewart", "Medium"),
+    makeQuestion("music_6526", "Which singer recorded 'Have I Told You Lately'?", ["Rod Stewart", "Elton John", "Bryan Adams", "Michael Bolton"], "Rod Stewart", "Easy"),
+    makeQuestion("music_6527", "Which singer recorded 'Reason to Believe'?", ["Rod Stewart", "Phil Collins", "Bryan Adams", "Sting"], "Rod Stewart", "Medium"),
+    makeQuestion("music_6528", "Which singer recorded 'Leave Virginia Alone'?", ["Rod Stewart", "Bryan Adams", "Richard Marx", "Michael Bolton"], "Rod Stewart", "Hard"),
+    makeQuestion("music_6529", "Which singer recorded 'Keep Coming Back'?", ["Richard Marx", "Michael Bolton", "Bryan Adams", "Jon Secada"], "Richard Marx", "Medium"),
+    makeQuestion("music_6530", "Which singer recorded 'Take This Heart'?", ["Richard Marx", "Bryan Adams", "Michael Bolton", "Jon Secada"], "Richard Marx", "Medium"),
+    makeQuestion("music_6531", "Which singer recorded 'Now and Forever'?", ["Richard Marx", "Michael Bolton", "Bryan Adams", "Rod Stewart"], "Richard Marx", "Easy"),
+    makeQuestion("music_6532", "Which singer recorded 'The Way She Loves Me'?", ["Richard Marx", "Jon Secada", "Michael Bolton", "Bryan Adams"], "Richard Marx", "Medium"),
+    makeQuestion("music_6533", "Which singer recorded 'Until I Find You Again'?", ["Richard Marx", "Michael Bolton", "Jon Secada", "Bryan Adams"], "Richard Marx", "Hard"),
+    makeQuestion("music_6534", "Which singer recorded 'How Am I Supposed to Live Without You'?", ["Michael Bolton", "Richard Marx", "Bryan Adams", "Jon Secada"], "Michael Bolton", "Easy"),
+    makeQuestion("music_6535", "Which singer recorded 'How Can We Be Lovers'?", ["Michael Bolton", "Richard Marx", "Bryan Adams", "Rod Stewart"], "Michael Bolton", "Medium"),
+    makeQuestion("music_6536", "Which singer recorded 'Love Is a Wonderful Thing'?", ["Michael Bolton", "Richard Marx", "Jon Secada", "Bryan Adams"], "Michael Bolton", "Medium"),
+    makeQuestion("music_6537", "Which singer recorded 'Time, Love and Tenderness'?", ["Michael Bolton", "Richard Marx", "Bryan Adams", "Rod Stewart"], "Michael Bolton", "Medium"),
+    makeQuestion("music_6538", "Which singer recorded 'When a Man Loves a Woman'?", ["Michael Bolton", "Richard Marx", "Bryan Adams", "Jon Secada"], "Michael Bolton", "Easy"),
+    makeQuestion("music_6539", "Which singer recorded 'Said I Loved You...But I Lied'?", ["Michael Bolton", "Richard Marx", "Bryan Adams", "Rod Stewart"], "Michael Bolton", "Easy"),
+    makeQuestion("music_6540", "Which singer recorded 'Whose Bed Have Your Boots Been Under?'?", ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Trisha Yearwood"], "Shania Twain", "Medium"),
+    makeQuestion("music_6541", "Which singer recorded 'Any Man of Mine'?", ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Trisha Yearwood"], "Shania Twain", "Easy"),
+    makeQuestion("music_6542", "Which singer recorded 'The Woman in Me (Needs the Man in You)'?", ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Martina McBride"], "Shania Twain", "Medium"),
+    makeQuestion("music_6543", "Which singer recorded 'You Win My Love'?", ["Shania Twain", "Faith Hill", "Trisha Yearwood", "LeAnn Rimes"], "Shania Twain", "Medium"),
+    makeQuestion("music_6544", "Which singer recorded 'No One Needs to Know'?", ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Martina McBride"], "Shania Twain", "Medium"),
+    makeQuestion("music_6545", "Which singer recorded 'Love Gets Me Every Time'?", ["Shania Twain", "Faith Hill", "Trisha Yearwood", "LeAnn Rimes"], "Shania Twain", "Medium"),
+    makeQuestion("music_6546", "Which singer recorded 'Don't Be Stupid (You Know I Love You)'?", ["Shania Twain", "Faith Hill", "LeAnn Rimes", "Martina McBride"], "Shania Twain", "Medium"),
+    makeQuestion("music_6547", "Which singer recorded 'Can't Cry Anymore'?", ["Sheryl Crow", "Alanis Morissette", "Meredith Brooks", "Natalie Imbruglia"], "Sheryl Crow", "Medium"),
+    makeQuestion("music_6548", "Which singer recorded 'Home'?", ["Sheryl Crow", "Alanis Morissette", "Suzanne Vega", "Joan Osborne"], "Sheryl Crow", "Medium"),
+    makeQuestion("music_6549", "Which singer recorded 'There Goes the Neighborhood'?", ["Sheryl Crow", "Alanis Morissette", "Meredith Brooks", "Joan Osborne"], "Sheryl Crow", "Medium"),
+    makeQuestion("music_6550", "Which singer recorded 'Anything but Down'?", ["Sheryl Crow", "Alanis Morissette", "Natalie Imbruglia", "Meredith Brooks"], "Sheryl Crow", "Hard"),
+    makeQuestion("music_6551", "Which singer recorded 'You Learn'?", ["Alanis Morissette", "Sheryl Crow", "Meredith Brooks", "Natalie Imbruglia"], "Alanis Morissette", "Easy"),
+    makeQuestion("music_6552", "Which singer recorded 'Head over Feet'?", ["Alanis Morissette", "Sheryl Crow", "Joan Osborne", "Natalie Imbruglia"], "Alanis Morissette", "Easy"),
+    makeQuestion("music_6553", "Which singer recorded 'All I Really Want'?", ["Alanis Morissette", "Sheryl Crow", "Meredith Brooks", "Joan Osborne"], "Alanis Morissette", "Medium"),
+    makeQuestion("music_6554", "Which singer recorded 'Thank U'?", ["Alanis Morissette", "Sheryl Crow", "Natalie Imbruglia", "Meredith Brooks"], "Alanis Morissette", "Easy"),
+    makeQuestion("music_6555", "Which singer recorded 'Joining You'?", ["Alanis Morissette", "Sheryl Crow", "Joan Osborne", "Meredith Brooks"], "Alanis Morissette", "Medium"),
+    makeQuestion("music_6556", "Which group recorded 'Spiderwebs'?", ["No Doubt", "Garbage", "Republica", "Elastica"], "No Doubt", "Easy"),
+    makeQuestion("music_6557", "Which group recorded 'Excuse Me Mr.'?", ["No Doubt", "Garbage", "Republica", "Elastica"], "No Doubt", "Medium"),
+    makeQuestion("music_6558", "Which group recorded 'Sunday Morning'?", ["No Doubt", "Garbage", "Republica", "Elastica"], "No Doubt", "Medium"),
+    makeQuestion("music_6559", "Which group recorded 'Vow'?", ["Garbage", "Republica", "Elastica", "Sleeper"], "Garbage", "Medium"),
+    makeQuestion("music_6560", "Which group recorded 'Milk'?", ["Garbage", "No Doubt", "Republica", "Elastica"], "Garbage", "Medium"),
+    makeQuestion("music_6561", "Which group recorded 'Push It'?", ["Garbage", "Republica", "Elastica", "Sleeper"], "Garbage", "Easy"),
+    makeQuestion("music_6562", "Which group recorded 'I Think I'm Paranoid'?", ["Garbage", "No Doubt", "Republica", "Elastica"], "Garbage", "Easy"),
+    makeQuestion("music_6563", "Which group recorded 'When I Grow Up'?", ["Garbage", "Republica", "No Doubt", "Sleeper"], "Garbage", "Medium"),
+    makeQuestion("music_6564", "Which group recorded 'Halo'?", ["Texas", "The Corrs", "The Cranberries", "The Cardigans"], "Texas", "Medium"),
+    makeQuestion("music_6565", "Which group recorded 'Insane'?", ["Texas", "The Corrs", "Garbage", "The Cardigans"], "Texas", "Hard"),
+    makeQuestion("music_6566", "Which group recorded 'When We Are Together'?", ["Texas", "The Corrs", "The Cranberries", "The Cardigans"], "Texas", "Medium"),
 ];
 
 module.exports = quizPack84;
