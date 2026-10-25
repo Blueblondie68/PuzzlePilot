@@ -1,825 +1,272 @@
 // quiz_pack85.js
-// PuzzlePilot Big Quiz
-// Music Pack 85
-// 100 questions
-// IDs: music_6567 - music_6666
+// PuzzlePilot Bigggggg Quiz - Music Pack 85 (mainly 1990s)
+// Tagging audit: 100 questions, IDs music_6567 through music_6666.
+// Original IDs, options, answers and difficulties preserved.
+// Only music_6653 clarified: Seal also recorded a song named Crazy.
+// Release years follow the named recording/single, with other years in supporting tags.
+
+const performerTags = {
+    "Tina Turner": ["american", "rock", "soul", "pop rock", "female singers", "solo artists"],
+    "Whitney Houston": ["american", "pop", "r and b", "soul", "female singers", "solo artists"],
+    "Toni Braxton": ["american", "r and b", "soul", "pop", "female singers", "solo artists"],
+    "R. Kelly": ["american", "r and b", "soul", "male singers", "solo artists"],
+    "The Rolling Stones": ["british", "english", "rock", "blues rock", "bands", "mick jagger", "keith richards"],
+    "Bruce Springsteen": ["american", "rock", "heartland rock", "male singers", "singer songwriters", "solo artists", "the e street band"],
+    "Tom Petty and the Heartbreakers": ["american", "rock", "heartland rock", "bands", "tom petty", "mike campbell"],
+    "Tom Petty": ["american", "rock", "heartland rock", "male singers", "singer songwriters", "solo artists", "the heartbreakers"],
+    "Aerosmith": ["american", "rock", "hard rock", "bands", "steven tyler", "joe perry"],
+    "Genesis": ["british", "english", "progressive rock", "pop rock", "bands", "mike rutherford", "tony banks"],
+    "Pink Floyd": ["british", "english", "progressive rock", "psychedelic rock", "bands", "david gilmour", "richard wright", "nick mason"],
+    "U2": ["irish", "rock", "alternative rock", "bands", "bono", "the edge", "adam clayton", "larry mullen jr"],
+    "Radiohead": ["british", "english", "alternative rock", "art rock", "bands", "thom yorke", "jonny greenwood"],
+    "Oasis": ["british", "english", "britpop", "rock", "bands", "liam gallagher", "noel gallagher"],
+    "Blur": ["british", "english", "britpop", "alternative rock", "bands", "damon albarn", "graham coxon"],
+    "Placebo": ["british", "alternative rock", "bands", "brian molko", "stefan olsdal"],
+    "Skunk Anansie": ["british", "english", "alternative rock", "hard rock", "bands", "skin", "deborah dyer"],
+    "Kula Shaker": ["british", "english", "britpop", "psychedelic rock", "bands", "crispian mills"],
+    "Edwyn Collins": ["scottish", "british", "indie rock", "alternative pop", "male singers", "solo artists", "orange juice"],
+    "Fun Lovin' Criminals": ["american", "alternative hip hop", "rock", "funk", "bands", "huey morgan", "new york"],
+    "White Town": ["british", "english", "electronic music", "indie pop", "one person projects", "jyoti mishra"],
+    "Cornershop": ["british", "english", "indie rock", "alternative rock", "bands", "tjinder singh"],
+    "The Fugees": ["american", "hip hop", "r and b", "groups", "lauryn hill", "wyclef jean", "pras michel"],
+    "Lauryn Hill": ["american", "hip hop", "neo soul", "r and b", "female singers", "solo artists", "the fugees"],
+    "Nas": ["american", "hip hop", "rap", "male rappers", "solo artists", "nasir jones"],
+    "2Pac": ["american", "hip hop", "rap", "west coast hip hop", "male rappers", "solo artists", "tupac shakur"],
+    "The Notorious B.I.G.": ["american", "hip hop", "rap", "east coast hip hop", "male rappers", "solo artists", "biggie smalls", "christopher wallace"],
+    "Warren G": ["american", "hip hop", "g funk", "west coast hip hop", "male rappers", "solo artists"],
+    "Mark Morrison": ["british", "english", "r and b", "new jack swing", "male singers", "solo artists"],
+    "Simply Red": ["british", "english", "blue eyed soul", "pop", "bands", "mick hucknall"],
+    "Elton John": ["british", "english", "pop rock", "male singers", "piano", "solo artists"],
+    "Pet Shop Boys": ["british", "english", "synth pop", "electronic music", "duos", "neil tennant", "chris lowe"],
+    "Erasure": ["british", "english", "synth pop", "electronic music", "duos", "andy bell", "vince clarke"],
+    "Louise": ["british", "english", "pop", "dance pop", "female singers", "solo artists", "louise redknapp", "eternal"],
+    "Rednex": ["swedish", "eurodance", "country dance", "groups"],
+};
+
+const recordingTags = {
+    "music_6567": [1991, "simply the best compilation", "1992 uk single"],
+    "music_6568": [2004, "all the best compilation", "wildest dreams recording session", "previously unreleased song", "album track"],
+    "music_6569": [1996, "wildest dreams album", "written by pet shop boys", "neil tennant", "chris lowe", "album track"],
+    "music_6570": [1999, "my love is your love album", "diane warren"],
+    "music_6571": [2000, "whitney the greatest hits album", "enrique iglesias", "duets"],
+    "music_6572": [2000, "whitney the greatest hits album", "deborah cox", "duets"],
+    "music_6573": [1992, "boomerang soundtrack", "toni braxton debut album", "film soundtracks"],
+    "music_6574": [1993, "toni braxton debut album", "1994 international single"],
+    "music_6575": [1996, "secrets album", "waiting to exhale soundtrack", "1995 soundtrack recording", "film soundtracks", "babyface"],
+    "music_6576": [1999, "r album", "1998 album"],
+    "music_6577": [1994, "voodoo lounge album"],
+    "music_6578": [1994, "voodoo lounge album"],
+    "music_6579": [1994, "voodoo lounge album"],
+    "music_6580": [1997, "bridges to babylon album"],
+    "music_6581": [1998, "bridges to babylon album", "1997 album"],
+    "music_6582": [1992, "human touch album"],
+    "music_6583": [1992, "lucky town album"],
+    "music_6584": [1992, "human touch album"],
+    "music_6585": [1994, "philadelphia soundtrack", "1993 soundtrack recording", "film soundtracks", "academy awards", "oscar winning song"],
+    "music_6586": [1995, "greatest hits album", "jerry maguire film", "1997 film reissue"],
+    "music_6587": [1995, "greatest hits album", "1982 recording", "e street band"],
+    "music_6588": [1991, "into the great wide open album", "jeff lynne"],
+    "music_6589": [1991, "into the great wide open album"],
+    "music_6590": [1993, "greatest hits album", "new recording"],
+    "music_6591": [1994, "wildflowers album", "rick rubin"],
+    "music_6592": [1995, "wildflowers album", "1994 album"],
+    "music_6593": [1995, "wildflowers album", "1994 album"],
+    "music_6594": [1990, "pump album", "1989 album"],
+    "music_6595": [1993, "get a grip album"],
+    "music_6596": [1997, "nine lives album"],
+    "music_6597": [1997, "nine lives album", "1999 single edition"],
+    "music_6598": [1991, "we cant dance album", "phil collins vocals"],
+    "music_6599": [1991, "we cant dance album", "1992 international hit", "phil collins vocals"],
+    "music_6600": [1992, "we cant dance album", "1991 album", "phil collins vocals"],
+    "music_6601": [1992, "we cant dance album", "1991 album", "phil collins vocals"],
+    "music_6602": [1993, "we cant dance album", "1991 album", "phil collins vocals"],
+    "music_6603": [1997, "calling all stations album", "ray wilson vocals"],
+    "music_6604": [1997, "calling all stations album", "ray wilson vocals"],
+    "music_6605": [1994, "the division bell album", "david gilmour"],
+    "music_6606": [1994, "the division bell album"],
+    "music_6607": [1994, "the division bell album", "stephen hawking voice sample"],
+    "music_6608": [1994, "the division bell album", "album track"],
+    "music_6609": [1991, "achtung baby album"],
+    "music_6610": [1992, "achtung baby album", "1991 album"],
+    "music_6611": [1993, "zooropa album"],
+    "music_6612": [1993, "zooropa album", "faraway so close film", "film soundtracks"],
+    "music_6613": [1995, "batman forever soundtrack", "film soundtracks"],
+    "music_6614": [1997, "pop album"],
+    "music_6615": [1997, "pop album"],
+    "music_6616": [1998, "the best of 1980 1990 album", "1987 b side", "1998 rerecording"],
+    "music_6617": [1995, "the bends album"],
+    "music_6618": [1995, "the bends album"],
+    "music_6619": [1996, "the bends album", "1995 album"],
+    "music_6620": [1997, "ok computer album"],
+    "music_6621": [1997, "ok computer album"],
+    "music_6622": [1998, "ok computer album", "1997 album"],
+    "music_6623": [1995, "the help album", "war child charity", "ok computer 1997 album", "1997 french single"],
+    "music_6624": [1997, "be here now album"],
+    "music_6625": [1994, "parklife album"],
+    "music_6626": [1998, "without you im nothing album", "1999 david bowie duet rerecording", "1999 single", "original album version"],
+    "music_6627": [1995, "paranoid and sunburnt album"],
+    "music_6628": [1997, "stoosh album", "1996 album"],
+    "music_6629": [1996, "stoosh album"],
+    "music_6630": [1998, "peasants pigs and astronauts album", "1999 album", "rick rubin"],
+    "music_6631": [1997, "im not following you album"],
+    "music_6632": [1996, "come find yourself album", "quentin tarantino film samples"],
+    "music_6633": [1996, "come find yourself album"],
+    "music_6634": [2001, "loco album"],
+    "music_6635": [1997, "women in technology album", "jyoti mishra"],
+    "music_6636": [1998, "when i was born for the 7th time album", "1997 album"],
+    "music_6637": [1996, "the score album"],
+    "music_6638": [1996, "the score album"],
+    "music_6639": [1996, "the score album", "bob marley song cover", "cover versions"],
+    "music_6640": [1998, "the miseducation of lauryn hill album"],
+    "music_6641": [1998, "the miseducation of lauryn hill album", "1999 single"],
+    "music_6642": [1999, "the miseducation of lauryn hill album", "1998 album"],
+    "music_6643": [1996, "it was written album", "lauryn hill guest vocals", "guest vocals"],
+    "music_6644": [1996, "it was written album"],
+    "music_6645": [1995, "all eyez on me album", "1996 album", "dr dre guest artist", "guest vocals"],
+    "music_6646": [1998, "greatest hits album", "posthumous releases", "1992 recording"],
+    "music_6647": [1995, "me against the world album"],
+    "music_6648": [1997, "life after death album"],
+    "music_6649": [1997, "life after death album", "mase", "sean combs", "guest vocals", "posthumous releases"],
+    "music_6650": [1994, "ready to die album"],
+    "music_6651": [1994, "regulate g funk era album", "nate dogg", "duets", "above the rim soundtrack", "film soundtracks"],
+    "music_6652": [1994, "regulate g funk era album"],
+    "music_6653": [1995, "return of the mack album", "1996 album", "1996 rerelease"],
+    "music_6654": [1996, "return of the mack album"],
+    "music_6655": [1996, "life album", "1995 album"],
+    "music_6656": [1999, "elton john and tim rices aida album", "leann rimes", "duets", "tim rice", "musicals"],
+    "music_6657": [1990, "behaviour album"],
+    "music_6658": [1991, "behaviour album", "1990 album"],
+    "music_6659": [1994, "very album", "1993 album"],
+    "music_6660": [1996, "bilingual album"],
+    "music_6661": [1990, "wild album", "1989 album"],
+    "music_6662": [1992, "chorus album", "1991 album"],
+    "music_6663": [1992, "abba esque ep", "abba song cover", "cover versions"],
+    "music_6664": [1996, "naked album"],
+    "music_6665": [1997, "woman in me album"],
+    "music_6666": [1994, "sex and violins album", "1995 album", "traditional american folk song", "cover versions"],
+};
+
+function makeQuestion(id, question, answers, correctAnswer, difficulty) {
+    const artistTags = performerTags[correctAnswer];
+    const recording = recordingTags[id];
+    if (!artistTags || !recording) throw new Error(`Missing metadata for ${id}`);
+    const year = recording[0];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    const song = id === "music_6653" ? "crazy" : question.match(/recorded '(.+)'\?/)?.[1]?.toLowerCase();
+    if (!song) throw new Error(`Missing song title for ${id}`);
+    const albumTrack = recording.includes("album track");
+    return {
+        id, category: "Music", difficulty, question, answers, correctAnswer,
+        tags: [...new Set([
+            "music", "songs", "recordings", ...(albumTrack ? [] : ["singles"]),
+            decade, `${decade} music`, `${year} releases`, song,
+            correctAnswer.toLowerCase(), ...artistTags, ...recording.slice(1)
+        ])],
+        dailyEligible: true
+    };
+}
 
 const quizPack85 = [
-
-    {
-        id: "music_6567",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Love Thing'?",
-        answers: ["Tina Turner", "Cher", "Annie Lennox", "Bonnie Tyler"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6568",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Something Special'?",
-        answers: ["Tina Turner", "Cher", "Diana Ross", "Annie Lennox"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6569",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Confidential'?",
-        answers: ["Tina Turner", "Cher", "Whitney Houston", "Annie Lennox"],
-        correctAnswer: "Tina Turner"
-    },
-    {
-        id: "music_6570",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'I Learned from the Best'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Toni Braxton", "Celine Dion"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6571",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Could I Have This Kiss Forever'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Toni Braxton", "Celine Dion"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6572",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Same Script, Different Cast'?",
-        answers: ["Whitney Houston", "Mariah Carey", "Toni Braxton", "Brandy"],
-        correctAnswer: "Whitney Houston"
-    },
-    {
-        id: "music_6573",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Love Shoulda Brought You Home'?",
-        answers: ["Toni Braxton", "Whitney Houston", "Brandy", "Monica"],
-        correctAnswer: "Toni Braxton"
-    },
-    {
-        id: "music_6574",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Seven Whole Days'?",
-        answers: ["Toni Braxton", "Brandy", "Monica", "Whitney Houston"],
-        correctAnswer: "Toni Braxton"
-    },
-    {
-        id: "music_6575",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Let It Flow'?",
-        answers: ["Toni Braxton", "Mariah Carey", "Brandy", "Monica"],
-        correctAnswer: "Toni Braxton"
-    },
-    {
-        id: "music_6576",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'If I Could Turn Back the Hands of Time'?",
-        answers: ["R. Kelly", "Usher", "Seal", "Babyface"],
-        correctAnswer: "R. Kelly"
-    },
-
-    {
-        id: "music_6577",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Love Is Strong'?",
-        answers: ["The Rolling Stones", "U2", "Aerosmith", "Bon Jovi"],
-        correctAnswer: "The Rolling Stones"
-    },
-    {
-        id: "music_6578",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'You Got Me Rocking'?",
-        answers: ["The Rolling Stones", "Aerosmith", "Bon Jovi", "U2"],
-        correctAnswer: "The Rolling Stones"
-    },
-    {
-        id: "music_6579",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Out of Tears'?",
-        answers: ["The Rolling Stones", "U2", "Aerosmith", "Genesis"],
-        correctAnswer: "The Rolling Stones"
-    },
-    {
-        id: "music_6580",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Anybody Seen My Baby'?",
-        answers: ["The Rolling Stones", "Aerosmith", "U2", "Bon Jovi"],
-        correctAnswer: "The Rolling Stones"
-    },
-    {
-        id: "music_6581",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Saint of Me'?",
-        answers: ["The Rolling Stones", "U2", "Aerosmith", "Genesis"],
-        correctAnswer: "The Rolling Stones"
-    },
-
-    {
-        id: "music_6582",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Human Touch'?",
-        answers: ["Bruce Springsteen", "Tom Petty", "Bryan Adams", "Rod Stewart"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_6583",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Better Days'?",
-        answers: ["Bruce Springsteen", "Tom Petty", "Bryan Adams", "Richard Marx"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_6584",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded '57 Channels (And Nothin' On)'?",
-        answers: ["Bruce Springsteen", "Tom Petty", "Bob Dylan", "John Mellencamp"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_6585",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Streets of Philadelphia'?",
-        answers: ["Bruce Springsteen", "Tom Petty", "Bryan Adams", "Sting"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_6586",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Secret Garden'?",
-        answers: ["Bruce Springsteen", "Tom Petty", "Sting", "Bryan Adams"],
-        correctAnswer: "Bruce Springsteen"
-    },
-    {
-        id: "music_6587",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Murder Incorporated'?",
-        answers: ["Bruce Springsteen", "Tom Petty", "Bob Dylan", "John Mellencamp"],
-        correctAnswer: "Bruce Springsteen"
-    },
-
-    {
-        id: "music_6588",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Learning to Fly'?",
-        answers: ["Tom Petty and the Heartbreakers", "R.E.M.", "Aerosmith", "Bon Jovi"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_6589",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Into the Great Wide Open'?",
-        answers: ["Tom Petty and the Heartbreakers", "R.E.M.", "The Black Crowes", "Aerosmith"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_6590",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Mary Jane's Last Dance'?",
-        answers: ["Tom Petty and the Heartbreakers", "R.E.M.", "The Black Crowes", "Bon Jovi"],
-        correctAnswer: "Tom Petty and the Heartbreakers"
-    },
-    {
-        id: "music_6591",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'You Don't Know How It Feels'?",
-        answers: ["Tom Petty", "Bruce Springsteen", "Bob Dylan", "John Mellencamp"],
-        correctAnswer: "Tom Petty"
-    },
-    {
-        id: "music_6592",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'You Wreck Me'?",
-        answers: ["Tom Petty", "Bruce Springsteen", "Bryan Adams", "John Mellencamp"],
-        correctAnswer: "Tom Petty"
-    },
-    {
-        id: "music_6593",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'It's Good to Be King'?",
-        answers: ["Tom Petty", "Bruce Springsteen", "Bob Dylan", "John Mellencamp"],
-        correctAnswer: "Tom Petty"
-    },
-
-    {
-        id: "music_6594",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'The Other Side'?",
-        answers: ["Aerosmith", "Bon Jovi", "Guns N' Roses", "Def Leppard"],
-        correctAnswer: "Aerosmith"
-    },
-    {
-        id: "music_6595",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Eat the Rich'?",
-        answers: ["Aerosmith", "Bon Jovi", "Guns N' Roses", "Def Leppard"],
-        correctAnswer: "Aerosmith"
-    },
-    {
-        id: "music_6596",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Falling in Love (Is Hard on the Knees)'?",
-        answers: ["Aerosmith", "Bon Jovi", "Def Leppard", "Guns N' Roses"],
-        correctAnswer: "Aerosmith"
-    },
-    {
-        id: "music_6597",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Full Circle'?",
-        answers: ["Aerosmith", "Bon Jovi", "Def Leppard", "Guns N' Roses"],
-        correctAnswer: "Aerosmith"
-    },
-
-    {
-        id: "music_6598",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'No Son of Mine'?",
-        answers: ["Genesis", "Phil Collins", "Mike and the Mechanics", "Marillion"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_6599",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'I Can't Dance'?",
-        answers: ["Genesis", "Dire Straits", "Mike and the Mechanics", "INXS"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_6600",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Hold on My Heart'?",
-        answers: ["Genesis", "Mike and the Mechanics", "Marillion", "Toto"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_6601",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Jesus He Knows Me'?",
-        answers: ["Genesis", "R.E.M.", "U2", "INXS"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_6602",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Tell Me Why'?",
-        answers: ["Genesis", "Mike and the Mechanics", "Toto", "Marillion"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_6603",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Congo'?",
-        answers: ["Genesis", "Mike and the Mechanics", "Marillion", "Yes"],
-        correctAnswer: "Genesis"
-    },
-    {
-        id: "music_6604",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Shipwrecked'?",
-        answers: ["Genesis", "Mike and the Mechanics", "Marillion", "Yes"],
-        correctAnswer: "Genesis"
-    },
-
-    {
-        id: "music_6605",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'High Hopes'?",
-        answers: ["Pink Floyd", "Genesis", "Dire Straits", "Yes"],
-        correctAnswer: "Pink Floyd"
-    },
-    {
-        id: "music_6606",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Take It Back'?",
-        answers: ["Pink Floyd", "Genesis", "Dire Straits", "Yes"],
-        correctAnswer: "Pink Floyd"
-    },
-    {
-        id: "music_6607",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Keep Talking'?",
-        answers: ["Pink Floyd", "Genesis", "Yes", "Marillion"],
-        correctAnswer: "Pink Floyd"
-    },
-    {
-        id: "music_6608",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Lost for Words'?",
-        answers: ["Pink Floyd", "Genesis", "Yes", "Marillion"],
-        correctAnswer: "Pink Floyd"
-    },
-
-    {
-        id: "music_6609",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'The Fly'?",
-        answers: ["U2", "R.E.M.", "INXS", "Simple Minds"],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_6610",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Who's Gonna Ride Your Wild Horses'?",
-        answers: ["U2", "R.E.M.", "INXS", "Simple Minds"],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_6611",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Lemon'?",
-        answers: ["U2", "R.E.M.", "INXS", "Depeche Mode"],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_6612",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Stay (Faraway, So Close!)'?",
-        answers: ["U2", "R.E.M.", "INXS", "Simple Minds"],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_6613",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Hold Me, Thrill Me, Kiss Me, Kill Me'?",
-        answers: ["U2", "R.E.M.", "INXS", "Depeche Mode"],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_6614",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Discotheque'?",
-        answers: ["U2", "R.E.M.", "INXS", "Depeche Mode"],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_6615",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Staring at the Sun'?",
-        answers: ["U2", "R.E.M.", "INXS", "Simple Minds"],
-        correctAnswer: "U2"
-    },
-    {
-        id: "music_6616",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Sweetest Thing'?",
-        answers: ["U2", "R.E.M.", "INXS", "Simple Minds"],
-        correctAnswer: "U2"
-    },
-
-    {
-        id: "music_6617",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Fake Plastic Trees'?",
-        answers: ["Radiohead", "Blur", "Suede", "The Verve"],
-        correctAnswer: "Radiohead"
-    },
-    {
-        id: "music_6618",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Just'?",
-        answers: ["Radiohead", "Blur", "Suede", "Placebo"],
-        correctAnswer: "Radiohead"
-    },
-    {
-        id: "music_6619",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Street Spirit (Fade Out)'?",
-        answers: ["Radiohead", "The Verve", "Suede", "Placebo"],
-        correctAnswer: "Radiohead"
-    },
-    {
-        id: "music_6620",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Paranoid Android'?",
-        answers: ["Radiohead", "Blur", "Oasis", "The Verve"],
-        correctAnswer: "Radiohead"
-    },
-    {
-        id: "music_6621",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Karma Police'?",
-        answers: ["Radiohead", "The Verve", "Blur", "Placebo"],
-        correctAnswer: "Radiohead"
-    },
-    {
-        id: "music_6622",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'No Surprises'?",
-        answers: ["Radiohead", "Blur", "The Verve", "Suede"],
-        correctAnswer: "Radiohead"
-    },
-    {
-        id: "music_6623",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Lucky'?",
-        answers: ["Radiohead", "The Verve", "Blur", "Placebo"],
-        correctAnswer: "Radiohead"
-    },
-
-    {
-        id: "music_6624",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'D'You Know What I Mean?'?",
-        answers: ["Oasis", "Blur", "The Verve", "Ocean Colour Scene"],
-        correctAnswer: "Oasis"
-    },
-    {
-        id: "music_6625",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'To the End'?",
-        answers: ["Blur", "Suede", "Pulp", "Oasis"],
-        correctAnswer: "Blur"
-    },
-    {
-        id: "music_6626",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Without You I'm Nothing'?",
-        answers: ["Placebo", "Suede", "Radiohead", "Garbage"],
-        correctAnswer: "Placebo"
-    },
-    {
-        id: "music_6627",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Charity'?",
-        answers: ["Skunk Anansie", "Garbage", "Republica", "Elastica"],
-        correctAnswer: "Skunk Anansie"
-    },
-    {
-        id: "music_6628",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Hedonism (Just Because You Feel Good)'?",
-        answers: ["Skunk Anansie", "Garbage", "Republica", "Elastica"],
-        correctAnswer: "Skunk Anansie"
-    },
-    {
-        id: "music_6629",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which group recorded 'Twisted (Everyday Hurts)'?",
-        answers: ["Skunk Anansie", "Garbage", "Republica", "Sleeper"],
-        correctAnswer: "Skunk Anansie"
-    },
-    {
-        id: "music_6630",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Sound of Drums'?",
-        answers: ["Kula Shaker", "Ocean Colour Scene", "Supergrass", "Cast"],
-        correctAnswer: "Kula Shaker"
-    },
-    {
-        id: "music_6631",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'The Magic Piper (of Love)'?",
-        answers: ["Edwyn Collins", "Ian McCulloch", "Richard Ashcroft", "Paul Weller"],
-        correctAnswer: "Edwyn Collins"
-    },
-
-    {
-        id: "music_6632",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Scooby Snacks'?",
-        answers: ["Fun Lovin' Criminals", "Cornershop", "Space", "Republica"],
-        correctAnswer: "Fun Lovin' Criminals"
-    },
-    {
-        id: "music_6633",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'The Fun Lovin' Criminal'?",
-        answers: ["Fun Lovin' Criminals", "Cornershop", "Space", "Supergrass"],
-        correctAnswer: "Fun Lovin' Criminals"
-    },
-    {
-        id: "music_6634",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Loco'?",
-        answers: ["Fun Lovin' Criminals", "Cornershop", "Space", "Republica"],
-        correctAnswer: "Fun Lovin' Criminals"
-    },
-    {
-        id: "music_6635",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which act recorded 'Your Woman'?",
-        answers: ["White Town", "Cornershop", "Space", "Republica"],
-        correctAnswer: "White Town"
-    },
-    {
-        id: "music_6636",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Sleep on the Left Side'?",
-        answers: ["Cornershop", "Space", "Fun Lovin' Criminals", "Supergrass"],
-        correctAnswer: "Cornershop"
-    },
-
-    {
-        id: "music_6637",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Ready or Not'?",
-        answers: ["The Fugees", "TLC", "En Vogue", "Arrested Development"],
-        correctAnswer: "The Fugees"
-    },
-    {
-        id: "music_6638",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Fu-Gee-La'?",
-        answers: ["The Fugees", "De La Soul", "A Tribe Called Quest", "Arrested Development"],
-        correctAnswer: "The Fugees"
-    },
-    {
-        id: "music_6639",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'No Woman, No Cry'?",
-        answers: ["The Fugees", "Arrested Development", "De La Soul", "Blackstreet"],
-        correctAnswer: "The Fugees"
-    },
-    {
-        id: "music_6640",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Doo Wop (That Thing)'?",
-        answers: ["Lauryn Hill", "Mary J. Blige", "Erykah Badu", "Brandy"],
-        correctAnswer: "Lauryn Hill"
-    },
-    {
-        id: "music_6641",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which singer recorded 'Ex-Factor'?",
-        answers: ["Lauryn Hill", "Mary J. Blige", "Erykah Badu", "Monica"],
-        correctAnswer: "Lauryn Hill"
-    },
-    {
-        id: "music_6642",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Everything Is Everything'?",
-        answers: ["Lauryn Hill", "Erykah Badu", "Mary J. Blige", "Brandy"],
-        correctAnswer: "Lauryn Hill"
-    },
-    {
-        id: "music_6643",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which rapper recorded 'If I Ruled the World'?",
-        answers: ["Nas", "2Pac", "Jay-Z", "LL Cool J"],
-        correctAnswer: "Nas"
-    },
-    {
-        id: "music_6644",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which rapper recorded 'Street Dreams'?",
-        answers: ["Nas", "2Pac", "Jay-Z", "The Notorious B.I.G."],
-        correctAnswer: "Nas"
-    },
-    {
-        id: "music_6645",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which rapper recorded 'California Love'?",
-        answers: ["2Pac", "Nas", "The Notorious B.I.G.", "Snoop Dogg"],
-        correctAnswer: "2Pac"
-    },
-    {
-        id: "music_6646",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which rapper recorded 'Changes'?",
-        answers: ["2Pac", "Nas", "The Notorious B.I.G.", "LL Cool J"],
-        correctAnswer: "2Pac"
-    },
-    {
-        id: "music_6647",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which rapper recorded 'Dear Mama'?",
-        answers: ["2Pac", "Nas", "The Notorious B.I.G.", "Snoop Dogg"],
-        correctAnswer: "2Pac"
-    },
-    {
-        id: "music_6648",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which rapper recorded 'Hypnotize'?",
-        answers: ["The Notorious B.I.G.", "2Pac", "Nas", "Jay-Z"],
-        correctAnswer: "The Notorious B.I.G."
-    },
-    {
-        id: "music_6649",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which rapper recorded 'Mo Money Mo Problems'?",
-        answers: ["The Notorious B.I.G.", "2Pac", "Nas", "Jay-Z"],
-        correctAnswer: "The Notorious B.I.G."
-    },
-    {
-        id: "music_6650",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which rapper recorded 'Juicy'?",
-        answers: ["The Notorious B.I.G.", "2Pac", "Nas", "Snoop Dogg"],
-        correctAnswer: "The Notorious B.I.G."
-    },
-    {
-        id: "music_6651",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which rapper recorded 'Regulate'?",
-        answers: ["Warren G", "Snoop Dogg", "Coolio", "Dr. Dre"],
-        correctAnswer: "Warren G"
-    },
-    {
-        id: "music_6652",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which rapper recorded 'This D.J.'?",
-        answers: ["Warren G", "Coolio", "Snoop Dogg", "Dr. Dre"],
-        correctAnswer: "Warren G"
-    },
-
-    {
-        id: "music_6653",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Crazy'?",
-        answers: ["Mark Morrison", "Seal", "Montell Jordan", "R. Kelly"],
-        correctAnswer: "Mark Morrison"
-    },
-    {
-        id: "music_6654",
-        category: "Music",
-        difficulty: "Hard",
-        question: "Which singer recorded 'Trippin''?",
-        answers: ["Mark Morrison", "Montell Jordan", "R. Kelly", "Usher"],
-        correctAnswer: "Mark Morrison"
-    },
-    {
-        id: "music_6655",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which group recorded 'Never Never Love'?",
-        answers: ["Simply Red", "Wet Wet Wet", "The Beautiful South", "Lighthouse Family"],
-        correctAnswer: "Simply Red"
-    },
-    {
-        id: "music_6656",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Written in the Stars'?",
-        answers: ["Elton John", "George Michael", "Sting", "Rod Stewart"],
-        correctAnswer: "Elton John"
-    },
-
-    {
-        id: "music_6657",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which duo recorded 'So Hard'?",
-        answers: ["Pet Shop Boys", "Erasure", "Electronic", "The Communards"],
-        correctAnswer: "Pet Shop Boys"
-    },
-    {
-        id: "music_6658",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which duo recorded 'Jealousy'?",
-        answers: ["Pet Shop Boys", "Erasure", "Electronic", "The Communards"],
-        correctAnswer: "Pet Shop Boys"
-    },
-    {
-        id: "music_6659",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which duo recorded 'Yesterday, When I Was Mad'?",
-        answers: ["Pet Shop Boys", "Erasure", "Electronic", "The Communards"],
-        correctAnswer: "Pet Shop Boys"
-    },
-    {
-        id: "music_6660",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which duo recorded 'Se a Vida E'?",
-        answers: ["Pet Shop Boys", "Erasure", "Electronic", "The Communards"],
-        correctAnswer: "Pet Shop Boys"
-    },
-    {
-        id: "music_6661",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which duo recorded 'Star'?",
-        answers: ["Erasure", "Pet Shop Boys", "Electronic", "The Communards"],
-        correctAnswer: "Erasure"
-    },
-    {
-        id: "music_6662",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which duo recorded 'Breath of Life'?",
-        answers: ["Erasure", "Pet Shop Boys", "Electronic", "The Communards"],
-        correctAnswer: "Erasure"
-    },
-    {
-        id: "music_6663",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which duo recorded 'Take a Chance on Me'?",
-        answers: ["Erasure", "Pet Shop Boys", "Electronic", "The Communards"],
-        correctAnswer: "Erasure"
-    },
-    {
-        id: "music_6664",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Naked'?",
-        answers: ["Louise", "Lisa Stansfield", "Gabrielle", "Dannii Minogue"],
-        correctAnswer: "Louise"
-    },
-    {
-        id: "music_6665",
-        category: "Music",
-        difficulty: "Medium",
-        question: "Which singer recorded 'Arms Around the World'?",
-        answers: ["Louise", "Gabrielle", "Lisa Stansfield", "Dannii Minogue"],
-        correctAnswer: "Louise"
-    },
-    {
-        id: "music_6666",
-        category: "Music",
-        difficulty: "Easy",
-        question: "Which group recorded 'Cotton Eye Joe'?",
-        answers: ["Rednex", "The Grid", "D:Ream", "Eiffel 65"],
-        correctAnswer: "Rednex"
-    }
-
+    makeQuestion("music_6567", "Which singer recorded 'Love Thing'?", ["Tina Turner", "Cher", "Annie Lennox", "Bonnie Tyler"], "Tina Turner", "Medium"),
+    makeQuestion("music_6568", "Which singer recorded 'Something Special'?", ["Tina Turner", "Cher", "Diana Ross", "Annie Lennox"], "Tina Turner", "Hard"),
+    makeQuestion("music_6569", "Which singer recorded 'Confidential'?", ["Tina Turner", "Cher", "Whitney Houston", "Annie Lennox"], "Tina Turner", "Hard"),
+    makeQuestion("music_6570", "Which singer recorded 'I Learned from the Best'?", ["Whitney Houston", "Mariah Carey", "Toni Braxton", "Celine Dion"], "Whitney Houston", "Medium"),
+    makeQuestion("music_6571", "Which singer recorded 'Could I Have This Kiss Forever'?", ["Whitney Houston", "Mariah Carey", "Toni Braxton", "Celine Dion"], "Whitney Houston", "Medium"),
+    makeQuestion("music_6572", "Which singer recorded 'Same Script, Different Cast'?", ["Whitney Houston", "Mariah Carey", "Toni Braxton", "Brandy"], "Whitney Houston", "Hard"),
+    makeQuestion("music_6573", "Which singer recorded 'Love Shoulda Brought You Home'?", ["Toni Braxton", "Whitney Houston", "Brandy", "Monica"], "Toni Braxton", "Medium"),
+    makeQuestion("music_6574", "Which singer recorded 'Seven Whole Days'?", ["Toni Braxton", "Brandy", "Monica", "Whitney Houston"], "Toni Braxton", "Hard"),
+    makeQuestion("music_6575", "Which singer recorded 'Let It Flow'?", ["Toni Braxton", "Mariah Carey", "Brandy", "Monica"], "Toni Braxton", "Medium"),
+    makeQuestion("music_6576", "Which singer recorded 'If I Could Turn Back the Hands of Time'?", ["R. Kelly", "Usher", "Seal", "Babyface"], "R. Kelly", "Medium"),
+    makeQuestion("music_6577", "Which group recorded 'Love Is Strong'?", ["The Rolling Stones", "U2", "Aerosmith", "Bon Jovi"], "The Rolling Stones", "Medium"),
+    makeQuestion("music_6578", "Which group recorded 'You Got Me Rocking'?", ["The Rolling Stones", "Aerosmith", "Bon Jovi", "U2"], "The Rolling Stones", "Medium"),
+    makeQuestion("music_6579", "Which group recorded 'Out of Tears'?", ["The Rolling Stones", "U2", "Aerosmith", "Genesis"], "The Rolling Stones", "Medium"),
+    makeQuestion("music_6580", "Which group recorded 'Anybody Seen My Baby'?", ["The Rolling Stones", "Aerosmith", "U2", "Bon Jovi"], "The Rolling Stones", "Medium"),
+    makeQuestion("music_6581", "Which group recorded 'Saint of Me'?", ["The Rolling Stones", "U2", "Aerosmith", "Genesis"], "The Rolling Stones", "Hard"),
+    makeQuestion("music_6582", "Which singer recorded 'Human Touch'?", ["Bruce Springsteen", "Tom Petty", "Bryan Adams", "Rod Stewart"], "Bruce Springsteen", "Easy"),
+    makeQuestion("music_6583", "Which singer recorded 'Better Days'?", ["Bruce Springsteen", "Tom Petty", "Bryan Adams", "Richard Marx"], "Bruce Springsteen", "Medium"),
+    makeQuestion("music_6584", "Which singer recorded '57 Channels (And Nothin' On)'?", ["Bruce Springsteen", "Tom Petty", "Bob Dylan", "John Mellencamp"], "Bruce Springsteen", "Hard"),
+    makeQuestion("music_6585", "Which singer recorded 'Streets of Philadelphia'?", ["Bruce Springsteen", "Tom Petty", "Bryan Adams", "Sting"], "Bruce Springsteen", "Easy"),
+    makeQuestion("music_6586", "Which singer recorded 'Secret Garden'?", ["Bruce Springsteen", "Tom Petty", "Sting", "Bryan Adams"], "Bruce Springsteen", "Medium"),
+    makeQuestion("music_6587", "Which singer recorded 'Murder Incorporated'?", ["Bruce Springsteen", "Tom Petty", "Bob Dylan", "John Mellencamp"], "Bruce Springsteen", "Hard"),
+    makeQuestion("music_6588", "Which group recorded 'Learning to Fly'?", ["Tom Petty and the Heartbreakers", "R.E.M.", "Aerosmith", "Bon Jovi"], "Tom Petty and the Heartbreakers", "Easy"),
+    makeQuestion("music_6589", "Which group recorded 'Into the Great Wide Open'?", ["Tom Petty and the Heartbreakers", "R.E.M.", "The Black Crowes", "Aerosmith"], "Tom Petty and the Heartbreakers", "Medium"),
+    makeQuestion("music_6590", "Which group recorded 'Mary Jane's Last Dance'?", ["Tom Petty and the Heartbreakers", "R.E.M.", "The Black Crowes", "Bon Jovi"], "Tom Petty and the Heartbreakers", "Medium"),
+    makeQuestion("music_6591", "Which singer recorded 'You Don't Know How It Feels'?", ["Tom Petty", "Bruce Springsteen", "Bob Dylan", "John Mellencamp"], "Tom Petty", "Medium"),
+    makeQuestion("music_6592", "Which singer recorded 'You Wreck Me'?", ["Tom Petty", "Bruce Springsteen", "Bryan Adams", "John Mellencamp"], "Tom Petty", "Medium"),
+    makeQuestion("music_6593", "Which singer recorded 'It's Good to Be King'?", ["Tom Petty", "Bruce Springsteen", "Bob Dylan", "John Mellencamp"], "Tom Petty", "Hard"),
+    makeQuestion("music_6594", "Which group recorded 'The Other Side'?", ["Aerosmith", "Bon Jovi", "Guns N' Roses", "Def Leppard"], "Aerosmith", "Medium"),
+    makeQuestion("music_6595", "Which group recorded 'Eat the Rich'?", ["Aerosmith", "Bon Jovi", "Guns N' Roses", "Def Leppard"], "Aerosmith", "Medium"),
+    makeQuestion("music_6596", "Which group recorded 'Falling in Love (Is Hard on the Knees)'?", ["Aerosmith", "Bon Jovi", "Def Leppard", "Guns N' Roses"], "Aerosmith", "Hard"),
+    makeQuestion("music_6597", "Which group recorded 'Full Circle'?", ["Aerosmith", "Bon Jovi", "Def Leppard", "Guns N' Roses"], "Aerosmith", "Hard"),
+    makeQuestion("music_6598", "Which group recorded 'No Son of Mine'?", ["Genesis", "Phil Collins", "Mike and the Mechanics", "Marillion"], "Genesis", "Easy"),
+    makeQuestion("music_6599", "Which group recorded 'I Can't Dance'?", ["Genesis", "Dire Straits", "Mike and the Mechanics", "INXS"], "Genesis", "Easy"),
+    makeQuestion("music_6600", "Which group recorded 'Hold on My Heart'?", ["Genesis", "Mike and the Mechanics", "Marillion", "Toto"], "Genesis", "Medium"),
+    makeQuestion("music_6601", "Which group recorded 'Jesus He Knows Me'?", ["Genesis", "R.E.M.", "U2", "INXS"], "Genesis", "Easy"),
+    makeQuestion("music_6602", "Which group recorded 'Tell Me Why'?", ["Genesis", "Mike and the Mechanics", "Toto", "Marillion"], "Genesis", "Medium"),
+    makeQuestion("music_6603", "Which group recorded 'Congo'?", ["Genesis", "Mike and the Mechanics", "Marillion", "Yes"], "Genesis", "Medium"),
+    makeQuestion("music_6604", "Which group recorded 'Shipwrecked'?", ["Genesis", "Mike and the Mechanics", "Marillion", "Yes"], "Genesis", "Hard"),
+    makeQuestion("music_6605", "Which group recorded 'High Hopes'?", ["Pink Floyd", "Genesis", "Dire Straits", "Yes"], "Pink Floyd", "Medium"),
+    makeQuestion("music_6606", "Which group recorded 'Take It Back'?", ["Pink Floyd", "Genesis", "Dire Straits", "Yes"], "Pink Floyd", "Medium"),
+    makeQuestion("music_6607", "Which group recorded 'Keep Talking'?", ["Pink Floyd", "Genesis", "Yes", "Marillion"], "Pink Floyd", "Hard"),
+    makeQuestion("music_6608", "Which group recorded 'Lost for Words'?", ["Pink Floyd", "Genesis", "Yes", "Marillion"], "Pink Floyd", "Hard"),
+    makeQuestion("music_6609", "Which group recorded 'The Fly'?", ["U2", "R.E.M.", "INXS", "Simple Minds"], "U2", "Easy"),
+    makeQuestion("music_6610", "Which group recorded 'Who's Gonna Ride Your Wild Horses'?", ["U2", "R.E.M.", "INXS", "Simple Minds"], "U2", "Medium"),
+    makeQuestion("music_6611", "Which group recorded 'Lemon'?", ["U2", "R.E.M.", "INXS", "Depeche Mode"], "U2", "Medium"),
+    makeQuestion("music_6612", "Which group recorded 'Stay (Faraway, So Close!)'?", ["U2", "R.E.M.", "INXS", "Simple Minds"], "U2", "Medium"),
+    makeQuestion("music_6613", "Which group recorded 'Hold Me, Thrill Me, Kiss Me, Kill Me'?", ["U2", "R.E.M.", "INXS", "Depeche Mode"], "U2", "Easy"),
+    makeQuestion("music_6614", "Which group recorded 'Discotheque'?", ["U2", "R.E.M.", "INXS", "Depeche Mode"], "U2", "Easy"),
+    makeQuestion("music_6615", "Which group recorded 'Staring at the Sun'?", ["U2", "R.E.M.", "INXS", "Simple Minds"], "U2", "Medium"),
+    makeQuestion("music_6616", "Which group recorded 'Sweetest Thing'?", ["U2", "R.E.M.", "INXS", "Simple Minds"], "U2", "Medium"),
+    makeQuestion("music_6617", "Which group recorded 'Fake Plastic Trees'?", ["Radiohead", "Blur", "Suede", "The Verve"], "Radiohead", "Medium"),
+    makeQuestion("music_6618", "Which group recorded 'Just'?", ["Radiohead", "Blur", "Suede", "Placebo"], "Radiohead", "Medium"),
+    makeQuestion("music_6619", "Which group recorded 'Street Spirit (Fade Out)'?", ["Radiohead", "The Verve", "Suede", "Placebo"], "Radiohead", "Easy"),
+    makeQuestion("music_6620", "Which group recorded 'Paranoid Android'?", ["Radiohead", "Blur", "Oasis", "The Verve"], "Radiohead", "Easy"),
+    makeQuestion("music_6621", "Which group recorded 'Karma Police'?", ["Radiohead", "The Verve", "Blur", "Placebo"], "Radiohead", "Easy"),
+    makeQuestion("music_6622", "Which group recorded 'No Surprises'?", ["Radiohead", "Blur", "The Verve", "Suede"], "Radiohead", "Easy"),
+    makeQuestion("music_6623", "Which group recorded 'Lucky'?", ["Radiohead", "The Verve", "Blur", "Placebo"], "Radiohead", "Medium"),
+    makeQuestion("music_6624", "Which group recorded 'D'You Know What I Mean?'?", ["Oasis", "Blur", "The Verve", "Ocean Colour Scene"], "Oasis", "Easy"),
+    makeQuestion("music_6625", "Which group recorded 'To the End'?", ["Blur", "Suede", "Pulp", "Oasis"], "Blur", "Medium"),
+    makeQuestion("music_6626", "Which group recorded 'Without You I'm Nothing'?", ["Placebo", "Suede", "Radiohead", "Garbage"], "Placebo", "Medium"),
+    makeQuestion("music_6627", "Which group recorded 'Charity'?", ["Skunk Anansie", "Garbage", "Republica", "Elastica"], "Skunk Anansie", "Medium"),
+    makeQuestion("music_6628", "Which group recorded 'Hedonism (Just Because You Feel Good)'?", ["Skunk Anansie", "Garbage", "Republica", "Elastica"], "Skunk Anansie", "Medium"),
+    makeQuestion("music_6629", "Which group recorded 'Twisted (Everyday Hurts)'?", ["Skunk Anansie", "Garbage", "Republica", "Sleeper"], "Skunk Anansie", "Hard"),
+    makeQuestion("music_6630", "Which group recorded 'Sound of Drums'?", ["Kula Shaker", "Ocean Colour Scene", "Supergrass", "Cast"], "Kula Shaker", "Medium"),
+    makeQuestion("music_6631", "Which singer recorded 'The Magic Piper (of Love)'?", ["Edwyn Collins", "Ian McCulloch", "Richard Ashcroft", "Paul Weller"], "Edwyn Collins", "Hard"),
+    makeQuestion("music_6632", "Which group recorded 'Scooby Snacks'?", ["Fun Lovin' Criminals", "Cornershop", "Space", "Republica"], "Fun Lovin' Criminals", "Easy"),
+    makeQuestion("music_6633", "Which group recorded 'The Fun Lovin' Criminal'?", ["Fun Lovin' Criminals", "Cornershop", "Space", "Supergrass"], "Fun Lovin' Criminals", "Medium"),
+    makeQuestion("music_6634", "Which group recorded 'Loco'?", ["Fun Lovin' Criminals", "Cornershop", "Space", "Republica"], "Fun Lovin' Criminals", "Easy"),
+    makeQuestion("music_6635", "Which act recorded 'Your Woman'?", ["White Town", "Cornershop", "Space", "Republica"], "White Town", "Easy"),
+    makeQuestion("music_6636", "Which group recorded 'Sleep on the Left Side'?", ["Cornershop", "Space", "Fun Lovin' Criminals", "Supergrass"], "Cornershop", "Medium"),
+    makeQuestion("music_6637", "Which group recorded 'Ready or Not'?", ["The Fugees", "TLC", "En Vogue", "Arrested Development"], "The Fugees", "Easy"),
+    makeQuestion("music_6638", "Which group recorded 'Fu-Gee-La'?", ["The Fugees", "De La Soul", "A Tribe Called Quest", "Arrested Development"], "The Fugees", "Medium"),
+    makeQuestion("music_6639", "Which group recorded 'No Woman, No Cry'?", ["The Fugees", "Arrested Development", "De La Soul", "Blackstreet"], "The Fugees", "Medium"),
+    makeQuestion("music_6640", "Which singer recorded 'Doo Wop (That Thing)'?", ["Lauryn Hill", "Mary J. Blige", "Erykah Badu", "Brandy"], "Lauryn Hill", "Easy"),
+    makeQuestion("music_6641", "Which singer recorded 'Ex-Factor'?", ["Lauryn Hill", "Mary J. Blige", "Erykah Badu", "Monica"], "Lauryn Hill", "Easy"),
+    makeQuestion("music_6642", "Which singer recorded 'Everything Is Everything'?", ["Lauryn Hill", "Erykah Badu", "Mary J. Blige", "Brandy"], "Lauryn Hill", "Medium"),
+    makeQuestion("music_6643", "Which rapper recorded 'If I Ruled the World'?", ["Nas", "2Pac", "Jay-Z", "LL Cool J"], "Nas", "Medium"),
+    makeQuestion("music_6644", "Which rapper recorded 'Street Dreams'?", ["Nas", "2Pac", "Jay-Z", "The Notorious B.I.G."], "Nas", "Medium"),
+    makeQuestion("music_6645", "Which rapper recorded 'California Love'?", ["2Pac", "Nas", "The Notorious B.I.G.", "Snoop Dogg"], "2Pac", "Easy"),
+    makeQuestion("music_6646", "Which rapper recorded 'Changes'?", ["2Pac", "Nas", "The Notorious B.I.G.", "LL Cool J"], "2Pac", "Easy"),
+    makeQuestion("music_6647", "Which rapper recorded 'Dear Mama'?", ["2Pac", "Nas", "The Notorious B.I.G.", "Snoop Dogg"], "2Pac", "Medium"),
+    makeQuestion("music_6648", "Which rapper recorded 'Hypnotize'?", ["The Notorious B.I.G.", "2Pac", "Nas", "Jay-Z"], "The Notorious B.I.G.", "Easy"),
+    makeQuestion("music_6649", "Which rapper recorded 'Mo Money Mo Problems'?", ["The Notorious B.I.G.", "2Pac", "Nas", "Jay-Z"], "The Notorious B.I.G.", "Easy"),
+    makeQuestion("music_6650", "Which rapper recorded 'Juicy'?", ["The Notorious B.I.G.", "2Pac", "Nas", "Snoop Dogg"], "The Notorious B.I.G.", "Medium"),
+    makeQuestion("music_6651", "Which rapper recorded 'Regulate'?", ["Warren G", "Snoop Dogg", "Coolio", "Dr. Dre"], "Warren G", "Easy"),
+    makeQuestion("music_6652", "Which rapper recorded 'This D.J.'?", ["Warren G", "Coolio", "Snoop Dogg", "Dr. Dre"], "Warren G", "Medium"),
+    makeQuestion("music_6653", "Which singer recorded 'Crazy' before his hit 'Return of the Mack'?", ["Mark Morrison", "Seal", "Montell Jordan", "R. Kelly"], "Mark Morrison", "Medium"),
+    makeQuestion("music_6654", "Which singer recorded 'Trippin''?", ["Mark Morrison", "Montell Jordan", "R. Kelly", "Usher"], "Mark Morrison", "Hard"),
+    makeQuestion("music_6655", "Which group recorded 'Never Never Love'?", ["Simply Red", "Wet Wet Wet", "The Beautiful South", "Lighthouse Family"], "Simply Red", "Medium"),
+    makeQuestion("music_6656", "Which singer recorded 'Written in the Stars'?", ["Elton John", "George Michael", "Sting", "Rod Stewart"], "Elton John", "Medium"),
+    makeQuestion("music_6657", "Which duo recorded 'So Hard'?", ["Pet Shop Boys", "Erasure", "Electronic", "The Communards"], "Pet Shop Boys", "Medium"),
+    makeQuestion("music_6658", "Which duo recorded 'Jealousy'?", ["Pet Shop Boys", "Erasure", "Electronic", "The Communards"], "Pet Shop Boys", "Medium"),
+    makeQuestion("music_6659", "Which duo recorded 'Yesterday, When I Was Mad'?", ["Pet Shop Boys", "Erasure", "Electronic", "The Communards"], "Pet Shop Boys", "Medium"),
+    makeQuestion("music_6660", "Which duo recorded 'Se a Vida E'?", ["Pet Shop Boys", "Erasure", "Electronic", "The Communards"], "Pet Shop Boys", "Medium"),
+    makeQuestion("music_6661", "Which duo recorded 'Star'?", ["Erasure", "Pet Shop Boys", "Electronic", "The Communards"], "Erasure", "Medium"),
+    makeQuestion("music_6662", "Which duo recorded 'Breath of Life'?", ["Erasure", "Pet Shop Boys", "Electronic", "The Communards"], "Erasure", "Medium"),
+    makeQuestion("music_6663", "Which duo recorded 'Take a Chance on Me'?", ["Erasure", "Pet Shop Boys", "Electronic", "The Communards"], "Erasure", "Easy"),
+    makeQuestion("music_6664", "Which singer recorded 'Naked'?", ["Louise", "Lisa Stansfield", "Gabrielle", "Dannii Minogue"], "Louise", "Medium"),
+    makeQuestion("music_6665", "Which singer recorded 'Arms Around the World'?", ["Louise", "Gabrielle", "Lisa Stansfield", "Dannii Minogue"], "Louise", "Medium"),
+    makeQuestion("music_6666", "Which group recorded 'Cotton Eye Joe'?", ["Rednex", "The Grid", "D:Ream", "Eiffel 65"], "Rednex", "Easy"),
 ];
 
 module.exports = quizPack85;
