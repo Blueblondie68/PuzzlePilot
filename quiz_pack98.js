@@ -1,8 +1,8 @@
 // quiz_pack98.js
-// PuzzlePilot Big Quiz - Pack 98
-// Music - 2000s
-// 100 questions
-// IDs: music_7867 - music_7966
+// PuzzlePilot Bigggggg Quiz - Music Pack 98
+// Tagging audit: 100 questions, music_7867 to music_7966.
+// Original questions, answers, difficulty and Daily Quiz eligibility preserved.
+// Seven songs released as singles in 2010 have correct decade tags.
 
 const songs = [
     ["Try Again Today", "The Charlatans"],
@@ -110,95 +110,179 @@ const songs = [
     ["Always Like This", "Bombay Bicycle Club"]
 ];
 
-const artists = [
-    ...new Set(
-        songs.map(
-            song => song[1]
-        )
-    )
+// Performer and genre metadata shared by questions about the same act.
+const performerTags = {
+    "The Charlatans": ["british", "english", "alternative rock", "britpop", "bands", "tim burgess"],
+    "The Libertines": ["british", "english", "indie rock", "garage rock revival", "bands", "pete doherty", "carl barat"],
+    "Babyshambles": ["british", "english", "indie rock", "garage rock", "bands", "pete doherty"],
+    "Dirty Pretty Things": ["british", "english", "indie rock", "garage rock", "bands", "carl barat"],
+    "Gossip": ["american", "indie rock", "dance punk", "bands", "beth ditto"],
+    "Empire of the Sun": ["australian", "electropop", "synth pop", "duos", "luke steele", "nick littlemore"],
+    "MGMT": ["american", "psychedelic pop", "synth pop", "indie pop", "duos", "andrew vanwyngarden", "ben goldwasser"],
+    "Phoenix": ["french", "indie rock", "indie pop", "bands", "thomas mars"],
+    "Mystery Jets feat. Laura Marling": ["british", "english", "indie rock", "indie pop", "collaborations", "mystery jets", "laura marling"],
+    "Mystery Jets": ["british", "english", "indie rock", "indie pop", "bands"],
+    "The Delays": ["british", "english", "indie pop", "indie rock", "bands", "greg gilbert", "southampton"],
+    "The Streets": ["british", "english", "uk garage", "hip hop", "grime", "solo artists", "mike skinner"],
+    "Siobhan Donaghy": ["british", "english", "alternative pop", "pop", "female singers", "solo artists", "siobhan donaghy", "sugababes"],
+    "Sugababes": ["british", "english", "pop", "r and b", "girl groups", "female vocal groups"],
+    "Girls Aloud": ["british", "pop", "dance pop", "girl groups", "female vocal groups", "cheryl cole", "xenomania"],
+    "The Saturdays": ["british", "irish", "pop", "dance pop", "girl groups", "female vocal groups"],
+    "Gabriella Cilmi": ["australian", "pop", "soul", "female singers", "solo artists"],
+    "Pixie Lott": ["british", "english", "pop", "r and b", "female singers", "solo artists"],
+    "Diana Vickers": ["british", "english", "pop", "female singers", "solo artists", "the x factor"],
+    "Adele": ["british", "english", "pop", "soul", "female singers", "singer songwriters", "solo artists"],
+    "Duffy": ["british", "welsh", "soul", "pop", "female singers", "solo artists"],
+    "Mumm-Ra": ["british", "english", "indie rock", "indie pop", "bands"],
+    "Young Knives": ["british", "english", "indie rock", "post punk revival", "bands", "the young knives"],
+    "Sigur Rós": ["icelandic", "post rock", "art rock", "bands", "jonsi", "sigur ros"],
+    "Bombay Bicycle Club": ["british", "english", "indie rock", "indie pop", "bands", "jack steadman"]
+};
+
+// Recording-specific release metadata, in exactly the same order as songs.
+// For post-2009 singles taken from 2009 albums, the single's 2010s decade
+// is used for the main tag, with the album's year noted separately.
+const recordingInfo = [
+    [2004, "up at the lake album"],
+    [2004, "the libertines album"],
+    [2004, "the libertines album"],
+    [2003, "standalone single"],
+    [2002, "up the bracket album"],
+    [2002, "up the bracket album"],
+    [2002, "debut single"],
+    [2004, "down in albion album", "2005 album"],
+    [2005, "down in albion album"],
+    [2007, "shotters nation album"],
+    [2007, "shotters nation album"],
+    [2006, "the blinding ep"],
+    [2005, "down in albion album"],
+    [2006, "waterloo to anywhere album"],
+    [2006, "waterloo to anywhere album"],
+    [2006, "waterloo to anywhere album"],
+    [2008, "romance at short notice album"],
+    [2006, "standing in the way of control album"],
+    [2006, "standing in the way of control album", "2007 single"],
+    [2009, "music for men album"],
+    [2009, "music for men album"],
+    [2008, "walking on a dream album"],
+    [2008, "walking on a dream album"],
+    [2008, "walking on a dream album", "2009 single"],
+    [2007, "oracular spectacular album", "2008 single"],
+    [2007, "oracular spectacular album", "2008 single"],
+    [2007, "oracular spectacular album", "2005 original ep"],
+    [2007, "oracular spectacular album"],
+    [2007, "oracular spectacular album"],
+    [2009, "wolfgang amadeus phoenix album"],
+    [2009, "wolfgang amadeus phoenix album"],
+    [2006, "its never been like that album"],
+    [2006, "its never been like that album"],
+    [2000, "united album"],
+    [2008, "twenty one album", "laura marling vocals", "collaborations"],
+    [2007, "diamonds in the dark single"],
+    [2006, "making dens album"],
+    [2008, "twenty one album"],
+    [2006, "you see colours album"],
+    [2004, "faded seaside glamour album"],
+    [2004, "faded seaside glamour album"],
+    [2006, "you see colours album"],
+    [2004, "lost in a melody ep"],
+    [2004, "a grand dont come for free album"],
+    [2004, "a grand dont come for free album"],
+    [2004, "a grand dont come for free album"],
+    [2006, "the hardest way to make an easy living album"],
+    [2006, "the hardest way to make an easy living album"],
+    [2006, "the hardest way to make an easy living album"],
+    [2002, "original pirate material album"],
+    [2002, "original pirate material album"],
+    [2007, "ghosts album"],
+    [2003, "revolution in me album"],
+    [2003, "revolution in me album"],
+    [2007, "ghosts album"],
+    [2003, "three album", "2004 single"],
+    [2005, "taller in more ways album", "2006 single"],
+    [2005, "taller in more ways album"],
+    [2006, "overloaded the singles collection", "new compilation track"],
+    [2007, "change album"],
+    [2008, "catfights and spotlights album"],
+    [2009, "sweet 7 album", "2010 album"],
+    [2010, "sweet 7 album", "2010 single"],
+    [2003, "what will the neighbours say album", "the pointer sisters cover", "cover versions", "love actually soundtrack", "film soundtracks"],
+    [2004, "what will the neighbours say album"],
+    [2004, "what will the neighbours say album", "pretenders cover", "cover versions", "children in need charity single"],
+    [2005, "what will the neighbours say album"],
+    [2005, "chemistry album"],
+    [2006, "sound of girls aloud greatest hits album", "new compilation track"],
+    [2007, "tangled up album"],
+    [2008, "tangled up album", "2007 album"],
+    [2009, "out of control album", "2008 album"],
+    [2009, "chasing lights album", "2008 album"],
+    [2009, "depeche mode cover", "cover versions", "comic relief", "charity singles"],
+    [2009, "chasing lights album", "2008 album"],
+    [2009, "wordshaker album"],
+    [2010, "wordshaker album", "2009 album", "2010 single"],
+    [2008, "chasing lights album"],
+    [2008, "lessons to be learned album"],
+    [2009, "turn it up album"],
+    [2009, "turn it up album"],
+    [2010, "turn it up louder album", "2010 reissue", "2010 single"],
+    [2010, "turn it up album", "2009 album", "2010 single"],
+    [2010, "turn it up album", "2009 album", "2010 single"],
+    [2010, "songs from the tainted cherry tree album"],
+    [2010, "my wicked heart single"],
+    [2007, "19 album", "2008 album"],
+    [2008, "19 album", "bob dylan cover", "cover versions"],
+    [2008, "19 album"],
+    [2008, "19 album"],
+    [2008, "19 album"],
+    [2008, "rockferry deluxe edition"],
+    [2008, "rockferry album"],
+    [2007, "rockferry album", "2008 album"],
+    [2007, "these things move in threes album"],
+    [2006, "voices of animals and men album"],
+    [2005, "voices of animals and men album", "2006 single reissue"],
+    [2007, "superabundance album", "2008 album"],
+    [2005, "takk album", "icelandic lyrics", "bbc planet earth television use"],
+    [2009, "i had the blues but i shook them loose album"]
 ];
 
-function makeAnswers(
-    correctAnswer,
-    index
-) {
-    const otherArtists =
-        artists.filter(
-            artist =>
-                artist !== correctAnswer
-        );
+// Keep original answer-choice creation and rotation unchanged.
+const artists = [...new Set(songs.map(song => song[1]))];
 
+function makeAnswers(correctAnswer, index) {
+    const otherArtists = artists.filter(artist => artist !== correctAnswer);
     const answers = [
         correctAnswer,
-        otherArtists[
-            index %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 11) %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 23) %
-            otherArtists.length
-        ]
+        otherArtists[index % otherArtists.length],
+        otherArtists[(index + 11) % otherArtists.length],
+        otherArtists[(index + 23) % otherArtists.length]
     ];
-
-    const shift =
-        index % answers.length;
-
-    return [
-        ...answers.slice(shift),
-        ...answers.slice(0, shift)
-    ];
+    const shift = index % answers.length;
+    return [...answers.slice(shift), ...answers.slice(0, shift)];
 }
 
-const questions =
-    songs.map(
-        (song, index) => {
-            const title =
-                song[0];
+function makeTags(title, artist, index) {
+    const [year, ...recordingTags] = recordingInfo[index];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return [...new Set([
+        "music", "songs", "recordings", "artist identification",
+        decade, `${decade} music`, `${year} releases`,
+        title.toLowerCase(), artist.toLowerCase(),
+        ...performerTags[artist], ...recordingTags
+    ])];
+}
 
-            const artist =
-                song[1];
+const questions = songs.map(([title, artist], index) => {
+    const number = 7867 + index;
+    return {
+        id: `music_${String(number).padStart(4, '0')}`,
+        category: 'Music',
+        question: `Which artist recorded ${title}?`,
+        answers: makeAnswers(artist, index),
+        correctAnswer: artist,
+        difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+        tags: makeTags(title, artist, index),
+        dailyEligible: true
+    };
+});
 
-            const number =
-                7867 + index;
-
-            return {
-                id:
-                    `music_${String(number).padStart(4, '0')}`,
-
-                category:
-                    'Music',
-
-                question:
-                    `Which artist recorded ${title}?`,
-
-                answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
-
-                correctAnswer:
-                    artist,
-
-                difficulty:
-                    index % 3 === 0
-                        ? 'Easy'
-                        : 'Medium',
-
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
-
-                dailyEligible:
-                    true
-            };
-        }
-    );
-
-module.exports =
-    questions;
+module.exports = questions;
