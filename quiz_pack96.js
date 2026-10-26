@@ -1,8 +1,9 @@
 // quiz_pack96.js
-// PuzzlePilot Big Quiz - Pack 96
-// Music - 2000s
-// 100 questions
-// IDs: music_7667 - music_7766
+// PuzzlePilot Bigggggg Quiz - Music Pack 96
+// Tagging audit: 100 questions, music_7667 to music_7766.
+// Original IDs, difficulties, answer choices and Daily eligibility preserved.
+// music_7732 replaces a repeated Daniel Bedingfield song with an album question.
+// Three 2010 single recordings are accurately tagged as 2010s.
 
 const songs = [
     ["Outside", "Staind"],
@@ -72,7 +73,7 @@ const songs = [
     ["Rise & Fall", "Craig David feat. Sting"],
     ["Hidden Agenda", "Craig David"],
     ["Don't Love You No More (I'm Sorry)", "Craig David"],
-    ["Never Leave Your Side", "Daniel Bedingfield"],
+    ["Second First Impression", "Daniel Bedingfield"],
     ["Nothing Hurts Like Love", "Daniel Bedingfield"],
     ["Wrap My Words Around You", "Daniel Bedingfield"],
     ["Soulmate", "Natasha Bedingfield"],
@@ -110,95 +111,213 @@ const songs = [
     ["Read My Mind", "The Killers"]
 ];
 
-const artists = [
-    ...new Set(
-        songs.map(
-            song => song[1]
-        )
-    )
+// Artist metadata is applied automatically to every matching question.
+const performerTags = {
+    "Staind": ["american", "post grunge", "alternative metal", "bands", "aaron lewis"],
+    "The Calling": ["american", "alternative rock", "post grunge", "bands", "alex band"],
+    "Santana feat. Alex Band": ["american", "latin rock", "pop rock", "collaborations", "santana", "carlos santana", "alex band", "the calling"],
+    "Alien Ant Farm": ["american", "alternative rock", "nu metal", "bands"],
+    "The Black Eyed Peas": ["american", "hip hop", "pop rap", "dance pop", "groups", "will.i.am", "fergie", "apl.de.ap", "taboo"],
+    "Maroon 5": ["american", "pop rock", "pop", "bands", "adam levine"],
+    "Jesse McCartney": ["american", "pop", "male singers", "solo artists"],
+    "Ne-Yo": ["american", "r and b", "pop", "male singers", "singer songwriters", "solo artists"],
+    "Mario": ["american", "r and b", "male singers", "solo artists", "mario barrett"],
+    "Usher": ["american", "r and b", "pop", "male singers", "solo artists"],
+    "Gnarls Barkley": ["american", "alternative soul", "neo soul", "duos", "cee lo green", "danger mouse"],
+    "Estelle feat. Kanye West": ["british", "american", "r and b", "hip hop", "collaborations", "estelle", "kanye west"],
+    "Estelle": ["british", "english", "r and b", "soul", "female singers", "solo artists"],
+    "Estelle feat. Sean Paul": ["british", "jamaican", "r and b", "reggae fusion", "collaborations", "estelle", "sean paul"],
+    "Rihanna": ["barbadian", "pop", "r and b", "dance pop", "female singers", "solo artists"],
+    "Beyoncé": ["american", "pop", "r and b", "female singers", "solo artists", "beyonce"],
+    "Beyoncé feat. Jay-Z": ["american", "pop", "r and b", "hip hop", "collaborations", "beyonce", "jay z"],
+    "Beyoncé and Shakira": ["american", "colombian", "pop", "latin pop", "duets", "collaborations", "beyonce", "shakira"],
+    "David Guetta feat. Kelly Rowland": ["french", "american", "house", "dance pop", "collaborations", "david guetta", "kelly rowland"],
+    "David Guetta feat. Akon": ["french", "american", "house", "electro house", "collaborations", "david guetta", "akon"],
+    "David Guetta feat. Chris Willis": ["french", "american", "house", "dance", "collaborations", "david guetta", "chris willis"],
+    "David Guetta feat. Chris Willis, Fergie and LMFAO": ["french", "american", "electro house", "dance", "collaborations", "david guetta", "chris willis", "fergie", "lmfao"],
+    "David Guetta feat. Tara McDonald": ["french", "british", "house", "dance", "collaborations", "david guetta", "tara mcdonald"],
+    "David Guetta feat. Cozi": ["french", "british", "house", "dance", "collaborations", "david guetta", "cozi costi", "steve angello"],
+    "Bob Sinclar feat. Steve Edwards": ["french", "british", "house", "dance", "collaborations", "bob sinclar", "steve edwards"],
+    "Bob Sinclar feat. Gary Pine": ["french", "jamaican", "house", "reggae fusion", "collaborations", "bob sinclar", "gary pine"],
+    "Bob Sinclar": ["french", "house", "dance", "djs", "music producers", "solo artists"],
+    "Room 5 feat. Oliver Cheatham": ["french", "american", "house", "disco house", "collaborations", "room 5", "oliver cheatham"],
+    "Booty Luv": ["british", "house", "dance pop", "female vocal groups", "duos", "cherise roberts", "nadia shepherd"],
+    "Craig David": ["british", "english", "r and b", "uk garage", "male singers", "solo artists"],
+    "Craig David feat. Sting": ["british", "english", "r and b", "pop", "collaborations", "craig david", "sting"],
+    "Daniel Bedingfield": ["british", "new zealand", "pop", "r and b", "male singers", "solo artists"],
+    "Natasha Bedingfield": ["british", "english", "pop", "pop rock", "female singers", "solo artists"],
+    "Natasha Bedingfield feat. Sean Kingston": ["british", "jamaican", "pop", "r and b", "collaborations", "natasha bedingfield", "sean kingston"],
+    "Kate Nash": ["british", "english", "indie pop", "female singers", "singer songwriters", "solo artists"],
+    "Paloma Faith": ["british", "english", "pop", "soul", "female singers", "solo artists"],
+    "KT Tunstall": ["british", "scottish", "folk rock", "pop rock", "female singers", "singer songwriters", "solo artists"],
+    "Razorlight": ["british", "english", "indie rock", "bands", "johnny borrell"],
+    "Paolo Nutini": ["british", "scottish", "folk rock", "soul", "male singers", "singer songwriters", "solo artists"],
+    "Newton Faulkner": ["british", "english", "folk rock", "acoustic", "male singers", "singer songwriters", "solo artists"],
+    "Scouting for Girls": ["british", "english", "pop rock", "indie pop", "bands", "roy stride"],
+    "Lupe Fiasco feat. Matthew Santos": ["american", "hip hop", "pop rap", "collaborations", "lupe fiasco", "matthew santos"],
+    "Kid Cudi": ["american", "alternative hip hop", "hip hop", "rappers", "solo artists"],
+    "Kanye West": ["american", "hip hop", "rappers", "music producers", "solo artists"],
+    "Kanye West feat. Jamie Foxx": ["american", "hip hop", "collaborations", "kanye west", "jamie foxx"],
+    "Kanye West feat. T-Pain": ["american", "hip hop", "collaborations", "kanye west", "t pain"],
+    "The Killers": ["american", "alternative rock", "indie rock", "bands", "brandon flowers"]
+};
+
+// Each entry follows the order of songs above. The year identifies the
+// recording or its single release; album years are given separately when useful.
+const recordingInfo = [
+    [2001, "break the cycle album", "live version", "2001 single"],
+    [2003, "14 shades of grey album"],
+    [2001, "camino palmero album", "2002 single"],
+    [2001, "camino palmero album", "2002 single"],
+    [2003, "shaman album", "2002 album", "alex band vocal version"],
+    [2001, "anthology album", "michael jackson cover", "cover versions"],
+    [2001, "anthology album"],
+    [2003, "truant album"],
+    [2003, "elephunk album", "justin timberlake uncredited vocals"],
+    [2003, "elephunk album"],
+    [2005, "monkey business album"],
+    [2005, "monkey business album"],
+    [2009, "the e n d album"],
+    [2009, "the e n d album"],
+    [2005, "monkey business album", "2006 single", "miserlou sample", "sampling"],
+    [2004, "songs about jane album", "2002 album"],
+    [2007, "it wont be soon before long album"],
+    [2007, "it wont be soon before long album", "2008 remix with rihanna"],
+    [2004, "beautiful soul album"],
+    [2004, "beautiful soul album", "2005 single"],
+    [2007, "because of you album"],
+    [2008, "year of the gentleman album"],
+    [2008, "year of the gentleman album"],
+    [2006, "in my own words album"],
+    [2006, "in my own words album"],
+    [2007, "go album"],
+    [2004, "confessions album"],
+    [2008, "here i stand album", "young jeezy guest appearance"],
+    [2001, "8701 album"],
+    [2001, "8701 album"],
+    [2006, "st elsewhere album", "danger mouse production"],
+    [2006, "st elsewhere album"],
+    [2008, "the odd couple album"],
+    [2008, "shine album", "kanye west collaboration"],
+    [2004, "the 18th day album", "megaman collaboration", "so solid crew"],
+    [2008, "shine album", "sean paul collaboration"],
+    [2008, "good girl gone bad album", "2007 album", "justin timberlake backing vocals"],
+    [2007, "good girl gone bad album"],
+    [2008, "good girl gone bad reloaded album", "ne yo songwriting"],
+    [2009, "rated r album"],
+    [2005, "music of the sun album"],
+    [2006, "a girl like me album"],
+    [2008, "i am sasha fierce album"],
+    [2009, "i am sasha fierce album", "2008 album"],
+    [2006, "b day album", "jay z collaboration"],
+    [2008, "i am sasha fierce album"],
+    [2007, "b day deluxe edition", "shakira collaboration"],
+    [2009, "one love album", "kelly rowland collaboration"],
+    [2009, "one love album", "akon collaboration"],
+    [2002, "just a little more love album", "2006 walking away remix"],
+    [2010, "one more love album", "2010 single", "2009 gettin over original", "fergie and lmfao remix", "collaborations"],
+    [2008, "pop life album", "2007 album", "tara mcdonald collaboration"],
+    [2007, "pop life album", "cozi vocals", "steve angello collaboration"],
+    [2006, "western dream album", "steve edwards collaboration"],
+    [2005, "western dream album", "gary pine collaboration"],
+    [2006, "western dream album", "cutie b collaboration"],
+    [2003, "music and you album", "oliver cheatham sampled recording", "sampling"],
+    [2006, "boogie 2nite album", "tweet cover", "cover versions"],
+    [2007, "boogie 2nite album", "luther vandross cover", "cover versions"],
+    [2007, "boogie 2nite album"],
+    [2007, "trust me album", "david bowie lets dance sample", "sampling"],
+    [2002, "slicker than your average album"],
+    [2002, "slicker than your average album", "2003 single", "sting collaboration"],
+    [2002, "slicker than your average album", "2003 single"],
+    [2005, "the story goes album"],
+    [2004, "second first impression album", "album identification", "second studio album"],
+    [2004, "second first impression album"],
+    [2004, "second first impression album", "2005 single"],
+    [2007, "nb album"],
+    [2007, "nb album", "sean kingston collaboration"],
+    [2007, "made of bricks album", "early single"],
+    [2009, "do you want the truth or something beautiful album"],
+    [2009, "do you want the truth or something beautiful album"],
+    [2010, "do you want the truth or something beautiful album", "2009 album", "2010 single"],
+    [2007, "drastic fantastic album"],
+    [2007, "drastic fantastic album"],
+    [2004, "up all night album"],
+    [2008, "slipway fires album"],
+    [2008, "slipway fires album"],
+    [2006, "these streets album"],
+    [2006, "these streets album"],
+    [2006, "these streets album", "2007 single"],
+    [2009, "sunny side up album"],
+    [2009, "sunny side up album"],
+    [2007, "hand built by robots album"],
+    [2007, "hand built by robots album", "massive attack cover", "cover versions"],
+    [2007, "hand built by robots album"],
+    [2007, "scouting for girls debut album"],
+    [2007, "scouting for girls debut album"],
+    [2008, "scouting for girls debut album", "2007 album"],
+    [2007, "scouting for girls debut album"],
+    [2008, "scouting for girls debut album", "2007 album"],
+    [2010, "everybody wants to be on tv album", "2010 single"],
+    [2007, "the cool album", "matthew santos collaboration"],
+    [2008, "a kid named cudi mixtape", "2009 man on the moon album"],
+    [2008, "808s and heartbreak album"],
+    [2007, "graduation album", "daft punk sample", "sampling"],
+    [2005, "late registration album", "ray charles sample", "sampling"],
+    [2007, "graduation album", "t pain collaboration"],
+    [2006, "sams town album", "2007 single"]
 ];
 
-function makeAnswers(
-    correctAnswer,
-    index
-) {
-    const otherArtists =
-        artists.filter(
-            artist =>
-                artist !== correctAnswer
-        );
+const artists = [
+    ...new Set(songs.map(song => song[1]))
+];
 
+function makeAnswers(correctAnswer, index) {
+    const otherArtists = artists.filter(artist => artist !== correctAnswer);
     const answers = [
         correctAnswer,
-        otherArtists[
-            index %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 11) %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 23) %
-            otherArtists.length
-        ]
+        otherArtists[index % otherArtists.length],
+        otherArtists[(index + 11) % otherArtists.length],
+        otherArtists[(index + 23) % otherArtists.length]
     ];
-
-    const shift =
-        index % answers.length;
-
+    const shift = index % answers.length;
     return [
         ...answers.slice(shift),
         ...answers.slice(0, shift)
     ];
 }
 
-const questions =
-    songs.map(
-        (song, index) => {
-            const title =
-                song[0];
+function makeTags(title, artist, index) {
+    const [year, ...releaseTags] = recordingInfo[index];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    return [...new Set([
+        "music", "songs", "recordings", "artist identification",
+        decade, `${decade} music`, `${year} releases`,
+        title.toLowerCase(), artist.toLowerCase(),
+        ...performerTags[artist], ...releaseTags
+    ])];
+}
 
-            const artist =
-                song[1];
+const questions = songs.map(([title, artist], index) => {
+    const number = 7667 + index;
+    return {
+        id: `music_${String(number).padStart(4, '0')}`,
+        category: 'Music',
+        question: number === 7732
+            ? "Which singer released the album 'Second First Impression'?"
+            : `Which artist recorded ${title}?`,
+        answers: makeAnswers(artist, index),
+        correctAnswer: artist,
+        difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+        tags: number === 7732
+            ? [...new Set([
+                "music", "albums", "album identification", "2000s",
+                "2000s music", "2004 releases", "second first impression",
+                "daniel bedingfield", ...performerTags[artist],
+                "second studio album"
+            ])]
+            : makeTags(title, artist, index),
+        dailyEligible: true
+    };
+});
 
-            const number =
-                7667 + index;
-
-            return {
-                id:
-                    `music_${String(number).padStart(4, '0')}`,
-
-                category:
-                    'Music',
-
-                question:
-                    `Which artist recorded ${title}?`,
-
-                answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
-
-                correctAnswer:
-                    artist,
-
-                difficulty:
-                    index % 3 === 0
-                        ? 'Easy'
-                        : 'Medium',
-
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
-
-                dailyEligible:
-                    true
-            };
-        }
-    );
-
-module.exports =
-    questions;
+module.exports = questions;
