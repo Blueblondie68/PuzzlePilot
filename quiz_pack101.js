@@ -1,8 +1,10 @@
 // quiz_pack101.js
-// PuzzlePilot Big Quiz - Pack 101
-// Music - 2000s
-// 100 questions
-// IDs: music_8167 - music_8266
+// PuzzlePilot Bigggggg Quiz - Music Pack 101
+// Tagging audit: 100 questions, music_8167 to music_8266.
+// Repaired repeated distractors from the original answer generator.
+// One unverified recording replaced with verified album trivia.
+// Bloc Party's "Sunday" clarified to distinguish it from The View's song.
+// The Futureheads' 2010 "Heartbeat Song" tagged to its correct decade.
 
 const songs = [
     ["Hummer", "Foals"],
@@ -91,7 +93,7 @@ const songs = [
     ["Acid Jazz Singer", "The Fratellis"],
     ["Doginabag", "The Fratellis"],
     ["Vince the Loveable Stoner", "The Fratellis"],
-    ["Creepin Up the Backstairs", "The Fratellis"],
+    ["Creepin' Up the Backstairs", "The Fratellis"],
     ["For the Girl", "The Fratellis"],
     ["Got Ma Nuts from a Hippy", "The Fratellis"],
 
@@ -119,95 +121,191 @@ const songs = [
     ["22", "The Rifles"]
 ];
 
-const artists = [
-    ...new Set(
-        songs.map(
-            song => song[1]
-        )
-    )
+const performerTags = {
+    "Foals": ["british", "english", "indie rock", "math rock", "dance punk", "bands", "oxford", "yannis philippakis"],
+    "The Wombats": ["british", "english", "indie rock", "indie pop", "bands", "liverpool", "matthew murphy"],
+    "Klaxons": ["british", "english", "new rave", "indie rock", "dance punk", "bands", "jamie reynolds"],
+    "Peter Bjorn and John": ["swedish", "indie pop", "indie rock", "bands", "trios", "peter moren", "bjorn yttling", "john eriksson"],
+    "Mystery Jets": ["british", "english", "indie rock", "psychedelic pop", "bands", "blaine harrison", "eel pie island"],
+    "The Delays": ["british", "english", "indie pop", "indie rock", "bands", "southampton", "greg gilbert"],
+    "The Futureheads": ["british", "english", "post punk revival", "indie rock", "bands", "sunderland", "barry hyde"],
+    "Bloc Party": ["british", "english", "post punk revival", "indie rock", "bands", "kele okereke"],
+    "Kaiser Chiefs": ["british", "english", "indie rock", "britpop", "bands", "leeds", "ricky wilson"],
+    "The Fratellis": ["british", "scottish", "indie rock", "garage rock revival", "bands", "glasgow", "jon fratelli"],
+    "The Automatic": ["british", "welsh", "indie rock", "alternative rock", "bands", "robin hawkins"],
+    "The Subways": ["british", "english", "indie rock", "garage rock revival", "bands", "billy lunn", "charlotte cooper"],
+    "The Rifles": ["british", "english", "indie rock", "mod revival", "bands", "london", "joel stoker"]
+};
+
+// Album/release details in the same sequence as the 100 recordings above.
+const recordingInfo = [
+    [2007, "hummer single", "non album single"],
+    [2008, "antidotes album"],
+    [2008, "antidotes album"],
+    [2008, "antidotes album"],
+    [2008, "antidotes album"],
+    [2008, "antidotes album"],
+    [2008, "antidotes album"],
+    [2007, "a guide to love loss and desperation album"],
+    [2007, "a guide to love loss and desperation album"],
+    [2007, "a guide to love loss and desperation album"],
+    [2007, "a guide to love loss and desperation album"],
+    [2007, "a guide to love loss and desperation album"],
+    [2007, "a guide to love loss and desperation album"],
+    [2007, "a guide to love loss and desperation album"],
+    [2007, "myths of the near future album"],
+    [2007, "myths of the near future album"],
+    [2007, "myths of the near future album"],
+    [2007, "myths of the near future album"],
+    [2007, "myths of the near future album"],
+    [2007, "myths of the near future album"],
+    [2007, "myths of the near future album"],
+    [2006, "writers block album"],
+    [2006, "writers block album"],
+    [2006, "writers block album"],
+    [2006, "writers block album"],
+    [2006, "writers block album"],
+    [2006, "writers block album"],
+    [2006, "writers block album"],
+    [2006, "writers block album"],
+    [2009, "living thing album"],
+    [2005, "zoo time single", "2006 making dens album"],
+    [2005, "making dens album", "2006 album"],
+    [2005, "making dens album", "2006 album", "2006 single reissue"],
+    [2008, "twenty one album"],
+    [2003, "faded seaside glamour album", "2004 album"],
+    [2004, "lost in a melody wanderlust single", "non album single"],
+    [2008, "everythings the rush album"],
+    [2006, "you see colours album"],
+    [2008, "this is not the world album"],
+    [2005, "area ep"],
+    [2006, "news and tributes album"],
+    [2006, "news and tributes album"],
+    [2008, "this is not the world album"],
+    [2008, "this is not the world album"],
+    [2010, "the chaos album", "2010 single"],
+    [2004, "the futureheads debut album"],
+    [2005, "silent alarm album"],
+    [2005, "silent alarm album"],
+    [2004, "silent alarm album", "2005 album"],
+    [2005, "silent alarm album"],
+    [2007, "a weekend in the city album"],
+    [2007, "a weekend in the city album"],
+    [2007, "a weekend in the city album"],
+    [2007, "a weekend in the city album"],
+    [2007, "a weekend in the city album"],
+    [2007, "a weekend in the city album"],
+    [2007, "a weekend in the city album"],
+    [2007, "yours truly angry mob album"],
+    [2008, "off with their heads album"],
+    [2008, "off with their heads album"],
+    [2007, "yours truly angry mob album"],
+    [2007, "yours truly angry mob album"],
+    [2007, "yours truly angry mob album"],
+    [2005, "employment album"],
+    [2005, "employment album"],
+    [2006, "costello music album"],
+    [2006, "costello music album"],
+    [2006, "costello music album"],
+    [2006, "costello music album"],
+    [2008, "here we stand album"],
+    [2008, "here we stand album"],
+    [2008, "here we stand album"],
+    [2008, "here we stand album"],
+    [2008, "here we stand album"],
+    [2006, "costello music album"],
+    [2006, "costello music album"],
+    [2006, "costello music album"],
+    [2006, "costello music album"],
+    [2006, "costello music album"],
+    [2006, "not accepted anywhere album"],
+    [2006, "not accepted anywhere album"],
+    [2006, "not accepted anywhere album"],
+    [2006, "not accepted anywhere album"],
+    [2008, "this is a fix album"],
+    [2008, "this is a fix album"],
+    [2008, "this is a fix album"],
+    [2008, "this is a fix album"],
+    [2008, "this is a fix album"],
+    [2008, "this is a fix album"],
+    [2005, "young for eternity album"],
+    [2005, "young for eternity album"],
+    [2005, "young for eternity album"],
+    [2005, "young for eternity album"],
+    [2005, "young for eternity album"],
+    [2008, "all or nothing album"],
+    [2008, "all or nothing album"],
+    [2008, "all or nothing album"],
+    [2008, "all or nothing album"],
+    [2008, "all or nothing album"],
+    [2006, "no love lost album", "debut albums"]
 ];
 
-function makeAnswers(
-    correctAnswer,
-    index
-) {
-    const otherArtists =
-        artists.filter(
-            artist =>
-                artist !== correctAnswer
-        );
+// Preserve original answer-pool and answer-position rotation. Where two
+// distractors collide, replace only the repeated option with an unused act.
+const artists = [...new Set(songs.map(song => song[1]))];
 
+function makeAnswers(correctAnswer, index) {
+    const otherArtists = artists.filter(artist => artist !== correctAnswer);
     const answers = [
         correctAnswer,
-        otherArtists[
-            index %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 11) %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 23) %
-            otherArtists.length
-        ]
+        otherArtists[index % otherArtists.length],
+        otherArtists[(index + 11) % otherArtists.length],
+        otherArtists[(index + 23) % otherArtists.length]
     ];
 
-    const shift =
-        index % answers.length;
+    for (let slot = 1; slot < answers.length; slot++) {
+        if (answers.indexOf(answers[slot]) !== slot) {
+            for (let offset = 0; offset < otherArtists.length; offset++) {
+                const candidate = otherArtists[(index + 5 + offset) % otherArtists.length];
+                if (!answers.includes(candidate)) {
+                    answers[slot] = candidate;
+                    break;
+                }
+            }
+        }
+    }
 
-    return [
-        ...answers.slice(shift),
-        ...answers.slice(0, shift)
-    ];
+    const shift = index % answers.length;
+    return [...answers.slice(shift), ...answers.slice(0, shift)];
 }
 
-const questions =
-    songs.map(
-        (song, index) => {
-            const title =
-                song[0];
+const specialQuestions = {
+    8218: "Which band recorded 'Sunday' for the album 'A Weekend in the City'?",
+    8266: "Which band released the debut album 'No Love Lost'?"
+};
 
-            const artist =
-                song[1];
+function makeTags(title, artist, index, number) {
+    const [year, ...recordingTags] = recordingInfo[index];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    const base = number === 8266
+        ? ["music", "albums", "album identification", "debut albums"]
+        : ["music", "songs", "recordings", "artist identification", title.toLowerCase()];
 
-            const number =
-                8167 + index;
+    return [...new Set([
+        ...base,
+        decade,
+        `${decade} music`,
+        `${year} releases`,
+        artist.toLowerCase(),
+        ...performerTags[artist],
+        ...recordingTags
+    ])];
+}
 
-            return {
-                id:
-                    `music_${String(number).padStart(4, '0')}`,
+const questions = songs.map(([title, artist], index) => {
+    const number = 8167 + index;
 
-                category:
-                    'Music',
+    return {
+        id: `music_${String(number).padStart(4, '0')}`,
+        category: 'Music',
+        question: specialQuestions[number] || `Which artist recorded ${title}?`,
+        answers: makeAnswers(artist, index),
+        correctAnswer: artist,
+        difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+        tags: makeTags(title, artist, index, number),
+        dailyEligible: true
+    };
+});
 
-                question:
-                    `Which artist recorded ${title}?`,
-
-                answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
-
-                correctAnswer:
-                    artist,
-
-                difficulty:
-                    index % 3 === 0
-                        ? 'Easy'
-                        : 'Medium',
-
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
-
-                dailyEligible:
-                    true
-            };
-        }
-    );
-
-module.exports =
-    questions;
+module.exports = questions;
