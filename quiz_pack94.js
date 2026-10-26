@@ -1,8 +1,8 @@
 // quiz_pack94.js
-// PuzzlePilot Big Quiz - Pack 94
-// Music - 2000s
-// 100 questions
-// IDs: music_7467 - music_7566
+// PuzzlePilot Bigggggg Quiz - Music Pack 94
+// Tagging audit: 100 questions, music_7467 to music_7566.
+// Original questions, answers, difficulty and Daily Quiz eligibility preserved.
+// One song is from 2010 and is tagged accordingly.
 
 const songs = [
     ["Run", "Snow Patrol"],
@@ -109,95 +109,217 @@ const songs = [
     ["I Write Sins Not Tragedies", "Panic at the Disco"]
 ];
 
+// Shared performer metadata. Applied to each question without changing its answer.
+const performerTags = {
+    "Snow Patrol": ["british", "scottish", "northern irish", "alternative rock", "indie rock", "bands", "gary lightbody"],
+    "Razorlight": ["british", "english", "indie rock", "post punk revival", "bands", "johnny borrell"],
+    "Kaiser Chiefs": ["british", "english", "indie rock", "bands", "ricky wilson"],
+    "Maxïmo Park": ["british", "english", "indie rock", "post punk revival", "bands", "paul smith", "maximo park"],
+    "Editors": ["british", "english", "post punk revival", "indie rock", "bands", "tom smith"],
+    "The Pigeon Detectives": ["british", "english", "indie rock", "bands", "leeds"],
+    "Kate Nash": ["british", "english", "indie pop", "female singers", "singer songwriters", "solo artists"],
+    "Corinne Bailey Rae": ["british", "english", "soul", "neo soul", "r and b", "female singers", "singer songwriters", "solo artists"],
+    "Joss Stone": ["british", "english", "soul", "r and b", "female singers", "solo artists"],
+    "JoJo": ["american", "pop", "r and b", "female singers", "solo artists", "jojo levesque"],
+    "Vanessa Carlton": ["american", "piano pop", "pop rock", "female singers", "singer songwriters", "solo artists"],
+    "Michelle Branch": ["american", "pop rock", "female singers", "singer songwriters", "solo artists"],
+    "Ashlee Simpson": ["american", "pop rock", "female singers", "solo artists"],
+    "Jessica Simpson": ["american", "pop", "r and b", "female singers", "solo artists"],
+    "Nelly feat. Kelly Rowland": ["american", "hip hop", "r and b", "collaborations", "duets", "nelly", "kelly rowland", "rappers", "female singers"],
+    "Nelly": ["american", "hip hop", "pop rap", "rappers", "solo artists"],
+    "Usher feat. Lil Jon and Ludacris": ["american", "r and b", "crunk", "hip hop", "collaborations", "usher", "lil jon", "ludacris"],
+    "Usher": ["american", "r and b", "pop", "male singers", "solo artists"],
+    "Mario": ["american", "r and b", "male singers", "solo artists", "mario barrett"],
+    "Amerie": ["american", "r and b", "funk", "female singers", "solo artists", "amerie rogers"],
+    "Mýa": ["american", "r and b", "pop", "female singers", "solo artists", "mya", "mya harrison"],
+    "Toni Braxton": ["american", "r and b", "soul", "female singers", "solo artists"],
+    "Natasha Bedingfield": ["british", "english", "pop", "pop rock", "female singers", "solo artists"],
+    "Jamelia": ["british", "english", "r and b", "pop", "female singers", "solo artists"],
+    "Emma Bunton": ["british", "english", "pop", "dance pop", "female singers", "solo artists", "spice girls", "baby spice"],
+    "Victoria Beckham": ["british", "english", "pop", "dance pop", "female singers", "solo artists", "spice girls", "posh spice"],
+    "Geri Halliwell": ["british", "english", "pop", "dance pop", "female singers", "solo artists", "spice girls", "ginger spice"],
+    "Lumidee": ["american", "r and b", "dancehall", "female singers", "solo artists"],
+    "Christina Milian": ["american", "r and b", "pop", "female singers", "solo artists"],
+    "Cassie": ["american", "r and b", "pop", "female singers", "solo artists", "cassie ventura"],
+    "Fantasia": ["american", "r and b", "soul", "female singers", "solo artists", "fantasia barrino"],
+    "Jordin Sparks feat. Chris Brown": ["american", "pop", "r and b", "duets", "collaborations", "jordin sparks", "chris brown"],
+    "Jordin Sparks": ["american", "pop", "r and b", "female singers", "solo artists"],
+    "Leona Lewis": ["british", "english", "pop", "r and b", "soul", "female singers", "solo artists"],
+    "Diana Vickers": ["british", "english", "pop", "female singers", "solo artists", "the x factor"],
+    "Cheryl Cole": ["british", "english", "pop", "dance pop", "female singers", "solo artists", "girls aloud", "cheryl"],
+    "Cheryl Cole feat. will.i.am": ["british", "american", "pop", "dance pop", "collaborations", "cheryl cole", "will.i.am", "girls aloud"],
+    "Sugababes": ["british", "english", "pop", "r and b", "girl groups", "female vocal groups"],
+    "Daniel Bedingfield": ["british", "new zealand", "pop", "r and b", "uk garage", "male singers", "solo artists"],
+    "Daniel Powter": ["canadian", "pop rock", "piano pop", "male singers", "singer songwriters", "solo artists"],
+    "James Blunt": ["british", "english", "pop rock", "soft rock", "male singers", "singer songwriters", "solo artists"],
+    "Fall Out Boy": ["american", "pop punk", "emo pop", "alternative rock", "bands", "patrick stump", "pete wentz"],
+    "Paramore": ["american", "pop punk", "alternative rock", "emo", "bands", "hayley williams"],
+    "Jimmy Eat World": ["american", "alternative rock", "emo", "pop rock", "bands"],
+    "The All-American Rejects": ["american", "pop punk", "alternative rock", "bands", "tyson ritter"],
+    "Sum 41": ["canadian", "pop punk", "punk rock", "bands", "deryck whibley"],
+    "Good Charlotte": ["american", "pop punk", "bands", "joel madden", "benji madden"],
+    "We the Kings": ["american", "pop punk", "pop rock", "bands"],
+    "Yellowcard": ["american", "pop punk", "alternative rock", "bands", "violin"],
+    "The Red Jumpsuit Apparatus": ["american", "emo", "post hardcore", "alternative rock", "bands"],
+    "My Chemical Romance": ["american", "emo", "alternative rock", "bands", "gerard way"],
+    "Panic at the Disco": ["american", "emo pop", "pop rock", "bands", "panic! at the disco", "brendon urie"]
+};
+
+// Release years refer to the named artist's recording, usually its first
+// album appearance or original single release. Later singles are marked.
+// One question (Diana Vickers) is from 2010 and must NOT be tagged 2000s.
+const recordingInfo = [
+    [2003, "final straw album", "2004 single"],
+    [2003, "final straw album", "2004 single"],
+    [2006, "eyes open album", "2007 single"],
+    [2006, "eyes open album"],
+    [2005, "up all night album reissue"],
+    [2006, "razorlight album"],
+    [2008, "slipway fires album"],
+    [2004, "employment album", "2005 reissue"],
+    [2005, "employment album"],
+    [2007, "yours truly angry mob album"],
+    [2007, "yours truly angry mob album"],
+    [2005, "a certain trigger album"],
+    [2007, "our earthly pleasures album"],
+    [2007, "our earthly pleasures album"],
+    [2005, "the back room album"],
+    [2005, "the back room album"],
+    [2007, "an end has a start album"],
+    [2007, "an end has a start album"],
+    [2007, "wait for me album"],
+    [2007, "wait for me album"],
+    [2007, "made of bricks album"],
+    [2007, "made of bricks album"],
+    [2006, "corinne bailey rae album"],
+    [2005, "corinne bailey rae album", "2006 album"],
+    [2006, "corinne bailey rae album"],
+    [2004, "mind body and soul album"],
+    [2004, "mind body and soul album"],
+    [2004, "jojo debut album"],
+    [2006, "the high road album"],
+    [2002, "be not nobody album"],
+    [2001, "the spirit room album"],
+    [2003, "hotel paper album"],
+    [2004, "autobiography album"],
+    [2003, "in this skin album"],
+    [2002, "nellyville album", "kelly rowland collaboration"],
+    [2002, "nellyville album"],
+    [2000, "country grammar album", "2001 single", "city spud collaboration"],
+    [2004, "confessions album", "lil jon collaboration", "ludacris collaboration"],
+    [2004, "confessions album"],
+    [2004, "confessions album", "2005 single"],
+    [2004, "turning point album", "ne yo songwriting"],
+    [2005, "touch album", "go go influence"],
+    [2000, "fear of flying album", "case of the ex whatcha gonna do"],
+    [2000, "the heat album"],
+    [2004, "unwritten album"],
+    [2004, "unwritten album", "2005 single"],
+    [2003, "thank you album"],
+    [2003, "thank you album", "2004 single"],
+    [2004, "thank you album reissue", "chris martin co writer", "coldplay"],
+    [2006, "walk with me album"],
+    [2003, "free me album", "2004 album"],
+    [2003, "free me album", "2004 album"],
+    [2001, "a girl like me album"],
+    [2001, "victoria beckham album"],
+    [2001, "scream if you wanna go faster album", "the weather girls cover", "cover versions", "bridget jones diary soundtrack", "film soundtracks"],
+    [2004, "passion album", "2005 album"],
+    [2003, "almost famous album"],
+    [2004, "its about time album"],
+    [2001, "christina milian album"],
+    [2006, "cassie album"],
+    [2006, "fantasia album", "2007 single"],
+    [2007, "jordin sparks album", "2008 single", "chris brown duet"],
+    [2007, "jordin sparks album"],
+    [2007, "spirit album", "2008 single"],
+    [2008, "spirit album deluxe edition"],
+    [2010, "songs from the tainted cherry tree album", "2010 single", "2010s"],
+    [2009, "3 words album"],
+    [2009, "3 words album", "will.i.am collaboration"],
+    [2003, "three album"],
+    [2002, "angels with dirty faces album", "adina howard freak like me cover", "gary numan are friends electric sample", "cover versions", "sampling"],
+    [2002, "gotta get thru this album", "2003 single"],
+    [2001, "gotta get thru this album", "2002 album", "uk garage"],
+    [2002, "gotta get thru this album"],
+    [2005, "daniel powter album"],
+    [2004, "back to bedlam album", "2005 single"],
+    [2004, "back to bedlam album", "2005 single"],
+    [2007, "all the lost souls album"],
+    [2006, "infinity on high album", "2007 album"],
+    [2005, "from under the cork tree album"],
+    [2005, "from under the cork tree album"],
+    [2007, "riot album"],
+    [2007, "riot album"],
+    [2008, "twilight soundtrack", "film soundtracks"],
+    [2001, "bleed american album"],
+    [2005, "move along album", "2006 single"],
+    [2005, "move along album"],
+    [2001, "all killer no filler album"],
+    [2001, "all killer no filler album"],
+    [2002, "does this look infected album"],
+    [2002, "the young and the hopeless album", "2003 single"],
+    [2002, "the young and the hopeless album", "2003 single"],
+    [2004, "the chronicles of life and death album"],
+    [2007, "we the kings debut album"],
+    [2003, "ocean avenue album", "2004 single"],
+    [2006, "dont you fake it album"],
+    [2006, "the black parade album"],
+    [2006, "the black parade album", "2007 single"],
+    [2006, "the black parade album", "2007 single"],
+    [2004, "three cheers for sweet revenge album"],
+    [2005, "a fever you cant sweat out album", "2006 single"]
+];
+
 const artists = [
     ...new Set(
-        songs.map(
-            song => song[1]
-        )
+        songs.map(song => song[1])
     )
 ];
 
-function makeAnswers(
-    correctAnswer,
-    index
-) {
-    const otherArtists =
-        artists.filter(
-            artist =>
-                artist !== correctAnswer
-        );
+function makeAnswers(correctAnswer, index) {
+    const otherArtists = artists.filter(artist => artist !== correctAnswer);
 
     const answers = [
         correctAnswer,
-        otherArtists[
-            index %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 11) %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 23) %
-            otherArtists.length
-        ]
+        otherArtists[index % otherArtists.length],
+        otherArtists[(index + 11) % otherArtists.length],
+        otherArtists[(index + 23) % otherArtists.length]
     ];
 
-    const shift =
-        index % answers.length;
-
+    const shift = index % answers.length;
     return [
         ...answers.slice(shift),
         ...answers.slice(0, shift)
     ];
 }
 
-const questions =
-    songs.map(
-        (song, index) => {
-            const title =
-                song[0];
+function makeTags(title, artist, index) {
+    const [year, ...releaseTags] = recordingInfo[index];
+    const decade = `${Math.floor(year / 10) * 10}s`;
 
-            const artist =
-                song[1];
+    return [...new Set([
+        "music", "songs", "recordings", "artist identification",
+        decade, `${decade} music`, `${year} releases`,
+        title.toLowerCase(), artist.toLowerCase(),
+        ...performerTags[artist], ...releaseTags
+    ])];
+}
 
-            const number =
-                7467 + index;
+const questions = songs.map((song, index) => {
+    const [title, artist] = song;
+    const number = 7467 + index;
 
-            return {
-                id:
-                    `music_${String(number).padStart(4, '0')}`,
+    return {
+        id: `music_${String(number).padStart(4, '0')}`,
+        category: 'Music',
+        question: `Which artist recorded ${title}?`,
+        answers: makeAnswers(artist, index),
+        correctAnswer: artist,
+        difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+        tags: makeTags(title, artist, index),
+        dailyEligible: true
+    };
+});
 
-                category:
-                    'Music',
-
-                question:
-                    `Which artist recorded ${title}?`,
-
-                answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
-
-                correctAnswer:
-                    artist,
-
-                difficulty:
-                    index % 3 === 0
-                        ? 'Easy'
-                        : 'Medium',
-
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
-
-                dailyEligible:
-                    true
-            };
-        }
-    );
-
-module.exports =
-    questions;
+module.exports = questions;
