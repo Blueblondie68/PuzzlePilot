@@ -1,8 +1,9 @@
-// quiz_pack104.js
+ // quiz_pack104.js
 // PuzzlePilot Big Quiz - Pack 104
-// Music - 2000s
-// 100 questions
-// IDs: music_8467 - music_8566
+// Music - mainly 2000s, with one 2010 release
+// 100 questions; IDs music_8467 - music_8566
+// Full artist, decade, genre, song type and specialist tags.
+// Original questions and answers retained except genuine credit ambiguity.
 
 const songs = [
     ["Cish Cash", "Basement Jaxx"],
@@ -120,95 +121,123 @@ const songs = [
     ["Muscle Cars", "Mylo"]
 ];
 
+// Artist metadata supports decade, regional and specialist music quizzes.
+// Each question receives its own expanded tags when the pack loads.
+const artistTags = {
+    'Basement Jaxx': ['Basement Jaxx', 'UK music', 'house music', 'dance music', 'electronic music'],
+    'The Knife': ['The Knife', 'Swedish music', 'electropop', 'synthpop', 'electronic music'],
+    'Jose Gonzalez': ['Jose Gonzalez', 'Swedish music', 'indie folk', 'acoustic music', 'singer-songwriters'],
+    'Hot Chip': ['Hot Chip', 'UK music', 'electropop', 'indie dance', 'electronic music'],
+    'CSS': ['CSS', 'Brazilian music', 'dance-punk', 'electroclash', 'indie rock'],
+    'Justice': ['Justice', 'French music', 'French house', 'electro house', 'electronic music'],
+    'Calvin Harris': ['Calvin Harris', 'Scottish music', 'UK music', 'electropop', 'house music', 'dance music'],
+    'The Chemical Brothers': ['The Chemical Brothers', 'UK music', 'big beat', 'breakbeat', 'electronic music'],
+    'The Prodigy': ['The Prodigy', 'UK music', 'big beat', 'breakbeat', 'electronic music'],
+    'Eric Prydz': ['Eric Prydz', 'Swedish music', 'progressive house', 'house music', 'DJs and producers'],
+    'Ida Corr vs Fedde Le Grand': ['Ida Corr', 'Fedde Le Grand', 'Danish music', 'Dutch music', 'house music', 'collaborations'],
+    'Camille Jones vs Fedde Le Grand': ['Camille Jones', 'Fedde Le Grand', 'Danish music', 'Dutch music', 'house music', 'collaborations', 'remixes'],
+    'Fedde Le Grand': ['Fedde Le Grand', 'Dutch music', 'house music', 'dance music', 'DJs and producers'],
+    'Alex Gaudino feat. Shena': ['Alex Gaudino', 'Shena', 'Italian music', 'UK music', 'house music', 'collaborations'],
+    'Alex Gaudino': ['Alex Gaudino', 'Italian music', 'house music', 'dance music', 'DJs and producers'],
+    'Mylo vs Miami Sound Machine': ['Mylo', 'Miami Sound Machine', 'Scottish music', 'US music', 'house music', 'mashups', 'collaborations'],
+    'Mylo': ['Mylo', 'Scottish music', 'house music', 'electronic music', 'DJs and producers']
+};
+
+// More precise wording is required in three places:
+// - Both The Knife and Jose Gonzalez recorded Heartbeats, and
+//   The Knife occurs among the Gonzalez question's answers.
+// - Woz Not Woz was credited to Eric Prydz AND Steve Angello.
+// - 3 Minutes to Explain was credited to Fedde Le Grand AND Funkerman.
+// All three keep their original correct answers and answer choices.
+const questionCorrections = {
+    22: "Which singer recorded an acoustic cover of The Knife's Heartbeats?",
+    87: 'Who collaborated with Steve Angello on Woz Not Woz?',
+    92: 'Which DJ collaborated with Funkerman on 3 Minutes to Explain?'
+};
+
 const artists = [
     ...new Set(
-        songs.map(
-            song => song[1]
-        )
+        songs.map(song => song[1])
     )
 ];
 
-function makeAnswers(
-    correctAnswer,
-    index
-) {
-    const otherArtists =
-        artists.filter(
-            artist =>
-                artist !== correctAnswer
-        );
+function makeAnswers(correctAnswer, index) {
+    const otherArtists = artists.filter(
+        artist => artist !== correctAnswer
+    );
 
     const answers = [
         correctAnswer,
-        otherArtists[
-            index %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 11) %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 23) %
-            otherArtists.length
-        ]
+        otherArtists[index % otherArtists.length],
+        otherArtists[(index + 11) % otherArtists.length],
+        otherArtists[(index + 23) % otherArtists.length]
     ];
 
-    const shift =
-        index % answers.length;
-
+    const shift = index % answers.length;
     return [
         ...answers.slice(shift),
         ...answers.slice(0, shift)
     ];
 }
 
-const questions =
-    songs.map(
-        (song, index) => {
-            const title =
-                song[0];
+function makeTags(title, artist, index) {
+    // Alex Gaudino's I'm in Love (I Wanna Do It) was released in 2010.
+    const decade = artist === 'Alex Gaudino' &&
+        title === "I'm in Love (I Wanna Do It)"
+        ? '2010s'
+        : '2000s';
 
-            const artist =
-                song[1];
+    const tags = [
+        decade,
+        'songs',
+        'artist identification',
+        'recordings',
+        ...artistTags[artist]
+    ];
 
-            const number =
-                8467 + index;
+    // These were cover versions of songs originally recorded
+    // by The Knife, Kylie Minogue and Massive Attack respectively.
+    if (artist === 'Jose Gonzalez' &&
+        ['Heartbeats', 'Hand on Your Heart', 'Teardrop'].includes(title)) {
+        tags.push('cover versions', 'acoustic covers');
+    }
 
-            return {
-                id:
-                    `music_${String(number).padStart(4, '0')}`,
+    if (artist === 'The Knife' && title === 'Heartbeats') {
+        tags.push('original recordings');
+    }
 
-                category:
-                    'Music',
+    if (artist === 'Basement Jaxx' && title === 'Bingo Bango') {
+        // From the 1999 album Remedy, issued as a single in 2000.
+        tags.push('2000 singles');
+    }
 
-                question:
-                    `Which artist recorded ${title}?`,
+    if (index === 87) {
+        tags.push('Steve Angello', 'collaborations', 'DJ partnerships');
+    }
 
-                answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
+    if (index === 92) {
+        tags.push('Funkerman', 'collaborations', 'DJ partnerships');
+    }
 
-                correctAnswer:
-                    artist,
+    return [...new Set(tags)];
+}
 
-                difficulty:
-                    index % 3 === 0
-                        ? 'Easy'
-                        : 'Medium',
+const questions = songs.map((song, index) => {
+    const title = song[0];
+    const artist = song[1];
+    const number = 8467 + index;
 
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
+    return {
+        id: `music_${String(number).padStart(4, '0')}`,
+        category: 'Music',
+        question: questionCorrections[index] ||
+            `Which artist recorded ${title}?`,
+        answers: makeAnswers(artist, index),
+        correctAnswer: artist,
+        difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+        tags: makeTags(title, artist, index),
+        dailyEligible: true
+    };
+});
 
-                dailyEligible:
-                    true
-            };
-        }
-    );
-
-module.exports =
-    questions;
+module.exports = questions;
