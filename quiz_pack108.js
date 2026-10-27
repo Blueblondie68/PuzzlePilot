@@ -1,8 +1,8 @@
-// quiz_pack108.js
+ // quiz_pack108.js
 // PuzzlePilot Big Quiz - Pack 108
 // Music - 2000s
-// 100 questions
-// IDs: music_8867 - music_8966
+// 100 questions; IDs music_8867 - music_8966
+// Detailed decade, performer, genre and specialist music tags
 
 const songs = [
     ["Sucker Train Blues", "Velvet Revolver"],
@@ -125,95 +125,112 @@ const songs = [
     ["Love Drunk", "Boys Like Girls"]
 ];
 
+// Shared artist metadata is expanded into each generated question.
+// All original song titles, artists and distractor order are retained.
+const artistTags = {
+    'Velvet Revolver': ['Velvet Revolver', 'US music', 'hard rock', 'alternative rock', 'supergroups'],
+    'The Strokes': ['The Strokes', 'US music', 'indie rock', 'garage rock revival', 'alternative rock'],
+    'Queens of the Stone Age': ['Queens of the Stone Age', 'US music', 'alternative rock', 'stoner rock', 'desert rock'],
+    'The Dandy Warhols': ['The Dandy Warhols', 'US music', 'alternative rock', 'neo-psychedelia', 'indie rock'],
+    'Weezer': ['Weezer', 'US music', 'alternative rock', 'power pop', 'pop rock'],
+    'Jimmy Eat World': ['Jimmy Eat World', 'US music', 'alternative rock', 'emo', 'pop punk'],
+    'Good Charlotte': ['Good Charlotte', 'US music', 'pop punk', 'alternative rock', 'rock bands'],
+    'Sum 41': ['Sum 41', 'Canadian music', 'pop punk', 'punk rock', 'alternative rock'],
+    'Alien Ant Farm': ['Alien Ant Farm', 'US music', 'alternative metal', 'nu metal', 'alternative rock'],
+    'Papa Roach': ['Papa Roach', 'US music', 'nu metal', 'alternative metal', 'hard rock'],
+    'The Used': ['The Used', 'US music', 'post-hardcore', 'emo', 'alternative rock'],
+    'Taking Back Sunday': ['Taking Back Sunday', 'US music', 'emo', 'post-hardcore', 'alternative rock'],
+    'Fall Out Boy': ['Fall Out Boy', 'US music', 'pop punk', 'emo pop', 'alternative rock'],
+    'Paramore': ['Paramore', 'US music', 'pop punk', 'alternative rock', 'emo pop'],
+    'We the Kings': ['We the Kings', 'US music', 'pop punk', 'power pop', 'pop rock'],
+    'The All-American Rejects': ['The All-American Rejects', 'US music', 'pop rock', 'power pop', 'alternative rock'],
+    'Yellowcard': ['Yellowcard', 'US music', 'pop punk', 'alternative rock', 'rock bands'],
+    'Simple Plan': ['Simple Plan', 'Canadian music', 'pop punk', 'alternative rock', 'pop rock'],
+    'Boys Like Girls': ['Boys Like Girls', 'US music', 'pop rock', 'pop punk', 'emo pop']
+};
+
+// A small number of tracks qualify for additional specialist quizzes.
+// This is metadata only: the original questions and answers are unchanged.
+function makeTags(title, artist) {
+    const tags = [
+        '2000s',
+        'songs',
+        'artist identification',
+        'recordings',
+        ...artistTags[artist]
+    ];
+
+    if (artist === 'Fall Out Boy' && title === 'Beat It') {
+        tags.push('cover versions', 'Michael Jackson', 'John Mayer',
+            'featured musicians', 'guitar solos');
+    }
+
+    if (artist === 'Good Charlotte' && title === 'The River') {
+        tags.push('collaborations', 'featured musicians', 'M. Shadows',
+            'Synyster Gates', 'Avenged Sevenfold');
+    }
+
+    if (artist === 'The Dandy Warhols' && title === 'You Were the Last High') {
+        tags.push('synthpop', 'Nick Rhodes', 'producers');
+    }
+
+    if (artist === 'Jimmy Eat World' && title === 'Futures') {
+        tags.push('title tracks', 'Futures album');
+    }
+
+    if (artist === 'The Strokes' && title === 'The Modern Age') {
+        tags.push('debut EPs', 'The Modern Age EP');
+    }
+
+    if (artist === 'Good Charlotte' && title === 'Dance Floor Anthem') {
+        tags.push('alternative titles', "I Don't Want to Be in Love");
+    }
+
+    if (artist === 'Queens of the Stone Age' && title === 'Make It wit Chu') {
+        tags.push('The Desert Sessions', 're-recordings');
+    }
+
+    return [...new Set(tags)];
+}
+
 const artists = [
-    ...new Set(
-        songs.map(
-            song => song[1]
-        )
-    )
+    ...new Set(songs.map(song => song[1]))
 ];
 
-function makeAnswers(
-    correctAnswer,
-    index
-) {
-    const otherArtists =
-        artists.filter(
-            artist =>
-                artist !== correctAnswer
-        );
+function makeAnswers(correctAnswer, index) {
+    const otherArtists = artists.filter(
+        artist => artist !== correctAnswer
+    );
 
     const answers = [
         correctAnswer,
-        otherArtists[
-            index %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 11) %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 23) %
-            otherArtists.length
-        ]
+        otherArtists[index % otherArtists.length],
+        otherArtists[(index + 11) % otherArtists.length],
+        otherArtists[(index + 23) % otherArtists.length]
     ];
 
-    const shift =
-        index % answers.length;
-
+    const shift = index % answers.length;
     return [
         ...answers.slice(shift),
         ...answers.slice(0, shift)
     ];
 }
 
-const questions =
-    songs.map(
-        (song, index) => {
-            const title =
-                song[0];
+const questions = songs.map((song, index) => {
+    const title = song[0];
+    const artist = song[1];
+    const number = 8867 + index;
 
-            const artist =
-                song[1];
+    return {
+        id: `music_${String(number).padStart(4, '0')}`,
+        category: 'Music',
+        question: `Which artist recorded ${title}?`,
+        answers: makeAnswers(artist, index),
+        correctAnswer: artist,
+        difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+        tags: makeTags(title, artist),
+        dailyEligible: true
+    };
+});
 
-            const number =
-                8867 + index;
-
-            return {
-                id:
-                    `music_${String(number).padStart(4, '0')}`,
-
-                category:
-                    'Music',
-
-                question:
-                    `Which artist recorded ${title}?`,
-
-                answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
-
-                correctAnswer:
-                    artist,
-
-                difficulty:
-                    index % 3 === 0
-                        ? 'Easy'
-                        : 'Medium',
-
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
-
-                dailyEligible:
-                    true
-            };
-        }
-    );
-
-module.exports =
-    questions;
+module.exports = questions;
