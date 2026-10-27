@@ -1,4 +1,4 @@
- // bot.js
+// bot.js
 // Main PuzzlePilot hub
 // Daily menu + games + opt-in invitations
 
@@ -85,10 +85,67 @@ const rest = new REST({
 })();
 
 // ─────────────────────────────────────────────
+// SAFE DISCORD INTERACTION HANDLING
+// ─────────────────────────────────────────────
+
+// Discord requires an interaction to be acknowledged
+// promptly. If an acknowledgement fails or a game
+// handler throws, log the error without crashing the bot.
+
+async function reportInteractionError(interaction, label, error) {
+    console.error(`PuzzlePilot interaction error (${label}):`, error);
+
+    // Unknown/expired or already-acknowledged interactions
+    // cannot safely be answered a second time.
+    if (error?.code === 10062 || error?.code === 40060) {
+        return;
+    }
+
+    try {
+        if (!interaction.isRepliable()) {
+            return;
+        }
+
+        const message =
+            '⚠️ PuzzlePilot had trouble processing that action. ' +
+            'Please try again.';
+
+        if (interaction.deferred || interaction.replied) {
+            await interaction.followUp({
+                content: message,
+                flags: MessageFlags.Ephemeral
+            });
+        } else {
+            await interaction.reply({
+                content: message,
+                flags: MessageFlags.Ephemeral
+            });
+        }
+    } catch (replyError) {
+        console.error('PuzzlePilot error response failed:', replyError);
+    }
+}
+
+function onInteraction(label, handler) {
+    client.on('interactionCreate', interaction => {
+        void Promise.resolve()
+            .then(() => handler(interaction))
+            .catch(error => reportInteractionError(
+                interaction,
+                label,
+                error
+            ))
+            .catch(error => {
+                console.error('PuzzlePilot error handler failed:', error);
+            });
+    });
+}
+
+// ─────────────────────────────────────────────
 // GAMES CHANNEL ADMIN COMMAND
 // ─────────────────────────────────────────────
 
-client.on('interactionCreate', async interaction => {
+onInteraction('gameschannel', async interaction => {
     if (
         interaction.isChatInputCommand() &&
         interaction.commandName === 'gameschannel'
@@ -194,13 +251,17 @@ setInterval(checkDailyReset, 30000);
 // DAILY MENU
 // ─────────────────────────────────────────────
 
-client.on('interactionCreate', async interaction => {
+onInteraction('daily menu', async interaction => {
     if (
         !interaction.isChatInputCommand() ||
         interaction.commandName !== 'daily'
     ) {
         return;
     }
+
+    // Acknowledge before assembling the menu so Discord
+    // does not expire the command if the server is busy.
+    await interaction.deferReply();
 
     const menu = new ActionRowBuilder()
         .addComponents(
@@ -271,7 +332,7 @@ client.on('interactionCreate', async interaction => {
                 ])
         );
 
-    await interaction.reply({
+    await interaction.editReply({
         content:
             '🧩 **Welcome to PuzzlePilot!**\n\n' +
             'Choose your puzzle:',
@@ -428,7 +489,7 @@ async function startSelectedGame(
 // DAILY MENU SELECTION
 // ─────────────────────────────────────────────
 
-client.on('interactionCreate', async interaction => {
+onInteraction('daily menu choice', async interaction => {
     if (
         !interaction.isStringSelectMenu() ||
         interaction.customId !== 'daily-menu'
@@ -449,7 +510,7 @@ client.on('interactionCreate', async interaction => {
 // JOIN NOW BUTTONS
 // ─────────────────────────────────────────────
 
-client.on('interactionCreate', async interaction => {
+onInteraction('Join Now', async interaction => {
     if (!interaction.isButton()) {
         return;
     }
@@ -516,7 +577,7 @@ client.on('interactionCreate', async interaction => {
 // EXISTING CONTINUOUS START BUTTONS
 // ─────────────────────────────────────────────
 
-client.on('interactionCreate', async interaction => {
+onInteraction('continuous start buttons', async interaction => {
     if (!interaction.isButton()) {
         return;
     }
@@ -595,7 +656,7 @@ client.on('interactionCreate', async interaction => {
 // Keep all existing game buttons, select menus,
 // modals, answer handling and Play Again working.
 
-client.on('interactionCreate', async interaction => {
+onInteraction('game buttons', async interaction => {
     await crossword.handleInteraction(interaction);
     await wordladder.handleInteraction(interaction);
     await logicgrid.handleInteraction(interaction);
