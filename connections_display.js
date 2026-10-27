@@ -1,6 +1,6 @@
 // connections_display.js
 // PuzzlePilot Connections
-// Components V2 screens, balanced tiles, buttons and results
+// Components V2 screens, compact balanced tiles, buttons and results
 //
 // Display only: game rules stay in connections_game.js.
 // The main connections.js file uses these functions.
@@ -185,21 +185,23 @@ function addNotice(container, board) {
 // ACTIVE TILE BUTTONS
 // ─────────────────────────────────────────────
 
-// Discord sizes buttons from their label text. It does not
-// provide a button width/height setting, so actual squares
-// are not possible with native buttons. This uses Unicode
-// spacing to make all 16 tiles approximately the same width.
-// We calculate from ALL puzzle words so the tile width does
-// not change whenever a group is solved.
+// Discord sizes native buttons from the text on them. There
+// is no exact-width setting, so we use moderate Unicode
+// spacing for a tidy 4-column board without the excessive
+// padding that caused four buttons to wrap onto five lines.
 //
-// The word itself and the button's custom ID remain intact.
+// All words in the puzzle determine the target. Solving a
+// group therefore cannot suddenly change the tile widths.
+// An exceptionally long word stays fully readable, but it
+// does not make every other button extremely wide.
+//
+// Only the visible label is padded. The actual word and the
+// custom ID used by the game remain exactly the same.
 
-const TILE_SPACE = '\u2002'; // En space, approximately half an em.
-const TILE_EDGE = '\u200B';  // Prevents edge spacing being trimmed.
+const TILE_SPACE = '\u2002'; // En space.
+const TILE_EDGE = '\u200B';  // Preserves edge spacing.
 
 function approximateWordWidth(word) {
-    // Discord renders a proportional font. These character
-    // estimates are a practical improvement over character count.
     const narrow = { I: 0.47, J: 0.67, L: 0.82, F: 0.86,
         T: 0.90, E: 0.96, S: 0.93, R: 1.02, ' ': 0.52 };
     const wide = { M: 1.43, W: 1.48, O: 1.12, Q: 1.13,
@@ -212,17 +214,23 @@ function approximateWordWidth(word) {
 
 function getTileTargetWidth(board) {
     const allWords = Object.values(board.puzzle.groups).flat();
-    return Math.max(9, ...allWords.map(approximateWordWidth)) + 0.8;
+    const longest = Math.max(...allWords.map(approximateWordWidth));
+
+    // Cap at 10 units to keep four buttons comfortably on a
+    // row at ordinary desktop widths. Very long words are
+    // displayed in full rather than forcing huge padding.
+    return Math.min(10, Math.max(8, longest + 0.4));
 }
 
 function getBalancedTileLabel(tile, targetWidth) {
     const text = String(tile);
     const missing = Math.max(0, targetWidth - approximateWordWidth(text));
 
-    // Each en space represents roughly 0.5 width units.
-    // Keep the complete label within Discord's 80-character limit.
+    // A capital letter is considerably narrower than an em.
+    // About ONE en space per width unit is the better visual
+    // match. Two (the previous version) made the board wrap.
     const extraSpaces = Math.min(
-        Math.round(missing * 2),
+        Math.round(missing),
         Math.max(0, 78 - [...text].length)
     );
     const left = Math.floor(extraSpaces / 2);
