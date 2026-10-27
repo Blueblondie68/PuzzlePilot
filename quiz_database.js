@@ -344,6 +344,118 @@ async function saveCompletion(
 
 
 // ─────────────────────────────────────────────
+// DAILY QUIZ LEADERBOARD
+//
+// Reuses the existing quiz_completions records.
+// Every server has its own leaderboard for each UK day.
+// Highest score ranks first; equal scores are ordered
+// by earliest completion. User ID settles exact ties.
+//
+// Database functions return data only, so a future
+// Discord Activity can reuse them without modification.
+// ─────────────────────────────────────────────
+
+async function getDailyLeaderboard(
+    serverId,
+    dateKey,
+    limit = 10
+) {
+    await databaseReady;
+
+    const safeLimit = Number.isInteger(limit)
+        ? Math.max(1, Math.min(limit, 25))
+        : 10;
+
+    const result = await pool.query(
+        `
+            SELECT
+                user_id,
+                score,
+                completed_at
+            FROM quiz_completions
+            WHERE guild_id = $1
+              AND completion_date = $2
+            ORDER BY
+                score DESC,
+                completed_at ASC,
+                user_id ASC
+            LIMIT $3
+        `,
+        [
+            serverId,
+            dateKey,
+            safeLimit
+        ]
+    );
+
+    return result.rows.map(
+        (row, index) => ({
+            position: index + 1,
+            userId: row.user_id,
+            score: Number(row.score),
+            completedAt: row.completed_at
+        })
+    );
+}
+
+
+async function getDailyPlayerPosition(
+    serverId,
+    userId,
+    dateKey
+) {
+    await databaseReady;
+
+    // Rank everybody on this server before selecting
+    // the requested player. Otherwise the player's
+    // position would always appear as number one.
+
+    const result = await pool.query(
+        `
+            SELECT
+                position,
+                score,
+                completed_at
+            FROM (
+                SELECT
+                    user_id,
+                    score,
+                    completed_at,
+                    ROW_NUMBER() OVER (
+                        ORDER BY
+                            score DESC,
+                            completed_at ASC,
+                            user_id ASC
+                    ) AS position
+                FROM quiz_completions
+                WHERE guild_id = $1
+                  AND completion_date = $2
+            ) AS ranked
+            WHERE user_id = $3
+            LIMIT 1
+        `,
+        [
+            serverId,
+            dateKey,
+            userId
+        ]
+    );
+
+    if (result.rows.length === 0) {
+        return null;
+    }
+
+    const row = result.rows[0];
+
+    return {
+        position: Number(row.position),
+        score: Number(row.score),
+        completedAt: row.completed_at
+    };
+}
+
+
+// ─────────────────────────────────────────────
 // EXPORTS
 // ─────────────────────────────────────────────
 
@@ -357,5 +469,8 @@ module.exports = {
     deleteSavedDaily,
     saveDailyIds,
     hasCompletedDaily,
-    saveCompletion
+    saveCompletion,
+    getDailyLeaderboard,
+    getDailyPlayerPosition
 };
+
