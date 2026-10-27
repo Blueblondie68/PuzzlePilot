@@ -1,8 +1,8 @@
-// quiz_pack107.js
+ // quiz_pack107.js
 // PuzzlePilot Big Quiz - Pack 107
-// Music - 2000s
-// 100 questions
-// IDs: music_8767 - music_8866
+// Music - mainly 2000s, with four original 1990s recordings
+// 100 questions; IDs music_8767 - music_8866
+// Detailed performer, region, genre and specialist tags
 
 const songs = [
     ["Nine Million Bicycles", "Katie Melua"],
@@ -85,7 +85,16 @@ const songs = [
     ["Dogs", "Damien Rice"],
     ["Elephant", "Damien Rice"],
 
-    ["O", "Damien Rice"],
+    // O is a Damien Rice album, not a song. Keep this question ID,
+    // and test the album instead of an incorrectly named recording.
+    {
+        question: 'Which Damien Rice album includes Cannonball, Volcano and The Blower\'s Daughter?',
+        answers: ['O', '9', 'My Favourite Faded Fantasy', 'Live at Fingerprints: Warts and All'],
+        correctAnswer: 'O',
+        tags: ['2000s', 'albums', 'album identification', 'debut albums',
+            'Damien Rice', 'Irish music', 'indie folk', 'acoustic music',
+            'singer-songwriters']
+    },
     ["Cold Water", "Damien Rice"],
     ["Amie", "Damien Rice"],
     ["Delicate", "Damien Rice"],
@@ -125,13 +134,86 @@ const songs = [
     ["Set Me Free", "Velvet Revolver"]
 ];
 
+// These tags expand into every ordinary music question.
+// Shared tags keep this 100-question pack manageable in WordPad.
+const artistTags = {
+    'Katie Melua': ['Katie Melua', 'UK music', 'Georgian-born artists', 'jazz pop', 'blues pop', 'singer-songwriters'],
+    'Corinne Bailey Rae': ['Corinne Bailey Rae', 'UK music', 'neo soul', 'R&B', 'singer-songwriters'],
+    'Sam Sparro': ['Sam Sparro', 'Australian music', 'electropop', 'dance-pop', 'soul pop'],
+    'Estelle': ['Estelle', 'UK music', 'R&B', 'soul', 'UK hip hop', 'female vocalists'],
+    'Roll Deep': ['Roll Deep', 'UK music', 'grime', 'UK hip hop', 'music collectives'],
+    'Tinie Tempah': ['Tinie Tempah', 'UK music', 'grime', 'UK hip hop', 'rappers'],
+    'Velvet Revolver': ['Velvet Revolver', 'US music', 'hard rock', 'alternative rock', 'supergroups'],
+    'The Darkness': ['The Darkness', 'UK music', 'hard rock', 'glam rock', 'rock bands'],
+    'Wolfmother': ['Wolfmother', 'Australian music', 'hard rock', 'psychedelic rock', 'rock bands'],
+    'Jet': ['Jet', 'Australian music', 'garage rock', 'hard rock', 'rock bands'],
+    'The Hives': ['The Hives', 'Swedish music', 'garage rock', 'punk rock', 'rock bands'],
+    'Damien Rice': ['Damien Rice', 'Irish music', 'indie folk', 'acoustic music', 'singer-songwriters'],
+    'James Blunt': ['James Blunt', 'UK music', 'pop rock', 'soft rock', 'singer-songwriters'],
+    'David Gray': ['David Gray', 'UK music', 'folk rock', 'soft rock', 'singer-songwriters'],
+    'Travis': ['Travis', 'Scottish music', 'UK music', 'indie rock', 'alternative rock', 'rock bands'],
+    'Embrace': ['Embrace', 'UK music', 'alternative rock', 'post-Britpop', 'rock bands']
+};
+
+// Cover versions receive extra tags, including the original performer.
+// The player-facing question still asks who recorded THIS version.
+const coverOriginals = {
+    'Katie Melua|Crawling Up a Hill': 'John Mayall',
+    'Katie Melua|Just Like Heaven': 'The Cure',
+    'David Gray|Say Hello Wave Goodbye': 'Soft Cell'
+};
+
+// Keep all 16 artists in their original order so that song-question
+// answer choices retain their original positions and distractors.
 const artists = [
     ...new Set(
-        songs.map(
-            song => song[1]
-        )
+        songs.filter(song => Array.isArray(song)).map(song => song[1])
     )
 ];
+
+function makeTags(title, artist) {
+    // These four David Gray recordings first appeared on White Ladder
+    // in 1998, although singles and reissues continued in the 2000s.
+    const original1990s = artist === 'David Gray' &&
+        ['Please Forgive Me', "This Year's Love", 'Sail Away',
+            'Say Hello Wave Goodbye'].includes(title);
+
+    const tags = [
+        original1990s ? '1990s' : '2000s',
+        'songs',
+        'artist identification',
+        'recordings',
+        ...artistTags[artist]
+    ];
+
+    if (original1990s) {
+        tags.push('1998 recordings', 'White Ladder');
+    }
+
+    const originalArtist = coverOriginals[`${artist}|${title}`];
+    if (originalArtist) {
+        tags.push('cover versions', 'original artists', originalArtist);
+    }
+
+    if (artist === 'The Darkness' &&
+        title === "Christmas Time (Don't Let the Bells End)") {
+        tags.push('Christmas songs', 'Christmas singles', 'seasonal music');
+    }
+
+    if (artist === 'Embrace' && title === 'World at Your Feet') {
+        tags.push('football songs', '2006 World Cup', 'England football');
+    }
+
+    if (artist === 'Tinie Tempah' && title === 'Tears') {
+        tags.push('mixtape tracks', '2007 recordings');
+    }
+
+    if (artist === 'David Gray' && title === 'Sail Away') {
+        tags.push('2001 singles');
+    }
+
+    return [...new Set(tags)];
+}
 
 function makeAnswers(
     correctAnswer,
@@ -168,52 +250,30 @@ function makeAnswers(
     ];
 }
 
-const questions =
-    songs.map(
-        (song, index) => {
-            const title =
-                song[0];
+const questions = songs.map((song, index) => {
+    const isAlbumQuestion = !Array.isArray(song);
+    const title = isAlbumQuestion ? null : song[0];
+    const artist = isAlbumQuestion ? null : song[1];
+    const number = 8767 + index;
 
-            const artist =
-                song[1];
+    return {
+        id: `music_${String(number).padStart(4, '0')}`,
+        category: 'Music',
+        question: isAlbumQuestion
+            ? song.question
+            : `Which artist recorded ${title}?`,
+        answers: isAlbumQuestion
+            ? song.answers
+            : makeAnswers(artist, index),
+        correctAnswer: isAlbumQuestion
+            ? song.correctAnswer
+            : artist,
+        difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+        tags: isAlbumQuestion
+            ? song.tags
+            : makeTags(title, artist),
+        dailyEligible: true
+    };
+});
 
-            const number =
-                8767 + index;
-
-            return {
-                id:
-                    `music_${String(number).padStart(4, '0')}`,
-
-                category:
-                    'Music',
-
-                question:
-                    `Which artist recorded ${title}?`,
-
-                answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
-
-                correctAnswer:
-                    artist,
-
-                difficulty:
-                    index % 3 === 0
-                        ? 'Easy'
-                        : 'Medium',
-
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
-
-                dailyEligible:
-                    true
-            };
-        }
-    );
-
-module.exports =
-    questions;
+module.exports = questions;
