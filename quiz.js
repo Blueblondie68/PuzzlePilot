@@ -19,13 +19,20 @@
 // - Each player may complete the Daily Quiz once per server per day
 
 const {
+    SeparatorBuilder,
+    TextDisplayBuilder
+} = require('discord.js');
+
+const {
     ensureTodaysQuiz,
     shuffleArray
 } = require('./quiz_daily');
 
 const {
     hasCompletedDaily,
-    saveCompletion
+    saveCompletion,
+    getDailyLeaderboard,
+    getDailyPlayerPosition
 } = require('./quiz_database');
 
 const {
@@ -106,6 +113,36 @@ function prepareQuestion(session) {
 }
 
 // ─────────────────────────────────────────────
+// DAILY LEADERBOARD DISPLAY
+// ─────────────────────────────────────────────
+
+function formatDailyLeaderboard(entries, playerPosition, serverId) {
+    const rows = entries.map(entry =>
+        `${entry.position}. <@${entry.userId}> — **${entry.score}/10**`
+    );
+
+    const listing = rows.length > 0
+        ? rows.join('\n')
+        : 'No completed quizzes yet.';
+
+    const ownPosition = playerPosition
+        ? `\n\n**Your position:** #${playerPosition.position} ` +
+          `• **${playerPosition.score}/10**`
+        : '';
+
+    const where = String(serverId).startsWith('DM_')
+        ? 'This conversation'
+        : 'This server';
+
+    return (
+        `### 🏆 TODAY'S DAILY QUIZ LEADERBOARD\n` +
+        `${listing}${ownPosition}\n\n` +
+        `*${where} • Top 10 • Highest score first*`
+    );
+}
+
+
+// ─────────────────────────────────────────────
 // FINISH DAILY QUIZ
 // ─────────────────────────────────────────────
 
@@ -153,15 +190,51 @@ async function finishDailyQuiz(interaction, session) {
 
     sessions.delete(session.id);
 
+    // Always show the final score first. A slow or failed
+    // leaderboard query must never hide a player's result.
+    const finalContainer = buildFinalContainer(session);
+
     try {
         await interaction.editReply(
-            v2Payload(
-                buildFinalContainer(session)
-            )
+            v2Payload(finalContainer)
         );
     } catch (error) {
         console.error(
             'Quiz final score update failed:',
+            error
+        );
+        return;
+    }
+
+    try {
+        const [leaders, playerPosition] = await Promise.all([
+            getDailyLeaderboard(session.serverId, session.dateKey, 10),
+            getDailyPlayerPosition(
+                session.serverId,
+                session.userId,
+                session.dateKey
+            )
+        ]);
+
+        finalContainer
+            .addSeparatorComponents(new SeparatorBuilder())
+            .addTextDisplayComponents(
+                new TextDisplayBuilder().setContent(
+                    formatDailyLeaderboard(
+                        leaders,
+                        playerPosition,
+                        session.serverId
+                    )
+                )
+            );
+
+        await interaction.editReply(
+            v2Payload(finalContainer)
+        );
+    } catch (error) {
+        // The final score has already been shown and saved.
+        console.error(
+            'Daily Quiz leaderboard update failed:',
             error
         );
     }
