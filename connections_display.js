@@ -1,10 +1,9 @@
 // connections_display.js
 // PuzzlePilot Connections
-// Components V2 screens, tiles, buttons and results
+// Components V2 screens, balanced tiles, buttons and results
 //
 // Display only: game rules stay in connections_game.js.
-// The main connections.js file will use these functions
-// once all parts of the split are ready.
+// The main connections.js file uses these functions.
 
 const {
     ActionRowBuilder,
@@ -124,8 +123,8 @@ function makeSeparator() {
 function addHeader(container, board) {
     container.addTextDisplayComponents(
         makeText(
-            '# 🔗 PUZZLEPILOT\n' +
-            `## ${getModeName(board.mode)}`
+            '## 🔗 PUZZLEPILOT CONNECTIONS\n' +
+            `**${getModeName(board.mode)}**`
         )
     );
 
@@ -133,7 +132,7 @@ function addHeader(container, board) {
 
     container.addTextDisplayComponents(
         makeText(
-            '**Find four groups of four connected words.**\n\n' +
+            'Find four groups of four connected words.\n' +
             `**Mistakes remaining:** ${getMistakesDisplay(board.lives)}`
         )
     );
@@ -186,9 +185,57 @@ function addNotice(container, board) {
 // ACTIVE TILE BUTTONS
 // ─────────────────────────────────────────────
 
+// Discord sizes buttons from their label text. It does not
+// provide a button width/height setting, so actual squares
+// are not possible with native buttons. This uses Unicode
+// spacing to make all 16 tiles approximately the same width.
+// We calculate from ALL puzzle words so the tile width does
+// not change whenever a group is solved.
+//
+// The word itself and the button's custom ID remain intact.
+
+const TILE_SPACE = '\u2002'; // En space, approximately half an em.
+const TILE_EDGE = '\u200B';  // Prevents edge spacing being trimmed.
+
+function approximateWordWidth(word) {
+    // Discord renders a proportional font. These character
+    // estimates are a practical improvement over character count.
+    const narrow = { I: 0.47, J: 0.67, L: 0.82, F: 0.86,
+        T: 0.90, E: 0.96, S: 0.93, R: 1.02, ' ': 0.52 };
+    const wide = { M: 1.43, W: 1.48, O: 1.12, Q: 1.13,
+        G: 1.13, D: 1.12, C: 1.12, B: 1.08 };
+
+    return [...String(word).toUpperCase()].reduce((total, letter) => {
+        return total + (narrow[letter] ?? wide[letter] ?? 1);
+    }, 0);
+}
+
+function getTileTargetWidth(board) {
+    const allWords = Object.values(board.puzzle.groups).flat();
+    return Math.max(9, ...allWords.map(approximateWordWidth)) + 0.8;
+}
+
+function getBalancedTileLabel(tile, targetWidth) {
+    const text = String(tile);
+    const missing = Math.max(0, targetWidth - approximateWordWidth(text));
+
+    // Each en space represents roughly 0.5 width units.
+    // Keep the complete label within Discord's 80-character limit.
+    const extraSpaces = Math.min(
+        Math.round(missing * 2),
+        Math.max(0, 78 - [...text].length)
+    );
+    const left = Math.floor(extraSpaces / 2);
+    const right = extraSpaces - left;
+
+    return TILE_EDGE + TILE_SPACE.repeat(left) + text +
+        TILE_SPACE.repeat(right) + TILE_EDGE;
+}
+
 function buildTileRows(board) {
     const rows = [];
     const unsolvedTiles = getUnsolvedTiles(board);
+    const targetWidth = getTileTargetWidth(board);
 
     for (let i = 0; i < unsolvedTiles.length; i += 4) {
         const row = new ActionRowBuilder();
@@ -199,7 +246,7 @@ function buildTileRows(board) {
             row.addComponents(
                 new ButtonBuilder()
                     .setCustomId(`conn_tile_${tile}`)
-                    .setLabel(tile)
+                    .setLabel(getBalancedTileLabel(tile, targetWidth))
                     .setStyle(
                         isSelected
                             ? ButtonStyle.Primary
@@ -317,7 +364,7 @@ function buildWinComponents(board) {
 
     container.addTextDisplayComponents(
         makeText(
-            '# 🎉 CONNECTIONS COMPLETE!\n' +
+            '## 🎉 Connections complete!\n' +
             '**You found all four groups!**'
         )
     );
@@ -356,7 +403,7 @@ function buildGameOverComponents(board) {
 
     container.addTextDisplayComponents(
         makeText(
-            '# 💀 CONNECTIONS OVER\n' +
+            '## 💀 Connections over\n' +
             '**No mistakes remaining.**\n\n' +
             'The four groups were:'
         )
