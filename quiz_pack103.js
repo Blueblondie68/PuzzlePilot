@@ -1,7 +1,7 @@
-// quiz_pack103.js
+ // quiz_pack103.js
 // PuzzlePilot Big Quiz - Pack 103
-// Music - 2000s
-// 100 questions
+// Music - mainly 2000s, plus one 2010 release
+// 100 questions, with detailed artist, genre and topic tags
 // IDs: music_8367 - music_8466
 
 const songs = [
@@ -40,7 +40,13 @@ const songs = [
     ["Come Back Margaret", "Camera Obscura"],
     ["The Sweetest Thing", "Camera Obscura"],
 
-    ["Gerard Love", "Teenage Fanclub"],
+    // Original entry confused a band member with a song title.
+    {
+        question: 'Which Teenage Fanclub member played bass and was one of the band\'s principal songwriters?',
+        answers: ['Gerard Love', 'Norman Blake', 'Raymond McGinley', 'Paul Quinn'],
+        correctAnswer: 'Gerard Love',
+        tags: ['2000s', 'band members', 'line-up', 'bassists', 'songwriters', 'Teenage Fanclub', 'Scottish music', 'power pop']
+    },
     ["Dumb Dumb Dumb", "Teenage Fanclub"],
     ["Near You", "Teenage Fanclub"],
     ["Did I Say", "Teenage Fanclub"],
@@ -66,7 +72,14 @@ const songs = [
     ["Jenny Again", "Tunng"],
     ["It's Because... We've Got Hair", "Tunng"],
     ["Bricks", "Tunng"],
-    ["Good Arrows", "Tunng"],
+
+    // Good Arrows is an album, not a song.
+    {
+        question: 'Which Tunng album includes the tracks Take, Bricks and Bullets?',
+        answers: ['Good Arrows', 'Comments of the Inner Chorus', "Mother's Daughter and Other Songs", '...And Then We Saw Land'],
+        correctAnswer: 'Good Arrows',
+        tags: ['2000s', 'albums', 'album identification', 'Tunng', 'UK music', 'folktronica', 'indie folk']
+    },
     ["Take", "Tunng"],
     ["Soup", "Tunng"],
     ["Hustle", "Tunng"],
@@ -112,7 +125,13 @@ const songs = [
     ["Waiting for the Beat to Kick In", "Dan Le Sac vs Scroobius Pip"],
     ["Magician's Assistant", "Dan Le Sac vs Scroobius Pip"],
 
-    ["Housewives", "Basement Jaxx"],
+    // Housewives could not be verified as a Basement Jaxx track.
+    {
+        question: 'Which two musicians make up the electronic duo Basement Jaxx?',
+        answers: ['Felix Buxton and Simon Ratcliffe', 'Tom Rowlands and Ed Simons', 'Andy Cato and Tom Findlay', 'Neil Barnes and Paul Daley'],
+        correctAnswer: 'Felix Buxton and Simon Ratcliffe',
+        tags: ['2000s', 'band members', 'line-up', 'duos', 'Basement Jaxx', 'UK music', 'dance music', 'house music']
+    },
     ["Take Me Back to Your House", "Basement Jaxx"],
     ["Hush Boy", "Basement Jaxx"],
     ["U Don't Know Me", "Basement Jaxx"],
@@ -120,13 +139,47 @@ const songs = [
     ["Plug It In", "Basement Jaxx"]
 ];
 
+// Artist-specific metadata helps players choose specialised
+// quizzes without changing any question, answer or difficulty.
+const artistTags = {
+    'The Zutons': ['The Zutons', 'UK music', 'indie rock', 'rock bands'],
+    'The Holloways': ['The Holloways', 'UK music', 'indie rock', 'rock bands'],
+    'The Hoosiers': ['The Hoosiers', 'UK music', 'indie pop', 'pop rock'],
+    'The Wideboys': ['The Wideboys', 'UK music', 'UK garage', 'dance music'],
+    'Camera Obscura': ['Camera Obscura', 'Scottish music', 'indie pop', 'twee pop'],
+    'Teenage Fanclub': ['Teenage Fanclub', 'Scottish music', 'power pop', 'indie rock'],
+    'Noisettes': ['Noisettes', 'UK music', 'indie rock', 'alternative rock'],
+    'Tunng': ['Tunng', 'UK music', 'folktronica', 'indie folk'],
+    'We Are Scientists': ['We Are Scientists', 'US music', 'indie rock', 'alternative rock'],
+    'Mumm-Ra': ['Mumm-Ra', 'UK music', 'indie rock', 'rock bands'],
+    'Athlete': ['Athlete', 'UK music', 'alternative rock', 'indie rock'],
+    'Art Brut': ['Art Brut', 'UK music', 'art punk', 'indie rock'],
+    'Dan Le Sac vs Scroobius Pip': ['Dan Le Sac vs Scroobius Pip', 'UK music', 'alternative hip hop', 'electronic music'],
+    'Basement Jaxx': ['Basement Jaxx', 'UK music', 'house music', 'dance music']
+};
+
 const artists = [
     ...new Set(
-        songs.map(
-            song => song[1]
-        )
+        songs
+            .filter(song => Array.isArray(song))
+            .map(song => song[1])
     )
 ];
+
+function makeTags(title, artist) {
+    // Hustle by Tunng was released in 2010, not the 2000s.
+    const decade = artist === 'Tunng' && title === 'Hustle'
+        ? '2010s'
+        : '2000s';
+
+    return [
+        decade,
+        'songs',
+        'artist identification',
+        'recordings',
+        ...artistTags[artist]
+    ];
+}
 
 function makeAnswers(
     correctAnswer,
@@ -166,14 +219,10 @@ function makeAnswers(
 const questions =
     songs.map(
         (song, index) => {
-            const title =
-                song[0];
-
-            const artist =
-                song[1];
-
-            const number =
-                8367 + index;
+            const number = 8367 + index;
+            const isSpecialQuestion = !Array.isArray(song);
+            const title = isSpecialQuestion ? null : song[0];
+            const artist = isSpecialQuestion ? null : song[1];
 
             return {
                 id:
@@ -183,26 +232,29 @@ const questions =
                     'Music',
 
                 question:
-                    `Which artist recorded ${title}?`,
+                    isSpecialQuestion
+                        ? song.question
+                        : `Which artist recorded ${title}?`,
 
                 answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
+                    isSpecialQuestion
+                        ? song.answers
+                        : makeAnswers(artist, index),
 
                 correctAnswer:
-                    artist,
+                    isSpecialQuestion
+                        ? song.correctAnswer
+                        : artist,
 
                 difficulty:
                     index % 3 === 0
                         ? 'Easy'
                         : 'Medium',
 
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
+                tags:
+                    isSpecialQuestion
+                        ? song.tags
+                        : makeTags(title, artist),
 
                 dailyEligible:
                     true
