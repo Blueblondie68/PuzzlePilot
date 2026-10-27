@@ -1,8 +1,9 @@
-// quiz_pack112.js
+ // quiz_pack112.js
 // PuzzlePilot Big Quiz - Pack 112
 // Music - 2000s
-// 100 questions
-// IDs: music_9267 - music_9366
+// 100 questions; IDs music_9267 - music_9366
+// Expanded decade, artist, region, genre and specialist music tags
+// Fixed repeated answer choices and one duplicate song question
 
 const songs = [
     ["So Far Away", "Crossfade"],
@@ -119,7 +120,17 @@ const songs = [
     ["Fly from the Inside", "Shinedown"],
     ["Burning Bright", "Shinedown"],
     ["Heroes", "Shinedown"],
-    ["Save Me", "Shinedown"],
+
+    // This song already appears earlier in the pack. Use its ID
+    // to test band history instead of repeating the same question.
+    {
+        question: 'Who is the lead singer of Shinedown?',
+        answers: ['Brent Smith', 'Chad Kroeger', 'Sully Erna', 'Adam Gontier'],
+        correctAnswer: 'Brent Smith',
+        tags: ['2000s', 'band members', 'lead singers', 'vocalists',
+            'Brent Smith', 'Shinedown', 'US music', 'hard rock',
+            'post-grunge', 'band line-ups']
+    },
 
     ["Bother", "Stone Sour"],
     ["Inhale", "Stone Sour"],
@@ -132,95 +143,131 @@ const songs = [
     ["Unreal", "Soil"]
 ];
 
+// Artist metadata is applied to every normal song question.
+// Keeping shared tags here makes the whole pack easier to manage.
+const artistTags = {
+    'Crossfade': ['Crossfade', 'US music', 'post-grunge', 'alternative rock', 'hard rock'],
+    'Trapt': ['Trapt', 'US music', 'post-grunge', 'alternative metal', 'hard rock'],
+    'Chevelle': ['Chevelle', 'US music', 'alternative metal', 'alternative rock', 'hard rock'],
+    'Shinedown': ['Shinedown', 'US music', 'hard rock', 'post-grunge', 'alternative rock'],
+    '10 Years': ['10 Years', 'US music', 'alternative metal', 'post-grunge', 'alternative rock'],
+    'Hinder': ['Hinder', 'US music', 'post-grunge', 'hard rock', 'rock bands'],
+    'Blue October': ['Blue October', 'US music', 'alternative rock', 'pop rock', 'rock bands'],
+    'Finger Eleven': ['Finger Eleven', 'Canadian music', 'alternative rock', 'post-grunge', 'hard rock'],
+    'Static-X': ['Static-X', 'US music', 'industrial metal', 'nu metal', 'alternative metal'],
+    'Mudvayne': ['Mudvayne', 'US music', 'nu metal', 'alternative metal', 'heavy metal'],
+    'Killswitch Engage': ['Killswitch Engage', 'US music', 'metalcore', 'melodic metalcore', 'heavy metal'],
+    'Trivium': ['Trivium', 'US music', 'metalcore', 'heavy metal', 'thrash metal'],
+    'As I Lay Dying': ['As I Lay Dying', 'US music', 'metalcore', 'melodic metalcore', 'heavy metal'],
+    'In Flames': ['In Flames', 'Swedish music', 'melodic death metal', 'alternative metal', 'heavy metal'],
+    'Arch Enemy': ['Arch Enemy', 'Swedish music', 'melodic death metal', 'death metal', 'heavy metal'],
+    'Lamb of God': ['Lamb of God', 'US music', 'groove metal', 'heavy metal', 'metalcore'],
+    'Mastodon': ['Mastodon', 'US music', 'progressive metal', 'sludge metal', 'heavy metal'],
+    'Godsmack': ['Godsmack', 'US music', 'hard rock', 'alternative metal', 'nu metal'],
+    'Three Days Grace': ['Three Days Grace', 'Canadian music', 'post-grunge', 'alternative metal', 'hard rock'],
+    'Flyleaf': ['Flyleaf', 'US music', 'alternative metal', 'alternative rock', 'post-grunge'],
+    'Halestorm': ['Halestorm', 'US music', 'hard rock', 'heavy metal', 'Lzzy Hale'],
+    'Evanescence': ['Evanescence', 'US music', 'alternative metal', 'gothic metal', 'Amy Lee'],
+    'Stone Sour': ['Stone Sour', 'US music', 'hard rock', 'alternative metal', 'Corey Taylor'],
+    'Soil': ['Soil', 'US music', 'alternative metal', 'nu metal', 'hard rock']
+};
+
+// Retain the artist ordering of the original pack for its distractors.
+// The special band-member question adds no new artist to this list.
 const artists = [
     ...new Set(
-        songs.map(
-            song => song[1]
-        )
+        songs.filter(song => Array.isArray(song)).map(song => song[1])
     )
 ];
 
-function makeAnswers(
-    correctAnswer,
-    index
-) {
-    const otherArtists =
-        artists.filter(
-            artist =>
-                artist !== correctAnswer
-        );
+function makeAnswers(correctAnswer, index) {
+    const otherArtists = artists.filter(
+        artist => artist !== correctAnswer
+    );
 
+    // This pack has 24 artists and therefore 23 wrong-answer options.
+    // The former index + 23 repeated the first wrong answer in all
+    // 99 remaining song questions. +17 gives a different choice.
     const answers = [
         correctAnswer,
-        otherArtists[
-            index %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 11) %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 23) %
-            otherArtists.length
-        ]
+        otherArtists[index % otherArtists.length],
+        otherArtists[(index + 11) % otherArtists.length],
+        otherArtists[(index + 17) % otherArtists.length]
     ];
 
-    const shift =
-        index % answers.length;
-
+    const shift = index % answers.length;
     return [
         ...answers.slice(shift),
         ...answers.slice(0, shift)
     ];
 }
 
-const questions =
-    songs.map(
-        (song, index) => {
-            const title =
-                song[0];
+function makeTags(title, artist) {
+    const tags = [
+        '2000s',
+        'songs',
+        'artist identification',
+        'recordings',
+        ...artistTags[artist]
+    ];
 
-            const artist =
-                song[1];
+    if (artist === 'Shinedown' && title === 'Save Me') {
+        tags.push('Us and Them', '2005 songs');
+    }
+    if (artist === 'Shinedown' &&
+        ['Devour', 'Second Chance', 'Sound of Madness', 'If You Only Knew'].includes(title)) {
+        tags.push('The Sound of Madness album');
+    }
+    if (artist === 'Godsmack' && title === 'I Stand Alone') {
+        tags.push('film soundtracks', 'The Scorpion King');
+    }
+    if (artist === 'Killswitch Engage' && title === 'The End of Heartache') {
+        tags.push('title tracks', 'film soundtracks', 'Resident Evil: Apocalypse');
+    }
+    if (artist === 'Static-X' && title === 'Cold') {
+        tags.push('film soundtracks', 'Queen of the Damned');
+    }
+    if (artist === 'Mastodon' && title === 'Blood and Thunder') {
+        tags.push('Leviathan album', 'concept albums', 'Moby-Dick');
+    }
+    if (artist === 'Mastodon' &&
+        ['Oblivion', 'Divinations'].includes(title)) {
+        tags.push('Crack the Skye album');
+    }
+    if (artist === 'Stone Sour' && title === 'Bother') {
+        tags.push('Corey Taylor', 'Slipknot connections');
+    }
+    if (artist === 'Soil' && ['Halo', 'Unreal'].includes(title)) {
+        tags.push('Scars album');
+    }
 
-            const number =
-                9267 + index;
+    return [...new Set(tags)];
+}
 
-            return {
-                id:
-                    `music_${String(number).padStart(4, '0')}`,
+const questions = songs.map((song, index) => {
+    const isSpecialQuestion = !Array.isArray(song);
+    const title = isSpecialQuestion ? null : song[0];
+    const artist = isSpecialQuestion ? null : song[1];
+    const number = 9267 + index;
 
-                category:
-                    'Music',
+    return {
+        id: `music_${String(number).padStart(4, '0')}`,
+        category: 'Music',
+        question: isSpecialQuestion
+            ? song.question
+            : `Which artist recorded ${title}${title.endsWith('?') ? '' : '?'}`,
+        answers: isSpecialQuestion
+            ? song.answers
+            : makeAnswers(artist, index),
+        correctAnswer: isSpecialQuestion
+            ? song.correctAnswer
+            : artist,
+        difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+        tags: isSpecialQuestion
+            ? song.tags
+            : makeTags(title, artist),
+        dailyEligible: true
+    };
+});
 
-                question:
-                    `Which artist recorded ${title}?`,
-
-                answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
-
-                correctAnswer:
-                    artist,
-
-                difficulty:
-                    index % 3 === 0
-                        ? 'Easy'
-                        : 'Medium',
-
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
-
-                dailyEligible:
-                    true
-            };
-        }
-    );
-
-module.exports =
-    questions;
+module.exports = questions;
