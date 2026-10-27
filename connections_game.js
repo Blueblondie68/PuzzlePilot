@@ -9,13 +9,15 @@
 // or database records.
 
 const connectionsPack1 = require('./connections_pack1.js');
+const connectionsPack2 = require('./connections_pack2.js');
 
 // ─────────────────────────────────────────────
 // PUZZLE BANK
 // ─────────────────────────────────────────────
 
 const connectionsPuzzles = [
-    ...connectionsPack1
+    ...connectionsPack1,
+    ...connectionsPack2
 ];
 
 // ─────────────────────────────────────────────
@@ -59,22 +61,42 @@ function getUKDate() {
     }).format(new Date());
 }
 
+// Daily puzzle order is spread across the whole bank.
+// The anchor preserves the existing puzzle on 27 October 2026
+// (Pack 1 index 27, conn028), avoiding a mid-day change.
+// With a 200-puzzle bank, a step of 73 visits every puzzle
+// once before repeating, rather than only using a few dates.
+const DAILY_ANCHOR_UTC = Date.UTC(2026, 9, 27);
+const DAILY_ANCHOR_INDEX = 27;
+const DAILY_INDEX_STEP = 73;
+
 function getDailyPuzzle() {
-    const ukDate = getUKDate();
-    const numbers = ukDate.match(/\d+/g);
+    const [year, month, day] = getUKDateKey()
+        .split('-')
+        .map(Number);
 
-    const day = Number(numbers[0]);
-    const month = Number(numbers[1]);
-    const year = Number(numbers[2]);
+    const currentDayUTC = Date.UTC(
+        year,
+        month - 1,
+        day
+    );
 
-    const seed = year * 10000 + month * 100 + day;
-    const index = seed % connectionsPuzzles.length;
+    const daysSinceAnchor = Math.round(
+        (currentDayUTC - DAILY_ANCHOR_UTC) / 86400000
+    );
+
+    const rawIndex =
+        DAILY_ANCHOR_INDEX +
+        daysSinceAnchor * DAILY_INDEX_STEP;
+
+    const count = connectionsPuzzles.length;
+    const index = ((rawIndex % count) + count) % count;
 
     return connectionsPuzzles[index];
 }
 
-// YYYY-MM-DD for the upcoming Daily completion database.
-// Uses the same UK date as the existing puzzle selection.
+// YYYY-MM-DD for the Daily completion database.
+// Uses the same UK date as the puzzle selection.
 function getUKDateKey() {
     const numbers = getUKDate().match(/\d+/g);
 
