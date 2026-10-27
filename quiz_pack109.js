@@ -1,8 +1,9 @@
-// quiz_pack109.js
+ // quiz_pack109.js
 // PuzzlePilot Big Quiz - Pack 109
 // Music - 2000s
-// 100 questions
-// IDs: music_8967 - music_9066
+// 100 questions; IDs music_8967 - music_9066
+// Complete decade, artist, location, genre and specialist tags
+// Corrects two official song-title spellings and duplicate answer choices
 
 const songs = [
     ["False Pretense", "The Red Jumpsuit Apparatus"],
@@ -69,7 +70,7 @@ const songs = [
 
     ["Everything Is Alright", "Motion City Soundtrack"],
     ["The Future Freaks Me Out", "Motion City Soundtrack"],
-    ["My Favourite Accident", "Motion City Soundtrack"],
+    ["My Favorite Accident", "Motion City Soundtrack"],
     ["L.G. FUAD", "Motion City Soundtrack"],
     ["This Is for Real", "Motion City Soundtrack"],
 
@@ -115,7 +116,7 @@ const songs = [
     ["Paperthin Hymn", "Anberlin"],
     ["Feel Good Drag", "Anberlin"],
     ["Godspeed", "Anberlin"],
-    ["A Whisper & a Clamour", "Anberlin"],
+    ["A Whisper & a Clamor", "Anberlin"],
 
     ["The Space Between", "Valencia"],
     ["Safe to Say", "Valencia"],
@@ -134,95 +135,122 @@ const songs = [
     ["The Adventure", "Angels & Airwaves"]
 ];
 
+// Metadata is added to each question when the pack loads.
+// These are the artist's main relevant genres and country; every
+// individual song also receives the correct performer and topic tags.
+const artistTags = {
+    'The Red Jumpsuit Apparatus': ['The Red Jumpsuit Apparatus', 'US music', 'post-hardcore', 'emo', 'alternative rock'],
+    'The Academy Is...': ['The Academy Is...', 'US music', 'pop punk', 'emo pop', 'alternative rock'],
+    'Hawthorne Heights': ['Hawthorne Heights', 'US music', 'emo', 'post-hardcore', 'screamo'],
+    'Brand New': ['Brand New', 'US music', 'emo', 'alternative rock', 'post-hardcore'],
+    'Thursday': ['Thursday', 'US music', 'post-hardcore', 'emo', 'alternative rock'],
+    'Saosin': ['Saosin', 'US music', 'post-hardcore', 'emo', 'alternative rock'],
+    'Silverstein': ['Silverstein', 'Canadian music', 'post-hardcore', 'emo', 'screamo'],
+    'Thrice': ['Thrice', 'US music', 'post-hardcore', 'alternative rock', 'punk rock'],
+    'Cute Is What We Aim For': ['Cute Is What We Aim For', 'US music', 'pop punk', 'emo pop', 'power pop'],
+    'All Time Low': ['All Time Low', 'US music', 'pop punk', 'emo pop', 'alternative rock'],
+    'Mayday Parade': ['Mayday Parade', 'US music', 'pop punk', 'emo pop', 'alternative rock'],
+    'Good Charlotte': ['Good Charlotte', 'US music', 'pop punk', 'alternative rock', 'rock bands'],
+    'Sugarcult': ['Sugarcult', 'US music', 'pop punk', 'power pop', 'alternative rock'],
+    'Motion City Soundtrack': ['Motion City Soundtrack', 'US music', 'pop punk', 'emo pop', 'alternative rock'],
+    'The All-American Rejects': ['The All-American Rejects', 'US music', 'pop rock', 'power pop', 'alternative rock'],
+    'Dashboard Confessional': ['Dashboard Confessional', 'US music', 'emo', 'acoustic rock', 'alternative rock'],
+    'Hellogoodbye': ['Hellogoodbye', 'US music', 'electropop', 'emo pop', 'indie pop'],
+    'Metro Station': ['Metro Station', 'US music', 'electropop', 'pop rock', 'dance-rock'],
+    'Paramore': ['Paramore', 'US music', 'pop punk', 'alternative rock', 'emo pop'],
+    'Anberlin': ['Anberlin', 'US music', 'alternative rock', 'emo pop', 'rock bands'],
+    'Valencia': ['Valencia', 'US music', 'pop punk', 'emo pop', 'rock bands'],
+    'Cartel': ['Cartel', 'US music', 'pop punk', 'power pop', 'alternative rock'],
+    "Jack's Mannequin": ["Jack's Mannequin", 'US music', 'piano rock', 'alternative rock', 'emo pop'],
+    'Angels & Airwaves': ['Angels & Airwaves', 'US music', 'space rock', 'alternative rock', 'pop punk']
+};
+
 const artists = [
-    ...new Set(
-        songs.map(
-            song => song[1]
-        )
-    )
+    ...new Set(songs.map(song => song[1]))
 ];
 
-function makeAnswers(
-    correctAnswer,
-    index
-) {
-    const otherArtists =
-        artists.filter(
-            artist =>
-                artist !== correctAnswer
-        );
+function makeAnswers(correctAnswer, index) {
+    const otherArtists = artists.filter(
+        artist => artist !== correctAnswer
+    );
 
+    // The original pack had 24 distinct artists, leaving 23 alternatives.
+    // Its fourth option used index + 23, which selected the SAME artist
+    // as index for every question. Keep the first three answer positions
+    // and change only that duplicate fourth selection to index + 17.
     const answers = [
         correctAnswer,
-        otherArtists[
-            index %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 11) %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 23) %
-            otherArtists.length
-        ]
+        otherArtists[index % otherArtists.length],
+        otherArtists[(index + 11) % otherArtists.length],
+        otherArtists[(index + 17) % otherArtists.length]
     ];
 
-    const shift =
-        index % answers.length;
-
+    const shift = index % answers.length;
     return [
         ...answers.slice(shift),
         ...answers.slice(0, shift)
     ];
 }
 
-const questions =
-    songs.map(
-        (song, index) => {
-            const title =
-                song[0];
+function makeTags(title, artist) {
+    const tags = [
+        '2000s',
+        'songs',
+        'artist identification',
+        'recordings',
+        ...artistTags[artist]
+    ];
 
-            const artist =
-                song[1];
+    // A song may share its title with its band's album; this does not
+    // make the song question invalid. Tag those verified title tracks.
+    if ((artist === 'Thursday' && title === 'War All the Time') ||
+        (artist === 'Silverstein' && title === 'Discovering the Waterfront') ||
+        (artist === 'Thrice' && title === 'The Artist in the Ambulance')) {
+        tags.push('title tracks', 'album title tracks');
+    }
 
-            const number =
-                8967 + index;
+    // Dashboard Confessional recorded Vindicated for the Spider-Man 2
+    // soundtrack in 2004.
+    if (artist === 'Dashboard Confessional' && title === 'Vindicated') {
+        tags.push('film soundtracks', 'Spider-Man 2', 'superhero films');
+    }
 
-            return {
-                id:
-                    `music_${String(number).padStart(4, '0')}`,
+    // Feel Good Drag appeared as an Anberlin recording in 2005 and
+    // was re-recorded for New Surrender in 2008.
+    if (artist === 'Anberlin' && title === 'Feel Good Drag') {
+        tags.push('re-recordings', 'New Surrender');
+    }
 
-                category:
-                    'Music',
+    if (artist === 'Angels & Airwaves' && title === 'The Adventure') {
+        tags.push('debut singles', 'Tom DeLonge');
+    }
 
-                question:
-                    `Which artist recorded ${title}?`,
+    if (artist === 'Motion City Soundtrack' && title === 'My Favorite Accident') {
+        tags.push('I Am the Movie');
+    }
 
-                answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
+    if (artist === 'Anberlin' && title === 'A Whisper & a Clamor') {
+        tags.push('Cities album');
+    }
 
-                correctAnswer:
-                    artist,
+    return [...new Set(tags)];
+}
 
-                difficulty:
-                    index % 3 === 0
-                        ? 'Easy'
-                        : 'Medium',
+const questions = songs.map((song, index) => {
+    const title = song[0];
+    const artist = song[1];
+    const number = 8967 + index;
 
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
+    return {
+        id: `music_${String(number).padStart(4, '0')}`,
+        category: 'Music',
+        question: `Which artist recorded ${title}?`,
+        answers: makeAnswers(artist, index),
+        correctAnswer: artist,
+        difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+        tags: makeTags(title, artist),
+        dailyEligible: true
+    };
+});
 
-                dailyEligible:
-                    true
-            };
-        }
-    );
-
-module.exports =
-    questions;
+module.exports = questions;
