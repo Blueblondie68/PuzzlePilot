@@ -38,44 +38,31 @@ const {
     v2Payload
 } = require('./quiz_display');
 
-
 // ─────────────────────────────────────────────
 // SETTINGS
 // ─────────────────────────────────────────────
 
-const QUESTION_TIME_LIMIT =
-    15 * 1000;
-
-const RESULT_DISPLAY_TIME =
-    3 * 1000;
-
+const QUESTION_TIME_LIMIT = 15 * 1000;
+const RESULT_DISPLAY_TIME = 3 * 1000;
 
 // ─────────────────────────────────────────────
 // ACTIVE SESSIONS
 // ─────────────────────────────────────────────
 
-const sessions =
-    new Map();
-
+const sessions = new Map();
 
 // ─────────────────────────────────────────────
 // GENERAL HELPERS
 // ─────────────────────────────────────────────
 
-function getServerId(
-    interaction
-) {
+function getServerId(interaction) {
     return (
         interaction.guildId ||
         `DM_${interaction.user.id}`
     );
 }
 
-
-function makeSessionId(
-    serverId,
-    userId
-) {
+function makeSessionId(serverId, userId) {
     return (
         `${serverId}_` +
         `${userId}_` +
@@ -83,139 +70,78 @@ function makeSessionId(
     );
 }
 
-
 // ─────────────────────────────────────────────
 // TIMERS
 // ─────────────────────────────────────────────
 
-function clearQuestionTimer(
-    session
-) {
-    if (
-        session.questionTimer
-    ) {
-        clearTimeout(
-            session.questionTimer
-        );
-
-        session.questionTimer =
-            null;
+function clearQuestionTimer(session) {
+    if (session.questionTimer) {
+        clearTimeout(session.questionTimer);
+        session.questionTimer = null;
     }
 }
 
-
-function clearResultTimer(
-    session
-) {
-    if (
-        session.resultTimer
-    ) {
-        clearTimeout(
-            session.resultTimer
-        );
-
-        session.resultTimer =
-            null;
+function clearResultTimer(session) {
+    if (session.resultTimer) {
+        clearTimeout(session.resultTimer);
+        session.resultTimer = null;
     }
 }
 
-
-function clearAllTimers(
-    session
-) {
-    clearQuestionTimer(
-        session
-    );
-
-    clearResultTimer(
-        session
-    );
+function clearAllTimers(session) {
+    clearQuestionTimer(session);
+    clearResultTimer(session);
 }
 
+function prepareQuestion(session) {
+    clearAllTimers(session);
 
-function prepareQuestion(
-    session
-) {
-    clearAllTimers(
-        session
+    session.answered = false;
+
+    session.shuffledAnswers = shuffleArray(
+        getCurrentQuestion(session).answers
     );
-
-    session.answered =
-        false;
-
-    session.shuffledAnswers =
-        shuffleArray(
-            getCurrentQuestion(
-                session
-            ).answers
-        );
 
     session.questionToken++;
 }
-
 
 // ─────────────────────────────────────────────
 // FINISH DAILY QUIZ
 // ─────────────────────────────────────────────
 
-async function finishDailyQuiz(
-    interaction,
-    session
-) {
-    const liveSession =
-        sessions.get(
-            session.id
-        );
+async function finishDailyQuiz(interaction, session) {
+    const liveSession = sessions.get(session.id);
 
-    if (
-        !liveSession ||
-        liveSession !==
-            session
-    ) {
+    if (!liveSession || liveSession !== session) {
         return;
     }
 
-    clearAllTimers(
-        session
-    );
+    clearAllTimers(session);
 
     try {
-        await saveCompletion(
-            session
-        );
-
-    } catch (
-        error
-    ) {
+        await saveCompletion(session);
+    } catch (error) {
         console.error(
             'Quiz completion save failed:',
             error
         );
 
         try {
-            const container =
-                buildSimpleContainer(
-                    'QUIZ SAVE PROBLEM',
-
-                    `⚠️ Your quiz finished, but ` +
-                    `PuzzlePilot couldn't save ` +
-                    `the result.\n\n` +
-                    `Please try again once the ` +
-                    `database connection has ` +
-                    `been checked.`,
-
-                    WRONG_ACCENT
-                );
-
-            await interaction.editReply(
-                v2Payload(
-                    container
-                )
+            const container = buildSimpleContainer(
+                'QUIZ SAVE PROBLEM',
+                `⚠️ Your quiz finished, but ` +
+                `PuzzlePilot couldn't save ` +
+                `the result.\n\n` +
+                `Please try again once the ` +
+                `database connection has ` +
+                `been checked.`,
+                WRONG_ACCENT
             );
 
-        } catch (
-            editError
-        ) {
+            await interaction.editReply(
+                v2Payload(container)
+            );
+        } catch (editError) {
             console.error(
                 'Quiz database error message failed:',
                 editError
@@ -225,29 +151,21 @@ async function finishDailyQuiz(
         return;
     }
 
-    sessions.delete(
-        session.id
-    );
+    sessions.delete(session.id);
 
     try {
         await interaction.editReply(
             v2Payload(
-                buildFinalContainer(
-                    session
-                )
+                buildFinalContainer(session)
             )
         );
-
-    } catch (
-        error
-    ) {
+    } catch (error) {
         console.error(
             'Quiz final score update failed:',
             error
         );
     }
 }
-
 
 // ─────────────────────────────────────────────
 // AUTOMATIC PROGRESSION
@@ -258,161 +176,114 @@ function scheduleNextQuestion(
     session,
     questionToken
 ) {
-    clearResultTimer(
-        session
-    );
+    clearResultTimer(session);
 
-    session.resultTimer =
-        setTimeout(
-            async () => {
-                const liveSession =
-                    sessions.get(
-                        session.id
-                    );
+    session.resultTimer = setTimeout(
+        async () => {
+            const liveSession = sessions.get(
+                session.id
+            );
 
-                if (
-                    !liveSession ||
-                    liveSession !==
-                        session
-                ) {
-                    return;
-                }
+            if (!liveSession || liveSession !== session) {
+                return;
+            }
 
-                if (
-                    session.questionToken !==
-                    questionToken
-                ) {
-                    return;
-                }
+            if (session.questionToken !== questionToken) {
+                return;
+            }
 
-                session.resultTimer =
-                    null;
+            session.resultTimer = null;
 
-                if (
-                    session.questionIndex >=
-                    session.questions.length -
-                        1
-                ) {
-                    await finishDailyQuiz(
-                        interaction,
-                        session
-                    );
-
-                    return;
-                }
-
-                session.questionIndex++;
-
-                await showQuestion(
+            if (
+                session.questionIndex >=
+                session.questions.length - 1
+            ) {
+                await finishDailyQuiz(
                     interaction,
                     session
                 );
-            },
 
-            RESULT_DISPLAY_TIME
-        );
+                return;
+            }
+
+            session.questionIndex++;
+
+            await showQuestion(
+                interaction,
+                session
+            );
+        },
+        RESULT_DISPLAY_TIME
+    );
 }
-
 
 // ─────────────────────────────────────────────
 // QUESTION TIMER
 // ─────────────────────────────────────────────
 
-function startQuestionTimer(
-    session,
-    interaction
-) {
-    clearQuestionTimer(
-        session
-    );
+function startQuestionTimer(session, interaction) {
+    clearQuestionTimer(session);
 
-    const questionToken =
-        session.questionToken;
+    const questionToken = session.questionToken;
 
-    session.questionTimer =
-        setTimeout(
-            async () => {
-                const liveSession =
-                    sessions.get(
-                        session.id
-                    );
+    session.questionTimer = setTimeout(
+        async () => {
+            const liveSession = sessions.get(
+                session.id
+            );
 
-                if (
-                    !liveSession ||
-                    liveSession !==
-                        session
-                ) {
-                    return;
-                }
+            if (!liveSession || liveSession !== session) {
+                return;
+            }
 
-                if (
-                    session.questionToken !==
-                    questionToken
-                ) {
-                    return;
-                }
+            if (session.questionToken !== questionToken) {
+                return;
+            }
 
-                if (
-                    session.answered
-                ) {
-                    return;
-                }
+            if (session.answered) {
+                return;
+            }
 
-                session.answered =
-                    true;
+            session.answered = true;
+            session.questionTimer = null;
 
-                session.questionTimer =
-                    null;
-
-                try {
-                    await interaction.editReply(
-                        v2Payload(
-                            buildResultContainer(
-                                session,
-                                null,
-                                'timeout'
-                            )
+            try {
+                await interaction.editReply(
+                    v2Payload(
+                        buildResultContainer(
+                            session,
+                            null,
+                            'timeout'
                         )
-                    );
+                    )
+                );
 
-                    scheduleNextQuestion(
-                        interaction,
-                        session,
-                        questionToken
-                    );
-
-                } catch (
+                scheduleNextQuestion(
+                    interaction,
+                    session,
+                    questionToken
+                );
+            } catch (error) {
+                console.error(
+                    'Quiz timer update failed:',
                     error
-                ) {
-                    console.error(
-                        'Quiz timer update failed:',
-                        error
-                    );
-                }
-            },
-
-            QUESTION_TIME_LIMIT
-        );
+                );
+            }
+        },
+        QUESTION_TIME_LIMIT
+    );
 }
-
 
 // ─────────────────────────────────────────────
 // SHOW QUESTION
 // ─────────────────────────────────────────────
 
-async function showQuestion(
-    interaction,
-    session
-) {
-    prepareQuestion(
-        session
-    );
+async function showQuestion(interaction, session) {
+    prepareQuestion(session);
 
     await interaction.editReply(
         v2Payload(
-            buildQuestionContainer(
-                session
-            )
+            buildQuestionContainer(session)
         )
     );
 
@@ -422,46 +293,31 @@ async function showQuestion(
     );
 }
 
-
 // ─────────────────────────────────────────────
 // START DAILY QUIZ
 // ─────────────────────────────────────────────
 
-async function startDaily(
-    interaction
-) {
+async function startDaily(interaction) {
     await interaction.deferReply();
 
     try {
-        const daily =
-            await ensureTodaysQuiz();
+        const daily = await ensureTodaysQuiz();
 
-        const userId =
-            interaction.user.id;
+        const userId = interaction.user.id;
+        const serverId = getServerId(interaction);
+        const dateKey = daily.dateKey;
 
-        const serverId =
-            getServerId(
-                interaction
-            );
+        const completed = await hasCompletedDaily(
+            serverId,
+            userId,
+            dateKey
+        );
 
-        const dateKey =
-            daily.dateKey;
-
-        const completed =
-            await hasCompletedDaily(
-                serverId,
-                userId,
-                dateKey
-            );
-
-        if (
-            completed
-        ) {
+        if (completed) {
             await interaction.editReply(
                 v2Payload(
                     buildSimpleContainer(
                         'DAILY QUIZ',
-
                         `You've already completed ` +
                         `today's Daily Quiz on this ` +
                         `server.\n\n` +
@@ -475,25 +331,20 @@ async function startDaily(
             return;
         }
 
-        const sessionId =
-            makeSessionId(
-                serverId,
-                userId
-            );
+        const sessionId = makeSessionId(
+            serverId,
+            userId
+        );
 
-        const existingSession =
-            sessions.get(
-                sessionId
-            );
+        const existingSession = sessions.get(
+            sessionId
+        );
 
-        if (
-            existingSession
-        ) {
+        if (existingSession) {
             await interaction.editReply(
                 v2Payload(
                     buildSimpleContainer(
                         'DAILY QUIZ',
-
                         `You already have today's ` +
                         `Daily Quiz in progress.`
                     )
@@ -504,41 +355,18 @@ async function startDaily(
         }
 
         const session = {
-            id:
-                sessionId,
-
-            serverId:
-                serverId,
-
-            userId:
-                userId,
-
-            dateKey:
-                dateKey,
-
-            questions:
-                daily.questions,
-
-            questionIndex:
-                0,
-
-            score:
-                0,
-
-            answered:
-                false,
-
-            shuffledAnswers:
-                [],
-
-            questionTimer:
-                null,
-
-            resultTimer:
-                null,
-
-            questionToken:
-                0
+            id: sessionId,
+            serverId: serverId,
+            userId: userId,
+            dateKey: dateKey,
+            questions: daily.questions,
+            questionIndex: 0,
+            score: 0,
+            answered: false,
+            shuffledAnswers: [],
+            questionTimer: null,
+            resultTimer: null,
+            questionToken: 0
         };
 
         sessions.set(
@@ -551,9 +379,7 @@ async function startDaily(
             session
         );
 
-    } catch (
-        error
-    ) {
+    } catch (error) {
         console.error(
             'Daily Quiz start failed:',
             error
@@ -566,14 +392,9 @@ async function startDaily(
                     `today's Daily Quiz.\n\n` +
                     `The database connection needs ` +
                     `to be checked.`,
-
-                components:
-                    []
+                components: []
             });
-
-        } catch (
-            replyError
-        ) {
+        } catch (replyError) {
             console.error(
                 'Daily Quiz error reply failed:',
                 replyError
@@ -582,76 +403,48 @@ async function startDaily(
     }
 }
 
-
 // ─────────────────────────────────────────────
 // HANDLE ANSWER
 // ─────────────────────────────────────────────
 
-async function handleAnswer(
-    interaction
-) {
-    const prefix =
-        'quiz_answer_';
+async function handleAnswer(interaction) {
+    const prefix = 'quiz_answer_';
 
-    const remainder =
-        interaction.customId.slice(
-            prefix.length
-        );
+    const remainder = interaction.customId.slice(
+        prefix.length
+    );
 
-    const separator =
-        remainder.indexOf(
-            '_'
-        );
+    const separator = remainder.indexOf('_');
 
-    if (
-        separator ===
-        -1
-    ) {
+    if (separator === -1) {
         return;
     }
 
-    const answerIndex =
-        Number(
-            remainder.slice(
-                0,
-                separator
-            )
-        );
+    const answerIndex = Number(
+        remainder.slice(0, separator)
+    );
 
-    const sessionId =
-        remainder.slice(
-            separator + 1
-        );
+    const sessionId = remainder.slice(
+        separator + 1
+    );
 
-    const session =
-        sessions.get(
-            sessionId
-        );
+    const session = sessions.get(sessionId);
 
-    if (
-        !session
-    ) {
+    if (!session) {
         await interaction.reply({
             content:
                 '⚠️ This Daily Quiz is no longer active.',
-
-            ephemeral:
-                true
+            ephemeral: true
         });
 
         return;
     }
 
-    if (
-        session.userId !==
-        interaction.user.id
-    ) {
+    if (session.userId !== interaction.user.id) {
         await interaction.reply({
             content:
                 '⚠️ This Daily Quiz belongs to another player.',
-
-            ephemeral:
-                true
+            ephemeral: true
         });
 
         return;
@@ -659,50 +452,39 @@ async function handleAnswer(
 
     if (
         session.serverId !==
-        getServerId(
-            interaction
-        )
+        getServerId(interaction)
     ) {
         await interaction.reply({
             content:
                 '⚠️ This Daily Quiz belongs to another server.',
-
-            ephemeral:
-                true
+            ephemeral: true
         });
 
         return;
     }
 
-    if (
-        session.answered
-    ) {
-        await interaction.reply({
-            content:
-                '⚠️ Your answer is already locked in.',
+    // ─────────────────────────────────────────
+    // ANSWER ALREADY LOCKED
+    //
+    // A second click must still be acknowledged
+    // to Discord. Do not send another message,
+    // change the answer or alter the score.
+    // ─────────────────────────────────────────
 
-            ephemeral:
-                true
-        });
-
+    if (session.answered) {
+        await interaction.deferUpdate();
         return;
     }
 
     if (
-        !Number.isInteger(
-            answerIndex
-        ) ||
-        answerIndex <
-            0 ||
-        answerIndex >=
-            session.shuffledAnswers.length
+        !Number.isInteger(answerIndex) ||
+        answerIndex < 0 ||
+        answerIndex >= session.shuffledAnswers.length
     ) {
         await interaction.reply({
             content:
                 '⚠️ That answer is not valid.',
-
-            ephemeral:
-                true
+            ephemeral: true
         });
 
         return;
@@ -711,33 +493,21 @@ async function handleAnswer(
     // First accepted click wins.
     // Lock before awaiting anything.
 
-    session.answered =
-        true;
+    session.answered = true;
 
-    clearQuestionTimer(
-        session
-    );
+    clearQuestionTimer(session);
 
-    const questionToken =
-        session.questionToken;
+    const questionToken = session.questionToken;
 
-    const question =
-        getCurrentQuestion(
-            session
-        );
+    const question = getCurrentQuestion(session);
 
     const selectedAnswer =
-        session.shuffledAnswers[
-            answerIndex
-        ];
+        session.shuffledAnswers[answerIndex];
 
     const correct =
-        selectedAnswer ===
-        question.correctAnswer;
+        selectedAnswer === question.correctAnswer;
 
-    if (
-        correct
-    ) {
+    if (correct) {
         session.score++;
     }
 
@@ -748,11 +518,7 @@ async function handleAnswer(
             buildResultContainer(
                 session,
                 selectedAnswer,
-                correct
-                    ?
-                    'correct'
-                    :
-                    'wrong'
+                correct ? 'correct' : 'wrong'
             )
         )
     );
@@ -764,26 +530,20 @@ async function handleAnswer(
     );
 }
 
-
 // ─────────────────────────────────────────────
 // MAIN INTERACTION HANDLER
 // ─────────────────────────────────────────────
 
-async function handleInteraction(
-    interaction
-) {
+async function handleInteraction(interaction) {
     if (
         interaction.isButton() &&
         interaction.customId.startsWith(
             'quiz_answer_'
         )
     ) {
-        await handleAnswer(
-            interaction
-        );
+        await handleAnswer(interaction);
     }
 }
-
 
 // ─────────────────────────────────────────────
 // EXPORTS
