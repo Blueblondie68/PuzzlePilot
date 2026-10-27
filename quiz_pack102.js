@@ -1,8 +1,9 @@
 // quiz_pack102.js
-// PuzzlePilot Big Quiz - Pack 102
-// Music - 2000s
-// 100 questions
-// IDs: music_8267 - music_8366
+// PuzzlePilot Bigggggg Quiz - Music Pack 102
+// Tagging audit: 100 questions, IDs music_8267 to music_8366.
+// All original IDs, answers, answer options, difficulties and Daily Quiz settings kept.
+// Three unverified recordings replaced with verified album questions.
+// Courteeners' 2010 single has accurate decade metadata.
 
 const songs = [
     ["Local Boy", "The Rifles"],
@@ -123,95 +124,178 @@ const songs = [
     ["Confusion", "The Zutons"]
 ];
 
-const artists = [
-    ...new Set(
-        songs.map(
-            song => song[1]
-        )
-    )
+// Every question inherits its artist's genres, origins and relevant members.
+const performerTags = {
+    "The Rifles": ["british", "english", "indie rock", "mod revival", "bands", "london", "joel stoker"],
+    "Maximo Park": ["british", "english", "indie rock", "post punk revival", "bands", "newcastle upon tyne", "paul smith", "maxïmo park"],
+    "Editors": ["british", "english", "indie rock", "post punk revival", "bands", "tom smith"],
+    "The Twang": ["british", "english", "indie rock", "bands", "birmingham", "phil etheridge"],
+    "The Enemy": ["british", "english", "indie rock", "bands", "coventry", "tom clarke"],
+    "Razorlight": ["british", "english", "indie rock", "bands", "johnny borrell"],
+    "Glasvegas": ["british", "scottish", "indie rock", "alternative rock", "bands", "james allan"],
+    "Reverend and the Makers": ["british", "english", "indie rock", "electronic rock", "bands", "sheffield", "jon mcclure"],
+    "The Cribs": ["british", "english", "indie rock", "bands", "wakefield", "jarman brothers"],
+    "The Rakes": ["british", "english", "indie rock", "post punk revival", "bands", "alan donohoe"],
+    "White Lies": ["british", "english", "indie rock", "post punk revival", "bands", "harry mcveigh"],
+    "The Duke Spirit": ["british", "english", "alternative rock", "garage rock", "bands", "liela moss"],
+    "Courteeners": ["british", "english", "indie rock", "bands", "manchester", "liam fray"],
+    "The Dandy Warhols": ["american", "alternative rock", "psychedelic rock", "bands", "portland oregon", "courtney taylor taylor", "zia mccabe"],
+    "The Futureheads": ["british", "english", "indie rock", "post punk revival", "bands", "sunderland", "barry hyde"],
+    "Blood Red Shoes": ["british", "english", "alternative rock", "indie rock", "duos", "brighton", "laura mary carter", "steven ansell"],
+    "The Zutons": ["british", "english", "indie rock", "psychedelic rock", "bands", "liverpool", "dave mccabe"]
+};
+
+// Recording-specific release year and album metadata, aligned to songs.
+const recordingInfo = [
+    [2005, "no love lost album", "2006 album"],
+    [2006, "no love lost album"],
+    [2006, "no love lost album", "2005 original demo"],
+    [2009, "great escape album"],
+    [2009, "great escape album"],
+    [2009, "great escape album"],
+    [2009, "great escape album"],
+    [2009, "great escape album"],
+    [2007, "our earthly pleasures album"],
+    [2007, "our earthly pleasures album"],
+    [2009, "quicken the heart album"],
+    [2009, "quicken the heart album"],
+    [2009, "in this light and on this evening album", "2010 single"],
+    [2007, "an end has a start album"],
+    [2007, "an end has a start album"],
+    [2007, "love it when i feel like this album"],
+    [2007, "love it when i feel like this album"],
+    [2007, "love it when i feel like this album"],
+    [2007, "love it when i feel like this album"],
+    [2007, "love it when i feel like this album"],
+    [2009, "jewellery quarter album"],
+    [2009, "jewellery quarter album"],
+    [2007, "love it when i feel like this album"],
+    [2007, "love it when i feel like this album"],
+    [2007, "love it when i feel like this album"],
+    [2007, "well live and die in these towns album"],
+    [2007, "well live and die in these towns album"],
+    [2009, "music for the people album"],
+    [2006, "razorlight second album"],
+    [2006, "razorlight second album"],
+    [2008, "glasvegas debut album"],
+    [2008, "glasvegas debut album"],
+    [2008, "glasvegas debut album"],
+    [2008, "glasvegas debut album"],
+    [2007, "the state of things album"],
+    [2007, "the state of things album"],
+    [2007, "the state of things album"],
+    [2007, "the state of things album"],
+    [2009, "a french kiss in the chaos album"],
+    [2004, "the cribs debut album"],
+    [2004, "the cribs debut album"],
+    [2005, "the new fellas album"],
+    [2005, "non album single"],
+    [2009, "ignore the ignorant album", "johnny marr"],
+    [2005, "capture release album"],
+    [2005, "capture release album"],
+    [2005, "capture release album"],
+    [2009, "klang album"],
+    [2009, "to lose my life album"],
+    [2009, "to lose my life album"],
+    [2009, "to lose my life album"],
+    [2005, "cuts across the land album"],
+    [2005, "cuts across the land album"],
+    [2005, "cuts across the land album"],
+    [2005, "cuts across the land album"],
+    [2005, "cuts across the land album"],
+    [2008, "neptune album"],
+    [2008, "neptune album"],
+    [2008, "neptune album"],
+    [2008, "neptune album"],
+    [2008, "neptune album"],
+    [2007, "non album single"],
+    [2007, "st jude album", "2008 album"],
+    [2008, "st jude album"],
+    [2008, "st jude album"],
+    [2008, "st jude album"],
+    [2008, "st jude album"],
+    [2008, "st jude album"],
+    [2008, "non album single"],
+    [2009, "falcon album", "2010 album", "2009 single"],
+    [2010, "falcon album", "2010 single"],
+    [2005, "odditorium or warlords of mars album"],
+    [2000, "thirteen tales from urban bohemia album"],
+    [2003, "welcome to the monkey house album"],
+    [2005, "odditorium or warlords of mars album"],
+    [2005, "odditorium or warlords of mars album"],
+    [2005, "odditorium or warlords of mars album"],
+    [2004, "the futureheads debut album"],
+    [2004, "the futureheads debut album"],
+    [2004, "the futureheads debut album"],
+    [2004, "the futureheads debut album"],
+    [2004, "the futureheads debut album"],
+    [2004, "the futureheads debut album"],
+    [2006, "news and tributes album"],
+    [2006, "news and tributes album"],
+    [2006, "news and tributes album"],
+    [2006, "news and tributes album"],
+    [2006, "news and tributes album"],
+    [2008, "this is not the world album"],
+    [2008, "this is not the world album"],
+    [2008, "box of secrets album"],
+    [2008, "box of secrets album"],
+    [2006, "box of secrets album", "2008 album"],
+    [2008, "box of secrets album"],
+    [2008, "box of secrets album"],
+    [2006, "standalone single", "limited edition vinyl"],
+    [2006, "tired of hanging around album", "second studio album"],
+    [2004, "who killed the zutons debut album"],
+    [2004, "who killed the zutons debut album"],
+    [2004, "who killed the zutons debut album"]
 ];
 
-function makeAnswers(
-    correctAnswer,
-    index
-) {
-    const otherArtists =
-        artists.filter(
-            artist =>
-                artist !== correctAnswer
-        );
+// Replace only genuinely unverified song identifications.
+const specialQuestions = {
+    8318: "Which band released the album 'Cuts Across the Land'?",
+    8338: "Which band released the album 'Odditorium or Warlords of Mars'?",
+    8363: "Which band released the album 'Tired of Hanging Around'?"
+};
 
+// Preserve all original answer choices and their original positions.
+const artists = [...new Set(songs.map(song => song[1]))];
+
+function makeAnswers(correctAnswer, index) {
+    const otherArtists = artists.filter(artist => artist !== correctAnswer);
     const answers = [
         correctAnswer,
-        otherArtists[
-            index %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 11) %
-            otherArtists.length
-        ],
-        otherArtists[
-            (index + 23) %
-            otherArtists.length
-        ]
+        otherArtists[index % otherArtists.length],
+        otherArtists[(index + 11) % otherArtists.length],
+        otherArtists[(index + 23) % otherArtists.length]
     ];
-
-    const shift =
-        index % answers.length;
-
-    return [
-        ...answers.slice(shift),
-        ...answers.slice(0, shift)
-    ];
+    const shift = index % answers.length;
+    return [...answers.slice(shift), ...answers.slice(0, shift)];
 }
 
-const questions =
-    songs.map(
-        (song, index) => {
-            const title =
-                song[0];
+function makeTags(title, artist, index, number) {
+    const [year, ...recordingTags] = recordingInfo[index];
+    const decade = `${Math.floor(year / 10) * 10}s`;
+    const questionType = specialQuestions[number]
+        ? ['albums', 'album identification']
+        : ['songs', 'recordings', 'artist identification', title.toLowerCase()];
+    return [...new Set([
+        'music', ...questionType,
+        decade, `${decade} music`, `${year} releases`,
+        artist.toLowerCase(), ...performerTags[artist], ...recordingTags
+    ])];
+}
 
-            const artist =
-                song[1];
+const questions = songs.map(([title, artist], index) => {
+    const number = 8267 + index;
+    return {
+        id: `music_${String(number).padStart(4, '0')}`,
+        category: 'Music',
+        question: specialQuestions[number] || `Which artist recorded ${title}?`,
+        answers: makeAnswers(artist, index),
+        correctAnswer: artist,
+        difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+        tags: makeTags(title, artist, index, number),
+        dailyEligible: true
+    };
+});
 
-            const number =
-                8267 + index;
-
-            return {
-                id:
-                    `music_${String(number).padStart(4, '0')}`,
-
-                category:
-                    'Music',
-
-                question:
-                    `Which artist recorded ${title}?`,
-
-                answers:
-                    makeAnswers(
-                        artist,
-                        index
-                    ),
-
-                correctAnswer:
-                    artist,
-
-                difficulty:
-                    index % 3 === 0
-                        ? 'Easy'
-                        : 'Medium',
-
-                tags: [
-                    '2000s',
-                    'songs'
-                ],
-
-                dailyEligible:
-                    true
-            };
-        }
-    );
-
-module.exports =
-    questions;
+module.exports = questions;
