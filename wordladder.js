@@ -23,6 +23,9 @@ const englishWords =
 const pack1 =
     require('./wordladder_pack1.js');
 
+const pack2 =
+    require('./wordladder_pack2.js');
+
 const {
     getDifficultyLabel,
     gamePayload,
@@ -34,7 +37,7 @@ const {
 // DICTIONARY
 // ─────────────────────────────────────────────
 //
-// Pack 1 currently uses four-letter ladders.
+// Both puzzle packs use four-letter ladders.
 //
 // The npm dictionary contains a very large English
 // vocabulary. We keep alphabetic four-letter entries.
@@ -73,9 +76,18 @@ console.log(
 // ─────────────────────────────────────────────
 
 const wordLadders = {
-    easy: pack1.easy,
-    medium: pack1.medium,
-    hard: pack1.hard
+    easy: [
+        ...pack1.easy,
+        ...pack2.easy
+    ],
+    medium: [
+        ...pack1.medium,
+        ...pack2.medium
+    ],
+    hard: [
+        ...pack1.hard,
+        ...pack2.hard
+    ]
 };
 
 // ─────────────────────────────────────────────
