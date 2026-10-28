@@ -45,7 +45,7 @@ const songs = [
         question: 'Which Teenage Fanclub member played bass and was one of the band\'s principal songwriters?',
         answers: ['Gerard Love', 'Norman Blake', 'Raymond McGinley', 'Paul Quinn'],
         correctAnswer: 'Gerard Love',
-        tags: ['2000s', 'band members', 'line-up', 'bassists', 'songwriters', 'Teenage Fanclub', 'Scottish music', 'power pop']
+        tags: ['2000s', 'band members', 'line-up', 'bassists', 'songwriters', 'Teenage Fanclub', 'Scottish music', 'UK music', 'power pop']
     },
     ["Dumb Dumb Dumb", "Teenage Fanclub"],
     ["Near You", "Teenage Fanclub"],
@@ -146,8 +146,8 @@ const artistTags = {
     'The Holloways': ['The Holloways', 'UK music', 'indie rock', 'rock bands'],
     'The Hoosiers': ['The Hoosiers', 'UK music', 'indie pop', 'pop rock'],
     'The Wideboys': ['The Wideboys', 'UK music', 'UK garage', 'dance music'],
-    'Camera Obscura': ['Camera Obscura', 'Scottish music', 'indie pop', 'twee pop'],
-    'Teenage Fanclub': ['Teenage Fanclub', 'Scottish music', 'power pop', 'indie rock'],
+    'Camera Obscura': ['Camera Obscura', 'Scottish music', 'UK music', 'indie pop', 'twee pop'],
+    'Teenage Fanclub': ['Teenage Fanclub', 'Scottish music', 'UK music', 'power pop', 'indie rock'],
     'Noisettes': ['Noisettes', 'UK music', 'indie rock', 'alternative rock'],
     'Tunng': ['Tunng', 'UK music', 'folktronica', 'indie folk'],
     'We Are Scientists': ['We Are Scientists', 'US music', 'indie rock', 'alternative rock'],
@@ -264,3 +264,4 @@ const questions =
 
 module.exports =
     questions;
+
