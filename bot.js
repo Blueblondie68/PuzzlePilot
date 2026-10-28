@@ -1,4 +1,4 @@
-// bot.js
+ // bot.js
 // Main PuzzlePilot hub
 // Daily menu + games + opt-in invitations
 
@@ -29,6 +29,7 @@ const connections = require('./connections');
 const quiz = require('./quiz');
 const quizContinuous = require('./quiz_continuous');
 const gameInvites = require('./game_invites');
+const { publishYesterdayResults } = require('./daily_leaderboards');
 
 // ─────────────────────────────────────────────
 // CLIENT SETUP
@@ -216,6 +217,11 @@ function checkDailyReset() {
     }
 
     lastUKDate = currentUKDate;
+
+    // Publish the completed UK day's results without delaying puzzle resets.
+    void publishYesterdayResults(client).catch(error => {
+        console.error("Yesterday's leaderboard publication failed:", error);
+    });
 
     console.log(
         `UK midnight reached: ${currentUKDate}`
@@ -663,6 +669,17 @@ onInteraction('game buttons', async interaction => {
     await connections.handleInteraction(interaction);
     await quiz.handleInteraction(interaction);
     await quizContinuous.handleInteraction(interaction);
+});
+
+// ─────────────────────────────────────────────
+// LEADERBOARD STARTUP RECOVERY
+// ─────────────────────────────────────────────
+
+// Also check after a restart, in case PuzzlePilot was offline at midnight.
+client.once('ready', () => {
+    void publishYesterdayResults(client).catch(error => {
+        console.error('Startup leaderboard publication failed:', error);
+    });
 });
 
 // ─────────────────────────────────────────────
