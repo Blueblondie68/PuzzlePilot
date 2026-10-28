@@ -1,7 +1,9 @@
-// quiz_pack122.js
+ // quiz_pack122.js
 // PuzzlePilot Big Quiz
 // Music Pack 122
-// 2010s songs
+// Mainly 2010s music, including one 2009 single
+// 100 questions; IDs music_10267 - music_10366
+// Expanded performer, region, genre, collaboration and specialist tags
 
 const songs = [
     ['Cassy O', 'George Ezra'],
@@ -141,6 +143,111 @@ const songs = [
     ['Pack Up', 'Eliza Doolittle']
 ];
 
+// Shared artist tags expand into each question at load time.
+// This keeps the pack compact without leaving questions under-tagged.
+const artistTags = {
+    'George Ezra': ['George Ezra', 'UK music', 'folk pop', 'pop rock', 'singer-songwriters'],
+    'James Bay': ['James Bay', 'UK music', 'folk rock', 'pop rock', 'singer-songwriters'],
+    'John Newman': ['John Newman', 'UK music', 'soul pop', 'dance-pop', 'singer-songwriters'],
+    'Avicii': ['Avicii', 'Swedish music', 'progressive house', 'electronic dance music', 'DJs and producers'],
+    'Klingande': ['Klingande', 'French music', 'deep house', 'tropical house', 'DJs and producers'],
+    'Faul & Wad Ad': ['Faul & Wad Ad', 'French music', 'deep house', 'tropical house', 'dance music'],
+    'Clean Bandit': ['Clean Bandit', 'UK music', 'dance-pop', 'electropop', 'classical crossover'],
+    'Disclosure': ['Disclosure', 'UK music', 'house music', 'UK garage', 'electronic music', 'duos'],
+    'Gorgon City': ['Gorgon City', 'UK music', 'deep house', 'house music', 'electronic music', 'duos'],
+    'Route 94': ['Route 94', 'UK music', 'deep house', 'house music', 'DJs and producers'],
+    'Duke Dumont': ['Duke Dumont', 'UK music', 'house music', 'deep house', 'DJs and producers'],
+    'Years & Years': ['Years & Years', 'UK music', 'synthpop', 'electropop', 'pop groups'],
+    'Kiesza': ['Kiesza', 'Canadian music', 'house music', 'dance-pop', 'female vocalists'],
+    'Rudimental': ['Rudimental', 'UK music', 'drum and bass', 'soul', 'electronic music'],
+    'Jess Glynne': ['Jess Glynne', 'UK music', 'dance-pop', 'soul pop', 'female vocalists'],
+    'Foals': ['Foals', 'UK music', 'indie rock', 'alternative rock', 'rock bands'],
+    'Catfish and the Bottlemen': ['Catfish and the Bottlemen', 'Welsh music', 'UK music', 'indie rock', 'rock bands'],
+    'Royal Blood': ['Royal Blood', 'UK music', 'hard rock', 'garage rock', 'rock duos'],
+    'The Killers': ['The Killers', 'US music', 'alternative rock', 'indie rock', 'rock bands'],
+    'Imagine Dragons': ['Imagine Dragons', 'US music', 'pop rock', 'alternative rock', 'rock bands'],
+    'Franz Ferdinand': ['Franz Ferdinand', 'Scottish music', 'UK music', 'indie rock', 'post-punk revival'],
+    'Two Door Cinema Club': ['Two Door Cinema Club', 'Northern Irish music', 'UK music', 'indie rock', 'indie pop'],
+    'Foster the People': ['Foster the People', 'US music', 'indie pop', 'synthpop', 'alternative rock'],
+    'Of Monsters and Men': ['Of Monsters and Men', 'Icelandic music', 'indie folk', 'folk rock', 'bands'],
+    'The Lumineers': ['The Lumineers', 'US music', 'folk rock', 'Americana', 'indie folk'],
+    'Lorde': ['Lorde', 'New Zealand music', 'art pop', 'electropop', 'female vocalists'],
+    'Vance Joy': ['Vance Joy', 'Australian music', 'indie folk', 'folk pop', 'singer-songwriters'],
+    'Passion Pit': ['Passion Pit', 'US music', 'synthpop', 'indie pop', 'electropop'],
+    'Capital Cities': ['Capital Cities', 'US music', 'synthpop', 'indie pop', 'electronic music'],
+    'Grouplove': ['Grouplove', 'US music', 'indie rock', 'alternative rock', 'rock bands'],
+    'The Neighbourhood': ['The Neighbourhood', 'US music', 'alternative rock', 'indie pop', 'rock bands'],
+    'Paramore': ['Paramore', 'US music', 'alternative rock', 'pop rock', 'rock bands'],
+    'Twenty One Pilots': ['Twenty One Pilots', 'US music', 'alternative rock', 'electropop', 'rap rock', 'duos'],
+    'Kygo': ['Kygo', 'Norwegian music', 'tropical house', 'house music', 'DJs and producers'],
+    'Swedish House Mafia': ['Swedish House Mafia', 'Swedish music', 'progressive house', 'electronic dance music', 'DJs and producers'],
+    'Florence + the Machine': ['Florence + the Machine', 'UK music', 'art pop', 'indie rock', 'baroque pop'],
+    'Mumford & Sons': ['Mumford & Sons', 'UK music', 'folk rock', 'indie folk', 'rock bands'],
+    'Gabrielle Aplin': ['Gabrielle Aplin', 'UK music', 'folk pop', 'indie folk', 'singer-songwriters'],
+    'Birdy': ['Birdy', 'UK music', 'indie folk', 'pop', 'singer-songwriters'],
+    'Pixie Lott': ['Pixie Lott', 'UK music', 'pop', 'dance-pop', 'R&B', 'female vocalists'],
+    'Stooshe': ['Stooshe', 'UK music', 'pop', 'R&B', 'girl groups'],
+    'Eliza Doolittle': ['Eliza Doolittle', 'UK music', 'pop', 'retro soul', 'singer-songwriters']
+};
+
+// Recording-specific tags describe featured singers, collaborations,
+// covers and remixes, while preserving each question's answer.
+const recordingTags = {
+    'Avicii|I Could Be the One': ['Nicky Romero', 'collaborations', 'DJ partnerships'],
+    'Avicii|Lay Me Down': ['Adam Lambert', 'Nile Rodgers', 'collaborations', 'guest vocals', 'guitarists'],
+    'Avicii|Lonely Together': ['Rita Ora', 'featured artists', 'collaborations'],
+    'Avicii|Fade into Darkness': ['Andreas Moe', 'guest vocals'],
+    'Faul & Wad Ad|Changes': ['Pnau', 'Baby', 'samples', 'reworkings', 'collaborations'],
+    'Clean Bandit|Extraordinary': ['Sharna Bass', 'featured artists', 'collaborations'],
+    'Disclosure|Magnets': ['Lorde', 'featured artists', 'collaborations'],
+    'Gorgon City|Ready for Your Love': ['MNEK', 'featured artists', 'collaborations'],
+    'Gorgon City|Here for You': ['Laura Welsh', 'featured artists', 'collaborations'],
+    'Gorgon City|Go All Night': ['Jennifer Hudson', 'featured artists', 'collaborations'],
+    'Gorgon City|Imagination': ['Katy Menditta', 'featured artists', 'collaborations'],
+    'Route 94|My Love': ['Jess Glynne', 'featured artists', 'collaborations', 'UK number ones'],
+    'Duke Dumont|I Got U': ['Jax Jones', 'collaborations', 'DJ partnerships'],
+    'Duke Dumont|Need U (100%)': ['A*M*E', 'featured artists', 'collaborations'],
+    'Duke Dumont|Won\'t Look Back': ['Yolanda Quartey', 'guest vocals'],
+    'Rudimental|Powerless': ['Becky Hill', 'featured artists', 'collaborations'],
+    'Two Door Cinema Club|Something Good Can Work': ['2009 singles', 'Tourist History'],
+    'Two Door Cinema Club|Undercover Martyn': ['2008 EP version', '2010 singles', 'Tourist History'],
+    'Lorde|Yellow Flicker Beat': ['film soundtracks', 'The Hunger Games', 'Mockingjay Part 1'],
+    'Kygo|It Ain\'t Me': ['Selena Gomez', 'collaborations', 'duets'],
+    'Kygo|First Time': ['Ellie Goulding', 'featured artists', 'collaborations'],
+    'Florence + the Machine|Spectrum (Say My Name)': ['Calvin Harris', 'remixes', 'dance remixes'],
+    'Birdy|Skinny Love': ['Bon Iver', 'cover versions', 'original artists'],
+    'Birdy|People Help the People': ['Cherry Ghost', 'cover versions', 'original artists'],
+    'Gabrielle Aplin|Sweet Nothing': ['2015 singles']
+};
+
+// A handful of joint recordings need more precise player-facing wording.
+// The answer choices and correct answers remain unchanged.
+const questionCorrections = {
+    12: "Which Swedish DJ teamed up with Nicky Romero on 'I Could Be the One'?",
+    16: "Which French production duo released 'Changes' with Pnau?",
+    24: "Which British producer released 'My Love' featuring Jess Glynne?",
+    25: "Which British DJ released 'I Got U' with Jax Jones?",
+    77: "Which Norwegian DJ collaborated with Selena Gomez on 'It Ain't Me'?",
+    78: "Which Norwegian DJ collaborated with Ellie Goulding on 'First Time'?"
+};
+
+function makeTags(title, artist) {
+    // Something Good Can Work first appeared as a single in 2009.
+    // Undercover Martyn also had an earlier EP version, but the
+    // 2010 single version stays with the 2010s.
+    const original2000s =
+        artist === 'Two Door Cinema Club' && title === 'Something Good Can Work';
+
+    return [...new Set([
+        original2000s ? '2000s' : '2010s',
+        'songs',
+        'artist identification',
+        'recordings',
+        ...artistTags[artist],
+        ...(recordingTags[`${artist}|${title}`] || [])
+    ])];
+}
+
 const artists = [
     ...new Set(
         songs.map(song => song[1])
@@ -200,7 +307,7 @@ const questions =
             category: 'Music',
 
             question:
-                `Which artist recorded '${title}'?`,
+                questionCorrections[index] || `Which artist recorded '${title}'?`,
 
             answers:
                 makeAnswers(
@@ -216,13 +323,11 @@ const questions =
                     ? 'Easy'
                     : 'Medium',
 
-            tags: [
-                '2010s',
-                'songs'
-            ],
+            tags: makeTags(title, artist),
 
             dailyEligible: true
         })
     );
 
 module.exports = questions;
+
