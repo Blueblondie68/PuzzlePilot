@@ -1,4 +1,4 @@
- // game_invites.js
+  // game_invites.js
 // PuzzlePilot - opt-in game announcements and Join Now buttons
 // Admins choose a channel. No channel = no announcements.
 // This helper NEVER sends a message when it is merely imported.
@@ -457,5 +457,6 @@ module.exports = {
     gamesChannelCommand,
     handleGamesChannelCommand,
     announcePlayed,
-    joinedGame
+    joinedGame,
+    configuredChannelId
 };
