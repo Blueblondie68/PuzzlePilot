@@ -1,3 +1,9 @@
+ // quiz_pack126.js
+// PuzzlePilot Big Quiz
+// Music Pack 126
+// Mostly 2010s indie/alternative music; one verified 2020 track
+// 100 questions; IDs music_10667 - music_10766
+// Expanded artist, region, genre, album and collaboration tags
 
 const songs = [
     ["TOOTIMETOOTIMETOOTIME", "The 1975"],
@@ -86,7 +92,7 @@ const songs = [
     ["Honey Sweet", "Blossoms"],
     ["Blown Rose", "Blossoms"],
     ["Cut Me and I'll Bleed", "Blossoms"],
-    ["There's a Reason Why", "Blossoms"],
+    ["There's a Reason Why (I Never Returned Your Calls)", "Blossoms"],
     ["I Can't Stand It", "Blossoms"],
     ["How Long Will This Last", "Blossoms"],
     ["Your Girlfriend", "Blossoms"],
@@ -117,6 +123,79 @@ const songs = [
     ["Bonfire", "The Hunna"],
     ["You & Me", "The Hunna"]
 ];
+
+// Every question receives these shared artist, region and genre tags.
+// Recordings and question IDs are otherwise preserved.
+const artistTags = {
+    "The 1975": ["The 1975", "UK music", "Manchester music", "indie pop", "synthpop", "alternative rock", "rock bands"],
+    "Wolf Alice": ["Wolf Alice", "UK music", "indie rock", "alternative rock", "shoegaze", "rock bands", "Mercury Prize winners"],
+    "The Amazons": ["The Amazons", "UK music", "indie rock", "hard rock", "rock bands"],
+    "The Wombats": ["The Wombats", "UK music", "Liverpool music", "indie rock", "indie pop", "rock bands"],
+    "The Pigeon Detectives": ["The Pigeon Detectives", "UK music", "Leeds music", "indie rock", "post-punk revival", "rock bands"],
+    "The Maccabees": ["The Maccabees", "UK music", "indie rock", "alternative rock", "rock bands"],
+    "Foals": ["Foals", "UK music", "Oxford music", "indie rock", "alternative rock", "rock bands"],
+    "Nothing But Thieves": ["Nothing But Thieves", "UK music", "alternative rock", "indie rock", "rock bands"],
+    "Declan McKenna": ["Declan McKenna", "UK music", "indie pop", "alternative rock", "singer-songwriters"],
+    "Arctic Monkeys": ["Arctic Monkeys", "UK music", "Sheffield music", "indie rock", "alternative rock", "rock bands", "Mercury Prize winners"],
+    "DMA's": ["DMA's", "Australian music", "indie rock", "Britpop revival", "rock bands"],
+    "Years & Years": ["Years & Years", "UK music", "synthpop", "electropop", "dance-pop", "Olly Alexander", "pop groups"],
+    "James Bay": ["James Bay", "UK music", "folk rock", "pop rock", "singer-songwriters"],
+    "George Ezra": ["George Ezra", "UK music", "folk pop", "pop rock", "singer-songwriters"],
+    "Blossoms": ["Blossoms", "UK music", "Manchester music", "Stockport music", "indie pop", "indie rock", "synthpop", "rock bands"],
+    "Circa Waves": ["Circa Waves", "UK music", "Liverpool music", "indie rock", "guitar rock", "rock bands"],
+    "Sundara Karma": ["Sundara Karma", "UK music", "indie rock", "psychedelic pop", "alternative rock", "rock bands"],
+    "The Hunna": ["The Hunna", "UK music", "indie rock", "pop rock", "rock bands"]
+};
+
+// Track-specific context for specialist quizzes. Only recorded
+// collaborations are described as collaborations.
+const recordingTags = {
+    "The 1975|TOOTIMETOOTIMETOOTIME": ["2018 singles", "A Brief Inquiry Into Online Relationships"],
+    "Wolf Alice|Don't Delete the Kisses": ["Visions of a Life", "2017 singles"],
+    "Wolf Alice|Beautifully Unconventional": ["Visions of a Life"],
+    "Wolf Alice|Yuk Foo": ["Visions of a Life"],
+    "Wolf Alice|Silk": ["My Love Is Cool"],
+    "The Wombats|Tokyo (Vampires & Wolves)": ["2010 singles", "This Modern Glitch"],
+    "The Pigeon Detectives|I Won't Come Back": ["2013 singles", "We Met at Sea"],
+    "Foals|Snake Oil": ["What Went Down"],
+    "Foals|Exits": ["2019 singles", "Everything Not Saved Will Be Lost Part 1"],
+    "Foals|Sunday": ["Everything Not Saved Will Be Lost Part 1"],
+    "Nothing But Thieves|Amsterdam": ["2017 singles", "Broken Machine"],
+    "Declan McKenna|Brazil": ["2015 singles", "What Do You Think About the Car?"],
+    "Declan McKenna|Rapture": ["2020 singles", "Zeros"],
+    "Arctic Monkeys|Four Out of Five": ["2018 singles", "Tranquility Base Hotel & Casino"],
+    "Arctic Monkeys|Tranquility Base Hotel & Casino": ["Tranquility Base Hotel & Casino", "2018 albums"],
+    "Arctic Monkeys|Star Treatment": ["Tranquility Base Hotel & Casino"],
+    "Arctic Monkeys|Batphone": ["Tranquility Base Hotel & Casino"],
+    "Years & Years|Meteorite": ["2016 singles", "film soundtracks", "Bridget Jones's Baby"],
+    "Years & Years|Play": ["Jax Jones", "collaborations", "DJ partnerships", "2018 singles"],
+    "James Bay|Peer Pressure": ["Julia Michaels", "collaborations", "duets", "2019 singles"],
+    "Blossoms|Charlemagne": ["2015 singles", "Blossoms debut album"],
+    "Blossoms|There's a Reason Why (I Never Returned Your Calls)": ["Cool Like You", "2018 singles"]
+};
+
+// Jointly credited singles need precise wording so the
+// answer selected from the original choices is unambiguous.
+const questionCorrections = {
+    62: "Which British pop group collaborated with Jax Jones on 'Play'?",
+    65: "Which British singer recorded 'Peer Pressure' featuring Julia Michaels?"
+};
+
+function makeTags(title, artist) {
+    // Rapture appeared in 2020 on Zeros, not in the 2010s.
+    const era = artist === "Declan McKenna" && title === "Rapture"
+        ? "2020s"
+        : "2010s";
+
+    return [...new Set([
+        era,
+        "songs",
+        "artist identification",
+        "recordings",
+        ...artistTags[artist],
+        ...(recordingTags[`${artist}|${title}`] || [])
+    ])];
+}
 
 const artists = [
     ...new Set(songs.map(song => song[1]))
@@ -154,6 +233,7 @@ const questions = songs.map((song, index) => {
         id: "music_" + (10667 + index),
         category: "Music",
         question:
+            questionCorrections[index] ||
             "Which artist recorded '" +
             title +
             "'?",
@@ -163,10 +243,7 @@ const questions = songs.map((song, index) => {
             index % 3 === 0
                 ? "Easy"
                 : "Medium",
-        tags: [
-            "2010s",
-            "songs"
-        ],
+        tags: makeTags(title, artist),
         dailyEligible: true
     };
 });
