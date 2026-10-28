@@ -1,4 +1,4 @@
-// quiz.js
+ // quiz.js
 // PuzzlePilot Quiz
 // Daily Quiz controller
 //
@@ -34,6 +34,10 @@ const {
     getDailyLeaderboard,
     getDailyPlayerPosition
 } = require('./quiz_database');
+
+const {
+    updateDailyLeaderboard
+} = require('./daily_leaderboards');
 
 const {
     WRONG_ACCENT,
@@ -141,7 +145,6 @@ function formatDailyLeaderboard(entries, playerPosition, serverId) {
     );
 }
 
-
 // ─────────────────────────────────────────────
 // FINISH DAILY QUIZ
 // ─────────────────────────────────────────────
@@ -190,8 +193,26 @@ async function finishDailyQuiz(interaction, session) {
 
     sessions.delete(session.id);
 
-    // Always show the final score first. A slow or failed
-    // leaderboard query must never hide a player's result.
+    // Update the public leaderboard independently.
+    // Never let a leaderboard problem interrupt
+    // the player's personal quiz result.
+
+    updateDailyLeaderboard(
+        interaction.client,
+        session.serverId,
+        'dailyquiz',
+        session.dateKey
+    ).catch(error => {
+        console.error(
+            'Public Daily Quiz leaderboard failed:',
+            error
+        );
+    });
+
+    // Always show the final score first.
+    // A slow or failed leaderboard query must
+    // never hide a player's result.
+
     const finalContainer = buildFinalContainer(session);
 
     try {
@@ -208,7 +229,11 @@ async function finishDailyQuiz(interaction, session) {
 
     try {
         const [leaders, playerPosition] = await Promise.all([
-            getDailyLeaderboard(session.serverId, session.dateKey, 10),
+            getDailyLeaderboard(
+                session.serverId,
+                session.dateKey,
+                10
+            ),
             getDailyPlayerPosition(
                 session.serverId,
                 session.userId,
