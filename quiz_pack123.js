@@ -1,7 +1,8 @@
-// quiz_pack123.js
+ // quiz_pack123.js
 // PuzzlePilot Big Quiz
 // Music Pack 123
-// 2010s songs
+// 2010s songs; 100 questions, IDs music_10367 - music_10466
+// Expanded artist, regional, genre, cover-version and collaboration tags
 
 const songs = [
     ['Let Me Go', 'Gary Barlow'],
@@ -139,88 +140,128 @@ const songs = [
     ['Finders Keepers', 'Mabel']
 ];
 
+// Shared tags expand into every generated question at load time.
+// They preserve the original songs and answer choices.
+const artistTags = {
+    'Gary Barlow': ['Gary Barlow', 'UK music', 'pop', 'singer-songwriters', 'Take That solo careers'],
+    'Lawson': ['Lawson', 'UK music', 'pop rock', 'pop bands'],
+    'The Wanted': ['The Wanted', 'UK music', 'Irish music', 'pop', 'boy bands'],
+    'The Saturdays': ['The Saturdays', 'UK music', 'Irish music', 'pop', 'dance-pop', 'girl groups'],
+    'Stooshe': ['Stooshe', 'UK music', 'pop', 'R&B', 'girl groups'],
+    'Eliza Doolittle': ['Eliza Doolittle', 'UK music', 'pop', 'retro soul', 'singer-songwriters'],
+    'Emeli Sande': ['Emeli Sandé', 'Scottish music', 'UK music', 'soul', 'R&B', 'singer-songwriters'],
+    'Foxes': ['Foxes', 'UK music', 'electropop', 'synthpop', 'female vocalists'],
+    'Paloma Faith': ['Paloma Faith', 'UK music', 'pop soul', 'retro soul', 'female vocalists'],
+    'Jessie J': ['Jessie J', 'UK music', 'pop', 'R&B', 'dance-pop', 'female vocalists'],
+    'Alexandra Burke': ['Alexandra Burke', 'UK music', 'pop', 'R&B', 'The X Factor', 'talent show winners'],
+    'Olly Murs': ['Olly Murs', 'UK music', 'pop', 'pop rock', 'The X Factor', 'talent show contestants'],
+    'McFly': ['McFly', 'UK music', 'pop rock', 'pop bands'],
+    'One Direction': ['One Direction', 'UK music', 'Irish music', 'pop', 'boy bands', 'The X Factor'],
+    'Zayn': ['Zayn', 'UK music', 'pop', 'R&B', 'One Direction solo careers'],
+    'Harry Styles': ['Harry Styles', 'UK music', 'pop rock', 'pop', 'One Direction solo careers'],
+    'Niall Horan': ['Niall Horan', 'Irish music', 'pop rock', 'folk pop', 'One Direction solo careers'],
+    'Liam Payne': ['Liam Payne', 'UK music', 'pop', 'R&B', 'One Direction solo careers'],
+    'Louis Tomlinson': ['Louis Tomlinson', 'UK music', 'pop', 'pop rock', 'One Direction solo careers'],
+    '5 Seconds of Summer': ['5 Seconds of Summer', 'Australian music', 'pop rock', 'pop punk', 'rock bands'],
+    'Sheppard': ['Sheppard', 'Australian music', 'indie pop', 'pop rock', 'pop groups'],
+    'Magic!': ['Magic!', 'Canadian music', 'reggae fusion', 'pop rock', 'bands'],
+    'Walk the Moon': ['Walk the Moon', 'US music', 'indie pop', 'synthpop', 'pop rock'],
+    'Echosmith': ['Echosmith', 'US music', 'indie pop', 'alternative rock', 'bands'],
+    'American Authors': ['American Authors', 'US music', 'indie rock', 'folk pop', 'rock bands'],
+    'Phillip Phillips': ['Phillip Phillips', 'US music', 'folk rock', 'pop rock', 'American Idol', 'talent show winners'],
+    'Rachel Platten': ['Rachel Platten', 'US music', 'pop', 'singer-songwriters', 'female vocalists'],
+    'Elle King': ['Elle King', 'US music', 'blues rock', 'country rock', 'singer-songwriters'],
+    'Hailee Steinfeld': ['Hailee Steinfeld', 'US music', 'pop', 'dance-pop', 'female vocalists'],
+    'Julia Michaels': ['Julia Michaels', 'US music', 'pop', 'singer-songwriters', 'female vocalists'],
+    'Alessia Cara': ['Alessia Cara', 'Canadian music', 'pop', 'R&B', 'singer-songwriters'],
+    'Daya': ['Daya', 'US music', 'electropop', 'dance-pop', 'female vocalists'],
+    'Halsey': ['Halsey', 'US music', 'electropop', 'alternative pop', 'singer-songwriters'],
+    'Demi Lovato': ['Demi Lovato', 'US music', 'pop', 'R&B', 'singer-songwriters'],
+    'Miley Cyrus': ['Miley Cyrus', 'US music', 'pop', 'pop rock', 'singer-songwriters'],
+    'Nick Jonas': ['Nick Jonas', 'US music', 'pop', 'R&B', 'Jonas Brothers solo careers'],
+    'DNCE': ['DNCE', 'US music', 'funk pop', 'pop rock', 'Joe Jonas', 'bands'],
+    'MKTO': ['MKTO', 'US music', 'pop', 'pop rap', 'duos'],
+    'Jason Derulo': ['Jason Derulo', 'US music', 'pop', 'R&B', 'dance-pop'],
+    'Ava Max': ['Ava Max', 'US music', 'dance-pop', 'electropop', 'female vocalists'],
+    'Mabel': ['Mabel', 'UK music', 'Norwegian-born artists', 'pop', 'R&B', 'dance-pop']
+};
+
+// Add only track-specific context here, not repeated artist tags.
+const recordingTags = {
+    'Lawson|Brokenhearted': ['B.o.B', 'featured artists', 'collaborations'],
+    'The Wanted|Gold Forever': ['Comic Relief', 'charity singles'],
+    'The Saturdays|Higher': ['Flo Rida', 'featured artists', 'collaborations'],
+    'The Saturdays|What About Us': ['Sean Paul', 'featured artists', 'collaborations'],
+    'Stooshe|Love Me': ['Travie McCoy', 'featured artists', 'collaborations'],
+    'Stooshe|Waterfalls': ['TLC', 'cover versions', 'original artists'],
+    'Emeli Sande|Read All About It, Pt. III': ['Professor Green', 'solo versions', 'song reworkings'],
+    'Paloma Faith|Never Tear Us Apart': ['INXS', 'cover versions', 'original artists', 'advert music'],
+    'Jessie J|Wild': ['Big Sean', 'Dizzee Rascal', 'featured artists', 'collaborations'],
+    'Alexandra Burke|Start Without You': ['Laza Morgan', 'featured artists', 'collaborations'],
+    'Alexandra Burke|Elephant': ['Erick Morillo', 'collaborations', 'dance music'],
+    'McFly|Shine a Light': ['Taio Cruz', 'featured artists', 'collaborations'],
+    'Zayn|Dusk Till Dawn': ['Sia', 'featured artists', 'collaborations'],
+    'Liam Payne|Strip That Down': ['Quavo', 'featured artists', 'collaborations'],
+    'Louis Tomlinson|Just Hold On': ['Steve Aoki', 'collaborations', 'dance-pop'],
+    'Louis Tomlinson|Back to You': ['Bebe Rexha', 'Digital Farm Animals', 'featured artists', 'collaborations'],
+    'Magic!|Lay You Down Easy': ['Sean Paul', 'featured artists', 'collaborations'],
+    'Hailee Steinfeld|Starving': ['Grey', 'Zedd', 'collaborations', 'electropop'],
+    'Nick Jonas|Close': ['Tove Lo', 'featured artists', 'collaborations'],
+    'DNCE|Kissing Strangers': ['Nicki Minaj', 'featured artists', 'collaborations'],
+    'Jason Derulo|Swalla': ['Nicki Minaj', 'Ty Dolla $ign', 'featured artists', 'collaborations'],
+    'Mabel|Finders Keepers': ['Kojo Funds', 'featured artists', 'collaborations']
+};
+
+// Reword collaborative credits where a sole-artist question is unclear.
+// Keep every question's original correct answer and four choices.
+const questionCorrections = {
+    38: "Which British singer teamed up with Erick Morillo on 'Elephant'?",
+    44: "Which British band released 'Shine a Light' featuring Taio Cruz?",
+    50: "Which former One Direction singer recorded 'Dusk Till Dawn' with Sia?",
+    58: "Which former One Direction singer collaborated with Steve Aoki on 'Just Hold On'?",
+    59: "Which former One Direction singer released 'Back to You' featuring Bebe Rexha?",
+    79: "Which American singer recorded 'Starving' with Grey and Zedd?"
+};
+
 const artists = [
-    ...new Set(
-        songs.map(song => song[1])
-    )
+    ...new Set(songs.map(song => song[1]))
 ];
 
 function makeAnswers(correctArtist, index) {
-    const wrongArtists =
-        artists.filter(
-            artist =>
-                artist !== correctArtist
-        );
-
-    const wrong1 =
-        wrongArtists[
-            index %
-            wrongArtists.length
-        ];
-
-    const wrong2 =
-        wrongArtists[
-            (index + 11) %
-            wrongArtists.length
-        ];
-
-    const wrong3 =
-        wrongArtists[
-            (index + 23) %
-            wrongArtists.length
-        ];
-
+    const wrongArtists = artists.filter(artist => artist !== correctArtist);
     const answers = [
         correctArtist,
-        wrong1,
-        wrong2,
-        wrong3
+        wrongArtists[index % wrongArtists.length],
+        wrongArtists[(index + 11) % wrongArtists.length],
+        wrongArtists[(index + 23) % wrongArtists.length]
     ];
-
-    const rotation =
-        index % 4;
-
+    const rotation = index % 4;
     return [
         ...answers.slice(rotation),
         ...answers.slice(0, rotation)
     ];
 }
 
-const questions =
-    songs.map(
-        ([title, artist], index) => ({
-            id:
-                'music_' +
-                String(
-                    10367 + index
-                ).padStart(4, '0'),
+function makeTags(title, artist) {
+    return [...new Set([
+        '2010s',
+        'songs',
+        'artist identification',
+        'recordings',
+        ...artistTags[artist],
+        ...(recordingTags[`${artist}|${title}`] || [])
+    ])];
+}
 
-            category: 'Music',
-
-            question:
-                `Which artist recorded '${title}'?`,
-
-            answers:
-                makeAnswers(
-                    artist,
-                    index
-                ),
-
-            correctAnswer:
-                artist,
-
-            difficulty:
-                index % 3 === 0
-                    ? 'Easy'
-                    : 'Medium',
-
-            tags: [
-                '2010s',
-                'songs'
-            ],
-
-            dailyEligible: true
-        })
-    );
+const questions = songs.map(([title, artist], index) => ({
+    id: 'music_' + String(10367 + index).padStart(4, '0'),
+    category: 'Music',
+    question: questionCorrections[index] || `Which artist recorded '${title}'?`,
+    answers: makeAnswers(artist, index),
+    correctAnswer: artist,
+    difficulty: index % 3 === 0 ? 'Easy' : 'Medium',
+    tags: makeTags(title, artist),
+    dailyEligible: true
+}));
 
 module.exports = questions;
