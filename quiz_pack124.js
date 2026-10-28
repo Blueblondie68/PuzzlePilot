@@ -1,7 +1,8 @@
 // quiz_pack124.js
 // PuzzlePilot Big Quiz
 // Music Pack 124
-// 2010s songs
+// 2010s songs; 100 questions, IDs music_10467 - music_10566
+// Expanded artist, regional, genre and specialist tags
 
 const songs = [
     ['Did You Hear the Rain?', 'George Ezra'],
@@ -136,6 +137,91 @@ const songs = [
     ['30 Days', 'The Saturdays']
 ];
 
+// Shared artist tags are expanded into each generated question.
+// These are for specialist quizzes and do not change the answers.
+const artistTags = {
+    'George Ezra': ['George Ezra', 'UK music', 'folk pop', 'blues rock', 'singer-songwriters'],
+    'Disclosure': ['Disclosure', 'UK music', 'house music', 'UK garage', 'electronic music', 'duos'],
+    'Dean Lewis': ['Dean Lewis', 'Australian music', 'pop rock', 'singer-songwriters'],
+    'Dermot Kennedy': ['Dermot Kennedy', 'Irish music', 'folk pop', 'pop', 'singer-songwriters'],
+    'Tom Walker': ['Tom Walker', 'Scottish music', 'UK music', 'pop', 'singer-songwriters'],
+    'Freya Ridings': ['Freya Ridings', 'UK music', 'pop', 'singer-songwriters', 'female vocalists'],
+    'Sasha Alex Sloan': ['Sasha Alex Sloan', 'US music', 'indie pop', 'alternative pop', 'singer-songwriters'],
+    'Anne-Marie': ['Anne-Marie', 'UK music', 'pop', 'dance-pop', 'female vocalists'],
+    'Rita Ora': ['Rita Ora', 'UK music', 'Kosovo-born artists', 'pop', 'dance-pop', 'female vocalists'],
+    'Ed Sheeran': ['Ed Sheeran', 'UK music', 'pop', 'folk pop', 'singer-songwriters'],
+    'Adele': ['Adele', 'UK music', 'soul', 'pop', 'singer-songwriters'],
+    'Taylor Swift': ['Taylor Swift', 'US music', 'pop', 'synthpop', 'singer-songwriters'],
+    'Camila Cabello': ['Camila Cabello', 'US music', 'Cuban-born artists', 'pop', 'Latin pop'],
+    'Khalid': ['Khalid', 'US music', 'contemporary R&B', 'pop', 'singer-songwriters'],
+    'Shawn Mendes': ['Shawn Mendes', 'Canadian music', 'pop', 'pop rock', 'singer-songwriters'],
+    'Beyonce': ['Beyonce', 'US music', 'R&B', 'pop', 'female vocalists'],
+    'Rihanna': ['Rihanna', 'Barbadian music', 'Caribbean music', 'R&B', 'pop'],
+    'Ariana Grande': ['Ariana Grande', 'US music', 'pop', 'R&B', 'female vocalists'],
+    'Demi Lovato': ['Demi Lovato', 'US music', 'pop', 'pop rock', 'singer-songwriters'],
+    'Miley Cyrus': ['Miley Cyrus', 'US music', 'pop', 'pop rock', 'singer-songwriters'],
+    'Halsey': ['Halsey', 'US music', 'alternative pop', 'electropop', 'singer-songwriters'],
+    'Troye Sivan': ['Troye Sivan', 'Australian music', 'South African-born artists', 'electropop', 'synthpop'],
+    'Jonas Brothers': ['Jonas Brothers', 'US music', 'pop rock', 'pop', 'boy bands'],
+    'DNCE': ['DNCE', 'US music', 'funk pop', 'pop rock', 'bands', 'Joe Jonas'],
+    'MKTO': ['MKTO', 'US music', 'pop', 'pop rap', 'duos'],
+    'Lizzo': ['Lizzo', 'US music', 'pop', 'hip hop', 'R&B', 'female rappers'],
+    'Harry Styles': ['Harry Styles', 'UK music', 'pop rock', 'soft rock', 'One Direction solo careers'],
+    'Niall Horan': ['Niall Horan', 'Irish music', 'pop rock', 'folk pop', 'One Direction solo careers'],
+    'Liam Payne': ['Liam Payne', 'UK music', 'pop', 'R&B', 'One Direction solo careers'],
+    'Louis Tomlinson': ['Louis Tomlinson', 'UK music', 'pop', 'pop rock', 'One Direction solo careers'],
+    'Zayn': ['Zayn', 'UK music', 'pop', 'R&B', 'One Direction solo careers'],
+    'Little Mix': ['Little Mix', 'UK music', 'pop', 'R&B', 'girl groups', 'The X Factor'],
+    'The Saturdays': ['The Saturdays', 'UK music', 'Irish music', 'pop', 'dance-pop', 'girl groups']
+};
+
+// Track-specific context: collaborations, guest performers, remixes
+// and songwriters. A remix tag does not replace the original recording.
+const recordingTags = {
+    'Anne-Marie|2002': ['Ed Sheeran', 'Julia Michaels', 'songwriters', 'songwriting credits'],
+    'Rita Ora|Your Song': ['Ed Sheeran', 'songwriters', 'songwriting credits'],
+    'Taylor Swift|End Game': ['Ed Sheeran', 'Future', 'featured artists', 'collaborations'],
+    'Camila Cabello|Real Friends': ['Swae Lee', 'single remixes', 'collaborations'],
+    'Khalid|Love Lies': ['Normani', 'collaborations', 'duets', 'film soundtracks', 'Love, Simon'],
+    'Shawn Mendes|Youth': ['Khalid', 'featured artists', 'collaborations'],
+    'Beyonce|Flawless': ['Chimamanda Ngozi Adichie', 'spoken word samples', 'samples'],
+    'Ariana Grande|Love Me Harder': ['The Weeknd', 'collaborations', 'duets'],
+    "Demi Lovato|Really Don't Care": ['Cher Lloyd', 'featured artists', 'collaborations'],
+    'Halsey|Alone': ['Big Sean', 'Stefflon Don', 'single remixes', 'collaborations'],
+    'Troye Sivan|Dance to This': ['Ariana Grande', 'featured artists', 'collaborations'],
+    'Lizzo|Tempo': ['Missy Elliott', 'featured artists', 'collaborations'],
+    'Liam Payne|Familiar': ['J Balvin', 'collaborations', 'duets'],
+    'Liam Payne|Stack It Up': ['A Boogie wit da Hoodie', 'Ed Sheeran', 'featured artists', 'collaborations', 'songwriting credits'],
+    'Little Mix|Think About Us': ['Ty Dolla Sign', 'single remixes', 'collaborations'],
+    'Little Mix|Hair': ['Sean Paul', 'single remixes', 'collaborations']
+};
+
+// Clear up co-credited recordings and the song title ending in '?'.
+// All correct answers and the original answer options are retained.
+const questionCorrections = {
+    0: "Which artist recorded the song 'Did You Hear the Rain?'",
+    30: "Which American singer recorded 'End Game' with Ed Sheeran and Future?",
+    39: "Which American singer collaborated with Normani on 'Love Lies'?",
+    42: "Which Canadian singer recorded 'Youth' with Khalid?",
+    53: "Which American singer recorded 'Love Me Harder' with The Weeknd?",
+    59: "Which American singer released 'Really Don't Care' featuring Cher Lloyd?",
+    70: "Which Australian singer collaborated with Ariana Grande on 'Dance to This'?",
+    79: "Which American singer recorded 'Tempo' featuring Missy Elliott?",
+    85: "Which former One Direction singer recorded 'Familiar' with J Balvin?",
+    86: "Which former One Direction singer released 'Stack It Up' featuring A Boogie wit da Hoodie?"
+};
+
+function makeTags(title, artist) {
+    return [...new Set([
+        '2010s',
+        'songs',
+        'artist identification',
+        'recordings',
+        ...artistTags[artist],
+        ...(recordingTags[`${artist}|${title}`] || [])
+    ])];
+}
+
 const artists = [
     ...new Set(
         songs.map(song => song[1])
@@ -195,7 +281,7 @@ const questions =
             category: 'Music',
 
             question:
-                `Which artist recorded '${title}'?`,
+                questionCorrections[index] || `Which artist recorded '${title}'?`,
 
             answers:
                 makeAnswers(
@@ -211,10 +297,7 @@ const questions =
                     ? 'Easy'
                     : 'Medium',
 
-            tags: [
-                '2010s',
-                'songs'
-            ],
+            tags: makeTags(title, artist),
 
             dailyEligible: true
         })
