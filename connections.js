@@ -1,4 +1,4 @@
-// connections.js
+ // connections.js
 // PuzzlePilot Connections
 // Main controller for Daily and Continuous Connections
 //
@@ -44,6 +44,8 @@ const {
     getDailyConnectionsLeaderboard,
     getDailyConnectionsSummary
 } = require('./connections_database.js');
+
+const { updateDailyLeaderboard } = require('./daily_leaderboards');
 
 // ─────────────────────────────────────────────
 // ACTIVE BOARDS
@@ -341,6 +343,17 @@ async function finishBoard(interaction, state, messageId, won) {
 
     if (state.mode === 'daily') {
         if (saved) {
+            // Public standings update independently of the player's result.
+            // Failures must never interrupt their private leaderboard.
+            updateDailyLeaderboard(
+                interaction.client,
+                state.serverId,
+                'connections',
+                state.dateKey
+            ).catch(error => {
+                console.error('Public Connections leaderboard failed:', error);
+            });
+
             await sendDailyLeaderboard(interaction, state);
         } else {
             await interaction.followUp({
