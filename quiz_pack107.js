@@ -1,3 +1,4 @@
+
  // quiz_pack107.js
 // PuzzlePilot Big Quiz - Pack 107
 // Music - mainly 2000s, with four original 1990s recordings
@@ -204,8 +205,10 @@ function makeTags(title, artist) {
         tags.push('football songs', '2006 World Cup', 'England football');
     }
 
+    // Tears circulated before the 2007 mixtape and was also
+    // released as a single in 2008.
     if (artist === 'Tinie Tempah' && title === 'Tears') {
-        tags.push('mixtape tracks', '2007 recordings');
+        tags.push('2007 mixtapes', '2008 singles');
     }
 
     if (artist === 'David Gray' && title === 'Sail Away') {
