@@ -1,4 +1,4 @@
- // quiz_pack105.js
+// quiz_pack105.js
 // PuzzlePilot Big Quiz - Pack 105
 // Music - mainly 2000s, plus one original 1990s recording
 // 100 questions; IDs music_8567 - music_8666
@@ -212,23 +212,35 @@ function makeTags(title, artist) {
     if (artist === 'Groove Armada' && title === 'At the River') {
         tags.push('1997 songs', '1999 reissues');
     }
+
     if (artist === 'Groove Armada' && title === 'Song 4 Mutya (Out of Control)') {
         tags.push('Mutya Buena', 'collaborations');
     }
+
     if (artist === 'Mr Hudson and the Library' && title === 'On the Street Where You Live') {
         tags.push('cover versions', 'musical theatre songs', 'My Fair Lady');
     }
+
     if (artist === 'Blue feat. Elton John' && title === 'Sorry Seems to Be the Hardest Word') {
         tags.push('cover versions', 'Elton John songs');
     }
+
     if (artist === 'Liberty X' && title === 'Got to Have Your Love') {
         tags.push('cover versions');
     }
+
     if (artist === 'Dizzee Rascal' && title === 'Holiday') {
         tags.push('dance music');
     }
+
     if (artist === 'Taio Cruz feat. Busta Rhymes') {
         tags.push('remix recordings');
+    }
+
+    // Lethal Bizzle reworked earlier punk recordings.
+    if (artist === 'Lethal Bizzle' &&
+        ['Babylon\'s Burning the Ghetto', 'Police on My Back'].includes(title)) {
+        tags.push('cover versions', 'punk rock');
     }
 
     return [...new Set(tags)];
