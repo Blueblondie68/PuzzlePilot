@@ -128,6 +128,125 @@ const musicianFacts = {
     ],
 };
 
+// Specialist tags for the groups and musical settings in this pack.
+// Each question also receives its musician, group and instrument tags.
+const groupTagLines = {
+    'Albert Lee & Hogan’s Heroes': 'UK music|country rock|rockabilly|roots music',
+    'Fleetwood Mac': 'British-American music|blues rock|classic rock|soft rock',
+    'Blodwyn Pig': 'UK music|blues rock|jazz rock|1960s music',
+    'Ten Years After': 'UK music|blues rock|classic rock|British rock',
+    'Taste': 'Irish music|blues rock|classic rock|Rory Gallagher',
+    'Deep Purple': 'UK music|hard rock|heavy metal|classic rock',
+    'Mr. Big': 'American music|hard rock|glam metal|rock bands',
+    'Journey': 'American music|arena rock|classic rock|hard rock',
+    'Rush': 'Canadian music|progressive rock|hard rock|classic rock',
+    'Savoy Brown': 'UK music|British blues|blues rock|classic rock',
+    'Elvis Presley’s TCB Band': 'American music|rock and roll|Elvis Presley|live musicians',
+    'The Nashville A-Team': 'American music|country music|Nashville music|session musicians',
+    'Link Wray and His Ray Men': 'American music|instrumental rock|rock and roll|1950s music',
+    'The Del-Tones': 'American music|surf rock|instrumental rock|Dick Dale',
+    'Chickenfoot': 'American music|hard rock|supergroups|classic rock',
+    'Scorpions': 'German music|hard rock|heavy metal|arena rock',
+    'Electric Sun': 'German music|hard rock|heavy metal|Uli Jon Roth',
+    'Kiss': 'American music|hard rock|glam rock|classic rock',
+    "Frehley's Comet": 'American music|hard rock|glam metal|Ace Frehley',
+    'Creedence Clearwater Revival': 'American music|roots rock|swamp rock|classic rock',
+    'Boston': 'American music|arena rock|hard rock|classic rock',
+    'The Cars': 'American music|new wave|power pop|Boston music',
+    'Duran Duran': 'UK music|new romantic|new wave|synth-pop',
+    'Ocean Colour Scene': 'UK music|Britpop|mod revival|alternative rock',
+    'Focus': 'Dutch music|progressive rock|instrumental rock|classic rock',
+    'Cheap Trick': 'American music|power pop|hard rock|classic rock',
+    'Devo': 'American music|new wave|art punk|post-punk',
+    'The Carpenters': 'American music|soft rock|easy listening|1970s pop',
+    'Derek and the Dominos': 'British-American music|blues rock|classic rock|Eric Clapton',
+    'Stuff': 'American music|jazz fusion|funk|session musicians',
+    'The Yardbirds': 'UK music|British Invasion|blues rock|1960s music',
+    'The Dave Clark Five': 'UK music|British Invasion|beat music|1960s pop',
+    'Fairport Convention': 'UK music|British folk rock|folk rock|traditional folk',
+    'The Pretenders': 'UK music|new wave|rock music|Chrissie Hynde',
+    'The Damned': 'UK music|British punk|gothic rock|punk rock',
+    'Judas Priest': 'UK music|heavy metal|British metal|hard rock',
+    'Talking Heads': 'American music|new wave|art rock|post-punk',
+    'Sly and Robbie': 'Jamaican music|reggae|dub music|rhythm section',
+    'Bob Marley and the Wailers': 'Jamaican music|roots reggae|reggae|Bob Marley',
+    'Japan': 'UK music|new romantic|art pop|new wave',
+    'Megadeth': 'American music|thrash metal|heavy metal|metal bands',
+    'The Who': 'UK music|British rock|mod music|classic rock',
+    'Big Country': 'Scottish music|UK music|Celtic rock|new wave',
+    'Public Image Ltd': 'UK music|post-punk|experimental rock|John Lydon',
+    'R.E.M.': 'American music|alternative rock|college rock|indie rock',
+    'Sweet': 'UK music|glam rock|hard rock|1970s music',
+    'Kajagoogoo': 'UK music|new wave|synth-pop|1980s pop',
+    'Ride': 'UK music|shoegaze|alternative rock|indie rock',
+    'The Blockheads': 'UK music|pub rock|new wave|Ian Dury',
+    'Supertramp': 'UK music|progressive rock|soft rock|pop rock',
+    'Rainbow': 'UK music|hard rock|heavy metal|Ritchie Blackmore',
+    'Talk Talk': 'UK music|synth-pop|art rock|post-rock',
+    'Oasis': 'UK music|Manchester music|Britpop|alternative rock',
+    'Sex Pistols': 'UK music|British punk|punk rock|1970s music',
+    'Cocteau Twins': 'Scottish music|UK music|dream pop|ethereal wave',
+    'Electric Light Orchestra': 'UK music|symphonic rock|pop rock|classic rock',
+    'Camel': 'UK music|progressive rock|Canterbury scene|classic rock',
+    'Depeche Mode': 'UK music|synth-pop|electronic music|new wave',
+    'Medeski Martin & Wood': 'American music|jazz-funk|jazz fusion|experimental jazz',
+    'The Allman Brothers Band': 'American music|southern rock|blues rock|jam bands',
+    'The Moody Blues': 'UK music|progressive rock|psychedelic rock|classic rock',
+    'Jethro Tull': 'UK music|progressive rock|folk rock|classic rock',
+    'David Bowie’s touring band': 'UK music|art rock|glam rock|David Bowie',
+    'Toto': 'American music|soft rock|pop rock|session musicians',
+    'Gong': 'UK music|progressive rock|psychedelic rock|Canterbury scene',
+    'The E Street Band': 'American music|heartland rock|Bruce Springsteen|rock bands',
+    'Quicksilver Messenger Service': 'American music|San Francisco music|psychedelic rock|classic rock',
+    'Louis Prima’s band': 'American music|swing music|New Orleans jazz|Louis Prima',
+    'James Carter Organ Trio': 'American music|jazz music|organ jazz|jazz ensembles',
+    'Ornette Coleman Quartet': 'American music|free jazz|avant-garde jazz|jazz ensembles',
+    'Count Basie Orchestra': 'American music|big band|swing music|jazz orchestras',
+    'Charlie Parker Quintet': 'American music|bebop|jazz music|jazz ensembles',
+    'Gerry Mulligan Quartet': 'American music|cool jazz|West Coast jazz|jazz quartets',
+    'The Rolling Stones’ touring band': 'UK music|British rock|classic rock|The Rolling Stones',
+    'Trans-Siberian Orchestra': 'American music|symphonic rock|progressive metal|rock opera',
+    'Bill Frisell’s band': 'American music|jazz guitar|contemporary jazz|Bill Frisell',
+    'Shakti': 'Indian music|Indian classical music|jazz fusion|world music',
+    'The Kennedy Experience': 'UK music|classical crossover|Jimi Hendrix tribute|violin music',
+    'The Levellers': 'UK music|folk rock|Celtic rock|alternative rock',
+    'that dog.': 'American music|alternative rock|indie rock|power pop',
+    'The Brecker Brothers': 'American music|jazz fusion|jazz-funk|instrumental music',
+    'Tony Williams Quintet': 'American music|post-bop|jazz music|jazz ensembles',
+    'Gene Krupa Orchestra': 'American music|big band|swing music|jazz orchestras',
+    'Enrico Rava Quartet': 'Italian music|modern jazz|post-bop|jazz ensembles',
+    'Christian Scott Quintet': 'American music|contemporary jazz|jazz ensembles|New Orleans jazz',
+    'Nicholas Payton Quintet': 'American music|modern jazz|jazz ensembles|New Orleans jazz',
+    'The J. Geils Band': 'American music|blues rock|classic rock|Boston music',
+    'Satan and Adam': 'American music|blues music|street blues|blues harmonica',
+    'The Lovin’ Spoonful': 'American music|folk rock|pop rock|1960s music',
+    'The Steve Miller Band': 'American music|blues rock|classic rock|pop rock',
+    'Madcat & Kane': 'American music|blues music|folk blues|blues harmonica',
+    'Yusef Lateef Quartet': 'American music|jazz music|world jazz|jazz ensembles',
+    'Chico Hamilton Quintet': 'American music|West Coast jazz|cool jazz|jazz ensembles',
+    'Herbie Mann Afro-Jazz Sextet': 'American music|Afro-Cuban jazz|jazz flute|jazz ensembles',
+    'The L.A. Four': 'American music|West Coast jazz|jazz quartets|instrumental jazz',
+    'The Stanley Brothers': 'American music|bluegrass|country music|traditional folk',
+    'Carolina Chocolate Drops': 'American music|old-time music|Americana|traditional folk',
+    'Punch Brothers': 'American music|progressive bluegrass|chambergrass|acoustic music',
+    'Alison Brown Quartet': 'American music|progressive bluegrass|jazz fusion|banjo music'
+};
+
+// Instrument names remain the original selection labels.
+const instrumentTagLines = {
+    Guitar: 'guitar|guitarists|string instruments|guitar players',
+    Drums: 'drums|drummers|percussion|drum kit',
+    Bass: 'bass|bass guitar|bassists|rhythm section',
+    Keyboards: 'keyboards|keyboard players|keyboard instruments|keyboard music',
+    Saxophone: 'saxophone|saxophonists|woodwind instruments|saxophone players',
+    Violin: 'violin|violinists|fiddle|string instruments',
+    Trumpet: 'trumpet|trumpeters|brass instruments|trumpet players',
+    Harmonica: 'harmonica|harmonica players|mouth organ|blues harmonica',
+    Flute: 'flute|flautists|woodwind instruments|flute players',
+    Banjo: 'banjo|banjo players|plucked strings|folk instruments'
+};
+const splitTags = value => value.split('|');
+
 // First number = instrument questions; second = group questions.
 // The remaining questions in each section identify the musician.
 const questionMix = {
@@ -210,6 +329,9 @@ for (const [instrument, facts] of Object.entries(musicianFacts)) {
             groups.has(normalise(group))) {
             throw new Error('Pack 154: repeated or invalid musician/group: ' + musician);
         }
+        if (!groupTagLines[group] || !instrumentTagLines[instrument]) {
+            throw new Error('Pack 154: missing specialist tags for ' + musician);
+        }
         featured.add(normalise(musician));
         groups.add(normalise(group));
     }
@@ -246,12 +368,19 @@ for (const [instrument, facts] of Object.entries(musicianFacts)) {
             answers,
             correctAnswer,
             difficulty,
-            tags: [
+            tags: [...new Set([
                 'Musicians & Instruments',
                 instrument,
                 askInstrument ? 'Instrument recognition' :
-                    askGroup ? 'Bands' : 'Musicians'
-            ],
+                    askGroup ? 'Bands' : 'Musicians',
+                'Music', 'music trivia', 'band members',
+                'instrument trivia', 'instrument players',
+                askInstrument ? 'instrument identification' :
+                    askGroup ? 'group identification' : 'musician identification',
+                musician, group,
+                ...splitTags(instrumentTagLines[instrument]),
+                ...splitTags(groupTagLines[group])
+            ])],
             dailyEligible: true
         });
     }
@@ -273,7 +402,8 @@ for (const q of questions) {
         q.answers.filter(answer => answer === q.correctAnswer).length !== 1 ||
         !['Easy', 'Medium', 'Hard'].includes(q.difficulty) ||
         q.category !== 'Music' || q.dailyEligible !== true ||
-        !Array.isArray(q.tags) || q.tags.length !== 3) {
+        !Array.isArray(q.tags) || q.tags.length < 13 ||
+        new Set(q.tags).size !== q.tags.length) {
         throw new Error('Pack 154: invalid question ' + q.id);
     }
     ids.add(q.id);
