@@ -1,4 +1,4 @@
-// quiz_pack149.js
+ // quiz_pack149.js
 // PuzzlePilot - The Bigggggg Quiz
 // Music: Musicians & Instruments - Pack 149
 // 100 questions: music_12901 to music_13000.
@@ -127,6 +127,91 @@ const musicianFacts = {
     ]
 };
 
+// Specialist genre and scene tags for the groups in this pack.
+// Each question also gets the musician and their group's name as tags.
+const groupTagLines = {
+    "Queen": "UK music|British rock|classic rock|glam rock|Freddie Mercury",
+    "Led Zeppelin": "UK music|hard rock|blues rock|classic rock|British rock",
+    "Pink Floyd": "UK music|progressive rock|psychedelic rock|classic rock",
+    "Deep Purple": "UK music|hard rock|heavy metal|classic rock",
+    "Black Sabbath": "UK music|heavy metal|hard rock|Birmingham music",
+    "AC/DC": "Australian music|hard rock|classic rock|rock bands",
+    "The Rolling Stones": "UK music|British rock|blues rock|classic rock",
+    "The Beatles": "UK music|Liverpool music|British Invasion|classic rock|pop rock",
+    "The Who": "UK music|British rock|mod music|classic rock",
+    "Dire Straits": "UK music|roots rock|classic rock|rock bands",
+    "The Police": "UK music|new wave|reggae rock|rock bands",
+    "The Smiths": "UK music|Manchester music|indie rock|alternative rock",
+    "Red Hot Chili Peppers": "American music|funk rock|alternative rock|California music",
+    "Guns N' Roses": "American music|hard rock|Los Angeles music|classic rock",
+    "Metallica": "American music|thrash metal|heavy metal|hard rock",
+    "Foo Fighters": "American music|alternative rock|post-grunge|Dave Grohl",
+    "Oasis": "UK music|Manchester music|Britpop|alternative rock",
+    "U2": "Irish music|rock music|alternative rock|Bono",
+    "Fleetwood Mac": "British-American music|soft rock|classic rock|pop rock",
+    "R.E.M.": "American music|alternative rock|college rock|indie rock",
+    "The Cure": "UK music|post-punk|gothic rock|alternative rock",
+    "Suede": "UK music|Britpop|alternative rock|indie rock",
+    "Radiohead": "UK music|alternative rock|art rock|experimental rock",
+    "The Clash": "UK music|punk rock|British punk|post-punk",
+    "Cheap Trick": "American music|power pop|hard rock|classic rock",
+    "Rush": "Canadian music|progressive rock|hard rock|rock bands",
+    "Genesis": "UK music|progressive rock|pop rock|classic rock",
+    "Nirvana": "American music|Seattle music|grunge|alternative rock",
+    "Blink-182": "American music|pop punk|punk rock|California music",
+    "Muse": "UK music|alternative rock|progressive rock|rock bands",
+    "Arctic Monkeys": "UK music|Sheffield music|indie rock|alternative rock",
+    "The White Stripes": "American music|Detroit music|garage rock revival|blues rock",
+    "Green Day": "American music|punk rock|pop punk|alternative rock",
+    "Blur": "UK music|Britpop|alternative rock|British bands",
+    "Joy Division": "UK music|Manchester music|post-punk|alternative rock",
+    "Iron Maiden": "UK music|heavy metal|New Wave of British Heavy Metal|hard rock",
+    "Pixies": "American music|alternative rock|indie rock|Boston music",
+    "Yes": "UK music|progressive rock|art rock|classic rock",
+    "The Doors": "American music|psychedelic rock|classic rock|Los Angeles music",
+    "Duran Duran": "UK music|new romantic|new wave|synth-pop|Birmingham music",
+    "Depeche Mode": "UK music|synth-pop|new wave|electronic music|Basildon music",
+    "The Stranglers": "UK music|punk rock|new wave|post-punk",
+    "Squeeze": "UK music|new wave|pop rock|British pop",
+    "Elvis Costello and the Attractions": "UK music|new wave|pub rock|British rock",
+    "The Zombies": "UK music|British Invasion|psychedelic pop|1960s music",
+    "Emerson, Lake & Palmer": "UK music|progressive rock|symphonic rock|1970s rock",
+    "Dream Theater": "American music|progressive metal|progressive rock|heavy metal",
+    "Tom Petty and the Heartbreakers": "American music|heartland rock|roots rock|classic rock",
+    "Small Faces": "UK music|mod music|psychedelic rock|1960s music",
+    "Bon Jovi": "American music|hard rock|arena rock|glam metal",
+    "INXS": "Australian music|new wave|rock music|pop rock",
+    "Pet Shop Boys": "UK music|synth-pop|electronic music|dance-pop",
+    "Nightwish": "Finnish music|symphonic metal|heavy metal|power metal",
+    "Madness": "UK music|ska revival|2 Tone|British pop|Camden music",
+    "Roxy Music": "UK music|glam rock|art rock|new wave",
+    "UB40": "UK music|Birmingham music|reggae|reggae pop",
+    "Spandau Ballet": "UK music|new romantic|sophisti-pop|new wave",
+    "The E Street Band": "American music|heartland rock|Bruce Springsteen|rock bands",
+    "Fairport Convention": "UK music|British folk rock|folk music|traditional music",
+    "The Charlie Daniels Band": "American music|southern rock|country rock|country music",
+    "Dave Matthews Band": "American music|jam bands|alternative rock|folk rock",
+    "Dirty Three": "Australian music|post-rock|instrumental rock|experimental rock",
+    "Mahavishnu Orchestra": "jazz fusion|progressive rock|instrumental music|jazz rock",
+    "Louis Armstrong and His Hot Five": "American music|jazz music|New Orleans jazz|early jazz|1920s music",
+    "Dizzy Gillespie All-Stars": "American music|bebop|jazz music|jazz ensembles",
+    "The Miles Davis Quintet": "American music|jazz music|hard bop|jazz ensembles",
+    "Herb Alpert & the Tijuana Brass": "American music|instrumental pop|easy listening|jazz pop|brass bands",
+    "The Jazz Epistles": "South African music|jazz music|South African jazz|jazz ensembles"
+};
+
+const instrumentTagLines = {
+    Guitar: "guitar|guitarists|electric guitar|rock guitar",
+    Drums: "drums|drummers|percussion|drum kit",
+    Bass: "bass|bass guitar|bassists|rhythm section",
+    Keyboards: "keyboards|keyboardists|piano|organ|synthesizers",
+    Saxophone: "saxophone|saxophonists|woodwind instruments|horn section",
+    Violin: "violin|violinists|fiddle|string instruments",
+    Trumpet: "trumpet|trumpeters|brass instruments|jazz musicians"
+};
+
+const splitTags = line => line ? line.split('|') : [];
+
 // ─────────────────────────────────────────────
 // SETTINGS AND VALIDATION
 // ─────────────────────────────────────────────
@@ -180,6 +265,10 @@ for (const [instrument, expected] of Object.entries(expectedCounts)) {
             throw new Error(
                 `Repeated ${instrument} musician or group: ${musician}`
             );
+        }
+
+        if (!groupTagLines[band] || !instrumentTagLines[instrument]) {
+            throw new Error('Missing specialist tags: ' + musician);
         }
 
         seenMusicians.add(normalise(musician));
@@ -312,6 +401,18 @@ for (const [instrument, facts] of Object.entries(musicianFacts)) {
                     ? 'Easy'
                     : 'Medium';
 
+        const tags = [...new Set([
+            'Musicians & Instruments',
+            instrument,
+            askForBand ? 'Bands' : 'Musicians',
+            'Music', 'music trivia', 'band members',
+            'instrument trivia', 'instrument players',
+            askForBand ? 'group identification' : 'musician identification',
+            musician, band,
+            ...splitTags(instrumentTagLines[instrument]),
+            ...splitTags(groupTagLines[band])
+        ])];
+
         questions.push({
             id: 'music_' + (12901 + questionIndex),
             category: 'Music',
@@ -319,11 +420,7 @@ for (const [instrument, facts] of Object.entries(musicianFacts)) {
             answers,
             correctAnswer,
             difficulty,
-            tags: [
-                'Musicians & Instruments',
-                instrument,
-                askForBand ? 'Bands' : 'Musicians'
-            ],
+            tags,
             dailyEligible: true
         });
     }
@@ -399,7 +496,9 @@ for (const question of questions) {
     if (
         question.category !== 'Music' ||
         question.dailyEligible !== true ||
-        !Array.isArray(question.tags)
+        !Array.isArray(question.tags) ||
+        question.tags.length < 13 ||
+        new Set(question.tags).size !== question.tags.length
     ) {
         throw new Error(
             `Invalid question details: ${question.id}`
