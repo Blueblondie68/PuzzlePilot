@@ -1,4 +1,3 @@
-
 // quiz_pack155.js
 // PuzzlePilot - The Bigggggg Quiz
 // Music: Lead Singers - Pack 155
@@ -121,6 +120,111 @@ const singerFacts = {
     ]
 };
 
+// Genre, scene and origin tags for each act.
+// Keep the player's existing question periods and answer choices unchanged.
+const groupTagLines = {
+    'The Rolling Stones': 'UK music|British rock|blues rock|classic rock',
+    'The Who': 'UK music|British rock|mod music|classic rock',
+    'The Doors': 'American music|psychedelic rock|classic rock|Los Angeles music',
+    'Creedence Clearwater Revival': 'American music|roots rock|swamp rock|classic rock',
+    'The Animals': 'UK music|British Invasion|blues rock|1960s rock',
+    "Herman's Hermits": 'UK music|British Invasion|beat music|1960s pop',
+    'Gerry and the Pacemakers': 'UK music|Merseybeat|Liverpool music|1960s pop',
+    'The Hollies': 'UK music|British Invasion|pop rock|vocal harmonies',
+    'Small Faces': 'UK music|mod music|psychedelic rock|1960s rock',
+    'Them': 'Northern Irish music|garage rock|blues rock|1960s music',
+    'The Troggs': 'UK music|garage rock|British Invasion|1960s rock',
+    'The Zombies': 'UK music|psychedelic pop|British Invasion|1960s pop',
+    'Manfred Mann': 'UK music|British Invasion|rhythm and blues|1960s music',
+    'The Spencer Davis Group': 'UK music|British Invasion|blue-eyed soul|rhythm and blues',
+    'The Crazy World of Arthur Brown': 'UK music|psychedelic rock|theatrical rock|1960s music',
+    'Paul Revere & the Raiders': 'American music|garage rock|pop rock|1960s music',
+    'Tommy James and the Shondells': 'American music|garage rock|psychedelic pop|1960s music',
+    'Iron Butterfly': 'American music|psychedelic rock|hard rock|1960s music',
+    'Big Brother and the Holding Company': 'American music|psychedelic rock|San Francisco music|blues rock',
+    'The Miracles': 'American music|Motown|soul music|rhythm and blues',
+    'Queen': 'UK music|glam rock|classic rock|arena rock',
+    'Led Zeppelin': 'UK music|hard rock|blues rock|classic rock',
+    'Black Sabbath': 'UK music|heavy metal|doom metal|classic rock',
+    'Deep Purple': 'UK music|hard rock|heavy metal|classic rock',
+    'Whitesnake': 'UK music|hard rock|blues rock|classic rock',
+    'Faces': 'UK music|blues rock|classic rock|British rock',
+    'AC/DC': 'Australian music|hard rock|classic rock|rock bands',
+    'Jethro Tull': 'UK music|progressive rock|folk rock|classic rock',
+    'Roxy Music': 'UK music|glam rock|art rock|new wave',
+    'Blondie': 'American music|new wave|punk rock|New York music',
+    'The Pretenders': 'UK music|new wave|rock music|British rock',
+    'Slade': 'UK music|glam rock|hard rock|1970s rock',
+    'Sweet': 'UK music|glam rock|hard rock|1970s rock',
+    'T. Rex': 'UK music|glam rock|1970s rock|Marc Bolan',
+    'Bad Company': 'UK music|hard rock|blues rock|classic rock',
+    'Genesis': 'UK music|progressive rock|art rock|classic rock',
+    'Thin Lizzy': 'Irish music|hard rock|classic rock|rock bands',
+    'Cockney Rebel': 'UK music|glam rock|art rock|1970s music',
+    'Foreigner': 'British-American music|arena rock|hard rock|classic rock',
+    'Emerson, Lake & Palmer': 'UK music|progressive rock|symphonic rock|1970s rock',
+    'U2': 'Irish music|alternative rock|post-punk|stadium rock',
+    'The Police': 'UK music|new wave|reggae rock|pop rock',
+    'Depeche Mode': 'UK music|synth-pop|electronic music|new wave',
+    'Simple Minds': 'Scottish music|UK music|new wave|alternative rock',
+    'Duran Duran': 'UK music|new romantic|new wave|synth-pop',
+    'Spandau Ballet': 'UK music|new romantic|sophisti-pop|new wave',
+    'Culture Club': 'UK music|new romantic|pop music|blue-eyed soul',
+    'Frankie Goes to Hollywood': 'UK music|synth-pop|new wave|Liverpool music',
+    'Ultravox': 'UK music|new romantic|synth-pop|new wave',
+    'Soft Cell': 'UK music|synth-pop|electronic music|new wave',
+    'Yazoo': 'UK music|synth-pop|electronic music|1980s pop',
+    'Pet Shop Boys': 'UK music|synth-pop|dance-pop|electronic music',
+    'Eurythmics': 'UK music|synth-pop|new wave|1980s pop',
+    'Dexys Midnight Runners': 'UK music|blue-eyed soul|new wave|pop rock',
+    'The Undertones': 'Northern Irish music|punk rock|new wave|power pop',
+    'The Pogues': 'UK music|Celtic punk|folk punk|Irish folk',
+    'The Smiths': 'UK music|Manchester music|indie rock|alternative rock',
+    'Joy Division': 'UK music|Manchester music|post-punk|alternative rock',
+    'New Order': 'UK music|Manchester music|new wave|synth-pop',
+    'The Cure': 'UK music|post-punk|gothic rock|alternative rock',
+    'Oasis': 'UK music|Manchester music|Britpop|alternative rock',
+    'Blur': 'UK music|Britpop|alternative rock|indie rock',
+    'Pulp': 'UK music|Sheffield music|Britpop|alternative rock',
+    'Suede': 'UK music|Britpop|alternative rock|glam rock',
+    'The Verve': 'UK music|Britpop|psychedelic rock|alternative rock',
+    'The Charlatans': 'UK music|Madchester|indie rock|alternative rock',
+    'The Stone Roses': 'UK music|Manchester music|Madchester|indie rock',
+    'The Cranberries': 'Irish music|alternative rock|pop rock|1990s rock',
+    'Garbage': 'Scottish-American music|alternative rock|electronic rock|1990s music',
+    'Skunk Anansie': 'UK music|alternative rock|hard rock|1990s music',
+    'Radiohead': 'UK music|alternative rock|art rock|experimental rock',
+    'Nirvana': 'American music|Seattle music|grunge|alternative rock',
+    'Pearl Jam': 'American music|Seattle music|grunge|alternative rock',
+    'Soundgarden': 'American music|Seattle music|grunge|alternative rock',
+    'Alice in Chains': 'American music|Seattle music|grunge|alternative metal',
+    'The Smashing Pumpkins': 'American music|Chicago music|alternative rock|1990s rock',
+    'Red Hot Chili Peppers': 'American music|funk rock|alternative rock|California music',
+    'No Doubt': 'American music|ska punk|new wave|pop rock',
+    'Rage Against the Machine': 'American music|rap metal|alternative metal|political rock',
+    'R.E.M.': 'American music|alternative rock|college rock|indie rock',
+    'Foo Fighters': 'American music|alternative rock|post-grunge|hard rock',
+    'The Killers': 'American music|Las Vegas music|indie rock|new wave revival',
+    'The Strokes': 'American music|New York music|garage rock revival|indie rock',
+    'Arctic Monkeys': 'UK music|Sheffield music|indie rock|alternative rock',
+    'Muse': 'UK music|alternative rock|progressive rock|arena rock',
+    'Coldplay': 'UK music|pop rock|alternative rock|British pop',
+    'Paramore': 'American music|pop punk|alternative rock|pop rock',
+    'Evanescence': 'American music|gothic metal|alternative metal|hard rock',
+    'Linkin Park': 'American music|nu metal|alternative rock|rap rock',
+    'System of a Down': 'American music|alternative metal|nu metal|heavy metal',
+    'Korn': 'American music|nu metal|alternative metal|heavy metal',
+    'Limp Bizkit': 'American music|nu metal|rap metal|alternative metal',
+    'Yeah Yeah Yeahs': 'American music|New York music|indie rock|garage rock revival',
+    'Florence + the Machine': 'UK music|indie rock|indie pop|art pop',
+    'Kings of Leon': 'American music|southern rock|alternative rock|indie rock',
+    'Franz Ferdinand': 'Scottish music|UK music|indie rock|post-punk revival',
+    'Bloc Party': 'UK music|indie rock|post-punk revival|alternative rock',
+    'Kaiser Chiefs': 'UK music|Leeds music|indie rock|post-punk revival',
+    'Kasabian': 'UK music|Leicester music|indie rock|alternative rock',
+    'Snow Patrol': 'Northern Irish-Scottish music|UK music|alternative rock|pop rock'
+};
+
 function normalise(value) {
     return String(value).trim().toLowerCase().replace(/\s+/g, ' ');
 }
@@ -145,6 +249,10 @@ for (const [decade, entries] of Object.entries(singerFacts)) {
             throw new Error(
                 'Pack 155 invalid or repeated singer/group: ' + singer
             );
+        }
+
+        if (!groupTagLines[group]) {
+            throw new Error('Pack 155 missing specialist tags for: ' + group);
         }
 
         knownSingers.add(normalise(singer));
@@ -213,11 +321,16 @@ for (const [decade, entries] of Object.entries(singerFacts)) {
             answers,
             correctAnswer,
             difficulty,
-            tags: [
+            tags: [...new Set([
                 'Lead Singers',
                 decade,
-                askForSinger ? 'Identify Singer' : 'Identify Group'
-            ],
+                askForSinger ? 'Identify Singer' : 'Identify Group',
+                'Music', 'music trivia', 'lead vocals', 'vocalists',
+                'band members', 'lead singer identification',
+                askForSinger ? 'singer identification' : 'group identification',
+                singer, group,
+                ...groupTagLines[group].split('|')
+            ])],
             dailyEligible: true
         });
     }
@@ -250,7 +363,8 @@ for (const item of questions) {
         item.category !== 'Music' ||
         !item.dailyEligible ||
         !Array.isArray(item.tags) ||
-        item.tags.length !== 3
+        item.tags.length < 12 ||
+        new Set(item.tags).size !== item.tags.length
     ) {
         throw new Error('Pack 155 invalid question: ' + item.id);
     }
