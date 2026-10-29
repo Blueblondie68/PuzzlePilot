@@ -1,4 +1,4 @@
-// quiz_pack152.js
+ // quiz_pack152.js
 // PuzzlePilot - The Bigggggg Quiz
 // Music: Musicians & Instruments - Pack 152
 // 100 questions: music_13201 to music_13300.
@@ -132,6 +132,122 @@ const musicianFacts = {
     ]
 };
 
+// Specialist tagging for musical groups, genres and scenes.
+// All original musician facts and quiz mechanics remain unchanged.
+const groupTagLines = {
+    'Fairport Convention': 'UK music|British folk rock|folk rock|traditional folk',
+    'Jethro Tull': 'UK music|progressive rock|folk rock|classic rock',
+    'The Rolling Stones': 'UK music|British rock|blues rock|classic rock',
+    'Faces': 'UK music|British rock|blues rock|classic rock',
+    'Free': 'UK music|blues rock|hard rock|classic rock',
+    'Uriah Heep': 'UK music|progressive rock|hard rock|classic rock',
+    'Status Quo': 'UK music|boogie rock|classic rock|British rock',
+    'The Kinks': 'UK music|British Invasion|British rock|1960s music',
+    'Sex Pistols': 'UK music|British punk|punk rock|1970s music',
+    'Siouxsie and the Banshees': 'UK music|post-punk|gothic rock|new wave',
+    'Echo & the Bunnymen': 'UK music|Liverpool music|post-punk|alternative rock',
+    'Gang of Four': 'UK music|post-punk|dance-punk|Leeds music',
+    'Radiohead': 'UK music|alternative rock|art rock|experimental rock',
+    'The Hollies': 'UK music|British Invasion|pop rock|1960s music',
+    'The Jam': 'UK music|mod revival|punk rock|new wave',
+    'Biffy Clyro': 'Scottish music|UK music|alternative rock|post-hardcore',
+    'Arctic Monkeys': 'UK music|Sheffield music|indie rock|alternative rock',
+    'Kasabian': 'UK music|indie rock|alternative rock|Leicester music',
+    'The Strokes': 'American music|New York music|garage rock revival|indie rock',
+    'Grateful Dead': 'American music|psychedelic rock|jam bands|classic rock',
+    'The Doors': 'American music|psychedelic rock|classic rock|Los Angeles music',
+    'Yes': 'UK music|progressive rock|art rock|classic rock',
+    'New Order': 'UK music|Manchester music|new wave|synth-pop',
+    'Blur': 'UK music|Britpop|alternative rock|Damon Albarn',
+    'Oasis': 'UK music|Manchester music|Britpop|alternative rock',
+    'The Who': 'UK music|British rock|mod music|classic rock',
+    'Phish': 'American music|jam bands|psychedelic rock|progressive rock',
+    'Thin Lizzy': 'Irish music|hard rock|classic rock|rock bands',
+    'Electric Light Orchestra': 'UK music|symphonic rock|pop rock|classic rock',
+    'Aerosmith': 'American music|hard rock|blues rock|classic rock',
+    'Queens of the Stone Age': 'American music|stoner rock|alternative rock|hard rock',
+    'Linkin Park': 'American music|nu metal|alternative rock|rap rock',
+    'Traveling Wilburys': 'British-American music|supergroups|rock music|classic rock',
+    'Small Faces': 'UK music|mod music|psychedelic rock|1960s music',
+    'The Spiders from Mars': 'UK music|glam rock|David Bowie|1970s rock',
+    'Genesis': 'UK music|progressive rock|pop rock|classic rock',
+    'The Buggles': 'UK music|new wave|synth-pop|1970s music',
+    'King Crimson': 'UK music|progressive rock|art rock|jazz rock',
+    'Def Leppard': 'UK music|hard rock|glam metal|Sheffield music',
+    'Emerson, Lake & Palmer': 'UK music|progressive rock|symphonic rock|1970s rock',
+    'Ramones': 'American music|New York music|punk rock|early punk',
+    'Metallica': 'American music|heavy metal|thrash metal|hard rock',
+    'Manowar': 'American music|heavy metal|power metal|rock bands',
+    'Silversun Pickups': 'American music|alternative rock|indie rock|Los Angeles music',
+    'Måneskin': 'Italian music|glam rock|hard rock|alternative rock',
+    'Khruangbin': 'American music|psychedelic rock|funk|instrumental music',
+    'Parliament-Funkadelic': 'American music|P-Funk|funk|George Clinton',
+    "Art Blakey's Jazz Messengers": 'American music|hard bop|bebop|jazz ensembles',
+    'Styx': 'American music|progressive rock|arena rock|classic rock',
+    'The Band': 'Canadian-American music|roots rock|Americana|classic rock',
+    'Depeche Mode': 'UK music|synth-pop|electronic music|new wave',
+    'Barenaked Ladies': 'Canadian music|alternative rock|pop rock|rock bands',
+    'Bring Me the Horizon': 'UK music|metalcore|alternative metal|Sheffield music',
+    'Ace': 'UK music|soft rock|pub rock|1970s music',
+    'The Hooters': 'American music|pop rock|new wave|Philadelphia music',
+    'Procol Harum': 'UK music|progressive rock|psychedelic rock|classic rock',
+    'Blondie': 'American music|new wave|punk rock|New York music',
+    'Dave Brubeck Quartet': 'American music|cool jazz|West Coast jazz|jazz quartets',
+    'Earth, Wind & Fire': 'American music|funk|soul music|R&B',
+    'The Silver Bullet Band': 'American music|heartland rock|Bob Seger|classic rock',
+    'The Paul Butterfield Blues Band': 'American music|Chicago blues|blues rock|1960s music',
+    'The Wrecking Crew': 'American music|Los Angeles music|session musicians|pop recordings',
+    'Supertramp': 'UK music|progressive rock|art rock|pop rock',
+    'Jazz Warriors': 'UK music|British jazz|jazz ensembles|1980s jazz',
+    "John Mellencamp's band": 'American music|heartland rock|John Mellencamp|rock bands',
+    'Nickel Creek': 'American music|progressive bluegrass|folk music|acoustic music',
+    'Squirrel Nut Zippers': 'American music|swing revival|jazz music|alternative rock',
+    'The Highwomen': 'American music|country music|Americana|female country musicians',
+    'of Montreal': 'American music|indie pop|psychedelic pop|experimental pop',
+    'The David Grisman Quintet': 'American music|new acoustic music|bluegrass|instrumental music',
+    'The RH Factor': 'American music|jazz-funk|neo-soul|jazz fusion',
+    'The E-Collective': 'American music|jazz music|jazz fusion|modern jazz',
+    'Masada Quartet': 'American music|avant-garde jazz|jazz ensembles|John Zorn',
+    'SFJAZZ Collective': 'American music|modern jazz|jazz ensembles|San Francisco jazz',
+    'Thad Jones/Mel Lewis Orchestra': 'American music|big band|jazz orchestras|jazz music',
+    'Sonny Terry and Brownie McGhee': 'American music|Piedmont blues|folk blues|acoustic blues',
+    'Buddy Guy and Junior Wells': 'American music|Chicago blues|electric blues|blues musicians',
+    'The South Side Band': 'American music|Chicago blues|electric blues|blues bands',
+    'Sons of Blues': 'American music|Chicago blues|electric blues|blues harmonica',
+    'New Blood': 'American music|blues rock|blues harmonica|electric blues',
+    'The Mothers of Invention': 'American music|experimental rock|psychedelic rock|Frank Zappa',
+    'Return to Forever': 'American music|jazz fusion|progressive jazz|Chick Corea',
+    'Shakti': 'Indian music|Indian classical music|jazz fusion|world music',
+    "Elton John's touring band": 'UK music|pop rock|classic rock|Elton John',
+    'Weather Report': 'American music|jazz fusion|jazz rock|instrumental music',
+    'Béla Fleck and the Flecktones': 'American music|bluegrass fusion|jazz fusion|instrumental music',
+    'Flatt and Scruggs': 'American music|bluegrass|country music|folk music',
+    'The Weavers': 'American music|folk revival|folk music|traditional songs',
+    'Nitty Gritty Dirt Band': 'American music|country rock|bluegrass|folk rock',
+    'Mumford & Sons': 'UK music|folk rock|indie folk|alternative rock',
+    'Flook': 'Irish folk|Celtic music|contemporary folk|instrumental music',
+    'The Chieftains': 'Irish music|traditional Irish music|Celtic music|folk music',
+    'The Satyrs': 'American music|jazz rock|psychedelic rock|1960s music',
+    'Paco de Lucía Sextet': 'Spanish music|flamenco jazz|flamenco|jazz fusion',
+};
+
+// Instrument-specific tags for specialist quiz selection.
+const instrumentTagLines = {
+    Guitar: 'guitar|guitarists|electric guitar|rock guitar',
+    Drums: 'drums|drummers|percussion|drum kit|rhythm section',
+    Bass: 'bass|bass guitar|bassists|rhythm section',
+    Keyboards: 'keyboards|keyboard players|keyboard instruments|piano|synthesisers',
+    Saxophone: 'saxophone|saxophonists|woodwind instruments|horn section',
+    Violin: 'violin|violinists|fiddle|string instruments',
+    Trumpet: 'trumpet|trumpeters|brass instruments|jazz musicians',
+    Harmonica: 'harmonica|harmonica players|mouth organ|blues instruments',
+    Percussion: 'percussion|percussionists|hand percussion|rhythm section',
+    Banjo: 'banjo|banjo players|plucked strings|folk instruments',
+    Flute: 'flute|flautists|woodwind instruments|flute players',
+};
+
+const splitTags = value => value.split('|');
+
 const expectedCounts = {
     Guitar: 20, Drums: 15, Bass: 15, Keyboards: 12,
     Saxophone: 7, Violin: 6, Trumpet: 5, Harmonica: 5,
@@ -188,6 +304,10 @@ for (const [instrument, expected] of Object.entries(expectedCounts)) {
             throw new Error(
                 `Pack 152 repeated ${instrument} group: ${group}`
             );
+        }
+
+        if (!groupTagLines[group] || !instrumentTagLines[instrument]) {
+            throw new Error(`Pack 152 missing specialist tags: ${musician}`);
         }
 
         allFeatured.add(normalise(musician));
@@ -290,15 +410,22 @@ for (const [instrument, facts] of Object.entries(musicianFacts)) {
             answers,
             correctAnswer,
             difficulty,
-            tags: [
+            tags: [...new Set([
                 'Musicians & Instruments',
                 instrument,
                 askInstrument
                     ? 'Instrument recognition'
                     : askGroup
                         ? 'Bands'
-                        : 'Musicians'
-            ],
+                        : 'Musicians',
+                'Music', 'music trivia', 'band members',
+                'instrument trivia', 'instrument players',
+                askInstrument ? 'instrument identification' :
+                    askGroup ? 'group identification' : 'musician identification',
+                musician, group,
+                ...splitTags(instrumentTagLines[instrument]),
+                ...splitTags(groupTagLines[group])
+            ])],
             dailyEligible: true
         });
     }
@@ -344,7 +471,8 @@ for (const question of questions) {
         question.category !== 'Music' ||
         question.dailyEligible !== true ||
         !Array.isArray(question.tags) ||
-        question.tags.length !== 3
+        question.tags.length < 13 ||
+        new Set(question.tags).size !== question.tags.length
     ) {
         throw new Error(
             `Pack 152 invalid question: ${question.id}`
