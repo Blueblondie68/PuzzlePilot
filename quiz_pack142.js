@@ -1,21 +1,16 @@
-
-// quiz_pack142.js
+ // quiz_pack142.js
 // PuzzlePilot - The Bigggggg Quiz
 // Music Albums: Pack 142
-// 100 different albums from the 1950s and 1960s.
+// 100 albums from the 1950s and 1960s.
 // IDs music_12201 to music_12300.
-// This pack is NOT yet included in quiz_bank.js.
-//
-// Data format: [album title, artist, song (or empty), release year].
-// When a song is supplied, the question asks for its album.
-// Otherwise, the question asks for the album's artist.
+// Original question and answer generation retained; one date corrected.
 
 const albumFacts = [
     ["In the Wee Small Hours", "Frank Sinatra", "", 1955],
     ["Songs for Swingin' Lovers!", "Frank Sinatra", "I've Got You Under My Skin", 1956],
     ["Come Fly with Me", "Frank Sinatra", "", 1958],
     ["Love Is the Thing", "Nat King Cole", "Stardust", 1957],
-    ["After Midnight", "Nat King Cole", "", 1957],
+    ["After Midnight", "Nat King Cole", "", 1956],
     ["Johnny Cash with His Hot and Blue Guitar!", "Johnny Cash", "", 1957],
     ["Gunfighter Ballads and Trail Songs", "Marty Robbins", "El Paso", 1959],
     ["The Everly Brothers", "The Everly Brothers", "", 1958],
@@ -113,48 +108,189 @@ const albumFacts = [
     ["The Stooges", "The Stooges", "I Wanna Be Your Dog", 1969]
 ];
 
-const normalise = value =>
-    value.trim().toLowerCase().replace(/\s+/g, ' ');
+// Artist and genre tags expand into each question, not just a shared heading.
+const artistTags = {
+    "Frank Sinatra": ["American music", "traditional pop", "jazz vocals", "crooners", "male vocalists", "Capitol Records"],
+    "Nat King Cole": ["American music", "jazz", "traditional pop", "pianists", "crooners", "Capitol Records"],
+    "Johnny Cash": ["American music", "country music", "rockabilly", "Sun Records", "male vocalists"],
+    "Marty Robbins": ["American music", "country music", "western ballads", "story songs"],
+    "The Everly Brothers": ["American music", "rock and roll", "close harmony", "vocal duos", "country rock"],
+    "Gene Vincent": ["American music", "rock and roll", "rockabilly", "Capitol Records"],
+    "Eddie Cochran": ["American music", "rock and roll", "rockabilly", "guitarists"],
+    "Chuck Berry": ["American music", "rock and roll", "guitarists", "Chess Records"],
+    "Fats Domino": ["American music", "New Orleans music", "rhythm and blues", "rock and roll", "pianists"],
+    "Bill Haley and His Comets": ["American music", "rock and roll", "early rock", "rock bands"],
+    "Bo Diddley": ["American music", "rhythm and blues", "rock and roll", "guitarists", "Chess Records"],
+    "The Dave Brubeck Quartet": ["American music", "jazz", "cool jazz", "instrumental music", "piano", "jazz quartets"],
+    "Miles Davis": ["American music", "jazz", "modal jazz", "trumpeters", "instrumental music"],
+    "Ray Charles": ["American music", "soul", "rhythm and blues", "jazz", "pianists"],
+    "Nina Simone": ["American music", "jazz", "blues", "soul", "pianists", "female vocalists"],
+    "Billy Fury": ["UK music", "British rock and roll", "rockabilly", "male vocalists"],
+    "Roy Orbison": ["American music", "rock and roll", "pop rock", "male vocalists", "Monument Records"],
+    "The Shadows": ["UK music", "instrumental rock", "guitar music", "British rock and roll"],
+    "Peter, Paul and Mary": ["American music", "folk music", "folk revival", "vocal trios"],
+    "Bob Dylan": ["American music", "folk music", "singer-songwriters", "folk revival"],
+    "Simon & Garfunkel": ["American music", "folk rock", "folk music", "vocal duos"],
+    "The Searchers": ["UK music", "Merseybeat", "British Invasion", "pop rock", "rock bands"],
+    "Manfred Mann": ["UK music", "British Invasion", "beat music", "rhythm and blues", "rock bands"],
+    "Dusty Springfield": ["UK music", "soul", "traditional pop", "female vocalists", "blue-eyed soul"],
+    "The Supremes": ["American music", "Detroit music", "Motown", "soul", "girl groups"],
+    "Martha and the Vandellas": ["American music", "Detroit music", "Motown", "soul", "girl groups"],
+    "The Temptations": ["American music", "Detroit music", "Motown", "soul", "vocal groups"],
+    "The Four Tops": ["American music", "Detroit music", "Motown", "soul", "vocal groups"],
+    "The Beatles": ["UK music", "Liverpool music", "Merseybeat", "British Invasion", "pop rock", "rock bands"],
+    "The Kinks": ["UK music", "British Invasion", "rock music", "Ray Davies", "rock bands"],
+    "The Who": ["UK music", "British Invasion", "rock music", "mod music", "rock bands"],
+    "The Zombies": ["UK music", "British Invasion", "baroque pop", "rock bands"],
+    "The Hollies": ["UK music", "Manchester music", "British Invasion", "pop rock", "vocal harmonies"],
+    "The Yardbirds": ["UK music", "British Invasion", "blues rock", "guitarists", "rock bands"],
+    "The Mamas & the Papas": ["American music", "folk rock", "sunshine pop", "vocal groups"],
+    "The Lovin' Spoonful": ["American music", "folk rock", "sunshine pop", "rock bands"],
+    "The Monkees": ["American music", "pop rock", "television bands", "rock bands"],
+    "The Beach Boys": ["American music", "California music", "surf rock", "sunshine pop", "Brian Wilson"],
+    "The Rolling Stones": ["UK music", "British Invasion", "blues rock", "rock bands"],
+    "Donovan": ["Scottish music", "UK music", "folk rock", "psychedelic folk", "singer-songwriters"],
+    "Bee Gees": ["UK music", "Australian music", "pop rock", "vocal harmonies", "Barry Gibb"],
+    "Aretha Franklin": ["American music", "soul", "rhythm and blues", "female vocalists", "Atlantic Records"],
+    "Otis Redding": ["American music", "Memphis music", "southern soul", "Stax Records", "male vocalists"],
+    "Stevie Wonder": ["American music", "Detroit music", "Motown", "soul", "singer-songwriters"],
+    "Marvin Gaye": ["American music", "Detroit music", "Motown", "soul", "male vocalists"],
+    "Wilson Pickett": ["American music", "southern soul", "rhythm and blues", "Atlantic Records"],
+    "Sam & Dave": ["American music", "southern soul", "Stax Records", "vocal duos"],
+    "Booker T. & the M.G.'s": ["American music", "Memphis music", "instrumental soul", "Stax Records", "organ", "instrumental music"],
+    "Etta James": ["American music", "blues", "soul", "rhythm and blues", "female vocalists"],
+    "B.B. King": ["American music", "electric blues", "blues guitarists", "live albums"],
+    "James Brown": ["American music", "funk", "soul", "rhythm and blues", "male vocalists"],
+    "The 5th Dimension": ["American music", "sunshine pop", "pop soul", "vocal groups"],
+    "Herb Alpert & the Tijuana Brass": ["American music", "instrumental pop", "easy listening", "brass music", "trumpeters"],
+    "The Young Rascals": ["American music", "blue-eyed soul", "rock music", "psychedelic pop"],
+    "The Turtles": ["American music", "sunshine pop", "folk rock", "rock bands"],
+    "The Association": ["American music", "sunshine pop", "folk rock", "vocal harmonies"],
+    "The Box Tops": ["American music", "Memphis music", "blue-eyed soul", "pop rock", "Alex Chilton"],
+    "The Foundations": ["UK music", "soul", "pop soul", "British soul", "vocal groups"],
+    "Van Morrison": ["Northern Irish music", "UK music", "folk rock", "soul", "singer-songwriters"],
+    "Joni Mitchell": ["Canadian music", "folk music", "singer-songwriters", "female vocalists"],
+    "Leonard Cohen": ["Canadian music", "folk music", "singer-songwriters", "male vocalists"],
+    "Laura Nyro": ["American music", "singer-songwriters", "soul", "pop rock", "female vocalists"],
+    "The Doors": ["American music", "Los Angeles music", "psychedelic rock", "Jim Morrison", "rock bands"],
+    "Fleetwood Mac": ["UK music", "British blues", "blues rock", "Peter Green", "rock bands"],
+    "Procol Harum": ["UK music", "progressive rock", "art rock", "rock bands"],
+    "Deep Purple": ["UK music", "hard rock", "psychedelic rock", "rock bands"],
+    "Blind Faith": ["UK music", "blues rock", "supergroups", "Steve Winwood", "Eric Clapton"],
+    "Cream": ["UK music", "blues rock", "psychedelic rock", "power trios", "Eric Clapton"],
+    "Small Faces": ["UK music", "mod music", "psychedelic rock", "rock bands", "Steve Marriott"],
+    "Joe Cocker": ["UK music", "blues rock", "blue-eyed soul", "male vocalists"],
+    "Iron Butterfly": ["American music", "psychedelic rock", "hard rock", "rock bands"],
+    "Steppenwolf": ["American music", "Canadian music", "hard rock", "rock bands"],
+    "MC5": ["American music", "Detroit music", "proto-punk", "garage rock", "live albums"],
+    "The Stooges": ["American music", "Michigan music", "proto-punk", "garage rock", "Iggy Pop"]
+};
 
-// Sanity checks run immediately when this pack is loaded.
+// Specific album tags apply only to the appropriate release.
+const albumTags = {
+    "In the Wee Small Hours": ["concept albums", "Nelson Riddle", "torch songs"],
+    "Songs for Swingin' Lovers!": ["Nelson Riddle", "swing music", "Great American Songbook"],
+    "Come Fly with Me": ["Billy May", "travel songs", "concept albums"],
+    "Love Is the Thing": ["Gordon Jenkins", "orchestral pop", "string arrangements"],
+    "After Midnight": ["Nat King Cole Trio", "small-group jazz", "1956 Capitol album"],
+    "Johnny Cash with His Hot and Blue Guitar!": ["debut albums", "Sun Records"],
+    "Gunfighter Ballads and Trail Songs": ["western music", "concept albums", "cowboy songs"],
+    "The Everly Brothers": ["debut albums", "Cadence Records"],
+    "Songs Our Daddy Taught Us": ["traditional folk songs", "close harmony", "roots music"],
+    "Bluejean Bop!": ["debut albums", "rockabilly"],
+    "Singin' to My Baby": ["debut albums", "Liberty Records"],
+    "After School Session": ["debut albums", "Chess Records"],
+    "Rock Around the Clock": ["rock and roll history", "Decca Records"],
+    "Bo Diddley": ["debut albums", "Chess Records"],
+    "Time Out": ["unusual time signatures", "instrumental jazz", "Paul Desmond"],
+    "Kind of Blue": ["modal jazz", "landmark albums", "John Coltrane"],
+    "The Genius of Ray Charles": ["big band", "jazz standards", "Atlantic Records"],
+    "Little Girl Blue": ["debut albums", "Bethlehem Records", "jazz standards"],
+    "The Fabulous Johnny Cash": ["Columbia Records", "early country albums"],
+    "The Sound of Fury": ["debut albums", "British rock and roll"],
+    "The Shadows": ["debut albums", "instrumental rock"],
+    "In the Wind": ["folk revival", "protest songs"],
+    "Sounds of Silence": ["electric folk rock"],
+    "A Girl Called Dusty": ["debut albums", "British soul"],
+    "Where Did Our Love Go": ["Motown albums", "Holland-Dozier-Holland"],
+    "Heat Wave": ["Motown albums", "Holland-Dozier-Holland"],
+    "Help!": ["Beatles films", "film soundtracks"],
+    "My Generation": ["debut albums", "mod music"],
+    "Begin Here": ["debut albums", "British Invasion"],
+    "Roger the Engineer": ["UK album titles", "Jeff Beck"],
+    "Hums of the Lovin' Spoonful": ["folk rock", "summer songs"],
+    "More of the Monkees": ["television music", "pop rock"],
+    "Smiley Smile": ["experimental pop", "Brian Wilson"],
+    "Sunshine Superman": ["psychedelic folk"],
+    "Bee Gees' 1st": ["international breakthrough albums", "baroque pop"],
+    "Odessa": ["double albums", "concept albums", "orchestral pop"],
+    "I Never Loved a Man the Way I Love You": ["Atlantic Records", "Memphis soul", "landmark albums"],
+    "Lady Soul": ["Atlantic Records", "southern soul", "landmark albums"],
+    "Otis Blue": ["Stax Records", "soul classics"],
+    "The Dock of the Bay": ["posthumous albums", "Stax Records"],
+    "Reach Out": ["Holland-Dozier-Holland", "Motown albums"],
+    "Gettin' Ready": ["Motown albums", "Smokey Robinson"],
+    "I Heard It Through the Grapevine!": ["Motown albums", "song titles as album titles"],
+    "The Exciting Wilson Pickett": ["Atlantic Records", "southern soul"],
+    "Soul Men": ["Stax Records", "southern soul"],
+    "Green Onions": ["debut albums", "instrumental soul"],
+    "At Last!": ["debut albums", "Chess Records", "jazz standards"],
+    "Live at the Regal": ["live albums", "Chicago blues", "landmark albums"],
+    "Papa's Got a Brand New Bag": ["funk origins", "King Records"],
+    "The Age of Aquarius": ["musicals", "Hair", "sunshine pop"],
+    "Whipped Cream & Other Delights": ["album cover art", "easy listening"],
+    "Astral Weeks": ["landmark albums", "folk jazz", "song cycles"],
+    "Clouds": ["folk music", "Grammy Award-winning albums"],
+    "Songs of Leonard Cohen": ["debut albums", "poetic lyrics"],
+    "Eli and the Thirteenth Confession": ["singer-songwriter albums", "soul"],
+    "Then Play On": ["Peter Green", "British blues"],
+    "Shades of Deep Purple": ["debut albums", "psychedelic rock"],
+    "Blind Faith": ["debut albums", "supergroups"],
+    "Goodbye": ["farewell albums", "live and studio recordings"],
+    "Ogdens' Nut Gone Flake": ["concept albums", "psychedelic rock", "round album sleeve"],
+    "With a Little Help from My Friends": ["debut albums", "Beatles covers"],
+    "In-A-Gadda-Da-Vida": ["extended tracks", "psychedelic rock"],
+    "Steppenwolf": ["debut albums", "hard rock"],
+    "Kick Out the Jams": ["debut albums", "live albums", "proto-punk"],
+    "The Stooges": ["debut albums", "proto-punk", "Iggy Pop"]
+};
+
+const normalise = value =>
+    String(value || "").trim().toLowerCase().replace(/\s+/g, " ");
+
 if (albumFacts.length !== 100) {
-    throw new Error('Pack 142 must contain exactly 100 albums.');
+    throw new Error("Pack 142 must contain exactly 100 albums.");
 }
 
 const albumNames = new Set();
 for (const [album, artist, song, year] of albumFacts) {
     if (!album || !artist || !Number.isInteger(year) ||
-        year < 1950 || year > 1969 || typeof song !== 'string') {
-        throw new Error('Pack 142 has an incomplete album fact.');
+        year < 1950 || year > 1969 || typeof song !== "string" ||
+        !artistTags[artist]) {
+        throw new Error("Pack 142 has an invalid entry: " + album);
     }
-    const key = normalise(album);
-    if (albumNames.has(key)) {
-        throw new Error('Pack 142 repeats album: ' + album);
+    const albumKey = normalise(album);
+    if (albumNames.has(albumKey)) {
+        throw new Error("Pack 142 repeats album: " + album);
     }
-    albumNames.add(key);
+    albumNames.add(albumKey);
 }
 
-// Pick three different wrong answers from the same decade.
-// For song questions, other albums by the same artist are excluded.
+// Keep the original same-decade distractors and answer rotation.
 function getWrongAnswers(album, artist, year, isSongQuestion, index) {
-    const sameDecade = albumFacts.filter(
-        entry => Math.floor(entry[3] / 10) === Math.floor(year / 10)
-    );
-
+    const sameDecade = albumFacts.filter(entry =>
+        Math.floor(entry[3] / 10) === Math.floor(year / 10));
     const pool = isSongQuestion
-        ? sameDecade
-            .filter(entry => entry[1] !== artist)
-            .map(entry => entry[0])
+        ? sameDecade.filter(entry => entry[1] !== artist).map(entry => entry[0])
         : [...new Set(sameDecade.map(entry => entry[1]))]
             .filter(name => name !== artist);
-
+    if (pool.length < 3) throw new Error("Insufficient distractors: " + album);
     const wrongAnswers = [];
     let cursor = (index * 7 + 3) % pool.length;
-
     while (wrongAnswers.length < 3) {
         const candidate = pool[cursor];
-        if (!wrongAnswers.includes(candidate) && candidate !== album &&
-            candidate !== artist) {
+        if (!wrongAnswers.includes(candidate) &&
+            candidate !== album && candidate !== artist) {
             wrongAnswers.push(candidate);
         }
         cursor = (cursor + 1) % pool.length;
@@ -165,40 +301,47 @@ function getWrongAnswers(album, artist, year, isSongQuestion, index) {
 const questions = albumFacts.map(([album, artist, song, year], index) => {
     const isSongQuestion = song.length > 0;
     const correctAnswer = isSongQuestion ? album : artist;
-    const wrongAnswers = getWrongAnswers(
-        album, artist, year, isSongQuestion, index
-    );
-
-    // Rotate correct answers through all four button positions.
-    const answers = [...wrongAnswers];
+    const answers = getWrongAnswers(album, artist, year, isSongQuestion, index);
     answers.splice(index % 4, 0, correctAnswer);
-
+    const tags = [...new Set([
+        year < 1960 ? "1950s" : "1960s",
+        "Albums", isSongQuestion ? "Album tracks" : "Artists",
+        "Music", "albums", "album trivia", "album history", String(year),
+        isSongQuestion ? "album identification" : "artist identification",
+        album, artist, ...artistTags[artist], ...(albumTags[album] || []),
+        ...(isSongQuestion ? [song, "album tracks"] : [])
+    ])];
     return {
-        id: 'music_' + (12201 + index),
-        category: 'Music',
+        id: "music_" + (12201 + index),
+        category: "Music",
         question: isSongQuestion
             ? `Which album features "${song}" by ${artist}?`
             : `Which artist released the ${year} album "${album}"?`,
         answers,
         correctAnswer,
-        difficulty: index % 11 === 0 ? 'Hard' :
-            (isSongQuestion ? 'Easy' : 'Medium'),
-        tags: [year < 1960 ? '1950s' : '1960s', 'Albums',
-            isSongQuestion ? 'Album tracks' : 'Artists'],
+        difficulty: index % 11 === 0 ? "Hard" :
+            (isSongQuestion ? "Easy" : "Medium"),
+        tags,
         dailyEligible: true
     };
 });
 
-// Check IDs, choices and correct answers before exporting the pack.
 const ids = new Set();
-for (const q of questions) {
-    if (ids.has(q.id) || q.answers.length !== 4 ||
+const texts = new Set();
+for (const [index, q] of questions.entries()) {
+    const textKey = normalise(q.question);
+    if (q.id !== "music_" + (12201 + index) ||
+        ids.has(q.id) || texts.has(textKey) ||
+        q.answers.length !== 4 ||
         new Set(q.answers.map(normalise)).size !== 4 ||
-        !q.answers.includes(q.correctAnswer)) {
-        throw new Error('Pack 142 question validation failed: ' + q.id);
+        !q.answers.includes(q.correctAnswer) || q.tags.length < 9 ||
+        !["Easy", "Medium", "Hard"].includes(q.difficulty) ||
+        q.dailyEligible !== true) {
+        throw new Error("Pack 142 question validation failed: " + q.id);
     }
     ids.add(q.id);
+    texts.add(textKey);
 }
-
 module.exports = questions;
+
 
