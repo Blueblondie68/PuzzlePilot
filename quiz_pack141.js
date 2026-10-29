@@ -1,17 +1,8 @@
-
-//
-// quiz_pack141.js
-// PuzzlePilot - Music Quiz
-// Pack 141: Albums of the 1950s and 1960s
-// Questions music_12101 to music_12200
-//
-
-// Each entry contains:
-// [album, artist, song from album (optional)]
-//
-// Entries with a song ask which album contains it.
-// Other entries ask who released the album.
-//
+ // quiz_pack141.js
+// PuzzlePilot Big Quiz - Music Pack 141
+// 1950s and 1960s albums: music_12101 to music_12200
+// Album identification and album-track questions.
+// Corrects edition-specific questions and the Bowie reissue title.
 
 const albums = [
 
@@ -114,7 +105,7 @@ const albums = [
     ["Electric Ladyland", "The Jimi Hendrix Experience", "Voodoo Child (Slight Return)"],
     ["Wheels of Fire", "Cream", "White Room"],
     ["Waiting for the Sun", "The Doors", "Hello, I Love You"],
-    ["The Kinks Are the Village Green Preservation Society", "The Kinks", "Village Green Preservation Society"],
+    ["The Kinks Are the Village Green Preservation Society", "The Kinks", "The Village Green Preservation Society"],
     ["Odessey and Oracle", "The Zombies", "Time of the Season"],
     ["Music from Big Pink", "The Band", "The Weight"],
     ["The Notorious Byrd Brothers", "The Byrds"],
@@ -161,226 +152,211 @@ const albums = [
     ["Five Leaves Left", "Nick Drake", "River Man"],
     ["Dusty in Memphis", "Dusty Springfield", "Son of a Preacher Man"],
     ["From Elvis in Memphis", "Elvis Presley", "In the Ghetto"],
-    ["David Bowie (Space Oddity)", "David Bowie", "Space Oddity"],
+    ["Space Oddity", "David Bowie", "Space Oddity"],
     ["Arthur (Or the Decline and Fall of the British Empire)", "The Kinks", "Victoria"],
     ["Ummagumma", "Pink Floyd"]
 
 ];
 
-// =====================================================
-// SOURCE VALIDATION
-// =====================================================
-
-if (albums.length !== 100) {
-    throw new Error(
-        "Pack 141 must contain exactly 100 albums. Found: " +
-        albums.length
-    );
-}
-
-const normalise = value =>
-    String(value || "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]/g, "");
-
-const albumKeys = new Set();
-
-for (const entry of albums) {
-
-    const [album, artist, song] = entry;
-
-    if (!album || !artist) {
-        throw new Error(
-            "Album or artist missing from Pack 141."
-        );
-    }
-
-    const key =
-        normalise(album) + "|" + normalise(artist);
-
-    if (albumKeys.has(key)) {
-        throw new Error(
-            "Repeated album and artist: " +
-            album + " - " + artist
-        );
-    }
-
-    albumKeys.add(key);
-
-    if (entry.length > 3) {
-        throw new Error(
-            "Too many fields for album: " + album
-        );
-    }
-}
-
-// =====================================================
-// ANSWER POOLS
-// =====================================================
-
-const artistPool = [
-    ...new Set(albums.map(entry => entry[1]))
+// Each year is the album's original release year, not a single's year.
+// Entries correspond to the order in albums[].
+const albumYears = [
+    1956, 1956, 1957, 1957, 1958, 1957, 1958, 1957, 1958, 1959,
+    1962, 1963, 1963, 1963, 1962, 1963, 1963, 1963, 1962, 1964,
+    1964, 1964, 1965, 1964, 1964, 1965, 1965, 1965, 1965, 1965,
+    1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966, 1966,
+    1967, 1967, 1967, 1967, 1967, 1967, 1967, 1967, 1967, 1967,
+    1967, 1967, 1967, 1967, 1967, 1967, 1967, 1967, 1967, 1967,
+    1968, 1968, 1968, 1968, 1968, 1968, 1968, 1968, 1968, 1968,
+    1968, 1968, 1968, 1968, 1968, 1968, 1968, 1968, 1968, 1968,
+    1969, 1969, 1969, 1969, 1969, 1969, 1969, 1969, 1969, 1969,
+    1969, 1969, 1969, 1969, 1969, 1969, 1969, 1969, 1969, 1969
 ];
 
+// Shared specialist tags, expanded into every generated question.
+const artistTags = {
+    "Elvis Presley": ["American music", "rock and roll", "rockabilly", "male vocalists", "Memphis music"],
+    "Little Richard": ["American music", "rock and roll", "piano", "early rock"],
+    "The Crickets": ["American music", "rock and roll", "rockabilly", "Buddy Holly", "bands"],
+    "Buddy Holly": ["American music", "rock and roll", "rockabilly", "singer-songwriters"],
+    "Chuck Berry": ["American music", "rock and roll", "guitarists", "early rock"],
+    "Bob Dylan": ["American music", "folk music", "folk rock", "singer-songwriters"],
+    "The Beatles": ["UK music", "Liverpool music", "British Invasion", "pop rock", "rock bands"],
+    "The Beach Boys": ["American music", "California music", "surf rock", "pop rock", "Brian Wilson"],
+    "The Miracles": ["American music", "Detroit music", "Motown", "soul", "Smokey Robinson"],
+    "Stevie Wonder": ["American music", "Motown", "jazz", "soul", "Little Stevie Wonder"],
+    "The Rolling Stones": ["UK music", "British Invasion", "blues rock", "rock bands"],
+    "The Byrds": ["American music", "folk rock", "jangle pop", "rock bands"],
+    "The Kinks": ["UK music", "British Invasion", "rock bands", "Ray Davies"],
+    "Cream": ["UK music", "blues rock", "psychedelic rock", "power trios", "Eric Clapton"],
+    "Simon & Garfunkel": ["American music", "folk rock", "folk music", "vocal duos"],
+    "The Mamas & the Papas": ["American music", "folk rock", "sunshine pop", "vocal groups"],
+    "The Monkees": ["American music", "pop rock", "television bands", "rock bands"],
+    "The Doors": ["American music", "psychedelic rock", "Los Angeles music", "Jim Morrison"],
+    "The Jimi Hendrix Experience": ["rock music", "psychedelic rock", "Jimi Hendrix", "guitarists", "power trios"],
+    "The Velvet Underground & Nico": ["American music", "New York music", "art rock", "experimental rock", "Nico", "Lou Reed"],
+    "Pink Floyd": ["UK music", "psychedelic rock", "progressive rock", "rock bands"],
+    "The Who": ["UK music", "rock music", "rock operas", "British Invasion"],
+    "Love": ["American music", "psychedelic rock", "folk rock", "Arthur Lee"],
+    "The Moody Blues": ["UK music", "progressive rock", "symphonic rock", "rock bands"],
+    "Jefferson Airplane": ["American music", "San Francisco music", "psychedelic rock", "Grace Slick"],
+    "Buffalo Springfield": ["American music", "folk rock", "country rock", "Neil Young", "Stephen Stills"],
+    "The Zombies": ["UK music", "psychedelic pop", "baroque pop", "British Invasion"],
+    "The Band": ["Canadian music", "American roots rock", "Americana", "rock bands"],
+    "Donovan": ["Scottish music", "UK music", "folk rock", "psychedelic folk"],
+    "The Incredible String Band": ["Scottish music", "UK music", "psychedelic folk", "folk music"],
+    "Big Brother and the Holding Company": ["American music", "San Francisco music", "psychedelic rock", "Janis Joplin"],
+    "Soft Machine": ["UK music", "Canterbury scene", "psychedelic rock", "jazz rock"],
+    "The Crazy World of Arthur Brown": ["UK music", "psychedelic rock", "Arthur Brown", "rock bands"],
+    "Traffic": ["UK music", "psychedelic rock", "folk rock", "Steve Winwood"],
+    "Led Zeppelin": ["UK music", "hard rock", "blues rock", "rock bands"],
+    "King Crimson": ["UK music", "progressive rock", "art rock", "rock bands"],
+    "Sly and the Family Stone": ["American music", "funk", "soul", "psychedelic soul"],
+    "Creedence Clearwater Revival": ["American music", "swamp rock", "roots rock", "John Fogerty"],
+    "Crosby, Stills & Nash": ["American music", "folk rock", "vocal harmonies", "supergroups"],
+    "Neil Young with Crazy Horse": ["Canadian music", "rock music", "Neil Young", "Crazy Horse", "rock bands"],
+    "Frank Zappa": ["American music", "jazz rock", "experimental rock", "guitarists"],
+    "Nick Drake": ["UK music", "folk music", "singer-songwriters", "folk rock"],
+    "Dusty Springfield": ["UK music", "blue-eyed soul", "soul", "female vocalists"],
+    "David Bowie": ["UK music", "art rock", "folk rock", "singer-songwriters"]
+};
+
+// Specialist facts tied to the particular album (not every album by its act).
+const albumTags = {
+    "Loving You": ["film soundtracks", "Elvis films"],
+    "Elvis' Christmas Album": ["Christmas music", "Christmas albums", "seasonal music"],
+    "King Creole": ["film soundtracks", "Elvis films"],
+    "Here's Little Richard": ["debut albums"],
+    "The 'Chirping' Crickets": ["debut albums", "Buddy Holly and the Crickets"],
+    "The Freewheelin' Bob Dylan": ["protest songs", "folk revival"],
+    "Please Please Me": ["debut albums", "1960s British pop"],
+    "Surfin' Safari": ["debut albums", "surf music"],
+    "The Fabulous Miracles": ["Tamla Records", "Motown albums"],
+    "The Jazz Soul of Little Stevie": ["debut albums", "instrumental albums", "harmonica", "Tamla Records"],
+    "A Hard Day's Night": ["film soundtracks", "Beatles films"],
+    "Rubber Soul": ["folk rock", "landmark albums"],
+    "The Rolling Stones": ["UK debut albums", "British Invasion"],
+    "12 X 5": ["US album releases"],
+    "Bringing It All Back Home": ["electric folk rock"],
+    "Highway 61 Revisited": ["landmark albums", "electric folk rock"],
+    "Pet Sounds": ["Brian Wilson", "baroque pop", "landmark albums"],
+    "Blonde on Blonde": ["double albums", "landmark albums"],
+    "Fresh Cream": ["debut albums", "UK and US album editions", "US track lists"],
+    "If You Can Believe Your Eyes and Ears": ["debut albums", "California sound"],
+    "Sgt. Pepper's Lonely Hearts Club Band": ["concept albums", "landmark albums"],
+    "Magical Mystery Tour": ["1967 US LP", "UK double EP", "Beatles films", "film soundtracks"],
+    "The Doors": ["debut albums", "psychedelic rock"],
+    "Are You Experienced": ["debut albums", "psychedelic rock"],
+    "The Velvet Underground & Nico": ["debut albums", "Andy Warhol", "banana cover"],
+    "The Who Sell Out": ["concept albums", "radio advertisements"],
+    "Forever Changes": ["landmark albums", "psychedelic folk"],
+    "Days of Future Passed": ["orchestral rock", "concept albums"],
+    "Headquarters": ["The Monkees television series"],
+    "The Beatles": ["White Album", "double albums", "1968 Beatles album"],
+    "The Kinks Are the Village Green Preservation Society": ["concept albums", "English village life"],
+    "Odessey and Oracle": ["psychedelic pop", "landmark albums"],
+    "Music from Big Pink": ["debut albums", "Americana"],
+    "Sweetheart of the Rodeo": ["country rock", "landmark albums"],
+    "A Saucerful of Secrets": ["Syd Barrett", "David Gilmour"],
+    "Cheap Thrills": ["Janis Joplin", "landmark albums"],
+    "The Soft Machine": ["debut albums", "Canterbury scene"],
+    "Tommy": ["rock operas", "concept albums"],
+    "Led Zeppelin": ["debut albums", "hard rock"],
+    "In the Court of the Crimson King": ["debut albums", "progressive rock", "landmark albums"],
+    "Hot Rats": ["instrumental albums", "jazz rock"],
+    "Five Leaves Left": ["debut albums", "British folk"],
+    "Dusty in Memphis": ["Memphis soul", "blue-eyed soul"],
+    "From Elvis in Memphis": ["Elvis comeback", "Memphis music"],
+    "Space Oddity": ["originally titled David Bowie", "1972 reissue titles", "Man of Words/Man of Music"],
+    "Ummagumma": ["double albums", "live albums", "studio recordings"]
+};
+
+// Clarify the few edition-sensitive or otherwise ambiguous questions.
+const questionCorrections = {
+    "Elvis Presley|Blue Suede Shoes": "Which Elvis Presley debut album features his recording of 'Blue Suede Shoes'?",
+    "Fresh Cream|I Feel Free": "Which Cream album includes 'I Feel Free' on its original US edition?",
+    "Magical Mystery Tour|I Am the Walrus": "Which 1967 Beatles US LP features 'I Am the Walrus'?",
+    "John Wesley Harding|All Along the Watchtower": "Which Bob Dylan album contains his original recording of 'All Along the Watchtower'?",
+    "The Beatles|Back in the U.S.S.R.": "Which Beatles double album, commonly called the White Album, opens with 'Back in the U.S.S.R.'?",
+    "Space Oddity|Space Oddity": "Under what title was David Bowie's self-titled 1969 second album reissued in 1972?"
+};
+
+const normalise = value => String(value || "")
+    .toLowerCase().replace(/[^a-z0-9]/g, "");
+
+if (albums.length !== 100 || albumYears.length !== 100) {
+    throw new Error("Pack 141 requires exactly 100 albums and release years");
+}
+const albumKeys = new Set();
+for (const [album, artist] of albums) {
+    if (!album || !artist || !artistTags[artist]) {
+        throw new Error("Invalid album or missing artist tags: " + album);
+    }
+    const key = normalise(album) + "|" + normalise(artist);
+    if (albumKeys.has(key)) throw new Error("Repeated album: " + album);
+    albumKeys.add(key);
+}
+
+const artistPool = [...new Set(albums.map(entry => entry[1]))];
 const albumPool = albums.map(entry => entry[0]);
 
-if (
-    artistPool.length < 4 ||
-    albumPool.length < 4
-) {
-    throw new Error(
-        "Not enough distinct answers in Pack 141."
-    );
-}
-
-// =====================================================
-// BUILD FOUR ANSWER CHOICES
-// =====================================================
-
+// Preserve the original three-distractor selection and answer rotation.
 function makeAnswers(correct, pool, index) {
-
-    const otherAnswers = pool.filter(
-        answer => answer !== correct
-    );
-
-    const wrongAnswers = [];
-
-    let position =
-        (index * 7) % otherAnswers.length;
-
-    while (wrongAnswers.length < 3) {
-
-        const candidate =
-            otherAnswers[position];
-
-        if (!wrongAnswers.includes(candidate)) {
-            wrongAnswers.push(candidate);
-        }
-
-        position =
-            (position + 1) % otherAnswers.length;
+    const others = pool.filter(answer => answer !== correct);
+    const wrong = [];
+    let position = (index * 7) % others.length;
+    while (wrong.length < 3) {
+        const candidate = others[position];
+        if (!wrong.includes(candidate)) wrong.push(candidate);
+        position = (position + 1) % others.length;
     }
-
-    const answers = [
-        correct,
-        ...wrongAnswers
-    ];
-
+    const answers = [correct, ...wrong];
     const shift = index % 4;
-
-    return [
-        ...answers.slice(shift),
-        ...answers.slice(0, shift)
-    ];
+    return [...answers.slice(shift), ...answers.slice(0, shift)];
 }
 
-// =====================================================
-// GENERATE QUESTIONS
-// =====================================================
+const quizPack141 = albums.map(([album, artist, song], index) => {
+    const year = albumYears[index];
+    const albumQuestion = Boolean(song);
+    const key = album + "|" + (song || "");
+    const question = questionCorrections[key] || (albumQuestion
+        ? "Which album features the song '" + song + "'?"
+        : "Which artist or band released the album '" + album + "'?");
+    const tags = [...new Set([
+        "Music", "albums", "album trivia", "album history",
+        year < 1960 ? "1950s" : "1960s", String(year),
+        albumQuestion ? "album identification" : "artist identification",
+        album, artist, ...artistTags[artist], ...(albumTags[album] || []),
+        ...(song ? [song, "album tracks"] : [])
+    ])];
+    return {
+        id: "music_" + (12101 + index),
+        category: "Music",
+        question,
+        answers: makeAnswers(albumQuestion ? album : artist,
+            albumQuestion ? albumPool : artistPool, index),
+        correctAnswer: albumQuestion ? album : artist,
+        difficulty: index % 3 === 0 ? "Easy" : "Medium",
+        tags,
+        dailyEligible: true
+    };
+});
 
-const quizPack141 = albums.map(
-    ([album, artist, song], index) => {
-
-        let question;
-        let correctAnswer;
-        let answerPool;
-
-        if (song) {
-
-            // Ask which album contains a song.
-
-            question =
-                "Which album features the song '" +
-                song + "'?";
-
-            correctAnswer = album;
-            answerPool = albumPool;
-
-        } else {
-
-            // Ask which artist released an album.
-
-            question =
-                "Which artist or band released the album '" +
-                album + "'?";
-
-            correctAnswer = artist;
-            answerPool = artistPool;
-        }
-
-        return {
-            id: "music_" + (12101 + index),
-            category: "Music",
-            question: question,
-            answers: makeAnswers(
-                correctAnswer,
-                answerPool,
-                index
-            ),
-            correctAnswer: correctAnswer
-        };
+const seenQuestions = new Set();
+for (const [index, q] of quizPack141.entries()) {
+    const questionKey = normalise(q.question);
+    if (q.id !== "music_" + (12101 + index) ||
+        q.answers.length !== 4 || new Set(q.answers).size !== 4 ||
+        !q.answers.includes(q.correctAnswer) ||
+        seenQuestions.has(questionKey) || q.tags.length < 8 ||
+        !["Easy", "Medium", "Hard"].includes(q.difficulty) ||
+        q.dailyEligible !== true) {
+        throw new Error("Pack 141 validation failed: " + q.id);
     }
-);
-
-// =====================================================
-// FINAL VALIDATION
-// =====================================================
-
-const questionIds = new Set();
-const questionTexts = new Set();
-
-for (const question of quizPack141) {
-
-    if (questionIds.has(question.id)) {
-        throw new Error(
-            "Repeated question ID: " + question.id
-        );
-    }
-
-    questionIds.add(question.id);
-
-    const textKey = normalise(question.question);
-
-    if (questionTexts.has(textKey)) {
-        throw new Error(
-            "Repeated question: " + question.question
-        );
-    }
-
-    questionTexts.add(textKey);
-
-    if (question.answers.length !== 4) {
-        throw new Error(
-            "Incorrect answer count: " + question.id
-        );
-    }
-
-    if (!question.answers.includes(
-        question.correctAnswer
-    )) {
-        throw new Error(
-            "Correct answer missing: " + question.id
-        );
-    }
-
-    if (new Set(question.answers).size !== 4) {
-        throw new Error(
-            "Repeated answer choices: " + question.id
-        );
-    }
+    seenQuestions.add(questionKey);
 }
-
-if (
-    quizPack141[0].id !== "music_12101" ||
-    quizPack141[99].id !== "music_12200"
-) {
-    throw new Error(
-        "Pack 141 question IDs are incorrect."
-    );
+if (quizPack141[0].id !== "music_12101" ||
+    quizPack141[99].id !== "music_12200") {
+    throw new Error("Pack 141 question ID range incorrect");
 }
-
-// =====================================================
-// EXPORT PACK
-// =====================================================
-
 module.exports = quizPack141;
