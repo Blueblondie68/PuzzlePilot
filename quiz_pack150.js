@@ -1,7 +1,8 @@
-// quiz_pack150.js
+ // quiz_pack150.js
 // PuzzlePilot - The Bigggggg Quiz
 // Music: Musicians & Instruments - Pack 150
 // 100 questions: music_13001 to music_13100.
+// Tagging audit: original facts, answer positions and difficulty preserved.
 // New musicians, without repeating Pack 149's featured names.
 
 // Each entry: [musician, group, difficulty].
@@ -125,6 +126,110 @@ const musicianFacts = {
     ]
 };
 
+// Relevant group, country, genre and specialist subject tags.
+// Keep genre tags attached to the group, not to unrelated performers.
+const groupTagLines = {
+    'Cream': 'UK music|blues rock|psychedelic rock|classic rock',
+    'The Jimi Hendrix Experience': 'psychedelic rock|blues rock|classic rock|Jimi Hendrix',
+    'The Yardbirds': 'UK music|British blues|blues rock|1960s music',
+    'Santana': 'Latin rock|blues rock|American music|Carlos Santana',
+    'Yes': 'UK music|progressive rock|classic rock',
+    'Eagles': 'American music|country rock|soft rock|classic rock',
+    'Judas Priest': 'UK music|heavy metal|British metal',
+    'Iron Maiden': 'UK music|heavy metal|New Wave of British Heavy Metal',
+    'UFO': 'UK music|hard rock|heavy metal',
+    'Thin Lizzy': 'Irish music|hard rock|classic rock',
+    'Genesis': 'UK music|progressive rock|pop rock|classic rock',
+    "Booker T. & the M.G.'s": 'American music|Memphis soul|instrumental soul|Stax Records',
+    'Chic': 'American music|disco|funk|dance music',
+    'Van Halen': 'American music|hard rock|arena rock|classic rock',
+    'Extreme': 'American music|funk metal|hard rock|glam metal',
+    'Rage Against the Machine': 'American music|rap metal|alternative metal|political rock',
+    'The Smashing Pumpkins': 'American music|alternative rock|Chicago music|grunge era',
+    'Manic Street Preachers': 'Welsh music|UK music|alternative rock|Britpop era',
+    'Blur': 'UK music|Britpop|alternative rock|Damon Albarn',
+    'Muse': 'UK music|alternative rock|progressive rock|Matt Bellamy',
+    'Green Day': 'American music|punk rock|pop punk|California music',
+    'The White Stripes': 'American music|garage rock revival|Detroit music|blues rock',
+    'Queens of the Stone Age': 'American music|stoner rock|alternative rock|hard rock',
+    'The Black Keys': 'American music|blues rock|garage rock|Ohio music',
+    'The Stone Roses': 'UK music|Manchester music|Madchester|indie rock',
+    'Deep Purple': 'UK music|hard rock|heavy metal|classic rock',
+    'Black Sabbath': 'UK music|Birmingham music|heavy metal|doom metal',
+    'Rainbow': 'UK music|hard rock|heavy metal|Ritchie Blackmore',
+    'Vanilla Fudge': 'American music|psychedelic rock|hard rock|1960s music',
+    'Toto': 'American music|soft rock|pop rock|session musicians',
+    'Journey': 'American music|arena rock|hard rock|classic rock',
+    'Def Leppard': 'UK music|hard rock|glam metal|Sheffield music',
+    'Mötley Crüe': 'American music|glam metal|hard rock|Los Angeles music',
+    'Slayer': 'American music|thrash metal|heavy metal',
+    'Slipknot': 'American music|nu metal|alternative metal|heavy metal',
+    'Thirty Seconds to Mars': 'American music|alternative rock|Jared Leto|rock bands',
+    'Coldplay': 'UK music|alternative rock|pop rock|Chris Martin',
+    'The Killers': 'American music|indie rock|new wave|Las Vegas music',
+    'The Smiths': 'UK music|Manchester music|indie rock|alternative rock',
+    'Blondie': 'American music|new wave|punk rock|New York music',
+    'Motörhead': 'UK music|heavy metal|hard rock|speed metal',
+    'Duran Duran': 'UK music|Birmingham music|new romantic|new wave|synth-pop',
+    'The Clash': 'UK music|punk rock|British punk|post-punk',
+    'The Jam': 'UK music|mod revival|punk rock|new wave',
+    'Level 42': 'UK music|jazz-funk|pop rock|1980s music',
+    'Simple Minds': 'Scottish music|UK music|new wave|alternative rock',
+    'Japan': 'UK music|new romantic|art pop|synth-pop',
+    'Fleetwood Mac': 'British-American music|soft rock|classic rock|blues rock',
+    'Kiss': 'American music|hard rock|glam rock|classic rock',
+    'Talking Heads': 'American music|new wave|art rock|post-punk',
+    'Sonic Youth': 'American music|noise rock|alternative rock|New York music',
+    'Radiohead': 'UK music|alternative rock|art rock|experimental rock',
+    'Supertramp': 'UK music|progressive rock|art rock|pop rock',
+    'Tubeway Army': 'UK music|new wave|synth-pop|Gary Numan',
+    'Depeche Mode': 'UK music|synth-pop|new wave|electronic music',
+    'Eurythmics': 'UK music|synth-pop|new wave|Annie Lennox',
+    'Steely Dan': 'American music|jazz rock|soft rock|jazz fusion',
+    'Weather Report': 'American music|jazz fusion|instrumental music|jazz rock',
+    'The Headhunters': 'American music|jazz-funk|jazz fusion|Herbie Hancock',
+    'Return to Forever': 'American music|jazz fusion|progressive jazz|Chick Corea',
+    'The Cure': 'UK music|gothic rock|post-punk|alternative rock',
+    'The Animals': 'UK music|British Invasion|blues rock|1960s music',
+    'Asia': 'UK music|progressive rock|arena rock|classic rock',
+    'A Flock of Seagulls': 'UK music|new wave|synth-pop|Liverpool music',
+    'Keane': 'UK music|piano rock|alternative rock|pop rock',
+    'The Cars': 'American music|new wave|power pop|Boston music',
+    'Junior Walker & the All Stars': 'American music|Motown|soul|rhythm and blues',
+    'Sade': 'UK music|sophisti-pop|smooth jazz|soul music',
+    'King Crimson': 'UK music|progressive rock|jazz rock|art rock',
+    'Dave Matthews Band': 'American music|jam bands|folk rock|alternative rock',
+    'Alison Krauss & Union Station': 'American music|bluegrass|country music|folk music',
+    'Arcade Fire': 'Canadian music|indie rock|art rock|alternative rock',
+    'The Chicks': 'American music|country music|country pop|bluegrass',
+    'Dexys Midnight Runners': 'UK music|soul|new wave|Celtic folk|British pop',
+    'The Corrs': 'Irish music|folk rock|pop rock|Celtic music',
+    'Gerry Mulligan Quartet': 'American music|cool jazz|West Coast jazz|jazz quartets',
+    'Irakere': 'Cuban music|Afro-Cuban jazz|Latin jazz|jazz fusion',
+    "Art Blakey's Jazz Messengers": 'American music|hard bop|bebop|jazz ensembles',
+    'Clifford Brown–Max Roach Quintet': 'American music|hard bop|jazz ensembles|1950s jazz',
+    'Stan Kenton Orchestra': 'American music|big band|jazz orchestras|swing jazz',
+    'Blues Traveler': 'American music|blues rock|jam bands|alternative rock',
+    'The Paul Butterfield Blues Band': 'American music|Chicago blues|blues rock|1960s music',
+    'War': 'American music|funk|Latin rock|soul',
+    'Canned Heat': 'American music|blues rock|boogie rock|1960s music',
+    'Nitty Gritty Dirt Band': 'American music|country rock|bluegrass|folk rock'
+};
+
+// Specific instrument topics make each item available to specialist quizzes.
+const instrumentTagLines = {
+    Guitar: 'guitar|guitarists|electric guitar|rock guitar',
+    Drums: 'drums|drummers|percussion|drum kit|rhythm section',
+    Bass: 'bass|bass guitar|bassists|rhythm section',
+    Keyboards: 'keyboards|keyboardists|piano|organ|synthesisers',
+    Saxophone: 'saxophone|saxophonists|woodwind instruments|horn sections',
+    Violin: 'violin|violinists|fiddle|string instruments',
+    Trumpet: 'trumpet|trumpeters|brass instruments|jazz musicians',
+    Harmonica: 'harmonica|harmonica players|mouth organ|blues instruments'
+};
+
+const splitTags = value => value.split('|');
+
 const expectedCounts = {
     Guitar: 25,
     Drums: 20,
@@ -195,6 +300,10 @@ for (const [instrument, expected] of Object.entries(expectedCounts)) {
             );
         }
 
+        if (!groupTagLines[group] || !instrumentTagLines[instrument]) {
+            throw new Error(`Pack 150: missing specialist tags for ${musician}`);
+        }
+
         groupsInInstrument.add(normalise(group));
     }
 }
@@ -257,11 +366,17 @@ for (const [instrument, facts] of Object.entries(musicianFacts)) {
             answers,
             correctAnswer,
             difficulty,
-            tags: [
+            tags: [...new Set([
                 'Musicians & Instruments',
                 instrument,
-                askForGroup ? 'Bands' : 'Musicians'
-            ],
+                askForGroup ? 'Bands' : 'Musicians',
+                'Music', 'music trivia', 'band members',
+                'instrument trivia', 'instrument players',
+                askForGroup ? 'group identification' : 'musician identification',
+                musician, group,
+                ...splitTags(instrumentTagLines[instrument]),
+                ...splitTags(groupTagLines[group])
+            ])],
             dailyEligible: true
         });
     }
@@ -305,7 +420,9 @@ for (const question of questions) {
         ).length !== 1 ||
         question.category !== 'Music' ||
         question.dailyEligible !== true ||
-        !Array.isArray(question.tags)
+        !Array.isArray(question.tags) ||
+        question.tags.length < 13 ||
+        new Set(question.tags).size !== question.tags.length
     ) {
         throw new Error(
             `Pack 150: invalid question: ${question.id}`
