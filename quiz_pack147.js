@@ -1,9 +1,9 @@
-
-// quiz_pack147.js
+ // quiz_pack147.js
 // PuzzlePilot - The Bigggggg Quiz
 // Music Albums: Pack 147 - The 2010s
 // 100 questions, music_12701 to music_12800
-// Leave quiz_bank.js unchanged until the album batch is complete.
+// Tagging audit: retain original facts, answers, IDs and difficulty.
+// Release years remain in tags rather than routine question wording.
 
 // Each entry: [year, album, artist, song].
 // Song supplied: identify the album. Empty song: identify the artist.
@@ -119,122 +119,276 @@ const albumFacts = [
     [2019, "Happiness Begins", "Jonas Brothers", ""]
 ];
 
-const normalise = value =>
-    value.trim().toLowerCase().replace(/\s+/g, ' ');
+// Artist and genre tags are added to each individual question.
+const artistTagLines = {
+    "Rihanna": "Barbadian music|pop music|rhythm and blues|dance-pop|female vocalists",
+    "Katy Perry": "American music|pop music|dance-pop|female vocalists|singer-songwriters",
+    "Taylor Swift": "American music|country pop|pop music|singer-songwriters|female vocalists",
+    "Eminem": "American music|hip-hop|rap music|Detroit music|male rappers",
+    "Bruno Mars": "American music|pop music|funk|rhythm and blues|male vocalists",
+    "Arcade Fire": "Canadian music|indie rock|alternative rock|art rock|rock bands",
+    "Kanye West": "American music|hip-hop|rap music|Chicago music|music producers",
+    "Gorillaz": "UK music|alternative rock|electronic music|virtual bands|Damon Albarn",
+    "Take That": "UK music|British pop|boy bands|pop groups|Gary Barlow|Robbie Williams",
+    "CeeLo Green": "American music|soul|rhythm and blues|hip-hop|male vocalists",
+    "Lady Gaga": "American music|dance-pop|electropop|pop music|female vocalists",
+    "Ed Sheeran": "UK music|pop music|folk pop|singer-songwriters|acoustic music",
+    "Coldplay": "UK music|alternative rock|pop rock|Chris Martin|rock bands",
+    "Florence + the Machine": "UK music|indie rock|art pop|Florence Welch|female vocalists",
+    "Beyoncé": "American music|rhythm and blues|pop music|female vocalists|Destiny's Child",
+    "Foo Fighters": "American music|alternative rock|post-grunge|Dave Grohl|rock bands",
+    "Kelly Clarkson": "American music|pop rock|pop music|female vocalists|American Idol",
+    "Olly Murs": "UK music|British pop|pop music|male vocalists|The X Factor",
+    "Noel Gallagher's High Flying Birds": "UK music|alternative rock|Britpop|Noel Gallagher|Oasis",
+    "Calvin Harris": "Scottish music|UK music|electronic dance music|dance-pop|DJs",
+    "Mumford & Sons": "UK music|folk rock|indie folk|Marcus Mumford|rock bands",
+    "fun.": "American music|indie pop|pop rock|Nate Ruess|pop groups",
+    "Justin Bieber": "Canadian music|pop music|dance-pop|rhythm and blues|male vocalists",
+    "Ellie Goulding": "UK music|electropop|indie pop|female vocalists|singer-songwriters",
+    "Muse": "UK music|alternative rock|progressive rock|Matt Bellamy|rock bands",
+    "Frank Ocean": "American music|alternative R&B|neo soul|singer-songwriters|male vocalists",
+    "Jake Bugg": "UK music|folk rock|indie rock|singer-songwriters|male vocalists",
+    "Arctic Monkeys": "UK music|Sheffield music|indie rock|alternative rock|Alex Turner",
+    "Daft Punk": "French music|French house|electronic music|disco|electronic duos",
+    "Miley Cyrus": "American music|pop music|dance-pop|female vocalists|singer-songwriters",
+    "David Bowie": "UK music|art rock|rock music|singer-songwriters|male vocalists",
+    "One Direction": "UK music|Irish music|boy bands|teen pop|The X Factor",
+    "Justin Timberlake": "American music|pop music|rhythm and blues|dance-pop|NSYNC",
+    "Lorde": "New Zealand music|electropop|art pop|singer-songwriters|female vocalists",
+    "Michael Bublé": "Canadian music|traditional pop|jazz vocals|crooners|male vocalists",
+    "Sam Smith": "UK music|soul|pop music|singer-songwriters|ballads",
+    "Sia": "Australian music|electropop|pop music|female vocalists|songwriters",
+    "George Ezra": "UK music|folk pop|singer-songwriters|male vocalists|acoustic music",
+    "Iggy Azalea": "Australian music|hip-hop|rap music|female rappers|pop rap",
+    "Ariana Grande": "American music|pop music|rhythm and blues|dance-pop|female vocalists",
+    "David Guetta": "French music|electronic dance music|house music|DJs|dance-pop",
+    "Adele": "UK music|soul|pop music|singer-songwriters|female vocalists",
+    "The Weeknd": "Canadian music|alternative R&B|pop music|synth-pop|male vocalists",
+    "James Bay": "UK music|folk rock|pop rock|singer-songwriters|male vocalists",
+    "Little Mix": "UK music|British pop|girl groups|dance-pop|The X Factor",
+    "Carly Rae Jepsen": "Canadian music|synth-pop|dance-pop|female vocalists|pop music",
+    "Twenty One Pilots": "American music|alternative rock|electropop|rap rock|musical duos",
+    "Tame Impala": "Australian music|psychedelic rock|psychedelic pop|Kevin Parker|indie rock",
+    "Drake": "Canadian music|hip-hop|rap music|Toronto music|rhythm and blues",
+    "Britney Spears": "American music|dance-pop|pop music|female vocalists|electropop",
+    "Zayn": "UK music|rhythm and blues|pop music|One Direction|male vocalists",
+    "Kendrick Lamar": "American music|hip-hop|West Coast hip-hop|Compton music|rap music",
+    "Imagine Dragons": "American music|pop rock|alternative rock|Las Vegas music|rock bands",
+    "Pink": "American music|pop rock|pop music|female vocalists|singer-songwriters",
+    "Dua Lipa": "UK music|dance-pop|pop music|female vocalists|synth-pop",
+    "Harry Styles": "UK music|pop rock|pop music|One Direction|male vocalists",
+    "Linkin Park": "American music|alternative rock|nu metal|Chester Bennington|Mike Shinoda",
+    "Cardi B": "American music|hip-hop|rap music|female rappers|New York music",
+    "Kylie Minogue": "Australian music|dance-pop|pop music|female vocalists|country pop",
+    "Camila Cabello": "American music|Cuban music|Latin pop|pop music|female vocalists",
+    "Shawn Mendes": "Canadian music|pop music|singer-songwriters|male vocalists|pop rock",
+    "BTS": "South Korean music|K-pop|boy bands|Korean pop|vocal groups",
+    "Rita Ora": "UK music|pop music|dance-pop|female vocalists|rhythm and blues",
+    "Jess Glynne": "UK music|pop music|soul|dance-pop|female vocalists",
+    "Post Malone": "American music|pop rap|hip-hop|trap music|male vocalists",
+    "Billie Eilish": "American music|alternative pop|electropop|singer-songwriters|female vocalists",
+    "Lewis Capaldi": "Scottish music|UK music|pop music|ballads|singer-songwriters",
+    "Lana Del Rey": "American music|alternative pop|baroque pop|singer-songwriters|female vocalists",
+    "Madonna": "American music|pop music|dance-pop|female vocalists|singer-songwriters",
+    "Jonas Brothers": "American music|pop rock|pop music|boy bands|vocal groups"
+};
+
+// Album-specific tags only apply to the named album.
+const albumTagLines = {
+    "Loud": "Only Girl (In the World)|What's My Name?|S&M|Rihanna albums",
+    "Teenage Dream": "Firework|California Gurls|Last Friday Night (T.G.I.F.)|Katy Perry albums",
+    "Speak Now": "Mine|Back to December|Enchanted|Taylor Swift albums",
+    "Recovery": "Not Afraid|Love the Way You Lie|Eminem albums",
+    "Doo-Wops & Hooligans": "Just the Way You Are|Grenade|debut albums",
+    "The Suburbs": "Ready to Start|Grammy Award-winning albums|Arcade Fire albums",
+    "My Beautiful Dark Twisted Fantasy": "Power|Runaway|All of the Lights|Kanye West albums",
+    "Plastic Beach": "Stylo|On Melancholy Hill|Gorillaz albums",
+    "Progress": "The Flood|Robbie Williams reunion|Take That albums",
+    "The Lady Killer": "Forget You|Bright Lights Bigger City|CeeLo Green albums",
+    "Born This Way": "Born This Way|Judas|The Edge of Glory|Lady Gaga albums",
+    "+": "The A Team|Lego House|debut albums|Ed Sheeran albums",
+    "Mylo Xyloto": "Paradise|Every Teardrop Is a Waterfall|Coldplay albums",
+    "Ceremonials": "Shake It Out|No Light No Light|Florence albums",
+    "4": "Love on Top|Run the World (Girls)|Beyoncé albums",
+    "Talk That Talk": "We Found Love|Where Have You Been|Rihanna albums",
+    "Wasting Light": "Walk|Rope|Foo Fighters albums",
+    "Stronger": "Stronger (What Doesn't Kill You)|Mr. Know It All|Kelly Clarkson albums",
+    "In Case You Didn't Know": "Dance with Me Tonight|Heart Skips a Beat|Olly Murs albums",
+    "Noel Gallagher's High Flying Birds": "debut albums|The Death of You and Me|If I Had a Gun",
+    "Red": "We Are Never Ever Getting Back Together|I Knew You Were Trouble|Taylor Swift albums",
+    "Unapologetic": "Diamonds|Stay|Rihanna albums",
+    "18 Months": "Feel So Close|Sweet Nothing|Calvin Harris albums",
+    "Babel": "I Will Wait|Lover of the Light|Mumford & Sons albums",
+    "Some Nights": "We Are Young|Some Nights|Carry On|fun. albums",
+    "Believe": "Boyfriend|As Long as You Love Me|Justin Bieber albums",
+    "Halcyon": "Anything Could Happen|Figure 8|Ellie Goulding albums",
+    "The 2nd Law": "Madness|Supremacy|Muse albums",
+    "Channel Orange": "Thinkin Bout You|Pyramids|debut studio albums",
+    "Jake Bugg": "Lightning Bolt|Two Fingers|debut albums",
+    "AM": "Do I Wanna Know?|R U Mine?|Why'd You Only Call Me When You're High?|Arctic Monkeys albums",
+    "Random Access Memories": "Get Lucky|Lose Yourself to Dance|Instant Crush|Daft Punk albums",
+    "Prism": "Roar|Dark Horse|Katy Perry albums",
+    "Bangerz": "Wrecking Ball|We Can't Stop|Miley Cyrus albums",
+    "The Next Day": "Where Are We Now?|The Stars (Are Out Tonight)|David Bowie albums",
+    "Beyoncé": "Drunk in Love|Partition|visual albums|Beyoncé albums",
+    "Midnight Memories": "Story of My Life|Best Song Ever|One Direction albums",
+    "The 20/20 Experience": "Mirrors|Suit & Tie|Justin Timberlake albums",
+    "Pure Heroine": "Royals|Team|debut albums|Lorde albums",
+    "To Be Loved": "It's a Beautiful Day|Close Your Eyes|Michael Bublé albums",
+    "1989": "Shake It Off|Blank Space|Style|Taylor Swift albums",
+    "x": "Thinking Out Loud|Sing|Photograph|Ed Sheeran albums",
+    "In the Lonely Hour": "Stay with Me|I'm Not the Only One|debut albums|Sam Smith albums",
+    "Ghost Stories": "A Sky Full of Stars|Magic|Coldplay albums",
+    "1000 Forms of Fear": "Chandelier|Elastic Heart|Sia albums",
+    "Wanted on Voyage": "Budapest|Blame It on Me|debut albums",
+    "The New Classic": "Fancy|Black Widow|debut albums",
+    "My Everything": "Problem|Break Free|Ariana Grande albums",
+    "Four": "Steal My Girl|Night Changes|One Direction albums",
+    "Listen": "Dangerous|Lovers on the Sun|David Guetta albums",
+    "25": "Hello|When We Were Young|Send My Love (To Your New Lover)|Adele albums",
+    "Purpose": "Sorry|What Do You Mean?|Love Yourself|Justin Bieber albums",
+    "Beauty Behind the Madness": "Can't Feel My Face|The Hills|Earned It|The Weeknd albums",
+    "Made in the A.M.": "Drag Me Down|Perfect|One Direction albums",
+    "Chaos and the Calm": "Hold Back the River|Let It Go|debut albums",
+    "How Big, How Blue, How Beautiful": "Ship to Wreck|What Kind of Man|Florence albums",
+    "Get Weird": "Black Magic|Love Me Like You|Little Mix albums",
+    "Emotion": "Run Away with Me|I Really Like You|Carly Rae Jepsen albums",
+    "Blurryface": "Stressed Out|Ride|Twenty One Pilots albums",
+    "Currents": "The Less I Know the Better|Let It Happen|Tame Impala albums",
+    "Lemonade": "Formation|Hold Up|Sorry|Beyoncé albums|visual albums",
+    "Views": "One Dance|Hotline Bling|Drake albums",
+    "Dangerous Woman": "Into You|Dangerous Woman|Side to Side|Ariana Grande albums",
+    "24K Magic": "24K Magic|That's What I Like|Bruno Mars albums",
+    "Starboy": "Starboy|I Feel It Coming|The Weeknd albums",
+    "Anti": "Work|Needed Me|Love on the Brain|Rihanna albums",
+    "Glory": "Make Me...|Slumber Party|Britney Spears albums",
+    "Joanne": "Million Reasons|Perfect Illusion|Lady Gaga albums",
+    "Blackstar": "Lazarus|Blackstar|David Bowie albums|final studio albums",
+    "Mind of Mine": "Pillowtalk|Like I Would|debut solo albums",
+    "÷": "Shape of You|Castle on the Hill|Perfect|Ed Sheeran albums",
+    "Reputation": "Look What You Made Me Do|Delicate|Ready for It?|Taylor Swift albums",
+    "Melodrama": "Green Light|Liability|Lorde albums",
+    "DAMN.": "HUMBLE.|DNA.|LOYALTY.|Pulitzer Prize for Music",
+    "Evolve": "Believer|Thunder|Whatever It Takes|Imagine Dragons albums",
+    "Beautiful Trauma": "What About Us|Beautiful Trauma|Pink albums",
+    "Dua Lipa": "New Rules|Be the One|debut albums",
+    "Harry Styles": "Sign of the Times|Kiwi|debut solo albums",
+    "One More Light": "Heavy|One More Light|Linkin Park albums",
+    "The Thrill of It All": "Too Good at Goodbyes|Pray|Sam Smith albums",
+    "Sweetener": "No Tears Left to Cry|God Is a Woman|Ariana Grande albums",
+    "Invasion of Privacy": "I Like It|Bodak Yellow|debut albums|Grammy Award-winning albums",
+    "Scorpion": "God's Plan|In My Feelings|Nice for What|Drake albums",
+    "Golden": "Dancing|Stop Me from Falling|Kylie Minogue albums|country pop",
+    "Camila": "Havana|Never Be the Same|debut solo albums",
+    "Shawn Mendes": "In My Blood|Lost in Japan|Shawn Mendes albums",
+    "Love Yourself: Answer": "IDOL|Euphoria|BTS albums|K-pop albums",
+    "Phoenix": "Let You Love Me|Anywhere|Rita Ora albums",
+    "Always In Between": "I'll Be There|All I Am|Jess Glynne albums",
+    "beerbongs & bentleys": "Rockstar|Psycho|Better Now|Post Malone albums",
+    "When We All Fall Asleep, Where Do We Go?": "bad guy|bury a friend|when the party's over|debut albums",
+    "thank u, next": "7 rings|thank u next|break up with your girlfriend I'm bored|Ariana Grande albums",
+    "Fine Line": "Adore You|Watermelon Sugar|Falling|Harry Styles albums",
+    "Lover": "You Need to Calm Down|ME!|The Man|Taylor Swift albums",
+    "No.6 Collaborations Project": "I Don't Care|Beautiful People|South of the Border|Ed Sheeran albums",
+    "Hollywood's Bleeding": "Circles|Sunflower|Goodbyes|Post Malone albums",
+    "Divinely Uninspired to a Hellish Extent": "Someone You Loved|Before You Go|debut albums",
+    "Norman Fucking Rockwell!": "Venice Bitch|Mariners Apartment Complex|Lana Del Rey albums",
+    "Madame X": "Medellín|Crave|Madonna albums",
+    "Happiness Begins": "Sucker|Only Human|Jonas Brothers reunion"
+};
+
+const normalise = value => String(value).trim().toLowerCase().replace(/\s+/g, ' ');
+const splitTags = value => value ? value.split('|') : [];
 
 if (albumFacts.length !== 100) {
     throw new Error('Pack 147 must contain exactly 100 albums.');
 }
 
 const seenAlbums = new Set();
-
 for (const [year, album, artist, song] of albumFacts) {
-    if (!Number.isInteger(year) ||
-        year < 2010 ||
-        year > 2019 ||
-        typeof album !== 'string' ||
-        !album.trim() ||
-        typeof artist !== 'string' ||
-        !artist.trim() ||
-        typeof song !== 'string') {
-        throw new Error('Invalid Pack 147 album fact: ' + album);
+    if (!Number.isInteger(year) || year < 2010 || year > 2019 ||
+        typeof album !== 'string' || !album.trim() ||
+        typeof artist !== 'string' || !artist.trim() ||
+        typeof song !== 'string' || !artistTagLines[artist] ||
+        !albumTagLines[album]) {
+        throw new Error('Invalid or untagged Pack 147 album: ' + album);
     }
-
     const key = normalise(album);
-
     if (seenAlbums.has(key)) {
         throw new Error('Repeated album in Pack 147: ' + album);
     }
-
     seenAlbums.add(key);
 }
 
-// Distractors are albums or artists from the same year.
-// Exclude other albums by the artist in album-from-song questions.
+// Preserve original same-year distractors and correct-answer positions.
 function chooseWrongAnswers(year, album, artist, wantsAlbum, index) {
-    const sameYear = albumFacts.filter(
-        fact => fact[0] === year
-    );
-
+    const sameYear = albumFacts.filter(fact => fact[0] === year);
     const candidates = wantsAlbum
-        ? sameYear
-            .filter(fact => fact[2] !== artist)
-            .map(fact => fact[1])
+        ? sameYear.filter(fact => fact[2] !== artist).map(fact => fact[1])
         : [...new Set(sameYear.map(fact => fact[2]))]
             .filter(name => name !== artist);
-
+    if (candidates.length < 3) {
+        throw new Error('Insufficient answer choices for ' + album);
+    }
     const wrong = [];
     let position = (index * 3 + 1) % candidates.length;
-
     while (wrong.length < 3) {
         const candidate = candidates[position];
-
-        if (candidate !== album &&
-            candidate !== artist &&
+        if (candidate !== album && candidate !== artist &&
             !wrong.includes(candidate)) {
             wrong.push(candidate);
         }
-
         position = (position + 1) % candidates.length;
     }
-
     return wrong;
 }
 
-const questions = albumFacts.map(
-    ([year, album, artist, song], index) => {
-        const wantsAlbum = song.length > 0;
-        const correctAnswer = wantsAlbum ? album : artist;
+const questions = albumFacts.map(([year, album, artist, song], index) => {
+    const wantsAlbum = song.length > 0;
+    const correctAnswer = wantsAlbum ? album : artist;
+    const answers = chooseWrongAnswers(year, album, artist, wantsAlbum, index);
+    answers.splice(index % 4, 0, correctAnswer);
 
-        const answers = chooseWrongAnswers(
-            year,
-            album,
-            artist,
-            wantsAlbum,
-            index
-        );
+    const tags = [...new Set([
+        '2010s', 'Albums', wantsAlbum ? 'Album tracks' : 'Artists',
+        'Music', 'album trivia', 'album history', String(year),
+        wantsAlbum ? 'album identification' : 'artist identification',
+        album, artist,
+        ...splitTags(artistTagLines[artist]),
+        ...splitTags(albumTagLines[album]),
+        ...(wantsAlbum ? [song, 'album tracks'] : [])
+    ])];
+    return {
+        id: 'music_' + (12701 + index),
+        category: 'Music',
+        question: wantsAlbum
+            ? `Which album features "${song}" by ${artist}?`
+            : `Which artist released the album "${album}"?`,
+        answers,
+        correctAnswer,
+        difficulty: index % 13 === 0 ? 'Hard' : 'Medium',
+        tags,
+        dailyEligible: true
+    };
+});
 
-        // Rotate the correct answer through four positions.
-        answers.splice(index % 4, 0, correctAnswer);
-
-        return {
-            id: 'music_' + (12701 + index),
-            category: 'Music',
-
-            question: wantsAlbum
-                ? `Which ${year} album features "${song}" by ${artist}?`
-                : `Which artist released the ${year} album "${album}"?`,
-
-            answers,
-            correctAnswer,
-
-            difficulty: index % 13 === 0 ? 'Hard' : 'Medium',
-
-            tags: [
-                '2010s',
-                'Albums',
-                wantsAlbum ? 'Album tracks' : 'Artists'
-            ],
-
-            dailyEligible: true
-        };
-    }
-);
-
-// Validate the finished question pack.
+// Check every finished question before the quiz bank uses this pack.
 const ids = new Set();
-
-for (const question of questions) {
-    if (ids.has(question.id) ||
-        question.answers.length !== 4 ||
-        new Set(question.answers.map(normalise)).size !== 4 ||
-        !question.answers.includes(question.correctAnswer)) {
-        throw new Error(
-            'Pack 147 validation failed: ' + question.id
-        );
+const texts = new Set();
+for (const [index, q] of questions.entries()) {
+    const key = normalise(q.question);
+    if (q.id !== 'music_' + (12701 + index) ||
+        ids.has(q.id) || texts.has(key) ||
+        q.answers.length !== 4 ||
+        new Set(q.answers.map(normalise)).size !== 4 ||
+        !q.answers.includes(q.correctAnswer) ||
+        q.tags.length < 12 ||
+        !['Medium', 'Hard'].includes(q.difficulty) ||
+        q.dailyEligible !== true) {
+        throw new Error('Pack 147 validation failed: ' + q.id);
     }
-
-    ids.add(question.id);
+    ids.add(q.id);
+    texts.add(key);
 }
 
 module.exports = questions;
