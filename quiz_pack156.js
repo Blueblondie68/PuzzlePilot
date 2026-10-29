@@ -122,6 +122,110 @@ const singerFacts = {
     ]
 };
 
+// Specialist tags for the groups, genres and music scenes.
+// Player-facing wording and original question periods remain unchanged.
+const groupTagLines = {
+    'The Kinks': 'UK music|British rock|British Invasion|1960s rock',
+    'The Dave Clark Five': 'UK music|British Invasion|beat music|1960s pop',
+    'The Moody Blues': 'UK music|progressive rock|psychedelic rock|classic rock',
+    'The Seekers': 'Australian music|folk pop|folk music|1960s pop',
+    'Procol Harum': 'UK music|progressive rock|psychedelic rock|classic rock',
+    'The Herd': 'UK music|psychedelic pop|1960s pop|British rock',
+    'The Mindbenders': 'UK music|British Invasion|beat music|1960s pop',
+    "The Lovin' Spoonful": 'American music|folk rock|pop rock|1960s music',
+    'Country Joe and the Fish': 'American music|San Francisco music|psychedelic rock|folk rock',
+    'The Jimi Hendrix Experience': 'British-American music|psychedelic rock|blues rock|classic rock',
+    'The Union Gap': 'American music|sunshine pop|1960s pop|pop rock',
+    'Blood, Sweat & Tears': 'American music|jazz rock|brass rock|classic rock',
+    'Canned Heat': 'American music|blues rock|boogie rock|1960s rock',
+    'Dave Dee, Dozy, Beaky, Mick & Tich': 'UK music|beat music|1960s pop|British Invasion',
+    'The Box Tops': 'American music|blue-eyed soul|pop rock|1960s music',
+    'The 13th Floor Elevators': 'American music|psychedelic rock|garage rock|Texas music',
+    'The Dakotas': 'UK music|Merseybeat|Liverpool music|1960s pop',
+    'Manfred Mann': 'UK music|British Invasion|rhythm and blues|1960s rock',
+    'The Pretty Things': 'UK music|garage rock|blues rock|psychedelic rock',
+    'Steppenwolf': 'Canadian-American music|hard rock|psychedelic rock|classic rock',
+    'Rainbow': 'UK music|hard rock|heavy metal|classic rock',
+    'Mott the Hoople': 'UK music|glam rock|classic rock|1970s rock',
+    'Genesis': 'UK music|progressive rock|classic rock|pop rock',
+    'Journey': 'American music|arena rock|hard rock|classic rock',
+    'New York Dolls': 'American music|New York music|glam rock|proto-punk',
+    'Patti Smith Group': 'American music|New York music|punk rock|art rock',
+    'Tom Petty and the Heartbreakers': 'American music|heartland rock|roots rock|classic rock',
+    'The Silver Bullet Band': 'American music|heartland rock|classic rock|Bob Seger',
+    'Van der Graaf Generator': 'UK music|progressive rock|art rock|1970s rock',
+    'Talking Heads': 'American music|new wave|art rock|post-punk',
+    'The Clash': 'UK music|punk rock|British punk|post-punk',
+    'Sex Pistols': 'UK music|punk rock|British punk|1970s music',
+    'X-Ray Spex': 'UK music|punk rock|British punk|female punk musicians',
+    'Siouxsie and the Banshees': 'UK music|post-punk|gothic rock|new wave',
+    'Kansas': 'American music|progressive rock|arena rock|classic rock',
+    'Van Halen': 'American music|hard rock|arena rock|classic rock',
+    'Lynyrd Skynyrd': 'American music|southern rock|blues rock|classic rock',
+    'Steve Miller Band': 'American music|blues rock|pop rock|classic rock',
+    'Cheap Trick': 'American music|power pop|hard rock|classic rock',
+    'Q-Tips': 'UK music|blue-eyed soul|soul music|pub rock',
+    'Generation X': 'UK music|punk rock|new wave|British punk',
+    'The Cult': 'UK music|gothic rock|hard rock|post-punk',
+    'The Sisters of Mercy': 'UK music|gothic rock|post-punk|dark wave',
+    'Echo & the Bunnymen': 'UK music|Liverpool music|post-punk|alternative rock',
+    'Dead or Alive': 'UK music|hi-NRG|dance-pop|synth-pop',
+    'Kajagoogoo': 'UK music|synth-pop|new wave|1980s pop',
+    'Public Image Ltd': 'UK music|post-punk|experimental rock|John Lydon',
+    'The Housemartins': 'UK music|indie pop|jangle pop|alternative rock',
+    'The Waterboys': 'UK music|folk rock|Celtic rock|alternative rock',
+    'Adam and the Ants': 'UK music|new wave|new romantic|post-punk',
+    'Iron Maiden': 'UK music|heavy metal|British metal|New Wave of British Heavy Metal',
+    'Def Leppard': 'UK music|hard rock|glam metal|Sheffield music',
+    'Japan': 'UK music|new romantic|art pop|new wave',
+    'Real Life': 'Australian music|synth-pop|new wave|1980s pop',
+    'The Psychedelic Furs': 'UK music|post-punk|new wave|alternative rock',
+    'The Alarm': 'Welsh music|UK music|alternative rock|new wave',
+    "The Go-Go's": 'American music|new wave|pop rock|female rock bands',
+    'Scandal': 'American music|pop rock|new wave|1980s rock',
+    'The Motels': 'American music|new wave|pop rock|1980s music',
+    'Elastica': 'UK music|Britpop|alternative rock|post-punk',
+    'Sleeper': 'UK music|Britpop|indie rock|alternative rock',
+    'Echobelly': 'UK music|Britpop|indie rock|alternative rock',
+    'Catatonia': 'Welsh music|UK music|Britpop|alternative rock',
+    'The Corrs': 'Irish music|Celtic pop|folk rock|pop rock',
+    'Texas': 'Scottish music|UK music|pop rock|alternative rock',
+    'Screaming Trees': 'American music|Seattle music|grunge|alternative rock',
+    'Bush': 'UK music|post-grunge|alternative rock|1990s rock',
+    'Stone Temple Pilots': 'American music|grunge|alternative rock|hard rock',
+    'Pantera': 'American music|groove metal|heavy metal|Texas music',
+    'Mercury Rev': 'American music|psychedelic rock|dream pop|alternative rock',
+    'Supergrass': 'UK music|Britpop|alternative rock|indie rock',
+    'Kula Shaker': 'UK music|Britpop|psychedelic rock|Indian influences',
+    'Shed Seven': 'UK music|Britpop|indie rock|alternative rock',
+    'Longpigs': 'UK music|Britpop|alternative rock|Sheffield music',
+    'Reef': 'UK music|blues rock|alternative rock|1990s rock',
+    'Placebo': 'UK music|alternative rock|glam rock|1990s music',
+    'The Bluetones': 'UK music|Britpop|indie rock|alternative rock',
+    'Manic Street Preachers': 'Welsh music|UK music|alternative rock|Britpop era',
+    'James': 'UK music|Manchester music|alternative rock|indie rock',
+    'My Chemical Romance': 'American music|emo|alternative rock|pop punk',
+    'Green Day': 'American music|punk rock|pop punk|alternative rock',
+    'Fall Out Boy': 'American music|pop punk|emo pop|alternative rock',
+    'Maroon 5': 'American music|pop rock|pop music|blue-eyed soul',
+    'Thirty Seconds to Mars': 'American music|alternative rock|arena rock|2000s music',
+    'Nickelback': 'Canadian music|post-grunge|hard rock|pop rock',
+    'Sum 41': 'Canadian music|pop punk|punk rock|alternative rock',
+    'Papa Roach': 'American music|nu metal|alternative rock|rap rock',
+    'Goldfrapp': 'UK music|electronic music|synth-pop|trip-hop',
+    'Gossip': 'American music|indie rock|dance-punk|alternative rock',
+    'The Kills': 'British-American music|indie rock|garage rock|blues rock',
+    'Rilo Kiley': 'American music|indie rock|indie pop|alternative country',
+    'Keane': 'UK music|piano rock|alternative rock|pop rock',
+    'Starsailor': 'UK music|post-Britpop|alternative rock|indie rock',
+    'The Kooks': 'UK music|indie rock|pop rock|alternative rock',
+    'Razorlight': 'UK music|indie rock|post-punk revival|alternative rock',
+    'Stereophonics': 'Welsh music|UK music|alternative rock|post-Britpop',
+    'Million Dead': 'UK music|post-hardcore|punk rock|2000s rock',
+    'The Mars Volta': 'American music|progressive rock|experimental rock|post-hardcore',
+    'Incubus': 'American music|alternative rock|funk metal|2000s rock'
+};
+
 function normalise(value) {
     return String(value).trim().toLowerCase().replace(/\s+/g, ' ');
 }
@@ -150,6 +254,10 @@ for (const [decade, facts] of Object.entries(singerFacts)) {
             throw new Error(
                 'Pack 156 invalid or repeated singer: ' + singer
             );
+        }
+
+        if (!groupTagLines[group]) {
+            throw new Error('Pack 156 missing specialist tags: ' + group);
         }
 
         singers.add(normalise(singer));
@@ -219,11 +327,16 @@ for (const [decade, facts] of Object.entries(singerFacts)) {
             answers,
             correctAnswer,
             difficulty,
-            tags: [
+            tags: [...new Set([
                 'Lead Singers',
                 decade,
-                askSinger ? 'Identify Singer' : 'Identify Group'
-            ],
+                askSinger ? 'Identify Singer' : 'Identify Group',
+                'Music', 'music trivia', 'lead singers', 'lead vocals',
+                'vocalists', 'band members', 'lead singer identification',
+                askSinger ? 'singer identification' : 'group identification',
+                singer, group,
+                ...groupTagLines[group].split('|')
+            ])],
             dailyEligible: true
         });
     }
@@ -256,7 +369,8 @@ for (const item of questions) {
         ).length !== 1 ||
         item.category !== 'Music' ||
         item.dailyEligible !== true ||
-        item.tags.length !== 3
+        item.tags.length < 13 ||
+        new Set(item.tags).size !== item.tags.length
     ) {
         throw new Error(
             'Pack 156 invalid question: ' + item.id
