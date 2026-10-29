@@ -123,6 +123,111 @@ const duetFacts = {
     ],
 };
 
+// Recording-specific musical styles, scenes and specialist topics.
+// Each entry is tied to the recording year and title to distinguish versions.
+const recordingTagLines = {
+    "1958|All I Have to Do Is Dream": "rock and roll|close harmony|The Everly Brothers|1950s pop",
+    "1965|The Sound of Silence": "folk rock|folk music|Simon & Garfunkel|1960s rock",
+    "1962|Hey Paula": "teen pop|pop duos|Paul & Paula|1960s pop",
+    "1964|A World Without Love": "British Invasion|Merseybeat|Peter and Gordon|1960s pop",
+    "1967|Happy Together": "sunshine pop|psychedelic pop|The Turtles|1960s pop",
+    "1979|Boogie Wonderland": "disco|funk|The Emotions|1970s dance music",
+    "1973|You Are Everything": "Motown|soul music|R&B duets|1970s soul",
+    "1979|Ain't No Stoppin' Us Now": "disco|Philadelphia soul|McFadden & Whitehead|1970s soul",
+    "1977|Yes Sir, I Can Boogie": "disco|Eurodisco|Baccara|Spanish music",
+    "1977|Don't Stop": "soft rock|Fleetwood Mac|classic rock|1970s rock",
+    "1981|Just the Two of Us": "smooth jazz|R&B music|jazz-funk|1980s soul",
+    "1983|Tonight I Celebrate My Love": "R&B duets|soul ballads|adult contemporary|1980s pop",
+    "1984|Tell Me I'm Not Dreamin' (Too Good to Be True)": "R&B music|funk|Jackson family|1980s pop",
+    "1984|Hold Me": "R&B duets|soul music|1980s soul|female vocalists",
+    "1984|Somebody's Watching Me": "synth-funk|pop music|Motown|1980s pop",
+    "1989|Opposites Attract": "dance-pop|new jack swing|animated music video|1980s pop",
+    "1989|Friends": "new jack swing|hip hop|R&B music|1980s music",
+    "1983|Never Gonna Let You Go": "soft rock|pop ballads|adult contemporary|1980s pop",
+    "1986|In Your Eyes": "art rock|world music|Senegalese music|1980s rock",
+    "1987|Respectable": "dance-pop|UK music|Mel and Kim|1980s pop",
+    "1986|Don't Leave Me This Way": "hi-NRG|synth-pop|The Communards|1980s dance music",
+    "1984|I Feel for You": "funk|electro|hip hop|1980s R&B",
+    "1987|Push It": "hip hop|electro|Salt-N-Pepa|1980s rap",
+    "1989|Keep on Movin'": "soul music|UK dance|club classics|1980s R&B",
+    "1983|Rockit": "electro|turntablism|jazz-funk|instrumental music",
+    "1986|Don't Forget Me (When I'm Gone)": "pop rock|Canadian music|soft rock|1980s music",
+    "1993|All for Love": "film soundtracks|The Three Musketeers|Rod Stewart|1990s pop",
+    "1992|I'll Be There": "live recordings|MTV Unplugged|R&B music|1990s pop",
+    "1999|Thank God I Found You": "R&B music|98 Degrees|pop ballads|1990s pop",
+    "1998|Sweetheart": "R&B music|hip hop|remakes|1990s music",
+    "1997|Breakdown": "R&B music|hip hop|rap collaborations|1990s pop",
+    "1996|No Diggity": "hip hop|new jack swing|R&B music|1990s R&B",
+    "1997|I'll Be Missing You": "hip hop|tribute songs|Bad Boy Records|1990s rap",
+    "1997|Mo Money Mo Problems": "hip hop|Mase|Bad Boy Records|1990s rap",
+    "1998|Ghetto Supastar (That Is What You Are)": "hip hop|Ol' Dirty Bastard|film soundtracks|1990s rap",
+    "1997|Got 'til It's Gone": "R&B music|hip hop|Joni Mitchell sample|1990s pop",
+    "1999|Wild Wild West": "film soundtracks|hip hop|Dru Hill|1990s pop",
+    "1996|Time to Say Goodbye": "classical crossover|opera|Italian music|1990s pop",
+    "1993|When I Fall in Love": "film soundtracks|pop standards|Sleepless in Seattle|1990s pop",
+    "1999|Written in the Stars": "musical theatre|Aida musical|Disney musicals|1990s pop",
+    "1991|You Got the Love": "house music|dance music|UK dance|1990s music",
+    "1994|Dreamer": "house music|Eurodance|dance music|1990s music",
+    "1993|Right in the Night (Fall in Love with Music)": "trance music|Eurodance|German music|1990s dance",
+    "1996|Ready or Not": "hip hop|Fugees|Lauryn Hill|1990s rap",
+    "1998|Still Not a Player": "hip hop|R&B music|New York hip hop|1990s rap",
+    "1997|Thug Luv": "hip hop|gangsta rap|West Coast hip hop|1990s rap",
+    "2005|One": "rock duets|R&B music|U2|2000s music",
+    "2000|Could I Have This Kiss Forever": "Latin pop|R&B duets|pop ballads|2000s pop",
+    "2005|Don't Cha": "R&B music|dance-pop|girl groups|2000s pop",
+    "2006|Buttons": "R&B music|dance-pop|girl groups|2000s pop",
+    "2007|Girlfriend (Remix)": "pop punk|remixes|hip hop|2000s pop",
+    "2001|Lady Marmalade": "Moulin Rouge!|film soundtracks|P!nk|Mýa",
+    "2006|Bossy": "R&B music|hip hop|dance music|2000s pop",
+    "2006|Lil Star": "soul music|R&B music|UK charts|2000s pop",
+    "2008|Dance Wiv Me": "UK grime|electronic music|UK charts|2000s dance",
+    "2009|Number 1": "UK grime|UK hip hop|UK charts|2000s pop",
+    "2009|Never Leave You": "UK grime|UK charts|Sugababes|2000s pop",
+    "2004|Not in Love": "Latin pop|R&B music|2000s pop|pop duets",
+    "2009|Takin' Back My Love": "Latin pop|R&B music|2000s pop|pop duets",
+    "2002|Boys (The Co-Ed Remix)": "pop music|remixes|The Neptunes|2000s pop",
+    "2002|Like I Love You": "R&B music|hip hop|The Neptunes|2000s pop",
+    "2007|The Way I Are": "electropop|hip hop|dance-pop|2000s pop",
+    "2007|Good Life": "hip hop|autotune|pop rap|2000s rap",
+    "2006|Touch the Sky": "hip hop|soul samples|Chicago rap|2000s rap",
+    "2008|Kiss Me Thru the Phone": "hip hop|pop rap|2000s rap|American music",
+    "2003|Rise & Fall": "UK garage|R&B music|British pop|2000s music",
+    "2008|No Air": "R&B duets|pop ballads|2000s pop|American music",
+    "2007|Love Like This": "pop music|R&B music|reggae pop|2000s pop",
+    "2006|Set the Fire to the Third Bar": "alternative rock|indie rock|UK music|2000s rock",
+    "2001|Underneath It All": "reggae|dancehall|ska pop|2000s pop",
+    "2010|Telephone": "dance-pop|electropop|female vocalists|2010s pop",
+    "2011|E.T. (Remix)": "electropop|hip hop|remixes|2010s pop",
+    "2015|Marvin Gaye": "doo-wop revival|soul pop|pop duets|2010s pop",
+    "2015|Like I'm Gonna Lose You": "soul pop|pop ballads|R&B duets|2010s pop",
+    "2016|We Don't Talk Anymore": "tropical pop|dance-pop|pop duets|2010s pop",
+    "2014|Bang Bang": "dance-pop|Nicki Minaj|female vocalists|2010s pop",
+    "2011|Price Tag": "pop music|pop rap|UK charts|2010s pop",
+    "2011|Heart Skips a Beat": "UK pop|pop rap|UK charts|2010s pop",
+    "2012|Troublemaker": "UK pop|pop rap|UK charts|2010s pop",
+    "2018|For You": "film soundtracks|Fifty Shades Freed|pop duets|2010s pop",
+    "2016|Rockabye": "dance-pop|dancehall|Sean Paul|2010s pop",
+    "2018|FRIENDS": "electropop|dance-pop|friendship songs|2010s pop",
+    "2018|Rewrite the Stars": "The Greatest Showman|film soundtracks|pop ballads|2010s pop",
+    "2010|Higher": "dance-pop|electropop|UK charts|2010s pop",
+    "2016|Work": "dancehall|R&B music|Caribbean pop|2010s pop",
+    "2012|Latch": "UK garage|house music|electronic music|2010s pop",
+    "2013|La La La": "UK pop|dance music|UK charts|2010s pop",
+    "2013|Waiting All Night": "drum and bass|UK dance|UK charts|2010s pop",
+    "2012|Feel the Love": "drum and bass|UK dance|soul vocals|2010s pop",
+    "2014|Fancy": "hip hop|electropop|pop rap|2010s pop",
+    "2022|Bam Bam": "Latin pop|salsa pop|pop duets|2020s pop",
+    "2021|Kiss Me More": "R&B music|disco pop|female vocalists|2020s pop",
+    "2023|Boy's a liar Pt. 2": "UK garage|drum and bass|remixes|2020s pop",
+    "2022|Left and Right": "K-pop|pop music|BTS|2020s pop",
+    "2023|Seven": "K-pop|UK garage|BTS|2020s pop",
+    "2024|II Most Wanted": "country music|country pop|female vocalists|2020s music",
+    "2023|I Remember Everything": "country music|country duets|Americana|2020s country",
+    "2020|Head & Heart": "house music|UK dance|UK charts|2020s pop",
+    "2022|I'm Good (Blue)": "dance-pop|electronic music|Eiffel 65 interpolation|2020s pop",
+    "2023|Miracle": "trance music|electronic dance music|UK charts|2020s pop"
+};
+
 const expectedCounts = {
     "1950s & 1960s": 5,
     "1970s": 5,
@@ -160,6 +265,10 @@ for (const [era, facts] of Object.entries(duetFacts)) {
             throw new Error(
                 'Pack 160 repeated or invalid recording: ' + song
             );
+        }
+
+        if (!recordingTagLines[year + '|' + song]) {
+            throw new Error('Pack 160 missing specialist tags: ' + song);
         }
 
         seenRecordings.add(titleKey);
@@ -246,11 +355,17 @@ for (const [era, facts] of Object.entries(duetFacts)) {
             answers,
             correctAnswer,
             difficulty,
-            tags: [
+            tags: [...new Set([
                 'Duets & Collaborations',
                 era,
-                askSong ? 'Identify Song' : 'Identify Collaborator'
-            ],
+                askSong ? 'Identify Song' : 'Identify Collaborator',
+                'Music', 'music trivia', 'duets', 'collaborations',
+                'recorded collaborations', 'artist partnerships',
+                askSong ? 'song identification' : 'collaborator identification',
+                String(year), String(Math.floor(year / 10) * 10) + 's',
+                song, lead, partner,
+                ...recordingTagLines[year + '|' + song].split('|')
+            ])],
             dailyEligible: true
         });
     }
@@ -284,7 +399,8 @@ for (const q of questions) {
         q.category !== 'Music' ||
         q.dailyEligible !== true ||
         !Array.isArray(q.tags) ||
-        q.tags.length !== 3
+        q.tags.length < 16 ||
+        new Set(q.tags).size !== q.tags.length
     ) {
         throw new Error(
             'Pack 160 invalid question: ' + q.id
@@ -296,3 +412,4 @@ for (const q of questions) {
 }
 
 module.exports = questions;
+
