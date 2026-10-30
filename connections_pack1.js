@@ -5,6 +5,7 @@
 // All tiles are uppercase
 //
 // Created: September 2026
+// Correction: conn047 FAST changed to JAIL
 
 const connectionsPuzzles = [
 
@@ -494,7 +495,7 @@ const connectionsPuzzles = [
             "___ STORM": ["THUNDER", "SNOW", "SAND", "FIRE"],
             "___ PROOF": ["WATER", "BULLET", "CHILD", "FOOL"],
             "___ FALL": ["DOWN", "RAIN", "NIGHT", "PIT"],
-            "___ BREAK": ["DAY", "HEART", "OUT", "FAST"]
+            "___ BREAK": ["DAY", "HEART", "OUT", "JAIL"]
         }
     },
 
