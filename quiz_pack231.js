@@ -1,7 +1,8 @@
-// quiz_pack231.js
+ // quiz_pack231.js
 // PuzzlePilot - The Bigggggg Quiz
 // Television: EastEnders - 1993, new families and hard truths
 // 100 questions: tv_6904 to tv_7003
+// Audit: contextual and question-specific tags added.
 // Leave quiz_bank.js unchanged until the end of the session.
 
 const facts = [
@@ -128,6 +129,124 @@ const facts = [
     ["Why did Kathy have to let café worker Sylvia go?", "Ian returned to work there, leaving too many staff", ["Sylvia bought a rival café", "Sylvia inherited a house abroad", "Sylvia left to become a nurse"], "Medium", "Ian and Cindy"],
 ];
 
+// Shared storyline tags plus individual tags for every question.
+const topicContextTags = {
+    'Nick and Dot': ['Nick Cotton', 'Dot Cotton', 'Eddie Royle Murder Trial'],
+    'Vicki, Sam and Danny': ['Vicki Fowler', 'Sam Butcher', 'Walford Departures And Kidnapping'],
+    'The Kapoors': ['Sanjay Kapoor', 'Gita Kapoor', 'Market Stall And Family'],
+    'The Fowler Marriage': ['Arthur Fowler', 'Pauline Fowler', 'Christine Hewitt Affair'],
+    'Pete and Rose': ['Pete Beale', 'Rose Chapman', 'Chapman Family Threats'],
+    'Aidan and Mandy': ['Aidan Brosnan', 'Mandy Salter', 'Teenage Homelessness'],
+    'Phil and Nadia': ['Phil Mitchell', 'Nadia Borovac', 'Marriage Of Convenience'],
+    'Hattie and the Taverniers': ['Hattie Tavernier', 'Tavernier Family', 'Romance And Departures'],
+    'Nigel and Debbie': ['Nigel Bates', 'Debbie Tyler', 'Clare Tyler And Family'],
+    'The Jacksons': ['Carol Jackson', 'Jackson Family', 'Family Arrivals'],
+    'Ian and Cindy': ['Ian Beale', 'Cindy Beale', 'Births And Walford Losses']
+};
+
+const factSpecificTags = [
+    'Nick Cotton Trial|Eddie Royle Murder',
+    'Jury Acquittal|Not Guilty Verdict',
+    'Joe Wallace Evidence|Murder Witness',
+    'Accidental Stabbing Defence|Court Testimony',
+    'Dot Cotton Evidence|Family Trial',
+    'Zoe Newton Arrival|Nick Partner',
+    'Ashley Cotton|Dot Grandson',
+    'Gravesend Move|Cotton Family Departure',
+    'Audrey Whittingham|Vicki Abduction',
+    'Michelle Fowler|Vicki Mother',
+    'Jack Woodman|Kidnapping Suspect',
+    'Cheque Purchase|Police Trace',
+    'Sam Leaves Ricky|Marriage Separation',
+    'Cruise Ship Job|Sam Departure',
+    'Danny Travis|Danny Taurus Stage Name',
+    'Pauline Fowler|Singer Invitation',
+    'Sanjay Kapoor Arrival|Gambling Habit',
+    'Gita Kapoor|Sanjay Wife',
+    'Clothing Stall|Walford Market',
+    'Richard Cole|Market Pitch',
+    'Poker Losses|Flat Deposit',
+    'Richard Cole Lodgings|Kapoor Housing',
+    'Sharmilla Kapoor|Baby Daughter',
+    'Hinduism|Kapoor Religion',
+    'Meena McKenzie|Gita Sister',
+    'Postnatal Depression|Gita Health',
+    'Michelle Fowler|Unfounded Affair Suspicion',
+    'Gita Family Break|Sharmilla Care',
+    'Arthur Fowler|Christine Affair',
+    'Christine Hewitt|Bistro Cook',
+    'Fake Burglary|Christine Deception',
+    'Arthur Confesses|Infidelity Revelation',
+    'Frying Pan|Pauline Anger',
+    'Arthur Thrown Out|Marriage Breakdown',
+    'Greg Hewitt|Estranged Husband',
+    'Christine Ultimatum|Arthur Choice',
+    'Martin Fowler|Unwanted Gifts',
+    'Fowler Reconciliation|Marriage Recovery',
+    'Pete Beale Death|Family Grief',
+    'Rose Chapman|Old School Romance',
+    'Pauline School Friend|Rose Background',
+    'Rose Still Married|Relationship Secret',
+    'Alfie Chapman|Prisoner Husband',
+    'Chapman Gang|Violent Threats',
+    'Annie Chapman|Family Warning',
+    'Alfie Terminal Cancer|Prison Illness',
+    'Rose Assault|Hospital Admission',
+    'Frank Butcher|Hospital Escape',
+    'Staged Car Crash|Pete And Rose Death',
+    'Newspaper Advert|Missing Brother',
+    'Aidan Brosnan|Football Apprentice',
+    'Sean Maguire|Aidan Actor',
+    'Walford Town|Apprentice Club',
+    'Knee Injury|Football Career Ends',
+    'Fowler Lodgings|Aidan Arrival',
+    'Mandy Salter|Aidan Romance',
+    'Ecstasy Tablet|Hospitalisation',
+    'Rough Sleeping|Squatting',
+    'Richard Cole|Theft Accusations',
+    'Tower Block Crisis|Mandy Rescue',
+    'Ireland Departure|Aidan Exit',
+    'Nadia Borovac|Phil First Wife',
+    'Borovac Surname|Marriage Identity',
+    'Romania|Nadia Origin',
+    'Deportation Risk|Sham Marriage',
+    'Southampton Port|Phil Meets Nadia',
+    'Marku|Nadia Boyfriend',
+    'Kathy Beale|Phil Romance',
+    'Home Office|Marriage Investigation',
+    'Nadia Moves In|Marriage Pretence',
+    'Nadia And Phil|Kathy Revelation',
+    'Steve Elliot|Hattie Wedding',
+    'Cruise Ship Chef|Career Move',
+    'Southampton|Hattie Pursuit',
+    'Hattie Pregnancy|Secret From Steve',
+    'Miscarriage|Pregnancy Loss',
+    'Gidea Thompson|Trinidad Arrival',
+    'Jules Tavernier|Gidea Grandfather',
+    'Clyde Tavernier|Gidea Relationship',
+    'Trinidad Move|Clyde Kofi And Gidea',
+    'Debbie Tyler|Nigel Romance',
+    'Nicola Duffett|Debbie Actress',
+    'Clare Tyler|Debbie Daughter',
+    'Gemma Bissix|Clare Actress',
+    'Liam Tyler|Abusive Ex Partner',
+    'Tracey Barmaid|Debbie Friend',
+    'Lindsey Coulson|Carol Actress',
+    'Alan Jackson|Carol Partner',
+    'Howard Antony|Alan Actor',
+    'Patsy Palmer|Bianca Actress',
+    'Dean Gaffney|Robbie Jackson',
+    'Billie Jackson|Youngest Child',
+    'Walford Towers|Jackson Family Home',
+    'Peter And Lucy|Beale Twins',
+    'Pete Beale|Twins Birth Day',
+    'Peter Beale|Named After Grandfather',
+    'Roly The Dog|Fatal Lorry Accident',
+    'Mandy Salter|Walking Roly',
+    'Sylvia Weng Chung|Cafe Waitress',
+    'Ian Beale Return|Staff Redundancy'
+];
+
 const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty, topic], index) => {
     const answers = [...wrongAnswers];
     answers.splice(index % 4, 0, correctAnswer);
@@ -139,7 +258,15 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Soaps', 'EastEnders', '1993', topic],
+        tags: [
+            'British Television',
+            'Soaps',
+            'EastEnders',
+            '1993',
+            topic,
+            ...topicContextTags[topic],
+            ...factSpecificTags[index].split('|')
+        ],
         dailyEligible: true
     };
 });
