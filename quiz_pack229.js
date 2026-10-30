@@ -1,7 +1,8 @@
-// quiz_pack229.js
+ // quiz_pack229.js
 // PuzzlePilot - The Bigggggg Quiz
 // Television: EastEnders - 1991, new loves and old crimes
 // 100 questions: tv_6704 to tv_6803
+// Audit: full question-specific tagging added.
 // Leave quiz_bank.js unchanged until the end of the session.
 
 const facts = [
@@ -128,6 +129,125 @@ const facts = [
     ["What did Lorraine ask Pat to provide when she turned up at the Butchers' home?", "A place to stay", ["A job at the car lot", "A loan to buy a salon", "A ticket to Ireland"], "Medium", "Pat and Lorraine"],
 ];
 
+const topicContextTags = {
+    "Mark Fowler": ["HIV Awareness Storyline", "Fowler Family", "Mark Diagnosis And Disclosure"],
+    "Disa and Jasmine": ["Disa OBrien", "Baby Jasmine", "Abduction And Reconciliation"],
+    "Ricky and Sam": ["Ricky Butcher", "Sam Mitchell", "Gretna Green Wedding"],
+    "Eddie Royle": ["Eddie Royle", "Queen Victoria Pub", "Murder And Boxing"],
+    "Clyde and Michelle": ["Clyde Tavernier", "Michelle Fowler", "Eddie Royle Murder Investigation"],
+    "Sharon and Grant": ["Sharon Watts", "Grant Mitchell", "Queen Vic And Marriage"],
+    "The Taverniers": ["Tavernier Family", "Celestine And Etta", "Pregnancy And Family Conflict"],
+    "Rachel and Michelle": ["Rachel Kominski", "Michelle Fowler", "University And Housemates"],
+    "Ian's Meal Machine": ["Ian Beale", "Meal Machine", "Catering And HIV Discrimination"],
+    "Dot and Nick": ["Dot Cotton", "Nick Cotton", "Fraud And Family Trouble"],
+    "Pat and Lorraine": ["Pat Butcher", "Lorraine Stevens", "Blackmail Storyline"]
+};
+
+// Two additional specific tags for each question.
+// The correct answer is also included as an individual tag.
+const factSpecificTags = [
+    "First Person Told|HIV Secret",
+    "HIV Diagnosis|Health Status",
+    "Boxing Day Revelation|Parents Told",
+    "Arthur And Pauline|Family Reaction",
+    "Gill Robinson|Former Girlfriend",
+    "Newcastle Meeting|Earlier Relationship",
+    "Susanna Dawson|Casting",
+    "Terrence Higgins Trust|HIV Counselling",
+    "Diane Butcher|Advice To Mark",
+    "Joe Wallace|HIV Support Charity",
+    "Rachel Kominski|Romance And Secrecy",
+    "Photography Darkroom|Butchers Bed And Breakfast",
+    "Baby Renaming|Billie Becomes Jasmine",
+    "Ken Raynor|Child Abduction",
+    "False Uncle Claim|Ken Deceives Dot",
+    "Dot Cotton|Babysitting And Deception",
+    "Police Sting|Baby Recovered",
+    "Samaritans|Kathy Support",
+    "Sandra Raynor|Disa Mother",
+    "Prison Confrontation|Ken Raynor",
+    "Sunderland|Disa Departure",
+    "Young Couple Elopes|Secret Wedding",
+    "Gretna Green|Scottish Marriage",
+    "Family Opposition|Butchers And Mitchells",
+    "Peggy Mitchell|Mother Objects",
+    "Jo Warne|Original Peggy Casting",
+    "Frank And Pat|Wedding Blessing",
+    "Church Blessing|Walford Celebration",
+    "Kevin Masters|Peggy Boyfriend",
+    "Minicabs|Kevin Masters Business",
+    "Sam Butcher|Married Surname",
+    "Eddie Royle|Fatal Stabbing",
+    "Nick Cotton|Murderer Revealed",
+    "Knife|Murder Weapon",
+    "Roly The Dog|Final Walk",
+    "Grant Mitchell|Violent Assault",
+    "Sharon Watts|Unwanted Advance",
+    "Brain Surgery|Assault Injuries",
+    "Eibhlin ODonnell|Old Girlfriend",
+    "Mary Conlon|Casting",
+    "Marriage Proposal|Eddie And Eibhlin",
+    "Queen Victoria|Cohabitation",
+    "Clyde Tavernier|Boxing Training",
+    "Thrown Fight|Boxing Corruption",
+    "Wrongful Accusation|Clyde Tavernier",
+    "Picked Up Weapon|Incriminating Evidence",
+    "Nick Cotton|False Witness",
+    "Michelle Fowler|Escape Aid",
+    "Kofi Tavernier|Father And Son Escape",
+    "Vicki Fowler|Children On Run",
+    "France|Planned Escape",
+    "Portsmouth|Police Arrest",
+    "Joe Wallace|Witness Evidence",
+    "Drainpipe|Nick Cotton Seen",
+    "Grant Mitchell|Engagement Proposal",
+    "Queen Victoria|Pub Ownership",
+    "Unfair Dismissal|Sharon Legal Case",
+    "Employment Tribunal|Sharon Wins",
+    "Pub Return|Mitchell Support",
+    "Boxing Day|Surprise Wedding",
+    "Register Office|Marriage Ceremony",
+    "Michelle Fowler|Wedding Encouragement",
+    "Youll Never Walk Alone|Wedding Song",
+    "Etta Tavernier|Unexpected Pregnancy",
+    "Abortion Decision|Marriage Rift",
+    "Celestine Tavernier|Opposes Abortion",
+    "Christian Faith|Religious Beliefs",
+    "Sickle Cell Anaemia|Inherited Disorder",
+    "Yvonne|Church Relationship",
+    "Clyde Tavernier|Boxing Contest",
+    "Reconciliation|Marriage Recovery",
+    "Rachel Kominski|University Lecturer",
+    "Jacquetta May|Casting",
+    "55 Victoria Road|Rachel House",
+    "Karen|First Lodger",
+    "Pete Beale|Misread Invitation",
+    "Russell Nash|Former Boyfriend",
+    "College Application|Michelle Education",
+    "Mark Fowler|Dating Rachel",
+    "Hattie Tavernier|Catering Work",
+    "Former Dagmar|Meal Machine Premises",
+    "Joe Wallace|Dismissal Over HIV",
+    "Kitchen Disinfection|Ignorance About HIV",
+    "Renovation Labourer|Joe Job Search",
+    "Cowley Oxfordshire|Joe Returns Home",
+    "Steve Elliot|New Chef",
+    "Mark Monero|Steve Actor",
+    "Pizza Chef|Previous Employment",
+    "Charlie Cotton|Road Accident",
+    "Lorry|Fatal Crash",
+    "Heroin Addiction|Nick Cotton",
+    "Dot Home|Fraudulent House Sale",
+    "Dave And Irene Carter|Victims Of Fraud",
+    "Three Hundred Pounds|Deposit Scam",
+    "Dot Cotton|Repayment Promise",
+    "Lorraine Stevens|Blackmail Plot",
+    "Linda Henry|Actor And Future Shirley",
+    "Bar Meeting|Pat And Lorraine",
+    "Seeking Other Men|Blackmail Threat",
+    "Place To Stay|Lorraine Demand"
+];
+
 const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty, topic], index) => {
     const answers = [...wrongAnswers];
     answers.splice(index % 4, 0, correctAnswer);
@@ -139,7 +259,16 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Soaps', 'EastEnders', '1991', topic],
+        tags: [
+            'British Television',
+            'Soaps',
+            'EastEnders',
+            '1991',
+            topic,
+            ...topicContextTags[topic],
+            correctAnswer,
+            ...factSpecificTags[index].split('|')
+        ],
         dailyEligible: true
     };
 });
