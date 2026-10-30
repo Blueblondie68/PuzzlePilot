@@ -1,144 +1,145 @@
-// quiz_pack215.js
+ // quiz_pack215.js
 // PuzzlePilot - The Bigggggg Quiz
 // Television: British quiz and game shows - classic and modern
 // 100 questions: tv_5304 to tv_5403
+// Audited per-question tags. quiz_bank.js remains unchanged.
 
 const facts = [
     // DOUBLE YOUR MONEY (6)
-    ["Who hosted the classic television quiz Double Your Money?", "Hughie Green", ["Michael Miles", "Eamonn Andrews", "Leslie Crowther"], "Easy", "Double Your Money"],
-    ["Which radio station broadcast Double Your Money before it moved to television?", "Radio Luxembourg", ["BBC Radio 2", "Radio Caroline", "BBC Home Service"], "Medium", "Double Your Money"],
-    ["Which television network showed Double Your Money?", "ITV", ["BBC One", "BBC Two", "Channel 4"], "Easy", "Double Your Money"],
-    ["How much did a contestant win for their first correct answer on Double Your Money?", "£1", ["10 shillings", "£5", "£10"], "Medium", "Double Your Money"],
-    ["What was the highest prize in Double Your Money's initial series of doubling questions?", "£32", ["£16", "£64", "£128"], "Medium", "Double Your Money"],
-    ["What was the higher-stakes challenge for successful returning contestants on Double Your Money called?", "The Treasure Trail", ["The Wonderwall", "The Golden Run", "The Money List"], "Medium", "Double Your Money"],
+    ["Who hosted the classic television quiz Double Your Money?", "Hughie Green", ["Michael Miles", "Eamonn Andrews", "Leslie Crowther"], "Easy", "Double Your Money", ["Hughie Green", "Original Presenter", "Classic ITV", "1955 Television", "Quiz Hosting", "Radio To Television", "British Entertainment"]],
+    ["Which radio station broadcast Double Your Money before it moved to television?", "Radio Luxembourg", ["BBC Radio 2", "Radio Caroline", "BBC Home Service"], "Medium", "Double Your Money", ["Radio Luxembourg", "Radio Origins", "1950s Broadcast", "Hughie Green", "Radio Quiz", "Programme History", "ITV Transfer"]],
+    ["Which television network showed Double Your Money?", "ITV", ["BBC One", "BBC Two", "Channel 4"], "Easy", "Double Your Money", ["ITV", "Original Channel", "1955 Premiere", "Associated Rediffusion", "Commercial Television", "Classic Game Show", "British Broadcasting"]],
+    ["How much did a contestant win for their first correct answer on Double Your Money?", "£1", ["10 shillings", "£5", "£10"], "Medium", "Double Your Money", ["One Pound", "First Correct Answer", "Starting Prize", "Money Doubles", "1950s Cash", "Quiz Prize Ladder", "Original Format"]],
+    ["What was the highest prize in Double Your Money's initial series of doubling questions?", "£32", ["£16", "£64", "£128"], "Medium", "Double Your Money", ["Thirty Two Pounds", "Doubling Ladder", "First Stage Maximum", "Prize Levels", "Six Questions", "Original Cash Format", "Classic Quiz Rules"]],
+    ["What was the higher-stakes challenge for successful returning contestants on Double Your Money called?", "The Treasure Trail", ["The Wonderwall", "The Golden Run", "The Money List"], "Medium", "Double Your Money", ["The Treasure Trail", "Returning Contestants", "Higher Stakes", "One Thousand Pounds", "Jackpot Challenge", "Final Stage", "Prize Progression"]],
 
     // WHAT'S MY LINE? (6)
-    ["Who was the best-known original British presenter of What's My Line?", "Eamonn Andrews", ["David Frost", "Michael Aspel", "Richard Dimbleby"], "Easy", "What's My Line?"],
-    ["What did the panel try to discover about ordinary guests on What's My Line?", "Their occupations", ["Their ages", "Their hometowns", "Their middle names"], "Easy", "What's My Line?"],
-    ["What type of questions could the panel ask on What's My Line?", "Questions answered yes or no", ["Multiple-choice questions", "Questions requiring a number", "Questions answered in writing"], "Easy", "What's My Line?"],
-    ["Why did panellists wear blindfolds for the mystery guest on What's My Line?", "To avoid recognising a famous guest", ["To stop them reading cue cards", "To conceal the studio audience", "To test their sense of smell"], "Easy", "What's My Line?"],
-    ["Which famously sharp-tongued broadcaster was a regular What's My Line? panellist?", "Gilbert Harding", ["David Coleman", "Kenneth Kendall", "Frank Bough"], "Medium", "What's My Line?"],
-    ["Which actress took over as a presenter of What's My Line? after Eamonn Andrews died?", "Penelope Keith", ["Wendy Craig", "Pauline Collins", "Prunella Scales"], "Medium", "What's My Line?"],
+    ["Who was the best-known original British presenter of What's My Line?", "Eamonn Andrews", ["David Frost", "Michael Aspel", "Richard Dimbleby"], "Easy", "What's My Line?", ["Eamonn Andrews", "Original British Host", "BBC Television", "1951 Premiere", "Celebrity Panel", "Classic Presenter", "Occupation Quiz"]],
+    ["What did the panel try to discover about ordinary guests on What's My Line?", "Their occupations", ["Their ages", "Their hometowns", "Their middle names"], "Easy", "What's My Line?", ["Guest Occupations", "Jobs And Professions", "Mystery Contestants", "Panel Questions", "Guessing Game", "Career Clues", "Identity Puzzle"]],
+    ["What type of questions could the panel ask on What's My Line?", "Questions answered yes or no", ["Multiple-choice questions", "Questions requiring a number", "Questions answered in writing"], "Easy", "What's My Line?", ["Yes Or No Questions", "Panel Interview", "Occupational Guessing", "Binary Responses", "Classic Rules", "Question Format", "Guest Interrogation"]],
+    ["Why did panellists wear blindfolds for the mystery guest on What's My Line?", "To avoid recognising a famous guest", ["To stop them reading cue cards", "To conceal the studio audience", "To test their sense of smell"], "Easy", "What's My Line?", ["Blindfolded Panellists", "Mystery Guest", "Celebrity Recognition", "Famous Visitor", "Secret Identity", "Studio Panel", "Blindfold Round"]],
+    ["Which famously sharp-tongued broadcaster was a regular What's My Line? panellist?", "Gilbert Harding", ["David Coleman", "Kenneth Kendall", "Frank Bough"], "Medium", "What's My Line?", ["Gilbert Harding", "Regular Panellist", "Sharp Tongue", "Broadcaster", "Classic Panel", "1950s Television", "Celebrity Personality"]],
+    ["Which actress took over as a presenter of What's My Line? after Eamonn Andrews died?", "Penelope Keith", ["Wendy Craig", "Pauline Collins", "Prunella Scales"], "Medium", "What's My Line?", ["Penelope Keith", "Later Presenter", "Eamonn Andrews", "Host Succession", "1980s Revival", "Television Actress", "BBC Panel Game"]],
 
     // CALL MY BLUFF (7)
-    ["What did the teams try to identify on Call My Bluff?", "The genuine definition of a word", ["The writer of a poem", "The owner of a photograph", "The speaker of a quotation"], "Easy", "Call My Bluff"],
-    ["How many possible definitions were offered for a word on Call My Bluff?", "Three", ["Two", "Four", "Five"], "Easy", "Call My Bluff"],
-    ["How many of Call My Bluff's three definitions were invented?", "Two", ["One", "Three", "None"], "Easy", "Call My Bluff"],
-    ["Who was the long-serving host of the original Call My Bluff?", "Robert Robinson", ["Robin Day", "Brian Walden", "Michael Parkinson"], "Medium", "Call My Bluff"],
-    ["Which writer and broadcaster became a familiar Call My Bluff team captain?", "Frank Muir", ["Clive James", "John Betjeman", "Alan Bennett"], "Medium", "Call My Bluff"],
-    ["Which former Blockbusters presenter hosted the daytime revival of Call My Bluff?", "Bob Holness", ["Bob Monkhouse", "John Craven", "Henry Kelly"], "Easy", "Call My Bluff"],
-    ["Which comedian captained one of the teams opposite Alan Coren on the revived Call My Bluff?", "Sandi Toksvig", ["Victoria Wood", "Jo Brand", "Sue Perkins"], "Medium", "Call My Bluff"],
+    ["What did the teams try to identify on Call My Bluff?", "The genuine definition of a word", ["The writer of a poem", "The owner of a photograph", "The speaker of a quotation"], "Easy", "Call My Bluff", ["Word Definitions", "Genuine Meaning", "Bluffing Game", "Vocabulary Quiz", "Invented Meanings", "Two Teams", "Language Knowledge"]],
+    ["How many possible definitions were offered for a word on Call My Bluff?", "Three", ["Two", "Four", "Five"], "Easy", "Call My Bluff", ["Three Definitions", "Word Meanings", "Genuine And False", "Multiple Choices", "Panel Format", "Bluffing Round", "Definition Quiz"]],
+    ["How many of Call My Bluff's three definitions were invented?", "Two", ["One", "Three", "None"], "Easy", "Call My Bluff", ["Two False Definitions", "One True Definition", "Invented Meanings", "Wordplay Game", "Panel Bluffing", "Vocabulary Challenge", "Three Options"]],
+    ["Who was the long-serving host of the original Call My Bluff?", "Robert Robinson", ["Robin Day", "Brian Walden", "Michael Parkinson"], "Medium", "Call My Bluff", ["Robert Robinson", "Long Serving Host", "BBC Presenter", "1960s Television", "Language Panel Game", "Original Series", "Quiz Personality"]],
+    ["Which writer and broadcaster became a familiar Call My Bluff team captain?", "Frank Muir", ["Clive James", "John Betjeman", "Alan Bennett"], "Medium", "Call My Bluff", ["Frank Muir", "Team Captain", "Writer And Broadcaster", "Literary Humour", "Celebrity Panellist", "BBC Quiz", "Wordplay Expert"]],
+    ["Which former Blockbusters presenter hosted the daytime revival of Call My Bluff?", "Bob Holness", ["Bob Monkhouse", "John Craven", "Henry Kelly"], "Easy", "Call My Bluff", ["Bob Holness", "Daytime Revival", "Blockbusters Presenter", "Host Succession", "BBC Two", "1990s Television", "Television Quiz Host"]],
+    ["Which comedian captained one of the teams opposite Alan Coren on the revived Call My Bluff?", "Sandi Toksvig", ["Victoria Wood", "Jo Brand", "Sue Perkins"], "Medium", "Call My Bluff", ["Sandi Toksvig", "Team Captain", "Alan Coren", "Revived Series", "Comedy Panel", "Bluffing Definitions", "Word Knowledge"]],
 
     // IT'S A KNOCKOUT (6)
-    ["What did teams mainly compete in on It's a Knockout?", "Physical obstacle and novelty games", ["Spelling contests", "General-knowledge buzzer rounds", "Talent auditions"], "Easy", "It's a Knockout"],
-    ["What did the teams in the original British It's a Knockout usually represent?", "Towns", ["Schools", "Political parties", "Radio stations"], "Easy", "It's a Knockout"],
-    ["What was the international version of It's a Knockout called?", "Jeux Sans Frontières", ["Fort Boyard", "Intervilles Royale", "The Crystal Maze"], "Medium", "It's a Knockout"],
-    ["Which rugby league commentator became a familiar judge and commentator on It's a Knockout?", "Eddie Waring", ["Bill McLaren", "David Coleman", "Murray Walker"], "Medium", "It's a Knockout"],
-    ["What could a team play to double its points in a game on It's a Knockout?", "A joker", ["A golden ticket", "A red card", "A wild dice"], "Easy", "It's a Knockout"],
-    ["Who co-presented the Channel 5 revival of It's a Knockout with Lucy Alexander?", "Keith Chegwin", ["Timmy Mallett", "Andy Crane", "John Leslie"], "Easy", "It's a Knockout"],
+    ["What did teams mainly compete in on It's a Knockout?", "Physical obstacle and novelty games", ["Spelling contests", "General-knowledge buzzer rounds", "Talent auditions"], "Easy", "It's a Knockout", ["Physical Obstacles", "Novelty Games", "Team Challenges", "Inflatable Costumes", "Outdoor Competition", "Sporting Entertainment", "Game Format"]],
+    ["What did the teams in the original British It's a Knockout usually represent?", "Towns", ["Schools", "Political parties", "Radio stations"], "Easy", "It's a Knockout", ["British Towns", "Local Teams", "Civic Rivalry", "Regional Competition", "Community Contestants", "Town Representation", "Outdoor Games"]],
+    ["What was the international version of It's a Knockout called?", "Jeux Sans Frontières", ["Fort Boyard", "Intervilles Royale", "The Crystal Maze"], "Medium", "It's a Knockout", ["Jeux Sans Frontieres", "International Competition", "European Towns", "International Edition", "Transnational Games", "No Frontiers", "BBC Entertainment"]],
+    ["Which rugby league commentator became a familiar judge and commentator on It's a Knockout?", "Eddie Waring", ["Bill McLaren", "David Coleman", "Murray Walker"], "Medium", "It's a Knockout", ["Eddie Waring", "Rugby League Commentator", "Television Judge", "Sports Broadcaster", "Outdoor Games", "1970s Television", "Familiar Voice"]],
+    ["What could a team play to double its points in a game on It's a Knockout?", "A joker", ["A golden ticket", "A red card", "A wild dice"], "Easy", "It's a Knockout", ["Joker", "Double Points", "Team Strategy", "Bonus Scoring", "Physical Challenges", "Game Rules", "Tactical Advantage"]],
+    ["Who co-presented the Channel 5 revival of It's a Knockout with Lucy Alexander?", "Keith Chegwin", ["Timmy Mallett", "Andy Crane", "John Leslie"], "Easy", "It's a Knockout", ["Keith Chegwin", "Lucy Alexander", "Channel 5 Revival", "Co Presenter", "1990s Television", "Revived Games", "Entertainment Host"]],
 
     // MONEYBAGS (8)
-    ["Who presented Channel 4's daytime quiz Moneybags?", "Craig Charles", ["Danny Dyer", "Chris Kamara", "Rob Beckett"], "Easy", "Moneybags"],
-    ["What carried the possible answers past players on Moneybags?", "A conveyor belt", ["A revolving table", "A miniature train", "A spinning wheel"], "Easy", "Moneybags"],
-    ["What did Moneybags contestants have to grab to give an answer?", "A moneybag", ["A numbered envelope", "A coloured flag", "A playing card"], "Easy", "Moneybags"],
-    ["How many contestants entered the studio at the start of a regular Moneybags episode?", "Ten", ["Six", "Eight", "Twelve"], "Medium", "Moneybags"],
-    ["What was the value of the largest individual cash bag in Moneybags?", "£100,000", ["£10,000", "£50,000", "£250,000"], "Medium", "Moneybags"],
-    ["How much cash travelled along the Moneybags conveyor belt across a week of shows?", "£1 million", ["£100,000", "£500,000", "£5 million"], "Medium", "Moneybags"],
-    ["What could a Steal bag allow a player to do on Moneybags?", "Take money from an opponent", ["Skip the next question", "Choose a different presenter", "Bring back an eliminated player"], "Easy", "Moneybags"],
-    ["What was the three-way round involving the leading Moneybags contestants called?", "The Triple-Header", ["The Money List", "The Golden Run", "The End Game"], "Medium", "Moneybags"],
+    ["Who presented Channel 4's daytime quiz Moneybags?", "Craig Charles", ["Danny Dyer", "Chris Kamara", "Rob Beckett"], "Easy", "Moneybags", ["Craig Charles", "Channel 4 Host", "2021 Debut", "Daytime Quiz", "Cash Conveyor", "Television Presenter", "Quiz Presenter"]],
+    ["What carried the possible answers past players on Moneybags?", "A conveyor belt", ["A revolving table", "A miniature train", "A spinning wheel"], "Easy", "Moneybags", ["Conveyor Belt", "Moving Answers", "Moneybags On Belt", "Multiple Choice", "Cash Values", "Answer Selection", "Studio Mechanic"]],
+    ["What did Moneybags contestants have to grab to give an answer?", "A moneybag", ["A numbered envelope", "A coloured flag", "A playing card"], "Easy", "Moneybags", ["Grab A Moneybag", "Answer Choice", "Moving Belt", "Timed Selection", "Physical Grab", "Cash Reward", "Game Rules"]],
+    ["How many contestants entered the studio at the start of a regular Moneybags episode?", "Ten", ["Six", "Eight", "Twelve"], "Medium", "Moneybags", ["Ten Contestants", "Initial Studio Group", "Player Count", "Regular Episode", "Cash Competition", "Random Selection", "Quiz Line Up"]],
+    ["What was the value of the largest individual cash bag in Moneybags?", "£100,000", ["£10,000", "£50,000", "£250,000"], "Medium", "Moneybags", ["One Hundred Thousand Pounds", "Biggest Moneybag", "Single Cash Bag", "Prize Values", "High Stakes", "Channel 4 Quiz", "Banked Money"]],
+    ["How much cash travelled along the Moneybags conveyor belt across a week of shows?", "£1 million", ["£100,000", "£500,000", "£5 million"], "Medium", "Moneybags", ["One Million Pounds", "Weekly Total", "Moving Conveyor", "Cash Prizes", "Five Episodes", "Money Belt", "Programme Format"]],
+    ["What could a Steal bag allow a player to do on Moneybags?", "Take money from an opponent", ["Skip the next question", "Choose a different presenter", "Bring back an eliminated player"], "Easy", "Moneybags", ["Steal Bag", "Opponent Winnings", "Cash Transfer", "Special Bag", "Strategic Choice", "Competitive Prize", "Game Twist"]],
+    ["What was the three-way round involving the leading Moneybags contestants called?", "The Triple-Header", ["The Money List", "The Golden Run", "The End Game"], "Medium", "Moneybags", ["The Triple Header", "Three Way Round", "Leading Players", "Cash Contest", "Final Qualification", "Moneybags Finale", "Head To Head Winners"]],
 
     // SITTING ON A FORTUNE (7)
-    ["Which former England footballer presented Sitting on a Fortune?", "Gary Lineker", ["Alan Shearer", "Ian Wright", "Peter Crouch"], "Easy", "Sitting on a Fortune"],
-    ["How many contestants took their places on Sitting on a Fortune's line of chairs?", "Six", ["Four", "Five", "Eight"], "Easy", "Sitting on a Fortune"],
-    ["Which contestant got to answer questions on Sitting on a Fortune?", "The one in the front chair", ["The one in the last chair", "The one chosen by the audience", "The one sitting in the middle"], "Easy", "Sitting on a Fortune"],
-    ["What happened when the front player answered incorrectly on Sitting on a Fortune?", "They went to the back of the queue", ["They won a consolation prize", "They moved one chair forward", "They chose a new category"], "Easy", "Sitting on a Fortune"],
-    ["What was the maximum jackpot on Sitting on a Fortune?", "£100,000", ["£25,000", "£50,000", "£250,000"], "Medium", "Sitting on a Fortune"],
-    ["How much did a wrong answer reduce the jackpot by in Sitting on a Fortune's final?", "£10,000", ["£1,000", "£5,000", "£20,000"], "Medium", "Sitting on a Fortune"],
-    ["Which traditional quiz-show feature was not offered on Sitting on a Fortune?", "Formal lifelines", ["Multiple-choice answers", "A cash jackpot", "A presenter asking questions"], "Easy", "Sitting on a Fortune"],
+    ["Which former England footballer presented Sitting on a Fortune?", "Gary Lineker", ["Alan Shearer", "Ian Wright", "Peter Crouch"], "Easy", "Sitting on a Fortune", ["Gary Lineker", "Original Presenter", "ITV Programme", "2021 Debut", "England Footballer", "Quiz Show Host", "Football Broadcaster"]],
+    ["How many contestants took their places on Sitting on a Fortune's line of chairs?", "Six", ["Four", "Five", "Eight"], "Easy", "Sitting on a Fortune", ["Six Contestants", "Chair Queue", "Game Line Up", "Player Count", "Individual Players", "Contestant Rotation", "Studio Seating"]],
+    ["Which contestant got to answer questions on Sitting on a Fortune?", "The one in the front chair", ["The one in the last chair", "The one chosen by the audience", "The one sitting in the middle"], "Easy", "Sitting on a Fortune", ["Front Chair", "Answering Position", "Queue Leader", "Quiz Turn", "First Seat", "Chair Movement", "Player Advantage"]],
+    ["What happened when the front player answered incorrectly on Sitting on a Fortune?", "They went to the back of the queue", ["They won a consolation prize", "They moved one chair forward", "They chose a new category"], "Easy", "Sitting on a Fortune", ["Back Of Queue", "Wrong Answer", "Chair Rotation", "Player Penalty", "Quiz Queue", "Lost Position", "Game Rules"]],
+    ["What was the maximum jackpot on Sitting on a Fortune?", "£100,000", ["£25,000", "£50,000", "£250,000"], "Medium", "Sitting on a Fortune", ["One Hundred Thousand Pounds", "Maximum Prize", "Cash Jackpot", "Final Challenge", "ITV Game Show", "Top Winnings", "Prize Ladder"]],
+    ["How much did a wrong answer reduce the jackpot by in Sitting on a Fortune's final?", "£10,000", ["£1,000", "£5,000", "£20,000"], "Medium", "Sitting on a Fortune", ["Ten Thousand Pounds", "Wrong Answer Penalty", "Jackpot Reduction", "Final Round", "Money Decreases", "Cash Risk", "Question Error"]],
+    ["Which traditional quiz-show feature was not offered on Sitting on a Fortune?", "Formal lifelines", ["Multiple-choice answers", "A cash jackpot", "A presenter asking questions"], "Easy", "Sitting on a Fortune", ["No Formal Lifelines", "Individual Knowledge", "Cash Prize", "No Help Mechanic", "Quiz Strategy", "High Stakes", "Game Format"]],
 
     // WINNING COMBINATION (7)
-    ["Which comedian presented the ITV quiz Winning Combination?", "Omid Djalili", ["Jason Manford", "Jimmy Carr", "John Bishop"], "Easy", "Winning Combination"],
-    ["How many contestants began a game of Winning Combination?", "Nine", ["Six", "Eight", "Ten"], "Medium", "Winning Combination"],
-    ["What was each Winning Combination player allocated at the start?", "A number from one to nine", ["A playing-card suit", "A coloured ball", "A letter of the alphabet"], "Easy", "Winning Combination"],
-    ["How many players made up the final Winning Combination?", "Four", ["Two", "Three", "Five"], "Easy", "Winning Combination"],
-    ["What determined the amount of the final jackpot in Winning Combination?", "The order of the finalists' numbers", ["The studio audience's vote", "The time taken in round one", "The presenter's choice"], "Medium", "Winning Combination"],
-    ["What were the elimination contests between contenders on Winning Combination called?", "Battle Rounds", ["Cash Duels", "The Link Round", "Answer Smash"], "Medium", "Winning Combination"],
-    ["What determined how many questions each finalist had to answer in Winning Combination?", "Their assigned digit", ["Their age", "Their finishing position in round one", "The number of opponents they eliminated"], "Medium", "Winning Combination"],
+    ["Which comedian presented the ITV quiz Winning Combination?", "Omid Djalili", ["Jason Manford", "Jimmy Carr", "John Bishop"], "Easy", "Winning Combination", ["Omid Djalili", "Comedian Presenter", "ITV Daytime", "2020 Launch", "Original Host", "Money Quiz", "British Comedy"]],
+    ["How many contestants began a game of Winning Combination?", "Nine", ["Six", "Eight", "Ten"], "Medium", "Winning Combination", ["Nine Contestants", "Initial Players", "One To Nine Digits", "Studio Line Up", "Original Format", "Number Allocation", "Quiz Competition"]],
+    ["What was each Winning Combination player allocated at the start?", "A number from one to nine", ["A playing-card suit", "A coloured ball", "A letter of the alphabet"], "Easy", "Winning Combination", ["Assigned Digit", "Numbers One To Nine", "Starting Number", "Random Allocation", "Contestant Identity", "Jackpot Formation", "Game Setup"]],
+    ["How many players made up the final Winning Combination?", "Four", ["Two", "Three", "Five"], "Easy", "Winning Combination", ["Four Finalists", "Winning Quartet", "Final Quartet", "Number Digits", "Prize Splitting", "Final Stage", "Qualifying Players"]],
+    ["What determined the amount of the final jackpot in Winning Combination?", "The order of the finalists' numbers", ["The studio audience's vote", "The time taken in round one", "The presenter's choice"], "Medium", "Winning Combination", ["Digit Order", "Four Digit Jackpot", "Thousands To Units", "Number Combination", "Prize Value", "Finalists Choices", "Cash Calculation"]],
+    ["What were the elimination contests between contenders on Winning Combination called?", "Battle Rounds", ["Cash Duels", "The Link Round", "Answer Smash"], "Medium", "Winning Combination", ["Battle Rounds", "Player Elimination", "Rapid Fire Questions", "Contestant Qualification", "Quiz Duels", "Points Battle", "Winning Positions"]],
+    ["What determined how many questions each finalist had to answer in Winning Combination?", "Their assigned digit", ["Their age", "Their finishing position in round one", "The number of opponents they eliminated"], "Medium", "Winning Combination", ["Assigned Number", "Final Questions", "Digit Sets Target", "Timed Challenge", "Team Jackpot", "Answer Count", "Game Mechanics"]],
 
     // THE SWITCH (7)
-    ["Who hosted ITV's daytime quiz The Switch?", "Sanjeev Bhaskar", ["Adil Ray", "Ben Shephard", "Richard Osman"], "Easy", "The Switch"],
-    ["How many contestants started a regular episode of The Switch?", "Four", ["Three", "Five", "Six"], "Medium", "The Switch"],
-    ["What was The Switch's opening timed general-knowledge round called?", "Easy Money", ["Quick Fire", "The Money List", "First Past the Post"], "Medium", "The Switch"],
-    ["What could a contestant do with a topic on The Switch's Category Board?", "Freeze it or swap it", ["Auction it to another contestant", "Double its prize value", "Give it to the presenter"], "Medium", "The Switch"],
-    ["How many of the four possible answers were wrong in a main question on The Switch?", "One", ["Two", "Three", "Four"], "Easy", "The Switch"],
-    ["What did it mean to be switched out during The Switch?", "Having to take the answer left by the others", ["Receiving a bonus question", "Choosing the next round's prize", "Moving straight to the final"], "Medium", "The Switch"],
-    ["How many completed circuits of the final categories doubled the winner's bank on The Switch?", "Three", ["One", "Two", "Four"], "Medium", "The Switch"],
+    ["Who hosted ITV's daytime quiz The Switch?", "Sanjeev Bhaskar", ["Adil Ray", "Ben Shephard", "Richard Osman"], "Easy", "The Switch", ["Sanjeev Bhaskar", "ITV Host", "2019 Debut", "Original Presenter", "Daytime Quiz", "Comedy Actor", "Television Presenter"]],
+    ["How many contestants started a regular episode of The Switch?", "Four", ["Three", "Five", "Six"], "Medium", "The Switch", ["Four Contestants", "Original Line Up", "Studio Players", "Individual Quiz", "Player Count", "ITV Format", "Competition Setup"]],
+    ["What was The Switch's opening timed general-knowledge round called?", "Easy Money", ["Quick Fire", "The Money List", "First Past the Post"], "Medium", "The Switch", ["Easy Money", "Opening Round", "Timed General Knowledge", "Quiz Buzzer", "Cash Earnings", "Question Round", "Starting Stage"]],
+    ["What could a contestant do with a topic on The Switch's Category Board?", "Freeze it or swap it", ["Auction it to another contestant", "Double its prize value", "Give it to the presenter"], "Medium", "The Switch", ["Category Board", "Freeze Or Swap", "Topic Choice", "Quiz Strategy", "Category Selection", "Contestant Control", "Round Mechanics"]],
+    ["How many of the four possible answers were wrong in a main question on The Switch?", "One", ["Two", "Three", "Four"], "Easy", "The Switch", ["One Wrong Option", "Four Answers", "Three Correct", "Knowledge Testing", "Switch Round", "Multiple Choice", "Wrong Answer Trap"]],
+    ["What did it mean to be switched out during The Switch?", "Having to take the answer left by the others", ["Receiving a bonus question", "Choosing the next round's prize", "Moving straight to the final"], "Medium", "The Switch", ["Switched Out", "Leftover Answer", "Temporary Exclusion", "Opponent Choices", "Forced Response", "Switch Mechanic", "Game Rule"]],
+    ["How many completed circuits of the final categories doubled the winner's bank on The Switch?", "Three", ["One", "Two", "Four"], "Medium", "The Switch", ["Three Circuits", "Bank Doubled", "Final Categories", "Winner Bonus", "Prize Multiplier", "Quiz Finale", "Cash Reward"]],
 
     // THE BOSS (6)
-    ["Which Scottish comedian hosted the BBC quiz The Boss?", "Susan Calman", ["Janey Godley", "Fern Brady", "Elaine C. Smith"], "Easy", "The Boss"],
-    ["How many players formed the starting workforce on The Boss?", "Five", ["Three", "Four", "Six"], "Medium", "The Boss"],
-    ["What was the most powerful position in the quiz The Boss called?", "The Boss", ["The Banker", "The Chaser", "The Captain"], "Easy", "The Boss"],
-    ["What could challengers attempt to become during The Boss?", "The new boss", ["The studio announcer", "A quiz expert", "A guest host"], "Easy", "The Boss"],
-    ["Where did two selected players face puzzles to decide which one left The Boss?", "The boss's office", ["The vault", "The money chair", "The isolation booth"], "Medium", "The Boss"],
-    ["What did The Boss contestants answer during a quickfire challenge against the clock?", "Multiple-choice questions", ["Cryptic crossword clues only", "Musical introductions only", "Celebrity photographs only"], "Easy", "The Boss"],
+    ["Which Scottish comedian hosted the BBC quiz The Boss?", "Susan Calman", ["Janey Godley", "Fern Brady", "Elaine C. Smith"], "Easy", "The Boss", ["Susan Calman", "Scottish Comedian", "Original Host", "BBC One", "2017 Launch", "Workplace Format", "Daytime Television"]],
+    ["How many players formed the starting workforce on The Boss?", "Five", ["Three", "Four", "Six"], "Medium", "The Boss", ["Five Players", "Starting Workforce", "Boss Selection", "Initial Contestants", "Player Count", "BBC Quiz", "Employee Theme"]],
+    ["What was the most powerful position in the quiz The Boss called?", "The Boss", ["The Banker", "The Chaser", "The Captain"], "Easy", "The Boss", ["Boss Role", "Team Leader", "Player Position", "Workforce Quiz", "Power Mechanic", "Leadership Challenge", "Title Role"]],
+    ["What could challengers attempt to become during The Boss?", "The new boss", ["The studio announcer", "A quiz expert", "A guest host"], "Easy", "The Boss", ["Challenge The Boss", "Leader Succession", "Competitor Contest", "Boss Position", "Gameplay Choice", "Workforce Rivalry", "Quiz Format"]],
+    ["Where did two selected players face puzzles to decide which one left The Boss?", "The boss's office", ["The vault", "The money chair", "The isolation booth"], "Medium", "The Boss", ["Boss Office", "Head To Head Puzzles", "Elimination Challenge", "Two Players", "Workplace Theme", "Survival Round", "Game Set"]],
+    ["What did The Boss contestants answer during a quickfire challenge against the clock?", "Multiple-choice questions", ["Cryptic crossword clues only", "Musical introductions only", "Celebrity photographs only"], "Easy", "The Boss", ["Multiple Choice", "Quickfire Questions", "Countdown Clock", "Boss Challenge", "General Knowledge", "Timed Quiz", "Buzzer Stage"]],
 
     // BREAKAWAY (6)
-    ["Who hosted the BBC quiz Breakaway?", "Nick Hancock", ["Bob Mortimer", "Richard Bacon", "Steve Jones"], "Easy", "Breakaway"],
-    ["How many contestants began together on Breakaway?", "Six", ["Four", "Five", "Eight"], "Medium", "Breakaway"],
-    ["What was unusual about the contestants' progress through Breakaway?", "They moved along a track", ["They climbed a spiral staircase", "They spun in suspended chairs", "They travelled on a studio train"], "Easy", "Breakaway"],
-    ["In the first series of Breakaway, how many correct answers were needed to reach the finish?", "Thirty", ["Ten", "Twenty", "Forty"], "Medium", "Breakaway"],
-    ["What could a Breakaway contestant choose to do instead of staying with the main group?", "Break away to play separately", ["Ask the audience to choose a category", "Buy a second life from the host", "Swap scores with another player"], "Easy", "Breakaway"],
-    ["What happened to the remaining money if the whole Breakaway team reached the finish together?", "It was shared among the team", ["It all went to the team captain", "It was doubled for one random player", "It was donated to a television charity"], "Easy", "Breakaway"],
+    ["Who hosted the BBC quiz Breakaway?", "Nick Hancock", ["Bob Mortimer", "Richard Bacon", "Steve Jones"], "Easy", "Breakaway", ["Nick Hancock", "Original Host", "BBC One", "2012 Television", "Quiz Presenter", "Individual Strategy", "Game Show Host"]],
+    ["How many contestants began together on Breakaway?", "Six", ["Four", "Five", "Eight"], "Medium", "Breakaway", ["Six Contestants", "Opening Group", "Player Count", "Shared Prize", "Track Format", "Team Quiz", "Studio Line Up"]],
+    ["What was unusual about the contestants' progress through Breakaway?", "They moved along a track", ["They climbed a spiral staircase", "They spun in suspended chairs", "They travelled on a studio train"], "Easy", "Breakaway", ["Track Progression", "Forward Movement", "Correct Answers", "Studio Course", "Physical Board", "Finish Line", "Quiz Format"]],
+    ["In the first series of Breakaway, how many correct answers were needed to reach the finish?", "Thirty", ["Ten", "Twenty", "Forty"], "Medium", "Breakaway", ["Thirty Correct Answers", "Series One", "Finish Line", "Progress Target", "General Knowledge", "Quiz Track", "Original Rules"]],
+    ["What could a Breakaway contestant choose to do instead of staying with the main group?", "Break away to play separately", ["Ask the audience to choose a category", "Buy a second life from the host", "Swap scores with another player"], "Easy", "Breakaway", ["Break Away", "Solo Player", "Independent Quiz", "Prize Risk", "Contestant Choice", "Team Separation", "Game Strategy"]],
+    ["What happened to the remaining money if the whole Breakaway team reached the finish together?", "It was shared among the team", ["It all went to the team captain", "It was doubled for one random player", "It was donated to a television charity"], "Easy", "Breakaway", ["Shared Money", "Whole Team", "Communal Bank", "Finish Together", "Prize Division", "Group Competition", "Cooperative Game"]],
 
     // THE LINK (6)
-    ["Which actor hosted the BBC quiz The Link?", "Mark Williams", ["Mark Benton", "Martin Clunes", "Adrian Chiles"], "Easy", "The Link"],
-    ["How many pairs competed in a regular episode of The Link?", "Three", ["Two", "Four", "Five"], "Medium", "The Link"],
-    ["What did players need to discover between clues on The Link?", "A connection", ["A missing date", "A hidden celebrity photograph", "A spelling mistake"], "Easy", "The Link"],
-    ["What did solving a connection allow contestants to remove on The Link?", "Links holding up cash prizes", ["Letters from a giant word", "Coloured squares from a maze", "Locks on a studio door"], "Medium", "The Link"],
-    ["How many money amounts were displayed on the opening board of The Link?", "Six", ["Three", "Four", "Eight"], "Medium", "The Link"],
-    ["Which board game inspired the television quiz The Link?", "Linkee", ["Articulate!", "Trivial Pursuit", "Scattergories"], "Medium", "The Link"],
+    ["Which actor hosted the BBC quiz The Link?", "Mark Williams", ["Mark Benton", "Martin Clunes", "Adrian Chiles"], "Easy", "The Link", ["Mark Williams", "Original Presenter", "BBC One", "2014 Debut", "Harry Potter Actor", "Connection Quiz", "Television Host"]],
+    ["How many pairs competed in a regular episode of The Link?", "Three", ["Two", "Four", "Five"], "Medium", "The Link", ["Three Pairs", "Opening Teams", "Six Players", "Partner Format", "Contestant Count", "BBC Daytime", "Quiz Line Up"]],
+    ["What did players need to discover between clues on The Link?", "A connection", ["A missing date", "A hidden celebrity photograph", "A spelling mistake"], "Easy", "The Link", ["Connections", "Linked Answers", "Clue Association", "Spot The Link", "Knowledge Puzzle", "Word Connections", "Quiz Reasoning"]],
+    ["What did solving a connection allow contestants to remove on The Link?", "Links holding up cash prizes", ["Letters from a giant word", "Coloured squares from a maze", "Locks on a studio door"], "Medium", "The Link", ["Prize Links", "Cash Suspended", "Connections Solved", "Remove Links", "Money Pods", "Physical Mechanic", "Studio Board"]],
+    ["How many money amounts were displayed on the opening board of The Link?", "Six", ["Three", "Four", "Eight"], "Medium", "The Link", ["Six Money Values", "Opening Board", "Prize Pods", "Different Amounts", "Cash Display", "Connections Round", "Quiz Setup"]],
+    ["Which board game inspired the television quiz The Link?", "Linkee", ["Articulate!", "Trivial Pursuit", "Scattergories"], "Medium", "The Link", ["Linkee", "Board Game Adaptation", "Connection Puzzle", "TV Adaptation", "Original Game", "Knowledge Links", "Format Origins"]],
 
     // DECIMATE (6)
-    ["Which EastEnders actor presented the BBC quiz Decimate?", "Shane Richie", ["Ross Kemp", "Adam Woodyatt", "Steve McFadden"], "Easy", "Decimate"],
-    ["How many players formed each team on Decimate?", "Three", ["Two", "Four", "Five"], "Easy", "Decimate"],
-    ["How much money did teams begin by defending on Decimate?", "£20,000", ["£5,000", "£10,000", "£50,000"], "Medium", "Decimate"],
-    ["What visual feature represented a team's prize fund on Decimate?", "A wall of golden lights", ["A tower of coins", "A row of numbered suitcases", "A spinning money wheel"], "Easy", "Decimate"],
-    ["Into how many equal segments was the starting prize fund divided on Decimate?", "Ten", ["Five", "Eight", "Twelve"], "Medium", "Decimate"],
-    ["What happened to part of a team's potential winnings after a wrong answer on Decimate?", "It disappeared from the money wall", ["It moved into a bonus pot", "It was awarded to the presenter", "It doubled for the next round"], "Easy", "Decimate"],
+    ["Which EastEnders actor presented the BBC quiz Decimate?", "Shane Richie", ["Ross Kemp", "Adam Woodyatt", "Steve McFadden"], "Easy", "Decimate", ["Shane Richie", "EastEnders Actor", "Alfie Moon", "BBC One", "2015 Television", "Original Presenter", "Quiz Host"]],
+    ["How many players formed each team on Decimate?", "Three", ["Two", "Four", "Five"], "Easy", "Decimate", ["Three Players", "Team Size", "Contestant Group", "Cooperative Play", "Quiz Partners", "Player Count", "Money Defence"]],
+    ["How much money did teams begin by defending on Decimate?", "£20,000", ["£5,000", "£10,000", "£50,000"], "Medium", "Decimate", ["Twenty Thousand Pounds", "Starting Prize", "Team Fund", "Jackpot Protection", "BBC Quiz", "Game Stakes", "Original Format"]],
+    ["What visual feature represented a team's prize fund on Decimate?", "A wall of golden lights", ["A tower of coins", "A row of numbered suitcases", "A spinning money wheel"], "Easy", "Decimate", ["Golden Lights Wall", "Money Display", "Prize Segments", "Visual Winnings", "Studio Set", "Gold Wall", "Game Mechanic"]],
+    ["Into how many equal segments was the starting prize fund divided on Decimate?", "Ten", ["Five", "Eight", "Twelve"], "Medium", "Decimate", ["Ten Segments", "Equal Shares", "Initial Cash", "Money Wall", "Prize Breakdown", "Cash Units", "Game Setup"]],
+    ["What happened to part of a team's potential winnings after a wrong answer on Decimate?", "It disappeared from the money wall", ["It moved into a bonus pot", "It was awarded to the presenter", "It doubled for the next round"], "Easy", "Decimate", ["Wrong Answer", "Wall Segment Lost", "Prize Reduction", "Team Penalty", "Cash Disappears", "Money Defence", "Quiz Rules"]],
 
     // LETTERBOX (6)
-    ["Who presented the BBC word game Letterbox?", "Mel Giedroyc", ["Sue Perkins", "Sandi Toksvig", "Sara Cox"], "Easy", "Letterbox"],
-    ["What did Letterbox players try to uncover by guessing letters?", "A hidden word", ["A mystery address", "A celebrity's signature", "An unknown number"], "Easy", "Letterbox"],
-    ["What happened when a guessed letter did not appear in the Letterbox word?", "Play passed to the opponent", ["The word was automatically revealed", "Both players lost their scores", "The prize money doubled"], "Easy", "Letterbox"],
-    ["How many pairs took part at the start of Letterbox?", "Four", ["Two", "Three", "Six"], "Medium", "Letterbox"],
-    ["How many letters were in Letterbox's final mystery password?", "Eight", ["Five", "Six", "Ten"], "Medium", "Letterbox"],
-    ["What was the maximum cash prize available in Letterbox?", "£2,500", ["£1,000", "£5,000", "£10,000"], "Medium", "Letterbox"],
+    ["Who presented the BBC word game Letterbox?", "Mel Giedroyc", ["Sue Perkins", "Sandi Toksvig", "Sara Cox"], "Easy", "Letterbox", ["Mel Giedroyc", "BBC Two", "2017 Launch", "Original Presenter", "Word Quiz Host", "British Comedian", "Language Game"]],
+    ["What did Letterbox players try to uncover by guessing letters?", "A hidden word", ["A mystery address", "A celebrity's signature", "An unknown number"], "Easy", "Letterbox", ["Hidden Word", "Letter Guessing", "Word Puzzle", "Spelling", "Secret Password", "Vocabulary Game", "Hangman Format"]],
+    ["What happened when a guessed letter did not appear in the Letterbox word?", "Play passed to the opponent", ["The word was automatically revealed", "Both players lost their scores", "The prize money doubled"], "Easy", "Letterbox", ["Incorrect Letter", "Opponent Turn", "Word Guessing", "Player Switch", "Missing Letter", "Game Penalty", "Turn Rules"]],
+    ["How many pairs took part at the start of Letterbox?", "Four", ["Two", "Three", "Six"], "Medium", "Letterbox", ["Four Pairs", "Opening Teams", "Eight Contestants", "Word Competition", "Partner Duos", "BBC Two", "Player Count"]],
+    ["How many letters were in Letterbox's final mystery password?", "Eight", ["Five", "Six", "Ten"], "Medium", "Letterbox", ["Eight Letter Password", "Final Mystery", "Letterbox Finale", "No Repeated Letters", "Cash Round", "Word Solution", "Prize Puzzle"]],
+    ["What was the maximum cash prize available in Letterbox?", "£2,500", ["£1,000", "£5,000", "£10,000"], "Medium", "Letterbox", ["Two Thousand Five Hundred Pounds", "Maximum Cash", "Final Password", "Top Prize", "BBC Word Game", "Prize Fund", "Win Condition"]],
 
     // THINK TANK (6)
-    ["Which former BBC Breakfast presenter hosted the quiz Think Tank?", "Bill Turnbull", ["Charlie Stayt", "Dan Walker", "Jeremy Bowen"], "Easy", "Think Tank"],
-    ["How many main contestants competed on the BBC quiz Think Tank?", "Three", ["Two", "Four", "Six"], "Medium", "Think Tank"],
-    ["Who supplied possible answers for contestants to use on Think Tank?", "A regular panel of helpers", ["Only the studio audience", "A celebrity guest each day", "A computer chosen at random"], "Easy", "Think Tank"],
-    ["What had the Think Tank helpers done before the studio contestants played?", "Answered the quiz questions themselves", ["Written all the questions", "Interviewed the contestants", "Chosen the cash prize"], "Medium", "Think Tank"],
-    ["What was the last challenge on Think Tank called?", "Question: Impossible", ["The Wonderwall", "3 in 10", "The Golden Run"], "Medium", "Think Tank"],
-    ["Why was Think Tank's final Question: Impossible especially difficult?", "Every helper had answered it incorrectly", ["It had no correct option", "It required an answer in another language", "It had been written by a rival contestant"], "Medium", "Think Tank"],
+    ["Which former BBC Breakfast presenter hosted the quiz Think Tank?", "Bill Turnbull", ["Charlie Stayt", "Dan Walker", "Jeremy Bowen"], "Easy", "Think Tank", ["Bill Turnbull", "BBC Breakfast", "Original Presenter", "2016 Television", "BBC One", "Quiz Host", "Former Newsreader"]],
+    ["How many main contestants competed on the BBC quiz Think Tank?", "Three", ["Two", "Four", "Six"], "Medium", "Think Tank", ["Three Contestants", "Main Players", "Regular Helpers", "General Knowledge", "Player Count", "Quiz Competition", "Studio Line Up"]],
+    ["Who supplied possible answers for contestants to use on Think Tank?", "A regular panel of helpers", ["Only the studio audience", "A celebrity guest each day", "A computer chosen at random"], "Easy", "Think Tank", ["Regular Helpers", "Think Tank Panel", "Suggested Answers", "Crowd Knowledge", "Player Assistance", "Quiz Support", "Multiple Perspectives"]],
+    ["What had the Think Tank helpers done before the studio contestants played?", "Answered the quiz questions themselves", ["Written all the questions", "Interviewed the contestants", "Chosen the cash prize"], "Medium", "Think Tank", ["Preanswered Questions", "Think Tank Panel", "Recorded Responses", "Prepared Suggestions", "Advance Quiz", "Helper Knowledge", "Contestant Decisions"]],
+    ["What was the last challenge on Think Tank called?", "Question: Impossible", ["The Wonderwall", "3 in 10", "The Golden Run"], "Medium", "Think Tank", ["Question Impossible", "Final Challenge", "Unsolved Question", "Cash Prize", "Puzzle Finale", "Hardest Question", "Quiz Round"]],
+    ["Why was Think Tank's final Question: Impossible especially difficult?", "Every helper had answered it incorrectly", ["It had no correct option", "It required an answer in another language", "It had been written by a rival contestant"], "Medium", "Think Tank", ["All Helpers Wrong", "Unanswered By Panel", "Difficult Finale", "Eliminating Wrong Answers", "Winning Challenge", "Knowledge Test", "Final Mechanic"]],
 
     // THE $64,000 QUESTION (5)
-    ["Who hosted the 1990s British revival of The $64,000 Question?", "Bob Monkhouse", ["Bob Holness", "Bruce Forsyth", "Jim Davidson"], "Easy", "The $64,000 Question"],
-    ["Which entertainer hosted the original 1950s British version of The 64,000 Question?", "Jerry Desmonde", ["Hughie Green", "Michael Miles", "Leslie Crowther"], "Medium", "The $64,000 Question"],
-    ["What kind of subject did contestants choose for their questions on The $64,000 Question?", "A specialist subject", ["A topic selected by another contestant", "A subject picked by the audience", "A random school subject"], "Easy", "The $64,000 Question"],
-    ["What was the dramatic booth for major questions on Bob Monkhouse's The $64,000 Question called?", "The Isolator", ["The Vortex", "The Vault", "The Money Chair"], "Medium", "The $64,000 Question"],
-    ["What was the actual top cash prize on Bob Monkhouse's British version of The $64,000 Question?", "£6,400", ["£64,000", "£16,000", "£32,000"], "Medium", "The $64,000 Question"],
+    ["Who hosted the 1990s British revival of The $64,000 Question?", "Bob Monkhouse", ["Bob Holness", "Bruce Forsyth", "Jim Davidson"], "Easy", "The $64,000 Question", ["Bob Monkhouse", "1990 Revival", "Quiz Presenter", "ITV Host", "Specialist Questions", "Classic Quiz Return", "Celebrity Entertainer"]],
+    ["Which entertainer hosted the original 1950s British version of The 64,000 Question?", "Jerry Desmonde", ["Hughie Green", "Michael Miles", "Leslie Crowther"], "Medium", "The $64,000 Question", ["Jerry Desmonde", "1950s Host", "Original British Edition", "Classic ITV", "Early Television", "Quiz Presenter", "Specialist Subject"]],
+    ["What kind of subject did contestants choose for their questions on The $64,000 Question?", "A specialist subject", ["A topic selected by another contestant", "A subject picked by the audience", "A random school subject"], "Easy", "The $64,000 Question", ["Specialist Subject", "Chosen Expertise", "Knowledge Contest", "Increasing Difficulty", "Contestant Topic", "Prize Ladder", "Classic Format"]],
+    ["What was the dramatic booth for major questions on Bob Monkhouse's The $64,000 Question called?", "The Isolator", ["The Vortex", "The Vault", "The Money Chair"], "Medium", "The $64,000 Question", ["The Isolator", "Isolation Booth", "Major Questions", "1990s Television", "Bob Monkhouse", "Dramatic Set", "Final Stages"]],
+    ["What was the actual top cash prize on Bob Monkhouse's British version of The $64,000 Question?", "£6,400", ["£64,000", "£16,000", "£32,000"], "Medium", "The $64,000 Question", ["Six Thousand Four Hundred Pounds", "Original Revival Prize", "Top Cash Amount", "1990s Quiz", "British Adaptation", "Jackpot", "Programme Title"]],
 
     // ARE YOU SMARTER THAN A 10 YEAR OLD? (5)
-    ["Who presented the primetime British version of Are You Smarter Than a 10 Year Old?", "Noel Edmonds", ["Phillip Schofield", "Chris Tarrant", "Dale Winton"], "Easy", "Are You Smarter Than a 10 Year Old?"],
-    ["Which duo hosted the daytime version of Are You Smarter Than a 10 Year Old?", "Dick and Dom", ["Ant and Dec", "Sam and Mark", "Jedward"], "Easy", "Are You Smarter Than a 10 Year Old?"],
-    ["Which television channel originally broadcast Britain's Are You Smarter Than a 10 Year Old?", "Sky One", ["BBC One", "ITV", "Channel 4"], "Medium", "Are You Smarter Than a 10 Year Old?"],
-    ["Questions on Are You Smarter Than a 10 Year Old? were based on what?", "The school National Curriculum", ["University entrance exams", "Television advertising slogans", "Newspaper headlines"], "Easy", "Are You Smarter Than a 10 Year Old?"],
-    ["How many schoolchildren made up the class helping adults on Are You Smarter Than a 10 Year Old?", "Five", ["Three", "Four", "Six"], "Medium", "Are You Smarter Than a 10 Year Old?"],
+    ["Who presented the primetime British version of Are You Smarter Than a 10 Year Old?", "Noel Edmonds", ["Phillip Schofield", "Chris Tarrant", "Dale Winton"], "Easy", "Are You Smarter Than a 10 Year Old?", ["Noel Edmonds", "Primetime Host", "Sky One", "Adult Contestants", "2007 Debut", "Primary Presenter", "School Quiz"]],
+    ["Which duo hosted the daytime version of Are You Smarter Than a 10 Year Old?", "Dick and Dom", ["Ant and Dec", "Sam and Mark", "Jedward"], "Easy", "Are You Smarter Than a 10 Year Old?", ["Dick And Dom", "Daytime Hosts", "Richard McCourt", "Dominic Wood", "Sky One Version", "Children TV Duo", "Presenter Partnership"]],
+    ["Which television channel originally broadcast Britain's Are You Smarter Than a 10 Year Old?", "Sky One", ["BBC One", "ITV", "Channel 4"], "Medium", "Are You Smarter Than a 10 Year Old?", ["Sky One", "Original British Channel", "2007 Television", "UK Adaptation", "National Curriculum Quiz", "British Broadcasting", "Quiz Debut"]],
+    ["Questions on Are You Smarter Than a 10 Year Old? were based on what?", "The school National Curriculum", ["University entrance exams", "Television advertising slogans", "Newspaper headlines"], "Easy", "Are You Smarter Than a 10 Year Old?", ["National Curriculum", "School Subjects", "Primary Knowledge", "Adult Contestant", "Classroom Questions", "Educational Quiz", "Pupils"]],
+    ["How many schoolchildren made up the class helping adults on Are You Smarter Than a 10 Year Old?", "Five", ["Three", "Four", "Six"], "Medium", "Are You Smarter Than a 10 Year Old?", ["Five Schoolchildren", "Classroom Helpers", "Child Experts", "Primary Pupils", "Adult Player Support", "Team Line Up", "School Quiz Format"]],
 ];
 
 const questions = facts.map((fact, index) => {
-    const [question, correctAnswer, wrongAnswers, difficulty, programme] = fact;
+    const [question, correctAnswer, wrongAnswers, difficulty, programme, specificTags] = fact;
     const answers = wrongAnswers.slice();
     answers.splice(index % 4, 0, correctAnswer);
 
@@ -149,7 +150,7 @@ const questions = facts.map((fact, index) => {
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme],
+        tags: ['British Television', 'Quiz Shows', programme, ...specificTags],
         dailyEligible: true
     };
 });
