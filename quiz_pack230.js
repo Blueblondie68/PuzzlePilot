@@ -1,7 +1,8 @@
-// quiz_pack230.js
+ // quiz_pack230.js
 // PuzzlePilot - The Bigggggg Quiz
 // Television: EastEnders - 1992, loyalties and secrets
 // 100 questions: tv_6804 to tv_6903
+// Audit: contextual and individual tags added to all questions.
 // Leave quiz_bank.js unchanged until the end of the session.
 
 const facts = [
@@ -130,7 +131,191 @@ const facts = [
     ["What did Lilian Kominski reveal she had pressured Rachel into doing as a teenager?", "Having an abortion", ["Leaving the country", "Giving up music", "Joining the army"], "Medium", "Walford Neighbours"],
 ];
 
-const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty, topic], index) => {
+// Context for each storyline group.
+const topicContextTags = {
+    'Sharon and the Mitchells': [
+        'Sharon Mitchell', 'Phil And Grant Mitchell',
+        'Queen Victoria Fire And Affair'
+    ],
+    'Mark and Gill': [
+        'Mark Fowler', 'Gill Robinson',
+        'HIV And AIDS Storyline'
+    ],
+    'Arthur and Christine': [
+        'Arthur Fowler', 'Christine Hewitt',
+        'Gardening And Affair'
+    ],
+    'Pat and Frank': [
+        'Pat Butcher', 'Frank Butcher',
+        'Financial Trouble And Road Accident'
+    ],
+    'Mandy Salter': [
+        'Mandy Salter', 'Homeless Teenager',
+        'Butcher Family And Kathy Beale'
+    ],
+    'Nigel Bates': [
+        'Nigel Bates', 'Mitchell Family Friend',
+        'New Walford Arrival'
+    ],
+    'Tricky Dicky': [
+        'Richard Cole', 'Walford Market',
+        'Market Inspector Corruption'
+    ],
+    'Kathy Beale': [
+        'Kathy Beale', 'James Willmott Brown',
+        'Prison Release And Confrontation'
+    ],
+    'Michelle and Clyde': [
+        'Michelle Fowler', 'Clyde Tavernier',
+        'College Romance And Betrayal'
+    ],
+    'Phil and Anne': [
+        'Phil Mitchell', 'Anne Howes',
+        'Marriage Secrets And Romance'
+    ],
+    'Lloyd Tavernier': [
+        'Lloyd Tavernier', 'Tavernier Family',
+        'Stolen Car And Court Case'
+    ],
+    'Walford Neighbours': [
+        'Dot Cotton', 'Ethel Skinner',
+        'Walford Community And Family'
+    ]
+};
+
+// Individual tags, aligned with the questions above.
+// Each entry supplies two specific tags.
+const factSpecificTags = [
+    // Sharon, Grant and Phil
+    'Grant Wants Child|Family Planning',
+    'Contraception Discovery|Marital Conflict',
+    'Queen Vic Destruction|Grant Outburst',
+    'Phil Comforts Sharon|Grant Disappears',
+    'Phil And Sharon Affair|Infidelity',
+    'Queen Victoria Affair|Secret Encounter',
+    'Insurance Fraud Arson|Queen Victoria Fire',
+    'Financial Debts|Insurance Scam',
+    'Sharons Birthday|Pub Arson',
+    'Roly Dog|Pub Fire Rescue',
+    'Sharon Chooses Grant|Love Triangle',
+
+    // Mark and Gill
+    'Gill Robinson Marriage|Terminal Illness',
+    'Gill Fowler Married Name|Newlyweds',
+    'AIDS Diagnosis|Terminal Illness',
+    'Hospice Care|Gill Final Days',
+    'Death Day After Wedding|Bereavement',
+    'Michelle Fowler|Wedding Guest',
+    'Rachel Kominski|Wedding Guest',
+    'Brief Honeymoon|Hotel Stay',
+
+    // Arthur and Christine
+    'Christine Hewitt|Gardener Employer',
+    'Elizabeth Power|Actor Casting',
+    'Arthur Gardening Job|First Meeting',
+    'Jonathan Hewitt|Christine Son',
+    'Jonny Lee Miller|Actor Casting',
+    'Jonathan Leaves College|Career Change',
+    'Jonathan Misses Work|Gardening Assistant',
+    'Scottish Festival|Jonathan Friends',
+    'Christine Replaces Jonathan|Gardening Work',
+    'Pauline New Zealand Trip|Kenny Beale',
+    'Kenny Beale Car Crash|Family Emergency',
+    'Pete Beale|Christine Date',
+    'Letter And Photograph|Pauline Discovery',
+    'Christmas Eve Affair|Arthur Infidelity',
+
+    // Pat and Frank
+    'Pat Cabs|Taxi Firm Name',
+    'Butcher Bed And Breakfast Sale|Financial Crisis',
+    'Charles Raymond|Property Investor',
+    'Mercedes Sale|Frank Debt',
+    'Portakabin Office|Taxi Business',
+    'Stephanie Watson|Pedestrian Collision',
+    'Taxi Driving|Pat Car Crash',
+    'Drink Driving|Breathalyser',
+    'Stephanie Watson Death|Hospital Injuries',
+    'Mo Butcher Death|Alzheimers',
+
+    // Mandy Salter
+    'Mandy Salter Arrival|Teenage Neglect',
+    'Nicola Stapleton|Actor Casting',
+    'Sam Butcher Friendship|Young Walford Residents',
+    'Lorraine Salter|Mandy Mother',
+    'Lorraine Hospitalisation|Pat Temporary Care',
+    'Ian Beale|Sex Worker Secret',
+    'Squat Living|Teenage Homelessness',
+    'Kathy Beale Sofa|Temporary Shelter',
+    'False Abuse Allegation|Kathy Beale',
+    'Makeshift Shanty|Sleeping Rough',
+    'Linda Henry|Lorraine Salter Actress',
+
+    // Nigel Bates
+    'Nigel Bates Arrival|Mitchell Friends',
+    'Paul Bradley|Actor Casting',
+    'Mercedes Purchase|Frank Car Business',
+    'Nigel Mother Death|Walford Move',
+    'Dot Cotton Lodger|Home Sharing',
+    'Phil And Grant Friendship|Old Friends',
+
+    // Tricky Dicky
+    'Richard Cole Arrival|Tricky Dicky Nickname',
+    'Ian Reddington|Actor Casting',
+    'Market Inspector|Walford Council',
+    'Rachel Kominski Romance|Market Stallholder',
+    'Tricky Dicky|Nickname Origin',
+    'Tony Jordan|EastEnders Writer',
+    'Market Corruption|Favouritism',
+
+    // Kathy and Willmott-Brown
+    'James Willmott Brown|Prison Release',
+    'Cassette Tape|Kathy Contact',
+    'Rachel Kominski|Hotel Confrontation',
+    'Suicide Threat|Willmott Brown',
+    'Kathy Asks Him To Leave|Walford Departure',
+    'Pete Beale|Marriage Breakdown',
+
+    // Michelle, Clyde and Jack
+    'Clyde Tavernier|College Relationship',
+    'Jack Woodman|College Gig',
+    'Jack Woodman Infidelity|Campus Bedroom',
+    'Grant Mitchell|Clyde Companion',
+    'Christmas Day|Jack Returns',
+    'Shelley Lewis|College Friend Arrival',
+    'Michelle And Clyde Split|Affair Consequences',
+
+    // Phil and Anne
+    'Anne Howes Arrival|Phil Girlfriend',
+    'Cassie Stuart|Actor Casting',
+    'Curry House Meeting|Phil Romance',
+    'Terry Howes|Secret Husband',
+    'Former Boyfriend Lie|Anne Deception',
+    'Suicide Claim|Marriage Conflict',
+    'Young Daughter Secret|Family Revelation',
+    'Phil Ends Romance|Repeated Lies',
+
+    // Lloyd Tavernier
+    'Lloyd Tavernier|Joyriding',
+    'Gary Phillips|Stolen Vehicle',
+    'Wesley|Teenage Friend',
+    'Police Arrest|Car Theft',
+    'Suspended Sentence|Court Penalty',
+    'Norwich Move|Tavernier Departure',
+
+    // Other Walford stories
+    'Willy The Dog|Ethel Pet Death',
+    'Refuses Replacement Dog|Grief',
+    'Mr Papadopolous|Launderette Ownership',
+    'Dot Cotton|Name Pronunciation',
+    'Lilian Kominski|Family Visit',
+    'Teenage Abortion|Rachel Family History'
+];
+
+// Build the actual quiz questions with complete metadata.
+const questions = facts.map((
+    [question, correctAnswer, wrongAnswers, difficulty, topic],
+    index
+) => {
     const answers = [...wrongAnswers];
     answers.splice(index % 4, 0, correctAnswer);
 
@@ -141,7 +326,16 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Soaps', 'EastEnders', '1992', topic],
+        tags: [
+            'British Television',
+            'Soaps',
+            'EastEnders',
+            '1992',
+            topic,
+            ...topicContextTags[topic],
+            correctAnswer,
+            ...factSpecificTags[index].split('|')
+        ],
         dailyEligible: true
     };
 });
