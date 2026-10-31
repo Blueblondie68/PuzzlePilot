@@ -2,7 +2,7 @@
 // PuzzlePilot - The Bigggggg Quiz
 // Television: EastEnders - 1996
 // 100 questions: tv_7204 to tv_7303
-// Leave quiz_bank.js unchanged until the end of the session.
+// Fully tagged audit. Leave quiz_bank.js unchanged until the end of the session.
 
 const facts = [
     // ARTHUR FOWLER'S FINAL CHAPTER (11)
@@ -130,18 +130,196 @@ const facts = [
     ["Which actor played drug dealer Dan Zappieri?", "Carl Pizzie", ["Neil Clark", "Paul Moriarty", "Desune Coleman"], "Medium", "Sarah and Tony"],
 ];
 
+const topicContextTags = {
+    "Arthur Fowler": [
+        "Arthur Fowler",
+        "Pauline Fowler",
+        "Willy Roper Fraud",
+        "Prison And Death"
+    ],
+    "Ben Mitchell": [
+        "Ben Mitchell",
+        "Phil Mitchell",
+        "Kathy Mitchell",
+        "Childhood Meningitis"
+    ],
+    "Joe and Lorraine": [
+        "Joe Wicks",
+        "David Wicks",
+        "Lorraine Wicks",
+        "Family And Mental Health"
+    ],
+    "The Brannings": [
+        "Carol Jackson",
+        "Alan Jackson",
+        "Branning Family",
+        "Wedding And Racism"
+    ],
+    "Butchers and Evanses": [
+        "Pat Evans",
+        "Ricky Butcher",
+        "Roy Evans",
+        "Relationships And Car Trade"
+    ],
+    "Tiffany and Grant": [
+        "Tiffany Raymond",
+        "Grant Mitchell",
+        "Tony Hills",
+        "Marriage And Paternity"
+    ],
+    "Ian's Shooting": [
+        "Ian Beale",
+        "Cindy Beale",
+        "David Wicks",
+        "Custody And Contract Shooting"
+    ],
+    "Peggy's Diagnosis": [
+        "Peggy Mitchell",
+        "Queen Victoria",
+        "Breast Cancer Storyline",
+        "George Palmer"
+    ],
+    "Mark Fowler": [
+        "Mark Fowler",
+        "Ruth Fowler",
+        "HIV Awareness",
+        "Walford Market"
+    ],
+    "Frankie and Mick": [
+        "Frankie Pierre",
+        "Mick McFarlane",
+        "Alan Jackson",
+        "Jazz And Relationships"
+    ],
+    "The Cobra Club": [
+        "Cobra Club",
+        "George Palmer",
+        "Huw Edwards",
+        "Walford Nightlife"
+    ],
+    "Sarah and Tony": [
+        "Sarah Hills",
+        "Tony Hills",
+        "Alistair Matthews",
+        "Religion And Drugs"
+    ]
+};
+
+const factSpecificTags = [
+    "Mark Suspects Willy|Fundraising Fraud",
+    "Willy Courts Pauline|Prison Separation",
+    "Jersey Trip|Willy Deception",
+    "Counterfeit Credit Cards|Evidence Of Fraud",
+    "Overturned Conviction|Arthur Exonerated",
+    "Prison Riot|Arthur In Custody",
+    "Head Injury|Prison Violence",
+    "Allotment Collapse|Arthur Final Scenes",
+    "Brain Haemorrhage|Arthur Death",
+    "Bill Treacher|Actor Departure",
+    "Mark Punches Willy|Arthur Funeral",
+    "Ben Birth|Phil And Kathy Son",
+    "Gillian Taylforth|Kathy Actress",
+    "Peggy Grandmother|Mitchell Family",
+    "Ian Beale|Maternal Half Brother",
+    "Meningitis Diagnosis|Infant Illness",
+    "Hearing Loss|Meningitis Aftermath",
+    "Matthew Silver|Baby Ben Actor",
+    "Joe Wicks Arrival|Estranged Father",
+    "Paul Nicholls|Joe Actor",
+    "Lorraine Wicks|Joe Mother",
+    "Jacqueline Leonard|Lorraine Actress",
+    "Bolton|Joe Home Town",
+    "Karen Wicks|Bereavement",
+    "Road Accident|Sister Death",
+    "Schizophrenia|Joe Mental Health",
+    "Grant And Lorraine|New Relationship",
+    "April Branning|Jilted Bride",
+    "Nikos|Wedding No Show",
+    "Carol And Alan Wedding|Wedding Replacement",
+    "Debbie Arnold|April Actress",
+    "Jim Branning|Carol Father",
+    "John Bardon|Jim Actor",
+    "Derek Branning|Racist Hostility",
+    "Terence Beesley|Derek Actor",
+    "Reenie Branning|Carol Mother",
+    "Sonia Jackson|Bridesmaid",
+    "David Intervenes|Alan Assault",
+    "Sam Mitchell Kiss|Ricky Infidelity",
+    "Bianca Burns Clothes|Relationship Anger",
+    "Spain|Sam And Guillermo",
+    "Frank And Pat|Former Spouses",
+    "Roy Evans Wedding|Pat New Husband",
+    "Evans Surname|Pat Marriage",
+    "Milan|David Departure",
+    "Tiffany And Grant|Queen Vic Romance",
+    "Tony Hills|Tiffany Boyfriend",
+    "Mark Homer|Tony Actor",
+    "Simon Raymond|Tiffany Brother",
+    "Andrew Lynford|Simon Actor",
+    "Tony And Simon Kiss|Coming Out Storyline",
+    "Tiffany Sees Kiss|Family Conflict",
+    "Grant And Tony|Uncertain Paternity",
+    "Paris Wedding|Grant And Tiffany",
+    "Peggy Mitchell|Tiffany Mother In Law",
+    "Lorraine Wicks|Grant Affair Tension",
+    "New Years Eve Revelation|Baby Paternity",
+    "David Wicks|Cindy Affair",
+    "Cindy Beale|Ian Marriage",
+    "Child Custody Dispute|Marriage Breakdown",
+    "John Valecue|Contract Gunman",
+    "Barry Evans|Gunman Contact",
+    "Ian Survives Shooting|Contract Killing",
+    "Michelle Collins|Cindy Actress",
+    "Peter Beale|Children Taken Abroad",
+    "Steven Beale|Child Taken Abroad",
+    "Lucy Beale|Child Left Behind",
+    "Italy|Cindy Flight",
+    "Peggy Breast Lump|Health Scare",
+    "Tiffany Raymond|Peggy Confidante",
+    "Breast Cancer|Peggy Diagnosis",
+    "Delayed Doctors Appointment|Fear Of Diagnosis",
+    "Lumpectomy|Cancer Treatment",
+    "George Palmer|Peggy Partner",
+    "Barbara Windsor|Peggy Actress",
+    "Mark HIV Status|Public Disclosure",
+    "Grant Mitchell|HIV Disclosure",
+    "Market Trader|Mark Occupation",
+    "Ruth Fowler|Mark Wife",
+    "Todd Carty|Mark Actor",
+    "Frankie Pierre|Alan Affair",
+    "Syan Blake|Frankie Actress",
+    "Mick McFarlane|Musician Arrival",
+    "Jazz Band|Mick Music",
+    "Alan Night Cafe|Live Performance",
+    "Cobra Club|Nightclub Opening",
+    "George Palmer|Club Owner",
+    "Paul Moriarty|George Actor",
+    "Lenny Wallace|Club Barman",
+    "Wales|Huw Background",
+    "Richard Elis|Huw Actor",
+    "Michael Rose|Market Inspector",
+    "Russell Floyd|Michael Actor",
+    "Sarah Hills|Religious Fellowship",
+    "Shoplifting|Sarah Offence",
+    "Alistair Matthews|Christian Group",
+    "Neil Clark|Alistair Actor",
+    "Dan Zappieri|Drug Dealer",
+    "Ecstasy|Spiked Drink",
+    "Carl Pizzie|Dan Actor"
+];
+
 const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty, topic], index) => {
     const answers = [...wrongAnswers];
     answers.splice(index % 4, 0, correctAnswer);
-
+    const tags = [
+        'British Television', 'Soaps', 'EastEnders', '1996', topic,
+        ...topicContextTags[topic], correctAnswer,
+        ...factSpecificTags[index].split('|')
+    ];
     return {
         id: 'tv_' + String(7204 + index).padStart(4, '0'),
-        category: 'Television',
-        question,
-        answers,
-        correctAnswer,
-        difficulty,
-        tags: ['British Television', 'Soaps', 'EastEnders', '1996', topic],
+        category: 'Television', question, answers, correctAnswer, difficulty,
+        tags: [...new Set(tags)],
         dailyEligible: true
     };
 });
