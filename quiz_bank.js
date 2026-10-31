@@ -5,7 +5,7 @@
 // This file controls which quiz packs are currently
 // connected to the live PuzzlePilot quiz.
 //
-// Packs 1-235 are connected to the live quiz bank.
+// Packs 1-264 are connected to the live quiz bank.
 //
 
 // =====================================================
@@ -13,7 +13,7 @@
 // =====================================================
 
 const FIRST_QUIZ_PACK = 1;
-const LAST_QUIZ_PACK = 235;
+const LAST_QUIZ_PACK = 264;
 
 // =====================================================
 // LOAD QUIZ PACKS
