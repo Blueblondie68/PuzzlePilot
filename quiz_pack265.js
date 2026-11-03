@@ -1,14 +1,12 @@
-
 // quiz_pack265.js
 // PuzzlePilot - The Bigggggg Quiz
 // Television: Hollyoaks - 1995 to 1996
 // 43 questions: tv_10364 to tv_10406
-// Early-years coverage: recognisable people, major stories and programme history.
-// All exported questions have comprehensive, question-specific tags.
-// Leave quiz_bank.js unchanged until the new packs are ready to be connected.
-
+// Full per-question tagging audit: specific characters, performers, families,
+// relationships, plot events and accurate years. No unrelated group-wide tags.
+// Leave quiz_bank.js unchanged until the end of the evening.
+//
 // Each line: question | correct answer | three wrong answers | difficulty | three specific tags.
-// A pack can be shorter than 100 questions. Never pad with obscure trivia.
 const groups = [
   {
     year: "1995",
@@ -75,21 +73,77 @@ What was the name of Jambo Bolton's distinctive car, inherited from his uncle in
   },
 ];
 
+// Extra tags are deliberately keyed by stable question ID rather than applied
+// to an entire group. That prevents unrelated characters and stories leaking
+// into neighbouring questions when a group contains several plotlines.
+const specificTags = {
+  tv_10364: ["23 October 1995", "Television Premiere", "Phil Redmond", "UK Television History"],
+  tv_10365: ["Channel 4 Launch", "1995 Premiere", "British Broadcasting"],
+  tv_10366: ["Television Creator", "Hollyoaks Creation", "Brookside Creator", "Programme Origins"],
+  tv_10367: ["Chester Cheshire", "Hollyoaks Village", "Soap Setting"],
+  tv_10368: ["Seven Original Characters", "1995 Cast", "Teenage Characters", "Youth Drama"],
+  tv_10369: ["Once Weekly", "1995 Broadcasting", "Episode Schedule", "Channel 4"],
+  tv_10370: ["Kurt Benson Car", "Ollie Benson", "Opening Car Explosion", "Joyride"],
+  tv_10371: ["Kurt Benson", "Ollie Benson", "Brother Relationship", "Opening Car Explosion"],
+  tv_10372: ["Tony Hutchinson", "Nick Pickard", "Original Seven", "Longest Serving Actor"],
+  tv_10373: ["Kurt Benson", "Jeremy Edwards", "Original Seven", "Actor Casting"],
+  tv_10374: ["Jambo Bolton", "Will Mellor", "Original Seven", "Actor Casting"],
+  tv_10375: ["Natasha Andersen", "Shebah Ronay", "Original Seven", "Actress Casting"],
+  tv_10376: ["Dawn Cunningham", "Lisa Williamson", "Original Seven", "Actress Casting"],
+  tv_10377: ["Maddie Parker", "Yasmin Bannerman", "Original Seven", "Actress Casting"],
+  tv_10378: ["Tony Hutchinson", "Nick Pickard", "Original Seven", "First Spoken Line"],
+  tv_10379: ["Jambo Bolton", "Kurt Benson", "Original Seven", "Friendship", "Opening Episode"],
+  tv_10380: ["Natasha Andersen", "Lucy Benson", "Rob Hawthorne", "Dermot Ashton", "Fatal Overdose", "Ecstasy"],
+  tv_10381: ["Natasha Andersen", "Lucy Benson Birthday", "Rob Hawthorne", "Dermot Ashton", "Fatal Overdose", "Ecstasy"],
+  tv_10382: ["Lucy Benson", "Natasha Andersen", "Rob Hawthorne", "Dermot Ashton", "Birthday Party Drugging"],
+  tv_10383: ["Dermot Ashton", "Rob Hawthorne", "Natasha Andersen", "Lucy Benson", "Ecstasy Spiking"],
+  tv_10384: ["Rob Hawthorne", "Kurt Benson", "Long Running Rivalry", "1990s Villain"],
+  tv_10385: ["Natasha Andersen", "Greg Andersen", "Father Daughter", "Andersen Family"],
+  tv_10386: ["Alvin Stardust", "Greg Andersen", "Natasha Andersen", "Singer Actor", "Actor Casting"],
+  tv_10387: ["Angela Cunningham", "Dawn Cunningham", "Jude Cunningham", "Cindy Cunningham", "Max Cunningham", "Mother Children"],
+  tv_10388: ["Gordon Cunningham", "Dawn Cunningham", "Jude Cunningham", "Cindy Cunningham", "Max Cunningham", "Father Children"],
+  tv_10389: ["Angela Cunningham", "Terry Williams", "Wedding", "Marriage Ceremony", "10 October 1996"],
+  tv_10390: ["Ian Puleston-Davies", "Terry Williams", "Angela Cunningham", "Second Husband", "Actor Casting"],
+  tv_10391: ["Davinia Taylor", "Jude Cunningham", "Cunningham Family", "Actress Casting", "1996 Introduction"],
+  tv_10392: ["Dawn Cunningham", "Bethany Cunningham", "Bethany Keane", "Jack Osborne", "Mother Daughter", "Adoption"],
+  tv_10393: ["Jack Osborne", "Bethany Cunningham", "Dawn Cunningham", "Biological Father", "Paternity Secret"],
+  tv_10394: ["Bethany Cunningham", "Bethany Keane", "Dawn Cunningham", "Jack Osborne", "Kidney Transplant", "Organ Donation"],
+  tv_10395: ["Jack Osborne", "Bethany Cunningham", "Dawn Cunningham", "Kidney Donor", "Father Daughter", "Organ Donation"],
+  tv_10396: ["The Dog in the Pond", "Greg Andersen", "1995 Premiere", "Original Pub", "Hollyoaks Village"],
+  tv_10397: ["Greg Andersen", "Alvin Stardust", "The Dog in the Pond", "1995 Launch", "Original Pub Landlord"],
+  tv_10398: ["Osborne Family", "Jack Osborne", "Celia Osborne", "Greg Andersen", "The Dog in the Pond", "Pub Ownership"],
+  tv_10399: ["Jimmy McKenna", "Jack Osborne", "Osborne Family", "Actor Casting", "1996 Debut"],
+  tv_10400: ["Terri Dwyer", "Ruth Osborne", "Jack Osborne", "Celia Osborne", "Actress Casting", "Osborne Family"],
+  tv_10401: ["Sarah Jayne Dunn", "Mandy Richardson", "Lewis Richardson", "Actress Casting", "Richardson Family"],
+  tv_10402: ["Lewis Richardson", "Mandy Richardson", "Brother Sister", "Richardson Family"],
+  tv_10403: ["Dermot Ashton", "Rob Hawthorne", "Lucy Benson", "Carol Groves", "River Dee", "Fatal Car Crash"],
+  tv_10404: ["Rob Hawthorne", "Dermot Ashton", "Lucy Benson", "Carol Groves", "River Dee", "Car Crash"],
+  tv_10405: ["River Dee", "Rob Hawthorne", "Dermot Ashton", "Lucy Benson", "Carol Groves", "Car Crash"],
+  tv_10406: ["Beryl", "Jambo Bolton", "Bond Bug", "Uncle Inheritance", "1996 Car"],
+};
+
 let index = 0;
 const questions = groups.flatMap(group => group.facts.trim().split("\n").map(line => {
   const parts = line.split("|");
   if (parts.length !== 9) throw new Error(`Invalid question data at ${index + 1}`);
   const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, tag1, tag2, tag3] = parts;
   const answers = [wrong1, wrong2, wrong3];
+  const id = "tv_" + String(10364 + index).padStart(4, "0");
+
   if (new Set([correctAnswer, ...answers]).size !== 4) {
-    throw new Error(`Repeated answer choice at question ${index + 1}`);
+    throw new Error(`Repeated answer choice at ${id}`);
   }
   if (!["Easy", "Medium", "Hard"].includes(difficulty)) {
-    throw new Error(`Invalid difficulty at question ${index + 1}`);
+    throw new Error(`Invalid difficulty at ${id}`);
   }
+  if (!Array.isArray(specificTags[id]) || specificTags[id].length === 0) {
+    throw new Error(`Missing specific tags at ${id}`);
+  }
+
   answers.splice(index % 4, 0, correctAnswer);
+  const year = (id === "tv_10396" || id === "tv_10397") ? "1995" : group.year;
   const item = {
-    id: "tv_" + String(10364 + index).padStart(4, "0"),
+    id,
     category: "Television",
     question,
     answers,
@@ -97,8 +151,8 @@ const questions = groups.flatMap(group => group.facts.trim().split("\n").map(lin
     difficulty,
     tags: [...new Set([
       "British Television", "Soaps", "Hollyoaks", "Channel 4",
-      "1990s", group.year, group.topic,
-      correctAnswer, tag1, tag2, tag3
+      "1990s", year, correctAnswer, tag1, tag2, tag3,
+      ...specificTags[id]
     ])],
     dailyEligible: true
   };
@@ -106,10 +160,11 @@ const questions = groups.flatMap(group => group.facts.trim().split("\n").map(lin
   return item;
 }));
 
-if (questions.length !== 43) {
-  throw new Error(`Expected 43 questions; got ${questions.length}`);
-}
-if (new Set(questions.map(q => q.question.toLowerCase())).size !== questions.length) {
-  throw new Error("Duplicate question text in Pack 265");
+if (questions.length !== 43) throw new Error(`Expected 43 questions; got ${questions.length}`);
+if (Object.keys(specificTags).length !== questions.length) throw new Error("Incorrect number of question-specific tag sets");
+if (new Set(questions.map(q => q.id)).size !== questions.length) throw new Error("Duplicate question IDs");
+if (new Set(questions.map(q => q.question.toLowerCase())).size !== questions.length) throw new Error("Duplicate question text in Pack 265");
+if (questions.some(q => !q.answers.includes(q.correctAnswer) || q.answers.length !== 4 || q.tags.length < 10)) {
+  throw new Error("Incomplete exported question metadata");
 }
 module.exports = questions;
