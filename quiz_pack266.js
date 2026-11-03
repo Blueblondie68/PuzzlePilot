@@ -1,10 +1,10 @@
-
 // quiz_pack266.js
 // PuzzlePilot - The Bigggggg Quiz
 // Television: Hollyoaks - 1997 to 1998
 // 38 questions: tv_10407 to tv_10444
-// Major storylines, recognisable characters and cast.
-// Complete question-specific tags; no filler or invented events.
+// Per-question tag audit: characters, actors, family ties, relationships,
+// storylines, programme and year. No unrelated group-wide story tags.
+// Existing question IDs, answers, difficulties and daily eligibility retained.
 // Leave quiz_bank.js unchanged until the end of the evening.
 //
 // Each line: question | correct answer | three wrong answers | difficulty | three specific tags.
@@ -70,34 +70,81 @@ What was the title of the Hollyoaks video spin-off released in 1998?|Hollyoaks: 
   },
 ];
 
+// Extra tags keyed to individual question IDs, rather than whole groups.
+// This avoids unrelated characters or plotlines entering nearby questions.
+const specificTags = {
+  tv_10407: ["Kurt Benson", "Ruth Osborne", "Elopement", "Hull", "Benson Osborne Marriage"],
+  tv_10408: ["Spike", "Kurt Benson", "Ruth Osborne", "Construction Site", "Scaffolding Fight", "Attempted Murder Charge"],
+  tv_10409: ["Kurt Benson", "Spike", "Ruth Osborne", "Not Guilty Verdict", "Court Trial", "Acquittal"],
+  tv_10410: ["Julie Matthews", "Tony Hutchinson", "Aborted Wedding", "Jilted At Altar", "1997 Romance"],
+  tv_10411: ["Michael St. John Thomas", "Jude Cunningham", "Maddie Parker", "Hostage Taking", "Rooftop Siege"],
+  tv_10412: ["Jude Cunningham", "Michael St. John Thomas", "Maddie Parker", "Fatal Rooftop Fall", "Hostage Rescue"],
+  tv_10413: ["Matt Littler", "Max Cunningham", "Cunningham Family", "Actor Recast", "1997 Casting"],
+  tv_10414: ["Cindy Cunningham", "Lee Stanley", "Sixteenth Birthday", "Teenage Motherhood", "Cunningham Family"],
+  tv_10415: ["Lee Stanley", "Cindy Cunningham", "Holly Cunningham", "Biological Father", "Teenage Pregnancy"],
+  tv_10416: ["Holly Cunningham", "Cindy Cunningham", "Lee Stanley", "Daughter Birth", "Christmas Day 1997"],
+  tv_10417: ["Lee Stanley", "Cindy Cunningham", "Ollie Benson", "Fatal Road Accident", "Boyfriend Death"],
+  tv_10418: ["Ollie Benson", "Kurt Benson", "Lee Stanley", "Brother Death", "Car Crash Injuries"],
+  tv_10419: ["Sam O'Brien", "O.B.", "Max Cunningham", "Friendship", "Comedy Double Act", "1997 Arrival"],
+  tv_10420: ["Darren Jeffries", "Sam O'Brien", "O.B.", "Max Cunningham", "Actor Casting"],
+  tv_10421: ["Dawn Cunningham", "Jambo Bolton", "Leukaemia", "Christmas Day 1997", "Cunningham Family", "Fatal Illness"],
+  tv_10422: ["Jambo Bolton", "Dawn Cunningham", "River Dee", "Marriage Proposal", "Christmas Day 1997", "Final Hours"],
+  tv_10423: ["Patrick Family", "Jill Patrick", "Sol Patrick", "Gina Patrick", "Kate Patrick", "Family Arrivals"],
+  tv_10424: ["Paul Danan", "Sol Patrick", "Patrick Family", "Actor Casting", "1997 Introduction"],
+  tv_10425: ["Dennis Richardson", "Mandy Richardson", "Lewis Richardson", "Richardson Family", "Father Children", "1997 Debut"],
+  tv_10426: ["Lynda Rooke", "Jill Patrick", "Sol Patrick", "Gina Patrick", "Kate Patrick", "Actress Casting"],
+  tv_10427: ["Stephanie Waring", "Cindy Cunningham", "Cunningham Family", "1996 Recast", "1997 Cast", "1998 Cast"],
+  tv_10428: ["Mandy Richardson", "Sol Patrick", "Dennis Richardson", "Romance", "Abusive Father", "Relationship Conflict"],
+  tv_10429: ["Mandy Richardson", "Dennis Richardson", "Sol Patrick", "Faked Suicide", "Missing Person", "Family Abuse"],
+  tv_10430: ["Mandy Richardson", "Lewis Richardson", "Sol Patrick", "London Hospital", "Brother Sister", "Survival Revealed"],
+  tv_10431: ["Dennis Richardson", "Mandy Richardson", "Sexual Abuse", "Rape Conviction", "Court Trial", "Prison Sentence"],
+  tv_10432: ["Dennis Richardson", "Mandy Richardson", "Seven Year Sentence", "Rape Conviction", "Criminal Trial"],
+  tv_10433: ["Helen Richardson", "Mandy Richardson", "Lewis Richardson", "Dennis Richardson", "Mother Children", "Richardson Family"],
+  tv_10434: ["Jack Osborne", "Jill Patrick", "Osborne Family", "Patrick Family", "Marriage", "1998 Wedding"],
+  tv_10435: ["Cindy Cunningham", "Holly Cunningham", "Postnatal Depression", "Young Mother", "Mental Health Storyline"],
+  tv_10436: ["Jude Cunningham", "Cindy Cunningham", "Holly Cunningham", "Infant Rescue", "Postnatal Depression", "Cunningham Sisters"],
+  tv_10437: ["Harry Thompson", "Tony Hutchinson", "Tessie Thompson", "Father Son", "Baby Birth", "Paternity Secret"],
+  tv_10438: ["Jasmine Bates", "Tony Hutchinson", "Marriage Proposal", "Engagement", "1998 Romance"],
+  tv_10439: ["Jambo Bolton", "Dawn Cunningham", "Will Mellor", "Bereavement", "Departure", "1998 Exit"],
+  tv_10440: ["James Redmond", "Rory Finnigan", "Finn", "Actor Casting", "1998 Debut"],
+  tv_10441: ["Jude Cunningham", "Roger Patterson", "Burcroft Manor", "Jewellery Heist", "Necklace Theft", "Flight From Justice"],
+  tv_10442: ["Lucy Benson", "Rob Hawthorne", "Kurt Benson", "Heroin Overdose", "Drug Attack", "Car Park Rescue"],
+  tv_10443: ["Rob Hawthorne", "Kurt Benson", "Hollyoaks: Off on One", "Boat Confrontation", "Presumed Drowning", "Video Spin Off"],
+  tv_10444: ["Hollyoaks: Off on One", "VHS Release", "1998 Spin Off", "Kurt Benson", "Rob Hawthorne", "Special Video"],
+};
+
 let index = 0;
 const questions = groups.flatMap(group => group.facts.trim().split("\n").map(line => {
   const parts = line.split("|");
-  if (parts.length !== 9) throw new Error(`Invalid question data at ${index + 1}`);
+  if (parts.length !== 9) throw new Error(`Invalid data at question ${index + 1}`);
 
   const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, tag1, tag2, tag3] = parts;
+  const id = "tv_" + String(10407 + index).padStart(4, "0");
   const answers = [wrong1, wrong2, wrong3];
 
   if (new Set([correctAnswer, ...answers]).size !== 4) {
-    throw new Error(`Repeated answer choice at question ${index + 1}`);
+    throw new Error(`Repeated answer choice at ${id}`);
   }
   if (!["Easy", "Medium", "Hard"].includes(difficulty)) {
-    throw new Error(`Invalid difficulty at question ${index + 1}`);
+    throw new Error(`Invalid difficulty at ${id}`);
+  }
+  if (!Array.isArray(specificTags[id]) || specificTags[id].length === 0) {
+    throw new Error(`Missing specific tags at ${id}`);
   }
 
   answers.splice(index % 4, 0, correctAnswer);
 
   const item = {
-    id: "tv_" + String(10407 + index).padStart(4, "0"),
+    id,
     category: "Television",
     question,
     answers,
     correctAnswer,
     difficulty,
     tags: [...new Set([
-      "British Television", "Soaps", "Hollyoaks", "Channel 4",
-      "1990s", group.year, group.topic,
-      correctAnswer, tag1, tag2, tag3
+      "British Television", "Soaps", "Hollyoaks", "Channel 4", "1990s",
+      group.year, correctAnswer, tag1, tag2, tag3,
+      ...specificTags[id]
     ])],
     dailyEligible: true
   };
@@ -109,8 +156,21 @@ const questions = groups.flatMap(group => group.facts.trim().split("\n").map(lin
 if (questions.length !== 38) {
   throw new Error(`Expected 38 questions; got ${questions.length}`);
 }
+if (Object.keys(specificTags).length !== questions.length) {
+  throw new Error("Incorrect number of per-question tag sets");
+}
+if (new Set(questions.map(q => q.id)).size !== questions.length) {
+  throw new Error("Duplicate question IDs");
+}
 if (new Set(questions.map(q => q.question.toLowerCase())).size !== questions.length) {
   throw new Error("Duplicate question text in Pack 266");
+}
+if (questions.some(q =>
+  !q.answers.includes(q.correctAnswer) ||
+  q.answers.length !== 4 ||
+  q.tags.length < 10
+)) {
+  throw new Error("Incomplete exported question metadata");
 }
 
 module.exports = questions;
