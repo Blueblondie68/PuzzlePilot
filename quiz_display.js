@@ -37,24 +37,47 @@ function nextMessage(session) {
 // ─────────────────────────────────────────────
 // TELEVISION PROGRAMME LABELS
 // ─────────────────────────────────────────────
-// Preserve programme names from the newer display file.
-// Use a named show when the question or its tags identify one.
+// Only use a confirmed programme title, never a neighbouring generic tag.
+// The programme title is hidden if it occurs in ANY answer choice.
+// This prevents "Which programme...?" questions giving themselves away.
+// General television questions can safely keep the label TELEVISION.
 
+// Titles already covered by dedicated quiz packs or television quiz-show packs.
+// Add newly covered programmes here as future packs are introduced.
 const TELEVISION_PROGRAMMES = [
-    'EastEnders',
+    '2point4 Children',
+    '24',
+    '30 Rock',
+    'A Bit of Fry & Laurie',
+    'A Fine Romance',
+    'Absolutely Fabulous',
+    'Agony',
+    'Agony Again',
+    "'Allo 'Allo!",
+    'Are You Being Served?',
+    'Black Books',
+    'Brookside',
     'Coronation Street',
+    'Crossroads',
+    'Dinnerladies',
+    'Doctors',
+    'Early Doors',
+    'EastEnders',
+    'Eldorado',
     'Emmerdale',
     'Emmerdale Farm',
-    'Brookside',
-    'Crossroads',
-    'Eldorado',
     'Family Affairs',
+    'Fawlty Towers',
+    'Gimme Gimme Gimme',
+    'Grace & Favour',
     'Hollyoaks',
-    'Doctors',
-    'Neighbours',
     'Home and Away',
-    'Take the High Road',
+    'Neighbours',
     'River City',
+    'Spaced',
+    'Take the High Road',
+    'The Thin Blue Line',
+    'The Young Ones',
     'The Chase',
     'The Weakest Link',
     'Mastermind',
@@ -73,28 +96,58 @@ const TELEVISION_PROGRAMMES = [
     'The Price Is Right'
 ];
 
-const PROGRAMME_GROUPS = new Set([
-    'soaps',
-    'soap operas',
-    'quiz shows',
-    'game shows',
-    'quiz and game shows',
-    'quiz & game shows',
-    'sitcoms',
-    'dramas',
-    'drama series',
-    'tv dramas',
-    'television dramas',
-    'comedies',
-    'reality shows',
-    "children's television",
-    "children's tv"
-]);
+function normaliseProgrammeText(value) {
+    return String(value || '')
+        .toLowerCase()
+        .replace(/[\u2018\u2019]/g, "'")
+        .replace(/&/g, ' and ')
+        .replace(/[^a-z0-9]+/g, ' ')
+        .trim()
+        .replace(/^the /, '');
+}
+
+const PROGRAMME_BY_TAG = new Map(
+    TELEVISION_PROGRAMMES.map(name => [normaliseProgrammeText(name), name])
+);
+
+function programmeAppearsInAnswers(programme, question) {
+    const title = normaliseProgrammeText(programme);
+    const answers = Array.isArray(question.answers) ? question.answers : [];
+    const choices = [...answers, question.correctAnswer];
+
+    return choices.some(choice => {
+        const value = normaliseProgrammeText(choice);
+        if (!value || !title) return false;
+        // Whole-name match, including answers such as "The Young Ones (1982)".
+        // Avoid matching short titles (e.g. "24") inside unrelated numbers.
+        return value === title ||
+            (title.length >= 5 && (` ${value} `).includes(` ${title} `));
+    });
+}
 
 function getProgrammeName(question) {
+    if (!question || typeof question !== 'object') return null;
+
+    // Do not put a title in the header if the question asks for a show's identity.
+    if (/^(?:which|what)\s+(?:(?:tv|television|bbc|itv|british|american)\s+)*(?:programme|program|show|sitcom|soap|drama|series)\b/i.test(String(question.question || ''))) {
+        return null;
+    }
+
+    // If any answer choice is itself a known programme, keep the header
+    // neutral so that identifying a programme remains a fair question.
+    if (TELEVISION_PROGRAMMES.some(name => programmeAppearsInAnswers(name, question))) {
+        return null;
+    }
+
+    // A dedicated programme field is the most reliable source.
     for (const field of ['programme', 'program', 'show', 'series']) {
         if (typeof question[field] === 'string' && question[field].trim()) {
-            return question[field].trim();
+            const name = question[field].trim();
+            // Some packs use 'series' for a number/season, not a show name.
+            if (field === 'series' && !PROGRAMME_BY_TAG.has(normaliseProgrammeText(name))) {
+                continue;
+            }
+            return programmeAppearsInAnswers(name, question) ? null : name;
         }
     }
 
@@ -102,23 +155,37 @@ function getProgrammeName(question) {
         ? question.tags.filter(tag => typeof tag === 'string')
         : [];
 
-    for (let i = 0; i < tags.length - 1; i++) {
-        if (PROGRAMME_GROUPS.has(tags[i].trim().toLowerCase())) {
-            const candidate = tags[i + 1].trim();
-            if (
-                candidate &&
-                !PROGRAMME_GROUPS.has(candidate.toLowerCase()) &&
-                !/^(?:19|20)\d{2}(?:s)?$/.test(candidate)
-            ) {
-                return candidate;
-            }
+    // Support deliberate metadata such as "Programme: The Young Ones".
+    for (const tag of tags) {
+        const match = tag.match(/^(?:programme|program|show)\s*[:=]\s*(.+)$/i);
+        if (match) {
+            const name = match[1].trim();
+            return programmeAppearsInAnswers(name, question) ? null : name;
         }
     }
 
-    for (const programme of TELEVISION_PROGRAMMES) {
-        if (tags.some(tag => tag.trim().toLowerCase() === programme.toLowerCase())) {
-            return programme;
+    // Packs usually put the main programme among their opening common tags.
+    // Match exact known titles, not arbitrary tags following "sitcoms" etc.
+    // A question may mention other shows, so ambiguous matches are not labelled.
+    const candidates = new Map();
+    for (const tag of tags.slice(0, 12)) {
+        const title = PROGRAMME_BY_TAG.get(normaliseProgrammeText(tag));
+        if (title && !programmeAppearsInAnswers(title, question)) {
+            candidates.set(normaliseProgrammeText(title), title);
         }
+    }
+
+    if (candidates.size === 1) {
+        return candidates.values().next().value;
+    }
+    if (candidates.size > 1) {
+        // If the question explicitly names one, prefer that known context.
+        const text = normaliseProgrammeText(question.question);
+        const named = [...candidates.values()].filter(title => {
+            const needle = normaliseProgrammeText(title);
+            return needle.length >= 5 && (` ${text} `).includes(` ${needle} `);
+        });
+        return named.length === 1 ? named[0] : null;
     }
 
     return null;
@@ -371,4 +438,3 @@ module.exports = {
     buildSimpleContainer,
     v2Payload
 };
-
