@@ -1,8 +1,10 @@
+
 // quiz_database.js
 // PuzzlePilot Quiz
 // PostgreSQL / Neon database handling
 
 const { Pool } = require('pg');
+const { syncQuizBankToDatabase } = require('./quiz_bank_sync');
 
 
 // ─────────────────────────────────────────────
@@ -88,6 +90,33 @@ databaseReady.catch(
         );
     }
 );
+
+// Keep the Activity's private copy of the question bank in Neon.
+// This runs after database setup and does not block Daily Quiz gameplay.
+// It never writes Daily attempts, completions, history or leaderboards.
+databaseReady.then(async () => {
+    let client;
+
+    try {
+        client = await pool.connect();
+        const result = await syncQuizBankToDatabase(client);
+        console.log(
+            'Activity quiz bank synchronised:',
+            result.sourceQuestions, 'questions;',
+            result.insertedOrUpdated, 'new/changed;',
+            result.removed, 'retired.'
+        );
+    } catch (error) {
+        console.error(
+            'Activity quiz bank synchronisation failed:',
+            error?.message || 'unknown error'
+        );
+    } finally {
+        if (client) client.release();
+    }
+}).catch(() => {
+    // The existing databaseReady handler reports setup failures.
+});
 
 
 // ─────────────────────────────────────────────
@@ -473,4 +502,3 @@ module.exports = {
     getDailyLeaderboard,
     getDailyPlayerPosition
 };
-
