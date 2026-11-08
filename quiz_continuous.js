@@ -652,18 +652,53 @@ function programmeName(question) {
     return name;
 }
 
+// Match programme names in answers without catching short number titles
+// such as "24" as part of a year or unrelated answer.
+function normaliseProgrammeText(value) {
+    return String(value || '')
+        .toLowerCase()
+        .replace(/[\u2018\u2019]/g, "'")
+        .replace(/&/g, ' and ')
+        .replace(/[^a-z0-9]+/g, ' ')
+        .trim()
+        .replace(/^the /, '');
+}
+
+function programmeAppearsInAnswers(programme, question) {
+    const title = normaliseProgrammeText(programme);
+    const answers = Array.isArray(question.answers) ? question.answers : [];
+
+    return [...answers, question.correctAnswer].some(answer => {
+        const value = normaliseProgrammeText(answer);
+        return Boolean(title && value) && (
+            value === title ||
+            (title.length >= 5 && (` ${value} `).includes(` ${title} `))
+        );
+    });
+}
+
+function isProgrammeIdentificationQuestion(question) {
+    const wording = String(question.question || '').trim();
+    return /^(?:which|what)\s+(?:(?:tv|television|bbc|itv|british|american)\s+)*(?:programme|program|show|sitcom|soap|drama|series)\b/i.test(wording) ||
+        /^(?:name|identify)\s+the\s+(?:programme|program|show|sitcom|soap|drama|series)\b/i.test(wording) ||
+        /^(?:which|what)\s+.*\b(?:programme|program|show|sitcom|soap|drama|series)\b.*\?$/i.test(wording);
+}
+
 function questionLabel(question) {
     const category = subjectName(question);
-
     if (category !== 'Television') {
         return displayName(category).toUpperCase();
     }
 
-    const programme = programmeName(question);
+    // Do not provide the answer to a programme identification question.
+    if (isProgrammeIdentificationQuestion(question)) return 'TELEVISION';
 
-    return programme
-        ? `TELEVISION • ${displayName(programme).toUpperCase()}`
-        : 'TELEVISION';
+    const programme = programmeName(question);
+    if (!programme || programmeAppearsInAnswers(programme, question)) {
+        return 'TELEVISION';
+    }
+
+    return `TELEVISION • ${displayName(programme).toUpperCase()}`;
 }
 
 // ANSWER BUTTONS
@@ -1438,5 +1473,7 @@ module.exports = {
     startContinuous,
     handleInteraction
 };
+
+
 
 
