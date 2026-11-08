@@ -1,8 +1,10 @@
- // quiz_continuous.js
+
+// quiz_continuous.js
 // PuzzlePilot - Bigggggg Quiz continuous solo play
 // Separate from the Daily Quiz: no daily completion or history changes.
 
 const { randomBytes } = require('crypto');
+
 const {
     ActionRowBuilder,
     ButtonBuilder,
@@ -102,9 +104,7 @@ function usableQuestions() {
     });
 }
 
-// ─────────────────────────────────────────────
 // SUBJECT AND TOPIC SELECTION
-// ─────────────────────────────────────────────
 
 function categoryChoices(bank) {
     const counts = new Map();
@@ -191,8 +191,6 @@ function tagChoices(bank, category) {
         );
 }
 
-// Display labels only. Never change the underlying tag:
-// the exact original tag is needed to filter questions.
 function displayName(value) {
     const original = String(value || 'All subjects').trim();
     const lower = original.toLowerCase();
@@ -224,8 +222,6 @@ function displayName(value) {
         us: 'US'
     };
 
-    // Preserve names already correctly capitalised, such as
-    // Doctor Who or BBC, and format all-lowercase older tags.
     if (original !== lower) {
         return original;
     }
@@ -233,7 +229,9 @@ function displayName(value) {
     return original.split(/(\s+)/).map(part => {
         if (/^\s+$/.test(part)) return part;
         const key = part.toLowerCase();
+
         if (acronyms[key]) return acronyms[key];
+
         return part.charAt(0).toUpperCase() + part.slice(1);
     }).join('');
 }
@@ -242,9 +240,7 @@ function resultSubjectName(s) {
     return displayName(s.tag || s.category || 'All subjects');
 }
 
-// ─────────────────────────────────────────────
 // DISCORD DISPLAY HELPERS
-// ─────────────────────────────────────────────
 
 function text(content) {
     return new TextDisplayBuilder().setContent(content);
@@ -330,9 +326,7 @@ function addPaging(c, lobby, type, page, maxPage) {
     );
 }
 
-// ─────────────────────────────────────────────
 // CHOOSE SUBJECT SCREEN
-// ─────────────────────────────────────────────
 
 function categoryScreen(lobby) {
     const c = container();
@@ -374,9 +368,7 @@ function categoryScreen(lobby) {
     return c;
 }
 
-// ─────────────────────────────────────────────
 // CHOOSE TAGGED TOPIC SCREEN
-// ─────────────────────────────────────────────
 
 function tagScreen(lobby) {
     const c = container();
@@ -426,9 +418,7 @@ function tagScreen(lobby) {
     return c;
 }
 
-// ─────────────────────────────────────────────
 // CHOOSE QUESTION COUNT
-// ─────────────────────────────────────────────
 
 function lengthScreen(lobby) {
     const count = matchingQuestions(
@@ -499,85 +489,184 @@ function lengthScreen(lobby) {
     return c;
 }
 
-// ─────────────────────────────────────────────
 // QUESTION SUBJECT LABEL
-// ─────────────────────────────────────────────
+// Do not maintain a manual list of television programmes.
+// The name comes from question metadata where available,
+// an explicit "Programme:" tag, or a consistent title tag
+// shared by nearby questions from the same quiz pack.
 
-// Programme tags can be at different positions in old
-// and new quiz packs. Use the same programme names and
-// genre conventions as the Daily Quiz display.
-const TV_PROGRAMMES = [
-    'EastEnders', 'Coronation Street', 'Emmerdale',
-    'Emmerdale Farm', 'Brookside', 'Crossroads',
-    'Eldorado', 'Family Affairs', 'Hollyoaks',
-    'Doctors', 'Neighbours', 'Home and Away',
-    'Take the High Road', 'River City', 'The Chase',
-    'The Weakest Link', 'Mastermind', 'University Challenge',
-    'Pointless', 'Who Wants to Be a Millionaire?',
-    'Catchphrase', 'Blockbusters', 'Bullseye',
-    'Family Fortunes', 'The Crystal Maze',
-    'Countdown', 'The Generation Game',
-    'Play Your Cards Right', 'Blankety Blank',
-    'The Price Is Right'
-];
-
-const TV_GROUPS = new Set([
-    'soaps', 'soap operas', 'quiz shows', 'game shows',
+const NON_PROGRAMME_TAGS = new Set([
+    'television', 'tv', 'british television', 'british tv',
+    'television history', 'british television history',
+    'british sitcom', 'british sitcoms', 'sitcom', 'sitcoms',
+    'comedy', 'comedies', 'british comedy', 'comedy television',
+    'family comedy', 'workplace comedy', 'wartime comedy',
+    'period comedy', 'historical comedy', 'sketch comedy',
+    'situation comedy', 'drama', 'dramas', 'crime drama',
+    'police procedural', 'soap', 'soaps', 'soap opera',
+    'soap operas', 'game show', 'game shows', 'quiz shows',
     'quiz and game shows', 'quiz & game shows',
-    'sitcoms', 'dramas', 'drama series', 'tv dramas',
-    'television dramas', 'comedies', 'reality shows',
-    "children's television", "children's tv"
+    'reality shows', 'documentaries', 'children television',
+    "children's television", "children's tv", 'childrens tv',
+    'bbc', 'bbc one', 'bbc two', 'bbc three', 'bbc four',
+    'itv', 'itv1', 'itv network', 'channel 4', 'channel four',
+    'channel 5', 'sky one', 'netflix', 'britbox', 'uk television',
+    'us television', 'american television', 'original series',
+    'production history', 'series history', 'tv history',
+    'television comedy', 'british comedy television'
 ]);
 
-function questionLabel(q) {
-    const category = subjectName(q);
+function normaliseTag(value) {
+    return String(value || '').trim().toLocaleLowerCase('en-GB');
+}
+
+function televisionTags(question) {
+    return Array.isArray(question.tags)
+        ? question.tags.filter(tag =>
+            typeof tag === 'string' && tag.trim()
+        )
+        : [];
+}
+
+function isGeneralTelevisionTag(value) {
+    const key = normaliseTag(value);
+
+    return !key ||
+        NON_PROGRAMME_TAGS.has(key) ||
+        /^(?:19|20)\d{2}(?:s)?$/.test(key) ||
+        /^(?:19|20)\d{2}\s*[-–]\s*(?:19|20)\d{2}$/.test(key) ||
+        /^series\s+\d+/.test(key) ||
+        /^season\s+\d+/.test(key) ||
+        /^episode\s+\d+/.test(key) ||
+        /^year\s+\d+/.test(key);
+}
+
+let televisionBank = null;
+let televisionIndexes = null;
+
+const programmeCache = new WeakMap();
+
+function ensureTelevisionIndexes() {
+    if (televisionBank !== null) return;
+
+    televisionBank = getQuestionBank();
+    televisionIndexes = new Map();
+
+    televisionBank.forEach((question, index) => {
+        if (question && typeof question.id === 'string') {
+            televisionIndexes.set(question.id, index);
+        }
+    });
+}
+
+function legacyProgrammeFromTags(question, tags) {
+    ensureTelevisionIndexes();
+
+    const position = televisionIndexes.get(question.id);
+    if (position === undefined) return null;
+
+    const candidates = tags.slice(0, 12)
+        .filter(tag => !isGeneralTelevisionTag(tag));
+
+    for (const candidate of candidates) {
+        const key = normaliseTag(candidate);
+        let shared = 0;
+        let compared = 0;
+
+        for (let offset = -4; offset <= 4; offset++) {
+            if (offset === 0) continue;
+
+            const neighbour = televisionBank[position + offset];
+
+            if (!neighbour || subjectName(neighbour) !== 'Television') {
+                continue;
+            }
+
+            compared++;
+
+            if (televisionTags(neighbour).some(tag =>
+                normaliseTag(tag) === key
+            )) {
+                shared++;
+            }
+        }
+
+        if (shared >= 2 && shared >= Math.ceil(compared * 0.35)) {
+            return candidate;
+        }
+    }
+
+    return null;
+}
+
+function programmeName(question) {
+    if (!question || typeof question !== 'object') return null;
+
+    if (programmeCache.has(question)) {
+        return programmeCache.get(question);
+    }
+
+    let name = null;
+
+    for (const field of ['programme', 'program', 'show']) {
+        const value = question[field];
+
+        if (
+            typeof value === 'string' &&
+            !isGeneralTelevisionTag(value)
+        ) {
+            name = value.trim();
+            break;
+        }
+    }
+
+    // Explicit programme tags are also supported.
+    const tags = televisionTags(question);
+
+    if (!name) {
+        for (const tag of tags) {
+            const match =
+                /^\s*(?:programme|program|show)\s*:\s*(.+)\s*$/i.exec(tag);
+
+            if (match && !isGeneralTelevisionTag(match[1])) {
+                name = match[1].trim();
+                break;
+            }
+        }
+    }
+
+    if (
+        !name &&
+        typeof question.series === 'string' &&
+        !isGeneralTelevisionTag(question.series)
+    ) {
+        name = question.series.trim();
+    }
+
+    if (!name) {
+        name = legacyProgrammeFromTags(question, tags);
+    }
+
+    programmeCache.set(question, name);
+
+    return name;
+}
+
+function questionLabel(question) {
+    const category = subjectName(question);
 
     if (category !== 'Television') {
         return displayName(category).toUpperCase();
     }
 
-    for (const field of ['programme', 'program', 'show', 'series']) {
-        if (typeof q[field] === 'string' && q[field].trim()) {
-            return `TELEVISION • ${displayName(q[field]).toUpperCase()}`;
-        }
-    }
+    const programme = programmeName(question);
 
-    const tags = Array.isArray(q.tags)
-        ? q.tags.filter(t => typeof t === 'string')
-        : [];
-
-    for (let i = 0; i < tags.length - 1; i++) {
-        if (!TV_GROUPS.has(tags[i].trim().toLowerCase())) {
-            continue;
-        }
-
-        const candidate = tags[i + 1].trim();
-
-        if (
-            candidate &&
-            !TV_GROUPS.has(candidate.toLowerCase()) &&
-            !/^(?:19|20)\d{2}(?:s)?$/.test(candidate)
-        ) {
-            return `TELEVISION • ${displayName(candidate).toUpperCase()}`;
-        }
-    }
-
-    for (const programme of TV_PROGRAMMES) {
-        if (
-            tags.some(t =>
-                t.trim().toLowerCase() === programme.toLowerCase()
-            )
-        ) {
-            return `TELEVISION • ${programme.toUpperCase()}`;
-        }
-    }
-
-    return 'TELEVISION';
+    return programme
+        ? `TELEVISION • ${displayName(programme).toUpperCase()}`
+        : 'TELEVISION';
 }
 
-// ─────────────────────────────────────────────
 // ANSWER BUTTONS
-// ─────────────────────────────────────────────
 
 function answerRows(s, revealed = false, selected = null) {
     const rows = [];
@@ -619,9 +708,7 @@ function answerRows(s, revealed = false, selected = null) {
     return rows;
 }
 
-// ─────────────────────────────────────────────
 // QUESTION AND REVEAL SCREEN
-// ─────────────────────────────────────────────
 
 function gameScreen(s, result = null, selected = null) {
     let accent = PURPLE;
@@ -634,7 +721,6 @@ function gameScreen(s, result = null, selected = null) {
     const maximum = s.limit === null ? 'ENDLESS' : s.limit;
     const number = result ? s.completed : s.completed + 1;
 
-    // Avoid showing 0/0 before the first answer.
     const progress = s.limit === null
         ? `${s.completed} completed`
         : `${s.completed}/${s.limit} completed`;
@@ -709,12 +795,11 @@ function gameScreen(s, result = null, selected = null) {
     return c;
 }
 
-// ─────────────────────────────────────────────
 // FINAL RESULTS
-// ─────────────────────────────────────────────
 
 function finishedScreen(s, stopped, idle = false) {
     const total = s.completed;
+
     const percent = total
         ? Math.round(s.score / total * 100)
         : 0;
@@ -744,7 +829,6 @@ function finishedScreen(s, stopped, idle = false) {
         )
     );
 
-    // Play Again needs no active session or database record.
     const serverId = s.playerKey.split(':')[0];
 
     c.addActionRowComponents(
@@ -760,9 +844,7 @@ function finishedScreen(s, stopped, idle = false) {
     return c;
 }
 
-// ─────────────────────────────────────────────
 // SESSION MANAGEMENT
-// ─────────────────────────────────────────────
 
 function removeSession(s) {
     if (s.questionTimer) {
@@ -782,10 +864,8 @@ function removeSession(s) {
 
 function nextQuestion(s) {
     if (!s.deck.length) {
-        // Endless reshuffles only after using the full pool.
         s.deck = shuffle(s.pool);
 
-        // Avoid an immediate repeat between rounds.
         if (
             s.deck.length > 1 &&
             s.question &&
@@ -807,9 +887,7 @@ function nextQuestion(s) {
     s.token++;
 }
 
-// ─────────────────────────────────────────────
 // QUESTION TIMER
-// ─────────────────────────────────────────────
 
 function startTimer(s) {
     const token = s.token;
@@ -828,7 +906,6 @@ function startTimer(s) {
         s.completed++;
         s.idleTimeouts++;
 
-        // Prevent unattended Endless sessions running forever.
         if (
             s.limit === null &&
             s.idleTimeouts >= 3
@@ -867,9 +944,7 @@ function startTimer(s) {
     }, QUESTION_MS);
 }
 
-// ─────────────────────────────────────────────
 // AUTOMATIC QUESTION PROGRESSION
-// ─────────────────────────────────────────────
 
 function scheduleAdvance(s, token) {
     if (sessions.get(s.id) !== s) return;
@@ -924,9 +999,7 @@ async function notice(interaction, message) {
     });
 }
 
-// ─────────────────────────────────────────────
 // OPEN CONTINUOUS QUIZ
-// ─────────────────────────────────────────────
 
 async function openSubjectSelector(interaction, updateExisting = false) {
     const key = playerKey(interaction);
@@ -988,9 +1061,7 @@ async function startContinuous(interaction) {
     return openSubjectSelector(interaction);
 }
 
-// ─────────────────────────────────────────────
 // HANDLE CONTINUOUS QUIZ INTERACTIONS
-// ─────────────────────────────────────────────
 
 async function handleInteraction(interaction) {
     const customId = interaction.customId || '';
@@ -1005,13 +1076,9 @@ async function handleInteraction(interaction) {
     }
 
     const parts = customId.split('_');
-
     const type = parts[1];
     const entryId = parts[2];
 
-    // Play Again operates on a finished quiz, so its active
-    // session has already been removed. Check the owner and
-    // server before replacing the results with a fresh lobby.
     if (type === 'again' && interaction.isButton()) {
         const expectedOwner = parts[2];
         const expectedServer = parts[3];
@@ -1052,9 +1119,7 @@ async function handleInteraction(interaction) {
         );
     }
 
-    // ─────────────────────────────────────────
     // ACTIVE GAME BUTTONS
-    // ─────────────────────────────────────────
 
     if (s) {
         if (type === 'stop') {
@@ -1085,8 +1150,6 @@ async function handleInteraction(interaction) {
             );
         }
 
-        // The first accepted click wins.
-        // Lock the question before awaiting Discord.
         s.answered = true;
 
         if (s.questionTimer) {
@@ -1096,7 +1159,6 @@ async function handleInteraction(interaction) {
         s.questionTimer = null;
 
         const chosen = s.answers[answerIndex];
-
         const correct =
             chosen === s.question.correctAnswer;
 
@@ -1131,10 +1193,6 @@ async function handleInteraction(interaction) {
 
         return;
     }
-
-    // ─────────────────────────────────────────
-    // SELECT SUBJECT
-    // ─────────────────────────────────────────
 
     if (
         lobby.stage === 'category' &&
@@ -1175,10 +1233,6 @@ async function handleInteraction(interaction) {
 
         return;
     }
-
-    // ─────────────────────────────────────────
-    // MENU PAGINATION
-    // ─────────────────────────────────────────
 
     if (
         type === 'page' &&
@@ -1224,10 +1278,6 @@ async function handleInteraction(interaction) {
         return;
     }
 
-    // ─────────────────────────────────────────
-    // SELECT TAGGED TOPIC
-    // ─────────────────────────────────────────
-
     if (
         lobby.stage === 'tag' &&
         type === 'tag' &&
@@ -1253,10 +1303,6 @@ async function handleInteraction(interaction) {
         return;
     }
 
-    // ─────────────────────────────────────────
-    // PLAY WHOLE SUBJECT
-    // ─────────────────────────────────────────
-
     if (
         lobby.stage === 'tag' &&
         type === 'alltag'
@@ -1270,10 +1316,6 @@ async function handleInteraction(interaction) {
 
         return;
     }
-
-    // ─────────────────────────────────────────
-    // CHANGE SUBJECT
-    // ─────────────────────────────────────────
 
     if (
         type === 'back' &&
@@ -1289,10 +1331,6 @@ async function handleInteraction(interaction) {
 
         return;
     }
-
-    // ─────────────────────────────────────────
-    // START CHOSEN QUIZ LENGTH
-    // ─────────────────────────────────────────
 
     if (
         lobby.stage === 'length' &&
@@ -1394,11 +1432,11 @@ async function handleInteraction(interaction) {
     );
 }
 
-// ─────────────────────────────────────────────
 // EXPORTS
-// ─────────────────────────────────────────────
 
 module.exports = {
     startContinuous,
     handleInteraction
 };
+
+
