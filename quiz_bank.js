@@ -6,7 +6,7 @@
 // This file controls which quiz packs are currently
 // connected to the live PuzzlePilot quiz.
 //
-// This version loads Packs 1-380 when deployed.
+// Packs 1-400 are connected to the live quiz bank.
 //
 
 // =====================================================
@@ -14,7 +14,7 @@
 // =====================================================
 
 const FIRST_QUIZ_PACK = 1;
-const LAST_QUIZ_PACK = 380;
+const LAST_QUIZ_PACK = 400;
 
 // =====================================================
 // LOAD QUIZ PACKS
@@ -107,6 +107,8 @@ module.exports = {
     getEligibleDailyQuestions,
     getQuestionsFromIds
 };
+
+
 
 
 
