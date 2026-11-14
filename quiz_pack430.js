@@ -1,0 +1,180 @@
+// PuzzlePilot - The Bigggggg Quiz - Pack 430
+// All Saints (Australia): Season 11 (2008), 40 episodes.
+// Follows Pack 429. First ID: tv_25118.
+// Full WordPad-ready CommonJS. All Saints remains unfinished in TV master.
+// Each row: question | correct answer | three wrong answers | difficulty | seven specific tags.
+// Episode details cross-referenced with TheTVDB, TV Guide, Screen Australia and cast records.
+'use strict';
+
+const FIRST_ID = 25118;
+const programme = 'All Saints';
+const commonTags = [
+  'Television', 'Australian Television', 'Australian Medical Drama',
+  'All Saints', 'Programme: All Saints', 'Seven Network',
+  'All Saints Western General Hospital', 'Emergency Department', 'Season 11', '2008'
+];
+
+const facts = `How many episodes were broadcast in All Saints Season 11?|40|38|41|43|Medium|Season Eleven|40 Episodes|Season Count|Broadcast History|Series Length|2008 Season|Episode Guide
+Which episode opened the 2008 season of All Saints?|Against the Wall (Part 2)|The Simple Things|Comfort Zone|Time Bomb|Easy|Against The Wall Part 2|Episode 1|Season Premiere|Siege Continuation|February 2008|Opening Episode|Broadcast Order
+Which episode concluded the eleventh season of All Saints?|Time Bomb|Spinning Out|A Safe Place|Running for Cover|Medium|Time Bomb|Episode 40|Season Finale|November 2008|Factory Explosion|Closing Episode|Broadcast Order
+Who played new nurse Amy Fielding, Frank Campion's niece?|Alix Bidstrup|Virginia Gay|Jolene Anderson|Ella Scott Lynch|Medium|Amy Fielding|Alix Bidstrup|Frank Campion Niece|Actor Identification|New Nurse|Wish List|2008 Arrival
+Which actor portrayed new Emergency doctor Adam Rossi?|Kip Gamblin|Andrew Supanz|Jack Campbell|Wil Traval|Medium|Adam Rossi|Kip Gamblin|Doctor Casting|Actor Identification|New Locum|2008 Arrival|Von Ryan
+Who portrayed Emergency nurse Claire Anderson?|Ella Scott Lynch|Alix Bidstrup|Natalie Saleeba|Sibylla Budd|Hard|Claire Anderson|Ella Scott Lynch|Actress Identification|New Agency Nurse|Emergency Staffing|2008 Arrival|A Safe Place
+Which episode resolved the hostage-taking cliffhanger from the 2007 finale?|Against the Wall (Part 2)|Little Decisions|The Hand You're Dealt|The Circle of Life|Easy|Against The Wall Part 2|Episode 1|Hostage Siege|2007 Cliffhanger|Frank Campion|Gunmen|Season Premiere
+Which part of the hospital was threatened by an explosion during Against the Wall (Part 2)?|The pathology laboratory|The maternity theatre|The hospital chapel|The ambulance garage|Medium|Against The Wall Part 2|Episode 1|Pathology Laboratory|Explosive Device|Hospital Siege|Staff Danger|Bomb Threat
+Whose leadership came under intense pressure during the hospital siege in Against the Wall (Part 2)?|Frank Campion's|Mike Vlasek's|Jack Quade's|Bart West's|Medium|Against The Wall Part 2|Episode 1|Frank Campion|Emergency Director|Hostages|Crisis Leadership|Hospital Management
+Which injured former hostage-taker was brought back to Emergency in The Simple Things?|James Byrne|Patrick Wesley|Peter Saunders|Matthew King|Medium|The Simple Things|Episode 2|James Byrne|Police Shooting|Returning Captor|Hospital Siege Aftermath|Emergency Patient
+What stubborn symptom did Charlotte and Dan struggle to treat in The Simple Things?|Persistent hiccups|Unexplained blindness|Sudden deafness|A severe nosebleed|Medium|The Simple Things|Episode 2|Charlotte Beaumont|Dan Goldman|Chronic Hiccups|Von Ryan|Unusual Case
+Which hospital error nearly caused a deaf patient's death in The Simple Things?|Mixed-up pathology results|A lost ambulance call|A faulty ventilator|A switched medication trolley|Medium|The Simple Things|Episode 2|Deaf Patient|Laboratory Mix Up|Pathology Results|Patient Safety|Clinical Error
+Who was confined in Dominic's house during Comfort Zone?|Von Ryan|Charlotte Beaumont|Gabrielle Jaeger|Erica Templeton|Easy|Comfort Zone|Episode 3|Von Ryan|Dominic|Home Confinement|Vietnam Memories|Psychological Trauma
+Who initially rejected Mike Vlasek's offer to donate a kidney in Comfort Zone?|His son Simon|His brother Frank|His father Oscar|His nephew Bart|Medium|Comfort Zone|Episode 3|Mike Vlasek|Simon McDermott|Kidney Donation|Father And Son|Family Estrangement
+What unwelcome medical news did Jack give Ann-Maree in Comfort Zone?|Her cancer had returned|She needed an appendectomy|She had contracted malaria|Her kidney transplant had failed|Medium|Comfort Zone|Episode 3|Jack Quade|Ann Maree|Cancer Recurrence|Bart West|Terminal Illness
+Which organ did Mike donate in Event Horizon?|A kidney|A liver lobe|A lung|Bone marrow|Easy|Event Horizon|Episode 4|Mike Vlasek|Kidney Transplant|Simon McDermott|Living Donor|Surgical Recovery
+Who was implicated in Mike Vlasek's past morphine dependence during Event Horizon?|His ex-wife Laura|His brother Frank|His son Simon|His colleague Jack|Hard|Event Horizon|Episode 4|Mike Vlasek|Laura|Morphine Dependence|Past Relationship|Flashbacks
+Which colleague learned about Von's traumatic experiences in Vietnam during Event Horizon?|Gabrielle Jaeger|Erica Templeton|Zoe Gallagher|Amy Fielding|Medium|Event Horizon|Episode 4|Gabrielle Jaeger|Von Ryan|Vietnam Trauma|Dominic|Disclosure
+Which overdose patient brought Steve's private history into the open in Caught in a Trap?|Jennifer Constable|Kimberly Dyer|Phoebe Speight|Paula Griffin|Medium|Caught In A Trap|Episode 5|Jennifer Constable|Steve Taylor|Drug Overdose|Dan Goldman|Charlotte Beaumont
+Why was Ann-Maree reluctant to undergo more radiotherapy in Caught in a Trap?|It reminded her of her mother's cancer treatment|She was moving to Canada|She had already received a transplant|She feared losing her hearing|Medium|Caught In A Trap|Episode 5|Ann Maree|Radiotherapy|Mother Cancer|Bart West|Treatment Decision
+What pain relief did Mike eventually request after struggling to cope following his transplant in Caught in a Trap?|Morphine|Aspirin|Ibuprofen|Paracetamol alone|Medium|Caught In A Trap|Episode 5|Mike Vlasek|Postoperative Pain|Morphine|Addiction Recovery|Kidney Donation
+Which young woman was brought in unconscious by her mother in Careful What You Wish For?|Kimberly Dyer|Ann-Maree|Rhiannon|Yasmin Hayek|Medium|Careful What You Wish For|Episode 6|Kimberly Dyer|Sandra Dyer|Unconscious Patient|Poisoning|Family Deception
+What condition did Von suspect in Sandra Dyer's treatment of her daughter in Careful What You Wish For?|Munchausen syndrome by proxy|Bipolar disorder|Agoraphobia|Alzheimer's disease|Hard|Careful What You Wish For|Episode 6|Sandra Dyer|Fabricated Illness|Poisoning|Von Ryan|Child Abuse
+What had Irish patient Conor used as a homemade cast for his broken ankle in Careful What You Wish For?|Concrete|Plaster of Paris|Wooden boards|Hardened wax|Medium|Careful What You Wish For|Episode 6|Conor|Irish Immigrant|Broken Ankle|Concrete Cast|Dan Goldman
+Where did Bart arrange to take the terminally ill Ann-Maree in Little Decisions?|Home|A clinic in Canada|A hospital in Melbourne|A seaside rehabilitation centre|Easy|Little Decisions|Episode 7|Bart West|Ann Maree|Terminal Cancer|Home Care|Final Days
+Which administrator was trying to recruit Zoe against Frank in Little Decisions?|Oliver Maroney|Julia Archer|Colin Blackburn|Joan Marden|Medium|Little Decisions|Episode 7|Oliver Maroney|Zoe Gallagher|Frank Campion|Department Politics|Leadership Dispute
+Which nurse was preparing to propose to Erica in Little Decisions?|Dan Goldman|Nelson Curtis|Bart West|Jack Quade|Medium|Little Decisions|Episode 7|Dan Goldman|Erica Templeton|Engagement Plans|Romance|Hospital Colleagues
+Which administrator encouraged complaints against Frank during Beginnings?|Oliver Maroney|Alison Newell|Julia Archer|Colin Blackburn|Medium|Beginnings|Episode 8|Oliver Maroney|Frank Campion|Zoe Gallagher|Staff Complaint|Hospital Politics
+Whose planned proposal was disrupted in Beginnings?|Dan Goldman's|Jack Quade's|Steve Taylor's|Mike Vlasek's|Easy|Beginnings|Episode 8|Dan Goldman|Erica Templeton|Interrupted Proposal|Engagement|Romantic Plans
+Who prepared to say goodbye to Ann-Maree during Beginnings?|Bart West|Frank Campion|Mike Vlasek|Steve Taylor|Medium|Beginnings|Episode 8|Bart West|Ann Maree|Terminal Cancer|Farewell|End Of Life
+Which doctor stunned the Emergency team by announcing his last day in When Tomorrow Comes?|Frank Campion|Mike Vlasek|Jack Quade|Steve Taylor|Medium|When Tomorrow Comes|Episode 9|Frank Campion|Announced Departure|Management Pressure|Hospital Leadership|Zoe Gallagher
+What hereditary neurological disease prompted a patient to make Dan consider his own health in When Tomorrow Comes?|Huntington's disease|Parkinson's disease|Multiple sclerosis|Motor neurone disease|Hard|When Tomorrow Comes|Episode 9|Dan Goldman|Huntington Disease|Hereditary Illness|Genetic Risk|Health Decision
+Whose death did Bart disclose to the Emergency staff in When Tomorrow Comes?|Ann-Maree's|Deanna Richardson's|Beth Chandler's|Kerry Lytton's|Easy|When Tomorrow Comes|Episode 9|Bart West|Ann Maree|Cancer Death|Bereavement|Staff Announcement
+Which doctor was told by Oliver Maroney that he had his job back in Out of the Fire?|Frank Campion|Vincent Hughes|Mike Vlasek|Sean Everleigh|Medium|Out Of The Fire|Episode 10|Frank Campion|Oliver Maroney|Reinstatement|Emergency Director|Hospital Administration
+What deception emerged about the adult accompanying a badly burned boy in Out of the Fire?|She was not his mother|She was his missing sister|She was a doctor using a false name|She was his former teacher|Medium|Out Of The Fire|Episode 10|Burned Child|False Mother|Emergency Admission|Child Protection|Identity Discovery
+Which patient with abdominal symptoms was treated by Charlotte in Out of the Fire?|Phoebe Speight|Kimberly Dyer|Ann-Maree|Jennifer Constable|Medium|Out Of The Fire|Episode 10|Phoebe Speight|Charlotte Beaumont|Stomach Problems|Husband Conflict|Patient Care
+What weapon had been used in the attack on a high-profile athlete in It Ain't Necessarily So?|A hammer|A cricket bat|A knife|An iron bar|Easy|It Aint Necessarily So|Episode 11|Athlete Attack|Hammer Assault|Jack Quade|Steve Taylor|Police Investigation
+Which two doctors disagreed over whether an accused teammate should be reported to police in It Ain't Necessarily So?|Jack and Steve|Bart and Frank|Mike and Vincent|Zoe and Charlotte|Medium|It Aint Necessarily So|Episode 11|Jack Quade|Steve Taylor|Teammate Accusation|Police Report|Clinical Ethics
+Whose baby did Rhiannon bring to Emergency with a fever in It Ain't Necessarily So?|Charlotte Beaumont's|Erica Templeton's|Gabrielle Jaeger's|Von Ryan's|Medium|It Aint Necessarily So|Episode 11|Rhiannon|Charlotte Beaumont|Baby Zac|Hospital Creche|Fever
+What condition had a young child whose father Theo was also assessed by Frank in The Hand You're Dealt?|Autism|Epilepsy|Cystic fibrosis|Type 1 diabetes|Medium|The Hand Youre Dealt|Episode 12|Autistic Child|Theo|Frank Campion|Family Diagnosis|Developmental Condition
+What diagnosis did Frank suggest for the unusually focused father Theo in The Hand You're Dealt?|Asperger's syndrome|Bipolar disorder|Dyslexia|Obsessive-compulsive disorder|Hard|The Hand Youre Dealt|Episode 12|Theo|Asperger Syndrome|Frank Campion|Neurodevelopmental Condition|Family Understanding
+What unusual trigger caused a young man to faint repeatedly in The Hand You're Dealt?|Laughing|Sneezing|Eating|Hearing loud music|Medium|The Hand Youre Dealt|Episode 12|Bart West|Fainting|Laughter Trigger|Diagnostic Mystery|Young Man
+What unexpected change occurred to comatose patient Scott in Stepping Up?|He awoke from his coma|He suddenly went blind|He lost his memory permanently|He developed pneumonia|Medium|Stepping Up|Episode 13|Scott|Coma Recovery|Wife Donna|Nursing Home|Unexpected Awakening
+Which sport had Dan's paraplegic brother Luke been playing when he was injured in Stepping Up?|Wheelchair basketball|Wheelchair rugby|Wheelchair tennis|Para swimming|Medium|Stepping Up|Episode 13|Luke Goldman|Dan Goldman|Wheelchair Basketball|Paraplegia|Brother Relationship
+What object had impaled a builder through the head during Charlotte's first rescue-unit call-out in Stepping Up?|A hook attached to a steel girder|A wooden fence post|A metal road sign|A fallen scaffold pole|Hard|Stepping Up|Episode 13|Charlotte Beaumont|Jack Quade|Medical Rescue Unit|Builder Impalement|Steel Girder Hook
+Which pregnant patient's schizophrenia complicated her labour in The Circle of Life?|Becky|Kimberly|Rhiannon|Donna|Medium|The Circle Of Life|Episode 14|Becky|Schizophrenia|Pregnancy|Jack Quade|Emergency Labour
+What infection did Steve discover in heroin-dependent patient Finn in The Circle of Life?|HIV|Hepatitis A|Tuberculosis|Meningitis|Medium|The Circle Of Life|Episode 14|Steve Taylor|Finn|HIV Infection|Heroin Dependence|Patient Stigma
+Which professional qualification did Charlotte achieve following a hospital simulation day in The Circle of Life?|Emergency Fellowship|Nurse practitioner certification|A surgical doctorate|A paramedic licence|Easy|The Circle Of Life|Episode 14|Charlotte Beaumont|Emergency Fellowship|Simulation Course|Frank Campion|Career Milestone
+What sport did twenty-year-old patient Angus hope to play internationally in That Window in Time?|Football|Rugby league|Cricket|Tennis|Medium|That Window In Time|Episode 15|Angus|International Football Dream|Young Patient|Bart West|Unexpected Diagnosis
+Which two doctors disagreed about allowing feuding accident patients Corinne and Richard to see each other in That Window in Time?|Steve and Jack|Bart and Frank|Mike and Vincent|Zoe and Charlotte|Medium|That Window In Time|Episode 15|Steve Taylor|Jack Quade|Corinne|Richard|Patient Consent
+What injury left Dan's normally independent brother Luke needing extra help in That Window in Time?|A broken arm|A fractured pelvis|A head injury|A dislocated knee|Medium|That Window In Time|Episode 15|Luke Goldman|Dan Goldman|Broken Arm|Paraplegia|Shared House
+Which parent suffered a heart attack when Dan and Erica visited his family in Never Tell?|Dan's father|Erica's father|Dan's grandfather|Erica's stepfather|Easy|Never Tell|Episode 16|Dan Goldman|Father Heart Attack|Family Visit|Engagement Announcement|Rhonda Goldman
+How did Dan's mother Rhonda react to news of his engagement in Never Tell?|She disapproved|She immediately planned the wedding|She gave Erica her wedding ring|She asked the couple to move in|Medium|Never Tell|Episode 16|Rhonda Goldman|Dan Goldman|Erica Templeton|Engagement Conflict|Family Tension
+Which colleague told Rhiannon about her previous relationships with women during Never Tell?|Charlotte Beaumont|Gabrielle Jaeger|Von Ryan|Erica Templeton|Medium|Never Tell|Episode 16|Charlotte Beaumont|Rhiannon|Private History|Same Sex Relationships|Personal Disclosure
+What staffing choice did hospital management force Frank to consider in Risky Business?|Keeping either Charlotte or Zoe|Choosing between Dan and Bart|Replacing Von with Erica|Moving Mike to another hospital|Medium|Risky Business|Episode 17|Frank Campion|Charlotte Beaumont|Zoe Gallagher|Budget Cuts|Staffing Ultimatum
+Whose family bereavement devastated Dan in Risky Business?|His father's death|His brother's death|His mother's death|His uncle's death|Easy|Risky Business|Episode 17|Dan Goldman|Father Death|Family Grief|Erica Templeton|Hospital Colleagues
+Which patient's attempt to impress his younger wife ended in an emergency in Risky Business?|A partially paralysed man's|An elderly marathon runner's|A deaf musician's|A retired pilot's|Medium|Risky Business|Episode 17|Partially Paralysed Patient|Young Wife|Risk Taking|Emergency Treatment|Mobility
+Who kissed Charlotte and then accused Charlotte of making an unwanted advance in Under My Skin?|Rhiannon|Gabrielle|Zoe|Amy|Easy|Under My Skin|Episode 18|Rhiannon|Charlotte Beaumont|Unwanted Advance Allegation|Workplace Complaint|Misrepresentation
+What unusual finding affected a female patient treated during Under My Skin?|A calcified foetus|A swallowed sewing needle|A transplanted kidney|A fractured hip|Hard|Under My Skin|Episode 18|Calcified Foetus|Female Patient|Charlotte Beaumont|Medical Rarity|Diagnosis
+Why did Frank say Charlotte could not receive higher pay after earning her Fellowship in Under My Skin?|Budget cuts|A pending police investigation|An expired medical licence|A cancelled qualification|Medium|Under My Skin|Episode 18|Charlotte Beaumont|Emergency Fellowship|Frank Campion|Budget Cuts|Unpaid Promotion
+Who was assigned to conduct staff interviews about Rhiannon's complaint in Blind Faith?|Zoe Gallagher|Dan Goldman|Bart West|Steve Taylor|Medium|Blind Faith|Episode 19|Zoe Gallagher|Rhiannon|Charlotte Beaumont|Workplace Investigation|Frank Campion
+What unusual objects were found embedded in a woman approaching marriage during Blind Faith?|Multiple needles|Small magnets|Pieces of glass|Surgical clips|Hard|Blind Faith|Episode 19|Needles In Organs|Bride To Be|X Ray Discovery|Hidden Trauma|Medical Mystery
+What decision was Charlotte contemplating while the complaint against her continued in Blind Faith?|Leaving All Saints|Becoming a paramedic|Moving to the maternity ward|Taking a research fellowship abroad|Medium|Blind Faith|Episode 19|Charlotte Beaumont|Rhiannon Complaint|Potential Resignation|Frank Campion|Reputation
+Who helped a pregnant Iraqi woman give birth at a disused industrial site in Torn Apart?|Von Ryan|Erica Templeton|Gabrielle Jaeger|Amy Fielding|Easy|Torn Apart|Episode 20|Von Ryan|Iraqi Family|Childbirth|Disused Tram Factory|Refugee Family
+Which hospital offered Zoe Gallagher a senior Emergency Medicine post in Torn Apart?|St Angela's|All Saints Western General|St Vincent's Melbourne|Royal North Shore Hospital|Medium|Torn Apart|Episode 20|Zoe Gallagher|St Angelas|Emergency Director|Career Move|Frank Campion
+What animal had injured a man treated in Torn Apart?|A charging pig|A kangaroo|A horse|A bull|Medium|Torn Apart|Episode 20|Charging Pig|Animal Injury|Rhiannon|Emergency Patient|Outdoor Accident
+Which woman initiated a defamation case to defend her reputation in Justice for None?|Charlotte Beaumont|Rhiannon|Gabrielle Jaeger|Erica Templeton|Medium|Justice For None|Episode 21|Charlotte Beaumont|Defamation Proceedings|Rhiannon|Workplace Dispute|Professional Reputation
+Why did Debbie attack Brad Kelberg with scissors in Justice for None?|He had been convicted of murdering and raping her daughter|He had stolen her handbag|He was refusing to treat her son|He had caused her husband's road accident|Hard|Justice For None|Episode 21|Debbie|Brad Kelberg|Scissors Attack|Daughter Murder|Revenge
+Which couple were trying to regain their newborn baby while staying with Von in Justice for None?|Nadir and Adenna|Dan and Erica|Corinne and Richard|Mike and Laura|Medium|Justice For None|Episode 21|Nadir|Adenna|Von Ryan|Newborn Baby|Asylum Seeking Family
+Who appeared as a character witness for Charlotte in Fearless and Searching?|Frank Campion|Mike Vlasek|Dan Goldman|Bart West|Medium|Fearless And Searching|Episode 22|Frank Campion|Charlotte Beaumont|Court Hearing|Character Witness|Rhiannon Complaint
+What had caused burns to recovering alcoholic Tanya Foster-Wallace in Fearless and Searching?|An attack by her sister|A kitchen accident|A workplace chemical spill|A car fire|Medium|Fearless And Searching|Episode 22|Tanya Foster Wallace|Burn Injuries|Sister Assault|Steve Taylor|Alcoholics Anonymous
+Which colleague did Erica ask to help shop for her wedding in Fearless and Searching?|Bart West|Jack Quade|Frank Campion|Mike Vlasek|Medium|Fearless And Searching|Episode 22|Erica Templeton|Bart West|Wedding Shopping|Dan Goldman|Friendship
+Whom did Charlotte rescue after an attempted suicide in Blood Lines?|Rhiannon|Zoe Gallagher|Tanya Foster-Wallace|Gabrielle Jaeger|Medium|Blood Lines|Episode 23|Charlotte Beaumont|Rhiannon|Suicide Attempt|Court Aftermath|Professional Compassion
+Which inherited nerve disorder did patient Leon Warner have in Blood Lines?|Charcot-Marie-Tooth disease|Huntington's disease|Parkinson's disease|Motor neurone disease|Hard|Blood Lines|Episode 23|Leon Warner|Charcot Marie Tooth|Leukaemia|Bart West|Neuromuscular Condition
+What new hospital role did Frank offer Charlotte in Blood Lines?|Second-in-command in Emergency|Head of Surgery|Nursing Unit Manager|Chief Executive Officer|Easy|Blood Lines|Episode 23|Charlotte Beaumont|Frank Campion|Second In Command|Emergency Department|Promotion
+What vehicle was teenager Mitch Collins riding in when it collided with a pick-up truck in Sons and Lovers?|A shopping trolley|A bicycle|A scooter|A go-kart|Medium|Sons And Lovers|Episode 24|Mitch Collins|Shopping Trolley|Pickup Collision|Mike Vlasek|Teenage Trauma
+What weapon was used in the fatal assault on Mitch Collins's father John in Sons and Lovers?|A cricket bat|A hockey stick|A hammer|A metal pipe|Medium|Sons And Lovers|Episode 24|John Collins|Cricket Bat|Fatal Assault|Mobile Video|Family Tragedy
+Which medical emergency did Charlotte initially miss in a pole dancer during Sons and Lovers?|A stroke|A pulmonary embolism|A collapsed lung|A ruptured appendix|Medium|Sons And Lovers|Episode 24|Charlotte Beaumont|Pole Dancer|Stroke|Workload Pressure|Clinical Oversight
+What medication had home-care patient Robyn Simms taken without a prescription in Horses for Courses?|Barbiturates|Insulin|Antibiotics|Antidepressants|Medium|Horses For Courses|Episode 25|Robyn Simms|Von Ryan|Barbiturates|Home Nursing|Suspected Overdose
+Who was asked to be Erica's maid of honour in Horses for Courses?|Gabrielle Jaeger|Charlotte Beaumont|Von Ryan|Amy Fielding|Medium|Horses For Courses|Episode 25|Erica Templeton|Gabrielle Jaeger|Maid Of Honour|Wedding Plans|Dan Goldman
+Which colleague did Jack reluctantly invite to Dan's bucks night in Horses for Courses?|Steve Taylor|Mike Vlasek|Frank Campion|Bart West|Medium|Horses For Courses|Episode 25|Jack Quade|Steve Taylor|Bucks Night|Wedding Preparations|Reluctant Invitation
+How was new Emergency nurse Amy Fielding related to Frank Campion in Wish List?|His niece|His daughter|His cousin|His goddaughter|Easy|Wish List|Episode 26|Amy Fielding|Frank Campion|Niece|New Nurse|Family Connection
+What had the patient whose treatment caused Steve and Mike to collapse been exposed to in Wish List?|Fertilisers|Pesticide-resistant weeds|Radioactive material|Household bleach fumes|Medium|Wish List|Episode 26|Fertiliser Exposure|Steve Taylor|Mike Vlasek|Hazardous Patient|Emergency Department
+What happened to Dan during the bucks-night outing in Wish List?|He was tied to a tree|He was locked in a lift|He was stranded at a railway station|He was handcuffed to an ambulance|Medium|Wish List|Episode 26|Dan Goldman|Bucks Night|Tied To Tree|Friends Car Crash|Wedding Disaster
+Which couple married after a serious bucks-night road accident in Best Laid Plans?|Dan and Erica|Jack and Charlotte|Mike and Laura|Frank and Zoe|Easy|Best Laid Plans|Episode 27|Dan Goldman|Erica Templeton|Wedding Ceremony|Bucks Night Accident|Marriage
+Whom did Gabrielle kiss in front of the wedding guests in Best Laid Plans?|Jack Quade|Steve Taylor|Frank Campion|Bart West|Medium|Best Laid Plans|Episode 27|Gabrielle Jaeger|Jack Quade|Wedding Reception|Public Kiss|Romantic Tension
+Which colleague insisted that Dan and Erica's wedding should still go ahead in Best Laid Plans?|Frank Campion|Von Ryan|Mike Vlasek|Charlotte Beaumont|Medium|Best Laid Plans|Episode 27|Frank Campion|Dan Goldman|Erica Templeton|Wedding Cancelled Briefly|Encouragement
+Which dangerous pastime had injured a patient whom Mike bonded with in Echoes?|Skydiving|Scuba diving|BASE jumping|Motor racing|Medium|Echoes|Episode 28|Mike Vlasek|Skydiver|Severe Injury|Personal Connection|Emergency Admission
+What awkward situation faced Jack and Gabrielle when Dan and Erica returned from their honeymoon in Echoes?|They were avoiding each other after their wedding kiss|They had secretly married|They were both applying for the same job|They were planning to move overseas together|Medium|Echoes|Episode 28|Jack Quade|Gabrielle Jaeger|Wedding Kiss|Awkward Reunion|Honeymoon Return
+Which nurse helped reunite a young man with leukaemia and relatives he had never met in Echoes?|Von Ryan|Erica Templeton|Gabrielle Jaeger|Amy Fielding|Medium|Echoes|Episode 28|Von Ryan|Leukaemia Patient|Estranged Family|Reconciliation|Patient Advocacy
+Where did Frank and Mike treat dangerous prisoner Matthew King in Solitary Confinement?|A high-security prison|A police station|A psychiatric clinic|A courthouse|Easy|Solitary Confinement|Episode 29|Matthew King|Frank Campion|Mike Vlasek|High Security Prison|Medical Callout
+What internal medical problem did Frank and Mike diagnose in prisoner Matthew King in Solitary Confinement?|Internal bleeding|A brain tumour|Kidney stones|A heart infection|Medium|Solitary Confinement|Episode 29|Matthew King|Internal Bleeding|Prisoner Patient|Hospital Transfer|Emergency Threat
+Where did Mike meet Juliet again during Solitary Confinement?|At his regular blues club|At a medical conference|At a hospital charity ball|At a wedding reception|Medium|Solitary Confinement|Episode 29|Mike Vlasek|Juliet|Blues Club|Romantic Reunion|Music Venue
+Which two doctors clashed over a head-injury diagnosis in Better Safe Than Sorry?|Charlotte and Mike|Frank and Bart|Jack and Steve|Zoe and Vincent|Medium|Better Safe Than Sorry|Episode 30|Charlotte Beaumont|Mike Vlasek|Head Trauma|Treatment Dispute|Single Mother
+Which colleague did Gabrielle ask whether they could revive their relationship in Better Safe Than Sorry?|Steve Taylor|Jack Quade|Frank Campion|Bart West|Medium|Better Safe Than Sorry|Episode 30|Gabrielle Jaeger|Steve Taylor|Relationship Discussion|Emotional Denial|Emergency Colleagues
+Which pair were deliberately assigned to work together despite their disagreements in Better Safe Than Sorry?|Bart and Amy|Dan and Von|Frank and Mike|Jack and Claire|Medium|Better Safe Than Sorry|Episode 30|Bart West|Amy Fielding|Frank Campion|Staff Pairing|Workplace Tension
+Which intensive course was Erica accepted on in Not What You'd Expect?|A six-week Diploma in Emergency Medicine|A year-long surgery fellowship|A two-week midwifery course|A six-month radiography course|Medium|Not What Youd Expect|Episode 31|Erica Templeton|Six Week Course|Emergency Medicine Diploma|Career Training|Marriage
+What toxic substance did a former pharmacist living rough try to treat himself with in Not What You'd Expect?|Mercury|Arsenic|Cyanide|Lead|Hard|Not What Youd Expect|Episode 31|Former Pharmacist|Mercury Poisoning|Jack Quade|Dan Goldman|Self Medication
+What rare overgrowth condition affected patient Paula Griffin in Not What You'd Expect?|Proteus syndrome|Marfan syndrome|Turner syndrome|Ehlers-Danlos syndrome|Hard|Not What Youd Expect|Episode 31|Paula Griffin|Proteus Syndrome|Amy Fielding|Jack Quade|Embolism Risk
+What drastic operation did Jack consider necessary at a roadside accident in Training Wheels?|Amputation of both legs|An emergency caesarean|Removal of a damaged lung|A kidney transplant|Medium|Training Wheels|Episode 32|Jack Quade|Roadside Rescue|Bilateral Amputation|Trapped Driver|Emergency Surgery
+What worrying discovery did Dan make about Erica after she left for her medical course in Training Wheels?|She had never arrived at the college|She had withdrawn from nursing|She had boarded a flight to Canada|She had been admitted to another hospital|Easy|Training Wheels|Episode 32|Dan Goldman|Erica Templeton|Missing Wife|College No Show|Disappearance
+What caused Paula Griffin's death after Amy visited her at home in Training Wheels?|An embolism|A heart attack|An asthma attack|A stroke|Medium|Training Wheels|Episode 32|Paula Griffin|Amy Fielding|Fatal Embolism|Home Visit|Proteus Syndrome
+Which colleague did Dan report missing to police in When the Party's Over?|Erica Templeton|Gabrielle Jaeger|Charlotte Beaumont|Amy Fielding|Easy|When The Partys Over|Episode 33|Dan Goldman|Erica Templeton|Missing Person Report|Police Station|Disappearance
+What kind of gathering preceded the arrival of three ill young adults in When the Party's Over?|A house party|A charity concert|A sporting awards dinner|A wedding ceremony|Medium|When The Partys Over|Episode 33|House Party|Three Young Adults|Unknown Symptoms|Emergency Admission|Diagnostic Puzzle
+What professional penalty did Jack risk after his patient Carey's death in When the Party's Over?|Loss of medical registration|Suspension of his driving licence|Loss of nursing registration|A fine for speeding|Medium|When The Partys Over|Episode 33|Jack Quade|Carey Patient Death|Medical Board|Possible Deregistration|Hospital Inquiry
+What industry had exposed a patient to harmful chemicals in Out on a Limb?|Plastics manufacturing|Textile dyeing|Commercial farming|Glassmaking|Easy|Out On A Limb|Episode 34|Plastic Factory|Chemical Exposure|Steve Taylor|Gabrielle Jaeger|Industrial Illness
+Which review were Jack and Frank attending when the widow of Jack's deceased patient arrived in Out on a Limb?|A morbidity and mortality meeting|A hospital budget hearing|A surgical board examination|A nursing graduation|Medium|Out On A Limb|Episode 34|Jack Quade|Frank Campion|Morbidity Mortality Review|Patient Death|Hospital Accountability
+Who challenged Mike to venture beyond his usual comfort zone in Out on a Limb?|Juliet|Gabrielle|Amy|Zoe|Medium|Out On A Limb|Episode 34|Mike Vlasek|Juliet|Romantic Relationship|Personal Challenge|Blues Club
+What crime brought badly wounded shopkeeper Rohan into Emergency in Running for Cover?|An armed robbery|A house burglary|A carjacking|An arson attack|Easy|Running For Cover|Episode 35|Rohan|Shopkeeper|Armed Robbery|Gunshot Wounds|Mass Casualty
+What complication did another robbery victim called Sean experience in Running for Cover?|Temporary amnesia|Sudden blindness|Loss of speech|Permanent paralysis|Medium|Running For Cover|Episode 35|Sean Robbery Victim|Memory Loss|Armed Robbery|Traumatic Event|Witness Recall
+What condition had Gail Henderson's adult son Rhys acquired before developing cellulitis in Running for Cover?|A brain injury|Diabetes|Paraplegia|Hearing loss|Medium|Running For Cover|Episode 35|Gail Henderson|Rhys|Acquired Brain Injury|Cellulitis|Carer Stress
+Who accompanied Dan on his unsuccessful search for Erica in Reality Check?|Bart West|Frank Campion|Jack Quade|Mike Vlasek|Medium|Reality Check|Episode 36|Dan Goldman|Bart West|Missing Erica|Search Effort|Hospital Friendship
+Which new doctor clashed with Steve in Reality Check?|Adam Rossi|Bart West|Tony Clark|Mike Vlasek|Medium|Reality Check|Episode 36|Adam Rossi|Steve Taylor|New Doctor|Medical Dispute|Staff Arrival
+Whose undisclosed past worried Mike during Reality Check?|Juliet's|Gabrielle's|Amy's|Charlotte's|Medium|Reality Check|Episode 36|Mike Vlasek|Juliet|Relationship Secret|Trust|Personal History
+Which long-serving nurse was already acquainted with new doctor Adam Rossi in Secrets and Lies?|Von Ryan|Gabrielle Jaeger|Amy Fielding|Erica Templeton|Easy|Secrets And Lies|Episode 37|Von Ryan|Adam Rossi|Shared Past|New Doctor|Frank Campion
+What object was used to assault a man treated by new agency nurse Claire in Secrets and Lies?|A baseball bat|A hockey stick|A spanner|A cricket ball|Medium|Secrets And Lies|Episode 37|Claire Anderson|Baseball Bat Assault|Jealous Wife|Agency Nurse|Trauma Patient
+What puzzling result contradicted the apparent alcohol poisoning diagnosed in Adam's young patient in Secrets and Lies?|No alcohol or drugs were found in his blood|His blood pressure was normal|He had no detectable infection|His glucose was high|Medium|Secrets And Lies|Episode 37|Adam Rossi|False Alcohol Poisoning|Negative Toxicology|Young Patient|Diagnosis
+What fatal inherited sleep disorder did Frank identify in Ken during A Safe Place?|Fatal familial insomnia|Narcolepsy|Sleep apnoea|REM sleep behaviour disorder|Hard|A Safe Place|Episode 38|Ken|Fatal Familial Insomnia|Frank Campion|Bart West|Genetic Disease
+What decision did Jack announce to Frank in A Safe Place?|He was resigning|He was applying for maternity leave|He was transferring to radiology|He was becoming a paramedic|Easy|A Safe Place|Episode 38|Jack Quade|Frank Campion|Resignation|Medical Career|Staff Departure
+Which new nurse had her first full working day in Emergency in A Safe Place?|Claire Anderson|Amy Fielding|Erica Templeton|Jessica Singleton|Medium|A Safe Place|Episode 38|Claire Anderson|Agency Nurse|First Full Shift|Gabrielle Jaeger|Staffing
+Which nurse's body was discovered by police in Spinning Out?|Erica Templeton's|Gabrielle Jaeger's|Von Ryan's|Amy Fielding's|Easy|Spinning Out|Episode 39|Erica Templeton|Police Discovery|Murder|Dan Goldman|Season Tragedy
+Where did Dan decide to go after receiving news of Erica's death in Spinning Out?|His family farm|A hospital in Canada|A medical conference in London|A flat in Melbourne|Medium|Spinning Out|Episode 39|Dan Goldman|Family Farm|Bereavement|Leave Of Absence|Erica Templeton
+Who was completing his final shift at All Saints in Spinning Out?|Jack Quade|Bart West|Frank Campion|Mike Vlasek|Medium|Spinning Out|Episode 39|Jack Quade|Final Shift|Hospital Departure|Doctor Exit|Adam Rossi
+What dangerous object became embedded in Angie Clayton's neck in the Season 11 finale Time Bomb?|A piece of explosive material|A shard of ordinary glass|A sewing needle|A splinter of wood|Easy|Time Bomb|Episode 40|Angie Clayton|Explosive Fragment|Car Parts Factory|Neck Injury|Bomb Hazard
+Where did Frank and Mike decide to operate on the patient with an explosive fragment in Time Bomb?|The morgue|The emergency waiting room|An ambulance|The maternity ward|Medium|Time Bomb|Episode 40|Frank Campion|Mike Vlasek|Morgue Surgery|Explosive Risk|Unusual Operation
+What condition threatened patient Morgan after a camping trip in Time Bomb?|Severe hypothermia|Acute asthma|Heatstroke|Malaria|Medium|Time Bomb|Episode 40|Morgan|Camping Accident|Hypothermia|Cardiac Risk|Brain Injury Risk
+Who returned to Emergency hoping to reclaim her job in the 2008 finale Time Bomb?|Amy Fielding|Erica Templeton|Deanna Richardson|Zoe Gallagher|Medium|Time Bomb|Episode 40|Amy Fielding|Frank Campion|Job Return|Season Finale|Nursing Staff`;
+
+let sequence = 0;
+const questions = facts.trim().split('\n').map(line => {
+  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+  const fields = line.trim().split('|').map(s => s.trim());
+  if (fields.length !== 13)
+    throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
+  const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = fields;
+  if (!question || [correctAnswer, wrong1, wrong2, wrong3, ...specificTags].some(v => !v))
+    throw new Error(`Empty field in ${id}`);
+  if (!['Easy', 'Medium', 'Hard'].includes(difficulty) || specificTags.length !== 7)
+    throw new Error(`Invalid difficulty or question-specific tags in ${id}`);
+  if (new Set([correctAnswer, wrong1, wrong2, wrong3].map(s => s.toLowerCase())).size !== 4)
+    throw new Error(`Repeated answer option in ${id}`);
+  const answers = [wrong1, wrong2, wrong3];
+  answers.splice(sequence % 4, 0, correctAnswer);
+  const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
+    .map(tag => [tag.toLowerCase(), tag])).values()];
+  sequence++;
+  return {
+    id, category: 'Television', programme, question, answers,
+    correctAnswer, difficulty, tags, dailyEligible: true
+  };
+});
+
+if (
+  !questions.length || questions[0].id !== 'tv_25118' ||
+  new Set(questions.map(q => q.id)).size !== questions.length ||
+  new Set(questions.map(q => q.question.toLowerCase())).size !== questions.length ||
+  questions.some(q =>
+    q.answers.length !== 4 || !q.answers.includes(q.correctAnswer) ||
+    q.tags.length < 14 || !q.tags.includes('Programme: All Saints') ||
+    q.dailyEligible !== true
+  )
+) throw new Error('Pack 430 exported question validation failed');
+
+module.exports = questions;

@@ -1,0 +1,183 @@
+// PuzzlePilot - The Bigggggg Quiz - Pack 427
+// All Saints (Australia): Season 8 (2005), 41 episodes.
+// Follows Pack 426. First ID: tv_24731.
+// WordPad-ready CommonJS. All Saints remains unfinished in the TV tracker.
+// Each row: question | correct answer | three distractors | difficulty | seven specific tags.
+// Episode stories checked against contemporary-season episode guides.
+'use strict';
+
+const FIRST_ID = 24731;
+const programme = 'All Saints';
+const commonTags = [
+  'Television', 'Australian Television', 'Australian Medical Drama',
+  'All Saints', 'Programme: All Saints', 'Seven Network',
+  'All Saints Western General Hospital', 'Emergency Department', 'Season 8', '2005'
+];
+
+const facts = `How many episodes are in the eighth season of All Saints?|41|40|39|43|Medium|Season Eight|41 Episodes|Season Length|Broadcast Count|Episode Guide|2005 Television|Australian Drama
+What was the opening episode of All Saints Season 8?|Happy New Year|Outside Looking In|Potential|Echoes|Easy|Happy New Year|Episode 1|Season Premiere|February 2005|Episode Title|Broadcast Order|Opening Episode
+Which episode brought the 2005 season of All Saints to an end?|In Sickness and in Health|Season of Change|Requiem|Time and Tide|Easy|In Sickness And In Health|Episode 41|Season Finale|November 2005|Episode Title|Broadcast Order|Final Episode
+In which month did All Saints Season 8 premiere in Australia?|February|January|March|May|Easy|February 2005|Season Premiere|Australian Airing|Television Schedule|Opening Date|Seven Network|2005 Broadcast
+Which episode marked the 300th episode of All Saints overall?|Potential|Lost and Found|Letting Go|Time Bomb|Medium|Potential|Episode 6|300th Episode|Series Milestone|March 2005|Anniversary Episode|Episode Number
+Which leading actress left All Saints during the 2005 season after playing Terri Sullivan?|Georgie Parker|Judith McGrath|Tammy MacIntosh|Natalie Saleeba|Easy|Georgie Parker|Terri Sullivan|Cast Departure|Lead Actress|Episode 19|2005 Exit|Actor Identification
+Who portrayed Beth Chandler in All Saints Season 8?|Susan Prior|Sibylla Budd|Anne Looby|Rachel Gordon|Hard|Susan Prior|Beth Chandler|Stalker Storyline|Actress Identification|Vincent Hughes|Recurring Cast|2005 Episodes
+Who portrayed paediatrician Doug 'Spence' Spencer?|Peter Phelps|John Howard|Grant Bowler|Conrad Coleby|Hard|Peter Phelps|Doug Spencer|Spence|Paediatrician|Actor Identification|Charlotte Beaumont|Romantic Storyline
+Which new nurse temporarily replaced Nelson before his wedding?|Deanna Richardson|Jessica Singleton|Sasha Fernandez|Regina Butcher|Medium|Season Of Change|Episode 40|Deanna Richardson|Nelson Curtis|Temporary Replacement|Nursing Management|Wedding Leave
+Which actress portrayed Deanna Richardson in the final two 2005 episodes?|Sibylla Budd|Susan Prior|Katrina Campbell|Anne Tenney|Hard|Sibylla Budd|Deanna Richardson|Actress Identification|Episode 40|Episode 41|Nursing Staff|Season Finale
+What type of venue suffered a balcony collapse in Happy New Year?|A nightclub|A shopping centre|A stadium|A hotel ballroom|Easy|Happy New Year|Episode 1|Nightclub Balcony|New Year Event|Structure Collapse|Emergency Rescue|Charity Function
+Which Emergency nurse was trapped with a young woman after the balcony collapse in Happy New Year?|Dan Goldman|Nelson Curtis|Jessica Singleton|Von Ryan|Medium|Happy New Year|Episode 1|Dan Goldman|Trapped Nurse|Balcony Collapse|Rescue Attempt|Young Woman
+Which doctor was horrified when a woman he had met that evening was injured in Happy New Year?|Vincent Hughes|Frank Campion|Jack Quade|Luke Forlano|Medium|Happy New Year|Episode 1|Vincent Hughes|Injured Woman|Nightclub|Personal Regret|Balcony Disaster
+Which doctor discovered his former wife among the patients in Outside Looking In?|Frank Campion|Vincent Hughes|Jack Quade|Mitch Stevens|Easy|Outside Looking In|Episode 2|Frank Campion|Former Wife|Emergency Department|Family Revelation|Personal Crisis
+What previously unknown family fact about Frank was revealed in Outside Looking In?|He had a daughter|He had an identical twin|He had three sons|He was an only child|Medium|Outside Looking In|Episode 2|Frank Campion|Kathleen Campion|Daughter|Family Secret|Parenthood
+What potentially permanent injury was Mac confronting in Outside Looking In?|Paralysis requiring a wheelchair|Blindness|Deafness|Loss of an arm|Medium|Outside Looking In|Episode 2|Nigel MacPherson|Mac|Possible Paralysis|Wheelchair|Rehabilitation
+Which paramedic tried to help a child named Lily after finding her mother injured in Sins of the Mothers?|Cate McMasters|Sasha Fernandez|Stuart|Mac MacPherson|Medium|Sins Of The Mothers|Episode 3|Cate McMasters|Lily|Injured Mother|Child Protection|Brothel Patient
+Which colleague helped Cate seek child-protection involvement for Lily in Sins of the Mothers?|Nelson Curtis|Vincent Hughes|Jack Quade|Dan Goldman|Medium|Sins Of The Mothers|Episode 3|Nelson Curtis|Cate McMasters|Lily|Child Services|Safeguarding
+What family conflict did Frank revisit in Sins of the Mothers?|His relationship with his daughter Kathleen and her mother|The custody of Terri's stepdaughter|A feud with his twin brother|His father's refusal of treatment|Medium|Sins Of The Mothers|Episode 3|Frank Campion|Kathleen Campion|Alison Newell|Co Parenting|Family Reconciliation
+What unusual clue puzzled staff about the blood-covered man in Begging for It?|He had no visible wounds|He had a broken leg|He wore a police uniform|He had undergone surgery|Medium|Begging For It|Episode 4|Blood Covered Patient|Lyall|No Visible Wounds|Emergency Waiting Room|Medical Mystery
+Which nurse suspected that Lyall had harmed someone in Begging for It?|Dan Goldman|Von Ryan|Jessica Singleton|Nelson Curtis|Medium|Begging For It|Episode 4|Dan Goldman|Lyall|Police Report|Patient Muttering|Suspected Crime
+Who did Jack visit while trying to understand his childhood in Begging for It?|His father Ned|His uncle Frank|His brother Stuart|His grandfather Oscar|Medium|Begging For It|Episode 4|Jack Quade|Ned Quade|Father Visit|Childhood Memories|Family History
+Where did Nelson discover a six-year-old girl in danger during Lost and Found?|Locked in a hot car outside a pub|Alone on a railway platform|Trapped in a house fire|Lost in hospital corridors|Easy|Lost And Found|Episode 5|Nelson Curtis|Six Year Old Girl|Hot Car|Pub Car Park|Heat Emergency
+What emergency procedure did Vincent perform at a building site in Lost and Found?|An on-site leg amputation|An emergency caesarean|Open-heart surgery|A kidney transplant|Medium|Lost And Found|Episode 5|Vincent Hughes|Construction Site|Collapsed Retaining Wall|Crushed Leg|Field Surgery
+Which patient’s serious infection did Charlotte diagnose in Lost and Found?|A disoriented woman with meningitis|A man with malaria|A baby with measles|A cyclist with hepatitis|Hard|Lost And Found|Episode 5|Charlotte Beaumont|Meningitis|Disoriented Woman|Infectious Disease|Emergency Diagnosis
+What injured Charlotte in the milestone episode Potential?|A hit-and-run car|A falling balcony|An ambulance collision|A collapsing wall|Easy|Potential|Episode 6|Charlotte Beaumont|Hit And Run|Pregnancy Threat|Road Trauma|300th Episode
+Which woman did Vincent suspect was responsible for Charlotte's accident in Potential?|Beth Chandler|Jessica Singleton|Alison Newell|Regina Butcher|Hard|Potential|Episode 6|Vincent Hughes|Beth Chandler|Charlotte Beaumont|Suspected Driver|Hit And Run
+What mental health condition did Jessica's difficult patient have in Potential?|Bipolar disorder|Agoraphobia|Dementia|Anorexia nervosa|Medium|Potential|Episode 6|Jessica Singleton|Bipolar Patient|Medication Refusal|Road Accidents|Psychiatric Care
+What personal tragedy was Charlotte coping with in Letting Go?|A miscarriage|The death of a sister|A divorce hearing|The loss of a parent|Easy|Letting Go|Episode 7|Charlotte Beaumont|Miscarriage|Jack Quade|Pregnancy Loss|Grief
+Which colleague shared her own experience of losing a baby to comfort Charlotte in Letting Go?|Terri Sullivan|Von Ryan|Cate McMasters|Jessica Singleton|Hard|Letting Go|Episode 7|Terri Sullivan|Charlotte Beaumont|Mitch Stevens|Baby Loss|Grief Support
+What life-threatening condition affected the bereaved man treated by Jack in Letting Go?|Septic shock|Heart failure|Meningitis|Acute asthma|Medium|Letting Go|Episode 7|Jack Quade|Twin Brother Death|Self Inflicted Wounds|Septic Shock|Medical Ethics
+Which vehicles collided head-on in Fractured?|A motorcycle and a semi-trailer|Two buses|A car and a train|An ambulance and a lorry|Medium|Fractured|Episode 8|Motorcycle Crash|Semi Trailer|Possible Suicide Attempt|Road Accident|Family Trauma
+Which nurse overlooked a teenage patient's crush on her in Fractured?|Jessica Singleton|Von Ryan|Cate McMasters|Regina Butcher|Medium|Fractured|Episode 8|Jessica Singleton|Teenage Patient|Schoolboy Crush|Periodic Paralysis|Clinical Relationship
+What recurring symptom troubled the schoolboy being treated in Fractured?|His limbs temporarily failed him|He lost his voice|His hearing disappeared|He suffered nosebleeds|Medium|Fractured|Episode 8|Teenage Schoolboy|Weak Limbs|Ross Weston|Periodic Paralysis|Diagnostic Puzzle
+Which woman returned to Emergency with severe abdominal pain in Funny Games?|Beth Chandler|Regina Butcher|Kerry Lytton|Alison Newell|Medium|Funny Games|Episode 9|Beth Chandler|Vincent Hughes|Abdominal Pain|Charlotte Beaumont|Recurring Patient
+Why did Vincent initially refuse to operate on Beth in Funny Games?|He believed her symptoms were psychosomatic|He suspected food poisoning|She was allergic to anaesthetic|She had already had surgery|Medium|Funny Games|Episode 9|Vincent Hughes|Beth Chandler|Psychosomatic Pain|Exploratory Surgery|Clinical Conflict
+What application did Von have turned down in Funny Games?|A home loan|A transfer to maternity|An overseas work visa|A nursing scholarship|Hard|Funny Games|Episode 9|Von Ryan|Bank Meeting|Housing Loan|Personal Finances|Home Ownership
+Which hospital workers went on strike during Boys Will Be Boys?|Radiographers|Pharmacists|Ambulance drivers|Hospital cleaners|Easy|Boys Will Be Boys|Episode 10|Radiographers Strike|Industrial Action|Pay Dispute|Emergency Disruption|Hospital Staff
+How was a man burned at a bucks-night celebration in Boys Will Be Boys?|During a fire-walking stunt|In a kitchen explosion|By a fireworks display|In a car fire|Medium|Boys Will Be Boys|Episode 10|Cate McMasters|Sasha Fernandez|Firewalking|Burn Injury|Bucks Night
+Which surgeon arrived with a broken finger during the radiographers' strike in Boys Will Be Boys?|Oscar Wu|Frank Campion|Jack Quade|Mitch Stevens|Hard|Boys Will Be Boys|Episode 10|Oscar Wu|Broken Finger|Vincent Hughes|Radiology Strike|Surgical Specialist
+What exploded near a supermarket in Time Bomb?|A car|A gas main|A delivery van|A rubbish bin|Easy|Time Bomb|Episode 11|Supermarket Explosion|Car Bomb|Mass Casualties|Ambulance Callout|Community Panic
+Which paramedic began questioning whether she was suited to the job in Time Bomb?|Sasha Fernandez|Cate McMasters|Mac MacPherson|Rebecca Green|Medium|Time Bomb|Episode 11|Sasha Fernandez|Paramedic Doubts|Explosion Scene|Trauma Response|Career Uncertainty
+What was Des Callahan's controversial book about in Time Bomb?|Terrorism|Medical negligence|Crime fiction|Hospital administration|Hard|Time Bomb|Episode 11|Des Callahan|Controversial Book|Terrorism|Suspected Target|Public Fear
+Which nurse called Charlotte for help when Jack could not diagnose a collapsed patient in While You Were Sleeping?|Dan Goldman|Nelson Curtis|Jessica Singleton|Von Ryan|Medium|While You Were Sleeping|Episode 12|Dan Goldman|Jack Quade|Charlotte Beaumont|Night Shift|Diagnostic Dispute
+What public venue interrupted Charlotte and Vincent's evening together in While You Were Sleeping?|A nightclub|A theatre|A restaurant kitchen|A cinema|Medium|While You Were Sleeping|Episode 12|Charlotte Beaumont|Vincent Hughes|Nightclub Incident|Evening Out|Former Partners
+Which long-serving ward clerk departed in While You Were Sleeping?|Regina Butcher|Matt Horner|Tony Hurst|Jodi Horner|Easy|While You Were Sleeping|Episode 12|Regina Butcher|Staff Departure|Dying Friend|Final Farewell|Hospital Clerk
+Which girl from Mitch's family was brought back to hospital after a car accident in Echoes?|Lucy Stevens|Kerry Lytton|Kathleen Campion|Lily|Easy|Echoes|Episode 13|Lucy Stevens|Mitch Stevens|Terri Sullivan|Return Visit|Car Accident
+Which older relative accompanied Lucy Stevens to Emergency in Echoes?|Her grandmother Victoria|Her aunt Charlotte|Her sister Rose|Her foster mother Alison|Hard|Echoes|Episode 13|Victoria Carlton|Lucy Stevens|Grandmother|Road Crash|Mitch Stevens Family
+What request did Victoria make of Terri in Echoes?|Care for Lucy if Victoria could not|Take Lucy to a boarding school|Find Lucy's biological father|Arrange a new home for Rose|Medium|Echoes|Episode 13|Victoria Carlton|Terri Sullivan|Lucy Stevens|Guardianship Request|Family Responsibility
+Where did paramedics Cate and Sasha encounter a violent siege in Innocent Until...?|A brothel|A shopping mall|A boarding school|A police station|Medium|Innocent Until|Episode 14|Cate McMasters|Sasha Fernandez|Brothel Siege|Knife Attack|Police Shooting
+Which doctor was arrested after allegations made by Beth Chandler in Innocent Until...?|Vincent Hughes|Jack Quade|Frank Campion|Oscar Wu|Easy|Innocent Until|Episode 14|Vincent Hughes|Beth Chandler|Assault Accusation|Police Arrest|Stalking Plot
+What symbolic step did Terri take after a day out with Jack and Lucy in Innocent Until...?|She removed her wedding and engagement rings|She handed in her nursing licence|She sold her wedding dress|She changed her surname|Medium|Innocent Until|Episode 14|Terri Sullivan|Jack Quade|Lucy Stevens|Wedding Rings|Moving On
+Where had teenage patient Erin fallen in False Convictions?|From a railway bridge|From a hospital roof|Down a mine shaft|From a fairground ride|Medium|False Convictions|Episode 15|Erin|Railway Bridge|Cate McMasters|Sasha Fernandez|Trauma Rescue
+What legal accusations did Vincent face in False Convictions?|Assault and stalking|Fraud and embezzlement|Manslaughter and theft|Bribery and perjury|Medium|False Convictions|Episode 15|Vincent Hughes|Beth Chandler|Court Appearance|Assault Allegation|Stalking Accusation
+What cancer diagnosis did Terri discover Victoria had in False Convictions?|Pancreatic cancer|Lung cancer|Breast cancer|Skin cancer|Medium|False Convictions|Episode 15|Terri Sullivan|Victoria Carlton|Pancreatic Cancer|Lucy Stevens|Family Prognosis
+Which man did paramedics Cate and Stuart find seriously injured by his wife in Maternal Instinct?|A husband whose penis had been severed|A man poisoned with arsenic|A man with a gunshot wound|A husband trapped in a cellar|Hard|Maternal Instinct|Episode 16|Cate McMasters|Stuart|Severed Organ|Domestic Incident|Emergency Surgery
+Who was Von's niece who became close to Nelson in Maternal Instinct?|Kerry Lytton|Kathleen Campion|Jessica Singleton|Grace Connelly|Easy|Maternal Instinct|Episode 16|Von Ryan|Kerry Lytton|Nelson Curtis|Family Relationship|Developing Romance
+Which type of patient reminded Charlotte of her lost pregnancy in Maternal Instinct?|A six-month-old baby|A pregnant teenager|A newborn set of twins|A seven-year-old girl|Hard|Maternal Instinct|Episode 16|Charlotte Beaumont|Six Month Old Baby|Miscarriage Memories|Mother Barbara|Medical Mystery
+What machinery accident affected a young father called Nathan in Double Lives?|He was trapped in industrial machinery|He fell into a grain silo|He was electrocuted by a crane|He was buried under a conveyor belt|Medium|Double Lives|Episode 17|Nathan|Workplace Machinery|Cate McMasters|Stuart|Industrial Rescue
+What unusual hobby had injured elderly patient Bill in Double Lives?|Parachuting|Rock climbing|Scuba diving|Mountain cycling|Medium|Double Lives|Episode 17|Bill|72 Year Old Patient|Parachute Accident|Jessica Singleton|Charlotte Beaumont
+Which workplace did Kerry hope to join in Double Lives?|The hospital canteen|The ambulance service|The medical library|The pathology laboratory|Medium|Double Lives|Episode 17|Kerry Lytton|Hospital Canteen|Job Application|Nelson Curtis|New Employment
+Which emergency-service job did Cate give up to become a full-time Emergency nurse in New Beginnings?|Paramedic|Firefighter|Police officer|Radiographer|Easy|New Beginnings|Episode 18|Cate McMasters|Nursing Career|Ambulance Service|Job Change|New Department
+What condition was troubling the 14-year-old girl Terri cared for in New Beginnings?|Stress-related migraines|Epileptic seizures|Severe asthma|Insulin shock|Medium|New Beginnings|Episode 18|Terri Sullivan|Teenage Girl|Stress Migraine|Charlotte Beaumont|Family Consequences
+Which neurological syndrome did Cate recognise in a rodeo star in New Beginnings?|Brown-Sequard syndrome|Guillain-Barre syndrome|Tourette syndrome|Marfan syndrome|Hard|New Beginnings|Episode 18|Cate McMasters|Rodeo Star|Brown Sequard Syndrome|Neurological Diagnosis|Emergency Nurse
+What accident brought a family into Emergency during Terri's final shift in Satisfaction?|A hot-air balloon crash|A ferry collision|A helicopter crash|A train derailment|Medium|Satisfaction|Episode 19|Terri Sullivan|Hot Air Balloon|Family Accident|Bushland Rescue|Final Shift
+Which character was struggling with survivor's guilt after the accident in Satisfaction?|A young girl|A retired surgeon|An ambulance officer|A teenage boy|Medium|Satisfaction|Episode 19|Terri Sullivan|Young Girl|Survivor Guilt|Grieving Family|Patient Counselling
+Who did Terri leave her responsibilities with when she departed in Satisfaction?|Nelson Curtis and the Emergency team|Luke Forlano and Bron Craig|Regina Butcher and Matt Horner|Mac MacPherson and Cate McMasters|Medium|Satisfaction|Episode 19|Terri Sullivan|Nelson Curtis|Leadership Handover|Farewell Shift|Nursing Management
+What confession did Jessica make to Stuart in In the Name of Love?|She was still a virgin|She had secretly married|She wanted to leave nursing|She had accepted an overseas job|Medium|In The Name Of Love|Episode 20|Jessica Singleton|Stuart|Relationship Confession|Personal Boundaries|Romantic Breakup
+Who was the target of a car bomb linked to Beth Chandler in In the Name of Love?|Jessica Singleton|Von Ryan|Alison Newell|Regina Butcher|Medium|In The Name Of Love|Episode 20|Beth Chandler|Jessica Singleton|Car Bomb|Vincent Hughes|Threats To Colleagues
+How did Leo injure himself in front of former girlfriend Claudia in In the Name of Love?|He set himself alight|He jumped from a bridge|He crashed a motorcycle|He swallowed medication|Medium|In The Name Of Love|Episode 20|Leo|Claudia|Self Immolation|Obsessive Relationship|Ambulance Emergency
+What emergency did Frank learn about at his own home in Poison?|A house fire|A gas leak|A burglary|A collapsed roof|Easy|Poison|Episode 21|Frank Campion|House Fire|Emergency Call|Beth Chandler|Personal Danger
+Whose dogs were taken after Cate handed them to the wrong woman in Poison?|Charlotte Beaumont's|Von Ryan's|Jessica Singleton's|Kerry Lytton's|Medium|Poison|Episode 21|Charlotte Beaumont|Cate McMasters|Missing Dogs|Beth Chandler|Deception
+What did Vincent offer Frank after Beth's campaign escalated in Poison?|His resignation|A request for promotion|A transfer to paediatrics|A leave application for a wedding|Medium|Poison|Episode 21|Vincent Hughes|Frank Campion|Resignation Offer|Beth Chandler|Workplace Pressure
+How far along was Megan Harris in her pregnancy when she was injured in Right to Life?|Five months|Eight months|Three months|Seven months|Medium|Right To Life|Episode 22|Megan Harris|Pregnancy|Car Crash|Charlotte Beaumont|Jack Quade
+Which police officer's role in a vehicle pursuit troubled Frank in Right to Life?|Constable Peter Saunders|Sergeant Richard Craig|Detective Colin Blackburn|Constable Ben Markham|Medium|Right To Life|Episode 22|Peter Saunders|Frank Campion|Police Pursuit|Traffic Accident|Professional Judgement
+Which pair of colleagues received an ultimatum over Beth's threats in Right to Life?|Vincent and Cate|Jack and Jessica|Frank and Nelson|Dan and Von|Medium|Right To Life|Episode 22|Vincent Hughes|Cate McMasters|Beth Chandler|Stalking Threat|Personal Safety
+What threat made Emergency staff evacuate in Divide and Conquer?|A bomb supposedly planted by Beth|A gas leak in theatre|An approaching bushfire|A hospital flood|Easy|Divide And Conquer|Episode 23|Beth Chandler|Bomb Threat|Vincent Hughes|Hospital Evacuation|Emergency Response
+What suspected infectious disease required a diplomat to remain isolated in Divide and Conquer?|SARS|Measles|Ebola|Tuberculosis|Medium|Divide And Conquer|Episode 23|Diplomat Patient|SARS Concern|Isolation Room|Vincent Hughes|Nelson Curtis
+Who stayed beside the isolated patient while most staff were evacuated in Divide and Conquer?|Vincent and Nelson|Jack and Charlotte|Frank and Jessica|Dan and Von|Hard|Divide And Conquer|Episode 23|Vincent Hughes|Nelson Curtis|Isolation Patient|Bomb Squad|Hospital Evacuation
+Whom did Vincent discover drugged and tied up by Beth in Love Me, Love Me Not?|Cate McMasters|Jessica Singleton|Charlotte Beaumont|Kerry Lytton|Easy|Love Me Love Me Not|Episode 24|Vincent Hughes|Cate McMasters|Beth Chandler|Kidnapping|Hostage
+What fruit caused a young woman to choke after her boyfriend fed it to her in Love Me, Love Me Not?|A strawberry|A grape|A cherry|A slice of apple|Medium|Love Me Love Me Not|Episode 24|Choking Patient|Strawberry|Romantic Gesture|Jessica Singleton|Emergency Treatment
+Which colleague's romantic feelings became clearer to him after the bomb scare in Love Me, Love Me Not?|Nelson Curtis|Jack Quade|Dan Goldman|Frank Campion|Medium|Love Me Love Me Not|Episode 24|Nelson Curtis|Kerry Lytton|Bomb Aftermath|Romantic Commitment|Personal Decision
+Where did Vincent isolate himself after Beth's final campaign in Immortal?|A seedy hotel|An isolated farmhouse|A hospital storeroom|An overseas clinic|Medium|Immortal|Episode 25|Vincent Hughes|Hotel Room|Beth Chandler|Emotional Breakdown|Isolation
+How many teenagers were packed into the car involved in the Immortal accident?|Six|Four|Five|Eight|Medium|Immortal|Episode 25|Teenage Car Crash|Six Passengers|Peer Pressure|Road Safety|Young Patients
+Which ambulance officer's memories of a teenage accident deepened his depression in Immortal?|Stuart|Mac MacPherson|Scott Zinenko|Ben Markham|Medium|Immortal|Episode 25|Stuart|Dan Goldman|Past Accident|Depression|Teenage Trauma
+Who found Stuart preparing to leave in Moving On?|Dan Goldman|Vincent Hughes|Nelson Curtis|Frank Campion|Medium|Moving On|Episode 26|Stuart|Dan Goldman|Packing Bags|Mental Health|Sudden Departure
+Which of Nelson's former partners contacted him about divorce papers in Moving On?|Leanne Curtis|Kerry Lytton|Trish Turner|Victoria Carlton|Medium|Moving On|Episode 26|Nelson Curtis|Leanne Curtis|Divorce Papers|Previous Marriage|Moving Forward
+Whose first day working at the hospital made Frank overprotective in Moving On?|His daughter Kathleen's|His former wife Alison's|His niece Kerry's|His sister Charlotte's|Hard|Moving On|Episode 26|Frank Campion|Kathleen Campion|First Work Day|Parenthood|Growing Independence
+Where did Dan and Jessica shelter from an armed attacker in Frozen Moments?|A supermarket walk-in freezer|A hospital operating theatre|An underground car park|An ambulance garage|Easy|Frozen Moments|Episode 27|Dan Goldman|Jessica Singleton|Supermarket Gunman|Walk In Freezer|Security Guard
+Which injured man was trapped with Dan and Jessica in Frozen Moments?|A dying security guard|An injured police sergeant|A supermarket manager|A delivery driver|Medium|Frozen Moments|Episode 27|Dan Goldman|Jessica Singleton|Security Guard|Hostage Crisis|Improvised Care
+Which executive challenged Frank about the care of a gravely ill patient in Frozen Moments?|Alison Newell|Julia Archer|Colin Blackburn|Joan Marden|Medium|Frozen Moments|Episode 27|Frank Campion|Alison Newell|Patient Prognosis|Hospital Administration|Treatment Dispute
+Which social worker returned to discuss Nelson's daughter in Room for Improvement?|Trish Turner|Leanne Curtis|Alison Newell|Victoria Carlton|Medium|Room For Improvement|Episode 28|Trish Turner|Nelson Curtis|Kahlia|Social Worker|Northern Territory
+What was the name of Nelson's daughter from his first marriage?|Kahlia|Kathleen|Lily|Georgia|Medium|Room For Improvement|Episode 28|Nelson Curtis|Kahlia|Diane|Father Daughter|Family Reunion
+Which nurse acted as Nursing Unit Manager for a day in Room for Improvement?|Jessica Singleton|Von Ryan|Cate McMasters|Regina Butcher|Medium|Room For Improvement|Episode 28|Jessica Singleton|Acting Manager|Nelson Curtis|Staff Leadership|Alison Newell
+Who were the passengers in the light-plane crash in Requiem?|Children travelling to a state Eisteddfod|Businesspeople going to a conference|Nurses on a training flight|Footballers travelling to a final|Medium|Requiem|Episode 29|Light Plane Crash|Children|State Eisteddfod|Regional Travel|Emergency Casualties
+Where did the light aircraft crash in Requiem?|On the outskirts of Sydney|Into Sydney Harbour|In the Blue Mountains|At an airport terminal|Medium|Requiem|Episode 29|Plane Crash|Sydney Outskirts|Mass Casualties|Young Passengers|Emergency Team
+What event caused a man to be pinned against concrete in Spinning Out?|An illegal drag race|A factory explosion|A train derailment|A motorbike stunt show|Medium|Spinning Out|Episode 30|Illegal Drag Racing|Concrete Column|Trapped Driver|Vincent Hughes|Cate McMasters
+Which doctor did Frank send to a dangerous roadside rescue in Spinning Out?|Vincent Hughes|Jack Quade|Charlotte Beaumont|Oscar Wu|Medium|Spinning Out|Episode 30|Frank Campion|Vincent Hughes|Cate McMasters|Drag Race Rescue|Field Treatment
+Which rival motorcycle gangs brought conflict into Emergency in Honourable Things?|The Hangmen and the Vipers|The Nomads and the Eagles|The Ravens and the Cobras|The Rebels and the Saints|Hard|Honourable Things|Episode 31|Hangmen|Vipers|Rival Bikie Gangs|Emergency Conflict|Hospital Security
+What injury did bikie leader Mad Dog Hanson have in Honourable Things?|A compound fracture|A collapsed lung|A ruptured spleen|A skull fracture|Medium|Honourable Things|Episode 31|Mad Dog Hanson|Bikie Leader|Compound Fracture|Gang Brawl|Surgical Treatment
+What vehicle struck the cyclist Kent in A Lonely Road?|A bus|An ambulance|A taxi|A lorry|Medium|A Lonely Road|Episode 32|Kent|Cyclist|Bus Collision|Trauma Admission|Emergency Resuscitation
+Which returning patient suffered a psychotic episode after a crash in A Lonely Road?|Karen|Kerry|Beth|Alison|Medium|A Lonely Road|Episode 32|Karen|Jamie|Psychotic Episode|Family Bereavement|Road Accident
+How old was Karen's son Jamie while caring for her in A Lonely Road?|17|13|21|25|Medium|A Lonely Road|Episode 32|Jamie|Karen|Seventeen Year Old|Young Carer|Family Responsibility
+Which doctor did a mysterious patient specifically request in Time and Tide?|Jack Quade|Frank Campion|Vincent Hughes|Oscar Wu|Medium|Time And Tide|Episode 33|Jack Quade|Mysterious Patient|Personal Questions|Medical Diagnosis|Family Secret
+What serious disease did Jack suspect in the mysterious visitor in Time and Tide?|Cancer|Meningitis|Tuberculosis|Heart failure|Medium|Time And Tide|Episode 33|Jack Quade|Patient Cancer|Terminal Prognosis|Unusual Visit|Medical Consultation
+Who persuaded Stuart to seek help from Frank in Time and Tide?|Dan Goldman|Jessica Singleton|Cate McMasters|Nelson Curtis|Hard|Time And Tide|Episode 33|Dan Goldman|Stuart|Frank Campion|Depression|Mental Health Support
+What emergency procedure did Nelson perform with Jessica in One of Those Days?|Delivered a baby|Removed an appendix|Set a dislocated shoulder|Performed a blood transfusion|Easy|One Of Those Days|Episode 34|Nelson Curtis|Jessica Singleton|Emergency Birth|Code Red|Overcrowding
+Who was the paediatrician Charlotte met at a medical conference in One of Those Days?|Doug 'Spence' Spencer|Oscar Wu|Frank Campion|Jack Quade|Medium|One Of Those Days|Episode 34|Charlotte Beaumont|Spence|Paediatrician|Medical Conference|New Attraction
+Which family decision did Trish press Nelson to make in One of Those Days?|Whether his daughter Kahlia should live with him|Whether to retire from nursing|Whether to move to England|Whether to sell his house|Medium|One Of Those Days|Episode 34|Trish Turner|Nelson Curtis|Kahlia|Custody Decision|Family Future
+Where did Charlotte meet the paediatrician Spence in Life's Lottery?|At a resort medical conference|At a wedding reception|During an ambulance call-out|At a hospital board meeting|Medium|Lifes Lottery|Episode 35|Charlotte Beaumont|Spence|Medical Conference|Resort Hotel|Unexpected Romance
+What unexpected breathing problem puzzled Jack and Dan in Life's Lottery?|A woman's first severe asthma attack|A baby's collapsed lung|A diver's decompression sickness|An athlete's chronic cough|Medium|Lifes Lottery|Episode 35|Jack Quade|Dan Goldman|Severe Asthma|Medical Mystery|Adult Woman
+What choice did Nelson make about travelling to the Northern Territory in Life's Lottery?|He stayed with Kerry instead|He moved there permanently|He went for six months alone|He took leave without telling Kerry|Medium|Lifes Lottery|Episode 35|Nelson Curtis|Kerry Lytton|Northern Territory|Relationship Decision|Family Obligations
+What technical failure plunged Emergency into darkness in Out of Darkness?|The backup generators failed during a blackout|An electrical fire destroyed the control room|A lightning strike damaged every ambulance|The X-ray machines were switched off|Medium|Out Of Darkness|Episode 36|Hospital Blackout|Backup Generators|Storm Damage|Emergency Department|Critical Care
+Who travelled to St Angela's to retrieve urgent pathology results in Out of Darkness?|Spence|Dan Goldman|Jack Quade|Nelson Curtis|Medium|Out Of Darkness|Episode 36|Spence|St Angelas|Pathology Results|Power Failure|Urgent Diagnosis
+Which colleague sought help from an overseas infectious-disease unit in Out of Darkness?|Von Ryan|Jessica Singleton|Cate McMasters|Charlotte Beaumont|Hard|Out Of Darkness|Episode 36|Von Ryan|Infectious Disease Unit|Overseas Advice|Unknown Illness|Diagnostic Initiative
+What practical assessment was Nelson completing in Taking the Plunge?|Paediatric nurse-practitioner assessment|Ambulance driving examination|Surgical fellowship interview|Psychiatric nursing revalidation|Medium|Taking The Plunge|Episode 37|Nelson Curtis|Nurse Practitioner|Paediatric Assessment|Spence|Professional Training
+Which challenging ten-year-old boy was part of Nelson's assessment in Taking the Plunge?|Joey Egan|Callum Chifley|Ross Weston|Max Morgan|Hard|Taking The Plunge|Episode 37|Joey Egan|Spence|Nelson Curtis|Paediatric Assessment|Ten Year Old
+Which police officer returned with problems after a serious self-inflicted injury in Taking the Plunge?|Peter Saunders|Alex Kearns|Ben Markham|Colin Blackburn|Medium|Taking The Plunge|Episode 37|Peter Saunders|Frank Campion|Seizures|Recovery|Police Duty
+Which humanitarian organisation offered Charlotte overseas work in Thicker Than Water?|Doctors Without Borders|Red Cross Australia|World Health Organization|UNICEF|Medium|Thicker Than Water|Episode 38|Charlotte Beaumont|Spence|Doctors Without Borders|Overseas Work|Medical Career
+What structure collapsed during the Medical Response Unit's first call-out in Thicker Than Water?|A disused tunnel|A suspension bridge|A shopping-centre roof|A mine lift|Medium|Thicker Than Water|Episode 38|Medical Response Unit|Tunnel Collapse|Vincent Hughes|Cate McMasters|Emergency Rescue
+What did Von discover about a brain-dead man rescued from the tunnel in Thicker Than Water?|His will requested organ donation|He was a missing surgeon|He was an undercover police officer|He had an identical twin|Medium|Thicker Than Water|Episode 38|Von Ryan|Charles|Organ Donor Wish|Advance Directive|Brain Death
+Where were ambulance crews called to rescue a young man attacked by guard dogs in Reckless?|An auto wrecker's yard|A golf course|A railway tunnel|A shopping-centre car park|Medium|Reckless|Episode 39|Guard Dog Attack|Auto Wreckers Yard|Ambulance Rescue|Young Man|Severe Bleeding
+Which doctor considered following Spence to Africa in Reckless?|Charlotte Beaumont|Jessica Singleton|Jack Quade|Frank Campion|Medium|Reckless|Episode 39|Charlotte Beaumont|Spence|Africa|Overseas Medicine|Career Choice
+What health problem did Charlotte investigate in a young woman with nausea and headaches in Reckless?|High blood pressure|A heart murmur|Kidney stones|An ear infection|Hard|Reckless|Episode 39|Charlotte Beaumont|Young Woman|Hypertension|Nausea|Headache
+Why was Nelson taking leave in Season of Change?|For his wedding and honeymoon|For a nursing examination|To work in London|For a family funeral|Easy|Season Of Change|Episode 40|Nelson Curtis|Kerry Lytton|Wedding Leave|Honeymoon|Nursing Cover
+Which doctor arrived in pain with kidney stones in Season of Change?|Oscar Wu|Frank Campion|Jack Quade|Malcolm Pussle|Medium|Season Of Change|Episode 40|Oscar Wu|Kidney Stones|Charlotte Beaumont|Vincent Hughes|Treatment Dispute
+Who was irritated that Deanna received Nelson's temporary job in Season of Change?|Jessica Singleton|Von Ryan|Cate McMasters|Regina Butcher|Medium|Season Of Change|Episode 40|Jessica Singleton|Deanna Richardson|Promotion Disappointment|Acting Manager|Nursing Career
+Whose wedding day was disrupted by a major Emergency incident in In Sickness and in Health?|Nelson and Kerry's|Charlotte and Vincent's|Cate and Mac's|Dan and Jessica's|Easy|In Sickness And In Health|Episode 41|Nelson Curtis|Kerry Lytton|Wedding Day|Season Finale|Celebration Interrupted
+What kind of accident filled Emergency with patients in the 2005 finale?|A chemical explosion at a paint factory|A shopping centre fire|A nightclub balcony collapse|A plane crash at an airfield|Medium|In Sickness And In Health|Episode 41|Paint Factory|Chemical Explosion|Mass Casualties|Emergency Department|Wedding Day
+What injury threatened to stop a young father witnessing his child's birth in In Sickness and in Health?|Severe eye injuries|A broken leg|A dislocated shoulder|A hearing injury|Medium|In Sickness And In Health|Episode 41|Dan Goldman|Eye Injury|Expectant Father|First Child|Factory Casualty`;
+
+let sequence = 0;
+const questions = facts.trim().split('\n').map(line => {
+  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+  const fields = line.trim().split('|').map(s => s.trim());
+  if (fields.length !== 13)
+    throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
+  const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = fields;
+  if (!question || [correctAnswer, wrong1, wrong2, wrong3, ...specificTags].some(v => !v))
+    throw new Error(`Empty field in ${id}`);
+  if (!['Easy', 'Medium', 'Hard'].includes(difficulty) || specificTags.length !== 7)
+    throw new Error(`Invalid difficulty or question-specific tags in ${id}`);
+  if (new Set([correctAnswer, wrong1, wrong2, wrong3].map(s => s.toLowerCase())).size !== 4)
+    throw new Error(`Repeated answer option in ${id}`);
+  const answers = [wrong1, wrong2, wrong3];
+  answers.splice(sequence % 4, 0, correctAnswer);
+  const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
+    .map(tag => [tag.toLowerCase(), tag])).values()];
+  sequence++;
+  return {
+    id, category: 'Television', programme, question, answers,
+    correctAnswer, difficulty, tags, dailyEligible: true
+  };
+});
+
+if (
+  !questions.length || questions[0].id !== 'tv_24731' ||
+  new Set(questions.map(q => q.id)).size !== questions.length ||
+  new Set(questions.map(q => q.question.toLowerCase())).size !== questions.length ||
+  questions.some(q =>
+    q.answers.length !== 4 || !q.answers.includes(q.correctAnswer) ||
+    q.tags.length < 14 || !q.tags.includes('Programme: All Saints') ||
+    q.dailyEligible !== true
+  )
+) throw new Error('Pack 427 exported question validation failed');
+
+module.exports = questions;

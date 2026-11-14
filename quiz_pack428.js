@@ -1,0 +1,183 @@
+// PuzzlePilot - The Bigggggg Quiz - Pack 428
+// All Saints (Australia): Season 9 (2006), 40 episodes.
+// Follows Pack 427. First ID: tv_24861.
+// Complete WordPad-ready CommonJS; All Saints remains unfinished in TV master.
+// Each fact row: question | correct | three wrong options | difficulty | seven specific tags.
+// Researched against 2006 episode guides and character/cast listings.
+'use strict';
+
+const FIRST_ID = 24861;
+const programme = 'All Saints';
+const commonTags = [
+  'Television', 'Australian Television', 'Australian Medical Drama',
+  'All Saints', 'Programme: All Saints', 'Seven Network',
+  'All Saints Western General Hospital', 'Emergency Department', 'Season 9', '2006'
+];
+
+const facts = `How many episodes did the ninth season of All Saints contain?|40|38|41|43|Medium|Season Nine|40 Episodes|Episode Count|Australian Broadcast|Season Length|Programme History|2006 Season
+Which episode opened the 2006 season of All Saints?|Till Death Do Us Part|The Real Thing|Judgement Day|Moment of Truth|Easy|Till Death Do Us Part|Episode 1|Season Premiere|Kerry Lytton|Opening Episode|Episode Titles|Broadcast Order
+Which episode concluded All Saints Season 9?|Judgement Day|Love and Hate|Breaking Point|Happy Returns|Easy|Judgement Day|Episode 40|Season Finale|November 2006|Episode Titles|Broadcast Order|Armed Man
+Who played the new intern Bartholomew 'Bart' West?|Andrew Supanz|Wil Traval|Mark Priestley|John Howard|Medium|Andrew Supanz|Bart West|Medical Intern|Actor Identification|Sink Or Swim|New Doctor|2006 Cast
+Who portrayed Emergency registrar Sean Everleigh?|Chris Vance|Christopher Gabardi|Grant Bowler|Peter Phelps|Medium|Chris Vance|Sean Everleigh|Medical Registrar|Actor Identification|Behind Closed Doors|Emergency Staff|2006 Cast
+Who portrayed Erica Templeton, a nurse joining the 2006 Emergency team?|Jolene Anderson|Virginia Gay|Natalie Saleeba|Tammy MacIntosh|Medium|Jolene Anderson|Erica Templeton|Emergency Nurse|Actor Identification|Nursing Staff|Season Nine|2006 Cast
+Which actor played new Head of Surgery Miklos 'Mike' Vlasek?|John Waters|John Howard|Brett Climo|Wil Traval|Hard|John Waters|Mike Vlasek|Head Of Surgery|Actor Identification|An Apple A Day|Surgical Consultant|2006 Casting
+Who played nursing manager Gabrielle Jaeger?|Virginia Gay|Sibylla Budd|Alexandra Davies|Judith McGrath|Hard|Virginia Gay|Gabrielle Jaeger|Nursing Unit Manager|Actor Identification|One For The Road|2006 Arrival|Nursing Leadership
+Which actress portrayed doctor Zoe Gallagher?|Allison Cratchley|Jolene Anderson|Anne Looby|Rachel Gordon|Hard|Allison Cratchley|Zoe Gallagher|Doctor Casting|Actor Identification|Truth Hurts|Emergency Staff|2006 Arrival
+Whose death at the end of 2005 haunted Nelson Curtis in Till Death Do Us Part?|Kerry Lytton's|Leanne Curtis's|Terri Sullivan's|Deanna Richardson's|Easy|Till Death Do Us Part|Episode 1|Nelson Curtis|Kerry Lytton|Bereavement|Wedding Tragedy|Season Opening
+Who did Nelson confront about Kerry's death in Till Death Do Us Part?|Colin|Frank|Jack|Vincent|Medium|Till Death Do Us Part|Episode 1|Nelson Curtis|Colin|Kerry Lytton|Revenge|Chemical Explosion
+Which two colleagues clashed over respecting an injured patient's refusal of treatment in Till Death Do Us Part?|Cate and Charlotte|Von and Erica|Frank and Mike|Dan and Jessica|Medium|Till Death Do Us Part|Episode 1|Cate McMasters|Charlotte Beaumont|Patient Refusal|Treatment Choice|Medical Ethics
+Which nurse helped a chemical-blinded patient with his emotional needs in Till Death Do Us Part?|Jessica Singleton|Gabrielle Jaeger|Erica Templeton|Deanna Richardson|Medium|Till Death Do Us Part|Episode 1|Jessica Singleton|Chemical Burns|Blind Patient|Dan Goldman|Emotional Support
+What did the young boy in The Real Thing become strangely fixated on?|Aliens|Dinosaurs|Medieval knights|Train engines|Medium|The Real Thing|Episode 2|Young Boy|Alien Fixation|Patient Behaviour|Medical Mystery|Emergency Care
+Which nurse tried to help a man over the telephone after he shot his wife in The Real Thing?|Dan Goldman|Von Ryan|Nelson Curtis|Jessica Singleton|Medium|The Real Thing|Episode 2|Dan Goldman|Telephone Crisis|Gunshot Victim|Emergency Advice|Domestic Violence
+What martial art was practised by violent patient Justin Kovacs in Moment of Truth?|Tae kwon do|Judo|Karate|Aikido|Easy|Moment Of Truth|Episode 3|Justin Kovacs|Martial Arts|Tae Kwon Do|Head Injury|Aggressive Patient
+Which paramedic had previously trained with Justin Kovacs in Moment of Truth?|Cate McMasters|Sasha Fernandez|Nigel MacPherson|Scott Zinenko|Medium|Moment Of Truth|Episode 3|Cate McMasters|Justin Kovacs|Former Student|Martial Arts Instructor|Patient History
+What injury did the woman with a concealed terminal illness present with in Moment of Truth?|A broken wrist|A fractured ankle|A dislocated shoulder|A broken collarbone|Hard|Moment Of Truth|Episode 3|Nelson Curtis|Broken Wrist|Terminal Illness Secret|Female Patient|Medical Investigation
+What fell out of Nelson's bag in front of Frank in No Way Out?|A half-empty whisky bottle|A syringe|A packet of stolen pills|A patient's wallet|Easy|No Way Out|Episode 4|Nelson Curtis|Whisky Bottle|Frank Campion|Alcoholism Accusation|Deanna Richardson
+Who began pursuing a romance with Jack Quade during No Way Out?|Deanna Richardson|Jessica Singleton|Erica Templeton|Cate McMasters|Medium|No Way Out|Episode 4|Deanna Richardson|Jack Quade|Workplace Romance|Flirtation|Professional Tension
+Which colleague was furious when Frank doubted his account of the alcohol in No Way Out?|Nelson Curtis|Dan Goldman|Vincent Hughes|Sean Everleigh|Medium|No Way Out|Episode 4|Nelson Curtis|Frank Campion|Recovery|Unfair Suspicion|Emergency Dispute
+What employment-related claim caused Charlotte and Deanna to argue in The Things We Do?|A workers' compensation claim|An unfair dismissal claim|A maternity leave claim|An overtime pay claim|Medium|The Things We Do|Episode 5|Charlotte Beaumont|Deanna Richardson|Workers Compensation|Insurance Investigation|Patient Credibility
+Who visited the embittered Nelson after his abrupt departure from Emergency in The Things We Do?|Frank and Von|Cate and Sean|Jack and Vincent|Erica and Bart|Medium|The Things We Do|Episode 5|Frank Campion|Von Ryan|Nelson Curtis|Home Visit|Colleague Support
+What unexplained symptom was troubling a middle-aged patient in The Things We Do?|Persistent stomach pain|Temporary blindness|A recurring nosebleed|Sudden loss of hearing|Medium|The Things We Do|Episode 5|Middle Aged Patient|Stomach Pain|Medical Mystery|Diagnosis|Emergency Presentation
+Which hospital executive sent efficiency inspectors to Emergency in Facing the Music?|Alison Newell|Julia Archer|Joan Marden|Colin Blackburn|Medium|Facing The Music|Episode 6|Alison Newell|Organisation And Methods|Inspectors|Hospital Evaluation|Emergency Department
+Which nurse walked out during a distressing resuscitation in Facing the Music?|Dan Goldman|Nelson Curtis|Von Ryan|Jessica Singleton|Medium|Facing The Music|Episode 6|Dan Goldman|Resuscitation|Distressing Patient Response|Professional Pressure|Resus Bay
+What chronic condition did Bob Tyrell have when Von cared for his leg wound in Facing the Music?|Insulin-dependent diabetes|Haemophilia|Cystic fibrosis|Epilepsy|Hard|Facing The Music|Episode 6|Bob Tyrell|Von Ryan|Diabetes|Leg Wound|Negligence Allegation
+Which doctor joined Emergency as a registrar in Behind Closed Doors?|Sean Everleigh|Mike Vlasek|Bart West|Oscar Wu|Easy|Behind Closed Doors|Episode 7|Sean Everleigh|Emergency Registrar|New Arrival|Staff Introductions|Medical Department
+Where had Dan's patient suffered the injuries that brought her to Emergency in Behind Closed Doors?|At a railway platform|At a construction site|At a swimming pool|On a golf course|Medium|Behind Closed Doors|Episode 7|Dan Goldman|Railway Platform|Young Woman|Unrecognised Past|Leg And Abdominal Injuries
+What professional accreditation case was Nelson trying to complete in Behind Closed Doors?|His final nurse-practitioner case|His paramedic practical test|His surgical board examination|His nursing degree dissertation|Medium|Behind Closed Doors|Episode 7|Nelson Curtis|Nurse Practitioner|Final Assessment|Former Adversary|Patient Case
+Which faith's refusal of blood transfusions created an ethical dispute in The Mercy Seat?|Jehovah's Witnesses|Quakers|Buddhists|Sikhs|Easy|The Mercy Seat|Episode 8|Jehovahs Witness|Blood Transfusion|Frank Campion|Informed Refusal|Clinical Ethics
+What accusation did Deanna make against Frank in The Mercy Seat?|Sexual harassment|Embezzlement|Patient assault|Medical fraud|Medium|The Mercy Seat|Episode 8|Deanna Richardson|Frank Campion|Sexual Harassment Allegation|Staff Investigation|Hospital Conflict
+Whose former television hero arrived as a patient in The Mercy Seat?|Dan Goldman's|Jack Quade's|Nelson Curtis's|Vincent Hughes's|Hard|The Mercy Seat|Episode 8|Dan Goldman|Former TV Personality|Celebrity Patient|Hidden Domestic Problems|Hospital Admission
+What happened to Frank Campion under mounting stress in Shadows of the Heart?|He suffered a heart attack|He had a stroke|He fractured his wrist|He collapsed from dehydration|Easy|Shadows Of The Heart|Episode 9|Frank Campion|Heart Attack|Deanna Richardson|Staff Crisis|Cardiac Emergency
+How old was road-crash victim Jacinta Cosgrove in Shadows of the Heart?|18|15|22|27|Hard|Shadows Of The Heart|Episode 9|Jacinta Cosgrove|Eighteen Year Old|Car Accident|Ian Cosgrove|Family Distress
+What newly gained qualification was Nelson using with his first patient in Shadows of the Heart?|Nurse practitioner|Radiographer|Paramedic|Surgical registrar|Medium|Shadows Of The Heart|Episode 9|Nelson Curtis|Nurse Practitioner|Melanie Sonter|First Patient|Professional Advancement
+Who was revealed to have planted the whisky in Nelson's belongings in Just Desserts?|Deanna Richardson|Jessica Singleton|Gabrielle Jaeger|Alison Newell|Easy|Just Desserts|Episode 10|Deanna Richardson|Nelson Curtis|Whisky Trap|False Accusation|Exposure
+Which colleague was heartbroken when Deanna's deception was exposed in Just Desserts?|Jack Quade|Dan Goldman|Bart West|Sean Everleigh|Medium|Just Desserts|Episode 10|Jack Quade|Deanna Richardson|Relationship Breakdown|Staff Scheme|Romantic Betrayal
+What was Frank recovering from while the staff found him a difficult patient in Just Desserts?|A heart attack|A spinal injury|An appendectomy|A concussion|Medium|Just Desserts|Episode 10|Frank Campion|Heart Attack Recovery|Hospital Patient|Post Cardiac Care|Staff Concern
+What kitchen machine trapped a man's hand in Brothers in Arms?|A commercial mincer|An industrial blender|A dough mixer|A meat slicer|Medium|Brothers In Arms|Episode 11|Industrial Kitchen|Commercial Mincer|Hand Injury|MRU Callout|Emergency Rescue
+Which doctor tested Jack during the kitchen-rescue callout in Brothers in Arms?|Vincent Hughes|Mike Vlasek|Sean Everleigh|Frank Campion|Medium|Brothers In Arms|Episode 11|Vincent Hughes|Jack Quade|Medical Response Unit|Kitchen Rescue|Mentoring
+Which recovering doctor paid an unexpected visit to Emergency in Brothers in Arms?|Frank Campion|Vincent Hughes|Sean Everleigh|Mike Vlasek|Medium|Brothers In Arms|Episode 11|Frank Campion|Unexpected Visit|Heart Attack Recovery|Alison Newell|Workplace Stress
+To which country did Vincent travel for a surgical exchange in Wait and See?|Canada|New Zealand|South Africa|Ireland|Easy|Wait And See|Episode 12|Vincent Hughes|Canada|Surgical Exchange|Four Months|Temporary Departure
+What medical mystery did a case of apparent domestic violence lead to in Wait and See?|A neurological disorder|A kidney infection|A heart-valve defect|A food allergy|Medium|Wait And See|Episode 12|Neurological Mystery|Violent Behaviour|Domestic Violence|Diagnostic Challenge|Emergency Patient
+For roughly how long was Vincent's overseas surgical exchange planned in Wait and See?|Four months|Four weeks|One year|Two months|Medium|Wait And See|Episode 12|Vincent Hughes|Four Month Exchange|Canadian Hospital|Overseas Training|Surgical Career
+What destroyed Jack Quade's home in Getting to Know You?|A fire|A flood|A gas explosion|A landslide|Easy|Getting To Know You|Episode 13|Jack Quade|House Fire|Landlady Rescue|Homeless Doctor|Emergency Admission
+Whose home did Sean and Cate visit to investigate his illness in Getting to Know You?|Bruce Ahearne's|Bob Tyrell's|Justin Kovacs's|Ian Cosgrove's|Medium|Getting To Know You|Episode 13|Bruce Ahearne|Sean Everleigh|Cate McMasters|Internet Medicines|Organ Damage
+Who offered Jack somewhere to stay after the house fire in Getting to Know You?|Dan Goldman|Frank Campion|Bart West|Nelson Curtis|Hard|Getting To Know You|Episode 13|Dan Goldman|Jack Quade|Temporary Accommodation|House Fire Aftermath|Staff Friendship
+Which new medical intern had his first disastrous shift in Sink or Swim?|Bartholomew West|Mike Vlasek|Sean Everleigh|Jack Quade|Easy|Sink Or Swim|Episode 14|Bart West|First Shift|Medical Intern|Emergency Department|New Staff
+What sort of hospital care did Nelson request from Frank in Sink or Swim?|Admission to a psychiatric ward|A surgical fellowship|Dialysis treatment|A rehabilitation placement for a leg injury|Hard|Sink Or Swim|Episode 14|Nelson Curtis|Frank Campion|Psychiatric Admission|Grief Crisis|Kerry Lytton
+Who encouraged Bart after his mistakes during his first shift in Sink or Swim?|Frank Campion|Mike Vlasek|Nelson Curtis|Alison Newell|Medium|Sink Or Swim|Episode 14|Bart West|Frank Campion|New Intern|Mentorship|Professional Confidence
+What hospital position did Mike Vlasek take up in An Apple a Day?|Head of Surgery|Head of Radiology|Nursing Unit Manager|Ambulance Supervisor|Easy|An Apple A Day|Episode 15|Mike Vlasek|Head Of Surgery|Senior Appointment|Frank Campion|Staff Changes
+Who reluctantly became Acting Nursing Unit Manager in An Apple a Day?|Dan Goldman|Von Ryan|Cate McMasters|Jessica Singleton|Medium|An Apple A Day|Episode 15|Dan Goldman|Acting NUM|Management Promotion|Staffing Change|Emergency Shift
+Who announced she was taking Kathleen overseas in An Apple a Day?|Alison Newell|Deanna Richardson|Eve|Charlotte Beaumont|Medium|An Apple A Day|Episode 15|Alison Newell|Kathleen Campion|Overseas Leave|Frank Campion|Family Dispute
+Where did a man receive a metal spike through his head in The Way of It?|At a medieval festival|At a building site|At a circus|At a railway yard|Easy|The Way Of It|Episode 16|Medieval Festival|Metal Spike|Head Injury|MRU Rescue|Sean Everleigh
+Which hospital area was robbed during The Way of It?|The staff changing room|The medical library|The maternity ward|The pathology laboratory|Medium|The Way Of It|Episode 16|Staff Changing Room|Theft|Hospital Security|Staff Belongings|Emergency Department
+What end-of-life instruction did a returning patient request in The Way of It?|A do-not-resuscitate order|A kidney transplant|Immediate discharge|A transfer to another city|Medium|The Way Of It|Episode 16|Returning Patient|Erica Templeton|Bart West|Do Not Resuscitate|Patient Wishes
+Where was the couple travelling when their crash led to a standoff in A Rock and a Hard Place?|To the airport for an overseas holiday|To their wedding reception|To a football match|To visit a maternity ward|Medium|A Rock And A Hard Place|Episode 17|Couple Crash|Airport Journey|Overseas Holiday|Armed Standoff|Von Ryan
+Which nurse was caught in an armed standoff in A Rock and a Hard Place?|Von Ryan|Erica Templeton|Cate McMasters|Jessica Singleton|Medium|A Rock And A Hard Place|Episode 17|Von Ryan|Gun Threat|Emergency Department|Holiday Couple|Hostage Danger
+What happened to a young mother trying to stop a thief in A Rock and a Hard Place?|She was dragged behind a car|She was trapped in a lift|She fell from a balcony|She was bitten by a guard dog|Medium|A Rock And A Hard Place|Episode 17|Young Mother|Bag Snatching|Dragged Behind Car|Missing Baby|Surgery Refusal
+Who arrived as the new Nursing Unit Manager in One for the Road?|Gabrielle Jaeger|Deanna Richardson|Erica Templeton|Jessica Singleton|Easy|One For The Road|Episode 18|Gabrielle Jaeger|New NUM|Emergency Department|Nursing Management|Staff Arrival
+What social event left Jack badly hungover before surgery in One for the Road?|A poker night|A wedding reception|A football celebration|A music festival|Medium|One For The Road|Episode 18|Jack Quade|Poker Night|Alcohol|Mike Vlasek|Surgical Risk
+Which profession did the difficult liver-transplant recipient practise in One for the Road?|Disc jockey|Professional footballer|Paramedic|Airline pilot|Hard|One For The Road|Episode 18|Liver Transplant|Young DJ|Dan Goldman|Sean Everleigh|Organ Rejection
+What organ did a father insist on donating to his desperately ill son in By Choice or by Chance?|A kidney|Part of a lung|A section of liver|Bone marrow|Easy|By Choice Or By Chance|Episode 19|Father Son|Kidney Donation|Frank Campion|Mike Vlasek|Transplant Dilemma
+Which sport was practised by the injured patient needing emergency cranial surgery in By Choice or by Chance?|Speed skating|Downhill skiing|Cycling|Boxing|Medium|By Choice Or By Chance|Episode 19|Speed Skater|Sean Everleigh|Emergency Cranial Surgery|Head Injury|Resus Bay
+Who was completing his medical internship around the time of By Choice or by Chance?|Bart West|Sean Everleigh|Jack Quade|Mike Vlasek|Medium|By Choice Or By Chance|Episode 19|Bart West|Internship Ending|Career Doubts|Medical Training|Job Uncertainty
+How old was the woman facing possible permanent paralysis in Tough Love?|22|17|28|35|Medium|Tough Love|Episode 20|Twenty Two Year Old|Possible Paralysis|Sean Everleigh|Erica Templeton|Life Change
+Which nurse challenged Sean about not sharing his clinical thinking in Tough Love?|Dan Goldman|Von Ryan|Gabrielle Jaeger|Cate McMasters|Hard|Tough Love|Episode 20|Dan Goldman|Sean Everleigh|Doctor Nurse Communication|Professional Conflict|Patient Care
+Which professional qualification portfolio did Charlotte ask Frank to help her with in Tough Love?|Emergency Fellowship|Nurse practitioner accreditation|Radiography certification|Paediatric nursing diploma|Medium|Tough Love|Episode 20|Charlotte Beaumont|Frank Campion|Fellowship Portfolio|Career Training|Emergency Medicine
+Which surgical consultant made his first Medical Response Unit crash callout in When Duty Calls?|Mike Vlasek|Oscar Wu|Jack Quade|Spence Spencer|Easy|When Duty Calls|Episode 21|Mike Vlasek|Medical Response Unit|Car Crash|Life Saving Efforts|Surgery Chief
+Which two staff members disagreed over handling a teenage assault survivor in When Duty Calls?|Charlotte and Erica|Dan and Gabrielle|Von and Zoe|Cate and Jessica|Medium|When Duty Calls|Episode 21|Charlotte Beaumont|Erica Templeton|Teenage Assault Victim|Patient Support|Professional Disagreement
+How old was the assault survivor whose care caused the dispute in When Duty Calls?|17|14|20|24|Medium|When Duty Calls|Episode 21|Seventeen Year Old|Assault Survivor|Erica Templeton|Charlotte Beaumont|Consent And Care
+How many patients with similar symptoms raised epidemic fears in Two by Two?|Three|Two|Four|Six|Medium|Two By Two|Episode 22|Three Patients|Shared Symptoms|Possible Epidemic|Infection Control|Emergency Department
+What new nursing role was Von given in Two by Two?|Transitional Care nurse|Midwifery coordinator|Nurse educator|Ambulance liaison officer|Medium|Two By Two|Episode 22|Von Ryan|Transitional Care|New Role|Nursing Specialism|Hospital Staffing
+Whose old university friend brought a treatment disagreement to the ED in Two by Two?|Frank Campion's|Jack Quade's|Mike Vlasek's|Sean Everleigh's|Medium|Two By Two|Episode 22|Frank Campion|University Friend|Mike Vlasek|Medical Versus Surgical Care|Disagreement
+What sort of entertainment programme was being filmed when a contestant was injured in Drawing the Line?|A reality television show|A cooking competition|A talent concert|A sporting awards ceremony|Easy|Drawing The Line|Episode 23|Reality Television|On Camera Injury|Mike Vlasek|Cate McMasters|Live Rescue
+Which doctor was furious about Emergency staff becoming television celebrities in Drawing the Line?|Frank Campion|Jack Quade|Vincent Hughes|Spence Spencer|Medium|Drawing The Line|Episode 23|Frank Campion|Media Attention|Mike Vlasek|Cate McMasters|Professional Reputation
+What unusual adornment did Dan's patient have in Drawing the Line?|An extreme facial piercing|A tattoo covering both arms|A silver tooth cap|A ceremonial necklace|Medium|Drawing The Line|Episode 23|Dan Goldman|Facial Piercing|Patient Appearance|Nursing Judgement|Body Modification
+Which newly arrived doctor disagreed with a mother over her daughter's genetic condition in Truth Hurts?|Zoe Gallagher|Charlotte Beaumont|Grace Connelly|Mitch Stevens|Medium|Truth Hurts|Episode 24|Zoe Gallagher|Genetic Condition|Mother Daughter|Erica Templeton|Patient Confidentiality
+Where was a gunshot victim abandoned before being brought in for surgery in Truth Hurts?|In the hospital grounds|At a bus station|At a pharmacy|Outside a police station|Medium|Truth Hurts|Episode 24|Gunshot Victim|Hospital Grounds|Mike Vlasek|Jack Quade|Emergency Operation
+Who left Jack alone during difficult surgery in Truth Hurts?|Mike Vlasek|Frank Campion|Sean Everleigh|Spence Spencer|Medium|Truth Hurts|Episode 24|Mike Vlasek|Jack Quade|Operating Theatre|Surgical Conflict|Unsupervised Procedure
+What shocking fact emerged about the supposed car-crash victim in Extreme Measures?|He had died before the crash|He had been driving an ambulance|He had staged his own disappearance|He had been struck by lightning|Easy|Extreme Measures|Episode 25|Car Crash|Murder Mystery|Pre Existing Death|False Accident|Medical Investigation
+What awkward object did another patient need removed in Extreme Measures?|A fishing hook|A sewing needle|A wedding ring|A pen cap|Medium|Extreme Measures|Episode 25|Fishing Hook|Emergency Removal|Unusual Injury|Patient Explanation|Medical Procedure
+Which senior doctor was confronted by Frank after Cate disclosed a secret in Extreme Measures?|Mike Vlasek|Sean Everleigh|Jack Quade|Spence Spencer|Medium|Extreme Measures|Episode 25|Mike Vlasek|Frank Campion|Cate McMasters|Professional Secret|Confrontation
+Who unexpectedly resigned from the hospital during Mind Games?|Mike Vlasek|Dan Goldman|Bart West|Frank Campion|Easy|Mind Games|Episode 26|Mike Vlasek|Resignation|Surgical Department|Frank Campion|Professional Crisis
+Which specialist returned and unsettled colleagues in Mind Games?|Spence Spencer|Oscar Wu|Mitch Stevens|Harry Williams|Medium|Mind Games|Episode 26|Spence Spencer|Paediatrician Return|Charlotte Beaumont|Hospital Relationships|2006 Return
+Which two staff investigated why an elderly couple had become ill in Mind Games?|Sean and Von|Jack and Erica|Zoe and Cate|Dan and Gabrielle|Medium|Mind Games|Episode 26|Sean Everleigh|Von Ryan|Elderly Couple|Illness Investigation|Diagnostic Puzzle
+Which two staff argued over a secretive patient's diagnosis in One Wrong Step?|Dan and Zoe|Frank and Mike|Bart and Vincent|Erica and Charlotte|Medium|One Wrong Step|Episode 27|Dan Goldman|Zoe Gallagher|Hidden Secret|Diagnostic Disagreement|Patient Safety
+What additional personal challenge complicated Charlotte's fellowship studies in One Wrong Step?|Her pregnancy|A house move to London|Her father's funeral|Her paramedic training|Medium|One Wrong Step|Episode 27|Charlotte Beaumont|Pregnancy|Fellowship Studies|Spence Spencer|Work Life Balance
+Which two colleagues tried to arrange a date for Von in One Wrong Step?|Erica and Bart|Cate and Sean|Dan and Jack|Charlotte and Zoe|Medium|One Wrong Step|Episode 27|Erica Templeton|Bart West|Von Ryan|Matchmaking|Patient Date
+Who clashed with the new trauma surgeon at a road accident in Private Lives?|Jack Quade|Bart West|Frank Campion|Sean Everleigh|Medium|Private Lives|Episode 28|Jack Quade|Trauma Surgeon|Road Accident|Professional Authority|Scene Dispute
+What unexplained symptom in a male patient horrified the team in Private Lives?|A rapidly spreading rash|Persistent hiccups|Loss of hearing|Sudden night blindness|Medium|Private Lives|Episode 28|Male Patient|Severe Rash|Diagnostic Mystery|Skin Condition|Emergency Presentation
+Which nurse discovered that a teenager's emotional suffering exceeded her physical injuries in Private Lives?|Von Ryan|Gabrielle Jaeger|Jessica Singleton|Erica Templeton|Medium|Private Lives|Episode 28|Von Ryan|Teenage Patient|Emotional Trauma|Patient Advocacy|Social Support
+Whose treatment of a possible miscarriage made him think of Charlotte in The Other Man's Shoes?|Spence Spencer's|Jack Quade's|Frank Campion's|Bart West's|Medium|The Other Mans Shoes|Episode 29|Spence Spencer|Possible Miscarriage|Charlotte Beaumont|Pregnancy Anxiety|Paediatrician
+Which woman was the subject of a startling revelation to Jack in The Other Man's Shoes?|Bianca|Deanna|Kerry|Alison|Hard|The Other Mans Shoes|Episode 29|Jack Quade|Bianca|Personal Secret|Relationship Complication|Hospital Drama
+What sort of former colleague caused disruption in Emergency in The Other Man's Shoes?|A former nurse|A retired surgeon|A former paramedic dispatcher|A former pharmacist|Medium|The Other Mans Shoes|Episode 29|Former Nurse|Emergency Chaos|Staff History|Colleague Return|Hospital Disruption
+What degenerative condition affected the boy Casey Taylor in To the Ends of the Earth?|Duchenne muscular dystrophy|Cystic fibrosis|Huntington's disease|Multiple sclerosis|Easy|To The Ends Of The Earth|Episode 30|Casey Taylor|Duchenne Muscular Dystrophy|Child Patient|Life Limiting Illness|Drug Overdose
+Which member of Casey Taylor's family struggled to accept his wishes in To the Ends of the Earth?|His father Paul|His mother Beth|His sister Molly|His uncle Sean|Hard|To The Ends Of The Earth|Episode 30|Casey Taylor|Paul Taylor|Father Son|End Of Life Care|Patient Wishes
+To which European city did Frank travel hoping to propose to Eve in To the Ends of the Earth?|Paris|Rome|Vienna|Madrid|Medium|To The Ends Of The Earth|Episode 30|Frank Campion|Eve|Paris|Marriage Proposal|Overseas Trip
+Which relative's child was Sean worried about in Ain't Love Grand?|His sister Jenna's daughter|His brother Jack's son|His cousin Erica's daughter|His uncle Frank's child|Medium|Aint Love Grand|Episode 31|Sean Everleigh|Jenna|Molly|Spence Spencer|Family Illness
+Who arrived in Emergency as Cate's old friend from university in Ain't Love Grand?|Jo|Bianca|Grace|Alison|Medium|Aint Love Grand|Episode 31|Jo|Cate McMasters|University Friend|Nursing Friendship|Reunion
+What kind of domestic accident complicated Dan's affair with Bianca in Ain't Love Grand?|A backyard spa injury|A swimming pool drowning|A kitchen fire|A staircase collapse|Medium|Aint Love Grand|Episode 31|Dan Goldman|Bianca|Backyard Spa|Extramarital Affair|Accidental Injury
+What disaster brought multiple casualties into All Saints in Happy Returns?|A plane crash|A ferry sinking|A tunnel collapse|A nightclub fire|Easy|Happy Returns|Episode 32|Plane Crash|Emergency Casualties|Vincent Hughes|Mass Casualty|Aviation Accident
+Which two newlyweds arrived badly burned and physically fused together in Happy Returns?|Amy and Mark Miller|Nelson and Kerry|Jo and Sean|Cate and Mac|Hard|Happy Returns|Episode 32|Amy Miller|Mark Miller|Newlyweds|Burn Injuries|Plane Crash
+Whose death in an earlier aircraft disaster made Vincent uneasy during Happy Returns?|Grace Connelly's|Kerry Lytton's|Mitch Stevens's|Leanne Curtis's|Medium|Happy Returns|Episode 32|Vincent Hughes|Grace Connelly|Plane Crash|Past Trauma|Survivor Grief
+What bizarre belief did young patient Paulie express in Dead Girl Walking?|That she was already dead|That she could read minds|That she was invisible|That she could not feel pain|Easy|Dead Girl Walking|Episode 33|Paulie|Belief Of Being Dead|Psychiatric Presentation|Von Ryan|Unusual Patient
+Who collapsed while assisting Jack in an operation in Dead Girl Walking?|Anaesthetist John Cotter|Surgeon Mike Vlasek|Nurse Dan Goldman|Registrar Sean Everleigh|Medium|Dead Girl Walking|Episode 33|John Cotter|Anaesthetist Collapse|Jack Quade|Solo Surgery|Operating Theatre
+Which girl was facing possible permanent paralysis in Dead Girl Walking?|Molly|Casey|Kathleen|Kahlia|Medium|Dead Girl Walking|Episode 33|Molly|Sean Everleigh|Spence Spencer|Possible Paralysis|Paediatric Patient
+What kind of sporting team was travelling on the bus that crashed in Contact?|Junior rugby league team|School cricket team|Junior hockey team|Football academy squad|Easy|Contact|Episode 34|Bus Accident|Junior Rugby League|Medical Response Unit|Dan Goldman|Team Transport
+Which nurse got into trouble for ignoring MRU procedure after the crash in Contact?|Dan Goldman|Von Ryan|Cate McMasters|Gabrielle Jaeger|Medium|Contact|Episode 34|Dan Goldman|Medical Response Unit|Protocol Breach|Bus Crash|Professional Discipline
+What unexpected passenger was found among the bus crash survivors in Contact?|A teenage girl|A retired referee|A police officer|A young doctor|Hard|Contact|Episode 34|Bus Crash|Teenage Girl|Hidden Passenger|Junior Rugby League|Medical Treatment
+Which nurse's imprisoned brother arrived after a fatal prison fight in Where the Truth Lies?|Erica Templeton's|Von Ryan's|Cate McMasters's|Gabrielle Jaeger's|Easy|Where The Truth Lies|Episode 35|Erica Templeton|AJ|Prison Fight|Family Relationship|Brother
+Who had died during the prison disturbance preceding Where the Truth Lies?|A prison guard|A visiting doctor|A police detective|A fellow nurse|Medium|Where The Truth Lies|Episode 35|AJ|Prison Guard Death|Erica Templeton|Prison Violence|Murder Investigation
+Which doctor suspected foul play when a wife brought her critically ill husband in Where the Truth Lies?|Sean Everleigh|Jack Quade|Frank Campion|Bart West|Medium|Where The Truth Lies|Episode 35|Sean Everleigh|Husband Patient|Suspected Foul Play|Family Secret|Diagnosis
+What animal attack caused a life-threatening emergency in Jaws of Death?|A shark attack|A crocodile attack|A snakebite|A dog attack|Easy|Jaws Of Death|Episode 36|Shark Attack|Ben Macedo|Ocean Rescue|Severe Trauma|Emergency Surgery
+What hospital malfunction prevented surgery in the usual operating theatres in Jaws of Death?|A plumbing problem|A lift breakdown|A gas leak|A broken steriliser|Medium|Jaws Of Death|Episode 36|Operating Theatre Closure|Plumbing Problem|Vincent Hughes|Resus Surgery|Infection Control
+What aggressive soft-tissue infection did Bart recognise in Lindsay Blake in Jaws of Death?|Necrotising fasciitis|Impetigo|Cellulitis alone|Shingles|Hard|Jaws Of Death|Episode 36|Lindsay Blake|Bart West|Necrotising Fasciitis|Leg Infection|Waxing Mishap
+Who accidentally administered too much medication to a patient in Love, Pain and the Whole Damn Thing?|Cate McMasters|Erica Templeton|Gabrielle Jaeger|Von Ryan|Easy|Love Pain And The Whole Damn Thing|Episode 37|Cate McMasters|Drug Overdose|Medication Error|Sleep Deprivation|Nursing Safety
+Which junior doctor took the blame for Cate's error in Love, Pain and the Whole Damn Thing?|Bart West|Jack Quade|Sean Everleigh|Vincent Hughes|Medium|Love Pain And The Whole Damn Thing|Episode 37|Bart West|Cate McMasters|Taking Blame|Frank Campion|Medical Error
+What decision did staff ask a bereaved husband to make in Love, Pain and the Whole Damn Thing?|Whether to donate his wife's organs|Whether to sue the hospital|Whether to move his wife abroad|Whether to request an autopsy abroad|Medium|Love Pain And The Whole Damn Thing|Episode 37|Organ Donation|Brain Death|Hit And Run Victim|Frank Campion|Von Ryan
+How far had a patient reportedly fallen at a building site in Breaking Point?|20 metres|5 metres|10 metres|40 metres|Medium|Breaking Point|Episode 38|Construction Site|Twenty Metre Fall|Severe Trauma|Frank Campion|Family Investigation
+What sport was the woman Michaeley training for in Breaking Point?|Triathlon|Competitive rowing|Swimming|Tennis|Medium|Breaking Point|Episode 38|Michaeley|Triathlete|Respiratory Illness|National Selection|Zoe Gallagher
+Whose friendship with Jo was causing Sean concern in Breaking Point?|Cate McMasters's|Erica Templeton's|Charlotte Beaumont's|Gabrielle Jaeger's|Medium|Breaking Point|Episode 38|Cate McMasters|Jo|Sean Everleigh|Risky Behaviour|Personal Conflict
+Which boy with muscular dystrophy returned critically ill in Love and Hate?|Casey Taylor|Joey Egan|Callum Chifley|Max Morgan|Medium|Love And Hate|Episode 39|Casey Taylor|Duchenne Muscular Dystrophy|Returning Patient|End Of Life|Paul Taylor
+Where did a man's leg become trapped in Love and Hate?|An automatic car wash|A factory mincer|A railway carriage|A shopping-centre lift|Medium|Love And Hate|Episode 39|Automatic Car Wash|Conveyor Belt|Leg Entrapment|Vincent Hughes|MRU Callout
+What professional examination did Jack Quade take in Love and Hate?|His surgeon's exam|His nursing registration exam|His paramedic licence test|His university entrance exam|Medium|Love And Hate|Episode 39|Jack Quade|Surgical Exam|Professional Qualification|Career Assessment|November 2006
+Who was brought to Emergency after a drug overdose in Judgement Day?|Cate McMasters|Erica Templeton|Charlotte Beaumont|Gabrielle Jaeger|Easy|Judgement Day|Episode 40|Cate McMasters|Drug Overdose|Season Finale|Medical Emergency|Hospital Admission
+Which man, furious with Frank over his son's condition, brought a gun to Emergency in Judgement Day?|Paul Taylor|Colin|Mike Vlasek|AJ|Medium|Judgement Day|Episode 40|Paul Taylor|Frank Campion|Gunman|Casey Taylor|Armed Threat
+Which nurse's brother escaped from a crashed prison van in Judgement Day?|Erica Templeton's|Von Ryan's|Gabrielle Jaeger's|Cate McMasters's|Medium|Judgement Day|Episode 40|Erica Templeton|AJ|Prison Van Crash|Prisoner Escape|Family Drama
+Which young patient with unexplained bruising was treated by Zoe and Gabrielle in Judgement Day?|Kyle Jackson|Casey Taylor|Jamie|Joey Egan|Hard|Judgement Day|Episode 40|Kyle Jackson|Zoe Gallagher|Gabrielle Jaeger|Unexplained Bruising|Louisa Jackson`;
+
+let sequence = 0;
+const questions = facts.trim().split('\n').map(line => {
+  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+  const fields = line.trim().split('|').map(s => s.trim());
+  if (fields.length !== 13)
+    throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
+  const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = fields;
+  if (!question || [correctAnswer, wrong1, wrong2, wrong3, ...specificTags].some(v => !v))
+    throw new Error(`Empty field in ${id}`);
+  if (!['Easy', 'Medium', 'Hard'].includes(difficulty) || specificTags.length !== 7)
+    throw new Error(`Invalid difficulty or question-specific tags in ${id}`);
+  if (new Set([correctAnswer, wrong1, wrong2, wrong3].map(s => s.toLowerCase())).size !== 4)
+    throw new Error(`Repeated answer option in ${id}`);
+  const answers = [wrong1, wrong2, wrong3];
+  answers.splice(sequence % 4, 0, correctAnswer);
+  const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
+    .map(tag => [tag.toLowerCase(), tag])).values()];
+  sequence++;
+  return {
+    id, category: 'Television', programme, question, answers,
+    correctAnswer, difficulty, tags, dailyEligible: true
+  };
+});
+
+if (
+  !questions.length || questions[0].id !== 'tv_24861' ||
+  new Set(questions.map(q => q.id)).size !== questions.length ||
+  new Set(questions.map(q => q.question.toLowerCase())).size !== questions.length ||
+  questions.some(q =>
+    q.answers.length !== 4 || !q.answers.includes(q.correctAnswer) ||
+    q.tags.length < 14 || !q.tags.includes('Programme: All Saints') ||
+    q.dailyEligible !== true
+  )
+) throw new Error('Pack 428 exported question validation failed');
+
+module.exports = questions;
