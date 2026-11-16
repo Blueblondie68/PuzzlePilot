@@ -6,7 +6,7 @@
 
 const questions = [
   {
-    "id": "dogpic_00041",
+    "id": "dogpic_00056",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Which breed of dog is pictured?",
@@ -44,7 +44,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00042",
+    "id": "dogpic_00057",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Identify the breed of the dog shown here.",
@@ -82,7 +82,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00043",
+    "id": "dogpic_00058",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "What breed of dog can you see in this image?",
@@ -120,7 +120,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00044",
+    "id": "dogpic_00059",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Which recognised dog breed is shown?",
@@ -158,7 +158,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00045",
+    "id": "dogpic_00060",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Name the dog breed pictured here.",
@@ -196,7 +196,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00046",
+    "id": "dogpic_00061",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "What breed is represented by this dog portrait?",
@@ -234,7 +234,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00047",
+    "id": "dogpic_00062",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Which breed can you identify in the photograph?",
@@ -272,7 +272,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00048",
+    "id": "dogpic_00063",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Choose the breed of the dog shown here.",
@@ -310,7 +310,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00049",
+    "id": "dogpic_00064",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Which breed appears in this picture?",
@@ -348,7 +348,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00050",
+    "id": "dogpic_00065",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "What is the exact breed of the dog pictured?",
@@ -386,7 +386,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00051",
+    "id": "dogpic_00066",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Which dog breed is shown here?",
@@ -424,7 +424,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00052",
+    "id": "dogpic_00067",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Identify the breed in this photograph.",
@@ -462,7 +462,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00053",
+    "id": "dogpic_00068",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Which breed is represented in this image?",
@@ -500,7 +500,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00054",
+    "id": "dogpic_00069",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "What breed of dog is this?",
@@ -538,7 +538,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "dogpic_00055",
+    "id": "dogpic_00070",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
     "question": "Which breed can you see in this portrait?",
@@ -581,7 +581,7 @@ if (questions.length !== 15 ||
     new Set(questions.map(q => q.id)).size !== 15 ||
     new Set(questions.map(q => q.correctAnswer.toLowerCase())).size !== 15 ||
     new Set(questions.map(q => q.picture.file)).size !== 15 ||
-    questions.some(q => !/^dogpic_000[4-5][0-9]$/.test(q.id) ||
+    questions.some((q, i) => q.id !== 'dogpic_' + String(i + 56).padStart(5, '0') ||
       q.answers.length !== 4 ||
       q.answers.filter(a => a === q.correctAnswer).length !== 1 ||
       new Set(q.answers.map(a => a.toLowerCase())).size !== 4 ||
