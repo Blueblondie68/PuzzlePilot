@@ -17,7 +17,7 @@
 // This file controls which quiz packs are currently
 // connected to the live PuzzlePilot quiz.
 //
-// Packs 1-445 are connected to the live quiz bank.
+// Packs 1-446 are connected to the live quiz bank.
 //
 
 // =====================================================
@@ -25,7 +25,7 @@
 // =====================================================
 
 const FIRST_QUIZ_PACK = 1;
-const LAST_QUIZ_PACK = 445;
+const LAST_QUIZ_PACK = 446;
 
 // =====================================================
 // LOAD QUIZ PACKS
@@ -57,6 +57,17 @@ for (
 // =====================================================
 
 const questionBank = quizPacks.flat();
+
+// Protect the entire bank, not only IDs within individual packs.
+// A duplicate in separate packs must stop startup before syncing to Neon.
+const seenQuestionIds = new Set();
+for (const question of questionBank) {
+    if (!question || typeof question.id !== 'string' ||
+        !question.id.trim() || seenQuestionIds.has(question.id)) {
+        throw new Error('Quiz bank contains an invalid or duplicate question ID.');
+    }
+    seenQuestionIds.add(question.id);
+}
 
 console.log(
     `Quiz question bank loaded: ` +
