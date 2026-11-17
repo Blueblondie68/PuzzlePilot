@@ -264,7 +264,7 @@ const questions = [
     "question": "Which breed of dog is shown in this picture?",
     "answers": [
       "Pomeranian",
-      "German Spitz Mittel",
+      "Keeshond",
       "Japanese Spitz",
       "Volpino Italiano"
     ],
@@ -297,7 +297,7 @@ const questions = [
     "id": "dogpic_00034",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
-    "question": "Which dog breed is shown in this photograph?",
+    "question": "Which dog breed is shown in this picture?",
     "answers": [
       "Saint Bernard",
       "Bernese Mountain Dog",
@@ -372,7 +372,7 @@ const questions = [
     "question": "Which breed is shown in this picture?",
     "answers": [
       "English Springer Spaniel",
-      "English Cocker Spaniel",
+      "Clumber Spaniel",
       "Welsh Springer Spaniel",
       "Brittany Spaniel"
     ],
@@ -409,7 +409,7 @@ const questions = [
     "answers": [
       "Border Terrier",
       "Cairn Terrier",
-      "Norfolk Terrier",
+      "Scottish Terrier",
       "Jack Russell Terrier"
     ],
     "correctAnswer": "Border Terrier",
@@ -446,7 +446,7 @@ const questions = [
       "Bull Terrier",
       "Staffordshire Bull Terrier",
       "American Pit Bull Terrier",
-      "Miniature Bull Terrier"
+      "Boxer"
     ],
     "correctAnswer": "Bull Terrier",
     "difficulty": "Medium",
@@ -477,7 +477,7 @@ const questions = [
     "id": "dogpic_00039",
     "category": "Science & Nature",
     "topic": "Dog Breeds",
-    "question": "Name the dog breed in this photograph.",
+    "question": "Name the dog breed in this picture.",
     "answers": [
       "Chow Chow",
       "Akita",
