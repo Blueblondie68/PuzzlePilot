@@ -588,7 +588,7 @@ const questions=[
     "id": "tv_26299",
     "category": "TV",
     "topic": "Being Human (UK)",
-    "question": "Who portrayed the vampire Mitchell in Being Human's five-series regular run?",
+    "question": "Who portrayed the vampire Mitchell from series one through series three of Being Human?",
     "answers": [
       "Guy Flanagan",
       "Damien Molony",
@@ -620,7 +620,7 @@ const questions=[
     "id": "tv_26300",
     "category": "TV",
     "topic": "Being Human (UK)",
-    "question": "Which actress portrayed Annie Sawyer during the regular series?",
+    "question": "Which actress portrayed Annie Sawyer from series one through series four of Being Human?",
     "answers": [
       "Andrea Riseborough",
       "Kate Bracken",
@@ -2572,7 +2572,7 @@ const questions=[
     "id": "tv_26361",
     "category": "TV",
     "topic": "Being Human (UK)",
-    "question": "At which hotel do Hal, Tom and Alex work during the final series?",
+    "question": "At which hotel do Hal and Tom take jobs during the final series?",
     "answers": [
       "The Bristol Royal",
       "The Barry Grand Hotel",
