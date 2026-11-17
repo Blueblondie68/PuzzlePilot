@@ -1,8 +1,10 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 464
-// Chemical element NAME ORIGINS: 99 distinct, clearly stated etymologies.
+// Chemical element NAME ORIGINS: 105 distinct, clearly stated etymologies.
 // Source guide: Royal Society of Chemistry's element-by-element naming histories:
 // https://periodic-table.rsc.org/
 // For the 2016 names see IUPAC https://iupac.org/iupac-announces-the-names-of-the-elements-113-115-117-and-118/
+// Six further verified origins: carbon, arsenic, zirconium, mercury, radon, actinium.
+// Thirteen still excluded: unclear etymologies or repetition of the Ytterby fact.
 // Remaining less-certain or repetitive etymologies are reserved for review.
 // Fact-based name origins, not repeated symbols or atomic-number questions.
 'use strict';
@@ -3075,11 +3077,197 @@ const questions = [
       "Written Questions"
     ],
     "dailyEligible": true
+  },
+  {
+    "id": "chem_origin_00100",
+    "category": "Science & Nature",
+    "topic": "Chemical Element Name Origins",
+    "question": "What does the Latin word carbo, from which carbon gets its name, mean?",
+    "answers": [
+      "Salt",
+      "Lime",
+      "Chalk",
+      "Charcoal"
+    ],
+    "correctAnswer": "Charcoal",
+    "difficulty": "Easy",
+    "tags": [
+      "Science & Nature",
+      "Chemistry",
+      "Periodic Table",
+      "Chemical Elements",
+      "Element Naming",
+      "Name Etymology",
+      "Element: Carbon",
+      "Symbol: C",
+      "Atomic Number: 6",
+      "Origin: Charcoal",
+      "Origin Category: meaning",
+      "Historical Terminology",
+      "UK Chemistry",
+      "Written Questions"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "chem_origin_00101",
+    "category": "Science & Nature",
+    "topic": "Chemical Element Name Origins",
+    "question": "Which historical yellow pigment is linked to the origin of the name arsenic?",
+    "answers": [
+      "Orpiment",
+      "Ochre",
+      "Cinnabar",
+      "Ultramarine"
+    ],
+    "correctAnswer": "Orpiment",
+    "difficulty": "Medium",
+    "tags": [
+      "Science & Nature",
+      "Chemistry",
+      "Periodic Table",
+      "Chemical Elements",
+      "Element Naming",
+      "Name Etymology",
+      "Element: Arsenic",
+      "Symbol: As",
+      "Atomic Number: 33",
+      "Origin: Orpiment",
+      "Origin Category: material",
+      "Historical Terminology",
+      "UK Chemistry",
+      "Written Questions"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "chem_origin_00102",
+    "category": "Science & Nature",
+    "topic": "Chemical Element Name Origins",
+    "question": "Which mineral gave the element zirconium its name?",
+    "answers": [
+      "Zirconia",
+      "Zircon",
+      "Beryl",
+      "Rutile"
+    ],
+    "correctAnswer": "Zircon",
+    "difficulty": "Medium",
+    "tags": [
+      "Science & Nature",
+      "Chemistry",
+      "Periodic Table",
+      "Chemical Elements",
+      "Element Naming",
+      "Name Etymology",
+      "Element: Zirconium",
+      "Symbol: Zr",
+      "Atomic Number: 40",
+      "Origin: Zircon",
+      "Origin Category: material",
+      "Historical Terminology",
+      "UK Chemistry",
+      "Written Questions"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "chem_origin_00103",
+    "category": "Science & Nature",
+    "topic": "Chemical Element Name Origins",
+    "question": "Which Roman god inspired the English name of the element mercury?",
+    "answers": [
+      "Vulcan",
+      "Mars",
+      "Mercury",
+      "Jupiter"
+    ],
+    "correctAnswer": "Mercury",
+    "difficulty": "Medium",
+    "tags": [
+      "Science & Nature",
+      "Chemistry",
+      "Periodic Table",
+      "Chemical Elements",
+      "Element Naming",
+      "Name Etymology",
+      "Element: Mercury",
+      "Symbol: Hg",
+      "Atomic Number: 80",
+      "Origin: Mercury",
+      "Origin Category: myth",
+      "Historical Terminology",
+      "UK Chemistry",
+      "Written Questions"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "chem_origin_00104",
+    "category": "Science & Nature",
+    "topic": "Chemical Element Name Origins",
+    "question": "The element radon was named from the name of which radioactive element?",
+    "answers": [
+      "Thorium",
+      "Uranium",
+      "Actinium",
+      "Radium"
+    ],
+    "correctAnswer": "Radium",
+    "difficulty": "Medium",
+    "tags": [
+      "Science & Nature",
+      "Chemistry",
+      "Periodic Table",
+      "Chemical Elements",
+      "Element Naming",
+      "Name Etymology",
+      "Element: Radon",
+      "Symbol: Rn",
+      "Atomic Number: 86",
+      "Origin: Radium",
+      "Origin Category: material",
+      "Historical Terminology",
+      "UK Chemistry",
+      "Written Questions"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "chem_origin_00105",
+    "category": "Science & Nature",
+    "topic": "Chemical Element Name Origins",
+    "question": "What does the Greek word behind the name actinium mean?",
+    "answers": [
+      "Ray",
+      "Shadow",
+      "Stone",
+      "Light"
+    ],
+    "correctAnswer": "Ray",
+    "difficulty": "Hard",
+    "tags": [
+      "Science & Nature",
+      "Chemistry",
+      "Periodic Table",
+      "Chemical Elements",
+      "Element Naming",
+      "Name Etymology",
+      "Element: Actinium",
+      "Symbol: Ac",
+      "Atomic Number: 89",
+      "Origin: Ray",
+      "Origin Category: meaning",
+      "Historical Terminology",
+      "UK Chemistry",
+      "Written Questions"
+    ],
+    "dailyEligible": true
   }
 ];
-if (questions.length!==99 ||
- new Set(questions.map(q=>q.id)).size!==99 ||
- new Set(questions.map(q=>q.question.toLowerCase())).size!==99 ||
+if (questions.length!==105 ||
+ new Set(questions.map(q=>q.id)).size!==105 ||
+ new Set(questions.map(q=>q.question.toLowerCase())).size!==105 ||
  questions.some((q,i)=>
  q.id!=='chem_origin_'+String(i+1).padStart(5,'0') ||
  q.category!=='Science & Nature' || q.topic!=='Chemical Element Name Origins' ||
