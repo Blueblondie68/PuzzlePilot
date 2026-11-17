@@ -1,0 +1,47 @@
+// PuzzlePilot — The Bigggggg Quiz — Pack 463
+// 117 new atomic-number facts covering all elements except carbon (Z=6).
+// Carbon's atomic number was already asked in Pack 2, science_0057.
+// Authority: https://iupac.org/what-we-do/periodic-table-of-elements/
+// All answers based on IUPAC atomic numbers, NOT atomic weights.
+'use strict';
+const ELEMENTS = [{"z":1,"symbol":"H","name":"Hydrogen"},{"z":2,"symbol":"He","name":"Helium"},{"z":3,"symbol":"Li","name":"Lithium"},{"z":4,"symbol":"Be","name":"Beryllium"},{"z":5,"symbol":"B","name":"Boron"},{"z":6,"symbol":"C","name":"Carbon"},{"z":7,"symbol":"N","name":"Nitrogen"},{"z":8,"symbol":"O","name":"Oxygen"},{"z":9,"symbol":"F","name":"Fluorine"},{"z":10,"symbol":"Ne","name":"Neon"},{"z":11,"symbol":"Na","name":"Sodium"},{"z":12,"symbol":"Mg","name":"Magnesium"},{"z":13,"symbol":"Al","name":"Aluminium"},{"z":14,"symbol":"Si","name":"Silicon"},{"z":15,"symbol":"P","name":"Phosphorus"},{"z":16,"symbol":"S","name":"Sulfur"},{"z":17,"symbol":"Cl","name":"Chlorine"},{"z":18,"symbol":"Ar","name":"Argon"},{"z":19,"symbol":"K","name":"Potassium"},{"z":20,"symbol":"Ca","name":"Calcium"},{"z":21,"symbol":"Sc","name":"Scandium"},{"z":22,"symbol":"Ti","name":"Titanium"},{"z":23,"symbol":"V","name":"Vanadium"},{"z":24,"symbol":"Cr","name":"Chromium"},{"z":25,"symbol":"Mn","name":"Manganese"},{"z":26,"symbol":"Fe","name":"Iron"},{"z":27,"symbol":"Co","name":"Cobalt"},{"z":28,"symbol":"Ni","name":"Nickel"},{"z":29,"symbol":"Cu","name":"Copper"},{"z":30,"symbol":"Zn","name":"Zinc"},{"z":31,"symbol":"Ga","name":"Gallium"},{"z":32,"symbol":"Ge","name":"Germanium"},{"z":33,"symbol":"As","name":"Arsenic"},{"z":34,"symbol":"Se","name":"Selenium"},{"z":35,"symbol":"Br","name":"Bromine"},{"z":36,"symbol":"Kr","name":"Krypton"},{"z":37,"symbol":"Rb","name":"Rubidium"},{"z":38,"symbol":"Sr","name":"Strontium"},{"z":39,"symbol":"Y","name":"Yttrium"},{"z":40,"symbol":"Zr","name":"Zirconium"},{"z":41,"symbol":"Nb","name":"Niobium"},{"z":42,"symbol":"Mo","name":"Molybdenum"},{"z":43,"symbol":"Tc","name":"Technetium"},{"z":44,"symbol":"Ru","name":"Ruthenium"},{"z":45,"symbol":"Rh","name":"Rhodium"},{"z":46,"symbol":"Pd","name":"Palladium"},{"z":47,"symbol":"Ag","name":"Silver"},{"z":48,"symbol":"Cd","name":"Cadmium"},{"z":49,"symbol":"In","name":"Indium"},{"z":50,"symbol":"Sn","name":"Tin"},{"z":51,"symbol":"Sb","name":"Antimony"},{"z":52,"symbol":"Te","name":"Tellurium"},{"z":53,"symbol":"I","name":"Iodine"},{"z":54,"symbol":"Xe","name":"Xenon"},{"z":55,"symbol":"Cs","name":"Caesium"},{"z":56,"symbol":"Ba","name":"Barium"},{"z":57,"symbol":"La","name":"Lanthanum"},{"z":58,"symbol":"Ce","name":"Cerium"},{"z":59,"symbol":"Pr","name":"Praseodymium"},{"z":60,"symbol":"Nd","name":"Neodymium"},{"z":61,"symbol":"Pm","name":"Promethium"},{"z":62,"symbol":"Sm","name":"Samarium"},{"z":63,"symbol":"Eu","name":"Europium"},{"z":64,"symbol":"Gd","name":"Gadolinium"},{"z":65,"symbol":"Tb","name":"Terbium"},{"z":66,"symbol":"Dy","name":"Dysprosium"},{"z":67,"symbol":"Ho","name":"Holmium"},{"z":68,"symbol":"Er","name":"Erbium"},{"z":69,"symbol":"Tm","name":"Thulium"},{"z":70,"symbol":"Yb","name":"Ytterbium"},{"z":71,"symbol":"Lu","name":"Lutetium"},{"z":72,"symbol":"Hf","name":"Hafnium"},{"z":73,"symbol":"Ta","name":"Tantalum"},{"z":74,"symbol":"W","name":"Tungsten"},{"z":75,"symbol":"Re","name":"Rhenium"},{"z":76,"symbol":"Os","name":"Osmium"},{"z":77,"symbol":"Ir","name":"Iridium"},{"z":78,"symbol":"Pt","name":"Platinum"},{"z":79,"symbol":"Au","name":"Gold"},{"z":80,"symbol":"Hg","name":"Mercury"},{"z":81,"symbol":"Tl","name":"Thallium"},{"z":82,"symbol":"Pb","name":"Lead"},{"z":83,"symbol":"Bi","name":"Bismuth"},{"z":84,"symbol":"Po","name":"Polonium"},{"z":85,"symbol":"At","name":"Astatine"},{"z":86,"symbol":"Rn","name":"Radon"},{"z":87,"symbol":"Fr","name":"Francium"},{"z":88,"symbol":"Ra","name":"Radium"},{"z":89,"symbol":"Ac","name":"Actinium"},{"z":90,"symbol":"Th","name":"Thorium"},{"z":91,"symbol":"Pa","name":"Protactinium"},{"z":92,"symbol":"U","name":"Uranium"},{"z":93,"symbol":"Np","name":"Neptunium"},{"z":94,"symbol":"Pu","name":"Plutonium"},{"z":95,"symbol":"Am","name":"Americium"},{"z":96,"symbol":"Cm","name":"Curium"},{"z":97,"symbol":"Bk","name":"Berkelium"},{"z":98,"symbol":"Cf","name":"Californium"},{"z":99,"symbol":"Es","name":"Einsteinium"},{"z":100,"symbol":"Fm","name":"Fermium"},{"z":101,"symbol":"Md","name":"Mendelevium"},{"z":102,"symbol":"No","name":"Nobelium"},{"z":103,"symbol":"Lr","name":"Lawrencium"},{"z":104,"symbol":"Rf","name":"Rutherfordium"},{"z":105,"symbol":"Db","name":"Dubnium"},{"z":106,"symbol":"Sg","name":"Seaborgium"},{"z":107,"symbol":"Bh","name":"Bohrium"},{"z":108,"symbol":"Hs","name":"Hassium"},{"z":109,"symbol":"Mt","name":"Meitnerium"},{"z":110,"symbol":"Ds","name":"Darmstadtium"},{"z":111,"symbol":"Rg","name":"Roentgenium"},{"z":112,"symbol":"Cn","name":"Copernicium"},{"z":113,"symbol":"Nh","name":"Nihonium"},{"z":114,"symbol":"Fl","name":"Flerovium"},{"z":115,"symbol":"Mc","name":"Moscovium"},{"z":116,"symbol":"Lv","name":"Livermorium"},{"z":117,"symbol":"Ts","name":"Tennessine"},{"z":118,"symbol":"Og","name":"Oganesson"}];
+const facts = ELEMENTS.filter(e => e.z!==6);
+const periodOf = z => z<=2?1:z<=10?2:z<=18?3:z<=36?4:z<=54?5:z<=86?6:7;
+const near = z => {
+ const candidates=ELEMENTS.filter(e=>e.z!==z).sort((a,b)=>
+   Math.abs(a.z-z)-Math.abs(b.z-z)||a.z-b.z);
+ return candidates.slice(0,3);
+};
+const questions = facts.map((e,i)=>{
+ const askForNumber = e.z % 2 === 0;
+ const correctAnswer=askForNumber?String(e.z):e.name;
+ const wrong=near(e.z).map(x=>askForNumber?String(x.z):x.name);
+ const answers=[...wrong];
+ answers.splice((e.z+i)%4,0,correctAnswer);
+ return {
+   id:'chem_number_'+String(i+1).padStart(5,'0'),
+   category:'Science & Nature',
+   topic:'Chemical Elements & Atomic Numbers',
+   question:askForNumber?
+      `What is the atomic number of ${e.name}?`: 
+      `Which chemical element has atomic number ${e.z}?`,
+   answers, correctAnswer,
+   difficulty:e.z<=20?'Easy':e.z<=56?'Medium':'Hard',
+   tags:['Science & Nature','Chemistry','Periodic Table','Chemical Elements',
+      'Atomic Numbers','Element Identification',`Element: ${e.name}`,
+      `Chemical Symbol: ${e.symbol}`,`Atomic Number: ${e.z}`,
+      `Period: ${periodOf(e.z)}`,'UK Chemistry','IUPAC','Atomic Structure',
+      'Written Questions'],
+   dailyEligible:true
+ };
+});
+if (questions.length!==117 || new Set(questions.map(q=>q.id)).size!==117 ||
+ new Set(questions.map(q=>q.question)).size!==117 ||
+ questions.some((q,i)=>q.id!=='chem_number_'+String(i+1).padStart(5,'0') ||
+  q.answers.length!==4 || new Set(q.answers).size!==4 ||
+  q.answers.filter(a=>a===q.correctAnswer).length!==1 ||
+  q.tags.length<12 || new Set(q.tags).size!==q.tags.length ||
+  q.dailyEligible!==true || q.category!=='Science & Nature')){
+ throw new Error('Pack 463 atomic-number validation failed');
+}
+module.exports=questions;
