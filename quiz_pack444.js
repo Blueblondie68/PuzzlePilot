@@ -239,8 +239,8 @@ const questions = [
     "topic": "Dog Breeds",
     "question": "Identify the breed of this slim racing dog.",
     "answers": [
-      "Italian Greyhound",
-      "Whippet",
+      "Pharaoh Hound",
+      "Saluki",
       "Sloughi",
       "Greyhound"
     ],
@@ -353,9 +353,9 @@ const questions = [
     "topic": "Dog Breeds",
     "question": "Which sheepdog breed is pictured?",
     "answers": [
-      "Bearded Collie",
+      "Puli",
       "Briard",
-      "Polish Lowland Sheepdog",
+      "Bergamasco Sheepdog",
       "Old English Sheepdog"
     ],
     "correctAnswer": "Old English Sheepdog",
@@ -391,7 +391,7 @@ const questions = [
     "topic": "Dog Breeds",
     "question": "What is the breed of this long-coated herding dog?",
     "answers": [
-      "Shetland Sheepdog",
+      "Australian Shepherd",
       "Rough Collie",
       "Border Collie",
       "English Shepherd"
@@ -429,7 +429,7 @@ const questions = [
     "topic": "Dog Breeds",
     "question": "Identify the small herding breed pictured here.",
     "answers": [
-      "Rough Collie",
+      "Australian Cattle Dog",
       "Miniature American Shepherd",
       "Shetland Sheepdog",
       "Border Collie"
@@ -468,7 +468,7 @@ const questions = [
     "question": "Which small terrier breed is shown?",
     "answers": [
       "Jack Russell Terrier",
-      "Parson Russell Terrier",
+      "Border Terrier",
       "Fox Terrier",
       "Rat Terrier"
     ],
