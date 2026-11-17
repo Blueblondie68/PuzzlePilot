@@ -241,7 +241,7 @@ const questions = [
     "answers": [
       "Pharaoh Hound",
       "Saluki",
-      "Sloughi",
+      "Afghan Hound",
       "Greyhound"
     ],
     "correctAnswer": "Greyhound",
