@@ -2,8 +2,8 @@
 // Comprehensive original TV run: all TEN regular series plus both scripted specials.
 // 74 scripted instalments TOTAL: 72 regular episodes, 2009 Summer Special and 2010 Christmas Special.
 // Separate 2012 Sport Relief sketch and 2018 anniversary documentary are trivia, not extra scripted episodes.
-// 140 specific unique questions covering production, characters and every series/special.
-// IDs tv_26479–tv_26618. No Benidorm overlap found in first 20 mixed packs or repo search.
+// 139 specific unique questions covering production, characters and every series/special.
+// IDs tv_26479–tv_26617. No Benidorm overlap found in first 20 mixed packs or repo search.
 // Fact sources: https://www.comedy.co.uk/tv/benidorm/episodes/
 // https://www.comedy.co.uk/tv/benidorm/cast_crew/full/
 // https://www.comedy.co.uk/tv/benidorm/characters/
@@ -879,38 +879,6 @@ const questions=[
     "id": "tv_26506",
     "category": "TV",
     "topic": "Benidorm",
-    "question": "Which Benidorm holidaymaker first brings Joey Ellis along as his friend?",
-    "answers": [
-      "Rob Dawson",
-      "Michael Garvey",
-      "Tiger Dyke",
-      "Geoff Maltby"
-    ],
-    "correctAnswer": "Tiger Dyke",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "British Television",
-      "Programme: Benidorm",
-      "Benidorm (ITV)",
-      "British Sitcom",
-      "Solana Resort",
-      "2007–2018 Original Run",
-      "Written Questions",
-      "Coverage: Characters and relationships",
-      "Tiger Dyke",
-      "Joey Ellis",
-      "Series Eight",
-      "Friends",
-      "New Holidaymakers",
-      "Dyke Connection"
-    ]
-  },
-  {
-    "id": "tv_26507",
-    "category": "TV",
-    "topic": "Benidorm",
     "question": "Who portrayed Mateo in ITV's Benidorm?",
     "answers": [
       "Sheila Reid",
@@ -941,7 +909,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26508",
+    "id": "tv_26507",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which performer played Jacqueline Stewart in Benidorm?",
@@ -974,7 +942,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26509",
+    "id": "tv_26508",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In the sitcom Benidorm, who played the character Les / Lesley?",
@@ -1007,7 +975,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26510",
+    "id": "tv_26509",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who portrayed Liam in ITV's Benidorm?",
@@ -1040,7 +1008,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26511",
+    "id": "tv_26510",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which performer played Kenneth du Beke in Benidorm?",
@@ -1073,7 +1041,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26512",
+    "id": "tv_26511",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In the sitcom Benidorm, who played the character Joyce Temple-Savage?",
@@ -1106,7 +1074,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26513",
+    "id": "tv_26512",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who portrayed Monty Staines in ITV's Benidorm?",
@@ -1139,7 +1107,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26514",
+    "id": "tv_26513",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which performer played Mick Garvey in Benidorm?",
@@ -1172,7 +1140,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26515",
+    "id": "tv_26514",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In the sitcom Benidorm, who played the character Janice Garvey?",
@@ -1205,7 +1173,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26516",
+    "id": "tv_26515",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who portrayed Madge Harvey in ITV's Benidorm?",
@@ -1238,7 +1206,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26517",
+    "id": "tv_26516",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which performer played Michael Garvey in Benidorm?",
@@ -1271,7 +1239,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26518",
+    "id": "tv_26517",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In the sitcom Benidorm, who played the character Geoff Maltby / The Oracle?",
@@ -1304,7 +1272,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26519",
+    "id": "tv_26518",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who portrayed Noreen Maltby in ITV's Benidorm?",
@@ -1337,7 +1305,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26520",
+    "id": "tv_26519",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which performer played Donald Stewart in Benidorm?",
@@ -1370,7 +1338,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26521",
+    "id": "tv_26520",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In the sitcom Benidorm, who played the character Mel Harvey?",
@@ -1403,7 +1371,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26522",
+    "id": "tv_26521",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who portrayed Gavin Ramsbottom in ITV's Benidorm?",
@@ -1436,7 +1404,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26523",
+    "id": "tv_26522",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which performer played Troy in Benidorm?",
@@ -1469,7 +1437,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26524",
+    "id": "tv_26523",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In the sitcom Benidorm, who played the character Martin Weedon?",
@@ -1502,7 +1470,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26525",
+    "id": "tv_26524",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who portrayed Kate Weedon in ITV's Benidorm?",
@@ -1535,7 +1503,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26526",
+    "id": "tv_26525",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which performer played Janey York in Benidorm?",
@@ -1568,7 +1536,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26527",
+    "id": "tv_26526",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In the sitcom Benidorm, who played the character Billy Dawson?",
@@ -1601,7 +1569,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26528",
+    "id": "tv_26527",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who portrayed Sheron Dawson in ITV's Benidorm?",
@@ -1634,7 +1602,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26529",
+    "id": "tv_26528",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which performer played Eddie Dawson in Benidorm?",
@@ -1667,7 +1635,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26530",
+    "id": "tv_26529",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In the sitcom Benidorm, who played the character Rob Dawson?",
@@ -1700,7 +1668,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26531",
+    "id": "tv_26530",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who portrayed Tiger Dyke in ITV's Benidorm?",
@@ -1733,7 +1701,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26532",
+    "id": "tv_26531",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which performer played Tonya Dyke in Benidorm?",
@@ -1766,7 +1734,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26533",
+    "id": "tv_26532",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In the sitcom Benidorm, who played the character Pauline Maltby?",
@@ -1799,7 +1767,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26534",
+    "id": "tv_26533",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who portrayed Joey Ellis in ITV's Benidorm?",
@@ -1832,7 +1800,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26535",
+    "id": "tv_26534",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which performer played Callum in Benidorm?",
@@ -1865,7 +1833,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26536",
+    "id": "tv_26535",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In the sitcom Benidorm, who played the character Cyd?",
@@ -1898,7 +1866,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26537",
+    "id": "tv_26536",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who portrayed Loretta in ITV's Benidorm?",
@@ -1931,7 +1899,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26538",
+    "id": "tv_26537",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which Garvey family member's pregnancy is a major surprise early in Benidorm's first series?",
@@ -1963,7 +1931,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26539",
+    "id": "tv_26538",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which Benidorm waiter does hotel worker Kelly announce she is engaged to in series one?",
@@ -1995,7 +1963,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26540",
+    "id": "tv_26539",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who makes Janice jealous by singing karaoke after meeting Mick while he bought flip-flops?",
@@ -2027,7 +1995,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26541",
+    "id": "tv_26540",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which holidaymaker reveals his competitive side during the Solana's first-series pub quiz?",
@@ -2059,7 +2027,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26542",
+    "id": "tv_26541",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which Benidorm couple are helped by Donald after they suffer relationship problems in the first series?",
@@ -2091,7 +2059,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26543",
+    "id": "tv_26542",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In Benidorm's first-series finale, Geoff tells his mother that he wants to stop doing what?",
@@ -2123,7 +2091,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26544",
+    "id": "tv_26543",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which new boyfriend does Madge bring to the Solana for the second series of Benidorm?",
@@ -2155,7 +2123,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26545",
+    "id": "tv_26544",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What is the name of Chantelle Garvey's baby, cared for by Martin and Kate in series two?",
@@ -2187,7 +2155,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26546",
+    "id": "tv_26545",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What does Mel unexpectedly ask Madge during a karaoke evening in Benidorm series two?",
@@ -2219,7 +2187,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26547",
+    "id": "tv_26546",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What type of contest organised by the Oracle in series two turns into a fight club?",
@@ -2251,7 +2219,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26548",
+    "id": "tv_26547",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What attraction do Benidorm holidaymakers visit on a supposedly free group trip in series two?",
@@ -2283,7 +2251,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26549",
+    "id": "tv_26548",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What is the name of Kelly's mother, who comes to Benidorm while Mateo tries to win Kelly back?",
@@ -2315,7 +2283,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26550",
+    "id": "tv_26549",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Whose beachside wedding plans are disrupted at the end of Benidorm's second series?",
@@ -2347,7 +2315,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26551",
+    "id": "tv_26550",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In which year was Benidorm's Summer Special broadcast between series two and three?",
@@ -2379,7 +2347,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26552",
+    "id": "tv_26551",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which Garvey is in a Spanish jail at the start of Benidorm's 2009 Summer Special?",
@@ -2411,7 +2379,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26553",
+    "id": "tv_26552",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which character's coma is resolved in the Benidorm Summer Special?",
@@ -2443,7 +2411,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26554",
+    "id": "tv_26553",
     "category": "TV",
     "topic": "Benidorm",
     "question": "The 2009 Benidorm Summer Special follows which regular series' cliffhanger?",
@@ -2475,7 +2443,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26555",
+    "id": "tv_26554",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Why do the Solana holidaymakers receive a free week at the start of Benidorm's third series?",
@@ -2507,7 +2475,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26556",
+    "id": "tv_26555",
     "category": "TV",
     "topic": "Benidorm",
     "question": "The third-series trip that strains Mick and Janice's marriage visits waterfalls at which place?",
@@ -2539,7 +2507,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26557",
+    "id": "tv_26556",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What local attraction does Mel dream of buying in the third series of Benidorm?",
@@ -2571,7 +2539,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26558",
+    "id": "tv_26557",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which estranged daughter of Madge arrives at the Solana in Benidorm series three?",
@@ -2603,7 +2571,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26559",
+    "id": "tv_26558",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What sort of troublemaker is Gary, who targets the holidaymakers in Benidorm series three?",
@@ -2635,7 +2603,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26560",
+    "id": "tv_26559",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which friend of Donald and Jacqueline visits during the third-series finale?",
@@ -2667,7 +2635,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26561",
+    "id": "tv_26560",
     "category": "TV",
     "topic": "Benidorm",
     "question": "On which date was Benidorm's Christmas Special first broadcast in 2010?",
@@ -2699,7 +2667,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26562",
+    "id": "tv_26561",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Where are the Garvey family staying with Madge for Benidorm's 2010 Christmas Special?",
@@ -2731,7 +2699,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26563",
+    "id": "tv_26562",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which British entertainer is billed as the star of the Benidorm Palace show in the Christmas Special?",
@@ -2763,7 +2731,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26564",
+    "id": "tv_26563",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Where is the Christmas show star unexpectedly diverted to during Benidorm's 2010 special?",
@@ -2795,7 +2763,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26565",
+    "id": "tv_26564",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which actor played Noreen's romantic interest Clive in the Benidorm Christmas Special?",
@@ -2827,7 +2795,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26566",
+    "id": "tv_26565",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which singer makes a guest appearance when the Garveys try to find Madge in Benidorm series four?",
@@ -2859,7 +2827,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26567",
+    "id": "tv_26566",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who joins Gavin for his holiday as a new companion in Benidorm's fourth series?",
@@ -2891,7 +2859,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26568",
+    "id": "tv_26567",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which relative accompanies Noreen Maltby to the Solana in Benidorm series four?",
@@ -2923,7 +2891,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26569",
+    "id": "tv_26568",
     "category": "TV",
     "topic": "Benidorm",
     "question": "In series four, Madge is pursued by gangsters over debts connected to which deceased relative?",
@@ -2955,7 +2923,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26570",
+    "id": "tv_26569",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What unusual entertainment does Les/Lesley arrange during a freak storm at the Solana?",
@@ -2987,7 +2955,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26571",
+    "id": "tv_26570",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which pop group appear as guests during Benidorm's series-four Eighties Night?",
@@ -3019,7 +2987,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26572",
+    "id": "tv_26571",
     "category": "TV",
     "topic": "Benidorm",
     "question": "On which beach does Les/Lesley find Donald's clothes during the final episode of series four?",
@@ -3051,7 +3019,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26573",
+    "id": "tv_26572",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who takes over management of the Solana in Benidorm's fifth series?",
@@ -3082,7 +3050,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26574",
+    "id": "tv_26573",
     "category": "TV",
     "topic": "Benidorm",
     "question": "To what star rating does Joyce Temple-Savage want to upgrade the Solana?",
@@ -3114,7 +3082,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26575",
+    "id": "tv_26574",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What competition does Joyce organise for Solana guests in series five's second episode?",
@@ -3146,7 +3114,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26576",
+    "id": "tv_26575",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which TV personality, Joyce's former flame, supervises the series-five dance rehearsals?",
@@ -3178,7 +3146,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26577",
+    "id": "tv_26576",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who arrives for a stag party alongside Mick's father Stan in Benidorm series five?",
@@ -3210,7 +3178,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26578",
+    "id": "tv_26577",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which national sporting team visits the Solana to train in series five?",
@@ -3242,7 +3210,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26579",
+    "id": "tv_26578",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who is the wealthy man Madge plans to marry in Benidorm series five?",
@@ -3274,7 +3242,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26580",
+    "id": "tv_26579",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Whom does Joyce mistakenly suspect of being a secret hotel assessor in the series-five finale?",
@@ -3306,7 +3274,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26581",
+    "id": "tv_26580",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which family from Watford joins the Solana holidaymakers in Benidorm series six?",
@@ -3338,7 +3306,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26582",
+    "id": "tv_26581",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which newcomer looks for bar work and impresses Joyce in the second episode of Benidorm series six?",
@@ -3370,7 +3338,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26583",
+    "id": "tv_26582",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which Garvey gets delayed at customs at the start of Benidorm's sixth series?",
@@ -3402,13 +3370,13 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26584",
+    "id": "tv_26583",
     "category": "TV",
     "topic": "Benidorm",
-    "question": "What sporting court does Joyce install beside the pool in series six?",
+    "question": "Which sport does Joyce introduce beside the Solana pool in Benidorm series six?",
     "answers": [
-      "Volleyball",
       "Badminton",
+      "Volleyball",
       "Basketball",
       "Tennis"
     ],
@@ -3430,11 +3398,14 @@ const questions=[
       "Series Six",
       "Episode Four",
       "Solana Pool",
-      "Sport"
+      "Sport",
+      "Swimming Pool",
+      "Hotel Recreation",
+      "Volleyball Court"
     ]
   },
   {
-    "id": "tv_26585",
+    "id": "tv_26584",
     "category": "TV",
     "topic": "Benidorm",
     "question": "For whom do Donald and Jacqueline arrange a farewell gathering in series six?",
@@ -3466,7 +3437,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26586",
+    "id": "tv_26585",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who becomes assistant manager at the Solana in Benidorm series six?",
@@ -3498,7 +3469,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26587",
+    "id": "tv_26586",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which veteran star plays Solana chief executive Crystal Hennessy-Vass?",
@@ -3530,13 +3501,13 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26588",
+    "id": "tv_26587",
     "category": "TV",
     "topic": "Benidorm",
-    "question": "Which family leaves the Solana for good early in Benidorm's seventh series?",
+    "question": "Which family has its main farewell storyline in the opening episodes of Benidorm series seven?",
     "answers": [
-      "The Garveys",
       "The Dawsons",
+      "The Garveys",
       "The Maltbys",
       "The Dykes"
     ],
@@ -3558,11 +3529,14 @@ const questions=[
       "Cast Departure",
       "Early Episodes",
       "Holiday Farewell",
-      "Programme Transition"
+      "Programme Transition",
+      "Series Seven Opening",
+      "Farewell Plot",
+      "Early Episode"
     ]
   },
   {
-    "id": "tv_26589",
+    "id": "tv_26588",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which mysterious character played by Leslie Jordan causes concern for the Garveys in series seven?",
@@ -3594,7 +3568,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26590",
+    "id": "tv_26589",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which psychic client prompts Kenneth to hold a séance in series seven?",
@@ -3626,7 +3600,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26591",
+    "id": "tv_26590",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which Benidorm quiz enthusiast returns with his mother in series seven after several years away?",
@@ -3658,7 +3632,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26592",
+    "id": "tv_26591",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who arrives in Benidorm hoping to persuade her son Liam to return to Britain?",
@@ -3690,7 +3664,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26593",
+    "id": "tv_26592",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which dodgy holiday-property salesman swindles Clive Dyke out of money in series seven?",
@@ -3722,17 +3696,17 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26594",
+    "id": "tv_26593",
     "category": "TV",
     "topic": "Benidorm",
-    "question": "Whose mother-in-law threatens Mateo during the final episode of series seven?",
+    "question": "Which Solana staff member faces threats from his mother-in-law in Benidorm's series-seven finale?",
     "answers": [
-      "Kenneth's",
-      "Les's",
-      "Mateo's",
-      "Mick's"
+      "Kenneth",
+      "Mateo",
+      "Lesley",
+      "Liam"
     ],
-    "correctAnswer": "Mateo's",
+    "correctAnswer": "Mateo",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -3750,11 +3724,13 @@ const questions=[
       "Series Seven Finale",
       "Episode Seven",
       "Family Threat",
-      "Comic Story"
+      "Comic Story",
+      "Threatening Relative",
+      "Solana Staff"
     ]
   },
   {
-    "id": "tv_26595",
+    "id": "tv_26594",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which new family become regular Solana guests in Benidorm's eighth series?",
@@ -3786,7 +3762,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26596",
+    "id": "tv_26595",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who does Tiger Dyke bring on holiday as his friend in series eight?",
@@ -3818,7 +3794,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26597",
+    "id": "tv_26596",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which relative's death might lead to a financial windfall for Kenneth in series eight?",
@@ -3850,7 +3826,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26598",
+    "id": "tv_26597",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What new security measure do Solana staff have to introduce in series eight?",
@@ -3882,7 +3858,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26599",
+    "id": "tv_26598",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which two holidaymakers attempt a mountain challenge in Benidorm series eight?",
@@ -3914,7 +3890,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26600",
+    "id": "tv_26599",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which fancy-dress celebration takes place in series eight of Benidorm?",
@@ -3946,7 +3922,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26601",
+    "id": "tv_26600",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which event is held at the Solana during the eighth-series finale?",
@@ -3978,7 +3954,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26602",
+    "id": "tv_26601",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which relative of Sheron Dawson arrives with the family in Benidorm series nine?",
@@ -4010,7 +3986,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26603",
+    "id": "tv_26602",
     "category": "TV",
     "topic": "Benidorm",
     "question": "To which city does Joyce travel for a professional conference in series nine?",
@@ -4042,7 +4018,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26604",
+    "id": "tv_26603",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which colleague helps Joyce prepare a speech in Spanish in series nine?",
@@ -4074,7 +4050,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26605",
+    "id": "tv_26604",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which younger Dawson family member returns to Britain for an advertising audition in series nine?",
@@ -4106,7 +4082,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26606",
+    "id": "tv_26605",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which type of convention places extra pressure on Solana staff in series nine?",
@@ -4138,7 +4114,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26607",
+    "id": "tv_26606",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who is Pauline Maltby's manipulative boyfriend appearing in Benidorm series nine?",
@@ -4170,7 +4146,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26608",
+    "id": "tv_26607",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What contaminates the Solana swimming pool in Benidorm's series-nine finale?",
@@ -4202,7 +4178,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26609",
+    "id": "tv_26608",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What sideline business does Kenneth try to keep from salon boss Troy in series nine?",
@@ -4234,7 +4210,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26610",
+    "id": "tv_26609",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Whose wedding provides the opening story of Benidorm's tenth and final series?",
@@ -4266,7 +4242,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26611",
+    "id": "tv_26610",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which new holidaymaker joins Joey Ellis as his friend in Benidorm series ten?",
@@ -4298,7 +4274,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26612",
+    "id": "tv_26611",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who arrives from South America as Rob Dawson's girlfriend during series ten?",
@@ -4330,7 +4306,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26613",
+    "id": "tv_26612",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which job does Joyce give her husband Monty in series ten?",
@@ -4362,7 +4338,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26614",
+    "id": "tv_26613",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Who proposes to Cyd during Benidorm's tenth series?",
@@ -4394,7 +4370,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26615",
+    "id": "tv_26614",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which troublesome entertainer threatens Monty's management ambitions in the last series?",
@@ -4426,7 +4402,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26616",
+    "id": "tv_26615",
     "category": "TV",
     "topic": "Benidorm",
     "question": "Which Solana regular begins writing a book inspired by Jacqueline in the final series?",
@@ -4458,7 +4434,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26617",
+    "id": "tv_26616",
     "category": "TV",
     "topic": "Benidorm",
     "question": "For which married couple do Eddie and Loretta plan an anniversary party during series ten?",
@@ -4490,7 +4466,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26618",
+    "id": "tv_26617",
     "category": "TV",
     "topic": "Benidorm",
     "question": "What airport disruption causes chaos in the very last Benidorm episode?",
@@ -4529,7 +4505,7 @@ const actualBad=questions.filter((q,i)=>q.id!=='tv_'+(26479+i)||
   q.answers.filter(x=>x===q.correctAnswer).length!==1||
   q.tags.length<14||new Set(q.tags).size!==q.tags.length||
   !q.dailyEligible||!['Easy','Medium','Hard'].includes(q.difficulty));
-if(questions.length!==140||actualBad.length||
+if(questions.length!==139||actualBad.length||
  new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length)
  throw Error('Pack 478 validation failed');
