@@ -1755,7 +1755,7 @@ const questions = [
     "id": "tv_28857",
     "category": "TV",
     "topic": "Bridgerton",
-    "question": "In Bridgerton (Series 3, Episode 1), which sister returns from travelling abroad with a changed outward confidence and reputation?",
+    "question": "In Bridgerton (Series 3, Episode 1), which brother returns from travelling abroad with a newly confident manner?",
     "answers": [
       "Gregory Bridgerton",
       "Benedict Bridgerton",
