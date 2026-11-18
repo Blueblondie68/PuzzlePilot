@@ -216,7 +216,7 @@ const questions = [
       "Jennifer Howell"
     ],
     "correctAnswer": "Jennifer Howell",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -437,7 +437,7 @@ const questions = [
       "His captain's licence"
     ],
     "correctAnswer": "His relationship with his girlfriend back home",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -588,14 +588,14 @@ const questions = [
     "id": "tv_27953",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who faces a decision about how to handle an overcrowded crew aboard Valor?",
+    "question": "Which Season 5 episode sees Captain Lee make a staffing decision because Valor has too many crew members?",
     "answers": [
-      "Chef Matt Burns",
-      "Stewardess Brianna Adekeye",
-      "Deckhand Baker Manning",
-      "Captain Lee Rosbach"
+      "Hot Mess Express",
+      "100 Feet from Catastrophe",
+      "Jesus Saves",
+      "The Champagne Campaign"
     ],
-    "correctAnswer": "Captain Lee Rosbach",
+    "correctAnswer": "100 Feet from Catastrophe",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -612,7 +612,8 @@ const questions = [
       "Storyline: Crew staffing",
       "Storyline: Management decision",
       "Person or group: Lee Rosbach",
-      "Correct fact: Captain Lee Rosbach"
+      "Correct fact: 100 Feet from Catastrophe",
+      "Storyline: Captain deals with overcrowded crew"
     ]
   },
   {
@@ -658,7 +659,7 @@ const questions = [
       "Amy Johnson"
     ],
     "correctAnswer": "Jennifer Howell",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -754,7 +755,7 @@ const questions = [
       "Kate Chastain"
     ],
     "correctAnswer": "Baker Manning",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -778,14 +779,14 @@ const questions = [
     "id": "tv_27959",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What sends Matt Burns on an alcohol-fuelled day off in 'Under Cover Boss'?",
+    "question": "Which crew member drinks heavily on a day off after receiving unexpected news in 'Under Cover Boss'?",
     "answers": [
-      "A successful cooking examination",
-      "Unexpected personal news",
-      "A cancelled charter",
-      "A promotion to captain"
+      "EJ Jansen",
+      "Bruno Duarte",
+      "Nico Scholly",
+      "Matt Burns"
     ],
-    "correctAnswer": "Unexpected personal news",
+    "correctAnswer": "Matt Burns",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -802,7 +803,8 @@ const questions = [
       "Storyline: Personal setback",
       "Storyline: Day-off drinking",
       "Person or group: Matt Burns",
-      "Correct fact: Unexpected personal news"
+      "Correct fact: Matt Burns",
+      "Storyline: Unexpected news upsets the chef"
     ]
   },
   {
@@ -881,7 +883,7 @@ const questions = [
       "A regatta"
     ],
     "correctAnswer": "A beach picnic",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1126,14 +1128,14 @@ const questions = [
     "id": "tv_27970",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What is unusual about the charter guest group featured in 'Only Doing It for the Money'?",
+    "question": "What combination of interests is highlighted among the female charter guests in 'Only Doing It for the Money'?",
     "answers": [
-      "It is an all-female group",
-      "It is entirely composed of children",
-      "All guests are yacht captains",
-      "No guests remain overnight"
+      "Football and whisky",
+      "Classical music and racing",
+      "Jesus and cocktails",
+      "Deep-sea diving and astronomy"
     ],
-    "correctAnswer": "It is an all-female group",
+    "correctAnswer": "Jesus and cocktails",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1151,7 +1153,8 @@ const questions = [
       "Storyline: Guest group composition",
       "Person or group: Charter guests",
       "Person or group: Kate Chastain",
-      "Correct fact: It is an all-female group"
+      "Correct fact: Jesus and cocktails",
+      "Storyline: Guests enjoy Jesus and cocktails"
     ]
   },
   {
@@ -1166,7 +1169,7 @@ const questions = [
       "To give Bruno a promotion"
     ],
     "correctAnswer": "To test Matt's ability to cook without his help",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1191,12 +1194,12 @@ const questions = [
     "id": "tv_27972",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member does Captain Lee join for dinner during the twelfth episode?",
+    "question": "With which group does Captain Lee dine during '55 and Lovin' It'?",
     "answers": [
-      "A rival yacht's crew",
-      "The marina's engineers",
       "The female charter guests",
-      "The departing deckhands"
+      "The departing deck crew",
+      "The marina's engineers",
+      "The crew from a neighbouring yacht"
     ],
     "correctAnswer": "The female charter guests",
     "difficulty": "Medium",
@@ -1215,7 +1218,8 @@ const questions = [
       "Storyline: Captain's guest dinner",
       "Storyline: Female charter",
       "Person or group: Lee Rosbach",
-      "Correct fact: The female charter guests"
+      "Correct fact: The female charter guests",
+      "Storyline: Captain shares meal with female charter guests"
     ]
   },
   {
@@ -1230,7 +1234,7 @@ const questions = [
       "Kyle Dixon"
     ],
     "correctAnswer": "Kyle Dixon",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
