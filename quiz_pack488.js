@@ -1,5 +1,5 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 488: As the World Turns, Part 3 (1980–1989)
-// 99 selectively researched questions, decades kept separate; IDs tv_27453–tv_27551.
+// 95 selectively researched questions, decades kept separate; IDs tv_27453–tv_27547.
 // Covers early Dobson era, Dee and the mine, James and Barbara, Tom and Margo, Steve and Betsy,
 // Whit McColl's murder, Marland's 1985 revival, Snyders/Walshes, Kim/Frannie crisis, and actors.
 // Later 1990–2010 programme history requires further packs; keep TV master lavender.
@@ -559,14 +559,14 @@ const questions = [
     "id": "tv_27470",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which man became Margo Montgomery's long-lasting romantic partner?",
+    "question": "Which event launched Tom and Margo Hughes's lasting marriage in 1983?",
     "answers": [
-      "Tom Hughes",
-      "John Dixon",
-      "James Stenbeck",
-      "Craig Montgomery"
+      "A double wedding at city hall",
+      "An outdoor wedding",
+      "A Greek Orthodox wedding",
+      "A Christmas Eve ceremony"
     ],
-    "correctAnswer": "Tom Hughes",
+    "correctAnswer": "An outdoor wedding",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -578,12 +578,13 @@ const questions = [
       "Oakdale",
       "1980–1989 Stories",
       "Written Quiz",
-      "Section: 1980–1982",
-      "Margo Montgomery",
+      "Section: 1982–1984",
       "Tom Hughes",
+      "Margo Montgomery",
+      "1983 Wedding",
+      "Outdoor Ceremony",
       "Supercouple",
-      "1980s Romance",
-      "Lawyer"
+      "Family"
     ]
   },
   {
@@ -1006,14 +1007,14 @@ const questions = [
     "id": "tv_27484",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What allowed James Stenbeck to survive his apparently fatal fall from a plane?",
+    "question": "Which scheming teenager uncovered James Stenbeck's family inheritance secret and blackmailed him?",
     "answers": [
-      "An emergency ladder",
-      "A second aircraft",
-      "A parachute",
-      "A hidden flotation device"
+      "Diana McColl",
+      "Karen Haines",
+      "Betsy Stewart",
+      "Marcy Thompson"
     ],
-    "correctAnswer": "A parachute",
+    "correctAnswer": "Karen Haines",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1026,12 +1027,12 @@ const questions = [
       "1980–1989 Stories",
       "Written Quiz",
       "Section: 1982–1984",
+      "Karen Haines",
       "James Stenbeck",
-      "Parachute",
-      "Faked Death",
-      "1984",
-      "Survival",
-      "Criminal Escape"
+      "Secret Heir",
+      "Blackmail",
+      "Family Drama",
+      "Early 1980s"
     ]
   },
   {
@@ -1102,70 +1103,6 @@ const questions = [
     "id": "tv_27487",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What unusual vehicle brought Margo to her 1983 wedding to Tom?",
-    "answers": [
-      "A motorcycle",
-      "A fire engine",
-      "A horse-drawn carriage",
-      "A police helicopter"
-    ],
-    "correctAnswer": "A fire engine",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: As the World Turns",
-      "As the World Turns (CBS)",
-      "Daytime Soap Opera",
-      "Oakdale",
-      "1980–1989 Stories",
-      "Written Quiz",
-      "Section: 1982–1984",
-      "Margo Montgomery",
-      "Tom Hughes",
-      "1983 Wedding",
-      "Fire Engine",
-      "Outdoor Ceremony",
-      "Supercouple"
-    ]
-  },
-  {
-    "id": "tv_27488",
-    "category": "TV",
-    "topic": "As the World Turns",
-    "question": "Which actor played Margo's husband Tom opposite Margaret Colin?",
-    "answers": [
-      "Don Hastings",
-      "John Wesley Shipp",
-      "Justin Deas",
-      "Scott Holmes"
-    ],
-    "correctAnswer": "Justin Deas",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: As the World Turns",
-      "As the World Turns (CBS)",
-      "Daytime Soap Opera",
-      "Oakdale",
-      "1980–1989 Stories",
-      "Written Quiz",
-      "Section: 1982–1984",
-      "Justin Deas",
-      "Tom Hughes",
-      "Margaret Colin",
-      "Wedding",
-      "1983",
-      "Casting"
-    ]
-  },
-  {
-    "id": "tv_27489",
-    "category": "TV",
-    "topic": "As the World Turns",
     "question": "Which actress took over Margo Montgomery after Margaret Colin?",
     "answers": [
       "Ellen Dolan",
@@ -1195,7 +1132,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27490",
+    "id": "tv_27488",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor first portrayed the scheming Craig Montgomery?",
@@ -1227,7 +1164,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27491",
+    "id": "tv_27489",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which famous movie actress played Betsy Stewart from 1982 to 1984?",
@@ -1259,7 +1196,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27492",
+    "id": "tv_27490",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor portrayed trucker Steve Andropoulos, the great love of Betsy Stewart?",
@@ -1291,7 +1228,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27493",
+    "id": "tv_27491",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Whom did Betsy Stewart marry despite her love for Steve Andropoulos?",
@@ -1323,7 +1260,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27494",
+    "id": "tv_27492",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What was the name of Betsy Stewart's daughter whose paternity caused a conflict?",
@@ -1355,7 +1292,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27495",
+    "id": "tv_27493",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What test did Craig Montgomery tamper with to separate Betsy and Steve?",
@@ -1387,7 +1324,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27496",
+    "id": "tv_27494",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was Danielle's biological father in Betsy Stewart's story?",
@@ -1419,7 +1356,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27497",
+    "id": "tv_27495",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What cultural tradition featured prominently at Steve and Betsy's 1984 wedding?",
@@ -1451,7 +1388,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27498",
+    "id": "tv_27496",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which singer portrayed Heather Dalton, the gospel performer at Steve and Betsy's wedding?",
@@ -1483,7 +1420,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27499",
+    "id": "tv_27497",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which character served as Steve Andropoulos's best man at his wedding to Betsy?",
@@ -1515,7 +1452,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27500",
+    "id": "tv_27498",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress played teenage Marcy Thompson, a future Lady Cushing?",
@@ -1547,7 +1484,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27501",
+    "id": "tv_27499",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was the actor cast as millionaire Whitney McColl?",
@@ -1579,7 +1516,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27502",
+    "id": "tv_27500",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which long-running Oakdale heroine married businessman Whitney McColl?",
@@ -1611,7 +1548,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27503",
+    "id": "tv_27501",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Where did police find businessman Whit McColl after he was murdered?",
@@ -1643,7 +1580,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27504",
+    "id": "tv_27502",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was revealed as the person who killed Whitney McColl?",
@@ -1675,7 +1612,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27505",
+    "id": "tv_27503",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What household role did Whit McColl's killer Dorothy Connors have?",
@@ -1707,7 +1644,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27506",
+    "id": "tv_27504",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What item was used to strike Whit McColl during the fatal argument?",
@@ -1739,7 +1676,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27507",
+    "id": "tv_27505",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which family member was revealed as Dorothy Connors and Whit McColl's child?",
@@ -1771,7 +1708,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27508",
+    "id": "tv_27506",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which famous musician performed a benefit concert shortly before the Whit McColl murder?",
@@ -1803,7 +1740,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27509",
+    "id": "tv_27507",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress briefly replaced Eileen Fulton as Lisa during the early 1980s?",
@@ -1835,15 +1772,15 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27510",
+    "id": "tv_27508",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which future double Oscar-winning actor played Frannie Hughes and Sabrina Hughes?",
+    "question": "Which future Oscar-winning actress played both Frannie and Sabrina Hughes?",
     "answers": [
+      "Meg Ryan",
       "Julianne Moore",
-      "Susan Sarandon",
-      "Jodie Foster",
-      "Meg Ryan"
+      "Marisa Tomei",
+      "Martha Byrne"
     ],
     "correctAnswer": "Julianne Moore",
     "difficulty": "Easy",
@@ -1861,45 +1798,13 @@ const questions = [
       "Julianne Moore",
       "Frannie Hughes",
       "Sabrina Hughes",
-      "Dual Role",
-      "1980s",
-      "Casting"
+      "Dual Roles",
+      "Casting",
+      "1985–1988"
     ]
   },
   {
-    "id": "tv_27511",
-    "category": "TV",
-    "topic": "As the World Turns",
-    "question": "Which Frannie Hughes actress won a Daytime Emmy for her dual roles in 1988?",
-    "answers": [
-      "Meg Ryan",
-      "Julianne Moore",
-      "Martha Byrne",
-      "Colleen Zenk"
-    ],
-    "correctAnswer": "Julianne Moore",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: As the World Turns",
-      "As the World Turns (CBS)",
-      "Daytime Soap Opera",
-      "Oakdale",
-      "1980–1989 Stories",
-      "Written Quiz",
-      "Section: 1985–1989",
-      "Julianne Moore",
-      "Daytime Emmy",
-      "Frannie",
-      "Sabrina",
-      "1988",
-      "Actress"
-    ]
-  },
-  {
-    "id": "tv_27512",
+    "id": "tv_27509",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which girl was revealed to be the long-lost twin of Frannie Hughes?",
@@ -1931,7 +1836,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27513",
+    "id": "tv_27510",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who were the biological parents of Sabrina Hughes?",
@@ -1963,7 +1868,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27514",
+    "id": "tv_27511",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which restaurant owner terrorised Kim Sullivan Hughes and her stepdaughter Frannie?",
@@ -1995,7 +1900,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27515",
+    "id": "tv_27512",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor played the sinister restaurateur Douglas Cummings?",
@@ -2027,7 +1932,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27516",
+    "id": "tv_27513",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which young woman did Douglas Cummings date while secretly stalking her stepmother?",
@@ -2059,7 +1964,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27517",
+    "id": "tv_27514",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What secret room exposed Douglas Cummings's obsession with Kim?",
@@ -2091,7 +1996,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27518",
+    "id": "tv_27515",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which former boyfriend died protecting Frannie from a shot meant for her?",
@@ -2123,7 +2028,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27519",
+    "id": "tv_27516",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who actually stabbed Douglas Cummings to death during the hostage crisis?",
@@ -2155,7 +2060,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27520",
+    "id": "tv_27517",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which former Oakdale heroine was put on trial over Douglas Cummings's death?",
@@ -2187,7 +2092,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27521",
+    "id": "tv_27518",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which writer took charge of As the World Turns in 1985 and revived family-focused storytelling?",
@@ -2219,7 +2124,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27522",
+    "id": "tv_27519",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which new working-class family did Douglas Marland establish as major Oakdale characters?",
@@ -2251,7 +2156,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27523",
+    "id": "tv_27520",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress played wealthy businesswoman Lucinda Walsh from 1984 onwards?",
@@ -2283,7 +2188,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27524",
+    "id": "tv_27521",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What is the name of Lucinda Walsh's adopted daughter?",
@@ -2315,7 +2220,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27525",
+    "id": "tv_27522",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress replaced Lucy Deakins as Lily Walsh in 1985?",
@@ -2347,7 +2252,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27526",
+    "id": "tv_27523",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor is strongly associated with playing farmhand Holden Snyder?",
@@ -2379,7 +2284,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27527",
+    "id": "tv_27524",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which young man was Lily Walsh romantically involved with before Holden Snyder?",
@@ -2411,7 +2316,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27528",
+    "id": "tv_27525",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Where did Lily first become close to Holden Snyder?",
@@ -2443,7 +2348,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27529",
+    "id": "tv_27526",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which farming matriarch was mother to Holden, Meg and Seth Snyder?",
@@ -2475,7 +2380,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27530",
+    "id": "tv_27527",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who played the Snyder family matriarch Emma?",
@@ -2507,7 +2412,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27531",
+    "id": "tv_27528",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was Lily Walsh's biological mother, revealed after her adoption?",
@@ -2539,7 +2444,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27532",
+    "id": "tv_27529",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What was the real name of the man initially known as Rod Landry?",
@@ -2571,7 +2476,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27533",
+    "id": "tv_27530",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress portrayed Iva Snyder, a key figure in Lily Walsh's parentage mystery?",
@@ -2603,7 +2508,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27534",
+    "id": "tv_27531",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "How was Iva Snyder related to Emma and Henry Snyder?",
@@ -2635,7 +2540,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27535",
+    "id": "tv_27532",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress played Meg Snyder in the late 1980s?",
@@ -2667,7 +2572,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27536",
+    "id": "tv_27533",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which Canadian-born actor played policeman Hal Munson?",
@@ -2699,17 +2604,17 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27537",
+    "id": "tv_27534",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Oakdale detective became a significant love interest for Barbara Ryan?",
+    "question": "Which actor played detective Hal Munson, a major character in Barbara Ryan's stories?",
     "answers": [
-      "John Dixon",
-      "Tom Hughes",
-      "Craig Montgomery",
-      "Hal Munson"
+      "Scott Bryce",
+      "Benjamin Hendrickson",
+      "Anthony Herrera",
+      "Jon Hensley"
     ],
-    "correctAnswer": "Hal Munson",
+    "correctAnswer": "Benjamin Hendrickson",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -2722,26 +2627,26 @@ const questions = [
       "1980–1989 Stories",
       "Written Quiz",
       "Section: 1985–1989",
-      "Barbara Ryan",
+      "Benjamin Hendrickson",
       "Hal Munson",
-      "Romance",
-      "Police Detective",
+      "Detective",
+      "Barbara Ryan",
       "1980s",
-      "Relationships"
+      "Casting"
     ]
   },
   {
-    "id": "tv_27538",
+    "id": "tv_27535",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Barbara Ryan's estranged former husband who returned from presumed death in 1986?",
+    "question": "In whose castle did James Stenbeck secretly hide when he returned from his presumed death?",
     "answers": [
-      "James Stenbeck",
-      "Gunnar Stenbeck",
-      "John Dixon",
-      "Whit McColl"
+      "John Dixon's",
+      "Duncan McKechnie's",
+      "Craig Montgomery's",
+      "Whit McColl's"
     ],
-    "correctAnswer": "James Stenbeck",
+    "correctAnswer": "Duncan McKechnie's",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -2754,16 +2659,16 @@ const questions = [
       "1980–1989 Stories",
       "Written Quiz",
       "Section: 1985–1989",
-      "Barbara Ryan",
       "James Stenbeck",
+      "Duncan McKechnie",
+      "Castle",
+      "Secret Hideout",
       "1986 Return",
-      "Villain",
-      "Fake Death",
-      "Storyline"
+      "Resurrection"
     ]
   },
   {
-    "id": "tv_27539",
+    "id": "tv_27536",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which Scottish castle owner became romantically involved with Shannon O'Hara?",
@@ -2795,7 +2700,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27540",
+    "id": "tv_27537",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor played Scottish nobleman Duncan McKechnie?",
@@ -2827,7 +2732,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27541",
+    "id": "tv_27538",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What was Shannon O'Hara's true name?",
@@ -2859,7 +2764,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27542",
+    "id": "tv_27539",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which police officer did Barbara Ryan deliberately try to split from his wife Margo?",
@@ -2891,39 +2796,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27543",
-    "category": "TV",
-    "topic": "As the World Turns",
-    "question": "Which dangerous criminal returned from the dead in 1986 with a threat to Barbara Ryan?",
-    "answers": [
-      "Mr Big",
-      "James Stenbeck",
-      "Whit McColl",
-      "Brad Hollister"
-    ],
-    "correctAnswer": "James Stenbeck",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: As the World Turns",
-      "As the World Turns (CBS)",
-      "Daytime Soap Opera",
-      "Oakdale",
-      "1980–1989 Stories",
-      "Written Quiz",
-      "Section: 1985–1989",
-      "James Stenbeck",
-      "Barbara Ryan",
-      "1986 Comeback",
-      "Resurrection",
-      "Antagonist",
-      "Soap Twist"
-    ]
-  },
-  {
-    "id": "tv_27544",
+    "id": "tv_27540",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which character played by Brian Starcher featured in the programme's 1988 gay storyline?",
@@ -2955,7 +2828,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27545",
+    "id": "tv_27541",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which two boys had to confront their prejudices after meeting Hank Elliot?",
@@ -2987,7 +2860,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27546",
+    "id": "tv_27542",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which soap matriarch married Earl Mitchell in 1986?",
@@ -3019,7 +2892,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27547",
+    "id": "tv_27543",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What secret occupation did Lisa's husband Earl Mitchell have?",
@@ -3051,7 +2924,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27548",
+    "id": "tv_27544",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was responsible for Earl Mitchell's murder while Earl investigated international crime?",
@@ -3083,7 +2956,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27549",
+    "id": "tv_27545",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress succeeded Hillary B. Smith as Margo Hughes in 1989?",
@@ -3115,7 +2988,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27550",
+    "id": "tv_27546",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which longtime actor who played Chris Hughes died in 1986?",
@@ -3147,7 +3020,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27551",
+    "id": "tv_27547",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which year did As the World Turns win the Daytime Emmy for Outstanding Drama Series within the 1980s?",
@@ -3179,7 +3052,7 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==99||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==95||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>q.id!=='tv_'+String(27453+i)||q.category!=='TV'||q.topic!=='As the World Turns'||
 q.answers.length!==4||new Set(q.answers.map(s=>s.toLowerCase())).size!==4||
