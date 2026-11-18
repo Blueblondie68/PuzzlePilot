@@ -1,7 +1,7 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 481: Another World, Part 1 (1964–1974)
-// 82 unique questions from the first decade: founding Matthews family, Randolphs,
+// 80 unique questions from the first decade: founding Matthews family, Randolphs,
 // Bill/Missy, Lenore/Walter, Rachel/Ada/Steve/Alice and the 1974 10th anniversary.
-// IDs tv_26820–tv_26901. This is partial programme coverage — NOT purple.
+// IDs tv_26820–tv_26899. This is partial programme coverage — NOT purple.
 // Direct overlap audit: no Another World, Alice Matthews, Rachel Davis, Steve Frame
 // or key writers found in original mixed Packs 1–20; repository name search clear.
 // Primary research:
@@ -271,38 +271,6 @@ const questions=[
     "id": "tv_26828",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which future host of Inside the Actors Studio once wrote Another World?",
-    "answers": [
-      "Dick Cavett",
-      "James Lipton",
-      "Larry King",
-      "Johnny Carson"
-    ],
-    "correctAnswer": "James Lipton",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "1964–1974 Early History",
-      "Daytime Soap Opera",
-      "Bay City",
-      "Written Quiz",
-      "Section: Launch and production",
-      "James Lipton",
-      "Inside The Actors Studio",
-      "Talk Show Host",
-      "Soap Writing Career",
-      "1965",
-      "Career"
-    ]
-  },
-  {
-    "id": "tv_26829",
-    "category": "TV",
-    "topic": "Another World",
     "question": "Which writer succeeded James Lipton and created the character Rachel Davis?",
     "answers": [
       "Agnes Nixon",
@@ -332,7 +300,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26830",
+    "id": "tv_26829",
     "category": "TV",
     "topic": "Another World",
     "question": "Who became the head writer of Another World in 1971 and later published a memoir about the job?",
@@ -364,7 +332,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26831",
+    "id": "tv_26830",
     "category": "TV",
     "topic": "Another World",
     "question": "Which executive producer joined the highly successful Harding Lemay era in 1972?",
@@ -396,7 +364,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26832",
+    "id": "tv_26831",
     "category": "TV",
     "topic": "Another World",
     "question": "Which daytime soap began as an Another World spin-off in 1970?",
@@ -428,7 +396,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26833",
+    "id": "tv_26832",
     "category": "TV",
     "topic": "Another World",
     "question": "Which soap later became Another World's second major spin-off?",
@@ -460,7 +428,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26834",
+    "id": "tv_26833",
     "category": "TV",
     "topic": "Another World",
     "question": "Which other daytime soap contributed the crossover characters Mike and Hope Bauer?",
@@ -492,7 +460,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26835",
+    "id": "tv_26834",
     "category": "TV",
     "topic": "Another World",
     "question": "Which death marked the beginning of Another World's original Matthews family story?",
@@ -524,7 +492,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26836",
+    "id": "tv_26835",
     "category": "TV",
     "topic": "Another World",
     "question": "Which wealthy widow disliked her husband's poorer relatives in the original storyline?",
@@ -556,7 +524,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26837",
+    "id": "tv_26836",
     "category": "TV",
     "topic": "Another World",
     "question": "Who was William Matthews's working-class brother?",
@@ -588,7 +556,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26838",
+    "id": "tv_26837",
     "category": "TV",
     "topic": "Another World",
     "question": "What was the first name of Jim Matthews's wife?",
@@ -620,7 +588,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26839",
+    "id": "tv_26838",
     "category": "TV",
     "topic": "Another World",
     "question": "Which three characters were children of Jim and Mary Matthews?",
@@ -652,7 +620,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26840",
+    "id": "tv_26839",
     "category": "TV",
     "topic": "Another World",
     "question": "Who were the two children of Liz and William Matthews?",
@@ -684,7 +652,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26841",
+    "id": "tv_26840",
     "category": "TV",
     "topic": "Another World",
     "question": "Which Matthews daughter was at the centre of the long-running romance with Steve Frame?",
@@ -716,7 +684,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26842",
+    "id": "tv_26841",
     "category": "TV",
     "topic": "Another World",
     "question": "Which of Jim Matthews's children became a doctor and married Rachel Davis?",
@@ -748,7 +716,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26843",
+    "id": "tv_26842",
     "category": "TV",
     "topic": "Another World",
     "question": "What was the profession of Liz Matthews's son Bill?",
@@ -780,7 +748,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26844",
+    "id": "tv_26843",
     "category": "TV",
     "topic": "Another World",
     "question": "Where did Melissa 'Missy' Palmer work as a waitress?",
@@ -812,7 +780,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26845",
+    "id": "tv_26844",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress was the original Liz Matthews and later starred in Three's Company?",
@@ -844,7 +812,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26846",
+    "id": "tv_26845",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress became closely associated with the role of Aunt Liz Matthews?",
@@ -876,7 +844,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26847",
+    "id": "tv_26846",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress played Alice Matthews in the original 1960s–70s love triangle?",
@@ -908,7 +876,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26848",
+    "id": "tv_26847",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actor became particularly associated with Jim Matthews?",
@@ -940,7 +908,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26849",
+    "id": "tv_26848",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress played Mary Matthews for much of the original run?",
@@ -972,7 +940,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26850",
+    "id": "tv_26849",
     "category": "TV",
     "topic": "Another World",
     "question": "Who portrayed Bill Matthews during his romance with Missy Palmer?",
@@ -1004,7 +972,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26851",
+    "id": "tv_26850",
     "category": "TV",
     "topic": "Another World",
     "question": "Who was the boyfriend involved in Pat Matthews's original pregnancy storyline?",
@@ -1036,7 +1004,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26852",
+    "id": "tv_26851",
     "category": "TV",
     "topic": "Another World",
     "question": "What controversial procedure was Pat Matthews pressured into in the opening year?",
@@ -1068,7 +1036,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26853",
+    "id": "tv_26852",
     "category": "TV",
     "topic": "Another World",
     "question": "Who was killed by Pat Matthews during her breakdown?",
@@ -1100,7 +1068,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26854",
+    "id": "tv_26853",
     "category": "TV",
     "topic": "Another World",
     "question": "Which lawyer successfully defended Pat Matthews after Tom Baxter's death?",
@@ -1132,7 +1100,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26855",
+    "id": "tv_26854",
     "category": "TV",
     "topic": "Another World",
     "question": "Who subsequently married Pat Matthews following her trial?",
@@ -1164,7 +1132,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26856",
+    "id": "tv_26855",
     "category": "TV",
     "topic": "Another World",
     "question": "Which daughter of John Randolph opposed his marriage to Pat?",
@@ -1196,7 +1164,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26857",
+    "id": "tv_26856",
     "category": "TV",
     "topic": "Another World",
     "question": "Who was badly injured in a car accident involving Lee Randolph?",
@@ -1228,7 +1196,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26858",
+    "id": "tv_26857",
     "category": "TV",
     "topic": "Another World",
     "question": "Which Guiding Light lawyer became involved with the Randolph family during the crossover?",
@@ -1260,7 +1228,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26859",
+    "id": "tv_26858",
     "category": "TV",
     "topic": "Another World",
     "question": "What was the first name of Mike Bauer's daughter who joined the crossover?",
@@ -1292,7 +1260,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26860",
+    "id": "tv_26859",
     "category": "TV",
     "topic": "Another World",
     "question": "Which troubled Randolph character became involved with criminal Lefty Burns?",
@@ -1324,7 +1292,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26861",
+    "id": "tv_26860",
     "category": "TV",
     "topic": "Another World",
     "question": "Which hallucinogenic drug featured in Lee Randolph's tragic late-1960s storyline?",
@@ -1356,7 +1324,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26862",
+    "id": "tv_26861",
     "category": "TV",
     "topic": "Another World",
     "question": "How did Lee Randolph die in 1969?",
@@ -1388,7 +1356,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26863",
+    "id": "tv_26862",
     "category": "TV",
     "topic": "Another World",
     "question": "Which orphaned waitress became Bill Matthews's great love?",
@@ -1420,7 +1388,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26864",
+    "id": "tv_26863",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress originally portrayed Missy Palmer?",
@@ -1452,7 +1420,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26865",
+    "id": "tv_26864",
     "category": "TV",
     "topic": "Another World",
     "question": "Who tried to keep Bill Matthews from marrying Missy Palmer?",
@@ -1484,7 +1452,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26866",
+    "id": "tv_26865",
     "category": "TV",
     "topic": "Another World",
     "question": "Which criminal forced Missy Palmer into an abusive marriage?",
@@ -1516,7 +1484,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26867",
+    "id": "tv_26866",
     "category": "TV",
     "topic": "Another World",
     "question": "Who was wrongly suspected of killing Danny Fargo?",
@@ -1548,7 +1516,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26868",
+    "id": "tv_26867",
     "category": "TV",
     "topic": "Another World",
     "question": "Who was responsible for Danny Fargo's death?",
@@ -1580,7 +1548,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26869",
+    "id": "tv_26868",
     "category": "TV",
     "topic": "Another World",
     "question": "How did Bill Matthews die in 1968?",
@@ -1612,7 +1580,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26870",
+    "id": "tv_26869",
     "category": "TV",
     "topic": "Another World",
     "question": "Which character transferred to the Somerset spin-off with her young son in 1970?",
@@ -1644,7 +1612,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26871",
+    "id": "tv_26870",
     "category": "TV",
     "topic": "Another World",
     "question": "Who married Walter Curtin after an earlier rivalry over Bill Matthews?",
@@ -1676,7 +1644,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26872",
+    "id": "tv_26871",
     "category": "TV",
     "topic": "Another World",
     "question": "Whose murder was Walter Curtin actually responsible for?",
@@ -1708,7 +1676,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26873",
+    "id": "tv_26872",
     "category": "TV",
     "topic": "Another World",
     "question": "What caused Walter Curtin's death in 1972?",
@@ -1740,7 +1708,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26874",
+    "id": "tv_26873",
     "category": "TV",
     "topic": "Another World",
     "question": "Which architect from Somerset became Lenore Moore's second husband?",
@@ -1772,7 +1740,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26875",
+    "id": "tv_26874",
     "category": "TV",
     "topic": "Another World",
     "question": "Who was Rachel Davis's outspoken mother?",
@@ -1803,7 +1771,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26876",
+    "id": "tv_26875",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress played Rachel's mother Ada for decades?",
@@ -1835,7 +1803,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26877",
+    "id": "tv_26876",
     "category": "TV",
     "topic": "Another World",
     "question": "What was Ada Hobson's profession when she entered Another World?",
@@ -1867,7 +1835,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26878",
+    "id": "tv_26877",
     "category": "TV",
     "topic": "Another World",
     "question": "Who originated the role of Rachel Davis before Victoria Wyndham?",
@@ -1899,7 +1867,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26879",
+    "id": "tv_26878",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress took over the role of Rachel Davis in 1972?",
@@ -1931,39 +1899,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26880",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "Who was Rachel Davis's first husband?",
-    "answers": [
-      "Steve Frame",
-      "Russ Matthews",
-      "Mac Cory",
-      "Ted Clark"
-    ],
-    "correctAnswer": "Russ Matthews",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "1964–1974 Early History",
-      "Daytime Soap Opera",
-      "Bay City",
-      "Written Quiz",
-      "Section: Rachel, Ada, Alice and Steve",
-      "Rachel Davis",
-      "Russ Matthews",
-      "First Marriage",
-      "1960s",
-      "Doctor",
-      "Relationships"
-    ]
-  },
-  {
-    "id": "tv_26881",
+    "id": "tv_26879",
     "category": "TV",
     "topic": "Another World",
     "question": "Who was the wealthy self-made man loved by both Alice Matthews and Rachel Davis?",
@@ -1995,7 +1931,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26882",
+    "id": "tv_26880",
     "category": "TV",
     "topic": "Another World",
     "question": "Who played Steve Frame during the famous original love triangle?",
@@ -2027,7 +1963,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26883",
+    "id": "tv_26881",
     "category": "TV",
     "topic": "Another World",
     "question": "What was the name of the son Rachel had with Steve Frame?",
@@ -2059,7 +1995,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26884",
+    "id": "tv_26882",
     "category": "TV",
     "topic": "Another World",
     "question": "Why did Russ Matthews divorce Rachel?",
@@ -2091,7 +2027,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26885",
+    "id": "tv_26883",
     "category": "TV",
     "topic": "Another World",
     "question": "Whose pregnancy disrupted Steve and Alice's wedding plans in 1969?",
@@ -2123,7 +2059,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26886",
+    "id": "tv_26884",
     "category": "TV",
     "topic": "Another World",
     "question": "Which couple first married in 1971 despite Rachel's objections?",
@@ -2155,7 +2091,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26887",
+    "id": "tv_26885",
     "category": "TV",
     "topic": "Another World",
     "question": "Whom did Rachel Davis marry between her marriages to Russ Matthews and Steve Frame?",
@@ -2187,7 +2123,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26888",
+    "id": "tv_26886",
     "category": "TV",
     "topic": "Another World",
     "question": "Which man did Rachel marry after Steve and Alice's first marriage failed?",
@@ -2219,7 +2155,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26889",
+    "id": "tv_26887",
     "category": "TV",
     "topic": "Another World",
     "question": "Which publishing tycoon would later become Rachel's great love?",
@@ -2251,7 +2187,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26890",
+    "id": "tv_26888",
     "category": "TV",
     "topic": "Another World",
     "question": "Who first portrayed Mac Cory before Douglass Watson took over?",
@@ -2283,7 +2219,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26891",
+    "id": "tv_26889",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actor assumed the role of Mac Cory in 1974?",
@@ -2315,7 +2251,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26892",
+    "id": "tv_26890",
     "category": "TV",
     "topic": "Another World",
     "question": "What was the first name of Mac Cory's scheming daughter?",
@@ -2347,7 +2283,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26893",
+    "id": "tv_26891",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress played Iris Cory during the show's 1970s heyday?",
@@ -2379,7 +2315,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26894",
+    "id": "tv_26892",
     "category": "TV",
     "topic": "Another World",
     "question": "Who was Iris Cory's estranged husband and the father of young Dennis?",
@@ -2411,7 +2347,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26895",
+    "id": "tv_26893",
     "category": "TV",
     "topic": "Another World",
     "question": "What was the first name of Iris and Eliot Carrington's son?",
@@ -2443,7 +2379,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26896",
+    "id": "tv_26894",
     "category": "TV",
     "topic": "Another World",
     "question": "Who worked as a governess to Dennis Carrington in 1973?",
@@ -2475,7 +2411,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26897",
+    "id": "tv_26895",
     "category": "TV",
     "topic": "Another World",
     "question": "What heartbreaking medical news affected Alice Matthews in the early 1970s?",
@@ -2507,7 +2443,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26898",
+    "id": "tv_26896",
     "category": "TV",
     "topic": "Another World",
     "question": "Which man supported Alice during her health crisis, rekindling their relationship?",
@@ -2539,7 +2475,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26899",
+    "id": "tv_26897",
     "category": "TV",
     "topic": "Another World",
     "question": "Which major anniversary was celebrated by Steve and Alice's second wedding?",
@@ -2571,7 +2507,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26900",
+    "id": "tv_26898",
     "category": "TV",
     "topic": "Another World",
     "question": "On which date did the Steve–Alice second wedding episode originally air?",
@@ -2603,7 +2539,7 @@ const questions=[
     ]
   },
   {
-    "id": "tv_26901",
+    "id": "tv_26899",
     "category": "TV",
     "topic": "Another World",
     "question": "How did the format of the May 1974 wedding episode differ from ordinary Another World instalments?",
@@ -2635,7 +2571,7 @@ const questions=[
     ]
   }
 ];
-if(questions.length!==82||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==80||new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
  questions.some((q,i)=>q.id!=='tv_'+String(26820+i)||q.category!=='TV'||q.topic!=='Another World'||
  q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
