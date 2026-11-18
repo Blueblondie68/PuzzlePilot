@@ -1,6 +1,6 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 500: Below Deck ORIGINAL Bravo Series, Seasons 11–12
-// Milestone pack with 105 researched questions: 53 from Season 11, 52 from Season 12.
-// IDs tv_28236–tv_28340, after Pack 499 ending tv_28235.
+// Milestone pack with 100 researched questions: 48 from Season 11, 52 from Season 12.
+// IDs tv_28236–tv_28335, after Pack 499 ending tv_28235.
 // 2024 Season 11, S11E01–E17; 2025 Season 12, S12E01–E16.
 // All episodes covered; no spin-offs; series continues (2026 Season 13 airing).
 // Searchable, season-specific storyline, episode, cast and fact tags on every question.
@@ -569,40 +569,6 @@ const questions = [
     "id": "tv_28252",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 11, which crew member's downward spiral worries the captain as personal problems mount?",
-    "answers": [
-      "Anthony Iracane",
-      "Fraser Olender",
-      "Jared Woodin",
-      "Kyle Stillie"
-    ],
-    "correctAnswer": "Jared Woodin",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck on Bravo",
-      "Written Quiz",
-      "Season: 11",
-      "Year: 2024",
-      "Yacht: St. David",
-      "Charter region: Grenada",
-      "Episode: S11E05",
-      "Episode title: Come on Eileen",
-      "Storyline: Bosun's downward spiral",
-      "Storyline: Captain monitoring staff",
-      "Person or group: Jared Woodin",
-      "Person or group: Kerry Titheradge",
-      "Specific fact: Jared Woodin"
-    ]
-  },
-  {
-    "id": "tv_28253",
-    "category": "TV",
-    "topic": "Below Deck",
     "question": "In Below Deck Season 11, which two deck crew members argue in 'Love Me Tender', with serious consequences?",
     "answers": [
       "Ben and Sunny",
@@ -634,7 +600,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28254",
+    "id": "tv_28253",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which type of yacht manoeuvre causes the exterior crew particular trouble in Episode 6?",
@@ -668,41 +634,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28255",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "In Below Deck Season 11, which charter guest continues to irritate the crew across the fifth and sixth episodes?",
-    "answers": [
-      "Dean Slover",
-      "Eileen",
-      "Jill Zarin",
-      "Charley"
-    ],
-    "correctAnswer": "Eileen",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck on Bravo",
-      "Written Quiz",
-      "Season: 11",
-      "Year: 2024",
-      "Yacht: St. David",
-      "Charter region: Grenada",
-      "Episode: S11E06",
-      "Episode title: Love Me Tender",
-      "Storyline: Picky returning charter guest",
-      "Storyline: Interior guest-service strain",
-      "Person or group: Eileen",
-      "Person or group: Fraser Olender",
-      "Specific fact: Eileen"
-    ]
-  },
-  {
-    "id": "tv_28256",
+    "id": "tv_28254",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which bosun is fired by Captain Kerry after his behaviour and management problems come to a head?",
@@ -736,7 +668,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28257",
+    "id": "tv_28255",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which stewardess leaves St. David for personal reasons in the seventh episode?",
@@ -770,7 +702,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28258",
+    "id": "tv_28256",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, who takes charge of the deck department after Jared's exit?",
@@ -804,7 +736,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28259",
+    "id": "tv_28257",
     "category": "TV",
     "topic": "Below Deck",
     "question": "What dangerous conditions trap Below Deck charter guests on a remote beach after Ben's mistake?",
@@ -838,7 +770,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28260",
+    "id": "tv_28258",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which newly arrived deckhand attracts attention from fellow crew members after joining St. David?",
@@ -872,7 +804,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28261",
+    "id": "tv_28259",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, whose insecurity over Ben's behaviour threatens their developing romance in Episode 8?",
@@ -906,7 +838,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28262",
+    "id": "tv_28260",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which former Real Housewives of New York City cast member appears as a demanding charter guest?",
@@ -940,7 +872,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28263",
+    "id": "tv_28261",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, what makes Chef Anthony's ninth-episode cooking challenge particularly difficult?",
@@ -974,7 +906,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28264",
+    "id": "tv_28262",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, who competes with Sunny for the lead-deckhand position during Episode 9?",
@@ -1008,7 +940,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28265",
+    "id": "tv_28263",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which style of restaurant service stretches Chef Anthony in 'Grenadian Nightmare'?",
@@ -1042,7 +974,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28266",
+    "id": "tv_28264",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which new stewardess joins the shorthanded interior crew during the tenth episode?",
@@ -1076,7 +1008,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28267",
+    "id": "tv_28265",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, where does the crew spend a day off that fails to resolve the feud between Fraser and Barbie?",
@@ -1110,7 +1042,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28268",
+    "id": "tv_28266",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, what unusual title do the very demanding charter guests use for themselves in 'Royal Rumble'?",
@@ -1144,7 +1076,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28269",
+    "id": "tv_28267",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which stewardess does Fraser ask Captain Kerry to consider removing after his patience runs out?",
@@ -1178,41 +1110,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28270",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "In Below Deck Season 11, who becomes upset by bosun Ben's wandering attention towards other women?",
-    "answers": [
-      "Sunny Marquis",
-      "Paris Field",
-      "Xandi Olivier",
-      "Barbie Pascual"
-    ],
-    "correctAnswer": "Sunny Marquis",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck on Bravo",
-      "Written Quiz",
-      "Season: 11",
-      "Year: 2024",
-      "Yacht: St. David",
-      "Charter region: Grenada",
-      "Episode: S11E11",
-      "Episode title: Royal Rumble",
-      "Storyline: Bosun's wandering eye",
-      "Storyline: Sunny fears heartbreak",
-      "Person or group: Sunny Marquis",
-      "Person or group: Ben Willoughby",
-      "Specific fact: Sunny Marquis"
-    ]
-  },
-  {
-    "id": "tv_28271",
+    "id": "tv_28268",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which deckhand faces criticism after Ben learns he has been spreading hurtful rumours?",
@@ -1246,7 +1144,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28272",
+    "id": "tv_28269",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, what change occurs between Barbie and Kyle during the demanding royal charter?",
@@ -1280,7 +1178,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28273",
+    "id": "tv_28270",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which chef loses his place on the boat after repeated issues with guests' meals and timing?",
@@ -1314,7 +1212,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28274",
+    "id": "tv_28271",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, who joins St. David to replace Chef Anthony after the galley dismissal?",
@@ -1348,7 +1246,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28275",
+    "id": "tv_28272",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, what habit of the Episode 13 charter guests places extra demands on the crew?",
@@ -1382,7 +1280,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28276",
+    "id": "tv_28273",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which crew couple struggle with the consequences of moving their relationship beyond friendship?",
@@ -1416,7 +1314,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28277",
+    "id": "tv_28274",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, what personal pressure makes Barbie unsure about pursuing her relationship with Kyle?",
@@ -1450,7 +1348,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28278",
+    "id": "tv_28275",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which new chef receives pushback from a junior member of the interior department?",
@@ -1484,7 +1382,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28279",
+    "id": "tv_28276",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, whose permission does Fraser seek before pursuing a romantic connection with a charter guest?",
@@ -1518,7 +1416,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28280",
+    "id": "tv_28277",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which stewardess has a heated disagreement with Chef Nick during a beach picnic?",
@@ -1552,7 +1450,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28281",
+    "id": "tv_28278",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, who worries that flirting with attractive charter guests might put his deck job in jeopardy?",
@@ -1585,41 +1483,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28282",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "In Below Deck Season 11, which deckhand's clothing and cheeky behaviour annoy Barbie during the later charters?",
-    "answers": [
-      "Kyle Stillie",
-      "Jared Woodin",
-      "Dylan Pierre De Villiers",
-      "Ross Inia"
-    ],
-    "correctAnswer": "Kyle Stillie",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck on Bravo",
-      "Written Quiz",
-      "Season: 11",
-      "Year: 2024",
-      "Yacht: St. David",
-      "Charter region: Grenada",
-      "Episode: S11E15",
-      "Episode title: We'll Always Have Paris",
-      "Storyline: Kyle's revealing clothing",
-      "Storyline: Barbie disapproves",
-      "Person or group: Kyle Stillie",
-      "Person or group: Barbie Pascual",
-      "Specific fact: Kyle Stillie"
-    ]
-  },
-  {
-    "id": "tv_28283",
+    "id": "tv_28279",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, what kind of guest tests Chef Nick's patience during the last charter?",
@@ -1653,7 +1517,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28284",
+    "id": "tv_28280",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which bosun challenges Captain Kerry's authority as the final charter approaches its end?",
@@ -1687,7 +1551,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28285",
+    "id": "tv_28281",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, what are the boat's romantic couples discussing as the season ends?",
@@ -1723,7 +1587,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28286",
+    "id": "tv_28282",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which deckhand questions whether she and Ben will have a future after the charter season?",
@@ -1757,7 +1621,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28287",
+    "id": "tv_28283",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 11, which deckhand's reluctance to keep his clothes on embarrasses Barbie during the finale?",
@@ -1791,40 +1655,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28288",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "In Below Deck Season 11, what type of incident shocks the entire crew at the end of the eleventh season?",
-    "answers": [
-      "A helicopter crash",
-      "A yacht sinking",
-      "An explosive personal argument",
-      "A pirate attack"
-    ],
-    "correctAnswer": "An explosive personal argument",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck on Bravo",
-      "Written Quiz",
-      "Season: 11",
-      "Year: 2024",
-      "Yacht: St. David",
-      "Charter region: Grenada",
-      "Episode: S11E17",
-      "Episode title: End of the Line",
-      "Storyline: Final crew feud",
-      "Storyline: Buried tensions erupt",
-      "Person or group: St. David crew",
-      "Specific fact: An explosive personal argument"
-    ]
-  },
-  {
-    "id": "tv_28289",
+    "id": "tv_28284",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which chef begins Below Deck's twelfth season aboard St. David?",
@@ -1858,7 +1689,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28290",
+    "id": "tv_28285",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Who arrives as bosun at the start of Below Deck Season 12 before being replaced?",
@@ -1892,7 +1723,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28291",
+    "id": "tv_28286",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what unusual cleaning tool does the first charter's germ-conscious primary use to inspect the yacht?",
@@ -1926,7 +1757,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28292",
+    "id": "tv_28287",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which returning Scottish deckhand joins Captain Kerry for another charter season?",
@@ -1960,7 +1791,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28293",
+    "id": "tv_28288",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, who decides to leave the galley after struggling to adapt to the pressure in Season 12?",
@@ -1994,7 +1825,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28294",
+    "id": "tv_28289",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which chef returns to St. David after departing the previous season?",
@@ -2028,7 +1859,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28295",
+    "id": "tv_28290",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which leader's disorganised approach undermines the deck department in 'Bollywood Nights'?",
@@ -2062,7 +1893,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28296",
+    "id": "tv_28291",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, how long is the unusually extended charter at the centre of Episode 3?",
@@ -2096,7 +1927,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28297",
+    "id": "tv_28292",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what industry are the extended-charter guests known for working in?",
@@ -2130,7 +1961,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28298",
+    "id": "tv_28293",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which inexperienced stewardess's relaxed approach to work irritates Rainbeau during the long charter?",
@@ -2164,7 +1995,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28299",
+    "id": "tv_28294",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which bosun's work frustrates the deck team during the prolonged five-day charter?",
@@ -2199,7 +2030,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28300",
+    "id": "tv_28295",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, who becomes closer to Solène during 'Island of Sausages', leaving Rainbeau feeling excluded?",
@@ -2234,7 +2065,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28301",
+    "id": "tv_28296",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what challenge leaves the crew worn out during the fourth episode?",
@@ -2267,7 +2098,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28302",
+    "id": "tv_28297",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what aspect of his private life does Fraser reconsider amid Season 12's crew tensions?",
@@ -2300,7 +2131,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28303",
+    "id": "tv_28298",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which couple go on a date as the interior team's friendships become strained?",
@@ -2334,7 +2165,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28304",
+    "id": "tv_28299",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which stewardess makes an effort to connect with both Bárbara and Solène?",
@@ -2369,7 +2200,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28305",
+    "id": "tv_28300",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what unusual party does Fraser plan for the next charter guests?",
@@ -2403,7 +2234,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28306",
+    "id": "tv_28301",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, who loses the bosun job after Captain Kerry's repeated warnings about poor deck management?",
@@ -2437,7 +2268,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28307",
+    "id": "tv_28302",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which two stews become frustrated with their second stewardess as friendships deteriorate?",
@@ -2472,7 +2303,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28308",
+    "id": "tv_28303",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what effect does Kyle's developing relationship with Solène have on yacht life?",
@@ -2506,7 +2337,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28309",
+    "id": "tv_28304",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which new bosun takes over after Caio leaves St. David?",
@@ -2540,7 +2371,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28310",
+    "id": "tv_28305",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what sort of special guest entertainment does Fraser try to organise dockside?",
@@ -2574,7 +2405,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28311",
+    "id": "tv_28306",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which crew member gets a confession from Kyle about his romantic situation?",
@@ -2608,7 +2439,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28312",
+    "id": "tv_28307",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, where do the crew spend a two-day break after a difficult charter?",
@@ -2641,7 +2472,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28313",
+    "id": "tv_28308",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which returning chef's lingering frustration over the previous year's firing boils over?",
@@ -2675,7 +2506,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28314",
+    "id": "tv_28309",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which two stewardesses' strained working relationship reaches a breaking point?",
@@ -2709,7 +2540,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28315",
+    "id": "tv_28310",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which deckhand is accused of breaking the unwritten rules of male friendship?",
@@ -2742,7 +2573,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28316",
+    "id": "tv_28311",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, whose wandering eye makes Kyle question their budding relationship during the crew's villa break?",
@@ -2776,7 +2607,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28317",
+    "id": "tv_28312",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which deckhand is caught between pursuing Bárbara and the temptation of Solène?",
@@ -2811,7 +2642,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28318",
+    "id": "tv_28313",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what kind of weather threatens the next charter when the crew returns from the villa?",
@@ -2844,7 +2675,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28319",
+    "id": "tv_28314",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which named storm leaves the St. David crew dealing with disruption?",
@@ -2878,7 +2709,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28320",
+    "id": "tv_28315",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which crew member faces criticism for overstepping physical boundaries with a primary guest?",
@@ -2912,7 +2743,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28321",
+    "id": "tv_28316",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which stewardess decides another crew member's problems are beyond her responsibilities?",
@@ -2946,7 +2777,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28322",
+    "id": "tv_28317",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, whose birthday celebrations spark further drama between crew members?",
@@ -2980,7 +2811,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28323",
+    "id": "tv_28318",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which captain faces a difficult decision when Kyle makes a troubling revelation about his conduct?",
@@ -3014,7 +2845,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28324",
+    "id": "tv_28319",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, who does Kyle lash out at after his bruised ego leads to an argument?",
@@ -3048,7 +2879,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28325",
+    "id": "tv_28320",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what troubles the yacht during a difficult charter, leaving guests unhappy and Fraser frantic?",
@@ -3082,7 +2913,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28326",
+    "id": "tv_28321",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which returning chef begins to feel his efforts in the galley are unappreciated?",
@@ -3116,7 +2947,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28327",
+    "id": "tv_28322",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, whose position aboard St. David becomes precarious after earlier concerns over his conduct?",
@@ -3150,7 +2981,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28328",
+    "id": "tv_28323",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which stewardess reports Solène's behaviour to their chief steward?",
@@ -3185,7 +3016,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28329",
+    "id": "tv_28324",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which deckhand's heated speech at a crew night out leaves him with regrets?",
@@ -3218,7 +3049,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28330",
+    "id": "tv_28325",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, who confronts Jess after feeling he has been avoiding her?",
@@ -3252,7 +3083,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28331",
+    "id": "tv_28326",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which demanding docking method stretches the exterior team for the first time?",
@@ -3286,7 +3117,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28332",
+    "id": "tv_28327",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what does Fraser ask the deck team to do to reduce disruption from Solène's relationships?",
@@ -3321,7 +3152,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28333",
+    "id": "tv_28328",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, who does Solène approach after becoming angry with Fraser's management?",
@@ -3356,7 +3187,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28334",
+    "id": "tv_28329",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, how many courses does Chef Anthony plan for the heavily restricted menu in Episode 15?",
@@ -3390,7 +3221,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28335",
+    "id": "tv_28330",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which two crew members discuss whether their relationship can continue after the charter season?",
@@ -3424,7 +3255,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28336",
+    "id": "tv_28331",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which bosun is criticised for neglecting responsibilities late in the season?",
@@ -3458,7 +3289,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28337",
+    "id": "tv_28332",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which two deckhands become cheeky with the charter guests toward season's end?",
@@ -3492,7 +3323,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28338",
+    "id": "tv_28333",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, which crew member is upset when Solène joins the final charter celebrations?",
@@ -3526,7 +3357,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28339",
+    "id": "tv_28334",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 12, what remains unresolved among the crew as the Season 12 finale ends?",
@@ -3559,7 +3390,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28340",
+    "id": "tv_28335",
     "category": "TV",
     "topic": "Below Deck",
     "question": "What is the title of the final regular episode of Below Deck Season 12?",
@@ -3593,7 +3424,7 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==105||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==100||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>q.id!=='tv_'+(28236+i)||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
