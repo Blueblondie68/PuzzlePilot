@@ -1,6 +1,6 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 492: Below Deck (Original Series), Seasons 1–2
-// 59 researched MCQs, original Bravo reality series ONLY, Season 1 (2013), Season 2 (2014).
-// IDs tv_27791–tv_27849; continues after Bellbird Pack 491 tv_27790.
+// 55 researched MCQs, original Bravo reality series ONLY, Season 1 (2013), Season 2 (2014).
+// IDs tv_27791–tv_27845; continues after Bellbird Pack 491 tv_27790.
 // Crew, Honor/Ohana yachts, charter locations, key conflicts, episodes, early reunions,
 // history and recurring yacht roles. No Mediterranean/Sailing Yacht/Down Under/Adventure episodes.
 // Below Deck is ongoing; master stays LAVENDER with coverage cut-off Season 2 / 4 Nov 2014.
@@ -545,7 +545,7 @@ const questions = [
     "id": "tv_27807",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which original deckhand spoke about missing his fiancé Trevor while at sea?",
+    "question": "Which original deckhand was engaged to a man named Trevor?",
     "answers": [
       "Aleks Taldykin",
       "C.J. LeBeau",
@@ -569,7 +569,7 @@ const questions = [
       "David Bradberry",
       "Trevor",
       "Fiance",
-      "Homesickness",
+      "Engagement",
       "Honor",
       "Romance"
     ]
@@ -1073,39 +1073,6 @@ const questions = [
     "id": "tv_27823",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which other member of the Season 1 crew returned as chef for Season 2?",
-    "answers": [
-      "Leon Walker",
-      "Matt Burns",
-      "Kevin Dobson",
-      "Ben Robinson"
-    ],
-    "correctAnswer": "Ben Robinson",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Below Deck Original Series (Bravo)",
-      "Luxury Yacht Crew",
-      "Original Series Only",
-      "Written Quiz",
-      "Season 2 2014",
-      "Section: Season 2",
-      "Ben Robinson",
-      "Chef",
-      "Returning Crew",
-      "Ohana",
-      "Galley",
-      "2014"
-    ]
-  },
-  {
-    "id": "tv_27824",
-    "category": "TV",
-    "topic": "Below Deck",
     "question": "What role did Eddie Lucas have on Ohana in Season 2?",
     "answers": [
       "Bosun",
@@ -1136,7 +1103,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27825",
+    "id": "tv_27824",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which sibling pair joined the Below Deck crew together in Season 2?",
@@ -1169,7 +1136,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27826",
+    "id": "tv_27825",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which sister of Kelley Johnson worked in the interior team?",
@@ -1202,7 +1169,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27827",
+    "id": "tv_27826",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which crew member had previously served in the US Marine Corps?",
@@ -1235,7 +1202,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27828",
+    "id": "tv_27827",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which new deckhand began a romance with Kelley Johnson during the second season?",
@@ -1268,10 +1235,10 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27829",
+    "id": "tv_27828",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which Season 2 deckhand was dismissed after admitting he had exaggerated his experience?",
+    "question": "Which Season 2 deckhand admitted he had exaggerated his yachting experience and was dismissed?",
     "answers": [
       "Kelley Johnson",
       "Andrew Sturby",
@@ -1301,7 +1268,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27830",
+    "id": "tv_27829",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which replacement deckhand joined Ohana after Andrew Sturby left?",
@@ -1334,7 +1301,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27831",
+    "id": "tv_27830",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which Season 1 chief stew returned unexpectedly as a charter guest in Season 2?",
@@ -1367,7 +1334,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27832",
+    "id": "tv_27831",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which two interior crew members had unresolved tensions that resurfaced during Adrienne's guest visit?",
@@ -1400,7 +1367,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27833",
+    "id": "tv_27832",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which episode title announced the opening of Season 2?",
@@ -1433,7 +1400,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27834",
+    "id": "tv_27833",
     "category": "TV",
     "topic": "Below Deck",
     "question": "What kind of formal event challenged the Ohana crew during the second season?",
@@ -1466,40 +1433,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27835",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "Which crew member's birthday was celebrated after Logan Reese joined the yacht?",
-    "answers": [
-      "Kate Chastain",
-      "Eddie Lucas",
-      "Kat Held",
-      "Kelley Johnson"
-    ],
-    "correctAnswer": "Kelley Johnson",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Below Deck Original Series (Bravo)",
-      "Luxury Yacht Crew",
-      "Original Series Only",
-      "Written Quiz",
-      "Season 2 2014",
-      "Section: Season 2",
-      "Kelley Johnson",
-      "Birthday",
-      "Logan Reese",
-      "Night Out",
-      "Ohana",
-      "Season 2"
-    ]
-  },
-  {
-    "id": "tv_27836",
+    "id": "tv_27834",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which charter guest returned to Ohana after a dispute over Kate's unusual blanket arrangement?",
@@ -1532,7 +1466,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27837",
+    "id": "tv_27835",
     "category": "TV",
     "topic": "Below Deck",
     "question": "What object did Kate Chastain controversially fold into a suggestive shape for a charter guest?",
@@ -1565,7 +1499,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27838",
+    "id": "tv_27836",
     "category": "TV",
     "topic": "Below Deck",
     "question": "What did Kate say her suggestive blanket fold was meant to resemble?",
@@ -1598,7 +1532,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27839",
+    "id": "tv_27837",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which part of Ohana did charter guests turn into a temporary stock trading floor?",
@@ -1631,7 +1565,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27840",
+    "id": "tv_27838",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which couple's relationship remained uncertain during the second-season finale?",
@@ -1664,40 +1598,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27841",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "Who hosted the Season 2 reunion featuring the Ohana crew?",
-    "answers": [
-      "Carson Daly",
-      "Andy Cohen",
-      "Ryan Seacrest",
-      "Jeff Probst"
-    ],
-    "correctAnswer": "Andy Cohen",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Below Deck Original Series (Bravo)",
-      "Luxury Yacht Crew",
-      "Original Series Only",
-      "Written Quiz",
-      "Season 2 2014",
-      "Section: Season 2",
-      "Andy Cohen",
-      "Reunion",
-      "Ohana",
-      "2014",
-      "Bravo Host",
-      "Crew"
-    ]
-  },
-  {
-    "id": "tv_27842",
+    "id": "tv_27839",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which crew member was originally from Oxford in England?",
@@ -1730,7 +1631,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27843",
+    "id": "tv_27840",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Before becoming a yacht captain, what industry did Lee Rosbach work in?",
@@ -1763,7 +1664,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27844",
+    "id": "tv_27841",
     "category": "TV",
     "topic": "Below Deck",
     "question": "What nickname did Below Deck fans associate with Captain Lee Rosbach?",
@@ -1795,40 +1696,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27845",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "Which season introduced Kate Chastain, who later became a long-serving chief stew?",
-    "answers": [
-      "Season 8",
-      "Season 2",
-      "Season 1",
-      "Season 4"
-    ],
-    "correctAnswer": "Season 2",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Below Deck Original Series (Bravo)",
-      "Luxury Yacht Crew",
-      "Original Series Only",
-      "Written Quiz",
-      "Recurring Crew and Biographies",
-      "Section: People",
-      "Kate Chastain",
-      "Debut Season",
-      "2014",
-      "Chief Stew",
-      "Bravo",
-      "Career"
-    ]
-  },
-  {
-    "id": "tv_27846",
+    "id": "tv_27842",
     "category": "TV",
     "topic": "Below Deck",
     "question": "What name is given to the senior crew member overseeing a yacht's deckhands?",
@@ -1861,7 +1729,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27847",
+    "id": "tv_27843",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which yacht department is traditionally responsible for guest cabins and table service?",
@@ -1894,7 +1762,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27848",
+    "id": "tv_27844",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Where does the yacht's chef prepare meals for charter guests?",
@@ -1927,7 +1795,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27849",
+    "id": "tv_27845",
     "category": "TV",
     "topic": "Below Deck",
     "question": "What do crew members typically receive from charter guests at the end of each trip?",
@@ -1960,7 +1828,7 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==59||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==55||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>q.id!=='tv_'+String(27791+i)||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
