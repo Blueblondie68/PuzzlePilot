@@ -1,5 +1,5 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 499: Below Deck ORIGINAL SERIES, Seasons 9–10
-// 96 researched MCQs; Season 9 (41), Season 10 (55); ID range tv_28139–tv_28234.
+// 97 researched MCQs; Season 9 (42), Season 10 (55); ID range tv_28139–tv_28235.
 // Distinct season/episode tags support future retrieval and content mapping.
 // 9: S09E01–S09E15, October 2021–February 2022; last episode is Reunion.
 // 10: S10E01–S10E18, November 2022–March 2023; last item is anniversary special (not cast reunion).
@@ -1401,6 +1401,40 @@ const questions = [
     "id": "tv_28180",
     "category": "TV",
     "topic": "Below Deck",
+    "question": "Which deckhand did not appear at the Below Deck Season 9 reunion?",
+    "answers": [
+      "Jake Foulger",
+      "Wes O'Dell",
+      "Rayna Lindsey",
+      "Eddie Lucas"
+    ],
+    "correctAnswer": "Jake Foulger",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Reality TV",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Season: 9",
+      "Broadcast period: 2021–2022",
+      "Yacht: My Seanna",
+      "Charter region: Caribbean",
+      "Episode: S09E15",
+      "Episode title: Reunion",
+      "Storyline: Jake Foulger absent from reunion",
+      "Storyline: Former lead deckhand not at reunion recording",
+      "Person or group: Jake Foulger",
+      "Person or group: Andy Cohen",
+      "Question fact: Jake Foulger",
+      "Written Quiz"
+    ]
+  },
+  {
+    "id": "tv_28181",
+    "category": "TV",
+    "topic": "Below Deck",
     "question": "In Below Deck Season 10, which superyacht hosts the main Season 10 charters?",
     "answers": [
       "Eros",
@@ -1432,7 +1466,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28181",
+    "id": "tv_28182",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, who becomes chief steward after serving as a junior stew during Season 9?",
@@ -1465,7 +1499,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28182",
+    "id": "tv_28183",
     "category": "TV",
     "topic": "Below Deck",
     "question": "Which chef is retained for Below Deck's tenth season aboard St. David?",
@@ -1498,7 +1532,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28183",
+    "id": "tv_28184",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, who serves as the bosun of St. David when Season 10 begins?",
@@ -1531,7 +1565,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28184",
+    "id": "tv_28185",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, what health-related difficulty threatens Captain Lee's ability to remain in command?",
@@ -1564,7 +1598,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28185",
+    "id": "tv_28186",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which stewardess clashes repeatedly with Camille in the early Season 10 charters?",
@@ -1598,7 +1632,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28186",
+    "id": "tv_28187",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which deckhand begins a relationship with deck-stew Camille?",
@@ -1632,7 +1666,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28187",
+    "id": "tv_28188",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, what forces Rachel to change the main course during a Season 10 dinner?",
@@ -1665,7 +1699,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28188",
+    "id": "tv_28189",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which two deckhands provide provocative entertainment for a charter group?",
@@ -1699,7 +1733,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28189",
+    "id": "tv_28190",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, what disrupts Rachel's ambitious multicourse dinner in 'The Muff-Truff Experience'?",
@@ -1732,7 +1766,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28190",
+    "id": "tv_28191",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which interior manager realises he must adjust his leadership style after an embarrassing crew argument?",
@@ -1767,7 +1801,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28191",
+    "id": "tv_28192",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which deckhand's changing mood causes concern for fellow crew member Ben?",
@@ -1801,7 +1835,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28192",
+    "id": "tv_28193",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, who makes a worrying call to a doctor as his physical condition declines aboard the yacht?",
@@ -1834,7 +1868,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28193",
+    "id": "tv_28194",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which two stews are at the centre of Ross McHarg's romantic dilemma?",
@@ -1869,7 +1903,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28194",
+    "id": "tv_28195",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, who is criticised for poor work ethic while splitting time between interior and deck duties?",
@@ -1903,7 +1937,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28195",
+    "id": "tv_28196",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which early Season 10 problem makes Captain Lee consider temporarily leaving St. David?",
@@ -1936,7 +1970,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28196",
+    "id": "tv_28197",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which captain replaces Lee while he is away from St. David for medical reasons?",
@@ -1970,7 +2004,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28197",
+    "id": "tv_28198",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, what type of accomplished athlete is among the guests for Rachel's special dinner?",
@@ -2003,7 +2037,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28198",
+    "id": "tv_28199",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which two heads of department struggle with Camille's attitude before the temporary captain arrives?",
@@ -2038,7 +2072,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28199",
+    "id": "tv_28200",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which department does Captain Sandy assign Camille to work in full-time?",
@@ -2072,7 +2106,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28200",
+    "id": "tv_28201",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, who confronts Camille after she bypasses his authority to complain to the captain?",
@@ -2106,7 +2140,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28201",
+    "id": "tv_28202",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, whose flirtation with other women upsets deckhand Katie on a crew night out?",
@@ -2140,7 +2174,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28202",
+    "id": "tv_28203",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which deckhand is criticised by the bosun for lacking urgency in his work?",
@@ -2174,7 +2208,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28203",
+    "id": "tv_28204",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, who continues to distrust Camille despite her efforts to improve her performance?",
@@ -2208,7 +2242,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28204",
+    "id": "tv_28205",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, what style of dance features in the entertainment for the Season 10 charter guests?",
@@ -2242,7 +2276,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28205",
+    "id": "tv_28206",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which interior crew member is fired after the dispute with Alissa reaches breaking point?",
@@ -2276,7 +2310,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28206",
+    "id": "tv_28207",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, whose slow cooking leaves the partying charter group hungry?",
@@ -2309,7 +2343,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28207",
+    "id": "tv_28208",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which crew member is upset by the dismissal of Camille, with whom he had started a romance?",
@@ -2343,7 +2377,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28208",
+    "id": "tv_28209",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which stewardess finds the physical toll of yacht work particularly difficult after Camille leaves?",
@@ -2376,7 +2410,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28209",
+    "id": "tv_28210",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, on what type of vessel does the St. David crew explore St. Lucia during a day off?",
@@ -2409,7 +2443,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28210",
+    "id": "tv_28211",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which staff position does the new arrival fill after Camille is fired?",
@@ -2443,7 +2477,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28211",
+    "id": "tv_28212",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which newcomer joins St. David after Camille's departure?",
@@ -2476,7 +2510,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28212",
+    "id": "tv_28213",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which chef is enlisted by Sandy to help address problems in the interior department?",
@@ -2511,7 +2545,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28213",
+    "id": "tv_28214",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which department head repeatedly apologises to Katie for his flirtatious behaviour?",
@@ -2545,7 +2579,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28214",
+    "id": "tv_28215",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which deckhand's hidden talent catches the attention of newly divorced charter guests?",
@@ -2578,7 +2612,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28215",
+    "id": "tv_28216",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, where does Captain Sandy take the crew for team-building exercises?",
@@ -2612,7 +2646,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28216",
+    "id": "tv_28217",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which chief steward feels slighted by Captain Sandy's criticism of his leadership?",
@@ -2646,7 +2680,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28217",
+    "id": "tv_28218",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which stewardess's alleged insubordination becomes a subject of crew tension?",
@@ -2680,7 +2714,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28218",
+    "id": "tv_28219",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which stewardess is dismissed after Camille, leaving the interior short-handed again?",
@@ -2714,7 +2748,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28219",
+    "id": "tv_28220",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, what kind of weather disrupts the next charter's planned outings?",
@@ -2748,7 +2782,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28220",
+    "id": "tv_28221",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, who tells Captain Sandy that he is planning to return to the yacht after a medical absence?",
@@ -2782,7 +2816,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28221",
+    "id": "tv_28222",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, what decade is the theme of the party for the beauty-pageant charter group?",
@@ -2816,7 +2850,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28222",
+    "id": "tv_28223",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which demanding charter guest is a repeated source of frustration for the interior team?",
@@ -2850,7 +2884,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28223",
+    "id": "tv_28224",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which bosun has to reprimand a crew member he is romantically attracted to?",
@@ -2884,7 +2918,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28224",
+    "id": "tv_28225",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, who returns to replace Captain Sandy and resume command of St. David?",
@@ -2918,7 +2952,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28225",
+    "id": "tv_28226",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which new stew is thrown straight into a busy charter after joining St. David?",
@@ -2952,7 +2986,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28226",
+    "id": "tv_28227",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which pair of women leaves Ben torn between his past and a new romantic possibility?",
@@ -2987,7 +3021,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28227",
+    "id": "tv_28228",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which cuisine does Rachel choose for a complex tasting menu that pushes her to exhaustion?",
@@ -3020,7 +3054,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28228",
+    "id": "tv_28229",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which crew member is considering coming out to his mother during the Season 10 charters?",
@@ -3053,7 +3087,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28229",
+    "id": "tv_28230",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, who plays a prank on a charter guest in the later episodes of Season 10?",
@@ -3086,7 +3120,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28230",
+    "id": "tv_28231",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, what sort of athletes make up the last charter group aboard St. David in Season 10?",
@@ -3120,7 +3154,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28231",
+    "id": "tv_28232",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which chief stew admits he judged the bodybuilder charter guests too harshly?",
@@ -3153,7 +3187,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28232",
+    "id": "tv_28233",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, which episode marks the last regular St. David charter of Season 10?",
@@ -3187,7 +3221,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28233",
+    "id": "tv_28234",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, what type of programme follows the Season 10 finale instead of a normal reunion?",
@@ -3221,7 +3255,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_28234",
+    "id": "tv_28235",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck Season 10, who sits down with Captain Lee to host the end-of-season tenth-anniversary celebration?",
@@ -3255,7 +3289,7 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==96||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==97||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>q.id!=='tv_'+(28139+i)||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
