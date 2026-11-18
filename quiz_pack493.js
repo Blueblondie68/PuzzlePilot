@@ -39,7 +39,9 @@ const questions = [
       "Season 3 Yacht",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Eros",
+      "Fact: yacht is featured throughout Below Deck's third season"
     ]
   },
   {
@@ -72,7 +74,9 @@ const questions = [
       "Season 3 Location",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: The Bahamas",
+      "Fact: island nation does the third Below Deck season take place"
     ]
   },
   {
@@ -105,7 +109,10 @@ const questions = [
       "Season 3 Crew",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Lee Rosbach",
+      "Fact: captain commands Eros during Below Deck Season 3",
+      "Cast or guest: Lee Rosbach"
     ]
   },
   {
@@ -138,7 +145,11 @@ const questions = [
       "Season 3 Crew",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Kate Chastain",
+      "Fact: serves as chief stewardess aboard Eros",
+      "Cast or guest: Kate Chastain",
+      "Cast or guest: Kate"
     ]
   },
   {
@@ -171,7 +182,11 @@ const questions = [
       "Season 3 Crew",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Eddie Lucas",
+      "Fact: is the bosun on Eros in the third season",
+      "Cast or guest: Eddie Lucas",
+      "Cast or guest: Eddie"
     ]
   },
   {
@@ -204,7 +219,10 @@ const questions = [
       "Season 3 Crew",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Amy Johnson",
+      "Fact: is second stewardess on Eros in Season 3",
+      "Cast or guest: Amy Johnson"
     ]
   },
   {
@@ -237,7 +255,11 @@ const questions = [
       "Season 3 Crew",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Raquel Dakota",
+      "Fact: crew member is commonly known as Rocky",
+      "Cast or guest: Raquel Dakota",
+      "Cast or guest: Rocky"
     ]
   },
   {
@@ -270,7 +292,10 @@ const questions = [
       "Season 3 Crew",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Third stewardess",
+      "Fact: position does Rocky hold aboard Eros",
+      "Cast or guest: Rocky"
     ]
   },
   {
@@ -303,7 +328,11 @@ const questions = [
       "Season 3 Galley",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Leon Walker",
+      "Fact: is Eros's chef at the start of the third season",
+      "Cast or guest: Leon Walker",
+      "Cast or guest: Leon"
     ]
   },
   {
@@ -336,7 +365,12 @@ const questions = [
       "Season 3 Galley",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Ben Robinson",
+      "Fact: chef returns to Eros after Leon's departure",
+      "Cast or guest: Ben Robinson",
+      "Cast or guest: Ben",
+      "Cast or guest: Leon"
     ]
   },
   {
@@ -369,7 +403,11 @@ const questions = [
       "Season 3 Deck",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Connie Arias",
+      "Fact: Season 3 deckhand is named Connie",
+      "Cast or guest: Connie Arias",
+      "Cast or guest: Connie"
     ]
   },
   {
@@ -402,7 +440,10 @@ const questions = [
       "Season 3 Deck",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Don Abenante",
+      "Fact: crew member works as both a second engineer and a deckhand",
+      "Cast or guest: Don Abenante"
     ]
   },
   {
@@ -435,7 +476,12 @@ const questions = [
       "Season 3 Relationships",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Emile Kotze",
+      "Fact: deckhand dates Rocky early in the third season",
+      "Cast or guest: Rocky",
+      "Cast or guest: Emile Kotze",
+      "Cast or guest: Emile"
     ]
   },
   {
@@ -468,7 +514,9 @@ const questions = [
       "Season 3 Location",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Abaco",
+      "Fact: charter destination within the Bahamas is named in the Season 3 premiere"
     ]
   },
   {
@@ -501,7 +549,9 @@ const questions = [
       "Season 3 Charter",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: A foam party",
+      "Fact: kind of party do guests plan in the Season 3 premiere"
     ]
   },
   {
@@ -534,7 +584,11 @@ const questions = [
       "Season 3 Charter",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Dean",
+      "Fact: charter guest from Season 2 returns in the episode 'Pretty Cheeks'",
+      "Cast or guest: Dean",
+      "Episode: Pretty Cheeks"
     ]
   },
   {
@@ -567,7 +621,11 @@ const questions = [
       "Season 3 Interior",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Towel art",
+      "Fact: decorative guest-room skill does Kate need to improve for Dean's return",
+      "Cast or guest: Dean",
+      "Cast or guest: Kate"
     ]
   },
   {
@@ -600,7 +658,10 @@ const questions = [
       "Season 3 Mermaid",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Rocky",
+      "Fact: crew member brings a mermaid tail into the water for a guest dive contest",
+      "Cast or guest: Rocky"
     ]
   },
   {
@@ -633,7 +694,10 @@ const questions = [
       "Season 3 Departure",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Don Abenante",
+      "Fact: departure leaves the deck team short-handed early in Season 3",
+      "Cast or guest: Don Abenante"
     ]
   },
   {
@@ -666,7 +730,11 @@ const questions = [
       "Season 3 Provisioning",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Tequila",
+      "Fact: special drink does Kate struggle to obtain for charter guests in 'I'm Ironing the Captain's Shorts'",
+      "Cast or guest: Kate",
+      "Episode: I'm Ironing the Captain's Shorts"
     ]
   },
   {
@@ -699,7 +767,10 @@ const questions = [
       "Season 3 Crew",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Dane Jackson",
+      "Fact: new deckhand joins Eros in the fifth episode",
+      "Cast or guest: Dane Jackson"
     ]
   },
   {
@@ -732,7 +803,10 @@ const questions = [
       "Season 3 Laundry",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: The laundry room",
+      "Fact: does Rocky write a musical about her work aboard Eros",
+      "Cast or guest: Rocky"
     ]
   },
   {
@@ -765,7 +839,11 @@ const questions = [
       "Season 3 Party",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Whipped cream",
+      "Fact: food item do Connie and Rocky use in their messy bikini party",
+      "Cast or guest: Rocky",
+      "Cast or guest: Connie"
     ]
   },
   {
@@ -798,7 +876,11 @@ const questions = [
       "Season 3 Charter",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Former sorority sisters",
+      "Fact: group of guests relives college days during the 'My Dearest Emile...' charter",
+      "Cast or guest: Emile",
+      "Episode: My Dearest Emile"
     ]
   },
   {
@@ -831,7 +913,10 @@ const questions = [
       "Season 3 Galley",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: A multi-course tasting menu",
+      "Fact: kind of menu do guests request when Leon's provisioning becomes a problem",
+      "Cast or guest: Leon"
     ]
   },
   {
@@ -864,7 +949,9 @@ const questions = [
       "Season 3 Weather",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: A sudden storm",
+      "Fact: sort of weather disrupts the seventh episode of Season 3"
     ]
   },
   {
@@ -897,7 +984,11 @@ const questions = [
       "Season 3 Discipline",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Dane Jackson",
+      "Fact: drunken behaviour during a day off leads to a confrontation with Eddie",
+      "Cast or guest: Dane Jackson",
+      "Cast or guest: Eddie"
     ]
   },
   {
@@ -930,7 +1021,10 @@ const questions = [
       "Season 3 Charter",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: An apparel company",
+      "Fact: kind of company do the guests in 'Boom Boom in the Laundry Room' own",
+      "Episode: Boom Boom in the Laundry Room"
     ]
   },
   {
@@ -963,7 +1057,10 @@ const questions = [
       "Season 3 Galley",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Rabbit",
+      "Fact: meat does Leon serve despite a guest's request not to",
+      "Cast or guest: Leon"
     ]
   },
   {
@@ -996,7 +1093,9 @@ const questions = [
       "Season 3 Emergency",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: A galley fire",
+      "Fact: onboard emergency causes Captain Lee to investigate in Season 3"
     ]
   },
   {
@@ -1029,7 +1128,10 @@ const questions = [
       "Season 3 Discipline",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: She dives into the water without permission",
+      "Fact: action does Rocky take in protest after Captain Lee's dismissal decision",
+      "Cast or guest: Rocky"
     ]
   },
   {
@@ -1062,7 +1164,10 @@ const questions = [
       "Season 3 Guests",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Cynthia Bailey",
+      "Fact: Real Housewives of Atlanta personality boards Eros to celebrate a birthday",
+      "Cast or guest: Cynthia Bailey"
     ]
   },
   {
@@ -1095,7 +1200,10 @@ const questions = [
       "Season 3 Guests",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Claudia Jordan",
+      "Fact: other Real Housewives of Atlanta personality joins Cynthia on the charter",
+      "Cast or guest: Claudia Jordan"
     ]
   },
   {
@@ -1128,7 +1236,10 @@ const questions = [
       "Season 3 Return",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: David Bradberry",
+      "Fact: former deckhand returns to join Eros late in Season 3",
+      "Cast or guest: David Bradberry"
     ]
   },
   {
@@ -1161,7 +1272,11 @@ const questions = [
       "Season 3 Guests",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Emile Kotze",
+      "Fact: crew member becomes a favourite of Cynthia's charter guests",
+      "Cast or guest: Emile Kotze",
+      "Cast or guest: Emile"
     ]
   },
   {
@@ -1194,7 +1309,11 @@ const questions = [
       "Season 3 Galley",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: A steakhouse-style dinner",
+      "Fact: type of dinner does Ben serve to impress charter guests in 'Dirty Laundry'",
+      "Cast or guest: Ben",
+      "Episode: Dirty Laundry"
     ]
   },
   {
@@ -1227,7 +1346,12 @@ const questions = [
       "Season 3 Relationships",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Amy and Emile",
+      "Fact: To whom does Rocky disclose details of her relationship with Eddie",
+      "Cast or guest: Rocky",
+      "Cast or guest: Eddie",
+      "Cast or guest: Emile"
     ]
   },
   {
@@ -1260,7 +1384,11 @@ const questions = [
       "Season 3 Galley",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Ben Robinson's",
+      "Fact: injury threatens the final charter dinner of the season",
+      "Cast or guest: Ben Robinson",
+      "Cast or guest: Ben"
     ]
   },
   {
@@ -1293,7 +1421,11 @@ const questions = [
       "Season 3 Career",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Connie Arias",
+      "Fact: deckhand receives advice from Captain Lee about her yachting future near the season finale",
+      "Cast or guest: Connie Arias",
+      "Cast or guest: Connie"
     ]
   },
   {
@@ -1326,7 +1458,11 @@ const questions = [
       "Season 3 Relationships",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: A bonfire",
+      "Fact: At which crew celebration do Eddie and Rocky confront each other near the season finale",
+      "Cast or guest: Rocky",
+      "Cast or guest: Eddie"
     ]
   },
   {
@@ -1359,7 +1495,9 @@ const questions = [
       "Season 3 Reunion",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Two",
+      "Fact: reunion episodes conclude Below Deck's third season"
     ]
   },
   {
@@ -1392,7 +1530,10 @@ const questions = [
       "Season 3 Reunion",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Don Abenante",
+      "Fact: Season 3 cast member returns to the reunion after abruptly leaving Eros",
+      "Cast or guest: Don Abenante"
     ]
   },
   {
@@ -1425,7 +1566,10 @@ const questions = [
       "Season 3 Reunion",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Drinking while on duty",
+      "Fact: workplace accusation against Kate is discussed at the first reunion",
+      "Cast or guest: Kate"
     ]
   },
   {
@@ -1458,7 +1602,11 @@ const questions = [
       "Season 3 Reunion",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: The laundry room",
+      "Fact: does the secret relationship between Eddie and Rocky become a major reunion topic",
+      "Cast or guest: Rocky",
+      "Cast or guest: Eddie"
     ]
   },
   {
@@ -1491,7 +1639,11 @@ const questions = [
       "Season 3 Reunion",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: Kate and Ben",
+      "Fact: pair discusses whether they have a romantic future at the second reunion",
+      "Cast or guest: Kate",
+      "Cast or guest: Ben"
     ]
   },
   {
@@ -1524,7 +1676,11 @@ const questions = [
       "Season 3 Reunion",
       "Bravo Network",
       "Yacht Crew",
-      "Season 3 Cast and Storylines"
+      "Season 3 Cast and Storylines",
+      "Answer: It continued after the charter season",
+      "Fact: does Rocky claim about her fling with Eddie at the second reunion",
+      "Cast or guest: Rocky",
+      "Cast or guest: Eddie"
     ]
   }
 ];
