@@ -3003,14 +3003,14 @@ const questions = [
     "id": "tv_27073",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which character's family business takeover scheme earned her the secret title 'The Chief'?",
+    "question": "What publishing company did Iris secretly use to attack Cory Publishing in the late 1980s?",
     "answers": [
-      "Donna Love",
-      "Rachel Cory",
-      "Cecile DePoulignac",
-      "Iris Wheeler"
+      "Brava",
+      "Bennett Publishing",
+      "Somerset Media",
+      "Hutchins Communications"
     ],
-    "correctAnswer": "Iris Wheeler",
+    "correctAnswer": "Bennett Publishing",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -3023,12 +3023,12 @@ const questions = [
       "1981–1989 Later Years",
       "Written Quiz",
       "Section: 1987–1989 major late-decade storylines",
+      "Bennett Publishing",
       "Iris Wheeler",
-      "The Chief",
       "Cory Publishing",
-      "Corporate Plot",
       "1988–1989",
-      "Secret Identity"
+      "Hostile Takeover",
+      "Dummy Corporation"
     ]
   },
   {
