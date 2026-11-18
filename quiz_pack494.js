@@ -36,7 +36,9 @@ const questions = [
       "Written Quiz",
       "Season 4 Yacht",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Valor",
+      "Fact: yacht is the setting of Below Deck's fourth season"
     ]
   },
   {
@@ -68,7 +70,9 @@ const questions = [
       "Written Quiz",
       "Season 4 Broadcast",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: 2016",
+      "Fact: year did Below Deck's fourth season first air"
     ]
   },
   {
@@ -100,7 +104,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Captain",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Lee Rosbach",
+      "Fact: captains Valor in the fourth season",
+      "Cast or guest: Lee Rosbach"
     ]
   },
   {
@@ -132,7 +139,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Crew",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Kate Chastain",
+      "Fact: is the chief stewardess aboard Valor",
+      "Cast or guest: Kate Chastain",
+      "Cast or guest: Kate"
     ]
   },
   {
@@ -164,7 +175,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Crew",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Ben Robinson",
+      "Fact: serves as chef aboard Valor",
+      "Cast or guest: Ben Robinson",
+      "Cast or guest: Ben"
     ]
   },
   {
@@ -196,7 +211,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Crew",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Kelley Johnson",
+      "Fact: returning deckhand is promoted to bosun in Season 4",
+      "Cast or guest: Kelley Johnson",
+      "Cast or guest: Kelley"
     ]
   },
   {
@@ -228,7 +247,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Crew",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Emily Warburton-Adams",
+      "Fact: is Valor's second stewardess during Season 4",
+      "Cast or guest: Emily Warburton-Adams",
+      "Cast or guest: Emily"
     ]
   },
   {
@@ -260,7 +283,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Crew",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Sierra Storm",
+      "Fact: holds the third stewardess role on Valor in Season 4",
+      "Cast or guest: Sierra Storm",
+      "Cast or guest: Sierra"
     ]
   },
   {
@@ -292,7 +319,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Crew",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Trevor Walker",
+      "Fact: senior deckhand causes repeated friction with bosun Kelley",
+      "Cast or guest: Trevor Walker",
+      "Cast or guest: Kelley"
     ]
   },
   {
@@ -324,7 +355,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Crew",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Nico Scholly",
+      "Fact: Season 4 deckhand is named Nico",
+      "Cast or guest: Nico Scholly",
+      "Cast or guest: Nico"
     ]
   },
   {
@@ -356,7 +391,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Crew",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Lauren Burchell",
+      "Fact: deckhand is named Lauren",
+      "Cast or guest: Lauren Burchell"
     ]
   },
   {
@@ -388,7 +426,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Episodes",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: No One Said This Job Was Easy",
+      "Fact: episode opens Below Deck Season 4",
+      "Episode: No One Said This Job Was Easy"
     ]
   },
   {
@@ -420,7 +461,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Episodes",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: A stewardess missing her flight",
+      "Fact: delays Kate's complete interior team at the start of Season 4",
+      "Cast or guest: Kate"
     ]
   },
   {
@@ -452,7 +496,9 @@ const questions = [
       "Written Quiz",
       "Season 4 Guests",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: A pampered poodle",
+      "Fact: sort of guest causes extra work during the third episode"
     ]
   },
   {
@@ -484,7 +530,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Galley",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: A twelve-course meal",
+      "Fact: In the fourth episode, what sort of meal must Ben prepare",
+      "Cast or guest: Ben"
     ]
   },
   {
@@ -516,7 +565,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Galley",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Ben Robinson",
+      "Fact: requests extra galley assistance while preparing that demanding meal",
+      "Cast or guest: Ben Robinson",
+      "Cast or guest: Ben"
     ]
   },
   {
@@ -548,7 +601,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Crew",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Kyle Dixon",
+      "Fact: crew member joins Valor in Episode 5",
+      "Cast or guest: Kyle Dixon"
     ]
   },
   {
@@ -580,7 +636,12 @@ const questions = [
       "Written Quiz",
       "Season 4 Relationships",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Nico Scholly",
+      "Fact: continues trying to pursue Emily in the fifth episode",
+      "Cast or guest: Nico Scholly",
+      "Cast or guest: Emily",
+      "Cast or guest: Nico"
     ]
   },
   {
@@ -612,7 +673,9 @@ const questions = [
       "Written Quiz",
       "Season 4 Safety",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: A boating accident",
+      "Fact: incident endangers charter guests in Episode 6"
     ]
   },
   {
@@ -644,7 +707,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Episodes",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Decent Proposal",
+      "Fact: episode features a surprise engagement dinner",
+      "Episode: Decent Proposal"
     ]
   },
   {
@@ -676,7 +742,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Relationships",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Kyle Dixon",
+      "Fact: deckhand develops a growing interest in Sierra",
+      "Cast or guest: Kyle Dixon",
+      "Cast or guest: Sierra"
     ]
   },
   {
@@ -708,7 +778,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Relationships",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Ben and Emily",
+      "Fact: two crew members go out together in Episode 8",
+      "Cast or guest: Ben",
+      "Cast or guest: Emily"
     ]
   },
   {
@@ -740,7 +814,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Relationships",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: They go on a date",
+      "Fact: happens between Kyle and Sierra in Episode 8",
+      "Cast or guest: Sierra"
     ]
   },
   {
@@ -772,7 +849,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Deck",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Kelley Johnson",
+      "Fact: struggles to manage the exterior team in the ninth episode",
+      "Cast or guest: Kelley Johnson",
+      "Cast or guest: Kelley"
     ]
   },
   {
@@ -804,7 +885,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Roles",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Exterior deck crew",
+      "Fact: department does bosun Kelley lead",
+      "Cast or guest: Kelley"
     ]
   },
   {
@@ -836,7 +920,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Galley",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: A dangerous reaction to Ben's food",
+      "Fact: major problem features in Episode 10's food service",
+      "Cast or guest: Ben"
     ]
   },
   {
@@ -868,7 +955,12 @@ const questions = [
       "Written Quiz",
       "Season 4 Guests",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Dean Slover",
+      "Fact: returning charter guest arrives in 'Bosun Blues'",
+      "Cast or guest: Dean Slover",
+      "Cast or guest: Dean",
+      "Episode: Bosun Blues"
     ]
   },
   {
@@ -900,7 +992,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Discipline",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: An expensive piece of the yacht",
+      "Fact: piece of equipment causes Captain Lee to reprimand the crew in 'Bosun Blues'",
+      "Episode: Bosun Blues"
     ]
   },
   {
@@ -932,7 +1027,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Guests",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: He is stranded on a beach",
+      "Fact: happens to Dean in the episode 'Bemily'",
+      "Cast or guest: Dean",
+      "Episode: Bemily"
     ]
   },
   {
@@ -964,7 +1063,12 @@ const questions = [
       "Written Quiz",
       "Season 4 Episodes",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Ben and Emily",
+      "Fact: crew relationship inspires the title 'Bemily'",
+      "Cast or guest: Ben",
+      "Cast or guest: Emily",
+      "Episode: Bemily"
     ]
   },
   {
@@ -996,7 +1100,12 @@ const questions = [
       "Written Quiz",
       "Season 4 Interior",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Emily and Sierra's",
+      "Fact: work ethic increasingly frustrates Kate in the penultimate episode",
+      "Cast or guest: Kate",
+      "Cast or guest: Sierra",
+      "Cast or guest: Emily"
     ]
   },
   {
@@ -1028,7 +1137,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Conflict",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Lauren and Nico",
+      "Fact: two deck crew members become fed up with Kate's behaviour near the season's end",
+      "Cast or guest: Kate",
+      "Cast or guest: Nico"
     ]
   },
   {
@@ -1060,7 +1173,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Episodes",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: 50 Shades of Ben",
+      "Fact: episode concludes Below Deck Season 4",
+      "Cast or guest: Ben",
+      "Episode: 50 Shades of Ben"
     ]
   },
   {
@@ -1092,7 +1209,13 @@ const questions = [
       "Written Quiz",
       "Season 4 Relationships",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Emily Warburton-Adams",
+      "Fact: questions Ben's friendship with Kate in the season finale",
+      "Cast or guest: Emily Warburton-Adams",
+      "Cast or guest: Kate",
+      "Cast or guest: Ben",
+      "Cast or guest: Emily"
     ]
   },
   {
@@ -1124,7 +1247,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Finale",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Kyle Dixon",
+      "Fact: makes Ashley an offer in the Season 4 finale",
+      "Cast or guest: Kyle Dixon",
+      "Cast or guest: Ashley"
     ]
   },
   {
@@ -1156,7 +1283,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Episodes",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Season 4",
+      "Fact: season's finale is called '50 Shades of Ben'",
+      "Cast or guest: Ben",
+      "Episode: 50 Shades of Ben"
     ]
   },
   {
@@ -1188,7 +1319,9 @@ const questions = [
       "Written Quiz",
       "Season 4 Broadcast",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Fourteen",
+      "Fact: numbered episodes are listed for Below Deck Season 4"
     ]
   },
   {
@@ -1220,7 +1353,9 @@ const questions = [
       "Written Quiz",
       "Season 4 Broadcast",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Bravo",
+      "Fact: US network aired Below Deck's fourth season"
     ]
   },
   {
@@ -1252,7 +1387,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Episodes",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Bemily",
+      "Fact: episode immediately follows 'Bosun Blues'",
+      "Episode: Bosun Blues",
+      "Episode: Bemily"
     ]
   },
   {
@@ -1284,7 +1423,11 @@ const questions = [
       "Written Quiz",
       "Season 4 Episodes",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Bombed by a Care Bear",
+      "Fact: fourth-season episode centres on Kyle pushing Sierra's patience and a risky meal",
+      "Cast or guest: Sierra",
+      "Episode: Bombed by a Care Bear"
     ]
   },
   {
@@ -1316,7 +1459,10 @@ const questions = [
       "Written Quiz",
       "Season 4 Episodes",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: That Tuna Is F@#!ed",
+      "Fact: episode does Trevor's conduct endanger crew safety",
+      "Episode: That Tuna Is F@#!ed"
     ]
   },
   {
@@ -1348,7 +1494,9 @@ const questions = [
       "Written Quiz",
       "Season 4 Roles",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Interior crew",
+      "Fact: department is responsible for guest cabins and service aboard Valor"
     ]
   },
   {
@@ -1380,7 +1528,12 @@ const questions = [
       "Written Quiz",
       "Season 4 Conflict",
       "Yacht Crew",
-      "Season 4 Cast and Storylines"
+      "Season 4 Cast and Storylines",
+      "Answer: Ben Robinson",
+      "Fact: crew member repeatedly clashes with Kate in the galley",
+      "Cast or guest: Ben Robinson",
+      "Cast or guest: Kate",
+      "Cast or guest: Ben"
     ]
   }
 ];
