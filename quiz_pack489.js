@@ -1,6 +1,6 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 489: As the World Turns Part 4 (1990–1999)
-// 90 selectively researched 1990s questions, 4 choices, tags and daily eligibility.
-// IDs tv_27548–tv_27637; Pack 488 ends tv_27547.
+// 87 selectively researched 1990s questions, 4 choices, tags and daily eligibility.
+// IDs tv_27548–tv_27634; Pack 488 ends tv_27547.
 // Coverage: Marland's final years, Lily/Holden/Damian, Barbara/Hal, Lisa, Lucinda/John,
 // Carly/Rosanna/Jack, familiar Oakdale families, 1999 baby switch and Another World crossover.
 // Next packs still required: 2000–2010. Show remains LAVENDER / PARTIAL.
@@ -275,38 +275,6 @@ const questions = [
     "id": "tv_27556",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the name of Holden's son born from his relationship with Julie Wendall?",
-    "answers": [
-      "Luke",
-      "Dusty",
-      "Paul",
-      "Aaron"
-    ],
-    "correctAnswer": "Aaron",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: As the World Turns",
-      "As the World Turns (CBS)",
-      "Daytime Soap Opera",
-      "Oakdale",
-      "1990–1999 Stories",
-      "Written Quiz",
-      "Section: Early 1990s",
-      "Aaron Snyder",
-      "Holden Snyder",
-      "Julie Wendall",
-      "Son",
-      "Parentage",
-      "1990s"
-    ]
-  },
-  {
-    "id": "tv_27557",
-    "category": "TV",
-    "topic": "As the World Turns",
     "question": "Which wealthy Oakdale heiress married Holden Snyder in 1991?",
     "answers": [
       "Lily Walsh",
@@ -336,7 +304,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27558",
+    "id": "tv_27557",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which prominent businesswoman was Lily Walsh's adoptive mother?",
@@ -368,7 +336,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27559",
+    "id": "tv_27558",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress continued portraying Lucinda Walsh through the 1990s?",
@@ -400,7 +368,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27560",
+    "id": "tv_27559",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress played Lily Walsh during much of her 1990s romance with Holden?",
@@ -432,7 +400,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27561",
+    "id": "tv_27560",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What happened to Holden after being attacked in New York, disrupting his marriage to Lily?",
@@ -464,7 +432,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27562",
+    "id": "tv_27561",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who became Lily's new husband while Holden was struggling with memory loss?",
@@ -496,7 +464,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27563",
+    "id": "tv_27562",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor portrayed Damian Grimaldi during the 1990s?",
@@ -528,17 +496,17 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27564",
+    "id": "tv_27563",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What title was associated with Damian Grimaldi's aristocratic European background?",
+    "question": "Which actor was reportedly offered the role of Damian Grimaldi before Paolo Seganti?",
     "answers": [
-      "Duke of Oakdale",
-      "Baron of Chicago",
-      "Earl of Illinois",
-      "Prince"
+      "John Wesley Shipp",
+      "Jon Lindstrom",
+      "Scott Holmes",
+      "Michael Park"
     ],
-    "correctAnswer": "Prince",
+    "correctAnswer": "Jon Lindstrom",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -552,18 +520,18 @@ const questions = [
       "Written Quiz",
       "Section: Early 1990s",
       "Damian Grimaldi",
-      "Prince",
-      "Aristocracy",
-      "Italy",
-      "European Family",
-      "1990s"
+      "Jon Lindstrom",
+      "Casting Offer",
+      "Paolo Seganti",
+      "1993 Debut",
+      "Actor"
     ]
   },
   {
-    "id": "tv_27565",
+    "id": "tv_27564",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Damian Grimaldi's domineering mother?",
+    "question": "Which woman posed as Damian Grimaldi's mother before the truth about his childhood emerged?",
     "answers": [
       "Orlena Grimaldi",
       "Lucinda Walsh",
@@ -584,15 +552,15 @@ const questions = [
       "Written Quiz",
       "Section: Mid 1990s",
       "Orlena Grimaldi",
-      "Damian",
-      "Mother",
-      "Lily Walsh",
-      "Family Conflict",
+      "Damian Grimaldi",
+      "Childhood Nanny",
+      "False Motherhood",
+      "Family Secret",
       "1990s"
     ]
   },
   {
-    "id": "tv_27566",
+    "id": "tv_27565",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which British actress portrayed Orlena Grimaldi in the mid-1990s?",
@@ -624,7 +592,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27567",
+    "id": "tv_27566",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Whom did Orlena Grimaldi have held captive in a cellar during her schemes?",
@@ -656,7 +624,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27568",
+    "id": "tv_27567",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who rescued kidnapped Lily, persuading her to give their marriage another chance?",
@@ -688,7 +656,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27569",
+    "id": "tv_27568",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What was the birth name of Lily and Damian's son Luke?",
@@ -720,7 +688,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27570",
+    "id": "tv_27569",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Where did Lily deliver her son Luciano in 1995?",
@@ -752,7 +720,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27571",
+    "id": "tv_27570",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who helped deliver Lily's baby Luciano at the Snyder farmhouse?",
@@ -784,7 +752,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27572",
+    "id": "tv_27571",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What shorter name did Luciano Grimaldi later use?",
@@ -816,7 +784,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27573",
+    "id": "tv_27572",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor played Holden Snyder opposite Lily during the 1994 bell-tower storyline?",
@@ -848,7 +816,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27574",
+    "id": "tv_27573",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "In which year was the notable Lily–Holden–Damian 'bell tower' episode broadcast?",
@@ -880,7 +848,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27575",
+    "id": "tv_27574",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Where did Lily and Holden have their memorable confrontation in a 1994 episode?",
@@ -912,7 +880,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27576",
+    "id": "tv_27575",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which character was Lucinda's former husband as their marriage ended around the start of the 1990s?",
@@ -944,7 +912,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27577",
+    "id": "tv_27576",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What problem brought John Dixon and Kim closer as his marriage to Lucinda failed?",
@@ -976,7 +944,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27578",
+    "id": "tv_27577",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which of John Dixon's children struggled with alcoholism in the early 1990s?",
@@ -1008,7 +976,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27579",
+    "id": "tv_27578",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor played Andy Dixon throughout much of the 1990s?",
@@ -1040,7 +1008,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27580",
+    "id": "tv_27579",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress was associated with Emily Stewart during the 1990s?",
@@ -1072,7 +1040,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27581",
+    "id": "tv_27580",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was Emily Stewart's mother, a veteran Oakdale doctor?",
@@ -1104,7 +1072,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27582",
+    "id": "tv_27581",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which long-running actress played Susan Stewart during the 1990s?",
@@ -1136,7 +1104,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27583",
+    "id": "tv_27582",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which lawyer and police couple stayed a cornerstone of As the World Turns in the 1990s?",
@@ -1167,7 +1135,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27584",
+    "id": "tv_27583",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who portrayed Tom Hughes from the late 1980s into the 2010 finale?",
@@ -1199,7 +1167,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27585",
+    "id": "tv_27584",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress resumed the part of Margo Hughes in 1994 and remained through the finale?",
@@ -1231,7 +1199,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27586",
+    "id": "tv_27585",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress was a temporary Margo Hughes replacement in the early 1990s?",
@@ -1263,7 +1231,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27587",
+    "id": "tv_27586",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which attorney played by Tamara Tunie was an important Oakdale character?",
@@ -1295,7 +1263,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27588",
+    "id": "tv_27587",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which public legal office did Jessica Griffin hold in Oakdale?",
@@ -1326,7 +1294,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27589",
+    "id": "tv_27588",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress returned as Jessica Griffin in 1999 after several years away?",
@@ -1358,7 +1326,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27590",
+    "id": "tv_27589",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which television programme employed Jessica Griffin's actress Tamara Tunie as medical examiner Melinda Warner?",
@@ -1390,7 +1358,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27591",
+    "id": "tv_27590",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which child was revealed to be Lisa's previously unknown son from her 1960s Chicago years?",
@@ -1422,39 +1390,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27592",
-    "category": "TV",
-    "topic": "As the World Turns",
-    "question": "During which decade did Lisa's concealed son Scott Eldridge first come to Oakdale?",
-    "answers": [
-      "The 1970s",
-      "The 2000s",
-      "The 1980s",
-      "The 1990s"
-    ],
-    "correctAnswer": "The 1990s",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: As the World Turns",
-      "As the World Turns (CBS)",
-      "Daytime Soap Opera",
-      "Oakdale",
-      "1990–1999 Stories",
-      "Written Quiz",
-      "Section: Early 1990s",
-      "Scott Eldridge",
-      "1992",
-      "Lisa",
-      "Return",
-      "Secret Child",
-      "Decade"
-    ]
-  },
-  {
-    "id": "tv_27593",
+    "id": "tv_27591",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which short-lived prime-time spin-off supplied the backstory for Lisa's hidden son Scott?",
@@ -1486,7 +1422,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27594",
+    "id": "tv_27592",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor first portrayed adult Scott Eldridge when he appeared in 1992?",
@@ -1518,7 +1454,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27595",
+    "id": "tv_27593",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which family raised Scott Eldridge before he discovered that Lisa was his mother?",
@@ -1550,7 +1486,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27596",
+    "id": "tv_27594",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which woman married fashion designer Barbara Ryan's former partner Hal Munson in the late 1990s?",
@@ -1582,7 +1518,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27597",
+    "id": "tv_27595",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress portrayed Barbara Ryan throughout the 1990s?",
@@ -1614,7 +1550,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27598",
+    "id": "tv_27596",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was the biological father of Barbara Ryan's daughter Jennifer?",
@@ -1646,7 +1582,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27599",
+    "id": "tv_27597",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What was the surname of the man who fathered Barbara Ryan's daughter Jennifer?",
@@ -1678,7 +1614,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27600",
+    "id": "tv_27598",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor portrayed Darryl Crawford, the father of Barbara's daughter Jennifer?",
@@ -1710,7 +1646,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27601",
+    "id": "tv_27599",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was Barbara's husband Hal Munson primarily employed as?",
@@ -1741,7 +1677,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27602",
+    "id": "tv_27600",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which Grimaldi patriarch became Lisa's husband during the mid-1990s?",
@@ -1773,7 +1709,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27603",
+    "id": "tv_27601",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which member of the Grimaldi family was killed shortly after marrying Lisa?",
@@ -1805,7 +1741,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27604",
+    "id": "tv_27602",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was responsible for Eduardo Grimaldi's death?",
@@ -1837,7 +1773,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27605",
+    "id": "tv_27603",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress originated the role of Carly Tenney in As the World Turns?",
@@ -1868,7 +1804,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27606",
+    "id": "tv_27604",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which year marked Carly Tenney's first arrival in Oakdale?",
@@ -1900,7 +1836,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27607",
+    "id": "tv_27605",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which wealthy character was revealed to be Carly Tenney's maternal half-sister?",
@@ -1932,7 +1868,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27608",
+    "id": "tv_27606",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was Carly Tenney's biological mother?",
@@ -1964,7 +1900,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27609",
+    "id": "tv_27607",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which character was engaged to mechanic Mike Kasnoff before Carly interfered?",
@@ -1996,7 +1932,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27610",
+    "id": "tv_27608",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor first portrayed Mike Kasnoff on the soap?",
@@ -2028,7 +1964,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27611",
+    "id": "tv_27609",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What was Mike Kasnoff's trade when he first met Rosanna Cabot?",
@@ -2060,7 +1996,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27612",
+    "id": "tv_27610",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What first name did Carly give the baby she lost after premature labour?",
@@ -2092,7 +2028,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27613",
+    "id": "tv_27611",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which city did Carly leave for after her stillbirth in the mid-1990s?",
@@ -2124,7 +2060,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27614",
+    "id": "tv_27612",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which policeman played by Michael Park arrived in Oakdale in 1997?",
@@ -2155,7 +2091,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27615",
+    "id": "tv_27613",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor played Jack Snyder from his 1997 arrival to the series finale?",
@@ -2187,7 +2123,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27616",
+    "id": "tv_27614",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which Snyder relative was Jack's brother and an early romantic interest of Carly?",
@@ -2219,7 +2155,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27617",
+    "id": "tv_27615",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which woman became Jack Snyder's enduring romantic partner?",
@@ -2250,7 +2186,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27618",
+    "id": "tv_27616",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which woman offered Carly a multimillion-dollar trust fund dependent on having a child under specific marriage conditions?",
@@ -2282,7 +2218,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27619",
+    "id": "tv_27617",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What was the value of the trust fund Rosanna Cabot offered Carly in the late 1990s?",
@@ -2314,7 +2250,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27620",
+    "id": "tv_27618",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was Parker's biological father after Carly's baby-paternity turmoil?",
@@ -2346,7 +2282,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27621",
+    "id": "tv_27619",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which doctor married Carly while she was pregnant and the baby's paternity was disputed?",
@@ -2378,7 +2314,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27622",
+    "id": "tv_27620",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who did Carly first marry when pursuing Rosanna's trust-fund conditions?",
@@ -2410,7 +2346,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27623",
+    "id": "tv_27621",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which year did Carly return to As the World Turns after her first departure?",
@@ -2442,7 +2378,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27624",
+    "id": "tv_27622",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress played Carly's cousin Molly Conlan during the late 1990s?",
@@ -2474,7 +2410,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27625",
+    "id": "tv_27623",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which town relative was Molly Conlan's cousin?",
@@ -2505,7 +2441,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27626",
+    "id": "tv_27624",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor played villain David Stenbeck around the 1999 Lily-Holden baby-switch plot?",
@@ -2537,7 +2473,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27627",
+    "id": "tv_27625",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who kidnapped Lily and her newborn in a major 1999 storyline?",
@@ -2569,7 +2505,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27628",
+    "id": "tv_27626",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What was the name Lily and Holden initially gave the daughter whose birth was followed by a switch?",
@@ -2601,7 +2537,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27629",
+    "id": "tv_27627",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What happened to Lily and Holden's baby in the 1999 David Stenbeck mystery?",
@@ -2633,7 +2569,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27630",
+    "id": "tv_27628",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which long-running NBC soap supplied Jake McKinnon to As the World Turns in 1999?",
@@ -2665,7 +2601,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27631",
+    "id": "tv_27629",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor continued playing Jake McKinnon when the character crossed over from Another World?",
@@ -2697,7 +2633,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27632",
+    "id": "tv_27630",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which character played by Jensen Buchanan also crossed over from Another World in 1999?",
@@ -2729,7 +2665,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27633",
+    "id": "tv_27631",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which composer wrote 'Jelinda's Theme', used in the programme's 1993 opening sequence?",
@@ -2761,7 +2697,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27634",
+    "id": "tv_27632",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "In which year did As the World Turns introduce its 'Jelinda's Theme' opening sequence?",
@@ -2793,7 +2729,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27635",
+    "id": "tv_27633",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What images filled the letters of the title during the 1993 opening credits?",
@@ -2825,7 +2761,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27636",
+    "id": "tv_27634",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What major change came to the programme's opening sequence in November 1999?",
@@ -2855,41 +2791,9 @@ const questions = [
       "Credits",
       "CBS"
     ]
-  },
-  {
-    "id": "tv_27637",
-    "category": "TV",
-    "topic": "As the World Turns",
-    "question": "Which older CBS soap reached its 40th anniversary in 1996?",
-    "answers": [
-      "As the World Turns",
-      "The Young and the Restless",
-      "One Life to Live",
-      "All My Children"
-    ],
-    "correctAnswer": "As the World Turns",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: As the World Turns",
-      "As the World Turns (CBS)",
-      "Daytime Soap Opera",
-      "Oakdale",
-      "1990–1999 Stories",
-      "Written Quiz",
-      "Section: Production",
-      "1996",
-      "40th Anniversary",
-      "As The World Turns",
-      "CBS",
-      "1956 Premiere",
-      "Milestone"
-    ]
   }
 ];
-if(questions.length!==90||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==87||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>q.id!=='tv_'+(27548+i)||q.category!=='TV'||q.topic!=='As the World Turns'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
