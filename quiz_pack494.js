@@ -737,14 +737,14 @@ const questions = [
     "id": "tv_27916",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which department does bosun Kelley lead?",
+    "question": "Who becomes angry with Sierra after learning how she treated another deckhand in 'One Less Fish in the Sea'?",
     "answers": [
-      "Exterior deck crew",
-      "Interior service team",
-      "Galley chefs",
-      "Charter reservations office"
+      "Kelley Johnson",
+      "Trevor Walker",
+      "Nico Scholly",
+      "Captain Lee Rosbach"
     ],
-    "correctAnswer": "Exterior deck crew",
+    "correctAnswer": "Kelley Johnson",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -758,9 +758,8 @@ const questions = [
       "Year: 2016",
       "Yacht: Valor",
       "Season 4 Crew",
-      "Storyline: Kelley commands exterior team",
-      "Person: Kelley",
-      "Relevant fact: Exterior deck crew"
+      "Storyline: Kelley clashes with Sierra over a deckhand",
+      "Relevant fact: Kelley Johnson"
     ]
   },
   {
@@ -1070,14 +1069,14 @@ const questions = [
     "id": "tv_27927",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which season's finale is called '50 Shades of Ben'?",
+    "question": "Which stewardess is embarrassed by Ben during 'The Sea Was Angry'?",
     "answers": [
-      "Season 2",
-      "Season 3",
-      "Season 6",
-      "Season 4"
+      "Amy Johnson",
+      "Emily Warburton-Adams",
+      "Sierra Storm",
+      "Kate Chastain"
     ],
-    "correctAnswer": "Season 4",
+    "correctAnswer": "Emily Warburton-Adams",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -1091,8 +1090,8 @@ const questions = [
       "Year: 2016",
       "Yacht: Valor",
       "Season 4 Crew",
-      "Storyline: 50 Shades of Ben finale",
-      "Relevant fact: Season 4"
+      "Storyline: Ben embarrasses Emily during Season 4",
+      "Relevant fact: Emily Warburton-Adams"
     ]
   },
   {
