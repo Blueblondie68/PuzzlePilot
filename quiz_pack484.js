@@ -1,8 +1,8 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 484: Another World, Part 4 (1990–1999)
-// 121 researched questions on the final decade: Felicia and Lorna; Cass and Frankie;
+// 106 researched questions on the final decade: Felicia and Lorna; Cass and Frankie;
 // Jake, Marley, Vicky and Paulina; Rachel and Carl; Ryan and Grant; Lila, Josie and the finale.
 // Continuity after Pack 483 (1981–1989; tv_26976–tv_27076).
-// IDs tv_27077–tv_27197. Major spoilers.
+// IDs tv_27077–tv_27182. Major spoilers.
 // Research reviewed 18 November 2026:
 // https://www.soapoperadigest.com/content/remembering-another-world-on-the-25th-anniversary-of-its-finale/
 // https://www.encyclopedia.com/media/encyclopedias-almanacs-transcripts-and-maps/another-world
@@ -2201,38 +2201,6 @@ const questions = [
     "id": "tv_27148",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was Donna Love's much younger suitor, the son of her longtime rival Rachel?",
-    "answers": [
-      "Matthew Cory",
-      "Jamie Frame",
-      "Dean Frame",
-      "Sean McKinnon"
-    ],
-    "correctAnswer": "Matthew Cory",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: Mid 1990s – new family relationships and crises",
-      "Donna Love",
-      "Matthew Cory",
-      "Rachel Cory",
-      "May December Romance",
-      "Family",
-      "1990s"
-    ]
-  },
-  {
-    "id": "tv_27149",
-    "category": "TV",
-    "topic": "Another World",
     "question": "Which of Amanda Cory's marriages ended amid her husband's involvement with Lorna Devon?",
     "answers": [
       "Her marriage to Jamie Frame",
@@ -2262,15 +2230,15 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27150",
+    "id": "tv_27149",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which character played a decisive role in bringing the widowed Rachel Cory and reformed Carl Hutchins together?",
+    "question": "Which business empire's ownership crisis brought Rachel Cory and former enemy Carl Hutchins into closer contact?",
     "answers": [
-      "The Harbor Club",
-      "Brava's rival magazine",
       "Cory Publishing",
-      "The Bay City Police"
+      "Frame Industries",
+      "Love Enterprises",
+      "Hudson Investments"
     ],
     "correctAnswer": "Cory Publishing",
     "difficulty": "Medium",
@@ -2294,7 +2262,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27151",
+    "id": "tv_27150",
     "category": "TV",
     "topic": "Another World",
     "question": "What stake in Cory Publishing gave Carl the leverage to help Rachel fight a hostile takeover?",
@@ -2326,7 +2294,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27152",
+    "id": "tv_27151",
     "category": "TV",
     "topic": "Another World",
     "question": "In which year did Rachel Cory and Carl Hutchins marry?",
@@ -2358,7 +2326,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27153",
+    "id": "tv_27152",
     "category": "TV",
     "topic": "Another World",
     "question": "Who secretly replaced Iris's blank cartridges with live bullets before she shot Carl Hutchins?",
@@ -2390,7 +2358,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27154",
+    "id": "tv_27153",
     "category": "TV",
     "topic": "Another World",
     "question": "What had Iris Wheeler intended to fire at Rachel and Carl's wedding before somebody swapped the ammunition?",
@@ -2422,7 +2390,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27155",
+    "id": "tv_27154",
     "category": "TV",
     "topic": "Another World",
     "question": "Which twins were born to Rachel Cory and Carl Hutchins late in the series?",
@@ -2454,71 +2422,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27156",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "What was the name of Rachel and Carl's daughter?",
-    "answers": [
-      "Elizabeth",
-      "Amanda",
-      "Paulina",
-      "Josie"
-    ],
-    "correctAnswer": "Elizabeth",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: Mid 1990s – new family relationships and crises",
-      "Elizabeth Hutchins",
-      "Rachel Cory",
-      "Carl Hutchins",
-      "Twin Birth",
-      "Family",
-      "1990s"
-    ]
-  },
-  {
-    "id": "tv_27157",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "What was the name of Rachel and Carl's son?",
-    "answers": [
-      "Ryan",
-      "Cory",
-      "Dennis",
-      "Jamie"
-    ],
-    "correctAnswer": "Cory",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: Mid 1990s – new family relationships and crises",
-      "Cory Hutchins",
-      "Rachel Cory",
-      "Carl Hutchins",
-      "Twin Birth",
-      "Family",
-      "1990s"
-    ]
-  },
-  {
-    "id": "tv_27158",
+    "id": "tv_27155",
     "category": "TV",
     "topic": "Another World",
     "question": "What was the first name of Vicky Hudson's child with Grant Harrison?",
@@ -2550,39 +2454,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27159",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "What family relationship joined Grant Harrison and Ryan Harrison?",
-    "answers": [
-      "They were cousins",
-      "They were father and son",
-      "They were unrelated",
-      "They were half-brothers"
-    ],
-    "correctAnswer": "They were half-brothers",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: Mid 1990s – new family relationships and crises",
-      "Grant Harrison",
-      "Ryan Harrison",
-      "Brothers",
-      "Family",
-      "Rivalry",
-      "1990s"
-    ]
-  },
-  {
-    "id": "tv_27160",
+    "id": "tv_27156",
     "category": "TV",
     "topic": "Another World",
     "question": "Which mysterious countess was revealed to be Ryan Harrison's mother?",
@@ -2614,7 +2486,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27161",
+    "id": "tv_27157",
     "category": "TV",
     "topic": "Another World",
     "question": "Which man was Ryan Harrison's biological father, a fact tied to the Justine storyline?",
@@ -2646,71 +2518,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27162",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "How did Grant Harrison fatally wound his brother Ryan?",
-    "answers": [
-      "He poisoned his drink",
-      "He caused a car crash",
-      "He shot him in the back",
-      "He pushed him off a cliff"
-    ],
-    "correctAnswer": "He shot him in the back",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: Mid 1990s – new family relationships and crises",
-      "Grant Harrison",
-      "Ryan Harrison",
-      "1995",
-      "Gunshot",
-      "Fratricide",
-      "Justine Duvalier"
-    ]
-  },
-  {
-    "id": "tv_27163",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "Which actress's real-life death preceded the televised funeral of Rachel's mother Ada?",
-    "answers": [
-      "Virginia Dwyer",
-      "Irene Dailey",
-      "Anne Meacham",
-      "Constance Ford"
-    ],
-    "correctAnswer": "Constance Ford",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: Mid 1990s – new family relationships and crises",
-      "Constance Ford",
-      "Ada Hobson",
-      "1993 Death",
-      "Memorial",
-      "Cast Tribute",
-      "Rachel Cory"
-    ]
-  },
-  {
-    "id": "tv_27164",
+    "id": "tv_27158",
     "category": "TV",
     "topic": "Another World",
     "question": "Which character was the daughter of Sharlene Frame and Russ Matthews?",
@@ -2742,7 +2550,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27165",
+    "id": "tv_27159",
     "category": "TV",
     "topic": "Another World",
     "question": "What profession did Josie Watts pursue after returning to Bay City in the 1990s?",
@@ -2774,7 +2582,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27166",
+    "id": "tv_27160",
     "category": "TV",
     "topic": "Another World",
     "question": "Which woman with a troubled past did Gary Sinclair marry in 1997?",
@@ -2806,7 +2614,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27167",
+    "id": "tv_27161",
     "category": "TV",
     "topic": "Another World",
     "question": "Which member of Gary Sinclair's family had an affair with Josie?",
@@ -2838,39 +2646,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27168",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "Which character was revealed to be Josie Watts's secret lover during her marriage to Gary?",
-    "answers": [
-      "Cameron Sinclair",
-      "Grant Harrison",
-      "John Hudson",
-      "Joe Carlino"
-    ],
-    "correctAnswer": "Cameron Sinclair",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: 1997–1999 – late stories and finale",
-      "Josie Watts",
-      "Cameron Sinclair",
-      "Gary Sinclair",
-      "Infidelity",
-      "Marriage",
-      "1990s"
-    ]
-  },
-  {
-    "id": "tv_27169",
+    "id": "tv_27162",
     "category": "TV",
     "topic": "Another World",
     "question": "What was the nickname of Cass and Frankie Winthrop's daughter?",
@@ -2902,71 +2678,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27170",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "Which grieving husband lost Frankie Frame to the serial killer Fax Newman?",
-    "answers": [
-      "Carl Hutchins",
-      "Joe Carlino",
-      "Cass Winthrop",
-      "Jake McKinnon"
-    ],
-    "correctAnswer": "Cass Winthrop",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: Mid 1990s – new family relationships and crises",
-      "Cass Winthrop",
-      "Frankie Frame",
-      "Fax Newman",
-      "Bereavement",
-      "1996",
-      "Family"
-    ]
-  },
-  {
-    "id": "tv_27171",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "Which character's killing of Frankie caused a major fan backlash against Another World?",
-    "answers": [
-      "Carl Hutchins",
-      "Grant Harrison",
-      "Jason Frame",
-      "Fax Newman"
-    ],
-    "correctAnswer": "Fax Newman",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: Mid 1990s – new family relationships and crises",
-      "Fax Newman",
-      "Frankie Frame",
-      "1996",
-      "Serial Killer",
-      "Controversy",
-      "Audience Reaction"
-    ]
-  },
-  {
-    "id": "tv_27172",
+    "id": "tv_27163",
     "category": "TV",
     "topic": "Another World",
     "question": "Which executive producer's mid-1990s leadership brought disputed changes to Another World?",
@@ -2998,7 +2710,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27173",
+    "id": "tv_27164",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress won a Daytime Emmy for playing Felicia Gallant in 1993?",
@@ -3030,7 +2742,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27174",
+    "id": "tv_27165",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actor earned a 1996 Daytime Emmy for playing Carl Hutchins?",
@@ -3062,7 +2774,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27175",
+    "id": "tv_27166",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress won a 1996 Daytime Emmy as Supporting Actress for her Sharlene Frame role?",
@@ -3094,39 +2806,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27176",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "Which woman was the mother of Lila Roberts's daughter Jasmine?",
-    "answers": [
-      "Lila Roberts",
-      "Marley Hudson",
-      "Paulina Cory",
-      "Vicky Hudson"
-    ],
-    "correctAnswer": "Lila Roberts",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: 1997–1999 – late stories and finale",
-      "Lila Roberts",
-      "Jasmine Cory",
-      "Daughter",
-      "1998",
-      "Family",
-      "Matthew Cory"
-    ]
-  },
-  {
-    "id": "tv_27177",
+    "id": "tv_27167",
     "category": "TV",
     "topic": "Another World",
     "question": "Who was the father of Lila's daughter Jasmine?",
@@ -3158,39 +2838,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27178",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "What was the name of the daughter Lila Roberts had with Matthew Cory?",
-    "answers": [
-      "Alli",
-      "Elizabeth",
-      "Jasmine",
-      "Remy"
-    ],
-    "correctAnswer": "Jasmine",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: 1997–1999 – late stories and finale",
-      "Lila Roberts",
-      "Jasmine Cory",
-      "Matthew Cory",
-      "Baby",
-      "Family",
-      "1998"
-    ]
-  },
-  {
-    "id": "tv_27179",
+    "id": "tv_27168",
     "category": "TV",
     "topic": "Another World",
     "question": "Which young woman was revealed to be Paulina Carlino's long-lost daughter?",
@@ -3222,7 +2870,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27180",
+    "id": "tv_27169",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actress portrayed Remy Woods in Another World's last year?",
@@ -3254,7 +2902,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27181",
+    "id": "tv_27170",
     "category": "TV",
     "topic": "Another World",
     "question": "Which former Bay City detective returned in 1999 after disappearing from his marriage to Josie?",
@@ -3286,39 +2934,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27182",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "Which two characters reconciled in the final months after an affair with Cameron?",
-    "answers": [
-      "Sam and Amanda",
-      "Grant and Vicky",
-      "Gary and Josie",
-      "Cass and Frankie"
-    ],
-    "correctAnswer": "Gary and Josie",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: 1997–1999 – late stories and finale",
-      "Gary Sinclair",
-      "Josie Watts",
-      "Cameron Sinclair",
-      "Reconciliation",
-      "1999",
-      "Marriage"
-    ]
-  },
-  {
-    "id": "tv_27183",
+    "id": "tv_27171",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actor played the mysterious Jordan Stark during the final year?",
@@ -3350,7 +2966,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27184",
+    "id": "tv_27172",
     "category": "TV",
     "topic": "Another World",
     "question": "Which television character was targeted by Jordan Stark's schemes in 1999?",
@@ -3382,7 +2998,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27185",
+    "id": "tv_27173",
     "category": "TV",
     "topic": "Another World",
     "question": "Which actor was credited as Tyrone Montgomery in Another World's final episode?",
@@ -3414,7 +3030,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27186",
+    "id": "tv_27174",
     "category": "TV",
     "topic": "Another World",
     "question": "Where was Cass and Lila's wedding planned in Another World's finale?",
@@ -3445,7 +3061,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27187",
+    "id": "tv_27175",
     "category": "TV",
     "topic": "Another World",
     "question": "What unexpected animal disrupted Cass and Lila's wedding in the finale?",
@@ -3477,7 +3093,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27188",
+    "id": "tv_27176",
     "category": "TV",
     "topic": "Another World",
     "question": "What was the name of the gorilla that interrupted Cass Winthrop's wedding?",
@@ -3509,7 +3125,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27189",
+    "id": "tv_27177",
     "category": "TV",
     "topic": "Another World",
     "question": "Which character stepped in to officiate Cass and Lila's wedding after announcing his judicial appointment?",
@@ -3541,7 +3157,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27190",
+    "id": "tv_27178",
     "category": "TV",
     "topic": "Another World",
     "question": "Which late character appeared as a ghost to bless Cass and Lila's marriage in the final episode?",
@@ -3573,7 +3189,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27191",
+    "id": "tv_27179",
     "category": "TV",
     "topic": "Another World",
     "question": "Who served as the best man at Cass Winthrop's final wedding?",
@@ -3605,71 +3221,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27192",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "Which young child took part in Cass and Lila's final wedding as a flower girl?",
-    "answers": [
-      "Charlie Winthrop",
-      "Alli Fowler",
-      "Remy Woods",
-      "Marley Hudson"
-    ],
-    "correctAnswer": "Charlie Winthrop",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: 1997–1999 – late stories and finale",
-      "Charlie Winthrop",
-      "Cass Winthrop",
-      "Frankie Frame",
-      "Flower Girl",
-      "1999 Finale",
-      "Wedding"
-    ]
-  },
-  {
-    "id": "tv_27193",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "Which 1990s soap was cancelled by NBC in April 1999 after 35 years on air?",
-    "answers": [
-      "Days of Our Lives",
-      "Another World",
-      "Sunset Beach",
-      "Passions"
-    ],
-    "correctAnswer": "Another World",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: 1997–1999 – late stories and finale",
-      "Another World",
-      "April 1999",
-      "NBC",
-      "Cancellation",
-      "35 Years",
-      "Broadcast History"
-    ]
-  },
-  {
-    "id": "tv_27194",
+    "id": "tv_27180",
     "category": "TV",
     "topic": "Another World",
     "question": "On which date did NBC announce Another World would not be renewed?",
@@ -3701,7 +3253,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27195",
+    "id": "tv_27181",
     "category": "TV",
     "topic": "Another World",
     "question": "Who authored the 35th-anniversary coffee-table history of Another World?",
@@ -3733,39 +3285,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27196",
-    "category": "TV",
-    "topic": "Another World",
-    "question": "Which anniversary of Another World was celebrated in print and on screen during its last year?",
-    "answers": [
-      "Its thirty-fifth",
-      "Its twenty-fifth",
-      "Its fiftieth",
-      "Its fortieth"
-    ],
-    "correctAnswer": "Its thirty-fifth",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: Another World",
-      "Another World (NBC)",
-      "Daytime Soap Opera",
-      "Bay City",
-      "1990–1999 Final Decade",
-      "Written Quiz",
-      "Section: 1997–1999 – late stories and finale",
-      "Another World",
-      "35th Anniversary",
-      "1999",
-      "Final Year",
-      "Celebration",
-      "Programme Milestone"
-    ]
-  },
-  {
-    "id": "tv_27197",
+    "id": "tv_27182",
     "category": "TV",
     "topic": "Another World",
     "question": "Which characters from Another World later appeared together in the CBS soap As the World Turns?",
@@ -3797,7 +3317,7 @@ const questions = [
     ]
   }
 ];
-if (questions.length!==121 || new Set(questions.map(q=>q.id)).size!==questions.length ||
+if (questions.length!==106 || new Set(questions.map(q=>q.id)).size!==questions.length ||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length ||
  questions.some((q,i)=>q.id!=='tv_'+String(27077+i)||q.category!=='TV'||q.topic!=='Another World'||
  q.answers.length!==4||new Set(q.answers.map(s=>s.toLowerCase())).size!==4||
