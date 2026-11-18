@@ -85,14 +85,14 @@ const questions = [
     "id": "tv_27637",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was Lily Snyder's lookalike sister called?",
+    "question": "What was Rose D'Angelo's profession when Lily discovered her in Atlantic City?",
     "answers": [
-      "Margo Hughes",
-      "Rose D'Angelo",
-      "Rosanna Cabot",
-      "Emily Stewart"
+      "Showgirl",
+      "Police detective",
+      "Hospital consultant",
+      "Real-estate agent"
     ],
-    "correctAnswer": "Rose D'Angelo",
+    "correctAnswer": "Showgirl",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -105,12 +105,12 @@ const questions = [
       "2000–2010 Final Era",
       "Written Quiz",
       "Section: 2000–2002",
-      "Lily Snyder",
       "Rose DAngelo",
-      "Identical Twins",
-      "2000",
-      "Snyder Family",
-      "Revelation"
+      "Showgirl",
+      "Atlantic City",
+      "Lily Snyder",
+      "Twin Discovery",
+      "2000"
     ]
   },
   {
