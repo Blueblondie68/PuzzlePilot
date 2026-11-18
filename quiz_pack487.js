@@ -1,5 +1,5 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 487: As the World Turns Part 2 (1970–1979)
-// 75 deliberately selective decade questions on the Hughes, Stewart, Ryan, Dixon, Colman families.
+// 73 deliberately selective decade questions on the Hughes, Stewart, Ryan, Dixon, Colman families.
 // Major relationships, birth/death events, cast, social themes, and 1975 one-hour expansion.
 // 1970s coverage only; continue 1980s–2010 in later packs. Keep show lavender.
 // Source checks, 18 November 2026:
@@ -8,7 +8,7 @@
 // https://en.wikipedia.org/wiki/History_of_As_the_World_Turns
 // https://www.nyemmys.org/articles/how-my-world-turned/
 // https://www.cbs.wiki.gg/wiki/As_the_World_Turns
-// IDs tv_27380–tv_27454. All question text distinct within this pack.
+// IDs tv_27380–tv_27452. All question text distinct within this pack.
 'use strict';
 const questions = [
   {
@@ -397,38 +397,6 @@ const questions = [
     "id": "tv_27392",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who did Nancy Hughes hope would eventually reconcile with her son Bob?",
-    "answers": [
-      "Jennifer",
-      "Kim",
-      "Claire",
-      "Lisa"
-    ],
-    "correctAnswer": "Lisa",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: As the World Turns",
-      "As the World Turns (CBS)",
-      "Daytime Soap Opera",
-      "Oakdale",
-      "1970–1979 Stories",
-      "Written Quiz",
-      "Section: 1970–1972",
-      "Nancy Hughes",
-      "Bob Hughes",
-      "Lisa",
-      "Reconciliation",
-      "Matchmaking",
-      "Divorce"
-    ]
-  },
-  {
-    "id": "tv_27393",
-    "category": "TV",
-    "topic": "As the World Turns",
     "question": "Which woman wrongly feared she was pregnant in a controversial early-1970s story?",
     "answers": [
       "Lisa",
@@ -458,7 +426,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27394",
+    "id": "tv_27393",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What medical condition explained Lisa's mistaken belief that she was expecting a baby?",
@@ -490,7 +458,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27395",
+    "id": "tv_27394",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who returned to the head-writing role in the early 1970s after creating the programme?",
@@ -522,7 +490,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27396",
+    "id": "tv_27395",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which central character suffered a heart attack after pressure from a demanding client?",
@@ -554,7 +522,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27397",
+    "id": "tv_27396",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which demanding client had placed pressure on Chris Hughes before his heart attack?",
@@ -585,7 +553,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27398",
+    "id": "tv_27397",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What became of Claire Cassen in 1971?",
@@ -617,7 +585,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27399",
+    "id": "tv_27398",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was Ellen Stewart's biological son, brought up in the Stewart household?",
@@ -649,7 +617,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27400",
+    "id": "tv_27399",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was the first wife of doctor Dan Stewart?",
@@ -681,7 +649,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27401",
+    "id": "tv_27400",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which rival woman attracted Dan Stewart while he was still married to Susan?",
@@ -713,7 +681,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27402",
+    "id": "tv_27401",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which Stewart brother married Elizabeth Talbot before Dan did?",
@@ -745,7 +713,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27403",
+    "id": "tv_27402",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was the biological father of Elizabeth Talbot's daughter Betsy?",
@@ -777,7 +745,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27404",
+    "id": "tv_27403",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Whose daughter was Emily Stewart, born during the tumultuous Dan and Susan marriage?",
@@ -809,7 +777,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27405",
+    "id": "tv_27404",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which doctor briefly became Susan's husband after her marriage to Dan collapsed?",
@@ -841,7 +809,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27406",
+    "id": "tv_27405",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who gained custody of young Emily Stewart while Susan's marriage collapsed?",
@@ -873,7 +841,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27407",
+    "id": "tv_27406",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which medical procedure preceded the death of patient Marie Marino and danger for Dan Stewart?",
@@ -905,7 +873,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27408",
+    "id": "tv_27407",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "How did Paul Stewart die in the early 1970s?",
@@ -937,7 +905,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27409",
+    "id": "tv_27408",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What accident caused Elizabeth Talbot Stewart's death after she married Dan?",
@@ -969,7 +937,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27410",
+    "id": "tv_27409",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which young girl was Elizabeth checking on around the time of her fatal fall?",
@@ -1001,7 +969,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27411",
+    "id": "tv_27410",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress portrayed Kim Sullivan for much of the soap's later history?",
@@ -1033,7 +1001,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27412",
+    "id": "tv_27411",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was Kim Sullivan's sister, whose marriage she complicated?",
@@ -1065,7 +1033,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27413",
+    "id": "tv_27412",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which doctor had an affair with Kim Sullivan while married to her sister Jennifer?",
@@ -1097,7 +1065,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27414",
+    "id": "tv_27413",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "At what kind of professional event did Bob Hughes and Kim Sullivan become romantically involved?",
@@ -1129,7 +1097,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27415",
+    "id": "tv_27414",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What was the first name of Bob and Jennifer Hughes's daughter born in 1973?",
@@ -1161,7 +1129,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27416",
+    "id": "tv_27415",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was the biological father of Kim Sullivan's baby, believed stillborn?",
@@ -1193,7 +1161,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27417",
+    "id": "tv_27416",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which doctor did Kim Sullivan marry while hiding her pregnancy's true paternity?",
@@ -1225,7 +1193,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27418",
+    "id": "tv_27417",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actor became closely identified with the scheming Dr John Dixon?",
@@ -1257,7 +1225,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27419",
+    "id": "tv_27418",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What type of doctor was John Dixon in the Oakdale hospital stories?",
@@ -1289,7 +1257,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27420",
+    "id": "tv_27419",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who assaulted his wife Kim in one of the show's darkest 1970s marital storylines?",
@@ -1321,7 +1289,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27421",
+    "id": "tv_27420",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was the ex-wife of the lawyer Grant Colman who repeatedly disrupted his romance with Lisa?",
@@ -1352,7 +1320,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27422",
+    "id": "tv_27421",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which actress became especially associated with Barbara Ryan from 1978 onwards?",
@@ -1384,17 +1352,17 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27423",
+    "id": "tv_27422",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which decade saw Colleen Zenk first take over as Barbara Ryan?",
+    "question": "Who was Barbara Ryan's older brother among Jennifer's children?",
     "answers": [
-      "The 1990s",
-      "The 1960s",
-      "The 1970s",
-      "The 1980s"
+      "Dan Stewart",
+      "Rick Ryan",
+      "Tom Hughes",
+      "Andy Dixon"
     ],
-    "correctAnswer": "The 1970s",
+    "correctAnswer": "Rick Ryan",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -1408,15 +1376,15 @@ const questions = [
       "Written Quiz",
       "Section: 1976–1979",
       "Barbara Ryan",
-      "Colleen Zenk",
-      "1978",
-      "Casting",
-      "Decade",
-      "Actor"
+      "Rick Ryan",
+      "Jennifer Ryan",
+      "1970s",
+      "Brother",
+      "Family Tree"
     ]
   },
   {
-    "id": "tv_27424",
+    "id": "tv_27423",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who played Tom Hughes during much of the mid-to-late 1970s?",
@@ -1448,7 +1416,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27425",
+    "id": "tv_27424",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which lawyer became Lisa's great romance during the middle 1970s?",
@@ -1480,39 +1448,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27426",
-    "category": "TV",
-    "topic": "As the World Turns",
-    "question": "Whom did Lisa marry after her involvement with lawyer Grant Colman?",
-    "answers": [
-      "Bruce Baxter",
-      "Grant Colman",
-      "Tom Hughes",
-      "John Dixon"
-    ],
-    "correctAnswer": "Grant Colman",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "Programme: As the World Turns",
-      "As the World Turns (CBS)",
-      "Daytime Soap Opera",
-      "Oakdale",
-      "1970–1979 Stories",
-      "Written Quiz",
-      "Section: 1973–1975",
-      "Lisa",
-      "Grant Colman",
-      "Wedding",
-      "1975",
-      "Legal Partner",
-      "Marriage"
-    ]
-  },
-  {
-    "id": "tv_27427",
+    "id": "tv_27425",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which boy became the centre of a custody dispute involving Grant and Joyce Colman?",
@@ -1544,7 +1480,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27428",
+    "id": "tv_27426",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who were Teddy's adoptive parents before the custody controversy?",
@@ -1576,7 +1512,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27429",
+    "id": "tv_27427",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which character faked her own death and later returned alive in 1979?",
@@ -1608,7 +1544,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27430",
+    "id": "tv_27428",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which Hughes son married Joyce Colman in 1977?",
@@ -1639,7 +1575,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27431",
+    "id": "tv_27429",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which younger Hughes man married Natalie Bannon after ending his marriage to Carol?",
@@ -1671,7 +1607,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27432",
+    "id": "tv_27430",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which woman married Jay Stallings after her split from Tom Hughes?",
@@ -1703,7 +1639,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27433",
+    "id": "tv_27431",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "How did Bob Hughes's wife Jennifer die in 1975?",
@@ -1735,17 +1671,17 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27434",
+    "id": "tv_27432",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was the father of Frannie Hughes when Jennifer died?",
+    "question": "Which daughter was born to Bob and Jennifer Hughes on Christmas 1973?",
     "answers": [
-      "Rick Ryan",
-      "Bob Hughes",
-      "Dan Stewart",
-      "John Dixon"
+      "Barbara Ryan",
+      "Frannie Hughes",
+      "Emily Stewart",
+      "Annie Stewart"
     ],
-    "correctAnswer": "Bob Hughes",
+    "correctAnswer": "Frannie Hughes",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -1760,14 +1696,14 @@ const questions = [
       "Section: 1973–1975",
       "Frannie Hughes",
       "Bob Hughes",
-      "Jennifer Ryan",
-      "1975 Bereavement",
-      "Paternity",
-      "Family"
+      "Jennifer Sullivan",
+      "Christmas 1973",
+      "Birth",
+      "Hughes Family"
     ]
   },
   {
-    "id": "tv_27435",
+    "id": "tv_27433",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "When did As the World Turns begin broadcasting hour-long daily episodes?",
@@ -1799,7 +1735,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27436",
+    "id": "tv_27434",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which duration replaced the show's 30-minute running time in the mid-1970s?",
@@ -1831,17 +1767,17 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27437",
+    "id": "tv_27435",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was the soap's creator who died in December 1973?",
+    "question": "In which month and year did soap creator Irna Phillips die?",
     "answers": [
-      "Irna Phillips",
-      "Douglas Marland",
-      "Agnes Nixon",
-      "William J Bell"
+      "December 1983",
+      "December 1973",
+      "June 1971",
+      "September 1978"
     ],
-    "correctAnswer": "Irna Phillips",
+    "correctAnswer": "December 1973",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1855,15 +1791,15 @@ const questions = [
       "Written Quiz",
       "Section: Production",
       "Irna Phillips",
-      "1973 Death",
+      "December 1973",
+      "Death",
       "Creator",
-      "Head Writer",
-      "Industry History",
-      "Legacy"
+      "History",
+      "Production"
     ]
   },
   {
-    "id": "tv_27438",
+    "id": "tv_27436",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which longstanding older Hughes patriarch died in 1976?",
@@ -1895,7 +1831,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27439",
+    "id": "tv_27437",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What was the first name of Pa Hughes's second wife in the mid-1970s?",
@@ -1927,7 +1863,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27440",
+    "id": "tv_27438",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was the father of Kim's son Andrew, known as Andy?",
@@ -1959,17 +1895,17 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27441",
+    "id": "tv_27439",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which woman gave birth to Andy Dixon in 1976?",
+    "question": "In which US state did Kim and John Dixon elope in 1973?",
     "answers": [
-      "Kim Sullivan",
-      "Susan Stewart",
-      "Jennifer Ryan",
-      "Sandy McGuire"
+      "California",
+      "Nevada",
+      "New York",
+      "Florida"
     ],
-    "correctAnswer": "Kim Sullivan",
+    "correctAnswer": "Nevada",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1981,17 +1917,17 @@ const questions = [
       "Oakdale",
       "1970–1979 Stories",
       "Written Quiz",
-      "Section: 1976–1979",
+      "Section: 1973–1975",
       "Kim Sullivan",
-      "Andy Dixon",
-      "1976",
       "John Dixon",
-      "Mother",
-      "Family"
+      "Reno",
+      "Nevada",
+      "1973 Elopement",
+      "Wedding"
     ]
   },
   {
-    "id": "tv_27442",
+    "id": "tv_27440",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which doctor did Kim marry after divorcing John Dixon?",
@@ -2023,7 +1959,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27443",
+    "id": "tv_27441",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What serious illness did Susan Stewart struggle with during the late 1970s?",
@@ -2055,7 +1991,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27444",
+    "id": "tv_27442",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which returning romantic rival upset John and Kim Dixon's relationship?",
@@ -2087,7 +2023,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27445",
+    "id": "tv_27443",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Whom did Dr John Dixon marry briefly in 1977 after his marriage to Kim?",
@@ -2119,7 +2055,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27446",
+    "id": "tv_27444",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "What happened to John Dixon's wife Pat Holland shortly after their wedding?",
@@ -2151,7 +2087,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27447",
+    "id": "tv_27445",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which former Bob Hughes wife married Kevin Thompson in the late 1970s?",
@@ -2182,7 +2118,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27448",
+    "id": "tv_27446",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "How did Kevin Thompson die in 1978?",
@@ -2213,7 +2149,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27449",
+    "id": "tv_27447",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which Stewart daughter competed with her sister Dee for Beau Spencer's affection?",
@@ -2245,7 +2181,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27450",
+    "id": "tv_27448",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Who was Annie Stewart's first husband before their later break-up?",
@@ -2277,7 +2213,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27451",
+    "id": "tv_27449",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "Which woman married Beau Spencer in 1979 after his split from Annie?",
@@ -2309,17 +2245,17 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27452",
+    "id": "tv_27450",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which doctor was Kim's husband when Dan Stewart died in 1979?",
+    "question": "Which member of the Hughes family received news of Dan Stewart's death from Ellen?",
     "answers": [
-      "John Dixon",
-      "Bob Hughes",
-      "Grant Colman",
-      "Dan Stewart"
+      "Lisa Hughes",
+      "Nancy Hughes",
+      "Penny Hughes",
+      "Jennifer Ryan"
     ],
-    "correctAnswer": "Dan Stewart",
+    "correctAnswer": "Nancy Hughes",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -2332,16 +2268,16 @@ const questions = [
       "1970–1979 Stories",
       "Written Quiz",
       "Section: 1976–1979",
-      "Kim Sullivan",
+      "Nancy Hughes",
+      "Ellen Stewart",
       "Dan Stewart",
-      "1979 Death",
-      "Marriage",
-      "Loss",
-      "Family"
+      "1979",
+      "Death Notification",
+      "Phone Call"
     ]
   },
   {
-    "id": "tv_27453",
+    "id": "tv_27451",
     "category": "TV",
     "topic": "As the World Turns",
     "question": "In which year did the character Dan Stewart die?",
@@ -2373,17 +2309,17 @@ const questions = [
     ]
   },
   {
-    "id": "tv_27454",
+    "id": "tv_27452",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which character was a frequently troublesome figure in Oakdale through the 1970s, played by Larry Bryggman?",
+    "question": "What injury temporarily put Dr John Dixon in a wheelchair after an argument with Kim?",
     "answers": [
-      "Dan Stewart",
-      "John Dixon",
-      "Rick Ryan",
-      "Tom Hughes"
+      "A broken arm after a fight",
+      "Paralysis after a fall",
+      "An infection following surgery",
+      "Burns from a house fire"
     ],
-    "correctAnswer": "John Dixon",
+    "correctAnswer": "Paralysis after a fall",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -2396,15 +2332,16 @@ const questions = [
       "1970–1979 Stories",
       "Written Quiz",
       "Section: 1976–1979",
-      "Larry Bryggman",
       "John Dixon",
-      "Villain",
-      "Casting",
-      "Medical"
+      "Kim Dixon",
+      "Stairs",
+      "Paralysis",
+      "Wheelchair",
+      "Medical Drama"
     ]
   }
 ];
-if(questions.length!==75||
+if(questions.length!==73||
 new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>q.id!=='tv_'+(27380+i)||q.category!=='TV'||q.topic!=='As the World Turns'||
