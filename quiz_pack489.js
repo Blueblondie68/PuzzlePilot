@@ -179,14 +179,14 @@ const questions = [
     "id": "tv_27553",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the name of Holden Snyder's mother?",
+    "question": "Which abusive relative's behaviour was exposed during Angel Lange's early-1990s storyline?",
     "answers": [
-      "Emma",
-      "Lucinda",
-      "Kim",
-      "Lisa"
+      "Her uncle Seth Snyder",
+      "Her father Henry Lange",
+      "Her brother Caleb Snyder",
+      "Her cousin Brad Snyder"
     ],
-    "correctAnswer": "Emma",
+    "correctAnswer": "Her father Henry Lange",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -199,26 +199,26 @@ const questions = [
       "1990–1999 Stories",
       "Written Quiz",
       "Section: Early 1990s",
-      "Holden Snyder",
-      "Emma Snyder",
-      "Mother",
-      "Farm",
-      "Family Tree",
-      "1990s"
+      "Angel Lange",
+      "Henry Lange",
+      "Family Abuse",
+      "1990s",
+      "Disclosure",
+      "Sensitive Storyline"
     ]
   },
   {
     "id": "tv_27554",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which brother of Holden Snyder had a child with Julie Wendall?",
+    "question": "Which Snyder brother moved to New York City with Angel Lange after their 1993 marriage?",
     "answers": [
-      "Brad Snyder",
       "Caleb Snyder",
       "Seth Snyder",
+      "Holden Snyder",
       "Josh Snyder"
     ],
-    "correctAnswer": "Caleb Snyder",
+    "correctAnswer": "Seth Snyder",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -231,12 +231,12 @@ const questions = [
       "1990–1999 Stories",
       "Written Quiz",
       "Section: Early 1990s",
-      "Caleb Snyder",
-      "Julie Wendall",
+      "Seth Snyder",
+      "Angel Lange",
+      "1993 Marriage",
+      "New York City",
       "Snyder Family",
-      "Relationships",
-      "1990s",
-      "Children"
+      "Departure"
     ]
   },
   {
@@ -819,14 +819,14 @@ const questions = [
     "id": "tv_27573",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which soap star reprised Lily Walsh in the 1994 bell-tower storyline?",
+    "question": "Which actor played Holden Snyder opposite Lily during the 1994 bell-tower storyline?",
     "answers": [
-      "Martha Byrne",
-      "Maura West",
-      "Heather Rattray",
-      "Meg Ryan"
+      "Scott Holmes",
+      "Jon Hensley",
+      "Scott Bryce",
+      "Shawn Christian"
     ],
-    "correctAnswer": "Martha Byrne",
+    "correctAnswer": "Jon Hensley",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -839,12 +839,12 @@ const questions = [
       "1990–1999 Stories",
       "Written Quiz",
       "Section: Mid 1990s",
+      "Jon Hensley",
+      "Holden Snyder",
       "Martha Byrne",
-      "Lily Walsh",
       "Bell Tower",
       "1994",
-      "Casting",
-      "Romance"
+      "Casting"
     ]
   },
   {
@@ -883,14 +883,14 @@ const questions = [
     "id": "tv_27575",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which husband was Lily choosing between Holden and Damian during the famous bell-tower episode?",
+    "question": "Where did Lily and Holden have their memorable confrontation in a 1994 episode?",
     "answers": [
-      "John Dixon",
-      "Paul Ryan",
-      "Damian Grimaldi",
-      "Craig Montgomery"
+      "The Snyder barn",
+      "A bell tower",
+      "Oakdale courthouse",
+      "A hospital chapel"
     ],
-    "correctAnswer": "Damian Grimaldi",
+    "correctAnswer": "A bell tower",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -904,11 +904,11 @@ const questions = [
       "Written Quiz",
       "Section: Mid 1990s",
       "Lily Walsh",
-      "Damian Grimaldi",
       "Holden Snyder",
       "Bell Tower",
-      "Love Triangle",
-      "1994"
+      "1994",
+      "Location",
+      "Love Triangle"
     ]
   },
   {
@@ -1521,12 +1521,12 @@ const questions = [
     "id": "tv_27595",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which family had adopted Scott Eldridge before the secret about Lisa was revealed?",
+    "question": "Which family raised Scott Eldridge before he discovered that Lisa was his mother?",
     "answers": [
-      "The Hugheses",
-      "The Stewarts",
+      "The Snyders",
       "The Eldridges",
-      "The Snyders"
+      "The Hugheses",
+      "The Stewarts"
     ],
     "correctAnswer": "The Eldridges",
     "difficulty": "Medium",
@@ -1545,7 +1545,7 @@ const questions = [
       "Eldridge Family",
       "Lisa",
       "Secret Son",
-      "Adoption",
+      "Upbringing",
       "1992"
     ]
   },
@@ -1744,9 +1744,9 @@ const questions = [
     "id": "tv_27602",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which woman was Lisa's mid-1990s husband and Damian Grimaldi's father?",
+    "question": "Which Grimaldi patriarch became Lisa's husband during the mid-1990s?",
     "answers": [
-      "Whit McColl",
+      "Damian Grimaldi",
       "Eduardo Grimaldi",
       "James Stenbeck",
       "John Dixon"
@@ -1764,12 +1764,12 @@ const questions = [
       "1990–1999 Stories",
       "Written Quiz",
       "Section: Mid 1990s",
-      "Lisa",
       "Eduardo Grimaldi",
-      "Marriage",
-      "Damian Father",
-      "1995",
-      "Family"
+      "Lisa Miller",
+      "1995 Marriage",
+      "Grimaldi Family",
+      "Patriarch",
+      "Storyline"
     ]
   },
   {
