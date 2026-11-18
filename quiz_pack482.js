@@ -1546,7 +1546,7 @@ const questions = [
     "id": "tv_26951",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which teen heartthrob-turned-TV doctor took over the role of Jamie Frame in 1986?",
+    "question": "Which actor took over the role of Jamie Frame in 1986?",
     "answers": [
       "Mark Mortimer",
       "Laurence Lau",
@@ -2146,7 +2146,7 @@ const questions = [
     "id": "tv_26971",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress's real-life death led to the departure of the beloved character Mac Cory?",
+    "question": "Which actor's real-life death led to the departure of the beloved character Mac Cory?",
     "answers": [
       "John Considine",
       "Douglass Watson",
@@ -2238,14 +2238,14 @@ const questions = [
     "id": "tv_26974",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which magazine was staging a gala when the soap commemorated its twenty-fifth anniversary?",
+    "question": "Which actor played the murdered Jason Frame in the 1989 mystery?",
     "answers": [
-      "Soap Weekly",
-      "Glamour",
-      "Brava",
-      "Playbill"
+      "Chris Robinson",
+      "Mark Pinter",
+      "David Forsyth",
+      "William Gray Espy"
     ],
-    "correctAnswer": "Brava",
+    "correctAnswer": "Chris Robinson",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -2258,10 +2258,10 @@ const questions = [
       "1975–1999 Later Years",
       "Written Questions",
       "Section: Late-1980s Cory/Frame saga and 1989 mysteries",
-      "Brava Magazine",
-      "25th Anniversary",
-      "Cory Publishing",
-      "Gala"
+      "Chris Robinson",
+      "Jason Frame",
+      "1989 Murder Mystery",
+      "Casting"
     ]
   },
   {
