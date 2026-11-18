@@ -131,7 +131,7 @@ const questions = [
     "question": "In Blue Lights (Series 1), which family is at the centre of the criminal operation targeting Angela's son?",
     "answers": [
       "Ginleys",
-      "Kettlemans",
+      "Fogertys",
       "McIntyres",
       "Thompsons"
     ],
@@ -206,7 +206,7 @@ const questions = [
       "McIntyres",
       "Thompsons",
       "Ginleys",
-      "Salamancas"
+      "Fogertys"
     ],
     "correctAnswer": "McIntyres",
     "difficulty": "Medium",
@@ -385,7 +385,7 @@ const questions = [
       "Mags Thompson",
       "Angela Mackle",
       "Tina McIntyre",
-      "Rebecca Hamlin"
+      "Sandra Cliff"
     ],
     "correctAnswer": "Angela Mackle",
     "difficulty": "Medium",
@@ -957,9 +957,9 @@ const questions = [
     "topic": "Blue Lights",
     "question": "In Blue Lights (Series 2), in which loyalist Belfast estate does the team encounter a growing gang feud?",
     "answers": [
-      "St David Estate",
+      "Ballynafeigh",
       "Mount Eden",
-      "Sandpiper Crossing",
+      "Glenbrook",
       "The Shankill Gardens"
     ],
     "correctAnswer": "Mount Eden",
@@ -1350,7 +1350,7 @@ const questions = [
     "question": "In Blue Lights (Series 2), which detective puts pressure on Shane to secure results?",
     "answers": [
       "Murray Canning",
-      "Bill Oakley",
+      "Gerry Cliff",
       "Paul Collins",
       "Joseph MI5"
     ],
@@ -2098,9 +2098,9 @@ const questions = [
     "topic": "Blue Lights",
     "question": "In Blue Lights (Series 3), which vulnerable teenager is threatened by organised criminals during the third series?",
     "answers": [
-      "Kaylee Ehrmantraut",
+      "Gordy Mackle",
       "Lindsay Singleton",
-      "Angela Mackle",
+      "Henry Thompson",
       "Cal Ellis"
     ],
     "correctAnswer": "Lindsay Singleton",
@@ -2313,9 +2313,9 @@ const questions = [
     "topic": "Blue Lights",
     "question": "In Blue Lights (Series 3), which accountant do Grace and Sean bring in for questioning in Ordo ab Chao?",
     "answers": [
-      "Bill Oakley",
-      "Harry Wachtell",
-      "Keith Wylie",
+      "Jim Dixon",
+      "Donal Fogerty",
+      "Lee Thompson",
       "George McLelland"
     ],
     "correctAnswer": "George McLelland",
@@ -2455,8 +2455,8 @@ const questions = [
     "topic": "Blue Lights",
     "question": "In Blue Lights (Series 3), whose testimony exposes the Ginley network's criminal activities?",
     "answers": [
-      "Cheryl Hamlin's",
-      "Betsy Kettleman's",
+      "Aisling Byrne's",
+      "Tina McIntyre's",
       "Sandra Cliff's",
       "Lindsay Singleton's"
     ],
@@ -2566,7 +2566,7 @@ const questions = [
       "Murray Canning",
       "George McLelland",
       "Lee Thompson",
-      "Hector Salamanca"
+      "James McIntyre"
     ],
     "correctAnswer": "Lee Thompson",
     "difficulty": "Hard",
@@ -2673,8 +2673,8 @@ const questions = [
     "answers": [
       "Thompsons",
       "McIntyres",
-      "Kettlemans",
-      "Salamancas"
+      "Ginleys",
+      "Fogertys"
     ],
     "correctAnswer": "McIntyres",
     "difficulty": "Easy",
@@ -2887,9 +2887,9 @@ const questions = [
     "topic": "Blue Lights",
     "question": "In Blue Lights (Series 4), whose long-delayed murder trial begins in Everybody Knows?",
     "answers": [
-      "Howard Hamlin's",
-      "Werner Ziegler's",
-      "Lee Thompson's",
+      "Jim Dixon's",
+      "Donal Fogerty's",
+      "Ian Campbell's",
       "Gerry Cliff's"
     ],
     "correctAnswer": "Gerry Cliff's",
@@ -2959,10 +2959,10 @@ const questions = [
     "topic": "Blue Lights",
     "question": "In Blue Lights (Series 4), which gang-connected figure has a tense confrontation with Shane Bradley?",
     "answers": [
-      "Bill Oakley",
+      "Mo McIntyre",
       "Lee Thompson",
-      "Everett Acker",
-      "Marco Pasternak"
+      "Donal Fogerty",
+      "James McIntyre"
     ],
     "correctAnswer": "Lee Thompson",
     "difficulty": "Medium",
@@ -2993,7 +2993,7 @@ const questions = [
     "id": "tv_28694",
     "category": "TV",
     "topic": "Blue Lights",
-    "question": "In Blue Lights (Series 4), who plays Gerry Cliff in the flashback sequence revisiting his career?",
+    "question": "In Blue Lights (Series 4), which actor portrayed Gerry Cliff, whose murder is revisited in the third and fourth episodes?",
     "answers": [
       "Seamus O'Hara",
       "Michael Smiley",
@@ -3018,7 +3018,7 @@ const questions = [
       "Broadcast year: 2026",
       "Episode: S04E03",
       "Episode title: Everybody Knows",
-      "Storyline: Gerry returns in flashbacks",
+      "Storyline: Gerry's murder comes to trial",
       "Storyline: Actor reprises late officer",
       "Character/actor: Richard Dormer",
       "Character/actor: Gerry Cliff",
