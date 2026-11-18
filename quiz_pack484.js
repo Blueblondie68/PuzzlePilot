@@ -1100,14 +1100,14 @@ const questions = [
     "id": "tv_27113",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which two country singers recorded the Another World theme used from 1987 to 1996?",
+    "question": "Who composed the instrumental Another World opening theme introduced in 1996?",
     "answers": [
-      "Loretta Lynn and Conway Twitty",
-      "Crystal Gayle and Gary Morris",
-      "Dolly Parton and Kenny Rogers",
-      "Reba McEntire and Vince Gill"
+      "Ralph Schuckett",
+      "Dominic Messinger",
+      "John Loeffler",
+      "Charles Fox"
     ],
-    "correctAnswer": "Crystal Gayle and Gary Morris",
+    "correctAnswer": "Dominic Messinger",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1118,12 +1118,14 @@ const questions = [
       "Daytime Soap Opera",
       "Bay City",
       "1990–1999 Final Decade",
-      "Written Questions",
-      "Section: Mid-1990s to 1999 finale",
-      "Crystal Gayle",
-      "Gary Morris",
-      "Theme Song",
-      "1987–1996"
+      "Written Quiz",
+      "Section: 1997–1999 – late stories and finale",
+      "Dominic Messinger",
+      "Instrumental Theme",
+      "1996",
+      "Music Composer",
+      "Opening Credits",
+      "Theme Replacement"
     ]
   },
   {
