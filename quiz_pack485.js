@@ -788,14 +788,14 @@ const questions = [
     "id": "tv_27207",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What is the main source of comedy when Michael tries to save the Bluth family?",
+    "question": "Who repeatedly takes responsibility for holding the chaotic Bluth family together?",
     "answers": [
-      "Their successful detective agency",
-      "Their supernatural powers",
-      "Their career as touring musicians",
-      "Their self-serving behaviour"
+      "Michael Bluth",
+      "Gob Bluth",
+      "Buster Bluth",
+      "Oscar Bluth"
     ],
-    "correctAnswer": "Their self-serving behaviour",
+    "correctAnswer": "Michael Bluth",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -809,10 +809,11 @@ const questions = [
       "Programme History and Format",
       "Section: History",
       "Michael Bluth",
-      "Family Dysfunction",
-      "Satire",
-      "Greed",
-      "Premise"
+      "Family Responsibility",
+      "Lead Character",
+      "Father Son",
+      "Corporate Troubles",
+      "Series Premise"
     ]
   },
   {
@@ -1683,14 +1684,14 @@ const questions = [
     "id": "tv_27235",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actor plays both George Sr. and his identical twin Oscar?",
+    "question": "What striking feature initially helps distinguish Oscar Bluth from his twin George Sr.?",
     "answers": [
-      "Jason Bateman",
-      "Will Arnett",
-      "Tony Hale",
-      "Jeffrey Tambor"
+      "His shoulder-length hair",
+      "A beard",
+      "An eyepatch",
+      "A large facial scar"
     ],
-    "correctAnswer": "Jeffrey Tambor",
+    "correctAnswer": "His shoulder-length hair",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -1703,12 +1704,12 @@ const questions = [
       "Written Quiz",
       "Season 2 2004–2005",
       "Section: Season 2",
-      "Jeffrey Tambor",
       "Oscar Bluth",
       "George Sr",
-      "Dual Role",
-      "Casting",
-      "Twin Brothers"
+      "Long Hair",
+      "Twin Contrast",
+      "Visual Appearance",
+      "Casting"
     ]
   },
   {
@@ -1811,15 +1812,15 @@ const questions = [
     "id": "tv_27239",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What type of animal attacks Buster in the sea?",
+    "question": "What colour bow tie does the seal that attacks Buster wear?",
     "answers": [
-      "A shark",
-      "A dolphin",
-      "An octopus",
-      "A seal"
+      "Yellow",
+      "Red",
+      "Green",
+      "Purple"
     ],
-    "correctAnswer": "A seal",
-    "difficulty": "Easy",
+    "correctAnswer": "Yellow",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1833,10 +1834,10 @@ const questions = [
       "Section: Season 2",
       "Buster Bluth",
       "Seal Attack",
-      "Ocean",
-      "Animal",
-      "Hand Injury",
-      "Comedy Plot"
+      "Yellow Bow Tie",
+      "Animal Costume",
+      "Gob Bluth",
+      "Foreshadowing"
     ]
   },
   {
@@ -1907,12 +1908,12 @@ const questions = [
     "id": "tv_27242",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What naval or military career path does Buster briefly pursue?",
+    "question": "Which branch of the military does Buster try to join?",
     "answers": [
-      "The Air Force",
-      "The Coast Guard",
       "The Army",
-      "The Navy"
+      "The Navy",
+      "The Air Force",
+      "The Coast Guard"
     ],
     "correctAnswer": "The Army",
     "difficulty": "Medium",
@@ -1989,8 +1990,8 @@ const questions = [
       "Bluth Family",
       "Comedy Series",
       "Written Quiz",
-      "Season 2 2004–2005",
-      "Section: Season 2",
+      "Season 1 2003–2004",
+      "Section: Season 1",
       "Amy Poehler",
       "Gob Wife",
       "Impulsive Marriage",
@@ -2163,12 +2164,12 @@ const questions = [
     "id": "tv_27250",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What exaggerated name does Maeby use as a bogus identity while working at a film studio?",
+    "question": "What false name does Maeby adopt when she pretends to be an ill schoolgirl?",
     "answers": [
-      "Maggie Lizer",
-      "Carolyn Austero",
       "Surely Fünke",
-      "Daisy Bluth"
+      "Daisy Bluth",
+      "Maggie Lizer",
+      "Carolyn Austero"
     ],
     "correctAnswer": "Surely Fünke",
     "difficulty": "Hard",
@@ -2181,14 +2182,14 @@ const questions = [
       "Bluth Family",
       "Comedy Series",
       "Written Quiz",
-      "Season 2 2004–2005",
-      "Section: Season 2",
+      "Season 1 2003–2004",
+      "Section: Season 1",
       "Maeby Funke",
       "Surely Funke",
-      "Fake Persona",
-      "Deception",
-      "Teenage Schemes",
-      "Studio"
+      "Fake Illness",
+      "School Deception",
+      "Alter Ego",
+      "Teenage Schemes"
     ]
   },
   {
@@ -3474,14 +3475,14 @@ const questions = [
     "id": "tv_27291",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which property-company investor is known as Lucille Two?",
+    "question": "What level of ownership does Lucille Austero gain in the Bluth Company during season four?",
     "answers": [
-      "Lucille Ball",
-      "Lucille Bluth",
-      "Lucille Crane",
-      "Lucille Austero"
+      "A controlling stake",
+      "A single symbolic share",
+      "A minority stake under ten per cent",
+      "No shares at all"
     ],
-    "correctAnswer": "Lucille Austero",
+    "correctAnswer": "A controlling stake",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -3495,11 +3496,11 @@ const questions = [
       "Season 4 Netflix 2013",
       "Section: Season 4",
       "Lucille Austero",
-      "Bluth Company",
-      "Investor",
-      "Equity",
-      "Austero Bluth",
-      "Business"
+      "Majority Ownership",
+      "Company Shares",
+      "Controlling Interest",
+      "Business Takeover",
+      "Austero Bluth Company"
     ]
   },
   {
