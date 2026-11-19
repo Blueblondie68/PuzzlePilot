@@ -726,7 +726,7 @@ const questions = [
       "Original airdate: 2025-10-17",
       "Storyline: Death of technology CEO Andrea Decker",
       "Character: Andrea Decker",
-      "Actor: Guest character",
+      "Actor: Stephannie Hawkins",
       "Answer fact: Andrea Decker"
     ]
   },
@@ -834,7 +834,7 @@ const questions = [
       "Original airdate: 2025-10-17",
       "Storyline: Former engineer Rawlins confesses",
       "Character: Marquis Rawlins",
-      "Actor: Guest character",
+      "Actor: Dean Redman",
       "Answer fact: Marquis Rawlins"
     ]
   },
@@ -870,7 +870,7 @@ const questions = [
       "Original airdate: 2025-10-17",
       "Storyline: True killer identified after dinner-table deduction",
       "Character: Caleb Bruce Jr.",
-      "Actor: Guest character",
+      "Actor: Jeramie Burgos",
       "Answer fact: Caleb Bruce Jr."
     ]
   },
@@ -1050,7 +1050,7 @@ const questions = [
       "Original airdate: 2025-10-24",
       "Storyline: Ballard whistleblower murder",
       "Character: Winston Ballard",
-      "Actor: Guest character",
+      "Actor: Christopher John Blue (uncredited)",
       "Answer fact: Winston Ballard"
     ]
   },
@@ -1122,7 +1122,7 @@ const questions = [
       "Original airdate: 2025-10-24",
       "Storyline: Gunman kills Malakov and flees in a van",
       "Character: Lou Malakov",
-      "Actor: Guest character",
+      "Actor: Paul Miller",
       "Answer fact: He is shot by a fleeing gunman"
     ]
   },
@@ -1158,7 +1158,7 @@ const questions = [
       "Original airdate: 2025-10-24",
       "Storyline: Raines accepts payment to leave a witness unprotected",
       "Character: Todd Raines",
-      "Actor: Guest character",
+      "Actor: Adrian Spencer",
       "Answer fact: Todd Raines"
     ]
   },
@@ -1194,7 +1194,7 @@ const questions = [
       "Original airdate: 2025-10-24",
       "Storyline: Naomi orchestrates the killings",
       "Character: Naomi Ballard",
-      "Actor: Guest character",
+      "Actor: Anastasia Barzee",
       "Answer fact: Naomi Ballard"
     ]
   },
