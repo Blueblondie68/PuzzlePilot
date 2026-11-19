@@ -15,7 +15,7 @@ const questions = [
     "id": "tv_29619",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 8, Episode 1), What unpaid position does Steve accept after leaving university?",
+    "question": "In Beverly Hills, 90210 (Series 8, Episode 1), Which fraternity position does Steve accept for a token salary of one dollar a year?",
     "answers": [
       "Alumni representative for his fraternity",
       "Assistant manager at the Peach Pit",
