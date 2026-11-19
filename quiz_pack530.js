@@ -1,4 +1,5 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 530: Blue Bloods (2010–2024), Series 3 (2012–2013).
+// Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
 // 69 episode-specific questions, 3 per each of 23 episodes, IDs tv_30605–tv_30673.
 // Follows Pack 529 ending tv_30604. Series 4–14 remain outstanding.
 // Primary CBS episode synopses: https://www.cbs.com/shows/blue_bloods/episodes/3/
@@ -11,7 +12,7 @@ const questions = [
     "id": "tv_30605",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 1), which member of Danny's professional partnership is kidnapped by an old enemy?",
+    "question": "In Blue Bloods, which member of Danny's professional partnership is kidnapped by an old enemy?",
     "answers": [
       "Kate Lansing",
       "Jackie Curatola",
@@ -47,7 +48,7 @@ const questions = [
     "id": "tv_30606",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 1), whose criminal past brings a dangerous adversary back into Danny's life?",
+    "question": "In Blue Bloods, whose criminal past brings a dangerous adversary back into Danny's life?",
     "answers": [
       "Danny Reagan's",
       "Jamie Reagan's",
@@ -83,7 +84,7 @@ const questions = [
     "id": "tv_30607",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 1), what happens to an innocent person after a young police officer opens fire?",
+    "question": "In Blue Bloods, what happens to an innocent person after a young police officer opens fire?",
     "answers": [
       "The person is arrested for forgery",
       "The person is rescued from a river",
@@ -119,7 +120,7 @@ const questions = [
     "id": "tv_30608",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 2), what earlier allegation does an injured woman withdraw?",
+    "question": "In Blue Bloods, what earlier allegation does an injured woman withdraw?",
     "answers": [
       "Bank fraud",
       "Criminal intimidation at school",
@@ -155,7 +156,7 @@ const questions = [
     "id": "tv_30609",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 2), what occupation does the powerful man secretly involved with the woman hold?",
+    "question": "In Blue Bloods, what occupation does the powerful man secretly involved with the woman hold?",
     "answers": [
       "Federal judge",
       "City councilman",
@@ -191,7 +192,7 @@ const questions = [
     "id": "tv_30610",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 2), what change at home causes disruption to Danny's family?",
+    "question": "In Blue Bloods, what change at home causes disruption to Danny's family?",
     "answers": [
       "Linda returns to work",
       "Henry moves abroad",
@@ -227,7 +228,7 @@ const questions = [
     "id": "tv_30611",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 3), what connects the two murder victims Danny is investigating?",
+    "question": "In Blue Bloods, what connects the two murder victims Danny is investigating?",
     "answers": [
       "Both worked for the same charity",
       "Both were former police cadets",
@@ -263,7 +264,7 @@ const questions = [
     "id": "tv_30612",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 3), which former member of Erin's family returns while she handles a court case?",
+    "question": "In Blue Bloods, which former member of Erin's family returns while she handles a court case?",
     "answers": [
       "Her cousin",
       "Her former father-in-law",
@@ -299,7 +300,7 @@ const questions = [
     "id": "tv_30613",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 3), what is Jack Boyle's role when he and Erin meet again?",
+    "question": "In Blue Bloods, what is Jack Boyle's role when he and Erin meet again?",
     "answers": [
       "New police commissioner",
       "Opposing lawyer in court",
@@ -335,7 +336,7 @@ const questions = [
     "id": "tv_30614",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 4), which wedding-related victim is killed in a drive-by gang shooting?",
+    "question": "In Blue Bloods, which wedding-related victim is killed in a drive-by gang shooting?",
     "answers": [
       "The bride",
       "The groom",
@@ -371,7 +372,7 @@ const questions = [
     "id": "tv_30615",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 4), whom are Danny and Jackie reassigned to protect from a suspected assassination attempt?",
+    "question": "In Blue Bloods, whom are Danny and Jackie reassigned to protect from a suspected assassination attempt?",
     "answers": [
       "A Hollywood producer",
       "An ambassador's son",
@@ -407,7 +408,7 @@ const questions = [
     "id": "tv_30616",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 4), whose questionable stop causes Jamie to challenge a fellow officer's methods?",
+    "question": "In Blue Bloods, whose questionable stop causes Jamie to challenge a fellow officer's methods?",
     "answers": [
       "Frank's",
       "Danny's",
@@ -443,7 +444,7 @@ const questions = [
     "id": "tv_30617",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 5), what honour does Frank award a detective for undercover service?",
+    "question": "In Blue Bloods, what honour does Frank award a detective for undercover service?",
     "answers": [
       "The Purple Heart",
       "The Medal of Valor",
@@ -479,7 +480,7 @@ const questions = [
     "id": "tv_30618",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 5), in which country did the decorated detective carry out undercover work?",
+    "question": "In Blue Bloods, in which country did the decorated detective carry out undercover work?",
     "answers": [
       "Malaysia",
       "Thailand",
@@ -515,7 +516,7 @@ const questions = [
     "id": "tv_30619",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 5), who takes the decorated officer hostage after his brother is imprisoned?",
+    "question": "In Blue Bloods, who takes the decorated officer hostage after his brother is imprisoned?",
     "answers": [
       "A political protester",
       "A former NYPD colleague",
@@ -551,7 +552,7 @@ const questions = [
     "id": "tv_30620",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 6), what is the occupation of Erin's important witness who is nearly run down?",
+    "question": "In Blue Bloods, what is the occupation of Erin's important witness who is nearly run down?",
     "answers": [
       "Restaurant owner",
       "Forensic scientist",
@@ -587,7 +588,7 @@ const questions = [
     "id": "tv_30621",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 6), who provides protection for Erin's witness following the near-fatal attack?",
+    "question": "In Blue Bloods, who provides protection for Erin's witness following the near-fatal attack?",
     "answers": [
       "Henry Reagan",
       "Danny Reagan",
@@ -623,7 +624,7 @@ const questions = [
     "id": "tv_30622",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 6), what crime do Jamie and Vinny uncover in their separate case?",
+    "question": "In Blue Bloods, what crime do Jamie and Vinny uncover in their separate case?",
     "answers": [
       "A drug operation",
       "A diamond theft",
@@ -659,7 +660,7 @@ const questions = [
     "id": "tv_30623",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 7), which figure from Haitian religious folklore is the attacker's Halloween disguise?",
+    "question": "In Blue Bloods, which figure from Haitian religious folklore is the attacker's Halloween disguise?",
     "answers": [
       "Papa Legba",
       "Damballa",
@@ -695,7 +696,7 @@ const questions = [
     "id": "tv_30624",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 7), what weapon is used by the disguised Halloween assailant?",
+    "question": "In Blue Bloods, what weapon is used by the disguised Halloween assailant?",
     "answers": [
       "A crossbow",
       "A hammer",
@@ -731,7 +732,7 @@ const questions = [
     "id": "tv_30625",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 7), what seasonal activity do Erin and Nicky take Danny's boys to do?",
+    "question": "In Blue Bloods, what seasonal activity do Erin and Nicky take Danny's boys to do?",
     "answers": [
       "Ice skating",
       "Trick-or-treating",
@@ -767,7 +768,7 @@ const questions = [
     "id": "tv_30626",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 8), where is the student found murdered in Danny's investigation?",
+    "question": "In Blue Bloods, where is the student found murdered in Danny's investigation?",
     "answers": [
       "A college campus",
       "A subway station",
@@ -803,7 +804,7 @@ const questions = [
     "id": "tv_30627",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 8), what illegal activity is the murdered student suspected of having been involved in?",
+    "question": "In Blue Bloods, what illegal activity is the murdered student suspected of having been involved in?",
     "answers": [
       "Ticket scalping",
       "Identity forgery",
@@ -839,7 +840,7 @@ const questions = [
     "id": "tv_30628",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 8), which part of Jamie's earlier education is brought back into focus by an old classmate?",
+    "question": "In Blue Bloods, which part of Jamie's earlier education is brought back into focus by an old classmate?",
     "answers": [
       "Medical school",
       "Military college",
@@ -875,7 +876,7 @@ const questions = [
     "id": "tv_30629",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 9), whose conversation with a priest helps identify a shooting suspect?",
+    "question": "In Blue Bloods, whose conversation with a priest helps identify a shooting suspect?",
     "answers": [
       "A prison governor's",
       "The shooting victim's",
@@ -911,7 +912,7 @@ const questions = [
     "id": "tv_30630",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 9), who provides Danny and Kate with a breakthrough by overhearing that conversation?",
+    "question": "In Blue Bloods, who provides Danny and Kate with a breakthrough by overhearing that conversation?",
     "answers": [
       "Linda Reagan",
       "Nicky Reagan-Boyle",
@@ -947,7 +948,7 @@ const questions = [
     "id": "tv_30631",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 9), where is Henry robbed in the incident that sends Jamie after the offender?",
+    "question": "In Blue Bloods, where is Henry robbed in the incident that sends Jamie after the offender?",
     "answers": [
       "At a football ground",
       "Outside a theatre",
@@ -983,7 +984,7 @@ const questions = [
     "id": "tv_30632",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 10), what sort of vehicles are being targeted by the suspected sniper?",
+    "question": "In Blue Bloods, what sort of vehicles are being targeted by the suspected sniper?",
     "answers": [
       "Police motorcycles",
       "Delivery bicycles",
@@ -1019,7 +1020,7 @@ const questions = [
     "id": "tv_30633",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 10), what environmental ideology do investigators suspect motivates the killings?",
+    "question": "In Blue Bloods, what environmental ideology do investigators suspect motivates the killings?",
     "answers": [
       "Anti-immigration activism",
       "Radical environmentalism",
@@ -1055,7 +1056,7 @@ const questions = [
     "id": "tv_30634",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 10), what accident causes Danny's son Sean a life-threatening injury?",
+    "question": "In Blue Bloods, what accident causes Danny's son Sean a life-threatening injury?",
     "answers": [
       "A bicycle accident",
       "A football tackle",
@@ -1091,7 +1092,7 @@ const questions = [
     "id": "tv_30635",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 11), which Reagan shoots an armed man in a tourist area and suffers intense remorse?",
+    "question": "In Blue Bloods, which Reagan shoots an armed man in a tourist area and suffers intense remorse?",
     "answers": [
       "Danny Reagan",
       "Frank Reagan",
@@ -1127,7 +1128,7 @@ const questions = [
     "id": "tv_30636",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 11), what explanation emerges for the man's fatal confrontation with Jamie?",
+    "question": "In Blue Bloods, what explanation emerges for the man's fatal confrontation with Jamie?",
     "answers": [
       "A failed witness-protection operation",
       "An accidental discharge during training",
@@ -1163,7 +1164,7 @@ const questions = [
     "id": "tv_30637",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 11), which city leader must Erin question on the witness stand?",
+    "question": "In Blue Bloods, which city leader must Erin question on the witness stand?",
     "answers": [
       "The borough president",
       "Mayor Carter Poole",
@@ -1199,7 +1200,7 @@ const questions = [
     "id": "tv_30638",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 12), what contraband is discovered in Danny's car boot during a traffic stop?",
+    "question": "In Blue Bloods, what contraband is discovered in Danny's car boot during a traffic stop?",
     "answers": [
       "Cocaine",
       "Illegal firearms",
@@ -1235,7 +1236,7 @@ const questions = [
     "id": "tv_30639",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 12), why do officers stop Danny's car in the first place?",
+    "question": "In Blue Bloods, why do officers stop Danny's car in the first place?",
     "answers": [
       "Its registration has expired",
       "He has driven through a red light",
@@ -1271,7 +1272,7 @@ const questions = [
     "id": "tv_30640",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 12), what immediate consequence follows the discovery of the illicit substance?",
+    "question": "In Blue Bloods, what immediate consequence follows the discovery of the illicit substance?",
     "answers": [
       "Danny is promoted",
       "Danny is placed in witness protection",
@@ -1307,7 +1308,7 @@ const questions = [
     "id": "tv_30641",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 13), what marks are found on a man thrown from a moving vehicle?",
+    "question": "In Blue Bloods, what marks are found on a man thrown from a moving vehicle?",
     "answers": [
       "Burns from a cigarette",
       "Multiple rat bites",
@@ -1343,7 +1344,7 @@ const questions = [
     "id": "tv_30642",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 13), what question drives Danny's inquiry into the injured man's ordeal?",
+    "question": "In Blue Bloods, what question drives Danny's inquiry into the injured man's ordeal?",
     "answers": [
       "Who sent the threatening message and why",
       "Who forged a university diploma",
@@ -1379,7 +1380,7 @@ const questions = [
     "id": "tv_30643",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 13), what kind of public figure forces Frank to use diplomacy despite offensive views?",
+    "question": "In Blue Bloods, what kind of public figure forces Frank to use diplomacy despite offensive views?",
     "answers": [
       "A controversial painter",
       "A high-profile sports coach",
@@ -1415,7 +1416,7 @@ const questions = [
     "id": "tv_30644",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 14), which member of a Hasidic leader's family is chosen as his successor?",
+    "question": "In Blue Bloods, which member of a Hasidic leader's family is chosen as his successor?",
     "answers": [
       "His eldest son",
       "His brother",
@@ -1451,7 +1452,7 @@ const questions = [
     "id": "tv_30645",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 14), what happens to the newly chosen successor?",
+    "question": "In Blue Bloods, what happens to the newly chosen successor?",
     "answers": [
       "He disappears overseas",
       "He dies suddenly",
@@ -1487,7 +1488,7 @@ const questions = [
     "id": "tv_30646",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 14), which family member becomes one of Danny's suspects after the successor's death?",
+    "question": "In Blue Bloods, which family member becomes one of Danny's suspects after the successor's death?",
     "answers": [
       "The eldest son",
       "The leader's sister",
@@ -1523,7 +1524,7 @@ const questions = [
     "id": "tv_30647",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 15), how old is the child at the centre of Danny's troubling case in the projects?",
+    "question": "In Blue Bloods, how old is the child at the centre of Danny's troubling case in the projects?",
     "answers": [
       "Five years old",
       "Sixteen years old",
@@ -1559,7 +1560,7 @@ const questions = [
     "id": "tv_30648",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 15), what compulsory class is Danny sent to following his handling of the case?",
+    "question": "In Blue Bloods, what compulsory class is Danny sent to following his handling of the case?",
     "answers": [
       "First aid",
       "Driving safety",
@@ -1595,7 +1596,7 @@ const questions = [
     "id": "tv_30649",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 15), which foreign government does Frank negotiate with to protect a young woman?",
+    "question": "In Blue Bloods, which foreign government does Frank negotiate with to protect a young woman?",
     "answers": [
       "Greece's",
       "Turkey's",
@@ -1631,7 +1632,7 @@ const questions = [
     "id": "tv_30650",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 16), what type of investigation reunites Danny and Erin?",
+    "question": "In Blue Bloods, what type of investigation reunites Danny and Erin?",
     "answers": [
       "A cold assault case",
       "A new bank robbery",
@@ -1667,7 +1668,7 @@ const questions = [
     "id": "tv_30651",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 16), who is the suspect accused of attacking the girl years earlier?",
+    "question": "In Blue Bloods, who is the suspect accused of attacking the girl years earlier?",
     "answers": [
       "A former teacher",
       "Her school bus driver",
@@ -1703,7 +1704,7 @@ const questions = [
     "id": "tv_30652",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 16), what sporting activity is involved in Jamie's friend's civil lawsuit?",
+    "question": "In Blue Bloods, what sporting activity is involved in Jamie's friend's civil lawsuit?",
     "answers": [
       "A marathon",
       "A tennis match",
@@ -1739,7 +1740,7 @@ const questions = [
     "id": "tv_30653",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 17), what type of crime are the Bonnie-and-Clyde-style offenders committing?",
+    "question": "In Blue Bloods, what type of crime are the Bonnie-and-Clyde-style offenders committing?",
     "answers": [
       "Art theft",
       "Bank robbery",
@@ -1775,7 +1776,7 @@ const questions = [
     "id": "tv_30654",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 17), whose firearm do the robbers take when he tries to stop them?",
+    "question": "In Blue Bloods, whose firearm do the robbers take when he tries to stop them?",
     "answers": [
       "An off-duty police officer's",
       "A bank clerk's",
@@ -1811,7 +1812,7 @@ const questions = [
     "id": "tv_30655",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 17), what civil-liberties organisation does Frank's prospective romantic interest work with?",
+    "question": "In Blue Bloods, what civil-liberties organisation does Frank's prospective romantic interest work with?",
     "answers": [
       "The Red Cross",
       "Amnesty International",
@@ -1847,7 +1848,7 @@ const questions = [
     "id": "tv_30656",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 18), what pattern leads Danny to investigate victims who seem to have nothing in common?",
+    "question": "In Blue Bloods, what pattern leads Danny to investigate victims who seem to have nothing in common?",
     "answers": [
       "They all join the same political party",
       "They all attend the same college",
@@ -1883,7 +1884,7 @@ const questions = [
     "id": "tv_30657",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 18), what must Danny establish before he can identify who is responsible?",
+    "question": "In Blue Bloods, what must Danny establish before he can identify who is responsible?",
     "answers": [
       "The location of a missing police badge",
       "A connection between the victims",
@@ -1919,7 +1920,7 @@ const questions = [
     "id": "tv_30658",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 18), what personal problem does Frank try to help an old friend confront?",
+    "question": "In Blue Bloods, what personal problem does Frank try to help an old friend confront?",
     "answers": [
       "Alcoholism",
       "Gambling",
@@ -1955,7 +1956,7 @@ const questions = [
     "id": "tv_30659",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 19), where is the religious young woman found murdered?",
+    "question": "In Blue Bloods, where is the religious young woman found murdered?",
     "answers": [
       "A cathedral",
       "A subway station",
@@ -1991,7 +1992,7 @@ const questions = [
     "id": "tv_30660",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 19), what unknown part of the victim's life surprises her devout family?",
+    "question": "In Blue Bloods, what unknown part of the victim's life surprises her devout family?",
     "answers": [
       "A hidden university degree",
       "A second job as a detective",
@@ -2027,7 +2028,7 @@ const questions = [
     "id": "tv_30661",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 19), who discovers that the murder victim had concealed that relationship?",
+    "question": "In Blue Bloods, who discovers that the murder victim had concealed that relationship?",
     "answers": [
       "Nicky Reagan-Boyle",
       "Danny Reagan",
@@ -2063,7 +2064,7 @@ const questions = [
     "id": "tv_30662",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 20), how many Wall Street brokers die during drug-related transactions?",
+    "question": "In Blue Bloods, how many Wall Street brokers die during drug-related transactions?",
     "answers": [
       "Two",
       "One",
@@ -2099,7 +2100,7 @@ const questions = [
     "id": "tv_30663",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 20), where is a wounded associate being treated when Danny wants to question him?",
+    "question": "In Blue Bloods, where is a wounded associate being treated when Danny wants to question him?",
     "answers": [
       "A school clinic",
       "A police interview room",
@@ -2135,7 +2136,7 @@ const questions = [
     "id": "tv_30664",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 20), why does Linda prevent Danny from interviewing the wounded witness?",
+    "question": "In Blue Bloods, why does Linda prevent Danny from interviewing the wounded witness?",
     "answers": [
       "He has invoked diplomatic immunity",
       "He is not under arrest",
@@ -2171,7 +2172,7 @@ const questions = [
     "id": "tv_30665",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 21), where does Danny find a confused man covered in his girlfriend's blood?",
+    "question": "In Blue Bloods, where does Danny find a confused man covered in his girlfriend's blood?",
     "answers": [
       "At an airport",
       "In a park",
@@ -2207,7 +2208,7 @@ const questions = [
     "id": "tv_30666",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 21), what substance explains the man's loss of memory about the previous night?",
+    "question": "In Blue Bloods, what substance explains the man's loss of memory about the previous night?",
     "answers": [
       "A potent narcotic",
       "A prescription antibiotic",
@@ -2243,7 +2244,7 @@ const questions = [
     "id": "tv_30667",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 21), what wrongdoing leads Jamie into trouble after an off-duty officer stops a robber?",
+    "question": "In Blue Bloods, what wrongdoing leads Jamie into trouble after an off-duty officer stops a robber?",
     "answers": [
       "Taking the robber's money",
       "Using the officer's vehicle without permission",
@@ -2279,7 +2280,7 @@ const questions = [
     "id": "tv_30668",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 22), what tragedy affects a young woman Danny once promised to help?",
+    "question": "In Blue Bloods, what tragedy affects a young woman Danny once promised to help?",
     "answers": [
       "She loses her home to a fire",
       "She is abducted overseas",
@@ -2315,7 +2316,7 @@ const questions = [
     "id": "tv_30669",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 22), whose murders were the reason Danny had promised to protect the young woman?",
+    "question": "In Blue Bloods, whose murders were the reason Danny had promised to protect the young woman?",
     "answers": [
       "Her brother's",
       "Her parents'",
@@ -2351,7 +2352,7 @@ const questions = [
     "id": "tv_30670",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 22), which of Jamie's fellow police officers is killed in the gang violence?",
+    "question": "In Blue Bloods, which of Jamie's fellow police officers is killed in the gang violence?",
     "answers": [
       "Vinny Cruz",
       "Jackie Curatola",
@@ -2387,7 +2388,7 @@ const questions = [
     "id": "tv_30671",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 23), whose girlfriend does Danny question in the effort to catch the gang leader?",
+    "question": "In Blue Bloods, whose girlfriend does Danny question in the effort to catch the gang leader?",
     "answers": [
       "The mayor's",
       "His former partner's",
@@ -2423,7 +2424,7 @@ const questions = [
     "id": "tv_30672",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 23), which police officer's killing motivates the family's effort against the project gang?",
+    "question": "In Blue Bloods, which police officer's killing motivates the family's effort against the project gang?",
     "answers": [
       "Frank Reagan's",
       "Kate Lansing's",
@@ -2459,7 +2460,7 @@ const questions = [
     "id": "tv_30673",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 23), what is the Reagan family's central police objective in the finale?",
+    "question": "In Blue Bloods, what is the Reagan family's central police objective in the finale?",
     "answers": [
       "Reopen a twenty-year-old jewellery robbery",
       "Bring down the gang leader responsible for a family friend's death",

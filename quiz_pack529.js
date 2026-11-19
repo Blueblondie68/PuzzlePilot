@@ -1,4 +1,5 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 529: Blue Bloods (2010–2024), Series 2 (2011–2012).
+// Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
 // 66 episode-anchored questions, 3 per each of 22 episodes. IDs tv_30539–tv_30604.
 // Follows Pack 528 ending tv_30538. Series 3–14 remain outstanding.
 // Episode titles, broadcast dates, and plot facts checked against:
@@ -12,7 +13,7 @@ const questions = [
     "id": "tv_30539",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 1), whose political supporter is found murdered?",
+    "question": "In Blue Bloods, whose political supporter is found murdered?",
     "answers": [
       "The police commissioner's",
       "The mayor-elect's",
@@ -48,7 +49,7 @@ const questions = [
     "id": "tv_30540",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 1), what public explanation for the death does the mayor want Frank to use?",
+    "question": "In Blue Bloods, what public explanation for the death does the mayor want Frank to use?",
     "answers": [
       "A random act of violence",
       "An accident during a robbery",
@@ -84,7 +85,7 @@ const questions = [
     "id": "tv_30541",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 1), where does Jamie go undercover and encounter a suspicious patron?",
+    "question": "In Blue Bloods, where does Jamie go undercover and encounter a suspicious patron?",
     "answers": [
       "A courthouse",
       "A theatre",
@@ -120,7 +121,7 @@ const questions = [
     "id": "tv_30542",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 2), which family member shoots a police officer who fails to identify himself?",
+    "question": "In Blue Bloods, which family member shoots a police officer who fails to identify himself?",
     "answers": [
       "Jamie Reagan",
       "Frank Reagan",
@@ -156,7 +157,7 @@ const questions = [
     "id": "tv_30543",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 2), which departmental body investigates Danny after the shooting?",
+    "question": "In Blue Bloods, which departmental body investigates Danny after the shooting?",
     "answers": [
       "The police academy",
       "Internal Affairs",
@@ -192,7 +193,7 @@ const questions = [
     "id": "tv_30544",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 2), what happens to Danny's regular duties while the shooting is investigated?",
+    "question": "In Blue Bloods, what happens to Danny's regular duties while the shooting is investigated?",
     "answers": [
       "He is placed on modified assignment",
       "He is promoted to commissioner",
@@ -228,7 +229,7 @@ const questions = [
     "id": "tv_30545",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 3), what institution is the target of the attempted robbery?",
+    "question": "In Blue Bloods, what institution is the target of the attempted robbery?",
     "answers": [
       "An art gallery",
       "A jewellery warehouse",
@@ -264,7 +265,7 @@ const questions = [
     "id": "tv_30546",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 3), what former profession does Danny discover one robber once held?",
+    "question": "In Blue Bloods, what former profession does Danny discover one robber once held?",
     "answers": [
       "Firefighter",
       "Prosecutor",
@@ -300,7 +301,7 @@ const questions = [
     "id": "tv_30547",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 3), what is the name of Jamie's new police partner?",
+    "question": "In Blue Bloods, what is the name of Jamie's new police partner?",
     "answers": [
       "Jackie Curatola",
       "Luisa Sosa",
@@ -336,7 +337,7 @@ const questions = [
     "id": "tv_30548",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 4), how old is the rape case that Erin reopens?",
+    "question": "In Blue Bloods, how old is the rape case that Erin reopens?",
     "answers": [
       "Eighteen years",
       "Five years",
@@ -372,7 +373,7 @@ const questions = [
     "id": "tv_30549",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 4), which Reagan originally arrested the suspect in the reopened case?",
+    "question": "In Blue Bloods, which Reagan originally arrested the suspect in the reopened case?",
     "answers": [
       "Jamie Reagan",
       "Danny Reagan",
@@ -408,7 +409,7 @@ const questions = [
     "id": "tv_30550",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 4), how many teenagers are found murdered in the park case investigated by Danny and Jackie?",
+    "question": "In Blue Bloods, how many teenagers are found murdered in the park case investigated by Danny and Jackie?",
     "answers": [
       "One",
       "Two",
@@ -444,7 +445,7 @@ const questions = [
     "id": "tv_30551",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 5), which relationship is Danny trying to make time for during a busy investigation?",
+    "question": "In Blue Bloods, which relationship is Danny trying to make time for during a busy investigation?",
     "answers": [
       "His friendship with Henry",
       "His marriage to Linda",
@@ -480,7 +481,7 @@ const questions = [
     "id": "tv_30552",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 5), which Reagan goes deeply undercover with a crime family?",
+    "question": "In Blue Bloods, which Reagan goes deeply undercover with a crime family?",
     "answers": [
       "Jamie Reagan",
       "Erin Reagan",
@@ -516,7 +517,7 @@ const questions = [
     "id": "tv_30553",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 5), what kind of getaway does Danny hope to arrange with Linda?",
+    "question": "In Blue Bloods, what kind of getaway does Danny hope to arrange with Linda?",
     "answers": [
       "A skiing holiday",
       "A fishing expedition",
@@ -552,7 +553,7 @@ const questions = [
     "id": "tv_30554",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 6), what emergency call takes Jamie and Renzulli to a religious centre?",
+    "question": "In Blue Bloods, what emergency call takes Jamie and Renzulli to a religious centre?",
     "answers": [
       "A fire inspection",
       "An overdue witness interview",
@@ -588,7 +589,7 @@ const questions = [
     "id": "tv_30555",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 6), who injures Jamie and Renzulli while denying them entry?",
+    "question": "In Blue Bloods, who injures Jamie and Renzulli while denying them entry?",
     "answers": [
       "A group of bank robbers",
       "The religious centre's security staff",
@@ -624,7 +625,7 @@ const questions = [
     "id": "tv_30556",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 6), what sort of problem does the confrontation create for Frank?",
+    "question": "In Blue Bloods, what sort of problem does the confrontation create for Frank?",
     "answers": [
       "A political crisis",
       "A police academy closure",
@@ -660,7 +661,7 @@ const questions = [
     "id": "tv_30557",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 7), what role does Jackie adopt to investigate a series of hotel-room murders?",
+    "question": "In Blue Bloods, what role does Jackie adopt to investigate a series of hotel-room murders?",
     "answers": [
       "Hotel concierge",
       "Waitress",
@@ -696,7 +697,7 @@ const questions = [
     "id": "tv_30558",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 7), where are the serial killer's victims being murdered?",
+    "question": "In Blue Bloods, where are the serial killer's victims being murdered?",
     "answers": [
       "Public libraries",
       "Underground train stations",
@@ -732,7 +733,7 @@ const questions = [
     "id": "tv_30559",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 7), where does Erin meet a possible romantic partner?",
+    "question": "In Blue Bloods, where does Erin meet a possible romantic partner?",
     "answers": [
       "A police firing range",
       "An art gallery",
@@ -768,7 +769,7 @@ const questions = [
     "id": "tv_30560",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 8), what medical emergency strikes Henry during the holiday preparations?",
+    "question": "In Blue Bloods, what medical emergency strikes Henry during the holiday preparations?",
     "answers": [
       "A heart attack",
       "A stroke",
@@ -804,7 +805,7 @@ const questions = [
     "id": "tv_30561",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 8), what concerns Danny and Jackie about a young woman's apparent suicide?",
+    "question": "In Blue Bloods, what concerns Danny and Jackie about a young woman's apparent suicide?",
     "answers": [
       "It happened outside their jurisdiction",
       "The victim is an undercover officer",
@@ -840,7 +841,7 @@ const questions = [
     "id": "tv_30562",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 8), which city official clashes with Frank over a potential threat?",
+    "question": "In Blue Bloods, which city official clashes with Frank over a potential threat?",
     "answers": [
       "The borough president",
       "The fire commissioner",
@@ -876,7 +877,7 @@ const questions = [
     "id": "tv_30563",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 9), what does an ex-mobster help Danny locate in cold cases?",
+    "question": "In Blue Bloods, what does an ex-mobster help Danny locate in cold cases?",
     "answers": [
       "Missing police badges",
       "Buried bodies",
@@ -912,7 +913,7 @@ const questions = [
     "id": "tv_30564",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 9), what legal favour does the former mobster seek for his son?",
+    "question": "In Blue Bloods, what legal favour does the former mobster seek for his son?",
     "answers": [
       "Leniency on a car-theft charge",
       "A pardon for arson",
@@ -948,7 +949,7 @@ const questions = [
     "id": "tv_30565",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 9), what sort of operation does Jamie infiltrate while looking into the Sanfino family?",
+    "question": "In Blue Bloods, what sort of operation does Jamie infiltrate while looking into the Sanfino family?",
     "answers": [
       "A shipping terminal",
       "A hospital pharmacy",
@@ -984,7 +985,7 @@ const questions = [
     "id": "tv_30566",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 10), whose murdered informant prompts the central investigation?",
+    "question": "In Blue Bloods, whose murdered informant prompts the central investigation?",
     "answers": [
       "Frank's",
       "Jamie's",
@@ -1020,7 +1021,7 @@ const questions = [
     "id": "tv_30567",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 10), which Reagan helps Erin investigate the informant's death?",
+    "question": "In Blue Bloods, which Reagan helps Erin investigate the informant's death?",
     "answers": [
       "Jamie Reagan",
       "Danny Reagan",
@@ -1056,7 +1057,7 @@ const questions = [
     "id": "tv_30568",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 10), what police conduct does a disputed video appear to show?",
+    "question": "In Blue Bloods, what police conduct does a disputed video appear to show?",
     "answers": [
       "An officer assaulting someone",
       "An officer stealing a patrol car",
@@ -1092,7 +1093,7 @@ const questions = [
     "id": "tv_30569",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 11), what kind of establishment is the murder scene Danny and Jackie investigate?",
+    "question": "In Blue Bloods, what kind of establishment is the murder scene Danny and Jackie investigate?",
     "answers": [
       "A cinema",
       "A hospital",
@@ -1128,7 +1129,7 @@ const questions = [
     "id": "tv_30570",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 11), what clothing makes a fleeing person at the scene particularly suspicious?",
+    "question": "In Blue Bloods, what clothing makes a fleeing person at the scene particularly suspicious?",
     "answers": [
       "A firefighter uniform",
       "A chef's coat",
@@ -1164,7 +1165,7 @@ const questions = [
     "id": "tv_30571",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 11), what extra work does Jamie take to help pay off his student loans?",
+    "question": "In Blue Bloods, what extra work does Jamie take to help pay off his student loans?",
     "answers": [
       "Taxi driving",
       "Painting",
@@ -1200,7 +1201,7 @@ const questions = [
     "id": "tv_30572",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 12), what is happening when Danny's family is caught in a gunfight?",
+    "question": "In Blue Bloods, what is happening when Danny's family is caught in a gunfight?",
     "answers": [
       "They are travelling home by car",
       "They are dining at a restaurant",
@@ -1236,7 +1237,7 @@ const questions = [
     "id": "tv_30573",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 12), what is the man Danny hits with his car fleeing from?",
+    "question": "In Blue Bloods, what is the man Danny hits with his car fleeing from?",
     "answers": [
       "An escaped prisoner",
       "A police dog",
@@ -1272,7 +1273,7 @@ const questions = [
     "id": "tv_30574",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 12), which historic disaster is tied to Frank's grief about a seriously ill friend?",
+    "question": "In Blue Bloods, which historic disaster is tied to Frank's grief about a seriously ill friend?",
     "answers": [
       "Hurricane Sandy",
       "The 1977 New York blackout",
@@ -1308,7 +1309,7 @@ const questions = [
     "id": "tv_30575",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 13), what medical cause of death is initially recorded for a wealthy woman?",
+    "question": "In Blue Bloods, what medical cause of death is initially recorded for a wealthy woman?",
     "answers": [
       "A stroke",
       "A heart attack",
@@ -1344,7 +1345,7 @@ const questions = [
     "id": "tv_30576",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 13), who does the woman's daughter accuse of killing her?",
+    "question": "In Blue Bloods, who does the woman's daughter accuse of killing her?",
     "answers": [
       "Her stepfather",
       "Her brother",
@@ -1380,7 +1381,7 @@ const questions = [
     "id": "tv_30577",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 13), what Church process does the archbishop seek Frank's support for?",
+    "question": "In Blue Bloods, what Church process does the archbishop seek Frank's support for?",
     "answers": [
       "The election of a new pope",
       "The appointment of a bishop",
@@ -1416,7 +1417,7 @@ const questions = [
     "id": "tv_30578",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 14), what violent incident leads the Reagans to debate family self-defence?",
+    "question": "In Blue Bloods, what violent incident leads the Reagans to debate family self-defence?",
     "answers": [
       "An arson attack at a police academy",
       "A car theft at a school",
@@ -1452,7 +1453,7 @@ const questions = [
     "id": "tv_30579",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 14), what happens to the assailant in the main family-attack case?",
+    "question": "In Blue Bloods, what happens to the assailant in the main family-attack case?",
     "answers": [
       "He flees overseas",
       "He is shot and killed",
@@ -1488,7 +1489,7 @@ const questions = [
     "id": "tv_30580",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 14), at what type of public event is a university student arrested, creating a dilemma for Frank?",
+    "question": "In Blue Bloods, at what type of public event is a university student arrested, creating a dilemma for Frank?",
     "answers": [
       "A protest rally",
       "An athletics meeting",
@@ -1524,7 +1525,7 @@ const questions = [
     "id": "tv_30581",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 15), what was the occupation of the Reagan family friend who is murdered?",
+    "question": "In Blue Bloods, what was the occupation of the Reagan family friend who is murdered?",
     "answers": [
       "District attorney",
       "Medical examiner",
@@ -1560,7 +1561,7 @@ const questions = [
     "id": "tv_30582",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 15), which detective is consumed by the search for the friend's killer?",
+    "question": "In Blue Bloods, which detective is consumed by the search for the friend's killer?",
     "answers": [
       "Jamie Reagan",
       "Henry Reagan",
@@ -1596,7 +1597,7 @@ const questions = [
     "id": "tv_30583",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 15), which family members worry about the emotional toll of the investigation on Danny?",
+    "question": "In Blue Bloods, which family members worry about the emotional toll of the investigation on Danny?",
     "answers": [
       "Nicky and Erin",
       "Linda and the boys",
@@ -1632,7 +1633,7 @@ const questions = [
     "id": "tv_30584",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 16), what is the profession of Frank's friend who is attacked while researching a story?",
+    "question": "In Blue Bloods, what is the profession of Frank's friend who is attacked while researching a story?",
     "answers": [
       "Journalist",
       "Veterinarian",
@@ -1668,7 +1669,7 @@ const questions = [
     "id": "tv_30585",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 16), which detective pair investigates the attempted assault?",
+    "question": "In Blue Bloods, which detective pair investigates the attempted assault?",
     "answers": [
       "Jamie and Erin",
       "Frank and Henry",
@@ -1704,7 +1705,7 @@ const questions = [
     "id": "tv_30586",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 16), whose undercover work reaches a crucial point during the episode?",
+    "question": "In Blue Bloods, whose undercover work reaches a crucial point during the episode?",
     "answers": [
       "Erin's",
       "Henry's",
@@ -1740,7 +1741,7 @@ const questions = [
     "id": "tv_30587",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 17), which Reagan prosecutes a woman accused of murdering her husband?",
+    "question": "In Blue Bloods, which Reagan prosecutes a woman accused of murdering her husband?",
     "answers": [
       "Linda Reagan",
       "Erin Reagan",
@@ -1776,7 +1777,7 @@ const questions = [
     "id": "tv_30588",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 17), what happens to the defendant's lawyer during that case?",
+    "question": "In Blue Bloods, what happens to the defendant's lawyer during that case?",
     "answers": [
       "The lawyer is murdered",
       "The lawyer becomes a judge",
@@ -1812,7 +1813,7 @@ const questions = [
     "id": "tv_30589",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 17), what causes tension when Danny appears as a witness?",
+    "question": "In Blue Bloods, what causes tension when Danny appears as a witness?",
     "answers": [
       "Jamie tries to arrest him",
       "Frank refuses to enter the courtroom",
@@ -1848,7 +1849,7 @@ const questions = [
     "id": "tv_30590",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 18), what police programme receives a firearm linked to a robbery?",
+    "question": "In Blue Bloods, what police programme receives a firearm linked to a robbery?",
     "answers": [
       "The firearms amnesty for officers",
       "A shooting competition",
@@ -1884,7 +1885,7 @@ const questions = [
     "id": "tv_30591",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 18), what rule is Danny expected to respect when the weapon is handed in?",
+    "question": "In Blue Bloods, what rule is Danny expected to respect when the weapon is handed in?",
     "answers": [
       "Mandatory overnight detention",
       "No questions asked",
@@ -1920,7 +1921,7 @@ const questions = [
     "id": "tv_30592",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 18), who forces Danny to reconsider how he obtained a suspect's identification?",
+    "question": "In Blue Bloods, who forces Danny to reconsider how he obtained a suspect's identification?",
     "answers": [
       "Frank Reagan",
       "Jackie Curatola",
@@ -1956,7 +1957,7 @@ const questions = [
     "id": "tv_30593",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 19), what profession did the deceased man have in the closed case Danny reopens?",
+    "question": "In Blue Bloods, what profession did the deceased man have in the closed case Danny reopens?",
     "answers": [
       "Bus driver",
       "Paramedic",
@@ -1992,7 +1993,7 @@ const questions = [
     "id": "tv_30594",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 19), who urges Danny to take a second look at the death?",
+    "question": "In Blue Bloods, who urges Danny to take a second look at the death?",
     "answers": [
       "The victim's insurance agent",
       "A district attorney",
@@ -2028,7 +2029,7 @@ const questions = [
     "id": "tv_30595",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 19), whom does Jamie rescue from a burning building, putting his undercover identity at risk?",
+    "question": "In Blue Bloods, whom does Jamie rescue from a burning building, putting his undercover identity at risk?",
     "answers": [
       "A fellow detective",
       "A baby",
@@ -2064,7 +2065,7 @@ const questions = [
     "id": "tv_30596",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 20), which organised-crime group is connected with the trial's protected witness?",
+    "question": "In Blue Bloods, which organised-crime group is connected with the trial's protected witness?",
     "answers": [
       "The Russian mob",
       "A biker gang",
@@ -2100,7 +2101,7 @@ const questions = [
     "id": "tv_30597",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 20), what does an attempt on the witness's life suggest about the protection team?",
+    "question": "In Blue Bloods, what does an attempt on the witness's life suggest about the protection team?",
     "answers": [
       "It has been disbanded",
       "It is using the wrong courthouse",
@@ -2136,7 +2137,7 @@ const questions = [
     "id": "tv_30598",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 20), what senior civic job is Erin offered?",
+    "question": "In Blue Bloods, what senior civic job is Erin offered?",
     "answers": [
       "Police commissioner",
       "District attorney",
@@ -2172,7 +2173,7 @@ const questions = [
     "id": "tv_30599",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 21), what is unusual about the deceased investor's injuries?",
+    "question": "In Blue Bloods, what is unusual about the deceased investor's injuries?",
     "answers": [
       "He has no injuries except a broken finger",
       "He has fight injuries but no marks on his hands",
@@ -2208,7 +2209,7 @@ const questions = [
     "id": "tv_30600",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 21), what kind of illicit venue is linked to the investor's death?",
+    "question": "In Blue Bloods, what kind of illicit venue is linked to the investor's death?",
     "answers": [
       "An underground fight club",
       "An illegal casino",
@@ -2244,7 +2245,7 @@ const questions = [
     "id": "tv_30601",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 21), why does Frank keep Jamie under house arrest?",
+    "question": "In Blue Bloods, why does Frank keep Jamie under house arrest?",
     "answers": [
       "Jamie has failed a police examination",
       "A witness believes Jamie robbed a bank",
@@ -2280,7 +2281,7 @@ const questions = [
     "id": "tv_30602",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 22), what type of attack is Frank urgently trying to prevent?",
+    "question": "In Blue Bloods, what type of attack is Frank urgently trying to prevent?",
     "answers": [
       "A cyberattack on a bank",
       "An assault on an airport terminal",
@@ -2316,7 +2317,7 @@ const questions = [
     "id": "tv_30603",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 22), which family holiday frames the danger in this season finale?",
+    "question": "In Blue Bloods, which family holiday frames the danger in this season finale?",
     "answers": [
       "Father's Day",
       "Mother's Day",
@@ -2352,7 +2353,7 @@ const questions = [
     "id": "tv_30604",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 2, Episode 22), which two Reagan brothers clash over who deserves credit for an arrest?",
+    "question": "In Blue Bloods, which two Reagan brothers clash over who deserves credit for an arrest?",
     "answers": [
       "Danny and Jamie",
       "Frank and Henry",

@@ -1,4 +1,5 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 535: Blue Bloods (2010–2024), Series 8 (2017–2018).
+// Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
 // 66 episode-specific questions, three per all 22 episodes. IDs tv_30938–tv_31003.
 // Follows Pack 534 ending tv_30937. Series 1–8 covered, Series 9–14 outstanding.
 // Official CBS episode synopsis: https://www.cbs.com/shows/blue_bloods/episodes/8/
@@ -11,7 +12,7 @@ const questions = [
     "id": "tv_30938",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 1), Whose former husband is involved in the investigation that draws Danny back to work?",
+    "question": "In Blue Bloods, whose former husband is involved in the investigation that draws Danny back to work?",
     "answers": [
       "Maria Baez's",
       "Erin Reagan's",
@@ -47,7 +48,7 @@ const questions = [
     "id": "tv_30939",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 1), What undercover cover story do Jamie and Eddie adopt?",
+    "question": "In Blue Bloods, what undercover cover story do Jamie and Eddie adopt?",
     "answers": [
       "They pretend to be a couple",
       "They pose as art dealers",
@@ -83,7 +84,7 @@ const questions = [
     "id": "tv_30940",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 1), Which city leader does Frank clash with as the series begins?",
+    "question": "In Blue Bloods, which city leader does Frank clash with as the series begins?",
     "answers": [
       "Governor Mendez",
       "Archbishop Kevin Kearns",
@@ -119,7 +120,7 @@ const questions = [
     "id": "tv_30941",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 2), What controversial event does the mayor order Frank to attend?",
+    "question": "In Blue Bloods, what controversial event does the mayor order Frank to attend?",
     "answers": [
       "A fundraiser for a gang leader",
       "A courthouse reopening ceremony",
@@ -155,7 +156,7 @@ const questions = [
     "id": "tv_30942",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 2), How long had Selena Moore been missing before Danny investigated her return?",
+    "question": "In Blue Bloods, how long had Selena Moore been missing before Danny investigated her return?",
     "answers": [
       "Three years",
       "Thirteen years",
@@ -191,7 +192,7 @@ const questions = [
     "id": "tv_30943",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 2), What is the profession of the man Jamie and Eddie suspect is exploiting a young woman?",
+    "question": "In Blue Bloods, what is the profession of the man Jamie and Eddie suspect is exploiting a young woman?",
     "answers": [
       "Congressman",
       "Hospital director",
@@ -227,7 +228,7 @@ const questions = [
     "id": "tv_30944",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 3), What crime is Chao Lin on trial for when the presiding judge dies?",
+    "question": "In Blue Bloods, what crime is Chao Lin on trial for when the presiding judge dies?",
     "answers": [
       "Money laundering",
       "Armed robbery",
@@ -263,7 +264,7 @@ const questions = [
     "id": "tv_30945",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 3), Whose death causes Danny and Baez to investigate whether Erin's trial is being sabotaged?",
+    "question": "In Blue Bloods, whose death causes Danny and Baez to investigate whether Erin's trial is being sabotaged?",
     "answers": [
       "The chief witness's",
       "The jury foreperson's",
@@ -299,7 +300,7 @@ const questions = [
     "id": "tv_30946",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 3), Who helps Frank seek a route around the mayor's veto of his safety initiative?",
+    "question": "In Blue Bloods, who helps Frank seek a route around the mayor's veto of his safety initiative?",
     "answers": [
       "Margaret Dutton",
       "Regina Thomas",
@@ -335,7 +336,7 @@ const questions = [
     "id": "tv_30947",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 4), Who is killed before he can testify against a career criminal?",
+    "question": "In Blue Bloods, who is killed before he can testify against a career criminal?",
     "answers": [
       "A detective",
       "A public defender",
@@ -371,7 +372,7 @@ const questions = [
     "id": "tv_30948",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 4), What specialist police unit confronts Garrett outside his house?",
+    "question": "In Blue Bloods, what specialist police unit confronts Garrett outside his house?",
     "answers": [
       "The mounted unit",
       "A marine patrol",
@@ -407,7 +408,7 @@ const questions = [
     "id": "tv_30949",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 4), What investigative tactic does Erin adopt despite Anthony's objections?",
+    "question": "In Blue Bloods, what investigative tactic does Erin adopt despite Anthony's objections?",
     "answers": [
       "Hiring a private security firm",
       "Moving a case to family court",
@@ -443,7 +444,7 @@ const questions = [
     "id": "tv_30950",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 5), Whose violent history becomes relevant in a single mother's murder?",
+    "question": "In Blue Bloods, whose violent history becomes relevant in a single mother's murder?",
     "answers": [
       "Her teenage son's",
       "Her former husband's",
@@ -479,7 +480,7 @@ const questions = [
     "id": "tv_30951",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 5), What prison practice does Mayor Dutton abolish, creating problems for Frank?",
+    "question": "In Blue Bloods, what prison practice does Mayor Dutton abolish, creating problems for Frank?",
     "answers": [
       "Solitary confinement",
       "Prison visiting hours",
@@ -515,7 +516,7 @@ const questions = [
     "id": "tv_30952",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 5), What emergency does Jamie respond to involving a young woman?",
+    "question": "In Blue Bloods, what emergency does Jamie respond to involving a young woman?",
     "answers": [
       "A boating accident",
       "A collapsed bridge",
@@ -551,7 +552,7 @@ const questions = [
     "id": "tv_30953",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 6), Which type of famous sportsperson is found dead from an apparent overdose?",
+    "question": "In Blue Bloods, which type of famous sportsperson is found dead from an apparent overdose?",
     "answers": [
       "Professional golfer",
       "Motor-racing driver",
@@ -587,7 +588,7 @@ const questions = [
     "id": "tv_30954",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 6), What possible connection does Danny investigate in the athlete's death?",
+    "question": "In Blue Bloods, what possible connection does Danny investigate in the athlete's death?",
     "answers": [
       "A rigged television contest",
       "A local drug gang",
@@ -623,7 +624,7 @@ const questions = [
     "id": "tv_30955",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 6), Which religious leader contacts Frank about an eviction Jamie and Eddie are handling?",
+    "question": "In Blue Bloods, which religious leader contacts Frank about an eviction Jamie and Eddie are handling?",
     "answers": [
       "Archbishop Kevin Kearns",
       "Reverend Darnell Potter",
@@ -659,7 +660,7 @@ const questions = [
     "id": "tv_30956",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 7), What job does Faith Madson do when Danny helps protect her?",
+    "question": "In Blue Bloods, what job does Faith Madson do when Danny helps protect her?",
     "answers": [
       "Lawyer",
       "Social worker",
@@ -695,7 +696,7 @@ const questions = [
     "id": "tv_30957",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 7), Who poses the main threat to the nurse?",
+    "question": "In Blue Bloods, who poses the main threat to the nurse?",
     "answers": [
       "A former employer",
       "A prison officer",
@@ -731,7 +732,7 @@ const questions = [
     "id": "tv_30958",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 7), What event do Jamie and Eddie unexpectedly assist with?",
+    "question": "In Blue Bloods, what event do Jamie and Eddie unexpectedly assist with?",
     "answers": [
       "A wedding ceremony",
       "The birth of a baby",
@@ -767,7 +768,7 @@ const questions = [
     "id": "tv_30959",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 8), What connection does Eddie have to a suspect she arrests on questionable grounds?",
+    "question": "In Blue Bloods, what connection does Eddie have to a suspect she arrests on questionable grounds?",
     "answers": [
       "They knew each other at college",
       "They served in the military together",
@@ -803,7 +804,7 @@ const questions = [
     "id": "tv_30960",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 8), Which illegal substance appears in the decorated officer's positive test?",
+    "question": "In Blue Bloods, which illegal substance appears in the decorated officer's positive test?",
     "answers": [
       "Heroin",
       "Cocaine",
@@ -839,7 +840,7 @@ const questions = [
     "id": "tv_30961",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 8), What record is Frank reluctant to damage by disciplining the officer?",
+    "question": "In Blue Bloods, what record is Frank reluctant to damage by disciplining the officer?",
     "answers": [
       "A newly issued driving licence",
       "A university exam record",
@@ -875,7 +876,7 @@ const questions = [
     "id": "tv_30962",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 9), Which detective suffers an accidental drug overdose while working a narcotics investigation?",
+    "question": "In Blue Bloods, which detective suffers an accidental drug overdose while working a narcotics investigation?",
     "answers": [
       "Erin Reagan",
       "Maria Baez",
@@ -911,7 +912,7 @@ const questions = [
     "id": "tv_30963",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 9), Why are Jamie and Eddie asked to protect a resident from his neighbours?",
+    "question": "In Blue Bloods, why are Jamie and Eddie asked to protect a resident from his neighbours?",
     "answers": [
       "He is a rehabilitated sex offender",
       "He is a whistleblower at city hall",
@@ -947,7 +948,7 @@ const questions = [
     "id": "tv_30964",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 9), Which political figure becomes Frank's unlikely ally?",
+    "question": "In Blue Bloods, which political figure becomes Frank's unlikely ally?",
     "answers": [
       "Governor Mendez",
       "Congressman Thomas",
@@ -983,7 +984,7 @@ const questions = [
     "id": "tv_30965",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 10), What heroic act prompts Jamie and Eddie to seek relief from Parker Mack's old charges?",
+    "question": "In Blue Bloods, what heroic act prompts Jamie and Eddie to seek relief from Parker Mack's old charges?",
     "answers": [
       "He prevents a building fire",
       "He finds a missing child in a park",
@@ -1019,7 +1020,7 @@ const questions = [
     "id": "tv_30966",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 10), Which known criminal heads the car-theft ring pursued by Danny and Baez?",
+    "question": "In Blue Bloods, which known criminal heads the car-theft ring pursued by Danny and Baez?",
     "answers": [
       "Chao Lin",
       "Victor Lugo",
@@ -1055,7 +1056,7 @@ const questions = [
     "id": "tv_30967",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 10), Which member of Frank's office receives an outside job offer?",
+    "question": "In Blue Bloods, which member of Frank's office receives an outside job offer?",
     "answers": [
       "Abigail Baker",
       "Eddie Janko",
@@ -1091,7 +1092,7 @@ const questions = [
     "id": "tv_30968",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 11), What profession does the missing woman practise while researching a possible miscarriage of justice?",
+    "question": "In Blue Bloods, what profession does the missing woman practise while researching a possible miscarriage of justice?",
     "answers": [
       "Teaching",
       "Medicine",
@@ -1127,7 +1128,7 @@ const questions = [
     "id": "tv_30969",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 11), Who are Danny and Baez hoping to find by reviewing the original murder case?",
+    "question": "In Blue Bloods, who are Danny and Baez hoping to find by reviewing the original murder case?",
     "answers": [
       "A retired police officer",
       "A defence judge",
@@ -1163,7 +1164,7 @@ const questions = [
     "id": "tv_30970",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 11), Which approach to drug abuse does Frank oppose within Erin's office?",
+    "question": "In Blue Bloods, which approach to drug abuse does Frank oppose within Erin's office?",
     "answers": [
       "Requiring every offender to leave New York",
       "Treating it as a disease before treating it as a crime",
@@ -1199,7 +1200,7 @@ const questions = [
     "id": "tv_30971",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 12), What happens to Anthony while speaking to a witness about a forthcoming murder trial?",
+    "question": "In Blue Bloods, what happens to Anthony while speaking to a witness about a forthcoming murder trial?",
     "answers": [
       "He is shot",
       "He is arrested",
@@ -1235,7 +1236,7 @@ const questions = [
     "id": "tv_30972",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 12), Who does Erin ask to investigate the attack on Anthony, despite their rivalry?",
+    "question": "In Blue Bloods, who does Erin ask to investigate the attack on Anthony, despite their rivalry?",
     "answers": [
       "Jamie Reagan",
       "Garrett Moore",
@@ -1271,7 +1272,7 @@ const questions = [
     "id": "tv_30973",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 12), What career-related examination is Nicky preparing to take?",
+    "question": "In Blue Bloods, what career-related examination is Nicky preparing to take?",
     "answers": [
       "The bar exam",
       "A medical entrance test",
@@ -1307,7 +1308,7 @@ const questions = [
     "id": "tv_30974",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 13), Which member of the Reagan family is an important witness and frustrates Danny by interfering?",
+    "question": "In Blue Bloods, which member of the Reagan family is an important witness and frustrates Danny by interfering?",
     "answers": [
       "Nicky Reagan-Boyle",
       "Henry Reagan",
@@ -1343,7 +1344,7 @@ const questions = [
     "id": "tv_30975",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 13), What symbol does Nicky's activist friend deface at One Police Plaza?",
+    "question": "In Blue Bloods, what symbol does Nicky's activist friend deface at One Police Plaza?",
     "answers": [
       "The NYPD flag",
       "A police helicopter",
@@ -1379,7 +1380,7 @@ const questions = [
     "id": "tv_30976",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 13), Which official do Jamie and Eddie discover is abusing authority over former prisoners?",
+    "question": "In Blue Bloods, which official do Jamie and Eddie discover is abusing authority over former prisoners?",
     "answers": [
       "A court translator",
       "A police training officer",
@@ -1415,7 +1416,7 @@ const questions = [
     "id": "tv_30977",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 14), Where is a student shot in a case involving a rival gang?",
+    "question": "In Blue Bloods, where is a student shot in a case involving a rival gang?",
     "answers": [
       "A city library",
       "A train platform",
@@ -1451,7 +1452,7 @@ const questions = [
     "id": "tv_30978",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 14), Which school leader takes matters into his own hands after the gang shooting?",
+    "question": "In Blue Bloods, which school leader takes matters into his own hands after the gang shooting?",
     "answers": [
       "Governor Mendez",
       "Principal Darryl Ward",
@@ -1487,7 +1488,7 @@ const questions = [
     "id": "tv_30979",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 14), Which governor tries to set Frank up following the shooting of a legislative aide by an NYPD officer?",
+    "question": "In Blue Bloods, which governor tries to set Frank up following the shooting of a legislative aide by an NYPD officer?",
     "answers": [
       "Governor Mendez",
       "Governor Pataki",
@@ -1523,7 +1524,7 @@ const questions = [
     "id": "tv_30980",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 15), What personal problem makes Danny consider alternative employment?",
+    "question": "In Blue Bloods, what personal problem makes Danny consider alternative employment?",
     "answers": [
       "A recent disciplinary suspension",
       "A university tuition dispute",
@@ -1559,7 +1560,7 @@ const questions = [
     "id": "tv_30981",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 15), Who experiences sexual harassment at a new internship?",
+    "question": "In Blue Bloods, who experiences sexual harassment at a new internship?",
     "answers": [
       "Eddie Janko",
       "Maria Baez",
@@ -1595,7 +1596,7 @@ const questions = [
     "id": "tv_30982",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 15), What does a rookie officer question a pedestrian about in a widely shared video?",
+    "question": "In Blue Bloods, what does a rookie officer question a pedestrian about in a widely shared video?",
     "answers": [
       "A lost passport photo",
       "Immigration status",
@@ -1631,7 +1632,7 @@ const questions = [
     "id": "tv_30983",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 16), What makes the murder victim's personal life especially complicated?",
+    "question": "In Blue Bloods, what makes the murder victim's personal life especially complicated?",
     "answers": [
       "He maintained two separate families",
       "He was living under diplomatic immunity",
@@ -1667,7 +1668,7 @@ const questions = [
     "id": "tv_30984",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 16), What wrongdoing does Erin suspect of Anthony's former partner?",
+    "question": "In Blue Bloods, what wrongdoing does Erin suspect of Anthony's former partner?",
     "answers": [
       "Selling police training material",
       "Forging court transcripts",
@@ -1703,7 +1704,7 @@ const questions = [
     "id": "tv_30985",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 16), Which senior NYPD post does Frank need to fill?",
+    "question": "In Blue Bloods, which senior NYPD post does Frank need to fill?",
     "answers": [
       "Chief Medical Examiner",
       "Head of the Fire Department",
@@ -1739,7 +1740,7 @@ const questions = [
     "id": "tv_30986",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 17), What does Danny's brother-in-law Jimmy steal from him while entangled with mobsters?",
+    "question": "In Blue Bloods, what does Danny's brother-in-law Jimmy steal from him while entangled with mobsters?",
     "answers": [
       "His police badge",
       "His credit card",
@@ -1775,7 +1776,7 @@ const questions = [
     "id": "tv_30987",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 17), Who does Frank ask Erin and Anthony to investigate because of possible criminal wrongdoing?",
+    "question": "In Blue Bloods, who does Frank ask Erin and Anthony to investigate because of possible criminal wrongdoing?",
     "answers": [
       "His former partner Lenny",
       "Mayor Margaret Dutton",
@@ -1811,7 +1812,7 @@ const questions = [
     "id": "tv_30988",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 17), Where is the undercover officer Tariq working when he asks Jamie for help getting reassigned?",
+    "question": "In Blue Bloods, where is the undercover officer Tariq working when he asks Jamie for help getting reassigned?",
     "answers": [
       "An art gallery",
       "A bank",
@@ -1847,7 +1848,7 @@ const questions = [
     "id": "tv_30989",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 18), What unresolved tragedy persuades Danny to revisit an old investigation?",
+    "question": "In Blue Bloods, what unresolved tragedy persuades Danny to revisit an old investigation?",
     "answers": [
       "A father died in a workplace accident",
       "A child disappeared at sea",
@@ -1883,7 +1884,7 @@ const questions = [
     "id": "tv_30990",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 18), Which police officer is shot while on duty in this episode?",
+    "question": "In Blue Bloods, which police officer is shot while on duty in this episode?",
     "answers": [
       "Maria Baez",
       "Eddie Janko",
@@ -1919,7 +1920,7 @@ const questions = [
     "id": "tv_30991",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 18), Whose public remarks anger police officers by failing to defend them?",
+    "question": "In Blue Bloods, whose public remarks anger police officers by failing to defend them?",
     "answers": [
       "Mayor Margaret Dutton's",
       "Governor Mendez's",
@@ -1955,7 +1956,7 @@ const questions = [
     "id": "tv_30992",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 19), What makes the missing girl's rescue a race against time?",
+    "question": "In Blue Bloods, what makes the missing girl's rescue a race against time?",
     "answers": [
       "She must receive a passport by midnight",
       "She is scheduled to leave the country",
@@ -1991,7 +1992,7 @@ const questions = [
     "id": "tv_30993",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 19), Which partners face scrutiny after a police pursuit?",
+    "question": "In Blue Bloods, which partners face scrutiny after a police pursuit?",
     "answers": [
       "Danny and Baez",
       "Erin and Anthony",
@@ -2027,7 +2028,7 @@ const questions = [
     "id": "tv_30994",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 19), Which former city leader presents Sean with a medal for winning an essay competition?",
+    "question": "In Blue Bloods, which former city leader presents Sean with a medal for winning an essay competition?",
     "answers": [
       "Rudy Giuliani",
       "David Dinkins",
@@ -2063,7 +2064,7 @@ const questions = [
     "id": "tv_30995",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 20), Which imprisoned criminal does Danny approach for information about an escaped fugitive?",
+    "question": "In Blue Bloods, which imprisoned criminal does Danny approach for information about an escaped fugitive?",
     "answers": [
       "Victor Lugo",
       "Chao Lin",
@@ -2099,7 +2100,7 @@ const questions = [
     "id": "tv_30996",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 20), What condition does Victor Lugo impose before he will help police?",
+    "question": "In Blue Bloods, what condition does Victor Lugo impose before he will help police?",
     "answers": [
       "He must be given a permanent police job",
       "He must have his conviction erased",
@@ -2135,7 +2136,7 @@ const questions = [
     "id": "tv_30997",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 20), Which promotion examination does Frank urge Jamie to take?",
+    "question": "In Blue Bloods, which promotion examination does Frank urge Jamie to take?",
     "answers": [
       "The detective entrance test",
       "The police commissioner's exam",
@@ -2171,7 +2172,7 @@ const questions = [
     "id": "tv_30998",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 21), What technology does a company refuse to unlock for the NYPD?",
+    "question": "In Blue Bloods, what technology does a company refuse to unlock for the NYPD?",
     "answers": [
       "An airport's flight computers",
       "A suspected terrorist's phone",
@@ -2207,7 +2208,7 @@ const questions = [
     "id": "tv_30999",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 21), What type of criminal tip leads Erin to enlist Danny and Baez despite doubts about the source?",
+    "question": "In Blue Bloods, what type of criminal tip leads Erin to enlist Danny and Baez despite doubts about the source?",
     "answers": [
       "Warning of an impending murder",
       "A tip about a stolen museum painting",
@@ -2243,7 +2244,7 @@ const questions = [
     "id": "tv_31000",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 21), Whom do Jamie and Eddie search for after a baby is taken?",
+    "question": "In Blue Bloods, whom do Jamie and Eddie search for after a baby is taken?",
     "answers": [
       "A runaway police recruit",
       "A witness who stole a patrol car",
@@ -2279,7 +2280,7 @@ const questions = [
     "id": "tv_31001",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 22), How many wrongfully convicted men are freed before a spate of drive-by murders?",
+    "question": "In Blue Bloods, how many wrongfully convicted men are freed before a spate of drive-by murders?",
     "answers": [
       "Three",
       "Four",
@@ -2315,7 +2316,7 @@ const questions = [
     "id": "tv_31002",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 22), How many years did the innocent men lose in prison?",
+    "question": "In Blue Bloods, how many years did the innocent men lose in prison?",
     "answers": [
       "Five years",
       "Nine years",
@@ -2351,7 +2352,7 @@ const questions = [
     "id": "tv_31003",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 8, Episode 22), Which two police partners announce their engagement in the series finale?",
+    "question": "In Blue Bloods, which two police partners announce their engagement in the series finale?",
     "answers": [
       "Jamie Reagan and Eddie Janko",
       "Danny Reagan and Maria Baez",

@@ -1,4 +1,6 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 533: Blue Bloods (2010–2024), Series 6 (2015–2016).
+// Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
+// Three repeated/trivial questions reworked; Episode 1 now has one question and other episodes gain depth.
 // 66 episode-specific questions spanning all 22 episodes (3 per episode).
 // IDs tv_30806–tv_30871; Pack 532 ended tv_30805.
 // Series 1–6 covered; Series 7–14 remain outstanding.
@@ -13,7 +15,7 @@ const questions = [
     "id": "tv_30806",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 1), following a terrorist attack in which region does Frank raise the city's security alert?",
+    "question": "In Blue Bloods, following a terrorist attack in which region does Frank raise the city's security alert?",
     "answers": [
       "South America",
       "The Middle East",
@@ -49,14 +51,14 @@ const questions = [
     "id": "tv_30807",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 1), which city is thought to face an imminent terrorist threat?",
+    "question": "In Blue Bloods, which officer's estranged father is admitted to hospital while Danny pursues a possible serial killer?",
     "answers": [
-      "New York City",
-      "Boston",
-      "Chicago",
-      "Washington, DC"
+      "Eddie Janko's",
+      "Maria Baez's",
+      "Erin Reagan's",
+      "Jackie Curatola's"
     ],
-    "correctAnswer": "New York City",
+    "correctAnswer": "Eddie Janko's",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -72,27 +74,27 @@ const questions = [
       "Format: Written Quiz",
       "Series: 6",
       "Broadcast year: 2015",
-      "Episode: S06E01",
-      "Episode title: Worst Case Scenario",
-      "Original airdate: 2015-09-25",
-      "Storyline: Potential attack on New York City",
-      "Character: Frank Reagan",
-      "Actor: Tom Selleck",
-      "Answer fact: New York City"
+      "Episode: S06E02",
+      "Episode title: Absolute Power",
+      "Original airdate: 2015-10-02",
+      "Storyline: Eddie's estranged father is hospitalised",
+      "Character: Eddie Janko",
+      "Actor: Vanessa Ray",
+      "Answer fact: Eddie Janko's"
     ]
   },
   {
     "id": "tv_30808",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 1), which Reagan is responsible for the high-alert police response?",
+    "question": "In Blue Bloods, whose murder case does Erin inherit following a hung jury?",
     "answers": [
-      "Jamie Reagan",
-      "Erin Reagan",
-      "Henry Reagan",
-      "Frank Reagan"
+      "ADA Kelly Blake's",
+      "ADA Erin Reagan's",
+      "Detective Maria Baez's",
+      "Investigator Anthony Abetemarco's"
     ],
-    "correctAnswer": "Frank Reagan",
+    "correctAnswer": "ADA Kelly Blake's",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -108,20 +110,20 @@ const questions = [
       "Format: Written Quiz",
       "Series: 6",
       "Broadcast year: 2015",
-      "Episode: S06E01",
-      "Episode title: Worst Case Scenario",
-      "Original airdate: 2015-09-25",
-      "Storyline: Frank puts NYPD on alert",
-      "Character: Frank Reagan",
-      "Actor: Tom Selleck",
-      "Answer fact: Frank Reagan"
+      "Episode: S06E09",
+      "Episode title: Hold Outs",
+      "Original airdate: 2015-11-20",
+      "Storyline: Erin inherits Kelly Blake murder prosecution after hung jury",
+      "Character: Erin Reagan",
+      "Actor: Bridget Moynahan",
+      "Answer fact: ADA Kelly Blake's"
     ]
   },
   {
     "id": "tv_30809",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 2), what sort of murderer do Danny and Baez believe they are pursuing?",
+    "question": "In Blue Bloods, what sort of murderer do Danny and Baez believe they are pursuing?",
     "answers": [
       "An assassin targeting judges",
       "A killer impersonating a taxi driver",
@@ -157,7 +159,7 @@ const questions = [
     "id": "tv_30810",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 2), which judicial position does Erin consider pursuing?",
+    "question": "In Blue Bloods, which judicial position does Erin consider pursuing?",
     "answers": [
       "Police commissioner",
       "A judgeship",
@@ -193,7 +195,7 @@ const questions = [
     "id": "tv_30811",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 2), what does mayoral candidate Katherine Tucker accuse Frank of secretly investigating?",
+    "question": "In Blue Bloods, what does mayoral candidate Katherine Tucker accuse Frank of secretly investigating?",
     "answers": [
       "Her husband",
       "Her campaign manager",
@@ -229,7 +231,7 @@ const questions = [
     "id": "tv_30812",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 3), what is the profession of Lorenzo Colt, who is targeted while accompanying police?",
+    "question": "In Blue Bloods, what is the profession of Lorenzo Colt, who is targeted while accompanying police?",
     "answers": [
       "Criminal barrister",
       "University lecturer",
@@ -265,7 +267,7 @@ const questions = [
     "id": "tv_30813",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 3), whose clothing is Lorenzo Colt wearing when he is targeted?",
+    "question": "In Blue Bloods, whose clothing is Lorenzo Colt wearing when he is targeted?",
     "answers": [
       "Fire-service clothing",
       "Prison officer clothing",
@@ -301,7 +303,7 @@ const questions = [
     "id": "tv_30814",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 3), which police official contemplates accepting a different job?",
+    "question": "In Blue Bloods, which police official contemplates accepting a different job?",
     "answers": [
       "Sid Gormley",
       "Garrett Moore",
@@ -337,7 +339,7 @@ const questions = [
     "id": "tv_30815",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 4), which former informant leaves witness protection to give a mob boss an alibi?",
+    "question": "In Blue Bloods, which former informant leaves witness protection to give a mob boss an alibi?",
     "answers": [
       "Vincent",
       "Jimmy Mosley",
@@ -373,7 +375,7 @@ const questions = [
     "id": "tv_30816",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 4), what defence does the returning informant offer the mob boss?",
+    "question": "In Blue Bloods, what defence does the returning informant offer the mob boss?",
     "answers": [
       "A claim of self-defence",
       "A forged death certificate",
@@ -409,7 +411,7 @@ const questions = [
     "id": "tv_30817",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 4), which city service does commissioner Stan Rourke lead?",
+    "question": "In Blue Bloods, which city service does commissioner Stan Rourke lead?",
     "answers": [
       "The parks department",
       "The sanitation department",
@@ -445,7 +447,7 @@ const questions = [
     "id": "tv_30818",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 5), how many prisoners are on the run when Danny joins the manhunt?",
+    "question": "In Blue Bloods, how many prisoners are on the run when Danny joins the manhunt?",
     "answers": [
       "One",
       "Two",
@@ -481,7 +483,7 @@ const questions = [
     "id": "tv_30819",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 5), why does Danny have a personal interest in one of the escapees?",
+    "question": "In Blue Bloods, why does Danny have a personal interest in one of the escapees?",
     "answers": [
       "He helped wrongfully imprison him",
       "The prisoner is his former partner",
@@ -517,7 +519,7 @@ const questions = [
     "id": "tv_30820",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 5), which NYPD sergeant does Gormley suspect of having an affair with his wife?",
+    "question": "In Blue Bloods, which NYPD sergeant does Gormley suspect of having an affair with his wife?",
     "answers": [
       "William Mulvey",
       "Marcus",
@@ -553,7 +555,7 @@ const questions = [
     "id": "tv_30821",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 6), what conduct is Jamie accused of after a filmed protest encounter?",
+    "question": "In Blue Bloods, what conduct is Jamie accused of after a filmed protest encounter?",
     "answers": [
       "Bribery",
       "Evidence tampering",
@@ -589,7 +591,7 @@ const questions = [
     "id": "tv_30822",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 6), to which departmental investigators does Frank refer the case involving Jamie?",
+    "question": "In Blue Bloods, to which departmental investigators does Frank refer the case involving Jamie?",
     "answers": [
       "The police academy",
       "Internal Affairs",
@@ -625,7 +627,7 @@ const questions = [
     "id": "tv_30823",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 6), what offence do Danny and Baez investigate involving a civil rights attorney?",
+    "question": "In Blue Bloods, what offence do Danny and Baez investigate involving a civil rights attorney?",
     "answers": [
       "Rape",
       "Arson",
@@ -661,7 +663,7 @@ const questions = [
     "id": "tv_30824",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 7), what distinctive item is Danny and Baez investigating the theft of?",
+    "question": "In Blue Bloods, what distinctive item is Danny and Baez investigating the theft of?",
     "answers": [
       "A police helicopter",
       "A priceless violin",
@@ -697,7 +699,7 @@ const questions = [
     "id": "tv_30825",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 7), who owns the stolen classic film car in the case?",
+    "question": "In Blue Bloods, who owns the stolen classic film car in the case?",
     "answers": [
       "Stan Rourke",
       "Vincent",
@@ -733,7 +735,7 @@ const questions = [
     "id": "tv_30826",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 7), why does the acting district attorney order several police officers arrested?",
+    "question": "In Blue Bloods, why does the acting district attorney order several police officers arrested?",
     "answers": [
       "Falsifying medical records",
       "Fixing traffic tickets for friends",
@@ -769,7 +771,7 @@ const questions = [
     "id": "tv_30827",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 8), which serial killer threatens Danny and his family?",
+    "question": "In Blue Bloods, which serial killer threatens Danny and his family?",
     "answers": [
       "Thomas Wilder",
       "Nick Constantine",
@@ -805,7 +807,7 @@ const questions = [
     "id": "tv_30828",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 8), what aspect of Danny's personal life worries Linda as the threats escalate?",
+    "question": "In Blue Bloods, what aspect of Danny's personal life worries Linda as the threats escalate?",
     "answers": [
       "Their mortgage application",
       "Their plans to move abroad",
@@ -841,7 +843,7 @@ const questions = [
     "id": "tv_30829",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 8), which sergeant does Jamie challenge during a hostage situation?",
+    "question": "In Blue Bloods, which sergeant does Jamie challenge during a hostage situation?",
     "answers": [
       "Trey Delgado",
       "Sid Gormley",
@@ -877,7 +879,7 @@ const questions = [
     "id": "tv_30830",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 9), why must Erin take over an existing homicide prosecution?",
+    "question": "In Blue Bloods, why must Erin take over an existing homicide prosecution?",
     "answers": [
       "The accused escapes abroad",
       "The first trial ends with a hung jury",
@@ -913,7 +915,7 @@ const questions = [
     "id": "tv_30831",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 9), which district attorney's investigator helps Erin find a missing witness?",
+    "question": "In Blue Bloods, which district attorney's investigator helps Erin find a missing witness?",
     "answers": [
       "Anthony Abetemarco",
       "Garrett Moore",
@@ -949,7 +951,7 @@ const questions = [
     "id": "tv_30832",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 9), what disguise do Jamie and Eddie use to catch a gang harassing residents?",
+    "question": "In Blue Bloods, what disguise do Jamie and Eddie use to catch a gang harassing residents?",
     "answers": [
       "Tourists",
       "Fire inspectors",
@@ -985,7 +987,7 @@ const questions = [
     "id": "tv_30833",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 10), what misconduct is Danny's former partner accused of in a homicide case?",
+    "question": "In Blue Bloods, what misconduct is Danny's former partner accused of in a homicide case?",
     "answers": [
       "Selling confidential police files",
       "Taking bribes from a witness",
@@ -1021,7 +1023,7 @@ const questions = [
     "id": "tv_30834",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 10), what do anti-government protesters threaten to burn?",
+    "question": "In Blue Bloods, what do anti-government protesters threaten to burn?",
     "answers": [
       "A police vehicle",
       "An American flag",
@@ -1057,7 +1059,7 @@ const questions = [
     "id": "tv_30835",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 10), which constitutional issue must Frank balance against public anger?",
+    "question": "In Blue Bloods, which constitutional issue must Frank balance against public anger?",
     "answers": [
       "Freedom of speech",
       "The right to bear arms",
@@ -1093,7 +1095,7 @@ const questions = [
     "id": "tv_30836",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 11), what does Frank's very first police partner plan to publish?",
+    "question": "In Blue Bloods, what does Frank's very first police partner plan to publish?",
     "answers": [
       "A police pay report",
       "A crime-scene photography exhibition",
@@ -1129,7 +1131,7 @@ const questions = [
     "id": "tv_30837",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 11), why does Frank worry about that proposed publication?",
+    "question": "In Blue Bloods, why does Frank worry about that proposed publication?",
     "answers": [
       "It could reveal sealed jury votes",
       "It would infringe on a film licence",
@@ -1165,7 +1167,7 @@ const questions = [
     "id": "tv_30838",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 11), which pair faces a test of judgement after an officer-assistance call?",
+    "question": "In Blue Bloods, which pair faces a test of judgement after an officer-assistance call?",
     "answers": [
       "Frank and Henry",
       "Jamie and Eddie",
@@ -1201,7 +1203,7 @@ const questions = [
     "id": "tv_30839",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 12), where do Danny and Maria find a mob errand boy after a local gangster is shot?",
+    "question": "In Blue Bloods, where do Danny and Maria find a mob errand boy after a local gangster is shot?",
     "answers": [
       "Tied up in the boot of the victim's car",
       "Locked inside a hotel room",
@@ -1237,7 +1239,7 @@ const questions = [
     "id": "tv_30840",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 12), what number does an officer ask Frank to reassign to honour her father?",
+    "question": "In Blue Bloods, what number does an officer ask Frank to reassign to honour her father?",
     "answers": [
       "A street address",
       "A telephone extension",
@@ -1273,7 +1275,7 @@ const questions = [
     "id": "tv_30841",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 12), whose old shield number makes Frank hesitate?",
+    "question": "In Blue Bloods, whose old shield number makes Frank hesitate?",
     "answers": [
       "His father Henry's",
       "His son Jamie's",
@@ -1309,7 +1311,7 @@ const questions = [
     "id": "tv_30842",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 13), where is a retired NYPD lieutenant accused of shooting would-be muggers?",
+    "question": "In Blue Bloods, where is a retired NYPD lieutenant accused of shooting would-be muggers?",
     "answers": [
       "In a courtroom",
       "On the subway",
@@ -1345,7 +1347,7 @@ const questions = [
     "id": "tv_30843",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 13), what happens to the accused ex-lieutenant after the shooting?",
+    "question": "In Blue Bloods, what happens to the accused ex-lieutenant after the shooting?",
     "answers": [
       "He disappears",
       "He voluntarily joins witness protection",
@@ -1381,7 +1383,7 @@ const questions = [
     "id": "tv_30844",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 13), why is the drug dealer returning to Baez's neighbourhood significant to her?",
+    "question": "In Blue Bloods, why is the drug dealer returning to Baez's neighbourhood significant to her?",
     "answers": [
       "He taught her at school",
       "He once worked with her father",
@@ -1417,7 +1419,7 @@ const questions = [
     "id": "tv_30845",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 14), what complicates the investigation into a man's murder?",
+    "question": "In Blue Bloods, what complicates the investigation into a man's murder?",
     "answers": [
       "The victim is discovered alive",
       "All witnesses have diplomatic immunity",
@@ -1453,7 +1455,7 @@ const questions = [
     "id": "tv_30846",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 14), why is Nicky arrested alongside her friends?",
+    "question": "In Blue Bloods, why is Nicky arrested alongside her friends?",
     "answers": [
       "She refuses to identify a theft suspect",
       "Police find drugs in her car",
@@ -1489,7 +1491,7 @@ const questions = [
     "id": "tv_30847",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 14), what has a local boy been stealing from a church, leading Frank to disagree with a priest?",
+    "question": "In Blue Bloods, what has a local boy been stealing from a church, leading Frank to disagree with a priest?",
     "answers": [
       "Money",
       "Religious paintings",
@@ -1525,7 +1527,7 @@ const questions = [
     "id": "tv_30848",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 15), why does Erin feel responsible when a police officer is killed?",
+    "question": "In Blue Bloods, why does Erin feel responsible when a police officer is killed?",
     "answers": [
       "She ignored a missing officer's report",
       "She accidentally released a prisoner's address",
@@ -1561,7 +1563,7 @@ const questions = [
     "id": "tv_30849",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 15), what appointment do Frank and Mayor Poole clash over?",
+    "question": "In Blue Bloods, what appointment do Frank and Mayor Poole clash over?",
     "answers": [
       "A new police academy principal",
       "A replacement for the district attorney",
@@ -1597,7 +1599,7 @@ const questions = [
     "id": "tv_30850",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 15), what happens to the officer Danny and Maria are seeking in a separate investigation?",
+    "question": "In Blue Bloods, what happens to the officer Danny and Maria are seeking in a separate investigation?",
     "answers": [
       "He is trapped in a mine",
       "He has gone absent without leave",
@@ -1633,7 +1635,7 @@ const questions = [
     "id": "tv_30851",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 16), whose workplace colleague asks for protection from an angry former husband?",
+    "question": "In Blue Bloods, whose workplace colleague asks for protection from an angry former husband?",
     "answers": [
       "Linda Reagan's",
       "Maria Baez's",
@@ -1669,7 +1671,7 @@ const questions = [
     "id": "tv_30852",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 16), what has affected Erin's former mentor's sentencing decisions?",
+    "question": "In Blue Bloods, what has affected Erin's former mentor's sentencing decisions?",
     "answers": [
       "An unexpected promotion",
       "A financial inheritance",
@@ -1705,7 +1707,7 @@ const questions = [
     "id": "tv_30853",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 16), which police strategy does a City Council Speaker publicly condemn?",
+    "question": "In Blue Bloods, which police strategy does a City Council Speaker publicly condemn?",
     "answers": [
       "Undercover infiltration",
       "Neighbourhood foot patrols",
@@ -1741,7 +1743,7 @@ const questions = [
     "id": "tv_30854",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 17), what job does Marcus, the young man Danny and Jamie disagree over, hold?",
+    "question": "In Blue Bloods, what job does Marcus, the young man Danny and Jamie disagree over, hold?",
     "answers": [
       "District attorney's investigator",
       "Rookie NYPD officer",
@@ -1777,7 +1779,7 @@ const questions = [
     "id": "tv_30855",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 17), what connection makes Danny protective of rookie officer Marcus?",
+    "question": "In Blue Bloods, what connection makes Danny protective of rookie officer Marcus?",
     "answers": [
       "Marcus is the son of Danny's friend",
       "Marcus is Frank's godson",
@@ -1813,7 +1815,7 @@ const questions = [
     "id": "tv_30856",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 17), who involves Anthony in a disastrous financial investment?",
+    "question": "In Blue Bloods, who involves Anthony in a disastrous financial investment?",
     "answers": [
       "His brother",
       "His former employer",
@@ -1849,7 +1851,7 @@ const questions = [
     "id": "tv_30857",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 18), what is Nick Constantine's criminal history?",
+    "question": "In Blue Bloods, what is Nick Constantine's criminal history?",
     "answers": [
       "He is an undercover police recruit",
       "He is a fugitive bank manager",
@@ -1885,7 +1887,7 @@ const questions = [
     "id": "tv_30858",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 18), which Reagan was responsible for imprisoning Nick Constantine years earlier?",
+    "question": "In Blue Bloods, which Reagan was responsible for imprisoning Nick Constantine years earlier?",
     "answers": [
       "Jamie Reagan",
       "Frank Reagan",
@@ -1921,7 +1923,7 @@ const questions = [
     "id": "tv_30859",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 18), why is Erin's former prosecutor withholding a murder suspect's location?",
+    "question": "In Blue Bloods, why is Erin's former prosecutor withholding a murder suspect's location?",
     "answers": [
       "She wants to interview the suspect on her podcast",
       "She has promised him a political pardon",
@@ -1957,7 +1959,7 @@ const questions = [
     "id": "tv_30860",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 19), which detective partners with Danny and Baez on a robbery spree?",
+    "question": "In Blue Bloods, which detective partners with Danny and Baez on a robbery spree?",
     "answers": [
       "Stan Rourke",
       "Vincent",
@@ -1993,7 +1995,7 @@ const questions = [
     "id": "tv_30861",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 19), what history does Jimmy Mosley have with Maria Baez?",
+    "question": "In Blue Bloods, what history does Jimmy Mosley have with Maria Baez?",
     "answers": [
       "He was her school headteacher",
       "He trained her as a recruit",
@@ -2029,7 +2031,7 @@ const questions = [
     "id": "tv_30862",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 19), what controversial career step does Frank consider for an officer acquitted over a boy's death?",
+    "question": "In Blue Bloods, what controversial career step does Frank consider for an officer acquitted over a boy's death?",
     "answers": [
       "A transfer overseas",
       "A promotion",
@@ -2065,7 +2067,7 @@ const questions = [
     "id": "tv_30863",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 20), which recurring serial murderer taunts Danny through his latest victim?",
+    "question": "In Blue Bloods, which recurring serial murderer taunts Danny through his latest victim?",
     "answers": [
       "Thomas Wilder",
       "Nick Constantine",
@@ -2101,7 +2103,7 @@ const questions = [
     "id": "tv_30864",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 20), where does Thomas Wilder leave his message to Danny?",
+    "question": "In Blue Bloods, where does Thomas Wilder leave his message to Danny?",
     "answers": [
       "In the police commissioner's office",
       "Inside Erin's court papers",
@@ -2137,7 +2139,7 @@ const questions = [
     "id": "tv_30865",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 20), which actor portrays Thomas Wilder in this storyline?",
+    "question": "In Blue Bloods, which actor portrays Thomas Wilder in this storyline?",
     "answers": [
       "Michael Nouri",
       "Johnathon Schaech",
@@ -2173,7 +2175,7 @@ const questions = [
     "id": "tv_30866",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 21), why does a key eyewitness disappear before a murder trial?",
+    "question": "In Blue Bloods, why does a key eyewitness disappear before a murder trial?",
     "answers": [
       "A planned holiday",
       "Fear of retaliation",
@@ -2209,14 +2211,14 @@ const questions = [
     "id": "tv_30867",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 21), which district attorney's investigator joins Erin in hunting for the absent witness?",
+    "question": "In Blue Bloods, what separate crime do Danny and Baez review while Erin and Anthony seek a frightened trial witness?",
     "answers": [
-      "Anthony Abetemarco",
-      "Garrett Moore",
-      "Jimmy Mosley",
-      "Sid Gormley"
+      "A suspicious convenience-store robbery",
+      "A string of stolen police cars",
+      "A missing painting from a gallery",
+      "A robbery at a jewellery auction"
     ],
-    "correctAnswer": "Anthony Abetemarco",
+    "correctAnswer": "A suspicious convenience-store robbery",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -2235,17 +2237,17 @@ const questions = [
       "Episode: S06E21",
       "Episode title: The Extra Mile",
       "Original airdate: 2016-04-29",
-      "Storyline: Erin and Anthony seek missing witness",
-      "Character: Anthony Abetemarco",
-      "Actor: Steve Schirripa",
-      "Answer fact: Anthony Abetemarco"
+      "Storyline: Danny and Baez revisit suspicious convenience store robbery",
+      "Character: Danny Reagan",
+      "Actor: Donnie Wahlberg",
+      "Answer fact: A suspicious convenience-store robbery"
     ]
   },
   {
     "id": "tv_30868",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 21), which social event does Garrett urge Frank to attend?",
+    "question": "In Blue Bloods, which social event does Garrett urge Frank to attend?",
     "answers": [
       "A charity film premiere",
       "A mayoral wedding",
@@ -2281,7 +2283,7 @@ const questions = [
     "id": "tv_30869",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 22), what decision by a grand jury triggers public outrage?",
+    "question": "In Blue Bloods, what decision by a grand jury triggers public outrage?",
     "answers": [
       "Acquitting a convicted bank robber",
       "Charging Frank with corruption",
@@ -2317,7 +2319,7 @@ const questions = [
     "id": "tv_30870",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 22), how does the controversial shooting become widely known?",
+    "question": "In Blue Bloods, how does the controversial shooting become widely known?",
     "answers": [
       "A police memoir describes it",
       "It was captured on video",
@@ -2353,7 +2355,7 @@ const questions = [
     "id": "tv_30871",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 6, Episode 22), what apparent retaliatory incident sends Danny and Maria hunting for a suspect?",
+    "question": "In Blue Bloods, what apparent retaliatory incident sends Danny and Maria hunting for a suspect?",
     "answers": [
       "The shooting of a police officer",
       "An arson attack on a school",

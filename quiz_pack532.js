@@ -1,4 +1,5 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 532: Blue Bloods (2010–2024), Series 5 (2014–2015).
+// Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
 // 66 episode-specific questions spanning all 22 episodes (3 per episode).
 // IDs tv_30740–tv_30805; Pack 531 ends tv_30739.
 // Series 1–5 covered. Series 6–14 still outstanding.
@@ -12,7 +13,7 @@ const questions = [
     "id": "tv_30740",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 1), what is the destination of the seized drugs being transported by Danny and Maria?",
+    "question": "In Blue Bloods, what is the destination of the seized drugs being transported by Danny and Maria?",
     "answers": [
       "An evidence warehouse in Manhattan",
       "A remote incineration site",
@@ -48,7 +49,7 @@ const questions = [
     "id": "tv_30741",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 1), who is seriously injured when the drug convoy is attacked?",
+    "question": "In Blue Bloods, who is seriously injured when the drug convoy is attacked?",
     "answers": [
       "Maria Baez",
       "Erin Reagan",
@@ -84,7 +85,7 @@ const questions = [
     "id": "tv_30742",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 1), what criminal organisation does Danny pursue after the convoy assault?",
+    "question": "In Blue Bloods, what criminal organisation does Danny pursue after the convoy assault?",
     "answers": [
       "An art theft syndicate",
       "A counterfeit currency gang",
@@ -120,7 +121,7 @@ const questions = [
     "id": "tv_30743",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 2), why is a police officer being shunned by her colleagues?",
+    "question": "In Blue Bloods, why is a police officer being shunned by her colleagues?",
     "answers": [
       "She left a witness alone",
       "She refused to attend firearms training",
@@ -156,7 +157,7 @@ const questions = [
     "id": "tv_30744",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 2), what does Jamie volunteer to do in support of the ostracised officer?",
+    "question": "In Blue Bloods, what does Jamie volunteer to do in support of the ostracised officer?",
     "answers": [
       "Represent her in court",
       "Ride with her for a week",
@@ -192,7 +193,7 @@ const questions = [
     "id": "tv_30745",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 2), what new development brings Danny and Erin into conflict over an earlier case?",
+    "question": "In Blue Bloods, what new development brings Danny and Erin into conflict over an earlier case?",
     "answers": [
       "A settled case becomes a homicide",
       "A defendant is elected to office",
@@ -228,7 +229,7 @@ const questions = [
     "id": "tv_30746",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 3), what leads to Danny and Baez being temporarily separated as partners?",
+    "question": "In Blue Bloods, what leads to Danny and Baez being temporarily separated as partners?",
     "answers": [
       "Danny is appointed commissioner",
       "Baez takes a permanent overseas assignment",
@@ -264,7 +265,7 @@ const questions = [
     "id": "tv_30747",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 3), what do Jamie and Eddie want to take from an arrogant detective?",
+    "question": "In Blue Bloods, what do Jamie and Eddie want to take from an arrogant detective?",
     "answers": [
       "His patrol vehicle",
       "A police award",
@@ -300,7 +301,7 @@ const questions = [
     "id": "tv_30748",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 3), which religious institution is upset when Frank speaks about equality in the force?",
+    "question": "In Blue Bloods, which religious institution is upset when Frank speaks about equality in the force?",
     "answers": [
       "A synagogue council",
       "The Archdiocese",
@@ -336,7 +337,7 @@ const questions = [
     "id": "tv_30749",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 4), what allegation against Danny puts Frank in a difficult position?",
+    "question": "In Blue Bloods, what allegation against Danny puts Frank in a difficult position?",
     "answers": [
       "Using excessive force",
       "Tampering with a jury",
@@ -372,7 +373,7 @@ const questions = [
     "id": "tv_30750",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 4), what dilemma does Frank face after the allegation against his son?",
+    "question": "In Blue Bloods, what dilemma does Frank face after the allegation against his son?",
     "answers": [
       "Whether to retire or stand for mayor",
       "Whether to join the district attorney's office",
@@ -408,7 +409,7 @@ const questions = [
     "id": "tv_30751",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 4), who attracts Jamie's romantic interest after he brings a homeless man to hospital?",
+    "question": "In Blue Bloods, who attracts Jamie's romantic interest after he brings a homeless man to hospital?",
     "answers": [
       "A reporter",
       "A prosecutor",
@@ -444,7 +445,7 @@ const questions = [
     "id": "tv_30752",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 5), why does a violent man seek revenge against Jamie?",
+    "question": "In Blue Bloods, why does a violent man seek revenge against Jamie?",
     "answers": [
       "Jamie reported him for illegal parking",
       "Jamie intervened in his abusive relationship",
@@ -480,7 +481,7 @@ const questions = [
     "id": "tv_30753",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 5), whose offensive remarks are illegally recorded and leaked?",
+    "question": "In Blue Bloods, whose offensive remarks are illegally recorded and leaked?",
     "answers": [
       "Henry Reagan's",
       "Eddie Janko's",
@@ -516,7 +517,7 @@ const questions = [
     "id": "tv_30754",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 5), what must Frank manage after the recording becomes public?",
+    "question": "In Blue Bloods, what must Frank manage after the recording becomes public?",
     "answers": [
       "A citywide transport strike",
       "A judicial recount",
@@ -552,7 +553,7 @@ const questions = [
     "id": "tv_30755",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 6), what distinguishes the criminal Frank and Danny want convicted?",
+    "question": "In Blue Bloods, what distinguishes the criminal Frank and Danny want convicted?",
     "answers": [
       "He is a bank clerk accused of forgery",
       "He is a journalist who refuses to reveal a source",
@@ -588,7 +589,7 @@ const questions = [
     "id": "tv_30756",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 6), what is the central obstacle to prosecuting the international suspect?",
+    "question": "In Blue Bloods, what is the central obstacle to prosecuting the international suspect?",
     "answers": [
       "Getting a valid marriage certificate",
       "Finding sufficient evidence for a conviction",
@@ -624,7 +625,7 @@ const questions = [
     "id": "tv_30757",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 6), what family expense leads Erin to consider private legal practice?",
+    "question": "In Blue Bloods, what family expense leads Erin to consider private legal practice?",
     "answers": [
       "Nicky's college fees",
       "Henry's hospital fees",
@@ -660,7 +661,7 @@ const questions = [
     "id": "tv_30758",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 7), during what kind of media appearance is Frank surprised by disagreement with the interim district attorney?",
+    "question": "In Blue Bloods, during what kind of media appearance is Frank surprised by disagreement with the interim district attorney?",
     "answers": [
       "A newspaper photo shoot",
       "A police recruitment podcast",
@@ -696,7 +697,7 @@ const questions = [
     "id": "tv_30759",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 7), who rides with Danny and clashes with his methods?",
+    "question": "In Blue Bloods, who rides with Danny and clashes with his methods?",
     "answers": [
       "A visiting foreign ambassador",
       "His father Henry",
@@ -732,7 +733,7 @@ const questions = [
     "id": "tv_30760",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 7), what kind of attack are Danny and his supervisor investigating?",
+    "question": "In Blue Bloods, what kind of attack are Danny and his supervisor investigating?",
     "answers": [
       "A train bombing",
       "A drive-by shooting",
@@ -768,7 +769,7 @@ const questions = [
     "id": "tv_30761",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 8), what malfunction creates a public controversy for Frank?",
+    "question": "In Blue Bloods, what malfunction creates a public controversy for Frank?",
     "answers": [
       "An officer's body camera fails",
       "The police radio network crashes",
@@ -804,7 +805,7 @@ const questions = [
     "id": "tv_30762",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 8), which US agency declines to protect Danny and Maria's informant?",
+    "question": "In Blue Bloods, which US agency declines to protect Danny and Maria's informant?",
     "answers": [
       "The Secret Service",
       "The Coast Guard",
@@ -840,7 +841,7 @@ const questions = [
     "id": "tv_30763",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 8), what allegation does Erin examine concerning her old friend's daughter?",
+    "question": "In Blue Bloods, what allegation does Erin examine concerning her old friend's daughter?",
     "answers": [
       "An art theft at a college gallery",
       "Bribery during a school election",
@@ -876,7 +877,7 @@ const questions = [
     "id": "tv_30764",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 9), how many prominent local leaders are killed in the suspected hate-crime cases?",
+    "question": "In Blue Bloods, how many prominent local leaders are killed in the suspected hate-crime cases?",
     "answers": [
       "One",
       "Three",
@@ -912,7 +913,7 @@ const questions = [
     "id": "tv_30765",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 9), what motive do Danny and Maria initially consider in these murders?",
+    "question": "In Blue Bloods, what motive do Danny and Maria initially consider in these murders?",
     "answers": [
       "Hate crimes",
       "Insurance fraud",
@@ -948,7 +949,7 @@ const questions = [
     "id": "tv_30766",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 9), what does Linda want to do after being mugged?",
+    "question": "In Blue Bloods, what does Linda want to do after being mugged?",
     "answers": [
       "Join the police academy",
       "Leave New York",
@@ -984,7 +985,7 @@ const questions = [
     "id": "tv_30767",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 10), whose old police colleague was killed by the suspect Frank now wants to prosecute?",
+    "question": "In Blue Bloods, whose old police colleague was killed by the suspect Frank now wants to prosecute?",
     "answers": [
       "Eddie Janko's",
       "Maria Baez's",
@@ -1020,7 +1021,7 @@ const questions = [
     "id": "tv_30768",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 10), what does Frank seek against the long-suspected police killer?",
+    "question": "In Blue Bloods, what does Frank seek against the long-suspected police killer?",
     "answers": [
       "A contract to become a police adviser",
       "Evidence to support criminal charges",
@@ -1056,7 +1057,7 @@ const questions = [
     "id": "tv_30769",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 10), among which group of performers do Danny and Baez investigate multiple murders?",
+    "question": "In Blue Bloods, among which group of performers do Danny and Baez investigate multiple murders?",
     "answers": [
       "Adult film stars",
       "Circus performers",
@@ -1092,7 +1093,7 @@ const questions = [
     "id": "tv_30770",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 11), what is unusual about the people Danny discovers behind a robbery?",
+    "question": "In Blue Bloods, what is unusual about the people Danny discovers behind a robbery?",
     "answers": [
       "They are police academy instructors",
       "They are university lecturers",
@@ -1128,7 +1129,7 @@ const questions = [
     "id": "tv_30771",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 11), what explains an apparent bomb scare in the subway?",
+    "question": "In Blue Bloods, what explains an apparent bomb scare in the subway?",
     "answers": [
       "An abandoned fire-service drill",
       "A subway maintenance exercise",
@@ -1164,7 +1165,7 @@ const questions = [
     "id": "tv_30772",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 11), which pair disagree over how to respond to the subway incident?",
+    "question": "In Blue Bloods, which pair disagree over how to respond to the subway incident?",
     "answers": [
       "Erin and Nicky",
       "Garrett and Gormley",
@@ -1200,7 +1201,7 @@ const questions = [
     "id": "tv_30773",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 12), who first brings a homeless teenager's allegation to Danny?",
+    "question": "In Blue Bloods, who first brings a homeless teenager's allegation to Danny?",
     "answers": [
       "Jamie Reagan",
       "Erin Reagan",
@@ -1236,7 +1237,7 @@ const questions = [
     "id": "tv_30774",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 12), whom does the teenager accuse of killing his aunt?",
+    "question": "In Blue Bloods, whom does the teenager accuse of killing his aunt?",
     "answers": [
       "A police officer",
       "A school headteacher",
@@ -1272,7 +1273,7 @@ const questions = [
     "id": "tv_30775",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 12), who replaces Erin as prosecutor in the corrections-officer case?",
+    "question": "In Blue Bloods, who replaces Erin as prosecutor in the corrections-officer case?",
     "answers": [
       "Frank Reagan",
       "Garrett Moore",
@@ -1308,7 +1309,7 @@ const questions = [
     "id": "tv_30776",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 13), what does a householder discover about the intruder he shoots?",
+    "question": "In Blue Bloods, what does a householder discover about the intruder he shoots?",
     "answers": [
       "The intruder is an undercover tax inspector",
       "The intruder is a hitman",
@@ -1344,7 +1345,7 @@ const questions = [
     "id": "tv_30777",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 13), who investigates the shooting that exposes a murder-for-hire plot?",
+    "question": "In Blue Bloods, who investigates the shooting that exposes a murder-for-hire plot?",
     "answers": [
       "Danny and Maria",
       "Jamie and Eddie",
@@ -1380,7 +1381,7 @@ const questions = [
     "id": "tv_30778",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 13), how long ago did Erin secure the conviction now challenged by the convicted woman's son?",
+    "question": "In Blue Bloods, how long ago did Erin secure the conviction now challenged by the convicted woman's son?",
     "answers": [
       "Three years",
       "Seven years",
@@ -1416,7 +1417,7 @@ const questions = [
     "id": "tv_30779",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 14), where does the murder victim live in the housing-related case?",
+    "question": "In Blue Bloods, where does the murder victim live in the housing-related case?",
     "answers": [
       "A university dormitory",
       "A motel beside an airport",
@@ -1452,7 +1453,7 @@ const questions = [
     "id": "tv_30780",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 14), what proportion of homes in the luxury building are set aside as affordable units?",
+    "question": "In Blue Bloods, what proportion of homes in the luxury building are set aside as affordable units?",
     "answers": [
       "Five per cent",
       "Twenty per cent",
@@ -1488,7 +1489,7 @@ const questions = [
     "id": "tv_30781",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 14), what concerns Frank about a detective acquainted with Gormley?",
+    "question": "In Blue Bloods, what concerns Frank about a detective acquainted with Gormley?",
     "answers": [
       "He exploits legal loopholes for personal advantage",
       "He has never completed his firearms qualification",
@@ -1524,7 +1525,7 @@ const questions = [
     "id": "tv_30782",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 15), why is a protected mob informant brought back to New York?",
+    "question": "In Blue Bloods, why is a protected mob informant brought back to New York?",
     "answers": [
       "A judge orders a police recruitment ceremony",
       "A missing painting turns up overseas",
@@ -1560,7 +1561,7 @@ const questions = [
     "id": "tv_30783",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 15), which detectives help Erin protect the returning informant?",
+    "question": "In Blue Bloods, which detectives help Erin protect the returning informant?",
     "answers": [
       "Jamie and Eddie",
       "Frank and Henry",
@@ -1596,7 +1597,7 @@ const questions = [
     "id": "tv_30784",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 15), what subject causes tense discussions between Frank and Mayor Poole?",
+    "question": "In Blue Bloods, what subject causes tense discussions between Frank and Mayor Poole?",
     "answers": [
       "School exam reforms",
       "Police officer benefits",
@@ -1632,7 +1633,7 @@ const questions = [
     "id": "tv_30785",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 16), who is held at gunpoint in a police interrogation room?",
+    "question": "In Blue Bloods, who is held at gunpoint in a police interrogation room?",
     "answers": [
       "Maria Baez",
       "Linda Reagan",
@@ -1668,7 +1669,7 @@ const questions = [
     "id": "tv_30786",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 16), what document had Maria served on the man before he took her hostage?",
+    "question": "In Blue Bloods, what document had Maria served on the man before he took her hostage?",
     "answers": [
       "A search warrant",
       "A parking summons",
@@ -1704,7 +1705,7 @@ const questions = [
     "id": "tv_30787",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 16), whose legal troubles create a moral dilemma when he asks Frank for a favour?",
+    "question": "In Blue Bloods, whose legal troubles create a moral dilemma when he asks Frank for a favour?",
     "answers": [
       "Henry's brother",
       "Nicky's teacher",
@@ -1740,7 +1741,7 @@ const questions = [
     "id": "tv_30788",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 17), where does an unknown attacker break into Erin's home?",
+    "question": "In Blue Bloods, where does an unknown attacker break into Erin's home?",
     "answers": [
       "A country cottage",
       "Her apartment",
@@ -1776,7 +1777,7 @@ const questions = [
     "id": "tv_30789",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 17), what dangerous device do Jamie and Eddie find in an elderly woman's home?",
+    "question": "In Blue Bloods, what dangerous device do Jamie and Eddie find in an elderly woman's home?",
     "answers": [
       "A pipe bomb",
       "A gas cylinder fitted to a timer",
@@ -1812,7 +1813,7 @@ const questions = [
     "id": "tv_30790",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 17), what organisation is being named in a charity fundraising appeal Frank investigates?",
+    "question": "In Blue Bloods, what organisation is being named in a charity fundraising appeal Frank investigates?",
     "answers": [
       "The city fire brigade",
       "A local hospital",
@@ -1848,7 +1849,7 @@ const questions = [
     "id": "tv_30791",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 18), what is Eddie's undercover assignment designed to expose?",
+    "question": "In Blue Bloods, what is Eddie's undercover assignment designed to expose?",
     "answers": [
       "A counterfeit art dealer",
       "A crooked college admissions office",
@@ -1884,7 +1885,7 @@ const questions = [
     "id": "tv_30792",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 18), how does the ring lure young female victims?",
+    "question": "In Blue Bloods, how does the ring lure young female victims?",
     "answers": [
       "Advertisements for court clerkships",
       "Fake youth hostel websites",
@@ -1920,7 +1921,7 @@ const questions = [
     "id": "tv_30793",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 18), whom does Frank help a woman from his early career to meet?",
+    "question": "In Blue Bloods, whom does Frank help a woman from his early career to meet?",
     "answers": [
       "The inmate who murdered her family",
       "Her estranged schoolteacher",
@@ -1956,7 +1957,7 @@ const questions = [
     "id": "tv_30794",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 19), what does a reporter refuse to disclose after an informant admits to murder?",
+    "question": "In Blue Bloods, what does a reporter refuse to disclose after an informant admits to murder?",
     "answers": [
       "The broadcast schedule",
       "Her employment history",
@@ -1992,7 +1993,7 @@ const questions = [
     "id": "tv_30795",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 19), which senior Reagan challenges the investigative reporter's refusal?",
+    "question": "In Blue Bloods, which senior Reagan challenges the investigative reporter's refusal?",
     "answers": [
       "Henry Reagan",
       "Jamie Reagan",
@@ -2028,7 +2029,7 @@ const questions = [
     "id": "tv_30796",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 19), who is Danny paired with through an NYPD youth outreach scheme?",
+    "question": "In Blue Bloods, who is Danny paired with through an NYPD youth outreach scheme?",
     "answers": [
       "A retired police inspector",
       "A troubled teenager",
@@ -2064,7 +2065,7 @@ const questions = [
     "id": "tv_30797",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 20), who is murdered inside his own restaurant?",
+    "question": "In Blue Bloods, who is murdered inside his own restaurant?",
     "answers": [
       "A reality television celebrity chef",
       "A nightclub singer",
@@ -2100,7 +2101,7 @@ const questions = [
     "id": "tv_30798",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 20), why do Danny and Maria doubt a suspect's unsolicited murder confession?",
+    "question": "In Blue Bloods, why do Danny and Maria doubt a suspect's unsolicited murder confession?",
     "answers": [
       "He is unable to speak English",
       "The crime took place in another country",
@@ -2136,7 +2137,7 @@ const questions = [
     "id": "tv_30799",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 20), what offence does Senator Ted McCreary ask Frank to make disappear?",
+    "question": "In Blue Bloods, what offence does Senator Ted McCreary ask Frank to make disappear?",
     "answers": [
       "Tax evasion",
       "Shoplifting",
@@ -2172,7 +2173,7 @@ const questions = [
     "id": "tv_30800",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 21), what causes Frank to order a citywide effort to find a killer?",
+    "question": "In Blue Bloods, what causes Frank to order a citywide effort to find a killer?",
     "answers": [
       "A museum is robbed during a blackout",
       "Someone close to him is assassinated",
@@ -2208,7 +2209,7 @@ const questions = [
     "id": "tv_30801",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 21), which gang figure do Danny and Maria visit during the investigation?",
+    "question": "In Blue Bloods, which gang figure do Danny and Maria visit during the investigation?",
     "answers": [
       "Mario Hunt",
       "Angelo Gallo",
@@ -2244,7 +2245,7 @@ const questions = [
     "id": "tv_30802",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 21), what kind of criminal organisation is Mario Hunt associated with?",
+    "question": "In Blue Bloods, what kind of criminal organisation is Mario Hunt associated with?",
     "answers": [
       "A corporate insider-trading ring",
       "An art-forgery group",
@@ -2280,7 +2281,7 @@ const questions = [
     "id": "tv_30803",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 22), which Reagan family member is shot during the season finale?",
+    "question": "In Blue Bloods, which Reagan family member is shot during the season finale?",
     "answers": [
       "Erin Reagan",
       "Jamie Reagan",
@@ -2316,7 +2317,7 @@ const questions = [
     "id": "tv_30804",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 22), what must Danny control while pursuing the gunman?",
+    "question": "In Blue Bloods, what must Danny control while pursuing the gunman?",
     "answers": [
       "The police training budget",
       "His own emotions",
@@ -2352,7 +2353,7 @@ const questions = [
     "id": "tv_30805",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 5, Episode 22), what obstacle forces Danny to find an inventive approach to the investigation?",
+    "question": "In Blue Bloods, what obstacle forces Danny to find an inventive approach to the investigation?",
     "answers": [
       "Persuading witnesses to come forward",
       "Recovering a missing police cruiser",

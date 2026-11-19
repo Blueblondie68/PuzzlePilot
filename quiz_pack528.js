@@ -1,4 +1,5 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 528: Blue Bloods (2010–2024), Series 1 (2010–2011).
+// Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
 // 66 episode-specific questions, three per each of 22 episodes; IDs tv_30473–tv_30538.
 // Follows Pack 527 ending tv_30472. Series 2–14 remain outstanding.
 // Source episode synopses and airdates:
@@ -12,7 +13,7 @@ const questions = [
     "id": "tv_30473",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 1), what type of serious crime is Danny investigating when the series begins?",
+    "question": "In Blue Bloods, what type of serious crime is Danny investigating when the series begins?",
     "answers": [
       "The theft of diamonds",
       "The kidnapping of a young girl",
@@ -48,7 +49,7 @@ const questions = [
     "id": "tv_30474",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 1), what training milestone does Jamie complete before joining the NYPD?",
+    "question": "In Blue Bloods, what training milestone does Jamie complete before joining the NYPD?",
     "answers": [
       "He graduates from the police academy",
       "He passes the bar exam",
@@ -84,7 +85,7 @@ const questions = [
     "id": "tv_30475",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 1), which member of the Reagan family is New York City's police commissioner?",
+    "question": "In Blue Bloods, which member of the Reagan family is New York City's police commissioner?",
     "answers": [
       "Henry Reagan",
       "Danny Reagan",
@@ -120,7 +121,7 @@ const questions = [
     "id": "tv_30476",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 2), where does the main criminal incident involving a vigilante take place?",
+    "question": "In Blue Bloods, where does the main criminal incident involving a vigilante take place?",
     "answers": [
       "At a nightclub",
       "In a hotel",
@@ -156,7 +157,7 @@ const questions = [
     "id": "tv_30477",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 2), what is notable about the person who intervenes against a violent offender?",
+    "question": "In Blue Bloods, what is notable about the person who intervenes against a violent offender?",
     "answers": [
       "He is a serving judge",
       "He has a police record",
@@ -192,7 +193,7 @@ const questions = [
     "id": "tv_30478",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 2), which ethical issue does the Reagan family debate?",
+    "question": "In Blue Bloods, which ethical issue does the Reagan family debate?",
     "answers": [
       "Whether vigilantism is justified",
       "Whether police should strike",
@@ -228,7 +229,7 @@ const questions = [
     "id": "tv_30479",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 3), what kind of criminal case is complicated by diplomatic immunity?",
+    "question": "In Blue Bloods, what kind of criminal case is complicated by diplomatic immunity?",
     "answers": [
       "A jewellery robbery",
       "A kidnapping case",
@@ -264,7 +265,7 @@ const questions = [
     "id": "tv_30480",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 3), what legal protection shields the main suspect from prosecution?",
+    "question": "In Blue Bloods, what legal protection shields the main suspect from prosecution?",
     "answers": [
       "Parliamentary privilege",
       "Witness anonymity",
@@ -300,7 +301,7 @@ const questions = [
     "id": "tv_30481",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 3), which three Reagans work together to seek justice in the case?",
+    "question": "In Blue Bloods, which three Reagans work together to seek justice in the case?",
     "answers": [
       "Jamie, Henry and Linda",
       "Erin, Frank and Danny",
@@ -336,7 +337,7 @@ const questions = [
     "id": "tv_30482",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 4), what is stolen during the robbery in which an officer is killed?",
+    "question": "In Blue Bloods, what is stolen during the robbery in which an officer is killed?",
     "answers": [
       "Diamonds",
       "Gold bullion",
@@ -372,7 +373,7 @@ const questions = [
     "id": "tv_30483",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 4), what is the duty status of the police officer killed during the robbery?",
+    "question": "In Blue Bloods, what is the duty status of the police officer killed during the robbery?",
     "answers": [
       "Undercover",
       "Recently retired",
@@ -408,7 +409,7 @@ const questions = [
     "id": "tv_30484",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 4), who mobilises the whole NYPD to look for the officer's killer?",
+    "question": "In Blue Bloods, who mobilises the whole NYPD to look for the officer's killer?",
     "answers": [
       "Jamie Reagan",
       "Nicky Reagan-Boyle",
@@ -444,7 +445,7 @@ const questions = [
     "id": "tv_30485",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 5), what urgent threat sends Frank and the NYPD searching Manhattan?",
+    "question": "In Blue Bloods, what urgent threat sends Frank and the NYPD searching Manhattan?",
     "answers": [
       "A stolen police helicopter",
       "A bomb about to detonate",
@@ -480,7 +481,7 @@ const questions = [
     "id": "tv_30486",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 5), which police practice divides the Reagans during the investigation?",
+    "question": "In Blue Bloods, which police practice divides the Reagans during the investigation?",
     "answers": [
       "Profiling",
       "Undercover surveillance",
@@ -516,7 +517,7 @@ const questions = [
     "id": "tv_30487",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 5), in which borough is the explosive device feared to be?",
+    "question": "In Blue Bloods, in which borough is the explosive device feared to be?",
     "answers": [
       "Brooklyn",
       "Queens",
@@ -552,7 +553,7 @@ const questions = [
     "id": "tv_30488",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 6), what causes the deaths of three teenagers under investigation?",
+    "question": "In Blue Bloods, what causes the deaths of three teenagers under investigation?",
     "answers": [
       "Carbon monoxide poisoning",
       "A road accident",
@@ -588,7 +589,7 @@ const questions = [
     "id": "tv_30489",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 6), how many teenagers have died before Danny traces the deadly narcotic?",
+    "question": "In Blue Bloods, how many teenagers have died before Danny traces the deadly narcotic?",
     "answers": [
       "Two",
       "Three",
@@ -624,7 +625,7 @@ const questions = [
     "id": "tv_30490",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 6), what does Danny seek to identify during the investigation?",
+    "question": "In Blue Bloods, what does Danny seek to identify during the investigation?",
     "answers": [
       "The source of a deadly drug",
       "A missing diamond necklace",
@@ -660,7 +661,7 @@ const questions = [
     "id": "tv_30491",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 7), which member of the Reagan family tries to bring down a gang leader?",
+    "question": "In Blue Bloods, which member of the Reagan family tries to bring down a gang leader?",
     "answers": [
       "Linda Reagan",
       "Jamie Reagan",
@@ -696,7 +697,7 @@ const questions = [
     "id": "tv_30492",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 7), whom does Erin propose using to put pressure on the gang leader?",
+    "question": "In Blue Bloods, whom does Erin propose using to put pressure on the gang leader?",
     "answers": [
       "His landlord",
       "His accountant",
@@ -732,7 +733,7 @@ const questions = [
     "id": "tv_30493",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 7), why does Erin's plan cause an argument within the Reagan family?",
+    "question": "In Blue Bloods, why does Erin's plan cause an argument within the Reagan family?",
     "answers": [
       "It requires a police pay rise",
       "It uses an innocent relative as bait",
@@ -768,7 +769,7 @@ const questions = [
     "id": "tv_30494",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 8), which young Reagan witnesses a crime in progress in Chinatown?",
+    "question": "In Blue Bloods, which young Reagan witnesses a crime in progress in Chinatown?",
     "answers": [
       "Jamie Reagan",
       "Danny Reagan",
@@ -804,7 +805,7 @@ const questions = [
     "id": "tv_30495",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 8), what happens to the suspect while Jamie is pursuing him?",
+    "question": "In Blue Bloods, what happens to the suspect while Jamie is pursuing him?",
     "answers": [
       "He wins an election",
       "He escapes to Canada",
@@ -840,7 +841,7 @@ const questions = [
     "id": "tv_30496",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 8), what internal police process does Danny try to help Jamie avoid?",
+    "question": "In Blue Bloods, what internal police process does Danny try to help Jamie avoid?",
     "answers": [
       "A police entrance exam",
       "A promotion board",
@@ -876,7 +877,7 @@ const questions = [
     "id": "tv_30497",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 9), how many dangerous criminals are released from prison, starting the episode's threat?",
+    "question": "In Blue Bloods, how many dangerous criminals are released from prison, starting the episode's threat?",
     "answers": [
       "One",
       "Three",
@@ -912,7 +913,7 @@ const questions = [
     "id": "tv_30498",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 9), which Reagan's life is threatened by the released criminals?",
+    "question": "In Blue Bloods, which Reagan's life is threatened by the released criminals?",
     "answers": [
       "Erin Reagan",
       "Henry Reagan",
@@ -948,7 +949,7 @@ const questions = [
     "id": "tv_30499",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 9), what is the common starting point of the criminals causing the danger?",
+    "question": "In Blue Bloods, what is the common starting point of the criminals causing the danger?",
     "answers": [
       "Escape from a hospital",
       "Return from overseas service",
@@ -984,7 +985,7 @@ const questions = [
     "id": "tv_30500",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 10), what is the murder victim's job at the beginning of the investigation?",
+    "question": "In Blue Bloods, what is the murder victim's job at the beginning of the investigation?",
     "answers": [
       "Bank cashier",
       "Schoolteacher",
@@ -1020,7 +1021,7 @@ const questions = [
     "id": "tv_30501",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 10), which part of New York's nightlife does Danny revisit?",
+    "question": "In Blue Bloods, which part of New York's nightlife does Danny revisit?",
     "answers": [
       "Broadway musicals",
       "The nightclub scene",
@@ -1056,7 +1057,7 @@ const questions = [
     "id": "tv_30502",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 10), whose professional future does Frank have to decide?",
+    "question": "In Blue Bloods, whose professional future does Frank have to decide?",
     "answers": [
       "A former partner's",
       "His son's school principal's",
@@ -1092,7 +1093,7 @@ const questions = [
     "id": "tv_30503",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 11), what kind of work did the woman found murdered in a river do?",
+    "question": "In Blue Bloods, what kind of work did the woman found murdered in a river do?",
     "answers": [
       "TV reporter",
       "Museum curator",
@@ -1128,7 +1129,7 @@ const questions = [
     "id": "tv_30504",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 11), who works with Danny on the case of the woman found in the river?",
+    "question": "In Blue Bloods, who works with Danny on the case of the woman found in the river?",
     "answers": [
       "Erin Reagan",
       "Linda Reagan",
@@ -1164,7 +1165,7 @@ const questions = [
     "id": "tv_30505",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 11), how many years earlier did Frank become involved in the missing-boy case revisited here?",
+    "question": "In Blue Bloods, how many years earlier did Frank become involved in the missing-boy case revisited here?",
     "answers": [
       "Five years",
       "Twenty-five years",
@@ -1200,7 +1201,7 @@ const questions = [
     "id": "tv_30506",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 12), at what celebration is a Russian gangster's son killed?",
+    "question": "In Blue Bloods, at what celebration is a Russian gangster's son killed?",
     "answers": [
       "His engagement party",
       "His graduation",
@@ -1236,7 +1237,7 @@ const questions = [
     "id": "tv_30507",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 12), which organised-crime group becomes central to Danny's investigation?",
+    "question": "In Blue Bloods, which organised-crime group becomes central to Danny's investigation?",
     "answers": [
       "A motorcycle gang",
       "An Irish bank robbery gang",
@@ -1272,7 +1273,7 @@ const questions = [
     "id": "tv_30508",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 12), which other Reagan becomes involved in a high-profile corruption case?",
+    "question": "In Blue Bloods, which other Reagan becomes involved in a high-profile corruption case?",
     "answers": [
       "Jamie Reagan",
       "Henry Reagan",
@@ -1308,7 +1309,7 @@ const questions = [
     "id": "tv_30509",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 13), what is the victim's role in the case Frank assigns Danny?",
+    "question": "In Blue Bloods, what is the victim's role in the case Frank assigns Danny?",
     "answers": [
       "Hotel concierge",
       "Undercover counterterrorism agent",
@@ -1344,7 +1345,7 @@ const questions = [
     "id": "tv_30510",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 13), what group had the injured agent been secretly infiltrating?",
+    "question": "In Blue Bloods, what group had the injured agent been secretly infiltrating?",
     "answers": [
       "A sleeper cell",
       "A sports club",
@@ -1380,7 +1381,7 @@ const questions = [
     "id": "tv_30511",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 13), why does Frank require Danny to keep his investigation secret?",
+    "question": "In Blue Bloods, why does Frank require Danny to keep his investigation secret?",
     "answers": [
       "To protect a film contract",
       "To prevent a family birthday surprise",
@@ -1416,7 +1417,7 @@ const questions = [
     "id": "tv_30512",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 14), what crime is Danny and Jackie investigating at the episode's centre?",
+    "question": "In Blue Bloods, what crime is Danny and Jackie investigating at the episode's centre?",
     "answers": [
       "A police commissioner's attempted murder",
       "A bank teller's disappearance",
@@ -1452,7 +1453,7 @@ const questions = [
     "id": "tv_30513",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 14), who heads the detectives' suspect list?",
+    "question": "In Blue Bloods, who heads the detectives' suspect list?",
     "answers": [
       "A retired police officer",
       "The victim's drug-addicted boyfriend",
@@ -1488,7 +1489,7 @@ const questions = [
     "id": "tv_30514",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 14), with whom does Erin develop a flirtatious personal relationship?",
+    "question": "In Blue Bloods, with whom does Erin develop a flirtatious personal relationship?",
     "answers": [
       "Her boss Charles Rossellini",
       "A Russian gangster",
@@ -1524,7 +1525,7 @@ const questions = [
     "id": "tv_30515",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 15), who survives an assassination attempt in this episode?",
+    "question": "In Blue Bloods, who survives an assassination attempt in this episode?",
     "answers": [
       "Danny Reagan",
       "Jamie Reagan",
@@ -1560,7 +1561,7 @@ const questions = [
     "id": "tv_30516",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 15), which family member leads the search for the shooter?",
+    "question": "In Blue Bloods, which family member leads the search for the shooter?",
     "answers": [
       "Nicky Reagan-Boyle",
       "Erin Reagan",
@@ -1596,7 +1597,7 @@ const questions = [
     "id": "tv_30517",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 15), which question drives the police inquiry into the attack?",
+    "question": "In Blue Bloods, which question drives the police inquiry into the attack?",
     "answers": [
       "Whether the victim owned a yacht",
       "Whether the shooter had a personal vendetta",
@@ -1632,7 +1633,7 @@ const questions = [
     "id": "tv_30518",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 16), where is a young woman found murdered?",
+    "question": "In Blue Bloods, where is a young woman found murdered?",
     "answers": [
       "At a debutante ball",
       "At a police graduation",
@@ -1668,7 +1669,7 @@ const questions = [
     "id": "tv_30519",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 16), what person seen on hotel security video becomes a lead?",
+    "question": "In Blue Bloods, what person seen on hotel security video becomes a lead?",
     "answers": [
       "A school principal",
       "A fashion photographer",
@@ -1704,7 +1705,7 @@ const questions = [
     "id": "tv_30520",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 16), which younger Reagan first encounters a murder victim while accompanying Danny?",
+    "question": "In Blue Bloods, which younger Reagan first encounters a murder victim while accompanying Danny?",
     "answers": [
       "Linda Reagan",
       "Erin Reagan",
@@ -1740,7 +1741,7 @@ const questions = [
     "id": "tv_30521",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 17), which military branch did the murdered homeless war hero once serve in?",
+    "question": "In Blue Bloods, which military branch did the murdered homeless war hero once serve in?",
     "answers": [
       "The Navy",
       "The Marines",
@@ -1776,7 +1777,7 @@ const questions = [
     "id": "tv_30522",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 17), why does Danny feel a personal connection to this murder victim?",
+    "question": "In Blue Bloods, why does Danny feel a personal connection to this murder victim?",
     "answers": [
       "Danny is a former Marine too",
       "Danny was his brother-in-law",
@@ -1812,7 +1813,7 @@ const questions = [
     "id": "tv_30523",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 17), what incorrect political story about Frank reaches the press?",
+    "question": "In Blue Bloods, what incorrect political story about Frank reaches the press?",
     "answers": [
       "That he is resigning to become governor",
       "That he is joining Congress",
@@ -1848,7 +1849,7 @@ const questions = [
     "id": "tv_30524",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 18), what event does Danny personally witness at the start of the case?",
+    "question": "In Blue Bloods, what event does Danny personally witness at the start of the case?",
     "answers": [
       "A prison escape",
       "A bank employee's kidnapping",
@@ -1884,7 +1885,7 @@ const questions = [
     "id": "tv_30525",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 18), what is the drug lord known for doing to people who may testify?",
+    "question": "In Blue Bloods, what is the drug lord known for doing to people who may testify?",
     "answers": [
       "Giving witness protection",
       "Intimidating witnesses",
@@ -1920,7 +1921,7 @@ const questions = [
     "id": "tv_30526",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 18), how do criminals attempt to stop Danny from testifying?",
+    "question": "In Blue Bloods, how do criminals attempt to stop Danny from testifying?",
     "answers": [
       "By endangering a member of his family",
       "By offering him a new acting career",
@@ -1956,7 +1957,7 @@ const questions = [
     "id": "tv_30527",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 19), whose relative is one of the two people who collapse at a fashion show?",
+    "question": "In Blue Bloods, whose relative is one of the two people who collapse at a fashion show?",
     "answers": [
       "Henry Reagan's",
       "Jackie Curatola's",
@@ -1992,7 +1993,7 @@ const questions = [
     "id": "tv_30528",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 19), what job does Linda's niece have in the show?",
+    "question": "In Blue Bloods, what job does Linda's niece have in the show?",
     "answers": [
       "Police detective",
       "Paramedic",
@@ -2028,7 +2029,7 @@ const questions = [
     "id": "tv_30529",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 19), what causes the fashion-show victims to collapse?",
+    "question": "In Blue Bloods, what causes the fashion-show victims to collapse?",
     "answers": [
       "An electrical fault",
       "Poisoning",
@@ -2064,7 +2065,7 @@ const questions = [
     "id": "tv_30530",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 20), who is shot outside a fashionable Lower East Side restaurant?",
+    "question": "In Blue Bloods, who is shot outside a fashionable Lower East Side restaurant?",
     "answers": [
       "A tourist",
       "A police commissioner",
@@ -2100,7 +2101,7 @@ const questions = [
     "id": "tv_30531",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 20), which New York area is home to the restaurant at the centre of the story?",
+    "question": "In Blue Bloods, which New York area is home to the restaurant at the centre of the story?",
     "answers": [
       "The Upper West Side",
       "Harlem",
@@ -2136,7 +2137,7 @@ const questions = [
     "id": "tv_30532",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 20), what frustrates Frank about the aftermath of the killing?",
+    "question": "In Blue Bloods, what frustrates Frank about the aftermath of the killing?",
     "answers": [
       "A nationwide teachers' strike",
       "A shortage of police uniforms",
@@ -2172,7 +2173,7 @@ const questions = [
     "id": "tv_30533",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 21), who is the primary suspect when a family living near the Reagans is murdered?",
+    "question": "In Blue Bloods, who is the primary suspect when a family living near the Reagans is murdered?",
     "answers": [
       "Their family doctor",
       "Their drug- and alcohol-addicted son",
@@ -2208,7 +2209,7 @@ const questions = [
     "id": "tv_30534",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 21), what police equipment goes missing from Jamie's possession?",
+    "question": "In Blue Bloods, what police equipment goes missing from Jamie's possession?",
     "answers": [
       "His gun",
       "His body camera",
@@ -2244,7 +2245,7 @@ const questions = [
     "id": "tv_30535",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 21), which secret police group does Jamie think is trying to frame him?",
+    "question": "In Blue Bloods, which secret police group does Jamie think is trying to frame him?",
     "answers": [
       "The Flying Squad",
       "The Red Guard",
@@ -2280,7 +2281,7 @@ const questions = [
     "id": "tv_30536",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 22), what criminal activity first points investigators towards corrupt NYPD officers?",
+    "question": "In Blue Bloods, what criminal activity first points investigators towards corrupt NYPD officers?",
     "answers": [
       "A diamond auction",
       "A missing tourist",
@@ -2316,7 +2317,7 @@ const questions = [
     "id": "tv_30537",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 22), which internal law-enforcement unit does Frank deliberately leave out of the operation?",
+    "question": "In Blue Bloods, which internal law-enforcement unit does Frank deliberately leave out of the operation?",
     "answers": [
       "The mounted unit",
       "Internal Affairs",
@@ -2352,7 +2353,7 @@ const questions = [
     "id": "tv_30538",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 1, Episode 22), what is the name of the clandestine police organisation Frank aims to expose?",
+    "question": "In Blue Bloods, what is the name of the clandestine police organisation Frank aims to expose?",
     "answers": [
       "The Blue Templar",
       "The Silver Shield",
