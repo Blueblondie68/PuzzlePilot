@@ -1,7 +1,8 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 533: Blue Bloods (2010–2024), Series 6 (2015–2016).
 // Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
+// Difficulty estimates recalculated from answer specificity, not fixed per-episode positions.
 // Three repeated/trivial questions reworked; Episode 1 now has one question and other episodes gain depth.
-// 66 episode-specific questions spanning all 22 episodes (3 per episode).
+// 66 episode-specific questions spanning all 22 episodes; question totals vary by episode after audit.
 // IDs tv_30806–tv_30871; Pack 532 ended tv_30805.
 // Series 1–6 covered; Series 7–14 remain outstanding.
 // Verified storylines and episode names from official CBS guide:
@@ -23,7 +24,7 @@ const questions = [
       "East Asia"
     ],
     "correctAnswer": "The Middle East",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -59,7 +60,7 @@ const questions = [
       "Jackie Curatola's"
     ],
     "correctAnswer": "Eddie Janko's",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -131,7 +132,7 @@ const questions = [
       "A poisoner targeting hospital patients"
     ],
     "correctAnswer": "A serial killer",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -203,7 +204,7 @@ const questions = [
       "Her daughter"
     ],
     "correctAnswer": "Her husband",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -239,7 +240,7 @@ const questions = [
       "Newspaper reporter"
     ],
     "correctAnswer": "Newspaper reporter",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -347,7 +348,7 @@ const questions = [
       "Nick Constantine"
     ],
     "correctAnswer": "Vincent",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -419,7 +420,7 @@ const questions = [
       "The correction department"
     ],
     "correctAnswer": "The fire department",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -455,7 +456,7 @@ const questions = [
       "Five"
     ],
     "correctAnswer": "Two",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -563,7 +564,7 @@ const questions = [
       "Assisting a prison escape"
     ],
     "correctAnswer": "Police brutality",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -599,7 +600,7 @@ const questions = [
       "The traffic enforcement unit"
     ],
     "correctAnswer": "Internal Affairs",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -635,7 +636,7 @@ const questions = [
       "Bank robbery"
     ],
     "correctAnswer": "Rape",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -671,7 +672,7 @@ const questions = [
       "A Ford Mustang used in Bullitt"
     ],
     "correctAnswer": "A Ford Mustang used in Bullitt",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -707,7 +708,7 @@ const questions = [
       "Lorenzo Colt"
     ],
     "correctAnswer": "Owen Cairo",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -743,7 +744,7 @@ const questions = [
       "Running an illegal casino"
     ],
     "correctAnswer": "Fixing traffic tickets for friends",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -779,7 +780,7 @@ const questions = [
       "Trey Delgado"
     ],
     "correctAnswer": "Thomas Wilder",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -887,7 +888,7 @@ const questions = [
       "The evidence is destroyed in a fire"
     ],
     "correctAnswer": "The first trial ends with a hung jury",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -923,7 +924,7 @@ const questions = [
       "Sid Gormley"
     ],
     "correctAnswer": "Anthony Abetemarco",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -959,7 +960,7 @@ const questions = [
       "An elderly couple"
     ],
     "correctAnswer": "An elderly couple",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -995,7 +996,7 @@ const questions = [
       "Helping a suspect escape"
     ],
     "correctAnswer": "Planting evidence",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1067,7 +1068,7 @@ const questions = [
       "The right to jury trial"
     ],
     "correctAnswer": "Freedom of speech",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1103,7 +1104,7 @@ const questions = [
       "A book about their early days on the force"
     ],
     "correctAnswer": "A book about their early days on the force",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1175,7 +1176,7 @@ const questions = [
       "Danny and Baez"
     ],
     "correctAnswer": "Jamie and Eddie",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1211,7 +1212,7 @@ const questions = [
       "On a hospital roof"
     ],
     "correctAnswer": "Tied up in the boot of the victim's car",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1247,7 +1248,7 @@ const questions = [
       "A police shield number"
     ],
     "correctAnswer": "A police shield number",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1283,7 +1284,7 @@ const questions = [
       "His brother's"
     ],
     "correctAnswer": "His deceased son Joe's",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1319,7 +1320,7 @@ const questions = [
       "At a ferry terminal"
     ],
     "correctAnswer": "On the subway",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1391,7 +1392,7 @@ const questions = [
       "She witnessed him commit a murder as a child"
     ],
     "correctAnswer": "She witnessed him commit a murder as a child",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1427,7 +1428,7 @@ const questions = [
       "The forensic evidence was destroyed in a flood"
     ],
     "correctAnswer": "Several women confess to the same killing",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1499,7 +1500,7 @@ const questions = [
       "A church bell"
     ],
     "correctAnswer": "Money",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1535,7 +1536,7 @@ const questions = [
       "A man she helped set free is accused of the murder"
     ],
     "correctAnswer": "A man she helped set free is accused of the murder",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1607,7 +1608,7 @@ const questions = [
       "He is appointed to a federal bench"
     ],
     "correctAnswer": "He has gone absent without leave",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1715,7 +1716,7 @@ const questions = [
       "Police body cameras"
     ],
     "correctAnswer": "Broken-windows policing",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1751,7 +1752,7 @@ const questions = [
       "Probation officer"
     ],
     "correctAnswer": "Rookie NYPD officer",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1823,7 +1824,7 @@ const questions = [
       "His cousin"
     ],
     "correctAnswer": "His cousin",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1859,7 +1860,7 @@ const questions = [
       "He is an international arms dealer"
     ],
     "correctAnswer": "He is a rehabilitated former prisoner",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1895,7 +1896,7 @@ const questions = [
       "Henry Reagan"
     ],
     "correctAnswer": "Frank Reagan",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1931,7 +1932,7 @@ const questions = [
       "She believes the suspect has died"
     ],
     "correctAnswer": "She wants to interview the suspect on her podcast",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1967,7 +1968,7 @@ const questions = [
       "Jimmy Mosley"
     ],
     "correctAnswer": "Jimmy Mosley",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2039,7 +2040,7 @@ const questions = [
       "Appointment to the district attorney's office"
     ],
     "correctAnswer": "A promotion",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2075,7 +2076,7 @@ const questions = [
       "Vincent"
     ],
     "correctAnswer": "Thomas Wilder",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2183,7 +2184,7 @@ const questions = [
       "Loss of memory"
     ],
     "correctAnswer": "Fear of retaliation",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2255,7 +2256,7 @@ const questions = [
       "The Police Union party"
     ],
     "correctAnswer": "The Police Union party",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2291,7 +2292,7 @@ const questions = [
       "Freeing an escaped prisoner"
     ],
     "correctAnswer": "Not indicting an officer for shooting a teenager",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2363,7 +2364,7 @@ const questions = [
       "The theft of a judge's car"
     ],
     "correctAnswer": "The shooting of a police officer",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",

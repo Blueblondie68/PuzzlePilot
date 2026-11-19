@@ -1,5 +1,6 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 534: Blue Bloods (2010–2024), Series 7 (2016–2017).
 // Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
+// Difficulty estimates recalculated from answer specificity, not fixed per-episode positions.
 // 66 verified episode-anchored questions: three questions per each of 22 episodes.
 // IDs tv_30872–tv_30937; Pack 533 ended tv_30871.
 // Series 1–7 covered; Series 8–14 outstanding.
@@ -21,7 +22,7 @@ const questions = [
       "Inspector General Kelly Peterson"
     ],
     "correctAnswer": "Robert Lewis from the Attorney General's office",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -93,7 +94,7 @@ const questions = [
       "Stop him from joining the police"
     ],
     "correctAnswer": "Stop him from joining the police",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -129,7 +130,7 @@ const questions = [
       "By a fall on subway stairs"
     ],
     "correctAnswer": "By a stray bullet in her home",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -237,7 +238,7 @@ const questions = [
       "She refuses to press charges"
     ],
     "correctAnswer": "She refuses to press charges",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -309,7 +310,7 @@ const questions = [
       "Producer of a documentary series"
     ],
     "correctAnswer": "Technical adviser on a television show",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -345,7 +346,7 @@ const questions = [
       "Robert Lewis"
     ],
     "correctAnswer": "Sid Gormley",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -417,7 +418,7 @@ const questions = [
       "A staged fire drill"
     ],
     "correctAnswer": "A dishonest arrest",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -453,7 +454,7 @@ const questions = [
       "Mayor Carter Poole"
     ],
     "correctAnswer": "Community activist Coryna Garza",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -525,7 +526,7 @@ const questions = [
       "A US Marshals raid on a local gang"
     ],
     "correctAnswer": "A US Marshals raid on a local gang",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -561,7 +562,7 @@ const questions = [
       "An insurance investigator"
     ],
     "correctAnswer": "A police whistleblower",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -633,7 +634,7 @@ const questions = [
       "Theft of school examination papers"
     ],
     "correctAnswer": "Abuse of power in the police department",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -669,7 +670,7 @@ const questions = [
       "The witness is murdered"
     ],
     "correctAnswer": "The witness is murdered",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -705,7 +706,7 @@ const questions = [
       "Garrett Moore"
     ],
     "correctAnswer": "Anthony Abetemarco",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -741,7 +742,7 @@ const questions = [
       "NYPD vehicle fuel costs"
     ],
     "correctAnswer": "Excessive force by police",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -777,7 +778,7 @@ const questions = [
       "Her father's"
     ],
     "correctAnswer": "Her abusive former boyfriend's",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -849,7 +850,7 @@ const questions = [
       "He used a police helicopter for a private flight"
     ],
     "correctAnswer": "He failed to intervene while off duty",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -885,7 +886,7 @@ const questions = [
       "A journalist's source-protection privilege"
     ],
     "correctAnswer": "The seal of confession",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -957,7 +958,7 @@ const questions = [
       "A wedding"
     ],
     "correctAnswer": "A wedding",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -993,7 +994,7 @@ const questions = [
       "Mayor Carter Poole's"
     ],
     "correctAnswer": "Reverend Darnell Potter's",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1065,7 +1066,7 @@ const questions = [
       "He is a retired prosecutor"
     ],
     "correctAnswer": "He is the son of an NYPD officer",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1101,7 +1102,7 @@ const questions = [
       "A dispute between birth and adoptive parents"
     ],
     "correctAnswer": "A dispute between birth and adoptive parents",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1209,7 +1210,7 @@ const questions = [
       "A retired Supreme Court judge"
     ],
     "correctAnswer": "An ex-prisoner who took the blame for someone else",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1281,7 +1282,7 @@ const questions = [
       "Erin Reagan"
     ],
     "correctAnswer": "Gormley's wife Sheila",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1317,7 +1318,7 @@ const questions = [
       "A presidential pardon"
     ],
     "correctAnswer": "Diplomatic immunity",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1389,7 +1390,7 @@ const questions = [
       "A robbery"
     ],
     "correctAnswer": "A robbery",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1425,7 +1426,7 @@ const questions = [
       "A medical student"
     ],
     "correctAnswer": "A gang leader",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1533,7 +1534,7 @@ const questions = [
       "Fatal drink-driving"
     ],
     "correctAnswer": "Fatal drink-driving",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1605,7 +1606,7 @@ const questions = [
       "A motorbike theft ring"
     ],
     "correctAnswer": "The Russian mob",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1641,7 +1642,7 @@ const questions = [
       "Her uncle Frank"
     ],
     "correctAnswer": "Her brother Jimmy",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1713,7 +1714,7 @@ const questions = [
       "Danny Reagan"
     ],
     "correctAnswer": "Jamie Reagan",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1749,7 +1750,7 @@ const questions = [
       "An injury during a building fire"
     ],
     "correctAnswer": "An allergic reaction to essential medication",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1821,7 +1822,7 @@ const questions = [
       "The person she convicted may be innocent"
     ],
     "correctAnswer": "The person she convicted may be innocent",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1857,7 +1858,7 @@ const questions = [
       "A federal judge"
     ],
     "correctAnswer": "A former NYPD officer",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1929,7 +1930,7 @@ const questions = [
       "He is moving to another country"
     ],
     "correctAnswer": "He has reached the mandatory retirement age",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1965,7 +1966,7 @@ const questions = [
       "Her former husband Jack Boyle"
     ],
     "correctAnswer": "Her former husband Jack Boyle",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2073,7 +2074,7 @@ const questions = [
       "Jack Boyle"
     ],
     "correctAnswer": "Reggie Wilson",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2145,7 +2146,7 @@ const questions = [
       "The school board"
     ],
     "correctAnswer": "The mayor's office",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2181,7 +2182,7 @@ const questions = [
       "A retired NYPD lieutenant"
     ],
     "correctAnswer": "Two Russian operatives",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2289,7 +2290,7 @@ const questions = [
       "A shipment of illegal firearms"
     ],
     "correctAnswer": "Several million dollars in cash",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2361,7 +2362,7 @@ const questions = [
       "He plans to move to a foreign embassy"
     ],
     "correctAnswer": "He intends to retire",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",

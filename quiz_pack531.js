@@ -1,5 +1,6 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 531: Blue Bloods (2010–2024), Series 4 (2013–2014).
 // Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
+// Difficulty estimates recalculated from answer specificity, not fixed per-episode positions.
 // 66 episode-specific questions across all 22 episodes (3 per episode).
 // IDs tv_30674–tv_30739. Pack 530 ends tv_30673.
 // Series 1–4 covered, Series 5–14 outstanding.
@@ -21,7 +22,7 @@ const questions = [
       "A series of bank-account frauds"
     ],
     "correctAnswer": "An armed robbery in which a police officer is killed",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -129,7 +130,7 @@ const questions = [
       "Private investigator"
     ],
     "correctAnswer": "Film actor",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -201,7 +202,7 @@ const questions = [
       "He is injured in a car collision"
     ],
     "correctAnswer": "He is stabbed",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -309,7 +310,7 @@ const questions = [
       "He misses a court appearance"
     ],
     "correctAnswer": "He disobeys his lieutenant's order",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -345,7 +346,7 @@ const questions = [
       "At a hotel swimming pool"
     ],
     "correctAnswer": "At a subway station",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -453,7 +454,7 @@ const questions = [
       "Shoplifting"
     ],
     "correctAnswer": "Kidnapping",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -525,7 +526,7 @@ const questions = [
       "Drink-driving"
     ],
     "correctAnswer": "Drink-driving",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -633,7 +634,7 @@ const questions = [
       "She becomes a court clerk"
     ],
     "correctAnswer": "She works undercover",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -669,7 +670,7 @@ const questions = [
       "Excessive force"
     ],
     "correctAnswer": "Excessive force",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -741,7 +742,7 @@ const questions = [
       "Prescription painkillers"
     ],
     "correctAnswer": "Gambling",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -777,7 +778,7 @@ const questions = [
       "District Attorney Erin Reagan"
     ],
     "correctAnswer": "Mob lawyer Angelo Gallo",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -849,7 +850,7 @@ const questions = [
       "He is removed for sleeping"
     ],
     "correctAnswer": "He is the only juror to disagree",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -957,7 +958,7 @@ const questions = [
       "Henry Reagan"
     ],
     "correctAnswer": "Henry Reagan",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -993,7 +994,7 @@ const questions = [
       "A ferry collision"
     ],
     "correctAnswer": "A bombing",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1065,7 +1066,7 @@ const questions = [
       "A disputed insurance valuation"
     ],
     "correctAnswer": "Community tension and resistance",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1101,7 +1102,7 @@ const questions = [
       "Childhood friend"
     ],
     "correctAnswer": "Childhood friend",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1173,7 +1174,7 @@ const questions = [
       "Riot-control training"
     ],
     "correctAnswer": "Stop and frisk",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1209,7 +1210,7 @@ const questions = [
       "Methamphetamine"
     ],
     "correctAnswer": "Heroin",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1245,7 +1246,7 @@ const questions = [
       "Nicky Reagan-Boyle"
     ],
     "correctAnswer": "Nicky Reagan-Boyle",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1281,7 +1282,7 @@ const questions = [
       "Auction confiscated vehicles"
     ],
     "correctAnswer": "Get the dangerous drug off the streets",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1317,7 +1318,7 @@ const questions = [
       "The French Foreign Legion"
     ],
     "correctAnswer": "The US Army",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1389,7 +1390,7 @@ const questions = [
       "A woman's call for justice for her murdered daughter"
     ],
     "correctAnswer": "A woman's call for justice for her murdered daughter",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1425,7 +1426,7 @@ const questions = [
       "A professional tennis player"
     ],
     "correctAnswer": "A drag performer and reality television star",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1461,7 +1462,7 @@ const questions = [
       "Frank Reagan"
     ],
     "correctAnswer": "Erin Reagan",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1497,7 +1498,7 @@ const questions = [
       "A stolen-car case"
     ],
     "correctAnswer": "A drug case",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1533,7 +1534,7 @@ const questions = [
       "A young girl's abduction"
     ],
     "correctAnswer": "A young girl's abduction",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1605,7 +1606,7 @@ const questions = [
       "The city's school curriculum"
     ],
     "correctAnswer": "Details of an overseas intelligence programme",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1641,7 +1642,7 @@ const questions = [
       "A foreign diplomat"
     ],
     "correctAnswer": "A grieving daughter",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1713,7 +1714,7 @@ const questions = [
       "Henry Reagan"
     ],
     "correctAnswer": "Frank Reagan",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1749,7 +1750,7 @@ const questions = [
       "Thieves impersonating theatre ushers"
     ],
     "correctAnswer": "Teenagers punching unsuspecting people in the head",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1821,7 +1822,7 @@ const questions = [
       "It could look like favouritism"
     ],
     "correctAnswer": "It could look like favouritism",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1857,7 +1858,7 @@ const questions = [
       "A routine eye test"
     ],
     "correctAnswer": "Secret cosmetic surgery",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1929,7 +1930,7 @@ const questions = [
       "Preparing a budget presentation"
     ],
     "correctAnswer": "Investigating a cold case",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1965,7 +1966,7 @@ const questions = [
       "College professor"
     ],
     "correctAnswer": "College professor",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2037,7 +2038,7 @@ const questions = [
       "Nicky Reagan-Boyle"
     ],
     "correctAnswer": "Frank Reagan",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2145,7 +2146,7 @@ const questions = [
       "Her aunt"
     ],
     "correctAnswer": "Her father",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2181,7 +2182,7 @@ const questions = [
       "Attending a family wedding"
     ],
     "correctAnswer": "Working undercover",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2253,7 +2254,7 @@ const questions = [
       "A former classmate living on the streets"
     ],
     "correctAnswer": "A former classmate living on the streets",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2289,7 +2290,7 @@ const questions = [
       "He is appointed deputy mayor"
     ],
     "correctAnswer": "He is placed on modified duty",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2325,7 +2326,7 @@ const questions = [
       "His brother Jamie"
     ],
     "correctAnswer": "His father Frank",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2361,7 +2362,7 @@ const questions = [
       "A missing school examination paper"
     ],
     "correctAnswer": "Evidence of involvement within the authorities",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",

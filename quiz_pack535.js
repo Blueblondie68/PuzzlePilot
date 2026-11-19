@@ -1,5 +1,6 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 535: Blue Bloods (2010–2024), Series 8 (2017–2018).
 // Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
+// Difficulty estimates recalculated from answer specificity, not fixed per-episode positions.
 // 66 episode-specific questions, three per all 22 episodes. IDs tv_30938–tv_31003.
 // Follows Pack 534 ending tv_30937. Series 1–8 covered, Series 9–14 outstanding.
 // Official CBS episode synopsis: https://www.cbs.com/shows/blue_bloods/episodes/8/
@@ -128,7 +129,7 @@ const questions = [
       "An awards dinner for an escaped prisoner"
     ],
     "correctAnswer": "A parade honouring a convicted police-attack conspirator",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -164,7 +165,7 @@ const questions = [
       "Twenty years"
     ],
     "correctAnswer": "Thirteen years",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -200,7 +201,7 @@ const questions = [
       "Judge"
     ],
     "correctAnswer": "Congressman",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -236,7 +237,7 @@ const questions = [
       "Human trafficking"
     ],
     "correctAnswer": "Human trafficking",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -344,7 +345,7 @@ const questions = [
       "A forensic technician"
     ],
     "correctAnswer": "A detective",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -416,7 +417,7 @@ const questions = [
       "Seeking diplomatic immunity"
     ],
     "correctAnswer": "Using a confidential informant",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -452,7 +453,7 @@ const questions = [
       "Her landlord's"
     ],
     "correctAnswer": "Her former husband's",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -524,7 +525,7 @@ const questions = [
       "A drug overdose"
     ],
     "correctAnswer": "A drug overdose",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -560,7 +561,7 @@ const questions = [
       "Baseball umpire"
     ],
     "correctAnswer": "Basketball player",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -668,7 +669,7 @@ const questions = [
       "Nurse"
     ],
     "correctAnswer": "Nurse",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -740,7 +741,7 @@ const questions = [
       "A television broadcast"
     ],
     "correctAnswer": "The birth of a baby",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -776,7 +777,7 @@ const questions = [
       "They were childhood neighbours"
     ],
     "correctAnswer": "They knew each other at college",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -848,7 +849,7 @@ const questions = [
       "An outstanding criminal conviction"
     ],
     "correctAnswer": "An otherwise spotless police record",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -992,7 +993,7 @@ const questions = [
       "He helps police stop a bank theft"
     ],
     "correctAnswer": "He rescues a woman during a hostage incident",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1028,7 +1029,7 @@ const questions = [
       "Parker Mack"
     ],
     "correctAnswer": "Victor Lugo",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1100,7 +1101,7 @@ const questions = [
       "Journalism"
     ],
     "correctAnswer": "Journalism",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1172,7 +1173,7 @@ const questions = [
       "Making drug possession an immigration offence"
     ],
     "correctAnswer": "Treating it as a disease before treating it as a crime",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1208,7 +1209,7 @@ const questions = [
       "He is injured in a car crash"
     ],
     "correctAnswer": "He is shot",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1244,7 +1245,7 @@ const questions = [
       "Danny Reagan"
     ],
     "correctAnswer": "Danny Reagan",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1280,7 +1281,7 @@ const questions = [
       "A fire-service fitness test"
     ],
     "correctAnswer": "The police exam",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1388,7 +1389,7 @@ const questions = [
       "A parole officer"
     ],
     "correctAnswer": "A parole officer",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1424,7 +1425,7 @@ const questions = [
       "A shopping centre"
     ],
     "correctAnswer": "A high school courtyard",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1460,7 +1461,7 @@ const questions = [
       "Archbishop Kearns"
     ],
     "correctAnswer": "Principal Darryl Ward",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1532,7 +1533,7 @@ const questions = [
       "Financial difficulties"
     ],
     "correctAnswer": "Financial difficulties",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1568,7 +1569,7 @@ const questions = [
       "Erin Reagan"
     ],
     "correctAnswer": "Nicky Reagan-Boyle",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1604,7 +1605,7 @@ const questions = [
       "A parking permit"
     ],
     "correctAnswer": "Immigration status",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1640,7 +1641,7 @@ const questions = [
       "He had been a missing child"
     ],
     "correctAnswer": "He maintained two separate families",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1712,7 +1713,7 @@ const questions = [
       "District Attorney"
     ],
     "correctAnswer": "Chief of Transit",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1748,7 +1749,7 @@ const questions = [
       "His car keys"
     ],
     "correctAnswer": "His credit card",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1820,7 +1821,7 @@ const questions = [
       "A mosque"
     ],
     "correctAnswer": "A mosque",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1856,7 +1857,7 @@ const questions = [
       "A neighbour was wrongly evicted"
     ],
     "correctAnswer": "A mother's son was murdered",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1892,7 +1893,7 @@ const questions = [
       "Abigail Baker"
     ],
     "correctAnswer": "Eddie Janko",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1964,7 +1965,7 @@ const questions = [
       "She needs heart medication within 72 hours"
     ],
     "correctAnswer": "She needs heart medication within 72 hours",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2072,7 +2073,7 @@ const questions = [
       "Lenny Ross"
     ],
     "correctAnswer": "Victor Lugo",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2144,7 +2145,7 @@ const questions = [
       "The firefighter lieutenant test"
     ],
     "correctAnswer": "The sergeant's test",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2180,7 +2181,7 @@ const questions = [
       "An electronic voting machine"
     ],
     "correctAnswer": "A suspected terrorist's phone",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2252,7 +2253,7 @@ const questions = [
       "A woman who kidnapped a newborn"
     ],
     "correctAnswer": "A woman who kidnapped a newborn",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2288,7 +2289,7 @@ const questions = [
       "Eight"
     ],
     "correctAnswer": "Six",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2324,7 +2325,7 @@ const questions = [
       "Twenty years"
     ],
     "correctAnswer": "Nine years",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2360,7 +2361,7 @@ const questions = [
       "Frank Reagan and Margaret Dutton"
     ],
     "correctAnswer": "Jamie Reagan and Eddie Janko",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",

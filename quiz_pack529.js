@@ -1,5 +1,6 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 529: Blue Bloods (2010–2024), Series 2 (2011–2012).
 // Mini audit (19 Nov 2026): natural programme-context questions; all original IDs retained.
+// Difficulty estimates recalculated from answer specificity, not fixed per-episode positions.
 // 66 episode-anchored questions, 3 per each of 22 episodes. IDs tv_30539–tv_30604.
 // Follows Pack 528 ending tv_30538. Series 3–14 remain outstanding.
 // Episode titles, broadcast dates, and plot facts checked against:
@@ -21,7 +22,7 @@ const questions = [
       "The governor's"
     ],
     "correctAnswer": "The mayor-elect's",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -93,7 +94,7 @@ const questions = [
       "A bar"
     ],
     "correctAnswer": "A bar",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -165,7 +166,7 @@ const questions = [
       "The district attorney's ethics board"
     ],
     "correctAnswer": "Internal Affairs",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -201,7 +202,7 @@ const questions = [
       "He becomes a full-time instructor"
     ],
     "correctAnswer": "He is placed on modified assignment",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -237,7 +238,7 @@ const questions = [
       "A bank"
     ],
     "correctAnswer": "A bank",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -345,7 +346,7 @@ const questions = [
       "Thirty years"
     ],
     "correctAnswer": "Eighteen years",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -381,7 +382,7 @@ const questions = [
       "Frank Reagan"
     ],
     "correctAnswer": "Frank Reagan",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -453,7 +454,7 @@ const questions = [
       "His friendship with the mayor"
     ],
     "correctAnswer": "His marriage to Linda",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -489,7 +490,7 @@ const questions = [
       "Henry Reagan"
     ],
     "correctAnswer": "Jamie Reagan",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -525,7 +526,7 @@ const questions = [
       "A romantic weekend"
     ],
     "correctAnswer": "A romantic weekend",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -561,7 +562,7 @@ const questions = [
       "A missing property report"
     ],
     "correctAnswer": "A 911 call",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -633,7 +634,7 @@ const questions = [
       "A border dispute"
     ],
     "correctAnswer": "A political crisis",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -669,7 +670,7 @@ const questions = [
       "Escort"
     ],
     "correctAnswer": "Escort",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -741,7 +742,7 @@ const questions = [
       "A hospital waiting room"
     ],
     "correctAnswer": "An art gallery",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -777,7 +778,7 @@ const questions = [
       "A broken hip"
     ],
     "correctAnswer": "A heart attack",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -885,7 +886,7 @@ const questions = [
       "Forged passports"
     ],
     "correctAnswer": "Buried bodies",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -957,7 +958,7 @@ const questions = [
       "A boiler-room operation"
     ],
     "correctAnswer": "A boiler-room operation",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -993,7 +994,7 @@ const questions = [
       "Henry's"
     ],
     "correctAnswer": "Erin's",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1029,7 +1030,7 @@ const questions = [
       "Nicky Reagan-Boyle"
     ],
     "correctAnswer": "Danny Reagan",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1065,7 +1066,7 @@ const questions = [
       "An officer falsifying an examination"
     ],
     "correctAnswer": "An officer assaulting someone",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1101,7 +1102,7 @@ const questions = [
       "A diner"
     ],
     "correctAnswer": "A diner",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1173,7 +1174,7 @@ const questions = [
       "Nightclub security"
     ],
     "correctAnswer": "Painting",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1209,7 +1210,7 @@ const questions = [
       "They are attending a family wedding"
     ],
     "correctAnswer": "They are travelling home by car",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1281,7 +1282,7 @@ const questions = [
       "The 1993 World Trade Center bombing"
     ],
     "correctAnswer": "The September 11 attacks",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1317,7 +1318,7 @@ const questions = [
       "An allergic reaction"
     ],
     "correctAnswer": "A heart attack",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1389,7 +1390,7 @@ const questions = [
       "The canonisation of a local priest"
     ],
     "correctAnswer": "The canonisation of a local priest",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1425,7 +1426,7 @@ const questions = [
       "A prison riot"
     ],
     "correctAnswer": "A robbery and beating of a man's family",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1497,7 +1498,7 @@ const questions = [
       "A college graduation"
     ],
     "correctAnswer": "A protest rally",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1533,7 +1534,7 @@ const questions = [
       "Undercover detective"
     ],
     "correctAnswer": "Undercover detective",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1569,7 +1570,7 @@ const questions = [
       "Frank Reagan"
     ],
     "correctAnswer": "Danny Reagan",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1605,7 +1606,7 @@ const questions = [
       "Henry and Jamie"
     ],
     "correctAnswer": "Linda and the boys",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1641,7 +1642,7 @@ const questions = [
       "Prosecutor"
     ],
     "correctAnswer": "Journalist",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1713,7 +1714,7 @@ const questions = [
       "Linda's"
     ],
     "correctAnswer": "Jamie's",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1821,7 +1822,7 @@ const questions = [
       "Erin questions him in court"
     ],
     "correctAnswer": "Erin questions him in court",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1857,7 +1858,7 @@ const questions = [
       "A police training auction"
     ],
     "correctAnswer": "A gun buyback scheme",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1929,7 +1930,7 @@ const questions = [
       "Henry Reagan"
     ],
     "correctAnswer": "Frank Reagan",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1965,7 +1966,7 @@ const questions = [
       "Firefighter"
     ],
     "correctAnswer": "Firefighter",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2037,7 +2038,7 @@ const questions = [
       "A firefighter"
     ],
     "correctAnswer": "A baby",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2073,7 +2074,7 @@ const questions = [
       "A Colombian cartel"
     ],
     "correctAnswer": "The Russian mob",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2145,7 +2146,7 @@ const questions = [
       "City comptroller"
     ],
     "correctAnswer": "Deputy mayor",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2181,7 +2182,7 @@ const questions = [
       "He was injured only after death"
     ],
     "correctAnswer": "He has fight injuries but no marks on his hands",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2253,7 +2254,7 @@ const questions = [
       "The Sanfino family has ordered a hit on his undercover identity"
     ],
     "correctAnswer": "The Sanfino family has ordered a hit on his undercover identity",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2289,7 +2290,7 @@ const questions = [
       "An armed train robbery"
     ],
     "correctAnswer": "A biological weapon attack",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2325,7 +2326,7 @@ const questions = [
       "Christmas Day"
     ],
     "correctAnswer": "Mother's Day",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -2361,7 +2362,7 @@ const questions = [
       "Jamie and Jack"
     ],
     "correctAnswer": "Danny and Jamie",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
