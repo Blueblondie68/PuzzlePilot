@@ -40,7 +40,9 @@ const questions=[
       "Episode: S02E01",
       "Episode title: Beach Blanket Brandon",
       "Storyline: Summer job and dream car",
-      "Fact: A 1965 Ford Mustang convertible"
+      "Fact: A 1965 Ford Mustang convertible",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -75,7 +77,9 @@ const questions=[
       "Episode: S02E01",
       "Episode title: Beach Blanket Brandon",
       "Storyline: Brandon changes jobs",
-      "Fact: Cabana boy at the Beverly Hills Beach Club"
+      "Fact: Cabana boy at the Beverly Hills Beach Club",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -110,7 +114,11 @@ const questions=[
       "Episode: S02E01",
       "Episode title: Beach Blanket Brandon",
       "Storyline: Pregnancy scare and break-up",
-      "Fact: A possible pregnancy"
+      "Fact: A possible pregnancy",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -145,7 +153,9 @@ const questions=[
       "Episode: S02E02",
       "Episode title: The Party Fish",
       "Storyline: Club member recruits Brandon",
-      "Fact: Jerry Rattinger"
+      "Fact: Jerry Rattinger",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -180,7 +190,9 @@ const questions=[
       "Episode: S02E02",
       "Episode title: The Party Fish",
       "Storyline: Discovery about Sandy and Jerry",
-      "Fact: She is Jerry's mistress"
+      "Fact: She is Jerry's mistress",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -215,7 +227,15 @@ const questions=[
       "Episode: S02E02",
       "Episode title: The Party Fish",
       "Storyline: Summer acting studies",
-      "Fact: Acting"
+      "Fact: Acting",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris",
+      "Character: David Silver",
+      "Actor: Brian Austin Green",
+      "Character: Donna Martin",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -250,7 +270,9 @@ const questions=[
       "Episode: S02E03",
       "Episode title: Summer Storm",
       "Storyline: Jack McKay indicted",
-      "Fact: Income tax evasion"
+      "Fact: Income tax evasion",
+      "Character: Jack McKay",
+      "Actor: Josh Taylor"
     ]
   },
   {
@@ -285,7 +307,9 @@ const questions=[
       "Episode: S02E03",
       "Episode title: Summer Storm",
       "Storyline: Storm surfing injury",
-      "Fact: Surfing"
+      "Fact: Surfing",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -320,7 +344,11 @@ const questions=[
       "Episode: S02E03",
       "Episode title: Summer Storm",
       "Storyline: Acting class Shakespeare exercise",
-      "Fact: Romeo and Juliet"
+      "Fact: Romeo and Juliet",
+      "Character: David Silver",
+      "Actor: Brian Austin Green",
+      "Character: Donna Martin",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -355,7 +383,11 @@ const questions=[
       "Episode: S02E04",
       "Episode title: Anaconda",
       "Storyline: Night-time gambling",
-      "Fact: After-hours poker games"
+      "Fact: After-hours poker games",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -390,7 +422,9 @@ const questions=[
       "Episode: S02E04",
       "Episode title: Anaconda",
       "Storyline: Club burglary suspicion",
-      "Fact: Dylan McKay"
+      "Fact: Dylan McKay",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -425,7 +459,9 @@ const questions=[
       "Episode: S02E04",
       "Episode title: Anaconda",
       "Storyline: Overexposure during sunbathing",
-      "Fact: Sun poisoning"
+      "Fact: Sun poisoning",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -460,7 +496,11 @@ const questions=[
       "Episode: S02E05",
       "Episode title: Play It Again, David",
       "Storyline: Parents' romance",
-      "Fact: Jackie Taylor and Mel Silver"
+      "Fact: Jackie Taylor and Mel Silver",
+      "Character: Jackie Taylor",
+      "Actor: Ann Gillespie",
+      "Character: Mel Silver",
+      "Actor: Matthew Laurance"
     ]
   },
   {
@@ -495,7 +535,11 @@ const questions=[
       "Episode: S02E05",
       "Episode title: Play It Again, David",
       "Storyline: Dentist helps Jackie",
-      "Fact: She breaks a tooth"
+      "Fact: She breaks a tooth",
+      "Character: Jackie Taylor",
+      "Actor: Ann Gillespie",
+      "Character: Mel Silver",
+      "Actor: Matthew Laurance"
     ]
   },
   {
@@ -530,7 +574,9 @@ const questions=[
       "Episode: S02E05",
       "Episode title: Play It Again, David",
       "Storyline: Youth centre safeguarding concern",
-      "Fact: He is abused at home"
+      "Fact: He is abused at home",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -565,7 +611,9 @@ const questions=[
       "Episode: S02E06",
       "Episode title: Pass/Not Pass",
       "Storyline: Used car breakdown",
-      "Fact: It breaks down"
+      "Fact: It breaks down",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -600,7 +648,11 @@ const questions=[
       "Episode: S02E06",
       "Episode title: Pass/Not Pass",
       "Storyline: Rival crushes in acting class",
-      "Fact: Brenda and Andrea"
+      "Fact: Brenda and Andrea",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -635,7 +687,11 @@ const questions=[
       "Episode: S02E06",
       "Episode title: Pass/Not Pass",
       "Storyline: Father warns against car purchase",
-      "Fact: Jim Walsh's"
+      "Fact: Jim Walsh's",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse"
     ]
   },
   {
@@ -670,7 +726,11 @@ const questions=[
       "Episode: S02E07",
       "Episode title: Camping Trip",
       "Storyline: Difficult group holiday",
-      "Fact: Bad weather and a cramped cabin"
+      "Fact: Bad weather and a cramped cabin",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -705,7 +765,11 @@ const questions=[
       "Episode: S02E07",
       "Episode title: Camping Trip",
       "Storyline: Cliffside rescue",
-      "Fact: Dylan McKay"
+      "Fact: Dylan McKay",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -740,7 +804,11 @@ const questions=[
       "Episode: S02E07",
       "Episode title: Camping Trip",
       "Storyline: Newlyweds argue",
-      "Fact: Disagreement about children"
+      "Fact: Disagreement about children",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -775,7 +843,13 @@ const questions=[
       "Episode: S02E08",
       "Episode title: Wildfire",
       "Storyline: New student arrives",
-      "Fact: Emily Valentine"
+      "Fact: Emily Valentine",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry",
+      "Character: Emily Valentine",
+      "Actor: Christine Elise"
     ]
   },
   {
@@ -810,7 +884,13 @@ const questions=[
       "Episode: S02E08",
       "Episode title: Wildfire",
       "Storyline: Brenda's jealousy",
-      "Fact: Brenda Walsh"
+      "Fact: Brenda Walsh",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry",
+      "Character: Emily Valentine",
+      "Actor: Christine Elise"
     ]
   },
   {
@@ -845,7 +925,9 @@ const questions=[
       "Episode: S02E08",
       "Episode title: Wildfire",
       "Storyline: Scott's summer visit",
-      "Fact: Oklahoma"
+      "Fact: Oklahoma",
+      "Character: Scott Scanlon",
+      "Actor: Douglas Emerson"
     ]
   },
   {
@@ -880,7 +962,9 @@ const questions=[
       "Episode: S02E09",
       "Episode title: Ashes to Ashes",
       "Storyline: New photographer",
-      "Fact: Robinson Ashe III"
+      "Fact: Robinson Ashe III",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -915,7 +999,9 @@ const questions=[
       "Episode: S02E09",
       "Episode title: Ashes to Ashes",
       "Storyline: School newspaper",
-      "Fact: The Blaze"
+      "Fact: The Blaze",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -950,7 +1036,11 @@ const questions=[
       "Episode: S02E09",
       "Episode title: Ashes to Ashes",
       "Storyline: Home alarm complications",
-      "Fact: A new burglar alarm"
+      "Fact: A new burglar alarm",
+      "Character: Cindy Walsh",
+      "Actor: Carol Potter",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse"
     ]
   },
   {
@@ -985,7 +1075,11 @@ const questions=[
       "Episode: S02E10",
       "Episode title: Necessity Is a Mother",
       "Storyline: Iris McKay's visit",
-      "Fact: His mother Iris"
+      "Fact: His mother Iris",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry",
+      "Character: Iris McKay",
+      "Actor: Stephanie Beacham"
     ]
   },
   {
@@ -1020,7 +1114,13 @@ const questions=[
       "Episode: S02E10",
       "Episode title: Necessity Is a Mother",
       "Storyline: Iris and Cindy friendship",
-      "Fact: Cindy Walsh"
+      "Fact: Cindy Walsh",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry",
+      "Character: Cindy Walsh",
+      "Actor: Carol Potter",
+      "Character: Iris McKay",
+      "Actor: Stephanie Beacham"
     ]
   },
   {
@@ -1055,7 +1155,9 @@ const questions=[
       "Episode: S02E10",
       "Episode title: Necessity Is a Mother",
       "Storyline: School friends buy shares",
-      "Fact: Donna Martin"
+      "Fact: Donna Martin",
+      "Character: Donna Martin",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -1090,7 +1192,9 @@ const questions=[
       "Episode: S02E11",
       "Episode title: Leading from the Heart",
       "Storyline: Kelly and Bobby's romance",
-      "Fact: Cousin Bobby"
+      "Fact: Cousin Bobby",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -1125,7 +1229,11 @@ const questions=[
       "Episode: S02E11",
       "Episode title: Leading from the Heart",
       "Storyline: Brenda doubts Kelly's commitment",
-      "Fact: Lose interest in him"
+      "Fact: Lose interest in him",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -1160,7 +1268,9 @@ const questions=[
       "Episode: S02E11",
       "Episode title: Leading from the Heart",
       "Storyline: Brenda's new driving freedom",
-      "Fact: A driving licence"
+      "Fact: A driving licence",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -1195,7 +1305,9 @@ const questions=[
       "Episode: S02E12",
       "Episode title: Down and Out (of District) in Beverly Hills",
       "Storyline: Prize exposes address issue",
-      "Fact: Andrea Zuckerman's"
+      "Fact: Andrea Zuckerman's",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -1230,7 +1342,9 @@ const questions=[
       "Episode: S02E12",
       "Episode title: Down and Out (of District) in Beverly Hills",
       "Storyline: School residency dispute",
-      "Fact: She lives outside the district"
+      "Fact: She lives outside the district",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -1265,7 +1379,9 @@ const questions=[
       "Episode: S02E12",
       "Episode title: Down and Out (of District) in Beverly Hills",
       "Storyline: Grandmother declines deception",
-      "Fact: Her grandmother"
+      "Fact: Her grandmother",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -1300,7 +1416,11 @@ const questions=[
       "Episode: S02E13",
       "Episode title: Halloween",
       "Storyline: Missing children on Halloween",
-      "Fact: Emily's"
+      "Fact: Emily's",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Emily Valentine",
+      "Actor: Christine Elise"
     ]
   },
   {
@@ -1335,7 +1455,11 @@ const questions=[
       "Episode: S02E13",
       "Episode title: Halloween",
       "Storyline: Halloween egg fight",
-      "Fact: David and Scott"
+      "Fact: David and Scott",
+      "Character: David Silver",
+      "Actor: Brian Austin Green",
+      "Character: Scott Scanlon",
+      "Actor: Douglas Emerson"
     ]
   },
   {
@@ -1370,7 +1494,9 @@ const questions=[
       "Episode: S02E13",
       "Episode title: Halloween",
       "Storyline: Kelly faces an assault",
-      "Fact: Kelly Taylor"
+      "Fact: Kelly Taylor",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -1405,7 +1531,9 @@ const questions=[
       "Episode: S02E14",
       "Episode title: The Next Fifty Years",
       "Storyline: Tragic accidental shooting",
-      "Fact: Scott Scanlon"
+      "Fact: Scott Scanlon",
+      "Character: Scott Scanlon",
+      "Actor: Douglas Emerson"
     ]
   },
   {
@@ -1440,7 +1568,11 @@ const questions=[
       "Episode: S02E14",
       "Episode title: The Next Fifty Years",
       "Storyline: Surprise birthday gathering",
-      "Fact: A birthday"
+      "Fact: A birthday",
+      "Character: Scott Scanlon",
+      "Actor: Douglas Emerson",
+      "Character: David Silver",
+      "Actor: Brian Austin Green"
     ]
   },
   {
@@ -1475,7 +1607,13 @@ const questions=[
       "Episode: S02E14",
       "Episode title: The Next Fifty Years",
       "Storyline: Andrea's jealousy",
-      "Fact: Andrea Zuckerman"
+      "Fact: Andrea Zuckerman",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris",
+      "Character: Emily Valentine",
+      "Actor: Christine Elise"
     ]
   },
   {
@@ -1510,7 +1648,11 @@ const questions=[
       "Episode: S02E15",
       "Episode title: U4EA",
       "Storyline: Night out at underground venue",
-      "Fact: An underground nightclub"
+      "Fact: An underground nightclub",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Emily Valentine",
+      "Actor: Christine Elise"
     ]
   },
   {
@@ -1545,7 +1687,11 @@ const questions=[
       "Episode: S02E15",
       "Episode title: U4EA",
       "Storyline: Brandon drugged on night out",
-      "Fact: Emily Valentine"
+      "Fact: Emily Valentine",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Emily Valentine",
+      "Actor: Christine Elise"
     ]
   },
   {
@@ -1580,7 +1726,11 @@ const questions=[
       "Episode: S02E15",
       "Episode title: U4EA",
       "Storyline: Unexpected pair spend night together",
-      "Fact: Steve and Andrea"
+      "Fact: Steve and Andrea",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -1615,7 +1765,9 @@ const questions=[
       "Episode: S02E16",
       "Episode title: My Desperate Valentine",
       "Storyline: Escalating obsession",
-      "Fact: Emily Valentine's"
+      "Fact: Emily Valentine's",
+      "Character: Emily Valentine",
+      "Actor: Christine Elise"
     ]
   },
   {
@@ -1650,7 +1802,11 @@ const questions=[
       "Episode: S02E16",
       "Episode title: My Desperate Valentine",
       "Storyline: Relationship obsession",
-      "Fact: Brandon Walsh"
+      "Fact: Brandon Walsh",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Emily Valentine",
+      "Actor: Christine Elise"
     ]
   },
   {
@@ -1685,7 +1841,11 @@ const questions=[
       "Episode: S02E16",
       "Episode title: My Desperate Valentine",
       "Storyline: Brenda wants more varied dates",
-      "Fact: Cultural activities"
+      "Fact: Cultural activities",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -1720,7 +1880,9 @@ const questions=[
       "Episode: S02E17",
       "Episode title: Chuckie's Back",
       "Storyline: Television reunion",
-      "Fact: Samantha Sanders's"
+      "Fact: Samantha Sanders's",
+      "Character: Samantha Sanders",
+      "Actor: Christine Belford"
     ]
   },
   {
@@ -1755,7 +1917,9 @@ const questions=[
       "Episode: S02E17",
       "Episode title: Chuckie's Back",
       "Storyline: Adoption revealed to childhood rival",
-      "Fact: Steve is adopted"
+      "Fact: Steve is adopted",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -1790,7 +1954,11 @@ const questions=[
       "Episode: S02E17",
       "Episode title: Chuckie's Back",
       "Storyline: Donna's school dance date",
-      "Fact: David Silver"
+      "Fact: David Silver",
+      "Character: David Silver",
+      "Actor: Brian Austin Green",
+      "Character: Donna Martin",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -1825,7 +1993,9 @@ const questions=[
       "Episode: S02E18",
       "Episode title: A Walsh Family Christmas",
       "Storyline: Steve searches for birth relatives",
-      "Fact: New Mexico"
+      "Fact: New Mexico",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -1860,7 +2030,9 @@ const questions=[
       "Episode: S02E18",
       "Episode title: A Walsh Family Christmas",
       "Storyline: Prison visit",
-      "Fact: His father Jack"
+      "Fact: His father Jack",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -1895,7 +2067,11 @@ const questions=[
       "Episode: S02E18",
       "Episode title: A Walsh Family Christmas",
       "Storyline: Festive gathering",
-      "Fact: The Walsh family home"
+      "Fact: The Walsh family home",
+      "Character: Cindy Walsh",
+      "Actor: Carol Potter",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse"
     ]
   },
   {
@@ -1930,7 +2106,9 @@ const questions=[
       "Episode: S02E19",
       "Episode title: Fire and Ice",
       "Storyline: Trish's skating ambition",
-      "Fact: Figure skating"
+      "Fact: Figure skating",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1965,7 +2143,9 @@ const questions=[
       "Episode: S02E19",
       "Episode title: Fire and Ice",
       "Storyline: Hockey training",
-      "Fact: Ice hockey"
+      "Fact: Ice hockey",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2000,7 +2180,9 @@ const questions=[
       "Episode: S02E19",
       "Episode title: Fire and Ice",
       "Storyline: Retail workplace dispute",
-      "Fact: Taking Brenda's sales commissions"
+      "Fact: Taking Brenda's sales commissions",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2035,7 +2217,9 @@ const questions=[
       "Episode: S02E20",
       "Episode title: A Competitive Edge",
       "Storyline: Sports doping investigation",
-      "Fact: Anabolic steroids"
+      "Fact: Anabolic steroids",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2070,7 +2254,9 @@ const questions=[
       "Episode: S02E20",
       "Episode title: A Competitive Edge",
       "Storyline: Undercover student journalism",
-      "Fact: The Blaze"
+      "Fact: The Blaze",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2105,7 +2291,9 @@ const questions=[
       "Episode: S02E20",
       "Episode title: A Competitive Edge",
       "Storyline: Insurance compensation dispute",
-      "Fact: The other driver makes an injury claim"
+      "Fact: The other driver makes an injury claim",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2140,7 +2328,9 @@ const questions=[
       "Episode: S02E21",
       "Episode title: Everybody's Talkin' 'Bout It",
       "Storyline: Safe-sex health policy",
-      "Fact: Condoms"
+      "Fact: Condoms",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -2175,7 +2365,9 @@ const questions=[
       "Episode: S02E21",
       "Episode title: Everybody's Talkin' 'Bout It",
       "Storyline: Parent objections to school scheme",
-      "Fact: Felice Martin"
+      "Fact: Felice Martin",
+      "Character: Felice Martin",
+      "Actor: Katherine Cannon"
     ]
   },
   {
@@ -2210,7 +2402,11 @@ const questions=[
       "Episode: S02E21",
       "Episode title: Everybody's Talkin' 'Bout It",
       "Storyline: Jackie's pregnancy",
-      "Fact: She is pregnant"
+      "Fact: She is pregnant",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth",
+      "Character: Jackie Taylor",
+      "Actor: Ann Gillespie"
     ]
   },
   {
@@ -2245,7 +2441,11 @@ const questions=[
       "Episode: S02E22",
       "Episode title: And a Baby Makes Five",
       "Storyline: News of Jackie's pregnancy spreads",
-      "Fact: Jackie Taylor's"
+      "Fact: Jackie Taylor's",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth",
+      "Character: Jackie Taylor",
+      "Actor: Ann Gillespie"
     ]
   },
   {
@@ -2280,7 +2480,13 @@ const questions=[
       "Episode: S02E22",
       "Episode title: And a Baby Makes Five",
       "Storyline: Mel and Jackie reconciled",
-      "Fact: David Silver"
+      "Fact: David Silver",
+      "Character: David Silver",
+      "Actor: Brian Austin Green",
+      "Character: Jackie Taylor",
+      "Actor: Ann Gillespie",
+      "Character: Mel Silver",
+      "Actor: Matthew Laurance"
     ]
   },
   {
@@ -2315,7 +2521,9 @@ const questions=[
       "Episode: S02E22",
       "Episode title: And a Baby Makes Five",
       "Storyline: Dylan's promise to become donor",
-      "Fact: Giving blood"
+      "Fact: Giving blood",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -2350,7 +2558,9 @@ const questions=[
       "Episode: S02E23",
       "Episode title: Cardio Funk",
       "Storyline: Dylan supports Sarah",
-      "Fact: Sarah"
+      "Fact: Sarah",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -2385,7 +2595,9 @@ const questions=[
       "Episode: S02E23",
       "Episode title: Cardio Funk",
       "Storyline: Brenda flirts with Tim",
-      "Fact: An aerobics class"
+      "Fact: An aerobics class",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2420,7 +2632,9 @@ const questions=[
       "Episode: S02E23",
       "Episode title: Cardio Funk",
       "Storyline: Diner karaoke",
-      "Fact: A karaoke machine"
+      "Fact: A karaoke machine",
+      "Character: Nat Bussichio",
+      "Actor: Joe E. Tata"
     ]
   },
   {
@@ -2455,7 +2669,11 @@ const questions=[
       "Episode: S02E24",
       "Episode title: The Pit and the Pendulum",
       "Storyline: Mall redevelopment threatens diner",
-      "Fact: A shopping mall"
+      "Fact: A shopping mall",
+      "Character: Nat Bussichio",
+      "Actor: Joe E. Tata",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2490,7 +2708,9 @@ const questions=[
       "Episode: S02E24",
       "Episode title: The Pit and the Pendulum",
       "Storyline: Protest to save diner",
-      "Fact: Brandon Walsh"
+      "Fact: Brandon Walsh",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2525,7 +2745,9 @@ const questions=[
       "Episode: S02E24",
       "Episode title: The Pit and the Pendulum",
       "Storyline: Jim's client and family conflict",
-      "Fact: The developer is his client"
+      "Fact: The developer is his client",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse"
     ]
   },
   {
@@ -2560,7 +2782,9 @@ const questions=[
       "Episode: S02E25",
       "Episode title: Meeting Mr. Pony",
       "Storyline: Brenda's traumatic robbery",
-      "Fact: Brenda Walsh"
+      "Fact: Brenda Walsh",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2595,7 +2819,9 @@ const questions=[
       "Episode: S02E25",
       "Episode title: Meeting Mr. Pony",
       "Storyline: Aftereffects of armed robbery",
-      "Fact: Nightmares and flashbacks"
+      "Fact: Nightmares and flashbacks",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2630,7 +2856,9 @@ const questions=[
       "Episode: S02E25",
       "Episode title: Meeting Mr. Pony",
       "Storyline: Witness identification",
-      "Fact: A suspect line-up"
+      "Fact: A suspect line-up",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2665,7 +2893,9 @@ const questions=[
       "Episode: S02E26",
       "Episode title: Things to Do on a Rainy Day",
       "Storyline: Visiting pop group",
-      "Fact: Color Me Badd"
+      "Fact: Color Me Badd",
+      "Character: Donna Martin",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -2700,7 +2930,11 @@ const questions=[
       "Episode: S02E26",
       "Episode title: Things to Do on a Rainy Day",
       "Storyline: Band's hotel visit",
-      "Fact: Bel Age Hotel"
+      "Fact: Bel Age Hotel",
+      "Character: Donna Martin",
+      "Actor: Tori Spelling",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -2735,7 +2969,11 @@ const questions=[
       "Episode: S02E26",
       "Episode title: Things to Do on a Rainy Day",
       "Storyline: Felice's infidelity discovered",
-      "Fact: She is having an affair"
+      "Fact: She is having an affair",
+      "Character: Donna Martin",
+      "Actor: Tori Spelling",
+      "Character: Felice Martin",
+      "Actor: Katherine Cannon"
     ]
   },
   {
@@ -2770,7 +3008,13 @@ const questions=[
       "Episode: S02E27",
       "Episode title: Mexican Standoff",
       "Storyline: Forbidden trip abroad",
-      "Fact: Mexico"
+      "Fact: Mexico",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse"
     ]
   },
   {
@@ -2805,7 +3049,9 @@ const questions=[
       "Episode: S02E27",
       "Episode title: Mexican Standoff",
       "Storyline: Border trouble exposes trip",
-      "Fact: A border citizenship check"
+      "Fact: A border citizenship check",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2840,7 +3086,11 @@ const questions=[
       "Episode: S02E27",
       "Episode title: Mexican Standoff",
       "Storyline: Kelly and Jake's attraction",
-      "Fact: Jake Hanson"
+      "Fact: Jake Hanson",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth",
+      "Character: Jake Hanson",
+      "Actor: Grant Show"
     ]
   },
   {
@@ -2875,7 +3125,11 @@ const questions=[
       "Episode: S02E28",
       "Episode title: Wedding Bell Blues",
       "Storyline: Wedding ceremony",
-      "Fact: Jackie Taylor and Mel Silver"
+      "Fact: Jackie Taylor and Mel Silver",
+      "Character: Jackie Taylor",
+      "Actor: Ann Gillespie",
+      "Character: Mel Silver",
+      "Actor: Matthew Laurance"
     ]
   },
   {
@@ -2910,7 +3164,11 @@ const questions=[
       "Episode: S02E28",
       "Episode title: Wedding Bell Blues",
       "Storyline: Change of wedding venue",
-      "Fact: The Walsh home"
+      "Fact: The Walsh home",
+      "Character: Jackie Taylor",
+      "Actor: Ann Gillespie",
+      "Character: Mel Silver",
+      "Actor: Matthew Laurance"
     ]
   },
   {
@@ -2945,7 +3203,13 @@ const questions=[
       "Episode: S02E28",
       "Episode title: Wedding Bell Blues",
       "Storyline: Jim bans relationship",
-      "Fact: Dylan McKay"
+      "Fact: Dylan McKay",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse"
     ]
   }
 ];

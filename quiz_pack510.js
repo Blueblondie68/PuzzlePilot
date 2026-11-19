@@ -42,7 +42,8 @@ const questions = [
       "Episode title: Misery Loves Company",
       "Storyline: Brandon's summer job",
       "Character: Brandon Walsh",
-      "Answer fact: The Beverly Hills Beach Club"
+      "Answer fact: The Beverly Hills Beach Club",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -78,7 +79,8 @@ const questions = [
       "Episode title: Misery Loves Company",
       "Storyline: Andrea's beach-club job",
       "Character: Andrea Zuckerman",
-      "Answer fact: Child-care supervisor"
+      "Answer fact: Child-care supervisor",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -115,7 +117,9 @@ const questions = [
       "Storyline: Brenda defies her parents",
       "Character: Brenda Walsh",
       "Character: Dylan McKay",
-      "Answer fact: Dylan McKay's"
+      "Answer fact: Dylan McKay's",
+      "Actor: Shannen Doherty",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -152,7 +156,9 @@ const questions = [
       "Storyline: Jim promotes summer travel",
       "Character: Jim Walsh",
       "Character: Brenda Walsh",
-      "Answer fact: Paris"
+      "Answer fact: Paris",
+      "Actor: James Eckhouse",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -189,7 +195,8 @@ const questions = [
       "Storyline: Kelly stays with baby Erin",
       "Character: Kelly Taylor",
       "Character: Erin Silver",
-      "Answer fact: Kelly Taylor"
+      "Answer fact: Kelly Taylor",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -226,7 +233,9 @@ const questions = [
       "Storyline: Brenda learns difficulties of cohabiting",
       "Character: Brenda Walsh",
       "Character: Dylan McKay",
-      "Answer fact: Dylan McKay"
+      "Answer fact: Dylan McKay",
+      "Actor: Shannen Doherty",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -263,7 +272,9 @@ const questions = [
       "Storyline: Paris trip companions",
       "Character: Brenda Walsh",
       "Character: Donna Martin",
-      "Answer fact: Donna Martin"
+      "Answer fact: Donna Martin",
+      "Actor: Shannen Doherty",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -300,7 +311,9 @@ const questions = [
       "Storyline: French-language misunderstanding",
       "Character: Brenda Walsh",
       "Character: Donna Martin",
-      "Answer fact: She overestimates her knowledge of French"
+      "Answer fact: She overestimates her knowledge of French",
+      "Actor: Shannen Doherty",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -337,7 +350,8 @@ const questions = [
       "Storyline: Deaf child adjusting to summer camp",
       "Character: Andrea Zuckerman",
       "Character: Cameron",
-      "Answer fact: Cameron"
+      "Answer fact: Cameron",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -374,7 +388,9 @@ const questions = [
       "Storyline: Beach-club tournament",
       "Character: Kelly Taylor",
       "Character: Dylan McKay",
-      "Answer fact: Volleyball"
+      "Answer fact: Volleyball",
+      "Actor: Jennie Garth",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -412,7 +428,9 @@ const questions = [
       "Character: Kelly Taylor",
       "Character: Dylan McKay",
       "Character: Erin Silver",
-      "Answer fact: Erin"
+      "Answer fact: Erin",
+      "Actor: Jennie Garth",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -449,7 +467,9 @@ const questions = [
       "Storyline: Donna struggles with language immersion",
       "Character: Donna Martin",
       "Character: Brenda Walsh",
-      "Answer fact: Donna Martin"
+      "Answer fact: Donna Martin",
+      "Actor: Tori Spelling",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -486,7 +506,9 @@ const questions = [
       "Storyline: Seaside summer romance",
       "Character: Dylan McKay",
       "Character: Kelly Taylor",
-      "Answer fact: Paradise Cove"
+      "Answer fact: Paradise Cove",
+      "Actor: Luke Perry",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -523,7 +545,9 @@ const questions = [
       "Storyline: Rick meets Brenda in Paris",
       "Character: Brenda Walsh",
       "Character: Rick",
-      "Answer fact: That she is French"
+      "Answer fact: That she is French",
+      "Actor: Shannen Doherty",
+      "Actor: Dean Cain"
     ]
   },
   {
@@ -560,7 +584,8 @@ const questions = [
       "Storyline: Camp child goes missing",
       "Character: Andrea Zuckerman",
       "Character: Cameron",
-      "Answer fact: Cameron"
+      "Answer fact: Cameron",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -597,7 +622,9 @@ const questions = [
       "Storyline: Friends return from summer abroad",
       "Character: Brenda Walsh",
       "Character: Donna Martin",
-      "Answer fact: Paris"
+      "Answer fact: Paris",
+      "Actor: Shannen Doherty",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -634,7 +661,8 @@ const questions = [
       "Storyline: Brooke's racist comments",
       "Character: Brandon Walsh",
       "Character: Brooke",
-      "Answer fact: Brooke's"
+      "Answer fact: Brooke's",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -671,7 +699,9 @@ const questions = [
       "Storyline: Beach-club music performance",
       "Character: Steve Sanders",
       "Character: David Silver",
-      "Answer fact: David Silver's"
+      "Answer fact: David Silver's",
+      "Actor: Ian Ziering",
+      "Actor: Brian Austin Green"
     ]
   },
   {
@@ -708,7 +738,9 @@ const questions = [
       "Storyline: Brandon considers resigning journalism",
       "Character: Brandon Walsh",
       "Character: Andrea Zuckerman",
-      "Answer fact: The Blaze"
+      "Answer fact: The Blaze",
+      "Actor: Jason Priestley",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -746,7 +778,10 @@ const questions = [
       "Character: Brenda Walsh",
       "Character: Sue Scanlon",
       "Character: Scott Scanlon",
-      "Answer fact: Scott Scanlon's"
+      "Answer fact: Scott Scanlon's",
+      "Actor: Shannen Doherty",
+      "Actor: Nicholle Tom",
+      "Actor: Douglas Emerson"
     ]
   },
   {
@@ -784,7 +819,10 @@ const questions = [
       "Character: Andrea Zuckerman",
       "Character: Brandon Walsh",
       "Character: Gil Meyers",
-      "Answer fact: English"
+      "Answer fact: English",
+      "Actor: Gabrielle Carteris",
+      "Actor: Jason Priestley",
+      "Actor: Mark Kiely"
     ]
   },
   {
@@ -821,7 +859,8 @@ const questions = [
       "Storyline: Brenda's interview is manipulated",
       "Character: Brenda Walsh",
       "Character: Beth Nielsen",
-      "Answer fact: A tabloid documentary show"
+      "Answer fact: A tabloid documentary show",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -858,7 +897,8 @@ const questions = [
       "Storyline: Beth's tabloid report",
       "Character: Beth Nielsen",
       "Character: Brenda Walsh",
-      "Answer fact: Beth Nielsen"
+      "Answer fact: Beth Nielsen",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -894,7 +934,8 @@ const questions = [
       "Episode title: The Back Story",
       "Storyline: Steve receives illicit computer access",
       "Character: Steve Sanders",
-      "Answer fact: The school's computers"
+      "Answer fact: The school's computers",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -933,7 +974,11 @@ const questions = [
       "Character: Cindy Walsh",
       "Character: Brandon Walsh",
       "Character: Brenda Walsh",
-      "Answer fact: One"
+      "Answer fact: One",
+      "Actor: James Eckhouse",
+      "Actor: Carol Potter",
+      "Actor: Jason Priestley",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -970,7 +1015,9 @@ const questions = [
       "Storyline: Tension in blended household",
       "Character: Kelly Taylor",
       "Character: David Silver",
-      "Answer fact: David Silver"
+      "Answer fact: David Silver",
+      "Actor: Jennie Garth",
+      "Actor: Brian Austin Green"
     ]
   },
   {
@@ -1006,7 +1053,8 @@ const questions = [
       "Episode title: Highwire",
       "Storyline: Steve considers academic misconduct",
       "Character: Steve Sanders",
-      "Answer fact: A legacy key"
+      "Answer fact: A legacy key",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -1042,7 +1090,8 @@ const questions = [
       "Episode title: Home and Away",
       "Storyline: Cancelled football game",
       "Character: Brandon Walsh",
-      "Answer fact: Shaw High"
+      "Answer fact: Shaw High",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1078,7 +1127,9 @@ const questions = [
       "Episode title: Home and Away",
       "Storyline: Tragedy before school football match",
       "Character: Shaw High students",
-      "Answer fact: Two"
+      "Answer fact: Two",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1114,7 +1165,8 @@ const questions = [
       "Episode title: Home and Away",
       "Storyline: Reporters campaign against violence",
       "Character: Brandon Walsh",
-      "Answer fact: Journalism"
+      "Answer fact: Journalism",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1151,7 +1203,9 @@ const questions = [
       "Storyline: Accusation and teacher suspension",
       "Character: Gil Meyers",
       "Character: Sue Scanlon",
-      "Answer fact: Gil Meyers"
+      "Answer fact: Gil Meyers",
+      "Actor: Mark Kiely",
+      "Actor: Nicholle Tom"
     ]
   },
   {
@@ -1188,7 +1242,9 @@ const questions = [
       "Storyline: Andrea supports the student while checking facts",
       "Character: Andrea Zuckerman",
       "Character: Sue Scanlon",
-      "Answer fact: Andrea Zuckerman"
+      "Answer fact: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris",
+      "Actor: Nicholle Tom"
     ]
   },
   {
@@ -1224,7 +1280,8 @@ const questions = [
       "Episode title: A Presumption of Innocence",
       "Storyline: Dylan develops an infection and joins cleanup",
       "Character: Dylan McKay",
-      "Answer fact: Polluted seawater"
+      "Answer fact: Polluted seawater",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -1261,7 +1318,9 @@ const questions = [
       "Storyline: Brenda meets Paris holiday romance",
       "Character: Brenda Walsh",
       "Character: Rick",
-      "Answer fact: Rick"
+      "Answer fact: Rick",
+      "Actor: Shannen Doherty",
+      "Actor: Dean Cain"
     ]
   },
   {
@@ -1297,7 +1356,8 @@ const questions = [
       "Episode title: Destiny Rides Again",
       "Storyline: Andrea injured by fleeing motorist",
       "Character: Andrea Zuckerman",
-      "Answer fact: A hit-and-run collision"
+      "Answer fact: A hit-and-run collision",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -1334,7 +1394,9 @@ const questions = [
       "Storyline: Televised AIDS fundraising event",
       "Character: Brandon Walsh",
       "Character: Nikki Witt",
-      "Answer fact: Rosie O'Donnell"
+      "Answer fact: Rosie O'Donnell",
+      "Actor: Jason Priestley",
+      "Actor: Dana Barron"
     ]
   },
   {
@@ -1372,7 +1434,10 @@ const questions = [
       "Character: Brenda Walsh",
       "Character: Dylan McKay",
       "Character: Kelly Taylor",
-      "Answer fact: Dylan and Kelly"
+      "Answer fact: Dylan and Kelly",
+      "Actor: Shannen Doherty",
+      "Actor: Luke Perry",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -1409,7 +1474,8 @@ const questions = [
       "Storyline: Herbert implicated in school break-in",
       "Character: Steve Sanders",
       "Character: Herbert",
-      "Answer fact: Herbert"
+      "Answer fact: Herbert",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -1445,7 +1511,8 @@ const questions = [
       "Episode title: Rebel with a Cause",
       "Storyline: Andrea recuperates from road accident",
       "Character: Andrea Zuckerman",
-      "Answer fact: A wheelchair"
+      "Answer fact: A wheelchair",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -1481,7 +1548,8 @@ const questions = [
       "Episode title: Wild Horses",
       "Storyline: Dylan leaves Beverly Hills",
       "Character: Dylan McKay",
-      "Answer fact: A ranch"
+      "Answer fact: A ranch",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -1518,7 +1586,8 @@ const questions = [
       "Storyline: Steve fears expulsion after computer incident",
       "Character: Steve Sanders",
       "Character: Herbert",
-      "Answer fact: Herbert"
+      "Answer fact: Herbert",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -1556,7 +1625,10 @@ const questions = [
       "Character: Brenda Walsh",
       "Character: Kelly Taylor",
       "Character: Dylan McKay",
-      "Answer fact: Brenda and Kelly"
+      "Answer fact: Brenda and Kelly",
+      "Actor: Shannen Doherty",
+      "Actor: Jennie Garth",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -1593,7 +1665,8 @@ const questions = [
       "Storyline: Family invites homeless veteran",
       "Character: Brandon Walsh",
       "Character: Jack Canner",
-      "Answer fact: Jack Canner"
+      "Answer fact: Jack Canner",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1631,7 +1704,9 @@ const questions = [
       "Character: Jim Walsh",
       "Character: Cindy Walsh",
       "Character: Jack Canner",
-      "Answer fact: Thanksgiving"
+      "Answer fact: Thanksgiving",
+      "Actor: James Eckhouse",
+      "Actor: Carol Potter"
     ]
   },
   {
@@ -1668,7 +1743,9 @@ const questions = [
       "Storyline: Samantha advocates for son",
       "Character: Steve Sanders",
       "Character: Samantha Sanders",
-      "Answer fact: Steve Sanders's"
+      "Answer fact: Steve Sanders's",
+      "Actor: Ian Ziering",
+      "Actor: Christine Belford"
     ]
   },
   {
@@ -1705,7 +1782,9 @@ const questions = [
       "Storyline: Angels prevent catastrophe",
       "Character: Clarence",
       "Character: Miriam",
-      "Answer fact: It's a Wonderful Life"
+      "Answer fact: It's a Wonderful Life",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1742,7 +1821,9 @@ const questions = [
       "Storyline: Christmas bus accident narrowly avoided",
       "Character: Clarence",
       "Character: Miriam",
-      "Answer fact: A bus crash"
+      "Answer fact: A bus crash",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1778,7 +1859,8 @@ const questions = [
       "Episode title: It's a Totally Happening Life",
       "Storyline: Andrea receives college acceptance",
       "Character: Andrea Zuckerman",
-      "Answer fact: Yale"
+      "Answer fact: Yale",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -1815,7 +1897,9 @@ const questions = [
       "Storyline: Illegal high-speed racing",
       "Character: Brandon Walsh",
       "Character: Steve Sanders",
-      "Answer fact: Drag racing"
+      "Answer fact: Drag racing",
+      "Actor: Jason Priestley",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -1852,7 +1936,9 @@ const questions = [
       "Storyline: Racing investigation connects with old accident",
       "Character: Andrea Zuckerman",
       "Character: Brandon Walsh",
-      "Answer fact: Andrea Zuckerman's"
+      "Answer fact: Andrea Zuckerman's",
+      "Actor: Gabrielle Carteris",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1888,7 +1974,8 @@ const questions = [
       "Episode title: The Game Is Chicken",
       "Storyline: David accelerates school studies",
       "Character: David Silver",
-      "Answer fact: He wants to graduate early"
+      "Answer fact: He wants to graduate early",
+      "Actor: Brian Austin Green"
     ]
   },
   {
@@ -1925,7 +2012,9 @@ const questions = [
       "Storyline: Girls' relaxing weekend away",
       "Character: Jackie Taylor",
       "Character: Cindy Walsh",
-      "Answer fact: A spa in Montecito"
+      "Answer fact: A spa in Montecito",
+      "Actor: Ann Gillespie",
+      "Actor: Carol Potter"
     ]
   },
   {
@@ -1962,7 +2051,9 @@ const questions = [
       "Storyline: Worries about their marriages",
       "Character: Jackie Taylor",
       "Character: Cindy Walsh",
-      "Answer fact: That their husbands are unfaithful"
+      "Answer fact: That their husbands are unfaithful",
+      "Actor: Ann Gillespie",
+      "Actor: Carol Potter"
     ]
   },
   {
@@ -1999,7 +2090,9 @@ const questions = [
       "Storyline: Jack McKay nears release",
       "Character: Dylan McKay",
       "Character: Jack McKay",
-      "Answer fact: His father's release from prison"
+      "Answer fact: His father's release from prison",
+      "Actor: Luke Perry",
+      "Actor: Josh Taylor"
     ]
   },
   {
@@ -2036,7 +2129,9 @@ const questions = [
       "Storyline: Jack's release party",
       "Character: Jack McKay",
       "Character: Dylan McKay",
-      "Answer fact: The Bel Age"
+      "Answer fact: The Bel Age",
+      "Actor: Josh Taylor",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -2074,7 +2169,10 @@ const questions = [
       "Character: Dylan McKay",
       "Character: Kelly Taylor",
       "Character: Brenda Walsh",
-      "Answer fact: Kelly Taylor"
+      "Answer fact: Kelly Taylor",
+      "Actor: Luke Perry",
+      "Actor: Jennie Garth",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2110,7 +2208,8 @@ const questions = [
       "Episode title: Back in the High Life Again",
       "Storyline: Brandon's serious gambling loss",
       "Character: Brandon Walsh",
-      "Answer fact: $500"
+      "Answer fact: $500",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2147,7 +2246,9 @@ const questions = [
       "Storyline: Disagreement over Dylan's money",
       "Character: Iris McKay",
       "Character: Dylan McKay",
-      "Answer fact: Iris McKay"
+      "Answer fact: Iris McKay",
+      "Actor: Stephanie Beacham",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -2184,7 +2285,8 @@ const questions = [
       "Storyline: David's proposed record deal",
       "Character: David Silver",
       "Character: Curtis Bray",
-      "Answer fact: Icon Records"
+      "Answer fact: Icon Records",
+      "Actor: Brian Austin Green"
     ]
   },
   {
@@ -2221,7 +2323,9 @@ const questions = [
       "Storyline: Record-deal ultimatum breaks friendship",
       "Character: David Silver",
       "Character: Steve Sanders",
-      "Answer fact: Steve Sanders"
+      "Answer fact: Steve Sanders",
+      "Actor: Brian Austin Green",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -2258,7 +2362,9 @@ const questions = [
       "Storyline: Father and son move aboard yacht",
       "Character: Dylan McKay",
       "Character: Jack McKay",
-      "Answer fact: A yacht"
+      "Answer fact: A yacht",
+      "Actor: Luke Perry",
+      "Actor: Josh Taylor"
     ]
   },
   {
@@ -2295,7 +2401,9 @@ const questions = [
       "Storyline: Girls learn self-defence",
       "Character: Brenda Walsh",
       "Character: Donna Martin",
-      "Answer fact: Self-defence"
+      "Answer fact: Self-defence",
+      "Actor: Shannen Doherty",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -2332,7 +2440,8 @@ const questions = [
       "Storyline: Andrea dates Jordan",
       "Character: Andrea Zuckerman",
       "Character: Jordan",
-      "Answer fact: Jordan"
+      "Answer fact: Jordan",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -2369,7 +2478,9 @@ const questions = [
       "Storyline: Dylan grieves father's death",
       "Character: Dylan McKay",
       "Character: Jack McKay",
-      "Answer fact: His father Jack"
+      "Answer fact: His father Jack",
+      "Actor: Luke Perry",
+      "Actor: Josh Taylor"
     ]
   },
   {
@@ -2406,7 +2517,9 @@ const questions = [
       "Storyline: David intervenes during Dylan's relapse risk",
       "Character: David Silver",
       "Character: Dylan McKay",
-      "Answer fact: David Silver"
+      "Answer fact: David Silver",
+      "Actor: Brian Austin Green",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -2443,7 +2556,9 @@ const questions = [
       "Storyline: David makes time for funeral",
       "Character: David Silver",
       "Character: Jack McKay",
-      "Answer fact: A recording session"
+      "Answer fact: A recording session",
+      "Actor: Brian Austin Green",
+      "Actor: Josh Taylor"
     ]
   },
   {
@@ -2480,7 +2595,8 @@ const questions = [
       "Storyline: Duke chases gambling debt",
       "Character: Brandon Walsh",
       "Character: Duke",
-      "Answer fact: $1,500"
+      "Answer fact: $1,500",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2517,7 +2633,9 @@ const questions = [
       "Storyline: Andrea suggests writing as therapy",
       "Character: Andrea Zuckerman",
       "Character: Dylan McKay",
-      "Answer fact: Andrea Zuckerman"
+      "Answer fact: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -2554,7 +2672,8 @@ const questions = [
       "Storyline: David loses record deal",
       "Character: David Silver",
       "Character: Serge",
-      "Answer fact: The recording is out of tune"
+      "Answer fact: The recording is out of tune",
+      "Actor: Brian Austin Green"
     ]
   },
   {
@@ -2590,7 +2709,8 @@ const questions = [
       "Episode title: Perfectly Perfect",
       "Storyline: Kelly's dangerous pill use",
       "Character: Kelly Taylor",
-      "Answer fact: Diet pills"
+      "Answer fact: Diet pills",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -2626,7 +2746,8 @@ const questions = [
       "Episode title: Perfectly Perfect",
       "Storyline: Kelly's surprise birthday party",
       "Character: Kelly Taylor",
-      "Answer fact: Her eighteenth"
+      "Answer fact: Her eighteenth",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -2664,7 +2785,9 @@ const questions = [
       "Character: Celeste Lundy",
       "Character: Brandon Walsh",
       "Character: Steve Sanders",
-      "Answer fact: Celeste Lundy"
+      "Answer fact: Celeste Lundy",
+      "Actor: Jason Priestley",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -2700,7 +2823,8 @@ const questions = [
       "Episode title: Senior Poll",
       "Storyline: Senior poll gives Kelly unwelcome attention",
       "Character: Kelly Taylor",
-      "Answer fact: Most Beautiful"
+      "Answer fact: Most Beautiful",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -2736,7 +2860,8 @@ const questions = [
       "Episode title: Senior Poll",
       "Storyline: Brenda considers returning to Minnesota",
       "Character: Brenda Walsh",
-      "Answer fact: The University of Minnesota"
+      "Answer fact: The University of Minnesota",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2773,7 +2898,9 @@ const questions = [
       "Storyline: Arena prize shot",
       "Character: Steve Sanders",
       "Character: Brandon Walsh",
-      "Answer fact: The Los Angeles Lakers"
+      "Answer fact: The Los Angeles Lakers",
+      "Actor: Ian Ziering",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2811,7 +2938,10 @@ const questions = [
       "Character: Donna Martin",
       "Character: David Silver",
       "Character: Kelly Taylor",
-      "Answer fact: Magic Mountain"
+      "Answer fact: Magic Mountain",
+      "Actor: Tori Spelling",
+      "Actor: Brian Austin Green",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -2847,7 +2977,8 @@ const questions = [
       "Episode title: She Came in Through the Bathroom Window",
       "Storyline: Robbery on amusement park trip",
       "Character: Donna Martin",
-      "Answer fact: She is mugged"
+      "Answer fact: She is mugged",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -2885,7 +3016,10 @@ const questions = [
       "Character: Brandon Walsh",
       "Character: Dylan McKay",
       "Character: Steve Sanders",
-      "Answer fact: Burt Reynolds"
+      "Answer fact: Burt Reynolds",
+      "Actor: Jason Priestley",
+      "Actor: Luke Perry",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -2922,7 +3056,9 @@ const questions = [
       "Storyline: Alcohol restriction before graduation",
       "Character: Donna Martin",
       "Character: Brandon Walsh",
-      "Answer fact: The senior prom"
+      "Answer fact: The senior prom",
+      "Actor: Tori Spelling",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2959,7 +3095,9 @@ const questions = [
       "Storyline: School board's no-alcohol policy",
       "Character: Donna Martin",
       "Character: Felice Martin",
-      "Answer fact: Exclusion from graduation"
+      "Answer fact: Exclusion from graduation",
+      "Actor: Tori Spelling",
+      "Actor: Katherine Cannon"
     ]
   },
   {
@@ -2996,7 +3134,9 @@ const questions = [
       "Storyline: Alcohol served before the prom",
       "Character: Mel Silver",
       "Character: Donna Martin",
-      "Answer fact: Mel Silver"
+      "Answer fact: Mel Silver",
+      "Actor: Matthew Laurance",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -3032,7 +3172,8 @@ const questions = [
       "Episode title: Something in the Air",
       "Storyline: Donna's discipline hearing",
       "Character: Donna Martin",
-      "Answer fact: Donna Martin"
+      "Answer fact: Donna Martin",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -3070,7 +3211,10 @@ const questions = [
       "Character: Brandon Walsh",
       "Character: Donna Martin",
       "Character: Gil Meyers",
-      "Answer fact: A walkout during final examinations"
+      "Answer fact: A walkout during final examinations",
+      "Actor: Jason Priestley",
+      "Actor: Tori Spelling",
+      "Actor: Mark Kiely"
     ]
   },
   {
@@ -3107,7 +3251,9 @@ const questions = [
       "Storyline: Gil proposes walkout",
       "Character: Gil Meyers",
       "Character: Brandon Walsh",
-      "Answer fact: Gil Meyers"
+      "Answer fact: Gil Meyers",
+      "Actor: Mark Kiely",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -3144,7 +3290,9 @@ const questions = [
       "Storyline: Brenda's college decision",
       "Character: Brenda Walsh",
       "Character: Brandon Walsh",
-      "Answer fact: The University of Minnesota"
+      "Answer fact: The University of Minnesota",
+      "Actor: Shannen Doherty",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -3180,7 +3328,8 @@ const questions = [
       "Episode title: Commencement (1)",
       "Storyline: Andrea considers Yale admission",
       "Character: Andrea Zuckerman",
-      "Answer fact: Yale University"
+      "Answer fact: Yale University",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -3217,7 +3366,9 @@ const questions = [
       "Storyline: Steve's anonymous donation",
       "Character: Steve Sanders",
       "Character: Mrs Teasley",
-      "Answer fact: Mrs Teasley"
+      "Answer fact: Mrs Teasley",
+      "Actor: Ian Ziering",
+      "Actor: Denise Dowse"
     ]
   },
   {
@@ -3254,7 +3405,9 @@ const questions = [
       "Storyline: Final group campout",
       "Character: Brandon Walsh",
       "Character: Brenda Walsh",
-      "Answer fact: The Hollywood Hills"
+      "Answer fact: The Hollywood Hills",
+      "Actor: Jason Priestley",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -3291,7 +3444,9 @@ const questions = [
       "Storyline: Senior class remembered",
       "Character: Andrea Zuckerman",
       "Character: Steve Sanders",
-      "Answer fact: The Class of 1993"
+      "Answer fact: The Class of 1993",
+      "Actor: Gabrielle Carteris",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -3329,7 +3484,10 @@ const questions = [
       "Character: Brandon Walsh",
       "Character: Kelly Taylor",
       "Character: Donna Martin",
-      "Answer fact: Camping under the stars"
+      "Answer fact: Camping under the stars",
+      "Actor: Jason Priestley",
+      "Actor: Jennie Garth",
+      "Actor: Tori Spelling"
     ]
   }
 ];

@@ -43,7 +43,11 @@ const questions = [
       "Storyline: Walsh family relocation",
       "Person: Brandon Walsh",
       "Person: Brenda Walsh",
-      "Answer fact: Minnesota"
+      "Answer fact: Minnesota",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -80,7 +84,11 @@ const questions = [
       "Storyline: Brandon joins student newspaper",
       "Person: Andrea Zuckerman",
       "Person: Brandon Walsh",
-      "Answer fact: Andrea Zuckerman"
+      "Answer fact: Andrea Zuckerman",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -117,7 +125,10 @@ const questions = [
       "Storyline: Rumour following Brandon's first date",
       "Person: Brandon Walsh",
       "Person: Marianne",
-      "Answer fact: Marianne"
+      "Answer fact: Marianne",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Marianne"
     ]
   },
   {
@@ -154,7 +165,11 @@ const questions = [
       "Storyline: New friendship masks a troubled private life",
       "Person: Brandon Walsh",
       "Person: Dylan McKay",
-      "Answer fact: Dylan McKay"
+      "Answer fact: Dylan McKay",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -191,7 +206,11 @@ const questions = [
       "Storyline: Dylan conceals where he lives",
       "Person: Dylan McKay",
       "Person: Brandon Walsh",
-      "Answer fact: He is living in a hotel"
+      "Answer fact: He is living in a hotel",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -228,7 +247,10 @@ const questions = [
       "Storyline: Sarah nearly drowns at the beach",
       "Person: Sarah",
       "Person: Brandon Walsh",
-      "Answer fact: Surfing"
+      "Answer fact: Surfing",
+      "Character: Sarah",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -265,7 +287,10 @@ const questions = [
       "Storyline: Shoplifting and mistrust",
       "Person: Brenda Walsh",
       "Person: Tiffany",
-      "Answer fact: Tiffany"
+      "Answer fact: Tiffany",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Tiffany"
     ]
   },
   {
@@ -302,7 +327,11 @@ const questions = [
       "Storyline: Brandon changes jobs over unfair treatment",
       "Person: Brandon Walsh",
       "Person: Nat Bussichio",
-      "Answer fact: The Peach Pit"
+      "Answer fact: The Peach Pit",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Nat Bussichio",
+      "Actor: Joe E. Tata"
     ]
   },
   {
@@ -339,7 +368,11 @@ const questions = [
       "Storyline: First meeting with local diner owner",
       "Person: Nat Bussichio",
       "Person: Brandon Walsh",
-      "Answer fact: Nat Bussichio"
+      "Answer fact: Nat Bussichio",
+      "Character: Nat Bussichio",
+      "Actor: Joe E. Tata",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -376,7 +409,10 @@ const questions = [
       "Storyline: Visit from Minneapolis and old relationship",
       "Person: Brandon Walsh",
       "Person: Sheryl",
-      "Answer fact: His former girlfriend Sheryl"
+      "Answer fact: His former girlfriend Sheryl",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Sheryl"
     ]
   },
   {
@@ -414,7 +450,12 @@ const questions = [
       "Person: Brandon Walsh",
       "Person: Dylan McKay",
       "Person: Sheryl",
-      "Answer fact: He thinks Dylan is pursuing Sheryl"
+      "Answer fact: He thinks Dylan is pursuing Sheryl",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry",
+      "Character: Sheryl"
     ]
   },
   {
@@ -450,7 +491,9 @@ const questions = [
       "Episode title: The First Time",
       "Storyline: Crush becomes awkward after babysitting",
       "Person: Brenda Walsh",
-      "Answer fact: Her algebra teacher"
+      "Answer fact: Her algebra teacher",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -487,7 +530,11 @@ const questions = [
       "Storyline: Brandon wants to impress his father",
       "Person: Brandon Walsh",
       "Person: Jim Walsh",
-      "Answer fact: Basketball"
+      "Answer fact: Basketball",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse"
     ]
   },
   {
@@ -524,7 +571,11 @@ const questions = [
       "Storyline: Eligibility and unfair assumptions about a rival",
       "Person: Brandon Walsh",
       "Person: Andrea Zuckerman",
-      "Answer fact: Recruiting players from outside the school district"
+      "Answer fact: Recruiting players from outside the school district",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -561,7 +612,11 @@ const questions = [
       "Storyline: Driving lessons and missing car",
       "Person: Brenda Walsh",
       "Person: Kelly Taylor",
-      "Answer fact: She runs out of petrol and loses track of it"
+      "Answer fact: She runs out of petrol and loses track of it",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -598,7 +653,11 @@ const questions = [
       "Storyline: Steve's stolen examinations",
       "Person: Steve Sanders",
       "Person: Brandon Walsh",
-      "Answer fact: By obtaining the exams before they are sat"
+      "Answer fact: By obtaining the exams before they are sat",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -635,7 +694,11 @@ const questions = [
       "Storyline: Hair colour mishap and Dylan's attention",
       "Person: Brenda Walsh",
       "Person: Dylan McKay",
-      "Answer fact: Blonde"
+      "Answer fact: Blonde",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -672,7 +735,11 @@ const questions = [
       "Storyline: Academic pressure and temptation to cheat",
       "Person: Brandon Walsh",
       "Person: Steve Sanders",
-      "Answer fact: A severe grading curve"
+      "Answer fact: A severe grading curve",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -710,7 +777,13 @@ const questions = [
       "Person: Brenda Walsh",
       "Person: Kelly Taylor",
       "Person: Jackie Taylor",
-      "Answer fact: Kelly Taylor's"
+      "Answer fact: Kelly Taylor's",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth",
+      "Character: Jackie Taylor",
+      "Actor: Ann Gillespie"
     ]
   },
   {
@@ -747,7 +820,11 @@ const questions = [
       "Storyline: Jackie's relapse interrupts fashion event",
       "Person: Jackie Taylor",
       "Person: Kelly Taylor",
-      "Answer fact: A mother-and-daughter fashion show"
+      "Answer fact: A mother-and-daughter fashion show",
+      "Character: Jackie Taylor",
+      "Actor: Ann Gillespie",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -785,7 +862,13 @@ const questions = [
       "Person: David Silver",
       "Person: Kelly Taylor",
       "Person: Jackie Taylor",
-      "Answer fact: A videotape of the event"
+      "Answer fact: A videotape of the event",
+      "Character: David Silver",
+      "Actor: Brian Austin Green",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth",
+      "Character: Jackie Taylor",
+      "Actor: Ann Gillespie"
     ]
   },
   {
@@ -823,7 +906,12 @@ const questions = [
       "Person: Cindy Walsh",
       "Person: Jim Walsh",
       "Person: Glen",
-      "Answer fact: Glen"
+      "Answer fact: Glen",
+      "Character: Cindy Walsh",
+      "Actor: Carol Potter",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse",
+      "Character: Glen"
     ]
   },
   {
@@ -860,7 +948,11 @@ const questions = [
       "Storyline: Twins take part in research study",
       "Person: Brandon Walsh",
       "Person: Brenda Walsh",
-      "Answer fact: UCLA"
+      "Answer fact: UCLA",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -896,7 +988,9 @@ const questions = [
       "Episode title: The 17-Year Itch",
       "Storyline: David competes to run school radio",
       "Person: David Silver",
-      "Answer fact: School radio DJ"
+      "Answer fact: School radio DJ",
+      "Character: David Silver",
+      "Actor: Brian Austin Green"
     ]
   },
   {
@@ -932,7 +1026,9 @@ const questions = [
       "Episode title: The Gentle Art of Listening",
       "Storyline: Brenda trains as a crisis-line volunteer",
       "Person: Brenda Walsh",
-      "Answer fact: A teen crisis hotline"
+      "Answer fact: A teen crisis hotline",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -968,7 +1064,9 @@ const questions = [
       "Episode title: The Gentle Art of Listening",
       "Storyline: Confidential after-hours call",
       "Person: Brenda Walsh",
-      "Answer fact: A call from a date-rape victim"
+      "Answer fact: A call from a date-rape victim",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -1005,7 +1103,10 @@ const questions = [
       "Storyline: Brandon misreads an older woman's interest",
       "Person: Brandon Walsh",
       "Person: Nina",
-      "Answer fact: Masseuse"
+      "Answer fact: Masseuse",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Nina"
     ]
   },
   {
@@ -1042,7 +1143,11 @@ const questions = [
       "Storyline: Brenda and Dylan's first relationship",
       "Person: Brenda Walsh",
       "Person: Dylan McKay",
-      "Answer fact: Dylan McKay"
+      "Answer fact: Dylan McKay",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -1079,7 +1184,11 @@ const questions = [
       "Storyline: Jack McKay's legal troubles",
       "Person: Dylan McKay",
       "Person: Jack McKay",
-      "Answer fact: To avoid an indictment"
+      "Answer fact: To avoid an indictment",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry",
+      "Character: Jack McKay",
+      "Actor: Josh Taylor"
     ]
   },
   {
@@ -1116,7 +1225,10 @@ const questions = [
       "Storyline: Stacy Sloan's school health talk",
       "Person: Stacy Sloan",
       "Person: Brenda Walsh",
-      "Answer fact: AIDS"
+      "Answer fact: AIDS",
+      "Character: Stacy Sloan",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -1152,7 +1264,9 @@ const questions = [
       "Episode title: B.Y.O.B.",
       "Storyline: Drunken car accident after house party",
       "Person: Brandon Walsh",
-      "Answer fact: Drink-driving"
+      "Answer fact: Drink-driving",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1189,7 +1303,11 @@ const questions = [
       "Storyline: Dylan shares experience of alcoholism",
       "Person: Dylan McKay",
       "Person: Brandon Walsh",
-      "Answer fact: An Alcoholics Anonymous meeting"
+      "Answer fact: An Alcoholics Anonymous meeting",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1226,7 +1344,11 @@ const questions = [
       "Storyline: Parents' weekend retreat leaves twins at home",
       "Person: Jim Walsh",
       "Person: Cindy Walsh",
-      "Answer fact: Palm Springs"
+      "Answer fact: Palm Springs",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse",
+      "Character: Cindy Walsh",
+      "Actor: Carol Potter"
     ]
   },
   {
@@ -1263,7 +1385,10 @@ const questions = [
       "Storyline: Teen motherhood and dating",
       "Person: Brandon Walsh",
       "Person: Melissa Coolidge",
-      "Answer fact: She has an infant son"
+      "Answer fact: She has an infant son",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Melissa Coolidge"
     ]
   },
   {
@@ -1300,7 +1425,11 @@ const questions = [
       "Storyline: Brandon takes care of a baby",
       "Person: Melissa Coolidge",
       "Person: Joey",
-      "Answer fact: Joey"
+      "Answer fact: Joey",
+      "Character: Melissa Coolidge",
+      "Character: Joey",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1337,7 +1466,10 @@ const questions = [
       "Storyline: College admissions interview and childcare",
       "Person: Melissa Coolidge",
       "Person: Brandon Walsh",
-      "Answer fact: Harvard"
+      "Answer fact: Harvard",
+      "Character: Melissa Coolidge",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1375,7 +1507,12 @@ const questions = [
       "Person: Amanda",
       "Person: Brenda Walsh",
       "Person: Kelly Taylor",
-      "Answer fact: Amanda"
+      "Answer fact: Amanda",
+      "Character: Amanda",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -1412,7 +1549,10 @@ const questions = [
       "Storyline: Revelation about Amanda's pill misuse",
       "Person: Amanda",
       "Person: Kelly Taylor",
-      "Answer fact: An addiction to diet pills"
+      "Answer fact: An addiction to diet pills",
+      "Character: Amanda",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth"
     ]
   },
   {
@@ -1449,7 +1589,11 @@ const questions = [
       "Storyline: Steve's car taken by two strangers",
       "Person: Steve Sanders",
       "Person: Brandon Walsh",
-      "Answer fact: The girls steal it"
+      "Answer fact: The girls steal it",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1486,7 +1630,10 @@ const questions = [
       "Storyline: Protected witness waiting to testify",
       "Person: Karla",
       "Person: Brandon Walsh",
-      "Answer fact: She witnessed a fatal drive-by shooting"
+      "Answer fact: She witnessed a fatal drive-by shooting",
+      "Character: Karla",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1524,7 +1671,12 @@ const questions = [
       "Person: Karla",
       "Person: Jim Walsh",
       "Person: Cindy Walsh",
-      "Answer fact: Their home address"
+      "Answer fact: Their home address",
+      "Character: Karla",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse",
+      "Character: Cindy Walsh",
+      "Actor: Carol Potter"
     ]
   },
   {
@@ -1560,7 +1712,9 @@ const questions = [
       "Episode title: East Side Story",
       "Storyline: Plan to book a performer for the dance",
       "Person: David Silver",
-      "Answer fact: MC Hammer"
+      "Answer fact: MC Hammer",
+      "Character: David Silver",
+      "Actor: Brian Austin Green"
     ]
   },
   {
@@ -1597,7 +1751,11 @@ const questions = [
       "Storyline: Unexpected visit from the grandparents",
       "Person: David Silver",
       "Person: Steve Sanders",
-      "Answer fact: David Silver's"
+      "Answer fact: David Silver's",
+      "Character: David Silver",
+      "Actor: Brian Austin Green",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -1634,7 +1792,11 @@ const questions = [
       "Storyline: Brenda lost during Palm Springs trip",
       "Person: Brenda Walsh",
       "Person: Dylan McKay",
-      "Answer fact: In a linen closet"
+      "Answer fact: In a linen closet",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -1671,7 +1833,11 @@ const questions = [
       "Storyline: A young thief reveals hardship",
       "Person: Brandon Walsh",
       "Person: Nat Bussichio",
-      "Answer fact: His family is homeless"
+      "Answer fact: His family is homeless",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Nat Bussichio",
+      "Actor: Joe E. Tata"
     ]
   },
   {
@@ -1708,7 +1874,10 @@ const questions = [
       "Storyline: Brandon's brief show-business experience",
       "Person: Brandon Walsh",
       "Person: Lydia Leeds",
-      "Answer fact: Keep It Together"
+      "Answer fact: Keep It Together",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Lydia Leeds"
     ]
   },
   {
@@ -1745,7 +1914,10 @@ const questions = [
       "Storyline: TV star's scheme makes Brandon a pawn",
       "Person: Lydia Leeds",
       "Person: Brandon Walsh",
-      "Answer fact: Lydia Leeds"
+      "Answer fact: Lydia Leeds",
+      "Character: Lydia Leeds",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -1782,7 +1954,11 @@ const questions = [
       "Storyline: Brenda's alter ego behind the Peach Pit counter",
       "Person: Brenda Walsh",
       "Person: Nat Bussichio",
-      "Answer fact: Laverne"
+      "Answer fact: Laverne",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Nat Bussichio",
+      "Actor: Joe E. Tata"
     ]
   },
   {
@@ -1819,7 +1995,11 @@ const questions = [
       "Storyline: Brandon's election campaign",
       "Person: Brandon Walsh",
       "Person: Andrea Zuckerman",
-      "Answer fact: Class president"
+      "Answer fact: Class president",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -1856,7 +2036,10 @@ const questions = [
       "Storyline: Brenda admires Sky's unconventional lifestyle",
       "Person: Sky",
       "Person: Brenda Walsh",
-      "Answer fact: Performance artist"
+      "Answer fact: Performance artist",
+      "Character: Sky",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -1893,7 +2076,10 @@ const questions = [
       "Storyline: Brenda experiments with dropping out",
       "Person: Brenda Walsh",
       "Person: Sky",
-      "Answer fact: A GED"
+      "Answer fact: A GED",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Sky"
     ]
   },
   {
@@ -1930,7 +2116,11 @@ const questions = [
       "Storyline: Brenda undergoes breast biopsy",
       "Person: Brenda Walsh",
       "Person: Cindy Walsh",
-      "Answer fact: She finds a lump in her breast"
+      "Answer fact: She finds a lump in her breast",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Cindy Walsh",
+      "Actor: Carol Potter"
     ]
   },
   {
@@ -1967,7 +2157,10 @@ const questions = [
       "Storyline: Family memory deepens cancer scare",
       "Person: Cindy Walsh",
       "Person: Sheila",
-      "Answer fact: Cindy's sister Sheila"
+      "Answer fact: Cindy's sister Sheila",
+      "Character: Cindy Walsh",
+      "Actor: Carol Potter",
+      "Character: Sheila"
     ]
   },
   {
@@ -2004,7 +2197,11 @@ const questions = [
       "Storyline: Unexpected romance during exam preparation",
       "Person: Andrea Zuckerman",
       "Person: Steve Sanders",
-      "Answer fact: Andrea and Steve"
+      "Answer fact: Andrea and Steve",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -2041,7 +2238,10 @@ const questions = [
       "Storyline: Brandon fears for a troubled classmate",
       "Person: Roger Azarian",
       "Person: Brandon Walsh",
-      "Answer fact: Roger Azarian"
+      "Answer fact: Roger Azarian",
+      "Character: Roger Azarian",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2078,7 +2278,10 @@ const questions = [
       "Storyline: Roger's mental-health crisis",
       "Person: Roger Azarian",
       "Person: Brandon Walsh",
-      "Answer fact: Roger is contemplating suicide"
+      "Answer fact: Roger is contemplating suicide",
+      "Character: Roger Azarian",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2114,7 +2317,9 @@ const questions = [
       "Episode title: April Is the Cruelest Month",
       "Storyline: Donna seeks help for test-taking difficulties",
       "Person: Donna Martin",
-      "Answer fact: A learning disability"
+      "Answer fact: A learning disability",
+      "Character: Donna Martin",
+      "Actor: Tori Spelling"
     ]
   },
   {
@@ -2152,7 +2357,13 @@ const questions = [
       "Person: Jim Walsh",
       "Person: Brandon Walsh",
       "Person: Steve Sanders",
-      "Answer fact: Jim Walsh"
+      "Answer fact: Jim Walsh",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -2188,7 +2399,9 @@ const questions = [
       "Episode title: Spring Training",
       "Storyline: Brenda tries to rehome an animal",
       "Person: Brenda Walsh",
-      "Answer fact: A stray dog"
+      "Answer fact: A stray dog",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2225,7 +2438,11 @@ const questions = [
       "Storyline: Little League rivalry and sportsmanship",
       "Person: Nat Bussichio",
       "Person: Brandon Walsh",
-      "Answer fact: Nat Bussichio"
+      "Answer fact: Nat Bussichio",
+      "Character: Nat Bussichio",
+      "Actor: Joe E. Tata",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley"
     ]
   },
   {
@@ -2263,7 +2480,13 @@ const questions = [
       "Person: Kelly Taylor",
       "Person: Brandon Walsh",
       "Person: Andrea Zuckerman",
-      "Answer fact: Kelly Taylor"
+      "Answer fact: Kelly Taylor",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris"
     ]
   },
   {
@@ -2299,7 +2522,9 @@ const questions = [
       "Episode title: Spring Dance",
       "Storyline: Steve's birthday and family revelation",
       "Person: Steve Sanders",
-      "Answer fact: He was adopted"
+      "Answer fact: He was adopted",
+      "Character: Steve Sanders",
+      "Actor: Ian Ziering"
     ]
   },
   {
@@ -2336,7 +2561,11 @@ const questions = [
       "Storyline: Brenda and Dylan spend the night together",
       "Person: Brenda Walsh",
       "Person: Dylan McKay",
-      "Answer fact: Dylan McKay"
+      "Answer fact: Dylan McKay",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty",
+      "Character: Dylan McKay",
+      "Actor: Luke Perry"
     ]
   },
   {
@@ -2374,7 +2603,13 @@ const questions = [
       "Person: Jim Walsh",
       "Person: Brandon Walsh",
       "Person: Brenda Walsh",
-      "Answer fact: Minneapolis"
+      "Answer fact: Minneapolis",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2412,7 +2647,13 @@ const questions = [
       "Person: Kelly Taylor",
       "Person: Brandon Walsh",
       "Person: Brenda Walsh",
-      "Answer fact: The Peach Pit"
+      "Answer fact: The Peach Pit",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth",
+      "Character: Brandon Walsh",
+      "Actor: Jason Priestley",
+      "Character: Brenda Walsh",
+      "Actor: Shannen Doherty"
     ]
   },
   {
@@ -2449,7 +2690,11 @@ const questions = [
       "Storyline: Jim puts the family before relocation",
       "Person: Jim Walsh",
       "Person: Cindy Walsh",
-      "Answer fact: Jim turns down the promotion"
+      "Answer fact: Jim turns down the promotion",
+      "Character: Jim Walsh",
+      "Actor: James Eckhouse",
+      "Character: Cindy Walsh",
+      "Actor: Carol Potter"
     ]
   }
 ];
