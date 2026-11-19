@@ -875,7 +875,7 @@ const questions = [
     "id": "tv_31383",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which actor portrays Eddie's recently released father Armin in this episode?",
+    "question": "In Blue Bloods, which actor plays Armin Janko when Eddie's father moves in after his release from prison?",
     "answers": [
       "William Sadler",
       "Michael Cullen",
@@ -1955,14 +1955,14 @@ const questions = [
     "id": "tv_31413",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which actor and singer plays Waylon Gates?",
+    "question": "In Blue Bloods, which retired police academy instructor of Jamie is implicated in threatening someone over gambling debts?",
     "answers": [
-      "Kris Kristofferson",
-      "Tim McGraw",
-      "Dwight Yoakam",
-      "Lyle Lovett"
+      "Sergeant Kevin Coolidge",
+      "Sergeant Anthony Renzulli",
+      "Lieutenant Sid Gormley",
+      "Detective Kenneth Troy"
     ],
-    "correctAnswer": "Lyle Lovett",
+    "correctAnswer": "Sergeant Kevin Coolidge",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -1981,10 +1981,10 @@ const questions = [
       "Episode: S12E10",
       "Episode title: Old Friends",
       "Original airdate: 2022-01-07",
-      "Storyline: Lyle Lovett guest-star appearance",
-      "Character: Texas Ranger Waylon Gates",
-      "Actor: Lyle Lovett",
-      "Answer fact: Lyle Lovett"
+      "Storyline: Jamie learns retired academy instructor Kevin Coolidge is collecting gambling debts",
+      "Character: Jamie Reagan",
+      "Actor: Will Estes",
+      "Answer fact: Sergeant Kevin Coolidge"
     ]
   },
   {

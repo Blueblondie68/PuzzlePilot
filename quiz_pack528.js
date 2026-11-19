@@ -302,7 +302,7 @@ const questions = [
     "id": "tv_30481",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which three Reagans work together to seek justice in the case?",
+    "question": "In Blue Bloods, which three Reagans work together after diplomatic immunity obstructs a rape prosecution?",
     "answers": [
       "Jamie, Henry and Linda",
       "Erin, Frank and Danny",
@@ -986,7 +986,7 @@ const questions = [
     "id": "tv_30500",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what is the murder victim's job at the beginning of the investigation?",
+    "question": "In Blue Bloods, what is the occupation of the man whose murder draws Danny into the city's nightlife?",
     "answers": [
       "Bank cashier",
       "Schoolteacher",
@@ -1526,7 +1526,7 @@ const questions = [
     "id": "tv_30515",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, who survives an assassination attempt in this episode?",
+    "question": "In Blue Bloods, who is targeted by an assassin whose motive Danny must determine?",
     "answers": [
       "Danny Reagan",
       "Jamie Reagan",
@@ -1634,7 +1634,7 @@ const questions = [
     "id": "tv_30518",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, where is a young woman found murdered?",
+    "question": "In Blue Bloods, where is a young woman found murdered in a case involving hotel-security footage?",
     "answers": [
       "At a debutante ball",
       "At a police graduation",

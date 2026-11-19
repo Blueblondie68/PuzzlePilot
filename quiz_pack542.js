@@ -409,7 +409,7 @@ const questions = [
     "id": "tv_31623",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which friend of Frank has died before this episode's events?",
+    "question": "In Blue Bloods, which long-time friend of Frank has died before Frank attempts to help his daughter Tess?",
     "answers": [
       "Gus Vanderlip",
       "Archbishop Kearns",
@@ -2605,14 +2605,14 @@ const questions = [
     "id": "tv_31684",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which former police partner of Eddie is now working as a social worker?",
+    "question": "In Blue Bloods, which organisation withdraws a planned service award for Danny Reagan?",
     "answers": [
-      "Jackie Curatola",
-      "Maria Baez",
-      "Rachel Witten",
-      "Abigail Baker"
+      "The city's Irish Society",
+      "The Police Benevolent Association",
+      "The National Police Memorial Foundation",
+      "The District Attorney's Office"
     ],
-    "correctAnswer": "Rachel Witten",
+    "correctAnswer": "The city's Irish Society",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -2631,10 +2631,10 @@ const questions = [
       "Episode: S14E14",
       "Episode title: New York Minute",
       "Original airdate: 2024-11-08",
-      "Storyline: Witten returns as social worker",
-      "Character: Rachel Witten",
-      "Actor: Lauren Patten",
-      "Answer fact: Rachel Witten"
+      "Storyline: Irish Society withdraws proposed police service award for Danny",
+      "Character: Frank Reagan",
+      "Actor: Tom Selleck",
+      "Answer fact: The city's Irish Society"
     ]
   },
   {

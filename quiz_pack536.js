@@ -452,15 +452,15 @@ const questions = [
     "id": "tv_31016",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which disaster links Frank and a seriously ill old colleague through their service at Ground Zero?",
+    "question": "In Blue Bloods, which former police partner of Frank is dying from an illness linked to their work at Ground Zero?",
     "answers": [
-      "Hurricane Katrina",
-      "The 1993 World Trade Center attack",
-      "The 2003 North American blackout",
-      "The September 11 attacks"
+      "John McKenna",
+      "Bill Connors",
+      "Sid Gormley",
+      "Lenny Ross"
     ],
-    "correctAnswer": "The September 11 attacks",
-    "difficulty": "Medium",
+    "correctAnswer": "John McKenna",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -478,10 +478,10 @@ const questions = [
       "Episode: S02E12",
       "Episode title: The Job",
       "Original airdate: 2012-02-03",
-      "Storyline: Frank recalls Ground Zero work with ill colleague",
+      "Storyline: Frank mourns former partner John McKenna suffering 9/11-related illness",
       "Character: Frank Reagan",
       "Actor: Tom Selleck",
-      "Answer fact: The September 11 attacks"
+      "Answer fact: John McKenna"
     ]
   },
   {

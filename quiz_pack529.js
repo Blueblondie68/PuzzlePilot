@@ -1778,7 +1778,7 @@ const questions = [
     "id": "tv_30588",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what happens to the defendant's lawyer during that case?",
+    "question": "In Blue Bloods, what happens to the lawyer defending a woman whom Erin is prosecuting for her husband's murder?",
     "answers": [
       "The lawyer is murdered",
       "The lawyer becomes a judge",

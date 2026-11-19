@@ -1885,7 +1885,7 @@ const questions = [
     "id": "tv_30990",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which police officer is shot while on duty in this episode?",
+    "question": "In Blue Bloods, which officer is shot while she and Jamie respond to a domestic dispute?",
     "answers": [
       "Maria Baez",
       "Eddie Janko",

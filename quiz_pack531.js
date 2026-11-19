@@ -1778,7 +1778,7 @@ const questions = [
     "id": "tv_30723",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what makes one victim particularly vulnerable in this case?",
+    "question": "In Blue Bloods, what makes the woman attacked by teenagers playing the 'knockout game' especially vulnerable?",
     "answers": [
       "She is pregnant",
       "She is a police cadet",

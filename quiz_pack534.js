@@ -158,14 +158,14 @@ const questions = [
     "id": "tv_30876",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, why do officers ridicule Frank in this episode?",
+    "question": "In Blue Bloods, whose elderly mother is defrauded by con artists, prompting Erin to help seek justice?",
     "answers": [
-      "He declares a police pay freeze",
-      "He disciplines a disrespectful fellow officer",
-      "He refuses to attend an awards ceremony",
-      "He takes a leave of absence"
+      "Anthony Abetemarco's",
+      "Sid Gormley's",
+      "Frank Reagan's",
+      "Danny Reagan's"
     ],
-    "correctAnswer": "He disciplines a disrespectful fellow officer",
+    "correctAnswer": "Anthony Abetemarco's",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -184,10 +184,10 @@ const questions = [
       "Episode: S07E02",
       "Episode title: Good Cop Bad Cop",
       "Original airdate: 2016-09-30",
-      "Storyline: Frank disciplines disrespectful cop despite disapproval",
-      "Character: Frank Reagan",
-      "Actor: Tom Selleck",
-      "Answer fact: He disciplines a disrespectful fellow officer"
+      "Storyline: Anthony's mother is exploited by scammers and Erin helps with prosecution",
+      "Character: Anthony Abetemarco",
+      "Actor: Steve Schirripa",
+      "Answer fact: Anthony Abetemarco's"
     ]
   },
   {

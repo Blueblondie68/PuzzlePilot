@@ -1957,7 +1957,7 @@ const questions = [
     "id": "tv_30659",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, where is the religious young woman found murdered?",
+    "question": "In Blue Bloods, where is the body of a devout young woman found during the investigation into her secret romantic life?",
     "answers": [
       "A cathedral",
       "A subway station",

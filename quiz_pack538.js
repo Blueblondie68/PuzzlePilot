@@ -12,7 +12,7 @@ const questions = [
     "id": "tv_31136",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which psychic medium returns to help Danny investigate a long-unsolved killing?",
+    "question": "In Blue Bloods, which psychic medium returns to help Danny investigate a long-unsolved killing?",
     "answers": [
       "Rachel Witten",
       "Kelly Peterson",
@@ -48,7 +48,7 @@ const questions = [
     "id": "tv_31137",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What danger does Maggie face after interfering with the serial killer's next attack?",
+    "question": "In Blue Bloods, what danger does Maggie face after interfering with the serial killer's next attack?",
     "answers": [
       "She is framed for theft",
       "She is kidnapped and threatened with an explosion",
@@ -84,7 +84,7 @@ const questions = [
     "id": "tv_31138",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which long-time friend of Frank becomes the first outsider invited to a Reagan Sunday dinner?",
+    "question": "In Blue Bloods, which long-time friend of Frank becomes the first outsider invited to a Reagan Sunday dinner?",
     "answers": [
       "Lenny Ross",
       "Jack Boyle",
@@ -120,7 +120,7 @@ const questions = [
     "id": "tv_31139",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why does Jamie turn down an unusually attractive flat for himself and Eddie?",
+    "question": "In Blue Bloods, why does Jamie turn down an unusually attractive flat for himself and Eddie?",
     "answers": [
       "The flat is outside their police jurisdiction",
       "It is too far from a railway station",
@@ -156,7 +156,7 @@ const questions = [
     "id": "tv_31140",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What secret does DNA testing expose concerning a child of Frank's friend Lenny Ross?",
+    "question": "In Blue Bloods, what secret does DNA testing expose concerning a child of Frank's friend Lenny Ross?",
     "answers": [
       "His brother has an unacknowledged son",
       "His daughter is a police detective",
@@ -192,7 +192,7 @@ const questions = [
     "id": "tv_31141",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which milestone in the programme's history does this series premiere mark?",
+    "question": "In Blue Bloods, which milestone in the programme's history does this series premiere mark?",
     "answers": [
       "The 100th episode",
       "The 200th episode",
@@ -228,7 +228,7 @@ const questions = [
     "id": "tv_31142",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What nickname does the district attorney's office give its register of unreliable NYPD officers?",
+    "question": "In Blue Bloods, what nickname does the district attorney's office give its register of unreliable NYPD officers?",
     "answers": [
       "The naughty list",
       "The red book",
@@ -264,7 +264,7 @@ const questions = [
     "id": "tv_31143",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why does Frank object to that register being used in criminal proceedings?",
+    "question": "In Blue Bloods, why does Frank object to that register being used in criminal proceedings?",
     "answers": [
       "It would prevent the NYPD from training cadets",
       "It would reduce police retirement benefits",
@@ -300,7 +300,7 @@ const questions = [
     "id": "tv_31144",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which retired mobster assists Danny with the murder of a restaurant owner?",
+    "question": "In Blue Bloods, which retired mobster assists Danny with the murder of a restaurant owner?",
     "answers": [
       "Angelo Gallo",
       "Victor Lugo",
@@ -336,7 +336,7 @@ const questions = [
     "id": "tv_31145",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What group of workers is being preyed upon by the offender Jamie is sent to catch?",
+    "question": "In Blue Bloods, what group of workers is being preyed upon by the offender Jamie is sent to catch?",
     "answers": [
       "Hospital nurses",
       "Taxi drivers",
@@ -372,7 +372,7 @@ const questions = [
     "id": "tv_31146",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why does Eddie resent Jamie's participation in that decoy operation?",
+    "question": "In Blue Bloods, why does Eddie resent Jamie's participation in that decoy operation?",
     "answers": [
       "She mistakenly thinks Jamie took the assignment to shield her",
       "She believes he is planning to retire",
@@ -408,7 +408,7 @@ const questions = [
     "id": "tv_31147",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which officer's confrontation with a criminal recalls a sentencing decision Erin made months earlier?",
+    "question": "In Blue Bloods, which officer's confrontation with a criminal recalls a sentencing decision Erin made months earlier?",
     "answers": [
       "Danny Reagan",
       "Frank Reagan",
@@ -444,7 +444,7 @@ const questions = [
     "id": "tv_31148",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Whose estranged brother, a former mobster, helps catch the offender who shot at Jamie?",
+    "question": "In Blue Bloods, whose estranged brother, a former mobster, helps catch the offender who shot at Jamie?",
     "answers": [
       "Maria Baez's",
       "Garrett Moore's",
@@ -480,7 +480,7 @@ const questions = [
     "id": "tv_31149",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which police supervisor criticises Eddie after a murder investigation at a community pool?",
+    "question": "In Blue Bloods, which police supervisor criticises Eddie after a murder investigation at a community pool?",
     "answers": [
       "Sid Gormley",
       "Sergeant McNichols",
@@ -516,7 +516,7 @@ const questions = [
     "id": "tv_31150",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why had a Chinese immigrant couple become estranged from their police-officer son?",
+    "question": "In Blue Bloods, why had a Chinese immigrant couple become estranged from their police-officer son?",
     "answers": [
       "They associated police with oppression in their homeland",
       "He had moved too far away",
@@ -552,7 +552,7 @@ const questions = [
     "id": "tv_31151",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What do Danny and Baez discover about the immigrant couple's missing daughter?",
+    "question": "In Blue Bloods, what do Danny and Baez discover about the immigrant couple's missing daughter?",
     "answers": [
       "She left to serve in the military",
       "She is living undercover as an officer",
@@ -588,7 +588,7 @@ const questions = [
     "id": "tv_31152",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which city does Nicky plan to visit for a job interview?",
+    "question": "In Blue Bloods, which city does Nicky plan to visit for a job interview?",
     "answers": [
       "Chicago",
       "Miami",
@@ -624,7 +624,7 @@ const questions = [
     "id": "tv_31153",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which federal organisation does agent Wilson Ortega work for?",
+    "question": "In Blue Bloods, which federal organisation does agent Wilson Ortega work for?",
     "answers": [
       "The DEA",
       "The FBI",
@@ -660,7 +660,7 @@ const questions = [
     "id": "tv_31154",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What possible action by Ortega troubles Frank after the death of his terminally ill wife?",
+    "question": "In Blue Bloods, what possible action by Ortega troubles Frank after the death of his terminally ill wife?",
     "answers": [
       "Helping end her life at her request",
       "Concealing a robbery",
@@ -696,7 +696,7 @@ const questions = [
     "id": "tv_31155",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What disguise does Anthony use to catch a thief targeting undocumented business owners?",
+    "question": "In Blue Bloods, what disguise does Anthony use to catch a thief targeting undocumented business owners?",
     "answers": [
       "A taxi driver",
       "A restaurant inspector",
@@ -732,7 +732,7 @@ const questions = [
     "id": "tv_31156",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why are the victims of the shop robberies reluctant to appear in court?",
+    "question": "In Blue Bloods, why are the victims of the shop robberies reluctant to appear in court?",
     "answers": [
       "They are serving on a jury",
       "They are all police cadets",
@@ -768,7 +768,7 @@ const questions = [
     "id": "tv_31157",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What conspiracy underlies a false sexual assault allegation investigated by Danny?",
+    "question": "In Blue Bloods, what conspiracy underlies a false sexual assault allegation investigated by Danny?",
     "answers": [
       "A judge orders a witness to lie",
       "A wife pays a woman to drug and accuse her husband",
@@ -804,7 +804,7 @@ const questions = [
     "id": "tv_31158",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which detective faces an excessive-force allegation after Frank himself reports him?",
+    "question": "In Blue Bloods, which detective faces an excessive-force allegation after Frank himself reports him?",
     "answers": [
       "Douglas McKenzie",
       "Danny Reagan",
@@ -840,7 +840,7 @@ const questions = [
     "id": "tv_31159",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What career decision does the detective make after protesters appear outside his family home?",
+    "question": "In Blue Bloods, what career decision does the detective make after protesters appear outside his family home?",
     "answers": [
       "He joins the FBI",
       "He becomes police commissioner",
@@ -876,7 +876,7 @@ const questions = [
     "id": "tv_31160",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What is the profession of Cameron Gooding, whose bodyguard is killed in a drive-by shooting?",
+    "question": "In Blue Bloods, what is the profession of Cameron Gooding, whose bodyguard is killed in a drive-by shooting?",
     "answers": [
       "Professional boxer",
       "Radio journalist",
@@ -912,7 +912,7 @@ const questions = [
     "id": "tv_31161",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Where do Danny and Baez stop the intended killer from making another attempt on Gooding?",
+    "question": "In Blue Bloods, where do Danny and Baez stop the intended killer from making another attempt on Gooding?",
     "answers": [
       "At a court hearing",
       "At his next concert",
@@ -948,7 +948,7 @@ const questions = [
     "id": "tv_31162",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why does Captain Espinoza try to protect rookie officer Sarah Brooks from discipline?",
+    "question": "In Blue Bloods, why does Captain Espinoza try to protect rookie officer Sarah Brooks from discipline?",
     "answers": [
       "Her father, his friend, died in the September 11 attacks",
       "She is his daughter",
@@ -984,7 +984,7 @@ const questions = [
     "id": "tv_31163",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What unusual organisation does Eddie infiltrate for a missing-woman investigation?",
+    "question": "In Blue Bloods, what unusual organisation does Eddie infiltrate for a missing-woman investigation?",
     "answers": [
       "A military veterans club",
       "A university sorority",
@@ -1020,7 +1020,7 @@ const questions = [
     "id": "tv_31164",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What career news does Nicky share at the Reagan family dinner?",
+    "question": "In Blue Bloods, what career news does Nicky share at the Reagan family dinner?",
     "answers": [
       "She is joining the NYPD",
       "She has become a prosecutor",
@@ -1056,7 +1056,7 @@ const questions = [
     "id": "tv_31165",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What retirement-related benefit is disputed by former officer Rick Austin?",
+    "question": "In Blue Bloods, what retirement-related benefit is disputed by former officer Rick Austin?",
     "answers": [
       "His healthcare insurance",
       "His police pension",
@@ -1092,7 +1092,7 @@ const questions = [
     "id": "tv_31166",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What concealed fact does Gormley uncover about Austin's departure from police work?",
+    "question": "In Blue Bloods, what concealed fact does Gormley uncover about Austin's departure from police work?",
     "answers": [
       "He lied about his career-ending accident",
       "He had never joined the police",
@@ -1128,7 +1128,7 @@ const questions = [
     "id": "tv_31167",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why are private photographs of a young woman posted online in Jamie's friend's case?",
+    "question": "In Blue Bloods, why are private photographs of a young woman posted online in Jamie's friend's case?",
     "answers": [
       "A detective sold them to a newspaper",
       "Her employer published them with consent",
@@ -1164,7 +1164,7 @@ const questions = [
     "id": "tv_31168",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What relationship does Anthony have with Sam, who struggles with the police entrance exam?",
+    "question": "In Blue Bloods, what relationship does Anthony have with Sam, who struggles with the police entrance exam?",
     "answers": [
       "He is Sam's uncle",
       "He is Sam's schoolteacher",
@@ -1200,7 +1200,7 @@ const questions = [
     "id": "tv_31169",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What decision does Sam make after failing his first police exam?",
+    "question": "In Blue Bloods, what decision does Sam make after failing his first police exam?",
     "answers": [
       "He applies to the FBI",
       "He refuses to retake it",
@@ -1236,7 +1236,7 @@ const questions = [
     "id": "tv_31170",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What uncertainty sends Danny and Baez back to an older murder case?",
+    "question": "In Blue Bloods, what uncertainty sends Danny and Baez back to an older murder case?",
     "answers": [
       "A released prisoner may have been wrongly convicted",
       "The murder happened in another country",
@@ -1272,7 +1272,7 @@ const questions = [
     "id": "tv_31171",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What do a group of unruly teenagers pour over two young police officers?",
+    "question": "In Blue Bloods, what do a group of unruly teenagers pour over two young police officers?",
     "answers": [
       "Paint",
       "Beer",
@@ -1308,7 +1308,7 @@ const questions = [
     "id": "tv_31172",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why does Frank admonish Jamie following his publicly circulated response?",
+    "question": "In Blue Bloods, why does Frank admonish Jamie following his publicly circulated response?",
     "answers": [
       "Jamie refuses a promotion",
       "Jamie has failed a driving test",
@@ -1344,7 +1344,7 @@ const questions = [
     "id": "tv_31173",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Who are the targets of a criminal investigated by Danny and Baez?",
+    "question": "In Blue Bloods, who are the targets of a criminal investigated by Danny and Baez?",
     "answers": [
       "Schoolchildren",
       "Elderly people",
@@ -1380,7 +1380,7 @@ const questions = [
     "id": "tv_31174",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, How do detectives trick the elderly victims' attacker into incriminating himself?",
+    "question": "In Blue Bloods, how do detectives trick the elderly victims' attacker into incriminating himself?",
     "answers": [
       "He identifies pictures of his earlier victims",
       "He signs a fraudulent mortgage",
@@ -1416,7 +1416,7 @@ const questions = [
     "id": "tv_31175",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Who asks Erin to reconsider a conviction she secured years earlier?",
+    "question": "In Blue Bloods, who asks Erin to reconsider a conviction she secured years earlier?",
     "answers": [
       "Mayor Peter Chase",
       "Frank Reagan",
@@ -1452,7 +1452,7 @@ const questions = [
     "id": "tv_31176",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What role does Henry accept with an agency responsible for vulnerable children?",
+    "question": "In Blue Bloods, what role does Henry accept with an agency responsible for vulnerable children?",
     "answers": [
       "Chief social worker",
       "Family court judge",
@@ -1488,7 +1488,7 @@ const questions = [
     "id": "tv_31177",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Where had a father taken his son in a case that initially concerns Danny?",
+    "question": "In Blue Bloods, where had a father taken his son in a case that initially concerns Danny?",
     "answers": [
       "To an airport",
       "To a hockey game",
@@ -1524,7 +1524,7 @@ const questions = [
     "id": "tv_31178",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which service clashes with the NYPD after its commissioner provokes an officer?",
+    "question": "In Blue Bloods, which service clashes with the NYPD after its commissioner provokes an officer?",
     "answers": [
       "The fire department",
       "The ambulance service",
@@ -1560,7 +1560,7 @@ const questions = [
     "id": "tv_31179",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which political newcomer urges Erin to seek a higher position in the district attorney's office?",
+    "question": "In Blue Bloods, which political newcomer urges Erin to seek a higher position in the district attorney's office?",
     "answers": [
       "Governor Mendez",
       "City Speaker Regina Thomas",
@@ -1596,7 +1596,7 @@ const questions = [
     "id": "tv_31180",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What misconduct does Jamie suspect when veteran officer Kenneth Troy arrests a driver?",
+    "question": "In Blue Bloods, what misconduct does Jamie suspect when veteran officer Kenneth Troy arrests a driver?",
     "answers": [
       "Tampering with a murder weapon",
       "Stealing a police radio",
@@ -1632,7 +1632,7 @@ const questions = [
     "id": "tv_31181",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What option does Jamie offer Troy instead of publicly exposing his misconduct?",
+    "question": "In Blue Bloods, what option does Jamie offer Troy instead of publicly exposing his misconduct?",
     "answers": [
       "Transfer to a foreign embassy",
       "Retire to preserve his pension",
@@ -1668,7 +1668,7 @@ const questions = [
     "id": "tv_31182",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What is the job of Dr Alice Dornan, whose advice Erin challenges?",
+    "question": "In Blue Bloods, what is the job of Dr Alice Dornan, whose advice Erin challenges?",
     "answers": [
       "Psychiatric consultant",
       "Forensic dentist",
@@ -1704,7 +1704,7 @@ const questions = [
     "id": "tv_31183",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What has the childminder in Erin's case been accused of?",
+    "question": "In Blue Bloods, what has the childminder in Erin's case been accused of?",
     "answers": [
       "Bank fraud",
       "Drug trafficking",
@@ -1740,7 +1740,7 @@ const questions = [
     "id": "tv_31184",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Who does Mayor-elect Chase want Frank to replace in his senior team?",
+    "question": "In Blue Bloods, who does Mayor-elect Chase want Frank to replace in his senior team?",
     "answers": [
       "Sid Gormley",
       "Abigail Baker",
@@ -1776,7 +1776,7 @@ const questions = [
     "id": "tv_31185",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why does Eddie believe her supervisor McNichols mistreats her?",
+    "question": "In Blue Bloods, why does Eddie believe her supervisor McNichols mistreats her?",
     "answers": [
       "Eddie has asked for early retirement",
       "McNichols resents the Reagan family name",
@@ -1812,7 +1812,7 @@ const questions = [
     "id": "tv_31186",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What location does Danny revisit when a woman claims to have overheard a murder plot?",
+    "question": "In Blue Bloods, what location does Danny revisit when a woman claims to have overheard a murder plot?",
     "answers": [
       "A bar where he made an early arrest",
       "An abandoned school",
@@ -1848,7 +1848,7 @@ const questions = [
     "id": "tv_31187",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Where is the female victim discovered in Danny and Baez's unusual death inquiry?",
+    "question": "In Blue Bloods, where is the female victim discovered in Danny and Baez's unusual death inquiry?",
     "answers": [
       "At a convent",
       "On a ferry",
@@ -1884,7 +1884,7 @@ const questions = [
     "id": "tv_31188",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What club policy makes Baez particularly invested in the case?",
+    "question": "In Blue Bloods, what club policy makes Baez particularly invested in the case?",
     "answers": [
       "All guests must be police officers",
       "Members must be related",
@@ -1920,7 +1920,7 @@ const questions = [
     "id": "tv_31189",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Whose private life is under scrutiny after an alleged affair within the police department?",
+    "question": "In Blue Bloods, whose private life is under scrutiny after an alleged affair within the police department?",
     "answers": [
       "A school governor",
       "The head of Internal Affairs",
@@ -1956,7 +1956,7 @@ const questions = [
     "id": "tv_31190",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What personal fear does Eddie confess to Jamie during a disagreement about chores?",
+    "question": "In Blue Bloods, what personal fear does Eddie confess to Jamie during a disagreement about chores?",
     "answers": [
       "That their marriage could end like his siblings' relationships",
       "That Jamie will join the military",
@@ -1992,7 +1992,7 @@ const questions = [
     "id": "tv_31191",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why does Anthony pursue a familiar criminal despite Erin ordering him to stop?",
+    "question": "In Blue Bloods, why does Anthony pursue a familiar criminal despite Erin ordering him to stop?",
     "answers": [
       "The criminal has fled abroad",
       "The criminal is his former police captain",
@@ -2028,7 +2028,7 @@ const questions = [
     "id": "tv_31192",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What occupation does the victim of an ambush during a false emergency call have?",
+    "question": "In Blue Bloods, what occupation does the victim of an ambush during a false emergency call have?",
     "answers": [
       "Fire inspector",
       "Court reporter",
@@ -2064,7 +2064,7 @@ const questions = [
     "id": "tv_31193",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What have criminals been stealing from ambulances using false emergency calls?",
+    "question": "In Blue Bloods, what have criminals been stealing from ambulances using false emergency calls?",
     "answers": [
       "Radio equipment",
       "Drugs",
@@ -2100,7 +2100,7 @@ const questions = [
     "id": "tv_31194",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which vulnerable group does Frank defend when the new mayor demands tough enforcement of vagrancy laws?",
+    "question": "In Blue Bloods, which vulnerable group does Frank defend when the new mayor demands tough enforcement of vagrancy laws?",
     "answers": [
       "Homeless people",
       "Retired officers",
@@ -2136,7 +2136,7 @@ const questions = [
     "id": "tv_31195",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why has a judge allowed an offender with a violent past to avoid immediate consequences?",
+    "question": "In Blue Bloods, why has a judge allowed an offender with a violent past to avoid immediate consequences?",
     "answers": [
       "The offender has diplomatic immunity",
       "The judge is related to Frank",
@@ -2172,7 +2172,7 @@ const questions = [
     "id": "tv_31196",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What concerns Jamie about using Eddie's inheritance to pay off his student loans?",
+    "question": "In Blue Bloods, what concerns Jamie about using Eddie's inheritance to pay off his student loans?",
     "answers": [
       "It is invested abroad",
       "It belongs to her former husband",
@@ -2208,7 +2208,7 @@ const questions = [
     "id": "tv_31197",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Whose widow confronts Frank over a serving officer's suicide?",
+    "question": "In Blue Bloods, whose widow confronts Frank over a serving officer's suicide?",
     "answers": [
       "Paula Hill",
       "Rosemary Martin",
@@ -2244,7 +2244,7 @@ const questions = [
     "id": "tv_31198",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What secret does an inquiry uncover about the deceased officer?",
+    "question": "In Blue Bloods, what secret does an inquiry uncover about the deceased officer?",
     "answers": [
       "He was having an affair and being blackmailed",
       "He was an undercover spy",
@@ -2280,7 +2280,7 @@ const questions = [
     "id": "tv_31199",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why does Eddie initially clash with Erin while investigating a suspicious death?",
+    "question": "In Blue Bloods, why does Eddie initially clash with Erin while investigating a suspicious death?",
     "answers": [
       "Erin refuses to attend a wedding",
       "Erin suspects Eddie of theft",
@@ -2316,7 +2316,7 @@ const questions = [
     "id": "tv_31200",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What protection does cartel figure Luis Delgado demand before testifying?",
+    "question": "In Blue Bloods, what protection does cartel figure Luis Delgado demand before testifying?",
     "answers": [
       "A pardon for his former associates",
       "A new identity for his lawyer",
@@ -2352,7 +2352,7 @@ const questions = [
     "id": "tv_31201",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Who is abducted as leverage against Delgado during the prosecution?",
+    "question": "In Blue Bloods, who is abducted as leverage against Delgado during the prosecution?",
     "answers": [
       "His father",
       "One of his sons",
@@ -2388,7 +2388,7 @@ const questions = [
     "id": "tv_31202",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, How do Danny and Baez pressure a cartel member into revealing where the child is held?",
+    "question": "In Blue Bloods, how do Danny and Baez pressure a cartel member into revealing where the child is held?",
     "answers": [
       "By arresting the man's pregnant wife",
       "By freezing a legitimate police pension",
@@ -2424,7 +2424,7 @@ const questions = [
     "id": "tv_31203",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What kind of accusation does an undercover officer make against another NYPD cop?",
+    "question": "In Blue Bloods, what kind of accusation does an undercover officer make against another NYPD cop?",
     "answers": [
       "Witness bribery",
       "Illegal gambling",
@@ -2460,7 +2460,7 @@ const questions = [
     "id": "tv_31204",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What punishment does Sid choose for the accused officer?",
+    "question": "In Blue Bloods, what punishment does Sid choose for the accused officer?",
     "answers": [
       "Immediate dismissal",
       "A monetary fine",
@@ -2496,7 +2496,7 @@ const questions = [
     "id": "tv_31205",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What profession does Danny's murder victim have after facing allegations from former models?",
+    "question": "In Blue Bloods, what profession does Danny's murder victim have after facing allegations from former models?",
     "answers": [
       "Record producer",
       "Fashion photographer",
@@ -2532,7 +2532,7 @@ const questions = [
     "id": "tv_31206",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Who is ultimately responsible for killing the photographer?",
+    "question": "In Blue Bloods, who is ultimately responsible for killing the photographer?",
     "answers": [
       "The nanny's father",
       "His wife",
@@ -2568,7 +2568,7 @@ const questions = [
     "id": "tv_31207",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What kind of documents are police officers suspected of improperly giving to a doctor?",
+    "question": "In Blue Bloods, what kind of documents are police officers suspected of improperly giving to a doctor?",
     "answers": [
       "Sealed jury ballots",
       "Medical school examination papers",
@@ -2604,7 +2604,7 @@ const questions = [
     "id": "tv_31208",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What new legal changes complicate Erin's attempts to protect a witness?",
+    "question": "In Blue Bloods, what new legal changes complicate Erin's attempts to protect a witness?",
     "answers": [
       "New immigration laws",
       "Changes in inheritance law",
@@ -2640,7 +2640,7 @@ const questions = [
     "id": "tv_31209",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which lawman joins Danny and Baez in the hunt for a killer connected with a drug gang?",
+    "question": "In Blue Bloods, which lawman joins Danny and Baez in the hunt for a killer connected with a drug gang?",
     "answers": [
       "FBI Agent Wilson Ortega",
       "Texas Ranger Waylon Gates",
@@ -2676,7 +2676,7 @@ const questions = [
     "id": "tv_31210",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which singer and actor portrays Texas Ranger Waylon Gates?",
+    "question": "In Blue Bloods, which singer and actor portrays Texas Ranger Waylon Gates?",
     "answers": [
       "Lyle Lovett",
       "Kris Kristofferson",
@@ -2712,7 +2712,7 @@ const questions = [
     "id": "tv_31211",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What nickname is given to the killer being hunted with the Texas Ranger's help?",
+    "question": "In Blue Bloods, what nickname is given to the killer being hunted with the Texas Ranger's help?",
     "answers": [
       "The Blue Templar",
       "The Subway Strangler",
@@ -2748,7 +2748,7 @@ const questions = [
     "id": "tv_31212",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What happens when Eddie's partner James Addison fires during a drug raid?",
+    "question": "In Blue Bloods, what happens when Eddie's partner James Addison fires during a drug raid?",
     "answers": [
       "His pistol jams without injury",
       "A prisoner escapes through a window",
@@ -2784,7 +2784,7 @@ const questions = [
     "id": "tv_31213",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why does Internal Affairs investigate Jamie after that shooting?",
+    "question": "In Blue Bloods, why does Internal Affairs investigate Jamie after that shooting?",
     "answers": [
       "Jamie was absent without leave",
       "Questions about his supervision of the operation",
@@ -2820,7 +2820,7 @@ const questions = [
     "id": "tv_31214",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What moral dispute divides Erin and Mayor Chase after two muggers are shot?",
+    "question": "In Blue Bloods, what moral dispute divides Erin and Mayor Chase after two muggers are shot?",
     "answers": [
       "Whether a victim's retaliation amounts to vigilantism",
       "Whether a police officer may join a union",
@@ -2856,7 +2856,7 @@ const questions = [
     "id": "tv_31215",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What item from Jamie's police equipment leads to an internal investigation?",
+    "question": "In Blue Bloods, what item from Jamie's police equipment leads to an internal investigation?",
     "answers": [
       "His service radio",
       "His patrol-car keys",
@@ -2892,7 +2892,7 @@ const questions = [
     "id": "tv_31216",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which famous actor plays Chuck Kennedy, whose home is invaded?",
+    "question": "In Blue Bloods, which famous actor plays Chuck Kennedy, whose home is invaded?",
     "answers": [
       "Martin Sheen",
       "Robert Duvall",
@@ -2928,7 +2928,7 @@ const questions = [
     "id": "tv_31217",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What is unusual about the hotel employee's death investigated by Danny and Baez?",
+    "question": "In Blue Bloods, what is unusual about the hotel employee's death investigated by Danny and Baez?",
     "answers": [
       "The employee is discovered alive",
       "A supposed suicide may have been a murder",
@@ -2964,7 +2964,7 @@ const questions = [
     "id": "tv_31218",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What does a mob defendant offer Anthony in return for a deal?",
+    "question": "In Blue Bloods, what does a mob defendant offer Anthony in return for a deal?",
     "answers": [
       "Information about corruption in the district attorney's office",
       "A hidden bank robbery stash",
@@ -3000,7 +3000,7 @@ const questions = [
     "id": "tv_31219",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which new mayor is still within his first hundred days in office?",
+    "question": "In Blue Bloods, which new mayor is still within his first hundred days in office?",
     "answers": [
       "Carter Poole",
       "Margaret Dutton",
@@ -3036,7 +3036,7 @@ const questions = [
     "id": "tv_31220",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What does a young man spray on several police vehicles?",
+    "question": "In Blue Bloods, what does a young man spray on several police vehicles?",
     "answers": [
       "Gang symbols in chalk",
       "Election posters",
@@ -3072,7 +3072,7 @@ const questions = [
     "id": "tv_31221",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What personal loss helps explain the young man's anger towards officers?",
+    "question": "In Blue Bloods, what personal loss helps explain the young man's anger towards officers?",
     "answers": [
       "His father was a retired commissioner",
       "His older brother was killed by police",
@@ -3108,7 +3108,7 @@ const questions = [
     "id": "tv_31222",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Who visits Erin from San Francisco during a difficult week?",
+    "question": "In Blue Bloods, who visits Erin from San Francisco during a difficult week?",
     "answers": [
       "Her daughter Nicky",
       "Her sister",
@@ -3144,7 +3144,7 @@ const questions = [
     "id": "tv_31223",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which former partner apologises to Erin after she admits how much he hurt her?",
+    "question": "In Blue Bloods, which former partner apologises to Erin after she admits how much he hurt her?",
     "answers": [
       "Anthony Abetemarco",
       "Luis Delgado",
@@ -3180,7 +3180,7 @@ const questions = [
     "id": "tv_31224",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What name do Jamie and Eddie give the stray dog they keep at the precinct?",
+    "question": "In Blue Bloods, what name do Jamie and Eddie give the stray dog they keep at the precinct?",
     "answers": [
       "Reagan",
       "Badge",
@@ -3216,7 +3216,7 @@ const questions = [
     "id": "tv_31225",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What evidence does Donnie Hassett promise Erin and Anthony if they trust him?",
+    "question": "In Blue Bloods, what evidence does Donnie Hassett promise Erin and Anthony if they trust him?",
     "answers": [
       "A stolen firearm",
       "Proof implicating a double murderer",
@@ -3252,7 +3252,7 @@ const questions = [
     "id": "tv_31226",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Why is dealing with Donnie Hassett especially hazardous?",
+    "question": "In Blue Bloods, why is dealing with Donnie Hassett especially hazardous?",
     "answers": [
       "He is a sociopath",
       "He is under diplomatic immunity",
@@ -3288,7 +3288,7 @@ const questions = [
     "id": "tv_31227",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What makes it unusually difficult for Danny and Baez to arrest a notorious hitman?",
+    "question": "In Blue Bloods, what makes it unusually difficult for Danny and Baez to arrest a notorious hitman?",
     "answers": [
       "He has disappeared overseas",
       "He is a federal judge",
@@ -3324,7 +3324,7 @@ const questions = [
     "id": "tv_31228",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What does Jamie discover about valuables missing from an elderly neighbour's flat?",
+    "question": "In Blue Bloods, what does Jamie discover about valuables missing from an elderly neighbour's flat?",
     "answers": [
       "The police took them for evidence",
       "A visiting plumber sold them",
@@ -3360,7 +3360,7 @@ const questions = [
     "id": "tv_31229",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What disciplinary decision provokes criticism of Frank from his own department?",
+    "question": "In Blue Bloods, what disciplinary decision provokes criticism of Frank from his own department?",
     "answers": [
       "Promoting a rookie to commissioner",
       "Suspending an officer for violent behaviour",
@@ -3396,7 +3396,7 @@ const questions = [
     "id": "tv_31230",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What substance causes the deaths of two young models in Danny and Baez's investigation?",
+    "question": "In Blue Bloods, what substance causes the deaths of two young models in Danny and Baez's investigation?",
     "answers": [
       "Dangerous weight-loss drugs",
       "Contaminated alcohol",
@@ -3432,7 +3432,7 @@ const questions = [
     "id": "tv_31231",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What kind of shop is robbed by students while their teachers are on strike?",
+    "question": "In Blue Bloods, what kind of shop is robbed by students while their teachers are on strike?",
     "answers": [
       "A jewellery store",
       "A clothes shop",
@@ -3468,7 +3468,7 @@ const questions = [
     "id": "tv_31232",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What mistake jeopardises Erin's investigation into an arson?",
+    "question": "In Blue Bloods, what mistake jeopardises Erin's investigation into an arson?",
     "answers": [
       "An investigator burns the evidence",
       "The arson suspect is sent overseas",
@@ -3504,7 +3504,7 @@ const questions = [
     "id": "tv_31233",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What is the unexpected truth about a priest and an altar boy whom Frank investigates?",
+    "question": "In Blue Bloods, what is the unexpected truth about a priest and an altar boy whom Frank investigates?",
     "answers": [
       "The boy is a police informant",
       "The boy is the priest's son",
@@ -3540,7 +3540,7 @@ const questions = [
     "id": "tv_31234",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Who asks Frank to investigate the allegations involving the priest?",
+    "question": "In Blue Bloods, who asks Frank to investigate the allegations involving the priest?",
     "answers": [
       "Archbishop Kevin Kearns",
       "Mayor Peter Chase",
@@ -3576,7 +3576,7 @@ const questions = [
     "id": "tv_31235",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which Reagan family member discovers an unknown relative through a DNA matching service?",
+    "question": "In Blue Bloods, which Reagan family member discovers an unknown relative through a DNA matching service?",
     "answers": [
       "Henry Reagan",
       "Nicky Reagan-Boyle",
@@ -3612,7 +3612,7 @@ const questions = [
     "id": "tv_31236",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Who is the previously unknown son of the late Joe Reagan?",
+    "question": "In Blue Bloods, who is the previously unknown son of the late Joe Reagan?",
     "answers": [
       "Jack Reagan",
       "Sean Reagan",
@@ -3648,7 +3648,7 @@ const questions = [
     "id": "tv_31237",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Who is Joe Hill's mother?",
+    "question": "In Blue Bloods, who is Joe Hill's mother?",
     "answers": [
       "Lena Janko",
       "Paula Hill",
@@ -3684,7 +3684,7 @@ const questions = [
     "id": "tv_31238",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What is Joe Hill's occupation when the Reagans discover his existence?",
+    "question": "In Blue Bloods, what is Joe Hill's occupation when the Reagans discover his existence?",
     "answers": [
       "NYPD detective",
       "Federal prosecutor",
@@ -3720,7 +3720,7 @@ const questions = [
     "id": "tv_31239",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What does Paula Hill ask Frank to arrange for her son?",
+    "question": "In Blue Bloods, what does Paula Hill ask Frank to arrange for her son?",
     "answers": [
       "An appointment to police commissioner",
       "A scholarship to study law abroad",
@@ -3756,7 +3756,7 @@ const questions = [
     "id": "tv_31240",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, Which actor plays Joe Hill when he is introduced to the Reagan family?",
+    "question": "In Blue Bloods, which actor plays Joe Hill when he is introduced to the Reagan family?",
     "answers": [
       "Will Estes",
       "Peter Hermann",
@@ -3792,7 +3792,7 @@ const questions = [
     "id": "tv_31241",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, What family gathering does Joe Hill attend after meeting Sean?",
+    "question": "In Blue Bloods, what family gathering does Joe Hill attend after meeting Sean?",
     "answers": [
       "A police graduation",
       "Sunday dinner at the Reagan home",

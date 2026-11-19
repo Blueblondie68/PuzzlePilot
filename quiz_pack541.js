@@ -120,7 +120,7 @@ const questions = [
     "id": "tv_31484",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, why does the husband in that case become a murder suspect?",
+    "question": "In Blue Bloods, why does a husband become a murder suspect after an NYPD domestic-abuse call intersects with a cartel case?",
     "answers": [
       "He is caught stealing medical supplies",
       "He flees a bank robbery",
@@ -2856,7 +2856,7 @@ const questions = [
     "id": "tv_31560",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which defence lawyer does Eddie recommend in that case?",
+    "question": "In Blue Bloods, which defence lawyer does Eddie recommend to a woman accused of killing her boss in self-defence?",
     "answers": [
       "Anthony Abetemarco",
       "Robert Lewis",
@@ -3108,15 +3108,15 @@ const questions = [
     "id": "tv_31567",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which actor and country singer portrays Texas Ranger Waylon Gates?",
+    "question": "In Blue Bloods, what type of assault allegation puts Erin in the spotlight while Danny escorts a cartel boss to court?",
     "answers": [
-      "Kris Kristofferson",
-      "Tim McGraw",
-      "Dwight Yoakam",
-      "Lyle Lovett"
+      "Sexual assault",
+      "Aggravated burglary",
+      "Armed robbery",
+      "False imprisonment"
     ],
-    "correctAnswer": "Lyle Lovett",
-    "difficulty": "Hard",
+    "correctAnswer": "Sexual assault",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -3134,10 +3134,10 @@ const questions = [
       "Episode: S13E15",
       "Episode title: Close to Home",
       "Original airdate: 2023-03-10",
-      "Storyline: Lyle Lovett portrays Texas Ranger Waylon Gates",
-      "Character: Texas Ranger Waylon Gates",
-      "Actor: Lyle Lovett",
-      "Answer fact: Lyle Lovett"
+      "Storyline: Erin faces high-profile sexual-assault case involving a star basketball player",
+      "Character: Erin Reagan",
+      "Actor: Bridget Moynahan",
+      "Answer fact: Sexual assault"
     ]
   },
   {

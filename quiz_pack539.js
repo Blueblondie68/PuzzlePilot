@@ -2065,7 +2065,7 @@ const questions = [
     "id": "tv_31299",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, who is ultimately implicated in the man's murder?",
+    "question": "In Blue Bloods, who is responsible for the murder of Baez's former date, found dead outside her home?",
     "answers": [
       "His employer",
       "His brother",
