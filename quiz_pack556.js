@@ -1,5 +1,5 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 556: Blue Heelers, final Series 13 (2006).
-// 55 checked storyline questions across 11 episodes. IDs tv_34524–tv_34578.
+// 73 episode-grounded questions across 11 episodes. Original IDs tv_34524–tv_34578 retained; audit additions tv_34610–tv_34627.
 // Source: https://thetvdb.com/series/blue-heelers/allseasons/official
 // Cross-check: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-13/1000036269/
 // Final episode is listed in two parts in aired-order databases.
@@ -35,12 +35,13 @@ const questions = [
       "Episode: S13E01",
       "Episode title: Only the Lonely",
       "Episode context: Which officer tries to conceal worsening health problems from his colleagues?",
-      "Storyline: Tom Croydon",
       "Character/subject: Tom Croydon",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Tom Croydon",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -73,12 +74,13 @@ const questions = [
       "Episode: S13E01",
       "Episode title: Only the Lonely",
       "Episode context: What offence brings an old friend of Tom's to police attention?",
-      "Storyline: Shoplifting",
       "Character/subject: Shoplifting",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Shoplifting",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -111,12 +113,13 @@ const questions = [
       "Episode: S13E01",
       "Episode title: Only the Lonely",
       "Episode context: What illness affects the old friend's ten-year-old daughter?",
-      "Storyline: Leukaemia",
       "Character/subject: Leukaemia",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Leukaemia",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -149,12 +152,13 @@ const questions = [
       "Episode: S13E01",
       "Episode title: Only the Lonely",
       "Episode context: Which child goes missing amid reports of gunmen targeting police?",
-      "Storyline: Rory",
       "Character/subject: Rory",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Rory",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -187,12 +191,13 @@ const questions = [
       "Episode: S13E01",
       "Episode title: Only the Lonely",
       "Episode context: What is the gunman's motive for attacking police?",
-      "Storyline: Revenge for his son's death",
       "Character/subject: Revenge for his son's death",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Revenge for his son's death",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -225,12 +230,13 @@ const questions = [
       "Episode: S13E02",
       "Episode title: Boss",
       "Episode context: Which colleague urges Tom to seek medical advice?",
-      "Storyline: Amy Fox",
       "Character/subject: Amy Fox",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Amy Fox",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -263,12 +269,13 @@ const questions = [
       "Episode: S13E02",
       "Episode title: Boss",
       "Episode context: What problem is the young boy in Tom's case facing?",
-      "Storyline: Bullying",
       "Character/subject: Bullying",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Bullying",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -301,12 +308,13 @@ const questions = [
       "Episode: S13E02",
       "Episode title: Boss",
       "Episode context: What personal memories does the boy's predicament stir for Tom?",
-      "Storyline: His own childhood troubles",
       "Character/subject: His own childhood troubles",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: His own childhood troubles",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -339,12 +347,13 @@ const questions = [
       "Episode: S13E02",
       "Episode title: Boss",
       "Episode context: Who helps a former colleague of Tom's with an old case?",
-      "Storyline: Matt Graham",
       "Character/subject: Matt Graham",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Matt Graham",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -377,12 +386,13 @@ const questions = [
       "Episode: S13E03",
       "Episode title: Dirt",
       "Episode context: Where are a baby's remains discovered?",
-      "Storyline: A firepit in a national park",
       "Character/subject: A firepit in a national park",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: A firepit in a national park",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -415,12 +425,13 @@ const questions = [
       "Episode: S13E03",
       "Episode title: Dirt",
       "Episode context: Which two officers investigate a mysterious cult after the discovery?",
-      "Storyline: Evan Jones and Alex Kirby",
       "Character/subject: Evan Jones and Alex Kirby",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Evan Jones and Alex Kirby",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -453,12 +464,13 @@ const questions = [
       "Episode: S13E03",
       "Episode title: Dirt",
       "Episode context: Which child ends up in hospital after Alex makes a mistake?",
-      "Storyline: Rory",
       "Character/subject: Rory",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Rory",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -491,12 +503,13 @@ const questions = [
       "Episode: S13E03",
       "Episode title: Dirt",
       "Episode context: To whom does Tom finally admit the seriousness of his health problem?",
-      "Storyline: Amy Fox",
       "Character/subject: Amy Fox",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Amy Fox",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -529,12 +542,13 @@ const questions = [
       "Episode: S13E03",
       "Episode title: Dirt",
       "Episode context: Why does an elderly man steal several items?",
-      "Storyline: To give them to his girlfriend",
       "Character/subject: To give them to his girlfriend",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: To give them to his girlfriend",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -567,12 +581,13 @@ const questions = [
       "Episode: S13E04",
       "Episode title: What's Love Got to Do with It",
       "Episode context: Why does Tom secretly travel to Melbourne?",
-      "Storyline: For cancer treatment",
       "Character/subject: For cancer treatment",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: For cancer treatment",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -605,12 +620,13 @@ const questions = [
       "Episode: S13E04",
       "Episode title: What's Love Got to Do with It",
       "Episode context: Who is the only colleague told the real purpose of Tom's trip?",
-      "Storyline: Amy Fox",
       "Character/subject: Amy Fox",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Amy Fox",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -643,12 +659,13 @@ const questions = [
       "Episode: S13E04",
       "Episode title: What's Love Got to Do with It",
       "Episode context: What explanation does Amy give for Tom's absence?",
-      "Storyline: He has gone fishing",
       "Character/subject: He has gone fishing",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: He has gone fishing",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -681,12 +698,13 @@ const questions = [
       "Episode: S13E04",
       "Episode title: What's Love Got to Do with It",
       "Episode context: Who takes charge of the station while Tom is away?",
-      "Storyline: Inspector Falcon-Price",
       "Character/subject: Inspector Falcon-Price",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Inspector Falcon-Price",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -719,12 +737,13 @@ const questions = [
       "Episode: S13E04",
       "Episode title: What's Love Got to Do with It",
       "Episode context: What crime is Amy investigating when the inspector interferes?",
-      "Storyline: A violent home invasion",
       "Character/subject: A violent home invasion",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: A violent home invasion",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -757,12 +776,13 @@ const questions = [
       "Episode: S13E04",
       "Episode title: What's Love Got to Do with It",
       "Episode context: With which officer does Alex send Rory out to keep him away from the inspector?",
-      "Storyline: Susie Raynor",
       "Character/subject: Susie Raynor",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Susie Raynor",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -795,12 +815,13 @@ const questions = [
       "Episode: S13E05",
       "Episode title: Affluenza",
       "Episode context: Which officer develops a gambling habit after receiving a winning tip?",
-      "Storyline: Joss Peroni",
       "Character/subject: Joss Peroni",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Joss Peroni",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -833,12 +854,13 @@ const questions = [
       "Episode: S13E05",
       "Episode title: Affluenza",
       "Episode context: Where does Jonesy investigate a succession of assaults?",
-      "Storyline: The local racetrack",
       "Character/subject: The local racetrack",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: The local racetrack",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -871,12 +893,13 @@ const questions = [
       "Episode: S13E05",
       "Episode title: Affluenza",
       "Episode context: What offence sparks disagreement between Matt and Alex over a businessman?",
-      "Storyline: Shoplifting",
       "Character/subject: Shoplifting",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Shoplifting",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -909,12 +932,13 @@ const questions = [
       "Episode: S13E05",
       "Episode title: Affluenza",
       "Episode context: Which officer insists that the businessman may be planning a more serious crime?",
-      "Storyline: Matt Graham",
       "Character/subject: Matt Graham",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Matt Graham",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -947,12 +971,13 @@ const questions = [
       "Episode: S13E05",
       "Episode title: Affluenza",
       "Episode context: What has Tom been recovering from after his treatment?",
-      "Storyline: An operation",
       "Character/subject: An operation",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: An operation",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -985,12 +1010,13 @@ const questions = [
       "Episode: S13E06",
       "Episode title: Going Down Swinging",
       "Episode context: What patrol role does Falcon-Price assign Tom while questioning his fitness?",
-      "Storyline: Divisional Patrol Supervisor",
       "Character/subject: Divisional Patrol Supervisor",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Divisional Patrol Supervisor",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1023,12 +1049,13 @@ const questions = [
       "Episode: S13E06",
       "Episode title: Going Down Swinging",
       "Episode context: Which officer is stabbed by an escaped offender?",
-      "Storyline: Alex Kirby",
       "Character/subject: Alex Kirby",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Alex Kirby",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1061,12 +1088,13 @@ const questions = [
       "Episode: S13E06",
       "Episode title: Going Down Swinging",
       "Episode context: Who uses Alex's stabbing to question whether Tom is fit for active duty?",
-      "Storyline: Inspector Falcon-Price",
       "Character/subject: Inspector Falcon-Price",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Inspector Falcon-Price",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1099,12 +1127,13 @@ const questions = [
       "Episode: S13E06",
       "Episode title: Going Down Swinging",
       "Episode context: Before which official does Falcon-Price seek to have Tom assessed?",
-      "Storyline: A Medical Officer",
       "Character/subject: A Medical Officer",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: A Medical Officer",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1137,12 +1166,13 @@ const questions = [
       "Episode: S13E06",
       "Episode title: Going Down Swinging",
       "Episode context: Who feels jealous of Joss's new girlfriend?",
-      "Storyline: Kelly O'Rourke",
       "Character/subject: Kelly O'Rourke",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Kelly O'Rourke",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1175,12 +1205,13 @@ const questions = [
       "Episode: S13E07",
       "Episode title: Burning Up",
       "Episode context: Whose mother comes to Mount Thomas worried about her son's finances?",
-      "Storyline: Joss Peroni's",
       "Character/subject: Joss Peroni's",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Joss Peroni's",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1213,12 +1244,13 @@ const questions = [
       "Episode: S13E07",
       "Episode title: Burning Up",
       "Episode context: What personal problem does Joss finally acknowledge?",
-      "Storyline: A gambling addiction",
       "Character/subject: A gambling addiction",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: A gambling addiction",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1251,12 +1283,13 @@ const questions = [
       "Episode: S13E07",
       "Episode title: Burning Up",
       "Episode context: What type of crimes are the Heelers investigating?",
-      "Storyline: A series of arsons",
       "Character/subject: A series of arsons",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: A series of arsons",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1289,12 +1322,13 @@ const questions = [
       "Episode: S13E07",
       "Episode title: Burning Up",
       "Episode context: What profession does Kelly's new romantic interest practise?",
-      "Storyline: Law",
       "Character/subject: Law",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Law",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1327,12 +1361,13 @@ const questions = [
       "Episode: S13E07",
       "Episode title: Burning Up",
       "Episode context: What complicates Kelly's romance with the lawyer?",
-      "Storyline: Conflicting professional ethics",
       "Character/subject: Conflicting professional ethics",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Conflicting professional ethics",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1365,12 +1400,13 @@ const questions = [
       "Episode: S13E08",
       "Episode title: Down to Earth",
       "Episode context: What type of aircraft is brought down in a suspected sabotage?",
-      "Storyline: A crop-spraying plane",
       "Character/subject: A crop-spraying plane",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: A crop-spraying plane",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1403,12 +1439,13 @@ const questions = [
       "Episode: S13E08",
       "Episode title: Down to Earth",
       "Episode context: Why are Joss's colleagues worried about his performance?",
-      "Storyline: He fails to back Kelly up in dangerous incidents",
       "Character/subject: He fails to back Kelly up in dangerous incidents",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: He fails to back Kelly up in dangerous incidents",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1441,12 +1478,13 @@ const questions = [
       "Episode: S13E08",
       "Episode title: Down to Earth",
       "Episode context: Who offers Joss somewhere to live when he becomes homeless?",
-      "Storyline: Kelly O'Rourke",
       "Character/subject: Kelly O'Rourke",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Kelly O'Rourke",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1479,12 +1517,13 @@ const questions = [
       "Episode: S13E08",
       "Episode title: Down to Earth",
       "Episode context: Which child gives evidence about a robbery, worrying Alex?",
-      "Storyline: Rory",
       "Character/subject: Rory",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Rory",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1517,12 +1556,13 @@ const questions = [
       "Episode: S13E08",
       "Episode title: Down to Earth",
       "Episode context: Whom does Alex suspect Rory has developed a crush on?",
-      "Storyline: Susie Raynor",
       "Character/subject: Susie Raynor",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Susie Raynor",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1555,12 +1595,13 @@ const questions = [
       "Episode: S13E09",
       "Episode title: Moonlighting",
       "Episode context: What second job does Joss take to pay off gambling debts?",
-      "Storyline: Taxi driver",
       "Character/subject: Taxi driver",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Taxi driver",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1593,12 +1634,13 @@ const questions = [
       "Episode: S13E09",
       "Episode title: Moonlighting",
       "Episode context: What criminal role is Joss offered by a wealthy gambler?",
-      "Storyline: Getaway driver",
       "Character/subject: Getaway driver",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Getaway driver",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1631,12 +1673,13 @@ const questions = [
       "Episode: S13E09",
       "Episode title: Moonlighting",
       "Episode context: Which pair investigates the murder of a passenger connected to Joss?",
-      "Storyline: Amy Fox and Evan Jones",
       "Character/subject: Amy Fox and Evan Jones",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Amy Fox and Evan Jones",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1669,12 +1712,13 @@ const questions = [
       "Episode: S13E09",
       "Episode title: Moonlighting",
       "Episode context: What happens to Joss after the investigation links a murder to a robbery?",
-      "Storyline: He is taken hostage",
       "Character/subject: He is taken hostage",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: He is taken hostage",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1707,12 +1751,13 @@ const questions = [
       "Episode: S13E09",
       "Episode title: Moonlighting",
       "Episode context: Why is Kelly's relationship put under strain again?",
-      "Storyline: She and her boyfriend are on opposing sides of a case",
       "Character/subject: She and her boyfriend are on opposing sides of a case",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: She and her boyfriend are on opposing sides of a case",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1745,12 +1790,13 @@ const questions = [
       "Episode: S13E10",
       "Episode title: One Day More - Part 1",
       "Episode context: Which former police officer returns to Mount Thomas disguised as a photocopier technician?",
-      "Storyline: Adam Cooper",
       "Character/subject: Adam Cooper",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Adam Cooper",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1783,12 +1829,13 @@ const questions = [
       "Episode: S13E10",
       "Episode title: One Day More - Part 1",
       "Episode context: Why had Adam Cooper been dismissed from the force?",
-      "Storyline: Corruption",
       "Character/subject: Corruption",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Corruption",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1821,12 +1868,13 @@ const questions = [
       "Episode: S13E10",
       "Episode title: One Day More - Part 1",
       "Episode context: What illegal activity does Cooper falsely accuse Tom of?",
-      "Storyline: Selling stolen firearms",
       "Character/subject: Selling stolen firearms",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Selling stolen firearms",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1859,12 +1907,13 @@ const questions = [
       "Episode: S13E10",
       "Episode title: One Day More - Part 1",
       "Episode context: Which historic disaster is involved in Cooper's allegation about weapons?",
-      "Storyline: The bombing of the former police station",
       "Character/subject: The bombing of the former police station",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: The bombing of the former police station",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1897,12 +1946,13 @@ const questions = [
       "Episode: S13E10",
       "Episode title: One Day More - Part 1",
       "Episode context: Which inspector supports Cooper's accusations against Tom?",
-      "Storyline: Falcon-Price",
       "Character/subject: Falcon-Price",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Falcon-Price",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1935,12 +1985,13 @@ const questions = [
       "Episode: S13E10",
       "Episode title: One Day More - Part 1",
       "Episode context: Which terminally ill woman does Tom help during his own struggle with cancer?",
-      "Storyline: Gina",
       "Character/subject: Gina",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Gina",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -1973,12 +2024,13 @@ const questions = [
       "Episode: S13E10",
       "Episode title: One Day More - Part 1",
       "Episode context: What future does the inspector announce for Mount Thomas police station?",
-      "Storyline: It is to close",
       "Character/subject: It is to close",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: It is to close",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -2011,12 +2063,13 @@ const questions = [
       "Episode: S13E11",
       "Episode title: One Day More - Part 2",
       "Episode context: What happens to the plan to close Mount Thomas police station?",
-      "Storyline: It is abandoned",
       "Character/subject: It is abandoned",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: It is abandoned",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -2049,12 +2102,13 @@ const questions = [
       "Episode: S13E11",
       "Episode title: One Day More - Part 2",
       "Episode context: Whose attempt to discredit Tom is exposed?",
-      "Storyline: Adam Cooper's",
       "Character/subject: Adam Cooper's",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: Adam Cooper's",
+      "Source: TheTVDB aired-order synopsis"
     ]
   },
   {
@@ -2087,14 +2141,717 @@ const questions = [
       "Episode: S13E11",
       "Episode title: One Day More - Part 2",
       "Episode context: What happens to Inspector Falcon-Price after the station is saved?",
-      "Storyline: He leaves Mount Thomas",
       "Character/subject: He leaves Mount Thomas",
       "Final season",
       "Mount Thomas",
       "Continuing drama",
-      "Year: 2006"
+      "Year: 2006",
+      "Answer focus: He leaves Mount Thomas",
+      "Source: TheTVDB aired-order synopsis"
+    ]
+  },
+  {
+    "id": "tv_34610",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), whose struggle with fatherhood worsens when his son Rory disappears?",
+    "answers": [
+      "Alex Kirby",
+      "Tom Croydon",
+      "Matt Graham",
+      "Joss Peroni"
+    ],
+    "correctAnswer": "Alex Kirby",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E01",
+      "Episode title: Only the Lonely",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: whose struggle with fatherhood worsens when his son Rory disappears?",
+      "Character/subject: Alex Kirby",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: Alex Kirby"
+    ]
+  },
+  {
+    "id": "tv_34611",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), what kind of people are the targets of the gunman's attacks?",
+    "answers": [
+      "Uniformed police officers",
+      "Hospital doctors",
+      "Schoolteachers",
+      "Taxi drivers"
+    ],
+    "correctAnswer": "Uniformed police officers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E01",
+      "Episode title: Only the Lonely",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: what kind of people are the targets of the gunman's attacks?",
+      "Character/subject: Uniformed police officers",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: Uniformed police officers"
+    ]
+  },
+  {
+    "id": "tv_34612",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), who repeatedly urges Tom to see a doctor about his deteriorating health?",
+    "answers": [
+      "Amy Fox",
+      "Susie Raynor",
+      "Kelly O'Rourke",
+      "Chris Riley"
+    ],
+    "correctAnswer": "Amy Fox",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E02",
+      "Episode title: Boss",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: who repeatedly urges Tom to see a doctor about his deteriorating health?",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: Amy Fox"
+    ]
+  },
+  {
+    "id": "tv_34613",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), what discovery in a national-park firepit draws Alex and Jonesy into an investigation of a cult?",
+    "answers": [
+      "A baby's remains",
+      "Stolen firearms",
+      "A missing police badge",
+      "A burnt-out patrol car"
+    ],
+    "correctAnswer": "A baby's remains",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E03",
+      "Episode title: Dirt",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: what discovery in a national-park firepit draws Alex and Jonesy into an investigation of a cult?",
+      "Character/subject: A baby's remains",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: A baby's remains"
+    ]
+  },
+  {
+    "id": "tv_34614",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), what personal challenge adds to Alex's difficulties as a father?",
+    "answers": [
+      "Rory is taken to hospital after Alex makes a mistake",
+      "Rory is arrested for arson",
+      "Rory joins the police",
+      "Rory moves overseas"
+    ],
+    "correctAnswer": "Rory is taken to hospital after Alex makes a mistake",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E03",
+      "Episode title: Dirt",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: what personal challenge adds to Alex's difficulties as a father?",
+      "Character/subject: Rory is taken to hospital after Alex makes a mistake",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: Rory is taken to hospital after Alex makes a mistake"
+    ]
+  },
+  {
+    "id": "tv_34615",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), who falsely reassures Kelly that Tom has gone fishing?",
+    "answers": [
+      "Amy Fox",
+      "Susie Raynor",
+      "Chris Riley",
+      "Kelly's lawyer"
+    ],
+    "correctAnswer": "Amy Fox",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E04",
+      "Episode title: What's Love Got to Do with It",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: who falsely reassures Kelly that Tom has gone fishing?",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: Amy Fox"
+    ]
+  },
+  {
+    "id": "tv_34616",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), what happens to Amy's home-invasion investigation after her disagreements with Falcon-Price?",
+    "answers": [
+      "She is removed from the case",
+      "She is promoted",
+      "The suspect is released by a court",
+      "She transfers to Melbourne"
+    ],
+    "correctAnswer": "She is removed from the case",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E04",
+      "Episode title: What's Love Got to Do with It",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: what happens to Amy's home-invasion investigation after her disagreements with Falcon-Price?",
+      "Character/subject: She is removed from the case",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: She is removed from the case"
+    ]
+  },
+  {
+    "id": "tv_34617",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), what starts Joss's increasingly destructive gambling after he helps a pickpocket victim?",
+    "answers": [
+      "A winning tip",
+      "An inheritance",
+      "A police prize",
+      "A bookmaker's job offer"
+    ],
+    "correctAnswer": "A winning tip",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E05",
+      "Episode title: Affluenza",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: what starts Joss's increasingly destructive gambling after he helps a pickpocket victim?",
+      "Character/subject: A winning tip",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: A winning tip"
+    ]
+  },
+  {
+    "id": "tv_34618",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), who investigates a series of assaults at the local racetrack?",
+    "answers": [
+      "Evan Jones",
+      "Tom Croydon",
+      "Alex Kirby",
+      "PJ Hasham"
+    ],
+    "correctAnswer": "Evan Jones",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E05",
+      "Episode title: Affluenza",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: who investigates a series of assaults at the local racetrack?",
+      "Character/subject: Evan Jones",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: Evan Jones"
+    ]
+  },
+  {
+    "id": "tv_34619",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), who persuades Alex to support an effort to have Tom assessed by a medical officer?",
+    "answers": [
+      "Inspector Falcon-Price",
+      "PJ Hasham",
+      "Nick Schultz",
+      "Garth Henderson"
+    ],
+    "correctAnswer": "Inspector Falcon-Price",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E06",
+      "Episode title: Going Down Swinging",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: who persuades Alex to support an effort to have Tom assessed by a medical officer?",
+      "Character/subject: Inspector Falcon-Price",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: Inspector Falcon-Price"
+    ]
+  },
+  {
+    "id": "tv_34620",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), why does Joss's mother visit Mount Thomas?",
+    "answers": [
+      "She is worried about his finances",
+      "He has announced his marriage",
+      "She is reporting a burglary",
+      "She is opening a shop"
+    ],
+    "correctAnswer": "She is worried about his finances",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E07",
+      "Episode title: Burning Up",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: why does Joss's mother visit Mount Thomas?",
+      "Character/subject: She is worried about his finances",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: She is worried about his finances"
+    ]
+  },
+  {
+    "id": "tv_34621",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), what serious effect does Joss's gambling have on his work?",
+    "answers": [
+      "He fails to support Kelly during dangerous incidents",
+      "He loses his police badge",
+      "He misses his promotion exam",
+      "He arrests his own mother"
+    ],
+    "correctAnswer": "He fails to support Kelly during dangerous incidents",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E08",
+      "Episode title: Down to Earth",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: what serious effect does Joss's gambling have on his work?",
+      "Character/subject: He fails to support Kelly during dangerous incidents",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: He fails to support Kelly during dangerous incidents"
+    ]
+  },
+  {
+    "id": "tv_34622",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), which investigation connects Joss's taxi driving to an armed robbery?",
+    "answers": [
+      "The murder of one of his passengers",
+      "A stolen police car",
+      "A shoplifting report",
+      "A missing horse"
+    ],
+    "correctAnswer": "The murder of one of his passengers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E09",
+      "Episode title: Moonlighting",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: which investigation connects Joss's taxi driving to an armed robbery?",
+      "Character/subject: The murder of one of his passengers",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: The murder of one of his passengers"
+    ]
+  },
+  {
+    "id": "tv_34623",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), what operation goes wrong when Amy and Evan's undercover identities are exposed?",
+    "answers": [
+      "An undercover operation in which Matt is nearly shot",
+      "A hostage negotiation at the hospital",
+      "A prison transfer",
+      "A counterfeit jewellery sting"
+    ],
+    "correctAnswer": "An undercover operation in which Matt is nearly shot",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E10",
+      "Episode title: One Day More - Part 1",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: what operation goes wrong when Amy and Evan's undercover identities are exposed?",
+      "Character/subject: An undercover operation in which Matt is nearly shot",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: An undercover operation in which Matt is nearly shot"
+    ]
+  },
+  {
+    "id": "tv_34624",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), which part of his personal life does Tom realise he should rebuild while dealing with cancer?",
+    "answers": [
+      "Relationships with his estranged family",
+      "His football career",
+      "His friendship with the police inspector",
+      "His plans to emigrate"
+    ],
+    "correctAnswer": "Relationships with his estranged family",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E10",
+      "Episode title: One Day More - Part 1",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: which part of his personal life does Tom realise he should rebuild while dealing with cancer?",
+      "Character/subject: Relationships with his estranged family",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: Relationships with his estranged family"
+    ]
+  },
+  {
+    "id": "tv_34625",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), what does Adam Cooper claim Tom sold illegally after the old station bombing?",
+    "answers": [
+      "Stolen firearms",
+      "Confiscated alcohol",
+      "Seized antiques",
+      "Stolen cars"
+    ],
+    "correctAnswer": "Stolen firearms",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E10",
+      "Episode title: One Day More - Part 1",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: what does Adam Cooper claim Tom sold illegally after the old station bombing?",
+      "Character/subject: Stolen firearms",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: Stolen firearms"
+    ]
+  },
+  {
+    "id": "tv_34626",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), what prospect causes the Heelers to begin looking for different jobs?",
+    "answers": [
+      "The threatened closure of Mount Thomas station",
+      "A state-wide ban on rural policing",
+      "The cancellation of police examinations",
+      "Compulsory retirement of detectives"
+    ],
+    "correctAnswer": "The threatened closure of Mount Thomas station",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E11",
+      "Episode title: One Day More - Part 2",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: what prospect causes the Heelers to begin looking for different jobs?",
+      "Character/subject: The threatened closure of Mount Thomas station",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: The threatened closure of Mount Thomas station"
+    ]
+  },
+  {
+    "id": "tv_34627",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2006), who is left disappointed when the decision to close the station is reversed?",
+    "answers": [
+      "Inspector Falcon-Price",
+      "Amy Fox",
+      "Evan Jones",
+      "Kelly O'Rourke"
+    ],
+    "correctAnswer": "Inspector Falcon-Price",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 13",
+      "Broadcast year: 2006",
+      "Episode: S13E11",
+      "Episode title: One Day More - Part 2",
+      "Final season",
+      "Mount Thomas",
+      "Continuing drama",
+      "Year: 2006",
+      "Episode context: who is left disappointed when the decision to close the station is reversed?",
+      "Character/subject: Inspector Falcon-Price",
+      "Source: TheTVDB aired-order synopsis",
+      "Answer focus: Inspector Falcon-Price"
     ]
   }
 ];
-if(questions.length!==55||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(34524+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<20))throw Error('Pack 556 validation failed');
+if(questions.length!==73||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<20))throw Error('Pack 556 validation failed');
 module.exports = questions;
