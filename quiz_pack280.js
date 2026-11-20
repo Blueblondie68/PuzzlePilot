@@ -142,7 +142,7 @@
      const item = {
        id,
        category: 'Television',
-       question,
+       question: question.includes('24') ? question : 'In 24 (Season 4), ' + question.charAt(0).toLowerCase() + question.slice(1),
        answers,
        correctAnswer,
        difficulty,
@@ -158,11 +158,1279 @@
    })
  );
 
- const EXPECTED_COUNT = 84;
+ 
+// EDITORIAL AUDIT: 20 November 2026, Season 4 storylines
+// Original question IDs tv_11332–tv_11415 preserved.
+// Research: TVmaze season 4 episode guide; TheTVDB aired-order synopses; TV Guide.
+// New IDs appended at end of latest bank question IDs; additional verification remains possible.
+const auditAdditions = [
+  {
+    "id": "tv_35128",
+    "category": "Television",
+    "question": "In 24 (Season 4), why does Erin Driscoll resent Jack Bauer's unexpected return to CTU?",
+    "answers": [
+      "She had previously fired him",
+      "He had accused her of stealing funds",
+      "He had replaced her as director",
+      "She had worked for the Salazars"
+    ],
+    "correctAnswer": "She had previously fired him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 01",
+      "Day 4 hour 07:00",
+      "Characters: Erin Driscoll;Jack Bauer",
+      "Storyline: Prior dismissal",
+      "Question focus: Why does Erin Driscoll resent Jack Bauer's unexpected return to CTU?",
+      "Answer focus: She had previously fired him",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35129",
+    "category": "Television",
+    "question": "In 24 (Season 4), what happens when Andrew Paige discovers suspicious terrorist activity online?",
+    "answers": [
+      "He is appointed CTU director",
+      "The terrorists begin hunting him",
+      "His computer is stolen by Audrey",
+      "He voluntarily joins Marwan's group"
+    ],
+    "correctAnswer": "The terrorists begin hunting him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 01",
+      "Day 4 hour 07:00",
+      "Characters: Andrew Paige;Chloe O'Brian",
+      "Storyline: Hacker targeted",
+      "Question focus: What happens when Andrew Paige discovers suspicious terrorist activity online?",
+      "Answer focus: The terrorists begin hunting him",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35130",
+    "category": "Television",
+    "question": "In 24 (Season 4), why does Jack insist on taking part in the hunt for the kidnappers despite CTU's resistance?",
+    "answers": [
+      "He has been ordered back by President Palmer",
+      "His daughter is inside the compound",
+      "His boss and girlfriend are hostages",
+      "He has recovered the stolen override"
+    ],
+    "correctAnswer": "His boss and girlfriend are hostages",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 02",
+      "Day 4 hour 08:00",
+      "Characters: Jack Bauer;James Heller;Audrey Raines",
+      "Storyline: Return to action",
+      "Question focus: Why does Jack insist on taking part in the hunt for the kidnappers despite CTU's resistance?",
+      "Answer focus: His boss and girlfriend are hostages",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35131",
+    "category": "Television",
+    "question": "In 24 (Season 4), what happens to Andrew Paige while Jack follows the terrorists' trail?",
+    "answers": [
+      "He is transferred to a secret prison",
+      "He escapes on an aircraft",
+      "He is held by the police for robbery",
+      "He is tortured for information"
+    ],
+    "correctAnswer": "He is tortured for information",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 03",
+      "Day 4 hour 09:00",
+      "Characters: Andrew Paige;Kalil Hasan",
+      "Storyline: Interrogation of hacker",
+      "Question focus: What happens to Andrew Paige while Jack follows the terrorists' trail?",
+      "Answer focus: He is tortured for information",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35132",
+    "category": "Television",
+    "question": "In 24 (Season 4), why does Curtis Manning interrogate Richard Heller so aggressively?",
+    "answers": [
+      "He suspects Richard knows something about the kidnapping",
+      "Richard has stolen a nuclear warhead",
+      "Richard is wanted for attacking the train",
+      "Richard has confessed to being Marwan"
+    ],
+    "correctAnswer": "He suspects Richard knows something about the kidnapping",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 03",
+      "Day 4 hour 09:00",
+      "Characters: Curtis Manning;Richard Heller",
+      "Storyline: Heller family questioned",
+      "Question focus: Why does Curtis Manning interrogate Richard Heller so aggressively?",
+      "Answer focus: He suspects Richard knows something about the kidnapping",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35133",
+    "category": "Television",
+    "question": "In 24 (Season 4), whose assistance does Chloe secretly enlist to keep helping Jack track Kalil?",
+    "answers": [
+      "Sarah Gavin",
+      "Edgar Stiles",
+      "Marianne Taylor",
+      "Maya Driscoll"
+    ],
+    "correctAnswer": "Edgar Stiles",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 04",
+      "Day 4 hour 10:00",
+      "Characters: Chloe O'Brian;Edgar Stiles;Jack Bauer",
+      "Storyline: Secret technical help",
+      "Question focus: Whose assistance does Chloe secretly enlist to keep helping Jack track Kalil?",
+      "Answer focus: Edgar Stiles",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35134",
+    "category": "Television",
+    "question": "In 24 (Season 4), what do Heller and Audrey attempt while held prisoner by the terrorists?",
+    "answers": [
+      "Broadcast a false surrender",
+      "Steal a nuclear missile",
+      "Escape from their captors",
+      "Send Marwan to a police station"
+    ],
+    "correctAnswer": "Escape from their captors",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 04",
+      "Day 4 hour 10:00",
+      "Characters: James Heller;Audrey Raines",
+      "Storyline: Attempted escape",
+      "Question focus: What do Heller and Audrey attempt while held prisoner by the terrorists?",
+      "Answer focus: Escape from their captors",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35135",
+    "category": "Television",
+    "question": "In 24 (Season 4), what do Heller's captors threaten to do to Audrey unless he cooperates?",
+    "answers": [
+      "Release her into the desert",
+      "Send her to the Chinese consulate",
+      "Expose her relationship with Jack",
+      "Harm or kill her"
+    ],
+    "correctAnswer": "Harm or kill her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 05",
+      "Day 4 hour 11:00",
+      "Characters: James Heller;Audrey Raines",
+      "Storyline: Coercing the hostage",
+      "Question focus: What do Heller's captors threaten to do to Audrey unless he cooperates?",
+      "Answer focus: Harm or kill her",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35136",
+    "category": "Television",
+    "question": "In 24 (Season 4), what does Navi Araz's treatment of Behrooz make Dina question?",
+    "answers": [
+      "Her loyalty to the terrorist operation",
+      "Her decision to buy a new house",
+      "Her support for the election",
+      "Her employment at CTU"
+    ],
+    "correctAnswer": "Her loyalty to the terrorist operation",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 06",
+      "Day 4 hour 12:00",
+      "Characters: Navi Araz;Dina Araz;Behrooz Araz",
+      "Storyline: Dina defends her son",
+      "Question focus: What does Navi Araz's treatment of Behrooz make Dina question?",
+      "Answer focus: Her loyalty to the terrorist operation",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35137",
+    "category": "Television",
+    "question": "In 24 (Season 4), what order does Habib Marwan give Navi regarding his own family?",
+    "answers": [
+      "Send them to the FBI",
+      "Kill Dina and Behrooz",
+      "Give them the override device",
+      "Move them to the White House"
+    ],
+    "correctAnswer": "Kill Dina and Behrooz",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 07",
+      "Day 4 hour 13:00",
+      "Characters: Habib Marwan;Navi Araz",
+      "Storyline: Marwan threatens the Araz family",
+      "Question focus: What order does Habib Marwan give Navi regarding his own family?",
+      "Answer focus: Kill Dina and Behrooz",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35138",
+    "category": "Television",
+    "question": "In 24 (Season 4), whom does CTU wrongly interrogate as a suspected mole after Marianne shifts suspicion?",
+    "answers": [
+      "Erin Driscoll",
+      "Chloe O'Brian",
+      "Sarah Gavin",
+      "Audrey Raines"
+    ],
+    "correctAnswer": "Sarah Gavin",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 08",
+      "Day 4 hour 14:00",
+      "Characters: Marianne Taylor;Sarah Gavin",
+      "Storyline: False mole accusation",
+      "Question focus: Whom does CTU wrongly interrogate as a suspected mole after Marianne shifts suspicion?",
+      "Answer focus: Sarah Gavin",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35139",
+    "category": "Television",
+    "question": "In 24 (Season 4), why does the doctor treating Dina's gunshot wound alert the police?",
+    "answers": [
+      "Dina is using a stolen identity card",
+      "Behrooz is suffering radiation poisoning",
+      "Dina has admitted working for CTU",
+      "He suspects the injury is connected to a crime"
+    ],
+    "correctAnswer": "He suspects the injury is connected to a crime",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 08",
+      "Day 4 hour 14:00",
+      "Characters: Dina Araz;Behrooz Araz",
+      "Storyline: Clinic suspicion",
+      "Question focus: Why does the doctor treating Dina's gunshot wound alert the police?",
+      "Answer focus: He suspects the injury is connected to a crime",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35140",
+    "category": "Television",
+    "question": "In 24 (Season 4), what personal crisis torments Edgar Stiles during the evacuation after a reactor meltdown?",
+    "answers": [
+      "His mother is trapped in the danger zone",
+      "His daughter is missing from school",
+      "His brother is held at the consulate",
+      "His father has been arrested at CTU"
+    ],
+    "correctAnswer": "His mother is trapped in the danger zone",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 09",
+      "Day 4 hour 15:00",
+      "Characters: Edgar Stiles",
+      "Storyline: Family in fallout zone",
+      "Question focus: What personal crisis torments Edgar Stiles during the evacuation after a reactor meltdown?",
+      "Answer focus: His mother is trapped in the danger zone",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35141",
+    "category": "Television",
+    "question": "In 24 (Season 4), whom does Behrooz contact for help as he tries to escape his father?",
+    "answers": [
+      "Paul Raines",
+      "His uncle",
+      "Andrew Paige",
+      "Mike Novick"
+    ],
+    "correctAnswer": "His uncle",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 09",
+      "Day 4 hour 15:00",
+      "Characters: Behrooz Araz;Navi Araz",
+      "Storyline: Behrooz seeks shelter",
+      "Question focus: Whom does Behrooz contact for help as he tries to escape his father?",
+      "Answer focus: His uncle",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35142",
+    "category": "Television",
+    "question": "In 24 (Season 4), how does Marianne Taylor attempt to improve her position after CTU identifies her?",
+    "answers": [
+      "She promises to locate Teri Bauer",
+      "She demands to be made director",
+      "She offers Curtis information in return for leniency",
+      "She proposes an exchange for President Keeler"
+    ],
+    "correctAnswer": "She offers Curtis information in return for leniency",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 10",
+      "Day 4 hour 16:00",
+      "Characters: Marianne Taylor;Curtis Manning",
+      "Storyline: Mole's bargain",
+      "Question focus: How does Marianne Taylor attempt to improve her position after CTU identifies her?",
+      "Answer focus: She offers Curtis information in return for leniency",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35143",
+    "category": "Television",
+    "question": "In 24 (Season 4), what does Sarah Gavin demand after CTU has wrongly treated her as a terrorist suspect?",
+    "answers": [
+      "The right to arrest Jack",
+      "Control of the nuclear plants",
+      "A meeting with Marwan",
+      "Better terms for her continued employment"
+    ],
+    "correctAnswer": "Better terms for her continued employment",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 10",
+      "Day 4 hour 16:00",
+      "Characters: Sarah Gavin",
+      "Storyline: Wrongly accused employee",
+      "Question focus: What does Sarah Gavin demand after CTU has wrongly treated her as a terrorist suspect?",
+      "Answer focus: Better terms for her continued employment",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35144",
+    "category": "Television",
+    "question": "In 24 (Season 4), what does Jack suspect when he investigates Paul Raines with Audrey present?",
+    "answers": [
+      "Paul may have been involved with the terrorists",
+      "Paul has joined the US Navy",
+      "Paul has been working for President Palmer",
+      "Paul has hidden Behrooz at CTU"
+    ],
+    "correctAnswer": "Paul may have been involved with the terrorists",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 11",
+      "Day 4 hour 17:00",
+      "Characters: Jack Bauer;Audrey Raines;Paul Raines",
+      "Storyline: Husband under suspicion",
+      "Question focus: What does Jack suspect when he investigates Paul Raines with Audrey present?",
+      "Answer focus: Paul may have been involved with the terrorists",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35145",
+    "category": "Television",
+    "question": "In 24 (Season 4), what personal crisis repeatedly distracts CTU director Erin Driscoll as the terror threat escalates?",
+    "answers": [
+      "Her husband's secret mission abroad",
+      "Her daughter's deteriorating condition",
+      "Her father's election campaign",
+      "Her brother's trial"
+    ],
+    "correctAnswer": "Her daughter's deteriorating condition",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 11",
+      "Day 4 hour 17:00",
+      "Characters: Erin Driscoll;Maya Driscoll",
+      "Storyline: Driscoll family crisis",
+      "Question focus: What personal crisis repeatedly distracts CTU director Erin Driscoll as the terror threat escalates?",
+      "Answer focus: Her daughter's deteriorating condition",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35146",
+    "category": "Television",
+    "question": "In 24 (Season 4), why do executives at McLennan-Forster attempt to destroy records when Jack investigates?",
+    "answers": [
+      "Their nuclear licence has expired",
+      "The records contain Heller's medical history",
+      "They want to hide their connection to Marwan",
+      "Jack is investigating a tax offence"
+    ],
+    "correctAnswer": "They want to hide their connection to Marwan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 12",
+      "Day 4 hour 18:00",
+      "Characters: McLennan-Forster;Habib Marwan;Jack Bauer",
+      "Storyline: Corporate cover-up",
+      "Question focus: Why do executives at McLennan-Forster attempt to destroy records when Jack investigates?",
+      "Answer focus: They want to hide their connection to Marwan",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35147",
+    "category": "Television",
+    "question": "In 24 (Season 4), who helps Jack and Paul defend themselves when armed men target them after the EMP?",
+    "answers": [
+      "The Secret Service",
+      "A unit led by the Chinese consul",
+      "The Air Force One pilots",
+      "Local civilians"
+    ],
+    "correctAnswer": "Local civilians",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 13",
+      "Day 4 hour 19:00",
+      "Characters: Jack Bauer;Paul Raines",
+      "Storyline: Civilians help during blackout",
+      "Question focus: Who helps Jack and Paul defend themselves when armed men target them after the EMP?",
+      "Answer focus: Local civilians",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35148",
+    "category": "Television",
+    "question": "In 24 (Season 4), what happens to the leadership of CTU when Michelle Dessler returns?",
+    "answers": [
+      "She takes charge from Tony Almeida",
+      "Jack replaces her immediately",
+      "Erin Driscoll resumes command",
+      "Sarah Gavin becomes director"
+    ],
+    "correctAnswer": "She takes charge from Tony Almeida",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 13",
+      "Day 4 hour 19:00",
+      "Characters: Michelle Dessler;Tony Almeida",
+      "Storyline: Michelle returns",
+      "Question focus: What happens to the leadership of CTU when Michelle Dessler returns?",
+      "Answer focus: She takes charge from Tony Almeida",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35149",
+    "category": "Television",
+    "question": "In 24 (Season 4), what ultimatum does Sarah Gavin put to Michelle Dessler on her return to CTU?",
+    "answers": [
+      "Release all CTU detainees",
+      "Accept Sarah's employment demands or lose her help",
+      "Appoint Tony as president",
+      "Close the operations room"
+    ],
+    "correctAnswer": "Accept Sarah's employment demands or lose her help",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 13",
+      "Day 4 hour 19:00",
+      "Characters: Sarah Gavin;Michelle Dessler",
+      "Storyline: Sarah tests Michelle",
+      "Question focus: What ultimatum does Sarah Gavin put to Michelle Dessler on her return to CTU?",
+      "Answer focus: Accept Sarah's employment demands or lose her help",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35150",
+    "category": "Television",
+    "question": "In 24 (Season 4), how does Jack use Dina Araz to approach another suspect connected to Marwan?",
+    "answers": [
+      "He arranges a public press conference",
+      "He has her impersonate Audrey",
+      "He stages a hostage situation",
+      "He swaps her for a captured CTU analyst"
+    ],
+    "correctAnswer": "He stages a hostage situation",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 14",
+      "Day 4 hour 20:00",
+      "Characters: Jack Bauer;Dina Araz",
+      "Storyline: Mock hostage plan",
+      "Question focus: How does Jack use Dina Araz to approach another suspect connected to Marwan?",
+      "Answer focus: He stages a hostage situation",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35151",
+    "category": "Television",
+    "question": "In 24 (Season 4), why is Chloe O'Brian called back to support CTU's operations?",
+    "answers": [
+      "Driscoll needs help managing her daughter",
+      "Tony has resigned to return to prison",
+      "Chloe has received a presidential pardon",
+      "Edgar is struggling to handle the pressure"
+    ],
+    "correctAnswer": "Edgar is struggling to handle the pressure",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 14",
+      "Day 4 hour 20:00",
+      "Characters: Chloe O'Brian;Edgar Stiles",
+      "Storyline: Chloe returns",
+      "Question focus: Why is Chloe O'Brian called back to support CTU's operations?",
+      "Answer focus: Edgar is struggling to handle the pressure",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35152",
+    "category": "Television",
+    "question": "In 24 (Season 4), what trade does Marwan propose that forces CTU to weigh Jack's safety against another hostage?",
+    "answers": [
+      "Jack Bauer in exchange for Behrooz Araz",
+      "Paul Raines in exchange for Chloe",
+      "Dina Araz in exchange for Air Force One",
+      "Audrey Raines in exchange for Michelle"
+    ],
+    "correctAnswer": "Jack Bauer in exchange for Behrooz Araz",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 15",
+      "Day 4 hour 21:00",
+      "Characters: Habib Marwan;Jack Bauer;Behrooz Araz",
+      "Storyline: Hostage exchange",
+      "Question focus: What trade does Marwan propose that forces CTU to weigh Jack's safety against another hostage?",
+      "Answer focus: Jack Bauer in exchange for Behrooz Araz",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35153",
+    "category": "Television",
+    "question": "In 24 (Season 4), what happens when CTU raids the hideout Marwan has been using?",
+    "answers": [
+      "Marwan is killed at the scene",
+      "Marwan escapes before he can be captured",
+      "The nuclear missile is already destroyed",
+      "The president is found inside"
+    ],
+    "correctAnswer": "Marwan escapes before he can be captured",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 16",
+      "Day 4 hour 22:00",
+      "Characters: Habib Marwan;Jack Bauer",
+      "Storyline: Failed hideout raid",
+      "Question focus: What happens when CTU raids the hideout Marwan has been using?",
+      "Answer focus: Marwan escapes before he can be captured",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35154",
+    "category": "Television",
+    "question": "In 24 (Season 4), who unwittingly finds an object that becomes central to the hunt for Air Force One's stolen launch codes?",
+    "answers": [
+      "A group of schoolchildren",
+      "Jack's former colleagues",
+      "Two campers",
+      "The Vice President's bodyguards"
+    ],
+    "correctAnswer": "Two campers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 17",
+      "Day 4 hour 23:00",
+      "Characters: Air Force One;Habib Marwan",
+      "Storyline: Innocent bystanders",
+      "Question focus: Who unwittingly finds an object that becomes central to the hunt for Air Force One's stolen launch codes?",
+      "Answer focus: Two campers",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35155",
+    "category": "Television",
+    "question": "In 24 (Season 4), what is the critical item the campers find after Air Force One is shot down?",
+    "answers": [
+      "A radio containing the president's speech",
+      "A suitcase with money for terrorists",
+      "A stolen CTU surveillance camera",
+      "A briefcase containing nuclear launch codes"
+    ],
+    "correctAnswer": "A briefcase containing nuclear launch codes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 17",
+      "Day 4 hour 23:00",
+      "Characters: Air Force One;Nuclear football",
+      "Storyline: Missing briefcase",
+      "Question focus: What is the critical item the campers find after Air Force One is shot down?",
+      "Answer focus: A briefcase containing nuclear launch codes",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35156",
+    "category": "Television",
+    "question": "In 24 (Season 4), what complication prevents Curtis from freely interrogating a suspect linked to Marwan's next strike?",
+    "answers": [
+      "A lawyer intervenes to protect the suspect",
+      "The suspect is already on an aircraft",
+      "The suspect is the President's brother",
+      "The suspect escapes to Mexico"
+    ],
+    "correctAnswer": "A lawyer intervenes to protect the suspect",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 18",
+      "Day 4 hour 00:00",
+      "Characters: Curtis Manning;Habib Marwan",
+      "Storyline: Legal challenge",
+      "Question focus: What complication prevents Curtis from freely interrogating a suspect linked to Marwan's next strike?",
+      "Answer focus: A lawyer intervenes to protect the suspect",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35157",
+    "category": "Television",
+    "question": "In 24 (Season 4), what concern do Charles Logan's advisers have when he assumes presidential responsibilities?",
+    "answers": [
+      "He is planning to resign immediately",
+      "He appears unable to make decisive choices during the crisis",
+      "He cannot find the White House",
+      "He is secretly hiding the missile"
+    ],
+    "correctAnswer": "He appears unable to make decisive choices during the crisis",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 18",
+      "Day 4 hour 00:00",
+      "Characters: Charles Logan",
+      "Storyline: Logan under pressure",
+      "Question focus: What concern do Charles Logan's advisers have when he assumes presidential responsibilities?",
+      "Answer focus: He appears unable to make decisive choices during the crisis",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35158",
+    "category": "Television",
+    "question": "In 24 (Season 4), what does Chloe O'Brian do when terrorists attack during her first field assignment?",
+    "answers": [
+      "She escapes on a police helicopter",
+      "She takes the terrorist hostage with a knife",
+      "She fires an automatic rifle at an attacker",
+      "She negotiates the attacker's surrender"
+    ],
+    "correctAnswer": "She fires an automatic rifle at an attacker",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 19",
+      "Day 4 hour 01:00",
+      "Characters: Chloe O'Brian",
+      "Storyline: Unexpected armed defence",
+      "Question focus: What does Chloe O'Brian do when terrorists attack during her first field assignment?",
+      "Answer focus: She fires an automatic rifle at an attacker",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35159",
+    "category": "Television",
+    "question": "In 24 (Season 4), what presidential order interrupts Jack's attempt to capture Marwan?",
+    "answers": [
+      "A nationwide air raid is announced",
+      "The airport is declared closed",
+      "Jack is told to release the missile",
+      "Secret Service agents are told to arrest Jack"
+    ],
+    "correctAnswer": "Secret Service agents are told to arrest Jack",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 19",
+      "Day 4 hour 01:00",
+      "Characters: Charles Logan;Jack Bauer",
+      "Storyline: Logan interferes",
+      "Question focus: What presidential order interrupts Jack's attempt to capture Marwan?",
+      "Answer focus: Secret Service agents are told to arrest Jack",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35160",
+    "category": "Television",
+    "question": "In 24 (Season 4), who authorises Jack's covert raid on the Chinese consulate?",
+    "answers": [
+      "David Palmer",
+      "Erin Driscoll",
+      "John Keeler",
+      "Marianne Taylor"
+    ],
+    "correctAnswer": "David Palmer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 20",
+      "Day 4 hour 02:00",
+      "Characters: David Palmer;Jack Bauer",
+      "Storyline: Covert raid decision",
+      "Question focus: Who authorises Jack's covert raid on the Chinese consulate?",
+      "Answer focus: David Palmer",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35161",
+    "category": "Television",
+    "question": "In 24 (Season 4), why does Audrey become furious with Jack at the hospital?",
+    "answers": [
+      "He tells her Paul has already been released",
+      "He prioritises a witness's treatment over Paul's",
+      "He refuses to visit Heller",
+      "He blames her for the reactor meltdown"
+    ],
+    "correctAnswer": "He prioritises a witness's treatment over Paul's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 20",
+      "Day 4 hour 02:00",
+      "Characters: Audrey Raines;Jack Bauer;Paul Raines",
+      "Storyline: Paul's medical crisis",
+      "Question focus: Why does Audrey become furious with Jack at the hospital?",
+      "Answer focus: He prioritises a witness's treatment over Paul's",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35162",
+    "category": "Television",
+    "question": "In 24 (Season 4), what problem arises when Chinese officials investigate the raid on their consulate?",
+    "answers": [
+      "The consul is discovered to be alive",
+      "Marwan claims responsibility for it",
+      "They uncover evidence linking it to American agents",
+      "They mistakenly accuse the FBI of destroying a power station"
+    ],
+    "correctAnswer": "They uncover evidence linking it to American agents",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 21",
+      "Day 4 hour 03:00",
+      "Characters: Cheng Zhi;Jack Bauer",
+      "Storyline: Chinese evidence",
+      "Question focus: What problem arises when Chinese officials investigate the raid on their consulate?",
+      "Answer focus: They uncover evidence linking it to American agents",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35163",
+    "category": "Television",
+    "question": "In 24 (Season 4), what past contact raises new questions about Richard Heller's involvement in the attack?",
+    "answers": [
+      "He once shared an office with Tony Almeida",
+      "He worked at the San Gabriel reactor",
+      "He knew the pilot who rescued Heller",
+      "He had contact with people connected to Marwan"
+    ],
+    "correctAnswer": "He had contact with people connected to Marwan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 22",
+      "Day 4 hour 04:00",
+      "Characters: Richard Heller;Habib Marwan",
+      "Storyline: Richard revisited",
+      "Question focus: What past contact raises new questions about Richard Heller's involvement in the attack?",
+      "Answer focus: He had contact with people connected to Marwan",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35164",
+    "category": "Television",
+    "question": "In 24 (Season 4), who is kidnapped as Tony and Michelle begin to reconcile?",
+    "answers": [
+      "Tony Almeida",
+      "Chloe O'Brian",
+      "Audrey Raines",
+      "Mike Novick"
+    ],
+    "correctAnswer": "Tony Almeida",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 22",
+      "Day 4 hour 04:00",
+      "Characters: Tony Almeida;Michelle Dessler;Mandy",
+      "Storyline: Tony abducted",
+      "Question focus: Who is kidnapped as Tony and Michelle begin to reconcile?",
+      "Answer focus: Tony Almeida",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35165",
+    "category": "Television",
+    "question": "In 24 (Season 4), what does Mandy demand from Michelle after capturing Tony?",
+    "answers": [
+      "Transfer the nuclear football to her",
+      "Help with her escape",
+      "A place in the president's cabinet",
+      "Access to a reactor control room"
+    ],
+    "correctAnswer": "Help with her escape",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 23",
+      "Day 4 hour 05:00",
+      "Characters: Mandy;Michelle Dessler;Tony Almeida",
+      "Storyline: Mandy blackmail",
+      "Question focus: What does Mandy demand from Michelle after capturing Tony?",
+      "Answer focus: Help with her escape",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35166",
+    "category": "Television",
+    "question": "In 24 (Season 4), what does a captured CTU operative face during the Chinese investigation of the consulate raid?",
+    "answers": [
+      "A public trial at the White House",
+      "An order to pilot the nuclear missile",
+      "Interrogation by Chinese security officers",
+      "House arrest under President Keeler"
+    ],
+    "correctAnswer": "Interrogation by Chinese security officers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 23",
+      "Day 4 hour 05:00",
+      "Characters: Cheng Zhi;Chinese security",
+      "Storyline: Chinese probe",
+      "Question focus: What does a captured CTU operative face during the Chinese investigation of the consulate raid?",
+      "Answer focus: Interrogation by Chinese security officers",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35167",
+    "category": "Television",
+    "question": "In 24 (Season 4), what does Mandy demand in exchange for telling CTU where Marwan is hiding?",
+    "answers": [
+      "The nuclear football",
+      "A post at CTU",
+      "A meeting with Secretary Heller",
+      "A full pardon for her previous crimes"
+    ],
+    "correctAnswer": "A full pardon for her previous crimes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 24",
+      "Day 4 hour 06:00",
+      "Characters: Mandy;Jack Bauer;Habib Marwan",
+      "Storyline: Mandy bargain",
+      "Question focus: What does Mandy demand in exchange for telling CTU where Marwan is hiding?",
+      "Answer focus: A full pardon for her previous crimes",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35168",
+    "category": "Television",
+    "question": "In 24 (Season 4), how do Jack's colleagues make his staged death appear genuine?",
+    "answers": [
+      "They use medication to stop and restart his vital signs",
+      "They send an empty coffin to a funeral",
+      "They forge a hospital death certificate without seeing Jack",
+      "They substitute another person's body"
+    ],
+    "correctAnswer": "They use medication to stop and restart his vital signs",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 24",
+      "Day 4 hour 06:00",
+      "Characters: Jack Bauer;Tony Almeida;Michelle Dessler;Chloe O'Brian",
+      "Storyline: Faked death",
+      "Question focus: How do Jack's colleagues make his staged death appear genuine?",
+      "Answer focus: They use medication to stop and restart his vital signs",
+      "2005",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35169",
+    "category": "Television",
+    "question": "In 24 (Season 4), why must Jack remain hidden even after the immediate nuclear threat is stopped?",
+    "answers": [
+      "He is wanted for stealing the nuclear missile",
+      "Government officials plan to kill him rather than surrender him to China",
+      "He has been accused of assassinating Keeler",
+      "He has promised to join Marwan's group"
+    ],
+    "correctAnswer": "Government officials plan to kill him rather than surrender him to China",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 4",
+      "24 Day 4",
+      "Episode 24",
+      "Day 4 hour 06:00",
+      "Characters: Jack Bauer;Chinese consulate;David Palmer",
+      "Storyline: Government assassination plot",
+      "Question focus: Why must Jack remain hidden even after the immediate nuclear threat is stopped?",
+      "Answer focus: Government officials plan to kill him rather than surrender him to China",
+      "2005",
+      "Viewer storyline"
+    ]
+  }
+];
+questions.push(...auditAdditions);
+const EXPECTED_COUNT = 126;
  if (questions.length !== EXPECTED_COUNT) {
    throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
  }
- if (questions[0].id !== 'tv_11332' || questions[questions.length - 1].id !== 'tv_11415') {
+ if (questions[0].id !== 'tv_11332' || questions[83].id !== 'tv_11415' || questions[questions.length - 1].id !== 'tv_35169') {
    throw new Error('Unexpected question ID range');
  }
  if (new Set(questions.map(q => q.id)).size !== questions.length) {
