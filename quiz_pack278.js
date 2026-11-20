@@ -128,7 +128,7 @@ const questions = groups.flatMap(group =>
     const item = {
       id,
       category: 'Television',
-      question,
+      question: question.includes('24') ? question : 'In 24 (Season 2), ' + question.charAt(0).toLowerCase() + question.slice(1),
       answers,
       correctAnswer,
       difficulty,
@@ -144,11 +144,1459 @@ const questions = groups.flatMap(group =>
   })
 );
 
-const EXPECTED_COUNT = 74;
+
+// EDITORIAL AUDIT — 20 November 2026
+// Original 74 questions and IDs tv_11173–tv_11246 preserved.
+// Episode-specific additions after storyline check. Reference: dvd-fever.co.uk/lc24s2/ and TheTVDB 24 Season 2 episode guide.
+// Final editorial fact-check remains separate from automated checks.
+const auditAdditions = [
+  {
+    "id": "tv_35038",
+    "category": "Television",
+    "question": "In 24 (Season 2), which disturbing act does Jack commit during his first interrogation at CTU to establish his undercover credentials?",
+    "answers": [
+      "He shoots a prisoner dead",
+      "He destroys a case file",
+      "He threatens Tony with a knife",
+      "He sets fire to the interrogation room"
+    ],
+    "correctAnswer": "He shoots a prisoner dead",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 01",
+      "Hour: 08:00",
+      "Characters: Jack Bauer;Marshall Goren",
+      "Storyline: Undercover proof",
+      "Question focus: Which disturbing act does Jack commit during his first interrogation at CTU to establish his undercover credentials?",
+      "Answer focus: He shoots a prisoner dead",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35039",
+    "category": "Television",
+    "question": "In 24 (Season 2), what does Jack show Eddie Grant to convince him of his ruthless undercover identity?",
+    "answers": [
+      "The original Second Wave bomb plans",
+      "The severed head of the prisoner he killed",
+      "A recording of Palmer's call",
+      "A suitcase of counterfeit passports"
+    ],
+    "correctAnswer": "The severed head of the prisoner he killed",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 02",
+      "Hour: 09:00",
+      "Characters: Jack Bauer;Eddie Grant",
+      "Storyline: Undercover identity",
+      "Question focus: What does Jack show Eddie Grant to convince him of his ruthless undercover identity?",
+      "Answer focus: The severed head of the prisoner he killed",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35040",
+    "category": "Television",
+    "question": "In 24 (Season 2), what detail almost destroys Jack's credibility when Wald's associates check his claimed identity?",
+    "answers": [
+      "He uses his real surname",
+      "He does not know Wald's garage address",
+      "His false criminal records have not yet been uploaded",
+      "He has a visible CTU badge"
+    ],
+    "correctAnswer": "His false criminal records have not yet been uploaded",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 02",
+      "Hour: 09:00",
+      "Characters: Jack Bauer;Eddie Grant;Paula Schaeffer",
+      "Storyline: Undercover records",
+      "Question focus: What detail almost destroys Jack's credibility when Wald's associates check his claimed identity?",
+      "Answer focus: His false criminal records have not yet been uploaded",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35041",
+    "category": "Television",
+    "question": "In 24 (Season 2), what does Jack do to stay with Eddie Grant's group when they try to send him away?",
+    "answers": [
+      "He steals their getaway money",
+      "He claims Palmer sent him",
+      "He offers to sell CTU weapons",
+      "He sabotages his own car and assaults a suspicious gang member"
+    ],
+    "correctAnswer": "He sabotages his own car and assaults a suspicious gang member",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 02",
+      "Hour: 09:00",
+      "Characters: Jack Bauer;Eddie Grant",
+      "Storyline: Staying undercover",
+      "Question focus: What does Jack do to stay with Eddie Grant's group when they try to send him away?",
+      "Answer focus: He sabotages his own car and assaults a suspicious gang member",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35042",
+    "category": "Television",
+    "question": "In 24 (Season 2), how does Jack secretly warn CTU about explosives planted inside its building?",
+    "answers": [
+      "He gives a telephone technician a sketch of the charges",
+      "He sends an encrypted fax to Mason",
+      "He leaves a voicemail for Palmer",
+      "He sets off the fire alarm himself"
+    ],
+    "correctAnswer": "He gives a telephone technician a sketch of the charges",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 03",
+      "Hour: 10:00",
+      "Characters: Jack Bauer;Tony Almeida",
+      "Storyline: CTU bombing warning",
+      "Question focus: How does Jack secretly warn CTU about explosives planted inside its building?",
+      "Answer focus: He gives a telephone technician a sketch of the charges",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35043",
+    "category": "Television",
+    "question": "In 24 (Season 2), why is the order to evacuate CTU delayed despite Jack's warning?",
+    "answers": [
+      "George Mason orders all doors locked",
+      "Eric Rayburn prevents Lynne Kresge from informing Palmer promptly",
+      "Nina steals the evacuation plan",
+      "Tony refuses to believe Jack"
+    ],
+    "correctAnswer": "Eric Rayburn prevents Lynne Kresge from informing Palmer promptly",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 03",
+      "Hour: 10:00",
+      "Characters: Eric Rayburn;Lynne Kresge;David Palmer",
+      "Storyline: Blocked evacuation",
+      "Question focus: Why is the order to evacuate CTU delayed despite Jack's warning?",
+      "Answer focus: Eric Rayburn prevents Lynne Kresge from informing Palmer promptly",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35044",
+    "category": "Television",
+    "question": "In 24 (Season 2), where is George Mason when he is exposed to a lethal dose of radioactive material?",
+    "answers": [
+      "CTU's underground parking area",
+      "The Warner family's garage",
+      "A site used to build the nuclear device",
+      "Norton Airfield"
+    ],
+    "correctAnswer": "A site used to build the nuclear device",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 03",
+      "Hour: 10:00",
+      "Characters: George Mason",
+      "Storyline: Radiation exposure",
+      "Question focus: Where is George Mason when he is exposed to a lethal dose of radioactive material?",
+      "Answer focus: A site used to build the nuclear device",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35045",
+    "category": "Television",
+    "question": "In 24 (Season 2), why does Mason insist that the badly injured Paula Schaeffer be revived instead of immediately taken to surgery?",
+    "answers": [
+      "She knows the name of a mole",
+      "She has seen the bomb trigger",
+      "She is carrying the President's security codes",
+      "She has crucial decryption knowledge needed after the CTU bombing"
+    ],
+    "correctAnswer": "She has crucial decryption knowledge needed after the CTU bombing",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 04",
+      "Hour: 11:00",
+      "Characters: George Mason;Paula Schaeffer;Tony Almeida",
+      "Storyline: Tragic data decision",
+      "Question focus: Why does Mason insist that the badly injured Paula Schaeffer be revived instead of immediately taken to surgery?",
+      "Answer focus: She has crucial decryption knowledge needed after the CTU bombing",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35046",
+    "category": "Television",
+    "question": "In 24 (Season 2), what fate does Joseph Wald choose rather than be arrested after Jack confronts him?",
+    "answers": [
+      "He kills himself",
+      "He escapes on a helicopter",
+      "He gives himself up at CTU",
+      "He flees to Mexico"
+    ],
+    "correctAnswer": "He kills himself",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 04",
+      "Hour: 11:00",
+      "Characters: Joseph Wald;Jack Bauer",
+      "Storyline: Wald showdown",
+      "Question focus: What fate does Joseph Wald choose rather than be arrested after Jack confronts him?",
+      "Answer focus: He kills himself",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35047",
+    "category": "Television",
+    "question": "In 24 (Season 2), what does Wald reveal that brings Jack face to face with a former enemy?",
+    "answers": [
+      "Palmer's campaign diary",
+      "Photographs identifying Nina Myers as the contact",
+      "A photograph of Kate Warner",
+      "A DNA test connecting Reza to Marie"
+    ],
+    "correctAnswer": "Photographs identifying Nina Myers as the contact",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 04",
+      "Hour: 11:00",
+      "Characters: Joseph Wald;Nina Myers;Jack Bauer",
+      "Storyline: Nina link",
+      "Question focus: What does Wald reveal that brings Jack face to face with a former enemy?",
+      "Answer focus: Photographs identifying Nina Myers as the contact",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35048",
+    "category": "Television",
+    "question": "In 24 (Season 2), how does Jack obtain leverage over George Mason to take over Nina's interrogation?",
+    "answers": [
+      "He discovers Mason has stolen CTU funds",
+      "He threatens to resign again",
+      "He learns Mason has received a lethal radiation dose",
+      "He shows Mason a forged pardon"
+    ],
+    "correctAnswer": "He learns Mason has received a lethal radiation dose",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 05",
+      "Hour: 12:00",
+      "Characters: Jack Bauer;George Mason;Nina Myers",
+      "Storyline: Blackmail for interrogation",
+      "Question focus: How does Jack obtain leverage over George Mason to take over Nina's interrogation?",
+      "Answer focus: He learns Mason has received a lethal radiation dose",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35049",
+    "category": "Television",
+    "question": "In 24 (Season 2), what happens to the helicopter transporting a foreign ambassador after the meeting with Palmer?",
+    "answers": [
+      "It is forced to land at CTU",
+      "It disappears over the Pacific",
+      "It is diverted to Nevada",
+      "It explodes and crashes"
+    ],
+    "correctAnswer": "It explodes and crashes",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 05",
+      "Hour: 12:00",
+      "Characters: David Palmer;Foreign ambassador",
+      "Storyline: Helicopter explosion",
+      "Question focus: What happens to the helicopter transporting a foreign ambassador after the meeting with Palmer?",
+      "Answer focus: It explodes and crashes",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35050",
+    "category": "Television",
+    "question": "In 24 (Season 2), what does Jack arrange to make Nina's CTU interrogation more uncomfortable?",
+    "answers": [
+      "The interrogation-room temperature is raised",
+      "The room is filled with smoke",
+      "Bright lights flash continuously",
+      "Her chair is fitted with an alarm"
+    ],
+    "correctAnswer": "The interrogation-room temperature is raised",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 06",
+      "Hour: 13:00",
+      "Characters: Jack Bauer;Nina Myers",
+      "Storyline: Psychological interrogation",
+      "Question focus: What does Jack arrange to make Nina's CTU interrogation more uncomfortable?",
+      "Answer focus: The interrogation-room temperature is raised",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35051",
+    "category": "Television",
+    "question": "In 24 (Season 2), how does Miguel help Kim take Megan away from the hospital despite Gary's pursuit?",
+    "answers": [
+      "He impersonates Megan's doctor",
+      "He distracts staff and overpowers Gary in the car park",
+      "He steals a helicopter",
+      "He persuades the police to arrest Gary"
+    ],
+    "correctAnswer": "He distracts staff and overpowers Gary in the car park",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 06",
+      "Hour: 13:00",
+      "Characters: Miguel;Kim Bauer;Megan Matheson;Gary Matheson",
+      "Storyline: Hospital escape",
+      "Question focus: How does Miguel help Kim take Megan away from the hospital despite Gary's pursuit?",
+      "Answer focus: He distracts staff and overpowers Gary in the car park",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35052",
+    "category": "Television",
+    "question": "In 24 (Season 2), what painful family reunion does George Mason arrange as his condition worsens?",
+    "answers": [
+      "He telephones his former wife from the airfield",
+      "He visits his elderly mother",
+      "He summons his estranged son John to CTU",
+      "He reconciles with his brother"
+    ],
+    "correctAnswer": "He summons his estranged son John to CTU",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 07",
+      "Hour: 14:00",
+      "Characters: George Mason;John Mason",
+      "Storyline: Mason family",
+      "Question focus: What painful family reunion does George Mason arrange as his condition worsens?",
+      "Answer focus: He summons his estranged son John to CTU",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35053",
+    "category": "Television",
+    "question": "In 24 (Season 2), where does Nina meet her terrorist contact Mamud Faheen?",
+    "answers": [
+      "At Los Angeles City Hall",
+      "Inside the Warner family's office",
+      "At the airport control tower",
+      "At a second-hand shop called Crescent Collectibles"
+    ],
+    "correctAnswer": "At a second-hand shop called Crescent Collectibles",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 07",
+      "Hour: 14:00",
+      "Characters: Nina Myers;Mamud Faheen",
+      "Storyline: Visalia contact",
+      "Question focus: Where does Nina meet her terrorist contact Mamud Faheen?",
+      "Answer focus: At a second-hand shop called Crescent Collectibles",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35054",
+    "category": "Television",
+    "question": "In 24 (Season 2), how does Nina kill Mamud Faheen while travelling back towards Los Angeles?",
+    "answers": [
+      "She slits his throat using a sharpened piece of card",
+      "She poisons his drink",
+      "She shoots him with an agent's gun",
+      "She pushes him out of the aircraft"
+    ],
+    "correctAnswer": "She slits his throat using a sharpened piece of card",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 08",
+      "Hour: 15:00",
+      "Characters: Nina Myers;Mamud Faheen",
+      "Storyline: Faheen murdered",
+      "Question focus: How does Nina kill Mamud Faheen while travelling back towards Los Angeles?",
+      "Answer focus: She slits his throat using a sharpened piece of card",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35055",
+    "category": "Television",
+    "question": "In 24 (Season 2), what interrupts Jack's flight with Nina and Faheen's remaining escorts?",
+    "answers": [
+      "The pilot takes them to the wrong airport",
+      "An explosion damages the aircraft",
+      "A storm forces a diversion",
+      "The aircraft runs out of fuel"
+    ],
+    "correctAnswer": "An explosion damages the aircraft",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 08",
+      "Hour: 15:00",
+      "Characters: Jack Bauer;Nina Myers",
+      "Storyline: Aircraft attacked",
+      "Question focus: What interrupts Jack's flight with Nina and Faheen's remaining escorts?",
+      "Answer focus: An explosion damages the aircraft",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35056",
+    "category": "Television",
+    "question": "In 24 (Season 2), what causes the aircraft carrying Jack and Nina to crash?",
+    "answers": [
+      "A mechanical engine failure",
+      "Sabotaged fuel tanks",
+      "A surface-to-air missile",
+      "A mid-air collision"
+    ],
+    "correctAnswer": "A surface-to-air missile",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 09",
+      "Hour: 16:00",
+      "Characters: Jack Bauer;Nina Myers",
+      "Storyline: Missile attack",
+      "Question focus: What causes the aircraft carrying Jack and Nina to crash?",
+      "Answer focus: A surface-to-air missile",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35057",
+    "category": "Television",
+    "question": "In 24 (Season 2), what extraordinary concession does Nina demand from Palmer after taking Jack hostage?",
+    "answers": [
+      "A position as CTU director",
+      "Control of the presidential aircraft",
+      "Her own private prison",
+      "Advance immunity for killing Jack"
+    ],
+    "correctAnswer": "Advance immunity for killing Jack",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 09",
+      "Hour: 16:00",
+      "Characters: Nina Myers;Jack Bauer;David Palmer",
+      "Storyline: Immunity for murder",
+      "Question focus: What extraordinary concession does Nina demand from Palmer after taking Jack hostage?",
+      "Answer focus: Advance immunity for killing Jack",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35058",
+    "category": "Television",
+    "question": "In 24 (Season 2), what happens to investigator Paul Koplin while Kate Warner is held by Syed Ali?",
+    "answers": [
+      "He is tortured and shot dead",
+      "He escapes and alerts CTU",
+      "He turns out to be an undercover agent",
+      "He is transferred to a federal prison"
+    ],
+    "correctAnswer": "He is tortured and shot dead",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 09",
+      "Hour: 16:00",
+      "Characters: Paul Koplin;Kate Warner;Syed Ali",
+      "Storyline: Kate's abduction",
+      "Question focus: What happens to investigator Paul Koplin while Kate Warner is held by Syed Ali?",
+      "Answer focus: He is tortured and shot dead",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35059",
+    "category": "Television",
+    "question": "In 24 (Season 2), what distinctive marking on a dead attacker helps Jack identify a covert military unit?",
+    "answers": [
+      "A gold signet ring",
+      "A tattoo associated with the Coral Snake commandos",
+      "A tattoo of the CTU seal",
+      "A presidential lapel badge"
+    ],
+    "correctAnswer": "A tattoo associated with the Coral Snake commandos",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 10",
+      "Hour: 17:00",
+      "Characters: Jack Bauer;Coral Snake",
+      "Storyline: Military link",
+      "Question focus: What distinctive marking on a dead attacker helps Jack identify a covert military unit?",
+      "Answer focus: A tattoo associated with the Coral Snake commandos",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35060",
+    "category": "Television",
+    "question": "In 24 (Season 2), who does Marie Warner kill when Reza discovers an incriminating shipment record?",
+    "answers": [
+      "Her father and Tony Almeida",
+      "Syed Ali and Kate",
+      "Reza and a CTU agent",
+      "Two of Jack's police escorts"
+    ],
+    "correctAnswer": "Reza and a CTU agent",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 10",
+      "Hour: 17:00",
+      "Characters: Marie Warner;Reza Naiyeer",
+      "Storyline: Reza murder",
+      "Question focus: Who does Marie Warner kill when Reza discovers an incriminating shipment record?",
+      "Answer focus: Reza and a CTU agent",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35061",
+    "category": "Television",
+    "question": "In 24 (Season 2), how does Jack work out that a burning body in the mosque is not Syed Ali?",
+    "answers": [
+      "The dead man wears a wedding ring",
+      "The body has a different tattoo",
+      "The victim has a false passport",
+      "The body's trousers are too short"
+    ],
+    "correctAnswer": "The body's trousers are too short",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 11",
+      "Hour: 18:00",
+      "Characters: Jack Bauer;Syed Ali",
+      "Storyline: False death in mosque",
+      "Question focus: How does Jack work out that a burning body in the mosque is not Syed Ali?",
+      "Answer focus: The body's trousers are too short",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35062",
+    "category": "Television",
+    "question": "In 24 (Season 2), what disguise does Kate Warner use to try to identify Syed Ali inside the mosque?",
+    "answers": [
+      "She wears a hijab",
+      "She poses as an ambulance worker",
+      "She wears a police uniform",
+      "She pretends to be a television reporter"
+    ],
+    "correctAnswer": "She wears a hijab",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 11",
+      "Hour: 18:00",
+      "Characters: Kate Warner;Syed Ali",
+      "Storyline: Mosque investigation",
+      "Question focus: What disguise does Kate Warner use to try to identify Syed Ali inside the mosque?",
+      "Answer focus: She wears a hijab",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35063",
+    "category": "Television",
+    "question": "In 24 (Season 2), how does Jack prevent Syed Ali from escaping interrogation by suicide?",
+    "answers": [
+      "He removes a hidden syringe",
+      "He stops Ali biting a cyanide tooth",
+      "He takes away a poisoned drink",
+      "He blocks a fall from a roof"
+    ],
+    "correctAnswer": "He stops Ali biting a cyanide tooth",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 12",
+      "Hour: 19:00",
+      "Characters: Jack Bauer;Syed Ali",
+      "Storyline: Cyanide tooth",
+      "Question focus: How does Jack prevent Syed Ali from escaping interrogation by suicide?",
+      "Answer focus: He stops Ali biting a cyanide tooth",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35064",
+    "category": "Television",
+    "question": "In 24 (Season 2), what frightening tactic does Jack use to pressure Syed Ali into revealing the nuclear device's location?",
+    "answers": [
+      "He threatens to close the mosque",
+      "He threatens to arrest Ali's father",
+      "He stages the shooting of Ali's son",
+      "He pretends to bomb an embassy"
+    ],
+    "correctAnswer": "He stages the shooting of Ali's son",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 12",
+      "Hour: 19:00",
+      "Characters: Jack Bauer;Syed Ali",
+      "Storyline: Staged execution",
+      "Question focus: What frightening tactic does Jack use to pressure Syed Ali into revealing the nuclear device's location?",
+      "Answer focus: He stages the shooting of Ali's son",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35065",
+    "category": "Television",
+    "question": "In 24 (Season 2), what does Jack discover about the first nuclear device intercepted at Norton Airfield?",
+    "answers": [
+      "It has no triggering mechanism",
+      "It contains stolen medical isotopes",
+      "It was planted by CTU",
+      "It is a decoy"
+    ],
+    "correctAnswer": "It is a decoy",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 13",
+      "Hour: 20:00",
+      "Characters: Jack Bauer;Norton Airfield",
+      "Storyline: Decoy nuclear device",
+      "Question focus: What does Jack discover about the first nuclear device intercepted at Norton Airfield?",
+      "Answer focus: It is a decoy",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35066",
+    "category": "Television",
+    "question": "In 24 (Season 2), who tricks Kim into hiding in a bomb shelter despite no detonation having occurred?",
+    "answers": [
+      "Lonnie McRae",
+      "Gary Matheson",
+      "Eric Rayburn",
+      "Peter Kingsley"
+    ],
+    "correctAnswer": "Lonnie McRae",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 13",
+      "Hour: 20:00",
+      "Characters: Kim Bauer;Lonnie McRae",
+      "Storyline: False fallout warning",
+      "Question focus: Who tricks Kim into hiding in a bomb shelter despite no detonation having occurred?",
+      "Answer focus: Lonnie McRae",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35067",
+    "category": "Television",
+    "question": "In 24 (Season 2), how does Jack stop Marie when she threatens Kate with a pistol at the airfield?",
+    "answers": [
+      "He shoots the pistol from her hand",
+      "He shoots Marie in the arm",
+      "He persuades Syed Ali to intervene",
+      "He locks her in the cockpit"
+    ],
+    "correctAnswer": "He shoots Marie in the arm",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 14",
+      "Hour: 21:00",
+      "Characters: Jack Bauer;Marie Warner;Kate Warner",
+      "Storyline: Sisters' confrontation",
+      "Question focus: How does Jack stop Marie when she threatens Kate with a pistol at the airfield?",
+      "Answer focus: He shoots Marie in the arm",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35068",
+    "category": "Television",
+    "question": "In 24 (Season 2), what makes it impossible for the bomb-disposal team to safely disarm the real device?",
+    "answers": [
+      "The bomb is hidden underwater",
+      "The flight crew destroys the timer",
+      "Its trigger has been made tamperproof",
+      "The wiring has been removed"
+    ],
+    "correctAnswer": "Its trigger has been made tamperproof",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 15",
+      "Hour: 22:00",
+      "Characters: Jack Bauer;NEST",
+      "Storyline: Disposal failure",
+      "Question focus: What makes it impossible for the bomb-disposal team to safely disarm the real device?",
+      "Answer focus: Its trigger has been made tamperproof",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35069",
+    "category": "Television",
+    "question": "In 24 (Season 2), what does Jack tell his daughter Kim during their emotional telephone goodbye?",
+    "answers": [
+      "He has taken a job overseas",
+      "He plans to resign again",
+      "He wants her to return to Gary's house",
+      "He expects to die taking the bomb into the desert"
+    ],
+    "correctAnswer": "He expects to die taking the bomb into the desert",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 15",
+      "Hour: 22:00",
+      "Characters: Jack Bauer;Kim Bauer",
+      "Storyline: Farewell call",
+      "Question focus: What does Jack tell his daughter Kim during their emotional telephone goodbye?",
+      "Answer focus: He expects to die taking the bomb into the desert",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35070",
+    "category": "Television",
+    "question": "In 24 (Season 2), what does George Mason give Jack when revealing he has secretly boarded the bomb-carrying aircraft?",
+    "answers": [
+      "A parachute",
+      "A second bomb trigger",
+      "A portable radio jammer",
+      "A map of the desert"
+    ],
+    "correctAnswer": "A parachute",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 15",
+      "Hour: 22:00",
+      "Characters: George Mason;Jack Bauer",
+      "Storyline: Mason's sacrifice",
+      "Question focus: What does George Mason give Jack when revealing he has secretly boarded the bomb-carrying aircraft?",
+      "Answer focus: A parachute",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35071",
+    "category": "Television",
+    "question": "In 24 (Season 2), what happens to Syed Ali after he insists the Cyprus recording is false?",
+    "answers": [
+      "He escapes CTU custody",
+      "He is assassinated by a sniper",
+      "He confesses on live television",
+      "He flees aboard a cargo plane"
+    ],
+    "correctAnswer": "He is assassinated by a sniper",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 16",
+      "Hour: 23:00",
+      "Characters: Syed Ali;Jack Bauer",
+      "Storyline: Ali assassination",
+      "Question focus: What happens to Syed Ali after he insists the Cyprus recording is false?",
+      "Answer focus: He is assassinated by a sniper",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35072",
+    "category": "Television",
+    "question": "In 24 (Season 2), how does Jack get past Tony to take Kate out of CTU and pursue the recording's source?",
+    "answers": [
+      "He tricks Tony with a forged court order",
+      "He disguises Kate as an agent",
+      "He knocks Tony unconscious",
+      "He asks Palmer to dismiss Tony"
+    ],
+    "correctAnswer": "He knocks Tony unconscious",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 16",
+      "Hour: 23:00",
+      "Characters: Jack Bauer;Tony Almeida;Kate Warner",
+      "Storyline: CTU escape",
+      "Question focus: How does Jack get past Tony to take Kate out of CTU and pursue the recording's source?",
+      "Answer focus: He knocks Tony unconscious",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35073",
+    "category": "Television",
+    "question": "In 24 (Season 2), where is the chip containing proof of the forged recording concealed?",
+    "answers": [
+      "In a suitcase held by Kate",
+      "Inside a presidential telephone",
+      "Under the Warner family car",
+      "Inside Jonathan Wallace's body"
+    ],
+    "correctAnswer": "Inside Jonathan Wallace's body",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 18",
+      "Hour: 01:00",
+      "Characters: Jonathan Wallace;Jack Bauer",
+      "Storyline: Hidden evidence",
+      "Question focus: Where is the chip containing proof of the forged recording concealed?",
+      "Answer focus: Inside Jonathan Wallace's body",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35074",
+    "category": "Television",
+    "question": "In 24 (Season 2), what does Jack do after realising the chip is hidden within the dying commando?",
+    "answers": [
+      "He cuts it out with a scalpel",
+      "He waits for a surgeon from CTU",
+      "He asks Wallace to swallow a transmitter",
+      "He uses a hand-held scanner"
+    ],
+    "correctAnswer": "He cuts it out with a scalpel",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 18",
+      "Hour: 01:00",
+      "Characters: Jack Bauer;Jonathan Wallace",
+      "Storyline: Chip extraction",
+      "Question focus: What does Jack do after realising the chip is hidden within the dying commando?",
+      "Answer focus: He cuts it out with a scalpel",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35075",
+    "category": "Television",
+    "question": "In 24 (Season 2), what devastating injury does Kim discover Miguel has suffered after helping her escape?",
+    "answers": [
+      "He has lost his sight",
+      "He has lost part of a leg",
+      "He has broken both arms",
+      "He has permanent hearing loss"
+    ],
+    "correctAnswer": "He has lost part of a leg",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 18",
+      "Hour: 01:00",
+      "Characters: Kim Bauer;Miguel",
+      "Storyline: Miguel's injury",
+      "Question focus: What devastating injury does Kim discover Miguel has suffered after helping her escape?",
+      "Answer focus: He has lost part of a leg",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35076",
+    "category": "Television",
+    "question": "In 24 (Season 2), what happens to Jack while Kingsley's men torture him for the recording evidence?",
+    "answers": [
+      "He loses his memory",
+      "He escapes in a stolen ambulance",
+      "His heart stops and he is briefly clinically dead",
+      "He is taken to the White House"
+    ],
+    "correctAnswer": "His heart stops and he is briefly clinically dead",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 19",
+      "Hour: 02:00",
+      "Characters: Jack Bauer;Peter Kingsley",
+      "Storyline: Torture and flatline",
+      "Question focus: What happens to Jack while Kingsley's men torture him for the recording evidence?",
+      "Answer focus: His heart stops and he is briefly clinically dead",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35077",
+    "category": "Television",
+    "question": "In 24 (Season 2), what happens to Yusuf Auda while trying to get the evidence to CTU?",
+    "answers": [
+      "He is promoted to CTU director",
+      "He joins Second Wave",
+      "He leaves by helicopter",
+      "He is beaten by racists and later dies"
+    ],
+    "correctAnswer": "He is beaten by racists and later dies",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 19",
+      "Hour: 02:00",
+      "Characters: Yusuf Auda;Kate Warner",
+      "Storyline: Yusuf's death",
+      "Question focus: What happens to Yusuf Auda while trying to get the evidence to CTU?",
+      "Answer focus: He is beaten by racists and later dies",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35078",
+    "category": "Television",
+    "question": "In 24 (Season 2), how does Lynne Kresge suffer her catastrophic fall while trying to expose the plot against Palmer?",
+    "answers": [
+      "She falls down a stairwell after escaping confinement",
+      "She is thrown from a helicopter",
+      "She trips at a press conference",
+      "She is struck by a car"
+    ],
+    "correctAnswer": "She falls down a stairwell after escaping confinement",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 20",
+      "Hour: 03:00",
+      "Characters: Lynne Kresge;Mike Novick",
+      "Storyline: Stairwell fall",
+      "Question focus: How does Lynne Kresge suffer her catastrophic fall while trying to expose the plot against Palmer?",
+      "Answer focus: She falls down a stairwell after escaping confinement",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35079",
+    "category": "Television",
+    "question": "In 24 (Season 2), what helps Jack escape his captors after they have revived him?",
+    "answers": [
+      "Tony storms the building with a SWAT team",
+      "A doctor covertly assists him against his interrogator",
+      "Kate swaps herself for Jack",
+      "Kingsley orders his immediate release"
+    ],
+    "correctAnswer": "A doctor covertly assists him against his interrogator",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 20",
+      "Hour: 03:00",
+      "Characters: Jack Bauer;Peter Kingsley",
+      "Storyline: Escape from torture",
+      "Question focus: What helps Jack escape his captors after they have revived him?",
+      "Answer focus: A doctor covertly assists him against his interrogator",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35080",
+    "category": "Television",
+    "question": "In 24 (Season 2), how do Tony and Michelle prevent Ryan Chappelle blocking their attempt to help Jack?",
+    "answers": [
+      "They persuade him to retire",
+      "They expose him as a Second Wave agent",
+      "They render him unconscious and confine him",
+      "They obtain a court order"
+    ],
+    "correctAnswer": "They render him unconscious and confine him",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 22",
+      "Hour: 05:00",
+      "Characters: Tony Almeida;Michelle Dessler;Ryan Chappelle",
+      "Storyline: Disabling supervisor",
+      "Question focus: How do Tony and Michelle prevent Ryan Chappelle blocking their attempt to help Jack?",
+      "Answer focus: They render him unconscious and confine him",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35081",
+    "category": "Television",
+    "question": "In 24 (Season 2), what does Alex Hewitt do to Sherry Palmer during the chaotic effort to obtain the forged-recording proof?",
+    "answers": [
+      "He handcuffs her to a radiator",
+      "He abducts her into a vehicle",
+      "He knocks her unconscious with a lamp",
+      "He stabs her"
+    ],
+    "correctAnswer": "He stabs her",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 22",
+      "Hour: 05:00",
+      "Characters: Alex Hewitt;Sherry Palmer",
+      "Storyline: Hewitt betrayal",
+      "Question focus: What does Alex Hewitt do to Sherry Palmer during the chaotic effort to obtain the forged-recording proof?",
+      "Answer focus: He stabs her",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35082",
+    "category": "Television",
+    "question": "In 24 (Season 2), how does Jack help Kim defend herself during Gary Matheson's final attack?",
+    "answers": [
+      "He tells her over the telephone to shoot Gary",
+      "He sends an armed unit into the room",
+      "He distracts Gary from outside the house",
+      "He gives her a code to unlock a safe"
+    ],
+    "correctAnswer": "He tells her over the telephone to shoot Gary",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 22",
+      "Hour: 05:00",
+      "Characters: Jack Bauer;Kim Bauer;Gary Matheson",
+      "Storyline: Telephone instructions",
+      "Question focus: How does Jack help Kim defend herself during Gary Matheson's final attack?",
+      "Answer focus: He tells her over the telephone to shoot Gary",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35083",
+    "category": "Television",
+    "question": "In 24 (Season 2), what happens to Alex Hewitt while Jack pursues him across rooftops?",
+    "answers": [
+      "He is arrested unharmed by CTU",
+      "He falls and suffers a fatal head injury",
+      "He parachutes into a nearby park",
+      "He escapes aboard a news helicopter"
+    ],
+    "correctAnswer": "He falls and suffers a fatal head injury",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 23",
+      "Hour: 06:00",
+      "Characters: Jack Bauer;Alex Hewitt",
+      "Storyline: Hewitt's death",
+      "Question focus: What happens to Alex Hewitt while Jack pursues him across rooftops?",
+      "Answer focus: He falls and suffers a fatal head injury",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35084",
+    "category": "Television",
+    "question": "In 24 (Season 2), how do Jack's allies arrange the meeting with Kingsley after the person he expects to trade for has died?",
+    "answers": [
+      "They exchange a false passport for the chip",
+      "They forge a signed confession from Ali",
+      "They imitate Hewitt's voice electronically",
+      "They persuade Marie to impersonate Hewitt"
+    ],
+    "correctAnswer": "They imitate Hewitt's voice electronically",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 23",
+      "Hour: 06:00",
+      "Characters: Jack Bauer;Alex Hewitt;Michelle Dessler",
+      "Storyline: Faked voice meeting",
+      "Question focus: How do Jack's allies arrange the meeting with Kingsley after the person he expects to trade for has died?",
+      "Answer focus: They imitate Hewitt's voice electronically",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35085",
+    "category": "Television",
+    "question": "In 24 (Season 2), which consequence follows Mike Novick's involvement in removing President Palmer from power?",
+    "answers": [
+      "Palmer appoints him vice president",
+      "He is killed during the attack",
+      "He becomes the new CTU director",
+      "Palmer dismisses him as chief of staff"
+    ],
+    "correctAnswer": "Palmer dismisses him as chief of staff",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 2",
+      "24 Day 2",
+      "Episode 24",
+      "Hour: 07:00",
+      "Characters: David Palmer;Mike Novick",
+      "Storyline: Political consequences",
+      "Question focus: Which consequence follows Mike Novick's involvement in removing President Palmer from power?",
+      "Answer focus: Palmer dismisses him as chief of staff",
+      "2002–2003",
+      "Viewer storyline"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditAdditions);
+const EXPECTED_COUNT = 122;
 if (questions.length !== EXPECTED_COUNT) {
   throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
 }
-if (questions[0].id !== 'tv_11173' || questions[questions.length - 1].id !== 'tv_11246') {
+if (questions[0].id !== 'tv_11173' || questions[73].id !== 'tv_11246' || questions[questions.length - 1].id !== 'tv_35085') {
   throw new Error('Unexpected question ID range');
 }
 if (new Set(questions.map(q => q.id)).size !== questions.length) {
