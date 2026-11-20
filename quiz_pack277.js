@@ -1385,14 +1385,134 @@ const auditAdditions = [
       "Written question"
     ],
     "dailyEligible": true
+  },
+  {
+    "id": "tv_35034",
+    "category": "Television",
+    "question": "In 24 (Season 1), why does Nina move Teri and Kim out of their clinic before the attackers can strike?",
+    "answers": [
+      "She realises men posing as FBI agents are impostors",
+      "She discovers a bomb beneath their car",
+      "The clinic is closing for the day",
+      "The doctor insists on moving them overseas"
+    ],
+    "correctAnswer": "She realises men posing as FBI agents are impostors",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 14",
+      "Clock hour 13:00",
+      "Characters: Nina Myers;Teri Bauer;Kim Bauer",
+      "Storyline: Clinic escape",
+      "Question focus: Why does Nina move Teri and Kim out of their clinic before the attackers can strike?",
+      "Answer focus: She realises men posing as FBI agents are impostors",
+      "2001-2002",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_35035",
+    "category": "Television",
+    "question": "In 24 (Season 1), what happens to Kevin Carroll after he survives Ira Gaines's failed kidnapping operation?",
+    "answers": [
+      "He becomes a CTU informant",
+      "A Drazen assassin kills him",
+      "He escapes to Europe with Rick Allen",
+      "He turns himself in to Senator Palmer"
+    ],
+    "correctAnswer": "A Drazen assassin kills him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 14",
+      "Clock hour 13:00",
+      "Characters: Kevin Carroll;Andre Drazen",
+      "Storyline: Elimination of failed operative",
+      "Question focus: What happens to Kevin Carroll after he survives Ira Gaines's failed kidnapping operation?",
+      "Answer focus: A Drazen assassin kills him",
+      "2001-2002",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_35036",
+    "category": "Television",
+    "question": "In 24 (Season 1), what finally helps Teri recover a key memory of Kim's car accident at the family home?",
+    "answers": [
+      "An old school photograph",
+      "A recording on the answering machine",
+      "A box Kim made for her",
+      "A newspaper article about the crash"
+    ],
+    "correctAnswer": "A box Kim made for her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 19",
+      "Clock hour 18:00",
+      "Characters: Teri Bauer;Kim Bauer",
+      "Storyline: Amnesia recovery",
+      "Question focus: What finally helps Teri recover a key memory of Kim's car accident at the family home?",
+      "Answer focus: A box Kim made for her",
+      "2001-2002",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_35037",
+    "category": "Television",
+    "question": "In 24 (Season 1), what shocking discovery turns the planned narcotics deal at Rick's house into a police raid?",
+    "answers": [
+      "The drugs have been replaced with counterfeit money",
+      "Jack is revealed to be leading the gang",
+      "The warehouse is being watched by the Secret Service",
+      "The supposed drug dealer is an undercover police officer"
+    ],
+    "correctAnswer": "The supposed drug dealer is an undercover police officer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 19",
+      "Clock hour 18:00",
+      "Characters: Kim Bauer;Rick Allen",
+      "Storyline: Drug-raid twist",
+      "Question focus: What shocking discovery turns the planned narcotics deal at Rick's house into a police raid?",
+      "Answer focus: The supposed drug dealer is an undercover police officer",
+      "2001-2002",
+      "Written question"
+    ]
   }
 ];
 questions.push(...auditAdditions);
-const EXPECTED_COUNT = 119;
+const EXPECTED_COUNT = 123;
 if (questions.length !== EXPECTED_COUNT) {
   throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
 }
-if (questions[0].id !== 'tv_11095' || questions[77].id !== 'tv_11172' || questions[questions.length - 1].id !== 'tv_35033') {
+if (questions[0].id !== 'tv_11095' || questions[77].id !== 'tv_11172' || questions[questions.length - 1].id !== 'tv_35037') {
   throw new Error('Unexpected question ID range');
 }
 if (new Set(questions.map(q => q.id)).size !== questions.length) {
