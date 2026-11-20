@@ -333,14 +333,14 @@ const auditAdditions = [
   {
     "id": "tv_35044",
     "category": "Television",
-    "question": "In 24 (Season 2), where is George Mason when he is exposed to a lethal dose of radioactive material?",
+    "question": "In 24 (Season 2), what urgent data-transfer demand from Eric Rayburn makes Tony suspect that something is wrong before CTU is bombed?",
     "answers": [
-      "CTU's underground parking area",
-      "The Warner family's garage",
-      "A site used to build the nuclear device",
-      "Norton Airfield"
+      "He orders all CTU security cameras switched off",
+      "He demands that Tony arrest George Mason",
+      "He orders CTU's nuclear-threat files sent to NSA servers by 11 a.m.",
+      "He tells CTU to close its communications centre"
     ],
-    "correctAnswer": "A site used to build the nuclear device",
+    "correctAnswer": "He orders CTU's nuclear-threat files sent to NSA servers by 11 a.m.",
     "difficulty": "Medium",
     "tags": [
       "American Television",
@@ -352,11 +352,11 @@ const auditAdditions = [
       "Episode 03",
       "Hour: 10:00",
       "Characters: George Mason",
-      "Storyline: Radiation exposure",
-      "Question focus: Where is George Mason when he is exposed to a lethal dose of radioactive material?",
-      "Answer focus: A site used to build the nuclear device",
       "2002–2003",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: What urgent data-transfer demand from Eric Rayburn makes Tony suspect that something is wrong before CTU is bombed?",
+      "Answer focus: He orders CTU's nuclear-threat files sent to NSA servers by 11 a.m.",
+      "Storyline: NSA data transfer"
     ],
     "dailyEligible": true
   },
@@ -663,14 +663,14 @@ const auditAdditions = [
   {
     "id": "tv_35055",
     "category": "Television",
-    "question": "In 24 (Season 2), what interrupts Jack's flight with Nina and Faheen's remaining escorts?",
+    "question": "In 24 (Season 2), what does Jack do to save Nina's life immediately after their aircraft crashes, despite her betrayal?",
     "answers": [
-      "The pilot takes them to the wrong airport",
-      "An explosion damages the aircraft",
-      "A storm forces a diversion",
-      "The aircraft runs out of fuel"
+      "He performs an emergency operation",
+      "He gives her mouth-to-mouth resuscitation",
+      "He gives her a blood transfusion",
+      "He carries her to an underground bunker"
     ],
-    "correctAnswer": "An explosion damages the aircraft",
+    "correctAnswer": "He gives her mouth-to-mouth resuscitation",
     "difficulty": "Medium",
     "tags": [
       "American Television",
@@ -682,11 +682,11 @@ const auditAdditions = [
       "Episode 08",
       "Hour: 15:00",
       "Characters: Jack Bauer;Nina Myers",
-      "Storyline: Aircraft attacked",
-      "Question focus: What interrupts Jack's flight with Nina and Faheen's remaining escorts?",
-      "Answer focus: An explosion damages the aircraft",
       "2002–2003",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: What does Jack do to save Nina's life immediately after their aircraft crashes, despite her betrayal?",
+      "Answer focus: He gives her mouth-to-mouth resuscitation",
+      "Storyline: Rescue after aircraft crash"
     ],
     "dailyEligible": true
   },
@@ -813,14 +813,14 @@ const auditAdditions = [
   {
     "id": "tv_35060",
     "category": "Television",
-    "question": "In 24 (Season 2), who does Marie Warner kill when Reza discovers an incriminating shipment record?",
+    "question": "In 24 (Season 2), what incriminating record is Reza examining when Marie Warner turns on him?",
     "answers": [
-      "Her father and Tony Almeida",
-      "Syed Ali and Kate",
-      "Reza and a CTU agent",
-      "Two of Jack's police escorts"
+      "A signed confession by Kate Warner",
+      "A letter from President Palmer",
+      "A shipping order linked to the nuclear device",
+      "A list of CTU agents' bank accounts"
     ],
-    "correctAnswer": "Reza and a CTU agent",
+    "correctAnswer": "A shipping order linked to the nuclear device",
     "difficulty": "Medium",
     "tags": [
       "American Television",
@@ -832,11 +832,11 @@ const auditAdditions = [
       "Episode 10",
       "Hour: 17:00",
       "Characters: Marie Warner;Reza Naiyeer",
-      "Storyline: Reza murder",
-      "Question focus: Who does Marie Warner kill when Reza discovers an incriminating shipment record?",
-      "Answer focus: Reza and a CTU agent",
       "2002–2003",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: What incriminating record is Reza examining when Marie Warner turns on him?",
+      "Answer focus: A shipping order linked to the nuclear device",
+      "Storyline: Shipping record revelation"
     ],
     "dailyEligible": true
   },
@@ -1143,14 +1143,14 @@ const auditAdditions = [
   {
     "id": "tv_35071",
     "category": "Television",
-    "question": "In 24 (Season 2), what happens to Syed Ali after he insists the Cyprus recording is false?",
+    "question": "In 24 (Season 2), why does the assassination of Syed Ali increase Jack's doubts about the Cyprus recording?",
     "answers": [
-      "He escapes CTU custody",
-      "He is assassinated by a sniper",
-      "He confesses on live television",
-      "He flees aboard a cargo plane"
+      "Ali had confessed to planting the false evidence",
+      "It suggests somebody wants to prevent Ali exposing the forgery",
+      "The attacker leaves a written admission of forgery",
+      "CTU confirms Ali recorded the tape himself"
     ],
-    "correctAnswer": "He is assassinated by a sniper",
+    "correctAnswer": "It suggests somebody wants to prevent Ali exposing the forgery",
     "difficulty": "Medium",
     "tags": [
       "American Television",
@@ -1162,11 +1162,11 @@ const auditAdditions = [
       "Episode 16",
       "Hour: 23:00",
       "Characters: Syed Ali;Jack Bauer",
-      "Storyline: Ali assassination",
-      "Question focus: What happens to Syed Ali after he insists the Cyprus recording is false?",
-      "Answer focus: He is assassinated by a sniper",
       "2002–2003",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: Why does the assassination of Syed Ali increase Jack's doubts about the Cyprus recording?",
+      "Answer focus: It suggests somebody wants to prevent Ali exposing the forgery",
+      "Storyline: Ali's death and the forged tape"
     ],
     "dailyEligible": true
   },
@@ -1563,14 +1563,14 @@ const auditAdditions = [
   {
     "id": "tv_35085",
     "category": "Television",
-    "question": "In 24 (Season 2), which consequence follows Mike Novick's involvement in removing President Palmer from power?",
+    "question": "In 24 (Season 2), what alarming physical sign appears on President Palmer's hand moments before he collapses in the Season 2 finale?",
     "answers": [
-      "Palmer appoints him vice president",
-      "He is killed during the attack",
-      "He becomes the new CTU director",
-      "Palmer dismisses him as chief of staff"
+      "An electrical burn",
+      "A dark tattoo",
+      "A deep knife cut",
+      "Blisters"
     ],
-    "correctAnswer": "Palmer dismisses him as chief of staff",
+    "correctAnswer": "Blisters",
     "difficulty": "Medium",
     "tags": [
       "American Television",
@@ -1582,11 +1582,11 @@ const auditAdditions = [
       "Episode 24",
       "Hour: 07:00",
       "Characters: David Palmer;Mike Novick",
-      "Storyline: Political consequences",
-      "Question focus: Which consequence follows Mike Novick's involvement in removing President Palmer from power?",
-      "Answer focus: Palmer dismisses him as chief of staff",
       "2002–2003",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: What alarming physical sign appears on President Palmer's hand moments before he collapses in the Season 2 finale?",
+      "Answer focus: Blisters",
+      "Storyline: Finale assassination attempt"
     ],
     "dailyEligible": true
   }
