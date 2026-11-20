@@ -1,12 +1,14 @@
 // PuzzlePilot Bigggggg Quiz — Pack 544: Blue Heelers, Series 1 (1994).
-// 213 distinct questions on significant characters, crimes and storylines across 45 episodes; no quotas or padding.
-// IDs: tv_31810–tv_32022. Pack 543 ended tv_31809.
+// 201 audited questions on significant characters, crimes and storylines across 45 episodes; no quotas or padding.
+// IDs: tv_31810–tv_32010. Pack 543 ended tv_31809.
 // Sources: https://thetvdb.com/series/blue-heelers/allseasons/official
 // https://www.tvguide.com/tvshows/blue-heelers/episodes-season-1/1000036269/
 // https://en.wikipedia.org/wiki/Blue_Heelers_season_1
 // Dates from https://epguides.com/BlueHeelers/
 // Coverage ends with S01E45 Damage Control (22 November 1994).
 // Expanded episode-by-episode story audit: TV Guide season-one synopses and original episode directory.
+// Editorial QA: remove repeated facts; avoid disputed bird/snake detail in S01E24.
+// Cross-check S01E22: detailed TV Guide/IMDb/Prime Video identify Charlie McVie; TVDB short synopsis uses a different name.
 'use strict';
 const questions = [
   {
@@ -1705,14 +1707,14 @@ const questions = [
     "id": "tv_31857",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "What type of animal smuggling is investigated in 'A Bird in the Hand'?",
+    "question": "What illegal trade brings the Heelers into an investigation in 'A Bird in the Hand'?",
     "answers": [
-      "Racehorses",
-      "Rare snakes",
-      "Tropical fish",
-      "Exotic parrots"
+      "Stolen-car exporting",
+      "Wildlife smuggling",
+      "Art forgery",
+      "Counterfeit currency"
     ],
-    "correctAnswer": "Rare snakes",
+    "correctAnswer": "Wildlife smuggling",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1733,8 +1735,8 @@ const questions = [
       "Original airdate: 1994-06-28",
       "Character: Roz Patterson",
       "Actor: Ann Burbrook",
-      "Storyline: Rare snake smuggling",
-      "Answer fact: Rare snakes"
+      "Storyline: Wildlife-smuggling inquiry, species unclear across published listings",
+      "Answer fact: Wildlife smuggling"
     ]
   },
   {
@@ -2137,42 +2139,6 @@ const questions = [
     "id": "tv_31869",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "Who shoots an unarmed intruder in 'Necessary Force'?",
-    "answers": [
-      "Chris",
-      "Moira",
-      "Maggie",
-      "Roz"
-    ],
-    "correctAnswer": "Moira",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E30",
-      "Episode title: Necessary Force",
-      "Original airdate: 1994-08-09",
-      "Storyline: Civilian shoots an intruder",
-      "Character: Tom Croydon",
-      "Actor: John Wood",
-      "Answer fact: Moira"
-    ]
-  },
-  {
-    "id": "tv_31870",
-    "category": "TV",
-    "topic": "Blue Heelers",
     "question": "Which city does Roz return to after a shooting traumatises her in 'Necessary Force'?",
     "answers": [
       "Canberra",
@@ -2206,7 +2172,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31871",
+    "id": "tv_31870",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What crime leads PJ to suspect a driver he has seen drunk in 'Bitter Harvest'?",
@@ -2242,7 +2208,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31872",
+    "id": "tv_31871",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What does a speeding motorist offer Nick in 'Crazy Like a Fox'?",
@@ -2278,7 +2244,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31873",
+    "id": "tv_31872",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which type of shopkeeper is accused of handling stolen property in 'Crazy Like a Fox'?",
@@ -2314,7 +2280,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31874",
+    "id": "tv_31873",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What kind of residential facility is investigated in 'Old Dogs, New Tricks'?",
@@ -2350,7 +2316,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31875",
+    "id": "tv_31874",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which two officers clash when a recruit joins the station in 'Labour of Love'?",
@@ -2386,43 +2352,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31876",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "What happened to a travelling sex worker investigated in 'Labour of Love'?",
-    "answers": [
-      "She won a court settlement",
-      "She was robbed and beaten",
-      "She disappeared overseas",
-      "She was accused of poisoning cattle"
-    ],
-    "correctAnswer": "She was robbed and beaten",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E34",
-      "Episode title: Labour of Love",
-      "Original airdate: 1994-09-06",
-      "Storyline: Violent assault on travelling sex worker",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: She was robbed and beaten"
-    ]
-  },
-  {
-    "id": "tv_31877",
+    "id": "tv_31875",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What problem affects the injured woman in the road accident in 'Escape Route'?",
@@ -2458,7 +2388,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31878",
+    "id": "tv_31876",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which new officer develops feelings for Maggie in 'Escape Route'?",
@@ -2494,7 +2424,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31879",
+    "id": "tv_31877",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What happens to the contested farmland in 'Adverse Possession'?",
@@ -2530,7 +2460,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31880",
+    "id": "tv_31878",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which detective returns to town to help relatives in a land dispute in 'Adverse Possession'?",
@@ -2566,7 +2496,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31881",
+    "id": "tv_31879",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "How many missing girls are involved in 'The Folly of Youth'?",
@@ -2602,7 +2532,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31882",
+    "id": "tv_31880",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which local figure is in a puzzling road accident in 'Face Value'?",
@@ -2638,7 +2568,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31883",
+    "id": "tv_31881",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who does Tom see speaking with con artists in 'Face Value'?",
@@ -2674,7 +2604,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31884",
+    "id": "tv_31882",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which police operation is compromised in 'Suspicion'?",
@@ -2710,7 +2640,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31885",
+    "id": "tv_31883",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Where does money go missing during 'Suspicion'?",
@@ -2746,7 +2676,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31886",
+    "id": "tv_31884",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which type of shop is ram-raided in 'Without Intent'?",
@@ -2782,7 +2712,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31887",
+    "id": "tv_31885",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What disappears from a funeral parlour in 'Without Intent'?",
@@ -2818,7 +2748,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31888",
+    "id": "tv_31886",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What event does Tom initially blame for the disturbances in 'Without Intent'?",
@@ -2854,7 +2784,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31889",
+    "id": "tv_31887",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What kind of employee accuses a small-time criminal of burglaries in 'Family Matters'?",
@@ -2890,7 +2820,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31890",
+    "id": "tv_31888",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What has been taken from a distressed girl in 'Family Matters'?",
@@ -2926,7 +2856,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31891",
+    "id": "tv_31889",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What happens to the drunk whom Nick takes home in 'The First Stone'?",
@@ -2962,7 +2892,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31892",
+    "id": "tv_31890",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What accusation is levelled against Tom in 'Skin Deep'?",
@@ -2998,7 +2928,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31893",
+    "id": "tv_31891",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What construction work is affecting the police station during 'Skin Deep'?",
@@ -3034,7 +2964,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31894",
+    "id": "tv_31892",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Whose death in a car accident deeply affects the station in 'Luck of the Draw'?",
@@ -3070,7 +3000,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31895",
+    "id": "tv_31893",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What happens to Tom's daughter in the same car crash?",
@@ -3106,7 +3036,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31896",
+    "id": "tv_31894",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which sporting investigation puts Maggie's relationship with Sean at risk in 'Damage Control'?",
@@ -3142,7 +3072,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31897",
+    "id": "tv_31895",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What does the fallout from the horse-racing inquiry damage in the Series 1 finale?",
@@ -3178,7 +3108,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31898",
+    "id": "tv_31896",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Mount Thomas officer did Maggie Doyle previously date during police training?",
@@ -3214,7 +3144,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31899",
+    "id": "tv_31897",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "To whom is Maggie's former boyfriend married when she arrives at Mount Thomas?",
@@ -3250,7 +3180,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31900",
+    "id": "tv_31898",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What animal attack causes Maggie's first major conflict with Tom in 'A Woman's Place'?",
@@ -3286,7 +3216,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31901",
+    "id": "tv_31899",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What farm machine is due to be repossessed from Bob Crowley in 'Doing It Tough'?",
@@ -3322,7 +3252,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31902",
+    "id": "tv_31900",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who hides Bob Crowley's harvester to allow an insurance claim in 'Doing It Tough'?",
@@ -3358,7 +3288,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31903",
+    "id": "tv_31901",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Why does Grace arrange to hide her father's harvester in 'Doing It Tough'?",
@@ -3394,7 +3324,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31904",
+    "id": "tv_31902",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What business does Tom stop Roz running out of the police residence in 'Doing It Tough'?",
@@ -3430,7 +3360,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31905",
+    "id": "tv_31903",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What job-related discovery makes Wayne's encounter with a morgue especially unpleasant?",
@@ -3466,7 +3396,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31906",
+    "id": "tv_31904",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What protest issue provides the backdrop to the shooting in 'Why Give People Rights?'?",
@@ -3502,7 +3432,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31907",
+    "id": "tv_31905",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What was the occupation of murdered activist Brian Shields?",
@@ -3538,7 +3468,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31908",
+    "id": "tv_31906",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What explanation does Brian Shields's wife offer for his death?",
@@ -3574,7 +3504,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31909",
+    "id": "tv_31907",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is the name of the annual race meeting in 'Waiting for Apples'?",
@@ -3610,7 +3540,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31910",
+    "id": "tv_31908",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which detective pursues a wanted criminal expected to attend the races in 'Waiting for Apples'?",
@@ -3646,7 +3576,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31911",
+    "id": "tv_31909",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who has to deal with a demanding visiting sergeant during the races in 'Waiting for Apples'?",
@@ -3682,7 +3612,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31912",
+    "id": "tv_31910",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What wedding is Tom trying to rescue in 'Apprehended Violence'?",
@@ -3718,7 +3648,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31913",
+    "id": "tv_31911",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Where does Nick discover a young neglected girl in 'Apprehended Violence'?",
@@ -3754,7 +3684,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31914",
+    "id": "tv_31912",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What old crime does Peter Horton arrive at the station confessing to in 'Apprehended Violence'?",
@@ -3790,7 +3720,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31915",
+    "id": "tv_31913",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Why does Roz lose her driving licence during 'Apprehended Violence'?",
@@ -3826,7 +3756,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31916",
+    "id": "tv_31914",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What bereavement explains Nick's strong attitude to speeding drivers?",
@@ -3862,7 +3792,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31917",
+    "id": "tv_31915",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What kind of vehicle is Clare Brady driving when the fatal accident occurs in 'Life After Death'?",
@@ -3898,7 +3828,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31918",
+    "id": "tv_31916",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which officer unexpectedly finds himself collecting debts in 'Life After Death'?",
@@ -3934,7 +3864,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31919",
+    "id": "tv_31917",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which city is the location of a job opportunity for Roz in 'Life After Death'?",
@@ -3970,7 +3900,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31920",
+    "id": "tv_31918",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is Wayne doing immediately before he is shot in 'Domino Effect'?",
@@ -4006,7 +3936,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31921",
+    "id": "tv_31919",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which two suspects are arrested over a break-in at solicitor Haley's property in 'Domino Effect'?",
@@ -4042,7 +3972,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31922",
+    "id": "tv_31920",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Whose proposed move to Melbourne is causing an argument before Wayne is shot in 'Domino Effect'?",
@@ -4078,7 +4008,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31923",
+    "id": "tv_31921",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What personal document leads police towards drug-dealing at the local school in 'Diary Entry'?",
@@ -4114,7 +4044,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31924",
+    "id": "tv_31922",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "How old is farmer Vivian Harris, who reports harassment in 'Visions Splendid'?",
@@ -4150,7 +4080,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31925",
+    "id": "tv_31923",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What concerns Roz about taking the job at Mount Thomas police station in 'Visions Splendid'?",
@@ -4186,7 +4116,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31926",
+    "id": "tv_31924",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Where is the abandoned baby found in the episode 'Abandoned'?",
@@ -4222,7 +4152,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31927",
+    "id": "tv_31925",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What alarming development follows the baby's admission to hospital in 'Abandoned'?",
@@ -4258,7 +4188,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31928",
+    "id": "tv_31926",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Why does Roz briefly resign from her new station job in 'Abandoned'?",
@@ -4294,7 +4224,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31929",
+    "id": "tv_31927",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which organisation asks Roz to speak about being married to a rural police officer in 'Damaged Goods'?",
@@ -4330,7 +4260,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31930",
+    "id": "tv_31928",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What stops an ailing farmer's son from regularly attending school in 'Damaged Goods'?",
@@ -4366,7 +4296,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31931",
+    "id": "tv_31929",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which old friend helps PJ investigate aggravated burglaries in 'Armed and Dangerous'?",
@@ -4402,7 +4332,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31932",
+    "id": "tv_31930",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What kind of unit does PJ join for the aggravated-burglary investigation in 'Armed and Dangerous'?",
@@ -4438,7 +4368,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31933",
+    "id": "tv_31931",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is the name of Chris Riley's former husband who unexpectedly reappears in 'Reunion'?",
@@ -4474,7 +4404,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31934",
+    "id": "tv_31932",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What distinctive feature causes Chris to identify a crash victim as her ex-husband in 'Reunion'?",
@@ -4510,7 +4440,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31935",
+    "id": "tv_31933",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who turns out to have died in the car accident instead of Chris's former husband in 'Reunion'?",
@@ -4546,7 +4476,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31936",
+    "id": "tv_31934",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What do Tom and PJ urge Chris to do after her former husband reappears in 'Reunion'?",
@@ -4582,7 +4512,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31937",
+    "id": "tv_31935",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is the name of the missing five-year-old boy in 'Family Lies'?",
@@ -4618,7 +4548,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31938",
+    "id": "tv_31936",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who takes Zac on a shoplifting spree while he is missing in 'Family Lies'?",
@@ -4654,7 +4584,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31939",
+    "id": "tv_31937",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which family member is badly beaten during the search for Zac in 'Family Lies'?",
@@ -4690,7 +4620,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31940",
+    "id": "tv_31938",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What does Barry admit doing during questioning in 'Family Lies'?",
@@ -4726,7 +4656,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31941",
+    "id": "tv_31939",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What product does travelling salesman George Patterson say is missing from his recovered car in 'Theft'?",
@@ -4762,7 +4692,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31942",
+    "id": "tv_31940",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who says he saw Wayne take the missing property in 'Theft'?",
@@ -4798,7 +4728,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31943",
+    "id": "tv_31941",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What explosive material injures the safe thief in 'Theft'?",
@@ -4834,7 +4764,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31944",
+    "id": "tv_31942",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What action does Chris take against Wayne's accuser Graham McCann in 'Theft'?",
@@ -4870,7 +4800,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31945",
+    "id": "tv_31943",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is the name of the convicted child killer returning to town in 'Meat Is Hung, Men Are Hanged'?",
@@ -4906,7 +4836,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31946",
+    "id": "tv_31944",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is threatened by townspeople because her father is the released child killer in 'Meat Is Hung, Men Are Hanged'?",
@@ -4942,7 +4872,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31947",
+    "id": "tv_31945",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "How old was Rebecca Rees when Clive Royce Ostroff murdered her?",
@@ -4978,7 +4908,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31948",
+    "id": "tv_31946",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What mode of transport does Tom suggest the released killer use to leave Mount Thomas?",
@@ -5014,7 +4944,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31949",
+    "id": "tv_31947",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is the visiting detective investigating stolen livestock in 'Conduct Unbecoming'?",
@@ -5050,43 +4980,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31950",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "What workplace allegation does Angela DeVenuto make after being arrested for shoplifting in 'Conduct Unbecoming'?",
-    "answers": [
-      "Insurance fraud",
-      "Sexual harassment",
-      "Bribery",
-      "Blackmail"
-    ],
-    "correctAnswer": "Sexual harassment",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E18",
-      "Episode title: Conduct Unbecoming",
-      "Original airdate: 1994-05-17",
-      "Storyline: Shoplifting suspect reports mistreatment by employer",
-      "Character: Wayne Patterson",
-      "Actor: Grant Bowler",
-      "Answer fact: Sexual harassment"
-    ]
-  },
-  {
-    "id": "tv_31951",
+    "id": "tv_31948",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is the unpopular sergeant the Heelers fear will replace Tom in 'Good Cop, Bad Cop'?",
@@ -5122,7 +5016,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31952",
+    "id": "tv_31949",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "How does Charlie Glover feel about the proposed posting to Mount Thomas in 'Good Cop, Bad Cop'?",
@@ -5158,7 +5052,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31953",
+    "id": "tv_31950",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which inspector must Tom and Charlie persuade to reconsider their transfer plans in 'Good Cop, Bad Cop'?",
@@ -5194,7 +5088,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31954",
+    "id": "tv_31951",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What sporting code made Big Don Danites famous in 'The Final Season'?",
@@ -5230,7 +5124,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31955",
+    "id": "tv_31952",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Whom does Big Don assault after drinking heavily in 'The Final Season'?",
@@ -5266,7 +5160,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31956",
+    "id": "tv_31953",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What group does Wayne ask Big Don to coach in 'The Final Season'?",
@@ -5302,7 +5196,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31957",
+    "id": "tv_31954",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is the name of Nick's new romantic partner in 'Payback'?",
@@ -5338,7 +5232,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31958",
+    "id": "tv_31955",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which member of Jennifer Willis's family bonds with Nick in 'Payback'?",
@@ -5374,7 +5268,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31959",
+    "id": "tv_31956",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who was the victim of Jennifer's hit-and-run in 'Payback'?",
@@ -5410,7 +5304,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31960",
+    "id": "tv_31957",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What secondary offence do the Heelers investigate alongside the road case in 'Payback'?",
@@ -5446,7 +5340,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31961",
+    "id": "tv_31958",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which friend of Tom's has taken football-club funds in 'Sex, Lies and Videotapes'?",
@@ -5482,7 +5376,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31962",
+    "id": "tv_31959",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Why does Charlie McVie say he stole from the football club in 'Sex, Lies and Videotapes'?",
@@ -5518,7 +5412,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31963",
+    "id": "tv_31960",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is blackmailing Charlie McVie in 'Sex, Lies and Videotapes'?",
@@ -5554,7 +5448,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31964",
+    "id": "tv_31961",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What problem makes the station's arrest of Gail Hutton especially serious in 'Sex, Lies and Videotapes'?",
@@ -5590,7 +5484,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31965",
+    "id": "tv_31962",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What new item of equipment arrives for Mount Thomas Police in 'Sex, Lies and Videotapes'?",
@@ -5626,7 +5520,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31966",
+    "id": "tv_31963",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which politician does Maggie arrest on suspicion of drink-driving in 'Men in Her Life'?",
@@ -5662,7 +5556,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31967",
+    "id": "tv_31964",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What job does Maggie's boyfriend Glenn Ritchie hold in 'Men in Her Life'?",
@@ -5698,7 +5592,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31968",
+    "id": "tv_31965",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Why does Maggie come under internal scrutiny after the politician's arrest in 'Men in Her Life'?",
@@ -5734,7 +5628,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31969",
+    "id": "tv_31966",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Where does Maggie move from to avoid suspicion in 'Men in Her Life'?",
@@ -5770,43 +5664,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31970",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "Which type of animals are the smugglers pursuing in 'A Bird in the Hand'?",
-    "answers": [
-      "Kangaroos",
-      "Rare snakes",
-      "Exotic fish",
-      "Racehorses"
-    ],
-    "correctAnswer": "Rare snakes",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E24",
-      "Episode title: A Bird in the Hand",
-      "Original airdate: 1994-06-28",
-      "Storyline: Rare snake smuggling ring",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: Rare snakes"
-    ]
-  },
-  {
-    "id": "tv_31971",
+    "id": "tv_31967",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is the name of the constable whose drinking causes concern in 'A Bird in the Hand'?",
@@ -5842,7 +5700,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31972",
+    "id": "tv_31968",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What happens to Constable Alan McCubbin once Tom investigates his drinking in 'A Bird in the Hand'?",
@@ -5878,7 +5736,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31973",
+    "id": "tv_31969",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "How old was Paul Mason when he vanished before the events of 'Missing'?",
@@ -5914,7 +5772,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31974",
+    "id": "tv_31970",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What brings fresh leads to the four-year-old missing-person case in 'Missing'?",
@@ -5950,7 +5808,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31975",
+    "id": "tv_31971",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which officers play a practical joke on Maggie while the case develops in 'Missing'?",
@@ -5986,7 +5844,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31976",
+    "id": "tv_31972",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which magistrate travels to Mount Thomas to hear cases in 'Day in Court'?",
@@ -6022,7 +5880,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31977",
+    "id": "tv_31973",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which publican refuses to give evidence in Barry Lambert's case in 'Day in Court'?",
@@ -6058,7 +5916,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31978",
+    "id": "tv_31974",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Whose relationship becomes strained by Chris's refusal to testify in 'Day in Court'?",
@@ -6094,7 +5952,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31979",
+    "id": "tv_31975",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is the young woman found dead in a shared house in 'Nowhere to Run'?",
@@ -6130,7 +5988,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31980",
+    "id": "tv_31976",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which of the dead woman's family members is among those under suspicion in 'Nowhere to Run'?",
@@ -6166,7 +6024,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31981",
+    "id": "tv_31977",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What family reconciliation occurs in 'Nowhere to Run' alongside the death investigation?",
@@ -6202,7 +6060,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31982",
+    "id": "tv_31978",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who receives confidential information from Roz in 'A Matter of Trust'?",
@@ -6238,7 +6096,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31983",
+    "id": "tv_31979",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Why does Roz share the confidential details with Liz Mooney in 'A Matter of Trust'?",
@@ -6274,7 +6132,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31984",
+    "id": "tv_31980",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who attacks the young visitor seeking his birth mother in 'A Matter of Trust'?",
@@ -6310,7 +6168,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31985",
+    "id": "tv_31981",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is the isolated farmer who shoots an intruder in 'Necessary Force'?",
@@ -6346,7 +6204,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31986",
+    "id": "tv_31982",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Why does Moira Field nearly shoot Wayne in 'Necessary Force'?",
@@ -6382,7 +6240,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31987",
+    "id": "tv_31983",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "How does Roz learn of the danger at Moira Field's property in 'Necessary Force'?",
@@ -6418,7 +6276,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31988",
+    "id": "tv_31984",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Under what other name is Joe Furness known in 'Bitter Harvest'?",
@@ -6454,7 +6312,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31989",
+    "id": "tv_31985",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which young woman is attacked after her birthday party in 'Bitter Harvest'?",
@@ -6490,43 +6348,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31990",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "Who becomes fixated on PJ and invites the Heelers to her birthday party in 'Bitter Harvest'?",
-    "answers": [
-      "Chris Riley",
-      "Trish Lowe",
-      "Susan Croydon",
-      "Rose Egan"
-    ],
-    "correctAnswer": "Trish Lowe",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E31",
-      "Episode title: Bitter Harvest",
-      "Original airdate: 1994-08-16",
-      "Storyline: Trish's infatuation and party",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: Trish Lowe"
-    ]
-  },
-  {
-    "id": "tv_31991",
+    "id": "tv_31986",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What family relationship links Philipa and Greg Sutton in 'Crazy Like a Fox'?",
@@ -6562,79 +6384,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31992",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "What goods is an antiques-store owner accused of dealing in during 'Crazy Like a Fox'?",
-    "answers": [
-      "Counterfeit medicines",
-      "Stolen property",
-      "Protected snakes",
-      "Illegal firearms"
-    ],
-    "correctAnswer": "Stolen property",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E32",
-      "Episode title: Crazy Like a Fox",
-      "Original airdate: 1994-08-23",
-      "Storyline: Antiques shop receiving stolen goods",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: Stolen property"
-    ]
-  },
-  {
-    "id": "tv_31993",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "Which apparently peaceful setting becomes the focus of unusual incidents in 'Old Dogs, New Tricks'?",
-    "answers": [
-      "A police training college",
-      "A home for elderly residents",
-      "A railway depot",
-      "A children's library"
-    ],
-    "correctAnswer": "A home for elderly residents",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E33",
-      "Episode title: Old Dogs, New Tricks",
-      "Original airdate: 1994-08-30",
-      "Storyline: Mysterious events at old people's home",
-      "Character: Maggie Doyle",
-      "Actor: Lisa McCune",
-      "Answer fact: A home for elderly residents"
-    ]
-  },
-  {
-    "id": "tv_31994",
+    "id": "tv_31987",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which new constable arrives in Mount Thomas during 'Labour of Love'?",
@@ -6670,7 +6420,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31995",
+    "id": "tv_31988",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Why is Wayne particularly irritable with new recruit Adam in 'Labour of Love'?",
@@ -6706,7 +6456,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31996",
+    "id": "tv_31989",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What happens to the travelling masseuse in 'Labour of Love'?",
@@ -6742,7 +6492,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31997",
+    "id": "tv_31990",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is the first name of the woman who seeks protection from her violent husband in 'Escape Route'?",
@@ -6778,7 +6528,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31998",
+    "id": "tv_31991",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is the name of Pina's husband in 'Escape Route'?",
@@ -6814,7 +6564,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31999",
+    "id": "tv_31992",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Where do the Heelers attempt to move Pina for her safety in 'Escape Route'?",
@@ -6850,43 +6600,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32000",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "Which former girlfriend of PJ returns to help her relatives over a land dispute in 'Adverse Possession'?",
-    "answers": [
-      "Monica Draper",
-      "Hilary Edmunds",
-      "Roz Patterson",
-      "Rose Egan"
-    ],
-    "correctAnswer": "Hilary Edmunds",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E36",
-      "Episode title: Adverse Possession",
-      "Original airdate: 1994-09-20",
-      "Storyline: Hilary returns to protect family land",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: Hilary Edmunds"
-    ]
-  },
-  {
-    "id": "tv_32001",
+    "id": "tv_31993",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What offence makes the contested-land case increasingly dangerous in 'Adverse Possession'?",
@@ -6922,7 +6636,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32002",
+    "id": "tv_31994",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which guest actor portrays William Cassidy in 'The Folly of Youth'?",
@@ -6958,7 +6672,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32003",
+    "id": "tv_31995",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What makes the missing-girls investigation especially fraught in 'The Folly of Youth'?",
@@ -6994,7 +6708,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32004",
+    "id": "tv_31996",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What false medical breakthrough do fraudsters promise in 'Face Value'?",
@@ -7030,43 +6744,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32005",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "Which clergyman raises concerns about his possible links to the con artists in 'Face Value'?",
-    "answers": [
-      "Reverend Mason",
-      "Father Leary",
-      "Bishop Croydon",
-      "Father Doyle"
-    ],
-    "correctAnswer": "Father Leary",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E38",
-      "Episode title: Face Value",
-      "Original airdate: 1994-10-04",
-      "Storyline: Priest linked to fraudulent couple",
-      "Character: Tom Croydon",
-      "Actor: John Wood",
-      "Answer fact: Father Leary"
-    ]
-  },
-  {
-    "id": "tv_32006",
+    "id": "tv_31997",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Whom does PJ suspect of leaking details of a failed drug raid in 'Suspicion'?",
@@ -7102,7 +6780,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32007",
+    "id": "tv_31998",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is Chris worried is responsible for missing drinks and cash at the pub in 'Suspicion'?",
@@ -7138,7 +6816,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32008",
+    "id": "tv_31999",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which new pub employee's innocence does Adam defend in 'Suspicion'?",
@@ -7174,7 +6852,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32009",
+    "id": "tv_32000",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What does the autopsy of Gary Fogarty reveal in 'Without Intent'?",
@@ -7210,7 +6888,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32010",
+    "id": "tv_32001",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which shop is ram-raided after the carpet store in 'Without Intent'?",
@@ -7246,7 +6924,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32011",
+    "id": "tv_32002",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What career does security guard Jason Campbell aspire to in 'Family Matters'?",
@@ -7282,7 +6960,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32012",
+    "id": "tv_32003",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What does a young woman lose in a robbery while faint in a park during 'Family Matters'?",
@@ -7318,7 +6996,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32013",
+    "id": "tv_32004",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What possibility do the police consider about the company-funds robbery in 'Family Matters'?",
@@ -7354,43 +7032,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32014",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "What happened to the intoxicated man after Nick took him home in 'The First Stone'?",
-    "answers": [
-      "He left for Sydney",
-      "He was found dead the following day",
-      "He became a police recruit",
-      "He stole a car"
-    ],
-    "correctAnswer": "He was found dead the following day",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E42",
-      "Episode title: The First Stone",
-      "Original airdate: 1994-11-01",
-      "Storyline: Man driven home later discovered dead",
-      "Character: Nick Schultz",
-      "Actor: William McInnes",
-      "Answer fact: He was found dead the following day"
-    ]
-  },
-  {
-    "id": "tv_32015",
+    "id": "tv_32005",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which member of PJ's family urges him to consider marriage in 'The First Stone'?",
@@ -7426,43 +7068,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32016",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "What accusation does Tom face after an investigation involving Indigenous suspects in 'Skin Deep'?",
-    "answers": [
-      "Neglect of duty",
-      "Racism",
-      "Animal cruelty",
-      "Embezzlement"
-    ],
-    "correctAnswer": "Racism",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E43",
-      "Episode title: Skin Deep",
-      "Original airdate: 1994-11-08",
-      "Storyline: Sergeant accused of prejudice",
-      "Character: Tom Croydon",
-      "Actor: John Wood",
-      "Answer fact: Racism"
-    ]
-  },
-  {
-    "id": "tv_32017",
+    "id": "tv_32006",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who pursues a clever teenage shoplifter but struggles to catch him with stolen goods in 'Skin Deep'?",
@@ -7498,7 +7104,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32018",
+    "id": "tv_32007",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is the suspected cause of the crash that kills Nell Croydon in 'Luck of the Draw'?",
@@ -7534,7 +7140,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32019",
+    "id": "tv_32008",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What allegation is made against Chris Riley after the crash in 'Luck of the Draw'?",
@@ -7570,7 +7176,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32020",
+    "id": "tv_32009",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "How many teenage occupants of the other vehicle are killed in the crash in 'Luck of the Draw'?",
@@ -7606,7 +7212,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32021",
+    "id": "tv_32010",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who arrives from St David's to compete with Maggie for a detective promotion in 'Damage Control'?",
@@ -7640,45 +7246,9 @@ const questions = [
       "Actor: Lisa McCune",
       "Answer fact: Rose Egan"
     ]
-  },
-  {
-    "id": "tv_32022",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "What type of scandal casts suspicion on Maggie's boyfriend Sean in 'Damage Control'?",
-    "answers": [
-      "Arson at a farm",
-      "Horse-racing corruption",
-      "A bank loan fraud",
-      "Theft of police firearms"
-    ],
-    "correctAnswer": "Horse-racing corruption",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 1",
-      "Broadcast year: 1994",
-      "Episode: S01E45",
-      "Episode title: Damage Control",
-      "Original airdate: 1994-11-22",
-      "Storyline: Racing ring-in threatens relationship",
-      "Character: Maggie Doyle",
-      "Actor: Lisa McCune",
-      "Answer fact: Horse-racing corruption"
-    ]
   }
 ];
-if(questions.length!==213||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==201||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>q.id!=='tv_'+(31810+i)||q.answers.length!==4||
 new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
