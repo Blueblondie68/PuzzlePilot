@@ -10,7 +10,7 @@ const questions = [
     "id": "tv_34723",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the Battle of Serenity Valley?",
+    "question": "Which battle opens the original two-hour Firefly pilot?",
     "answers": [
       "The Battle of Serenity Valley",
       "The Battle of Du-Khang",
@@ -50,7 +50,7 @@ const questions = [
     "id": "tv_34724",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the Mal's side during the war?",
+    "question": "In Firefly, which option matches 'Mal's side during the war'?",
     "answers": [
       "The Alliance",
       "The Independents",
@@ -90,7 +90,7 @@ const questions = [
     "id": "tv_34725",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the Mal's spaceship?",
+    "question": "Which of these correctly identifies 'Mal's spaceship' in Firefly?",
     "answers": [
       "Icarus",
       "Osiris",
@@ -130,7 +130,7 @@ const questions = [
     "id": "tv_34726",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the Serenity's ship class?",
+    "question": "Which answer fits the clue 'Serenity's ship class' in Firefly?",
     "answers": [
       "Cruiser-class",
       "Raptor-class",
@@ -170,7 +170,7 @@ const questions = [
     "id": "tv_34727",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the doctor protecting a sister from the Alliance?",
+    "question": "Which character is the doctor protecting a sister from the Alliance?",
     "answers": [
       "Simon Tam",
       "Shepherd Book",
@@ -210,7 +210,7 @@ const questions = [
     "id": "tv_34728",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the Simon Tam's sister?",
+    "question": "Which of these correctly identifies 'Simon Tam's sister' in Firefly?",
     "answers": [
       "Kaylee Frye",
       "River Tam",
@@ -250,7 +250,7 @@ const questions = [
     "id": "tv_34729",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the undercover Alliance agent pursuing Simon?",
+    "question": "Who is the undercover Alliance agent pursuing Simon?",
     "answers": [
       "Badger",
       "Niska",
@@ -290,7 +290,7 @@ const questions = [
     "id": "tv_34730",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the buyer who tries to cheat Mal?",
+    "question": "Which character is the buyer who tries to cheat Mal?",
     "answers": [
       "Saffron",
       "Nandi",
@@ -330,7 +330,7 @@ const questions = [
     "id": "tv_34731",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the female ship mechanic wounded during the confrontation?",
+    "question": "In Firefly, who is the female ship mechanic wounded during the confrontation?",
     "answers": [
       "Kaylee Frye",
       "Inara Serra",
@@ -370,7 +370,7 @@ const questions = [
     "id": "tv_34732",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the Companion renting a shuttle on Serenity?",
+    "question": "Who is the Companion renting a shuttle on Serenity?",
     "answers": [
       "River Tam",
       "Inara Serra",
@@ -410,7 +410,7 @@ const questions = [
     "id": "tv_34733",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the ship's pilot and Zoe's husband?",
+    "question": "Which character is the ship's pilot and Zoe's husband?",
     "answers": [
       "Jayne Cobb",
       "Book",
@@ -450,7 +450,7 @@ const questions = [
     "id": "tv_34734",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the crime boss who orders a train robbery?",
+    "question": "Which of these correctly identifies 'crime boss who orders a train robbery' in Firefly?",
     "answers": [
       "Badger",
       "Adelai Niska",
@@ -490,7 +490,7 @@ const questions = [
     "id": "tv_34735",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the type of stolen cargo?",
+    "question": "What is the type of stolen cargo?",
     "answers": [
       "Gold",
       "Weapons",
@@ -530,7 +530,7 @@ const questions = [
     "id": "tv_34736",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Why does Mal return the stolen cargo?",
+    "question": "Why does Mal return the stolen cargo from the train?",
     "answers": [
       "It is counterfeit",
       "It is dangerous radioactive waste",
@@ -570,7 +570,7 @@ const questions = [
     "id": "tv_34737",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the crew members stranded on the train?",
+    "question": "In Firefly, who is the crew members stranded on the train?",
     "answers": [
       "Mal and Zoe",
       "Simon and River",
@@ -690,7 +690,7 @@ const questions = [
     "id": "tv_34740",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the group responsible for attacking the drifting settler ship?",
+    "question": "In Firefly, who is the group responsible for attacking the drifting settler ship?",
     "answers": [
       "Browncoats",
       "Companions",
@@ -730,7 +730,7 @@ const questions = [
     "id": "tv_34741",
     "category": "TV",
     "topic": "Firefly",
-    "question": "How many survivors discovered aboard the ship?",
+    "question": "How many survivors discovered aboard the ship were found?",
     "answers": [
       "Two",
       "Five",
@@ -770,7 +770,7 @@ const questions = [
     "id": "tv_34742",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the organisation that detains and interrogates Serenity's crew?",
+    "question": "Which character is the organisation that detains and interrogates Serenity's crew?",
     "answers": [
       "The Alliance",
       "The Independents",
@@ -810,7 +810,7 @@ const questions = [
     "id": "tv_34743",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the commander who initially doubts the Reaver threat?",
+    "question": "In Firefly, who is the commander who initially doubts the Reaver threat?",
     "answers": [
       "Niska",
       "Harken",
@@ -850,7 +850,7 @@ const questions = [
     "id": "tv_34744",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which fugitives hide from the inspectors?",
+    "question": "Which answer fits the clue 'which fugitives hide from the inspectors' in Firefly?",
     "answers": [
       "Kaylee and Jayne",
       "Wash and Zoe",
@@ -970,7 +970,7 @@ const questions = [
     "id": "tv_34747",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the Companion who attends the formal ball?",
+    "question": "Who is the Companion who attends the formal ball?",
     "answers": [
       "River Tam",
       "Kaylee Frye",
@@ -1010,7 +1010,7 @@ const questions = [
     "id": "tv_34748",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the smuggling contact who sends Mal to the ball?",
+    "question": "Which character is the smuggling contact who sends Mal to the ball?",
     "answers": [
       "Badger",
       "Niska",
@@ -1050,7 +1050,7 @@ const questions = [
     "id": "tv_34749",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the man whom Mal challenges after an insult to Inara?",
+    "question": "In Firefly, who is the man whom Mal challenges after an insult to Inara?",
     "answers": [
       "Stitch Hessian",
       "Atherton Wing",
@@ -1090,7 +1090,7 @@ const questions = [
     "id": "tv_34750",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the weapons used for the duel?",
+    "question": "What is the weapons used for the duel?",
     "answers": [
       "Pistols",
       "Crossbows",
@@ -1130,7 +1130,7 @@ const questions = [
     "id": "tv_34751",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the person who coaches Mal before the duel?",
+    "question": "Which character is the person who coaches Mal before the duel?",
     "answers": [
       "River Tam",
       "Kaylee Frye",
@@ -1210,7 +1210,7 @@ const questions = [
     "id": "tv_34753",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the cargo the crew agrees to transport afterward?",
+    "question": "What is the cargo the crew agrees to transport afterward?",
     "answers": [
       "Medicine",
       "Cattle",
@@ -1250,7 +1250,7 @@ const questions = [
     "id": "tv_34754",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the planet hosting the formal party?",
+    "question": "In Firefly, which option matches 'planet hosting the formal party'?",
     "answers": [
       "Ariel",
       "Miranda",
@@ -1290,7 +1290,7 @@ const questions = [
     "id": "tv_34755",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the doctor kidnapped because settlers need his skills?",
+    "question": "In Firefly, who is the doctor kidnapped because settlers need his skills?",
     "answers": [
       "Simon Tam",
       "Shepherd Book",
@@ -1330,7 +1330,7 @@ const questions = [
     "id": "tv_34756",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the person kidnapped with Simon?",
+    "question": "Who is the person kidnapped with Simon?",
     "answers": [
       "Inara Serra",
       "River Tam",
@@ -1370,7 +1370,7 @@ const questions = [
     "id": "tv_34757",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the accusation made against River?",
+    "question": "In Firefly, which option matches 'accusation made against River'?",
     "answers": [
       "Piracy",
       "Smuggling",
@@ -1410,7 +1410,7 @@ const questions = [
     "id": "tv_34758",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the punishment threatened for River?",
+    "question": "In Firefly, what is the punishment threatened for River?",
     "answers": [
       "A duel",
       "Life imprisonment",
@@ -1450,7 +1450,7 @@ const questions = [
     "id": "tv_34759",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the passenger injured while Serenity transports cattle?",
+    "question": "Who is the passenger injured while Serenity transports cattle?",
     "answers": [
       "Shepherd Book",
       "Jayne Cobb",
@@ -1490,7 +1490,7 @@ const questions = [
     "id": "tv_34760",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the reason an Alliance officer helps the injured Book?",
+    "question": "Which description best matches the reason an Alliance officer helps the injured Book?",
     "answers": [
       "Simon pays a bribe",
       "He recognises Book's identification",
@@ -1530,7 +1530,7 @@ const questions = [
     "id": "tv_34761",
     "category": "TV",
     "topic": "Firefly",
-    "question": "How Mal describes Simon and River after rescuing them?",
+    "question": "Which of these correctly identifies 'how Mal describes Simon and River after rescuing them' in Firefly?",
     "answers": [
       "Paying guests",
       "Alliance agents",
@@ -1570,7 +1570,7 @@ const questions = [
     "id": "tv_34762",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the woman who unexpectedly becomes Mal's supposed wife?",
+    "question": "Who is the woman who unexpectedly becomes Mal's supposed wife?",
     "answers": [
       "Nandi",
       "Saffron",
@@ -1610,7 +1610,7 @@ const questions = [
     "id": "tv_34763",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Why does Mal is surprised by the marriage?",
+    "question": "Why is Mal surprised to discover that he is married?",
     "answers": [
       "He had already proposed to Inara",
       "He had never met the villagers",
@@ -1650,7 +1650,7 @@ const questions = [
     "id": "tv_34764",
     "category": "TV",
     "topic": "Firefly",
-    "question": "How Saffron incapacitates Mal?",
+    "question": "How does Saffron incapacitate Mal?",
     "answers": [
       "A pistol shot",
       "A sedative dart",
@@ -1690,7 +1690,7 @@ const questions = [
     "id": "tv_34765",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the trap Saffron sets for Serenity?",
+    "question": "What is the trap Saffron sets for Serenity?",
     "answers": [
       "Ship scrappers",
       "An Alliance prison",
@@ -1730,7 +1730,7 @@ const questions = [
     "id": "tv_34766",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the Saffron's real occupation?",
+    "question": "In Firefly, which option matches 'Saffron's real occupation'?",
     "answers": [
       "Alliance admiral",
       "Con artist",
@@ -1770,7 +1770,7 @@ const questions = [
     "id": "tv_34767",
     "category": "TV",
     "topic": "Firefly",
-    "question": "How Saffron escapes Serenity?",
+    "question": "How does Saffron escape Serenity?",
     "answers": [
       "In a life raft",
       "On a horse",
@@ -1810,7 +1810,7 @@ const questions = [
     "id": "tv_34768",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the crew member hailed as the Hero of Canton?",
+    "question": "Who is the crew member hailed as the Hero of Canton?",
     "answers": [
       "Simon Tam",
       "Wash",
@@ -1850,7 +1850,7 @@ const questions = [
     "id": "tv_34769",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Why Jayne's stolen money reached the mudders?",
+    "question": "Why did Jayne's stolen money reach the Canton mudders?",
     "answers": [
       "He donated it voluntarily",
       "He paid local taxes",
@@ -1890,7 +1890,7 @@ const questions = [
     "id": "tv_34770",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the former criminal partner who seeks revenge on Jayne?",
+    "question": "In Firefly, who is the former criminal partner who seeks revenge on Jayne?",
     "answers": [
       "Stitch Hessian",
       "Badger",
@@ -1930,7 +1930,7 @@ const questions = [
     "id": "tv_34771",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the official who releases Jayne's former partner?",
+    "question": "Who is the official who releases Jayne's former partner?",
     "answers": [
       "Commander Harken",
       "Magistrate Higgins",
@@ -2010,7 +2010,7 @@ const questions = [
     "id": "tv_34773",
     "category": "TV",
     "topic": "Firefly",
-    "question": "How Jayne reacts to the hero worship after the death?",
+    "question": "How does Jayne react to the hero worship after the villager's death?",
     "answers": [
       "He demands a larger statue",
       "He runs for office",
@@ -2050,7 +2050,7 @@ const questions = [
     "id": "tv_34774",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the person who permits Serenity to depart despite the grounding order?",
+    "question": "Who is the person who permits Serenity to depart despite the grounding order?",
     "answers": [
       "Fess Higgins",
       "Stitch Hessian",
@@ -2090,7 +2090,7 @@ const questions = [
     "id": "tv_34775",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the crew member who dances with Kaylee?",
+    "question": "Which character is the crew member who dances with Kaylee?",
     "answers": [
       "Shepherd Book",
       "Simon Tam",
@@ -2130,7 +2130,7 @@ const questions = [
     "id": "tv_34776",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the disaster that shuts down Serenity's life support?",
+    "question": "In Firefly, what is the disaster that shuts down Serenity's life support?",
     "answers": [
       "Reaver attack",
       "Alliance inspection",
@@ -2170,7 +2170,7 @@ const questions = [
     "id": "tv_34777",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the resource running out after the explosion?",
+    "question": "What is the resource running out after the explosion?",
     "answers": [
       "Oxygen",
       "Fresh water",
@@ -2250,7 +2250,7 @@ const questions = [
     "id": "tv_34779",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the narrative device showing how Serenity's crew came together?",
+    "question": "In Firefly, what is the narrative device showing how Serenity's crew came together?",
     "answers": [
       "Court testimony",
       "News broadcasts",
@@ -2290,7 +2290,7 @@ const questions = [
     "id": "tv_34780",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the person who purchased Serenity?",
+    "question": "Who is the person who purchased Serenity?",
     "answers": [
       "Inara Serra",
       "Wash",
@@ -2330,7 +2330,7 @@ const questions = [
     "id": "tv_34781",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the new mechanic recruited in the flashbacks?",
+    "question": "Which character is the new mechanic recruited in the flashbacks?",
     "answers": [
       "Kaylee Frye",
       "River Tam",
@@ -2450,7 +2450,7 @@ const questions = [
     "id": "tv_34784",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Why does Simon enters the hospital on Ariel?",
+    "question": "Why does Simon arrange to enter the hospital on Ariel?",
     "answers": [
       "To examine River's condition",
       "To recover stolen cattle",
@@ -2490,7 +2490,7 @@ const questions = [
     "id": "tv_34785",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the medical investigation Simon arranges for River?",
+    "question": "In Firefly, what is the medical investigation Simon arranges for River?",
     "answers": [
       "Heart transplant",
       "Brain scan",
@@ -2530,7 +2530,7 @@ const questions = [
     "id": "tv_34786",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the other goods the crew intends to steal?",
+    "question": "What is the other goods the crew intends to steal?",
     "answers": [
       "Jewellery",
       "Weapons",
@@ -2570,7 +2570,7 @@ const questions = [
     "id": "tv_34787",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the crew member who betrays Simon and River?",
+    "question": "Which character is the crew member who betrays Simon and River?",
     "answers": [
       "Wash",
       "Kaylee Frye",
@@ -2610,7 +2610,7 @@ const questions = [
     "id": "tv_34788",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Why the Alliance agent arrests Jayne too?",
+    "question": "Why does the Alliance agent arrest Jayne as well?",
     "answers": [
       "He wants the reward for himself",
       "Simon has accused Jayne",
@@ -2650,7 +2650,7 @@ const questions = [
     "id": "tv_34789",
     "category": "TV",
     "topic": "Firefly",
-    "question": "How Mal threatens Jayne when the betrayal is discovered?",
+    "question": "How does Mal threaten Jayne after discovering his betrayal?",
     "answers": [
       "He challenges him to a duel",
       "He threatens to expose him to space",
@@ -2730,7 +2730,7 @@ const questions = [
     "id": "tv_34791",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the two crew members captured by Niska?",
+    "question": "Which of these correctly identifies 'two crew members captured by Niska' in Firefly?",
     "answers": [
       "Zoe and Jayne",
       "Mal and Wash",
@@ -2770,7 +2770,7 @@ const questions = [
     "id": "tv_34792",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Why does Wash joins Mal's mission instead of Zoe?",
+    "question": "Why does Wash insist on going with Mal instead of Zoe?",
     "answers": [
       "He needs medical training",
       "Niska bribes him",
@@ -2810,7 +2810,7 @@ const questions = [
     "id": "tv_34793",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the experience that links Mal and Zoe?",
+    "question": "Which description best matches the experience that links Mal and Zoe?",
     "answers": [
       "Companion training",
       "Childhood as siblings",
@@ -2850,7 +2850,7 @@ const questions = [
     "id": "tv_34794",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the reason Niska seeks revenge on Mal?",
+    "question": "In Firefly, what is the reason Niska seeks revenge on Mal?",
     "answers": [
       "The abandoned train-robbery deal",
       "The murder of his son",
@@ -2890,7 +2890,7 @@ const questions = [
     "id": "tv_34795",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the whom Zoe chooses to ransom?",
+    "question": "Which answer fits the clue 'whom Zoe chooses to ransom' in Firefly?",
     "answers": [
       "Mal",
       "Wash",
@@ -2930,7 +2930,7 @@ const questions = [
     "id": "tv_34796",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the response to Mal's continued captivity?",
+    "question": "Which description best matches the response to Mal's continued captivity?",
     "answers": [
       "They sell Serenity",
       "They seek a court order",
@@ -2970,7 +2970,7 @@ const questions = [
     "id": "tv_34797",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the criminal responsible for torturing the two prisoners?",
+    "question": "In Firefly, who is the criminal responsible for torturing the two prisoners?",
     "answers": [
       "Badger",
       "Burgess",
@@ -3010,7 +3010,7 @@ const questions = [
     "id": "tv_34798",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the returning con artist who proposes an antique theft?",
+    "question": "Which answer fits the clue 'returning con artist who proposes an antique theft' in Firefly?",
     "answers": [
       "Patience",
       "Nandi",
@@ -3050,7 +3050,7 @@ const questions = [
     "id": "tv_34799",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the item Mal is enlisted to steal?",
+    "question": "Which description best matches the item Mal is enlisted to steal?",
     "answers": [
       "Painting",
       "Medical scanner",
@@ -3090,7 +3090,7 @@ const questions = [
     "id": "tv_34800",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the secret link between Saffron and the item's owner?",
+    "question": "In Firefly, what is the secret link between Saffron and the item's owner?",
     "answers": [
       "They are married",
       "They are siblings",
@@ -3130,7 +3130,7 @@ const questions = [
     "id": "tv_34801",
     "category": "TV",
     "topic": "Firefly",
-    "question": "How Saffron leaves Mal after betraying him?",
+    "question": "How does Saffron abandon Mal after betraying him?",
     "answers": [
       "Imprisoned in a hospital",
       "Naked in the desert",
@@ -3250,7 +3250,7 @@ const questions = [
     "id": "tv_34804",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the former fellow soldier whose apparent corpse arrives on Serenity?",
+    "question": "Who is the former fellow soldier whose apparent corpse arrives on Serenity?",
     "answers": [
       "Niska",
       "Badger",
@@ -3330,7 +3330,7 @@ const questions = [
     "id": "tv_34806",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the surprise discovery about Tracey's corpse?",
+    "question": "In Firefly, what is the surprise discovery about Tracey's corpse?",
     "answers": [
       "It is an impostor",
       "He is alive",
@@ -3370,7 +3370,7 @@ const questions = [
     "id": "tv_34807",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the goods Tracey has been smuggling?",
+    "question": "What is the goods Tracey has been smuggling?",
     "answers": [
       "Cattle",
       "Counterfeit notes",
@@ -3490,7 +3490,7 @@ const questions = [
     "id": "tv_34810",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the person who pressures the officer to let them go?",
+    "question": "Who is the person who pressures the officer to let them go?",
     "answers": [
       "Kaylee Frye",
       "Shepherd Book",
@@ -3530,7 +3530,7 @@ const questions = [
     "id": "tv_34811",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the final favour Mal and Zoe perform for Tracey?",
+    "question": "Which description best matches the final favour Mal and Zoe perform for Tracey?",
     "answers": [
       "Arrange an Alliance state funeral",
       "Sell his equipment",
@@ -3570,7 +3570,7 @@ const questions = [
     "id": "tv_34812",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the former Companion who asks Inara for help?",
+    "question": "In Firefly, who is the former Companion who asks Inara for help?",
     "answers": [
       "Nandi",
       "Saffron",
@@ -3610,7 +3610,7 @@ const questions = [
     "id": "tv_34813",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the type of business Nandi runs?",
+    "question": "What is the type of business Nandi runs?",
     "answers": [
       "A hospital",
       "An independent bordello",
@@ -3650,7 +3650,7 @@ const questions = [
     "id": "tv_34814",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the local ruler who plans to take a newborn baby?",
+    "question": "Which character is the local ruler who plans to take a newborn baby?",
     "answers": [
       "Atherton Wing",
       "Higgins",
@@ -3690,7 +3690,7 @@ const questions = [
     "id": "tv_34815",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the pregnant woman who may lose her baby?",
+    "question": "Which of these correctly identifies 'pregnant woman who may lose her baby' in Firefly?",
     "answers": [
       "Saffron",
       "River",
@@ -3730,7 +3730,7 @@ const questions = [
     "id": "tv_34816",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Why does Nandi refuses to flee the threatened property?",
+    "question": "Why does Nandi refuse to flee her threatened establishment?",
     "answers": [
       "She will not abandon her establishment",
       "She is waiting for a judge",
@@ -3770,7 +3770,7 @@ const questions = [
     "id": "tv_34817",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the romantic incident that hurts Inara?",
+    "question": "Which description best matches the romantic incident that hurts Inara?",
     "answers": [
       "Mal marries Saffron again",
       "Mal sleeps with Nandi",
@@ -3810,7 +3810,7 @@ const questions = [
     "id": "tv_34818",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the event during the defence of the bordello?",
+    "question": "In Firefly, what is the event during the defence of the bordello?",
     "answers": [
       "Serenity explodes",
       "River is arrested",
@@ -3850,7 +3850,7 @@ const questions = [
     "id": "tv_34819",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the bounty hunter who boards Serenity?",
+    "question": "Which answer fits the clue 'bounty hunter who boards Serenity' in Firefly?",
     "answers": [
       "Adelai Niska",
       "Jubal Early",
@@ -3890,7 +3890,7 @@ const questions = [
     "id": "tv_34820",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the person the bounty hunter seeks to capture?",
+    "question": "Which character is the person the bounty hunter seeks to capture?",
     "answers": [
       "Simon Tam",
       "Inara Serra",
@@ -3930,7 +3930,7 @@ const questions = [
     "id": "tv_34821",
     "category": "TV",
     "topic": "Firefly",
-    "question": "How River addresses the intruder from hiding?",
+    "question": "How does River address the intruder while remaining hidden?",
     "answers": [
       "Through a written letter",
       "By holographic recording",
@@ -3970,7 +3970,7 @@ const questions = [
     "id": "tv_34822",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these identifies the identity River pretends to have during the confrontation?",
+    "question": "What is the identity River pretends to have during the confrontation?",
     "answers": [
       "The spaceship Serenity itself",
       "An Alliance commander",
@@ -4010,7 +4010,7 @@ const questions = [
     "id": "tv_34823",
     "category": "TV",
     "topic": "Firefly",
-    "question": "How River knows so much about the crew?",
+    "question": "What helps River understand so much about the crew?",
     "answers": [
       "Formal police training",
       "Her unusual perception",
@@ -4090,7 +4090,7 @@ const questions = [
     "id": "tv_34825",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Who created the television series Firefly?",
+    "question": "Who created Firefly?",
     "answers": [
       "Tim Minear",
       "Ben Edlund",
@@ -4570,7 +4570,7 @@ const questions = [
     "id": "tv_34837",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which genre best describes Firefly's mix of science fiction and frontier Western drama?",
+    "question": "What genre combines the space adventure and Western elements of Firefly?",
     "answers": [
       "Medical soap",
       "Legal sitcom",
@@ -4610,7 +4610,7 @@ const questions = [
     "id": "tv_34838",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which American network originally broadcast Firefly?",
+    "question": "Which network originally broadcast Firefly in the United States?",
     "answers": [
       "Fox",
       "NBC",
