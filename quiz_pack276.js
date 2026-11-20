@@ -132,7 +132,7 @@ const questions = groups.flatMap(group =>
 // =====================================================
 // EDITORIAL AUDIT: 20 November 2026 — Series 1–8 and specials
 // Original 52 questions/IDs tv_11043–tv_11094 preserved.
-// 109 episode-grounded audit questions added across all eight series; final factual and storyline coverage review remains pending.
+// 116 episode-grounded audit questions added across all eight series; final factual and storyline coverage review remains pending.
 // Source: https://www.comedy.co.uk/tv/2point4_children/episodes/
 // Detail check: https://epguides.com/2point4Children/guide.shtml
 // IMPORTANT: This is a PARTIAL audit, not complete series sign-off.
@@ -2781,14 +2781,14 @@ const auditedAdditions = [
   {
     "id": "tv_34965",
     "category": "Television",
-    "question": "In 2point4 Children, what does Bette reveal about the whereabouts of her supposedly cremated husband?",
+    "question": "In 2point4 Children, where does Bette accidentally leave her handbag during the frozen-father incident?",
     "answers": [
-      "His ashes are in Australia",
-      "He was buried under a different name",
-      "He has been frozen and stored in Bermondsey",
-      "He has a grave in Scotland"
+      "In Ben's replacement car",
+      "In the freezer with her husband's remains",
+      "At the crematorium",
+      "On a train to Bermondsey"
     ],
-    "correctAnswer": "He has been frozen and stored in Bermondsey",
+    "correctAnswer": "In the freezer with her husband's remains",
     "difficulty": "Medium",
     "tags": [
       "British Television",
@@ -2800,11 +2800,11 @@ const auditedAdditions = [
       "Series 7",
       "Broadcast year: 1998",
       "Episode: When Did You Last See Your Father?",
-      "Storyline: What does Bette reveal about the whereabouts of her supposedly cremated husband?",
-      "Answer focus: He has been frozen and stored in Bermondsey",
       "Era: 1990s British Comedy",
       "Programme: 2point4 Children",
-      "Written question"
+      "Written question",
+      "Storyline: Where does Bette accidentally leave her handbag during the frozen-father incident?",
+      "Answer focus: In the freezer with her husband's remains"
     ],
     "dailyEligible": true
   },
@@ -3141,14 +3141,14 @@ const auditedAdditions = [
   {
     "id": "tv_34977",
     "category": "Television",
-    "question": "In 2point4 Children, what is Ben's strategy to prevent Jenny and Keith sharing a bedroom?",
+    "question": "In 2point4 Children, how does Ben try to ensure Jenny's new boyfriend Keith is too tired for romance?",
     "answers": [
-      "Arrange a surprise visit from Keith's parents",
-      "Send Keith on a work trip",
-      "Wear Keith out so he is too tired",
-      "Move Jenny into Rona's house"
+      "He asks Keith to work an overnight plumbing shift",
+      "He makes Keith move heavy furniture",
+      "He sends Keith for a long run",
+      "He invites Keith to play football all day"
     ],
-    "correctAnswer": "Wear Keith out so he is too tired",
+    "correctAnswer": "He makes Keith move heavy furniture",
     "difficulty": "Medium",
     "tags": [
       "British Television",
@@ -3160,11 +3160,11 @@ const auditedAdditions = [
       "Series 8",
       "Broadcast year: 1999",
       "Episode: Sticky Fingers",
-      "Storyline: What is Ben's strategy to prevent Jenny and Keith sharing a bedroom?",
-      "Answer focus: Wear Keith out so he is too tired",
       "Era: 1990s British Comedy",
       "Programme: 2point4 Children",
-      "Written question"
+      "Written question",
+      "Storyline: How does Ben try to ensure Jenny's new boyfriend Keith is too tired for romance?",
+      "Answer focus: He makes Keith move heavy furniture"
     ],
     "dailyEligible": true
   },
@@ -3291,12 +3291,12 @@ const auditedAdditions = [
   {
     "id": "tv_34982",
     "category": "Television",
-    "question": "In 2point4 Children, which previously unknown family member visits Ben during the fostering process?",
+    "question": "In 2point4 Children, which previously unknown relative does Ben learn about during Declan's fostering arrangements?",
     "answers": [
       "His cousin Jake",
+      "His uncle Lon",
       "His brother Gordon",
-      "His grandfather Arthur",
-      "His uncle Lon"
+      "His grandfather Arthur"
     ],
     "correctAnswer": "His uncle Lon",
     "difficulty": "Medium",
@@ -3310,11 +3310,11 @@ const auditedAdditions = [
       "Series 8",
       "Broadcast year: 1999",
       "Episode: Carry On Screaming",
-      "Storyline: Which previously unknown family member visits Ben during the fostering process?",
-      "Answer focus: His uncle Lon",
       "Era: 1990s British Comedy",
       "Programme: 2point4 Children",
-      "Written question"
+      "Written question",
+      "Storyline: Which previously unknown relative does Ben learn about during Declan's fostering arrangements?",
+      "Answer focus: His uncle Lon"
     ],
     "dailyEligible": true
   },
@@ -3407,15 +3407,225 @@ const auditedAdditions = [
       "Written question"
     ],
     "dailyEligible": true
+  },
+  {
+    "id": "tv_34986",
+    "category": "Television",
+    "question": "In 2point4 Children, how does Jenny retaliate after David fakes a letter about her A-level results?",
+    "answers": [
+      "She dyes his hair green",
+      "She hides his bicycle",
+      "She tells Ben he failed an exam",
+      "She locks him in the garden"
+    ],
+    "correctAnswer": "She dyes his hair green",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: Perfect Day",
+      "Storyline: How does Jenny retaliate after David fakes a letter about her A-level results?",
+      "Answer focus: She dyes his hair green",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34987",
+    "category": "Television",
+    "question": "In 2point4 Children, what crucial fact about Malcolm does Bill discover after meeting him in Scotland?",
+    "answers": [
+      "He is a wanted criminal",
+      "He is already married",
+      "He has no money",
+      "He has been living under a false name"
+    ],
+    "correctAnswer": "He is already married",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: Malcolm X",
+      "Storyline: What crucial fact about Malcolm does Bill discover after meeting him in Scotland?",
+      "Answer focus: He is already married",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34988",
+    "category": "Television",
+    "question": "In 2point4 Children, which other family gets chosen for the documentary after Bill undermines the Porters' screen test?",
+    "answers": [
+      "The Grimes",
+      "The Kliers",
+      "The Bakers",
+      "The Daws"
+    ],
+    "correctAnswer": "The Bakers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Fame",
+      "Storyline: Which other family gets chosen for the documentary after Bill undermines the Porters' screen test?",
+      "Answer focus: The Bakers",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34989",
+    "category": "Television",
+    "question": "In 2point4 Children, what is Declan suspected of doing during Jenny's visit home?",
+    "answers": [
+      "Joyriding",
+      "Graffiti",
+      "Cheating in a school examination",
+      "Shoplifting"
+    ],
+    "correctAnswer": "Shoplifting",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Sticky Fingers",
+      "Storyline: What is Declan suspected of doing during Jenny's visit home?",
+      "Answer focus: Shoplifting",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34990",
+    "category": "Television",
+    "question": "In 2point4 Children, what do Bill and Rona do after discovering their unexpected passenger is a fox?",
+    "answers": [
+      "Take it back to France",
+      "Give it to the Grimes",
+      "Hand it to the fire brigade",
+      "Take it to a zoo in Scotland"
+    ],
+    "correctAnswer": "Take it back to France",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: After The Fox",
+      "Storyline: What do Bill and Rona do after discovering their unexpected passenger is a fox?",
+      "Answer focus: Take it back to France",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34991",
+    "category": "Television",
+    "question": "In 2point4 Children, what does Ben discover about his mother's family after meeting his uncle Lon?",
+    "answers": [
+      "His mother came from Italy",
+      "His mother was Jewish",
+      "His mother was a professional singer",
+      "His mother had been a police officer"
+    ],
+    "correctAnswer": "His mother was Jewish",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Carry On Screaming",
+      "Storyline: What does Ben discover about his mother's family after meeting his uncle Lon?",
+      "Answer focus: His mother was Jewish",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34992",
+    "category": "Television",
+    "question": "In 2point4 Children, what alarming wartime object do people fear is buried in the street during the family's millennium celebration?",
+    "answers": [
+      "A lost military aircraft",
+      "A sealed bunker",
+      "An unexploded Second World War bomb",
+      "A crashed tank"
+    ],
+    "correctAnswer": "An unexploded Second World War bomb",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: The Millennium Experience",
+      "Storyline: What alarming wartime object do people fear is buried in the street during the family's millennium celebration?",
+      "Answer focus: An unexploded Second World War bomb",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
   }
 ];
 questions.push(...auditedAdditions);
 
-const EXPECTED_COUNT = 161;
+const EXPECTED_COUNT = 168;
 if (questions.length !== EXPECTED_COUNT) {
   throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
 }
-if (questions[0].id !== 'tv_11043' || questions[51].id !== 'tv_11094' || questions[questions.length - 1].id !== 'tv_34985') {
+if (questions[0].id !== 'tv_11043' || questions[51].id !== 'tv_11094' || questions[questions.length - 1].id !== 'tv_34992') {
   throw new Error('Unexpected question ID range');
 }
 if (new Set(questions.map(q => q.id)).size !== questions.length) {
