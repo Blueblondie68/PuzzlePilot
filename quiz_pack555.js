@@ -1,5 +1,5 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 555: Blue Heelers, Series 12 (2005).
-// 131 distinct storyline questions across 42 episodes. IDs tv_34393–tv_34523.
+// 162 episode-grounded questions across 42 episodes. Original IDs tv_34393–tv_34523 retained; audit additions tv_34579–tv_34609.
 // Sources: https://thetvdb.com/series/blue-heelers/allseasons/official
 // https://www.tvguide.com/tvshows/blue-heelers/episodes-season-12/1000036269/
 'use strict';
@@ -35,10 +35,11 @@ const questions = [
       "Episode title: Vengeance",
       "Episode context: Who is running the Mount Thomas station while Tom Croydon is suspended?",
       "Storyline: Mark Jacobs",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Mark Jacobs",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -72,10 +73,11 @@ const questions = [
       "Episode title: Vengeance",
       "Episode context: Which former Heeler returns to help PJ investigate the case against Tom?",
       "Storyline: Nick Schultz",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Nick Schultz",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -109,10 +111,11 @@ const questions = [
       "Episode title: Vengeance",
       "Episode context: Which woman survives Tom's earlier encounter and accuses him of Ryan's murder?",
       "Storyline: Tarni Baxter",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Tarni Baxter",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -146,10 +149,11 @@ const questions = [
       "Episode title: Vengeance",
       "Episode context: What kind of premises is robbed with a rifle linked to Ryan's death?",
       "Storyline: A video store",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A video store",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -183,10 +187,11 @@ const questions = [
       "Episode title: Vengeance",
       "Episode context: Which investigator believes there is a case to charge Tom with murder?",
       "Storyline: Greta Conroy",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Greta Conroy",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -220,22 +225,23 @@ const questions = [
       "Episode title: Burden of Proof",
       "Episode context: Whose kidnapping forces Tom to become involved in proving his innocence?",
       "Storyline: Kelly O'Rourke",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Kelly O'Rourke",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
     "id": "tv_34399",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (2005), who is revealed to have killed Ryan and framed Tom?",
+    "question": "In Blue Heelers (2005), which woman do PJ and Nick suspect is concealing the truth about the murder charge against Tom?",
     "answers": [
-      "Helen Morris",
-      "Greta Conroy",
       "Tarni Baxter",
-      "Lindy Schroder"
+      "Lindy Schroder",
+      "Amy Fox",
+      "Susie Raynor"
     ],
     "correctAnswer": "Tarni Baxter",
     "difficulty": "Medium",
@@ -255,26 +261,27 @@ const questions = [
       "Broadcast year: 2005",
       "Episode: S12E02",
       "Episode title: Burden of Proof",
-      "Episode context: Who is revealed to have killed Ryan and framed Tom?",
-      "Storyline: Tarni Baxter",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Episode context: which woman do PJ and Nick suspect is concealing the truth about the murder charge against Tom?",
+      "Answer focus: Tarni Baxter",
+      "Character/subject: Tarni Baxter",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
     "id": "tv_34400",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (2005), what is Helen Morris expecting when her connection with Ryan emerges?",
+    "question": "In Blue Heelers (2005), who is kidnapped while PJ and Nick work to clear Tom of murder?",
     "answers": [
-      "A court summons",
-      "A transfer",
-      "An inheritance",
-      "A baby"
+      "Kelly O'Rourke",
+      "Amy Fox",
+      "Susie Raynor",
+      "Lindy Schroder"
     ],
-    "correctAnswer": "A baby",
+    "correctAnswer": "Kelly O'Rourke",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -292,26 +299,27 @@ const questions = [
       "Broadcast year: 2005",
       "Episode: S12E02",
       "Episode title: Burden of Proof",
-      "Episode context: What is Helen Morris expecting when her connection with Ryan emerges?",
-      "Storyline: A baby",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Episode context: who is kidnapped while PJ and Nick work to clear Tom of murder?",
+      "Answer focus: Kelly O'Rourke",
+      "Character/subject: Kelly O'Rourke",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
     "id": "tv_34401",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (2005), which suspect admits Tarni's role in Ryan's death?",
+    "question": "In Blue Heelers (2005), who is reluctant to cooperate in the effort to prove his innocence despite being charged with murder?",
     "answers": [
-      "Lenny Dysart",
-      "Danny O'Keefe",
+      "Tom Croydon",
       "Mark Jacobs",
-      "Bill Lapscott"
+      "Nick Schultz",
+      "Joss Peroni"
     ],
-    "correctAnswer": "Lenny Dysart",
+    "correctAnswer": "Tom Croydon",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -329,12 +337,13 @@ const questions = [
       "Broadcast year: 2005",
       "Episode: S12E02",
       "Episode title: Burden of Proof",
-      "Episode context: Which suspect admits Tarni's role in Ryan's death?",
-      "Storyline: Lenny Dysart",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Episode context: who is reluctant to cooperate in the effort to prove his innocence despite being charged with murder?",
+      "Answer focus: Tom Croydon",
+      "Character/subject: Tom Croydon",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -368,10 +377,11 @@ const questions = [
       "Episode title: My Way",
       "Episode context: Who reclaims command of the station after the murder case?",
       "Storyline: Tom Croydon",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Tom Croydon",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -405,10 +415,11 @@ const questions = [
       "Episode title: My Way",
       "Episode context: Which acting sergeant finds her position threatened after Tom returns?",
       "Storyline: Lindy Schroder",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Lindy Schroder",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -442,10 +453,11 @@ const questions = [
       "Episode title: My Way",
       "Episode context: Which officer's style of policing particularly irritates Tom?",
       "Storyline: Mark Jacobs",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Mark Jacobs",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -479,10 +491,11 @@ const questions = [
       "Episode title: The Walking Wounded",
       "Episode context: What pattern of infant deaths prompts PJ and Amy to investigate?",
       "Storyline: Two suspected SIDS deaths",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Two suspected SIDS deaths",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -516,10 +529,11 @@ const questions = [
       "Episode title: The Walking Wounded",
       "Episode context: Who rescues Jonesy and Susie from a hostage situation?",
       "Storyline: Alex Kirby",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Alex Kirby",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -553,10 +567,11 @@ const questions = [
       "Episode title: The Walking Wounded",
       "Episode context: What is Alex Kirby's rank when he arrives as Lindy's replacement?",
       "Storyline: Senior Constable",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Senior Constable",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -590,10 +605,11 @@ const questions = [
       "Episode title: The Walking Wounded",
       "Episode context: Which of Joss's possessions does Kelly forward to the station?",
       "Storyline: Care packages from his mother",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Care packages from his mother",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -627,10 +643,11 @@ const questions = [
       "Episode title: Chasing Smoke",
       "Episode context: Which family is caught up in a home invasion?",
       "Storyline: The O'Keefes",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: The O'Keefes",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -664,10 +681,11 @@ const questions = [
       "Episode title: Chasing Smoke",
       "Episode context: Who is revealed to have gangster connections?",
       "Storyline: Danny O'Keefe",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Danny O'Keefe",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -701,10 +719,11 @@ const questions = [
       "Episode title: Chasing Smoke",
       "Episode context: Which officer is involved in a car chase with tragic consequences?",
       "Storyline: Jonesy",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Jonesy",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -738,10 +757,11 @@ const questions = [
       "Episode title: Everything a Girl Could Want",
       "Episode context: What concerns police about the missing girl's correspondence?",
       "Storyline: She has been contacting an older man",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: She has been contacting an older man",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -775,10 +795,11 @@ const questions = [
       "Episode title: Everything a Girl Could Want",
       "Episode context: Which sport does Joss want to introduce to the local youth team?",
       "Storyline: Soccer",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Soccer",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -812,10 +833,11 @@ const questions = [
       "Episode title: Everything a Girl Could Want",
       "Episode context: Who is Tom determined to investigate despite difficulty obtaining evidence?",
       "Storyline: Danny O'Keefe",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Danny O'Keefe",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -849,10 +871,11 @@ const questions = [
       "Episode title: Everything a Girl Could Want",
       "Episode context: Whose car has a broken window when PJ finds Tom at the soccer club?",
       "Storyline: Danny O'Keefe's",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Danny O'Keefe's",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -886,10 +909,11 @@ const questions = [
       "Episode title: One Good Turn",
       "Episode context: What suspected relationship do Alex and Susie investigate?",
       "Storyline: A teacher and an underage schoolboy",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A teacher and an underage schoolboy",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -923,10 +947,11 @@ const questions = [
       "Episode title: One Good Turn",
       "Episode context: Who makes an advance towards Susie during a stakeout?",
       "Storyline: Alex Kirby",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Alex Kirby",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -960,10 +985,11 @@ const questions = [
       "Episode title: One Good Turn",
       "Episode context: Why does Joss get into trouble after helping a drunken man?",
       "Storyline: He took the man to a stranger's home",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: He took the man to a stranger's home",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -997,10 +1023,11 @@ const questions = [
       "Episode title: One Good Turn",
       "Episode context: Who decides to withdraw from pursuing Susie after learning Jonesy's feelings?",
       "Storyline: Alex Kirby",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Alex Kirby",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1034,10 +1061,11 @@ const questions = [
       "Episode title: Sex Sells",
       "Episode context: Which escaped prisoner triggers a search for a missing young girl?",
       "Storyline: A sex offender",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A sex offender",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1071,10 +1099,11 @@ const questions = [
       "Episode title: Sex Sells",
       "Episode context: Which former boyfriend of Amy's joins the homicide investigation?",
       "Storyline: Garth Henderson",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Garth Henderson",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1108,10 +1137,11 @@ const questions = [
       "Episode title: Sex Sells",
       "Episode context: Where is a brutally murdered body discovered?",
       "Storyline: Govett's Leap",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Govett's Leap",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1145,10 +1175,11 @@ const questions = [
       "Episode title: Sex Sells",
       "Episode context: Who supports Kelly's attempt to prove a shop assistant was sexually assaulted?",
       "Storyline: Joss Peroni",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Joss Peroni",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1182,10 +1213,11 @@ const questions = [
       "Episode title: One Sick Puppy",
       "Episode context: What object is found by more than one victim of the serial killer?",
       "Storyline: A crucifix",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A crucifix",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1219,10 +1251,11 @@ const questions = [
       "Episode title: One Sick Puppy",
       "Episode context: Which early suspect is cleared when another victim is killed during questioning?",
       "Storyline: A masseuse",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A masseuse",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1256,10 +1289,11 @@ const questions = [
       "Episode title: One Sick Puppy",
       "Episode context: What makes the third murder contradict the investigators' victim profile?",
       "Storyline: The victim is male",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: The victim is male",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1293,10 +1327,11 @@ const questions = [
       "Episode title: One Sick Puppy",
       "Episode context: What raises concerns about a child's pet in a separate case?",
       "Storyline: Burn injuries to a dog",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Burn injuries to a dog",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1330,10 +1365,11 @@ const questions = [
       "Episode title: Killing Time",
       "Episode context: What is the name of the third serial-killer victim?",
       "Storyline: Leon Barclay",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Leon Barclay",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1367,10 +1403,11 @@ const questions = [
       "Episode title: Killing Time",
       "Episode context: What profession did Leon Barclay have?",
       "Storyline: Teacher",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Teacher",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1404,10 +1441,11 @@ const questions = [
       "Episode title: Killing Time",
       "Episode context: What links Leon Barclay to the second victim?",
       "Storyline: A sexual-abuse survivors' therapy group",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A sexual-abuse survivors' therapy group",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1441,10 +1479,11 @@ const questions = [
       "Episode title: Killing Time",
       "Episode context: Who runs the therapy group investigated by the Heelers?",
       "Storyline: Bill Lapscott",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Bill Lapscott",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1478,10 +1517,11 @@ const questions = [
       "Episode title: Killing Time",
       "Episode context: Which officer infiltrates the therapy group?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1515,10 +1555,11 @@ const questions = [
       "Episode title: Mirror Image",
       "Episode context: What possibility complicates the Mount Thomas murder investigation?",
       "Storyline: A copycat killer",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A copycat killer",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1552,10 +1593,11 @@ const questions = [
       "Episode title: Mirror Image",
       "Episode context: Who does PJ suspect after witnessing a confrontation with Bill Lapscott?",
       "Storyline: Garth Henderson",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Garth Henderson",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1589,10 +1631,11 @@ const questions = [
       "Episode title: Mirror Image",
       "Episode context: Which officer is attacked after collecting food for herself and PJ?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1626,10 +1669,11 @@ const questions = [
       "Episode title: Mirror Image",
       "Episode context: What family situation do Jonesy and Susie investigate?",
       "Storyline: A baby taken by its deaf father",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A baby taken by its deaf father",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1663,24 +1707,25 @@ const questions = [
       "Episode title: Blood and Bone",
       "Episode context: Which police officer is abducted by the serial killer?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
     "id": "tv_34438",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (2005), which family becomes central to the serial-killer investigation?",
+    "question": "In Blue Heelers (2005), which Mount Thomas officer survives an attack and fears the killer will strike again that day?",
     "answers": [
-      "The Priors",
-      "The O'Keefes",
-      "The Baxters",
-      "The Kirbys"
+      "Amy Fox",
+      "Kelly O'Rourke",
+      "Susie Raynor",
+      "Lindy Schroder"
     ],
-    "correctAnswer": "The Priors",
+    "correctAnswer": "Amy Fox",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1698,26 +1743,27 @@ const questions = [
       "Broadcast year: 2005",
       "Episode: S12E12",
       "Episode title: Blood and Bone",
-      "Episode context: Which family becomes central to the serial-killer investigation?",
-      "Storyline: The Priors",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Episode context: which Mount Thomas officer survives an attack and fears the killer will strike again that day?",
+      "Answer focus: Amy Fox",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
     "id": "tv_34439",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (2005), who is identified as the killer during the climactic investigation?",
+    "question": "In Blue Heelers (2005), who remains a focus of PJ's suspicions during the climax of the serial-killer case?",
     "answers": [
       "Garth Henderson",
-      "Steven Prior",
-      "Leon Barclay",
-      "Bill Lapscott"
+      "Alex Kirby",
+      "Tom Croydon",
+      "Joss Peroni"
     ],
-    "correctAnswer": "Steven Prior",
+    "correctAnswer": "Garth Henderson",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1735,26 +1781,27 @@ const questions = [
       "Broadcast year: 2005",
       "Episode: S12E12",
       "Episode title: Blood and Bone",
-      "Episode context: Who is identified as the killer during the climactic investigation?",
-      "Storyline: Steven Prior",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Episode context: who remains a focus of PJ's suspicions during the climax of the serial-killer case?",
+      "Answer focus: Garth Henderson",
+      "Character/subject: Garth Henderson",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
     "id": "tv_34440",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (2005), what sensory clue helps Amy redirect the investigation?",
+    "question": "In Blue Heelers (2005), which detective believes Garth may be the serial killer and must test that theory?",
     "answers": [
-      "A distinctive ringtone",
-      "A foreign accent",
-      "A distinctive smell",
-      "A tattoo"
+      "PJ Hasham",
+      "Alex Kirby",
+      "Mark Jacobs",
+      "Joss Peroni"
     ],
-    "correctAnswer": "A distinctive smell",
+    "correctAnswer": "PJ Hasham",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1772,12 +1819,13 @@ const questions = [
       "Broadcast year: 2005",
       "Episode: S12E12",
       "Episode title: Blood and Bone",
-      "Episode context: What sensory clue helps Amy redirect the investigation?",
-      "Storyline: A distinctive smell",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Episode context: which detective believes Garth may be the serial killer and must test that theory?",
+      "Answer focus: PJ Hasham",
+      "Character/subject: PJ Hasham",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1811,10 +1859,11 @@ const questions = [
       "Episode title: Kicking Over the Traces",
       "Episode context: Which officer tries to clear a dead man's name?",
       "Storyline: Susie Raynor",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Susie Raynor",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1848,10 +1897,11 @@ const questions = [
       "Episode title: Kicking Over the Traces",
       "Episode context: Where was a bomb allegedly left in the historic case?",
       "Storyline: At a hospital",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: At a hospital",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1885,10 +1935,11 @@ const questions = [
       "Episode title: Kicking Over the Traces",
       "Episode context: What had happened to the man accused of the bombing?",
       "Storyline: He died by suicide",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: He died by suicide",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1922,10 +1973,11 @@ const questions = [
       "Episode title: Kicking Over the Traces",
       "Episode context: Who finds the courage to ask Susie on a date?",
       "Storyline: Jonesy",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Jonesy",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1959,10 +2011,11 @@ const questions = [
       "Episode title: Offside",
       "Episode context: Which woman is accused of stealing from an elderly resident?",
       "Storyline: Susie Raynor",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Susie Raynor",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -1996,10 +2049,11 @@ const questions = [
       "Episode title: Offside",
       "Episode context: Who is able to establish Susie's innocence?",
       "Storyline: Alex Kirby",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Alex Kirby",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2033,10 +2087,11 @@ const questions = [
       "Episode title: Offside",
       "Episode context: Which O'Keefe family member becomes entangled in a soccer feud?",
       "Storyline: Butch O'Keefe",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Butch O'Keefe",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2070,10 +2125,11 @@ const questions = [
       "Episode title: Offside",
       "Episode context: What makes the soccer-related feud especially dangerous?",
       "Storyline: Guns become involved",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Guns become involved",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2107,10 +2163,11 @@ const questions = [
       "Episode title: The Life",
       "Episode context: Which officer becomes deeply involved in the Mount Thomas honour-killings investigation?",
       "Storyline: Jonesy",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Jonesy",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2144,10 +2201,11 @@ const questions = [
       "Episode title: The Life",
       "Episode context: Who is Tom obsessively trying to stop during this episode's escalating crisis?",
       "Storyline: Danny O'Keefe",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Danny O'Keefe",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2181,10 +2239,11 @@ const questions = [
       "Episode title: The Ticket Out",
       "Episode context: Which officer is forced to confront abuse from her childhood?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2218,10 +2277,11 @@ const questions = [
       "Episode title: The Ticket Out",
       "Episode context: What type of stolen goods intensifies Mark's conflict with Tom?",
       "Storyline: Tobacco",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Tobacco",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2255,10 +2315,11 @@ const questions = [
       "Episode title: The Ticket Out",
       "Episode context: Which inspector becomes involved in the feud between Tom and Mark?",
       "Storyline: Falcon-Price",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Falcon-Price",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2292,10 +2353,11 @@ const questions = [
       "Episode title: Playing By The Book",
       "Episode context: Which conflict continues to destabilise the station?",
       "Storyline: A power struggle for command",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A power struggle for command",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2329,10 +2391,11 @@ const questions = [
       "Episode title: Playing By The Book",
       "Episode context: Which officer is dealing with traumatic revelations about her past?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2366,10 +2429,11 @@ const questions = [
       "Episode title: Monster",
       "Episode context: Which relative does Amy confront about childhood sexual abuse?",
       "Storyline: Her uncle",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Her uncle",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2403,10 +2467,11 @@ const questions = [
       "Episode title: Monster",
       "Episode context: Who supports Amy during this confrontation?",
       "Storyline: PJ Hasham",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: PJ Hasham",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2440,10 +2505,11 @@ const questions = [
       "Episode title: Dangerous Animals",
       "Episode context: Who escapes from court and threatens Tom's family?",
       "Storyline: Barry Baxter",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Barry Baxter",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2477,10 +2543,11 @@ const questions = [
       "Episode title: Dangerous Animals",
       "Episode context: What crime links Barry Baxter to Tom's personal history?",
       "Storyline: Murdering Tom's wife",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Murdering Tom's wife",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2514,10 +2581,11 @@ const questions = [
       "Episode title: Dangerous Animals",
       "Episode context: Whom does Jonesy propose to?",
       "Storyline: Susie Raynor",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Susie Raynor",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2551,10 +2619,11 @@ const questions = [
       "Episode title: Dangerous Animals",
       "Episode context: Which colleague's relationship with Susie threatens Jonesy's hopes?",
       "Storyline: Alex Kirby",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Alex Kirby",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2588,10 +2657,11 @@ const questions = [
       "Episode title: Showdown",
       "Episode context: Who holds Tom Croydon's two grandchildren hostage?",
       "Storyline: Barry Baxter",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Barry Baxter",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2625,10 +2695,11 @@ const questions = [
       "Episode title: Showdown",
       "Episode context: What does Baxter use as leverage in his final confrontation with Tom?",
       "Storyline: Tom's grandchildren",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Tom's grandchildren",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2662,10 +2733,11 @@ const questions = [
       "Episode title: Car Wars",
       "Episode context: What type of crime racket is at the centre of the investigation?",
       "Storyline: Car theft",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Car theft",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2699,10 +2771,11 @@ const questions = [
       "Episode title: Car Wars",
       "Episode context: What dangerous activity does Jonesy join?",
       "Storyline: Ute surfing",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Ute surfing",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2736,10 +2809,11 @@ const questions = [
       "Episode title: Car Wars",
       "Episode context: Which vehicle does Joss use as bait for thieves?",
       "Storyline: His BMW",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: His BMW",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2773,10 +2847,11 @@ const questions = [
       "Episode title: Car Wars",
       "Episode context: Who is Jonesy trying to impress after feeling rejected?",
       "Storyline: Susie Raynor",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Susie Raynor",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2810,10 +2885,11 @@ const questions = [
       "Episode title: Night and Day",
       "Episode context: Which two officers help Charlie after a shop break-in?",
       "Storyline: Joss and Kelly",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Joss and Kelly",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2847,10 +2923,11 @@ const questions = [
       "Episode title: Night and Day",
       "Episode context: At what kind of event do Evan and Alex encounter drugs and Susie?",
       "Storyline: A noisy party",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A noisy party",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2884,10 +2961,11 @@ const questions = [
       "Episode title: The Party's Over",
       "Episode context: What is discovered about a friend of Kelly's?",
       "Storyline: The friend has overdosed",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: The friend has overdosed",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2921,10 +2999,11 @@ const questions = [
       "Episode title: The Party's Over",
       "Episode context: Why do Joss and Kelly clash during the investigation?",
       "Storyline: A friend of Joss is accused",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A friend of Joss is accused",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2958,10 +3037,11 @@ const questions = [
       "Episode title: Crossing the Line",
       "Episode context: How do three teenagers die in the central case?",
       "Storyline: A highway collision",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A highway collision",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -2995,10 +3075,11 @@ const questions = [
       "Episode title: Crossing the Line",
       "Episode context: Who is Susie dating while Jonesy struggles with his feelings?",
       "Storyline: Jason Tyler",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Jason Tyler",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3032,10 +3113,11 @@ const questions = [
       "Episode title: In Warm Blood",
       "Episode context: Which officer tries to help a man Tom wants driven out of town?",
       "Storyline: Alex Kirby",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Alex Kirby",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3069,10 +3151,11 @@ const questions = [
       "Episode title: In Warm Blood",
       "Episode context: What kind of missing animal troubles Sergeant Jacobs?",
       "Storyline: A horse",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A horse",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3106,10 +3189,11 @@ const questions = [
       "Episode title: In Warm Blood",
       "Episode context: Why has the unwelcome man returned to the area?",
       "Storyline: To visit his ill mother",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: To visit his ill mother",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3143,10 +3227,11 @@ const questions = [
       "Episode title: Another Day at the Office (1)",
       "Episode context: Which two officers investigate a road accident and a body?",
       "Storyline: Joss and Kelly",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Joss and Kelly",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3180,10 +3265,11 @@ const questions = [
       "Episode title: Another Day at the Office (1)",
       "Episode context: Which two colleagues are finding it difficult to trust one another?",
       "Storyline: Alex and Joss",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Alex and Joss",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3217,10 +3303,11 @@ const questions = [
       "Episode title: Another Day at the Office (2)",
       "Episode context: Which detective returns during the multiple-deaths investigation?",
       "Storyline: Garth Henderson",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Garth Henderson",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3254,10 +3341,11 @@ const questions = [
       "Episode title: Another Day at the Office (2)",
       "Episode context: What discovery increases the scale of the inquiry into the missing girls?",
       "Storyline: More bodies are found",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: More bodies are found",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3291,10 +3379,11 @@ const questions = [
       "Episode title: Last Orders",
       "Episode context: Who is arrested after defending herself against a young woman at the pub?",
       "Storyline: Chris Riley",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Chris Riley",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3328,10 +3417,11 @@ const questions = [
       "Episode title: Last Orders",
       "Episode context: Which officer insists on investigating the apparent pub burglary?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3365,10 +3455,11 @@ const questions = [
       "Episode title: Last Orders",
       "Episode context: Which officer pursues a criminal who previously held a gun to his head?",
       "Storyline: Alex Kirby",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Alex Kirby",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3402,10 +3493,11 @@ const questions = [
       "Episode title: Getting the Bullet",
       "Episode context: Which inspector comes to Mount Thomas to examine possible corruption?",
       "Storyline: Falcon-Price",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Falcon-Price",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3439,10 +3531,11 @@ const questions = [
       "Episode title: Getting the Bullet",
       "Episode context: Which officer becomes increasingly suspicious that colleagues are conspiring against him?",
       "Storyline: Alex Kirby",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Alex Kirby",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3476,10 +3569,11 @@ const questions = [
       "Episode title: Getting the Bullet",
       "Episode context: Who is still being supported by the station after her ordeal at the pub?",
       "Storyline: Chris Riley",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Chris Riley",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3513,10 +3607,11 @@ const questions = [
       "Episode title: Acid Test",
       "Episode context: Which two officers' escalating tensions finally come to a head?",
       "Storyline: Alex and Joss",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Alex and Joss",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3550,10 +3645,11 @@ const questions = [
       "Episode title: Acid Test",
       "Episode context: Who takes formal statements after the confrontation at the station?",
       "Storyline: Falcon-Price",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Falcon-Price",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3587,10 +3683,11 @@ const questions = [
       "Episode title: One for the Road",
       "Episode context: Whose house are Alex and Evan hoping to buy?",
       "Storyline: PJ's",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: PJ's",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3624,10 +3721,11 @@ const questions = [
       "Episode title: One for the Road",
       "Episode context: Which sergeant tries to help a gifted young artist in Widgeree?",
       "Storyline: Mark Jacobs",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Mark Jacobs",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3661,10 +3759,11 @@ const questions = [
       "Episode title: One for the Road",
       "Episode context: Which officer investigates a woman who may be suicidal alongside Evan?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3698,10 +3797,11 @@ const questions = [
       "Episode title: Two Laws",
       "Episode context: Which town's police station does Tom order reopened?",
       "Storyline: Widgeree",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Widgeree",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3735,10 +3835,11 @@ const questions = [
       "Episode title: Two Laws",
       "Episode context: What illicit crop do Amy and Evan find at a doctor's property?",
       "Storyline: Cannabis",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Cannabis",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3772,10 +3873,11 @@ const questions = [
       "Episode title: Two Laws",
       "Episode context: Which officers are sent to reopen the outlying police station?",
       "Storyline: Mark and Susie",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Mark and Susie",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3809,10 +3911,11 @@ const questions = [
       "Episode title: Good Times",
       "Episode context: Who becomes acting sergeant?",
       "Storyline: Susie Raynor",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Susie Raynor",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3846,10 +3949,11 @@ const questions = [
       "Episode title: Good Times",
       "Episode context: Who doubts an old friend's confession to a killing?",
       "Storyline: Tom Croydon",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Tom Croydon",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3883,10 +3987,11 @@ const questions = [
       "Episode title: Bad Fortune",
       "Episode context: What stroke of luck appears connected to a man's fear his friends will kill him?",
       "Storyline: Winning the lottery",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Winning the lottery",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3920,10 +4025,11 @@ const questions = [
       "Episode title: Bad Fortune",
       "Episode context: Who investigates the lottery winner's strange predicament?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3957,10 +4063,11 @@ const questions = [
       "Episode title: Child's Play",
       "Episode context: Which new officer discovers a naked boy?",
       "Storyline: Matt Graham",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Matt Graham",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -3994,10 +4101,11 @@ const questions = [
       "Episode title: Child's Play",
       "Episode context: What grim discovery follows the finding of the boy?",
       "Storyline: A naked girl's body",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A naked girl's body",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4031,10 +4139,11 @@ const questions = [
       "Episode title: Child's Play",
       "Episode context: Which pair investigates what really happened to the children?",
       "Storyline: Amy and Evan",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy and Evan",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4068,10 +4177,11 @@ const questions = [
       "Episode title: Facing the Music",
       "Episode context: Which officer clashes with Alex over his aggressive investigation of an assault?",
       "Storyline: Matt Graham",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Matt Graham",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4105,10 +4215,11 @@ const questions = [
       "Episode title: Facing the Music",
       "Episode context: Who has been assaulted by a student in the investigation?",
       "Storyline: A teacher",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A teacher",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4142,10 +4253,11 @@ const questions = [
       "Episode title: Facing the Music",
       "Episode context: Who continues to provoke Kelly until their conflict explodes?",
       "Storyline: Estelle",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Estelle",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4179,10 +4291,11 @@ const questions = [
       "Episode title: Too Close",
       "Episode context: In which country had Matt previously encountered a family he deals with again?",
       "Storyline: East Timor",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: East Timor",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4216,10 +4329,11 @@ const questions = [
       "Episode title: Too Close",
       "Episode context: Whose escape from an institution frightens Kelly?",
       "Storyline: Estelle's",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Estelle's",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4253,10 +4367,11 @@ const questions = [
       "Episode title: Too Close",
       "Episode context: What is the separate investigation involving Matt's acquaintances concerned with?",
       "Storyline: Abuse within a family",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Abuse within a family",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4290,10 +4405,11 @@ const questions = [
       "Episode title: Promises, Promises",
       "Episode context: Which officer disagrees with Matt about the prime suspect in a murder?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4327,10 +4443,11 @@ const questions = [
       "Episode title: Promises, Promises",
       "Episode context: Which officer criticises Alex's conduct as sergeant?",
       "Storyline: Susie Raynor",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Susie Raynor",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4364,10 +4481,11 @@ const questions = [
       "Episode title: Promises, Promises",
       "Episode context: What celebration creates further consequences for Alex's decisions?",
       "Storyline: A stag do",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A stag do",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4401,10 +4519,11 @@ const questions = [
       "Episode title: Slaying the Demons",
       "Episode context: What building is set on fire with its proprietor inside?",
       "Storyline: The video store",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: The video store",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4438,10 +4557,11 @@ const questions = [
       "Episode title: Slaying the Demons",
       "Episode context: Who falls under suspicion over the fatal fire?",
       "Storyline: Matt Graham",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Matt Graham",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4475,10 +4595,11 @@ const questions = [
       "Episode title: Slaying the Demons",
       "Episode context: Which officer is shaken after returning to the railway yards where Estelle attacked her with acid?",
       "Storyline: Kelly O'Rourke",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Kelly O'Rourke",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4512,10 +4633,11 @@ const questions = [
       "Episode title: Slaying the Demons",
       "Episode context: Which homeless man complains after Kelly draws her gun on him?",
       "Storyline: Sponge Bob",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Sponge Bob",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4549,10 +4671,11 @@ const questions = [
       "Episode title: Keeping Up Appearances",
       "Episode context: Which career examination is Evan Jones preparing for?",
       "Storyline: The detective's exam",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: The detective's exam",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4586,10 +4709,11 @@ const questions = [
       "Episode title: Keeping Up Appearances",
       "Episode context: Which officer finds herself paired with the trouble-prone Matt?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4623,10 +4747,11 @@ const questions = [
       "Episode title: Keeping Up Appearances",
       "Episode context: Which two officers investigate a property theft independently?",
       "Storyline: Kelly and Joss",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Kelly and Joss",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4660,10 +4785,11 @@ const questions = [
       "Episode title: Face Value",
       "Episode context: Which officer starts his first day as a detective?",
       "Storyline: Evan Jones",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Evan Jones",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4697,10 +4823,11 @@ const questions = [
       "Episode title: Face Value",
       "Episode context: What kind of case causes Jonesy to inflict more damage than the burglar?",
       "Storyline: A burglary investigation",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A burglary investigation",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4734,10 +4861,11 @@ const questions = [
       "Episode title: Face Value",
       "Episode context: What disturbing offences does Amy investigate at a medical facility?",
       "Storyline: Assaults on anaesthetised patients",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Assaults on anaesthetised patients",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4771,10 +4899,11 @@ const questions = [
       "Episode title: Lost and Found",
       "Episode context: Which officer is determined to catch the elusive doctor?",
       "Storyline: Amy Fox",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Amy Fox",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4808,10 +4937,11 @@ const questions = [
       "Episode title: Lost and Found",
       "Episode context: Which character befriends a boy who refuses to remove a Darth Vader mask?",
       "Storyline: Evan Jones",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: Evan Jones",
+      "Source: TheTVDB aired-order episode guide"
     ]
   },
   {
@@ -4845,12 +4975,1191 @@ const questions = [
       "Episode title: Lost and Found",
       "Episode context: What does the young boy insist on wearing?",
       "Storyline: A Darth Vader mask",
-      "Actor: John Wood (Tom Croydon)",
       "Characters: Mount Thomas Heelers",
       "Subject: Episode storyline",
-      "Year: 2005"
+      "Year: 2005",
+      "Character/subject: A Darth Vader mask",
+      "Source: TheTVDB aired-order episode guide"
+    ]
+  },
+  {
+    "id": "tv_34579",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what unusual objects are deliberately set alight while Tom's murder case unfolds?",
+    "answers": [
+      "Bonsai trees",
+      "Police records",
+      "Motorbikes",
+      "Hay bales"
+    ],
+    "correctAnswer": "Bonsai trees",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E01",
+      "Episode title: Vengeance",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what unusual objects are deliberately set alight while Tom's murder case unfolds?",
+      "Answer focus: Bonsai trees",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Bonsai trees"
+    ]
+  },
+  {
+    "id": "tv_34580",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), who arrives as acting sergeant while Tom is suspended?",
+    "answers": [
+      "Lindy Schroder",
+      "Susie Raynor",
+      "Amy Fox",
+      "Kelly O'Rourke"
+    ],
+    "correctAnswer": "Lindy Schroder",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E01",
+      "Episode title: Vengeance",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: who arrives as acting sergeant while Tom is suspended?",
+      "Answer focus: Lindy Schroder",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Lindy Schroder"
+    ]
+  },
+  {
+    "id": "tv_34581",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what happens to Tom after the coroner and investigator reject his explanation of Ryan's death?",
+    "answers": [
+      "He is charged with murder",
+      "He is promoted",
+      "He is transferred to Melbourne",
+      "He is released without charge"
+    ],
+    "correctAnswer": "He is charged with murder",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E01",
+      "Episode title: Vengeance",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what happens to Tom after the coroner and investigator reject his explanation of Ryan's death?",
+      "Answer focus: He is charged with murder",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: He is charged with murder"
+    ]
+  },
+  {
+    "id": "tv_34582",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), which detective returns to Mount Thomas to assist PJ in the investigation?",
+    "answers": [
+      "Nick Schultz",
+      "Garth Henderson",
+      "Evan Jones",
+      "Alex Kirby"
+    ],
+    "correctAnswer": "Nick Schultz",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E02",
+      "Episode title: Burden of Proof",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: which detective returns to Mount Thomas to assist PJ in the investigation?",
+      "Answer focus: Nick Schultz",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Nick Schultz"
+    ]
+  },
+  {
+    "id": "tv_34583",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), which new acting sergeant owes her placement partly to friendship with Mark?",
+    "answers": [
+      "Lindy Schroder",
+      "Susie Raynor",
+      "Kelly O'Rourke",
+      "Amy Fox"
+    ],
+    "correctAnswer": "Lindy Schroder",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E02",
+      "Episode title: Burden of Proof",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: which new acting sergeant owes her placement partly to friendship with Mark?",
+      "Answer focus: Lindy Schroder",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Lindy Schroder"
+    ]
+  },
+  {
+    "id": "tv_34584",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), how does the town respond to PJ and Amy's investigation of the infant deaths?",
+    "answers": [
+      "With hostility born of grief",
+      "With public celebrations",
+      "By abandoning the town",
+      "By demanding the station close"
+    ],
+    "correctAnswer": "With hostility born of grief",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E04",
+      "Episode title: The Walking Wounded",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: how does the town respond to PJ and Amy's investigation of the infant deaths?",
+      "Answer focus: With hostility born of grief",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: With hostility born of grief"
+    ]
+  },
+  {
+    "id": "tv_34585",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what youth team do Joss and Kelly attempt to revive before Joss turns toward soccer?",
+    "answers": [
+      "Blue Light basketball",
+      "A junior rugby team",
+      "A school cricket team",
+      "A junior hockey team"
+    ],
+    "correctAnswer": "Blue Light basketball",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E06",
+      "Episode title: Everything a Girl Could Want",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what youth team do Joss and Kelly attempt to revive before Joss turns toward soccer?",
+      "Answer focus: Blue Light basketball",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Blue Light basketball"
+    ]
+  },
+  {
+    "id": "tv_34586",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), who does Joss invite to help establish a local soccer club?",
+    "answers": [
+      "His brother",
+      "His father",
+      "His uncle",
+      "His former sergeant"
+    ],
+    "correctAnswer": "His brother",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E06",
+      "Episode title: Everything a Girl Could Want",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: who does Joss invite to help establish a local soccer club?",
+      "Answer focus: His brother",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: His brother"
+    ]
+  },
+  {
+    "id": "tv_34587",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what happens to the schoolteacher and boy as suspicions about their relationship deepen?",
+    "answers": [
+      "They run away together",
+      "They testify against one another",
+      "They leave for separate schools",
+      "They report the accusation as a hoax"
+    ],
+    "correctAnswer": "They run away together",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E07",
+      "Episode title: One Good Turn",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what happens to the schoolteacher and boy as suspicions about their relationship deepen?",
+      "Answer focus: They run away together",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: They run away together"
+    ]
+  },
+  {
+    "id": "tv_34588",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), whose promotion to senior constable upsets Jonesy?",
+    "answers": [
+      "Susie Raynor's",
+      "Amy Fox's",
+      "Kelly O'Rourke's",
+      "Lindy Schroder's"
+    ],
+    "correctAnswer": "Susie Raynor's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E09",
+      "Episode title: One Sick Puppy",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: whose promotion to senior constable upsets Jonesy?",
+      "Answer focus: Susie Raynor's",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Susie Raynor's"
+    ]
+  },
+  {
+    "id": "tv_34589",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what personal history does Amy's story to the survivors' group unexpectedly reveal?",
+    "answers": [
+      "Her childhood sexual abuse",
+      "A childhood house fire",
+      "Her father's imprisonment",
+      "A former gambling addiction"
+    ],
+    "correctAnswer": "Her childhood sexual abuse",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E10",
+      "Episode title: Killing Time",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what personal history does Amy's story to the survivors' group unexpectedly reveal?",
+      "Answer focus: Her childhood sexual abuse",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Her childhood sexual abuse"
+    ]
+  },
+  {
+    "id": "tv_34590",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), who does Amy suspect after disagreeing with Garth's theory about the psychologist?",
+    "answers": [
+      "Jeff Watts",
+      "Mark Jacobs",
+      "Danny O'Keefe",
+      "Barry Baxter"
+    ],
+    "correctAnswer": "Jeff Watts",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E10",
+      "Episode title: Killing Time",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: who does Amy suspect after disagreeing with Garth's theory about the psychologist?",
+      "Answer focus: Jeff Watts",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Jeff Watts"
+    ]
+  },
+  {
+    "id": "tv_34591",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what object links the fourth serial-killer victim to the earlier murders?",
+    "answers": [
+      "A crucifix",
+      "A red scarf",
+      "A chess piece",
+      "A police badge"
+    ],
+    "correctAnswer": "A crucifix",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E11",
+      "Episode title: Mirror Image",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what object links the fourth serial-killer victim to the earlier murders?",
+      "Answer focus: A crucifix",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: A crucifix"
+    ]
+  },
+  {
+    "id": "tv_34592",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), which psychologist becomes increasingly suspicious to Detective Garth Henderson?",
+    "answers": [
+      "Bill Lapscott",
+      "Jeff Watts",
+      "Danny O'Keefe",
+      "Alex Kirby"
+    ],
+    "correctAnswer": "Bill Lapscott",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E11",
+      "Episode title: Mirror Image",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: which psychologist becomes increasingly suspicious to Detective Garth Henderson?",
+      "Answer focus: Bill Lapscott",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Bill Lapscott"
+    ]
+  },
+  {
+    "id": "tv_34593",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), who does PJ believe might be involved in the serial murders despite his police status?",
+    "answers": [
+      "Garth Henderson",
+      "Mark Jacobs",
+      "Joss Peroni",
+      "Tom Croydon"
+    ],
+    "correctAnswer": "Garth Henderson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E12",
+      "Episode title: Blood and Bone",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: who does PJ believe might be involved in the serial murders despite his police status?",
+      "Answer focus: Garth Henderson",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Garth Henderson"
+    ]
+  },
+  {
+    "id": "tv_34594",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), whose son Butch is involved in a football-related feud?",
+    "answers": [
+      "Danny O'Keefe's",
+      "Tom Croydon's",
+      "Mark Jacobs's",
+      "Garth Henderson's"
+    ],
+    "correctAnswer": "Danny O'Keefe's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E14",
+      "Episode title: Offside",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: whose son Butch is involved in a football-related feud?",
+      "Answer focus: Danny O'Keefe's",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Danny O'Keefe's"
+    ]
+  },
+  {
+    "id": "tv_34595",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), which colleague encourages Amy to confront memories of childhood abuse?",
+    "answers": [
+      "PJ Hasham",
+      "Joss Peroni",
+      "Mark Jacobs",
+      "Evan Jones"
+    ],
+    "correctAnswer": "PJ Hasham",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E16",
+      "Episode title: The Ticket Out",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: which colleague encourages Amy to confront memories of childhood abuse?",
+      "Answer focus: PJ Hasham",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: PJ Hasham"
+    ]
+  },
+  {
+    "id": "tv_34596",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), which relationship revelation threatens Jonesy's plans to marry Susie?",
+    "answers": [
+      "Susie's involvement with Alex",
+      "Susie's engagement to PJ",
+      "Susie's transfer to Melbourne",
+      "Susie's secret marriage"
+    ],
+    "correctAnswer": "Susie's involvement with Alex",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E19",
+      "Episode title: Dangerous Animals",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: which relationship revelation threatens Jonesy's plans to marry Susie?",
+      "Answer focus: Susie's involvement with Alex",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Susie's involvement with Alex"
+    ]
+  },
+  {
+    "id": "tv_34597",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), which loved ones does Barry Baxter hold captive to force Tom into a confrontation?",
+    "answers": [
+      "Tom's grandchildren",
+      "Tom's sons",
+      "Tom's parents",
+      "Tom's siblings"
+    ],
+    "correctAnswer": "Tom's grandchildren",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E20",
+      "Episode title: Showdown",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: which loved ones does Barry Baxter hold captive to force Tom into a confrontation?",
+      "Answer focus: Tom's grandchildren",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Tom's grandchildren"
+    ]
+  },
+  {
+    "id": "tv_34598",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what is the occupation status of the woman whose car theft brings her close to Susie?",
+    "answers": [
+      "A victim of the car theft racket",
+      "The station's new inspector",
+      "A wanted bank robber",
+      "An undercover detective"
+    ],
+    "correctAnswer": "A victim of the car theft racket",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E21",
+      "Episode title: Car Wars",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what is the occupation status of the woman whose car theft brings her close to Susie?",
+      "Answer focus: A victim of the car theft racket",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: A victim of the car theft racket"
+    ]
+  },
+  {
+    "id": "tv_34599",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what detail makes Charlie more suspicious than he first seems after a burglary?",
+    "answers": [
+      "His identity and circumstances are not what they appear",
+      "He has already confessed to arson",
+      "He is the new station sergeant",
+      "He owns the police station"
+    ],
+    "correctAnswer": "His identity and circumstances are not what they appear",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E22",
+      "Episode title: Night and Day",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what detail makes Charlie more suspicious than he first seems after a burglary?",
+      "Answer focus: His identity and circumstances are not what they appear",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: His identity and circumstances are not what they appear"
+    ]
+  },
+  {
+    "id": "tv_34600",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what complicates the investigation into the deaths of three teenagers?",
+    "answers": [
+      "Conflicting accounts of the moments before impact",
+      "A missing aircraft",
+      "A second unrelated fire",
+      "A confession by a hospital doctor"
+    ],
+    "correctAnswer": "Conflicting accounts of the moments before impact",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E24",
+      "Episode title: Crossing the Line",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what complicates the investigation into the deaths of three teenagers?",
+      "Answer focus: Conflicting accounts of the moments before impact",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Conflicting accounts of the moments before impact"
+    ]
+  },
+  {
+    "id": "tv_34601",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what serious consequence follows Chris defending herself from a young woman?",
+    "answers": [
+      "Chris is arrested after the woman is hospitalised",
+      "Chris is promoted to inspector",
+      "The pub is permanently closed",
+      "Chris leaves Mount Thomas without investigation"
+    ],
+    "correctAnswer": "Chris is arrested after the woman is hospitalised",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E28",
+      "Episode title: Last Orders",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what serious consequence follows Chris defending herself from a young woman?",
+      "Answer focus: Chris is arrested after the woman is hospitalised",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Chris is arrested after the woman is hospitalised"
+    ]
+  },
+  {
+    "id": "tv_34602",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what is at risk when Alex and Joss's dispute reaches a disciplinary investigation?",
+    "answers": [
+      "An officer's job",
+      "The station's building licence",
+      "A police vehicle registration",
+      "The local football club"
+    ],
+    "correctAnswer": "An officer's job",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E30",
+      "Episode title: Acid Test",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what is at risk when Alex and Joss's dispute reaches a disciplinary investigation?",
+      "Answer focus: An officer's job",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: An officer's job"
+    ]
+  },
+  {
+    "id": "tv_34603",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what complicates Sergeant Jacobs's effort to support a young artist?",
+    "answers": [
+      "He struggles to be there for his daughter",
+      "He is ordered to move overseas",
+      "His car is stolen",
+      "He is jailed for contempt"
+    ],
+    "correctAnswer": "He struggles to be there for his daughter",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E31",
+      "Episode title: One for the Road",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what complicates Sergeant Jacobs's effort to support a young artist?",
+      "Answer focus: He struggles to be there for his daughter",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: He struggles to be there for his daughter"
+    ]
+  },
+  {
+    "id": "tv_34604",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what other serious issue arises while a doctor claims ignorance of cannabis growing on his land?",
+    "answers": [
+      "A police officer faces a momentous decision",
+      "The hospital closes",
+      "The district is flooded",
+      "A police helicopter is stolen"
+    ],
+    "correctAnswer": "A police officer faces a momentous decision",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E32",
+      "Episode title: Two Laws",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what other serious issue arises while a doctor claims ignorance of cannabis growing on his land?",
+      "Answer focus: A police officer faces a momentous decision",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: A police officer faces a momentous decision"
+    ]
+  },
+  {
+    "id": "tv_34605",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what new staffing change takes place while Amy investigates a troubled lottery winner?",
+    "answers": [
+      "A new constable arrives",
+      "Tom retires",
+      "Nick Schultz rejoins permanently",
+      "Falcon-Price resigns"
+    ],
+    "correctAnswer": "A new constable arrives",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E34",
+      "Episode title: Bad Fortune",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what new staffing change takes place while Amy investigates a troubled lottery winner?",
+      "Answer focus: A new constable arrives",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: A new constable arrives"
+    ]
+  },
+  {
+    "id": "tv_34606",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what disagreement arises between Matt and Amy during a murder investigation?",
+    "answers": [
+      "They disagree about the principal suspect",
+      "They argue over a missing horse",
+      "They disagree about school funding",
+      "They dispute a parking offence"
+    ],
+    "correctAnswer": "They disagree about the principal suspect",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E38",
+      "Episode title: Promises, Promises",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what disagreement arises between Matt and Amy during a murder investigation?",
+      "Answer focus: They disagree about the principal suspect",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: They disagree about the principal suspect"
+    ]
+  },
+  {
+    "id": "tv_34607",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what civic facility is Alex campaigning for amid mounting difficulties as sergeant?",
+    "answers": [
+      "A skate bowl",
+      "A swimming pool",
+      "A library extension",
+      "A cinema"
+    ],
+    "correctAnswer": "A skate bowl",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E39",
+      "Episode title: Slaying the Demons",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what civic facility is Alex campaigning for amid mounting difficulties as sergeant?",
+      "Answer focus: A skate bowl",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: A skate bowl"
+    ]
+  },
+  {
+    "id": "tv_34608",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), what jeopardises Amy's inquiry into assaults on anaesthetised patients?",
+    "answers": [
+      "Evidence goes missing",
+      "Her chief witness emigrates",
+      "A hospital is flooded",
+      "The suspect becomes police commissioner"
+    ],
+    "correctAnswer": "Evidence goes missing",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E41",
+      "Episode title: Face Value",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: what jeopardises Amy's inquiry into assaults on anaesthetised patients?",
+      "Answer focus: Evidence goes missing",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: Evidence goes missing"
+    ]
+  },
+  {
+    "id": "tv_34609",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2005), who becomes attached to Jonesy while searching for someone?",
+    "answers": [
+      "A boy wearing a Darth Vader mask",
+      "A runaway girl in a police uniform",
+      "A doctor with a bandaged face",
+      "A boy carrying a toy fire engine"
+    ],
+    "correctAnswer": "A boy wearing a Darth Vader mask",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2005",
+      "Episode: S12E42",
+      "Episode title: Lost and Found",
+      "Characters: Mount Thomas Heelers",
+      "Subject: Episode storyline",
+      "Year: 2005",
+      "Episode context: who becomes attached to Jonesy while searching for someone?",
+      "Answer focus: A boy wearing a Darth Vader mask",
+      "Source: TheTVDB aired-order synopsis",
+      "Character/subject: A boy wearing a Darth Vader mask"
     ]
   }
 ];
-if(questions.length!==131||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(34393+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<20))throw Error('Pack 555 validation failed');
+if(questions.length!==162||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<20))throw Error('Pack 555 validation failed');
 module.exports = questions;
