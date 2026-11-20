@@ -128,11 +128,1644 @@ const questions = groups.flatMap(group =>
   })
 );
 
-const EXPECTED_COUNT = 52;
+
+// =====================================================
+// EDITORIAL AUDIT: 20 November 2026 — Series 1–4 and specials
+// Original 52 questions/IDs tv_11043–tv_11094 preserved.
+// 54 distinct evidence-checked questions added; audit continues at Series 5.
+// Source: https://www.comedy.co.uk/tv/2point4_children/episodes/
+// Detail check: https://epguides.com/2point4Children/guide.shtml
+// IMPORTANT: This is a PARTIAL audit, not complete series sign-off.
+// =====================================================
+const auditedAdditions = [
+  {
+    "id": "tv_34877",
+    "category": "Television",
+    "question": "What kind of boy does Jenny secretly leave school to meet in the opening episode of 2point4 Children?",
+    "answers": [
+      "A motorbike enthusiast",
+      "A trainee chef",
+      "A school prefect",
+      "A young goalkeeper"
+    ],
+    "correctAnswer": "A motorbike enthusiast",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Leader Of The Pack",
+      "Storyline: What kind of boy does Jenny secretly leave school to meet in the opening episode of 2point4 Children?",
+      "Answer focus: A motorbike enthusiast",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34878",
+    "category": "Television",
+    "question": "Where does Bill go after discovering that Jenny has been missing school?",
+    "answers": [
+      "A police station",
+      "Jenny's school",
+      "Ben's lock-up",
+      "Rona's flat"
+    ],
+    "correctAnswer": "Jenny's school",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Leader Of The Pack",
+      "Storyline: Where does Bill go after discovering that Jenny has been missing school?",
+      "Answer focus: Jenny's school",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34879",
+    "category": "Television",
+    "question": "Which relative slaps David after discovering that he has brought a rat into her house?",
+    "answers": [
+      "Auntie Pearl",
+      "Bette",
+      "Aunt Tina",
+      "Aunt Belle"
+    ],
+    "correctAnswer": "Aunt Tina",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Saturday Night And Sunday Morning",
+      "Storyline: Which relative slaps David after discovering that he has brought a rat into her house?",
+      "Answer focus: Aunt Tina",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34880",
+    "category": "Television",
+    "question": "What does Bill realise after storming off in Ben's van with David?",
+    "answers": [
+      "The van is stolen",
+      "She has left David behind",
+      "The van has no fuel",
+      "She cannot drive"
+    ],
+    "correctAnswer": "She cannot drive",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Saturday Night And Sunday Morning",
+      "Storyline: What does Bill realise after storming off in Ben's van with David?",
+      "Answer focus: She cannot drive",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34881",
+    "category": "Television",
+    "question": "Who guides Bill and David to safety when she is driving Ben's van without knowing how?",
+    "answers": [
+      "The mysterious biker",
+      "Ben Porter",
+      "Rona",
+      "A traffic policeman"
+    ],
+    "correctAnswer": "The mysterious biker",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Saturday Night And Sunday Morning",
+      "Storyline: Who guides Bill and David to safety when she is driving Ben's van without knowing how?",
+      "Answer focus: The mysterious biker",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34882",
+    "category": "Television",
+    "question": "What does Bill accidentally damage while preparing for Ben's garden barbecue?",
+    "answers": [
+      "Rona's catering van",
+      "Mrs Grimes's climbing roses",
+      "Jenny's motorbike",
+      "Tina's conservatory"
+    ],
+    "correctAnswer": "Mrs Grimes's climbing roses",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: When The Going Gets Tough",
+      "Storyline: What does Bill accidentally damage while preparing for Ben's garden barbecue?",
+      "Answer focus: Mrs Grimes's climbing roses",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34883",
+    "category": "Television",
+    "question": "What unexpected trouble does Bill get into during a shopping trip?",
+    "answers": [
+      "She is trapped in a lift",
+      "She accidentally buys a stolen bicycle",
+      "She is arrested for suspected shoplifting",
+      "She loses David in the shop"
+    ],
+    "correctAnswer": "She is arrested for suspected shoplifting",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: When The Going Gets Tough",
+      "Storyline: What unexpected trouble does Bill get into during a shopping trip?",
+      "Answer focus: She is arrested for suspected shoplifting",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34884",
+    "category": "Television",
+    "question": "What news does Ben bring home after meeting the tax authorities?",
+    "answers": [
+      "He faces imprisonment",
+      "He has inherited a bakery",
+      "His business licence is revoked",
+      "He is owed a tax rebate"
+    ],
+    "correctAnswer": "He is owed a tax rebate",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: When The Going Gets Tough",
+      "Storyline: What news does Ben bring home after meeting the tax authorities?",
+      "Answer focus: He is owed a tax rebate",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34885",
+    "category": "Television",
+    "question": "What embarrassing discovery does Bill make when she rushes home expecting to find Jenny with her boyfriend?",
+    "answers": [
+      "Bette is in bed with a widower",
+      "Ben has bought a horse",
+      "Rona has moved into the attic",
+      "David has joined a band"
+    ],
+    "correctAnswer": "Bette is in bed with a widower",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Love And Marriage",
+      "Storyline: What embarrassing discovery does Bill make when she rushes home expecting to find Jenny with her boyfriend?",
+      "Answer focus: Bette is in bed with a widower",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34886",
+    "category": "Television",
+    "question": "What new entertainment fad does Ben bring into the household in the episode 'Love And Marriage'?",
+    "answers": [
+      "A games console",
+      "A karaoke tape",
+      "A pinball machine",
+      "A virtual-reality headset"
+    ],
+    "correctAnswer": "A karaoke tape",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Love And Marriage",
+      "Storyline: What new entertainment fad does Ben bring into the household in the episode 'Love And Marriage'?",
+      "Answer focus: A karaoke tape",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34887",
+    "category": "Television",
+    "question": "What does Ben secretly keep in a lock-up during the opening series?",
+    "answers": [
+      "A stolen police car",
+      "A boat",
+      "A pale-blue classic Chevrolet",
+      "A collection of bicycles"
+    ],
+    "correctAnswer": "A pale-blue classic Chevrolet",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Dirty Bowling",
+      "Storyline: What does Ben secretly keep in a lock-up during the opening series?",
+      "Answer focus: A pale-blue classic Chevrolet",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34888",
+    "category": "Television",
+    "question": "What physical inconvenience makes Bill's driving test especially difficult?",
+    "answers": [
+      "She has broken her wrist",
+      "She has lost her glasses",
+      "She has a twisted ankle",
+      "Her mouth is numb after dental treatment"
+    ],
+    "correctAnswer": "Her mouth is numb after dental treatment",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Dirty Bowling",
+      "Storyline: What physical inconvenience makes Bill's driving test especially difficult?",
+      "Answer focus: Her mouth is numb after dental treatment",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34889",
+    "category": "Television",
+    "question": "What is the outcome of Bill and Ben's bet at the bowling alley?",
+    "answers": [
+      "Ben must do his own washing",
+      "Bill must sell the family car",
+      "Ben must shave his beard",
+      "Bill must take up bowling"
+    ],
+    "correctAnswer": "Ben must do his own washing",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Dirty Bowling",
+      "Storyline: What is the outcome of Bill and Ben's bet at the bowling alley?",
+      "Answer focus: Ben must do his own washing",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34890",
+    "category": "Television",
+    "question": "Why do Bill and Rona finally leave their jobs at the bakery?",
+    "answers": [
+      "The bakery moves abroad",
+      "Their manager's unacceptable treatment of them",
+      "The shop burns down",
+      "They both win the lottery"
+    ],
+    "correctAnswer": "Their manager's unacceptable treatment of them",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Young At Heart",
+      "Storyline: Why do Bill and Rona finally leave their jobs at the bakery?",
+      "Answer focus: Their manager's unacceptable treatment of them",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34891",
+    "category": "Television",
+    "question": "What public motoring event does the Porter family attend at the end of the first series?",
+    "answers": [
+      "The London-to-Brighton Veteran Car Run",
+      "The British Grand Prix",
+      "The Chelsea Car Cruise",
+      "A charity cycle race"
+    ],
+    "correctAnswer": "The Chelsea Car Cruise",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 1",
+      "Broadcast year 1991",
+      "Episode: Young At Heart",
+      "Storyline: What public motoring event does the Porter family attend at the end of the first series?",
+      "Answer focus: The Chelsea Car Cruise",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34892",
+    "category": "Television",
+    "question": "Which television personality disrupts Bill's attempt to get help from a mechanic?",
+    "answers": [
+      "Cilla Black",
+      "Esther Rantzen",
+      "Anne Robinson",
+      "Anneka Rice"
+    ],
+    "correctAnswer": "Anneka Rice",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: I'm Going Slightly Mad",
+      "Storyline: Which television personality disrupts Bill's attempt to get help from a mechanic?",
+      "Answer focus: Anneka Rice",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34893",
+    "category": "Television",
+    "question": "What sort of work does Bill take after her spell of unemployment?",
+    "answers": [
+      "Preparing airline meals",
+      "Teaching driving",
+      "Selling second-hand cars",
+      "Working as a bank clerk"
+    ],
+    "correctAnswer": "Preparing airline meals",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: I'm Going Slightly Mad",
+      "Storyline: What sort of work does Bill take after her spell of unemployment?",
+      "Answer focus: Preparing airline meals",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34894",
+    "category": "Television",
+    "question": "What unconventional medicine does Bill accidentally give her sick husband?",
+    "answers": [
+      "An expired vaccination",
+      "A dog's aspirin",
+      "A sleeping draught",
+      "A children's vitamin"
+    ],
+    "correctAnswer": "A dog's aspirin",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: Bedtime For Bonzo",
+      "Storyline: What unconventional medicine does Bill accidentally give her sick husband?",
+      "Answer focus: A dog's aspirin",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34895",
+    "category": "Television",
+    "question": "What does David become preoccupied with after the neighbours' dog falls ill?",
+    "answers": [
+      "Astronomy",
+      "Motor racing",
+      "Death",
+      "The stock market"
+    ],
+    "correctAnswer": "Death",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: Bedtime For Bonzo",
+      "Storyline: What does David become preoccupied with after the neighbours' dog falls ill?",
+      "Answer focus: Death",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34896",
+    "category": "Television",
+    "question": "What does Ben discover after trying out a pregnancy test himself?",
+    "answers": [
+      "It is a blood-sugar test",
+      "It is broken and shows nothing",
+      "It belongs to Rona",
+      "It indicates he is pregnant"
+    ],
+    "correctAnswer": "It indicates he is pregnant",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: Hormones",
+      "Storyline: What does Ben discover after trying out a pregnancy test himself?",
+      "Answer focus: It indicates he is pregnant",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34897",
+    "category": "Television",
+    "question": "What unusual race humiliates Ben after he challenges another driver?",
+    "answers": [
+      "A wheelchair race",
+      "A sack race",
+      "A bicycle time trial",
+      "A three-legged race"
+    ],
+    "correctAnswer": "A wheelchair race",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: Hormones",
+      "Storyline: What unusual race humiliates Ben after he challenges another driver?",
+      "Answer focus: A wheelchair race",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34898",
+    "category": "Television",
+    "question": "What surprises Ben and Tina about their father Frank's return from Thailand?",
+    "answers": [
+      "He has become a police officer",
+      "He has married a much younger Thai woman",
+      "He has adopted twins",
+      "He has opened a restaurant"
+    ],
+    "correctAnswer": "He has married a much younger Thai woman",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: One Night In Bangkok",
+      "Storyline: What surprises Ben and Tina about their father Frank's return from Thailand?",
+      "Answer focus: He has married a much younger Thai woman",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34899",
+    "category": "Television",
+    "question": "Where does Rona unexpectedly encounter a man she once nearly married?",
+    "answers": [
+      "At a football match",
+      "On a train",
+      "At a male strip show",
+      "At a hospital"
+    ],
+    "correctAnswer": "At a male strip show",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: One Night In Bangkok",
+      "Storyline: Where does Rona unexpectedly encounter a man she once nearly married?",
+      "Answer focus: At a male strip show",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34900",
+    "category": "Television",
+    "question": "How is the mysterious feeling that someone is watching Bill eventually explained?",
+    "answers": [
+      "A neighbour has installed a spy camera",
+      "The house is haunted",
+      "David has hired a detective",
+      "Ben has secretly been filming the family"
+    ],
+    "correctAnswer": "Ben has secretly been filming the family",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: The Skeleton In The Cupboard",
+      "Storyline: How is the mysterious feeling that someone is watching Bill eventually explained?",
+      "Answer focus: Ben has secretly been filming the family",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34901",
+    "category": "Television",
+    "question": "What extraordinary sight greets Bill at an unsuccessful job interview?",
+    "answers": [
+      "The interviewer is naked",
+      "An escaped lion",
+      "An entire room of mannequins",
+      "A full television crew"
+    ],
+    "correctAnswer": "The interviewer is naked",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: The Skeleton In The Cupboard",
+      "Storyline: What extraordinary sight greets Bill at an unsuccessful job interview?",
+      "Answer focus: The interviewer is naked",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34902",
+    "category": "Television",
+    "question": "What happens to Bill and Rona's airline-meals employer?",
+    "answers": [
+      "It becomes a hotel",
+      "It goes bankrupt",
+      "It merges with Ben's business",
+      "It moves to Scotland"
+    ],
+    "correctAnswer": "It goes bankrupt",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: The Skeleton In The Cupboard",
+      "Storyline: What happens to Bill and Rona's airline-meals employer?",
+      "Answer focus: It goes bankrupt",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34903",
+    "category": "Television",
+    "question": "Where does Bill get her head stuck amid preparations for Rona's wedding?",
+    "answers": [
+      "In a washing machine",
+      "In a garden gate",
+      "In a cat flap",
+      "In a car window"
+    ],
+    "correctAnswer": "In a cat flap",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: Bird On A Wire",
+      "Storyline: Where does Bill get her head stuck amid preparations for Rona's wedding?",
+      "Answer focus: In a cat flap",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34904",
+    "category": "Television",
+    "question": "What household fixture traps Rona in her wedding dress?",
+    "answers": [
+      "A curtain rail",
+      "A stair banister",
+      "A kitchen extractor fan",
+      "A ceiling light fitting"
+    ],
+    "correctAnswer": "A ceiling light fitting",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: Bird On A Wire",
+      "Storyline: What household fixture traps Rona in her wedding dress?",
+      "Answer focus: A ceiling light fitting",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34905",
+    "category": "Television",
+    "question": "What does Rona ultimately do when her wedding to Gordon is about to take place?",
+    "answers": [
+      "Runs away from the ceremony",
+      "Marries David's doctor",
+      "Asks Ben to officiate",
+      "Misses the ceremony because of a cancelled flight"
+    ],
+    "correctAnswer": "Runs away from the ceremony",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: Thank Your Lucky Stars",
+      "Storyline: What does Rona ultimately do when her wedding to Gordon is about to take place?",
+      "Answer focus: Runs away from the ceremony",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34906",
+    "category": "Television",
+    "question": "Which mysterious figure appears to the dangerously ill David in hospital?",
+    "answers": [
+      "Jake the Klingon",
+      "The biker who has appeared to Bill",
+      "Rona's brother",
+      "The bakery manager"
+    ],
+    "correctAnswer": "The biker who has appeared to Bill",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: Thank Your Lucky Stars",
+      "Storyline: Which mysterious figure appears to the dangerously ill David in hospital?",
+      "Answer focus: The biker who has appeared to Bill",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34907",
+    "category": "Television",
+    "question": "What unusual effect do the Porters' flashing Christmas-tree lights have on Bette?",
+    "answers": [
+      "They cause a power cut",
+      "They summon the police",
+      "They put her into a hypnotic trance",
+      "They set fire to the curtains"
+    ],
+    "correctAnswer": "They put her into a hypnotic trance",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 2",
+      "Broadcast year 1992",
+      "Episode: Misery",
+      "Storyline: What unusual effect do the Porters' flashing Christmas-tree lights have on Bette?",
+      "Answer focus: They put her into a hypnotic trance",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34908",
+    "category": "Television",
+    "question": "Which relative of Rona comes to visit and has a complicated past with her?",
+    "answers": [
+      "Her cousin Martin",
+      "Her father Frank",
+      "Her uncle Tony",
+      "Her brother Adam"
+    ],
+    "correctAnswer": "Her brother Adam",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: The Secret Diary Of David Porter",
+      "Storyline: Which relative of Rona comes to visit and has a complicated past with her?",
+      "Answer focus: Her brother Adam",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34909",
+    "category": "Television",
+    "question": "What long-running family dispute does Bill try to resolve?",
+    "answers": [
+      "The feud between Bette and Aunt Belle",
+      "A row between Ben and his father",
+      "Jenny and Rona's argument",
+      "David and his school headmaster's dispute"
+    ],
+    "correctAnswer": "The feud between Bette and Aunt Belle",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: The Secret Diary Of David Porter",
+      "Storyline: What long-running family dispute does Bill try to resolve?",
+      "Answer focus: The feud between Bette and Aunt Belle",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34910",
+    "category": "Television",
+    "question": "What does Bill suspect when she sees suspicious activity next door at night?",
+    "answers": [
+      "The house has been sold",
+      "The Grimes' house is being burgled",
+      "A secret film is being made",
+      "A lost dog is being rescued"
+    ],
+    "correctAnswer": "The Grimes' house is being burgled",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: When The Children Are Asleep",
+      "Storyline: What does Bill suspect when she sees suspicious activity next door at night?",
+      "Answer focus: The Grimes' house is being burgled",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34911",
+    "category": "Television",
+    "question": "What has happened to the Grimes while Bill worries about their apparently empty house?",
+    "answers": [
+      "They have emigrated",
+      "They are attending a wedding",
+      "They have been tied up inside",
+      "They are hiding from the taxman"
+    ],
+    "correctAnswer": "They have been tied up inside",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: When The Children Are Asleep",
+      "Storyline: What has happened to the Grimes while Bill worries about their apparently empty house?",
+      "Answer focus: They have been tied up inside",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34912",
+    "category": "Television",
+    "question": "What pet does David bring home that proves disastrous during Ben's gaming obsession?",
+    "answers": [
+      "A hamster",
+      "A tortoise",
+      "A budgerigar",
+      "A goldfish"
+    ],
+    "correctAnswer": "A goldfish",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: Badger's Bend",
+      "Storyline: What pet does David bring home that proves disastrous during Ben's gaming obsession?",
+      "Answer focus: A goldfish",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34913",
+    "category": "Television",
+    "question": "Which kitchen appliance becomes a hazard to David's goldfish?",
+    "answers": [
+      "A liquidiser",
+      "A microwave",
+      "A dishwasher",
+      "A toaster"
+    ],
+    "correctAnswer": "A liquidiser",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: Badger's Bend",
+      "Storyline: Which kitchen appliance becomes a hazard to David's goldfish?",
+      "Answer focus: A liquidiser",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34914",
+    "category": "Television",
+    "question": "Which DJ catches Rona's attention as a potential father for her hoped-for child?",
+    "answers": [
+      "Gordon",
+      "Tony",
+      "Clive",
+      "Jake"
+    ],
+    "correctAnswer": "Tony",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: Women On The Verge Of A Nervous Breakdown",
+      "Storyline: Which DJ catches Rona's attention as a potential father for her hoped-for child?",
+      "Answer focus: Tony",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34915",
+    "category": "Television",
+    "question": "What does Tina fear about her husband Brian?",
+    "answers": [
+      "That he has joined a cult",
+      "That he is buying a boat",
+      "That he is having an affair",
+      "That he is leaving for America"
+    ],
+    "correctAnswer": "That he is having an affair",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: Women On The Verge Of A Nervous Breakdown",
+      "Storyline: What does Tina fear about her husband Brian?",
+      "Answer focus: That he is having an affair",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34916",
+    "category": "Television",
+    "question": "What themed funeral does Ben have to arrange for his plumbing rival Jake?",
+    "answers": [
+      "A Western funeral",
+      "A football-themed funeral",
+      "A medieval funeral",
+      "A Star Trek funeral"
+    ],
+    "correctAnswer": "A Star Trek funeral",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: Beam Me Up, Scotty",
+      "Storyline: What themed funeral does Ben have to arrange for his plumbing rival Jake?",
+      "Answer focus: A Star Trek funeral",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34917",
+    "category": "Television",
+    "question": "What is revealed after Ben has arranged Jake's bizarre funeral?",
+    "answers": [
+      "Jake faked his own death",
+      "Jake left Ben a fortune",
+      "Jake was Ben's brother",
+      "Jake never worked as a plumber"
+    ],
+    "correctAnswer": "Jake faked his own death",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: Beam Me Up, Scotty",
+      "Storyline: What is revealed after Ben has arranged Jake's bizarre funeral?",
+      "Answer focus: Jake faked his own death",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34918",
+    "category": "Television",
+    "question": "What costly change does the health inspector demand from Bill and Rona?",
+    "answers": [
+      "A second delivery van",
+      "A refit of their catering kitchen",
+      "New staff uniforms",
+      "A new shop sign"
+    ],
+    "correctAnswer": "A refit of their catering kitchen",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: Beam Me Up, Scotty",
+      "Storyline: What costly change does the health inspector demand from Bill and Rona?",
+      "Answer focus: A refit of their catering kitchen",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34919",
+    "category": "Television",
+    "question": "Which American city do the Porters flee towards as Hurricane Bill approaches?",
+    "answers": [
+      "Chicago",
+      "Boston",
+      "Miami",
+      "Seattle"
+    ],
+    "correctAnswer": "Miami",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: Whoopee, We're All Going To Die",
+      "Storyline: Which American city do the Porters flee towards as Hurricane Bill approaches?",
+      "Answer focus: Miami",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34920",
+    "category": "Television",
+    "question": "What hazard do the Porters accidentally wander into while lost on their Christmas trip?",
+    "answers": [
+      "An abandoned zoo",
+      "A flooded railway tunnel",
+      "An active volcano",
+      "A military minefield"
+    ],
+    "correctAnswer": "A military minefield",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: Babes In The Wood",
+      "Storyline: What hazard do the Porters accidentally wander into while lost on their Christmas trip?",
+      "Answer focus: A military minefield",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34921",
+    "category": "Television",
+    "question": "Who are the two relatives the family is travelling to meet at a hotel for Christmas?",
+    "answers": [
+      "Bette and Auntie Pearl",
+      "Tina and Gordon",
+      "Frank and Rona",
+      "Jake and Clive"
+    ],
+    "correctAnswer": "Bette and Auntie Pearl",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 3",
+      "Broadcast year 1993",
+      "Episode: Babes In The Wood",
+      "Storyline: Who are the two relatives the family is travelling to meet at a hotel for Christmas?",
+      "Answer focus: Bette and Auntie Pearl",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34922",
+    "category": "Television",
+    "question": "What odd object helps embarrass Bill when meeting Jenny's boyfriend's parents?",
+    "answers": [
+      "An electric organ",
+      "An inflatable Pope",
+      "A giant toy dinosaur",
+      "A stuffed penguin"
+    ],
+    "correctAnswer": "An inflatable Pope",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 4",
+      "Broadcast year 1994",
+      "Episode: The Parent Trap",
+      "Storyline: What odd object helps embarrass Bill when meeting Jenny's boyfriend's parents?",
+      "Answer focus: An inflatable Pope",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34923",
+    "category": "Television",
+    "question": "How does Bill try to force the Porter family to talk rather than watch television?",
+    "answers": [
+      "She hides the television aerial",
+      "She locks them out of the house",
+      "She removes the fuse wire",
+      "She sells the radio"
+    ],
+    "correctAnswer": "She removes the fuse wire",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 4",
+      "Broadcast year 1994",
+      "Episode: Family Plot",
+      "Storyline: How does Bill try to force the Porter family to talk rather than watch television?",
+      "Answer focus: She removes the fuse wire",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34924",
+    "category": "Television",
+    "question": "What does Bill tear up despite Ben's superstitious objections?",
+    "answers": [
+      "A lottery ticket",
+      "A driving licence",
+      "A wedding invitation",
+      "A chain letter"
+    ],
+    "correctAnswer": "A chain letter",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 4",
+      "Broadcast year 1994",
+      "Episode: Fortuosity",
+      "Storyline: What does Bill tear up despite Ben's superstitious objections?",
+      "Answer focus: A chain letter",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34925",
+    "category": "Television",
+    "question": "Which adventurous activity does Ben undertake while the Porters fear a run of bad luck?",
+    "answers": [
+      "Parachuting",
+      "Bungee jumping",
+      "Deep-sea diving",
+      "Mountaineering"
+    ],
+    "correctAnswer": "Parachuting",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 4",
+      "Broadcast year 1994",
+      "Episode: Fortuosity",
+      "Storyline: Which adventurous activity does Ben undertake while the Porters fear a run of bad luck?",
+      "Answer focus: Parachuting",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34926",
+    "category": "Television",
+    "question": "What illness confines Bill to bed while the Grimes' cat is missing?",
+    "answers": [
+      "Measles",
+      "Flu",
+      "A broken ankle",
+      "Food poisoning"
+    ],
+    "correctAnswer": "Flu",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 4",
+      "Broadcast year 1994",
+      "Episode: Curiosity Killed The Cat",
+      "Storyline: What illness confines Bill to bed while the Grimes' cat is missing?",
+      "Answer focus: Flu",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34927",
+    "category": "Television",
+    "question": "What dangerous animals trap Bill and Rona in the Porters' house?",
+    "answers": [
+      "A pair of wild boars",
+      "Three aggressive dogs",
+      "Two escaped cobras",
+      "A swarm of wasps"
+    ],
+    "correctAnswer": "Two escaped cobras",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 4",
+      "Broadcast year 1994",
+      "Episode: Frenzy",
+      "Storyline: What dangerous animals trap Bill and Rona in the Porters' house?",
+      "Answer focus: Two escaped cobras",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34928",
+    "category": "Television",
+    "question": "Who helps organise the Porters' recovery after a fire damages their home?",
+    "answers": [
+      "Aunt Tina",
+      "Jake Klinger",
+      "Clive",
+      "Bette"
+    ],
+    "correctAnswer": "Bette",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 4",
+      "Broadcast year 1994",
+      "Episode: You Only Live Twice",
+      "Storyline: Who helps organise the Porters' recovery after a fire damages their home?",
+      "Answer focus: Bette",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34929",
+    "category": "Television",
+    "question": "What has David connected to the Internet when a sinister programme begins behaving strangely?",
+    "answers": [
+      "His computer",
+      "Ben's television",
+      "Rona's telephone",
+      "The family video recorder"
+    ],
+    "correctAnswer": "His computer",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 4",
+      "Broadcast year 1994",
+      "Episode: Relax-Ay-Voo",
+      "Storyline: What has David connected to the Internet when a sinister programme begins behaving strangely?",
+      "Answer focus: His computer",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34930",
+    "category": "Television",
+    "question": "What does the strange computer programme appear to know about the Porter household?",
+    "answers": [
+      "Their bank PINs",
+      "Bill's name",
+      "The location of Ben's car",
+      "Jenny's school timetable"
+    ],
+    "correctAnswer": "Bill's name",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 4",
+      "Broadcast year 1994",
+      "Episode: Relax-Ay-Voo",
+      "Storyline: What does the strange computer programme appear to know about the Porter household?",
+      "Answer focus: Bill's name",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditedAdditions);
+
+const EXPECTED_COUNT = 106;
 if (questions.length !== EXPECTED_COUNT) {
   throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
 }
-if (questions[0].id !== 'tv_11043' || questions[questions.length - 1].id !== 'tv_11094') {
+if (questions[0].id !== 'tv_11043' || questions[51].id !== 'tv_11094' || questions[questions.length - 1].id !== 'tv_34930') {
   throw new Error('Unexpected question ID range');
 }
 if (new Set(questions.map(q => q.id)).size !== questions.length) {
