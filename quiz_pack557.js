@@ -1,7 +1,8 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 557: Chicago Justice (2017).
-// 76 questions covering all 13 episodes and the main cast/production. IDs tv_34647–tv_34722.
+// 92 verified and corrected questions across all 13 episodes, cast, character backgrounds and production. Original IDs tv_34647–tv_34722 retained; audit additions tv_34840–tv_34855.
 // Primary episode source: https://www.thetvdb.com/series/chicago-justice/allseasons/official
 // Cross-check: https://www.tvguide.com/tvshows/chicago-justice/episodes-season-1/1000183132/
+// Reviewed against published case descriptions and character biographies; amended incorrect DNA-family relationship and ambiguous questions.
 // The pilot 'Fake' concludes a three-part Chicago Fire / Chicago P.D. crossover.
 'use strict';
 const questions = [
@@ -9,12 +10,12 @@ const questions = [
     "id": "tv_34647",
     "category": "TV",
     "topic": "Chicago Justice",
-    "question": "In Chicago Justice (2017), which emergency service responds to the warehouse inferno?",
+    "question": "In Chicago Justice's premiere, which Chicago Fire crew attends the deadly warehouse fire?",
     "answers": [
       "Firehouse 51",
-      "Chicago Med",
-      "Cook County Sheriff's Office",
-      "Coast Guard"
+      "Firehouse 88",
+      "Firehouse 20",
+      "Firehouse 64"
     ],
     "correctAnswer": "Firehouse 51",
     "difficulty": "Medium",
@@ -40,9 +41,9 @@ const questions = [
       "Year: 2017",
       "Episode: S01E01",
       "Episode title: Fake",
-      "Episode context: which emergency service responds to the warehouse inferno?",
-      "Answer focus: Firehouse 51",
-      "Source: TheTVDB aired-order synopsis"
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: In Chicago Justice's premiere, which Chicago Fire crew attends the deadly warehouse fire?",
+      "Answer focus: Firehouse 51"
     ]
   },
   {
@@ -89,12 +90,12 @@ const questions = [
     "id": "tv_34649",
     "category": "TV",
     "topic": "Chicago Justice",
-    "question": "In Chicago Justice (2017), which Chicago police investigator helps Peter Stone prosecute the warehouse-fire suspect?",
+    "question": "In Chicago Justice, which chief investigator works with Peter Stone on the warehouse-fire prosecution?",
     "answers": [
-      "Kevin Atwater",
-      "Hank Voight",
       "Antonio Dawson",
-      "Adam Ruzek"
+      "Laura Nagel",
+      "Kevin Atwater",
+      "Hank Voight"
     ],
     "correctAnswer": "Antonio Dawson",
     "difficulty": "Medium",
@@ -120,9 +121,9 @@ const questions = [
       "Year: 2017",
       "Episode: S01E01",
       "Episode title: Fake",
-      "Episode context: which Chicago police investigator helps Peter Stone prosecute the warehouse-fire suspect?",
-      "Answer focus: Antonio Dawson",
-      "Source: TheTVDB aired-order synopsis"
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: In Chicago Justice, which chief investigator works with Peter Stone on the warehouse-fire prosecution?",
+      "Answer focus: Antonio Dawson"
     ]
   },
   {
@@ -369,14 +370,14 @@ const questions = [
     "id": "tv_34656",
     "category": "TV",
     "topic": "Chicago Justice",
-    "question": "In Chicago Justice (2017), which body refuses to indict the full group the prosecutors target?",
+    "question": "Which original Law & Order character returns to defend Kevin Atwater in Chicago Justice?",
     "answers": [
-      "A grand jury",
-      "The city council",
-      "A parole board",
-      "The state supreme court"
+      "Paul Robinette",
+      "Jack McCoy",
+      "Ben Stone",
+      "Mike Logan"
     ],
-    "correctAnswer": "A grand jury",
+    "correctAnswer": "Paul Robinette",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -400,9 +401,9 @@ const questions = [
       "Year: 2017",
       "Episode: S01E02",
       "Episode title: Uncertainty Principle",
-      "Episode context: which body refuses to indict the full group the prosecutors target?",
-      "Answer focus: A grand jury",
-      "Source: TheTVDB aired-order synopsis"
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: Which original Law & Order character returns to defend Kevin Atwater in Chicago Justice?",
+      "Answer focus: Paul Robinette"
     ]
   },
   {
@@ -449,12 +450,12 @@ const questions = [
     "id": "tv_34658",
     "category": "TV",
     "topic": "Chicago Justice",
-    "question": "In Chicago Justice (2017), what does the murdered university student study as?",
+    "question": "In Chicago Justice's 'See Something', what level of student is found murdered?",
     "answers": [
-      "A high-school pupil",
-      "An apprentice electrician",
       "A graduate student",
-      "A medical intern"
+      "A secondary-school student",
+      "An undergraduate freshman",
+      "A medical resident"
     ],
     "correctAnswer": "A graduate student",
     "difficulty": "Medium",
@@ -480,9 +481,9 @@ const questions = [
       "Year: 2017",
       "Episode: S01E03",
       "Episode title: See Something",
-      "Episode context: what does the murdered university student study as?",
-      "Answer focus: A graduate student",
-      "Source: TheTVDB aired-order synopsis"
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: In Chicago Justice's 'See Something', what level of student is found murdered?",
+      "Answer focus: A graduate student"
     ]
   },
   {
@@ -1289,12 +1290,12 @@ const questions = [
     "id": "tv_34679",
     "category": "TV",
     "topic": "Chicago Justice",
-    "question": "In Chicago Justice (2017), what forensic material links the killer to the victim's imprisoned father?",
+    "question": "In Chicago Justice's 'Double Helix', which type of evidence links the murder suspect to an imprisoned serial killer?",
     "answers": [
-      "A fingerprint",
-      "A handwriting sample",
-      "A shell casing",
-      "DNA"
+      "DNA",
+      "An eyewitness sketch",
+      "A handwritten confession",
+      "A footprint"
     ],
     "correctAnswer": "DNA",
     "difficulty": "Medium",
@@ -1320,23 +1321,23 @@ const questions = [
       "Year: 2017",
       "Episode: S01E07",
       "Episode title: Double Helix",
-      "Episode context: what forensic material links the killer to the victim's imprisoned father?",
-      "Answer focus: DNA",
-      "Source: TheTVDB aired-order synopsis"
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: In Chicago Justice's 'Double Helix', which type of evidence links the murder suspect to an imprisoned serial killer?",
+      "Answer focus: DNA"
     ]
   },
   {
     "id": "tv_34680",
     "category": "TV",
     "topic": "Chicago Justice",
-    "question": "In Chicago Justice (2017), what type of crime is the father imprisoned for?",
+    "question": "In Chicago Justice's 'Double Helix', whose father is the convicted serial murderer revealed by the DNA evidence?",
     "answers": [
-      "Serial murder",
-      "Bank fraud",
-      "Arson",
-      "Vehicle theft"
+      "The suspected killer's",
+      "The murdered woman's",
+      "The missing baby's",
+      "The prosecutor's"
     ],
-    "correctAnswer": "Serial murder",
+    "correctAnswer": "The suspected killer's",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1360,9 +1361,9 @@ const questions = [
       "Year: 2017",
       "Episode: S01E07",
       "Episode title: Double Helix",
-      "Episode context: what type of crime is the father imprisoned for?",
-      "Answer focus: Serial murder",
-      "Source: TheTVDB aired-order synopsis"
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: In Chicago Justice's 'Double Helix', whose father is the convicted serial murderer revealed by the DNA evidence?",
+      "Answer focus: The suspected killer's"
     ]
   },
   {
@@ -1809,14 +1810,14 @@ const questions = [
     "id": "tv_34692",
     "category": "TV",
     "topic": "Chicago Justice",
-    "question": "In Chicago Justice (2017), does the case ultimately centre on the trial of Abigail or another killer?",
+    "question": "In 'Comma' on Chicago Justice, whom does Peter Stone ultimately try to prosecute rather than simply accepting the original suspect?",
     "answers": [
-      "Another killer",
-      "Abigail alone",
-      "A police officer",
-      "The original Spanish judge"
+      "The actual killer",
+      "Abigail Chapman",
+      "The Spanish judge",
+      "The murdered student's professor"
     ],
-    "correctAnswer": "Another killer",
+    "correctAnswer": "The actual killer",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1840,9 +1841,9 @@ const questions = [
       "Year: 2017",
       "Episode: S01E09",
       "Episode title: Comma",
-      "Episode context: does the case ultimately centre on the trial of Abigail or another killer?",
-      "Answer focus: Another killer",
-      "Source: TheTVDB aired-order synopsis"
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: In 'Comma' on Chicago Justice, whom does Peter Stone ultimately try to prosecute rather than simply accepting the original suspect?",
+      "Answer focus: The actual killer"
     ]
   },
   {
@@ -2249,12 +2250,12 @@ const questions = [
     "id": "tv_34703",
     "category": "TV",
     "topic": "Chicago Justice",
-    "question": "In Chicago Justice (2017), what drug is discovered diluted in a shooting victim's vehicle?",
+    "question": "In 'Fool Me Twice' on Chicago Justice, which drug is found diluted in the shooting victim's car?",
     "answers": [
+      "Heroin",
       "Cocaine",
       "Cannabis",
-      "LSD",
-      "Heroin"
+      "Methamphetamine"
     ],
     "correctAnswer": "Heroin",
     "difficulty": "Medium",
@@ -2280,9 +2281,9 @@ const questions = [
       "Year: 2017",
       "Episode: S01E12",
       "Episode title: Fool Me Twice",
-      "Episode context: what drug is discovered diluted in a shooting victim's vehicle?",
-      "Answer focus: Heroin",
-      "Source: TheTVDB aired-order synopsis"
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: In 'Fool Me Twice' on Chicago Justice, which drug is found diluted in the shooting victim's car?",
+      "Answer focus: Heroin"
     ]
   },
   {
@@ -2369,14 +2370,14 @@ const questions = [
     "id": "tv_34706",
     "category": "TV",
     "topic": "Chicago Justice",
-    "question": "In Chicago Justice (2017), why does Stone hesitate to involve Laura Nagel?",
+    "question": "In 'Fool Me Twice' on Chicago Justice, what is Laura Nagel's connection to the shooting victim?",
     "answers": [
-      "She is on holiday",
-      "She is a juror",
-      "She has a close connection to the victim",
-      "She has become a defence lawyer"
+      "He was her confidential informant",
+      "He was her brother",
+      "He had prosecuted her",
+      "He was her former husband"
     ],
-    "correctAnswer": "She has a close connection to the victim",
+    "correctAnswer": "He was her confidential informant",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -2400,9 +2401,9 @@ const questions = [
       "Year: 2017",
       "Episode: S01E12",
       "Episode title: Fool Me Twice",
-      "Episode context: why does Stone hesitate to involve Laura Nagel?",
-      "Answer focus: She has a close connection to the victim",
-      "Source: TheTVDB aired-order synopsis"
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: In 'Fool Me Twice' on Chicago Justice, what is Laura Nagel's connection to the shooting victim?",
+      "Answer focus: He was her confidential informant"
     ]
   },
   {
@@ -3036,7 +3037,641 @@ const questions = [
       "Answer focus: NBC",
       "Source: NBC cast and series credits"
     ]
+  },
+  {
+    "id": "tv_34840",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In 'Fake' on Chicago Justice, what happens to the defendant's purported confession before Stone can use it at trial?",
+    "answers": [
+      "It is ruled inadmissible",
+      "The defendant repeats it under oath",
+      "It is confirmed by a second confession",
+      "It is lost in a fire"
+    ],
+    "correctAnswer": "It is ruled inadmissible",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Episode: S01E01",
+      "Episode title: Fake",
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: Episode synopsis: the confession is ruled inadmissible",
+      "Answer focus: It is ruled inadmissible"
+    ]
+  },
+  {
+    "id": "tv_34841",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In 'Uncertainty Principle', what use-of-force allegation puts Kevin Atwater at risk of a murder charge?",
+    "answers": [
+      "Excessive force during an arrest",
+      "Illegally firing a weapon at a crowd",
+      "Withholding medical records",
+      "Planting evidence at a fire"
+    ],
+    "correctAnswer": "Excessive force during an arrest",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Episode: S01E02",
+      "Episode title: Uncertainty Principle",
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: An accused drug dealer dies after an arrest",
+      "Answer focus: Excessive force during an arrest"
+    ]
+  },
+  {
+    "id": "tv_34842",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In 'See Something', who initially appears to be a suspect before the victim's friend is arrested?",
+    "answers": [
+      "A prejudiced fraternity member",
+      "An Alliance officer",
+      "An arson investigator",
+      "A police commissioner"
+    ],
+    "correctAnswer": "A prejudiced fraternity member",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Episode: S01E03",
+      "Episode title: See Something",
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: Investigators first pursue a fraternity member",
+      "Answer focus: A prejudiced fraternity member"
+    ]
+  },
+  {
+    "id": "tv_34843",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In 'Judge Not', what personal relationship links the eventual killer to the rape case involving the murdered judge?",
+    "answers": [
+      "He is the ex-husband of a rape victim",
+      "He is the judge's twin brother",
+      "He is the prosecutor's father",
+      "He is the convicted rapist's defence attorney"
+    ],
+    "correctAnswer": "He is the ex-husband of a rape victim",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Episode: S01E04",
+      "Episode title: Judge Not",
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: The victim's ex-husband is implicated",
+      "Answer focus: He is the ex-husband of a rape victim"
+    ]
+  },
+  {
+    "id": "tv_34844",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In 'Friendly Fire', what object does the murdered former Navy SEAL swallow to conceal classified information?",
+    "answers": [
+      "A flash drive",
+      "A microfilm capsule",
+      "A mobile telephone",
+      "A handwritten diary"
+    ],
+    "correctAnswer": "A flash drive",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Episode: S01E05",
+      "Episode title: Friendly Fire",
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: A flash drive is found at autopsy",
+      "Answer focus: A flash drive"
+    ]
+  },
+  {
+    "id": "tv_34845",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In 'Dead Meat', what injury helps reveal that Officer Tim Cody's supposed suicide was murder?",
+    "answers": [
+      "A broken neck",
+      "A gunshot wound",
+      "Broken ribs from a fall",
+      "A fractured ankle"
+    ],
+    "correctAnswer": "A broken neck",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Episode: S01E06",
+      "Episode title: Dead Meat",
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: Medical examiner uncovers broken neck",
+      "Answer focus: A broken neck"
+    ]
+  },
+  {
+    "id": "tv_34846",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In 'Dead Meat', which offence had the suspected killer previously been exonerated of?",
+    "answers": [
+      "Fatal arson",
+      "Kidnapping",
+      "Drug smuggling",
+      "Bank fraud"
+    ],
+    "correctAnswer": "Fatal arson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Episode: S01E06",
+      "Episode title: Dead Meat",
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: Previous exoneration for deadly arson",
+      "Answer focus: Fatal arson"
+    ]
+  },
+  {
+    "id": "tv_34847",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In 'Double Helix', what family issue is investigator Laura Nagel pursuing while the murder case unfolds?",
+    "answers": [
+      "Joint custody of her daughter",
+      "Adoption of her nephew",
+      "Her son's university admission",
+      "Her parents' divorce"
+    ],
+    "correctAnswer": "Joint custody of her daughter",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Episode: S01E07",
+      "Episode title: Double Helix",
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: Nagel files a custody petition",
+      "Answer focus: Joint custody of her daughter"
+    ]
+  },
+  {
+    "id": "tv_34848",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In 'Drill', what contentious tactic does Stone pursue to disrupt gangs communicating online?",
+    "answers": [
+      "Trying to shut off gang members' smartphones",
+      "Banning all television channels",
+      "Seizing journalists' laptops",
+      "Closing the city library"
+    ],
+    "correctAnswer": "Trying to shut off gang members' smartphones",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Episode: S01E10",
+      "Episode title: Drill",
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: Prosecutor targets gang use of mobile phones",
+      "Answer focus: Trying to shut off gang members' smartphones"
+    ]
+  },
+  {
+    "id": "tv_34849",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In 'AQD', which Chicago Fire paramedic does Antonio Dawson encounter during the investigation?",
+    "answers": [
+      "Sylvie Brett",
+      "Gabriela Dawson",
+      "April Sexton",
+      "Stella Kidd"
+    ],
+    "correctAnswer": "Sylvie Brett",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Episode: S01E11",
+      "Episode title: AQD",
+      "Source: TheTVDB aired-order synopsis",
+      "Episode context: Antonio sees Sylvie Brett",
+      "Answer focus: Sylvie Brett"
+    ]
+  },
+  {
+    "id": "tv_34850",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In Chicago Justice, which original Law & Order prosecutor is Peter Stone's father?",
+    "answers": [
+      "Ben Stone",
+      "Jack McCoy",
+      "Paul Robinette",
+      "Michael Cutter"
+    ],
+    "correctAnswer": "Ben Stone",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Series-wide cast and production",
+      "Source: NBC cast and series credits",
+      "Episode context: Series relationship: Peter is Ben Stone's son",
+      "Answer focus: Ben Stone"
+    ]
+  },
+  {
+    "id": "tv_34851",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "Before working as a prosecutor in Chicago Justice, Peter Stone had ambitions in which professional sport?",
+    "answers": [
+      "Baseball",
+      "Basketball",
+      "Ice hockey",
+      "American football"
+    ],
+    "correctAnswer": "Baseball",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Series-wide cast and production",
+      "Source: NBC cast and series credits",
+      "Episode context: Stone played in the Chicago Cubs organisation before injury",
+      "Answer focus: Baseball"
+    ]
+  },
+  {
+    "id": "tv_34852",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "In Chicago Justice, what earlier career did investigator Laura Nagel have?",
+    "answers": [
+      "Chicago police officer",
+      "Hospital surgeon",
+      "Newspaper editor",
+      "Professional athlete"
+    ],
+    "correctAnswer": "Chicago police officer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Series-wide cast and production",
+      "Source: NBC cast and series credits",
+      "Episode context: Nagel was a police officer before her investigator job",
+      "Answer focus: Chicago police officer"
+    ]
+  },
+  {
+    "id": "tv_34853",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "What personal difficulty is Laura Nagel trying to overcome in Chicago Justice?",
+    "answers": [
+      "A past addiction to prescription painkillers",
+      "A previous embezzlement conviction",
+      "An undisclosed secret marriage",
+      "An unpaid gambling debt"
+    ],
+    "correctAnswer": "A past addiction to prescription painkillers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Series-wide cast and production",
+      "Source: NBC cast and series credits",
+      "Episode context: Nagel became dependent on painkillers after an injury",
+      "Answer focus: A past addiction to prescription painkillers"
+    ]
+  },
+  {
+    "id": "tv_34854",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "Which Chicago police drama did Antonio Dawson work in before transferring to Chicago Justice?",
+    "answers": [
+      "Chicago P.D.",
+      "Chicago Fire",
+      "Chicago Med",
+      "Law & Order"
+    ],
+    "correctAnswer": "Chicago P.D.",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Series-wide cast and production",
+      "Source: NBC cast and series credits",
+      "Episode context: Antonio moves from Chicago P.D. to the State's Attorney office",
+      "Answer focus: Chicago P.D."
+    ]
+  },
+  {
+    "id": "tv_34855",
+    "category": "TV",
+    "topic": "Chicago Justice",
+    "question": "What is the title of the Chicago P.D. episode that introduced the Chicago Justice team as a backdoor pilot?",
+    "answers": [
+      "Justice",
+      "Deathtrap",
+      "Emotional Proximity",
+      "Fake"
+    ],
+    "correctAnswer": "Justice",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "NBC",
+      "2010s Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Police Procedural",
+      "Chicago",
+      "One Chicago Franchise",
+      "Programme: Chicago Justice (2017)",
+      "Format: Written Quiz",
+      "Series: 1",
+      "Broadcast year: 2017",
+      "Courtroom",
+      "Prosecutors",
+      "Criminal Investigation",
+      "Law and Justice",
+      "Year: 2017",
+      "Series-wide cast and production",
+      "Source: NBC cast and series credits",
+      "Episode context: Backdoor pilot title",
+      "Answer focus: Justice"
+    ]
   }
 ];
-if(questions.length!==76||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(34647+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<20)) throw Error('Pack 557 validation failed');
+if(questions.length!==92||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<20))throw Error('Pack 557 validation failed');
 module.exports = questions;
