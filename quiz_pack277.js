@@ -133,7 +133,7 @@ const questions = groups.flatMap(group =>
     const item = {
       id,
       category: 'Television',
-      question,
+      question: question.includes('24') ? question : 'In 24 (Season 1), ' + question.charAt(0).toLowerCase() + question.slice(1),
       answers,
       correctAnswer,
       difficulty,
@@ -149,11 +149,1250 @@ const questions = groups.flatMap(group =>
   })
 );
 
-const EXPECTED_COUNT = 78;
+
+// EDITORIAL AUDIT — 20 November 2026
+// Original questions tv_11095–tv_11172 retained.
+// New questions sourced from contemporary Season 1 episode recaps, focused on viewer-recognisable storylines.
+// Sources: https://dvd-fever.co.uk/lc24/ and https://www.tvmaze.com/shows/167/24/episodeguide
+// Editorial status: expanded, independent factual cross-check still in progress.
+const auditAdditions = [
+  {
+    "id": "tv_34993",
+    "category": "Television",
+    "question": "In 24 (Season 1), how does Mandy escape the passenger aircraft moments before it explodes?",
+    "answers": [
+      "By parachuting from the aircraft",
+      "By hiding in a luggage compartment",
+      "By transferring to a second aircraft",
+      "By landing it at an airfield"
+    ],
+    "correctAnswer": "By parachuting from the aircraft",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 01",
+      "Clock hour 00:00",
+      "Characters: Mandy",
+      "Storyline: Aircraft sabotage",
+      "Question focus: How does Mandy escape the passenger aircraft moments before it explodes?",
+      "Answer focus: By parachuting from the aircraft",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34994",
+    "category": "Television",
+    "question": "In 24 (Season 1), what piece of evidence initially makes Nina Myers appear to be the CTU mole?",
+    "answers": [
+      "A suitcase of cash",
+      "A compromised CTU key card",
+      "A signed confession",
+      "A stolen Secret Service badge"
+    ],
+    "correctAnswer": "A compromised CTU key card",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 02",
+      "Clock hour 01:00",
+      "Characters: Nina Myers",
+      "Storyline: Compromised key card",
+      "Question focus: What piece of evidence initially makes Nina Myers appear to be the CTU mole?",
+      "Answer focus: A compromised CTU key card",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34995",
+    "category": "Television",
+    "question": "In 24 (Season 1), why does Jack conclude that Nina's apparent involvement in the conspiracy has been faked?",
+    "answers": [
+      "Her alleged confession was written after her death",
+      "A witness admits to forging her signature",
+      "The incriminating data was created while she was away with him",
+      "The suspect's fingerprints belong to another agent"
+    ],
+    "correctAnswer": "The incriminating data was created while she was away with him",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 03",
+      "Clock hour 02:00",
+      "Characters: Jack Bauer;Nina Myers",
+      "Storyline: Nina suspicion",
+      "Question focus: Why does Jack conclude that Nina's apparent involvement in the conspiracy has been faked?",
+      "Answer focus: The incriminating data was created while she was away with him",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34996",
+    "category": "Television",
+    "question": "In 24 (Season 1), what happens to Janet York during her attempt to escape the kidnappers?",
+    "answers": [
+      "She falls from a balcony",
+      "She is arrested at the border",
+      "She escapes on a train",
+      "She is struck by a car"
+    ],
+    "correctAnswer": "She is struck by a car",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 03",
+      "Clock hour 02:00",
+      "Characters: Janet York",
+      "Storyline: Kidnapping escape",
+      "Question focus: What happens to Janet York during her attempt to escape the kidnappers?",
+      "Answer focus: She is struck by a car",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34997",
+    "category": "Television",
+    "question": "In 24 (Season 1), what order does George Mason give at CTU after learning Jack has been operating secretly?",
+    "answers": [
+      "Lock down the building",
+      "Evacuate the entire agency",
+      "Close the Los Angeles office permanently",
+      "Transfer all its agents to Washington"
+    ],
+    "correctAnswer": "Lock down the building",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 04",
+      "Clock hour 03:00",
+      "Characters: George Mason",
+      "Storyline: CTU lockdown",
+      "Question focus: What order does George Mason give at CTU after learning Jack has been operating secretly?",
+      "Answer focus: Lock down the building",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34998",
+    "category": "Television",
+    "question": "In 24 (Season 1), which kidnapper does Ira Gaines kill after the bungled attempt to recapture Kim and Janet?",
+    "answers": [
+      "Rick Allen",
+      "Dan Mounts",
+      "Kevin Carroll",
+      "Jonathan Matijevich"
+    ],
+    "correctAnswer": "Dan Mounts",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 05",
+      "Clock hour 04:00",
+      "Characters: Ira Gaines;Dan Mounts",
+      "Storyline: Consequence of failed kidnapping",
+      "Question focus: Which kidnapper does Ira Gaines kill after the bungled attempt to recapture Kim and Janet?",
+      "Answer focus: Dan Mounts",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34999",
+    "category": "Television",
+    "question": "In 24 (Season 1), what is discovered about the real Alan York after a corpse is examined?",
+    "answers": [
+      "He was secretly working at CTU",
+      "He had travelled to Washington",
+      "He was already murdered and replaced by an impostor",
+      "He was related to Senator Palmer"
+    ],
+    "correctAnswer": "He was already murdered and replaced by an impostor",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 06",
+      "Clock hour 05:00",
+      "Characters: Alan York;Kevin Carroll",
+      "Storyline: Impostor reveal",
+      "Question focus: What is discovered about the real Alan York after a corpse is examined?",
+      "Answer focus: He was already murdered and replaced by an impostor",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35000",
+    "category": "Television",
+    "question": "In 24 (Season 1), how does Jack secretly prevent Nina being killed when Gaines orders him to shoot her?",
+    "answers": [
+      "He uses blank cartridges",
+      "He hides her behind bulletproof glass",
+      "He fires a warning shot instead",
+      "He protects her with a bulletproof vest"
+    ],
+    "correctAnswer": "He protects her with a bulletproof vest",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 07",
+      "Clock hour 06:00",
+      "Characters: Jack Bauer;Nina Myers",
+      "Storyline: Apparent execution",
+      "Question focus: How does Jack secretly prevent Nina being killed when Gaines orders him to shoot her?",
+      "Answer focus: He protects her with a bulletproof vest",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35001",
+    "category": "Television",
+    "question": "In 24 (Season 1), what does Gaines force Jack to do with the CTU card being analysed by Milo?",
+    "answers": [
+      "Swap it for a substitute card",
+      "Give it to Senator Palmer",
+      "Destroy the card's encryption code",
+      "Take it to the FBI office"
+    ],
+    "correctAnswer": "Swap it for a substitute card",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 07",
+      "Clock hour 06:00",
+      "Characters: Ira Gaines;Jack Bauer;Milo Pressman",
+      "Storyline: Evidence switch",
+      "Question focus: What does Gaines force Jack to do with the CTU card being analysed by Milo?",
+      "Answer focus: Swap it for a substitute card",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35002",
+    "category": "Television",
+    "question": "In 24 (Season 1), what does Jack have to do to the rifle used in the planned assassination so he will be framed?",
+    "answers": [
+      "Sell it to a campaign aide",
+      "Assemble it and leave his fingerprints",
+      "Fire it at a police vehicle",
+      "Hide it in Palmer's office"
+    ],
+    "correctAnswer": "Assemble it and leave his fingerprints",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 08",
+      "Clock hour 07:00",
+      "Characters: Jack Bauer;Jonathan Matijevich",
+      "Storyline: Assassination framing",
+      "Question focus: What does Jack have to do to the rifle used in the planned assassination so he will be framed?",
+      "Answer focus: Assemble it and leave his fingerprints",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35003",
+    "category": "Television",
+    "question": "In 24 (Season 1), how do Nina and Tony catch Jamey Farrell communicating secretly with Gaines?",
+    "answers": [
+      "They find her hiding at the airport",
+      "They receive a letter from a senator",
+      "They follow her communications into the CTU restrooms",
+      "They trace a message from Jack's home"
+    ],
+    "correctAnswer": "They follow her communications into the CTU restrooms",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 08",
+      "Clock hour 07:00",
+      "Characters: Nina Myers;Tony Almeida;Jamey Farrell",
+      "Storyline: First mole exposure",
+      "Question focus: How do Nina and Tony catch Jamey Farrell communicating secretly with Gaines?",
+      "Answer focus: They follow her communications into the CTU restrooms",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35004",
+    "category": "Television",
+    "question": "In 24 (Season 1), how does Teri manage to contact CTU from Ira Gaines's compound?",
+    "answers": [
+      "She borrows a police radio",
+      "She sends an email from Gaines's laptop",
+      "She steals a satellite transmitter",
+      "She secretly uses a guard's mobile phone"
+    ],
+    "correctAnswer": "She secretly uses a guard's mobile phone",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 09",
+      "Clock hour 08:00",
+      "Characters: Teri Bauer",
+      "Storyline: Hostage phone call",
+      "Question focus: How does Teri manage to contact CTU from Ira Gaines's compound?",
+      "Answer focus: She secretly uses a guard's mobile phone",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35005",
+    "category": "Television",
+    "question": "In 24 (Season 1), what is CTU initially led to believe about Jamey Farrell's injuries after she is exposed?",
+    "answers": [
+      "She deliberately slashed her wrists",
+      "She fell down a staircase",
+      "She was wounded during an arrest",
+      "She was poisoned at a campaign dinner"
+    ],
+    "correctAnswer": "She deliberately slashed her wrists",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 09",
+      "Clock hour 08:00",
+      "Characters: Jamey Farrell",
+      "Storyline: Staged suicide",
+      "Question focus: What is CTU initially led to believe about Jamey Farrell's injuries after she is exposed?",
+      "Answer focus: She deliberately slashed her wrists",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35006",
+    "category": "Television",
+    "question": "In 24 (Season 1), what financial connection links Ted Cofell to the mercenary Ira Gaines?",
+    "answers": [
+      "They own a sports franchise together",
+      "Transfers to Gaines's Swiss bank account",
+      "They share a legal practice",
+      "They are business partners in a hotel"
+    ],
+    "correctAnswer": "Transfers to Gaines's Swiss bank account",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 10",
+      "Clock hour 09:00",
+      "Characters: Ted Cofell;Ira Gaines",
+      "Storyline: Money trail",
+      "Question focus: What financial connection links Ted Cofell to the mercenary Ira Gaines?",
+      "Answer focus: Transfers to Gaines's Swiss bank account",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35007",
+    "category": "Television",
+    "question": "In 24 (Season 1), which language does Ted Cofell suddenly speak during Jack's interrogation, hinting at the Balkan connection?",
+    "answers": [
+      "French",
+      "Italian",
+      "Serbian",
+      "Russian"
+    ],
+    "correctAnswer": "Serbian",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 11",
+      "Clock hour 10:00",
+      "Characters: Ted Cofell;Jack Bauer",
+      "Storyline: Balkan conspiracy",
+      "Question focus: Which language does Ted Cofell suddenly speak during Jack's interrogation, hinting at the Balkan connection?",
+      "Answer focus: Serbian",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35008",
+    "category": "Television",
+    "question": "In 24 (Season 1), how does Rick Allen assist the Bauer family's escape from Gaines's compound?",
+    "answers": [
+      "He pilots a rescue helicopter",
+      "He bribes the CTU gatekeeper",
+      "He disguises them as television reporters",
+      "He uses a van to help get them out"
+    ],
+    "correctAnswer": "He uses a van to help get them out",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 12",
+      "Clock hour 11:00",
+      "Characters: Rick Allen;Jack Bauer",
+      "Storyline: Rescue attempt",
+      "Question focus: How does Rick Allen assist the Bauer family's escape from Gaines's compound?",
+      "Answer focus: He uses a van to help get them out",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35009",
+    "category": "Television",
+    "question": "In 24 (Season 1), what happens to Rick as he flees with Jack while Gaines's men fire at them?",
+    "answers": [
+      "He is shot in the arm",
+      "He is arrested by CTU",
+      "He falls from a bridge",
+      "He is fatally stabbed"
+    ],
+    "correctAnswer": "He is shot in the arm",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 12",
+      "Clock hour 11:00",
+      "Characters: Rick Allen;Jack Bauer",
+      "Storyline: Escape under fire",
+      "Question focus: What happens to Rick as he flees with Jack while Gaines's men fire at them?",
+      "Answer focus: He is shot in the arm",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35010",
+    "category": "Television",
+    "question": "In 24 (Season 1), what do CTU agents discover in the bank account of Jamey Farrell's mother?",
+    "answers": [
+      "Payments from Senator Palmer's campaign",
+      "Money deposited to provide for Jamey's child",
+      "A large inheritance from Ira Gaines",
+      "Funds belonging to Jack Bauer"
+    ],
+    "correctAnswer": "Money deposited to provide for Jamey's child",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 13",
+      "Clock hour 12:00",
+      "Characters: Jamey Farrell;Tony Almeida",
+      "Storyline: Mole payment trail",
+      "Question focus: What do CTU agents discover in the bank account of Jamey Farrell's mother?",
+      "Answer focus: Money deposited to provide for Jamey's child",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35011",
+    "category": "Television",
+    "question": "In 24 (Season 1), how does Jack distract Ira Gaines during their final armed confrontation?",
+    "answers": [
+      "He launches a smoke bomb",
+      "He throws a flare into the trees",
+      "He uses a shiny object to reflect light into Gaines's eyes",
+      "He triggers an alarm at the compound"
+    ],
+    "correctAnswer": "He uses a shiny object to reflect light into Gaines's eyes",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 13",
+      "Clock hour 12:00",
+      "Characters: Jack Bauer;Ira Gaines",
+      "Storyline: Gaines final confrontation",
+      "Question focus: How does Jack distract Ira Gaines during their final armed confrontation?",
+      "Answer focus: He uses a shiny object to reflect light into Gaines's eyes",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35012",
+    "category": "Television",
+    "question": "In 24 (Season 1), what unexpected news does Teri discover after taking a test at the CTU safe house?",
+    "answers": [
+      "She has lost her hearing",
+      "She has been poisoned",
+      "She has a serious infection",
+      "She is pregnant"
+    ],
+    "correctAnswer": "She is pregnant",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 15",
+      "Clock hour 14:00",
+      "Characters: Teri Bauer",
+      "Storyline: Pregnancy",
+      "Question focus: What unexpected news does Teri discover after taking a test at the CTU safe house?",
+      "Answer focus: She is pregnant",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35013",
+    "category": "Television",
+    "question": "In 24 (Season 1), which revelation makes Teri reconsider telling Jack about her pregnancy immediately?",
+    "answers": [
+      "Jack had been romantically involved with Nina during their separation",
+      "Jack has resigned from CTU",
+      "Kim has applied to join the police",
+      "Palmer knew about the kidnapping in advance"
+    ],
+    "correctAnswer": "Jack had been romantically involved with Nina during their separation",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 15",
+      "Clock hour 14:00",
+      "Characters: Teri Bauer;Nina Myers",
+      "Storyline: Marriage and trust",
+      "Question focus: Which revelation makes Teri reconsider telling Jack about her pregnancy immediately?",
+      "Answer focus: Jack had been romantically involved with Nina during their separation",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35014",
+    "category": "Television",
+    "question": "In 24 (Season 1), what happens to Operation Nightfall veteran Robert Ellis while helping investigate the Drazen conspiracy?",
+    "answers": [
+      "He is recruited to the Secret Service",
+      "He is strangled to death",
+      "He is kidnapped by Rick Allen",
+      "He is injured in a plane crash"
+    ],
+    "correctAnswer": "He is strangled to death",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 15",
+      "Clock hour 14:00",
+      "Characters: Robert Ellis",
+      "Storyline: Nightfall investigators",
+      "Question focus: What happens to Operation Nightfall veteran Robert Ellis while helping investigate the Drazen conspiracy?",
+      "Answer focus: He is strangled to death",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35015",
+    "category": "Television",
+    "question": "In 24 (Season 1), how does Elizabeth Nash discover that the man she has been dating is a Drazen assassin?",
+    "answers": [
+      "He confesses while under arrest",
+      "An undercover agent sends her a letter",
+      "She recognises his photograph during a security briefing",
+      "His name appears in a television advert"
+    ],
+    "correctAnswer": "She recognises his photograph during a security briefing",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 16",
+      "Clock hour 15:00",
+      "Characters: Elizabeth Nash;Alexis Drazen",
+      "Storyline: Romantic betrayal",
+      "Question focus: How does Elizabeth Nash discover that the man she has been dating is a Drazen assassin?",
+      "Answer focus: She recognises his photograph during a security briefing",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35016",
+    "category": "Television",
+    "question": "In 24 (Season 1), what is Elizabeth Nash asked to plant on Alexis Drazen to help CTU track him?",
+    "answers": [
+      "A miniature explosive",
+      "A concealed microphone in a tie",
+      "A drug-laced tablet",
+      "A tracking device"
+    ],
+    "correctAnswer": "A tracking device",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 16",
+      "Clock hour 15:00",
+      "Characters: Elizabeth Nash;Alexis Drazen",
+      "Storyline: Tracking operation",
+      "Question focus: What is Elizabeth Nash asked to plant on Alexis Drazen to help CTU track him?",
+      "Answer focus: A tracking device",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35017",
+    "category": "Television",
+    "question": "In 24 (Season 1), what does Elizabeth refuse to do once she has planted CTU's device on Alexis?",
+    "answers": [
+      "Leave him as instructed when Jack calls",
+      "Identify him to Senator Palmer",
+      "Wear the hotel-room microphone",
+      "Hand over her security badge"
+    ],
+    "correctAnswer": "Leave him as instructed when Jack calls",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 17",
+      "Clock hour 16:00",
+      "Characters: Elizabeth Nash;Alexis Drazen",
+      "Storyline: Operation goes wrong",
+      "Question focus: What does Elizabeth refuse to do once she has planted CTU's device on Alexis?",
+      "Answer focus: Leave him as instructed when Jack calls",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35018",
+    "category": "Television",
+    "question": "In 24 (Season 1), how does David Palmer expose Sherry's willingness to suppress damaging evidence?",
+    "answers": [
+      "He obtains her confession at gunpoint",
+      "He tricks her with a decoy copy of a recording",
+      "He secretly sends her to meet Gaines",
+      "He finds an unsigned bank loan"
+    ],
+    "correctAnswer": "He tricks her with a decoy copy of a recording",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 18",
+      "Clock hour 17:00",
+      "Characters: David Palmer;Sherry Palmer",
+      "Storyline: Political cover-up",
+      "Question focus: How does David Palmer expose Sherry's willingness to suppress damaging evidence?",
+      "Answer focus: He tricks her with a decoy copy of a recording",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35019",
+    "category": "Television",
+    "question": "In 24 (Season 1), why does CTU sniper Teddy Hanlin jeopardise Jack's attempt to question a suspect?",
+    "answers": [
+      "He deserts his post",
+      "He gives the suspect his rifle",
+      "He fires despite Jack's order not to shoot",
+      "He arrests Nina during the operation"
+    ],
+    "correctAnswer": "He fires despite Jack's order not to shoot",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 18",
+      "Clock hour 17:00",
+      "Characters: Teddy Hanlin;Jack Bauer",
+      "Storyline: Disobeyed sniper order",
+      "Question focus: Why does CTU sniper Teddy Hanlin jeopardise Jack's attempt to question a suspect?",
+      "Answer focus: He fires despite Jack's order not to shoot",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35020",
+    "category": "Television",
+    "question": "In 24 (Season 1), what shocking truth does Jack discover when he sees the prisoner held at the secret detention centre?",
+    "answers": [
+      "Keith Palmer has been arrested",
+      "Ira Gaines is being held there",
+      "Robert Ellis is working for Drazen",
+      "Victor Drazen is alive"
+    ],
+    "correctAnswer": "Victor Drazen is alive",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 20",
+      "Clock hour 19:00",
+      "Characters: Jack Bauer;Victor Drazen",
+      "Storyline: Secret prisoner",
+      "Question focus: What shocking truth does Jack discover when he sees the prisoner held at the secret detention centre?",
+      "Answer focus: Victor Drazen is alive",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35021",
+    "category": "Television",
+    "question": "In 24 (Season 1), what happens to detention-centre official Mark DeSalvo during Andre Drazen's rescue operation?",
+    "answers": [
+      "Andre shoots him despite Jack's surrender",
+      "He escapes with the CTU team",
+      "He fakes his own death",
+      "He leaves with Senator Palmer"
+    ],
+    "correctAnswer": "Andre shoots him despite Jack's surrender",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 21",
+      "Clock hour 20:00",
+      "Characters: Mark DeSalvo;Andre Drazen",
+      "Storyline: Detention escape",
+      "Question focus: What happens to detention-centre official Mark DeSalvo during Andre Drazen's rescue operation?",
+      "Answer focus: Andre shoots him despite Jack's surrender",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35022",
+    "category": "Television",
+    "question": "In 24 (Season 1), what happens to Kim as the police are taking her back to CTU?",
+    "answers": [
+      "She escapes and joins Rick",
+      "She is abducted again by the Drazen operation",
+      "She is injured in a plane crash",
+      "She is detained by the Secret Service"
+    ],
+    "correctAnswer": "She is abducted again by the Drazen operation",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 21",
+      "Clock hour 20:00",
+      "Characters: Kim Bauer",
+      "Storyline: Second abduction",
+      "Question focus: What happens to Kim as the police are taking her back to CTU?",
+      "Answer focus: She is abducted again by the Drazen operation",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35023",
+    "category": "Television",
+    "question": "In 24 (Season 1), why does George Mason defy Ryan Chappelle's instructions and authorise a prisoner exchange?",
+    "answers": [
+      "To obtain the formula for a nerve agent",
+      "To exchange Nina for a reporter",
+      "To rescue Jack by trading him for Alexis Drazen",
+      "To recover the aircraft's flight recorder"
+    ],
+    "correctAnswer": "To rescue Jack by trading him for Alexis Drazen",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 22",
+      "Clock hour 21:00",
+      "Characters: George Mason;Jack Bauer;Alexis Drazen",
+      "Storyline: Prisoner exchange",
+      "Question focus: Why does George Mason defy Ryan Chappelle's instructions and authorise a prisoner exchange?",
+      "Answer focus: To rescue Jack by trading him for Alexis Drazen",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35024",
+    "category": "Television",
+    "question": "In 24 (Season 1), how does Victor Drazen respond when Jack seizes his host's daughter as a hostage?",
+    "answers": [
+      "He releases Jack immediately",
+      "He calls the police for help",
+      "He offers Jack a helicopter",
+      "He shoots the daughter himself"
+    ],
+    "correctAnswer": "He shoots the daughter himself",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 22",
+      "Clock hour 21:00",
+      "Characters: Victor Drazen;Jack Bauer",
+      "Storyline: Drazen ruthlessness",
+      "Question focus: How does Victor Drazen respond when Jack seizes his host's daughter as a hostage?",
+      "Answer focus: He shoots the daughter himself",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35025",
+    "category": "Television",
+    "question": "In 24 (Season 1), what concealed device almost kills David Palmer during his telephone conversation with Victor Drazen?",
+    "answers": [
+      "A bomb inside the telephone",
+      "A poisoned earpiece",
+      "An electric-shock transmitter",
+      "A tracking beacon"
+    ],
+    "correctAnswer": "A bomb inside the telephone",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 23",
+      "Clock hour 22:00",
+      "Characters: David Palmer;Victor Drazen",
+      "Storyline: Explosive telephone",
+      "Question focus: What concealed device almost kills David Palmer during his telephone conversation with Victor Drazen?",
+      "Answer focus: A bomb inside the telephone",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35026",
+    "category": "Television",
+    "question": "In 24 (Season 1), what does Jack do to prevent the explosive telephone from killing Palmer?",
+    "answers": [
+      "He removes its battery",
+      "He throws it away just before it detonates",
+      "He cuts a telephone cable in the wall",
+      "He disconnects a wired timer"
+    ],
+    "correctAnswer": "He throws it away just before it detonates",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 23",
+      "Clock hour 22:00",
+      "Characters: Jack Bauer;David Palmer",
+      "Storyline: Palmer survives",
+      "Question focus: What does Jack do to prevent the explosive telephone from killing Palmer?",
+      "Answer focus: He throws it away just before it detonates",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35027",
+    "category": "Television",
+    "question": "In 24 (Season 1), what does Teri finally tell Jack during a telephone call late on Day 1?",
+    "answers": [
+      "She has decided to leave Los Angeles",
+      "She has accepted a job at CTU",
+      "She is expecting another baby",
+      "She has adopted Kim's friend Janet"
+    ],
+    "correctAnswer": "She is expecting another baby",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 23",
+      "Clock hour 22:00",
+      "Characters: Teri Bauer;Jack Bauer",
+      "Storyline: Pregnancy disclosed",
+      "Question focus: What does Teri finally tell Jack during a telephone call late on Day 1?",
+      "Answer focus: She is expecting another baby",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35028",
+    "category": "Television",
+    "question": "In 24 (Season 1), how does Kim escape the Drazens at the harbour after throwing hot coffee at a guard?",
+    "answers": [
+      "She steals their speedboat",
+      "She hides in a shipping container",
+      "She is rescued by helicopter",
+      "She jumps into the water and hides beneath a dock"
+    ],
+    "correctAnswer": "She jumps into the water and hides beneath a dock",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 23",
+      "Clock hour 22:00",
+      "Characters: Kim Bauer",
+      "Storyline: Harbour escape",
+      "Question focus: How does Kim escape the Drazens at the harbour after throwing hot coffee at a guard?",
+      "Answer focus: She jumps into the water and hides beneath a dock",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35029",
+    "category": "Television",
+    "question": "In 24 (Season 1), which name does Nina use when secretly reporting to the Drazen family?",
+    "answers": [
+      "Yelena",
+      "Mandy",
+      "Maureen",
+      "Patty"
+    ],
+    "correctAnswer": "Yelena",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 23",
+      "Clock hour 22:00",
+      "Characters: Nina Myers",
+      "Storyline: Mole alias",
+      "Question focus: Which name does Nina use when secretly reporting to the Drazen family?",
+      "Answer focus: Yelena",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35030",
+    "category": "Television",
+    "question": "In 24 (Season 1), what footage proves that Jamey Farrell did not take her own life?",
+    "answers": [
+      "News footage of the campaign rally",
+      "CCTV showing Nina staging Jamey's death as a suicide",
+      "Video from the exploded aircraft",
+      "A recording of Gaines's telephone call"
+    ],
+    "correctAnswer": "CCTV showing Nina staging Jamey's death as a suicide",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 24",
+      "Clock hour 23:00",
+      "Characters: Jamey Farrell;Nina Myers;Jack Bauer",
+      "Storyline: Mole uncovered",
+      "Question focus: What footage proves that Jamey Farrell did not take her own life?",
+      "Answer focus: CCTV showing Nina staging Jamey's death as a suicide",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35031",
+    "category": "Television",
+    "question": "In 24 (Season 1), how does Jack enter the harbour warehouse for his final confrontation with the Drazens?",
+    "answers": [
+      "He arrives disguised as a dockworker",
+      "He enters through a drain",
+      "He crashes a van through it while firing",
+      "He parachutes onto the roof"
+    ],
+    "correctAnswer": "He crashes a van through it while firing",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 24",
+      "Clock hour 23:00",
+      "Characters: Jack Bauer;Andre Drazen",
+      "Storyline: Final raid",
+      "Question focus: How does Jack enter the harbour warehouse for his final confrontation with the Drazens?",
+      "Answer focus: He crashes a van through it while firing",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35032",
+    "category": "Television",
+    "question": "In 24 (Season 1), why do George Mason and other agents prevent Jack from killing Nina after capturing her?",
+    "answers": [
+      "She has already been pardoned",
+      "She is secretly working undercover for Jack",
+      "She has diplomatic immunity",
+      "She may identify those behind the conspiracy"
+    ],
+    "correctAnswer": "She may identify those behind the conspiracy",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 24",
+      "Clock hour 23:00",
+      "Characters: George Mason;Nina Myers;Jack Bauer",
+      "Storyline: Arrest of traitor",
+      "Question focus: Why do George Mason and other agents prevent Jack from killing Nina after capturing her?",
+      "Answer focus: She may identify those behind the conspiracy",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35033",
+    "category": "Television",
+    "question": "In 24 (Season 1), what decision does David Palmer make about his marriage to Sherry by the end of Day 1?",
+    "answers": [
+      "He ends their marriage",
+      "He announces a joint presidential campaign",
+      "He agrees to renew their vows",
+      "He moves to Europe with her"
+    ],
+    "correctAnswer": "He ends their marriage",
+    "difficulty": "Medium",
+    "tags": [
+      "American Television",
+      "24",
+      "24 Season 1",
+      "24 Day 1",
+      "Action Drama",
+      "Crime Thriller",
+      "Episode 24",
+      "Clock hour 23:00",
+      "Characters: David Palmer;Sherry Palmer",
+      "Storyline: Marriage collapse",
+      "Question focus: What decision does David Palmer make about his marriage to Sherry by the end of Day 1?",
+      "Answer focus: He ends their marriage",
+      "2001-2002",
+      "Written question"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditAdditions);
+const EXPECTED_COUNT = 119;
 if (questions.length !== EXPECTED_COUNT) {
   throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
 }
-if (questions[0].id !== 'tv_11095' || questions[questions.length - 1].id !== 'tv_11172') {
+if (questions[0].id !== 'tv_11095' || questions[77].id !== 'tv_11172' || questions[questions.length - 1].id !== 'tv_35033') {
   throw new Error('Unexpected question ID range');
 }
 if (new Set(questions.map(q => q.id)).size !== questions.length) {
