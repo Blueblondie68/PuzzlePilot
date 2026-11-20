@@ -50,7 +50,7 @@ const questions = [
     "id": "tv_34724",
     "category": "TV",
     "topic": "Firefly",
-    "question": "In Firefly, which option matches 'Mal's side during the war'?",
+    "question": "Which side did Malcolm Reynolds fight for during the Unification War?",
     "answers": [
       "The Alliance",
       "The Independents",
@@ -90,7 +90,7 @@ const questions = [
     "id": "tv_34725",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these correctly identifies 'Mal's spaceship' in Firefly?",
+    "question": "What is the name of Malcolm Reynolds's spacecraft?",
     "answers": [
       "Icarus",
       "Osiris",
@@ -130,7 +130,7 @@ const questions = [
     "id": "tv_34726",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which answer fits the clue 'Serenity's ship class' in Firefly?",
+    "question": "To which class of spaceship does Serenity belong?",
     "answers": [
       "Cruiser-class",
       "Raptor-class",
@@ -210,7 +210,7 @@ const questions = [
     "id": "tv_34728",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these correctly identifies 'Simon Tam's sister' in Firefly?",
+    "question": "Who is Simon Tam's sister?",
     "answers": [
       "Kaylee Frye",
       "River Tam",
@@ -450,7 +450,7 @@ const questions = [
     "id": "tv_34734",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these correctly identifies 'crime boss who orders a train robbery' in Firefly?",
+    "question": "Which crime boss hires Serenity's crew to rob a train?",
     "answers": [
       "Badger",
       "Adelai Niska",
@@ -850,7 +850,7 @@ const questions = [
     "id": "tv_34744",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which answer fits the clue 'which fugitives hide from the inspectors' in Firefly?",
+    "question": "Which two fugitives hide from the Alliance inspectors?",
     "answers": [
       "Kaylee and Jayne",
       "Wash and Zoe",
@@ -1250,7 +1250,7 @@ const questions = [
     "id": "tv_34754",
     "category": "TV",
     "topic": "Firefly",
-    "question": "In Firefly, which option matches 'planet hosting the formal party'?",
+    "question": "On which planet does the formal ball in 'Shindig' take place?",
     "answers": [
       "Ariel",
       "Miranda",
@@ -1370,7 +1370,7 @@ const questions = [
     "id": "tv_34757",
     "category": "TV",
     "topic": "Firefly",
-    "question": "In Firefly, which option matches 'accusation made against River'?",
+    "question": "What accusation do the villagers make against River Tam in 'Safe'?",
     "answers": [
       "Piracy",
       "Smuggling",
@@ -1490,7 +1490,7 @@ const questions = [
     "id": "tv_34760",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which description best matches the reason an Alliance officer helps the injured Book?",
+    "question": "Why does an Alliance officer arrange help for the wounded Shepherd Book?",
     "answers": [
       "Simon pays a bribe",
       "He recognises Book's identification",
@@ -1530,7 +1530,7 @@ const questions = [
     "id": "tv_34761",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these correctly identifies 'how Mal describes Simon and River after rescuing them' in Firefly?",
+    "question": "What does Mal tell Simon and River about their place aboard Serenity?",
     "answers": [
       "Paying guests",
       "Alliance agents",
@@ -1730,7 +1730,7 @@ const questions = [
     "id": "tv_34766",
     "category": "TV",
     "topic": "Firefly",
-    "question": "In Firefly, which option matches 'Saffron's real occupation'?",
+    "question": "What is Saffron's true occupation?",
     "answers": [
       "Alliance admiral",
       "Con artist",
@@ -2730,7 +2730,7 @@ const questions = [
     "id": "tv_34791",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these correctly identifies 'two crew members captured by Niska' in Firefly?",
+    "question": "Which two Serenity crew members are captured by Adelai Niska in 'War Stories'?",
     "answers": [
       "Zoe and Jayne",
       "Mal and Wash",
@@ -2810,7 +2810,7 @@ const questions = [
     "id": "tv_34793",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which description best matches the experience that links Mal and Zoe?",
+    "question": "What shared experience binds Malcolm Reynolds and Zoe Washburne?",
     "answers": [
       "Companion training",
       "Childhood as siblings",
@@ -2890,7 +2890,7 @@ const questions = [
     "id": "tv_34795",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which answer fits the clue 'whom Zoe chooses to ransom' in Firefly?",
+    "question": "Which prisoner does Zoe choose to ransom from Niska?",
     "answers": [
       "Mal",
       "Wash",
@@ -2930,7 +2930,7 @@ const questions = [
     "id": "tv_34796",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which description best matches the response to Mal's continued captivity?",
+    "question": "How does Serenity's crew respond when Mal remains Niska's prisoner?",
     "answers": [
       "They sell Serenity",
       "They seek a court order",
@@ -3010,7 +3010,7 @@ const questions = [
     "id": "tv_34798",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which answer fits the clue 'returning con artist who proposes an antique theft' in Firefly?",
+    "question": "Which returning con artist persuades Mal to steal an antique?",
     "answers": [
       "Patience",
       "Nandi",
@@ -3050,7 +3050,7 @@ const questions = [
     "id": "tv_34799",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which description best matches the item Mal is enlisted to steal?",
+    "question": "What type of antique is Mal recruited to steal in 'Trash'?",
     "answers": [
       "Painting",
       "Medical scanner",
@@ -3530,7 +3530,7 @@ const questions = [
     "id": "tv_34811",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which description best matches the final favour Mal and Zoe perform for Tracey?",
+    "question": "What do Mal and Zoe ultimately do for their former comrade Tracey?",
     "answers": [
       "Arrange an Alliance state funeral",
       "Sell his equipment",
@@ -3690,7 +3690,7 @@ const questions = [
     "id": "tv_34815",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which of these correctly identifies 'pregnant woman who may lose her baby' in Firefly?",
+    "question": "Who is the pregnant worker threatened by Rance Burgess in 'Heart of Gold'?",
     "answers": [
       "Saffron",
       "River",
@@ -3770,7 +3770,7 @@ const questions = [
     "id": "tv_34817",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which description best matches the romantic incident that hurts Inara?",
+    "question": "What happens between Mal and Nandi that upsets Inara?",
     "answers": [
       "Mal marries Saffron again",
       "Mal sleeps with Nandi",
@@ -3850,7 +3850,7 @@ const questions = [
     "id": "tv_34819",
     "category": "TV",
     "topic": "Firefly",
-    "question": "Which answer fits the clue 'bounty hunter who boards Serenity' in Firefly?",
+    "question": "Which bounty hunter boards Serenity in 'Objects in Space'?",
     "answers": [
       "Adelai Niska",
       "Jubal Early",
