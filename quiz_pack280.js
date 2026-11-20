@@ -467,14 +467,14 @@ const auditAdditions = [
   {
     "id": "tv_35138",
     "category": "Television",
-    "question": "In 24 (Season 4), whom does CTU wrongly interrogate as a suspected mole after Marianne shifts suspicion?",
+    "question": "In 24 (Season 4), how does Erin Driscoll respond after Marianne's deception makes Sarah Gavin look like the CTU mole?",
     "answers": [
-      "Erin Driscoll",
-      "Chloe O'Brian",
-      "Sarah Gavin",
-      "Audrey Raines"
+      "She orders Sarah's immediate release",
+      "She sends Sarah to investigate Marwan",
+      "She authorises harsh interrogation of Sarah",
+      "She asks Sarah to direct the reactor response"
     ],
-    "correctAnswer": "Sarah Gavin",
+    "correctAnswer": "She authorises harsh interrogation of Sarah",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -487,11 +487,11 @@ const auditAdditions = [
       "Episode 08",
       "Day 4 hour 14:00",
       "Characters: Marianne Taylor;Sarah Gavin",
-      "Storyline: False mole accusation",
-      "Question focus: Whom does CTU wrongly interrogate as a suspected mole after Marianne shifts suspicion?",
-      "Answer focus: Sarah Gavin",
       "2005",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: How does Erin Driscoll respond after Marianne's deception makes Sarah Gavin look like the CTU mole?",
+      "Answer focus: She authorises harsh interrogation of Sarah",
+      "Storyline: Sarah wrongly interrogated"
     ]
   },
   {
@@ -527,14 +527,14 @@ const auditAdditions = [
   {
     "id": "tv_35140",
     "category": "Television",
-    "question": "In 24 (Season 4), what personal crisis torments Edgar Stiles during the evacuation after a reactor meltdown?",
+    "question": "In 24 (Season 4), whom does Edgar Stiles ask to help get his mother out of the nuclear fallout zone?",
     "answers": [
-      "His mother is trapped in the danger zone",
-      "His daughter is missing from school",
-      "His brother is held at the consulate",
-      "His father has been arrested at CTU"
+      "Audrey Raines",
+      "Michelle Dessler",
+      "Dina Araz",
+      "Marianne Taylor"
     ],
-    "correctAnswer": "His mother is trapped in the danger zone",
+    "correctAnswer": "Audrey Raines",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -547,11 +547,11 @@ const auditAdditions = [
       "Episode 09",
       "Day 4 hour 15:00",
       "Characters: Edgar Stiles",
-      "Storyline: Family in fallout zone",
-      "Question focus: What personal crisis torments Edgar Stiles during the evacuation after a reactor meltdown?",
-      "Answer focus: His mother is trapped in the danger zone",
       "2005",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: Whom does Edgar Stiles ask to help get his mother out of the nuclear fallout zone?",
+      "Answer focus: Audrey Raines",
+      "Storyline: Edgar appeals to Audrey"
     ]
   },
   {
@@ -617,14 +617,14 @@ const auditAdditions = [
   {
     "id": "tv_35143",
     "category": "Television",
-    "question": "In 24 (Season 4), what does Sarah Gavin demand after CTU has wrongly treated her as a terrorist suspect?",
+    "question": "In 24 (Season 4), what happens when Sarah Gavin issues an ultimatum to the newly returned Michelle Dessler?",
     "answers": [
-      "The right to arrest Jack",
-      "Control of the nuclear plants",
-      "A meeting with Marwan",
-      "Better terms for her continued employment"
+      "Michelle appoints her director",
+      "Sarah is transferred to the FBI",
+      "Sarah accepts a field assignment",
+      "Michelle dismisses her from CTU"
     ],
-    "correctAnswer": "Better terms for her continued employment",
+    "correctAnswer": "Michelle dismisses her from CTU",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -637,11 +637,11 @@ const auditAdditions = [
       "Episode 10",
       "Day 4 hour 16:00",
       "Characters: Sarah Gavin",
-      "Storyline: Wrongly accused employee",
-      "Question focus: What does Sarah Gavin demand after CTU has wrongly treated her as a terrorist suspect?",
-      "Answer focus: Better terms for her continued employment",
       "2005",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: What happens when Sarah Gavin issues an ultimatum to the newly returned Michelle Dessler?",
+      "Answer focus: Michelle dismisses her from CTU",
+      "Storyline: Sarah fired after ultimatum"
     ]
   },
   {
@@ -767,14 +767,14 @@ const auditAdditions = [
   {
     "id": "tv_35148",
     "category": "Television",
-    "question": "In 24 (Season 4), what happens to the leadership of CTU when Michelle Dessler returns?",
+    "question": "In 24 (Season 4), how does the return of Michelle Dessler affect her working relationship with Tony Almeida?",
     "answers": [
-      "She takes charge from Tony Almeida",
-      "Jack replaces her immediately",
-      "Erin Driscoll resumes command",
-      "Sarah Gavin becomes director"
+      "They clash over operational decisions",
+      "Tony is immediately imprisoned again",
+      "They leave Los Angeles together",
+      "Tony refuses to enter the CTU building"
     ],
-    "correctAnswer": "She takes charge from Tony Almeida",
+    "correctAnswer": "They clash over operational decisions",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -787,11 +787,11 @@ const auditAdditions = [
       "Episode 13",
       "Day 4 hour 19:00",
       "Characters: Michelle Dessler;Tony Almeida",
-      "Storyline: Michelle returns",
-      "Question focus: What happens to the leadership of CTU when Michelle Dessler returns?",
-      "Answer focus: She takes charge from Tony Almeida",
       "2005",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: How does the return of Michelle Dessler affect her working relationship with Tony Almeida?",
+      "Answer focus: They clash over operational decisions",
+      "Storyline: Tony and Michelle at odds"
     ]
   },
   {
@@ -977,14 +977,14 @@ const auditAdditions = [
   {
     "id": "tv_35155",
     "category": "Television",
-    "question": "In 24 (Season 4), what is the critical item the campers find after Air Force One is shot down?",
+    "question": "In 24 (Season 4), what is the condition of President John Keeler after the attack on Air Force One?",
     "answers": [
-      "A radio containing the president's speech",
-      "A suitcase with money for terrorists",
-      "A stolen CTU surveillance camera",
-      "A briefcase containing nuclear launch codes"
+      "Killed immediately in the crash",
+      "Uninjured and still in command",
+      "Missing and believed kidnapped",
+      "Alive but incapacitated"
     ],
-    "correctAnswer": "A briefcase containing nuclear launch codes",
+    "correctAnswer": "Alive but incapacitated",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -997,11 +997,11 @@ const auditAdditions = [
       "Episode 17",
       "Day 4 hour 23:00",
       "Characters: Air Force One;Nuclear football",
-      "Storyline: Missing briefcase",
-      "Question focus: What is the critical item the campers find after Air Force One is shot down?",
-      "Answer focus: A briefcase containing nuclear launch codes",
       "2005",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: What is the condition of President John Keeler after the attack on Air Force One?",
+      "Answer focus: Alive but incapacitated",
+      "Storyline: Keeler's survival"
     ]
   },
   {
@@ -1247,14 +1247,14 @@ const auditAdditions = [
   {
     "id": "tv_35164",
     "category": "Television",
-    "question": "In 24 (Season 4), who is kidnapped as Tony and Michelle begin to reconcile?",
+    "question": "In 24 (Season 4), what future do Tony Almeida and Michelle Dessler begin to plan after reconciling?",
     "answers": [
-      "Tony Almeida",
-      "Chloe O'Brian",
-      "Audrey Raines",
-      "Mike Novick"
+      "Leaving CTU to build a new life together",
+      "Moving to the Chinese consulate",
+      "Taking over the President's campaign",
+      "Joining Marwan's terrorist group"
     ],
-    "correctAnswer": "Tony Almeida",
+    "correctAnswer": "Leaving CTU to build a new life together",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1267,11 +1267,11 @@ const auditAdditions = [
       "Episode 22",
       "Day 4 hour 04:00",
       "Characters: Tony Almeida;Michelle Dessler;Mandy",
-      "Storyline: Tony abducted",
-      "Question focus: Who is kidnapped as Tony and Michelle begin to reconcile?",
-      "Answer focus: Tony Almeida",
       "2005",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: What future do Tony Almeida and Michelle Dessler begin to plan after reconciling?",
+      "Answer focus: Leaving CTU to build a new life together",
+      "Storyline: Tony and Michelle reconcile"
     ]
   },
   {
@@ -1397,14 +1397,14 @@ const auditAdditions = [
   {
     "id": "tv_35169",
     "category": "Television",
-    "question": "In 24 (Season 4), why must Jack remain hidden even after the immediate nuclear threat is stopped?",
+    "question": "In 24 (Season 4), what happens to Jack's relationship with Audrey Raines by the end of Season 4?",
     "answers": [
-      "He is wanted for stealing the nuclear missile",
-      "Government officials plan to kill him rather than surrender him to China",
-      "He has been accused of assassinating Keeler",
-      "He has promised to join Marwan's group"
+      "They become engaged at CTU",
+      "Audrey no longer wants to be with him",
+      "They decide to move abroad together",
+      "Audrey joins him in hiding"
     ],
-    "correctAnswer": "Government officials plan to kill him rather than surrender him to China",
+    "correctAnswer": "Audrey no longer wants to be with him",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1417,11 +1417,11 @@ const auditAdditions = [
       "Episode 24",
       "Day 4 hour 06:00",
       "Characters: Jack Bauer;Chinese consulate;David Palmer",
-      "Storyline: Government assassination plot",
-      "Question focus: Why must Jack remain hidden even after the immediate nuclear threat is stopped?",
-      "Answer focus: Government officials plan to kill him rather than surrender him to China",
       "2005",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Question focus: What happens to Jack's relationship with Audrey Raines by the end of Season 4?",
+      "Answer focus: Audrey no longer wants to be with him",
+      "Storyline: Audrey rejects Jack"
     ]
   }
 ];
