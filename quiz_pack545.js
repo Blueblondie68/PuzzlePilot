@@ -1,11 +1,15 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 545: Blue Heelers, Series 2 (1995).
-// 144 independently selected, story-specific questions across all 41 episodes.
-// IDs tv_32011–tv_32154; Pack 544 ended tv_32010.
+// 146 audited, story-specific questions across all 41 episodes; no padding or per-episode quotas.
+// IDs tv_32011–tv_32156; Pack 544 ended tv_32010.
 // Source: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-2/1000036269/
 // Cross-check: https://www.tvmaze.com/shows/7050/blue-heelers/episodeguide
 // Season/guest cast: https://en.wikipedia.org/wiki/Blue_Heelers_season_2
-// Notes: alternate titles exist for S02E16 and S02E38; this pack uses TV Guide / TVmaze names.
-// S02E37 airdate is disputed in source listings, so the specific date has not been asserted.
+// Notes: S02E16 uses TV Guide's 'Salutary Lessons' (TheTVDB lists 'The Lolita Blues').
+// S02E38 uses 'Juggling the Smoke' (TV Guide lists 'Juggling with Smoke').
+// S02E37 'Vow of Silence' airdate conflicts across listings; exact airdate deliberately not asserted.
+// Further episode check: https://www.rottentomatoes.com/tv/blue_heelers/s02/e32
+// UFO storyline: https://televisionau.com/2015/02/1995-february-18-24.html
+// Homecoming and Gina cast cross-check: TV Guide and Plex Season 2 episode summaries.
 // Coverage cut-off: S02E41 Brotherly Love (2), 21 Nov 1995.
 'use strict';
 const questions = [
@@ -13,14 +17,14 @@ const questions = [
     "id": "tv_32011",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "What kind of property is at the centre of the missing-couple case in the Series 2 premiere?",
+    "question": "Which farmer reports a UFO landing during the missing-couple investigation in 'Without a Trace'?",
     "answers": [
-      "A rural farm",
-      "An apartment block",
-      "A riverside hotel",
-      "A city warehouse"
+      "Alex Bailey",
+      "Ron Novak",
+      "Harry Jinks",
+      "Joe Kenny"
     ],
-    "correctAnswer": "A rural farm",
+    "correctAnswer": "Ron Novak",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -39,10 +43,10 @@ const questions = [
       "Episode: S02E01",
       "Episode title: Without a Trace",
       "Original airdate: 1995-02-21",
-      "Storyline: Middle-aged couple vanish from farm",
+      "Storyline: Farmer Ron Novak reports a UFO in his paddock while a couple disappears",
       "Character: Tom Croydon",
       "Actor: John Wood",
-      "Answer fact: A rural farm"
+      "Answer fact: Ron Novak"
     ]
   },
   {
@@ -337,14 +341,14 @@ const questions = [
     "id": "tv_32020",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "What is unusual about the main suspect in the bank-robbery case in 'Cruel Reality'?",
+    "question": "What problem makes life especially difficult for Adam in 'Cruel Reality'?",
     "answers": [
-      "The suspect is a police dog handler",
-      "The suspect is unexpected",
-      "The suspect is a foreign diplomat",
-      "The suspect is already imprisoned overseas"
+      "An unexpected transfer to Melbourne",
+      "Uncertainty about his HIV status",
+      "A failed driving examination",
+      "The loss of a service weapon"
     ],
-    "correctAnswer": "The suspect is unexpected",
+    "correctAnswer": "Uncertainty about his HIV status",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -363,10 +367,10 @@ const questions = [
       "Episode: S02E03",
       "Episode title: Cruel Reality",
       "Original airdate: 1995-03-07",
-      "Storyline: Investigation points to surprising suspect",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: The suspect is unexpected"
+      "Storyline: Adam's pending HIV result strains his relationship with the Mount Thomas community",
+      "Character: Adam Cooper",
+      "Actor: Damian Walshe-Howling",
+      "Answer fact: Uncertainty about his HIV status"
     ]
   },
   {
@@ -3037,42 +3041,6 @@ const questions = [
     "id": "tv_32095",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "What is the occasion for Tom's old schoolfriend's return in 'Homecoming Queen'?",
-    "answers": [
-      "A visit to Mount Thomas",
-      "A police recruitment test",
-      "A university exam",
-      "A court sentencing"
-    ],
-    "correctAnswer": "A visit to Mount Thomas",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Police",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 2",
-      "Broadcast year: 1995",
-      "Episode: S02E25",
-      "Episode title: Homecoming Queen",
-      "Original airdate: 1995-08-08",
-      "Storyline: Old schoolfriend arrives and falls under suspicion",
-      "Character: Tom Croydon",
-      "Actor: John Wood",
-      "Answer fact: A visit to Mount Thomas"
-    ]
-  },
-  {
-    "id": "tv_32096",
-    "category": "TV",
-    "topic": "Blue Heelers",
     "question": "Where does a theft connect with Tom's returning schoolfriend in 'Homecoming Queen'?",
     "answers": [
       "A hospital",
@@ -3106,7 +3074,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32097",
+    "id": "tv_32096",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which station officer is personally acquainted with a suspect from his schooldays in 'Homecoming Queen'?",
@@ -3142,7 +3110,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32098",
+    "id": "tv_32097",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Why is a schoolgirl bullied by classmates in 'Secrets'?",
@@ -3178,7 +3146,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32099",
+    "id": "tv_32098",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which officer receives divorce papers from Roz during 'Secrets'?",
@@ -3214,7 +3182,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32100",
+    "id": "tv_32099",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which senior officer is competing with Tom for promotion in 'Secrets'?",
@@ -3250,7 +3218,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32101",
+    "id": "tv_32100",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who does Tom invite on a date to discourage another admirer in 'Secrets'?",
@@ -3286,7 +3254,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32102",
+    "id": "tv_32101",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What kind of response does the police team organise to protect the bullied girl in 'Secrets'?",
@@ -3322,7 +3290,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32103",
+    "id": "tv_32102",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What valuable animal is shot in 'The Last Straw'?",
@@ -3358,7 +3326,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32104",
+    "id": "tv_32103",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Whose romantic hopes are dashed when Chris makes her feelings clear in 'The Last Straw'?",
@@ -3394,7 +3362,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32105",
+    "id": "tv_32104",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which unusual young person does Nick befriend in 'The Best of Rivals'?",
@@ -3430,7 +3398,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32106",
+    "id": "tv_32105",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What qualification are Maggie and Wayne preparing to seek in 'The Best of Rivals'?",
@@ -3466,7 +3434,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32107",
+    "id": "tv_32106",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which two police officers' separate decisions collide tragically in 'The Best of Rivals'?",
@@ -3502,7 +3470,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32108",
+    "id": "tv_32107",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is stolen from the Mount Thomas hospital in 'Swings and Roundabouts'?",
@@ -3538,7 +3506,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32109",
+    "id": "tv_32108",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is released early from prison in the first part of 'Double Jeopardy'?",
@@ -3574,7 +3542,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32110",
+    "id": "tv_32109",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which relative of Joe Kenny does Wayne persuade to assist police?",
@@ -3610,7 +3578,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32111",
+    "id": "tv_32110",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What promise made by Wayne to Joe Kenny's wife proves impossible to keep?",
@@ -3646,7 +3614,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32112",
+    "id": "tv_32111",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which visiting supervisor is expected at the station in 'Double Jeopardy (1)'?",
@@ -3682,7 +3650,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32113",
+    "id": "tv_32112",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What accusation threatens Wayne's career in 'Double Jeopardy (2)'?",
@@ -3718,7 +3686,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32114",
+    "id": "tv_32113",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which family attacks Wayne in 'Double Jeopardy (2)'?",
@@ -3754,7 +3722,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32115",
+    "id": "tv_32114",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who makes the complaint against Wayne in 'Double Jeopardy (2)'?",
@@ -3790,7 +3758,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32116",
+    "id": "tv_32115",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What craze takes hold of Mount Thomas in 'The Mongrel Factor'?",
@@ -3826,7 +3794,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32117",
+    "id": "tv_32116",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What apparently harmless plan gets out of hand in 'The Mongrel Factor'?",
@@ -3862,7 +3830,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32118",
+    "id": "tv_32117",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What medical emergency forces Maggie to prosecute a case in 'Just Desserts'?",
@@ -3898,7 +3866,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32119",
+    "id": "tv_32118",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which lawyer defends the accused against Maggie in 'Just Desserts'?",
@@ -3934,7 +3902,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32120",
+    "id": "tv_32119",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who plays defence lawyer Brady Jackson in 'Just Desserts'?",
@@ -3970,7 +3938,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32121",
+    "id": "tv_32120",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What emotion does PJ struggle with when Maggie becomes friendly with Brady Jackson?",
@@ -4006,7 +3974,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32122",
+    "id": "tv_32121",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What kind of political crime prompts the hearing in 'Just Desserts'?",
@@ -4042,7 +4010,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32123",
+    "id": "tv_32122",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Where is a Vietnam veteran found murdered in 'Unnatural Death'?",
@@ -4078,7 +4046,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32124",
+    "id": "tv_32123",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What kind of injury caused the veteran's death in 'Unnatural Death'?",
@@ -4114,7 +4082,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32125",
+    "id": "tv_32124",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What obsession makes a suspect particularly alarming in 'Unnatural Death'?",
@@ -4150,7 +4118,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32126",
+    "id": "tv_32125",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What unusual community is suspected of local burglaries in 'Tough Love'?",
@@ -4186,7 +4154,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32127",
+    "id": "tv_32126",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which of Tom's children belongs to the commune investigated in 'Tough Love'?",
@@ -4222,7 +4190,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32128",
+    "id": "tv_32127",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which officer's past trauma resurfaces as he tries to protect Susan in 'Tough Love'?",
@@ -4258,7 +4226,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32129",
+    "id": "tv_32128",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What career milestone is celebrated for Tom during 'Tough Love'?",
@@ -4294,7 +4262,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32130",
+    "id": "tv_32129",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is accused of being an accomplice in the bank robbery in 'A Question of Loyalties'?",
@@ -4330,7 +4298,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32131",
+    "id": "tv_32130",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Where is a large portion of stolen cash found in 'A Question of Loyalties'?",
@@ -4366,7 +4334,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32132",
+    "id": "tv_32131",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What employment action follows the discovery of the bank-robbery money in 'A Question of Loyalties'?",
@@ -4402,7 +4370,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32133",
+    "id": "tv_32132",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who helps Maggie investigate the allegations against PJ in 'A Question of Loyalties'?",
@@ -4438,7 +4406,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32134",
+    "id": "tv_32133",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Whose niece runs away and becomes the centre of an abuse investigation in 'Vow of Silence'?",
@@ -4474,7 +4442,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32135",
+    "id": "tv_32134",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which local figure becomes a suspect in 'Vow of Silence'?",
@@ -4510,7 +4478,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32136",
+    "id": "tv_32135",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What is the priest's name in 'Vow of Silence'?",
@@ -4546,7 +4514,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32137",
+    "id": "tv_32136",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is the runaway girl named in 'Vow of Silence'?",
@@ -4582,7 +4550,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32138",
+    "id": "tv_32137",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What annual sporting event coincides with the burglaries in 'Juggling the Smoke'?",
@@ -4618,7 +4586,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32139",
+    "id": "tv_32138",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What type of crimes keeps the Heelers busy in 'Juggling the Smoke'?",
@@ -4654,7 +4622,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32140",
+    "id": "tv_32139",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who becomes Wayne's friend and helps restore an old motorbike in 'The Discount Suit'?",
@@ -4690,7 +4658,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32141",
+    "id": "tv_32140",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What valuable item does Wayne restore in 'The Discount Suit'?",
@@ -4726,7 +4694,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32142",
+    "id": "tv_32141",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What piece of evidence disappears in 'The Discount Suit'?",
@@ -4762,7 +4730,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32143",
+    "id": "tv_32142",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What kind of crimes is PJ investigating in 'The Discount Suit'?",
@@ -4798,7 +4766,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32144",
+    "id": "tv_32143",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What social event strains Chris and Adam's relationship in 'The Discount Suit'?",
@@ -4834,7 +4802,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32145",
+    "id": "tv_32144",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "At what event does Nick announce his engagement to Sasha in 'Brotherly Love (1)'?",
@@ -4870,7 +4838,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32146",
+    "id": "tv_32145",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who is sexually assaulted after Tom's party in 'Brotherly Love (1)'?",
@@ -4906,7 +4874,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32147",
+    "id": "tv_32146",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which constable admits leaving the Christmas party with Gina in 'Brotherly Love (1)'?",
@@ -4942,7 +4910,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32148",
+    "id": "tv_32147",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who becomes a major suspect in Gina's assault in 'Brotherly Love (1)'?",
@@ -4978,7 +4946,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32149",
+    "id": "tv_32148",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which witness is central to the inquiry into Gina's assault in 'Brotherly Love (1)'?",
@@ -5014,7 +4982,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32150",
+    "id": "tv_32149",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Where does a later suspect in Gina's assault work in 'Brotherly Love (2)'?",
@@ -5050,7 +5018,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32151",
+    "id": "tv_32150",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which constable is used as bait in the dangerous plan to catch Gina's attacker in 'Brotherly Love (2)'?",
@@ -5086,7 +5054,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32152",
+    "id": "tv_32151",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which couple's relationship comes to an abrupt end in 'Brotherly Love (2)'?",
@@ -5122,7 +5090,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32153",
+    "id": "tv_32152",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which two characters share their first official kiss in the Series 2 finale?",
@@ -5158,7 +5126,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32154",
+    "id": "tv_32153",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who arrives to help with the investigation into Gina's assault in 'Brotherly Love (2)'?",
@@ -5192,9 +5160,117 @@ const questions = [
       "Actor: Peta Doodson",
       "Answer fact: Monica Draper"
     ]
+  },
+  {
+    "id": "tv_32154",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "What is the name of Tom Croydon's old schoolfriend who becomes entangled in the concert robbery investigation?",
+    "answers": [
+      "Mavis Cole",
+      "Francine Wyatt",
+      "Sasha Peters",
+      "Monica Draper"
+    ],
+    "correctAnswer": "Francine Wyatt",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E25",
+      "Episode title: Homecoming Queen",
+      "Original airdate: 1995-08-08",
+      "Storyline: Returning schoolfriend Francine Wyatt becomes linked to concert theft",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: Francine Wyatt"
+    ]
+  },
+  {
+    "id": "tv_32155",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which character portrayed by Rachel Blakely appears in 'Swings and Roundabouts' before becoming central to the Series 2 finale?",
+    "answers": [
+      "Sasha Peters",
+      "Gina Belfanti",
+      "Holly McLeod",
+      "Francine Wyatt"
+    ],
+    "correctAnswer": "Gina Belfanti",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E29",
+      "Episode title: Swings and Roundabouts",
+      "Original airdate: 1995-09-05",
+      "Storyline: Gina Belfanti appears in episode's guest cast and becomes important in finale",
+      "Character: Gina Belfanti",
+      "Actor: Rachel Blakely",
+      "Answer fact: Gina Belfanti"
+    ]
+  },
+  {
+    "id": "tv_32156",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which sporting fixture is Wayne unable to play in because of an injury in 'The Mongrel Factor'?",
+    "answers": [
+      "A police shooting competition",
+      "The football grand final",
+      "A charity cricket match",
+      "A basketball tournament"
+    ],
+    "correctAnswer": "The football grand final",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E32",
+      "Episode title: The Mongrel Factor",
+      "Original airdate: 1995-09-26",
+      "Storyline: Wayne injured and misses football grand final",
+      "Character: Wayne Patterson",
+      "Actor: Grant Bowler",
+      "Answer fact: The football grand final"
+    ]
   }
 ];
-if(questions.length!==144||new Set(questions.map(x=>x.id)).size!==questions.length||
+if(questions.length!==146||new Set(questions.map(x=>x.id)).size!==questions.length||
 new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
 questions.some((x,i)=>x.id!=='tv_'+(32011+i)||x.category!=='TV'||x.topic!=='Blue Heelers'||
 x.answers.length!==4||new Set(x.answers.map(y=>y.toLowerCase())).size!==4||
