@@ -36,7 +36,7 @@
  Which US airport is seized by separatist terrorists early in Day 5?|Ontario International Airport|Los Angeles International Airport|Burbank Airport|San Diego International Airport|Medium|Ontario International Airport|California|Russian Separatists|Hostage Siege|Jack Bauer|Curtis Manning|Morning Attack
  Which young companion of Jack Bauer is taken hostage during the airport siege?|Derek Huxley|Kyle Singer|Behrooz Araz|Richard Heller|Easy|Derek Huxley|Airport Hostage|Diane Huxley|Jack Bauer|Russian Separatists|CTU Rescue|Day Five
  What is the nationality of the separatists who seize hostages at the airport?|Russian|French|Mexican|Canadian|Medium|Russian Separatists|Ontario Airport|Hostage Takers|Yuri Suvarov|Anti Terror Treaty|Political Demands|Terrorist Cell
- What dangerous substance do the terrorists obtain in canisters during the airport operation?|VX nerve gas|Liquid anthrax|Nuclear fuel|White phosphorus|Easy|VX Nerve Gas|Chemical Weapon|Airport Diversion|Russian Separatists|Terrorist Plot|Mass Casualty Threat|Day Five
+ What is the name of the fictional nerve gas stolen during the Ontario Airport operation?|Sentox VX nerve gas|Liquid anthrax|Nuclear fuel|White phosphorus|Easy|VX Nerve Gas|Chemical Weapon|Airport Diversion|Russian Separatists|Terrorist Plot|Mass Casualty Threat|Day Five
  How many nerve-gas canisters are stolen as part of the terrorist plot?|Twenty|Four|Eight|Fifty|Hard|Twenty Canisters|VX Nerve Gas|Stolen Chemical Weapons|Airport Operation|Russian Separatists|Smuggling Scheme|Chemical Terrorism
  Which terrorist leader directs the later nerve-gas campaign against Los Angeles?|Vladimir Bierko|Stephen Saunders|Habib Marwan|Ramon Salazar|Easy|Vladimir Bierko|Russian Separatists|VX Gas Campaign|Los Angeles Attacks|Season Five Villain|Terrorist Leader|Chemical Weapons
  Which actor portrayed Russian terrorist Vladimir Bierko?|Julian Sands|Peter Weller|Arnold Vosloo|Joaquim de Almeida|Medium|Vladimir Bierko|Julian Sands|Actor Casting|Russian Separatist Leader|Nerve Gas|Season Five Antagonist|British Actor
@@ -1605,14 +1605,74 @@ const auditAdditions = [
       "2006",
       "Viewer storyline"
     ]
+  },
+  {
+    "id": "tv_35218",
+    "category": "Television",
+    "question": "In 24 (Season 5), what complication threatens the supposedly sealed safe rooms during CTU's nerve-gas lockdown?",
+    "answers": [
+      "An acid mixed with the gas begins destroying their seals",
+      "An earthquake damages the building foundations",
+      "The fire alarm opens all secure doors",
+      "A power cut disables every oxygen supply"
+    ],
+    "correctAnswer": "An acid mixed with the gas begins destroying their seals",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 13",
+      "Day 5 hour 19:00",
+      "Characters: CTU;Jack Bauer;Chloe O'Brian",
+      "Storyline: Safe-zone seals deteriorate",
+      "Question focus: What complication threatens the supposedly sealed safe rooms during CTU's nerve-gas lockdown?",
+      "Answer focus: An acid mixed with the gas begins destroying their seals",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35219",
+    "category": "Television",
+    "question": "In 24 (Season 5), what is the profession of Kim Bauer's boyfriend Barry Landes, who tries to help Chloe after Edgar's death?",
+    "answers": [
+      "Emergency doctor",
+      "Clinical psychologist",
+      "School counsellor",
+      "Police negotiator"
+    ],
+    "correctAnswer": "Clinical psychologist",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 13",
+      "Day 5 hour 19:00",
+      "Characters: Kim Bauer;Barry Landes;Chloe O'Brian;Edgar Stiles",
+      "Storyline: Barry supports Chloe",
+      "Question focus: What is the profession of Kim Bauer's boyfriend Barry Landes, who tries to help Chloe after Edgar's death?",
+      "Answer focus: Clinical psychologist",
+      "2006",
+      "Viewer storyline"
+    ]
   }
 ];
 questions.push(...auditAdditions);
-const EXPECTED_COUNT = 132;
+const EXPECTED_COUNT = 134;
  if (questions.length !== EXPECTED_COUNT) {
    throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
  }
- if (questions[0].id !== 'tv_11416' || questions[83].id !== 'tv_11499' || questions[questions.length - 1].id !== 'tv_35217') {
+ if (questions[0].id !== 'tv_11416' || questions[83].id !== 'tv_11499' || questions[questions.length - 1].id !== 'tv_35219') {
    throw new Error('Unexpected question ID range');
  }
  if (new Set(questions.map(q => q.id)).size !== questions.length) {
