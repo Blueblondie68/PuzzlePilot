@@ -3077,14 +3077,14 @@ const questions = [
     "id": "tv_32096",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "Which station officer is personally acquainted with a suspect from his schooldays in 'Homecoming Queen'?",
+    "question": "How does Maggie obtain concert tickets in 'Homecoming Queen'?",
     "answers": [
-      "Nick Schultz",
-      "Adam Cooper",
-      "Tom Croydon",
-      "Wayne Patterson"
+      "She buys them at the station",
+      "She wins a radio competition",
+      "She receives them from a visiting band",
+      "She finds them in a lost-property box"
     ],
-    "correctAnswer": "Tom Croydon",
+    "correctAnswer": "She wins a radio competition",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -3103,10 +3103,10 @@ const questions = [
       "Episode: S02E25",
       "Episode title: Homecoming Queen",
       "Original airdate: 1995-08-08",
-      "Storyline: Old school relationship complicates inquiry",
+      "Storyline: Maggie wins tickets in a radio contest before concert-robbery inquiry",
       "Character: Tom Croydon",
       "Actor: John Wood",
-      "Answer fact: Tom Croydon"
+      "Answer fact: She wins a radio competition"
     ]
   },
   {
