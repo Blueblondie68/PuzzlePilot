@@ -130,9 +130,9 @@ const questions = groups.flatMap(group =>
 
 
 // =====================================================
-// EDITORIAL AUDIT: 20 November 2026 — Series 1–6 and specials
+// EDITORIAL AUDIT: 20 November 2026 — Series 1–8 and specials
 // Original 52 questions/IDs tv_11043–tv_11094 preserved.
-// 78 distinct evidence-checked questions added through Series 6; Series 7–8 remain pending.
+// 109 episode-grounded audit questions added across all eight series; final factual and storyline coverage review remains pending.
 // Source: https://www.comedy.co.uk/tv/2point4_children/episodes/
 // Detail check: https://epguides.com/2point4Children/guide.shtml
 // IMPORTANT: This is a PARTIAL audit, not complete series sign-off.
@@ -2477,15 +2477,945 @@ const auditedAdditions = [
       "Programme: 2point4 Children",
       "Written question"
     ]
+  },
+  {
+    "id": "tv_34955",
+    "category": "Television",
+    "question": "In 2point4 Children, what does Ben finally sell before replacing the family car with another impractical vehicle?",
+    "answers": [
+      "His old Chevrolet",
+      "His plumbing van",
+      "Rona's delivery car",
+      "Jenny's scooter"
+    ],
+    "correctAnswer": "His old Chevrolet",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: Perfect Day",
+      "Storyline: What does Ben finally sell before replacing the family car with another impractical vehicle?",
+      "Answer focus: His old Chevrolet",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34956",
+    "category": "Television",
+    "question": "In 2point4 Children, whose plans for adoption are threatened when the Porters stop speaking to each other?",
+    "answers": [
+      "Bette's",
+      "Rona's",
+      "Jenny's",
+      "Aunt Tina's"
+    ],
+    "correctAnswer": "Rona's",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: Perfect Day",
+      "Storyline: Whose plans for adoption are threatened when the Porters stop speaking to each other?",
+      "Answer focus: Rona's",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34957",
+    "category": "Television",
+    "question": "In 2point4 Children, which football club's surprise win convinces Ben that his Saturday routines bring luck?",
+    "answers": [
+      "Arsenal",
+      "West Ham United",
+      "Tottenham Hotspur",
+      "Chelsea"
+    ],
+    "correctAnswer": "Tottenham Hotspur",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: When Saturday Comes",
+      "Storyline: Which football club's surprise win convinces Ben that his Saturday routines bring luck?",
+      "Answer focus: Tottenham Hotspur",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34958",
+    "category": "Television",
+    "question": "In 2point4 Children, what does Bill unknowingly throw away that Ben believes is lucky?",
+    "answers": [
+      "His football programme",
+      "His scarf",
+      "His lottery ticket",
+      "His underpants"
+    ],
+    "correctAnswer": "His underpants",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: When Saturday Comes",
+      "Storyline: What does Bill unknowingly throw away that Ben believes is lucky?",
+      "Answer focus: His underpants",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34959",
+    "category": "Television",
+    "question": "In 2point4 Children, what do the Porter family repeatedly have to do to preserve Ben's football luck?",
+    "answers": [
+      "Recreate the same Saturday morning routine",
+      "Travel to every away match",
+      "Wear the team's shirts to work",
+      "Watch the match without speaking"
+    ],
+    "correctAnswer": "Recreate the same Saturday morning routine",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: When Saturday Comes",
+      "Storyline: What do the Porter family repeatedly have to do to preserve Ben's football luck?",
+      "Answer focus: Recreate the same Saturday morning routine",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34960",
+    "category": "Television",
+    "question": "In 2point4 Children, what does Bill consider doing when her old boyfriend Malcolm reappears in her life?",
+    "answers": [
+      "Moving to America with him",
+      "Spending a weekend with him in Scotland",
+      "Starting a business with him",
+      "Inviting him to live with the family"
+    ],
+    "correctAnswer": "Spending a weekend with him in Scotland",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: Malcolm X",
+      "Storyline: What does Bill consider doing when her old boyfriend Malcolm reappears in her life?",
+      "Answer focus: Spending a weekend with him in Scotland",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34961",
+    "category": "Television",
+    "question": "In 2point4 Children, what is upsetting Bill about the way Ben treats her when Malcolm gets back in touch?",
+    "answers": [
+      "He insists she leave her catering business",
+      "He refuses to visit her mother",
+      "He takes her for granted",
+      "He hides their family photographs"
+    ],
+    "correctAnswer": "He takes her for granted",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: Malcolm X",
+      "Storyline: What is upsetting Bill about the way Ben treats her when Malcolm gets back in touch?",
+      "Answer focus: He takes her for granted",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34962",
+    "category": "Television",
+    "question": "In 2point4 Children, why does Ben bring home a box of unfamiliar household products?",
+    "answers": [
+      "He has inherited a shop",
+      "He has bought them at a police auction",
+      "He has agreed to resell them for a neighbour",
+      "A market researcher has recruited him to test them"
+    ],
+    "correctAnswer": "A market researcher has recruited him to test them",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: The Sweet Hereafter",
+      "Storyline: Why does Ben bring home a box of unfamiliar household products?",
+      "Answer focus: A market researcher has recruited him to test them",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34963",
+    "category": "Television",
+    "question": "In 2point4 Children, what is the name of the chocolate bar the family are asked to test?",
+    "answers": [
+      "Drool",
+      "Crunchie",
+      "Wisp",
+      "Chocstop"
+    ],
+    "correctAnswer": "Drool",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: The Sweet Hereafter",
+      "Storyline: What is the name of the chocolate bar the family are asked to test?",
+      "Answer focus: Drool",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34964",
+    "category": "Television",
+    "question": "In 2point4 Children, what unexpected effect does the experimental chocolate bar have on the Porters?",
+    "answers": [
+      "They all develop temporary amnesia",
+      "They become obsessed with eating it",
+      "They lose their sense of taste",
+      "They cannot sleep because it contains caffeine"
+    ],
+    "correctAnswer": "They become obsessed with eating it",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: The Sweet Hereafter",
+      "Storyline: What unexpected effect does the experimental chocolate bar have on the Porters?",
+      "Answer focus: They become obsessed with eating it",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34965",
+    "category": "Television",
+    "question": "In 2point4 Children, what does Bette reveal about the whereabouts of her supposedly cremated husband?",
+    "answers": [
+      "His ashes are in Australia",
+      "He was buried under a different name",
+      "He has been frozen and stored in Bermondsey",
+      "He has a grave in Scotland"
+    ],
+    "correctAnswer": "He has been frozen and stored in Bermondsey",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: When Did You Last See Your Father?",
+      "Storyline: What does Bette reveal about the whereabouts of her supposedly cremated husband?",
+      "Answer focus: He has been frozen and stored in Bermondsey",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34966",
+    "category": "Television",
+    "question": "In 2point4 Children, why must Bette and Bill bring the frozen remains back to the Porter home?",
+    "answers": [
+      "The warehouse has been sold to the council",
+      "The police suspect the remains have been stolen",
+      "A family member refuses to pay the storage fee",
+      "The cryonics company has gone out of business"
+    ],
+    "correctAnswer": "The cryonics company has gone out of business",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: When Did You Last See Your Father?",
+      "Storyline: Why must Bette and Bill bring the frozen remains back to the Porter home?",
+      "Answer focus: The cryonics company has gone out of business",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34967",
+    "category": "Television",
+    "question": "In 2point4 Children, what does Ben mistakenly conclude when Italian restaurant staff treat Fabrizio's father's photograph with reverence?",
+    "answers": [
+      "That the father is a Mafia boss",
+      "That the father is a television presenter",
+      "That the father is a politician",
+      "That the father owns the restaurant chain"
+    ],
+    "correctAnswer": "That the father is a Mafia boss",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: The Italian Job",
+      "Storyline: What does Ben mistakenly conclude when Italian restaurant staff treat Fabrizio's father's photograph with reverence?",
+      "Answer focus: That the father is a Mafia boss",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34968",
+    "category": "Television",
+    "question": "In 2point4 Children, which girl does the visiting Fabrizio charm, to David's dismay?",
+    "answers": [
+      "Jenny",
+      "Maxine",
+      "Rona",
+      "Kirsty"
+    ],
+    "correctAnswer": "Maxine",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: The Italian Job",
+      "Storyline: Which girl does the visiting Fabrizio charm, to David's dismay?",
+      "Answer focus: Maxine",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34969",
+    "category": "Television",
+    "question": "In 2point4 Children, how do Bill and Ben first encounter the boy Declan?",
+    "answers": [
+      "He is delivering groceries to their house",
+      "He is seeking work at the catering business",
+      "He is among children looting their van",
+      "He is Jenny's new housemate"
+    ],
+    "correctAnswer": "He is among children looting their van",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: The Heart Has Its Reasons",
+      "Storyline: How do Bill and Ben first encounter the boy Declan?",
+      "Answer focus: He is among children looting their van",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34970",
+    "category": "Television",
+    "question": "In 2point4 Children, what is the reason the Porters feel sympathy for Declan after catching him?",
+    "answers": [
+      "He has lost his pet dog",
+      "He has failed his entrance exams",
+      "He is a neighbour's nephew",
+      "He is homeless and has no parents caring for him"
+    ],
+    "correctAnswer": "He is homeless and has no parents caring for him",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: The Heart Has Its Reasons",
+      "Storyline: What is the reason the Porters feel sympathy for Declan after catching him?",
+      "Answer focus: He is homeless and has no parents caring for him",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34971",
+    "category": "Television",
+    "question": "In 2point4 Children, how does Declan respond after Ben suspects him of involvement in a burglary at the Porter house?",
+    "answers": [
+      "He arranges for the stolen belongings to be returned",
+      "He reports Ben to social services",
+      "He moves to Scotland",
+      "He admits he sold the family's car"
+    ],
+    "correctAnswer": "He arranges for the stolen belongings to be returned",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 7",
+      "Broadcast year: 1998",
+      "Episode: The Heart Has Its Reasons",
+      "Storyline: How does Declan respond after Ben suspects him of involvement in a burglary at the Porter house?",
+      "Answer focus: He arranges for the stolen belongings to be returned",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34972",
+    "category": "Television",
+    "question": "In 2point4 Children, what kind of television programme does Ben volunteer the Porter family to appear in?",
+    "answers": [
+      "A cooking competition",
+      "A fly-on-the-wall documentary",
+      "A live news debate",
+      "A home-shopping programme"
+    ],
+    "correctAnswer": "A fly-on-the-wall documentary",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Fame",
+      "Storyline: What kind of television programme does Ben volunteer the Porter family to appear in?",
+      "Answer focus: A fly-on-the-wall documentary",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34973",
+    "category": "Television",
+    "question": "In 2point4 Children, why does Bill deliberately make the family's documentary screen test unpleasant?",
+    "answers": [
+      "She has signed an exclusive contract with another channel",
+      "She is secretly auditioning for a different show",
+      "She fears it could harm their chances of fostering Declan",
+      "She thinks the family should be paid before filming"
+    ],
+    "correctAnswer": "She fears it could harm their chances of fostering Declan",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Fame",
+      "Storyline: Why does Bill deliberately make the family's documentary screen test unpleasant?",
+      "Answer focus: She fears it could harm their chances of fostering Declan",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34974",
+    "category": "Television",
+    "question": "In 2point4 Children, who arrives to stay in Jenny's vacant bedroom while Declan is visiting?",
+    "answers": [
+      "Aunt Tina",
+      "Rona",
+      "Clive",
+      "Bette"
+    ],
+    "correctAnswer": "Bette",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Enter The Dragon",
+      "Storyline: Who arrives to stay in Jenny's vacant bedroom while Declan is visiting?",
+      "Answer focus: Bette",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34975",
+    "category": "Television",
+    "question": "In 2point4 Children, how does Bette undermine Bill and Ben's attempts to establish rules for Declan?",
+    "answers": [
+      "She indulges his behaviour",
+      "She encourages him to skip his visits",
+      "She moves him into a hotel",
+      "She tells him to refuse all family meals"
+    ],
+    "correctAnswer": "She indulges his behaviour",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Enter The Dragon",
+      "Storyline: How does Bette undermine Bill and Ben's attempts to establish rules for Declan?",
+      "Answer focus: She indulges his behaviour",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34976",
+    "category": "Television",
+    "question": "In 2point4 Children, who does Jenny bring home from university for the weekend?",
+    "answers": [
+      "Her tutor",
+      "Her boyfriend Keith",
+      "Her new flatmate",
+      "Her old boyfriend Clive"
+    ],
+    "correctAnswer": "Her boyfriend Keith",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Sticky Fingers",
+      "Storyline: Who does Jenny bring home from university for the weekend?",
+      "Answer focus: Her boyfriend Keith",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34977",
+    "category": "Television",
+    "question": "In 2point4 Children, what is Ben's strategy to prevent Jenny and Keith sharing a bedroom?",
+    "answers": [
+      "Arrange a surprise visit from Keith's parents",
+      "Send Keith on a work trip",
+      "Wear Keith out so he is too tired",
+      "Move Jenny into Rona's house"
+    ],
+    "correctAnswer": "Wear Keith out so he is too tired",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Sticky Fingers",
+      "Storyline: What is Ben's strategy to prevent Jenny and Keith sharing a bedroom?",
+      "Answer focus: Wear Keith out so he is too tired",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34978",
+    "category": "Television",
+    "question": "In 2point4 Children, what mistake do Bill and Rona make while working on their catering warehouse floor?",
+    "answers": [
+      "They use wallpaper paste instead of floor adhesive",
+      "They lay the tiles over a broken pipe",
+      "They forget to measure the doorway",
+      "They fail to ventilate the glue fumes"
+    ],
+    "correctAnswer": "They fail to ventilate the glue fumes",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Sticky Fingers",
+      "Storyline: What mistake do Bill and Rona make while working on their catering warehouse floor?",
+      "Answer focus: They fail to ventilate the glue fumes",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34979",
+    "category": "Television",
+    "question": "In 2point4 Children, which large musical instrument runs out of control during Jenny's visit home?",
+    "answers": [
+      "A piano",
+      "A drum kit",
+      "An upright bass",
+      "A harp"
+    ],
+    "correctAnswer": "A piano",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Sticky Fingers",
+      "Storyline: Which large musical instrument runs out of control during Jenny's visit home?",
+      "Answer focus: A piano",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34980",
+    "category": "Television",
+    "question": "In 2point4 Children, why do Bill and Rona travel to Calais while bidding for a catering contract?",
+    "answers": [
+      "To collect a replacement van",
+      "To buy alcohol more cheaply",
+      "To meet a French chef",
+      "To inspect a new kitchen"
+    ],
+    "correctAnswer": "To buy alcohol more cheaply",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: After The Fox",
+      "Storyline: Why do Bill and Rona travel to Calais while bidding for a catering contract?",
+      "Answer focus: To buy alcohol more cheaply",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34981",
+    "category": "Television",
+    "question": "In 2point4 Children, what news makes Bill and Rona desperate to lower their catering costs?",
+    "answers": [
+      "Their landlord has doubled the rent",
+      "The council has banned outdoor catering",
+      "A larger rival has undercut their bid",
+      "Their supplier has gone bankrupt"
+    ],
+    "correctAnswer": "A larger rival has undercut their bid",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: After The Fox",
+      "Storyline: What news makes Bill and Rona desperate to lower their catering costs?",
+      "Answer focus: A larger rival has undercut their bid",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34982",
+    "category": "Television",
+    "question": "In 2point4 Children, which previously unknown family member visits Ben during the fostering process?",
+    "answers": [
+      "His cousin Jake",
+      "His brother Gordon",
+      "His grandfather Arthur",
+      "His uncle Lon"
+    ],
+    "correctAnswer": "His uncle Lon",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Carry On Screaming",
+      "Storyline: Which previously unknown family member visits Ben during the fostering process?",
+      "Answer focus: His uncle Lon",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34983",
+    "category": "Television",
+    "question": "In 2point4 Children, what development regarding Declan is reported by social services?",
+    "answers": [
+      "He is to be fostered permanently by the Porters",
+      "He must return to his former foster home",
+      "His university application is approved",
+      "He is moving abroad with relatives"
+    ],
+    "correctAnswer": "He is to be fostered permanently by the Porters",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: Carry On Screaming",
+      "Storyline: What development regarding Declan is reported by social services?",
+      "Answer focus: He is to be fostered permanently by the Porters",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34984",
+    "category": "Television",
+    "question": "In 2point4 Children, which possible problem makes Ben panic as the year 2000 approaches?",
+    "answers": [
+      "The return of the mysterious biker",
+      "Loss of essential utilities such as electricity, gas and water",
+      "A government ban on Christmas dinners",
+      "The closure of the catering business"
+    ],
+    "correctAnswer": "Loss of essential utilities such as electricity, gas and water",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: The Millennium Experience",
+      "Storyline: Which possible problem makes Ben panic as the year 2000 approaches?",
+      "Answer focus: Loss of essential utilities such as electricity, gas and water",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_34985",
+    "category": "Television",
+    "question": "In 2point4 Children, whose unexpected arrival complicates Bill's plans for a family celebration?",
+    "answers": [
+      "Malcolm",
+      "Clive",
+      "Aunt Tina",
+      "Mrs Grimes"
+    ],
+    "correctAnswer": "Aunt Tina",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 8",
+      "Broadcast year: 1999",
+      "Episode: The Millennium Experience",
+      "Storyline: Whose unexpected arrival complicates Bill's plans for a family celebration?",
+      "Answer focus: Aunt Tina",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ],
+    "dailyEligible": true
   }
 ];
 questions.push(...auditedAdditions);
 
-const EXPECTED_COUNT = 130;
+const EXPECTED_COUNT = 161;
 if (questions.length !== EXPECTED_COUNT) {
   throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
 }
-if (questions[0].id !== 'tv_11043' || questions[51].id !== 'tv_11094' || questions[questions.length - 1].id !== 'tv_34954') {
+if (questions[0].id !== 'tv_11043' || questions[51].id !== 'tv_11094' || questions[questions.length - 1].id !== 'tv_34985') {
   throw new Error('Unexpected question ID range');
 }
 if (new Set(questions.map(q => q.id)).size !== questions.length) {
