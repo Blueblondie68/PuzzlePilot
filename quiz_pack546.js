@@ -1,12 +1,13 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 546: Blue Heelers, Series 3 (1996).
-// 169 independently selected storyline questions across all 42 episodes; no fixed quotas.
-// IDs tv_32157–tv_32325; Pack 545 ends tv_32156.
+// 163 audited storyline questions across all 42 episodes; no fixed quotas or padding.
+// IDs tv_32157–tv_32319; Pack 545 ends tv_32156.
 // Episode and plot references: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-3/1000036269/
 // Episode and dates: https://thetvdb.com/series/blue-heelers/seasons/official/3
 // Secondary episode guide: https://www.tvmaze.com/seasons/21106/blue-heelers-season-3/episodeguide
 // Episode title variants: S03E20 'In Unity Is Strength'; S03E23 'The Principle of the Thing';
 // S03E30 'Mudsticks'; S03E31 'The Angels' Share' (TV Guide spellings).
 // Scope through S03E42 'Dead and Alive' (26 November 1996).
+// Editorial pass: repeated-plot questions removed, hospital nurse and finale subplot added.
 'use strict';
 const questions = [
   {
@@ -373,14 +374,14 @@ const questions = [
     "id": "tv_32167",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (Series 3), what makes it particularly difficult for outside police to secure help during the hospital siege?",
+    "question": "In Blue Heelers (Series 3), which nurse works with Maggie and Dr Hamilton to safeguard the pregnant hostage?",
     "answers": [
-      "A railway strike blocks travel",
-      "The radio mast has been stolen",
-      "Fires have isolated the town",
-      "Heavy snow has closed the roads"
+      "Monica Draper",
+      "Tracy Mitchell",
+      "Helen Katsoulis",
+      "Gina Belfanti"
     ],
-    "correctAnswer": "Fires have isolated the town",
+    "correctAnswer": "Tracy Mitchell",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -399,10 +400,10 @@ const questions = [
       "Episode: S03E02",
       "Episode title: Once Only Withdrawal (2)",
       "Original airdate: 1996-02-12",
-      "Storyline: Bushfires block access to besieged hospital",
-      "Character: Tom Croydon",
-      "Actor: John Wood",
-      "Answer fact: Fires have isolated the town"
+      "Storyline: Nurse Tracy helps protect Augusta amid hospital siege",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: Tracy Mitchell"
     ]
   },
   {
@@ -1669,42 +1670,6 @@ const questions = [
     "id": "tv_32203",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (Series 3), which type of criminal operation upsets Maggie's birthday in 'Happy Families'?",
-    "answers": [
-      "An illegal horse race",
-      "A child-abduction rescue",
-      "A drug bust",
-      "An organised arson ring"
-    ],
-    "correctAnswer": "A drug bust",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 1996",
-      "Episode: S03E12",
-      "Episode title: Happy Families",
-      "Original airdate: 1996-04-16",
-      "Storyline: Drug inquiry embroils family",
-      "Character: Maggie Doyle",
-      "Actor: Lisa McCune",
-      "Answer fact: A drug bust"
-    ]
-  },
-  {
-    "id": "tv_32204",
-    "category": "TV",
-    "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who pays Tom an unexpected visit during the troubled events of 'Happy Families'?",
     "answers": [
       "His estranged brother",
@@ -1738,7 +1703,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32205",
+    "id": "tv_32204",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what crucial piece of equipment fails when the station is short-staffed in 'Priorities'?",
@@ -1774,7 +1739,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32206",
+    "id": "tv_32205",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), why is Tom absent during the troubles in 'Priorities'?",
@@ -1810,7 +1775,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32207",
+    "id": "tv_32206",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what is inside a stolen vehicle that makes the search in 'Priorities' especially urgent?",
@@ -1846,7 +1811,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32208",
+    "id": "tv_32207",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what other missing-person case compounds the station's problems in 'Priorities'?",
@@ -1882,7 +1847,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32209",
+    "id": "tv_32208",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who arrives to replace the recently deceased Wayne in 'A Fair Crack of the Whip (1)'?",
@@ -1918,7 +1883,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32210",
+    "id": "tv_32209",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which actor plays newcomer Jack Woodley in Blue Heelers Series 3?",
@@ -1954,7 +1919,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32211",
+    "id": "tv_32210",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what sort of performer is implicated in making his son steal in 'A Fair Crack of the Whip (1)'?",
@@ -1990,7 +1955,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32212",
+    "id": "tv_32211",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what major family event is Tom anticipating at this point in the series?",
@@ -2026,7 +1991,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32213",
+    "id": "tv_32212",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who disputes PJ's approach to the assault inquiry in 'A Fair Crack of the Whip (2)'?",
@@ -2062,7 +2027,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32214",
+    "id": "tv_32213",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who is the victim of a brutal assault in 'A Fair Crack of the Whip (2)'?",
@@ -2098,43 +2063,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32215",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers (Series 3), what earlier family connection makes the assault victim particularly relevant to police in 'A Fair Crack of the Whip (2)'?",
-    "answers": [
-      "She is the commissioner's mother",
-      "She is Nick's aunt",
-      "She is the widow of a police officer",
-      "She is Tom's daughter"
-    ],
-    "correctAnswer": "She is the widow of a police officer",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 1996",
-      "Episode: S03E15",
-      "Episode title: A Fair Crack of the Whip (2)",
-      "Original airdate: 1996-05-07",
-      "Storyline: Attacked woman has police family link",
-      "Character: Jack Woodley",
-      "Actor: Frankie J. Holden",
-      "Answer fact: She is the widow of a police officer"
-    ]
-  },
-  {
-    "id": "tv_32216",
+    "id": "tv_32214",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which rural sporting event prompts a police investigation in 'Under Pressure'?",
@@ -2170,7 +2099,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32217",
+    "id": "tv_32215",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what does PJ suspect Jack of doing during 'Under Pressure'?",
@@ -2206,7 +2135,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32218",
+    "id": "tv_32216",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what dispute precedes the discovery of Jack's behaviour in 'Under Pressure'?",
@@ -2242,7 +2171,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32219",
+    "id": "tv_32217",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what family naming discussion runs alongside the investigation in 'Under Pressure'?",
@@ -2278,7 +2207,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32220",
+    "id": "tv_32218",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what does PJ discover about evidence supplied by Jack in 'Fight Dirty'?",
@@ -2314,7 +2243,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32221",
+    "id": "tv_32219",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who is due to prosecute the case involving Dean Crocker in 'Fight Dirty'?",
@@ -2350,7 +2279,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32222",
+    "id": "tv_32220",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what type of theft are Adam and Jack investigating during 'Fight Dirty'?",
@@ -2386,43 +2315,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32223",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers (Series 3), what kind of choice does PJ face after discovering evidence misconduct in 'Fight Dirty'?",
-    "answers": [
-      "Whether to leave the police for farming",
-      "Whether to sell the Imperial",
-      "Whether to expose a fellow officer",
-      "Whether to prosecute his brother"
-    ],
-    "correctAnswer": "Whether to expose a fellow officer",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 1996",
-      "Episode: S03E17",
-      "Episode title: Fight Dirty",
-      "Original airdate: 1996-05-21",
-      "Storyline: PJ must decide how to handle Jack's corruption",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: Whether to expose a fellow officer"
-    ]
-  },
-  {
-    "id": "tv_32224",
+    "id": "tv_32221",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what local cultural event creates problems for Tom and Chris in 'The Art of Deception'?",
@@ -2458,7 +2351,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32225",
+    "id": "tv_32222",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what dispute does Nick try to settle in 'The Art of Deception'?",
@@ -2494,7 +2387,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32226",
+    "id": "tv_32223",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what illegal agricultural activity is PJ searching for in 'The Art of Deception'?",
@@ -2530,7 +2423,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32227",
+    "id": "tv_32224",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who investigates a homicide unofficially in 'Old Sins, Long Shadows'?",
@@ -2566,7 +2459,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32228",
+    "id": "tv_32225",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which type of material does a principal report circulating locally in 'Old Sins, Long Shadows'?",
@@ -2602,7 +2495,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32229",
+    "id": "tv_32226",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which officer handles the school principal's complaint in 'Old Sins, Long Shadows'?",
@@ -2638,7 +2531,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32230",
+    "id": "tv_32227",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what causes a teenager's death in 'In Unity Is Strength'?",
@@ -2674,7 +2567,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32231",
+    "id": "tv_32228",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what action by Chris triggers a strike at the Imperial Hotel?",
@@ -2710,7 +2603,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32232",
+    "id": "tv_32229",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), why had the dismissed cellarman attracted complaints before he lost his job?",
@@ -2746,7 +2639,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32233",
+    "id": "tv_32230",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what union-related role does Nick seek during 'In Unity Is Strength'?",
@@ -2782,7 +2675,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32234",
+    "id": "tv_32231",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who discovers the teenager's body and struggles emotionally with the case?",
@@ -2818,7 +2711,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32235",
+    "id": "tv_32232",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which new probationary constable first arrives in 'The Kremin Factor'?",
@@ -2854,7 +2747,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32236",
+    "id": "tv_32233",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which actress plays the new constable introduced in 'The Kremin Factor'?",
@@ -2890,7 +2783,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32237",
+    "id": "tv_32234",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), how long before the events of 'The Kremin Factor' had a wealthy family's young daughter disappeared?",
@@ -2926,7 +2819,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32238",
+    "id": "tv_32235",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what claim does a young woman make to a wealthy Mount Thomas family in 'The Kremin Factor'?",
@@ -2962,7 +2855,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32239",
+    "id": "tv_32236",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which officer is pleased by Dash's arrival despite Tom's misgivings?",
@@ -2998,7 +2891,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32240",
+    "id": "tv_32237",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), whose attempted suicide raises concerns about care for Clancy in 'Shelter from the Storm'?",
@@ -3034,7 +2927,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32241",
+    "id": "tv_32238",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which vulnerable local man is at risk of losing family support in 'Shelter from the Storm'?",
@@ -3070,43 +2963,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32242",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers (Series 3), what important decision faces Tom in 'Shelter from the Storm'?",
-    "answers": [
-      "Whether to sell his daughter's house",
-      "How to safeguard a disabled young man",
-      "Whether to retire immediately",
-      "How to organise a football final"
-    ],
-    "correctAnswer": "How to safeguard a disabled young man",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 1996",
-      "Episode: S03E22",
-      "Episode title: Shelter from the Storm",
-      "Original airdate: 1996-06-25",
-      "Storyline: Tom faces dilemma about Clancy's care",
-      "Character: Tom Croydon",
-      "Actor: John Wood",
-      "Answer fact: How to safeguard a disabled young man"
-    ]
-  },
-  {
-    "id": "tv_32243",
+    "id": "tv_32239",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what institution has major discipline problems in 'The Principle of the Thing'?",
@@ -3142,7 +2999,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32244",
+    "id": "tv_32240",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what position is held by the newcomer facing mounting problems at the school?",
@@ -3178,7 +3035,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32245",
+    "id": "tv_32241",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what does Maggie do after disappointing academic results in 'The Principle of the Thing'?",
@@ -3214,7 +3071,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32246",
+    "id": "tv_32242",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what kind of old allegation is reopened through recovered memories in 'Mind Games'?",
@@ -3250,7 +3107,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32247",
+    "id": "tv_32243",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what unusual witness provides evidence in a separate assault case in 'Mind Games'?",
@@ -3286,7 +3143,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32248",
+    "id": "tv_32244",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which two officers work with the unusual witness in 'Mind Games'?",
@@ -3322,7 +3179,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32249",
+    "id": "tv_32245",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which investigative partners revisit events from many years earlier in 'Mind Games'?",
@@ -3358,7 +3215,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32250",
+    "id": "tv_32246",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what disturbing object is discovered hanging from a light fitting in 'Duty of Care'?",
@@ -3394,7 +3251,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32251",
+    "id": "tv_32247",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what type of property is the scene of the disturbing incident in 'Duty of Care'?",
@@ -3430,7 +3287,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32252",
+    "id": "tv_32248",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which officer becomes particularly concerned for the children in 'Duty of Care'?",
@@ -3466,7 +3323,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32253",
+    "id": "tv_32249",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what complex household relationship heightens tension in 'Duty of Care'?",
@@ -3502,7 +3359,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32254",
+    "id": "tv_32250",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what kind of performing arts student is central to the missing-person case in 'Other People's Lives'?",
@@ -3538,7 +3395,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32255",
+    "id": "tv_32251",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), whose relationship with a university tutor makes PJ jealous in 'Other People's Lives'?",
@@ -3574,7 +3431,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32256",
+    "id": "tv_32252",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what is the name of Maggie's university tutor who becomes a romantic interest?",
@@ -3610,7 +3467,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32257",
+    "id": "tv_32253",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what happened to the young dancer investigated in 'Other People's Lives'?",
@@ -3646,7 +3503,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32258",
+    "id": "tv_32254",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what unusual skill does the itinerant man suspected in 'A Gift from God' claim to possess?",
@@ -3682,7 +3539,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32259",
+    "id": "tv_32255",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which vulnerable victim is found battered in 'A Gift from God'?",
@@ -3718,7 +3575,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32260",
+    "id": "tv_32256",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what personal connection does the suspect have to Tom's family in 'A Gift from God'?",
@@ -3754,7 +3611,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32261",
+    "id": "tv_32257",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what unrelated good deed does Adam undertake in 'A Gift from God'?",
@@ -3790,7 +3647,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32262",
+    "id": "tv_32258",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), why does Dash behave unusually at the fatal accident in 'Waiting to Happen'?",
@@ -3826,7 +3683,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32263",
+    "id": "tv_32259",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which senior constable helps Dash confront the trauma in 'Waiting to Happen'?",
@@ -3862,7 +3719,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32264",
+    "id": "tv_32260",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what does PJ learn about Maggie's tutor Roman in 'Waiting to Happen'?",
@@ -3898,7 +3755,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32265",
+    "id": "tv_32261",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what professional qualification issue adds to Dash's problems after the crash?",
@@ -3934,7 +3791,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32266",
+    "id": "tv_32262",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what is Siobhan Kennedy's ordinary occupation in 'Bewitched'?",
@@ -3970,7 +3827,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32267",
+    "id": "tv_32263",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what unusual personal belief makes Siobhan a target in 'Bewitched'?",
@@ -4006,7 +3863,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32268",
+    "id": "tv_32264",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what kind of group attacks Siobhan's home and property in 'Bewitched'?",
@@ -4042,7 +3899,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32269",
+    "id": "tv_32265",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which separate death investigation raises questions about Maggie's tutor in 'Bewitched'?",
@@ -4078,7 +3935,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32270",
+    "id": "tv_32266",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what suspected mistreatment is being investigated at a local nursery in 'Mudsticks'?",
@@ -4114,7 +3971,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32271",
+    "id": "tv_32267",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), why is PJ absent when Johnny Kowalski arrives in 'Mudsticks'?",
@@ -4150,7 +4007,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32272",
+    "id": "tv_32268",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which visiting detective temporarily fills PJ's role in 'Mudsticks'?",
@@ -4186,7 +4043,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32273",
+    "id": "tv_32269",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which police officer becomes romantically interested in the temporary detective in 'Mudsticks'?",
@@ -4222,7 +4079,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32274",
+    "id": "tv_32270",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), for whom is Tom seeking a nursery place when he learns of the child-injury inquiry?",
@@ -4258,7 +4115,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32275",
+    "id": "tv_32271",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which kind of valuable stock disappears in 'The Angels' Share'?",
@@ -4294,7 +4151,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32276",
+    "id": "tv_32272",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who attracts Detective Johnny Kowalski's romantic interest instead of Dash in 'The Angels' Share'?",
@@ -4330,43 +4187,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32277",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers (Series 3), what sort of business is the setting for the crime in 'The Angels' Share'?",
-    "answers": [
-      "A winery",
-      "A casino",
-      "A racecourse",
-      "A jewellery shop"
-    ],
-    "correctAnswer": "A winery",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 1996",
-      "Episode: S03E31",
-      "Episode title: The Angels' Share",
-      "Original airdate: 1996-09-10",
-      "Storyline: Wine theft investigated",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: A winery"
-    ]
-  },
-  {
-    "id": "tv_32278",
+    "id": "tv_32273",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what fresh anxiety troubles Tom during 'The Angels' Share'?",
@@ -4402,7 +4223,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32279",
+    "id": "tv_32274",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which form of gambling gets Dash into financial difficulty in 'Something for Nothing'?",
@@ -4438,7 +4259,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32280",
+    "id": "tv_32275",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what purchase prompts Dash to seek money from her colleagues in 'Something for Nothing'?",
@@ -4474,7 +4295,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32281",
+    "id": "tv_32276",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which pair spread rumours to get revenge on Johnny's treatment of women in 'Something for Nothing'?",
@@ -4510,7 +4331,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32282",
+    "id": "tv_32277",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what family relationship is already collapsing in the linked domestic case in 'Something for Nothing'?",
@@ -4546,7 +4367,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32283",
+    "id": "tv_32278",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what type of competition is disrupted by theft and sabotage in 'Winner Takes All'?",
@@ -4582,43 +4403,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32284",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers (Series 3), what two offences complicate the competition in 'Winner Takes All'?",
-    "answers": [
-      "Kidnapping and arson",
-      "Bribery and forgery",
-      "Assault and fraud",
-      "Theft and sabotage"
-    ],
-    "correctAnswer": "Theft and sabotage",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 1996",
-      "Episode: S03E33",
-      "Episode title: Winner Takes All",
-      "Original airdate: 1996-09-24",
-      "Storyline: Saboteur and thief threaten horse race",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: Theft and sabotage"
-    ]
-  },
-  {
-    "id": "tv_32285",
+    "id": "tv_32279",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who returns to Mount Thomas as Johnny's temporary spell draws to a close?",
@@ -4654,7 +4439,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32286",
+    "id": "tv_32280",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which visiting detective's flirtations cause problems for Maggie and Dash in 'Winner Takes All'?",
@@ -4690,7 +4475,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32287",
+    "id": "tv_32281",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what is the nickname of the child who calls the police station in 'I Spy'?",
@@ -4726,7 +4511,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32288",
+    "id": "tv_32282",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), how old is the little boy who seeks help in 'I Spy'?",
@@ -4762,7 +4547,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32289",
+    "id": "tv_32283",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what problem does the caller report about his mother in 'I Spy'?",
@@ -4798,7 +4583,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32290",
+    "id": "tv_32284",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who else needs urgent help in the house during the call in 'I Spy'?",
@@ -4834,7 +4619,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32291",
+    "id": "tv_32285",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what threat is approaching the house while police try to trace the call in 'I Spy'?",
@@ -4870,7 +4655,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32292",
+    "id": "tv_32286",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which computer game are Dash and Adam playing when they damage the police computer in 'Reality Bytes'?",
@@ -4906,7 +4691,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32293",
+    "id": "tv_32287",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what security problem develops after Dash and Adam take the damaged computer for repair?",
@@ -4942,7 +4727,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32294",
+    "id": "tv_32288",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what does the intruder intend to do with information gained from the system in 'Reality Bytes'?",
@@ -4978,7 +4763,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32295",
+    "id": "tv_32289",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what crime becomes linked with the damaged police computer in 'Reality Bytes'?",
@@ -5014,7 +4799,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32296",
+    "id": "tv_32290",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what family conflict is investigated in the first part of 'In the Gun'?",
@@ -5050,7 +4835,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32297",
+    "id": "tv_32291",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which type of offender returns to Mount Thomas and revives Dash's painful memories in 'In the Gun (1)'?",
@@ -5086,7 +4871,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32298",
+    "id": "tv_32292",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which detective becomes the target of the family's anger during the domestic case in 'In the Gun (1)'?",
@@ -5122,7 +4907,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32299",
+    "id": "tv_32293",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who is being harmed by both her husband and boyfriend in the Darcy household?",
@@ -5158,7 +4943,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32300",
+    "id": "tv_32294",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what does the disputed videotape appear to show in 'In the Gun (2)'?",
@@ -5194,7 +4979,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32301",
+    "id": "tv_32295",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which tabloid reporter leads public criticism of the shooting in 'In the Gun (2)'?",
@@ -5230,7 +5015,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32302",
+    "id": "tv_32296",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who sets out to demonstrate that the shooting footage can mislead viewers in 'In the Gun (2)'?",
@@ -5266,7 +5051,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32303",
+    "id": "tv_32297",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what type of future hearing still threatens PJ after the video controversy in 'In the Gun (2)'?",
@@ -5302,7 +5087,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32304",
+    "id": "tv_32298",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what is the name of the woman killed during the contested police shooting?",
@@ -5338,7 +5123,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32305",
+    "id": "tv_32299",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which family member of Dash is found naked after a stag-party prank in 'Buck Naked'?",
@@ -5374,7 +5159,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32306",
+    "id": "tv_32300",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what important family event is due only days after the embarrassing incident in 'Buck Naked'?",
@@ -5410,7 +5195,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32307",
+    "id": "tv_32301",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what does Dash discover about her brother's fiancée in 'Buck Naked'?",
@@ -5446,7 +5231,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32308",
+    "id": "tv_32302",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what does Ian decide about the infidelity despite Dash's objections?",
@@ -5482,7 +5267,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32309",
+    "id": "tv_32303",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what kind of activity does Nick's friend Gordy Muir run in 'Friendly Fire'?",
@@ -5518,7 +5303,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32310",
+    "id": "tv_32304",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which professional group attends Gordy's mock battle in 'Friendly Fire'?",
@@ -5554,7 +5339,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32311",
+    "id": "tv_32305",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what opportunity does Gordy offer his old friend Nick in 'Friendly Fire'?",
@@ -5590,7 +5375,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32312",
+    "id": "tv_32306",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who is hurt during the mock ambush that turns the event into a police matter?",
@@ -5626,7 +5411,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32313",
+    "id": "tv_32307",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), whose death is the subject of the inquest in 'Half a Second'?",
@@ -5662,7 +5447,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32314",
+    "id": "tv_32308",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), whose police career is in serious jeopardy at the inquest in 'Half a Second'?",
@@ -5698,7 +5483,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32315",
+    "id": "tv_32309",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), who provides vital personal support to the under-pressure detective in 'Half a Second'?",
@@ -5734,7 +5519,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32316",
+    "id": "tv_32310",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which annual competition provides the backdrop to a stalking investigation in 'Miss Mount Thomas'?",
@@ -5770,7 +5555,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32317",
+    "id": "tv_32311",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what does a leading contestant initially tell the police in 'Miss Mount Thomas'?",
@@ -5806,7 +5591,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32318",
+    "id": "tv_32312",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what happens to the contestant after raising concerns about being followed?",
@@ -5842,7 +5627,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32319",
+    "id": "tv_32313",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which member of the competition's entourage comes under suspicion?",
@@ -5878,7 +5663,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32320",
+    "id": "tv_32314",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which member of Dash's family urgently needs a donor organ in 'Dead and Alive'?",
@@ -5914,7 +5699,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32321",
+    "id": "tv_32315",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what organ is needed for the transplant at the centre of 'Dead and Alive'?",
@@ -5950,7 +5735,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32322",
+    "id": "tv_32316",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), which relative becomes a potential donor after a serious motorbike crash in 'Dead and Alive'?",
@@ -5986,7 +5771,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32323",
+    "id": "tv_32317",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), what does a dangerous prisoner take when fleeing in 'Dead and Alive'?",
@@ -6022,7 +5807,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32324",
+    "id": "tv_32318",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (Series 3), why is recovering the stolen medical organ urgently time-sensitive in 'Dead and Alive'?",
@@ -6058,18 +5843,18 @@ const questions = [
     ]
   },
   {
-    "id": "tv_32325",
+    "id": "tv_32319",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (Series 3), which officer's family becomes central to the dramatic Series 3 finale?",
+    "question": "In Blue Heelers (Series 3), what seasonal police celebration is approaching as the dramatic finale unfolds?",
     "answers": [
-      "Dash McKinley's",
-      "Jack Woodley's",
-      "PJ Hasham's",
-      "Gabe Greenway's"
+      "An Easter parade",
+      "The station Christmas party",
+      "A police academy graduation",
+      "A retirement dinner"
     ],
-    "correctAnswer": "Dash McKinley's",
-    "difficulty": "Easy",
+    "correctAnswer": "The station Christmas party",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -6087,14 +5872,14 @@ const questions = [
       "Episode: S03E42",
       "Episode title: Dead and Alive",
       "Original airdate: 1996-11-26",
-      "Storyline: Dash family in medical crisis",
+      "Storyline: Christmas party approaches during transplant crisis",
       "Character: Tom Croydon",
       "Actor: John Wood",
-      "Answer fact: Dash McKinley's"
+      "Answer fact: The station Christmas party"
     ]
   }
 ];
-if(questions.length!==169||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==163||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>q.id!=='tv_'+(32157+i)||q.category!=='TV'||q.topic!=='Blue Heelers'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
