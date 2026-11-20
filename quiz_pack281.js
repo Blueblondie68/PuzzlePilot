@@ -143,7 +143,7 @@
      const item = {
        id,
        category: 'Television',
-       question,
+       question: question.includes('24') ? question : 'In 24 (Season 5), ' + question.charAt(0).toLowerCase() + question.slice(1),
        answers,
        correctAnswer,
        difficulty,
@@ -159,11 +159,1460 @@
    })
  );
 
- const EXPECTED_COUNT = 84;
+ 
+// Editorial audit of Pack 281 — 24 Season 5, 20 November 2026
+// Preserve original IDs tv_11416–tv_11499; append verified episode events.
+// Research checked against the 24 Season 5 episode synopses and aired order:
+// https://en.wikipedia.org/wiki/24_season_5
+// https://www.tvmaze.com/shows/167/24/episodeguide
+const auditAdditions = [
+  {
+    "id": "tv_35170",
+    "category": "Television",
+    "question": "In 24 (Season 5), who is Chloe O'Brian secretly dating when David Palmer is assassinated?",
+    "answers": [
+      "Spenser Wolff",
+      "Morris O'Brian",
+      "Curtis Manning",
+      "Derek Huxley"
+    ],
+    "correctAnswer": "Spenser Wolff",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 01",
+      "Day 5 hour 07:00",
+      "Characters: Chloe O'Brian;Spenser Wolff",
+      "Storyline: Chloe's private relationship",
+      "Question focus: Who is Chloe O'Brian secretly dating when David Palmer is assassinated?",
+      "Answer focus: Spenser Wolff",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35171",
+    "category": "Television",
+    "question": "In 24 (Season 5), why does Derek Huxley secretly follow Jack after he leaves Diane's home?",
+    "answers": [
+      "He wants a job with CTU",
+      "He suspects Jack is concealing his real identity",
+      "He believes Jack stole his car",
+      "He wants to join Chloe's team"
+    ],
+    "correctAnswer": "He suspects Jack is concealing his real identity",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 01",
+      "Day 5 hour 07:00",
+      "Characters: Derek Huxley;Jack Bauer",
+      "Storyline: Derek follows Jack",
+      "Question focus: Why does Derek Huxley secretly follow Jack after he leaves Diane's home?",
+      "Answer focus: He suspects Jack is concealing his real identity",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35172",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Jack get into Wayne Palmer's apartment while it is surrounded by investigators?",
+    "answers": [
+      "He arrives disguised as a television reporter",
+      "He slips through a sewer",
+      "He poses as an FBI agent",
+      "He presents an order signed by President Logan"
+    ],
+    "correctAnswer": "He poses as an FBI agent",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 02",
+      "Day 5 hour 08:00",
+      "Characters: Jack Bauer;Wayne Palmer",
+      "Storyline: FBI disguise",
+      "Question focus: How does Jack get into Wayne Palmer's apartment while it is surrounded by investigators?",
+      "Answer focus: He poses as an FBI agent",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35173",
+    "category": "Television",
+    "question": "In 24 (Season 5), what happens to Chloe after she helps Jack escape the police perimeter around Wayne Palmer's building?",
+    "answers": [
+      "She leaves the country",
+      "She is hospitalised after an explosion",
+      "She is promoted to CTU director",
+      "She is arrested and taken to CTU"
+    ],
+    "correctAnswer": "She is arrested and taken to CTU",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 02",
+      "Day 5 hour 08:00",
+      "Characters: Chloe O'Brian;Jack Bauer",
+      "Storyline: Chloe arrested",
+      "Question focus: What happens to Chloe after she helps Jack escape the police perimeter around Wayne Palmer's building?",
+      "Answer focus: She is arrested and taken to CTU",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35174",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Chloe help Jack save Derek during the airport hostage standoff?",
+    "answers": [
+      "She remotely detonates a terrorist's explosive vest",
+      "She cuts the electricity to the whole airport",
+      "She jams the gunman's weapon",
+      "She impersonates President Logan over the radio"
+    ],
+    "correctAnswer": "She remotely detonates a terrorist's explosive vest",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 03",
+      "Day 5 hour 09:00",
+      "Characters: Chloe O'Brian;Jack Bauer;Derek Huxley",
+      "Storyline: Airport rescue diversion",
+      "Question focus: How does Chloe help Jack save Derek during the airport hostage standoff?",
+      "Answer focus: She remotely detonates a terrorist's explosive vest",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35175",
+    "category": "Television",
+    "question": "In 24 (Season 5), who secretly warns the airport terrorists that Jack is among the hostages?",
+    "answers": [
+      "Bill Buchanan",
+      "Walt Cummings",
+      "Aaron Pierce",
+      "Mike Novick"
+    ],
+    "correctAnswer": "Walt Cummings",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 03",
+      "Day 5 hour 09:00",
+      "Characters: Walt Cummings;Anton Beresch",
+      "Storyline: Leak to hostage-takers",
+      "Question focus: Who secretly warns the airport terrorists that Jack is among the hostages?",
+      "Answer focus: Walt Cummings",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35176",
+    "category": "Television",
+    "question": "In 24 (Season 5), what hidden clue in Jack's message makes CTU change its planned entrance to the airport?",
+    "answers": [
+      "He transmits an accurate map of the roof",
+      "He secretly sends a photograph of the terrorists",
+      "His wording indicates he is being forced to mislead them",
+      "He repeats the name of a captured agent"
+    ],
+    "correctAnswer": "His wording indicates he is being forced to mislead them",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 04",
+      "Day 5 hour 10:00",
+      "Characters: Jack Bauer;Lynn McGill",
+      "Storyline: Covert hostage warning",
+      "Question focus: What hidden clue in Jack's message makes CTU change its planned entrance to the airport?",
+      "Answer focus: His wording indicates he is being forced to mislead them",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35177",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Walt Cummings seize the evidence Martha Logan finds about David Palmer's call?",
+    "answers": [
+      "He persuades her to burn the papers",
+      "He copies it from CTU's mainframe",
+      "He has the Russian president confiscate it",
+      "He knocks her unconscious and takes the paper"
+    ],
+    "correctAnswer": "He knocks her unconscious and takes the paper",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 04",
+      "Day 5 hour 10:00",
+      "Characters: Walt Cummings;Martha Logan",
+      "Storyline: Martha attacked",
+      "Question focus: How does Walt Cummings seize the evidence Martha Logan finds about David Palmer's call?",
+      "Answer focus: He knocks her unconscious and takes the paper",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35178",
+    "category": "Television",
+    "question": "In 24 (Season 5), which CTU employee helps a hired assassin gain access to Jack?",
+    "answers": [
+      "Spenser Wolff",
+      "Edgar Stiles",
+      "Curtis Manning",
+      "Karen Hayes"
+    ],
+    "correctAnswer": "Spenser Wolff",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 05",
+      "Day 5 hour 11:00",
+      "Characters: Spenser Wolff;Jack Bauer",
+      "Storyline: Assassin's inside help",
+      "Question focus: Which CTU employee helps a hired assassin gain access to Jack?",
+      "Answer focus: Spenser Wolff",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35179",
+    "category": "Television",
+    "question": "In 24 (Season 5), where is Jack lured when Cummings' assassin attacks him inside CTU?",
+    "answers": [
+      "The car park",
+      "The medical area",
+      "The computer control room",
+      "The rooftop helipad"
+    ],
+    "correctAnswer": "The medical area",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 05",
+      "Day 5 hour 11:00",
+      "Characters: Jack Bauer;Walt Cummings",
+      "Storyline: CTU attempted murder",
+      "Question focus: Where is Jack lured when Cummings' assassin attacks him inside CTU?",
+      "Answer focus: The medical area",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35180",
+    "category": "Television",
+    "question": "In 24 (Season 5), what was Walt Cummings' original plan for the stolen nerve gas?",
+    "answers": [
+      "Sell it to an overseas pharmaceutical company",
+      "Use it to poison the White House",
+      "Have separatists deploy it against Russians and prompt US intervention",
+      "Hide it until after the next presidential election"
+    ],
+    "correctAnswer": "Have separatists deploy it against Russians and prompt US intervention",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 06",
+      "Day 5 hour 12:00",
+      "Characters: Walt Cummings;Charles Logan",
+      "Storyline: Hidden military scheme",
+      "Question focus: What was Walt Cummings' original plan for the stolen nerve gas?",
+      "Answer focus: Have separatists deploy it against Russians and prompt US intervention",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35181",
+    "category": "Television",
+    "question": "In 24 (Season 5), which Secret Service agent helps Jack confront Walt Cummings after Logan orders him detained?",
+    "answers": [
+      "Mike Novick",
+      "Curtis Manning",
+      "Wayne Palmer",
+      "Aaron Pierce"
+    ],
+    "correctAnswer": "Aaron Pierce",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 06",
+      "Day 5 hour 12:00",
+      "Characters: Aaron Pierce;Jack Bauer",
+      "Storyline: Pierce helps Jack",
+      "Question focus: Which Secret Service agent helps Jack confront Walt Cummings after Logan orders him detained?",
+      "Answer focus: Aaron Pierce",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35182",
+    "category": "Television",
+    "question": "In 24 (Season 5), who kills Jacob Rossler during the attempted deal to help CTU trace the nerve gas?",
+    "answers": [
+      "The captive girl found in his apartment",
+      "Ivan Erwich",
+      "Curtis Manning",
+      "Lynn McGill"
+    ],
+    "correctAnswer": "The captive girl found in his apartment",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 07",
+      "Day 5 hour 13:00",
+      "Characters: Jacob Rossler;Jack Bauer",
+      "Storyline: Rossler killed",
+      "Question focus: Who kills Jacob Rossler during the attempted deal to help CTU trace the nerve gas?",
+      "Answer focus: The captive girl found in his apartment",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35183",
+    "category": "Television",
+    "question": "In 24 (Season 5), how is Lynn McGill's CTU access card stolen?",
+    "answers": [
+      "A terrorist steals it from his desk",
+      "His sister's boyfriend robs him of his wallet",
+      "Chloe accidentally gives it to a suspect",
+      "He loses it during the airport evacuation"
+    ],
+    "correctAnswer": "His sister's boyfriend robs him of his wallet",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 07",
+      "Day 5 hour 13:00",
+      "Characters: Lynn McGill;Jenny McGill",
+      "Storyline: Stolen CTU pass",
+      "Question focus: How is Lynn McGill's CTU access card stolen?",
+      "Answer focus: His sister's boyfriend robs him of his wallet",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35184",
+    "category": "Television",
+    "question": "In 24 (Season 5), how is disgraced White House chief of staff Walt Cummings found dead?",
+    "answers": [
+      "In a helicopter crash",
+      "After a shootout with CTU",
+      "By an apparent suicide",
+      "In the hospital nerve-gas attack"
+    ],
+    "correctAnswer": "By an apparent suicide",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 07",
+      "Day 5 hour 13:00",
+      "Characters: Walt Cummings",
+      "Storyline: Cummings' death",
+      "Question focus: How is disgraced White House chief of staff Walt Cummings found dead?",
+      "Answer focus: By an apparent suicide",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35185",
+    "category": "Television",
+    "question": "In 24 (Season 5), what appalling choice does President Logan authorise during the shopping-centre nerve-gas operation?",
+    "answers": [
+      "Evacuate Los Angeles without informing CTU",
+      "Use military missiles against the shops",
+      "Release the terrorist leader without conditions",
+      "Allow civilians to die to preserve Jack's cover"
+    ],
+    "correctAnswer": "Allow civilians to die to preserve Jack's cover",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 08",
+      "Day 5 hour 14:00",
+      "Characters: Charles Logan;Jack Bauer",
+      "Storyline: Shopping-centre decision",
+      "Question focus: What appalling choice does President Logan authorise during the shopping-centre nerve-gas operation?",
+      "Answer focus: Allow civilians to die to preserve Jack's cover",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35186",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Jack defy the order that could sacrifice shoppers to the terrorists?",
+    "answers": [
+      "He gives an incorrect activation code for the gas",
+      "He orders Curtis to destroy CTU's computer systems",
+      "He switches places with a hostage",
+      "He promises the terrorists safe passage"
+    ],
+    "correctAnswer": "He gives an incorrect activation code for the gas",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 08",
+      "Day 5 hour 14:00",
+      "Characters: Jack Bauer;Ivan Erwich",
+      "Storyline: Jack defies Logan",
+      "Question focus: How does Jack defy the order that could sacrifice shoppers to the terrorists?",
+      "Answer focus: He gives an incorrect activation code for the gas",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35187",
+    "category": "Television",
+    "question": "In 24 (Season 5), what does James Nathanson give Jack moments before he dies?",
+    "answers": [
+      "A vial of nerve-gas antidote",
+      "A computer chip leading to Christopher Henderson",
+      "The original treaty signed by Suvarov",
+      "A recording of Logan's final confession"
+    ],
+    "correctAnswer": "A computer chip leading to Christopher Henderson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 09",
+      "Day 5 hour 15:00",
+      "Characters: James Nathanson;Jack Bauer",
+      "Storyline: Nathanson's last lead",
+      "Question focus: What does James Nathanson give Jack moments before he dies?",
+      "Answer focus: A computer chip leading to Christopher Henderson",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35188",
+    "category": "Television",
+    "question": "In 24 (Season 5), why does Martha Logan climb into the Suvarovs' limousine before it is attacked?",
+    "answers": [
+      "To secretly leave the United States",
+      "To protect a hidden recording in her luggage",
+      "To force Charles Logan to prevent the ambush",
+      "To confront a suspected CTU mole"
+    ],
+    "correctAnswer": "To force Charles Logan to prevent the ambush",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 09",
+      "Day 5 hour 15:00",
+      "Characters: Martha Logan;Charles Logan;Yuri Suvarov",
+      "Storyline: Martha risks her life",
+      "Question focus: Why does Martha Logan climb into the Suvarovs' limousine before it is attacked?",
+      "Answer focus: To force Charles Logan to prevent the ambush",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35189",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Christopher Henderson try to kill Jack after showing him a computer in an underground room?",
+    "answers": [
+      "He poisons Jack's drinking water",
+      "He floods the room with nerve gas",
+      "He sends Jack into a missile silo",
+      "He locks Jack inside and sets a bomb"
+    ],
+    "correctAnswer": "He locks Jack inside and sets a bomb",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 10",
+      "Day 5 hour 16:00",
+      "Characters: Christopher Henderson;Jack Bauer",
+      "Storyline: Henderson's booby trap",
+      "Question focus: How does Christopher Henderson try to kill Jack after showing him a computer in an underground room?",
+      "Answer focus: He locks Jack inside and sets a bomb",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35190",
+    "category": "Television",
+    "question": "In 24 (Season 5), who moves to remove Lynn McGill from command after his interference with the motorcade warning?",
+    "answers": [
+      "Audrey Raines and Curtis Manning",
+      "Martha Logan and Mike Novick",
+      "Chloe O'Brian and Kim Bauer",
+      "Christopher Henderson and Bill Buchanan"
+    ],
+    "correctAnswer": "Audrey Raines and Curtis Manning",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 10",
+      "Day 5 hour 16:00",
+      "Characters: Lynn McGill;Audrey Raines;Curtis Manning",
+      "Storyline: McGill removed",
+      "Question focus: Who moves to remove Lynn McGill from command after his interference with the motorcade warning?",
+      "Answer focus: Audrey Raines and Curtis Manning",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35191",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Tony learn of Michelle Dessler's death after doctors ask CTU to conceal it?",
+    "answers": [
+      "Jack tells him in a hospital corridor",
+      "He secretly checks CTU's records",
+      "Martha Logan calls his doctor",
+      "A terrorist confesses during interrogation"
+    ],
+    "correctAnswer": "He secretly checks CTU's records",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 11",
+      "Day 5 hour 17:00",
+      "Characters: Tony Almeida;Michelle Dessler",
+      "Storyline: Tony learns the truth",
+      "Question focus: How does Tony learn of Michelle Dessler's death after doctors ask CTU to conceal it?",
+      "Answer focus: He secretly checks CTU's records",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35192",
+    "category": "Television",
+    "question": "In 24 (Season 5), how is the attempted nerve-gas attack on a hospital stopped?",
+    "answers": [
+      "Jack diverts the gas into an empty bus",
+      "The attackers surrender at the entrance",
+      "Curtis's team locates and secures the canister",
+      "A doctor activates a sprinkler system"
+    ],
+    "correctAnswer": "Curtis's team locates and secures the canister",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 11",
+      "Day 5 hour 17:00",
+      "Characters: Curtis Manning;Vladimir Bierko",
+      "Storyline: Hospital attack foiled",
+      "Question focus: How is the attempted nerve-gas attack on a hospital stopped?",
+      "Answer focus: Curtis's team locates and secures the canister",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35193",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Kim Bauer react on discovering that Jack has been alive while she believed him dead?",
+    "answers": [
+      "She immediately agrees to join CTU",
+      "She asks him to leave Diane Huxley",
+      "She tells him she has known his secret all along",
+      "She is upset that he kept the truth from her"
+    ],
+    "correctAnswer": "She is upset that he kept the truth from her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 12",
+      "Day 5 hour 18:00",
+      "Characters: Kim Bauer;Jack Bauer",
+      "Storyline: Unhappy reunion",
+      "Question focus: How does Kim Bauer react on discovering that Jack has been alive while she believed him dead?",
+      "Answer focus: She is upset that he kept the truth from her",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35194",
+    "category": "Television",
+    "question": "In 24 (Season 5), where does the terrorist plant the canister that poisons CTU headquarters?",
+    "answers": [
+      "Near the building's ventilation system",
+      "Beneath the director's desk",
+      "Inside a parked CTU helicopter",
+      "At the front gate security booth"
+    ],
+    "correctAnswer": "Near the building's ventilation system",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 12",
+      "Day 5 hour 18:00",
+      "Characters: CTU;Lynn McGill",
+      "Storyline: Gas infiltration",
+      "Question focus: Where does the terrorist plant the canister that poisons CTU headquarters?",
+      "Answer focus: Near the building's ventilation system",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35195",
+    "category": "Television",
+    "question": "In 24 (Season 5), who does Tony try to kill in revenge for Michelle's death while CTU is under quarantine?",
+    "answers": [
+      "Charles Logan",
+      "Christopher Henderson",
+      "Ivan Erwich",
+      "Aaron Pierce"
+    ],
+    "correctAnswer": "Christopher Henderson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 13",
+      "Day 5 hour 19:00",
+      "Characters: Tony Almeida;Michelle Dessler;Christopher Henderson",
+      "Storyline: Tony seeks revenge",
+      "Question focus: Who does Tony try to kill in revenge for Michelle's death while CTU is under quarantine?",
+      "Answer focus: Christopher Henderson",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35196",
+    "category": "Television",
+    "question": "In 24 (Season 5), what must Lynn McGill do to restore ventilation to CTU after the nerve-gas attack?",
+    "answers": [
+      "Climb onto the roof and repair an aerial",
+      "Switch off all of CTU's computers",
+      "Operate the controls while exposing himself to the gas",
+      "Contact a gas company for emergency repairs"
+    ],
+    "correctAnswer": "Operate the controls while exposing himself to the gas",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 13",
+      "Day 5 hour 19:00",
+      "Characters: Lynn McGill;CTU",
+      "Storyline: Fatal ventilation decision",
+      "Question focus: What must Lynn McGill do to restore ventilation to CTU after the nerve-gas attack?",
+      "Answer focus: Operate the controls while exposing himself to the gas",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35197",
+    "category": "Television",
+    "question": "In 24 (Season 5), what does Jack offer German operative Theo Stoller in return for information about Collette Stenger?",
+    "answers": [
+      "Control of CTU for a day",
+      "A presidential pardon for Bierko",
+      "A stolen diplomatic passport",
+      "A sensitive NSA intelligence list"
+    ],
+    "correctAnswer": "A sensitive NSA intelligence list",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 14",
+      "Day 5 hour 20:00",
+      "Characters: Theo Stoller;Collette Stenger;Jack Bauer",
+      "Storyline: Trade for Stenger",
+      "Question focus: What does Jack offer German operative Theo Stoller in return for information about Collette Stenger?",
+      "Answer focus: A sensitive NSA intelligence list",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35198",
+    "category": "Television",
+    "question": "In 24 (Season 5), who is falsely implicated by Collette Stenger as her collaborator inside CTU?",
+    "answers": [
+      "Audrey Raines",
+      "Chloe O'Brian",
+      "Karen Hayes",
+      "Kim Bauer"
+    ],
+    "correctAnswer": "Audrey Raines",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 14",
+      "Day 5 hour 20:00",
+      "Characters: Collette Stenger;Audrey Raines",
+      "Storyline: Audrey framed",
+      "Question focus: Who is falsely implicated by Collette Stenger as her collaborator inside CTU?",
+      "Answer focus: Audrey Raines",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35199",
+    "category": "Television",
+    "question": "In 24 (Season 5), what past relationship makes Collette's accusation against Audrey appear plausible?",
+    "answers": [
+      "Audrey had been married to Vladimir Bierko",
+      "Audrey once had a brief affair with Walt Cummings",
+      "Audrey was once employed by Lynn McGill",
+      "Audrey had met James Nathanson in Russia"
+    ],
+    "correctAnswer": "Audrey once had a brief affair with Walt Cummings",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 15",
+      "Day 5 hour 21:00",
+      "Characters: Audrey Raines;Walt Cummings",
+      "Storyline: Old relationship exploited",
+      "Question focus: What past relationship makes Collette's accusation against Audrey appear plausible?",
+      "Answer focus: Audrey once had a brief affair with Walt Cummings",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35200",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Jack clear Audrey of Collette Stenger's allegations?",
+    "answers": [
+      "He asks President Logan to pardon Audrey",
+      "He proves Audrey was abroad during the kidnapping",
+      "He exposes another undisclosed link between Collette and Henderson",
+      "He finds a second agent who confesses"
+    ],
+    "correctAnswer": "He exposes another undisclosed link between Collette and Henderson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 15",
+      "Day 5 hour 21:00",
+      "Characters: Jack Bauer;Audrey Raines;Collette Stenger",
+      "Storyline: Audrey cleared",
+      "Question focus: How does Jack clear Audrey of Collette Stenger's allegations?",
+      "Answer focus: He exposes another undisclosed link between Collette and Henderson",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35201",
+    "category": "Television",
+    "question": "In 24 (Season 5), whose abduction forces Evelyn Martin to cooperate with Christopher Henderson?",
+    "answers": [
+      "Her sister Martha",
+      "Her husband Aaron",
+      "Her colleague Karen",
+      "Her young daughter Amy"
+    ],
+    "correctAnswer": "Her young daughter Amy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 16",
+      "Day 5 hour 22:00",
+      "Characters: Evelyn Martin;Amy Martin;Christopher Henderson",
+      "Storyline: Evelyn's daughter threatened",
+      "Question focus: Whose abduction forces Evelyn Martin to cooperate with Christopher Henderson?",
+      "Answer focus: Her young daughter Amy",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35202",
+    "category": "Television",
+    "question": "In 24 (Season 5), what condition does Audrey set before signing a statement used to remove Bill Buchanan?",
+    "answers": [
+      "Chloe must remain at CTU to help Jack",
+      "Jack must be reinstated as director",
+      "All suspects must be released",
+      "The President must resign"
+    ],
+    "correctAnswer": "Chloe must remain at CTU to help Jack",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 16",
+      "Day 5 hour 22:00",
+      "Characters: Audrey Raines;Bill Buchanan;Chloe O'Brian",
+      "Storyline: Keeping Chloe at CTU",
+      "Question focus: What condition does Audrey set before signing a statement used to remove Bill Buchanan?",
+      "Answer focus: Chloe must remain at CTU to help Jack",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35203",
+    "category": "Television",
+    "question": "In 24 (Season 5), how do Jack and Wayne gain access to the evidence in the bank's deposit box?",
+    "answers": [
+      "They win over the bank manager by offering him a promotion",
+      "They take a bank employee hostage and force him to help",
+      "They use a key stolen from the Russian president",
+      "They arrive with a warrant signed by Logan"
+    ],
+    "correctAnswer": "They take a bank employee hostage and force him to help",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 17",
+      "Day 5 hour 23:00",
+      "Characters: Jack Bauer;Wayne Palmer",
+      "Storyline: Recovering the tape",
+      "Question focus: How do Jack and Wayne gain access to the evidence in the bank's deposit box?",
+      "Answer focus: They take a bank employee hostage and force him to help",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35204",
+    "category": "Television",
+    "question": "In 24 (Season 5), how do Henderson's men find Jack and Wayne at the bank?",
+    "answers": [
+      "They track a signal from Chloe's computer",
+      "The bank manager calls them on Logan's orders",
+      "They have interrogated Evelyn Martin",
+      "They follow Audrey from CTU"
+    ],
+    "correctAnswer": "They have interrogated Evelyn Martin",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 17",
+      "Day 5 hour 23:00",
+      "Characters: Christopher Henderson;Evelyn Martin;Jack Bauer",
+      "Storyline: Bank ambush",
+      "Question focus: How do Henderson's men find Jack and Wayne at the bank?",
+      "Answer focus: They have interrogated Evelyn Martin",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35205",
+    "category": "Television",
+    "question": "In 24 (Season 5), what does James Heller intend to do with the recording implicating President Logan?",
+    "answers": [
+      "Destroy it to protect Logan",
+      "Play it on national television immediately",
+      "Give it to the Russian ambassador",
+      "Use it to force Logan to resign without a public trial"
+    ],
+    "correctAnswer": "Use it to force Logan to resign without a public trial",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 18",
+      "Day 5 hour 00:00",
+      "Characters: James Heller;Charles Logan",
+      "Storyline: Heller's private deal",
+      "Question focus: What does James Heller intend to do with the recording implicating President Logan?",
+      "Answer focus: Use it to force Logan to resign without a public trial",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35206",
+    "category": "Television",
+    "question": "In 24 (Season 5), why does Jack surrender the incriminating recording to Henderson's men?",
+    "answers": [
+      "Audrey is taken hostage and wounded",
+      "Heller promises to destroy CTU",
+      "The tape has already been erased",
+      "Jack is offered a new identity"
+    ],
+    "correctAnswer": "Audrey is taken hostage and wounded",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 18",
+      "Day 5 hour 00:00",
+      "Characters: Jack Bauer;Audrey Raines;Christopher Henderson",
+      "Storyline: Recording lost to Henderson",
+      "Question focus: Why does Jack surrender the incriminating recording to Henderson's men?",
+      "Answer focus: Audrey is taken hostage and wounded",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35207",
+    "category": "Television",
+    "question": "In 24 (Season 5), what drastic action does Heller take when Henderson threatens to destroy his car from the air?",
+    "answers": [
+      "He hijacks a police helicopter",
+      "He drives his car into a river",
+      "He hides inside a crowded supermarket",
+      "He turns himself in to CTU"
+    ],
+    "correctAnswer": "He drives his car into a river",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 19",
+      "Day 5 hour 01:00",
+      "Characters: James Heller;Christopher Henderson",
+      "Storyline: Heller's river escape",
+      "Question focus: What drastic action does Heller take when Henderson threatens to destroy his car from the air?",
+      "Answer focus: He drives his car into a river",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35208",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Jack force the passenger aircraft crew to restore air to the area where he is trapped?",
+    "answers": [
+      "He breaks the aircraft's radio",
+      "He threatens to release nerve gas",
+      "He diverts the aircraft towards a crash",
+      "He activates the fire-suppression system"
+    ],
+    "correctAnswer": "He diverts the aircraft towards a crash",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 20",
+      "Day 5 hour 02:00",
+      "Characters: Jack Bauer",
+      "Storyline: Aircraft showdown",
+      "Question focus: How does Jack force the passenger aircraft crew to restore air to the area where he is trapped?",
+      "Answer focus: He diverts the aircraft towards a crash",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35209",
+    "category": "Television",
+    "question": "In 24 (Season 5), which member of the passenger aircraft's crew actually has the recording Jack needs?",
+    "answers": [
+      "The cabin manager",
+      "The chief engineer",
+      "The navigator",
+      "The co-pilot"
+    ],
+    "correctAnswer": "The co-pilot",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 20",
+      "Day 5 hour 02:00",
+      "Characters: Jack Bauer;Christopher Henderson",
+      "Storyline: Recording hidden on plane",
+      "Question focus: Which member of the passenger aircraft's crew actually has the recording Jack needs?",
+      "Answer focus: The co-pilot",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35210",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Curtis Manning help Jack after the aircraft is forced to land on a highway?",
+    "answers": [
+      "He secretly extracts Jack before the Army can arrest him",
+      "He flies Jack out in a medical helicopter",
+      "He hands Jack to the Secret Service",
+      "He destroys the aircraft's cockpit recordings"
+    ],
+    "correctAnswer": "He secretly extracts Jack before the Army can arrest him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 21",
+      "Day 5 hour 03:00",
+      "Characters: Curtis Manning;Jack Bauer",
+      "Storyline: Jack's escape from authorities",
+      "Question focus: How does Curtis Manning help Jack after the aircraft is forced to land on a highway?",
+      "Answer focus: He secretly extracts Jack before the Army can arrest him",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35211",
+    "category": "Television",
+    "question": "In 24 (Season 5), what does Miles Papazian gain by secretly agreeing to erase evidence against President Logan?",
+    "answers": [
+      "A presidential pardon for his brother",
+      "A promised promotion",
+      "Control of a new military aircraft",
+      "An ambassadorship in Russia"
+    ],
+    "correctAnswer": "A promised promotion",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 21",
+      "Day 5 hour 03:00",
+      "Characters: Miles Papazian;Charles Logan",
+      "Storyline: Miles' betrayal",
+      "Question focus: What does Miles Papazian gain by secretly agreeing to erase evidence against President Logan?",
+      "Answer focus: A promised promotion",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35212",
+    "category": "Television",
+    "question": "In 24 (Season 5), what does Henderson demand as a condition of helping CTU stop Bierko's submarine attack?",
+    "answers": [
+      "Full custody of the captured President",
+      "A job as CTU director",
+      "A chance to disappear under a new identity",
+      "Exclusive control over the submarine"
+    ],
+    "correctAnswer": "A chance to disappear under a new identity",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 22",
+      "Day 5 hour 04:00",
+      "Characters: Christopher Henderson;Jack Bauer",
+      "Storyline: Henderson's escape bargain",
+      "Question focus: What does Henderson demand as a condition of helping CTU stop Bierko's submarine attack?",
+      "Answer focus: A chance to disappear under a new identity",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35213",
+    "category": "Television",
+    "question": "In 24 (Season 5), who saves Aaron Pierce when Logan's agents try to have him killed?",
+    "answers": [
+      "Karen Hayes",
+      "Kim Bauer",
+      "Audrey Raines",
+      "Martha Logan"
+    ],
+    "correctAnswer": "Martha Logan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 22",
+      "Day 5 hour 04:00",
+      "Characters: Aaron Pierce;Martha Logan",
+      "Storyline: Pierce saved",
+      "Question focus: Who saves Aaron Pierce when Logan's agents try to have him killed?",
+      "Answer focus: Martha Logan",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35214",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does CTU get aboard the Russian submarine to stop Bierko?",
+    "answers": [
+      "An engineer aboard opens the hatch for them",
+      "Jack swims in through a torpedo tube",
+      "The captain gives them a radio code",
+      "A rescue helicopter cuts through the deck"
+    ],
+    "correctAnswer": "An engineer aboard opens the hatch for them",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 23",
+      "Day 5 hour 05:00",
+      "Characters: Jack Bauer;Christopher Henderson;Vladimir Bierko",
+      "Storyline: Submarine boarding",
+      "Question focus: How does CTU get aboard the Russian submarine to stop Bierko?",
+      "Answer focus: An engineer aboard opens the hatch for them",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35215",
+    "category": "Television",
+    "question": "In 24 (Season 5), what is revealed when Henderson tries to shoot Jack after the submarine battle?",
+    "answers": [
+      "Jack is wearing a bulletproof vest",
+      "His pistol has no ammunition",
+      "The weapon is a replica",
+      "The safety catch is broken"
+    ],
+    "correctAnswer": "His pistol has no ammunition",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 23",
+      "Day 5 hour 05:00",
+      "Characters: Christopher Henderson;Jack Bauer",
+      "Storyline: Henderson's final betrayal",
+      "Question focus: What is revealed when Henderson tries to shoot Jack after the submarine battle?",
+      "Answer focus: His pistol has no ammunition",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35216",
+    "category": "Television",
+    "question": "In 24 (Season 5), how does Jack get aboard Marine One to confront President Logan?",
+    "answers": [
+      "He uses a presidential access card",
+      "He hides in a medical equipment box",
+      "He disguises himself as one of the helicopter pilots",
+      "He enters with the Attorney General"
+    ],
+    "correctAnswer": "He disguises himself as one of the helicopter pilots",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 24",
+      "Day 5 hour 06:00",
+      "Characters: Jack Bauer;Charles Logan",
+      "Storyline: Helicopter disguise",
+      "Question focus: How does Jack get aboard Marine One to confront President Logan?",
+      "Answer focus: He disguises himself as one of the helicopter pilots",
+      "2006",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35217",
+    "category": "Television",
+    "question": "In 24 (Season 5), where is the listening device hidden that records Logan's admission of guilt?",
+    "answers": [
+      "Under his watchstrap",
+      "Inside his mobile telephone",
+      "Behind his lapel badge",
+      "In his pen"
+    ],
+    "correctAnswer": "In his pen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 5",
+      "24 Day 5",
+      "Episode 24",
+      "Day 5 hour 06:00",
+      "Characters: Charles Logan;Martha Logan;Jack Bauer",
+      "Storyline: Concealed recording",
+      "Question focus: Where is the listening device hidden that records Logan's admission of guilt?",
+      "Answer focus: In his pen",
+      "2006",
+      "Viewer storyline"
+    ]
+  }
+];
+questions.push(...auditAdditions);
+const EXPECTED_COUNT = 132;
  if (questions.length !== EXPECTED_COUNT) {
    throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
  }
- if (questions[0].id !== 'tv_11416' || questions[questions.length - 1].id !== 'tv_11499') {
+ if (questions[0].id !== 'tv_11416' || questions[83].id !== 'tv_11499' || questions[questions.length - 1].id !== 'tv_35217') {
    throw new Error('Unexpected question ID range');
  }
  if (new Set(questions.map(q => q.id)).size !== questions.length) {
