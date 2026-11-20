@@ -221,10 +221,10 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), why does Jack conclude that Nina's apparent involvement in the conspiracy has been faked?",
     "answers": [
-      "Her alleged confession was written after her death",
-      "A witness admits to forging her signature",
+      "The encryption was traced to Tony's computer",
+      "A witness withdrew an accusation against Nina",
       "The incriminating data was created while she was away with him",
-      "The suspect's fingerprints belong to another agent"
+      "Milo proved the card had been swapped after the attack"
     ],
     "correctAnswer": "The incriminating data was created while she was away with him",
     "difficulty": "Medium",
@@ -339,14 +339,14 @@ const auditAdditions = [
   {
     "id": "tv_34999",
     "category": "Television",
-    "question": "In 24 (Season 1), what is discovered about the real Alan York after a corpse is examined?",
+    "question": "In 24 (Season 1), how does the impostor posing as Janet York's father silence her in hospital?",
     "answers": [
-      "He was secretly working at CTU",
-      "He had travelled to Washington",
-      "He was already murdered and replaced by an impostor",
-      "He was related to Senator Palmer"
+      "He gives her a fatal injection",
+      "He disconnects her life-support equipment",
+      "He suffocates her in intensive care",
+      "He shoots her during an attempted escape"
     ],
-    "correctAnswer": "He was already murdered and replaced by an impostor",
+    "correctAnswer": "He suffocates her in intensive care",
     "difficulty": "Medium",
     "tags": [
       "American Television",
@@ -358,11 +358,11 @@ const auditAdditions = [
       "Episode 06",
       "Clock hour 05:00",
       "Characters: Alan York;Kevin Carroll",
-      "Storyline: Impostor reveal",
-      "Question focus: What is discovered about the real Alan York after a corpse is examined?",
-      "Answer focus: He was already murdered and replaced by an impostor",
       "2001-2002",
-      "Written question"
+      "Written question",
+      "Question focus: In 24 (Season 1), how does the impostor posing as Janet York's father silence her in hospital?",
+      "Storyline: Murder of Janet York",
+      "Answer focus: He suffocates her in intensive care"
     ],
     "dailyEligible": true
   },
@@ -551,10 +551,10 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), what financial connection links Ted Cofell to the mercenary Ira Gaines?",
     "answers": [
-      "They own a sports franchise together",
+      "Cofell provides weapons for Gaines's operation",
       "Transfers to Gaines's Swiss bank account",
-      "They share a legal practice",
-      "They are business partners in a hotel"
+      "Cofell funds Gaines's travel under a false name",
+      "Cofell stores cash for Gaines in a Los Angeles office"
     ],
     "correctAnswer": "Transfers to Gaines's Swiss bank account",
     "difficulty": "Medium",
@@ -731,9 +731,9 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), what unexpected news does Teri discover after taking a test at the CTU safe house?",
     "answers": [
-      "She has lost her hearing",
-      "She has been poisoned",
-      "She has a serious infection",
+      "She has an ovarian cyst",
+      "She has internal bleeding",
+      "She has reacted badly to medication",
       "She is pregnant"
     ],
     "correctAnswer": "She is pregnant",
@@ -791,10 +791,10 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), what happens to Operation Nightfall veteran Robert Ellis while helping investigate the Drazen conspiracy?",
     "answers": [
-      "He is recruited to the Secret Service",
+      "He is shot while meeting a CTU contact",
       "He is strangled to death",
-      "He is kidnapped by Rick Allen",
-      "He is injured in a plane crash"
+      "He is injured by an explosion at the bar",
+      "He is abducted by a suspected Drazen operative"
     ],
     "correctAnswer": "He is strangled to death",
     "difficulty": "Medium",
@@ -821,10 +821,10 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), how does Elizabeth Nash discover that the man she has been dating is a Drazen assassin?",
     "answers": [
-      "He confesses while under arrest",
-      "An undercover agent sends her a letter",
+      "Palmer informs her of a recent arrest",
+      "She discovers an alias on his travel documents",
       "She recognises his photograph during a security briefing",
-      "His name appears in a television advert"
+      "A CTU agent overhears one of his calls"
     ],
     "correctAnswer": "She recognises his photograph during a security briefing",
     "difficulty": "Medium",
@@ -911,10 +911,10 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), how does David Palmer expose Sherry's willingness to suppress damaging evidence?",
     "answers": [
-      "He obtains her confession at gunpoint",
+      "He confronts her with a private call intercepted by CTU",
       "He tricks her with a decoy copy of a recording",
-      "He secretly sends her to meet Gaines",
-      "He finds an unsigned bank loan"
+      "He has Carl questioned by campaign lawyers",
+      "He challenges her about the evidence during a press conference"
     ],
     "correctAnswer": "He tricks her with a decoy copy of a recording",
     "difficulty": "Medium",
@@ -971,9 +971,9 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), what shocking truth does Jack discover when he sees the prisoner held at the secret detention centre?",
     "answers": [
-      "Keith Palmer has been arrested",
-      "Ira Gaines is being held there",
-      "Robert Ellis is working for Drazen",
+      "Andre Drazen has surrendered to the authorities",
+      "A CTU officer is being held as a suspect",
+      "The detention centre is controlled by Ira Gaines",
       "Victor Drazen is alive"
     ],
     "correctAnswer": "Victor Drazen is alive",
@@ -1061,10 +1061,10 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), why does George Mason defy Ryan Chappelle's instructions and authorise a prisoner exchange?",
     "answers": [
-      "To obtain the formula for a nerve agent",
-      "To exchange Nina for a reporter",
+      "To win more time to interrogate Alexis",
+      "To question Victor Drazen about the plot",
       "To rescue Jack by trading him for Alexis Drazen",
-      "To recover the aircraft's flight recorder"
+      "To protect Palmer during the primary celebration"
     ],
     "correctAnswer": "To rescue Jack by trading him for Alexis Drazen",
     "difficulty": "Medium",
@@ -1181,10 +1181,10 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), what does Teri finally tell Jack during a telephone call late on Day 1?",
     "answers": [
-      "She has decided to leave Los Angeles",
-      "She has accepted a job at CTU",
+      "She has decided to leave him again",
+      "She knows Nina lied about Jamey's death",
       "She is expecting another baby",
-      "She has adopted Kim's friend Janet"
+      "She has agreed to testify against Ira Gaines"
     ],
     "correctAnswer": "She is expecting another baby",
     "difficulty": "Medium",
@@ -1331,9 +1331,9 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), why do George Mason and other agents prevent Jack from killing Nina after capturing her?",
     "answers": [
-      "She has already been pardoned",
-      "She is secretly working undercover for Jack",
-      "She has diplomatic immunity",
+      "Nina has been granted immunity in return for surrendering",
+      "They mistake her for an innocent CTU staff member",
+      "They believe she acted only under threat",
       "She may identify those behind the conspiracy"
     ],
     "correctAnswer": "She may identify those behind the conspiracy",
@@ -1392,9 +1392,9 @@ const auditAdditions = [
     "question": "In 24 (Season 1), why does Nina move Teri and Kim out of their clinic before the attackers can strike?",
     "answers": [
       "She realises men posing as FBI agents are impostors",
-      "She discovers a bomb beneath their car",
-      "The clinic is closing for the day",
-      "The doctor insists on moving them overseas"
+      "The clinic's records have been accessed without authorisation",
+      "A CTU officer warns of a planned arrest",
+      "The Secret Service orders a general evacuation"
     ],
     "correctAnswer": "She realises men posing as FBI agents are impostors",
     "difficulty": "Medium",
@@ -1481,9 +1481,9 @@ const auditAdditions = [
     "category": "Television",
     "question": "In 24 (Season 1), what shocking discovery turns the planned narcotics deal at Rick's house into a police raid?",
     "answers": [
-      "The drugs have been replaced with counterfeit money",
-      "Jack is revealed to be leading the gang",
-      "The warehouse is being watched by the Secret Service",
+      "The police find counterfeit money intended for the exchange",
+      "The suspects accidentally call the police",
+      "Rick has secretly arranged an arrest to protect Kim",
       "The supposed drug dealer is an undercover police officer"
     ],
     "correctAnswer": "The supposed drug dealer is an undercover police officer",
