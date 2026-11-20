@@ -144,7 +144,7 @@
      const item = {
        id,
        category: 'Television',
-       question,
+       question: question.includes('24') ? question : 'In 24 (Season 3), ' + question.charAt(0).toLowerCase() + question.slice(1),
        answers,
        correctAnswer,
        difficulty,
@@ -160,11 +160,1279 @@
    })
  );
 
- const EXPECTED_COUNT = 85;
+ 
+// EDITORIAL AUDIT 20 November 2026: storyline gaps in Day Three
+// Preserves IDs tv_11247–tv_11331; new IDs appended after Pack 278 additions.
+// Cross-check sources: TheTVDB season 3 (aired order), TV Guide episode descriptions, 24 episode scripts.
+// Review factual correctness and duplication before final sign-off.
+const auditAdditions = [
+  {
+    "id": "tv_35086",
+    "category": "Television",
+    "question": "In 24 (Season 3), what does Ramon Salazar do to his lawyer during Jack's visit to the prison?",
+    "answers": [
+      "He kills him",
+      "He bribes him to disappear",
+      "He hands him over to CTU",
+      "He demands that he resign"
+    ],
+    "correctAnswer": "He kills him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 01",
+      "Clock hour: 13:00",
+      "Characters: Ramon Salazar;Jack Bauer",
+      "Storyline: Salazar kills his lawyer",
+      "Question focus: What does Ramon Salazar do to his lawyer during Jack's visit to the prison?",
+      "Answer focus: He kills him",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35087",
+    "category": "Television",
+    "question": "In 24 (Season 3), what political event is President Palmer preparing for as the virus crisis begins?",
+    "answers": [
+      "A Supreme Court nomination hearing",
+      "A televised debate with Senator Keeler",
+      "A vote on a peace treaty",
+      "A ceremony appointing a new vice-president"
+    ],
+    "correctAnswer": "A televised debate with Senator Keeler",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 01",
+      "Clock hour: 13:00",
+      "Characters: David Palmer;John Keeler",
+      "Storyline: Election debate",
+      "Question focus: What political event is President Palmer preparing for as the virus crisis begins?",
+      "Answer focus: A televised debate with Senator Keeler",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35088",
+    "category": "Television",
+    "question": "In 24 (Season 3), what personal revelation causes tension between Jack Bauer and his partner Chase Edmunds?",
+    "answers": [
+      "Chase has been working for Nina",
+      "Chase plans to leave CTU for the FBI",
+      "Chase is dating Jack's daughter Kim",
+      "Chase previously investigated Teri Bauer"
+    ],
+    "correctAnswer": "Chase is dating Jack's daughter Kim",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 02",
+      "Clock hour: 14:00",
+      "Characters: Jack Bauer;Chase Edmunds;Kim Bauer",
+      "Storyline: Secret relationship",
+      "Question focus: What personal revelation causes tension between Jack Bauer and his partner Chase Edmunds?",
+      "Answer focus: Chase is dating Jack's daughter Kim",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35089",
+    "category": "Television",
+    "question": "In 24 (Season 3), what news causes Linda to break up with Kyle Singer while the virus search intensifies?",
+    "answers": [
+      "He has accepted a job with CTU",
+      "He has secretly married another woman",
+      "He has been suspended from college",
+      "He intends to deliver drugs"
+    ],
+    "correctAnswer": "He intends to deliver drugs",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 02",
+      "Clock hour: 14:00",
+      "Characters: Kyle Singer;Linda",
+      "Storyline: Kyle's delivery",
+      "Question focus: What news causes Linda to break up with Kyle Singer while the virus search intensifies?",
+      "Answer focus: He intends to deliver drugs",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35090",
+    "category": "Television",
+    "question": "In 24 (Season 3), what must Tony Almeida be treated for after a Salazar operative attacks during the Kyle Singer operation?",
+    "answers": [
+      "A gunshot wound to his neck",
+      "A head injury from a vehicle crash",
+      "A broken leg",
+      "A stab wound to his arm"
+    ],
+    "correctAnswer": "A gunshot wound to his neck",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 03",
+      "Clock hour: 15:00",
+      "Characters: Tony Almeida;Kyle Singer",
+      "Storyline: Tony critically injured",
+      "Question focus: What must Tony Almeida be treated for after a Salazar operative attacks during the Kyle Singer operation?",
+      "Answer focus: A gunshot wound to his neck",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35091",
+    "category": "Television",
+    "question": "In 24 (Season 3), what happens to Kyle Singer and Linda during CTU's attempt to find the supposed virus carrier?",
+    "answers": [
+      "They are arrested by airport security",
+      "Hector Salazar's men capture them",
+      "They flee together to another state",
+      "They are kidnapped by Nina Myers"
+    ],
+    "correctAnswer": "Hector Salazar's men capture them",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 04",
+      "Clock hour: 16:00",
+      "Characters: Kyle Singer;Linda;Hector Salazar",
+      "Storyline: Young couple captured",
+      "Question focus: What happens to Kyle Singer and Linda during CTU's attempt to find the supposed virus carrier?",
+      "Answer focus: Hector Salazar's men capture them",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35092",
+    "category": "Television",
+    "question": "In 24 (Season 3), why does Jack tell Chase that his behaviour will be reported to CTU?",
+    "answers": [
+      "Chase has hidden evidence from Palmer",
+      "Chase has stolen a CTU vehicle",
+      "Chase has disobeyed Jack's orders",
+      "Chase has resigned without notice"
+    ],
+    "correctAnswer": "Chase has disobeyed Jack's orders",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 04",
+      "Clock hour: 16:00",
+      "Characters: Jack Bauer;Chase Edmunds",
+      "Storyline: Partners' dispute",
+      "Question focus: Why does Jack tell Chase that his behaviour will be reported to CTU?",
+      "Answer focus: Chase has disobeyed Jack's orders",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35093",
+    "category": "Television",
+    "question": "In 24 (Season 3), who discovers evidence of Jack Bauer's heroin addiction and alerts CTU colleagues?",
+    "answers": [
+      "Kim Bauer",
+      "Nina Myers",
+      "Michelle Dessler",
+      "Chloe O'Brian"
+    ],
+    "correctAnswer": "Chloe O'Brian",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 05",
+      "Clock hour: 17:00",
+      "Characters: Chloe O'Brian;Jack Bauer",
+      "Storyline: Heroin problem uncovered",
+      "Question focus: Who discovers evidence of Jack Bauer's heroin addiction and alerts CTU colleagues?",
+      "Answer focus: Chloe O'Brian",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35094",
+    "category": "Television",
+    "question": "In 24 (Season 3), what does Kyle Singer offer to do to protect Linda when they are held by the Salazars?",
+    "answers": [
+      "Sacrifice himself",
+      "Give them his parents' savings",
+      "Lead them to President Palmer",
+      "Pretend to be a CTU agent"
+    ],
+    "correctAnswer": "Sacrifice himself",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 05",
+      "Clock hour: 17:00",
+      "Characters: Kyle Singer;Linda",
+      "Storyline: Kyle tries to protect Linda",
+      "Question focus: What does Kyle Singer offer to do to protect Linda when they are held by the Salazars?",
+      "Answer focus: Sacrifice himself",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35095",
+    "category": "Television",
+    "question": "In 24 (Season 3), why does President Palmer end his election debate prematurely?",
+    "answers": [
+      "A power cut in the television studio",
+      "The escalating Salazar prison-break crisis",
+      "A sudden illness in Senator Keeler's family",
+      "An argument over the debate rules"
+    ],
+    "correctAnswer": "The escalating Salazar prison-break crisis",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 06",
+      "Clock hour: 18:00",
+      "Characters: David Palmer;Ramon Salazar;John Keeler",
+      "Storyline: Debate interrupted",
+      "Question focus: Why does President Palmer end his election debate prematurely?",
+      "Answer focus: The escalating Salazar prison-break crisis",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35096",
+    "category": "Television",
+    "question": "In 24 (Season 3), whose suspicious communications make Kim Bauer believe there may be a mole inside CTU?",
+    "answers": [
+      "Chloe O'Brian's",
+      "Adam Kaufman's",
+      "Gael Ortega's",
+      "Michelle Dessler's"
+    ],
+    "correctAnswer": "Gael Ortega's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 06",
+      "Clock hour: 18:00",
+      "Characters: Kim Bauer;Gael Ortega",
+      "Storyline: Suspected CTU mole",
+      "Question focus: Whose suspicious communications make Kim Bauer believe there may be a mole inside CTU?",
+      "Answer focus: Gael Ortega's",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35097",
+    "category": "Television",
+    "question": "In 24 (Season 3), how does Tony Almeida resolve CTU's misunderstanding about Gael Ortega's apparent betrayal?",
+    "answers": [
+      "He announces Gael has resigned",
+      "He shows that Nina has stolen Gael's identity",
+      "He tells Chappelle Gael is an FBI witness",
+      "He reveals Gael is part of Jack's covert operation"
+    ],
+    "correctAnswer": "He reveals Gael is part of Jack's covert operation",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 07",
+      "Clock hour: 19:00",
+      "Characters: Tony Almeida;Gael Ortega;Ryan Chappelle",
+      "Storyline: Secret CTU operation revealed",
+      "Question focus: How does Tony Almeida resolve CTU's misunderstanding about Gael Ortega's apparent betrayal?",
+      "Answer focus: He reveals Gael is part of Jack's covert operation",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35098",
+    "category": "Television",
+    "question": "In 24 (Season 3), what is Ramon Salazar threatening to do to Jack while they fly towards Mexico?",
+    "answers": [
+      "Kill him before the plane lands",
+      "Turn him over to the FBI",
+      "Abandon him at an airfield",
+      "Force him to join the presidential campaign"
+    ],
+    "correctAnswer": "Kill him before the plane lands",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 07",
+      "Clock hour: 19:00",
+      "Characters: Ramon Salazar;Jack Bauer",
+      "Storyline: Ramon holds Jack hostage in flight",
+      "Question focus: What is Ramon Salazar threatening to do to Jack while they fly towards Mexico?",
+      "Answer focus: Kill him before the plane lands",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35099",
+    "category": "Television",
+    "question": "In 24 (Season 3), what does Chase Edmunds suffer after travelling to Mexico against CTU's orders?",
+    "answers": [
+      "He is stranded when his aircraft is grounded",
+      "He is captured by Hector Salazar's men",
+      "He is arrested by the Mexican authorities",
+      "He is wounded by CTU agents"
+    ],
+    "correctAnswer": "He is captured by Hector Salazar's men",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 08",
+      "Clock hour: 20:00",
+      "Characters: Chase Edmunds;Hector Salazar",
+      "Storyline: Chase's capture",
+      "Question focus: What does Chase Edmunds suffer after travelling to Mexico against CTU's orders?",
+      "Answer focus: He is captured by Hector Salazar's men",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35100",
+    "category": "Television",
+    "question": "In 24 (Season 3), what does Anne Packard decide after the accusations against her have been resolved?",
+    "answers": [
+      "She joins his re-election campaign",
+      "She leaves medicine to become a reporter",
+      "She ends her relationship with President Palmer",
+      "She agrees to marry Wayne Palmer"
+    ],
+    "correctAnswer": "She ends her relationship with President Palmer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 08",
+      "Clock hour: 20:00",
+      "Characters: Anne Packard;David Palmer",
+      "Storyline: Anne leaves Palmer",
+      "Question focus: What does Anne Packard decide after the accusations against her have been resolved?",
+      "Answer focus: She ends her relationship with President Palmer",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35101",
+    "category": "Television",
+    "question": "In 24 (Season 3), what information does Alan Milliken use to pressure the Palmer campaign?",
+    "answers": [
+      "Jack Bauer's former drug addiction",
+      "Tony Almeida's marriage to Michelle",
+      "The secret identity of Kim's boyfriend",
+      "Wayne Palmer's affair with Milliken's wife Julia"
+    ],
+    "correctAnswer": "Wayne Palmer's affair with Milliken's wife Julia",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 09",
+      "Clock hour: 21:00",
+      "Characters: Alan Milliken;Wayne Palmer;Julia Milliken",
+      "Storyline: Campaign blackmail",
+      "Question focus: What information does Alan Milliken use to pressure the Palmer campaign?",
+      "Answer focus: Wayne Palmer's affair with Milliken's wife Julia",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35102",
+    "category": "Television",
+    "question": "In 24 (Season 3), what sudden childcare problem disrupts Chloe O'Brian's work at CTU?",
+    "answers": [
+      "She is left looking after a baby",
+      "Her father arrives for a visit",
+      "Her younger sister needs a lift home",
+      "A sick nephew is brought to CTU"
+    ],
+    "correctAnswer": "She is left looking after a baby",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 10",
+      "Clock hour: 22:00",
+      "Characters: Chloe O'Brian;Angela",
+      "Storyline: Baby brought to CTU",
+      "Question focus: What sudden childcare problem disrupts Chloe O'Brian's work at CTU?",
+      "Answer focus: She is left looking after a baby",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35103",
+    "category": "Television",
+    "question": "In 24 (Season 3), how does Jack try to persuade Nina Myers to co-operate in Mexico?",
+    "answers": [
+      "He offers her a job at CTU",
+      "He pretends he still has romantic feelings for her",
+      "He promises to help her escape prison",
+      "He claims to be working for her buyer"
+    ],
+    "correctAnswer": "He pretends he still has romantic feelings for her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 10",
+      "Clock hour: 22:00",
+      "Characters: Jack Bauer;Nina Myers",
+      "Storyline: Jack manipulates Nina",
+      "Question focus: How does Jack try to persuade Nina Myers to co-operate in Mexico?",
+      "Answer focus: He pretends he still has romantic feelings for her",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35104",
+    "category": "Television",
+    "question": "In 24 (Season 3), what disagreement threatens the Salazar brothers' partnership before the virus exchange?",
+    "answers": [
+      "Ramon wants to work for the FBI",
+      "Hector demands that Nina be arrested",
+      "Hector wants to abandon the deal",
+      "Ramon plans to move to Washington"
+    ],
+    "correctAnswer": "Hector wants to abandon the deal",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 11",
+      "Clock hour: 23:00",
+      "Characters: Ramon Salazar;Hector Salazar",
+      "Storyline: Brothers fall out",
+      "Question focus: What disagreement threatens the Salazar brothers' partnership before the virus exchange?",
+      "Answer focus: Hector wants to abandon the deal",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35105",
+    "category": "Television",
+    "question": "In 24 (Season 3), what does Kim uncover about the baby Chloe claims is hers?",
+    "answers": [
+      "The child is already in government custody",
+      "The baby's records were destroyed",
+      "The child is the daughter of Nina Myers",
+      "Chloe is not the baby's mother"
+    ],
+    "correctAnswer": "Chloe is not the baby's mother",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 12",
+      "Clock hour: 00:00",
+      "Characters: Kim Bauer;Chloe O'Brian;Angela",
+      "Storyline: Chloe's baby secret",
+      "Question focus: What does Kim uncover about the baby Chloe claims is hers?",
+      "Answer focus: Chloe is not the baby's mother",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35106",
+    "category": "Television",
+    "question": "In 24 (Season 3), why does CTU urgently need Chloe even after Chappelle has put her under guard?",
+    "answers": [
+      "She can stop Nina's computer worm",
+      "She alone knows Hector's location",
+      "She can identify the assassin targeting Palmer",
+      "She is responsible for questioning Julia"
+    ],
+    "correctAnswer": "She can stop Nina's computer worm",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 13",
+      "Clock hour: 01:00",
+      "Characters: Chloe O'Brian;Nina Myers;Ryan Chappelle",
+      "Storyline: Chloe restores communications",
+      "Question focus: Why does CTU urgently need Chloe even after Chappelle has put her under guard?",
+      "Answer focus: She can stop Nina's computer worm",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35107",
+    "category": "Television",
+    "question": "In 24 (Season 3), what risky step does Sherry Palmer take to obtain evidence against Alan Milliken?",
+    "answers": [
+      "She visits Nina Myers in prison",
+      "She sneaks into his home to steal his mobile telephone",
+      "She plants a microphone at CTU",
+      "She secretly sells a campaign recording"
+    ],
+    "correctAnswer": "She sneaks into his home to steal his mobile telephone",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 13",
+      "Clock hour: 01:00",
+      "Characters: Sherry Palmer;Alan Milliken",
+      "Storyline: Sherry searches Milliken home",
+      "Question focus: What risky step does Sherry Palmer take to obtain evidence against Alan Milliken?",
+      "Answer focus: She sneaks into his home to steal his mobile telephone",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35108",
+    "category": "Television",
+    "question": "In 24 (Season 3), what does Nina Myers pretend has happened to her during interrogation to create a chance to escape?",
+    "answers": [
+      "She has been released on presidential orders",
+      "She is suffering a broken leg",
+      "She collapses from a medical crisis",
+      "She has secretly been poisoned by Jack"
+    ],
+    "correctAnswer": "She collapses from a medical crisis",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 14",
+      "Clock hour: 02:00",
+      "Characters: Nina Myers;Tony Almeida",
+      "Storyline: Nina's escape attempt",
+      "Question focus: What does Nina Myers pretend has happened to her during interrogation to create a chance to escape?",
+      "Answer focus: She collapses from a medical crisis",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35109",
+    "category": "Television",
+    "question": "In 24 (Season 3), whose daughter does Kim discover Chloe has secretly been looking after?",
+    "answers": [
+      "Jack Bauer's",
+      "Tony Almeida's",
+      "Ryan Chappelle's",
+      "Chase Edmunds's"
+    ],
+    "correctAnswer": "Chase Edmunds's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 14",
+      "Clock hour: 02:00",
+      "Characters: Kim Bauer;Chloe O'Brian;Chase Edmunds;Angela",
+      "Storyline: Angela's parentage",
+      "Question focus: Whose daughter does Kim discover Chloe has secretly been looking after?",
+      "Answer focus: Chase Edmunds's",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35110",
+    "category": "Television",
+    "question": "In 24 (Season 3), what happens at the Chandler Plaza when Michelle and Gael try to prevent Marcus Alvers releasing the pathogen?",
+    "answers": [
+      "The virus is released before they can stop it",
+      "The guests are evacuated without exposure",
+      "The release device is found to be empty",
+      "Alvers voluntarily destroys his equipment"
+    ],
+    "correctAnswer": "The virus is released before they can stop it",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 15",
+      "Clock hour: 03:00",
+      "Characters: Michelle Dessler;Gael Ortega;Marcus Alvers",
+      "Storyline: Hotel contamination",
+      "Question focus: What happens at the Chandler Plaza when Michelle and Gael try to prevent Marcus Alvers releasing the pathogen?",
+      "Answer focus: The virus is released before they can stop it",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35111",
+    "category": "Television",
+    "question": "In 24 (Season 3), what threatens to overwhelm Michelle Dessler's quarantine operation inside the Chandler Plaza Hotel?",
+    "answers": [
+      "A fire that destroys the entire building",
+      "A violent disturbance among trapped guests",
+      "A power cut affecting all police radios",
+      "A flood from the hotel's sprinkler system"
+    ],
+    "correctAnswer": "A violent disturbance among trapped guests",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 16",
+      "Clock hour: 04:00",
+      "Characters: Michelle Dessler;Chandler Plaza",
+      "Storyline: Hotel quarantine panic",
+      "Question focus: What threatens to overwhelm Michelle Dessler's quarantine operation inside the Chandler Plaza Hotel?",
+      "Answer focus: A violent disturbance among trapped guests",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35112",
+    "category": "Television",
+    "question": "In 24 (Season 3), what does Michelle do when an infected hotel guest tries to break quarantine despite her warnings?",
+    "answers": [
+      "She follows him out of the hotel",
+      "She tranquilises him with a dart",
+      "She shoots him to stop his escape",
+      "She orders the whole hotel evacuated"
+    ],
+    "correctAnswer": "She shoots him to stop his escape",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 16",
+      "Clock hour: 04:00",
+      "Characters: Michelle Dessler;Chandler Plaza",
+      "Storyline: Michelle stops dangerous escape",
+      "Question focus: What does Michelle do when an infected hotel guest tries to break quarantine despite her warnings?",
+      "Answer focus: She shoots him to stop his escape",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35113",
+    "category": "Television",
+    "question": "In 24 (Season 3), what peculiar demand does Stephen Saunders make of President Palmer during the public briefing?",
+    "answers": [
+      "Announce the closure of all airports permanently",
+      "Admit he has secretly resigned",
+      "Order all CTU staff home",
+      "Include a specific seemingly meaningless phrase"
+    ],
+    "correctAnswer": "Include a specific seemingly meaningless phrase",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 17",
+      "Clock hour: 05:00",
+      "Characters: Stephen Saunders;David Palmer",
+      "Storyline: Palmer's forced phrase",
+      "Question focus: What peculiar demand does Stephen Saunders make of President Palmer during the public briefing?",
+      "Answer focus: Include a specific seemingly meaningless phrase",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35114",
+    "category": "Television",
+    "question": "In 24 (Season 3), what happens to the British intelligence building visited by Jack and Chase while pursuing Saunders?",
+    "answers": [
+      "It is attacked",
+      "It is turned into a quarantine shelter",
+      "It is closed by Palmer's executive order",
+      "It is converted into a secret prison"
+    ],
+    "correctAnswer": "It is attacked",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 17",
+      "Clock hour: 05:00",
+      "Characters: Jack Bauer;Chase Edmunds;MI6",
+      "Storyline: MI6 facility attacked",
+      "Question focus: What happens to the British intelligence building visited by Jack and Chase while pursuing Saunders?",
+      "Answer focus: It is attacked",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35115",
+    "category": "Television",
+    "question": "In 24 (Season 3), what does Michelle arrange to offer hotel guests suffering from the lethal infection?",
+    "answers": [
+      "Immediate evacuation by helicopter",
+      "Optional suicide capsules to spare them further suffering",
+      "A vaccine supplied from CTU",
+      "A guaranteed cure from the hospital"
+    ],
+    "correctAnswer": "Optional suicide capsules to spare them further suffering",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 18",
+      "Clock hour: 06:00",
+      "Characters: Michelle Dessler;Chandler Plaza",
+      "Storyline: End-of-life choice",
+      "Question focus: What does Michelle arrange to offer hotel guests suffering from the lethal infection?",
+      "Answer focus: Optional suicide capsules to spare them further suffering",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35116",
+    "category": "Television",
+    "question": "In 24 (Season 3), why does Michelle begin searching urgently for a missing person from the Chandler Plaza Hotel?",
+    "answers": [
+      "The guest has stolen CTU's access codes",
+      "The person is suspected of murdering Gael",
+      "The person may have left while carrying the virus",
+      "The guest has disappeared with Jane Saunders"
+    ],
+    "correctAnswer": "The person may have left while carrying the virus",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 18",
+      "Clock hour: 06:00",
+      "Characters: Michelle Dessler;Chandler Plaza",
+      "Storyline: Escape from quarantine",
+      "Question focus: Why does Michelle begin searching urgently for a missing person from the Chandler Plaza Hotel?",
+      "Answer focus: The person may have left while carrying the virus",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35117",
+    "category": "Television",
+    "question": "In 24 (Season 3), why does Kim Bauer agree to take part in an undercover operation against Stephen Saunders?",
+    "answers": [
+      "She has a recording of Saunders confessing",
+      "She is fluent in Saunders's preferred code language",
+      "She has previously worked for the MI6 office",
+      "She resembles his daughter Jane closely enough to impersonate her"
+    ],
+    "correctAnswer": "She resembles his daughter Jane closely enough to impersonate her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 19",
+      "Clock hour: 07:00",
+      "Characters: Kim Bauer;Jane Saunders;Stephen Saunders",
+      "Storyline: Kim's impersonation",
+      "Question focus: Why does Kim Bauer agree to take part in an undercover operation against Stephen Saunders?",
+      "Answer focus: She resembles his daughter Jane closely enough to impersonate her",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35118",
+    "category": "Television",
+    "question": "In 24 (Season 3), what terrifying discovery does Chase make while tracking a missing guest from the quarantined hotel?",
+    "answers": [
+      "The infection may already be spreading outside the building",
+      "The virus has turned harmless",
+      "Saunders has surrendered to police",
+      "The guest is a Secret Service agent"
+    ],
+    "correctAnswer": "The infection may already be spreading outside the building",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 19",
+      "Clock hour: 07:00",
+      "Characters: Chase Edmunds;Chandler Plaza",
+      "Storyline: Spread beyond hotel",
+      "Question focus: What terrifying discovery does Chase make while tracking a missing guest from the quarantined hotel?",
+      "Answer focus: The infection may already be spreading outside the building",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35119",
+    "category": "Television",
+    "question": "In 24 (Season 3), what distressing news does CTU analyst Adam Kaufman receive while the outbreak spreads?",
+    "answers": [
+      "His brother has been taken hostage",
+      "His sister has been infected",
+      "His father has been accused of spying",
+      "His wife has been arrested at the hotel"
+    ],
+    "correctAnswer": "His sister has been infected",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 20",
+      "Clock hour: 08:00",
+      "Characters: Adam Kaufman;Cordilla virus",
+      "Storyline: Adam's family affected",
+      "Question focus: What distressing news does CTU analyst Adam Kaufman receive while the outbreak spreads?",
+      "Answer focus: His sister has been infected",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35120",
+    "category": "Television",
+    "question": "In 24 (Season 3), what do Michelle Dessler's test results reveal after her exposure at the hotel?",
+    "answers": [
+      "She requires emergency surgery",
+      "She has developed a different infection",
+      "She has not become infected",
+      "She has been given a false sample"
+    ],
+    "correctAnswer": "She has not become infected",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 20",
+      "Clock hour: 08:00",
+      "Characters: Michelle Dessler;Chandler Plaza",
+      "Storyline: Michelle's test result",
+      "Question focus: What do Michelle Dessler's test results reveal after her exposure at the hotel?",
+      "Answer focus: She has not become infected",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35121",
+    "category": "Television",
+    "question": "In 24 (Season 3), who begins to suspect that Tony Almeida is secretly acting against CTU's plans?",
+    "answers": [
+      "Anne Packard and Wayne Palmer",
+      "Nina Myers and Gael Ortega",
+      "Adam Kaufman and George Mason",
+      "Chloe O'Brian and Jack Bauer"
+    ],
+    "correctAnswer": "Chloe O'Brian and Jack Bauer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 21",
+      "Clock hour: 09:00",
+      "Characters: Tony Almeida;Chloe O'Brian;Jack Bauer",
+      "Storyline: Tony's compromised decisions",
+      "Question focus: Who begins to suspect that Tony Almeida is secretly acting against CTU's plans?",
+      "Answer focus: Chloe O'Brian and Jack Bauer",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35122",
+    "category": "Television",
+    "question": "In 24 (Season 3), what does Senator Keeler demand from President Palmer after gaining evidence of the Milliken cover-up?",
+    "answers": [
+      "His resignation",
+      "A presidential pardon for Nina Myers",
+      "Control of CTU Los Angeles",
+      "A new debate with Anne Packard"
+    ],
+    "correctAnswer": "His resignation",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 22",
+      "Clock hour: 10:00",
+      "Characters: John Keeler;David Palmer;Alan Milliken",
+      "Storyline: Political ultimatum",
+      "Question focus: What does Senator Keeler demand from President Palmer after gaining evidence of the Milliken cover-up?",
+      "Answer focus: His resignation",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35123",
+    "category": "Television",
+    "question": "In 24 (Season 3), where does Jack discover the final virus courier may be heading before the last confrontation?",
+    "answers": [
+      "The presidential debate venue",
+      "A Los Angeles subway station",
+      "The Mexico border crossing",
+      "The Chandler Plaza rooftop"
+    ],
+    "correctAnswer": "A Los Angeles subway station",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 23",
+      "Clock hour: 11:00",
+      "Characters: Jack Bauer;Arthur Rabens",
+      "Storyline: Subway lead",
+      "Question focus: Where does Jack discover the final virus courier may be heading before the last confrontation?",
+      "Answer focus: A Los Angeles subway station",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35124",
+    "category": "Television",
+    "question": "In 24 (Season 3), why do Wayne Palmer and his associate enter Sherry Palmer's home without permission?",
+    "answers": [
+      "To find the missing virus vials",
+      "To rescue a hostage being held by Nina",
+      "To recover evidence she plans to use against David",
+      "To obtain a warrant for Jack's arrest"
+    ],
+    "correctAnswer": "To recover evidence she plans to use against David",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 23",
+      "Clock hour: 11:00",
+      "Characters: Wayne Palmer;Sherry Palmer",
+      "Storyline: Evidence search",
+      "Question focus: Why do Wayne Palmer and his associate enter Sherry Palmer's home without permission?",
+      "Answer focus: To recover evidence she plans to use against David",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35125",
+    "category": "Television",
+    "question": "In 24 (Season 3), how does Arthur Rabens mislead CTU's search using the tracking device fitted to the virus?",
+    "answers": [
+      "He leaves the device on an empty train",
+      "He replaces the beacon with a police radio",
+      "He sends its signal to another country",
+      "He transfers its GPS beacon to an innocent person"
+    ],
+    "correctAnswer": "He transfers its GPS beacon to an innocent person",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 24",
+      "Clock hour: 12:00",
+      "Characters: Arthur Rabens;Jack Bauer;Chase Edmunds",
+      "Storyline: Tracking decoy",
+      "Question focus: How does Arthur Rabens mislead CTU's search using the tracking device fitted to the virus?",
+      "Answer focus: He transfers its GPS beacon to an innocent person",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35126",
+    "category": "Television",
+    "question": "In 24 (Season 3), what does Chase do to stop Arthur Rabens carrying the final virus vial away?",
+    "answers": [
+      "He cuffs himself to the device",
+      "He knocks out the train driver",
+      "He dismantles the vial's casing",
+      "He forces Rabens into a police vehicle"
+    ],
+    "correctAnswer": "He cuffs himself to the device",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 24",
+      "Clock hour: 12:00",
+      "Characters: Chase Edmunds;Arthur Rabens",
+      "Storyline: Chase restrains final vial",
+      "Question focus: What does Chase do to stop Arthur Rabens carrying the final virus vial away?",
+      "Answer focus: He cuffs himself to the device",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35127",
+    "category": "Television",
+    "question": "In 24 (Season 3), what is used to contain the final virus device after Jack removes it from Chase?",
+    "answers": [
+      "A sealed suitcase",
+      "A refrigerator",
+      "An aircraft fuel tank",
+      "An underground vault"
+    ],
+    "correctAnswer": "A refrigerator",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 3",
+      "24 Day 3",
+      "Episode 24",
+      "Clock hour: 12:00",
+      "Characters: Jack Bauer;Chase Edmunds",
+      "Storyline: Final virus containment",
+      "Question focus: What is used to contain the final virus device after Jack removes it from Chase?",
+      "Answer focus: A refrigerator",
+      "Broadcast 2003–2004",
+      "Viewer storyline"
+    ]
+  }
+];
+questions.push(...auditAdditions);
+const EXPECTED_COUNT = 127;
  if (questions.length !== EXPECTED_COUNT) {
    throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
  }
- if (questions[0].id !== 'tv_11247' || questions[questions.length - 1].id !== 'tv_11331') {
+ if (questions[0].id !== 'tv_11247' || questions[84].id !== 'tv_11331' || questions[questions.length - 1].id !== 'tv_35127') {
    throw new Error('Unexpected question ID range');
  }
  if (new Set(questions.map(q => q.id)).size !== questions.length) {
