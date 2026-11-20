@@ -441,14 +441,14 @@ const auditedAdditions = [
   {
     "id": "tv_34887",
     "category": "Television",
-    "question": "What does Ben secretly keep in a lock-up during the opening series?",
+    "question": "Where does Ben secretly keep the classic car he has bought?",
     "answers": [
-      "A stolen police car",
-      "A boat",
-      "A pale-blue classic Chevrolet",
-      "A collection of bicycles"
+      "In Rona's garage",
+      "In a lock-up",
+      "At the bakery",
+      "In Tina's driveway"
     ],
-    "correctAnswer": "A pale-blue classic Chevrolet",
+    "correctAnswer": "In a lock-up",
     "difficulty": "Medium",
     "tags": [
       "British Television",
@@ -460,11 +460,11 @@ const auditedAdditions = [
       "Series 1",
       "Broadcast year 1991",
       "Episode: Dirty Bowling",
-      "Storyline: What does Ben secretly keep in a lock-up during the opening series?",
-      "Answer focus: A pale-blue classic Chevrolet",
       "Era: 1990s British Comedy",
       "Programme: 2point4 Children",
-      "Written question"
+      "Written question",
+      "Storyline: Where does Ben secretly keep the classic car he has bought?",
+      "Answer focus: In a lock-up"
     ],
     "dailyEligible": true
   },
@@ -1251,14 +1251,14 @@ const auditedAdditions = [
   {
     "id": "tv_34914",
     "category": "Television",
-    "question": "Which DJ catches Rona's attention as a potential father for her hoped-for child?",
+    "question": "What kind of event are Bill and Rona catering when Rona first notices DJ Tony?",
     "answers": [
-      "Gordon",
-      "Tony",
-      "Clive",
-      "Jake"
+      "A school concert",
+      "A wedding",
+      "A retirement party",
+      "A football celebration"
     ],
-    "correctAnswer": "Tony",
+    "correctAnswer": "A wedding",
     "difficulty": "Medium",
     "tags": [
       "British Television",
@@ -1270,11 +1270,11 @@ const auditedAdditions = [
       "Series 3",
       "Broadcast year 1993",
       "Episode: Women On The Verge Of A Nervous Breakdown",
-      "Storyline: Which DJ catches Rona's attention as a potential father for her hoped-for child?",
-      "Answer focus: Tony",
       "Era: 1990s British Comedy",
       "Programme: 2point4 Children",
-      "Written question"
+      "Written question",
+      "Storyline: What kind of event are Bill and Rona catering when Rona first notices DJ Tony?",
+      "Answer focus: A wedding"
     ],
     "dailyEligible": true
   },
