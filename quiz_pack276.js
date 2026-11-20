@@ -130,9 +130,9 @@ const questions = groups.flatMap(group =>
 
 
 // =====================================================
-// EDITORIAL AUDIT: 20 November 2026 — Series 1–4 and specials
+// EDITORIAL AUDIT: 20 November 2026 — Series 1–6 and specials
 // Original 52 questions/IDs tv_11043–tv_11094 preserved.
-// 54 distinct evidence-checked questions added; audit continues at Series 5.
+// 78 distinct evidence-checked questions added through Series 6; Series 7–8 remain pending.
 // Source: https://www.comedy.co.uk/tv/2point4_children/episodes/
 // Detail check: https://epguides.com/2point4Children/guide.shtml
 // IMPORTANT: This is a PARTIAL audit, not complete series sign-off.
@@ -1757,15 +1757,735 @@ const auditedAdditions = [
       "Written question"
     ],
     "dailyEligible": true
+  },
+  {
+    "id": "tv_34931",
+    "category": "Television",
+    "question": "In 2point4 Children, why does Ben's lottery ticket provoke arguments throughout the Porter family?",
+    "answers": [
+      "They cannot agree on how hypothetical winnings should be shared",
+      "Nobody knows where he bought it",
+      "They think it is forged",
+      "The family has won and lost the money"
+    ],
+    "correctAnswer": "They cannot agree on how hypothetical winnings should be shared",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: Greed",
+      "Storyline: Why does Ben's lottery ticket provoke arguments throughout the Porter family?",
+      "Answer focus: They cannot agree on how hypothetical winnings should be shared",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34932",
+    "category": "Television",
+    "question": "In 2point4 Children, what discovery makes Bill and Rona wonder whether David has secretly begun a relationship?",
+    "answers": [
+      "A wedding ring",
+      "A note bearing a woman's name",
+      "An unfamiliar coat",
+      "A ticket to a dance"
+    ],
+    "correctAnswer": "A note bearing a woman's name",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: We'd Like To Know A Little Bit About You For Our Files",
+      "Storyline: What discovery makes Bill and Rona wonder whether David has secretly begun a relationship?",
+      "Answer focus: A note bearing a woman's name",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34933",
+    "category": "Television",
+    "question": "In 2point4 Children, what business problem is Bill trying to solve while tracing David's mysterious note?",
+    "answers": [
+      "Buying a second bakery",
+      "Recruiting a new plumber",
+      "Finding a new warehouse for the catering business",
+      "Selling the family car"
+    ],
+    "correctAnswer": "Finding a new warehouse for the catering business",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: We'd Like To Know A Little Bit About You For Our Files",
+      "Storyline: What business problem is Bill trying to solve while tracing David's mysterious note?",
+      "Answer focus: Finding a new warehouse for the catering business",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34934",
+    "category": "Television",
+    "question": "In 2point4 Children, whose house do Ben and Bill agree to look after again despite their past mishaps?",
+    "answers": [
+      "Bette's",
+      "Aunt Tina's",
+      "Clive's",
+      "The Grimes'"
+    ],
+    "correctAnswer": "The Grimes'",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: The Deep",
+      "Storyline: Whose house do Ben and Bill agree to look after again despite their past mishaps?",
+      "Answer focus: The Grimes'",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34935",
+    "category": "Television",
+    "question": "In 2point4 Children, what surprises the Porters about Jenny's boyfriend's grandmother during a family visit?",
+    "answers": [
+      "She is German",
+      "She is a famous singer",
+      "She is an airline pilot",
+      "She owns the family bakery"
+    ],
+    "correctAnswer": "She is German",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: Mayday",
+      "Storyline: What surprises the Porters about Jenny's boyfriend's grandmother during a family visit?",
+      "Answer focus: She is German",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34936",
+    "category": "Television",
+    "question": "In 2point4 Children, what is Ben occupied with while the family struggles through the Bank Holiday?",
+    "answers": [
+      "An overnight plumbing job",
+      "Do-it-yourself work upstairs",
+      "A train journey",
+      "A tennis tournament"
+    ],
+    "correctAnswer": "Do-it-yourself work upstairs",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: Mayday",
+      "Storyline: What is Ben occupied with while the family struggles through the Bank Holiday?",
+      "Answer focus: Do-it-yourself work upstairs",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34937",
+    "category": "Television",
+    "question": "In 2point4 Children, which member of the family needs both parents at a school acting competition?",
+    "answers": [
+      "Jenny Porter",
+      "Rona",
+      "David Porter",
+      "Auntie Pearl"
+    ],
+    "correctAnswer": "David Porter",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: Seven Dials",
+      "Storyline: Which member of the family needs both parents at a school acting competition?",
+      "Answer focus: David Porter",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34938",
+    "category": "Television",
+    "question": "In 2point4 Children, what does Bill spend much of 'Seven Dials' searching for?",
+    "answers": [
+      "Her lost driving licence",
+      "A missing dog",
+      "A new family car",
+      "Suitable premises for her catering business"
+    ],
+    "correctAnswer": "Suitable premises for her catering business",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: Seven Dials",
+      "Storyline: What does Bill spend much of 'Seven Dials' searching for?",
+      "Answer focus: Suitable premises for her catering business",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34939",
+    "category": "Television",
+    "question": "In 2point4 Children, why does the council threaten Rona with eviction from her home?",
+    "answers": [
+      "Her late mother is still listed as its tenant",
+      "The roof is unsafe",
+      "She has sublet it to Jake",
+      "Her business licence has expired"
+    ],
+    "correctAnswer": "Her late mother is still listed as its tenant",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: The Truth Is Out There",
+      "Storyline: Why does the council threaten Rona with eviction from her home?",
+      "Answer focus: Her late mother is still listed as its tenant",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34940",
+    "category": "Television",
+    "question": "In 2point4 Children, what sort of experiment do Ben and David try in the hope of solving Rona's housing problem?",
+    "answers": [
+      "Chemical analysis of the walls",
+      "Psychical or paranormal research",
+      "A homemade lie-detector test",
+      "A police identity parade"
+    ],
+    "correctAnswer": "Psychical or paranormal research",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: The Truth Is Out There",
+      "Storyline: What sort of experiment do Ben and David try in the hope of solving Rona's housing problem?",
+      "Answer focus: Psychical or paranormal research",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34941",
+    "category": "Television",
+    "question": "In 2point4 Children, which traditional Christmas dinner ingredient has Ben failed to buy because of his unusual alternative?",
+    "answers": [
+      "Brussels sprouts",
+      "Cranberry sauce",
+      "A turkey",
+      "Christmas pudding"
+    ],
+    "correctAnswer": "A turkey",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 5",
+      "Broadcast year: 1995",
+      "Episode: Porky's",
+      "Storyline: Which traditional Christmas dinner ingredient has Ben failed to buy because of his unusual alternative?",
+      "Answer focus: A turkey",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34942",
+    "category": "Television",
+    "question": "In 2point4 Children, what family problem turns into a contest between Bill and Rona against Ben and David?",
+    "answers": [
+      "The sale of the family house",
+      "A missing pet",
+      "A broken television",
+      "Jenny's latest boyfriend difficulties"
+    ],
+    "correctAnswer": "Jenny's latest boyfriend difficulties",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: Dog Day Afternoon",
+      "Storyline: What family problem turns into a contest between Bill and Rona against Ben and David?",
+      "Answer focus: Jenny's latest boyfriend difficulties",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34943",
+    "category": "Television",
+    "question": "In 2point4 Children, which reclusive neighbour's disappearance worries Bill in a Halloween episode?",
+    "answers": [
+      "Mrs Crudaal",
+      "Mrs Grimes",
+      "Aunt Belle",
+      "Bette"
+    ],
+    "correctAnswer": "Mrs Crudaal",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: The Lady Vanishes",
+      "Storyline: Which reclusive neighbour's disappearance worries Bill in a Halloween episode?",
+      "Answer focus: Mrs Crudaal",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34944",
+    "category": "Television",
+    "question": "In 2point4 Children, what ominous delivery arrives at the missing neighbour's home?",
+    "answers": [
+      "A new motorbike",
+      "A large box",
+      "A caged bird",
+      "A Christmas tree"
+    ],
+    "correctAnswer": "A large box",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: The Lady Vanishes",
+      "Storyline: What ominous delivery arrives at the missing neighbour's home?",
+      "Answer focus: A large box",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34945",
+    "category": "Television",
+    "question": "In 2point4 Children, what combination adds to the frightening atmosphere on Halloween in 'The Lady Vanishes'?",
+    "answers": [
+      "A flood, a snowstorm and hail",
+      "A gas leak, a fire and fog",
+      "Bats, a power cut and lightning",
+      "A car crash and police chase"
+    ],
+    "correctAnswer": "Bats, a power cut and lightning",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: The Lady Vanishes",
+      "Storyline: What combination adds to the frightening atmosphere on Halloween in 'The Lady Vanishes'?",
+      "Answer focus: Bats, a power cut and lightning",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34946",
+    "category": "Television",
+    "question": "In 2point4 Children, where are Bill and Rona nearly stranded high above the ground while visiting Aunt Belle?",
+    "answers": [
+      "On a suspension bridge",
+      "On the roof of a church",
+      "In a hot-air balloon",
+      "At her high-rise tower block"
+    ],
+    "correctAnswer": "At her high-rise tower block",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: Vertigo",
+      "Storyline: Where are Bill and Rona nearly stranded high above the ground while visiting Aunt Belle?",
+      "Answer focus: At her high-rise tower block",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34947",
+    "category": "Television",
+    "question": "In 2point4 Children, what belief causes an argument between Bill and Rona before their frightening high-rise ordeal?",
+    "answers": [
+      "Whether horoscopes can predict the future",
+      "Whether ghosts are real",
+      "Whether UFOs exist",
+      "Whether hypnosis works"
+    ],
+    "correctAnswer": "Whether horoscopes can predict the future",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: Vertigo",
+      "Storyline: What belief causes an argument between Bill and Rona before their frightening high-rise ordeal?",
+      "Answer focus: Whether horoscopes can predict the future",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34948",
+    "category": "Television",
+    "question": "In 2point4 Children, what trial does Bill require before agreeing that the family may have a real dog?",
+    "answers": [
+      "Volunteering at a dog shelter",
+      "Caring for an imaginary dog",
+      "Walking the Grimes' cat",
+      "Training a neighbour's puppy"
+    ],
+    "correctAnswer": "Caring for an imaginary dog",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: The Trouble With Harry",
+      "Storyline: What trial does Bill require before agreeing that the family may have a real dog?",
+      "Answer focus: Caring for an imaginary dog",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34949",
+    "category": "Television",
+    "question": "In 2point4 Children, what age is Ben approaching when he begins worrying about growing older?",
+    "answers": [
+      "Forty-eight",
+      "Thirty",
+      "Thirty-eight",
+      "Fifty"
+    ],
+    "correctAnswer": "Thirty-eight",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: The Man Who Knew Too Much",
+      "Storyline: What age is Ben approaching when he begins worrying about growing older?",
+      "Answer focus: Thirty-eight",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34950",
+    "category": "Television",
+    "question": "In 2point4 Children, what valuable item does Bill inherit along with a strange wardrobe?",
+    "answers": [
+      "A gold necklace",
+      "A silver tea service",
+      "An antique clock",
+      "A genuine fur coat"
+    ],
+    "correctAnswer": "A genuine fur coat",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: The Lion, The Witch And The Wardrobe",
+      "Storyline: What valuable item does Bill inherit along with a strange wardrobe?",
+      "Answer focus: A genuine fur coat",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34951",
+    "category": "Television",
+    "question": "In 2point4 Children, what does Rona discover beneath a bush near the hospital?",
+    "answers": [
+      "An abandoned baby",
+      "An injured fox",
+      "A stolen handbag",
+      "A hidden safe"
+    ],
+    "correctAnswer": "An abandoned baby",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: And Now The Screaming Starts",
+      "Storyline: What does Rona discover beneath a bush near the hospital?",
+      "Answer focus: An abandoned baby",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34952",
+    "category": "Television",
+    "question": "In 2point4 Children, which character has vanished during the crisis in 'And Now The Screaming Starts'?",
+    "answers": [
+      "David Porter",
+      "Ben Porter",
+      "Aunt Tina",
+      "Jake Klinger"
+    ],
+    "correctAnswer": "Ben Porter",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: And Now The Screaming Starts",
+      "Storyline: Which character has vanished during the crisis in 'And Now The Screaming Starts'?",
+      "Answer focus: Ben Porter",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34953",
+    "category": "Television",
+    "question": "In 2point4 Children, how do the Porters end up trapped on a ship during the 1996 Christmas special?",
+    "answers": [
+      "They win a cruise in a raffle",
+      "The ship is hijacked",
+      "It sails while they are still aboard seeing Tina off",
+      "Their car is loaded aboard by mistake"
+    ],
+    "correctAnswer": "It sails while they are still aboard seeing Tina off",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: Two Years Before The Mast",
+      "Storyline: How do the Porters end up trapped on a ship during the 1996 Christmas special?",
+      "Answer focus: It sails while they are still aboard seeing Tina off",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
+  },
+  {
+    "id": "tv_34954",
+    "category": "Television",
+    "question": "In 2point4 Children, whom does Ben accidentally attack aboard the Christmas cruise ship?",
+    "answers": [
+      "The cook",
+      "The ship's doctor",
+      "The purser",
+      "The captain"
+    ],
+    "correctAnswer": "The captain",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "2point4 Children",
+      "BBC One",
+      "1990s",
+      "Series 6",
+      "Broadcast year: 1996",
+      "Episode: Two Years Before The Mast",
+      "Storyline: Whom does Ben accidentally attack aboard the Christmas cruise ship?",
+      "Answer focus: The captain",
+      "Era: 1990s British Comedy",
+      "Programme: 2point4 Children",
+      "Written question"
+    ]
   }
 ];
 questions.push(...auditedAdditions);
 
-const EXPECTED_COUNT = 106;
+const EXPECTED_COUNT = 130;
 if (questions.length !== EXPECTED_COUNT) {
   throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
 }
-if (questions[0].id !== 'tv_11043' || questions[51].id !== 'tv_11094' || questions[questions.length - 1].id !== 'tv_34930') {
+if (questions[0].id !== 'tv_11043' || questions[51].id !== 'tv_11094' || questions[questions.length - 1].id !== 'tv_34954') {
   throw new Error('Unexpected question ID range');
 }
 if (new Set(questions.map(q => q.id)).size !== questions.length) {
