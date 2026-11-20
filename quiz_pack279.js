@@ -58,7 +58,7 @@
  Which Salazar brother dies when the rigged virus container explodes?|Ramon Salazar|Hector Salazar|Neither brother|Both brothers|Medium|Ramon Salazar|Explosive Vial|Michael Amador Trap|Mexico Warehouse|Fatal Explosion|Virus Deal|Cartel Ending
  What malicious software does Nina Myers cause to spread through CTU's systems after being captured?|A computer worm|A ransomware payment screen|A harmless pop-up advert|A website tracking cookie|Medium|Nina Myers|Computer Worm|CTU Network Attack|Undercover Agent Identities|Cyber Sabotage|Airborne Interrogation|Technology Threat
  Which CTU analyst manages to stop the computer worm triggered by Nina Myers?|Chloe O'Brian|Kim Bauer|Gael Ortega|Adam Kaufman|Medium|Chloe O Brian|Mary Lynn Rajskub|Nina Myers Worm|Computer Security|CTU Systems|Emergency Technical Fix|Undercover Agents
- Which CTU employee's daughter is threatened when Nina Myers escapes custody?|Jack Bauer's|Tony Almeida's|Ryan Chappelle's|Gael Ortega's|Easy|Kim Bauer|Jack Bauer|Nina Myers Escape|CTU Medical Area|Gunpoint Confrontation|Father Daughter|Hostage Danger
+ In 24 (Season 3), whose daughter does Nina threaten during her CTU escape attempt?|Jack Bauer's|Tony Almeida's|Ryan Chappelle's|Gael Ortega's|Easy|Kim Bauer|Jack Bauer|Nina Myers Escape|CTU Medical Area|Gunpoint Confrontation|Father Daughter|Hostage Danger
  Who fatally shoots Nina Myers after her escape attempt inside CTU?|Jack Bauer|Chase Edmunds|Tony Almeida|Michelle Dessler|Easy|Jack Bauer|Nina Myers|Death At CTU|Teri Bauer Revenge|Kim Bauer Threat|Season Three Turning Point|Former Double Agent`,
    },
    {
@@ -289,14 +289,14 @@ const auditAdditions = [
   {
     "id": "tv_35090",
     "category": "Television",
-    "question": "In 24 (Season 3), what must Tony Almeida be treated for after a Salazar operative attacks during the Kyle Singer operation?",
+    "question": "In 24 (Season 3), where do Jack Bauer and Chase Edmunds search for evidence about the infected man's movements early on Day 3?",
     "answers": [
-      "A gunshot wound to his neck",
-      "A head injury from a vehicle crash",
-      "A broken leg",
-      "A stab wound to his arm"
+      "A crack house",
+      "An airport baggage depot",
+      "The Warner family home",
+      "A CTU evidence warehouse"
     ],
-    "correctAnswer": "A gunshot wound to his neck",
+    "correctAnswer": "A crack house",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -306,14 +306,14 @@ const auditAdditions = [
       "24",
       "24 Season 3",
       "24 Day 3",
-      "Episode 03",
-      "Clock hour: 15:00",
-      "Characters: Tony Almeida;Kyle Singer",
-      "Storyline: Tony critically injured",
-      "Question focus: What must Tony Almeida be treated for after a Salazar operative attacks during the Kyle Singer operation?",
-      "Answer focus: A gunshot wound to his neck",
       "Broadcast 2003–2004",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Episode 02",
+      "Clock hour: 14:00",
+      "Characters: Jack Bauer;Chase Edmunds",
+      "Storyline: Investigating the infected body",
+      "Question focus: Where do Jack Bauer and Chase Edmunds search for evidence about the infected man's movements early on Day 3?",
+      "Answer focus: A crack house"
     ]
   },
   {
@@ -469,14 +469,14 @@ const auditAdditions = [
   {
     "id": "tv_35096",
     "category": "Television",
-    "question": "In 24 (Season 3), whose suspicious communications make Kim Bauer believe there may be a mole inside CTU?",
+    "question": "In 24 (Season 3), what sort of pursuit threatens Jack and Ramon while they try to reach the flight out of the country?",
     "answers": [
-      "Chloe O'Brian's",
-      "Adam Kaufman's",
-      "Gael Ortega's",
-      "Michelle Dessler's"
+      "Secret Service speedboats",
+      "A convoy of presidential limousines",
+      "Military helicopters",
+      "Nina Myers's private aircraft"
     ],
-    "correctAnswer": "Gael Ortega's",
+    "correctAnswer": "Military helicopters",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -486,14 +486,14 @@ const auditAdditions = [
       "24",
       "24 Season 3",
       "24 Day 3",
+      "Broadcast 2003–2004",
+      "Viewer storyline",
       "Episode 06",
       "Clock hour: 18:00",
-      "Characters: Kim Bauer;Gael Ortega",
-      "Storyline: Suspected CTU mole",
-      "Question focus: Whose suspicious communications make Kim Bauer believe there may be a mole inside CTU?",
-      "Answer focus: Gael Ortega's",
-      "Broadcast 2003–2004",
-      "Viewer storyline"
+      "Characters: Jack Bauer;Ramon Salazar",
+      "Storyline: Escape from the prison",
+      "Question focus: What sort of pursuit threatens Jack and Ramon while they try to reach the flight out of the country?",
+      "Answer focus: Military helicopters"
     ]
   },
   {
@@ -769,14 +769,14 @@ const auditAdditions = [
   {
     "id": "tv_35106",
     "category": "Television",
-    "question": "In 24 (Season 3), why does CTU urgently need Chloe even after Chappelle has put her under guard?",
+    "question": "In 24 (Season 3), what wider danger results when Nina Myers unleashes her computer worm inside CTU?",
     "answers": [
-      "She can stop Nina's computer worm",
-      "She alone knows Hector's location",
-      "She can identify the assassin targeting Palmer",
-      "She is responsible for questioning Julia"
+      "It disrupts links with other agencies and endangers undercover agents",
+      "It broadcasts a false virus cure",
+      "It deactivates all military aircraft across the country",
+      "It locks President Palmer out of the White House"
     ],
-    "correctAnswer": "She can stop Nina's computer worm",
+    "correctAnswer": "It disrupts links with other agencies and endangers undercover agents",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -786,14 +786,14 @@ const auditAdditions = [
       "24",
       "24 Season 3",
       "24 Day 3",
+      "Broadcast 2003–2004",
+      "Viewer storyline",
       "Episode 13",
       "Clock hour: 01:00",
-      "Characters: Chloe O'Brian;Nina Myers;Ryan Chappelle",
-      "Storyline: Chloe restores communications",
-      "Question focus: Why does CTU urgently need Chloe even after Chappelle has put her under guard?",
-      "Answer focus: She can stop Nina's computer worm",
-      "Broadcast 2003–2004",
-      "Viewer storyline"
+      "Characters: Nina Myers;Chloe O'Brian",
+      "Storyline: Consequences of the worm",
+      "Question focus: What wider danger results when Nina Myers unleashes her computer worm inside CTU?",
+      "Answer focus: It disrupts links with other agencies and endangers undercover agents"
     ]
   },
   {
@@ -1069,14 +1069,14 @@ const auditAdditions = [
   {
     "id": "tv_35116",
     "category": "Television",
-    "question": "In 24 (Season 3), why does Michelle begin searching urgently for a missing person from the Chandler Plaza Hotel?",
+    "question": "In 24 (Season 3), what makes Kim Bauer a plausible undercover stand-in for Jane Saunders?",
     "answers": [
-      "The guest has stolen CTU's access codes",
-      "The person is suspected of murdering Gael",
-      "The person may have left while carrying the virus",
-      "The guest has disappeared with Jane Saunders"
+      "She worked for Stephen Saunders before joining CTU",
+      "She has a medical degree",
+      "She resembles Saunders' daughter",
+      "She is fluent in the Salazars' coded messages"
     ],
-    "correctAnswer": "The person may have left while carrying the virus",
+    "correctAnswer": "She resembles Saunders' daughter",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1086,14 +1086,14 @@ const auditAdditions = [
       "24",
       "24 Season 3",
       "24 Day 3",
-      "Episode 18",
-      "Clock hour: 06:00",
-      "Characters: Michelle Dessler;Chandler Plaza",
-      "Storyline: Escape from quarantine",
-      "Question focus: Why does Michelle begin searching urgently for a missing person from the Chandler Plaza Hotel?",
-      "Answer focus: The person may have left while carrying the virus",
       "Broadcast 2003–2004",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Episode 19",
+      "Clock hour: 07:00",
+      "Characters: Kim Bauer;Jane Saunders",
+      "Storyline: Kim's resemblance to Jane",
+      "Question focus: What makes Kim Bauer a plausible undercover stand-in for Jane Saunders?",
+      "Answer focus: She resembles Saunders' daughter"
     ]
   },
   {
@@ -1339,14 +1339,14 @@ const auditAdditions = [
   {
     "id": "tv_35125",
     "category": "Television",
-    "question": "In 24 (Season 3), how does Arthur Rabens mislead CTU's search using the tracking device fitted to the virus?",
+    "question": "In 24 (Season 3), what does Rabens do when Chase prevents him from taking the final vial away?",
     "answers": [
-      "He leaves the device on an empty train",
-      "He replaces the beacon with a police radio",
-      "He sends its signal to another country",
-      "He transfers its GPS beacon to an innocent person"
+      "He calls in an airstrike",
+      "He surrenders immediately",
+      "He destroys the tracking system with a hammer",
+      "He activates the virus-release mechanism"
     ],
-    "correctAnswer": "He transfers its GPS beacon to an innocent person",
+    "correctAnswer": "He activates the virus-release mechanism",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1356,14 +1356,14 @@ const auditAdditions = [
       "24",
       "24 Season 3",
       "24 Day 3",
+      "Broadcast 2003–2004",
+      "Viewer storyline",
       "Episode 24",
       "Clock hour: 12:00",
-      "Characters: Arthur Rabens;Jack Bauer;Chase Edmunds",
-      "Storyline: Tracking decoy",
-      "Question focus: How does Arthur Rabens mislead CTU's search using the tracking device fitted to the virus?",
-      "Answer focus: He transfers its GPS beacon to an innocent person",
-      "Broadcast 2003–2004",
-      "Viewer storyline"
+      "Characters: Arthur Rabens;Chase Edmunds",
+      "Storyline: Rabens activates the device",
+      "Question focus: What does Rabens do when Chase prevents him from taking the final vial away?",
+      "Answer focus: He activates the virus-release mechanism"
     ]
   },
   {
