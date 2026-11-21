@@ -1255,7 +1255,7 @@ const auditAdditions = [
   {
     "id": "tv_35785",
     "category": "Television",
-    "question": "How many Primetime Emmy nominations did the third season of 30 Rock receive in 2009?",
+    "question": "How many Emmy Award nominations in total did the third season of 30 Rock receive in 2009?",
     "answers": [
       "Twelve",
       "Twenty-two",
@@ -1285,7 +1285,7 @@ const auditAdditions = [
       "Original 22-Episode Third Season",
       "November 2026 Editorial Audit",
       "Season Three Character and Storyline Coverage",
-      "Question focus: How many Primetime Emmy nominations did the third season of 30 Rock receive in 2009?"
+      "Question focus: How many Emmy Award nominations in total did the third season of 30 Rock receive in 2009?"
     ],
     "dailyEligible": true
   },
