@@ -1353,47 +1353,12 @@ const auditAdditions = [
     "id": "tv_37632",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
-    "question": "In Whatever Happened to the Likely Lads?, where does Terry secretly stay while readjusting to civilian life?",
-    "answers": [
-      "Thelma's family home",
-      "A hotel in Berwick",
-      "A military barracks",
-      "Bob's new house"
-    ],
-    "correctAnswer": "Bob's new house",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Classic Sitcom",
-      "BBC",
-      "The Likely Lads Collection",
-      "Whatever Happened to the Likely Lads?",
-      "Programme: Whatever Happened to the Likely Lads?",
-      "TV Pack 338",
-      "Storyline and character development",
-      "S1E2 Home Is the Hero",
-      "Answer: Bob's new house",
-      "Episode source: https://www.comedy.co.uk/tv/whatever_happened_likely_lads/episodes/1/",
-      "Terry Accommodation",
-      "Bob Hospitality",
-      "Thelma Secret",
-      "UK English",
-      "2026 Audit"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37633",
-    "category": "Television",
-    "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, how far back does Bob's romance with Thelma extend?",
     "answers": [
-      "Schooldays in form 4B",
       "Their first factory job",
       "A holiday in Spain",
-      "A Christmas party in the Army"
+      "A Christmas party in the Army",
+      "Schooldays in form 4B"
     ],
     "correctAnswer": "Schooldays in form 4B",
     "difficulty": "Medium",
@@ -1420,13 +1385,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37634",
+    "id": "tv_37633",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what most upsets Terry when he explores the town after returning from the Army?",
     "answers": [
-      "No pubs will serve him",
       "Old haunts have been demolished or redeveloped",
+      "No pubs will serve him",
       "His factory has moved to London",
       "His sister has sold his belongings"
     ],
@@ -1455,14 +1420,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37635",
+    "id": "tv_37634",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what does Terry use in an unsuccessful effort to reconnect with past girlfriends?",
     "answers": [
       "A school photograph",
-      "A telephone directory of doctors",
       "An old address book",
+      "A telephone directory of doctors",
       "A wedding guest list"
     ],
     "correctAnswer": "An old address book",
@@ -1490,15 +1455,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37636",
+    "id": "tv_37635",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, who tries to teach Terry new chat-up lines?",
     "answers": [
       "George Chambers",
       "Audrey Collier",
-      "Hughie McClaren",
-      "Bob Ferris"
+      "Bob Ferris",
+      "Hughie McClaren"
     ],
     "correctAnswer": "Bob Ferris",
     "difficulty": "Medium",
@@ -1525,15 +1490,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37637",
+    "id": "tv_37636",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, why does Terry become miserable before Bob arranges a celebration?",
     "answers": [
-      "Everyone seems to have forgotten his birthday",
       "He has failed a driving test",
       "He has lost his wallet",
-      "His football club has been relegated"
+      "His football club has been relegated",
+      "Everyone seems to have forgotten his birthday"
     ],
     "correctAnswer": "Everyone seems to have forgotten his birthday",
     "difficulty": "Medium",
@@ -1560,13 +1525,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37638",
+    "id": "tv_37637",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which loudmouth bets against the lads avoiding the England football score all day?",
     "answers": [
-      "Scaife",
       "Flint",
+      "Scaife",
       "Duggie",
       "Hughie"
     ],
@@ -1595,14 +1560,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37639",
+    "id": "tv_37638",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what do Bob and Terry hope to watch before they know the football result?",
     "answers": [
       "A radio commentary at lunchtime",
-      "A replay at the stadium",
       "Televised highlights that evening",
+      "A replay at the stadium",
       "A friend's amateur film"
     ],
     "correctAnswer": "Televised highlights that evening",
@@ -1630,15 +1595,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37640",
+    "id": "tv_37639",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which couple host the dinner party Bob hopes will improve Terry's social circle?",
     "answers": [
       "George and Mrs Chambers",
       "Hughie and Audrey",
-      "Bob and Thelma",
-      "Alan and Brenda"
+      "Alan and Brenda",
+      "Bob and Thelma"
     ],
     "correctAnswer": "Alan and Brenda",
     "difficulty": "Medium",
@@ -1665,15 +1630,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37641",
+    "id": "tv_37640",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, who objects to Bob bringing a box of old possessions into their new marital home?",
     "answers": [
-      "Thelma Chambers",
       "Audrey Collier",
       "Susan Chambers",
-      "Bob's mother"
+      "Bob's mother",
+      "Thelma Chambers"
     ],
     "correctAnswer": "Thelma Chambers",
     "difficulty": "Medium",
@@ -1700,13 +1665,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37642",
+    "id": "tv_37641",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what illness strikes Terry around the time Bob takes him for a conciliatory dinner?",
     "answers": [
-      "German measles",
       "Chilean flu",
+      "German measles",
       "Mumps",
       "Whooping cough"
     ],
@@ -1735,14 +1700,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37643",
+    "id": "tv_37642",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which member of Thelma's family is especially determined to control the wedding arrangements?",
     "answers": [
       "Susan Chambers",
-      "George Chambers",
       "Mrs Chambers",
+      "George Chambers",
       "Aunt Audrey"
     ],
     "correctAnswer": "Mrs Chambers",
@@ -1770,15 +1735,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37644",
+    "id": "tv_37643",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what item does Bob accidentally stain with ink before the wedding?",
     "answers": [
       "The wedding cake",
       "Thelma's veil",
-      "His best man's shoes",
-      "His wedding trousers"
+      "His wedding trousers",
+      "His best man's shoes"
     ],
     "correctAnswer": "His wedding trousers",
     "difficulty": "Medium",
@@ -1805,15 +1770,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37645",
+    "id": "tv_37644",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which personal gift does Bob give Terry on his wedding day?",
     "answers": [
-      "His photograph album",
       "His old bicycle",
       "His wristwatch",
-      "His childhood scout badge"
+      "His childhood scout badge",
+      "His photograph album"
     ],
     "correctAnswer": "His photograph album",
     "difficulty": "Medium",
@@ -1840,13 +1805,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37646",
+    "id": "tv_37645",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, who looks after Bob and Thelma's house during their honeymoon?",
     "answers": [
-      "Audrey Collier",
       "Terry Collier",
+      "Audrey Collier",
       "George Chambers",
       "Hughie McClaren"
     ],
@@ -1875,14 +1840,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37647",
+    "id": "tv_37646",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, how does Bob break his leg at the end of his honeymoon?",
     "answers": [
       "He falls while skiing",
-      "He slips on a hotel floor",
       "He falls on the aircraft steps",
+      "He slips on a hotel floor",
       "He trips over a suitcase at home"
     ],
     "correctAnswer": "He falls on the aircraft steps",
@@ -1910,15 +1875,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37648",
+    "id": "tv_37647",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which change in Terry's behaviour makes Bob suspect he has fallen in love?",
     "answers": [
       "He buys a sports car",
       "He starts attending church",
-      "He signs up for night classes",
-      "He stops drinking beer and becomes thoughtful"
+      "He stops drinking beer and becomes thoughtful",
+      "He signs up for night classes"
     ],
     "correctAnswer": "He stops drinking beer and becomes thoughtful",
     "difficulty": "Medium",
@@ -1945,15 +1910,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37649",
+    "id": "tv_37648",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which leisure activities does Terry enjoy while Bob struggles with domestic duties?",
     "answers": [
-      "Billiards and cinema trips",
       "Fishing and golf",
       "Sailing and hiking",
-      "Tennis and ballroom dancing"
+      "Tennis and ballroom dancing",
+      "Billiards and cinema trips"
     ],
     "correctAnswer": "Billiards and cinema trips",
     "difficulty": "Medium",
@@ -1980,13 +1945,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37650",
+    "id": "tv_37649",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, why is Terry already in a police cell when Bob is breathalysed?",
     "answers": [
-      "He has refused to pay a restaurant bill",
       "He has been involved in football violence",
+      "He has refused to pay a restaurant bill",
       "He has been caught speeding",
       "He has stolen a bicycle"
     ],
@@ -2015,17 +1980,17 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37651",
+    "id": "tv_37650",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
-    "question": "In Whatever Happened to the Likely Lads?, what kind of test of physical fitness do Bob and Terry challenge each other to?",
+    "question": "In Whatever Happened to the Likely Lads?, what kind of tactics do both Bob and Terry resort to as their fitness challenge intensifies?",
     "answers": [
-      "An open-water swim",
-      "A marathon run",
-      "A cross-country cycle race",
-      "A boxing match"
+      "They rely strictly on fair play",
+      "Underhand tactics to gain an advantage",
+      "They bring in substitute riders",
+      "They agree to cancel the contest"
     ],
-    "correctAnswer": "A cross-country cycle race",
+    "correctAnswer": "Underhand tactics to gain an advantage",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -2039,26 +2004,26 @@ const auditAdditions = [
       "TV Pack 338",
       "Storyline and character development",
       "S2E5 The Great Race",
-      "Answer: A cross-country cycle race",
+      "Answer: Underhand tactics to gain an advantage",
       "Episode source: https://www.comedy.co.uk/tv/whatever_happened_likely_lads/episodes/2/",
-      "Competitive Friends",
-      "Cycling",
-      "Age Anxiety",
+      "Sneaky Competition",
+      "Getting Older",
+      "Underhand Tactics",
       "UK English",
       "2026 Audit"
     ],
     "dailyEligible": true
   },
   {
-    "id": "tv_37652",
+    "id": "tv_37651",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what is Terry supposed to complete while staying in Bob and Thelma's house?",
     "answers": [
       "Their annual tax return",
       "A garden landscaping plan",
-      "A new wallpaper design",
-      "A list of DIY repairs"
+      "A list of DIY repairs",
+      "A new wallpaper design"
     ],
     "correctAnswer": "A list of DIY repairs",
     "difficulty": "Medium",
@@ -2085,15 +2050,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37653",
+    "id": "tv_37652",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, where are Bob and Thelma spending their weekend when Terry is left with their house?",
     "answers": [
-      "Scotland",
       "Norway",
       "Wales",
-      "Northern Ireland"
+      "Northern Ireland",
+      "Scotland"
     ],
     "correctAnswer": "Scotland",
     "difficulty": "Medium",
@@ -2120,13 +2085,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37654",
+    "id": "tv_37653",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what hospital job does Terry conceal from Bob when he appears in disguise?",
     "answers": [
-      "Surgeon",
       "Porter",
+      "Surgeon",
       "Ambulance driver",
       "Pharmacist"
     ],
@@ -2155,14 +2120,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37655",
+    "id": "tv_37654",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what injury does Bob suffer after Terry's botched DIY work?",
     "answers": [
       "He cuts his hand with a saw",
-      "He dislocates his shoulder moving a wardrobe",
       "He puts his foot through the ceiling",
+      "He dislocates his shoulder moving a wardrobe",
       "He burns his arm on a radiator"
     ],
     "correctAnswer": "He puts his foot through the ceiling",
@@ -2190,15 +2155,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37656",
+    "id": "tv_37655",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which person from Thelma's family is caught staying at the same hotel with a secretary?",
     "answers": [
       "Her sister Susan",
       "Her mother",
-      "Her uncle Walter",
-      "Her father George"
+      "Her father George",
+      "Her uncle Walter"
     ],
     "correctAnswer": "Her father George",
     "difficulty": "Medium",
@@ -2225,15 +2190,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37657",
+    "id": "tv_37656",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what sentimental object reminds Bob of Thelma after she goes to her mother's?",
     "answers": [
-      "His teddy bear Norman",
       "Their honeymoon photograph",
       "Her wedding bouquet",
-      "A birthday card from Susan"
+      "A birthday card from Susan",
+      "His teddy bear Norman"
     ],
     "correctAnswer": "His teddy bear Norman",
     "difficulty": "Medium",
@@ -2260,13 +2225,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37658",
+    "id": "tv_37657",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, where does Terry try to deliver Bob's letter to the estranged Thelma?",
     "answers": [
-      "At a hospital",
       "At the library",
+      "At a hospital",
       "At her office in a factory",
       "At the railway station"
     ],
@@ -2295,14 +2260,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37659",
+    "id": "tv_37658",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what unusual item has Terry put in Bob's toaster and broken it?",
     "answers": [
       "Bacon rolls",
-      "A boiled egg",
       "Chops",
+      "A boiled egg",
       "A sandwich wrapped in foil"
     ],
     "correctAnswer": "Chops",
@@ -2330,15 +2295,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37660",
+    "id": "tv_37659",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what does Terry decide to do to help end Bob's separation?",
     "answers": [
       "Move Bob to another town",
       "Put the house up for sale",
-      "Arrange a secret divorce",
-      "Visit Thelma and persuade her to return"
+      "Visit Thelma and persuade her to return",
+      "Arrange a secret divorce"
     ],
     "correctAnswer": "Visit Thelma and persuade her to return",
     "difficulty": "Medium",
@@ -2365,15 +2330,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37661",
+    "id": "tv_37660",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, what does Terry eventually agree with local hard man Scaife despite their earlier fight?",
     "answers": [
-      "A truce over a drink and cigarette",
       "A formal boxing match",
       "An apology in court",
-      "A joint building project"
+      "A joint building project",
+      "A truce over a drink and cigarette"
     ],
     "correctAnswer": "A truce over a drink and cigarette",
     "difficulty": "Medium",
@@ -2400,13 +2365,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37662",
+    "id": "tv_37661",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which relative's funeral leads Bob to worry about his own future?",
     "answers": [
-      "Thelma's Uncle Walter",
       "Terry's Uncle Jacob",
+      "Thelma's Uncle Walter",
       "Bob's father",
       "Susan's aunt"
     ],
@@ -2435,14 +2400,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37663",
+    "id": "tv_37662",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which pirate character does Bob dress as for the Christmas fancy-dress party?",
     "answers": [
       "Long John Silver",
-      "Captain Flint",
       "Captain Hook",
+      "Captain Flint",
       "Captain Blood"
     ],
     "correctAnswer": "Captain Hook",
@@ -2470,15 +2435,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37664",
+    "id": "tv_37663",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which fictional boy does Thelma dress as to complement Bob's costume?",
     "answers": [
       "Pinocchio",
       "Robin Hood",
-      "Oliver Twist",
-      "Peter Pan"
+      "Peter Pan",
+      "Oliver Twist"
     ],
     "correctAnswer": "Peter Pan",
     "difficulty": "Medium",
@@ -2505,15 +2470,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37665",
+    "id": "tv_37664",
     "category": "Television",
     "programme": "Whatever Happened to the Likely Lads?",
     "question": "In Whatever Happened to the Likely Lads?, which industrial vehicle does Terry use to get Bob home after the festive celebrations?",
     "answers": [
-      "A forklift truck",
       "A tractor",
       "A fire engine",
-      "A milk float"
+      "A milk float",
+      "A forklift truck"
     ],
     "correctAnswer": "A forklift truck",
     "difficulty": "Medium",
@@ -2540,13 +2505,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37666",
+    "id": "tv_37665",
     "category": "Television",
     "programme": "The Likely Lads (1976 film)",
     "question": "In The Likely Lads (1976 film), whose old childhood house has been demolished and causes him to contemplate his life?",
     "answers": [
-      "Terry Collier's",
       "Bob Ferris's",
+      "Terry Collier's",
       "Thelma's",
       "Audrey's"
     ],
@@ -2575,14 +2540,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37667",
+    "id": "tv_37666",
     "category": "Television",
     "programme": "The Likely Lads (1976 film)",
     "question": "In The Likely Lads (1976 film), who arranges a caravan weekend hoping Terry will settle down with Christina?",
     "answers": [
       "Audrey Collier",
-      "Bob Ferris",
       "Thelma Ferris",
+      "Bob Ferris",
       "Mrs Collier"
     ],
     "correctAnswer": "Thelma Ferris",
@@ -2610,15 +2575,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37668",
+    "id": "tv_37667",
     "category": "Television",
     "programme": "The Likely Lads (1976 film)",
     "question": "In The Likely Lads (1976 film), which family home's top-floor flat do Terry and Christina share while the parents are away?",
     "answers": [
       "The Ferrises'",
       "The Chambers'",
-      "The Perrins'",
-      "The Colliers'"
+      "The Colliers'",
+      "The Perrins'"
     ],
     "correctAnswer": "The Colliers'",
     "difficulty": "Medium",
@@ -2645,15 +2610,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37669",
+    "id": "tv_37668",
     "category": "Television",
     "programme": "The Likely Lads (1976 film)",
     "question": "In The Likely Lads (1976 film), which two men become separated from their partners during the camping holiday?",
     "answers": [
-      "Bob and Terry",
       "George and Bob",
       "Terry and Hughie",
-      "Bob and Duggie"
+      "Bob and Duggie",
+      "Bob and Terry"
     ],
     "correctAnswer": "Bob and Terry",
     "difficulty": "Medium",
@@ -2680,13 +2645,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37670",
+    "id": "tv_37669",
     "category": "Television",
     "programme": "The Likely Lads (1976 film)",
     "question": "In The Likely Lads (1976 film), what kind of weather adds to the problems of the countryside camping trip?",
     "answers": [
-      "Heavy snowfall",
       "Torrential rain",
+      "Heavy snowfall",
       "A summer heatwave",
       "Thick freezing fog"
     ],
@@ -2715,14 +2680,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37671",
+    "id": "tv_37670",
     "category": "Television",
     "programme": "The Likely Lads (1976 film)",
     "question": "In The Likely Lads (1976 film), what happens between Terry and Christina after the disastrous trip?",
     "answers": [
       "They marry",
-      "They move to Finland",
       "They split up",
+      "They move to Finland",
       "They buy a caravan together"
     ],
     "correctAnswer": "They split up",
@@ -2750,49 +2715,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37672",
-    "category": "Television",
-    "programme": "The Likely Lads (1976 film)",
-    "question": "In The Likely Lads (1976 film), what occupation does Terry take up after his relationship collapses?",
-    "answers": [
-      "Professional footballer",
-      "Hotel manager",
-      "Driving instructor",
-      "Cargo-ship crewman"
-    ],
-    "correctAnswer": "Cargo-ship crewman",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Classic Sitcom",
-      "BBC",
-      "The Likely Lads Collection",
-      "The Likely Lads (1976 film)",
-      "Programme: The Likely Lads (1976 film)",
-      "TV Pack 338",
-      "Storyline and character development",
-      "Feature film 1976",
-      "Answer: Cargo-ship crewman",
-      "Episode source: https://www.comedy.co.uk/film/the_likely_lads/",
-      "Terry Career Change",
-      "Merchant Ship",
-      "Emigration",
-      "UK English",
-      "2026 Audit"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37673",
+    "id": "tv_37671",
     "category": "Television",
     "programme": "The Likely Lads (1976 film)",
     "question": "In The Likely Lads (1976 film), what makes Bob miss the chance to leave the ship before it sets sail for Bahrain?",
     "answers": [
-      "He passes out drunk on board",
       "He loses his passport",
       "The captain locks him in a cabin",
+      "He passes out drunk on board",
       "The ship departs during a storm"
     ],
     "correctAnswer": "He passes out drunk on board",
@@ -2820,15 +2750,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37674",
+    "id": "tv_37672",
     "category": "Television",
     "programme": "The Likely Lads (1976 film)",
     "question": "In The Likely Lads (1976 film), what is the first name of Terry's Finnish girlfriend Christina as she is commonly called?",
     "answers": [
       "Tina",
-      "Chris",
       "Christie",
-      "Kit"
+      "Kit",
+      "Chris"
     ],
     "correctAnswer": "Chris",
     "difficulty": "Medium",
@@ -2856,11 +2786,11 @@ const auditAdditions = [
   }
 ];
 questions.push(...auditAdditions);
-const auditedProgrammeTotals = {"The Likely Lads":64,"Whatever Happened to the Likely Lads?":88,"The Likely Lads (1976 film)":21};
-if (questions.length !== 173 ||
+const auditedProgrammeTotals = {"The Likely Lads":64,"Whatever Happened to the Likely Lads?":87,"The Likely Lads (1976 film)":20};
+if (questions.length !== 171 ||
  questions[0].id !== 'tv_15994' || questions[98].id !== 'tv_16092' ||
  auditAdditions[0].id !== 'tv_37601' ||
- auditAdditions[auditAdditions.length-1].id !== 'tv_37674' ||
+ auditAdditions[auditAdditions.length-1].id !== 'tv_37672' ||
  new Set(questions.map(q=>q.id)).size !== questions.length ||
  new Set(questions.map(q=>normalise(q.programme+'|'+q.question))).size !== questions.length ||
  Object.entries(auditedProgrammeTotals).some(([p,n])=>questions.filter(q=>q.programme===p).length!==n) ||
