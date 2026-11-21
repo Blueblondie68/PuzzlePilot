@@ -1366,14 +1366,14 @@ const auditAdditions = [
     "id": "tv_37098",
     "category": "Television",
     "programme": "Ashes to Ashes",
-    "question": "In Ashes to Ashes, why does the schoolgirl's father initially resist police involvement in her disappearance?",
+    "question": "In Ashes to Ashes, which CID officer leads the kidnapped-schoolgirl investigation while Gene is absent in the opening episode of series three?",
     "answers": [
-      "He is a police officer himself",
-      "He already knows she is abroad",
-      "He has received a ransom demand",
-      "He is accused of the kidnapping"
+      "Ray Carling",
+      "Chris Skelton",
+      "Shaz Granger",
+      "Alex Drake"
     ],
-    "correctAnswer": "He has received a ransom demand",
+    "correctAnswer": "Ray Carling",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1388,13 +1388,13 @@ const auditAdditions = [
       "2008–2010",
       "Series 3 Episode 1",
       "Episode plot and character",
-      "Correct answer: He has received a ransom demand",
+      "Correct answer: Ray Carling",
       "Reference: https://en.wikipedia.org/wiki/List_of_Ashes_to_Ashes_episodes",
       "UK English",
-      "David Blonde",
-      "Family Hostage Crisis",
-      "Police Exclusion",
-      "Ransom"
+      "Ray Carling",
+      "CID Leadership",
+      "Gene On The Run",
+      "Schoolgirl Kidnap"
     ],
     "dailyEligible": true
   },
@@ -2122,14 +2122,14 @@ const auditAdditions = [
     "id": "tv_37119",
     "category": "Television",
     "programme": "Ashes to Ashes",
-    "question": "In Ashes to Ashes, what kind of sporting trophy are the team attempting to recover in their 2010 Sport Relief investigation?",
+    "question": "In Ashes to Ashes, which Spandau Ballet singer appeared in the 2010 Sport Relief sketch?",
     "answers": [
-      "A football cup",
-      "A tennis plate",
-      "A cricket trophy",
-      "A golf trophy"
+      "Tony Hadley",
+      "Simon Le Bon",
+      "Boy George",
+      "Paul Young"
     ],
-    "correctAnswer": "A golf trophy",
+    "correctAnswer": "Tony Hadley",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -2144,13 +2144,13 @@ const auditAdditions = [
       "2008–2010",
       "Charity specials",
       "Episode plot and character",
-      "Correct answer: A golf trophy",
-      "Reference: https://www.tvmaze.com/shows/2015/ashes-to-ashes/episodeguide",
+      "Correct answer: Tony Hadley",
+      "Reference: https://en.wikipedia.org/wiki/Ashes_to_Ashes_(British_TV_series)",
       "UK English",
       "Sport Relief 2010",
-      "Ryder Cup",
-      "Golf",
-      "Charity Sketch"
+      "Tony Hadley",
+      "Spandau Ballet",
+      "Celebrity Cameo"
     ],
     "dailyEligible": true
   }
