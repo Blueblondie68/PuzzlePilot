@@ -212,5 +212,1686 @@
 
    seen.add(key);
  }
-
- module.exports = questions;
+// 21 November 2026: episode-specific audit additions. Preserve all
+// original 96 questions IDs tv_16696–tv_16791 unchanged.
+// Additional episodes span the 2015–2020 revival and 1969–1974 run.
+const auditAdditions = [
+  {
+    "id": "tv_38110",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E01: The Lost Notes), whose whistling first helps Tiny realise her lost tune is still somewhere above the planet?",
+    "answers": [
+      "Mother Clanger's",
+      "Granny Clanger's",
+      "The Soup Dragon's",
+      "The Iron Chicken's"
+    ],
+    "correctAnswer": "Mother Clanger's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E01 The Lost Notes",
+      "Revival storyline",
+      "Answer: Mother Clanger's",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Tiny melody",
+      "Garden whistling",
+      "Tune recovered"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38111",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E02: The Little Thing), where does Small plan to take the puzzling metal fragment before discovering what it fits?",
+    "answers": [
+      "The Soup Dragon's well",
+      "The Iron Chicken's nest",
+      "Mother's flower garden",
+      "Granny's knitting cave"
+    ],
+    "correctAnswer": "The Iron Chicken's nest",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E02 The Little Thing",
+      "Revival storyline",
+      "Answer: The Iron Chicken's nest",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Strange metal fragment",
+      "Nest donation",
+      "Missing piece"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38112",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E03: In the Soup), what happens when Major overfills his soup-collecting invention and it jams in a doorway?",
+    "answers": [
+      "It flies off the planet",
+      "It turns the soup blue",
+      "It bursts and splashes soup everywhere",
+      "It melts into a puddle"
+    ],
+    "correctAnswer": "It bursts and splashes soup everywhere",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E03 In the Soup",
+      "Revival storyline",
+      "Answer: It bursts and splashes soup everywhere",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Major machine",
+      "Overfilling",
+      "Soup explosion"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38113",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E04: The Knitting Machine), how does Granny challenge Major's machine after seeing its ugly garments?",
+    "answers": [
+      "She asks the Soup Dragon to dismantle it",
+      "She paints her knitted clothes",
+      "She refuses to wear wool ever again",
+      "She holds a knitting competition"
+    ],
+    "correctAnswer": "She holds a knitting competition",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E04 The Knitting Machine",
+      "Revival storyline",
+      "Answer: She holds a knitting competition",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Granny challenge",
+      "Knit off",
+      "Machine rivalry"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38114",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E05: The Flying Froglets), what does Small use for his own birthday invention when Major says he is too young to help?",
+    "answers": [
+      "Puffballs and airfruit",
+      "Stones and copper leaves",
+      "Soup jugs and pipes",
+      "A radio and a telescope"
+    ],
+    "correctAnswer": "Puffballs and airfruit",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E05 The Flying Froglets",
+      "Revival storyline",
+      "Answer: Puffballs and airfruit",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Small invention",
+      "Granny birthday",
+      "Acrobatic froglets"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38115",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E06: I Am the Eggbot), what musical note does the little Eggbot sing before a larger one arrives to rescue it?",
+    "answers": [
+      "Soh",
+      "Doh",
+      "Lah",
+      "Te"
+    ],
+    "correctAnswer": "Doh",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E06 I Am the Eggbot",
+      "Revival storyline",
+      "Answer: Doh",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Singing robot",
+      "Notes",
+      "Eggbot rescue"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38116",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E07: The Giant Plant), which creatures help halt the plant that grows uncontrollably after Tiny and Small sing to it?",
+    "answers": [
+      "Froglets",
+      "Wols",
+      "Sky Moos",
+      "Hoots"
+    ],
+    "correctAnswer": "Sky Moos",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E07 The Giant Plant",
+      "Revival storyline",
+      "Answer: Sky Moos",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Giant vegetation",
+      "Plant eaters",
+      "Rescue"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38117",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E08: Tiny's Lullaby), how does Tiny finally solve her bedtime music problem when her radio hat breaks?",
+    "answers": [
+      "She builds a new radio tower",
+      "She borrows Granny's musical clock",
+      "She listens to the Hoot Planet",
+      "She composes and sings her own tune"
+    ],
+    "correctAnswer": "She composes and sings her own tune",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E08 Tiny's Lullaby",
+      "Revival storyline",
+      "Answer: She composes and sings her own tune",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Lullaby solution",
+      "Tiny song",
+      "Bedtime"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38118",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E09: The Crystal Trees), what makes the mysterious crystal trees glow and sparkle?",
+    "answers": [
+      "Music",
+      "Moonlight alone",
+      "Green soup",
+      "Copper dust"
+    ],
+    "correctAnswer": "Music",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E09 The Crystal Trees",
+      "Revival storyline",
+      "Answer: Music",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Crystal seeds",
+      "Musical light",
+      "Tiny discovery"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38119",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E10: The Curious Tunnel), who ends up covered in blue string pudding after items are sent into a strange upward-sucking tunnel?",
+    "answers": [
+      "The Iron Chicken",
+      "Granny Clanger",
+      "Mother Clanger",
+      "The Soup Dragon"
+    ],
+    "correctAnswer": "Granny Clanger",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E10 The Curious Tunnel",
+      "Revival storyline",
+      "Answer: Granny Clanger",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Transport tunnel",
+      "Granny surprised",
+      "Lost objects"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38120",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E11: Space Tangle), what social outing is Small waiting for when he realises the Iron Chicken is trapped near her nest?",
+    "answers": [
+      "A birthday concert",
+      "A visit to the soup wells",
+      "A picnic",
+      "A game of cricket"
+    ],
+    "correctAnswer": "A picnic",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E11 Space Tangle",
+      "Revival storyline",
+      "Answer: A picnic",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Small invitation",
+      "Picnic",
+      "Iron Chicken delayed"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38121",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E12: Lonely as a Cloud), why does Tiny return to the Cloud after the others have gone indoors for bed?",
+    "answers": [
+      "She has to mend a broken telescope",
+      "She has lost a music-tree seed",
+      "She needs to collect the soup trolley",
+      "She realises the Cloud is lonely and wants one last game"
+    ],
+    "correctAnswer": "She realises the Cloud is lonely and wants one last game",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E12 Lonely as a Cloud",
+      "Revival storyline",
+      "Answer: She realises the Cloud is lonely and wants one last game",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Lonely cloud",
+      "Bedtime",
+      "Extra game"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38122",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E13: In a Spin), who accidentally knocks over the tankard that ruins Granny's favourite shawl?",
+    "answers": [
+      "Tiny and Small",
+      "Major and Mother",
+      "The Wols",
+      "The Iron Chicken"
+    ],
+    "correctAnswer": "Tiny and Small",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E13 In a Spin",
+      "Revival storyline",
+      "Answer: Tiny and Small",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Spilled soup",
+      "Granny shawl",
+      "Accident"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38123",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E14: Tiny's Orchestra), what experience finally inspires Tiny's tune after Mother and Major ask for incompatible styles of music?",
+    "answers": [
+      "A night in the Soup Dragon's well",
+      "A ride on a Sky Moo",
+      "A walk through the crystal forest",
+      "A visit from the Wols"
+    ],
+    "correctAnswer": "A ride on a Sky Moo",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E14 Tiny's Orchestra",
+      "Revival storyline",
+      "Answer: A ride on a Sky Moo",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Tiny orchestra",
+      "Inspiration",
+      "Sky Moo flight"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38124",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E15: The Metal Bug), which plants are being eaten after Small discovers a mysterious ball that later splits open?",
+    "answers": [
+      "Star roses",
+      "Soup flowers",
+      "Copper trees",
+      "Music trees"
+    ],
+    "correctAnswer": "Copper trees",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E15 The Metal Bug",
+      "Revival storyline",
+      "Answer: Copper trees",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Metal insect",
+      "Copper leaves",
+      "Mysterious shell"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38125",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E16: Mother's Melody), what does Mother do when Tiny asks her to try making up music?",
+    "answers": [
+      "She takes the music boat to Earth",
+      "She asks the Froglets for a banjo",
+      "She refuses to leave her bedroom",
+      "She gets flustered and returns to her garden"
+    ],
+    "correctAnswer": "She gets flustered and returns to her garden",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E16 Mother's Melody",
+      "Revival storyline",
+      "Answer: She gets flustered and returns to her garden",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Mother shy",
+      "Music request",
+      "Garden"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38126",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E17: Crash Bang Chicken), why can the Iron Chicken not immediately fly home after Major repairs her injured wing?",
+    "answers": [
+      "She has lost her confidence",
+      "She has forgotten the route",
+      "Her nest is underwater",
+      "Her legs have become stuck"
+    ],
+    "correctAnswer": "She has lost her confidence",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E17 Crash Bang Chicken",
+      "Revival storyline",
+      "Answer: She has lost her confidence",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Broken wing",
+      "Fear of flying",
+      "Confidence"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38127",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E18: Major's Meteor), what does Major invent to cheer Small up after he misses seeing meteors streak past?",
+    "answers": [
+      "A portable planetarium",
+      "A meteor machine",
+      "A cloud catcher",
+      "A telescope that plays tunes"
+    ],
+    "correctAnswer": "A meteor machine",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E18 Major's Meteor",
+      "Revival storyline",
+      "Answer: A meteor machine",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Small upset",
+      "Meteor display",
+      "Major cheers him"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38128",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E19: The Singing Asteroid), who is making music alone while travelling through space on an asteroid?",
+    "answers": [
+      "A young Sky Moo",
+      "A lost Froglet",
+      "A lonely singing flower",
+      "A miniature Iron Chicken"
+    ],
+    "correctAnswer": "A lonely singing flower",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E19 The Singing Asteroid",
+      "Revival storyline",
+      "Answer: A lonely singing flower",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Lonely flower",
+      "Asteroid",
+      "Tiny helps"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38129",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E20: Small's New Star), what does Small transform the Iron Chicken's discarded pile of metal into?",
+    "answers": [
+      "A fishing net",
+      "An extra soup trolley",
+      "A skating rink",
+      "A new star"
+    ],
+    "correctAnswer": "A new star",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E20 Small's New Star",
+      "Revival storyline",
+      "Answer: A new star",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Junk reused",
+      "Iron Chicken",
+      "Space sculpture"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38130",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E21: Baby Soup Clanger), why does Baby Soup Dragon decide he wants to be a Clanger for a while?",
+    "answers": [
+      "His mother will not let him use her large soup ladle",
+      "He dislikes flying with the Sky Moos",
+      "He has lost his home in the cave",
+      "He has eaten the wrong kind of pudding"
+    ],
+    "correctAnswer": "His mother will not let him use her large soup ladle",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E21 Baby Soup Clanger",
+      "Revival storyline",
+      "Answer: His mother will not let him use her large soup ladle",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Baby dragon",
+      "Ladle rules",
+      "Identity game"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38131",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E22: Holes), what do the two circles of black cloth inside a box from space turn out to be?",
+    "answers": [
+      "Pieces of a broken telescope",
+      "Linked holes that lead into one another",
+      "Decorations for the music boat",
+      "Two patches for Granny's shawl"
+    ],
+    "correctAnswer": "Linked holes that lead into one another",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E22 Holes",
+      "Revival storyline",
+      "Answer: Linked holes that lead into one another",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Black cloth",
+      "Connected portals",
+      "Tiny Small"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38132",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E23: Bubble Trouble), what living things do Tiny and Small accidentally suck up in Major's cleaning machine?",
+    "answers": [
+      "Sky Moos",
+      "Froglets",
+      "Glow Buzzers",
+      "Soup Dragons"
+    ],
+    "correctAnswer": "Glow Buzzers",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E23 Bubble Trouble",
+      "Revival storyline",
+      "Answer: Glow Buzzers",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Cleaner mishap",
+      "Glowing insects",
+      "Rescue"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38133",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E24: Dragon Day), which friend arrives late but brings a particularly welcome present for the Soup Dragon's thank-you celebration?",
+    "answers": [
+      "The Moon Whale",
+      "The Eggbot",
+      "The Cloud",
+      "The Iron Chicken"
+    ],
+    "correctAnswer": "The Iron Chicken",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E24 Dragon Day",
+      "Revival storyline",
+      "Answer: The Iron Chicken",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Soup Dragon appreciation",
+      "Late present",
+      "Kindness"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38134",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E25: Home Sweet Hoot), which invention helps the Clangers call the distant Hoot Planet to collect its noisy visitor?",
+    "answers": [
+      "Major's make-it-louder machine",
+      "A giant telescope",
+      "A rocket made of soup pipes",
+      "A crystal radio hat"
+    ],
+    "correctAnswer": "Major's make-it-louder machine",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E25 Home Sweet Hoot",
+      "Revival storyline",
+      "Answer: Major's make-it-louder machine",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Hoot returns",
+      "Amplified sound",
+      "Major inventor"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38135",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E26: Find the Eclipse), what safety equipment has Major made so the family can watch the eclipse without staring unprotected at the Sun?",
+    "answers": [
+      "Tinted soup bottles",
+      "Special eclipse glasses",
+      "A copper periscope",
+      "Woollen eye masks"
+    ],
+    "correctAnswer": "Special eclipse glasses",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E26 Find the Eclipse",
+      "Revival storyline",
+      "Answer: Special eclipse glasses",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Eclipse watching",
+      "Eye safety",
+      "Major glasses"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38136",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E27: The Little Chill), why can a Sky Moo not join the others inside the planet when the weather becomes bitterly cold?",
+    "answers": [
+      "All the tunnels are flooded",
+      "The music boat blocks the doorway",
+      "The entrance doors have frozen shut",
+      "A giant plant has filled the entrance"
+    ],
+    "correctAnswer": "The entrance doors have frozen shut",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E27 The Little Chill",
+      "Revival storyline",
+      "Answer: The entrance doors have frozen shut",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Sky Moo cold",
+      "Frozen doors",
+      "Granny rescue"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38137",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E28: The Brilliant Surprise), who sends Tiny the mysterious message announcing that something is coming?",
+    "answers": [
+      "The Soup Dragon",
+      "Small Clanger",
+      "The Moon Whale",
+      "The Iron Chicken"
+    ],
+    "correctAnswer": "The Iron Chicken",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E28 The Brilliant Surprise",
+      "Revival storyline",
+      "Answer: The Iron Chicken",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Secret surprise",
+      "Iron Chicken message",
+      "Tiny"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38138",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E29: The Ball), what does Mother explain about the silver ball that glows and rings when it bounces?",
+    "answers": [
+      "It is a living creature",
+      "It is one of Major's machines",
+      "It is a seed from a music tree",
+      "It is a piece of the Moon"
+    ],
+    "correctAnswer": "It is a living creature",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E29 The Ball",
+      "Revival storyline",
+      "Answer: It is a living creature",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Silver bouncy ball",
+      "Living visitor",
+      "Mother knowledge"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38139",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E30: Planty), what mystery puzzles Tiny and Small after Granny is given a purple plant for her knitting corner?",
+    "answers": [
+      "The plant changes into a Froglet",
+      "The plant moves while Granny is asleep",
+      "The plant sings a lullaby to Major",
+      "The plant disappears into space"
+    ],
+    "correctAnswer": "The plant moves while Granny is asleep",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E30 Planty",
+      "Revival storyline",
+      "Answer: The plant moves while Granny is asleep",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Purple plant",
+      "Granny corner",
+      "Moving mystery"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38140",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E31: The Game), what does Baby Soup Dragon learn after winning a game for the colourful gems from a meteor shower?",
+    "answers": [
+      "The gems are made of soup",
+      "He cannot play without a telescope",
+      "Playing together matters more than winning",
+      "Winning means keeping all the food"
+    ],
+    "correctAnswer": "Playing together matters more than winning",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E31 The Game",
+      "Revival storyline",
+      "Answer: Playing together matters more than winning",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Gemstone shower",
+      "Game lesson",
+      "Friendship"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38141",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E32: Granny and Small), whom does Small reluctantly ask to play when everyone else in the family is too busy?",
+    "answers": [
+      "The Iron Chicken",
+      "The Moon Whale",
+      "A visiting astronaut",
+      "Granny Clanger"
+    ],
+    "correctAnswer": "Granny Clanger",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E32 Granny and Small",
+      "Revival storyline",
+      "Answer: Granny Clanger",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Small bored",
+      "Family busy",
+      "Unexpected adventure"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38142",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E33: Tiny's Good Idea), what earlier invention does Tiny adapt to help water Mother's wilting plants after Major's device fails?",
+    "answers": [
+      "A marble-chute toy",
+      "A flying music boat",
+      "A metal detector",
+      "A knitting machine"
+    ],
+    "correctAnswer": "A marble-chute toy",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E33 Tiny's Good Idea",
+      "Revival storyline",
+      "Answer: A marble-chute toy",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Garden rescue",
+      "Marble chute",
+      "Tiny ingenuity"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38143",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E34: Star Roses), what is supposed to make the rare roses bloom on the Clangers' planet?",
+    "answers": [
+      "A shower of green soup",
+      "The passing of a special star",
+      "The arrival of a Moon Whale",
+      "Major playing a loud trumpet"
+    ],
+    "correctAnswer": "The passing of a special star",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E34 Star Roses",
+      "Revival storyline",
+      "Answer: The passing of a special star",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Rare roses",
+      "Passing star",
+      "Bloom"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38144",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E35: Chairs), what accidentally punctures Granny's comfortable puffball chair?",
+    "answers": [
+      "A copper leaf",
+      "A broken spoon",
+      "A knitting needle",
+      "A fishing hook"
+    ],
+    "correctAnswer": "A knitting needle",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E35 Chairs",
+      "Revival storyline",
+      "Answer: A knitting needle",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Granny chair",
+      "Puncture",
+      "Knitting"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38145",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E36: Sweet Music), what causes trouble after Baby Soup Dragon finds an unfamiliar radio and plays with it?",
+    "answers": [
+      "He sells it to a travelling robot",
+      "He turns it into a telescope",
+      "He loses it inside the Soup Well",
+      "He uses it in the middle of the night"
+    ],
+    "correctAnswer": "He uses it in the middle of the night",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E36 Sweet Music",
+      "Revival storyline",
+      "Answer: He uses it in the middle of the night",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Fallen radio",
+      "Nocturnal noise",
+      "Baby dragon"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38146",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E37: The Box), what do Tiny and Small discover when their separate pieces of space treasure are brought together?",
+    "answers": [
+      "The pieces fit together",
+      "The pieces are both hollow eggs",
+      "One turns into green soup",
+      "The pieces belong to the Iron Chicken's nest"
+    ],
+    "correctAnswer": "The pieces fit together",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E37 The Box",
+      "Revival storyline",
+      "Answer: The pieces fit together",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Space treasures",
+      "Mysterious box",
+      "Putting together"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38147",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E38: Snapper), what do the Clangers learn from a wheeled robot that takes photographs after arriving on their planet?",
+    "answers": [
+      "It is collecting their cooking recipes",
+      "It has pictures from its travels around the universe",
+      "It belongs to Granny Clanger",
+      "It wants to demolish their music trees"
+    ],
+    "correctAnswer": "It has pictures from its travels around the universe",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E38 Snapper",
+      "Revival storyline",
+      "Answer: It has pictures from its travels around the universe",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Photographic robot",
+      "Universe pictures",
+      "Visitor acceptance"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38148",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E39: The Chicken Waltz), how do Tiny and Small help the Iron Chicken when her dancing proves too difficult?",
+    "answers": [
+      "They build her a pair of roller skates",
+      "They ask her to conduct the music trees",
+      "They make a simpler rhythm for her",
+      "They invent an automatic dance floor"
+    ],
+    "correctAnswer": "They make a simpler rhythm for her",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E39 The Chicken Waltz",
+      "Revival storyline",
+      "Answer: They make a simpler rhythm for her",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Iron Chicken dance",
+      "Simple tune",
+      "Tiny Small"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38149",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E40: The Puzzle), who spots the family's empty music boat and brings Granny to find them after they become lost inside a new planet?",
+    "answers": [
+      "The Hoot Planet",
+      "A Baby Soup Dragon",
+      "A giant Eggbot",
+      "A Sky Moo"
+    ],
+    "correctAnswer": "A Sky Moo",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E40 The Puzzle",
+      "Revival storyline",
+      "Answer: A Sky Moo",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Strange planet",
+      "Lost Clangers",
+      "Granny rescue"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38150",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E41: The Little Bag), what instrument does Tiny keep in the mysterious sparkly bag Small gives her?",
+    "answers": [
+      "Panpipes",
+      "A banjo",
+      "A fiddle",
+      "A trumpet"
+    ],
+    "correctAnswer": "Panpipes",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E41 The Little Bag",
+      "Revival storyline",
+      "Answer: Panpipes",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Sparkly pouch",
+      "Tiny music",
+      "Panpipes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38151",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E42: Hide-and-Seek), which onlooker sees Baby Soup Dragon cheating during the race around the planet?",
+    "answers": [
+      "The Iron Chicken",
+      "An orange Froglet",
+      "A human astronaut",
+      "Mother Clanger"
+    ],
+    "correctAnswer": "An orange Froglet",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E42 Hide-and-Seek",
+      "Revival storyline",
+      "Answer: An orange Froglet",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Cheating race",
+      "Froglet witness",
+      "Honesty"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38152",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E43: Rainbow Star), what helps Small work out how seven coloured stones relate to a strange metal disc from space?",
+    "answers": [
+      "The tones played by the Soup Dragon",
+      "The colour of the Clangers' planet",
+      "The coloured stripes on his scarf",
+      "A painting on the cave wall"
+    ],
+    "correctAnswer": "The coloured stripes on his scarf",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E43 Rainbow Star",
+      "Revival storyline",
+      "Answer: The coloured stripes on his scarf",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Rainbow puzzle",
+      "Seven stones",
+      "Scarf"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38153",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E44: Busy Buzzers), why must Small and Major return the bowl of glow-honey they took from a crater?",
+    "answers": [
+      "The Soup Dragon is allergic to it",
+      "Granny wants to knit with it",
+      "It belongs to a travelling salesman",
+      "The Glow Buzzers need it for a special visitor"
+    ],
+    "correctAnswer": "The Glow Buzzers need it for a special visitor",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E44 Busy Buzzers",
+      "Revival storyline",
+      "Answer: The Glow Buzzers need it for a special visitor",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Glow-honey",
+      "Agitated insects",
+      "Visitor"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38154",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E45: Calm in the Caves), what strange objects are keeping the Froglets unnaturally quiet in their cave?",
+    "answers": [
+      "Three glowing blue stones",
+      "A brand-new television set",
+      "A set of copper bells",
+      "A miniature robot egg"
+    ],
+    "correctAnswer": "Three glowing blue stones",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E45 Calm in the Caves",
+      "Revival storyline",
+      "Answer: Three glowing blue stones",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Froglets calm",
+      "Blue stones",
+      "Unusual noise"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38155",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E46: The Golden Planet), who first realises that the tempting golden world seen through a telescope is not what it appears?",
+    "answers": [
+      "Mother Clanger",
+      "Tiny Clanger",
+      "The Soup Dragon",
+      "The Iron Chicken"
+    ],
+    "correctAnswer": "Tiny Clanger",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E46 The Golden Planet",
+      "Revival storyline",
+      "Answer: Tiny Clanger",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Golden world",
+      "Telescope",
+      "Tiny discovery"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38156",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E47: All Change Day), what task does the Soup Dragon struggle with when the Clangers and their neighbours swap jobs?",
+    "answers": [
+      "Fishing in space",
+      "Writing music",
+      "Knitting",
+      "Repairing a rocket"
+    ],
+    "correctAnswer": "Knitting",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E47 All Change Day",
+      "Revival storyline",
+      "Answer: Knitting",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Role swap",
+      "Dragon knitting",
+      "Granny soup"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38157",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E48: The Wols), who agrees to babysit Mother Wol's three lively youngsters while she collects materials for a new nest?",
+    "answers": [
+      "Granny Clanger",
+      "Small Clanger",
+      "The Soup Dragon",
+      "The Iron Chicken"
+    ],
+    "correctAnswer": "The Iron Chicken",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E48 The Wols",
+      "Revival storyline",
+      "Answer: The Iron Chicken",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Wol chicks",
+      "Babysitting",
+      "Nest building"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38158",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E49: The Discovery), whose drawings turn out to be the remarkable pictures discovered on cave walls by Major?",
+    "answers": [
+      "Small Clanger's",
+      "Tiny Clanger's",
+      "Mother Clanger's",
+      "Granny Clanger's"
+    ],
+    "correctAnswer": "Small Clanger's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E49 The Discovery",
+      "Revival storyline",
+      "Answer: Small Clanger's",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Cave pictures",
+      "Small artist",
+      "Underground"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38159",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E50: Blob), what happens each time Tiny and Small divide the playful purple blob?",
+    "answers": [
+      "The blobs all disappear",
+      "The number of blobs doubles",
+      "Each blob becomes a different colour",
+      "They turn into metal balls"
+    ],
+    "correctAnswer": "The number of blobs doubles",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E50 Blob",
+      "Revival storyline",
+      "Answer: The number of blobs doubles",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Purple blob",
+      "Splitting",
+      "Multiplication"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38160",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E51: Building Bridges), which failed piece of furniture gives Major a way to repair the route to the soup wells?",
+    "answers": [
+      "A broken chair",
+      "A cabinet of drawers",
+      "A collapsed table",
+      "A damaged bed"
+    ],
+    "correctAnswer": "A collapsed table",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E51 Building Bridges",
+      "Revival storyline",
+      "Answer: A collapsed table",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Soup trolley",
+      "Bridge repair",
+      "Furniture reused"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38161",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S1E52: Things), what do pale shapes floating towards the Clangers' planet need to regain their vitality?",
+    "answers": [
+      "Blue soup and copper leaves",
+      "A blanket and a bowl of honey",
+      "A radio and a silver telescope",
+      "Music, warmth and light"
+    ],
+    "correctAnswer": "Music, warmth and light",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S1E52 Things",
+      "Revival storyline",
+      "Answer: Music, warmth and light",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Mysterious pale shapes",
+      "Three necessities",
+      "Star"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditAdditions);
+const expectedAuditedTotal = 148;
+if(questions.length!==expectedAuditedTotal ||
+ questions[0].id!=='tv_16696' || questions[95].id!=='tv_16791' ||
+ auditAdditions[0].id!=='tv_38110' ||
+ auditAdditions[auditAdditions.length-1].id!=='tv_38161' ||
+ new Set(questions.map(q=>q.id)).size!==questions.length ||
+ new Set(questions.map(q=>normalise(q.question))).size!==questions.length ||
+ questions.some(q=>q.answers.length!==4 || new Set(q.answers.map(normalise)).size!==4 ||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1 ||
+ q.programme!=='The Clangers'||!q.tags.includes('Programme: The Clangers')||
+ q.tags.length<15||q.dailyEligible!==true))
+ throw Error('Pack 347 full audit export validation failed');
+module.exports = questions;
