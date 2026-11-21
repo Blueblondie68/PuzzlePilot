@@ -196,7 +196,9 @@ const auditAdditions = [
       "Storyline: Contact killed before questioning",
       "Question focus: what happens to a contact Jack and Renee visit while seeking Tony Almeida?",
       "Answer focus: A sniper kills him before he can speak",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -226,7 +228,9 @@ const auditAdditions = [
       "Storyline: CIP demonstration",
       "Question focus: what is Tony Almeida originally trying to demonstrate by taking over air traffic control?",
       "Answer focus: The terrorists can endanger civilian aircraft",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -256,7 +260,9 @@ const auditAdditions = [
       "Storyline: Suspicion of FBI mole",
       "Question focus: why does Jack suspect the FBI investigation has been compromised?",
       "Answer focus: A sniper reaches a secret meeting almost as quickly as the agents",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -286,7 +292,9 @@ const auditAdditions = [
       "Storyline: Tony's coded message",
       "Question focus: what does Tony secretly give Jack during their confrontation in the FBI interrogation room?",
       "Answer focus: A coded telephone message",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -316,7 +324,9 @@ const auditAdditions = [
       "Storyline: Unauthorised flight check",
       "Question focus: why does FBI analyst Sean Hillinger access restricted flight information?",
       "Answer focus: He is checking on his wife's endangered flight",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -346,7 +356,9 @@ const auditAdditions = [
       "Storyline: Parking-garage escape",
       "Question focus: how do Jack and Tony make their dramatic escape from the FBI parking structure?",
       "Answer focus: They drive a car off an upper level into a vehicle below",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -376,7 +388,9 @@ const auditAdditions = [
       "Storyline: Explanation for Tony's survival",
       "Question focus: who helped revive Tony after he was thought to have died in the events of Season 5?",
       "Answer focus: David Emerson",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -406,7 +420,9 @@ const auditAdditions = [
       "Storyline: Renee interrogates sniper",
       "Question focus: which captive does Renee Walker personally subject to harsh interrogation to learn Emerson's target?",
       "Answer focus: Alan Tanner",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -436,7 +452,9 @@ const auditAdditions = [
       "Storyline: Matobo safe-room escape",
       "Question focus: how do Jack and Emerson force the Matobos out of their reinforced safe room?",
       "Answer focus: They pump improvised toxic fumes through its ventilation",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -466,7 +484,9 @@ const auditAdditions = [
       "Storyline: Henry betrayed by bodyguard",
       "Question focus: what does Henry Taylor's own Secret Service bodyguard do to stop his investigation?",
       "Answer focus: He poisons Henry with a paralysing agent",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -496,7 +516,9 @@ const auditAdditions = [
       "Storyline: Renee buried alive",
       "Question focus: how do Bill Buchanan and Chloe O'Brian rescue Renee after Jack's staged execution?",
       "Answer focus: They dig her out of the shallow grave",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -526,7 +548,9 @@ const auditAdditions = [
       "Storyline: False murder-suicide plot",
       "Question focus: what does Brian Gedge intend to make investigators believe about Samantha Roth's killing?",
       "Answer focus: Henry murdered her before Gedge apparently killed himself",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -556,7 +580,9 @@ const auditAdditions = [
       "Storyline: Henry resists his attacker",
       "Question focus: how does Henry Taylor finally overcome Brian Gedge after recovering from the paralysing drug?",
       "Answer focus: He kills Gedge in a struggle",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -586,7 +612,9 @@ const auditAdditions = [
       "Storyline: Technician's sacrifice",
       "Question focus: what happens to the lead technician who tries to stop the toxic release at the chemical plant?",
       "Answer focus: He dies while containing the gas",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -616,7 +644,9 @@ const auditAdditions = [
       "Storyline: Kidnapped technician killed",
       "Question focus: how does Michael Latham die after the CIP device is recovered from Dubaku's operation?",
       "Answer focus: A bomb planted on him detonates",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -646,7 +676,9 @@ const auditAdditions = [
       "Storyline: Renee threatens Vossler family",
       "Question focus: whose family does Renee Walker threaten to force Secret Service agent Edward Vossler to reveal Henry's location?",
       "Answer focus: Vossler's wife and child",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -676,7 +708,9 @@ const auditAdditions = [
       "Storyline: Failed decoy exchange",
       "Question focus: what deception is used during the attempted exchange for the kidnapped Henry Taylor?",
       "Answer focus: A man impersonating Ule Matobo is sent as a decoy",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -706,7 +740,9 @@ const auditAdditions = [
       "Storyline: Dubaku's assumed name",
       "Question focus: under which false first name has Ike Dubaku been dating Marika Donoso?",
       "Answer focus: Samuel",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -736,7 +772,9 @@ const auditAdditions = [
       "Storyline: Mole disrupts surveillance",
       "Question focus: why is Jack's attempt to follow Marika and Dubaku suddenly interrupted by police?",
       "Answer focus: The FBI mole has alerted the authorities to their vehicle",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -766,7 +804,9 @@ const auditAdditions = [
       "Storyline: Marika sacrifices herself",
       "Question focus: how does Marika stop Dubaku's car while he tries to escape with her?",
       "Answer focus: She covers the driver's face, causing a crash",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -796,7 +836,9 @@ const auditAdditions = [
       "Storyline: Sean tries to frame Erika",
       "Question focus: what does FBI mole Sean Hillinger do to his colleague Erika to conceal his betrayal?",
       "Answer focus: He kills her and tries to frame her as the mole",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -826,7 +868,9 @@ const auditAdditions = [
       "Storyline: Concealed name on list",
       "Question focus: what does Jack ask Chloe to remove from the recovered list of Dubaku's collaborators?",
       "Answer focus: Ryan Burnett's name",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -856,7 +900,9 @@ const auditAdditions = [
       "Storyline: Renee discovers boat operation",
       "Question focus: how does Renee first discover the Sangalan commandos' next operation?",
       "Answer focus: She follows an assassin from Dubaku's hospital room to the waterfront",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -886,7 +932,9 @@ const auditAdditions = [
       "Storyline: Vice President refuses rescue",
       "Question focus: what does Vice President Hayworth refuse to authorise during Juma's White House siege?",
       "Answer focus: A rescue operation while Taylor's safety is uncertain",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -916,7 +964,9 @@ const auditAdditions = [
       "Storyline: Taylor surrenders for daughter",
       "Question focus: what does Juma threaten to do to force President Taylor out of the secure room?",
       "Answer focus: Mutilate her daughter Olivia",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -946,7 +996,9 @@ const auditAdditions = [
       "Storyline: Bill's method of sacrifice",
       "Question focus: how does Bill Buchanan create the opening for the FBI to retake the White House?",
       "Answer focus: He detonates an explosive gas charge in the bunker area",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -976,7 +1028,9 @@ const auditAdditions = [
       "Storyline: Renee suspended",
       "Question focus: why does Larry Moss suspend Renee after the White House siege?",
       "Answer focus: She goes behind his back to obtain permission for Jack to question Burnett",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1006,7 +1060,9 @@ const auditAdditions = [
       "Storyline: Quinn's police disguise",
       "Question focus: how does John Quinn get close enough to murder Senator Mayer in his home?",
       "Answer focus: He arrives pretending to be a police officer",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1036,7 +1092,9 @@ const auditAdditions = [
       "Storyline: Morris bargains for Chloe",
       "Question focus: what does Morris O'Brian demand in return for decrypting a file that could reveal Jack's location?",
       "Answer focus: His wife Chloe's release from FBI custody",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1066,7 +1124,9 @@ const auditAdditions = [
       "Storyline: Jack refuses to sacrifice innocent",
       "Question focus: why does Jack interrupt the Starkwood shipment interception to save a freight-yard guard?",
       "Answer focus: Starkwood mercenaries are about to execute the guard",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1096,7 +1156,9 @@ const auditAdditions = [
       "Storyline: False Starkwood defector",
       "Question focus: what does Greg Seaton do after persuading authorities that he will expose Starkwood's weapons?",
       "Answer focus: He leads the FBI into a Starkwood ambush",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1126,7 +1188,9 @@ const auditAdditions = [
       "Storyline: Knowles murdered for helping",
       "Question focus: what happens to Starkwood chairman Doug Knowles after he helps Tony locate the weapons?",
       "Answer focus: Jonas Hodges executes him",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1156,7 +1220,9 @@ const auditAdditions = [
       "Storyline: Starkwood nuclear-level blackmail",
       "Question focus: what does President Taylor call off when Hodges threatens to launch biological weapons at American cities?",
       "Answer focus: A planned air strike against Starkwood",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1186,7 +1252,9 @@ const auditAdditions = [
       "Storyline: Silent approval",
       "Question focus: how does Jack interpret President Taylor's silence when he asks about Tony's covert plan to destroy the missiles?",
       "Answer focus: As permission to proceed without an explicit order",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1216,7 +1284,9 @@ const auditAdditions = [
       "Storyline: Tony murders Larry",
       "Question focus: how does Tony Almeida secretly kill FBI supervisor Larry Moss during the pursuit of the last canister?",
       "Answer focus: He suffocates him to death",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1246,7 +1316,9 @@ const auditAdditions = [
       "Storyline: Galvez ambush",
       "Question focus: how does Robert Galvez lure FBI agents into a fatal trap while escaping with the remaining pathogen?",
       "Answer focus: He rigs a building to explode as agents enter",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1276,7 +1348,9 @@ const auditAdditions = [
       "Storyline: Jack's illness enables escape",
       "Question focus: what happens when Jack confronts Tony about Larry Moss's death?",
       "Answer focus: Jack collapses and Tony steals his medication",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1306,7 +1380,9 @@ const auditAdditions = [
       "Storyline: Forced suicide attempt",
       "Question focus: what threat accompanies the suicide pill Cara Bowden gives Jonas Hodges in detention?",
       "Answer focus: His family will be harmed if he refuses to take it",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1336,7 +1412,9 @@ const auditAdditions = [
       "Storyline: Tony eliminates accomplice",
       "Question focus: what ultimately happens to Robert Galvez after he tries to double-cross Tony at a motel?",
       "Answer focus: Tony kills him",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1366,7 +1444,9 @@ const auditAdditions = [
       "Storyline: Private-sector conspiracy",
       "Question focus: why does the secret network of defence contractors provoke attacks on the government?",
       "Answer focus: To make the government dependent on private security companies",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1396,7 +1476,9 @@ const auditAdditions = [
       "Storyline: Coerced false confession",
       "Question focus: how does Tony force Jibraan Al-Zarian to confess falsely to an upcoming attack?",
       "Answer focus: He threatens to kill Jibraan's brother Hamid",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1426,7 +1508,9 @@ const auditAdditions = [
       "Storyline: Mosque leader helps",
       "Question focus: who helps Jack and Renee locate the Al-Zarian brothers after Tony's planted evidence leads them to a mosque?",
       "Answer focus: A local imam",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1456,7 +1540,9 @@ const auditAdditions = [
       "Storyline: Olivia's remorse comes too late",
       "Question focus: what does Olivia Taylor decide after initially contacting a hitman to murder Jonas Hodges?",
       "Answer focus: She changes her mind and tries to cancel the killing",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1486,7 +1572,9 @@ const auditAdditions = [
       "Storyline: Corrupt officer silences Jibraan",
       "Question focus: what stops Jibraan from warning officers openly that he is being forced onto the Metro train?",
       "Answer focus: A corrupt officer orders him to obey the voice in his earpiece",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1516,7 +1604,9 @@ const auditAdditions = [
       "Storyline: Metro device neutralised",
       "Question focus: how does Jack make the device on the Metro safe after Jibraan finds the canister?",
       "Answer focus: He puts it into a chamber for controlled detonation",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1546,7 +1636,9 @@ const auditAdditions = [
       "Storyline: Kim saves digital evidence",
       "Question focus: what does Kim Bauer retrieve from a burning car that helps the FBI find Jack?",
       "Answer focus: The fleeing attacker's laptop",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1576,7 +1668,9 @@ const auditAdditions = [
       "Storyline: Kanin decoy memory card",
       "Question focus: how does Ethan Kanin outsmart Olivia when she destroys evidence about the Hodges murder?",
       "Answer focus: He has already given the genuine recording card to Aaron Pierce",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1606,7 +1700,9 @@ const auditAdditions = [
       "Storyline: Jack as pathogen source",
       "Question focus: why do Tony and Cara Bowden capture the infected Jack rather than killing him immediately?",
       "Answer focus: They hope to reproduce the pathogen from his body",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1636,7 +1732,9 @@ const auditAdditions = [
       "Storyline: Tony weaponises Jack",
       "Question focus: what does Tony strap onto Jack when Alan Wilson finally arrives for the confrontation?",
       "Answer focus: An explosive device",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1666,7 +1764,9 @@ const auditAdditions = [
       "Storyline: Renee's final moral choice",
       "Question focus: what decision does Renee Walker make after Jack advises her about her conscience in the final hour?",
       "Answer focus: She prepares to interrogate Alan Wilson using coercion",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   },
   {
@@ -1696,7 +1796,9 @@ const auditAdditions = [
       "Storyline: Kim's determination to save father",
       "Question focus: what does Kim do after Jack has been placed in a medically induced coma?",
       "Answer focus: She asks the doctors to proceed with the treatment that might save him",
-      "Viewer storyline"
+      "Viewer storyline",
+      "Fox US Television: 24",
+      "Story setting: Washington DC"
     ]
   }
 ];
