@@ -2636,14 +2636,14 @@ const auditAdditions = [
     "id": "tv_37360",
     "category": "Television",
     "programme": "The Office (US)",
-    "question": "In The Office (US), what business does Michael start after leaving Dunder Mifflin?",
+    "question": "In The Office (US), which piece of office equipment does Pam struggle to assemble in the episode Two Weeks?",
     "answers": [
-      "A restaurant",
-      "A comedy club",
-      "His own paper company",
-      "A courier service"
+      "A new photocopier",
+      "A paper shredder",
+      "A wireless router",
+      "A telephone switchboard"
     ],
-    "correctAnswer": "His own paper company",
+    "correctAnswer": "A new photocopier",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -2657,9 +2657,9 @@ const auditAdditions = [
       "Episode: Two Weeks",
       "2005–2013",
       "Dunder Mifflin",
-      "Correct: His own paper company",
-      "Episode storyline",
-      "Source: https://www.thetvdb.com/series/the-office-us/allseasons/official",
+      "Correct: A new photocopier",
+      "New copier assembly subplot",
+      "Source: https://the-office-tv-show.com/episodes/season5/21-two-weeks.aspx",
       "US TV comedy",
       "November 2026 audit"
     ],
@@ -3065,14 +3065,14 @@ const auditAdditions = [
     "id": "tv_37373",
     "category": "Television",
     "programme": "The Office (US)",
-    "question": "In The Office (US), which baby is born to Jim and Pam?",
+    "question": "In The Office (US), why does Pam try to delay going to hospital after labour begins?",
     "answers": [
-      "Astrid",
-      "Philip",
-      "Molly",
-      "Cecelia"
+      "To wait for the baby shower",
+      "To get an extra night's stay under her health insurance",
+      "To finish her work shift",
+      "To wait for her mother to arrive"
     ],
-    "correctAnswer": "Cecelia",
+    "correctAnswer": "To get an extra night's stay under her health insurance",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -3086,9 +3086,9 @@ const auditAdditions = [
       "Episode: The Delivery",
       "2005–2013",
       "Dunder Mifflin",
-      "Correct: Cecelia",
-      "Episode storyline",
-      "Source: https://www.thetvdb.com/series/the-office-us/allseasons/official",
+      "Correct: To get an extra night's stay under her health insurance",
+      "Hospital timing and insurance subplot",
+      "Source: https://tv.apple.com/gb/episode/the-delivery-pt-1/umc.cmc.2mtldve4b1txr915yk2e8x5mg",
       "US TV comedy",
       "November 2026 audit"
     ],
