@@ -1236,14 +1236,14 @@ const auditAdditions = [
   {
     "id": "tv_36135",
     "category": "Television",
-    "question": "Which actress replaces Helga only briefly as Elsa Bigstern in two episodes of 'Allo 'Allo! Series 7?",
+    "question": "Which actor portrays Winston Churchill when René and Edith receive medals in 'Allo 'Allo! Series 7?",
     "answers": [
-      "Kirsten Cooke",
-      "Moira Foot",
-      "Vicki Michelle",
-      "Louise Gold"
+      "John James Evans",
+      "Roger Kitter",
+      "Ken Morley",
+      "Gavin Richards"
     ],
-    "correctAnswer": "Louise Gold",
+    "correctAnswer": "John James Evans",
     "difficulty": "Medium",
     "tags": [
       "'Allo 'Allo!",
@@ -1256,10 +1256,10 @@ const auditAdditions = [
       "René Artois",
       "Second World War",
       "Part: Series 7 final episodes",
-      "Fact focus: Temporary German military role",
-      "Source: British Comedy Guide cast count",
-      "Correct answer: Louise Gold",
-      "Question: Which actress replaces Helga only briefly as Elsa Bigstern in two episodes of 'Allo 'Allo! Series 7?",
+      "Fact focus: Churchill guest performance",
+      "Source: British Comedy Guide S7 episode 4 cast",
+      "Correct answer: John James Evans",
+      "Question: Which actor portrays Winston Churchill when René and Edith receive medals in 'Allo 'Allo! Series 7?",
       "David Croft and Jeremy Lloyd",
       "German Army and French Resistance",
       "UK English trivia",
