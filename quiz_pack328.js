@@ -94,5 +94,915 @@
      q.tags.length < 14 || !q.tags.includes('Programme: Des') ||
      q.dailyEligible !== true))
    throw new Error('Pack 328 exported question validation failed');
-
- module.exports = questions;
+// 21 November 2026 — television Pack 328 episode-by-episode audit.
+// Preserves 49 original questions, IDs tv_15223–tv_15271.
+// Added only distinct investigation, police, trial, cast and production facts.
+// Verified source references are provided in each new question's tags.
+const auditAdditions = [
+  {
+    "id": "tv_36941",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, About how many murders does Nilsen initially claim to police when they confront him?",
+    "answers": [
+      "15 or 16",
+      "Three or four",
+      "Five or six",
+      "More than 50"
+    ],
+    "correctAnswer": "15 or 16",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 1",
+      "Investigations and consequences",
+      "Correct answer: 15 or 16",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Opening Confession",
+      "Claimed Total",
+      "Initial Arrest",
+      "First Episode"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36942",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, For approximately how long had Nilsen's crimes gone undetected when police arrest him?",
+    "answers": [
+      "Six months",
+      "Five years",
+      "Ten years",
+      "Twenty years"
+    ],
+    "correctAnswer": "Five years",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 1",
+      "Investigations and consequences",
+      "Correct answer: Five years",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Years Undetected",
+      "1978 To 1983",
+      "Police Investigation",
+      "First Episode"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36943",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, What physical evidence is particularly scarce when investigators try to identify the people Nilsen killed?",
+    "answers": [
+      "A signed confession",
+      "A search warrant",
+      "Usable DNA evidence",
+      "A photograph of Nilsen"
+    ],
+    "correctAnswer": "Usable DNA evidence",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 1",
+      "Investigations and consequences",
+      "Correct answer: Usable DNA evidence",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Limited DNA Evidence",
+      "Identifying Victims",
+      "Forensic Challenge",
+      "First Episode"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36944",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, At which North London police station is Peter Jay's investigative team based?",
+    "answers": [
+      "Paddington Green Police Station",
+      "Bow Street Police Station",
+      "Brixton Police Station",
+      "Hornsey Police Station"
+    ],
+    "correctAnswer": "Hornsey Police Station",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 1",
+      "Investigations and consequences",
+      "Correct answer: Hornsey Police Station",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Hornsey Station",
+      "Peter Jay Team",
+      "North London",
+      "Investigation Base"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36945",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, How many victims have Jay's team managed to identify by the time of Nilsen's changed plea?",
+    "answers": [
+      "Two",
+      "Six",
+      "Nine",
+      "Fifteen"
+    ],
+    "correctAnswer": "Six",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 2",
+      "Investigations and consequences",
+      "Correct answer: Six",
+      "Source: https://britishperioddramas.com/ep-guide/des-itv-episode-2-recap-david-tennant/",
+      "Six Identified",
+      "Police Breakthrough",
+      "Second Episode",
+      "Victim Identification"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36946",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, According to the second episode, approximately how many victims remain unidentified at the pre-trial hearing?",
+    "answers": [
+      "Three",
+      "Six",
+      "Nine",
+      "Twelve"
+    ],
+    "correctAnswer": "Nine",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 2",
+      "Investigations and consequences",
+      "Correct answer: Nine",
+      "Source: https://britishperioddramas.com/ep-guide/des-itv-episode-2-recap-david-tennant/",
+      "Nine Unidentified",
+      "Police Frustration",
+      "Pretrial Hearing",
+      "Episode Two"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36947",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, What unusual complication does Brian Masters introduce into Jay's investigation?",
+    "answers": [
+      "He is Nilsen's defence solicitor",
+      "He is the investigating pathologist",
+      "He is the trial's presiding judge",
+      "He is writing a biography of the suspect"
+    ],
+    "correctAnswer": "He is writing a biography of the suspect",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 2",
+      "Investigations and consequences",
+      "Correct answer: He is writing a biography of the suspect",
+      "Source: https://britishperioddramas.com/ep-guide/des-itv-episode-2-recap-david-tennant/",
+      "Masters Access",
+      "Police Concern",
+      "Suspect Biographer",
+      "Episode Two"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36948",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Which possibility does Nilsen start considering during his conversations with Brian Masters?",
+    "answers": [
+      "That he might not be guilty of murder",
+      "That he should join the police",
+      "That the case should be moved to Scotland",
+      "That he should defend himself on television"
+    ],
+    "correctAnswer": "That he might not be guilty of murder",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 2",
+      "Investigations and consequences",
+      "Correct answer: That he might not be guilty of murder",
+      "Source: https://britishperioddramas.com/ep-guide/des-itv-episode-2-recap-david-tennant/",
+      "Masters Interviews",
+      "Murder Liability",
+      "Changed Plea",
+      "Episode Two"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36949",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Which character worries that his interviews might have influenced Nilsen's decision to plead not guilty?",
+    "answers": [
+      "Peter Jay",
+      "Brian Masters",
+      "Geoff Chambers",
+      "Steve McCusker"
+    ],
+    "correctAnswer": "Brian Masters",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 2",
+      "Investigations and consequences",
+      "Correct answer: Brian Masters",
+      "Source: https://britishperioddramas.com/ep-guide/des-itv-episode-2-recap-david-tennant/",
+      "Brian Masters",
+      "Changed Plea",
+      "Personal Doubt",
+      "Episode Two"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36950",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, What quality of Nilsen's state of mind must the prosecution demonstrate during the trial?",
+    "answers": [
+      "That he was asleep",
+      "That he had no memories",
+      "That he was of sound mind",
+      "That he could not speak English"
+    ],
+    "correctAnswer": "That he was of sound mind",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 3",
+      "Investigations and consequences",
+      "Correct answer: That he was of sound mind",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Sound Mind",
+      "Premeditation",
+      "Murder Trial",
+      "Third Episode"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36951",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, What happens to key prosecution witnesses when the defence questions them in court?",
+    "answers": [
+      "They all refuse to take the oath",
+      "They are declared missing",
+      "They are replaced by police officers",
+      "Their evidence is challenged aggressively"
+    ],
+    "correctAnswer": "Their evidence is challenged aggressively",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 3",
+      "Investigations and consequences",
+      "Correct answer: Their evidence is challenged aggressively",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Defence Cross Examination",
+      "Witnesses",
+      "Trial Pressure",
+      "Finale"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36952",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, What does Peter Jay fear could happen to an apparently straightforward case during the trial?",
+    "answers": [
+      "It could collapse",
+      "It could move to France",
+      "It could be transferred to a civil court",
+      "It could end before the witnesses arrive"
+    ],
+    "correctAnswer": "It could collapse",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 3",
+      "Investigations and consequences",
+      "Correct answer: It could collapse",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Prosecution Fears",
+      "Flimsy Case",
+      "Trial Tension",
+      "Finale"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36953",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Which real survivor appears as a witness in the drama's trial of Dennis Nilsen?",
+    "answers": [
+      "Brian Masters",
+      "Carl Stottor",
+      "Geoff Chambers",
+      "Peter Jay"
+    ],
+    "correctAnswer": "Carl Stottor",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 3",
+      "Investigations and consequences",
+      "Correct answer: Carl Stottor",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Carl Stottor",
+      "Survivor Testimony",
+      "Trial Witness",
+      "Finale"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36954",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Which court participant is played by Ken Bones in the three-part drama?",
+    "answers": [
+      "Nilsen's biographer",
+      "The investigating detective",
+      "The trial judge",
+      "A forensic technician"
+    ],
+    "correctAnswer": "The trial judge",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 3",
+      "Investigations and consequences",
+      "Correct answer: The trial judge",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Ken Bones",
+      "Trial Judge",
+      "Courtroom Cast",
+      "Third Episode"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36955",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, What is the trial judge's name as portrayed in Des?",
+    "answers": [
+      "Peter Jay",
+      "Allan Green",
+      "Russell Cavendish",
+      "David Croom-Johnson"
+    ],
+    "correctAnswer": "David Croom-Johnson",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 3",
+      "Investigations and consequences",
+      "Correct answer: David Croom-Johnson",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Justice Croom Johnson",
+      "Trial Judge",
+      "Courtroom Characters",
+      "Third Episode"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36956",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Which QC acts for the prosecution in the trial shown in Des?",
+    "answers": [
+      "Allan Green",
+      "Ivan Lawrence",
+      "Brian Masters",
+      "Geoff Chambers"
+    ],
+    "correctAnswer": "Allan Green",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 3",
+      "Investigations and consequences",
+      "Correct answer: Allan Green",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Allan Green QC",
+      "Prosecution Counsel",
+      "Trial Roles",
+      "Final Episode"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36957",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Which QC represents the defence in Des's courtroom scenes?",
+    "answers": [
+      "Allan Green",
+      "Ivan Lawrence",
+      "Peter Jay",
+      "David Croom-Johnson"
+    ],
+    "correctAnswer": "Ivan Lawrence",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Episode 3",
+      "Investigations and consequences",
+      "Correct answer: Ivan Lawrence",
+      "Source: https://www.tvmaze.com/shows/45171/des/episodeguide",
+      "Ivan Lawrence QC",
+      "Defence Counsel",
+      "Trial Roles",
+      "Final Episode"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36958",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Which actress portrays Lesley Mead, the partner of one of Nilsen's victims?",
+    "answers": [
+      "Bronagh Waugh",
+      "Faye McKeever",
+      "Chanel Cresswell",
+      "Saskia Reeves"
+    ],
+    "correctAnswer": "Chanel Cresswell",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Supporting roles and production",
+      "Investigations and consequences",
+      "Correct answer: Chanel Cresswell",
+      "Source: https://www.radiotimes.com/tv/drama/des-cast-david-tennant-itv-drama/",
+      "Chanel Cresswell",
+      "Lesley Mead",
+      "Victim Relative",
+      "Supporting Cast"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36959",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, What is the name of the murder victim whose partner Lesley Mead appears in Des?",
+    "answers": [
+      "Carl Stottor",
+      "Douglas Stewart",
+      "Brian Lodge",
+      "Graham Allen"
+    ],
+    "correctAnswer": "Graham Allen",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Supporting roles and production",
+      "Investigations and consequences",
+      "Correct answer: Graham Allen",
+      "Source: https://www.radiotimes.com/tv/drama/des-cast-david-tennant-itv-drama/",
+      "Graham Allen",
+      "Lesley Mead",
+      "Victim Family",
+      "Police Investigation"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36960",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, What role does DI Steve McCusker have within Peter Jay's investigation?",
+    "answers": [
+      "His second-in-command",
+      "His defence solicitor",
+      "The pathologist leading the autopsies",
+      "His journalist contact"
+    ],
+    "correctAnswer": "His second-in-command",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Supporting roles and production",
+      "Investigations and consequences",
+      "Correct answer: His second-in-command",
+      "Source: https://www.radiotimes.com/tv/drama/des-cast-david-tennant-itv-drama/",
+      "Steve McCusker",
+      "Second In Command",
+      "Barry Ward",
+      "Detective Team"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36961",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Before becoming Nilsen's biographer, which type of subject was Brian Masters better known for writing about?",
+    "answers": [
+      "International football stars",
+      "Royal and aristocratic figures",
+      "Space scientists",
+      "Jazz musicians"
+    ],
+    "correctAnswer": "Royal and aristocratic figures",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Supporting roles and production",
+      "Investigations and consequences",
+      "Correct answer: Royal and aristocratic figures",
+      "Source: https://www.radiotimes.com/tv/drama/des-cast-david-tennant-itv-drama/",
+      "Brian Masters",
+      "Earlier Biographies",
+      "Royal Subjects",
+      "Writer Career"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36962",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, What aspect of the press coverage troubles Brian Masters as dramatised in Des?",
+    "answers": [
+      "The omission of sports results",
+      "The inaccurate weather forecasts",
+      "Prejudicial treatment of gay men in reporting on the murders",
+      "The use of foreign-language headlines"
+    ],
+    "correctAnswer": "Prejudicial treatment of gay men in reporting on the murders",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Supporting roles and production",
+      "Investigations and consequences",
+      "Correct answer: Prejudicial treatment of gay men in reporting on the murders",
+      "Source: https://www.radiotimes.com/tv/drama/des-cast-david-tennant-itv-drama/",
+      "Brian Masters",
+      "Press Prejudice",
+      "Victim Representation",
+      "Social Context"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36963",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Who composed the score for ITV's 2020 drama Des?",
+    "answers": [
+      "Debbie Wiseman",
+      "Isobel Waller-Bridge",
+      "Nitin Sawhney",
+      "Sarah Warne"
+    ],
+    "correctAnswer": "Sarah Warne",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Behind the scenes",
+      "Investigations and consequences",
+      "Correct answer: Sarah Warne",
+      "Source: https://en.wikipedia.org/wiki/Des_(TV_series)",
+      "Sarah Warne",
+      "Original Score",
+      "Composer",
+      "Television Music"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36964",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Who was credited as cinematographer on ITV's Des?",
+    "answers": [
+      "Mark Wolf",
+      "Seamus McGarvey",
+      "Adriano Goldman",
+      "Rasmus Videbæk"
+    ],
+    "correctAnswer": "Mark Wolf",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Behind the scenes",
+      "Investigations and consequences",
+      "Correct answer: Mark Wolf",
+      "Source: https://en.wikipedia.org/wiki/Des_(TV_series)",
+      "Mark Wolf",
+      "Cinematography",
+      "Camera Department",
+      "Drama Production"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36965",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Who edited the ITV crime drama Des?",
+    "answers": [
+      "Chris Dickens",
+      "Sacha Szwarc",
+      "Eddie Hamilton",
+      "Joe Walker"
+    ],
+    "correctAnswer": "Sacha Szwarc",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Behind the scenes",
+      "Investigations and consequences",
+      "Correct answer: Sacha Szwarc",
+      "Source: https://en.wikipedia.org/wiki/Des_(TV_series)",
+      "Sacha Szwarc",
+      "Editing",
+      "Post Production",
+      "Drama Credits"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36966",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Which award did David Tennant receive for his performance in Des at the 2021 International Emmys?",
+    "answers": [
+      "Best Director",
+      "Best Screenplay",
+      "Best Actor",
+      "Best Supporting Actor"
+    ],
+    "correctAnswer": "Best Actor",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Behind the scenes",
+      "Investigations and consequences",
+      "Correct answer: Best Actor",
+      "Source: https://en.wikipedia.org/wiki/Des_(TV_series)",
+      "2021 International Emmys",
+      "Best Actor",
+      "David Tennant",
+      "Awards"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_36967",
+    "category": "Television",
+    "programme": "Des",
+    "question": "In Des, Which company was named as the international distributor of Des by ITV?",
+    "answers": [
+      "BBC Studios",
+      "Warner Bros. Television",
+      "ITV Granada",
+      "All3Media International"
+    ],
+    "correctAnswer": "All3Media International",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Crime Drama",
+      "True Crime Drama",
+      "ITV",
+      "Des",
+      "Programme: Des",
+      "2020 Miniseries",
+      "Behind the scenes",
+      "Investigations and consequences",
+      "Correct answer: All3Media International",
+      "Source: https://en.wikipedia.org/wiki/Des_(TV_series)",
+      "All3Media International",
+      "Distribution",
+      "ITV Commission",
+      "Production Credits"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditAdditions);
+if(questions.length!==76||
+ questions[0].id!=='tv_15223'||questions[48].id!=='tv_15271'||
+ auditAdditions[0].id!=='tv_36941'||
+ auditAdditions[auditAdditions.length-1].id!=='tv_36967'||
+ new Set(questions.map(q=>q.id)).size!==questions.length||
+ new Set(questions.map(q=>q.question.trim().toLowerCase())).size!==questions.length||
+ questions.some(q=>q.category!=='Television'||q.programme!=='Des'||
+ q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase().trim())).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ !q.tags.includes('Programme: Des')||q.tags.length<14||
+ q.dailyEligible!==true)||
+ auditAdditions.some(q=>!q.question.startsWith('In Des, ')||q.tags.length<15))
+ throw Error('Pack 328 audit validation failure');
+module.exports = questions;
