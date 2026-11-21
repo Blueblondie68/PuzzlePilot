@@ -1249,45 +1249,12 @@ const auditAdditions = [
     "id": "tv_38457",
     "category": "Television",
     "programme": "Broadchurch",
-    "question": "In Broadchurch (S2E01), which witness from the failed Sandbrook case has DI Hardy been secretly protecting in Broadchurch?",
-    "answers": [
-      "Cate Gillespie",
-      "Abby Thompson",
-      "Susan Wright",
-      "Claire Ripley"
-    ],
-    "correctAnswer": "Claire Ripley",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Broadchurch",
-      "Programme: Broadchurch",
-      "ITV",
-      "Series: S2",
-      "Episode: S2E01",
-      "Episode storyline",
-      "Investigative detail",
-      "Correct: Claire Ripley",
-      "Source: https://en.wikipedia.org/wiki/Broadchurch_series_2",
-      "Claire hidden",
-      "Sandbrook witness",
-      "Hardy protection"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38458",
-    "category": "Television",
-    "programme": "Broadchurch",
     "question": "In Broadchurch (S2E01), what evidence of Hardy's medical condition does Lee Ashworth steal from his riverside home?",
     "answers": [
-      "A hospital letter",
       "A laboratory blood sample",
       "A packet of prescription tablets",
-      "A medical appointment diary"
+      "A medical appointment diary",
+      "A hospital letter"
     ],
     "correctAnswer": "A hospital letter",
     "difficulty": "Medium",
@@ -1312,13 +1279,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38459",
+    "id": "tv_38458",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E01), who has been secretly offering spiritual counselling to the accused Joe Miller?",
     "answers": [
-      "Jocelyn Knight",
       "Reverend Paul Coates",
+      "Jocelyn Knight",
       "Maggie Radcliffe",
       "Becca Fisher"
     ],
@@ -1345,14 +1312,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38460",
+    "id": "tv_38459",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E01), what happens to Danny Latimer's remains when his killer's trial begins?",
     "answers": [
       "His grave is moved to a different town",
-      "His ashes are scattered at sea",
       "His body is exhumed",
+      "His ashes are scattered at sea",
       "His coffin is transferred overseas"
     ],
     "correctAnswer": "His body is exhumed",
@@ -1378,15 +1345,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38461",
+    "id": "tv_38460",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E02), why is Joe Miller's confession ruled inadmissible during his trial?",
     "answers": [
       "The recording was accidentally destroyed",
       "Joe was questioned without an interpreter",
-      "The officers interviewed the wrong suspect",
-      "Ellie had assaulted him before the confession was secured"
+      "Ellie had assaulted him before the confession was secured",
+      "The officers interviewed the wrong suspect"
     ],
     "correctAnswer": "Ellie had assaulted him before the confession was secured",
     "difficulty": "Medium",
@@ -1411,15 +1378,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38462",
+    "id": "tv_38461",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E02), what sudden development interrupts Beth Latimer as Ellie and Hardy are occupied with Lee and Claire?",
     "answers": [
-      "Her labour begins",
       "She falls from a cliff",
       "She receives an anonymous letter",
-      "She learns Mark is missing"
+      "She learns Mark is missing",
+      "Her labour begins"
     ],
     "correctAnswer": "Her labour begins",
     "difficulty": "Medium",
@@ -1444,13 +1411,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38463",
+    "id": "tv_38462",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E02), what does Sharon Bishop force Beth Latimer to reveal while Beth gives evidence against Joe?",
     "answers": [
-      "That Beth had moved away before the murder",
       "Mark's affair and his history of hitting Danny",
+      "That Beth had moved away before the murder",
       "That Danny was never friends with Tom",
       "That she had paid for Joe's defence"
     ],
@@ -1477,14 +1444,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38464",
+    "id": "tv_38463",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E03), what name do Mark and Beth Latimer give the daughter born during Joe's trial?",
     "answers": [
       "Daisy",
-      "Lisa",
       "Elizabeth",
+      "Lisa",
       "Laura"
     ],
     "correctAnswer": "Elizabeth",
@@ -1510,15 +1477,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38465",
+    "id": "tv_38464",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E03), what flowers arrive through the post and deepen questions about Claire Ripley's account of Sandbrook?",
     "answers": [
       "Dried roses",
       "White lilies",
-      "Sunflowers",
-      "Pressed bluebells"
+      "Pressed bluebells",
+      "Sunflowers"
     ],
     "correctAnswer": "Pressed bluebells",
     "difficulty": "Medium",
@@ -1543,15 +1510,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38466",
+    "id": "tv_38465",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E03), what condition begins to jeopardise Jocelyn Knight's ability to perform her work at the trial?",
     "answers": [
-      "Failing eyesight",
       "A broken wrist",
       "Memory loss caused by a fall",
-      "Permanent hearing loss"
+      "Permanent hearing loss",
+      "Failing eyesight"
     ],
     "correctAnswer": "Failing eyesight",
     "difficulty": "Medium",
@@ -1576,13 +1543,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38467",
+    "id": "tv_38466",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E03), what accusation does the defence make about Ellie Miller when she testifies in court?",
     "answers": [
-      "She sold confidential files to the press",
       "She had an affair with Hardy and framed Joe",
+      "She sold confidential files to the press",
       "She destroyed Danny's birth certificate",
       "She received cash from Mark Latimer"
     ],
@@ -1609,48 +1576,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38468",
-    "category": "Television",
-    "programme": "Broadchurch",
-    "question": "In Broadchurch (S2E04), what does Lucy Stevens say she saw Joe Miller discard on the night Danny died?",
-    "answers": [
-      "A fishing rod thrown into the sea",
-      "A broken necklace hidden in a drain",
-      "A bag placed into a bin",
-      "A bloodstained towel put in a car"
-    ],
-    "correctAnswer": "A bag placed into a bin",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Broadchurch",
-      "Programme: Broadchurch",
-      "ITV",
-      "Series: S2",
-      "Episode: S2E04",
-      "Episode storyline",
-      "Investigative detail",
-      "Correct: A bag placed into a bin",
-      "Source: https://en.wikipedia.org/wiki/Broadchurch_series_2",
-      "Lucy evidence",
-      "Clothes bag",
-      "Trial"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38469",
+    "id": "tv_38467",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E04), which suspect's mother testifies that she saw him move Danny's body to the beach?",
     "answers": [
       "Joe Miller's",
+      "Nigel Carter's",
       "Steve Connelly's",
-      "Jack Marshall's",
-      "Nigel Carter's"
+      "Jack Marshall's"
     ],
     "correctAnswer": "Nigel Carter's",
     "difficulty": "Medium",
@@ -1675,14 +1609,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38470",
+    "id": "tv_38468",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E04), what link does Ellie discover when she dials a mysterious number stored on Claire Ripley's phone?",
     "answers": [
-      "It rings Ricky Gillespie's phone",
       "It reaches Joe Miller in prison",
       "It connects to a London newspaper",
+      "It rings Ricky Gillespie's phone",
       "It rings the Sandbrook church office"
     ],
     "correctAnswer": "It rings Ricky Gillespie's phone",
@@ -1708,48 +1642,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38471",
-    "category": "Television",
-    "programme": "Broadchurch",
-    "question": "In Broadchurch (S2E04), whose father is Ricky Gillespie, a man whose whereabouts matter to the Sandbrook inquiry?",
-    "answers": [
-      "Danny Latimer's",
-      "Pippa Gillespie's",
-      "Tom Miller's",
-      "Lisa Newbery's"
-    ],
-    "correctAnswer": "Pippa Gillespie's",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Broadchurch",
-      "Programme: Broadchurch",
-      "ITV",
-      "Series: S2",
-      "Episode: S2E04",
-      "Episode storyline",
-      "Investigative detail",
-      "Correct: Pippa Gillespie's",
-      "Source: https://en.wikipedia.org/wiki/Broadchurch_series_2",
-      "Ricky Gillespie",
-      "Sandbrook families",
-      "Pippa father"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38472",
+    "id": "tv_38469",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E05), what disturbing function does the abandoned Portsmouth factory linked to Thorp Agriservices perform?",
     "answers": [
       "Processing counterfeit medicines",
       "Storing stolen jewellery",
-      "Cremating dead animals",
-      "Manufacturing police uniforms"
+      "Manufacturing police uniforms",
+      "Cremating dead animals"
     ],
     "correctAnswer": "Cremating dead animals",
     "difficulty": "Medium",
@@ -1774,15 +1675,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38473",
+    "id": "tv_38470",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E05), why do Ellie and Hardy question Ricky's account of being with a bridesmaid on the night of the Sandbrook killings?",
     "answers": [
+      "The woman says she rejected his advances",
       "The woman was away in France",
       "She says she never attended the wedding",
-      "His mobile phone was stolen that night",
-      "The woman says she rejected his advances"
+      "His mobile phone was stolen that night"
     ],
     "correctAnswer": "The woman says she rejected his advances",
     "difficulty": "Medium",
@@ -1807,13 +1708,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38474",
+    "id": "tv_38471",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E05), who approaches Joe Miller's defence team offering to testify in support of his father?",
     "answers": [
-      "Tom Miller",
       "Fred Miller",
+      "Tom Miller",
       "Olly Stevens",
       "Nigel Carter"
     ],
@@ -1840,14 +1741,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38475",
+    "id": "tv_38472",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E06), what implanted device does Alec Hardy have fitted to address his heart condition?",
     "answers": [
       "A hearing implant",
-      "A pacemaker",
       "A ventricular shunt",
+      "A pacemaker",
       "An insulin pump"
     ],
     "correctAnswer": "A pacemaker",
@@ -1873,15 +1774,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38476",
+    "id": "tv_38473",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E06), what item worn by Claire Ripley in an old photograph prompts Ellie's suspicion about Sandbrook?",
     "answers": [
       "Lisa's school scarf",
       "Cate's engagement ring",
-      "Pippa's pendant",
-      "Ricky's wristwatch"
+      "Ricky's wristwatch",
+      "Pippa's pendant"
     ],
     "correctAnswer": "Pippa's pendant",
     "difficulty": "Medium",
@@ -1906,15 +1807,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38477",
+    "id": "tv_38474",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E06), who falsely tells the court that Mark Latimer admitted to killing Danny?",
     "answers": [
+      "Tom Miller",
       "Nigel Carter",
       "Olly Stevens",
-      "Rev Paul Coates",
-      "Tom Miller"
+      "Rev Paul Coates"
     ],
     "correctAnswer": "Tom Miller",
     "difficulty": "Medium",
@@ -1939,13 +1840,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38478",
+    "id": "tv_38475",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E06), what does Hardy show Ellie that connects the neighbouring Gillespie and Ashworth homes?",
     "answers": [
-      "A door cut into the garden fence",
       "A secret underground tunnel",
+      "A door cut into the garden fence",
       "A bridge over the back gardens",
       "A communal driveway behind the houses"
     ],
@@ -1972,14 +1873,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38479",
+    "id": "tv_38476",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E07), which investigator realises Claire's secret telephone contact is Ricky Gillespie's office?",
     "answers": [
       "DI Hardy",
-      "Ellie Miller",
       "Tess Henchard",
+      "Ellie Miller",
       "Jocelyn Knight"
     ],
     "correctAnswer": "Ellie Miller",
@@ -2005,15 +1906,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38480",
+    "id": "tv_38477",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E07), what do police learn about Gary Thorp, whose business comes under scrutiny in the Sandbrook case?",
     "answers": [
       "He had once been married to Claire",
       "He had worked as a police constable",
-      "He had been stalking Lisa Newbery",
-      "He was related to Danny Latimer"
+      "He was related to Danny Latimer",
+      "He had been stalking Lisa Newbery"
     ],
     "correctAnswer": "He had been stalking Lisa Newbery",
     "difficulty": "Medium",
@@ -2038,15 +1939,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38481",
+    "id": "tv_38478",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E07), what past romantic relationship begins again between two older Broadchurch residents?",
     "answers": [
+      "Jocelyn Knight and Maggie Radcliffe",
       "Susan Wright and Nigel Carter",
       "Beth Latimer and Paul Coates",
-      "Karen White and Hardy",
-      "Jocelyn Knight and Maggie Radcliffe"
+      "Karen White and Hardy"
     ],
     "correctAnswer": "Jocelyn Knight and Maggie Radcliffe",
     "difficulty": "Medium",
@@ -2071,13 +1972,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38482",
+    "id": "tv_38479",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E07), what item does Claire finally hand Hardy after months of concealing the Sandbrook evidence?",
     "answers": [
-      "Pippa's pendant",
       "The key to the summer house",
+      "Pippa's pendant",
       "Joe Miller's confession tape",
       "A bloodstained scarf"
     ],
@@ -2104,14 +2005,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38483",
+    "id": "tv_38480",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E08), what concealed home alteration helps Ellie uncover Lee Ashworth's role in the Sandbrook killings?",
     "answers": [
       "A newly installed loft hatch",
-      "Floorboards he replaced in his house",
       "A hidden cellar beneath his garage",
+      "Floorboards he replaced in his house",
       "A sealed chimney behind the kitchen"
     ],
     "correctAnswer": "Floorboards he replaced in his house",
@@ -2137,15 +2038,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38484",
+    "id": "tv_38481",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E08), what substance did Claire Ripley administer to Pippa Gillespie before Pippa was killed?",
     "answers": [
       "Morphine",
       "Insulin",
-      "Rohypnol",
-      "A sedative gas"
+      "A sedative gas",
+      "Rohypnol"
     ],
     "correctAnswer": "Rohypnol",
     "difficulty": "Medium",
@@ -2170,15 +2071,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38485",
+    "id": "tv_38482",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E08), where has Joe Miller been hiding after his acquittal before Mark and Nigel take him to confront the town?",
     "answers": [
+      "The church",
       "A hotel in London",
       "Susan Wright's caravan",
-      "The police station",
-      "The church"
+      "The police station"
     ],
     "correctAnswer": "The church",
     "difficulty": "Medium",
@@ -2203,13 +2104,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38486",
+    "id": "tv_38483",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S2E08), who decides to arrest Ricky Gillespie after evidence reveals his role in Lisa Newbery's death?",
     "answers": [
-      "Alec Hardy",
       "Ellie Miller",
+      "Alec Hardy",
       "Jocelyn Knight",
       "Rev Paul Coates"
     ],
@@ -2236,14 +2137,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38487",
+    "id": "tv_38484",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E01), what evidence convinces Hardy and Miller that the attack on Trish Winterman was planned?",
     "answers": [
       "A witness saw a weapon hidden in a car",
-      "The attacker restrained and gagged her",
       "The victim was lured by a written invitation",
+      "The attacker restrained and gagged her",
       "The perpetrator had called the police in advance"
     ],
     "correctAnswer": "The attacker restrained and gagged her",
@@ -2269,15 +2170,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38488",
+    "id": "tv_38485",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E01), what school-related discovery forces Ellie Miller to confiscate her son Tom's phone?",
     "answers": [
       "Videos of a fight with Danny",
       "Stolen examination answers",
-      "Pornographic material on the phone",
-      "A secret gambling application"
+      "A secret gambling application",
+      "Pornographic material on the phone"
     ],
     "correctAnswer": "Pornographic material on the phone",
     "difficulty": "Medium",
@@ -2302,15 +2203,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38489",
+    "id": "tv_38486",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E01), which specialist service examines Trish and provides support soon after she reports the attack?",
     "answers": [
+      "A Sexual Assault Referral Centre",
       "A private heart clinic",
       "A witness protection unit",
-      "A forensic accounting team",
-      "A Sexual Assault Referral Centre"
+      "A forensic accounting team"
     ],
     "correctAnswer": "A Sexual Assault Referral Centre",
     "difficulty": "Medium",
@@ -2335,13 +2236,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38490",
+    "id": "tv_38487",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E02), what material tied to the attack sends the Broadchurch detectives to examine a local fishing-supply business?",
     "answers": [
-      "Blue twine",
       "Green fishing nets",
+      "Blue twine",
       "A stolen anchor chain",
       "A red life jacket"
     ],
@@ -2368,14 +2269,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38491",
+    "id": "tv_38488",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E02), what forensic samples do the officers request voluntarily from men who attended the birthday party?",
     "answers": [
       "Dental impressions",
-      "DNA samples",
       "Handwriting samples",
+      "DNA samples",
       "Footprint casts"
     ],
     "correctAnswer": "DNA samples",
@@ -2401,15 +2302,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38492",
+    "id": "tv_38489",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E02), what type of message does Trish receive from an unknown sender as she faces the inquiry?",
     "answers": [
       "An email offering her a holiday",
       "A letter naming the attacker",
-      "A threatening text telling her to stay quiet",
-      "A voicemail from her daughter"
+      "A voicemail from her daughter",
+      "A threatening text telling her to stay quiet"
     ],
     "correctAnswer": "A threatening text telling her to stay quiet",
     "difficulty": "Medium",
@@ -2434,15 +2335,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38493",
+    "id": "tv_38490",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E03), why does taxi driver Clive Lucas say he failed to record a passenger he picked up near the party?",
     "answers": [
+      "He wanted to keep the whole fare",
       "He had forgotten his licence at home",
       "The passenger was a police informer",
-      "He had taken the wrong taxi",
-      "He wanted to keep the whole fare"
+      "He had taken the wrong taxi"
     ],
     "correctAnswer": "He wanted to keep the whole fare",
     "difficulty": "Medium",
@@ -2467,13 +2368,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38494",
+    "id": "tv_38491",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E03), which absent person does Mark Latimer want to sue over his son's death?",
     "answers": [
-      "Joe Miller",
       "DI Alec Hardy",
+      "Joe Miller",
       "Jack Marshall",
       "Lee Ashworth"
     ],
@@ -2500,14 +2401,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38495",
+    "id": "tv_38492",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E03), what belonging of Trish's does Clive Lucas have in his possession, raising suspicions about him?",
     "answers": [
       "Her wedding ring",
-      "Her keys",
       "Her handbag",
+      "Her keys",
       "Her passport"
     ],
     "correctAnswer": "Her keys",
@@ -2533,15 +2434,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38496",
+    "id": "tv_38493",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E04), what detail does Trish recall at the grounds of Axehampton House while trying to remember her attack?",
     "answers": [
       "A distinctive motorcycle horn",
       "A church bell striking midnight",
-      "The smell of vodka and a distant light",
-      "An alarm sounding on a tractor"
+      "An alarm sounding on a tractor",
+      "The smell of vodka and a distant light"
     ],
     "correctAnswer": "The smell of vodka and a distant light",
     "difficulty": "Medium",
@@ -2566,15 +2467,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38497",
+    "id": "tv_38494",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E04), what sports item does the Axehampton owner say is missing a matching counterpart?",
     "answers": [
+      "A cricket bat",
       "A tennis racket",
       "A golf club",
-      "A football boot",
-      "A cricket bat"
+      "A football boot"
     ],
     "correctAnswer": "A cricket bat",
     "difficulty": "Medium",
@@ -2599,13 +2500,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38498",
+    "id": "tv_38495",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E04), what explains why Jim Atwood's DNA appears in the inquiry even though he denies committing the attack?",
     "answers": [
-      "He had consensual sex with Trish that morning",
       "He was her former husband",
+      "He had consensual sex with Trish that morning",
       "He had donated blood to the clinic",
       "He had helped police collect forensic samples"
     ],
@@ -2632,14 +2533,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38499",
+    "id": "tv_38496",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E04), who admits sending the threatening text to Trish after it is traced to Ian Winterman's phone?",
     "answers": [
       "Cath Atwood",
-      "Sarah Elsey",
       "Laura Benson",
+      "Sarah Elsey",
       "Leah Winterman"
     ],
     "correctAnswer": "Sarah Elsey",
@@ -2665,15 +2566,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38500",
+    "id": "tv_38497",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E05), why is recently released sex offender Aaron Mayford ruled out of an earlier similar attack?",
     "answers": [
       "He was overseas on military service",
       "His DNA did not match Trish's",
-      "He was in prison when it occurred",
-      "He had already died before it occurred"
+      "He had already died before it occurred",
+      "He was in prison when it occurred"
     ],
     "correctAnswer": "He was in prison when it occurred",
     "difficulty": "Medium",
@@ -2698,15 +2599,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38501",
+    "id": "tv_38498",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E05), what does Jim Atwood do when Clive Lucas says he saw Jim arguing with Trish outside the party?",
     "answers": [
+      "He forces Clive to stop his taxi and threatens him",
       "He reports Clive to his taxi firm",
       "He asks Clive to contact Hardy",
-      "He gives Clive a written statement",
-      "He forces Clive to stop his taxi and threatens him"
+      "He gives Clive a written statement"
     ],
     "correctAnswer": "He forces Clive to stop his taxi and threatens him",
     "difficulty": "Medium",
@@ -2731,13 +2632,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38502",
+    "id": "tv_38499",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E05), which shopkeeper violently attacks Jim Atwood after hearing about his relationship with Trish?",
     "answers": [
-      "Ed Burnett",
       "Leo Humphries",
+      "Ed Burnett",
       "Ian Winterman",
       "Arthur Tamworth"
     ],
@@ -2764,14 +2665,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38503",
+    "id": "tv_38500",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E05), how many similar victims have come to the attention of Broadchurch police by the end of this stage of the inquiry?",
     "answers": [
       "One",
-      "Three",
       "Two",
+      "Three",
       "Five"
     ],
     "correctAnswer": "Three",
@@ -2797,15 +2698,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38504",
+    "id": "tv_38501",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E06), what family connection forces DC Katie Harford off the inquiry when it comes to light?",
     "answers": [
       "Jim Atwood is her uncle",
       "Trish Winterman is her mother",
-      "Ed Burnett is her father",
-      "Leo Humphries is her brother"
+      "Leo Humphries is her brother",
+      "Ed Burnett is her father"
     ],
     "correctAnswer": "Ed Burnett is her father",
     "difficulty": "Medium",
@@ -2830,15 +2731,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38505",
+    "id": "tv_38502",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E06), what object does Ian Winterman secretly remove from Trish's home?",
     "answers": [
+      "Her laptop",
       "Her wedding dress",
       "Her passport",
-      "Her car radio",
-      "Her laptop"
+      "Her car radio"
     ],
     "correctAnswer": "Her laptop",
     "difficulty": "Medium",
@@ -2863,13 +2764,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38506",
+    "id": "tv_38503",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E06), where does Mark Latimer find Joe Miller living and working years after his son's murder?",
     "answers": [
-      "Liverpool",
       "Manchester",
+      "Liverpool",
       "Bristol",
       "Exeter"
     ],
@@ -2896,14 +2797,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38507",
+    "id": "tv_38504",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E06), what does Mark Latimer do at sea after his painful meeting with Joe Miller?",
     "answers": [
       "He scatters Danny's ashes",
-      "He enters the water from a boat",
       "He attempts to sink Joe's car",
+      "He enters the water from a boat",
       "He sails to France"
     ],
     "correctAnswer": "He enters the water from a boat",
@@ -2929,15 +2830,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38508",
+    "id": "tv_38505",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E07), which rescue organisation saves Mark Latimer after his boat is found empty at sea?",
     "answers": [
       "The RAF",
       "The Coastguard Auxiliary",
-      "The RNLI",
-      "The Royal Navy"
+      "The Royal Navy",
+      "The RNLI"
     ],
     "correctAnswer": "The RNLI",
     "difficulty": "Medium",
@@ -2962,15 +2863,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38509",
+    "id": "tv_38506",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E07), what does Ian Winterman confess to installing on Trish's computer without her consent?",
     "answers": [
+      "Spyware that accessed her webcam",
       "A remote backup programme for photographs",
       "A cryptocurrency miner",
-      "A tracking device for stolen files",
-      "Spyware that accessed her webcam"
+      "A tracking device for stolen files"
     ],
     "correctAnswer": "Spyware that accessed her webcam",
     "difficulty": "Medium",
@@ -2995,13 +2896,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38510",
+    "id": "tv_38507",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E07), what links Jim Atwood's breakdown business to another woman who reported an earlier attack?",
     "answers": [
-      "She had used his breakdown service before the assault",
       "He was her landlord",
+      "She had used his breakdown service before the assault",
       "His company owned her car",
       "She had worked at his garage"
     ],
@@ -3028,14 +2929,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38511",
+    "id": "tv_38508",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E07), what evidence does Cath Atwood bring police after finding it in Jim's car?",
     "answers": [
       "A missing birthday photograph",
-      "A box of condoms with a receipt dated the party",
       "A blue rope wrapped around a toolkit",
+      "A box of condoms with a receipt dated the party",
       "A list of Axehampton guests"
     ],
     "correctAnswer": "A box of condoms with a receipt dated the party",
@@ -3061,15 +2962,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38512",
+    "id": "tv_38509",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E08), what does CCTV reveal Leo Humphries left outside Ed Burnett's shop?",
     "answers": [
       "Trish's missing laptop",
       "The keys to the birthday venue",
-      "A bag containing bloodstained twine",
-      "A mobile-phone charger"
+      "A mobile-phone charger",
+      "A bag containing bloodstained twine"
     ],
     "correctAnswer": "A bag containing bloodstained twine",
     "difficulty": "Medium",
@@ -3094,15 +2995,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38513",
+    "id": "tv_38510",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E08), what video evidence is discovered on a hidden phone at Leo Humphries's home?",
     "answers": [
+      "Recordings of assaults on several women",
       "Videos of his stolen cars",
       "Footage of Danny Latimer's death",
-      "A film of the party speeches",
-      "Recordings of assaults on several women"
+      "A film of the party speeches"
     ],
     "correctAnswer": "Recordings of assaults on several women",
     "difficulty": "Medium",
@@ -3127,13 +3028,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38514",
+    "id": "tv_38511",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E08), whose DNA on a sock initially leads Hardy and Miller to arrest the wrong man?",
     "answers": [
-      "Clive Lucas's",
       "Jim Atwood's",
+      "Clive Lucas's",
       "Ed Burnett's",
       "Ian Winterman's"
     ],
@@ -3160,14 +3061,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38515",
+    "id": "tv_38512",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E08), what does taxi driver Clive Lucas reveal about his step-son's journey from the Axehampton party?",
     "answers": [
       "Michael left alone by train",
-      "He drove Michael and Leo Humphries home",
       "Michael stayed overnight with the Atwoods",
+      "He drove Michael and Leo Humphries home",
       "Michael and Tom Miller walked to the harbour"
     ],
     "correctAnswer": "He drove Michael and Leo Humphries home",
@@ -3193,15 +3094,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38516",
+    "id": "tv_38513",
     "category": "Television",
     "programme": "Broadchurch",
     "question": "In Broadchurch (S3E08), what decision does Rev Paul Coates make as the final Broadchurch investigation ends?",
     "answers": [
       "He becomes the town's police chaplain",
       "He marries Trish and Ian again",
-      "He prepares to leave the parish",
-      "He moves into the Latimers' home"
+      "He moves into the Latimers' home",
+      "He prepares to leave the parish"
     ],
     "correctAnswer": "He prepares to leave the parish",
     "difficulty": "Medium",
@@ -3227,10 +3128,10 @@ const auditAdditions = [
   }
 ];
 questions.push(...auditAdditions);
-if(questions.length !== 190 ||
+if(questions.length !== 187 ||
  questions[0].id !== 'tv_17004' || questions[98].id !== 'tv_17102' ||
  auditAdditions[0].id !== 'tv_38426' ||
- auditAdditions[auditAdditions.length-1].id !== 'tv_38516' ||
+ auditAdditions[auditAdditions.length-1].id !== 'tv_38513' ||
  new Set(questions.map(q=>q.id)).size !== questions.length ||
  new Set(questions.map(q=>normalise(q.question))).size !== questions.length ||
  questions.some(q=>q.answers.length!==4||new Set(q.answers.map(normalise)).size!==4||
