@@ -491,44 +491,11 @@ const auditAdditions = [
     "id": "tv_37806",
     "category": "Television",
     "programme": "The Good Life",
-    "question": "In The Good Life, what resource powers Tom's homemade electricity generator?",
-    "answers": [
-      "A stream running beneath the cellar",
-      "Waste from the farm animals",
-      "Solar panels on the roof",
-      "Coal from Jerry's garden"
-    ],
-    "correctAnswer": "Waste from the farm animals",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Classic Sitcom",
-      "BBC One",
-      "1970s television",
-      "The Good Life",
-      "Programme: The Good Life",
-      "Episode: S1E5 The Thing in the Cellar",
-      "Episode storyline",
-      "Characters and plot",
-      "Correct answer: Waste from the farm animals",
-      "Source: https://www.comedy.co.uk/tv/the_good_life/episodes/1/",
-      "Homemade Generator",
-      "Animal Waste",
-      "Energy"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37807",
-    "category": "Television",
-    "programme": "The Good Life",
     "question": "In The Good Life, what do Tom and Jerry do that leaves the Goods with excess food to preserve?",
     "answers": [
       "Attend a cattle auction",
-      "Buy a freezer full of lamb",
       "Go fishing together",
+      "Buy a freezer full of lamb",
       "Harvest an apple orchard"
     ],
     "correctAnswer": "Go fishing together",
@@ -554,15 +521,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37808",
+    "id": "tv_37807",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, where does Tom secretly take a short contract to earn money for Barbara?",
     "answers": [
       "The local council",
       "A poultry farm",
-      "Jerry's favourite restaurant",
-      "His former company"
+      "His former company",
+      "Jerry's favourite restaurant"
     ],
     "correctAnswer": "His former company",
     "difficulty": "Medium",
@@ -587,15 +554,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37809",
+    "id": "tv_37808",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, which neighbour's curiosity threatens to expose Tom's secret employment?",
     "answers": [
-      "Margo Leadbetter",
       "Jerry Leadbetter",
       "A new neighbour called Ruth",
-      "The bank manager"
+      "The bank manager",
+      "Margo Leadbetter"
     ],
     "correctAnswer": "Margo Leadbetter",
     "difficulty": "Medium",
@@ -620,13 +587,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37810",
+    "id": "tv_37809",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what sort of job is Tom performing when he hurts his back?",
     "answers": [
-      "Loading pigs into a lorry",
       "Digging in the garden",
+      "Loading pigs into a lorry",
       "Painting the kitchen",
       "Mending the roof"
     ],
@@ -653,14 +620,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37811",
+    "id": "tv_37810",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what happens to the Goods' garden when bad weather arrives during the harvest?",
     "answers": [
       "It is buried beneath heavy snow",
-      "A tree falls across the street",
       "It turns into a mud bath",
+      "A tree falls across the street",
       "The greenhouse catches fire"
     ],
     "correctAnswer": "It turns into a mud bath",
@@ -686,15 +653,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37812",
+    "id": "tv_37811",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what does Tom discover about selling the garden's spare produce to raise money?",
     "answers": [
       "Every market is closed for a national strike",
       "Margo has bought all the surplus",
-      "He needs a licence from Jerry",
-      "Finding buyers is harder than he expected"
+      "Finding buyers is harder than he expected",
+      "He needs a licence from Jerry"
     ],
     "correctAnswer": "Finding buyers is harder than he expected",
     "difficulty": "Medium",
@@ -719,15 +686,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37813",
+    "id": "tv_37812",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, where does a desperate search produce the last money the Goods need for their bills?",
     "answers": [
-      "Behind a sofa",
       "Inside an old wellington boot",
       "In the roof space",
-      "Under the greenhouse floor"
+      "Under the greenhouse floor",
+      "Behind a sofa"
     ],
     "correctAnswer": "Behind a sofa",
     "difficulty": "Medium",
@@ -752,13 +719,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37814",
+    "id": "tv_37813",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what are the first names of the two students who come to observe the Goods?",
     "answers": [
-      "Tom and Daisy",
       "Guy and Ruth",
+      "Tom and Daisy",
       "Peter and Jane",
       "Bill and Helen"
     ],
@@ -785,14 +752,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37815",
+    "id": "tv_37814",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what neighbouring property do the admiring students propose buying?",
     "answers": [
       "A cottage in Devon",
-      "Jerry's office",
       "The house next door",
+      "Jerry's office",
       "A nearby allotment shed"
     ],
     "correctAnswer": "The house next door",
@@ -818,15 +785,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37816",
+    "id": "tv_37815",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what promise allows Jerry to obtain free goods for Tom and Barbara?",
     "answers": [
       "They have won a local gardening prize",
       "A BBC documentary is paying expenses",
-      "Tom has been named businessman of the year",
-      "They will be featured in a national Sunday newspaper"
+      "They will be featured in a national Sunday newspaper",
+      "Tom has been named businessman of the year"
     ],
     "correctAnswer": "They will be featured in a national Sunday newspaper",
     "difficulty": "Medium",
@@ -851,15 +818,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37817",
+    "id": "tv_37816",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what personal project does Margo attempt to publicise through the journalist's visit?",
     "answers": [
-      "Her amateur dramatic production",
       "A new charity hospital",
       "A garden design business",
-      "A collection of butterfly specimens"
+      "A collection of butterfly specimens",
+      "Her amateur dramatic production"
     ],
     "correctAnswer": "Her amateur dramatic production",
     "difficulty": "Medium",
@@ -884,13 +851,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37818",
+    "id": "tv_37817",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, who does Tom wrongly suspect when produce begins disappearing from his garden?",
     "answers": [
-      "Barbara Good",
       "Margo Leadbetter",
+      "Barbara Good",
       "Jerry's boss",
       "The postman"
     ],
@@ -917,14 +884,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37819",
+    "id": "tv_37818",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what gets Tom into worse trouble than the original vegetable thief?",
     "answers": [
       "Refusing to pay the rates",
-      "Selling stolen vegetables",
       "Trying to deal with the culprit himself",
+      "Selling stolen vegetables",
       "Blocking a police patrol"
     ],
     "correctAnswer": "Trying to deal with the culprit himself",
@@ -950,15 +917,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37820",
+    "id": "tv_37819",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, why is Jerry dismissed from his job by Sir Andrew?",
     "answers": [
       "He gives company secrets to Tom",
       "He deliberately loses an important contract",
-      "He insults a government minister",
-      "He refuses to host a visiting businessman"
+      "He refuses to host a visiting businessman",
+      "He insults a government minister"
     ],
     "correctAnswer": "He refuses to host a visiting businessman",
     "difficulty": "Medium",
@@ -983,15 +950,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37821",
+    "id": "tv_37820",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what do the Goods attempt after Jerry loses his position?",
     "answers": [
-      "To persuade Sir Andrew to reinstate him",
       "To start an independent dental practice",
       "To take over Jerry's house",
-      "To persuade Margo to join a protest march"
+      "To persuade Margo to join a protest march",
+      "To persuade Sir Andrew to reinstate him"
     ],
     "correctAnswer": "To persuade Sir Andrew to reinstate him",
     "difficulty": "Medium",
@@ -1016,13 +983,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37822",
+    "id": "tv_37821",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what visitor first draws the Goods' attention to a potentially better farm?",
     "answers": [
-      "An estate agent from London",
       "A boar-walker",
+      "An estate agent from London",
       "A journalist",
       "A government agricultural adviser"
     ],
@@ -1049,14 +1016,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37823",
+    "id": "tv_37822",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, how do Tom and Barbara feel about moving despite the attractive opportunity?",
     "answers": [
       "Both immediately want to emigrate",
-      "Barbara wants to go but Tom refuses outright",
       "Neither really wants to leave their home",
+      "Barbara wants to go but Tom refuses outright",
       "They agree to move the same day"
     ],
     "correctAnswer": "Neither really wants to leave their home",
@@ -1082,15 +1049,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37824",
+    "id": "tv_37823",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, which craft does Tom originally try at the evening school before swapping with Barbara?",
     "answers": [
       "Pottery",
       "Woodcarving",
-      "Blacksmithing",
-      "Weaving"
+      "Weaving",
+      "Blacksmithing"
     ],
     "correctAnswer": "Weaving",
     "difficulty": "Medium",
@@ -1115,15 +1082,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37825",
+    "id": "tv_37824",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what temptation arises once Tom discovers an unexpected talent in pottery?",
     "answers": [
-      "Turning the hobby into a commercial business",
       "Becoming a full-time arts teacher",
       "Selling the house to build a studio",
-      "Taking a job at a museum"
+      "Taking a job at a museum",
+      "Turning the hobby into a commercial business"
     ],
     "correctAnswer": "Turning the hobby into a commercial business",
     "difficulty": "Medium",
@@ -1148,13 +1115,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37826",
+    "id": "tv_37825",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, why do Tom and Barbara begin working at unusually early hours?",
     "answers": [
-      "To avoid a planning inspector",
       "To make full use of daylight for sowing",
+      "To avoid a planning inspector",
       "Because their animals have escaped",
       "To prepare for an evening television appearance"
     ],
@@ -1181,14 +1148,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37827",
+    "id": "tv_37826",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what becomes difficult for the Goods when they try to compensate for their early starts?",
     "answers": [
       "Finding someone to cook supper",
-      "Taking the train to work",
       "Getting to sleep early at night",
+      "Taking the train to work",
       "Looking after Jerry's children"
     ],
     "correctAnswer": "Getting to sleep early at night",
@@ -1214,15 +1181,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37828",
+    "id": "tv_37827",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what health problem affects one of the newborn piglets?",
     "answers": [
       "It is born with an extra leg",
       "It breaks a leg escaping the sty",
-      "It refuses to leave the garden",
-      "It is unusually small and weak"
+      "It is unusually small and weak",
+      "It refuses to leave the garden"
     ],
     "correctAnswer": "It is unusually small and weak",
     "difficulty": "Medium",
@@ -1247,15 +1214,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37829",
+    "id": "tv_37828",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what does Jerry rush to the hospital to obtain for the struggling piglet?",
     "answers": [
-      "Oxygen",
       "An incubator",
       "A blood transfusion",
-      "A bottle of antibiotics"
+      "A bottle of antibiotics",
+      "Oxygen"
     ],
     "correctAnswer": "Oxygen",
     "difficulty": "Medium",
@@ -1280,13 +1247,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37830",
+    "id": "tv_37829",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what farm tool does Tom adapt to replace a broken trolley?",
     "answers": [
-      "A wheelbarrow",
       "A rotavator",
+      "A wheelbarrow",
       "A threshing machine",
       "A water pump"
     ],
@@ -1313,48 +1280,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37831",
-    "category": "Television",
-    "programme": "The Good Life",
-    "question": "In The Good Life, why do the Goods need extra cash after modifying the rotavator?",
-    "answers": [
-      "To hire a mechanic",
-      "To insure a horse",
-      "To pay for its fuel",
-      "To build a new garage"
-    ],
-    "correctAnswer": "To pay for its fuel",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Classic Sitcom",
-      "BBC One",
-      "1970s television",
-      "The Good Life",
-      "Programme: The Good Life",
-      "Episode: S3E3 A Tug of the Forelock",
-      "Episode storyline",
-      "Characters and plot",
-      "Correct answer: To pay for its fuel",
-      "Source: https://www.comedy.co.uk/tv/the_good_life/episodes/3/",
-      "Rotavator Fuel",
-      "Leadbetter Jobs",
-      "Cash Shortage"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37832",
+    "id": "tv_37830",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what unusual crop-growing practice inspires Tom to conduct an experiment?",
     "answers": [
       "Painting the leaves white",
+      "Talking and playing music to plants",
       "Growing vegetables without daylight",
-      "Planting crops upside down",
-      "Talking and playing music to plants"
+      "Planting crops upside down"
     ],
     "correctAnswer": "Talking and playing music to plants",
     "difficulty": "Medium",
@@ -1379,14 +1313,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37833",
+    "id": "tv_37831",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what is Margo seeking election to while the Goods play music to their plants?",
     "answers": [
-      "President of the local amateur operatic society",
       "Chair of the residents' association",
       "Mayor of Surbiton",
+      "President of the local amateur operatic society",
       "President of a gardening federation"
     ],
     "correctAnswer": "President of the local amateur operatic society",
@@ -1412,15 +1346,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37834",
+    "id": "tv_37832",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what homemade drink helps everyone recover their sense of humour after the neighbour dispute?",
     "answers": [
       "Elderflower cordial",
-      "Peapod Burgundy",
       "Carrot champagne",
-      "Blackberry gin"
+      "Blackberry gin",
+      "Peapod Burgundy"
     ],
     "correctAnswer": "Peapod Burgundy",
     "difficulty": "Medium",
@@ -1445,14 +1379,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37835",
+    "id": "tv_37833",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, why does the disagreement grow even after the Goods ask Margo to move her garden structure?",
     "answers": [
+      "There is a misunderstanding about its new position",
       "Jerry refuses to discuss it",
       "The structure is stolen overnight",
-      "There is a misunderstanding about its new position",
       "A surveyor declares their property boundaries wrong"
     ],
     "correctAnswer": "There is a misunderstanding about its new position",
@@ -1478,15 +1412,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37836",
+    "id": "tv_37834",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, where do the Goods suspect their flea infestation may actually have originated?",
     "answers": [
       "A local pet shop",
+      "The Leadbetters' home",
       "An animal rescue centre",
-      "The council allotments",
-      "The Leadbetters' home"
+      "The council allotments"
     ],
     "correctAnswer": "The Leadbetters' home",
     "difficulty": "Medium",
@@ -1511,14 +1445,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37837",
+    "id": "tv_37835",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what do Tom and Barbara initially believe is responsible for the parasites?",
     "answers": [
-      "Their own livestock",
       "Tom's new loom",
       "A visiting school class",
+      "Their own livestock",
       "The municipal swimming pool"
     ],
     "correctAnswer": "Their own livestock",
@@ -1544,15 +1478,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37838",
+    "id": "tv_37836",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what happens to Barbara's remaining smart dress?",
     "answers": [
       "It is stolen from a hotel",
-      "It gets torn",
       "Margo gives it away",
-      "It is ruined by red paint"
+      "It is ruined by red paint",
+      "It gets torn"
     ],
     "correctAnswer": "It gets torn",
     "difficulty": "Medium",
@@ -1577,14 +1511,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37839",
+    "id": "tv_37837",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what treatment of a dinner guest makes Barbara even more insecure?",
     "answers": [
+      "Tom lavishes attention on a glamorous woman",
       "Jerry invites her without telling anyone",
       "Margo leaves Barbara to host alone",
-      "Tom lavishes attention on a glamorous woman",
       "The guest mocks Barbara's cooking"
     ],
     "correctAnswer": "Tom lavishes attention on a glamorous woman",
@@ -1610,15 +1544,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37840",
+    "id": "tv_37838",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what motivates the Leadbetters to suggest the Goods take a holiday?",
     "answers": [
       "The Goods have won a prize holiday",
+      "The Goods are exhausted by a poor harvest and setbacks",
       "The neighbours want to sell their garden",
-      "Margo needs a house to film a documentary",
-      "The Goods are exhausted by a poor harvest and setbacks"
+      "Margo needs a house to film a documentary"
     ],
     "correctAnswer": "The Goods are exhausted by a poor harvest and setbacks",
     "difficulty": "Medium",
@@ -1643,47 +1577,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37841",
-    "category": "Television",
-    "programme": "The Good Life",
-    "question": "In The Good Life, what responsibility do Margo and Jerry volunteer to take on while Tom and Barbara are away?",
-    "answers": [
-      "Caring for the Good household and animals",
-      "Managing Jerry's old factory",
-      "Supervising a building site",
-      "Running a village fair"
-    ],
-    "correctAnswer": "Caring for the Good household and animals",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Classic Sitcom",
-      "BBC One",
-      "1970s television",
-      "The Good Life",
-      "Programme: The Good Life",
-      "Episode: S4E1 Away From It All",
-      "Episode storyline",
-      "Characters and plot",
-      "Correct answer: Caring for the Good household and animals",
-      "Source: https://www.comedy.co.uk/tv/the_good_life/episodes/4/",
-      "Farm Sitting",
-      "Margo Jerry",
-      "Holiday"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37842",
+    "id": "tv_37839",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what does the Goods' visit to Margo's pony club reveal?",
     "answers": [
       "Margo has bought a new racehorse",
-      "Margo has not been attending recently",
       "The club has closed permanently",
+      "Margo has not been attending recently",
       "Jerry has become its chairman"
     ],
     "correctAnswer": "Margo has not been attending recently",
@@ -1709,40 +1610,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37843",
-    "category": "Television",
-    "programme": "The Good Life",
-    "question": "In The Good Life, what substance are Tom and Barbara hoping to collect from the pony club for their crops?",
-    "answers": [
-      "Sawdust",
-      "Limewash",
-      "Manure",
-      "Compostable leaves"
-    ],
-    "correctAnswer": "Manure",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Classic Sitcom",
-      "BBC One",
-      "1970s television",
-      "The Good Life",
-      "Programme: The Good Life",
-      "Episode: S4E2 The Green Door",
-      "Episode storyline",
-      "Characters and plot",
-      "Correct answer: Manure",
-      "Source: https://www.comedy.co.uk/tv/the_good_life/episodes/4/",
-      "Horse Manure",
-      "Fertiliser",
-      "Garden Sowing"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37844",
+    "id": "tv_37840",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, why does Barbara agree to give a public talk at short notice?",
@@ -1775,7 +1643,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37845",
+    "id": "tv_37841",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what cost of Barbara's successful talks increasingly becomes a problem?",
@@ -1808,7 +1676,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37846",
+    "id": "tv_37842",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, why does Tom's new loom initially become almost useless?",
@@ -1841,7 +1709,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37847",
+    "id": "tv_37843",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, who persuades Jerry to restrict Margo's spending on household purchases?",
@@ -1874,7 +1742,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37848",
+    "id": "tv_37844",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, which raw material do the Goods acquire to make homemade clothing?",
@@ -1907,7 +1775,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37849",
+    "id": "tv_37845",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what do Tom and Barbara use to colour their homemade clothing?",
@@ -1940,7 +1808,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37850",
+    "id": "tv_37846",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, which neighbour's abandoned property tempts Tom into taking something he has no right to?",
@@ -1973,7 +1841,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37851",
+    "id": "tv_37847",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what ultimately makes taking the leftover heating oil acceptable to Barbara?",
@@ -2006,7 +1874,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37852",
+    "id": "tv_37848",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what new home-security system does Margo install that the Goods feel they do not need?",
@@ -2039,46 +1907,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37853",
-    "category": "Television",
-    "programme": "The Good Life",
-    "question": "In The Good Life, which outgoing company chief does Jerry hope to succeed?",
-    "answers": [
-      "Sir Andrew",
-      "Sir Leonard",
-      "Mr Downs",
-      "Mr Barrowclough"
-    ],
-    "correctAnswer": "Sir Andrew",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Classic Sitcom",
-      "BBC One",
-      "1970s television",
-      "The Good Life",
-      "Programme: The Good Life",
-      "Episode: S4E7 Anniversary",
-      "Episode storyline",
-      "Characters and plot",
-      "Correct answer: Sir Andrew",
-      "Source: https://www.comedy.co.uk/tv/the_good_life/episodes/4/",
-      "Jerry Promotion",
-      "Company Boss",
-      "Career Worries"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37854",
+    "id": "tv_37849",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what is the approximate cost of the Goods' largely homemade Christmas?",
     "answers": [
-      "Five pounds",
       "Fifteen pence",
+      "Five pounds",
       "Fifteen pounds",
       "Fifty pence"
     ],
@@ -2105,14 +1940,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37855",
+    "id": "tv_37850",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, which neighbours unexpectedly join Tom and Barbara when their own Christmas delivery is rejected?",
     "answers": [
       "Guy and Ruth",
-      "Sir Andrew and his wife",
       "Margo and Jerry",
+      "Sir Andrew and his wife",
       "The local residents' association"
     ],
     "correctAnswer": "Margo and Jerry",
@@ -2138,15 +1973,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37856",
+    "id": "tv_37851",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what does Margo arrange in response to concerns about Jerry's future and ageing?",
     "answers": [
       "A smallholding in the countryside",
       "A pension from Tom's old firm",
-      "A family trust managed by Barbara",
-      "A further life-insurance policy for Jerry"
+      "A further life-insurance policy for Jerry",
+      "A family trust managed by Barbara"
     ],
     "correctAnswer": "A further life-insurance policy for Jerry",
     "difficulty": "Medium",
@@ -2171,15 +2006,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37857",
+    "id": "tv_37852",
     "category": "Television",
     "programme": "The Good Life",
     "question": "In The Good Life, what machine does Jerry use to improve his fitness before racing Tom?",
     "answers": [
-      "A rowing machine",
       "An exercise bicycle",
       "A treadmill",
-      "A skipping machine"
+      "A skipping machine",
+      "A rowing machine"
     ],
     "correctAnswer": "A rowing machine",
     "difficulty": "Medium",
@@ -2205,10 +2040,10 @@ const auditAdditions = [
   }
 ];
 questions.push(...auditAdditions);
-if(questions.length !== 144 ||
+if(questions.length !== 139 ||
  questions[0].id !== 'tv_16227' || questions[82].id !== 'tv_16309' ||
  auditAdditions[0].id !== 'tv_37797' ||
- auditAdditions[auditAdditions.length-1].id !== 'tv_37857' ||
+ auditAdditions[auditAdditions.length-1].id !== 'tv_37852' ||
  new Set(questions.map(q=>q.id)).size !== questions.length ||
  new Set(questions.map(q=>normalise(q.question))).size !== questions.length ||
  questions.some(q=>q.answers.length!==4||new Set(q.answers.map(normalise)).size!==4||
