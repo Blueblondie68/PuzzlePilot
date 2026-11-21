@@ -28,8 +28,11 @@ const GENERIC = new Set([
   'bbc','bbc one','bbc two','bbc three','bbc four','itv','itv1',
   'itv network','channel 4','channel four','channel 5','sky one',
   'seven network','nine network','abc','nbc','cbs','fox','hbo',
-  'netflix','britbox','disney plus','prime video','amazon prime video'
-]);
+  'netflix','britbox','disney plus','prime video','amazon prime video',
+  'character','characters','family','cast and crew','reality television',
+  'horror','comedy drama','action thriller','crime mystery','crime series',
+  'detective drama','medical drama series','police drama series'
+].map(normalise));
 
 function tidyTitle(value) {
   return String(value || '').trim()
@@ -110,9 +113,14 @@ function legacyTitle(question) {
 
   // Ignore generic genres/networks even if every question in a pack shares them.
   // Only select a specific tag repeated by a majority of nearby TV questions.
+  const answerKeys = new Set([
+    ...(Array.isArray(question.answers) ? question.answers : []),
+    question.correctAnswer
+  ].map(normalise));
   const possible = tagsOf(question).slice(0, 18)
     .map((name, rank) => ({ name: name.trim(), rank }))
-    .filter(entry => usefulTitle(entry.name));
+    .filter(entry => usefulTitle(entry.name) &&
+      !answerKeys.has(normalise(entry.name)));
   const choices = [];
   for (const entry of possible) {
     const key = normalise(entry.name);
@@ -173,7 +181,8 @@ function asksForProgramme(question) {
   return /^(?:(?:in|from)\s+)?(?:which|what)\s+(?:(?:tv|television|bbc|itv|british|american)\s+)*(?:programme|program|show|sitcom|soap|drama|series)\b/i.test(wording) ||
     /^(?:name|identify)\s+(?:the|a)\s+(?:tv\s+|television\s+)?(?:programme|program|show|sitcom|soap|drama|series)\b/i.test(wording) ||
     /\b(?:which|what)\s+(?:(?:tv|television)\s+)?(?:programme|program|show|sitcom|soap|series)\b/i.test(wording) ||
-    /^(?:in|from)\s+(?:which|what)\s+(?:(?:tv|television)\s+)?(?:programme|program|show|sitcom|soap|series)\b/i.test(wording);
+    /^(?:in|from)\s+(?:which|what)\s+(?:(?:tv|television)\s+)?(?:programme|program|show|sitcom|soap|series)\b/i.test(wording) ||
+    /\b(?:which|what)\b[^?]*\b(?:programme|program|show|sitcom|soap|series)\b/i.test(wording);
 }
 
 function getTelevisionProgramme(question) {
