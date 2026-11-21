@@ -2012,14 +2012,14 @@ const auditAdditions = [
     "id": "tv_38166",
     "category": "Television",
     "programme": "The Clangers",
-    "question": "In The Clangers (S2E05: Mother of Invention), what happens to Major after Mother accidentally wheels her new garden trolley over his foot?",
+    "question": "In The Clangers (S2E05: Mother of Invention), what accident unexpectedly reveals a new use for Mother's garden trolley?",
     "answers": [
-      "The trolley proves surprisingly useful",
-      "Major loses his telescope",
-      "His knitting comes undone",
-      "A music tree collapses"
+      "A wind gust blows it into space",
+      "Mother accidentally rolls it over Major's foot",
+      "It falls down a tunnel into the soup well",
+      "A Sky Moo lands on top of it"
     ],
-    "correctAnswer": "The trolley proves surprisingly useful",
+    "correctAnswer": "Mother accidentally rolls it over Major's foot",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -2032,7 +2032,7 @@ const auditAdditions = [
       "Stop Motion Animation",
       "Episode: S2E05 Mother of Invention",
       "Revival storyline",
-      "Answer: The trolley proves surprisingly useful",
+      "Answer: Mother accidentally rolls it over Major's foot",
       "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
       "New trolley",
       "Accidental collision",
@@ -5361,14 +5361,80 @@ const auditAdditions = [
       "Clangers withdraw"
     ],
     "dailyEligible": true
+  },
+  {
+    "id": "tv_38269",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (2015 solar-eclipse special), what astronomical event do the characters explain to young viewers, including how to observe it safely?",
+    "answers": [
+      "A meteor shower",
+      "A lunar landing",
+      "The transit of Venus",
+      "A solar eclipse"
+    ],
+    "correctAnswer": "A solar eclipse",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 CBeebies specials",
+      "Smallfilms",
+      "Stop Motion Animation",
+      "Episode: 2015 special: Clangers and the Solar Eclipse",
+      "Standalone short",
+      "Reintroduction",
+      "Answer: A solar eclipse",
+      "Source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Eclipse education",
+      "Safe viewing",
+      "CBeebies short"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38270",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (2015 introduction special), which CBeebies stargazer discovers the Clangers' small blue world through a telescope?",
+    "answers": [
+      "Maggie",
+      "Emily",
+      "Mariette",
+      "Madeleine"
+    ],
+    "correctAnswer": "Maggie",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2015 CBeebies specials",
+      "Smallfilms",
+      "Stop Motion Animation",
+      "Episode: 2015 special: Meet the Clangers",
+      "Standalone short",
+      "Reintroduction",
+      "Answer: Maggie",
+      "Source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Maggie stargazer",
+      "Blue planet",
+      "Telescope discovery"
+    ],
+    "dailyEligible": true
   }
 ];
 questions.push(...auditAdditions);
-const expectedAuditedTotal = 255;
+const expectedAuditedTotal = 257;
 if(questions.length!==expectedAuditedTotal ||
  questions[0].id!=='tv_16696' || questions[95].id!=='tv_16791' ||
  auditAdditions[0].id!=='tv_38110' ||
- auditAdditions[auditAdditions.length-1].id!=='tv_38268' ||
+ auditAdditions[auditAdditions.length-1].id!=='tv_38270' ||
  new Set(questions.map(q=>q.id)).size!==questions.length ||
  new Set(questions.map(q=>normalise(q.question))).size!==questions.length ||
  questions.some(q=>q.answers.length!==4 || new Set(q.answers.map(normalise)).size!==4 ||
