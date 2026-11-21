@@ -5,7 +5,7 @@
  // Covers all 21 broadcast episodes plus the original cast and production.
  // Seven individually selected specialist tags for every question.
  // Pack length follows distinct, documented material; no arbitrary quota.
- // Keep quiz_bank.js unchanged until the agreed end-of-session connection.
+ // quiz_bank.js already connects this pack through the live 1–558 pack range.
  // Row: question | correct answer | wrong1 | wrong2 | wrong3 | difficulty | seven specific tags
 
  const groups = [
@@ -92,7 +92,7 @@
      topic: 'Series One - Floyd, Cleveland and Hiatus',
      facts: `Which actor plays Liz's boyfriend Floyd DeBarber?|Jason Sudeikis|Dean Winters|Will Arnett|Chris Parnell|Easy|Jason Sudeikis|Floyd DeBarber|Actor Casting|Liz Lemon Romance|Season One|Guest Performer|2007 Cast
  Which woman, played by Emily Mortimer, begins a relationship with Jack in Corporate Crush?|Phoebe|Bianca|Cerie|Jenna|Easy|Phoebe|Emily Mortimer|Jack Donaghy|Corporate Crush|Romantic Interest|Art Gallery|2007 Story
- What type of workplace does Jack's new love interest Phoebe work at?|An art gallery|A television newsroom|A hospital|A law firm|Medium|Phoebe|Art Gallery|Corporate Crush|Jack Donaghy|Emily Mortimer|Relationship Background|New Girlfriend
+ What type of workplace does Jack's new love interest Phoebe work at?|An auction house|A television newsroom|A hospital|A law firm|Medium|Phoebe|Christies Auctioneer|Corporate Crush|Jack Donaghy|Emily Mortimer|Relationship Background|New Girlfriend
  Which department does Don Geiss remove from Jack's responsibilities after the failed fireworks plan?|Microwave ovens|Sports programming|News broadcasts|Radio advertising|Medium|Jack Donaghy|Don Geiss|Microwave Department|Corporate Crush|Executive Demotion|Fireworks Failure|GE Management
  Which US city does Floyd take Liz to in the twentieth episode?|Cleveland|Chicago|Boston|Philadelphia|Easy|Floyd DeBarber|Liz Lemon|Cleveland Episode|Ohio|Romantic Trip|City Visit|2007 Story
  Which shadowy group does Tracy fear is pursuing him late in the first series?|The Black Crusaders|The Midnight League|The Writers Guild|The National Network|Medium|Tracy Jordan|Black Crusaders|Cleveland|Celebrity Paranoia|Show Business|Season One|Perceived Pursuit
@@ -153,4 +153,1068 @@
      q.tags.some(tag => !tag) || q.dailyEligible !== true)) {
    throw new Error('Incomplete exported question metadata');
  }
+
+// 21 November 2026: 30 Rock season-one audit. Original IDs tv_12510–tv_12584 retained.
+// Corrected Phoebe's workplace to an auction house (Christie's).
+// Added 29 new questions, IDs tv_35698–tv_35726.
+// Reference sources:
+// https://en.wikipedia.org/wiki/30_Rock_season_1
+// https://thetvdb.com/series/30-rock/seasons/official/1
+// https://www.rottentomatoes.com/tv/30-rock/s01
+const auditAdditions = [
+  {
+    "id": "tv_35698",
+    "category": "Television",
+    "question": "Who played Jack Donaghy's devoted assistant Jonathan in the first season of 30 Rock?",
+    "answers": [
+      "Maulik Pancholy",
+      "Keith Powell",
+      "John Lutz",
+      "Scott Adsit"
+    ],
+    "correctAnswer": "Maulik Pancholy",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Recurring cast",
+      "Fact: Jonathan actor",
+      "Storyline or casting: Executive assistant",
+      "Correct answer: Maulik Pancholy",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Who played Jack Donaghy's devoted assistant Jonathan in the first season of 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35699",
+    "category": "Television",
+    "question": "Which actor portrayed Tracy's entourage member Dot Com in the first season of 30 Rock?",
+    "answers": [
+      "Grizz Chapman",
+      "Kevin Brown",
+      "Keith Powell",
+      "Lonny Ross"
+    ],
+    "correctAnswer": "Kevin Brown",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Recurring cast",
+      "Fact: Dot Com actor",
+      "Storyline or casting: Tracy entourage",
+      "Correct answer: Kevin Brown",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which actor portrayed Tracy's entourage member Dot Com in the first season of 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35700",
+    "category": "Television",
+    "question": "Which actor played Tracy's companion Grizz in the first season of 30 Rock?",
+    "answers": [
+      "Kevin Brown",
+      "John Lutz",
+      "Grizz Chapman",
+      "Maulik Pancholy"
+    ],
+    "correctAnswer": "Grizz Chapman",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Recurring cast",
+      "Fact: Grizz actor",
+      "Storyline or casting: Tracy entourage",
+      "Correct answer: Grizz Chapman",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which actor played Tracy's companion Grizz in the first season of 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35701",
+    "category": "Television",
+    "question": "Which actor portrayed the TGS writer known as J. D. Lutz in the first season of 30 Rock?",
+    "answers": [
+      "Judah Friedlander",
+      "Keith Powell",
+      "Scott Adsit",
+      "John Lutz"
+    ],
+    "correctAnswer": "John Lutz",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Recurring cast",
+      "Fact: J. D. Lutz actor",
+      "Storyline or casting: TGS staff",
+      "Correct answer: John Lutz",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which actor portrayed the TGS writer known as J. D. Lutz in the first season of 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35702",
+    "category": "Television",
+    "question": "Which performer was originally cast as Jenna before Jane Krakowski in 30 Rock?",
+    "answers": [
+      "Rachel Dratch",
+      "Amy Poehler",
+      "Maya Rudolph",
+      "Kristen Wiig"
+    ],
+    "correctAnswer": "Rachel Dratch",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Production",
+      "Fact: Early Jenna casting",
+      "Storyline or casting: Recast of lead role",
+      "Correct answer: Rachel Dratch",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which performer was originally cast as Jenna before Jane Krakowski in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35703",
+    "category": "Television",
+    "question": "What kind of television programme was Tina Fey's early pitch for what became 30 Rock originally about?",
+    "answers": [
+      "A hospital drama",
+      "A cable news programme",
+      "A sports talk show",
+      "A police procedural"
+    ],
+    "correctAnswer": "A cable news programme",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Production",
+      "Fact: Original series pitch",
+      "Storyline or casting: Cable news development",
+      "Correct answer: A cable news programme",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: What kind of television programme was Tina Fey's early pitch for what became 30 Rock originally about?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35704",
+    "category": "Television",
+    "question": "What was the first name of the previous network executive whose death leads to Jack's arrival in 30 Rock?",
+    "answers": [
+      "Gerald",
+      "Howard",
+      "Gary",
+      "Philip"
+    ],
+    "correctAnswer": "Gary",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Pilot",
+      "Fact: Predecessor of Jack",
+      "Storyline or casting: The Girlie Show NBC executive",
+      "Correct answer: Gary",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: What was the first name of the previous network executive whose death leads to Jack's arrival in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35705",
+    "category": "Television",
+    "question": "What is the first name of the woman Jack unexpectedly arranges for Liz to date in 30 Rock?",
+    "answers": [
+      "Bianca",
+      "Phoebe",
+      "Anna",
+      "Gretchen"
+    ],
+    "correctAnswer": "Gretchen",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Blind Date",
+      "Fact: Liz's unexpected blind date",
+      "Storyline or casting: Gretchen Thomas",
+      "Correct answer: Gretchen",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: What is the first name of the woman Jack unexpectedly arranges for Liz to date in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35706",
+    "category": "Television",
+    "question": "Which actress played Jack's friend Gretchen Thomas in 30 Rock?",
+    "answers": [
+      "Stephanie March",
+      "Anna Chlumsky",
+      "Emily Mortimer",
+      "Isabella Rossellini"
+    ],
+    "correctAnswer": "Stephanie March",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Blind Date",
+      "Fact: Gretchen casting",
+      "Storyline or casting: Blind Date guest actress",
+      "Correct answer: Stephanie March",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which actress played Jack's friend Gretchen Thomas in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35707",
+    "category": "Television",
+    "question": "Which new mentor tries to teach Kenneth how to be successful in the 30 Rock episode Jack the Writer?",
+    "answers": [
+      "Pete Hornberger",
+      "Tracy Jordan",
+      "Frank Rossitano",
+      "Jack Donaghy"
+    ],
+    "correctAnswer": "Tracy Jordan",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Jack the Writer",
+      "Fact: Kenneth mentoring",
+      "Storyline or casting: Tracy teaches the NBC page",
+      "Correct answer: Tracy Jordan",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which new mentor tries to teach Kenneth how to be successful in the 30 Rock episode Jack the Writer?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35708",
+    "category": "Television",
+    "question": "What animal is Tracy photographed with outside Starbucks in 30 Rock, creating an unexpectedly ordinary public image?",
+    "answers": [
+      "A rabbit",
+      "A cat",
+      "A dog",
+      "A parrot"
+    ],
+    "correctAnswer": "A dog",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Jack Meets Dennis",
+      "Fact: Tracy press photograph",
+      "Storyline or casting: Tabloid sees normal behaviour",
+      "Correct answer: A dog",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: What animal is Tracy photographed with outside Starbucks in 30 Rock, creating an unexpectedly ordinary public image?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35709",
+    "category": "Television",
+    "question": "What causes Tracy's especially unusual behaviour before his appearance on Conan in 30 Rock?",
+    "answers": [
+      "An allergy to the studio lights",
+      "A head injury from the previous day's filming",
+      "Accidentally drinking decaffeinated coffee",
+      "Medication prescribed by Dr Spaceman"
+    ],
+    "correctAnswer": "Medication prescribed by Dr Spaceman",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Tracy Does Conan",
+      "Fact: Tracy medication reaction",
+      "Storyline or casting: Conan booking crisis",
+      "Correct answer: Medication prescribed by Dr Spaceman",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: What causes Tracy's especially unusual behaviour before his appearance on Conan in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35710",
+    "category": "Television",
+    "question": "What workplace session must Tracy and Toofer attend after an argument in the 30 Rock episode The Break-Up?",
+    "answers": [
+      "Sensitivity training",
+      "Public speaking lessons",
+      "A first-aid workshop",
+      "Corporate finance training"
+    ],
+    "correctAnswer": "Sensitivity training",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: The Break-Up",
+      "Fact: Tracy and Toofer dispute",
+      "Storyline or casting: HR disciplinary response",
+      "Correct answer: Sensitivity training",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: What workplace session must Tracy and Toofer attend after an argument in the 30 Rock episode The Break-Up?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35711",
+    "category": "Television",
+    "question": "Which TGS employee announces an engagement that prompts Liz to reconsider motherhood in 30 Rock?",
+    "answers": [
+      "Jenna Maroney",
+      "Cerie Xerox",
+      "Liz Lemler",
+      "Phoebe"
+    ],
+    "correctAnswer": "Cerie Xerox",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: The Baby Show",
+      "Fact: Cerie engagement",
+      "Storyline or casting: Liz considers parenthood",
+      "Correct answer: Cerie Xerox",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which TGS employee announces an engagement that prompts Liz to reconsider motherhood in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35712",
+    "category": "Television",
+    "question": "Which character uses celebrity impersonations to fool Tracy and Jack in 30 Rock's The Baby Show?",
+    "answers": [
+      "Frank Rossitano",
+      "Kenneth Parcell",
+      "Josh Girard",
+      "Toofer Spurlock"
+    ],
+    "correctAnswer": "Josh Girard",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: The Baby Show",
+      "Fact: Tricking Tracy and Jack",
+      "Storyline or casting: Josh impressions",
+      "Correct answer: Josh Girard",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which character uses celebrity impersonations to fool Tracy and Jack in 30 Rock's The Baby Show?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35713",
+    "category": "Television",
+    "question": "What is the specific function of the Tracy Jordan Meat Machine in 30 Rock?",
+    "answers": [
+      "It grills and serves frozen vegetables",
+      "It prints photographs on toast",
+      "It cooks dinner using steam from coffee",
+      "It replaces the bread in sandwiches with meat"
+    ],
+    "correctAnswer": "It replaces the bread in sandwiches with meat",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: The Rural Juror",
+      "Fact: Meat Machine function",
+      "Storyline or casting: Tracy celebrity product",
+      "Correct answer: It replaces the bread in sandwiches with meat",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: What is the specific function of the Tracy Jordan Meat Machine in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35714",
+    "category": "Television",
+    "question": "Which pair of TGS writers are enlisted to write Tracy's autobiography in a single day in 30 Rock?",
+    "answers": [
+      "Frank and Toofer",
+      "Pete and Josh",
+      "Liz and Jenna",
+      "Grizz and Dot Com"
+    ],
+    "correctAnswer": "Frank and Toofer",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: The Head and the Hair",
+      "Fact: Ghostwriters of Tracy memoir",
+      "Storyline or casting: Single-day writing job",
+      "Correct answer: Frank and Toofer",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which pair of TGS writers are enlisted to write Tracy's autobiography in a single day in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35715",
+    "category": "Television",
+    "question": "Which tennis champion appears as himself in 30 Rock's The Head and the Hair?",
+    "answers": [
+      "Andre Agassi",
+      "John McEnroe",
+      "Pete Sampras",
+      "Andy Roddick"
+    ],
+    "correctAnswer": "John McEnroe",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: The Head and the Hair",
+      "Fact: Guest athlete cameo",
+      "Storyline or casting: John McEnroe",
+      "Correct answer: John McEnroe",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which tennis champion appears as himself in 30 Rock's The Head and the Hair?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35716",
+    "category": "Television",
+    "question": "Which actor played Prince Gerhardt's servant Tomas in the first series of 30 Rock?",
+    "answers": [
+      "Will Arnett",
+      "Jason Sudeikis",
+      "Will Forte",
+      "Bill Hader"
+    ],
+    "correctAnswer": "Will Forte",
+    "difficulty": "Hard",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Black Tie",
+      "Fact: Prince's servant casting",
+      "Storyline or casting: Tomas",
+      "Correct answer: Will Forte",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which actor played Prince Gerhardt's servant Tomas in the first series of 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35717",
+    "category": "Television",
+    "question": "Which TGS colleague urges Pete not to cheat on his wife during the 30 Rock episode Black Tie?",
+    "answers": [
+      "Tracy Jordan",
+      "Josh Girard",
+      "Frank Rossitano",
+      "Kenneth Parcell"
+    ],
+    "correctAnswer": "Kenneth Parcell",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Black Tie",
+      "Fact: Pete temptation",
+      "Storyline or casting: Kenneth discourages infidelity",
+      "Correct answer: Kenneth Parcell",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which TGS colleague urges Pete not to cheat on his wife during the 30 Rock episode Black Tie?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35718",
+    "category": "Television",
+    "question": "Who plays Tracy's wife Angie Jordan when she appears in 30 Rock's first-season Valentine episode?",
+    "answers": [
+      "Sherri Shepherd",
+      "Kerry Washington",
+      "Tichina Arnold",
+      "Regina King"
+    ],
+    "correctAnswer": "Sherri Shepherd",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Up All Night",
+      "Fact: Angie casting",
+      "Storyline or casting: Tracy's wife",
+      "Correct answer: Sherri Shepherd",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Who plays Tracy's wife Angie Jordan when she appears in 30 Rock's first-season Valentine episode?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35719",
+    "category": "Television",
+    "question": "Which TGS producer forgets Valentine's Day in the 30 Rock episode Up All Night?",
+    "answers": [
+      "Tracy Jordan",
+      "Pete Hornberger",
+      "Josh Girard",
+      "Jack Donaghy"
+    ],
+    "correctAnswer": "Pete Hornberger",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Up All Night",
+      "Fact: Forgotten Valentine's Day",
+      "Storyline or casting: Workplace all-nighter",
+      "Correct answer: Pete Hornberger",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which TGS producer forgets Valentine's Day in the 30 Rock episode Up All Night?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35720",
+    "category": "Television",
+    "question": "Which NBC page is invited to join Tracy's personal entourage in 30 Rock's Hard Ball?",
+    "answers": [
+      "Jonathan",
+      "Cerie Xerox",
+      "Kenneth Parcell",
+      "Josh Girard"
+    ],
+    "correctAnswer": "Kenneth Parcell",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Hard Ball",
+      "Fact: Kenneth gets promotion",
+      "Storyline or casting: Tracy entourage",
+      "Correct answer: Kenneth Parcell",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which NBC page is invited to join Tracy's personal entourage in 30 Rock's Hard Ball?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35721",
+    "category": "Television",
+    "question": "Which actress portrayed the accountant nicknamed Other Liz in 30 Rock?",
+    "answers": [
+      "Molly Shannon",
+      "Stephanie March",
+      "Siobhan Fallon Hogan",
+      "Anna Chlumsky"
+    ],
+    "correctAnswer": "Anna Chlumsky",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: The Fighting Irish",
+      "Fact: Other Liz actress",
+      "Storyline or casting: Liz Lemler",
+      "Correct answer: Anna Chlumsky",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which actress portrayed the accountant nicknamed Other Liz in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35722",
+    "category": "Television",
+    "question": "Which actress played Jack's sister Katherine Catherine Donaghy in 30 Rock?",
+    "answers": [
+      "Molly Shannon",
+      "Siobhan Fallon Hogan",
+      "Rachel Dratch",
+      "Jane Krakowski"
+    ],
+    "correctAnswer": "Molly Shannon",
+    "difficulty": "Hard",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: The Fighting Irish",
+      "Fact: Jack's sister casting",
+      "Storyline or casting: Katherine Catherine Donaghy",
+      "Correct answer: Molly Shannon",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which actress played Jack's sister Katherine Catherine Donaghy in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35723",
+    "category": "Television",
+    "question": "Which actress played Jack's sister Patricia Donaghy in 30 Rock?",
+    "answers": [
+      "Molly Shannon",
+      "Siobhan Fallon Hogan",
+      "Elaine Stritch",
+      "Anna Chlumsky"
+    ],
+    "correctAnswer": "Siobhan Fallon Hogan",
+    "difficulty": "Hard",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: The Fighting Irish",
+      "Fact: Patricia Donaghy actress",
+      "Storyline or casting: Irish family reunion",
+      "Correct answer: Siobhan Fallon Hogan",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which actress played Jack's sister Patricia Donaghy in 30 Rock?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35724",
+    "category": "Television",
+    "question": "What unexpected legal papers are served on Tracy during the 30 Rock episode Fireworks?",
+    "answers": [
+      "Divorce papers",
+      "A subpoena over unpaid parking fines",
+      "Paternity papers",
+      "A restraining order"
+    ],
+    "correctAnswer": "Paternity papers",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Fireworks",
+      "Fact: Tracy legal trouble",
+      "Storyline or casting: Paternity claim",
+      "Correct answer: Paternity papers",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://www.rottentomatoes.com/tv/30-rock/s01",
+      "Question focus: What unexpected legal papers are served on Tracy during the 30 Rock episode Fireworks?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35725",
+    "category": "Television",
+    "question": "Which historical figure does Tracy hope to portray in his planned film in the 30 Rock episode Corporate Crush?",
+    "answers": [
+      "George Washington",
+      "Abraham Lincoln",
+      "Benjamin Franklin",
+      "Thomas Jefferson"
+    ],
+    "correctAnswer": "Thomas Jefferson",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Corporate Crush",
+      "Fact: Tracy historical film",
+      "Storyline or casting: Jefferson movie pitch",
+      "Correct answer: Thomas Jefferson",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which historical figure does Tracy hope to portray in his planned film in the 30 Rock episode Corporate Crush?"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35726",
+    "category": "Television",
+    "question": "Which TGS producer temporarily stays with Liz because of trouble in his marriage at the end of 30 Rock's first season?",
+    "answers": [
+      "Pete Hornberger",
+      "Josh Girard",
+      "Frank Rossitano",
+      "Toofer Spurlock"
+    ],
+    "correctAnswer": "Pete Hornberger",
+    "difficulty": "Medium",
+    "tags": [
+      "30 Rock",
+      "American Television",
+      "American Sitcom",
+      "NBC",
+      "Season One",
+      "2006-2007",
+      "Workplace Comedy",
+      "Episode: Hiatus",
+      "Fact: Pete stays at Liz home",
+      "Storyline or casting: Marital difficulties",
+      "Correct answer: Pete Hornberger",
+      "Tina Fey series",
+      "TGS With Tracy Jordan",
+      "Television Industry Satire",
+      "Sitcom Characters and Relationships",
+      "Original Broadcast Run",
+      "November 2026 Audit",
+      "Question Identifies Programme",
+      "Source: https://en.wikipedia.org/wiki/30_Rock_season_1",
+      "Question focus: Which TGS producer temporarily stays with Liz because of trouble in his marriage at the end of 30 Rock's first season?"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditAdditions);
+if(questions.length!==104||
+  new Set(questions.map(q=>q.id)).size!==questions.length||
+  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
+  questions.some(q=>q.answers.length!==4||
+   new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
+   q.answers.filter(a=>a===q.correctAnswer).length!==1||
+   q.tags.length<16||!q.tags.includes('30 Rock')||q.dailyEligible!==true))
+ throw Error('Pack 296 audit validation failed');
+
  module.exports = questions;
