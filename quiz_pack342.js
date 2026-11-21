@@ -1161,44 +1161,11 @@ const auditAdditions = [
     "id": "tv_37882",
     "category": "Television",
     "programme": "To the Manor Born",
-    "question": "In To the Manor Born, what community cause does Audrey abandon when she mistakenly believes Richard might receive an honour?",
-    "answers": [
-      "A protest against a railway closure",
-      "The campaign against removing hedgerows",
-      "A campaign to save the post office",
-      "A demand for a new scout hut"
-    ],
-    "correctAnswer": "The campaign against removing hedgerows",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Sitcom",
-      "Classic Sitcom",
-      "BBC One",
-      "To the Manor Born",
-      "Programme: To the Manor Born",
-      "1979-1981",
-      "Episode storyline",
-      "S2E5 The Honours List",
-      "Correct: The campaign against removing hedgerows",
-      "Source: https://en.wikipedia.org/wiki/List_of_To_the_Manor_Born_episodes",
-      "Countryside conservation",
-      "Audrey U-turn",
-      "Richard status"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37883",
-    "category": "Television",
-    "programme": "To the Manor Born",
     "question": "In To the Manor Born, which public healthcare service must Audrey use when her private doctor refuses to treat her?",
     "answers": [
       "A military hospital",
-      "A private ambulance",
       "The NHS",
+      "A private ambulance",
       "A charity-run clinic"
     ],
     "correctAnswer": "The NHS",
@@ -1224,17 +1191,17 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37884",
+    "id": "tv_37883",
     "category": "Television",
     "programme": "To the Manor Born",
-    "question": "In To the Manor Born, what sporting skill has Richard pretended to possess before his planned winter holiday?",
+    "question": "In To the Manor Born, whom does Richard invite to accompany him on his skiing holiday after Audrey injures her back?",
     "answers": [
-      "Ice skating",
-      "Tobogganing",
-      "Snowboarding",
-      "Skiing"
+      "Mrs Polouvicka",
+      "Marjory",
+      "Audrey",
+      "Podge Hodge"
     ],
-    "correctAnswer": "Skiing",
+    "correctAnswer": "Audrey",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1248,24 +1215,24 @@ const auditAdditions = [
       "1979-1981",
       "Episode storyline",
       "S2E6 Vive Le Sport",
-      "Correct: Skiing",
+      "Correct: Audrey",
       "Source: https://en.wikipedia.org/wiki/List_of_To_the_Manor_Born_episodes",
-      "Richard bluff",
-      "Ski lessons",
+      "Skiing invitation",
+      "Audrey back injury",
       "Winter holiday"
     ],
     "dailyEligible": true
   },
   {
-    "id": "tv_37885",
+    "id": "tv_37884",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what animal interrupts Audrey and Marjory's picnic before the scout fundraising dispute?",
     "answers": [
-      "A bull",
       "A fox",
       "A sheep",
-      "A swan"
+      "A swan",
+      "A bull"
     ],
     "correctAnswer": "A bull",
     "difficulty": "Medium",
@@ -1290,13 +1257,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37886",
+    "id": "tv_37885",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what happens to the new scout hut after Richard's efforts to provide a replacement?",
     "answers": [
-      "It is flooded",
       "It collapses",
+      "It is flooded",
       "It is mistakenly sold",
       "It catches fire"
     ],
@@ -1323,14 +1290,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37887",
+    "id": "tv_37886",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what mishap befalls Richard during his picnic with Audrey after the raft race starts?",
     "answers": [
       "He sprains his ankle",
-      "He loses his watch",
       "He ends up in the water",
+      "He loses his watch",
       "He falls from a horse"
     ],
     "correctAnswer": "He ends up in the water",
@@ -1356,15 +1323,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37888",
+    "id": "tv_37887",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what is the name of the threatened local railway station?",
     "answers": [
       "Grantleigh Central",
       "Treddles Wharf",
-      "Wintelbury",
-      "Marlbury"
+      "Marlbury",
+      "Wintelbury"
     ],
     "correctAnswer": "Marlbury",
     "difficulty": "Medium",
@@ -1389,15 +1356,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37889",
+    "id": "tv_37888",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what document gives Audrey a possible legal claim over the land used by the railway?",
     "answers": [
-      "An old family charter",
       "A planning application",
       "A tenancy agreement",
-      "A railway timetable"
+      "A railway timetable",
+      "An old family charter"
     ],
     "correctAnswer": "An old family charter",
     "difficulty": "Medium",
@@ -1422,13 +1389,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37890",
+    "id": "tv_37889",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, why does British Rail eventually decide to keep the local station open?",
     "answers": [
-      "To transport farm produce",
       "To serve a new school",
+      "To transport farm produce",
       "To serve a new supermarket",
       "To support a tourist railway"
     ],
@@ -1455,14 +1422,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37891",
+    "id": "tv_37890",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what small car does Richard buy after hearing Audrey can no longer afford to repair her Rolls-Royce?",
     "answers": [
       "A Morris Minor",
-      "A Ford Fiesta",
       "An Austin Mini Metro",
+      "A Ford Fiesta",
       "A Triumph Herald"
     ],
     "correctAnswer": "An Austin Mini Metro",
@@ -1488,15 +1455,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37892",
+    "id": "tv_37891",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, whose riding school and stables does Audrey manage when she needs paid work?",
     "answers": [
       "Marjory Frobisher's",
       "Mrs Polouvicka's",
-      "Mrs Patterson's",
-      "Mrs Proctor's"
+      "Mrs Proctor's",
+      "Mrs Patterson's"
     ],
     "correctAnswer": "Mrs Proctor's",
     "difficulty": "Medium",
@@ -1521,15 +1488,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37893",
+    "id": "tv_37892",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, which charity's deliveries are threatened when Mrs Proctor breaks her arm?",
     "answers": [
-      "Meals on Wheels",
       "St John Ambulance",
       "Guide Dogs",
-      "The National Trust"
+      "The National Trust",
+      "Meals on Wheels"
     ],
     "correctAnswer": "Meals on Wheels",
     "difficulty": "Medium",
@@ -1554,13 +1521,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37894",
+    "id": "tv_37893",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what species is the rare bird that starts eating Audrey's bees?",
     "answers": [
-      "A kingfisher",
       "A bee-eater",
+      "A kingfisher",
       "A hoopoe",
       "A woodpecker"
     ],
@@ -1587,14 +1554,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37895",
+    "id": "tv_37894",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what happens to Audrey's honey sales after birdwatchers flock to the estate?",
     "answers": [
       "They stop completely",
-      "They are banned by the council",
       "They increase sharply",
+      "They are banned by the council",
       "They are taken over by Richard"
     ],
     "correctAnswer": "They increase sharply",
@@ -1620,15 +1587,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37896",
+    "id": "tv_37895",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, whom does Marjory pretend to be while Audrey poses as Richard's wife?",
     "answers": [
       "Mrs Polouvicka",
       "Mademoiselle Dutoit",
-      "Mrs Proctor",
-      "Mrs fforbes-Hamilton"
+      "Mrs fforbes-Hamilton",
+      "Mrs Proctor"
     ],
     "correctAnswer": "Mrs fforbes-Hamilton",
     "difficulty": "Medium",
@@ -1653,15 +1620,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37897",
+    "id": "tv_37896",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, how does Audrey use her pretended status as Richard's wife during the visiting businesswoman's stay?",
     "answers": [
-      "To request alterations to the estate",
       "To obtain a place on the board",
       "To dismiss Brabinger",
-      "To reopen the old railway station"
+      "To reopen the old railway station",
+      "To request alterations to the estate"
     ],
     "correctAnswer": "To request alterations to the estate",
     "difficulty": "Medium",
@@ -1686,13 +1653,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37898",
+    "id": "tv_37897",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, in which country does Richard plan to build a refrigeration plant that angers his directors?",
     "answers": [
-      "France",
       "Argentina",
+      "France",
       "Belgium",
       "Canada"
     ],
@@ -1719,14 +1686,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37899",
+    "id": "tv_37898",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what is the first name of Audrey's wealthy uncle who helps Richard resist a boardroom coup?",
     "answers": [
       "Archie",
-      "Arnold",
       "Greville",
+      "Arnold",
       "Gerald"
     ],
     "correctAnswer": "Greville",
@@ -1752,15 +1719,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37900",
+    "id": "tv_37899",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what does Audrey tell her uncle to persuade him to rescue Richard's business?",
     "answers": [
       "That Richard is returning Grantleigh to her",
       "That Richard has offered her a directorship",
-      "That Richard has agreed to retire",
-      "That she is about to marry Richard"
+      "That she is about to marry Richard",
+      "That Richard has agreed to retire"
     ],
     "correctAnswer": "That she is about to marry Richard",
     "difficulty": "Medium",
@@ -1785,15 +1752,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37901",
+    "id": "tv_37900",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what does Richard give Audrey to thank her for helping him survive the coup?",
     "answers": [
-      "A share in his company",
       "The keys to his Rolls-Royce",
       "A rare painting",
-      "An annual pension"
+      "An annual pension",
+      "A share in his company"
     ],
     "correctAnswer": "A share in his company",
     "difficulty": "Medium",
@@ -1818,13 +1785,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37902",
+    "id": "tv_37901",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what unexpected inheritance allows Audrey to bid for Grantleigh Manor again?",
     "answers": [
-      "A lottery jackpot",
       "Money left by Uncle Greville",
+      "A lottery jackpot",
       "A payment from Richard's insurance",
       "A gift from Marjory"
     ],
@@ -1851,14 +1818,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37903",
+    "id": "tv_37902",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, how much does Audrey pay when she wins Grantleigh back at auction?",
     "answers": [
       "£876,000",
-      "£750,000",
       "£990,000",
+      "£750,000",
       "£1.2 million"
     ],
     "correctAnswer": "£990,000",
@@ -1884,15 +1851,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37904",
+    "id": "tv_37903",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what supermarket supplier owned by Richard has driven neighbouring estates towards bankruptcy?",
     "answers": [
       "Cavendish Foods",
       "Grantleigh Produce",
-      "Country Fresh",
-      "Farmer Tom"
+      "Farmer Tom",
+      "Country Fresh"
     ],
     "correctAnswer": "Farmer Tom",
     "difficulty": "Medium",
@@ -1917,15 +1884,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37905",
+    "id": "tv_37904",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, where does Richard go to reflect on his marriage after Audrey leaves him?",
     "answers": [
-      "His mother's grave",
       "His childhood home",
       "The old railway station",
-      "The village church crypt"
+      "The village church crypt",
+      "His mother's grave"
     ],
     "correctAnswer": "His mother's grave",
     "difficulty": "Medium",
@@ -1950,13 +1917,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37906",
+    "id": "tv_37905",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what type of event does Richard propose holding at Grantleigh to assist a troubled neighbouring estate?",
     "answers": [
-      "A county horse show",
       "A rock concert",
+      "A county horse show",
       "A charity auction",
       "A classical music gala"
     ],
@@ -1983,14 +1950,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37907",
+    "id": "tv_37906",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, where does Audrey go to live temporarily when the Farmer Tom row separates her from Richard?",
     "answers": [
       "A hotel in London",
-      "Her nephew's farm",
       "The Lodge with Marjory",
+      "Her nephew's farm",
       "A cottage in France"
     ],
     "correctAnswer": "The Lodge with Marjory",
@@ -2016,15 +1983,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37908",
+    "id": "tv_37907",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, what does Richard decide about the proposed rock concert at the magistrates' court?",
     "answers": [
       "He doubles its capacity",
       "He moves it to the railway station",
-      "He sells tickets for a second night",
-      "He cancels it"
+      "He cancels it",
+      "He sells tickets for a second night"
     ],
     "correctAnswer": "He cancels it",
     "difficulty": "Medium",
@@ -2049,15 +2016,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37909",
+    "id": "tv_37908",
     "category": "Television",
     "programme": "To the Manor Born",
     "question": "In To the Manor Born, how does Richard ultimately celebrate the wedding anniversary after the couple's dispute?",
     "answers": [
-      "With a surprise party at the manor",
       "By taking Audrey on a world cruise",
       "With a ceremony at the village station",
-      "By renewing their vows in London"
+      "By renewing their vows in London",
+      "With a surprise party at the manor"
     ],
     "correctAnswer": "With a surprise party at the manor",
     "difficulty": "Medium",
@@ -2083,10 +2050,10 @@ const auditAdditions = [
   }
 ];
 questions.push(...auditAdditions);
-if(questions.length !== 133 ||
+if(questions.length !== 132 ||
  questions[0].id !== 'tv_16310' || questions[75].id !== 'tv_16385' ||
  auditAdditions[0].id !== 'tv_37853' ||
- auditAdditions[auditAdditions.length-1].id !== 'tv_37909' ||
+ auditAdditions[auditAdditions.length-1].id !== 'tv_37908' ||
  new Set(questions.map(q=>q.id)).size !== questions.length ||
  new Set(questions.map(q=>normalise(q.question))).size !== questions.length ||
  questions.some(q=>q.answers.length!==4||
