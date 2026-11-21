@@ -227,42 +227,11 @@ const auditAdditions = [
     "id": "tv_38515",
     "category": "Television",
     "programme": "Keeping Up Appearances",
-    "question": "In Keeping Up Appearances (S1E01 Daddy's Accident), where is Daddy taken after his embarrassing cycling accident?",
-    "answers": [
-      "A police station",
-      "Hospital",
-      "A retirement home",
-      "The church hall"
-    ],
-    "correctAnswer": "Hospital",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Sitcom",
-      "Family Comedy",
-      "BBC One",
-      "Keeping Up Appearances",
-      "Programme: Keeping Up Appearances",
-      "Episode: S1E01 Daddy's Accident",
-      "Episode storyline",
-      "Correct: Hospital",
-      "Source: https://en.wikipedia.org/wiki/List_of_Keeping_Up_Appearances_episodes",
-      "Daddy injured",
-      "Hospital visit",
-      "Milkwoman pursuit"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38516",
-    "category": "Television",
-    "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E02 The New Vicar), who does Daisy claim has run off with Daddy just as the new vicar comes to tea?",
     "answers": [
       "A retired headmistress",
-      "A foreign heiress",
       "A Romany woman",
+      "A foreign heiress",
       "A nightclub singer"
     ],
     "correctAnswer": "A Romany woman",
@@ -286,15 +255,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38517",
+    "id": "tv_38516",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E02 The New Vicar), what dramatic subject does Rose wish to discuss with the vicar when she unexpectedly arrives?",
     "answers": [
       "A wedding at the church",
       "The sale of a family grave",
-      "The next charity collection",
-      "Arrangements for her own funeral"
+      "Arrangements for her own funeral",
+      "The next charity collection"
     ],
     "correctAnswer": "Arrangements for her own funeral",
     "difficulty": "Medium",
@@ -317,15 +286,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38518",
+    "id": "tv_38517",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E03 Stately Home), what nickname does Daddy use while imagining he must protect the post office from aliens?",
     "answers": [
-      "Captain Midnight",
       "Major Tom",
       "General Gordon",
-      "Commander Flashheart"
+      "Commander Flashheart",
+      "Captain Midnight"
     ],
     "correctAnswer": "Captain Midnight",
     "difficulty": "Medium",
@@ -348,13 +317,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38519",
+    "id": "tv_38518",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E03 Stately Home), how does Daddy escape from Onslow and Daisy's house before Hyacinth's outing?",
     "answers": [
-      "He hides inside a delivery van",
       "He slides down a drainpipe",
+      "He hides inside a delivery van",
       "He climbs through the roof tiles",
       "He runs off in a taxi"
     ],
@@ -379,14 +348,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38520",
+    "id": "tv_38519",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E03 Stately Home), what area does Hyacinth take Richard through to avoid being seen with her family at the stately home?",
     "answers": [
       "The servants' quarters",
-      "The stables",
       "The private gardens",
+      "The stables",
       "The estate's old kitchen"
     ],
     "correctAnswer": "The private gardens",
@@ -410,15 +379,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38521",
+    "id": "tv_38520",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E04 The Charity Shop), who claims to be engaged to Daddy and refuses to leave his bedroom?",
     "answers": [
       "A young nurse from his hospital",
       "The manager of the charity shop",
-      "A wealthy woman from the manor",
-      "An elderly woman who has moved in"
+      "An elderly woman who has moved in",
+      "A wealthy woman from the manor"
     ],
     "correctAnswer": "An elderly woman who has moved in",
     "difficulty": "Medium",
@@ -441,15 +410,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38522",
+    "id": "tv_38521",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E04 The Charity Shop), what unsuitable donation from Rose creates trouble with councillor Mrs Nugent?",
     "answers": [
-      "Revealing underwear",
       "A collection of love letters",
       "A box of broken ornaments",
-      "An old wedding dress"
+      "An old wedding dress",
+      "Revealing underwear"
     ],
     "correctAnswer": "Revealing underwear",
     "difficulty": "Medium",
@@ -472,13 +441,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38523",
+    "id": "tv_38522",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E05 Daisy's Toyboy), what is the approximate age of the young man Daisy claims is her romantic interest?",
     "answers": [
-      "Twenty-seven",
       "Seventeen",
+      "Twenty-seven",
       "Thirty-seven",
       "Forty-seven"
     ],
@@ -503,46 +472,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38524",
-    "category": "Television",
-    "programme": "Keeping Up Appearances",
-    "question": "In Keeping Up Appearances (S1E05 Daisy's Toyboy), what reaction does Daisy hope to provoke in Onslow by pretending to have a younger boyfriend?",
-    "answers": [
-      "A wish to move house",
-      "An interest in joining the army",
-      "Jealousy",
-      "A decision to buy a new car"
-    ],
-    "correctAnswer": "Jealousy",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Sitcom",
-      "Family Comedy",
-      "BBC One",
-      "Keeping Up Appearances",
-      "Programme: Keeping Up Appearances",
-      "Episode: S1E05 Daisy's Toyboy",
-      "Episode storyline",
-      "Correct: Jealousy",
-      "Source: https://en.wikipedia.org/wiki/List_of_Keeping_Up_Appearances_episodes",
-      "Daisy marriage",
-      "Onslow indifference",
-      "Toyboy plot"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38525",
+    "id": "tv_38523",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E05 Daisy's Toyboy), what women's group is expecting a guest speaker when Hyacinth takes charge of preparations?",
     "answers": [
       "The Mothers' Union choir",
+      "The Ladies' Circle",
       "The Women's Institute orchestra",
-      "The local tennis committee",
-      "The Ladies' Circle"
+      "The local tennis committee"
     ],
     "correctAnswer": "The Ladies' Circle",
     "difficulty": "Medium",
@@ -565,14 +503,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38526",
+    "id": "tv_38524",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E06 The Christening), what is the first name of Daisy and Onslow's daughter who has baby Kylie?",
     "answers": [
-      "Stephanie",
       "Mariette",
       "Elizabeth",
+      "Stephanie",
       "Violet"
     ],
     "correctAnswer": "Stephanie",
@@ -596,15 +534,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38527",
+    "id": "tv_38525",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E06 The Christening), what transport problem causes Hyacinth and Richard to search for the baby's mother on christening day?",
     "answers": [
       "She misses a ferry",
-      "Her vehicle breaks down",
       "Her train is cancelled",
-      "She loses her bicycle"
+      "She loses her bicycle",
+      "Her vehicle breaks down"
     ],
     "correctAnswer": "Her vehicle breaks down",
     "difficulty": "Medium",
@@ -627,14 +565,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38528",
+    "id": "tv_38526",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S1E06 The Christening), why is Hyacinth especially embarrassed by Stephanie's domestic circumstances?",
     "answers": [
+      "Stephanie has not married the baby's father",
       "Stephanie lives overseas",
       "Stephanie has sold the family home",
-      "Stephanie has not married the baby's father",
       "Stephanie refuses to attend church"
     ],
     "correctAnswer": "Stephanie has not married the baby's father",
@@ -658,15 +596,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38529",
+    "id": "tv_38527",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E01 A Strange Man), why has Elizabeth's brother Emmet come to stay with her?",
     "answers": [
       "He is inspecting the house for the council",
+      "He has lost his home following a divorce",
       "He is recovering from an operation",
-      "He has been appointed the local vicar",
-      "He has lost his home following a divorce"
+      "He has been appointed the local vicar"
     ],
     "correctAnswer": "He has lost his home following a divorce",
     "difficulty": "Medium",
@@ -689,14 +627,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38530",
+    "id": "tv_38528",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E01 A Strange Man), what profession does Hyacinth learn Emmet has that makes her eager to perform for him?",
     "answers": [
-      "Music",
       "Medicine",
       "Architecture",
+      "Music",
       "Law"
     ],
     "correctAnswer": "Music",
@@ -720,15 +658,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38531",
+    "id": "tv_38529",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E02 Driving Mrs Fortescue), what family connection makes Hyacinth especially keen to impress wealthy Mrs Fortescue?",
     "answers": [
       "Her son is a cabinet minister",
-      "Her sister married a baronet",
       "Her father owns a castle",
-      "Her husband is a duke"
+      "Her husband is a duke",
+      "Her sister married a baronet"
     ],
     "correctAnswer": "Her sister married a baronet",
     "difficulty": "Medium",
@@ -751,14 +689,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38532",
+    "id": "tv_38530",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E02 Driving Mrs Fortescue), how do Daisy and Rose disrupt Hyacinth's carefully planned trip with Mrs Fortescue?",
     "answers": [
+      "They flag down the Buckets' car for a lift",
       "They meet her on the train platform",
       "They accidentally buy her hat",
-      "They flag down the Buckets' car for a lift",
       "They turn up at the hotel reception"
     ],
     "correctAnswer": "They flag down the Buckets' car for a lift",
@@ -782,15 +720,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38533",
+    "id": "tv_38531",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E03 The Candlelight Supper), what brings Hyacinth's musical dinner to an embarrassing conclusion on the doorstep?",
     "answers": [
       "The vicar arrives with a live band",
+      "Two men arrive and start fighting over Rose",
       "Richard accidentally locks the guests outside",
-      "The police ask to inspect the kitchen",
-      "Two men arrive and start fighting over Rose"
+      "The police ask to inspect the kitchen"
     ],
     "correctAnswer": "Two men arrive and start fighting over Rose",
     "difficulty": "Medium",
@@ -813,45 +751,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38534",
-    "category": "Television",
-    "programme": "Keeping Up Appearances",
-    "question": "In Keeping Up Appearances (S2E03 The Candlelight Supper), whom is Hyacinth particularly hoping to impress with her singing at this supper?",
-    "answers": [
-      "Emmet Hawksworth",
-      "Daddy",
-      "The local chief constable",
-      "Onslow"
-    ],
-    "correctAnswer": "Emmet Hawksworth",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Sitcom",
-      "Family Comedy",
-      "BBC One",
-      "Keeping Up Appearances",
-      "Programme: Keeping Up Appearances",
-      "Episode: S2E03 The Candlelight Supper",
-      "Episode storyline",
-      "Correct: Emmet Hawksworth",
-      "Source: https://en.wikipedia.org/wiki/List_of_Keeping_Up_Appearances_episodes",
-      "Emmet musical judgement",
-      "Hyacinth plans",
-      "Dinner party"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38535",
+    "id": "tv_38532",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E04 Golfing with the Major), which hotel hosts the golfing weekend that becomes a nightmare for Hyacinth?",
     "answers": [
       "Grantleigh Hall",
-      "Chesford Grange",
       "The Royal Marine",
+      "Chesford Grange",
       "Southampton Palace"
     ],
     "correctAnswer": "Chesford Grange",
@@ -875,15 +782,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38536",
+    "id": "tv_38533",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E04 Golfing with the Major), whose unwanted romantic attention adds to Hyacinth's difficulties during the hotel weekend?",
     "answers": [
       "The hotel manager's",
       "Onslow's",
-      "Major Wilton-Smythe's",
-      "Emmet Hawksworth's"
+      "Emmet Hawksworth's",
+      "Major Wilton-Smythe's"
     ],
     "correctAnswer": "Major Wilton-Smythe's",
     "difficulty": "Medium",
@@ -906,15 +813,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38537",
+    "id": "tv_38534",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E05 Problems with Relatives), where does Daddy go in another attempt to get married?",
     "answers": [
+      "The register office",
       "The railway ticket office",
       "A hotel in Brighton",
-      "The hospital chapel",
-      "The register office"
+      "The hospital chapel"
     ],
     "correctAnswer": "The register office",
     "difficulty": "Medium",
@@ -937,13 +844,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38538",
+    "id": "tv_38535",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E05 Problems with Relatives), what predicament is Violet's husband Bruce in when Hyacinth hears about his latest antics?",
     "answers": [
-      "He is stuck up a tree",
       "He is trapped on a railway bridge",
+      "He is stuck up a tree",
       "He is locked inside a lift",
       "He is stranded on a roof"
     ],
@@ -968,14 +875,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38539",
+    "id": "tv_38536",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E05 Problems with Relatives), whose home does Hyacinth suggest visiting instead of letting Emmet see Daisy and Onslow's house?",
     "answers": [
       "Mrs Fortescue's",
-      "Violet's",
       "The vicar's",
+      "Violet's",
       "The Major's"
     ],
     "correctAnswer": "Violet's",
@@ -999,15 +906,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38540",
+    "id": "tv_38537",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E06 Onslow's Birthday), who is supposed to collect Hyacinth and Richard for Onslow's party in an impressive car?",
     "answers": [
       "A local baronet",
       "The chairman of the golf club",
-      "Rose's wealthy Greek boyfriend",
-      "Richard's former employer"
+      "Richard's former employer",
+      "Rose's wealthy Greek boyfriend"
     ],
     "correctAnswer": "Rose's wealthy Greek boyfriend",
     "difficulty": "Medium",
@@ -1030,15 +937,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38541",
+    "id": "tv_38538",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E06 Onslow's Birthday), what event does Hyacinth arrange before leaving for the party to show off her expected grand departure?",
     "answers": [
+      "Pre-lunch cocktails",
       "An afternoon croquet match",
       "A charity raffle",
-      "A fancy dress competition",
-      "Pre-lunch cocktails"
+      "A fancy dress competition"
     ],
     "correctAnswer": "Pre-lunch cocktails",
     "difficulty": "Medium",
@@ -1061,13 +968,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38542",
+    "id": "tv_38539",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E07 Singing for Emmet), what news about Richard's job first raises the prospect of him being at home all day?",
     "answers": [
-      "An offer of early retirement",
       "A transfer to London",
+      "An offer of early retirement",
       "A promotion overseas",
       "A redundancy tribunal"
     ],
@@ -1092,14 +999,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38543",
+    "id": "tv_38540",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E07 Singing for Emmet), what new vocation does a sedated and distraught Rose claim she wishes to pursue?",
     "answers": [
       "Joining the police",
-      "Becoming a nun",
       "Being a professional singer",
+      "Becoming a nun",
       "Becoming a travel agent"
     ],
     "correctAnswer": "Becoming a nun",
@@ -1123,15 +1030,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38544",
+    "id": "tv_38541",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E07 Singing for Emmet), where does Hyacinth insist on rehearsing a performance with Emmet for elderly residents?",
     "answers": [
       "A theatre in London",
       "An art gallery",
-      "The church hall",
-      "The golf club"
+      "The golf club",
+      "The church hall"
     ],
     "correctAnswer": "The church hall",
     "difficulty": "Medium",
@@ -1154,15 +1061,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38545",
+    "id": "tv_38542",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E08 The Toy Store), what costume is Daddy wearing while he interferes with merchandise in the toy shop?",
     "answers": [
+      "An astronaut suit",
       "A military uniform",
       "A pirate costume",
-      "A Father Christmas costume",
-      "An astronaut suit"
+      "A Father Christmas costume"
     ],
     "correctAnswer": "An astronaut suit",
     "difficulty": "Medium",
@@ -1185,13 +1092,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38546",
+    "id": "tv_38543",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E08 The Toy Store), how much damage does Daddy cause while modifying toys with a screwdriver?",
     "answers": [
-      "£235",
       "£35",
+      "£235",
       "£1,235",
       "£535"
     ],
@@ -1216,14 +1123,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38547",
+    "id": "tv_38544",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E09 The Three-Piece Suite), which formidable social rival is Hyacinth eager to impress when the new furniture arrives?",
     "answers": [
       "Mrs Fortescue",
-      "Mrs Barker-Finch",
       "Mrs Nugent",
+      "Mrs Barker-Finch",
       "Mrs Braddock"
     ],
     "correctAnswer": "Mrs Barker-Finch",
@@ -1247,15 +1154,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38548",
+    "id": "tv_38545",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E09 The Three-Piece Suite), what logistical collision threatens Hyacinth's grand furniture delivery?",
     "answers": [
       "The old sofa is accidentally delivered to the vicar",
       "The lorry arrives at an empty house",
-      "Her relatives come to collect the old suite at the same time",
-      "Richard has ordered the wrong colour suite"
+      "Richard has ordered the wrong colour suite",
+      "Her relatives come to collect the old suite at the same time"
     ],
     "correctAnswer": "Her relatives come to collect the old suite at the same time",
     "difficulty": "Medium",
@@ -1278,15 +1185,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38549",
+    "id": "tv_38546",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E10 A Picnic for Daddy), what does Daddy unexpectedly do with Richard's vehicle during the proposed family picnic?",
     "answers": [
+      "He drives off in it",
       "He tries to sell it",
       "He paints it in camouflage",
-      "He removes all its wheels",
-      "He drives off in it"
+      "He removes all its wheels"
     ],
     "correctAnswer": "He drives off in it",
     "difficulty": "Medium",
@@ -1309,13 +1216,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38550",
+    "id": "tv_38547",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S2E10 A Picnic for Daddy), who eventually gives the family a lift after Onslow's car breaks down during the chase?",
     "answers": [
-      "The vicar and his wife",
       "Mrs Fortescue and the Major",
+      "The vicar and his wife",
       "Emmet and Mrs Nugent",
       "Violet and Bruce"
     ],
@@ -1340,14 +1247,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38551",
+    "id": "tv_38548",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1991 Christmas The Father Christmas Suit), who has to wear Richard's festive outfit when he becomes too tipsy to complete the charitable delivery?",
     "answers": [
       "Hyacinth",
-      "Elizabeth",
       "Rose",
+      "Elizabeth",
       "Daisy"
     ],
     "correctAnswer": "Elizabeth",
@@ -1371,15 +1278,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38552",
+    "id": "tv_38549",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1991 Christmas The Father Christmas Suit), where was Richard meant to distribute gifts in his Father Christmas costume?",
     "answers": [
       "At a seaside funfair",
       "At a private hospital",
-      "At the church hall to elderly residents",
-      "At a stately home"
+      "At a stately home",
+      "At the church hall to elderly residents"
     ],
     "correctAnswer": "At the church hall to elderly residents",
     "difficulty": "Medium",
@@ -1402,15 +1309,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38553",
+    "id": "tv_38550",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E01 Early Retirement), which important government office does Hyacinth telephone to ask whether Richard is being honoured?",
     "answers": [
+      "The Prime Minister's office",
       "The Home Office",
       "The Treasury",
-      "The House of Lords clerk's office",
-      "The Prime Minister's office"
+      "The House of Lords clerk's office"
     ],
     "correctAnswer": "The Prime Minister's office",
     "difficulty": "Medium",
@@ -1433,13 +1340,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38554",
+    "id": "tv_38551",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E01 Early Retirement), what unwelcome visitor occupies the Bucket driveway while Hyacinth prepares for a guest?",
     "answers": [
-      "A dog belonging to Rose's latest boyfriend",
       "A caravan owned by Onslow",
+      "A dog belonging to Rose's latest boyfriend",
       "A dairy delivery lorry",
       "A motorcycle owned by Daddy"
     ],
@@ -1464,14 +1371,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38555",
+    "id": "tv_38552",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E02 Iron Age Remains), what crisis involving Rose interrupts Hyacinth and Richard's search for traces of ancient settlements?",
     "answers": [
       "Rose elopes with the vicar",
-      "Rose locks herself in her room after a breakup",
       "Rose buys a cottage in the country",
+      "Rose locks herself in her room after a breakup",
       "Rose takes a job at the museum"
     ],
     "correctAnswer": "Rose locks herself in her room after a breakup",
@@ -1495,15 +1402,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38556",
+    "id": "tv_38553",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E02 Iron Age Remains), whom does Rose call for help after locking herself away in distress?",
     "answers": [
       "Emmet",
       "Mrs Nugent",
-      "The vicar",
-      "The Major"
+      "The Major",
+      "The vicar"
     ],
     "correctAnswer": "The vicar",
     "difficulty": "Medium",
@@ -1526,15 +1433,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38557",
+    "id": "tv_38554",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E03 Violet's Country Cottage), who is the lady from a nearby manor house that Hyacinth wants to impress during her cottage stay?",
     "answers": [
+      "Bunty",
       "Mrs Fortescue",
       "Mrs Barker-Finch",
-      "Lady Whiteadder",
-      "Bunty"
+      "Lady Whiteadder"
     ],
     "correctAnswer": "Bunty",
     "difficulty": "Medium",
@@ -1557,13 +1464,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38558",
+    "id": "tv_38555",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E03 Violet's Country Cottage), whose dog does Richard go searching for while Hyacinth tries to impress their fashionable visitor?",
     "answers": [
-      "Bunty's",
       "Onslow's",
+      "Bunty's",
       "Daddy's",
       "Emmet's"
     ],
@@ -1588,14 +1495,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38559",
+    "id": "tv_38556",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E03 Violet's Country Cottage), what new companion does Daddy have during the family commotion around Violet's cottage?",
     "answers": [
       "A young dog trainer",
-      "A Polish girlfriend",
       "A former army nurse",
+      "A Polish girlfriend",
       "A retired actress from London"
     ],
     "correctAnswer": "A Polish girlfriend",
@@ -1619,15 +1526,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38560",
+    "id": "tv_38557",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E04 How to Go on Holiday Without Really Trying), what false impression does Hyacinth hope to give the neighbours while obtaining glamorous travel brochures?",
     "answers": [
       "That Richard has bought a travel agency",
       "That they have inherited a Mediterranean villa",
-      "That she and Richard are taking an expensive holiday",
-      "That Sheridan has become a pilot"
+      "That Sheridan has become a pilot",
+      "That she and Richard are taking an expensive holiday"
     ],
     "correctAnswer": "That she and Richard are taking an expensive holiday",
     "difficulty": "Medium",
@@ -1650,15 +1557,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38561",
+    "id": "tv_38558",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E04 How to Go on Holiday Without Really Trying), what does Onslow try to teach newly retired Richard during an outing together?",
     "answers": [
+      "The joys of being irresponsible",
       "How to play classical piano",
       "How to run a hotel",
-      "How to campaign for Parliament",
-      "The joys of being irresponsible"
+      "How to campaign for Parliament"
     ],
     "correctAnswer": "The joys of being irresponsible",
     "difficulty": "Medium",
@@ -1681,13 +1588,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38562",
+    "id": "tv_38559",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E05 Richard's New Hobby), who is coming to afternoon tea while Hyacinth boasts about Richard's newly acquired film-making skills?",
     "answers": [
-      "Councillor Mrs Nugent",
       "Mrs Fortescue",
+      "Councillor Mrs Nugent",
       "Major Wilton-Smythe",
       "The Commodore"
     ],
@@ -1712,14 +1619,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38563",
+    "id": "tv_38560",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E05 Richard's New Hobby), what vehicle unexpectedly brings Richard home after Onslow's car breaks down?",
     "answers": [
       "An ambulance",
-      "A police car",
       "A taxi",
+      "A police car",
       "A hearse"
     ],
     "correctAnswer": "A police car",
@@ -1743,15 +1650,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38564",
+    "id": "tv_38561",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E06 The Art Exhibition), which foreign military force does Daddy believe he is about to join when he runs away?",
     "answers": [
       "The Royal Navy",
       "The Swiss Guard",
-      "The French Foreign Legion",
-      "The Spanish Air Force"
+      "The Spanish Air Force",
+      "The French Foreign Legion"
     ],
     "correctAnswer": "The French Foreign Legion",
     "difficulty": "Medium",
@@ -1774,38 +1681,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38565",
-    "category": "Television",
-    "programme": "Keeping Up Appearances",
-    "question": "In Keeping Up Appearances (S3E06 The Art Exhibition), what inadvertently broadcasts Rose's intimate conversation across the neighbourhood during the search for Daddy?",
-    "answers": [
-      "A live radio interview",
-      "A telephone left off the hook",
-      "A television outside-broadcast van",
-      "An open microphone or public-address system"
-    ],
-    "correctAnswer": "An open microphone or public-address system",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Sitcom",
-      "Family Comedy",
-      "BBC One",
-      "Keeping Up Appearances",
-      "Programme: Keeping Up Appearances",
-      "Episode: S3E06 The Art Exhibition",
-      "Episode storyline",
-      "Correct: An open microphone or public-address system",
-      "Source: https://en.wikipedia.org/wiki/List_of_Keeping_Up_Appearances_episodes",
-      "Rose conversation",
-      "Accidental announcement",
-      "Neighbourhood"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38566",
+    "id": "tv_38562",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E06 The Art Exhibition), what message does Daddy display on a sign outside his new romantic interest's home?",
@@ -1836,7 +1712,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38567",
+    "id": "tv_38563",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E07 What to Wear When Yachting), what disappoints Hyacinth when she finally sees the boat intended for their glamorous weekend?",
@@ -1867,7 +1743,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38568",
+    "id": "tv_38564",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S3E07 What to Wear When Yachting), what attempt to protect their image makes the disastrous yacht outing even worse?",
@@ -1898,7 +1774,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38569",
+    "id": "tv_38565",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E01 A Job for Richard), which type of business does Hyacinth want Richard to join as an executive after he retires?",
@@ -1929,7 +1805,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38570",
+    "id": "tv_38566",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E01 A Job for Richard), what unusual new practice has Daddy adopted while Hyacinth plans Richard's job interview?",
@@ -1960,7 +1836,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38571",
+    "id": "tv_38567",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E02 Country Retreat), where does Richard become trapped during one of the country property viewings?",
@@ -1991,7 +1867,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38572",
+    "id": "tv_38568",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E02 Country Retreat), which farm animals chase Hyacinth during the unsuccessful property hunt?",
@@ -2022,7 +1898,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38573",
+    "id": "tv_38569",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E03 A Celebrity for the Barbecue), what is local celebrity C. P. Benedict's everyday occupation?",
@@ -2053,7 +1929,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38574",
+    "id": "tv_38570",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E03 A Celebrity for the Barbecue), what does Rose help Daisy do when Daisy becomes convinced Onslow is seeing another woman?",
@@ -2084,7 +1960,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38575",
+    "id": "tv_38571",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E04 The Commodore), what happens to Richard's car when Hyacinth is collecting a guest speaker from the station?",
@@ -2115,7 +1991,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38576",
+    "id": "tv_38572",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E04 The Commodore), what unwelcome attention does the naval visitor show Hyacinth after the awkward journey?",
@@ -2146,7 +2022,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38577",
+    "id": "tv_38573",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E05 Looking at Properties), why is Daddy taken to the police station before Hyacinth's property-viewing trip?",
@@ -2177,7 +2053,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38578",
+    "id": "tv_38574",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E05 Looking at Properties), why does Richard have to disguise himself while Hyacinth views country properties with Elizabeth?",
@@ -2208,7 +2084,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38579",
+    "id": "tv_38575",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E06 Please Mind Your Head), what drink does Elizabeth spill that causes Emmet to become stuck in a low ceiling?",
@@ -2239,7 +2115,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38580",
+    "id": "tv_38576",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E06 Please Mind Your Head), what pretence does Hyacinth make on meeting her guests near the tiny country apartment?",
@@ -2270,7 +2146,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38581",
+    "id": "tv_38577",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E07 Let There Be Light), which kind of church event is endangered by Richard's amateur electrical repairs?",
@@ -2301,7 +2177,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38582",
+    "id": "tv_38578",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S4E07 Let There Be Light), who tries to take command when the hall's electrics go wrong while believing he is back in wartime?",
@@ -2332,7 +2208,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38583",
+    "id": "tv_38579",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1993 Christmas Sea Fever), what happens at Southampton that prevents Hyacinth and Richard boarding their planned luxury cruise?",
@@ -2363,7 +2239,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38584",
+    "id": "tv_38580",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1993 Christmas Sea Fever), to which European city do Hyacinth and Richard fly to catch up with their departed liner?",
@@ -2394,7 +2270,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38585",
+    "id": "tv_38581",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1994 Christmas Angel Gabriel Blue), what more respectable medical diagnosis does Hyacinth insist on giving Richard's athlete's foot?",
@@ -2425,7 +2301,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38586",
+    "id": "tv_38582",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1994 Christmas Angel Gabriel Blue), what discovery about Daddy's bedroom adds to Hyacinth's troubles as she shops for a new kitchen?",
@@ -2456,7 +2332,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38587",
+    "id": "tv_38583",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E01 The Senior Citizens' Outing), which difficult older gentleman is assigned to Hyacinth during the seaside trip?",
@@ -2487,7 +2363,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38588",
+    "id": "tv_38584",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E01 The Senior Citizens' Outing), what travel difficulty does Mrs Lomax bring to the senior citizens' minibus trip?",
@@ -2518,7 +2394,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38589",
+    "id": "tv_38585",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E01 The Senior Citizens' Outing), which amusement-park attraction traps Hyacinth among unnerving reflections?",
@@ -2549,7 +2425,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38590",
+    "id": "tv_38586",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E02 The Mayor's Fancy Dress Ball), what discovery disappoints Hyacinth after dressing herself as a historical queen?",
@@ -2580,7 +2456,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38591",
+    "id": "tv_38587",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E02 The Mayor's Fancy Dress Ball), which nationality is Rose's latest fiancé in the episode of the mayor's ball?",
@@ -2611,7 +2487,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38592",
+    "id": "tv_38588",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E03 Hyacinth Is Alarmed), what colour does Hyacinth want the visible light on her new burglar alarm to be?",
@@ -2642,46 +2518,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38593",
-    "category": "Television",
-    "programme": "Keeping Up Appearances",
-    "question": "In Keeping Up Appearances (S5E03 Hyacinth Is Alarmed), what grand-sounding sound does Hyacinth demand for the alarm's siren?",
-    "answers": [
-      "A police whistle",
-      "A church bell",
-      "A ship's foghorn",
-      "A horn fit for Queen Elizabeth II"
-    ],
-    "correctAnswer": "A horn fit for Queen Elizabeth II",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Sitcom",
-      "Family Comedy",
-      "BBC One",
-      "Keeping Up Appearances",
-      "Programme: Keeping Up Appearances",
-      "Episode: S5E03 Hyacinth Is Alarmed",
-      "Episode storyline",
-      "Correct: A horn fit for Queen Elizabeth II",
-      "Source: https://en.wikipedia.org/wiki/List_of_Keeping_Up_Appearances_episodes",
-      "Alarm specification",
-      "Royal sound",
-      "Anniversary present"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38594",
+    "id": "tv_38589",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E04 A Riverside Picnic), which type of machinery ruins the supposedly idyllic setting of Hyacinth's riverside supper?",
     "answers": [
-      "A dredger dumping earth",
       "A military tank",
       "A crane lifting a boat",
-      "A steamroller"
+      "A steamroller",
+      "A dredger dumping earth"
     ],
     "correctAnswer": "A dredger dumping earth",
     "difficulty": "Medium",
@@ -2704,13 +2549,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38595",
+    "id": "tv_38590",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E04 A Riverside Picnic), which church couple join Elizabeth and Emmet on Hyacinth's reluctant guest list?",
     "answers": [
-      "The Major and his wife",
       "The vicar and his wife",
+      "The Major and his wife",
       "The church wardens",
       "The organist and choir leader"
     ],
@@ -2735,14 +2580,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38596",
+    "id": "tv_38591",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E05 Skis), why does Hyacinth buy Richard skis even though a ski trip is not planned?",
     "answers": [
       "He wants to qualify as a skiing instructor",
-      "He has booked a holiday in Austria",
       "She thinks they will look impressive on the car",
+      "He has booked a holiday in Austria",
       "She hopes to enter him in a competition"
     ],
     "correctAnswer": "She thinks they will look impressive on the car",
@@ -2766,15 +2611,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38597",
+    "id": "tv_38592",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E05 Skis), what essential accessory do the Buckets travel to Violet and Bruce's house to borrow?",
     "answers": [
       "A travel trailer",
       "Snow chains",
-      "A ski lift pass",
-      "A roof rack"
+      "A roof rack",
+      "A ski lift pass"
     ],
     "correctAnswer": "A roof rack",
     "difficulty": "Medium",
@@ -2797,15 +2642,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38598",
+    "id": "tv_38593",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E06 Country Estate Sale), what does Mrs Braddock do when she commandeers Onslow's car during the country auction outing?",
     "answers": [
-      "Impersonates his missing dog",
       "Sells the vehicle to a scrap dealer",
       "Parks it on the country estate lawn",
-      "Drives it into the river"
+      "Drives it into the river",
+      "Impersonates his missing dog"
     ],
     "correctAnswer": "Impersonates his missing dog",
     "difficulty": "Medium",
@@ -2828,13 +2673,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38599",
+    "id": "tv_38594",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E06 Country Estate Sale), what homemade drink does Hyacinth consume too freely after visiting the country estate sale?",
     "answers": [
-      "Elderflower cordial",
       "Gooseberry wine",
+      "Elderflower cordial",
       "Damson gin",
       "Blackberry juice"
     ],
@@ -2859,14 +2704,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38600",
+    "id": "tv_38595",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E07 The Boy Friend), what weapon does Daddy carry when he thinks he is once again guarding a military post?",
     "answers": [
       "A ceremonial sword",
-      "A wooden spear",
       "A bayonet",
+      "A wooden spear",
       "A hunting rifle"
     ],
     "correctAnswer": "A bayonet",
@@ -2890,15 +2735,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38601",
+    "id": "tv_38596",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E07 The Boy Friend), why does Hyacinth become especially eager to sing to Emmet in this episode?",
     "answers": [
       "She has been hired to sing at a wedding",
       "She has entered a national talent contest",
-      "She has received a letter from an opera company",
-      "He is staging a musical production"
+      "He is staging a musical production",
+      "She has received a letter from an opera company"
     ],
     "correctAnswer": "He is staging a musical production",
     "difficulty": "Medium",
@@ -2921,15 +2766,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38602",
+    "id": "tv_38597",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E08 A Barbecue at Violet's), what does Hyacinth do to distract the guests from Violet and Bruce's escalating quarrel?",
     "answers": [
-      "Organises a sing-song",
       "Stages a magic act",
       "Takes them on a garden tour",
-      "Turns on the television"
+      "Turns on the television",
+      "Organises a sing-song"
     ],
     "correctAnswer": "Organises a sing-song",
     "difficulty": "Medium",
@@ -2952,13 +2797,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38603",
+    "id": "tv_38598",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E08 A Barbecue at Violet's), what disastrous substance is accidentally emptied over the barbecue food?",
     "answers": [
-      "Coal ashes",
       "Horse manure",
+      "Coal ashes",
       "Garden fertiliser powder",
       "Paint"
     ],
@@ -2983,14 +2828,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38604",
+    "id": "tv_38599",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E09 The Rolls-Royce), whose success at the local craft fair sends Hyacinth into a jealous rage before the luxury car excursion?",
     "answers": [
       "Elizabeth's",
-      "Daisy's",
       "Lydia Hawksworth's",
+      "Daisy's",
       "Mrs Fortescue's"
     ],
     "correctAnswer": "Lydia Hawksworth's",
@@ -3014,15 +2859,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38605",
+    "id": "tv_38600",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E09 The Rolls-Royce), what improbable mission does Daddy believe he is undertaking while Hyacinth is busy with the Rolls-Royce?",
     "answers": [
       "Leading a cavalry charge in France",
       "Conducting a royal inspection",
-      "Searching for buried pirate treasure",
-      "Hunting elephants in Africa"
+      "Hunting elephants in Africa",
+      "Searching for buried pirate treasure"
     ],
     "correctAnswer": "Hunting elephants in Africa",
     "difficulty": "Medium",
@@ -3045,15 +2890,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38606",
+    "id": "tv_38601",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E10 The Hostess), what business do readers mistakenly think Hyacinth is advertising when she offers lessons in social etiquette?",
     "answers": [
-      "A striptease act",
       "A cookery school",
       "A dating agency",
-      "A professional cleaning service"
+      "A professional cleaning service",
+      "A striptease act"
     ],
     "correctAnswer": "A striptease act",
     "difficulty": "Medium",
@@ -3076,13 +2921,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38607",
+    "id": "tv_38602",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (S5E10 The Hostess), what does Hyacinth send Richard away to do before the awkward would-be clients arrive?",
     "answers": [
-      "Buy new champagne glasses",
       "Collect Daddy",
+      "Buy new champagne glasses",
       "Hire a pianist",
       "Collect the vicar"
     ],
@@ -3107,14 +2952,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38608",
+    "id": "tv_38603",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1995 Christmas The Pageant), which historical queen does Hyacinth choose to portray in her Civil War production?",
     "answers": [
       "Elizabeth I",
-      "Anne Boleyn",
       "Henrietta Maria",
+      "Anne Boleyn",
       "Mary Queen of Scots"
     ],
     "correctAnswer": "Henrietta Maria",
@@ -3138,15 +2983,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38609",
+    "id": "tv_38604",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1995 Christmas The Pageant), whom does Hyacinth cast to portray King Charles I opposite her?",
     "answers": [
       "Onslow",
       "Emmet",
-      "The vicar",
-      "Richard"
+      "Richard",
+      "The vicar"
     ],
     "correctAnswer": "Richard",
     "difficulty": "Medium",
@@ -3169,15 +3014,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38610",
+    "id": "tv_38605",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1995 Christmas The Pageant), which neighbour accidentally pulls the wrong stage rope and injures Hyacinth during rehearsal?",
     "answers": [
-      "Elizabeth",
       "Emmet",
       "Mrs Nugent",
-      "Mrs Fortescue"
+      "Mrs Fortescue",
+      "Elizabeth"
     ],
     "correctAnswer": "Elizabeth",
     "difficulty": "Medium",
@@ -3200,13 +3045,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38611",
+    "id": "tv_38606",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1995 Christmas The Pageant), what dance is Daddy performing with another man amid the final episode's chaos?",
     "answers": [
-      "A waltz",
       "A tango",
+      "A waltz",
       "A polka",
       "A foxtrot"
     ],
@@ -3231,14 +3076,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38612",
+    "id": "tv_38607",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Young Hyacinth (2016 Young Hyacinth), what does the young Violet hope to gain as she imagines her own future?",
     "answers": [
       "An acting career",
-      "A job in the army",
       "Wealth",
+      "A job in the army",
       "A life as a sailor"
     ],
     "correctAnswer": "Wealth",
@@ -3265,15 +3110,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38613",
+    "id": "tv_38608",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Young Hyacinth (2016 Young Hyacinth), which dream sets Daisy apart from her more status-conscious elder sister?",
     "answers": [
       "Becoming an opera singer",
       "Marrying a prince",
-      "Running a London hotel",
-      "Living a life outdoors"
+      "Living a life outdoors",
+      "Running a London hotel"
     ],
     "correctAnswer": "Living a life outdoors",
     "difficulty": "Medium",
@@ -3299,15 +3144,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38614",
+    "id": "tv_38609",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Young Hyacinth (2016 Young Hyacinth), which sister is particularly interested in film stars and boys?",
     "answers": [
-      "Rose",
       "Violet",
       "Daisy",
-      "Hyacinth"
+      "Hyacinth",
+      "Rose"
     ],
     "correctAnswer": "Rose",
     "difficulty": "Medium",
@@ -3333,13 +3178,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38615",
+    "id": "tv_38610",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Young Hyacinth (2016 Young Hyacinth), what household possession does young Hyacinth particularly dream of acquiring?",
     "answers": [
-      "A new motorcar",
       "A matching set of china",
+      "A new motorcar",
       "A swimming pool",
       "A yacht"
     ],
@@ -3367,14 +3212,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38616",
+    "id": "tv_38611",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Young Hyacinth (2016 Young Hyacinth), what contrast between two father figures particularly frustrates Hyacinth?",
     "answers": [
       "Her farmer father and the naval officer next door",
-      "Her teacher father and her employer's actor son",
       "Her drinking brush-salesman father and the respectable ex-Squadron Leader she works for",
+      "Her teacher father and her employer's actor son",
       "Her wealthy father and the struggling parish vicar"
     ],
     "correctAnswer": "Her drinking brush-salesman father and the respectable ex-Squadron Leader she works for",
@@ -3401,15 +3246,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38617",
+    "id": "tv_38612",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1995 Children in Need short), what nightmare does Hyacinth have about Daddy in the short charity sketch?",
     "answers": [
       "That he has married Mrs Nugent",
       "That he has joined the navy",
-      "That he has sold his home",
-      "That he has died"
+      "That he has died",
+      "That he has sold his home"
     ],
     "correctAnswer": "That he has died",
     "difficulty": "Medium",
@@ -3432,15 +3277,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38618",
+    "id": "tv_38613",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (1997 The Memoirs of Hyacinth Bucket), what written item do Daisy and Onslow discover before reliving Hyacinth's past disasters?",
     "answers": [
-      "Hyacinth's memoirs manuscript",
       "A notebook of Sheridan's accounts",
       "Violet's secret diary",
-      "A letter from the prime minister"
+      "A letter from the prime minister",
+      "Hyacinth's memoirs manuscript"
     ],
     "correctAnswer": "Hyacinth's memoirs manuscript",
     "difficulty": "Medium",
@@ -3463,13 +3308,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38619",
+    "id": "tv_38614",
     "category": "Television",
     "programme": "Keeping Up Appearances",
     "question": "In Keeping Up Appearances (2008 Life Lessons from Onslow), what kind of educational programme does Onslow parody while presenting clips and advice?",
     "answers": [
-      "A driving theory course",
       "An Open University programme",
+      "A driving theory course",
       "A cooking masterclass",
       "A language programme"
     ],
@@ -3495,10 +3340,10 @@ const auditAdditions = [
   }
 ];
 questions.push(...auditAdditions);
-if(questions.length!==203 ||
+if(questions.length!==198 ||
  questions[0].id!=='tv_17103'||questions[96].id!=='tv_17199'||
  auditAdditions[0].id!=='tv_38514' ||
- auditAdditions[auditAdditions.length-1].id!=='tv_38619'||
+ auditAdditions[auditAdditions.length-1].id!=='tv_38614'||
  new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>normalise(q.question))).size!==questions.length||
  questions.some(q=>q.answers.length!==4||new Set(q.answers.map(normalise)).size!==4||
