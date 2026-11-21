@@ -1296,14 +1296,14 @@ const auditAdditions = [
     "id": "tv_36750",
     "category": "Television",
     "programme": "Bill and Ben",
-    "question": "In Bill and Ben, which creature's disappearance coincided with the garden hose game in The Great Worm Hunt?",
+    "question": "In Bill and Ben, what did the duo accidentally break in the episode Slowcoach Gets Cross?",
     "answers": [
-      "Whimsy the spider",
-      "Whoops the worm",
-      "Pry the magpie",
-      "Tad the frog"
+      "Slowcoach's favourite picture",
+      "A garden mirror",
+      "Weed's flowerpot",
+      "Pry's treasure box"
     ],
-    "correctAnswer": "Whoops the worm",
+    "correctAnswer": "Slowcoach's favourite picture",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1312,15 +1312,15 @@ const auditAdditions = [
       "Bill and Ben",
       "Programme: Bill and Ben",
       "2001–2002 Cosgrove Hall remake",
-      "Correct answer: Whoops the worm",
+      "Correct answer: Slowcoach's favourite picture",
       "Episode and production history",
       "UK English",
       "Research: https://en.wikipedia.org/wiki/Bill_and_Ben_(TV_series)",
       "Audited November 2026",
-      "Great Worm Hunt",
-      "Whoops Worm",
-      "2001 Episode",
-      "Garden Hose"
+      "Slowcoach Gets Cross",
+      "Broken Picture",
+      "Series Two",
+      "Garden Mishap"
     ],
     "dailyEligible": true
   },
@@ -2416,7 +2416,7 @@ const auditAdditions = [
     "id": "tv_36785",
     "category": "Television",
     "programme": "Play Away",
-    "question": "In Play Away, who wrote and performed the programme's familiar theme song?",
+    "question": "In Play Away, who was credited with the programme's familiar theme song?",
     "answers": [
       "Lionel Morton",
       "Jonathan Cohen",
