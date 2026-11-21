@@ -351,7 +351,7 @@ const auditAdditions = [
     "id": "tv_39088",
     "category": "Television",
     "programme": "Coupling",
-    "question": "Which actress-character is Jane's psychologist who is drawn into Steve and Susan's disastrous dinner party?",
+    "question": "In Coupling, which of Jane's acquaintances is reluctantly drawn into Steve and Susan's disastrous dinner party?",
     "answers": [
       "Giselle",
       "Jill",
@@ -1734,7 +1734,7 @@ const auditAdditions = [
     "dailyEligible": true
   }
 ];
-questions.push(...auditAdditions);
+questions.push(...auditAdditions);;
 if (new Set(questions.map(q=>q.id)).size!==questions.length ||
  new Set(questions.map(q=>normalise(q.question))).size!==questions.length ||
  questions.some(q=>q.answers.length!==4 ||
