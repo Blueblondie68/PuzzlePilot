@@ -103,7 +103,7 @@
      const item = {
        id,
        category: 'Television',
-       question,
+       question: question.includes('24: Redemption') ? question : 'In 24: Redemption, ' + question.charAt(0).toLowerCase() + question.slice(1),
        answers,
        correctAnswer,
        difficulty,
@@ -119,11 +119,745 @@
    })
  );
 
- const EXPECTED_COUNT = 46;
+ 
+// EDITORIAL AUDIT — 21 November 2026: 24: Redemption (television film)
+// Preserved original 46 IDs tv_11584–tv_11629. Storyline additions checked against film transcript and scene-by-scene synopsis.
+// Reference: https://www.springfieldspringfield.co.uk/movie_script.php?movie=24-redemption
+// Reference: https://24.fandom.com/wiki/24:_Redemption
+const auditAdditions = [
+  {
+    "id": "tv_35275",
+    "category": "Television",
+    "question": "In 24: Redemption, why does Jack decide he must leave Carl Benton's school before the rebel attack?",
+    "answers": [
+      "The American embassy threatens the school's funding if he remains",
+      "Carl has arranged for him to return to CTU",
+      "The school is closing permanently",
+      "Willie asks him to find his family"
+    ],
+    "correctAnswer": "The American embassy threatens the school's funding if he remains",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Jack Bauer;Carl Benton;Frank Trammell",
+      "Storyline: Subpoena threatens school funding",
+      "Question focus: Why does Jack decide he must leave Carl Benton's school before the rebel attack?",
+      "Answer focus: The American embassy threatens the school's funding if he remains",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35276",
+    "category": "Television",
+    "question": "In 24: Redemption, what terrible mistake from his intelligence career does Carl Benton confess to Jack?",
+    "answers": [
+      "He accidentally destroyed a hospital in Kosovo",
+      "He tortured an innocent prisoner to death in Beirut",
+      "He gave a terrorist the location of his team",
+      "He arrested Jack on false evidence"
+    ],
+    "correctAnswer": "He tortured an innocent prisoner to death in Beirut",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Carl Benton;Jack Bauer",
+      "Storyline: Benton's remorse over Beirut",
+      "Question focus: What terrible mistake from his intelligence career does Carl Benton confess to Jack?",
+      "Answer focus: He tortured an innocent prisoner to death in Beirut",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35277",
+    "category": "Television",
+    "question": "In 24: Redemption, who had Jack originally intended to give the scarf that Willie receives?",
+    "answers": [
+      "His wife Teri",
+      "Audrey Raines",
+      "His daughter Kim",
+      "The incoming president"
+    ],
+    "correctAnswer": "His daughter Kim",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Jack Bauer;Willie;Kim Bauer",
+      "Storyline: Scarf intended for Kim",
+      "Question focus: Who had Jack originally intended to give the scarf that Willie receives?",
+      "Answer focus: His daughter Kim",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35278",
+    "category": "Television",
+    "question": "In 24: Redemption, what deadly job do the Dubaku rebels plan to force some kidnapped boys to perform?",
+    "answers": [
+      "Guarding presidential vehicles",
+      "Transmitting military weather reports",
+      "Servicing aircraft in the capital",
+      "Clearing minefields ahead of the rebel army"
+    ],
+    "correctAnswer": "Clearing minefields ahead of the rebel army",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Youssou Dubaku;Child soldiers",
+      "Storyline: Child conscripts sent into minefields",
+      "Question focus: What deadly job do the Dubaku rebels plan to force some kidnapped boys to perform?",
+      "Answer focus: Clearing minefields ahead of the rebel army",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35279",
+    "category": "Television",
+    "question": "In 24: Redemption, which boy does Carl Benton find shot dead after children flee the rebel recruiters?",
+    "answers": [
+      "James",
+      "Willie",
+      "Desmond",
+      "Thomas"
+    ],
+    "correctAnswer": "James",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Carl Benton;James;Desmond",
+      "Storyline: James killed by rebel recruiters",
+      "Question focus: Which boy does Carl Benton find shot dead after children flee the rebel recruiters?",
+      "Answer focus: James",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35280",
+    "category": "Television",
+    "question": "In 24: Redemption, how does Willie sound the alarm as armed rebels approach the school?",
+    "answers": [
+      "He fires a flare gun",
+      "He rings the school bell",
+      "He sends a radio distress signal",
+      "He blows a car horn"
+    ],
+    "correctAnswer": "He rings the school bell",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Willie;Carl Benton;Jack Bauer",
+      "Storyline: Warning at school",
+      "Question focus: How does Willie sound the alarm as armed rebels approach the school?",
+      "Answer focus: He rings the school bell",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35281",
+    "category": "Television",
+    "question": "In 24: Redemption, what does Jack take from Benton's weapons stash to destroy a rebel vehicle during the school attack?",
+    "answers": [
+      "A land mine",
+      "An anti-aircraft missile",
+      "Dynamite",
+      "A smoke grenade"
+    ],
+    "correctAnswer": "Dynamite",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Jack Bauer;Carl Benton",
+      "Storyline: School defence using explosives",
+      "Question focus: What does Jack take from Benton's weapons stash to destroy a rebel vehicle during the school attack?",
+      "Answer focus: Dynamite",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35282",
+    "category": "Television",
+    "question": "In 24: Redemption, how do Youssou Dubaku's rebels torture Jack to find the hidden children?",
+    "answers": [
+      "They hold his head under river water",
+      "They inject him with a sedative",
+      "They threaten to throw him from a helicopter",
+      "They burn his ear with a heated machete"
+    ],
+    "correctAnswer": "They burn his ear with a heated machete",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Jack Bauer;Youssou Dubaku",
+      "Storyline: Jack tortured at the school",
+      "Question focus: How do Youssou Dubaku's rebels torture Jack to find the hidden children?",
+      "Answer focus: They burn his ear with a heated machete",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35283",
+    "category": "Television",
+    "question": "In 24: Redemption, how does Carl Benton quietly signal Jack during the rebel interrogation?",
+    "answers": [
+      "With a reflection from a car mirror",
+      "By ringing the school bell",
+      "With three gunshots into the air",
+      "By sending a coded radio message"
+    ],
+    "correctAnswer": "With a reflection from a car mirror",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Carl Benton;Jack Bauer",
+      "Storyline: Mirror signal enables rescue",
+      "Question focus: How does Carl Benton quietly signal Jack during the rebel interrogation?",
+      "Answer focus: With a reflection from a car mirror",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35284",
+    "category": "Television",
+    "question": "In 24: Redemption, how does Jack kill Youssou Dubaku while still restrained during their confrontation?",
+    "answers": [
+      "He pushes Youssou onto a land mine",
+      "He traps Youssou's neck between his legs and breaks it",
+      "He shoots him with a hidden pistol",
+      "He strikes him with the school bell"
+    ],
+    "correctAnswer": "He traps Youssou's neck between his legs and breaks it",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Jack Bauer;Youssou Dubaku",
+      "Storyline: Jack escapes captivity",
+      "Question focus: How does Jack kill Youssou Dubaku while still restrained during their confrontation?",
+      "Answer focus: He traps Youssou's neck between his legs and breaks it",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35285",
+    "category": "Television",
+    "question": "In 24: Redemption, how does UN worker Charles Solenz betray the group after declining to help evacuate the children?",
+    "answers": [
+      "He steals the children's sponsorship papers",
+      "He joins the militants as a commander",
+      "He offers the rebels information about the Americans to save himself",
+      "He destroys the school's hidden shelter"
+    ],
+    "correctAnswer": "He offers the rebels information about the Americans to save himself",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Charles Solenz;Ike Dubaku",
+      "Storyline: UN worker reveals the group's movements",
+      "Question focus: How does UN worker Charles Solenz betray the group after declining to help evacuate the children?",
+      "Answer focus: He offers the rebels information about the Americans to save himself",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35286",
+    "category": "Television",
+    "question": "In 24: Redemption, what does Jack use to listen for rebel roadblocks as Benton drives the children towards the city?",
+    "answers": [
+      "A stolen military satellite phone",
+      "A listening device hidden in a car",
+      "A shortwave receiver from CTU",
+      "A captured rebel's walkie-talkie"
+    ],
+    "correctAnswer": "A captured rebel's walkie-talkie",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Jack Bauer;Carl Benton",
+      "Storyline: Intercepting rebel patrol communications",
+      "Question focus: What does Jack use to listen for rebel roadblocks as Benton drives the children towards the city?",
+      "Answer focus: A captured rebel's walkie-talkie",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35287",
+    "category": "Television",
+    "question": "In 24: Redemption, why does the group abandon the school bus and follow a river towards the capital?",
+    "answers": [
+      "The roads are being watched by rebel patrols",
+      "The vehicle's fuel tank explodes",
+      "The embassy orders them to avoid bridges",
+      "The bus is impounded by the UN"
+    ],
+    "correctAnswer": "The roads are being watched by rebel patrols",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Jack Bauer;Carl Benton;Thomas",
+      "Storyline: Avoiding roadblocks on foot",
+      "Question focus: Why does the group abandon the school bus and follow a river towards the capital?",
+      "Answer focus: The roads are being watched by rebel patrols",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35288",
+    "category": "Television",
+    "question": "In 24: Redemption, what causes Carl Benton to step onto a land mine while escorting the boys?",
+    "answers": [
+      "He is pushed by a rebel guard",
+      "He pushes Willie to safety as Willie retrieves his dropped scarf",
+      "He slips while trying to retrieve a rifle",
+      "He walks back to repair the abandoned bus"
+    ],
+    "correctAnswer": "He pushes Willie to safety as Willie retrieves his dropped scarf",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Carl Benton;Willie;Jack Bauer",
+      "Storyline: Willie's scarf and the land mine",
+      "Question focus: What causes Carl Benton to step onto a land mine while escorting the boys?",
+      "Answer focus: He pushes Willie to safety as Willie retrieves his dropped scarf",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35289",
+    "category": "Television",
+    "question": "In 24: Redemption, what does Benton hand Jack before remaining behind to face Dubaku's approaching men?",
+    "answers": [
+      "His former CTU identification card",
+      "The school's bank records",
+      "The boys' sponsorship papers",
+      "A map of the White House"
+    ],
+    "correctAnswer": "The boys' sponsorship papers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Carl Benton;Jack Bauer",
+      "Storyline: Benton entrusts the children's future to Jack",
+      "Question focus: What does Benton hand Jack before remaining behind to face Dubaku's approaching men?",
+      "Answer focus: The boys' sponsorship papers",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35290",
+    "category": "Television",
+    "question": "In 24: Redemption, what does Jack do when an armed boy soldier confronts him during the last approach to the embassy?",
+    "answers": [
+      "He knocks the boy unconscious",
+      "He calls in an American airstrike",
+      "He takes the boy prisoner and abandons him",
+      "He persuades the boy to lower his gun rather than shooting him"
+    ],
+    "correctAnswer": "He persuades the boy to lower his gun rather than shooting him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Jack Bauer;Child soldier",
+      "Storyline: Jack talks down a recruited boy",
+      "Question focus: What does Jack do when an armed boy soldier confronts him during the last approach to the embassy?",
+      "Answer focus: He persuades the boy to lower his gun rather than shooting him",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35291",
+    "category": "Television",
+    "question": "In 24: Redemption, what policy does outgoing President Noah Daniels pursue as Sangala faces General Juma's coup?",
+    "answers": [
+      "He orders evacuation of the US embassy instead of military intervention",
+      "He immediately deploys American ground troops",
+      "He recognises Juma as president",
+      "He orders the school's children evacuated by the Navy"
+    ],
+    "correctAnswer": "He orders evacuation of the US embassy instead of military intervention",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Noah Daniels;Allison Taylor;Sangala",
+      "Storyline: Daniels refuses intervention",
+      "Question focus: What policy does outgoing President Noah Daniels pursue as Sangala faces General Juma's coup?",
+      "Answer focus: He orders evacuation of the US embassy instead of military intervention",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35292",
+    "category": "Television",
+    "question": "In 24: Redemption, why does president-elect Allison Taylor object to Daniels's handling of Sangala?",
+    "answers": [
+      "He has invited Juma to her inauguration",
+      "She fears the rebel takeover could lead to genocide",
+      "He refuses to release Jack's Senate records",
+      "He has cancelled the election"
+    ],
+    "correctAnswer": "She fears the rebel takeover could lead to genocide",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Allison Taylor;Noah Daniels;Sangala",
+      "Storyline: Taylor argues for Sangalan civilians",
+      "Question focus: Why does president-elect Allison Taylor object to Daniels's handling of Sangala?",
+      "Answer focus: She fears the rebel takeover could lead to genocide",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35293",
+    "category": "Television",
+    "question": "In 24: Redemption, what wrongdoing does Chris Whitley admit to Roger Taylor when seeking help?",
+    "answers": [
+      "Stealing files from the White House",
+      "Selling US troop locations to Juma",
+      "Helping his employer launder money involving a terrorist-linked figure",
+      "Forging the president-elect's signature"
+    ],
+    "correctAnswer": "Helping his employer launder money involving a terrorist-linked figure",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Chris Whitley;Roger Taylor;Nichols",
+      "Storyline: Whitley's money-laundering confession",
+      "Question focus: What wrongdoing does Chris Whitley admit to Roger Taylor when seeking help?",
+      "Answer focus: Helping his employer launder money involving a terrorist-linked figure",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35294",
+    "category": "Television",
+    "question": "In 24: Redemption, which member of Roger Taylor's security detail secretly reports to the men targeting Chris Whitley?",
+    "answers": [
+      "Frank Trammell",
+      "Tom Lennox",
+      "Carl Benton",
+      "Edward Vossler"
+    ],
+    "correctAnswer": "Edward Vossler",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Edward Vossler;Roger Taylor;Chris Whitley",
+      "Storyline: Compromised Secret Service protection",
+      "Question focus: Which member of Roger Taylor's security detail secretly reports to the men targeting Chris Whitley?",
+      "Answer focus: Edward Vossler",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35295",
+    "category": "Television",
+    "question": "In 24: Redemption, what do the assassins do with Chris Whitley's body after retrieving his stolen financial records?",
+    "answers": [
+      "They encase it in cement",
+      "They abandon it at the school in Sangala",
+      "They leave it on the White House steps",
+      "They put it on the last evacuation helicopter"
+    ],
+    "correctAnswer": "They encase it in cement",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Chris Whitley;Jonas Hodges;Edward Vossler",
+      "Storyline: Cover-up of Whitley's murder",
+      "Question focus: What do the assassins do with Chris Whitley's body after retrieving his stolen financial records?",
+      "Answer focus: They encase it in cement",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  },
+  {
+    "id": "tv_35296",
+    "category": "Television",
+    "question": "In 24: Redemption, which Sangalan leader begs President Daniels for help against Juma before the American evacuation?",
+    "answers": [
+      "Colonel Ike Dubaku",
+      "Prime Minister Ule Matobo",
+      "President Allison Taylor",
+      "General Benjamin Juma"
+    ],
+    "correctAnswer": "Prime Minister Ule Matobo",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "24",
+      "24: Redemption",
+      "24 Redemption",
+      "2008 Television Film",
+      "Action Drama",
+      "Crime Thriller",
+      "Sangala",
+      "Jack Bauer Era",
+      "2000s",
+      "Between Seasons 6 and 7",
+      "Characters: Ule Matobo;Noah Daniels;General Juma",
+      "Storyline: Prime minister asks for American assistance",
+      "Question focus: Which Sangalan leader begs President Daniels for help against Juma before the American evacuation?",
+      "Answer focus: Prime Minister Ule Matobo",
+      "Viewer storyline",
+      "Storyline audit"
+    ]
+  }
+];
+questions.push(...auditAdditions);
+const EXPECTED_COUNT = 68;
  if (questions.length !== EXPECTED_COUNT) {
    throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
  }
- if (questions[0].id !== 'tv_11584' || questions[questions.length - 1].id !== 'tv_11629') {
+ if (questions[0].id !== 'tv_11584' || questions[45].id !== 'tv_11629' || questions[questions.length - 1].id !== 'tv_35296') {
    throw new Error('Unexpected question ID range');
  }
  if (new Set(questions.map(q => q.id)).size !== questions.length) {
