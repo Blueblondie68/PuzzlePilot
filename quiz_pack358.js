@@ -23,11 +23,11 @@
   Who played the recurring character Dave Hedgehog?|Christopher Ryan|Steven O'Donnell|Rik Mayall|Mark Lambert|Medium|Christopher Ryan|Dave Hedgehog|Supporting Cast|Recurring Character|Actor Identification|Richie And Eddie Friends|Sitcom Regular
   What is the name of Richie and Eddie's regular pub?|The Lamb and Flag|The Red Lion|The Queen Victoria|The Nags Head|Medium|Lamb And Flag|Regular Pub|Richie And Eddie|London Local|Pub Setting|Sitcom Hangout|Recurring Location
   Which actor portrayed pub landlord Dick Head?|Lee Cornes|Roger Sloman|Ed Bye|Brian Glover|Hard|Lee Cornes|Dick Head|Pub Landlord|Lamb And Flag|Supporting Actor|Recurring Role|Bottom Cast
-  What are Richie and Eddie secretly stealing from a neighbour in the episode Gas?|Gas|Electricity|Water|Television channels|Easy|Gas Episode|Illegal Gas Connection|Neighbour Supply|Utility Theft|Gas Man Visit|Series One|1991 Story
+  In Bottom's Gas episode, whose gas supply have Richie and Eddie illegally tapped into?|Mr Rottweiler's|Dick Head's|Dave Hedgehog's|Mr Harrison's|Medium|Gas Episode|Mr Rottweiler Neighbour|Illegal Gas Supply|Hammersmith Flat|Gas Meter Inspection|Richie and Eddie|BBC Series One
   In the first episode Smells, what product does Richie hope will make him attractive?|Pheromone spray|Hair dye|An expensive suit|A new aftershave advert|Medium|Smells Episode|Pheromones|Attraction Scheme|Richie Richard|Newspaper Advert|Series One Premiere|1991 Plot
   In Contest, what do Richie and Eddie argue about watching?|Television|A boxing match in person|A stage musical|An outdoor film screening|Easy|Contest Episode|Television Dispute|Flatmates Argument|Series One|Home Entertainment|Eddie Hitler|Richie Richard
   Which visitor tells Richie he will die within three days in Apocalypse?|A fairground fortune teller|A doctor|A police constable|An insurance agent|Medium|Apocalypse Episode|Fortune Teller|Three Day Prediction|Fairground Encounter|Richie Richard|Series One|Bad Luck
-  What kind of shop do Richie and Eddie mind in the first-series episode 'S Up?|A newsagent's|A butcher's|A florist's|A toy shop|Medium|S Up Episode|Newsagent Shop|Mr Harrison|Temporary Shopkeepers|Series One|Landlord Favour|Retail Chaos
+  Why does Mr Harrison ask Richie and Eddie to mind his newsagent's shop in Bottom?|He must attend his mother's funeral|He needs an emergency hospital appointment|He has won a free holiday|He has been called for jury service|Medium|S Up Episode|Mr Harrison|Newsagent Shop|Mother's Funeral|Richie and Eddie Cover|First Series Story|Local Community
   Which occasion is Richie celebrating in the first-series episode Accident?|His birthday|Christmas Eve|A wedding anniversary|New Year's Day|Easy|Accident Episode|Richie Birthday|Birthday Party|Series One|1991 Storyline|Lonely Celebration|Injury Comedy
   Which service do Richie and Eddie use to seek a date in Digger?|Video dating|Internet dating|A newspaper pen-pal club|Speed dating|Medium|Digger Episode|Video Dating|Romantic Search|Series Two Opening|Richie Richard|1992 Television|Dating Service
   What happens to Richie and Eddie's television before the episode Culture?|It is repossessed|It is stolen by a burglar|It explodes in a storm|It is sold at auction|Medium|Culture Episode|Television Repossession|Rumbelows|Series Two|Flatmates Boredom|1992 Story|Household Possessions
@@ -66,7 +66,7 @@
   Phoenix Nights grew out of which earlier Peter Kay television programme?|That Peter Kay Thing|Max and Paddy's Road to Nowhere|The Peter Kay Show Live|Car Share|Medium|That Peter Kay Thing|In The Club Episode|Spin Off Origin|Peter Kay|Earlier Programme|Series Development|Comedy History
   What disrupts the Phoenix Club's reopening in the first episode Opening Night?|A power cut|A flood|A burglary|A burst water main|Easy|Opening Night|Power Cut|Club Reopening|First Episode|January 2001|Brian Potter|Opening Disaster
   Which animal adds to the chaos in Wild West Night?|A horse|A llama|A donkey|A camel|Medium|Wild West Night|Horse|Theme Night|Club Entertainment|Series One|2001 Episode|Animal Mishap
-  Which official tries to close down the venue in Disco Inferno?|A fire and safety officer|A tax inspector|A health visitor|A traffic warden|Medium|Disco Inferno|Fire Safety Officer|Club Closure Threat|Series One|Health And Safety|2001 Plot|Brian Potter
+  What is the name of the fire-safety officer who threatens to close the Phoenix Club in Phoenix Nights?|Keith Lard|Clinton Baptiste|Den Perry|Ray Von|Medium|Disco Inferno Episode|Keith Lard|Fire Safety Inspection|Phoenix Closure Threat|Brian Potter|Club Licensing|Channel Four Comedy
   Which talent contest reaches its final at the Phoenix Club at the end of series one?|Talent Trek|The X Factor|Stars in Their Eyes|Opportunity Knocks|Medium|Talent Trek Finals|Series One Finale|Amateur Performers|Club Entertainment|2001 Episode|Talent Competition|Brian Potter
   What happens to the Phoenix Club at the start of series two?|It burns down|It is sold to a hotel chain|It is flooded by a river|It becomes a library|Easy|Series Two Opening|Club Fire|Rebuilding|Brian Potter|Jerry St Clair|2002 Return|Phoenix Premises
   In Family Fun Day, where do Max and Paddy go to buy cheaper alcohol?|France|Belgium|Ireland|Spain|Medium|Family Fun Day|Max And Paddy|French Trip|Cheap Alcohol|Stock Supplies|Series Two|Club Reopening
@@ -128,4 +128,1370 @@
     throw new Error('Pack 358: exported question validation failed');
   }
 
-  module.exports = questions;
+  
+  // Full Pack 358 editorial audit: researched episode-specific additions.
+  // Existing historical IDs are preserved; new IDs begin after Pack 357 audit.
+  const auditAdditions = [
+  {
+    "id": "tv_39043",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "Which fearsome neighbour's home must Richie and Eddie enter to undo their illegal gas connection before inspection?",
+    "answers": [
+      "Mr Harrison's",
+      "Dick Head's",
+      "Mr Rottweiler's",
+      "Dave Hedgehog's"
+    ],
+    "correctAnswer": "Mr Rottweiler's",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Gas",
+      "Storyline: Gas line concealed at neighbour's",
+      "Correct: Mr Rottweiler's",
+      "Subject: Gas line concealed at neighbour's",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Gas line concealed at neighbour's",
+      "Specific plot: Gas",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39044",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "How much time do the flatmates have to disconnect the illegal gas supply before their inspection in Bottom?",
+    "answers": [
+      "Twenty-four hours",
+      "Three days",
+      "Forty-five minutes",
+      "Six hours and twenty-seven minutes"
+    ],
+    "correctAnswer": "Six hours and twenty-seven minutes",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Gas",
+      "Storyline: Gas inspection deadline",
+      "Correct: Six hours and twenty-seven minutes",
+      "Subject: Gas inspection deadline",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Gas inspection deadline",
+      "Specific plot: Gas",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39045",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "How much money do Eddie and Richie have left between them for the next two months in Bottom's Contest?",
+    "answers": [
+      "Thirty pence",
+      "Eleven pounds eighty",
+      "Two pounds fifty",
+      "Five pounds"
+    ],
+    "correctAnswer": "Thirty pence",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Contest",
+      "Storyline: Flatmates' remaining funds",
+      "Correct: Thirty pence",
+      "Subject: Flatmates' remaining funds",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Flatmates' remaining funds",
+      "Specific plot: Contest",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39046",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "On which televised beauty contest does Eddie stake money in Bottom?",
+    "answers": [
+      "Miss Universe",
+      "Miss World",
+      "Miss Great Britain",
+      "Miss Europe"
+    ],
+    "correctAnswer": "Miss World",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Contest",
+      "Storyline: Eddie's beauty pageant bet",
+      "Correct: Miss World",
+      "Subject: Eddie's beauty pageant bet",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Eddie's beauty pageant bet",
+      "Specific plot: Contest",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39047",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "How much money does Richie inherit from his aunt before the fortune-teller's prediction in Bottom?",
+    "answers": [
+      "One hundred pounds",
+      "Fifty pounds",
+      "Six hundred pounds",
+      "Two thousand pounds"
+    ],
+    "correctAnswer": "Six hundred pounds",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Apocalypse",
+      "Storyline: Aunt's inheritance",
+      "Correct: Six hundred pounds",
+      "Subject: Aunt's inheritance",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Aunt's inheritance",
+      "Specific plot: Apocalypse",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39048",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "Where does Richie hide to protect himself after a fortune-teller warns he is going to die?",
+    "answers": [
+      "Inside a wardrobe in the kitchen",
+      "In the cellar of the pub",
+      "At the local police station",
+      "Inside a makeshift den in the living room"
+    ],
+    "correctAnswer": "Inside a makeshift den in the living room",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Apocalypse",
+      "Storyline: Makeshift protective shelter",
+      "Correct: Inside a makeshift den in the living room",
+      "Subject: Makeshift protective shelter",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Makeshift protective shelter",
+      "Specific plot: Apocalypse",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39049",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "What birthday disappointment awaits Richie in the Bottom episode Accident?",
+    "answers": [
+      "No one attends his party or sends him a card",
+      "Eddie forgets to book the restaurant",
+      "His cake gets delivered to the wrong address",
+      "His present is stolen from a bus"
+    ],
+    "correctAnswer": "No one attends his party or sends him a card",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Accident",
+      "Storyline: Empty birthday party",
+      "Correct: No one attends his party or sends him a card",
+      "Subject: Empty birthday party",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Empty birthday party",
+      "Specific plot: Accident",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39050",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "Which flatmate suffers a broken leg during the disastrous birthday events in Bottom?",
+    "answers": [
+      "Richie",
+      "Eddie",
+      "Dave Hedgehog",
+      "Spudgun"
+    ],
+    "correctAnswer": "Eddie",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Accident",
+      "Storyline: Birthday injury",
+      "Correct: Eddie",
+      "Subject: Birthday injury",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Birthday injury",
+      "Specific plot: Accident",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39051",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "What social status does Richie falsely claim when using a video dating agency in Bottom?",
+    "answers": [
+      "Professional footballer",
+      "Film director",
+      "Aristocrat",
+      "Millionaire businessman"
+    ],
+    "correctAnswer": "Aristocrat",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Digger",
+      "Storyline: False dating agency identity",
+      "Correct: Aristocrat",
+      "Subject: False dating agency identity",
+      "1991-1995 BBC Comedy",
+      "Character or scene: False dating agency identity",
+      "Specific plot: Digger",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39052",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "Which retailer takes Richie and Eddie's television away, forcing them to find other entertainment in Bottom?",
+    "answers": [
+      "Woolworths",
+      "Comet",
+      "Dixons",
+      "Rumbelows"
+    ],
+    "correctAnswer": "Rumbelows",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Culture",
+      "Storyline: Repossessed television retailer",
+      "Correct: Rumbelows",
+      "Subject: Repossessed television retailer",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Repossessed television retailer",
+      "Specific plot: Culture",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39053",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "What takeaway does Eddie go out to fetch before the flatmates discover an intruder in Bottom?",
+    "answers": [
+      "Fish and chips",
+      "Chinese noodles",
+      "Pizza",
+      "Chicken kebabs"
+    ],
+    "correctAnswer": "Fish and chips",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Burglary",
+      "Storyline: Takeaway before burglar",
+      "Correct: Fish and chips",
+      "Subject: Takeaway before burglar",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Takeaway before burglar",
+      "Specific plot: Burglary",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39054",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "How much are Richie and Eddie each paid for appearing in a police identity parade in Bottom?",
+    "answers": [
+      "Twenty pounds",
+      "Eight pounds",
+      "Five pounds",
+      "Fifty pounds"
+    ],
+    "correctAnswer": "Eight pounds",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Parade",
+      "Storyline: Identity parade payment",
+      "Correct: Eight pounds",
+      "Subject: Identity parade payment",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Identity parade payment",
+      "Specific plot: Parade",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39055",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "Which pub regular gives Richie and Eddie apparently promising betting tips in Bottom?",
+    "answers": [
+      "Dick Head the landlord",
+      "Mad Ken Stalin",
+      "Larry the bookmaker",
+      "Mr Rottweiler"
+    ],
+    "correctAnswer": "Larry the bookmaker",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Parade",
+      "Storyline: Betting tips from Larry",
+      "Correct: Larry the bookmaker",
+      "Subject: Betting tips from Larry",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Betting tips from Larry",
+      "Specific plot: Parade",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39056",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "What does Richie believe the abandoned baby at his door represents in Bottom's Christmas episode?",
+    "answers": [
+      "A secret adoption scheme",
+      "A neighbour's practical joke",
+      "A television prank",
+      "The Second Coming"
+    ],
+    "correctAnswer": "The Second Coming",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Holy",
+      "Storyline: Baby mistaken for religious event",
+      "Correct: The Second Coming",
+      "Subject: Baby mistaken for religious event",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Baby mistaken for religious event",
+      "Specific plot: Holy",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39057",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "What body part does Richie accidentally cut off while preparing for Christmas in Bottom?",
+    "answers": [
+      "A finger",
+      "An ear",
+      "A toe",
+      "His nose"
+    ],
+    "correctAnswer": "A finger",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Holy",
+      "Storyline: Christmas kitchen injury",
+      "Correct: A finger",
+      "Subject: Christmas kitchen injury",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Christmas kitchen injury",
+      "Specific plot: Holy",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39058",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "With whom do Richie and Eddie make a bet that they can survive in the wild on Wimbledon Common in Bottom?",
+    "answers": [
+      "Dave Hedgehog",
+      "'Mad' Ken Stalin",
+      "Dick Head",
+      "Mr Rottweiler"
+    ],
+    "correctAnswer": "'Mad' Ken Stalin",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: 'S Out",
+      "Storyline: Wilderness bet",
+      "Correct: 'Mad' Ken Stalin",
+      "Subject: Wilderness bet",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Wilderness bet",
+      "Specific plot: 'S Out",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39059",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "What is due to happen to the Ferris wheel on which Richie and Eddie become stranded in Bottom?",
+    "answers": [
+      "It is to be shipped overseas",
+      "It will be moved to a new fairground",
+      "It is scheduled for demolition the next morning",
+      "It is due to be repainted"
+    ],
+    "correctAnswer": "It is scheduled for demolition the next morning",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Hole",
+      "Storyline: Ferris wheel demolition",
+      "Correct: It is scheduled for demolition the next morning",
+      "Subject: Ferris wheel demolition",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Ferris wheel demolition",
+      "Specific plot: Hole",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39060",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "What device do Richie and Eddie use to make trick-or-treaters more cooperative in Bottom's Halloween episode?",
+    "answers": [
+      "A powerful torch",
+      "A handbell",
+      "A fog machine",
+      "An electric cattle prod"
+    ],
+    "correctAnswer": "An electric cattle prod",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Terror",
+      "Storyline: Aggressive trick or treating",
+      "Correct: An electric cattle prod",
+      "Subject: Aggressive trick or treating",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Aggressive trick or treating",
+      "Specific plot: Terror",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39061",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "Which supernatural figure does Richie consider summoning at his Halloween party in Bottom?",
+    "answers": [
+      "The Devil",
+      "A vampire",
+      "A ghost of a king",
+      "A werewolf"
+    ],
+    "correctAnswer": "The Devil",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Terror",
+      "Storyline: Richie seeks infernal deal",
+      "Correct: The Devil",
+      "Subject: Richie seeks infernal deal",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Richie seeks infernal deal",
+      "Specific plot: Terror",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39062",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "What device has Eddie been secretly building to try to make the flatmates rich in Bottom?",
+    "answers": [
+      "A fruit vending machine",
+      "A banknote printing machine",
+      "A metal detector",
+      "A slot machine"
+    ],
+    "correctAnswer": "A banknote printing machine",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Dough",
+      "Storyline: Counterfeit money production",
+      "Correct: A banknote printing machine",
+      "Subject: Counterfeit money production",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Counterfeit money production",
+      "Specific plot: Dough",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39063",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "Who alerts a professional forger after Eddie displays strange banknotes at the pub in Bottom?",
+    "answers": [
+      "Larry the bookmaker",
+      "Mr Harrison",
+      "Dick Head",
+      "Spudgun"
+    ],
+    "correctAnswer": "Dick Head",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Dough",
+      "Storyline: Pub landlord alerts forger",
+      "Correct: Dick Head",
+      "Subject: Pub landlord alerts forger",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Pub landlord alerts forger",
+      "Specific plot: Dough",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39064",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "At which hotel do Richie and Eddie impersonate honeymooners after stealing Taffy O'Jones's tickets in Bottom?",
+    "answers": [
+      "Savoy Hotel",
+      "Queen's Hotel",
+      "Grand Brighton Hotel",
+      "Marvelloso Spendido Hotel"
+    ],
+    "correctAnswer": "Marvelloso Spendido Hotel",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Finger",
+      "Storyline: Impersonated newlyweds' hotel",
+      "Correct: Marvelloso Spendido Hotel",
+      "Subject: Impersonated newlyweds' hotel",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Impersonated newlyweds' hotel",
+      "Specific plot: Finger",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39065",
+    "category": "Television",
+    "programme": "Bottom",
+    "question": "What does Richie try to blackmail a political leader with after making amateur films using a stolen camera in Bottom?",
+    "answers": [
+      "Embarrassing footage",
+      "Unpaid tax bills",
+      "A forged bank statement",
+      "A stolen passport"
+    ],
+    "correctAnswer": "Embarrassing footage",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Bottom",
+      "Programme: Bottom",
+      "BBC Two",
+      "Rik Mayall and Adrian Edmondson",
+      "Episode: Carnival",
+      "Storyline: Scheme targeting Prime Minister",
+      "Correct: Embarrassing footage",
+      "Subject: Scheme targeting Prime Minister",
+      "1991-1995 BBC Comedy",
+      "Character or scene: Scheme targeting Prime Minister",
+      "Specific plot: Carnival",
+      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39066",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "What is the name of the horse which gets drunk at the Phoenix Club's western-themed night?",
+    "answers": [
+      "Silver",
+      "Trigger",
+      "Black Beauty",
+      "Thunder"
+    ],
+    "correctAnswer": "Trigger",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Wild West Night",
+      "Storyline: Drunken horse character",
+      "Correct: Trigger",
+      "Subject: Drunken horse character",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Drunken horse character",
+      "Specific plot: Wild West Night",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39067",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "What western attraction does Brian bring to the Phoenix after the snooker table breaks?",
+    "answers": [
+      "A mechanical shooting gallery",
+      "A miniature train",
+      "A bucking bronco",
+      "A rodeo arena"
+    ],
+    "correctAnswer": "A bucking bronco",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Wild West Night",
+      "Storyline: Replacement for snooker table",
+      "Correct: A bucking bronco",
+      "Subject: Replacement for snooker table",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Replacement for snooker table",
+      "Specific plot: Wild West Night",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39068",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "Which psychic entertainer offends the Phoenix Club audience during a disastrous show?",
+    "answers": [
+      "Jerry St Clair",
+      "Roy Walker",
+      "Jim Bowen",
+      "Clinton Baptiste"
+    ],
+    "correctAnswer": "Clinton Baptiste",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Disco Inferno",
+      "Storyline: Psychic performance",
+      "Correct: Clinton Baptiste",
+      "Subject: Psychic performance",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Psychic performance",
+      "Specific plot: Disco Inferno",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39069",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "What is the unsuspected job of the woman Brian Potter starts dating in Phoenix Nights?",
+    "answers": [
+      "Council investigator looking into his disability claims",
+      "Travel agent selling club trips",
+      "Local radio announcer",
+      "New social club licence officer"
+    ],
+    "correctAnswer": "Council investigator looking into his disability claims",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Singles Night",
+      "Storyline: Brian's date has another purpose",
+      "Correct: Council investigator looking into his disability claims",
+      "Subject: Brian's date has another purpose",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Brian's date has another purpose",
+      "Specific plot: Singles Night",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39070",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "What piece of bedroom furniture does Brian Potter buy when he imagines a new romance in Phoenix Nights?",
+    "answers": [
+      "A four-poster bed",
+      "A water bed",
+      "A rocking chair",
+      "A dressing table"
+    ],
+    "correctAnswer": "A water bed",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Singles Night",
+      "Storyline: Brian's optimistic purchase",
+      "Correct: A water bed",
+      "Subject: Brian's optimistic purchase",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Brian's optimistic purchase",
+      "Specific plot: Singles Night",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39071",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "Who builds the robot for Max and Paddy's competition entry at the Phoenix Club?",
+    "answers": [
+      "Brian Potter",
+      "Jerry St Clair",
+      "Ray Von",
+      "Young Kenny"
+    ],
+    "correctAnswer": "Ray Von",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Comedy Robot Wars",
+      "Storyline: Robot Wars construction",
+      "Correct: Ray Von",
+      "Subject: Robot Wars construction",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Robot Wars construction",
+      "Specific plot: Comedy Robot Wars",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39072",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "What new job opportunity is offered to Jerry after his comedy performance in Phoenix Nights?",
+    "answers": [
+      "Hosting a breakfast radio show",
+      "Managing a rival nightclub",
+      "Joining a travelling circus",
+      "Working as a singer on a cruise ship"
+    ],
+    "correctAnswer": "Working as a singer on a cruise ship",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Comedy Robot Wars",
+      "Storyline: Jerry's cruise job offer",
+      "Correct: Working as a singer on a cruise ship",
+      "Subject: Jerry's cruise job offer",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Jerry's cruise job offer",
+      "Specific plot: Comedy Robot Wars",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39073",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "What does Brian Potter falsely claim about Jerry's health to help secure the Talent Trek final for the club?",
+    "answers": [
+      "That Jerry is dying",
+      "That Jerry has lost his voice",
+      "That Jerry is recovering from surgery",
+      "That Jerry has been declared disabled"
+    ],
+    "correctAnswer": "That Jerry is dying",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Talent Trek Finals",
+      "Storyline: Sympathy used to get talent competition",
+      "Correct: That Jerry is dying",
+      "Subject: Sympathy used to get talent competition",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Sympathy used to get talent competition",
+      "Specific plot: Talent Trek Finals",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39074",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "Which rival club owner discards a cigar that starts the blaze which destroys the Phoenix Club?",
+    "answers": [
+      "Brian Potter",
+      "Den Perry",
+      "Keith Lard",
+      "Ray Von"
+    ],
+    "correctAnswer": "Den Perry",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Talent Trek Finals",
+      "Storyline: Rival causes club fire",
+      "Correct: Den Perry",
+      "Subject: Rival causes club fire",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Rival causes club fire",
+      "Specific plot: Talent Trek Finals",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39075",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "Where has Jerry St Clair been reduced to working when Brian tries to reassemble the Phoenix Club team?",
+    "answers": [
+      "Tesco",
+      "Morrisons",
+      "Asda",
+      "The council offices"
+    ],
+    "correctAnswer": "Asda",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Brian Gets Everyone Back Together",
+      "Storyline: Jerry's temporary retail job",
+      "Correct: Asda",
+      "Subject: Jerry's temporary retail job",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Jerry's temporary retail job",
+      "Specific plot: Brian Gets Everyone Back Together",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39076",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "Which TV quiz presenter appears as Brian Potter's old friend Hoss Cartwright in Phoenix Nights?",
+    "answers": [
+      "Roy Walker",
+      "Les Dennis",
+      "Bob Holness",
+      "Jim Bowen"
+    ],
+    "correctAnswer": "Jim Bowen",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Brian Gets Everyone Back Together",
+      "Storyline: Friend with Blackpool club",
+      "Correct: Jim Bowen",
+      "Subject: Friend with Blackpool club",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Friend with Blackpool club",
+      "Specific plot: Brian Gets Everyone Back Together",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39077",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "What fruity costume is Jerry forced to wear during the Phoenix Club's fundraising fun day?",
+    "answers": [
+      "A giant red berry",
+      "A banana",
+      "A pineapple",
+      "A strawberry milkshake"
+    ],
+    "correctAnswer": "A giant red berry",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Family Fun Day",
+      "Storyline: Jerry's fruit costume",
+      "Correct: A giant red berry",
+      "Subject: Jerry's fruit costume",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Jerry's fruit costume",
+      "Specific plot: Family Fun Day",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39078",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "What event is recreated for television when Brian Potter gets the Phoenix Club featured on Crimetime?",
+    "answers": [
+      "The theft of the club's cash box",
+      "The fire at the Phoenix Club",
+      "A fight involving a visiting horse",
+      "A robbery in the car park"
+    ],
+    "correctAnswer": "The fire at the Phoenix Club",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Crimetime",
+      "Storyline: Crime programme reconstruction",
+      "Correct: The fire at the Phoenix Club",
+      "Subject: Crime programme reconstruction",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Crime programme reconstruction",
+      "Specific plot: Crimetime",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39079",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "Who is hired to work behind the bar while Brian is arranging the Phoenix's television publicity?",
+    "answers": [
+      "Kenny Senior",
+      "Den Perry",
+      "Spencer",
+      "Hoss Cartwright"
+    ],
+    "correctAnswer": "Spencer",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Crimetime",
+      "Storyline: New barman during reconstruction",
+      "Correct: Spencer",
+      "Subject: New barman during reconstruction",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: New barman during reconstruction",
+      "Specific plot: Crimetime",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39080",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "What kind of event does Brian organise behind Jerry's back at the Phoenix Club?",
+    "answers": [
+      "A karaoke competition",
+      "A country-and-western dance",
+      "A talent audition",
+      "A quiz night"
+    ],
+    "correctAnswer": "A quiz night",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Quiz",
+      "Storyline: Brian's secret club event",
+      "Correct: A quiz night",
+      "Subject: Brian's secret club event",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Brian's secret club event",
+      "Specific plot: Quiz",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39081",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "Under which stage name does Paddy perform his striptease at the Phoenix Club in Phoenix Nights?",
+    "answers": [
+      "Lord Love Rocket",
+      "Captain Romance",
+      "Mr Midnight",
+      "Prince of Passion"
+    ],
+    "correctAnswer": "Lord Love Rocket",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Ladies' Night",
+      "Storyline: Paddy's stage identity",
+      "Correct: Lord Love Rocket",
+      "Subject: Paddy's stage identity",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Paddy's stage identity",
+      "Specific plot: Ladies' Night",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39082",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "What dangerous favour does a woman ask Max to perform during a ladies' night at the Phoenix Club?",
+    "answers": [
+      "Steal her car",
+      "Kill her husband",
+      "Hide her jewels",
+      "Forge her signature"
+    ],
+    "correctAnswer": "Kill her husband",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Ladies' Night",
+      "Storyline: Max asked to do a crime",
+      "Correct: Kill her husband",
+      "Subject: Max asked to do a crime",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Max asked to do a crime",
+      "Specific plot: Ladies' Night",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39083",
+    "category": "Television",
+    "programme": "Phoenix Nights",
+    "question": "Where is Brian Potter trapped when the electricity fails during the Phoenix Club's ladies' night?",
+    "answers": [
+      "Inside a lift",
+      "In the cellar",
+      "On a stairlift",
+      "Inside the club's toilets"
+    ],
+    "correctAnswer": "On a stairlift",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Sitcom",
+      "Comedy",
+      "Phoenix Nights",
+      "Programme: Phoenix Nights",
+      "Channel 4",
+      "Peter Kay",
+      "Episode: Ladies' Night",
+      "Storyline: Brian trapped during power cut",
+      "Correct: On a stairlift",
+      "Subject: Brian trapped during power cut",
+      "2001-2002 Channel 4 Comedy",
+      "Character or scene: Brian trapped during power cut",
+      "Specific plot: Ladies' Night",
+      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
+    ],
+    "dailyEligible": true
+  }
+];
+  questions.push(...auditAdditions);
+  if (new Set(questions.map(q=>q.id)).size!==questions.length ||
+      new Set(questions.map(q=>normalise(q.question))).size!==questions.length ||
+      questions.some(q=>q.answers.length!==4 ||
+        new Set(q.answers.map(normalise)).size!==4 ||
+        q.answers.filter(a=>a===q.correctAnswer).length!==1 ||
+        q.tags.length<14 || !q.tags.includes('Programme: '+q.programme) ||
+        q.dailyEligible!==true)) throw Error('Pack 358 full audit validation failed');
+module.exports = questions;
