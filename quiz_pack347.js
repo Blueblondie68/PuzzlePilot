@@ -1879,14 +1879,846 @@ const auditAdditions = [
       "Star"
     ],
     "dailyEligible": true
+  },
+  {
+    "id": "tv_38162",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E01: Round and Round), whose attempt to close her garden for a peaceful day inadvertently creates problems for the Soup Dragon?",
+    "answers": [
+      "Mother Clanger's",
+      "Granny Clanger's",
+      "Tiny Clanger's",
+      "The Iron Chicken's"
+    ],
+    "correctAnswer": "Mother Clanger's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E01 Round and Round",
+      "Revival storyline",
+      "Answer: Mother Clanger's",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Garden closure",
+      "Neighbours affected",
+      "Peace sought"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38163",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E02: The Sound Snatcher), whose overwhelming music finally proves too much for the visiting sound-eating creature?",
+    "answers": [
+      "The Iron Chicken's",
+      "The Hoot Planet's",
+      "The Moon Whale's",
+      "The Music Boat's"
+    ],
+    "correctAnswer": "The Hoot Planet's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E02 The Sound Snatcher",
+      "Revival storyline",
+      "Answer: The Hoot Planet's",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Music-eater",
+      "Too loud",
+      "Hoot Planet"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38164",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E03: Woolly Welcome), which visiting world behaves strangely before wool begins raining down on the Clangers?",
+    "answers": [
+      "The golden planet",
+      "The Moon Whale's home",
+      "The Hoot Planet",
+      "Earth"
+    ],
+    "correctAnswer": "The Hoot Planet",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E03 Woolly Welcome",
+      "Revival storyline",
+      "Answer: The Hoot Planet",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Musical world",
+      "Falling wool",
+      "Space visitor"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38165",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E04: Snow Business), where has the Cloud been just before returning so cold that it produces snow instead of rain?",
+    "answers": [
+      "Inside the Soup Well",
+      "Visiting Earth",
+      "In a cave full of ice",
+      "On holiday in space"
+    ],
+    "correctAnswer": "On holiday in space",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E04 Snow Business",
+      "Revival storyline",
+      "Answer: On holiday in space",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Cloud holiday",
+      "Cold return",
+      "Snow"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38166",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E05: Mother of Invention), what happens to Major after Mother accidentally wheels her new garden trolley over his foot?",
+    "answers": [
+      "The trolley proves surprisingly useful",
+      "Major loses his telescope",
+      "His knitting comes undone",
+      "A music tree collapses"
+    ],
+    "correctAnswer": "The trolley proves surprisingly useful",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E05 Mother of Invention",
+      "Revival storyline",
+      "Answer: The trolley proves surprisingly useful",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "New trolley",
+      "Accidental collision",
+      "Useful invention"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38167",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E06: Puffball), what homemade device does Small build to keep up with Tiny and the Froglets before it launches him into orbit?",
+    "answers": [
+      "A flying bicycle",
+      "A space hopper",
+      "A hovercraft",
+      "A miniature helicopter"
+    ],
+    "correctAnswer": "A space hopper",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E06 Puffball",
+      "Revival storyline",
+      "Answer: A space hopper",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Small left behind",
+      "Puffball hopper",
+      "Too high"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38168",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E07: The Disappearing Nest), what meal has the Iron Chicken gone to fetch for her visiting Wol friends when she finds her nest missing?",
+    "answers": [
+      "Green soup",
+      "Glow honey",
+      "Blue string pudding",
+      "Star-rose petals"
+    ],
+    "correctAnswer": "Blue string pudding",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E07 The Disappearing Nest",
+      "Revival storyline",
+      "Answer: Blue string pudding",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Lost nest",
+      "Wol guests",
+      "Food trip"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38169",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E08: Star Flower), what does Small catch from space before Mother and Tiny help him grow a very shy plant?",
+    "answers": [
+      "A golden clock",
+      "A mechanical egg",
+      "A purple pebble",
+      "A beautiful silver seed"
+    ],
+    "correctAnswer": "A beautiful silver seed",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E08 Star Flower",
+      "Revival storyline",
+      "Answer: A beautiful silver seed",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Silver seed",
+      "Shy flower",
+      "Planting"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38170",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E09: The Block), what does the visiting robot block collect before proposing a development on the Clangers' planet?",
+    "answers": [
+      "Soil samples",
+      "Music notes",
+      "Soup recipes",
+      "Froglet eggs"
+    ],
+    "correctAnswer": "Soil samples",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E09 The Block",
+      "Revival storyline",
+      "Answer: Soil samples",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Robot surveyor",
+      "Planet soil",
+      "Tower blocks"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38171",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E10: The Strange-Smelling Flower), whose new bloom is responsible for the unpleasant smell that troubles Tiny, Small and Major?",
+    "answers": [
+      "Granny Clanger's",
+      "Mother Clanger's",
+      "The Iron Chicken's",
+      "The Moon Whale's"
+    ],
+    "correctAnswer": "Mother Clanger's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E10 The Strange-Smelling Flower",
+      "Revival storyline",
+      "Answer: Mother Clanger's",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Unpleasant scent",
+      "Mother flower",
+      "Garden"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38172",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E11: Major's Low-Gravity Backpack), what cleaning problem leads Major to devise a low-gravity backpack?",
+    "answers": [
+      "Polishing the Iron Chicken's nest",
+      "Washing the music boat's underside",
+      "Reaching dustweeds on the cave ceiling",
+      "Cleaning soup off the planet's outer surface"
+    ],
+    "correctAnswer": "Reaching dustweeds on the cave ceiling",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E11 Major's Low-Gravity Backpack",
+      "Revival storyline",
+      "Answer: Reaching dustweeds on the cave ceiling",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Dustweeds",
+      "High ceiling",
+      "Cleaning device"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38173",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E12: The Mysterious Noise Machine), where does the first part of a mysterious mechanical object land before Major discovers its matching piece?",
+    "answers": [
+      "In Granny's wool basket",
+      "Under the Soup Dragon's ladle",
+      "In Mother's flower garden",
+      "In the Iron Chicken's nest"
+    ],
+    "correctAnswer": "In the Iron Chicken's nest",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E12 The Mysterious Noise Machine",
+      "Revival storyline",
+      "Answer: In the Iron Chicken's nest",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Fallen machine",
+      "Chicken nest",
+      "Parts reunited"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38174",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E13: The Tin Bird), what does Tiny and Small assume the strange mechanical bird is seeking when it explores their planet?",
+    "answers": [
+      "A place to build a nest",
+      "A new soup well",
+      "A missing telescope",
+      "A golden planet"
+    ],
+    "correctAnswer": "A place to build a nest",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E13 The Tin Bird",
+      "Revival storyline",
+      "Answer: A place to build a nest",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Tin bird",
+      "Searching visitor",
+      "Nest help"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38175",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E14: Chicken in Charge), who is left responsible for the home when Major, Mother and Granny go on a trip?",
+    "answers": [
+      "Baby Soup Dragon",
+      "The Iron Chicken",
+      "The Moon Whale",
+      "A visiting astronaut"
+    ],
+    "correctAnswer": "The Iron Chicken",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E14 Chicken in Charge",
+      "Revival storyline",
+      "Answer: The Iron Chicken",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Adults away",
+      "Iron Chicken",
+      "Babysitter"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38176",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E15: The Space Tortoise), what awakens a sleeping space tortoise during an adventure with Tiny?",
+    "answers": [
+      "A shower of blue string pudding",
+      "A loud bang from a metal block",
+      "A mysterious tune from the sky",
+      "The Soup Dragon's green soup"
+    ],
+    "correctAnswer": "A mysterious tune from the sky",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E15 The Space Tortoise",
+      "Revival storyline",
+      "Answer: A mysterious tune from the sky",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Sleeping tortoise",
+      "Tiny melody",
+      "Strange music"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38177",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E16: The Moo Flower), where is the sticky green pod discovered by Tiny and Small while they are flying in the music boat?",
+    "answers": [
+      "Inside the Soup Well",
+      "In the Iron Chicken's nest",
+      "Under Granny's pillow",
+      "On a Sky Moo's snout"
+    ],
+    "correctAnswer": "On a Sky Moo's snout",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E16 The Moo Flower",
+      "Revival storyline",
+      "Answer: On a Sky Moo's snout",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Green pod",
+      "Sky Moo nose",
+      "Music boat"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38178",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E17: One Dragon Band), who receives Major's specially designed one-person musical band kit?",
+    "answers": [
+      "Baby Soup Dragon",
+      "Granny Clanger",
+      "The Iron Chicken",
+      "Small Clanger"
+    ],
+    "correctAnswer": "Baby Soup Dragon",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E17 One Dragon Band",
+      "Revival storyline",
+      "Answer: Baby Soup Dragon",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Major gift",
+      "Dragon music",
+      "Band kit"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38179",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E18: The Memory Box), who finds a box full of memories made when Mother was young?",
+    "answers": [
+      "The Iron Chicken and the Wols",
+      "Tiny and Small",
+      "Major and the Soup Dragon",
+      "Granny and the Froglets"
+    ],
+    "correctAnswer": "Tiny and Small",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E18 The Memory Box",
+      "Revival storyline",
+      "Answer: Tiny and Small",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Childhood mementos",
+      "Mother past",
+      "Discovery"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38180",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E19: The Hoots Come to Play), with which visitor does Tiny want to play a duet when two Hoots come to visit?",
+    "answers": [
+      "The Iron Chicken",
+      "The Moon Whale",
+      "Big Hoot",
+      "The Cloud"
+    ],
+    "correctAnswer": "Big Hoot",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E19 The Hoots Come to Play",
+      "Revival storyline",
+      "Answer: Big Hoot",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Musical guests",
+      "Tiny duet",
+      "Big Hoot"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38181",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E20: Chatter Boxes), why does Major build a system for messages between the Clangers?",
+    "answers": [
+      "He needs to warn them about a meteor",
+      "He hopes to speak to Earth",
+      "He wants to coordinate a game of hide-and-seek",
+      "He wants to hear the others when they call him for soup"
+    ],
+    "correctAnswer": "He wants to hear the others when they call him for soup",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E20 Chatter Boxes",
+      "Revival storyline",
+      "Answer: He wants to hear the others when they call him for soup",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Major communications",
+      "Soup calls",
+      "Messages"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38182",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E21: The Kindness Tree), who helps Major discover a purpose for an invention whose use he cannot work out?",
+    "answers": [
+      "Tiny and Small",
+      "The Wols",
+      "Mother and Granny",
+      "The Iron Chicken and a Sky Moo"
+    ],
+    "correctAnswer": "Tiny and Small",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E21 The Kindness Tree",
+      "Revival storyline",
+      "Answer: Tiny and Small",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Purposeful invention",
+      "Children suggest",
+      "Kindness"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38183",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E22: The New Froglet), how do the other Froglets initially respond to the new purple member of their group?",
+    "answers": [
+      "They immediately crown it their leader",
+      "They are unsure what to make of the newcomer",
+      "They refuse to leave the planet",
+      "They dress it as a Soup Dragon"
+    ],
+    "correctAnswer": "They are unsure what to make of the newcomer",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E22 The New Froglet",
+      "Revival storyline",
+      "Answer: They are unsure what to make of the newcomer",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Newcomer",
+      "Purple Froglet",
+      "Uncertainty"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38184",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E23: Hello), what does Major's new invention send through space to carry spoken greetings?",
+    "answers": [
+      "Wooden birds with notes",
+      "Metal rockets carrying postcards",
+      "Bubbles containing voice messages",
+      "Glow-honey jars"
+    ],
+    "correctAnswer": "Bubbles containing voice messages",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E23 Hello",
+      "Revival storyline",
+      "Answer: Bubbles containing voice messages",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Communications bubbles",
+      "Voice recordings",
+      "Space"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38185",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E24: The Other Iron Chicken), who helps Tiny feel better when the Iron Chicken leaves to visit the Wols?",
+    "answers": [
+      "The Moon Whale",
+      "Major Clanger",
+      "A human astronaut",
+      "The Soup Dragon"
+    ],
+    "correctAnswer": "The Soup Dragon",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E24 The Other Iron Chicken",
+      "Revival storyline",
+      "Answer: The Soup Dragon",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Tiny loneliness",
+      "Friend travelling",
+      "Dragon comfort"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38186",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E25: The Forgotten Tunnel), which older member of the family joins Tiny and Small in finding an old passage to an unexpected place?",
+    "answers": [
+      "Granny Clanger",
+      "The Iron Chicken",
+      "Mother Clanger",
+      "Major Clanger"
+    ],
+    "correctAnswer": "Granny Clanger",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E25 The Forgotten Tunnel",
+      "Revival storyline",
+      "Answer: Granny Clanger",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Forgotten passage",
+      "Family exploration",
+      "Granny"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38187",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S2E26: The Moon Whale), what rare visitor arrives at the planet in the last episode of the 2017–18 revival series?",
+    "answers": [
+      "A golden Eggbot",
+      "A Moon Whale",
+      "A human astronaut",
+      "A purple Sky Moo"
+    ],
+    "correctAnswer": "A Moon Whale",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2017-2018 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S2E26 The Moon Whale",
+      "Revival storyline",
+      "Answer: A Moon Whale",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Rare space creature",
+      "Series finale",
+      "Beautiful guest"
+    ],
+    "dailyEligible": true
   }
 ];
 questions.push(...auditAdditions);
-const expectedAuditedTotal = 148;
+const expectedAuditedTotal = 174;
 if(questions.length!==expectedAuditedTotal ||
  questions[0].id!=='tv_16696' || questions[95].id!=='tv_16791' ||
  auditAdditions[0].id!=='tv_38110' ||
- auditAdditions[auditAdditions.length-1].id!=='tv_38161' ||
+ auditAdditions[auditAdditions.length-1].id!=='tv_38187' ||
  new Set(questions.map(q=>q.id)).size!==questions.length ||
  new Set(questions.map(q=>normalise(q.question))).size!==questions.length ||
  questions.some(q=>q.answers.length!==4 || new Set(q.answers.map(normalise)).size!==4 ||
