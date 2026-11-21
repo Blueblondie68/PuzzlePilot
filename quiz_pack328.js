@@ -103,7 +103,7 @@ const auditAdditions = [
     "id": "tv_36941",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, About how many murders does Nilsen initially claim to police when they confront him?",
+    "question": "In Des, about how many murders does Nilsen initially claim to police when they confront him?",
     "answers": [
       "15 or 16",
       "Three or four",
@@ -136,7 +136,7 @@ const auditAdditions = [
     "id": "tv_36942",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, For approximately how long had Nilsen's crimes gone undetected when police arrest him?",
+    "question": "In Des, for approximately how long had Nilsen's crimes gone undetected when police arrest him?",
     "answers": [
       "Six months",
       "Five years",
@@ -169,7 +169,7 @@ const auditAdditions = [
     "id": "tv_36943",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, What physical evidence is particularly scarce when investigators try to identify the people Nilsen killed?",
+    "question": "In Des, what physical evidence is particularly scarce when investigators try to identify the people Nilsen killed?",
     "answers": [
       "A signed confession",
       "A search warrant",
@@ -202,7 +202,7 @@ const auditAdditions = [
     "id": "tv_36944",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, At which North London police station is Peter Jay's investigative team based?",
+    "question": "In Des, at which North London police station is Peter Jay's investigative team based?",
     "answers": [
       "Paddington Green Police Station",
       "Bow Street Police Station",
@@ -235,7 +235,7 @@ const auditAdditions = [
     "id": "tv_36945",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, How many victims have Jay's team managed to identify by the time of Nilsen's changed plea?",
+    "question": "In Des, how many victims have Jay's team managed to identify by the time of Nilsen's changed plea?",
     "answers": [
       "Two",
       "Six",
@@ -268,7 +268,7 @@ const auditAdditions = [
     "id": "tv_36946",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, According to the second episode, approximately how many victims remain unidentified at the pre-trial hearing?",
+    "question": "In Des, according to the second episode, approximately how many victims remain unidentified at the pre-trial hearing?",
     "answers": [
       "Three",
       "Six",
@@ -301,14 +301,14 @@ const auditAdditions = [
     "id": "tv_36947",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, What unusual complication does Brian Masters introduce into Jay's investigation?",
+    "question": "In Des, which unreliable source does Peter Jay's team have to rely upon to identify victims?",
     "answers": [
-      "He is Nilsen's defence solicitor",
-      "He is the investigating pathologist",
-      "He is the trial's presiding judge",
-      "He is writing a biography of the suspect"
+      "Nilsen's own memories",
+      "Old bus company records",
+      "An anonymous radio caller",
+      "Files in a royal archive"
     ],
-    "correctAnswer": "He is writing a biography of the suspect",
+    "correctAnswer": "Nilsen's own memories",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -321,9 +321,9 @@ const auditAdditions = [
       "2020 Miniseries",
       "Episode 2",
       "Investigations and consequences",
-      "Correct answer: He is writing a biography of the suspect",
+      "Correct answer: Nilsen's own memories",
       "Source: https://britishperioddramas.com/ep-guide/des-itv-episode-2-recap-david-tennant/",
-      "Masters Access",
+      "Unreliable Suspect Memories",
       "Police Concern",
       "Suspect Biographer",
       "Episode Two"
@@ -334,7 +334,7 @@ const auditAdditions = [
     "id": "tv_36948",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Which possibility does Nilsen start considering during his conversations with Brian Masters?",
+    "question": "In Des, which possibility does Nilsen start considering during his conversations with Brian Masters?",
     "answers": [
       "That he might not be guilty of murder",
       "That he should join the police",
@@ -367,7 +367,7 @@ const auditAdditions = [
     "id": "tv_36949",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Which character worries that his interviews might have influenced Nilsen's decision to plead not guilty?",
+    "question": "In Des, which character worries that his interviews might have influenced Nilsen's decision to plead not guilty?",
     "answers": [
       "Peter Jay",
       "Brian Masters",
@@ -400,7 +400,7 @@ const auditAdditions = [
     "id": "tv_36950",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, What quality of Nilsen's state of mind must the prosecution demonstrate during the trial?",
+    "question": "In Des, what quality of Nilsen's state of mind must the prosecution demonstrate during the trial?",
     "answers": [
       "That he was asleep",
       "That he had no memories",
@@ -433,7 +433,7 @@ const auditAdditions = [
     "id": "tv_36951",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, What happens to key prosecution witnesses when the defence questions them in court?",
+    "question": "In Des, what happens to key prosecution witnesses when the defence questions them in court?",
     "answers": [
       "They all refuse to take the oath",
       "They are declared missing",
@@ -466,7 +466,7 @@ const auditAdditions = [
     "id": "tv_36952",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, What does Peter Jay fear could happen to an apparently straightforward case during the trial?",
+    "question": "In Des, what does Peter Jay fear could happen to an apparently straightforward case during the trial?",
     "answers": [
       "It could collapse",
       "It could move to France",
@@ -499,7 +499,7 @@ const auditAdditions = [
     "id": "tv_36953",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Which real survivor appears as a witness in the drama's trial of Dennis Nilsen?",
+    "question": "In Des, which real survivor appears as a witness in the drama's trial of Dennis Nilsen?",
     "answers": [
       "Brian Masters",
       "Carl Stottor",
@@ -532,7 +532,7 @@ const auditAdditions = [
     "id": "tv_36954",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Which court participant is played by Ken Bones in the three-part drama?",
+    "question": "In Des, which court participant is played by Ken Bones in the three-part drama?",
     "answers": [
       "Nilsen's biographer",
       "The investigating detective",
@@ -565,7 +565,7 @@ const auditAdditions = [
     "id": "tv_36955",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, What is the trial judge's name as portrayed in Des?",
+    "question": "In Des, what is the name of the judge presiding over Nilsen's trial?",
     "answers": [
       "Peter Jay",
       "Allan Green",
@@ -598,7 +598,7 @@ const auditAdditions = [
     "id": "tv_36956",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Which QC acts for the prosecution in the trial shown in Des?",
+    "question": "In Des, which QC acts for the prosecution at Nilsen's trial?",
     "answers": [
       "Allan Green",
       "Ivan Lawrence",
@@ -631,7 +631,7 @@ const auditAdditions = [
     "id": "tv_36957",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Which QC represents the defence in Des's courtroom scenes?",
+    "question": "In Des, which QC represents the defence at Nilsen's trial?",
     "answers": [
       "Allan Green",
       "Ivan Lawrence",
@@ -664,7 +664,7 @@ const auditAdditions = [
     "id": "tv_36958",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Which actress portrays Lesley Mead, the partner of one of Nilsen's victims?",
+    "question": "In Des, which actress portrays Lesley Mead, the partner of one of Nilsen's victims?",
     "answers": [
       "Bronagh Waugh",
       "Faye McKeever",
@@ -697,7 +697,7 @@ const auditAdditions = [
     "id": "tv_36959",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, What is the name of the murder victim whose partner Lesley Mead appears in Des?",
+    "question": "In Des, which murder victim is identified as Lesley Mead's partner?",
     "answers": [
       "Carl Stottor",
       "Douglas Stewart",
@@ -730,7 +730,7 @@ const auditAdditions = [
     "id": "tv_36960",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, What role does DI Steve McCusker have within Peter Jay's investigation?",
+    "question": "In Des, what role does DI Steve McCusker have within Peter Jay's investigation?",
     "answers": [
       "His second-in-command",
       "His defence solicitor",
@@ -763,7 +763,7 @@ const auditAdditions = [
     "id": "tv_36961",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Before becoming Nilsen's biographer, which type of subject was Brian Masters better known for writing about?",
+    "question": "In Des, before becoming Nilsen's biographer, which type of subject was Brian Masters better known for writing about?",
     "answers": [
       "International football stars",
       "Royal and aristocratic figures",
@@ -796,7 +796,7 @@ const auditAdditions = [
     "id": "tv_36962",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, What aspect of the press coverage troubles Brian Masters as dramatised in Des?",
+    "question": "In Des, what aspect of the press coverage particularly troubles Brian Masters?",
     "answers": [
       "The omission of sports results",
       "The inaccurate weather forecasts",
@@ -829,7 +829,7 @@ const auditAdditions = [
     "id": "tv_36963",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Who composed the score for ITV's 2020 drama Des?",
+    "question": "In Des, who composed the score for ITV's 2020 drama Des?",
     "answers": [
       "Debbie Wiseman",
       "Isobel Waller-Bridge",
@@ -862,7 +862,7 @@ const auditAdditions = [
     "id": "tv_36964",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Who was credited as cinematographer on ITV's Des?",
+    "question": "In Des, who is credited as cinematographer of the three-part drama?",
     "answers": [
       "Mark Wolf",
       "Seamus McGarvey",
@@ -895,7 +895,7 @@ const auditAdditions = [
     "id": "tv_36965",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Who edited the ITV crime drama Des?",
+    "question": "In Des, who edited the three-part drama?",
     "answers": [
       "Chris Dickens",
       "Sacha Szwarc",
@@ -928,7 +928,7 @@ const auditAdditions = [
     "id": "tv_36966",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Which award did David Tennant receive for his performance in Des at the 2021 International Emmys?",
+    "question": "In Des, which award did David Tennant receive at the 2021 International Emmys?",
     "answers": [
       "Best Director",
       "Best Screenplay",
@@ -961,7 +961,7 @@ const auditAdditions = [
     "id": "tv_36967",
     "category": "Television",
     "programme": "Des",
-    "question": "In Des, Which company was named as the international distributor of Des by ITV?",
+    "question": "In Des, which company is listed by ITV as its international distributor?",
     "answers": [
       "BBC Studios",
       "Warner Bros. Television",
