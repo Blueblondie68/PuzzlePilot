@@ -276,7 +276,7 @@
 // The original 115 questions and IDs tv_15787–tv_15901 are unchanged.
 // New entries cover all 37 Friday Night Dinner, 20 Miranda and
 // 25 Father Ted scripted episodes, including original Christmas specials.
-// Two separately broadcast charity sketches are covered as bonuses.
+// Separately broadcast charity sketches are covered as bonuses.
 // Every new stem identifies its programme and each has a labelled source.
 const auditAdditions = [
   {
@@ -3383,11 +3383,73 @@ const auditAdditions = [
     "id": "tv_37533",
     "category": "Television",
     "programme": "Father Ted",
+    "question": "In Father Ted, what supposedly dangerous creature frightens Chris the sheep before the island competition?",
+    "answers": [
+      "The Beast of Craggy Island",
+      "A wild boar",
+      "A wolf",
+      "A large fox"
+    ],
+    "correctAnswer": "The Beast of Craggy Island",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S3E2 Chirpy Burpy Cheap Sheep",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: The Beast of Craggy Island",
+      "Episode source: https://www.comedy.co.uk/tv/father_ted/episodes/3/2/",
+      "Chris The Sheep",
+      "Frightening Rumour",
+      "Competition Sabotage"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37534",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, below what speed will Pat Mustard's bomb explode on Dougal's milk float?",
+    "answers": [
+      "Ten miles per hour",
+      "Four miles per hour",
+      "Twenty miles per hour",
+      "Thirty miles per hour"
+    ],
+    "correctAnswer": "Four miles per hour",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S3E3 Speed 3",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Four miles per hour",
+      "Episode source: https://www.tvguide.com/tvshows/father-ted/episodes/1000841038/",
+      "Pat Mustard",
+      "Milk Float Bomb",
+      "Speed Threshold"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37535",
+    "category": "Television",
+    "programme": "Father Ted",
     "question": "In Father Ted, which famous sitcom catchphrase does Ted repeatedly shout at Richard Wilson?",
     "answers": [
-      "I don't believe it!",
       "Don't panic!",
       "Lovely jubbly!",
+      "I don't believe it!",
       "Are you being served?"
     ],
     "correctAnswer": "I don't believe it!",
@@ -3411,15 +3473,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37534",
+    "id": "tv_37536",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, which rival island fields a team against the priests in the over-75s football match?",
     "answers": [
       "Mannion Island",
-      "Rugged Island",
       "Craggy Island North",
-      "Inis Mór"
+      "Inis Mór",
+      "Rugged Island"
     ],
     "correctAnswer": "Rugged Island",
     "difficulty": "Medium",
@@ -3442,14 +3504,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37535",
+    "id": "tv_37537",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, what miraculous resemblance is said to have appeared on the parochial house skirting board?",
     "answers": [
+      "Bishop Brennan's face",
       "The Virgin Mary's face",
       "Father Ted's face",
-      "Bishop Brennan's face",
       "Father Jack's face"
     ],
     "correctAnswer": "Bishop Brennan's face",
@@ -3473,15 +3535,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37536",
+    "id": "tv_37538",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, which number-one novelty song is associated with visitor Eoin McLove?",
     "answers": [
       "My Lovely Horse",
+      "My Lovely Mayo Mammy",
       "Dirty Old Town",
-      "The Craic Is Back",
-      "My Lovely Mayo Mammy"
+      "The Craic Is Back"
     ],
     "correctAnswer": "My Lovely Mayo Mammy",
     "difficulty": "Medium",
@@ -3504,14 +3566,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37537",
+    "id": "tv_37539",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, where in the Los Angeles area is Ted offered a new parish?",
     "answers": [
-      "Beverly Hills",
       "Hollywood Hills",
       "Santa Monica",
+      "Beverly Hills",
       "Pasadena"
     ],
     "correctAnswer": "Beverly Hills",
@@ -3536,10 +3598,10 @@ const auditAdditions = [
   }
 ];
 questions.push(...auditAdditions);
-const auditedTotals = {"Friday Night Dinner":83,"Miranda":67,"Father Ted":70};
-if (questions.length !== 220 ||
+const auditedTotals = {"Friday Night Dinner":83,"Miranda":67,"Father Ted":72};
+if (questions.length !== 222 ||
  questions[0].id !== 'tv_15787' || questions[114].id !== 'tv_15901' ||
- auditAdditions[0].id !== 'tv_37433' || auditAdditions[auditAdditions.length - 1].id !== 'tv_37537' ||
+ auditAdditions[0].id !== 'tv_37433' || auditAdditions[auditAdditions.length - 1].id !== 'tv_37539' ||
  new Set(questions.map(q=>q.id)).size !== questions.length ||
  new Set(questions.map(q=>normalise(q.programme+'|'+q.question))).size !== questions.length ||
  Object.entries(auditedTotals).some(([p,n]) => questions.filter(q=>q.programme===p).length!==n) ||
