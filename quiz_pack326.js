@@ -1551,7 +1551,7 @@ const auditAdditions = [
     "id": "tv_36889",
     "category": "Television",
     "programme": "The Inbetweeners",
-    "question": "In The Inbetweeners, which pub-chain-style event leaves Neil with an unwanted date in Will Gets a Girlfriend?",
+    "question": "In The Inbetweeners, which school charity event leaves Neil with an unwanted date in Will Gets a Girlfriend?",
     "answers": [
       "A speed-dating fundraiser",
       "A charity Blind Date contest",
@@ -2129,14 +2129,14 @@ const auditAdditions = [
     "id": "tv_36906",
     "category": "Television",
     "programme": "The Inbetweeners",
-    "question": "In The Inbetweeners, what sort of university gathering do the boys gatecrash during The Trip to Warwick?",
+    "question": "In The Inbetweeners, whose student house do the boys visit during The Trip to Warwick?",
     "answers": [
-      "A graduation ceremony",
-      "An academic lecture",
-      "A house party",
-      "A debating society meeting"
+      "Tara's sister Sophie",
+      "Will's cousin Louise",
+      "Simon's friend Charlotte",
+      "Neil's sister Katie"
     ],
-    "correctAnswer": "A house party",
+    "correctAnswer": "Tara's sister Sophie",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -2148,12 +2148,12 @@ const auditAdditions = [
       "Programme: The Inbetweeners",
       "2008–2010 original E4 sitcom only",
       "Episode and character coverage",
-      "Correct answer: A house party",
+      "Correct answer: Tara's sister Sophie",
       "UK English",
       "Audited 21 November 2026",
       "Source: https://en.wikipedia.org/wiki/List_of_The_Inbetweeners_episodes",
       "Trip To Warwick",
-      "Student Party",
+      "Student House Visit",
       "University Visit",
       "Series Three"
     ],
