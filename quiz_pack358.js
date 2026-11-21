@@ -136,39 +136,6 @@
     "id": "tv_39043",
     "category": "Television",
     "programme": "Bottom",
-    "question": "Which fearsome neighbour's home must Richie and Eddie enter to undo their illegal gas connection before inspection?",
-    "answers": [
-      "Mr Harrison's",
-      "Dick Head's",
-      "Mr Rottweiler's",
-      "Dave Hedgehog's"
-    ],
-    "correctAnswer": "Mr Rottweiler's",
-    "difficulty": "Hard",
-    "tags": [
-      "Television",
-      "British Television",
-      "Sitcom",
-      "Comedy",
-      "Bottom",
-      "Programme: Bottom",
-      "BBC Two",
-      "Rik Mayall and Adrian Edmondson",
-      "Episode: Gas",
-      "Storyline: Gas line concealed at neighbour's",
-      "Correct: Mr Rottweiler's",
-      "Subject: Gas line concealed at neighbour's",
-      "1991-1995 BBC Comedy",
-      "Character or scene: Gas line concealed at neighbour's",
-      "Specific plot: Gas",
-      "Source: https://www.tvmaze.com/shows/6081/bottom/episodeguide"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39044",
-    "category": "Television",
-    "programme": "Bottom",
     "question": "How much time do the flatmates have to disconnect the illegal gas supply before their inspection in Bottom?",
     "answers": [
       "Twenty-four hours",
@@ -199,7 +166,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39045",
+    "id": "tv_39044",
     "category": "Television",
     "programme": "Bottom",
     "question": "How much money do Eddie and Richie have left between them for the next two months in Bottom's Contest?",
@@ -232,7 +199,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39046",
+    "id": "tv_39045",
     "category": "Television",
     "programme": "Bottom",
     "question": "On which televised beauty contest does Eddie stake money in Bottom?",
@@ -265,7 +232,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39047",
+    "id": "tv_39046",
     "category": "Television",
     "programme": "Bottom",
     "question": "How much money does Richie inherit from his aunt before the fortune-teller's prediction in Bottom?",
@@ -298,7 +265,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39048",
+    "id": "tv_39047",
     "category": "Television",
     "programme": "Bottom",
     "question": "Where does Richie hide to protect himself after a fortune-teller warns he is going to die?",
@@ -331,7 +298,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39049",
+    "id": "tv_39048",
     "category": "Television",
     "programme": "Bottom",
     "question": "What birthday disappointment awaits Richie in the Bottom episode Accident?",
@@ -364,7 +331,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39050",
+    "id": "tv_39049",
     "category": "Television",
     "programme": "Bottom",
     "question": "Which flatmate suffers a broken leg during the disastrous birthday events in Bottom?",
@@ -397,7 +364,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39051",
+    "id": "tv_39050",
     "category": "Television",
     "programme": "Bottom",
     "question": "What social status does Richie falsely claim when using a video dating agency in Bottom?",
@@ -430,7 +397,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39052",
+    "id": "tv_39051",
     "category": "Television",
     "programme": "Bottom",
     "question": "Which retailer takes Richie and Eddie's television away, forcing them to find other entertainment in Bottom?",
@@ -463,7 +430,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39053",
+    "id": "tv_39052",
     "category": "Television",
     "programme": "Bottom",
     "question": "What takeaway does Eddie go out to fetch before the flatmates discover an intruder in Bottom?",
@@ -496,7 +463,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39054",
+    "id": "tv_39053",
     "category": "Television",
     "programme": "Bottom",
     "question": "How much are Richie and Eddie each paid for appearing in a police identity parade in Bottom?",
@@ -529,7 +496,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39055",
+    "id": "tv_39054",
     "category": "Television",
     "programme": "Bottom",
     "question": "Which pub regular gives Richie and Eddie apparently promising betting tips in Bottom?",
@@ -562,7 +529,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39056",
+    "id": "tv_39055",
     "category": "Television",
     "programme": "Bottom",
     "question": "What does Richie believe the abandoned baby at his door represents in Bottom's Christmas episode?",
@@ -595,7 +562,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39057",
+    "id": "tv_39056",
     "category": "Television",
     "programme": "Bottom",
     "question": "What body part does Richie accidentally cut off while preparing for Christmas in Bottom?",
@@ -628,7 +595,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39058",
+    "id": "tv_39057",
     "category": "Television",
     "programme": "Bottom",
     "question": "With whom do Richie and Eddie make a bet that they can survive in the wild on Wimbledon Common in Bottom?",
@@ -661,7 +628,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39059",
+    "id": "tv_39058",
     "category": "Television",
     "programme": "Bottom",
     "question": "What is due to happen to the Ferris wheel on which Richie and Eddie become stranded in Bottom?",
@@ -694,7 +661,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39060",
+    "id": "tv_39059",
     "category": "Television",
     "programme": "Bottom",
     "question": "What device do Richie and Eddie use to make trick-or-treaters more cooperative in Bottom's Halloween episode?",
@@ -727,7 +694,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39061",
+    "id": "tv_39060",
     "category": "Television",
     "programme": "Bottom",
     "question": "Which supernatural figure does Richie consider summoning at his Halloween party in Bottom?",
@@ -760,7 +727,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39062",
+    "id": "tv_39061",
     "category": "Television",
     "programme": "Bottom",
     "question": "What device has Eddie been secretly building to try to make the flatmates rich in Bottom?",
@@ -793,7 +760,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39063",
+    "id": "tv_39062",
     "category": "Television",
     "programme": "Bottom",
     "question": "Who alerts a professional forger after Eddie displays strange banknotes at the pub in Bottom?",
@@ -826,7 +793,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39064",
+    "id": "tv_39063",
     "category": "Television",
     "programme": "Bottom",
     "question": "At which hotel do Richie and Eddie impersonate honeymooners after stealing Taffy O'Jones's tickets in Bottom?",
@@ -859,7 +826,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39065",
+    "id": "tv_39064",
     "category": "Television",
     "programme": "Bottom",
     "question": "What does Richie try to blackmail a political leader with after making amateur films using a stolen camera in Bottom?",
@@ -892,7 +859,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39066",
+    "id": "tv_39065",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "What is the name of the horse which gets drunk at the Phoenix Club's western-themed night?",
@@ -925,7 +892,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39067",
+    "id": "tv_39066",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "What western attraction does Brian bring to the Phoenix after the snooker table breaks?",
@@ -958,7 +925,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39068",
+    "id": "tv_39067",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "Which psychic entertainer offends the Phoenix Club audience during a disastrous show?",
@@ -991,7 +958,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39069",
+    "id": "tv_39068",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "What is the unsuspected job of the woman Brian Potter starts dating in Phoenix Nights?",
@@ -1024,7 +991,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39070",
+    "id": "tv_39069",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "What piece of bedroom furniture does Brian Potter buy when he imagines a new romance in Phoenix Nights?",
@@ -1057,7 +1024,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39071",
+    "id": "tv_39070",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "Who builds the robot for Max and Paddy's competition entry at the Phoenix Club?",
@@ -1090,7 +1057,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39072",
+    "id": "tv_39071",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "What new job opportunity is offered to Jerry after his comedy performance in Phoenix Nights?",
@@ -1123,7 +1090,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39073",
+    "id": "tv_39072",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "What does Brian Potter falsely claim about Jerry's health to help secure the Talent Trek final for the club?",
@@ -1156,7 +1123,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39074",
+    "id": "tv_39073",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "Which rival club owner discards a cigar that starts the blaze which destroys the Phoenix Club?",
@@ -1189,7 +1156,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39075",
+    "id": "tv_39074",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "Where has Jerry St Clair been reduced to working when Brian tries to reassemble the Phoenix Club team?",
@@ -1222,7 +1189,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39076",
+    "id": "tv_39075",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "Which TV quiz presenter appears as Brian Potter's old friend Hoss Cartwright in Phoenix Nights?",
@@ -1255,7 +1222,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39077",
+    "id": "tv_39076",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "What fruity costume is Jerry forced to wear during the Phoenix Club's fundraising fun day?",
@@ -1288,7 +1255,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39078",
+    "id": "tv_39077",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "What event is recreated for television when Brian Potter gets the Phoenix Club featured on Crimetime?",
@@ -1321,7 +1288,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39079",
+    "id": "tv_39078",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "Who is hired to work behind the bar while Brian is arranging the Phoenix's television publicity?",
@@ -1354,40 +1321,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39080",
-    "category": "Television",
-    "programme": "Phoenix Nights",
-    "question": "What kind of event does Brian organise behind Jerry's back at the Phoenix Club?",
-    "answers": [
-      "A karaoke competition",
-      "A country-and-western dance",
-      "A talent audition",
-      "A quiz night"
-    ],
-    "correctAnswer": "A quiz night",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Sitcom",
-      "Comedy",
-      "Phoenix Nights",
-      "Programme: Phoenix Nights",
-      "Channel 4",
-      "Peter Kay",
-      "Episode: Quiz",
-      "Storyline: Brian's secret club event",
-      "Correct: A quiz night",
-      "Subject: Brian's secret club event",
-      "2001-2002 Channel 4 Comedy",
-      "Character or scene: Brian's secret club event",
-      "Specific plot: Quiz",
-      "Source: https://thetvdb.com/series/phoenix-nights/allseasons/official"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39081",
+    "id": "tv_39079",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "Under which stage name does Paddy perform his striptease at the Phoenix Club in Phoenix Nights?",
@@ -1420,7 +1354,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39082",
+    "id": "tv_39080",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "What dangerous favour does a woman ask Max to perform during a ladies' night at the Phoenix Club?",
@@ -1453,7 +1387,7 @@
     "dailyEligible": true
   },
   {
-    "id": "tv_39083",
+    "id": "tv_39081",
     "category": "Television",
     "programme": "Phoenix Nights",
     "question": "Where is Brian Potter trapped when the electricity fails during the Phoenix Club's ladies' night?",
