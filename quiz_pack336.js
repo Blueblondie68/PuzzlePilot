@@ -272,11 +272,3374 @@
  )) {
    throw new Error('Pack 336 exported-object validation failed');
  }
-
- module.exports = questions;
-
-
-
-
-
-
+// 21 November 2026 storyline audit of Pack 336.
+// The original 115 questions and IDs tv_15787–tv_15901 are unchanged.
+// New entries cover all 37 Friday Night Dinner, 20 Miranda and
+// 25 Father Ted scripted episodes, including original Christmas specials.
+// Two separately broadcast charity sketches are covered as bonuses.
+// Every new stem identifies its programme and each has a labelled source.
+const auditAdditions = [
+  {
+    "id": "tv_37433",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what piece of furniture blocks the staircase and traps Jackie and Adam upstairs?",
+    "answers": [
+      "An old sofa bed",
+      "A dining table",
+      "A wardrobe",
+      "A piano"
+    ],
+    "correctAnswer": "An old sofa bed",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S1E1 The Sofabed",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: An old sofa bed",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Trapped Staircase",
+      "eBay Collection",
+      "Jackie Goodman"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37434",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which television cooking competition is Jackie keen to watch while trapped upstairs?",
+    "answers": [
+      "The Great British Bake Off",
+      "MasterChef",
+      "Come Dine with Me",
+      "Ready Steady Cook"
+    ],
+    "correctAnswer": "MasterChef",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S1E1 The Sofabed",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: MasterChef",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "MasterChef",
+      "Jackie Goodman",
+      "TV Viewing"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37435",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what item does Martin use to inspect the inside of his underpants?",
+    "answers": [
+      "A torch",
+      "A camera",
+      "A magnifying glass",
+      "A mirror"
+    ],
+    "correctAnswer": "A magnifying glass",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S1E2 The Jingle",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A magnifying glass",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Martin Goodman",
+      "Underpants",
+      "Magnifying Glass"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37436",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what homemade dish does Martin drop onto the kitchen floor?",
+    "answers": [
+      "Chicken soup",
+      "Apple crumble",
+      "Fish pie",
+      "Beef casserole"
+    ],
+    "correctAnswer": "Beef casserole",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S1E3 The Curtains",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Beef casserole",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Martin Goodman",
+      "Dinner Disaster",
+      "Kitchen Floor"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37437",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which pet goes missing during the evening of the new dress?",
+    "answers": [
+      "Wilson",
+      "Milson",
+      "Pandy",
+      "Buggy"
+    ],
+    "correctAnswer": "Wilson",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S1E4 The Dress",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Wilson",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jim Bell",
+      "Missing Dog",
+      "Family Search"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37438",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which woman nearly runs Adam over on his birthday?",
+    "answers": [
+      "Val",
+      "Sheila Bloom",
+      "Nellie",
+      "Tanya Green"
+    ],
+    "correctAnswer": "Sheila Bloom",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S1E5 The Mercedes",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Sheila Bloom",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Adam Birthday",
+      "Sheila Bloom",
+      "Old Romance"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37439",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what does Martin admit about Sheila Bloom from his past?",
+    "answers": [
+      "She is his secret sister",
+      "She was his employer",
+      "They once had a romantic relationship",
+      "They were classmates"
+    ],
+    "correctAnswer": "They once had a romantic relationship",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S1E5 The Mercedes",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: They once had a romantic relationship",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Martin Past",
+      "Sheila Bloom",
+      "Jackie Jealousy"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37440",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which young woman does Jackie invite in an attempt to set Adam up?",
+    "answers": [
+      "Katie",
+      "Lucy",
+      "Val",
+      "Tanya Green"
+    ],
+    "correctAnswer": "Tanya Green",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S1E6 The Date",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Tanya Green",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Tanya Green",
+      "Adam Blind Date",
+      "Jackie Matchmaking"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37441",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which discarded childhood toy does Jonny want revenge for Adam throwing away?",
+    "answers": [
+      "Pandy",
+      "Wilson",
+      "Lord Luck",
+      "Milson"
+    ],
+    "correctAnswer": "Pandy",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S2E1 Buggy",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Pandy",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jonny Childhood Toy",
+      "Pandy",
+      "Sibling Rivalry"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37442",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what was Adam's childhood toy called that Jonny threatens to destroy?",
+    "answers": [
+      "Pandy",
+      "Buggy",
+      "Lord Luck",
+      "Tommy"
+    ],
+    "correctAnswer": "Buggy",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S2E1 Buggy",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Buggy",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Adam Old Rabbit",
+      "Buggy",
+      "Sibling Revenge"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37443",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, who brings an irritable new male companion to Friday dinner?",
+    "answers": [
+      "Jackie Goodman",
+      "Val",
+      "Grandma Nellie",
+      "Horrible Grandma"
+    ],
+    "correctAnswer": "Grandma Nellie",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S2E2 Mr Morris",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Grandma Nellie",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Grandma Nellie",
+      "Mr Morris",
+      "New Companion"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37444",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what injury does Jonny falsely claim to escape helping in the loft?",
+    "answers": [
+      "A sprained ankle",
+      "A broken wrist",
+      "A bad back",
+      "A dislocated shoulder"
+    ],
+    "correctAnswer": "A dislocated shoulder",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S2E3 The Loft",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A dislocated shoulder",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jonny Pretence",
+      "Loft Cleaning",
+      "Avoiding Chores"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37445",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, whose company car becomes a subject of embarrassment for the family?",
+    "answers": [
+      "Jonny's",
+      "Adam's",
+      "Martin's",
+      "Jim's"
+    ],
+    "correctAnswer": "Jonny's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S2E4 The New Car",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Jonny's",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jonny Goodman",
+      "Company Car",
+      "Family Embarrassment"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37446",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, how old is the boss Jonny is afraid to break up with?",
+    "answers": [
+      "25",
+      "43",
+      "31",
+      "57"
+    ],
+    "correctAnswer": "43",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S2E5 The Yoghurts",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: 43",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jonny Girlfriend",
+      "Older Boss",
+      "Relationship Crisis"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37447",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, where does Jackie retreat to escape the mouse in the house?",
+    "answers": [
+      "The garage",
+      "The bathroom",
+      "The shed",
+      "The caravan"
+    ],
+    "correctAnswer": "The shed",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S2E6 The Mouse",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: The shed",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jackie Goodman",
+      "Mouse Fear",
+      "Shed"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37448",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, who unexpectedly gets to sit down for dinner with the Goodman family?",
+    "answers": [
+      "Mr Morris",
+      "Ben",
+      "Tanya Green",
+      "Jim Bell"
+    ],
+    "correctAnswer": "Jim Bell",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S2E6 The Mouse",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Jim Bell",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jim Bell",
+      "Dinner Invitation",
+      "Mouse Incident"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37449",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which unwelcome relative arrives alongside Grandma Nellie at the Christmas meal?",
+    "answers": [
+      "Horrible Grandma",
+      "Uncle Saul",
+      "Aunt Val",
+      "Sheila Bloom"
+    ],
+    "correctAnswer": "Horrible Grandma",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "2012 Christmas",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Horrible Grandma",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Horrible Grandma",
+      "Christmas Dinner",
+      "Family Tension"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37450",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which eight-year-old develops a crush on Adam when he brings a girlfriend home?",
+    "answers": [
+      "Lucy",
+      "Katie",
+      "Tanya",
+      "Rebecca"
+    ],
+    "correctAnswer": "Katie",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S3E1 The Girlfriend",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Katie",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Katie",
+      "Adam Girlfriend",
+      "Unwanted Attention"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37451",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what dead animal does Martin keep in the garage freezer?",
+    "answers": [
+      "A rabbit",
+      "A badger",
+      "A fox",
+      "A squirrel"
+    ],
+    "correctAnswer": "A fox",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S3E2 The Fox",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A fox",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Martin Goodman",
+      "Freezer Secret",
+      "Taxidermy"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37452",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what announcement concerning Mr Morris distresses Jackie and the boys?",
+    "answers": [
+      "He is moving abroad",
+      "He is standing for election",
+      "He is taking over the house",
+      "Grandma Nellie is engaged to him"
+    ],
+    "correctAnswer": "Grandma Nellie is engaged to him",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S3E3 Mr Morris Returns",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Grandma Nellie is engaged to him",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Nellie Engagement",
+      "Mr Morris",
+      "Family Horror"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37453",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which former prime minister does Martin's portrait of Jackie resemble?",
+    "answers": [
+      "Margaret Thatcher",
+      "Theresa May",
+      "Harold Wilson",
+      "Tony Blair"
+    ],
+    "correctAnswer": "Margaret Thatcher",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S3E4 The Anniversary",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Margaret Thatcher",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jackie Portrait",
+      "Martin Painting",
+      "Anniversary"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37454",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what image does Jonny have tattooed for his parents' anniversary evening?",
+    "answers": [
+      "A heart",
+      "A skull",
+      "A dragon",
+      "A football"
+    ],
+    "correctAnswer": "A skull",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S3E4 The Anniversary",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A skull",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jonny Tattoo",
+      "Skull",
+      "Anniversary Chaos"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37455",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what secret about Aunty Val do the Goodmans discover?",
+    "answers": [
+      "She has won the lottery",
+      "She is moving to France",
+      "She is having an affair",
+      "She is expecting a baby"
+    ],
+    "correctAnswer": "She is having an affair",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S3E5 The Piano",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: She is having an affair",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Val",
+      "Secret Affair",
+      "Piano Tuner"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37456",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, whose wedding forms the climax of the third series?",
+    "answers": [
+      "Adam's",
+      "Jonny's",
+      "Val's",
+      "Grandma Nellie's"
+    ],
+    "correctAnswer": "Grandma Nellie's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S3E6 The Big Day",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Grandma Nellie's",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Grandma Nellie",
+      "Mr Morris",
+      "Wedding"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37457",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what bizarre habit does Martin's unwanted guest have when talking?",
+    "answers": [
+      "He keeps his eyes closed",
+      "He whistles after each sentence",
+      "He sings instead of speaking",
+      "He only whispers"
+    ],
+    "correctAnswer": "He keeps his eyes closed",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S4E1 The Two Tonys",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: He keeps his eyes closed",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Martin Old Friend",
+      "Eyes Closed",
+      "Awkward Guest"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37458",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which household maintenance task leads Martin to ruin Jackie's carpet?",
+    "answers": [
+      "Polishing the windows",
+      "Oiling the hinges",
+      "Repairing the roof",
+      "Cleaning the oven"
+    ],
+    "correctAnswer": "Oiling the hinges",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S4E2 The Carpet Cleaner",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Oiling the hinges",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Martin Goodman",
+      "Hinge Oil",
+      "Carpet Spill"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37459",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, where has Jonny secretly got married before arriving at Friday dinner?",
+    "answers": [
+      "Gretna Green",
+      "Paris",
+      "Las Vegas",
+      "New York"
+    ],
+    "correctAnswer": "Las Vegas",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S4E3 Congratulations",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Las Vegas",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jonny Surprise Marriage",
+      "Las Vegas",
+      "Family Shock"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37460",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, how many attempts did Jim need before passing his driving test?",
+    "answers": [
+      "2",
+      "5",
+      "8",
+      "15"
+    ],
+    "correctAnswer": "15",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S4E4 The Pyjamas",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: 15",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jim Bell",
+      "Driving Test",
+      "Repeated Attempts"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37461",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which relative's funeral brings Horrible Grandma back?",
+    "answers": [
+      "Uncle Saul's",
+      "Grandma Nellie's",
+      "Aunt Val's",
+      "Uncle Philip's"
+    ],
+    "correctAnswer": "Uncle Saul's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S4E5 The Funeral",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Uncle Saul's",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Uncle Saul",
+      "Funeral",
+      "Horrible Grandma"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37462",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what sign shocks Adam and Jonny when they return to their parents' house?",
+    "answers": [
+      "A To Let sign",
+      "A For Sale sign",
+      "A No Parking sign",
+      "A Road Closed sign"
+    ],
+    "correctAnswer": "A For Sale sign",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S4E6 For Sale",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A For Sale sign",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "House Sale",
+      "Adam Jonny",
+      "Family Home"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37463",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what household luxury have Jackie and Martin installed?",
+    "answers": [
+      "A swimming pool",
+      "A sauna",
+      "A hot tub",
+      "A conservatory"
+    ],
+    "correctAnswer": "A hot tub",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S5E1 The Other Jackie",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A hot tub",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Martin Jackie",
+      "Hot Tub",
+      "Son Embarrassment"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37464",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, how old is the tinned meat Martin has been hiding in his shed?",
+    "answers": [
+      "3 years",
+      "7 years",
+      "50 years",
+      "20 years"
+    ],
+    "correctAnswer": "20 years",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S5E2 The Tin of Meat",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: 20 years",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Martin Shed",
+      "Ancient Meat",
+      "Val"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37465",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, who insists on organising her own surprise party?",
+    "answers": [
+      "Jackie Goodman",
+      "Aunty Val",
+      "Grandma Nellie",
+      "Jim Bell"
+    ],
+    "correctAnswer": "Jackie Goodman",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S5E3 The Surprise",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Jackie Goodman",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jackie Party",
+      "Martin Goodman",
+      "Disaster"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37466",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which recently dumped friend of Jonny's comes to dinner needing cheering up?",
+    "answers": [
+      "Tony",
+      "Ben",
+      "Ricky",
+      "Neil"
+    ],
+    "correctAnswer": "Ben",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S5E4 Lord Luck",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Ben",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Ben",
+      "Jonny Friend",
+      "Lord Luck"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37467",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which musical instrument does Adam reluctantly perform on for Jackie and Val?",
+    "answers": [
+      "Piano",
+      "Clarinet",
+      "Violin",
+      "Saxophone"
+    ],
+    "correctAnswer": "Violin",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S5E5 The Violin",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Violin",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Adam Goodman",
+      "Violin Performance",
+      "Jackie And Val"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37468",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what happens to Jim's dog Wilson near the end of the fifth series?",
+    "answers": [
+      "He is rehomed",
+      "He wins a pet show",
+      "He moves abroad",
+      "He dies"
+    ],
+    "correctAnswer": "He dies",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S5E6 Wilson",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: He dies",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Wilson Dies",
+      "Jim Bell",
+      "Emotional Finale"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37469",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what must the boys help Martin assemble or risk losing their crumble?",
+    "answers": [
+      "A wooden shelf",
+      "A bookcase",
+      "A dining table",
+      "A garden bench"
+    ],
+    "correctAnswer": "A wooden shelf",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S5E6 Wilson",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A wooden shelf",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Crumble Threat",
+      "Wooden Shelf",
+      "Martin Goodman"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37470",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what new pet does Jim introduce after losing Wilson?",
+    "answers": [
+      "A cat called Watson",
+      "A dog called Milson",
+      "A parrot called Trevor",
+      "A rabbit called Pandy"
+    ],
+    "correctAnswer": "A dog called Milson",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S6E1 The Caravan",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A dog called Milson",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jim New Dog",
+      "Milson",
+      "Family Neighbour"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37471",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what outdoor item does Martin struggle to recover from a tree?",
+    "answers": [
+      "A football",
+      "A drone",
+      "A plastic bag",
+      "A lost kite"
+    ],
+    "correctAnswer": "A plastic bag",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S6E2 The Plastic Bag",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A plastic bag",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Martin Obsession",
+      "Bag In Tree",
+      "Goodman Garden"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37472",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, which former household helper arrives for an unwelcome reunion?",
+    "answers": [
+      "A childhood schoolteacher",
+      "Their first cleaner",
+      "An old piano tutor",
+      "The family's former au pair"
+    ],
+    "correctAnswer": "The family's former au pair",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S6E3 The Au Pair",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: The family's former au pair",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Former Au Pair",
+      "Cream Teas",
+      "Family Tension"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37473",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, whose birthday is disrupted by Horrible Grandma's uninvited arrival?",
+    "answers": [
+      "Martin's",
+      "Adam's",
+      "Jonny's",
+      "Jim's"
+    ],
+    "correctAnswer": "Martin's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S6E4 Dad's Birthday",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Martin's",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Martin Birthday",
+      "Horrible Grandma",
+      "Jim Magic"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37474",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what huge object does Jim install in the Goodmans' living room?",
+    "answers": [
+      "A trampoline",
+      "A dog cage",
+      "A chicken coop",
+      "A birdcage"
+    ],
+    "correctAnswer": "A dog cage",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S6E5 The Cage",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A dog cage",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Jim Bell",
+      "Milson",
+      "Giant Dog Cage"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37475",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what unusual romantic description does Val give to a man she has a date with?",
+    "answers": [
+      "A circus clown",
+      "A secret agent",
+      "A sex robot",
+      "A rock star"
+    ],
+    "correctAnswer": "A sex robot",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S6E5 The Cage",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A sex robot",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Val Date",
+      "Sex Robot",
+      "Digital Romance"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37476",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what news do Adam and Jonny's girlfriends both reveal in the series finale?",
+    "answers": [
+      "They are moving abroad",
+      "They have won a competition",
+      "They are sisters",
+      "They are pregnant"
+    ],
+    "correctAnswer": "They are pregnant",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S6E6 The Females",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: They are pregnant",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Adam Jonny",
+      "Pregnancies",
+      "Family Future"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37477",
+    "category": "Television",
+    "programme": "Friday Night Dinner",
+    "question": "In Friday Night Dinner, what coincidence about Adam and Jonny's girlfriends is revealed before the final dinner?",
+    "answers": [
+      "They share the first name Lucy",
+      "They work at the same shop",
+      "They have the same birthday",
+      "They were born in America"
+    ],
+    "correctAnswer": "They share the first name Lucy",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Friday Night Dinner",
+      "Programme: Friday Night Dinner",
+      "S6E6 The Females",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: They share the first name Lucy",
+      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Adam Girlfriend",
+      "Jonny Girlfriend",
+      "Lucy"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37478",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what does Miranda falsely claim she has achieved in sport to impress Gary?",
+    "answers": [
+      "World swimming champion",
+      "Olympic gymnastics",
+      "Professional tennis",
+      "National figure skating"
+    ],
+    "correctAnswer": "Olympic gymnastics",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S1E1 Date",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Olympic gymnastics",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Miranda Gary",
+      "Exaggerated Achievement",
+      "First Meeting"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37479",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, which foreign-language evening class reunites Miranda with an old teacher?",
+    "answers": [
+      "German",
+      "Spanish",
+      "French",
+      "Italian"
+    ],
+    "correctAnswer": "French",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S1E2 Teacher",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: French",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "French Class",
+      "Old Teacher",
+      "Romantic Confidence"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37480",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, why does Miranda suddenly seek a more respectable job?",
+    "answers": [
+      "Stevie closes the shop",
+      "Gary demands she become a teacher",
+      "She inherits a company",
+      "Penny has exaggerated her career to an old school friend"
+    ],
+    "correctAnswer": "Penny has exaggerated her career to an old school friend",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S1E3 Job",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Penny has exaggerated her career to an old school friend",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Penny Hart",
+      "Career Lie",
+      "Job Search"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37481",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, where does Miranda actually go for her supposedly relaxing holiday?",
+    "answers": [
+      "A hotel across the road",
+      "The south of France",
+      "A caravan in Scotland",
+      "A yacht in Greece"
+    ],
+    "correctAnswer": "A hotel across the road",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S1E4 Holiday",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A hotel across the road",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Holiday Across Road",
+      "Hotel",
+      "Miranda Escape"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37482",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what is the name of the hotel porter Miranda befriends?",
+    "answers": [
+      "Mike",
+      "Jason",
+      "Gary",
+      "Clive"
+    ],
+    "correctAnswer": "Jason",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S1E4 Holiday",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Jason",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Hotel Porter",
+      "Jason",
+      "Holiday Friendship"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37483",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what does Miranda need to invent to avoid a date arranged by Penny?",
+    "answers": [
+      "A false engagement ring",
+      "A new business plan",
+      "An excuse",
+      "A travel itinerary"
+    ],
+    "correctAnswer": "An excuse",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S1E5 Excuse",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: An excuse",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Penny Matchmaking",
+      "Unwanted Date",
+      "Pretence"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37484",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what forgotten property brings a handsome stranger into Miranda's shop?",
+    "answers": [
+      "His dog lead",
+      "His mobile phone",
+      "His car keys",
+      "His wallet"
+    ],
+    "correctAnswer": "His wallet",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S1E6 Dog",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: His wallet",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Handsome Stranger",
+      "Lost Wallet",
+      "Stevie Rivalry"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37485",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, which famous rowing event does Tilly invite Miranda to?",
+    "answers": [
+      "Henley Regatta",
+      "The Boat Race",
+      "The Oxford Regatta",
+      "The Great River Race"
+    ],
+    "correctAnswer": "Henley Regatta",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S1E6 Dog",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Henley Regatta",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Tilly",
+      "Henley Regatta",
+      "Social Invitation"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37486",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what has Miranda been spending much of her time doing since Gary went away?",
+    "answers": [
+      "Training for a marathon",
+      "Eating biscuits and watching television",
+      "Learning to sail",
+      "Studying for medical school"
+    ],
+    "correctAnswer": "Eating biscuits and watching television",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S2E1 The New Me",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Eating biscuits and watching television",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Gary Absent",
+      "Miranda Retreats",
+      "Self Reinvention"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37487",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, which fundraising challenge does Miranda sign up for after worrying about her legacy?",
+    "answers": [
+      "A sponsored swim",
+      "A mountain climb",
+      "A charity parachute jump",
+      "A long-distance cycle ride"
+    ],
+    "correctAnswer": "A charity parachute jump",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S2E2 Before I Die",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A charity parachute jump",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Charity Jump",
+      "Personal Legacy",
+      "Miranda Self Esteem"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37488",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what new problem confronts Miranda after she finds some confidence?",
+    "answers": [
+      "She is unexpectedly fired",
+      "Her shop is robbed",
+      "She inherits a farm",
+      "Several men show romantic interest"
+    ],
+    "correctAnswer": "Several men show romantic interest",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S2E3 Let's Do It",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Several men show romantic interest",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Multiple Suitors",
+      "Confidence",
+      "Romantic Confusion"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37489",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what sort of newcomer makes Miranda and Stevie worry about keeping up?",
+    "answers": [
+      "A much younger energetic woman",
+      "A former school principal",
+      "A retired shopkeeper",
+      "An elderly fashion designer"
+    ],
+    "correctAnswer": "A much younger energetic woman",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S2E4 A New Low",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A much younger energetic woman",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Young Rival",
+      "Miranda Stevie",
+      "Competition"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37490",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, which activity forces Miranda and her mother to face a silent professional?",
+    "answers": [
+      "A job interview",
+      "A therapy assessment",
+      "A courtroom appearance",
+      "A radio quiz"
+    ],
+    "correctAnswer": "A therapy assessment",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S2E5 Just Act Normal",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A therapy assessment",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Miranda Penny",
+      "Therapist",
+      "Family Assessment"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37491",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, where do Miranda and Stevie try to spend Christmas with their friends?",
+    "answers": [
+      "At a ski lodge",
+      "At Penny's holiday villa",
+      "At the joke shop",
+      "At a seaside hotel"
+    ],
+    "correctAnswer": "At the joke shop",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S2E6 The Perfect Christmas",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: At the joke shop",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Christmas Shop",
+      "Gary And Clive",
+      "Friendship"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37492",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what does Penny insist Miranda undertake before Christmas can go ahead?",
+    "answers": [
+      "A driving test",
+      "A new apprenticeship",
+      "An overseas holiday",
+      "A detox"
+    ],
+    "correctAnswer": "A detox",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S3E1 It Was Panning",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A detox",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Penny Christmas Ultimatum",
+      "Detox",
+      "Family Pressure"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37493",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what public role does Penny seek with Tilly's help?",
+    "answers": [
+      "Local councillor",
+      "Mayor of London",
+      "Member of Parliament",
+      "Police commissioner"
+    ],
+    "correctAnswer": "Local councillor",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S3E2 What a Surprise",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Local councillor",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Penny Political Campaign",
+      "Tilly",
+      "Miranda Embarrassment"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37494",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, whose birthday party do Miranda and Gary both want dates for?",
+    "answers": [
+      "Penny's",
+      "Stevie's",
+      "Tilly's",
+      "Clive's"
+    ],
+    "correctAnswer": "Stevie's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S3E2 What a Surprise",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Stevie's",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Stevie Birthday",
+      "Miranda Gary",
+      "New Dates"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37495",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what play area does Miranda find herself stuck in while looking after a toddler?",
+    "answers": [
+      "A ball pool at the seaside",
+      "A school climbing frame",
+      "A children's soft-play tunnel",
+      "An adventure playground zipwire"
+    ],
+    "correctAnswer": "A children's soft-play tunnel",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S3E3 The Dinner Party",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A children's soft-play tunnel",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Childcare",
+      "Soft Play",
+      "Miranda Mischief"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37496",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, how many guests does Miranda invite to prove she can host an adult dinner party?",
+    "answers": [
+      "Two",
+      "Four",
+      "Twelve",
+      "Eight"
+    ],
+    "correctAnswer": "Eight",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S3E3 The Dinner Party",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Eight",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Adulting",
+      "Dinner Party",
+      "Eight Guests"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37497",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, whom does Miranda spend five days nursing before becoming ill herself?",
+    "answers": [
+      "Penny",
+      "Stevie",
+      "Gary",
+      "Tilly"
+    ],
+    "correctAnswer": "Penny",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S3E4 Je Regret Nothing",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Penny",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Penny Illness",
+      "Miranda Caregiver",
+      "Regrets"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37498",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, whose restaurant prepares for a grand reopening?",
+    "answers": [
+      "Clive's",
+      "Gary's",
+      "Mike's",
+      "Stevie's"
+    ],
+    "correctAnswer": "Gary's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S3E5 Three Little Words",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Gary's",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Gary Restaurant",
+      "Reopening",
+      "Romance"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37499",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, which celebrity chef does Penny become obsessed with?",
+    "answers": [
+      "Gordon Ramsay",
+      "Jamie Oliver",
+      "Raymond Blanc",
+      "Nigella Lawson"
+    ],
+    "correctAnswer": "Raymond Blanc",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S3E5 Three Little Words",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Raymond Blanc",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Penny",
+      "Raymond Blanc",
+      "Celebrity Chef"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37500",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what radical plan does Miranda make when she feels fed up with her life?",
+    "answers": [
+      "Join the army",
+      "Sell her shop to Clive",
+      "Move to Cornwall permanently",
+      "Go travelling"
+    ],
+    "correctAnswer": "Go travelling",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S3E6 A Brief Encounter",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Go travelling",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Miranda Travels",
+      "Gary",
+      "Life Choice"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37501",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, what event is Penny more focused on than her daughter's travel plans?",
+    "answers": [
+      "Renewing her wedding vows",
+      "A council election count",
+      "Stevie's birthday",
+      "A television appearance"
+    ],
+    "correctAnswer": "Renewing her wedding vows",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "S3E6 A Brief Encounter",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Renewing her wedding vows",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Penny Wedding Vows",
+      "Miranda Departure",
+      "Family"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37502",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, which two men both propose marriage to Miranda?",
+    "answers": [
+      "Gary and Clive",
+      "Gary and Mike",
+      "Mike and Colin",
+      "Gary and Jason"
+    ],
+    "correctAnswer": "Gary and Mike",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "2014 I Do But To Who",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Gary and Mike",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Two Proposals",
+      "Gary Preston",
+      "Mike"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37503",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, which man does Miranda finally marry?",
+    "answers": [
+      "Mike",
+      "Clive",
+      "Gary Preston",
+      "Jason"
+    ],
+    "correctAnswer": "Gary Preston",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "2015 The Final Curtain",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Gary Preston",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Miranda Wedding",
+      "Gary Preston",
+      "Series Resolution"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37504",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, whose wedding does Miranda mistakenly interrupt because she thinks Gary is the groom?",
+    "answers": [
+      "Tilly's",
+      "Stevie's",
+      "Mike's",
+      "Clive's"
+    ],
+    "correctAnswer": "Clive's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "2015 The Final Curtain",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Clive's",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Clive Wedding",
+      "Gary Best Man",
+      "Romantic Mixup"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37505",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, at which performing-arts venue does Miranda take over the artistic director's role?",
+    "answers": [
+      "Pineapple Dance Studios",
+      "Royal Albert Hall",
+      "Sadler's Wells",
+      "The London Palladium"
+    ],
+    "correctAnswer": "Pineapple Dance Studios",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "2011 Comic Relief sketch",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Pineapple Dance Studios",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Comic Relief",
+      "Pineapple Dance Studios",
+      "Artistic Director"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37506",
+    "category": "Television",
+    "programme": "Miranda",
+    "question": "In Miranda, which London venue hosts the tennis event Miranda attends?",
+    "answers": [
+      "Wembley Stadium",
+      "Royal Albert Hall",
+      "The O2 Arena",
+      "Queen's Club"
+    ],
+    "correctAnswer": "Royal Albert Hall",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Miranda",
+      "Programme: Miranda",
+      "2012 Sport Relief sketch",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Royal Albert Hall",
+      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Sport Relief",
+      "Indoor Tennis",
+      "Royal Albert Hall"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37507",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what television-related opportunity initially appears to offer Ted fame?",
+    "answers": [
+      "A celebrity cooking contest",
+      "A quiz-show hosting job",
+      "An interview with Terry MacNamee",
+      "A comedy audition"
+    ],
+    "correctAnswer": "An interview with Terry MacNamee",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S1E1 Good Luck Father Ted",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: An interview with Terry MacNamee",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Terry MacNamee",
+      "Television Interview",
+      "Ted Ambition"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37508",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which temporary attraction ruins Ted's plans to film at a local beauty spot?",
+    "answers": [
+      "A travelling circus",
+      "A music festival",
+      "A motor show",
+      "Funland"
+    ],
+    "correctAnswer": "Funland",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S1E1 Good Luck Father Ted",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Funland",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Funland",
+      "Film Crew",
+      "Bad Timing"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37509",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what accident makes Ted feel guilty about wishing Father Stone would go away?",
+    "answers": [
+      "The priest is struck by lightning",
+      "He breaks a leg while jogging",
+      "He falls from a boat",
+      "He is hit by a golf ball"
+    ],
+    "correctAnswer": "The priest is struck by lightning",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S1E2 Entertaining Father Stone",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: The priest is struck by lightning",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Father Stone",
+      "Lightning Strike",
+      "Ted Guilt"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37510",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, who orders the priests to protest a controversial film?",
+    "answers": [
+      "Father Dick Byrne",
+      "Bishop Brennan",
+      "Father Stone",
+      "Mrs Doyle"
+    ],
+    "correctAnswer": "Bishop Brennan",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S1E3 The Passion of Saint Tibulus",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Bishop Brennan",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Bishop Brennan",
+      "Film Protest",
+      "Moral Crusade"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37511",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which opposing island's priests does Ted hope to defeat in a lookalike contest?",
+    "answers": [
+      "Mannion Island",
+      "Inis Mór",
+      "Rugged Island",
+      "Lambay Island"
+    ],
+    "correctAnswer": "Rugged Island",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S1E4 Competition Time",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Rugged Island",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Rugged Island",
+      "Priest Contest",
+      "Ted Rivalry"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37512",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what is the title of novelist Polly Clarke's racy book?",
+    "answers": [
+      "The Thorn Birds",
+      "A Woman of Substance",
+      "The Country Girls",
+      "Bejewelled with Kisses"
+    ],
+    "correctAnswer": "Bejewelled with Kisses",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S1E5 And God Created Woman",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Bejewelled with Kisses",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Polly Clarke",
+      "Romance Novel",
+      "Ted Attraction"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37513",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, how much money are Ted and Dougal led to believe Father Jack has left them?",
+    "answers": [
+      "Half a million pounds",
+      "Ten thousand pounds",
+      "Five million pounds",
+      "A thousand pounds"
+    ],
+    "correctAnswer": "Half a million pounds",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S1E6 Grant Unto Him Eternal Rest",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Half a million pounds",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Jack Inheritance",
+      "Will",
+      "Ted Dougal"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37514",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, whose caravan do Ted and the others borrow for their disastrous summer holiday?",
+    "answers": [
+      "Father Stone's",
+      "Father O'Rourke's",
+      "Bishop Brennan's",
+      "Father Dick Byrne's"
+    ],
+    "correctAnswer": "Father O'Rourke's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E1 Hell",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Father O'Rourke's",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Father ORourke",
+      "Caravan Holiday",
+      "Kilkenny"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37515",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what sort of neighbours spoil the priests' holiday?",
+    "answers": [
+      "A rowdy stag party",
+      "A group of golfers",
+      "Nudists",
+      "A touring choir"
+    ],
+    "correctAnswer": "Nudists",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E1 Hell",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Nudists",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Nudist Neighbours",
+      "Caravan Holiday",
+      "Ted Embarrassment"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37516",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what household problem prompts Ted to organise a raffle?",
+    "answers": [
+      "A blocked chimney",
+      "A burst boiler",
+      "A broken staircase",
+      "A leaking roof"
+    ],
+    "correctAnswer": "A leaking roof",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E2 Think Fast Father Ted",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A leaking roof",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Leaky Roof",
+      "Raffle Fundraiser",
+      "Parochial House"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37517",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which relic are visiting bishops assessing for a higher classification?",
+    "answers": [
+      "The Holy Stone of Clonrickert",
+      "The Book of Kells",
+      "The Cross of Cong",
+      "Saint Patrick's Bell"
+    ],
+    "correctAnswer": "The Holy Stone of Clonrickert",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E3 Tentacles of Doom",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: The Holy Stone of Clonrickert",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Clonrickert",
+      "Holy Stone",
+      "Bishops Visit"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37518",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, to what class are visiting bishops considering upgrading the Holy Stone?",
+    "answers": [
+      "Class I",
+      "Class II",
+      "Class III",
+      "Class IV"
+    ],
+    "correctAnswer": "Class II",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E3 Tentacles of Doom",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Class II",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Holy Stone",
+      "Class Two",
+      "Relic Status"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37519",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which rebellious young priest befriends Dougal during the stolen-whistle mystery?",
+    "answers": [
+      "Father Fintan Stack",
+      "Father Stone",
+      "Father Damien Lennon",
+      "Father Larry Duff"
+    ],
+    "correctAnswer": "Father Damien Lennon",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E4 Old Grey Whistle Theft",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Father Damien Lennon",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Father Damo Lennon",
+      "Rebellious Priest",
+      "Dougal"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37520",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what useful item is stolen from the local picnic supervisor Mr Benson?",
+    "answers": [
+      "His bicycle",
+      "His telescope",
+      "His radio",
+      "His whistle"
+    ],
+    "correctAnswer": "His whistle",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E4 Old Grey Whistle Theft",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: His whistle",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Mr Benson",
+      "Whistle Stolen",
+      "Picnic Area"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37521",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what international music contest do Ted and Dougal try to enter?",
+    "answers": [
+      "Eurosong",
+      "The X Factor",
+      "The Eurovision Song Contest for Priests",
+      "The National Song Awards"
+    ],
+    "correctAnswer": "Eurosong",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E5 A Song for Europe",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Eurosong",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Eurosong",
+      "Ted Dougal",
+      "Song Entry"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37522",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what title do Ted and Dougal give their terrible competition song?",
+    "answers": [
+      "A Song for Ireland",
+      "My Lovely Horse",
+      "The Song of Craggy Island",
+      "Lovely Girls Forever"
+    ],
+    "correctAnswer": "My Lovely Horse",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E5 A Song for Europe",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: My Lovely Horse",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "My Lovely Horse",
+      "Eurovision Parody",
+      "Song Competition"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37523",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what name does Dougal give his pet rabbit?",
+    "answers": [
+      "Tennis",
+      "Wimbledon",
+      "Sampras",
+      "Flopsy"
+    ],
+    "correctAnswer": "Sampras",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E6 The Plague",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Sampras",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Rabbit Sampras",
+      "Bishop Brennan",
+      "Animal Phobia"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37524",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which visitor's fear of rabbits drives the episode's chaos?",
+    "answers": [
+      "Father Jack",
+      "Father Dick Byrne",
+      "Father Fintan Stack",
+      "Bishop Brennan"
+    ],
+    "correctAnswer": "Bishop Brennan",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E6 The Plague",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Bishop Brennan",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Rabbit Phobia",
+      "Bishop Brennan",
+      "Dougal Pet"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37525",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which competition is Ted asked to judge during the singer's visit?",
+    "answers": [
+      "The Lovely Girls Festival",
+      "The All-Priests Football Cup",
+      "The Craggy Island Bake Off",
+      "The Eurovision Final"
+    ],
+    "correctAnswer": "The Lovely Girls Festival",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E7 Rock A Hula Ted",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: The Lovely Girls Festival",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Lovely Girls",
+      "Ted Judge",
+      "Gender Satire"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37526",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what sort of performer is unimpressed by the Lovely Girls event?",
+    "answers": [
+      "A visiting opera soprano",
+      "A feminist protest singer",
+      "A boy-band singer",
+      "A jazz pianist"
+    ],
+    "correctAnswer": "A feminist protest singer",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E7 Rock A Hula Ted",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A feminist protest singer",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Protest Singer",
+      "Feminism",
+      "Lovely Girls"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37527",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which religious period inspires Ted and his colleagues to give up pleasures?",
+    "answers": [
+      "Advent",
+      "Easter Week",
+      "Lent",
+      "Whitsun"
+    ],
+    "correctAnswer": "Lent",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E8 Cigarettes and Alcohol and Rollerblading",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Lent",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Lent",
+      "Self Denial",
+      "Priests"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37528",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what illness sends Father Jack away from the parochial house?",
+    "answers": [
+      "Food poisoning",
+      "Double pneumonia",
+      "Tropical fever",
+      "Hairy hands syndrome"
+    ],
+    "correctAnswer": "Hairy hands syndrome",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E9 New Jack City",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Hairy hands syndrome",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Father Jack",
+      "Hairy Hands",
+      "Old Priests Home"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37529",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which obnoxious priest is sent as Father Jack's replacement?",
+    "answers": [
+      "Father Fintan Stack",
+      "Father Damien Lennon",
+      "Father Stone",
+      "Father Dick Byrne"
+    ],
+    "correctAnswer": "Father Fintan Stack",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E9 New Jack City",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Father Fintan Stack",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Fintan Stack",
+      "Replacement Priest",
+      "Bishop Brennan"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37530",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what does Dougal do to create the plane's emergency?",
+    "answers": [
+      "He opens the emergency door",
+      "He accidentally causes a loss of fuel",
+      "He starts a fire in the kitchen",
+      "He damages the landing gear"
+    ],
+    "correctAnswer": "He accidentally causes a loss of fuel",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S2E10 Flight Into Terror",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: He accidentally causes a loss of fuel",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Dougal Cockpit",
+      "Fuel Emergency",
+      "Airplane"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37531",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, where do eight priests get hopelessly lost while Christmas shopping?",
+    "answers": [
+      "A supermarket stockroom",
+      "A hotel basement",
+      "A department store lingerie section",
+      "A shopping centre car park"
+    ],
+    "correctAnswer": "A department store lingerie section",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "1996 A Christmassy Ted",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A department store lingerie section",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Christmas Shopping",
+      "Lingerie Department",
+      "Priests Trapped"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37532",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what fundraising target must Ted and Dougal try to reach during the telethon?",
+    "answers": [
+      "One million pounds",
+      "Five hundred thousand pounds",
+      "Twenty million pounds",
+      "Eight million pounds"
+    ],
+    "correctAnswer": "Eight million pounds",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "1997 Comic Relief sketch",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Eight million pounds",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Comic Relief",
+      "Telethon",
+      "Money Target"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37533",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what misunderstanding triggers accusations of racism against Ted?",
+    "answers": [
+      "An ill-timed impression and a dirty window",
+      "A newspaper interview",
+      "A dispute about food",
+      "An argument at the pub"
+    ],
+    "correctAnswer": "An ill-timed impression and a dirty window",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S3E1 Are You Right There Father Ted",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: An ill-timed impression and a dirty window",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Racism Rumour",
+      "Dirty Window",
+      "Ill Timed Impression"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37534",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what kind of agricultural event leads Ted to gamble the heating allowance?",
+    "answers": [
+      "A cattle sale",
+      "A sheep competition",
+      "A horse race",
+      "A farm produce show"
+    ],
+    "correctAnswer": "A sheep competition",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S3E2 Chirpy Burpy Cheap Sheep",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: A sheep competition",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Sheep Trials",
+      "Chris The Sheep",
+      "Heating Money"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37535",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, who takes over the milk round after Pat Mustard loses his job?",
+    "answers": [
+      "Father Jack",
+      "Mrs Doyle",
+      "Father Dougal",
+      "Father Dick Byrne"
+    ],
+    "correctAnswer": "Father Dougal",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S3E3 Speed 3",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Father Dougal",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Pat Mustard",
+      "Dougal Replacement",
+      "Milk Float"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37536",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which famous sitcom catchphrase does Ted repeatedly shout at Richard Wilson?",
+    "answers": [
+      "Don't panic!",
+      "Lovely jubbly!",
+      "Are you being served?",
+      "I don't believe it!"
+    ],
+    "correctAnswer": "I don't believe it!",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S3E4 The Mainland",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: I don't believe it!",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Richard Wilson",
+      "One Foot In The Grave",
+      "Ted Annoyance"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37537",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which rival island fields a team against the priests in the over-75s football match?",
+    "answers": [
+      "Rugged Island",
+      "Mannion Island",
+      "Craggy Island North",
+      "Inis Mór"
+    ],
+    "correctAnswer": "Rugged Island",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S3E5 Escape From Victory",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Rugged Island",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Over 75s Football",
+      "Dick Byrne",
+      "Rival Island"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37538",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, what miraculous resemblance is said to have appeared on the parochial house skirting board?",
+    "answers": [
+      "The Virgin Mary's face",
+      "Bishop Brennan's face",
+      "Father Ted's face",
+      "Father Jack's face"
+    ],
+    "correctAnswer": "Bishop Brennan's face",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S3E6 Kicking Bishop Brennan Up The Arse",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Bishop Brennan's face",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Skirting Board",
+      "Bishop Brennan",
+      "Bet Trap"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37539",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, which number-one novelty song is associated with visitor Eoin McLove?",
+    "answers": [
+      "My Lovely Horse",
+      "Dirty Old Town",
+      "My Lovely Mayo Mammy",
+      "The Craic Is Back"
+    ],
+    "correctAnswer": "My Lovely Mayo Mammy",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S3E7 Night of the Nearly Dead",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: My Lovely Mayo Mammy",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Eoin McLove",
+      "Novelty Hit",
+      "Singer"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_37540",
+    "category": "Television",
+    "programme": "Father Ted",
+    "question": "In Father Ted, where in the Los Angeles area is Ted offered a new parish?",
+    "answers": [
+      "Hollywood Hills",
+      "Santa Monica",
+      "Pasadena",
+      "Beverly Hills"
+    ],
+    "correctAnswer": "Beverly Hills",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "British Comedy",
+      "Sitcom",
+      "Father Ted",
+      "Programme: Father Ted",
+      "S3E8 Going to America",
+      "Episode storyline",
+      "2026 TV quiz audit",
+      "Answer: Beverly Hills",
+      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Beverly Hills",
+      "American Parish",
+      "Ted Final Choice"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditAdditions);
+const auditedTotals = {"Friday Night Dinner":83,"Miranda":67,"Father Ted":73};
+if (questions.length !== 223 ||
+ questions[0].id !== 'tv_15787' || questions[114].id !== 'tv_15901' ||
+ auditAdditions[0].id !== 'tv_37433' || auditAdditions[auditAdditions.length - 1].id !== 'tv_37540' ||
+ new Set(questions.map(q=>q.id)).size !== questions.length ||
+ new Set(questions.map(q=>normalise(q.programme+'|'+q.question))).size !== questions.length ||
+ Object.entries(auditedTotals).some(([p,n]) => questions.filter(q=>q.programme===p).length!==n) ||
+ questions.some(q=>q.answers.length!==4 ||
+ new Set(q.answers.map(normalise)).size!==4 ||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1 ||
+ !q.tags.includes('Programme: '+q.programme) || q.dailyEligible!==true) ||
+ auditAdditions.some(q=>!q.question.startsWith('In '+q.programme+', ') || q.tags.length<14))
+ throw Error('Pack 336 post-audit validation failed');
+module.exports = questions;
