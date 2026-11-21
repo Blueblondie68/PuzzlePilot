@@ -2711,14 +2711,750 @@ const auditAdditions = [
       "Beautiful guest"
     ],
     "dailyEligible": true
+  },
+  {
+    "id": "tv_38188",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E01: The Visitor), which three friends are outside playing when they first hear an unfamiliar space module approaching?",
+    "answers": [
+      "Granny, Major and Mother",
+      "The Iron Chicken and the Wols",
+      "Tiny, Small and Baby Soup Dragon",
+      "The Soup Dragon and the Froglets"
+    ],
+    "correctAnswer": "Tiny, Small and Baby Soup Dragon",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E01 The Visitor",
+      "Revival storyline",
+      "Answer: Tiny, Small and Baby Soup Dragon",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Astronaut landing",
+      "First witnesses",
+      "Space module"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38189",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E02: Radio Wol), what failure persuades the visiting Wols to start a radio station of their own for the Iron Chicken?",
+    "answers": [
+      "The Iron Chicken loses her singing voice",
+      "Major Clanger breaks the music boat",
+      "The Froglets steal her telescope",
+      "Her ordinary radio stops working"
+    ],
+    "correctAnswer": "Her ordinary radio stops working",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E02 Radio Wol",
+      "Revival storyline",
+      "Answer: Her ordinary radio stops working",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Broken radio",
+      "Iron Chicken",
+      "Wols help"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38190",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E03: Medal), what argument develops after Major rewards only three Froglets for helping him in his workshop?",
+    "answers": [
+      "The medal-winners start looking down on the others",
+      "The medal-winners refuse to go home",
+      "The Froglets demand blue soup",
+      "The Froglets challenge the Iron Chicken to a race"
+    ],
+    "correctAnswer": "The medal-winners start looking down on the others",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E03 Medal",
+      "Revival storyline",
+      "Answer: The medal-winners start looking down on the others",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Rewards",
+      "Froglet rivalry",
+      "Unfair privilege"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38191",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E04: Strange Music), what has caused the music trees' notes to fall and become muddled?",
+    "answers": [
+      "A comet has destroyed a soup well",
+      "An Eggbot has crashed into the planet",
+      "The Moon Whale has eaten the notes",
+      "The Wols have shaken the branches"
+    ],
+    "correctAnswer": "An Eggbot has crashed into the planet",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E04 Strange Music",
+      "Revival storyline",
+      "Answer: An Eggbot has crashed into the planet",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Notes out of order",
+      "Eggbot crash",
+      "Music restored"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38192",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E06: Small to the Rescue), which group of grown-up friends gets into trouble and needs Small's help?",
+    "answers": [
+      "The Iron Chicken and the Wols only",
+      "The Froglets and the Moon Whale",
+      "Granny, Major, Mother and the Soup Dragon",
+      "Tiny and all the Sky Moos"
+    ],
+    "correctAnswer": "Granny, Major, Mother and the Soup Dragon",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E06 Small to the Rescue",
+      "Revival storyline",
+      "Answer: Granny, Major, Mother and the Soup Dragon",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Small rescues",
+      "Family troubles",
+      "Multiple friends"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38193",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E07: The Song of the Stars), what unusual ability does the garden ornament Small brings Mother have?",
+    "answers": [
+      "It turns sunlight into green soup",
+      "It paints pictures of the stars",
+      "It knits clothes from spider webs",
+      "It remembers melodies and plays them back together"
+    ],
+    "correctAnswer": "It remembers melodies and plays them back together",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E07 The Song of the Stars",
+      "Revival storyline",
+      "Answer: It remembers melodies and plays them back together",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Musical ornament",
+      "Collected sounds",
+      "Harmony"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38194",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E08: Catch a Falling Star), what unexpectedly transforms a string of mishaps for the Clangers into a happier day?",
+    "answers": [
+      "Colourful light from a passing star",
+      "A delivery of new tools from Earth",
+      "A bowl of magical soup",
+      "A message from the Iron Chicken"
+    ],
+    "correctAnswer": "Colourful light from a passing star",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E08 Catch a Falling Star",
+      "Revival storyline",
+      "Answer: Colourful light from a passing star",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Bad luck",
+      "Coloured starlight",
+      "Changes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38195",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E09: Baby Skymoo), what does Granny knit to help the Sky Moos prepare a special nest for an expected new arrival?",
+    "answers": [
+      "A winter hat",
+      "A blanket",
+      "A woollen scarf",
+      "A pair of gloves"
+    ],
+    "correctAnswer": "A blanket",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E09 Baby Skymoo",
+      "Revival storyline",
+      "Answer: A blanket",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Baby Skymoo",
+      "Nest preparation",
+      "Granny kindness"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38196",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E10: Small's Big Surprise), what misunderstanding makes Small think he is getting a scooter for his birthday?",
+    "answers": [
+      "He sees a wrapped bicycle in the workshop",
+      "The Wols tell him about a scooter competition",
+      "He overhears Tiny and Major discussing a squeaky scooter",
+      "He finds a toy scooter outside his bedcave"
+    ],
+    "correctAnswer": "He overhears Tiny and Major discussing a squeaky scooter",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E10 Small's Big Surprise",
+      "Revival storyline",
+      "Answer: He overhears Tiny and Major discussing a squeaky scooter",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Small birthday",
+      "Overheard conversation",
+      "Surprise show"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38197",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E11: Finders Keepers), what does Major make to cheer up Tiny when no one is available to play catch?",
+    "answers": [
+      "A pair of mechanical roller skates",
+      "An automated kite",
+      "A singing plant",
+      "A cone-shaped cotton-ball launcher"
+    ],
+    "correctAnswer": "A cone-shaped cotton-ball launcher",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E11 Finders Keepers",
+      "Revival storyline",
+      "Answer: A cone-shaped cotton-ball launcher",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Tiny lonely",
+      "Cotton launcher",
+      "Toy goes missing"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38198",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E12: Woly Holiday), what gets out of hand during Tiny's carefully planned visit from the Wols?",
+    "answers": [
+      "The Wols are too curious and lead Tiny and Small on a chase",
+      "A fire destroys the Iron Chicken's nest",
+      "The Hoot Planet steals their dinner",
+      "A volcano erupts beneath the music boat"
+    ],
+    "correctAnswer": "The Wols are too curious and lead Tiny and Small on a chase",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E12 Woly Holiday",
+      "Revival storyline",
+      "Answer: The Wols are too curious and lead Tiny and Small on a chase",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Wols visitors",
+      "Curiosity",
+      "Busy tour"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38199",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E13: Baby Skymoo and the Cloud), where does Baby Skymoo land after she flies away from the Cloud and loses control?",
+    "answers": [
+      "In the Iron Chicken's nest",
+      "In Mother Clanger's underground garden",
+      "In the Froglets' top hat",
+      "On the Hoot Planet"
+    ],
+    "correctAnswer": "In Mother Clanger's underground garden",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E13 Baby Skymoo and the Cloud",
+      "Revival storyline",
+      "Answer: In Mother Clanger's underground garden",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Young Skymoo",
+      "Learning to fly",
+      "Cloud rescue"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38200",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E14: The Travelling Salesman), what precious item does the robot merchant ultimately want as payment for his goods?",
+    "answers": [
+      "Major's telescope",
+      "Granny's shawl",
+      "Tiny's radio hat",
+      "The Soup Dragon's ladle"
+    ],
+    "correctAnswer": "Tiny's radio hat",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E14 The Travelling Salesman",
+      "Revival storyline",
+      "Answer: Tiny's radio hat",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Robot shopkeeper",
+      "Trade",
+      "Radio hat"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38201",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E15: The Scary Thing), what makes Tiny afraid of an object Small has fished from space and given her?",
+    "answers": [
+      "It begins to sing loudly",
+      "It grows into a huge flower",
+      "It makes all her toys disappear",
+      "It casts frightening shadows in her bedcave"
+    ],
+    "correctAnswer": "It casts frightening shadows in her bedcave",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E15 The Scary Thing",
+      "Revival storyline",
+      "Answer: It casts frightening shadows in her bedcave",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Small gift",
+      "Strange shadows",
+      "Bedtime fear"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38202",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E16: The Meteor Shower), what danger traps the family after a shower of meteors while Major and Small are sheltering elsewhere?",
+    "answers": [
+      "A huge meteor blocks the cave's double doors",
+      "The soup well freezes solid",
+      "The music trees catch fire",
+      "A rocket crashes into the Iron Chicken's nest"
+    ],
+    "correctAnswer": "A huge meteor blocks the cave's double doors",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E16 The Meteor Shower",
+      "Revival storyline",
+      "Answer: A huge meteor blocks the cave's double doors",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Meteor boulder",
+      "Cave entrance",
+      "Family improvises"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38203",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E17: Major's Greatest Invention), what basic flaw does Major discover in his newly invented Clanger-finding device?",
+    "answers": [
+      "It cannot find the Iron Chicken",
+      "It always detects whoever is holding it",
+      "It only works at night",
+      "It leads everyone into the soup wells"
+    ],
+    "correctAnswer": "It always detects whoever is holding it",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E17 Major's Greatest Invention",
+      "Revival storyline",
+      "Answer: It always detects whoever is holding it",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Clanger finder",
+      "Inventor mistake",
+      "Clock"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38204",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E18: Junk Planet), how does Major's troublesome magnet finally prove useful after causing havoc with metal objects?",
+    "answers": [
+      "It helps Granny knit faster",
+      "It repairs Tiny's radio hat",
+      "It frees a Moon Whale trapped in an old rocket booster",
+      "It reassembles the Hoot Planet"
+    ],
+    "correctAnswer": "It frees a Moon Whale trapped in an old rocket booster",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E18 Junk Planet",
+      "Revival storyline",
+      "Answer: It frees a Moon Whale trapped in an old rocket booster",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Metal attraction",
+      "Whale rescue",
+      "Space junk"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38205",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E19: Toots), how many mysterious metal objects does Tiny catch while fishing in the music boat?",
+    "answers": [
+      "Two",
+      "Six",
+      "Eight",
+      "Four"
+    ],
+    "correctAnswer": "Four",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E19 Toots",
+      "Revival storyline",
+      "Answer: Four",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Tiny fishing",
+      "Metal objects",
+      "Space finds"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38206",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E20: Treasure Hunt), which two everyday tools have gone missing at the beginning of a mystery on the planet?",
+    "answers": [
+      "Major's spanner and Mother's trowel",
+      "Granny's needles and Tiny's panpipes",
+      "Small's net and the Soup Dragon's ladle",
+      "The Iron Chicken's radio and a telescope"
+    ],
+    "correctAnswer": "Major's spanner and Mother's trowel",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E20 Treasure Hunt",
+      "Revival storyline",
+      "Answer: Major's spanner and Mother's trowel",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Missing objects",
+      "Workshop tool",
+      "Garden tool"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38207",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E22: A Tail Tale), what question troubles Baby Soup Dragon about a part of his body?",
+    "answers": [
+      "Why he has no wings",
+      "What his tail is for",
+      "Why he is pink instead of blue",
+      "Why his ears make noises"
+    ],
+    "correctAnswer": "What his tail is for",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E22 A Tail Tale",
+      "Revival storyline",
+      "Answer: What his tail is for",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Baby Dragon",
+      "Tail curiosity",
+      "Purpose"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38208",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E24: The Soup Flower Trees), which young creature mistakenly believes the things he has found are jewels?",
+    "answers": [
+      "Small Clanger",
+      "A purple Froglet",
+      "Baby Soup Dragon",
+      "A Baby Sky Moo"
+    ],
+    "correctAnswer": "Baby Soup Dragon",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E24 The Soup Flower Trees",
+      "Revival storyline",
+      "Answer: Baby Soup Dragon",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Mistaken jewels",
+      "Young dragon",
+      "Flower trees"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38209",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E25: Changes), how many oddly shaped and coloured visitors arrive together in the penultimate 2020 episode?",
+    "answers": [
+      "Three",
+      "Seven",
+      "Nine",
+      "Five"
+    ],
+    "correctAnswer": "Five",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E25 Changes",
+      "Revival storyline",
+      "Answer: Five",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Visitors",
+      "Different shapes",
+      "Mysterious objects"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38210",
+    "category": "Television",
+    "programme": "The Clangers",
+    "question": "In The Clangers (S3E26: Major's Helper), what sort of passing vehicle deposits a heap of rubbish containing an unexpected robot-like object?",
+    "answers": [
+      "A space dustcart",
+      "A flying ambulance",
+      "A music boat",
+      "A travelling caravan shop"
+    ],
+    "correctAnswer": "A space dustcart",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "The Clangers",
+      "Programme: The Clangers",
+      "2019-2020 revival",
+      "CBeebies",
+      "Stop Motion Animation",
+      "Episode: S3E26 Major's Helper",
+      "Revival storyline",
+      "Answer: A space dustcart",
+      "Episode source: https://thetvdb.com/series/clangers-2015/allseasons/official",
+      "Rubbish drop",
+      "Space dustcart",
+      "Robot part"
+    ],
+    "dailyEligible": true
   }
 ];
 questions.push(...auditAdditions);
-const expectedAuditedTotal = 174;
+const expectedAuditedTotal = 197;
 if(questions.length!==expectedAuditedTotal ||
  questions[0].id!=='tv_16696' || questions[95].id!=='tv_16791' ||
  auditAdditions[0].id!=='tv_38110' ||
- auditAdditions[auditAdditions.length-1].id!=='tv_38187' ||
+ auditAdditions[auditAdditions.length-1].id!=='tv_38210' ||
  new Set(questions.map(q=>q.id)).size!==questions.length ||
  new Set(questions.map(q=>normalise(q.question))).size!==questions.length ||
  questions.some(q=>q.answers.length!==4 || new Set(q.answers.map(normalise)).size!==4 ||
