@@ -50,7 +50,7 @@
   Whose untidy flat does Jane visit in The Naked Living Room?|Oliver's|Patrick's|Jeff's|Steve's|Medium|Naked Living Room|Oliver Morris|Jane Christie|Unprepared Flat|Supermarket Encounter|Series Four|New Relationship
   What happens to Susan in the final UK Coupling episode 9½ Months?|She goes into labour|She moves to New York|She gets married to Jeff|She leaves Steve|Easy|Nine And A Half Months|Susan Walker|Labour Begins|Series Finale|Steve Taylor|Expecting Parents|2004 Ending
   Which male character leaves the regular group before the fourth series of Coupling?|Jeff Murdoch|Patrick Maitland|Steve Taylor|Oliver Morris|Medium|Jeff Murdoch|Richard Coyle|Cast Change|Series Three Exit|Series Four Transition|Original Friends|2004 Programme
-  Which comic-shop owner joins Coupling's main group in the final series?|Oliver Morris|Jeff Murdoch|Patrick Maitland|Steve Taylor|Medium|Oliver Morris|Comic Book Shop|Richard Mylan|Series Four Arrival|New Character|2004 Episodes|Jane Christie Romance`;
+  In Coupling, what type of shop does Oliver Morris run before he joins the friendship group?|A science-fiction bookshop|A record shop|An antique bookshop|A comic-book publisher|Medium|Oliver Morris|Science Fiction Bookshop|Series Four Newcomer|Jane Blind Date|Shop Owner|2004 Relationship Comedy|Character Occupation`;
 
   const bookGroupFacts = `Which British broadcaster originally showed The Book Group?|Channel 4|BBC One|ITV|BBC Two|Easy|Channel Four|Original Broadcaster|Scottish Comedy|2002 Premiere|UK Television|Broadcast Network|Series Launch
   In which year did The Book Group first air?|2002|1998|2005|2010|Easy|2002 Debut|12 April 2002|First Series|Original Broadcast|Channel Four|Television Timeline|Programme Premiere
@@ -58,7 +58,7 @@
   How many television episodes did The Book Group have altogether?|12|6|18|24|Medium|Twelve Episodes|Six Per Series|Original Show|Episode Count|Broadcast Catalogue|Channel Four|Programme Length
   In which Scottish city is The Book Group mainly set?|Glasgow|Edinburgh|Aberdeen|Dundee|Easy|Glasgow|Scottish Setting|Clare Arrival|Local Book Club|Series Location|Urban Comedy|Scotland
   Where has Clare Pettengill moved from when she starts her book group?|The United States|Canada|Australia|Ireland|Easy|Clare Pettengill|American Newcomer|Move To Glasgow|Cultural Adjustment|Series Premise|Expat Character|New Friends
-  What does Clare start to make friends after moving to Scotland?|A book group|A theatre troupe|A running club|A choir|Easy|Clare Pettengill|Founding Club|Book Discussions|Making Friends|New Glasgow Life|Social Circle|Series Premise
+  In the opening episode of The Book Group, what unusual setting first brings writer Kenny into Clare's circle?|The new book group that she assembles|A reading at a public library|A writing class at a college|An authors' signing event|Medium|On the Road|Clare Pettengill|Kenny McLeod|First Meeting|Glasgow Newcomer|Literary Social Group|2002 Channel Four
   Which actress played Clare Pettengill in The Book Group?|Anne Dudek|Michelle Gomez|Saskia Mulder|Bonnie Engstrom|Easy|Anne Dudek|Clare Pettengill|Lead Actress|American Character|Casting|Channel Four Comedy|Main Role
   Who wrote and directed The Book Group?|Annie Griffin|Steven Moffat|Julia Davis|Caroline Aherne|Medium|Annie Griffin|Writer And Director|Programme Creator|Scottish Sitcom|Creative Credits|Channel Four|Original Series
   Which actor played Kenny McLeod in The Book Group?|Rory McCann|James Lance|Derek Riddell|Jack Davenport|Medium|Rory McCann|Kenny McLeod|Club Member|Aspiring Writer|Actor Casting|Wheelchair User|Ensemble
@@ -146,4 +146,1600 @@
     throw new Error('Pack 359: exported question validation failed');
   }
 
-  module.exports = questions;
+  
+// Pack 359 detailed episode audit (21 November 2026). Historical IDs unchanged.
+const auditAdditions = [
+  {
+    "id": "tv_39082",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Where do Steve and Susan first meet while he is trying to end his relationship with Jane?",
+    "answers": [
+      "At a railway station",
+      "In an office lift",
+      "At a wedding reception",
+      "In the women's toilets of a bar"
+    ],
+    "correctAnswer": "In the women's toilets of a bar",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Flushed",
+      "Story fact: Bar toilet meeting",
+      "Correct: In the women's toilets of a bar",
+      "Specific episode plot: Bar toilet meeting",
+      "2000–2004 TV Comedy",
+      "Characters and story: Bar toilet meeting",
+      "Plot setting: Flushed",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39083",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Which of Susan's friends cancels her facial appointment before the dinner where she meets Steve?",
+    "answers": [
+      "Sally Harper",
+      "Jane Christie",
+      "Julia Davis",
+      "Wilma"
+    ],
+    "correctAnswer": "Sally Harper",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Flushed",
+      "Story fact: Cancelled facial appointment",
+      "Correct: Sally Harper",
+      "Specific episode plot: Cancelled facial appointment",
+      "2000–2004 TV Comedy",
+      "Characters and story: Cancelled facial appointment",
+      "Plot setting: Flushed",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39084",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What unusual warning does Jeff give Steve about the risks of leaving on a single sock during romance?",
+    "answers": [
+      "The handkerchief trap",
+      "The sock gap",
+      "The cardigan crisis",
+      "The trouser rule"
+    ],
+    "correctAnswer": "The sock gap",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Size Matters",
+      "Story fact: Jeff's sock-gap theory",
+      "Correct: The sock gap",
+      "Specific episode plot: Jeff's sock-gap theory",
+      "2000–2004 TV Comedy",
+      "Characters and story: Jeff's sock-gap theory",
+      "Plot setting: Size Matters",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39085",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Which political party's views put Sally off Patrick during their early dating attempts?",
+    "answers": [
+      "The Liberal Democrats",
+      "The Greens",
+      "The Conservatives",
+      "Labour"
+    ],
+    "correctAnswer": "The Conservatives",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Size Matters",
+      "Story fact: Sally dislikes Patrick's politics",
+      "Correct: The Conservatives",
+      "Specific episode plot: Sally dislikes Patrick's politics",
+      "2000–2004 TV Comedy",
+      "Characters and story: Sally dislikes Patrick's politics",
+      "Plot setting: Size Matters",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39086",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What does Jeff call the urge to laugh at a completely inappropriate moment?",
+    "answers": [
+      "The laugh reflex",
+      "The panic giggle",
+      "The comedy spiral",
+      "The giggle loop"
+    ],
+    "correctAnswer": "The giggle loop",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Sex Death And Nudity",
+      "Story fact: Jeff describes uncontrollable funeral laughter",
+      "Correct: The giggle loop",
+      "Specific episode plot: Jeff describes uncontrollable funeral laughter",
+      "2000–2004 TV Comedy",
+      "Characters and story: Jeff describes uncontrollable funeral laughter",
+      "Plot setting: Sex Death And Nudity",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39087",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Who pretends to be Susan's boyfriend at Jane's aunt's funeral?",
+    "answers": [
+      "Jeff Murdoch",
+      "Patrick Maitland",
+      "Oliver Morris",
+      "Steve Taylor"
+    ],
+    "correctAnswer": "Jeff Murdoch",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Sex Death And Nudity",
+      "Story fact: Pretend boyfriend at funeral",
+      "Correct: Jeff Murdoch",
+      "Specific episode plot: Pretend boyfriend at funeral",
+      "2000–2004 TV Comedy",
+      "Characters and story: Pretend boyfriend at funeral",
+      "Plot setting: Sex Death And Nudity",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39088",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Which actress-character is Jane's psychologist who is drawn into Steve and Susan's disastrous dinner party?",
+    "answers": [
+      "Giselle",
+      "Jill",
+      "Jennifer",
+      "Julia"
+    ],
+    "correctAnswer": "Jill",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Inferno",
+      "Story fact: Jane's psychologist dinner guest",
+      "Correct: Jill",
+      "Specific episode plot: Jane's psychologist dinner guest",
+      "2000–2004 TV Comedy",
+      "Characters and story: Jane's psychologist dinner guest",
+      "Plot setting: Inferno",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39089",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What does Susan discover about Patrick's video of their earlier relationship?",
+    "answers": [
+      "He gave it to Jane",
+      "He destroyed it in a fire",
+      "He recorded over it",
+      "He mailed it to Sally"
+    ],
+    "correctAnswer": "He recorded over it",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Inferno",
+      "Story fact: Patrick erased ex-partner tape",
+      "Correct: He recorded over it",
+      "Specific episode plot: Patrick erased ex-partner tape",
+      "2000–2004 TV Comedy",
+      "Characters and story: Patrick erased ex-partner tape",
+      "Plot setting: Inferno",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39090",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "How do Jeff and his Israeli admirer finally overcome their language barrier?",
+    "answers": [
+      "By writing in English",
+      "By using a dictionary",
+      "By exchanging phone numbers",
+      "With the help of an interpreter"
+    ],
+    "correctAnswer": "With the help of an interpreter",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: The Girl With Two Breasts",
+      "Story fact: Hebrew misunderstanding interpreter",
+      "Correct: With the help of an interpreter",
+      "Specific episode plot: Hebrew misunderstanding interpreter",
+      "2000–2004 TV Comedy",
+      "Characters and story: Hebrew misunderstanding interpreter",
+      "Plot setting: The Girl With Two Breasts",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39091",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What false disability does Jeff claim to have to impress a woman he sees on the train?",
+    "answers": [
+      "A wooden leg",
+      "Poor eyesight",
+      "A hearing impairment",
+      "A missing finger"
+    ],
+    "correctAnswer": "A wooden leg",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: The Man With Two Legs",
+      "Story fact: Jeff invents prosthetic leg",
+      "Correct: A wooden leg",
+      "Specific episode plot: Jeff invents prosthetic leg",
+      "2000–2004 TV Comedy",
+      "Characters and story: Jeff invents prosthetic leg",
+      "Plot setting: The Man With Two Legs",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39092",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "To which sort of group is Jeff introduced after telling the woman on the train he has a wooden leg?",
+    "answers": [
+      "A veterans' choir",
+      "A support group for amputees",
+      "A running club",
+      "A university society"
+    ],
+    "correctAnswer": "A support group for amputees",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: The Man With Two Legs",
+      "Story fact: Jeff meets disability support group",
+      "Correct: A support group for amputees",
+      "Specific episode plot: Jeff meets disability support group",
+      "2000–2004 TV Comedy",
+      "Characters and story: Jeff meets disability support group",
+      "Plot setting: The Man With Two Legs",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39093",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Which news presenter does Steve unexpectedly meet on the way to the loo during a disastrous dinner-party episode?",
+    "answers": [
+      "Fiona Bruce",
+      "Kirsty Wark",
+      "Mariella Frostrup",
+      "Sian Williams"
+    ],
+    "correctAnswer": "Mariella Frostrup",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: My Dinner In Hell",
+      "Story fact: Steve celebrity crush",
+      "Correct: Mariella Frostrup",
+      "Specific episode plot: Steve celebrity crush",
+      "2000–2004 TV Comedy",
+      "Characters and story: Steve celebrity crush",
+      "Plot setting: My Dinner In Hell",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39094",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Who ends up receiving a mistakenly chosen adult novelty gift from Steve?",
+    "answers": [
+      "Steve's parents",
+      "Jane's psychologist",
+      "Jeff's boss",
+      "Susan's parents"
+    ],
+    "correctAnswer": "Susan's parents",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: My Dinner In Hell",
+      "Story fact: Wrong present at dinner",
+      "Correct: Susan's parents",
+      "Specific episode plot: Wrong present at dinner",
+      "2000–2004 TV Comedy",
+      "Characters and story: Wrong present at dinner",
+      "Plot setting: My Dinner In Hell",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39095",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Which practical household subject does Susan pressure Steve to have opinions about?",
+    "answers": [
+      "Cushions and fabrics",
+      "Kitchen appliances",
+      "Garden furniture",
+      "Choosing wallpaper paste"
+    ],
+    "correctAnswer": "Cushions and fabrics",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Her Best Friend's Bottom",
+      "Story fact: Susan seeks decorating opinions",
+      "Correct: Cushions and fabrics",
+      "Specific episode plot: Susan seeks decorating opinions",
+      "2000–2004 TV Comedy",
+      "Characters and story: Susan seeks decorating opinions",
+      "Plot setting: Her Best Friend's Bottom",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39096",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What is the imaginary villain the men invent to describe Patrick's sexual performance worries?",
+    "answers": [
+      "The Sock Monster",
+      "The Melty Man",
+      "The Lurgy Lord",
+      "The Panic Man"
+    ],
+    "correctAnswer": "The Melty Man",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: The Melty Man Cometh",
+      "Story fact: Imagined performance-anxiety villain",
+      "Correct: The Melty Man",
+      "Specific episode plot: Imagined performance-anxiety villain",
+      "2000–2004 TV Comedy",
+      "Characters and story: Imagined performance-anxiety villain",
+      "Plot setting: The Melty Man Cometh",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39097",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Which new career does Jane hope to pursue after losing her job?",
+    "answers": [
+      "Airline pilot",
+      "Wedding planner",
+      "Children's television presenter",
+      "Estate agent"
+    ],
+    "correctAnswer": "Children's television presenter",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Jane And The Truth Snake",
+      "Story fact: Jane wants children's television work",
+      "Correct: Children's television presenter",
+      "Specific episode plot: Jane wants children's television work",
+      "2000–2004 TV Comedy",
+      "Characters and story: Jane wants children's television work",
+      "Plot setting: Jane And The Truth Snake",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39098",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What forthcoming social event causes Steve to panic that Susan will expect a proposal?",
+    "answers": [
+      "An engagement party for Jeff",
+      "His parents' anniversary",
+      "A baptism",
+      "A wedding he has been invited to"
+    ],
+    "correctAnswer": "A wedding he has been invited to",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Gotcha",
+      "Story fact: Steve anxious about marriage expectations",
+      "Correct: A wedding he has been invited to",
+      "Specific episode plot: Steve anxious about marriage expectations",
+      "2000–2004 TV Comedy",
+      "Characters and story: Steve anxious about marriage expectations",
+      "Plot setting: Gotcha",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39099",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What is Jane wearing beneath her coat when she arrives at what turns out to be a group dinner party?",
+    "answers": [
+      "Nothing",
+      "A fancy dress costume",
+      "Her pyjamas",
+      "A bridesmaid's dress"
+    ],
+    "correctAnswer": "Nothing",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Dressed",
+      "Story fact: Jane's mistaken private date",
+      "Correct: Nothing",
+      "Specific episode plot: Jane's mistaken private date",
+      "2000–2004 TV Comedy",
+      "Characters and story: Jane's mistaken private date",
+      "Plot setting: Dressed",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39100",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What birthday surprise does Jeff misunderstand before embarrassing himself at work?",
+    "answers": [
+      "A romantic hotel booking",
+      "A surprise party organised by his friends",
+      "A private limousine ride",
+      "A birthday meal with Patrick"
+    ],
+    "correctAnswer": "A surprise party organised by his friends",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Naked",
+      "Story fact: Jeff mistakes surprise party for private encounter",
+      "Correct: A surprise party organised by his friends",
+      "Specific episode plot: Jeff mistakes surprise party for private encounter",
+      "2000–2004 TV Comedy",
+      "Characters and story: Jeff mistakes surprise party for private encounter",
+      "Plot setting: Naked",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39101",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What imaginary Australian restaurant does Steve invent during an elaborate phone misunderstanding?",
+    "answers": [
+      "Kangaroo Steakhouse",
+      "Sydney Harbour Café",
+      "Bruce's Bar and Grill",
+      "The Outback Grill"
+    ],
+    "correctAnswer": "Bruce's Bar and Grill",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: The End Of The Line",
+      "Story fact: Invented restaurant identity",
+      "Correct: Bruce's Bar and Grill",
+      "Specific episode plot: Invented restaurant identity",
+      "2000–2004 TV Comedy",
+      "Characters and story: Invented restaurant identity",
+      "Plot setting: The End Of The Line",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39102",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "How is much of the Coupling episode Split presented to show Steve and Susan's separate experiences?",
+    "answers": [
+      "Silent black-and-white footage",
+      "A newspaper montage",
+      "An animated comic strip",
+      "Split-screen storytelling"
+    ],
+    "correctAnswer": "Split-screen storytelling",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Split",
+      "Story fact: Narratives in parallel",
+      "Correct: Split-screen storytelling",
+      "Specific episode plot: Narratives in parallel",
+      "2000–2004 TV Comedy",
+      "Characters and story: Narratives in parallel",
+      "Plot setting: Split",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39103",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What discreet device lets the others feed Jeff dating advice while he meets Wilma?",
+    "answers": [
+      "An earpiece",
+      "A pager",
+      "A wristwatch radio",
+      "A hidden microphone in his jacket"
+    ],
+    "correctAnswer": "An earpiece",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Faithless",
+      "Story fact: Remote dating advice",
+      "Correct: An earpiece",
+      "Specific episode plot: Remote dating advice",
+      "2000–2004 TV Comedy",
+      "Characters and story: Remote dating advice",
+      "Plot setting: Faithless",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39104",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What fictional tragedy does Jeff claim has happened to his girlfriend in an effort to deter Wilma?",
+    "answers": [
+      "She has moved to Iceland",
+      "She has died",
+      "She is in prison",
+      "She has married his brother"
+    ],
+    "correctAnswer": "She has died",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Unconditional Sex",
+      "Story fact: Jeff invents girlfriend death",
+      "Correct: She has died",
+      "Specific episode plot: Jeff invents girlfriend death",
+      "2000–2004 TV Comedy",
+      "Characters and story: Jeff invents girlfriend death",
+      "Plot setting: Unconditional Sex",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39105",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What tune features in Patrick's memory of his first kiss with Sally at Susan's office party?",
+    "answers": [
+      "The James Bond theme",
+      "The Batman theme",
+      "The Spider-Man theme",
+      "The Superman theme"
+    ],
+    "correctAnswer": "The Spider-Man theme",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Remember This",
+      "Story fact: Kiss remembered with superhero tune",
+      "Correct: The Spider-Man theme",
+      "Specific episode plot: Kiss remembered with superhero tune",
+      "2000–2004 TV Comedy",
+      "Characters and story: Kiss remembered with superhero tune",
+      "Plot setting: Remember This",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39106",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What does Jeff accidentally swallow while Julia is restrained during one of their adventures?",
+    "answers": [
+      "An engagement ring",
+      "A house key",
+      "A contact lens",
+      "A handcuff key"
+    ],
+    "correctAnswer": "A handcuff key",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: The Freckle The Key And The Couple Who Weren't",
+      "Story fact: Swallowed handcuff key",
+      "Correct: A handcuff key",
+      "Specific episode plot: Swallowed handcuff key",
+      "2000–2004 TV Comedy",
+      "Characters and story: Swallowed handcuff key",
+      "Plot setting: The Freckle The Key And The Couple Who Weren't",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39107",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Which household change causes Steve to panic about privacy in Coupling?",
+    "answers": [
+      "Susan removes the bathroom-door lock",
+      "Susan moves the sofa",
+      "Susan removes the bedroom curtains",
+      "Susan paints the bedroom pink"
+    ],
+    "correctAnswer": "Susan removes the bathroom-door lock",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: The Girl With One Heart",
+      "Story fact: Removed bathroom lock",
+      "Correct: Susan removes the bathroom-door lock",
+      "Specific episode plot: Removed bathroom lock",
+      "2000–2004 TV Comedy",
+      "Characters and story: Removed bathroom lock",
+      "Plot setting: The Girl With One Heart",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39108",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Who is finally revealed to be pregnant when the friends muddle up their tests?",
+    "answers": [
+      "Sally Harper",
+      "Susan Walker",
+      "Jane Christie",
+      "Julia Davis"
+    ],
+    "correctAnswer": "Susan Walker",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Perhaps Perhaps Perhaps",
+      "Story fact: Positive pregnancy test mystery resolved",
+      "Correct: Susan Walker",
+      "Specific episode plot: Positive pregnancy test mystery resolved",
+      "2000–2004 TV Comedy",
+      "Characters and story: Positive pregnancy test mystery resolved",
+      "Plot setting: Perhaps Perhaps Perhaps",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39109",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "For whose profession do Steve and Susan mistake Jane's blind date Oliver?",
+    "answers": [
+      "A solicitor",
+      "A photographer",
+      "A gynaecologist",
+      "A financial adviser"
+    ],
+    "correctAnswer": "A gynaecologist",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Nine And A Half Minutes",
+      "Story fact: Mistaken medical professional",
+      "Correct: A gynaecologist",
+      "Specific episode plot: Mistaken medical professional",
+      "2000–2004 TV Comedy",
+      "Characters and story: Mistaken medical professional",
+      "Plot setting: Nine And A Half Minutes",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39110",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "How do five of the friends exchange embarrassing revelations in Coupling's final series?",
+    "answers": [
+      "At a hotel breakfast",
+      "Over a pub quiz",
+      "Through a chain of letters",
+      "During a group telephone call"
+    ],
+    "correctAnswer": "During a group telephone call",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Nightlines",
+      "Story fact: Five-way call",
+      "Correct: During a group telephone call",
+      "Specific episode plot: Five-way call",
+      "2000–2004 TV Comedy",
+      "Characters and story: Five-way call",
+      "Plot setting: Nightlines",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39111",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What blonde-wigged musical performance does Sally give at her first dinner party to embarrass Susan?",
+    "answers": [
+      "Susan: The Happy Trotting Elf",
+      "The Ballad of Jeff Murdoch",
+      "The Girl with Two Breasts",
+      "My Dinner In Hell"
+    ],
+    "correctAnswer": "Susan: The Happy Trotting Elf",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Bed Time",
+      "Story fact: Sally's party song",
+      "Correct: Susan: The Happy Trotting Elf",
+      "Specific episode plot: Sally's party song",
+      "2000–2004 TV Comedy",
+      "Characters and story: Sally's party song",
+      "Plot setting: Bed Time",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39112",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "Who leads the antenatal class that Steve and Susan attend with their friends?",
+    "answers": [
+      "Jane",
+      "Jill",
+      "Giselle",
+      "Jennifer"
+    ],
+    "correctAnswer": "Jill",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Circus Of The Epidurals",
+      "Story fact: Jill pregnancy-class instructor",
+      "Correct: Jill",
+      "Specific episode plot: Jill pregnancy-class instructor",
+      "2000–2004 TV Comedy",
+      "Characters and story: Jill pregnancy-class instructor",
+      "Plot setting: Circus Of The Epidurals",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39113",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What sight in Oliver's home makes Jane realise how long he has been single?",
+    "answers": [
+      "A framed wedding photograph",
+      "A child's cot",
+      "His openly displayed pornography",
+      "A large collection of houseplants"
+    ],
+    "correctAnswer": "His openly displayed pornography",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: The Naked Living Room",
+      "Story fact: Oliver no longer hides adult material",
+      "Correct: His openly displayed pornography",
+      "Specific episode plot: Oliver no longer hides adult material",
+      "2000–2004 TV Comedy",
+      "Characters and story: Oliver no longer hides adult material",
+      "Plot setting: The Naked Living Room",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39114",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What does Sally find while looking for the tape of Patrick's previous involvement with Jane?",
+    "answers": [
+      "A letter from Susan",
+      "A plane ticket to Portugal",
+      "A photograph of Jeff",
+      "An engagement ring intended for Sally"
+    ],
+    "correctAnswer": "An engagement ring intended for Sally",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Nine And A Half Months",
+      "Story fact: Unexpected engagement ring",
+      "Correct: An engagement ring intended for Sally",
+      "Specific episode plot: Unexpected engagement ring",
+      "2000–2004 TV Comedy",
+      "Characters and story: Unexpected engagement ring",
+      "Plot setting: Nine And A Half Months",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39115",
+    "category": "Television",
+    "programme": "Coupling",
+    "question": "What method of delivery brings Steve and Susan's son into the world in the Coupling finale?",
+    "answers": [
+      "A caesarean section",
+      "A water birth at home",
+      "A hospital forceps delivery",
+      "A home birth attended by friends"
+    ],
+    "correctAnswer": "A caesarean section",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Coupling",
+      "Programme: Coupling",
+      "BBC",
+      "Steven Moffat",
+      "Episode: Nine And A Half Months",
+      "Story fact: Baby's birth by operation",
+      "Correct: A caesarean section",
+      "Specific episode plot: Baby's birth by operation",
+      "2000–2004 TV Comedy",
+      "Characters and story: Baby's birth by operation",
+      "Plot setting: Nine And A Half Months",
+      "Source: https://en.wikipedia.org/wiki/List_of_Coupling_episodes"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39116",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "Which member of Clare's newly formed book group is married to a Scottish footballer?",
+    "answers": [
+      "Dirka",
+      "Janice",
+      "Fist",
+      "Jean"
+    ],
+    "correctAnswer": "Janice",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: On the Road",
+      "Story fact: Janice footballer wife",
+      "Correct: Janice",
+      "Specific episode plot: Janice footballer wife",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Janice footballer wife",
+      "Plot setting: On the Road",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39117",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "Which book-group member is introduced as a keen writer who uses a wheelchair?",
+    "answers": [
+      "Rab",
+      "Barney",
+      "Kenny McLeod",
+      "Martin Logan"
+    ],
+    "correctAnswer": "Kenny McLeod",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: On the Road",
+      "Story fact: New writer in wheelchair",
+      "Correct: Kenny McLeod",
+      "Specific episode plot: New writer in wheelchair",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: New writer in wheelchair",
+      "Plot setting: On the Road",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39118",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "Who decides to leave her husband after reading the group's latest book?",
+    "answers": [
+      "Janice",
+      "Clare Pettengill",
+      "Jean Pettengill",
+      "Fist de Grooke"
+    ],
+    "correctAnswer": "Fist de Grooke",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: The Alchemist",
+      "Story fact: Leaving husband after reading",
+      "Correct: Fist de Grooke",
+      "Specific episode plot: Leaving husband after reading",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Leaving husband after reading",
+      "Plot setting: The Alchemist",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39119",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "Who inspires the woman in Kenny's fictional cabin-in-the-hills romance?",
+    "answers": [
+      "Fist",
+      "Clare",
+      "Janice",
+      "Jean"
+    ],
+    "correctAnswer": "Fist",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: Magical Realism",
+      "Story fact: Kenny's fictional love interest",
+      "Correct: Fist",
+      "Specific episode plot: Kenny's fictional love interest",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Kenny's fictional love interest",
+      "Plot setting: Magical Realism",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39120",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "Which character's appearance inspires the professor in Clare's fictional love story?",
+    "answers": [
+      "Lachlan",
+      "Barney",
+      "Rab",
+      "Martin Logan"
+    ],
+    "correctAnswer": "Barney",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: Magical Realism",
+      "Story fact: Professor model in Clare's novel",
+      "Correct: Barney",
+      "Specific episode plot: Professor model in Clare's novel",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Professor model in Clare's novel",
+      "Plot setting: Magical Realism",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39121",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "What does Clare resolve to help Barney give up after learning of his dependency?",
+    "answers": [
+      "Gambling",
+      "Smoking",
+      "Drugs",
+      "Drinking coffee"
+    ],
+    "correctAnswer": "Drugs",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: Bedtime Stories",
+      "Story fact: Clare's rescue mission",
+      "Correct: Drugs",
+      "Specific episode plot: Clare's rescue mission",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Clare's rescue mission",
+      "Plot setting: Bedtime Stories",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39122",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "Who is an enthusiastic fan of the thriller author involved with Janice?",
+    "answers": [
+      "Her husband",
+      "Her mother",
+      "Kenny",
+      "Her priest"
+    ],
+    "correctAnswer": "Her priest",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: Bedtime Stories",
+      "Story fact: Janice prepares confession",
+      "Correct: Her priest",
+      "Specific episode plot: Janice prepares confession",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Janice prepares confession",
+      "Plot setting: Bedtime Stories",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39123",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "Whose novel does Janice's book group attempt to discuss during a distracted meeting?",
+    "answers": [
+      "Martin Logan's",
+      "Kenny McLeod's",
+      "Jean Pettengill's",
+      "Barney's"
+    ],
+    "correctAnswer": "Martin Logan's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: Dark Alley",
+      "Story fact: Group discusses author's thriller",
+      "Correct: Martin Logan's",
+      "Specific episode plot: Group discusses author's thriller",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Group discusses author's thriller",
+      "Plot setting: Dark Alley",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39124",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "What is unusual about the loft flat Clare shares with artist boyfriend Lachlan?",
+    "answers": [
+      "It has a swimming pool",
+      "It has almost no furniture",
+      "It is inside a church",
+      "It has no windows"
+    ],
+    "correctAnswer": "It has almost no furniture",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: Sueños",
+      "Story fact: Sparse loft apartment",
+      "Correct: It has almost no furniture",
+      "Specific episode plot: Sparse loft apartment",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Sparse loft apartment",
+      "Plot setting: Sueños",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39125",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "Where does Kenny attract enthusiastic readers during his book tour?",
+    "answers": [
+      "The Isle of Wight",
+      "Cornwall",
+      "The Outer Isles",
+      "Northern France"
+    ],
+    "correctAnswer": "The Outer Isles",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: You Must Change Your Life",
+      "Story fact: Fans of Peaks in the Mist",
+      "Correct: The Outer Isles",
+      "Specific episode plot: Fans of Peaks in the Mist",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Fans of Peaks in the Mist",
+      "Plot setting: You Must Change Your Life",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39126",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "What dangerous accident leaves Lachlan needing Clare's help while recuperating?",
+    "answers": [
+      "He crashes a motorbike",
+      "He breaks a leg on a ski slope",
+      "He falls down a staircase",
+      "He falls into an empty swimming pool"
+    ],
+    "correctAnswer": "He falls into an empty swimming pool",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: Drowning",
+      "Story fact: Lachlan's fall into empty pool",
+      "Correct: He falls into an empty swimming pool",
+      "Specific episode plot: Lachlan's fall into empty pool",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Lachlan's fall into empty pool",
+      "Plot setting: Drowning",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39127",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "Which controversial memoir is the book group's reading choice when Jean is researching her next book?",
+    "answers": [
+      "The Sexual History of Catherine M.",
+      "The Story of O",
+      "Lady Chatterley's Lover",
+      "Fear of Flying"
+    ],
+    "correctAnswer": "The Sexual History of Catherine M.",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: Research",
+      "Story fact: Book club's provocative reading",
+      "Correct: The Sexual History of Catherine M.",
+      "Specific episode plot: Book club's provocative reading",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Book club's provocative reading",
+      "Plot setting: Research",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39128",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "What is the first name of Kenny's younger girlfriend whom Clare meets?",
+    "answers": [
+      "Carol Ann",
+      "Harriet",
+      "Fist",
+      "Jean"
+    ],
+    "correctAnswer": "Harriet",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: Research",
+      "Story fact: Kenny's underage girlfriend",
+      "Correct: Harriet",
+      "Specific episode plot: Kenny's underage girlfriend",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Kenny's underage girlfriend",
+      "Plot setting: Research",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39129",
+    "category": "Television",
+    "programme": "The Book Group",
+    "question": "What musical pastime does Kenny take part in at Jean's book-deal party?",
+    "answers": [
+      "Folk dancing",
+      "Violin playing",
+      "Karaoke",
+      "Stand-up comedy"
+    ],
+    "correctAnswer": "Karaoke",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "The Book Group",
+      "Programme: The Book Group",
+      "Channel 4",
+      "Annie Griffin",
+      "Episode: A'Salaam Insh'Allah",
+      "Story fact: Kenny singing at book deal party",
+      "Correct: Karaoke",
+      "Specific episode plot: Kenny singing at book deal party",
+      "2002–2003 TV Comedy Drama",
+      "Characters and story: Kenny singing at book deal party",
+      "Plot setting: A'Salaam Insh'Allah",
+      "Source: https://www.tvmaze.com/shows/7786/the-book-group/episodeguide"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditAdditions);
+if (new Set(questions.map(q=>q.id)).size!==questions.length ||
+ new Set(questions.map(q=>normalise(q.question))).size!==questions.length ||
+ questions.some(q=>q.answers.length!==4 ||
+ new Set(q.answers.map(normalise)).size!==4 ||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1 ||
+ q.tags.length<14 || !q.tags.includes('Programme: '+q.programme) ||
+ q.dailyEligible!==true)) throw Error('Pack 359 audit validation failed');
+module.exports = questions;
