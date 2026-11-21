@@ -1523,14 +1523,14 @@ const auditAdditions = [
     "id": "tv_37160",
     "category": "Television",
     "programme": "Extras",
-    "question": "In Extras, what role does Darren take when Andy tries to repair his reputation?",
+    "question": "In Extras, how does Andy accidentally knock Warwick Davis unconscious during their argument?",
     "answers": [
-      "Public-relations adviser",
-      "Talent-show judge",
-      "Courtroom barrister",
-      "Film-set stunt coordinator"
+      "He knocks him with a door",
+      "He knees him in the face",
+      "He pushes him down stairs",
+      "He hits him with a prop wand"
     ],
-    "correctAnswer": "Public-relations adviser",
+    "correctAnswer": "He knees him in the face",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1544,13 +1544,13 @@ const auditAdditions = [
       "2005–2007",
       "Series 2 Episode 3",
       "Episode storyline",
-      "Correct answer: Public-relations adviser",
+      "Correct answer: He knees him in the face",
       "Research: https://en.wikipedia.org/wiki/List_of_Extras_episodes",
       "UK English",
-      "Darren Lamb",
-      "Press Crisis",
-      "Public Relations",
-      "Agent Role"
+      "Warwick Davis",
+      "Accidental Injury",
+      "Fight Scene",
+      "Film Role Lost"
     ],
     "dailyEligible": true
   },
