@@ -16,14 +16,14 @@
   Which television channel originally broadcast Just Good Friends?|BBC One|ITV|Channel 4|BBC Two|Easy|BBC One|Original Broadcaster|First Transmission|British Comedy|Television Network|1980s Schedule|Programme Premiere
   In which year did the first series of Just Good Friends air?|1983|1979|1986|1990|Easy|1983 Premiere|22 September 1983|BBC Launch|Series One|First Broadcast|Sitcom Timeline|Eighties Television
   How many series of Just Good Friends were made?|Three|Two|Four|Five|Medium|Three Series|1983 To 1986|Programme Run|Series Count|BBC Sitcom History|Production Schedule|Final Series 1986
-  What is the surname of the character Vince in Just Good Friends?|Pinner|Warrender|Lacey|Glover|Easy|Vince Pinner|Character Surname|Paul Nicholas Role|Main Character|Romantic Lead|Family Name|Cast Identity
-  What is Penny's surname in Just Good Friends?|Warrender|Pinner|Binns|Cochran|Easy|Penny Warrender|Character Surname|Jan Francis Role|Family Name|Female Lead|Character Identity|BBC Comedy
+  In Just Good Friends, why does Vince have difficulty meeting Penny again at the Red Lion pub?|There is more than one pub called the Red Lion|She has given him an incorrect street address|He has mistaken the date of their meeting|She has moved abroad without telling him|Medium|Red Lion Pub|Multiple Pubs Same Name|Vince Arranging Reunion|Series One Episode Two|John Sullivan Romantic Comedy|Missed Meeting|1983 Episode
+  At their unexpected pub reunion in Just Good Friends, what are Vince and Penny each doing with other people?|Enduring unsuccessful dates|Attending a wedding reception|Organising a charity raffle|Celebrating a work promotion|Medium|Series One First Episode|Two Bad Dates|Pub Reunion|Vince Pinner|Penny Warrender|Chance Meeting|1983 Storyline
   What did Vince do to Penny on the day they were supposed to marry?|Left her waiting at the church|Missed their flight to Paris|Forgot the wedding rings|Married her sister instead|Easy|Abandoned Wedding|Vince Pinner|Penny Warrender|Jilted Bride|Relationship History|Wedding Day|Broken Engagement
   At what kind of concert did Vince first meet Penny before their broken engagement?|A Rolling Stones concert|A Beatles reunion concert|A Queen concert|A David Bowie concert|Medium|Rolling Stones|First Meeting|1976 Concert|Vince And Penny|Romantic Backstory|Music Event|Courtship
   Approximately how long had Vince and Penny been apart when they met again at the series' start?|Five years|Six months|Ten years|One year|Medium|Five Year Separation|Former Couple|Chance Reunion|Series Premise|Old Relationship|1983 Storyline|Jilted Wedding
   Who is Penny Warrender's mother?|Daphne Warrender|Rita Pinner|Gina Pinner|Louise|Easy|Daphne Warrender|Penny Mother|Warrender Family|Parent Daughter|Family Relations|Character Name|BBC Sitcom
   Which actress portrayed Penny's mother Daphne Warrender?|Sylvia Kay|Ann Lynn|Charlotte Seeley|Rachel Bell|Medium|Sylvia Kay|Daphne Warrender|Character Casting|Penny Mother|Supporting Actress|Warrender Household|Programme Credits
-  Who is Penny Warrender's father in Just Good Friends?|Norman Warrender|Les Pinner|Graham|Clifford Pinner|Medium|Norman Warrender|Penny Father|Warrender Parents|Family Character|Daphne Husband|Character Relationships|BBC Comedy
+  In Just Good Friends, whom does Vince visit for advice in the fourth episode of series one?|His father Les|Penny's mother Daphne|His brother Clifford|His friend Lennie|Medium|Series One Episode Four|Vince Asking Advice|Les Pinner|Penny Reconciliation|Family Advice|1983 Script|John Sullivan
   Which actor played Norman Warrender, Penny's father?|John Ringham|Shaun Curry|James Lister|Paul Nicholas|Medium|John Ringham|Norman Warrender|Actor Role|Penny Father|Warrender Family|Supporting Cast|1980s Sitcom
   Who played Vince Pinner's mother Rita?|Ann Lynn|Jan Francis|Sylvia Kay|Charlotte Seeley|Medium|Ann Lynn|Rita Pinner|Mother Character|Vince Family|Actress Casting|Pinner Household|Supporting Cast
   Who played Vince Pinner's father Les?|Shaun Curry|John Ringham|Ray Butt|Peter Bowles|Hard|Shaun Curry|Les Pinner|Vince Father|Actor Casting|Pinner Family|Supporting Cast|Character Relations
@@ -77,7 +77,7 @@
   Whose mother brings another potential girlfriend to the ward in The Visitors?|Norman Binns'|Roy Figgis'|Archie Glover's|Dr Thorpe's|Medium|The Visitors|Norman Mother|Arranged Introduction|Potential Girlfriend|Visiting Day|Series Two|1980 Story
   In The Lost Sheep, who admits he has never been christened?|Roy Figgis|Norman Binns|Archie Glover|Dr Thorpe|Medium|The Lost Sheep|Roy Figgis|Not Christened|Meeting Vicar|Religious Questions|1980 Episode|Ward Patient
   What special visitors arrive at the hospital in A Day In The Life Of?|A television crew|A circus troupe|A royal delegation|A touring orchestra|Easy|A Day In The Life Of|TV Crew|Hospital Documentary|Series Three Premiere|Media Attention|1981 Episode|Patients Compete
-  What kind of new staff member arrives in Adam's Rib?|A young female doctor|A new hospital chaplain|A specialist dentist|A retired army nurse|Medium|Adams Rib|Female Doctor|Medical Staffing|Ward Reception|Series Three|1981 Episode|Clinical Team
+  How do the established patients react when the young female doctor arrives in Only When I Laugh?|They have mixed feelings about her|They all immediately request discharge|They refuse every treatment|They put on a welcome party|Medium|Adams Rib Episode|Female Doctor Arrival|Mixed Patient Reaction|Third Series|Ward Three|Hospital Comedy Conflict|1981 Storyline
   Who is admitted to the ward in The Right Honourable Gentleman?|A Member of Parliament|A television actor|A local mayor|A police inspector|Medium|Right Honourable Gentleman|Member Of Parliament|NHS Costs|Hospital Petition|Series Three|1981 Episode|Politician Patient
   Which advice columnist receives a letter from Worried of Ward 3 in Postman's Knock?|Clare Butterfield|Deidre|Gloria Robbins|Daphne Warrender|Hard|Postmans Knock|Clare Butterfield|Agony Aunt|Ward Three|Advice Letter|1981 Episode|Confused Response
   Who keeps a diary of life in the ward in Dear Diary?|Norman Binns|Roy Figgis|Archie Glover|Gupte|Medium|Dear Diary|Norman Binns|Patient Journal|Ward Secrets|Series Three|1981 Episode|Private Writing
@@ -142,4 +142,1105 @@
     throw new Error('Pack 357: exported object validation failed');
   }
 
-  module.exports = questions;
+  
+// 21 November 2026 editorial audit: episode-specific additions, original IDs retained.
+const auditAdditions = [
+  {
+    "id": "tv_39010",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Who played Sonia, one of the unfortunate dates seen during Vince and Penny's first pub reunion?",
+    "answers": [
+      "Sylvia Kay",
+      "Linda Hayden",
+      "Ann Lynn",
+      "Belinda Lang"
+    ],
+    "correctAnswer": "Linda Hayden",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S1E01",
+      "Plot or cast: Sonia's guest actress",
+      "Fact answer: Linda Hayden",
+      "Episode coverage: Sonia's guest actress",
+      "1980s Romantic Comedy",
+      "Character story: Sonia's guest actress",
+      "Quiz source detail: S1E01",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/1/1/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39011",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Which actor portrayed Rupert, a date at the pub where Vince and Penny reunite?",
+    "answers": [
+      "James Lister",
+      "Adam French",
+      "David Neville",
+      "John Ringham"
+    ],
+    "correctAnswer": "David Neville",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S1E01",
+      "Plot or cast: Rupert's guest actor",
+      "Fact answer: David Neville",
+      "Episode coverage: Rupert's guest actor",
+      "1980s Romantic Comedy",
+      "Character story: Rupert's guest actor",
+      "Quiz source detail: S1E01",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/1/1/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39012",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Who produced the BBC sitcom Just Good Friends and directed early episodes?",
+    "answers": [
+      "David Croft",
+      "Robin Nash",
+      "Vernon Lawrence",
+      "Ray Butt"
+    ],
+    "correctAnswer": "Ray Butt",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: Production",
+      "Plot or cast: Original producer and director",
+      "Fact answer: Ray Butt",
+      "Episode coverage: Original producer and director",
+      "1980s Romantic Comedy",
+      "Character story: Original producer and director",
+      "Quiz source detail: Production",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/1/1/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39013",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Who reveals secrets from her own past to warn Penny about Vince in Just Good Friends?",
+    "answers": [
+      "Daphne Warrender",
+      "Rita Pinner",
+      "Gina Pinner",
+      "Elaine"
+    ],
+    "correctAnswer": "Daphne Warrender",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S1E04",
+      "Plot or cast: Mother's warning about Vince",
+      "Fact answer: Daphne Warrender",
+      "Episode coverage: Mother's warning about Vince",
+      "1980s Romantic Comedy",
+      "Character story: Mother's warning about Vince",
+      "Quiz source detail: S1E04",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/1/4/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39014",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "What does Penny begin to suspect when Vince is out of contact for weeks in Just Good Friends?",
+    "answers": [
+      "He has emigrated permanently",
+      "He is seeing another woman",
+      "He has been arrested abroad",
+      "He has lost his job"
+    ],
+    "correctAnswer": "He is seeing another woman",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S1E05",
+      "Plot or cast: Penny suspects a new romance",
+      "Fact answer: He is seeing another woman",
+      "Episode coverage: Penny suspects a new romance",
+      "1980s Romantic Comedy",
+      "Character story: Penny suspects a new romance",
+      "Quiz source detail: S1E05",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/1/5/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39015",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Who wants his flat back just as Vince and Penny arrange to live together in Just Good Friends?",
+    "answers": [
+      "Graham",
+      "Lennie",
+      "Big Ed",
+      "Norman Warrender"
+    ],
+    "correctAnswer": "Big Ed",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S1E06",
+      "Plot or cast: Flat returned to Big Ed",
+      "Fact answer: Big Ed",
+      "Episode coverage: Flat returned to Big Ed",
+      "1980s Romantic Comedy",
+      "Character story: Flat returned to Big Ed",
+      "Quiz source detail: S1E06",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/1/6/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39016",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "What mistake by Penny makes it possible for burglars to enter the couple's new flat in Just Good Friends?",
+    "answers": [
+      "She gives a key to a stranger",
+      "She leaves a downstairs window open",
+      "She leaves the alarm disconnected",
+      "She forgets to lock the front door"
+    ],
+    "correctAnswer": "She forgets to lock the front door",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S1E07",
+      "Plot or cast: Unlocked front door burglary",
+      "Fact answer: She forgets to lock the front door",
+      "Episode coverage: Unlocked front door burglary",
+      "1980s Romantic Comedy",
+      "Character story: Unlocked front door burglary",
+      "Quiz source detail: S1E07",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/1/7/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39017",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Why are the police called to the Warrender home after Vince tries to make up with Penny?",
+    "answers": [
+      "He arrives extremely drunk",
+      "He breaks a window while gardening",
+      "He is falsely accused of stealing a car",
+      "He is mistaken for a missing neighbour"
+    ],
+    "correctAnswer": "He arrives extremely drunk",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S2E01",
+      "Plot or cast: Drunken reconciliation attempt",
+      "Fact answer: He arrives extremely drunk",
+      "Episode coverage: Drunken reconciliation attempt",
+      "1980s Romantic Comedy",
+      "Character story: Drunken reconciliation attempt",
+      "Quiz source detail: S2E01",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/2/1/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39018",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "What evidence does Penny's estranged husband Graham present when he accuses her of adultery?",
+    "answers": [
+      "A recording of a telephone call",
+      "Photographs",
+      "A signed hotel bill",
+      "Letters from a neighbour"
+    ],
+    "correctAnswer": "Photographs",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S2E03",
+      "Plot or cast: Graham's divorce evidence",
+      "Fact answer: Photographs",
+      "Episode coverage: Graham's divorce evidence",
+      "1980s Romantic Comedy",
+      "Character story: Graham's divorce evidence",
+      "Quiz source detail: S2E03",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/2/3/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39019",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "At what social event does Penny become suspicious of Vince's behaviour towards another woman in Just Good Friends?",
+    "answers": [
+      "A school reunion",
+      "A christening",
+      "A wedding reception",
+      "A company awards dinner"
+    ],
+    "correctAnswer": "A wedding reception",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S2E04",
+      "Plot or cast: Vince and the bride misunderstanding",
+      "Fact answer: A wedding reception",
+      "Episode coverage: Vince and the bride misunderstanding",
+      "1980s Romantic Comedy",
+      "Character story: Vince and the bride misunderstanding",
+      "Quiz source detail: S2E04",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/2/4/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39020",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "What news does Vince announce when Penny plans to end their relationship again in series two of Just Good Friends?",
+    "answers": [
+      "He has joined the police",
+      "He is moving to Scotland",
+      "He has bought a pub",
+      "He has become engaged to someone else"
+    ],
+    "correctAnswer": "He has become engaged to someone else",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S2E05",
+      "Plot or cast: Vince's surprise engagement",
+      "Fact answer: He has become engaged to someone else",
+      "Episode coverage: Vince's surprise engagement",
+      "1980s Romantic Comedy",
+      "Character story: Vince's surprise engagement",
+      "Quiz source detail: S2E05",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/2/5/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39021",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "What possible development in her personal life shocks Penny in series two of Just Good Friends?",
+    "answers": [
+      "She thinks she may be pregnant",
+      "She inherits a hotel",
+      "She learns her sister is engaged",
+      "She is offered an overseas promotion"
+    ],
+    "correctAnswer": "She thinks she may be pregnant",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S2E06",
+      "Plot or cast: Penny's possible pregnancy",
+      "Fact answer: She thinks she may be pregnant",
+      "Episode coverage: Penny's possible pregnancy",
+      "1980s Romantic Comedy",
+      "Character story: Penny's possible pregnancy",
+      "Quiz source detail: S2E06",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/2/6/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39022",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "What does Vince seriously offer Penny when she jokingly asks him a question during a celebratory lunch?",
+    "answers": [
+      "A business partnership",
+      "A marriage proposal",
+      "A trip to New York",
+      "A second car"
+    ],
+    "correctAnswer": "A marriage proposal",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S2E07",
+      "Plot or cast: Vince sincere proposal",
+      "Fact answer: A marriage proposal",
+      "Episode coverage: Vince sincere proposal",
+      "1980s Romantic Comedy",
+      "Character story: Vince sincere proposal",
+      "Quiz source detail: S2E07",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/2/7/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39023",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Which vehicle from Vince and Penny's early courtship features in the Just Good Friends 1984 Christmas flashbacks?",
+    "answers": [
+      "A mobile library",
+      "A delivery lorry",
+      "An ice-cream van",
+      "A London taxi"
+    ],
+    "correctAnswer": "An ice-cream van",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: Christmas 1984",
+      "Plot or cast: Vince's ice cream van",
+      "Fact answer: An ice-cream van",
+      "Episode coverage: Vince's ice cream van",
+      "1980s Romantic Comedy",
+      "Character story: Vince's ice cream van",
+      "Quiz source detail: Christmas 1984",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/2/8/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39024",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "At which Paris landmark do Vince and Penny meet again at the start of the final series?",
+    "answers": [
+      "The Louvre Pyramid",
+      "Arc de Triomphe",
+      "The Moulin Rouge",
+      "The Eiffel Tower"
+    ],
+    "correctAnswer": "The Eiffel Tower",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S3E01",
+      "Plot or cast: Romantic Eiffel Tower meeting",
+      "Fact answer: The Eiffel Tower",
+      "Episode coverage: Romantic Eiffel Tower meeting",
+      "1980s Romantic Comedy",
+      "Character story: Romantic Eiffel Tower meeting",
+      "Quiz source detail: S3E01",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/3/1/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39025",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "How long had Vince and Penny been apart when their relationship resumes in Paris in series three?",
+    "answers": [
+      "Two years",
+      "Six weeks",
+      "Five years",
+      "Ten months"
+    ],
+    "correctAnswer": "Two years",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S3E01",
+      "Plot or cast: Two year separation",
+      "Fact answer: Two years",
+      "Episode coverage: Two year separation",
+      "1980s Romantic Comedy",
+      "Character story: Two year separation",
+      "Quiz source detail: S3E01",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/3/1/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39026",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Who insists on questioning Penny and Vince together about their relationship after meeting Penny?",
+    "answers": [
+      "Daphne",
+      "Gina",
+      "Rita",
+      "Elaine"
+    ],
+    "correctAnswer": "Gina",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S3E03",
+      "Plot or cast: Vince's wife interrogates them",
+      "Fact answer: Gina",
+      "Episode coverage: Vince's wife interrogates them",
+      "1980s Romantic Comedy",
+      "Character story: Vince's wife interrogates them",
+      "Quiz source detail: S3E03",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/3/3/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39027",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Who is responsible for putting pressure on Penny to accept a transfer to the Paris office in Just Good Friends?",
+    "answers": [
+      "Vince",
+      "Graham",
+      "Gina",
+      "Les Pinner"
+    ],
+    "correctAnswer": "Gina",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S3E04",
+      "Plot or cast: Engineered Paris transfer",
+      "Fact answer: Gina",
+      "Episode coverage: Engineered Paris transfer",
+      "1980s Romantic Comedy",
+      "Character story: Engineered Paris transfer",
+      "Quiz source detail: S3E04",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/3/4/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39028",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Whom does Vince offer a job at his wine importing business in the third series of Just Good Friends?",
+    "answers": [
+      "Les Pinner",
+      "Graham",
+      "Clifford Pinner",
+      "Norman Warrender"
+    ],
+    "correctAnswer": "Norman Warrender",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S3E05",
+      "Plot or cast: Employment offer to Penny's father",
+      "Fact answer: Norman Warrender",
+      "Episode coverage: Employment offer to Penny's father",
+      "1980s Romantic Comedy",
+      "Character story: Employment offer to Penny's father",
+      "Quiz source detail: S3E05",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/3/5/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39029",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "How many supposedly scrap German tanks are implicated in Vince's export scandal in Just Good Friends?",
+    "answers": [
+      "Six",
+      "Three",
+      "Twelve",
+      "Twenty"
+    ],
+    "correctAnswer": "Six",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: S3E06",
+      "Plot or cast: Six German tanks",
+      "Fact answer: Six",
+      "Episode coverage: Six German tanks",
+      "1980s Romantic Comedy",
+      "Character story: Six German tanks",
+      "Quiz source detail: S3E06",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/3/6/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39030",
+    "category": "Television",
+    "programme": "Just Good Friends",
+    "question": "Whom does Gina recruit to help derail Vince and Penny's wedding plans in the Just Good Friends finale?",
+    "answers": [
+      "Rita Pinner",
+      "Daphne Warrender",
+      "Lennie",
+      "Graham"
+    ],
+    "correctAnswer": "Daphne Warrender",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Just Good Friends",
+      "Programme: Just Good Friends",
+      "BBC One",
+      "John Sullivan",
+      "Episode: 1986 Christmas",
+      "Plot or cast: Gina enlists Daphne",
+      "Fact answer: Daphne Warrender",
+      "Episode coverage: Gina enlists Daphne",
+      "1980s Romantic Comedy",
+      "Character story: Gina enlists Daphne",
+      "Quiz source detail: 1986 Christmas",
+      "Source: https://www.comedy.co.uk/tv/just_good_friends/episodes/3/7/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39031",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "Who does Roy Figgis mistakenly believe is dying after overhearing part of Dr Thorpe's conversation in Only When I Laugh?",
+    "answers": [
+      "Norman Binns",
+      "Archie Glover",
+      "Himself",
+      "Gupte"
+    ],
+    "correctAnswer": "Himself",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S1E03",
+      "Plot or cast: Doctor's dog prognosis misunderstood",
+      "Fact answer: Himself",
+      "Episode coverage: Doctor's dog prognosis misunderstood",
+      "1980s Hospital Comedy",
+      "Character story: Doctor's dog prognosis misunderstood",
+      "Quiz source detail: S1E03",
+      "Source: https://www.tvmaze.com/shows/7823/only-when-i-laugh/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39032",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "How does Figgis help Archie hide when a jealous Greek man is expected at the hospital in Only When I Laugh?",
+    "answers": [
+      "He dresses him as a porter",
+      "He hides him in a linen trolley",
+      "He puts him in a nurse's uniform",
+      "He wraps Archie's head in bandages"
+    ],
+    "correctAnswer": "He wraps Archie's head in bandages",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S1E04",
+      "Plot or cast: Archie's burn victim disguise",
+      "Fact answer: He wraps Archie's head in bandages",
+      "Episode coverage: Archie's burn victim disguise",
+      "1980s Hospital Comedy",
+      "Character story: Archie's burn victim disguise",
+      "Quiz source detail: S1E04",
+      "Source: https://thetvdb.com/series/only-when-i-laugh/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39033",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "What unexpected problem does Roy Figgis encounter after disguising himself as a doctor in Only When I Laugh?",
+    "answers": [
+      "People mistake him for a real doctor",
+      "Dr Thorpe gives him a written examination",
+      "He is transferred to the surgical theatre",
+      "He loses his own hospital bed"
+    ],
+    "correctAnswer": "People mistake him for a real doctor",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S1E07",
+      "Plot or cast: Figgis mistaken for actual doctor",
+      "Fact answer: People mistake him for a real doctor",
+      "Episode coverage: Figgis mistaken for actual doctor",
+      "1980s Hospital Comedy",
+      "Character story: Figgis mistaken for actual doctor",
+      "Quiz source detail: S1E07",
+      "Source: https://www.tvmaze.com/shows/7823/only-when-i-laugh/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39034",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "Whose attempt to stop smoking damages his chances at a job interview in Only When I Laugh?",
+    "answers": [
+      "Roy Figgis's",
+      "Archie Glover's",
+      "Norman Binns's",
+      "Dr Thorpe's"
+    ],
+    "correctAnswer": "Archie Glover's",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S2E03",
+      "Plot or cast: Smoking withdrawal at job interview",
+      "Fact answer: Archie Glover's",
+      "Episode coverage: Smoking withdrawal at job interview",
+      "1980s Hospital Comedy",
+      "Character story: Smoking withdrawal at job interview",
+      "Quiz source detail: S2E03",
+      "Source: https://www.comedy.co.uk/features/comedy-rewind/only-when-i-laugh/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39035",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "What does Dr Thorpe try to persuade Roy Figgis to stop obsessing over in Only When I Laugh?",
+    "answers": [
+      "Missing hospital records",
+      "A TV audition",
+      "Predictions of his own death",
+      "A stolen watch"
+    ],
+    "correctAnswer": "Predictions of his own death",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S2E04",
+      "Plot or cast: Figgis convinced death is imminent",
+      "Fact answer: Predictions of his own death",
+      "Episode coverage: Figgis convinced death is imminent",
+      "1980s Hospital Comedy",
+      "Character story: Figgis convinced death is imminent",
+      "Quiz source detail: S2E04",
+      "Source: https://thetvdb.com/series/only-when-i-laugh/allseasons/official"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39036",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "Which visitor prompts Roy Figgis to become interested in being christened in Only When I Laugh?",
+    "answers": [
+      "A priest's driver",
+      "A visiting politician",
+      "A film star",
+      "A vicar"
+    ],
+    "correctAnswer": "A vicar",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S2E06",
+      "Plot or cast: Roy meets a church minister",
+      "Fact answer: A vicar",
+      "Episode coverage: Roy meets a church minister",
+      "1980s Hospital Comedy",
+      "Character story: Roy meets a church minister",
+      "Quiz source detail: S2E06",
+      "Source: https://www.tvmaze.com/shows/7823/only-when-i-laugh/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39037",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "What request does the MP patient refuse in Only When I Laugh despite his interest in NHS costs?",
+    "answers": [
+      "To sign a petition to save the hospital",
+      "To meet the hospital's television crew",
+      "To attend a fundraising concert",
+      "To donate his private car"
+    ],
+    "correctAnswer": "To sign a petition to save the hospital",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S3E03",
+      "Plot or cast: Refuses hospital-saving petition",
+      "Fact answer: To sign a petition to save the hospital",
+      "Episode coverage: Refuses hospital-saving petition",
+      "1980s Hospital Comedy",
+      "Character story: Refuses hospital-saving petition",
+      "Quiz source detail: S3E03",
+      "Source: https://www.tvmaze.com/shows/7823/only-when-i-laugh/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39038",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "Which member of the men's ward witnesses an accident involving Dr Thorpe in Only When I Laugh?",
+    "answers": [
+      "Roy Figgis",
+      "Norman Binns",
+      "Archie Glover",
+      "Gupte"
+    ],
+    "correctAnswer": "Norman Binns",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S3E05",
+      "Plot or cast: Norman witnesses Thorpe accident",
+      "Fact answer: Norman Binns",
+      "Episode coverage: Norman witnesses Thorpe accident",
+      "1980s Hospital Comedy",
+      "Character story: Norman witnesses Thorpe accident",
+      "Quiz source detail: S3E05",
+      "Source: https://www.tvmaze.com/shows/7823/only-when-i-laugh/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39039",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "Why do the ward patients become anxious about Norman's new hobby in Only When I Laugh?",
+    "answers": [
+      "They fear he is writing a medical textbook",
+      "They think he is secretly composing a musical",
+      "They want to read what he has written about them in his diary",
+      "They believe he has lost his reading glasses"
+    ],
+    "correctAnswer": "They want to read what he has written about them in his diary",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S3E06",
+      "Plot or cast: Ward curiosity about Norman's diary",
+      "Fact answer: They want to read what he has written about them in his diary",
+      "Episode coverage: Ward curiosity about Norman's diary",
+      "1980s Hospital Comedy",
+      "Character story: Ward curiosity about Norman's diary",
+      "Quiz source detail: S3E06",
+      "Source: https://www.tvmaze.com/shows/7823/only-when-i-laugh/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39040",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "Whom does Dr Thorpe ask for help when he is discovered in a compromising situation in Only When I Laugh?",
+    "answers": [
+      "The hospital chaplain",
+      "The chief pharmacist",
+      "The receptionist",
+      "The male patients in his ward"
+    ],
+    "correctAnswer": "The male patients in his ward",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S4E02",
+      "Plot or cast: Thorpe seeks ward patients' help",
+      "Fact answer: The male patients in his ward",
+      "Episode coverage: Thorpe seeks ward patients' help",
+      "1980s Hospital Comedy",
+      "Character story: Thorpe seeks ward patients' help",
+      "Quiz source detail: S4E02",
+      "Source: https://www.tvmaze.com/shows/7823/only-when-i-laugh/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39041",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "Which patient does Roy Figgis diagnose as sexually repressed during his amateur psychiatric experiments?",
+    "answers": [
+      "Norman Binns",
+      "Archie Glover",
+      "Dr Thorpe",
+      "Gupte"
+    ],
+    "correctAnswer": "Norman Binns",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S4E03",
+      "Plot or cast: Figgis amateur diagnosis",
+      "Fact answer: Norman Binns",
+      "Episode coverage: Figgis amateur diagnosis",
+      "1980s Hospital Comedy",
+      "Character story: Figgis amateur diagnosis",
+      "Quiz source detail: S4E03",
+      "Source: https://www.tvmaze.com/shows/7823/only-when-i-laugh/episodeguide"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39042",
+    "category": "Television",
+    "programme": "Only When I Laugh",
+    "question": "Where does a mysterious intoxicated visitor collapse before Roy Figgis is asked to investigate in Only When I Laugh?",
+    "answers": [
+      "A ward lavatory",
+      "Hospital reception",
+      "An operating theatre",
+      "The hospital canteen"
+    ],
+    "correctAnswer": "Hospital reception",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Only When I Laugh",
+      "Programme: Only When I Laugh",
+      "ITV",
+      "Eric Chappell",
+      "Episode: S4E06",
+      "Plot or cast: Drunk stranger collapses",
+      "Fact answer: Hospital reception",
+      "Episode coverage: Drunk stranger collapses",
+      "1980s Hospital Comedy",
+      "Character story: Drunk stranger collapses",
+      "Quiz source detail: S4E06",
+      "Source: https://www.tvmaze.com/shows/7823/only-when-i-laugh/episodeguide"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditAdditions);
+if (new Set(questions.map(q=>q.id)).size!==questions.length ||
+ new Set(questions.map(q=>normalise(q.question))).size!==questions.length ||
+ questions.some(q=>q.answers.length!==4 ||
+ new Set(q.answers.map(normalise)).size!==4 ||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1 ||
+ q.tags.length<14 || !q.tags.includes('Programme: '+q.programme) ||
+ q.dailyEligible!==true)) throw Error('Pack 357 audit validation failed');
+module.exports = questions;
