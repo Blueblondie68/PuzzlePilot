@@ -1645,39 +1645,6 @@ const auditAdditions = [
     "id": "tv_39005",
     "category": "Television",
     "programme": "Chef!",
-    "question": "What must Gareth try to win in Lyon to prove himself Britain's leading chef?",
-    "answers": [
-      "An international cookery competition",
-      "A Michelin restaurant auction",
-      "A regional wine contest",
-      "A televised dance competition"
-    ],
-    "correctAnswer": "An international cookery competition",
-    "difficulty": "Easy",
-    "tags": [
-      "Television",
-      "British Television",
-      "Comedy",
-      "Sitcom",
-      "Chef!",
-      "Programme: Chef!",
-      "BBC One",
-      "Lenny Henry",
-      "Episode: England Expects",
-      "Plot point: Competition for professional chefs",
-      "Topic: British culinary reputation",
-      "Characters: Gareth Blackstock",
-      "Correct: An international cookery competition",
-      "1990s Restaurant Comedy",
-      "Story: British culinary reputation",
-      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39006",
-    "category": "Television",
-    "programme": "Chef!",
     "question": "Which appointment does Gareth miss just before Janice leaves and begins divorce proceedings?",
     "answers": [
       "A house valuation",
@@ -1708,7 +1675,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39007",
+    "id": "tv_39006",
     "category": "Television",
     "programme": "Chef!",
     "question": "What family connection brings Renée into Gareth's kitchen team in the third series of Chef!?",
@@ -1741,7 +1708,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39008",
+    "id": "tv_39007",
     "category": "Television",
     "programme": "Chef!",
     "question": "What difficulty affects Gareth's dealings with restaurant diners as his marriage breaks down?",
@@ -1774,7 +1741,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39009",
+    "id": "tv_39008",
     "category": "Television",
     "programme": "Chef!",
     "question": "Who arrives at Le Chateau Anglais and worsens Gareth's mood as he copes with his failed marriage?",
@@ -1807,40 +1774,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39010",
-    "category": "Television",
-    "programme": "Chef!",
-    "question": "At what kind of gathering does Gareth's childhood sweetheart reappear in the restaurant?",
-    "answers": [
-      "A christening",
-      "A wedding",
-      "A retirement party",
-      "A charity auction"
-    ],
-    "correctAnswer": "A wedding",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Comedy",
-      "Sitcom",
-      "Chef!",
-      "Programme: Chef!",
-      "BBC One",
-      "Lenny Henry",
-      "Episode: Rochelle",
-      "Plot point: Romantic reunion",
-      "Topic: Restaurant celebration",
-      "Characters: Gareth and Rochelle",
-      "Correct: A wedding",
-      "1990s Restaurant Comedy",
-      "Story: Restaurant celebration",
-      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39011",
+    "id": "tv_39009",
     "category": "Television",
     "programme": "Chef!",
     "question": "Which city is Rochelle hoping Gareth will join her in at the end of Chef!?",
