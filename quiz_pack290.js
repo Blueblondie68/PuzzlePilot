@@ -4,7 +4,7 @@
  // Television: Fawlty Towers (1975 and 1979)
  // The complete twelve-episode BBC Two sitcom, both series.
  // Seven individually chosen specialist tags for every question.
- // No padded target, no episode-title recall and no quiz_bank.js change yet.
+ // No padding or episode-title recall; quiz_bank.js already connects packs 1–558.
  // Row format: question | correct answer | three distractors | difficulty | seven specialist tags
 
  const groups = [
@@ -179,4 +179,1006 @@
  )) {
    throw new Error('Incomplete exported question metadata');
  }
+
+// 21 November 2026: episode and credits audit. Original IDs tv_12061–tv_12132 retained.
+// New IDs tv_35544–tv_35572; distinct storylines and verified cast credits.
+// Sources: British Comedy Guide Fawlty Towers episode pages (series 1 and 2),
+// TheTVDB aired episode guide and TVmaze episode synopses.
+const auditAdditions = [
+  {
+    "id": "tv_35544",
+    "category": "Television",
+    "question": "Which actor played the bogus aristocrat Lord Melbury in Fawlty Towers?",
+    "answers": [
+      "Michael Gwynn",
+      "Robin Ellis",
+      "David Kelly",
+      "Nicky Henson"
+    ],
+    "correctAnswer": "Michael Gwynn",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Programme and cast",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Lord Melbury casting",
+      "Person: Michael Gwynn",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actor played the bogus aristocrat Lord Melbury in Fawlty Towers?",
+      "Answer: Michael Gwynn"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35545",
+    "category": "Television",
+    "question": "Which actor played Detective Inspector Danny Brown in Fawlty Towers?",
+    "answers": [
+      "Michael Gwynn",
+      "Robin Ellis",
+      "Bernard Cribbins",
+      "Geoffrey Palmer"
+    ],
+    "correctAnswer": "Robin Ellis",
+    "difficulty": "Hard",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: A Touch of Class",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Detective exposes the false lord",
+      "Person: Robin Ellis",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actor played Detective Inspector Danny Brown in Fawlty Towers?",
+      "Answer: Robin Ellis"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35546",
+    "category": "Television",
+    "question": "Which actor played the incompetent builder O'Reilly in Fawlty Towers?",
+    "answers": [
+      "Brian Hall",
+      "Bernard Cribbins",
+      "David Kelly",
+      "Derek Royle"
+    ],
+    "correctAnswer": "David Kelly",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: The Builders",
+      "Programme: Fawlty Towers",
+      "Plot or cast: O'Reilly guest actor",
+      "Person: David Kelly",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actor played the incompetent builder O'Reilly in Fawlty Towers?",
+      "Answer: David Kelly"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35547",
+    "category": "Television",
+    "question": "In Fawlty Towers, what major mistake do O'Reilly's builders make to the dining-room entrance?",
+    "answers": [
+      "They fit a revolving door",
+      "They replace it with a window",
+      "They widen it into an archway",
+      "They build a wall across it"
+    ],
+    "correctAnswer": "They build a wall across it",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: The Builders",
+      "Programme: Fawlty Towers",
+      "Plot or cast: The builders block access to the dining room",
+      "Person: O'Reilly and his builders",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: In Fawlty Towers, what major mistake do O'Reilly's builders make to the dining-room entrance?",
+      "Answer: They build a wall across it"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35548",
+    "category": "Television",
+    "question": "Which hotel employee celebrates a birthday during Fawlty Towers' The Wedding Party?",
+    "answers": [
+      "Manuel",
+      "Polly",
+      "Sybil",
+      "Major Gowen"
+    ],
+    "correctAnswer": "Manuel",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: The Wedding Party",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Manuel celebrates his birthday",
+      "Person: Manuel",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which hotel employee celebrates a birthday during Fawlty Towers' The Wedding Party?",
+      "Answer: Manuel"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35549",
+    "category": "Television",
+    "question": "Which actress played Mrs Peignoir, the guest who makes advances to Basil in Fawlty Towers?",
+    "answers": [
+      "Joan Sanderson",
+      "Yvonne Gilan",
+      "Claire Nielson",
+      "Elspet Gray"
+    ],
+    "correctAnswer": "Yvonne Gilan",
+    "difficulty": "Hard",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: The Wedding Party",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Mrs Peignoir casting",
+      "Person: Yvonne Gilan",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actress played Mrs Peignoir, the guest who makes advances to Basil in Fawlty Towers?",
+      "Answer: Yvonne Gilan"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35550",
+    "category": "Television",
+    "question": "Who becomes the object of chef Kurt's unrequited affections in Fawlty Towers' Gourmet Night?",
+    "answers": [
+      "Basil",
+      "Polly",
+      "Manuel",
+      "André"
+    ],
+    "correctAnswer": "Manuel",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Gourmet Night",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Kurt's feelings cause a dispute and drunkenness",
+      "Person: Kurt and Manuel",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Who becomes the object of chef Kurt's unrequited affections in Fawlty Towers' Gourmet Night?",
+      "Answer: Manuel"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35551",
+    "category": "Television",
+    "question": "Which actor played the chef Kurt in Fawlty Towers' Gourmet Night?",
+    "answers": [
+      "Brian Hall",
+      "André Maranne",
+      "Nicky Henson",
+      "Steve Plytas"
+    ],
+    "correctAnswer": "Steve Plytas",
+    "difficulty": "Hard",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Gourmet Night",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Kurt cast portrayal",
+      "Person: Steve Plytas",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actor played the chef Kurt in Fawlty Towers' Gourmet Night?",
+      "Answer: Steve Plytas"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35552",
+    "category": "Television",
+    "question": "How many guests are actually booked for the special gourmet dinner in Fawlty Towers?",
+    "answers": [
+      "Four",
+      "Eight",
+      "Twelve",
+      "Sixteen"
+    ],
+    "correctAnswer": "Four",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Gourmet Night",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Small dinner reservation count",
+      "Person: Basil and Sybil Fawlty",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: How many guests are actually booked for the special gourmet dinner in Fawlty Towers?",
+      "Answer: Four"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35553",
+    "category": "Television",
+    "question": "In Fawlty Towers' Communication Problems, where did Mrs Richards leave the money she accuses the hotel of losing?",
+    "answers": [
+      "Inside a coat lining",
+      "In a vase",
+      "Under the mattress",
+      "In her handbag"
+    ],
+    "correctAnswer": "In a vase",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Communication Problems",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Missing cash found in vase",
+      "Person: Mrs Richards",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: In Fawlty Towers' Communication Problems, where did Mrs Richards leave the money she accuses the hotel of losing?",
+      "Answer: In a vase"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35554",
+    "category": "Television",
+    "question": "Which Fawlty Towers resident does Basil ask to hide the proceeds of his winning bet in Communication Problems?",
+    "answers": [
+      "Manuel",
+      "Polly Sherman",
+      "Major Gowen",
+      "Chef Terry"
+    ],
+    "correctAnswer": "Major Gowen",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Communication Problems",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Major asked to conceal gambling winnings",
+      "Person: Basil and Major Gowen",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which Fawlty Towers resident does Basil ask to hide the proceeds of his winning bet in Communication Problems?",
+      "Answer: Major Gowen"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35555",
+    "category": "Television",
+    "question": "Which actor played the flirtatious guest Mr Johnson in Fawlty Towers' The Psychiatrist?",
+    "answers": [
+      "Basil Henson",
+      "Bruce Boa",
+      "Robin Ellis",
+      "Nicky Henson"
+    ],
+    "correctAnswer": "Nicky Henson",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: The Psychiatrist",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Mr Johnson casting",
+      "Person: Nicky Henson",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actor played the flirtatious guest Mr Johnson in Fawlty Towers' The Psychiatrist?",
+      "Answer: Nicky Henson"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35556",
+    "category": "Television",
+    "question": "Which actor portrayed Dr Abbott in the Fawlty Towers episode The Psychiatrist?",
+    "answers": [
+      "Basil Henson",
+      "Nicky Henson",
+      "John Quarmby",
+      "Michael Gwynn"
+    ],
+    "correctAnswer": "Basil Henson",
+    "difficulty": "Hard",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: The Psychiatrist",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Dr Abbott casting",
+      "Person: Basil Henson",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actor portrayed Dr Abbott in the Fawlty Towers episode The Psychiatrist?",
+      "Answer: Basil Henson"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35557",
+    "category": "Television",
+    "question": "Which actress portrayed Raylene Miles in the Fawlty Towers episode The Psychiatrist?",
+    "answers": [
+      "Elspet Gray",
+      "Luan Peters",
+      "Joan Sanderson",
+      "Una Stubbs"
+    ],
+    "correctAnswer": "Luan Peters",
+    "difficulty": "Hard",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: The Psychiatrist",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Raylene Miles casting",
+      "Person: Luan Peters",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actress portrayed Raylene Miles in the Fawlty Towers episode The Psychiatrist?",
+      "Answer: Luan Peters"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35558",
+    "category": "Television",
+    "question": "Who played Mrs Hamilton, wife of the demanding American guest, in Fawlty Towers' Waldorf Salad?",
+    "answers": [
+      "Joan Sanderson",
+      "Prunella Scales",
+      "Claire Nielson",
+      "Mavis Pugh"
+    ],
+    "correctAnswer": "Claire Nielson",
+    "difficulty": "Hard",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Waldorf Salad",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Mrs Hamilton cast role",
+      "Person: Claire Nielson",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Who played Mrs Hamilton, wife of the demanding American guest, in Fawlty Towers' Waldorf Salad?",
+      "Answer: Claire Nielson"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35559",
+    "category": "Television",
+    "question": "What does Basil eventually tell the other hotel guests to do in Fawlty Towers' Waldorf Salad after their complaints?",
+    "answers": [
+      "Move to the dining room",
+      "Write to the BBC",
+      "Queue to see the chef",
+      "Leave the hotel"
+    ],
+    "correctAnswer": "Leave the hotel",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Waldorf Salad",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Basil drives out disgruntled guests",
+      "Person: Basil Fawlty",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: What does Basil eventually tell the other hotel guests to do in Fawlty Towers' Waldorf Salad after their complaints?",
+      "Answer: Leave the hotel"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35560",
+    "category": "Television",
+    "question": "Which actor played the impatient Dr Price in Fawlty Towers' The Kipper and the Corpse?",
+    "answers": [
+      "Geoffrey Palmer",
+      "Bernard Cribbins",
+      "Derek Royle",
+      "Brian Hall"
+    ],
+    "correctAnswer": "Geoffrey Palmer",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: The Kipper and the Corpse",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Dr Price casting",
+      "Person: Geoffrey Palmer",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actor played the impatient Dr Price in Fawlty Towers' The Kipper and the Corpse?",
+      "Answer: Geoffrey Palmer"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35561",
+    "category": "Television",
+    "question": "Who played the deceased guest Mr Leeman in Fawlty Towers' The Kipper and the Corpse?",
+    "answers": [
+      "Geoffrey Palmer",
+      "Derek Royle",
+      "David Kelly",
+      "John Quarmby"
+    ],
+    "correctAnswer": "Derek Royle",
+    "difficulty": "Hard",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: The Kipper and the Corpse",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Mr Leeman casting",
+      "Person: Derek Royle",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Who played the deceased guest Mr Leeman in Fawlty Towers' The Kipper and the Corpse?",
+      "Answer: Derek Royle"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35562",
+    "category": "Television",
+    "question": "Which actress played Sybil's friend Alice in Fawlty Towers' The Anniversary?",
+    "answers": [
+      "Joan Sanderson",
+      "Yvonne Gilan",
+      "Una Stubbs",
+      "Gilly Flower"
+    ],
+    "correctAnswer": "Una Stubbs",
+    "difficulty": "Hard",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: The Anniversary",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Alice guest casting",
+      "Person: Una Stubbs",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actress played Sybil's friend Alice in Fawlty Towers' The Anniversary?",
+      "Answer: Una Stubbs"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35563",
+    "category": "Television",
+    "question": "What is the surname of the health inspector who threatens the hotel in Fawlty Towers' Basil the Rat?",
+    "answers": [
+      "Hutchinson",
+      "Richards",
+      "Hamilton",
+      "Carnegie"
+    ],
+    "correctAnswer": "Carnegie",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Basil the Rat",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Health inspector Mr Carnegie",
+      "Person: Mr Carnegie",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: What is the surname of the health inspector who threatens the hotel in Fawlty Towers' Basil the Rat?",
+      "Answer: Carnegie"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35564",
+    "category": "Television",
+    "question": "Which actor portrayed health inspector Mr Carnegie in Fawlty Towers' Basil the Rat?",
+    "answers": [
+      "John Quarmby",
+      "Basil Henson",
+      "Derek Royle",
+      "Michael Gwynn"
+    ],
+    "correctAnswer": "John Quarmby",
+    "difficulty": "Hard",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Basil the Rat",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Mr Carnegie guest casting",
+      "Person: John Quarmby",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actor portrayed health inspector Mr Carnegie in Fawlty Towers' Basil the Rat?",
+      "Answer: John Quarmby"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35565",
+    "category": "Television",
+    "question": "In Fawlty Towers' Basil the Rat, which disturbing problem in the water tank is one of the hotel's hygiene failures?",
+    "answers": [
+      "A broken thermometer",
+      "Dead birds",
+      "A missing filter",
+      "A pile of bricks"
+    ],
+    "correctAnswer": "Dead birds",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Basil the Rat",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Dead birds found in the water tank",
+      "Person: Sybil and Basil Fawlty",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: In Fawlty Towers' Basil the Rat, which disturbing problem in the water tank is one of the hotel's hygiene failures?",
+      "Answer: Dead birds"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35566",
+    "category": "Television",
+    "question": "Why was the Fawlty Towers finale Basil the Rat broadcast months later than originally planned?",
+    "answers": [
+      "The cast went on strike for higher wages",
+      "The film was destroyed in a studio fire",
+      "A BBC industrial dispute",
+      "A planned actor replacement was delayed"
+    ],
+    "correctAnswer": "A BBC industrial dispute",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Basil the Rat",
+      "Programme: Fawlty Towers",
+      "Plot or cast: BBC strike delayed final episode completion",
+      "Person: 1979 production scheduling",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Why was the Fawlty Towers finale Basil the Rat broadcast months later than originally planned?",
+      "Answer: A BBC industrial dispute"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35567",
+    "category": "Television",
+    "question": "Which actress played the regular Fawlty Towers resident Miss Tibbs?",
+    "answers": [
+      "Renee Roberts",
+      "Una Stubbs",
+      "Elspet Gray",
+      "Gilly Flower"
+    ],
+    "correctAnswer": "Gilly Flower",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Series-wide recurring characters",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Miss Tibbs casting",
+      "Person: Gilly Flower",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actress played the regular Fawlty Towers resident Miss Tibbs?",
+      "Answer: Gilly Flower"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35568",
+    "category": "Television",
+    "question": "Which actress played the regular Fawlty Towers resident Miss Gatsby?",
+    "answers": [
+      "Renee Roberts",
+      "Gilly Flower",
+      "Mavis Pugh",
+      "Yvonne Gilan"
+    ],
+    "correctAnswer": "Renee Roberts",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Series-wide recurring characters",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Miss Gatsby casting",
+      "Person: Renee Roberts",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actress played the regular Fawlty Towers resident Miss Gatsby?",
+      "Answer: Renee Roberts"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35569",
+    "category": "Television",
+    "question": "Which actor played chef Terry in the second series of Fawlty Towers?",
+    "answers": [
+      "Steve Plytas",
+      "Brian Hall",
+      "David Kelly",
+      "Geoffrey Palmer"
+    ],
+    "correctAnswer": "Brian Hall",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Series-wide cast",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Second-series chef actor",
+      "Person: Brian Hall",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Which actor played chef Terry in the second series of Fawlty Towers?",
+      "Answer: Brian Hall"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35570",
+    "category": "Television",
+    "question": "Who directed the first series of Fawlty Towers?",
+    "answers": [
+      "Bob Spiers",
+      "Douglas Argent",
+      "John Howard Davies",
+      "David Croft"
+    ],
+    "correctAnswer": "John Howard Davies",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Production",
+      "Programme: Fawlty Towers",
+      "Plot or cast: First-series direction",
+      "Person: John Howard Davies",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Who directed the first series of Fawlty Towers?",
+      "Answer: John Howard Davies"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35571",
+    "category": "Television",
+    "question": "Who directed the second series of Fawlty Towers?",
+    "answers": [
+      "John Howard Davies",
+      "Dennis Wilson",
+      "Douglas Argent",
+      "Bob Spiers"
+    ],
+    "correctAnswer": "Bob Spiers",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Production",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Second-series direction",
+      "Person: Bob Spiers",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Who directed the second series of Fawlty Towers?",
+      "Answer: Bob Spiers"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_35572",
+    "category": "Television",
+    "question": "Who composed the original music for Fawlty Towers?",
+    "answers": [
+      "Dennis Wilson",
+      "Ronnie Hazlehurst",
+      "Howard Goodall",
+      "Alan Hawkshaw"
+    ],
+    "correctAnswer": "Dennis Wilson",
+    "difficulty": "Medium",
+    "tags": [
+      "British Television",
+      "British Sitcom",
+      "Comedy",
+      "Fawlty Towers",
+      "BBC Two",
+      "1970s",
+      "1975-1979",
+      "Hotel Comedy",
+      "Episode: Production",
+      "Programme: Fawlty Towers",
+      "Plot or cast: Series composer credits",
+      "Person: Dennis Wilson",
+      "Cast and storyline audit",
+      "November 2026",
+      "Two-series British sitcom",
+      "Verified British Comedy Guide",
+      "Question focus: Who composed the original music for Fawlty Towers?",
+      "Answer: Dennis Wilson"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditAdditions);
+if(questions.length !== 101 ||
+  new Set(questions.map(q => q.id)).size !== questions.length ||
+  new Set(questions.map(q => q.question.toLowerCase())).size !== questions.length ||
+  questions.some(q => q.answers.length !== 4 || new Set(q.answers).size !== 4 ||
+    q.answers.filter(a => a === q.correctAnswer).length !== 1 ||
+    q.tags.length < 16 || !q.tags.includes('Fawlty Towers') || q.dailyEligible !== true))
+  throw new Error('Pack 290 episode-audit validation failed');
+
  module.exports = questions;
