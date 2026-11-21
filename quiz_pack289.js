@@ -165,6 +165,7 @@ const auditAdditions = [
     "category": "Television",
     "question": "In Gimme Gimme Gimme, what does Jez initially pretend to be when Linda and Tom find him in their kitchen?",
     "answers": [
+      "An escort",
       "An undercover police officer",
       "A delivery driver",
       "A visiting estate agent"
@@ -203,6 +204,7 @@ const auditAdditions = [
     "question": "What is the name of the Christian deliveryman Linda dates in Gimme Gimme Gimme's Legs And Co.?",
     "answers": [
       "Neville",
+      "Joe",
       "Pedro",
       "Rick"
     ],
@@ -241,6 +243,7 @@ const auditAdditions = [
     "answers": [
       "Noel Gallagher",
       "Damon Albarn",
+      "Liam Gallagher",
       "Robbie Williams"
     ],
     "correctAnswer": "Liam Gallagher",
@@ -278,7 +281,8 @@ const auditAdditions = [
     "answers": [
       "That he is Sugar's new manager",
       "That he is giving Sugar singing lessons",
-      "That he is secretly a paparazzo"
+      "That he is secretly a paparazzo",
+      "That he is having an affair with Sugar"
     ],
     "correctAnswer": "That he is having an affair with Sugar",
     "difficulty": "Medium",
@@ -313,6 +317,7 @@ const auditAdditions = [
     "category": "Television",
     "question": "What is the real name of Tom's nightclub pick-up Nino in Gimme Gimme Gimme?",
     "answers": [
+      "Kevin",
       "Marco",
       "Tony",
       "Paolo"
@@ -351,6 +356,7 @@ const auditAdditions = [
     "question": "What is the first name of the American woman Tom marries in Gimme Gimme Gimme's first-series finale?",
     "answers": [
       "India",
+      "Gloria",
       "Sharon",
       "Maddie"
     ],
@@ -389,6 +395,7 @@ const auditAdditions = [
     "answers": [
       "Sugar",
       "Suze",
+      "India",
       "Maddie"
     ],
     "correctAnswer": "India",
@@ -426,7 +433,8 @@ const auditAdditions = [
     "answers": [
       "Her father George",
       "Her cousin Neville",
-      "Her uncle Pedro"
+      "Her uncle Pedro",
+      "Her brother Vince"
     ],
     "correctAnswer": "Her brother Vince",
     "difficulty": "Medium",
@@ -461,6 +469,7 @@ const auditAdditions = [
     "category": "Television",
     "question": "What game do Linda and Tom end up playing together during Gimme Gimme Gimme's Millennium special?",
     "answers": [
+      "Charades",
       "Trivial Pursuit",
       "Monopoly",
       "Pictionary"
@@ -499,6 +508,7 @@ const auditAdditions = [
     "question": "Why do Linda and Tom try to conceal Beryl's apparent death in Gimme Gimme Gimme's Stiff?",
     "answers": [
       "They are worried about losing a television role",
+      "They are afraid of losing their home",
       "They are secretly planning her wedding",
       "They want to claim a lottery prize"
     ],
@@ -537,6 +547,7 @@ const auditAdditions = [
     "answers": [
       "Jez Littlewood",
       "Beryl Merit",
+      "Tom Farrell",
       "Sugar Walls"
     ],
     "correctAnswer": "Tom Farrell",
@@ -574,7 +585,8 @@ const auditAdditions = [
     "answers": [
       "They are professional actors",
       "They are undercover detectives",
-      "They are secretly divorced"
+      "They are secretly divorced",
+      "They are swingers"
     ],
     "correctAnswer": "They are swingers",
     "difficulty": "Medium",
@@ -609,6 +621,7 @@ const auditAdditions = [
     "category": "Television",
     "question": "In Gimme Gimme Gimme's Dirty Thirty, whom does Tom ask Linda to seduce to discourage a parental visit?",
     "answers": [
+      "His father",
       "His agent",
       "His landlord",
       "His cousin"
@@ -647,6 +660,7 @@ const auditAdditions = [
     "question": "What kind of man does Tom wake up beside after a drunken night out in Gimme Gimme Gimme's Glad To Be Gay?",
     "answers": [
       "A football referee",
+      "A security guard",
       "A travel agent",
       "A police detective"
     ],
@@ -685,6 +699,7 @@ const auditAdditions = [
     "answers": [
       "Hairdresser",
       "Firefighter",
+      "Taxi driver",
       "Librarian"
     ],
     "correctAnswer": "Taxi driver",
@@ -722,7 +737,8 @@ const auditAdditions = [
     "answers": [
       "Phil Daniels",
       "Mark Monero",
-      "Morgan Jones"
+      "Morgan Jones",
+      "David Schneider"
     ],
     "correctAnswer": "David Schneider",
     "difficulty": "Hard",
@@ -757,6 +773,7 @@ const auditAdditions = [
     "category": "Television",
     "question": "Which actress plays Maddie in Gimme Gimme Gimme's Glad To Be Gay?",
     "answers": [
+      "Moya Brady",
       "Beth Goddard",
       "Elaine Lordan",
       "Doña Croll"
@@ -795,6 +812,7 @@ const auditAdditions = [
     "question": "For what offence is Linda arrested in Gimme Gimme Gimme's Glad To Be Gay?",
     "answers": [
       "Shoplifting",
+      "Soliciting",
       "Trespassing",
       "Vandalism"
     ],
@@ -833,6 +851,7 @@ const auditAdditions = [
     "answers": [
       "School playground supervision",
       "Hotel reception work",
+      "Factory production-line work",
       "Radio station presenting"
     ],
     "correctAnswer": "Factory production-line work",
@@ -870,7 +889,8 @@ const auditAdditions = [
     "answers": [
       "Bart",
       "Neville",
-      "Pedro"
+      "Pedro",
+      "Ron"
     ],
     "correctAnswer": "Ron",
     "difficulty": "Hard",
@@ -905,6 +925,7 @@ const auditAdditions = [
     "category": "Television",
     "question": "What do Linda and Tom operate to raise money in Gimme Gimme Gimme's 2001 Comic Relief sketch?",
     "answers": [
+      "A kissing booth",
       "A charity car wash",
       "A cake stall",
       "A sponsored karaoke contest"
@@ -943,6 +964,7 @@ const auditAdditions = [
     "question": "Who plays the nun in Gimme Gimme Gimme's Comic Relief special?",
     "answers": [
       "Su Pollard",
+      "Anna Nolan",
       "June Whitfield",
       "Mina Anwar"
     ],
@@ -981,6 +1003,7 @@ const auditAdditions = [
     "answers": [
       "Hugh Grant",
       "Richard Gere",
+      "Tom Cruise",
       "Brad Pitt"
     ],
     "correctAnswer": "Tom Cruise",
@@ -1018,7 +1041,8 @@ const auditAdditions = [
     "answers": [
       "His costume catches fire",
       "He arrives at the wrong theatre",
-      "The audience walks out before the show starts"
+      "The audience walks out before the show starts",
+      "He forgets his only line"
     ],
     "correctAnswer": "He forgets his only line",
     "difficulty": "Medium",
@@ -1053,6 +1077,7 @@ const auditAdditions = [
     "category": "Television",
     "question": "What is the name of the daytime television soap in which Tom acts during Gimme Gimme Gimme's Trauma?",
     "answers": [
+      "Doctor Deaf",
       "The Ward",
       "Central Hospital",
       "Harbour View"
@@ -1091,6 +1116,7 @@ const auditAdditions = [
     "question": "What type of stage production is Tom preparing for when he hires a singing teacher in Gimme Gimme Gimme?",
     "answers": [
       "An opera recital",
+      "A musical",
       "A classical concert",
       "A pantomime competition"
     ],
@@ -1129,6 +1155,7 @@ const auditAdditions = [
     "answers": [
       "The show is actually a costume rehearsal",
       "The show is being filmed without an audience",
+      "The show is for deliberately unattractive models",
       "The show only uses child models"
     ],
     "correctAnswer": "The show is for deliberately unattractive models",
@@ -1166,7 +1193,8 @@ const auditAdditions = [
     "answers": [
       "Secretly selling their flat",
       "Leaving London for a new job",
-      "Hiding a gambling debt"
+      "Hiding a gambling debt",
+      "Having an affair"
     ],
     "correctAnswer": "Having an affair",
     "difficulty": "Medium",
