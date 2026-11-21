@@ -1536,14 +1536,14 @@ const auditAdditions = [
     "id": "tv_38312",
     "category": "Television",
     "programme": "The Wombles",
-    "question": "In The Wombles (90E42 Bungo Bingo), what are the mysterious cards Bungo finds on the Common and shows the others?",
+    "question": "In The Wombles (90E42 Bungo Bingo), which elderly Womble identifies the strange cards that Bungo finds on the Common?",
     "answers": [
-      "Football trading cards",
-      "Old bingo cards",
-      "Railway tickets",
-      "Playing cards"
+      "Tobermory",
+      "Great Uncle Bulgaria",
+      "Madame Cholet",
+      "Cairngorm MacWomble"
     ],
-    "correctAnswer": "Old bingo cards",
+    "correctAnswer": "Great Uncle Bulgaria",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1556,10 +1556,10 @@ const auditAdditions = [
       "Wimbledon Common",
       "Episode: 90E42 Bungo Bingo",
       "Episode storyline",
-      "Correct: Old bingo cards",
+      "Correct: Great Uncle Bulgaria",
       "Source: https://www.tidybag.uk/television/the-wombles-1990s-tv-episodes/",
-      "Bungo finds cards",
-      "Bingo game",
+      "Great Uncle Bulgaria identifies cards",
+      "Bingo cards explained",
       "Common litter"
     ],
     "dailyEligible": true
@@ -1696,14 +1696,14 @@ const auditAdditions = [
     "id": "tv_38317",
     "category": "Television",
     "programme": "The Wombles",
-    "question": "In The Wombles (90E47 Nanny Alexandria Comes to Stay), who arrives to supervise the youngsters while Great Uncle Bulgaria and the other adults are away?",
+    "question": "In The Wombles (90E47 Nanny Alexandria Comes to Stay), what strict standard does the visitor expect the young Wombles to maintain?",
     "answers": [
-      "Livingstone Womble",
-      "Hoboken Womble",
-      "Nanny Alexandria",
-      "Cairngorm MacWomble"
+      "They must stay outdoors all day",
+      "They must learn a new musical instrument",
+      "Everything must be extremely clean and tidy",
+      "They must never enter the workshop"
     ],
-    "correctAnswer": "Nanny Alexandria",
+    "correctAnswer": "Everything must be extremely clean and tidy",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1716,10 +1716,10 @@ const auditAdditions = [
       "Wimbledon Common",
       "Episode: 90E47 Nanny Alexandria Comes to Stay",
       "Episode storyline",
-      "Correct: Nanny Alexandria",
+      "Correct: Everything must be extremely clean and tidy",
       "Source: https://www.tidybag.uk/television/the-wombles-1990s-tv-episodes/",
-      "Adult trip",
-      "Young Wombles",
+      "Alexandria's rules",
+      "Strict tidiness",
       "Strict babysitter"
     ],
     "dailyEligible": true
@@ -1888,42 +1888,10 @@ const auditAdditions = [
     "id": "tv_38323",
     "category": "Television",
     "programme": "The Wombles",
-    "question": "In The Wombles (90E01 The Ghost of Wimbledon Common), who do the young Wombles find in the tree after their hunt for a ghost?",
-    "answers": [
-      "Alderney",
-      "Stepney",
-      "Shansi",
-      "Hoboken"
-    ],
-    "correctAnswer": "Alderney",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Children's Television",
-      "The Wombles",
-      "Programme: The Wombles",
-      "1990s",
-      "Environmental Television",
-      "Wimbledon Common",
-      "Episode: 90E01 The Ghost of Wimbledon Common",
-      "Episode storyline",
-      "Correct: Alderney",
-      "Source: https://www.tidybag.uk/television/the-wombles-1990s-tv-episodes/",
-      "Ghost revealed",
-      "New friend",
-      "Alderney introduced"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38324",
-    "category": "Television",
-    "programme": "The Wombles",
     "question": "In The Wombles (90E02 Orinoco the Magnificent), which Womble objects strongly to newcomer Stepney's superior attitude and challenges him to compete?",
     "answers": [
-      "Madame Cholet",
       "Alderney",
+      "Madame Cholet",
       "Shansi",
       "Wellington"
     ],
@@ -1949,14 +1917,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38325",
+    "id": "tv_38324",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E04 Madame Cholet's Day Off), what must the other Wombles do to persuade Madame Cholet to return after walking out?",
     "answers": [
       "Buy her a new cooking stove",
-      "Take her on holiday to Brazil",
       "Restore order to her chaotic kitchen",
+      "Take her on holiday to Brazil",
       "Replace every tin in the burrow"
     ],
     "correctAnswer": "Restore order to her chaotic kitchen",
@@ -1981,15 +1949,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38326",
+    "id": "tv_38325",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E05 Beautiful Boating Weather), what problem interrupts the picnic trip to Queen's Mere?",
     "answers": [
       "Their picnic gets stolen by a fox",
       "The lake freezes unexpectedly",
-      "A film crew blocks the shore",
-      "Their boat becomes stranded on the lake"
+      "Their boat becomes stranded on the lake",
+      "A film crew blocks the shore"
     ],
     "correctAnswer": "Their boat becomes stranded on the lake",
     "difficulty": "Medium",
@@ -2013,15 +1981,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38327",
+    "id": "tv_38326",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E07 Shansi's Surprise), why does Shansi begin thinking about finding another burrow to live in?",
     "answers": [
-      "Everyone seems too busy to spend time with her",
       "She has been banned from gardening",
       "She is being sent to school elsewhere",
-      "She wants to learn sailing"
+      "She wants to learn sailing",
+      "Everyone seems too busy to spend time with her"
     ],
     "correctAnswer": "Everyone seems too busy to spend time with her",
     "difficulty": "Medium",
@@ -2045,13 +2013,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38328",
+    "id": "tv_38327",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E08 Any Womble for Tennis?), what does Wellington wrongly suspect is behind unusual activity on the Common during the tennis tournament?",
     "answers": [
-      "A flood warning",
       "Aliens",
+      "A flood warning",
       "A military exercise",
       "A lost submarine"
     ],
@@ -2077,14 +2045,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38329",
+    "id": "tv_38328",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E10 Camping and Cloudberries), what imaginary danger does Bungo warn might threaten their camping trip?",
     "answers": [
       "A giant crocodile",
-      "A hungry tiger",
       "A Womble-eating dragon",
+      "A hungry tiger",
       "A ghostly soldier"
     ],
     "correctAnswer": "A Womble-eating dragon",
@@ -2109,15 +2077,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38330",
+    "id": "tv_38329",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E12 Hola Obidos), who is asked to look after the Wimbledon burrow while Great Uncle Bulgaria and Tobermory are absent?",
     "answers": [
       "Cairngorm",
       "Livingstone",
-      "Hoboken",
-      "Obidos"
+      "Obidos",
+      "Hoboken"
     ],
     "correctAnswer": "Obidos",
     "difficulty": "Medium",
@@ -2141,15 +2109,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38331",
+    "id": "tv_38330",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E13 Welcome Back Bungo), who eventually rescues the Wombles trapped in the unstable secret chamber beneath their burrow?",
     "answers": [
-      "Bungo",
       "Wellington",
       "Stepney",
-      "Cairngorm"
+      "Cairngorm",
+      "Bungo"
     ],
     "correctAnswer": "Bungo",
     "difficulty": "Medium",
@@ -2173,46 +2141,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38332",
-    "category": "Television",
-    "programme": "The Wombles",
-    "question": "In The Wombles (90E18 MacWomble the Charming), which burrow does Cairngorm hope Madame Cholet will move to with him?",
-    "answers": [
-      "The Thames burrow",
-      "The Loch Ness burrow",
-      "The Brazil burrow",
-      "The Wimbledon treehouse"
-    ],
-    "correctAnswer": "The Loch Ness burrow",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Children's Television",
-      "The Wombles",
-      "Programme: The Wombles",
-      "1990s",
-      "Environmental Television",
-      "Wimbledon Common",
-      "Episode: 90E18 MacWomble the Charming",
-      "Episode storyline",
-      "Correct: The Loch Ness burrow",
-      "Source: https://www.tidybag.uk/television/the-wombles-1990s-tv-episodes/",
-      "Cairngorm desire",
-      "Loch Ness",
-      "Cholet"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38333",
+    "id": "tv_38331",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E21 Bigfoot Womble), which two friends accompany Bungo as he searches for a photograph of the legendary creature?",
     "answers": [
+      "Tomsk and Stepney",
       "Shansi and Alderney",
       "Orinoco and Madame Cholet",
-      "Tomsk and Stepney",
       "Wellington and Livingstone"
     ],
     "correctAnswer": "Tomsk and Stepney",
@@ -2237,15 +2173,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38334",
+    "id": "tv_38332",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E24 Trouble at the Thames), which younger Womble accompanies Tobermory on the urgent mission to repair Stepney's flooded burrow?",
     "answers": [
       "Bungo",
+      "Wellington",
       "Shansi",
-      "Orinoco",
-      "Wellington"
+      "Orinoco"
     ],
     "correctAnswer": "Wellington",
     "difficulty": "Medium",
@@ -2269,46 +2205,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38335",
-    "category": "Television",
-    "programme": "The Wombles",
-    "question": "In The Wombles (90E27 New Year New You), what celebration almost gets called off when Great Uncle Bulgaria disappears before midnight?",
-    "answers": [
-      "New Womble Year",
-      "World Womble Day",
-      "The Summer Party",
-      "Alderney's birthday"
-    ],
-    "correctAnswer": "New Womble Year",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Children's Television",
-      "The Wombles",
-      "Programme: The Wombles",
-      "1990s",
-      "Environmental Television",
-      "Wimbledon Common",
-      "Episode: 90E27 New Year New You",
-      "Episode storyline",
-      "Correct: New Womble Year",
-      "Source: https://www.tidybag.uk/television/the-wombles-1990s-tv-episodes/",
-      "Missing leader",
-      "Midnight countdown",
-      "New year"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38336",
+    "id": "tv_38333",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E35 Tomsk's Pen Pal), who helps Tomsk realise his ordinary life is interesting enough to write honestly about?",
     "answers": [
       "Bungo",
-      "Shansi",
       "Cairngorm",
+      "Shansi",
       "Tobermory"
     ],
     "correctAnswer": "Shansi",
@@ -2333,15 +2237,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38337",
+    "id": "tv_38334",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E36 What's a Womble?), who assumes the role of nurse when Bungo claims to have forgotten his identity?",
     "answers": [
       "Shansi",
       "Madame Cholet",
-      "Alderney",
-      "Stepney"
+      "Stepney",
+      "Alderney"
     ],
     "correctAnswer": "Alderney",
     "difficulty": "Medium",
@@ -2365,15 +2269,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38338",
+    "id": "tv_38335",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E38 The Womble Races), which visiting Womble suggests a race to settle the argument between Wellington and Stepney?",
     "answers": [
+      "Cairngorm MacWomble",
       "Livingstone",
       "Obidos",
-      "Hoboken",
-      "Cairngorm MacWomble"
+      "Hoboken"
     ],
     "correctAnswer": "Cairngorm MacWomble",
     "difficulty": "Medium",
@@ -2397,13 +2301,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38339",
+    "id": "tv_38336",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E43 The Thames Burrow Adventure), what do the visiting youngsters discover about having no adults to tell them what to do?",
     "answers": [
-      "It stops being enjoyable sooner than they expected",
       "It is the best holiday they have ever had",
+      "It stops being enjoyable sooner than they expected",
       "They cannot find the Thames burrow",
       "They miss their train home for a month"
     ],
@@ -2429,14 +2333,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38340",
+    "id": "tv_38337",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E47 Nanny Alexandria Comes to Stay), whose former nanny is unexpectedly invited to stay with the younger Wombles?",
     "answers": [
       "Tobermory's",
-      "Great Uncle Bulgaria's",
       "Orinoco's",
+      "Great Uncle Bulgaria's",
       "Madame Cholet's"
     ],
     "correctAnswer": "Great Uncle Bulgaria's",
@@ -2461,15 +2365,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38341",
+    "id": "tv_38338",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (90E52 A Visit to the Highland Burrow), what does Cairngorm realise after his cousins visit and discover he is not really unwell?",
     "answers": [
       "His Highland burrow needs a new roof",
       "He should move to Brazil",
-      "He could simply have asked them to visit",
-      "He must learn to cook for himself"
+      "He must learn to cook for himself",
+      "He could simply have asked them to visit"
     ],
     "correctAnswer": "He could simply have asked them to visit",
     "difficulty": "Medium",
@@ -2493,15 +2397,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38342",
+    "id": "tv_38339",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (73 Crossed Lines), what new way to communicate does Tobermory try to set up between underground Womble homes?",
     "answers": [
+      "An interburrow telephone system",
       "A wireless television station",
       "A line of signal flags",
-      "A courier train",
-      "An interburrow telephone system"
+      "A courier train"
     ],
     "correctAnswer": "An interburrow telephone system",
     "difficulty": "Medium",
@@ -2525,13 +2429,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38343",
+    "id": "tv_38340",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (73 Madame Cholet Returns), which kitchen activity gets out of hand when Madame Cholet returns to the burrow?",
     "answers": [
-      "Mixing cakes",
       "Making apple juice",
+      "Mixing cakes",
       "Boiling eggs",
       "Baking bread"
     ],
@@ -2557,14 +2461,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38344",
+    "id": "tv_38341",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (73 Weighing in Time), what resolution does Orinoco make after stepping onto the scales?",
     "answers": [
       "To train for a marathon",
-      "To go on a diet",
       "To build a set of weights",
+      "To go on a diet",
       "To start giving cookery lessons"
     ],
     "correctAnswer": "To go on a diet",
@@ -2589,39 +2493,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38345",
-    "category": "Television",
-    "programme": "The Wombles",
-    "question": "In The Wombles (73 Wombles and Ladders), what ordinary piece of equipment is altered to suit the small residents of Wimbledon Common?",
-    "answers": [
-      "A bicycle",
-      "A wheelbarrow",
-      "A ladder",
-      "A garden rake"
-    ],
-    "correctAnswer": "A ladder",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Children's Television",
-      "The Wombles",
-      "Programme: The Wombles",
-      "1970s/specials",
-      "Environmental Television",
-      "Wimbledon Common",
-      "Episode: 73 Wombles and Ladders",
-      "Episode storyline",
-      "Correct: A ladder",
-      "Source: https://www.tidybag.uk/television/the-wombles-1970s-tv-episodes/",
-      "Ladder adapted",
-      "Womble size",
-      "Reusing objects"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38346",
+    "id": "tv_38342",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (73 Orinoco and the Ghost), what creates the supposedly ghostly white shapes that frighten the Wombles?",
@@ -2653,45 +2525,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38347",
-    "category": "Television",
-    "programme": "The Wombles",
-    "question": "In The Wombles (73 A Game of Golf), what sport brings unpredictable flying balls into the Wombles' lives?",
-    "answers": [
-      "Golf",
-      "Cricket",
-      "Tennis",
-      "Baseball"
-    ],
-    "correctAnswer": "Golf",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Children's Television",
-      "The Wombles",
-      "Programme: The Wombles",
-      "1970s/specials",
-      "Environmental Television",
-      "Wimbledon Common",
-      "Episode: 73 A Game of Golf",
-      "Episode storyline",
-      "Correct: Golf",
-      "Source: https://www.tidybag.uk/television/the-wombles-1970s-tv-episodes/",
-      "Golf balls",
-      "Flying backwards",
-      "Common"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38348",
+    "id": "tv_38343",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (73 North South East West), what portable weather-measuring device is demonstrated by the Wombles?",
     "answers": [
-      "A barometer",
       "A weather vane",
+      "A barometer",
       "A rain gauge",
       "A sundial"
     ],
@@ -2717,14 +2557,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38349",
+    "id": "tv_38344",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (73 The Picnic), what problem are the Wombles trying to solve with their picnic basket?",
     "answers": [
       "It keeps filling with rainwater",
-      "Its handles are missing",
       "It is too heavy to carry comfortably",
+      "Its handles are missing",
       "The lid will not close"
     ],
     "correctAnswer": "It is too heavy to carry comfortably",
@@ -2749,15 +2589,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38350",
+    "id": "tv_38345",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (73 Games in the Snow), what accident interrupts the Wombles' sleighing fun on a snowy day?",
     "answers": [
       "A broken bridge",
       "A runaway car",
-      "A fallen tree",
-      "A small avalanche"
+      "A small avalanche",
+      "A fallen tree"
     ],
     "correctAnswer": "A small avalanche",
     "difficulty": "Medium",
@@ -2781,15 +2621,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38351",
+    "id": "tv_38346",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (73 The Snow Wombles), what winter contest do the Wimbledon Wombles hold?",
     "answers": [
-      "A snowman-building competition",
       "A downhill ski race",
       "An ice-dancing contest",
-      "A snowball accuracy competition"
+      "A snowball accuracy competition",
+      "A snowman-building competition"
     ],
     "correctAnswer": "A snowman-building competition",
     "difficulty": "Medium",
@@ -2813,13 +2653,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38352",
+    "id": "tv_38347",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (73 Spring Cleaning Time), what elastic item creates trouble during the burrow's annual spring clean?",
     "answers": [
-      "A jumping rope",
       "A washing line",
+      "A jumping rope",
       "A knitted hat",
       "An umbrella strap"
     ],
@@ -2845,14 +2685,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38353",
+    "id": "tv_38348",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (73 The Cement Mixer), what traces do the Wombles accidentally leave in wet cement?",
     "answers": [
       "Footprints from a human",
-      "Tyre tracks from a bicycle",
       "Paw prints",
+      "Tyre tracks from a bicycle",
       "Marks from a rolling pin"
     ],
     "correctAnswer": "Paw prints",
@@ -2877,15 +2717,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38354",
+    "id": "tv_38349",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (75 Portrait of Great Uncle Bulgaria), what unusual problem affects a picture of the elder Womble?",
     "answers": [
       "It changes into a photograph of Orinoco",
       "It falls through the floor",
-      "Its frame is made from cake tins",
-      "The portrait appears to come alive"
+      "The portrait appears to come alive",
+      "Its frame is made from cake tins"
     ],
     "correctAnswer": "The portrait appears to come alive",
     "difficulty": "Medium",
@@ -2909,15 +2749,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38355",
+    "id": "tv_38350",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (75 Burrow Hot Line), what two types of items get muddled on the washing line?",
     "answers": [
-      "Documents and wet laundry",
       "Bagpipes and musical instruments",
       "Cakes and vegetables",
-      "Schoolbooks and postcards"
+      "Schoolbooks and postcards",
+      "Documents and wet laundry"
     ],
     "correctAnswer": "Documents and wet laundry",
     "difficulty": "Medium",
@@ -2941,13 +2781,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38356",
+    "id": "tv_38351",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (75 A Single Piper), what mishap finally brings peace when MacWomble will not stop playing?",
     "answers": [
-      "He loses his sheet music",
       "His bagpipes break",
+      "He loses his sheet music",
       "His drum is stolen",
       "The radio runs out of batteries"
     ],
@@ -2973,14 +2813,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38357",
+    "id": "tv_38352",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (75 Home Sickness), what cultural activity is used to cheer the homesick Highland visitor?",
     "answers": [
       "Playing football",
-      "Taking a boat trip",
       "Reciting poetry",
+      "Taking a boat trip",
       "Painting a landscape"
     ],
     "correctAnswer": "Reciting poetry",
@@ -3005,15 +2845,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38358",
+    "id": "tv_38353",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (75 Goodbye MacWomble), what reported sighting helps persuade the Scottish visitor to return to Loch Ness?",
     "answers": [
       "A rare cloudberry bush",
       "An escaped elephant",
-      "A travelling pirate ship",
-      "The Loch Ness Monster"
+      "The Loch Ness Monster",
+      "A travelling pirate ship"
     ],
     "correctAnswer": "The Loch Ness Monster",
     "difficulty": "Medium",
@@ -3037,15 +2877,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38359",
+    "id": "tv_38354",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (75 Warm and Cosy), what improvement is the Wimbledon burrow trying to make when workshop experiments go wrong?",
     "answers": [
-      "Installing better insulation",
       "Creating a new lift",
       "Building a railway line",
-      "Adding a second entrance"
+      "Adding a second entrance",
+      "Installing better insulation"
     ],
     "correctAnswer": "Installing better insulation",
     "difficulty": "Medium",
@@ -3069,46 +2909,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38360",
-    "category": "Television",
-    "programme": "The Wombles",
-    "question": "In The Wombles (75 Autumn Leaves), what unlikely tool do the Wombles use to collect fallen leaves?",
-    "answers": [
-      "Fishing rods",
-      "Knitting needles",
-      "Umbrella handles",
-      "Tennis rackets"
-    ],
-    "correctAnswer": "Knitting needles",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Children's Television",
-      "The Wombles",
-      "Programme: The Wombles",
-      "1970s/specials",
-      "Environmental Television",
-      "Wimbledon Common",
-      "Episode: 75 Autumn Leaves",
-      "Episode storyline",
-      "Correct: Knitting needles",
-      "Source: https://www.tidybag.uk/television/the-wombles-1970s-tv-episodes/",
-      "Autumn cleanup",
-      "Knitting needles",
-      "Leaves"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38361",
+    "id": "tv_38355",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (75 Womble Fool's Day), what harmless toy tool features in the Wombles' practical jokes?",
     "answers": [
+      "A rubber hammer",
       "A water pistol",
       "A toy drill",
-      "A rubber hammer",
       "An inflatable saw"
     ],
     "correctAnswer": "A rubber hammer",
@@ -3133,15 +2941,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38362",
+    "id": "tv_38356",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (75 Womble Summer Party), what kind of entertainment do the Wombles stage during their summer party?",
     "answers": [
       "A circus with real lions",
+      "Magic disappearing tricks",
       "An outdoor film premiere",
-      "A pirate treasure auction",
-      "Magic disappearing tricks"
+      "A pirate treasure auction"
     ],
     "correctAnswer": "Magic disappearing tricks",
     "difficulty": "Medium",
@@ -3165,14 +2973,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38363",
+    "id": "tv_38357",
     "category": "Television",
     "programme": "The Wombles",
     "question": "In The Wombles (91 The Wandering Wombles), which royal residence's grounds do the Wombles visit in their 1991 television special?",
     "answers": [
-      "Buckingham Palace",
       "Windsor Castle",
       "Kensington Palace",
+      "Buckingham Palace",
       "Balmoral Castle"
     ],
     "correctAnswer": "Buckingham Palace",
@@ -3198,10 +3006,10 @@ const auditAdditions = [
   }
 ];
 questions.push(...auditAdditions);
-if(questions.length!==200 ||
+if(questions.length!==194 ||
  questions[0].id!=='tv_16792' || questions[106].id!=='tv_16898' ||
  auditAdditions[0].id!=='tv_38271' ||
- auditAdditions[auditAdditions.length-1].id!=='tv_38363' ||
+ auditAdditions[auditAdditions.length-1].id!=='tv_38357' ||
  new Set(questions.map(q=>q.id)).size!==questions.length ||
  new Set(questions.map(q=>normalise(q.question))).size!==questions.length ||
  questions.some(q=>q.answers.length!==4||new Set(q.answers.map(normalise)).size!==4||
