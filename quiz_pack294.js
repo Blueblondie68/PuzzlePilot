@@ -763,7 +763,7 @@ const auditAdditions = [
   {
     "id": "tv_35661",
     "category": "Television",
-    "question": "Which actress's character interviews for another job while competing with Manny at Black Books?",
+    "question": "Which character in Black Books is looking for another job while competing with Manny for work at the shop?",
     "answers": [
       "Kate",
       "Fran",
