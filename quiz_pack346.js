@@ -856,43 +856,10 @@ const auditAdditions = [
     "id": "tv_38091",
     "category": "Television",
     "programme": "Bagpuss",
-    "question": "In Bagpuss, what is eventually restored to the battered straw animal?",
-    "answers": [
-      "Its ears",
-      "Its trunk",
-      "Its tusks",
-      "Its tail"
-    ],
-    "correctAnswer": "Its ears",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Children Television",
-      "Stop Motion Animation",
-      "Puppet Animation",
-      "Smallfilms",
-      "1974",
-      "Bagpuss",
-      "Programme: Bagpuss",
-      "Episode: S1E7 The Elephant",
-      "Episode plot audit",
-      "Answer: Its ears",
-      "Source: https://thetvdb.com/series/bagpuss/allseasons/official",
-      "Elephant repaired",
-      "Straw toy",
-      "Missing parts"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38092",
-    "category": "Television",
-    "programme": "Bagpuss",
     "question": "In Bagpuss, what ingredients does Charliemouse claim the Mouse Mill can turn into chocolate biscuits?",
     "answers": [
-      "Oats and raisins",
       "Breadcrumbs and butterbeans",
+      "Oats and raisins",
       "Milk and sugar",
       "Flour and strawberries"
     ],
@@ -919,14 +886,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38093",
+    "id": "tv_38092",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, which mouse carries off the biscuits before anyone can taste them?",
     "answers": [
       "Charliemouse",
-      "Janiemouse",
       "Williemouse",
+      "Janiemouse",
       "Jennymouse"
     ],
     "correctAnswer": "Williemouse",
@@ -952,15 +919,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38094",
+    "id": "tv_38093",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, how does Yaffle find out that the Mouse Mill's remarkable biscuit production is a trick?",
     "answers": [
       "He asks Emily where the biscuits came from",
       "He dismantles the Mouse Organ",
-      "He tastes a biscuit made of straw",
-      "He investigates behind the machine"
+      "He investigates behind the machine",
+      "He tastes a biscuit made of straw"
     ],
     "correctAnswer": "He investigates behind the machine",
     "difficulty": "Medium",
@@ -985,15 +952,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38095",
+    "id": "tv_38094",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what is really happening to the materials inside the supposedly miraculous mill?",
     "answers": [
-      "The mice are reusing them to fool the others",
       "A hidden oven is baking fresh biscuits",
       "The materials are sent through a pipe to the shop",
-      "The box contains a miniature chocolate factory"
+      "The box contains a miniature chocolate factory",
+      "The mice are reusing them to fool the others"
     ],
     "correctAnswer": "The mice are reusing them to fool the others",
     "difficulty": "Medium",
@@ -1018,13 +985,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38096",
+    "id": "tv_38095",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what paradox amuses the characters about the broken figurine described as a giant?",
     "answers": [
-      "It is too heavy for a real giant to carry",
       "It would be the smallest giant in the world",
+      "It is too heavy for a real giant to carry",
       "It is much taller than the shop",
       "It is made of cloth instead of clay"
     ],
@@ -1051,14 +1018,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38097",
+    "id": "tv_38096",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what does Madeleine sing about after the mice quarrel over the figurine's size?",
     "answers": [
       "A giant who eats chocolate biscuits",
-      "A queen who mends umbrellas",
       "How large things appear compared with others",
+      "A queen who mends umbrellas",
       "The best way to paint pottery"
     ],
     "correctAnswer": "How large things appear compared with others",
@@ -1084,15 +1051,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38098",
+    "id": "tv_38097",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what do other elderly men do when they hope to sell their beards like the king's?",
     "answers": [
       "Dye them pink and cream",
       "Weave them into hats themselves",
-      "Send them away in bottles",
-      "Cut them off and wash them"
+      "Cut them off and wash them",
+      "Send them away in bottles"
     ],
     "correctAnswer": "Cut them off and wash them",
     "difficulty": "Medium",
@@ -1117,15 +1084,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38099",
+    "id": "tv_38098",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, where do the would-be beard sellers leave their washed beards to dry?",
     "answers": [
-      "Hanging in hedges",
       "Inside a mill oven",
       "Across the river bridge",
-      "On the windowsill of Bagpuss's shop"
+      "On the windowsill of Bagpuss's shop",
+      "Hanging in hedges"
     ],
     "correctAnswer": "Hanging in hedges",
     "difficulty": "Medium",
@@ -1150,47 +1117,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38100",
-    "category": "Television",
-    "programme": "Bagpuss",
-    "question": "In Bagpuss, what skill does Charliemouse become interested in after Madeleine's song about a master craftsman?",
-    "answers": [
-      "Pottery",
-      "Weaving",
-      "Bookbinding",
-      "Woodcarving"
-    ],
-    "correctAnswer": "Weaving",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Children Television",
-      "Stop Motion Animation",
-      "Puppet Animation",
-      "Smallfilms",
-      "1974",
-      "Bagpuss",
-      "Programme: Bagpuss",
-      "Episode: S1E10 Old Man's Beard",
-      "Episode plot audit",
-      "Answer: Weaving",
-      "Source: https://thetvdb.com/series/bagpuss/allseasons/official",
-      "Charliemouse",
-      "Master weaver",
-      "New skill"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38101",
+    "id": "tv_38099",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, why do the mice hurry to fetch water when they first see the old upturned bucket?",
     "answers": [
+      "Smoke is coming from it",
       "They hear a boiling kettle",
       "A flower is wilting inside",
-      "Smoke is coming from it",
       "They think a chimney is on fire"
     ],
     "correctAnswer": "Smoke is coming from it",
@@ -1216,15 +1150,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38102",
+    "id": "tv_38100",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what vegetable features in Gabriel's tale of an Irish leprechaun?",
     "answers": [
       "Carrots",
+      "Cabbages",
       "Potatoes",
-      "Turnips",
-      "Cabbages"
+      "Turnips"
     ],
     "correctAnswer": "Cabbages",
     "difficulty": "Medium",
@@ -1249,14 +1183,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38103",
+    "id": "tv_38101",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what does Charliemouse claim when his tiny instrument seems to play beautifully without his effort?",
     "answers": [
-      "The fiddle is playing him",
       "Professor Yaffle is playing the fiddle",
       "Gabriel has hidden a recording",
+      "The fiddle is playing him",
       "The Mouse Organ is copying his tune"
     ],
     "correctAnswer": "The fiddle is playing him",
@@ -1282,15 +1216,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38104",
+    "id": "tv_38102",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, which two relatives feature in Janiemouse's story about trying to fly to the sun?",
     "answers": [
       "Uncle Feedle and Cousin Flo",
-      "Uncle Henry and Auntie Ada",
       "Tavish and Morag McTavish",
-      "Mr and Mrs Smithers-Rowbottom"
+      "Mr and Mrs Smithers-Rowbottom",
+      "Uncle Henry and Auntie Ada"
     ],
     "correctAnswer": "Uncle Henry and Auntie Ada",
     "difficulty": "Medium",
@@ -1315,14 +1249,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38105",
+    "id": "tv_38103",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what do the would-be sun explorers hope to collect?",
     "answers": [
+      "Gold from the sun",
       "Clouds in a jar",
       "Feathers from an angel",
-      "Gold from the sun",
       "Rainbows for a curtain"
     ],
     "correctAnswer": "Gold from the sun",
@@ -1348,15 +1282,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38106",
+    "id": "tv_38104",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what small utensil do the sun explorers plan to use to collect their treasure?",
     "answers": [
       "A garden trowel",
+      "A teaspoon",
       "A pair of tweezers",
-      "A wooden spoon",
-      "A teaspoon"
+      "A wooden spoon"
     ],
     "correctAnswer": "A teaspoon",
     "difficulty": "Medium",
@@ -1381,14 +1315,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38107",
+    "id": "tv_38105",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what materials do the mice use to attempt to build a flying machine?",
     "answers": [
-      "A basket and oriental fans",
       "A shoe and feathers",
       "A bucket and a piece of string",
+      "A basket and oriental fans",
       "A tiny boat and cardboard sails"
     ],
     "correctAnswer": "A basket and oriental fans",
@@ -1414,15 +1348,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38108",
+    "id": "tv_38106",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what subject does Professor Yaffle try to explain after seeing the mice's proposed flying machine?",
     "answers": [
       "Navigation by stars",
-      "Aeronautics",
       "Marine biology",
-      "The history of clocks"
+      "The history of clocks",
+      "Aeronautics"
     ],
     "correctAnswer": "Aeronautics",
     "difficulty": "Medium",
@@ -1447,14 +1381,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38109",
+    "id": "tv_38107",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what form of accommodation does Gabriel sing about while Madeleine is busy repairing the cloth?",
     "answers": [
+      "Living on top of a Number 2 bus",
       "Sleeping in a lighthouse",
       "Moving into a shoe boat",
-      "Living on top of a Number 2 bus",
       "Building a tower out of books"
     ],
     "correctAnswer": "Living on top of a Number 2 bus",
@@ -1480,15 +1414,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38110",
+    "id": "tv_38108",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, which character does the repair work on the rag doll's fabric house?",
     "answers": [
       "Professor Yaffle",
+      "Madeleine",
       "Gabriel",
-      "Emily",
-      "Madeleine"
+      "Emily"
     ],
     "correctAnswer": "Madeleine",
     "difficulty": "Medium",
@@ -1513,14 +1447,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38111",
+    "id": "tv_38109",
     "category": "Television",
     "programme": "Bagpuss",
     "question": "In Bagpuss, what sort of jokes do the mice make when Charliemouse decides that Emily's cloth is a doll's house?",
     "answers": [
-      "Puns about rags",
       "Knock-knock jokes about doors",
       "Jokes about fish",
+      "Puns about rags",
       "Jokes about clocks"
     ],
     "correctAnswer": "Puns about rags",
@@ -1547,10 +1481,10 @@ const auditAdditions = [
   }
 ];
 questions.push(...auditAdditions);
-if (questions.length !== 114 ||
+if (questions.length !== 112 ||
  questions[0].id !== 'tv_16623' || questions[72].id !== 'tv_16695' ||
  auditAdditions[0].id !== 'tv_38071' ||
- auditAdditions[auditAdditions.length - 1].id !== 'tv_38111' ||
+ auditAdditions[auditAdditions.length - 1].id !== 'tv_38109' ||
  new Set(questions.map(q=>q.id)).size !== questions.length ||
  new Set(questions.map(q=>normalise(q.question))).size !== questions.length ||
  questions.some(q=>q.answers.length!==4 ||
