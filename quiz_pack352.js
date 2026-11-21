@@ -169,7 +169,7 @@ const auditAdditions = [
     "id": "tv_38615",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S1E01 Bodger Is Chef), what must Simon win to secure the chef's job at Troff's Nosherama?",
+    "question": "In Bodger and Badger (series 1, episode 1), what must Simon win to secure the chef's job at Troff's Nosherama?",
     "answers": [
       "A cookery contest",
       "A spelling competition",
@@ -203,7 +203,7 @@ const auditAdditions = [
     "id": "tv_38616",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S1E02 The Badgers Are Coming), where does Badger accidentally end up during a kitchen mishap?",
+    "question": "In Bodger and Badger (series 1, episode 2), where does Badger accidentally end up during a kitchen mishap?",
     "answers": [
       "Inside the fridge",
       "Inside a cake",
@@ -237,7 +237,7 @@ const auditAdditions = [
     "id": "tv_38617",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S1E03 The Health Inspector), who arrives to inspect Troff's Nosherama and fears that badgers are running around?",
+    "question": "In Bodger and Badger (series 1, episode 3), who arrives to inspect Troff's Nosherama and fears that badgers are running around?",
     "answers": [
       "A fire brigade officer",
       "An insurance broker",
@@ -271,7 +271,7 @@ const auditAdditions = [
     "id": "tv_38618",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S1E04 Portrait of Hector), what sign does Mr Troff want commissioned for his restaurant?",
+    "question": "In Bodger and Badger (series 1, episode 4), what sign does Mr Troff want commissioned for his restaurant?",
     "answers": [
       "An emergency exit sign",
       "A road-direction sign",
@@ -305,7 +305,7 @@ const auditAdditions = [
     "id": "tv_38619",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S1E06 Adrian Loud Warbler), what job opportunity does the visiting Adrian Loud Warbler discuss with Mavis?",
+    "question": "In Bodger and Badger (series 1, episode 6), what job opportunity does the visiting Adrian Loud Warbler discuss with Mavis?",
     "answers": [
       "A singing engagement",
       "A chef's position",
@@ -339,7 +339,7 @@ const auditAdditions = [
     "id": "tv_38620",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S1E07 The Robot), what automated rival threatens to replace Simon as restaurant chef?",
+    "question": "In Bodger and Badger (series 1, episode 7), what automated rival threatens to replace Simon as restaurant chef?",
     "answers": [
       "A miniature flying drone",
       "A machine called Shove-a-Chef",
@@ -373,7 +373,7 @@ const auditAdditions = [
     "id": "tv_38621",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S1E08 The Final Episode), what special food order is ruined while Simon and Badger are left running the Nosherama?",
+    "question": "In Bodger and Badger (series 1, episode 8), what special food order is ruined while Simon and Badger are left running the Nosherama?",
     "answers": [
       "A birthday pudding for the mayor",
       "A breakfast for the school headmistress",
@@ -407,7 +407,7 @@ const auditAdditions = [
     "id": "tv_38622",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S2E01 Letsby Avenue), which job is Simon applying for when the action moves from the restaurant to a school?",
+    "question": "In Bodger and Badger (series 2, episode 1), which job is Simon applying for when the action moves from the restaurant to a school?",
     "answers": [
       "School cook",
       "School caretaker's assistant",
@@ -441,7 +441,7 @@ const auditAdditions = [
     "id": "tv_38623",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S2E02 Abracabadger), which class comes to Badger's aid when Miss Moon spots him at school?",
+    "question": "In Bodger and Badger (series 2, episode 2), which class comes to Badger's aid when Miss Moon spots him at school?",
     "answers": [
       "Class Four",
       "Class One",
@@ -475,7 +475,7 @@ const auditAdditions = [
     "id": "tv_38624",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S2E03 The Bare Mayor), whose planned school visit is misunderstood by Badger because of its title?",
+    "question": "In Bodger and Badger (series 2, episode 3), whose planned school visit is misunderstood by Badger because of its title?",
     "answers": [
       "The Prime Minister's",
       "The mayor's",
@@ -509,7 +509,7 @@ const auditAdditions = [
     "id": "tv_38625",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S2E04 The Skeleton), what does the headmistress buy for teaching at the cost of cancelling pupil outings?",
+    "question": "In Bodger and Badger (series 2, episode 4), what does the headmistress buy for teaching at the cost of cancelling pupil outings?",
     "answers": [
       "A telescope",
       "A piano",
@@ -543,7 +543,7 @@ const auditAdditions = [
     "id": "tv_38626",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S2E05 Mr Wobert the Watcatcher), which suspected infestation makes the headmistress hire an unwanted pest controller?",
+    "question": "In Bodger and Badger (series 2, episode 5), which suspected infestation makes the headmistress hire an unwanted pest controller?",
     "answers": [
       "Cockroaches",
       "Fleas",
@@ -577,7 +577,7 @@ const auditAdditions = [
     "id": "tv_38627",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S2E06 The Hairy Fairy), what does Simon model out of mashed potato after the headmistress's birthday cake disappears?",
+    "question": "In Bodger and Badger (series 2, episode 6), what does Simon model out of mashed potato after the headmistress's birthday cake disappears?",
     "answers": [
       "A miniature statue of Miss Trout",
       "A model of the school building",
@@ -611,7 +611,7 @@ const auditAdditions = [
     "id": "tv_38628",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S2E08 Mr Crusher and the Ninja Zombies from Mars), what type of teacher replaces Miss Moon's unpopular PE activities?",
+    "question": "In Bodger and Badger (series 2, episode 8), what type of teacher replaces Miss Moon's unpopular PE activities?",
     "answers": [
       "A French teacher",
       "An even harsher gym teacher",
@@ -645,7 +645,7 @@ const auditAdditions = [
     "id": "tv_38629",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S2E10 Snowflakes in Hawaii), what delivery does Mrs Trout cancel, ruining the school's Hawaiian-themed day?",
+    "question": "In Bodger and Badger (series 2, episode 10), what delivery does Mrs Trout cancel, ruining the school's Hawaiian-themed day?",
     "answers": [
       "Fresh fruit",
       "New books",
@@ -679,7 +679,7 @@ const auditAdditions = [
     "id": "tv_38630",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S2E11 Mavis and the Fingerpoppers), what surprising career development brings Mavis back to visit Letsby Avenue school?",
+    "question": "In Bodger and Badger (series 2, episode 11), what surprising career development brings Mavis back to visit Letsby Avenue school?",
     "answers": [
       "She now runs a restaurant",
       "She is training as a teacher",
@@ -713,7 +713,7 @@ const auditAdditions = [
     "id": "tv_38631",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E01 Mr Valentino and the Rubber Bottom), who comes to dinner with Mrs Trout as chairman of the school governors?",
+    "question": "In Bodger and Badger (series 3, episode 1), who comes to dinner with Mrs Trout as chairman of the school governors?",
     "answers": [
       "Mr Valentino",
       "Mr Beasley",
@@ -747,7 +747,7 @@ const auditAdditions = [
     "id": "tv_38632",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E02 William Tell), which headmistress writes and acts in the school's staging of William Tell?",
+    "question": "In Bodger and Badger (series 3, episode 2), which headmistress writes and acts in the school's staging of William Tell?",
     "answers": [
       "Mrs Bogart",
       "Mrs Trout",
@@ -781,7 +781,7 @@ const auditAdditions = [
     "id": "tv_38633",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E03 The Head's Anniversary), what creative competition does Badger decide to enter at the school?",
+    "question": "In Bodger and Badger (series 3, episode 3), what creative competition does Badger decide to enter at the school?",
     "answers": [
       "A painting contest",
       "A dancing contest",
@@ -815,7 +815,7 @@ const auditAdditions = [
     "id": "tv_38634",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E04 The Golden Alarm Clock), which teacher is chosen for an award recognising perfect school attendance?",
+    "question": "In Bodger and Badger (series 3, episode 4), which teacher is chosen for an award recognising perfect school attendance?",
     "answers": [
       "Mrs Trout",
       "Mrs Bogart",
@@ -849,7 +849,7 @@ const auditAdditions = [
     "id": "tv_38635",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E05 The New Moon), what accident changes Miss Moon's attitude to life and makes her enjoy messy mashed potato games?",
+    "question": "In Bodger and Badger (series 3, episode 5), what accident changes Miss Moon's attitude to life and makes her enjoy messy mashed potato games?",
     "answers": [
       "A knock to the head",
       "A fall into a swimming pool",
@@ -883,7 +883,7 @@ const auditAdditions = [
     "id": "tv_38636",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E06 Eammon and the New Headmistress), why does Mrs Trout temporarily leave the school when Mrs Bogart arrives?",
+    "question": "In Bodger and Badger (series 3, episode 6), why does Mrs Trout temporarily leave the school when Mrs Bogart arrives?",
     "answers": [
       "She is taking a honeymoon",
       "She must attend remedial reading training",
@@ -917,7 +917,7 @@ const auditAdditions = [
     "id": "tv_38637",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E06 Eammon and the New Headmistress), who does Mrs Bogart want to install instead of Simon as school handyman?",
+    "question": "In Bodger and Badger (series 3, episode 6), who does Mrs Bogart want to install instead of Simon as school handyman?",
     "answers": [
       "Mr Troff",
       "Mr Valentino",
@@ -951,7 +951,7 @@ const auditAdditions = [
     "id": "tv_38638",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E07 The Mashed Potato Gun), what new facility is installed at the school just as Badger invents a mash-firing device?",
+    "question": "In Bodger and Badger (series 3, episode 7), what new facility is installed at the school just as Badger invents a mash-firing device?",
     "answers": [
       "A swimming pool",
       "A science laboratory",
@@ -985,7 +985,7 @@ const auditAdditions = [
     "id": "tv_38639",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E08 The Difficult Test), what emergency drill keeps interrupting Mrs Bogart's attempts to test Class Four?",
+    "question": "In Bodger and Badger (series 3, episode 8), what emergency drill keeps interrupting Mrs Bogart's attempts to test Class Four?",
     "answers": [
       "A fire drill",
       "A flood drill",
@@ -1019,7 +1019,7 @@ const auditAdditions = [
     "id": "tv_38640",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E09 The Head's Twin Sister), what dishonest identity does Mrs Bogart adopt to get Simon's competition winnings?",
+    "question": "In Bodger and Badger (series 3, episode 9), what dishonest identity does Mrs Bogart adopt to get Simon's competition winnings?",
     "answers": [
       "Her wealthy aunt",
       "Her supposedly poor identical twin",
@@ -1053,7 +1053,7 @@ const auditAdditions = [
     "id": "tv_38641",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E10 The Baby), what special chocolate do Badger and two pupils trick Mrs Bogart into eating?",
+    "question": "In Bodger and Badger (series 3, episode 10), what special chocolate do Badger and two pupils trick Mrs Bogart into eating?",
     "answers": [
       "Chocolate with chilli",
       "Chocolate made from mashed potato",
@@ -1087,7 +1087,7 @@ const auditAdditions = [
     "id": "tv_38642",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E11 The Doubling Box), how does Mrs Bogart profit dishonestly from the school lost-property office?",
+    "question": "In Bodger and Badger (series 3, episode 11), how does Mrs Bogart profit dishonestly from the school lost-property office?",
     "answers": [
       "She sells every pupil's lunch",
       "She hires out the school books",
@@ -1121,7 +1121,7 @@ const auditAdditions = [
     "id": "tv_38643",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S3E12 The Class Photo), who is asked to help take the school photograph after the booked photographer cancels?",
+    "question": "In Bodger and Badger (series 3, episode 12), who is asked to help take the school photograph after the booked photographer cancels?",
     "answers": [
       "Simon Bodger",
       "Hector Troff",
@@ -1155,7 +1155,7 @@ const auditAdditions = [
     "id": "tv_38644",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S4E01 The Arrival), whose parent works in the theme park kitchens, allowing her to spend time there for free?",
+    "question": "In Bodger and Badger (series 4, episode 1), whose parent works in the theme park kitchens, allowing her to spend time there for free?",
     "answers": [
       "Vicky's",
       "Holly's",
@@ -1189,7 +1189,7 @@ const auditAdditions = [
     "id": "tv_38645",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S4E02 Mr Beasley's Barrow), which theme-park official tries to catch the hidden Badger?",
+    "question": "In Bodger and Badger (series 4, episode 2), which theme-park official tries to catch the hidden Badger?",
     "answers": [
       "Hector Troff",
       "Mr Valentino",
@@ -1223,7 +1223,7 @@ const auditAdditions = [
     "id": "tv_38646",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S4E03 The Tapirs), which unusual zoo animals become Badger's friends during his stay at the theme park?",
+    "question": "In Bodger and Badger (series 4, episode 3), which unusual zoo animals become Badger's friends during his stay at the theme park?",
     "answers": [
       "Lemurs",
       "Otters",
@@ -1257,7 +1257,7 @@ const auditAdditions = [
     "id": "tv_38647",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S4E04 The Elephant's Trunk), what part of an attraction does Simon fix before Badger targets Mr Beasley with mash?",
+    "question": "In Bodger and Badger (series 4, episode 4), what part of an attraction does Simon fix before Badger targets Mr Beasley with mash?",
     "answers": [
       "An elephant's trunk",
       "A carousel horse's tail",
@@ -1291,7 +1291,7 @@ const auditAdditions = [
     "id": "tv_38648",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S4E05 A Hard Day's Knight), what costume does Simon wear at Chessington as Badger experiments with flying?",
+    "question": "In Bodger and Badger (series 4, episode 5), what costume does Simon wear at Chessington as Badger experiments with flying?",
     "answers": [
       "An astronaut suit",
       "A knight's armour",
@@ -1325,7 +1325,7 @@ const auditAdditions = [
     "id": "tv_38649",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S4E06 The New Clothes), whose newly issued uniform is ruined in a mashed-potato accident?",
+    "question": "In Bodger and Badger (series 4, episode 6), whose newly issued uniform is ruined in a mashed-potato accident?",
     "answers": [
       "Mr Troff's",
       "Simon's",
@@ -1359,7 +1359,7 @@ const auditAdditions = [
     "id": "tv_38650",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S4E07 The Dragon), which prize does Holly win that Mr Beasley then takes away?",
+    "question": "In Bodger and Badger (series 4, episode 7), which prize does Holly win that Mr Beasley then takes away?",
     "answers": [
       "A pair of shoes",
       "A bicycle",
@@ -1393,7 +1393,7 @@ const auditAdditions = [
     "id": "tv_38651",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S4E08 Wet Paint), what privilege is Simon given after Mr Beasley sits on a freshly painted bench?",
+    "question": "In Bodger and Badger (series 4, episode 8), what privilege is Simon given after Mr Beasley sits on a freshly painted bench?",
     "answers": [
       "Running an ice-cream cart",
       "Managing the ticket office",
@@ -1427,7 +1427,7 @@ const auditAdditions = [
     "id": "tv_38652",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S4E09 Catapult), what device does Mr Beasley plan to use to catch the elusive Badger?",
+    "question": "In Bodger and Badger (series 4, episode 9), what device does Mr Beasley plan to use to catch the elusive Badger?",
     "answers": [
       "A fishing net",
       "A catapult",
@@ -1461,7 +1461,7 @@ const auditAdditions = [
     "id": "tv_38653",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E01 A Mouse in the House), who becomes Badger's new friend after Simon moves into a flat?",
+    "question": "In Bodger and Badger (series 5, episode 1), who becomes Badger's new friend after Simon moves into a flat?",
     "answers": [
       "China",
       "Holly",
@@ -1495,7 +1495,7 @@ const auditAdditions = [
     "id": "tv_38654",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E03 Wash Day), where do Simon and Badger have to take their clothes after their washing machine breaks?",
+    "question": "In Bodger and Badger (series 5, episode 3), where do Simon and Badger have to take their clothes after their washing machine breaks?",
     "answers": [
       "A dry-cleaner's van",
       "The school gym",
@@ -1529,7 +1529,7 @@ const auditAdditions = [
     "id": "tv_38655",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E04 Mr Sellby's Pictures), what woodworking tool helps Badger correct a shop sign that Simon has painted backwards?",
+    "question": "In Bodger and Badger (series 5, episode 4), what woodworking tool helps Badger correct a shop sign that Simon has painted backwards?",
     "answers": [
       "An electric saw",
       "A drill",
@@ -1563,7 +1563,7 @@ const auditAdditions = [
     "id": "tv_38656",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E05 Ancient Egyptian Mashed Potato), what object are two thieves known as Boss and Courtney trying to steal from Simon's family?",
+    "question": "In Bodger and Badger (series 5, episode 5), what object are two thieves known as Boss and Courtney trying to steal from Simon's family?",
     "answers": [
       "A Victorian silver teapot",
       "An ancient Egyptian statue",
@@ -1597,7 +1597,7 @@ const auditAdditions = [
     "id": "tv_38657",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E06 Rent Money), who comes to Simon's rescue after his flat's missing rent money leads to an eviction threat?",
+    "question": "In Bodger and Badger (series 5, episode 6), who comes to Simon's rescue after his flat's missing rent money leads to an eviction threat?",
     "answers": [
       "Holly",
       "Mrs Trout",
@@ -1631,7 +1631,7 @@ const auditAdditions = [
     "id": "tv_38658",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E07 Here Comes Raymond), which former school friend of Simon's proves greedy and unwelcome during a visit?",
+    "question": "In Bodger and Badger (series 5, episode 7), which former school friend of Simon's proves greedy and unwelcome during a visit?",
     "answers": [
       "Mr Beasley",
       "Mr Wilson",
@@ -1665,14 +1665,14 @@ const auditAdditions = [
     "id": "tv_38659",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E08 Twin Brother), what trick does Badger use when Simon starts rationing his favourite food?",
+    "question": "In Bodger and Badger (series 5, episode 8), why does Badger invent the story that he has a twin?",
     "answers": [
-      "He invents a fictional twin to obtain double portions",
-      "He sells Mousey's food",
-      "He impersonates a restaurant chef",
-      "He pretends to own a farm"
+      "Simon has started rationing mashed potato",
+      "He wants to enter a doubles tennis tournament",
+      "He needs help pretending to be a school pupil",
+      "He has been offered two cinema tickets"
     ],
-    "correctAnswer": "He invents a fictional twin to obtain double portions",
+    "correctAnswer": "Simon has started rationing mashed potato",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1687,7 +1687,7 @@ const auditAdditions = [
       "Episode story",
       "Simon Bodger",
       "Badger",
-      "Correct: He invents a fictional twin to obtain double portions",
+      "Correct: Simon has started rationing mashed potato",
       "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
       "Mash rationed",
       "Imaginary twin",
@@ -1699,7 +1699,7 @@ const auditAdditions = [
     "id": "tv_38660",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E09 Mashy Mouse), why does Simon try borrowing a cat while living in the rented flat?",
+    "question": "In Bodger and Badger (series 5, episode 9), why does Simon try borrowing a cat while living in the rented flat?",
     "answers": [
       "He wishes to enter a pet competition",
       "He wants to get rid of a mouse",
@@ -1733,7 +1733,7 @@ const auditAdditions = [
     "id": "tv_38661",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E10 Seaside), which room does Badger transform into a pretend seaside when the forecast spoils his plans?",
+    "question": "In Bodger and Badger (series 5, episode 10), which room does Badger transform into a pretend seaside when the forecast spoils his plans?",
     "answers": [
       "The kitchen",
       "The sitting room",
@@ -1767,7 +1767,7 @@ const auditAdditions = [
     "id": "tv_38662",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E11 Cosmic Potatoes), what make-believe visitors do Badger and Mousey claim are living beneath the floorboards?",
+    "question": "In Bodger and Badger (series 5, episode 11), what make-believe visitors do Badger and Mousey claim are living beneath the floorboards?",
     "answers": [
       "Pirates",
       "Dinosaurs",
@@ -1801,7 +1801,7 @@ const auditAdditions = [
     "id": "tv_38663",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E12 One of Those Days), what computer trouble follows Badger and Mousey's attempt to use Simon's machine?",
+    "question": "In Bodger and Badger (series 5, episode 12), what computer trouble follows Badger and Mousey's attempt to use Simon's machine?",
     "answers": [
       "The computer stops working properly",
       "The computer orders hundreds of cakes",
@@ -1835,7 +1835,7 @@ const auditAdditions = [
     "id": "tv_38664",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S5E13 Mad Mash Bash), how does Badger injure himself and temporarily lose his memory?",
+    "question": "In Bodger and Badger (series 5, episode 13), how does Badger injure himself and temporarily lose his memory?",
     "answers": [
       "He falls from a stage at school",
       "He bangs his head while racing Mousey",
@@ -1869,14 +1869,14 @@ const auditAdditions = [
     "id": "tv_38665",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E01 Mrs Dribelle!), who becomes Simon's hostile new landlord and hopes to make him leave his flat?",
+    "question": "In Bodger and Badger (series 6, episode 1), what does the new landlady hope to force Simon to do?",
     "answers": [
-      "Mrs Trout",
-      "Mrs Melly",
-      "Mrs Dribelle",
-      "Miss Peake"
+      "Take a job as school headmaster",
+      "Buy the building from her",
+      "Leave his rented flat",
+      "Turn his flat into a café"
     ],
-    "correctAnswer": "Mrs Dribelle",
+    "correctAnswer": "Leave his rented flat",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1891,9 +1891,9 @@ const auditAdditions = [
       "Episode story",
       "Simon Bodger",
       "Badger",
-      "Correct: Mrs Dribelle",
+      "Correct: Leave his rented flat",
       "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
-      "New landlady",
+      "Landlady eviction aim",
       "Animal ban",
       "Eviction"
     ],
@@ -1903,7 +1903,7 @@ const auditAdditions = [
     "id": "tv_38666",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E02 Badger in the Box), which menacing assistant does Mrs Dribelle send to pressure Simon into leaving?",
+    "question": "In Bodger and Badger (series 6, episode 2), which menacing assistant does Mrs Dribelle send to pressure Simon into leaving?",
     "answers": [
       "Eammon",
       "Alec Smart",
@@ -1937,7 +1937,7 @@ const auditAdditions = [
     "id": "tv_38667",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E03 Potty), what alter ego does Badger imagine he has after hitting his head?",
+    "question": "In Bodger and Badger (series 6, episode 3), what alter ego does Badger imagine he has after hitting his head?",
     "answers": [
       "Super Badger",
       "Captain Mash",
@@ -1971,7 +1971,7 @@ const auditAdditions = [
     "id": "tv_38668",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E04 Lottery Lunacy), why does Simon wrongly believe he has won a lottery prize?",
+    "question": "In Bodger and Badger (series 6, episode 4), why does Simon wrongly believe he has won a lottery prize?",
     "answers": [
       "The prize cheque has the wrong name",
       "Badger has incorrectly recorded the numbers",
@@ -2005,7 +2005,7 @@ const auditAdditions = [
     "id": "tv_38669",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E05 Mrs Dribelle's Mother), who dresses up as Mrs Dribelle's supposedly ill mother to force Simon out of his room?",
+    "question": "In Bodger and Badger (series 6, episode 5), who dresses up as Mrs Dribelle's supposedly ill mother to force Simon out of his room?",
     "answers": [
       "Badger",
       "Alec Smart",
@@ -2039,7 +2039,7 @@ const auditAdditions = [
     "id": "tv_38670",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E06 Pussy Cake Pussy Cake), what substitute do Badger and Mousey make after destroying the cake intended for Fluffykins?",
+    "question": "In Bodger and Badger (series 6, episode 6), what substitute do Badger and Mousey make after destroying the cake intended for Fluffykins?",
     "answers": [
       "A sponge cake of chocolate and cream",
       "An ice-cream cake",
@@ -2073,7 +2073,7 @@ const auditAdditions = [
     "id": "tv_38671",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E07 Diet), what embarrassing difficulty convinces Simon that Badger needs to stop eating mash and exercise?",
+    "question": "In Bodger and Badger (series 6, episode 7), what embarrassing difficulty convinces Simon that Badger needs to stop eating mash and exercise?",
     "answers": [
       "He gets stuck in the badger flap",
       "He cannot fit inside a suitcase",
@@ -2107,7 +2107,7 @@ const auditAdditions = [
     "id": "tv_38672",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E08 Badger's Bed), what does Simon unknowingly buy as a bed for Badger?",
+    "question": "In Bodger and Badger (series 6, episode 8), what does Simon unknowingly buy as a bed for Badger?",
     "answers": [
       "A folding camp bed",
       "A baby's cot",
@@ -2141,7 +2141,7 @@ const auditAdditions = [
     "id": "tv_38673",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E09 The Countess of Skegness), what covers Mrs Dribelle's car after Simon mistakes the cleaning buckets?",
+    "question": "In Bodger and Badger (series 6, episode 9), what covers Mrs Dribelle's car after Simon mistakes the cleaning buckets?",
     "answers": [
       "Green paint",
       "Baked beans",
@@ -2175,7 +2175,7 @@ const auditAdditions = [
     "id": "tv_38674",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E10 Overdue), what did Mousey turn Simon's overdue library book into?",
+    "question": "In Bodger and Badger (series 6, episode 10), what did Mousey turn Simon's overdue library book into?",
     "answers": [
       "A doorstop",
       "A toy boat",
@@ -2209,7 +2209,7 @@ const auditAdditions = [
     "id": "tv_38675",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S6E11 Badger's Party), what important document does Simon sign that unexpectedly lets him remain in his flat indefinitely?",
+    "question": "In Bodger and Badger (series 6, episode 11), what important document does Simon sign that unexpectedly lets him remain in his flat indefinitely?",
     "answers": [
       "The reverse side of Mrs Dribelle's eviction agreement",
       "A forged reference from a landlord",
@@ -2243,7 +2243,7 @@ const auditAdditions = [
     "id": "tv_38676",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E01 Jungle Fever), what happens to Mrs Dribelle's garden while Badger transforms her home into a jungle?",
+    "question": "In Bodger and Badger (series 7, episode 1), what happens to Mrs Dribelle's garden while Badger transforms her home into a jungle?",
     "answers": [
       "It is flooded",
       "It becomes a desert",
@@ -2277,7 +2277,7 @@ const auditAdditions = [
     "id": "tv_38677",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E02 Catnapped), which pet is threatened with kidnapping, prompting Simon to take responsibility for it?",
+    "question": "In Bodger and Badger (series 7, episode 2), which pet is threatened with kidnapping, prompting Simon to take responsibility for it?",
     "answers": [
       "China",
       "Mousey",
@@ -2311,7 +2311,7 @@ const auditAdditions = [
     "id": "tv_38678",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E03 Here Comes Smarty Pants), what expensive item does Alec Smart persuade Simon to swap for bogus stain remover?",
+    "question": "In Bodger and Badger (series 7, episode 3), what expensive item does Alec Smart persuade Simon to swap for bogus stain remover?",
     "answers": [
       "A television",
       "A motorbike",
@@ -2345,7 +2345,7 @@ const auditAdditions = [
     "id": "tv_38679",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E04 Funny Money), which denomination of banknote does Alec Smart photocopy as part of a scheme to buy Mrs Dribelle's property?",
+    "question": "In Bodger and Badger (series 7, episode 4), which denomination of banknote does Alec Smart photocopy as part of a scheme to buy Mrs Dribelle's property?",
     "answers": [
       "£50",
       "£5",
@@ -2379,7 +2379,7 @@ const auditAdditions = [
     "id": "tv_38680",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E05 Wet Paint), what does Alec Smart try selling Mrs Dribelle that secretly involves Badger's mashed potato?",
+    "question": "In Bodger and Badger (series 7, episode 5), what does Alec Smart try selling Mrs Dribelle that secretly involves Badger's mashed potato?",
     "answers": [
       "An antique clock",
       "A painting",
@@ -2413,7 +2413,7 @@ const auditAdditions = [
     "id": "tv_38681",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E06 Gnome from Gnome), what garden ornaments is Alec Smart secretly stealing to make a profit?",
+    "question": "In Bodger and Badger (series 7, episode 6), what garden ornaments is Alec Smart secretly stealing to make a profit?",
     "answers": [
       "Birdbaths",
       "Sundials",
@@ -2447,7 +2447,7 @@ const auditAdditions = [
     "id": "tv_38682",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E07 Mrs Dribelle's Big Day), what noble-sounding fake identity does Alec Smart adopt to propose marriage to Mrs Dribelle?",
+    "question": "In Bodger and Badger (series 7, episode 7), what noble-sounding fake identity does Alec Smart adopt to propose marriage to Mrs Dribelle?",
     "answers": [
       "Duke of Devonshire",
       "Earl of Kent",
@@ -2481,7 +2481,7 @@ const auditAdditions = [
     "id": "tv_38683",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E08 World Badger Day), what does Badger decide everyone should do on the holiday he invents?",
+    "question": "In Bodger and Badger (series 7, episode 8), what does Badger decide everyone should do on the holiday he invents?",
     "answers": [
       "Be especially kind to badgers and mice",
       "Only eat mashed potato after sunset",
@@ -2515,7 +2515,7 @@ const auditAdditions = [
     "id": "tv_38684",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E09 Mrs Dribelle and the Queen), who must act as Mrs Dribelle's servant when she dresses for a pageant?",
+    "question": "In Bodger and Badger (series 7, episode 9), who must act as Mrs Dribelle's servant when she dresses for a pageant?",
     "answers": [
       "Alec Smart",
       "Simon Bodger",
@@ -2549,7 +2549,7 @@ const auditAdditions = [
     "id": "tv_38685",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E10 Wotcha Vicky), what musical skill does Mrs Dribelle's niece Vicky have when she moves in upstairs?",
+    "question": "In Bodger and Badger (series 7, episode 10), what musical skill does Mrs Dribelle's niece Vicky have when she moves in upstairs?",
     "answers": [
       "Playing the harp",
       "Singing opera",
@@ -2583,7 +2583,7 @@ const auditAdditions = [
     "id": "tv_38686",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E11 Radio Competition), what does Vicky enter with Simon and Badger's help before Mrs Dribelle unexpectedly wins?",
+    "question": "In Bodger and Badger (series 7, episode 11), what does Vicky enter with Simon and Badger's help before Mrs Dribelle unexpectedly wins?",
     "answers": [
       "A cookery competition",
       "A gardening competition",
@@ -2617,7 +2617,7 @@ const auditAdditions = [
     "id": "tv_38687",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E12 Monkey Trouble), which animal costume must Vicky wear for a market drumming job?",
+    "question": "In Bodger and Badger (series 7, episode 12), which animal costume must Vicky wear for a market drumming job?",
     "answers": [
       "A gorilla",
       "A panda",
@@ -2651,7 +2651,7 @@ const auditAdditions = [
     "id": "tv_38688",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E13 Say Cheese), what does Mousey damage that belongs to Mrs Dribelle, causing trouble at the flats?",
+    "question": "In Bodger and Badger (series 7, episode 13), what does Mousey damage that belongs to Mrs Dribelle, causing trouble at the flats?",
     "answers": [
       "Her silk curtains",
       "Her best dress",
@@ -2685,7 +2685,7 @@ const auditAdditions = [
     "id": "tv_38689",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E14 Vicky Is a Hit), what job does Vicky apply for that requires her to hide an interview from her aunt?",
+    "question": "In Bodger and Badger (series 7, episode 14), what job does Vicky apply for that requires her to hide an interview from her aunt?",
     "answers": [
       "A hotel receptionist job",
       "A school teaching job",
@@ -2719,7 +2719,7 @@ const auditAdditions = [
     "id": "tv_38690",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E16 Mashy Music), what instrument do Badger and Mousey buy to cheer Vicky after she fails to secure a music job?",
+    "question": "In Bodger and Badger (series 7, episode 16), what instrument do Badger and Mousey buy to cheer Vicky after she fails to secure a music job?",
     "answers": [
       "An electric guitar",
       "A saxophone",
@@ -2753,7 +2753,7 @@ const auditAdditions = [
     "id": "tv_38691",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E18 Too Close for Comfort), what does Simon mistakenly use to attach Mrs Dribelle's wallpaper?",
+    "question": "In Bodger and Badger (series 7, episode 18), what does Simon mistakenly use to attach Mrs Dribelle's wallpaper?",
     "answers": [
       "Mashed potato",
       "Wallpaper paste stolen by Mousey",
@@ -2787,7 +2787,7 @@ const auditAdditions = [
     "id": "tv_38692",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E20 While the Cat's Away), what type of intruder do Badger and Mousey try to catch at the flat?",
+    "question": "In Bodger and Badger (series 7, episode 20), what type of intruder do Badger and Mousey try to catch at the flat?",
     "answers": [
       "A bank robber",
       "A cat burglar",
@@ -2821,7 +2821,7 @@ const auditAdditions = [
     "id": "tv_38693",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E21 Mrs Dribelle's Dancing Partner), which practice does Mrs Dribelle force Simon to help her with while preparing for a ball?",
+    "question": "In Bodger and Badger (series 7, episode 21), which practice does Mrs Dribelle force Simon to help her with while preparing for a ball?",
     "answers": [
       "Singing arias",
       "Public speaking",
@@ -2855,7 +2855,7 @@ const auditAdditions = [
     "id": "tv_38694",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E22 Vote for Me Or Else), which local office does Mrs Dribelle stand for, hoping the neighbours will elect her?",
+    "question": "In Bodger and Badger (series 7, episode 22), which local office does Mrs Dribelle stand for, hoping the neighbours will elect her?",
     "answers": [
       "Mayor of London",
       "Member of Parliament",
@@ -2889,7 +2889,7 @@ const auditAdditions = [
     "id": "tv_38695",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E23 Cuckoo), what inherited object do Badger and Mousey decide to convert into a cuckoo clock?",
+    "question": "In Bodger and Badger (series 7, episode 23), what inherited object do Badger and Mousey decide to convert into a cuckoo clock?",
     "answers": [
       "A grandfather clock",
       "A wall mirror",
@@ -2923,7 +2923,7 @@ const auditAdditions = [
     "id": "tv_38696",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E24 The Mash Baa-sh), what bizarre suggestion does Mousey give Badger to help him fall asleep?",
+    "question": "In Bodger and Badger (series 7, episode 24), what bizarre suggestion does Mousey give Badger to help him fall asleep?",
     "answers": [
       "Sing nursery rhymes backwards",
       "Count sheep",
@@ -2957,7 +2957,7 @@ const auditAdditions = [
     "id": "tv_38697",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E25 On the Blink), what happens to the tape of Simon reading poetry before his television appearance?",
+    "question": "In Bodger and Badger (series 7, episode 25), what happens to the tape of Simon reading poetry before his television appearance?",
     "answers": [
       "Mousey accidentally burns it",
       "It is stolen by Alec Smart",
@@ -2991,7 +2991,7 @@ const auditAdditions = [
     "id": "tv_38698",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E26 Pasta Masha), what unusual food does Badger's Italian visitor Luigi love throwing?",
+    "question": "In Bodger and Badger (series 7, episode 26), what unusual food does Badger's Italian visitor Luigi love throwing?",
     "answers": [
       "Pizza",
       "Rice",
@@ -3025,7 +3025,7 @@ const auditAdditions = [
     "id": "tv_38699",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S7E27 Clay Days), where is Mousey hidden while Simon enters a pottery competition?",
+    "question": "In Bodger and Badger (series 7, episode 27), where is Mousey hidden while Simon enters a pottery competition?",
     "answers": [
       "Inside the pot",
       "Under the judging table",
@@ -3059,45 +3059,11 @@ const auditAdditions = [
     "id": "tv_38700",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E01 A Smart Start), which rival hotel owner is waiting when Simon arrives to open Seagull's Rest?",
-    "answers": [
-      "Mr Beasley",
-      "Alec Smart",
-      "Mr Valentino",
-      "Mr Tucknott"
-    ],
-    "correctAnswer": "Alec Smart",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Children's Television",
-      "Bodger and Badger",
-      "Programme: Bodger and Badger",
-      "BBC One",
-      "Live Action Puppetry",
-      "1989-1999",
-      "Episode: S8E01 A Smart Start",
-      "Episode story",
-      "Simon Bodger",
-      "Badger",
-      "Correct: Alec Smart",
-      "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
-      "Puddleford relocation",
-      "Rival hotel",
-      "Alec"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38701",
-    "category": "Television",
-    "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E02 Well Spotted), what do Badger and Mousey use to reclaim customers enticed away by Mr Smart?",
+    "question": "In Bodger and Badger (series 8, episode 2), what do Badger and Mousey use to reclaim customers enticed away by Mr Smart?",
     "answers": [
       "Mysterious leaflets",
-      "A fake lottery win",
       "Spots of red paint",
+      "A fake lottery win",
       "A pet dog"
     ],
     "correctAnswer": "Spots of red paint",
@@ -3124,15 +3090,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38702",
+    "id": "tv_38701",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E03 Peace and Quiet), what type of break is Miss Peake hoping for when she books into Seagull's Rest?",
+    "question": "In Bodger and Badger (series 8, episode 3), what type of break is Miss Peake hoping for when she books into Seagull's Rest?",
     "answers": [
       "An adventure sports holiday",
       "A weekend learning cookery",
-      "A music festival trip",
-      "A peaceful holiday"
+      "A peaceful holiday",
+      "A music festival trip"
     ],
     "correctAnswer": "A peaceful holiday",
     "difficulty": "Medium",
@@ -3158,15 +3124,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38703",
+    "id": "tv_38702",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E04 The Extra-Terrestrial Toothbrush), what moving dessert is mistaken for an alien creature?",
+    "question": "In Bodger and Badger (series 8, episode 4), what moving dessert is mistaken for an alien creature?",
     "answers": [
-      "A trifle",
       "A cheesecake",
       "A blancmange",
-      "A fruit tart"
+      "A fruit tart",
+      "A trifle"
     ],
     "correctAnswer": "A trifle",
     "difficulty": "Medium",
@@ -3192,13 +3158,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38704",
+    "id": "tv_38703",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E05 Hat Ahoy), what personal item does Mousey turn into a boat and send sailing?",
+    "question": "In Bodger and Badger (series 8, episode 5), what personal item does Mousey turn into a boat and send sailing?",
     "answers": [
-      "Mrs Melly's coat",
       "Miss Peake's sun hat",
+      "Mrs Melly's coat",
       "Millie's handbag",
       "Mr Smart's shoes"
     ],
@@ -3226,14 +3192,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38705",
+    "id": "tv_38704",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E06 Seaweed Bay), what legendary treasure do Badger and Mousey persuade Miss Peake and Mr Smart to search for?",
+    "question": "In Bodger and Badger (series 8, episode 6), what legendary treasure do Badger and Mousey persuade Miss Peake and Mr Smart to search for?",
     "answers": [
       "A hidden Roman hoard",
-      "A chest of gold from Spain",
       "The pirate treasure of Puddleford",
+      "A chest of gold from Spain",
       "A missing royal crown"
     ],
     "correctAnswer": "The pirate treasure of Puddleford",
@@ -3260,15 +3226,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38706",
+    "id": "tv_38705",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E07 Fancy That), which guest is persuaded to enter a fancy dress contest before she leaves the hotel?",
+    "question": "In Bodger and Badger (series 8, episode 7), which guest is persuaded to enter a fancy dress contest before she leaves the hotel?",
     "answers": [
       "Mrs Melly",
       "Mrs Bobbins",
-      "Vicky",
-      "Miss Peake"
+      "Miss Peake",
+      "Vicky"
     ],
     "correctAnswer": "Miss Peake",
     "difficulty": "Medium",
@@ -3294,15 +3260,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38707",
+    "id": "tv_38706",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E08 Water Laugh), what competition puts Bodger and Badger into rivalry with Alec Smart's garden display?",
+    "question": "In Bodger and Badger (series 8, episode 8), what competition puts Bodger and Badger into rivalry with Alec Smart's garden display?",
     "answers": [
-      "A gardening competition",
       "A window decorating competition",
       "A baking competition",
-      "A seaside carnival"
+      "A seaside carnival",
+      "A gardening competition"
     ],
     "correctAnswer": "A gardening competition",
     "difficulty": "Medium",
@@ -3328,13 +3294,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38708",
+    "id": "tv_38707",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E09 The Potato Patch), how much money does Alec Smart cheat Simon out of before Badger retaliates using Smart's potatoes?",
+    "question": "In Bodger and Badger (series 8, episode 9), how much money does Alec Smart cheat Simon out of before Badger retaliates using Smart's potatoes?",
     "answers": [
-      "£5",
       "£20",
+      "£5",
       "£50",
       "£100"
     ],
@@ -3362,14 +3328,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38709",
+    "id": "tv_38708",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E10 Doggone), why does Mr Smart try to take the lost dog China from Simon and his friends?",
+    "question": "In Bodger and Badger (series 8, episode 10), why does Mr Smart try to take the lost dog China from Simon and his friends?",
     "answers": [
       "He is looking for a guard dog",
-      "He is acting for the police",
       "He wants to claim a reward",
+      "He is acting for the police",
       "He wants to enter a dog show"
     ],
     "correctAnswer": "He wants to claim a reward",
@@ -3396,15 +3362,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38710",
+    "id": "tv_38709",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E11 Automashic), what bizarre staff seem to take over Seagull's Rest when new guests arrive?",
+    "question": "In Bodger and Badger (series 8, episode 11), what bizarre staff seem to take over Seagull's Rest when new guests arrive?",
     "answers": [
       "Talking parrots dressed as chefs",
       "Tourist officials in fancy dress",
-      "Puppets impersonating the vicar",
-      "Robots with voices like Badger and Mousey"
+      "Robots with voices like Badger and Mousey",
+      "Puppets impersonating the vicar"
     ],
     "correctAnswer": "Robots with voices like Badger and Mousey",
     "difficulty": "Medium",
@@ -3430,15 +3396,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38711",
+    "id": "tv_38710",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E12 Mashy Record Breakers), what work task has Mr Tucknott worried while Badger causes a mashed potato mess?",
+    "question": "In Bodger and Badger (series 8, episode 12), what work task has Mr Tucknott worried while Badger causes a mashed potato mess?",
     "answers": [
-      "Delivering a speech to bank managers",
       "Cooking dinner for the hotel",
       "Taking a driving test",
-      "Leading a guided tour"
+      "Leading a guided tour",
+      "Delivering a speech to bank managers"
     ],
     "correctAnswer": "Delivering a speech to bank managers",
     "difficulty": "Medium",
@@ -3464,13 +3430,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38712",
+    "id": "tv_38711",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E13 Big Bear), what apparently harmless object does Mrs Bobbins own that may conceal the naughty Badger?",
+    "question": "In Bodger and Badger (series 8, episode 13), what apparently harmless object does Mrs Bobbins own that may conceal the naughty Badger?",
     "answers": [
-      "An old suitcase",
       "A toy bear",
+      "An old suitcase",
       "A hat box",
       "A clockwork dog"
     ],
@@ -3498,14 +3464,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38713",
+    "id": "tv_38712",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E14 Mash Cash), who do Badger and Mousey wrongly suspect of stealing Mrs Bobbins's money?",
+    "question": "In Bodger and Badger (series 8, episode 14), who do Badger and Mousey wrongly suspect of stealing Mrs Bobbins's money?",
     "answers": [
       "Alec Smart",
-      "Mrs Melly",
       "Mr Tucknott",
+      "Mrs Melly",
       "Millie"
     ],
     "correctAnswer": "Mr Tucknott",
@@ -3532,15 +3498,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38714",
+    "id": "tv_38713",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S8E15 Splosh), what substitute liquid do Badger and Mousey put in their homemade fire extinguishers?",
+    "question": "In Bodger and Badger (series 8, episode 15), what substitute liquid do Badger and Mousey put in their homemade fire extinguishers?",
     "answers": [
       "Water mixed with soap",
       "Green paint",
-      "Baked beans",
-      "Mashed potato"
+      "Mashed potato",
+      "Baked beans"
     ],
     "correctAnswer": "Mashed potato",
     "difficulty": "Medium",
@@ -3566,49 +3532,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38715",
+    "id": "tv_38714",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E01 Hello Mrs Melly), what official role does the new Mrs S Melly hold when she first arrives in Puddleford?",
-    "answers": [
-      "Tourist information officer",
-      "School headmistress",
-      "Hotel inspector from the BBC",
-      "Town mayor"
-    ],
-    "correctAnswer": "Tourist information officer",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Children's Television",
-      "Bodger and Badger",
-      "Programme: Bodger and Badger",
-      "BBC One",
-      "Live Action Puppetry",
-      "1989-1999",
-      "Episode: S9E01 Hello Mrs Melly",
-      "Episode story",
-      "Simon Bodger",
-      "Badger",
-      "Correct: Tourist information officer",
-      "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
-      "Mrs Melly inspector",
-      "Hotel messy",
-      "Puddleford"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_38716",
-    "category": "Television",
-    "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E02 Poster Potatoes), what does Simon attempt after Mrs Melly excludes his business from the Good Hotel Guide?",
+    "question": "In Bodger and Badger (series 9, episode 2), what does Simon attempt after Mrs Melly excludes his business from the Good Hotel Guide?",
     "answers": [
       "Applying for a job at a rival hotel",
-      "Advertising it himself",
       "Selling his guest rooms",
-      "Renaming the guesthouse"
+      "Renaming the guesthouse",
+      "Advertising it himself"
     ],
     "correctAnswer": "Advertising it himself",
     "difficulty": "Medium",
@@ -3634,14 +3566,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38717",
+    "id": "tv_38715",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E03 A Twitch in Time), what unusual visitor is Miss Piper hoping to spot during her stay at the seaside?",
+    "question": "In Bodger and Badger (series 9, episode 3), what unusual visitor is Miss Piper hoping to spot during her stay at the seaside?",
     "answers": [
+      "A rare bird",
       "A whale",
       "A seal",
-      "A rare bird",
       "A flying badger"
     ],
     "correctAnswer": "A rare bird",
@@ -3668,15 +3600,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38718",
+    "id": "tv_38716",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E04 A Whale of a Time), what project do Badger and Mousey disrupt after Simon decides to promote the hotel?",
+    "question": "In Bodger and Badger (series 9, episode 4), what project do Badger and Mousey disrupt after Simon decides to promote the hotel?",
     "answers": [
       "A garden exhibition",
+      "A promotional video",
       "A newspaper interview",
-      "A fancy dress show",
-      "A promotional video"
+      "A fancy dress show"
     ],
     "correctAnswer": "A promotional video",
     "difficulty": "Medium",
@@ -3702,14 +3634,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38719",
+    "id": "tv_38717",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E05 The Great Escape), where does Mousey accidentally trap Mr Wilson before his crucial job interview?",
+    "question": "In Bodger and Badger (series 9, episode 5), where does Mousey accidentally trap Mr Wilson before his crucial job interview?",
     "answers": [
-      "In the bathroom",
       "In a lift",
       "Inside the hotel cellar",
+      "In the bathroom",
       "In the seaside café"
     ],
     "correctAnswer": "In the bathroom",
@@ -3736,15 +3668,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38720",
+    "id": "tv_38718",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E06 Hundreds and Thousands), what does Mrs Melly mistakenly believe Simon has won after overhearing a telephone conversation?",
+    "question": "In Bodger and Badger (series 9, episode 6), what does Mrs Melly mistakenly believe Simon has won after overhearing a telephone conversation?",
     "answers": [
       "A new hotel from a competition",
-      "A huge lottery prize",
       "A trip to Australia",
-      "A sporting trophy"
+      "A sporting trophy",
+      "A huge lottery prize"
     ],
     "correctAnswer": "A huge lottery prize",
     "difficulty": "Medium",
@@ -3770,14 +3702,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38721",
+    "id": "tv_38719",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E07 Mr Wilson's Bathing Trunks), what does Mrs Melly take away while Mr Wilson is swimming ahead of a job interview?",
+    "question": "In Bodger and Badger (series 9, episode 7), what does Mrs Melly take away while Mr Wilson is swimming ahead of a job interview?",
     "answers": [
+      "His clothes",
       "His briefcase",
       "His hotel key",
-      "His clothes",
       "His bicycle"
     ],
     "correctAnswer": "His clothes",
@@ -3804,15 +3736,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38722",
+    "id": "tv_38720",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E08 Green Potatoes), how does Badger replace Simon's damaged green towel before Mrs Melly borrows it?",
+    "question": "In Bodger and Badger (series 9, episode 8), how does Badger replace Simon's damaged green towel before Mrs Melly borrows it?",
     "answers": [
       "He sews several small towels together",
+      "He paints a white towel green",
       "He dyes a blue blanket",
-      "He steals a towel from Alec Smart",
-      "He paints a white towel green"
+      "He steals a towel from Alec Smart"
     ],
     "correctAnswer": "He paints a white towel green",
     "difficulty": "Medium",
@@ -3838,14 +3770,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38723",
+    "id": "tv_38721",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E09 A Mashy Romance), what product bottle accidentally ends up filled with Badger and Mousey's mashed-potato soup?",
+    "question": "In Bodger and Badger (series 9, episode 9), what product bottle accidentally ends up filled with Badger and Mousey's mashed-potato soup?",
     "answers": [
-      "Suntan lotion",
       "Shampoo",
       "Perfume",
+      "Suntan lotion",
       "Shaving cream"
     ],
     "correctAnswer": "Suntan lotion",
@@ -3872,15 +3804,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38724",
+    "id": "tv_38722",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E10 China Comes to Stay), who leaves the dog China in the hotel's care for a day?",
+    "question": "In Bodger and Badger (series 9, episode 10), who leaves the dog China in the hotel's care for a day?",
     "answers": [
       "Mrs Melly",
-      "Millie",
       "Miss Piper",
-      "Alec Smart"
+      "Alec Smart",
+      "Millie"
     ],
     "correctAnswer": "Millie",
     "difficulty": "Medium",
@@ -3906,14 +3838,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38725",
+    "id": "tv_38723",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E11 Pop), what sound makes Simon and Mr Wilson fear bank robbers have invaded the hotel?",
+    "question": "In Bodger and Badger (series 9, episode 11), what sound makes Simon and Mr Wilson fear bank robbers have invaded the hotel?",
     "answers": [
+      "Corks popping from bottles of fizzy mash",
       "A fire alarm going off",
       "The sound of a smashed window",
-      "Corks popping from bottles of fizzy mash",
       "A car backfiring outside"
     ],
     "correctAnswer": "Corks popping from bottles of fizzy mash",
@@ -3940,15 +3872,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38726",
+    "id": "tv_38724",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E12 Ready Steady Go), who challenges bank employee Mr Wilson to a race along the Puddleford seafront?",
+    "question": "In Bodger and Badger (series 9, episode 12), who challenges bank employee Mr Wilson to a race along the Puddleford seafront?",
     "answers": [
       "Mr Tucknott",
+      "Mr Gripper",
       "Alec Smart",
-      "Mr Beasley",
-      "Mr Gripper"
+      "Mr Beasley"
     ],
     "correctAnswer": "Mr Gripper",
     "difficulty": "Medium",
@@ -3974,14 +3906,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38727",
+    "id": "tv_38725",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E13 Mrs Melly Investigates), who mistakes Mrs Melly for a burglar and activates the hotel's traps?",
+    "question": "In Bodger and Badger (series 9, episode 13), who mistakes Mrs Melly for a burglar and activates the hotel's traps?",
     "answers": [
-      "Badger",
       "Mr Smart",
       "Mr Wilson",
+      "Badger",
       "Millie"
     ],
     "correctAnswer": "Badger",
@@ -4008,15 +3940,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38728",
+    "id": "tv_38726",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E14 Puddleford Day), which historic monarch's visit is being commemorated by the seaside town?",
+    "question": "In Bodger and Badger (series 9, episode 14), which historic monarch's visit is being commemorated by the seaside town?",
     "answers": [
       "Victoria",
-      "Elizabeth I",
       "Henry VIII",
-      "Charles II"
+      "Charles II",
+      "Elizabeth I"
     ],
     "correctAnswer": "Elizabeth I",
     "difficulty": "Medium",
@@ -4042,14 +3974,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38729",
+    "id": "tv_38727",
     "category": "Television",
     "programme": "Bodger and Badger",
-    "question": "In Bodger and Badger (S9E15 Mashy Museum), which three animals assemble a display of objects recalling their past adventures?",
+    "question": "In Bodger and Badger (series 9, episode 15), which three animals assemble a display of objects recalling their past adventures?",
     "answers": [
+      "Badger Mousey and China",
       "Badger a tapir and China",
       "Badger Mousey and Fluffykins",
-      "Badger Mousey and China",
       "Badger and two Sky Moos"
     ],
     "correctAnswer": "Badger Mousey and China",
@@ -4076,15 +4008,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38730",
+    "id": "tv_38728",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 01), what dream takes the young swordsman from his village near Tarbes towards Paris?",
     "answers": [
       "Joining a travelling circus",
+      "Joining the King's Muskehounds",
       "Becoming a cathedral bishop",
-      "Commanding a navy",
-      "Joining the King's Muskehounds"
+      "Commanding a navy"
     ],
     "correctAnswer": "Joining the King's Muskehounds",
     "difficulty": "Medium",
@@ -4108,14 +4040,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38731",
+    "id": "tv_38729",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 02), what important document does the mysterious rider with the black moustache steal from Dogtanian?",
     "answers": [
-      "His letter of introduction",
       "His birth certificate",
       "His marriage licence",
+      "His letter of introduction",
       "A royal pardon"
     ],
     "correctAnswer": "His letter of introduction",
@@ -4140,15 +4072,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38732",
+    "id": "tv_38730",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 03), why does Dogtanian struggle to meet Monsieur de Treville once he reaches Paris?",
     "answers": [
       "He cannot speak French",
-      "He has lost his introduction letter",
       "He has been sent to the wrong city",
-      "The officer is away at sea"
+      "The officer is away at sea",
+      "He has lost his introduction letter"
     ],
     "correctAnswer": "He has lost his introduction letter",
     "difficulty": "Medium",
@@ -4172,14 +4104,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38733",
+    "id": "tv_38731",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 04), what trick makes Porthos appear guilty of robbing women on the street?",
     "answers": [
+      "A lookalike impersonates him",
       "His sword is found at a crime scene",
       "Someone uses his real name on a forged note",
-      "A lookalike impersonates him",
       "A thief borrows his horse"
     ],
     "correctAnswer": "A lookalike impersonates him",
@@ -4204,15 +4136,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38734",
+    "id": "tv_38732",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 05), why does Widimer try to arrest Athos and Aramis during a confrontation with guards?",
     "answers": [
       "They have stolen royal jewels",
+      "Duelling is against the law",
       "They refuse to pay a tax",
-      "They have attacked a foreign ambassador",
-      "Duelling is against the law"
+      "They have attacked a foreign ambassador"
     ],
     "correctAnswer": "Duelling is against the law",
     "difficulty": "Medium",
@@ -4236,14 +4168,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38735",
+    "id": "tv_38733",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 06), why does the impetuous Dogtanian end up challenged by all three Muskehounds?",
     "answers": [
-      "He accidentally offends each of them",
       "He refuses to join their regiment",
       "He tries to steal their horses",
+      "He accidentally offends each of them",
       "He questions their loyalty to the King"
     ],
     "correctAnswer": "He accidentally offends each of them",
@@ -4268,15 +4200,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38736",
+    "id": "tv_38734",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 07), what bitter dispute flares up even during a meeting with King Louis XIII?",
     "answers": [
       "Rival English sailors competing for trade",
-      "Muskehounds against the Cardinal's Guards",
       "A disagreement over a wedding",
-      "A dispute among the palace cooks"
+      "A dispute among the palace cooks",
+      "Muskehounds against the Cardinal's Guards"
     ],
     "correctAnswer": "Muskehounds against the Cardinal's Guards",
     "difficulty": "Medium",
@@ -4300,14 +4232,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38737",
+    "id": "tv_38735",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 08), whom must Juliette secretly escort into the palace on Queen Anne's orders?",
     "answers": [
+      "The Duke of Buckingham",
       "The Count of Bavaria",
       "The Duke of Wellington",
-      "The Duke of Buckingham",
       "The Prince of Wales"
     ],
     "correctAnswer": "The Duke of Buckingham",
@@ -4332,15 +4264,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38738",
+    "id": "tv_38736",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 09), what warning does Rochefort issue to Juliette's uncle after she is kidnapped?",
     "answers": [
       "He must leave France immediately",
+      "She will be in danger if anyone tries to find her",
       "He must surrender the King's jewels",
-      "His home will be seized to pay taxes",
-      "She will be in danger if anyone tries to find her"
+      "His home will be seized to pay taxes"
     ],
     "correctAnswer": "She will be in danger if anyone tries to find her",
     "difficulty": "Medium",
@@ -4364,14 +4296,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38739",
+    "id": "tv_38737",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 10), why does Rochefort deliberately follow Juliette when she escapes from her captors?",
     "answers": [
-      "He expects her to lead him to Buckingham",
       "He wants to find her childhood home",
       "He thinks she has hidden the palace treasure",
+      "He expects her to lead him to Buckingham",
       "He believes she has taken his horse"
     ],
     "correctAnswer": "He expects her to lead him to Buckingham",
@@ -4396,15 +4328,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38740",
+    "id": "tv_38738",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 11), what terrible order does Milady give Dogtanian after using hypnosis on him?",
     "answers": [
       "Steal the royal crown",
-      "Assassinate Queen Anne",
       "Kill Cardinal Richelieu",
-      "Burn down the palace stables"
+      "Burn down the palace stables",
+      "Assassinate Queen Anne"
     ],
     "correctAnswer": "Assassinate Queen Anne",
     "difficulty": "Medium",
@@ -4428,14 +4360,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38741",
+    "id": "tv_38739",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 12), which antagonist uses a trick to separate Dogtanian from Juliette during their dangerous mission?",
     "answers": [
+      "Milady",
       "Monsieur de Treville",
       "Planchet",
-      "Milady",
       "Porthos"
     ],
     "correctAnswer": "Milady",
@@ -4460,15 +4392,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38742",
+    "id": "tv_38740",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 13), which tiny ally discovers where the captured Juliette is being held and alerts Dogtanian?",
     "answers": [
       "Sandy",
+      "Pip",
       "Planchet",
-      "Rofty",
-      "Pip"
+      "Rofty"
     ],
     "correctAnswer": "Pip",
     "difficulty": "Medium",
@@ -4492,14 +4424,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38743",
+    "id": "tv_38741",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 14), whose meeting with Queen Anne are Rochefort's men trying to prevent during the pursuit?",
     "answers": [
-      "The Duke of Buckingham's",
       "The Spanish king's",
       "The Count of Bavaria's",
+      "The Duke of Buckingham's",
       "The Duke of Wellington's"
     ],
     "correctAnswer": "The Duke of Buckingham's",
@@ -4524,15 +4456,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38744",
+    "id": "tv_38742",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 15), which three nations does Queen Anne hope to prevent from going to war?",
     "answers": [
       "France Prussia and Austria",
-      "France Spain and England",
       "England Sweden and Portugal",
-      "Spain Italy and Denmark"
+      "Spain Italy and Denmark",
+      "France Spain and England"
     ],
     "correctAnswer": "France Spain and England",
     "difficulty": "Medium",
@@ -4556,14 +4488,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38745",
+    "id": "tv_38743",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 16), what belonging does Milady steal from Dogtanian when he shows it to his mouse companion?",
     "answers": [
+      "His new dagger",
       "His riding boots",
       "His belt buckle",
-      "His new dagger",
       "His fencing certificate"
     ],
     "correctAnswer": "His new dagger",
@@ -4588,15 +4520,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38746",
+    "id": "tv_38744",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 17), where do Dogtanian and the Muskehounds sail as part of their mission involving the Queen's jewellery?",
     "answers": [
       "Portugal",
+      "England",
       "Italy",
-      "The Netherlands",
-      "England"
+      "The Netherlands"
     ],
     "correctAnswer": "England",
     "difficulty": "Medium",
@@ -4620,14 +4552,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38747",
+    "id": "tv_38745",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 18), what damage does Milady cause to the pursuers' boat to slow Dogtanian and Buckingham?",
     "answers": [
-      "She cuts its sails",
       "She breaks its compass",
       "She removes its rudder",
+      "She cuts its sails",
       "She sinks its anchor"
     ],
     "correctAnswer": "She cuts its sails",
@@ -4652,15 +4584,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38748",
+    "id": "tv_38746",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 19), who objects when Dogtanian presents himself to be formally admitted to the Muskehounds?",
     "answers": [
       "The King and Queen",
-      "Richelieu and the injured Widimer",
       "Athos and Aramis",
-      "Juliette and her uncle"
+      "Juliette and her uncle",
+      "Richelieu and the injured Widimer"
     ],
     "correctAnswer": "Richelieu and the injured Widimer",
     "difficulty": "Medium",
@@ -4684,14 +4616,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38749",
+    "id": "tv_38747",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 20), where has a map fragment linked to the Blue Falcon's jewel thieves been concealed?",
     "answers": [
+      "Behind a mirror",
       "Inside a carriage wheel",
       "Under an altar",
-      "Behind a mirror",
       "Inside a flower vase"
     ],
     "correctAnswer": "Behind a mirror",
@@ -4716,15 +4648,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38750",
+    "id": "tv_38748",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 21), on which sea do the Muskehounds pursue the Blue Falcon's escaping pirate gang?",
     "answers": [
       "The North Sea",
+      "The Mediterranean Sea",
       "The Baltic Sea",
-      "The Irish Sea",
-      "The Mediterranean Sea"
+      "The Irish Sea"
     ],
     "correctAnswer": "The Mediterranean Sea",
     "difficulty": "Medium",
@@ -4748,14 +4680,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38751",
+    "id": "tv_38749",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 22), what opponents does Dogtanian have to evade when stranded with Pip on a remote island?",
     "answers": [
-      "The Blue Falcon's pirates",
       "The royal palace guards",
       "A Spanish cavalry regiment",
+      "The Blue Falcon's pirates",
       "An English hunting party"
     ],
     "correctAnswer": "The Blue Falcon's pirates",
@@ -4780,15 +4712,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38752",
+    "id": "tv_38750",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 23), why does the French King send Dogtanian and the Muskehounds with jewels to Spain?",
     "answers": [
       "To pay for new warships",
-      "To return them as a gesture of friendship",
       "To ransom a captive prince",
-      "To bribe the Spanish army"
+      "To bribe the Spanish army",
+      "To return them as a gesture of friendship"
     ],
     "correctAnswer": "To return them as a gesture of friendship",
     "difficulty": "Medium",
@@ -4812,14 +4744,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38753",
+    "id": "tv_38751",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 24), which powerful official schemes to stop the party delivering the King's jewels to Spain?",
     "answers": [
+      "Cardinal Richelieu",
       "Monsieur de Treville",
       "The Duke of Buckingham",
-      "Cardinal Richelieu",
       "The captain of the royal navy"
     ],
     "correctAnswer": "Cardinal Richelieu",
@@ -4844,15 +4776,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38754",
+    "id": "tv_38752",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 25), which Muskehound is poisoned by Milady after the party arrives in Madrid?",
     "answers": [
       "Aramis",
+      "Athos",
       "Porthos",
-      "Dogtanian",
-      "Athos"
+      "Dogtanian"
     ],
     "correctAnswer": "Athos",
     "difficulty": "Medium",
@@ -4876,14 +4808,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38755",
+    "id": "tv_38753",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In Dogtanian and the Three Muskehounds (1981 original, episode 26), what hard-won honour does Dogtanian finally receive at the end of the original series?",
     "answers": [
-      "Admission to the King's Muskehounds",
       "The crown of France",
       "A post as Spanish ambassador",
+      "Admission to the King's Muskehounds",
       "A commission in the navy"
     ],
     "correctAnswer": "Admission to the King's Muskehounds",
@@ -4908,15 +4840,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38756",
+    "id": "tv_38754",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 01), where are the four veteran Muskehounds summoned for a mysterious reunion?",
     "answers": [
       "A monastery",
-      "An inn",
       "A dockyard",
-      "A cathedral"
+      "A cathedral",
+      "An inn"
     ],
     "correctAnswer": "An inn",
     "difficulty": "Medium",
@@ -4941,14 +4873,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38757",
+    "id": "tv_38755",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 02), what worries Dogtanian when he sees the apparent King during a royal audience in Paris?",
     "answers": [
+      "The ruler acts strangely and fails to recognise old friends",
       "The ruler announces he is going to London",
       "The ruler gives away the crown",
-      "The ruler acts strangely and fails to recognise old friends",
       "The ruler refuses to speak French"
     ],
     "correctAnswer": "The ruler acts strangely and fails to recognise old friends",
@@ -4974,15 +4906,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38758",
+    "id": "tv_38756",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 03), which soldiers have reportedly displaced the Muskehounds as the King's personal guards?",
     "answers": [
       "The Paris police",
+      "The Cardinal's Guards",
       "The Queen's household attendants",
-      "The Swiss army",
-      "The Cardinal's Guards"
+      "The Swiss army"
     ],
     "correctAnswer": "The Cardinal's Guards",
     "difficulty": "Medium",
@@ -5007,14 +4939,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38759",
+    "id": "tv_38757",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 04), what happens when Dogtanian and his friends seek an audience with the ruler to challenge their dismissal?",
     "answers": [
-      "Their request is rebuffed",
       "They are immediately given medals",
       "The King agrees to reappoint them all",
+      "Their request is rebuffed",
       "They are made honorary ambassadors"
     ],
     "correctAnswer": "Their request is rebuffed",
@@ -5040,15 +4972,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38760",
+    "id": "tv_38758",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 05), which small messenger tells Dogtanian that the real King is imprisoned rather than sitting in his palace?",
     "answers": [
       "Pip",
-      "Pom",
       "Planchet",
-      "Juliette"
+      "Juliette",
+      "Pom"
     ],
     "correctAnswer": "Pom",
     "difficulty": "Medium",
@@ -5073,14 +5005,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38761",
+    "id": "tv_38759",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 06), how does the rescued Louis XIII disguise himself to avoid being recognised and captured again?",
     "answers": [
+      "As a fifth Muskehound",
       "As the Cardinal's valet",
       "As a foreign ambassador",
-      "As a fifth Muskehound",
       "As a travelling merchant"
     ],
     "correctAnswer": "As a fifth Muskehound",
@@ -5106,15 +5038,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38762",
+    "id": "tv_38760",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 07), which old magician does Dogtanian visit in a forest cave seeking help for his horse Rofty?",
     "answers": [
       "Blancbec",
+      "Exili",
       "Rochefort",
-      "Widimer",
-      "Exili"
+      "Widimer"
     ],
     "correctAnswer": "Exili",
     "difficulty": "Medium",
@@ -5139,14 +5071,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38763",
+    "id": "tv_38761",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 08), whose report of a suspicious visitor in the royal kitchen prompts fears that the King has been poisoned?",
     "answers": [
-      "A maid's",
       "The queen's physician's",
       "A palace gardener's",
+      "A maid's",
       "The Cardinal's secretary's"
     ],
     "correctAnswer": "A maid's",
@@ -5172,15 +5104,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38764",
+    "id": "tv_38762",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 09), which visiting European nobleman makes the King's security a pressing concern?",
     "answers": [
       "The Duke of Buckingham",
-      "The Count of Bavaria",
       "The Prince of Wales",
-      "The Duke of Wellington"
+      "The Duke of Wellington",
+      "The Count of Bavaria"
     ],
     "correctAnswer": "The Count of Bavaria",
     "difficulty": "Medium",
@@ -5205,14 +5137,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38765",
+    "id": "tv_38763",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 10), who is deliberately selected to escort the Count of Bavaria when the Muskehounds devise a counter-plan?",
     "answers": [
+      "The Cardinal's Guards",
       "The Queen's servants",
       "The palace musicians",
-      "The Cardinal's Guards",
       "A Spanish cavalry unit"
     ],
     "correctAnswer": "The Cardinal's Guards",
@@ -5238,15 +5170,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38766",
+    "id": "tv_38764",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 11), why does the false King Blancbec insult the visiting Count of Bavaria?",
     "answers": [
       "To provoke a fencing match for a wager",
+      "To wreck an alliance with France",
       "To force the count to lend him money",
-      "To persuade the count to move to Paris",
-      "To wreck an alliance with France"
+      "To persuade the count to move to Paris"
     ],
     "correctAnswer": "To wreck an alliance with France",
     "difficulty": "Medium",
@@ -5271,14 +5203,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38767",
+    "id": "tv_38765",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 12), what does the Cardinal's guard falsely accuse Dogtanian of after a planned escort is ambushed?",
     "answers": [
-      "Organising the attack to discredit the guards",
       "Stealing the royal treasury",
       "Helping the Count flee the country",
+      "Organising the attack to discredit the guards",
       "Kidnapping Juliette"
     ],
     "correctAnswer": "Organising the attack to discredit the guards",
@@ -5304,15 +5236,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38768",
+    "id": "tv_38766",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 13), what order does Blancbec give after his spy spots the Count of Bavaria travelling with the Muskehounds again?",
     "answers": [
       "Welcome them in a parade",
-      "Attack the party and seize the real King",
       "Offer the Count a job at the palace",
-      "Allow everyone through unchallenged"
+      "Allow everyone through unchallenged",
+      "Attack the party and seize the real King"
     ],
     "correctAnswer": "Attack the party and seize the real King",
     "difficulty": "Medium",
@@ -5337,14 +5269,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38769",
+    "id": "tv_38767",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 14), which enemy does Louis XIII impersonate when he tries to rescue the captured Muskehounds?",
     "answers": [
+      "Blancbec",
       "Cardinal Richelieu",
       "Widimer",
-      "Blancbec",
       "Count Rochefort"
     ],
     "correctAnswer": "Blancbec",
@@ -5370,15 +5302,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38770",
+    "id": "tv_38768",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 15), why do villagers welcome the mysterious outlaw Pedigreen Hood and his followers?",
     "answers": [
       "He offers free sailing lessons",
+      "He distributes stolen noblemen's money and food to the poor",
       "He gives out royal jewels",
-      "He promises everyone palace jobs",
-      "He distributes stolen noblemen's money and food to the poor"
+      "He promises everyone palace jobs"
     ],
     "correctAnswer": "He distributes stolen noblemen's money and food to the poor",
     "difficulty": "Medium",
@@ -5403,14 +5335,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38771",
+    "id": "tv_38769",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 16), what social hardship do the Muskehounds witness in the province where corrupt nobles are collecting taxes?",
     "answers": [
-      "Severe poverty among the peasants",
       "A flood threatening the castle",
       "A shortage of horses for the guards",
+      "Severe poverty among the peasants",
       "A bad winter harvest covered in snow"
     ],
     "correctAnswer": "Severe poverty among the peasants",
@@ -5436,15 +5368,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38772",
+    "id": "tv_38770",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 17), what contest is used as a trap for the talented bowman Pedigreen Hood?",
     "answers": [
       "A horse race",
-      "An archery contest with prizes",
       "A sword-fighting tournament",
-      "A swimming gala"
+      "A swimming gala",
+      "An archery contest with prizes"
     ],
     "correctAnswer": "An archery contest with prizes",
     "difficulty": "Medium",
@@ -5469,14 +5401,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38773",
+    "id": "tv_38771",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 18), how do Bonguau's forces lure out Pedigreen and the Muskehounds before springing an ambush?",
     "answers": [
+      "They loot and attack a small village",
       "They arrange a royal banquet",
       "They organise a boat race",
-      "They loot and attack a small village",
       "They post a reward for lost jewellery"
     ],
     "correctAnswer": "They loot and attack a small village",
@@ -5502,15 +5434,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38774",
+    "id": "tv_38772",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 19), which member of the King's family must Dogtanian escort as she travels from Italy to France?",
     "answers": [
       "Princess Maria",
+      "Lady Dalma",
       "Queen Victoria",
-      "Lady Whiteadder",
-      "Lady Dalma"
+      "Lady Whiteadder"
     ],
     "correctAnswer": "Lady Dalma",
     "difficulty": "Medium",
@@ -5535,14 +5467,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38775",
+    "id": "tv_38773",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 20), who becomes infatuated with Lady Dalma during the banquet held to welcome her?",
     "answers": [
-      "Athos",
       "Porthos",
       "Aramis",
+      "Athos",
       "Dogtanian"
     ],
     "correctAnswer": "Athos",
@@ -5568,15 +5500,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38776",
+    "id": "tv_38774",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 21), whom does the King order the Muskehounds to hunt following a series of mysterious robberies?",
     "answers": [
       "A sailor working for the Blue Falcon",
-      "A masked man dressed in black",
       "A missing palace chef",
-      "A rogue foreign general"
+      "A rogue foreign general",
+      "A masked man dressed in black"
     ],
     "correctAnswer": "A masked man dressed in black",
     "difficulty": "Medium",
@@ -5601,14 +5533,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38777",
+    "id": "tv_38775",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 22), why does Cardinal Richelieu suspect the Muskehounds may be connected to the new masked robber?",
     "answers": [
+      "He thinks the thief could be another Pedigreen Hood allied to Dogtanian",
       "He has found their swords at the crime scene",
       "He reads a confession from Juliette",
-      "He thinks the thief could be another Pedigreen Hood allied to Dogtanian",
       "He receives a letter from the King accusing them"
     ],
     "correctAnswer": "He thinks the thief could be another Pedigreen Hood allied to Dogtanian",
@@ -5634,15 +5566,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38778",
+    "id": "tv_38776",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 23), how does Milady distract the young Fleur before secretly carrying her off?",
     "answers": [
       "She promises to teach her to fence",
+      "She proposes a game of hide and seek",
       "She stages a puppet show",
-      "She offers a ride in the royal coach",
-      "She proposes a game of hide and seek"
+      "She offers a ride in the royal coach"
     ],
     "correctAnswer": "She proposes a game of hide and seek",
     "difficulty": "Medium",
@@ -5667,14 +5599,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38779",
+    "id": "tv_38777",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 24), which former adversary unexpectedly orders Widimer to help find Fleur because the interests of France matter more than their rivalry?",
     "answers": [
-      "Cardinal Richelieu",
       "Blancbec",
       "The Blue Falcon",
+      "Cardinal Richelieu",
       "The Duke of Buckingham"
     ],
     "correctAnswer": "Cardinal Richelieu",
@@ -5700,15 +5632,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38780",
+    "id": "tv_38778",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 25), what courageous act lets Fleur escape Blancbec's grip during a tense confrontation with her father?",
     "answers": [
       "She jumps into a river",
-      "She bites his hand",
       "She hides behind the Cardinal",
-      "She knocks him down with a chair"
+      "She knocks him down with a chair",
+      "She bites his hand"
     ],
     "correctAnswer": "She bites his hand",
     "difficulty": "Medium",
@@ -5733,14 +5665,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_38781",
+    "id": "tv_38779",
     "category": "Television",
     "programme": "Dogtanian and the Three Muskehounds",
     "question": "In The Return of Dogtanian (1991 sequel, episode 26), who is appointed to succeed the retiring Monsieur de Treville as leader of the Royal Guard?",
     "answers": [
+      "Dogtanian",
       "Widimer",
       "Porthos",
-      "Dogtanian",
       "Cardinal Richelieu"
     ],
     "correctAnswer": "Dogtanian",
@@ -5767,10 +5699,10 @@ const auditAdditions = [
   }
 ];
 questions.push(...auditAdditions);
-if(questions.length!==229 ||
+if (questions.length!==227 ||
  questions[0].id!=='tv_17200'||questions[61].id!=='tv_17261'||
  auditAdditions[0].id!=='tv_38615'||
- auditAdditions[auditAdditions.length-1].id!=='tv_38781'||
+ auditAdditions[auditAdditions.length-1].id!=='tv_38779'||
  new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>normalise(q.question))).size!==questions.length||
  questions.some(q=>q.answers.length!==4||new Set(q.answers.map(normalise)).size!==4||
