@@ -1174,7 +1174,7 @@ const auditAdditions = [
     "id": "tv_36816",
     "category": "Television",
     "programme": "Killing Eve",
-    "question": "In Killing Eve, what is the title of Killing Eve's third-series opening episode?",
+    "question": "In Killing Eve, which episode opens the third series?",
     "answers": [
       "Slowly Slowly Catchy Monkey",
       "Are You from Pinner?",
@@ -1273,14 +1273,14 @@ const auditAdditions = [
     "id": "tv_36819",
     "category": "Television",
     "programme": "Killing Eve",
-    "question": "In Killing Eve, in what country does Villanelle visit her family during Are You from Pinner?",
+    "question": "In Killing Eve, what good news does Villanelle receive about her career in the third-series episode Still Got It?",
     "answers": [
-      "Sweden",
-      "Poland",
-      "Romania",
-      "Russia"
+      "She is in line for a promotion",
+      "She is offered an MI6 desk job",
+      "She is allowed to retire immediately",
+      "She is asked to become a university lecturer"
     ],
-    "correctAnswer": "Russia",
+    "correctAnswer": "She is in line for a promotion",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1292,13 +1292,13 @@ const auditAdditions = [
       "2018–2022 four seasons",
       "Episode-level audit",
       "Specific storyline or credit",
-      "Correct answer: Russia",
+      "Correct answer: She is in line for a promotion",
       "UK English",
       "Research: https://www.tvmaze.com/shows/22904/killing-eve/episodeguide",
-      "Are You From Pinner",
-      "Series Three",
-      "Villanelle Family",
-      "Homecoming"
+      "Still Got It",
+      "Series Three Episode Four",
+      "Villanelle Career",
+      "Promotion News"
     ],
     "dailyEligible": true
   },
@@ -1537,7 +1537,7 @@ const auditAdditions = [
     "id": "tv_36827",
     "category": "Television",
     "programme": "Killing Eve",
-    "question": "In Killing Eve, what is the title of Killing Eve's penultimate episode?",
+    "question": "In Killing Eve, which episode comes immediately before the final instalment?",
     "answers": [
       "Nice Face",
       "The Hungry Caterpillar",
@@ -2164,7 +2164,7 @@ const auditAdditions = [
     "id": "tv_36846",
     "category": "Television",
     "programme": "Adolescence",
-    "question": "In Adolescence, which programme category did Adolescence win at the 2026 BAFTA Television Awards?",
+    "question": "In Adolescence's 2026 BAFTA recognition, which programme award did the series win?",
     "answers": [
       "International Series",
       "Comedy Entertainment Programme",
