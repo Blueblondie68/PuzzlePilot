@@ -1213,14 +1213,14 @@ const auditAdditions = [
     "id": "tv_37463",
     "category": "Television",
     "programme": "Friday Night Dinner",
-    "question": "In Friday Night Dinner, what household luxury have Jackie and Martin installed?",
+    "question": "In Friday Night Dinner, what is the first name of Jim's internet date whom he initially describes as his sister?",
     "answers": [
-      "A swimming pool",
-      "A sauna",
-      "A hot tub",
-      "A conservatory"
+      "Val",
+      "Lucy",
+      "Jackie",
+      "Tanya"
     ],
-    "correctAnswer": "A hot tub",
+    "correctAnswer": "Jackie",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1232,8 +1232,8 @@ const auditAdditions = [
       "S5E1 The Other Jackie",
       "Episode storyline",
       "2026 TV quiz audit",
-      "Answer: A hot tub",
-      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Answer: Jackie",
+      "Episode source: https://www.tvguide.com/tvshows/friday-night-dinner/episodes-season-5/1000456997/",
       "Martin Jackie",
       "Hot Tub",
       "Son Embarrassment"
@@ -1461,14 +1461,14 @@ const auditAdditions = [
     "id": "tv_37471",
     "category": "Television",
     "programme": "Friday Night Dinner",
-    "question": "In Friday Night Dinner, what outdoor item does Martin struggle to recover from a tree?",
+    "question": "In Friday Night Dinner, what does Adam gaffer-tape to the ceiling during his prank war with Jonny?",
     "answers": [
-      "A football",
-      "A drone",
+      "Jonny's coat",
       "A plastic bag",
-      "A lost kite"
+      "Jonny's phone",
+      "The television remote"
     ],
-    "correctAnswer": "A plastic bag",
+    "correctAnswer": "Jonny's phone",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1480,8 +1480,8 @@ const auditAdditions = [
       "S6E2 The Plastic Bag",
       "Episode storyline",
       "2026 TV quiz audit",
-      "Answer: A plastic bag",
-      "Episode source: https://thetvdb.com/series/friday-night-dinner/allseasons/official",
+      "Answer: Jonny's phone",
+      "Episode source: https://www.channel4.com/press/news/filming-commences-friday-night-dinner-series-6",
       "Martin Obsession",
       "Bag In Tree",
       "Goodman Garden"
@@ -1833,14 +1833,14 @@ const auditAdditions = [
     "id": "tv_37483",
     "category": "Television",
     "programme": "Miranda",
-    "question": "In Miranda, what does Miranda need to invent to avoid a date arranged by Penny?",
+    "question": "In Miranda, what does Miranda falsely tell Penny to avoid a matchmaking party?",
     "answers": [
-      "A false engagement ring",
-      "A new business plan",
-      "An excuse",
-      "A travel itinerary"
+      "That she is married",
+      "That she is moving abroad",
+      "That she is gay",
+      "That she is engaged to Gary"
     ],
-    "correctAnswer": "An excuse",
+    "correctAnswer": "That she is gay",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1852,8 +1852,8 @@ const auditAdditions = [
       "S1E5 Excuse",
       "Episode storyline",
       "2026 TV quiz audit",
-      "Answer: An excuse",
-      "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
+      "Answer: That she is gay",
+      "Episode source: https://www.tvguide.com/tvshows/miranda/episodes-season-1/1000401459/",
       "Penny Matchmaking",
       "Unwanted Date",
       "Pretence"
@@ -2515,14 +2515,14 @@ const auditAdditions = [
     "id": "tv_37505",
     "category": "Television",
     "programme": "Miranda",
-    "question": "In Miranda, at which performing-arts venue does Miranda take over the artistic director's role?",
+    "question": "In Miranda, which singer visits Pineapple Dance Studios alongside JLS and Louis Spence in the 2011 Comic Relief sketch?",
     "answers": [
-      "Pineapple Dance Studios",
-      "Royal Albert Hall",
-      "Sadler's Wells",
-      "The London Palladium"
+      "Heather Small",
+      "Annie Lennox",
+      "Beverley Knight",
+      "Kim Wilde"
     ],
-    "correctAnswer": "Pineapple Dance Studios",
+    "correctAnswer": "Heather Small",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -2534,7 +2534,7 @@ const auditAdditions = [
       "2011 Comic Relief sketch",
       "Episode storyline",
       "2026 TV quiz audit",
-      "Answer: Pineapple Dance Studios",
+      "Answer: Heather Small",
       "Episode source: https://thetvdb.com/series/miranda/allseasons/official",
       "Comic Relief",
       "Pineapple Dance Studios",
@@ -3011,14 +3011,14 @@ const auditAdditions = [
     "id": "tv_37521",
     "category": "Television",
     "programme": "Father Ted",
-    "question": "In Father Ted, what international music contest do Ted and Dougal try to enter?",
+    "question": "In Father Ted, what does Father Jack do to Ted's guitar after hearing a Eurosong rehearsal?",
     "answers": [
-      "Eurosong",
-      "The X Factor",
-      "The Eurovision Song Contest for Priests",
-      "The National Song Awards"
+      "He shoots it",
+      "He sets fire to it",
+      "He hides it in the garden",
+      "He sells it at a raffle"
     ],
-    "correctAnswer": "Eurosong",
+    "correctAnswer": "He shoots it",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -3030,8 +3030,8 @@ const auditAdditions = [
       "S2E5 A Song for Europe",
       "Episode storyline",
       "2026 TV quiz audit",
-      "Answer: Eurosong",
-      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
+      "Answer: He shoots it",
+      "Episode source: https://www.rte.ie/culture/2025/0531/1515614-careful-now-the-10-best-father-ted-episodes-ranked/",
       "Eurosong",
       "Ted Dougal",
       "Song Entry"
@@ -3135,41 +3135,10 @@ const auditAdditions = [
     "id": "tv_37525",
     "category": "Television",
     "programme": "Father Ted",
-    "question": "In Father Ted, which competition is Ted asked to judge during the singer's visit?",
-    "answers": [
-      "The Lovely Girls Festival",
-      "The All-Priests Football Cup",
-      "The Craggy Island Bake Off",
-      "The Eurovision Final"
-    ],
-    "correctAnswer": "The Lovely Girls Festival",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Sitcom",
-      "Father Ted",
-      "Programme: Father Ted",
-      "S2E7 Rock A Hula Ted",
-      "Episode storyline",
-      "2026 TV quiz audit",
-      "Answer: The Lovely Girls Festival",
-      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
-      "Lovely Girls",
-      "Ted Judge",
-      "Gender Satire"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37526",
-    "category": "Television",
-    "programme": "Father Ted",
     "question": "In Father Ted, what sort of performer is unimpressed by the Lovely Girls event?",
     "answers": [
-      "A visiting opera soprano",
       "A feminist protest singer",
+      "A visiting opera soprano",
       "A boy-band singer",
       "A jazz pianist"
     ],
@@ -3194,14 +3163,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37527",
+    "id": "tv_37526",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, which religious period inspires Ted and his colleagues to give up pleasures?",
     "answers": [
       "Advent",
-      "Easter Week",
       "Lent",
+      "Easter Week",
       "Whitsun"
     ],
     "correctAnswer": "Lent",
@@ -3225,15 +3194,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37528",
+    "id": "tv_37527",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, what illness sends Father Jack away from the parochial house?",
     "answers": [
       "Food poisoning",
       "Double pneumonia",
-      "Tropical fever",
-      "Hairy hands syndrome"
+      "Hairy hands syndrome",
+      "Tropical fever"
     ],
     "correctAnswer": "Hairy hands syndrome",
     "difficulty": "Medium",
@@ -3256,15 +3225,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37529",
+    "id": "tv_37528",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, which obnoxious priest is sent as Father Jack's replacement?",
     "answers": [
-      "Father Fintan Stack",
       "Father Damien Lennon",
       "Father Stone",
-      "Father Dick Byrne"
+      "Father Dick Byrne",
+      "Father Fintan Stack"
     ],
     "correctAnswer": "Father Fintan Stack",
     "difficulty": "Medium",
@@ -3287,13 +3256,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37530",
+    "id": "tv_37529",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, what does Dougal do to create the plane's emergency?",
     "answers": [
-      "He opens the emergency door",
       "He accidentally causes a loss of fuel",
+      "He opens the emergency door",
       "He starts a fire in the kitchen",
       "He damages the landing gear"
     ],
@@ -3318,14 +3287,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37531",
+    "id": "tv_37530",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, where do eight priests get hopelessly lost while Christmas shopping?",
     "answers": [
       "A supermarket stockroom",
-      "A hotel basement",
       "A department store lingerie section",
+      "A hotel basement",
       "A shopping centre car park"
     ],
     "correctAnswer": "A department store lingerie section",
@@ -3349,15 +3318,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37532",
+    "id": "tv_37531",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, what fundraising target must Ted and Dougal try to reach during the telethon?",
     "answers": [
       "One million pounds",
       "Five hundred thousand pounds",
-      "Twenty million pounds",
-      "Eight million pounds"
+      "Eight million pounds",
+      "Twenty million pounds"
     ],
     "correctAnswer": "Eight million pounds",
     "difficulty": "Medium",
@@ -3380,15 +3349,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37533",
+    "id": "tv_37532",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, what misunderstanding triggers accusations of racism against Ted?",
     "answers": [
-      "An ill-timed impression and a dirty window",
       "A newspaper interview",
       "A dispute about food",
-      "An argument at the pub"
+      "An argument at the pub",
+      "An ill-timed impression and a dirty window"
     ],
     "correctAnswer": "An ill-timed impression and a dirty window",
     "difficulty": "Medium",
@@ -3411,77 +3380,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37534",
-    "category": "Television",
-    "programme": "Father Ted",
-    "question": "In Father Ted, what kind of agricultural event leads Ted to gamble the heating allowance?",
-    "answers": [
-      "A cattle sale",
-      "A sheep competition",
-      "A horse race",
-      "A farm produce show"
-    ],
-    "correctAnswer": "A sheep competition",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Sitcom",
-      "Father Ted",
-      "Programme: Father Ted",
-      "S3E2 Chirpy Burpy Cheap Sheep",
-      "Episode storyline",
-      "2026 TV quiz audit",
-      "Answer: A sheep competition",
-      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
-      "Sheep Trials",
-      "Chris The Sheep",
-      "Heating Money"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37535",
-    "category": "Television",
-    "programme": "Father Ted",
-    "question": "In Father Ted, who takes over the milk round after Pat Mustard loses his job?",
-    "answers": [
-      "Father Jack",
-      "Mrs Doyle",
-      "Father Dougal",
-      "Father Dick Byrne"
-    ],
-    "correctAnswer": "Father Dougal",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "British Comedy",
-      "Sitcom",
-      "Father Ted",
-      "Programme: Father Ted",
-      "S3E3 Speed 3",
-      "Episode storyline",
-      "2026 TV quiz audit",
-      "Answer: Father Dougal",
-      "Episode source: https://thetvdb.com/series/father-ted/allseasons/official",
-      "Pat Mustard",
-      "Dougal Replacement",
-      "Milk Float"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_37536",
+    "id": "tv_37533",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, which famous sitcom catchphrase does Ted repeatedly shout at Richard Wilson?",
     "answers": [
+      "I don't believe it!",
       "Don't panic!",
       "Lovely jubbly!",
-      "Are you being served?",
-      "I don't believe it!"
+      "Are you being served?"
     ],
     "correctAnswer": "I don't believe it!",
     "difficulty": "Medium",
@@ -3504,13 +3411,13 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37537",
+    "id": "tv_37534",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, which rival island fields a team against the priests in the over-75s football match?",
     "answers": [
-      "Rugged Island",
       "Mannion Island",
+      "Rugged Island",
       "Craggy Island North",
       "Inis Mór"
     ],
@@ -3535,14 +3442,14 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37538",
+    "id": "tv_37535",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, what miraculous resemblance is said to have appeared on the parochial house skirting board?",
     "answers": [
       "The Virgin Mary's face",
-      "Bishop Brennan's face",
       "Father Ted's face",
+      "Bishop Brennan's face",
       "Father Jack's face"
     ],
     "correctAnswer": "Bishop Brennan's face",
@@ -3566,15 +3473,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37539",
+    "id": "tv_37536",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, which number-one novelty song is associated with visitor Eoin McLove?",
     "answers": [
       "My Lovely Horse",
       "Dirty Old Town",
-      "My Lovely Mayo Mammy",
-      "The Craic Is Back"
+      "The Craic Is Back",
+      "My Lovely Mayo Mammy"
     ],
     "correctAnswer": "My Lovely Mayo Mammy",
     "difficulty": "Medium",
@@ -3597,15 +3504,15 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_37540",
+    "id": "tv_37537",
     "category": "Television",
     "programme": "Father Ted",
     "question": "In Father Ted, where in the Los Angeles area is Ted offered a new parish?",
     "answers": [
+      "Beverly Hills",
       "Hollywood Hills",
       "Santa Monica",
-      "Pasadena",
-      "Beverly Hills"
+      "Pasadena"
     ],
     "correctAnswer": "Beverly Hills",
     "difficulty": "Medium",
@@ -3629,10 +3536,10 @@ const auditAdditions = [
   }
 ];
 questions.push(...auditAdditions);
-const auditedTotals = {"Friday Night Dinner":83,"Miranda":67,"Father Ted":73};
-if (questions.length !== 223 ||
+const auditedTotals = {"Friday Night Dinner":83,"Miranda":67,"Father Ted":70};
+if (questions.length !== 220 ||
  questions[0].id !== 'tv_15787' || questions[114].id !== 'tv_15901' ||
- auditAdditions[0].id !== 'tv_37433' || auditAdditions[auditAdditions.length - 1].id !== 'tv_37540' ||
+ auditAdditions[0].id !== 'tv_37433' || auditAdditions[auditAdditions.length - 1].id !== 'tv_37537' ||
  new Set(questions.map(q=>q.id)).size !== questions.length ||
  new Set(questions.map(q=>normalise(q.programme+'|'+q.question))).size !== questions.length ||
  Object.entries(auditedTotals).some(([p,n]) => questions.filter(q=>q.programme===p).length!==n) ||
