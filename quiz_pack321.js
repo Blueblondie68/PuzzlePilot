@@ -346,7 +346,7 @@ const auditAdditions = [
     "id": "tv_36524",
     "category": "Television",
     "programme": "Nigella Bites",
-    "question": "What Italian cured sausage flavours chicken in Nigella Bites' TV Dinners episode?",
+    "question": "What Spanish sausage flavours chicken in Nigella Bites' TV Dinners episode?",
     "answers": [
       "Chorizo",
       "Salami Milano",
@@ -498,7 +498,7 @@ const auditAdditions = [
     "id": "tv_36528",
     "category": "Television",
     "programme": "Nigella Bites",
-    "question": "Which sweet German cake featured at the end of Nigella Bites' All Day Breakfast episode?",
+    "question": "Which sweet noodle dish featured at the end of Nigella Bites' All Day Breakfast episode?",
     "answers": [
       "Kugel",
       "Black Forest gâteau",
