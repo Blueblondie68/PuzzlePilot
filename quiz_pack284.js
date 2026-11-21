@@ -147,7 +147,7 @@
      const item = {
        id,
        category: 'Television',
-       question,
+       question: question.includes('24') ? question : 'In 24 (Season 7), ' + question.charAt(0).toLowerCase() + question.slice(1),
        answers,
        correctAnswer,
        difficulty,
@@ -163,11 +163,1549 @@
    })
  );
 
- const EXPECTED_COUNT = 84;
+ 
+// STORYLINE AUDIT — 21 November 2026, 24 Season 7
+// Original IDs tv_11630–tv_11713 preserved. Episode-based storyline additions to fill viewer-recognisable gaps.
+// Grounding: https://en.wikipedia.org/wiki/24_season_7 (episode-by-episode synopses)
+// Corroboration: https://www.tvmaze.com/shows/167/24/episodeguide
+const auditAdditions = [
+  {
+    "id": "tv_35297",
+    "category": "Television",
+    "question": "In 24 (Season 7), what happens to a contact Jack and Renee visit while seeking Tony Almeida?",
+    "answers": [
+      "A sniper kills him before he can speak",
+      "He is arrested by the Secret Service",
+      "He disappears into witness protection",
+      "He dies in an accident while fleeing"
+    ],
+    "correctAnswer": "A sniper kills him before he can speak",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 01",
+      "Day 7 clock hour 08:00",
+      "Characters: Jack Bauer;Renee Walker;Tony Almeida",
+      "Storyline: Contact killed before questioning",
+      "Question focus: what happens to a contact Jack and Renee visit while seeking Tony Almeida?",
+      "Answer focus: A sniper kills him before he can speak",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35298",
+    "category": "Television",
+    "question": "In 24 (Season 7), what is Tony Almeida originally trying to demonstrate by taking over air traffic control?",
+    "answers": [
+      "He can shut down every military radar",
+      "The terrorists can endanger civilian aircraft",
+      "The FBI has been selling passenger data",
+      "A presidential flight plan has been stolen"
+    ],
+    "correctAnswer": "The terrorists can endanger civilian aircraft",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 01",
+      "Day 7 clock hour 08:00",
+      "Characters: Tony Almeida;Michael Latham",
+      "Storyline: CIP demonstration",
+      "Question focus: what is Tony Almeida originally trying to demonstrate by taking over air traffic control?",
+      "Answer focus: The terrorists can endanger civilian aircraft",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35299",
+    "category": "Television",
+    "question": "In 24 (Season 7), why does Jack suspect the FBI investigation has been compromised?",
+    "answers": [
+      "The FBI suddenly closes the case against Tony",
+      "An investigator admits tampering with medical tests",
+      "A sniper reaches a secret meeting almost as quickly as the agents",
+      "Renee receives a false order from the President"
+    ],
+    "correctAnswer": "A sniper reaches a secret meeting almost as quickly as the agents",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 02",
+      "Day 7 clock hour 09:00",
+      "Characters: Jack Bauer;Renee Walker;Alan Tanner",
+      "Storyline: Suspicion of FBI mole",
+      "Question focus: why does Jack suspect the FBI investigation has been compromised?",
+      "Answer focus: A sniper reaches a secret meeting almost as quickly as the agents",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35300",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Tony secretly give Jack during their confrontation in the FBI interrogation room?",
+    "answers": [
+      "The keys to a safe-deposit box",
+      "A handwritten letter from Bill Buchanan",
+      "A USB drive containing the CIP plans",
+      "A coded telephone message"
+    ],
+    "correctAnswer": "A coded telephone message",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 03",
+      "Day 7 clock hour 10:00",
+      "Characters: Tony Almeida;Jack Bauer",
+      "Storyline: Tony's coded message",
+      "Question focus: what does Tony secretly give Jack during their confrontation in the FBI interrogation room?",
+      "Answer focus: A coded telephone message",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35301",
+    "category": "Television",
+    "question": "In 24 (Season 7), why does FBI analyst Sean Hillinger access restricted flight information?",
+    "answers": [
+      "He is checking on his wife's endangered flight",
+      "He is tracing a fugitive on an aircraft",
+      "He wants to find Tony's travel history",
+      "He is searching for a secret CIA charter"
+    ],
+    "correctAnswer": "He is checking on his wife's endangered flight",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 03",
+      "Day 7 clock hour 10:00",
+      "Characters: Sean Hillinger;Janis Gold",
+      "Storyline: Unauthorised flight check",
+      "Question focus: why does FBI analyst Sean Hillinger access restricted flight information?",
+      "Answer focus: He is checking on his wife's endangered flight",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35302",
+    "category": "Television",
+    "question": "In 24 (Season 7), how do Jack and Tony make their dramatic escape from the FBI parking structure?",
+    "answers": [
+      "They steal a police helicopter from the roof",
+      "They drive a car off an upper level into a vehicle below",
+      "They escape through a maintenance tunnel",
+      "They hide in an ambulance leaving the building"
+    ],
+    "correctAnswer": "They drive a car off an upper level into a vehicle below",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 03",
+      "Day 7 clock hour 10:00",
+      "Characters: Jack Bauer;Tony Almeida;Chloe O'Brian",
+      "Storyline: Parking-garage escape",
+      "Question focus: how do Jack and Tony make their dramatic escape from the FBI parking structure?",
+      "Answer focus: They drive a car off an upper level into a vehicle below",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35303",
+    "category": "Television",
+    "question": "In 24 (Season 7), who helped revive Tony after he was thought to have died in the events of Season 5?",
+    "answers": [
+      "Bill Buchanan",
+      "Larry Moss",
+      "David Emerson",
+      "Ike Dubaku"
+    ],
+    "correctAnswer": "David Emerson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 04",
+      "Day 7 clock hour 11:00",
+      "Characters: Tony Almeida;David Emerson",
+      "Storyline: Explanation for Tony's survival",
+      "Question focus: who helped revive Tony after he was thought to have died in the events of Season 5?",
+      "Answer focus: David Emerson",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35304",
+    "category": "Television",
+    "question": "In 24 (Season 7), which captive does Renee Walker personally subject to harsh interrogation to learn Emerson's target?",
+    "answers": [
+      "Michael Latham",
+      "Ryan Burnett",
+      "Sean Hillinger",
+      "Alan Tanner"
+    ],
+    "correctAnswer": "Alan Tanner",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 04",
+      "Day 7 clock hour 11:00",
+      "Characters: Renee Walker;Alan Tanner",
+      "Storyline: Renee interrogates sniper",
+      "Question focus: which captive does Renee Walker personally subject to harsh interrogation to learn Emerson's target?",
+      "Answer focus: Alan Tanner",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35305",
+    "category": "Television",
+    "question": "In 24 (Season 7), how do Jack and Emerson force the Matobos out of their reinforced safe room?",
+    "answers": [
+      "They pump improvised toxic fumes through its ventilation",
+      "They cut the building's main water supply",
+      "They threaten to arrest Matobo's bodyguards",
+      "They use a cutting torch to open the door"
+    ],
+    "correctAnswer": "They pump improvised toxic fumes through its ventilation",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 05",
+      "Day 7 clock hour 12:00",
+      "Characters: Jack Bauer;Ule Matobo;Alama Matobo",
+      "Storyline: Matobo safe-room escape",
+      "Question focus: how do Jack and Emerson force the Matobos out of their reinforced safe room?",
+      "Answer focus: They pump improvised toxic fumes through its ventilation",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35306",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Henry Taylor's own Secret Service bodyguard do to stop his investigation?",
+    "answers": [
+      "He locks Henry inside the presidential bunker",
+      "He poisons Henry with a paralysing agent",
+      "He sends Henry abroad under a false name",
+      "He has Henry arrested for treason"
+    ],
+    "correctAnswer": "He poisons Henry with a paralysing agent",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 05",
+      "Day 7 clock hour 12:00",
+      "Characters: Henry Taylor;Brian Gedge",
+      "Storyline: Henry betrayed by bodyguard",
+      "Question focus: what does Henry Taylor's own Secret Service bodyguard do to stop his investigation?",
+      "Answer focus: He poisons Henry with a paralysing agent",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35307",
+    "category": "Television",
+    "question": "In 24 (Season 7), how do Bill Buchanan and Chloe O'Brian rescue Renee after Jack's staged execution?",
+    "answers": [
+      "They retrieve her from the river",
+      "They extract her from a prison transport",
+      "They dig her out of the shallow grave",
+      "They help her escape from a police station"
+    ],
+    "correctAnswer": "They dig her out of the shallow grave",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 06",
+      "Day 7 clock hour 13:00",
+      "Characters: Renee Walker;Bill Buchanan;Chloe O'Brian",
+      "Storyline: Renee buried alive",
+      "Question focus: how do Bill Buchanan and Chloe O'Brian rescue Renee after Jack's staged execution?",
+      "Answer focus: They dig her out of the shallow grave",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35308",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Brian Gedge intend to make investigators believe about Samantha Roth's killing?",
+    "answers": [
+      "A burglar murdered her during a robbery",
+      "Roger Taylor was secretly still alive",
+      "A Sangalan assassin killed both witnesses",
+      "Henry murdered her before Gedge apparently killed himself"
+    ],
+    "correctAnswer": "Henry murdered her before Gedge apparently killed himself",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 06",
+      "Day 7 clock hour 13:00",
+      "Characters: Brian Gedge;Henry Taylor;Samantha Roth",
+      "Storyline: False murder-suicide plot",
+      "Question focus: what does Brian Gedge intend to make investigators believe about Samantha Roth's killing?",
+      "Answer focus: Henry murdered her before Gedge apparently killed himself",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35309",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Henry Taylor finally overcome Brian Gedge after recovering from the paralysing drug?",
+    "answers": [
+      "He kills Gedge in a struggle",
+      "He escapes through the bedroom window",
+      "He convinces Gedge to surrender to police",
+      "He traps Gedge in a locked garage"
+    ],
+    "correctAnswer": "He kills Gedge in a struggle",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 06",
+      "Day 7 clock hour 13:00",
+      "Characters: Henry Taylor;Brian Gedge",
+      "Storyline: Henry resists his attacker",
+      "Question focus: how does Henry Taylor finally overcome Brian Gedge after recovering from the paralysing drug?",
+      "Answer focus: He kills Gedge in a struggle",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35310",
+    "category": "Television",
+    "question": "In 24 (Season 7), what happens to the lead technician who tries to stop the toxic release at the chemical plant?",
+    "answers": [
+      "He is abducted by Dubaku's soldiers",
+      "He dies while containing the gas",
+      "He escapes with the CIP device",
+      "He is arrested for aiding the attackers"
+    ],
+    "correctAnswer": "He dies while containing the gas",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 07",
+      "Day 7 clock hour 14:00",
+      "Characters: Chemical plant technician;Ike Dubaku;Janis Gold",
+      "Storyline: Technician's sacrifice",
+      "Question focus: what happens to the lead technician who tries to stop the toxic release at the chemical plant?",
+      "Answer focus: He dies while containing the gas",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35311",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Michael Latham die after the CIP device is recovered from Dubaku's operation?",
+    "answers": [
+      "He is shot by a Secret Service agent",
+      "He dies from the chemical-plant fumes",
+      "A bomb planted on him detonates",
+      "He crashes a car while escaping"
+    ],
+    "correctAnswer": "A bomb planted on him detonates",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 07",
+      "Day 7 clock hour 14:00",
+      "Characters: Michael Latham;Ike Dubaku",
+      "Storyline: Kidnapped technician killed",
+      "Question focus: how does Michael Latham die after the CIP device is recovered from Dubaku's operation?",
+      "Answer focus: A bomb planted on him detonates",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35312",
+    "category": "Television",
+    "question": "In 24 (Season 7), whose family does Renee Walker threaten to force Secret Service agent Edward Vossler to reveal Henry's location?",
+    "answers": [
+      "Vossler's elderly parents",
+      "The Matobos and their guards",
+      "Samantha Roth's relatives",
+      "Vossler's wife and child"
+    ],
+    "correctAnswer": "Vossler's wife and child",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 08",
+      "Day 7 clock hour 15:00",
+      "Characters: Renee Walker;Edward Vossler;Jack Bauer",
+      "Storyline: Renee threatens Vossler family",
+      "Question focus: whose family does Renee Walker threaten to force Secret Service agent Edward Vossler to reveal Henry's location?",
+      "Answer focus: Vossler's wife and child",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35313",
+    "category": "Television",
+    "question": "In 24 (Season 7), what deception is used during the attempted exchange for the kidnapped Henry Taylor?",
+    "answers": [
+      "A man impersonating Ule Matobo is sent as a decoy",
+      "A fake presidential convoy is sent",
+      "Tony impersonates the First Gentleman",
+      "The CIA sends an empty prisoner van"
+    ],
+    "correctAnswer": "A man impersonating Ule Matobo is sent as a decoy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 08",
+      "Day 7 clock hour 15:00",
+      "Characters: Henry Taylor;Ule Matobo;Ike Dubaku",
+      "Storyline: Failed decoy exchange",
+      "Question focus: what deception is used during the attempted exchange for the kidnapped Henry Taylor?",
+      "Answer focus: A man impersonating Ule Matobo is sent as a decoy",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35314",
+    "category": "Television",
+    "question": "In 24 (Season 7), under which false first name has Ike Dubaku been dating Marika Donoso?",
+    "answers": [
+      "David",
+      "Samuel",
+      "Martin",
+      "Michael"
+    ],
+    "correctAnswer": "Samuel",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 09",
+      "Day 7 clock hour 16:00",
+      "Characters: Ike Dubaku;Marika Donoso;Rosa Donoso",
+      "Storyline: Dubaku's assumed name",
+      "Question focus: under which false first name has Ike Dubaku been dating Marika Donoso?",
+      "Answer focus: Samuel",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35315",
+    "category": "Television",
+    "question": "In 24 (Season 7), why is Jack's attempt to follow Marika and Dubaku suddenly interrupted by police?",
+    "answers": [
+      "Jack has been reported for stealing an ambulance",
+      "A presidential motorcade blocks the route",
+      "The FBI mole has alerted the authorities to their vehicle",
+      "Marika calls police to report a kidnapping"
+    ],
+    "correctAnswer": "The FBI mole has alerted the authorities to their vehicle",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 09",
+      "Day 7 clock hour 16:00",
+      "Characters: Jack Bauer;Renee Walker;Sean Hillinger",
+      "Storyline: Mole disrupts surveillance",
+      "Question focus: why is Jack's attempt to follow Marika and Dubaku suddenly interrupted by police?",
+      "Answer focus: The FBI mole has alerted the authorities to their vehicle",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35316",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Marika stop Dubaku's car while he tries to escape with her?",
+    "answers": [
+      "She shoots out its tyres",
+      "She cuts the engine wiring",
+      "She pulls the emergency brake on a bridge",
+      "She covers the driver's face, causing a crash"
+    ],
+    "correctAnswer": "She covers the driver's face, causing a crash",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 10",
+      "Day 7 clock hour 17:00",
+      "Characters: Marika Donoso;Ike Dubaku",
+      "Storyline: Marika sacrifices herself",
+      "Question focus: how does Marika stop Dubaku's car while he tries to escape with her?",
+      "Answer focus: She covers the driver's face, causing a crash",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35317",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does FBI mole Sean Hillinger do to his colleague Erika to conceal his betrayal?",
+    "answers": [
+      "He kills her and tries to frame her as the mole",
+      "He persuades her to flee overseas",
+      "He steals her identification to enter a prison",
+      "He hides her in a safe house"
+    ],
+    "correctAnswer": "He kills her and tries to frame her as the mole",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 10",
+      "Day 7 clock hour 17:00",
+      "Characters: Sean Hillinger;Erika;Janis Gold",
+      "Storyline: Sean tries to frame Erika",
+      "Question focus: what does FBI mole Sean Hillinger do to his colleague Erika to conceal his betrayal?",
+      "Answer focus: He kills her and tries to frame her as the mole",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35318",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Jack ask Chloe to remove from the recovered list of Dubaku's collaborators?",
+    "answers": [
+      "Senator Mayer's name",
+      "Ryan Burnett's name",
+      "Henry Taylor's name",
+      "Larry Moss's name"
+    ],
+    "correctAnswer": "Ryan Burnett's name",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 11",
+      "Day 7 clock hour 18:00",
+      "Characters: Jack Bauer;Chloe O'Brian;Ryan Burnett",
+      "Storyline: Concealed name on list",
+      "Question focus: what does Jack ask Chloe to remove from the recovered list of Dubaku's collaborators?",
+      "Answer focus: Ryan Burnett's name",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35319",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Renee first discover the Sangalan commandos' next operation?",
+    "answers": [
+      "She intercepts a message from Allison Taylor",
+      "She finds a hidden map at FBI headquarters",
+      "She follows an assassin from Dubaku's hospital room to the waterfront",
+      "She receives an anonymous letter from Juma"
+    ],
+    "correctAnswer": "She follows an assassin from Dubaku's hospital room to the waterfront",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 11",
+      "Day 7 clock hour 18:00",
+      "Characters: Renee Walker;Benjamin Juma",
+      "Storyline: Renee discovers boat operation",
+      "Question focus: how does Renee first discover the Sangalan commandos' next operation?",
+      "Answer focus: She follows an assassin from Dubaku's hospital room to the waterfront",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35320",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Vice President Hayworth refuse to authorise during Juma's White House siege?",
+    "answers": [
+      "An evacuation of the building",
+      "The use of any presidential communications",
+      "The arrest of the captured senator",
+      "A rescue operation while Taylor's safety is uncertain"
+    ],
+    "correctAnswer": "A rescue operation while Taylor's safety is uncertain",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 12",
+      "Day 7 clock hour 19:00",
+      "Characters: Mitchell Hayworth;Allison Taylor;Benjamin Juma",
+      "Storyline: Vice President refuses rescue",
+      "Question focus: what does Vice President Hayworth refuse to authorise during Juma's White House siege?",
+      "Answer focus: A rescue operation while Taylor's safety is uncertain",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35321",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Juma threaten to do to force President Taylor out of the secure room?",
+    "answers": [
+      "Mutilate her daughter Olivia",
+      "Destroy the presidential aircraft",
+      "Execute former president Daniels",
+      "Release the CIP device into the water supply"
+    ],
+    "correctAnswer": "Mutilate her daughter Olivia",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 12",
+      "Day 7 clock hour 19:00",
+      "Characters: Allison Taylor;Olivia Taylor;Benjamin Juma",
+      "Storyline: Taylor surrenders for daughter",
+      "Question focus: what does Juma threaten to do to force President Taylor out of the secure room?",
+      "Answer focus: Mutilate her daughter Olivia",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35322",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Bill Buchanan create the opening for the FBI to retake the White House?",
+    "answers": [
+      "He unlocks every exit from the control room",
+      "He detonates an explosive gas charge in the bunker area",
+      "He shoots out the building's power supply",
+      "He sends a false surrender order to Juma"
+    ],
+    "correctAnswer": "He detonates an explosive gas charge in the bunker area",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 13",
+      "Day 7 clock hour 20:00",
+      "Characters: Bill Buchanan;Jack Bauer;Benjamin Juma",
+      "Storyline: Bill's method of sacrifice",
+      "Question focus: how does Bill Buchanan create the opening for the FBI to retake the White House?",
+      "Answer focus: He detonates an explosive gas charge in the bunker area",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35323",
+    "category": "Television",
+    "question": "In 24 (Season 7), why does Larry Moss suspend Renee after the White House siege?",
+    "answers": [
+      "She refuses to testify against Juma",
+      "She loses the list of Dubaku's collaborators",
+      "She goes behind his back to obtain permission for Jack to question Burnett",
+      "She tries to resign during the siege"
+    ],
+    "correctAnswer": "She goes behind his back to obtain permission for Jack to question Burnett",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 13",
+      "Day 7 clock hour 20:00",
+      "Characters: Larry Moss;Renee Walker;Ryan Burnett",
+      "Storyline: Renee suspended",
+      "Question focus: why does Larry Moss suspend Renee after the White House siege?",
+      "Answer focus: She goes behind his back to obtain permission for Jack to question Burnett",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35324",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does John Quinn get close enough to murder Senator Mayer in his home?",
+    "answers": [
+      "He poses as a hospital orderly",
+      "He uses a stolen White House security badge",
+      "He pretends to deliver a package from the FBI",
+      "He arrives pretending to be a police officer"
+    ],
+    "correctAnswer": "He arrives pretending to be a police officer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 14",
+      "Day 7 clock hour 21:00",
+      "Characters: John Quinn;Senator Blaine Mayer;Jack Bauer",
+      "Storyline: Quinn's police disguise",
+      "Question focus: how does John Quinn get close enough to murder Senator Mayer in his home?",
+      "Answer focus: He arrives pretending to be a police officer",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35325",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Morris O'Brian demand in return for decrypting a file that could reveal Jack's location?",
+    "answers": [
+      "His wife Chloe's release from FBI custody",
+      "A presidential pardon for Tony",
+      "A job at the FBI",
+      "Protection for his brother"
+    ],
+    "correctAnswer": "His wife Chloe's release from FBI custody",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 14",
+      "Day 7 clock hour 21:00",
+      "Characters: Morris O'Brian;Chloe O'Brian;Larry Moss",
+      "Storyline: Morris bargains for Chloe",
+      "Question focus: what does Morris O'Brian demand in return for decrypting a file that could reveal Jack's location?",
+      "Answer focus: His wife Chloe's release from FBI custody",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35326",
+    "category": "Television",
+    "question": "In 24 (Season 7), why does Jack interrupt the Starkwood shipment interception to save a freight-yard guard?",
+    "answers": [
+      "The guard has been exposed to a leaking canister",
+      "Starkwood mercenaries are about to execute the guard",
+      "The guard is being held hostage by the FBI",
+      "The guard is trapped in a burning warehouse"
+    ],
+    "correctAnswer": "Starkwood mercenaries are about to execute the guard",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 15",
+      "Day 7 clock hour 22:00",
+      "Characters: Jack Bauer;Tony Almeida;Carl Gadsen",
+      "Storyline: Jack refuses to sacrifice innocent",
+      "Question focus: why does Jack interrupt the Starkwood shipment interception to save a freight-yard guard?",
+      "Answer focus: Starkwood mercenaries are about to execute the guard",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35327",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Greg Seaton do after persuading authorities that he will expose Starkwood's weapons?",
+    "answers": [
+      "He secretly moves the weapons to CTU",
+      "He gives Jack the missile launch codes",
+      "He leads the FBI into a Starkwood ambush",
+      "He kills Jonas Hodges during questioning"
+    ],
+    "correctAnswer": "He leads the FBI into a Starkwood ambush",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 16",
+      "Day 7 clock hour 23:00",
+      "Characters: Greg Seaton;Tony Almeida;Larry Moss",
+      "Storyline: False Starkwood defector",
+      "Question focus: what does Greg Seaton do after persuading authorities that he will expose Starkwood's weapons?",
+      "Answer focus: He leads the FBI into a Starkwood ambush",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35328",
+    "category": "Television",
+    "question": "In 24 (Season 7), what happens to Starkwood chairman Doug Knowles after he helps Tony locate the weapons?",
+    "answers": [
+      "He escapes into FBI protective custody",
+      "He is killed in the missile strike",
+      "He is taken prisoner by the Sangalan government",
+      "Jonas Hodges executes him"
+    ],
+    "correctAnswer": "Jonas Hodges executes him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 17",
+      "Day 7 clock hour 00:00",
+      "Characters: Doug Knowles;Jonas Hodges;Tony Almeida",
+      "Storyline: Knowles murdered for helping",
+      "Question focus: what happens to Starkwood chairman Doug Knowles after he helps Tony locate the weapons?",
+      "Answer focus: Jonas Hodges executes him",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35329",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does President Taylor call off when Hodges threatens to launch biological weapons at American cities?",
+    "answers": [
+      "A planned air strike against Starkwood",
+      "The entire Senate hearing against Jack",
+      "The evacuation of Washington",
+      "A scheduled peace summit with Sangala"
+    ],
+    "correctAnswer": "A planned air strike against Starkwood",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 17",
+      "Day 7 clock hour 00:00",
+      "Characters: Allison Taylor;Jonas Hodges",
+      "Storyline: Starkwood nuclear-level blackmail",
+      "Question focus: what does President Taylor call off when Hodges threatens to launch biological weapons at American cities?",
+      "Answer focus: A planned air strike against Starkwood",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35330",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Jack interpret President Taylor's silence when he asks about Tony's covert plan to destroy the missiles?",
+    "answers": [
+      "As an instruction to arrest Tony",
+      "As permission to proceed without an explicit order",
+      "As a rejection of all secret operations",
+      "As a demand for a full cabinet vote"
+    ],
+    "correctAnswer": "As permission to proceed without an explicit order",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 18",
+      "Day 7 clock hour 01:00",
+      "Characters: Jack Bauer;Allison Taylor;Tony Almeida",
+      "Storyline: Silent approval",
+      "Question focus: how does Jack interpret President Taylor's silence when he asks about Tony's covert plan to destroy the missiles?",
+      "Answer focus: As permission to proceed without an explicit order",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35331",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Tony Almeida secretly kill FBI supervisor Larry Moss during the pursuit of the last canister?",
+    "answers": [
+      "He injects him with the pathogen",
+      "He shoots him from a helicopter",
+      "He suffocates him to death",
+      "He pushes him into the river"
+    ],
+    "correctAnswer": "He suffocates him to death",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 18",
+      "Day 7 clock hour 01:00",
+      "Characters: Tony Almeida;Larry Moss;Robert Galvez",
+      "Storyline: Tony murders Larry",
+      "Question focus: how does Tony Almeida secretly kill FBI supervisor Larry Moss during the pursuit of the last canister?",
+      "Answer focus: He suffocates him to death",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35332",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Robert Galvez lure FBI agents into a fatal trap while escaping with the remaining pathogen?",
+    "answers": [
+      "He tricks them into opening the canister",
+      "He places a bomb in their helicopter",
+      "He leads them into a contaminated subway station",
+      "He rigs a building to explode as agents enter"
+    ],
+    "correctAnswer": "He rigs a building to explode as agents enter",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 19",
+      "Day 7 clock hour 02:00",
+      "Characters: Robert Galvez;FBI;Tony Almeida",
+      "Storyline: Galvez ambush",
+      "Question focus: how does Robert Galvez lure FBI agents into a fatal trap while escaping with the remaining pathogen?",
+      "Answer focus: He rigs a building to explode as agents enter",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35333",
+    "category": "Television",
+    "question": "In 24 (Season 7), what happens when Jack confronts Tony about Larry Moss's death?",
+    "answers": [
+      "Jack collapses and Tony steals his medication",
+      "Tony surrenders and makes a confession",
+      "Jack disarms a booby-trapped canister",
+      "Renee arrives and arrests both men"
+    ],
+    "correctAnswer": "Jack collapses and Tony steals his medication",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 19",
+      "Day 7 clock hour 02:00",
+      "Characters: Jack Bauer;Tony Almeida;Larry Moss",
+      "Storyline: Jack's illness enables escape",
+      "Question focus: what happens when Jack confronts Tony about Larry Moss's death?",
+      "Answer focus: Jack collapses and Tony steals his medication",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35334",
+    "category": "Television",
+    "question": "In 24 (Season 7), what threat accompanies the suicide pill Cara Bowden gives Jonas Hodges in detention?",
+    "answers": [
+      "His secret bank account will be frozen",
+      "His family will be harmed if he refuses to take it",
+      "Jack will arrest his son",
+      "His company will be nationalised immediately"
+    ],
+    "correctAnswer": "His family will be harmed if he refuses to take it",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 19",
+      "Day 7 clock hour 02:00",
+      "Characters: Cara Bowden;Jonas Hodges",
+      "Storyline: Forced suicide attempt",
+      "Question focus: what threat accompanies the suicide pill Cara Bowden gives Jonas Hodges in detention?",
+      "Answer focus: His family will be harmed if he refuses to take it",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35335",
+    "category": "Television",
+    "question": "In 24 (Season 7), what ultimately happens to Robert Galvez after he tries to double-cross Tony at a motel?",
+    "answers": [
+      "He is arrested by Renee Walker",
+      "He flees abroad with the canister",
+      "Tony kills him",
+      "He dies from the pathogen"
+    ],
+    "correctAnswer": "Tony kills him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 20",
+      "Day 7 clock hour 03:00",
+      "Characters: Robert Galvez;Tony Almeida",
+      "Storyline: Tony eliminates accomplice",
+      "Question focus: what ultimately happens to Robert Galvez after he tries to double-cross Tony at a motel?",
+      "Answer focus: Tony kills him",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35336",
+    "category": "Television",
+    "question": "In 24 (Season 7), why does the secret network of defence contractors provoke attacks on the government?",
+    "answers": [
+      "To replace the President with a foreign ruler",
+      "To force the FBI to relocate to Sangala",
+      "To secure exclusive rights to the CIP device",
+      "To make the government dependent on private security companies"
+    ],
+    "correctAnswer": "To make the government dependent on private security companies",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 20",
+      "Day 7 clock hour 03:00",
+      "Characters: Jonas Hodges;Alan Wilson;Tony Almeida",
+      "Storyline: Private-sector conspiracy",
+      "Question focus: why does the secret network of defence contractors provoke attacks on the government?",
+      "Answer focus: To make the government dependent on private security companies",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35337",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Tony force Jibraan Al-Zarian to confess falsely to an upcoming attack?",
+    "answers": [
+      "He threatens to kill Jibraan's brother Hamid",
+      "He promises him an FBI job",
+      "He offers him witness protection in Sangala",
+      "He threatens to deport his mother"
+    ],
+    "correctAnswer": "He threatens to kill Jibraan's brother Hamid",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 21",
+      "Day 7 clock hour 04:00",
+      "Characters: Tony Almeida;Jibraan Al-Zarian;Hamid Al-Zarian",
+      "Storyline: Coerced false confession",
+      "Question focus: how does Tony force Jibraan Al-Zarian to confess falsely to an upcoming attack?",
+      "Answer focus: He threatens to kill Jibraan's brother Hamid",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35338",
+    "category": "Television",
+    "question": "In 24 (Season 7), who helps Jack and Renee locate the Al-Zarian brothers after Tony's planted evidence leads them to a mosque?",
+    "answers": [
+      "A Secret Service protection agent",
+      "A local imam",
+      "Senator Mayer's chief of staff",
+      "The British ambassador"
+    ],
+    "correctAnswer": "A local imam",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 21",
+      "Day 7 clock hour 04:00",
+      "Characters: Jack Bauer;Renee Walker;Jibraan Al-Zarian",
+      "Storyline: Mosque leader helps",
+      "Question focus: who helps Jack and Renee locate the Al-Zarian brothers after Tony's planted evidence leads them to a mosque?",
+      "Answer focus: A local imam",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35339",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Olivia Taylor decide after initially contacting a hitman to murder Jonas Hodges?",
+    "answers": [
+      "She personally plants a bomb in Hodges' car",
+      "She alerts Jack before making any call",
+      "She changes her mind and tries to cancel the killing",
+      "She offers the assassin a White House post"
+    ],
+    "correctAnswer": "She changes her mind and tries to cancel the killing",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 21",
+      "Day 7 clock hour 04:00",
+      "Characters: Olivia Taylor;Jonas Hodges;Martin Collier",
+      "Storyline: Olivia's remorse comes too late",
+      "Question focus: what does Olivia Taylor decide after initially contacting a hitman to murder Jonas Hodges?",
+      "Answer focus: She changes her mind and tries to cancel the killing",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35340",
+    "category": "Television",
+    "question": "In 24 (Season 7), what stops Jibraan from warning officers openly that he is being forced onto the Metro train?",
+    "answers": [
+      "A closed station gate traps him",
+      "The terrorist has taken his passport",
+      "His brother refuses to answer his call",
+      "A corrupt officer orders him to obey the voice in his earpiece"
+    ],
+    "correctAnswer": "A corrupt officer orders him to obey the voice in his earpiece",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 22",
+      "Day 7 clock hour 05:00",
+      "Characters: Jibraan Al-Zarian;Cara Bowden",
+      "Storyline: Corrupt officer silences Jibraan",
+      "Question focus: what stops Jibraan from warning officers openly that he is being forced onto the Metro train?",
+      "Answer focus: A corrupt officer orders him to obey the voice in his earpiece",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35341",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Jack make the device on the Metro safe after Jibraan finds the canister?",
+    "answers": [
+      "He puts it into a chamber for controlled detonation",
+      "He throws it into a nearby river",
+      "He freezes it inside a portable cooler",
+      "He attaches it to a military drone"
+    ],
+    "correctAnswer": "He puts it into a chamber for controlled detonation",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 22",
+      "Day 7 clock hour 05:00",
+      "Characters: Jack Bauer;Jibraan Al-Zarian",
+      "Storyline: Metro device neutralised",
+      "Question focus: how does Jack make the device on the Metro safe after Jibraan finds the canister?",
+      "Answer focus: He puts it into a chamber for controlled detonation",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35342",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Kim Bauer retrieve from a burning car that helps the FBI find Jack?",
+    "answers": [
+      "A satellite tracking beacon",
+      "The fleeing attacker's laptop",
+      "A handwritten confession from Tony",
+      "A stolen police radio"
+    ],
+    "correctAnswer": "The fleeing attacker's laptop",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 23",
+      "Day 7 clock hour 06:00",
+      "Characters: Kim Bauer;Renee Walker",
+      "Storyline: Kim saves digital evidence",
+      "Question focus: what does Kim Bauer retrieve from a burning car that helps the FBI find Jack?",
+      "Answer focus: The fleeing attacker's laptop",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35343",
+    "category": "Television",
+    "question": "In 24 (Season 7), how does Ethan Kanin outsmart Olivia when she destroys evidence about the Hodges murder?",
+    "answers": [
+      "He keeps a second laptop in his car",
+      "He secretly mails the files to the Senate",
+      "He has already given the genuine recording card to Aaron Pierce",
+      "He arranges for a live television broadcast"
+    ],
+    "correctAnswer": "He has already given the genuine recording card to Aaron Pierce",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 23",
+      "Day 7 clock hour 06:00",
+      "Characters: Ethan Kanin;Olivia Taylor;Aaron Pierce",
+      "Storyline: Kanin decoy memory card",
+      "Question focus: how does Ethan Kanin outsmart Olivia when she destroys evidence about the Hodges murder?",
+      "Answer focus: He has already given the genuine recording card to Aaron Pierce",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35344",
+    "category": "Television",
+    "question": "In 24 (Season 7), why do Tony and Cara Bowden capture the infected Jack rather than killing him immediately?",
+    "answers": [
+      "They want to exchange him for Jonas Hodges",
+      "They need his approval to operate the CIP",
+      "They want to force him to identify FBI moles",
+      "They hope to reproduce the pathogen from his body"
+    ],
+    "correctAnswer": "They hope to reproduce the pathogen from his body",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 23",
+      "Day 7 clock hour 06:00",
+      "Characters: Tony Almeida;Cara Bowden;Jack Bauer",
+      "Storyline: Jack as pathogen source",
+      "Question focus: why do Tony and Cara Bowden capture the infected Jack rather than killing him immediately?",
+      "Answer focus: They hope to reproduce the pathogen from his body",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35345",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Tony strap onto Jack when Alan Wilson finally arrives for the confrontation?",
+    "answers": [
+      "An explosive device",
+      "A hidden camera and microphone",
+      "A tracking band",
+      "A chemical test sensor"
+    ],
+    "correctAnswer": "An explosive device",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 24",
+      "Day 7 clock hour 07:00",
+      "Characters: Tony Almeida;Jack Bauer;Alan Wilson",
+      "Storyline: Tony weaponises Jack",
+      "Question focus: what does Tony strap onto Jack when Alan Wilson finally arrives for the confrontation?",
+      "Answer focus: An explosive device",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35346",
+    "category": "Television",
+    "question": "In 24 (Season 7), what decision does Renee Walker make after Jack advises her about her conscience in the final hour?",
+    "answers": [
+      "She resigns from the FBI immediately",
+      "She prepares to interrogate Alan Wilson using coercion",
+      "She gives Tony immunity from prosecution",
+      "She agrees to destroy the evidence against Olivia"
+    ],
+    "correctAnswer": "She prepares to interrogate Alan Wilson using coercion",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 24",
+      "Day 7 clock hour 07:00",
+      "Characters: Renee Walker;Alan Wilson;Jack Bauer",
+      "Storyline: Renee's final moral choice",
+      "Question focus: what decision does Renee Walker make after Jack advises her about her conscience in the final hour?",
+      "Answer focus: She prepares to interrogate Alan Wilson using coercion",
+      "Viewer storyline"
+    ]
+  },
+  {
+    "id": "tv_35347",
+    "category": "Television",
+    "question": "In 24 (Season 7), what does Kim do after Jack has been placed in a medically induced coma?",
+    "answers": [
+      "She refuses any further treatment",
+      "She orders Jack transferred overseas",
+      "She asks the doctors to proceed with the treatment that might save him",
+      "She asks the FBI to release Tony"
+    ],
+    "correctAnswer": "She asks the doctors to proceed with the treatment that might save him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "American Television",
+      "Action Drama",
+      "Crime Thriller",
+      "24",
+      "24 Season 7",
+      "24 Day 7",
+      "2009",
+      "Episode 24",
+      "Day 7 clock hour 07:00",
+      "Characters: Kim Bauer;Jack Bauer",
+      "Storyline: Kim's determination to save father",
+      "Question focus: what does Kim do after Jack has been placed in a medically induced coma?",
+      "Answer focus: She asks the doctors to proceed with the treatment that might save him",
+      "Viewer storyline"
+    ]
+  }
+];
+questions.push(...auditAdditions);
+const EXPECTED_COUNT = 135;
  if (questions.length !== EXPECTED_COUNT) {
    throw new Error(`Expected ${EXPECTED_COUNT} questions; got ${questions.length}`);
  }
- if (questions[0].id !== 'tv_11630' || questions[questions.length - 1].id !== 'tv_11713') {
+ if (questions[0].id !== 'tv_11630' || questions[83].id !== 'tv_11713' || questions[questions.length - 1].id !== 'tv_35347') {
    throw new Error('Unexpected question ID range');
  }
  if (new Set(questions.map(q => q.id)).size !== questions.length) {
