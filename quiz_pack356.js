@@ -29,14 +29,14 @@
   What was the title of the first Duty Free episode?|Viva Espana|Winter Break|Manana|Adios|Medium|Viva Espana|First Episode|1984 Pilot Transmission|Opening Story|David And Amy Arrive|Series One|Episode Title
   In El Macho, which Spanish spectacle do the holidaymakers attend?|A bullfight|A flamenco contest|A football match|A horse race|Medium|El Macho|Bullfight|Spanish Excursion|David Pearce|Amy Pearce|Series One Episode Two|Holiday Activity
   In Praying Mantis, what does David try to do to impress Linda?|Get fit|Learn to play the violin|Buy a motorbike|Become a hotel chef|Medium|Praying Mantis|David Gets Fit|Linda Cochran|Fitness Effort|Holiday Attraction|Series One|Romantic Pursuit
-  Which mode of transport causes David and Amy problems in Spanish Lace?|A donkey|A cable car|A ferry|A helicopter|Medium|Spanish Lace|Donkey Ride|Mountain Excursion|Amy And David|Spanish Countryside|Series One|Holiday Mishap
+  In the Duty Free episode Spanish Lace, what personal possession does David sell to afford Linda's shawl?|His watch|His camera|His wedding ring|His suitcase|Medium|Spanish Lace|David's Watch|Linda's Shawl|Amy Loses Money|Mountain Coach Trip|Romantic Deception|Series One
   In Bedroom Farce, which late-night activity makes Amy suspicious of David?|A midnight swim|A card game|A disco competition|A fishing trip|Medium|Bedroom Farce|Midnight Swim|Amy Suspicions|David And Linda|Secret Romance|Series One|Swimming Pool
   In Forty Love, which sport does David arrange to play with Linda?|Tennis|Golf|Badminton|Squash|Medium|Forty Love|Tennis Court|David And Linda|Amy Pearce|Series One|Romantic Rendezvous|Sporting Excuse
   Which first-series finale sees Amy determined to hold on to David despite his affair?|Hasta La Vista|Casino|Snap|Party Night|Medium|Hasta La Vista|Series One Finale|Amy Pearce|David And Linda Affair|Marriage Conflict|1984 Episode|Hotel Intrigue
   In the second-series episode Casino, where does David risk the couple's money?|At a casino|At a horse auction|On the stock exchange|At a bingo hall|Easy|Casino Episode|Holiday Gambling|David Pearce|Money Worries|Series Two|Spanish Casino|Risky Spending
   In Couples, what kind of visitors arrive at the holiday hotel?|An English couple on honeymoon|A German football team|A group of schoolteachers|A party of wedding photographers|Medium|Couples Episode|Honeymooning Visitors|English Newlyweds|Hotel Guests|Series Two|Relationship Confusion|Spanish Holiday
   In El Astro, who attracts the attention of a visiting television star?|Amy Pearce|Linda Cochran|Carlos the waiter|Robert Cochran|Medium|El Astro|Television Star|Amy Pearce|Unexpected Admirer|Series Two|Holiday Romance|Celebrity Visitor
-  In Pepe, what does Amy reluctantly agree to look after on a boat trip?|A box|A puppy|A fishing rod|A handbag|Medium|Pepe Episode|Boat Trip|Amy Pearce|Mysterious Box|Series Two|Unwanted Responsibility|Holiday Excursion
+  In Duty Free's Pepe, what does David correctly suspect is concealed in the box Amy has been asked to deliver?|Illegal drugs|A stolen necklace|Forged passports|A collection of coins|Medium|Pepe Episode|Tangiers Trip|Mysterious Box|David's Suspicions|Drug Smuggling|Amy's Errand|Series Two
   Which character's friend causes David trouble in the Duty Free episode Snap?|David's friend Kev|Amy's friend Joan|Carlos's friend Pedro|Robert's friend Arthur|Hard|Snap Episode|Kev|David Pearce|Troublesome Friend|Series Two|Holiday Visitor|Comic Complications
   In Adios, what are David and Linda struggling to arrange before their holiday ends?|A final meeting alone|A restaurant opening|A move to London|A surprise birthday party|Medium|Adios Episode|David And Linda|Final Rendezvous|Holiday Ending|Series Two Finale|Secret Affair|Romantic Plans
   In Winter Break, what does David claim might happen unless he has another holiday?|He will have a nervous breakdown|He will miss a court appearance|He will lose his passport|He will be transferred abroad|Medium|Winter Break|David Pearce|Nervous Breakdown Claim|Another Spanish Holiday|Series Three Premiere|Persuading Amy|1986 Episode
@@ -83,8 +83,8 @@
   Which relationship problem does Janice pursue in the third series of Chef!?|Divorce from Gareth|A reunion with her former fiancé|A feud with her sister|Custody of a nephew|Medium|Gareth And Janice|Divorce Proceedings|Marriage Counselling|Series Three|Relationship Breakdown|1996 Storyline|Restaurant Life
   Who is the new owner of Le Chateau Anglais in the third series of Chef!?|Cyril|Everton|Piers|Otto|Medium|Cyril|Restaurant New Owner|Series Three|Le Chateau Anglais|Ownership Change|Gareth Blackstock|1996 Characters
   Which actress played the new owner's daughter Renée in the third series of Chef!?|Sophie Walker|Caroline Lee Johnson|Claire Skinner|Elizabeth Bennett|Hard|Sophie Walker|Renee|Cyril Daughter|Series Three Cast|Spoilt Kitchen Worker|New Owner Family|Actress Role
-  In the episode Rochelle, who catches Gareth's eye at a wedding in his restaurant?|His childhood sweetheart Rochelle|The bride's aunt|A television presenter|A former bank manager|Medium|Rochelle Episode|Childhood Sweetheart|Restaurant Wedding|Gareth Romance|Series Three|Old Flame|1996 Episode
-  In Paris? Jamaica?, to which city does Rochelle invite Gareth?|Paris|Rome|Barcelona|Dublin|Easy|Paris Jamaica Episode|Rochelle Invitation|Paris|Romantic Decision|Gareth Blackstock|Series Finale|Travel Plans
+  At what event in Chef!'s final series does Gareth unexpectedly meet his childhood sweetheart Rochelle?|A wedding at his restaurant|A local cookery competition|A reunion at his school|A dinner at his father's house|Medium|Rochelle Episode|Restaurant Wedding|Gareth Meets Old Flame|Childhood Sweetheart|Le Chateau Anglais|Series Three|Romantic Reunion
+  Who helps Gareth sort out his complicated love life in the final episode of Chef!?|Everton Stonehead|Cyril|Albert Roux|Piers|Medium|Paris Jamaica Finale|Everton Stonehead|Gareth Romantic Decisions|Rochelle Invitation|Series Three Ending|Kitchen Colleague|Relationship Resolution
   Which performer played Cyril, Le Chateau Anglais's new owner?|Dave Hill|Ian McNeice|Jeff Nuttall|Roger Griffiths|Hard|Dave Hill|Cyril|Restaurant Owner|Series Three Actor|Chef Cast|1996 Episodes|Character Casting`;
 
   const normalise = value => value.normalize('NFKC').trim().toLocaleLowerCase('en-GB');
@@ -152,4 +152,1733 @@
       q.dailyEligible !== true))
     throw new Error('Pack 356: invalid exported question object');
 
-  module.exports = questions;
+  
+// Editorial expansion: 21 November 2026; storylines checked against episode guides.
+// Original question IDs remain unchanged; audit additions use reserved new IDs.
+const auditAdditions = [
+  {
+    "id": "tv_38960",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What breaks as David and Amy Pearce arrive for their holiday in Spain?",
+    "answers": [
+      "Amy's camera",
+      "The hotel lift",
+      "Their hire-car door",
+      "David's suitcase"
+    ],
+    "correctAnswer": "David's suitcase",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Viva Espana",
+      "Plot point: Broken holiday luggage",
+      "Topic: Arrival mishap",
+      "Characters: David and Amy",
+      "Correct: David's suitcase",
+      "1980s Spanish Holiday Comedy",
+      "Story: Arrival mishap",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38961",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which item of David's clothing does Amy forget to pack for their holiday?",
+    "answers": [
+      "His shoes",
+      "His swimming trunks",
+      "His dinner jacket",
+      "His socks"
+    ],
+    "correctAnswer": "His shoes",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Viva Espana",
+      "Plot point: Missing footwear",
+      "Topic: Packing problems",
+      "Characters: Amy and David",
+      "Correct: His shoes",
+      "1980s Spanish Holiday Comedy",
+      "Story: Packing problems",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38962",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What does Linda Cochran dislike about the holidays she takes abroad?",
+    "answers": [
+      "Flying at night",
+      "Foreign holidays themselves",
+      "Swimming pools",
+      "Guided museum tours"
+    ],
+    "correctAnswer": "Foreign holidays themselves",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Viva Espana",
+      "Plot point: Holiday complaints",
+      "Topic: Linda's attitude",
+      "Characters: Linda and Robert",
+      "Correct: Foreign holidays themselves",
+      "1980s Spanish Holiday Comedy",
+      "Story: Linda's attitude",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38963",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which famous bullfighter exposes David's exaggerated claims of expertise during the Spanish holiday?",
+    "answers": [
+      "El Cordobés",
+      "El Niño",
+      "El Macho",
+      "El Toro"
+    ],
+    "correctAnswer": "El Macho",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: El Macho",
+      "Plot point: Bullfighting boast exposed",
+      "Topic: Matador encounter",
+      "Characters: David and Linda",
+      "Correct: El Macho",
+      "1980s Spanish Holiday Comedy",
+      "Story: Matador encounter",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38964",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which stance does Amy take during the bullfight that David fails to support?",
+    "answers": [
+      "Support for a rival matador",
+      "A demand for cheaper tickets",
+      "A protest about the heat",
+      "Opposition to blood sports"
+    ],
+    "correctAnswer": "Opposition to blood sports",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: El Macho",
+      "Plot point: Protest at bullfight",
+      "Topic: Animal welfare",
+      "Characters: Amy and David",
+      "Correct: Opposition to blood sports",
+      "1980s Spanish Holiday Comedy",
+      "Story: Animal welfare",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38965",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which exercise discipline practised by Linda inspires David's disastrous attempt to get fit?",
+    "answers": [
+      "Yoga",
+      "Pilates",
+      "Tai chi",
+      "Boxing"
+    ],
+    "correctAnswer": "Yoga",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Praying Mantis",
+      "Plot point: Fitness exercises",
+      "Topic: Linda's workout",
+      "Characters: David and Linda",
+      "Correct: Yoga",
+      "1980s Spanish Holiday Comedy",
+      "Story: Linda's workout",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38966",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What injury keeps David in bed after trying to improve his fitness to impress Linda?",
+    "answers": [
+      "A sprained wrist",
+      "A bad back",
+      "A broken toe",
+      "A stiff neck"
+    ],
+    "correctAnswer": "A bad back",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Praying Mantis",
+      "Plot point: Exercise-related back injury",
+      "Topic: Romantic show-off",
+      "Characters: David Pearce",
+      "Correct: A bad back",
+      "1980s Spanish Holiday Comedy",
+      "Story: Romantic show-off",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38967",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What does Amy throw from a balcony to prevent David meeting Linda?",
+    "answers": [
+      "His hotel key",
+      "His wristwatch",
+      "One of his shoes",
+      "A tennis racket"
+    ],
+    "correctAnswer": "One of his shoes",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Praying Mantis",
+      "Plot point: Balcony sabotage",
+      "Topic: Meeting prevented",
+      "Characters: Amy and David",
+      "Correct: One of his shoes",
+      "1980s Spanish Holiday Comedy",
+      "Story: Meeting prevented",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38968",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What item does David secretly buy for Linda during a coach excursion to the mountains?",
+    "answers": [
+      "A silver necklace",
+      "A leather handbag",
+      "A sun hat",
+      "A gypsy shawl"
+    ],
+    "correctAnswer": "A gypsy shawl",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Spanish Lace",
+      "Plot point: Romantic gift",
+      "Topic: Mountain excursion",
+      "Characters: David and Linda",
+      "Correct: A gypsy shawl",
+      "1980s Spanish Holiday Comedy",
+      "Story: Mountain excursion",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38969",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Who buys Linda another shawl and makes David's earlier gift awkward?",
+    "answers": [
+      "Her husband Robert",
+      "Her brother Nigel",
+      "Her cousin Paul",
+      "Her father"
+    ],
+    "correctAnswer": "Her husband Robert",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Spanish Lace",
+      "Plot point: Competing shawl gifts",
+      "Topic: Spouses and presents",
+      "Characters: Robert and Linda",
+      "Correct: Her husband Robert",
+      "1980s Spanish Holiday Comedy",
+      "Story: Spouses and presents",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38970",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What does Linda put on her balcony to signal to David that it is safe to visit her room?",
+    "answers": [
+      "Flowers",
+      "Towels",
+      "A lantern",
+      "A red scarf"
+    ],
+    "correctAnswer": "Towels",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Bedroom Farce",
+      "Plot point: Secret balcony signals",
+      "Topic: Illicit rendezvous",
+      "Characters: Linda and David",
+      "Correct: Towels",
+      "1980s Spanish Holiday Comedy",
+      "Story: Illicit rendezvous",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38971",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "A man of which nationality does Robert wrongly believe is Linda's lover?",
+    "answers": [
+      "German",
+      "Italian",
+      "French",
+      "Dutch"
+    ],
+    "correctAnswer": "French",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Bedroom Farce",
+      "Plot point: Mistaken nationality",
+      "Topic: False suspicion",
+      "Characters: Robert Cochran",
+      "Correct: French",
+      "1980s Spanish Holiday Comedy",
+      "Story: False suspicion",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38972",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Whose hotel room does David mistakenly visit after Amy alters Linda's balcony signals?",
+    "answers": [
+      "A French photographer's",
+      "The hotel's manager's",
+      "A British honeymooning couple's",
+      "A German couple's"
+    ],
+    "correctAnswer": "A German couple's",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Bedroom Farce",
+      "Plot point: Misleading balcony signals",
+      "Topic: Wrong room",
+      "Characters: David and Amy",
+      "Correct: A German couple's",
+      "1980s Spanish Holiday Comedy",
+      "Story: Wrong room",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38973",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which sport is Robert playing while David and Linda find time alone during the holiday?",
+    "answers": [
+      "Golf",
+      "Tennis",
+      "Squash",
+      "Cricket"
+    ],
+    "correctAnswer": "Golf",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Forty Love",
+      "Plot point: Robert absent for sport",
+      "Topic: Golf outing",
+      "Characters: Robert Cochran",
+      "Correct: Golf",
+      "1980s Spanish Holiday Comedy",
+      "Story: Golf outing",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38974",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "How does Amy embarrass David and Linda after interrupting their secret romantic encounter?",
+    "answers": [
+      "By releasing a pet parrot",
+      "With hot tea and sticky cakes",
+      "With a tray of cold fish",
+      "By inviting the hotel manager to sing"
+    ],
+    "correctAnswer": "With hot tea and sticky cakes",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Forty Love",
+      "Plot point: Amy spoils secret meeting",
+      "Topic: Tea-and-cakes revenge",
+      "Characters: Amy and Linda",
+      "Correct: With hot tea and sticky cakes",
+      "1980s Spanish Holiday Comedy",
+      "Story: Tea-and-cakes revenge",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38975",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What does Amy hide in David's suitcase so that he is detained while trying to leave with Linda?",
+    "answers": [
+      "Illegal cigarettes",
+      "Foreign currency",
+      "Hotel property",
+      "Someone else's passport"
+    ],
+    "correctAnswer": "Hotel property",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Hasta La Vista",
+      "Plot point: Suitcase filled with hotel goods",
+      "Topic: Amy's scheme",
+      "Characters: David and Amy",
+      "Correct: Hotel property",
+      "1980s Spanish Holiday Comedy",
+      "Story: Amy's scheme",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38976",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What nickname for a supposed kleptomaniac does Amy use when warning Linda away from David?",
+    "answers": [
+      "The Magpie",
+      "The Fox",
+      "The Ferret",
+      "The Weasel"
+    ],
+    "correctAnswer": "The Weasel",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Hasta La Vista",
+      "Plot point: False criminal nickname",
+      "Topic: Affair ends",
+      "Characters: Amy and Linda",
+      "Correct: The Weasel",
+      "1980s Spanish Holiday Comedy",
+      "Story: Affair ends",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38977",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What disguise does David wear when he attempts to escape the hotel after being detained?",
+    "answers": [
+      "Women's clothing",
+      "A waiter's uniform",
+      "A police uniform",
+      "A matador's costume"
+    ],
+    "correctAnswer": "Women's clothing",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Hasta La Vista",
+      "Plot point: Escape in disguise",
+      "Topic: Hotel embarrassment",
+      "Characters: David Pearce",
+      "Correct: Women's clothing",
+      "1980s Spanish Holiday Comedy",
+      "Story: Hotel embarrassment",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38978",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What hotel worker's uniform does David borrow while stuck wearing women's clothes?",
+    "answers": [
+      "A cleaner's apron",
+      "A waiter's uniform",
+      "A chauffeur's jacket",
+      "A chef's coat"
+    ],
+    "correctAnswer": "A waiter's uniform",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Manana",
+      "Plot point: Borrowed work clothes",
+      "Topic: Hotel staff disguise",
+      "Characters: David and Carlos",
+      "Correct: A waiter's uniform",
+      "1980s Spanish Holiday Comedy",
+      "Story: Hotel staff disguise",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38979",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What do the others wrongly think David has tried to do, making them more sympathetic to him?",
+    "answers": [
+      "Run away to Morocco",
+      "Join the French Foreign Legion",
+      "Drown himself",
+      "Climb a hotel roof"
+    ],
+    "correctAnswer": "Drown himself",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Manana",
+      "Plot point: Misunderstood disappearance",
+      "Topic: Holiday reconciliation",
+      "Characters: David and guests",
+      "Correct: Drown himself",
+      "1980s Spanish Holiday Comedy",
+      "Story: Holiday reconciliation",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38980",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which novice gambler proves more successful at the casino than David?",
+    "answers": [
+      "Linda Cochran",
+      "Carlos the waiter",
+      "Robert Cochran",
+      "Amy Pearce"
+    ],
+    "correctAnswer": "Amy Pearce",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Casino",
+      "Plot point: Unexpected winnings",
+      "Topic: Casino success",
+      "Characters: Amy and David",
+      "Correct: Amy Pearce",
+      "1980s Spanish Holiday Comedy",
+      "Story: Casino success",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38981",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What are the seemingly newlywed English couple at the hotel really doing?",
+    "answers": [
+      "Pretending to be newlyweds to refresh their marriage",
+      "Celebrating their first anniversary",
+      "Preparing for an actual wedding",
+      "Hiding an engagement from their families"
+    ],
+    "correctAnswer": "Pretending to be newlyweds to refresh their marriage",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Couples",
+      "Plot point: Marriage role-play",
+      "Topic: New visitors",
+      "Characters: Guest couple",
+      "Correct: Pretending to be newlyweds to refresh their marriage",
+      "1980s Spanish Holiday Comedy",
+      "Story: New visitors",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38982",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which actor appears as himself at the hotel and becomes interested in Amy rather than Linda?",
+    "answers": [
+      "John Noakes",
+      "Frazer Hines",
+      "Christopher Timothy",
+      "Robert Lindsay"
+    ],
+    "correctAnswer": "Frazer Hines",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: El Astro",
+      "Plot point: Soap actor guest",
+      "Topic: Celebrity hotel visitor",
+      "Characters: Amy and Linda",
+      "Correct: Frazer Hines",
+      "1980s Spanish Holiday Comedy",
+      "Story: Celebrity hotel visitor",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38983",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "From which North African city has Amy returned when asked to deliver a mysterious box?",
+    "answers": [
+      "Casablanca",
+      "Tunis",
+      "Tangiers",
+      "Algiers"
+    ],
+    "correctAnswer": "Tangiers",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Pepe",
+      "Plot point: Boat journey abroad",
+      "Topic: Mysterious box",
+      "Characters: Amy Pearce",
+      "Correct: Tangiers",
+      "1980s Spanish Holiday Comedy",
+      "Story: Mysterious box",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38984",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Who becomes affected after David empties the suspicious box over the hotel's balcony?",
+    "answers": [
+      "David and Amy",
+      "Carlos and the receptionist",
+      "A German couple",
+      "Robert and Linda"
+    ],
+    "correctAnswer": "Robert and Linda",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Pepe",
+      "Plot point: Balcony powder incident",
+      "Topic: Unexpected effect",
+      "Characters: Robert and Linda",
+      "Correct: Robert and Linda",
+      "1980s Spanish Holiday Comedy",
+      "Story: Unexpected effect",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38985",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What photographic evidence does David's childhood acquaintance Kev give to Amy?",
+    "answers": [
+      "A photograph of David kissing Linda",
+      "A photograph of David losing at tennis",
+      "A photograph of Robert gambling",
+      "A picture of Amy with an actor"
+    ],
+    "correctAnswer": "A photograph of David kissing Linda",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Snap",
+      "Plot point: Unwanted incriminating photo",
+      "Topic: Childhood rival",
+      "Characters: Kev Wilson",
+      "Correct: A photograph of David kissing Linda",
+      "1980s Spanish Holiday Comedy",
+      "Story: Childhood rival",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38986",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "At what bar do David and Linda arrange their final secret meeting before leaving Spain?",
+    "answers": [
+      "Carlos's Café",
+      "Pedro's Bar",
+      "The Marina Tavern",
+      "El Sol Bar"
+    ],
+    "correctAnswer": "Pedro's Bar",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Adios",
+      "Plot point: Final holiday rendezvous",
+      "Topic: Bar location",
+      "Characters: David and Linda",
+      "Correct: Pedro's Bar",
+      "1980s Spanish Holiday Comedy",
+      "Story: Bar location",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38987",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which supposedly accompanying friend does David cite to conceal his second visit to Spain?",
+    "answers": [
+      "Kev Wilson",
+      "Neville",
+      "Tommy Wright",
+      "Carlos"
+    ],
+    "correctAnswer": "Tommy Wright",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Winter Break",
+      "Plot point: False holiday alibi",
+      "Topic: Old mate invented",
+      "Characters: David and Amy",
+      "Correct: Tommy Wright",
+      "1980s Spanish Holiday Comedy",
+      "Story: Old mate invented",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38988",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What devastating detail does Amy reveal about the friend David claimed was holidaying with him?",
+    "answers": [
+      "Tommy Wright had moved to Canada",
+      "Tommy Wright was in prison",
+      "Tommy Wright was abroad with Robert",
+      "Tommy Wright died three years earlier"
+    ],
+    "correctAnswer": "Tommy Wright died three years earlier",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Deja Vu",
+      "Plot point: Exposed false holiday alibi",
+      "Topic: Deceased friend",
+      "Characters: Amy and David",
+      "Correct: Tommy Wright died three years earlier",
+      "1980s Spanish Holiday Comedy",
+      "Story: Deceased friend",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38989",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which holiday television programme is filming at the Spanish hotel when the main couples are interviewed?",
+    "answers": [
+      "Wish You Were Here...?",
+      "Holiday",
+      "Travel Man",
+      "The Travel Show"
+    ],
+    "correctAnswer": "Wish You Were Here...?",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Close Up",
+      "Plot point: Holiday TV filming",
+      "Topic: Judith Chalmers",
+      "Characters: Hotel media appearance",
+      "Correct: Wish You Were Here...?",
+      "1980s Spanish Holiday Comedy",
+      "Story: Judith Chalmers",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38990",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What manner of speaking makes David's television interview especially pretentious?",
+    "answers": [
+      "A repeated whisper",
+      "An affected accent",
+      "Speaking only in Spanish",
+      "Using a squeaky voice"
+    ],
+    "correctAnswer": "An affected accent",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Close Up",
+      "Plot point: Embarrassing television interview",
+      "Topic: David puts on airs",
+      "Characters: David Pearce",
+      "Correct: An affected accent",
+      "1980s Spanish Holiday Comedy",
+      "Story: David puts on airs",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38991",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What activity does Linda pretend to teach Neville while he carries secret messages to David?",
+    "answers": [
+      "Tennis",
+      "Dancing",
+      "Swimming",
+      "Snorkelling"
+    ],
+    "correctAnswer": "Swimming",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: The Go-Between",
+      "Plot point: False lessons",
+      "Topic: Secret go-between",
+      "Characters: Linda and Neville",
+      "Correct: Swimming",
+      "1980s Spanish Holiday Comedy",
+      "Story: Secret go-between",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38992",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What pattern distinguishes the hold-all that David mistakenly takes from another traveller?",
+    "answers": [
+      "Leopard print",
+      "Red stripes",
+      "Blue polka dots",
+      "Tartan"
+    ],
+    "correctAnswer": "Tartan",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Costa del Crime",
+      "Plot point: Similar travel bags",
+      "Topic: Airport mix-up",
+      "Characters: David Pearce",
+      "Correct: Tartan",
+      "1980s Spanish Holiday Comedy",
+      "Story: Airport mix-up",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38993",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What does David discover inside the wrong hold-all picked up at the airport?",
+    "answers": [
+      "Bundles of banknotes",
+      "A set of diamonds",
+      "Gold coins",
+      "A forged passport"
+    ],
+    "correctAnswer": "Bundles of banknotes",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Costa del Crime",
+      "Plot point: Mysterious bag contents",
+      "Topic: Criminal hotel visit",
+      "Characters: David and Linda",
+      "Correct: Bundles of banknotes",
+      "1980s Spanish Holiday Comedy",
+      "Story: Criminal hotel visit",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38994",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which political party is supported by the raffle that shocks Labour-voting Amy?",
+    "answers": [
+      "The Liberal Party",
+      "The Conservative Party",
+      "The Labour Party",
+      "The Green Party"
+    ],
+    "correctAnswer": "The Conservative Party",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Cause Celebre",
+      "Plot point: Political raffle",
+      "Topic: Amy's socialist principles",
+      "Characters: David and Amy",
+      "Correct: The Conservative Party",
+      "1980s Spanish Holiday Comedy",
+      "Story: Amy's socialist principles",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38995",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Which nationality's guests heckle Robert during his performance at the hotel's fancy-dress party?",
+    "answers": [
+      "French",
+      "Swedish",
+      "German",
+      "Italian"
+    ],
+    "correctAnswer": "German",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Party Night",
+      "Plot point: Heckling at hotel show",
+      "Topic: Robert's monologue",
+      "Characters: Robert Cochran",
+      "Correct: German",
+      "1980s Spanish Holiday Comedy",
+      "Story: Robert's monologue",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38996",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "What costume must David wear when Amy gets into the Christmas spirit at the hotel?",
+    "answers": [
+      "An elf",
+      "A snowman",
+      "A reindeer",
+      "Father Christmas"
+    ],
+    "correctAnswer": "Father Christmas",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: A Duty Free Christmas",
+      "Plot point: Festive hotel costume",
+      "Topic: Christmas decorations",
+      "Characters: David and Amy",
+      "Correct: Father Christmas",
+      "1980s Spanish Holiday Comedy",
+      "Story: Christmas decorations",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38997",
+    "category": "Television",
+    "programme": "Duty Free",
+    "question": "Over what span of holiday time do the first two Duty Free series take place?",
+    "answers": [
+      "The same two-week holiday",
+      "Two separate summer holidays",
+      "One weekend",
+      "An entire winter season"
+    ],
+    "correctAnswer": "The same two-week holiday",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Duty Free",
+      "Programme: Duty Free",
+      "ITV",
+      "Yorkshire Television",
+      "Episode: Series continuity",
+      "Plot point: Holiday that never ends",
+      "Topic: Series 1 and 2 timeline",
+      "Characters: Pearces and Cochrans",
+      "Correct: The same two-week holiday",
+      "1980s Spanish Holiday Comedy",
+      "Story: Series 1 and 2 timeline",
+      "Source: https://en.wikipedia.org/wiki/Duty_Free_(TV_series)"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38998",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "Which local medium must Gareth court to raise his profile while his cottage is on the market?",
+    "answers": [
+      "Radio phone-ins",
+      "The local press",
+      "Community theatre",
+      "A newspaper letters page"
+    ],
+    "correctAnswer": "The local press",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: Subject To Contract",
+      "Plot point: Restaurant publicity",
+      "Topic: Property sale",
+      "Characters: Gareth Blackstock",
+      "Correct: The local press",
+      "1990s Restaurant Comedy",
+      "Story: Property sale",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38999",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "Who takes control of the restaurant's business management while Gareth enters TV cooking?",
+    "answers": [
+      "Everton Stonehead",
+      "Lucinda",
+      "Janice Blackstock",
+      "Piers"
+    ],
+    "correctAnswer": "Janice Blackstock",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: Fame Is The Spur",
+      "Plot point: Restaurant business handover",
+      "Topic: Chef on television",
+      "Characters: Janice and Gareth",
+      "Correct: Janice Blackstock",
+      "1990s Restaurant Comedy",
+      "Story: Chef on television",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39000",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "What does Janice dislike seeing walking around on the farm before the restaurant's Christmas meal?",
+    "answers": [
+      "A flock of geese outside the barn",
+      "The cattle intended for the next day's meal",
+      "Live pigs being unloaded",
+      "The turkeys intended as ingredients"
+    ],
+    "correctAnswer": "The turkeys intended as ingredients",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: A Bird In The Hand",
+      "Plot point: Christmas farm discomfort",
+      "Topic: Free-range turkeys",
+      "Characters: Janice Blackstock",
+      "Correct: The turkeys intended as ingredients",
+      "1990s Restaurant Comedy",
+      "Story: Free-range turkeys",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39001",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "What icy outdoor activity does Janice blame for Gareth's sudden vigour while she suspects pregnancy?",
+    "answers": [
+      "Fishing in sub-zero temperatures",
+      "Winter hiking",
+      "Skiing in the Alps",
+      "Swimming in an outdoor pool"
+    ],
+    "correctAnswer": "Fishing in sub-zero temperatures",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: Time Flies",
+      "Plot point: Winter fishing outing",
+      "Topic: Possible pregnancy",
+      "Characters: Janice and Gareth",
+      "Correct: Fishing in sub-zero temperatures",
+      "1990s Restaurant Comedy",
+      "Story: Possible pregnancy",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39002",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "Which kitchen colleague risks losing his job by giving Gareth advice about romance?",
+    "answers": [
+      "Piers",
+      "Everton Stonehead",
+      "Cyril",
+      "Lucinda"
+    ],
+    "correctAnswer": "Everton Stonehead",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: A Diploma Of Miseries",
+      "Plot point: Romantic coaching of chef",
+      "Topic: Employee challenges boss",
+      "Characters: Everton and Gareth",
+      "Correct: Everton Stonehead",
+      "1990s Restaurant Comedy",
+      "Story: Employee challenges boss",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39003",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "What do Gareth and Janice scheme to prevent after Everton creates his new signature dish?",
+    "answers": [
+      "A rival restaurant stealing Janice's recipes",
+      "Cyril buying the restaurant",
+      "Everton becoming too successful to keep at the restaurant",
+      "Gareth going on a cooking tour"
+    ],
+    "correctAnswer": "Everton becoming too successful to keep at the restaurant",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: Masterchef",
+      "Plot point: Suppressing colleague's success",
+      "Topic: New signature dish",
+      "Characters: Gareth Janice and Everton",
+      "Correct: Everton becoming too successful to keep at the restaurant",
+      "1990s Restaurant Comedy",
+      "Story: New signature dish",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39004",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "To which French city does Gareth travel to enter an international cookery competition?",
+    "answers": [
+      "Paris",
+      "Marseille",
+      "Bordeaux",
+      "Lyon"
+    ],
+    "correctAnswer": "Lyon",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: England Expects",
+      "Plot point: Cooking competition location",
+      "Topic: Series two finale",
+      "Characters: Gareth Blackstock",
+      "Correct: Lyon",
+      "1990s Restaurant Comedy",
+      "Story: Series two finale",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39005",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "What must Gareth try to win in Lyon to prove himself Britain's leading chef?",
+    "answers": [
+      "An international cookery competition",
+      "A Michelin restaurant auction",
+      "A regional wine contest",
+      "A televised dance competition"
+    ],
+    "correctAnswer": "An international cookery competition",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: England Expects",
+      "Plot point: Competition for professional chefs",
+      "Topic: British culinary reputation",
+      "Characters: Gareth Blackstock",
+      "Correct: An international cookery competition",
+      "1990s Restaurant Comedy",
+      "Story: British culinary reputation",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39006",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "Which appointment does Gareth miss just before Janice leaves and begins divorce proceedings?",
+    "answers": [
+      "A house valuation",
+      "Marriage counselling",
+      "A job interview",
+      "A television audition"
+    ],
+    "correctAnswer": "Marriage counselling",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: Gareth's True Love",
+      "Plot point: Failed attempt at relationship repair",
+      "Topic: Series three opening",
+      "Characters: Gareth and Janice",
+      "Correct: Marriage counselling",
+      "1990s Restaurant Comedy",
+      "Story: Series three opening",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39007",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "What family connection brings Renée into Gareth's kitchen team in the third series of Chef!?",
+    "answers": [
+      "She is Everton's sister",
+      "She is Janice's cousin",
+      "She is the new owner's daughter",
+      "She is Gareth's niece"
+    ],
+    "correctAnswer": "She is the new owner's daughter",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: Reeny/Renee",
+      "Plot point: New owner's daughter",
+      "Topic: Kitchen staffing",
+      "Characters: Cyril and Renee",
+      "Correct: She is the new owner's daughter",
+      "1990s Restaurant Comedy",
+      "Story: Kitchen staffing",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39008",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "What difficulty affects Gareth's dealings with restaurant diners as his marriage breaks down?",
+    "answers": [
+      "Loss of his sense of taste",
+      "Persistent forgetfulness",
+      "A recurring stammer",
+      "Severe mood swings"
+    ],
+    "correctAnswer": "Severe mood swings",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: Lessons In Talking",
+      "Plot point: Strained dining-room interactions",
+      "Topic: Divorce stress",
+      "Characters: Gareth Blackstock",
+      "Correct: Severe mood swings",
+      "1990s Restaurant Comedy",
+      "Story: Divorce stress",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39009",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "Who arrives at Le Chateau Anglais and worsens Gareth's mood as he copes with his failed marriage?",
+    "answers": [
+      "His father",
+      "His former schoolteacher",
+      "His brother",
+      "An estranged uncle"
+    ],
+    "correctAnswer": "His father",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: Love In The Air",
+      "Plot point: Family visit",
+      "Topic: Marriage collapse",
+      "Characters: Gareth and father",
+      "Correct: His father",
+      "1990s Restaurant Comedy",
+      "Story: Marriage collapse",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39010",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "At what kind of gathering does Gareth's childhood sweetheart reappear in the restaurant?",
+    "answers": [
+      "A christening",
+      "A wedding",
+      "A retirement party",
+      "A charity auction"
+    ],
+    "correctAnswer": "A wedding",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: Rochelle",
+      "Plot point: Romantic reunion",
+      "Topic: Restaurant celebration",
+      "Characters: Gareth and Rochelle",
+      "Correct: A wedding",
+      "1990s Restaurant Comedy",
+      "Story: Restaurant celebration",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39011",
+    "category": "Television",
+    "programme": "Chef!",
+    "question": "Which city is Rochelle hoping Gareth will join her in at the end of Chef!?",
+    "answers": [
+      "Lyon",
+      "Rome",
+      "Paris",
+      "Barcelona"
+    ],
+    "correctAnswer": "Paris",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy",
+      "Sitcom",
+      "Chef!",
+      "Programme: Chef!",
+      "BBC One",
+      "Lenny Henry",
+      "Episode: Paris? Jamaica?",
+      "Plot point: Rochelle travel plans",
+      "Topic: Series finale",
+      "Characters: Gareth and Rochelle",
+      "Correct: Paris",
+      "1990s Restaurant Comedy",
+      "Story: Series finale",
+      "Source: https://www.comedy.co.uk/tv/chef/episodes/"
+    ],
+    "dailyEligible": true
+  }
+];
+questions.push(...auditAdditions);
+if (new Set(questions.map(q => q.id)).size !== questions.length ||
+ new Set(questions.map(q => normalise(q.question))).size !== questions.length ||
+ questions.some(q => q.answers.length !== 4 ||
+   new Set(q.answers.map(normalise)).size !== 4 ||
+   q.answers.filter(a => a === q.correctAnswer).length !== 1 ||
+   q.tags.length < 14 || !q.tags.includes('Programme: ' + q.programme) ||
+   q.dailyEligible !== true)) throw Error('Pack 356 episode expansion invalid');
+module.exports = questions;
