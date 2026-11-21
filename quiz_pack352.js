@@ -5696,13 +5696,251 @@ const auditAdditions = [
       "Programme: The Return of Dogtanian"
     ],
     "dailyEligible": true
+  },
+  {
+    "id": "tv_38780",
+    "category": "Television",
+    "programme": "Bodger and Badger",
+    "question": "In Bodger and Badger (series 1, episode 5), whose relative visits Troff's Nosherama from Australia and disrupts the restaurant routine?",
+    "answers": [
+      "Miss Moon's sister",
+      "Mr Troff's aunt",
+      "Bodger's cousin",
+      "The mayor's daughter"
+    ],
+    "correctAnswer": "Mr Troff's aunt",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "Bodger and Badger",
+      "Programme: Bodger and Badger",
+      "BBC One",
+      "Live Action Puppetry",
+      "1989-1999",
+      "Episode: S1E05 Auntie Warnty",
+      "Episode story",
+      "Simon Bodger",
+      "Badger",
+      "Correct: Mr Troff's aunt",
+      "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
+      "Aunt Warnty",
+      "Australia",
+      "Nosherama visitor"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38781",
+    "category": "Television",
+    "programme": "Bodger and Badger",
+    "question": "In Bodger and Badger (series 2, episode 7), where do Simon and Badger struggle with a repeatedly unsuccessful window repair?",
+    "answers": [
+      "The restaurant kitchen",
+      "The school gymnasium",
+      "Mrs Trout's office",
+      "The vicar's house"
+    ],
+    "correctAnswer": "Mrs Trout's office",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "Bodger and Badger",
+      "Programme: Bodger and Badger",
+      "BBC One",
+      "Live Action Puppetry",
+      "1989-1999",
+      "Episode: S2E07 The Wonky Window",
+      "Episode story",
+      "Simon Bodger",
+      "Badger",
+      "Correct: Mrs Trout's office",
+      "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
+      "Wonky window",
+      "School headmistress",
+      "Handyman"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38782",
+    "category": "Television",
+    "programme": "Bodger and Badger",
+    "question": "In Bodger and Badger (series 2, episode 9), what is the real intruder trying to steal after Mrs Trout is mistakenly treated as a burglar?",
+    "answers": [
+      "The school dinner money",
+      "The headmistress's jewellery",
+      "A collection of old textbooks",
+      "The school trophies"
+    ],
+    "correctAnswer": "The school trophies",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "Bodger and Badger",
+      "Programme: Bodger and Badger",
+      "BBC One",
+      "Live Action Puppetry",
+      "1989-1999",
+      "Episode: S2E09 The Burglar",
+      "Episode story",
+      "Simon Bodger",
+      "Badger",
+      "Correct: The school trophies",
+      "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
+      "Fancy dress mistake",
+      "Real burglar",
+      "School trophies"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38783",
+    "category": "Television",
+    "programme": "Bodger and Badger",
+    "question": "In Bodger and Badger (series 5, episode 2), why does Badger devise a special plan to get beneath the flat's flooring?",
+    "answers": [
+      "He finds it hard to visit his new friend Mousey",
+      "He is hunting for a missing toy car",
+      "He wants to repair the water pipes",
+      "He is trying to hide from the police"
+    ],
+    "correctAnswer": "He finds it hard to visit his new friend Mousey",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "Bodger and Badger",
+      "Programme: Bodger and Badger",
+      "BBC One",
+      "Live Action Puppetry",
+      "1989-1999",
+      "Episode: S5E02 Under the Floorboards",
+      "Episode story",
+      "Simon Bodger",
+      "Badger",
+      "Correct: He finds it hard to visit his new friend Mousey",
+      "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
+      "Badger Mousey",
+      "Difficult visits",
+      "Floorboards"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38784",
+    "category": "Television",
+    "programme": "Bodger and Badger",
+    "question": "In Bodger and Badger (series 7, episode 17), what makes Vicky's last afternoon at the house difficult before she leaves?",
+    "answers": [
+      "Her drum kit is stolen",
+      "Mrs Dribelle tries to make her work",
+      "She loses a train ticket",
+      "She is locked out of the building"
+    ],
+    "correctAnswer": "Mrs Dribelle tries to make her work",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "Bodger and Badger",
+      "Programme: Bodger and Badger",
+      "BBC One",
+      "Live Action Puppetry",
+      "1989-1999",
+      "Episode: S7E17 Good Luck Vicky",
+      "Episode story",
+      "Simon Bodger",
+      "Badger",
+      "Correct: Mrs Dribelle tries to make her work",
+      "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
+      "Vicky farewell",
+      "Dribelle strict",
+      "Afternoon plans"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38785",
+    "category": "Television",
+    "programme": "Bodger and Badger",
+    "question": "In Bodger and Badger (series 7, episode 19), which cosmetic item belonging to Mrs Dribelle gets confused with Badger and Mousey's favourite food?",
+    "answers": [
+      "Lipstick",
+      "Hair dye",
+      "Beauty cream",
+      "Face powder"
+    ],
+    "correctAnswer": "Beauty cream",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "Bodger and Badger",
+      "Programme: Bodger and Badger",
+      "BBC One",
+      "Live Action Puppetry",
+      "1989-1999",
+      "Episode: S7E19 The Mashy Mushtake",
+      "Episode story",
+      "Simon Bodger",
+      "Badger",
+      "Correct: Beauty cream",
+      "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
+      "Beauty product",
+      "Mashed potato",
+      "Mixup"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_38786",
+    "category": "Television",
+    "programme": "Bodger and Badger",
+    "question": "In Bodger and Badger (series 9, episode 1), what condition is Seagull's Rest in just as the tourist-information officer arrives for her inspection?",
+    "answers": [
+      "The hotel has been sold to Mr Smart",
+      "A burst pipe has flooded every room",
+      "The hotel is closed for painting",
+      "Badger has left the hotel in a mess"
+    ],
+    "correctAnswer": "Badger has left the hotel in a mess",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Children's Television",
+      "Bodger and Badger",
+      "Programme: Bodger and Badger",
+      "BBC One",
+      "Live Action Puppetry",
+      "1989-1999",
+      "Episode: S9E01 Hello Mrs Melly",
+      "Episode story",
+      "Simon Bodger",
+      "Badger",
+      "Correct: Badger has left the hotel in a mess",
+      "Source: https://www.tvmaze.com/shows/30230/bodger-and-badger/episodeguide",
+      "Hotel inspection",
+      "Badger mess",
+      "Mrs Melly"
+    ],
+    "dailyEligible": true
   }
 ];
 questions.push(...auditAdditions);
-if (questions.length!==227 ||
+if (questions.length!==234 ||
  questions[0].id!=='tv_17200'||questions[61].id!=='tv_17261'||
  auditAdditions[0].id!=='tv_38615'||
- auditAdditions[auditAdditions.length-1].id!=='tv_38779'||
+ auditAdditions[auditAdditions.length-1].id!=='tv_38786'||
  new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>normalise(q.question))).size!==questions.length||
  questions.some(q=>q.answers.length!==4||new Set(q.answers.map(normalise)).size!==4||
