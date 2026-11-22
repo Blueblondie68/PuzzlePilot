@@ -1,6 +1,6 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 477: Ballykissangel (BBC One)
 // All six series, 1996–2001: 57 regular episodes plus 1997 Christmas special.
-// 105 unique questions on production, 24 cast/characters, main story arcs,
+// 126 audited questions on production, 24 cast/characters, main story arcs,
 // individual episodes, key events, the third-series transition and the final sixth series.
 // IDs tv_26374–tv_26478; no direct mixed Packs 1–20 overlap found.
 // Sources accessed on 17 November 2026:
@@ -3475,9 +3475,56 @@ const questions=[
     "dailyEligible": true
   }
 ];
-if(questions.length!==105||new Set(questions.map(q=>q.id)).size!==questions.length||
+
+// Focused whole-run audit: confirmed BAFTA/IFTA/NTA/TRIC results, major cast
+// and plot resolutions. Keep 105 original IDs, answers and tags unchanged.
+const AUDIT_ORIGINAL_COUNT=105;
+const AUDIT_FIRST_ID=42668;
+const auditFacts=`Which BAFTA category nominated Ballykissangel in 1997?|Drama Series|Drama Serial|Single Drama|Continuing Drama|Medium|1997 BAFTA Awards|Drama Series Nomination|British Academy|Joy Lale|BBC Northern Ireland|Television Awards|Not A Win
+Which BBC programme won the 1997 BAFTA Drama Series award ahead of Ballykissangel?|EastEnders|This Life|Hamish Macbeth|Our Friends in the North|Medium|1997 BAFTAs|EastEnders Winner|Drama Series Award|Nomination Result|Joy Lale|BBC One|Awards History
+Which producer was named on Ballykissangel's 1997 BAFTA Drama Series nomination?|Joy Lale|Kieran Prendiville|Sally Head|Nicola Shindler|Hard|Joy Lale|BAFTA Nomination|1997|Drama Series|Production Credit|BBC Northern Ireland|Behind The Scenes
+Who composed the theme and music for Ballykissangel and received a BAFTA nomination?|Shaun Davey|Murray Gold|Simon May|George Fenton|Medium|Shaun Davey|1997 BAFTA Craft|Original Music Nomination|Theme Composer|Irish Musician|Series Soundtrack|Programme Score
+Which craft category nominated Ballykissangel at the 1997 BAFTA Awards?|Original Music|Sound Fiction|Costume Design|Graphic Design|Medium|1997 BAFTA TV Craft|Original Music|Shaun Davey|British Academy|Music Score|Award Nomination|Not A Win
+Which television drama won the 1997 BAFTA Original Music award over Ballykissangel?|Moll Flanders|The Crow Road|Cruel Train|The Hanging Gale|Medium|Moll Flanders|1997 BAFTA Craft|Original Music Winner|Shaun Davey Nomination|Jim Parker|Award Result|Television Music
+Which award recognised Shaun Davey's Ballykissangel theme as a leading British television signature tune?|TRIC Award|Ivor Novello Award|Grammy Award|Mercury Prize|Medium|TRIC Award|Best UK TV Theme|Shaun Davey|Television Theme|Award Win|Signature Music|Composer Recognition
+Which Ballykissangel actress won Best Leading Performance on Television at the 2000 Irish Film and Television Awards?|Tina Kellegher|Dervla Kirwan|Victoria Smurfit|Deirdre Donnelly|Medium|2000 IFTA Awards|Tina Kellegher Winner|Niamh Quigley|Best Leading Performance|Acting Award|BBC Northern Ireland|Irish Television
+Which programme beat Ballykissangel to the 2000 Irish Film and Television Award for Best Television Drama?|Eureka Street|The Clinic|The Riordans|Glenroe|Medium|2000 IFTA Awards|Eureka Street Winner|Best Television Drama|Ballykissangel Nomination|Irish Television|BBC Northern Ireland|Drama Award
+Which Ballykissangel actor received a 1999 Irish Film and Television Award nomination for his leading television performance?|Tony Doyle|Stephen Tompkinson|Peter Hanly|Colin Farrell|Medium|Tony Doyle|1999 IFTA Nomination|Brian Quigley|Leading Performance|Irish Acting|Awards Record|BBC Drama
+Which Ballykissangel actor was nominated for Most Popular Actor at the 1998 National Television Awards?|Stephen Tompkinson|Tony Doyle|Peter Hanly|Don Wycherley|Medium|Stephen Tompkinson|1998 NTA Nomination|Most Popular Actor|Father Peter Clifford|Audience Awards|Royal Albert Hall|Acting Recognition
+Which award nomination did Ballykissangel receive at the 1998 National Television Awards?|Most Popular Drama Series|Most Popular Comedy Programme|Most Popular Newcomer|Most Popular Entertainment Programme|Medium|1998 National Television Awards|Most Popular Drama Series|Programme Nominee|Viewer Voting|BBC One|Audience Recognition|Not A Win
+On what date did Ballykissangel premiere on BBC One?|11 February 1996|5 January 1997|20 September 1998|15 April 2001|Medium|11 February 1996|Series One Premiere|BBC One|Programme Debut|First Transmission|1996|Television Timeline
+Which composer of Ballykissangel also created the music for the film Waking Ned Devine?|Shaun Davey|John Williams|Rachel Portman|Michael Nyman|Medium|Shaun Davey|Waking Ned Devine|Soundtrack Composer|Programme Music|Irish Film|BBC Theme|Creative Career
+Who portrayed Uncle Minto in the later series of Ballykissangel?|James Ellis|Tony Doyle|Owen Teale|Birdy Sweeney|Medium|James Ellis|Uncle Minto|Series Four And Five|Supporting Cast|A Few Dollars More|Character Actor|Guest Performer
+Which actor played Conor Devlin in Ballykissangel's fifth series?|Owen Teale|Lorcan Cranitch|Robert Taylor|Peter Caffrey|Medium|Owen Teale|Conor Devlin|Orla OConnell|Series Five|Romantic Story|Supporting Cast|Welsh Actor
+Whose son became trapped in a mine shaft during the Ballykissangel Christmas special?|Padraig O'Kelly's|Brian Quigley's|Brendan Kearney's|Father MacAnally's|Medium|Padraig OKelly|Kevin OKelly|Christmas Special|Mine Shaft Rescue|1997|As Happy As A Turkey On Boxing Day|Family Plot
+What unusual setting saw Ambrose Egan deliver his own baby in Ballykissangel?|Inside a car|In Fitzgerald's pub|On a fishing boat|At the village fête|Medium|Ambrose Egan|Niamh Egan|Kieran Birth|Car Delivery|Series Three|Family Milestone|Baby Story
+How did Garda Ambrose Egan die in Ballykissangel's fifth-series opening story?|He fell from a cliff after rescuing two tourists|He drowned while saving a child|He was killed in a road collision|He died of a heart attack while on duty|Hard|Ambrose Egan|Heroic Death|Cliff Rescue|Two Tourists|Series Five|Niamh Widowed|Hello And Farewell
+Which Ballykissangel character took over running Fitzgerald's pub after Brian Quigley decided to let it?|Oonagh Dooley|Orla O'Connell|Kathleen Hendley|Siobhan Mehigan|Medium|Oonagh Dooley|Fitzgeralds Pub|Brian Quigley|Series Five|Pub New Management|Niamh Departure|Family Business
+What offence had put Paul Dooley in prison before he joined his family in Ballykissangel?|Tax fraud|Bank robbery|Smuggling livestock|Burglary|Medium|Paul Dooley|Tax Fraud|Series Five|Behind Bars|Six Months Prison|Oonagh Dooley|Character Background`;
+const commonAuditTags=['Television','British Television','Programme: Ballykissangel','Ballykissangel',
+  'BBC One','Irish Village Drama','1996 to 2001','Written Quiz','Episode And Cast Research'];
+const auditQuestions=auditFacts.trim().split('\n').map((row,i)=>{
+ const parts=row.split('|').map(x=>x.trim());
+ if(parts.length!==13)throw Error('Ballykissangel audit row '+i+' fields='+parts.length);
+ const [question,correctAnswer,wrong1,wrong2,wrong3,difficulty,...specificTags]=parts;
+ const answers=[wrong1,wrong2,wrong3];
+ answers.splice((AUDIT_ORIGINAL_COUNT+i)%4,0,correctAnswer);
+ const tags=[...new Map([...commonAuditTags,correctAnswer,...specificTags].map(t=>[t.toLowerCase(),t])).values()];
+ return {id:'tv_'+String(AUDIT_FIRST_ID+i),category:'TV',topic:'Ballykissangel',
+   question,answers,correctAnswer,difficulty,tags,dailyEligible:true};
+});
+for(const q of questions){
+ if(!q.question.includes('Ballykissangel')){
+  q.question=q.question.startsWith('In which ')
+    ? 'In Ballykissangel, which '+q.question.slice(9)
+    : 'In Ballykissangel, '+q.question[0].toLowerCase()+q.question.slice(1);
+ }
+}
+questions.push(...auditQuestions);
+
+if(questions.length!==126||new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
- questions.some((q,i)=>q.id!=='tv_'+String(26374+i)||q.category!=='TV'||q.topic!=='Ballykissangel'||
+ questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(26374+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.category!=='TV'||q.topic!=='Ballykissangel'||
   q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
   q.answers.filter(a=>a===q.correctAnswer).length!==1||
   q.tags.length<15||new Set(q.tags).size!==q.tags.length||
