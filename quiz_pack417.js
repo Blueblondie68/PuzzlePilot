@@ -162,6 +162,24 @@
    `In All My Children, whose tampering with Adam Chandler's heart medication contributed to the confusion over Stuart's shooting?|David Hayward|Joe Martin|Jake Martin|Zach Slater|Medium|Adam Chandler|David Hayward|2009|heart medication|Stuart Chandler|shooting confusion|doctor misconduct`,
  );
 
+
+ // Daytime Emmy awards audit: original and earlier audited question IDs preserved.
+ const AWARDS_ORIGINAL_COUNT = rows.length;
+ const AUDIT_AWARDS_FIRST_ID = 42049;
+ rows.push(
+   `In All My Children, which actor won the 2001 Daytime Emmy for Outstanding Lead Actor for portraying the Chandler twins?|David Canary|Michael E Knight|Darnell Williams|Ray MacDonnell|Medium|David Canary|Adam Chandler|Stuart Chandler|2001 Daytime Emmy|lead actor|fifth lead win|dual characters`,
+   `In All My Children, who received the 2001 Daytime Emmy for Outstanding Supporting Actor as Tad Martin?|Michael E Knight|David Canary|Josh Duhamel|Vincent Irizarry|Medium|Michael E Knight|Tad Martin|2001 Daytime Emmy|supporting actor|acting recognition|award win|Martin family`,
+   `In All My Children, which actor earned the 2002 Daytime Emmy for Outstanding Supporting Actor as Leo du Pres?|Josh Duhamel|Cameron Mathison|Aiden Turner|Jacob Young|Medium|Josh Duhamel|Leo du Pres|2002 Daytime Emmy|supporting actor|Greenlee Smythe|acting award|performer career`,
+   `In All My Children, which two longtime cast members received Daytime Emmy Lifetime Achievement honours in 2004?|Ray MacDonnell and Ruth Warrick|David Canary and Susan Lucci|Julia Barr and Michael E Knight|James Mitchell and Debbi Morgan|Medium|Ray MacDonnell|Ruth Warrick|2004 Daytime Emmy|Lifetime Achievement|Joe Martin|Phoebe Tyler|veteran cast`,
+   `In All My Children, which actress won the 2005 Daytime Emmy for Outstanding Younger Actress as Bianca Montgomery?|Eden Riegel|Rebecca Budig|Alicia Minshew|Tamara Braun|Medium|Eden Riegel|Bianca Montgomery|2005 Daytime Emmy|younger actress|acting honour|Kane family|award year`,
+   `In All My Children, which actor received the 2009 Daytime Emmy for Outstanding Supporting Actor as Dr David Hayward?|Vincent Irizarry|Thorsten Kaye|Josh Duhamel|Cameron Mathison|Medium|Vincent Irizarry|David Hayward|2009 Daytime Emmy|supporting actor|doctor character|acting award|award year`,
+   `In All My Children, which creative team won the 2003 Daytime Emmy for Outstanding Drama Series Directing?|Directing team|Writing team|Hairstyling team|Casting team|Medium|2003 Daytime Emmy|directing|creative team|behind the scenes|programme production|award category|soap direction`,
+   `In All My Children, which visual design department won a Daytime Emmy in 2000 for its work on the soap?|Art Direction and Set Decoration|Costume Design|Makeup|Hairstyling|Medium|2000 Daytime Emmy|art direction|set decoration|scenic design|production award|Pine Valley sets|visual design`,
+   `In All My Children, which production category earned the programme a Daytime Emmy in 2002 for assembling the cast?|Casting|Lighting|Costumes|Music Composition|Medium|2002 Daytime Emmy|casting|ensemble selection|production department|behind the scenes|award win|performers`,
+   `In All My Children, which production category won the soap a Daytime Emmy in 2005 for its visual work on actors?|Makeup|Editing|Casting|Set Construction|Medium|2005 Daytime Emmy|makeup|appearance design|production award|creative team|visual work|soap filming`,
+   `In All My Children, which lighting-related production award did the programme win at the 2009 Daytime Emmys?|Outstanding Lighting Direction|Outstanding Writing Team|Outstanding Soundtrack|Outstanding Casting|Medium|2009 Daytime Emmy|lighting direction|studio illumination|technical achievement|production win|creative department|award category`,
+ );
+
  const questions = rows.map((row, index) => {
    const parts = row.split('|').map(part => part.trim());
    if (parts.length !== 13 || parts.some(part => !part)) {
@@ -184,7 +202,7 @@
      throw new Error(`Pack 417: expected 13 distinct tags at row ${index + 1}`);
    }
    return {
-     id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT}`,
+     id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : index < AWARDS_ORIGINAL_COUNT ? AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT : AUDIT_AWARDS_FIRST_ID + index - AWARDS_ORIGINAL_COUNT}`,
      category: 'Television',
      question,
      answers,
