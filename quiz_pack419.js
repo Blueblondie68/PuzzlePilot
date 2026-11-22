@@ -87,6 +87,35 @@ const rows = [
 `Which Albion Market novel dealt with the aftermath of the Sharma brothers' van fire?|Settling Debts|Ticket of Leave|Thorns and Roses|The Market Closes|Hard|Settling Debts|Ray Evans|third novel|Sharma van arson|Keith Naylor|restitution|tie in fiction`
 ];
 
+
+// Audit: additional verified storylines, cast and production history.
+// No verified programme awards found; do not invent awards questions.
+const ORIGINAL_COUNT = rows.length;
+const AUDIT_NEW_FIRST_ID = 42067;
+rows.push(
+  `In Albion Market, what happened to Keith Naylor's motorbike shortly after he passed his riding test?|It was stolen|It caught fire|It broke down|It was impounded|Medium|Keith Naylor|motorbike|driving test|episode 2|theft|1985|early episode`,
+  `In Albion Market, which young employee passed his motorcycle test during the opening episodes?|Keith Naylor|Tony Fraser|Duane Rigg|Jaz Sharma|Easy|Keith Naylor|motorcycle licence|1985|episode 2|personal milestone|market staff|Derek Owen assistant`,
+  `In Albion Market, whose family faced suspicion during Derek Owen's investigation of the early arson attack?|The Jessops|The Sharmas|The Riggs|The Ransomes|Medium|Derek Owen|Jessop family|arson investigation|1985|episode 2|market stall|suspected sabotage`,
+  `In Albion Market, what kind of charity event helped uncover the identity of the market arsonist?|A fun run|A jumble sale|A sponsored swim|A gala concert|Medium|1985|episode 3|charity fundraiser|hospital|arson investigation|local community|event`,
+  `In Albion Market, what public service was the charity fun run held to support?|The local hospital|The fire brigade|The public library|The ambulance station|Medium|episode 3|fundraising|hospital|charity fun run|early stories|1985|community help`,
+  `In Albion Market, who attempted to bribe market boss Derek Owen over Lynne Harrison's tenancy?|Roy Harrison|Larry Rigg|Raju Sharma|Morris Ransome|Medium|Roy Harrison|Derek Owen|Lynne Harrison|episode 4|stall allocation|bribe|1985`,
+  `In Albion Market, what expensive goods did Roy Harrison start selling after his release from prison?|Watches|Televisions|Jewellery boxes|Cameras|Medium|Roy Harrison|stolen goods suspicion|episode 5|market trading|watches|Lynne Harrison|1985`,
+  `In Albion Market, whose suspicions were raised that Roy Harrison's watches might be stolen?|Lynne Harrison|Brenda Rigg|Peggy Sagar|Lisa O'Shea|Medium|Lynne Harrison|Roy Harrison|episode 5|watch sales|stolen goods|family conflict|stall merchandise`,
+  `In Albion Market, which trader offered to import a shipment of goods for Roy Harrison?|Larry Rigg|Geoff Travis|Tony Fraser|Morris Ransome|Medium|Larry Rigg|Roy Harrison|episode 4|imported goods|business arrangement|1985|market trading`,
+  `In Albion Market, who became the cook hired by Peggy Sagar at the market cafe in 1986?|Paul O'Donnell|Phil Smith|Larry Rigg|Raju Sharma|Medium|Peggy Sagar|Paul O'Donnell|1986|cafe cook|staffing decision|food service|later episodes`,
+  `In Albion Market, which actor played the cook Paul O'Donnell?|Paul Beringer|Burt Caesar|Derek Hicks|Jonathan Barlow|Medium|Paul Beringer|Paul O'Donnell|1986|cafe employee|acting cast|Peggy Sagar|later character`,
+  `In Albion Market, which actress played Derek Owen's wife Barbara?|Lill Roughley|Carol Kaye|Barbara Wilshere|Noreen Kershaw|Medium|Lill Roughley|Barbara Owen|Derek Owen|1985 cast|married couple|market superintendent|character actor`,
+  `In Albion Market, which actress portrayed florist Geoff Travis's wife Eileen?|Barbara Pierson|Carol Kaye|Valerie Lilley|Paula Jacobs|Medium|Barbara Pierson|Eileen Travis|Geoff Travis|1985 cast|florist family|supporting role|actor identification`,
+  `In Albion Market, which actress played stallholder Maureen Nicholls?|Linda Polan|Noreen Kershaw|Valerie Lilley|Carol Kaye|Medium|Linda Polan|Maureen Nicholls|1985 cast|stallholder|Jessop family|market community|performer`,
+  `In Albion Market, who portrayed the Jessop family uncle Ralph?|Howard Lloyd-Lewis|Bernard Spear|David Hargreaves|Antony Booth|Medium|Howard Lloyd-Lewis|Ralph Jessop|Maureen Nicholls|1985 cast|market family|early story|actor`,
+  `In Albion Market, which actor portrayed teenage mother Louise Todd?|Kelly Lawrence|Nimmy March|Rebecca Lock|Barbara Wilshere|Medium|Kelly Lawrence|Louise Todd|1986|abandoned baby|Jenny|young mother|casting`,
+  `In Albion Market, which couple married during the concluding storyline in 1986?|Keith Naylor and Louise Todd|Derek Owen and Ly Nhu Chan|Jaz Sharma and Meena|Tony Fraser and Lisa O'Shea|Medium|Keith Naylor|Louise Todd|final storyline|1986|marriage|market deputy|series finale`,
+  `In Albion Market, which writer later known for Band of Gold worked as script editor during the production overhaul?|Kay Mellor|Peter Whalley|Andrew Lynch|Stephen Lowe|Medium|Kay Mellor|script editing|David Liddiment|Granada|1986|production overhaul|writing career`,
+  `In Albion Market, which producer said the production team rewrote and reshot material while trying to rescue the soap?|David Liddiment|Bill Podmore|Gareth Jones|Denis Parkin|Medium|David Liddiment|production overhaul|rewrites|reshoots|1986|creative changes|Granada interview`,
+  `In Albion Market, which ITV regions shifted the Friday instalment into a Sunday double bill?|LWT and TVS|Granada and Yorkshire|Central and Border|Anglia and Tyne Tees|Hard|London Weekend Television|TVS|schedule reshuffle|Sunday double bill|1986|regional ITV|broadcast changes`,
+  `In Albion Market, which comedy series was a major BBC ratings rival during the soap's original run?|Open All Hours|Only Fools and Horses|The Young Ones|Hi-de-Hi|Medium|BBC competitor|Open All Hours|1985 ratings|Sunday slot|scheduling|viewing figures|British comedy`,
+);
+
 const questions = rows.map((row, index) => {
   const parts = row.split('|').map(part => part.trim());
   if (parts.length !== 13 || parts.some(part => !part)) {
@@ -109,7 +138,7 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 419: expected 13 distinct tags at row ${index + 1}`);
   }
   return {
-    id: `tv_${FIRST_ID + index}`,
+    id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT}`,
     category: 'Television',
     question,
     answers,
