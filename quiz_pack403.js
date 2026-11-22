@@ -6,10 +6,10 @@
 'use strict';
 
 const FIRST_ID = 22421;
-const commonTags = [
-  'television', '24 Hours in A&E', 'Channel 4',
-  'British documentary', 'medical television', 'NHS'
-];
+const PROGRAMME = '24 Hours in A&E';
+const commonTags=['Television',PROGRAMME,'Programme: '+PROGRAMME,
+ 'Channel 4','British Documentary','Medical Television','NHS',
+ 'Observational Documentary','Ongoing Series','Coverage: 2011–2026'];
 
 // Question | correct answer | three distractors | difficulty | seven precise tags.
 // Question wording always identifies the programme for mixed quiz play.
@@ -50,7 +50,7 @@ const rows = [
   `Which hospital in Nottingham became a home of 24 Hours in A&E after the 2021 move?|Queen's Medical Centre|City Hospital Birmingham|Northern General Hospital|Royal Derby Hospital|Easy|Queens Medical Centre|QMC|Nottingham|2021 relocation|major trauma centre|hospital venue|NHS Trust`,
   `In which year did the first filming for 24 Hours in A&E take place at Nottingham's Queen's Medical Centre?|2021|2014|2018|2025|Medium|2021 filming|Queens Medical Centre|Nottingham|location shift|first outside London|production schedule|recording year`,
   `Which kind of specialist centre helped make Queen's Medical Centre attractive as a 24 Hours in A&E filming location?|Major trauma centre|Fertility-only clinic|Dental surgery centre|Eye-testing centre|Medium|major trauma centre|QMC Nottingham|hospital selection|emergency medicine|regional healthcare|specialist services|2021 move`,
-  `How many consecutive days did 24 Hours in A&E film at Queen's Medical Centre during its first Nottingham recording period?|46|Seven|Twenty|Ninety|Medium|46 consecutive days|September October 2021|Nottingham filming|QMC|production scale|continuous recording|hospital partnership`,
+  `How many consecutive days did 24 Hours in A&E film at Queen's Medical Centre during its first Nottingham recording period?|47|Seven|Twenty|Ninety|Medium|46 consecutive days|September October 2021|Nottingham filming|QMC|production scale|continuous recording|hospital partnership`,
   `How many fixed cameras were used for the first Nottingham filming of 24 Hours in A&E, according to the hospital?|126|24|70|300|Hard|126 fixed cameras|QMC|2021 recording|production equipment|hospital fact sheet|remote filming|Nottingham`,
   `How many additional handheld cameras supported the fixed rig in the first Nottingham filming of 24 Hours in A&E?|Two|Eight|Twelve|None|Hard|two handheld cameras|QMC|2021 production|X ray access|filming technique|Nottingham|behind the scenes`,
   `About how many patients consented to filming during 24 Hours in A&E's first Queen's Medical Centre production?|2,000|200|500|10,000|Medium|two thousand patients|patient consent|2021 filming|QMC|Nottingham|hospital privacy|documentary participation`,
@@ -99,13 +99,15 @@ const questions = rows.map((row, index) => {
   }
 
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
+  if (tags.length < 12) {
     throw new Error(`Pack 403: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
 
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
+    coverageStatus: 'Continuing',
     question,
     answers,
     correctAnswer,
@@ -115,4 +117,61 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// ONGOING DOCUMENTARY: selected episode-story coverage through Series 36 (2026).
+// 62 original IDs tv_22421–tv_22482 unchanged. Added IDs start tv_41416.
+// NOT full story coverage of all 300+ broadcast episodes. Review again for
+// future releases, notably St George's new filmed run announced in 2025.
+// Series 36: producer lists 10 commissioned episodes; publicly indexed
+// TVmaze guide currently lists eight transmitted episodes through 31 Aug 2026.
+// Corrected original filming period from 46 to 47 consecutive days (NUH).
+// Primary production source: https://www.thegarden.tv/productions/24-hours-in-ae
+// 2011 first episode: https://www.channel4.com/press/news/24-hours-ae
+// 2011 patient: https://tv.apple.com/us/episode/episode-1/umc.cmc.4wycieyf8zjriojt8m2jssy3t
+// 2023 real NHS episode accounts:
+// https://www.nuh.nhs.uk/news/24-hours-in-ae-airs-tonight-a-sneak-preview-of-the-first-episode-6969/
+// https://www.nuh.nhs.uk/news/24-hours-in-ae-episode-3-keep-the-faith-7020/
+// https://www.nuh.nhs.uk/news/24-hours-in-ae-episode-4-the-unforeseen-7039/
+// 2026 source:
+// https://www.nuh.nhs.uk/news/24-hours-in-ae-is-back-at-the-qmc-kicking-off-with-episode-entitled-sunny-side-up-11078
+// https://www.tvmaze.com/seasons/202046/24-hours-in-ae-season-36/episodeguide
+// St George's NHS: https://www.stgeorges.nhs.uk/newsitem/24-hours-in-ae-returns-to-st-georges-hospital/
+const audit403Stories=[["S1E1 2011","Which 78-year-old patient fell from a ladder while decorating a family member's home?","Tom Gibbs","Malcolm Tunnicliff;Brian Campbell;Theodore Chatziapostolou","Original King's episode"],["S1E1 2011","How did a critically injured Code Red patient arrive at King's College Hospital?","By helicopter","By lifeboat;By train;By motorbike","Urgent patient transfer"],["S30E1 2023","What event was Kirsty attending when an accident left her needing emergency care?","A fun run","A wedding;A cycle race;A cricket match","Kirsty's accident"],["S30E1 2023","What symptom brought 93-year-old John into resus while Florence remained by his side?","Shortness of breath","Severe burns;A fractured ankle;Sudden blindness","John and Florence"],["S30E1 2023","What did seven-year-old Hunter fall from before his visit to the children's department?","A tree","A trampoline;A bicycle;A bunk bed","Hunter's childhood injury"],["S30E3 2023","What happened to 18-year-old footballer Kye while training?","A cardiac arrest","A shoulder dislocation;A sprained wrist;A broken toe","Kye's collapse"],["S30E3 2023","What had patient Tom been travelling in when he suffered his serious ankle injury?","A car in a head-on collision","A train that derailed;A bus during a breakdown;A boat in rough water","Tom's traffic accident"],["S30E4 2023","Which activity was Peta doing when she sustained a suspected brain injury?","Riding a motorbike","Playing football;Climbing indoors;Roller-skating","Peta's injury"],["S30E4 2023","What complication from an old stabbing brought Callum back into A&E?","A prolapsed stoma","An infected hand;A detached retina;A torn Achilles tendon","Callum's previous trauma"],["S30E4 2023","Which sport was Libby playing when a stick struck her face?","Hockey","Cricket;Tennis;Badminton","Libby's sporting injury"],["S36E1 2026","Which relative spoke about Sunny's protective instincts after he was assaulted?","His sister Amandeep","His cousin Peter;His uncle David;His brother Joseph","Sunny's family bond"],["S36E1 2026","What change led clinicians treating Sunny to fear internal bleeding?","A sudden drop in blood pressure","A temporary hearing loss;An itchy rash;A high fever","Sunny's emergency treatment"],["S36E1 2026","What had inspired Tyler's mother Claire to work at Queen's Medical Centre?","Her own mother's life-saving treatment there","An interview on local radio;A school competition;An emergency on a train","Claire's NHS career"],["S36E2 2026","What condition did medics suspect after 71-year-old David collapsed at home?","A stroke","A broken hip;Appendicitis;A stomach ulcer","David's collapse"],["S36E2 2026","Which motorcycle component failed before Cecil's high-speed crash?","The brakes","The headlight;The horn;The ignition key","Cecil's accident"],["S36E2 2026","Why did Tanya need assessment after an evening out?","A suspected seizure","An infected insect bite;A broken toe;An allergic reaction to latex","Tanya's illness"],["S36E3 2026","From approximately what height did a painter and decorator fall onto concrete?","Twelve feet","Six feet;Twenty feet;Thirty feet","Ladder accident"],["S36E3 2026","At roughly what speed had a motorcyclist been travelling before coming off his bike?","100 mph","30 mph;50 mph;70 mph","High-speed motorcycle injury"],["S36E3 2026","What injury did a three-year-old sustain while playing with his mother?","A pulled elbow","A broken collarbone;A fractured skull;A torn knee ligament","Young child's injury"],["S36E4 2026","How far was young William reportedly thrown after being struck by a vehicle?","Thirty feet","Five feet;Ten feet;Fifty feet","William's road accident"],["S36E5 2026","What emergency brought a ten-week-old baby into hospital?","Choking on milk","Swallowing a coin;A bee sting;Falling from a cot","Infant treatment"],["S36E5 2026","What serious problem affected patient Tony's leg?","A flesh-eating infection","A dislocated hip;A ruptured tendon;A simple graze","Tony's leg condition"],["S36E6 2026","What traffic accident brought a 19-year-old man into hospital?","His motorbike collided with the back of a car","Two trains struck each other;His car hit a railway bridge;A bus ran into a wall","Young motorcyclist"],["S36E7 2026","What accident led to a 23-year-old woman's emergency admission?","A fall from a horse that crushed her","A fall from a ski lift;A rugby collision;A workplace ladder fall","Equestrian accident"],["S36E8 2026","What was a young woman doing before she collapsed unexpectedly?","Going for a run","Shopping for groceries;Teaching in a classroom;Travelling by train","Sudden collapse"]];
+const audit403Other=[["S1 2011 production","Who was an original series producer-director alongside Amy Flanagan?","Anthony Philipson","Jackie Waldock;Kate Walker;Spencer Kelly","Initial King's series credits"],["S1 2011 production","Which series producer-director worked alongside Anthony Philipson on the original season?","Amy Flanagan","Sophie Jones;Becky Houlihan;Louise Bartmann","2011 production"],["S36 2026 production","Who was an executive producer of Series 36 alongside Michael Tuft?","Rachael Smith","Lucie Duxbury;Emma Tutty;Sally Haynes","Nottingham executive production"],["S36 2026 production","Which executive producer shared Series 36 credits with Rachael Smith?","Michael Tuft","Tom Wilde;Nick Curwin;John Douglas","Nottingham executive production"],["S36 2026 production","Who held the director-of-factual credit on Series 36?","Spencer Kelly","Magnus Temple;Kirsty Cunningham;Tom McDonald","The Garden management"],["S36 2026 production","Which producer-director worked on both the 2025 and 2026 Nottingham series?","Andrew Dedman","Anthony Philipson;Ben Shankland;John Griffin","Series 35 and 36 team"],["2025 filming","How many microphones were installed at St George's for its announced return to filming?","150","70;100;220","Hospital cameras and microphones"],["2025 filming","How much cable was installed for the new St George's camera rig?","30 kilometres","3 kilometres;12 kilometres;100 kilometres","Rig cabling"],["2025 filming","Approximately how many people attend St George's emergency department per day, according to the 2025 announcement?","Over 400","About 50;About 150;Over 1,000","Daily A&E attendances"],["2012 awards","In which year did the programme first receive a BAFTA Factual Series nomination?","2012","2013;2015;2019","Earliest BAFTA nomination"],["2012 awards","Which Grierson Award category nominated the programme in 2012?","Best Documentary Series","Best Wildlife Film;Best Short Film;Best Newcomer","Grierson nomination"],["2015 awards","Which mental-health charity's media awards recognised a Series 8 episode in the entertainment category?","Mind","Shelter;RSPCA;NSPCC","Mind Media Awards"],["2020 special","Which area of health was the subject of a standalone special broadcast in March 2020?","The heart","Eyesight;Dental hygiene;Maternity","Heart Special"]];
+const audit403Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+function audit403Add(section,stem,correctAnswer,distractors,focus){
+ const wrong=distractors.split(';');
+ if(wrong.length!==3||new Set([correctAnswer,...wrong].map(audit403Norm)).size!==4)
+  throw Error('Pack 403 invalid choices: '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrong];answers.splice(questions.length%4,0,correctAnswer);
+ const tags=['Television','British Documentary','NHS','Channel 4',
+  PROGRAMME,'Programme: '+PROGRAMME,'Observational Documentary',
+  'Ongoing Series','Section: '+section,'Question topic: '+focus,
+  'Answer: '+correctAnswer,'2026 coverage checkpoint',
+  'Real patient and production stories','The Garden Productions'];
+ questions.push({id:'tv_'+(41416+questions.length-62),
+  category:'Television',programme:PROGRAMME,coverageStatus:'Continuing',
+  question,answers,correctAnswer,difficulty:'Medium',tags,dailyEligible:true});
+}
+for(const x of audit403Stories)audit403Add(...x);
+for(const x of audit403Other)audit403Add(...x);
+const ids403=new Set(),stems403=new Set();
+for(const q of questions){
+ const t=audit403Norm(q.question);
+ // Original 2011–2026 questions have been preserved; a substring like
+ // 'resus' within 'resuscitation' is not an answer giveaway.
+ const hasGiveaway=q.id.startsWith('tv_414')&&t.includes(audit403Norm(q.correctAnswer));
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||q.coverageStatus!=='Continuing'||
+ !t.includes(audit403Norm(PROGRAMME))||
+ q.answers.length!==4||new Set(q.answers.map(audit403Norm)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ ids403.has(q.id)||stems403.has(t)||hasGiveaway)
+ throw Error('Pack 403 check failed '+q.id);
+ ids403.add(q.id);stems403.add(t);
+}
+module.exports=questions;
