@@ -5,10 +5,10 @@
 'use strict';
 
 const FIRST_ID = 22592;
-const commonTags = [
-  'television', '60 Minute Makeover', 'ITV',
-  'British lifestyle television', 'home makeover', 'interior design'
-];
+const PROGRAMME='60 Minute Makeover';
+const commonTags=['Television',PROGRAMME,'Programme: '+PROGRAMME,'ITV',
+ 'Quest Red','British Lifestyle Television','Home Makeover','Interior Design',
+ 'Original run: 2004–2014','2018 revival'];
 
 // Question | correct answer | three distractors | difficulty | seven precise tags.
 // Original timed challenge and later full-day version are kept distinct.
@@ -85,12 +85,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 406: repeated answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 406: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 406: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -100,4 +101,50 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// 60 MINUTE MAKEOVER audit: 2004–2014 ITV editions + 2018 Quest Red revival.
+// Original IDs tv_22592–tv_22643 unchanged. Added IDs begin tv_41513.
+// Story gaps: episode-specific renovations, recipients, design concepts and
+// changes in production format. Not all historical episodes individually covered.
+// A new ITV revival was reported in March 2024, but no later broadcast run
+// was verified during the Nov 2026 audit. Check for confirmed future releases.
+// Original 2004 series: https://tubitv.com/en-gb/series/0300004151/60-minute-makeover
+// ITV Peter Andre episode listings: https://www.itv.com/watch/60-minute-makeover/1a4698
+// ITV Series 11 episodes: https://www.itv.com/watch/60-minute-makeover/1a4698/1a4698a0548
+// Official 2018 Discovery archive: https://www.discoveryuk.com/series/60-minute-makeover-with-peter-andre/
+// 2018 commission: https://www.c21media.net/news/quest-returns-to-shiver-for-makeover/
+// 2018 format interview: https://www.housebeautiful.com/uk/decorate/looks/news/a3242/anna-ryder-richardson-60-minute-makeover/
+// 2024 prospective revival (not counted as a broadcast):
+// https://www.tvzoneuk.com/post/60minutemakeover-itvreboot-report
+const audit406Rows=[["2004 — Series 1 E3 North Finchley","Which interior designer renovated Natasha and Richard's home in North Finchley?","Stephanie Dunning","Sophie Robinson","Linda Barker","Julia Kendell","Original series casting and North Finchley","Designer"],["2004 — Series 1 E4 Warwick","What American television series inspired Richard Randall's decorating theme in Warwick?","Sex and the City","Friends","The Sopranos","Will and Grace","Warwick design brief","Makeover story"],["2004 — Series 1 E8 Chertsey","Which fictional spy provided the inspiration for Richard Randall's Chertsey bachelor pad?","James Bond","Jason Bourne","George Smiley","Jack Reacher","Chertsey flat design theme","Makeover story"],["2004 — Series 1 E9 New Mills","Which father and daughter were the recipients of the surprise makeover in New Mills?","Dave and Emma","Paul and Andy","Doug and Brenda","Tim and Tracey","New Mills family","Makeover story"],["2004 — Series 1 E10 Milton Keynes","What was the first name of the single mother whose two-bedroom home was renovated in Milton Keynes?","Kayti","Rachel","Natasha","Joanne","Milton Keynes homeowner","Makeover story"],["2004 — Series 1 E12 High Wycombe","What kind of single-storey property was the team transforming in High Wycombe?","A bungalow","A barn conversion","A houseboat","A terraced townhouse","High Wycombe home type","Makeover story"],["2004 — Series 1 E13 Birmingham","Which couple welcomed a home makeover in Birmingham before their baby's arrival?","Surinda and Bhutta","Paul and Andy","Ashley and Nadine","Barbara and Michael","Birmingham family preparing for a baby","Makeover story"],["2004 — Series 1 E14 Caterham","How many rabbits lived with the young couple helped by the team in Caterham?","Five rabbits","Two rabbits","Three rabbits","Ten rabbits","Caterham family pets","Makeover story"],["2004 — Series 1 E16 Brighton","Which interior designer led the makeover of a student house in Brighton?","Orianna Fielding-Banks","Stephanie Dunning","Anna Ryder Richardson","Linda Barker","Brighton student property","Designer"],["2004 — Series 1 E18 Salford","What atmosphere did Richard Randall create for Ashley and Nadine's terrace in Salford?","A party palace","A French farmhouse","A seaside cottage","A minimalist office","Salford entertaining space","Makeover story"],["2004 — Series 1 E19 Southport","Which interior designer renovated a dated house in Southport?","Derek Taylor","Ben Hillman","John Amabile","Sophie Robinson","Southport timewarp property","Designer"],["2004 — Series 1 E20 Knebworth","What sort of historic property featured in the Knebworth renovation?","A 400-year-old thatched cottage","A Victorian railway station","A Georgian town hall","A modern concrete apartment","Knebworth listed historic house","Makeover story"],["2013 — ITV Series 10 E8 Tollesbury","What decorative style was chosen for a former serviceman's lounge and bedroom in Tollesbury?","An oriental haven","A Nordic chalet","A Hollywood cinema","An industrial loft","Tollesbury style brief","Makeover story"],["2013 — ITV Series 10 E9 Bracknell","Which foster-carer couple received a bedroom and bathroom transformation in Bracknell?","Barbara and Michael","Doug and Brenda","Tim and Tracey","Ashley and Nadine","Bracknell foster carers","Makeover story"],["2013 — ITV Series 10 E10 Faversham","Which retired publicans were surprised with a lounge, dining room and kitchen makeover in Faversham?","Doug and Brenda","Dave and Emma","Surinda and Bhutta","Paul and Andy","Faversham retired publicans","Makeover story"],["2013 — ITV Series 10 E13 Liverpool","Which science-fiction fan had his bedroom and lounge revamped in Liverpool?","Ian Sime","David Sibley","Andy Smith","Steve Barron","Liverpool sci-fi fan","Makeover story"],["2013 — ITV Series 10 E14 Herne Bay","Which regional American decorating style did Ben Hillman introduce to a bedroom and office in Herne Bay?","New England","Tex-Mex","Art Deco Miami","California mid-century","Herne Bay design style","Makeover story"],["2013 — ITV Series 10 E15 Maidstone","Which two rooms did Linda Barker swap around in Linda Wheatley's Maidstone home?","The lounge and dining room","The bathroom and loft","The kitchen and garage","The hall and conservatory","Maidstone room layout","Makeover story"],["2013 — ITV Series 10 E16 Huntingdon","Which part of the world inspired the tropical makeover in Huntingdon?","The Caribbean","Scandinavia","The Alps","East Asia","Huntingdon tropical scheme","Makeover story"],["2013 — ITV Series 10 E20 Earls Barton","Which firefighter and 1940s enthusiast received a nostalgic makeover in Earls Barton?","David Sibley","Ian Sime","Barry Toon","Steve Barron","Earls Barton 1940s home","Makeover story"],["2014 — ITV Series 11 E12 Wandsworth","What surprising material did Ben Hillman use to replace a sofa in Wandsworth?","Wooden pallets","Glass bricks","Paving slabs","Metal fencing","Wandsworth furniture experiment","Makeover story"],["2014 — ITV Series 11 Accrington","For how many relatives did Linda Barker have to provide seating in the Accrington project?","A family of sixteen","A family of four","A family of eight","A family of thirty","Accrington family seating","Makeover story"],["2014 — ITV Series 11 Forest Hill","Which foster carer in Forest Hill received a colourful renovation designed by Linda Barker?","Catherine Bademosi","Claire Brown","Joanne Clark","Jayne Gibbins","Forest Hill foster carer","Makeover story"],["2018 — Quest Red Episode 1","Which cancer survivor who helps women in need received a Greater Manchester makeover?","Sam Morris","Caroline Hills","Kay Brown-Sarr","Nicki Price","Manchester charity supporter","Makeover story"],["2018 — Quest Red Episode 2","Approximately how many foster children had lived in Kay Brown-Sarr's house over the years?","More than 200 children","Around 20 children","Around 50 children","More than 500 children","South Wales foster-family history","Makeover story"],["2018 — Quest Red Episode 3","What was Andy Smith's role in the Armed Forces before the team helped him in Kent?","Army sergeant","Royal Navy admiral","RAF pilot","Army surgeon","Andy Smith forces and community work","Makeover story"],["2018 — Quest Red Episode 4","What practical need drove the renovation of Debbie Holloway's West London home?","Wheelchair accessibility","A professional music studio","A home bakery kitchen","Childproofing for newborn twins","Debbie Holloway accessible home","Makeover story"],["2018 — Quest Red Episode 5","Which medical condition was Val Liles living with when her bungalow was renovated?","Multiple sclerosis","Parkinson's disease","Rheumatoid arthritis","Cystic fibrosis","Val Liles East Sussex bungalow","Makeover story"],["2018 — Quest Red Episode 6","Which Staffordshire charity fundraiser was given a family retreat with his sons?","Barry Toon","Tim Sandy","Ian Sime","David Sibley","Barry Toon with his sons","Makeover story"],["2018 — Quest Red Episode 7","In which Greater Manchester town did the team surprise fundraiser Angela Wild?","Stalybridge","Stockport","Bolton","Wigan","Angela Wild living room","Makeover story"],["2018 — Quest Red Episode 8","Where did Peter Andre and Anna Ryder Richardson renovate Tim and Tracey Sandy's living-dining room?","Sittingbourne","Tunbridge Wells","Basingstoke","Dartford","Tim and Tracey Sandy cancer charity","Makeover story"],["2018 — Quest Red Episode 9","What hotel-inspired style did John Amabile create for widow Joanne Clark's bedroom?","Boutique hotel style","A budget hostel style","A cruise-ship cabin","A country pub snug","Joanne Clark bedroom design","Makeover story"],["2018 — Quest Red Episode 11","What New York-inspired feature did Ben Hillman plan for former police officer Steve Barron's garden?","A garden man cave","A rooftop greenhouse","A subway-themed tunnel","A bicycle repair garage","Steve Barron New York style garden","Makeover story"],["2018 — Quest Red Episode 13","Which interior finish did Linda Barker incorporate into expectant mother Jayne Gibbins's makeover?","Wood panelling","Mirrored tiles","Exposed concrete","Metal shutters","Jayne Gibbins cosy family interior","Makeover story"],["2018 — Quest Red Episode 15","Which Hampshire homeowner received a modernisation of her cluttered lounge and bedroom?","Caroline Hills","Sam Morris","Debbie Holloway","Angela Wild","Hampshire decluttering project","Makeover story"],["2018 — Quest Red Episode 16","Which pair of styles did John Amabile envision for Laura Flaherty's home in Leigh?","Scandi shabby chic and Oriental opulence","Victorian Gothic and Regency formal","Tuscan rustic and nautical industrial","Minimalist white and American diner","Laura Flaherty design themes","Makeover story"],["2018 — Quest Red Episode 17","Which part of Claire Brown's house was Linda Barker challenged to rethink in the Midlands?","The entire ground floor","The roof and attic","The basement only","The front garden","Claire Brown full-floor renewal","Makeover story"],["2018 — Quest Red Episode 18","How many bedrooms did John Amabile plan to renovate for Andrea and Paul Elliott in Salford?","Three bedrooms","One bedroom","Two bedrooms","Five bedrooms","Salford rugby family top-floor makeover","Makeover story"],["2018 — Quest Red Episode 19","Who received a wheelchair-friendly kitchen and updated bedroom in a Kent makeover?","Nicki Price","Val Liles","Sophie Edwards","Angie Franco","Kent accessible kitchen","Makeover story"],["2018 — Quest Red Episode 20","For roughly how long had Christine Rogers's West Sussex home gone without major updating?","More than twenty years","About two years","About five years","Over sixty years","Christine Rogers long-overdue refurbishment","Makeover story"],["2018 — Broadcast history","How many episodes were commissioned for the Peter Andre-led Quest Red revival?","Twenty","Six","Twelve","Forty","Quest Red 2018 series length","Broadcast"]];
+const audit406Norm=x=>String(x).normalize('NFKC').toLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+for(const [episode,stem,correctAnswer,w1,w2,w3,focus,type] of audit406Rows){
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[w1,w2,w3];answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit406Norm)).size!==4)throw Error('Pack 406 duplicate options for '+stem);
+ const tags=['Television','British Lifestyle Television','Home Makeover',
+   PROGRAMME,'Programme: '+PROGRAMME,'ITV and Quest Red','Interior Design',
+   'Episode: '+episode,'Question category: '+type,
+   'Individual story: '+focus,'Correct answer: '+correctAnswer,
+   'Themed room makeover','Presenter and designers','Format history: 2004–2018'];
+ questions.push({id:'tv_'+(41513+questions.length-52),
+  category:'Television',programme:PROGRAMME,
+  question,answers,correctAnswer,difficulty:'Medium',tags,dailyEligible:true});
+}
+const allIDs406=new Set(),allStems406=new Set();
+for(const q of questions){
+ const stem=audit406Norm(q.question);
+ const isNew=Number(q.id.slice(3))>=41513;
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||!stem.includes(audit406Norm(PROGRAMME))||
+ q.answers.length!==4||new Set(q.answers.map(audit406Norm)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ allIDs406.has(q.id)||allStems406.has(stem)||
+ (isNew&&stem.includes(audit406Norm(q.correctAnswer))))
+ throw Error('Pack 406 module audit failed at '+q.id);
+ allIDs406.add(q.id);allStems406.add(stem);
+}
+module.exports=questions;
