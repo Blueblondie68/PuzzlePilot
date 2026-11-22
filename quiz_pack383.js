@@ -249,7 +249,7 @@ for (const item of questionBank) {
 // Programme stays PARTIAL until Packs 384–385 are audited.
 // New questions start at tv_40604.
 const AUDIT383_appendix=`In Appendix Man, which newspaper controversy forces Frost to return to his old Black Farm case?|A wrongful-conviction claim|A campaign about motorway safety|Allegations of election fraud|A missing-person appeal|Appendix Man|Series 6|Reopened murder investigation
-In Appendix Man, who joins Frost's investigation as a newly qualified detective sergeant?|Hazel Wallace|Maureen Lawson|Liz Maud|Ronnie Lonnegan|Appendix Man|Series 6|Returning policewoman
+In Appendix Man, which actor played art collector Lester Bryce-Jones?|Dominic Letts|Nicky Henson|Robert Glenister|Philip Jackson|Appendix Man|Series 6|Lester Bryce-Jones guest actor
 In Appendix Man, what crime had originally accompanied the Black Farm murders?|Theft of valuable paintings|Armed robbery of a post office|Smuggling rare manuscripts|A series of car thefts|Appendix Man|Series 6|Black Farm art theft
 In Appendix Man, what is the first name of Debbie Viner's neighbour who secretly trades artworks?|Lester|Ian|David|Gerry|Appendix Man|Series 6|Art dealer Bryce-Jones
 In Appendix Man, what had Lester Bryce-Jones taken shortly before his death?|Alcohol and painkillers|A dangerous sports supplement|An experimental heart medication|An overdose of sleeping tablets alone|Appendix Man|Series 6|Collector's risky behaviour
@@ -261,7 +261,7 @@ In One Man's Meat, whom does Frost intend to shame publicly after a girl dies by
 In One Man's Meat, what charge does Frost consider pursuing after being unable to prove the assault?|Kerb crawling|Illegal firearm possession|Insurance fraud|Criminal trespass|One Man's Meat|Series 6|Alternative prosecution
 In One Man's Meat, what is the name of the missing environmental officer's wife?|Naomi|Marion|Leonie|Tracy|One Man's Meat|Series 6|Warren Barber's wife
 In One Man's Meat, who threatens to report the drug-smuggling operation after learning of the murder?|Gerry Ryan|Tom Haliday|Alan Deering|Rickie Bayley|One Man's Meat|Series 6|Factory owner's remorse
-In One Man's Meat, from which Dutch city does the meat factory smuggle illegal drugs?|Amsterdam|Rotterdam|The Hague|Utrecht|One Man's Meat|Series 6|Drug-smuggling route`;
+In One Man's Meat, which actor portrayed Jane Owens's friend Rickie Bayley?|Thomas Jamerson|James Barriscale|Tom Georgeson|Martin Gower|One Man's Meat|Series 6|Rickie Bayley guest actor`;
 const AUDIT383_private=`In Private Lives, who plays Frost's temporary partner Billy Sharpe?|Philip Jackson|Ross Boatman|Tom Chadbon|Peter Egan|Private Lives|Series 6|Detective sergeant actor
 In Private Lives, which former soldier is initially suspected after the village hit-and-run?|Owen Kimble|Leo Armfield|Graham Rutherford|Richard Darrow|Private Lives|Series 6|Soldier suspect
 In Private Lives, what health problem is linked to suspect Owen Kimble's military past?|Post-traumatic stress disorder|Dementia|Partial blindness|A spinal injury|Private Lives|Series 6|War veteran's health
@@ -278,7 +278,7 @@ In Keys to the Car, what colour vehicle does Philly see arrive after the stolen 
 In Keys to the Car, which actor plays Assistant Chief Constable Anne Cremond?|Melanie Thaw|Caroline Harker|Susan Penhaligon|Joanne Froggatt|Keys to the Car|Series 6|Cremond guest performer`;
 const AUDIT383_line=`In Line of Fire, who plays Detective Superintendent Larry Finlay?|Nicky Henson|Christopher Hollis|Justin Burrows|Trevor Byfield|Line of Fire|Series 7|Regional squad leader actor
 In Line of Fire, who portrays the murdered detective's wife Helen Fox?|Beth Goddard|Georgia Mackenzie|Emma Cooke|Amanda Haberland|Line of Fire|Series 7|Helen Fox actor
-In Line of Fire, which detective is found murdered during a police investigation into car thieves?|Tim Fox|George Toolan|Clive Barnard|Ronnie Lonnegan|Line of Fire|Series 7|Murdered regional officer
+In Line of Fire, which actress played WPC Susan Kavanaugh?|Georgia Mackenzie|Beth Goddard|Emma Cooke|Amanda Haberland|Line of Fire|Series 7|WPC Kavanaugh actress
 In Line of Fire, what evidence convinces Frost that Tim Fox knew his killer?|The absence of defensive injuries|A hotel booking in his name|A signed confession|A stolen firearm in his car|Line of Fire|Series 7|Evidence about killer's familiarity
 In Line of Fire, what does Frost believe Newcombe planted during a raid on car thieves?|The gun used to kill Tim Fox|A stolen painting|A bloodstained jacket|An envelope of counterfeit notes|Line of Fire|Series 7|Evidence planted to frame gang
 In Line of Fire, whose daughter Tracy had Ray English been told to leave alone?|Cockcroft's|Newcombe's|Frost's|Finlay's|Line of Fire|Series 7|Power worker family
@@ -306,7 +306,7 @@ In Mistaken Identity, what does Fiona Monkton arrange against the jockey who saw
 In Mistaken Identity, which armed criminal's trial connects several victims' families?|Charlie Layman's|Tim Hamilton's|Richie Dearne's|Graham Rutherford's|Mistaken Identity|Series 9|Old witness testimony
 In Mistaken Identity, how many years earlier was the robbery trial linking the victims?|Thirteen years|Three years|Twenty years|Seven years|Mistaken Identity|Series 9|Old trial chronology
 In Mistaken Identity, how did the killer approach multiple families without arousing suspicion?|Posing as a handyman|Pretending to be a police officer|Delivering groceries|Working as a postman|Mistaken Identity|Series 9|Killer gains access
-In Mistaken Identity, which character portrays killer Jeffrey Meadows?|Jonjo O'Neill|Jason Merrells|Michael Cochrane|Barrie Ingham|Mistaken Identity|Series 9|Jeffrey Meadows guest actor
+In Mistaken Identity, which actor portrayed killer Jeffrey Meadows?|Jonjo O'Neill|Jason Merrells|Michael Cochrane|Barrie Ingham|Mistaken Identity|Series 9|Jeffrey Meadows guest actor
 In Mistaken Identity, who is the missing young woman's father?|Harry Monkton|Paul Matthews|Arnold Harris|Charlie Layman|Mistaken Identity|Series 9|Melanie's father`;
 const PACK383_KEY=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
  .replace(/[^\p{L}\p{N}]/gu,'');
