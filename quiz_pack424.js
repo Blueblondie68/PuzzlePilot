@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 424
 // All Saints (Australia): Season 5 (2002), 43 episodes.
 // Follows Pack 423. First ID: tv_24393.
-// WordPad-ready CommonJS. All Saints stays unfinished in the TV tracker.
+// WordPad-ready CommonJS. All Saints finished in 2009, with later seasons still needing audit.
 // Every row contains a question, four answer choices, difficulty, and seven specialist tags.
 // Storyline details checked against the 2002 episode guide and cast listings.
 'use strict';
@@ -124,9 +124,43 @@ Who returned to Ward 17, unsettling Terri and Mitch in Yesterday Today and Tomor
 What sort of memories disturbed an elderly patient in the 2002 finale?|Distressing memories from the past|Memories of a recent holiday|A forgotten wedding anniversary|Memories of a lost lottery win|Medium|Yesterday Today And Tomorrow|Episode 43|Elderly Patient|Distressing Memories|Past Trauma|Ward 17|Season Finale
 Who struggled with problems caused by a new ambulance partner in the Season 5 finale?|Scott Zinenko|Bron Craig|Ben Markham|Rebecca Green|Medium|Yesterday Today And Tomorrow|Episode 43|Scott Zinenko|New Paramedic Partner|Workplace Trouble|Ambulance Team|Season Cliffhanger`;
 
+
+// 2002 Series 5 story gaps, cast and verified 2002 AFI/2003 Logie awards.
+// Original question IDs and answers must remain unchanged.
+const AUDIT_ORIGINAL_COUNT = 109;
+const AUDIT_FIRST_ID = 42182;
+const auditFacts = `Which All Saints actor won the 2003 Logie for Most Popular Actor?|Erik Thomson|Conrad Coleby|Brian Vriends|Martin Lynes|Medium|2003 Logies|Erik Thomson|Mitch Stevens|Most Popular Actor|Silver Logie|acting winner|Australian awards
+Which All Saints actress won the 2003 Logie for Most Popular Actress?|Libby Tanner|Georgie Parker|Judith McGrath|Tammy MacIntosh|Medium|2003 Logies|Libby Tanner|Bron Craig|Most Popular Actress|Silver Logie|acting winner|Australian awards
+Which award did All Saints win as a programme at the 2003 Logies?|Most Popular Australian Program|Most Outstanding Mini Series|Most Popular Comedy Program|Most Outstanding Documentary|Medium|2003 Logies|Most Popular Australian Program|Seven Network|viewer voted honour|programme winner|Australian drama|television awards
+At the 2002 Australian Film Institute Awards which drama honour was All Saints Series 5 nominated for?|Best Drama Series|Best Comedy Series|Best Documentary Series|Best Children's Drama|Medium|2002 AFI Awards|Best Drama Series|Series Five|award nomination|Australian Film Institute|television category|programme recognition
+Which All Saints producer was credited with the 2002 AFI nomination for Best Drama Series?|Di Drew|Jo Porter|Bevan Lee|John Holmes|Medium|2002 AFI Awards|Di Drew|Best Drama Series|producer credit|series five|award nomination|television drama
+Which All Saints director received a 2002 AFI nomination for the episode Opening Night?|Peter Fisk|Scott Feeney|Robert Marchand|Di Drew|Medium|2002 AFI Awards|Peter Fisk|Opening Night|Best Direction|episode one|director nomination|series five
+Which All Saints guest actress received a 2002 AFI supporting-actress nomination for Opening Night?|Belinda McClory|Kate Fischer|Tammy MacIntosh|Georgie Parker|Medium|2002 AFI Awards|Belinda McClory|Opening Night|supporting actress|guest performance|actor nomination|episode one
+Which All Saints character was played by guest actress Belinda McClory during Series 5?|Nicola Lewis|Rose Stevens|Leanne Curtis|Hannah Laughlin|Hard|Belinda McClory|Nicola Lewis|guest actress|season five|2002 appearance|cast identification|Opening Night
+Which actress played All Saints patient Hannah Laughlin during the fifth series?|Kate Fischer|Camilla Ah Kin|Genevieve O Reilly|Rochelle Whyte|Medium|Kate Fischer|Hannah Laughlin|Paul Stevens|guest actress|2002|road accident|acting role
+Which actor played the All Saints character Peter Buchanan during Series 5?|Chris Haywood|Erik Thomson|Martin Lynes|Patrick Thompson|Medium|Chris Haywood|Peter Buchanan|hospital administrator|series five|2002 cast|Mitch Stevens|actor identification
+Which actress played All Saints nurse Cara Windom during Series 5?|Rochelle Whyte|Jenni Baird|Judith McGrath|Ling Hsueh Tang|Medium|Rochelle Whyte|Cara Windom|ward nurse|series five|recurring character|2002 cast|actor identification
+Which actress portrayed All Saints character Leanne Curtis during the fifth series?|Genevieve O'Reilly|Tammy MacIntosh|Celia Ireland|Belinda McClory|Medium|Genevieve O Reilly|Leanne Curtis|Nelson Curtis|2002 guest cast|actor identification|series finale|secret wife
+Which actor played the son of Paula Morgan in All Saints Series 5?|Jack Rickard|Richard Wilson|Josh Quong Tart|Conrad Coleby|Medium|Jack Rickard|Max Morgan|Paula Morgan|2002 recurring cast|child character|ambulance hijacking|family drama
+In All Saints episode Opening Night what caused a second explosion after the train derailment?|A gas leak|A lightning strike|A ruptured water main|An electrical storm|Medium|Opening Night|train disaster|gas leak|second explosion|Lyle Slater|opening episodes|earthquake aftermath
+In All Saints episode The Show Must Go On what injury endangered Luke Forlano's surgical career?|A crushed hand|A broken ankle|A spinal fracture|Severe hearing loss|Medium|The Show Must Go On|Luke Forlano|crushed hand|train rescue|surgical career|emergency amputation|episode two
+In All Saints episode The Show Must Go On which two ambulance officers began a romantic relationship after arguing over the disaster response?|Scott Zinenko and Rebecca Green|Ben Markham and Paula Morgan|Connor Costello and Bron Craig|Nelson Curtis and Charlotte Beaumont|Medium|The Show Must Go On|Scott Zinenko|Rebecca Green|train disaster|romantic development|ambulance colleagues|episode two
+In All Saints episode Slings and Arrows what condition affected the patient who jumped from the ward balcony?|Postpartum depression|Lupus|Schizophrenia|Encephalitis|Medium|Slings and Arrows|postpartum depression|balcony incident|Jared Levine|patient crisis|ward safety|episode four
+In All Saints episode Swept Away which illness was eventually diagnosed after the suspected Ebola scare?|Dengue fever|Yellow fever|Measles|Typhoid fever|Medium|Swept Away|Dengue fever|suspected Ebola|quarantine|Mitch Stevens|Charlotte Beaumont|episode sixteen
+In All Saints episode All the Right Reasons who became acting nursing manager when Terri took a day off?|Nelson Curtis|Von Ryan|Bron Craig|Paula Morgan|Medium|All the Right Reasons|Nelson Curtis|acting NUM|Terri Sullivan|ward management|Bron Craig return|episode seventeen
+In All Saints episode White Noise what risky action did Von Ryan take to help two teenagers lost during a trip?|Abseiled down a cliff|Swam across a flooded river|Climbed onto a train roof|Entered a burning tunnel|Medium|White Noise|Von Ryan|teenagers|abseiling|rescue|outdoor excursion|episode twenty
+In All Saints episode Personal Matters what career decision did Rebecca Green make after her medication error?|Resign from ambulance work|Apply to medical school|Join the police service|Transfer to Ward 17|Medium|Personal Matters|Rebecca Green|morphine overdose|Paula Morgan mother|ambulance resignation|medication error|episode twenty one
+In All Saints episode Secrets which infection helped Charlotte Beaumont understand Jared Levine's assault?|Gonorrhoea|Malaria|Chickenpox|Tuberculosis|Medium|Secrets|Jared Levine|Charlotte Beaumont|sexual assault|gonorrhoea|delayed disclosure|episode thirty two
+In All Saints episode When All Is Lost what pregnancy tragedy befell Terri Sullivan?|She suffered a miscarriage|She gave birth prematurely|She discovered she was having twins|She underwent an emergency Caesarean|Medium|When All Is Lost|Terri Sullivan|miscarriage|Mitch Stevens|fractured ankle|pregnancy loss|episode thirty four
+In All Saints episode Into the Light which past abuser's admission forced Bron Craig to confront childhood trauma?|The man who molested her|An estranged schoolteacher|Her former gambling bookie|A violent former employer|Medium|Into the Light|Bron Craig|childhood abuse|past abuser|patient admission|trauma confrontation|episode thirty five
+In All Saints episode Bedtime Stories whose kiss with Charlotte Beaumont was intended to make Ben Markham jealous?|Bron Craig|Paula Morgan|Terri Sullivan|Rebecca Green|Medium|Bedtime Stories|Bron Craig|Charlotte Beaumont|Ben Markham|jealousy|romantic tension|episode thirty three
+In All Saints season five finale Yesterday Today and Tomorrow which couple became engaged after Ben's proposal?|Ben Markham and Bron Craig|Mitch Stevens and Rose Stevens|Scott Zinenko and Rebecca Green|Nelson Curtis and Paula Morgan|Medium|Yesterday Today and Tomorrow|Ben Markham|Bron Craig|marriage proposal|season finale|2002|relationship resolution
+In All Saints season five finale Yesterday Today and Tomorrow whom did Mitch Stevens propose marriage to?|Terri Sullivan|Rose Stevens|Charlotte Beaumont|Paula Morgan|Medium|Yesterday Today and Tomorrow|Mitch Stevens|Terri Sullivan|divorce finalised|marriage proposal|season finale|2002
+In All Saints finale Yesterday Today and Tomorrow which nurse discovered that Leanne was Nelson Curtis's wife?|Von Ryan|Paula Morgan|Bron Craig|Charlotte Beaumont|Medium|Yesterday Today and Tomorrow|Nelson Curtis|Leanne Curtis|secret marriage|ward nurse|season finale|2002`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -141,9 +175,14 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In ')
+      ? 'In All Saints episode ' + question.slice(3)
+      : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
