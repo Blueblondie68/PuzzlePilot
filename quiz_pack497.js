@@ -1,5 +1,10 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 497: Below Deck (Original Bravo Series), Season 7 (2019–20)
-// 53 episode-researched MCQs, IDs tv_28035–tv_28087; excludes all Below Deck spin-offs.
+// 64 audited MCQs: 53 originals (one generic rescue fact sharpened) plus 11 verified additions.
+// Original IDs tv_28035–tv_28087; audit IDs tv_43169–tv_43179.
+// Excludes all Below Deck spin-offs.
+// Additional audit on 22 Nov 2026: Bravo's official Season 7 incident,
+// production, reunion and farewell accounts; YachtCharterFleet Thailand filming
+// reports. Every question identifies the series. Original IDs preserved.
 // Main sources checked 18 Nov 2026:
 // https://www.bravotv.com/below-deck/season-7/ep-1-man-down
 // https://www.bravotv.com/the-daily-dish/below-deck-season-7-premiere-date-trailer
@@ -344,14 +349,14 @@ const questions = [
     "id": "tv_28045",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What emergency involves a heavily intoxicated Below Deck charter guest during a Season 7 beach excursion?",
+    "question": "In Below Deck Season 7, which intoxicated charter guest required emergency medical attention during a beach excursion?",
     "answers": [
-      "A beach rescue",
-      "A helicopter evacuation after diving",
-      "An engine-room fire",
-      "A search for a lost passport"
+      "Brandy",
+      "Helen Hoey",
+      "Jemele Hill",
+      "Madison Simon"
     ],
-    "correctAnswer": "A beach rescue",
+    "correctAnswer": "Brandy",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -359,18 +364,19 @@ const questions = [
       "Reality Television",
       "American Television",
       "Programme: Below Deck",
-      "Below Deck Original Series",
-      "Season 7 (2019–20)",
-      "Bravo Network",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
       "Yacht: Valor",
-      "Season setting: Thailand",
-      "Episode S07E04 — Weekend at Brandy's II",
-      "Storyline: Intoxicated charter guest",
-      "Storyline: Shore rescue",
-      "Person or guest: Brandy",
-      "Person or guest: Ashton Pienaar",
-      "Relevant answer: A beach rescue",
-      "Written Quiz"
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Returning Guests",
+      "Brandy",
+      "Weekend At Brandy's",
+      "Medical Attention",
+      "Beach Excursion",
+      "Season Seven Charter",
+      "Emergency"
     ]
   },
   {
@@ -1756,9 +1762,389 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==53||new Set(questions.map(q=>q.id)).size!==questions.length||
+// Append independent, verified Season 7 audit questions.
+const AUDIT_ORIGINAL_COUNT=53;
+const AUDIT_FIRST_ID=43169;
+const auditQuestions=[
+  {
+    "id": "tv_43169",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, which Thai island was the main base for filming the seventh season?",
+    "answers": [
+      "Koh Samui",
+      "Phuket",
+      "Bali",
+      "Langkawi"
+    ],
+    "correctAnswer": "Phuket",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Phuket",
+      "Season Seven Location",
+      "2019 Filming",
+      "Thailand",
+      "Andaman Sea",
+      "Thai Island"
+    ]
+  },
+  {
+    "id": "tv_43170",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, which marina near Phuket served as the home port during Season 7 filming?",
+    "answers": [
+      "Ao Po Grand Marina",
+      "Port Hercule",
+      "Port Vauban",
+      "Marina del Rey"
+    ],
+    "correctAnswer": "Ao Po Grand Marina",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Ao Po Grand Marina",
+      "Phuket",
+      "Home Port",
+      "Thailand Filming",
+      "Yacht Valor",
+      "2019 Charter Season"
+    ]
+  },
+  {
+    "id": "tv_43171",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, how did Abbi Murphy receive her engagement proposal from her boyfriend Patrik during Season 7?",
+    "answers": [
+      "During a yacht wedding",
+      "By a message in a bottle",
+      "Over a live television broadcast",
+      "By text message"
+    ],
+    "correctAnswer": "By text message",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Abbi Murphy",
+      "Patrik",
+      "Text Message Proposal",
+      "Episode Five",
+      "Engagement",
+      "2019 Romance"
+    ]
+  },
+  {
+    "id": "tv_43172",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, which guest known from Southern Charm appeared on Valor in Season 7?",
+    "answers": [
+      "Cameran Eubanks",
+      "Patricia Altschul",
+      "Madison Simon",
+      "Naomie Olindo"
+    ],
+    "correctAnswer": "Madison Simon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Guest",
+      "Madison Simon",
+      "Southern Charm",
+      "Bravo Reality Crossover",
+      "Guest Appearance",
+      "Season Seven",
+      "Charter Guest"
+    ]
+  },
+  {
+    "id": "tv_43173",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, what was unusual about Captain Lee's dismissal record in Below Deck Season 7?",
+    "answers": [
+      "He fired every deckhand",
+      "He fired no crew members",
+      "He dismissed the entire interior team",
+      "He was replaced halfway through filming"
+    ],
+    "correctAnswer": "He fired no crew members",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Captain Lee Rosbach",
+      "No Firings",
+      "Captain Management",
+      "2019 Thailand",
+      "Season Milestone",
+      "Crew Retention"
+    ]
+  },
+  {
+    "id": "tv_43174",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, what did chef Kevin Dobson kick towards Kate Chastain at the final crew party?",
+    "answers": [
+      "Sand",
+      "A beach ball",
+      "A dinner plate",
+      "A pair of shoes"
+    ],
+    "correctAnswer": "Sand",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Kevin Dobson",
+      "Kate Chastain",
+      "Beach Party",
+      "Sand Kicking",
+      "Final Crew Night",
+      "2019 Finale"
+    ]
+  },
+  {
+    "id": "tv_43175",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, who gave Kate Chastain a tearful apology over his behaviour at the Season 7 reunion?",
+    "answers": [
+      "Brian de Saint Pern",
+      "Kevin Dobson",
+      "Tanner Sterback",
+      "Ashton Pienaar"
+    ],
+    "correctAnswer": "Ashton Pienaar",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Reunion",
+      "Ashton Pienaar",
+      "Kate Chastain",
+      "Reunion Part Two",
+      "Tearful Apology",
+      "Van Argument",
+      "2020"
+    ]
+  },
+  {
+    "id": "tv_43176",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, which senior crew member walked off the set during the second part of the Season 7 reunion?",
+    "answers": [
+      "Kate Chastain",
+      "Simone Mashile",
+      "Captain Lee Rosbach",
+      "Ashton Pienaar"
+    ],
+    "correctAnswer": "Captain Lee Rosbach",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Reunion",
+      "Captain Lee Rosbach",
+      "Reunion Walk Off",
+      "Andy Cohen",
+      "2020 Reunion",
+      "Season Seven",
+      "Crew Conduct"
+    ]
+  },
+  {
+    "id": "tv_43177",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, which longtime chief stewardess announced her departure from the series after Season 7?",
+    "answers": [
+      "Adrienne Gang",
+      "Kate Chastain",
+      "Francesca Rubi",
+      "Hannah Ferrier"
+    ],
+    "correctAnswer": "Kate Chastain",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Career",
+      "Kate Chastain",
+      "Chief Stewardess",
+      "Final Season",
+      "2020 Departure Announcement",
+      "Six Seasons",
+      "Programme History"
+    ]
+  },
+  {
+    "id": "tv_43178",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, which television programme hosted a celebration of Below Deck's 100th episode during Season 7?",
+    "answers": [
+      "Watch What Happens Live with Andy Cohen",
+      "The Tonight Show Starring Jimmy Fallon",
+      "Good Morning America",
+      "The Late Late Show with James Corden"
+    ],
+    "correctAnswer": "Watch What Happens Live with Andy Cohen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Career",
+      "100th Episode",
+      "Watch What Happens Live",
+      "Andy Cohen",
+      "January 2020",
+      "Cast Reunion",
+      "Series Milestone"
+    ]
+  },
+  {
+    "id": "tv_43179",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 7, what happened to Brian de Saint Pern and Courtney Skippon's romance after the Thailand charter season?",
+    "answers": [
+      "They immediately married",
+      "They moved aboard a sailing yacht together",
+      "They announced an engagement on television",
+      "They did not continue dating"
+    ],
+    "correctAnswer": "They did not continue dating",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season 7 (2019–2020)",
+      "Yacht: Valor",
+      "Thailand Charters",
+      "Written Quiz",
+      "Section: Audit Relationship",
+      "Brian de Saint Pern",
+      "Courtney Skippon",
+      "Post Season",
+      "Relationship End",
+      "Thailand Romance",
+      "Season Seven"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==64||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(28035+i)||q.topic!=='Below Deck'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(28035+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
 q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length<14||
 new Set(q.tags).size!==q.tags.length||q.dailyEligible!==true||
