@@ -169,7 +169,11 @@ const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')
     .map(tag => [tag.toLowerCase(), tag])).values()];
   const contextualQuestion = question.includes(programme)
     ? question
-    : 'In Auf Wiedersehen, Pet, ' + question[0].toLowerCase() + question.slice(1);
+    : question.startsWith('In which ')
+      ? 'In Auf Wiedersehen, Pet, which ' + question.slice(9)
+      : question.startsWith('In ')
+        ? 'In Auf Wiedersehen, Pet episode ' + question.slice(3)
+        : 'In Auf Wiedersehen, Pet, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
     id, category: 'Television', programme, question: contextualQuestion, answers,
