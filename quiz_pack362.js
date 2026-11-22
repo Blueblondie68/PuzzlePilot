@@ -1901,14 +1901,14 @@ const auditAdditions = [
     "id": "tv_39301",
     "category": "Television",
     "programme": "Motherland",
-    "question": "In Motherland, which school organisation hosts the charity fundraiser doubling as Amanda's birthday party?",
+    "question": "In Motherland's Surprise Birthday, which sponsored activity becomes entangled with Anne's powerful cocktails?",
     "answers": [
-      "The school governors",
-      "The local council",
-      "The PTA",
-      "The parents' cricket team"
+      "A cookery contest",
+      "Sponsored cycling",
+      "A school swimming gala",
+      "A charity fashion show"
     ],
-    "correctAnswer": "The PTA",
+    "correctAnswer": "Sponsored cycling",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -1920,13 +1920,13 @@ const auditAdditions = [
       "BBC Television",
       "Sharon Horgan",
       "Episode: S3E5 Surprise Birthday",
-      "Storyline: PTA Birthday Fundraiser",
-      "Answer: The PTA",
-      "Character/incident: PTA Birthday Fundraiser",
+      "Storyline: Sponsored Cycling And Cocktails",
+      "Answer: Sponsored cycling",
+      "Character/incident: Anne Cocktail Trouble",
       "Episode clue: S3E5 Surprise Birthday",
-      "Subject: PTA Birthday Fundraiser",
+      "Subject: School Cycling Fundraiser",
       "Period: 2016-2022",
-      "Screenplay context: PTA Birthday Fundraiser"
+      "Screenplay context: Alcohol And Cycling At The Party"
     ],
     "dailyEligible": true
   },
@@ -2000,14 +2000,14 @@ const auditAdditions = [
     "id": "tv_39304",
     "category": "Television",
     "programme": "Motherland",
-    "question": "In Motherland's Last Christmas, where had Kevin expected to spend Christmas dinner before Julia invited him?",
+    "question": "In Motherland's Last Christmas, what had Kevin expected to eat for Christmas dinner before Julia invited him over?",
     "answers": [
-      "At a family restaurant",
-      "At a hotel vending machine",
-      "On a flight abroad",
-      "At Amanda's house"
+      "A pizza delivery",
+      "Turkey crisps from a hotel vending machine",
+      "A supermarket sandwich",
+      "A roast at his parents' home"
     ],
-    "correctAnswer": "At a hotel vending machine",
+    "correctAnswer": "Turkey crisps from a hotel vending machine",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -2019,13 +2019,13 @@ const auditAdditions = [
       "BBC Television",
       "Sharon Horgan",
       "Episode: Christmas 2022",
-      "Storyline: Kevin Hotel Vending Machine Christmas",
-      "Answer: At a hotel vending machine",
-      "Character/incident: Kevin Hotel Vending Machine Christmas",
+      "Storyline: Kevin Turkey Crisps From Vending Machine",
+      "Answer: Turkey crisps from a hotel vending machine",
+      "Character/incident: Kevin Plans Unappealing Christmas Dinner",
       "Episode clue: Christmas 2022",
-      "Subject: Kevin Hotel Vending Machine Christmas",
+      "Subject: Divorced Dads Hotel Dinner",
       "Period: 2016-2022",
-      "Screenplay context: Kevin Hotel Vending Machine Christmas"
+      "Screenplay context: Vending Machine Turkey Crisps"
     ],
     "dailyEligible": true
   },
