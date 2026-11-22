@@ -1,9 +1,15 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 492: Below Deck (Original Series), Seasons 1–2
-// 55 researched MCQs, original Bravo reality series ONLY, Season 1 (2013), Season 2 (2014).
+// 75 audited questions: 55 originals (one generic question replaced) + 20 focused story/production additions.
+// Original Bravo reality series ONLY, Seasons 1 (2013) and 2 (2014).
+// Original IDs tv_27791–tv_27845; audit IDs tv_43106–tv_43125.
 // IDs tv_27791–tv_27845; continues after Bellbird Pack 491 tv_27790.
 // Crew, Honor/Ohana yachts, charter locations, key conflicts, episodes, early reunions,
 // history and recurring yacht roles. No Mediterranean/Sailing Yacht/Down Under/Adventure episodes.
 // Below Deck is ongoing; master stays LAVENDER with coverage cut-off Season 2 / 4 Nov 2014.
+// Audit 22 Nov 2026: Bravo original-season episode summaries and retrospectives,
+// TVmaze Season 1/2 episode guides, Boat International yacht history,
+// and contemporary Bravo crew discipline and renewal accounts.
+// Later seasons covered separately; no spin-offs mixed into this pack.
 // Verified 18 Nov 2026 against primary Bravo material and TV episode guides:
 // https://www.bravotv.com/the-daily-dish/how-to-watch-below-deck-as-beginner-episode-season-guide
 // https://www.bravotv.com/the-daily-dish/below-deck-returns-first-look-at-season-2
@@ -117,7 +123,7 @@ const questions = [
     "id": "tv_27794",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who is responsible for commanding the yacht in the first two seasons?",
+    "question": "In Below Deck, who is responsible for commanding the yacht in the first two seasons?",
     "answers": [
       "Captain Kerry Titheradge",
       "Captain Glenn Shephard",
@@ -150,7 +156,7 @@ const questions = [
     "id": "tv_27795",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What is the name of the luxury yacht featured in the first season?",
+    "question": "In Below Deck, what is the name of the luxury yacht featured in the first season?",
     "answers": [
       "Ohana",
       "Eros",
@@ -183,7 +189,7 @@ const questions = [
     "id": "tv_27796",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Where did the first season's crew operate their charters?",
+    "question": "In Below Deck, where did the first season's crew operate their charters?",
     "answers": [
       "Around Sint Maarten",
       "Off the coast of Greece",
@@ -281,7 +287,7 @@ const questions = [
     "id": "tv_27799",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What kind of guests create difficulties for the crew on their first charter?",
+    "question": "In Below Deck, what kind of guests create difficulties for the crew on their first charter?",
     "answers": [
       "Professional footballers",
       "Retired astronauts",
@@ -314,7 +320,7 @@ const questions = [
     "id": "tv_27800",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who served as chief stewardess aboard Honor in Season 1?",
+    "question": "In Below Deck, who served as chief stewardess aboard Honor in Season 1?",
     "answers": [
       "Adrienne Gang",
       "Kate Chastain",
@@ -347,7 +353,7 @@ const questions = [
     "id": "tv_27801",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which member of the original crew worked as chef?",
+    "question": "In Below Deck, which member of the original crew worked as chef?",
     "answers": [
       "Adrian Martin",
       "Ben Robinson",
@@ -380,7 +386,7 @@ const questions = [
     "id": "tv_27802",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which original crew member was the yacht's first officer?",
+    "question": "In Below Deck, which original crew member was the yacht's first officer?",
     "answers": [
       "Kelley Johnson",
       "Logan Reese",
@@ -413,7 +419,7 @@ const questions = [
     "id": "tv_27803",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which original crew member worked as second engineer?",
+    "question": "In Below Deck, which original crew member worked as second engineer?",
     "answers": [
       "Ben Robinson",
       "Kat Held",
@@ -446,7 +452,7 @@ const questions = [
     "id": "tv_27804",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which stewardess was known as Sam in the first season?",
+    "question": "In Below Deck, which stewardess was known as Sam in the first season?",
     "answers": [
       "Samantha Orme",
       "Amy Johnson",
@@ -479,7 +485,7 @@ const questions = [
     "id": "tv_27805",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who worked as second stewardess under Adrienne Gang?",
+    "question": "In Below Deck, who worked as second stewardess under Adrienne Gang?",
     "answers": [
       "Raquel Dakota",
       "Kat Held",
@@ -512,7 +518,7 @@ const questions = [
     "id": "tv_27806",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand introduced in Season 1 would later become a bosun?",
+    "question": "In Below Deck, which deckhand introduced in Season 1 would later become a bosun?",
     "answers": [
       "Nico Scholly",
       "Emile Kotze",
@@ -545,7 +551,7 @@ const questions = [
     "id": "tv_27807",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which original deckhand was engaged to a man named Trevor?",
+    "question": "In Below Deck, which original deckhand was engaged to a man named Trevor?",
     "answers": [
       "Aleks Taldykin",
       "C.J. LeBeau",
@@ -578,7 +584,7 @@ const questions = [
     "id": "tv_27808",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which interior crew member frequently clashed with chief stew Adrienne Gang?",
+    "question": "In Below Deck, which interior crew member frequently clashed with chief stew Adrienne Gang?",
     "answers": [
       "Samantha Orme",
       "Kate Chastain",
@@ -611,7 +617,7 @@ const questions = [
     "id": "tv_27809",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which original stewardess drew criticism after a night of heavy drinking?",
+    "question": "In Below Deck, which original stewardess drew criticism after a night of heavy drinking?",
     "answers": [
       "Amy Johnson",
       "Kat Held",
@@ -644,7 +650,7 @@ const questions = [
     "id": "tv_27810",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What unusual service did one group of Season 1 charter guests seek from a specialist?",
+    "question": "In Below Deck, what unusual service did one group of Season 1 charter guests seek from a specialist?",
     "answers": [
       "Underwater archaeology",
       "Sailing lessons",
@@ -677,7 +683,7 @@ const questions = [
     "id": "tv_27811",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What kind of event did charter guests arrange at short notice in the first season?",
+    "question": "In Below Deck, what kind of event did charter guests arrange at short notice in the first season?",
     "answers": [
       "A graduation ceremony",
       "A fashion award",
@@ -710,7 +716,7 @@ const questions = [
     "id": "tv_27812",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What emergency exercise did Captain Lee order after a cancelled charter?",
+    "question": "In Below Deck, what emergency exercise did Captain Lee order after a cancelled charter?",
     "answers": [
       "A surprise fire drill",
       "A helicopter rescue exercise",
@@ -743,7 +749,7 @@ const questions = [
     "id": "tv_27813",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which senior crew member took the blame after the team struggled with the fire drill?",
+    "question": "In Below Deck, which senior crew member took the blame after the team struggled with the fire drill?",
     "answers": [
       "Kat Held",
       "Aleks Taldykin",
@@ -776,7 +782,7 @@ const questions = [
     "id": "tv_27814",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member became romantically involved with Samantha Orme?",
+    "question": "In Below Deck, which crew member became romantically involved with Samantha Orme?",
     "answers": [
       "Ben Robinson",
       "David Bradberry",
@@ -809,7 +815,7 @@ const questions = [
     "id": "tv_27815",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member defied both Aleks Taldykin and Captain Lee during Season 1?",
+    "question": "In Below Deck, which crew member defied both Aleks Taldykin and Captain Lee during Season 1?",
     "answers": [
       "Eddie Lucas",
       "Kat Held",
@@ -875,7 +881,7 @@ const questions = [
     "id": "tv_27817",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What was the title of the first-season special containing unseen footage?",
+    "question": "In Below Deck, what was the title of the first-season special containing unseen footage?",
     "answers": [
       "Return to Honor",
       "The Crew Tells All",
@@ -908,7 +914,7 @@ const questions = [
     "id": "tv_27818",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What name did the yacht use on-screen during Season 2?",
+    "question": "In Below Deck, what name did the yacht use on-screen during Season 2?",
     "answers": [
       "Eros",
       "My Seanna",
@@ -1007,7 +1013,7 @@ const questions = [
     "id": "tv_27821",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which earlier chief stewardess did Kate Chastain replace in the second season?",
+    "question": "In Below Deck, which earlier chief stewardess did Kate Chastain replace in the second season?",
     "answers": [
       "Jennice Ontiveros",
       "Adrienne Gang",
@@ -1040,7 +1046,7 @@ const questions = [
     "id": "tv_27822",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which returning Season 1 stew also served on Ohana in Season 2?",
+    "question": "In Below Deck, which returning Season 1 stew also served on Ohana in Season 2?",
     "answers": [
       "Adrienne Gang",
       "Raquel Dakota",
@@ -1073,7 +1079,7 @@ const questions = [
     "id": "tv_27823",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What role did Eddie Lucas have on Ohana in Season 2?",
+    "question": "In Below Deck, what role did Eddie Lucas have on Ohana in Season 2?",
     "answers": [
       "Bosun",
       "Chief steward",
@@ -1139,7 +1145,7 @@ const questions = [
     "id": "tv_27825",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which sister of Kelley Johnson worked in the interior team?",
+    "question": "In Below Deck, which sister of Kelley Johnson worked in the interior team?",
     "answers": [
       "Kat Held",
       "Jennice Ontiveros",
@@ -1172,7 +1178,7 @@ const questions = [
     "id": "tv_27826",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member had previously served in the US Marine Corps?",
+    "question": "In Below Deck, which crew member had previously served in the US Marine Corps?",
     "answers": [
       "Ben Robinson",
       "Kat Held",
@@ -1205,7 +1211,7 @@ const questions = [
     "id": "tv_27827",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which new deckhand began a romance with Kelley Johnson during the second season?",
+    "question": "In Below Deck, which new deckhand began a romance with Kelley Johnson during the second season?",
     "answers": [
       "Jennice Ontiveros",
       "Amy Johnson",
@@ -1238,7 +1244,7 @@ const questions = [
     "id": "tv_27828",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which Season 2 deckhand admitted he had exaggerated his yachting experience and was dismissed?",
+    "question": "In Below Deck, which Season 2 deckhand admitted he had exaggerated his yachting experience and was dismissed?",
     "answers": [
       "Kelley Johnson",
       "Andrew Sturby",
@@ -1271,7 +1277,7 @@ const questions = [
     "id": "tv_27829",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which replacement deckhand joined Ohana after Andrew Sturby left?",
+    "question": "In Below Deck, which replacement deckhand joined Ohana after Andrew Sturby left?",
     "answers": [
       "Emile Kotze",
       "Don Abenante",
@@ -1304,7 +1310,7 @@ const questions = [
     "id": "tv_27830",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which Season 1 chief stew returned unexpectedly as a charter guest in Season 2?",
+    "question": "In Below Deck, which Season 1 chief stew returned unexpectedly as a charter guest in Season 2?",
     "answers": [
       "Kate Chastain",
       "Samantha Orme",
@@ -1337,7 +1343,7 @@ const questions = [
     "id": "tv_27831",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which two interior crew members had unresolved tensions that resurfaced during Adrienne's guest visit?",
+    "question": "In Below Deck, which two interior crew members had unresolved tensions that resurfaced during Adrienne's guest visit?",
     "answers": [
       "Kat Held and Amy Johnson",
       "Kate Chastain and Amy Johnson",
@@ -1370,7 +1376,7 @@ const questions = [
     "id": "tv_27832",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which episode title announced the opening of Season 2?",
+    "question": "In Below Deck, which episode title announced the opening of Season 2?",
     "answers": [
       "More Foam, Bosun!",
       "Shut Your Porthole!",
@@ -1403,7 +1409,7 @@ const questions = [
     "id": "tv_27833",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What kind of formal event challenged the Ohana crew during the second season?",
+    "question": "In Below Deck, what kind of formal event challenged the Ohana crew during the second season?",
     "answers": [
       "A Halloween parade",
       "A film premiere",
@@ -1436,7 +1442,7 @@ const questions = [
     "id": "tv_27834",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which charter guest returned to Ohana after a dispute over Kate's unusual blanket arrangement?",
+    "question": "In Below Deck, which charter guest returned to Ohana after a dispute over Kate's unusual blanket arrangement?",
     "answers": [
       "Dean Slover",
       "Captain Glenn Shephard",
@@ -1469,7 +1475,7 @@ const questions = [
     "id": "tv_27835",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What object did Kate Chastain controversially fold into a suggestive shape for a charter guest?",
+    "question": "In Below Deck, what object did Kate Chastain controversially fold into a suggestive shape for a charter guest?",
     "answers": [
       "A bedsheet",
       "A blanket",
@@ -1502,7 +1508,7 @@ const questions = [
     "id": "tv_27836",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What did Kate say her suggestive blanket fold was meant to resemble?",
+    "question": "In Below Deck, what did Kate say her suggestive blanket fold was meant to resemble?",
     "answers": [
       "A wine bottle",
       "A dolphin",
@@ -1535,7 +1541,7 @@ const questions = [
     "id": "tv_27837",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which part of Ohana did charter guests turn into a temporary stock trading floor?",
+    "question": "In Below Deck, which part of Ohana did charter guests turn into a temporary stock trading floor?",
     "answers": [
       "The galley",
       "The engine room",
@@ -1568,7 +1574,7 @@ const questions = [
     "id": "tv_27838",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which couple's relationship remained uncertain during the second-season finale?",
+    "question": "In Below Deck, which couple's relationship remained uncertain during the second-season finale?",
     "answers": [
       "Kelley and Jennice",
       "Ben and Kate",
@@ -1601,7 +1607,7 @@ const questions = [
     "id": "tv_27839",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member was originally from Oxford in England?",
+    "question": "In Below Deck, which crew member was originally from Oxford in England?",
     "answers": [
       "Kelley Johnson",
       "Andrew Sturby",
@@ -1634,7 +1640,7 @@ const questions = [
     "id": "tv_27840",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Before becoming a yacht captain, what industry did Lee Rosbach work in?",
+    "question": "In Below Deck, before becoming a yacht captain, what industry did Lee Rosbach work in?",
     "answers": [
       "Commercial aviation",
       "Movie production",
@@ -1699,7 +1705,7 @@ const questions = [
     "id": "tv_27842",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What name is given to the senior crew member overseeing a yacht's deckhands?",
+    "question": "In Below Deck, what name is given to the senior crew member overseeing a yacht's deckhands?",
     "answers": [
       "Sous-chef",
       "Concierge",
@@ -1732,7 +1738,7 @@ const questions = [
     "id": "tv_27843",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which yacht department is traditionally responsible for guest cabins and table service?",
+    "question": "In Below Deck, which yacht department is traditionally responsible for guest cabins and table service?",
     "answers": [
       "Engineering",
       "Navigation",
@@ -1765,14 +1771,14 @@ const questions = [
     "id": "tv_27844",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Where does the yacht's chef prepare meals for charter guests?",
+    "question": "In Below Deck Season 1, what discovery by Kat Held abruptly ended the first charter?",
     "answers": [
-      "The galley",
-      "The bridge",
-      "The bow",
-      "The lazarette"
+      "A damaged yacht engine",
+      "Illegal drugs in a guest cabin",
+      "A missing wedding ring",
+      "An undeclared pet"
     ],
-    "correctAnswer": "The galley",
+    "correctAnswer": "Illegal drugs in a guest cabin",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -1780,25 +1786,25 @@ const questions = [
       "Reality Television",
       "American Television",
       "Programme: Below Deck",
-      "Below Deck Original Series (Bravo)",
-      "Luxury Yacht Crew",
-      "Original Series Only",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
       "Written Quiz",
-      "Yacht Roles and Terminology",
-      "Section: Yacht Work",
-      "Galley",
-      "Kitchen",
-      "Ben Robinson",
-      "Charter Meals",
-      "Food Service",
-      "Yacht Terminology"
+      "Section: Audit Season 1",
+      "Kat Held",
+      "Illegal Drugs",
+      "Charter Ended",
+      "Fashion Photographers",
+      "Captain Lee Rosbach",
+      "2013 Premiere"
     ]
   },
   {
     "id": "tv_27845",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What do crew members typically receive from charter guests at the end of each trip?",
+    "question": "In Below Deck, what do crew members typically receive from charter guests at the end of each trip?",
     "answers": [
       "Airline vouchers",
       "Tips",
@@ -1828,9 +1834,674 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==55||new Set(questions.map(q=>q.id)).size!==questions.length||
+// 22 Nov 2026: add audited early-season facts without changing original IDs.
+const AUDIT_ORIGINAL_COUNT=55;
+const AUDIT_FIRST_ID=43106;
+const auditQuestions=[
+  {
+    "id": "tv_43106",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, who found the suspicious substance that led Captain Lee to end Honor's first charter?",
+    "answers": [
+      "Adrienne Gang",
+      "Kat Held",
+      "Sam Orme",
+      "Ben Robinson"
+    ],
+    "correctAnswer": "Kat Held",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Kat Held",
+      "Guest Cabin",
+      "Illegal Drugs",
+      "First Charter",
+      "Honor",
+      "Season 1"
+    ]
+  },
+  {
+    "id": "tv_43107",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, which season-one crew members were caught swimming and drinking beer during working charter hours?",
+    "answers": [
+      "Sam Orme and C.J. LeBeau",
+      "Eddie Lucas and David Bradberry",
+      "Aleks Taldykin and Ben Robinson",
+      "Kat Held and Adrienne Gang"
+    ],
+    "correctAnswer": "Sam Orme and C.J. LeBeau",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Sam Orme",
+      "C J LeBeau",
+      "Swimming",
+      "Beer",
+      "Crew Discipline",
+      "Season 1"
+    ]
+  },
+  {
+    "id": "tv_43108",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, which season-one crew member chose to leave rather than accept docked pay for the swim-and-beer incident?",
+    "answers": [
+      "Eddie Lucas",
+      "Ben Robinson",
+      "David Bradberry",
+      "C.J. LeBeau"
+    ],
+    "correctAnswer": "C.J. LeBeau",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "C J LeBeau",
+      "Season 1 Departure",
+      "Charter Misconduct",
+      "Tips",
+      "Pay Penalty",
+      "Captain Lee"
+    ]
+  },
+  {
+    "id": "tv_43109",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, who caught Sam Orme and C.J. LeBeau drinking while they were supposed to be working?",
+    "answers": [
+      "Kate Chastain",
+      "Adrienne Gang",
+      "Aleks Taldykin",
+      "Logan Reese"
+    ],
+    "correctAnswer": "Aleks Taldykin",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Aleks Taldykin",
+      "Sam Orme",
+      "C J LeBeau",
+      "Charter Rules",
+      "Caught Drinking",
+      "First Officer"
+    ]
+  },
+  {
+    "id": "tv_43110",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, what type of rule-breaking led to the crew's first-season swim-and-beer disciplinary row?",
+    "answers": [
+      "Missing a guest's birthday dinner",
+      "Drinking alcohol while on charter duty",
+      "Leaving the yacht's helm unattended",
+      "Losing the ship's passports"
+    ],
+    "correctAnswer": "Drinking alcohol while on charter duty",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Sam Orme",
+      "C J LeBeau",
+      "Alcohol During Charter",
+      "Crew Misconduct",
+      "Season 1",
+      "Discipline"
+    ]
+  },
+  {
+    "id": "tv_43111",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, what concern did Kat Held disclose to Captain Lee amid conflict with inappropriate charter guests?",
+    "answers": [
+      "Her anxiety and related medication",
+      "A missing engineering qualification",
+      "A private yacht ownership claim",
+      "Her refusal to swim"
+    ],
+    "correctAnswer": "Her anxiety and related medication",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Kat Held",
+      "Anxiety Medication",
+      "Charter Guests",
+      "Workplace Conflict",
+      "Season 1",
+      "Captain Lee"
+    ]
+  },
+  {
+    "id": "tv_43112",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, whose friends came aboard Honor and made life difficult for Ben and Sam?",
+    "answers": [
+      "Eddie Lucas's",
+      "Captain Lee's",
+      "David Bradberry's",
+      "Adrienne Gang's"
+    ],
+    "correctAnswer": "Adrienne Gang's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Adrienne Gang",
+      "Difficult Guests",
+      "Ben Robinson",
+      "Sam Orme",
+      "Season 1",
+      "Guest Relations"
+    ]
+  },
+  {
+    "id": "tv_43113",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, which crew member planned to switch cabins to escape tensions with chief stew Adrienne Gang?",
+    "answers": [
+      "David Bradberry",
+      "Eddie Lucas",
+      "Kat Held",
+      "Ben Robinson"
+    ],
+    "correctAnswer": "Kat Held",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Kat Held",
+      "Adrienne Gang",
+      "Cabin Conflict",
+      "Season 1",
+      "Interior Crew",
+      "Crew Quarters"
+    ]
+  },
+  {
+    "id": "tv_43114",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, which season-one crew member was reprimanded after being caught in a private rendezvous with C.J.?",
+    "answers": [
+      "Kate Chastain",
+      "Sam Orme",
+      "Amy Johnson",
+      "Jennice Ontiveros"
+    ],
+    "correctAnswer": "Sam Orme",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Sam Orme",
+      "C J LeBeau",
+      "Workplace Romance",
+      "Season 1",
+      "Crew Conflict",
+      "Disciplinary Trouble"
+    ]
+  },
+  {
+    "id": "tv_43115",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, under what real-world yacht name did the first-season vessel Honor charter?",
+    "answers": [
+      "Cuor di Leone",
+      "Lady Guinevere",
+      "Valor",
+      "Eros"
+    ],
+    "correctAnswer": "Cuor di Leone",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Honor Yacht",
+      "Cuor Di Leone",
+      "Real Vessel Name",
+      "Season 1",
+      "Charter Industry",
+      "Production"
+    ]
+  },
+  {
+    "id": "tv_43116",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, which problem was caused by Andrew Sturby leaving a porthole open while Ohana was underway?",
+    "answers": [
+      "A broken propeller",
+      "An electrical fire in the galley",
+      "A lost life raft",
+      "Flooding in his cabin"
+    ],
+    "correctAnswer": "Flooding in his cabin",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Andrew Sturby",
+      "Open Porthole",
+      "Cabin Flooding",
+      "Season 2",
+      "Safety",
+      "Deckhand Mistake"
+    ]
+  },
+  {
+    "id": "tv_43117",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, which crew member's equal share of charter tips caused resentment after his poor performance?",
+    "answers": [
+      "Eddie Lucas",
+      "Logan Reese",
+      "Andrew Sturby",
+      "Kelley Johnson"
+    ],
+    "correctAnswer": "Andrew Sturby",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Andrew Sturby",
+      "Crew Tips",
+      "Captain Lee Rosbach",
+      "Season 2",
+      "Pay Dispute",
+      "Deck Crew"
+    ]
+  },
+  {
+    "id": "tv_43118",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, what early Season 2 incident persuaded the crew that deckhand Andrew might be a liability?",
+    "answers": [
+      "He refused to wear a uniform",
+      "He left his cabin porthole open while underway",
+      "He failed a chef's trial",
+      "He missed a flight to the yacht"
+    ],
+    "correctAnswer": "He left his cabin porthole open while underway",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Andrew Sturby",
+      "Port Hole",
+      "Crew Safety",
+      "Season 2",
+      "Rookie Mistake",
+      "Yacht"
+    ]
+  },
+  {
+    "id": "tv_43119",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, what kind of guests made up Ohana's first charter of the second season?",
+    "answers": [
+      "A lively group of southerners",
+      "A group of schoolteachers",
+      "A royal wedding party",
+      "A team of Olympic sailors"
+    ],
+    "correctAnswer": "A lively group of southerners",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Ohana",
+      "Season 2 Premiere",
+      "Southern Guests",
+      "First Charter",
+      "Kate Chastain",
+      "2014"
+    ]
+  },
+  {
+    "id": "tv_43120",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, which returning chief stewardess spread news of Kat and Amy's strained past among Ohana's guests?",
+    "answers": [
+      "Kate Chastain",
+      "Samantha Orme",
+      "Jennice Ontiveros",
+      "Adrienne Gang"
+    ],
+    "correctAnswer": "Adrienne Gang",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Adrienne Gang",
+      "Kat Held",
+      "Amy Johnson",
+      "Gossip",
+      "Season 2 Return",
+      "Crew Dispute"
+    ]
+  },
+  {
+    "id": "tv_43121",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, which season-two stewardess was left alone with hard-partying guests and had to call for help?",
+    "answers": [
+      "Kate Chastain",
+      "Kat Held",
+      "Amy Johnson",
+      "Adrienne Gang"
+    ],
+    "correctAnswer": "Amy Johnson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Amy Johnson",
+      "Late Night Service",
+      "Partying Guests",
+      "Ohana",
+      "Season 2",
+      "Interior Crew"
+    ]
+  },
+  {
+    "id": "tv_43122",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, whose birthday did the Ohana crew celebrate around the arrival of replacement deckhand Logan Reese?",
+    "answers": [
+      "Captain Lee's",
+      "Kelley Johnson's",
+      "Kate Chastain's",
+      "Ben Robinson's"
+    ],
+    "correctAnswer": "Kelley Johnson's",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Kelley Johnson",
+      "Birthday Party",
+      "Logan Reese",
+      "Season 2",
+      "Crew Celebration",
+      "New Kid On The Deck"
+    ]
+  },
+  {
+    "id": "tv_43123",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, which crew member took over dinner service from Kate Chastain at Ben Robinson's request?",
+    "answers": [
+      "Amy Johnson",
+      "Kat Held",
+      "Jennice Ontiveros",
+      "Adrienne Gang"
+    ],
+    "correctAnswer": "Amy Johnson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Amy Johnson",
+      "Kate Chastain",
+      "Ben Robinson",
+      "Dinner Service",
+      "Season 2",
+      "Staff Tension"
+    ]
+  },
+  {
+    "id": "tv_43124",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, who struggled with final-charter dinner service before Kate Chastain stepped in?",
+    "answers": [
+      "Kat Held",
+      "Eddie Lucas",
+      "Logan Reese",
+      "Amy Johnson"
+    ],
+    "correctAnswer": "Amy Johnson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Amy Johnson",
+      "Kate Chastain",
+      "Final Charter",
+      "Season 2",
+      "Dinner Service",
+      "Team Work"
+    ]
+  },
+  {
+    "id": "tv_43125",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck, which company announced renewal of the original series for a third season after Season 2's high-rating finale?",
+    "answers": [
+      "CBS",
+      "HBO",
+      "Bravo",
+      "ITV"
+    ],
+    "correctAnswer": "Bravo",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "2013–2014 Early Seasons",
+      "Luxury Yachting",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Renewal",
+      "Season 2 Finale",
+      "Season 3 Announcement",
+      "Ratings",
+      "Network History"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==75||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+String(27791+i)||q.topic!=='Below Deck'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(27791+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
 q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length<13||
 new Set(q.tags).size!==q.tags.length||q.dailyEligible!==true||
