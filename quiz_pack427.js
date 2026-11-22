@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 427
 // All Saints (Australia): Season 8 (2005), 41 episodes.
 // Follows Pack 426. First ID: tv_24731.
-// WordPad-ready CommonJS. All Saints remains unfinished in the TV tracker.
+// WordPad-ready CommonJS. All Saints ended in 2009; later seasons still await audit.
 // Each row: question | correct answer | three distractors | difficulty | seven specific tags.
 // Episode stories checked against contemporary-season episode guides.
 'use strict';
@@ -145,9 +145,36 @@ Whose wedding day was disrupted by a major Emergency incident in In Sickness and
 What kind of accident filled Emergency with patients in the 2005 finale?|A chemical explosion at a paint factory|A shopping centre fire|A nightclub balcony collapse|A plane crash at an airfield|Medium|In Sickness And In Health|Episode 41|Paint Factory|Chemical Explosion|Mass Casualties|Emergency Department|Wedding Day
 What injury threatened to stop a young father witnessing his child's birth in In Sickness and in Health?|Severe eye injuries|A broken leg|A dislocated shoulder|A hearing injury|Medium|In Sickness And In Health|Episode 41|Dan Goldman|Eye Injury|Expectant Father|First Child|Factory Casualty`;
 
+
+// Series 8 cast, 2005 AFI / 2006 Logie nominations and episode plot gaps.
+// Preserve original IDs and answer data; add unique new IDs.
+const AUDIT_ORIGINAL_COUNT = 130;
+const AUDIT_FIRST_ID = 42264;
+const auditFacts = `At the 2005 AFI Awards which television category included a nomination for All Saints Series 8?|Best Drama Series|Best Television Comedy|Best Children's Drama|Best Television Documentary|Medium|2005 AFI Awards|Best Drama Series|Series Eight|Australian Film Institute|drama nomination|programme recognition|television award
+Which producer was credited for the All Saints Series 8 nomination for Best Drama Series at the 2005 AFI Awards?|MaryAnne Carroll|Jo Porter|Peter Fisk|Bevan Lee|Medium|MaryAnne Carroll|2005 AFI Awards|Best Drama Series|producer nomination|Series Eight|industry recognition|production credit
+Which All Saints actor received a 2006 Logie nomination for Most Outstanding Actor?|John Howard|Mark Priestley|Wil Traval|Chris Vance|Medium|2006 Logies|John Howard|Frank Campion|Most Outstanding Actor|acting nomination|industry voted prize|Australian awards
+Which industry-voted drama category included an All Saints nomination at the 2006 Logies?|Most Outstanding Drama Series|Most Outstanding Comedy Program|Most Outstanding Children's Program|Most Outstanding News Coverage|Medium|2006 Logies|Most Outstanding Drama Series|programme nomination|industry vote|medical drama|Seven Network|award category
+Which audience-voted category included All Saints among the nominees at the 2006 Logies?|Most Popular Australian Drama Series|Most Popular Australian Reality Program|Most Popular Comedy Program|Most Popular Children's Program|Medium|2006 Logies|Most Popular Australian Drama Series|viewers choice|programme nomination|Seven Network|audience vote|award category
+Which actress played ambulance officer Sasha Fernandez in All Saints Series 8?|Nicole da Silva|Alexandra Davies|Natalie Saleeba|Sibylla Budd|Medium|Nicole da Silva|Sasha Fernandez|ambulance officer|Season Eight|2005 cast|actor identification|recurring role
+Which actress played Nelson Curtis's social-worker acquaintance Trish Turner in All Saints?|Anne Tenney|Susan Prior|Liz Alexander|Sibylla Budd|Medium|Anne Tenney|Trish Turner|Nelson Curtis|2005 guest cast|social worker|daughter Kahlia|performer
+Which actor portrayed late-season newcomer Sean Everleigh in All Saints Series 8?|Chris Vance|Peter Phelps|Christopher Gabardi|Conrad Coleby|Medium|Chris Vance|Sean Everleigh|2005 cast|late season episodes|recurring performer|Season Eight|casting
+Which actress portrayed Nelson Curtis's fiancée Kerry Lytton in All Saints Series 8?|Jaime Mears|Celia Ireland|Sibylla Budd|Nicole da Silva|Medium|Jaime Mears|Kerry Lytton|Nelson Curtis|2005 guest cast|engagement|marriage plans|performer
+Who directed the 2005 All Saints season premiere Happy New Year?|Peter Fisk|Catherine Millar|Scott Feeney|Jean Pierre Mignon|Medium|Peter Fisk|Happy New Year|2005 premiere|episode director|series eight|production team|opening episode
+Who wrote the All Saints Series 8 opening episode Happy New Year?|Sarah Walker|Bevan Lee|MaryAnne Carroll|Toby Wallace|Medium|Sarah Walker|Happy New Year|2005 premiere|episode writer|screenplay credit|series eight|production team
+What was the gathering at the nightclub before the balcony collapse in All Saints episode Happy New Year?|A New Year's Eve charity function|A wedding reception|A school reunion|A birthday party|Medium|Happy New Year|New Years Eve|charity function|nightclub balcony|disaster response|opening episode|Season Eight
+In All Saints episode Sins of the Mothers what exploitation was Cate McMasters trying to rescue young Lily from?|Being forced into prostitution|Being made to steal cars|Being kept out of school|Being forced to beg for money|Medium|Sins of the Mothers|Cate McMasters|Lily|child exploitation|mother involvement|child protection|episode three
+In All Saints episode Letting Go what caused the grieving patient's septic shock?|Self-inflicted wounds after his twin brother died|A severe burn from a building fire|A contaminated blood transfusion|An untreated snakebite|Medium|Letting Go|Jack Quade|septic shock|bereaved twin|self inflicted injury|patient autonomy|episode seven
+In All Saints episode Funny Games what had a woman done to her son before arriving at Emergency?|Performed an exorcism|Given him a tattoo|Taught him to drive|Taken him skydiving|Medium|Funny Games|Terri Sullivan|Jack Quade|mother and son|exorcism|unusual patient|episode nine
+In All Saints episode Boys Will Be Boys who began developing a friendship with Jessica that made Dan Goldman jealous?|Dan's best friend|Frank Campion's daughter|Cate McMasters's sister|Nelson Curtis's fiancée|Medium|Boys Will Be Boys|Dan Goldman|Jessica Singleton|male friendship|jealousy|workplace romance|episode ten
+In All Saints episode Double Lives what work arrangement did Terri Sullivan decide on to care for Lucy Stevens?|Reduce her nursing hours to part time|Become the hospital chief executive|Transfer to ambulance work|Take a job at a private clinic|Medium|Double Lives|Terri Sullivan|Lucy Stevens|part time nursing|care responsibilities|Mitch Stevens|episode seventeen
+In All Saints episode Room for Improvement who was brought to Emergency badly beaten by police?|A drug informant|An escaped nurse|A retired surgeon|An injured paramedic|Medium|Room for Improvement|police informant|severe assault|Emergency Department|department security|dangerous patient|episode twenty eight
+In All Saints episode Taking the Plunge from where did a man fall in an incident that might not have been accidental?|A hospital balcony|A motorway bridge|A construction crane|A rooftop swimming pool|Medium|Taking the Plunge|hospital balcony|fall investigation|unexplained injury|Emergency team|patient rescue|episode thirty seven
+In All Saints episode Thicker Than Water what personal conflict was intensified by the tunnel collapse?|Vincent questioned Cate's loyalty|Frank decided to fire Jack|Nelson refused to marry Kerry|Jessica accused Dan of theft|Medium|Thicker Than Water|Vincent Hughes|Cate McMasters|tunnel collapse|relationship tension|Emergency colleagues|episode thirty eight
+In All Saints episode Season of Change what legal threat did Jack Quade face from a patient?|A lawsuit after surgery|A claim over a stolen vehicle|An eviction dispute|A complaint about unpaid wages|Medium|Season of Change|Jack Quade|postoperative patient|lawsuit threat|medical liability|hospital dispute|episode forty`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -162,9 +189,12 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
