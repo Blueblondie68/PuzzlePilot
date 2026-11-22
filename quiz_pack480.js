@@ -1,9 +1,9 @@
 // PuzzlePilot Bigggggg Quiz — Pack 480: Black Doves (Netflix, 2024–ongoing)
 // BOTH released seasons (2024, 2026), six episodes each; latest episodes released 5 Nov 2026.
-// 85 distinct questions, production, cast, series one and full season-two story/spoilers.
-// Pack is COMPLETE THROUGH 5 NOVEMBER 2026 but PROGRAMME IS ONGOING; tracker remains lavender.
+// 117 audited questions: 85 originals (one repeated fact corrected in place) and 32 verified story/production/award additions.
+// Coverage audited through 5 NOVEMBER 2026; PROGRAMME ONGOING; tracker remains lavender.
 // Duplicate check against original 20 mixed packs and repository name search: no matches.
-// IDs: tv_26735–tv_26819.
+// Original IDs: tv_26735–tv_26819. Audit IDs: tv_42737–tv_42768.
 // Source verification 17 Nov 2026:
 // https://www.netflix.com/tudum/articles/black-doves-season-2
 // https://www.netflix.com/tudum/articles/black-doves-season-2-ending-explained
@@ -11,7 +11,10 @@
 // https://www.tvmaze.com/shows/68407/black-doves/episodeguide
 // https://www.thetvdb.com/series/black-doves/seasons/official/2
 // https://en.wikipedia.org/wiki/Black_Doves
-// Netflix has NOT officially confirmed series three as of 17 Nov 2026.
+// Series-three status requires recheck during the next scheduled ongoing-programme review.
+// 22 Nov 2026 additional sources: Netflix Tudum first- and second-series finale explainers,
+// BAFTA TV Craft 2025 Costume Design, Golden Globes 2025, Gotham Television Awards 2025.
+// Corrected duplicate finale-title fact at tv_26789; programme identification added to eligible questions.
 // Spoilers included, and years reserved for tags unless required to identify release.
 'use strict';
 const questions=[
@@ -723,7 +726,7 @@ const questions=[
     "id": "tv_26757",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which actor plays Helen's husband Wallace Webb?",
+    "question": "In Black Doves, which actor plays Helen's husband Wallace Webb?",
     "answers": [
       "Andrew Koji",
       "Sam Riley",
@@ -755,7 +758,7 @@ const questions=[
     "id": "tv_26758",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who plays Helen's murdered lover Jason Davies?",
+    "question": "In Black Doves, who plays Helen's murdered lover Jason Davies?",
     "answers": [
       "Andrew Buchan",
       "Omari Douglas",
@@ -787,7 +790,7 @@ const questions=[
     "id": "tv_26759",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which actor plays Sam's former boyfriend Michael?",
+    "question": "In Black Doves, which actor plays Sam's former boyfriend Michael?",
     "answers": [
       "Luther Ford",
       "Omari Douglas",
@@ -819,7 +822,7 @@ const questions=[
     "id": "tv_26760",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who plays Sam's former criminal employer Lenny Lines?",
+    "question": "In Black Doves, who plays Sam's former criminal employer Lenny Lines?",
     "answers": [
       "Kathryn Hunter",
       "Tracey Ullman",
@@ -851,7 +854,7 @@ const questions=[
     "id": "tv_26761",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which actress portrays freelance assassin Williams?",
+    "question": "In Black Doves, which actress portrays freelance assassin Williams?",
     "answers": [
       "Gabrielle Creevy",
       "Isabella Wei",
@@ -883,7 +886,7 @@ const questions=[
     "id": "tv_26762",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who plays Williams' fellow assassin Eleanor?",
+    "question": "In Black Doves, who plays Williams' fellow assassin Eleanor?",
     "answers": [
       "Ella Lily Hyland",
       "Isabella Wei",
@@ -915,7 +918,7 @@ const questions=[
     "id": "tv_26763",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who portrays Kai-Ming Chen, daughter of a Chinese ambassador?",
+    "question": "In Black Doves, who portrays Kai-Ming Chen, daughter of a Chinese ambassador?",
     "answers": [
       "Gabrielle Creevy",
       "Isabella Wei",
@@ -979,7 +982,7 @@ const questions=[
     "id": "tv_26765",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who portrays the crime-family matriarch Alex Clark?",
+    "question": "In Black Doves, who portrays the crime-family matriarch Alex Clark?",
     "answers": [
       "Sarah Lancashire",
       "Kathryn Hunter",
@@ -1011,7 +1014,7 @@ const questions=[
     "id": "tv_26766",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who plays the young criminal Hector Newman?",
+    "question": "In Black Doves, who plays the young criminal Hector Newman?",
     "answers": [
       "Ben Whishaw",
       "Andrew Koji",
@@ -1043,7 +1046,7 @@ const questions=[
     "id": "tv_26767",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which actor plays the CIA agent Cole Atwood?",
+    "question": "In Black Doves, which actor plays the CIA agent Cole Atwood?",
     "answers": [
       "Luther Ford",
       "Finn Bennett",
@@ -1075,7 +1078,7 @@ const questions=[
     "id": "tv_26768",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who plays police commissioner Stephen Yarrick?",
+    "question": "In Black Doves, who plays police commissioner Stephen Yarrick?",
     "answers": [
       "Sam Troughton",
       "Andrew Buchan",
@@ -1107,7 +1110,7 @@ const questions=[
     "id": "tv_26769",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which actress plays the Webb family's nanny Marie?",
+    "question": "In Black Doves, which actress plays the Webb family's nanny Marie?",
     "answers": [
       "Agnes O'Casey",
       "Gabrielle Creevy",
@@ -1235,7 +1238,7 @@ const questions=[
     "id": "tv_26773",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who is Helen Webb's lover whose death starts the main investigation?",
+    "question": "In Black Doves, who is Helen Webb's lover whose death starts the main investigation?",
     "answers": [
       "Cole Atwood",
       "Michael",
@@ -1299,7 +1302,7 @@ const questions=[
     "id": "tv_26775",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "What personal item prompts Helen to return to Wallace's home after their first night together?",
+    "question": "In Black Doves, what personal item prompts Helen to return to Wallace's home after their first night together?",
     "answers": [
       "Her passport",
       "Her late mother's lighter",
@@ -1331,7 +1334,7 @@ const questions=[
     "id": "tv_26776",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which sniper attempts to kill Helen in her home in A Little Black Dove?",
+    "question": "In Black Doves, which sniper attempts to kill Helen in her home in A Little Black Dove?",
     "answers": [
       "Elmore Fitch",
       "Sam Young",
@@ -1363,7 +1366,7 @@ const questions=[
     "id": "tv_26777",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "What childhood discovery caused Sam to spare Hector Newman in his earlier assignment?",
+    "question": "In Black Doves, what childhood discovery caused Sam to spare Hector Newman in his earlier assignment?",
     "answers": [
       "Hector was a police officer",
       "Hector was related to Helen",
@@ -1395,7 +1398,7 @@ const questions=[
     "id": "tv_26778",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who was Sam Young's first assassination target, as revealed in series one?",
+    "question": "In Black Doves, who was Sam Young's first assassination target, as revealed in series one?",
     "answers": [
       "His former teacher",
       "A government minister",
@@ -1427,7 +1430,7 @@ const questions=[
     "id": "tv_26779",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which diplomatic official's unexplained death drives the international conspiracy in series one?",
+    "question": "In Black Doves, which diplomatic official's unexplained death drives the international conspiracy in series one?",
     "answers": [
       "The French ambassador",
       "The Chinese ambassador",
@@ -1459,7 +1462,7 @@ const questions=[
     "id": "tv_26780",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which daughter of the late Chinese ambassador becomes involved in the investigation?",
+    "question": "In Black Doves, which daughter of the late Chinese ambassador becomes involved in the investigation?",
     "answers": [
       "Kai-Ming Chen",
       "Dani",
@@ -1491,7 +1494,7 @@ const questions=[
     "id": "tv_26781",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "In the series-one episode Go Bang Time, Helen visits the embassy of which country?",
+    "question": "In Black Doves, in the series-one episode Go Bang Time, Helen visits the embassy of which country?",
     "answers": [
       "France",
       "China",
@@ -1523,7 +1526,7 @@ const questions=[
     "id": "tv_26782",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "What kind of secret evidence does Helen seek at the jewellery shop in The Cost of It All?",
+    "question": "In Black Doves, what kind of secret evidence does Helen seek at the jewellery shop in The Cost of It All?",
     "answers": [
       "A coded diary",
       "A bag of cash",
@@ -1555,7 +1558,7 @@ const questions=[
     "id": "tv_26783",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which political assistant reveals she is also a Black Dove in the first series?",
+    "question": "In Black Doves, which political assistant reveals she is also a Black Dove in the first series?",
     "answers": [
       "Eleanor",
       "Dani",
@@ -1587,7 +1590,7 @@ const questions=[
     "id": "tv_26784",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who was actually responsible for the Chinese ambassador's fatal injury, as shown on the video?",
+    "question": "In Black Doves, who was actually responsible for the Chinese ambassador's fatal injury, as shown on the video?",
     "answers": [
       "Trent Clark",
       "Jason Davies",
@@ -1619,7 +1622,7 @@ const questions=[
     "id": "tv_26785",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which criminal family is responsible for much of the cover-up in the first series?",
+    "question": "In Black Doves, which criminal family is responsible for much of the cover-up in the first series?",
     "answers": [
       "The Newmans",
       "The Webbs",
@@ -1651,7 +1654,7 @@ const questions=[
     "id": "tv_26786",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "What does Sam do to Alex Clark and Trent Clark in the first-series finale?",
+    "question": "In Black Doves, what does Sam do to Alex Clark and Trent Clark in the first-series finale?",
     "answers": [
       "Arrests them personally",
       "Helps them flee the country",
@@ -1683,7 +1686,7 @@ const questions=[
     "id": "tv_26787",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which British intelligence service does Jason turn out to have been working for?",
+    "question": "In Black Doves, which British intelligence service does Jason turn out to have been working for?",
     "answers": [
       "MI6",
       "MI5",
@@ -1715,7 +1718,7 @@ const questions=[
     "id": "tv_26788",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which family does Sam finally meet at Christmas in the first-series finale?",
+    "question": "In Black Doves, which family does Sam finally meet at Christmas in the first-series finale?",
     "answers": [
       "Helen's husband and children",
       "Hector Newman's brothers",
@@ -1747,14 +1750,14 @@ const questions=[
     "id": "tv_26789",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "What is the title of the Black Doves episode revealing the first series' final conspiracy?",
+    "question": "In Black Doves, what does Helen do with the drive containing the full truth about Jason's secret MI5 work?",
     "answers": [
-      "Peace Summit",
-      "Black Door",
-      "P Is for Poison",
-      "In the Bleak Midwinter"
+      "She gives it to Wallace",
+      "She throws it into the Thames",
+      "She hides it in Reed's office",
+      "She sends it to a newspaper"
     ],
-    "correctAnswer": "In the Bleak Midwinter",
+    "correctAnswer": "She throws it into the Thames",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1766,20 +1769,20 @@ const questions=[
       "Written Questions",
       "UK Television",
       "Series Coverage Through 5 November 2026",
-      "Section: Series one storylines and finale",
-      "In The Bleak Midwinter",
-      "Series One Episode Six",
-      "2024 Finale",
-      "Clark Family",
-      "Episode Title",
-      "Conspiracy"
+      "Section: Series one storyline and finale",
+      "Helen Webb",
+      "Jason Davies",
+      "MI5 Agent",
+      "Jason Secret Drive",
+      "Thames River",
+      "Series One Finale"
     ]
   },
   {
     "id": "tv_26790",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "What was Helen's original surname before marrying Wallace Webb?",
+    "question": "In Black Doves, what was Helen's original surname before marrying Wallace Webb?",
     "answers": [
       "Jones",
       "Morris",
@@ -1939,7 +1942,7 @@ const questions=[
     "id": "tv_26795",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which actress portrays Katia Chernov in the second series?",
+    "question": "In Black Doves, which actress portrays Katia Chernov in the second series?",
     "answers": [
       "Neve Campbell",
       "Sylvia Hoeks",
@@ -1971,7 +1974,7 @@ const questions=[
     "id": "tv_26796",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who plays Russian oligarch Alexi Chernov in the second series?",
+    "question": "In Black Doves, who plays Russian oligarch Alexi Chernov in the second series?",
     "answers": [
       "Goran Kostić",
       "Babou Ceesay",
@@ -2067,7 +2070,7 @@ const questions=[
     "id": "tv_26799",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which city do Helen and Laila visit to steal files at the start of series two?",
+    "question": "In Black Doves, which city do Helen and Laila visit to steal files at the start of series two?",
     "answers": [
       "Berlin",
       "Paris",
@@ -2099,7 +2102,7 @@ const questions=[
     "id": "tv_26800",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "What is the code name of the files Helen and Laila seek in the second-series opener?",
+    "question": "In Black Doves, what is the code name of the files Helen and Laila seek in the second-series opener?",
     "answers": [
       "Wildflower",
       "Nightshade",
@@ -2195,7 +2198,7 @@ const questions=[
     "id": "tv_26803",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who threatens Sam with incriminating footage to make him work for another organisation?",
+    "question": "In Black Doves, who threatens Sam with incriminating footage to make him work for another organisation?",
     "answers": [
       "Mr Conteh",
       "Patrick",
@@ -2259,7 +2262,7 @@ const questions=[
     "id": "tv_26805",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which East Berlin decade is explored in flashbacks to Mrs Reed's earlier espionage work?",
+    "question": "In Black Doves, which East Berlin decade is explored in flashbacks to Mrs Reed's earlier espionage work?",
     "answers": [
       "The 1960s",
       "The 2000s",
@@ -2291,7 +2294,7 @@ const questions=[
     "id": "tv_26806",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which woman, originally identified as Katia Chernov, is revealed to be Reed's long-lost daughter Vita?",
+    "question": "In Black Doves, which woman, originally identified as Katia Chernov, is revealed to be Reed's long-lost daughter Vita?",
     "answers": [
       "Marie",
       "Cecile Mason",
@@ -2355,7 +2358,7 @@ const questions=[
     "id": "tv_26808",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "In which type of institution was the young Vita raised after being separated from Reed?",
+    "question": "In Black Doves, in which type of institution was the young Vita raised after being separated from Reed?",
     "answers": [
       "A Soviet orphanage",
       "A British boarding school",
@@ -2387,7 +2390,7 @@ const questions=[
     "id": "tv_26809",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Who is revealed NOT to be Vita, despite early clues about her connection to Reed?",
+    "question": "In Black Doves, who is revealed NOT to be Vita, despite early clues about her connection to Reed?",
     "answers": [
       "Katia Chernov",
       "Laila",
@@ -2419,7 +2422,7 @@ const questions=[
     "id": "tv_26810",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "At which major London landmark do Sam and Helen say an emotional farewell at the end of series two?",
+    "question": "In Black Doves, at which major London landmark do Sam and Helen say an emotional farewell at the end of series two?",
     "answers": [
       "Tower Bridge",
       "St Paul's Cathedral",
@@ -2451,7 +2454,7 @@ const questions=[
     "id": "tv_26811",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which two women are taken hostage by Kestrel's operatives during Wallace's summit?",
+    "question": "In Black Doves, which two women are taken hostage by Kestrel's operatives during Wallace's summit?",
     "answers": [
       "Helen Webb and Laila Joshi",
       "Cecile Mason and Katia Chernov",
@@ -2483,7 +2486,7 @@ const questions=[
     "id": "tv_26812",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which US representative is killed during the second-series finale's violent confrontation?",
+    "question": "In Black Doves, which US representative is killed during the second-series finale's violent confrontation?",
     "answers": [
       "Cecile Mason",
       "Laila Joshi",
@@ -2547,7 +2550,7 @@ const questions=[
     "id": "tv_26814",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which two assassins develop a closer romantic relationship during the second series?",
+    "question": "In Black Doves, which two assassins develop a closer romantic relationship during the second series?",
     "answers": [
       "Helen and Dani",
       "Laila and Cecile",
@@ -2611,7 +2614,7 @@ const questions=[
     "id": "tv_26816",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "What personal decision does Sam take at the end of the second series?",
+    "question": "In Black Doves, what personal decision does Sam take at the end of the second series?",
     "answers": [
       "To leave the assassin life behind",
       "To replace Reed as chief of the Black Doves",
@@ -2643,7 +2646,7 @@ const questions=[
     "id": "tv_26817",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "In the final moments of series two, whom is Helen about to tell the truth about her double life?",
+    "question": "In Black Doves, in the final moments of series two, whom is Helen about to tell the truth about her double life?",
     "answers": [
       "Mrs Reed",
       "Sam Young",
@@ -2675,7 +2678,7 @@ const questions=[
     "id": "tv_26818",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which Italian setting is Sam shown returning to as he seeks a different life after series two?",
+    "question": "In Black Doves, which Italian setting is Sam shown returning to as he seeks a different life after series two?",
     "answers": [
       "The British embassy in Rome",
       "An alpine military base",
@@ -2707,7 +2710,7 @@ const questions=[
     "id": "tv_26819",
     "category": "TV",
     "topic": "Black Doves",
-    "question": "Which operation does Kestrel's attack threaten in the series-two finale?",
+    "question": "In Black Doves, which operation does Kestrel's attack threaten in the series-two finale?",
     "answers": [
       "A royal coronation",
       "Wallace's peace summit",
@@ -2736,10 +2739,1040 @@ const questions=[
     ]
   }
 ];
-if(questions.length!==85||
+// 22 November 2026 audit, all original IDs retained.
+const AUDIT_ORIGINAL_COUNT=85;
+const AUDIT_FIRST_ID=42737;
+const auditQuestions=[
+  {
+    "id": "tv_42737",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series one, which tabloid reporter is murdered alongside Jason Davies and Maggie Jones at the start of series one?",
+    "answers": [
+      "Perryman",
+      "Phillip Bray",
+      "Mitch Porter",
+      "Hector Newman"
+    ],
+    "correctAnswer": "Phillip Bray",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S1",
+      "Phillip Bray",
+      "Jason Davies",
+      "Maggie Jones",
+      "Series One Opening",
+      "Triple Murder",
+      "Trent Clark Cover Up"
+    ]
+  },
+  {
+    "id": "tv_42738",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series one, which member of the Webb household is revealed to be another secret Black Dove at the end of series one?",
+    "answers": [
+      "Marie the nanny",
+      "Wallace's driver",
+      "Helen's son Oliver",
+      "The family doctor"
+    ],
+    "correctAnswer": "Marie the nanny",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S1",
+      "Marie The Nanny",
+      "Webb Household",
+      "Secret Agent",
+      "Reed Network",
+      "First Series Finale",
+      "Household Infiltration"
+    ]
+  },
+  {
+    "id": "tv_42739",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series one, who spends Christmas with Kai-Ming Chen after the first-series showdown?",
+    "answers": [
+      "Helen and Wallace",
+      "Jason and Maggie",
+      "Sam and Michael",
+      "Williams and Eleanor"
+    ],
+    "correctAnswer": "Williams and Eleanor",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S1",
+      "Kai Ming Chen",
+      "Williams",
+      "Eleanor",
+      "Christmas Celebrations",
+      "First Series Finale",
+      "Found Family"
+    ]
+  },
+  {
+    "id": "tv_42740",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, what happens to Mrs Reed soon after receiving the Wildflower files?",
+    "answers": [
+      "She retires publicly",
+      "She is appointed Prime Minister",
+      "She disappears",
+      "She leaves for Australia"
+    ],
+    "correctAnswer": "She disappears",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Mrs Reed",
+      "Wildflower Files",
+      "Series Two Opening",
+      "Missing Handler",
+      "Paris Mission",
+      "Black Door"
+    ]
+  },
+  {
+    "id": "tv_42741",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, which murdered housekeeper in the Chernov household turns out to have been a Black Dove?",
+    "answers": [
+      "Maggie Jones",
+      "Ida Povetkin",
+      "Marie",
+      "Lenny Lines"
+    ],
+    "correctAnswer": "Ida Povetkin",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Ida Povetkin",
+      "Chernov Household",
+      "Undercover Agent",
+      "Murder Investigation",
+      "Black Door",
+      "Wildflower Trail"
+    ]
+  },
+  {
+    "id": "tv_42742",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, which fellow Black Dove does Sam unknowingly kill as his first target for Patrick?",
+    "answers": [
+      "Erik Klein",
+      "Hector Newman",
+      "Mr Conteh",
+      "Peter Maddison"
+    ],
+    "correctAnswer": "Erik Klein",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Erik Klein",
+      "Sam Young",
+      "Patrick",
+      "Mistaken Assassination",
+      "Black Door",
+      "Kestrel Contract"
+    ]
+  },
+  {
+    "id": "tv_42743",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, which executive takes over as Helen's handler after Reed disappears?",
+    "answers": [
+      "Jim Perryman",
+      "Wallace Webb",
+      "Hector Newman",
+      "Mr Conteh"
+    ],
+    "correctAnswer": "Mr Conteh",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Mr Conteh",
+      "Helen Webb",
+      "Handler Replacement",
+      "Black Doves Management",
+      "Series Two Opening",
+      "Reed Disappearance"
+    ]
+  },
+  {
+    "id": "tv_42744",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, where do Sam and Helen recover a recording left by Ida Povetkin?",
+    "answers": [
+      "A locker at Heathrow",
+      "A vault under Downing Street",
+      "A storage facility at King's Cross",
+      "A safe in Brighton"
+    ],
+    "correctAnswer": "A storage facility at King's Cross",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Kings Cross",
+      "Ida Povetkin",
+      "Secret Recording",
+      "Put Your Head On My Shoulder",
+      "Episode Two",
+      "Evidence Trail"
+    ]
+  },
+  {
+    "id": "tv_42745",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, which hotel employee does Sam kill after Patrick threatens to expose Helen?",
+    "answers": [
+      "Alexi Chernov",
+      "Jerry",
+      "Hector Newman",
+      "Wallace Webb"
+    ],
+    "correctAnswer": "Jerry",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Jerry Doran",
+      "Sam Young",
+      "Patrick Blackmail",
+      "Romantic Attachment",
+      "Episode Two",
+      "Tragic Assassination"
+    ]
+  },
+  {
+    "id": "tv_42746",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, at which London club do Wallace and the Chernovs attend a dinner that turns deadly?",
+    "answers": [
+      "The Chancellor Club",
+      "The Reform Club",
+      "Annabel's",
+      "The Athenaeum"
+    ],
+    "correctAnswer": "The Chancellor Club",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Chancellor Club",
+      "Wallace Webb",
+      "Alexi Chernov",
+      "Katia Chernov",
+      "P Is For Poison",
+      "Episode Three Dinner"
+    ]
+  },
+  {
+    "id": "tv_42747",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, whom does Sam poison during the dinner at the Chancellor Club?",
+    "answers": [
+      "Mr Conteh",
+      "Wallace Webb",
+      "Jim Perryman",
+      "Alexi Chernov"
+    ],
+    "correctAnswer": "Alexi Chernov",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Sam Young",
+      "Alexi Chernov",
+      "Poisoned Soup",
+      "Chancellor Club",
+      "P Is For Poison",
+      "Episode Three Assassination"
+    ]
+  },
+  {
+    "id": "tv_42748",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, how does Eleanor prevent Wallace from eating the poisoned soup at the Chancellor Club?",
+    "answers": [
+      "She warns the police",
+      "She cuts the restaurant power",
+      "She switches the meals",
+      "She stages a fire alarm"
+    ],
+    "correctAnswer": "She switches the meals",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Eleanor",
+      "Wallace Webb",
+      "Poisoned Soup",
+      "Meal Swap",
+      "Chancellor Club",
+      "Episode Three Crisis"
+    ]
+  },
+  {
+    "id": "tv_42749",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, what name does MI5's Jim Perryman tell Wallace belongs to his wife?",
+    "answers": [
+      "Katia Chernov",
+      "Lily Morris",
+      "Daisy Reed",
+      "Bonnie Weir"
+    ],
+    "correctAnswer": "Lily Morris",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Lily Morris",
+      "Jim Perryman",
+      "Helen Webb",
+      "Hidden Identity",
+      "MI5 Investigation",
+      "Wallace Suspicions"
+    ]
+  },
+  {
+    "id": "tv_42750",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, what was Mrs Reed's codename while working undercover in East Berlin?",
+    "answers": [
+      "Wallflower",
+      "Wildflower",
+      "Black Door",
+      "Spitfire"
+    ],
+    "correctAnswer": "Wallflower",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Wallflower",
+      "Elizabeth Reed",
+      "East Berlin",
+      "Undercover Mission",
+      "Kestrel Origins",
+      "Episode Four Flashback"
+    ]
+  },
+  {
+    "id": "tv_42751",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, who is revealed as the father of Reed's daughter Vita?",
+    "answers": [
+      "Alexi Chernov",
+      "Mr Conteh",
+      "Patrick",
+      "Franz"
+    ],
+    "correctAnswer": "Franz",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Franz",
+      "Vita",
+      "Mrs Reed",
+      "East Berlin Family",
+      "Kestrel Origins",
+      "Episode Four Revelation"
+    ]
+  },
+  {
+    "id": "tv_42752",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, which former Kestrel operative does Helen assassinate in Dorset in a flashback?",
+    "answers": [
+      "Patrick",
+      "Mr Conteh",
+      "Franz",
+      "Hector Newman"
+    ],
+    "correctAnswer": "Franz",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Helen Webb",
+      "Franz",
+      "Dorset",
+      "Old Espionage Mission",
+      "Reed Orders",
+      "Episode Four Flashback"
+    ]
+  },
+  {
+    "id": "tv_42753",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, the footage Patrick uses to blackmail Sam shows Helen killing whom?",
+    "answers": [
+      "Jason Davies",
+      "Franz",
+      "Alexi Chernov",
+      "Erik Klein"
+    ],
+    "correctAnswer": "Franz",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Patrick",
+      "Sam Young",
+      "Helen Webb",
+      "Franz Assassination",
+      "Blackmail Footage",
+      "Past Secrets"
+    ]
+  },
+  {
+    "id": "tv_42754",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, which organisation is holding Mrs Reed captive when Helen and the others attempt to rescue her?",
+    "answers": [
+      "The Black Doves themselves",
+      "MI5",
+      "The Metropolitan Police",
+      "The CIA"
+    ],
+    "correctAnswer": "The Black Doves themselves",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Mrs Reed",
+      "Captivity",
+      "Black Doves Internal Plot",
+      "Murder Mix",
+      "Episode Five",
+      "Rescue Operation"
+    ]
+  },
+  {
+    "id": "tv_42755",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, which agent arrives in a van to help Helen's group escape with Reed after the rescue?",
+    "answers": [
+      "Katia Chernov",
+      "Marie",
+      "Cecile Mason",
+      "Laila Joshi"
+    ],
+    "correctAnswer": "Laila Joshi",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Laila Joshi",
+      "Mrs Reed",
+      "Rescue Van",
+      "Murder Mix",
+      "Episode Five",
+      "Escape Operation"
+    ]
+  },
+  {
+    "id": "tv_42756",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, to whom does Sam deliver Mrs Reed as part of his deal to end the blackmail?",
+    "answers": [
+      "Hector Newman",
+      "Mr Conteh",
+      "Patrick",
+      "Alexi Chernov"
+    ],
+    "correctAnswer": "Patrick",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Sam Young",
+      "Patrick",
+      "Mrs Reed",
+      "Blackmail Deal",
+      "Peace Summit",
+      "Series Two Finale"
+    ]
+  },
+  {
+    "id": "tv_42757",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, whom does Kestrel demand that Helen kill to save her children?",
+    "answers": [
+      "Sam Young",
+      "Wallace Webb",
+      "Mr Conteh",
+      "Jim Perryman"
+    ],
+    "correctAnswer": "Wallace Webb",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Helen Webb",
+      "Wallace Webb",
+      "Kestrel Ultimatum",
+      "Children Threatened",
+      "Peace Summit",
+      "Prime Minister"
+    ]
+  },
+  {
+    "id": "tv_42758",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, which trusted person inside the Webb home is exposed as a Kestrel collaborator?",
+    "answers": [
+      "Marie the nanny",
+      "Lenny Lines",
+      "Kai Ming Chen",
+      "Eleanor"
+    ],
+    "correctAnswer": "Marie the nanny",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Marie The Nanny",
+      "Kestrel Collaborator",
+      "Webb Family",
+      "Inside Betrayal",
+      "Peace Summit",
+      "Children Endangered"
+    ]
+  },
+  {
+    "id": "tv_42759",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, at which London attraction does Helen rescue her children from Kestrel?",
+    "answers": [
+      "The Tower of London",
+      "The London Eye",
+      "The Natural History Museum",
+      "London Zoo"
+    ],
+    "correctAnswer": "London Zoo",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "London Zoo",
+      "Helen Webb",
+      "Webb Children",
+      "Marie Betrayal",
+      "Peace Summit",
+      "Rescue Scene"
+    ]
+  },
+  {
+    "id": "tv_42760",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, how does double agent Dani die during the attack on headquarters?",
+    "answers": [
+      "She is poisoned at dinner",
+      "She drowns in the Thames",
+      "A grenade explodes in a lift",
+      "She is hit by a train"
+    ],
+    "correctAnswer": "A grenade explodes in a lift",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Dani",
+      "Grenade",
+      "Lift Explosion",
+      "Kestrel Attack",
+      "Headquarters Battle",
+      "Peace Summit"
+    ]
+  },
+  {
+    "id": "tv_42761",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, what is Vita's fate after the gunfight at headquarters?",
+    "answers": [
+      "She escapes to East Berlin",
+      "She dies from her wounds with Reed beside her",
+      "She becomes head of the Black Doves",
+      "She is arrested by MI5"
+    ],
+    "correctAnswer": "She dies from her wounds with Reed beside her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Vita",
+      "Mrs Reed",
+      "Fatal Wounds",
+      "Mother Daughter Farewell",
+      "Headquarters Battle",
+      "Peace Summit"
+    ]
+  },
+  {
+    "id": "tv_42762",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, how does Helen save Wallace during Kestrel's assassination ultimatum?",
+    "answers": [
+      "She shoots into the car window to help them escape",
+      "She swaps his car for a decoy taxi",
+      "She orders a helicopter evacuation",
+      "She has him hidden in the embassy"
+    ],
+    "correctAnswer": "She shoots into the car window to help them escape",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Helen Webb",
+      "Wallace Webb",
+      "Car Window Shot",
+      "Escape Plan",
+      "Kestrel Ultimatum",
+      "Peace Summit"
+    ]
+  },
+  {
+    "id": "tv_42763",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves series two, what working relationship with Reed does Helen seek as the group rebuilds?",
+    "answers": [
+      "To become Wallace's official bodyguard",
+      "To lead MI5 instead of Reed",
+      "To resign from espionage entirely",
+      "To become Reed's partner rather than her asset"
+    ],
+    "correctAnswer": "To become Reed's partner rather than her asset",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit S2",
+      "Helen Webb",
+      "Mrs Reed",
+      "Organisation Rebuild",
+      "New Partnership",
+      "Spy Career",
+      "Peace Summit Aftermath"
+    ]
+  },
+  {
+    "id": "tv_42764",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves, which two directors worked on the second series?",
+    "answers": [
+      "Alex Gabassi and Peter Morgan",
+      "Jed Mercurio and Hugo Blick",
+      "Julian Farino and Kieron Hawkes",
+      "Susanne Bier and Jeremy Saulnier"
+    ],
+    "correctAnswer": "Julian Farino and Kieron Hawkes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit Production",
+      "Julian Farino",
+      "Kieron Hawkes",
+      "Series Two",
+      "Episode Direction",
+      "Production Credits",
+      "Netflix Production"
+    ]
+  },
+  {
+    "id": "tv_42765",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves, for which Golden Globe category did Keira Knightley receive a nomination?",
+    "answers": [
+      "Best Actress in a Musical or Comedy Film",
+      "Best Actress in a Television Drama Series",
+      "Best Supporting Actress in a Television Series",
+      "Best Actress in a Television Limited Series"
+    ],
+    "correctAnswer": "Best Actress in a Television Drama Series",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit Awards",
+      "Keira Knightley",
+      "Golden Globe Nomination",
+      "2025 Golden Globes",
+      "Television Drama Actress",
+      "Awards Recognition",
+      "Drama Series"
+    ]
+  },
+  {
+    "id": "tv_42766",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves, which actor won a Gotham Television Award for supporting performance in a drama series?",
+    "answers": [
+      "Ben Whishaw",
+      "Andrew Buchan",
+      "Sam Riley",
+      "Andrew Koji"
+    ],
+    "correctAnswer": "Ben Whishaw",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit Awards",
+      "Ben Whishaw",
+      "2025 Gotham TV Awards",
+      "Outstanding Supporting Performance",
+      "Drama Series",
+      "Award Winner",
+      "Sam Young"
+    ]
+  },
+  {
+    "id": "tv_42767",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves, which costume designer received a BAFTA TV Craft nomination for work on the programme?",
+    "answers": [
+      "Jacqueline Durran",
+      "Suzanne Cave",
+      "Janie Bryant",
+      "Ian Fulcher"
+    ],
+    "correctAnswer": "Ian Fulcher",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit Awards",
+      "Ian Fulcher",
+      "2025 BAFTA Craft Awards",
+      "Costume Design",
+      "BAFTA Nomination",
+      "Creative Team",
+      "Costumes"
+    ]
+  },
+  {
+    "id": "tv_42768",
+    "category": "TV",
+    "topic": "Black Doves",
+    "question": "In Black Doves, for which Gotham Television Awards category was the series nominated in 2025?",
+    "answers": [
+      "Breakthrough Comedy Series",
+      "Outstanding Reality Series",
+      "Breakthrough Drama Series",
+      "Best Animated Programme"
+    ],
+    "correctAnswer": "Breakthrough Drama Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Programme: Black Doves",
+      "Black Doves Netflix",
+      "Espionage Drama",
+      "Written Questions",
+      "UK Television",
+      "Series Coverage Through 5 November 2026",
+      "Section: Audit Awards",
+      "2025 Gotham TV Awards",
+      "Breakthrough Drama Series",
+      "Programme Nomination",
+      "Drama Category",
+      "Awards Recognition",
+      "Production Achievement"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==117||
  new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
- questions.some((q,i)=>q.id!=='tv_'+String(26735+i)||q.category!=='TV'||q.topic!=='Black Doves'||
+ questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(26735+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.category!=='TV'||q.topic!=='Black Doves'||
  q.answers.length!==4||new Set(q.answers.map(s=>s.toLowerCase())).size!==4||
  q.answers.filter(a=>a===q.correctAnswer).length!==1||
  q.tags.length<14||new Set(q.tags).size!==q.tags.length||
