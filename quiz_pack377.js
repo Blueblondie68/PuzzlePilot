@@ -260,10 +260,23 @@ function addAudited377(block,programme,era){
     if(fields.length!==9||fields.some(x=>!x))throw Error('Pack 377 invalid added row: '+programme+' '+index);
     const [stem,correctAnswer,a,b,c,series,episode,focus,plot]=fields;
     const match=/^In (.+?), (.+)$/.exec(stem);
-    const question=match?
-      'In '+programme+', during "'+match[1]+'", '+match[2] :
-      (stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB'))?
-      stem:'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1));
+    const christmas=/^In the (\d{4}) Christmas special, (.+)$/.exec(stem);
+    let question;
+    if(christmas){
+      question='In '+programme+'\'s '+christmas[1]+' Christmas special, '+christmas[2];
+    }else if(match){
+      const series=/^Series (\d+) Episode (\w+)$/i.exec(match[1]);
+      if(series){
+        question='In '+programme+' (Series '+series[1]+', Episode '+series[2]+'), '+match[2];
+      }else if(match[1].endsWith(' sketch')){
+        question='In '+programme+'\'s "'+match[1].slice(0,-7)+'" sketch, '+match[2];
+      }else{
+        question='In '+programme+', during "'+match[1]+'", '+match[2];
+      }
+    }else{
+      question=stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB'))
+        ?stem:'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1);
+    }
     const answers=[a,b,c];answers.splice(questions.length%4,0,correctAnswer);
     const tags=[
       'Television','British Television','British Sitcom','Comedy','Sitcom',
