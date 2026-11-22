@@ -1,7 +1,13 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 498: Below Deck (Original Bravo Series), Season 8 (2020–21)
-// 51 MCQs, IDs tv_28088–tv_28138; excludes spin-offs.
+// 63 audited MCQs: 51 originals (one vague charter incident repaired) plus 12 independent additions.
+// Original IDs tv_28088–tv_28138; audit IDs tv_43180–tv_43191.
+// Excludes spin-offs.
 // Crew changes, Caribbean charter drama, 2020 pandemic, curtailed finale and virtual reunion.
 // Research: episode-by-episode synopses, primary Bravo recaps, Peacock, TheTVDB.
+// Audit 22 Nov 2026: original Bravo guest/crew incident reporting,
+// executive producer's COVID finale interview, season premiere and
+// 2021 Television Academy nominations, plus cast and career histories.
+// Original IDs preserved; all questions identify Below Deck.
 // Sources checked 18 November 2026:
 // https://www.tvmaze.com/shows/2900/below-deck/episodeguide
 // https://www.peacocktv.com/watch-online/tv/below-deck/7650158968969233112/seasons/8
@@ -52,7 +58,7 @@ const questions = [
     "id": "tv_28089",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What accident sends Captain Lee to hospital before the Season 8 charters get underway?",
+    "question": "In Below Deck Season 8, what accident sends Captain Lee to hospital before the Season 8 charters get underway?",
     "answers": [
       "A fall in the shower",
       "A fall from the tender",
@@ -182,7 +188,7 @@ const questions = [
     "id": "tv_28093",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member doubts whether working in the interior department matches her sailing ambitions?",
+    "question": "In Below Deck Season 8, which crew member doubts whether working in the interior department matches her sailing ambitions?",
     "answers": [
       "Izzy Wouters",
       "Elizabeth Frankini",
@@ -215,7 +221,7 @@ const questions = [
     "id": "tv_28094",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who loses her composure in front of Captain Lee during an early Season 8 charter?",
+    "question": "In Below Deck Season 8, who loses her composure in front of Captain Lee during an early Season 8 charter?",
     "answers": [
       "Izzy Wouters",
       "Francesca Rubi",
@@ -248,7 +254,7 @@ const questions = [
     "id": "tv_28095",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand gets caught up in an explosive argument between charter guests?",
+    "question": "In Below Deck Season 8, which deckhand gets caught up in an explosive argument between charter guests?",
     "answers": [
       "Eddie Lucas",
       "Shane Coopersmith",
@@ -280,7 +286,7 @@ const questions = [
     "id": "tv_28096",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which Australian stewardess arrives to strengthen the interior crew during Season 8?",
+    "question": "In Below Deck Season 8, which Australian stewardess arrives to strengthen the interior crew during Season 8?",
     "answers": [
       "Brianna Adekeye",
       "Sierra Storm",
@@ -313,7 +319,7 @@ const questions = [
     "id": "tv_28097",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member switches from housekeeping and service to working on deck in Season 8?",
+    "question": "In Below Deck Season 8, which crew member switches from housekeeping and service to working on deck in Season 8?",
     "answers": [
       "Izzy Wouters",
       "Elizabeth Frankini",
@@ -346,7 +352,7 @@ const questions = [
     "id": "tv_28098",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What type of charter party tests the crew in 'Max and Dax's Excellent Adventure'?",
+    "question": "In Below Deck Season 8, what type of charter party tests the crew in 'Max and Dax's Excellent Adventure'?",
     "answers": [
       "A wedding choir",
       "A group of twenty-somethings",
@@ -380,7 +386,7 @@ const questions = [
     "id": "tv_28099",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member's repeated mistakes force bosun Eddie to spend extra time supervising the deck team?",
+    "question": "In Below Deck Season 8, which crew member's repeated mistakes force bosun Eddie to spend extra time supervising the deck team?",
     "answers": [
       "Izzy Wouters",
       "Ashling Lorger",
@@ -413,7 +419,7 @@ const questions = [
     "id": "tv_28100",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What issue leads Captain Lee to confront the whole crew during the fourth episode of Season 8?",
+    "question": "In Below Deck Season 8, what issue leads Captain Lee to confront the whole crew during the fourth episode of Season 8?",
     "answers": [
       "A dispute over their wages",
       "A delayed food delivery",
@@ -445,7 +451,7 @@ const questions = [
     "id": "tv_28101",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What on-duty behaviour gets deckhand Shane into trouble on My Seanna?",
+    "question": "In Below Deck Season 8, what on-duty behaviour gets deckhand Shane into trouble on My Seanna?",
     "answers": [
       "Sleeping while he should be working",
       "Practising karaoke during service",
@@ -478,7 +484,7 @@ const questions = [
     "id": "tv_28102",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which new stewardess impresses Francesca while Elizabeth is under increasing scrutiny?",
+    "question": "In Below Deck Season 8, which new stewardess impresses Francesca while Elizabeth is under increasing scrutiny?",
     "answers": [
       "Amy Johnson",
       "Ashling Lorger",
@@ -512,7 +518,7 @@ const questions = [
     "id": "tv_28103",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What luxury delicacy features prominently in the demanding dinner service during the fifth and sixth episodes?",
+    "question": "In Below Deck Season 8, what luxury delicacy features prominently in the demanding dinner service during the fifth and sixth episodes?",
     "answers": [
       "Foie gras",
       "Wagyu beef",
@@ -545,7 +551,7 @@ const questions = [
     "id": "tv_28104",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which birthday milestone do charter guests celebrate during the difficult caviar dinner?",
+    "question": "In Below Deck Season 8, which birthday milestone do charter guests celebrate during the difficult caviar dinner?",
     "answers": [
       "A twenty-first birthday",
       "A seventieth birthday",
@@ -578,7 +584,7 @@ const questions = [
     "id": "tv_28105",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which stewardess's work continues to frustrate chief stew Francesca during 'Just Another Day in Paradise'?",
+    "question": "In Below Deck Season 8, which stewardess's work continues to frustrate chief stew Francesca during 'Just Another Day in Paradise'?",
     "answers": [
       "Elizabeth Frankini",
       "Ashling Lorger",
@@ -611,7 +617,7 @@ const questions = [
     "id": "tv_28106",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member is dismissed after repeated failures to meet Eddie's expectations on deck?",
+    "question": "In Below Deck Season 8, which crew member is dismissed after repeated failures to meet Eddie's expectations on deck?",
     "answers": [
       "Robert Phillips",
       "Shane Coopersmith",
@@ -645,7 +651,7 @@ const questions = [
     "id": "tv_28107",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member abruptly announces that she is leaving after reacting to a demanding preference sheet?",
+    "question": "In Below Deck Season 8, which crew member abruptly announces that she is leaving after reacting to a demanding preference sheet?",
     "answers": [
       "Elizabeth Frankini",
       "Ashling Lorger",
@@ -678,7 +684,7 @@ const questions = [
     "id": "tv_28108",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which two crew members develop an increasingly obvious attraction as the chef drama unfolds?",
+    "question": "In Below Deck Season 8, which two crew members develop an increasingly obvious attraction as the chef drama unfolds?",
     "answers": [
       "Francesca Rubi and Eddie Lucas",
       "Izzy Wouters and Shane Coopersmith",
@@ -711,7 +717,7 @@ const questions = [
     "id": "tv_28109",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who takes the vacant deckhand position on My Seanna after Shane's departure?",
+    "question": "In Below Deck Season 8, who takes the vacant deckhand position on My Seanna after Shane's departure?",
     "answers": [
       "Rob Phillips",
       "Ross Inia",
@@ -744,7 +750,7 @@ const questions = [
     "id": "tv_28110",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which departing chef unexpectedly returns and resumes work before the next charter?",
+    "question": "In Below Deck Season 8, which departing chef unexpectedly returns and resumes work before the next charter?",
     "answers": [
       "Matt Burns",
       "Rachel Hargrove",
@@ -776,7 +782,7 @@ const questions = [
     "id": "tv_28111",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who steps in to resolve a difficult situation that leaves bosun Eddie under pressure?",
+    "question": "In Below Deck Season 8, who steps in to resolve a difficult situation that leaves bosun Eddie under pressure?",
     "answers": [
       "Guest Charley",
       "Deckhand Rob Phillips",
@@ -809,7 +815,7 @@ const questions = [
     "id": "tv_28112",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who is demoted after disagreements over the interior department's performance in Season 8?",
+    "question": "In Below Deck Season 8, who is demoted after disagreements over the interior department's performance in Season 8?",
     "answers": [
       "Ashling Lorger",
       "Rachel Hargrove",
@@ -842,7 +848,7 @@ const questions = [
     "id": "tv_28113",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member tries to regain Captain Lee's confidence after her earlier abrupt departure?",
+    "question": "In Below Deck Season 8, which crew member tries to regain Captain Lee's confidence after her earlier abrupt departure?",
     "answers": [
       "Rachel Hargrove",
       "Ashling Lorger",
@@ -875,7 +881,7 @@ const questions = [
     "id": "tv_28114",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which pair's relationship grows closer during the episode 'The Devil You Know'?",
+    "question": "In Below Deck Season 8, which pair's relationship grows closer during the episode 'The Devil You Know'?",
     "answers": [
       "Shane Coopersmith and Ashling Lorger",
       "James Hough and Elizabeth Frankini",
@@ -908,7 +914,7 @@ const questions = [
     "id": "tv_28115",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What professional background makes the new charter group unusually knowledgeable about yacht operations?",
+    "question": "In Below Deck Season 8, what professional background makes the new charter group unusually knowledgeable about yacht operations?",
     "answers": [
       "They are professional tennis players",
       "They are stage actors",
@@ -941,7 +947,7 @@ const questions = [
     "id": "tv_28116",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member starts feeling unwell just as the experienced sailors come aboard?",
+    "question": "In Below Deck Season 8, which crew member starts feeling unwell just as the experienced sailors come aboard?",
     "answers": [
       "Ashling Lorger",
       "Rachel Hargrove",
@@ -973,14 +979,14 @@ const questions = [
     "id": "tv_28117",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Why does Captain Lee have to intervene personally with an intoxicated charter guest?",
+    "question": "In Below Deck Season 8, which guest did Captain Lee order off My Seanna for jumping into the water at night?",
     "answers": [
-      "The guest defies his instructions",
-      "The guest refuses to leave the galley",
-      "The guest breaks a painting",
-      "The guest demands a change of captain"
+      "Delores",
+      "Charley Walters",
+      "Lexi",
+      "Jemele Hill"
     ],
-    "correctAnswer": "The guest defies his instructions",
+    "correctAnswer": "Delores",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -988,25 +994,26 @@ const questions = [
       "Reality Television",
       "American Television",
       "Programme: Below Deck",
-      "Original Bravo Series",
-      "Season 8",
-      "Broadcast: 2020–2021",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
       "Yacht: My Seanna",
-      "Region: Caribbean",
-      "Episode: S08E10 Steamy Vibes",
-      "Storyline: Drunk charter guest challenges authority",
-      "Storyline: Captain enforces safety rules",
-      "Person: Lee Rosbach",
-      "Person: Delores",
-      "Specific answer: The guest defies his instructions",
-      "Written Quiz"
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Charter Guest Incident",
+      "Delores",
+      "Captain Lee Rosbach",
+      "Night Swimming",
+      "Guest Ejected",
+      "2021 Broadcast",
+      "Safety Disobedience"
     ]
   },
   {
     "id": "tv_28118",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What infection-control measure is taken as Izzy's illness worsens aboard My Seanna?",
+    "question": "In Below Deck Season 8, what infection-control measure is taken as Izzy's illness worsens aboard My Seanna?",
     "answers": [
       "She is given extra night shifts",
       "She is placed in quarantine",
@@ -1039,7 +1046,7 @@ const questions = [
     "id": "tv_28119",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Whose erratic behaviour spoils the crew's relaxing day at a resort after a difficult charter?",
+    "question": "In Below Deck Season 8, whose erratic behaviour spoils the crew's relaxing day at a resort after a difficult charter?",
     "answers": [
       "Ashling Lorger",
       "James Hough",
@@ -1072,7 +1079,7 @@ const questions = [
     "id": "tv_28120",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What problem brings Francesca and Eddie together to address professionalism in episode eleven?",
+    "question": "In Below Deck Season 8, what problem brings Francesca and Eddie together to address professionalism in episode eleven?",
     "answers": [
       "Shane's missing passport",
       "Rachel's late food order",
@@ -1107,7 +1114,7 @@ const questions = [
     "id": "tv_28121",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What painful family experience does Captain Lee discuss with Francesca during Season 8?",
+    "question": "In Below Deck Season 8, what painful family experience does Captain Lee discuss with Francesca during Season 8?",
     "answers": [
       "The death of his son",
       "The loss of his sister",
@@ -1140,7 +1147,7 @@ const questions = [
     "id": "tv_28122",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What does Eddie arrange when Izzy's symptoms remain troubling?",
+    "question": "In Below Deck Season 8, what does Eddie arrange when Izzy's symptoms remain troubling?",
     "answers": [
       "A surprise birthday party",
       "Medical attention ashore",
@@ -1173,7 +1180,7 @@ const questions = [
     "id": "tv_28123",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Why does Francesca worry about completing the next charter in 'Blue Skies and UTIs'?",
+    "question": "In Below Deck Season 8, why does Francesca worry about completing the next charter in 'Blue Skies and UTIs'?",
     "answers": [
       "All fresh produce is lost",
       "The tender is impounded",
@@ -1206,7 +1213,7 @@ const questions = [
     "id": "tv_28124",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What environmental activity brings My Seanna's crew together before another workplace dispute?",
+    "question": "In Below Deck Season 8, what environmental activity brings My Seanna's crew together before another workplace dispute?",
     "answers": [
       "A coral-transplant dive",
       "A dolphin census",
@@ -1239,7 +1246,7 @@ const questions = [
     "id": "tv_28125",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What unauthorised use of guest accommodation angers Francesca in 'James' Big Cannoli'?",
+    "question": "In Below Deck Season 8, what unauthorised use of guest accommodation angers Francesca in 'James' Big Cannoli'?",
     "answers": [
       "Crew members sleep in a guest cabin",
       "A guest cabin is converted to a gym",
@@ -1273,7 +1280,7 @@ const questions = [
     "id": "tv_28126",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member is promoted to lead deckhand in Season 8?",
+    "question": "In Below Deck Season 8, which crew member is promoted to lead deckhand in Season 8?",
     "answers": [
       "Shane Coopersmith",
       "Izzy Wouters",
@@ -1306,7 +1313,7 @@ const questions = [
     "id": "tv_28127",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "How old does stewardess Elizabeth turn when her birthday expectations are disappointed?",
+    "question": "In Below Deck Season 8, how old does stewardess Elizabeth turn when her birthday expectations are disappointed?",
     "answers": [
       "Thirty-five",
       "Forty",
@@ -1339,7 +1346,7 @@ const questions = [
     "id": "tv_28128",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member tells a white lie to a charter guest's son, causing later consequences?",
+    "question": "In Below Deck Season 8, which crew member tells a white lie to a charter guest's son, causing later consequences?",
     "answers": [
       "Francesca Rubi",
       "Rachel Hargrove",
@@ -1371,7 +1378,7 @@ const questions = [
     "id": "tv_28129",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What developing world crisis creates anxiety among the yacht crew as news reaches them from home?",
+    "question": "In Below Deck Season 8, what developing world crisis creates anxiety among the yacht crew as news reaches them from home?",
     "answers": [
       "The COVID-19 pandemic",
       "The global banking crisis",
@@ -1403,7 +1410,7 @@ const questions = [
     "id": "tv_28130",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand resents Izzy's elevation to lead deckhand during the final charters?",
+    "question": "In Below Deck Season 8, which deckhand resents Izzy's elevation to lead deckhand during the final charters?",
     "answers": [
       "James Hough",
       "Rob Phillips",
@@ -1436,7 +1443,7 @@ const questions = [
     "id": "tv_28131",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What sort of mishap increases tension between the chef and the interior department in 'Don't Cry for Me Antigua'?",
+    "question": "In Below Deck Season 8, what sort of mishap increases tension between the chef and the interior department in 'Don't Cry for Me Antigua'?",
     "answers": [
       "A missing birthday cake",
       "An unlit barbecue",
@@ -1469,7 +1476,7 @@ const questions = [
     "id": "tv_28132",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member is distracted by James instead of concentrating on her stewardess duties?",
+    "question": "In Below Deck Season 8, which crew member is distracted by James instead of concentrating on her stewardess duties?",
     "answers": [
       "Ashling Lorger",
       "Francesca Rubi",
@@ -1502,7 +1509,7 @@ const questions = [
     "id": "tv_28133",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which stewardess is fired after Francesca's repeated complaints about her performance?",
+    "question": "In Below Deck Season 8, which stewardess is fired after Francesca's repeated complaints about her performance?",
     "answers": [
       "Elizabeth Frankini",
       "Ashling Lorger",
@@ -1536,7 +1543,7 @@ const questions = [
     "id": "tv_28134",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What global emergency causes the Season 8 charter schedule to end sooner than planned?",
+    "question": "In Below Deck Season 8, what global emergency causes the Season 8 charter schedule to end sooner than planned?",
     "answers": [
       "A fuel embargo",
       "The COVID-19 pandemic",
@@ -1569,7 +1576,7 @@ const questions = [
     "id": "tv_28135",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "To which rank does Captain Lee promote Eddie at the end of the eighth season?",
+    "question": "In Below Deck Season 8, to which rank does Captain Lee promote Eddie at the end of the eighth season?",
     "answers": [
       "Chief engineer",
       "Second steward",
@@ -1635,7 +1642,7 @@ const questions = [
     "id": "tv_28137",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand is absent from the Season 8 reunion because he is reportedly prospecting for gold in Fiji?",
+    "question": "In Below Deck Season 8, which deckhand is absent from the Season 8 reunion because he is reportedly prospecting for gold in Fiji?",
     "answers": [
       "Rob Phillips",
       "Eddie Lucas",
@@ -1668,7 +1675,7 @@ const questions = [
     "id": "tv_28138",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which cast member's French bulldogs interrupt the virtual Season 8 reunion?",
+    "question": "In Below Deck Season 8, which cast member's French bulldogs interrupt the virtual Season 8 reunion?",
     "answers": [
       "Shane Coopersmith",
       "James Hough",
@@ -1698,9 +1705,423 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==51||new Set(questions.map(q=>q.id)).size!==questions.length||
+// Independently verified audit questions for the original show's eighth season.
+const AUDIT_ORIGINAL_COUNT=51;
+const AUDIT_FIRST_ID=43180;
+const auditQuestions=[
+  {
+    "id": "tv_43180",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, which Caribbean island hosted filming for the eighth Below Deck season?",
+    "answers": [
+      "St Barts",
+      "Antigua",
+      "Barbados",
+      "Martinique"
+    ],
+    "correctAnswer": "Antigua",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Antigua",
+      "Filming Location",
+      "2020 Charters",
+      "Island Setting",
+      "Caribbean Return",
+      "Production"
+    ]
+  },
+  {
+    "id": "tv_43181",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, what was the title of Below Deck Season 8's opening episode?",
+    "answers": [
+      "There's No Place Like Home",
+      "Man Down",
+      "Runaway Chef",
+      "Steamy Vibes"
+    ],
+    "correctAnswer": "There's No Place Like Home",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Theres No Place Like Home",
+      "Season Eight Premiere",
+      "2 November 2020",
+      "Episode One",
+      "Bravo Schedule",
+      "Episode Title"
+    ]
+  },
+  {
+    "id": "tv_43182",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, which returning primary charter guest featured in the eighth-season premiere?",
+    "answers": [
+      "Dean Slover",
+      "Jemele Hill",
+      "Timothy Sykes",
+      "Charley Walters"
+    ],
+    "correctAnswer": "Charley Walters",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Guests",
+      "Charley Walters",
+      "Returning Primary",
+      "Season Eight Premiere",
+      "Third Appearance",
+      "Season Five",
+      "Season Six"
+    ]
+  },
+  {
+    "id": "tv_43183",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, which deckhand left My Seanna on the first day of Season 8 because of a family emergency?",
+    "answers": [
+      "Shane Coopersmith",
+      "Rob Phillips",
+      "Avery Russell",
+      "James Hough"
+    ],
+    "correctAnswer": "Avery Russell",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Avery Russell",
+      "Early Crew Departure",
+      "Family Emergency",
+      "Grandmother Ill",
+      "First Episode",
+      "2020 Season"
+    ]
+  },
+  {
+    "id": "tv_43184",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, which two laundry products did Elizabeth Frankini mix and create hazardous fumes?",
+    "answers": [
+      "Vinegar and water",
+      "Bleach and soap",
+      "Fabric conditioner and starch",
+      "Salt and baking soda"
+    ],
+    "correctAnswer": "Bleach and soap",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Safety",
+      "Elizabeth Frankini",
+      "Bleach",
+      "Laundry Soap",
+      "Toxic Fumes",
+      "Laundry Room",
+      "Safety Error"
+    ]
+  },
+  {
+    "id": "tv_43185",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, which distinction did Elizabeth Frankini's dismissal have in the original Below Deck series?",
+    "answers": [
+      "She was its first stewardess to be fired",
+      "She was its first captain to resign",
+      "She was its first chief engineer to be dismissed",
+      "She was its first guest to receive a refund"
+    ],
+    "correctAnswer": "She was its first stewardess to be fired",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit History",
+      "Elizabeth Frankini",
+      "First Stewardess Fired",
+      "Francesca Rubi",
+      "Captain Lee",
+      "Season Eight",
+      "Series Milestone"
+    ]
+  },
+  {
+    "id": "tv_43186",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, how many scheduled charter groups cancelled after the COVID outbreak brought the Season 8 finale forward?",
+    "answers": [
+      "One",
+      "Four",
+      "Six",
+      "Two"
+    ],
+    "correctAnswer": "Two",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Two Cancelled Groups",
+      "COVID 19",
+      "Shortened Season",
+      "2020 Filming",
+      "Captain Lee",
+      "Finale"
+    ]
+  },
+  {
+    "id": "tv_43187",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, what did executive producer Lauren Simms add in post-production to document the pandemic's progression?",
+    "answers": [
+      "A fictional narrator",
+      "New CGI weather warnings",
+      "Date stamps showing when scenes took place",
+      "A laugh track"
+    ],
+    "correctAnswer": "Date stamps showing when scenes took place",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Lauren Simms",
+      "Post Production",
+      "Episode Date Stamps",
+      "COVID 19 Timeline",
+      "Documentary Method",
+      "Editing"
+    ]
+  },
+  {
+    "id": "tv_43188",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, how many Emmy nominations did Below Deck receive in 2021 following Season 8?",
+    "answers": [
+      "None",
+      "Two",
+      "Five",
+      "Eight"
+    ],
+    "correctAnswer": "Two",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2021 Emmy Awards",
+      "Two Nominations",
+      "Unstructured Reality",
+      "Picture Editing",
+      "Television Academy",
+      "Recognition"
+    ]
+  },
+  {
+    "id": "tv_43189",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, what commercial marine work had Eddie Lucas been doing before returning for Season 8?",
+    "answers": [
+      "Working on tugboats",
+      "Commanding cruise liners",
+      "Building submarines",
+      "Operating a fishing trawler"
+    ],
+    "correctAnswer": "Working on tugboats",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Career",
+      "Eddie Lucas",
+      "Tugboat First Mate",
+      "Commercial Maritime",
+      "1600 Ton Licence",
+      "Season Eight Return",
+      "Career"
+    ]
+  },
+  {
+    "id": "tv_43190",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, which future Below Deck Season 8 chef had previously worked on a yacht with Kate Chastain in 2013?",
+    "answers": [
+      "Leon Walker",
+      "Matt Burns",
+      "Adrian Martin",
+      "Rachel Hargrove"
+    ],
+    "correctAnswer": "Rachel Hargrove",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Rachel Hargrove",
+      "Kate Chastain",
+      "2013 Past Colleagues",
+      "Pre Bravo Career",
+      "Chef",
+      "Yachting History"
+    ]
+  },
+  {
+    "id": "tv_43191",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 8, which breakfast dish cooked by Rachel Hargrove particularly impressed Captain Lee?",
+    "answers": [
+      "Poached salmon",
+      "Sushi",
+      "French toast",
+      "Beef cheeks"
+    ],
+    "correctAnswer": "French toast",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 8 (2020–2021)",
+      "Yacht: My Seanna",
+      "Caribbean Charters",
+      "Written Quiz",
+      "Section: Audit Food",
+      "Rachel Hargrove",
+      "French Toast",
+      "Captain Lee Rosbach",
+      "Favourite Breakfast",
+      "Galley",
+      "2020 Season"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==63||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(28088+i)||q.topic!=='Below Deck'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(28088+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<14||
 new Set(q.tags).size!==q.tags.length||q.dailyEligible!==true||
