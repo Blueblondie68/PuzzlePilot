@@ -161,7 +161,7 @@ function addFacts(block, section, episode = null) {
       : `In ${PROGRAMME}, ${stem[0].toLowerCase()}${stem.slice(1)}`;
     const tags = [...new Map([
       'Television', 'British Television', 'ITV', 'Crime Drama', 'Police Procedural',
-      PROGRAMME, section, ...(episode ? [episode] : []), correctAnswer, ...specific
+      PROGRAMME, 'Programme: '+PROGRAMME, section, ...(episode ? [episode] : []), correctAnswer, ...specific
     ].map(tag => [tag.toLowerCase().replace(/[^a-z0-9]/g, ''), tag])).values()];
     const key = question.toLowerCase().replace(/[^a-z0-9]/g, '');
     if (seen.has(key)) throw new Error(`Repeated question: ${id}`);
@@ -171,7 +171,7 @@ function addFacts(block, section, episode = null) {
       throw new Error(`Invalid options, difficulty or tags: ${id}`);
     }
     seen.add(key);
-    questions.push({ id, category: 'Television', question, answers, correctAnswer, difficulty, tags, dailyEligible: true });
+    questions.push({ id, category: 'Television', programme: PROGRAMME, question, answers, correctAnswer, difficulty, tags, dailyEligible: true });
   }
 }
 
@@ -181,4 +181,102 @@ addFacts(deadEnd, 'Series 14 2008 Dead End', 'Dead End');
 addFacts(publicInterest, 'Series 14 2008 In the Public Interest', 'In the Public Interest');
 addFacts(finalCase, 'Series 15 2010 If Dogs Run Free', 'If Dogs Run Free');
 
-module.exports = questions;
+
+
+// Final A Touch of Frost audit: original tv_20474–tv_20601 preserved.
+// Series 14 (2008): Mind Games, Dead End, In the Public Interest.
+// Series 15 (2010): If Dogs Run Free Parts One and Two.
+// Independent episode / cast research:
+// https://en.wikipedia.org/wiki/List_of_A_Touch_of_Frost_episodes
+// https://epguides.com/touchoffrost/guide.shtml
+// https://www.tvmaze.com/episodes/371951/a-touch-of-frost-15x01-if-dogs-run-free-part-1
+// https://www.tvmaze.com/episodes/371952/a-touch-of-frost-15x02-if-dogs-run-free-part-2
+// New IDs start at tv_40718.
+const audit385_mind=`In Mind Games, which actor portrayed wrongly convicted villager Carl Meyer?|Jonathan Slinger|John Castle|Nicholas Farrell|Keith Barron|Mind Games|Series 14|Carl Meyer guest actor
+In Mind Games, who played David Crewes, father of one of the murdered girls?|Keith Barron|John Castle|Joseph Marcell|Julian Forsyth|Mind Games|Series 14|David Crewes performer
+In Mind Games, which actress played Harriet Collingham's mother Gloria?|Paula Wilcox|Julia Watson|Elizabeth Berrington|Juliet Howland|Mind Games|Series 14|Gloria Collingham performer
+In Mind Games, who portrayed Harriet's father Charlie Collingham?|John Castle|Keith Barron|Jonathan Slinger|Nicholas Farrell|Mind Games|Series 14|Charlie Collingham actor
+In Mind Games, which actress portrayed the Reverend Lucy Daniels?|Julia Watson|Paula Wilcox|Elizabeth Berrington|Sarah-Jayne Steed|Mind Games|Series 14|Village vicar actress
+In Mind Games, who played millionaire Jason Cohu?|Ariyon Bakare|Joseph Marcell|Vincent Leigh|Dhafer L'Abidine|Mind Games|Series 14|Jason Cohu guest actor
+In Mind Games, who portrayed Joshua Ray, the millionaire's father-in-law?|Joseph Marcell|Ariyon Bakare|John Castle|Keith Barron|Mind Games|Series 14|Joshua Ray guest actor
+In Mind Games, which actor played motivational speaker Roman Cassell?|Dhafer L'Abidine|Vincent Leigh|Jonathan Slinger|Joseph Marcell|Mind Games|Series 14|Roman Cassell guest actor
+In Mind Games, who portrayed Roman Cassell's fellow motivational speaker Tom Brody?|Vincent Leigh|Jonathan Slinger|Ariyon Bakare|Nicholas Farrell|Mind Games|Series 14|Tom Brody guest actor
+In Mind Games, what did the discovery of Harriet's remains establish about when she was buried?|She was buried after Carl Meyer's imprisonment|She was buried before Jane disappeared|She was buried during the week of Carl's trial|She was buried by a new housing contractor|Mind Games|Series 14|Evidence establishing Carl's innocence
+In Mind Games, what had David Crewes done to his niece Harriet that he was trying to conceal?|Sexually abused her|Stolen her inheritance|Coerced her to join a gang|Used her identity to commit fraud|Mind Games|Series 14|Motive behind the killings
+In Mind Games, who first came across Jane Crewes's body before being wrongly convicted?|Carl Meyer|Charlie Collingham|Roman Cassell|Jason Cohu|Mind Games|Series 14|Wrongful-conviction case origin`;
+
+const audit385_dead=`In Dead End, which actor played the bereaved family's son Andy Heal?|Stephen Kennedy|Jason Maza|Brett Allen|Daren Elliott Holmes|Dead End|Series 14|Andy Heal guest actor
+In Dead End, who portrayed former lorry driver Mark Harrison?|Daren Elliott Holmes|Stephen Kennedy|Brett Allen|Richard Clews|Dead End|Series 14|Mark Harrison performer
+In Dead End, which actress played Linda Heal?|Dearbhla Molloy|Sarah Ball|Joanne Mitchell|Sally Hurst|Dead End|Series 14|Linda Heal guest actress
+In Dead End, which actor played the youngest Heal son John?|Jason Maza|Brett Allen|Stephen Kennedy|Joe Renton|Dead End|Series 14|John Heal guest actor
+In Dead End, who portrayed the bereaved widower Robert Trusham?|Brett Allen|Stephen Kennedy|Daren Elliott Holmes|Joe Renton|Dead End|Series 14|Robert Trusham performer
+In Dead End, which actor played clown and jewellery thief Lofty Parker?|Richard Clews|Vincent Riotta|Daren Elliott Holmes|Stephen Kennedy|Dead End|Series 14|Lofty Parker guest actor
+In Dead End, who portrayed Joan Atkins, who had hosted the clown's final performance?|Joanne Mitchell|Dearbhla Molloy|Sarah Ball|Sally Hurst|Dead End|Series 14|Joan Atkins performer
+In Dead End, what piece of jewellery on the dead clown helps expose his thefts?|A gold ring|A diamond necklace|A silver brooch|A pearl bracelet|Dead End|Series 14|Clown's stolen jewellery evidence
+In Dead End, what blunder does Joan Atkins's husband make after confronting the thief?|He takes back the wrong jewellery|He leaves his wallet at the scene|He calls the wrong police station|He mistakes the victim for a bus conductor|Dead End|Series 14|Mistake after clown confrontation
+In Dead End, what does the abduction gang do once they learn the conductress needs insulin?|They release her from captivity|They take her to the hospital|They let her use a mobile phone|They give her a second hostage|Dead End|Series 14|Diabetic hostage released
+In Dead End, which officer unknowingly operates the lift that kills the hanging bus driver?|George Toolan|Norman Mullett|Annie Marsh|Ernie Trigg|Dead End|Series 14|Fatal lift-shaft incident
+In Dead End, what does widower Robert Trusham do after the lift-shaft killing?|He gives himself up to police|He runs away to Scotland|He tries to kill Frost|He leaves the country by ferry|Dead End|Series 14|Kidnapper's surrender`;
+
+const audit385_public=`In In the Public Interest, which actress played the murder victim Rosemary Morrow?|Sarah Matravers|Mel Martin|Lauren Ward|Julia Dalkin|In the Public Interest|Series 14|Rosemary Morrow guest actress
+In In the Public Interest, who portrayed Callum's personal assistant Michael Carne?|Tam Williams|Adrian Lukis|Paul Shane|Andrew Havill|In the Public Interest|Series 14|Michael Carne actor
+In In the Public Interest, what is the name of the visiting anthropologist who promotes the ritual-murder theory?|Miriam Walker|Michelle Carne|Vanessa Allen|Rosemary Morrow|In the Public Interest|Series 14|Visiting anthropologist's name
+In In the Public Interest, which actress played anthropologist Miriam Walker?|Lauren Ward|Sarah Matravers|Mel Martin|Julia Dalkin|In the Public Interest|Series 14|Miriam Walker actress
+In In the Public Interest, which actor portrayed a character known as Diesel Bob?|Paul Shane|Tam Williams|Adrian Lukis|Andrew Havill|In the Public Interest|Series 14|Diesel Bob guest actor
+In In the Public Interest, who played the local newspaper's deputy editor?|Mel Martin|Lauren Ward|Sarah Matravers|Aoife McMahon|In the Public Interest|Series 14|Deputy editor guest performer
+In In the Public Interest, what personal crisis follows the newspapers' smear of the youth-club leadership?|One youth leader attempts suicide|The club treasurer leaves the country|The chairman is arrested for bribery|A volunteer burns down the premises|In the Public Interest|Series 14|Effect of smear campaign
+In In the Public Interest, what does Michael Carne try to do to Frost during the confrontation at Callum's house?|Kill him|Kidnap him|Bribe him|Frame him for fraud|In the Public Interest|Series 14|Assistant attacks detective`;
+
+const audit385_final=`In If Dogs Run Free, which actor played crime boss Berland's teenage son Sean?|Chris Overton|Peter Kelly|Adam James|Simon Shepherd|If Dogs Run Free|Series 15|Sean Berland guest actor
+In If Dogs Run Free, which actor portrayed the murdered teenager Brian?|Peter Kelly|Chris Overton|Simon Shepherd|Adam James|If Dogs Run Free|Series 15|Brian guest performer
+In If Dogs Run Free, who played solicitor Greg Salmond?|Adam James|George Costigan|Simon Shepherd|James McKenna|If Dogs Run Free|Series 15|Greg Salmond performer
+In If Dogs Run Free, which actress portrayed Christine's daughter Sophie Moorhead?|Poppy Lee Friar|Fiona Glascott|Niamh Cusack|Phyllis Logan|If Dogs Run Free|Series 15|Sophie Moorhead performer
+In If Dogs Run Free, which actor played Tom Viner?|Simon Shepherd|Adam James|Adrian Dunbar|James McKenna|If Dogs Run Free|Series 15|Tom Viner guest actor
+In If Dogs Run Free, who portrayed Sergeant Don Brady?|James McKenna|John Lyons|Arthur White|Adam James|If Dogs Run Free|Series 15|Sgt Brady actor
+In If Dogs Run Free, which actress portrayed Dr Amanda Chase?|Julia St. John|Fiona Glascott|Poppy Lee Friar|Niamh Cusack|If Dogs Run Free|Series 15|Dr Chase actress
+In If Dogs Run Free, what additional financial crime does Berland run alongside drug dealing and dog fighting?|Money laundering|Counterfeit art auctions|Insurance-claims fraud|Illegal bank lending|If Dogs Run Free|Series 15|Crime boss financial operation
+In If Dogs Run Free, which other parents does Berland pressure into providing false alibis for the boys?|Neil's parents|Christine's parents|Brian's parents|Jenny's parents|If Dogs Run Free|Series 15|False alibi coercion
+In If Dogs Run Free, which long-serving officer recognises witness descriptions that implicate the police archivist?|George Toolan|Norman Mullett|Jack Frost|Ernie Trigg|If Dogs Run Free|Series 15|Copycat investigator's discovery
+In If Dogs Run Free, how had Frost known archivist Jenny Mallinger years before the crimes?|He knew her when she was a child|They were married briefly|They attended the same university|She had been his superior officer|If Dogs Run Free|Series 15|Frost's childhood acquaintance
+In If Dogs Run Free, what kind of crime from Frost's early cases is recreated by the copycat?|A mugging|An armed bank siege|A jewellery-shop robbery|An art-gallery theft|If Dogs Run Free|Series 15|Copycat incident
+In If Dogs Run Free, what violent incident involves solicitor Greg Salmond's stolen car?|A hit-and-run involving a girl|A shoot-out at a railway station|An arson attack on a warehouse|A robbery at the zoo|If Dogs Run Free|Series 15|Stolen car used in a collision
+In If Dogs Run Free, what recording links Salmond to the criminal who supplied cocaine?|CCTV footage of a drug purchase|A secretly recorded phone call|A police body-camera interview|A recording from a nightclub DJ|If Dogs Run Free|Series 15|Solicitor's drug-deal evidence
+In If Dogs Run Free, who had taken Salmond's stolen car on a joyride?|His colleagues|Sean Berland and Neil|His estranged wife and daughter|Officers from Denton CID|If Dogs Run Free|Series 15|Solicitor vehicle thieves
+In If Dogs Run Free, why do Neil and his parents finally decide to tell police the truth?|They believe Sean wanted them to come clean|They receive a financial reward|They are being offered immunity by Frost|They have moved abroad|If Dogs Run Free|Series 15|Witnesses agree to cooperate`;
+const audit385Key=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit385(block,episode){
+ for(const [index,line] of block.trim().split('\n').entries()){
+  const f=line.split('|').map(x=>x.trim());
+  if(f.length!==8||f.some(x=>!x))throw Error('Pack 385 row '+episode+' '+index+' invalid');
+  const [stem,correctAnswer,a,b,c,sourceEpisode,series,focus]=f;
+  const match=/^In (.+?), (.+)$/.exec(stem);
+  if(!match||sourceEpisode!==episode||match[1]!==sourceEpisode)throw Error('Pack 385 episode mismatch '+index);
+  const question='In '+PROGRAMME+' episode "'+episode+'", '+match[2];
+  const answers=[a,b,c];answers.splice(questions.length%4,0,correctAnswer);
+  const tags=['Television','British Television','ITV','Crime Drama','Police Procedural',
+   PROGRAMME,'Programme: '+PROGRAMME,'Series: '+series,'Episode: '+episode,
+   'Story or guest cast: '+focus,'Correct answer: '+correctAnswer,
+   'Episode case: '+episode,'Focus: '+focus,'Era: 2008–2010'];
+  questions.push({id:'tv_'+(40718+questions.length-128),
+   category:'Television',programme:PROGRAMME,question,answers,correctAnswer,
+   difficulty:'Medium',tags,dailyEligible:true});
+ }
+}
+addAudit385(audit385_mind,'Mind Games');
+addAudit385(audit385_dead,'Dead End');
+addAudit385(audit385_public,'In the Public Interest');
+addAudit385(audit385_final,'If Dogs Run Free');
+const audit385IDs=new Set(),audit385Stems=new Set();
+for(const q of questions){
+ const text=audit385Key(q.question);
+ if(q.programme!==PROGRAMME||q.category!=='Television'||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ q.answers.length!==4||new Set(q.answers.map(audit385Key)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ audit385IDs.has(q.id)||audit385Stems.has(text))
+ throw Error('Pack 385 final audit failed '+q.id);
+ audit385IDs.add(q.id);audit385Stems.add(text);
+}
+module.exports=questions;
