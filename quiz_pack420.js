@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 420
 // All Saints (Australia): Season 1 (1998), 41 episodes.
 // Follows Pack 419 (Albion Market). First ID: tv_23942.
-// WordPad-ready CommonJS. All Saints stays ongoing in the master tracker.
+// WordPad-ready CommonJS. The series ended in 2009; master tracker coverage is still incomplete.
 // One question per line: question | correct | three wrong | difficulty | seven individual tags.
 // Checked against the 1998 episode guide, cast listings and character summaries.
 'use strict';
@@ -139,9 +139,42 @@ Whose pregnancy loss strained the marriage of Ben and Stephanie Markham?|Stephan
 Which patient was linked to Jared's worries about HIV exposure near the end of the first season?|Angie|Amanda|Rachel McMahon|Margaret Quinell|Hard|Jared Levine|Angie|HIV Exposure Concern|First Aid|Little White Lies|Nursing Safety|Exposure Fear
 Which two colleagues helped an elderly doctor accept retirement in Moment of Truth?|Von Ryan and Samantha O'Hara|Terri Sullivan and Peter Morrison|Bron Craig and Luke Forlano|Jared Levine and Connor Costello|Medium|Moment Of Truth|Episode 39|Von Ryan|Samantha O'Hara|Elderly Doctor|Retirement Decision|Professional Dignity`;
 
+
+// 1998 story, production and awards-nomination gap audit. Original IDs stay fixed.
+// The programme ended in 2009; coverage remains incomplete until later season packs are audited.
+const AUDIT_ORIGINAL_COUNT = 124;
+const AUDIT_FIRST_ID = 42088;
+const auditFacts = `Which writer and television producer created the Australian medical drama All Saints?|Bevan Lee|Jo Porter|John Holmes|Susan Bower|Medium|Bevan Lee|series creator|1998|programme development|original concept|Australian television|behind the scenes
+Who developed the television drama All Saints alongside creator Bevan Lee?|Jo Porter|Di Drew|Georgie Parker|Judith McGrath|Medium|Jo Porter|series development|Bevan Lee|1998 debut|producer career|Seven Network|creative origins
+Who served as the executive producer of the medical drama All Saints when it began?|John Holmes|Peter Sharp|Grant Brown|Mark Piper|Medium|John Holmes|executive producer|1998|production leadership|Seven Network|medical drama|programme origins
+Who directed the first All Saints episode, Body and Soul, in 1998?|Peter Sharp|Karl Zwicky|Di Drew|Grant Brown|Medium|Peter Sharp|Body and Soul|episode 1|1998 pilot|director credit|series premiere|production team
+Who wrote the premiere episode Body and Soul for All Saints?|Howard Griffiths|Bevan Lee|Susan Bower|Greg Haddrick|Medium|Howard Griffiths|Body and Soul|episode 1|1998|writer credit|screenplay|premiere
+Which instrument featured prominently in the original opening theme of All Saints?|Saxophone|Bagpipes|Accordion|Harp|Medium|opening credits|theme music|saxophone|1998|title sequence|instrumentation|production design
+Which All Saints Season 1 episode about a sibling kidney transplant received a 1998 AFI nomination?|Give and Take|Combat Zone|Terminal Speed|Heart to Heart|Medium|Give and Take|episode 6|1998 AFI Awards|best drama episode nomination|kidney transplant|industry recognition|award history
+Which All Saints Season 1 episode involving a young mother's near-death experience was nominated for a 1998 AFI Award?|Revelations|Night Shift|Possession|Happy Death Day|Medium|Revelations|episode 20|1998 AFI Awards|best drama episode nomination|near death experience|industry recognition|award history
+Which All Saints actress was nominated for Most Popular New Female Talent at the 1999 Logie Awards?|Libby Tanner|Georgie Parker|Judith McGrath|Kirrily White|Medium|Libby Tanner|Bron Craig|1999 Logies|new female talent nomination|acting recognition|debut season|Australian television
+For which programme award was All Saints nominated at the 1999 TV Week Logies?|Most Popular Program|Best Sports Program|Most Popular Comedy Program|Best Children's Program|Medium|1999 Logies|Most Popular Program|programme nomination|Seven Network|first season response|Australian television award|industry recognition
+Which All Saints actress received 1999 Logie nominations for both Most Popular Actress and the Gold Logie?|Georgie Parker|Libby Tanner|Justine Clarke|Sam Healy|Medium|Georgie Parker|Terri Sullivan|1999 Logies|Most Popular Actress nomination|Gold Logie nomination|early career recognition|acting awards
+In All Saints episode Gut Feeling, which anxious country boy had his diagnosis disputed by Connor Costello?|Scott|Arnie|Robbie|Bryan|Hard|Gut Feeling|episode 3|Connor Costello|Scott|intern diagnosis|country patient|medical disagreement
+In All Saints episode A Question of Strength, which patient's missed outpatient treatment worried Jared Levine?|Angie|Raelene|Rachel McMahon|Jenny Morrison|Medium|A Question of Strength|episode 4|Jared Levine|Angie|outpatient treatment|concealed nonattendance|continuity
+In All Saints episode Night Shift, to which couple did Jared introduce his fiancée?|Ben and Stephanie Markham|Terri and Peter Morrison|Bron and Luke Forlano|Von and Connor Costello|Medium|Night Shift|episode 5|Jared Levine|Amanda|engagement|Ben Markham|Stephanie Markham
+In All Saints episode Forget Me Not, who became the chief suspect when a newborn baby disappeared?|The baby's teenage mother|The nurse unit manager|The baby's grandfather|The attending surgeon|Medium|Forget Me Not|episode 9|missing baby|teenage mother|ward investigation|new parent|police suspicion
+In All Saints episode Terminal Speed, which infection was Luke Forlano discovered to be carrying?|Staphylococcal infection|Malaria|Whooping cough|Tuberculosis|Medium|Terminal Speed|episode 11|Luke Forlano|staph infection|hospital transmission|surgical risks|infection control
+In All Saints episode Nothing But the Truth, what extra staffing problem compounded the pressure from two high-dependency patients?|An incompetent agency nurse|A hospital-wide nursing strike|A missing ambulance driver|A cancelled visiting surgeon|Medium|Nothing But the Truth|episode 16|agency nurse|ward staff|high dependency|workload pressure|clinical competence
+In All Saints episode Sounds of Silence, which nurse taught an elderly patient to be more independent?|Jared Levine|Connor Costello|Von Ryan|Bron Craig|Medium|Sounds of Silence|episode 18|Jared Levine|elderly patient|independence|nursing care|personal lesson
+In All Saints episode Smooth Operator, what was the name of the visiting surgical consultant who attracted Luke Forlano?|Francesca Norman|Samantha O'Hara|Jenny Morrison|Stephanie Markham|Medium|Smooth Operator|episode 21|Francesca Norman|Luke Forlano|surgical consultant|romantic attraction|visiting doctor
+In All Saints episode Truth or Dare, what condition affected the young person Von helped prepare for work?|Diabetes|Epilepsy|Asthma|Arthritis|Medium|Truth or Dare|episode 22|Von Ryan|diabetic youth|employment adjustment|patient counselling|clinical support
+In All Saints episode The Price You Pay, which risky habit of a young patient concerned Bron Craig?|Binge drinking|Smoking cannabis|Steroid injections|Speeding on a motorbike|Medium|The Price You Pay|episode 24|Bron Craig|young patient|alcohol misuse|health education|risk behaviour
+In All Saints episode Cards on the Table, what did Stephanie Markham feel ready to tell her husband Ben?|That she might never want children|That she had resigned from nursing|That she wanted a divorce|That she planned to move overseas|Medium|Cards on the Table|episode 32|Stephanie Markham|Ben Markham|family planning|marriage honesty|reproductive choice
+In All Saints episode Live Now Pay Later, what condition did Bron recognise in ambulance officer Ben Markham?|Post-traumatic stress disorder|Epilepsy|Diabetes|Amnesia|Medium|Live Now Pay Later|episode 34|Ben Markham|Bron Craig|trauma response|ambulance work|mental health
+In All Saints episode Out of Control, who endangered Terri Sullivan after a patient was treated for domestic violence?|The patient's husband|The patient's sister|The hospital cleaner|The ambulance supervisor|Medium|Out of Control|episode 35|Terri Sullivan|domestic violence|patient's husband|threat to nurse|clinical safety
+In All Saints episode The Price of Love, what worried Peter Morrison about his late wife's organ donation?|Who had received her organs|Whether she had signed a will|Whether her funeral was delayed|Whether the hospital had lost her records|Medium|The Price of Love|episode 37|Peter Morrison|Jenny Morrison|organ recipients|bereavement|transplant donation
+In All Saints episode Happy Death Day, which document complicated care for a suicidal patient admitted after an overdose?|A do-not-resuscitate directive|A signed adoption order|A marriage certificate|A property deed|Medium|Happy Death Day|episode 38|suicide attempt|overdose|do not resuscitate|ethical conflict|Terri Sullivan
+In All Saints season one finale Christmas Spice, what hopeful development occurred for a young patient with leukaemia?|Her illness went into remission|She received a new kidney|She was offered a place at medical school|She learned she had been adopted|Medium|Christmas Spice|episode 41|leukaemia|remission|sick child|festive episode|hopeful outcome`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
 
   if (fields.length !== 13)
