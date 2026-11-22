@@ -2136,11 +2136,11 @@ const auditQuestions=[
     "question": "In As the World Turns, what were Nancy Hughes's first words in the premiere episode?",
     "answers": [
       "How is Penny today?",
-      "Good morning, Chris.",
+      "Good morning, dear.",
       "Welcome to Oakdale.",
       "It's a beautiful day."
     ],
-    "correctAnswer": "Good morning, Chris.",
+    "correctAnswer": "Good morning, dear.",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -2158,7 +2158,9 @@ const auditQuestions=[
       "Nancy Hughes",
       "Chris Hughes",
       "Helen Wagner",
-      "Opening Dialogue"
+      "Opening Dialogue",
+      "Original Dialogue Verified CBS",
+      "Television Academy Interview"
     ]
   },
   {
