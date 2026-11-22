@@ -122,6 +122,20 @@
  `Which year saw All My Children cease producing new episodes after its short-lived online return?|2013|2011|2015|2018|Easy|2013 ending|online revival|Prospect Park|final production|September finale|programme completion|soap chronology`
  ];
 
+
+ // Daytime Emmy awards audit: original and earlier audited question IDs preserved.
+ const AWARDS_ORIGINAL_COUNT = rows.length;
+ const AUDIT_AWARDS_FIRST_ID = 42060;
+ rows.push(
+   `In All My Children, which creator received a Daytime Emmy Lifetime Achievement Award in 2010?|Agnes Nixon|Susan Lucci|Jean Dadario Burke|Lorraine Broderick|Medium|Agnes Nixon|2010 Daytime Emmy|Lifetime Achievement|series creator|soap pioneer|career honour|award recipient`,
+   `In All My Children, which actress won the 2011 Daytime Emmy for Outstanding Younger Actress as Marissa Chandler?|Brittany Allen|Alexa Havins|Amanda Baker|Eden Riegel|Medium|Brittany Allen|Marissa Chandler|2011 Daytime Emmy|younger actress|acting award|character portrayal|award year`,
+   `In All My Children, which production department won a Daytime Emmy in 2010 for designing the cast's clothing?|Costume Design|Casting|Sound Mixing|Camera Editing|Medium|2010 Daytime Emmy|costume design|wardrobe department|production honour|visual storytelling|creative award|ABC`,
+   `In All My Children, which 2010 Daytime Emmy recognised the programme's cosmetics and character-appearance work?|Outstanding Makeup|Outstanding Directing|Outstanding Drama Series|Outstanding Original Song|Medium|2010 Daytime Emmy|makeup|character appearance|visual production|technical award|department win|creative work`,
+   `In All My Children, which behind-the-scenes visual department earned the soap a Daytime Emmy in 2011?|Hairstyling|Screenwriting|Lighting Design|Casting|Medium|2011 Daytime Emmy|hairstyling|hair department|production award|visual appearance|creative team|award category`,
+   `In All My Children, which sound category won a Daytime Emmy in 2012 for the programme's final ABC-era work?|Live and Direct-to-Tape Sound Mixing|Original Song|Music Direction and Composition|Soundtrack Album|Medium|2012 Daytime Emmy|sound mixing|live recording|technical award|audio team|final ABC run|production success`,
+   `In All My Children, which post-production craft won a Daytime Emmy in 2012?|Multiple Camera Editing|Costume Design|Hair Styling|Script Supervision|Medium|2012 Daytime Emmy|multiple camera editing|post production|camera footage|technical award|final ABC run|production team`,
+ );
+
  const questions = rows.map((row, index) => {
    const parts = row.split('|').map(part => part.trim());
    if (parts.length !== 13 || parts.some(part => !part)) {
@@ -144,7 +158,7 @@
      throw new Error(`Pack 418: expected 13 distinct tags at row ${index + 1}`);
    }
    return {
-     id: `tv_${FIRST_ID + index}`,
+     id: `tv_${index < AWARDS_ORIGINAL_COUNT ? FIRST_ID + index : AUDIT_AWARDS_FIRST_ID + index - AWARDS_ORIGINAL_COUNT}`,
      category: 'Television',
      question,
      answers,
