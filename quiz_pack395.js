@@ -449,7 +449,7 @@ const audit395Facts = [
   ],
   [
     "2004 serial",
-    "Which production assistant role did Clare Andrade fulfil on the six-part original?",
+    "Which set-department role was credited to Clare Andrade on the original six-part serial?",
     "Set Decoration",
     "Costume Design",
     "Sound Editing",
