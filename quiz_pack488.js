@@ -1,8 +1,13 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 488: As the World Turns, Part 3 (1980–1989)
-// 95 selectively researched questions, decades kept separate; IDs tv_27453–tv_27547.
+// 138 audited questions: 95 originals (one repeated fact replaced) plus 43 historical additions.
+// Original IDs tv_27453–tv_27547; audit IDs tv_42984–tv_43026.
 // Covers early Dobson era, Dee and the mine, James and Barbara, Tom and Margo, Steve and Betsy,
 // Whit McColl's murder, Marland's 1985 revival, Snyders/Walshes, Kim/Frannie crisis, and actors.
 // Later 1990–2010 programme history requires further packs; keep TV master lavender.
+// Audit research 22 Nov 2026: 1980s history and character timelines,
+// Remind magazine ATWT retrospective, 1986 Soap Opera Digest award records,
+// 1987 UPI Daytime Emmy results and 1988 Los Angeles Times Emmy results.
+// Original IDs maintained; all questions identify the programme.
 // Sources reviewed 18 November 2026:
 // https://www.soapoperadigest.com/photos/as-the-world-turns-70th-anniversary-iconic-photos-from-the-classic-soap/
 // https://en.wikipedia.org/wiki/History_of_As_the_World_Turns
@@ -17,7 +22,7 @@ const questions = [
     "id": "tv_27453",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which coal mine owner tried to acquire valuable land from Oakdale families in 1980?",
+    "question": "In As the World Turns, which coal mine owner tried to acquire valuable land from Oakdale families in 1980?",
     "answers": [
       "James Stenbeck",
       "Whit McColl",
@@ -49,7 +54,7 @@ const questions = [
     "id": "tv_27454",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Stewart sister was involved with coal miner Brad Hollister before his marriage to Annie?",
+    "question": "In As the World Turns, which Stewart sister was involved with coal miner Brad Hollister before his marriage to Annie?",
     "answers": [
       "Dee Stewart",
       "Emily Stewart",
@@ -81,7 +86,7 @@ const questions = [
     "id": "tv_27455",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Dee Stewart's sister, whom Brad Hollister married?",
+    "question": "In As the World Turns, who was Dee Stewart's sister, whom Brad Hollister married?",
     "answers": [
       "Barbara Ryan",
       "Annie Stewart",
@@ -113,7 +118,7 @@ const questions = [
     "id": "tv_27456",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which woman drowned near Brad Hollister's mining operation during a summer picnic?",
+    "question": "In As the World Turns, which woman drowned near Brad Hollister's mining operation during a summer picnic?",
     "answers": [
       "Karen Haines",
       "Joyce Colman",
@@ -145,7 +150,7 @@ const questions = [
     "id": "tv_27457",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who heard an argument before Melinda Gray's drowning but initially blocked out the memory?",
+    "question": "In As the World Turns, who heard an argument before Melinda Gray's drowning but initially blocked out the memory?",
     "answers": [
       "Barbara Ryan",
       "Margo Montgomery",
@@ -177,7 +182,7 @@ const questions = [
     "id": "tv_27458",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which character was killed in a cave-in at Brad Hollister's mine?",
+    "question": "In As the World Turns, which character was killed in a cave-in at Brad Hollister's mine?",
     "answers": [
       "Jay Stallings",
       "Dan Stewart",
@@ -208,7 +213,7 @@ const questions = [
     "id": "tv_27459",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Oakdale doctor did Dee Stewart marry during the coal-mining storyline?",
+    "question": "In As the World Turns, which Oakdale doctor did Dee Stewart marry during the coal-mining storyline?",
     "answers": [
       "David Stewart",
       "John Dixon",
@@ -239,7 +244,7 @@ const questions = [
     "id": "tv_27460",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who represented Dee Stewart during her sexual-assault trial against John Dixon?",
+    "question": "In As the World Turns, who represented Dee Stewart during her sexual-assault trial against John Dixon?",
     "answers": [
       "Grant Colman",
       "Barry Zuckerkorn",
@@ -271,7 +276,7 @@ const questions = [
     "id": "tv_27461",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which female attorney defended John Dixon during Dee Stewart's trial?",
+    "question": "In As the World Turns, which female attorney defended John Dixon during Dee Stewart's trial?",
     "answers": [
       "Margo Montgomery",
       "Joyce Colman",
@@ -303,7 +308,7 @@ const questions = [
     "id": "tv_27462",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was the missing Stewart patriarch who used the identity Donald Saunders after developing amnesia?",
+    "question": "In As the World Turns, who was the missing Stewart patriarch who used the identity Donald Saunders after developing amnesia?",
     "answers": [
       "David Stewart",
       "Chris Hughes",
@@ -335,7 +340,7 @@ const questions = [
     "id": "tv_27463",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played widow Cynthia Haines during David Stewart's amnesia storyline?",
+    "question": "In As the World Turns, which actress played widow Cynthia Haines during David Stewart's amnesia storyline?",
     "answers": [
       "Colleen Zenk",
       "Linda Dano",
@@ -367,7 +372,7 @@ const questions = [
     "id": "tv_27464",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the name of Cynthia Haines's troubled teenage daughter?",
+    "question": "In As the World Turns, what was the name of Cynthia Haines's troubled teenage daughter?",
     "answers": [
       "Frannie",
       "Diana",
@@ -399,7 +404,7 @@ const questions = [
     "id": "tv_27465",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor played Tom Hughes during the early-1980s romance with Margo Montgomery?",
+    "question": "In As the World Turns, which actor played Tom Hughes during the early-1980s romance with Margo Montgomery?",
     "answers": [
       "Scott Holmes",
       "Don Hastings",
@@ -431,7 +436,7 @@ const questions = [
     "id": "tv_27466",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which character was first played by Margaret Colin in 1981?",
+    "question": "In As the World Turns, which character was first played by Margaret Colin in 1981?",
     "answers": [
       "Margo Montgomery",
       "Barbara Ryan",
@@ -463,7 +468,7 @@ const questions = [
     "id": "tv_27467",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What profession did Margo Montgomery pursue as part of her early Oakdale storylines?",
+    "question": "In As the World Turns, what profession did Margo Montgomery pursue as part of her early Oakdale storylines?",
     "answers": [
       "Estate agent",
       "Police officer",
@@ -495,7 +500,7 @@ const questions = [
     "id": "tv_27468",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which doctor was revealed to be Margo Montgomery's biological father?",
+    "question": "In As the World Turns, which doctor was revealed to be Margo Montgomery's biological father?",
     "answers": [
       "David Stewart",
       "Doug Cassen",
@@ -527,7 +532,7 @@ const questions = [
     "id": "tv_27469",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was the mother of Margo and Craig Montgomery?",
+    "question": "In As the World Turns, who was the mother of Margo and Craig Montgomery?",
     "answers": [
       "Nancy Hughes",
       "Jennifer Ryan",
@@ -559,7 +564,7 @@ const questions = [
     "id": "tv_27470",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which event launched Tom and Margo Hughes's lasting marriage in 1983?",
+    "question": "In As the World Turns, which event launched Tom and Margo Hughes's lasting marriage in 1983?",
     "answers": [
       "A double wedding at city hall",
       "An outdoor wedding",
@@ -591,7 +596,7 @@ const questions = [
     "id": "tv_27471",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which criminal's relationship with Margo helped end his marriage to Barbara Ryan?",
+    "question": "In As the World Turns, which criminal's relationship with Margo helped end his marriage to Barbara Ryan?",
     "answers": [
       "Brad Hollister",
       "James Stenbeck",
@@ -623,7 +628,7 @@ const questions = [
     "id": "tv_27472",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which jewellery-and-fashion business was linked to James Stenbeck's smuggling operations?",
+    "question": "In As the World Turns, which jewellery-and-fashion business was linked to James Stenbeck's smuggling operations?",
     "answers": [
       "Walsh Tower",
       "Oakdale Books",
@@ -655,7 +660,7 @@ const questions = [
     "id": "tv_27473",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What two types of contraband did James Stenbeck smuggle through the fashion business?",
+    "question": "In As the World Turns, what two types of contraband did James Stenbeck smuggle through the fashion business?",
     "answers": [
       "Counterfeit books and coins",
       "Gold and rare animals",
@@ -687,7 +692,7 @@ const questions = [
     "id": "tv_27474",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was James Stenbeck's wife and a leading Oakdale fashion designer?",
+    "question": "In As the World Turns, who was James Stenbeck's wife and a leading Oakdale fashion designer?",
     "answers": [
       "Barbara Ryan",
       "Kim Sullivan",
@@ -719,7 +724,7 @@ const questions = [
     "id": "tv_27475",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor became famous for playing the manipulative James Stenbeck?",
+    "question": "In As the World Turns, which actor became famous for playing the manipulative James Stenbeck?",
     "answers": [
       "Benjamin Hendrickson",
       "Anthony Herrera",
@@ -751,7 +756,7 @@ const questions = [
     "id": "tv_27476",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which child was born to Barbara Ryan and James Stenbeck?",
+    "question": "In As the World Turns, which child was born to Barbara Ryan and James Stenbeck?",
     "answers": [
       "Dusty Donovan",
       "Tom Hughes",
@@ -783,7 +788,7 @@ const questions = [
     "id": "tv_27477",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which future child actor played the young Paul Ryan?",
+    "question": "In As the World Turns, which future child actor played the young Paul Ryan?",
     "answers": [
       "Brian Bloom",
       "Scott DeFreitas",
@@ -815,7 +820,7 @@ const questions = [
     "id": "tv_27478",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was the true Stenbeck heir, discovered to be related to the man called James?",
+    "question": "In As the World Turns, who was the true Stenbeck heir, discovered to be related to the man called James?",
     "answers": [
       "Gunnar Stenbeck",
       "Craig Montgomery",
@@ -847,7 +852,7 @@ const questions = [
     "id": "tv_27479",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What unusually memorable vehicle carried Gunnar Stenbeck away from Oakdale?",
+    "question": "In As the World Turns, what unusually memorable vehicle carried Gunnar Stenbeck away from Oakdale?",
     "answers": [
       "A steam train",
       "A hot-air balloon",
@@ -879,7 +884,7 @@ const questions = [
     "id": "tv_27480",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Whom did Gunnar Stenbeck marry before his departure?",
+    "question": "In As the World Turns, whom did Gunnar Stenbeck marry before his departure?",
     "answers": [
       "Lisa Colman",
       "Annie Stewart",
@@ -911,7 +916,7 @@ const questions = [
     "id": "tv_27481",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Gunnar Stenbeck's biological son and the true young Stenbeck heir?",
+    "question": "In As the World Turns, who was Gunnar Stenbeck's biological son and the true young Stenbeck heir?",
     "answers": [
       "Paul Ryan",
       "Tom Hughes",
@@ -943,7 +948,7 @@ const questions = [
     "id": "tv_27482",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor played young Dusty Donovan during the 1980s?",
+    "question": "In As the World Turns, which actor played young Dusty Donovan during the 1980s?",
     "answers": [
       "Brian Bloom",
       "Danny Pintauro",
@@ -975,7 +980,7 @@ const questions = [
     "id": "tv_27483",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which airline incident apparently killed James Stenbeck in 1984?",
+    "question": "In As the World Turns, which airline incident apparently killed James Stenbeck in 1984?",
     "answers": [
       "A skydiving accident",
       "A fall from a cargo plane",
@@ -1007,7 +1012,7 @@ const questions = [
     "id": "tv_27484",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which scheming teenager uncovered James Stenbeck's family inheritance secret and blackmailed him?",
+    "question": "In As the World Turns, which scheming teenager uncovered James Stenbeck's family inheritance secret and blackmailed him?",
     "answers": [
       "Diana McColl",
       "Karen Haines",
@@ -1039,7 +1044,7 @@ const questions = [
     "id": "tv_27485",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which woman married James Stenbeck's sister Ariel's former target John Dixon?",
+    "question": "In As the World Turns, which woman married James Stenbeck's sister Ariel's former target John Dixon?",
     "answers": [
       "Annie Stewart",
       "Dee Stewart",
@@ -1071,7 +1076,7 @@ const questions = [
     "id": "tv_27486",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which mother-and-son soap pair were reunited at Tom and Margo's 1983 wedding?",
+    "question": "In As the World Turns, which mother-and-son soap pair were reunited at Tom and Margo's 1983 wedding?",
     "answers": [
       "Lisa and Tom Hughes",
       "Nancy and Bob Hughes",
@@ -1103,7 +1108,7 @@ const questions = [
     "id": "tv_27487",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress took over Margo Montgomery after Margaret Colin?",
+    "question": "In As the World Turns, which actress took over Margo Montgomery after Margaret Colin?",
     "answers": [
       "Ellen Dolan",
       "Julianne Moore",
@@ -1135,7 +1140,7 @@ const questions = [
     "id": "tv_27488",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor first portrayed the scheming Craig Montgomery?",
+    "question": "In As the World Turns, which actor first portrayed the scheming Craig Montgomery?",
     "answers": [
       "Scott Bryce",
       "Hunt Block",
@@ -1167,7 +1172,7 @@ const questions = [
     "id": "tv_27489",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which famous movie actress played Betsy Stewart from 1982 to 1984?",
+    "question": "In As the World Turns, which famous movie actress played Betsy Stewart from 1982 to 1984?",
     "answers": [
       "Dana Delany",
       "Meg Ryan",
@@ -1199,7 +1204,7 @@ const questions = [
     "id": "tv_27490",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor portrayed trucker Steve Andropoulos, the great love of Betsy Stewart?",
+    "question": "In As the World Turns, which actor portrayed trucker Steve Andropoulos, the great love of Betsy Stewart?",
     "answers": [
       "Justin Deas",
       "Benjamin Hendrickson",
@@ -1231,7 +1236,7 @@ const questions = [
     "id": "tv_27491",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Whom did Betsy Stewart marry despite her love for Steve Andropoulos?",
+    "question": "In As the World Turns, whom did Betsy Stewart marry despite her love for Steve Andropoulos?",
     "answers": [
       "Tom Hughes",
       "John Dixon",
@@ -1263,7 +1268,7 @@ const questions = [
     "id": "tv_27492",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the name of Betsy Stewart's daughter whose paternity caused a conflict?",
+    "question": "In As the World Turns, what was the name of Betsy Stewart's daughter whose paternity caused a conflict?",
     "answers": [
       "Danielle",
       "Frannie",
@@ -1295,7 +1300,7 @@ const questions = [
     "id": "tv_27493",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What test did Craig Montgomery tamper with to separate Betsy and Steve?",
+    "question": "In As the World Turns, what test did Craig Montgomery tamper with to separate Betsy and Steve?",
     "answers": [
       "A DNA ancestry advertisement",
       "A paternity test",
@@ -1327,7 +1332,7 @@ const questions = [
     "id": "tv_27494",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Danielle's biological father in Betsy Stewart's story?",
+    "question": "In As the World Turns, who was Danielle's biological father in Betsy Stewart's story?",
     "answers": [
       "Nick Andropoulos",
       "Tom Hughes",
@@ -1359,7 +1364,7 @@ const questions = [
     "id": "tv_27495",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What cultural tradition featured prominently at Steve and Betsy's 1984 wedding?",
+    "question": "In As the World Turns, what cultural tradition featured prominently at Steve and Betsy's 1984 wedding?",
     "answers": [
       "A Jewish synagogue wedding",
       "A Scottish ceilidh",
@@ -1391,7 +1396,7 @@ const questions = [
     "id": "tv_27496",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which singer portrayed Heather Dalton, the gospel performer at Steve and Betsy's wedding?",
+    "question": "In As the World Turns, which singer portrayed Heather Dalton, the gospel performer at Steve and Betsy's wedding?",
     "answers": [
       "Tonya Pinkins",
       "Tina Turner",
@@ -1423,7 +1428,7 @@ const questions = [
     "id": "tv_27497",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which character served as Steve Andropoulos's best man at his wedding to Betsy?",
+    "question": "In As the World Turns, which character served as Steve Andropoulos's best man at his wedding to Betsy?",
     "answers": [
       "John Dixon",
       "Tucker Foster",
@@ -1455,7 +1460,7 @@ const questions = [
     "id": "tv_27498",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played teenage Marcy Thompson, a future Lady Cushing?",
+    "question": "In As the World Turns, which actress played teenage Marcy Thompson, a future Lady Cushing?",
     "answers": [
       "Martha Byrne",
       "Julianne Moore",
@@ -1487,7 +1492,7 @@ const questions = [
     "id": "tv_27499",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was the actor cast as millionaire Whitney McColl?",
+    "question": "In As the World Turns, who was the actor cast as millionaire Whitney McColl?",
     "answers": [
       "Mark Pinter",
       "Scott Bryce",
@@ -1519,7 +1524,7 @@ const questions = [
     "id": "tv_27500",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which long-running Oakdale heroine married businessman Whitney McColl?",
+    "question": "In As the World Turns, which long-running Oakdale heroine married businessman Whitney McColl?",
     "answers": [
       "Lisa",
       "Kim",
@@ -1551,7 +1556,7 @@ const questions = [
     "id": "tv_27501",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Where did police find businessman Whit McColl after he was murdered?",
+    "question": "In As the World Turns, where did police find businessman Whit McColl after he was murdered?",
     "answers": [
       "A hospital ward",
       "His study",
@@ -1583,7 +1588,7 @@ const questions = [
     "id": "tv_27502",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was revealed as the person who killed Whitney McColl?",
+    "question": "In As the World Turns, who was revealed as the person who killed Whitney McColl?",
     "answers": [
       "Diana McColl",
       "Kirk McColl",
@@ -1615,7 +1620,7 @@ const questions = [
     "id": "tv_27503",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What household role did Whit McColl's killer Dorothy Connors have?",
+    "question": "In As the World Turns, what household role did Whit McColl's killer Dorothy Connors have?",
     "answers": [
       "Accountant",
       "Private detective",
@@ -1647,7 +1652,7 @@ const questions = [
     "id": "tv_27504",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What item was used to strike Whit McColl during the fatal argument?",
+    "question": "In As the World Turns, what item was used to strike Whit McColl during the fatal argument?",
     "answers": [
       "A crystal decanter",
       "A brass trophy",
@@ -1679,7 +1684,7 @@ const questions = [
     "id": "tv_27505",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which family member was revealed as Dorothy Connors and Whit McColl's child?",
+    "question": "In As the World Turns, which family member was revealed as Dorothy Connors and Whit McColl's child?",
     "answers": [
       "Jay Connors",
       "Kirk McColl",
@@ -1711,7 +1716,7 @@ const questions = [
     "id": "tv_27506",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which famous musician performed a benefit concert shortly before the Whit McColl murder?",
+    "question": "In As the World Turns, which famous musician performed a benefit concert shortly before the Whit McColl murder?",
     "answers": [
       "Lionel Richie",
       "Prince",
@@ -1743,7 +1748,7 @@ const questions = [
     "id": "tv_27507",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress briefly replaced Eileen Fulton as Lisa during the early 1980s?",
+    "question": "In As the World Turns, which actress briefly replaced Eileen Fulton as Lisa during the early 1980s?",
     "answers": [
       "Kathryn Hays",
       "Colleen Zenk",
@@ -1775,7 +1780,7 @@ const questions = [
     "id": "tv_27508",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which future Oscar-winning actress played both Frannie and Sabrina Hughes?",
+    "question": "In As the World Turns, which future Oscar-winning actress played both Frannie and Sabrina Hughes?",
     "answers": [
       "Meg Ryan",
       "Julianne Moore",
@@ -1807,7 +1812,7 @@ const questions = [
     "id": "tv_27509",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which girl was revealed to be the long-lost twin of Frannie Hughes?",
+    "question": "In As the World Turns, which girl was revealed to be the long-lost twin of Frannie Hughes?",
     "answers": [
       "Lily",
       "Margo",
@@ -1839,7 +1844,7 @@ const questions = [
     "id": "tv_27510",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who were the biological parents of Sabrina Hughes?",
+    "question": "In As the World Turns, who were the biological parents of Sabrina Hughes?",
     "answers": [
       "Bob Hughes and Jennifer Ryan",
       "John Dixon and Kim Sullivan",
@@ -1871,7 +1876,7 @@ const questions = [
     "id": "tv_27511",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which restaurant owner terrorised Kim Sullivan Hughes and her stepdaughter Frannie?",
+    "question": "In As the World Turns, which restaurant owner terrorised Kim Sullivan Hughes and her stepdaughter Frannie?",
     "answers": [
       "Douglas Cummings",
       "James Stenbeck",
@@ -1903,7 +1908,7 @@ const questions = [
     "id": "tv_27512",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor played the sinister restaurateur Douglas Cummings?",
+    "question": "In As the World Turns, which actor played the sinister restaurateur Douglas Cummings?",
     "answers": [
       "Frank Runyeon",
       "John Wesley Shipp",
@@ -1935,7 +1940,7 @@ const questions = [
     "id": "tv_27513",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which young woman did Douglas Cummings date while secretly stalking her stepmother?",
+    "question": "In As the World Turns, which young woman did Douglas Cummings date while secretly stalking her stepmother?",
     "answers": [
       "Barbara Ryan",
       "Betsy Stewart",
@@ -1967,7 +1972,7 @@ const questions = [
     "id": "tv_27514",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What secret room exposed Douglas Cummings's obsession with Kim?",
+    "question": "In As the World Turns, what secret room exposed Douglas Cummings's obsession with Kim?",
     "answers": [
       "A recording studio",
       "A hidden library",
@@ -1999,7 +2004,7 @@ const questions = [
     "id": "tv_27515",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which former boyfriend died protecting Frannie from a shot meant for her?",
+    "question": "In As the World Turns, which former boyfriend died protecting Frannie from a shot meant for her?",
     "answers": [
       "Kevin Gibson",
       "Dusty Donovan",
@@ -2031,7 +2036,7 @@ const questions = [
     "id": "tv_27516",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who actually stabbed Douglas Cummings to death during the hostage crisis?",
+    "question": "In As the World Turns, who actually stabbed Douglas Cummings to death during the hostage crisis?",
     "answers": [
       "Barbara Ryan",
       "Marsha Talbot",
@@ -2063,7 +2068,7 @@ const questions = [
     "id": "tv_27517",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which former Oakdale heroine was put on trial over Douglas Cummings's death?",
+    "question": "In As the World Turns, which former Oakdale heroine was put on trial over Douglas Cummings's death?",
     "answers": [
       "Sandy McGuire",
       "Barbara Ryan",
@@ -2127,7 +2132,7 @@ const questions = [
     "id": "tv_27519",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which new working-class family did Douglas Marland establish as major Oakdale characters?",
+    "question": "In As the World Turns, which new working-class family did Douglas Marland establish as major Oakdale characters?",
     "answers": [
       "The Snyders",
       "The Bluths",
@@ -2159,7 +2164,7 @@ const questions = [
     "id": "tv_27520",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played wealthy businesswoman Lucinda Walsh from 1984 onwards?",
+    "question": "In As the World Turns, which actress played wealthy businesswoman Lucinda Walsh from 1984 onwards?",
     "answers": [
       "Colleen Zenk",
       "Elizabeth Hubbard",
@@ -2191,7 +2196,7 @@ const questions = [
     "id": "tv_27521",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What is the name of Lucinda Walsh's adopted daughter?",
+    "question": "In As the World Turns, what is the name of Lucinda Walsh's adopted daughter?",
     "answers": [
       "Barbara",
       "Sabrina",
@@ -2223,7 +2228,7 @@ const questions = [
     "id": "tv_27522",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress replaced Lucy Deakins as Lily Walsh in 1985?",
+    "question": "In As the World Turns, which actress replaced Lucy Deakins as Lily Walsh in 1985?",
     "answers": [
       "Meg Ryan",
       "Julianne Moore",
@@ -2255,7 +2260,7 @@ const questions = [
     "id": "tv_27523",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor is strongly associated with playing farmhand Holden Snyder?",
+    "question": "In As the World Turns, which actor is strongly associated with playing farmhand Holden Snyder?",
     "answers": [
       "Jon Hensley",
       "Brian Bloom",
@@ -2287,7 +2292,7 @@ const questions = [
     "id": "tv_27524",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which young man was Lily Walsh romantically involved with before Holden Snyder?",
+    "question": "In As the World Turns, which young man was Lily Walsh romantically involved with before Holden Snyder?",
     "answers": [
       "Craig Montgomery",
       "Dusty Donovan",
@@ -2319,7 +2324,7 @@ const questions = [
     "id": "tv_27525",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Where did Lily first become close to Holden Snyder?",
+    "question": "In As the World Turns, where did Lily first become close to Holden Snyder?",
     "answers": [
       "At Oakdale police station",
       "In a hospital theatre",
@@ -2351,7 +2356,7 @@ const questions = [
     "id": "tv_27526",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which farming matriarch was mother to Holden, Meg and Seth Snyder?",
+    "question": "In As the World Turns, which farming matriarch was mother to Holden, Meg and Seth Snyder?",
     "answers": [
       "Lucinda Walsh",
       "Kim Hughes",
@@ -2383,7 +2388,7 @@ const questions = [
     "id": "tv_27527",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who played the Snyder family matriarch Emma?",
+    "question": "In As the World Turns, who played the Snyder family matriarch Emma?",
     "answers": [
       "Kathleen Widdoes",
       "Elizabeth Hubbard",
@@ -2415,7 +2420,7 @@ const questions = [
     "id": "tv_27528",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Lily Walsh's biological mother, revealed after her adoption?",
+    "question": "In As the World Turns, who was Lily Walsh's biological mother, revealed after her adoption?",
     "answers": [
       "Lisa Hughes",
       "Iva Snyder",
@@ -2447,7 +2452,7 @@ const questions = [
     "id": "tv_27529",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the real name of the man initially known as Rod Landry?",
+    "question": "In As the World Turns, what was the real name of the man initially known as Rod Landry?",
     "answers": [
       "Seth Snyder",
       "Craig Montgomery",
@@ -2479,7 +2484,7 @@ const questions = [
     "id": "tv_27530",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress portrayed Iva Snyder, a key figure in Lily Walsh's parentage mystery?",
+    "question": "In As the World Turns, which actress portrayed Iva Snyder, a key figure in Lily Walsh's parentage mystery?",
     "answers": [
       "Martha Byrne",
       "Kathleen Widdoes",
@@ -2511,7 +2516,7 @@ const questions = [
     "id": "tv_27531",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "How was Iva Snyder related to Emma and Henry Snyder?",
+    "question": "In As the World Turns, how was Iva Snyder related to Emma and Henry Snyder?",
     "answers": [
       "They had adopted her",
       "She was their biological daughter",
@@ -2543,7 +2548,7 @@ const questions = [
     "id": "tv_27532",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played Meg Snyder in the late 1980s?",
+    "question": "In As the World Turns, which actress played Meg Snyder in the late 1980s?",
     "answers": [
       "Marisa Tomei",
       "Jennifer Ashe",
@@ -2575,7 +2580,7 @@ const questions = [
     "id": "tv_27533",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Canadian-born actor played policeman Hal Munson?",
+    "question": "In As the World Turns, which Canadian-born actor played policeman Hal Munson?",
     "answers": [
       "Anthony Herrera",
       "Jon Hensley",
@@ -2607,14 +2612,14 @@ const questions = [
     "id": "tv_27534",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor played detective Hal Munson, a major character in Barbara Ryan's stories?",
+    "question": "In As the World Turns, which actor played Earl Mitchell, Lisa's husband with a secret Interpol career?",
     "answers": [
-      "Scott Bryce",
-      "Benjamin Hendrickson",
-      "Anthony Herrera",
-      "Jon Hensley"
+      "William Holden",
+      "Farley Granger",
+      "Michael Swan",
+      "Robert Horton"
     ],
-    "correctAnswer": "Benjamin Hendrickson",
+    "correctAnswer": "Farley Granger",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -2627,19 +2632,19 @@ const questions = [
       "1980–1989 Stories",
       "Written Quiz",
       "Section: 1985–1989",
-      "Benjamin Hendrickson",
-      "Hal Munson",
-      "Detective",
-      "Barbara Ryan",
-      "1980s",
-      "Casting"
+      "Farley Granger",
+      "Earl Mitchell",
+      "Lisa Mitchell",
+      "Interpol Agent",
+      "1986 Marriage",
+      "1980s Cast"
     ]
   },
   {
     "id": "tv_27535",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "In whose castle did James Stenbeck secretly hide when he returned from his presumed death?",
+    "question": "In As the World Turns, in whose castle did James Stenbeck secretly hide when he returned from his presumed death?",
     "answers": [
       "John Dixon's",
       "Duncan McKechnie's",
@@ -2671,7 +2676,7 @@ const questions = [
     "id": "tv_27536",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Scottish castle owner became romantically involved with Shannon O'Hara?",
+    "question": "In As the World Turns, which Scottish castle owner became romantically involved with Shannon O'Hara?",
     "answers": [
       "Holden Snyder",
       "Duncan McKechnie",
@@ -2703,7 +2708,7 @@ const questions = [
     "id": "tv_27537",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor played Scottish nobleman Duncan McKechnie?",
+    "question": "In As the World Turns, which actor played Scottish nobleman Duncan McKechnie?",
     "answers": [
       "Benjamin Hendrickson",
       "Scott Bryce",
@@ -2735,7 +2740,7 @@ const questions = [
     "id": "tv_27538",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was Shannon O'Hara's true name?",
+    "question": "In As the World Turns, what was Shannon O'Hara's true name?",
     "answers": [
       "Elizabeth Talbot",
       "Rose D'Angelo",
@@ -2767,7 +2772,7 @@ const questions = [
     "id": "tv_27539",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which police officer did Barbara Ryan deliberately try to split from his wife Margo?",
+    "question": "In As the World Turns, which police officer did Barbara Ryan deliberately try to split from his wife Margo?",
     "answers": [
       "Tom Hughes",
       "John Dixon",
@@ -2799,7 +2804,7 @@ const questions = [
     "id": "tv_27540",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which character played by Brian Starcher featured in the programme's 1988 gay storyline?",
+    "question": "In As the World Turns, which character played by Brian Starcher featured in the programme's 1988 gay storyline?",
     "answers": [
       "Andy Dixon",
       "Tucker Foster",
@@ -2831,7 +2836,7 @@ const questions = [
     "id": "tv_27541",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which two boys had to confront their prejudices after meeting Hank Elliot?",
+    "question": "In As the World Turns, which two boys had to confront their prejudices after meeting Hank Elliot?",
     "answers": [
       "Tom Hughes and Craig Montgomery",
       "Holden and Seth Snyder",
@@ -2863,7 +2868,7 @@ const questions = [
     "id": "tv_27542",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which soap matriarch married Earl Mitchell in 1986?",
+    "question": "In As the World Turns, which soap matriarch married Earl Mitchell in 1986?",
     "answers": [
       "Lisa",
       "Nancy",
@@ -2895,7 +2900,7 @@ const questions = [
     "id": "tv_27543",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What secret occupation did Lisa's husband Earl Mitchell have?",
+    "question": "In As the World Turns, what secret occupation did Lisa's husband Earl Mitchell have?",
     "answers": [
       "Undercover journalist",
       "Interpol agent",
@@ -2927,7 +2932,7 @@ const questions = [
     "id": "tv_27544",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was responsible for Earl Mitchell's murder while Earl investigated international crime?",
+    "question": "In As the World Turns, who was responsible for Earl Mitchell's murder while Earl investigated international crime?",
     "answers": [
       "Craig Montgomery",
       "Brad Hollister",
@@ -2959,7 +2964,7 @@ const questions = [
     "id": "tv_27545",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress succeeded Hillary B. Smith as Margo Hughes in 1989?",
+    "question": "In As the World Turns, which actress succeeded Hillary B. Smith as Margo Hughes in 1989?",
     "answers": [
       "Margaret Colin",
       "Martha Byrne",
@@ -2991,7 +2996,7 @@ const questions = [
     "id": "tv_27546",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which longtime actor who played Chris Hughes died in 1986?",
+    "question": "In As the World Turns, which longtime actor who played Chris Hughes died in 1986?",
     "answers": [
       "Don MacLaughlin",
       "Don Hastings",
@@ -3052,9 +3057,1390 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==95||new Set(questions.map(q=>q.id)).size!==questions.length||
+// Append story, cast, production and award facts after original questions.
+const AUDIT_ORIGINAL_COUNT=95;
+const AUDIT_FIRST_ID=42984;
+const auditQuestions=[
+  {
+    "id": "tv_42984",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which attorney successfully defended Dr John Dixon at Dee Stewart's trial?",
+    "answers": [
+      "Tom Hughes",
+      "Maggie Crawford",
+      "Grant Colman",
+      "Donald Hughes"
+    ],
+    "correctAnswer": "Maggie Crawford",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Maggie Crawford",
+      "John Dixon",
+      "Dee Stewart",
+      "Court Trial",
+      "1980s Oakdale",
+      "Defence Lawyer"
+    ]
+  },
+  {
+    "id": "tv_42985",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, who nearly ran over John Dixon before leaving Oakdale and losing his memory?",
+    "answers": [
+      "David Stewart",
+      "Dan Stewart",
+      "Bob Hughes",
+      "Brad Hollister"
+    ],
+    "correctAnswer": "David Stewart",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "David Stewart",
+      "John Dixon",
+      "Revenge",
+      "Amnesia",
+      "1981 Departure",
+      "Donald Saunders"
+    ]
+  },
+  {
+    "id": "tv_42986",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which of James Stenbeck's relatives became a wife of John Dixon?",
+    "answers": [
+      "Barbara Ryan",
+      "Cricket Montgomery",
+      "Margo Montgomery",
+      "Ariel Aldrin"
+    ],
+    "correctAnswer": "Ariel Aldrin",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Ariel Aldrin",
+      "John Dixon",
+      "James Stenbeck",
+      "Marriage",
+      "Stenbeck Family",
+      "Early 1980s"
+    ]
+  },
+  {
+    "id": "tv_42987",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actress portrayed scheming teenager Karen Haines in the early 1980s?",
+    "answers": [
+      "Linda Dano",
+      "Mary Linda Rapelye",
+      "Kate McNeil",
+      "Margaret Colin"
+    ],
+    "correctAnswer": "Kate McNeil",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Kate McNeil",
+      "Karen Haines",
+      "Cynthia Haines",
+      "Early 1980s",
+      "Soap Cast",
+      "Actress"
+    ]
+  },
+  {
+    "id": "tv_42988",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, whom did Barbara Ryan leave at the altar before marrying James Stenbeck?",
+    "answers": [
+      "Gunnar Stenbeck",
+      "Tom Hughes",
+      "Hal Munson",
+      "Brian McColl"
+    ],
+    "correctAnswer": "Tom Hughes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Barbara Ryan",
+      "Tom Hughes",
+      "Broken Wedding",
+      "James Stenbeck",
+      "1980 Romance",
+      "Cancelled Ceremony"
+    ]
+  },
+  {
+    "id": "tv_42989",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what was James Stenbeck's actual family status when Gunnar was identified as the rightful heir?",
+    "answers": [
+      "He was the son of the family nanny",
+      "He was Gunnar's younger twin",
+      "He was the family's adopted grandfather",
+      "He was descended from royalty"
+    ],
+    "correctAnswer": "He was the son of the family nanny",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "James Stenbeck",
+      "Gunnar Stenbeck",
+      "Inheritance Plot",
+      "Nanny Son",
+      "Family Secret",
+      "1980s Mystery"
+    ]
+  },
+  {
+    "id": "tv_42990",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what did James Stenbeck attempt to do to Barbara so he could gain custody of Paul?",
+    "answers": [
+      "Send her to boarding school",
+      "Arrange a fake remarriage",
+      "Have her deported",
+      "Drug her"
+    ],
+    "correctAnswer": "Drug her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "James Stenbeck",
+      "Barbara Ryan",
+      "Paul Ryan",
+      "Custody Scheme",
+      "Drugging Plot",
+      "Family Crime"
+    ]
+  },
+  {
+    "id": "tv_42991",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which Italian woman briefly became Bob Hughes's wife while involved in the Mr Big plot?",
+    "answers": [
+      "Shannon O'Hara",
+      "Lyla Montgomery",
+      "Miranda Marlowe",
+      "Cynthia Haines"
+    ],
+    "correctAnswer": "Miranda Marlowe",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Miranda Marlowe",
+      "Bob Hughes",
+      "Mr Big",
+      "Marriage",
+      "Smuggling Mystery",
+      "1980s"
+    ]
+  },
+  {
+    "id": "tv_42992",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actress portrayed Miranda Marlowe in the early-1980s smuggling storyline?",
+    "answers": [
+      "Eileen Fulton",
+      "Elaine Princi",
+      "Mary Linda Rapelye",
+      "Nancy Pinkerton"
+    ],
+    "correctAnswer": "Elaine Princi",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Elaine Princi",
+      "Miranda Marlowe",
+      "Bob Hughes",
+      "Mr Big",
+      "1980s Casting",
+      "Actress"
+    ]
+  },
+  {
+    "id": "tv_42993",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what was the real name of the smuggling villain known as Mr Big?",
+    "answers": [
+      "Bernard Ignatius Grayson",
+      "Brad Hollister",
+      "Grant Colman",
+      "Whitney McColl"
+    ],
+    "correctAnswer": "Bernard Ignatius Grayson",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Mr Big",
+      "Bernard Ignatius Grayson",
+      "Smuggling",
+      "Tom Hughes",
+      "Margo Hughes",
+      "Early 1980s"
+    ]
+  },
+  {
+    "id": "tv_42994",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what happened to the villain Mr Big during the Africa showdown?",
+    "answers": [
+      "He fell from an aircraft",
+      "He escaped in a hot-air balloon",
+      "He drowned at sea",
+      "He was eaten by a crocodile"
+    ],
+    "correctAnswer": "He was eaten by a crocodile",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Mr Big",
+      "Crocodile",
+      "Africa",
+      "Tom Hughes",
+      "Margo Hughes",
+      "Villain Death"
+    ]
+  },
+  {
+    "id": "tv_42995",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which teenage girl was revealed to be Miranda Marlowe's kidnapped daughter?",
+    "answers": [
+      "Sabrina Hughes",
+      "Amy Cunningham",
+      "Bilan Marlowe",
+      "Diana McColl"
+    ],
+    "correctAnswer": "Bilan Marlowe",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Miranda Marlowe",
+      "Bilan Marlowe",
+      "Kidnapping",
+      "Mr Big",
+      "Family Reunion",
+      "Crime Plot"
+    ]
+  },
+  {
+    "id": "tv_42996",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which policeman became attorney Maggie Crawford's husband after Tom Hughes?",
+    "answers": [
+      "Nick Andropoulos",
+      "Frank Andropoulos",
+      "John Dixon",
+      "Hal Munson"
+    ],
+    "correctAnswer": "Frank Andropoulos",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Maggie Crawford",
+      "Frank Andropoulos",
+      "Police Officer",
+      "Marriage",
+      "Greek Family"
+    ]
+  },
+  {
+    "id": "tv_42997",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what name did Maggie Crawford and Frank Andropoulos give their adopted daughter?",
+    "answers": [
+      "Jill",
+      "Betsy",
+      "Diana",
+      "Danielle"
+    ],
+    "correctAnswer": "Jill",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Maggie Crawford",
+      "Frank Andropoulos",
+      "Adoption",
+      "Jill Andropoulos",
+      "Family Plot",
+      "Child"
+    ]
+  },
+  {
+    "id": "tv_42998",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, who was revealed as the biological father of the child adopted by Maggie and Frank?",
+    "answers": [
+      "James Stenbeck",
+      "Nick Andropoulos",
+      "Tom Hughes",
+      "Cal Randolph"
+    ],
+    "correctAnswer": "Cal Randolph",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Cal Randolph",
+      "Jill",
+      "Maggie Crawford",
+      "Frank Andropoulos",
+      "Adoption Dispute",
+      "Paternity"
+    ]
+  },
+  {
+    "id": "tv_42999",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what was Cal Randolph's secret profession during the custody dispute over Jill?",
+    "answers": [
+      "Commercial pilot",
+      "Newspaper editor",
+      "FBI agent",
+      "Undercover journalist"
+    ],
+    "correctAnswer": "FBI agent",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Cal Randolph",
+      "FBI Agent",
+      "Jill",
+      "Adoption Dispute",
+      "Maggie Crawford",
+      "Frank Andropoulos"
+    ]
+  },
+  {
+    "id": "tv_43000",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which Greek restaurateur became one of Kim Stewart's husbands?",
+    "answers": [
+      "Steve Andropoulos",
+      "Nick Andropoulos",
+      "Frank Andropoulos",
+      "Tucker Foster"
+    ],
+    "correctAnswer": "Nick Andropoulos",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Nick Andropoulos",
+      "Kim Stewart",
+      "Greek Restaurateur",
+      "Marriage",
+      "Betsy Stewart",
+      "1980s"
+    ]
+  },
+  {
+    "id": "tv_43001",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what killed Nick Andropoulos during an argument with Steve?",
+    "answers": [
+      "A heart attack",
+      "A car accident",
+      "A fall from a balcony",
+      "A shooting"
+    ],
+    "correctAnswer": "A heart attack",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Nick Andropoulos",
+      "Steve Andropoulos",
+      "Heart Attack",
+      "Betsy Stewart",
+      "Family Conflict",
+      "Death"
+    ]
+  },
+  {
+    "id": "tv_43002",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which Montgomery daughter was the younger sister of Margo and Craig?",
+    "answers": [
+      "Lily Walsh",
+      "Diana McColl",
+      "Sabrina Hughes",
+      "Cricket Montgomery"
+    ],
+    "correctAnswer": "Cricket Montgomery",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Family",
+      "Cricket Montgomery",
+      "Margo Montgomery",
+      "Craig Montgomery",
+      "Lyla Montgomery",
+      "Family",
+      "Younger Sister"
+    ]
+  },
+  {
+    "id": "tv_43003",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actress played Margo Montgomery's younger sister Cricket?",
+    "answers": [
+      "Mary Lynn Blanks",
+      "Martha Byrne",
+      "Lisa Loring",
+      "Lisa Brown"
+    ],
+    "correctAnswer": "Lisa Loring",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Lisa Loring",
+      "Cricket Montgomery",
+      "Lyla Montgomery",
+      "1980s Cast",
+      "Actress",
+      "Soap"
+    ]
+  },
+  {
+    "id": "tv_43004",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which future Days of Our Lives star played Eric Hollister in the early 1980s?",
+    "answers": [
+      "Frank Runyeon",
+      "Peter Reckell",
+      "Scott Bryce",
+      "John Wesley Shipp"
+    ],
+    "correctAnswer": "Peter Reckell",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Peter Reckell",
+      "Eric Hollister",
+      "Days Of Our Lives",
+      "1980s Cast",
+      "Brad Hollister",
+      "Actor"
+    ]
+  },
+  {
+    "id": "tv_43005",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actress played Hayley Wilson, John Dixon's temporary ward?",
+    "answers": [
+      "Dana Delany",
+      "Meg Ryan",
+      "Marisa Tomei",
+      "Julianne Moore"
+    ],
+    "correctAnswer": "Dana Delany",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Dana Delany",
+      "Hayley Wilson",
+      "John Dixon",
+      "1980s Casting",
+      "Early Career",
+      "Actress"
+    ]
+  },
+  {
+    "id": "tv_43006",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, how many babies did Annie Stewart and Dr Jeff Ward have in a single birth?",
+    "answers": [
+      "Two",
+      "Three",
+      "Five",
+      "Four"
+    ],
+    "correctAnswer": "Four",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Annie Stewart",
+      "Jeff Ward",
+      "Quadruplets",
+      "Stewart Family",
+      "1980s Babies",
+      "Marriage"
+    ]
+  },
+  {
+    "id": "tv_43007",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which British aristocrat did Marcy Thompson marry to become Lady Cushing?",
+    "answers": [
+      "Lord Duncan McKechnie",
+      "Sir James Stenbeck",
+      "Lord Stewart Cushing",
+      "Lord Earl Mitchell"
+    ],
+    "correctAnswer": "Lord Stewart Cushing",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Marcy Thompson",
+      "Lady Cushing",
+      "Stewart Cushing",
+      "England",
+      "1980s Marriage",
+      "Aristocracy"
+    ]
+  },
+  {
+    "id": "tv_43008",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, whose previously unknown son was Lord Stewart Cushing?",
+    "answers": [
+      "Bob Hughes's",
+      "Paul Stewart's",
+      "James Stenbeck's",
+      "Chris Hughes's"
+    ],
+    "correctAnswer": "Paul Stewart's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Lord Stewart Cushing",
+      "Paul Stewart",
+      "Long Lost Son",
+      "Marcy Thompson",
+      "Stewart Family",
+      "Parentage"
+    ]
+  },
+  {
+    "id": "tv_43009",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which executive producer helped shape the soap's early-1980s youth-oriented period?",
+    "answers": [
+      "Mary-Ellis Bunim",
+      "Jill Farren Phelps",
+      "Gloria Monty",
+      "Robert Calhoun"
+    ],
+    "correctAnswer": "Mary-Ellis Bunim",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Mary Ellis Bunim",
+      "Executive Producer",
+      "Early 1980s",
+      "Youth Oriented Drama",
+      "Production",
+      "CBS Soap"
+    ]
+  },
+  {
+    "id": "tv_43010",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which married writing duo developed the early-1980s John Dixon and Dee Stewart drama?",
+    "answers": [
+      "Douglas Marland and Irna Phillips",
+      "William Bell and Agnes Nixon",
+      "Hogan Sheffer and Jean Passanante",
+      "Bridget and Jerome Dobson"
+    ],
+    "correctAnswer": "Bridget and Jerome Dobson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Bridget Dobson",
+      "Jerome Dobson",
+      "Head Writers",
+      "Dee Stewart",
+      "John Dixon",
+      "Early 1980s"
+    ]
+  },
+  {
+    "id": "tv_43011",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, who composed the music for the opening theme introduced in 1981?",
+    "answers": [
+      "David Foster",
+      "Dominic Messinger",
+      "Jack Cortner",
+      "Gary Morris"
+    ],
+    "correctAnswer": "Jack Cortner",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Jack Cortner",
+      "1981 Opening",
+      "World Turns On And On",
+      "Theme Music",
+      "Synthesised Score",
+      "CBS"
+    ]
+  },
+  {
+    "id": "tv_43012",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what significant change did the soap make to its opening credits in 1981?",
+    "answers": [
+      "It showed every cast member in photographs",
+      "It introduced a synthesised theme and computer-enhanced images",
+      "It removed the spinning globe permanently",
+      "It switched the opening to black-and-white"
+    ],
+    "correctAnswer": "It introduced a synthesised theme and computer-enhanced images",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Production",
+      "1981 Opening",
+      "Computer Visuals",
+      "Synthesised Music",
+      "Spinning Globe",
+      "Broadcast Design",
+      "Title Sequence"
+    ]
+  },
+  {
+    "id": "tv_43013",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which announcer replaced Dan McCullough on the soap in 1982?",
+    "answers": [
+      "Dan Region",
+      "Johnny Olson",
+      "Gene Wood",
+      "Bill Cullen"
+    ],
+    "correctAnswer": "Dan Region",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Dan Region",
+      "Dan McCullough",
+      "1982",
+      "Announcer Change",
+      "Voiceover",
+      "CBS Broadcast"
+    ]
+  },
+  {
+    "id": "tv_43014",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which 1960s-era Hughes daughter returned during Douglas Marland's revival after many years away?",
+    "answers": [
+      "Frannie Hughes",
+      "Lily Walsh",
+      "Sabrina Hughes",
+      "Penny Hughes"
+    ],
+    "correctAnswer": "Penny Hughes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Penny Hughes",
+      "Rosemary Prinz",
+      "Douglas Marland",
+      "Veteran Return",
+      "Family History",
+      "1980s Revival"
+    ]
+  },
+  {
+    "id": "tv_43015",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which two Stewart sisters returned for the programme's 30th anniversary in 1986?",
+    "answers": [
+      "Kim and Jennifer",
+      "Emily and Susan",
+      "Dee and Annie",
+      "Lily and Iva"
+    ],
+    "correctAnswer": "Dee and Annie",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Dee Stewart",
+      "Annie Stewart",
+      "1986 Thirtieth Anniversary",
+      "April Second",
+      "Douglas Marland",
+      "Returning Characters"
+    ]
+  },
+  {
+    "id": "tv_43016",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which young woman was murdered by Douglas Cummings after falsely claiming she was pregnant by Kevin Gibson?",
+    "answers": [
+      "Marsha Talbot",
+      "Marie Kovac",
+      "Bilan Marlowe",
+      "Cricket Montgomery"
+    ],
+    "correctAnswer": "Marie Kovac",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Marie Kovac",
+      "Douglas Cummings",
+      "Kevin Gibson",
+      "Frannie Hughes",
+      "Stalker Murders",
+      "1985"
+    ]
+  },
+  {
+    "id": "tv_43017",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which mental-health professional was murdered by Douglas Cummings in the stalking plot?",
+    "answers": [
+      "Henry Strauss",
+      "Bob Hughes",
+      "Doug Cassen",
+      "Dr David Stewart"
+    ],
+    "correctAnswer": "Henry Strauss",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Henry Strauss",
+      "Douglas Cummings",
+      "Psychiatrist",
+      "Serial Killer",
+      "Kim Hughes",
+      "Murder"
+    ]
+  },
+  {
+    "id": "tv_43018",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, who helped rescue Frannie Hughes from Marsha Talbot after the murder trial?",
+    "answers": [
+      "James Stenbeck and John Dixon",
+      "Tom Hughes and Gunnar Stenbeck",
+      "Brian McColl and Nick Andropoulos",
+      "Seth Snyder and Casey Peretti"
+    ],
+    "correctAnswer": "Seth Snyder and Casey Peretti",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Frannie Hughes",
+      "Marsha Talbot",
+      "Seth Snyder",
+      "Casey Peretti",
+      "Hostage Rescue",
+      "1980s"
+    ]
+  },
+  {
+    "id": "tv_43019",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which woman was romantically linked to Brian McColl before his involvement with Barbara Ryan?",
+    "answers": [
+      "Diana McColl",
+      "Marcy Thompson",
+      "Shannon O'Hara",
+      "Margo Montgomery"
+    ],
+    "correctAnswer": "Shannon O'Hara",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Brian McColl",
+      "Shannon OHara",
+      "Barbara Ryan",
+      "1980s Romance",
+      "McColl Family",
+      "Love Triangle"
+    ]
+  },
+  {
+    "id": "tv_43020",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which man did Barbara Ryan help reunite with Shannon O'Hara to undermine Shannon and Brian?",
+    "answers": [
+      "Gunnar Stenbeck",
+      "Duncan McKechnie",
+      "James Stenbeck",
+      "Hal Munson"
+    ],
+    "correctAnswer": "Duncan McKechnie",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Barbara Ryan",
+      "Shannon OHara",
+      "Duncan McKechnie",
+      "Brian McColl",
+      "Romantic Scheme",
+      "1980s"
+    ]
+  },
+  {
+    "id": "tv_43021",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what did Hank Elliot do that helped Paul Ryan recognise him as a friend?",
+    "answers": [
+      "He saved Paul from a shooting",
+      "He defended Paul at trial",
+      "He rescued Paul from a mine",
+      "He gave Paul an inheritance"
+    ],
+    "correctAnswer": "He saved Paul from a shooting",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Hank Elliot",
+      "Paul Ryan",
+      "James Stenbeck",
+      "1988 Gay Character",
+      "Friendship",
+      "Shooting Rescue"
+    ]
+  },
+  {
+    "id": "tv_43022",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actor received the 1986 Daytime Emmy for his supporting role as Douglas Cummings?",
+    "answers": [
+      "Anthony Herrera",
+      "Benjamin Hendrickson",
+      "Scott Bryce",
+      "John Wesley Shipp"
+    ],
+    "correctAnswer": "John Wesley Shipp",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "1986 Daytime Emmy",
+      "John Wesley Shipp",
+      "Douglas Cummings",
+      "Supporting Actor",
+      "Award Winner",
+      "CBS Soap"
+    ]
+  },
+  {
+    "id": "tv_43023",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which Dr John Dixon actor won the 1987 Daytime Emmy for Outstanding Lead Actor?",
+    "answers": [
+      "Don Hastings",
+      "John Wesley Shipp",
+      "Larry Bryggman",
+      "Scott Bryce"
+    ],
+    "correctAnswer": "Larry Bryggman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "1987 Daytime Emmy",
+      "Larry Bryggman",
+      "John Dixon",
+      "Lead Actor",
+      "Award Winner",
+      "1980s"
+    ]
+  },
+  {
+    "id": "tv_43024",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actor won the 1987 supporting-actor Daytime Emmy for playing Tom Hughes?",
+    "answers": [
+      "Justin Deas",
+      "Gregg Marx",
+      "Scott Holmes",
+      "Richard Thomas"
+    ],
+    "correctAnswer": "Gregg Marx",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "1987 Daytime Emmy",
+      "Gregg Marx",
+      "Tom Hughes",
+      "Supporting Actor",
+      "Award Winner",
+      "1980s"
+    ]
+  },
+  {
+    "id": "tv_43025",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actress won a Daytime Emmy in 1988 for playing Frannie and Sabrina Hughes?",
+    "answers": [
+      "Julianne Moore",
+      "Eileen Fulton",
+      "Kathryn Hays",
+      "Meg Ryan"
+    ],
+    "correctAnswer": "Julianne Moore",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "1988 Daytime Emmy",
+      "Julianne Moore",
+      "Frannie Hughes",
+      "Sabrina Hughes",
+      "Outstanding Ingenue",
+      "Award Winner"
+    ]
+  },
+  {
+    "id": "tv_43026",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, how many Daytime Emmy nominations did the series receive in 1986?",
+    "answers": [
+      "Six",
+      "Eleven",
+      "Thirty-seven",
+      "Twenty"
+    ],
+    "correctAnswer": "Twenty",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1980–1989 Stories",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "1986 Daytime Emmy",
+      "Twenty Nominations",
+      "Awards History",
+      "CBS",
+      "Programme Recognition",
+      "Television Industry"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==138||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+String(27453+i)||q.category!=='TV'||q.topic!=='As the World Turns'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(27453+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.category!=='TV'||q.topic!=='As the World Turns'||
 q.answers.length!==4||new Set(q.answers.map(s=>s.toLowerCase())).size!==4||
 q.answers.filter(s=>s===q.correctAnswer).length!==1||
 q.tags.length<13||new Set(q.tags).size!==q.tags.length||
