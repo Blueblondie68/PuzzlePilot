@@ -182,7 +182,9 @@ function addSection(data, period) {
       'British Television',
       'ITV',
       'Crime Drama',
+      'Police Procedural',
       PROGRAMME,
+      'Programme: '+PROGRAMME,
       period,
       correctAnswer,
       ...specificTags
@@ -194,6 +196,7 @@ function addSection(data, period) {
     const entry = {
       id,
       category: 'Television',
+      programme: PROGRAMME,
       question: `In ${PROGRAMME}, ${stem[0].toLowerCase()}${stem.slice(1)}`,
       answers,
       correctAnswer,
@@ -241,4 +244,106 @@ for (const entry of questionBank) {
   seenQuestions.add(normalized);
 }
 
-module.exports = questionBank;
+
+
+// Pack 382 case audit. Original IDs tv_20073–tv_20204 are retained.
+// Episode / production references:
+// https://epguides.com/touchoffrost/guide.shtml
+// https://thetvdb.com/series/a-touch-of-frost/allseasons/official
+// https://acupofcrime.com/tv/a-touch-of-frost/episodes/
+// Later Frost series continue with Packs 383 and 384. Master remains PARTIAL.
+// New audited IDs start tv_40551.
+const audit382_pay=`In Paying the Price, which actor portrayed the kidnapper Graham McArdy?|Marc Warren|Danny Webb|Ralph Brown|Jonathan Hyde|Paying the Price|Series 4|Graham McArdy actor
+In Paying the Price, at which department store did Linda Brook work as a cleaner?|Bellamy's|Harrods|Fenwick|Selfridges|Paying the Price|Series 4|Linda Brook workplace
+In Paying the Price, who is Pauline Venables's sister?|Sue Venables|Linda Brook|Claire Toms|Jo Thorn|Paying the Price|Series 4|Pauline family relationship
+In Paying the Price, who is Pauline Venables's boyfriend and an early suspect?|Karl Edwards|Graham McArdy|Captain Carlisle|Jonathan Meyerbridge|Paying the Price|Series 4|Pauline boyfriend suspect
+In Paying the Price, what kind of vehicle does the kidnapper use to deliver ransom messages?|A motorcycle|A delivery van|A taxi|A pedal bicycle|Paying the Price|Series 4|Ransom courier vehicle
+In Paying the Price, what does the police search of Linda Brook's home uncover?|Documents implicating the kidnapper|A missing police radio|An abandoned passport|The stolen security-van money|Paying the Price|Series 4|Linda home evidence`;
+const audit382_unknown=`In Unknown Soldiers, who plays the commanding officer Major Harvey?|Nicholas Jones|Ralph Brown|David Bradley|Will Knightley|Unknown Soldiers|Series 4|Major Harvey actor
+In Unknown Soldiers, why does Major Harvey resist the police investigation?|A scandal might damage his promotion|The camp is scheduled to close|He is moving to a naval posting|His staff are on strike|Unknown Soldiers|Series 4|Commanding officer concerns
+In Unknown Soldiers, which military police branch investigates the soldier's death?|Special Investigation Branch|Military Intelligence Section 5|Royal Air Force Police|The Home Office Forensic Unit|Unknown Soldiers|Series 4|Army investigative unit
+In Unknown Soldiers, who actually fires the shot that kills John Meredith?|Cavendish|Sergeant Donovan|Major Harvey|Neil Morrison|Unknown Soldiers|Series 4|Identity of army killer
+In Unknown Soldiers, whom was Meredith's killer trying to shoot in the darkness?|Corporal Devenish|Captain Carlisle|Neil Morrison|Major Harvey|Unknown Soldiers|Series 4|Intended target of shooting
+In Unknown Soldiers, which veteran driver is played by David Bradley?|Les James|Dave Chaplin|Barry Hockey|Steve Marson|Unknown Soldiers|Series 4|Security van accomplice actor
+In Unknown Soldiers, what leisure activity links the drivers who fake security-van robberies?|Fishing|Golf|Rugby|Shooting|Unknown Soldiers|Series 4|Shared hobby of van drivers`;
+const audit382_fun=`In Fun Times for Swingers, who plays Detective Sergeant Prentice?|Russell Hunter|Ralph Brown|Neil Stuke|Matt Bardock|Fun Times for Swingers|Series 4|Scottish detective actor
+In Fun Times for Swingers, which actor portrayed the gigolo operating as Damien Law?|Jonathan Phillips|Martin Jarvis|David Dixon|Peter Wight|Fun Times for Swingers|Series 4|Frankie Barton performer
+In Fun Times for Swingers, who plays Damien Law's associate Harvey Wade?|Martin Jarvis|David Dixon|Peter Wight|Russell Hunter|Fun Times for Swingers|Series 4|Harvey Wade actor
+In Fun Times for Swingers, what happens to Cyril Pearce before the police can arrest him?|He jumps from a bridge|He escapes by ferry|He dies in a house fire|He flees in a stolen car|Fun Times for Swingers|Series 4|Cyril Pearce downfall
+In Fun Times for Swingers, which woman suffers a violent attack by her jealous husband Cyril?|Anne-Marie Pearce|Jane Fanshawe|Joy Barton|Prue Hastings|Fun Times for Swingers|Series 4|Victim of domestic assault
+In Fun Times for Swingers, what activity provides an alibi for prominent cricket-club members?|A private swingers' party|A televised football match|An overnight fishing trip|A formal charity dinner|Fun Times for Swingers|Series 4|Cricket club members alibi`;
+const audit382_things=`In The Things We Do for Love, which congregation is connected to the murdered physiotherapist?|The New Union Church|The Denton Quakers|The United Methodist Fellowship|The Church of the New Millennium|The Things We Do for Love|Series 4|Local religious community
+In The Things We Do for Love, which actor plays Jonathan Meyerbridge?|Michael Kitchen|David Ryall|Neil Stuke|Peter Wight|The Things We Do for Love|Series 4|Jonathan Meyerbridge actor
+In The Things We Do for Love, who portrays the newly transferred detective Frank Nash?|Neil Stuke|Russell Hunter|Matt Bardock|John Lyons|The Things We Do for Love|Series 4|Frank Nash actor
+In The Things We Do for Love, how many times was physiotherapist Vicky Phillips stabbed?|Eighteen|Eight|Twelve|Twenty-four|The Things We Do for Love|Series 4|Murder injury count
+In The Things We Do for Love, what professional authority complicates solicitor Edward Gull's involvement?|He sits on a board overseeing police affairs|He is the local coroner|He chairs the hospital trust|He is the Chief Constable's secretary|The Things We Do for Love|Series 4|Edward Gull's influence
+In The Things We Do for Love, what does the murderer's confession reveal about her motive?|She wanted to keep a family from breaking apart|She wanted to steal a valuable painting|She was blackmailed for gambling debts|She believed the victim had stolen her inheritance|The Things We Do for Love|Series 4|Nanny Milly's motive`;
+const audit382_deep=`In Deep Waters, who played the university student Helen Tudor?|Tamzin Malleson|Charlotte Bellamy|Gillian Bevan|Katrina Levon|Deep Waters|Series 4|Helen Tudor performer
+In Deep Waters, who portrayed Dr Keith Michaelson's wife Suzanne?|Gillian Bevan|Tamzin Malleson|Stephanie Turner|Charlotte Bellamy|Deep Waters|Series 4|Suzanne Michaelson actor
+In Deep Waters, what sport links two young women targeted in different towns?|Swimming|Rowing|Tennis|Athletics|Deep Waters|Series 4|Victim sport connection
+In Deep Waters, what was Mrs Chandani's job when she was fatally attacked?|Sub-postmistress|Library assistant|University lecturer|Bank cashier|Deep Waters|Series 4|Post office victim job`;
+const audit382_penny=`In Penny for the Guy, who played elderly kidnapper Henry Finch?|Philip Stone|Miles Anderson|Michael Angelis|Stephen Moyer|Penny for the Guy|Series 5|Henry Finch actor
+In Penny for the Guy, who portrayed supermarket magnate Sir Richard Cordwell?|Miles Anderson|Philip Stone|Michael Angelis|Stephen Moyer|Penny for the Guy|Series 5|Sir Richard Cordwell actor
+In Penny for the Guy, what drug was used to incapacitate Dean Anderton?|Chloroform|Morphine|Insulin|Diazepam|Penny for the Guy|Series 5|Child kidnapping method
+In Penny for the Guy, what injury had the kidnappers inflicted on the first child?|Removal of a little finger|A broken collarbone|A severe burn on the hand|A fractured ankle|Penny for the Guy|Series 5|Dean Anderton injury
+In Penny for the Guy, what total value of counterfeit notes caused the supermarket chain's scandal?|£40,000|£4,000|£400,000|£14,000|Penny for the Guy|Series 5|Counterfeit notes amount
+In Penny for the Guy, which actor played Detective Constable Burton?|Stephen Moyer|Michael Angelis|Daniel Casey|Bruce Jones|Penny for the Guy|Series 5|DC Burton performer
+In Penny for the Guy, who portrayed Carol Stansfield?|Sarah Smart|Gwyneth Powell|Fiona Dolman|Carol Harrison|Penny for the Guy|Series 5|Teenager Carol actor`;
+const audit382_house=`In House Calls, who portrayed suspect Sydney Snell?|Peter Gunn|Tom Radcliffe|Ian Peck|Grant Masters|House Calls|Series 5|Sydney Snell actor
+In House Calls, who played carpet fitter Mark Grover?|Tom Radcliffe|Peter Gunn|Ian Peck|Myles Hoyle|House Calls|Series 5|Mark Grover performer
+In House Calls, who played Phil Collard, who helped conceal Nancy Grover's death?|Ian Peck|Grant Masters|Peter Gunn|Tom Radcliffe|House Calls|Series 5|Phil Collard performer
+In House Calls, which medical setting appears when Frost faces an ethical mistake involving his former suspect?|Psychiatric care|A maternity ward|A dentistry clinic|An optician's practice|House Calls|Series 5|Suspect psychiatric support`;
+const audit382_true=`In True Confessions, which actress played Detective Superintendent Bailey?|Gwyneth Strong|Gwyneth Powell|Isla Blair|Caroline Harker|True Confessions|Series 5|DS Bailey actress
+In True Confessions, who portrayed Jeanette Barr's brother-in-law Alec?|David Beames|Anthony Calf|Jason Riddington|Kenneth Cope|True Confessions|Series 5|Alec Barr actor
+In True Confessions, which actor portrayed Father Sullivan?|Eoin McCarthy|Kenneth Cope|Anthony Calf|Noel Johnson|True Confessions|Series 5|Father Sullivan actor
+In True Confessions, who played former chief superintendent Charlie Fairclough?|Kenneth Cope|Anthony Calf|David Beames|Bruce Alexander|True Confessions|Series 5|Charlie Fairclough actor
+In True Confessions, what business interest was Jeanette Barr threatening to sell?|A share in the Barr family company|Her husband's catering firm|A chain of bookshops|A farm inherited from her father|True Confessions|Series 5|Family company share dispute
+In True Confessions, what childhood cruelty is remembered about Alec Barr?|Poisoning a family pet|Setting fire to a school|Stealing a neighbour's bicycle|Destroying a teacher's car|True Confessions|Series 5|Alec Barr childhood conduct
+In True Confessions, how does Frost obtain a confession from Alec Barr?|He uses Father Sullivan in a ruse|He finds a confession note at a hotel|He secretly films a family argument|He promises Alec a new police post|True Confessions|Series 5|Alec Barr police tactic`;
+const audit382_noOther=`In No Other Love, who played Charlie Lawson, the family patriarch?|Anthony Bate|Mark Lambert|Edward Purver|Matt Bardock|No Other Love|Series 5|Charlie Lawson actor
+In No Other Love, who portrayed the eldest Lawson daughter Joanna?|Luisa Bradshaw-White|Ashlie Walker|Laura Crossley|Diane Keen|No Other Love|Series 5|Joanna Lawson actress
+In No Other Love, who robbed Peter Lawson's pawn shop to fund his sister's trip?|Matthew Lawson|Clive Barnard|Terry Wilson|Jack Frost|No Other Love|Series 5|Pawn shop robbery suspect
+In No Other Love, how old was Olive Walters's daughter when she died years before?|Two years old|Six months old|Seven years old|Twelve years old|No Other Love|Series 5|Olive Walters family tragedy
+In No Other Love, what ultimately happens to Olive Walters after she is released?|She dies of natural causes|She moves to Scotland|She enters a convent|She flees overseas|No Other Love|Series 5|Olive Walters outcome
+In No Other Love, what does Charlie Lawson do after Clive Barnard's death?|He turns the gun on himself|He escapes by car|He surrenders peacefully|He sets the house on fire|No Other Love|Series 5|Charlie Lawson final confrontation`;
+const AUDIT382_NORM=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit382(block,series){
+ for(const [i,row] of block.trim().split('\n').entries()){
+  const p=row.split('|').map(x=>x.trim());
+  if(p.length!==8||p.some(x=>!x))throw Error('Bad Pack 382 audit row '+series+' '+i);
+  const [stem,correctAnswer,a,b,c,episode,coverage,focus]=p;
+  const m=/^In (.+?), (.+)$/.exec(stem);
+  if(!m)throw Error('Missing episode context for Pack 382 at '+i);
+  const question='In '+PROGRAMME+', during "'+m[1]+'", '+m[2];
+  const answers=[a,b,c];answers.splice(questionBank.length%4,0,correctAnswer);
+  const tags=['Television','British Television','ITV','Crime Drama','Police Procedural',
+    PROGRAMME,'Programme: '+PROGRAMME,'Series: '+series,
+    'Episode: '+episode,'Story or performer: '+focus,'Correct answer: '+correctAnswer,
+    'Case focus: '+focus,'Broadcast period: '+coverage,'Crime drama case: '+episode];
+  questionBank.push({id:'tv_'+(40551+questionBank.length-132),
+    category:'Television',programme:PROGRAMME,question,answers,correctAnswer,
+    difficulty:'Medium',tags,dailyEligible:true});
+ }
+}
+addAudit382(audit382_pay,'Series 4');
+addAudit382(audit382_unknown,'Series 4');
+addAudit382(audit382_fun,'Series 4');
+addAudit382(audit382_things,'Series 4');
+addAudit382(audit382_deep,'Series 4');
+addAudit382(audit382_penny,'Series 5');
+addAudit382(audit382_house,'Series 5');
+addAudit382(audit382_true,'Series 5');
+addAudit382(audit382_noOther,'Series 5');
+const ids382=new Set(),qs382=new Set();
+for(const q of questionBank){
+ const key=AUDIT382_NORM(q.question);
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ q.answers.length!==4||new Set(q.answers.map(AUDIT382_NORM)).size!==4||
+ q.answers.filter(x=>x===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||ids382.has(q.id)||qs382.has(key))
+ throw Error('Pack 382 audit check failed '+q.id);
+ ids382.add(q.id);qs382.add(key);
+}
+module.exports=questionBank;
