@@ -1,6 +1,6 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 494: Below Deck (Original Series), Season 4 (2016)
-// 57 audited questions: 43 originals (two clarified) plus 14 distinct season-four facts.
-// Original IDs tv_27892–tv_27934; audit IDs tv_43135–tv_43148.
+// 55 audited questions: 43 originals (two clarified) plus 12 distinct season-four facts.
+// Original IDs tv_27892–tv_27934; audit IDs tv_43135–tv_43146.
 // Original series only; not Mediterranean or another spin-off.
 // Audit on 22 Nov 2026: Bravo production and episode pages, Peacock Season 4,
 // contemporary yacht reporting for BG, 2016 Bravo crew retrospectives,
@@ -1326,7 +1326,7 @@ const auditQuestions=[
     "id": "tv_43135",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, in which island group was Below Deck Season 4 filmed aboard Valor?",
+    "question": "In Below Deck Season 4, in which Caribbean island group did Valor operate?",
     "answers": [
       "The Greek Cyclades",
       "The British Virgin Islands",
@@ -1359,7 +1359,7 @@ const auditQuestions=[
     "id": "tv_43136",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, what was the real-world name of the yacht presented as Valor in Below Deck Season 4?",
+    "question": "In Below Deck Season 4, what was the actual name of the yacht shown as Valor?",
     "answers": [
       "BG",
       "Ohana",
@@ -1393,7 +1393,7 @@ const auditQuestions=[
     "id": "tv_43137",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, approximately how long was the motor yacht Valor featured in Season 4?",
+    "question": "In Below Deck Season 4, approximately how long was the yacht Valor?",
     "answers": [
       "75 feet",
       "210 feet",
@@ -1427,7 +1427,7 @@ const auditQuestions=[
     "id": "tv_43138",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, who was identified as the owner of the yacht used as Valor in Season 4?",
+    "question": "In Below Deck Season 4, who owned the yacht filmed under the name Valor?",
     "answers": [
       "Andy Cohen",
       "Ben Robinson",
@@ -1495,41 +1495,7 @@ const auditQuestions=[
     "id": "tv_43140",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, which bosun demoted Trevor Walker from his senior deckhand position?",
-    "answers": [
-      "Kelley Johnson",
-      "Eddie Lucas",
-      "Aleks Taldykin",
-      "Captain Sandy Yawn"
-    ],
-    "correctAnswer": "Kelley Johnson",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck Series",
-      "Bravo Network",
-      "Season: 4 (2016)",
-      "Yacht: Valor",
-      "British Virgin Islands",
-      "Written Quiz",
-      "Section: Audit Crew",
-      "Kelley Johnson",
-      "Trevor Walker",
-      "Demotion",
-      "Deck Team",
-      "Leadership",
-      "Episode Three"
-    ]
-  },
-  {
-    "id": "tv_43141",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "In Below Deck Season 4, who made the final decision to dismiss troublesome deckhand Trevor Walker?",
+    "question": "In Below Deck Season 4, who made the decision to dismiss Trevor Walker?",
     "answers": [
       "Kate Chastain",
       "Ben Robinson",
@@ -1560,10 +1526,10 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43142",
+    "id": "tv_43141",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, which deckhand became the new senior deckhand late in Below Deck Season 4?",
+    "question": "In Below Deck Season 4, who was promoted to senior deckhand late in the charter season?",
     "answers": [
       "Kyle Dixon",
       "Trevor Walker",
@@ -1594,10 +1560,10 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43143",
+    "id": "tv_43142",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, what was the name of the pampered poodle accompanying charter guests in Season 4?",
+    "question": "In Below Deck Season 4, what was the name of the pampered poodle brought by charter guests?",
     "answers": [
       "Onyx",
       "Scupper",
@@ -1628,44 +1594,10 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43144",
+    "id": "tv_43143",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, which deckhand had an allergic reaction after trying Ben Robinson's sea urchin dish?",
-    "answers": [
-      "Kyle Dixon",
-      "Nico Scholly",
-      "Lauren Burchell",
-      "Kelley Johnson"
-    ],
-    "correctAnswer": "Kyle Dixon",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck Series",
-      "Bravo Network",
-      "Season: 4 (2016)",
-      "Yacht: Valor",
-      "British Virgin Islands",
-      "Written Quiz",
-      "Section: Audit Crew",
-      "Kyle Dixon",
-      "Sea Urchin",
-      "Ben Robinson",
-      "Food Reaction",
-      "Galley",
-      "Episode Ten"
-    ]
-  },
-  {
-    "id": "tv_43145",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "In Below Deck Season 4, what surprise did Ben Robinson leave for Emily Warburton-Adams after a romantic gesture by Kate?",
+    "question": "In Below Deck Season 4, what gift did Ben Robinson leave in Emily Warburton-Adams's bunk?",
     "answers": [
       "A pet kitten",
       "A gold watch",
@@ -1696,10 +1628,10 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43146",
+    "id": "tv_43144",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, what happened to Kate Chastain's relationship with girlfriend Ro during Season 4?",
+    "question": "In Below Deck Season 4, what happened to Kate Chastain's relationship with Ro?",
     "answers": [
       "They got married",
       "They started a yacht business",
@@ -1730,10 +1662,10 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43147",
+    "id": "tv_43145",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, who was held responsible when returning charter guest Dean Slover was stranded on a beach?",
+    "question": "In Below Deck Season 4, which crew member was held responsible for stranding Dean Slover on a beach?",
     "answers": [
       "Sierra Storm",
       "Kelley Johnson",
@@ -1764,10 +1696,10 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43148",
+    "id": "tv_43146",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 4, which two deckhands did Kate Chastain sit down with amid tensions before the Season 4 finale?",
+    "question": "In Below Deck Season 4, which two deckhands did Kate Chastain meet with to discuss their tensions?",
     "answers": [
       "Nico Scholly and Lauren Burchell",
       "Kelley Johnson and Trevor Walker",
@@ -1799,7 +1731,7 @@ const auditQuestions=[
   }
 ];
 questions.push(...auditQuestions);
-if(questions.length!==57 || new Set(questions.map(q=>q.id)).size!==questions.length ||
+if(questions.length!==55 || new Set(questions.map(q=>q.id)).size!==questions.length ||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length ||
 questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(27892+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
