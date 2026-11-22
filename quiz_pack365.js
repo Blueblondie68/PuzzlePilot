@@ -1609,7 +1609,7 @@ const auditAdditions = [
     "id": "tv_39473",
     "category": "Television",
     "programme": "The Legacy of Reginald Perrin",
-    "question": "In The Legacy of Reginald Perrin, where does the group return to establish whether its actions satisfy the will?",
+    "question": "In The Legacy of Reginald Perrin, to whom does the group return to discover whether it has satisfied the will's condition?",
     "answers": [
       "Miss Hackstraw",
       "Reggie's old office",
@@ -2217,7 +2217,7 @@ const auditAdditions = [
     "id": "tv_39492",
     "category": "Television",
     "programme": "Reggie Perrin",
-    "question": "In the 2010 Reggie Perrin finale, which two employees are shown planning a wedding alongside Reggie's marriage problems?",
+    "question": "In the 2010 Reggie Perrin finale, which two relatives are preparing to marry amid Reggie's marital troubles?",
     "answers": [
       "Jasmine and Chris",
       "Anthony and Vicky",
