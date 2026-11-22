@@ -513,6 +513,110 @@ for(const [i,[role,performer,gender,focus]] of audit401Cast.entries()){
 }
 for(const [category,stem,answer,distractors,focus] of audit401Facts)
  append401(stem,answer,distractors,category,focus,'Series 1');
+
+ 
+// SECOND-PASS EPISODE STORY AUDIT — Series 1 only.
+// This is separate from the previously added cast/award/production questions.
+// Verified against STARZ's original-episode summaries, TV Guide's detailed
+// 2014 episode synopses, and Apple TV's original-series description.
+// https://www.starz.com/us/en/series/the-missing/season-1/22388
+// https://www.tvguide.com/tvshows/the-missing/episodes-season-1/1000306512/
+// https://tv.apple.com/gb/show/the-missing/umc.cmc.1ow5culw1hpogrsdwvkd6ndlp
+const storyAudit401=[
+  [
+    "1 — Eden",
+    "How old was Oliver Hughes when he disappeared on the family holiday in France?",
+    "Five years old",
+    [
+      "Three years old",
+      "Seven years old",
+      "Nine years old"
+    ],
+    "Oliver's age at disappearance"
+  ],
+  [
+    "2 — Pray for Me",
+    "Which two suspects meet secretly after Vincent Bourg is questioned by the police?",
+    "Vincent Bourg and Ian Garrett",
+    [
+      "Vincent Bourg and Karl Sieg",
+      "Malik Suri and Ian Garrett",
+      "Georges Deloix and Khalid Ziane"
+    ],
+    "Secret meeting involving Vincent Bourg"
+  ],
+  [
+    "2 — Pray for Me",
+    "How does journalist Malik Suri obtain confidential information from officer Khalid Ziane?",
+    "He bribes the officer",
+    [
+      "He interviews him on camera",
+      "He files a freedom of information request",
+      "He takes the records from an unlocked police car"
+    ],
+    "Malik Suri's access to police material"
+  ],
+  [
+    "3 — The Meeting",
+    "Which man had Tony Hughes violently attacked years before Oliver disappeared, wrongly suspecting an affair with Emily?",
+    "Greg Halpern",
+    [
+      "Mark Walsh",
+      "Karl Sieg",
+      "Alain Deloix"
+    ],
+    "Tony's past and his marriage"
+  ],
+  [
+    "3 — The Meeting",
+    "What happens to a Paris undercover officer shortly before he can bring Julien Baptiste an investigative lead?",
+    "He is murdered before the meeting",
+    [
+      "He is moved to witness protection",
+      "He resigns from the police",
+      "He is arrested by his colleagues"
+    ],
+    "Undercover officer and lost lead"
+  ],
+  [
+    "3 — The Meeting",
+    "Which suspect's flat does Tony Hughes break into while pursuing his own enquiries?",
+    "Vincent Bourg's",
+    [
+      "Karl Sieg's",
+      "Alain Deloix's",
+      "Georges Deloix's"
+    ],
+    "Tony's unauthorised investigation"
+  ],
+  [
+    "3 — The Meeting",
+    "What evidence does Julien Baptiste show Tony in the 2014 investigation?",
+    "A video apparently showing Oliver in a house",
+    [
+      "A new confession from Karl Sieg",
+      "A letter allegedly written by Oliver",
+      "A secret police photograph of Ian Garrett"
+    ],
+    "Video footage from the reopened case"
+  ],
+  [
+    "5 — Molly",
+    "Whom does Emily Hughes travel to England to visit while pursuing the Garrett family's history?",
+    "Mary Garrett",
+    [
+      "Sylvie Deloix",
+      "Rini Dalca",
+      "Laurence Relaud"
+    ],
+    "Emily independently follows Garrett lead"
+  ]
+];
+for(const [episode,stem,correctAnswer,wrong,focus] of storyAudit401){
+ append401(stem,correctAnswer,wrong,'Episode story',
+  'Episode '+episode+' / '+focus,
+  'Series 1, Episode '+episode);
+}
 const ids401=new Set(),stems401=new Set();
 for(const q of questions){
  const text=audit401Norm(q.question);
