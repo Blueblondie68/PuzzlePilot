@@ -1,9 +1,14 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 499: Below Deck ORIGINAL SERIES, Seasons 9–10
-// 97 researched MCQs; Season 9 (42), Season 10 (55); ID range tv_28139–tv_28235.
+// 110 audited MCQs: 97 originals (2 repeated/generic facts replaced) plus 13 verified additions.
+// Original IDs tv_28139–tv_28235; audit IDs tv_43192–tv_43204.
+// Original questions span Season 9 (42) and Season 10 (55); additions respect season boundaries.
 // Distinct season/episode tags support future retrieval and content mapping.
 // 9: S09E01–S09E15, October 2021–February 2022; last episode is Reunion.
 // 10: S10E01–S10E18, November 2022–March 2023; last item is anniversary special (not cast reunion).
 // Excludes spin-offs. Master remains lavender (ongoing); coverage through March 27, 2023.
+// Audit research 22 Nov 2026: Bravo S9/S10 episode guides, Kaylee's arrival,
+// Heather/Rayna coverage, Fraser's milestone, St David vessel records,
+// Captain Lee departure and 2023 anniversary special. Preserved original IDs.
 // Sources reviewed 18 Nov 2026:
 // https://www.rottentomatoes.com/tv/below_deck/s09
 // https://www.rottentomatoes.com/tv/below_deck/s10
@@ -929,34 +934,34 @@ const questions = [
     "id": "tv_28166",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 9, which yacht department is short-handed after the third stewardess leaves?",
+    "question": "In Below Deck Season 9, which third stewardess quit My Seanna shortly before the next charter?",
     "answers": [
-      "Engine room",
-      "Exterior deck",
-      "Interior",
-      "Galley"
+      "Rayna Lindsey",
+      "Jessica Albert",
+      "Heather Chase",
+      "Kaylee Milligan"
     ],
-    "correctAnswer": "Interior",
+    "correctAnswer": "Jessica Albert",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
       "Reality Television",
-      "American Reality TV",
+      "American Television",
       "Programme: Below Deck",
-      "Original Bravo Series",
-      "Season: 9",
-      "Broadcast period: 2021–2022",
-      "Yacht: My Seanna",
-      "Charter region: Caribbean",
-      "Episode: S09E10",
-      "Episode title: The Smell of Sweat and Desperation",
-      "Storyline: Third stew vacancy",
-      "Storyline: Heather and Fraser short-handed",
-      "Person or group: Heather Chase",
-      "Person or group: Fraser Olender",
-      "Question fact: Interior",
-      "Written Quiz"
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Section: Audit repair Season 9",
+      "Jessica Albert",
+      "Third Stewardess",
+      "Sudden Resignation",
+      "Episode Nine",
+      "When Eddie Met Sally",
+      "Understaffed Crew",
+      "2021"
     ]
   },
   {
@@ -1940,33 +1945,34 @@ const questions = [
     "id": "tv_28196",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 10, which early Season 10 problem makes Captain Lee consider temporarily leaving St. David?",
+    "question": "In Below Deck Season 10, which deckhand was promoted to lead deckhand while Captain Lee was away?",
     "answers": [
-      "His worsening health",
-      "An approaching tropical storm",
-      "An insurance dispute",
-      "A change in ownership"
+      "Katie Glaser",
+      "Ross McHarg",
+      "Ben Willoughby",
+      "Tony Duarte"
     ],
-    "correctAnswer": "His worsening health",
+    "correctAnswer": "Ben Willoughby",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
       "Reality Television",
-      "American Reality TV",
+      "American Television",
       "Programme: Below Deck",
-      "Original Bravo Series",
-      "Season: 10",
-      "Broadcast period: 2022–2023",
-      "Yacht: St. David",
-      "Charter region: Caribbean",
-      "Episode: S10E04",
-      "Episode title: The Thunder From Down Under",
-      "Storyline: Captain considers leaving",
-      "Storyline: Health constraints",
-      "Person or group: Lee Rosbach",
-      "Question fact: His worsening health",
-      "Written Quiz"
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Section: Audit repair Season 10",
+      "Ben Willoughby",
+      "Lead Deckhand",
+      "Promotion",
+      "Captain Sandy Yawn",
+      "Season Ten",
+      "Deck Team",
+      "2022"
     ]
   },
   {
@@ -3289,9 +3295,457 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==97||new Set(questions.map(q=>q.id)).size!==questions.length||
+// Extra researched facts for both Season 9 and Season 10, no spin-offs.
+const AUDIT_ORIGINAL_COUNT=97;
+const AUDIT_FIRST_ID=43192;
+const auditQuestions=[
+  {
+    "id": "tv_43192",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 9, who replaced Jessica Albert as third stewardess aboard My Seanna?",
+    "answers": [
+      "Ashling Lorger",
+      "Kaylee Milligan",
+      "Leigh-Ann Smith",
+      "Francesca Rubi"
+    ],
+    "correctAnswer": "Kaylee Milligan",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 9",
+      "Section: Audit Cast",
+      "Kaylee Milligan",
+      "Jessica Albert",
+      "Replacement Stewardess",
+      "Season Nine",
+      "Midseason Arrival",
+      "Interior Crew"
+    ]
+  },
+  {
+    "id": "tv_43193",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 9, which chief stewardess was already friends with newcomer Kaylee Milligan before their Season 9 reunion aboard My Seanna?",
+    "answers": [
+      "Heather Chase",
+      "Kate Chastain",
+      "Francesca Rubi",
+      "Adrienne Gang"
+    ],
+    "correctAnswer": "Heather Chase",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 9",
+      "Section: Audit Cast",
+      "Heather Chase",
+      "Kaylee Milligan",
+      "Prior Friendship",
+      "New Third Stewardess",
+      "Interior Crew",
+      "2022 Broadcast"
+    ]
+  },
+  {
+    "id": "tv_43194",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 9, which chief stewardess apologised after using a racial slur that upset deckhand Rayna Lindsey?",
+    "answers": [
+      "Francesca Rubi",
+      "Jessica Albert",
+      "Kate Chastain",
+      "Heather Chase"
+    ],
+    "correctAnswer": "Heather Chase",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 9",
+      "Section: Audit Story",
+      "Heather Chase",
+      "Rayna Lindsey",
+      "Racial Slur",
+      "Apology",
+      "Discrimination Discussion",
+      "Season Nine"
+    ]
+  },
+  {
+    "id": "tv_43195",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 9, what was the title of the opening episode of Season 9?",
+    "answers": [
+      "Bourbon Buffoonery",
+      "When Eddie Met Sally",
+      "One Step Closer to World Domination",
+      "Boat Daddy"
+    ],
+    "correctAnswer": "One Step Closer to World Domination",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 9",
+      "Section: Audit Production",
+      "Season Nine Premiere",
+      "One Step Closer To World Domination",
+      "Episode One",
+      "October 2021",
+      "Sean Meagher",
+      "Broadcast"
+    ]
+  },
+  {
+    "id": "tv_43196",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 9, which two crew members kissed during a Season 9 night out after being dared to do so?",
+    "answers": [
+      "Eddie Lucas and Rachel Hargrove",
+      "Jake Foulger and Fraser Olender",
+      "Sean Meagher and Heather Chase",
+      "Wes O Dell and Captain Lee"
+    ],
+    "correctAnswer": "Jake Foulger and Fraser Olender",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 9",
+      "Section: Audit Story",
+      "Jake Foulger",
+      "Fraser Olender",
+      "Crew Kiss",
+      "Season Nine",
+      "Night Out",
+      "Relationship Story"
+    ]
+  },
+  {
+    "id": "tv_43197",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 10, on which Caribbean island did the yacht St. David operate in Season 10?",
+    "answers": [
+      "St Lucia",
+      "St Kitts",
+      "Antigua",
+      "Sint Maarten"
+    ],
+    "correctAnswer": "St Lucia",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 10",
+      "Section: Audit Production",
+      "Saint Lucia",
+      "Season Ten Filming",
+      "2022 Caribbean",
+      "St David",
+      "Island Location",
+      "Charter Base"
+    ]
+  },
+  {
+    "id": "tv_43198",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 10, approximately how long was the St. David yacht featured in Season 10?",
+    "answers": [
+      "125 feet",
+      "154 feet",
+      "260 feet",
+      "197 feet"
+    ],
+    "correctAnswer": "197 feet",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 10",
+      "Section: Audit Production",
+      "St David",
+      "197 Foot Superyacht",
+      "Largest Yacht At The Time",
+      "2022 Production",
+      "Vessel Length",
+      "Captain Lee"
+    ]
+  },
+  {
+    "id": "tv_43199",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 10, which crew member became the original programme's first male chief steward in Season 10?",
+    "answers": [
+      "Josiah Carter",
+      "Ross McHarg",
+      "Fraser Olender",
+      "Eddie Lucas"
+    ],
+    "correctAnswer": "Fraser Olender",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 10",
+      "Section: Audit History",
+      "Fraser Olender",
+      "First Male Chief Steward",
+      "Season Ten Milestone",
+      "Interior Team",
+      "2022",
+      "Crew Promotion"
+    ]
+  },
+  {
+    "id": "tv_43200",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 10, what was the exact title of the tenth-anniversary television special featuring Captain Lee and Andy Cohen?",
+    "answers": [
+      "The Stud Sails Again",
+      "Ce-LEE-brate Good Times!",
+      "A Decent Proposal",
+      "Man Overboard"
+    ],
+    "correctAnswer": "Ce-LEE-brate Good Times!",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 10",
+      "Section: Audit Production",
+      "Ce LEE brate Good Times",
+      "Tenth Anniversary",
+      "Andy Cohen",
+      "Captain Lee",
+      "27 March 2023",
+      "WWHL Special"
+    ]
+  },
+  {
+    "id": "tv_43201",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 10, which episode began the tenth season of Below Deck?",
+    "answers": [
+      "Love Never Lasts at the Beach",
+      "His Watch Has Ended",
+      "The Muff-Truff Experience",
+      "Oh Captain My Captain"
+    ],
+    "correctAnswer": "Love Never Lasts at the Beach",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 10",
+      "Section: Audit Production",
+      "Love Never Lasts At The Beach",
+      "Episode One",
+      "21 November 2022",
+      "Season Ten Premiere",
+      "St Lucia",
+      "Episode Title"
+    ]
+  },
+  {
+    "id": "tv_43202",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 10, season 10 was the last in which which original Below Deck captain regularly led the show's crew?",
+    "answers": [
+      "Kerry Titheradge",
+      "Sandy Yawn",
+      "Sean Meagher",
+      "Lee Rosbach"
+    ],
+    "correctAnswer": "Lee Rosbach",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 10",
+      "Section: Audit Career",
+      "Lee Rosbach",
+      "Final Regular Season",
+      "Captain Departure",
+      "2023 Finale",
+      "Original Captain",
+      "Show History"
+    ]
+  },
+  {
+    "id": "tv_43203",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 10, what kind of guests tested the crew immediately after Captain Lee returned to St. David in Season 10?",
+    "answers": [
+      "A party of Scottish farmers",
+      "A wedding of French chefs",
+      "A group of Chicago men",
+      "A group of rugby referees"
+    ],
+    "correctAnswer": "A group of Chicago men",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 10",
+      "Section: Audit Story",
+      "Chicago Bros",
+      "Captain Lee Return",
+      "Season Ten",
+      "Episode Fifteen",
+      "Charter Party",
+      "Alcohol Service"
+    ]
+  },
+  {
+    "id": "tv_43204",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 10, which crew member in Season 10 came from Cornwall in England?",
+    "answers": [
+      "Katie Glaser",
+      "Hayley De Sola Pinto",
+      "Alissa Humber",
+      "Camille Lamb"
+    ],
+    "correctAnswer": "Hayley De Sola Pinto",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Seasons: 9–10 (2021–2023)",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season 10",
+      "Section: Audit Cast",
+      "Hayley De Sola Pinto",
+      "Cornwall",
+      "English Stewardess",
+      "Season Ten Cast",
+      "UK Yachting",
+      "Hospitality"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==110||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(28139+i)||q.topic!=='Below Deck'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(28139+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
 q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length<14||new Set(q.tags).size!==q.tags.length||
 q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 499 validation failed');
