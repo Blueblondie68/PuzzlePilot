@@ -156,7 +156,7 @@
    const episode = specificTags.find(x=>episodeList.some(ep=>ep.toLowerCase()===x.toLowerCase())) || '';
    const question = stem.toLowerCase().includes(PROGRAMME.toLowerCase()) ? stem
     : episode && stem.toLowerCase().startsWith('in '+episode.toLowerCase()+', ')
-      ? 'In '+PROGRAMME+' episode "'+episode+'", '+stem.slice(episode.length+4)
+      ? 'In '+PROGRAMME+' episode "'+episode+'", '+stem.slice(episode.length+5)
       : 'In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
    if (!['Easy', 'Medium', 'Hard'].includes(difficulty)) {
      throw new Error(`Pack 388: invalid difficulty in row ${index + 1}`);
