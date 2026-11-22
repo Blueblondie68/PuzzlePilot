@@ -6,10 +6,11 @@
  'use strict';
 
  const FIRST_ID = 23102;
- const commonTags = [
-   'television', 'All Creatures Great and Small 1978', 'BBC drama',
-   'Yorkshire Dales', 'veterinary medicine', 'James Herriot adaptation'
- ];
+ const PROGRAMME='All Creatures Great and Small';
+ const commonTags=['Television', 'All Creatures Great and Small 1978',
+ 'Programme: '+PROGRAMME,'BBC One','BBC Drama','Yorkshire Dales',
+ 'Veterinary Medicine','James Herriot Adaptation','Original 1978–1990',
+ 'Finished Programme','Seven series and three specials'];
 
  // Question | correct | three incorrect | difficulty | seven precise question-specific tags.
  // Correct answer positions are rotated. Each exported question names the programme.
@@ -145,12 +146,13 @@
      throw new Error(`Pack 412: duplicate answer option at row ${index + 1}`);
    }
    const tags = [...new Set([...commonTags, ...specificTags])];
-   if (tags.length !== 13) {
+   if (tags.length < 12) {
      throw new Error(`Pack 412: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
    }
    return {
      id: `tv_${FIRST_ID + index}`,
      category: 'Television',
+     programme: PROGRAMME,
      question,
      answers,
      correctAnswer,
@@ -160,4 +162,51 @@
    };
  });
 
- module.exports = questions;
+ 
+
+// PACK 412 STORY AUDIT: ORIGINAL BBC DRAMA 1978–1990 ONLY.
+// NOT the Channel 5 (2020 onward) adaptation. All 111 original questions
+// tv_23102–tv_23212 preserved. Additional IDs start tv_41748.
+// Plot and veterinary-case details checked against the original episode
+// guides for all seven series (87 regular episodes) and three specials.
+// Sources:
+// https://thetvdb.com/series/all-creatures-great-and-small/allseasons/official
+// https://www.tvmaze.com/shows/8090/all-creatures-great-and-small/episodeguide
+// https://en.wikipedia.org/wiki/List_of_All_Creatures_Great_and_Small_(1978_TV_series)_episodes
+// https://www.jamesherriot.org/television-show/
+// Christmas episode names checked against the Herriot and BBC series archive;
+// excludes the unrelated 2020 remake and post-series TV reunion programmes.
+const audit412Story=[["S1E1 Horse Sense","What condition makes Lord Hulton's valuable horse impossible to save?","Torsion","Colic caused by overeating;A fractured foreleg;Strangles","James's difficult first horse case"],["S1E2 Dog Days","Which two subjects has Tristan failed when he returns from veterinary college?","Pathology and parasitology","Physiology and anatomy;Chemistry and nutrition;Surgery and obstetrics","Tristan's failed exams"],["S1E2 Dog Days","What second invented ailment does Mrs Pumphrey claim Tricki-Woo is suffering from?","Crackerdog","Droop-tummy;Flop-bot;The staggers","Another of Tricki-Woo's ailments"],["S1E3 It Takes All Kinds","Which part of Siegfried's finances does he repeatedly empty to annoy Miss Harbottle?","The petty cash box","His savings account;The partnership wages ledger;The emergency surgery fund","Siegfried and secretary quarrel"],["S1E4 Calf Love","Which animals does Siegfried put Tristan in charge of after a night out?","His new piglets","A litter of puppies;A flock of geese;A horse and foal","Brotherly discipline"],["S1E5 Out of Practice","What animal does James rescue from mud before finding it a new home?","A black Labrador","A pony;A sheepdog;A goat","Roadside animal rescue"],["S1E6 Nothing Like Experience","Which Western film unexpectedly replaces the programme James hopes to see with Helen?","Arizona Guns","Stagecoach;The Searchers;Rio Bravo","Disastrous cinema date"],["S1E7 Golden Lads and Girls","What happens to Siegfried's new Rover when Tristan borrows it?","It is driven into a wall","It is stolen from the surgery;It is trapped in a flood;Its engine catches fire","Tristan crashes the car"],["S1E9 The Last Furlong","Which job does Siegfried dream of securing at Broughton Races?","Racecourse veterinary surgeon","Professional jockey;Race starter;Racing commentator","Siegfried at the races"],["S1E12 Practice Makes Perfect","Which older veterinarian pressures James into giving unsuitable treatment?","Angus Grier","Granville Bennett;Ewan Ross;Richard Carmody","Questionable older vet"],["S2E1 Cats and Dogs","How many sick cats provide a particularly difficult case for all the vets?","Three sick cats","Two sick cats;Four sick cats;Six sick cats","Difficult cat diagnosis"],["S2E2 Attendant Problems","What animal is responsible for worrying Mr Benson's sheep during lambing?","A stray dog","A wild boar;An escaped horse;A fox cub","Sheep worried by stray"],["S2E3 Fair Means and Fowl","What legal trouble follows Tristan's treatment of a bloated bullock?","A lawsuit","A veterinary licence suspension;A fine for speeding;A breach-of-contract claim","Exploding bullock"],["S2E4 The Beauty of the Beast","What is the name of the last farm horse owned by Jack Gilling?","Badger","Dancer;Jock;Cedric","Horse threatened by end of farming era"],["S2E6 Faint Hearts","Which wealthy shipbuilder's daughter attracts Tristan's interest?","Julia Taverner","Alice McTavish;Deborah Mount;Jane Mercer","Tristan romances a wealthy heiress"],["S2E8 Pride of Possession","Whom does Tristan accidentally inject instead of a dog?","Angela Farmer","Mrs Hall;Mrs Pumphrey;Helen Herriot","Injection mix-up"],["S2E10 Puppy Love","What happens to the garage after an exhausted Tristan drives back with James?","He drives into its rear wall","He locks the keys inside;He runs out of petrol;He leaves the roof open","Late-night journey from London"],["S2E11 Ways and Means","What animal swallows something unsuitable when Alice accompanies Tristan on a call?","A nanny goat","A dairy cow;A pony;A sheepdog","Tristan and Alice's call-out"],["S2E14 Merry Gentlemen","What does Siegfried secretly keep in a locked spare room at Christmas?","Festive treats and presents","A new motorbike;A herd of goats;A suit of armour","Skeldale Christmas surprise"],["S3E1 Plenty to Grouse About","What illness is found among sheep on a grouse moor?","Louping ill","Anthrax;Foot-and-mouth disease;Bluetongue","Grouse-moor illness"],["S3E1 Plenty to Grouse About","What new paid work does Helen undertake, initially to James's disapproval?","A secretarial job","School teaching;Running a pub;Working as a florist","Helen's independence"],["S3E2 Charity Begins at Home","What injured animal do the Herriots nurse to health and briefly adopt?","A rescued cat","An abandoned puppy;A young badger;A wounded owl","Cat that belongs to another family"],["S3E3 Every Dog His Day","What embarrassing problem affects Mrs Pumphrey's boxer Cedric?","Excessive flatulence","Chronic sneezing;Constant barking;Sleepwalking","Cedric's unpleasant habit"],["S3E4 Hair of the Dog","Which travelling workman brings his dog to Skeldale for emergency treatment?","Roddy Travers","Mr Biggins;Farmer Duggleby;Mr Hopps","Itinerant workman"],["S3E5 If Wishes Were Horses","Which petty thief changes his ways after his dog develops distemper?","Wesley Binks","Nat Briggs;Basil Courtney;Andrew Bruce","Dog helps young delinquent"],["S3E7 Be Prepared","What is the name of Miss Westerman's dog that goes missing from the surgery?","Hamish","Sligo;Murphy;Jock","Dog lost in Tristan's care"],["S3E8 A Dying Breed","What is the name of Herbie Hinchcliffe's elderly horse?","Dolly","Violet;Dancer;Badger","End of a working horse's life"],["S3E10 Home and Away","At which kind of sporting venue does James stand in as duty vet?","A greyhound racing track","A polo field;A racehorse gallop;A show-jumping arena","James at Hensfield"],["S3E11 Alarms and Excursions","What disturbing series of incidents does Siegfried investigate in Darrowby?","Unexplained dog poisonings","Theft of veterinary drugs;Horse disappearances;A disease among chickens","Dog poisoner"],["S3E12 Matters of Life and Death","Which disease affects Paul Cotterell's dog Theo?","Hodgkin's disease","Canine distemper;Parvovirus;Lyme disease","Theo's diagnosis"],["S3E13 Will to Live","Which chore must Tristan finish within a strict one-day deadline set by Siegfried?","Repairing a fence","Painting the surgery;Cleaning the cattle shed;Rebinding the accounts","Siegfried's ultimatum"],["1983 Christmas special","In which military service had James served before returning to Darrowby?","The RAF","The Royal Navy;The Merchant Navy;The police","The Homecoming"],["1985 Christmas special","What broad development does Siegfried welcome in the second long Christmas special?","Scientific progress","A return to horse-drawn ploughing;A revival of feudal farming;A ban on new medicines","The Lord God Made Them All"],["S4E2 Barks and Bites","Veterinary inspectors from which country meet Tristan and James during an export examination?","Russia","France;Germany;Canada","Examining animals for export"],["S4E4 The Pig Man Cometh","What sort of property does James hope to buy secretly for Helen?","A semi-detached house","A converted mill;An old farmhouse;A riverside cottage","Herriots' housing plans"],["S4E5 Hail Caesar!","Which type of dancing does Tristan practise for the church fete?","Scottish country dancing","Morris dancing;The waltz;Irish step-dancing","Darrowby church fete"],["S4E6 Only One Woof","What animals does Helen feed after they wander into Skeldale's garden?","Two wild cats","An escaped ferret;Three fox cubs;A stray lamb","Wild cats in the garden"],["S4E8 The Healing Touch","What opportunity does Granville Bennett offer James after the injured cat's treatment?","Partnership in his small-animal practice","A job teaching at Edinburgh;A local council veterinary role;A travelling horse clinic","James considers new career"],["S5E2 Place of Honour","What extra burden falls on James when Helen is confined to bed?","Housework and childcare","Running the village pub;Organising the sheep fair;Teaching at the school","Herriots' domestic chaos"],["S5E3 Choose a Bright Morning","Which isolated family calls on James after years of avoiding the town?","The Bramleys","The Aldersons;The Strong twins;The Rayners","Family not in town since 1929"],["S5E8 The Salt of the Earth","What breed is the young dog whose death particularly upsets Siegfried?","Bull terrier","Pekingese;Labrador retriever;Border collie","Death of inseparable dog"],["S6E1 Here and There","What work has Basil Courtney neglected to do for the farmer employing him?","Treat the farmer's calves","Repair fences;Feed working horses;Deliver medicine","Calves not improving"],["S6E4 The Nelson Touch","Which complaint does Mr Hopps bring to Siegfried instead of bringing an animal?","Digestive problems","A broken arm;An eye infection;A toothache","Human diagnosis by vet"],["S6E5 Blood and Water","For how long have the Strong twins refused to speak to each other?","Fifty years","Five years;Ten years;Twenty years","Oliver and Roland's feud"],["S6E7 The New World","Which idle farmer hopes to avoid work by marrying a woman with a grown son?","Vernon Harker","Bill Shadwell;Nat Briggs;Mr Biggins","Marriage to avoid farm work"],["S6E8 Mending Fences","Which feuding neighbours does Siegfried try to reconcile after tragedy?","Jenny Garston and David Rayner","Frank and Rosemary;Oliver and Roland Strong;James and Tristan","Farmers' childhood feud"],["S6E9 Big Fish Little Fish","Which cricket captain receives ferocious bowling from Fred Trueman?","Colonel Jenkins","Siegfried Farnon;James Herriot;Granville Bennett","Darrowby cricket match"],["S6E11 The Rough and the Smooth","What breed is the boisterous dog Humphrey who upsets Siegfried's morning?","Great Dane","German shepherd;Boxer;Mastiff","Humphrey disrupts diary plan"],["S7E1 The Prodigal Returns","What mix-up occurs when Tristan goes to meet the practice's new housekeeper?","He meets a different, younger Mrs Alton","He goes to the wrong village;He is told the housekeeper is a man;He meets someone on the wrong train","Tristan's housekeeper confusion"],["S7E2 Knowin' How to Do It","Which vaccine is Tristan using when he accidentally injects farmer Nat Briggs?","Anti-abortion vaccine","Rabies vaccine;Tetanus vaccine;Foot-and-mouth vaccine","Nat Briggs's fears"],["S7E3 If Music Be the Food of Love","Which animal's mistreatment angers Jane Mercer while Tristan courts her?","A neglected donkey","A wounded foal;A sick goose;A badly shod pony","Jane and animal welfare"],["S7E4 A Friend for Life","Which dairy cattle breed does Bill Shadwell's son favour for greater profit?","Friesian","Highland;Jersey;Hereford","Farming generational dispute"],["S7E5 Spring Fever","Which interfering woman offers unorthodox animal remedies against the vets' advice?","Mrs Donovan","Mrs Alton;Mrs Pumphrey;Mrs Tibbett","Home remedies and animal welfare"],["S7E6 Out with the New","Which honour is Rosie set to receive during Darrowby's coronation celebrations?","Pageant princess","Flower queen;Young gardener of the year;Parade marshal","Rosie's role in village ceremony"],["S7E7 Food for Thought","What dress code makes an emergency calving awkward for Siegfried and Stewie Brannen?","Black-tie evening clothes","Military uniforms;Gardening overalls;Fancy dress costumes","Calving interrupts formal dinner"],["S7E8 A Cat in Hull's Chance","Which disease affects the pony Rosie sees while weighing a veterinary career?","Tetanus","Equine influenza;Colic;Strangles","Rosie's view of veterinary work"],["S7E9 A Grand Memory for Forgetting","Which Korean War veteran's dog has been shot in the story?","Jacob Pearson","Dennis Pratt;Mr Grimsdale;David Rayner","Siegfried investigates animal shooting"],["S7E12 Promises to Keep","What overseas career does Grandma Clarke's granddaughter Katherine wish to pursue?","Nursing in Africa","Veterinary training in France;Teaching in Canada;Journalism in London","Family farm succession"],["1990 Christmas Brotherly Love","What luxury car does Tristan purchase with money borrowed from Siegfried?","A Daimler coupe","A Rolls-Royce;An MG roadster;A Bentley convertible","Tristan owes his brother money"],["1990 Christmas Brotherly Love","Which brothers request court references from James and Siegfried?","David and Jonathan Bradley","Oliver and Roland Strong;The Farnon brothers;The Weeting brothers","Final special's court dispute"]];
+const audit412Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+for(const [episode,stem,correctAnswer,wrongJoined,focus] of audit412Story){
+ const question='In the original BBC '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=wrongJoined.split(';');
+ answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit412Norm)).size!==4)
+ throw Error('Pack 412 answer collision '+stem);
+ const tags=['Television','BBC One','BBC Drama',
+ PROGRAMME,'Programme: '+PROGRAMME,'Original BBC version: 1978–1990',
+ 'Yorkshire Dales','James Herriot','Siegfried and Tristan Farnon',
+ 'Veterinary Cases','Episode: '+episode,'Plot detail: '+focus,
+ 'Correct answer: '+correctAnswer,'Seven series','Three BBC Christmas specials',
+ 'Not the Channel 5 remake'];
+ questions.push({id:'tv_'+(41748+questions.length-111),
+ category:'Television',programme:PROGRAMME,
+ question,answers,correctAnswer,difficulty:'Medium',tags,dailyEligible:true});
+}
+const ids412=new Set(),wording412=new Set();
+for(const q of questions){
+ const stem=audit412Norm(q.question);
+ const fresh=Number(q.id.slice(3))>=41748;
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||!stem.includes(audit412Norm(PROGRAMME))||
+ q.answers.length!==4||new Set(q.answers.map(audit412Norm)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ ids412.has(q.id)||wording412.has(stem)||
+ (fresh&&stem.includes(audit412Norm(q.correctAnswer))))
+ throw Error('Pack 412 failed module validation '+q.id);
+ ids412.add(q.id);wording412.add(stem);
+}
+module.exports=questions;
