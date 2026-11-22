@@ -2804,9 +2804,813 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==80||new Set(questions.map(q=>q.id)).size!==questions.length||
+// 22 Nov 2026: Episode, cast, production and awards gap audit.
+// 80 original questions preserved in order; additional IDs tv_43243–tv_43266.
+// Cross-checked against Pack 501 (Seasons 1-2) to avoid repeated casting/award facts.
+// Sources: https://www.televisionacademy.com/shows/better-call-saul
+// https://en.wikipedia.org/wiki/Better_Call_Saul_season_3
+// https://en.wikipedia.org/wiki/Better_Call_Saul_season_4
+// https://www.tvguide.com/news/better-call-saul-season-4-episode-10-recap/
+// https://tvcritics.memberclicks.net/index.php?category=tca-awards&id=51%3Athe-television-critics-association-announces-2019-tca-awards-winners&option=com_dailyplanetblog&view=entry
+const auditQuestions = [
+  {
+    "id": "tv_43243",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 3, which actor returns to the Breaking Bad universe as Gus Fring?",
+    "answers": [
+      "Giancarlo Esposito",
+      "Mark Margolis",
+      "Michael Mando",
+      "Raymond Cruz"
+    ],
+    "correctAnswer": "Giancarlo Esposito",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E02",
+      "Episode Title: Witness",
+      "Section: Cast",
+      "Focus: Gus Fring's first season as a main cast member",
+      "Answer: Giancarlo Esposito",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43244",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "During production of Better Call Saul Season 3, who took over as sole showrunner after Vince Gilligan stepped back from the writers' room?",
+    "answers": [
+      "Thomas Schnauz",
+      "Peter Gould",
+      "Mark Johnson",
+      "Gordon Smith"
+    ],
+    "correctAnswer": "Peter Gould",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E01",
+      "Episode Title: Mabel",
+      "Section: Production",
+      "Focus: Showrunner transition",
+      "Answer: Peter Gould",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43245",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 3, which Albuquerque shopping centre doubles as the Omaha mall where Gene works at Cinnabon?",
+    "answers": [
+      "Coronado Center",
+      "Cottonwood Mall",
+      "Winrock Town Center",
+      "ABQ Uptown"
+    ],
+    "correctAnswer": "Cottonwood Mall",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E01",
+      "Episode Title: Mabel",
+      "Section: Filming",
+      "Focus: Omaha mall sequences filmed in Albuquerque",
+      "Answer: Cottonwood Mall",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43246",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 3, which actor portrays Salamanca patriarch Hector?",
+    "answers": [
+      "Steven Bauer",
+      "Javier Grajeda",
+      "Mark Margolis",
+      "Giancarlo Esposito"
+    ],
+    "correctAnswer": "Mark Margolis",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E10",
+      "Episode Title: Lantern",
+      "Section: Cast",
+      "Focus: Hector Salamanca portrayal",
+      "Answer: Mark Margolis",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43247",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 3, which actress plays Mike's daughter-in-law Stacey Ehrmantraut?",
+    "answers": [
+      "Kerry Condon",
+      "Ann Cusack",
+      "Laura Fraser",
+      "Tamara Tunie"
+    ],
+    "correctAnswer": "Kerry Condon",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E07",
+      "Episode Title: Expenses",
+      "Section: Cast",
+      "Focus: Stacey Ehrmantraut supporting cast",
+      "Answer: Kerry Condon",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43248",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 3, which actress reprises her Breaking Bad role as Lydia Rodarte-Quayle?",
+    "answers": [
+      "Rhea Seehorn",
+      "Laura Fraser",
+      "Cara Pifko",
+      "Tina Parker"
+    ],
+    "correctAnswer": "Laura Fraser",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E06",
+      "Episode Title: Off Brand",
+      "Section: Cast",
+      "Focus: Lydia Rodarte-Quayle returning performer",
+      "Answer: Laura Fraser",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43249",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which Better Call Saul writer received a 2017 Primetime Emmy nomination for scripting the Season 3 episode 'Chicanery'?",
+    "answers": [
+      "Peter Gould",
+      "Gordon Smith",
+      "Vince Gilligan",
+      "Ann Cherkis"
+    ],
+    "correctAnswer": "Gordon Smith",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E05",
+      "Episode Title: Chicanery",
+      "Section: Awards",
+      "Focus: Outstanding Writing Emmy nomination",
+      "Answer: Gordon Smith",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43250",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which Better Call Saul filmmaker received a 2017 Emmy directing nomination for the Season 3 episode 'Witness'?",
+    "answers": [
+      "Adam Bernstein",
+      "Daniel Sackheim",
+      "Vince Gilligan",
+      "Minkie Spiro"
+    ],
+    "correctAnswer": "Vince Gilligan",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E02",
+      "Episode Title: Witness",
+      "Section: Awards",
+      "Focus: Outstanding Directing Emmy nomination",
+      "Answer: Vince Gilligan",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43251",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 3's 'Off Brand', which event extends Tuco Salamanca's prison term and disrupts Hector's plans?",
+    "answers": [
+      "A prison fight",
+      "A failed parole hearing",
+      "A new fraud conviction",
+      "An attempted escape"
+    ],
+    "correctAnswer": "A prison fight",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E06",
+      "Episode Title: Off Brand",
+      "Section: Storyline",
+      "Focus: Tuco's extended prison sentence",
+      "Answer: A prison fight",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43252",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 3, what sort of industrial site does Gus inspect with Lydia as he considers his next secret operation?",
+    "answers": [
+      "A commercial laundry",
+      "A cement plant",
+      "A refrigerated warehouse",
+      "An abandoned cinema"
+    ],
+    "correctAnswer": "A commercial laundry",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E06",
+      "Episode Title: Off Brand",
+      "Section: Storyline",
+      "Focus: Gus and Lydia inspect future superlab site",
+      "Answer: A commercial laundry",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43253",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 3's 'Slip', what collection do Jimmy and Marco retrieve from the abandoned McGill family shop in a flashback?",
+    "answers": [
+      "Rare stamps",
+      "Old coins",
+      "Baseball cards",
+      "Comic books"
+    ],
+    "correctAnswer": "Old coins",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E08",
+      "Episode Title: Slip",
+      "Section: Storyline",
+      "Focus: McGill shop flashback and coin collection",
+      "Answer: Old coins",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43254",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 3's finale, what financial benefit does Jimmy sacrifice when he exposes his manipulation of Irene Landry?",
+    "answers": [
+      "His inheritance from Chuck",
+      "His share of the Sandpiper settlement",
+      "His Mesa Verde retainer",
+      "His payment from Madrigal"
+    ],
+    "correctAnswer": "His share of the Sandpiper settlement",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 3 (2017)",
+      "Broadcast Year: 2017",
+      "Episode: S03E10",
+      "Episode Title: Lantern",
+      "Section: Storyline",
+      "Focus: Jimmy repairs Irene's friendships at personal cost",
+      "Answer: His share of the Sandpiper settlement",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43255",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 4, which actor makes his debut as the charismatic Lalo Salamanca?",
+    "answers": [
+      "Tony Dalton",
+      "Michael Mando",
+      "Daniel Moncada",
+      "Steven Bauer"
+    ],
+    "correctAnswer": "Tony Dalton",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E08",
+      "Episode Title: Coushatta",
+      "Section: Cast",
+      "Focus: Lalo Salamanca introduced",
+      "Answer: Tony Dalton",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43256",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 4, which German actor plays the engineer Werner Ziegler?",
+    "answers": [
+      "Rainer Bock",
+      "Stefan Kapičić",
+      "Ben Bela Böhm",
+      "David Costabile"
+    ],
+    "correctAnswer": "Rainer Bock",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E05",
+      "Episode Title: Quite a Ride",
+      "Section: Cast",
+      "Focus: Werner Ziegler portrayal",
+      "Answer: Rainer Bock",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43257",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 4, who reprises the Breaking Bad role of chemist Gale Boetticher?",
+    "answers": [
+      "David Costabile",
+      "Rex Linn",
+      "Mark Proksch",
+      "Ed Begley Jr."
+    ],
+    "correctAnswer": "David Costabile",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E03",
+      "Episode Title: Something Beautiful",
+      "Section: Cast",
+      "Focus: Gale Boetticher return",
+      "Answer: David Costabile",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43258",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 4, which actress portrays Dr Maureen Bruckner, the specialist managing Hector's stroke rehabilitation?",
+    "answers": [
+      "Poorna Jagannathan",
+      "Tamara Tunie",
+      "Ann Cusack",
+      "Laura Fraser"
+    ],
+    "correctAnswer": "Poorna Jagannathan",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E07",
+      "Episode Title: Something Stupid",
+      "Section: Cast",
+      "Focus: Dr Bruckner medical specialist",
+      "Answer: Poorna Jagannathan",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43259",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which Pixar filmmaker directed Better Call Saul Season 4's episode 'Piñata'?",
+    "answers": [
+      "Brad Bird",
+      "Pete Docter",
+      "Andrew Stanton",
+      "Lee Unkrich"
+    ],
+    "correctAnswer": "Andrew Stanton",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E06",
+      "Episode Title: Piñata",
+      "Section: Production",
+      "Focus: Pixar filmmaker directs Season 4",
+      "Answer: Andrew Stanton",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43260",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 4's 'Piñata', which former elderly client has died, leaving Jimmy unexpectedly upset?",
+    "answers": [
+      "Irene Landry",
+      "Geraldine Strauss",
+      "Betsy Kettleman",
+      "Marion Mercer"
+    ],
+    "correctAnswer": "Geraldine Strauss",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E06",
+      "Episode Title: Piñata",
+      "Section: Storyline",
+      "Focus: Death of Jimmy's first eldercare client",
+      "Answer: Geraldine Strauss",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43261",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 4's 'Piñata', how does Jimmy frighten the teenagers who previously mugged him?",
+    "answers": [
+      "He has them suspended upside down in a piñata shop",
+      "He has their phones confiscated by police",
+      "He locks them in a delivery lorry",
+      "He threatens them with a lawsuit"
+    ],
+    "correctAnswer": "He has them suspended upside down in a piñata shop",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E06",
+      "Episode Title: Piñata",
+      "Section: Storyline",
+      "Focus: Jimmy and Huell intimidate teenage muggers",
+      "Answer: He has them suspended upside down in a piñata shop",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43262",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which ABBA song do Jimmy and Chuck sing together in a karaoke flashback in Better Call Saul Season 4's 'Winner'?",
+    "answers": [
+      "Dancing Queen",
+      "Fernando",
+      "The Winner Takes It All",
+      "Knowing Me, Knowing You"
+    ],
+    "correctAnswer": "The Winner Takes It All",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E10",
+      "Episode Title: Winner",
+      "Section: Storyline",
+      "Focus: McGill brothers karaoke flashback",
+      "Answer: The Winner Takes It All",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43263",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which writing pair received a 2019 Emmy nomination for Better Call Saul Season 4's finale 'Winner'?",
+    "answers": [
+      "Vince Gilligan and Gordon Smith",
+      "Peter Gould and Thomas Schnauz",
+      "Ann Cherkis and Heather Marion",
+      "Gennifer Hutchison and Alison Tatlock"
+    ],
+    "correctAnswer": "Peter Gould and Thomas Schnauz",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E10",
+      "Episode Title: Winner",
+      "Section: Awards",
+      "Focus: Outstanding Writing Emmy nomination for Winner",
+      "Answer: Peter Gould and Thomas Schnauz",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43264",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which Better Call Saul performer received a 2019 Emmy nomination for Outstanding Guest Actor after appearing as Chuck in Season 4 flashbacks?",
+    "answers": [
+      "Bob Odenkirk",
+      "Patrick Fabian",
+      "Michael McKean",
+      "Jonathan Banks"
+    ],
+    "correctAnswer": "Michael McKean",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E10",
+      "Episode Title: Winner",
+      "Section: Awards",
+      "Focus: Outstanding Guest Actor Emmy nomination",
+      "Answer: Michael McKean",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43265",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In 2019, which Better Call Saul Season 4 episode was nominated for a Primetime Emmy for Outstanding Music Supervision?",
+    "answers": [
+      "Breathe",
+      "Something Stupid",
+      "Coushatta",
+      "Winner"
+    ],
+    "correctAnswer": "Something Stupid",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E07",
+      "Episode Title: Something Stupid",
+      "Section: Awards",
+      "Focus: Outstanding Music Supervision Emmy nomination",
+      "Answer: Something Stupid",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43266",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "For its fourth season, what Television Critics Association award did Better Call Saul win in 2019?",
+    "answers": [
+      "Outstanding Achievement in Drama",
+      "Outstanding New Program",
+      "Outstanding Achievement in Comedy",
+      "Program of the Year"
+    ],
+    "correctAnswer": "Outstanding Achievement in Drama",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 4 (2018)",
+      "Broadcast Year: 2018",
+      "Episode: S04E10",
+      "Episode Title: Winner",
+      "Section: Awards",
+      "Focus: 2019 Television Critics Association Award",
+      "Answer: Outstanding Achievement in Drama",
+      "Source Audit: 22 November 2026"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+
+if(questions.length!==104||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(28416+i)||q.category!=='TV'||q.topic!=='Better Call Saul'||
+questions.some((q,i)=>q.id!==(i<80?'tv_'+(28416+i):'tv_'+(43243+i-80))||q.category!=='TV'||q.topic!=='Better Call Saul'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<16||new Set(q.tags).size!==q.tags.length||
 q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 502 validation failed');
