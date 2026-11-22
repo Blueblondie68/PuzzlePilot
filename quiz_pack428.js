@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 428
 // All Saints (Australia): Season 9 (2006), 40 episodes.
 // Follows Pack 427. First ID: tv_24861.
-// Complete WordPad-ready CommonJS; All Saints remains unfinished in TV master.
+// Complete WordPad-ready CommonJS; All Saints ended in 2009, but later pack audits remain outstanding.
 // Each fact row: question | correct | three wrong options | difficulty | seven specific tags.
 // Researched against 2006 episode guides and character/cast listings.
 'use strict';
@@ -145,9 +145,39 @@ Which man, furious with Frank over his son's condition, brought a gun to Emergen
 Which nurse's brother escaped from a crashed prison van in Judgement Day?|Erica Templeton's|Von Ryan's|Gabrielle Jaeger's|Cate McMasters's|Medium|Judgement Day|Episode 40|Erica Templeton|AJ|Prison Van Crash|Prisoner Escape|Family Drama
 Which young patient with unexplained bruising was treated by Zoe and Gabrielle in Judgement Day?|Kyle Jackson|Casey Taylor|Jamie|Joey Egan|Hard|Judgement Day|Episode 40|Kyle Jackson|Zoe Gallagher|Gabrielle Jaeger|Unexplained Bruising|Louisa Jackson`;
 
+
+// Series 9 awards, production and missing episode material; retain every original ID.
+const AUDIT_ORIGINAL_COUNT = 130;
+const AUDIT_FIRST_ID = 42285;
+const auditFacts = `At the 2006 AFI Awards which drama category featured a nomination for All Saints Series 9?|Best Television Drama Series|Best Television Comedy Series|Best Children's Television Drama|Best Television Documentary|Medium|2006 AFI Awards|Best Drama Series|Series Nine|Australian Film Institute|programme nomination|industry recognition|Seven Network
+Which All Saints producer was named on its 2006 AFI Best Drama Series nomination?|MaryAnne Carroll|Jo Porter|Bevan Lee|Peter Fisk|Medium|MaryAnne Carroll|2006 AFI Awards|Best Drama Series|producer credit|Series Nine|Australian television|award nomination
+Which All Saints actor was nominated for an AFI Award as Best Guest or Supporting Actor in Television Drama in 2006?|John Waters|John Howard|Mark Priestley|Wil Traval|Medium|John Waters|Mike Vlasek|2006 AFI Awards|supporting actor nomination|acting recognition|Series Nine|Australian Film Institute
+Which All Saints actor received nominations for both the Gold Logie and Most Popular Actor in 2007?|John Howard|Andrew Supanz|Chris Vance|Mark Priestley|Medium|John Howard|Frank Campion|2007 Logies|Gold Logie nomination|Most Popular Actor nomination|cast recognition|Australian television
+Which All Saints actress was nominated for Most Outstanding Actress in a Series at the 2007 Logies?|Judith McGrath|Jolene Anderson|Virginia Gay|Tammy MacIntosh|Medium|Judith McGrath|Von Ryan|2007 Logies|Most Outstanding Actress|acting nomination|industry recognition|veteran cast
+Which All Saints actor was nominated for Most Popular New Male Talent at the 2007 Logies?|Andrew Supanz|Chris Vance|Wil Traval|John Waters|Medium|Andrew Supanz|Bart West|2007 Logies|new male talent|acting nomination|intern character|performer recognition
+Which All Saints actress was nominated for Most Popular New Female Talent at the 2007 Logies?|Jolene Anderson|Allison Cratchley|Virginia Gay|Natalie Saleeba|Medium|Jolene Anderson|Erica Templeton|2007 Logies|new female talent|acting nomination|nurse character|performer recognition
+Which audience-voted television category included All Saints among the 2007 Logie nominees?|Most Popular Australian Drama Series|Most Popular Australian Comedy Program|Most Popular Reality Television|Most Popular Children's Program|Medium|2007 Logies|Most Popular Australian Drama Series|programme nomination|audience voting|Seven Network|awards category|Series Nine
+Who directed the All Saints ninth-season premiere Till Death Do Us Part?|Cameron Welsh|Peter Fisk|Bill Hughes|Jean-Pierre Mignon|Medium|Cameron Welsh|Till Death Do Us Part|2006|premiere director|episode one|production credit|Australian drama
+Who wrote the All Saints Series 9 opening episode Till Death Do Us Part?|Louise Crane-Bowes|John Banas|Sean Nash|Sally Webb|Medium|Louise Crane-Bowes|Till Death Do Us Part|2006|premiere writer|episode one|screenplay credit|production
+Who directed the All Saints ninth-season finale Judgement Day?|Bill Hughes|Cameron Welsh|Shawn Seet|Peter Fisk|Medium|Bill Hughes|Judgement Day|2006|season finale director|episode forty|production credit|filmmaking
+Who wrote the All Saints Series 9 finale Judgement Day?|John Banas|Louise Crane-Bowes|Jeff Truman|Sally Webb|Medium|John Banas|Judgement Day|2006|season finale writer|episode forty|screenplay credit|production
+In All Saints episode Facing the Music whose professional future was threatened by an allegation of nursing negligence?|Von Ryan|Jessica Singleton|Cate McMasters|Gabrielle Jaeger|Medium|Facing the Music|Von Ryan|negligence accusation|hospital board|Bob Tyrell|2006|episode six
+In All Saints episode Getting to Know You what dangerous source of medication contributed to Bruce Ahearne's organ damage?|Drugs bought over the internet|Medicine from an unlabelled hospital trolley|An illicit drug imported by air|Prescriptions stolen from a pharmacy|Medium|Getting to Know You|Bruce Ahearne|online medication|self treatment|organ damage|Sean Everleigh|episode thirteen
+In All Saints episode An Apple a Day which senior doctor became the new intern Bart West's mentor?|Frank Campion|Mike Vlasek|Sean Everleigh|Vincent Hughes|Medium|An Apple a Day|Bart West|Frank Campion|mentorship|medical intern|2006|episode fifteen
+In All Saints episode A Rock and a Hard Place why did a mother refuse urgent surgery after being dragged by a car?|Her missing baby had not been found|She wanted to see a lawyer first|She believed her injuries were minor|She refused every blood transfusion|Medium|A Rock and a Hard Place|young mother|missing baby|emergency surgery|bag snatch|2006|episode seventeen
+In All Saints episode One for the Road what organ transplant was the argumentative DJ at risk of rejecting?|Liver|Kidney|Heart|Lung|Medium|One for the Road|disc jockey|organ rejection|liver transplant|Sean Everleigh|Dan Goldman|episode eighteen
+In All Saints episode Two by Two whose old university friend arrived in Emergency and became the subject of a treatment dispute?|Frank Campion's|Sean Everleigh's|Charlotte Beaumont's|John Cotter's|Medium|Two by Two|Frank Campion|university friend|Mike Vlasek|medical versus surgical care|patient history|episode twenty two
+In All Saints episode Mind Games which unusual symptom baffled staff about a woman with rapidly changing behaviour?|She appeared to have several personalities|She repeatedly lost her eyesight|She could not recognise written words|She temporarily lost her sense of touch|Medium|Mind Games|woman with many faces|changing personalities|diagnostic mystery|Spence Spencer|Sean Everleigh|episode twenty six
+In All Saints episode Dead Girl Walking which paediatrician was expecting a baby with Charlotte Beaumont?|Doug Spencer|Vincent Hughes|Jack Quade|Mike Vlasek|Medium|Dead Girl Walking|Charlotte Beaumont|Doug Spencer|pregnancy|Vincent Hughes|2006|episode thirty three
+In All Saints episode Contact what unusual behaviour did a returning patient's wife display when she arrived at the hospital?|She refused to speak|She insisted on writing every answer|She refused to enter the building|She claimed not to recognise her husband|Medium|Contact|Von Ryan|returning patient|silent wife|Bart West|2006|episode thirty four
+In All Saints episode Where the Truth Lies what was the first name of Erica Templeton's imprisoned brother?|AJ|Max|Casey|Brett|Medium|Where the Truth Lies|AJ Templeton|Erica Templeton|prison fight|family conflict|2006|episode thirty five
+In All Saints episode Jaws of Death what everyday grooming mishap preceded Lindsay Blake's dangerous leg infection?|Waxing|Shaving her hair|Cutting her fingernails|Applying skin cream|Medium|Jaws of Death|Lindsay Blake|waxing mishap|necrotising fasciitis|Bart West|leg infection|episode thirty six
+In All Saints episode Love Pain and the Whole Damn Thing which illness forced nursing manager Gabrielle Jaeger to go home?|Influenza|Chickenpox|Measles|Food poisoning|Medium|Love Pain and the Whole Damn Thing|Gabrielle Jaeger|influenza|Dan Goldman|Supernurse|2006|episode thirty seven
+In All Saints episode Judgement Day which patient's mother was mistakenly suspected of abusing her son?|Kyle Jackson's|Casey Taylor's|Bart West's|Louise Crane-Bowes's|Medium|Judgement Day|Kyle Jackson|Louisa Jackson|bruising|misdiagnosed abuse|Zoe Gallagher|episode forty`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -162,9 +192,12 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
