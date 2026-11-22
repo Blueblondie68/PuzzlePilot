@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 440
 // Bake Off: The Professionals - Series 7-11 (2022-2026).
 // Completes coverage through the final broadcast on 22 July 2026.
-// The programme is ongoing; revisit after further series air.
+// The programme is ongoing: coverage through 22 July 2026; revisit for Series 12 in 2027.
 // First ID tv_26066. WordPad-ready CommonJS. Verify saved copy before deployment.
 'use strict';
 
@@ -104,9 +104,41 @@ Where did Ashish Wagh work while representing Edwardian Hotels in 2026?|Edwardia
 Which Leicester Square hotel was represented by 2026 winner Loki?|The Londoner|The Savoy|The Ritz|Claridge's|Medium|Loki|The Londoner|Leicester Square|Edwardian Hotels|2026 Champion|Senior Chef De Partie|London
 How many different desserts were required in the completed 2026 final banquet?|Five|Three|Four|Seven|Medium|2026 Final|Five Desserts|Masquerade Ball|Forty Five Each|Series Eleven|Banquet|Production Scale`;
 
+
+// Focused 2022-2026 audit: verified challenges and final rules, casting, careers.
+// Series 11 aired its finale 22 July 2026; Series 12 applications announced for 2027.
+// Existing original IDs, answer options and tags remain unchanged.
+const AUDIT_ORIGINAL_COUNT = 89;
+const AUDIT_FIRST_ID = 42561;
+const auditFacts = `On which date did Bake Off: The Professionals begin its 2022 series on Channel 4?|24 May 2022|10 June 2024|4 July 2023|27 May 2025|Medium|2022 Premiere|24 May 2022|Channel Four|Series Seven|Broadcast Date|Stacey Solomon|Timeline
+Which two items were demanded for the first 2022 secret challenge on Bake Off: The Professionals?|Strawberry cakes and a chocolate sculpture|Macarons and a sugar castle|Battenbergs and truffles|Eclairs and a gingerbread house|Medium|2022 Opening Episode|Strawberry Cakes|Chocolate Sculpture|Secret Challenge|No Recipe|Patisserie Teams|Channel Four
+Which traditional pudding joined banoffee pie among the desserts reinvented in Bake Off: The Professionals 2023?|Bread and butter pudding|Spotted dick|Jam roly-poly|Treacle tart|Medium|2023 Series|Bread And Butter Pudding|Banoffee Pie|Reinvented Classics|Ordinary Becomes Extraordinary|Showpiece|Channel Four
+What Swedish princess cake was included in a Bake Off: The Professionals 2023 opening secret challenge?|Prinsesstårta|Kladdkaka|Kransekake|Semla|Hard|2023 Opening Heats|Prinsesstarta|Swedish Pastry|Secret Challenge|Thirty Six Cakes|Chocolate Amenity|Episode Task
+Which English country estate hosted filming of Bake Off: The Professionals in 2023 and 2026?|Firle Place|Blenheim Palace|Hatfield House|Goodwood House|Medium|Firle Place|East Sussex|Filming Venue|2023 Season|2026 Season|Channel Four|Country House
+Which guest pastry chef joined Bake Off: The Professionals as a semi-final judge in 2024?|Nicolas Houchet|Philip Khoury|Gabriella Cugno|Will Torrent|Medium|Nicolas Houchet|2024 Semi Final|Guest Judge|The Savoy|Peach Melba|Pastry Expert|Competition Judges
+At which London hotel did Bake Off: The Professionals 2024 guest judge Nicolas Houchet work as executive pastry chef?|The Savoy|The Ritz|The Ned|The Langham|Medium|Nicolas Houchet|The Savoy|Executive Pastry Chef|2024 Guest Judge|Semi Final|London Hotel|Professional Career
+What mythological subject inspired a suspended chocolate showpiece in Bake Off: The Professionals 2024?|Mythical beasts|Ancient gods|Sea monsters|Roman emperors|Medium|2024 Series|Mythical Beasts|Chocolate Showpiece|Hanging Display|Semi Final Qualifier|Episode Seven|Competition Challenge
+Which two traditional flavours were hidden in the fairy-tale semi-final scenes of Bake Off: The Professionals 2024?|Rhubarb and custard|Lemon and lavender|Rose and pistachio|Coffee and walnut|Medium|2024 Semi Final|Rhubarb And Custard|Fairy Tale Scenes|Hidden Desserts|Forty Portions|Showpiece|Episode Nine
+How many people had to be catered for in the Bake Off: The Professionals 2024 final banquet?|120|60|80|200|Medium|2024 Final|One Hundred And Twenty Guests|Best Of British|Dessert Banquet|Channel Four|Final Challenge|Patisserie Scale
+How many examples of each of the three pastry types were required for the first challenge of Bake Off: The Professionals' 2025 final?|12|24|36|48|Medium|2025 Final|Twelve Each|Cookies|Gateaux De Voyage|Laminated Buns|Viral Window Display|Precise Quantities
+How many hours did Bake Off: The Professionals chefs have for the viral shop-window challenge in the 2025 final?|Four|Two|Six|Eight|Medium|2025 Final|Four Hours|Viral Patisserie Window|Gourmet Cookies|Laminated Buns|Timed Challenge|Channel Four
+How long was the final banquet challenge for the two remaining teams in Bake Off: The Professionals 2025?|Seven hours|Four hours|Ten hours|Twelve hours|Medium|2025 Final|Seven Hour Challenge|Great Train Journeys|The Ned|Vacherin|Final Banquet|Time Limit
+Which animal-shaped lucky charm did 2025 Bake Off: The Professionals winner Darian bring to filming?|A rubber sheep|A porcelain rabbit|A wooden fox|A plastic elephant|Medium|Darian Schmidt|2025 Winners|Rubber Sheep|Lucky Charm|The Ned|Competition Anecdote|Off Screen
+Which winner revealed that a batch of Danish pastry had failed to rise overnight before the Bake Off: The Professionals 2025 final?|Darian Schmidt|Yadira Jauffrineau|Mauro Di Lieto|Kevin Marmion|Medium|Darian Schmidt|2025 Final|Danish Pastry|Proving Failure|Viral Window|The Ned|Behind The Scenes
+What is the full name of 2026 Bake Off: The Professionals winner nicknamed Loki?|Lokeshwari Vinayagamoorthy|Laurian Veaudour|Samantha Rain|Erica Sangiorgi|Hard|Lokeshwari Vinayagamoorthy|Loki|Edwardian Hotels|2026 Winners|The Londoner|Pastry Chef|Full Name
+In which part of India did 2026 Bake Off: The Professionals captain Ashish Wagh grow up?|Northern India|Southern India|Western India|Eastern India|Medium|Ashish Wagh|Northern India|2026 Champions|Edwardian Hotels|Chef Biography|Early Life|Pastry Career
+In which city did 2026 Bake Off: The Professionals winner Ashish spend five years developing his skills before moving to Britain?|Dubai|Paris|Singapore|Mumbai|Medium|Ashish Wagh|Dubai|Five Years|Edwardian Manchester|Career History|2026 Winner|Pastry Training
+What was unusual about the working relationship of the 2026 Bake Off: The Professionals winning pair before competing?|They had never worked in the same kitchen|They had been business partners for ten years|They were former classmates|They had previously competed as rivals|Medium|2026 Champions|Ashish And Loki|First Kitchen Together|Edwardian Hotels|Team Formation|Winning Partnership|Behind The Scenes
+How long did chefs have to complete the opening Paris-Brest secret challenge in Bake Off: The Professionals 2026?|Two and a half hours|One hour|Four hours|Six hours|Medium|2026 Premiere|Paris Brest|Secret Challenge|Two And A Half Hours|No Recipe|Patisserie Timing|Channel Four
+What familiar dessert flavours were hidden inside the childhood-toy showpieces in Bake Off: The Professionals' 2026 opener?|Crumble and custard|Banana and toffee|Rhubarb and ginger|Chocolate and orange|Medium|2026 Premiere|Childhood Toys|Crumble And Custard|Hidden Dessert|Showpiece|Secret Challenge|Competition Task
+What was the title of the sugar showpiece challenge that 2026 Bake Off: The Professionals winner Ashish identified as his favourite?|Candy Kingdom|Circus of Horrors|Victorian Britain|Ancient Wonder|Medium|Ashish Wagh|Candy Kingdom|2026 Series|Sugar Showpiece|Winning Chef|Favourite Challenge|Personal Highlight
+How many examples of each of five desserts did Bake Off: The Professionals' 2026 finalists need for their banquet?|45|12|24|60|Medium|2026 Final|Forty Five Portions|Five Dessert Varieties|Masquerade Ball|Twelve Hours|Banquet Scale|Judge Requirements
+How many dessert types did Bake Off: The Professionals' 2026 finalists have to prepare before the halfway elimination?|Two|Three|One|Five|Medium|2026 Final|Two Desserts|Halfway Judging|Six Hours|Masquerade Ball|Three Teams|Knockout Stage
+What distinctive biscuit showpiece theme featured during Bake Off: The Professionals 2026?|An ancient wonder|A modern airport|An underwater volcano|A railway station|Medium|2026 Series|Biscuit Ancient Wonder|Themed Showpiece|Channel Four|Pastry Sculpture|Competition Task|Historical Theme`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(value => value.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields in ${id}; found ${fields.length}`);
@@ -121,8 +153,13 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In which ')
+      ? 'In Bake Off: The Professionals, which ' + question.slice(9)
+      : 'In Bake Off: The Professionals, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
-  return { id, category: 'Television', programme, question, answers,
+  return { id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true };
 });
 
