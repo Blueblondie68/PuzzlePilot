@@ -1,5 +1,10 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 494: Below Deck (Original Series), Season 4 (2016)
-// 43 MCQs, IDs tv_27892–tv_27934. Original series ONLY.
+// 57 audited questions: 43 originals (two clarified) plus 14 distinct season-four facts.
+// Original IDs tv_27892–tv_27934; audit IDs tv_43135–tv_43148.
+// Original series only; not Mediterranean or another spin-off.
+// Audit on 22 Nov 2026: Bravo production and episode pages, Peacock Season 4,
+// contemporary yacht reporting for BG, 2016 Bravo crew retrospectives,
+// and final-episode coverage. Existing IDs preserved; stand-alone questions.
 // Season 4: Valor, cast, crew dynamics, episode events. Source references:
 // https://www.rottentomatoes.com/tv/below_deck/s04
 // https://www.peacocktv.com/watch-online/tv/below-deck/7650158968969233112/seasons/4
@@ -69,7 +74,7 @@ const questions = [
     "id": "tv_27894",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What kind of guest is among the first charter party aboard Valor in Season 4?",
+    "question": "In Below Deck Season 4, what kind of guest is among the first charter party aboard Valor in Season 4?",
     "answers": [
       "An Olympic sailor",
       "A celebrity chef",
@@ -98,7 +103,7 @@ const questions = [
     "id": "tv_27895",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who is the chief stewardess aboard Valor?",
+    "question": "In Below Deck Season 4, who is the chief stewardess aboard Valor?",
     "answers": [
       "Adrienne Gang",
       "Amy Johnson",
@@ -129,7 +134,7 @@ const questions = [
     "id": "tv_27896",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who serves as chef aboard Valor?",
+    "question": "In Below Deck Season 4, who serves as chef aboard Valor?",
     "answers": [
       "Ben Robinson",
       "Leon Walker",
@@ -159,7 +164,7 @@ const questions = [
     "id": "tv_27897",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which returning deckhand is promoted to bosun in Season 4?",
+    "question": "In Below Deck Season 4, which returning deckhand is promoted to bosun in Season 4?",
     "answers": [
       "Kyle Dixon",
       "Kelley Johnson",
@@ -190,7 +195,7 @@ const questions = [
     "id": "tv_27898",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who is Valor's second stewardess during Season 4?",
+    "question": "In Below Deck Season 4, who is Valor's second stewardess during Season 4?",
     "answers": [
       "Amy Johnson",
       "Lauren Burchell",
@@ -221,7 +226,7 @@ const questions = [
     "id": "tv_27899",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who holds the third stewardess role on Valor in Season 4?",
+    "question": "In Below Deck Season 4, who holds the third stewardess role on Valor in Season 4?",
     "answers": [
       "Emily Warburton-Adams",
       "Connie Arias",
@@ -252,7 +257,7 @@ const questions = [
     "id": "tv_27900",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which senior deckhand causes repeated friction with bosun Kelley?",
+    "question": "In Below Deck Season 4, which senior deckhand causes repeated friction with bosun Kelley?",
     "answers": [
       "Trevor Walker",
       "Kyle Dixon",
@@ -283,7 +288,7 @@ const questions = [
     "id": "tv_27901",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand, like Kelley, develops an attraction to a stewardess in 'That Tuna Is F@#!ed'?",
+    "question": "In Below Deck Season 4, which deckhand, like Kelley, develops an attraction to a stewardess in 'That Tuna Is F@#!ed'?",
     "answers": [
       "Trevor Walker",
       "Kyle Dixon",
@@ -315,7 +320,7 @@ const questions = [
     "id": "tv_27902",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Whose friendship with Nico is put at risk by his pursuit of Emily in Season 4?",
+    "question": "In Below Deck Season 4, whose friendship with Nico is put at risk by his pursuit of Emily in Season 4?",
     "answers": [
       "Sierra Storm",
       "Amy Johnson",
@@ -376,7 +381,7 @@ const questions = [
     "id": "tv_27904",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What delays Kate's complete interior team at the start of Season 4?",
+    "question": "In Below Deck Season 4, what delays Kate's complete interior team at the start of Season 4?",
     "answers": [
       "A stewardess missing her flight",
       "A broken tender",
@@ -406,7 +411,7 @@ const questions = [
     "id": "tv_27905",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What sort of guest causes extra work during the third episode?",
+    "question": "In Below Deck Season 4, what sort of guest causes extra work during the third episode?",
     "answers": [
       "A pet rabbit",
       "A pampered poodle",
@@ -435,7 +440,7 @@ const questions = [
     "id": "tv_27906",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In the fourth episode, what sort of meal must Ben prepare?",
+    "question": "In Below Deck Season 4, in the fourth episode, what sort of meal must Ben prepare?",
     "answers": [
       "A seven-course breakfast",
       "A single-course buffet",
@@ -464,7 +469,7 @@ const questions = [
     "id": "tv_27907",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which junior stewardess does Ben enlist to help prepare a demanding twelve-course dinner?",
+    "question": "In Below Deck Season 4, which junior stewardess does Ben enlist to help prepare a demanding twelve-course dinner?",
     "answers": [
       "Amy Johnson",
       "Sierra Storm",
@@ -495,7 +500,7 @@ const questions = [
     "id": "tv_27908",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member joins Valor in Episode 5?",
+    "question": "In Below Deck Season 4, which crew member joins Valor in Episode 5?",
     "answers": [
       "Kyle Dixon",
       "Dane Jackson",
@@ -525,7 +530,7 @@ const questions = [
     "id": "tv_27909",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who continues trying to pursue Emily in the fifth episode?",
+    "question": "In Below Deck Season 4, who continues trying to pursue Emily in the fifth episode?",
     "answers": [
       "Kelley Johnson",
       "Nico Scholly",
@@ -557,7 +562,7 @@ const questions = [
     "id": "tv_27910",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What incident endangers charter guests in Episode 6?",
+    "question": "In Below Deck Season 4, what incident endangers charter guests in Episode 6?",
     "answers": [
       "A galley explosion",
       "A fuel leak",
@@ -586,7 +591,7 @@ const questions = [
     "id": "tv_27911",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which episode features a surprise engagement dinner?",
+    "question": "In Below Deck Season 4, which episode features a surprise engagement dinner?",
     "answers": [
       "Bosun Blues",
       "Bemily",
@@ -615,7 +620,7 @@ const questions = [
     "id": "tv_27912",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand develops a growing interest in Sierra?",
+    "question": "In Below Deck Season 4, which deckhand develops a growing interest in Sierra?",
     "answers": [
       "Kyle Dixon",
       "Trevor Walker",
@@ -646,7 +651,7 @@ const questions = [
     "id": "tv_27913",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which two crew members go out together in Episode 8?",
+    "question": "In Below Deck Season 4, which two crew members go out together in Episode 8?",
     "answers": [
       "Nico and Amy",
       "Ben and Emily",
@@ -676,7 +681,7 @@ const questions = [
     "id": "tv_27914",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What happens between Kyle and Sierra in Episode 8?",
+    "question": "In Below Deck Season 4, what happens between Kyle and Sierra in Episode 8?",
     "answers": [
       "They leave the yacht together",
       "They win a competition",
@@ -706,7 +711,7 @@ const questions = [
     "id": "tv_27915",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who struggles to manage the exterior team in the ninth episode?",
+    "question": "In Below Deck Season 4, who struggles to manage the exterior team in the ninth episode?",
     "answers": [
       "Ben Robinson",
       "Kate Chastain",
@@ -737,7 +742,7 @@ const questions = [
     "id": "tv_27916",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who becomes angry with Sierra after learning how she treated another deckhand in 'One Less Fish in the Sea'?",
+    "question": "In Below Deck Season 4, who becomes angry with Sierra after learning how she treated another deckhand in 'One Less Fish in the Sea'?",
     "answers": [
       "Kelley Johnson",
       "Trevor Walker",
@@ -766,36 +771,41 @@ const questions = [
     "id": "tv_27917",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What major problem features in Episode 10's food service?",
+    "question": "In Below Deck Season 4, which crew member suffered an allergic reaction after tasting Ben Robinson's food?",
     "answers": [
-      "A guest refusing all drinks",
-      "A dangerous reaction to Ben's food",
-      "A missing birthday cake",
-      "A broken refrigerator only"
+      "Kelley Johnson",
+      "Kyle Dixon",
+      "Nico Scholly",
+      "Trevor Walker"
     ],
-    "correctAnswer": "A dangerous reaction to Ben's food",
+    "correctAnswer": "Kyle Dixon",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
-      "Below Deck",
-      "Bravo",
-      "Charter Yacht",
-      "Reality Television",
       "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
       "Original Below Deck Series",
-      "Season 4",
-      "Year: 2016",
+      "Bravo Network",
+      "Season: 4 (2016)",
       "Yacht: Valor",
-      "Season 4 Crew",
-      "Storyline: Food service near-fatal reaction",
-      "Relevant fact: A dangerous reaction to Ben's food"
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Season 4 Galley",
+      "Kyle Dixon",
+      "Ben Robinson",
+      "Sea Urchin",
+      "Food Allergy",
+      "Episode 10",
+      "Bombed by a Care Bear"
     ]
   },
   {
     "id": "tv_27918",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which returning charter guest arrives in 'Bosun Blues'?",
+    "question": "In Below Deck Season 4, which returning charter guest arrives in 'Bosun Blues'?",
     "answers": [
       "Claudia Jordan",
       "Adrienne Gang",
@@ -825,7 +835,7 @@ const questions = [
     "id": "tv_27919",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who confronts Kelley about long-running issues between them during 'Bosun Blues'?",
+    "question": "In Below Deck Season 4, who confronts Kelley about long-running issues between them during 'Bosun Blues'?",
     "answers": [
       "Trevor Walker",
       "Nico Scholly",
@@ -857,7 +867,7 @@ const questions = [
     "id": "tv_27920",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What happens to Dean in the episode 'Bemily'?",
+    "question": "In Below Deck Season 4, what happens to Dean in the episode 'Bemily'?",
     "answers": [
       "He is stranded on a beach",
       "He captains Valor",
@@ -886,7 +896,7 @@ const questions = [
     "id": "tv_27921",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What dilemma does Kyle face after going out with Sierra in Season 4?",
+    "question": "In Below Deck Season 4, what dilemma does Kyle face after going out with Sierra in Season 4?",
     "answers": [
       "Whether to resign as bosun",
       "Whether to request a cabin change",
@@ -915,7 +925,7 @@ const questions = [
     "id": "tv_27922",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Whose work ethic increasingly frustrates Kate in the penultimate episode?",
+    "question": "In Below Deck Season 4, whose work ethic increasingly frustrates Kate in the penultimate episode?",
     "answers": [
       "Ben and Kelley's",
       "Lee and Trevor's",
@@ -947,7 +957,7 @@ const questions = [
     "id": "tv_27923",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which two deck crew members become fed up with Kate's behaviour near the season's end?",
+    "question": "In Below Deck Season 4, which two deck crew members become fed up with Kate's behaviour near the season's end?",
     "answers": [
       "Kelley and Eddie",
       "Trevor and Don",
@@ -1007,7 +1017,7 @@ const questions = [
     "id": "tv_27925",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who questions Ben's friendship with Kate in the season finale?",
+    "question": "In Below Deck Season 4, who questions Ben's friendship with Kate in the season finale?",
     "answers": [
       "Amy Johnson",
       "Emily Warburton-Adams",
@@ -1039,37 +1049,41 @@ const questions = [
     "id": "tv_27926",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who makes Ashley an offer in the Season 4 finale?",
+    "question": "In Below Deck Season 4, what did Kyle Dixon propose to his girlfriend Ashley in the finale?",
     "answers": [
-      "Kelley Johnson",
-      "Trevor Walker",
-      "Kyle Dixon",
-      "Nico Scholly"
+      "A trip to Australia",
+      "Marriage",
+      "A partnership running a yacht",
+      "A move to New Zealand"
     ],
-    "correctAnswer": "Kyle Dixon",
+    "correctAnswer": "Marriage",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
-      "Below Deck",
-      "Bravo",
-      "Charter Yacht",
-      "Reality Television",
       "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
       "Original Below Deck Series",
-      "Season 4",
-      "Year: 2016",
+      "Bravo Network",
+      "Season: 4 (2016)",
       "Yacht: Valor",
-      "Season 4 Crew",
-      "Storyline: Kyle offers Ashley deal",
-      "Person: Kyle Dixon",
-      "Relevant fact: Kyle Dixon"
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Season 4 Finale",
+      "Kyle Dixon",
+      "Ashley",
+      "Marriage Proposal",
+      "50 Shades of Ben",
+      "Episode 14",
+      "Crew Relationships"
     ]
   },
   {
     "id": "tv_27927",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which stewardess is embarrassed by Ben during 'The Sea Was Angry'?",
+    "question": "In Below Deck Season 4, which stewardess is embarrassed by Ben during 'The Sea Was Angry'?",
     "answers": [
       "Amy Johnson",
       "Emily Warburton-Adams",
@@ -1127,7 +1141,7 @@ const questions = [
     "id": "tv_27929",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member is surprised by a visitor who also unsettles Ben during Episode 6?",
+    "question": "In Below Deck Season 4, which crew member is surprised by a visitor who also unsettles Ben during Episode 6?",
     "answers": [
       "Emily Warburton-Adams",
       "Sierra Storm",
@@ -1158,7 +1172,7 @@ const questions = [
     "id": "tv_27930",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which episode immediately follows 'Bosun Blues'?",
+    "question": "In Below Deck Season 4, which episode immediately follows 'Bosun Blues'?",
     "answers": [
       "The Sea Was Angry",
       "50 Shades of Ben",
@@ -1187,7 +1201,7 @@ const questions = [
     "id": "tv_27931",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which fourth-season episode centres on Kyle pushing Sierra's patience and a risky meal?",
+    "question": "In Below Deck Season 4, which fourth-season episode centres on Kyle pushing Sierra's patience and a risky meal?",
     "answers": [
       "Hair Models and Filthy Martinis",
       "Bosun Blues",
@@ -1217,7 +1231,7 @@ const questions = [
     "id": "tv_27932",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In which episode does Trevor's conduct endanger crew safety?",
+    "question": "In Below Deck Season 4, in which episode does Trevor's conduct endanger crew safety?",
     "answers": [
       "That Tuna Is F@#!ed",
       "Bemily",
@@ -1246,7 +1260,7 @@ const questions = [
     "id": "tv_27933",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What is the name of Kate's girlfriend whom she says goodbye to during 'Decent Proposal'?",
+    "question": "In Below Deck Season 4, what is the name of Kate's girlfriend whom she says goodbye to during 'Decent Proposal'?",
     "answers": [
       "Liv",
       "Mia",
@@ -1276,7 +1290,7 @@ const questions = [
     "id": "tv_27934",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member repeatedly clashes with Kate in the galley?",
+    "question": "In Below Deck Season 4, which crew member repeatedly clashes with Kate in the galley?",
     "answers": [
       "Nico Scholly",
       "Kyle Dixon",
@@ -1304,9 +1318,490 @@ const questions = [
     ]
   }
 ];
-if (questions.length!==43 || new Set(questions.map(q=>q.id)).size!==questions.length ||
+// 22 Nov 2026: appended genuine Season 4 plot and production gaps.
+const AUDIT_ORIGINAL_COUNT=43;
+const AUDIT_FIRST_ID=43135;
+const auditQuestions=[
+  {
+    "id": "tv_43135",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, in which island group was Below Deck Season 4 filmed aboard Valor?",
+    "answers": [
+      "The Greek Cyclades",
+      "The British Virgin Islands",
+      "The Canary Islands",
+      "The Seychelles"
+    ],
+    "correctAnswer": "The British Virgin Islands",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Caribbean",
+      "2016 Filming",
+      "Charter Location",
+      "2016 Production",
+      "Yacht Cruise"
+    ]
+  },
+  {
+    "id": "tv_43136",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, what was the real-world name of the yacht presented as Valor in Below Deck Season 4?",
+    "answers": [
+      "BG",
+      "Ohana",
+      "Mustang Sally",
+      "Cuor di Leone"
+    ],
+    "correctAnswer": "BG",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Production",
+      "BG Yacht",
+      "Valor",
+      "Yacht Real Name",
+      "Superyacht",
+      "154 Foot Vessel",
+      "Production"
+    ]
+  },
+  {
+    "id": "tv_43137",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, approximately how long was the motor yacht Valor featured in Season 4?",
+    "answers": [
+      "75 feet",
+      "210 feet",
+      "310 feet",
+      "154 feet"
+    ],
+    "correctAnswer": "154 feet",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Production",
+      "154 Feet",
+      "Motor Yacht",
+      "Season Four",
+      "Vessel Size",
+      "Captain Lee Rosbach",
+      "BG Yacht"
+    ]
+  },
+  {
+    "id": "tv_43138",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, who was identified as the owner of the yacht used as Valor in Season 4?",
+    "answers": [
+      "Andy Cohen",
+      "Ben Robinson",
+      "Bobby Genovese",
+      "Captain Lee Rosbach"
+    ],
+    "correctAnswer": "Bobby Genovese",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Bobby Genovese",
+      "BG Yacht",
+      "Yacht Owner",
+      "Luxury Vessel",
+      "Charter Business",
+      "Production"
+    ]
+  },
+  {
+    "id": "tv_43139",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, what happened to Trevor Walker's senior deckhand rank before he was fired?",
+    "answers": [
+      "He became chief steward",
+      "He was demoted to deckhand",
+      "He was promoted to bosun",
+      "He was made captain"
+    ],
+    "correctAnswer": "He was demoted to deckhand",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Trevor Walker",
+      "Demotion",
+      "Senior Deckhand",
+      "2016 Crew",
+      "Management",
+      "Episode Three"
+    ]
+  },
+  {
+    "id": "tv_43140",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, which bosun demoted Trevor Walker from his senior deckhand position?",
+    "answers": [
+      "Kelley Johnson",
+      "Eddie Lucas",
+      "Aleks Taldykin",
+      "Captain Sandy Yawn"
+    ],
+    "correctAnswer": "Kelley Johnson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Kelley Johnson",
+      "Trevor Walker",
+      "Demotion",
+      "Deck Team",
+      "Leadership",
+      "Episode Three"
+    ]
+  },
+  {
+    "id": "tv_43141",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, who made the final decision to dismiss troublesome deckhand Trevor Walker?",
+    "answers": [
+      "Kate Chastain",
+      "Ben Robinson",
+      "Emily Warburton-Adams",
+      "Captain Lee Rosbach"
+    ],
+    "correctAnswer": "Captain Lee Rosbach",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Trevor Walker",
+      "Captain Lee Rosbach",
+      "Dismissal",
+      "Season Four",
+      "Workplace Discipline",
+      "Episode Four"
+    ]
+  },
+  {
+    "id": "tv_43142",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, which deckhand became the new senior deckhand late in Below Deck Season 4?",
+    "answers": [
+      "Kyle Dixon",
+      "Trevor Walker",
+      "Nico Scholly",
+      "Lauren Burchell"
+    ],
+    "correctAnswer": "Nico Scholly",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Nico Scholly",
+      "Senior Deckhand",
+      "Late Season",
+      "Kelley Johnson",
+      "Promotion",
+      "Episode Thirteen"
+    ]
+  },
+  {
+    "id": "tv_43143",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, what was the name of the pampered poodle accompanying charter guests in Season 4?",
+    "answers": [
+      "Onyx",
+      "Scupper",
+      "Biscuit",
+      "Toby"
+    ],
+    "correctAnswer": "Scupper",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Guests",
+      "Scupper",
+      "Pampered Poodle",
+      "Hair Models And Filthy Martinis",
+      "Episode Three",
+      "Charter Pet",
+      "Guest Demands"
+    ]
+  },
+  {
+    "id": "tv_43144",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, which deckhand had an allergic reaction after trying Ben Robinson's sea urchin dish?",
+    "answers": [
+      "Kyle Dixon",
+      "Nico Scholly",
+      "Lauren Burchell",
+      "Kelley Johnson"
+    ],
+    "correctAnswer": "Kyle Dixon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Kyle Dixon",
+      "Sea Urchin",
+      "Ben Robinson",
+      "Food Reaction",
+      "Galley",
+      "Episode Ten"
+    ]
+  },
+  {
+    "id": "tv_43145",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, what surprise did Ben Robinson leave for Emily Warburton-Adams after a romantic gesture by Kate?",
+    "answers": [
+      "A pet kitten",
+      "A gold watch",
+      "A first-class flight ticket",
+      "Flowers in Emily's bunk"
+    ],
+    "correctAnswer": "Flowers in Emily's bunk",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Relationships",
+      "Ben Robinson",
+      "Emily Warburton Adams",
+      "Flowers",
+      "Romantic Gesture",
+      "Decent Proposal",
+      "Episode Seven"
+    ]
+  },
+  {
+    "id": "tv_43146",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, what happened to Kate Chastain's relationship with girlfriend Ro during Season 4?",
+    "answers": [
+      "They got married",
+      "They started a yacht business",
+      "They broke up",
+      "They adopted a baby"
+    ],
+    "correctAnswer": "They broke up",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Relationships",
+      "Kate Chastain",
+      "Ro Hernandez",
+      "Relationship Breakdown",
+      "Decent Proposal",
+      "Episode Seven",
+      "Personal Story"
+    ]
+  },
+  {
+    "id": "tv_43147",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, who was held responsible when returning charter guest Dean Slover was stranded on a beach?",
+    "answers": [
+      "Sierra Storm",
+      "Kelley Johnson",
+      "Ben Robinson",
+      "Trevor Walker"
+    ],
+    "correctAnswer": "Kelley Johnson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Kelley Johnson",
+      "Dean Slover",
+      "Beach Incident",
+      "Bosun Blues",
+      "Bemily",
+      "Episode Twelve"
+    ]
+  },
+  {
+    "id": "tv_43148",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 4, which two deckhands did Kate Chastain sit down with amid tensions before the Season 4 finale?",
+    "answers": [
+      "Nico Scholly and Lauren Burchell",
+      "Kelley Johnson and Trevor Walker",
+      "Kyle Dixon and Ben Robinson",
+      "Eddie Lucas and Amy Johnson"
+    ],
+    "correctAnswer": "Nico Scholly and Lauren Burchell",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 4 (2016)",
+      "Yacht: Valor",
+      "British Virgin Islands",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Kate Chastain",
+      "Nico Scholly",
+      "Lauren Burchell",
+      "Crew Meeting",
+      "Season Finale",
+      "Workplace Dispute"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==57 || new Set(questions.map(q=>q.id)).size!==questions.length ||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length ||
-questions.some((q,i)=>q.id!=='tv_'+(27892+i)||q.topic!=='Below Deck'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(27892+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<6||q.dailyEligible!==true||
 !['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 494 validation failed');
