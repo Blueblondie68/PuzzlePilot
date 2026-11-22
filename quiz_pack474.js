@@ -1,6 +1,6 @@
 // PuzzlePilot Bigggggg Quiz — Pack 474
 // BELOW (Netflix six-part limited series, released 8 October 2026).
-// 42 new character, storyline, production and finale facts; no padding.
+// Audited 64 character, storyline, episode and production facts; no padding.
 // IDs tv_26206–tv_26247. Completed run through episode 6, 8 Oct 2026.
 // Source https://www.netflix.com/tudum/articles/below-cast-guide
 // Source https://www.netflix.com/tudum/articles/below-ending-explained
@@ -1354,9 +1354,59 @@ const questions=[
     "dailyEligible": true
   }
 ];
-if(questions.length!==42||new Set(questions.map(q=>q.id)).size!==42||
- new Set(questions.map(q=>q.question.toLowerCase())).size!==42||
- questions.some((q,i)=>q.id!=='tv_'+String(26206+i)||
+
+// Focused post-release audit: episode titles, major family/finale resolutions and production.
+// No awards were asserted without reliable evidence. Original IDs/options/tags unchanged.
+const AUDIT_ORIGINAL_COUNT=42;
+const AUDIT_FIRST_ID=42610;
+const auditFacts = `Which title opened the 2026 Netflix limited series Below?|Come Home Year|The Ocean Will Have Us All|Little Pot Rock|The Unfathering Deep|Medium|Episode One|Come Home Year|Netflix Episode Guide|Series Premiere|2026 Release|Episode Titles|Penney Family Reunion
+Which title was used for the second episode of Below?|Crown and Anchor|Sir John Franklin|Come Home Year|Little Pot Rock|Medium|Episode Two|Crown And Anchor|Fonda Investigation|Wade Dreams|Netflix Episode Guide|Season One|Episode Titles
+Which title was given to the fourth episode of Below?|The Ocean Will Have Us All|Little Pot Rock|Crown and Anchor|The Unfathering Deep|Medium|Episode Four|The Ocean Will Have Us All|Underwater Hunt|Family Danger|Episode Titles|Netflix Guide|Limited Series
+What was the title of Below's sixth and final episode?|The Unfathering Deep|Little Pot Rock|Come Home Year|Crown and Anchor|Medium|Episode Six|The Unfathering Deep|Series Finale|2026 Release|Episode Titles|Calvin Penney|Netflix Guide
+What was Calvin Penney's marital status when the story of Below began?|Widowed|Recently divorced|Never married|Married but separated|Medium|Calvin Penney|Widowed Father|Family Backstory|Single Parent|Three Children|Household|Character Development
+Which of Calvin's three children had stayed in Snook's Arm before the family reunion in Below?|Wade|Mary|Jay|Noah|Medium|Wade Penney|Family Reunion|Snooks Arm|Stayed At Home|Calvin Penney|Adult Children|Character History
+What warning hinted at Jay Penney's hidden financial difficulties in Below?|A threatening text message|A court summons delivered by boat|A failed bank-card payment|A newspaper advert|Medium|Jay Penney|Financial Trouble|Threatening Message|Come Home Year|Secret Trouble|Family Drama|Early Episodes
+In Below whose daughter was the mysterious woman called Maggie?|Walton Budgell's|Jim Crocker's|Steve Bruner's|Calvin Penney's|Medium|Maggie|Old Hag|Walton Budgell|Little Pot Rock|Family Reveal|Wade Penney|Creature Mystery
+What did Walton Budgell's family secretly feed Mudder in exchange for fish in Below?|Human remains|Whale oil|Seaweed|Crushed shells|Hard|Walton Budgell|Mudder|Little Pot Rock|Secret Pact|Sea Creature|Dark Bargain|Fisheries
+In Below whose engagement ring did Maggie give Wade on Little Pot Rock?|Noah's|Jay's|Jim Crocker's|Steve Bruner's|Hard|Maggie|Wade Penney|Noah|Stolen Ring|Little Pot Rock|Family Romance|Plot Twist
+Which character prevented Walton Budgell from attacking Calvin in Below?|Wade Penney|Fonda Howander|Mary Penney|Jan Hickey|Medium|Wade Penney|Calvin Penney|Walton Budgell|Little Pot Rock|Father Son Bond|Island Escape|Major Story Arc
+What old document exposed the Crocker family's mineral interests in Below?|A mining permit|A ship's passenger manifest|An adoption certificate|A fishing licence|Medium|Mining Permit|Crocker Family|Little Pot Rock|Mineral Rights|Cobalt Copper|Historical Evidence|Corporate Scheme
+Which of Calvin's sons was secretly involved with resettlement official Jan Hickey in Below?|Jay|Wade|Noah|Calvin|Medium|Jay Penney|Jan Hickey|Secret Relationship|Resettlement Officer|Crocker Daughter|Character Connections|Family Conflict
+Who broke apart the huge iceberg to help save Mudder in the finale of Below?|Mary and Wade|Calvin and Fonda|Jay and Noah|Walton and Maggie|Medium|Mary Penney|Wade Penney|Iceberg|Finale Rescue|Giant Squid|Family Cooperation|Ocean Rescue
+Which scientist struck Jan Hickey during the final rescue plan in Below?|Fonda Howander|Dr Hugo Sayed|Annie Mercier|Steve Bruner|Medium|Fonda Howander|Jan Hickey|Finale Confrontation|Radio Room|Mining Conflict|Marine Biologist|Rescue Plan
+What happened to the proposed resettlement vote by the end of Below?|It was thrown out|It passed unanimously|It was settled by a lottery|It was approved by the military|Medium|Resettlement Vote|Snooks Arm|Crocker Plot|Finale Aftermath|Town Future|Community Victory|Government Plan
+What ominous sight closed the last moments of Below?|More icebergs appearing at sea|A ship burning in the harbour|A military helicopter landing|A deserted village square|Medium|Final Scene|Additional Icebergs|Future Threats|Climate Change|Snooks Arm|Ambiguous Ending|Creature Mystery
+Which real Canadian marine biologist advised the makers of Below and inspired the character Fonda?|Dr Annie Mercier|Dr Jane Goodall|Dr Sylvia Earle|Dr Edith Widder|Hard|Dr Annie Mercier|Scientific Consultant|Memorial University|Fonda Howander|Giant Squid Research|Marine Biology|Production Research
+Which real research centre was used for Fonda's laboratory scenes in Below?|Ocean Sciences Centre|Monterey Bay Aquarium|Bedford Institute of Oceanography|Vancouver Aquarium|Medium|Ocean Sciences Centre|Memorial University|Newfoundland|Fonda Lab|Filming Location|Marine Research|Production Design
+Which Below scriptwriter was also known for her work on Orphan Black?|Karen Walton|Sally Wainwright|Abi Morgan|Phoebe Waller-Bridge|Medium|Karen Walton|Orphan Black|Scriptwriter|2026 Netflix|Writers Room|Production Credits|Canadian Television
+Which of these directors worked on the episodes of Below alongside Jamie Childs and Helen Shaver?|Stephen Dunn|David Fincher|Sam Mendes|J J Abrams|Medium|Stephen Dunn|Series Director|Jamie Childs|Helen Shaver|Production Credits|2026 Netflix|Episode Direction
+How did Josh Hartnett practise the regional Newfoundland accent for Below?|Listening to fishermen on local radio|Studying recordings of London dockworkers|Taking singing lessons|Watching silent films|Medium|Josh Hartnett|Newfoundland Accent|Local Radio|Fishermen Interviews|Dialect Coach|Actor Preparation|Filming Research`;
+const commonAuditTags=['Television','Netflix Television','Programme: Below','Below',
+  'Canadian Television','2026 Television','Sea Creature Thriller','Limited Series','Written Questions'];
+const auditQuestions=auditFacts.trim().split('\n').map((line,i)=>{
+  const p=line.split('|').map(t=>t.trim());
+  if(p.length!==13)throw Error('Invalid Below audit row '+i);
+  const [question,correctAnswer,wrong1,wrong2,wrong3,difficulty,...specificTags]=p;
+  const answers=[wrong1,wrong2,wrong3];
+  answers.splice((AUDIT_ORIGINAL_COUNT+i)%4,0,correctAnswer);
+  const tags=[...new Map([...commonAuditTags,correctAnswer,...specificTags].map(t=>[t.toLowerCase(),t])).values()];
+  return {id:'tv_'+String(AUDIT_FIRST_ID+i),category:'TV',topic:'Below',
+    question,answers,correctAnswer,difficulty,tags,dailyEligible:true};
+});
+for(const q of questions){
+  if(!q.question.includes('Below')){
+    q.question=q.question.startsWith('In which ')
+      ? 'In Below, which '+q.question.slice(9)
+      : q.question.startsWith('In ')
+        ? 'In Below, '+q.question[0].toLowerCase()+q.question.slice(1)
+        : 'In Below, '+q.question[0].toLowerCase()+q.question.slice(1);
+  }
+}
+questions.push(...auditQuestions);
+
+if(questions.length!==64||new Set(questions.map(q=>q.id)).size!==64||
+ new Set(questions.map(q=>q.question.toLowerCase())).size!==64||
+ questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(26206+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||
  q.category!=='TV'||q.topic!=='Below'||q.answers.length!==4||
  new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
  q.answers.filter(a=>a===q.correctAnswer).length!==1||
