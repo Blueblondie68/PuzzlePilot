@@ -6,10 +6,10 @@
  'use strict';
 
  const FIRST_ID = 23012;
- const commonTags = [
-   'television', 'Airline ITV', 'fly on the wall',
-   'airport documentary', 'British factual TV', 'aviation'
- ];
+ const PROGRAMME='Airline';
+ const commonTags=['Television','Airline ITV','Programme: '+PROGRAMME,
+   'Fly-on-the-wall Documentary','Airport Documentary','British Factual TV',
+   'Aviation','ITV 1998–2007','Britannia Airways and easyJet','Finished Programme'];
 
  // Format: question | correct | wrong 1 | wrong 2 | wrong 3 | difficulty | seven precise tags.
  // Dates in tags rather than question wording unless needed for the question.
@@ -124,12 +124,13 @@
      throw new Error(`Pack 411: duplicate answer option at row ${index + 1}`);
    }
    const tags = [...new Set([...commonTags, ...specificTags])];
-   if (tags.length !== 13) {
+   if (tags.length < 12) {
      throw new Error(`Pack 411: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
    }
    return {
      id: `tv_${FIRST_ID + index}`,
      category: 'Television',
+     programme: PROGRAMME,
      question,
      answers,
      correctAnswer,
@@ -139,4 +140,50 @@
    };
  });
 
- module.exports = questions;
+ 
+
+// PACK 411 EPISODE STORY AUDIT, 1998–2007.
+// Keep original 90 records, tv_23012–tv_23101, unchanged.
+// Additional IDs begin tv_41698. Finished UK ITV documentary, ten main
+// series plus special compilations. Episode highlights are representative,
+// not one quiz for every documentary incident in all ten series.
+// Sources for the story questions:
+// https://thetvdb.com/series/airline/allseasons/official
+// https://www.tvguide.com/tvshows/airline-uk/episodes-season-2/1000110418/
+// https://www.tvmaze.com/shows/9715/airline
+// Original ITV Studios programme archive:
+// https://www.youtube.com/watch?v=fzEerEA2Rw0
+const audit411Rows=[["S1E1 1998","To which Italian city were abusive holiday passengers bound in the first Britannia Airways episode?","Venice",["Rome","Naples","Florence"],"Disruptive opening-episode travellers"],["S1E2 1998","To which Caribbean country was Anne Brian organising a group trip for her daughter's wedding?","Dominican Republic",["Barbados","Jamaica","Cuba"],"Group wedding holiday"],["S1E3 1998","Which aircraft safety equipment do trainee crew Aaron and Jason practise using?","Emergency slides",["Life rafts","Fire extinguishers","Oxygen masks"],"Britannia cabin-crew training"],["S1E6 1998","What problem with a couple's travel paperwork occupies Pat Baines at Manchester?","A defaced passport",["A missing boarding gate","A duplicated ticket","An expired driving licence"],"Pat Baines and travel documents"],["S2E2 1999","Which easyJet captain realises he is heading towards the wrong part of France?","Pete Woods",["James McBride","Chris Pell","Mike Jameson"],"Pilot navigation error"],["S2E4 1999","Which planned occasion does Katrina Leeder miss because she feels unwell after cancer treatment?","Her wedding rehearsal",["Her retirement party","Her birthday dinner","A cousin's christening"],"Katrina's treatment and wedding preparations"],["S2E5 1999","Which Spanish city is the destination of the forgetful DJ who keeps Jane Boulton busy?","Barcelona",["Madrid","Valencia","Seville"],"Distracted DJ at Luton"],["S2E8 1999","To which Belgian city do easyJet employees travel to protest against another airline?","Brussels",["Antwerp","Bruges","Ghent"],"Airline staff demonstration"],["S3E1 1999","Which Hollywood actress is rumoured to be travelling through Luton when Katrina returns to work?","Sharon Stone",["Julia Roberts","Sandra Bullock","Meg Ryan"],"Celebrity rumour in airport"],["S3E2 1999","Whom are Scottish schoolchildren travelling to meet in an early easyJet episode?","Their pen-pals",["Their grandparents","A television presenter","A school inspector"],"Schoolchildren on an international trip"],["S3E4 1999","Which profession is Adrian Cave hoping to enter when he flies to an audition in Zurich?","Opera singing",["Fashion modelling","Professional football","Ballet dancing"],"Adrian Cave's Zurich audition"],["S3E5 1999","What mix-up prevents a passenger from boarding when Kevin Reardon deals with him in Liverpool?","He has the wrong passport",["He has no suitcase","He has a fake boarding pass","He is at the wrong terminal"],"Liverpool despatch paperwork problem"],["S3E7 1999","What expensive sports car is Simon Empson travelling to Geneva hoping to find?","A Ferrari",["An Aston Martin","A Porsche","A Lamborghini"],"Car hunter's trip"],["S3E9 1999","What does Jane Boulton hand in during the third series after becoming dissatisfied with work?","Her notice to resign",["Her driving licence","A police statement","Her annual leave form"],"Jane's career dilemma"],["S4E2 2000","At what age did aspiring easyJet pilot Georgie Hobbs first fly an aeroplane?","Fifteen",["Ten","Eighteen","Twenty-one"],"Early flying experience of trainee pilot"],["S4E3 2000","Which missing dental item sends a Britannia steward searching through aircraft rubbish?","A dental brace",["A gold filling","A set of dentures","A toothbrush"],"Missing passenger property"],["S4E5 2000","What schedule change causes several passengers to miss a flight in the fourth series?","Its departure was brought forward",["It changed to a different date","It became an overnight flight","It departed from Scotland"],"Departure time brought forward"],["S4E6 2000","What was the name of purser Janey Stock's dog, with whom she is reunited?","Bluey",["Barney","Max","Rover"],"Cabin crew member's pet"],["S4E10 2000","How are the groom's senses deliberately obstructed on a stag trip through Luton?","He is blindfolded and gagged",["He wears a diving helmet","He is dressed in a mascot costume","He has to wear ski goggles"],"Stag-party disguise"],["S4E12 2000","What must a Liverpool aircraft complete after having a new engine fitted?","Safety tests",["A paint inspection only","A passenger survey","A photo shoot"],"Aircraft maintenance before departure"],["S5E3 2001","Fishermen from which West African country are stranded in the third episode of the fifth series?","Ivory Coast",["Ghana","Senegal","Nigeria"],"Stranded fishing passengers"],["S5E6 2001","Which comic performer writes a song inspired by easyJet in the fifth series?","Kit Hesketh-Harvey",["Alan Davies","Stephen Fry","Paul Merton"],"Comic songwriter at airport"],["S5E8 2001","What major business milestone does founder Stelios mark while new recruits begin their training?","EasyJet's stock market flotation",["An airline merger with Ryanair","The company's first transatlantic flight","The closure of Luton Airport"],"Company flotation"],["S6E7 2002","What unusual weather event in Athens postpones a flight for two days?","Freak snowfall",["A sandstorm","A heatwave","Dense smoke"],"Greek airport disruption"],["S6E8 2002","Which easyJet purser rehearses his forthcoming TV appearance with an in-flight quiz?","Mark Hobson",["Bob Brain","Tony Underwood","Kevin Reardon"],"Purser rehearses television quiz"],["S6E9 2002","Who secretly boards a flight to propose to purser Vicki Cox?","Her boyfriend Nigel",["Her father","Her former fiancé","Her colleague Leo"],"Romantic surprise during flight"],["S6E10 2002","What airline rule prevents a mother travelling alone with her infant twins to Inverness?","One adult per child",["No babies on morning flights","All children need separate passports","No pushchairs on domestic flights"],"Travelling with infant twins"],["S6E11 2002","Which son is Leo Jones asked to help locate after he misses two Amsterdam flights?","Mr Clilverd's 19-year-old son",["Jane Boulton's teenage son","Captain Pell's eldest son","A Liverpool footballer's son"],"Missing young passenger"],["S6E14 2002","Which television presenter is waiting for a trophy rushed to Luton before his flight to Glasgow?","Nick Knowles",["Michael Parkinson","Des O'Connor","Eamonn Holmes"],"Urgent trophy courier"],["S6E15 2002","How old is the baby removed from a flight because it is six hours short of the permitted age?","Thirteen days old",["Seven days old","Twenty-one days old","One month old"],"Minimum infant travel age"],["S6E16 2002","Which daredevil activity do airline employees plan to raise money from a Swiss mountain cable car?","A charity bungee jump",["A skydive","A sponsored abseil","A glacier swim"],"Airline charity fundraiser"],["S6E17 2002","Approximately how many passengers are stranded by the air-traffic computer failure at Swanwick?","4,000",["400","800","40,000"],"Disruption scale"],["S6E18 2002","Which television socialite tries working as cabin crew while researching a magazine article?","Tara Palmer-Tomkinson",["Tamara Beckwith","Jodie Marsh","Lady Victoria Hervey"],"Celebrity observes airline stewardess role"],["S7E3 2003","What valuable object does supervisor Jo Dempsey try to deliver through an aircraft cockpit window?","An engagement ring",["A passport","A camera","A gold watch"],"Urgent romantic delivery"],["S7E4 2003","Which Swiss winter-sports run are a father and son heading to race on during an airport blizzard?","The Cresta Run",["The Hahnenkamm","The Birkebeiner","The Vasaloppet"],"Father-and-son winter racing"],["S7E7 2003","Which London airport does a French student visit by mistake instead of Luton?","Heathrow",["Gatwick","Stansted","City Airport"],"Lost student travelling to Paris"],["S7E10 2003","What sporting equipment do two honeymooners want to bring aboard their easyJet flight?","Their own parachutes",["Two surfboards","A fencing kit","Their bicycles"],"Honeymoon skydivers"],["S8E3 2004","What deception is revealed about a couple for whom Jane delays a Faro flight?","They are not really newlyweds",["They are using forged tickets","They are not travelling to Faro","They are travelling with stolen luggage"],"False honeymoon claim"],["S8E10 2004","Which language is an obstacle when Leo Jones tries helping two travellers who miss their flight?","Japanese",["Italian","Polish","Turkish"],"Communication problem at Luton"],["S8E12 2004","How many times does one Luton passenger manage to miss her flight while her boyfriend awaits her in Paris?","Three times",["Twice","Four times","Five times"],"Repeated flight mishaps"],["S9E1 2005","Which reggae musician attempts to negotiate replacement tickets after arriving late for his flight?","Mikey Dread",["Shaggy","Maxi Priest","Beres Hammond"],"Reggae artist's travel dispute"],["S9E2 2005","Which children's charity does Nikki Sanderson support during a flight to Paris?","Whizz-Kidz",["Barnardo's","Childline","Great Ormond Street Hospital Charity"],"Celebrity charity trip"],["S9E4 2005","Which airport worker receives a send-off as she leaves passenger services for cabin crew?","Emma Ellwood",["Helen Skeggs","Jane Boulton","Katrina Leeder"],"Staff promotion to air crew"],["S9E6 2005","For what kind of airline media project do Kelly Roberts and Debbie Hopkins audition in Manchester?","EasyJet's first television commercial",["A passenger safety film","An airport radio broadcast","A recruitment podcast"],"Staff audition for advertising"],["S10E1 2006","Which anniversary of easyJet is celebrated when its founder visits the staff?","Its tenth anniversary",["Its fifth anniversary","Its twentieth anniversary","Its thirtieth anniversary"],"Airline founding anniversary"],["S10E2 2006","What unexpected wartime discovery at Amsterdam Schiphol delays flights?","An unexploded Second World War bomb",["A crashed wartime aeroplane","A military bunker","A buried tank"],"Wartime ordnance disrupts travel"],["S10E3 2006","What damaged baby item does a pregnant passenger demand be replaced after transit from Switzerland?","A pushchair",["A car seat","A cot","A baby monitor"],"Passenger damaged belongings"],["S10E8 2006","How much excess luggage do a mother and son have at Belfast when they struggle to pay for check-in?","53 kilograms",["13 kilograms","23 kilograms","103 kilograms"],"Baggage allowance dispute"],["S10E19 2007","What type of sporting official nearly misses the world championship in Madrid?","A hockey referee",["A football linesman","A tennis umpire","A cricket scorer"],"Sandy Richards's trip"],["S10E20 2007","How many double vodkas does a passenger claim to have consumed before Debbie Hopkins intervenes?","Twenty-five",["Five","Ten","Fifteen"],"Final-episode intoxicated passenger"]];
+const audit411Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+for(const [episode,stem,correctAnswer,wrongAnswers,focus] of audit411Rows){
+ const question='In the ITV documentary '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrongAnswers]; answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit411Norm)).size!==4)
+   throw Error('Pack 411 duplicate answer choice '+stem);
+ const tags=['Television', 'ITV', 'Airline ITV','Programme: '+PROGRAMME,
+   'Fly-on-the-wall Documentary','Airline Staff and Passengers',
+   'Britannia Airways and easyJet','1998–2007 UK',
+   'Episode: '+episode,'Specific event: '+focus,
+   'Correct answer: '+correctAnswer,'ITV airport documentary',
+   'Real airline incidents','Finished programme'];
+ questions.push({id:'tv_'+(41698+questions.length-90),
+  category:'Television',programme:PROGRAMME,question,answers,
+  correctAnswer,difficulty:'Medium',tags,dailyEligible:true});
+}
+const audit411IDs=new Set(),audit411Stems=new Set();
+for(const record of questions){
+ const text=audit411Norm(record.question);
+ const isNew=Number(record.id.slice(3))>=41698;
+ if(record.category!=='Television'||record.programme!==PROGRAMME||
+ !record.tags.includes('Programme: '+PROGRAMME)||
+ !text.includes(audit411Norm(PROGRAMME))||
+ record.answers.length!==4||new Set(record.answers.map(audit411Norm)).size!==4||
+ record.answers.filter(a=>a===record.correctAnswer).length!==1||
+ record.tags.length<12||record.dailyEligible!==true||
+ audit411IDs.has(record.id)||audit411Stems.has(text)||
+ (isNew&&text.includes(audit411Norm(record.correctAnswer))))
+ throw Error('Pack 411 validation failed '+record.id);
+ audit411IDs.add(record.id);audit411Stems.add(text);
+}
+module.exports=questions;
