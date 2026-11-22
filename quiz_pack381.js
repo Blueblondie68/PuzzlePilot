@@ -138,12 +138,13 @@ function addFacts(block, coverage) {
     const answers = [wrong1, wrong2, wrong3];
     answers.splice(questions.length % 4, 0, correctAnswer);
     const tags = [...new Map([
-      'Television', 'Crime Drama', 'Police Procedural', programme, era,
+      'Television', 'British Television', 'ITV', 'Crime Drama', 'Police Procedural', programme, 'Programme: '+programme, era,
       coverage, correctAnswer, ...detailTags
     ].map(tag => [tag.toLowerCase().replace(/[^a-z0-9]/g, ''), tag])).values()];
     const item = {
       id: `tv_${FIRST_ID + questions.length}`,
       category: 'Television',
+      programme,
       question,
       answers,
       correctAnswer,
@@ -170,4 +171,91 @@ for (const q of questions) {
   if (seenQuestions.has(stem)) throw new Error(`Duplicate question: ${q.id}`);
   seenQuestions.add(stem);
 }
-module.exports = questions;
+
+
+// Series 1–3 episode-story audit; full A Touch of Frost remains PARTIAL
+// because later series continue with Packs 382 onward.
+// Source: https://www.tvmaze.com/shows/6259/a-touch-of-frost/episodeguide?all=1
+// Source: https://en.wikipedia.org/wiki/List_of_A_Touch_of_Frost_episodes
+// Original tv_19963–tv_20072 preserved. New IDs start tv_40503.
+const audit381s1 = `In Care and Protection, what work was Tracy Uphill's mother doing when she was late to collect her daughter?|Sex work|Bank clerking|Night-shift nursing|Restaurant catering|Care and Protection|Linda Uphill's occupation|Missing-child investigation
+In Care and Protection, what sum does a conman demand for Tracy Uphill's return?|£2,000|£5,000|£20,000|£200|Care and Protection|Abduction hoax|Ransom extortion
+In Care and Protection, which assistant bank manager provides money to cover the ransom demand?|Ronald Garwood|Gerald Powell|Roger Massie|Mike Bell|Care and Protection|Financial help for Linda|Extorted bank officer
+In Care and Protection, who had actually abducted Tracy Uphill?|A local woman who kept cats|A bank robber's daughter|A school bus driver|A private investigator|Care and Protection|Tracy's real abductor|Child returned to hospital
+In Care and Protection, what is the surname of the missing bank clerk whose skeleton is found?|Felton|Webster|Eustace|Powell|Care and Protection|Cold-case skeleton|Bank theft victim
+In Care and Protection, how much money was involved in the old bank theft?|£40,000|£4,000|£400,000|£20,000|Care and Protection|Historic theft|Bank transfer robbery
+In Care and Protection, how does Gerald Powell avoid arrest after Frost uncovers his crimes?|He kills his wife and himself|He flees to France|He fakes his death|He escapes from custody|Care and Protection|Gerald Powell final confrontation|Murder-suicide
+In Not with Kindness, what causes Denton police station to be short of officers?|An illness sweeping the area|A nationwide strike|Mass retirements|Officers sent to London|Not with Kindness|Staff shortage|Illness among police
+In Not with Kindness, what clue tells Frost someone tampered with Paula Bartlett's newspaper bag?|A newspaper torn by a letterbox|A bloodstained receipt|A ripped map|A broken fountain pen|Not with Kindness|Paula Bartlett route|Tampered newspaper
+In Not with Kindness, what motivates Alex Compton to kill her husband?|Life insurance after his affair|A disputed rare-book collection|A forged will|An unpaid gambling debt|Not with Kindness|Alex Compton motive|Insurance fraud
+In Not with Kindness, how does Frost reveal that Alex Compton invented a stalker?|She identifies an unrelated corpse|He finds her forged passport|He intercepts a false ransom note|He discovers a secret camera|Not with Kindness|False stalker claim|Body-identification trick
+In Conclusions, what is the name of the politician's son linked to a hit-and-run?|Roger Massie|Ronald Garwood|Stuart Penrice|Dave Shelby|Conclusions|Hit-and-run suspect|Politician's son
+In Conclusions, what motivates the robbery at the private casino?|Debts accumulated there|An unpaid pub mortgage|A stolen inheritance|Business losses abroad|Conclusions|Casino robbery motive|Gambling debt
+In Conclusions, how does Roger Massie try to create an alibi?|A girlfriend drives his car|He books a flight under another name|He enters hospital as a patient|He borrows a police uniform|Conclusions|Roger Massie alibi|Girlfriend drives car
+In Conclusions, from which part of Britain is DC Webster on secondment?|Scotland|Wales|Northern Ireland|Cornwall|Conclusions|Webster's police background|Seconded officer
+In Conclusions, what troubling behaviour is uncovered about murdered policeman Dave Shelby?|He sexually harassed female colleagues|He sold police radios|He falsified traffic records|He stole files for a newspaper|Conclusions|Dave Shelby misconduct|Workplace harassment`;
+const audit381s2 = `In A Minority of One, why is Carl Tanner promoted under Superintendent Mullett?|To increase police-force diversity|To lead a new forensic unit|To open a regional station|To reward an award-winning case|A Minority of One|Carl Tanner promotion|Diversity policy
+In A Minority of One, which violent criminal is connected to the commercial burglaries?|Paul Aspinall|Bernard Elliott|Nick Daish|Ronald Gould|A Minority of One|Commercial burglary suspect|Criminal investigation
+In Widows and Orphans, which burglar is tied to the non-violent break-ins targeting pensioners?|Bernard Elliott|Nick Daish|Paul Aspinall|Ray Butler|Widows and Orphans|Older victims|Non-violent burglar
+In Widows and Orphans, what personal anniversary is linked to Ronald Gould's attacks?|His mother's birthday|His wedding anniversary|His grandmother's funeral|His first day at work|Widows and Orphans|Gould's attack pattern|Mother's birthday
+In Widows and Orphans, how had Shirley Fisher previously helped Frost's household professionally?|She nursed his late wife|She worked with his mother|She tutored his daughter|She ran his family care home|Widows and Orphans|Shirley Fisher background|Wife's nurse
+In Nothing to Hide, what wrongdoing by a local doctor had Ben Cornish threatened to expose?|Abuse of Ben in childhood|Illegal tourist prescriptions|False medical certificates|Bribery over hospital contracts|Nothing to Hide|Ben Cornish blackmail|Doctor's past abuse
+In Nothing to Hide, what prior police record draws attention to Ray Butler as a suspect?|An arrest for drunken disorder|A traffic-fine appeal|A warrant for car theft|An unpaid parking ticket|Nothing to Hide|Ray Butler suspicion|Earlier arrest
+In Nothing to Hide, what is the first name of Frost's former lover whom he visits to apologise?|Eileen|Shirley|Maureen|Alex|Nothing to Hide|Frost's previous affair|Former romantic partner
+In Stranger in the House, what revelation explains Alison Cook's disappearance?|She saw her mother having an affair|She secretly enrolled in the army|She left to search for a pet|She travelled to a school reunion|Stranger in the House|Alison Cook disappearance|Mother's affair
+In Stranger in the House, near what sort of land are many victims' homes located?|Woodland or open ground|Busy shopping centres|Railway platforms|Industrial loading bays|Stranger in the House|Victim-address pattern|Open-land proximity
+In Stranger in the House, which workplace employs both Gordon Perryman and Nick Daish?|Staunton Towers|Denton Hospital|The Sherwood Club|Eastdean Library|Stranger in the House|Security guard employment|Staunton Towers
+In Stranger in the House, who overpowers the attacker when he arrives at Hazel Wallace's home?|Hazel Wallace herself|Superintendent Mullett|Clive Barnard|Shirley Fisher|Stranger in the House|Final confrontation|WPC protects herself`;
+const audit381s3 = `In Appropriate Adults, what was Billy Conrad reluctant to reveal about his movements?|He visited his girlfriend at a care home|He stole a police car|He worked nights at a casino|He went on holiday|Appropriate Adults|Billy Conrad's concealed alibi|Visiting Jane
+In Appropriate Adults, what group provides a clue about Richard Martin being near the woods?|Joyriders|Ramblers|Birdwatchers|Forestry surveyors|Appropriate Adults|Richard Martin sighting|Witnesses in the woods
+In Appropriate Adults, what social activity helps the bogus policeman Parker enter the police station?|Playing pool with DCI Hawkes|Running a charity match|Joining a police choir|Attending dance classes|Appropriate Adults|Parker impersonation|Hawkes's pool team
+In Quarry, how is anti-hunt organiser Tom Cody murdered?|Shot with a shotgun|Strangled with rope|Poisoned at a pub|Run over by a lorry|Quarry|Tom Cody death|Shotgun attack
+In Quarry, why does Ruth Ormrod organise thefts of art and antiques?|For excitement and challenge|To pay medical bills|To finance an election|To repay gambling debts|Quarry|Ruth Ormrod motive|Thrill of crime
+In Quarry, how is art dealer Stephen Milmore killed before a meeting with Barnard?|Run over by a van|Stabbed at an auction|Pushed from a balcony|Shot during a hunt|Quarry|Stephen Milmore murder|Vehicle attack
+In Dead Male One, what performance-enhancing drug is found in Adie Carr's system?|Mesanbuterol|Caffeine|Morphine|Amphetamine sulphate|Dead Male One|Adie Carr toxicology|Designer performance drug
+In Dead Male One, what condition follows footballer Adie Carr's poisoning?|A coma and brain damage|Temporary blindness|A broken leg|Food poisoning|Dead Male One|Adie Carr hospital state|Severe brain damage
+In Dead Male One, which two fellow footballers helped Carr cheat an older homeowner?|Paul Gower and Jamie Todd|Nick Daish and Gordon Perryman|Ronnie Eustace and Dave Shelby|Carl Tanner and Clive Barnard|Dead Male One|Players in repair scam|Elderly victim defrauded
+In Dead Male One, who tries to avenge her grandfather after his fatal fall on unsafe stairs?|Kirsty Adams|Natalie Bell|Jane Conrad|Shirley Fisher|Dead Male One|Kirsty Adams revenge|Botched building repairs
+In Dead Male One, what is the value of the transfer offer Adie Carr had rejected?|£250,000|£25,000|£2.5 million|£75,000|Dead Male One|Football transfer offer|Club owner's financial crisis
+In Dead Male One, whose name appears on the stolen licence found with the unidentified river body?|Colin Drysdale|Adie Carr|Paul Gower|Ray Butler|Dead Male One|River corpse false ID|Stolen driving licence
+In Dead Male One, what serious medical issue had the unidentified river victim suffered?|A burst appendix|A heart attack|A fractured skull|A stroke|Dead Male One|River victim medical record|Hospital admission
+In No Refuge, how many armed robbers carry out the glassworks raid?|Three|Two|Four|Five|No Refuge|Glassworks robbery|Armed gang
+In No Refuge, which former glassworks employee becomes a suspect in the armed raid?|Michael Heathfield|Ronnie Eustace|Gerald Powell|Paul Aspinall|No Refuge|Former glassworks worker|Robbery suspect
+In No Refuge, what is the name of another robber identified during the investigation?|Des Conrad|Ray Butler|Nick Daish|Tom Cody|No Refuge|Glassworks raid accomplice|Gang member
+In No Refuge, where does Bill Boxley hide after receiving threats?|A disused part of the glassworks|A church crypt|An abandoned school|An old railway station|No Refuge|Bill Boxley hiding place|Unused factory area
+In No Refuge, what weapon had the fleeing robbers lost which Kevin Boxley recovered?|Their shotgun|A hunting knife|A police revolver|A baseball bat|No Refuge|Missing robbery weapon|Kevin Boxley's threats
+In No Refuge, where had an intruder secretly been living in two women's house?|In the loft|In the cellar|In the garage|In the garden shed|No Refuge|Break-ins at a shared home|Hidden intruder
+In No Refuge, which woman stabs her partner Liz after their relationship breaks down?|Marion|Maureen|Shirley|Natalie|No Refuge|Stabbing of Liz|Relationship conflict`;
+const strict381=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB').replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit381(block,coverage){
+ for(const [index,row] of block.trim().split('\n').entries()){
+  const p=row.split('|').map(x=>x.trim());
+  if(p.length!==8||p.some(x=>!x))throw Error('Bad audit row '+coverage+' '+index);
+  const [stem,correctAnswer,a,b,c,episode,focus,clue]=p;
+  const match=/^In (.+?), (.+)$/.exec(stem);
+  const question=match?'In '+programme+', during "'+match[1]+'", '+match[2] :
+    'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1);
+  const answers=[a,b,c];answers.splice(questions.length%4,0,correctAnswer);
+  const tags=['Television','British Television','ITV','Crime Drama','Police Procedural',
+   programme,'Programme: '+programme,era,'Coverage: '+coverage,'Episode: '+episode,
+   'Story focus: '+focus,'Clue or event: '+clue,'Correct answer: '+correctAnswer,
+   'Case: '+episode,'Fact focus: '+focus,'Evidence: '+clue];
+  questions.push({id:'tv_'+(40503+questions.length-110),category:'Television',
+   programme,question,answers,correctAnswer,difficulty:'Medium',tags,dailyEligible:true});
+ }
+}
+addAudit381(audit381s1,'Series 1 (1992)');
+addAudit381(audit381s2,'Series 2 (1994)');
+addAudit381(audit381s3,'Series 3 (1995)');
+const ids381=new Set(),texts381=new Set();
+for(const q of questions){
+ const key=strict381(q.question);
+ if(q.category!=='Television'||q.programme!==programme||
+  !q.tags.includes('Programme: '+programme)||q.answers.length!==4||
+  new Set(q.answers.map(strict381)).size!==4||
+  q.answers.filter(v=>v===q.correctAnswer).length!==1||
+  q.tags.length<12||q.dailyEligible!==true||
+  ids381.has(q.id)||texts381.has(key))throw Error('Pack 381 validation failed at '+q.id);
+ ids381.add(q.id);texts381.add(key);
+}
+module.exports=questions;
