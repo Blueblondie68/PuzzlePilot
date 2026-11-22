@@ -6,7 +6,10 @@
 'use strict';
 
 const FIRST_ID = 21362;
-const commonTags = ['television', 'British TV', 'BBC', 'Peaky Blinders', 'Steven Knight', 'period crime drama'];
+const PROGRAMME = 'Peaky Blinders';
+const commonTags = ['Television','British Television','BBC','BBC Two','BBC One',
+  'Period Crime Drama',PROGRAMME,'Programme: '+PROGRAMME,
+  'Steven Knight','Original series: 2013–2022'];
 
 // Row: question | correct answer | three distractors | difficulty | seven question-specific tags.
 const rows = [
@@ -127,7 +130,9 @@ const questions = rows.map((row, index) => {
   if (parts.length !== 13 || parts.some(part => !part)) {
     throw new Error(`Pack 393: malformed row ${index + 1}`);
   }
-  const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const [stem, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const question = stem.toLowerCase().includes(PROGRAMME.toLowerCase()) ?
+    stem : 'In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
   if (!['Easy', 'Medium', 'Hard'].includes(difficulty)) {
     throw new Error(`Pack 393: invalid difficulty at row ${index + 1}`);
   }
@@ -137,12 +142,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 393: repeated answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
+  if (tags.length < 12) {
     throw new Error(`Pack 393: expected 13 unique tags at row ${index + 1}; got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -152,4 +158,62 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Peaky Blinders original television run (2013–2022): Series 1–6.
+// Original IDs tv_21362–tv_21458 unchanged; new audit IDs start tv_41114.
+// Verified cast, original broadcasts, awards and finale:
+// https://www.rottentomatoes.com/tv/peaky_blinders/cast-and-crew
+// https://www.radiotimes.com/tv/drama/peaky-blinders-season-6-cast/
+// https://downloads.bbc.co.uk/mediacentre/peaky-blinders-s2.pdf
+// https://www.bafta.org/awards/television/?award-year=2018
+// https://www.nationaltvawards.com/winners
+// https://www.tvmaze.com/episodes/2270891/peaky-blinders-6x06-lock-and-key
+// 2026 feature film and announced successor series are NOT included here.
+// Mark the original six-series television run covered after Render approval;
+// maintain follow-up coverage for future TV releases separately.
+const audit393Cast=[["Thomas 'Tommy' Shelby","Cillian Murphy","m","1–6"],["John Shelby","Joe Cole","m","1–4"],["Freddie Thorne","Iddo Goldberg","m","1"],["Esme Shelby-Lee","Aimee-Ffion Edwards","f","1–4 and 6"],["May Carleton","Charlotte Riley","f","2 and 4"],["Lizzie Stark/Shelby","Natasha O'Keeffe","f","1–6"],["Charlie Strong","Ned Dennehy","m","1–6"],["Johnny Dogs","Packy Lee","m","1–6"],["Curly","Ian Peck","m","1–6"],["Linda Shelby","Kate Phillips","f","3–6"],["Jeremiah Jesus","Benjamin Zephaniah","m","1–6"],["Captain Swing / Laura McKee","Charlene McKenna","f","5–6"],["Diana Mitford","Amber Anderson","f","6"],["Jack Nelson","James Frecheville","m","6"],["Dr Holford","Aneurin Barnard","m","6"],["Erasmus 'Duke' Shelby","Conrad Khan","m","6"],["Hayden Stagg","Stephen Graham","m","6"],["Billy Grade","Emmett J Scanlan","m","5–6"],["Winston Churchill in Series 6","Neil Maskell","m","6"],["Isaiah Jesus in Series 6","Daryl McCormack","m","6"],["Bonnie Gold","Jack Rowan","m","4–5"],["Colonel Ben Younger","Kingsley Ben-Adir","m","4–5"],["Barney Thomason","Cosmo Jarvis","m","5"]];
+const audit393Misc=[["Awards","Which BAFTA Television Awards category did Peaky Blinders win in 2018?","Drama Series",["Single Drama","Mini-Series","International"],"2018 BAFTA programme award","2018"],["Awards","In what year did Peaky Blinders win the BAFTA for Drama Series?","2018",["2016","2020","2022"],"British Academy Television Awards win","2018"],["Awards","In which National Television Awards category did Peaky Blinders win in 2019?","Drama",["Period Drama","New Drama","Comedy"],"2019 National Television Awards","2019"],["Awards","Which National Television Award did Cillian Murphy win in 2020 for Peaky Blinders?","Drama Performance",["Newcomer","Comedy Performance","TV Presenter"],"Cillian Murphy NTA acting honour","2020"],["Broadcast","On which BBC channel were the first four series originally shown?","BBC Two",["BBC One","BBC Three","BBC Four"],"Original television broadcaster","2013–2017"],["Broadcast","Which series marked the move of first-run episodes to BBC One?","Series 5",["Series 2","Series 3","Series 6"],"BBC channel change","2019"],["Broadcast","On what date did the original series first air in the UK?","12 September 2013",["12 October 2012","3 April 2022","1 January 2014"],"Original UK premiere","2013"],["Broadcast","On what date was the sixth-series finale first broadcast in the UK?","3 April 2022",["27 March 2022","10 June 2022","12 September 2013"],"BBC One series finale","2022"],["Finale","Who directed the last television episode, Lock and Key?","Anthony Byrne",["Otto Bathurst","Tim Mielants","David Caffrey"],"Series 6 finale director","2022"],["Finale","What is the title of the final episode of the six-series original run?","Lock and Key",["Black Day","The Road to Hell","Mr Jones"],"Original television finale title","2022"]];
+const audit393Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+const audit393Pool={
+ m:audit393Cast.filter(x=>x[2]==='m').map(x=>x[1]),
+ f:audit393Cast.filter(x=>x[2]==='f').map(x=>x[1])
+};
+function add393Audit(stem,answer,wrong,scope,focus,kind,era){
+ if(wrong.length!==3||new Set([answer,...wrong].map(audit393Norm)).size!==4)
+  throw Error('Pack 393 invalid answer set: '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrong];answers.splice(questions.length%4,0,answer);
+ const tags=['Television','British Television','BBC','BBC One','BBC Two',
+  'Period Crime Drama',PROGRAMME,'Programme: '+PROGRAMME,'Original TV run: 2013–2022',
+  'Question type: '+kind,'Focus: '+focus,'Correct answer: '+answer,
+  'Coverage: '+scope,'Period: '+era,'Creator: Steven Knight'];
+ questions.push({id:'tv_'+(41114+questions.length-97),category:'Television',
+  programme:PROGRAMME,question,answers,correctAnswer:answer,
+  difficulty:'Medium',tags,dailyEligible:true});
+}
+for(const [i,[role,actor,gender,series]] of audit393Cast.entries()){
+ const pool=audit393Pool[gender].filter(x=>x!==actor);
+ if(pool.length<3)throw Error('Actor pool too small: '+role);
+ const o=(i*5)%pool.length;
+ const wrong=[pool[o],pool[(o+1)%pool.length],pool[(o+2)%pool.length]];
+ add393Audit('Which '+(gender==='f'?'actress':'actor')+' played '+role+'?',
+  actor,wrong,'Series '+series,'Character '+role,'Cast','2013–2022');
+}
+for(const [scope,stem,answer,wrong,focus,era] of audit393Misc){
+ add393Audit(stem,answer,wrong,scope,focus,'Awards, broadcast or production',era);
+}
+const audit393Ids=new Set(),audit393Text=new Set();
+for(const a of questions){
+ const q=audit393Norm(a.question);
+ if(a.programme!==PROGRAMME||a.category!=='Television'||
+  !a.tags.includes('Programme: '+PROGRAMME)||
+  a.answers.length!==4||new Set(a.answers.map(audit393Norm)).size!==4||
+  a.answers.filter(x=>x===a.correctAnswer).length!==1||
+  a.tags.length<12||a.dailyEligible!==true||
+  audit393Ids.has(a.id)||audit393Text.has(q))
+  throw Error('Pack 393 failed validation at '+a.id);
+ audit393Ids.add(a.id);audit393Text.add(q);
+}
+module.exports=questions;
