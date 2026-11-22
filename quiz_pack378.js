@@ -12,12 +12,12 @@ const FIRST_ID = 19620;
 // question | correct answer | wrong answer 1 | wrong answer 2 | wrong answer 3
 // | difficulty | seven question-specific search tags
 const donkeyFacts = `Which fictional television news organisation is the setting of Drop the Dead Donkey?|GlobeLink News|WorldWide News|Channel West News|British News Network|Easy|GlobeLink|Fictional Newsroom|Television News|News Channel|Office Setting|Journalistic Satire|1990s Media
-Which media tycoon takes over the newsroom at the start of Drop the Dead Donkey?|Sir Royston Merchant|Gus Hedges|Henry Davenport|George Dent|Easy|Sir Royston Merchant|Media Owner|Company Takeover|Press Baron|Corporate Control|Newsroom Politics|Series Premise
-What new direction does the news organisation's owner demand?|More sensationalist reporting|Exclusively sports bulletins|Only regional weather coverage|A move into children's television|Easy|Sensationalism|Editorial Policy|Sir Royston Merchant|Ratings Pressure|News Ethics|Media Ownership|Tabloid Journalism
+Which media tycoon takes over the newsroom at the start of Drop the Dead Donkey?|Sir Roysten Merchant|Gus Hedges|Henry Davenport|George Dent|Easy|Sir Roysten Merchant|Media Owner|Company Takeover|Press Baron|Corporate Control|Newsroom Politics|Series Premise
+What new direction does the news organisation's owner demand?|More sensationalist reporting|Exclusively sports bulletins|Only regional weather coverage|A move into children's television|Easy|Sensationalism|Editorial Policy|Sir Roysten Merchant|Ratings Pressure|News Ethics|Media Ownership|Tabloid Journalism
 Which actor played news editor George Dent?|Jeff Rawle|Robert Duncan|Neil Pearson|David Swift|Easy|Jeff Rawle|George Dent|Editor|Lead Casting|GlobeLink Staff|Newsroom Management|British Actor
 What job does George Dent hold in the newsroom?|News editor|Camera operator|Sports presenter|Advertising executive|Easy|George Dent|News Editor|Jeff Rawle|Editorial Decisions|Management|GlobeLink|Staff Hierarchy
 Who portrayed chief executive Gus Hedges?|Robert Duncan|Jeff Rawle|Stephen Tompkinson|David Swift|Easy|Robert Duncan|Gus Hedges|Chief Executive|Management Jargon|Actor Casting|Corporate Representative|Newsroom Boss
-Which character constantly uses fashionable corporate buzzwords and management jargon?|Gus Hedges|Dave Charnley|Henry Davenport|Damien Day|Easy|Gus Hedges|Boardroom Buzzwords|Management Speak|Corporate Satire|Robert Duncan|Sir Royston Merchant|Catchphrases
+Which character constantly uses fashionable corporate buzzwords and management jargon?|Gus Hedges|Dave Charnley|Henry Davenport|Damien Day|Easy|Gus Hedges|Boardroom Buzzwords|Management Speak|Corporate Satire|Robert Duncan|Sir Roysten Merchant|Catchphrases
 Who played veteran newsreader Henry Davenport?|David Swift|Neil Pearson|Robert Duncan|Jeff Rawle|Easy|David Swift|Henry Davenport|Veteran Presenter|Actor Casting|Television Newsreader|News Desk|Long Career
 Which newsreader is regularly at odds with Sally Smedley?|Henry Davenport|George Dent|Dave Charnley|Gus Hedges|Easy|Henry Davenport|Sally Smedley|Newsroom Rivalry|Co Presenters|David Swift|Victoria Wicks|Broadcast Desk
 Which actress portrayed Sally Smedley?|Victoria Wicks|Haydn Gwynne|Susannah Doyle|Ingrid Lacey|Easy|Victoria Wicks|Sally Smedley|Newsreader|Actor Casting|GlobeLink News|Television Presenter|Main Ensemble
@@ -137,11 +137,12 @@ function addFacts(block, programme, era, genre) {
       ? stem : `In ${programme}, ${stem[0].toLowerCase()}${stem.slice(1)}`;
     const answers = [wrong1, wrong2, wrong3];
     answers.splice(questions.length % 4, 0, correctAnswer);
-    const tags = [...new Map(['Television', genre, programme, era, correctAnswer, ...specificTags]
+    const tags = [...new Map(['Television', 'British Television', genre, 'Comedy', programme, 'Programme: '+programme, era, correctAnswer, ...specificTags]
       .map(tag => [tag.toLowerCase(), tag])).values()];
     const entry = {
       id: `tv_${FIRST_ID + questions.length}`,
       category: 'Television',
+      programme,
       question, answers, correctAnswer, difficulty, tags, dailyEligible: true
     };
     if (new Set(answers.map(a => a.toLowerCase())).size !== 4 ||
@@ -165,4 +166,123 @@ for (const q of questions) {
     throw new Error(`Answer giveaway in ${q.id}: ${q.correctAnswer}`);
   }
 }
-module.exports = questions;
+
+
+// Audited additional story and sketch material.
+// Research: https://www.tvmaze.com/shows/6492/drop-the-dead-donkey/episodeguide
+// https://thetvdb.com/series/the-fast-show/allseasons/official
+// https://www.tvmaze.com/shows/2779/the-fast-show/episodeguide
+// Original tv_19620-tv_19730 preserved. New questions begin at tv_40299.
+const donkeyAuditRows = `In A Clash of Interests, who must decide whether to broadcast damaging news about the station's owner?|George Dent|Damien Day|Joy Merryweather|Sally Smedley|Series 1|A Clash of Interests|Story about Sir Roysten Merchant
+In Old Father Time, which worker's interview with a minister goes badly?|Henry Davenport|Dave Charnley|Gus Hedges|Helen Cooper|Series 1|Old Father Time|Government-minister interview
+In The New Approach, what professional principle does George start to question?|Journalistic impartiality|The use of sign-language presenters|The right to strike|Public ownership of television|Series 1|The New Approach|Newsroom ethics
+In The Trevorman Cometh, what threatens the survival of the company?|Serious financial difficulties|A fire in the studio|A prolonged national broadcast strike|A loss of broadcast licence|Series 2|The Trevorman Cometh|GlobeLink finances
+In Baseball, whom does Gus force into an embarrassing position?|His brother|His former schoolteacher|His nephew|His neighbour|Series 2|Baseball|Gus Hedges's family
+In Alex and the Interpreter, which country's official visits the news organisation?|Russia|Japan|France|Canada|Series 2|Alex and the Interpreter|Official diplomatic visitor
+In Hoax, why does Damien become furious with another reporter?|The rival invents a story more convincingly|The rival is given a new company car|The rival refuses to take his cameraman|The rival wins a chess competition|Series 2|Hoax|Fabricated reporting
+In George's Daughter, whose problems worsen after a documentary crew arrives?|George Dent's|Gus Hedges's|Helen Cooper's|Henry Davenport's|Series 2|George's Daughter|Newsroom documentary
+In The Christmas Party, which employee cannot recall what happened during the festivities?|George Dent|Alex Pates|Gus Hedges|Joy Merryweather|Series 2|The Christmas Party|Office festivities
+In In Place of Alex, who joins Gus in interviewing candidates for the newsroom vacancy?|George Dent|Henry Davenport|Damien Day|Sally Smedley|Series 3|In Place of Alex|Replacement interviews
+In Henry's Lost Love, what news from a former wife leaves Henry distressed?|She is getting married again|She is joining the newsroom|She has won a television award|She has become a sports reporter|Series 3|Henry's Lost Love|Henry Davenport's ex-wife
+In Sally's Libel, what legal action does Sally take?|She sues a newspaper|She sues GlobeLink for redundancy|She petitions the courts for custody|She disputes her parking fine|Series 3|Sally's Libel|Defamation claim
+In Lady Merchant, which serious workplace issue drives a newsroom storyline?|Sexual harassment|Industrial sabotage|Bribing a court witness|Selling confidential military files|Series 3|Lady Merchant|Office misconduct
+In The New Newsreader, what is the first name of the young presenter introduced by Gus?|Jill|Pamela|Barbara|Veronica|Series 3|The New Newsreader|New on-air talent
+In Joy, which colleague becomes an unexpected confidante for George after Helen rejects him?|Joy Merryweather|Alex Pates|Sally Smedley|Damien Day|Series 3|Joy|George Dent's disappointment
+In Awards, at what ceremony do the GlobeLink employees attend a party?|The British News Awards|The British Film Awards|The Sports Personality Awards|The National Music Awards|Series 3|Awards|News industry ceremony
+In The Undiscovered Country, which expensive possession causes problems for Damien?|His Porsche|His yacht|His horse|His motorbike|Series 4|The Undiscovered Country|Damien's car
+In Quality Time, which medical scare has Gus recently suffered?|A heart tremor|A broken hip|A collapsed lung|A concussion|Series 4|Quality Time|Gus Hedges recovering
+In Births and Deaths, which reporter receives threats against his life?|Damien Day|Dave Charnley|Henry Davenport|George Dent|Series 4|Births and Deaths|Threatening messages
+In Helen's Parents, whose visit creates pressure for Helen to be honest about her private life?|Her parents|Her former schoolteachers|Her neighbours|Her cousins from Canada|Series 4|Helen's Parents|Helen Cooper's family
+In Sally in T.V. Times, which colleague offers to pose nude for a photographer?|Joy Merryweather|Alex Pates|Helen Cooper|Sally Smedley|Series 4|Sally in T.V. Times|Photographer's request
+In No More Mr. Nice Guy, how does George change after repeated romantic disappointments?|He becomes tyrannical|He resigns to become a chef|He joins a religious order|He starts a newspaper|Series 4|No More Mr. Nice Guy|George Dent's conduct
+In The Wedding, which manager insists on attending the planned stag night?|Gus Hedges|Sir Roysten Merchant|Henry Davenport|Damien Day|Series 4|The Wedding|Unwanted guest
+In Inside the Asylum, which presenter returns following an enforced absence?|Sally Smedley|Helen Cooper|Joy Merryweather|Alex Pates|Series 5|Inside the Asylum|Return to work
+In The Bird of Doom, what modern development reaches the newsroom?|New technology|A new brass band|A new catering contract|A new postal delivery scheme|Series 5|The Bird of Doom|Technological change
+In The Path of True Love, which manager faces the prospect of romance?|Gus Hedges|George Dent|Dave Charnley|Henry Davenport|Series 5|The Path of True Love|A new relationship
+In George's Car, which member of the newsroom goes shopping for a new vehicle?|George Dent|Damien Day|Gus Hedges|Dave Charnley|Series 5|George's Car|Vehicle purchase
+In Charnley in Love, which personal event is worrying Dave?|His wedding|His child's first day at school|His mother's retirement|His brother's graduation|Series 5|Charnley in Love|Dave Charnley personal life
+In Henry's Diary, in whose honour does Gus arrange a celebrity dinner?|Sir Roysten Merchant|George Dent|Henry Davenport|Damien Day|Series 5|Henry's Diary|Corporate celebrity dinner
+In Dave and Diana, which professional is brought in to assess the newsroom team?|A psychologist|An architect|A forensic accountant|A television critic|Series 5|Dave and Diana|Staff mental health assessment
+In The Graveyard Shift, which journalist works overnight and finds she has company?|Helen Cooper|Sally Smedley|Alex Pates|Joy Merryweather|Series 5|The Graveyard Shift|Late shift
+In Sex 'n Death, which member of the staff is struggling with illness?|George Dent|Damien Day|Henry Davenport|Dave Charnley|Series 5|Sex n Death|George's health
+In Beasts Badgers and Bombshells, what announcement sets off rumours in the newsroom?|Job cuts|A new overseas bureau|A national television award|The owner's retirement party|Series 6|Beasts Badgers and Bombshells|Impending redundancies
+In The Diaries, who refuses to accept that GlobeLink is about to close?|Gus Hedges|Joy Merryweather|Dave Charnley|Helen Cooper|Series 6|The Diaries|Denial over closure
+In But Is It Art?, who looks for a new way to earn money?|Sally Smedley|Alex Pates|Damien Day|Henry Davenport|Series 6|But Is It Art|Alternative income
+In George Finds Love, whose wealthy fiancé interests both a presenter and Gus?|Sally Smedley's|Helen Cooper's|Joy Merryweather's|Alex Pates's|Series 6|George Finds Love|Money and romance`;
+const fastAuditRows = `In Series 1 Episode 1, what object does Unlucky Alf have an accident with?|A cricket ball|A bowling ball|A tennis racket|A golf club|Series 1|Episode 1|Unlucky Alf sporting accident
+In Series 1 Episode 1, what problem is explored by the sketch called The Unpronounceables?|Difficult-to-say names|A lost train ticket|A malfunctioning radio|An embarrassing wedding speech|Series 1|Episode 1|Hard names sketch
+In Series 1 Episode 2, what pet does Unlucky Alf buy?|A parrot|A rabbit|A dog|A tortoise|Series 1|Episode 2|Unlucky Alf purchases a bird
+In Series 1 Episode 2, which singer does Ralph ask Ted about?|Tina Turner|Celine Dion|Cher|Diana Ross|Series 1|Episode 2|Ralph's awkward conversation
+In Series 1 Episode 3, what machine does Professor Denzil Dexter attempt to make?|A time machine|A jukebox|A weather satellite|An electric train|Series 1|Episode 3|Laboratory time travel
+In Series 1 Episode 3, which character is shown unsuccessfully trying to catch a bus?|Unlucky Alf|Competitive Dad|Ron Manager|Colin Hunt|Series 1|Episode 3|Bus-stop mishap
+In Series 1 Episode 4, which stretch of water does Elsa Richardson investigate for pollution?|The North Sea|The English Channel|The Bristol Channel|The Irish Sea|Series 1|Episode 4|Environmental reporting
+In Series 1 Episode 4, which snack is promoted in a fake advertisement?|Cheesy Peas|Spicy Chickpeas|Crunchy Parsnips|Chocolate Beans|Series 1|Episode 4|Spoof food advertising
+In Series 1 Episode 4, what kind of vehicle does Indecisive Dave discuss buying?|A BMW|A caravan|A tractor|A motorboat|Series 1|Episode 4|Indecisive consumer
+In Series 1 Episode 5, what happens to Unlucky Alf at a friend's funeral?|He is buried by mistake|He loses the funeral car|He becomes the organist|He accidentally sets off fireworks|Series 1|Episode 5|An unfortunate funeral
+In Series 1 Episode 5, what unusual creatures interfere with Professor Denzil Dexter's work?|Space bats|Giant ants|Flying fish|Radioactive frogs|Series 1|Episode 5|Professor Denzil Dexter experiment
+In Series 1 Episode 6, what dangerous activity do the Off-Roaders attempt?|Shark fishing|Mountain climbing|Skydiving|Cliff diving|Series 1|Episode 6|Extreme hobbyists at sea
+In Series 1 Episode 6, which partner does Arthur Atkinson introduce to the audience?|Chester Drawers|Billy Bleach|Tommy Cockles|Ron Manager|Series 1|Episode 6|Music hall double act
+In Series 2 Episode 2, what sport does Competitive Dad play?|Cricket|Tennis|Rugby|Badminton|Series 2|Episode 2|Competitive family outing
+In Series 2 Episode 2, where does Bob Fleming visit?|A gypsy fair|A boxing arena|A record shop|A football ground|Series 2|Episode 2|Country Matters outing
+In Series 2 Episode 3, what wartime radio show stars Arthur Atkinson?|How Queer!|The Night Shift|Victory Parade|A World of Fun|Series 2|Episode 3|Fictional wartime programme
+In Series 2 Episode 4, which animal does Bob Fleming go to watch?|Badgers|Otters|Foxes|Deer|Series 2|Episode 4|Country Matters wildlife outing
+In Series 2 Episode 5, what romantic step does Unlucky Alf attempt?|A marriage proposal|A first date|A honeymoon booking|A speed-dating evening|Series 2|Episode 5|Alf finds a girlfriend
+In Series 2 Episode 6, which fictional hard-boiled police officer appears?|Monkfish|Benton|McLeary|Harper|Series 2|Episode 6|Police drama parody
+In Series 2 Episode 6, which Jazz Club performer leads a band called The Jazz Mess?|Piles Soylent|Louis Balfour|Roger Nouveau|Arthur Atkinson|Series 2|Episode 6|Jazz Club guest
+In Series 2 Episode 7, what item does Professor Denzil Dexter steal from another laboratory?|A skull|A microscope|A skeleton key|A chemical flask|Series 2|Episode 7|Laboratory theft
+In Series 2 Episode 7, what board game does Competitive Dad play?|Monopoly|Scrabble|Cluedo|Risk|Series 2|Episode 7|Family competition
+In Series 3 Episode 1, which fashion label does Jesse announce he will mostly wear?|Dolce & Gabbana|Calvin Klein|Hugo Boss|Tommy Hilfiger|Series 3|Episode 1|Jesse's clothing declaration
+In Series 3 Episode 2, what television job does Monkfish undertake in disguise?|Undercover policing|Weather presenting|Sports commentary|Children's television hosting|Series 3|Episode 2|Monkfish working undercover
+In Series 3 Episode 3, which creatures does the squeamish zookeeper have to feed?|Penguins|Seals|Flamingos|Meerkats|Series 3|Episode 3|Zookeeper sketch
+In Series 3 Episode 3, which underground activity do the Off-Roaders attempt?|Potholing|Gold mining|Caving for fossils|Tunnel building|Series 3|Episode 3|Extreme underground outing
+In Series 3 Episode 4, in which fictional film does Arthur Atkinson star?|Confessions of a Door-to-Door Cucumber Salesman|The Great Cucumber Caper|Cucumber Country|Cucumber and the King|Series 3|Episode 4|Parody seventies sex comedy
+In Series 3 Episode 7, what fictional music series is presented by Sullivan Rhodes?|Indie Club|Disco Dancefloor|Soul Sessions|Country Corner|Series 3|Episode 7|Alternative music club parody
+In Series 3 Episode 8, which character attends Mrs Ted's funeral?|Ralph|Swiss Toni|Gastric|Ron Manager|Series 3|Episode 8|Ted and Ralph bereavement
+In The Last Fast Show Ever Part 2, what hobby does Swiss Toni turn into one of his suggestive metaphors?|Fishing|Golf|Cooking|Painting|2000 specials|Part 2|Swiss Toni fishing analogy
+In The Last Fast Show Ever Part 3, whose father appears and reveals where Competitive Dad learnt his behaviour?|Competitive Dad's own father|Unlucky Alf's|Colin Hunt's|Ron Manager's|2000 specials|Part 3|Competitive Dad family legacy
+In the 1998 Ted & Ralph special, what does Ralph risk losing unless he marries before his next birthday?|His country estate|His television contract|His favourite horse|His motorcar|1998 special|Ted & Ralph|Landowner's marriage condition
+In the 2001 Comic Relief sketch, which famous singer joins Ted and Ralph?|Robbie Williams|Gary Barlow|Elton John|George Michael|2001 Comic Relief|Ted and Ralph|Celebrity charity guest`;
+const strict378=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit378(block,programme,era,genre){
+ for(const [index,row] of block.trim().split('\n').entries()){
+  const parts=row.split('|').map(x=>x.trim());
+  if(parts.length!==8||parts.some(x=>!x))throw Error('Invalid Pack 378 added row '+programme+' '+index);
+  const [stem,correctAnswer,a,b,c,series,episode,storyline]=parts;
+  const episodeIntro=/^In (.+?), (.+)$/.exec(stem);
+  let question;
+  if(episodeIntro){
+   const season=/^Series (\d+) Episode (\d+)$/.exec(episodeIntro[1]);
+   if(season){question='In '+programme+' (Series '+season[1]+', Episode '+season[2]+'), '+episodeIntro[2];}
+   else{question='In '+programme+', in "'+episodeIntro[1]+'", '+episodeIntro[2];}
+  }else if(stem.startsWith('In the 1998 Ted & Ralph special, ')){
+   question='In '+programme+' (1998 Ted & Ralph special), '+stem.slice(34);
+  }else if(stem.startsWith('In the 2001 Comic Relief sketch, ')){
+   question='In '+programme+' (2001 Comic Relief sketch), '+stem.slice(33);
+  }else{question=stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB'))
+   ?stem:'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1);}
+  const answers=[a,b,c];
+  answers.splice(questions.length%4,0,correctAnswer);
+  const tags=['Television','British Television',genre,'Comedy',programme,'Programme: '+programme,era,
+   'Series/special: '+series,'Episode/sketch: '+episode,
+   'Storyline: '+storyline,'Answer: '+correctAnswer,
+   'Incident: '+storyline,'Episode focus: '+episode,'Programme era: '+era];
+  questions.push({id:'tv_'+(40299+questions.length-111),
+   category:'Television',programme,question,answers,correctAnswer,difficulty:'Medium',
+   tags,dailyEligible:true});
+ }
+}
+addAudit378(donkeyAuditRows,'Drop the Dead Donkey','1990-1998','Satirical Sitcom');
+addAudit378(fastAuditRows,'The Fast Show','1994-2001','Sketch Comedy');
+const audit378Ids=new Set(),audit378Text=new Set();
+for(const q of questions){
+ const key=strict378(q.question),a=strict378(q.correctAnswer);
+ if(!q.programme||q.category!=='Television'||!q.tags.includes('Programme: '+q.programme)||
+ q.answers.length!==4||new Set(q.answers.map(strict378)).size!==4||
+ q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length<12||
+ q.dailyEligible!==true||key.includes(a)||audit378Ids.has(q.id)||audit378Text.has(key)){
+  throw Error('Pack 378 validation failed '+q.id);
+ }
+ audit378Ids.add(q.id);audit378Text.add(key);
+}
+module.exports=questions;
