@@ -6,10 +6,11 @@
 'use strict';
 
 const FIRST_ID = 22483;
-const commonTags = [
-  'television', '24 Hours in Police Custody', 'Channel 4',
-  'British documentary', 'true crime television', 'policing'
-];
+const PROGRAMME='24 Hours in Police Custody';
+const commonTags=['Television',PROGRAMME,'Programme: '+PROGRAMME,
+ 'Channel 4','British Documentary','True Crime Television',
+ 'Bedfordshire Police','Ongoing Programme','2014–2026',
+ 'Selected Case Coverage'];
 
 // Question | correct answer | three distractors | difficulty | seven specific tags.
 // Questions identify the programme for standalone and mixed-category play.
@@ -103,12 +104,14 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 404: duplicate answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 404: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 404: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
+    coverageStatus: 'Continuing',
     question,
     answers,
     correctAnswer,
@@ -118,4 +121,55 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// AUDIT: 24 Hours in Police Custody — ONGOING; NOT COMPLETE.
+// Original tv_22483–tv_22551 preserved. New questions start tv_41454.
+// Case coverage is selective through The Ambush (6 September 2026);
+// the complete archive contains additional cases for later maintenance.
+// The Ambush investigation remained ongoing at first broadcast.
+// PRIMARY SOURCES:
+// https://www.thegarden.tv/productions/24-hours-in-police-custody
+// https://www.thegarden.tv/awards
+// https://www.beds.police.uk/police-forces/bedfordshire-police/areas/campaigns/campaigns/24-hours-in-police-custody/
+// https://www.beds.police.uk/news/bedfordshire/news/2026/01-january/24-hours-in-police-custody-episode-unravels-encrypted-drug-network/
+// https://www.beds.police.uk/police-forces/bedfordshire-police/areas/campaigns/campaigns/24-hours-in-police-custody/murder-is-no-game/
+// https://www.beds.police.uk/police-forces/bedfordshire-police/areas/campaigns/campaigns/24-hours-in-police-custody/zombie-knives/
+// https://www.beds.police.uk/police-forces/bedfordshire-police/areas/campaigns/campaigns/24-hours-in-police-custody/breakout/
+// https://www.beds.police.uk/police-forces/bedfordshire-police/areas/campaigns/campaigns/24-hours-in-police-custody/lost-boys/
+// https://www.beds.police.uk/police-forces/bedfordshire-police/areas/campaigns/campaigns/24-hours-in-police-custody/the-unusual-suspects/
+// https://tric.org.uk/winners-2026/
+// https://nationalrealitytvawards.co.uk/press-release-2026-winners
+// https://www.channel4.com/press/news/24-hours-police-custody
+const audit404Rows=[["2014 opening case","What occupation did the target of the opening episode's conspiracy-to-murder case have?","Accountant","Footballer","Schoolteacher","Paramedic","Opening Luton shooting investigation"],["2020 Murder in the Woods","What crime was central to the two-part special Murder in the Woods?","The murder of a young man","The theft of a museum painting","The abduction of a police officer","The disappearance of a pensioner","Original 2020 case"],["2020 Home County Cartel","Roughly how large was the intercepted drug consignment in The Home County Cartel?","More than 100 kilograms","About two kilograms","About ten kilograms","More than one tonne","Large-scale drug importation"],["2020 Home County Cartel","From which region was the drug consignment in The Home County Cartel imported into Britain?","Continental Europe","South America","North Africa","Australia","Covert drug import investigation"],["2021 Black Widow","Whom was the woman featured in the Black Widow investigation plotting to have killed?","Her ex-husband","Her brother","Her employer","Her next-door neighbour","Planned murder"],["2021 Black Widow","How had the woman in Black Widow met the man she approached for the killing?","Through a dating website","At a football club","On a cruise ship","During jury service","Meeting arranged online"],["2021 Black Widow","What evidence alerted Cambridgeshire police to the plan in Black Widow?","A secretly recorded conversation","An intercepted shipping container","A confession printed in a newspaper","A CCTV clip of a bank robbery","Recorded evidence"],["2023 The Siege","What did the suspects in The Siege threaten a neighbour with before their standoff?","A firearm","A crossbow","A petrol bomb","A hunting knife","Threat before the siege"],["2023 The Siege","From which floor of a Bedford block did the suspects throw paint at police vehicles?","The eighth floor","The second floor","The fourth floor","The twelfth floor","Bury Court tower block"],["2023 The Siege","Which pair of men were involved in the Bedford standoff depicted in The Siege?","Paul Burton and Nathan Turner","Stephen O'Dell and Samad Ali","Simon Ford and Rob Lambie","James Nesbitt and Ken Stott","Bedford 2022 police investigation"],["2023 The Siege","How long did the standoff in The Siege last?","Twelve hours","Two hours","Six hours","Twenty-four hours","Bedford police response"],["2024 The Devil's Chain","What clothing left behind by attackers helped investigators in The Devil's Chain?","A bloodied balaclava","A high-visibility jacket","A woollen scarf","A leather glove","Crime-scene evidence"],["2024 The Devil's Chain","Which two men were sentenced in the case shown in The Devil's Chain?","Stephen O'Dell and Samad Ali","Paul Burton and Nathan Turner","Ian Garrett and Tony Hughes","David Morrissey and Tom Hollander","Real-case prosecution"],["2024 Living the High Life","What family relationship linked the fraud victim to the main suspect in Living the High Life?","Uncle and niece","Father and son","Grandmother and grandson","Former spouses","Financial exploitation"],["2024 Living the High Life","Approximately what value of suspicious transactions was found in Living the High Life?","More than £200,000","About £2,000","About £20,000","More than £2 million","Serious Fraud Investigation"],["2024 Living the High Life","Which Bedfordshire area was linked to a separate drug enquiry in Living the High Life?","Biggleswade","Ampthill","Flitwick","Dunstable","Gangs and fraud connection"],["2025 Breakout","How many people initially breached the removal-centre fence in Breakout?","Thirteen","Six","Eight","Twenty","April 2023 breakout"],["2025 Breakout","How many of the escapees were quickly detained in Breakout?","Five","Two","Seven","Eleven","Immediate arrests"],["2025 Breakout","Which regional police specialist team helped coordinate the nationwide manhunt in Breakout?","Eastern Region Special Operations Unit","National Crime Agency Financial Intelligence Unit","British Transport Police Dogs Unit","Metropolitan Police Marine Unit","Police partnership"],["2025 The Unusual Suspects","What hobby was linked to the middle-aged woman detained after receiving a parcel in The Unusual Suspects?","Making homemade crafts","Deep-sea diving","Motor racing","Horse breeding","Unusual suspect"],["2025 The Unusual Suspects","What kind of breakthrough revived the initially stalled drugs investigation in The Unusual Suspects?","Forensic evidence","A television viewer's phone vote","A diplomatic intervention","A bank's annual audit","Forensic break in case"],["2025 Lost Boys","What unexpected new belongings raised concerns in Lost Boys?","New clothes received as gifts","A newly purchased horse","Several antique paintings","A collection of rare coins","Signs of child exploitation"],["2025 Lost Boys","What initial report prompted police to investigate in Lost Boys?","His mother reports him missing","A school starts a fire drill","A shop discovers a forged receipt","A local bus is stolen","Initial police notification"],["2025 Murder Is No Game","What additional target did detectives discover in the plans in Murder Is No Game?","A local primary school","A shopping centre","A football stadium","A railway station","Potential further attack"],["2026 The Secret Network","Which encrypted messaging service features in The Secret Network?","EncroChat","WhatsApp","Signal","Telegram","Encrypted criminal messages"],["2026 The Secret Network","Which named police operation's early stages were documented in The Secret Network?","Operation Costello","Operation Musicman","Operation Yewtree","Operation Paget","Organised crime operation"],["2026 The Secret Network","What two illegal commodities were linked to a Luton suspect's encrypted messages?","Firearms and drugs","Counterfeit paintings and watches","Stolen livestock and vehicles","Unlicensed medicines and tobacco","Encrypted messages used as evidence"],["2026 Burying Horror","How many victims were linked to the further charges against Carson Grimes discussed in Burying Horror?","Thirteen victims","Four victims","Nine victims","Thirty victims","Further survivors came forward"],["2026 Burying Horror","How many additional charges did Grimes admit before the follow-up documentary aired?","Twenty-four charges","Six charges","Twelve charges","Forty-eight charges","Later criminal proceedings"],["2026 Zombie Knives","Approximately how many zombie knives were surrendered by two Luton businesses in 2024?","More than 37,000","About 400","About 3,700","More than 370,000","Weapon-surrender initiative"],["2026 Zombie Knives","How many teenagers were sentenced in connection with the murder of Ashraf Habimana?","Seven teenagers","Two teenagers","Four teenagers","Twelve teenagers","Knife-crime case"],["2026 The Ambush","On what date did officers first attend the incident investigated in The Ambush?","2 June 2022","30 August 2026","6 September 2026","2 June 2024","Initial Luton emergency"],["2026 The Ambush","How long after the original incident did The Ambush recount detectives' continuing pursuit of justice?","Four years","Four months","Ten years","Fourteen days","2022 incident to 2026 broadcast"],["Awards","Which awards named the show Factual winner in both 2025 and 2026?","TRIC Awards","BAFTA Television Awards","Royal Television Society Awards","Broadcast Awards","Two factual award wins"],["Awards","Which True Crime Awards category did the programme win in 2025?","On Screen Impact for Change","Best Animated Documentary","Best Courtroom Drama","Best Film Costume","2025 True Crime Awards"],["Awards","Which Televisual Bulldog award did the series win in 2025?","Best Documentary Series (PSB)","Best Children's Drama","Best Light Entertainment","Best Costume Design","2025 awards"],["Awards","In which documentary category did the series win a 2016 Televisual Bulldog award?","Best Documentary Series","Best Entertainment Presenter","Best Drama Performance","Best New Sitcom","2016 awards"],["Awards","Which fixed-camera category did the series win in the 2016 Televisual Bulldog Awards?","Best Fixed Rig","Best Studio Design","Best Animation","Best Visual Effects","2016 technical award"],["Production","Who filmed, produced and directed the 2026 special The Ambush?","Jermaine Blake","Charles Crich","Martha Bailey","Sophie Oliver","Ambush director"],["Production","Who was story producer for The Ambush in 2026?","Lucy Wells","Maria McNally","Tess Mawle","Valentine Landeg","Ambush story producer"],["Production","Who directed the two-part 2026 special The Cold Case Murder?","Charles Crich","Jermaine Blake","Sophie Grant","Danielle Spears","Una Crown programme"],["Production","Who produced and directed the 2026 documentary Burying Horror?","Sophie Grant","Sophie Oliver","Martha Bailey","Anna Johnston","Carson Grimes documentary"],["Production","Who made the 2025 two-part special A Family Vendetta?","Martha Bailey","Jermaine Blake","Danielle Spears","Charles Crich","2025 programme credits"],["Broadcast","On which date did the original programme first premiere on Channel 4?","29 September 2014","6 October 2014","1 January 2015","29 October 2014","UK first transmission"]];
+const audit404Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB').replace(/[^\p{L}\p{N}]/gu,'');
+for(const [section,stem,correctAnswer,w1,w2,w3,focus] of audit404Rows){
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[w1,w2,w3];answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit404Norm)).size!==4)
+  throw Error('Pack 404 repeated answer choices '+stem);
+ const tags=['Television','Channel 4','British Documentary','True Crime Television',
+ PROGRAMME,'Programme: '+PROGRAMME,'Ongoing series','2014–2026',
+ 'Scope: select cases through September 2026','Section: '+section,
+ 'Question focus: '+focus,'Correct answer: '+correctAnswer,
+ 'Bedfordshire Police','The Garden Productions'];
+ questions.push({id:'tv_'+(41454+questions.length-69),
+ category:'Television',programme:PROGRAMME,coverageStatus:'Continuing',
+ question,answers,correctAnswer,difficulty:'Medium',tags,dailyEligible:true});
+}
+const ids404=new Set(),stems404=new Set();
+for(const q of questions){
+ const stem=audit404Norm(q.question);
+ const newQuestion=Number(q.id.slice(3))>=41454;
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ q.coverageStatus!=='Continuing'||!q.tags.includes('Programme: '+PROGRAMME)||
+ !stem.includes(audit404Norm(PROGRAMME))||
+ q.answers.length!==4||new Set(q.answers.map(audit404Norm)).size!==4||
+ q.answers.filter(x=>x===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ ids404.has(q.id)||stems404.has(stem)||
+ (newQuestion&&stem.includes(audit404Norm(q.correctAnswer))))
+ throw Error('Pack 404 validation failure at '+q.id);
+ ids404.add(q.id);stems404.add(stem);
+}
+module.exports=questions;
