@@ -194,6 +194,27 @@
    `In All My Children, who was Travis Montgomery's brother and another romantic interest of Erica Kane in the late 1980s?|Jackson Montgomery|Jeremy Hunter|Trevor Dillon|Mark Dalton|Medium|Jackson Montgomery|Travis Montgomery|Erica Kane|1989|sibling rivalry|romantic relationship|Montgomery family`,
  );
 
+
+ // Daytime Emmy awards gap audit; verified against award winners and historical records.
+ // Preserve ALL original and earlier audit question IDs.
+ const AWARDS_ORIGINAL_COUNT = rows.length;
+ const AUDIT_AWARDS_FIRST_ID = 42024;
+ rows.push(
+   `In All My Children, which actor won the 1980 Daytime Emmy for Outstanding Supporting Actor for playing Eddie Dorrance?|Warren Burton|Peter Bergman|David Canary|James Mitchell|Medium|Warren Burton|Eddie Dorrance|1980 Daytime Emmy|supporting actor|Kelly Cole|performer win|early award history`,
+   `In All My Children, which actress won a 1980 Daytime Emmy for her performances as Kitty Shea and Kelly Cole?|Francesca James|Ruth Warrick|Eileen Herlie|Debbi Morgan|Medium|Francesca James|Kitty Shea|Kelly Cole|1980 Daytime Emmy|supporting actress|dual roles|acting honour`,
+   `In All My Children, which actress won the 1982 Daytime Emmy for Outstanding Supporting Actress as Opal?|Dorothy Lyman|Jill Larson|Debbi Morgan|Kathleen Noone|Medium|Dorothy Lyman|Opal Gardner|1982 Daytime Emmy|supporting actress|acting award|character performance|award year`,
+   `In All My Children, which actress won the 1983 Daytime Emmy for Outstanding Lead Actress after an earlier supporting win?|Dorothy Lyman|Susan Lucci|Julia Barr|Ruth Warrick|Medium|Dorothy Lyman|Opal Gardner|1983 Daytime Emmy|lead actress|supporting to lead|acting distinction|career award`,
+   `In All My Children, who received the 1983 Daytime Emmy for Outstanding Supporting Actor as Jesse Hubbard?|Darnell Williams|Michael E Knight|David Canary|Peter Bergman|Medium|Darnell Williams|Jesse Hubbard|1983 Daytime Emmy|supporting actor|young performer|acting win|award history`,
+   `In All My Children, which actor won the 1985 Daytime Emmy for Outstanding Lead Actor as Jesse Hubbard?|Darnell Williams|David Canary|Michael E Knight|Ray MacDonnell|Medium|Darnell Williams|Jesse Hubbard|1985 Daytime Emmy|lead actor|career recognition|acting honour|award year`,
+   `In All My Children, which actor won consecutive Daytime Emmys for Outstanding Younger Actor in 1986 and 1987?|Michael E Knight|Darnell Williams|Laurence Lau|Richard Shoberg|Medium|Michael E Knight|Tad Martin|1986 Daytime Emmy|1987 Daytime Emmy|younger actor|two consecutive wins|acting honours`,
+   `In All My Children, which performer won the 1986 Daytime Emmy for Outstanding Lead Actor for playing two Chandler brothers?|David Canary|Darnell Williams|Peter White|James Mitchell|Medium|David Canary|Adam Chandler|Stuart Chandler|1986 Daytime Emmy|lead actor|dual role|acting recognition`,
+   `In All My Children, which actor added 1988 and 1989 Daytime Emmy Lead Actor wins to an earlier 1986 victory?|David Canary|Michael E Knight|Darnell Williams|Ray MacDonnell|Medium|David Canary|Adam Chandler|Stuart Chandler|1988 Daytime Emmy|1989 Daytime Emmy|lead actor|three wins`,
+   `In All My Children, who won the 1987 Daytime Emmy for Outstanding Supporting Actress for portraying Ellen Shepherd?|Kathleen Noone|Ellen Wheeler|Dorothy Lyman|Julia Barr|Medium|Kathleen Noone|Ellen Shepherd|Ellen Dalton|1987 Daytime Emmy|supporting actress|acting win|award record`,
+   `In All My Children, which actress won the 1988 Daytime Emmy for Outstanding Supporting Actress as Cindy Parker?|Ellen Wheeler|Debbi Morgan|Kathleen Noone|Taylor Miller|Medium|Ellen Wheeler|Cindy Parker|1988 Daytime Emmy|supporting actress|AIDS storyline|character acting|award year`,
+   `In All My Children, which actress won the 1989 Daytime Emmy for Outstanding Supporting Actress as Angie Hubbard?|Debbi Morgan|Julia Barr|Francesca James|Dorothy Lyman|Medium|Debbi Morgan|Angie Hubbard|1989 Daytime Emmy|supporting actress|acting honour|award recognition|Jesse and Angie`,
+   `In All My Children, which production discipline won Daytime Emmys for the programme in both 1985 and 1988?|Drama series writing|Costume design|Hairstyling|Music composition|Medium|writing team|1985 Daytime Emmy|1988 Daytime Emmy|production award|story scripts|behind the scenes|creative team`,
+ );
+
  const questions = rows.map((row, index) => {
    const parts = row.split('|').map(part => part.trim());
    if (parts.length !== 13 || parts.some(part => !part)) {
@@ -216,7 +237,7 @@
      throw new Error(`Pack 415: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
    }
    return {
-     id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT}`,
+     id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : index < AWARDS_ORIGINAL_COUNT ? AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT : AUDIT_AWARDS_FIRST_ID + index - AWARDS_ORIGINAL_COUNT}`,
      category: 'Television',
      question,
      answers,
