@@ -206,13 +206,19 @@ const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')
     ...commonTags, correctAnswer, ...specificTags
   ].map(tag => [tag.toLowerCase(), tag])).values()];
 
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In ')
+      ? 'In All Saints episode ' + question.slice(3)
+      : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
+
   sequence++;
 
   return {
     id,
     category: 'Television',
     programme,
-    question,
+    question: contextualQuestion,
     answers,
     correctAnswer,
     difficulty,
