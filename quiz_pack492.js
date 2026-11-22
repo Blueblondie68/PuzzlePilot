@@ -1,7 +1,7 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 492: Below Deck (Original Series), Seasons 1–2
-// 75 audited questions: 55 originals (one generic question replaced) + 20 focused story/production additions.
+// 71 audited questions: 55 originals (one generic question replaced) + 16 distinct story/production additions.
 // Original Bravo reality series ONLY, Seasons 1 (2013) and 2 (2014).
-// Original IDs tv_27791–tv_27845; audit IDs tv_43106–tv_43125.
+// Original IDs tv_27791–tv_27845; audit IDs tv_43106–tv_43121.
 // IDs tv_27791–tv_27845; continues after Bellbird Pack 491 tv_27790.
 // Crew, Honor/Ohana yachts, charter locations, key conflicts, episodes, early reunions,
 // history and recurring yacht roles. No Mediterranean/Sailing Yacht/Down Under/Adventure episodes.
@@ -1842,39 +1842,6 @@ const auditQuestions=[
     "id": "tv_43106",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck, who found the suspicious substance that led Captain Lee to end Honor's first charter?",
-    "answers": [
-      "Adrienne Gang",
-      "Kat Held",
-      "Sam Orme",
-      "Ben Robinson"
-    ],
-    "correctAnswer": "Kat Held",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck Series",
-      "Bravo",
-      "2013–2014 Early Seasons",
-      "Luxury Yachting",
-      "Written Quiz",
-      "Section: Audit Story",
-      "Kat Held",
-      "Guest Cabin",
-      "Illegal Drugs",
-      "First Charter",
-      "Honor",
-      "Season 1"
-    ]
-  },
-  {
-    "id": "tv_43107",
-    "category": "TV",
-    "topic": "Below Deck",
     "question": "In Below Deck, which season-one crew members were caught swimming and drinking beer during working charter hours?",
     "answers": [
       "Sam Orme and C.J. LeBeau",
@@ -1905,7 +1872,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43108",
+    "id": "tv_43107",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, which season-one crew member chose to leave rather than accept docked pay for the swim-and-beer incident?",
@@ -1938,7 +1905,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43109",
+    "id": "tv_43108",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, who caught Sam Orme and C.J. LeBeau drinking while they were supposed to be working?",
@@ -1971,50 +1938,17 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43110",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "In Below Deck, what type of rule-breaking led to the crew's first-season swim-and-beer disciplinary row?",
-    "answers": [
-      "Missing a guest's birthday dinner",
-      "Drinking alcohol while on charter duty",
-      "Leaving the yacht's helm unattended",
-      "Losing the ship's passports"
-    ],
-    "correctAnswer": "Drinking alcohol while on charter duty",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck Series",
-      "Bravo",
-      "2013–2014 Early Seasons",
-      "Luxury Yachting",
-      "Written Quiz",
-      "Section: Audit Story",
-      "Sam Orme",
-      "C J LeBeau",
-      "Alcohol During Charter",
-      "Crew Misconduct",
-      "Season 1",
-      "Discipline"
-    ]
-  },
-  {
-    "id": "tv_43111",
+    "id": "tv_43109",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, what concern did Kat Held disclose to Captain Lee amid conflict with inappropriate charter guests?",
     "answers": [
-      "Her anxiety and related medication",
+      "Her anxiety",
       "A missing engineering qualification",
       "A private yacht ownership claim",
       "Her refusal to swim"
     ],
-    "correctAnswer": "Her anxiety and related medication",
+    "correctAnswer": "Her anxiety",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -2029,15 +1963,15 @@ const auditQuestions=[
       "Written Quiz",
       "Section: Audit Story",
       "Kat Held",
-      "Anxiety Medication",
       "Charter Guests",
       "Workplace Conflict",
       "Season 1",
-      "Captain Lee"
+      "Captain Lee",
+      "Anxiety Disclosure"
     ]
   },
   {
-    "id": "tv_43112",
+    "id": "tv_43110",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, whose friends came aboard Honor and made life difficult for Ben and Sam?",
@@ -2070,7 +2004,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43113",
+    "id": "tv_43111",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, which crew member planned to switch cabins to escape tensions with chief stew Adrienne Gang?",
@@ -2103,10 +2037,10 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43114",
+    "id": "tv_43112",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck, which season-one crew member was reprimanded after being caught in a private rendezvous with C.J.?",
+    "question": "In Below Deck, which season-one stewardess secretly planned alone time with C.J. while others were working?",
     "answers": [
       "Kate Chastain",
       "Sam Orme",
@@ -2136,7 +2070,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43115",
+    "id": "tv_43113",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, under what real-world yacht name did the first-season vessel Honor charter?",
@@ -2169,7 +2103,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43116",
+    "id": "tv_43114",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, which problem was caused by Andrew Sturby leaving a porthole open while Ohana was underway?",
@@ -2202,7 +2136,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43117",
+    "id": "tv_43115",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, which crew member's equal share of charter tips caused resentment after his poor performance?",
@@ -2235,40 +2169,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43118",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "In Below Deck, what early Season 2 incident persuaded the crew that deckhand Andrew might be a liability?",
-    "answers": [
-      "He refused to wear a uniform",
-      "He left his cabin porthole open while underway",
-      "He failed a chef's trial",
-      "He missed a flight to the yacht"
-    ],
-    "correctAnswer": "He left his cabin porthole open while underway",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck Series",
-      "Bravo",
-      "2013–2014 Early Seasons",
-      "Luxury Yachting",
-      "Written Quiz",
-      "Section: Audit Story",
-      "Andrew Sturby",
-      "Port Hole",
-      "Crew Safety",
-      "Season 2",
-      "Rookie Mistake",
-      "Yacht"
-    ]
-  },
-  {
-    "id": "tv_43119",
+    "id": "tv_43116",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, what kind of guests made up Ohana's first charter of the second season?",
@@ -2301,7 +2202,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43120",
+    "id": "tv_43117",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, which returning chief stewardess spread news of Kat and Amy's strained past among Ohana's guests?",
@@ -2334,7 +2235,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43121",
+    "id": "tv_43118",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, which season-two stewardess was left alone with hard-partying guests and had to call for help?",
@@ -2367,7 +2268,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43122",
+    "id": "tv_43119",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, whose birthday did the Ohana crew celebrate around the arrival of replacement deckhand Logan Reese?",
@@ -2400,7 +2301,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43123",
+    "id": "tv_43120",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, which crew member took over dinner service from Kate Chastain at Ben Robinson's request?",
@@ -2433,40 +2334,7 @@ const auditQuestions=[
     ]
   },
   {
-    "id": "tv_43124",
-    "category": "TV",
-    "topic": "Below Deck",
-    "question": "In Below Deck, who struggled with final-charter dinner service before Kate Chastain stepped in?",
-    "answers": [
-      "Kat Held",
-      "Eddie Lucas",
-      "Logan Reese",
-      "Amy Johnson"
-    ],
-    "correctAnswer": "Amy Johnson",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Reality Television",
-      "American Television",
-      "Programme: Below Deck",
-      "Original Below Deck Series",
-      "Bravo",
-      "2013–2014 Early Seasons",
-      "Luxury Yachting",
-      "Written Quiz",
-      "Section: Audit Story",
-      "Amy Johnson",
-      "Kate Chastain",
-      "Final Charter",
-      "Season 2",
-      "Dinner Service",
-      "Team Work"
-    ]
-  },
-  {
-    "id": "tv_43125",
+    "id": "tv_43121",
     "category": "TV",
     "topic": "Below Deck",
     "question": "In Below Deck, which company announced renewal of the original series for a third season after Season 2's high-rating finale?",
@@ -2499,7 +2367,7 @@ const auditQuestions=[
   }
 ];
 questions.push(...auditQuestions);
-if(questions.length!==75||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==71||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(27791+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
