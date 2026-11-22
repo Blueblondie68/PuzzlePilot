@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 438
 // Auf Wiedersehen, Pet: Series 3 (2002), Series 4 (2004), and Au Revoir specials (2004).
 // Completes coverage started in Pack 437. First ID tv_25901.
-// WordPad-ready CommonJS: compare the saved copy before approving GitHub/Render.
+// WordPad-ready CommonJS: full programme ends with the December 2004 specials.
 'use strict';
 
 const FIRST_ID = 25901;
@@ -109,9 +109,43 @@ What form of transport carried Dennis, Neville and Oz towards Germany in the fin
 Which late cast member received the dedication at the end of the 2004 finale?|Pat Roach|Gary Holton|Bill Paterson|Michael Elphick|Medium|Pat Roach|Bomber Busbridge|Final Dedication|2004|Au Revoir|Cast Tribute|In Memoriam
 What was the title of the two-part conclusion broadcast in December 2004?|Au Revoir|Bridging the Gap|A Bridge Too Far|The Last Brick|Easy|Au Revoir|2004 Finale|Two Part Special|Christmas Television|Series End|BBC One|Episode Title`;
 
+
+// Final-programme gap audit: awards (2002 Comedy Awards win, 2003 BAFTA/RTS nominations),
+// 2003 Comic Relief special, cast, production credits and verified transmission dates.
+// Original 94 IDs and answer data preserved.
+const AUDIT_ORIGINAL_COUNT = 94;
+const AUDIT_FIRST_ID = 42513;
+const auditFacts = `Which award did Auf Wiedersehen, Pet win at the 2002 British Comedy Awards?|Best TV Comedy Drama|Best New TV Comedy|Best TV Comedy Actor|People's Choice Award|Medium|2002 British Comedy Awards|Best TV Comedy Drama|Award Win|BBC Revival|Programme Recognition|British Comedy|Official Winners
+In which year did Auf Wiedersehen, Pet win Best TV Comedy Drama at the British Comedy Awards?|2002|1986|2003|2004|Medium|2002 Awards|British Comedy Awards|Award Win|Best TV Comedy Drama|BBC Revival|British Television|Programme Honours
+For which category was Auf Wiedersehen, Pet nominated at the 2003 BAFTA Television Awards?|Drama Serial|Situation Comedy|Drama Series|Single Drama|Medium|2003 BAFTA Nomination|Drama Serial|BBC One|Television Awards|British Academy|2002 Revival|Not A Win
+Which programme beat Auf Wiedersehen, Pet for the Drama Serial BAFTA in 2003?|Shackleton|Doctor Zhivago|Murder|Spooks|Medium|2003 BAFTA Awards|Shackleton|Drama Serial Winner|Nomination Result|British Academy|Awards History|BBC Competition
+Which four individuals were credited on the 2003 BAFTA Drama Serial nomination for Auf Wiedersehen, Pet?|Paul Seed, Dick Clement, Ian La Frenais and Joy Spink|Paul Seed, Franc Roddam, Tim Healy and Jimmy Nail|Maurice Phillips, Kevin Whately, Noel Clarke and Joy Spink|Bill Nighy, Roger Bamford, Gary Holton and Allan McKeown|Hard|2003 BAFTA Nomination|Paul Seed|Dick Clement|Ian La Frenais|Joy Spink|Production Team|Drama Serial
+For which Royal Television Society programme award was Auf Wiedersehen, Pet nominated in 2003?|Situation Comedy and Comedy Drama|Drama Series|Children's Fiction|Entertainment|Medium|2003 RTS Award|Situation Comedy and Comedy Drama|Nomination|Royal Television Society|BBC One|Awards History|Comedy Drama
+Which comedy series won the 2003 RTS award in the category where Auf Wiedersehen, Pet was nominated?|Phoenix Nights|The Office|Cutting It|Clocking Off|Medium|2003 RTS Award|Phoenix Nights 2|Award Winner|Situation Comedy and Comedy Drama|Royal Television Society|Awards Result|BBC Nomination
+Which 2003 Comic Relief sketch reunited characters from Auf Wiedersehen, Pet?|Miami Vice|Au Revoir|Heavy Metal|Bridging the Gap|Medium|Comic Relief 2003|Miami Vice|Charity Sketch|BBC One|Red Nose Day|Special Episode|Revival Extras
+Which rock band made a surprise appearance in Auf Wiedersehen, Pet's 2003 Comic Relief sketch Miami Vice?|U2|Coldplay|Oasis|Bon Jovi|Medium|Miami Vice|Comic Relief 2003|U2|Celebrity Cameo|Miami Hotel|Red Nose Day|Music Guests
+Which two members of U2 appeared in the Auf Wiedersehen, Pet Comic Relief sketch Miami Vice?|Bono and Larry Mullen Jr|Bono and The Edge|The Edge and Adam Clayton|Larry Mullen Jr and Adam Clayton|Medium|Comic Relief 2003|Miami Vice|Bono|Larry Mullen Jr|U2|Celebrity Appearances|Red Nose Day
+What item did Moxey discover in Miami Vice, the Auf Wiedersehen, Pet Comic Relief sketch?|A suitcase filled with money|A stolen diamond necklace|A diplomatic passport|A lost lottery ticket|Medium|Comic Relief 2003|Miami Vice|Moxey|Suitcase of Cash|U2|Hotel Mix Up|Charity Comedy
+Which actress played Barry Taylor's Russian wife Tatiana in Auf Wiedersehen, Pet's BBC revival?|Branka Katic|Emily Bruni|Caroline Harker|Jo-Anne Good|Medium|Branka Katic|Tatiana|Barry Taylor|2002 Revival|Series Three|Supporting Cast|Actress
+Which actor played Barry's rival Kadi in Auf Wiedersehen, Pet Series 3?|Dragan Micanovic|Michael Angelis|Dominic Jephcott|Alexander Hanson|Medium|Dragan Micanovic|Kadi|Barry Taylor|Tatiana|Series Three|BBC Cast|Actor Identification
+Who portrayed the character Colin Vanes in the BBC revival of Auf Wiedersehen, Pet?|Dominic Jephcott|Clive Russell|Bill Nighy|Noel Clarke|Medium|Dominic Jephcott|Colin Vanes|BBC Revival|Supporting Cast|2000s Television|Actor Identification|Series Credits
+Which actress portrayed the Australian character Elena in Auf Wiedersehen, Pet's final specials?|Jo-Anne Good|Rachael Blake|Josefina Gabrielle|Branka Katic|Medium|Jo Anne Good|Elena|Moxey|Au Revoir|2004 Finale|Supporting Actress|Australia
+Which actor played the kidnapper known as Two Dragons in the Auf Wiedersehen, Pet finale?|Pornchai Tipol|Gordon Tootoosis|Alexander Hanson|Dragan Micanovic|Medium|Pornchai Tipol|Two Dragons|Au Revoir|Kidnapping|2004 Finale|Guest Cast|Actor Identification
+Who produced the 2002 BBC revival series of Auf Wiedersehen, Pet?|Joy Spink|Martin McKeand|Chrissy Skinns|Allan McKeown|Medium|Joy Spink|Series Three|2002 Revival|Producer Credit|BBC One|Production Team|Behind The Scenes
+Who produced the 2004 fourth series of Auf Wiedersehen, Pet?|Chrissy Skinns|Joy Spink|Martin McKeand|Allan McKeown|Medium|Chrissy Skinns|Series Four|2004 Cuba|Producer Credit|BBC One|Production Team|Behind The Scenes
+Who directed the 2004 two-part finale Au Revoir for Auf Wiedersehen, Pet?|Sandy Johnson|Paul Seed|Roger Bamford|Maurice Phillips|Medium|Sandy Johnson|Au Revoir|2004 Finale|Episode Director|BBC One|Production Credits|Special Episodes
+Which two directors were credited with Auf Wiedersehen, Pet's fourth series in 2004?|Maurice Phillips and David Innes-Edwards|Paul Seed and Sandy Johnson|Roger Bamford and Baz Taylor|Franc Roddam and Joy Spink|Medium|Maurice Phillips|David Innes Edwards|2004 Series Four|Directors|Cuba Story|Production Credits|BBC One
+On what date did Auf Wiedersehen, Pet begin its six-episode BBC revival?|28 April 2002|4 January 2004|11 November 1983|28 December 2004|Medium|28 April 2002|BBC One Return|Series Three|Six Episodes|First Broadcast|Revival Premiere|Programme Timeline
+On what date did Auf Wiedersehen, Pet's fourth series begin on BBC One?|4 January 2004|28 April 2002|8 February 2004|28 December 2004|Medium|4 January 2004|Series Four|BBC One|Cuba Story|Premiere Date|Programme Timeline|Revival
+On which dates did Auf Wiedersehen, Pet's final two-part special Au Revoir first air?|28 and 29 December 2004|24 and 25 December 2004|4 and 5 January 2004|1 and 2 June 2002|Medium|Au Revoir|28 December 2004|29 December 2004|BBC One|Christmas Special|Final Broadcast|Television History
+How many regular episodes were made of Auf Wiedersehen, Pet across its four series, excluding the final specials?|38|40|36|42|Medium|Four Series|38 Regular Episodes|26 ITV Episodes|12 BBC Episodes|Two Specials Extra|Programme Totals|1983 To 2004
+Which American location provided scenery for the rebuilt bridge in Auf Wiedersehen, Pet Series 3?|Lake Powell in Arizona|Lake Tahoe in Nevada|Death Valley in California|Grand Canyon Village|Medium|Lake Powell|Arizona|Bridge Reconstruction|Filming Locations|BBC Revival|2002 Series|United States
+Which country provided much of the on-location filming for Auf Wiedersehen, Pet's finale set in Laos?|Thailand|Malaysia|Cambodia|Vietnam|Medium|Thailand|Au Revoir Filming|Bangkok|Chiang Mai|2004 Finale|Location Production|Southeast Asia
+What month and year did Auf Wiedersehen, Pet actor Pat Roach die before the final specials were filmed?|July 2004|July 2002|December 2004|August 2005|Medium|Pat Roach|July 2004|Bomber Busbridge|In Memoriam|Final Specials|Production History|Cast Tribute`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(value => value.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields in ${id}; got ${fields.length}`);
@@ -126,8 +160,15 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In which ')
+      ? 'In Auf Wiedersehen, Pet, which ' + question.slice(9)
+      : question.startsWith('In ')
+        ? 'In Auf Wiedersehen, Pet episode ' + question.slice(3)
+        : 'In Auf Wiedersehen, Pet, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
-  return { id, category: 'Television', programme, question, answers,
+  return { id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true };
 });
 
