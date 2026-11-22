@@ -32,7 +32,7 @@ What is the name of the painter's wife who appears to have an unbreakable office
 Which actress portrayed Serena Shale?|Sheila Gish|Saskia Mulder|Jane Hazlegrove|Caroline Quentin|Medium|Sheila Gish|Serena Shale|Guest Actress|The Wrestlers Tomb|1997|Eve Magazine|Casting
 Where does Serena work while her husband is murdered?|At Eve magazine|At a hospital|At an art college|At a radio station|Medium|Serena Shale|Eve Magazine|Magazine Editor|Office Alibi|The Wrestlers Tomb|1997|Employment
 Which model is discovered bound and gagged beside Hedley Shale?|Francesca Boutron|Katrina Toplis|Serena Shale|Maddy Magellan|Medium|Francesca Boutron|Hedley Shale|Model|Bound And Gagged|The Wrestlers Tomb|1997|Crime Scene
-Which actor played the model Francesca Boutron?|Saskia Mulder|Sheila Gish|Jane Hazlegrove|Rebecca Charles|Medium|Saskia Mulder|Francesca Boutron|Guest Actress|The Wrestlers Tomb|1997|Model|Casting
+Which actress played the model Francesca Boutron?|Saskia Mulder|Sheila Gish|Jane Hazlegrove|Rebecca Charles|Medium|Saskia Mulder|Francesca Boutron|Guest Actress|The Wrestlers Tomb|1997|Model|Casting
 Which man is arrested for the artist's murder before Maddy intervenes?|Stephen Grismal|Alan Rokesmith|Trevor|Adam Klaus|Medium|Stephen Grismal|Wrongly Accused|Maddy Magellan|The Wrestlers Tomb|1997|Murder Charge|Police
 What stage performance brings Jonathan and Maddy into contact during the investigation?|Adam Klaus's illusion show|A rock concert by Roy Pilgrim|A comedy gig by Jack Holiday|An art auction|Easy|Adam Klaus|Theatre Show|Maddy Meets Jonathan|The Wrestlers Tomb|1997|Magic|First Meeting
 What small item does Jonathan accidentally jab into Maddy's hand?|A cocktail stick|A drawing pin|A knitting needle|A hat pin|Medium|Cocktail Stick|Maddy Magellan|Jonathan Creek|The Wrestlers Tomb|1997|First Meeting|Comedy
@@ -137,7 +137,7 @@ function addSection(facts, episode) {
     const question = `In ${PROGRAMME}, ${stem[0].toLowerCase()}${stem.slice(1)}`;
     const tags = [...new Map([
       'Television', 'British Television', 'BBC One', 'Crime Mystery',
-      PROGRAMME, 'Series 1 1997', episode, correctAnswer, ...specificTags
+      PROGRAMME, 'Programme: '+PROGRAMME, 'Series 1 1997', episode, correctAnswer, ...specificTags
     ].map(tag => [tag.toLowerCase().replace(/[^a-z0-9]/g, ''), tag])).values()];
     const normalized = question.toLowerCase().replace(/[^a-z0-9]/g, '');
     if (seen.has(normalized)) throw new Error(`Duplicate question: ${id}`);
@@ -147,7 +147,7 @@ function addSection(facts, episode) {
       throw new Error(`Invalid exported question: ${id}`);
     }
     seen.add(normalized);
-    questionBank.push({ id, category: 'Television', question, answers, correctAnswer, difficulty, tags, dailyEligible: true });
+    questionBank.push({ id, category: 'Television', programme: PROGRAMME, question, answers, correctAnswer, difficulty, tags, dailyEligible: true });
   }
 }
 
@@ -158,4 +158,97 @@ addSection(corpse, 'The Reconstituted Corpse');
 addSection(tracy, 'No Trace of Tracy');
 addSection(monkeys, 'The House of Monkeys');
 
-module.exports = questionBank;
+
+
+// Episode and guest-cast review for Jonathan Creek Series 1.
+// Original IDs tv_20602–tv_20707 are preserved; new IDs start at tv_40766.
+// Sources: https://www.jonathancreek.net/episodeguide.asp
+// and https://www.comedy.co.uk/tv/jonathan_creek/episodes/1/
+// Keep Jonathan Creek PARTIAL: later series and specials continue.
+const audit386_w=`In The Wrestler's Tomb, which actress portrayed Katrina Toplis?|Jane Hazlegrove|Rebecca Charles|Saskia Mulder|Sheila Gish|Series 1|Katrina Toplis actress
+In The Wrestler's Tomb, who played Detective Sergeant Owen Davey?|Lloyd McGuire|Doug Fisher|Geoffrey McGivern|John Marquez|Series 1|DS Owen Davey actor
+In The Wrestler's Tomb, which actor played wrongly accused Stephen Grismal?|Doug Fisher|Colin Baker|Lloyd McGuire|Geoffrey McGivern|Series 1|Stephen Grismal actor
+In The Wrestler's Tomb, who portrayed Maddy's boyfriend Trevor?|Alistair McGowan|Anthony Head|John Marquez|Geoffrey McGivern|Series 1|Trevor guest actor
+In The Wrestler's Tomb, what is Serena Shale's job at Eve magazine?|Editor|Picture researcher|Fashion photographer|Advertising manager|Series 1|Serena Shale magazine job
+In The Wrestler's Tomb, what type of tax document is found unopened at the Shale home?|An Inland Revenue letter|An unpaid council tax summons|A VAT inspection report|A vehicle registration letter|Series 1|Unopened tax letter
+In The Wrestler's Tomb, at which London theatre does Jonathan meet Maddy while helping a magic show?|Prince of Wales Theatre|The Old Vic|London Palladium|Royal Court Theatre|Series 1|Stage show location
+In The Wrestler's Tomb, what lethal illusion does Adam perform using a spiked cabinet?|An iron maiden act|A bullet-catching trick|A levitating cage|A vanishing motorcar|Series 1|Iron maiden illusion
+In The Wrestler's Tomb, which household appliance does Katrina's jealous husband use against Jonathan?|A vacuum cleaner|A pressure washer|A steam iron|A tumble dryer|Series 1|Jealous husband prank
+In The Wrestler's Tomb, what item does Jonathan ask Maddy to give police to compare with gun markings?|Bathroom scales|A garden spade|A tape measure|A pair of spectacles|Series 1|Toeprint comparison`;
+
+const audit386_j=`In Jack in the Box, which actor played Jack Holiday?|John Bluthal|Robin Soans|Bernard Kay|Geoffrey Beevers|Series 1|Jack Holiday performer
+In Jack in the Box, who played Kirsten Holiday?|Maureen O'Brien|June Watson|Sheila Gish|Jane Hazlegrove|Series 1|Kirsten Holiday performer
+In Jack in the Box, who played Jack's longtime friend Oliver?|Bernard Kay|John Bluthal|Colin Stinton|Geoffrey Beevers|Series 1|Oliver performer
+In Jack in the Box, which actress portrayed Alan Rokesmith's sister Rachel?|June Watson|Maureen O'Brien|Helena McCarthy|Rebecca Charles|Series 1|Rachel Rokesmith actress
+In Jack in the Box, what mail-order product appears in Rokesmith's innocent-looking prison correspondence?|Fudge|Coffee beans|A fountain pen|A leather wallet|Series 1|Prison mail clue
+In Jack in the Box, which character reveals that Jack paid Alan to kill his first wife?|Oliver|Kirsten Holiday|Rachel Rokesmith|Scott Reisner|Series 1|Jack Holiday confidant
+In Jack in the Box, what item does Maddy lose that forces her and Jonathan to spend a night at an inn?|Her car keys|Her cheque book|Her driving licence|Her hotel confirmation|Series 1|Unexpected overnight stay
+In Jack in the Box, what method do the investigators use to uncover writing beneath postage stamps?|Steaming off the stamps|Rubbing them with charcoal|Scanning the letters with X-rays|Viewing them under a microscope|Series 1|Hidden prison messages
+In Jack in the Box, what does a threatening note beneath a melon tell Jonathan?|Back Off|You Are Next|Keep Silent|Stop the Search|Series 1|Threatening note`;
+
+const audit386_c=`In The Reconstituted Corpse, which actress played Zola Zbzewski?|Kika Mirylees|Hilary Lyon|Rebecca Johnson|Shona Morris|Series 1|Zola Zbzewski actress
+In The Reconstituted Corpse, which actor portrayed plastic surgeon David Curchin?|Ron Berglas|Philip McGough|Nigel Planer|Michael Mellinger|Series 1|David Curchin actor
+In The Reconstituted Corpse, who played the admirer who secretly filmed Zola?|Philip McGough|Ron Berglas|Geoffrey McGivern|Ralf Beck|Series 1|Sam Brickman guest actor
+In The Reconstituted Corpse, which actress portrayed Zola's daughter Victoria?|Rebecca Johnson|Hilary Lyon|Kika Mirylees|Shona Morris|Series 1|Victoria guest actress
+In The Reconstituted Corpse, who played Maddy's publicist Barry Opper?|Geoffrey McGivern|Nigel Planer|Ralf Beck|Ron Berglas|Series 1|Barry Opper actor
+In The Reconstituted Corpse, what legal action does the surgeon threaten after Zola's television interview?|Suing her for defamation|A claim for unpaid rent|Reporting tax evasion|Seeking a restraining order|Series 1|Surgeon threatens lawsuit
+In The Reconstituted Corpse, what happened to the elephant involved in Adam Klaus's rehearsal?|It died of heart failure|It escaped into the street|It was taken to a sanctuary|It trampled the stage|Series 1|Elephant levitation mishap
+In The Reconstituted Corpse, what flower does Jonathan discover near the bins outside Maddy's flat?|A geranium|A daffodil|An orchid|A carnation|Series 1|Flower clue
+In The Reconstituted Corpse, on which floor does Maddy live when her wardrobe arrives?|The fourth floor|The ground floor|The seventh floor|The second floor|Series 1|Wardrobe delivery`;
+
+const audit386_t=`In No Trace of Tracy, which actress portrayed Roy Pilgrim's fiancée Francine Faraday?|Geraldine Alexander|Caroline Loncq|Christine Moore|Heather-Jay Jones|Series 1|Francine Faraday actress
+In No Trace of Tracy, who portrayed commune leader Jacob Flowers?|Mel Cobb|James Degazio|Rob Jarvis|Del Henney|Series 1|Jacob Flowers actor
+In No Trace of Tracy, who played commune member Polly Flowers?|Christine Moore|Geraldine Alexander|Caroline Loncq|Heather-Jay Jones|Series 1|Polly Flowers actress
+In No Trace of Tracy, which actress portrayed Maddy's friend Sheena?|Caroline Loncq|Heather-Jay Jones|Geraldine Alexander|Saskia Mulder|Series 1|Sheena performer
+In No Trace of Tracy, who played Jacob Flowers's cousin Toby?|James Degazio|Mel Cobb|Lou Sexty|Rob Jarvis|Series 1|Toby Flowers actor
+In No Trace of Tracy, which actor portrayed Sheena's partner Greg?|Radvic Nekich|Rob Jarvis|Vince Leigh|Ralph Brown|Series 1|Greg performer
+In No Trace of Tracy, what year does Jonathan work out from a car number plate during a quiz trail?|1983|1976|1993|1968|Series 1|Car registration puzzle
+In No Trace of Tracy, which American family drama does Roy Pilgrim enjoy watching?|The Waltons|Dallas|Bonanza|Little House on the Prairie|Series 1|Rock musician television preference
+In No Trace of Tracy, what large structure are the commune members constructing?|An ark|A windmill|A clocktower|A glass pyramid|Series 1|Commune construction`;
+
+const audit386_m=`In The House of Monkeys, which actor played scientist Elliot Strange?|Charles Kay|Simon Day|Barnaby Kay|Geoffrey Beevers|Series 1|Elliot Strange performer
+In The House of Monkeys, who played the police inspector Masterson?|Selina Cadell|Annette Crosbie|Sara Markland|Rebecca Charles|Series 1|Inspector Masterson actress
+In The House of Monkeys, who portrayed police constable Spelling?|Barnaby Kay|Charles Kay|Simon Day|Lloyd McGuire|Series 1|DC Spelling actor
+In The House of Monkeys, which actress played Elliot's daughter-in-law Cathy?|Sara Markland|Annette Crosbie|Sheila Gish|Maureen O'Brien|Series 1|Cathy Strange actress
+In The House of Monkeys, how many monkeys does the Strange family keep?|Fourteen|Six|Eight|Twenty|Series 1|Number of primates
+In The House of Monkeys, what did Ingrid and Jonathan's mother once run together?|A medical practice|A theatre company|A local newspaper|A university laboratory|Series 1|Ingrid Strange medical history
+In The House of Monkeys, what does Samson do after using the household toilet?|Flushes and washes his hands|Hides in the shower|Steals the soap|Locks the door|Series 1|Samson bathroom behaviour
+In The House of Monkeys, what furniture features in Cathy's diary account of an affair?|An electronic reclining chair|A mahogany dining table|An antique mirror|A modern bookcase|Series 1|Cathy and Elliot affair location
+In The House of Monkeys, what device does Jonathan use to check his own pulse?|An earlobe monitor|A mechanical wristwatch|A phone camera|A medical stethoscope|Series 1|Jonathan health check`;
+const norm386=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB').replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit386(block,episode) {
+ for(const [i,line] of block.trim().split('\n').entries()){
+  const f=line.split('|').map(x=>x.trim());
+  if(f.length!==7||f.some(x=>!x))throw Error('Bad Pack 386 audited row '+episode+' '+i);
+  const [stem,correctAnswer,a,b,c,series,focus]=f;
+  const prefix='In '+episode+', ';
+  if(!stem.startsWith(prefix))throw Error('Bad episode prefix '+i);
+  const question='In '+PROGRAMME+', during "'+episode+'", '+stem.slice(prefix.length);
+  const answers=[a,b,c];answers.splice(questionBank.length%4,0,correctAnswer);
+  const tags=['Television','British Television','BBC One','Crime Mystery','Mystery Comedy',
+   PROGRAMME,'Programme: '+PROGRAMME,'Series: '+series,'Episode: '+episode,
+   'Focus: '+focus,'Answer: '+correctAnswer,'Case: '+episode,
+   'Actor or clue: '+focus,'Year: 1997'];
+  questionBank.push({id:'tv_'+(40766+questionBank.length-106),
+   category:'Television',programme:PROGRAMME,question,answers,correctAnswer,
+   difficulty:'Medium',tags,dailyEligible:true});
+ }
+}
+addAudit386(audit386_w,"The Wrestler's Tomb");
+addAudit386(audit386_j,"Jack in the Box");
+addAudit386(audit386_c,"The Reconstituted Corpse");
+addAudit386(audit386_t,"No Trace of Tracy");
+addAudit386(audit386_m,"The House of Monkeys");
+const seenIds386=new Set(),seenQuestions386=new Set();
+for(const q of questionBank){
+ const stem=norm386(q.question);
+ if(q.programme!==PROGRAMME||q.category!=='Television'||
+ !q.tags.includes('Programme: '+PROGRAMME)||q.answers.length!==4||
+ new Set(q.answers.map(norm386)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ seenIds386.has(q.id)||seenQuestions386.has(stem))
+ throw Error('Pack 386 final audit validation failed: '+q.id);
+ seenIds386.add(q.id);seenQuestions386.add(stem);
+}
+module.exports=questionBank;
