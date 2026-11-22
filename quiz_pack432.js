@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 432
 // All Together Now (BBC One): series 1-2 (2018-2019) and celebrity special.
 // Full programme coverage; begins at tv_25348, following Pack 431.
-// WordPad-ready CommonJS. Review the saved WordPad copy before GitHub/Render.
+// WordPad-ready CommonJS. UK programme finished in 2019, all episodes and special covered.
 // Row format: question | correct | wrong 1 | wrong 2 | wrong 3 | difficulty | 7 specific tags.
 'use strict';
 
@@ -96,9 +96,43 @@ Which Prince song did Bernadette Bangura perform in the first round of the 2019 
 Which Beyonce song did Bernadette Bangura sing in the 2019 final sing-off?|Halo|Listen|Single Ladies|If I Were a Boy|Medium|Bernadette Bangura|Halo|Beyonce|Third Place|2019 Final|23 Points|Sing Off
 In which year did the BBC decide not to commission a third UK series?|2019|2018|2020|2021|Medium|2019 Cancellation|BBC Decision|Programme History|End Of Series|Two Series|British Format|Broadcast History`;
 
+
+// Complete-show audit: format, tie-break rules, production, celebrity special and crossover careers.
+// The two series and special ended in 2019. No unsupported UK awards are claimed.
+const AUDIT_ORIGINAL_COUNT = 82;
+const AUDIT_FIRST_ID = 42394;
+const auditFacts = `How many episodes of the British All Together Now aired including the celebrity special?|13|12|14|16|Medium|Total Episode Count|Thirteen Episodes|Two Series|Celebrity Special|BBC One|Broadcast Run|2018 to 2019
+On which date did All Together Now first air on BBC One?|27 January 2018|3 March 2018|24 December 2018|2 March 2019|Medium|Original Premiere|January 2018|BBC One Launch|Series One|Broadcast Date|Saturday Evening|Programme Timeline
+On which date was the final regular episode of All Together Now broadcast?|13 April 2019|2 March 2019|24 December 2018|3 March 2018|Medium|Last Episode|April 2019|Series Two Finale|BBC One|Broadcast Date|Programme Ending|Series Conclusion
+Approximately how long was each contestant's song performance on All Together Now?|90 seconds|30 seconds|3 minutes|5 minutes|Medium|Performance Length|Ninety Seconds|Singing Format|Timed Round|The 100|Competition Rules|BBC Talent Show
+During approximately how much of a performance could The 100 join in on All Together Now?|The final 60 seconds|The first 15 seconds|The entire three minutes|Only the final ten seconds|Medium|Joining In Window|Sixty Seconds|Voting Rules|The 100|Performance Structure|Scoring Period|Format
+What studio cue told The 100 that they could start joining in on All Together Now?|A change in the lighting|A bell ringing|A flashing scoreboard|A signal from Rob Beckett|Medium|Lighting Change|Voting Window|The 100|Competition Format|Studio Cue|Live Singing|Judging Process
+How were tied scores resolved between contestants on All Together Now?|The 100 replayed performances and voted|The contestants answered questions|The singers competed in a dance-off|Rob Beckett tossed a coin|Medium|Score Tie|Performance Replay|Tie Break|The 100|Studio Monitors|Judging Rules|Competitive Format
+What did members of The 100 use to vote in an All Together Now tie-break?|Their buttons|A paper ballot|A mobile phone app|An applause meter|Medium|Tie Break Vote|Button Voting|The 100|Replayed Performance|Studio Rules|Judges Decision|Scores
+Who had the casting vote if an All Together Now tie-break vote was also tied?|Geri Horner|Rob Beckett|The studio director|The first contestant to sing|Medium|Geri Horner|Casting Vote|Tie Break Rules|The 100 Captain|Deadlock|Judging Format|Final Decision
+How much more did Geri Horner's vote count than other votes in a normal All Together Now performance?|It counted the same as everyone else's|Twice as much|Ten times as much|It did not count at all|Medium|Geri Horner|Equal Votes|Judging Rules|The 100 Captain|Score Calculation|Voting Equality|Performance Format
+What happened to the seating positions of The 100 between episodes of All Together Now?|The positions were reshuffled|They were fixed throughout|They were selected by the audience|They changed only for the finale|Hard|The 100|Panel Positions|Seating Changes|Studio Organisation|Judge Placement|Series Format|Production Detail
+Which drag performer sat on The 100 panel in All Together Now and later appeared on RuPaul's Drag Race UK?|Divina de Campo|The Vivienne|Baga Chipz|Blu Hydrangea|Medium|Divina de Campo|The 100|Drag Performer|RuPauls Drag Race UK|Panellist|Music Talent|Later Television
+Which musical member of The 100 on All Together Now was known as The Singing Dentist?|Milad Shadrooh|Paul L Martin|Georg Tormann|Dom Waugh|Hard|The Singing Dentist|Milad Shadrooh|Music Expert|The 100|Judge Identity|Panellist|British Television
+Which member of The 100 was often seated beside Geri Horner on All Together Now?|Lili Davies|Divina de Campo|Talia Mar|Celestina|Hard|Lili Davies|Geri Horner|The 100|Panellist Placement|Romanian Singer|Judge Identity|Studio Cast
+At which Salford television studio complex was All Together Now filmed?|dock10|Elstree Studios|Pinewood Studios|Television Centre London|Medium|dock10|Salford|Studio Complex|Filming Location|BBC One|Production Site|MediaCityUK
+In which English city was the BBC version of All Together Now filmed?|Salford|Bristol|Liverpool|Birmingham|Medium|Salford|dock10|Greater Manchester|Studio Filming|BBC One|Production Geography|Television Production
+Who designed the immersive studio set used for All Together Now?|Dominic Tolfts|Marc Bassett|James Fox|David Leckie|Hard|Dominic Tolfts|Set Designer|Studio Design|Lighting Production|360 Degree Set|Visual Identity|Behind the Scenes
+Which company supplied LED systems for the All Together Now studio set?|LED Creative|Industrial Light and Magic|Arqiva|Red Bee Media|Hard|LED Creative|Studio Lighting|LED Systems|Sigma Equipment|Stage Set|Visual Effects|Production Technology
+Which two television creatives originated the All Together Now competition format?|James Fox and Dom Waugh|Rob Beckett and Geri Horner|Marc Bassett and Kate Phillips|Simon Cowell and Nigel Lythgoe|Medium|James Fox|Dom Waugh|Remarkable Television|Format Creators|Development Team|Production Origins|BBC Singing Show
+Which television production group owned Remarkable Entertainment when All Together Now launched?|Endemol Shine Group|Fremantle|ITV Studios|BBC Studios|Medium|Endemol Shine Group|Remarkable Entertainment|Parent Company|Television Format|BBC Commission|Production Company|Business History
+Which composer was credited with the title music of All Together Now?|Marc Sylvan|Hans Zimmer|David Arnold|Simon May|Medium|Marc Sylvan|Title Music|Composer|Programme Theme|Music Credits|British Television|Soundtrack
+Which actor sang You Need Me I Don't Need You in the All Together Now celebrity special?|Tyger Drew-Honey|Ben Foden|Chris Kamara|Omid Djalili|Medium|Tyger Drew Honey|Celebrity Special|Ed Sheeran Song|Christmas Eve|2018|Guest Performance|Actor
+Which song did actress Laurie Brett sing before the final sing-off in the All Together Now celebrity special?|Wind Beneath My Wings|The Best|I Will Survive|Big Spender|Medium|Laurie Brett|Celebrity Special|First Performance|Bette Midler|2018|EastEnders Actress|Christmas Programme
+How many points did Omid Djalili score singing Sway in the All Together Now celebrity special?|97|75|88|99|Hard|Omid Djalili|Sway|Celebrity Special|2018|First Round|Scoreboard|Singer Performance
+What score did Gemma Collins receive for This Is Me in the All Together Now celebrity sing-off?|39|88|75|99|Hard|Gemma Collins|This Is Me|Celebrity Final|2018|The Greatest Showman|Sing Off Score|Third Place
+Which BBC singing competition had All Together Now's 2019 winner Shellyann Evans previously competed in?|The Voice UK|Fame Academy|The X Factor|Stars in Their Eyes|Medium|Shellyann Evans|The Voice UK|Previous Contest|2019 Winner|Career History|Talent Competition|Singing Background
+Which All Together Now contestant later appeared on RuPaul's Drag Race UK as a competitor?|Veronica Green|Bernadette Bangura|Jodie Steele|Tabi Gazele|Medium|Veronica Green|Drag Race UK|2019 Heat One|Get The Party Started|Later Career|Television Crossover|Contestant
+Which country first broadcast an international adaptation of the UK All Together Now format?|Brazil|Australia|Denmark|Italy|Medium|Brazil|Canta Comigo|First Adaptation|International Franchise|Remarkable Format|2018|Global Expansion`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(value => value.trim());
   if (fields.length !== 13) throw new Error(`Expected 13 fields in ${id}; found ${fields.length}`);
   const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = fields;
@@ -112,8 +146,11 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : 'In All Together Now, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
-  return { id, category: 'Television', programme, question, answers,
+  return { id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true };
 });
 
