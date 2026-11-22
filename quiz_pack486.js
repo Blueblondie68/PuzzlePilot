@@ -3157,14 +3157,14 @@ const auditQuestions=[
     "id": "tv_42952",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "In As the World Turns, which actor portrayed Bob Hughes shortly before Don Hastings took over the role?",
+    "question": "In As the World Turns, which actor portrayed Judge James T. Lowell in the early years?",
     "answers": [
-      "Don MacLaughlin",
-      "Ronnie Welsh",
+      "William Johnstone",
       "Mark Rydell",
-      "William Johnstone"
+      "Nat Polen",
+      "Don MacLaughlin"
     ],
-    "correctAnswer": "Ronnie Welsh",
+    "correctAnswer": "William Johnstone",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -3177,12 +3177,12 @@ const auditQuestions=[
       "1956–1969 Early Years",
       "Written Quiz",
       "Section: Audit Cast",
-      "Ronnie Welsh",
-      "Bob Hughes",
-      "Don Hastings",
-      "1960 Recast",
-      "Hughes Family",
-      "Early Cast"
+      "William Johnstone",
+      "Judge James T Lowell",
+      "Original Cast",
+      "1956 Role",
+      "Lowell Family",
+      "Character Actor"
     ]
   }
 ];
