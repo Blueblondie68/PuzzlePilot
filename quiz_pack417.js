@@ -120,12 +120,47 @@
  `Which actress returned to the role of Liza Colby in 2009's All My Children?|Jamie Luner|Marcy Walker|Jennifer Bassey|Kelly Ripa|Medium|Jamie Luner|Liza Colby|2009 recast|actor casting|Colby Chandler|return|lawyer`,
  `What was the name Liza Colby gave the baby boy she claimed as her son in All My Children in 2009?|Stuart|Adam|Jamie|Ian|Hard|Liza Colby|baby Stuart|2009|Jake Martin|Amanda Dillon|false birth|family secret`,
  `Which woman was the biological mother of the baby Liza Colby passed off as hers in 2009's All My Children?|Amanda Dillon|Babe Carey|Annie Novak|Krystal Carey|Medium|Amanda Dillon|Liza Colby|2009|baby switch|Jake Martin|birth mother|child`,
- `Who was revealed to be the father of Amanda Dillon's baby in All My Children in 2009?|David Hayward|Jake Martin|JR Chandler|Tad Martin|Medium|Amanda Dillon|David Hayward|2009|baby parentage|Liza Colby|Jake Martin|paternity`,
+ `Who was initially believed to be the father of Amanda Dillon's baby in All My Children in 2009?|David Hayward|Jake Martin|JR Chandler|Tad Martin|Medium|Amanda Dillon|David Hayward|2009|baby parentage|Liza Colby|Jake Martin|paternity`,
  `Which character was believed killed in a motorcycle crash before making a later return in All My Children?|Greenlee Smythe|Bianca Montgomery|Erica Kane|Liza Colby|Medium|Greenlee Smythe|motorcycle crash|February 2009|river ravine|Ryan Lavery|presumed dead|later comeback`,
  `Which actress played Annie Lavery during her 2009 relationship with Adam Chandler in All My Children?|Melissa Claire Egan|Tamara Braun|Eden Riegel|Alicia Minshew|Medium|Melissa Claire Egan|Annie Lavery|2009|Adam Chandler|actor casting|marital turmoil|romance`,
  `Which family name belonged to both wealthy twin brothers Adam and Stuart in All My Children?|Chandler|Cortlandt|Martin|Marick|Easy|Adam Chandler|Stuart Chandler|twins|wealthy family|2009|family name|business dynasty`,
  `Which former head writer returned on an interim basis to guide All My Children late in 2009?|Lorraine Broderick|Megan McTavish|Agnes Nixon|Gloria Monty|Hard|Lorraine Broderick|2009|interim head writer|Charles Pratt Jr|production change|creative team|soap writers`
  ];
+
+
+ // 2000-2009 story-gap audit: retain original question IDs.
+ const ORIGINAL_COUNT = rows.length;
+ const AUDIT_NEW_FIRST_ID = 41996;
+ rows.push(
+   `In All My Children, what former identity had Reverend Eliot Freeman hidden from Brooke English?|Josh Waleski|Jim Thomasen|Trey Kenyon|Chris Stamp|Medium|Brooke English|Eliot Freeman|Josh Waleski|2000|secret identity|past tragedy|religious conversion`,
+   `In All My Children, whose death in a drink-driving accident linked Reverend Eliot Freeman to Brooke English's past?|Brooke's daughter Laura|Brooke's son Jamie|Phoebe Wallingford|Maria Santos|Medium|Brooke English|Laura Cudahy|Eliot Freeman|2000|fatal accident|past remorse|family history`,
+   `In All My Children, which foster child was temporarily cared for by Brooke English and Reverend Eliot Freeman?|Ricky Collins|Jamie Martin|Scott Chandler|Spike Lavery|Hard|Brooke English|Eliot Freeman|Ricky Collins|2000|temporary guardianship|community centre|foster care`,
+   `In All My Children, which woman shot Gillian Andrassy in 2001 before her organs were donated?|Ilene Pringle|Vanessa Bennett|Janet Dillon|Arlene Vaughan|Hard|Gillian Andrassy|Ilene Pringle|2001|fatal shooting|organ donation|Laura Kirk|Ryan Lavery`,
+   `In All My Children, which powerful criminal was unmasked as drug lord Proteus?|Vanessa Bennett|Adam Chandler|Palmer Cortlandt|David Hayward|Medium|Proteus|Vanessa Bennett|2001|drug cartel|secret kingpin|criminal empire|Pine Valley investigation`,
+   `In All My Children, which undercover federal agent helped investigate the Proteus drug operation?|Chris Stamp|Trevor Dillon|Jackson Montgomery|Jesse Hubbard|Medium|Chris Stamp|FBI|Proteus|2001|undercover investigation|drug trafficking|federal agent`,
+   `In All My Children, which actor portrayed the federal agent Chris Stamp?|Jack Scalia|Michael Nader|Walt Willey|James Kiberd|Medium|Jack Scalia|Chris Stamp|2001 debut|FBI agent|actor casting|Proteus investigation|performer`,
+   `In All My Children, where did Leo du Pres and Greenlee Smythe marry privately in 2002?|At a boathouse|At Wildwind|At the Fusion offices|At Pine Valley Hospital|Medium|Leo du Pres|Greenlee Smythe|2002|private wedding|boathouse ceremony|romantic elopement|marriage`,
+   `In All My Children, which lawyer was revealed as Leo du Pres's older half-brother in 2002?|Trey Kenyon|Ryan Lavery|Ethan Cambias|Aidan Devane|Medium|Leo du Pres|Trey Kenyon|Vanessa Bennett|2002|secret brother|hidden family|lawyer`,
+   `In All My Children, who set fire to Erica Kane's home and framed Kendall Hart for arson?|Trey Kenyon|Michael Cambias|David Hayward|Jonathan Lavery|Medium|Erica Kane|Trey Kenyon|Kendall Hart|2002|arson|framed suspect|family hostility`,
+   `In All My Children, which actor played the lawyer Trey Kenyon?|Sam Page|Josh Duhamel|James Scott|Aiden Turner|Medium|Sam Page|Trey Kenyon|2002|casting|Vanessa Bennett|lawyer character|actor`,
+   `In All My Children, which woman was the biological mother of Zach Slater's son Ethan Cambias?|Hannah Nichols|Vanessa Bennett|Maria Santos|Annie Novak|Medium|Ethan Cambias|Hannah Nichols|Zach Slater|2000s revelation|biological mother|Cambias lineage|secret son`,
+   `In All My Children, which couple raised Ethan Cambias before he learnt the truth of his parentage?|Stanley and Edith Ramsey|Joe and Ruth Martin|Palmer and Daisy Cortlandt|Adam and Marian Chandler|Hard|Ethan Cambias|Stanley Ramsey|Edith Ramsey|adoption|2004|family background|hidden paternity`,
+   `In All My Children, which hotel was associated with Zach Slater when he came to Pine Valley?|The Seasons East|The Valley Inn|Wildwind Lodge|The Chateau|Medium|Zach Slater|Seasons East|2004|hotel owner|business interests|newcomer|Pine Valley hospitality`,
+   `In All My Children, which actress played Lena Kundera during Bianca Montgomery's romance?|Olga Sosnovska|Eden Riegel|Elizabeth Hendrickson|Tamara Braun|Medium|Olga Sosnovska|Lena Kundera|2003|Bianca Montgomery|actor casting|same sex romance|performer`,
+   `In All My Children, who discovered that baby Bess was really Bianca's missing daughter Miranda in 2004?|Babe Carey|Liza Colby|Annie Novak|Greenlee Smythe|Medium|Babe Carey|Bess Chandler|Miranda Montgomery|2004|baby switch|true maternity|discovery`,
+   `In All My Children, who tampered with DNA evidence to conceal the truth about baby Bess?|Krystal Carey|Maggie Stone|Kendall Hart|Janet Dillon|Hard|Krystal Carey|Bianca Montgomery|Babe Carey|2004|falsified DNA|baby switch coverup|maternal interference`,
+   `In All My Children, which woman cared for Tad and Dixie's lost daughter Kate before her parentage was uncovered?|Julia Santos|Maria Santos|Opal Gardner|Brooke English|Medium|Kate Martin|Kathy Mershon|Julia Santos|2008|foster guardian|lost child|family reunion`,
+   `In All My Children, under what surname was Tad and Dixie's missing daughter Kate raised?|Mershon|Montgomery|Smythe|Chandler|Medium|Dixie Cooney|Tad Martin|Kate Martin|2008|adoptive name|lost daughter|family search`,
+   `In All My Children, whom did Tad Martin marry on Christmas Eve in 2007?|Krystal Carey|Dixie Cooney|Liza Colby|Brooke English|Medium|Tad Martin|Krystal Carey|2007|Christmas Eve wedding|romantic history|Jenny Martin|family marriage`,
+   `In All My Children, who was the mother of Jesse Hubbard's daughter Natalia Fowler?|Rebecca Fowler|Angie Hubbard|Randi Morgan|Cassandra Foster|Medium|Jesse Hubbard|Natalia Fowler|Rebecca Fowler|2008|secret daughter|paternity|past relationship`,
+   `In All My Children, which criminal kidnapped Frankie Hubbard and Colby Chandler to force Jesse out of hiding?|Rob Gardner|David Hayward|Jonathan Lavery|Alexander Cambias|Medium|Jesse Hubbard|Rob Gardner|Frankie Hubbard|2008|kidnapping|Colby Chandler|return from hiding`,
+   `In All My Children, which newcomer in 2009 was revealed as Babe Carey's fraternal twin sister?|Marissa Tasker|Amanda Dillon|Randi Morgan|Colby Chandler|Medium|Babe Carey|Marissa Tasker|2009|twin sister|hidden sibling|David Hayward|Krystal Carey`,
+   `In All My Children, whom did JR Chandler marry in 2009 after Babe's death?|Marissa Tasker|Annie Novak|Amanda Dillon|Randi Morgan|Medium|JR Chandler|Marissa Tasker|2009|marriage|Chandler family|Babe Carey|new relationship`,
+   `In All My Children, what type of cancer was JR Chandler diagnosed with in 2009?|Lymphoma|Leukaemia|Myeloma|Melanoma|Medium|JR Chandler|Marissa Tasker|2009|cancer diagnosis|medical crisis|Chandler family|relationship strain`,
+   `In All My Children, which friend helped Jake Martin hide Amanda Dillon's baby from David Hayward?|Taylor Thompson|Randi Morgan|Natalia Fowler|Liza Colby|Medium|Jake Martin|Taylor Thompson|Amanda Dillon|2009|Trevor Martin|secret hiding place|custody conflict`,
+   `In All My Children, who was ultimately revealed to have accidentally shot Stuart Chandler in the 2009 mystery?|Adam Chandler|Kendall Hart|Zach Slater|Annie Novak|Hard|Stuart Chandler|Adam Chandler|2009|accidental shooting|twin identity|murder mystery|Chandler mansion`,
+   `In All My Children, whose tampering with Adam Chandler's heart medication contributed to the confusion over Stuart's shooting?|David Hayward|Joe Martin|Jake Martin|Zach Slater|Medium|Adam Chandler|David Hayward|2009|heart medication|Stuart Chandler|shooting confusion|doctor misconduct`,
+ );
 
  const questions = rows.map((row, index) => {
    const parts = row.split('|').map(part => part.trim());
@@ -149,7 +184,7 @@
      throw new Error(`Pack 417: expected 13 distinct tags at row ${index + 1}`);
    }
    return {
-     id: `tv_${FIRST_ID + index}`,
+     id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT}`,
      category: 'Television',
      question,
      answers,
