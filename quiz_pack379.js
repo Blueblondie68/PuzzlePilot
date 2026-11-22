@@ -46,7 +46,7 @@ Which broadcaster aired the third series after the programme changed networks?|B
 In what year was the first episode screened?|1992|1989|1994|1997|Easy|1992 Premiere|Series One|Original Broadcast|ITV|Television Timeline|Programme Start|February
 In what year did the original television run conclude?|1998|1995|2001|2003|Easy|1998 Finale|Farewell Specials|Programme End|BBC One|Television Timeline|Final Run|1990s
 How many regular series were produced?|Six|Four|Five|Eight|Medium|Six Series|1992 To 1997|Programme Count|British Comedy|Television Catalogue|Broadcast Statistics|Original Run
-How many regular episodes does the British Comedy Guide count, excluding short specials?|42|36|48|52|Medium|Forty Two Episodes|Episode Count|Six Series|BCG Listing|Production Statistics|Sitcom Catalogue|Regular Run
+How many episodes does the British Comedy Guide count, including the main specials?|42|36|48|52|Medium|Forty Two Episodes|Episode Count|Six Series|BCG Listing|Production Statistics|Sitcom Catalogue|Regular Run
 What was the title of the very first episode?|Intruders|The Bet|Lovers|Gary and Tony|Medium|Intruders|Series One|1992 Premiere|Pilot Story|First Episode|ITV|Episode Title
 Which episode closes the first television series?|My Brilliant Career|Sex and Violence|The Bet|Going Nowhere|Medium|My Brilliant Career|Series One Finale|1992|Episode Sequence|Harry Enfield|Early Series|Episode Title
 What is the title of the first episode with Tony as the regular new flatmate?|Gary and Tony|Lovers|Rent Boy|Three Girlfriends|Medium|Gary And Tony|Series Two Premiere|New Lodger|Neil Morrissey|1992|Cast Change|Episode Title
@@ -140,11 +140,12 @@ function appendFacts(block, programme, era) {
       ? stem : `In ${programme}, ${stem[0].toLowerCase()}${stem.slice(1)}`;
     const answers = [wrong1, wrong2, wrong3];
     answers.splice(questions.length % 4, 0, correctAnswer);
-    const tags = [...new Map(['Television', 'British Sitcom', programme, era, correctAnswer, ...specificTags]
+    const tags = [...new Map(['Television', 'British Television', 'British Sitcom', 'Comedy', 'Sitcom', programme, 'Programme: '+programme, era, correctAnswer, ...specificTags]
       .map(tag => [tag.toLowerCase().replace(/[^a-z0-9]/g, ''), tag])).values()];
     const item = {
       id: `tv_${FIRST_ID + questions.length}`,
       category: 'Television',
+      programme,
       question,
       answers,
       correctAnswer,
@@ -168,4 +169,124 @@ for (const q of questions) {
   if (wordings.has(key)) throw new Error(`Duplicate question wording in ${q.id}`);
   wordings.add(key);
 }
-module.exports = questions;
+
+
+// Audited episode-story additions, researched against TVmaze and TheTVDB guides.
+// https://www.tvmaze.com/shows/4708/men-behaving-badly/episodeguide
+// https://thetvdb.com/series/men-behaving-badly/allseasons/official
+// https://www.tvmaze.com/shows/2773/outnumbered/episodeguide
+// https://thetvdb.com/series/outnumbered/allseasons/official
+// Original tv_19731–tv_19845 preserved; new questions begin tv_40368.
+const auditedMenRows = `In Intruders, who moves into the flat above Gary and Dermot?|Deborah|Dorothy|Anthea|Marjorie|Series 1|Intruders|New upstairs neighbour
+In The Bet, which board game do Gary and Dermot play?|Chess|Poker|Backgammon|Monopoly|Series 1|The Bet|Flatmates' wager
+In Alarms and Setbacks, what device does Gary install to impress Deborah?|A burglar alarm|A video intercom|A smoke detector|A satellite dish|Series 1|Alarms and Setbacks|Trying to impress neighbour
+In Animals, what arrangement does Gary suggest to Dorothy?|An open relationship|A trial separation abroad|Sharing a flat with Dermot|Moving in with Deborah|Series 1|Animals|Changing romantic rules
+In Sex and Violence, what does Dermot arrange for Deborah?|A romantic dinner|A seaside holiday|A surprise birthday concert|A weekend at a spa|Series 1|Sex and Violence|Dermot's courtship
+In My Brilliant Career, what action gets Dermot dismissed from his job?|Dangling a customer by the ankles|Selling the wrong alarm equipment|Missing a week's work|Breaking the office telephone|Series 1|My Brilliant Career|Dermot loses employment
+In Gary and Tony, where does Anthea become trapped after asking for more money?|A stationery cupboard|A walk-in freezer|The pub cellar|A lift in the office|Series 2|Gary and Tony|Anthea's pay-rise request
+In Rent Boy, which language does Tony falsely claim he knows?|German|Italian|Spanish|French|Series 2|Rent Boy|Pretended language skills
+In Troublesome 12 Inch, what colour makes Dorothy's valuable record unusual?|Green|Blue|Red|Gold|Series 2|Troublesome 12 Inch|Rare vinyl record
+In Going Nowhere, which two characters become stuck in a lift together?|Gary and Deborah|Tony and Dorothy|Dermot and Anthea|George and Marjorie|Series 2|Going Nowhere|Lift breakdown
+In People Behaving Irritatingly, which property makes Gary suddenly kinder to Tony's brother's girlfriend?|Her parents' holiday villa|Her family's antique shop|Her yacht in Spain|Her racing stables|Series 2|People Behaving Irritatingly|Prospect of a free holiday
+In Lovers, what figure does Gary falsely boast about concerning his romantic past?|More than fifty partners|Twenty weddings|Three engagements|A dozen overseas romances|Series 3|Lovers|Exaggerated romantic history
+In Bed, what outdoor problem is Tony sent to fix in stormy weather?|A banging fence|A leaking roof|A broken gate lock|A damaged television aerial|Series 3|Bed|Noisy garden fixture
+In Casualties, what does Deborah plan after selling her flat?|Travel around Asia|Move to Edinburgh|Open a hotel in Spain|Join a touring theatre company|Series 3|Casualties|Deborah's travel plan
+In Weekend, what venue do Gary and Dorothy visit to revive their relationship?|A country hotel|A music festival|A holiday camp|A sailing club|Series 3|Weekend|Romantic escape
+In Cleaning Lady, what is the name of the Portuguese cleaner hired for the flat?|Elena|Rita|Sandra|Mavis|Series 3|Cleaning Lady|New household employee
+In Marriage, at which restaurant does Gary propose to Dorothy?|The Pasta Pig|The Crown|The Silver Spoon|The Green Dragon|Series 3|Marriage|Unexpected engagement
+In Babies, what tradesperson must Tony admit into Deborah's flat?|A gas engineer|A plumber|An electrician|A carpenter|Series 4|Babies|Boiler service
+In Infidelity, which voluntary role does Tony attempt to impress Deborah?|A Samaritan|A football coach|A lifeguard|A hospital porter|Series 4|Infidelity|Voluntary good deed
+In Pornography, what does Tony's girlfriend Jill demand he discard?|His adult magazines|His record collection|His darts trophies|His old motorbike|Series 4|Pornography|Conflict over possessions
+In Three Girlfriends, who is juggling several romantic partners at once?|Tony Smart|Gary Strang|Dermot|Ken|Series 4|Three Girlfriends|Tony's tangled love life
+In Drunk, what promotion at The Crown delays Gary's romantic dinner?|Beers of the World|A live jazz night|A free comedy evening|A fancy-dress competition|Series 4|Drunk|Pub promotion
+In In Bed with Dorothy, what operation has Dorothy undergone?|An appendectomy|A knee replacement|A tonsillectomy|A hip replacement|Series 4|In Bed with Dorothy|Dorothy recuperates
+In Playing Away, what painful problem leads Tony to attempt a do-it-yourself extraction?|Toothache|An infected fingernail|A splintered toe|An ear infection|Series 4|Playing Away|Failed self-treatment
+In Hair, what facial feature does Tony grow while travelling around Europe?|A beard|A moustache|Sideburns|A goatee only|Series 5|Hair|Changed appearance
+In The Good Pub Guide, what does the new landlord intend to do to The Crown?|Refurbish it|Demolish it|Turn it into a hotel|Convert it into a supermarket|Series 5|The Good Pub Guide|Favourite pub threatened
+In Cowardice, what confrontation makes Gary appear frightened?|Road rage|A football terrace fight|A cinema dispute|A wedding quarrel|Series 5|Cowardice|Gary fails to act bravely
+In Your Mate v Your Bird, what permanent mark does Tony attempt to create himself?|A tattoo|A pierced ear|A scar|A dyed streak of hair|Series 5|Your Mate v Your Bird|Proving love to Deborah
+In Cardigan, what all-night event does Gary attend to prove he is not middle-aged?|A rave|A charity quiz|A poker tournament|A theatre premiere|Series 5|Cardigan|Trying to feel young
+In Rich and Fat, how much money does Tony discover in Gary's savings account?|£33,000|£3,300|£13,000|£53,000|Series 5|Rich and Fat|Unexpected savings
+In Home-Made Sauna, what nickname does Tony give his improvised sauna?|Shedna|Heat Hut|Steam Box|Sweat Shed|Series 5|Home-Made Sauna|Garden sauna
+In Stag Night, what does Tony unexpectedly have to help deliver?|A baby|A crate of beer|A wedding cake|A parcel for Dorothy|Series 6|Stag Night|Unexpected delivery
+In Jealousy, which habit does Gary try to give up during the caravan weekend?|Smoking|Playing darts|Drinking coffee|Watching football|Series 6|Jealousy|Trying to quit
+In Ten, which professional does Dorothy persuade Gary to consult?|A relationship counsellor|A financial adviser|A football manager|A speech therapist|Series 6|Ten|Couple's problems
+In Sofa, how old is Gary's cherished sofa before he agrees to replace it?|Twenty-five years|Ten years|Fifteen years|Forty years|Series 6|Sofa|Discarding old furniture
+In Jingle Balls, what new musical instrument is Tony excited about?|A drum kit|A saxophone|A trumpet|An electric guitar|Christmas 1997|Jingle Balls|Tony's Christmas present
+In Gary in Love, which seaside town hosts Gary's eventful work conference?|Worthing|Brighton|Eastbourne|Hastings|1998 special|Gary in Love|Work conference
+In Delivery, what bad news must Gary tell George and Anthea?|Their office is closing|They are moving to Spain|The office is being sold to a rival|The pub has been condemned|1998 special|Delivery|Office closure
+In The Naughty Boys, which decade is parodied in the black-and-white charity sketch?|The 1960s|The 1920s|The 1980s|The 1940s|1999 Comic Relief|The Naughty Boys|Period parody
+In the Stand Up to Cancer sketch, what condition do Gary and Tony discuss for the charity appeal?|Testicular cancer|Skin cancer|Lung cancer|Bowel cancer|2014 charity sketch|Stand Up to Cancer|Cancer-awareness appeal`;
+const auditedOutRows = `In The School Run, what tool does Ben insist on taking to school?|An electric drill|A chainsaw|A hammer|A spanner|Series 1|The School Run|Ben's school request
+In The School Run, what insect does Karen want to keep as a pet?|A head louse|A butterfly|A ladybird|A stick insect|Series 1|The School Run|Karen's hair and pets
+In The Special Bowl, who is Sue increasingly in conflict with?|Her sister Angela|Grandad Frank|A neighbour called Jane|Pete's colleague|Series 1|The Special Bowl|Conflict between relatives
+In The City Farm, what subject of Pete's ill-judged school joke lands him in trouble?|Ramadan and obesity|Footballers|Vegan school dinners|The school swimming pool|Series 1|The City Farm|Meeting headmaster
+In The Quiet Night In, whose late-arriving mother spoils Pete and Sue's evening?|Karen's friend's|Ben's friend's|Jake's teacher's|Grandad's neighbour's|Series 1|The Quiet Night In|Delayed guest collection
+In The Mystery Illness, what recent event makes Auntie Angela unhappy?|Her boyfriend ended their relationship|She lost her house keys|She failed an exam|Her car was stolen|Series 1|The Mystery Illness|Angela's breakup
+In The Dinner Party, which alcoholic drink does Ben try for the first time?|Gin|Rum|Beer|Sherry|Series 1|The Dinner Party|Dinner goes wrong
+In The Wedding, which relative is getting married?|Cousin Julie|Auntie Angela|Grandad Frank|Pete's brother|Series 2|The Wedding|Family wedding
+In The Wedding, what does Karen call her elevated role at the ceremony?|Executive bridesmaid|Assistant bride|Chief flower girl|Wedding marshal|Series 2|The Wedding|Karen's wedding duties
+In The Dead Mouse, which animal's death upsets Karen?|A mouse|A hamster|A rabbit|A pigeon|Series 2|The Dead Mouse|Grieving for animal
+In The Old-Fashioned Sunday, what other modern entertainment is banned alongside television?|Computers|Books|Football|Board games|Series 2|The Old-Fashioned Sunday|No modern electronics
+In The Old-Fashioned Sunday, what kind of tin is linked to Grandad's accident?|Baked beans|Peaches|Soup|Corned beef|Series 2|The Old-Fashioned Sunday|Grandad's fall
+In The Airport, what coffee drink are the children allowed that worsens the travel chaos?|Double espresso|Iced latte|Hot chocolate|Cappuccino|Series 2|The Airport|Caffeinated children
+In The Night Out, what nationality is the babysitter left with the Brockman children?|Croatian|Spanish|German|Swedish|Series 2|The Night Out|Babysitting
+In The Football Match, whom does Ben anger with his conduct on the field?|The referee|The groundsman|The opposing captain|The team mascot|Series 2|The Football Match|Football dispute
+In The Long Night, what weather event keeps the Brockmans awake?|A thunderstorm|A heatwave|A blizzard|Heavy fog|Series 2|The Long Night|Noisy night
+In The Long Night, to which political leader does Karen write about her teacher?|The Prime Minister|The Mayor of London|The Education Secretary|The monarch|Series 2|The Long Night|Complaint letter
+In The Robbers, which missing pet worries Karen?|Her hamster|Her rabbit|Her guinea pig|Her goldfish|Christmas 2009|The Robbers|Missing pet
+In The Robbers, what unusual mechanical object does Ben play with?|A mechanical hand|A robotic dog|A clockwork train|A remote-control helicopter|Christmas 2009|The Robbers|Christmas present
+In The Family Outing, which historic warship does the family visit?|HMS Belfast|HMS Victory|HMS Warrior|HMS Cavalier|Series 3|The Family Outing|Warship visit
+In The Internet, which board game gets an unusual Brockman-family twist?|Chess|Cluedo|Monopoly|Scrabble|Series 3|The Internet|Ben's game ideas
+In The Tennis Match, which talent competition does Karen recreate?|Britain's Got Talent|The X Factor|Strictly Come Dancing|The Voice|Series 3|The Tennis Match|Karen's talent show
+In The Pigeon, which historical campaign is Ben re-enacting?|The Crusades|The Battle of Waterloo|The Boer War|The Napoleonic Wars|Series 3|The Pigeon|Ben's imagination
+In The Pigeon, whom does Ben show around the family home?|Prospective buyers|Estate repair workers|School inspectors|Football teammates|Series 3|The Pigeon|Property viewing
+In The Restaurant, what profession does Auntie Angela's American husband practise?|Therapist|Dentist|Architect|Chef|Series 3|The Restaurant|Angela's husband
+In The Hospital, what expedition does Ben recreate on the stairs?|Climbing Everest|Crossing the Sahara|Sailing the Atlantic|Walking to the South Pole|Series 3|The Hospital|Ben's adventure game
+In The Girls' Day Out, whom does Karen challenge while shopping?|Charity fundraisers|Car-park wardens|Tour guides|School governors|Series 4|The Girls' Day Out|Chuggers
+In The Parents' Evening, which epidemic does Ben discuss with teachers?|The Great Plague|The Spanish flu|The Black Death of 1348|A cholera outbreak in India|Series 4|The Parents' Evening|Historical re-enactment
+In The Cold Caller, what school event inspires Ben to devise a double act?|A talent competition|An athletics meet|A spelling bee|A school fête|Series 4|The Cold Caller|Performance plans
+In the 2011 Children in Need sketch, which band's television theme do the children sing?|The Monkees|The Beatles|The Kinks|The Who|2011 charity sketch|Children in Need|Kids sing theme song
+In The Broken Santa, what unusual present does Ben receive?|A metal detector|A telescope|A violin|A microscope|Christmas 2011|The Broken Santa|Festive gift
+In The Sick Party, what illness spreads at the neighbours' Christmas gathering?|A stomach virus|A chest infection|Chickenpox|Hay fever|Christmas 2012|The Sick Party|Unwelcome infection
+In The Hamster, which child is struggling with a new secondary school?|Karen|Ben|Jake|Zara|Series 5|The Hamster|Adjusting to school
+In The Swimming Competition, what faulty office equipment causes Sue problems?|A printer|A photocopier|A desk telephone|A scanner|Series 5|The Swimming Competition|Sue's office frustration
+In The Chinese Horde, who lacks money or transport while trying to get home?|Jake|Ben|Pete|Grandad|Series 5|The Chinese Horde|Difficult journey
+In The Musical, which missing animal does Karen hope to find again?|Her hamster|Her pet snake|A neighbour's dog|A rabbit|Series 5|The Musical|Escaped pet
+In the 2011 Comic Relief special, which tennis player receives advice from Ben?|Andy Murray|Tim Henman|Roger Federer|Rafael Nadal|2011 Comic Relief|Tennis cameo|Ben offers tips
+In the 2024 Christmas special, what transport disruption complicates the gathering?|Bus replacement services|An airport baggage strike|A blocked ferry terminal|Cancelled flights to France|Christmas 2024|Reunion special|Travel trouble`;
+const strict379=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB').replace(/[^\p{L}\p{N}]/gu,'');
+function addAudited379(block,programme,era){
+ for(const [index,row] of block.trim().split('\n').entries()){
+  const p=row.split('|').map(x=>x.trim());
+  if(p.length!==8||p.some(x=>!x))throw Error('Bad Pack 379 audit row '+programme+' '+index);
+  const [stem,correctAnswer,a,b,c,series,episode,focus]=p;
+  const match=/^In (.+?), (.+)$/.exec(stem);
+  const special=/^In the (\d{4}) (Children in Need sketch|Comic Relief special|Christmas special|Stand Up to Cancer sketch), (.+)$/.exec(stem);
+  let question;
+  if(special)question='In '+programme+' ('+special[1]+' '+special[2]+'), '+special[3];
+  else if(match)question='In '+programme+', during "'+match[1]+'", '+match[2];
+  else question=stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB'))
+    ?stem:'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1);
+  const answers=[a,b,c];answers.splice(questions.length%4,0,correctAnswer);
+  const tags=['Television','British Television','British Sitcom','Comedy','Sitcom',
+   programme,'Programme: '+programme,era,'Series/special: '+series,'Episode: '+episode,
+   'Storyline: '+focus,'Correct answer: '+correctAnswer,
+   'Episode incident: '+focus,'Episode era: '+era,'Character/story focus: '+focus];
+  questions.push({id:'tv_'+(40368+questions.length-115),
+   category:'Television',programme,question,answers,correctAnswer,
+   difficulty:'Medium',tags,dailyEligible:true});
+ }
+}
+addAudited379(auditedMenRows,'Men Behaving Badly','1992-1998');
+addAudited379(auditedOutRows,'Outnumbered','2007-2024');
+const ids379=new Set(),txt379=new Set();
+for(const q of questions){
+ const k=strict379(q.question);
+ if(q.category!=='Television'||!q.programme||!q.tags.includes('Programme: '+q.programme)||
+  q.answers.length!==4||new Set(q.answers.map(strict379)).size!==4||
+  q.answers.filter(a=>a===q.correctAnswer).length!==1||
+  q.tags.length<12||q.dailyEligible!==true||ids379.has(q.id)||txt379.has(k))throw Error('Pack 379 validation failed '+q.id);
+ ids379.add(q.id);txt379.add(k);
+}
+module.exports=questions;
