@@ -94,9 +94,26 @@ Who voiced Vincent van Coconut in the Disney Junior revival?|Tim Hibber|Francis 
 In the Disney Junior revival, what did the presenter explain as a crafts artist worked?|Step-by-step creation of three artworks|Rules for an art auction|How to build a television studio|Tips for selling gallery tickets|Easy|Disney Junior Format|Step By Step|Three Works|Artist Footage|Narration|Creative Education|Craft Techniques
 Which year saw the British Disney Junior Art Attack revival finish?|2015|2011|2017|2007|Medium|2015 Finale|Disney Junior|End Of Revival|Lloyd Warbey|Television History|UK Version|Final Broadcast`;
 
+
+// Focused verified BAFTA audit and original/revival broadcast dates; preserve original IDs.
+const AUDIT_ORIGINAL_COUNT = 80;
+const AUDIT_FIRST_ID = 42444;
+const auditFacts = `In which year did Art Attack win BAFTA's Children's Programme - Factual award?|1993|1992|1995|1996|Medium|1993 BAFTA Win|Children Programme Factual|BAFTA Television Award|First Major Award|Tim Edmunds|Programme Recognition|ITV
+Which BAFTA television category did Art Attack win in 1993?|Children's Programme - Factual|Children's Programme - Drama|Best Entertainment Performance|Best Animation|Medium|1993 BAFTA Award|Factual Children Programme|British Academy|Category Winner|Creative Television|Tim Edmunds|CITV
+Who was credited by BAFTA for Art Attack's 1993 win in Children's Programme - Factual?|Tim Edmunds|Neil Buchanan|Francis Wright|David Tasker|Medium|Tim Edmunds|1993 BAFTA Award|Winning Credit|Producer|Art Attack Co Creator|British Academy|Factual Television
+Which publicly voted BAFTA prize did Art Attack win in 1999?|BAFTA Kids' Vote|Children's Drama|Children's Factual|Best Feature Film|Medium|1999 BAFTA Win|BAFTA Kids Vote|Publicly Voted Award|Children Audience|BBC ITV Television|Viewer Recognition|Award History
+In which year did Art Attack win the BAFTA Kids' Vote?|1999|1997|2001|2003|Medium|1999 BAFTA Win|Kids Vote|Audience Award|Children Television|Publicly Voted|Programme Recognition|Awards History
+Which Art Attack festive special was nominated for a Children's Factual BAFTA in 1997?|Art Attack: Christmas Cracker|Art Attack: Best of Art Attack|Art Attack: Mini-Makes|Art Attack: Scrapbook|Medium|Christmas Cracker|1997 BAFTA Nomination|Children Factual|Neil Buchanan|Tim Edmunds|Festive Special|Award Record
+Which duo received the credited BAFTA nomination for Art Attack: Christmas Cracker in 1997?|Neil Buchanan and Tim Edmunds|Neil Buchanan and Jim Sweeney|Francis Wright and Andrew O'Connor|David Tasker and Peter Urie|Medium|Neil Buchanan|Tim Edmunds|1997 BAFTA Nomination|Christmas Cracker|Children Factual|Credits|British Television
+Which two people were credited for Art Attack's BAFTA Children's Factual nomination in 2002?|Nic Ayling and Peter Eyre|Neil Buchanan and Tim Edmunds|David Tasker and Francis Wright|Peter Urie and Andrew O'Connor|Hard|Nic Ayling|Peter Eyre|2002 BAFTA Nomination|Childrens Factual|Production Credits|British Academy|CITV
+Which of these years did Art Attack receive a BAFTA nomination in the Children's Programme - Factual category?|1996|1986|2006|2016|Medium|1996 BAFTA Nomination|Childrens Programme Factual|Neil Buchanan|Tim Edmunds|British Academy|Nomination Year|ITV
+On which date was the first episode of Art Attack broadcast in Britain?|15 June 1990|1 January 1990|21 September 1991|3 February 1992|Medium|15 June 1990|Original Premiere|CITV Debut|British Broadcast|1990 Launch|Programme History|Neil Buchanan
+On which date did the Disney Junior revival of Art Attack launch in Britain?|6 June 2011|15 June 1990|1 January 2012|12 June 2015|Medium|6 June 2011|Disney Junior|Revival Premiere|Jassa Ahluwalia|British Broadcast|Programme Timeline|Arts and Crafts
+What was the name of the BAFTA category in which Art Attack received another nomination in 2002?|Children's Factual|Children's Drama|Children's Animation|Children's Feature Film|Medium|2002 BAFTA Nomination|Childrens Factual|British Academy|Programme Recognition|CITV|Awards Category|Behind the Scenes`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(value => value.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields in ${id}; found ${fields.length}`);
@@ -111,8 +128,13 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In which ')
+      ? 'In Art Attack, which ' + question.slice(9)
+      : 'In Art Attack, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
-  return { id, category: 'Television', programme, question, answers,
+  return { id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true };
 });
 
