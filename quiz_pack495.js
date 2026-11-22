@@ -1,6 +1,12 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 495: Below Deck (Original Series) Season 5 (2017)
-// 46 factual four-option questions; IDs tv_27935–tv_27980; original Bravo series ONLY.
+// 56 audited four-option questions: 46 originals plus 10 unique crew, production, reunion and cast facts.
+// Original IDs tv_27935–tv_27980; audit IDs tv_43147–tv_43156.
+// Original Bravo series ONLY.
 // Cast, charters, crew drama, workplace incidents, episode events, finale and reunion.
+// 22 Nov 2026 audit sources: Bravo original Season 5 episode guides,
+// Bravo filming-location guide, Captain Lee crew assessments, EJ and Chris
+// 2017 exit reports, Season 5 reunion account and Bravo casting history.
+// Existing answers and IDs preserved; each question names Below Deck.
 // Official Bravo episode listings and cast information:
 // https://www.bravotv.com/below-deck/season-5/ep-1-the-1-percenters
 // https://www.bravotv.com/the-daily-dish/every-below-deck-member-ever-seasons-1-7
@@ -49,7 +55,7 @@ const questions = [
     "id": "tv_27936",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who takes over as Valor's chef for the fifth season after Ben Robinson's earlier stint?",
+    "question": "In Below Deck Season 5, who takes over as Valor's chef for the fifth season after Ben Robinson's earlier stint?",
     "answers": [
       "Leon Walker",
       "Adrian Martin",
@@ -81,7 +87,7 @@ const questions = [
     "id": "tv_27937",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which personal tragedy is Nico struggling with at the beginning of the fifth season?",
+    "question": "In Below Deck Season 5, which personal tragedy is Nico struggling with at the beginning of the fifth season?",
     "answers": [
       "The loss of his childhood home",
       "His parents' divorce",
@@ -113,7 +119,7 @@ const questions = [
     "id": "tv_27938",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "How many new crew members join the returning trio in the fifth-season premiere?",
+    "question": "In Below Deck Season 5, how many new crew members join the returning trio in the fifth-season premiere?",
     "answers": [
       "Six",
       "Four",
@@ -146,7 +152,7 @@ const questions = [
     "id": "tv_27939",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "How do the first charter guests describe their own adventurous personalities in Season 5?",
+    "question": "In Below Deck Season 5, how do the first charter guests describe their own adventurous personalities in Season 5?",
     "answers": [
       "Luxury cruise reviewers",
       "Adrenaline junkies",
@@ -177,7 +183,7 @@ const questions = [
     "id": "tv_27940",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which new stewardess is pursued by several crew members early in Season 5?",
+    "question": "In Below Deck Season 5, which new stewardess is pursued by several crew members early in Season 5?",
     "answers": [
       "Amy Johnson",
       "Sierra Storm",
@@ -208,7 +214,7 @@ const questions = [
     "id": "tv_27941",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who is Kate's third stewardess, later known for repeated workplace clashes with her?",
+    "question": "In Below Deck Season 5, who is Kate's third stewardess, later known for repeated workplace clashes with her?",
     "answers": [
       "Emily Warburton-Adams",
       "Samantha Orme",
@@ -240,7 +246,7 @@ const questions = [
     "id": "tv_27942",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand gets into trouble with Captain Lee after taking a nap during working hours?",
+    "question": "In Below Deck Season 5, which deckhand gets into trouble with Captain Lee after taking a nap during working hours?",
     "answers": [
       "Chris Brown",
       "Bruno Duarte",
@@ -272,7 +278,7 @@ const questions = [
     "id": "tv_27943",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What unusual nickname does Kate give to a sailor she meets in 'Jesus Saves'?",
+    "question": "In Below Deck Season 5, what unusual nickname does Kate give to a sailor she meets in 'Jesus Saves'?",
     "answers": [
       "Poseidon",
       "Jesus",
@@ -303,7 +309,7 @@ const questions = [
     "id": "tv_27944",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What food-and-drink pairing puts chef Matt Burns to the test for charter guests?",
+    "question": "In Below Deck Season 5, what food-and-drink pairing puts chef Matt Burns to the test for charter guests?",
     "answers": [
       "Pizza and cider",
       "Steak and red wine",
@@ -335,7 +341,7 @@ const questions = [
     "id": "tv_27945",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand entertains guests wearing only his underclothes in the third episode?",
+    "question": "In Below Deck Season 5, which deckhand entertains guests wearing only his underclothes in the third episode?",
     "answers": [
       "Baker Manning",
       "EJ Jansen",
@@ -366,7 +372,7 @@ const questions = [
     "id": "tv_27946",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which part of the yacht's operation goes badly wrong for Nico's deck team in 'Kate Goes to Church'?",
+    "question": "In Below Deck Season 5, which part of the yacht's operation goes badly wrong for Nico's deck team in 'Kate Goes to Church'?",
     "answers": [
       "Undocking",
       "Refuelling",
@@ -397,7 +403,7 @@ const questions = [
     "id": "tv_27947",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which chef develops a romantic interest in Brianna during the fourth episode?",
+    "question": "In Below Deck Season 5, which chef develops a romantic interest in Brianna during the fourth episode?",
     "answers": [
       "Adam Glick",
       "Matt Burns",
@@ -429,7 +435,7 @@ const questions = [
     "id": "tv_27948",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What does Nico risk by growing closer to Brianna while filming the fifth season?",
+    "question": "In Below Deck Season 5, what does Nico risk by growing closer to Brianna while filming the fifth season?",
     "answers": [
       "His place on the reunion panel",
       "His ownership of the yacht",
@@ -461,7 +467,7 @@ const questions = [
     "id": "tv_27949",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which two members of Valor's crew accidentally end up at a nude beach on a date?",
+    "question": "In Below Deck Season 5, which two members of Valor's crew accidentally end up at a nude beach on a date?",
     "answers": [
       "Nico Scholly and Jennifer Howell",
       "Bruno Duarte and Baker Manning",
@@ -493,7 +499,7 @@ const questions = [
     "id": "tv_27950",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What occasion is Kate's unsuccessful surprise for the charter guests meant to celebrate?",
+    "question": "In Below Deck Season 5, what occasion is Kate's unsuccessful surprise for the charter guests meant to celebrate?",
     "answers": [
       "An anniversary",
       "A retirement",
@@ -524,7 +530,7 @@ const questions = [
     "id": "tv_27951",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which new arrival is brought aboard to manage the deck team as bosun?",
+    "question": "In Below Deck Season 5, which new arrival is brought aboard to manage the deck team as bosun?",
     "answers": [
       "David Bradberry",
       "EJ Jansen",
@@ -556,7 +562,7 @@ const questions = [
     "id": "tv_27952",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What happens to Nico's position once EJ takes charge of the deck crew?",
+    "question": "In Below Deck Season 5, what happens to Nico's position once EJ takes charge of the deck crew?",
     "answers": [
       "He becomes chief steward",
       "He is appointed captain",
@@ -588,7 +594,7 @@ const questions = [
     "id": "tv_27953",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which Season 5 episode sees Captain Lee make a staffing decision because Valor has too many crew members?",
+    "question": "In Below Deck Season 5, which Season 5 episode sees Captain Lee make a staffing decision because Valor has too many crew members?",
     "answers": [
       "Hot Mess Express",
       "100 Feet from Catastrophe",
@@ -620,7 +626,7 @@ const questions = [
     "id": "tv_27954",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which charter guest seen in 'Blindsided' was the inspiration for a character in the film The Blind Side?",
+    "question": "In Below Deck Season 5, which charter guest seen in 'Blindsided' was the inspiration for a character in the film The Blind Side?",
     "answers": [
       "Leigh Anne Tuohy",
       "Cynthia Bailey",
@@ -651,7 +657,7 @@ const questions = [
     "id": "tv_27955",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which stewardess is reprimanded by Kate over failing to follow the yacht's dress code?",
+    "question": "In Below Deck Season 5, which stewardess is reprimanded by Kate over failing to follow the yacht's dress code?",
     "answers": [
       "Emily Warburton-Adams",
       "Jennifer Howell",
@@ -683,7 +689,7 @@ const questions = [
     "id": "tv_27956",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member finds himself reconnecting with someone from his past during 'Blindsided'?",
+    "question": "In Below Deck Season 5, which crew member finds himself reconnecting with someone from his past during 'Blindsided'?",
     "answers": [
       "Bruno Duarte",
       "Chris Brown",
@@ -714,7 +720,7 @@ const questions = [
     "id": "tv_27957",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which two stewardesses are put through a timed service challenge by Kate?",
+    "question": "In Below Deck Season 5, which two stewardesses are put through a timed service challenge by Kate?",
     "answers": [
       "Amy Johnson and Kat Held",
       "Sierra Storm and Emily Warburton-Adams",
@@ -747,7 +753,7 @@ const questions = [
     "id": "tv_27958",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand tries to take the initiative in her friendship with bosun EJ?",
+    "question": "In Below Deck Season 5, which deckhand tries to take the initiative in her friendship with bosun EJ?",
     "answers": [
       "Baker Manning",
       "Jennifer Howell",
@@ -779,7 +785,7 @@ const questions = [
     "id": "tv_27959",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member drinks heavily on a day off after receiving unexpected news in 'Under Cover Boss'?",
+    "question": "In Below Deck Season 5, which crew member drinks heavily on a day off after receiving unexpected news in 'Under Cover Boss'?",
     "answers": [
       "EJ Jansen",
       "Bruno Duarte",
@@ -811,7 +817,7 @@ const questions = [
     "id": "tv_27960",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "From which US state does the lively group of eight charter guests arrive in 'Hot Mess Express'?",
+    "question": "In Below Deck Season 5, from which US state does the lively group of eight charter guests arrive in 'Hot Mess Express'?",
     "answers": [
       "Colorado",
       "Oregon",
@@ -843,7 +849,7 @@ const questions = [
     "id": "tv_27961",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand volunteers to assist the interior team and finds its work disorganised?",
+    "question": "In Below Deck Season 5, which deckhand volunteers to assist the interior team and finds its work disorganised?",
     "answers": [
       "Nico Scholly",
       "Chris Brown",
@@ -875,7 +881,7 @@ const questions = [
     "id": "tv_27962",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What shore-based charter event tests Nico's attempt to impress Captain Lee as a potential bosun?",
+    "question": "In Below Deck Season 5, what shore-based charter event tests Nico's attempt to impress Captain Lee as a potential bosun?",
     "answers": [
       "A beach picnic",
       "A scuba examination",
@@ -907,7 +913,7 @@ const questions = [
     "id": "tv_27963",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who steps in to protect Jen from inappropriate touching by charter guests?",
+    "question": "In Below Deck Season 5, who steps in to protect Jen from inappropriate touching by charter guests?",
     "answers": [
       "EJ Jansen",
       "Kate Chastain",
@@ -939,7 +945,7 @@ const questions = [
     "id": "tv_27964",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What forces Captain Lee to keep charter guests on land in the tenth episode?",
+    "question": "In Below Deck Season 5, what forces Captain Lee to keep charter guests on land in the tenth episode?",
     "answers": [
       "An expired charter permit",
       "A kitchen inspection",
@@ -970,7 +976,7 @@ const questions = [
     "id": "tv_27965",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deck crew member is injured in 'King Come-On-I-Wanna-Lay-Ya'?",
+    "question": "In Below Deck Season 5, which deck crew member is injured in 'King Come-On-I-Wanna-Lay-Ya'?",
     "answers": [
       "Bruno Duarte",
       "EJ Jansen",
@@ -1001,7 +1007,7 @@ const questions = [
     "id": "tv_27966",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who has to leave the yacht to entertain disgruntled charter guests while it cannot sail?",
+    "question": "In Below Deck Season 5, who has to leave the yacht to entertain disgruntled charter guests while it cannot sail?",
     "answers": [
       "Kate Chastain",
       "Jennifer Howell",
@@ -1032,7 +1038,7 @@ const questions = [
     "id": "tv_27967",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand tries to outdo Kate using his knowledge of guest service?",
+    "question": "In Below Deck Season 5, which deckhand tries to outdo Kate using his knowledge of guest service?",
     "answers": [
       "Kyle Dixon",
       "Bruno Duarte",
@@ -1064,7 +1070,7 @@ const questions = [
     "id": "tv_27968",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which family member visits Captain Lee aboard Valor in the eleventh episode?",
+    "question": "In Below Deck Season 5, which family member visits Captain Lee aboard Valor in the eleventh episode?",
     "answers": [
       "His father",
       "His eldest daughter",
@@ -1096,7 +1102,7 @@ const questions = [
     "id": "tv_27969",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which returning former deckhand rejoins the Valor crew and immediately takes an interest in Jen?",
+    "question": "In Below Deck Season 5, which returning former deckhand rejoins the Valor crew and immediately takes an interest in Jen?",
     "answers": [
       "David Bradberry",
       "Andrew Sturby",
@@ -1128,7 +1134,7 @@ const questions = [
     "id": "tv_27970",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What combination of interests is highlighted among the female charter guests in 'Only Doing It for the Money'?",
+    "question": "In Below Deck Season 5, what combination of interests is highlighted among the female charter guests in 'Only Doing It for the Money'?",
     "answers": [
       "Football and whisky",
       "Classical music and racing",
@@ -1161,7 +1167,7 @@ const questions = [
     "id": "tv_27971",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Why does Captain Lee remove Bruno from helping in the galley?",
+    "question": "In Below Deck Season 5, why does Captain Lee remove Bruno from helping in the galley?",
     "answers": [
       "To replace the chief stewardess",
       "To test Matt's ability to cook without his help",
@@ -1194,7 +1200,7 @@ const questions = [
     "id": "tv_27972",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "With which group does Captain Lee dine during '55 and Lovin' It'?",
+    "question": "In Below Deck Season 5, with which group does Captain Lee dine during '55 and Lovin' It'?",
     "answers": [
       "The female charter guests",
       "The departing deck crew",
@@ -1226,7 +1232,7 @@ const questions = [
     "id": "tv_27973",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who becomes a source of support to Jen as her working relationship with Kate deteriorates?",
+    "question": "In Below Deck Season 5, who becomes a source of support to Jen as her working relationship with Kate deteriorates?",
     "answers": [
       "Chris Brown",
       "Eddie Lucas",
@@ -1259,7 +1265,7 @@ const questions = [
     "id": "tv_27974",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which stew reaches breaking point during a contentious crew dinner?",
+    "question": "In Below Deck Season 5, which stew reaches breaking point during a contentious crew dinner?",
     "answers": [
       "Jennifer Howell",
       "Brianna Adekeye",
@@ -1291,7 +1297,7 @@ const questions = [
     "id": "tv_27975",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which returning charter guest insists on reliable Wi-Fi during the final voyage of the season?",
+    "question": "In Below Deck Season 5, which returning charter guest insists on reliable Wi-Fi during the final voyage of the season?",
     "answers": [
       "Cynthia Bailey",
       "Timothy Sykes",
@@ -1323,7 +1329,7 @@ const questions = [
     "id": "tv_27976",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who helps chef Matt Burns plan his final charter dinners?",
+    "question": "In Below Deck Season 5, who helps chef Matt Burns plan his final charter dinners?",
     "answers": [
       "EJ Jansen",
       "Nico Scholly",
@@ -1355,7 +1361,7 @@ const questions = [
     "id": "tv_27977",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deck crew member decides to end his involvement with Brianna in the season finale?",
+    "question": "In Below Deck Season 5, which deck crew member decides to end his involvement with Brianna in the season finale?",
     "answers": [
       "Bruno Duarte",
       "Kyle Dixon",
@@ -1387,7 +1393,7 @@ const questions = [
     "id": "tv_27978",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who makes one final effort to repair a strained relationship with Kate in 'The Champagne Campaign'?",
+    "question": "In Below Deck Season 5, who makes one final effort to repair a strained relationship with Kate in 'The Champagne Campaign'?",
     "answers": [
       "Jennifer Howell",
       "Baker Manning",
@@ -1419,7 +1425,7 @@ const questions = [
     "id": "tv_27979",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which charter guest micromanages an elaborate surprise for his fellow guests on the final night?",
+    "question": "In Below Deck Season 5, which charter guest micromanages an elaborate surprise for his fellow guests on the final night?",
     "answers": [
       "Leigh Anne Tuohy",
       "Timothy Sykes",
@@ -1480,9 +1486,345 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==46||new Set(questions.map(q=>q.id)).size!==questions.length||
+// 22 Nov 2026 audit append: independent Season 5 story and production facts.
+const AUDIT_ORIGINAL_COUNT=46;
+const AUDIT_FIRST_ID=43147;
+const auditQuestions=[
+  {
+    "id": "tv_43147",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 5, where was the fifth season of the original Below Deck filmed?",
+    "answers": [
+      "The Bahamas",
+      "St. Martin",
+      "Tahiti",
+      "Croatia"
+    ],
+    "correctAnswer": "St. Martin",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season: 5 (2017)",
+      "Yacht: Valor",
+      "Written Quiz",
+      "Section: Audit History",
+      "St Martin",
+      "Saint Maarten",
+      "2017 Filming",
+      "Caribbean Charters",
+      "Valor Yacht",
+      "Filming Location"
+    ]
+  },
+  {
+    "id": "tv_43148",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 5, what was the title of Below Deck's Season 5 premiere?",
+    "answers": [
+      "The 1 Percenters",
+      "Cool Beans",
+      "Blindsided",
+      "The Champagne Campaign"
+    ],
+    "correctAnswer": "The 1 Percenters",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season: 5 (2017)",
+      "Yacht: Valor",
+      "Written Quiz",
+      "Section: Audit History",
+      "The 1 Percenters",
+      "2017 Premiere",
+      "Episode One",
+      "Captain Lee",
+      "Kate Chastain",
+      "Opening Episode"
+    ]
+  },
+  {
+    "id": "tv_43149",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 5, what was Nico Scholly's deck-team rank when Below Deck Season 5 began?",
+    "answers": [
+      "Chief steward",
+      "First officer",
+      "Ship's engineer",
+      "Lead deckhand"
+    ],
+    "correctAnswer": "Lead deckhand",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season: 5 (2017)",
+      "Yacht: Valor",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Nico Scholly",
+      "Lead Deckhand",
+      "Early 2017",
+      "Deck Department",
+      "Before EJ Jansen",
+      "Crew Hierarchy"
+    ]
+  },
+  {
+    "id": "tv_43150",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 5, which Below Deck Season 5 deckhand did Captain Lee dismiss after six episodes?",
+    "answers": [
+      "Bruno Duarte",
+      "Baker Manning",
+      "Chris Brown",
+      "Nico Scholly"
+    ],
+    "correctAnswer": "Chris Brown",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season: 5 (2017)",
+      "Yacht: Valor",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Chris Brown",
+      "Captain Lee Rosbach",
+      "Dismissal",
+      "Episode Six",
+      "100 Feet From Catastrophe",
+      "Crew Discipline"
+    ]
+  },
+  {
+    "id": "tv_43151",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 5, why did bosun EJ Jansen leave Valor later in Below Deck Season 5?",
+    "answers": [
+      "He had been dismissed for sleeping on watch",
+      "To rejoin a yacht he had previously worked on",
+      "He was hired as the show's chef",
+      "He was injured in a diving accident"
+    ],
+    "correctAnswer": "To rejoin a yacht he had previously worked on",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season: 5 (2017)",
+      "Yacht: Valor",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "EJ Jansen",
+      "Former Yacht",
+      "Departure",
+      "2017",
+      "Nico Scholly",
+      "Crew Change"
+    ]
+  },
+  {
+    "id": "tv_43152",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 5, which Below Deck Season 5 deckhand did Captain Lee single out as the most improved?",
+    "answers": [
+      "Baker Manning",
+      "Jennifer Howell",
+      "Bruno Duarte",
+      "Chris Brown"
+    ],
+    "correctAnswer": "Baker Manning",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season: 5 (2017)",
+      "Yacht: Valor",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Baker Manning",
+      "Captain Lee",
+      "Most Improved",
+      "November 2017",
+      "Crew Recognition",
+      "Deckhand"
+    ]
+  },
+  {
+    "id": "tv_43153",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 5, to which position was Nico Scholly promoted at Below Deck Season 5's final tip meeting?",
+    "answers": [
+      "Chief steward",
+      "Second engineer",
+      "Captain",
+      "Bosun"
+    ],
+    "correctAnswer": "Bosun",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season: 5 (2017)",
+      "Yacht: Valor",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Nico Scholly",
+      "Promotion",
+      "Bosun",
+      "Final Tip Meeting",
+      "2017 Finale",
+      "Deck Leadership"
+    ]
+  },
+  {
+    "id": "tv_43154",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 5, whose promotion did Captain Lee say he regretted at the Below Deck Season 5 reunion?",
+    "answers": [
+      "Baker Manning's",
+      "Kate Chastain's",
+      "Nico Scholly's",
+      "Bruno Duarte's"
+    ],
+    "correctAnswer": "Nico Scholly's",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season: 5 (2017)",
+      "Yacht: Valor",
+      "Written Quiz",
+      "Section: Audit Reunion",
+      "Captain Lee",
+      "Nico Scholly",
+      "Regret",
+      "2017 Reunion",
+      "Bosun Promotion",
+      "Leadership Review"
+    ]
+  },
+  {
+    "id": "tv_43155",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 5, which Below Deck Season 5 deckhand was linked romantically with bosun EJ Jansen?",
+    "answers": [
+      "Jennifer Howell",
+      "Baker Manning",
+      "Brianna Adekeye",
+      "Sierra Storm"
+    ],
+    "correctAnswer": "Baker Manning",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season: 5 (2017)",
+      "Yacht: Valor",
+      "Written Quiz",
+      "Section: Audit Relationship",
+      "EJ Jansen",
+      "Baker Manning",
+      "Workplace Romance",
+      "2017 Crew",
+      "Bosun",
+      "Charter Relationship"
+    ]
+  },
+  {
+    "id": "tv_43156",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 5, which star of Southern Charm was related by marriage to Below Deck Season 5 deckhand Baker Manning?",
+    "answers": [
+      "Thomas Ravenel",
+      "Craig Conover",
+      "Shep Rose",
+      "Austen Kroll"
+    ],
+    "correctAnswer": "Thomas Ravenel",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo",
+      "Season: 5 (2017)",
+      "Yacht: Valor",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Baker Manning",
+      "Thomas Ravenel",
+      "Southern Charm",
+      "Family Connection",
+      "Bravo Crossover",
+      "2017 Cast"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==56||new Set(questions.map(q=>q.id)).size!==questions.length||
    new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-   questions.some((q,i)=>q.id!=='tv_'+(27935+i)||q.topic!=='Below Deck'||q.category!=='TV'||
+   questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(27935+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
    q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
    q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<13||
    new Set(q.tags).size!==q.tags.length||q.dailyEligible!==true||
