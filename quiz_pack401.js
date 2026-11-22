@@ -536,7 +536,7 @@ const storyAudit401=[
   ],
   [
     "2 — Pray for Me",
-    "Which two suspects meet secretly after Vincent Bourg is questioned by the police?",
+    "Which two men are shown meeting secretly after the police question a local suspect in Episode 2?",
     "Vincent Bourg and Ian Garrett",
     [
       "Vincent Bourg and Karl Sieg",
@@ -558,7 +558,7 @@ const storyAudit401=[
   ],
   [
     "3 — The Meeting",
-    "Which man had Tony Hughes violently attacked years before Oliver disappeared, wrongly suspecting an affair with Emily?",
+    "Which man had Tony Hughes violently attacked years before Oliver disappeared after suspecting an affair with Emily?",
     "Greg Halpern",
     [
       "Mark Walsh",
