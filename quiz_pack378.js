@@ -115,7 +115,7 @@ Which recurring character suffers a dramatic emotional outburst when a certain c
 Which colour triggers Johnny Nice Painter's dark spirals?|Black|Blue|Yellow|Green|Medium|Johnny Nice Painter|Black Colour|Charlie Higson|Painter Meltdown|Emotional Trigger|Landscape Painting|Colour Association
 Who played the elderly-fashioned character Jesse who lists his unusual weekly eating plans?|Mark Williams|Simon Day|Paul Whitehouse|John Thomson|Hard|Mark Williams|Jesse|Food Lists|Character Casting|Weekly Meals|Strange Diet|Recurring Sketch
 Which prominent real-life snooker player made a guest appearance in the second series?|Steve Davis|Stephen Hendry|Ronnie O'Sullivan|Jimmy White|Medium|Steve Davis|1996 Episode|Series Two|Snooker|Celebrity Cameo|Guest Appearance|Sports Star
-In which year was the Fast Show's Christmas special broadcast during its second series?|1996|1994|1998|2001|Medium|1996 Christmas|Festive Special|Series Two|BBC Two|Television Timeline|Holiday Episode|Ron Manager
+In which year was The Fast Show's Christmas special broadcast during its second series?|1996|1994|1998|2001|Medium|1996 Christmas|Festive Special|Series Two|BBC Two|Television Timeline|Holiday Episode|Ron Manager
 What activity do the Off-Roaders try in a 1996 sketch?|Paintballing|Ski jumping|Hang-gliding|Water skiing|Medium|Off Roaders|Paintball|Series Two|Extreme Sports|March 1996|Sketch Adventure|Outdoor Pursuits
 What water sport do the Off-Roaders attempt in the final regular series?|White-water rafting|Sailing a yacht|Scuba diving|Synchronised swimming|Medium|Off Roaders|White Water Rafting|Series Three|Extreme Sports|1997 Finale|Outdoor Sketch|River Adventure
 What kind of danger does deaf stuntman Chip Cobb face because he misunderstands instructions?|Performing the wrong stunt|Forgetting the film location|Misplacing his costume|Failing to learn a dance routine|Medium|Chip Cobb|Deaf Stuntman|Misheard Orders|Film Stunts|Comic Danger|1997 Sketch|Character Premise
@@ -232,7 +232,7 @@ In Series 2 Episode 6, which Jazz Club performer leads a band called The Jazz Me
 In Series 2 Episode 7, what item does Professor Denzil Dexter steal from another laboratory?|A skull|A microscope|A skeleton key|A chemical flask|Series 2|Episode 7|Laboratory theft
 In Series 2 Episode 7, what board game does Competitive Dad play?|Monopoly|Scrabble|Cluedo|Risk|Series 2|Episode 7|Family competition
 In Series 3 Episode 1, which fashion label does Jesse announce he will mostly wear?|Dolce & Gabbana|Calvin Klein|Hugo Boss|Tommy Hilfiger|Series 3|Episode 1|Jesse's clothing declaration
-In Series 3 Episode 2, what television job does Monkfish undertake in disguise?|Undercover policing|Weather presenting|Sports commentary|Children's television hosting|Series 3|Episode 2|Monkfish working undercover
+In Series 3 Episode 2, what office machine does Colin Hunt try to repair?|A photocopier|A fax machine|A coffee machine|A telephone switchboard|Series 3|Episode 2|Colin Hunt fixing office equipment
 In Series 3 Episode 3, which creatures does the squeamish zookeeper have to feed?|Penguins|Seals|Flamingos|Meerkats|Series 3|Episode 3|Zookeeper sketch
 In Series 3 Episode 3, which underground activity do the Off-Roaders attempt?|Potholing|Gold mining|Caving for fossils|Tunnel building|Series 3|Episode 3|Extreme underground outing
 In Series 3 Episode 4, in which fictional film does Arthur Atkinson star?|Confessions of a Door-to-Door Cucumber Salesman|The Great Cucumber Caper|Cucumber Country|Cucumber and the King|Series 3|Episode 4|Parody seventies sex comedy
@@ -251,16 +251,20 @@ function addAudit378(block,programme,era,genre){
   const [stem,correctAnswer,a,b,c,series,episode,storyline]=parts;
   const episodeIntro=/^In (.+?), (.+)$/.exec(stem);
   let question;
-  if(episodeIntro){
+  const special=/^In the (\d{4}) (Ted & Ralph special|Comic Relief sketch), (.+)$/.exec(stem);
+  if(special){
+   question='In '+programme+' ('+special[1]+' '+special[2]+'), '+special[3];
+  }else if(episodeIntro){
    const season=/^Series (\d+) Episode (\d+)$/.exec(episodeIntro[1]);
-   if(season){question='In '+programme+' (Series '+season[1]+', Episode '+season[2]+'), '+episodeIntro[2];}
-   else{question='In '+programme+', in "'+episodeIntro[1]+'", '+episodeIntro[2];}
-  }else if(stem.startsWith('In the 1998 Ted & Ralph special, ')){
-   question='In '+programme+' (1998 Ted & Ralph special), '+stem.slice(34);
-  }else if(stem.startsWith('In the 2001 Comic Relief sketch, ')){
-   question='In '+programme+' (2001 Comic Relief sketch), '+stem.slice(33);
-  }else{question=stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB'))
-   ?stem:'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1);}
+   if(season){
+    question='In '+programme+' (Series '+season[1]+', Episode '+season[2]+'), '+episodeIntro[2];
+   }else{
+    question='In '+programme+'\'s "'+episodeIntro[1]+'" episode, '+episodeIntro[2];
+   }
+  }else{
+   question=stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB'))
+    ?stem:'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1);
+  }
   const answers=[a,b,c];
   answers.splice(questions.length%4,0,correctAnswer);
   const tags=['Television','British Television',genre,'Comedy',programme,'Programme: '+programme,era,
