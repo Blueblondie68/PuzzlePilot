@@ -180,7 +180,9 @@ function addFacts(block, section) {
       'British Television',
       'ITV',
       'Crime Drama',
+      'Police Procedural',
       PROGRAMME,
+      'Programme: '+PROGRAMME,
       section,
       correctAnswer,
       ...specific
@@ -203,6 +205,7 @@ function addFacts(block, section) {
     questionBank.push({
       id,
       category: 'Television',
+      programme: PROGRAMME,
       question,
       answers,
       correctAnswer,
@@ -236,4 +239,112 @@ for (const item of questionBank) {
   seen.add(normalized);
 }
 
-module.exports = questionBank;
+
+
+// A Touch of Frost Part 3: additional case and guest-actor questions.
+// Existing IDs tv_20205–tv_20336 remain unchanged.
+// Episode references: https://en.wikipedia.org/wiki/List_of_A_Touch_of_Frost_episodes
+// Guest cast: https://epguides.com/touchoffrost/guide.shtml
+// Original ITV episode order: https://thetvdb.com/series/a-touch-of-frost/allseasons/official
+// Programme stays PARTIAL until Packs 384–385 are audited.
+// New questions start at tv_40604.
+const AUDIT383_appendix=`In Appendix Man, which newspaper controversy forces Frost to return to his old Black Farm case?|A wrongful-conviction claim|A campaign about motorway safety|Allegations of election fraud|A missing-person appeal|Appendix Man|Series 6|Reopened murder investigation
+In Appendix Man, who joins Frost's investigation as a newly qualified detective sergeant?|Hazel Wallace|Maureen Lawson|Liz Maud|Ronnie Lonnegan|Appendix Man|Series 6|Returning policewoman
+In Appendix Man, what crime had originally accompanied the Black Farm murders?|Theft of valuable paintings|Armed robbery of a post office|Smuggling rare manuscripts|A series of car thefts|Appendix Man|Series 6|Black Farm art theft
+In Appendix Man, what is the first name of Debbie Viner's neighbour who secretly trades artworks?|Lester|Ian|David|Gerry|Appendix Man|Series 6|Art dealer Bryce-Jones
+In Appendix Man, what had Lester Bryce-Jones taken shortly before his death?|Alcohol and painkillers|A dangerous sports supplement|An experimental heart medication|An overdose of sleeping tablets alone|Appendix Man|Series 6|Collector's risky behaviour
+In Appendix Man, who is the pathology assistant who alters the fingerprints on Ian Priest's body?|Diana|Hazel|Debbie|Joanna|Appendix Man|Series 6|Lab worker's evidence
+In Appendix Man, which family member was the pathology assistant trying to protect?|Her brother David|Her husband Brian|Her nephew Mark|Her father Arthur|Appendix Man|Series 6|Diana protects relative
+In Appendix Man, what had Ian Priest been doing to Diana's brother before he died?|Blackmailing him|Selling him stolen cars|Threatening to evict him|Stealing his bank card|Appendix Man|Series 6|Ian Priest extortion`;
+const AUDIT383_meat=`In One Man's Meat, which police officer rents a room from Frost while training as a dog handler?|Tom Haliday|George Toolan|Don Brady|Chris Jordan|One Man's Meat|Series 6|Junior police tenant
+In One Man's Meat, whom does Frost intend to shame publicly after a girl dies by drowning?|Alan Deering|Jim Scott|Gerry Ryan|Warren Barber|One Man's Meat|Series 6|Homeless girl's attacker
+In One Man's Meat, what charge does Frost consider pursuing after being unable to prove the assault?|Kerb crawling|Illegal firearm possession|Insurance fraud|Criminal trespass|One Man's Meat|Series 6|Alternative prosecution
+In One Man's Meat, what is the name of the missing environmental officer's wife?|Naomi|Marion|Leonie|Tracy|One Man's Meat|Series 6|Warren Barber's wife
+In One Man's Meat, who threatens to report the drug-smuggling operation after learning of the murder?|Gerry Ryan|Tom Haliday|Alan Deering|Rickie Bayley|One Man's Meat|Series 6|Factory owner's remorse
+In One Man's Meat, from which Dutch city does the meat factory smuggle illegal drugs?|Amsterdam|Rotterdam|The Hague|Utrecht|One Man's Meat|Series 6|Drug-smuggling route`;
+const AUDIT383_private=`In Private Lives, who plays Frost's temporary partner Billy Sharpe?|Philip Jackson|Ross Boatman|Tom Chadbon|Peter Egan|Private Lives|Series 6|Detective sergeant actor
+In Private Lives, which former soldier is initially suspected after the village hit-and-run?|Owen Kimble|Leo Armfield|Graham Rutherford|Richard Darrow|Private Lives|Series 6|Soldier suspect
+In Private Lives, what health problem is linked to suspect Owen Kimble's military past?|Post-traumatic stress disorder|Dementia|Partial blindness|A spinal injury|Private Lives|Series 6|War veteran's health
+In Private Lives, what does Frost uncover about solicitor Graham Rutherford's relationship with Bryony?|He was also one of her clients|He secretly married her|He was her long-lost brother|He was the father of her husband|Private Lives|Series 6|Solicitor's secret
+In Private Lives, what family secret is revealed about Rachel Darrow?|Richard Darrow is not her biological father|She is adopted from Germany|She has an unknown twin|She was secretly married|Private Lives|Series 6|Rachel's parentage
+In Private Lives, who is the actress portraying Rachel Darrow?|Paloma Baeza|Maureen O'Brien|Tracy Leigh Hunt|Rachel Power|Private Lives|Series 6|Rachel Darrow actress
+In Private Lives, what evidence helps identify Bryony Darrow's husband as her last sexual partner?|A DNA test|A recorded confession|A handwritten love letter|A witness at the farm|Private Lives|Series 6|Hit-and-run investigation
+In Private Lives, where does Rachel decide to go after learning her mother's secrets?|London to meet her grandmother|Scotland to join the police|Spain to find her father|France to attend university|Private Lives|Series 6|Rachel's decision`;
+const AUDIT383_keys=`In Keys to the Car, what vehicle does the conman steal after abandoning Ben Pecksmith's Mercedes?|A Range Rover|A Jaguar E-Type|A Volvo estate|A BMW motorcycle|Keys to the Car|Series 6|Second stolen vehicle
+In Keys to the Car, what criminal cargo is Alan Carpenter smuggling from Holland?|Pornographic videotapes|Antique jewellery|Stolen computer parts|Counterfeit watches|Keys to the Car|Series 6|Car thief's side trade
+In Keys to the Car, whose biomedical business is suspected by the Dutch officer?|Ben Pecksmith's|Luke Hands's|Gerry Ryan's|Simon Warrinder's|Keys to the Car|Series 6|Dutch drug investigation
+In Keys to the Car, where does Philly Williams see the stolen Mercedes and flee?|Fulford Woods|The Sherwood Club|Black Farm|Eastdean Estate|Keys to the Car|Series 6|Location of dealer meeting
+In Keys to the Car, what colour vehicle does Philly see arrive after the stolen Mercedes?|Blue|Red|Yellow|Silver|Keys to the Car|Series 6|Vehicle clue
+In Keys to the Car, which actor plays Assistant Chief Constable Anne Cremond?|Melanie Thaw|Caroline Harker|Susan Penhaligon|Joanne Froggatt|Keys to the Car|Series 6|Cremond guest performer`;
+const AUDIT383_line=`In Line of Fire, who plays Detective Superintendent Larry Finlay?|Nicky Henson|Christopher Hollis|Justin Burrows|Trevor Byfield|Line of Fire|Series 7|Regional squad leader actor
+In Line of Fire, who portrays the murdered detective's wife Helen Fox?|Beth Goddard|Georgia Mackenzie|Emma Cooke|Amanda Haberland|Line of Fire|Series 7|Helen Fox actor
+In Line of Fire, which detective is found murdered during a police investigation into car thieves?|Tim Fox|George Toolan|Clive Barnard|Ronnie Lonnegan|Line of Fire|Series 7|Murdered regional officer
+In Line of Fire, what evidence convinces Frost that Tim Fox knew his killer?|The absence of defensive injuries|A hotel booking in his name|A signed confession|A stolen firearm in his car|Line of Fire|Series 7|Evidence about killer's familiarity
+In Line of Fire, what does Frost believe Newcombe planted during a raid on car thieves?|The gun used to kill Tim Fox|A stolen painting|A bloodstained jacket|An envelope of counterfeit notes|Line of Fire|Series 7|Evidence planted to frame gang
+In Line of Fire, whose daughter Tracy had Ray English been told to leave alone?|Cockcroft's|Newcombe's|Frost's|Finlay's|Line of Fire|Series 7|Power worker family
+In Line of Fire, what unexpected event delays Frost's plan to meet Shirley Fisher?|A bank robbery|A hospital power failure|A traffic collision|An armed prison escape|Line of Fire|Series 7|Missed romantic appointment
+In Line of Fire, whose records reveal that an amnesty gun had been erased from police files?|Ernie Trigg's|George English's|Larry Finlay's|Derek Simpkins's|Line of Fire|Series 7|Firearms amnesty paperwork
+In Line of Fire, what role does WPC Susan Kavanaugh take on before she is kidnapped?|Checking ownership of rifles|Interviewing local bankers|Supervising a police parade|Investigating hospital accounts|Line of Fire|Series 7|Pet shooting enquiries
+In Line of Fire, what is the calibre of ammunition linked to the pet shootings?|.22 calibre|.45 calibre|9 mm|12 gauge|Line of Fire|Series 7|Ballistic evidence`;
+const AUDIT383_benefit=`In Benefit of the Doubt, which actor plays Frost's impersonator Larry Brewer?|Colin Farrell|Dominic West|Robert Glenister|Dermot Crowley|Benefit of the Doubt|Series 8|Impersonator guest performer
+In Benefit of the Doubt, who portrays hospital surgeon Dr Bill Hughes?|Dominic West|Colin Farrell|Bill Fellows|David Horovitch|Benefit of the Doubt|Series 8|Hospital surgeon actor
+In Benefit of the Doubt, which influential student's father causes Reid's transfer to Denton?|Tim Hamilton's|Anne's|Sylvia Carter's|Larry Brewer's|Benefit of the Doubt|Series 8|Police transfer controversy
+In Benefit of the Doubt, what kind of coercive business does Tim Hamilton run alongside illicit cigarettes?|A protection racket|A forged-passport business|A ticket resale operation|A jewellery fraud|Benefit of the Doubt|Series 8|Illicit cigarette gang
+In Benefit of the Doubt, what earlier problem makes police superiors suspicious of Terry Reid?|A past drug addiction|A prior conviction for theft|A suspended driving licence|An army dismissal|Benefit of the Doubt|Series 8|Reid's police reputation
+In Benefit of the Doubt, who is Helena Gibson's cost-cutting superior at the hospital?|Jameson|Retnik|Ingram|Bennet|Benefit of the Doubt|Series 8|Hospital administrator
+In Benefit of the Doubt, whose son's death leads to another suspect in the surgeon's disappearance?|James Ingram's|Tim Hamilton's|Larry Brewer's|Terry Reid's|Benefit of the Doubt|Series 8|Parent of former patient
+In Benefit of the Doubt, what technical fault helps the killer disguise when Dr Gibson died?|A hospital incinerator breakdown|A power cut at the railway station|A failed hospital CCTV recorder|A broken laboratory centrifuge|Benefit of the Doubt|Series 8|Hospital body's concealment
+In Benefit of the Doubt, where does Frost confront Dr Retnik before making an arrest?|Beside the hospital incinerator|At a railway ticket barrier|Inside an operating theatre|In the police cells|Benefit of the Doubt|Series 8|Murderer captured
+In Benefit of the Doubt, how does Frost trace the man who impersonates him to assault women?|Teenagers holding Reid's stolen medal|A forged hospital ID card|The owner of a stolen bicycle|A recording made by a taxi driver|Benefit of the Doubt|Series 8|Tracing identity thief`;
+const AUDIT383_mistaken=`In Mistaken Identity, who plays Inspectorate official Babcock?|Michael Cochrane|Jason Merrells|Barrie Ingham|Jonjo O'Neill|Mistaken Identity|Series 9|Police inspection visitor
+In Mistaken Identity, what does the police inspectorate visit threaten to determine?|Future funding of Denton police|The location of a new hospital|A football-club promotion|The county's electoral boundaries|Mistaken Identity|Series 9|Police inspection stakes
+In Mistaken Identity, who is the actor portraying suspect Mike Patterson?|Jason Merrells|Michael Cochrane|Jonjo O'Neill|Barrie Ingham|Mistaken Identity|Series 9|Handyman suspect actor
+In Mistaken Identity, which family member of Paul Harris dislikes his wife Jean?|His father Arnold|His younger sister|His uncle Derek|His son Jeffrey|Mistaken Identity|Series 9|Victim's family conflict
+In Mistaken Identity, which woman had an affair with jockey Paul Matthews?|Fiona Monkton|Jean Harris|Pam Hartley|Ronnie Lonnegan|Mistaken Identity|Series 9|Jockey relationship
+In Mistaken Identity, where had Melanie Monkton spent the weekend while presumed missing?|London|Edinburgh|Birmingham|Manchester|Mistaken Identity|Series 9|Disappearance explained
+In Mistaken Identity, what does Fiona Monkton arrange against the jockey who saw her daughter?|An assault|An arrest for speeding|A forged sporting ban|A false tax investigation|Mistaken Identity|Series 9|Fiona's retaliation
+In Mistaken Identity, which armed criminal's trial connects several victims' families?|Charlie Layman's|Tim Hamilton's|Richie Dearne's|Graham Rutherford's|Mistaken Identity|Series 9|Old witness testimony
+In Mistaken Identity, how many years earlier was the robbery trial linking the victims?|Thirteen years|Three years|Twenty years|Seven years|Mistaken Identity|Series 9|Old trial chronology
+In Mistaken Identity, how did the killer approach multiple families without arousing suspicion?|Posing as a handyman|Pretending to be a police officer|Delivering groceries|Working as a postman|Mistaken Identity|Series 9|Killer gains access
+In Mistaken Identity, which character portrays killer Jeffrey Meadows?|Jonjo O'Neill|Jason Merrells|Michael Cochrane|Barrie Ingham|Mistaken Identity|Series 9|Jeffrey Meadows guest actor
+In Mistaken Identity, who is the missing young woman's father?|Harry Monkton|Paul Matthews|Arnold Harris|Charlie Layman|Mistaken Identity|Series 9|Melanie's father`;
+const PACK383_KEY=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit383(block,episode,coverage){
+ for(const [index,row] of block.trim().split('\n').entries()){
+  const p=row.split('|').map(x=>x.trim());
+  if(p.length!==8||p.some(x=>!x))throw Error('Invalid Pack 383 audit row '+episode+' '+index);
+  const [stem,correctAnswer,a,b,c,sourceEpisode,series,focus]=p;
+  const match=/^In (.+?), (.+)$/.exec(stem);
+  if(!match||sourceEpisode!==episode||series!==coverage)throw Error('Episode mismatch Pack 383 '+index);
+  const question='In '+PROGRAMME+', during "'+episode+'", '+match[2];
+  const answers=[a,b,c];answers.splice(questionBank.length%4,0,correctAnswer);
+  const tags=['Television','British Television','ITV','Crime Drama','Police Procedural',
+    PROGRAMME,'Programme: '+PROGRAMME,'Coverage: '+coverage,
+    'Episode: '+episode,'Story focus: '+focus,'Correct answer: '+correctAnswer,
+    'Case incident: '+focus,'Case: '+episode,'Programme years: 1999–2002'];
+  questionBank.push({id:'tv_'+(40604+questionBank.length-132),
+   category:'Television',programme:PROGRAMME,question,answers,correctAnswer,
+   difficulty:'Medium',tags,dailyEligible:true});
+ }
+}
+addAudit383(AUDIT383_appendix,'Appendix Man','Series 6');
+addAudit383(AUDIT383_meat,'One Man\'s Meat','Series 6');
+addAudit383(AUDIT383_private,'Private Lives','Series 6');
+addAudit383(AUDIT383_keys,'Keys to the Car','Series 6');
+addAudit383(AUDIT383_line,'Line of Fire','Series 7');
+addAudit383(AUDIT383_benefit,'Benefit of the Doubt','Series 8');
+addAudit383(AUDIT383_mistaken,'Mistaken Identity','Series 9');
+const seenIds383=new Set(),seenTexts383=new Set();
+for(const q of questionBank){
+ const key=PACK383_KEY(q.question);
+ if(q.programme!==PROGRAMME||q.category!=='Television'||
+  !q.tags.includes('Programme: '+PROGRAMME)||
+  q.answers.length!==4||new Set(q.answers.map(PACK383_KEY)).size!==4||
+  q.answers.filter(x=>x===q.correctAnswer).length!==1||
+  q.tags.length<12||q.dailyEligible!==true||
+  seenIds383.has(q.id)||seenTexts383.has(key))
+ throw Error('Pack 383 validation failed at '+q.id);
+ seenIds383.add(q.id);seenTexts383.add(key);
+}
+module.exports=questionBank;
