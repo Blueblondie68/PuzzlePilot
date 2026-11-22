@@ -1,7 +1,12 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 486: As the World Turns Part 1 (1956–1969)
-// 68 selectively researched historical questions; IDs tv_27312–tv_27379.
+// 101 audited questions: 68 originals plus 33 researched early-era additions.
+// Original IDs tv_27312–tv_27379; audit IDs tv_42920–tv_42952.
 // First 14 years: Hughes/Lowell, Penny/Jeff, Lisa/Bob, Ellen/Stewarts and broadcast milestones.
 // Later decades REQUIRE their own packs. Do NOT mark programme complete or purple.
+// Original evidence checked 18 Nov 2026; additions researched 22 Nov 2026.
+// Added checks: TVWeek 50th-anniversary history, Television Academy Interviews,
+// Nancy and Donald family history, Ellen/Stewart timelines, CBS early production.
+// Every question names the show; original IDs and answer content retained.
 // Historical evidence checked 18 Nov 2026:
 // https://www.tvweek.com/in-depth/2006/03/world-turns-50-as-the-world-tu/
 // https://www.encyclopedia.com/media/encyclopedias-almanacs-transcripts-and-maps/world-turns
@@ -263,7 +268,7 @@ const questions = [
     "id": "tv_27320",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress portrayed Nancy Hughes from the programme's beginning?",
+    "question": "In As the World Turns, which actress portrayed Nancy Hughes from the programme's beginning?",
     "answers": [
       "Eileen Fulton",
       "Rosemary Prinz",
@@ -325,7 +330,7 @@ const questions = [
     "id": "tv_27322",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who played the Hughes family patriarch Chris Hughes?",
+    "question": "In As the World Turns, who played the Hughes family patriarch Chris Hughes?",
     "answers": [
       "Mark Rydell",
       "Don MacLaughlin",
@@ -356,7 +361,7 @@ const questions = [
     "id": "tv_27323",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was Chris Hughes's profession?",
+    "question": "In As the World Turns, what was Chris Hughes's profession?",
     "answers": [
       "Surgeon",
       "Shipbuilder",
@@ -387,7 +392,7 @@ const questions = [
     "id": "tv_27324",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Nancy and Chris Hughes's teenage daughter?",
+    "question": "In As the World Turns, who was Nancy and Chris Hughes's teenage daughter?",
     "answers": [
       "Lisa Miller",
       "Ellen Lowell",
@@ -418,7 +423,7 @@ const questions = [
     "id": "tv_27325",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played Penny Hughes through much of the early 1960s?",
+    "question": "In As the World Turns, which actress played Penny Hughes through much of the early 1960s?",
     "answers": [
       "Rosemary Prinz",
       "Patricia Bruder",
@@ -449,7 +454,7 @@ const questions = [
     "id": "tv_27326",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Hughes son became a doctor and long-running central character?",
+    "question": "In As the World Turns, which Hughes son became a doctor and long-running central character?",
     "answers": [
       "Jeff Hughes",
       "Bob Hughes",
@@ -480,7 +485,7 @@ const questions = [
     "id": "tv_27327",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which older character was known as 'Pa' Hughes?",
+    "question": "In As the World Turns, which older character was known as 'Pa' Hughes?",
     "answers": [
       "Tim Cole",
       "Neil Wade",
@@ -511,7 +516,7 @@ const questions = [
     "id": "tv_27328",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played Chris Hughes's sister Edith?",
+    "question": "In As the World Turns, which actress played Chris Hughes's sister Edith?",
     "answers": [
       "Helen Wagner",
       "Eileen Fulton",
@@ -542,7 +547,7 @@ const questions = [
     "id": "tv_27329",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was the married lawyer involved in an affair with Edith Hughes?",
+    "question": "In As the World Turns, who was the married lawyer involved in an affair with Edith Hughes?",
     "answers": [
       "Jim Lowell",
       "Doug Cassen",
@@ -573,7 +578,7 @@ const questions = [
     "id": "tv_27330",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Ellen Lowell's father in the original family?",
+    "question": "In As the World Turns, who was Ellen Lowell's father in the original family?",
     "answers": [
       "Jeff Baker",
       "Jim Lowell",
@@ -604,7 +609,7 @@ const questions = [
     "id": "tv_27331",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Lowell family wife struggled with her husband's affair?",
+    "question": "In As the World Turns, which Lowell family wife struggled with her husband's affair?",
     "answers": [
       "Lisa Hughes",
       "Betty Stewart",
@@ -635,7 +640,7 @@ const questions = [
     "id": "tv_27332",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which doctor later married Claire Lowell after Jim Lowell's death?",
+    "question": "In As the World Turns, which doctor later married Claire Lowell after Jim Lowell's death?",
     "answers": [
       "David Stewart",
       "Bob Hughes",
@@ -666,7 +671,7 @@ const questions = [
     "id": "tv_27333",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Penny Hughes's major early romantic partner?",
+    "question": "In As the World Turns, who was Penny Hughes's major early romantic partner?",
     "answers": [
       "Jeff Baker",
       "Michael Shea",
@@ -697,7 +702,7 @@ const questions = [
     "id": "tv_27334",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor portrayed Jeff Baker opposite Rosemary Prinz?",
+    "question": "In As the World Turns, which actor portrayed Jeff Baker opposite Rosemary Prinz?",
     "answers": [
       "John Lasell",
       "Mark Rydell",
@@ -728,7 +733,7 @@ const questions = [
     "id": "tv_27335",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which family member opposed Penny's first attempt to elope with Jeff?",
+    "question": "In As the World Turns, which family member opposed Penny's first attempt to elope with Jeff?",
     "answers": [
       "Lisa Miller",
       "Claire Lowell",
@@ -759,7 +764,7 @@ const questions = [
     "id": "tv_27336",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was accused of killing Al James after a fight involving Penny Hughes?",
+    "question": "In As the World Turns, who was accused of killing Al James after a fight involving Penny Hughes?",
     "answers": [
       "Jim Lowell",
       "Bob Hughes",
@@ -790,7 +795,7 @@ const questions = [
     "id": "tv_27337",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which man ended his engagement to Penny because she still loved Jeff?",
+    "question": "In As the World Turns, which man ended his engagement to Penny because she still loved Jeff?",
     "answers": [
       "Tom Pope",
       "Neil Wade",
@@ -821,7 +826,7 @@ const questions = [
     "id": "tv_27338",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What form did Penny and Jeff's high-profile wedding take on CBS?",
+    "question": "In As the World Turns, what form did Penny and Jeff's high-profile wedding take on CBS?",
     "answers": [
       "A televised puppet show",
       "A live televised wedding",
@@ -852,7 +857,7 @@ const questions = [
     "id": "tv_27339",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What stage name did Jeff Baker use when working as a pianist away from Oakdale?",
+    "question": "In As the World Turns, what stage name did Jeff Baker use when working as a pianist away from Oakdale?",
     "answers": [
       "Jim Coleman",
       "Jeffrey Wade",
@@ -883,7 +888,7 @@ const questions = [
     "id": "tv_27340",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What kind of accident killed Jeff Baker in the early 1960s?",
+    "question": "In As the World Turns, what kind of accident killed Jeff Baker in the early 1960s?",
     "answers": [
       "Boating disaster",
       "House fire",
@@ -914,7 +919,7 @@ const questions = [
     "id": "tv_27341",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What did Penny suffer following the car crash that killed Jeff?",
+    "question": "In As the World Turns, what did Penny suffer following the car crash that killed Jeff?",
     "answers": [
       "Amnesia",
       "Paralysis",
@@ -945,7 +950,7 @@ const questions = [
     "id": "tv_27342",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "How did viewers react when Jeff Baker was killed off?",
+    "question": "In As the World Turns, how did viewers react when Jeff Baker was killed off?",
     "answers": [
       "There was a nationwide strike",
       "They sent protests and messages to CBS",
@@ -976,7 +981,7 @@ const questions = [
     "id": "tv_27343",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which doctor later married Penny after Jeff's death?",
+    "question": "In As the World Turns, which doctor later married Penny after Jeff's death?",
     "answers": [
       "Michael Shea",
       "Tim Cole",
@@ -1007,7 +1012,7 @@ const questions = [
     "id": "tv_27344",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What kind of shop did Neil Wade later run in Oakdale?",
+    "question": "In As the World Turns, what kind of shop did Neil Wade later run in Oakdale?",
     "answers": [
       "Shoe shop",
       "Florist",
@@ -1038,7 +1043,7 @@ const questions = [
     "id": "tv_27345",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress first played Lisa Miller, who arrived in 1960?",
+    "question": "In As the World Turns, which actress first played Lisa Miller, who arrived in 1960?",
     "answers": [
       "Eileen Fulton",
       "Ruth Warrick",
@@ -1069,7 +1074,7 @@ const questions = [
     "id": "tv_27346",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Lisa Miller's first husband among the Hughes family?",
+    "question": "In As the World Turns, who was Lisa Miller's first husband among the Hughes family?",
     "answers": [
       "Tom Hughes",
       "Bob Hughes",
@@ -1100,7 +1105,7 @@ const questions = [
     "id": "tv_27347",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the name of Lisa and Bob Hughes's son?",
+    "question": "In As the World Turns, what was the name of Lisa and Bob Hughes's son?",
     "answers": [
       "Jeff Baker",
       "Paul Stewart",
@@ -1131,7 +1136,7 @@ const questions = [
     "id": "tv_27348",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who strongly resisted Lisa joining the Hughes household?",
+    "question": "In As the World Turns, who strongly resisted Lisa joining the Hughes household?",
     "answers": [
       "Claire Lowell",
       "Betty Stewart",
@@ -1162,7 +1167,7 @@ const questions = [
     "id": "tv_27349",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which wealthy shoe businessman became romantically involved with married Lisa?",
+    "question": "In As the World Turns, which wealthy shoe businessman became romantically involved with married Lisa?",
     "answers": [
       "Bruce Elliott",
       "John Eldridge",
@@ -1193,7 +1198,7 @@ const questions = [
     "id": "tv_27350",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What became of Bob and Lisa Hughes's first marriage?",
+    "question": "In As the World Turns, what became of Bob and Lisa Hughes's first marriage?",
     "answers": [
       "They never legally married",
       "They divorced",
@@ -1224,7 +1229,7 @@ const questions = [
     "id": "tv_27351",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which short-lived prime-time soap centred on Lisa's adventures away from Oakdale?",
+    "question": "In As the World Turns, which short-lived prime-time soap centred on Lisa's adventures away from Oakdale?",
     "answers": [
       "Search for Tomorrow",
       "The Young Marrieds",
@@ -1255,7 +1260,7 @@ const questions = [
     "id": "tv_27352",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "In which city was Lisa based in Our Private World?",
+    "question": "In As the World Turns, in which city was Lisa based in Our Private World?",
     "answers": [
       "Boston",
       "Dallas",
@@ -1286,7 +1291,7 @@ const questions = [
     "id": "tv_27353",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who did Lisa marry during the Our Private World story?",
+    "question": "In As the World Turns, who did Lisa marry during the Our Private World story?",
     "answers": [
       "John Eldridge",
       "Jeff Baker",
@@ -1317,7 +1322,7 @@ const questions = [
     "id": "tv_27354",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who took the role of Bob Hughes in 1960 and played him for decades?",
+    "question": "In As the World Turns, who took the role of Bob Hughes in 1960 and played him for decades?",
     "answers": [
       "Richard Thomas",
       "Don Hastings",
@@ -1348,7 +1353,7 @@ const questions = [
     "id": "tv_27355",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor later famous for The Waltons portrayed Tom Hughes in 1966 and 1967?",
+    "question": "In As the World Turns, which actor later famous for The Waltons portrayed Tom Hughes in 1966 and 1967?",
     "answers": [
       "Robert Young",
       "Ron Howard",
@@ -1410,7 +1415,7 @@ const questions = [
     "id": "tv_27357",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress originally played Ellen Lowell?",
+    "question": "In As the World Turns, which actress originally played Ellen Lowell?",
     "answers": [
       "Wendy Drew",
       "Patricia Bruder",
@@ -1441,7 +1446,7 @@ const questions = [
     "id": "tv_27358",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who took over the role of Ellen Lowell from Wendy Drew in 1960?",
+    "question": "In As the World Turns, who took over the role of Ellen Lowell from Wendy Drew in 1960?",
     "answers": [
       "Anne Burr",
       "Patricia Bruder",
@@ -1472,7 +1477,7 @@ const questions = [
     "id": "tv_27359",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which married doctor fathered Ellen Lowell's son Jimmy?",
+    "question": "In As the World Turns, which married doctor fathered Ellen Lowell's son Jimmy?",
     "answers": [
       "Doug Cassen",
       "Neil Wade",
@@ -1503,7 +1508,7 @@ const questions = [
     "id": "tv_27360",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What did Ellen Lowell do with the son she had with Tim Cole?",
+    "question": "In As the World Turns, what did Ellen Lowell do with the son she had with Tim Cole?",
     "answers": [
       "Left him at a boarding school",
       "Sent him abroad to live with Nancy",
@@ -1534,7 +1539,7 @@ const questions = [
     "id": "tv_27361",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What illness killed Tim Cole after he married Ellen?",
+    "question": "In As the World Turns, what illness killed Tim Cole after he married Ellen?",
     "answers": [
       "Leukaemia",
       "Polio",
@@ -1565,7 +1570,7 @@ const questions = [
     "id": "tv_27362",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who became Ellen's later husband after her difficult past?",
+    "question": "In As the World Turns, who became Ellen's later husband after her difficult past?",
     "answers": [
       "Bob Hughes",
       "Dr David Stewart",
@@ -1596,7 +1601,7 @@ const questions = [
     "id": "tv_27363",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor became closely associated with the role of Dr David Stewart?",
+    "question": "In As the World Turns, which actor became closely associated with the role of Dr David Stewart?",
     "answers": [
       "Don Hastings",
       "Nat Polen",
@@ -1627,7 +1632,7 @@ const questions = [
     "id": "tv_27364",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was David Stewart's wife when the Stewart family first arrived in Oakdale?",
+    "question": "In As the World Turns, who was David Stewart's wife when the Stewart family first arrived in Oakdale?",
     "answers": [
       "Ellen Lowell",
       "Lisa Hughes",
@@ -1658,7 +1663,7 @@ const questions = [
     "id": "tv_27365",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What family secret did Ellen uncover while caring for the Stewart children?",
+    "question": "In As the World Turns, what family secret did Ellen uncover while caring for the Stewart children?",
     "answers": [
       "One boy was the son she had given up",
       "David was her father",
@@ -1689,7 +1694,7 @@ const questions = [
     "id": "tv_27366",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Stewart household employee was fatally struck by Ellen during a dispute over a secret?",
+    "question": "In As the World Turns, which Stewart household employee was fatally struck by Ellen during a dispute over a secret?",
     "answers": [
       "Sara Fuller",
       "Franny Brennan",
@@ -1720,7 +1725,7 @@ const questions = [
     "id": "tv_27367",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What legal consequence followed Ellen's involvement in the housekeeper's death?",
+    "question": "In As the World Turns, what legal consequence followed Ellen's involvement in the housekeeper's death?",
     "answers": [
       "She became a police officer",
       "She was given full custody immediately",
@@ -1751,7 +1756,7 @@ const questions = [
     "id": "tv_27368",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which woman did Ellen meet in prison during the 1960s?",
+    "question": "In As the World Turns, which woman did Ellen meet in prison during the 1960s?",
     "answers": [
       "Lisa Hughes",
       "Penny Hughes",
@@ -1782,7 +1787,7 @@ const questions = [
     "id": "tv_27369",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was the first husband of Janice Turner, an early love of Donald Hughes?",
+    "question": "In As the World Turns, who was the first husband of Janice Turner, an early love of Donald Hughes?",
     "answers": [
       "Carl Whipple",
       "Jim Lowell",
@@ -1813,7 +1818,7 @@ const questions = [
     "id": "tv_27370",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which glamorous actress portrayed Sara Fuller in the mid-1960s?",
+    "question": "In As the World Turns, which glamorous actress portrayed Sara Fuller in the mid-1960s?",
     "answers": [
       "Patricia Bruder",
       "Gloria DeHaven",
@@ -1844,7 +1849,7 @@ const questions = [
     "id": "tv_27371",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which young woman learnt that Sara Fuller was her biological mother?",
+    "question": "In As the World Turns, which young woman learnt that Sara Fuller was her biological mother?",
     "answers": [
       "Ellen Lowell",
       "Lisa Miller",
@@ -1875,7 +1880,7 @@ const questions = [
     "id": "tv_27372",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What happened to Sara Fuller during the dispute involving her daughter Amanda?",
+    "question": "In As the World Turns, what happened to Sara Fuller during the dispute involving her daughter Amanda?",
     "answers": [
       "She drowned in a lake",
       "She died in a plane crash",
@@ -1906,7 +1911,7 @@ const questions = [
     "id": "tv_27373",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who defended Amanda Holmes during the trial following Sara Fuller's death?",
+    "question": "In As the World Turns, who defended Amanda Holmes during the trial following Sara Fuller's death?",
     "answers": [
       "Chris Hughes",
       "Donald Hughes",
@@ -1937,7 +1942,7 @@ const questions = [
     "id": "tv_27374",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "How did Chris and Nancy Hughes take opposite positions in Amanda's trial?",
+    "question": "In As the World Turns, how did Chris and Nancy Hughes take opposite positions in Amanda's trial?",
     "answers": [
       "Chris refused to testify at all",
       "Chris defended Amanda while Nancy gave evidence against her",
@@ -2120,9 +2125,1071 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==68||new Set(questions.map(q=>q.id)).size!==questions.length||
+// Appended audited questions, preserving the 68 original question IDs.
+const AUDIT_ORIGINAL_COUNT=68;
+const AUDIT_FIRST_ID=42920;
+const auditQuestions=[
+  {
+    "id": "tv_42920",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what were Nancy Hughes's first words in the premiere episode?",
+    "answers": [
+      "How is Penny today?",
+      "Good morning, Chris.",
+      "Welcome to Oakdale.",
+      "It's a beautiful day."
+    ],
+    "correctAnswer": "Good morning, Chris.",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Production",
+      "1956 Premiere",
+      "First Words",
+      "Nancy Hughes",
+      "Chris Hughes",
+      "Helen Wagner",
+      "Opening Dialogue"
+    ]
+  },
+  {
+    "id": "tv_42921",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what scheduling distinction did As the World Turns and The Edge of Night share when they launched?",
+    "answers": [
+      "They were the first half-hour daytime television soaps",
+      "They were the first colour daytime soaps",
+      "They premiered in prime time",
+      "They were the first soaps aired at weekends"
+    ],
+    "correctAnswer": "They were the first half-hour daytime television soaps",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Production",
+      "1956 Premiere",
+      "30 Minute Pioneer",
+      "The Edge Of Night",
+      "CBS Daytime",
+      "Broadcast History",
+      "Format Milestone"
+    ]
+  },
+  {
+    "id": "tv_42922",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what was the first name of Nancy and Chris Hughes's eldest daughter, who died before the serial began?",
+    "answers": [
+      "Penny",
+      "Lisa",
+      "Ellen",
+      "Susan"
+    ],
+    "correctAnswer": "Susan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Family",
+      "Nancy Hughes",
+      "Chris Hughes",
+      "Susan Hughes",
+      "Eldest Daughter",
+      "Pre Series Loss",
+      "Original Family"
+    ]
+  },
+  {
+    "id": "tv_42923",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actor became widely associated with the role of Pa Hughes after the premiere?",
+    "answers": [
+      "Don MacLaughlin",
+      "William Johnstone",
+      "Santos Ortega",
+      "Mark Rydell"
+    ],
+    "correctAnswer": "Santos Ortega",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Santos Ortega",
+      "Pa Hughes",
+      "William Hughes",
+      "1950s Casting",
+      "Original Family",
+      "Character Actor"
+    ]
+  },
+  {
+    "id": "tv_42924",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which elderly relative's possible move into the Hughes home caused friction between Chris and Nancy early on?",
+    "answers": [
+      "Judge Lowell",
+      "Pa Hughes",
+      "Dr Doug Cassen",
+      "Jeff Baker"
+    ],
+    "correctAnswer": "Pa Hughes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Family",
+      "Chris Hughes",
+      "Nancy Hughes",
+      "Pa Hughes",
+      "Family Home",
+      "Early Conflict",
+      "1956 Storyline"
+    ]
+  },
+  {
+    "id": "tv_42925",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what was the first name of Chris and Nancy Hughes's older son, who had a romance with Janice Turner?",
+    "answers": [
+      "Donald",
+      "Robert",
+      "Daniel",
+      "Thomas"
+    ],
+    "correctAnswer": "Donald",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Family",
+      "Donald Hughes",
+      "Nancy Hughes",
+      "Chris Hughes",
+      "Janice Turner",
+      "Early Family",
+      "Original Cast"
+    ]
+  },
+  {
+    "id": "tv_42926",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which woman did Nancy Hughes initially disapprove of as a partner for her son Donald?",
+    "answers": [
+      "Ellen Lowell",
+      "Sara Fuller",
+      "Claire Lowell",
+      "Janice Turner"
+    ],
+    "correctAnswer": "Janice Turner",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Nancy Hughes",
+      "Donald Hughes",
+      "Janice Turner",
+      "Family Opposition",
+      "1950s Romance",
+      "Mother Son"
+    ]
+  },
+  {
+    "id": "tv_42927",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, whom did Janice Turner marry instead of Donald Hughes in the 1950s?",
+    "answers": [
+      "Jim Lowell",
+      "Dr Tim Cole",
+      "Carl Whipple",
+      "Neil Wade"
+    ],
+    "correctAnswer": "Carl Whipple",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Janice Turner",
+      "Carl Whipple",
+      "Donald Hughes",
+      "First Marriage",
+      "1957",
+      "Family Drama"
+    ]
+  },
+  {
+    "id": "tv_42928",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what change in Janice Turner's circumstances preceded her eventual marriage to Donald Hughes?",
+    "answers": [
+      "She inherited a television station",
+      "She returned to Oakdale as a widow",
+      "She completed medical school",
+      "She moved from Australia"
+    ],
+    "correctAnswer": "She returned to Oakdale as a widow",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Janice Whipple",
+      "Carl Whipple",
+      "Widowhood",
+      "Donald Hughes",
+      "1960s Marriage",
+      "Oakdale Return"
+    ]
+  },
+  {
+    "id": "tv_42929",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what were the names of Janice Turner's two daughters from her marriage to Carl Whipple?",
+    "answers": [
+      "Alice and Debbie",
+      "Penny and Susan",
+      "Ellen and Sara",
+      "Kim and Jennifer"
+    ],
+    "correctAnswer": "Alice and Debbie",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Family",
+      "Janice Turner",
+      "Carl Whipple",
+      "Alice Whipple",
+      "Debbie Whipple",
+      "Donald Hughes",
+      "Blended Family"
+    ]
+  },
+  {
+    "id": "tv_42930",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, to which US state did Donald Hughes and Janice move after their marriage?",
+    "answers": [
+      "Florida",
+      "California",
+      "Maine",
+      "Texas"
+    ],
+    "correctAnswer": "Texas",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Donald Hughes",
+      "Janice Whipple",
+      "Texas Departure",
+      "Early 1960s",
+      "Oakdale Exit",
+      "Family Conflict"
+    ]
+  },
+  {
+    "id": "tv_42931",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what happened to Penny Hughes and Jeff Baker's first attempt at marriage?",
+    "answers": [
+      "They divorced after ten years",
+      "Jeff was already married",
+      "It was annulled",
+      "They never reached the registrar"
+    ],
+    "correctAnswer": "It was annulled",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Penny Hughes",
+      "Jeff Baker",
+      "Annulled Marriage",
+      "1950s Elopement",
+      "Nancy Hughes",
+      "Love Story"
+    ]
+  },
+  {
+    "id": "tv_42932",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, during which holiday did Penny Hughes and Jeff Baker marry after their earlier annulment?",
+    "answers": [
+      "Easter",
+      "Christmas",
+      "Thanksgiving",
+      "Independence Day"
+    ],
+    "correctAnswer": "Christmas",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Penny Hughes",
+      "Jeff Baker",
+      "Christmas Wedding",
+      "1959 Marriage",
+      "Live Soap",
+      "Reconciliation"
+    ]
+  },
+  {
+    "id": "tv_42933",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which personal problem did Jeff Baker struggle with after returning to Oakdale?",
+    "answers": [
+      "Alcohol dependence",
+      "Gambling addiction",
+      "Kleptomania",
+      "Memory loss"
+    ],
+    "correctAnswer": "Alcohol dependence",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Jeff Baker",
+      "Penny Hughes",
+      "Alcohol Dependence",
+      "1960 Storyline",
+      "Hospital Treatment",
+      "Family Strain"
+    ]
+  },
+  {
+    "id": "tv_42934",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which doctor married Chris Hughes's sister Edith before she left Oakdale?",
+    "answers": [
+      "David Stewart",
+      "Doug Cassen",
+      "Michael Shea",
+      "George Frye"
+    ],
+    "correctAnswer": "George Frye",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Edith Hughes",
+      "George Frye",
+      "Ruth Warrick",
+      "Marriage",
+      "Original Family",
+      "Departure"
+    ]
+  },
+  {
+    "id": "tv_42935",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, how did lawyer Jim Lowell die in the 1950s?",
+    "answers": [
+      "A train crash",
+      "A fire at the courthouse",
+      "A boating accident",
+      "A heart attack"
+    ],
+    "correctAnswer": "A boating accident",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Jim Lowell",
+      "Boating Accident",
+      "Florida",
+      "1957 Death",
+      "Claire Lowell",
+      "Original Family"
+    ]
+  },
+  {
+    "id": "tv_42936",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what name was Ellen Lowell's son given before he was known as Dan Stewart?",
+    "answers": [
+      "Paul",
+      "Jimmy",
+      "Duncan",
+      "Richard"
+    ],
+    "correctAnswer": "Jimmy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Family",
+      "Ellen Lowell",
+      "Jimmy Cole",
+      "Dan Stewart",
+      "Tim Cole",
+      "Adoption",
+      "Original Name"
+    ]
+  },
+  {
+    "id": "tv_42937",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what was the first name of Dan Stewart's adoptive mother?",
+    "answers": [
+      "Betty",
+      "Nancy",
+      "Claire",
+      "Sara"
+    ],
+    "correctAnswer": "Betty",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Family",
+      "Betty Stewart",
+      "Dan Stewart",
+      "David Stewart",
+      "Adoptive Mother",
+      "Ellen Lowell",
+      "Stewart Family"
+    ]
+  },
+  {
+    "id": "tv_42938",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, who was David and Betty Stewart's biological son, and Dan's adoptive brother?",
+    "answers": [
+      "Bob Hughes",
+      "Tom Hughes",
+      "Donald Hughes",
+      "Paul Stewart"
+    ],
+    "correctAnswer": "Paul Stewart",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Family",
+      "Paul Stewart",
+      "David Stewart",
+      "Betty Stewart",
+      "Dan Stewart",
+      "Sibling",
+      "Stewart Family"
+    ]
+  },
+  {
+    "id": "tv_42939",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which Oakdale doctor was revealed to be Neil Wade's biological father?",
+    "answers": [
+      "David Stewart",
+      "Bob Hughes",
+      "Doug Cassen",
+      "Michael Shea"
+    ],
+    "correctAnswer": "Doug Cassen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Family",
+      "Neil Wade",
+      "Doug Cassen",
+      "Judith Wade",
+      "Parentage Secret",
+      "1960s",
+      "Doctor"
+    ]
+  },
+  {
+    "id": "tv_42940",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which medical emergency did Neil Wade help Pa Hughes survive at a Fourth of July gathering?",
+    "answers": [
+      "A stroke",
+      "Choking",
+      "A snakebite",
+      "An epileptic seizure"
+    ],
+    "correctAnswer": "Choking",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Neil Wade",
+      "Pa Hughes",
+      "Fourth Of July",
+      "Choking Emergency",
+      "Doctor",
+      "1960s"
+    ]
+  },
+  {
+    "id": "tv_42941",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what was unusual about Bob Hughes and Lisa Miller's initial wedding?",
+    "answers": [
+      "They married secretly",
+      "They married during a television quiz",
+      "They married at sea",
+      "They married without a licence"
+    ],
+    "correctAnswer": "They married secretly",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Bob Hughes",
+      "Lisa Miller",
+      "Secret Marriage",
+      "1960 Romance",
+      "Nancy Hughes",
+      "Young Couple"
+    ]
+  },
+  {
+    "id": "tv_42942",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what were the first names of Lisa Miller's parents who visited Oakdale?",
+    "answers": [
+      "Jim and Claire",
+      "David and Betty",
+      "Donald and Janice",
+      "Henry and Alma"
+    ],
+    "correctAnswer": "Henry and Alma",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Family",
+      "Lisa Miller",
+      "Henry Miller",
+      "Alma Miller",
+      "Family Visit",
+      "Bob Hughes",
+      "1960 Wedding"
+    ]
+  },
+  {
+    "id": "tv_42943",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what happened to Lisa Hughes's later pregnancy before she divorced Bob?",
+    "answers": [
+      "She gave birth to twins",
+      "She placed the child for adoption",
+      "She miscarried",
+      "She discovered the pregnancy was false"
+    ],
+    "correctAnswer": "She miscarried",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Lisa Hughes",
+      "Bob Hughes",
+      "Miscarriage",
+      "1960s Divorce",
+      "Marriage Breakdown",
+      "Family Loss"
+    ]
+  },
+  {
+    "id": "tv_42944",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which nurse became engaged to Bob Hughes after his divorce from Lisa?",
+    "answers": [
+      "Claire Lowell",
+      "Sylvia Hill",
+      "Sara Fuller",
+      "Janice Turner"
+    ],
+    "correctAnswer": "Sylvia Hill",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Bob Hughes",
+      "Sylvia Hill",
+      "Nurse",
+      "Engagement",
+      "Oakdale Memorial",
+      "Early 1960s"
+    ]
+  },
+  {
+    "id": "tv_42945",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what caused the death of Penny's second husband Neil Wade in the 1960s?",
+    "answers": [
+      "An embolism",
+      "A plane crash",
+      "A fall down stairs",
+      "A shooting"
+    ],
+    "correctAnswer": "An embolism",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Neil Wade",
+      "Penny Hughes",
+      "Embolism",
+      "1960s Death",
+      "Second Husband",
+      "Doctor"
+    ]
+  },
+  {
+    "id": "tv_42946",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what television-history first was achieved by Lisa's 1965 spin-off Our Private World?",
+    "answers": [
+      "It was the first daytime soap filmed in colour",
+      "It was the first live television sitcom",
+      "It was the first soap to have weekly episodes",
+      "It was the first daytime-soap spin-off broadcast in prime time"
+    ],
+    "correctAnswer": "It was the first daytime-soap spin-off broadcast in prime time",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Our Private World",
+      "Lisa Hughes",
+      "Eileen Fulton",
+      "1965",
+      "Prime Time",
+      "Soap Spin Off"
+    ]
+  },
+  {
+    "id": "tv_42947",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which producer and director was a driving force behind As the World Turns in its first decade?",
+    "answers": [
+      "Paul Rauch",
+      "Aaron Spelling",
+      "Ted Corday",
+      "Douglas Marland"
+    ],
+    "correctAnswer": "Ted Corday",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Ted Corday",
+      "Director",
+      "Producer",
+      "1956 Launch",
+      "Television Academy",
+      "Early Production"
+    ]
+  },
+  {
+    "id": "tv_42948",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what reputation did Lisa Miller Hughes acquire among viewers during the 1960s?",
+    "answers": [
+      "Oakdale's favourite detective",
+      "The woman you love to hate",
+      "The silent matriarch",
+      "The woman who never smiled"
+    ],
+    "correctAnswer": "The woman you love to hate",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Lisa Miller",
+      "Eileen Fulton",
+      "1950s 1960s Audience",
+      "Soap Antiheroine",
+      "Daytime Diva",
+      "Audience Reaction"
+    ]
+  },
+  {
+    "id": "tv_42949",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which man broke his engagement to Ellen Lowell after learning she hoped to regain custody of her son through marriage?",
+    "answers": [
+      "Jim Norman",
+      "Donald Hughes",
+      "Bob Hughes",
+      "George Frye"
+    ],
+    "correctAnswer": "Jim Norman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Ellen Lowell",
+      "Jim Norman",
+      "Custody Scheme",
+      "Dan Stewart",
+      "1960s",
+      "Engagement End"
+    ]
+  },
+  {
+    "id": "tv_42950",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which future victim of a fatal staircase fall was briefly engaged to Donald Hughes?",
+    "answers": [
+      "Lisa Miller",
+      "Janice Whipple",
+      "Betty Stewart",
+      "Sara Fuller"
+    ],
+    "correctAnswer": "Sara Fuller",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Sara Fuller",
+      "Donald Hughes",
+      "Engagement",
+      "Amanda Holmes",
+      "1960s",
+      "Family Tragedy"
+    ]
+  },
+  {
+    "id": "tv_42951",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actor briefly played Dr David Stewart before Henderson Forsythe took over?",
+    "answers": [
+      "Don MacLaughlin",
+      "Hugh Marlowe",
+      "Ernest Graves",
+      "William Redfield"
+    ],
+    "correctAnswer": "Ernest Graves",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Ernest Graves",
+      "David Stewart",
+      "Henderson Forsythe",
+      "1960 Recast",
+      "Role Origin",
+      "Oakdale Doctor"
+    ]
+  },
+  {
+    "id": "tv_42952",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actor portrayed Bob Hughes shortly before Don Hastings took over the role?",
+    "answers": [
+      "Don MacLaughlin",
+      "Ronnie Welsh",
+      "Mark Rydell",
+      "William Johnstone"
+    ],
+    "correctAnswer": "Ronnie Welsh",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "1956–1969 Early Years",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Ronnie Welsh",
+      "Bob Hughes",
+      "Don Hastings",
+      "1960 Recast",
+      "Hughes Family",
+      "Early Cast"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==101||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+String(27312+i)||q.category!=='TV'||q.topic!=='As the World Turns'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(27312+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.category!=='TV'||q.topic!=='As the World Turns'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<13||
 new Set(q.tags).size!==q.tags.length||!q.dailyEligible||!['Easy','Medium','Hard'].includes(q.difficulty)))
