@@ -6,10 +6,11 @@
 'use strict';
 
 const FIRST_ID = 22644;
-const commonTags = [
-  'television', 'A Country Practice', 'Australian TV drama',
-  'medical soap', '1981-1994', 'rural Australian setting'
-];
+const PROGRAMME = 'A Country Practice';
+const commonTags=['Television',PROGRAMME,'Programme: '+PROGRAMME,
+ 'Australian TV Drama','Medical Soap','Wandin Valley','1981–1994',
+ 'Seven Network','Network Ten revival','Finished Programme',
+ 'Selected Story Coverage'];
 
 // Question | correct answer | three distractors | difficulty | seven question-specific tags.
 // Show name is provided in every question for standalone and mixed-category play.
@@ -146,12 +147,14 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 407: repeated answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 407: expected 13 distinct tags at row ${index + 1}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 407: expected at least 12 distinct tags at row ${index + 1}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
+    coverageStatus: 'Selected Coverage — Further Story Audits Needed',
     question,
     answers,
     correctAnswer,
@@ -161,4 +164,57 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// A COUNTRY PRACTICE — FINISHED, BUT NOT EXHAUSTIVELY AUDITED.
+// 112 original questions tv_22644–tv_22755 preserved; IDs added tv_41554 onward.
+// Selected stories from Seven's 1,058 episodes (1981–1993) and the shorter
+// Network Ten revival in 1994. Do NOT call all 1,000+ episodes fully covered.
+// The 2026 programme-level Logie Hall of Fame induction is included in originals.
+// Episode summaries and plot-story source references:
+// https://tv.apple.com/au/show/a-country-practice/umc.cmc.3nzy4razkgwqe7bfmm9oprkpd
+// https://www.museum.tv/tv-encyclopedia-4/country-practice-a
+// https://www.theguardian.com/tv-and-radio/2022/jun/20/a-country-practice-the-10-best-moments-in-australias-beloved-soap-sorted
+// https://en.wikipedia.org/wiki/List_of_A_Country_Practice_episodes_(seasons_1%E2%80%938)
+// https://olps.co.za/kiwix/content/wikipedia_en_all_maxi_2024-01/A/List_of_A_Country_Practice_episodes
+// https://www.screenaustralia.gov.au/screen-guide/country-practice-a-1021/
+// https://www.rottentomatoes.com/tv/a_country_practice/s14
+// https://www.abc.net.au/news/2026-08-16/logies-2026-winners-list-gold-logie/107025284
+// UK transmission history: https://en.wikipedia.org/wiki/A_Country_Practice
+const audit407Rows=[["1981 In General Practice","What urgent surgery is required in the drama's very first story?","An emergency Caesarean","A heart transplant","An appendectomy","An eye operation","Pilot obstetric emergency"],["1981 In General Practice","Which prescription does a teenage girl seek from Simon against her father's wishes?","The contraceptive pill","Antibiotics","A sleeping tablet","Insulin","Patient autonomy and father"],["1981 The Itinerants","Which relative's distrust of doctors complicates medical treatment of a very ill boy?","His mother","His uncle","His sister","His grandfather","Medical treatment and parental resistance"],["Early series Frank Gilroy","Which flowers does Sergeant Frank Gilroy strive to grow to prize-winning standard?","Roses","Orchids","Tulips","Chrysanthemums","Frank's horticultural hobby"],["Early series Frank Gilroy","Which non-alcoholic drink does Frank Gilroy favour at the club?","Orange juice","Tomato juice","Lemon squash","Iced coffee","Frank's preferred refreshment"],["1982 Mates","What kind of treatment is at the heart of the storyline involving shopkeepers Doug and Keith?","An organ transplant","A hip replacement","Laser eye surgery","A dental extraction","Doug's hospital rights and relationship"],["1983 A Woman's Place","Who raised Esme Watson after her birth mother gave her up as a baby?","Mona Watson","Shirley Dean","Molly Jones","Rosemary Prior","Esme's family origins"],["1983 A Woman's Place","What name was the woman known as Esme Watson originally given at birth?","Harriet Holt","Margaret Sloan","Vicky Dean","Cathy Hayden","Esme's birth identity"],["1983 From This Day On","What is the title of the 1983 two-part wedding story about Simon and Vicky?","From This Day On","Molly","Mates","Listen to the Children","Simon and Vicky's marriage episode"],["1983 From This Day On","Which animal injured a horse Vicky was treating immediately before her wedding?","A bull","A stag","A wild boar","A ram","Horse emergency delays Vicky"],["1985 Molly","In which hospital ward could Molly see her visitors through a glass window while protected from infection?","The maternity ward","The pharmacy","The operating theatre","The casualty waiting room","Molly's restricted visiting"],["1988 Sophie","What type of journalism had Terence Elliott's daughter Sophie pursued before her heroin dependency?","Foreign correspondence","Sports reporting","Political cartooning","Weather forecasting","Sophie's earlier work"],["1988 Sophie","Where does Sophie Elliott die after an overdose in her addiction storyline?","A barn","A railway station","A hospital lift","A church hall","Sophie's death in four-part story"],["1993 Power Play","Which physiotherapist is accused of sexually harassing nurse Kate Bryant?","Mike Stirling","Tom Newman","Ian McIntyre","Matthew Tyler","Kate's workplace sexual-harassment case"],["1993 Power Play","Why does Kate Bryant press her case when the physiotherapist offers to drop charges?","To protect other women","To win a travel scholarship","To take ownership of the hospital","To change careers","Kate's principled response"],["1993 Duet","Which illness is affecting Rosemary's recently married son in the Duet storyline?","Schizophrenia","Alzheimer's disease","Huntington's disease","Obsessive-compulsive disorder","Son's mental-health crisis"],["1993 Burning Bright","Which man takes police officer Tom Newman hostage as bushfires approach?","Peter Courtland","Vernon Locke","Simon Bowen","Brendan Jones","Hostage drama during bushfire"],["1993 Burning Bright","What is the title of the Seven Network's last two-part story?","Burning Bright","New Kid in Town","Future Perfect","Where's Wally?","1993 final episode title"],["1993 New Kid in Town","Where does Ian MacIntyre let a sick woman and her children stay?","His farmhouse","The vet surgery","The RSL hall","A vacant prison wing","New ranger shelters a family"],["1993 A Fine Romance","Which young woman whom Hugo falls for is revealed to have leukaemia?","Christina Agapitos","Cathy Hayden","Marta Kertesz","Vicky Dean","Hugo and Christina"],["1994 The Trouble with Women","Which skin concern does a patient bring to Claire in the revived series?","A suspicious mole","A spider bite","A scald","An infected piercing","Claire's patient"],["1994 Best of Friends","Which illegal activity does park ranger Ian discover in the national park?","Dog fighting","Illegal gold mining","Pirate radio broadcasts","Unlicensed fishing","National-park criminal investigation"],["1994 Too Young","What mysterious creature does Danny investigate following a report by an elderly man?","An alleged beast","An escaped elephant","A giant eagle","A crocodile","Danny's local mystery"],["1994 Mother's Day","What does Georgie take to veterinarian Jess after discovering it abandoned?","A pregnant dog","A baby kangaroo","A wounded owl","A stray horse","Georgie's rescued animal"],["1994 The Grass Is Greener","Which disease does Jess fear has spread among cattle on a farm?","Foot-and-mouth disease","Equine influenza","Avian flu","Heartworm","Veterinary livestock emergency"],["1994 His Own Medicine","What hazardous material do Ian and Claire find dumped in the national park?","Toxic waste","Old fireworks","Unused medicine bottles","Building timber","National-park pollution"],["1994 Solomon's Child","What happens to a pregnant woman visiting Wandin Valley when Ian helps her?","She goes into labour","She wins a dance contest","She becomes mayor","She buys a farm","Ian and an unexpected birth"],["1994 Where's Wally?","Which medical device is a stranger trying to find when Harry meets him?","A dialysis machine","An incubator","An X-ray viewer","A ventilator","Search for renal equipment"],["1994 Thicker Than Water","What unusual sight does Georgie think she recorded on film?","A UFO","A volcanic eruption","A ghost ship","A meteor crater","Georgie's mistaken sighting"],["1994 A Taste of Honey","Which emergency do Harry and Jess witness after their vehicle becomes bogged?","An aeroplane crash","A dam bursting","A building collapse","A ferry sinking","Wandin Valley rescue"],["1994 Tunnel Vision","Which historic means of transport do residents fight to save from decommissioning?","A steam train","A cable car","A horse tram","A canal barge","Railway preservation"],["1994 Pegasus","Which serious illness is affecting the young girl Jess meets on a farm?","Cancer","Whooping cough","Malaria","Measles","Jess and Bridie"],["1994 Keeping the Faith","What planned construction project does a woman protest outside the vet and ranger's offices?","A high-voltage power line","An airport runway","A bypass tunnel","A mobile mast","Anti-power-line protest"],["1994 Running Wild","Which wild horse is Jess trying to find because it may spread disease to farm animals?","A brumby","A dingo","A wombat","A koala","Tracking a suspected disease carrier"],["1994 Survival","What dangerous object is discovered at a community outing beside the lake?","A live grenade","An abandoned landmine","A box of fireworks","A leaking fuel drum","Kane's discovery"],["1994 Little Girl Lost","Who are injured in a traffic accident featured in this story?","A blind woman and her guide dog","Two cyclists","A farmer and his horse","A bus driver and a child","Accident involving guide dog"],["1994 Love Me Do","Whom does Harry unexpectedly meet after being called to a road accident?","His ex-wife","His former tutor","His brother","His old coach","Unexpected relationship encounter"],["1994 Future Perfect","Which community event is Esme tasked with organising in the final revival episode?","The Wandin Valley fair","A mayoral election","A charity marathon","A summer dance","Final episode community event"],["1994 Future Perfect","What disagreement involves Claire and Danny in the final revival episode?","Whether Claire should take Danny's surname","Which school Danny should attend","Where to buy a boat","Whether Harry should move to London","Claire and Danny's relationship"],["1983 Logie Awards","Which young performer won the 1983 Logie for Best Juvenile Performance?","Jeremy Shadlow","Brett Climo","Jamie Croft","Matt Day","Award-winning juvenile cast"],["1983 Logie Awards","Which 1983 Logie category did Brian Wenzel win for playing Frank Gilroy?","Best Supporting Actor in a Series","Most Popular Actor","Most Popular New Talent","Best Lead Actor","Frank Gilroy acting award"],["1985 Logie Awards","Which category did Shane Withington win in 1985 for playing Brendan Jones?","Best Lead Actor in a Series","Best Comedy Performer","Most Popular New Talent","Best Juvenile Performance","Brendan Jones acting award"],["1989 Logie Awards","Which acting category did Joan Sydney win for playing Maggie Sloane in 1989?","Most Outstanding Actress","Most Popular New Talent","Best Comedy Actress","Gold Logie","Joan Sydney acting honour"],["1990 Logie Awards","Which award recognised Georgie Parker as a newcomer in 1990?","Most Popular New Talent","Most Popular Presenter","Best Supporting Actress","Best Documentary Narrator","Lucy Gardiner breakout"],["1991 AWGIE Awards","Which writer won an AWGIE for a television serial script connected to the drama?","Leon Saunders","James Davern","Judith Colquhoun","Denny Lawrence","1991 best TV serial episode script"],["UK 1982 broadcast","In what year did ITV regions begin showing the programme in the United Kingdom?","1982","1981","1984","1987","First UK broadcast year"],["UK 1982 broadcast","On which date did the first ITV regions begin broadcasting the Australian serial?","27 October 1982","18 November 1981","13 April 1994","22 November 1993","ITV launch date"]];
+const audit407Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+for(const [section,stem,correctAnswer,w1,w2,w3,focus] of audit407Rows){
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[w1,w2,w3];answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit407Norm)).size!==4)
+ throw Error('Pack 407 multiple-choice collision: '+stem);
+ const tags=['Television',PROGRAMME,'Programme: '+PROGRAMME,
+ 'Australian TV Drama','Medical Soap','Wandin Valley',
+ 'Finished original programme (1981–1994)',
+ 'Section or episode: '+section,'Character/plot topic: '+focus,
+ 'Correct answer: '+correctAnswer,'Selected episode coverage',
+ 'Seven Network and Network Ten','Australian television history',
+ 'Further story audit recommended'];
+ questions.push({id:'tv_'+(41554+questions.length-112),
+ category:'Television',programme:PROGRAMME,
+ coverageStatus:'Selected Coverage — Further Story Audits Needed',
+ question,answers,correctAnswer,difficulty:'Medium',tags,dailyEligible:true});
+}
+const seen407Ids=new Set(),seen407Stems=new Set();
+for(const row of questions){
+ const wording=audit407Norm(row.question);
+ const fresh=Number(row.id.slice(3))>=41554;
+ if(row.category!=='Television'||row.programme!==PROGRAMME||
+ row.coverageStatus!=='Selected Coverage — Further Story Audits Needed'||
+ !row.tags.includes('Programme: '+PROGRAMME)||
+ !wording.includes(audit407Norm(PROGRAMME))||
+ row.answers.length!==4||new Set(row.answers.map(audit407Norm)).size!==4||
+ row.answers.filter(x=>x===row.correctAnswer).length!==1||
+ row.tags.length<12||row.dailyEligible!==true||
+ seen407Ids.has(row.id)||seen407Stems.has(wording)||
+ (fresh&&wording.includes(audit407Norm(row.correctAnswer))))
+ throw Error('Pack 407 validation error at '+row.id);
+ seen407Ids.add(row.id);seen407Stems.add(wording);
+}
+module.exports=questions;
