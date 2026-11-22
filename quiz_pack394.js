@@ -6,7 +6,10 @@
 'use strict';
 
 const FIRST_ID = 21459;
-const commonTags = ['television', 'British TV', 'ITV', 'The Pembrokeshire Murders', 'true crime drama', 'Welsh crime drama'];
+const PROGRAMME = 'The Pembrokeshire Murders';
+const commonTags = ['Television','British Television','ITV','True Crime Drama',
+  'Welsh Crime Drama',PROGRAMME,'Programme: '+PROGRAMME,
+  'Year: 2021','World Productions'];
 
 // Format: question | correct answer | three incorrect answers | difficulty | seven specific tags.
 const rows = [
@@ -104,7 +107,9 @@ const questions = rows.map((row, index) => {
   if (parts.length !== 13 || parts.some(part => !part)) {
     throw new Error(`Pack 394: malformed row ${index + 1}`);
   }
-  const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const [stem, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const question = stem.toLowerCase().includes(PROGRAMME.toLowerCase()) ? stem
+    : 'In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
   if (!['Easy', 'Medium', 'Hard'].includes(difficulty)) {
     throw new Error(`Pack 394: invalid difficulty at row ${index + 1}`);
   }
@@ -114,12 +119,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 394: repeated option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 394: expected 13 distinct tags at row ${index + 1}; got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 394: expected 12+ distinct tags at row ${index + 1}; got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -129,4 +135,58 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Audited The Pembrokeshire Murders: ITV drama, three episodes (11–13 January 2021).
+// 80 original IDs tv_21459–tv_21538 retained; new IDs begin tv_41147.
+// Cast and crew: https://www.rottentomatoes.com/tv/the_pembrokeshire_murders_2021/cast-and-crew
+// Production: https://www.world-productions.com/productions/the-pembrokeshire-murders
+// Dates: https://epguides.com/PembrokeshireMurders/
+// Awards: https://www.bafta.org/media-centre/press-releases/winners-announced-2021-british-academy-cymru-awards/
+// Nominations: https://www.itv.com/news/wales/2021-09-07/welsh-drama-series-the-pembrokeshire-murders-gets-seven-bafta-cymru-nominations
+// Ratings: https://www.itv.com/presscentre/presscentre/media-releases/more-11-million-watch-itvs-pembrokeshire-murders-launch
+// The separate documentary Catching the Gameshow Killer is NOT included as an episode.
+const audit394Cast=[["DI Lynne Harries","Steven Meo","m","police investigator"],["DS Glyn Johnson","Richard Corgan","m","cold case detective"],["DC Nigel Rowe","Kyle Lima","m","detective constable"],["DCI George Jones","William Thomas","m","senior police detective"],["Chief Constable Tyler","Suzanne Packer","f","senior police chief"],["DCS Coles","Rhodri Evan","m","senior officer"],["DCI Jim Morris","Roger Evans","m","police officer"],["Jack Wilkins","Steffan Cennydd","m","Steve Wilkins's son"],["Amy Wilkins","Mabli Jen Eustace","f","Steve Wilkins's daughter"],["Craig","Simon Nehan","m","supporting character"],["the prison governor","Hywel Morgan","m","prison official"],["the parole board judge","Francine Morgan","f","parole hearing official"],["the first parole board member","Joanna van Kampen","f","parole hearing panel"],["the second parole board member","Andrew MacBean","m","parole hearing panel"],["the benefits officer","Terema Wainwright","f","benefits official"]];
+const audit394Facts=[["Broadcast","Which date did the opening episode first air on ITV?","11 January 2021",["12 January 2021","13 January 2021","14 January 2021"],"original premiere"],["Broadcast","Which date did the second episode first air on ITV?","12 January 2021",["11 January 2021","13 January 2021","15 January 2021"],"second episode broadcast"],["Broadcast","Which date did the third and final episode first air on ITV?","13 January 2021",["11 January 2021","12 January 2021","14 January 2021"],"final episode transmission"],["Awards","Which BAFTA Cymru programme category did the drama win in 2021?","Television Drama",["Single Drama","Feature / Television Film","Factual Series"],"BAFTA Cymru series award"],["Awards","Which BAFTA Cymru directing category did Marc Evans win for this drama?","Director: Fiction",["Director: Factual","Breakthrough","Writer"],"BAFTA Cymru fiction director award"],["Awards","How many BAFTA Cymru nominations did the ITV drama receive in 2021?","Seven",["Four","Five","Nine"],"BAFTA Cymru nominations"],["Awards","Which BAFTA Cymru award category recognised the programme's audio crew with a nomination?","Sound",["Make Up and Hair","Editing","Production Design"],"BAFTA Cymru sound nomination"],["Awards","Which BAFTA Cymru craft category nominated the drama's cinematography?","Photography and Lighting: Fiction",["Photography: Factual","Costume Design","Production Design"],"cinematography nomination"],["Production","Who produced the ITV miniseries?","Ed Talfan",["Simon Heath","Nick Stevens","Marc Evans"],"series producer"],["Production","Who composed the original score?","Carly Paradis",["Debbie Wiseman","Isobel Waller-Bridge","Anne Dudley"],"score composer"],["Production","Which executive producer was credited alongside Jonathan Hill and Nick Stevens?","Simon Heath",["Ed Talfan","Sally Wainwright","Chris Chibnall"],"executive production"],["Production","Which costume designer received a BAFTA Cymru nomination for the series?","Dawn Thomas-Mondo",["Caroline McCall","Lucinda Wright","Sarah Arthur"],"costume design nomination"],["Production","Which cinematographer was nominated for a BAFTA Cymru award for this drama?","Baz Irvine",["Matt Flannery","John Conroy","Milos Moore"],"cinematography nominee"],["Audience","How many viewers watched the launch episode during its first week according to ITV?","11.2 million",["6.6 million","4.5 million","13.7 million"],"first-week launch audience"],["Production","What was the title of the separate factual documentary aired after the drama?","Catching the Gameshow Killer",["In Plain Sight","The Bullseye Affair","Behind the Coastal Path Murders"],"separate companion documentary"]];
+const audit394Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB').replace(/[^\p{L}\p{N}]/gu,'');
+const actorPool394={
+ m:audit394Cast.filter(a=>a[2]==='m').map(a=>a[1]),
+ f:audit394Cast.filter(a=>a[2]==='f').map(a=>a[1])
+};
+function add394(stem,answer,wrong,focus,type){
+ if(wrong.length!==3||new Set([answer,...wrong].map(audit394Norm)).size!==4)
+  throw Error('Invalid added question options: '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrong]; answers.splice(questions.length%4,0,answer);
+ const tags=['Television','British Television','ITV','True Crime Drama','Welsh Crime Drama',
+  PROGRAMME,'Programme: '+PROGRAMME,'Three-part drama: 2021',
+  'Focus: '+focus,'Question type: '+type,'Correct answer: '+answer,
+  'Writer: Nick Stevens','Based on a true police investigation',
+  'Producer: World Productions'];
+ questions.push({id:'tv_'+(41147+questions.length-80),
+  category:'Television',programme:PROGRAMME,question,answers,
+  correctAnswer:answer,difficulty:'Medium',tags,dailyEligible:true});
+}
+for(const [i,[role,actor,gender,focus]] of audit394Cast.entries()){
+ const candidates=actorPool394[gender].filter(a=>a!==actor);
+ if(candidates.length<3)throw Error('Insufficient distractors for '+role);
+ const start=(i*5+role.length)%candidates.length;
+ const wrong=[candidates[start],candidates[(start+1)%candidates.length],candidates[(start+2)%candidates.length]];
+ add394('Which '+(gender==='f'?'actress':'actor')+' played '+role+'?',actor,wrong,
+  'Role: '+role+' ('+focus+')','Supporting cast');
+}
+for(const [type,stem,answer,wrong,focus] of audit394Facts)
+ add394(stem,answer,wrong,focus,type);
+const auditIds394=new Set(),auditStems394=new Set();
+for(const q of questions){
+ const stem=audit394Norm(q.question);
+ if(q.programme!==PROGRAMME||q.category!=='Television'||
+ !q.tags.includes('Programme: '+PROGRAMME)||q.answers.length!==4||
+ new Set(q.answers.map(audit394Norm)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ auditIds394.has(q.id)||auditStems394.has(stem))
+ throw Error('Pack 394 audited module validation failed: '+q.id);
+ auditIds394.add(q.id);auditStems394.add(stem);
+}
+module.exports=questions;
