@@ -4184,7 +4184,7 @@ const auditQuestions=[
     "id": "tv_43019",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "In As the World Turns, which woman was romantically linked to Brian McColl before his involvement with Barbara Ryan?",
+    "question": "In As the World Turns, which woman did Brian McColl leave Barbara Ryan for?",
     "answers": [
       "Diana McColl",
       "Marcy Thompson",
@@ -4209,7 +4209,9 @@ const auditQuestions=[
       "Barbara Ryan",
       "1980s Romance",
       "McColl Family",
-      "Love Triangle"
+      "Love Triangle",
+      "Brian Leaves Barbara",
+      "Relationship Order"
     ]
   },
   {
