@@ -1,5 +1,11 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 501: Better Call Saul, Seasons 1–2 (2015–2016)
-// 80 researched questions, four per episode, 40 each season. IDs tv_28336–tv_28415.
+// 104 audited questions: 80 originals (one vague scam fact repaired) plus 24 researched cast, backstory and award additions.
+// Original IDs tv_28336–tv_28415; audit IDs tv_43219–tv_43242.
+// Original 80 comprise four questions per episode, 40 each season.
+// Extra audit 22 Nov 2026: Television Academy awards, Critics Choice
+// winners, TCA awards, Rotten Tomatoes/AMC cast information, Five-O
+// episode reviews and S2 character, episode and production records.
+// Questions stand alone and preserve the original question IDs.
 // Source checks on 18 Nov 2026:
 // https://www.tvmaze.com/shows/618/better-call-saul/episodeguide
 // https://en.wikipedia.org/wiki/Better_Call_Saul_season_1
@@ -1440,14 +1446,14 @@ const questions = [
     "id": "tv_28377",
     "category": "TV",
     "topic": "Better Call Saul",
-    "question": "In Better Call Saul (Season 2), which professional does Jimmy and Kim's restaurant con target?",
+    "question": "In Better Call Saul Season 2, which boastful stockbroker do Jimmy and Kim trick into paying an expensive tequila bill?",
     "answers": [
-      "A stock trader",
-      "An airline pilot",
-      "A surgeon",
-      "An estate agent"
+      "Ken Wins",
+      "Clifford Main",
+      "Kevin Wachtell",
+      "Daniel Wormald"
     ],
-    "correctAnswer": "A stock trader",
+    "correctAnswer": "Ken Wins",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1455,20 +1461,19 @@ const questions = [
       "American Television",
       "Crime Drama",
       "Legal Drama",
-      "Drama",
       "Programme: Better Call Saul",
       "Original AMC Series",
-      "Breaking Bad prequel",
-      "Written Quiz",
-      "Season: 2",
-      "Year: 2016",
+      "Breaking Bad Prequel",
+      "Season: 2 (2016)",
       "Episode: S02E01",
-      "Episode title: Switch",
-      "Storyline: Jimmy and Kim's con on Ken",
-      "Storyline: Expensive drinks and food",
-      "Character or group: Jimmy McGill",
-      "Character or group: Kim Wexler",
-      "Correct fact: A stock trader"
+      "Episode Title: Switch",
+      "Storyline: Jimmy and Kim scam a stockbroker",
+      "Character: Ken Wins",
+      "Characters: Jimmy McGill and Kim Wexler",
+      "Zafiro Anejo Tequila",
+      "Bar and Restaurant Con",
+      "Specific Fact: Ken Wins",
+      "Written Quiz"
     ]
   },
   {
@@ -2797,9 +2802,854 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==80||new Set(questions.map(q=>q.id)).size!==questions.length||
+// 22 Nov 2026: supplemental questions for Seasons 1 and 2.
+const AUDIT_ORIGINAL_COUNT=80;
+const AUDIT_FIRST_ID=43219;
+const auditQuestions=[
+  {
+    "id": "tv_43219",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, which two writers created the Breaking Bad prequel Better Call Saul?",
+    "answers": [
+      "David Chase and Matthew Weiner",
+      "Vince Gilligan and Peter Gould",
+      "Noah Hawley and Sam Esmail",
+      "Shonda Rhimes and Peter Morgan"
+    ],
+    "correctAnswer": "Vince Gilligan and Peter Gould",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Creators",
+      "Focus: Creators in Season 1",
+      "Vince Gilligan",
+      "Peter Gould",
+      "Series Creators",
+      "Breaking Bad",
+      "Prequel Development",
+      "2015 Premiere",
+      "Answer: Vince Gilligan and Peter Gould"
+    ]
+  },
+  {
+    "id": "tv_43220",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, which actor plays the struggling lawyer Jimmy McGill before he becomes Saul Goodman?",
+    "answers": [
+      "Bob Odenkirk",
+      "Bryan Cranston",
+      "Aaron Paul",
+      "Patrick Fabian"
+    ],
+    "correctAnswer": "Bob Odenkirk",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Cast",
+      "Focus: Cast in Season 1",
+      "Bob Odenkirk",
+      "Jimmy McGill",
+      "Saul Goodman",
+      "Lead Actor",
+      "2015 Cast",
+      "Breaking Bad Character",
+      "Answer: Bob Odenkirk"
+    ]
+  },
+  {
+    "id": "tv_43221",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, which actress plays the attorney Kim Wexler?",
+    "answers": [
+      "Anna Gunn",
+      "Betsy Brandt",
+      "Julie Ann Emery",
+      "Rhea Seehorn"
+    ],
+    "correctAnswer": "Rhea Seehorn",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Cast",
+      "Focus: Cast in Season 1",
+      "Rhea Seehorn",
+      "Kim Wexler",
+      "Leading Actress",
+      "HHM Attorney",
+      "2015 Cast",
+      "Answer: Rhea Seehorn"
+    ]
+  },
+  {
+    "id": "tv_43222",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, which actor portrays Jimmy's older brother Chuck McGill?",
+    "answers": [
+      "Jonathan Banks",
+      "Ed Begley Jr",
+      "Michael McKean",
+      "Dean Norris"
+    ],
+    "correctAnswer": "Michael McKean",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Cast",
+      "Focus: Cast in Season 1",
+      "Michael McKean",
+      "Chuck McGill",
+      "Older Brother",
+      "Electromagnetic Hypersensitivity",
+      "HHM Lawyer",
+      "2015 Cast",
+      "Answer: Michael McKean"
+    ]
+  },
+  {
+    "id": "tv_43223",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, which actor portrays the former Philadelphia policeman Mike Ehrmantraut?",
+    "answers": [
+      "Michael Mando",
+      "Jonathan Banks",
+      "Raymond Cruz",
+      "Bob Odenkirk"
+    ],
+    "correctAnswer": "Jonathan Banks",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Cast",
+      "Focus: Cast in Season 1",
+      "Jonathan Banks",
+      "Mike Ehrmantraut",
+      "Philadelphia Police",
+      "Parking Security",
+      "Breaking Bad Actor",
+      "2015 Cast",
+      "Answer: Jonathan Banks"
+    ]
+  },
+  {
+    "id": "tv_43224",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, which actor portrays the HHM lawyer Howard Hamlin?",
+    "answers": [
+      "Patrick Fabian",
+      "Michael McKean",
+      "Ed Begley Jr",
+      "Michael Mando"
+    ],
+    "correctAnswer": "Patrick Fabian",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Cast",
+      "Focus: Cast in Season 1",
+      "Patrick Fabian",
+      "Howard Hamlin",
+      "HHM Partner",
+      "Law Firm",
+      "2015 Cast",
+      "Albuquerque Lawyer",
+      "Answer: Patrick Fabian"
+    ]
+  },
+  {
+    "id": "tv_43225",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, which actor portrays Nacho Varga, the Salamanca associate who approaches Jimmy?",
+    "answers": [
+      "Raymond Cruz",
+      "Mark Margolis",
+      "Tony Dalton",
+      "Michael Mando"
+    ],
+    "correctAnswer": "Michael Mando",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Cast",
+      "Focus: Cast in Season 1",
+      "Michael Mando",
+      "Nacho Varga",
+      "Drug Trade",
+      "Salamanca Criminal Network",
+      "2015 Cast",
+      "Jimmy Client",
+      "Answer: Michael Mando"
+    ]
+  },
+  {
+    "id": "tv_43226",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, which actor returns as volatile cartel member Tuco Salamanca?",
+    "answers": [
+      "Jonathan Banks",
+      "Michael Mando",
+      "Raymond Cruz",
+      "Steven Michael Quezada"
+    ],
+    "correctAnswer": "Raymond Cruz",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Cast",
+      "Focus: Cast in Season 1",
+      "Raymond Cruz",
+      "Tuco Salamanca",
+      "Cartel",
+      "Breaking Bad Crossover",
+      "2015 Premiere",
+      "Mexican Criminal",
+      "Answer: Raymond Cruz"
+    ]
+  },
+  {
+    "id": "tv_43227",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, what type of business houses Jimmy McGill's cramped first law office?",
+    "answers": [
+      "A car dealership",
+      "A nail salon",
+      "A cinema",
+      "A laundrette"
+    ],
+    "correctAnswer": "A nail salon",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Setting",
+      "Focus: Setting in Season 1",
+      "Jimmy McGill",
+      "Nail Salon",
+      "Cramped Office",
+      "2015 Setting",
+      "Low Budget Lawyer",
+      "Albuquerque",
+      "Answer: A nail salon"
+    ]
+  },
+  {
+    "id": "tv_43228",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, what job does Mike Ehrmantraut perform when Jimmy first encounters him?",
+    "answers": [
+      "Parking-lot attendant at the courthouse",
+      "Pharmacist",
+      "Police chief of Albuquerque",
+      "A hotel concierge"
+    ],
+    "correctAnswer": "Parking-lot attendant at the courthouse",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Setting",
+      "Focus: Setting in Season 1",
+      "Mike Ehrmantraut",
+      "Courthouse Car Park",
+      "Parking Attendant",
+      "Jimmy McGill",
+      "2015 Job",
+      "Former Policeman",
+      "Answer: Parking-lot attendant at the courthouse"
+    ]
+  },
+  {
+    "id": "tv_43229",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, what does the abbreviation HHM stand for in the early seasons?",
+    "answers": [
+      "Howard, Hector & Mike",
+      "Henderson, Howard & Martin",
+      "Hamlin, Haggerty & Mason",
+      "Hamlin, Hamlin & McGill"
+    ],
+    "correctAnswer": "Hamlin, Hamlin & McGill",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Law Firm",
+      "Focus: Law Firm in Season 1",
+      "Hamlin Hamlin And McGill",
+      "HHM",
+      "Howard Hamlin",
+      "Chuck McGill",
+      "Law Firm Name",
+      "Albuquerque",
+      "Answer: Hamlin, Hamlin & McGill"
+    ]
+  },
+  {
+    "id": "tv_43230",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, which two corrupt Philadelphia officers does Mike Ehrmantraut kill to avenge his son?",
+    "answers": [
+      "Hank and Gomez",
+      "Jimmy and Marco",
+      "Hoffman and Fensky",
+      "Howard and Cliff"
+    ],
+    "correctAnswer": "Hoffman and Fensky",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Backstory",
+      "Focus: Backstory in Season 1",
+      "Mike Ehrmantraut",
+      "Hoffman And Fensky",
+      "Five O",
+      "Matty Ehrmantraut",
+      "Philadelphia Police",
+      "Revenge",
+      "Answer: Hoffman and Fensky"
+    ]
+  },
+  {
+    "id": "tv_43231",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, for which Emmy category was Better Call Saul nominated in its debut year?",
+    "answers": [
+      "Outstanding Comedy Series",
+      "Outstanding Drama Series",
+      "Outstanding Variety Talk Series",
+      "Outstanding Animated Programme"
+    ],
+    "correctAnswer": "Outstanding Drama Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Awards",
+      "Focus: Awards in Season 1",
+      "2015 Primetime Emmy",
+      "Outstanding Drama Series",
+      "Debut Nomination",
+      "Television Academy",
+      "AMC",
+      "Awards",
+      "Answer: Outstanding Drama Series"
+    ]
+  },
+  {
+    "id": "tv_43232",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, who won Best Actor in a Drama Series at the 2015 Critics' Choice Television Awards for Better Call Saul?",
+    "answers": [
+      "Bob Odenkirk",
+      "Michael McKean",
+      "Patrick Fabian",
+      "Jonathan Banks"
+    ],
+    "correctAnswer": "Bob Odenkirk",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Awards",
+      "Focus: Awards in Season 1",
+      "Bob Odenkirk",
+      "2015 Critics Choice",
+      "Best Drama Actor",
+      "Jimmy McGill",
+      "Critics Choice Win",
+      "Awards",
+      "Answer: Bob Odenkirk"
+    ]
+  },
+  {
+    "id": "tv_43233",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, which Better Call Saul performer won Best Supporting Actor at the 2015 Critics' Choice Television Awards?",
+    "answers": [
+      "Michael Mando",
+      "Bob Odenkirk",
+      "Patrick Fabian",
+      "Jonathan Banks"
+    ],
+    "correctAnswer": "Jonathan Banks",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Awards",
+      "Focus: Awards in Season 1",
+      "Jonathan Banks",
+      "2015 Critics Choice",
+      "Best Supporting Actor",
+      "Mike Ehrmantraut",
+      "Award Winner",
+      "Awards",
+      "Answer: Jonathan Banks"
+    ]
+  },
+  {
+    "id": "tv_43234",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 1, what honour did the Television Critics Association give Better Call Saul in its first year?",
+    "answers": [
+      "Outstanding Children's Programming",
+      "Best Reality Programme",
+      "Outstanding New Program",
+      "Best Sports Programme"
+    ],
+    "correctAnswer": "Outstanding New Program",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 1 (2015)",
+      "Section: Awards",
+      "Focus: Awards in Season 1",
+      "2015 TCA Awards",
+      "Outstanding New Program",
+      "Series Debut",
+      "Critics Awards",
+      "Television Critics Association",
+      "Recognition",
+      "Answer: Outstanding New Program"
+    ]
+  },
+  {
+    "id": "tv_43235",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 2, which actor plays Clifford Main, the senior partner at Davis & Main?",
+    "answers": [
+      "Michael McKean",
+      "Ed Begley Jr",
+      "Patrick Fabian",
+      "Bob Odenkirk"
+    ],
+    "correctAnswer": "Ed Begley Jr",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 2 (2016)",
+      "Section: Cast",
+      "Focus: Cast in Season 2",
+      "Ed Begley Junior",
+      "Cliff Main",
+      "Davis And Main",
+      "Season Two Guest Cast",
+      "Lawyer",
+      "Employer",
+      "Answer: Ed Begley Jr"
+    ]
+  },
+  {
+    "id": "tv_43236",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 2, which actor plays Mesa Verde bank executive Kevin Wachtell?",
+    "answers": [
+      "Rex Linn",
+      "Dean Norris",
+      "Raymond Cruz",
+      "Patrick Fabian"
+    ],
+    "correctAnswer": "Rex Linn",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 2 (2016)",
+      "Section: Cast",
+      "Focus: Cast in Season 2",
+      "Rex Linn",
+      "Kevin Wachtell",
+      "Mesa Verde Bank",
+      "Season Two Cast",
+      "Bank Executive",
+      "Kim Wexler Client",
+      "Answer: Rex Linn"
+    ]
+  },
+  {
+    "id": "tv_43237",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 2, which actor plays drug-company employee Daniel Wormald, nicknamed Pryce?",
+    "answers": [
+      "Michael Mando",
+      "Jeremiah Bitsui",
+      "Aaron Paul",
+      "Mark Proksch"
+    ],
+    "correctAnswer": "Mark Proksch",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 2 (2016)",
+      "Section: Cast",
+      "Focus: Cast in Season 2",
+      "Mark Proksch",
+      "Daniel Wormald",
+      "Pryce",
+      "Season Two Cast",
+      "Baseball Cards",
+      "Drug Company",
+      "Answer: Mark Proksch"
+    ]
+  },
+  {
+    "id": "tv_43238",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 2, which actress plays Chuck's former wife Rebecca in the second season?",
+    "answers": [
+      "Rhea Seehorn",
+      "Julie Ann Emery",
+      "Ann Cusack",
+      "Kerry Condon"
+    ],
+    "correctAnswer": "Ann Cusack",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 2 (2016)",
+      "Section: Cast",
+      "Focus: Cast in Season 2",
+      "Ann Cusack",
+      "Rebecca Bois",
+      "Chuck McGill",
+      "Season Two Episode Rebecca",
+      "Guest Actress",
+      "Marriage",
+      "Answer: Ann Cusack"
+    ]
+  },
+  {
+    "id": "tv_43239",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 2, what is the first name of Chuck McGill's HHM assistant who regularly helps him?",
+    "answers": [
+      "Marco",
+      "Ernesto",
+      "Omar",
+      "Howard"
+    ],
+    "correctAnswer": "Ernesto",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 2 (2016)",
+      "Section: Character",
+      "Focus: Character in Season 2",
+      "Ernesto",
+      "Chuck McGill",
+      "HHM Assistant",
+      "Season Two",
+      "Firm Staff",
+      "Workplace",
+      "Answer: Ernesto"
+    ]
+  },
+  {
+    "id": "tv_43240",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 2, which expensive tequila do Jimmy and Kim order while conning Ken Wins?",
+    "answers": [
+      "Zafiro Añejo",
+      "Patrón Silver",
+      "Jose Cuervo Especial",
+      "Don Julio Blanco"
+    ],
+    "correctAnswer": "Zafiro Añejo",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 2 (2016)",
+      "Section: Con",
+      "Focus: Con in Season 2",
+      "Zafiro Anejo",
+      "Jimmy McGill",
+      "Kim Wexler",
+      "Ken Wins",
+      "Switch",
+      "Bar Scam",
+      "Answer: Zafiro Añejo"
+    ]
+  },
+  {
+    "id": "tv_43241",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 2, who is Kaylee Ehrmantraut in Mike's family?",
+    "answers": [
+      "His daughter",
+      "His sister",
+      "His late son's partner",
+      "His granddaughter"
+    ],
+    "correctAnswer": "His granddaughter",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 2 (2016)",
+      "Section: Family",
+      "Focus: Family in Season 2",
+      "Kaylee Ehrmantraut",
+      "Mike Ehrmantraut",
+      "Granddaughter",
+      "Stacey Ehrmantraut",
+      "Family",
+      "Season Two",
+      "Answer: His granddaughter"
+    ]
+  },
+  {
+    "id": "tv_43242",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 2, which Better Call Saul episode received a 2016 Emmy nomination for special visual effects?",
+    "answers": [
+      "Switch",
+      "Cobbler",
+      "Fifi",
+      "Inflatable"
+    ],
+    "correctAnswer": "Fifi",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "Original AMC Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 2 (2016)",
+      "Section: Awards",
+      "Focus: Awards in Season 2",
+      "Fifi",
+      "2016 Emmy Nomination",
+      "Visual Effects",
+      "Television Academy",
+      "Season Two",
+      "Special Effects",
+      "Answer: Fifi"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==104||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(28336+i)||q.topic!=='Better Call Saul'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(28336+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Better Call Saul'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<16||
 new Set(q.tags).size!==q.tags.length||!['Easy','Medium','Hard'].includes(q.difficulty)||q.dailyEligible!==true))
