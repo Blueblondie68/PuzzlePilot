@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 431
 // All Saints (Australia): Season 12 (2009), 37 episodes - final season.
 // Follows Pack 430. First ID: tv_25245.
-// Complete WordPad-ready CommonJS. Verify the saved WordPad copy before GitHub.
+// Complete WordPad-ready CommonJS. Final 2009 season; the whole programme has ended.
 // Each row: question | correct | three distractors | difficulty | seven individual tags.
 'use strict';
 
@@ -117,9 +117,40 @@ Whose final day at All Saints is the focus of Yesterday, Today and Tomorrow?|Von
 What event brought the Emergency and MRU staff together in the series finale?|A farewell dinner for Von|A graduation ceremony for interns|A wedding for Bart and Amy|A new hospital opening|Medium|Yesterday Today And Tomorrow|Episode 37|Von Ryan|Farewell Dinner|Emergency Staff|MRU Team|Series Conclusion
 On what date was the last All Saints episode first broadcast in Australia?|27 October 2009|20 October 2009|3 November 2009|25 November 2008|Medium|Yesterday Today And Tomorrow|Episode 37|27 October 2009|Final Broadcast|Series Finale|Seven Network|Television History`;
 
+
+// Series 12 conclusion audit: finale, 2010 Logie nominations, original cast and production.
+// All original question IDs and answer data preserved.
+const AUDIT_ORIGINAL_COUNT = 103;
+const AUDIT_FIRST_ID = 42369;
+const auditFacts = `Which All Saints actress was nominated for Most Popular New Female Talent at the 2010 Logie Awards?|Mirrah Foulkes|Ella Scott Lynch|Alix Bidstrup|Celeste Barber|Medium|2010 Logies|Mirrah Foulkes|Jo Mathieson|Most Popular New Female Talent|award nomination|actor recognition|final series
+For which audience-voted programme prize was All Saints nominated at the 2010 Logie Awards?|Most Popular Drama|Most Popular Comedy Program|Most Popular Reality Program|Most Popular Lifestyle Program|Medium|2010 Logies|Most Popular Drama|programme nomination|Seven Network|audience vote|Australian television|final season
+Under what expanded title was All Saints promoted following its 2009 format change?|All Saints: Medical Response Unit|All Saints: Ward Seventeen|All Saints: The Operating Theatre|All Saints: Emergency Call|Medium|2009 revamp|Medical Response Unit|expanded series title|Seven Network|helicopter rescues|new format|final season
+Which network announced the cancellation of All Saints during its final season?|Seven Network|Nine Network|Network Ten|Australian Broadcasting Corporation|Easy|Seven Network|cancellation announcement|2009|Australian drama|broadcast history|final series|television network
+In which month of its final year was the cancellation of All Saints announced?|July|February|September|November|Medium|July 2009|cancellation|broadcast history|final season|network announcement|Australian television|programme ending
+Which Seven Network programming executive announced the cancellation of All Saints?|Tim Worner|David Leckie|Peter Meakin|James Warburton|Medium|Tim Worner|Seven Network|director of programming|July 2009|cancellation announcement|Australian television|behind the scenes
+Which two pressures did Seven Network cite when explaining the end of All Saints?|Changing audiences and higher production costs|A cast strike and studio closure|Loss of broadcast rights and new censorship laws|A merger and a shortage of scripts|Medium|cancellation decision|audience shift|production costs|Seven Network|2009 announcement|business context|programme finale
+To how many episodes had Seven initially proposed cutting the final season of All Saints before settling on a longer run?|Twenty-four|Eighteen|Thirty-seven|Forty-six|Medium|initial season order|twenty four episodes|2009 cancellation|revised production|final season|Seven Network|broadcast planning
+Who directed the final All Saints episode Yesterday Today and Tomorrow?|Marcus Cole|Jet Wilkinson|Di Drew|Ian Gilmour|Medium|Marcus Cole|series finale|Yesterday Today and Tomorrow|2009|episode director|production credit|final episode
+Who wrote the final All Saints episode Yesterday Today and Tomorrow?|Louise Crane-Bowes|Sean Nash|Lily Taylor|Trent Atkinson|Medium|Louise Crane Bowes|series finale|Yesterday Today and Tomorrow|2009|episode writer|production credit|final episode
+Which director was credited with the All Saints final-season premiere Out of the Ashes?|Ian Gilmour|Marcus Cole|Samantha Lang|Jet Wilkinson|Medium|Ian Gilmour|Out of the Ashes|2009 premiere|episode director|production credit|season twelve|opening episode
+Who wrote the All Saints final-season premiere Out of the Ashes?|Louise Crane-Bowes|Sean Nash|Jeff Truman|Sally Webb|Medium|Louise Crane Bowes|Out of the Ashes|2009 premiere|episode writer|production credit|season twelve|opening episode
+Which actor portrayed Ian Kingsley in All Saints final-season episodes?|Tom Oakley|Jonathan Wood|John Sheerin|Curtis Oakes|Medium|Tom Oakley|Ian Kingsley|2009 recurring cast|Claire Anderson|actor identification|series twelve|dramatic role
+Which actress portrayed Debra Rossi during the final All Saints series?|Sarah Woods|Anna Volska|Genevieve Hegney|Ella Scott Lynch|Medium|Sarah Woods|Debra Rossi|Adam Rossi|2009 recurring cast|actor identification|family story|series twelve
+Who played the All Saints character Russell Jaeger in the 2009 series?|John Sheerin|Curtis Oakes|Tom Oakley|Jonathan Wood|Medium|John Sheerin|Russell Jaeger|Gabrielle Jaeger|2009 guest cast|father character|actor identification|heart attack
+Which actor portrayed Ben Jaeger in the final All Saints series?|Curtis Oakes|John Sheerin|Jonathan Wood|Tom Oakley|Medium|Curtis Oakes|Ben Jaeger|Gabrielle Jaeger|2009 guest cast|brother character|actor identification|family accident
+Which actress returned as Juliet Martin in the final season of All Saints?|Genevieve Hegney|Sarah Woods|Anna Volska|Renee Lim|Medium|Genevieve Hegney|Juliet Martin|2009 guest cast|Mike Vlasek|recurring romantic story|actor identification|series twelve
+Which actress played Suzi Lau in a guest appearance during All Saints final season?|Renee Lim|Celeste Barber|Alix Bidstrup|Sarah Woods|Medium|Renee Lim|Suzi Lau|2009 guest cast|performer identification|returning character|medical drama|series twelve
+In All Saints Series 12 what sort of romance developed between Bart West and Amy Fielding?|A secret relationship|A long-distance marriage|An arranged engagement|An open relationship|Medium|Bart West|Amy Fielding|secret love affair|colleague relationship|final season|romantic storyline|character development
+Which All Saints character joined the new Medical Response Unit while confronting his troubled past?|Steve Taylor|Frank Campion|Bart West|Elliott Parker|Medium|Steve Taylor|Medical Response Unit|2009|personal demons|paramedic rescues|series overhaul|character progression
+Which colleague's death cast a shadow over the All Saints Emergency team at the start of the final series?|Erica Templeton's|Terri Sullivan's|Amy Fielding's|Von Ryan's|Medium|Erica Templeton|season opening|colleague bereavement|2009 aftermath|Emergency Department|cast departure|series continuity
+In All Saints episode On Second Thoughts what sort of embarrassing incident triggered an MRU rescue?|A man's sexual fantasy had left him trapped|A surgeon locked himself out of an ambulance|A wedding guest fell into a fountain|A football fan was stuck in a turnstile|Medium|On Second Thoughts|unusual rescue|sexual fantasy|Medical Response Unit|2009|remote callout|episode eighteen
+In All Saints episode In Trust which troublesome visitor complicated life for the Emergency staff?|A journalist|A professional footballer|A visiting senator|A television magician|Medium|In Trust|journalist|Emergency Department|difficult visitor|2009|episode twenty four|staff conflict
+In All Saints episode Test of Faith what happened to the relationship between Steve Taylor and Claire Anderson?|Their relationship ended|They announced their engagement|They moved abroad together|They discovered they were cousins|Medium|Test of Faith|Steve Taylor|Claire Anderson|relationship breakdown|2009|episode twenty one|character departure
+In All Saints episode Out of the Ashes how many people were stranded after an accident on a remote river?|Four|Two|Six|Eight|Medium|Out of the Ashes|boating accident|remote river|helicopter rescue|2009 premiere|Medical Response Unit|four casualties`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -134,9 +165,16 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In which ')
+      ? 'In All Saints, which ' + question.slice(9)
+      : question.startsWith('In ')
+        ? 'In All Saints episode ' + question.slice(3)
+        : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
