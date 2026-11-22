@@ -2,7 +2,7 @@
 // As Time Goes By (BBC One): Series 1-5, 1992-1996.
 // Forty episodes; Pack 436 will cover Series 6-9 and the 2005 reunion specials.
 // Begins at tv_25593, following Pack 434. WordPad-ready CommonJS.
-// Verify the user's saved WordPad copy before any GitHub/Render upload.
+// Original series 1-5 (1992-1996), followed by later seasons in Pack 436.
 'use strict';
 
 const FIRST_ID = 25593;
@@ -120,9 +120,32 @@ What exaggerated honour did villagers wrongly believe Lionel had received in Sho
 What did the grateful villagers bring Jean and Lionel in Showered with Gifts?|Numerous presents|Invitations to join the army|Hundreds of books to sign|A new office computer|Medium|Showered With Gifts|Series Five Finale|Villagers|Presents|Country House|Overblown Story|Rural Community
 At which country pub did Sandy spend an evening with the Ferris brothers in Showered with Gifts?|The Stag and Huntsmen|The Red Lion|The King's Head|The White Hart|Hard|Showered With Gifts|Series Five|Stag And Huntsmen|Sandy|Ferris Brothers|Village Pub|Country Evening`;
 
+
+// Focused audit: genuine BAFTA, production, opening and supporting cast gaps.
+// Original 105 question IDs, answers and tags are preserved.
+const AUDIT_ORIGINAL_COUNT = 105;
+const AUDIT_FIRST_ID = 42456;
+const auditFacts = `Which As Time Goes By actress was nominated for a BAFTA Comedy Performance award in 1996?|Judi Dench|Moira Brooker|Jenny Funnell|Moyra Fraser|Medium|1996 BAFTA Television Awards|Judi Dench|Comedy Performance Nomination|Jean Pargetter|British Academy|Series Five|Acting Awards
+Who won the 1996 BAFTA Comedy Performance award for which As Time Goes By's Judi Dench was nominated?|Martin Clunes|Richard Wilson|Geoffrey Palmer|Steve Coogan|Medium|1996 BAFTA Television Awards|Martin Clunes|Men Behaving Badly|Comedy Performance Winner|Judi Dench Nomination|Awards Result|British Sitcom
+What was the original working title of the BBC sitcom As Time Goes By?|Winter With Flowers|The Copper Kettle|Just Two People|The Picnic|Medium|Winter With Flowers|Original Working Title|Title Changed|First Day Filming|Production History|BBC One|Development
+Which classic romantic film helped inspire the title and theme music of As Time Goes By?|Casablanca|Brief Encounter|An Affair to Remember|Roman Holiday|Medium|Casablanca|Theme Song|Classic Cinema|Title Inspiration|Romantic Comedy|Music Origins|Production History
+How many years had Jean and Lionel been apart when they reunited at the beginning of As Time Goes By?|38 years|25 years|45 years|12 years|Medium|Thirty Eight Years|Jean Pargetter|Lionel Hardcastle|Reunion|Former Sweethearts|Story Premise|1992 Debut
+In which year did Lionel leave for Korea on National Service in the backstory of As Time Goes By?|1953|1945|1961|1970|Medium|1953|National Service|Korean War|Lionel Hardcastle|Romantic Separation|Missing Letter|Programme Backstory
+What agricultural business had Lionel run in Kenya before the events of As Time Goes By?|A coffee plantation|A tea plantation|A vineyard|A dairy farm|Medium|Coffee Plantation|Kenya|Lionel Hardcastle|Overseas Life|Book Memoir|Career Backstory|Character History
+Which West London district was home to Jean Pargetter in As Time Goes By?|Holland Park|Chelsea|Richmond|Hampstead|Medium|Holland Park|West London|Jean Pargetter|Home Setting|Programme Geography|1990s Sitcom|Main Location
+Which actress portrayed housekeeper Mrs Bale in As Time Goes By?|Janet Henfrey|Moyra Fraser|Joan Sims|Vivienne Martin|Medium|Janet Henfrey|Mrs Bale|Country House|Supporting Cast|Series Two Onwards|Character Actress|Recurring Role
+Who played Lionel's secretary Gwen Flack in As Time Goes By?|Vivienne Martin|Fiona Mollison|Moira Brooker|Jenny Funnell|Medium|Vivienne Martin|Gwen Flack|Lionel Secretary|Series Three And Four|Supporting Actress|Cast Identification|Office Story
+Which actress portrayed branch manager Sally Curtis in As Time Goes By?|Fiona Mollison|Janet Henfrey|Vivienne Martin|Moira Brooker|Medium|Fiona Mollison|Sally Curtis|Type For You|Branch Manager|Series Three|Supporting Cast|Actress
+Which actor portrayed American television representative Mike Barbosa in As Time Goes By?|Otto Jarman|Philip Bretherton|Frank Middlemass|Paul Chapman|Medium|Otto Jarman|Mike Barbosa|American Mini Series|Television Producer|Series Three And Four|Actor Identification|Guest Cast
+Which actor played the younger Lionel in flashbacks on As Time Goes By?|William Hope|Geoffrey Palmer|Paul Chapman|Philip Bretherton|Medium|William Hope|Young Lionel|Flashback|Series Four|Cast Identification|Romantic Backstory|Actor
+Which actress played the younger Jean in a flashback on As Time Goes By?|Tres Hanley|Judi Dench|Moira Brooker|Joan Sims|Medium|Tres Hanley|Young Jean|Flashback|Series Four|Cast Identification|Romantic Backstory|Actress
+What is the title of the first-ever episode of As Time Goes By?|You Must Remember This|Getting to Know You Again|The Copper Kettle|Surprise Surprise|Medium|You Must Remember This|Series One|Episode One|Debut Title|1992 Broadcast|Lionel Jean Reunion|Programme Opening
+On which date did As Time Goes By first air on BBC One?|12 January 1992|5 March 1995|7 January 1996|19 April 1998|Medium|12 January 1992|Original Airdate|BBC One|Programme Premiere|Series One|Broadcast History|British Television
+Which real-life relatives of Judi Dench and Geoffrey Palmer appeared as the young couple in As Time Goes By's opening photographs?|Their daughter and son respectively|Their niece and nephew respectively|Their granddaughter and grandson respectively|Their sister and brother respectively|Hard|Opening Credits|Judi Dench Daughter|Geoffrey Palmer Son|Childhood Photos|Title Sequence|Production Detail|Romantic Premise`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields in ${id}; found ${fields.length}`);
@@ -137,13 +160,17 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : 'In the sitcom As Time Goes By, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
-  return { id, category: 'Television', programme, question, answers,
+  return { id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true };
 });
 
-if (questions.length !== 105 || questions[0].id !== 'tv_25593' ||
-    questions[questions.length - 1].id !== 'tv_25697' ||
+if (questions.length !== 122 || questions[0].id !== 'tv_25593' ||
+    questions[104].id !== 'tv_25697' ||
+    questions[questions.length - 1].id !== 'tv_42472' ||
     new Set(questions.map(q => q.id)).size !== questions.length ||
     new Set(questions.map(q => q.question.toLowerCase())).size !== questions.length ||
     questions.some(q => q.answers.length !== 4 || !q.answers.includes(q.correctAnswer) ||
