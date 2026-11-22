@@ -185,6 +185,26 @@
    `In All My Children, which socialite became involved with Ryan Lavery as his marriage to Gillian was ending?|Greenlee Smythe|Kendall Hart|Hayley Vaughan|Julia Santos|Medium|Ryan Lavery|Greenlee Smythe|Gillian Andrassy|1999|romantic entanglement|socialite|relationship triangle`,
  );
 
+
+ // Daytime Emmy awards gap audit; verified against award winners and historical records.
+ // Preserve ALL original and earlier audit question IDs.
+ const AWARDS_ORIGINAL_COUNT = rows.length;
+ const AUDIT_AWARDS_FIRST_ID = 42037;
+ rows.push(
+   `In All My Children, who won the 1990 Daytime Emmy for Outstanding Supporting Actress for playing Brooke English?|Julia Barr|Susan Lucci|Debbi Morgan|Marcy Walker|Medium|Julia Barr|Brooke English|1990 Daytime Emmy|supporting actress|acting achievement|award year|character performer`,
+   `In All My Children, which actress won the 1990 Daytime Emmy for Outstanding Younger Actress as Dixie Cooney?|Cady McClain|Kim Delaney|Kelly Ripa|Alicia Minshew|Medium|Cady McClain|Dixie Cooney|1990 Daytime Emmy|younger actress|acting award|Tad and Dixie|award year`,
+   `In All My Children, which top programme award did the soap win at the 1992 Daytime Emmys?|Outstanding Drama Series|Outstanding Game Show|Outstanding Talk Show|Outstanding Variety Special|Medium|1992 Daytime Emmy|Outstanding Drama Series|best soap|ABC production|series prize|programme honour|award category`,
+   `In All My Children, which actor won the 1993 Daytime Emmy for Outstanding Lead Actor for portraying the Chandler twins?|David Canary|Darnell Williams|Michael E Knight|James Kiberd|Medium|David Canary|Adam Chandler|Stuart Chandler|1993 Daytime Emmy|lead actor|dual performance|fourth lead win`,
+   `In All My Children, in which year did the soap win its second Daytime Emmy for Outstanding Drama Series?|1994|1990|1996|1999|Medium|1994 Daytime Emmy|Outstanding Drama Series|second series win|ABC|programme prize|soap recognition|awards history`,
+   `In All My Children, which actress won the 1995 Daytime Emmy for Outstanding Younger Actress as Kendall Hart?|Sarah Michelle Gellar|Alicia Minshew|Kelly Ripa|Marcy Walker|Medium|Sarah Michelle Gellar|Kendall Hart|1995 Daytime Emmy|younger actress|acting win|Erica Kane daughter|award year`,
+   `In All My Children, which production team won the 1995 Daytime Emmy for Outstanding Drama Series Directing?|The directing team|The casting team|The costume department|The hairstyling team|Medium|1995 Daytime Emmy|directing|creative team|production award|camera staging|soap direction|behind the scenes`,
+   `In All My Children, which creative discipline won Daytime Emmy team awards in both 1996 and 1997?|Writing|Costume design|Hairstyling|Music composition|Medium|1996 Daytime Emmy|1997 Daytime Emmy|writing team|screen scripts|production award|story construction|creative recognition`,
+   `In All My Children, which actress won the 1998 Daytime Emmy for Outstanding Supporting Actress as Brooke English?|Julia Barr|Susan Lucci|Marcy Walker|Debbi Morgan|Medium|Julia Barr|Brooke English|1998 Daytime Emmy|supporting actress|second Emmy win|acting honour|award year`,
+   `In All My Children, in which year did the soap win its third Daytime Emmy for Outstanding Drama Series?|1998|1995|1996|1999|Medium|1998 Daytime Emmy|Outstanding Drama Series|third win|ABC soap|programme honour|award history|series category`,
+   `In All My Children, which production team shared the soap's 1998 Daytime Emmy success with its drama series win?|Writing team|Costume team|Casting team|Hairstyling team|Medium|1998 Daytime Emmy|writing|drama series|creative team|production win|six Emmy awards|awards year`,
+   `In All My Children, which music-related production category earned the programme a Daytime Emmy in 1999?|Music Direction and Composition|Original Jazz Performance|Best Pop Album|Outstanding Soundtrack Actor|Medium|1999 Daytime Emmy|music direction|composition|production award|soap score|technical honour|creative team`,
+ );
+
  const questions = rows.map((row, index) => {
    const parts = row.split('|').map(part => part.trim());
    if (parts.length !== 13 || parts.some(part => !part)) {
@@ -207,7 +227,7 @@
      throw new Error(`Pack 416: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
    }
    return {
-     id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT}`,
+     id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : index < AWARDS_ORIGINAL_COUNT ? AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT : AUDIT_AWARDS_FIRST_ID + index - AWARDS_ORIGINAL_COUNT}`,
      category: 'Television',
      question,
      answers,
