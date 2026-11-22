@@ -5,7 +5,9 @@
 'use strict';
 
 const FIRST_ID = 21539;
-const commonTags = ['television', 'British TV', 'BBC One', 'Blackpool', 'Peter Bowker', 'musical crime drama'];
+const PROGRAMME = 'Blackpool';
+const commonTags = ['Television','British Television','BBC One','Musical Crime Drama',
+  PROGRAMME,'Programme: '+PROGRAMME,'Peter Bowker','BBC Television','Original serial 2004'];
 
 // Each row: question | correct answer | three distractors | difficulty | seven question-specific tags.
 const rows = [
@@ -132,7 +134,10 @@ const questions = rows.map((row, index) => {
   if (parts.length !== 13 || parts.some(part => !part)) {
     throw new Error(`Pack 395: malformed row ${index + 1}`);
   }
-  const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const [stem, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const question = stem.toLowerCase().includes(PROGRAMME.toLowerCase()) ||
+    stem.toLowerCase().includes('viva blackpool') ? stem :
+    'In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
   if (!['Easy', 'Medium', 'Hard'].includes(difficulty)) {
     throw new Error(`Pack 395: invalid difficulty at row ${index + 1}`);
   }
@@ -142,12 +147,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 395: repeated answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 395: expected 13 distinct tags at row ${index + 1}; got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 395: expected 12+ distinct tags at row ${index + 1}; got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -157,4 +163,329 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Blackpool six-part serial (2004) and Viva Blackpool follow-up (2006).
+// Keep original 101 IDs tv_21539–tv_21639. New IDs start tv_41177.
+// Award sources: https://peabodyawards.com/award-profile/viva-blackpool/
+// https://www.bafta.org/awards/television/?award-year=2005
+// https://rts.org.uk/award/programme-awards-winners-2005
+// https://goldenglobes.com/articles/63rd-golden-globe-awards-nominations/
+// https://www.4rfv.co.uk/industrynews/41621/bbc_triumphs_at_banff_world_television_festival
+// Production: https://socinety.com/show/blackpool-2004
+// Follow-up cast: https://www.whatsafterthemovie.com/movies/vivablackpool-2006
+// Dates: https://www.tvmaze.com/shows/6925/blackpool
+// https://watch.plex.tv/en-GB/show/blackpool/season/0/episode/1
+const audit395Facts = [
+  [
+    "2004 serial",
+    "Which US media honour did the original serial receive for its 2005 American broadcast?",
+    "A Peabody Award",
+    "An Emmy Award",
+    "A Critics' Choice Award",
+    "A Tony Award",
+    "International recognition",
+    "2005 Peabody winner"
+  ],
+  [
+    "2004 serial",
+    "At which Canadian television festival did the serial win major prizes in 2005?",
+    "Banff World Television Festival",
+    "Monte-Carlo Television Festival",
+    "Edinburgh Television Festival",
+    "Cannes Film Festival",
+    "2005 awards",
+    "Banff Rockie awards"
+  ],
+  [
+    "2004 serial",
+    "Which overall festival prize did the original serial win in Canada in 2005?",
+    "Global Television Grand Prize",
+    "Grand Jury Documentary Prize",
+    "Audience Choice Drama Prize",
+    "Best Television Performance",
+    "Rockie Festival recognition",
+    "Banff award"
+  ],
+  [
+    "2004 serial",
+    "Which programme category did the original serial win at the 2005 Banff Rockie Awards?",
+    "Best Mini-Series",
+    "Best Sitcom",
+    "Best Children's Series",
+    "Best History Programme",
+    "Banff award category",
+    "Rockie Awards 2005"
+  ],
+  [
+    "2004 serial",
+    "In which category was the show nominated at the 2005 British Academy Television Awards?",
+    "Drama Serial",
+    "Drama Series",
+    "Situation Comedy",
+    "Single Drama",
+    "BAFTA nomination",
+    "2005 television awards"
+  ],
+  [
+    "2004 serial",
+    "Which Channel 4 production won the BAFTA in the category in which the show was nominated?",
+    "Sex Traffic",
+    "Shameless",
+    "The Long Firm",
+    "Omagh",
+    "BAFTA category result",
+    "2005 BAFTA winner"
+  ],
+  [
+    "2004 serial",
+    "Which British organisation nominated the show in its Drama Serial category in 2005?",
+    "Royal Television Society",
+    "Royal Variety Charity",
+    "British Film Institute",
+    "Broadcasting Press Guild",
+    "2005 RTS award nomination",
+    "Drama Serial"
+  ],
+  [
+    "2004 serial",
+    "Which American award ceremony nominated the BBC serial under its overseas title in 2006?",
+    "Golden Globe Awards",
+    "Primetime Emmy Awards",
+    "Screen Actors Guild Awards",
+    "American Music Awards",
+    "2006 international nomination",
+    "Viva Blackpool overseas title"
+  ],
+  [
+    "2004 serial",
+    "Which category recognised the show at the 2006 Golden Globes?",
+    "Best Miniseries or Motion Picture Made for Television",
+    "Best Television Series – Comedy or Musical",
+    "Best Television Series – Drama",
+    "Best Motion Picture – Musical or Comedy",
+    "2006 Golden Globes",
+    "BBC America nomination"
+  ],
+  [
+    "2004 serial",
+    "For which 2005 RTS acting recognition was Danny Holden's performer nominated?",
+    "Network Newcomer – On Screen",
+    "Actor Male",
+    "Comedy Performance",
+    "Network Newcomer – Behind The Screen",
+    "Royal Television Society nomination",
+    "Thomas Morrison"
+  ],
+  [
+    "2004 serial",
+    "Who produced the original six-part BBC serial?",
+    "Kate Lewis",
+    "Sally Haynes",
+    "Laura Mackie",
+    "Julie-Anne Robinson",
+    "BBC production",
+    "Original producer"
+  ],
+  [
+    "2004 serial",
+    "Who composed the original instrumental score for the BBC serial?",
+    "Rob Lane",
+    "Rick Wentworth",
+    "Murray Gold",
+    "Philip Pope",
+    "Original soundtrack",
+    "Composer"
+  ],
+  [
+    "2004 serial",
+    "Who was credited as director of photography on the original series?",
+    "Lukas Strebel",
+    "Brian West",
+    "Paul Herley",
+    "Doug Hallows",
+    "Cinematography",
+    "BBC original series"
+  ],
+  [
+    "2004 serial",
+    "Who designed the costumes for the original 2004 production?",
+    "Andrea Galer",
+    "Caroline McCall",
+    "Claire Finlay-Thompson",
+    "Sarah Arthur",
+    "BBC creative team",
+    "Costume designer"
+  ],
+  [
+    "2004 serial",
+    "Who handled casting for the original BBC serial?",
+    "Kate Rhodes James",
+    "Jill Trevellick",
+    "Nina Gold",
+    "Suzanne Smith",
+    "BBC creative team",
+    "Casting credit"
+  ],
+  [
+    "2004 serial",
+    "Which editor worked on the serial alongside David Rees?",
+    "Anthony Combes",
+    "Chris Gill",
+    "John Grover",
+    "Simon Brasse",
+    "BBC postproduction",
+    "Editing"
+  ],
+  [
+    "2004 serial",
+    "Who was credited as an executive producer for BBC Drama alongside Sally Haynes?",
+    "Laura Mackie",
+    "Jane Tranter",
+    "Verity Lambert",
+    "Kate Harwood",
+    "BBC executive production",
+    "Peabody production credits"
+  ],
+  [
+    "2004 serial",
+    "Which BBC America executive producer is named in its Peabody Award production credits?",
+    "David Bernath",
+    "David Bernal",
+    "David Crane",
+    "David E. Kelley",
+    "BBC America executive production",
+    "Peabody credits"
+  ],
+  [
+    "2004 serial",
+    "Who served as an executive producer alongside Laura Mackie?",
+    "Sally Haynes",
+    "Nicola Shindler",
+    "Julie Gardner",
+    "Hilary Bevan Jones",
+    "Original executive producer",
+    "BBC production credits"
+  ],
+  [
+    "2004 serial",
+    "Who handled art direction on the six-part original series?",
+    "David Walley",
+    "David Rees",
+    "Anthony Combes",
+    "Rob Lane",
+    "Art department",
+    "Production credit"
+  ],
+  [
+    "2004 serial",
+    "What date did the original six-part serial first air on BBC One?",
+    "11 November 2004",
+    "4 November 2004",
+    "18 November 2004",
+    "11 October 2004",
+    "BBC One premiere",
+    "Original UK broadcast"
+  ],
+  [
+    "2004 serial",
+    "On what date did the original six-part serial conclude on BBC One?",
+    "16 December 2004",
+    "9 December 2004",
+    "23 December 2004",
+    "2 December 2004",
+    "BBC One finale",
+    "Last original episode"
+  ],
+  [
+    "Viva Blackpool",
+    "Who portrayed sports agent Steve Pollard's assistant Vibe?",
+    "Al Weaver",
+    "Paul Ritter",
+    "Mark Williams",
+    "Bryan Dick",
+    "Supporting cast",
+    "Vibe performer"
+  ],
+  [
+    "Viva Blackpool",
+    "Which actress portrayed police detective DS Coogan?",
+    "Hayley Carmichael",
+    "Megan Dodds",
+    "Sarah Parish",
+    "Georgia Taylor",
+    "Supporting cast",
+    "DS Coogan performer"
+  ],
+  [
+    "Viva Blackpool",
+    "Which future film and television star played the Pretty Young Woman?",
+    "Gugu Mbatha-Raw",
+    "Naomie Harris",
+    "Freema Agyeman",
+    "Thandiwe Newton",
+    "Small featured part",
+    "Viva Blackpool cast"
+  ],
+  [
+    "Viva Blackpool",
+    "On which date did the one-off follow-up premiere on BBC One?",
+    "10 June 2006",
+    "10 July 2006",
+    "16 December 2004",
+    "24 December 2006",
+    "Follow-up first broadcast",
+    "2006 special"
+  ],
+  [
+    "2004 serial",
+    "Which short-lived CBS remake of the original programme premiered in the United States in 2007?",
+    "Viva Laughlin",
+    "Swingtown",
+    "The Ex List",
+    "Cop Rock",
+    "American adaptation",
+    "2007 CBS remake"
+  ],
+  [
+    "2004 serial",
+    "Which production assistant role did Clare Andrade fulfil on the six-part original?",
+    "Set Decoration",
+    "Costume Design",
+    "Sound Editing",
+    "Casting",
+    "BBC creative credits",
+    "Set department"
+  ]
+];
+const audit395Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+for(const [section,stem,correctAnswer,wrong1,wrong2,wrong3,focus,context] of audit395Facts){
+ const question='In '+(section==='Viva Blackpool'?'Viva Blackpool':PROGRAMME)+
+ ', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[wrong1,wrong2,wrong3];answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit395Norm)).size!==4)
+   throw Error('Pack 395 audited answer choice issue '+stem);
+ const tags=['Television','British Television','BBC One','Musical Crime Drama',
+  PROGRAMME,'Programme: '+PROGRAMME,'Section: '+section,
+  'Question focus: '+focus,'Supporting detail: '+context,
+  'Correct answer: '+correctAnswer,'Creator: Peter Bowker',
+  'Blackpool 2004 or Viva Blackpool 2006','British television musicals',
+  'Broadcast or recognition: '+context];
+ questions.push({id:'tv_'+(41177+questions.length-101),
+  category:'Television',programme:PROGRAMME,question,answers,
+  correctAnswer,difficulty:'Medium',tags,dailyEligible:true});
+}
+const id395=new Set(),stem395=new Set();
+for(const x of questions){
+ const k=audit395Norm(x.question);
+ if(x.category!=='Television'||x.programme!==PROGRAMME||
+ !x.tags.includes('Programme: '+PROGRAMME)||x.answers.length!==4||
+ new Set(x.answers.map(audit395Norm)).size!==4||
+ x.answers.filter(a=>a===x.correctAnswer).length!==1||
+ x.tags.length<12||x.dailyEligible!==true||
+ id395.has(x.id)||stem395.has(k))
+ throw Error('Pack 395 validation failed at '+x.id);
+ id395.add(x.id);stem395.add(k);
+}
+module.exports=questions;
