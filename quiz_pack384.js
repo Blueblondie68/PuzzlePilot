@@ -245,7 +245,7 @@ In Dancing in the Dark, who portrayed businessman Stephen Richford?|Clive Wood|P
 In Dancing in the Dark, what university subject had DC Jasper Tranter studied?|Geography|Law|Psychology|Forensic science|Dancing in the Dark|Series 11|Tranter academic background
 In Dancing in the Dark, what happens to Stephen Richford after Heather Wills's murder?|He is found dead in an apparent suicide|He is appointed Chief Constable|He moves abroad with his daughter|He confesses to smuggling drugs|Dancing in the Dark|Series 11|Staged suicide of businessman
 In Dancing in the Dark, from which country are women illegally brought to Britain by the trafficking ring?|Poland|Portugal|Norway|Canada|Dancing in the Dark|Series 11|Trafficked women's origin
-In Dancing in the Dark, what does Heather withhold from her employer until he pays her extra money?|Forged passports|A stolen painting|Bank-account passwords|The keys to a nightclub|Dancing in the Dark|Series 11|Heather Wills's leverage
+In Dancing in the Dark, which actress portrayed Stephen Richford's daughter Sarah?|Louisa Gilpin|Amber Sainsbury|Sandy McDade|Jill Baker|Dancing in the Dark|Series 11|Sarah Richford guest actress
 In Dancing in the Dark, which leisure organisation is Frost uncertain about joining?|A gym|A sailing club|A golf society|A chess club|Dancing in the Dark|Series 11|Frost's fitness decision
 In Dancing in the Dark, what recent good fortune had waste-tip victim Joe Hawkins enjoyed?|He had won thousands on a bet|He had inherited a country cottage|He had won a new car|He had received a television acting contract|Dancing in the Dark|Series 11|Joe Hawkins money windfall`;
 
