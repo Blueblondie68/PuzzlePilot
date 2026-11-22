@@ -6,10 +6,10 @@
 'use strict';
 
 const FIRST_ID = 22840;
-const commonTags = [
-  'television', 'A Year at Kew', 'BBC Two',
-  'British documentary', 'Royal Botanic Gardens Kew', 'horticulture and conservation'
-];
+const PROGRAMME = 'A Year at Kew';
+const commonTags = ['Television',PROGRAMME,'Programme: '+PROGRAMME,
+ 'BBC Two','British Documentary','Royal Botanic Gardens Kew',
+ 'Horticulture and Conservation','2004–2007','Completed Programme'];
 
 // Question | correct answer | three distractors | difficulty | seven specific tags.
 // Every question names the programme for standalone and mixed-category play.
@@ -115,12 +115,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 409: repeated answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 409: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 409: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -130,4 +131,49 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// 2026 AUDIT: A Year at Kew (2004–07), also catalogued as A New Year at Kew in 2007.
+// All 81 original questions and IDs tv_22840–tv_22920 are preserved.
+// Questions added from tv_41633 onward; episode-by-episode check of all
+// 12 first-series, 12 second-series and 10 third-series instalments.
+// Main TV episode guide: https://www.thetvdb.com/series/a-year-at-kew/allseasons/official
+// Independent aired episode summaries: https://www.tvmaze.com/shows/46078/a-year-at-kew/episodeguide
+// TVDB lists an additional un-summarised episode 11 and 12 for Season 2;
+// no speculative details were added for those instalments.
+const audit409Story=[["S1E2 Titan Arum Opens","What other Palm House emergency faces the tree team while staff prepare the titan arum display?","A giant bamboo problem",["A gas leak","A burst water pipe","A fallen stone staircase"],"Palm House work beside the titan arum"],["S1E3 Summer Planting","Who does Kew's tree team help away from the gardens during the summer planting episode?","A local school",["A fire station","A retirement home","A museum"],"Tree team community project"],["S1E4 The Plant Auction","What does fern keeper Steve Ketley need to find a suitable home for?","Giant moth cocoons",["Newly hatched turtles","A colony of bees","Tropical fish"],"Unusual botanical collection visitors"],["S1E6 The Drought","Which kind of mature trees does Tony Kirkham seek in Tuscany for Kew's Pagoda vista?","Oak trees",["Silver birches","Palm trees","Cherry blossoms"],"Italian tree-buying trip"],["S1E7 Cyad Cones","Which grain does Tony Kirkham harvest by traditional methods before making bread?","Wheat",["Rice","Barley","Maize"],"Historic harvesting and loaf-making"],["S1E8 Japanese Surprise","What unusual display material does Phil Griffiths discover for the Princess of Wales Conservatory?","A large tree trunk",["An antique bicycle","A glass chandelier","A carved stone bench"],"Princess of Wales Conservatory exhibit"],["S1E9 The Autumn Festival","From which Brazilian city has a scholarship student come to show botanical artwork at Kew?","Rio de Janeiro",["São Paulo","Salvador","Brasília"],"Autumn exhibition of botanical art"],["S1E11 Problems with the Cold","Which two glasshouses are threatened by a breakdown of their heating system?","Palm House and Waterlily House",["Temperate House and Alpine House","Palm House and Orchid House","Princess of Wales Conservatory and Orangery"],"Heating failure risks exotic plants"],["S1E12 The Orchid Festival","Which overseas botanical garden asks Kew's tree team for urgent help?","The Botanic Gardens of Gibraltar",["The National Botanic Garden of Wales","The Singapore Botanic Gardens","The Brooklyn Botanic Garden"],"Gibraltar tree-care assistance"],["S2E1 Visit from Her Majesty the Queen","Which specialist Kew unit assists Customs and Excise in the second-series premiere?","The Tree Anatomy Unit",["The Seed Photography Unit","The Botanic Art Library","The Alpine House Team"],"Customs investigation using tree science"],["S2E2 Gardens Closed","For approximately how long had Kew not been forced to shut because of storms?","Fifteen years",["Five years","Thirty years","Fifty years"],"Rare emergency garden closure"],["S2E3 Jodrell Laboratory","Which member of Kew's team directs the complicated manoeuvre to position newly arrived palm trees?","Dave Barnes",["Phil Griffiths","Andy McClure","Pete Morris"],"Moving valuable palm collection"],["S2E4 Wakehurst Place","Who prepares for the annual plant auction at Wakehurst Place?","Margaret Leigh",["Emma Treadwell","Olwen Grace","Hazel Wilkinson"],"Wakehurst annual plant auction"],["S2E4 Wakehurst Place","Which tree is blocking a planned extension of Kew's Jodrell Laboratory?","An Italian poplar",["A Californian redwood","A Japanese maple","A weeping willow"],"Tree gang and laboratory extension"],["S2E5 St Helena","Which rare type of plant is transferred from Wakehurst Place to Kew while the seed-collecting expedition continues?","A cabbage plant",["A climbing rose","A fern tree","A banana plant"],"Wakehurst plant transfer"],["S2E7 Victorian Taxonomic Dispute","Which milestone for palm botanist John Dransfield is marked in the seventh second-series episode?","His retirement",["His wedding","His appointment as director","His first television appearance"],"John Dransfield's retirement"],["S2E9 Wollemi Pine","What special items does Phil Griffiths commission for the Temperate House displays?","New plant pots",["A bronze fountain","A set of garden benches","An outdoor clock"],"Commissioned Temperate House display equipment"],["S2E10 Volunteers Tackle an Invasive Weed","Which Kew glasshouse is in final preparations for the Chihuly glass exhibition?","The Temperate House",["The Palm House","The Alpine House","The Waterlily House"],"Chihuly installation preparations"],["S2E10 Volunteers Tackle an Invasive Weed","Which Kew conservatory receives an unusual new bedding scheme outdoors?","The Princess of Wales Conservatory",["The Orangery","Kew Palace","The Alpine House"],"Unusual bedding arrangement"],["S2E10 Volunteers Tackle an Invasive Weed","Which horticultural competition does student Dan Leighton hope to win?","Young Horticulturist of the Year",["RHS Chelsea Best in Show","BBC Gardener of the Decade","The National Bonsai Cup"],"Student competition"],["S3E2 2007","Whose journeys does Christine Leon retrace when researching plants in China?","Historic Kew plant hunters",["Victorian railway engineers","Antarctic explorers","Royal yacht crews"],"Chinese plant-collecting heritage"],["S3E8 2007","Which historic Kew collection has to be moved in the eighth episode of the 2007 series?","The fungi collection",["The sculpture collection","The library's maps","The herb garden"],"Moving preserved mycological specimens"],["S3E8 2007","Whose historic donations helped establish the collection being moved in the 2007 series?","Charles Darwin",["Isaac Newton","John Constable","Florence Nightingale"],"Founding donations to fungi collection"],["S3E9 2007","What kind of rare tree do Kew's team plant on Montserrat during their visit?","A whitebeam",["A Scots pine","A giant sequoia","An olive tree"],"Montserrat tree planting"]];
+const audit409History=[["Programme history","How many episodes made up the first 2004 series?","Twelve",["Eight","Ten","Twenty"],"2004 BBC episode count"],["Programme history","On what date did the first episode premiere on BBC Two?","27 August 2004",["5 January 2007","18 August 2005","19 November 2004"],"Original premiere date"],["Programme history","On what date did the second series begin broadcasting?","18 August 2005",["27 August 2004","5 January 2007","20 October 2005"],"Second-series premiere"],["Programme history","On what date did the last episode of the 2007 series air?","16 March 2007",["2 March 2007","23 March 2007","16 February 2007"],"Final transmission date"]];
+const audit409Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit409(section,stem,correctAnswer,wrongAnswers,focus){
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrongAnswers]; answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit409Norm)).size!==4)throw Error('Duplicate options for '+stem);
+ const tags=['Television','BBC Two',PROGRAMME,'Programme: '+PROGRAMME,
+  'British Documentary','Royal Botanic Gardens Kew','2004–2007',
+  'Three original series','Question section: '+section,
+  'Episode or topic: '+focus,'Correct answer: '+correctAnswer,
+  'Real gardening and conservation activities','BBC documentary',
+  'Finished programme'];
+ questions.push({id:'tv_'+(41633+questions.length-81),category:'Television',
+  programme:PROGRAMME,question,answers,correctAnswer,
+  difficulty:'Medium',tags,dailyEligible:true});
+}
+for(const row of audit409Story)addAudit409(...row);
+for(const row of audit409History)addAudit409(...row);
+const audit409Ids=new Set(),audit409Questions=new Set();
+for(const item of questions){
+ const key=audit409Norm(item.question);
+ const isNew=Number(item.id.slice(3))>=41633;
+ if(item.category!=='Television'||item.programme!==PROGRAMME||
+ !item.tags.includes('Programme: '+PROGRAMME)||
+ !key.includes(audit409Norm(PROGRAMME))||
+ item.answers.length!==4||new Set(item.answers.map(audit409Norm)).size!==4||
+ item.answers.filter(x=>x===item.correctAnswer).length!==1||
+ item.tags.length<12||item.dailyEligible!==true||
+ audit409Ids.has(item.id)||audit409Questions.has(key)||
+ (isNew&&key.includes(audit409Norm(item.correctAnswer))))
+  throw Error('Pack 409 validation failed for '+item.id);
+ audit409Ids.add(item.id);audit409Questions.add(key);
+}
+module.exports=questions;
