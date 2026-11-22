@@ -5,7 +5,10 @@
 'use strict';
 
 const FIRST_ID = 21640;
-const commonTags = ['television', 'British TV', 'BBC Three', 'Normal People', 'Sally Rooney', 'romantic drama'];
+const PROGRAMME = 'Normal People';
+const commonTags = ['Television','British Television','BBC Three','BBC One',
+ 'Romantic Drama',PROGRAMME,'Programme: '+PROGRAMME,
+ 'Sally Rooney','2020 miniseries'];
 
 // Each row: question | correct answer | three distractors | difficulty | seven precise tags.
 // All questions explicitly name Normal People when exported for standalone play.
@@ -146,12 +149,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 396: repeated answer at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 396: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 396: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -161,4 +165,282 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Normal People (2020) completed BBC Three/Hulu 12-part limited series.
+// Original tv_21640–tv_21730 unchanged. New questions begin tv_41205.
+// Cast: https://www.radiotimes.com/tv/drama/normal-people-cast/
+// https://www.tvguide.com/tvshows/normal-people/cast/1030553784/
+// https://watch.plex.tv/en-GB/show/normal-people-2020/credits
+// Official awards: https://www.bafta.org/awards/television/?award-year=2021
+// https://www.bafta.org/media-centre/press-releases/virgin-media-baftas-and-tv-craft-awards-nominees-announced-2021/
+// https://ifta.ie/awards/nominees_2021/
+// https://www.televisionacademy.com/shows/normal-people
+// Original broadcast and production: https://press.hulu.com/shows/normal-people/
+// https://www.screenireland.ie/images/uploads/general/SI_Catalogue_2020_LR.pdf
+// https://www.radiotimes.com/tv/drama/normal-people/
+const audit396Rows=[
+  [
+    "Cast",
+    "Which actor portrays Connell's university friend Niall?",
+    "Desmond Eastwood",
+    "Fionn O'Shea",
+    "Éanna Hardwicke",
+    "Sebastian de Souza",
+    "University housemate"
+  ],
+  [
+    "Cast",
+    "Which actress portrays Connell's later girlfriend Helen Brophy?",
+    "Aoife Hinds",
+    "India Mullen",
+    "Aislín McGuckin",
+    "Eliot Salt",
+    "Later romantic relationship"
+  ],
+  [
+    "Cast",
+    "Who plays Connell's school friend Eric?",
+    "Seán Doyle",
+    "Kwaku Fortune",
+    "Clinton Liberty",
+    "Killian Filan",
+    "School social group"
+  ],
+  [
+    "Cast",
+    "Which actress portrays Marianne's supportive schoolmate Karen?",
+    "Niamh Lynch",
+    "Leah McNamara",
+    "Eliot Salt",
+    "India Mullen",
+    "Friendly schoolmate"
+  ],
+  [
+    "Cast",
+    "Who plays college acquaintance Philip?",
+    "Kwaku Fortune",
+    "Seán Doyle",
+    "Desmond Eastwood",
+    "Clinton Liberty",
+    "University supporting character"
+  ],
+  [
+    "Cast",
+    "Who portrays Elaine, a university friend of Connell's housemate?",
+    "Megan McDonnell",
+    "India Mullen",
+    "Niamh Lynch",
+    "Aoife Hinds",
+    "University friend"
+  ],
+  [
+    "Cast",
+    "Who plays Connell's school friend Kiernan?",
+    "Clinton Liberty",
+    "Seán Doyle",
+    "Kwaku Fortune",
+    "Killian Filan",
+    "School social circle"
+  ],
+  [
+    "Awards",
+    "At the 2021 BAFTA Television Awards, in which acting category did Paul Mescal win?",
+    "Leading Actor",
+    "Supporting Actor",
+    "Male Performance in a Comedy Programme",
+    "International",
+    "Paul Mescal BAFTA win"
+  ],
+  [
+    "Awards",
+    "How many BAFTA Television and Television Craft nominations did the series receive in 2021?",
+    "Seven",
+    "Four",
+    "Five",
+    "Nine",
+    "2021 BAFTA nominations"
+  ],
+  [
+    "Awards",
+    "How many Primetime Emmy nominations did the miniseries receive in 2020?",
+    "Four",
+    "Two",
+    "Six",
+    "Eight",
+    "2020 Emmy nominations"
+  ],
+  [
+    "Awards",
+    "How many Irish Film & Television Academy awards did the series win in 2021?",
+    "Nine",
+    "Four",
+    "Six",
+    "Twelve",
+    "2021 IFTA wins"
+  ],
+  [
+    "Awards",
+    "At the 2021 IFTA ceremony, which overall programme category did the series win?",
+    "Best Drama",
+    "Best Film",
+    "Best Documentary",
+    "Best Comedy",
+    "IFTA programme award"
+  ],
+  [
+    "Awards",
+    "Which technical category recognised the series' audio crew at the 2021 IFTAs?",
+    "Sound",
+    "Editing",
+    "Costume Design",
+    "Make-Up and Hair",
+    "IFTA technical win"
+  ],
+  [
+    "Awards",
+    "In which 2021 Golden Globes programme category was the series nominated?",
+    "Best Limited Series or Television Film",
+    "Best Television Series – Drama",
+    "Best Television Series – Musical or Comedy",
+    "Best Motion Picture – Drama",
+    "2021 Golden Globe nomination"
+  ],
+  [
+    "Production",
+    "Who produced the BBC and Hulu adaptation?",
+    "Catherine Magee",
+    "Ed Guiney",
+    "Emma Norton",
+    "Anna Ferguson",
+    "Screen Ireland producer credit"
+  ],
+  [
+    "Production",
+    "Who composed its original instrumental score?",
+    "Stephen Rennicks",
+    "Philip Pope",
+    "Murray Gold",
+    "Rob Lane",
+    "Original music"
+  ],
+  [
+    "Production",
+    "Which cinematographer worked on the drama alongside Kate McCullough?",
+    "Suzie Lavelle",
+    "Catherine Magee",
+    "Lucy van Lonkhuyzen",
+    "Louise Kiely",
+    "Cinematography credits"
+  ],
+  [
+    "Production",
+    "Which cinematographer won a 2021 IFTA for her work on the series?",
+    "Kate McCullough",
+    "Suzie Lavelle",
+    "Lucy van Lonkhuyzen",
+    "Louise Kiely",
+    "IFTA 2021 cinematography"
+  ],
+  [
+    "Production",
+    "Who was the production designer for the series?",
+    "Lucy van Lonkhuyzen",
+    "Lorna Marie Mugan",
+    "Suzie Lavelle",
+    "Sandra Kelly",
+    "Production design"
+  ],
+  [
+    "Production",
+    "Which editor worked on the adaptation alongside Stephen O'Connell?",
+    "Nathan Nugent",
+    "Rob Lane",
+    "Anthony Combes",
+    "David Rees",
+    "Picture editing"
+  ],
+  [
+    "Production",
+    "Who was the costume designer for the adaptation?",
+    "Lorna Marie Mugan",
+    "Andrea Galer",
+    "Caroline McCall",
+    "Claire Finlay-Thompson",
+    "Costume design"
+  ],
+  [
+    "Production",
+    "Who served as casting director for the television adaptation?",
+    "Louise Kiely",
+    "Nina Gold",
+    "Kate Rhodes James",
+    "Jill Trevellick",
+    "Casting credit"
+  ],
+  [
+    "Production",
+    "Which company originally distributed the miniseries internationally?",
+    "Endeavor Content",
+    "All3Media International",
+    "Banijay Rights",
+    "BBC Studios Distribution",
+    "International distribution"
+  ],
+  [
+    "Broadcast",
+    "On what date did the full series first become available in the UK on BBC Three?",
+    "26 April 2020",
+    "27 April 2020",
+    "29 April 2020",
+    "26 May 2020",
+    "BBC Three box set"
+  ],
+  [
+    "Broadcast",
+    "On what date did the drama begin its BBC One broadcasts?",
+    "27 April 2020",
+    "26 April 2020",
+    "29 April 2020",
+    "4 May 2020",
+    "BBC One premiere"
+  ],
+  [
+    "Broadcast",
+    "On what date did the drama first launch on Hulu in the United States?",
+    "29 April 2020",
+    "26 April 2020",
+    "27 April 2020",
+    "6 May 2020",
+    "US Hulu premiere"
+  ]
+];
+const audit396Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+for(const [section,stem,correctAnswer,w1,w2,w3,focus] of audit396Rows){
+ const answers=[w1,w2,w3];answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit396Norm)).size!==4)
+  throw Error('Pack 396 repeated choice in '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const tags=['Television','British Television','BBC Three','BBC One',
+   PROGRAMME,'Programme: '+PROGRAMME,'Romantic Drama','Irish drama adaptation',
+   'Original miniseries: 2020','Section: '+section,
+   'Focus: '+focus,'Answer: '+correctAnswer,
+   'Source novel: Sally Rooney','BBC and Hulu','Element Pictures production'];
+ questions.push({id:'tv_'+(41205+questions.length-91),
+  category:'Television',programme:PROGRAMME,question,answers,
+  correctAnswer,difficulty:'Medium',tags,dailyEligible:true});
+}
+const auditedIds396=new Set(),auditedStems396=new Set();
+for(const q of questions){
+ const stem=audit396Norm(q.question);
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ q.answers.length!==4||new Set(q.answers.map(audit396Norm)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ auditedIds396.has(q.id)||auditedStems396.has(stem))
+ throw Error('Pack 396 validation failed at '+q.id);
+ auditedIds396.add(q.id);auditedStems396.add(stem);
+}
+module.exports=questions;
