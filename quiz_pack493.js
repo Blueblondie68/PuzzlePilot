@@ -1,7 +1,13 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 493: Below Deck (Original Series), Season 3 (2015)
-// 46 researched MCQs, only the original Bravo programme (not its spin-offs).
+// 59 audited questions: 46 originals plus 13 distinctive Season 3 storyline, crew and production additions.
+// Original IDs tv_27846–tv_27891; audit IDs tv_43122–tv_43134.
+// Only the original Bravo programme, not its spin-offs.
 // IDs tv_27846–tv_27891; continues directly after Pack 492.
 // Season 3: Eros in the Bahamas; crew, charters, galley crises, reunions.
+// 22 Nov 2026 audit checks: Bravo Season 3 episode summaries, Captain Lee's
+// 2015 finale blog, Bravo coverage of Connie and Dane, TVmaze episode chronology,
+// Rotten Tomatoes episode guide and YachtCharterFleet Eros/Mustang Sally history.
+// All questions explicitly identify Below Deck; originals' IDs and answers retained.
 // Source references (reviewed 18 November 2026):
 // https://www.bravotv.com/the-daily-dish/first-look-at-season-3-of-below-deck
 // https://www.tvmaze.com/seasons/9310/below-deck-season-3/episodeguide
@@ -71,7 +77,7 @@ const questions = [
     "id": "tv_27848",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In 'My Dearest Emile...', who tries preparing dinner for the charter guests?",
+    "question": "In Below Deck Season 3, in 'My Dearest Emile...', who tries preparing dinner for the charter guests?",
     "answers": [
       "Kate Chastain",
       "Connie Arias",
@@ -101,7 +107,7 @@ const questions = [
     "id": "tv_27849",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who serves as chief stewardess aboard Eros?",
+    "question": "In Below Deck Season 3, who serves as chief stewardess aboard Eros?",
     "answers": [
       "Adrienne Gang",
       "Amy Johnson",
@@ -132,7 +138,7 @@ const questions = [
     "id": "tv_27850",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who is the bosun on Eros in the third season?",
+    "question": "In Below Deck Season 3, who is the bosun on Eros in the third season?",
     "answers": [
       "Eddie Lucas",
       "Don Abenante",
@@ -163,7 +169,7 @@ const questions = [
     "id": "tv_27851",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who is second stewardess on Eros in Season 3?",
+    "question": "In Below Deck Season 3, who is second stewardess on Eros in Season 3?",
     "answers": [
       "Raquel Dakota",
       "Amy Johnson",
@@ -193,7 +199,7 @@ const questions = [
     "id": "tv_27852",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member is commonly known as Rocky?",
+    "question": "In Below Deck Season 3, which crew member is commonly known as Rocky?",
     "answers": [
       "Amy Johnson",
       "Kate Chastain",
@@ -224,7 +230,7 @@ const questions = [
     "id": "tv_27853",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What position does Rocky hold aboard Eros?",
+    "question": "In Below Deck Season 3, what position does Rocky hold aboard Eros?",
     "answers": [
       "Chief stewardess",
       "Bosun",
@@ -254,7 +260,7 @@ const questions = [
     "id": "tv_27854",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Who is Eros's chef at the start of the third season?",
+    "question": "In Below Deck Season 3, who is Eros's chef at the start of the third season?",
     "answers": [
       "Leon Walker",
       "Ben Robinson",
@@ -285,7 +291,7 @@ const questions = [
     "id": "tv_27855",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which chef returns to Eros after Leon's departure?",
+    "question": "In Below Deck Season 3, which chef returns to Eros after Leon's departure?",
     "answers": [
       "Matt Burns",
       "Ben Robinson",
@@ -316,7 +322,7 @@ const questions = [
     "id": "tv_27856",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand's skills impress both Eddie and Captain Lee during the episode 'Fire!'?",
+    "question": "In Below Deck Season 3, which deckhand's skills impress both Eddie and Captain Lee during the episode 'Fire!'?",
     "answers": [
       "Emile Kotze",
       "Don Abenante",
@@ -348,7 +354,7 @@ const questions = [
     "id": "tv_27857",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member works as both a second engineer and a deckhand?",
+    "question": "In Below Deck Season 3, which crew member works as both a second engineer and a deckhand?",
     "answers": [
       "Emile Kotze",
       "Eddie Lucas",
@@ -378,7 +384,7 @@ const questions = [
     "id": "tv_27858",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand dates Rocky early in the third season?",
+    "question": "In Below Deck Season 3, which deckhand dates Rocky early in the third season?",
     "answers": [
       "Emile Kotze",
       "Dane Jackson",
@@ -409,7 +415,7 @@ const questions = [
     "id": "tv_27859",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which charter destination within the Bahamas is named in the Season 3 premiere?",
+    "question": "In Below Deck Season 3, which charter destination within the Bahamas is named in the Season 3 premiere?",
     "answers": [
       "Eleuthera",
       "Abaco",
@@ -438,7 +444,7 @@ const questions = [
     "id": "tv_27860",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What kind of party do guests plan in the Season 3 premiere?",
+    "question": "In Below Deck Season 3, what kind of party do guests plan in the Season 3 premiere?",
     "answers": [
       "A toga party",
       "A costume rodeo",
@@ -467,7 +473,7 @@ const questions = [
     "id": "tv_27861",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which episode sees Don risk his position aboard Eros by swimming with Rocky?",
+    "question": "In Below Deck Season 3, which episode sees Don risk his position aboard Eros by swimming with Rocky?",
     "answers": [
       "Dirty Laundry",
       "Pretty Cheeks",
@@ -497,7 +503,7 @@ const questions = [
     "id": "tv_27862",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What decorative guest-room skill does Kate need to improve for Dean's return?",
+    "question": "In Below Deck Season 3, what decorative guest-room skill does Kate need to improve for Dean's return?",
     "answers": [
       "Towel art",
       "Balloon modelling",
@@ -527,7 +533,7 @@ const questions = [
     "id": "tv_27863",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member brings a mermaid tail into the water for a guest dive contest?",
+    "question": "In Below Deck Season 3, which crew member brings a mermaid tail into the water for a guest dive contest?",
     "answers": [
       "Kate",
       "Rocky",
@@ -557,7 +563,7 @@ const questions = [
     "id": "tv_27864",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Whose departure leaves the deck team short-handed early in Season 3?",
+    "question": "In Below Deck Season 3, whose departure leaves the deck team short-handed early in Season 3?",
     "answers": [
       "Connie Arias",
       "Emile Kotze",
@@ -587,7 +593,7 @@ const questions = [
     "id": "tv_27865",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What special drink does Kate struggle to obtain for charter guests in 'I'm Ironing the Captain's Shorts'?",
+    "question": "In Below Deck Season 3, what special drink does Kate struggle to obtain for charter guests in 'I'm Ironing the Captain's Shorts'?",
     "answers": [
       "Champagne",
       "Sake",
@@ -617,7 +623,7 @@ const questions = [
     "id": "tv_27866",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which new deckhand joins Eros in the fifth episode?",
+    "question": "In Below Deck Season 3, which new deckhand joins Eros in the fifth episode?",
     "answers": [
       "Dane Jackson",
       "David Bradberry",
@@ -647,7 +653,7 @@ const questions = [
     "id": "tv_27867",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Where does Rocky write a musical about her work aboard Eros?",
+    "question": "In Below Deck Season 3, where does Rocky write a musical about her work aboard Eros?",
     "answers": [
       "The sundeck",
       "The laundry room",
@@ -677,7 +683,7 @@ const questions = [
     "id": "tv_27868",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What food item do Connie and Rocky use in their messy bikini party?",
+    "question": "In Below Deck Season 3, what food item do Connie and Rocky use in their messy bikini party?",
     "answers": [
       "Honey",
       "Custard",
@@ -708,7 +714,7 @@ const questions = [
     "id": "tv_27869",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which group of guests relives college days during the 'My Dearest Emile...' charter?",
+    "question": "In Below Deck Season 3, which group of guests relives college days during the 'My Dearest Emile...' charter?",
     "answers": [
       "Retired footballers",
       "Wedding planners",
@@ -737,7 +743,7 @@ const questions = [
     "id": "tv_27870",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What kind of menu do guests request when Leon's provisioning becomes a problem?",
+    "question": "In Below Deck Season 3, what kind of menu do guests request when Leon's provisioning becomes a problem?",
     "answers": [
       "A multi-course tasting menu",
       "A barbecue-only menu",
@@ -767,7 +773,7 @@ const questions = [
     "id": "tv_27871",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What sort of weather disrupts the seventh episode of Season 3?",
+    "question": "In Below Deck Season 3, what sort of weather disrupts the seventh episode of Season 3?",
     "answers": [
       "A heatwave",
       "A sudden storm",
@@ -796,7 +802,7 @@ const questions = [
     "id": "tv_27872",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Whose drunken behaviour during a day off leads to a confrontation with Eddie?",
+    "question": "In Below Deck Season 3, whose drunken behaviour during a day off leads to a confrontation with Eddie?",
     "answers": [
       "David Bradberry",
       "Emile Kotze",
@@ -827,7 +833,7 @@ const questions = [
     "id": "tv_27873",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What kind of company do the guests in 'Boom Boom in the Laundry Room' own?",
+    "question": "In Below Deck Season 3, what kind of company do the guests in 'Boom Boom in the Laundry Room' own?",
     "answers": [
       "A shipping company",
       "A cosmetics company",
@@ -856,7 +862,7 @@ const questions = [
     "id": "tv_27874",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which meat does Leon serve despite a guest's request not to?",
+    "question": "In Below Deck Season 3, which meat does Leon serve despite a guest's request not to?",
     "answers": [
       "Rabbit",
       "Lamb",
@@ -886,7 +892,7 @@ const questions = [
     "id": "tv_27875",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which onboard emergency causes Captain Lee to investigate in Season 3?",
+    "question": "In Below Deck Season 3, which onboard emergency causes Captain Lee to investigate in Season 3?",
     "answers": [
       "A flooded cabin",
       "A galley fire",
@@ -915,7 +921,7 @@ const questions = [
     "id": "tv_27876",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What action does Rocky take in protest after Captain Lee's dismissal decision?",
+    "question": "In Below Deck Season 3, what action does Rocky take in protest after Captain Lee's dismissal decision?",
     "answers": [
       "She locks the galley",
       "She refuses to handle lines",
@@ -944,7 +950,7 @@ const questions = [
     "id": "tv_27877",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which Real Housewives of Atlanta personality boards Eros to celebrate a birthday?",
+    "question": "In Below Deck Season 3, which Real Housewives of Atlanta personality boards Eros to celebrate a birthday?",
     "answers": [
       "NeNe Leakes",
       "Kenya Moore",
@@ -974,7 +980,7 @@ const questions = [
     "id": "tv_27878",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which other Real Housewives of Atlanta personality joins Cynthia on the charter?",
+    "question": "In Below Deck Season 3, which other Real Housewives of Atlanta personality joins Cynthia on the charter?",
     "answers": [
       "Claudia Jordan",
       "Kandi Burruss",
@@ -1004,7 +1010,7 @@ const questions = [
     "id": "tv_27879",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which former deckhand returns to join Eros late in Season 3?",
+    "question": "In Below Deck Season 3, which former deckhand returns to join Eros late in Season 3?",
     "answers": [
       "Andrew Sturby",
       "David Bradberry",
@@ -1034,7 +1040,7 @@ const questions = [
     "id": "tv_27880",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which crew member becomes a favourite of Cynthia's charter guests?",
+    "question": "In Below Deck Season 3, which crew member becomes a favourite of Cynthia's charter guests?",
     "answers": [
       "Leon Walker",
       "Dane Jackson",
@@ -1064,7 +1070,7 @@ const questions = [
     "id": "tv_27881",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What type of dinner does Ben serve to impress charter guests in 'Dirty Laundry'?",
+    "question": "In Below Deck Season 3, what type of dinner does Ben serve to impress charter guests in 'Dirty Laundry'?",
     "answers": [
       "A sushi omakase",
       "A seafood boil",
@@ -1093,7 +1099,7 @@ const questions = [
     "id": "tv_27882",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "To whom does Rocky disclose details of her relationship with Eddie?",
+    "question": "In Below Deck Season 3, to whom does Rocky disclose details of her relationship with Eddie?",
     "answers": [
       "Amy and Emile",
       "Kate and Captain Lee",
@@ -1124,7 +1130,7 @@ const questions = [
     "id": "tv_27883",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Whose injury threatens the final charter dinner of the season?",
+    "question": "In Below Deck Season 3, whose injury threatens the final charter dinner of the season?",
     "answers": [
       "Connie Arias's",
       "Ben Robinson's",
@@ -1154,7 +1160,7 @@ const questions = [
     "id": "tv_27884",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which deckhand receives advice from Captain Lee about her yachting future near the season finale?",
+    "question": "In Below Deck Season 3, which deckhand receives advice from Captain Lee about her yachting future near the season finale?",
     "answers": [
       "Amy Johnson",
       "Kate Chastain",
@@ -1185,7 +1191,7 @@ const questions = [
     "id": "tv_27885",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "At which crew celebration do Eddie and Rocky confront each other near the season finale?",
+    "question": "In Below Deck Season 3, at which crew celebration do Eddie and Rocky confront each other near the season finale?",
     "answers": [
       "A beach wedding",
       "A pool party",
@@ -1245,7 +1251,7 @@ const questions = [
     "id": "tv_27887",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which Season 3 cast member returns to the reunion after abruptly leaving Eros?",
+    "question": "In Below Deck Season 3, which Season 3 cast member returns to the reunion after abruptly leaving Eros?",
     "answers": [
       "Kelley Johnson",
       "Don Abenante",
@@ -1275,7 +1281,7 @@ const questions = [
     "id": "tv_27888",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What workplace accusation against Kate is discussed at the first reunion?",
+    "question": "In Below Deck Season 3, what workplace accusation against Kate is discussed at the first reunion?",
     "answers": [
       "Taking guest jewellery",
       "Damaging the anchor",
@@ -1305,7 +1311,7 @@ const questions = [
     "id": "tv_27889",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Where does the secret relationship between Eddie and Rocky become a major reunion topic?",
+    "question": "In Below Deck Season 3, where does the secret relationship between Eddie and Rocky become a major reunion topic?",
     "answers": [
       "The bridge",
       "The galley",
@@ -1336,7 +1342,7 @@ const questions = [
     "id": "tv_27890",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "Which pair discusses whether they have a romantic future at the second reunion?",
+    "question": "In Below Deck Season 3, which pair discusses whether they have a romantic future at the second reunion?",
     "answers": [
       "Kate and Ben",
       "Amy and Eddie",
@@ -1366,7 +1372,7 @@ const questions = [
     "id": "tv_27891",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "What does Rocky claim about her fling with Eddie at the second reunion?",
+    "question": "In Below Deck Season 3, what does Rocky claim about her fling with Eddie at the second reunion?",
     "answers": [
       "It involved a guest",
       "It continued after the charter season",
@@ -1394,9 +1400,457 @@ const questions = [
     ]
   }
 ];
-if (questions.length !== 46 || new Set(questions.map(q=>q.id)).size !== questions.length ||
+// 22 Nov 2026 append: verified Season 3 audit questions.
+const AUDIT_ORIGINAL_COUNT=46;
+const AUDIT_FIRST_ID=43122;
+const auditQuestions=[
+  {
+    "id": "tv_43122",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, under what name did the yacht seen as Eros operate when Season 3 was filmed?",
+    "answers": [
+      "Cuor di Leone",
+      "Mustang Sally",
+      "My Seanna",
+      "Valor"
+    ],
+    "correctAnswer": "Mustang Sally",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Eros Yacht",
+      "Mustang Sally",
+      "Real Yacht Name",
+      "2015 Charter",
+      "Trinity Yachts",
+      "Superyacht Identity"
+    ]
+  },
+  {
+    "id": "tv_43123",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, what is the title of the Season 3 premiere featuring a charter-guest foam party?",
+    "answers": [
+      "More Foam, Bosun!",
+      "Shut Your Porthole!",
+      "Cool Your Jets",
+      "Dirty Laundry"
+    ],
+    "correctAnswer": "More Foam, Bosun!",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Season Premiere",
+      "More Foam Bosun",
+      "Episode One",
+      "2015 Premiere",
+      "Foam Party",
+      "Bravo Broadcast"
+    ]
+  },
+  {
+    "id": "tv_43124",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, which deckhand was dismissed by Captain Lee after an alcohol-fuelled crew day off?",
+    "answers": [
+      "Don Abenante",
+      "Emile Kotze",
+      "Connie Arias",
+      "Dane Jackson"
+    ],
+    "correctAnswer": "Dane Jackson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Dane Jackson",
+      "Dismissal",
+      "Captain Lee",
+      "Drinking",
+      "Island Day Off",
+      "Episode Eight"
+    ]
+  },
+  {
+    "id": "tv_43125",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, which chef did Captain Lee dismiss after investigating the Season 3 galley fire?",
+    "answers": [
+      "Ben Robinson",
+      "Adam Glick",
+      "Leon Walker",
+      "Matt Burns"
+    ],
+    "correctAnswer": "Leon Walker",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Leon Walker",
+      "Captain Lee",
+      "Galley Fire",
+      "Dismissal",
+      "Season 3 Kitchen",
+      "Episode Ten"
+    ]
+  },
+  {
+    "id": "tv_43126",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, what did Captain Lee identify as a likely cause of the Season 3 galley fire?",
+    "answers": [
+      "A short circuit in the radio",
+      "A dirty grease-coated oven",
+      "A broken engine hose",
+      "An overheated hair dryer"
+    ],
+    "correctAnswer": "A dirty grease-coated oven",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Galley Fire",
+      "Dirty Oven",
+      "Grease Buildup",
+      "Captain Lee",
+      "Chef Leon",
+      "Safety Investigation"
+    ]
+  },
+  {
+    "id": "tv_43127",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, which dish became chef Leon Walker's much-discussed signature during Season 3?",
+    "answers": [
+      "Beef cheeks",
+      "Lobster thermidor",
+      "Chicken kiev",
+      "Mushroom risotto"
+    ],
+    "correctAnswer": "Beef cheeks",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Food",
+      "Leon Walker",
+      "Beef Cheeks",
+      "Chef Signature Dish",
+      "Season 3 Menu",
+      "Kate Chastain",
+      "Reunion"
+    ]
+  },
+  {
+    "id": "tv_43128",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, how did Rocky respond to Emile Kotze after their awkward Season 3 date?",
+    "answers": [
+      "She proposed marriage",
+      "She asked him to move aboard with her",
+      "She demanded he resign immediately",
+      "She said she wanted to be friends"
+    ],
+    "correctAnswer": "She said she wanted to be friends",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Relationship",
+      "Rocky Dakota",
+      "Emile Kotze",
+      "Friend Zone",
+      "Crew Dating",
+      "Episode Five",
+      "Romantic Rejection"
+    ]
+  },
+  {
+    "id": "tv_43129",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, what previous hospitality setting did chef Leon cite when Kate questioned his yachting credentials?",
+    "answers": [
+      "A five-star hotel in Dubai",
+      "A naval submarine",
+      "A cruise ship",
+      "A Michelin-starred restaurant"
+    ],
+    "correctAnswer": "A cruise ship",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Leon Walker",
+      "Kate Chastain",
+      "Cruise Ship",
+      "Chef Experience",
+      "Episode Four",
+      "Professional Background"
+    ]
+  },
+  {
+    "id": "tv_43130",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, what off-yacht issue distracted Eddie Lucas from his work as bosun in Season 3?",
+    "answers": [
+      "A battle over his family inheritance",
+      "Problems with a long-distance girlfriend",
+      "A dispute about buying the yacht",
+      "A postponed driving test"
+    ],
+    "correctAnswer": "Problems with a long-distance girlfriend",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Relationship",
+      "Eddie Lucas",
+      "Long Distance Girlfriend",
+      "Relationship Trouble",
+      "Bosun",
+      "Season 3 Work",
+      "Captain Lee"
+    ]
+  },
+  {
+    "id": "tv_43131",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, why did Cynthia Bailey and Claudia Jordan's charter have to remain docked in Season 3?",
+    "answers": [
+      "Bad weather",
+      "A stolen anchor",
+      "An engine being replaced",
+      "A crew strike"
+    ],
+    "correctAnswer": "Bad weather",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Cynthia Bailey",
+      "Claudia Jordan",
+      "Bad Weather",
+      "Charter Docked",
+      "Real Housewives Atlanta",
+      "Episode Eleven"
+    ]
+  },
+  {
+    "id": "tv_43132",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, what opportunity did Captain Lee offer Connie Arias at the end of Season 3?",
+    "answers": [
+      "Ownership of the yacht",
+      "A role hosting the reunion",
+      "A position as chief stewardess",
+      "A job on the yacht's next Mediterranean charters"
+    ],
+    "correctAnswer": "A job on the yacht's next Mediterranean charters",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Connie Arias",
+      "Captain Lee",
+      "Job Offer",
+      "Mediterranean Charters",
+      "Finale",
+      "Deckhand Achievement"
+    ]
+  },
+  {
+    "id": "tv_43133",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, how had the working relationship between Kate Chastain and Amy Johnson changed by the Season 3 finale?",
+    "answers": [
+      "They had refused to speak for weeks",
+      "They had both resigned together",
+      "They had become friends and worked well together",
+      "They had agreed never to share a boat again"
+    ],
+    "correctAnswer": "They had become friends and worked well together",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Relationship",
+      "Kate Chastain",
+      "Amy Johnson",
+      "Reconciliation",
+      "Interior Team",
+      "Season Finale",
+      "Teamwork"
+    ]
+  },
+  {
+    "id": "tv_43134",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 3, which third stewardess helped chef Ben Robinson when he was hurt before the last Season 3 charter dinner?",
+    "answers": [
+      "Kat Held",
+      "Rocky Dakota",
+      "Amy Johnson",
+      "Adrienne Gang"
+    ],
+    "correctAnswer": "Rocky Dakota",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season: 3 (2015)",
+      "Yacht: Eros",
+      "Location: The Bahamas",
+      "Written Quiz",
+      "Section: Audit Food",
+      "Ben Robinson",
+      "Rocky Dakota",
+      "Chef Injury",
+      "Final Charter Dinner",
+      "Galley Assistance",
+      "Episode Thirteen"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if (questions.length !== 59 || new Set(questions.map(q=>q.id)).size !== questions.length ||
     new Set(questions.map(q=>q.question.toLowerCase())).size !== questions.length ||
-    questions.some((q,i)=>q.id!=='tv_'+(27846+i)||q.topic!=='Below Deck'||q.category!=='TV'||
+    questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(27846+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
     q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
     q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<6||
     q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))
