@@ -5,7 +5,10 @@
 'use strict';
 
 const FIRST_ID = 21731;
-const commonTags = ['television', 'British TV', 'BBC One', 'Happy Valley', 'Sally Wainwright', 'crime drama'];
+const PROGRAMME = 'Happy Valley';
+const commonTags = ['Television','British Television','BBC One','Crime Drama',
+ PROGRAMME,'Programme: '+PROGRAMME,'Sally Wainwright',
+ 'Series 1–3','2014–2023'];
 
 // Each row: question | correct answer | three distractors | difficulty | seven precise question-specific tags.
 // Every exported question explicitly names Happy Valley for standalone or mixed-topic quizzes.
@@ -178,12 +181,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 397: repeated answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 397: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 397: expected 12 or more distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -193,4 +197,343 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Happy Valley completed original run: 3 series of 6 episodes (2014, 2016, 2023).
+// Preserved original IDs tv_21731–tv_21861; added IDs begin tv_41231.
+// Supporting cast: https://www.radiotimes.com/tv/drama/happy-valley-season-3-cast/
+// https://www.moviefone.com/tv-shows/happy-valley/Q6KdM20GGfsFBYzpdUozh7/credits/
+// https://bbc.originals.watch/media/16405/happy-valley
+// Awards: https://www.bafta.org/awards/television/?award-year=2015
+// https://www.bafta.org/awards/television/?award-year=2017
+// https://www.bafta.org/media-centre/press-releases/winners-announced-for-the-2024-bafta-television-awards-with-po-cruises/
+// https://www.bafta.org/awards/tv-craft/?award-year=2017
+// Production: https://www.lookoutpoint.tv/2022/01/19/filming-begins-on-final-series-of-happy-valley-as-new-and-returning-cast-are-announced/
+// Broadcast: https://epguides.com/HappyValley/
+const audit397Cast=[
+  [
+    "Shafiq Shah",
+    "Shane Zaza",
+    "m",
+    "recurring police colleague"
+  ],
+  [
+    "Joyce Metcalf",
+    "Ishia Bennison",
+    "f",
+    "civilian police employee"
+  ],
+  [
+    "Helen Gallagher",
+    "Jill Baker",
+    "f",
+    "Ann Gallagher's mother"
+  ],
+  [
+    "Inspector Mike Taylor",
+    "Rick Warden",
+    "m",
+    "Catherine's police colleague"
+  ],
+  [
+    "Detective Superintendent Andy Shepherd",
+    "Vincent Franklin",
+    "m",
+    "senior investigating officer"
+  ],
+  [
+    "Lynn Dewhurst",
+    "Caroline O'Neill",
+    "f",
+    "Tommy's mother"
+  ],
+  [
+    "Julie Cowgill",
+    "Rachel Leskovac",
+    "f",
+    "Ashley Cowgill family"
+  ],
+  [
+    "Ros Cawood",
+    "Kelly Harrison",
+    "f",
+    "Cawood family member"
+  ],
+  [
+    "Marcus Gascoigne",
+    "Steven Hartley",
+    "m",
+    "recurring guest character"
+  ],
+  [
+    "Mrs Mukherjee",
+    "Mina Anwar",
+    "f",
+    "recurring supporting character"
+  ],
+  [
+    "Phil Crabtree",
+    "Alan McKenna",
+    "m",
+    "supporting character"
+  ],
+  [
+    "Lucy Cawood",
+    "Amelia Young",
+    "f",
+    "Cawood family member"
+  ],
+  [
+    "Sledge",
+    "Chord Melodic",
+    "m",
+    "police constable"
+  ],
+  [
+    "Viktor",
+    "Anthony Flanagan",
+    "m",
+    "Knezevic gang associate"
+  ],
+  [
+    "Ivan",
+    "Oliver Huntingdon",
+    "m",
+    "Knezevic gang associate"
+  ],
+  [
+    "Matija",
+    "Jack Bandeira",
+    "m",
+    "Knezevic gang associate"
+  ],
+  [
+    "PC Gorkem Tekeli",
+    "Mete Dursun",
+    "m",
+    "police colleague"
+  ]
+];
+const audit397Facts=[
+  [
+    "Awards",
+    "Which BAFTA programme category did the drama win in both 2015 and 2017?",
+    "Drama Series",
+    [
+      "Single Drama",
+      "Mini-Series",
+      "International"
+    ],
+    "2015 and 2017 BAFTA wins"
+  ],
+  [
+    "Awards",
+    "In which two years did the original drama win the BAFTA for Drama Series?",
+    "2015 and 2017",
+    [
+      "2014 and 2016",
+      "2017 and 2024",
+      "2015 and 2023"
+    ],
+    "Two BAFTA Drama Series wins"
+  ],
+  [
+    "Awards",
+    "Which pair of years saw Sarah Lancashire win BAFTA's Leading Actress award for this programme?",
+    "2017 and 2024",
+    [
+      "2015 and 2017",
+      "2014 and 2023",
+      "2016 and 2022"
+    ],
+    "Sarah Lancashire's BAFTA acting wins"
+  ],
+  [
+    "Awards",
+    "Which audience-voted BAFTA category recognised the series' final kitchen showdown in 2024?",
+    "Memorable Moment",
+    [
+      "Drama Series",
+      "Supporting Actress",
+      "Single Drama"
+    ],
+    "2024 public award"
+  ],
+  [
+    "Awards",
+    "In which BAFTA Television Craft category did Sally Wainwright win for the first two series?",
+    "Writer: Drama",
+    [
+      "Director: Fiction",
+      "Original Music",
+      "Editing: Fiction"
+    ],
+    "BAFTA writing awards 2015 and 2017"
+  ],
+  [
+    "Awards",
+    "Which drama won BAFTA's Drama Series award in 2024, the year of the finale's acting award?",
+    "Top Boy",
+    [
+      "Blue Lights",
+      "The Crown",
+      "Slow Horses"
+    ],
+    "2024 BAFTA Drama Series result"
+  ],
+  [
+    "Production",
+    "Which production company made the third and final series for the BBC?",
+    "Lookout Point",
+    [
+      "Red Production Company",
+      "World Productions",
+      "Left Bank Pictures"
+    ],
+    "Series 3 production company"
+  ],
+  [
+    "Production",
+    "Which North American broadcaster co-produced the third series?",
+    "AMC Networks",
+    [
+      "HBO",
+      "Showtime",
+      "ABC"
+    ],
+    "Third-series co-production"
+  ],
+  [
+    "Production",
+    "Which pair directed episodes of the third and final series?",
+    "Patrick Harkins and Fergus O'Brien",
+    [
+      "Euros Lyn and Neasa Hardiman",
+      "Coky Giedroyc and Julie Anne Robinson",
+      "Marc Evans and Sandy Johnson"
+    ],
+    "Series 3 directors"
+  ],
+  [
+    "Production",
+    "Who was the series producer on the third series?",
+    "Chris Clough",
+    [
+      "Juliet Charlesworth",
+      "Simon Catt",
+      "Gareth Morgan"
+    ],
+    "Series 3 producer"
+  ],
+  [
+    "Production",
+    "Which additional producer was credited by Lookout Point for the third series?",
+    "Jessica Taylor",
+    [
+      "Nerys Evans",
+      "Sally Haynes",
+      "Rosemary McGowan"
+    ],
+    "Series 3 production"
+  ],
+  [
+    "Production",
+    "Which BBC executive producer was named for the final series?",
+    "Ben Irving",
+    [
+      "Matthew Read",
+      "Piers Wenger",
+      "Ed Guiney"
+    ],
+    "BBC executive producer"
+  ],
+  [
+    "Production",
+    "Which director worked on the first series and is listed among the programme's credits?",
+    "Euros Lyn",
+    [
+      "David Sant",
+      "Marc Evans",
+      "Patrick Harkins"
+    ],
+    "Original series direction"
+  ],
+  [
+    "Broadcast",
+    "On what date did the first series premiere on BBC One?",
+    "29 April 2014",
+    [
+      "3 June 2014",
+      "9 February 2016",
+      "1 January 2023"
+    ],
+    "BBC series premiere"
+  ],
+  [
+    "Broadcast",
+    "On what date did the second series first air on BBC One?",
+    "9 February 2016",
+    [
+      "16 February 2016",
+      "29 April 2014",
+      "5 February 2023"
+    ],
+    "Second series first transmission"
+  ],
+  [
+    "Broadcast",
+    "On what date did the third and final series begin on BBC One?",
+    "1 January 2023",
+    [
+      "8 January 2023",
+      "5 February 2023",
+      "9 February 2016"
+    ],
+    "Final series premiere"
+  ]
+];
+const norm397=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+const actorPools397={
+ m:audit397Cast.filter(v=>v[2]==='m').map(v=>v[1]),
+ f:audit397Cast.filter(v=>v[2]==='f').map(v=>v[1])
+};
+function addAudit397(stem,correctAnswer,wrongAnswers,section,focus){
+ if(wrongAnswers.length!==3||new Set([correctAnswer,...wrongAnswers].map(norm397)).size!==4)
+  throw Error('Pack 397 invalid choices for '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrongAnswers];answers.splice(questions.length%4,0,correctAnswer);
+ const tags=['Television','British Television','BBC One','Crime Drama',
+  PROGRAMME,'Programme: '+PROGRAMME,'2014–2023',
+  'Subject section: '+section,'Fact: '+focus,
+  'Correct answer: '+correctAnswer,'Created by Sally Wainwright',
+  'Three series of six episodes','Calder Valley Yorkshire',
+  'Coverage: original 18-episode series'];
+ questions.push({id:'tv_'+(41231+questions.length-131),category:'Television',
+  programme:PROGRAMME,question,answers,correctAnswer,difficulty:'Medium',
+  tags,dailyEligible:true});
+}
+for(const [i,[role,actor,gender,focus]] of audit397Cast.entries()){
+ const pool=actorPools397[gender].filter(x=>x!==actor);
+ if(pool.length<3)throw Error('Too few actor alternatives');
+ const offset=(i*5+role.length)%pool.length;
+ const wrong=[pool[offset],pool[(offset+1)%pool.length],pool[(offset+2)%pool.length]];
+ addAudit397('Which '+(gender==='f'?'actress':'actor')+' played '+role+'?',
+  actor,wrong,'Supporting cast','Role: '+role+' / '+focus);
+}
+for(const [section,stem,answer,wrong,focus] of audit397Facts){
+ addAudit397(stem,answer,wrong,section,focus);
+}
+const audited397Ids=new Set(),audited397Stems=new Set();
+for(const q of questions){
+ const stem=norm397(q.question);
+ if(q.programme!==PROGRAMME||q.category!=='Television'||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ q.answers.length!==4||new Set(q.answers.map(norm397)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ audited397Ids.has(q.id)||audited397Stems.has(stem))
+  throw Error('Pack 397 checked module failed '+q.id);
+ audited397Ids.add(q.id);audited397Stems.add(stem);
+}
+module.exports=questions;
