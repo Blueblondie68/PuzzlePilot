@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 439
 // Bake Off: The Professionals - 2016-2021 (including Crème de la Crème).
 // The first half of the programme's coverage; Pack 440 covers 2022-2026.
-// First ID tv_25995. WordPad-ready CommonJS. Verify saved copy before deployment.
+// First ID tv_25995. WordPad-ready CommonJS, audited 2016-2021.
 'use strict';
 
 const FIRST_ID = 25995;
@@ -85,9 +85,37 @@ Which delicate flavour combination did Cherish Finden praise from the 2021 champ
 Which 2021 competing team represented a Norfolk further-education college?|Alex and Stacey of the College of West Anglia|Michael and Andrew of Gin & Bake|Julien and Elise of Julien Plumart|Kevin and Maria-Vittoria of The Lanesborough|Medium|2021 Contestants|College Of West Anglia|Alex And Stacey|Norfolk|Lecturers|Further Education|Competition Teams
 Which 2021 team consisted of brothers from Goa representing a London hotel?|Lerrick and Lineker of Sofitel London St James|Alex and Stacey of the College of West Anglia|Geanina and George of Prestige Patisserie|Jamie and Andrea of St Ermin's Hotel|Medium|2021 Contestants|Lerrick And Lineker|Goa|Brothers|Sofitel London St James|Indian Chefs|Team Background`;
 
+
+// Focused 2016-2021 audit: episode counts, relaunch production, judges and finals.
+// Awards checked separately: do not conflate this series with awards for The Great British Bake Off.
+// Original question IDs, answers and tags are retained.
+const AUDIT_ORIGINAL_COUNT = 71;
+const AUDIT_FIRST_ID = 42540;
+const auditFacts = `On which date did Bake Off: The Professionals first air under its original title Crème de la Crème?|29 March 2016|4 April 2017|6 May 2018|30 April 2019|Medium|Original Premiere|29 March 2016|BBC Two|Creme de la Creme|First Season|Broadcast History|British Television
+How many episodes were shown in the inaugural 2016 series of Bake Off: The Professionals?|Eight|Six|Nine|Ten|Medium|2016 Season|Eight Episodes|Creme de la Creme|Series Length|BBC Two|Episode Count|Original Format
+How many episodes made up Bake Off: The Professionals in its second BBC Two series in 2017?|Nine|Eight|Ten|Twelve|Medium|2017 Season|Nine Episodes|Creme de la Creme|BBC Two|Season Two|Episode Count|Programme Format
+What was the formal team name of the military chefs who won Bake Off: The Professionals in 2017?|Combined Services Culinary Arts Team|British Army Catering Corps|Royal Navy Culinary Academy|Armed Forces Hospitality College|Hard|Combined Services Culinary Arts Team|2017 Champions|Military Chefs|CSCAT|RAF|Team Identity|Competition Winner
+Which branch of the Armed Forces did all three 2017 Bake Off: The Professionals winners serve in?|Royal Air Force|Royal Navy|British Army|Royal Marines|Medium|Royal Air Force|2017 Winning Trio|Liam Grime|Ian Mark|Chris Morrell|Military Patisserie|Creme de la Creme
+In which month of 2017 was the move of Bake Off: The Professionals to Channel 4 first announced?|October|January|June|December|Medium|October 2017|Channel Four Move|BBC Two Transfer|Rebranding|Broadcaster Announcement|Programme History|Love Productions
+On what date did the relaunched Bake Off: The Professionals first air on Channel 4?|6 May 2018|29 March 2016|30 April 2019|25 May 2021|Medium|6 May 2018|Channel Four Premiere|Relaunch|Series Three|British Broadcast|Show Rebrand|Television History
+How many professional pastry teams began Bake Off: The Professionals on Channel 4 in 2018?|Twelve|Fifteen|Eight|Twenty|Medium|2018 Relaunch|Twelve Teams|Professional Duos|Channel Four|Series Three|Contestant Format|Competition Structure
+Which television company produced Bake Off: The Professionals for Channel 4 in 2018?|Love Productions|Endemol Shine|Hat Trick Productions|ITV Studios|Medium|Love Productions|2018 Series|Channel Four|Production Company|Pastry Competition|Behind The Scenes|Television Credits
+Who was named executive producer of Bake Off: The Professionals for Love Productions in 2018?|Kieran Smith|Tom Kerridge|Sarah Lazenby|Liam Charles|Medium|Kieran Smith|Executive Producer|Love Productions|2018 Relaunch|Channel Four Commission|Behind The Scenes|Production Staff
+At which Oxfordshire restaurant was Bake Off: The Professionals judge Benoit Blin chef pâtissier in 2018?|Belmond Le Manoir aux Quat'Saisons|The Fat Duck|Restaurant Gordon Ramsay|The Ledbury|Medium|Benoit Blin|Le Manoir Aux Quat Saisons|Pastry Chef|Oxfordshire Restaurant|2018 Judge|Michelin Stars|Culinary Career
+For which chocolate company was Bake Off: The Professionals judge Cherish Finden a creative development chef when the Channel 4 version was announced?|Godiva Chocolates|Cadbury|Lindt|Hotel Chocolat|Medium|Cherish Finden|Godiva Chocolates|Creative Development Chef|2018 Relaunch|Judging Panel|Chocolate Industry|Professional Career
+On which date did Bake Off: The Professionals return for its 2019 Channel 4 series?|30 April 2019|6 May 2018|29 March 2016|25 May 2021|Medium|30 April 2019|Series Four|Channel Four|2019 Premiere|Broadcast Date|Programme Return|Television Timeline
+How long did Bake Off: The Professionals finalists have to prepare afternoon tea in 2019?|Four hours|Two hours|Seven hours|Nine hours|Medium|2019 Grand Final|Afternoon Tea Challenge|Four Hours|Three Final Teams|Patisserie Skills|Time Limit|Competition Tasks
+How long was the wedding-feast challenge in Bake Off: The Professionals' 2019 final?|Seven hours|Four hours|Five hours|Nine hours|Medium|2019 Grand Final|Wedding Feast|Seven Hour Challenge|Final Contest|Pastry Banquet|Time Limit|Winning Team
+Which classic dessert had to be reinvented for a showpiece challenge in the first heat of Bake Off: The Professionals in 2020?|Pineapple upside-down cake|Black Forest gateau|Sticky toffee pudding|Baked Alaska|Medium|2020 First Heat|Pineapple Upside Down Cake|Reinvented Dessert|Showpiece Task|Channel Four|Retro Classic|Patisserie Challenge
+How many guests were to be served at the historical banquet in Bake Off: The Professionals' 2020 final?|Eighty|Sixty|One hundred|Forty|Medium|2020 Grand Final|Eighty Guests|Historical Banquet|Cocorico Patisserie|Final Challenge|Royal Theme|Showpiece Scale
+Who was the series producer credited in Bake Off: The Professionals' official 2021 winners announcement?|Lucy Terrell|Sarah Lazenby|Kelly Webb-Lamb|Vivienne Molokwu|Hard|Lucy Terrell|2021 Series Producer|Gin And Bake Winners|Love Productions|Production Credits|Behind The Scenes|Official Announcement
+Besides their wearable chocolate hats what two types of creations did Bake Off: The Professionals finalists make in the first challenge of 2021?|Filled chocolates and confections|Croissants and baguettes|Ice creams and soufflés|Macarons and éclairs|Medium|2021 Grand Final|Filled Chocolates|Confections|Chocolate Hats|First Final Challenge|Four Hour Task|Pastry Skills
+What had happened to both Bake Off: The Professionals 2021 winning chefs before they joined Gin & Bake?|They had lost their jobs during the pandemic|They had opened a bakery in France|They had won a national hotel award|They had trained as architects|Medium|Gin And Bake|2021 Winners|Michael Coggan|Andrew Minto|Covid Redundancies|Career Resilience|Welsh Patisserie
+What type of trophy did the winning chefs receive on Bake Off: The Professionals in 2021?|A silver serving tray|A crystal whisk|A golden rolling pin|A porcelain cake stand|Medium|2021 Championship|Silver Serving Tray|Winner Trophy|Gin And Bake|Competition Prize|Patisserie Award|Official Interview`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(value => value.trim());
   if (fields.length !== 13) throw new Error(`Expected 13 fields in ${id}; found ${fields.length}`);
   const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = fields;
@@ -101,8 +129,11 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : 'In Bake Off: The Professionals, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
-  return { id, category: 'Television', programme, question, answers,
+  return { id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true };
 });
 
