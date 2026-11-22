@@ -6,7 +6,10 @@
 'use strict';
 
 const FIRST_ID = 21253;
-const commonTags = ['television', 'British TV', 'ITV', 'Fat Friends', 'Kay Mellor', 'comedy drama'];
+const PROGRAMME = 'Fat Friends';
+const commonTags = ['Television','British Television','ITV','Comedy Drama',
+  PROGRAMME,'Programme: '+PROGRAMME,'Kay Mellor','2000–2005',
+  'Rollem Productions'];
 
 // Each row: question | correct answer | three incorrect answers | difficulty | seven question-specific tags.
 const rows = [
@@ -177,7 +180,9 @@ const questions = rows.map((row, index) => {
   if (parts.length !== 13 || parts.some(value => value.length === 0)) {
     throw new Error(`Pack 392: malformed row ${index + 1}`);
   }
-  const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const [stem, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const question=stem.toLowerCase().includes(PROGRAMME.toLowerCase())
+    ? stem:'In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
   if (!['Easy', 'Medium', 'Hard'].includes(difficulty)) {
     throw new Error(`Pack 392: invalid difficulty at row ${index + 1}`);
   }
@@ -187,12 +192,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 392: duplicate answer at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 392: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 392: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -202,4 +208,59 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Audited Fat Friends original 2000–2005 run (four series, 25 episodes).
+// Original tv_21253–tv_21361 retained; global new IDs start tv_41046.
+// Cast and production: https://www.comedy.co.uk/tv/fat_friends/cast_crew/full/
+// Original series/award record: https://rollemproductions.co.uk/productions/fat-friends
+// Broadcast episode list: https://www.tvmaze.com/shows/31848/fat-friends/episodeguide
+// If a revival broadcasts, update coverage rather than assuming it still ends in 2005.
+const castAudit392=[["1","Julia Fleshman","Josie Lawrence","f"],["1","Aysha Kapoor","Meera Syal","f"],["1","Joan Kirk","Rita May","f"],["1","Lynette Pickering","Susan Cookson","f"],["1","Liz Ashburn","Barbara Marten","f"],["1","Aisling Rymer","Ger Ryan","f"],["1","Joanne Simpson","Jessica Harris","f"],["1","Emma Wright","Esther Hall","f"],["1","Sid the landlord","Bill Rodgers","m"],["1","Carl Whittaker","Jason Merrells","m"],["1","Rick Ashburn","Karl Davies","m"],["1","Brenda Falkinham","Maria McErlane","f"],["1","Mrs Ashburn","Thelma Barlow","f"],["1","Beverley Ashburn","Holly Scourfield","f"],["1","Anita","Flo Wilson","f"],["2","Sean Hurst","Julian Kerridge","m"],["2","Sharon Wormersley","Sheridan Smith","f"],["2","Geoff Patterson","Russell Dixon","m"],["2","Lee McGary","Matthew Beard","m"],["2","Steve McGary","David Crellin","m"],["2","Inspector Stuart Hughes","Seamus O'Neill","m"],["2","Grandma Rose Rymer","June Broughton","f"],["2","young Betty","Naomi Wardman","f"],["2","young Ian","Adam Scourfield","m"],["2","Angel","Julia Mallam","f"],["2","Suzanne Ellis","Jo-Anne Knowles","f"],["2","Roberta","Andrina Carroll","f"],["2","Mrs Graham","Gillian Cally","f"],["3","Mandy","Caroline O'Neill","f"],["3","Judy Forbes","Judy Holt","f"],["3","Kirsty Grigg","Jo Joyner","f"],["3","Lorraine Frost","Jennifer Hennessy","f"],["3","Jonathan Chadwick","Andrew-Lee Potts","m"],["3","the Bishop","Terence Harvey","m"],["3","Russell Simpson","Oliver Pickering","m"],["3","Mrs Hutchinson","Christine Mackie","f"],["3","Jake Levi","Guy Hargreaves","m"],["3","the compere","Duggie Brown","m"],["4","Mercedes","Janine Mellor","f"],["4","Rachel Kleinberg","Sarah Miller","f"],["4","Mrs Thompson","Gwen Taylor","f"],["4","John Thompson","Jonathan Wrather","m"],["4","Eddie Monkford","Tony Monroe","m"],["4","Karen de Vier","Laurel Gibb","f"],["4","Rosemary de Vier","Judith Barker","f"],["4","Jan de Vier","Peter Ivatts","m"],["4","Alicia Fields","Penny Layden","f"],["4","Jo","Verity Pearson","f"],["4","Mrs Goldstein","Nicky Goldie","f"],["4","Shelley","Kiki Kendrick","f"],["4","Tristrum","Bernard Wrigley","m"]];
+const productionAudit392=[["1","Who directed three episodes of the opening series?","David Wheatley",["Lance Kneeshaw","Tania Díez","Dan Zeff"],"Opening-series directing"],["1","Who produced all six episodes of the opening series?","Gareth Morgan",["Josh Dynevor","Yvonne Francas","Greg Brenman"],"First-series production"],["1","Who composed the score for the opening series?","Chris Norton",["Mark Russell","Stephen W. Parsons","Doug Hallows"],"Series 1 music"],["1","Who designed costumes for the opening series?","Anne Rudd",["Linda Alderson","Alexandra Caulfield","Claire Finlay-Thompson"],"Series 1 costume design"],["2","Which director helmed two episodes of the second series?","Tania Díez",["David Wheatley","John Deery","Lance Kneeshaw"],"Series 2 direction"],["2","Which producer worked on both Series 2 and Series 4?","Yvonne Francas",["Gareth Morgan","Josh Dynevor","Tom Sherry"],"Cross-series production"],["2","Who composed the incidental score for the second series?","Mark Russell",["Chris Norton","Stephen W. Parsons","Theo Vidgen"],"Series 2 music"],["3","Who produced all six episodes of the third series?","Josh Dynevor",["Yvonne Francas","Gareth Morgan","David Reynolds"],"Series 3 production"],["3","Which director worked on six episodes across Series 3 and Series 4?","Lance Kneeshaw",["Dan Zeff","David Wheatley","John Deery"],"Series 3–4 direction"],["3","Who composed music for both Series 3 and Series 4?","Stephen W. Parsons",["Mark Russell","Chris Norton","Rick Wentworth"],"Later-series music"],["4","Who designed costumes for the fourth series?","Claire Finlay-Thompson",["Anne Rudd","Linda Alderson","Alexandra Caulfield"],"Series 4 costume design"],["4","Who served as director of photography across Series 3 and Series 4?","Doug Hallows",["Alasdair Walker","John Grover","Alan Levy"],"Later-series cinematography"]];
+const awardAudit392=[["1–4","Which BAFTA acting category did Alison Steadman receive a nomination for?","Best Actress",["Best Supporting Actress","Best Comedy Performance","Best Newcomer"],"BAFTA acting nomination"],["1–4","In which BAFTA programme category was Fat Friends nominated?","Best Drama Series",["Best Situation Comedy","Best Single Drama","Best Factual Series"],"BAFTA programme nomination"],["1–4","Which honour did Fat Friends win at the TV Quick Awards?","Best New Drama",["Best Soap","Best Comedy","Best Reality Programme"],"TV Quick award"],["1–4","Which Television and Radio Industries Club award did Fat Friends win?","TV Drama Programme",["TV Sitcom","TV Personality","TV Entertainment Programme"],"TRIC award"],["1–4","Which Royal Television Society newcomer category nominated James Corden for Fat Friends?","On-Screen Network Newcomer",["Best TV Drama Actor","Best Comedy Performer","Television Presenter"],"RTS newcomer nomination"]];
+const norm392=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+const castPools392={m:castAudit392.filter(x=>x[3]==='m').map(x=>x[2]),
+ f:castAudit392.filter(x=>x[3]==='f').map(x=>x[2])};
+function addAudit392(series,stem,answer,wrong,focus,type){
+ if(wrong.length!==3||new Set([answer,...wrong].map(norm392)).size!==4)
+   throw Error('Pack 392 bad choices: '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrong];answers.splice(questions.length%4,0,answer);
+ const tags=['Television','British Television','ITV','Comedy Drama',
+   PROGRAMME,'Programme: '+PROGRAMME,'Series: '+series,
+   'Question category: '+type,'Subject: '+focus,'Correct: '+answer,
+   'Original run: 2000–2005','Creator: Kay Mellor',
+   'Leeds set television drama','Programme category: ITV series'];
+ questions.push({id:'tv_'+(41046+questions.length-109),
+   category:'Television',programme:PROGRAMME,question,answers,correctAnswer:answer,
+   difficulty:'Medium',tags,dailyEligible:true});
+}
+for(const [i,[series,role,actor,gender]] of castAudit392.entries()){
+ const pool=castPools392[gender].filter(x=>x!==actor);
+ if(pool.length<3)throw Error('Not enough actor choices for '+role);
+ const offset=(i*7)%pool.length;
+ const wrong=[pool[offset],pool[(offset+1)%pool.length],pool[(offset+2)%pool.length]];
+ addAudit392(series,'Which '+(gender==='f'?'actress':'actor')+
+ ' portrayed '+role+' in Series '+series+'?',actor,wrong,
+ 'Role: '+role,'supporting cast');
+}
+for(const [series,stem,answer,wrong,focus] of productionAudit392)
+ addAudit392(series,stem,answer,wrong,focus,'behind the scenes');
+for(const [series,stem,answer,wrong,focus] of awardAudit392)
+ addAudit392(series,stem,answer,wrong,focus,'award/nomination');
+const seen392Ids=new Set(),seen392Stems=new Set();
+for(const item of questions){
+ const n=norm392(item.question);
+ if(item.category!=='Television'||item.programme!==PROGRAMME||
+  !item.tags.includes('Programme: '+PROGRAMME)||
+  item.answers.length!==4||
+  new Set(item.answers.map(norm392)).size!==4||
+  item.answers.filter(a=>a===item.correctAnswer).length!==1||
+  item.tags.length<12||item.dailyEligible!==true||
+  seen392Ids.has(item.id)||seen392Stems.has(n))
+  throw Error('Pack 392 audit validation failed at '+item.id);
+ seen392Ids.add(item.id);seen392Stems.add(n);
+}
+module.exports=questions;
