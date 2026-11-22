@@ -49,7 +49,7 @@ Which competition is Jeffrey asked to judge in The Beauty Queen Affair?|Holiday 
 Which employee's drinking worries Jeffrey in The Partridge Season?|Mr Partridge|Fred Quilley|Ted Bovis|Barry Stuart-Hargreaves|Easy|The Partridge Season|Series One|Mr Partridge|Alcohol Problems|Jeffrey Fairbrother|Staff Management|1981 Story
 What weekday does Joe Maplin designate Sunshine Smile Day?|Thursday|Monday|Saturday|Wednesday|Hard|Charity Begins At Home|Sunshine Smile Day|Thursday|Joe Maplin|Ted Bovis|Camp Promotion|1981 Episode
 What problem forces activities into the ballroom in If Wet - In the Ballroom?|Heavy rainfall|A power cut|A food shortage|An outbreak of illness|Medium|If Wet In The Ballroom|Series Two|Persistent Rain|Hawaiian Ballroom|Camp Activities|Wet Weather|1981 Plot
-Which character gets a chance to perform in a swimming-pool event in Peggy's Big Chance?|Peggy Ollerenshaw|Gladys Pugh|Sylvia Garnsey|Yvonne Stuart-Hargreaves|Medium|Peggys Big Chance|Series Two|Peggy Ollerenshaw|Swimming Pool Stunt|Yellowcoat Ambition|Camp Activities|1981 Story
+Which chalet maid is invited to take part in a swimming-pool event?|Peggy Ollerenshaw|Gladys Pugh|Sylvia Garnsey|Yvonne Stuart-Hargreaves|Medium|Peggys Big Chance|Series Two|Peggy Ollerenshaw|Swimming Pool Stunt|Yellowcoat Ambition|Camp Activities|1981 Story
 What unusual contest does Jeffrey object to in Lift Up Your Minds?|Who's Got The Wrong Trousers On?|Holiday Princess|Best Holiday Chalet|The Talent Parade|Hard|Lift Up Your Minds|Series Two|Wrong Trousers Contest|Jeffrey Fairbrother|Cultural Standards|Camper Competitions|1981 Episode
 At what kind of venue does Ted hope to perform in On With The Motley?|Local golf club dinners|A theatre in London|A television studio|A village church|Medium|On With The Motley|Series Two|Ted Bovis|Golf Club Dinners|Outside Engagements|Comedy Career|Stage Performances
 What event needs a float from Maplin's in Carnival Time?|The town carnival|A royal procession|A wedding parade|A school sports day|Medium|Carnival Time|Series Three|Town Carnival|Maplins Float|Ted Bovis|Jeffrey Fairbrother|Community Event
@@ -60,7 +60,7 @@ What building does Joe Maplin want demolished for camp expansion in Save Our Her
 Which camp employee is upset when Joe Maplin makes a decision about the horses in Empty Saddles?|Fred Quilley|Spike Dixon|Barry Stuart-Hargreaves|Mr Partridge|Medium|Empty Saddles|Series Four|Fred Quilley|Camp Horses|Former Jockey|Stables|1983 Story
 Whose statue is due to be unveiled in The Graven Image?|Joe Maplin's|Jeffrey Fairbrother's|Ted Bovis's|Gladys Pugh's|Medium|The Graven Image|Series Four|Joe Maplin|Statue Unveiling|Camp Ceremony|Spike Dixon|1984 Episode
 What job does Peggy gain in Off With The Motley?|Stores supervisor|Head receptionist|Senior dance instructor|Swimming coach|Medium|Off With The Motley|Series Five|Peggy Ollerenshaw|Stores Supervisor|Staff Promotion|Camp Supplies|1984 Episode
-Which camp entertainer is found dead in the swimming pool during the sixth series?|Mr Partridge|Ted Bovis|Fred Quilley|Sammy|Easy|Who Killed Mr Partridge|Series Six|Swimming Pool|Mystery Death|Punch And Judy Man|Camp Staff|1986 Episode
+Which camp entertainer is found dead in the swimming pool?|Mr Partridge|Ted Bovis|Fred Quilley|Sammy|Easy|Who Killed Mr Partridge|Series Six|Swimming Pool|Mystery Death|Punch And Judy Man|Camp Staff|1986 Episode
 Who sacks Peggy in the episode Orphan of the Storm?|Alec Foster|Clive Dempster|Jeffrey Fairbrother|Joe Maplin|Medium|Orphan Of The Storm|Series Seven|Alec Foster|Peggy Dismissal|Camp Controller|Staff Solidarity|1986 Episode
 Whose departure leaves Yvonne without her original ballroom partner in Pigs Might Fly?|Barry Stuart-Hargreaves|Fred Quilley|Spike Dixon|Ted Bovis|Medium|Pigs Might Fly|Series Seven|Barry Departure|Yvonne Stuart Hargreaves|Dance Partnership|Camp Entertainment|1986 Episode
 Which character's family tries to prevent his wedding to Gladys in Wedding Bells?|Clive Dempster|Spike Dixon|Ted Bovis|Fred Quilley|Medium|Wedding Bells|Series Eight|Clive Dempster|Gladys Pugh|Wedding Plans|Family Objections|1988 Episode
@@ -145,11 +145,12 @@ function addBlock(block, programme, era) {
     const item = {
       id: `tv_${FIRST_ID + questions.length}`,
       category: 'Television',
+      programme,
       question,
       answers,
       correctAnswer,
       difficulty,
-      tags: [...new Set(['Television', 'British Sitcom', programme, era, correctAnswer, ...specificTags])],
+      tags: [...new Set(['Television', 'British Television', 'British Sitcom', 'Comedy', 'Sitcom', programme, `Programme: ${programme}`, era, correctAnswer, ...specificTags])],
       dailyEligible: true
     };
     if (new Set(answers.map(x => x.toLowerCase())).size !== 4 ||
@@ -163,4 +164,122 @@ addBlock(hiFacts, 'Hi-de-Hi!', '1980-1988');
 addBlock(twainFacts, 'Never the Twain', '1981-1991');
 const unique = new Set(questions.map(q => q.question.toLowerCase().replace(/[^a-z0-9]/g, '')));
 if (unique.size !== questions.length) throw new Error('Duplicate question text');
-module.exports = questions;
+
+ 
+// Episode-story additions researched from the creators' guide and TVmaze:
+// https://www.davidcroft.co.uk/Hi-De-Hi/Episodes/
+// https://www.tvmaze.com/shows/7735/never-the-twain/episodeguide
+const auditHiRows = `In Desire in the Mickey Mouse Grotto, what scandal threatens Jeffrey's new job?|A staff member is seen entering a female camper's chalet|He is accused of stealing a company car|He is caught playing cards for money|He loses the camp's payroll|Desire in the Mickey Mouse Grotto|Jeffrey Fairbrother|Chalet incident
+In The Beauty Queen Affair, what does Ted teach Spike to take advantage of?|The campers' generosity|The camp's free laundry|The local bus timetable|The staff's holiday allowance|The Beauty Queen Affair|Ted and Spike|Money-making lesson
+In The Partridge Season, what decision by Jeffrey makes the puppeteer's drinking problem worse?|Giving him a pay rise|Appointing him manager|Moving his act outdoors|Ordering him to retire|The Partridge Season|Jeffrey and Mr Partridge|Pay decision
+In The Day of Reckoning, whose past as a jockey returns to trouble Peggy and Spike?|Fred Quilley's|Ted Bovis's|Clive Dempster's|Barry Stuart-Hargreaves's|The Day of Reckoning|Fred Quilley|Past sporting career
+In No Dogs Allowed, what personal difficulty causes rumours about Jeffrey?|Problems in his marriage|A secret criminal trial|His mother's illness|A gambling addiction|No Dogs Allowed|Jeffrey Fairbrother|Marital difficulties
+In A Night Not to Remember, who leads Jeffrey astray before Gladys becomes involved?|Some campers|The camp chaplain|A group of Marines|A visiting police inspector|A Night Not to Remember|Jeffrey and Gladys|Unwise evening
+In Sausages or Limelight, who gives Spike an ultimatum about his future?|His girlfriend's father|Joe Maplin|The local mayor|His comedy partner|Sausages or Limelight|Spike Dixon|Romantic ultimatum
+In Nice People with Nice Manners, where do Barry and Yvonne host a select party?|Their chalet|The golf clubhouse|The staff canteen|The camp swimming pool|Nice People with Nice Manners|Barry and Yvonne|Staff gathering
+In Trouble and Strife, what does Ted's ex-wife demand when she comes to the camp?|Maintenance money|Custody of the camp mascot|Half the bingo receipts|The keys to the ballroom|Trouble and Strife|Ted Bovis|Former wife's demand
+In Co-Respondent's Course, what obstructs the divorce wanted by Jeffrey's wife?|Jeffrey will not supply grounds|Jeffrey has gone abroad|The couple's marriage licence is lost|Their solicitor is unavailable|Co-Respondent's Course|Jeffrey Fairbrother|Divorce dispute
+In It's a Blue World, what party do the Yellowcoats plan while Ted organises a late film?|A birthday party for twins|A retirement party for Peggy|A wedding reception for Gladys|A party for new army recruits|It's a Blue World|Yellowcoats|Birthday celebration
+In Eruptions, what does Ted want Jeffrey to stop during his ballroom act?|Repeated interruptions|The sale of drinks|Late arrivals by bus|The removal of the stage curtains|Eruptions|Ted Bovis|Disrupted performance
+In The Society Entertainer, what distracts Spike from his camp duties?|An attraction to a female camper|An antique auction|A new job as a jockey|A visit from his estranged brother|The Society Entertainer|Spike Dixon|Holiday romance
+In Sing You Sinners, which event needs a new leader when the camp chaplain retires?|Sunday Half-Hour|The sports day|The annual charity raffle|The children's puppet show|Sing You Sinners|Camp chaplain|Religious gathering
+In All Change, why must Jeffrey rehouse the entertainments staff?|Accommodation is needed for a new Yellowcoat supervisor|The chalets are sold to a hotel group|The camp floods after heavy rain|The entertainers go on strike|All Change|Jeffrey Fairbrother|Staff accommodation
+In Concessions, who conceals a private booking at a local event from Jeffrey?|Ted Bovis|Fred Quilley|Yvonne Stuart-Hargreaves|Mr Partridge|Concessions|Ted Bovis|Private function
+In The Marriage Settlement, what legal step does Jeffrey finally agree to?|Divorcing his wife|Adopting a child|Selling the holiday camp|Changing his surname|The Marriage Settlement|Jeffrey Fairbrother|Marriage decision
+In Peggy's Penfriend, what development in Peggy's private life alarms the staff?|She says she has a new boyfriend|She decides to run for mayor|She purchases a racehorse|She wants to emigrate to Canada|Peggy's Penfriend|Peggy Ollerenshaw|New boyfriend
+In The Epidemic, what kind of graffiti appears before Barry is injured?|Chads|Football scores|Painted stars|Political cartoons|The Epidemic|Barry Stuart-Hargreaves|Graffiti problem
+In Ted at the Helm, where is Ted called while hoping for a management role?|Maplin's head office|The local police station|The camp chapel|The village school|Ted at the Helm|Ted Bovis|Job ambitions
+In Opening Day, where do the staff go to greet the first campers of the season?|The railway station|The harbour|The local cinema|The neighbouring golf club|Opening Day|Entertainment staff|Holiday arrivals
+In Hey Diddle Diddle, Who's on the Fiddle?, whom do Peggy and Spike suspect of spying for Joe Maplin?|Clive Dempster|Jeffrey Fairbrother|Fred Quilley|Barry Stuart-Hargreaves|Hey Diddle Diddle Who's on the Fiddle|Peggy and Spike|Staff surveillance
+In Raffles, what old possession inspires one of Ted's money-making schemes?|A car matching Clive's|A racing bicycle|A grand piano|A wartime motorbike|Raffles|Ted Bovis|Matching cars
+In The Great Cat Robbery, whom does Peggy recognise in a newspaper photograph?|A deceased cat burglar who was once a camper|The camp founder's estranged brother|A missing Yellowcoat|Her former headteacher|The Great Cat Robbery|Peggy Ollerenshaw|Newspaper clue
+In It's Murder, whose behaviour towards children leads holidaymakers to complain?|Mr Partridge's|Spike Dixon's|Fred Quilley's|Peggy Ollerenshaw's|It's Murder|Mr Partridge|Camper complaints
+In Spaghetti Galore, what occasion brings Gladys several offers of dinner?|Her birthday|Her retirement|Her wedding anniversary|Her promotion to manager|Spaghetti Galore|Gladys Pugh|Dinner invitations
+In A Lack of Punch, which act must other staff cover following Mr Partridge's departure?|Punch and Judy|The resident orchestra|The magic show|The dance competition|A Lack of Punch|Mr Partridge|Vacant act
+In Ivory Castles in the Air, where does Clive take Gladys on a visit she misunderstands?|His family estate|A rival holiday camp|A hospital in London|An army recruitment centre|Ivory Castles in the Air|Clive and Gladys|Family property
+In Man Trap, what causes difficulties in the romances of Gladys and Spike?|A press release from Joe Maplin|A radio advert for the camp|A visiting film director|A cancelled train service|Man Trap|Gladys and Spike|Public announcement
+In God Bless Our Family, whose family comes to the camp to challenge his irresponsible behaviour?|Clive Dempster's|Ted Bovis's|Spike Dixon's|Fred Quilley's|God Bless Our Family|Clive Dempster|Family intervention
+In Only the Brave, whose birthday does Spike want the entertainers to celebrate?|April Wingate's|Gladys Pugh's|Peggy Ollerenshaw's|Yvonne Stuart-Hargreaves's|Only the Brave|April Wingate|Birthday surprise
+In September Song, what is the profession of the young woman Ted wants to marry?|Pianist|Doctor|Journalist|Horse trainer|September Song|Ted Bovis|Love interest
+In Tell It to the Marines, what service does the sergeant who antagonises Ted belong to?|Royal Marines|Royal Air Force|Royal Navy|Royal Artillery|Tell It to the Marines|Ted Bovis|Military visitor
+In Marry-Go-Round, what does Spike suspect is harming the camp comic's act?|His engagement to April|A childhood injury|A recent lottery win|An argument with Joe Maplin|Marry-Go-Round|Spike and April|Engagement distraction
+In The Perils of Peggy, whose help does Clive need to win Gladys back?|Ted and Peggy|Barry and Yvonne|Fred and Mr Partridge|Jeffrey and Sylvia|The Perils of Peggy|Clive and Gladys|Romantic reconciliation
+In Let Them Eat Cake, what does Ted ask Alec Foster for on another visit?|A pay rise|A promotion to head office|A new car|An overseas transfer|Let Them Eat Cake|Ted Bovis|Salary request`;
+const auditTwainRows = `In Of Meissen Men, how do Simon and Oliver present themselves to Veronica Barton?|As private collectors|As museum officials|As police detectives|As tax inspectors|Of Meissen Men|Veronica Barton|Porcelain purchase
+In Nothing But the Truth, what promise by David and Lyn backfires?|Never to lie to each other|Never to leave England|Never to discuss their fathers|Never to visit an antiques shop|Nothing But the Truth|David and Lyn|Honesty pact
+In Father of the Groom, which game spoils the fathers' attempt at reconciliation?|Cards|Chess|Darts|Billiards|Father of the Groom|Simon and Oliver|Wedding dinner
+In Who's Been Sleeping in My Bed?, what domestic issue renews Simon and Oliver's feud?|A marital bed|A leaking roof|A faulty television|A lost house key|Who's Been Sleeping in My Bed|Married children|Domestic dispute
+In As Young as You Feel, what becomes the latest source of rivalry between the fathers?|A woman|A sports car|A racehorse|A painting|As Young as You Feel|Simon and Oliver|Romantic rivalry
+In Blood Brothers, what does Oliver exploit after rescuing Simon?|Simon's generosity|Lyn's savings|David's inheritance|Ringo's bank account|Blood Brothers|Oliver Smallbridge|Saving Simon
+In The More We Are Together, who suggests the two dealers should become partners again?|Oliver Smallbridge|Simon Peel|Albert Banks|Ringo|The More We Are Together|Oliver Smallbridge|Partnership proposal
+In Taking Stock, which routine business activity causes greed and deceit between the dealers?|Stocktaking|Advertising|Staff recruitment|Delivery scheduling|Taking Stock|Antiques partners|Business inventory
+In A Nose for Quality, what kind of visitors cause Simon to protect his business interests?|The landed gentry|A touring theatre company|The police force|A school cricket team|A Nose for Quality|Simon Peel|Visitors to the shops
+In The Welsh Connection, whose diet and exercise plans do the two fathers oppose?|David and Lyn's|Mrs Sadler and Banks's|Aunt Eleanor and Ringo's|The vicar's|The Welsh Connection|David and Lyn|Exercise programme
+In Not on the Same Wavelength, what family news brings the rivals into an uneasy truce?|Lyn is expecting a baby|David is emigrating|Eleanor is marrying|Ringo is retiring|Not on the Same Wavelength|Lyn Peel|Pregnancy news
+In The Royal Connection, what family research occupies Simon?|Genealogy|Tracing military medals|Restoring a portrait|Preparing his will|The Royal Connection|Simon Peel|Family ancestry
+In Words and Music, which profession does the woman have who asks Oliver to sing at a charity event?|Veterinarian|Dentist|Solicitor|Librarian|Words and Music|Oliver Smallbridge|Charity singing
+In No Flame Like an Old Flame, who reappears and stirs Simon's romantic feelings?|A former romantic partner|An old schoolmaster|His first employer|A long-lost nephew|No Flame Like an Old Flame|Simon Peel|Old romance
+In Love's Neighbours' Lost, which woman attracts both rivals' romantic interest?|Caroline|Veronica Barton|Aunt Eleanor|Mrs Sadler|Love's Neighbours' Lost|Simon and Oliver|Competing suitors
+In In Whom We Tryst, which newcomer fascinates both antique dealers?|A shop assistant|A bank clerk|A hotel manager|A newspaper editor|In Whom We Tryst|Simon and Oliver|New love interest
+In Going, Going, Gone, what planned leisure activity puts Simon and Oliver at odds?|A relaxing weekend break|A week-long golf tournament|A trip to an opera house|A Christmas pantomime|Going Going Gone|Simon and Oliver|Holiday conflict
+In Thicker Than Water, what personal matter does Simon disclose to Oliver?|A secret surrounding his birth|A secret about a painting|A tax problem|A disputed business licence|Thicker Than Water|Simon Peel|Family secret
+In Reading Between the Lines, what is the profession of the man threatening the neighbourhood?|Estate agent|Police inspector|Barrister|Local doctor|Reading Between the Lines|Ringo|Property developer
+In Going to Pot, whom does Ringo hope to impress with his dinner invitation?|His teacher|His father|His bank manager|His former employer|Going to Pot|Ringo|Dinner guest
+In Love Is a Many Splendoured Thing, whose prospective mother-in-law causes him trouble?|Oliver Smallbridge's|Simon Peel's|David Peel's|Albert Banks's|Love Is a Many Splendoured Thing|Oliver Smallbridge|Marriage tensions
+In A Night to Remember, who holds Simon, Oliver, Mrs Sadler and Banks at gunpoint?|Burglars|Customs officers|Actors in a play|Antique valuers|A Night to Remember|Rival neighbours|Home invasion
+In The Battle of Deveraux Dale, who invites the dealers to a Civil War re-enactment?|Lady Deveraux|Veronica Barton|Aunt Eleanor|Mrs Sadler|The Battle of Deveraux Dale|Local fete|Historical event
+In Affair of the Heart, what does Oliver do that worries Simon about his former wife?|He takes Stephanie into his home|He helps her move to Canada|He buys her business|He hires her as a cleaner|Affair of the Heart|Stephanie|Simon's ex-wife
+In Settled Out of Court, why does Simon consider a lawsuit against Oliver?|Oliver keeps profits from Simon's deals|Oliver steals his antique pistol|Oliver damages his car|Oliver cancels a wedding|Settled Out of Court|Simon Peel|Unpaid profits
+In The Wagers of Sin, what do the dealers compete to maximise?|Profits on objects the other chooses|The number of cricket runs scored|The distance on their holidays|The number of antiques donated|The Wagers of Sin|Simon and Oliver|Trade wager
+In The Second Time Around, whose absence leaves Mrs Sadler lonely?|Albert Banks's|Ringo's|David Peel's|Oliver Smallbridge's|The Second Time Around|Mrs Sadler|Missing companion
+In Born to Blush Unseen, what does Oliver produce with his gardening skills?|A rare bloom|A giant marrow|A prize tomato|A bonsai tree|Born to Blush Unseen|Oliver Smallbridge|Unusual flower
+In Grandfathers-in-Law, which three relatives arrive back from Canada?|David, Lyn and Martin|Eleanor, Rita and Banks|Stephanie, Susan and David|Veronica, Simon and Ringo|Grandfathers-in-Law|Returning children|Baby Martin
+In Nursery Times, who hopes David and Lyn will move into his home?|Oliver Smallbridge|Simon Peel|Albert Banks|Ringo|Nursery Times|David and Lyn|Household plans
+In Never Say Die, where is Simon admitted and causes a series of misunderstandings?|Hospital|A monastery|A court house|A police station|Never Say Die|Simon Peel|Medical visit
+In Moving On, which relative do Simon and Oliver worry they may not see after a move?|Their grandson|Their aunt|Their daughter-in-law's sister|Their business mentor|Moving On|David and Lyn|Grandfather anxiety
+In It's a Long Way to Friern Barnet, what do the grandfathers compete to supply for David and Lyn?|Household essentials|Sports tickets|Wedding outfits|Office stationery|It's a Long Way to Friern Barnet|Young family|Furnishing a home
+In A Point of Honour, why does Simon interview applicants at his antiques shop?|To hire a shop assistant|To choose a cricket captain|To employ a lawyer|To find a new business partner|A Point of Honour|Simon Peel|Recruitment
+In Bonjour Paris, which official suffers from the dealers' troubles in France?|An embassy official|The mayor of Paris|A naval officer|A television presenter|Bonjour Paris|Simon and Oliver|Diplomatic embarrassment
+In Happy Holiday, what is wrong with the timing of the dealers' cottage visit?|They arrive on the wrong weekend|They arrive a year too early|The owner cancels due to snow|The cottage is booked for Christmas|Happy Holiday|Ringo's mother|Holiday booking
+In There But for the Grace of God, whom does Simon meet who has fallen on hard times?|An old acquaintance|His former commanding officer|A schoolboy friend from Canada|A distant cousin|There But for the Grace of God|Simon Peel|Unexpected reunion
+In A Car by Any Other Name, who asks Simon to help sell a vehicle?|The vicar|His grandson|Mrs Sadler|Aunt Eleanor|A Car by Any Other Name|Simon Peel|Car sale
+In The Best Laid Plans, what milestone inspires the dealers' dinner and theatre outing?|Ten years in business|Twenty years of marriage|A tenth birthday|Twenty-five years since leaving school|The Best Laid Plans|Simon and Oliver|Anniversary celebrations
+In Born Again, whom does Simon hear speaking in a park before rethinking his life?|A preacher|A television comedian|An archaeologist|A football coach|Born Again|Simon Peel|Search for meaning`;
+const STRICT_376 = x => String(x).normalize('NFKC').toLocaleLowerCase('en-GB').replace(/[^\p{L}\p{N}]/gu, '');
+function addAuditRows(rows, programme, era) {
+  for (const [index, row] of rows.trim().split('\n').entries()) {
+    const parts = row.split('|').map(x => x.trim());
+    if (parts.length !== 8 || parts.some(x => !x)) throw Error('Bad audit row '+programme+' '+index);
+    const [stem, correctAnswer, a, b, c, episode, focus, context] = parts;
+    const question = stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB')) ? stem :
+      'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1);
+    const answers=[a,b,c];
+    answers.splice(questions.length % 4,0,correctAnswer);
+    const tags=['Television','British Television','British Sitcom','Comedy','Sitcom',
+      programme,'Programme: '+programme,era,'Episode: '+episode,
+      'Character focus: '+focus,'Plot incident: '+context,
+      'Fact: '+correctAnswer,'Correct answer: '+correctAnswer,
+      'Story focus: '+focus,'Episode scenario: '+context,
+      'Programme period: '+era];
+    questions.push({
+      id: 'tv_'+(40151+questions.length-117),category:'Television',programme,
+      question,answers,correctAnswer,difficulty:'Medium',
+      tags,dailyEligible:true
+    });
+  }
+}
+addAuditRows(auditHiRows,'Hi-de-Hi!','1980-1988');
+addAuditRows(auditTwainRows,'Never the Twain','1981-1991');
+const allIds=new Set(),allWords=new Set();
+for(const q of questions){
+ if(q.category!=='Television'||!q.programme||!q.tags.includes('Programme: '+q.programme)||
+ !Array.isArray(q.answers)||q.answers.length!==4||
+ new Set(q.answers.map(STRICT_376)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ allIds.has(q.id)||allWords.has(STRICT_376(q.question))){
+   throw Error('Pack 376 audit validation failed at '+q.id);
+ }
+ allIds.add(q.id);allWords.add(STRICT_376(q.question));
+}
+module.exports=questions;
