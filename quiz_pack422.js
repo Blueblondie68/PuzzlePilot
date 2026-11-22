@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 422
 // All Saints (Australia): Season 3 (2000), 41 broadcast episodes.
 // Follows Pack 421. First ID: tv_24181.
-// WordPad-ready CommonJS. All Saints remains ongoing in the master tracker.
+// WordPad-ready CommonJS. All Saints ended in 2009; later seasons still require auditing.
 // Each row: question | correct | three distractors | difficulty | seven specific tags.
 // Research: 2000 episode listings and story synopses (TheTVDB, TV Guide,
 // All Saints Season 3 episode guide).
@@ -118,9 +118,37 @@ In Another Place, Another Time, where had Von previously nursed former patient W
 In Tender Loving Care, who bought Tony a ticket to see him in New York?|His boyfriend Alistair|His brother Greg|His father Ryan|His friend Fergus|Hard|Tender Loving Care|Episode 33|Tony Hurst|Alistair|New York Visit|Same Sex Relationship|Airfare
 In Stolen Moments, what competition did Jodi Horner want Ward 17 to win?|Best-decorated Christmas ward|Best hospital garden|Annual bed race|Staff talent contest|Medium|Stolen Moments|Episode 41|Jodi Horner|Christmas Decorations|Ward Competition|Season Finale|Holiday Celebration`;
 
+
+// 2000 season episode, production and AFI/Logie awards audit. Preserve original IDs.
+const AUDIT_ORIGINAL_COUNT = 102;
+const AUDIT_FIRST_ID = 42136;
+const auditFacts = `Which All Saints Series 3 two-part opener won a 2000 Australian Film Institute Award?|Valley of the Shadow|Judge Not|Promise of Things to Come|Stolen Moments|Medium|Valley of the Shadow|2000 AFI Award|episode prize|series premiere|television drama|award winner|Australian Film Institute
+Which part of the All Saints story Valley of the Shadow won the 2000 AFI television drama episode prize?|Part One|Part Two|Both parts jointly|Neither part|Medium|Valley of the Shadow|Part One|2000 AFI Award|television drama episode|opening instalment|Jo Porter|winning entry
+Which All Saints producer was named with the AFI-winning 2000 episode Valley of the Shadow?|Jo Porter|Di Drew|Bevan Lee|John Holmes|Medium|Jo Porter|Valley of the Shadow|2000 AFI Award|producer credit|television drama|industry recognition|Season 3
+Which other All Saints Series 3 episode was nominated alongside the winning Valley of the Shadow at the 2000 AFI Awards?|Dead on Time|Stolen Moments|After the Ball|Ghosts|Medium|Dead on Time|Valley of the Shadow|2000 AFI Awards|episode nomination|Stephanie Markham|Australian Film Institute|drama category
+Which All Saints actress received the Gold Logie at the 2001 TV Week awards?|Georgie Parker|Libby Tanner|Judith McGrath|Belinda Emmett|Medium|Georgie Parker|Terri Sullivan|2001 Gold Logie|popular personality|Australian television|acting recognition|award winner
+Which All Saints award did the programme itself win at the 2001 TV Week Logies?|Most Popular Program|Most Outstanding Documentary|Most Popular Comedy|Most Outstanding Mini Series|Medium|2001 Logies|Most Popular Program|Seven Network|programme award|Australian television|viewers choice|winning category
+In All Saints episode Valley of the Shadow who joined Luke Forlano in operating on the injured Alex Richards?|John Madsen|Mitch Stevens|Peter Morrison|Richard Craig|Medium|Valley of the Shadow|John Madsen|Luke Forlano|Alex Richards|head injury|craniotomy|Season 3 opener
+In All Saints episode Valley of the Shadow who entertained two frightened children during rescue operations?|Bosco the clown|Professor Caroline Edgewater|Jodi Horner|Regina Butcher|Medium|Valley of the Shadow|Bosco|Caitlin and Rowen|child rescue|hospital bombing|clown|disaster response
+In All Saints episode First Do No Harm which medical problem made Mitch investigate Phoebe beyond her contraceptive request?|Suspicious abnormal cervical or vaginal cells|A broken collarbone|Severe asthma|Food poisoning|Medium|First Do No Harm|Phoebe|Mitch Stevens|abnormal cells|cancer concern|gynaecological examination|patient welfare
+In All Saints episode After the Ball who was revealed to have bought Terri Sullivan's dress?|Neil Phillips|Mitch Stevens|Von Ryan|Luke Forlano|Medium|After the Ball|Neil Phillips|Terri Sullivan|fundraising ball|gift|obsessive stalking|attack aftermath
+In All Saints episode After the Ball which doctor overlooked Ruby Nolan's pathology results?|Kylie Preece|Samantha O Hara|Mitch Stevens|Luke Forlano|Medium|After the Ball|Kylie Preece|Ruby Nolan|pathology results|patient deterioration|clinical oversight|fundraising ball
+In All Saints episode Command and Control which former ambulance officer struggled to adjust to paraplegia?|Mick Todd|Ben Markham|Pete Moroney|Connor Costello|Medium|Command and Control|Mick Todd|paraplegia|post accident recovery|Stephanie Markham|family strain|former paramedic
+In All Saints episode A Fine Balance what prison abuse did Luke discover his brother Rick had experienced?|Violent beatings and torture|Food poisoning|Identity theft|A falsified release order|Medium|A Fine Balance|Rick Forlano|Luke Forlano|prison violence|razor blades|family estrangement|criminal justice
+In All Saints episode In the Blood which patient did Terri incorrectly suspect of a factitious illness?|Graham Farmer|Alex Richards|Len Gould|Tom Snowdon|Medium|In the Blood|Graham Farmer|Terri Sullivan|Munchausen suspicion|rare blood disorder|Neil Phillips trauma|diagnostic error
+In All Saints episode In the Blood which anaesthetist had an addiction to pethidine?|Tom Snowdon|John Madsen|Luke Forlano|Richard Craig|Medium|In the Blood|Tom Snowdon|anaesthetist|pethidine addiction|Luke Forlano|professional conflict|drug dependency
+In All Saints episode Food for Thought what hardship forced patients relatives to sleep in the hospital car park?|They could not afford accommodation|Hospital security barred visitors|They missed the last train|Their home had flooded|Medium|Food for Thought|patients relatives|car park|accommodation poverty|Mitch Stevens|hospital management|social hardship
+In All Saints episode Blessed Release which emergency involved a boy trapped in a security door and stung by an insect?|A bee sting|A snake bite|A spider bite|A jellyfish sting|Medium|Blessed Release|Ben Markham|Bron Craig|security door|bee sting|rescue call|child patient
+In All Saints episode Frozen in Time what accident left a teacher badly injured and a pupil blaming himself?|A schoolroom accident|A roller-coaster crash|A ferry collision|A hiking fall|Medium|Frozen in Time|injured teacher|pupil guilt|Terri Sullivan|school accident|emotional support|ward patients
+In All Saints episode What Becomes of the Broken Hearted what caused the deaths of two children?|A drink-driving collision|A house fire|A boating accident|A building collapse|Medium|What Becomes of the Broken Hearted|two children|grieving mother|drink driving|road collision|Brittany Finlay|hospital tragedy
+In All Saints episode The Cost of Living what recreational accident began Ben and Brons emergency callout?|A jet-ski crash|A skydiving injury|A motorcycle race|A swimming pool fall|Medium|The Cost of Living|Ben Markham|Bron Craig|jet ski|accident callout|rescue|paramedics
+In All Saints episode Duty Bound what difficulty was the sick mans wife experiencing while caring for him?|Reliance on a mixture of drugs|Loss of hearing|A broken leg|Temporary blindness|Medium|Duty Bound|patients wife|caregiver strain|mixed medication|Terri Sullivan|Mitch Stevens|patient care
+In All Saints episode More than Life what did a patient want to happen to his body after death?|Cryogenic freezing|Burial at sea|Organ donation|Cremation in a volcano|Medium|More than Life|cryonics|Luke Forlano|surgery request|post mortem freezing|patient wishes|medical ethics
+In All Saints episode The Best Laid Plans what difficult medical choice confronted pregnant patient Sarah Adams?|Cancer treatment or ending her pregnancy|Heart surgery or amputation|A kidney donation or chemotherapy|An overseas transfer or home care|Medium|The Best Laid Plans|Sarah Adams|pregnancy|terminal cancer|treatment decision|Mitch Stevens|medical ethics`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -135,9 +163,14 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In ')
+      ? 'In All Saints episode ' + question.slice(3)
+      : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
