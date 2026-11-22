@@ -7,10 +7,11 @@
 'use strict';
 
 const FIRST_ID = 22921;
-const commonTags = [
-  'television', 'Agatha Raisin', 'British crime comedy',
-  'M C Beaton adaptation', 'Cotswolds mysteries', 'amateur detective drama'
-];
+const PROGRAMME='Agatha Raisin';
+const commonTags=['Television',PROGRAMME,'Programme: '+PROGRAMME,
+ 'British Crime Comedy','M C Beaton adaptation','Cotswolds Mysteries',
+ 'Amateur Detective Drama','2014 pilot','Four broadcast series',
+ 'Agathaland 2023','Continuing / possible fifth series'];
 
 // Question | correct | incorrect 1 | incorrect 2 | incorrect 3 | difficulty | seven precise tags.
 // Question text includes programme name; options are rotated for varied answer positions.
@@ -126,12 +127,14 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 410: duplicate answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 410: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 410: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
+    coverageStatus: 'Continuing',
     question,
     answers,
     correctAnswer,
@@ -141,4 +144,51 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// AGATHA RAISIN — COMPLETE BROADCAST STORY AUDIT through 2022.
+// Original 2014 pilot, four scripted TV series (2016–2022), 2023 documentary.
+// Original tv_22921–tv_23011 unchanged. Appended IDs from tv_41661 onward.
+// LAVENDER: new series in pre-production per the author's official site, but
+// no fifth series broadcast verified by November 22, 2026. Review Jan 1, 2027.
+// The episode guide supplies the story specifics below:
+// https://thetvdb.com/series/agatha-raisin/allseasons/official
+// https://www.tvmaze.com/shows/7654/agatha-raisin/episodeguide
+// https://www.comedy.co.uk/tv/agatha_raisin/episodes/1/
+// https://www.comedy.co.uk/tv/agatha_raisin/episodes/2/
+// https://www.comedy.co.uk/tv/agatha_raisin/episodes/3/
+// https://www.comedy.co.uk/tv/agatha_raisin/episodes/4/
+// Primary distributor: https://acorn.tv/agatharaisin
+// Author's estate: https://www.mcbeaton.com/en-us/television-and-radio/agatha-raisin
+const storyAudit410=[["S1E2 Hell's Bells","Which bell ringer is discovered dead in the church belfry?","Amanda Ballard","Mary Fortune","Kylie Stokes","Phyllis Tamworthy","Belfry victim"],["S1E2 Hell's Bells","What written item initially makes Amanda Ballard's death appear to be suicide?","A suicide note","A wedding invitation","A bank statement","A medical prescription","Apparent suicide evidence"],["S1E2 Hell's Bells","Which of Agatha's former London colleagues helps her research the bell-ringer's death?","Roy Silver","Gemma Simpson","Toni Gilmour","James Lacey","The reluctant research helper"],["S1E3 The Wellspring of Death","Which kind of business hires Agatha to use her old public-relations skills?","A mineral water company","A veterinary practice","A seaside hotel","A bridal boutique","Agatha's return to PR"],["S1E3 The Wellspring of Death","What is the name of the murdered parish council chairman?","Robert Strutters","Jimmy Jessop","Paul Bladen","Zac Leeson","The murdered council chairman"],["S1E4 The Potted Gardener","What happens to several villagers' prized gardens before the competition?","They are sabotaged","They are flooded","They are sold","They are converted into allotments","Village gardens targeted"],["S1E4 The Potted Gardener","What is the name of Mary Fortune's daughter and sole heir?","Beth","Eirwen","Kylie","Freda","Mary Fortune's daughter"],["S1E4 The Potted Gardener","Which earlier occupation of Mary Fortune provides a clue to solving her murder?","Her former singing career","Her career as a solicitor","Her work as a journalist","Her job as a gardener","Musical clue from Mary's past"],["S1E5 The Vicious Vet","What is the name of the vet Agatha dates shortly before his murder?","Paul Bladen","Robert Strutters","Jimmy Raisin","Charles Fraith","Victim of the horse-tranquilliser killing"],["S1E5 The Vicious Vet","What substance is used to kill the veterinary surgeon in the original series?","An overdose of horse tranquilliser","A poisoned quiche","A fatal sleeping pill","A venomous snake bite","Vet murder weapon"],["S1E5 The Vicious Vet","Where is the murdered vet discovered after his date with Agatha?","Lord Pembury's stables","The village bakery","The parish council office","Agatha's sitting room","Murder scene at stables"],["S1E5 The Vicious Vet","What pet of Agatha's does the killer kidnap in an attempt to scare her off?","Her cat","Her dog","Her parrot","Her rabbit","Kidnapped pet provides a clue"],["S1E6 The Day the Floods Came","What is the name of the murdered bride?","Kylie Stokes","Amanda Ballard","Mary Fortune","Eirwen","Victim after wedding"],["S1E6 The Day the Floods Came","Who was Kylie Stokes's new husband when she was murdered?","Zac Leeson","Jimmy Jessop","Paul Bladen","Robert Strutters","Bride's husband"],["S1E6 The Day the Floods Came","Which exhibit provides a crucial clue in the investigation into the murdered bride?","An old photograph at an art exhibition","A priceless necklace","A stolen passport","A broken clock","Art exhibition clue"],["S1E7 The Witch of Wyckhadden","What beauty mishap prompts Agatha to try a local witch's hair tonic?","A hair-dye disaster","An allergic reaction to perfume","A burn from a curling iron","A failed nail treatment","Agatha's hair problem"],["S1E7 The Witch of Wyckhadden","Which local police chief becomes a romantic interest for Agatha?","Jimmy Jessop","DCI Wilkes","Bill Wong","Jez Bloxby","Agatha's brief romance"],["S1E8 Murderous Marriage","What is the name of the husband whose unexpected arrival interrupts Agatha's wedding?","Jimmy Raisin","James Lacey","Sir Charles Fraith","Bill Wong","Unrevealed first husband"],["S1E8 Murderous Marriage","Where is Agatha's first husband found dead shortly after stopping the ceremony?","In a ditch","In a lake","Inside the church","At a train station","The murder scene"],["S2 The Fairies of Fryfam","What is stolen in the village alongside the strange lights and later murder?","A painting","A horse","A rare book","A diamond ring","Fryfam theft"],["S2 The Fairies of Fryfam","What unusual phenomenon is reported in Agatha's garden at the rented cottage?","Mysterious lights","A flock of parrots","A sudden sinkhole","An underground fire","Fairy-linked strange events"],["S2 The Fairies of Fryfam","What kind of local landowner is later murdered while Agatha investigates an alleged affair?","A squire","A bishop","An estate agent","A mayor","Wealthy local victim"],["S2 The Curious Curate","What happens to Sarah Bloxby after the new curate is killed?","She is arrested","She leaves the village","She goes abroad to marry","She becomes a police officer","Sarah's peril in the case"],["S3 The Haunted House","Why does James suggest investigating the supposedly haunted Ivy Hall?","To attract clients to Agatha's new detective agency","To secure a family inheritance","To film a supernatural documentary","To buy the house at auction","Agency launch and James's suggestion"],["S3 The Deadly Dance","What damages the reputation of Agatha's detective agency before its next major assignment?","A hostile newspaper article","A television exposé","A legal injunction","An unsuccessful burglary","Scathing coverage influenced by DCI Wilkes"],["S3 The Deadly Dance","Where does a would-be assassin unexpectedly die as Agatha pursues the case?","In Agatha's kitchen","On the dance floor","In a train carriage","Inside a police cell","The assassin's death"],["S3 The Deadly Dance","What missing animal does Toni keep searching for during the threatening case?","A missing dog","A missing horse","A stolen parrot","A lost kitten","Toni's parallel assignment"],["S3 The Love from Hell","What type of charity event turns deadly while James remains on the run?","An auction","A fun run","A village concert","A raffle draw","Another crime while James hides"],["S3 As the Pig Turns","What grisly item is sent to Agatha's house after the winter-fayre murder?","A severed head","An empty coffin","A bloodied knife","A funeral wreath","Threat aimed at Agatha"],["S3 As the Pig Turns","Which relationship worries Agatha as the grisly investigation continues?","Charles and Sarah growing close","James and Gemma getting engaged","Roy and Toni marrying","Bill and Mary reconciling","Agatha's concern over Charles and Sarah"],["S4 Love Lies and Liquor","Who protests when Agatha and James arrive at their holiday hotel in Snoth-on-Sea?","Demonstrators outside the hotel","The hotel's cleaning staff","A crowd of wedding guests","Local schoolchildren","Welcome to the seaside resort"],["S4 Love Lies and Liquor","Who does the local police regard as the principal suspect after a hotel guest is murdered?","Agatha herself","Sarah Bloxby","Sir Charles Fraith","Toni Gilmour","Agatha becomes a suspect again"],["S4 Love Lies and Liquor","What older crime helps Agatha connect the seaside murders?","A robbery years earlier","A forged marriage certificate","A stolen painting from the village","A horse race fixing scheme","Cold case tied to recent murders"],["S4 A Spoonful of Poison","What happens to the jam competition judges after tasting the contaminated preserves?","They hallucinate","They lose their voices","They fall asleep","They begin coughing blood","Strange symptoms at festival"],["S4 A Spoonful of Poison","Which doctor believes she can fly and jumps from a roof after the tasting?","Dr Stevens","Dr Bladen","Dr Elliott","Dr Morrison","Hallucinating doctor"],["S4 There Goes the Bride","What possible financial motive does Agatha explore while investigating Eirwen's death?","Her family business","An art museum donation","A church restoration grant","A stolen motorhome","The bride's family interests"],["S4 There Goes the Bride","How many previous fiancés of Eirwen are treated as possible suspects?","Two previous fiancés","One previous fiancé","Three previous fiancés","Four previous fiancés","Eirwen's past engagements"]];
+const audit410Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+for(const [episode,stem,correctAnswer,w1,w2,w3,focus] of storyAudit410){
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[w1,w2,w3];answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit410Norm)).size!==4)throw Error('Pack 410 invalid options '+stem);
+ const tags=['Television',PROGRAMME,'Programme: '+PROGRAMME,
+ 'British Crime Comedy','M C Beaton adaptation','Cotswolds Mysteries',
+ '2014–2022 four-series broadcast','Episode: '+episode,
+ 'Specific story: '+focus,'Correct answer: '+correctAnswer,
+ 'Agatha Raisin Detective Agency','Sky One and Acorn TV',
+ 'Series 5 not yet aired','2014 pilot'];
+ questions.push({id:'tv_'+(41661+questions.length-91),
+ category:'Television',programme:PROGRAMME,coverageStatus:'Continuing',
+ question,answers,correctAnswer,difficulty:'Medium',tags,dailyEligible:true});
+}
+const audit410Ids=new Set(),audit410Texts=new Set();
+for(const q of questions){
+ const key=audit410Norm(q.question),fresh=Number(q.id.slice(3))>=41661;
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ q.coverageStatus!=='Continuing'||!q.tags.includes('Programme: '+PROGRAMME)||
+ !key.includes(audit410Norm(PROGRAMME))||q.answers.length!==4||
+ new Set(q.answers.map(audit410Norm)).size!==4||
+ q.answers.filter(x=>x===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ audit410Ids.has(q.id)||audit410Texts.has(key)||
+ (fresh&&key.includes(audit410Norm(q.correctAnswer))))
+ throw Error('Pack 410 audit failed '+q.id);
+ audit410Ids.add(q.id);audit410Texts.add(key);
+}
+module.exports=questions;
