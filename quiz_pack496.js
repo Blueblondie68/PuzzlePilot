@@ -1,6 +1,11 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 496: Below Deck (Original Bravo Series), Season 6
-// 54 researched 4-option MCQs; IDs tv_27981–tv_28034.
+// 66 audited 4-option MCQs: 54 original plus 12 verified early-crew, ship, safety and production facts.
+// Original IDs tv_27981–tv_28034; audit IDs tv_43157–tv_43168.
 // Season 6 (2018–19), Tahiti and My Seanna; cast, charters, conflicts, safety and reunion.
+// Audit 22 Nov 2026: Bravo premiere, Josiah background, Caroline exit,
+// beach-luau aftermath and Brent Freeburg rescue interview; YachtCharterFleet
+// researched My Seanna's real name, dimensions and Delta Marine construction.
+// Existing IDs and original answers preserved; show named in each question.
 // Sources reviewed 18 Nov 2026:
 // https://www.bravotv.com/below-deck/season-6/ep-1-were-not-in-the-caribbean-anymore
 // https://www.bravotv.com/the-daily-dish/every-below-deck-member-ever-seasons-1-7
@@ -1831,9 +1836,422 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==54||new Set(questions.map(q=>q.id)).size!==questions.length||
+// Append distinct factual audit coverage for Season 6.
+const AUDIT_ORIGINAL_COUNT=54;
+const AUDIT_FIRST_ID=43157;
+const auditQuestions=[
+  {
+    "id": "tv_43157",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, what television first did Season 6's location achieve for the original programme?",
+    "answers": [
+      "It was the first series filmed in the Atlantic Ocean",
+      "It was the first season filmed outside the Caribbean",
+      "It was the first season filmed in Europe",
+      "It was the first season to feature a sailing yacht"
+    ],
+    "correctAnswer": "It was the first season filmed outside the Caribbean",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Production",
+      "First Outside Caribbean",
+      "French Polynesia",
+      "Location Milestone",
+      "2018 Season",
+      "Programme History"
+    ]
+  },
+  {
+    "id": "tv_43158",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, which was the first yacht in the series to appear under its real name rather than an alias?",
+    "answers": [
+      "My Seanna",
+      "Honor",
+      "Ohana",
+      "Valor"
+    ],
+    "correctAnswer": "My Seanna",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Production",
+      "My Seanna",
+      "Real Vessel Name",
+      "First Unchanged Yacht Name",
+      "2018 Production",
+      "Superyacht",
+      "TV Filming"
+    ]
+  },
+  {
+    "id": "tv_43159",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, which American yacht builder constructed the luxury motor yacht My Seanna?",
+    "answers": [
+      "Sunseeker",
+      "Benetti",
+      "Azimut",
+      "Delta Marine"
+    ],
+    "correctAnswer": "Delta Marine",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Delta Marine",
+      "My Seanna",
+      "Shipyard",
+      "Vessel Builder",
+      "184 Foot Yacht",
+      "Production Background"
+    ]
+  },
+  {
+    "id": "tv_43160",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, approximately how long was the motor yacht My Seanna used in Season 6?",
+    "answers": [
+      "75 feet",
+      "120 feet",
+      "184 feet",
+      "320 feet"
+    ],
+    "correctAnswer": "184 feet",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Production",
+      "My Seanna",
+      "184 Feet",
+      "56 Metres",
+      "Superyacht Size",
+      "2018 Season",
+      "Boat Specification"
+    ]
+  },
+  {
+    "id": "tv_43161",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, what was the title of the first Below Deck Season 6 episode?",
+    "answers": [
+      "Man Overboard",
+      "We're Not in the Caribbean Anymore!",
+      "Shame Cocoon",
+      "Au Revoir!"
+    ],
+    "correctAnswer": "We're Not in the Caribbean Anymore!",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Season Six Premiere",
+      "Episode One",
+      "2 October 2018",
+      "Episode Title",
+      "Tahiti Arrival",
+      "2018 TV"
+    ]
+  },
+  {
+    "id": "tv_43162",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, which milestone did Josiah Carter achieve when he joined the original show's interior team?",
+    "answers": [
+      "He became its first male steward",
+      "He became its first male captain",
+      "He became its first celebrity charter guest",
+      "He became its youngest-ever engineer"
+    ],
+    "correctAnswer": "He became its first male steward",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Josiah Carter",
+      "First Male Steward",
+      "Interior Crew",
+      "2018 Debut",
+      "Kate Chastain",
+      "Diversity In Yachting"
+    ]
+  },
+  {
+    "id": "tv_43163",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, what professional service training had Josiah Carter completed before joining Below Deck?",
+    "answers": [
+      "Professional pastry school",
+      "Commercial pilot training",
+      "Coast Guard rescue diving",
+      "Butler training"
+    ],
+    "correctAnswer": "Butler training",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Josiah Carter",
+      "Formally Trained Butler",
+      "Hospitality Training",
+      "Second Steward",
+      "Professional Background",
+      "British Crew"
+    ]
+  },
+  {
+    "id": "tv_43164",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, how much notice did Caroline Bedol initially give before leaving My Seanna?",
+    "answers": [
+      "Three weeks",
+      "One month",
+      "Two days",
+      "No notice at all"
+    ],
+    "correctAnswer": "Two days",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Crew",
+      "Caroline Bedol",
+      "Two Days Notice",
+      "Resignation",
+      "Midseason Exit",
+      "Kate Chastain",
+      "2018 Incident"
+    ]
+  },
+  {
+    "id": "tv_43165",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, what frozen treat was Chandler Brooks eating while other crew members worked at the beach luau?",
+    "answers": [
+      "Strawberry sorbet",
+      "Chocolate ice cream",
+      "Vanilla milkshake",
+      "Frozen yoghurt"
+    ],
+    "correctAnswer": "Chocolate ice cream",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Chandler Brooks",
+      "Chocolate Ice Cream",
+      "Beach Luau",
+      "Kate Chastain",
+      "Crew Workload",
+      "Controversy"
+    ]
+  },
+  {
+    "id": "tv_43166",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, what caused the young guest's injury at the poorly organised beach excursion?",
+    "answers": [
+      "Broken glass",
+      "A shark bite",
+      "A fallen palm tree",
+      "A jellyfish sting"
+    ],
+    "correctAnswer": "Broken glass",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Chandler Brooks",
+      "Beach Trip",
+      "Broken Glass",
+      "Child Injured",
+      "Safety Oversight",
+      "Charter Guest"
+    ]
+  },
+  {
+    "id": "tv_43167",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, what was the full name of the cameraman who helped save Ashton Pienaar after he went overboard?",
+    "answers": [
+      "Andy Cohen",
+      "Chris Goutman",
+      "Scott Bryce",
+      "Brent Freeburg"
+    ],
+    "correctAnswer": "Brent Freeburg",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Rescue",
+      "Brent Freeburg",
+      "Ashton Pienaar",
+      "Cameraman",
+      "Tow Line",
+      "Overboard Rescue",
+      "2018 Emergency"
+    ]
+  },
+  {
+    "id": "tv_43168",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 6, which deckhand first alerted Captain Lee when Ashton Pienaar fell overboard?",
+    "answers": [
+      "Tyler Rowland",
+      "Ross Inia",
+      "Rhylee Gerber",
+      "Chandler Brooks"
+    ],
+    "correctAnswer": "Rhylee Gerber",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Below Deck Series",
+      "Bravo Network",
+      "Season 6 (2018–2019)",
+      "Yacht: My Seanna",
+      "Tahiti",
+      "Written Quiz",
+      "Section: Audit Rescue",
+      "Rhylee Gerber",
+      "Ashton Pienaar",
+      "Emergency Alert",
+      "Captain Lee",
+      "Rescue Team",
+      "Overboard Incident"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==66||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(27981+i)||q.topic!=='Below Deck'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(27981+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<14||
 new Set(q.tags).size!==q.tags.length||q.dailyEligible!==true||
