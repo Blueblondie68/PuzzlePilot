@@ -1,8 +1,14 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 491: Bellbird (1967–1977)
-// 42 one-pack questions only: this programme has no planned extra packs.
+// 61 audited questions: 42 originals + 19 supported plot, cast, production and legacy additions.
+// Original IDs tv_27749–tv_27790; audit IDs tv_43087–tv_43105.
+// This is a single-programme pack; no further Bellbird parts are planned.
 // Accessible historical facts, prominent characters, landmark stories, and film/legacy.
 // IDs tv_27749–tv_27790; after Pack 490 ends tv_27748.
 // Avoid disputed episode totals and conflicting final transmission dates.
+// Audit cross-check 22 Nov 2026: Australian Screen / NFSA, Australian Dictionary
+// of Biography, Television.AU, Australian Women’s Register, Memorable TV,
+// and the Country Town release information. Conflicting finale dates omitted.
+// All questions identify the programme; original IDs and answers preserved.
 // Sources reviewed 18 November 2026:
 // https://aso.gov.au/titles/tv/bellbird/notes/
 // https://aso.gov.au/titles/tv/bellbird/clip1/
@@ -186,7 +192,7 @@ const questions = [
     "id": "tv_27754",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Which long-running ABC radio serial also portrayed life in rural Australia?",
+    "question": "In Bellbird, which long-running ABC radio serial also portrayed life in rural Australia?",
     "answers": [
       "Blue Hills",
       "The Archers",
@@ -560,7 +566,7 @@ const questions = [
     "id": "tv_27765",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Which actress portrayed local librarian Lori Chandler?",
+    "question": "In Bellbird, which actress portrayed local librarian Lori Chandler?",
     "answers": [
       "Sheila Florance",
       "Anne Charleston",
@@ -594,7 +600,7 @@ const questions = [
     "id": "tv_27766",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "What profession did Lori Chandler have in the opening storyline?",
+    "question": "In Bellbird, what profession did Lori Chandler have in the opening storyline?",
     "answers": [
       "Librarian",
       "Surgeon",
@@ -662,7 +668,7 @@ const questions = [
     "id": "tv_27768",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Which actor played Charlie Cousens in the original cast?",
+    "question": "In Bellbird, which actor played Charlie Cousens in the original cast?",
     "answers": [
       "Terry Norris",
       "Peter Aanensen",
@@ -696,7 +702,7 @@ const questions = [
     "id": "tv_27769",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "From which structure did Charlie Cousens fall in the programme's most famous death scene?",
+    "question": "In Bellbird, from which structure did Charlie Cousens fall in the programme's most famous death scene?",
     "answers": [
       "A church tower",
       "A railway bridge",
@@ -730,7 +736,7 @@ const questions = [
     "id": "tv_27770",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Which musical role took Robin Ramsay to Japan after leaving the series?",
+    "question": "In Bellbird, which musical role took Robin Ramsay to Japan after leaving the series?",
     "answers": [
       "Fagin in Oliver!",
       "Tevye in Fiddler on the Roof",
@@ -764,7 +770,7 @@ const questions = [
     "id": "tv_27771",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "How did viewers react to Charlie Cousens's shocking death?",
+    "question": "In Bellbird, how did viewers react to Charlie Cousens's shocking death?",
     "answers": [
       "They organised a national holiday",
       "They sent large numbers of calls and letters",
@@ -798,7 +804,7 @@ const questions = [
     "id": "tv_27772",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Who played the scheming businessman John Quinney?",
+    "question": "In Bellbird, who played the scheming businessman John Quinney?",
     "answers": [
       "Dennis Miller",
       "Carl Bleazby",
@@ -832,7 +838,7 @@ const questions = [
     "id": "tv_27773",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Which actor portrayed local garage owner Joe Turner?",
+    "question": "In Bellbird, which actor portrayed local garage owner Joe Turner?",
     "answers": [
       "Tom Oliver",
       "Bruce Barry",
@@ -866,7 +872,7 @@ const questions = [
     "id": "tv_27774",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "What type of business did Joe Turner operate?",
+    "question": "In Bellbird, what type of business did Joe Turner operate?",
     "answers": [
       "A garage",
       "A bookshop",
@@ -900,7 +906,7 @@ const questions = [
     "id": "tv_27775",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Who was Joe Turner's wife and ran a boarding house?",
+    "question": "In Bellbird, who was Joe Turner's wife and ran a boarding house?",
     "answers": [
       "Maggie Emerson",
       "Olive Turner",
@@ -934,7 +940,7 @@ const questions = [
     "id": "tv_27776",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Which actress played Olive Turner?",
+    "question": "In Bellbird, which actress played Olive Turner?",
     "answers": [
       "Carmel Millhouse",
       "Gabrielle Hartley",
@@ -1035,7 +1041,7 @@ const questions = [
     "id": "tv_27779",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Which actress played the long-running character Rhoda Lang?",
+    "question": "In Bellbird, which actress played the long-running character Rhoda Lang?",
     "answers": [
       "Elspeth Ballantyne",
       "Lynette Curran",
@@ -1069,7 +1075,7 @@ const questions = [
     "id": "tv_27780",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "What accident killed Rhoda Lang during the 1970s?",
+    "question": "In Bellbird, what accident killed Rhoda Lang during the 1970s?",
     "answers": [
       "A house fire",
       "A boating collision",
@@ -1103,7 +1109,7 @@ const questions = [
     "id": "tv_27781",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Which actor portrayed Colonel Jim Emerson?",
+    "question": "In Bellbird, which actor portrayed Colonel Jim Emerson?",
     "answers": [
       "Maurie Fields",
       "Tom Oliver",
@@ -1137,7 +1143,7 @@ const questions = [
     "id": "tv_27782",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "What bereavement struck Jim and Maggie Emerson during a surviving 1970 episode?",
+    "question": "In Bellbird, what bereavement struck Jim and Maggie Emerson during a surviving 1970 episode?",
     "answers": [
       "The death of their newborn baby",
       "The death of Jim's father at sea",
@@ -1273,7 +1279,7 @@ const questions = [
     "id": "tv_27786",
     "category": "TV",
     "topic": "Bellbird",
-    "question": "Which later Australian series featured Elspeth Ballantyne as prison officer Meg Morris?",
+    "question": "In Bellbird, which later Australian series featured Elspeth Ballantyne as prison officer Meg Morris?",
     "answers": [
       "Prisoner",
       "Neighbours",
@@ -1440,9 +1446,641 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==42||new Set(questions.map(q=>q.id)).size!==questions.length||
+// Appended independently checked audit questions, original 42 IDs unaffected.
+const AUDIT_ORIGINAL_COUNT=42;
+const AUDIT_FIRST_ID=43087;
+const auditQuestions=[
+  {
+    "id": "tv_43087",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, what caused the death of farm girl Hagar Grossark?",
+    "answers": [
+      "A bushfire swept through her home",
+      "She drowned during a flood",
+      "She was struck by a train",
+      "She fell from a wheat silo"
+    ],
+    "correctAnswer": "She drowned during a flood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Hagar Grossark",
+      "Flood",
+      "Drowning",
+      "Rural Tragedy",
+      "Australian Soap",
+      "Character Death",
+      "1970s Plot"
+    ]
+  },
+  {
+    "id": "tv_43088",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which Indigenous Australian character worked alongside solicitor Gilbert Lang?",
+    "answers": [
+      "Gerry Walters",
+      "Joe Turner",
+      "Charlie Cousens",
+      "Michael Foley"
+    ],
+    "correctAnswer": "Gerry Walters",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Character",
+      "Gerry Walters",
+      "Gilbert Lang",
+      "Legal Work",
+      "Indigenous Character",
+      "Representation",
+      "1971 Story",
+      "Country Community"
+    ]
+  },
+  {
+    "id": "tv_43089",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which Indigenous Australian actor portrayed Gerry Walters?",
+    "answers": [
+      "Ian Smith",
+      "Terry Norris",
+      "Alan Hopgood",
+      "Bob Maza"
+    ],
+    "correctAnswer": "Bob Maza",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Bob Maza",
+      "Gerry Walters",
+      "1971 Cast",
+      "Indigenous Actor",
+      "Representation",
+      "Drama Performer"
+    ]
+  },
+  {
+    "id": "tv_43090",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which relationship explored interracial marriage in the programme?",
+    "answers": [
+      "Joe Turner and Marge Bacon",
+      "Charlie Cousens and Lori Chandler",
+      "Gerry Walters and his white wife",
+      "Jim Bacon and Rhoda Lang"
+    ],
+    "correctAnswer": "Gerry Walters and his white wife",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Gerry Walters",
+      "Interracial Marriage",
+      "White Wife",
+      "1971 Plot",
+      "Social Issues",
+      "Regional Australia",
+      "Diversity"
+    ]
+  },
+  {
+    "id": "tv_43091",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which actor played solicitor Gilbert Lang?",
+    "answers": [
+      "Peter Aanensen",
+      "Keith Eden",
+      "Terry Norris",
+      "Bruce Barry"
+    ],
+    "correctAnswer": "Keith Eden",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Keith Eden",
+      "Gilbert Lang",
+      "Solicitor",
+      "Original Cast",
+      "1967 To 1970",
+      "Legal Character",
+      "Actor"
+    ]
+  },
+  {
+    "id": "tv_43092",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which actress portrayed Rose Lang during the series?",
+    "answers": [
+      "Dorothy Bradley",
+      "Elspeth Ballantyne",
+      "Lynette Curran",
+      "Carmel Millhouse"
+    ],
+    "correctAnswer": "Dorothy Bradley",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Dorothy Bradley",
+      "Rose Lang",
+      "Lang Family",
+      "1967 To 1974",
+      "Long Running Role",
+      "Australian Actress",
+      "Soap Cast"
+    ]
+  },
+  {
+    "id": "tv_43093",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which local police officer was portrayed by Dennis Miller?",
+    "answers": [
+      "Russell Ashwood",
+      "Joe Turner",
+      "Jim Bacon",
+      "Constable Des Davies"
+    ],
+    "correctAnswer": "Constable Des Davies",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Character",
+      "Dennis Miller",
+      "Constable Des Davies",
+      "1968 To 1974",
+      "Town Police",
+      "Actor",
+      "Character",
+      "Rural Drama"
+    ]
+  },
+  {
+    "id": "tv_43094",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which actress played Fiona Davies, the wife of Constable Des Davies?",
+    "answers": [
+      "Moira Carleton",
+      "Jill Perryman",
+      "Gerda Nicolson",
+      "Julia Blake"
+    ],
+    "correctAnswer": "Gerda Nicolson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Gerda Nicolson",
+      "Fiona Davies",
+      "Constable Des Davies",
+      "1968 To 1974",
+      "Police Family",
+      "Actress",
+      "Cast History"
+    ]
+  },
+  {
+    "id": "tv_43095",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which future Neighbours actor portrayed Russell Ashwood?",
+    "answers": [
+      "Tom Oliver",
+      "Ian Smith",
+      "Terry Norris",
+      "Maurie Fields"
+    ],
+    "correctAnswer": "Ian Smith",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Ian Smith",
+      "Russell Ashwood",
+      "Constable",
+      "Harold Bishop",
+      "Neighbours",
+      "1970s Cast",
+      "Career Links"
+    ]
+  },
+  {
+    "id": "tv_43096",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which actress portrayed Kate Ashwood in the final years?",
+    "answers": [
+      "Anne Phelan",
+      "Anne Charleston",
+      "Lynette Curran",
+      "Sheila Florance"
+    ],
+    "correctAnswer": "Anne Phelan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Anne Phelan",
+      "Kate Ashwood",
+      "1974 To 1977",
+      "Australian Actress",
+      "Late Cast",
+      "Ashwood Family",
+      "Character"
+    ]
+  },
+  {
+    "id": "tv_43097",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which playwright and actor appeared as Matthew Reed from 1972 onwards?",
+    "answers": [
+      "Gary Gray",
+      "Carl Bleazby",
+      "Robin Ramsay",
+      "Alan Hopgood"
+    ],
+    "correctAnswer": "Alan Hopgood",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Alan Hopgood",
+      "Matthew Reed",
+      "1972 To 1977",
+      "Australian Playwright",
+      "Original Story Team",
+      "Later Cast",
+      "Actor"
+    ]
+  },
+  {
+    "id": "tv_43098",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, who drafted the short initial treatment that Barbara Vernon developed into Bellbird?",
+    "answers": [
+      "James Davern",
+      "Oscar Whitbread",
+      "Colin Free",
+      "Ken Watts"
+    ],
+    "correctAnswer": "Colin Free",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Colin Free",
+      "Initial Treatment",
+      "Barbara Vernon",
+      "Television Development",
+      "ABC",
+      "Story Editor",
+      "Series Origin"
+    ]
+  },
+  {
+    "id": "tv_43099",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, who was the programme's first executive producer?",
+    "answers": [
+      "James Davern",
+      "Brett Porter",
+      "Ken Watts",
+      "Peter Maxwell"
+    ],
+    "correctAnswer": "Brett Porter",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Brett Porter",
+      "Executive Producer",
+      "First Producer",
+      "Original Crew",
+      "ABC",
+      "1967 Launch",
+      "Australian Production"
+    ]
+  },
+  {
+    "id": "tv_43100",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, how were the four early weekly episodes recorded in the studio?",
+    "answers": [
+      "Together on the fifth working day",
+      "In one live broadcast each Sunday",
+      "Over four separate months",
+      "In outdoor filming only"
+    ],
+    "correctAnswer": "Together on the fifth working day",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Four Episodes",
+      "Five Day Production Cycle",
+      "Technical Rehearsal",
+      "ABC Elsternwick",
+      "Recording",
+      "Serial Production",
+      "Weekday Format"
+    ]
+  },
+  {
+    "id": "tv_43101",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, what was the title of Barbara Vernon's 1970 novel based on the series?",
+    "answers": [
+      "Blue Hills Forever",
+      "Country Town at Christmas",
+      "A Day in Oakdale",
+      "Bellbird: The Story of a Country Town"
+    ],
+    "correctAnswer": "Bellbird: The Story of a Country Town",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Books",
+      "Barbara Vernon",
+      "1970 Book",
+      "Bellbird Novel",
+      "Story Of A Country Town",
+      "Ure Smith",
+      "Tie In Fiction",
+      "Australian Literature"
+    ]
+  },
+  {
+    "id": "tv_43102",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, which further Bellbird book did Barbara Vernon publish in 1972?",
+    "answers": [
+      "The Last Days of Bellbird",
+      "The River at Bellbird",
+      "A Big Day at Bellbird",
+      "Goodbye to Country Town"
+    ],
+    "correctAnswer": "A Big Day at Bellbird",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Books",
+      "Barbara Vernon",
+      "1972 Novel",
+      "A Big Day At Bellbird",
+      "Australian Books",
+      "Country Town",
+      "Second Book",
+      "Publishing"
+    ]
+  },
+  {
+    "id": "tv_43103",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, who directed the 1971 Bellbird film Country Town?",
+    "answers": [
+      "James Davern",
+      "Peter Maxwell",
+      "Oscar Whitbread",
+      "Ken Hannam"
+    ],
+    "correctAnswer": "Peter Maxwell",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Film",
+      "Country Town",
+      "Peter Maxwell",
+      "1971 Film",
+      "Director",
+      "Australian Cinema",
+      "Television Adaptation",
+      "Movie History"
+    ]
+  },
+  {
+    "id": "tv_43104",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, what was the name of the visiting reporter in the Country Town film?",
+    "answers": [
+      "Philip Henderson",
+      "Michael Foley",
+      "Gerry Walters",
+      "Colin Free"
+    ],
+    "correctAnswer": "Philip Henderson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Film",
+      "Country Town",
+      "Philip Henderson",
+      "Reporter",
+      "1971 Movie",
+      "Drought",
+      "Bellbird Drama",
+      "Character"
+    ]
+  },
+  {
+    "id": "tv_43105",
+    "category": "TV",
+    "topic": "Bellbird",
+    "question": "In Bellbird, what community fundraising event did Bellbird residents organise in Country Town?",
+    "answers": [
+      "A cricket world cup",
+      "A television talent show",
+      "A Christmas parade",
+      "A gymkhana"
+    ],
+    "correctAnswer": "A gymkhana",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Programme: Bellbird",
+      "Bellbird (ABC)",
+      "Rural Soap Opera",
+      "Fictional Town",
+      "1967–1977 Run",
+      "Written Quiz",
+      "Section: Audit Film",
+      "Country Town",
+      "Fundraising Gymkhana",
+      "Drought",
+      "Local Community",
+      "1971 Film",
+      "Rural Sport",
+      "Feature Adaptation"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==61||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+String(27749+i)||q.topic!=='Bellbird'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(27749+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Bellbird'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
 q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length<15||
 new Set(q.tags).size!==q.tags.length||q.dailyEligible!==true||
