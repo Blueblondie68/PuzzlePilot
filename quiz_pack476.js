@@ -1,6 +1,6 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 476
 // BEING HUMAN (UK), complete BBC Three run, 2008 pilot and five regular series (2009-2013).
-// 93 varied original cast, characters, plot, production, episode and finale questions.
+// 117 audited cast, character, plot, awards and finale questions.
 // IDs tv_26281 to tv_26373; no overlap in mixed Packs 1–20.
 // Sources reviewed 17 November 2026:
 // https://www.tvmaze.com/shows/809/being-human/episodeguide
@@ -2985,11 +2985,58 @@ const questions=[
     "dailyEligible": true
   }
 ];
-const bad=questions.filter((q,i)=>q.id!=='tv_'+(26281+i)||q.category!=='TV'||q.topic!=='Being Human (UK)'||
+
+const AUDIT_ORIGINAL_COUNT=93;
+const AUDIT_FIRST_ID=42644;
+const auditFacts=`In which years was Being Human (UK) nominated for BAFTA's Drama Series award?|2010 and 2011|2008 and 2009|2011 and 2012|2012 and 2013|Medium|BAFTA TV|Drama Series Nomination|2010|2011|British Academy|BBC Three|Programme Awards
+Which television series won the 2010 BAFTA Drama Series award ahead of Being Human (UK)?|Misfits|Sherlock|Spooks|The Street|Medium|2010 BAFTA|Drama Series Award|Misfits|Winner|Nomination Outcome|British Academy|BBC Three
+Which series won BAFTA's Drama Series category in 2011 when Being Human (UK) was nominated?|Sherlock|Misfits|Downton Abbey|Spooks|Medium|2011 BAFTA|Drama Series Award|Sherlock|Winner|Nomination Outcome|British Academy|BBC Three
+Who received a 2010 BAFTA music nomination for his work on Being Human (UK)?|Richard Wells|Murray Gold|Vince Pope|Martin Phipps|Medium|Richard Wells|BAFTA TV Craft|2010 Nominee|Original Music|Series Score|Music Composer|Soundtrack
+Which BAFTA TV Craft category nominated the soundtrack of Being Human (UK) in 2010?|Original Music|Sound Fiction|Original Title Music|Sound Documentary|Medium|2010 BAFTA|Original Music|Richard Wells|Soundtrack|Television Craft|British Academy|Music Nomination
+What did Being Human (UK) win at the 2011 TV Choice Awards?|Best Drama Series|Best New Drama|Best Comedy|Best Reality Show|Medium|2011 TV Choice|Best Drama Series|Award Winner|Audience Vote|Awards Ceremony|2011 British Winners|Programme Honours
+In which three years did Being Human (UK) win a Writers' Guild of Great Britain television drama award?|2009, 2010 and 2012|2008, 2009 and 2011|2010, 2011 and 2013|2009, 2011 and 2013|Medium|Writers Guild Great Britain|2009 Award|2010 Award|2012 Award|TV Drama Series|Scriptwriting Prize|Toby Whithouse
+Which writer of Being Human (UK) later created Derry Girls?|Lisa McGee|Sally Wainwright|Abi Morgan|Sarah Phelps|Medium|Lisa McGee|2012 Writers Guild|Derry Girls|Television Writer|Programme Scripts|Awards Credit|BBC Drama
+Which editor of Being Human (UK) won a 2009 Royal Television Society craft award?|Phil Hookway|Colin Teague|Richard Wells|Rob Pursey|Medium|Phil Hookway|2009 RTS Craft Award|Drama Editing|Series One|BBC Three|Editing Winner|Post Production
+Which company won the 2009 RTS Special Effects prize for Being Human (UK)?|Millennium FX|The Mill|Framestore|Double Negative|Medium|Millennium FX|RTS Craft Awards|2009 Winner|Special Effects|Werewolf Make Up|BBC Three|Practical FX
+On what date did the Being Human (UK) pilot first air?|18 February 2008|25 January 2009|10 January 2010|10 March 2013|Medium|18 February 2008|Pilot Broadcast|BBC Three|Early Cast|Original Pilot|Television Date|Programme History
+When did Being Human (UK) begin its first full series on BBC Three?|25 January 2009|18 February 2008|10 January 2010|23 January 2011|Medium|25 January 2009|Series One|Full Series Premiere|BBC Three|Commission|Television Date|Original Trio
+When was the last regular episode of Being Human (UK) broadcast?|10 March 2013|3 February 2013|25 March 2012|13 March 2011|Medium|10 March 2013|The Last Broadcast|Final Episode|Series Five|BBC Three|Programme Ending|Broadcast Date
+Who directed the original pilot of Being Human (UK)?|Declan O'Dwyer|Colin Teague|Daniel O'Hara|Paul Seed|Medium|Declan ODwyer|2008 Pilot|Director|BBC Three|Pilot Production|Original Cast|Behind Scenes
+Who portrayed supernatural researcher Lucy Jaggat in Being Human (UK)?|Lyndsey Marshal|Sinéad Keenan|Lenora Crichlow|Annabel Scholey|Medium|Lyndsey Marshal|Lucy Jaggat|Series Two|Research Scientist|Supporting Cast|Supernatural Study|Actor
+Which actor played former priest Patrick Kemp in Being Human (UK)?|Donald Sumpter|Phil Davis|Jason Watkins|Michael Socha|Medium|Donald Sumpter|Patrick Kemp|Series Two|Former Priest|Antagonist|Supporting Cast|Actor
+What happened to Nina Pickering before the fourth series of Being Human (UK)?|She was killed by vampires off-screen|She moved abroad with George|She became one of the Old Ones|She started working in another hospital|Medium|Nina Pickering|Series Four|Off Screen Death|Vampires|George Sands|Eve Sands|Story Change
+Which paper animal appeared in the last shot of Being Human (UK)?|An origami wolf|An origami crane|An origami cat|An origami swan|Medium|Origami Wolf|The Last Broadcast|Final Shot|Devil Illusion|2013 Finale|Ambiguous Ending|Captain Hatch
+What did Toby Whithouse deliberately leave unresolved in the ending of Being Human (UK)?|Whether the trio escaped the Devil's illusion|Whether Mitchell became human again|Whether George had survived Series Four|Whether the programme was set in Germany|Medium|Toby Whithouse|Ambiguous Finale|Devil Illusion|Hal Tom Alex|Creator Interview|2013 Ending|Open Interpretation
+What extra content was promised for the final-series DVD of Being Human (UK)?|An additional scene set roughly a week later|An alternative pilot with a new cast|A whole episode set in Purgatory|A documentary on animal transformation|Medium|DVD Epilogue|Toby Whithouse|Final Scene|Ending Clarification|One Week Later|2013 DVD|Bonus Content
+Which supernatural species was Christa in the Being Human (UK) web spin-off Becoming Human?|A werewolf|A ghost|A vampire|A demon|Medium|Becoming Human|Christa Stammers|Werewolf|Adam Jacobs|2011 Web Series|School Story|Spin Off Cast
+What kind of supernatural being was Matt in the Being Human (UK) spin-off Becoming Human?|A ghost|A werewolf|A vampire|A witch|Medium|Becoming Human|Matt Bolton|Ghost|Adam Jacobs|Christa Stammers|School Mystery|2011 Web Series
+Which actor besides Russell Tovey returned from the Being Human (UK) pilot in the same role?|Dylan Brown|Guy Flanagan|Adrian Lester|Andrea Riseborough|Hard|Dylan Brown|Seth|2008 Pilot|2009 Series|Pilot Recasting|Russell Tovey|Supporting Cast
+Which American cable channel launched a North American remake of Being Human (UK) in 2011?|Syfy|HBO|Showtime|The CW|Medium|Syfy|American Remake|2011 Premiere|International Adaptation|US Version|Original British Drama|Television Legacy`;
+const commonAuditTags=['Television','British Television','Programme: Being Human (UK)','Being Human (British series)',
+  'BBC Three','Supernatural Drama','2008 Pilot To 2013 Finale','Written Questions'];
+const auditQuestions=auditFacts.trim().split('\n').map((line,i)=>{
+ const p=line.split('|').map(v=>v.trim());
+ if(p.length!==13)throw Error('Invalid audit question '+i+' fields '+p.length);
+ const [question,correctAnswer,wrong1,wrong2,wrong3,difficulty,...specificTags]=p;
+ const answers=[wrong1,wrong2,wrong3];answers.splice((AUDIT_ORIGINAL_COUNT+i)%4,0,correctAnswer);
+ const tags=[...new Map([...commonAuditTags,correctAnswer,...specificTags].map(t=>[t.toLowerCase(),t])).values()];
+ return {id:'tv_'+String(AUDIT_FIRST_ID+i),category:'TV',topic:'Being Human (UK)',
+   question,answers,correctAnswer,difficulty,tags,dailyEligible:true};
+});
+for(const q of questions){
+ if(!q.question.includes('Being Human')){
+  q.question=q.question.startsWith('In which ')
+    ? 'In Being Human (UK), which '+q.question.slice(9)
+    : 'In Being Human (UK), '+q.question[0].toLowerCase()+q.question.slice(1);
+ }
+}
+questions.push(...auditQuestions);
+
+const bad=questions.filter((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(26281+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.category!=='TV'||q.topic!=='Being Human (UK)'||
  !Array.isArray(q.answers)||q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
  q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length<14||
  new Set(q.tags).size!==q.tags.length||!q.dailyEligible||!['Easy','Medium','Hard'].includes(q.difficulty));
-if(questions.length!==93||bad.length||
+if(questions.length!==117||bad.length||
  new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length){
  throw Error('Pack 476 validation failed');
