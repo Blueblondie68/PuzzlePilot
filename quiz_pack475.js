@@ -1,6 +1,6 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 475
 // Bracken (RTÉ, 1980–1982), all 12 episodes / two series.
-// 33 distinct verified cast, production, chronology, setting and storyline questions.
+// 45 distinct verified cast, production, chronology, setting and storyline questions.
 // IDs tv_26248–tv_26280; no mixed Packs 1–20 overlap.
 // Sources (accessed 17 November 2026):
 // https://www.farmersjournal.ie/entertainment/l2/classic-tv-shows-we-d-all-watch-until-the-cows-come-home-892011
@@ -1035,9 +1035,40 @@ const questions=[
     "dailyEligible": true
   }
 ];
-if(questions.length!==33||new Set(questions.map(q=>q.id)).size!==33||
-  new Set(questions.map(q=>q.question.toLowerCase())).size!==33||
-  questions.some((q,i)=>q.id!=='tv_'+String(26248+i)||q.category!=='TV'||q.topic!=='Bracken'||
+
+// Focused final Bracken audit: central farm conflict, conclusion, Glenroe transition,
+// and independently verified transmission/filming dates. Existing awards kept intact.
+const AUDIT_ORIGINAL_COUNT=33;
+const AUDIT_FIRST_ID=42632;
+const auditFacts = `Which powerful local landowner was Pat Barry's main rival in Bracken?|Edward Daly|Peter Thompson|Barney Kenny|Miley Byrne|Medium|Edward Daly|Niall Toibin|Landowner Rivalry|Farm Dispute|County Wicklow|Central Conflict|Cattle Baron
+Which member of the wealthy Daly family became Pat Barry's romantic partner and later wife in Bracken?|Louise Daly|Jill Daly|Emma Byrne|Maggie Riordan|Medium|Louise Daly|Fiona Victory|Pat Barry|Romantic Plot|Daly Family|Marriage|Story Ending
+Whose farm did Pat Barry ultimately purchase in Bracken before the characters moved to Glenroe?|Dinny and Miley Byrne's|Edward Daly's|Peter Thompson's|Barney Kenny's|Medium|Dinny Byrne|Miley Byrne|Farm Purchase|Pat Barry|Series Ending|Glenroe Connection|Land Ownership
+Which event was the first meeting point for Dinny and Miley Byrne when they appeared in Bracken?|Pat Barry's father's funeral|The village harvest festival|A farmers' livestock auction|Louise Daly's wedding|Medium|Pat Barry Father|Funeral Mourners|Dinny Byrne|Miley Byrne|First Appearances|Series Premiere|Character Introduction
+What new type of farming did Dinny and Miley Byrne pursue after leaving Bracken for Glenroe?|Market gardening|Dairy farming|Vineyard cultivation|Pig breeding|Medium|Market Gardening|Dinny Byrne|Miley Byrne|Glenroe|Agriculture|Spin Off Transition|New Farm
+Which 1983 RTÉ drama followed characters originally introduced in Bracken?|Glenroe|Fair City|The Clinic|Ballykissangel|Easy|Glenroe|1983 Premiere|Dinny Byrne|Miley Byrne|RTÉ Spin Off|Irish Television|Programme Legacy
+Which style of storytelling did creator Wesley Burrowes compare Bracken to?|A western|A detective thriller|A courtroom drama|A spy adventure|Medium|Wesley Burrowes|Western|Farm Conflict|Rural Drama|Creative Inspiration|Writer Commentary|Series Concept
+Why did the makers of Bracken choose not to continue with a third series?|Gabriel Byrne moved on to film work|The main filming location was demolished|RTÉ lost its national licence|The programme was bought by the BBC|Medium|Gabriel Byrne|Film Career|Series Conclusion|Two Series|Cast Availability|Production Change|1982 Finale
+On which date was Bracken first broadcast by RTÉ?|6 January 1980|12 January 1982|6 November 1979|11 February 1982|Medium|6 January 1980|RTÉ One|Premiere Date|First Series|Irish TV History|Initial Broadcast|Programme Launch
+On which date did the final episode of Bracken air on RTÉ?|11 February 1982|6 January 1980|11 December 1981|21 February 1982|Medium|11 February 1982|RTÉ One|Final Broadcast|Series Two|Irish TV History|Episode Twelve|Programme Ending
+Which months of story time did Bracken's second series cover despite airing in 1982?|December 1979 to May 1980|January to June 1982|June to November 1979|January to June 1980|Medium|Series Two|December 1979|May 1980|Story Timeline|1982 Broadcast|Six Monthly Episodes|Wicklow Drama
+In which year were the six episodes of Bracken's second series filmed before their 1982 broadcast?|1981|1980|1982|1979|Medium|1981 Filming|Series Two|RTÉ Production|Broadcast Delay|Gabriel Byrne|Irish Television|Production Timeline`;
+const auditTags=['Television','Irish Television','Programme: Bracken','Bracken',
+  'RTÉ Television','1980s Television','Rural Drama','Written Questions'];
+const auditQuestions=auditFacts.trim().split('\n').map((line,i)=>{
+  const fields=line.split('|').map(x=>x.trim());
+  if(fields.length!==13)throw Error('Bracken audit expected 13 fields at row '+i);
+  const [question,correctAnswer,wrong1,wrong2,wrong3,difficulty,...specificTags]=fields;
+  const answers=[wrong1,wrong2,wrong3];
+  answers.splice((AUDIT_ORIGINAL_COUNT+i)%4,0,correctAnswer);
+  const tags=[...new Map([...auditTags,correctAnswer,...specificTags].map(t=>[t.toLowerCase(),t])).values()];
+  return {id:'tv_'+String(AUDIT_FIRST_ID+i),category:'TV',topic:'Bracken',
+    question,answers,correctAnswer,difficulty,tags,dailyEligible:true};
+});
+questions.push(...auditQuestions);
+
+if(questions.length!==45||new Set(questions.map(q=>q.id)).size!==45||
+  new Set(questions.map(q=>q.question.toLowerCase())).size!==45||
+  questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(26248+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.category!=='TV'||q.topic!=='Bracken'||
   !Array.isArray(q.answers)||q.answers.length!==4||
   new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
   q.answers.filter(a=>a===q.correctAnswer).length!==1||
