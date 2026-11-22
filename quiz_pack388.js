@@ -8,51 +8,51 @@
 
  const FIRST_ID = 20840;
  const PROGRAMME = 'Jonathan Creek';
- const commonTags = ['television', 'British TV', 'BBC', PROGRAMME, 'David Renwick', 'mystery drama'];
+ const commonTags = ['Television','British Television','BBC','BBC One','Crime Mystery','Mystery Drama',PROGRAMME,'Programme: '+PROGRAMME,'David Renwick'];
 
  // Each row contains: question | correct answer | three distractors | difficulty | seven question-specific tags.
  const rows = [
    // Series 3, episode 1 - The Curious Tale of Mr Spearfish
-   `In The Curious Tale of Mr Spearfish, who believes he has sold his soul to the devil?|Lenny Spearfish|Saul Bechenstein|Jeremy Sangster|Adam Klaus|Easy|1999|series 3|The Curious Tale of Mr Spearfish|Lenny Spearfish|devil pact|supernatural claim|Andrew Tiernan`,
+   `In The Curious Tale of Mr Spearfish, who believes he has sold his soul to the devil?|Lenny Spearfish|Saul Bechtenstein|Jeremy Sangster|Adam Klaus|Easy|1999|series 3|The Curious Tale of Mr Spearfish|Lenny Spearfish|devil pact|supernatural claim|Andrew Tiernan`,
    `What is the first name of Lenny Spearfish's wife in Jonathan Creek?|Alice|Sadie|Anthea|Marion|Easy|1999|series 3|The Curious Tale of Mr Spearfish|Alice Spearfish|Lenny Spearfish|marriage|Rachel Power`,
    `What does Lenny unexpectedly dig up in his garden after signing the devil's contract?|A box of antique jewels|A chest of gold coins|A Roman statue|A suitcase of banknotes|Easy|1999|series 3|The Curious Tale of Mr Spearfish|Lenny Spearfish|buried treasure|garden discovery|jewellery`,
    `Roughly how much are the jewels found in Lenny Spearfish's garden worth?|£1.3 million|£130,000|£3 million|£5 million|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Lenny Spearfish|buried jewels|sudden wealth|money`,
-   `Which couple host the dinner party where Jonathan and Maddy first hear Lenny's story?|Sadie and Saul Bechenstein|Alice and Lenny Spearfish|Delia and Andre Masson|Shirley and Robin Priest|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Sadie Bechenstein|Saul Bechenstein|dinner party|Jonathan and Maddy`,
+   `Which couple host the dinner party where Jonathan and Maddy first hear Lenny's story?|Sadie and Saul Bechtenstein|Alice and Lenny Spearfish|Delia and Andre Masson|Shirley and Robin Priest|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Sadie Bechtenstein|Saul Bechtenstein|dinner party|Jonathan and Maddy`,
    `What profession has Maddy falsely told her dinner-party hostess Jonathan practises?|Gynaecologist|Dentist|Veterinary surgeon|Psychiatrist|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Maddy Magellan|gynaecologist claim|false profession|dinner party joke`,
    `What does Lenny use instead of ink to sign the supposed contract with the devil?|His own blood|Red wine|Black paint|A fingerprint in soot|Easy|1999|series 3|The Curious Tale of Mr Spearfish|Lenny Spearfish|devil contract|occult shop|blood signature`,
    `What happens to Lenny and Alice's old house after the devil's contract is discarded?|It burns down|It is demolished for a road|It is flooded by a burst main|It is burgled and ransacked|Easy|1999|series 3|The Curious Tale of Mr Spearfish|Spearfish house|fire|devil contract|destroyed papers`,
-   `Who presents herself as Lenny Spearfish's investment adviser?|Anthea Spacey|Heidi Brayle|Mimi Tranter|Kathleen Gilmore|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Anthea Spacey|Adjoa Andoh|financial adviser|secret protection`,
+   `Who presents herself as Lenny Spearfish's investment adviser?|Anthea Spacey|Heidi Sayle|Mimi Tranter|Kathleen Gilmore|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Anthea Spacey|Adjoa Andoh|financial adviser|secret protection`,
    `Which actress plays Anthea Spacey in The Curious Tale of Mr Spearfish?|Adjoa Andoh|Maxine Peake|Rebecca Front|Gina Bellman|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Adjoa Andoh|Anthea Spacey|guest cast|investment adviser`,
    `Why does Lenny initially think gunshots cannot injure him?|He mistakes cigarette burns for bullet wounds|He is wearing invisible body armour|The gun contains blanks|He believes the shots only hit a mirror|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Lenny Spearfish|cigarette burns|shooting illusion|false invulnerability`,
    `What explains the marks on Lenny's wrists that Jonathan notices?|He had been handcuffed to a bed|He had been tied to a swimming-pool ladder|He wore an ill-fitting bracelet|He was caught in a car seat belt|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Lenny Spearfish|handcuffs|casino encounter|Jonathan deduction`,
    `Where is Lenny when a gunman approaches him and suddenly collapses?|Beside his swimming pool|In a casino lift|Outside a courtroom|At the dinner party|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Lenny Spearfish|gunman|swimming pool|apparent miracle`,
    `What is the apparent red birthmark on the gunman's face actually associated with?|A laser sight for a remote stun weapon|A hidden camera's recording light|A theatrical make-up mark|A reflected casino sign|Hard|1999|series 3|The Curious Tale of Mr Spearfish|gunman|laser sight|air taser|disappearing red mark`,
    `How is the gunman by Lenny's pool secretly incapacitated?|An electrically fired stun device|Poison in his drink|A concealed trapdoor|A tranquilliser in the pool water|Hard|1999|series 3|The Curious Tale of Mr Spearfish|gunman|swimming pool|remote stun weapon|secret protection`,
-   `Who is the real focus of the elaborate secret protection surrounding the Spearfish household?|Alice Spearfish|Lenny Spearfish|Sadie Bechenstein|Adam Klaus|Hard|1999|series 3|The Curious Tale of Mr Spearfish|Alice Spearfish|covert protection|family background|hidden parentage`,
+   `Who is the real focus of the elaborate secret protection surrounding the Spearfish household?|Alice Spearfish|Lenny Spearfish|Sadie Bechtenstein|Adam Klaus|Hard|1999|series 3|The Curious Tale of Mr Spearfish|Alice Spearfish|covert protection|family background|hidden parentage`,
    `What about Alice's family history helps Jonathan explain the extraordinary events?|Her biological father is a highly placed figure|Her mother once worked for the police|Her brother is a professional magician|Her grandfather ran the occult shop|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Alice Spearfish|unknown father|noble family|covert operation`,
    `What is Anthea trying to preserve when she arranges the supposed financial separation?|Lenny and Alice's marriage|Adam Klaus's French tour|Sadie's business partnership|Lenny's gambling membership|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Anthea Spacey|Alice and Lenny|marital reconciliation|wealth waiver`,
-   `Which hotel employee accuses Adam Klaus of indecent behaviour in court?|Marion Cretiss|Sadie Bechenstein|Philippa Farell|Heidi Brayle|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Adam Klaus|Marion Cretiss|Maxine Peake|court case`,
+   `Which hotel employee accuses Adam Klaus of indecent behaviour in court?|Marion Cretiss|Sadie Bechtenstein|Phillipa Farell|Heidi Sayle|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Adam Klaus|Marion Cretiss|Maxine Peake|court case`,
    `What unexpectedly boosts ticket sales for Adam Klaus's tour of France?|Publicity from his court scandal|A royal television performance|A free television magic special|A last-minute ticket price cut|Medium|1999|series 3|The Curious Tale of Mr Spearfish|Adam Klaus|French tour|court publicity|ticket sales`,
 
    // Series 3, episode 2 - The Eyes of Tiresias
    `What is the surname of the elderly widow whose dreams appear prophetic in The Eyes of Tiresias?|Panguitch|Masson|Brayle|Phillips|Medium|1999|series 3|The Eyes of Tiresias|Audrey Panguitch|prophetic dreams|elderly widow|Margery Mason`,
    `How old is Audrey Panguitch during The Eyes of Tiresias?|73|63|78|83|Medium|1999|series 3|The Eyes of Tiresias|Audrey Panguitch|seventy three|widow|premonitions`,
    `Who plays Audrey Panguitch in Jonathan Creek?|Margery Mason|Dinah Sheridan|Diana Weston|Hetty Baynes|Medium|1999|series 3|The Eyes of Tiresias|Margery Mason|Audrey Panguitch|guest actress|prophetic dreams`,
-   `How is Heidi Brayle related to Audrey Panguitch?|She is Audrey's niece|She is Audrey's sister|She is Audrey's daughter-in-law|She is Audrey's neighbour|Medium|1999|series 3|The Eyes of Tiresias|Heidi Brayle|Audrey Panguitch|niece|Rebecca Front`,
-   `What does Heidi Brayle arrange to use Jonathan's windmill for?|Filming scenes for a television drama|Storing stolen antiques|A wedding reception|A live stage-magic broadcast|Easy|1999|series 3|The Eyes of Tiresias|Heidi Brayle|Jonathan windmill|location manager|television filming`,
+   `How is Heidi Sayle related to Audrey Panguitch?|She is Audrey's niece|She is Audrey's sister|She is Audrey's daughter-in-law|She is Audrey's neighbour|Medium|1999|series 3|The Eyes of Tiresias|Heidi Sayle|Audrey Panguitch|niece|Rebecca Front`,
+   `What does Heidi Sayle arrange to use Jonathan's windmill for?|Filming scenes for a television drama|Storing stolen antiques|A wedding reception|A live stage-magic broadcast|Easy|1999|series 3|The Eyes of Tiresias|Heidi Sayle|Jonathan windmill|location manager|television filming`,
    `What animal is Audrey's pet named Tiresias?|A goldfish|A parrot|A cat|A tortoise|Easy|1999|series 3|The Eyes of Tiresias|Audrey Panguitch|Tiresias|goldfish|Greek mythology`,
    `In Greek mythology, which sort of figure inspires the name of Audrey's goldfish Tiresias?|A blind prophet|A sea god|A warrior king|A messenger of the gods|Medium|1999|series 3|The Eyes of Tiresias|Tiresias|Greek mythology|blind soothsayer|fish name`,
    `Who is the French businessman whose apparent murder Audrey foresees?|Andre Masson|Craig Downey|Otto Danzigger|Jeremy Sangster|Medium|1999|series 3|The Eyes of Tiresias|Andre Masson|French businessman|premonition|staged murder`,
    `What French word sounds like the repeated cry Audrey hears in her dream of Andre Masson?|Adieu|Merci|Bonjour|Pardon|Medium|1999|series 3|The Eyes of Tiresias|Andre Masson|French language|final words|auditory dream`,
-   `Whom does the evidence seem designed to incriminate in Andre Masson's death?|Craig Downey|Heidi Brayle|Gino|Josh|Medium|1999|series 3|The Eyes of Tiresias|Craig Downey|Andre Masson|framed suspect|contact lens`,
-   `Who is secretly having an affair with Craig Downey in The Eyes of Tiresias?|Delia Masson|Audrey Panguitch|Heidi Brayle|Rebecca Phillips|Medium|1999|series 3|The Eyes of Tiresias|Delia Masson|Craig Downey|affair|Andre Masson`,
+   `Whom does the evidence seem designed to incriminate in Andre Masson's death?|Craig Downey|Heidi Sayle|Gino|Josh|Medium|1999|series 3|The Eyes of Tiresias|Craig Downey|Andre Masson|framed suspect|contact lens`,
+   `Who is secretly having an affair with Craig Downey in The Eyes of Tiresias?|Delia Masson|Audrey Panguitch|Heidi Sayle|Rebecca Phillips|Medium|1999|series 3|The Eyes of Tiresias|Delia Masson|Craig Downey|affair|Andre Masson`,
    `What small item is planted near Andre Masson's body to implicate Craig Downey?|A contact lens|A cufflink|A cigarette end|A car key|Medium|1999|series 3|The Eyes of Tiresias|Craig Downey|Andre Masson|planted evidence|contact lens`,
    `How did Andre Masson actually die in The Eyes of Tiresias?|He killed himself and staged a murder|His wife poisoned him|Craig shot him through the window|A burglar stabbed him|Hard|1999|series 3|The Eyes of Tiresias|Andre Masson|suicide|framed murder|staged evidence`,
    `What recording is central to Andre Masson's elaborate plan to frame Craig?|A staged murder scene saved on a CD|A voicemail confession|An answering-machine warning|A radio news bulletin|Hard|1999|series 3|The Eyes of Tiresias|Andre Masson|CD recording|Craig Downey|fabricated murder`,
    `How does Audrey unknowingly hear the event that appears in her first prophetic dream?|A recorded scene plays as she sleeps|A television transmits it live|Her neighbour acts it out outside|A radio station broadcasts a police reconstruction|Hard|1999|series 3|The Eyes of Tiresias|Audrey Panguitch|CD player|sleeping dream|recorded murder`,
    `Where did a recording that helped create Audrey's supposed premonition surface after a burglary?|At a market stall|In a church collection box|Inside the filming crew's equipment|In a hotel safe|Medium|1999|series 3|The Eyes of Tiresias|stolen CDs|market stall|Audrey Panguitch|burglary`,
    `Where does Jonathan eventually recover the crucial compact disc in Audrey's house?|Under the goldfish bowl|Inside a hollow book|Behind a wall clock|In the fireplace grate|Hard|1999|series 3|The Eyes of Tiresias|goldfish bowl|hidden CD|Andre Masson|proof of recording`,
-   `Which woman dies in the car crash that seems to fulfil Audrey's second dream?|Rebecca Phillips|Delia Masson|Heidi Brayle|Marion Cretiss|Medium|1999|series 3|The Eyes of Tiresias|Rebecca Phillips|road accident|second dream|jaguar`,
+   `Which woman dies in the car crash that seems to fulfil Audrey's second dream?|Rebecca Phillips|Delia Masson|Heidi Sayle|Marion Cretiss|Medium|1999|series 3|The Eyes of Tiresias|Rebecca Phillips|road accident|second dream|jaguar`,
    `What creature is reflected by the one-eyed attacker in Audrey's frightening final dream?|A Cyclops|A Minotaur|A Centaur|A Griffin|Medium|1999|series 3|The Eyes of Tiresias|Cyclops|Greek mythology|Audrey nightmare|one eyed attacker`,
    `What explanation does Jonathan suggest for the stage magician seeming to predict live lottery numbers in The Eyes of Tiresias?|Using a slight delay in the television feed|Reading marked lottery balls|Swapping the lottery machine|Using a hidden radio under the stage|Medium|1999|series 3|The Eyes of Tiresias|stage magician|lottery|television delay|Jonathan deduction`,
 
@@ -60,8 +60,8 @@
    `Which professor claims to possess an alien skeleton in The Omega Man?|Lance Graumann|Andre Masson|Gerald Eastland|Duggie Dawson|Easy|1999|series 3|The Omega Man|Professor Lance Graumann|alien skeleton|UFO hoax|John Shrapnel`,
    `Who plays Professor Lance Graumann in The Omega Man?|John Shrapnel|Michael Brandon|Terence Hardiman|Griff Rhys Jones|Medium|1999|series 3|The Omega Man|John Shrapnel|Lance Graumann|guest actor|UFO investigator`,
    `Near which Mexican town was the supposedly extraterrestrial skeleton found?|Omega|Tijuana|Guadalajara|Merida|Medium|1999|series 3|The Omega Man|alien skeleton|Western Mexico|Omega|staged excavation`,
-   `Who is Professor Graumann's assistant in The Omega Man?|Philippa Farell|Anthea Spacey|Heidi Brayle|Samantha Clarke|Easy|1999|series 3|The Omega Man|Philippa Farell|Jane Booker|Lance Graumann|assistant`,
-   `What unusual ability does Philippa Farell claim to possess?|Receiving telepathic messages from aliens|Predicting lottery numbers|Seeing ghosts in photographs|Communicating with the dead through mirrors|Medium|1999|series 3|The Omega Man|Philippa Farell|alien channeler|telepathy|extraterrestrials`,
+   `Who is Professor Graumann's assistant in The Omega Man?|Phillipa Farell|Anthea Spacey|Heidi Sayle|Samantha Clarke|Easy|1999|series 3|The Omega Man|Phillipa Farell|Jane Booker|Lance Graumann|assistant`,
+   `What unusual ability does Phillipa Farell claim to possess?|Receiving telepathic messages from aliens|Predicting lottery numbers|Seeing ghosts in photographs|Communicating with the dead through mirrors|Medium|1999|series 3|The Omega Man|Phillipa Farell|alien channeler|telepathy|extraterrestrials`,
    `Which force confiscates Graumann's alleged alien remains?|The American military|The Royal Navy|French intelligence|A private museum security team|Easy|1999|series 3|The Omega Man|alien skeleton|United States military|seized evidence|secure transport`,
    `Who leads the military operation to seize the supposed alien skeleton?|Captain Frank Candy|Inspector Nathan Gallo|Sergeant Kribotnik|Professor Lance Graumann|Medium|1999|series 3|The Omega Man|Captain Frank Candy|Michael Brandon|military raid|alien specimen`,
    `Which actor plays Captain Frank Candy in The Omega Man?|Michael Brandon|John Shrapnel|Stuart Milligan|Mark Aiken|Medium|1999|series 3|The Omega Man|Michael Brandon|Captain Candy|guest actor|US military`,
@@ -80,7 +80,7 @@
 
    // Series 3, episode 4 - Ghost's Forge
    `What is Ghost's Forge, the site of a Jonathan Creek mystery?|An old country house in Norfolk|An abandoned theatre in London|A ruined Scottish castle|A converted mill in Cornwall|Easy|1999|series 3|Ghost's Forge|Norfolk|country house|murder investigation|setting`,
-   `Who brings the Ghost's Forge mystery to Jonathan's attention?|Mimi Tranter|Heidi Brayle|Anthea Spacey|Kathleen Gilmore|Medium|1999|series 3|Ghost's Forge|Mimi Tranter|former reporter|Ghosts Forge enquiry|Lysette Anthony`,
+   `Who brings the Ghost's Forge mystery to Jonathan's attention?|Mimi Tranter|Heidi Sayle|Anthea Spacey|Kathleen Gilmore|Medium|1999|series 3|Ghost's Forge|Mimi Tranter|former reporter|Ghosts Forge enquiry|Lysette Anthony`,
    `Which actress plays Maddy's former colleague Mimi Tranter in Ghost's Forge?|Lysette Anthony|Gina Bellman|Rebecca Front|Maxine Peake|Medium|1999|series 3|Ghost's Forge|Lysette Anthony|Mimi Tranter|guest actress|Maddy colleague`,
    `What is the name of Mimi's married boyfriend in Ghost's Forge?|Robin Priest|Duggie Dawson|Bill Carney|Jeremy Sangster|Easy|1999|series 3|Ghost's Forge|Robin Priest|Mimi Tranter|married lover|Mark Aiken`,
    `What is the first name of Robin Priest's wife in Ghost's Forge?|Shirley|Samantha|Cindy|Mimi|Medium|1999|series 3|Ghost's Forge|Shirley Priest|Robin Priest|marriage|Sara Stephens`,
@@ -94,14 +94,14 @@
    `What missing punctuation mark matters to Jonathan's interpretation of the name Ghosts Forge?|An apostrophe|A hyphen|A colon|A question mark|Medium|1999|series 3|Ghost's Forge|no apostrophe|house sign|wordplay clue|Jonathan deduction`,
    `Who actually died from the knife wound at Ghost's Forge?|Shirley's uncle Bill|Ezra Carr|Gerald Eastland|Duggie Dawson|Hard|1999|series 3|Ghost's Forge|uncle Bill|Shirley Priest|knife killing|mistaken victim`,
    `What happens to the real Ezra Carr during the attempted robbery at Ghost's Forge?|He falls downstairs and loses his memory|He escapes to France|He is locked in the attic for years|He deliberately fakes his own death|Hard|1999|series 3|Ghost's Forge|Ezra Carr|stairs fall|amnesia|robbery`,
-   `What identity does Shirley convince the amnesiac Ezra Carr is his own?|Robin Priest|Gerald Eastland|Bill Dawson|Saul Bechenstein|Hard|1999|series 3|Ghost's Forge|Shirley Priest|Robin Priest|Ezra Carr|invented identity`,
+   `What identity does Shirley convince the amnesiac Ezra Carr is his own?|Robin Priest|Gerald Eastland|Bill Dawson|Saul Bechtenstein|Hard|1999|series 3|Ghost's Forge|Shirley Priest|Robin Priest|Ezra Carr|invented identity`,
    `What clue first sparks Mimi's interest in investigating Ghost's Forge?|Robin says the house name in his sleep|A mysterious letter arrives at her newspaper|A portrait moves by itself|An anonymous phone caller recites a poem|Medium|1999|series 3|Ghost's Forge|Robin Priest|Mimi Tranter|nightmare|house name`,
    `How does Maddy make herself seem to disappear from a room in Ghost's Forge?|A doorway is concealed and a cupboard door remains visible|She crawls through a trapdoor under the carpet|She uses a mirror behind a screen|She escapes through a hidden chimney|Hard|1999|series 3|Ghost's Forge|Maddy Magellan|concealed doorway|cupboard trick|illusion`,
    `Which critic does Adam Klaus try to win over after a savage review in Ghost's Forge?|Duggie Dawson|Jeremy Sangster|Craig Downey|Vincent Rees|Medium|1999|series 3|Ghost's Forge|Adam Klaus|Duggie Dawson|Jim Bowen|theatre review`,
    `What does Maddy accidentally soak with a hosepipe outside her window at the end of Ghost's Forge?|A funeral procession|A wedding party|A group of carol singers|An election rally|Medium|1999|series 3|Ghost's Forge|Maddy Magellan|hosepipe|marching band|funeral procession`,
 
    // Series 3, episode 5 - Miracle in Crooked Lane
-   `Which former glamour model is at the centre of the mystery in Miracle in Crooked Lane?|Jacqui Jordan|Kathleen Gilmore|Christine Rees|Philippa Farell|Easy|1999|series 3|Miracle in Crooked Lane|Jacqui Jordan|former glamour model|shed explosion|Hetty Baynes`,
+   `Which former glamour model is at the centre of the mystery in Miracle in Crooked Lane?|Jacqui Jordan|Kathleen Gilmore|Christine Rees|Phillipa Farell|Easy|1999|series 3|Miracle in Crooked Lane|Jacqui Jordan|former glamour model|shed explosion|Hetty Baynes`,
    `What seriously injures Jacqui Jordan in Miracle in Crooked Lane?|An explosion in her garden shed|A fall from a church tower|A car accident on a country lane|A fire in a hotel kitchen|Easy|1999|series 3|Miracle in Crooked Lane|Jacqui Jordan|garden shed|explosion|hospital coma`,
    `Who is Jacqui Jordan's wealthy husband in Miracle in Crooked Lane?|Rupert Clifford-Wright|Vincent Rees|Jeff Goodman|Andre Masson|Medium|1999|series 3|Miracle in Crooked Lane|Rupert Clifford-Wright|Jacqui Jordan|husband|Benjamin Whitrow`,
    `Who insists she saw Jacqui walking towards church despite Jacqui being in a coma?|Kathleen Gilmore|Christine|Mimi Tranter|Alice Spearfish|Easy|1999|series 3|Miracle in Crooked Lane|Kathleen Gilmore|church sighting|Jacqui Jordan|Dinah Sheridan`,
@@ -126,7 +126,7 @@
    `Who is the murdered criminal whose body seems to have moved after death in The Three Gamblers?|Frank Geiger|Floyd Goodman|Joe Wheeler|Derek Spratley|Medium|2000|series 3|The Three Gamblers|Frank Geiger|drug dealer|moving corpse|John Bennett`,
    `Who shoots Frank Geiger repeatedly after a violent confrontation in The Three Gamblers?|Floyd Goodman|Joe Wheeler|Karen Blaine|Nathan Gallo|Medium|2000|series 3|The Three Gamblers|Floyd Goodman|Frank Geiger|six shots|Harry Peacock`,
    `What was Floyd Goodman's former profession before his criminal involvement?|Professional boxer|Stage magician|Police detective|Airline pilot|Medium|2000|series 3|The Three Gamblers|Floyd Goodman|former boxer|Karen Blaine|Harry Peacock`,
-   `What is the name of the woman who asks Jonathan to investigate the moving corpse?|Karen Blaine|Lizzie Gillespie|Heidi Brayle|Philippa Farell|Medium|2000|series 3|The Three Gamblers|Karen Blaine|Nina Sosanya|Floyd Goodman|murder enquiry`,
+   `What is the name of the woman who asks Jonathan to investigate the moving corpse?|Karen Blaine|Lizzie Gillespie|Heidi Sayle|Phillipa Farell|Medium|2000|series 3|The Three Gamblers|Karen Blaine|Nina Sosanya|Floyd Goodman|murder enquiry`,
    `What is the name of the remote farmhouse linked to Geiger's apparent return from death?|Frog Hollow|Ghosts Forge|Gallows Gate|Crooked Lane|Medium|2000|series 3|The Three Gamblers|Frog Hollow|farmhouse|Geiger corpse|flooded cellar`,
    `Where has Frank Geiger's body been hidden after his shooting?|A locked cellar|A sealed attic|A disused well|A boarded-up greenhouse|Easy|2000|series 3|The Three Gamblers|Frank Geiger|locked cellar|Frog Hollow|body disposal`,
    `How many times is Geiger shot in the head before his body is concealed?|Six|Two|Four|Eight|Medium|2000|series 3|The Three Gamblers|Frank Geiger|six bullets|Floyd Goodman|shooting`,
@@ -140,7 +140,7 @@
    `What book does Maddy give Jonathan for his birthday in The Three Gamblers?|Cards as Weapons|The Grave Digger|Challenging the Impossible|The Magic Circle|Medium|2000|series 3|The Three Gamblers|Jonathan birthday|Cards as Weapons|Ricky Jay|card throwing`,
    `Who wrote the real-life book Cards as Weapons featured as Jonathan's birthday present?|Ricky Jay|David Copperfield|Paul Daniels|Harry Houdini|Medium|2000|series 3|The Three Gamblers|Ricky Jay|Cards as Weapons|card magic|birthday gift`,
    `What playing card does Jonathan throw to distract an armed hostage-taker?|Three of spades|Ace of hearts|Queen of diamonds|King of clubs|Hard|2000|series 3|The Three Gamblers|three of spades|card throwing|hostage rescue|armed gunman`,
-   `Which female magician performs a banana trick that Adam Klaus later copies?|Lizzie Gillespie|Mimi Tranter|Heidi Brayle|Philippa Farell|Medium|2000|series 3|The Three Gamblers|Lizzie Gillespie|banana trick|Adam Klaus|magic club`,
+   `Which female magician performs a banana trick that Adam Klaus later copies?|Lizzie Gillespie|Mimi Tranter|Heidi Sayle|Phillipa Farell|Medium|2000|series 3|The Three Gamblers|Lizzie Gillespie|banana trick|Adam Klaus|magic club`,
    `On whose television chat show does Adam Klaus repeat the banana trick?|Jonathan Ross's|Michael Parkinson's|Graham Norton's|Clive Anderson's|Medium|2000|series 3|The Three Gamblers|Jonathan Ross|Adam Klaus|banana trick|chat show`,
    `Why does Adam miss the ceremony at which he is due a lifetime-achievement award?|He goes to play blues music in a pub|He is trapped in a broken illusion cabinet|He flies to America unexpectedly|He is arrested after his television appearance|Medium|2000|series 3|The Three Gamblers|Adam Klaus|magic awards|lifetime achievement|pub performance`,
  ];
@@ -151,7 +151,13 @@
      throw new Error(`Pack 388: invalid or incomplete row ${index + 1}`);
    }
 
-   const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+   const [stem, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+   const episodeList = ["The Curious Tale of Mr Spearfish","The Eyes of Tiresias","The Omega Man","Ghost's Forge","Miracle in Crooked Lane","The Three Gamblers"];
+   const episode = specificTags.find(x=>episodeList.some(ep=>ep.toLowerCase()===x.toLowerCase())) || '';
+   const question = stem.toLowerCase().includes(PROGRAMME.toLowerCase()) ? stem
+    : episode && stem.toLowerCase().startsWith('in '+episode.toLowerCase()+', ')
+      ? 'In '+PROGRAMME+' episode "'+episode+'", '+stem.slice(episode.length+4)
+      : 'In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
    if (!['Easy', 'Medium', 'Hard'].includes(difficulty)) {
      throw new Error(`Pack 388: invalid difficulty in row ${index + 1}`);
    }
@@ -170,6 +176,7 @@
    return {
      id: `tv_${FIRST_ID + index}`,
      category: 'Television',
+     programme: PROGRAMME,
      question,
      answers,
      correctAnswer,
@@ -179,4 +186,295 @@
    };
  });
 
- module.exports = questions;
+ 
+
+// Audit of Series 3 (1999–2000). Original IDs tv_20840–tv_20959 kept.
+// Source: https://www.comedy.co.uk/tv/jonathan_creek/episodes/3/
+// Six individual cast lists verified; corrected Heidi Sayle, Phillipa Farell,
+// and Bechtenstein spellings in original question rows.
+// Next available added ID tv_40865.
+const verifiedCast388 = {
+  "The Curious Tale of Mr Spearfish": [
+    [
+      "Lenny Spearfish",
+      "Andrew Tiernan",
+      "the unlucky husband",
+      "actor"
+    ],
+    [
+      "Alice Spearfish",
+      "Rachel Power",
+      "Lenny's wife",
+      "actress"
+    ],
+    [
+      "Sadie Bechtenstein",
+      "Debbie Arnold",
+      "the dinner party hostess",
+      "actress"
+    ],
+    [
+      "Jeremy Sangster",
+      "Griff Rhys Jones",
+      "a dinner party guest",
+      "actor"
+    ],
+    [
+      "Marion Cretiss",
+      "Maxine Peake",
+      "Adam's hotel accuser",
+      "actress"
+    ],
+    [
+      "Troy",
+      "Brett Fancy",
+      "a supporting guest character",
+      "actor"
+    ],
+    [
+      "the coroner",
+      "Peter Hughes",
+      "a case investigator",
+      "actor"
+    ]
+  ],
+  "The Eyes of Tiresias": [
+    [
+      "Heidi Sayle",
+      "Rebecca Front",
+      "Audrey's niece",
+      "actress"
+    ],
+    [
+      "Gino",
+      "Paul Blackthorne",
+      "a supporting character",
+      "actor"
+    ],
+    [
+      "Otto Danzigger",
+      "Peter Blake",
+      "a lottery magician",
+      "actor"
+    ],
+    [
+      "André Masson",
+      "Terrence Hardiman",
+      "the French businessman",
+      "actor"
+    ],
+    [
+      "Delia Masson",
+      "Diana Weston",
+      "the businessman's wife",
+      "actress"
+    ],
+    [
+      "Craig Downey",
+      "James Gaddas",
+      "a murder suspect",
+      "actor"
+    ],
+    [
+      "Becky Phillips",
+      "Claire Malcomson",
+      "a woman killed in a car crash",
+      "actress"
+    ],
+    [
+      "Yvette the maid",
+      "Alexandra Hogg",
+      "a household employee",
+      "actress"
+    ]
+  ],
+  "The Omega Man": [
+    [
+      "Phillipa Farell",
+      "Jane Booker",
+      "the professor's assistant",
+      "actress"
+    ],
+    [
+      "Trudi",
+      "Charlie Brooks",
+      "a bookshop character",
+      "actress"
+    ],
+    [
+      "Sergeant Kribornik",
+      "Calvin Williams",
+      "a military officer",
+      "actor"
+    ],
+    [
+      "the television interviewer",
+      "Sonya Saul",
+      "the host interviewing Maddy",
+      "actress"
+    ]
+  ],
+  "Ghost's Forge": [
+    [
+      "Samantha",
+      "Gina Bellman",
+      "a supporting character",
+      "actress"
+    ],
+    [
+      "Cindy",
+      "Kezi Silverstone",
+      "a supporting character",
+      "actress"
+    ],
+    [
+      "Robin Priest",
+      "Mark Aiken",
+      "the lover linked to the haunted house",
+      "actor"
+    ],
+    [
+      "Shirley Priest",
+      "Sarah Stephens",
+      "Robin's wife",
+      "actress"
+    ],
+    [
+      "Duggie Dawson",
+      "Jim Bowen",
+      "the outspoken theatre critic",
+      "actor"
+    ],
+    [
+      "Bill",
+      "Nicholas Amer",
+      "the murder victim",
+      "actor"
+    ]
+  ],
+  "Miracle in Crooked Lane": [
+    [
+      "Vincent Rees",
+      "Nicholas Ball",
+      "the man with professional lighting expertise",
+      "actor"
+    ],
+    [
+      "Christine",
+      "Emma Kennedy",
+      "the postwoman and Jonathan Creek fan",
+      "actress"
+    ],
+    [
+      "Jacqui Jordan",
+      "Henrietta Baynes",
+      "the former glamour model",
+      "actress"
+    ],
+    [
+      "Rupert Clifford-Wright",
+      "Benjamin Whitrow",
+      "Jacqui's wealthy husband",
+      "actor"
+    ],
+    [
+      "Jeff Torrance",
+      "Tom Goodman-Hill",
+      "the fan who dresses like Jonathan",
+      "actor"
+    ],
+    [
+      "DCI Jack Horner",
+      "William Vanderpuye",
+      "the police investigator",
+      "actor"
+    ]
+  ],
+  "The Three Gamblers": [
+    [
+      "Floyd Goodman",
+      "Harry Peacock",
+      "a former boxer",
+      "actor"
+    ],
+    [
+      "Frank Geiger",
+      "John Bennett",
+      "the murdered drug runner",
+      "actor"
+    ],
+    [
+      "Karen Blaine",
+      "Nina Sosanya",
+      "the undercover policewoman",
+      "actress"
+    ],
+    [
+      "Joe Wheeler",
+      "Cliff Barry",
+      "a guest criminal character",
+      "actor"
+    ],
+    [
+      "Lizzie Gillespie",
+      "Hattie Hayridge",
+      "the magician with a banana trick",
+      "actress"
+    ],
+    [
+      "Sidney Australia",
+      "Cavan Clerkin",
+      "a supporting character",
+      "actor"
+    ],
+    [
+      "DI Nathan Gallo",
+      "John Bird",
+      "the investigating detective",
+      "actor"
+    ],
+    [
+      "Derek Spratley",
+      "Lee Ingleby",
+      "a supporting guest character",
+      "actor"
+    ]
+  ]
+};
+for(const [episode,castList] of Object.entries(verifiedCast388)){
+ for(const [i,item] of castList.entries()){
+  const [role,actor,focus,roleType]=item;
+  const alternatives=castList.filter(a=>a[1]!==actor).map(a=>a[1]);
+  if(alternatives.length<3)throw Error('Pack 388 insufficient distractors for '+role);
+  const answers=[alternatives[i%alternatives.length],
+   alternatives[(i+1)%alternatives.length],
+   alternatives[(i+2)%alternatives.length]];
+  if(new Set(answers).size!==3||answers.includes(actor))throw Error('Pack 388 duplicate distractors');
+  const correctAnswer=actor;
+  answers.splice(questions.length%4,0,correctAnswer);
+  const question='In '+PROGRAMME+' episode "'+episode+'", which '+roleType+' played '+role+'?';
+  const tags=['Television','British Television','BBC','BBC One',
+   'Mystery Drama','Crime Mystery',PROGRAMME,'Programme: '+PROGRAMME,
+   'Series 3','Episode: '+episode,'Role: '+role,'Performer: '+actor,
+   'Character description: '+focus,'Cast member: '+actor,
+   'Broadcast: 1999–2000','David Renwick'];
+  questions.push({id:'tv_'+(40865+questions.length-120),
+   category:'Television',programme:PROGRAMME,question,answers,correctAnswer,
+   difficulty:'Medium',tags,dailyEligible:true});
+ }
+}
+const seen388Id=new Set(),seen388Stem=new Set();
+const key388=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+for(const q of questions){
+ const key=key388(q.question);
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ q.answers.length!==4||new Set(q.answers.map(key388)).size!==4||
+ q.answers.filter(x=>x===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ seen388Id.has(q.id)||seen388Stem.has(key))
+ throw Error('Pack 388 validation failed at '+q.id);
+ seen388Id.add(q.id);seen388Stem.add(key);
+}
+module.exports=questions;
