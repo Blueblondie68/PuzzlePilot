@@ -1,5 +1,5 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 479: Birds of a Feather (1989–2020)
-// 117 distinct written questions across the original nine BBC series, three ITV revival series,
+// 143 audited written questions across the original nine BBC series, three ITV revival series,
 // every televised Christmas special and the 2020 conclusion.
 // Show total according to British Comedy Guide: 128 scripted episodes + separate "The Chigwell Years" highlights programme.
 // Previously covered in mixed Pack 9: which actress played Dorien Green? Lesley Joseph (tv_0065). This fact is excluded.
@@ -3866,14 +3866,69 @@ const questions=[
     ]
   }
 ];
-const issues=questions.filter((q,i)=>q.id!=='tv_'+String(26618+i)||
+
+// Focused awards, principal cast, revival and 2020 finale audit.
+// Distinguish 1990 British Comedy and TRIC wins from the 1993 BAFTA/NTA nominations.
+// Preserve all 117 original IDs, answer choices and existing tags.
+const AUDIT_ORIGINAL_COUNT=117;
+const AUDIT_FIRST_ID=42711;
+const auditFacts=`Which Birds of a Feather star won Best TV Comedy Newcomer at the 1990 British Comedy Awards?|Pauline Quirke|Linda Robson|Lesley Joseph|Dervla Kirwan|Medium|Pauline Quirke|1990 British Comedy Awards|Best TV Comedy Newcomer|Winner|Sharon Theodopolopodous|Performance Honour|British Sitcom History
+Which category did Birds of a Feather star Pauline Quirke win at the 1990 British Comedy Awards?|Best TV Comedy Newcomer|Best TV Comedy Actress|Best British TV Comedy|Best New TV Comedy|Medium|Best TV Comedy Newcomer|1990 Awards Ceremony|Pauline Quirke|Comedy Performance|Sharon|Winner Category|British Comedy Awards
+Which television industry award did Birds of a Feather win for TV Sitcom of the Year in 1991?|TRIC Award|BAFTA Drama Award|Royal Variety Award|National Film Award|Medium|1991 TRIC Awards|TV Sitcom Of The Year|Television Radio Industries Club|Audience Programme|Award Win|Original BBC Run|Early Acclaim
+For which category did Birds of a Feather receive a BAFTA Television nomination in 1993?|Comedy Programme or Series|Drama Serial|Light Entertainment Performance|Single Drama|Medium|1993 BAFTA Television|Comedy Programme Or Series|Nomination|British Academy|Terry Kinane|Laurence Marks|Maurice Gran
+Which sitcom won the 1993 BAFTA Best Comedy award ahead of Birds of a Feather?|Absolutely Fabulous|One Foot in the Grave|Waiting for God|Men Behaving Badly|Medium|Absolutely Fabulous|1993 BAFTA Winner|Best Comedy Programme|Awards Outcome|Jennifer Saunders|British Academy|Nominee Result
+Which four people were credited for Birds of a Feather's 1993 BAFTA Best Comedy nomination?|Terry Kinane, Laurence Marks, Maurice Gran and Candida Julian-Jones|Pauline Quirke, Linda Robson, Lesley Joseph and Charlie Quirke|Tony Dow, Peter Polycarpou, Matt Willis and Gary Lawson|Jon Rolph, Nick Wood, David Arch and Humphrey Barclay|Hard|Terry Kinane|Laurence Marks|Maurice Gran|Candida Julian Jones|1993 BAFTA Nominees|Production Credits|Comedy Programme
+Which prestigious writers' honour was won in 1993 by Birds of a Feather creators Laurence Marks and Maurice Gran?|BAFTA Writers' Award|Booker Prize|Olivier Award|Ivor Novello Award|Medium|1993 BAFTA Writers Award|Laurence Marks|Maurice Gran|Writer Duo|Career Honour|British Academy|Programme Creators
+For which 1997 National Television Award was Birds of a Feather nominated?|Most Popular Comedy Programme|Most Popular Drama|Most Popular Entertainment Programme|Most Popular Newcomer|Medium|1997 NTA|Most Popular Comedy Programme|Nomination|Viewer Voted|BBC One|Programme Awards|Audience Recognition
+Who portrayed Darryl Stubbs in the original first six series of Birds of a Feather?|Alun Lewis|Peter Polycarpou|David Cardy|Douglas McFerran|Medium|Alun Lewis|Darryl Stubbs|Original Cast|Series One To Six|Tracey Husband|Actor Identification|1989 BBC Run
+Which actor played Chris Theodopolopodous throughout Series 2–6 of Birds of a Feather?|Peter Polycarpou|David Cardy|Alun Lewis|Matthew Savage|Medium|Peter Polycarpou|Chris Theodopolopodous|Series Two To Six|Sharon Husband|Recast Role|BBC Cast|Actor Identification
+Which actor originally played Chris Theodopolopodous in the first series of Birds of a Feather?|David Cardy|Peter Polycarpou|Alun Lewis|Douglas McFerran|Medium|David Cardy|Chris Theodopolopodous|Series One|Original Role|Sharon Husband|Character Casting|Recast History
+Who replaced Alun Lewis as Darryl Stubbs during Series 7 of Birds of a Feather?|Douglas McFerran|David Cardy|Peter Polycarpou|Matthew Savage|Medium|Douglas McFerran|Darryl Stubbs|Series Seven|Actor Recasting|Tracey Husband|1997|BBC Television
+Which actor played Garth Stubbs for most of the original BBC run of Birds of a Feather?|Matthew Savage|Simon Nash|Matt Willis|Samuel James|Medium|Matthew Savage|Garth Stubbs|Series Two To Nine|Tracey Son|Child Actor|Original BBC Run|Character Casting
+Which pop musician played adult Garth Stubbs when Birds of a Feather returned to ITV in 2014?|Matt Willis|Danny Jones|Tom Fletcher|Dougie Poynter|Medium|Matt Willis|Garth Stubbs|2014 ITV Revival|Busted|Actor Recasting|Series Ten|Musician Actor
+Who took over the role of Garth Stubbs for the final two regular series of Birds of a Feather?|Samuel James|Matt Willis|Matthew Savage|Charlie Quirke|Medium|Samuel James|Garth Stubbs|Series Eleven Twelve|ITV Era|Recast Actor|Tracey Son|2015 2016
+What pen name did Dorien Green use after becoming a novelist in the 2014 Birds of a Feather revival?|Foxy Cohen|Dolly Green|Lady Dorien|Sharon Stone|Medium|Foxy Cohen|Dorien Green|Series Ten|2014 Revival|Novel Writing|Pseudonym|Character Reinvention
+What was the title of Dorien's bestselling erotic novel in the 2014 revival of Birds of a Feather?|Sixty Shades of Green|Fifty Shades of Chigwell|The Essex Diaries|The House of Green|Medium|Sixty Shades Of Green|Dorien Green|Foxy Cohen|2014 Revival|Novel Title|Book Signing|Parody Fiction
+At what kind of event were Sharon and Tracey reunited with Dorien in the 2014 Birds of a Feather revival?|A book signing|A wedding reception|A school reunion|An art exhibition|Medium|Book Signing|Gimme Shelter|2014 Revival|Foxy Cohen|Sharon And Tracey|Dorien Return|Series Premiere
+How did Dorien defend herself against a plagiarism allegation in the 2014 Birds of a Feather finale?|She demonstrated her novel was based on her own life|She proved a publisher had forged her manuscript|She produced an older manuscript written by Sharon|She showed the accuser had stolen her diary|Medium|Dorien Green|Plagiarism Trial|Sixty Shades Of Green|Own Life Experiences|You Cant Always Get What You Want|Series Ten Finale|Court Case
+What happened to Birds of a Feather before ITV ordered its 2014 television revival?|A successful 2012–2013 UK stage tour|A new BBC radio series|A film remake in Hollywood|A revived puppet version|Medium|2012 Stage Tour|2013 Stage Tour|ITV Commission|Original Three Stars|Theatre Revival|Programme Rebirth|Live Performances
+Which broadcaster declined the proposed Birds of a Feather revival before ITV commissioned the new episodes?|BBC One|Channel 4|Sky One|BBC Four|Medium|BBC One|Revival Declined|2014 ITV Commission|Series Ten|Original Creators|Broadcast Change|Commission History
+On what date did Birds of a Feather begin its original BBC One run?|16 October 1989|2 January 2014|24 December 1998|24 December 2020|Medium|16 October 1989|BBC One|First Broadcast|Original Series|Programme Premiere|Episode Nicked|British Television Date
+On which date did Birds of a Feather begin its ITV revival?|2 January 2014|16 October 1989|24 December 2020|18 December 2017|Medium|2 January 2014|ITV Revival Premiere|Gimme Shelter|Series Ten|Original Trio Return|Television Date|Broadcast Timeline
+What event transferred ownership of Tracey's house to Dorien before the 2020 Birds of a Feather special?|Tracey reluctantly sold it to Dorien|Dorien inherited the house from Tracey|The council seized it and sold it to Dorien|Dorien won it in a card game|Medium|2017 To 2020 Transition|Tracey House Sale|Dorien Property Owner|2020 Christmas Special|Changed Living Arrangements|Chigwell Home|Household Story
+Which actress played young visitor Jordan in the 2020 Birds of a Feather Christmas special?|Ami Metcalf|Camilla Beeput|Bethany Attrup|Laila Zaidi|Medium|Ami Metcalf|Jordan|2020 Christmas Special|Young Friend Of Tracey|Guest Cast|Lockdown Christmas|ITV Press
+Which producer made the 2020 Birds of a Feather Christmas special for Hare and Tortoise?|Ali Carron|Humphrey Barclay|Jo Willett|Esta Charkham|Medium|Ali Carron|2020 Christmas Special|Hare And Tortoise|Fremantle|Production Credit|ITV Press|Behind The Scenes`;
+const commonAuditTags=['Television','British Television','Programme: Birds of a Feather',
+ 'Birds of a Feather','British Sitcom','BBC One','ITV Revival',
+ '1989–2020 Programme','Written Questions'];
+const auditQuestions=auditFacts.trim().split('\n').map((line,i)=>{
+ const parts=line.split('|').map(v=>v.trim());
+ if(parts.length!==13)throw Error('Invalid Birds audit row '+i+' fields '+parts.length);
+ const [question,correctAnswer,wrong1,wrong2,wrong3,difficulty,...specificTags]=parts;
+ const answers=[wrong1,wrong2,wrong3];answers.splice((AUDIT_ORIGINAL_COUNT+i)%4,0,correctAnswer);
+ const tags=[...new Map([...commonAuditTags,correctAnswer,...specificTags].map(t=>[t.toLowerCase(),t])).values()];
+ return {id:'tv_'+String(AUDIT_FIRST_ID+i),category:'TV',topic:'Birds of a Feather',
+ question,answers,correctAnswer,difficulty,tags,dailyEligible:true};
+});
+for(const q of questions){
+ if(!q.question.includes('Birds of a Feather')){
+   q.question=q.question.startsWith('In which ')
+    ? 'In Birds of a Feather, which '+q.question.slice(9)
+    : q.question.startsWith('In ')
+      ? 'In Birds of a Feather, '+q.question[0].toLowerCase()+q.question.slice(1)
+      : 'In Birds of a Feather, '+q.question[0].toLowerCase()+q.question.slice(1);
+ }
+}
+questions.push(...auditQuestions);
+
+const issues=questions.filter((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(26618+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||
  q.category!=='TV'||q.topic!=='Birds of a Feather'||
  !Array.isArray(q.answers)||q.answers.length!==4||
  new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
  q.answers.filter(a=>a===q.correctAnswer).length!==1||
  q.tags.length<15||new Set(q.tags).size!==q.tags.length||
  q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty));
-if(questions.length!==117||issues.length||
+if(questions.length!==143||issues.length||
  new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length)
  throw Error('Pack 479 validation failed');
