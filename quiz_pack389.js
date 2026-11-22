@@ -5,7 +5,10 @@
 'use strict';
 
 const FIRST_ID = 20960;
-const commonTags = ['television', 'British TV', 'BBC', 'Jonathan Creek', 'David Renwick', 'mystery drama'];
+const PROGRAMME = 'Jonathan Creek';
+const commonTags = ['Television', 'British Television', 'BBC One', 'Crime Mystery',
+  'Mystery Drama', PROGRAMME, 'Programme: '+PROGRAMME, 'Series 4',
+  'David Renwick', '2003–2004'];
 
 // Format: question | correct answer | three incorrect answers | difficulty | seven specific tags.
 const rows = [
@@ -135,7 +138,9 @@ const questions = rows.map((row, index) => {
   if (parts.length !== 13 || parts.some(value => !value)) {
     throw new Error(`Pack 389: invalid row ${index + 1}`);
   }
-  const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const [stem, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const question = stem.toLowerCase().includes(PROGRAMME.toLowerCase())
+    ? stem : 'In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
   if (!['Easy', 'Medium', 'Hard'].includes(difficulty)) {
     throw new Error(`Pack 389: invalid difficulty at row ${index + 1}`);
   }
@@ -151,6 +156,7 @@ const questions = rows.map((row, index) => {
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -160,4 +166,332 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Series 4 audit: all six episodes (2003–2004).
+// Original IDs tv_20960–tv_21067 remain unchanged.
+// Guest cast and production independently verified with:
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/4/1/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/4/2/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/4/3/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/4/4/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/4/5/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/4/6/
+// New audited questions begin at tv_40904.
+const guestCast389 = {
+  "The Coonskin Cap": [
+    [
+      "Inspector Ted Parnevik",
+      "Terence Hillyer",
+      "m"
+    ],
+    [
+      "Sergeant Heather Davey",
+      "Anna Wilson Jones",
+      "f"
+    ],
+    [
+      "streaker Gary Basco",
+      "Andrew Clover",
+      "m"
+    ],
+    [
+      "Velda Bessie Winstanley",
+      "Tina Martin",
+      "f"
+    ],
+    [
+      "Coral",
+      "Anna Francolini",
+      "f"
+    ],
+    [
+      "Janet Blaydon",
+      "Joan Oliver",
+      "f"
+    ],
+    [
+      "the woman behind the coonskin-cap attacks",
+      "Veronica Leer",
+      "f"
+    ]
+  ],
+  "Angel Hair": [
+    [
+      "Dorothy Moon",
+      "Sophie Thompson",
+      "f"
+    ],
+    [
+      "Sally Ellen Oakley",
+      "Caroline Carver",
+      "f"
+    ],
+    [
+      "Angus",
+      "Edward Hayes-Neary",
+      "m"
+    ],
+    [
+      "Henry Houseman",
+      "Trevor Peacock",
+      "m"
+    ],
+    [
+      "Maria the air hostess",
+      "Marie Boyle",
+      "f"
+    ],
+    [
+      "make-up artist Pam",
+      "Tamsin Greig",
+      "f"
+    ],
+    [
+      "Mavis",
+      "Angela Curran",
+      "f"
+    ],
+    [
+      "Mr. Jellicoe",
+      "Robin Kermode",
+      "m"
+    ]
+  ],
+  "The Tailor's Dummy": [
+    [
+      "fashion designer Marco Bergman",
+      "Jeffrey Segal",
+      "m"
+    ],
+    [
+      "Claude Bergman",
+      "Nicholas Jones",
+      "m"
+    ],
+    [
+      "Carrie Bergman",
+      "Victoria Shalet",
+      "f"
+    ],
+    [
+      "journalist Donna Henry",
+      "Jill Baker",
+      "f"
+    ],
+    [
+      "Sharif",
+      "Selva Rasalingam",
+      "m"
+    ],
+    [
+      "Anwar",
+      "Robert Atiko",
+      "m"
+    ],
+    [
+      "the household maid",
+      "Florencia Cordeu",
+      "f"
+    ]
+  ],
+  "The Seer of the Sands": [
+    [
+      "paranormal sceptic Justin Mallory",
+      "Gary Cady",
+      "m"
+    ],
+    [
+      "Ashley Farr",
+      "Catherine Cusack",
+      "f"
+    ],
+    [
+      "businesswoman Geraldine",
+      "Lorelei King",
+      "f"
+    ],
+    [
+      "Mickey Daniels",
+      "Jonathan Kydd",
+      "m"
+    ],
+    [
+      "Phylicia",
+      "Nicola Hughes",
+      "f"
+    ],
+    [
+      "Josef",
+      "Jason Tompkins",
+      "m"
+    ],
+    [
+      "Andonea",
+      "Eve Polycarpou",
+      "f"
+    ]
+  ],
+  "The Chequered Box": [
+    [
+      "Inspector Adrian Fell",
+      "Colin McFarlane",
+      "m"
+    ],
+    [
+      "Sergeant Herbie Bryant",
+      "Steve Speirs",
+      "m"
+    ],
+    [
+      "Hattie Baron",
+      "Myra McFadyen",
+      "f"
+    ],
+    [
+      "Patrick MacDonald",
+      "Colin Hill",
+      "m"
+    ],
+    [
+      "Jessica Fell",
+      "Petra Letang",
+      "f"
+    ],
+    [
+      "Marty",
+      "Andrew Buckley",
+      "m"
+    ],
+    [
+      "Roy",
+      "Jordan Long",
+      "m"
+    ]
+  ],
+  "Gorgons Wood": [
+    [
+      "celebrity chef Owen Glendower",
+      "Michael Cochrane",
+      "m"
+    ],
+    [
+      "museum manager Thelma Bailey",
+      "Celia Imrie",
+      "f"
+    ],
+    [
+      "Dawn",
+      "Alice Patten",
+      "f"
+    ],
+    [
+      "Alan Tunstall",
+      "Alex Lowe",
+      "m"
+    ],
+    [
+      "the younger Owen",
+      "Tudor Hassett",
+      "m"
+    ],
+    [
+      "the younger Thelma",
+      "Katy Walker",
+      "f"
+    ],
+    [
+      "Leo Laughton-Jones",
+      "David Morris",
+      "m"
+    ]
+  ]
+};
+const additionalProduction389 = [
+  [
+    "The Coonskin Cap",
+    "Who directed the episode?",
+    "Christine Gernon",
+    [
+      "Sandy Johnson",
+      "Keith Washington",
+      "Marcus Mortimer"
+    ],
+    "Episode director"
+  ],
+  [
+    "The Seer of the Sands",
+    "Who directed the episode?",
+    "Sandy Johnson",
+    [
+      "Christine Gernon",
+      "Keith Washington",
+      "Marcus Mortimer"
+    ],
+    "Episode director"
+  ],
+  [
+    "Gorgons Wood",
+    "Which former University Challenge quizmaster made a cameo appearance as himself?",
+    "Bamber Gascoigne",
+    [
+      "John Humphrys",
+      "Jeremy Paxman",
+      "Magnus Magnusson"
+    ],
+    "Television presenter cameo"
+  ]
+];
+const norm389 = x => String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+const performerPools389 = {male:[],female:[]};
+for (const casts of Object.values(guestCast389)) {
+  for (const [role,performer,gender] of casts) {
+    performerPools389[gender==='m'?'male':'female'].push(performer);
+  }
+}
+function addAuditQuestion389(episode,stem,correctAnswer,wrongAnswers,focus,kind){
+  if(wrongAnswers.length!==3||new Set([correctAnswer,...wrongAnswers].map(norm389)).size!==4)
+    throw new Error('Pack 389 invalid audit answers: '+stem);
+  const question='In '+PROGRAMME+' episode "'+episode+'", '+stem[0].toLowerCase()+stem.slice(1);
+  const answers=[...wrongAnswers];
+  answers.splice(questions.length%4,0,correctAnswer);
+  const tags=['Television','British Television','BBC One','Crime Mystery','Mystery Drama',
+    PROGRAMME,'Programme: '+PROGRAMME,'Series 4','Broadcast: 2003–2004',
+    'Episode: '+episode,'Focus: '+focus,'Correct: '+correctAnswer,
+    'Question type: '+kind,'Episode cast/production: '+focus,'David Renwick'];
+  questions.push({
+    id:'tv_'+(40904+questions.length-108),category:'Television',programme:PROGRAMME,
+    question,answers,correctAnswer,difficulty:'Medium',tags,dailyEligible:true
+  });
+}
+for (const [episode,casts] of Object.entries(guestCast389)) {
+  for (const [role,performer,gender] of casts) {
+    const pool=performerPools389[gender==='m'?'male':'female']
+      .filter(a=>a!==performer);
+    if(pool.length<3)throw new Error('Pack 389 not enough distractors '+role);
+    const offset=casts.findIndex(c=>c[1]===performer);
+    const wrongs=[pool[(offset*3)%pool.length],
+                  pool[(offset*3+1)%pool.length],
+                  pool[(offset*3+2)%pool.length]];
+    addAuditQuestion389(episode,
+      'Which '+(gender==='f'?'actress':'actor')+' portrayed '+role+'?',
+      performer,wrongs,'Role: '+role,'Guest cast');
+  }
+}
+for (const [episode,stem,answer,wrongs,focus] of additionalProduction389) {
+  addAuditQuestion389(episode,stem,answer,wrongs,focus,'Production or cameo');
+}
+const audit389Ids=new Set(),audit389Stems=new Set();
+for(const q of questions){
+  const k=norm389(q.question);
+  if(q.programme!==PROGRAMME||q.category!=='Television'||
+    !q.tags.includes('Programme: '+PROGRAMME)||
+    q.answers.length!==4||new Set(q.answers.map(norm389)).size!==4||
+    q.answers.filter(a=>a===q.correctAnswer).length!==1||
+    q.tags.length<12||q.dailyEligible!==true||
+    audit389Ids.has(q.id)||audit389Stems.has(k))
+    throw new Error('Pack 389 audit check failed: '+q.id);
+  audit389Ids.add(q.id);audit389Stems.add(k);
+}
+module.exports=questions;
