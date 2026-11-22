@@ -1,10 +1,17 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 490: As the World Turns, Part 5 (2000–2010)
-// 114 researched MCQs across the final era, including the 17 September 2010 finale.
+// 142 audited MCQs: 114 originals (one low-value repeated fact repaired)
+// plus 28 verified final-decade plot, cast, awards and production additions.
+// Original IDs tv_27635–tv_27748; audit IDs tv_43059–tv_43086.
+// Includes the 17 September 2010 series finale.
 // IDs tv_27635–tv_27748; continue Pack 489 (tv_27548–tv_27634).
 // Coverage: Lily and Rose; Katie/Simon/Henry; Carly/Jack; Jake/Molly; hospital crimes;
 // Barbara/James/Paul, Jennifer/Will/Gwen, Luke/Noah/Reid, 2008–2010 and final farewells.
 // All 54 broadcast years (1956–2010) are now included in Packs 486–490;
 // status COMPLETE only after final question audit and user's Render approval.
+// Original research reviewed 18 Nov 2026; audit extended 22 Nov 2026.
+// Checked against official CBS/Paramount releases, CBS News, Television Academy,
+// TV Guide, Michael Fairman interviews, TVDB and contemporaneous award records.
+// Original IDs preserved; all question text identifies the television programme.
 // Research verified 18 November 2026:
 // https://www.wbtv.com/story/9734600/as-the-world-turns/
 // https://www.remindmagazine.com/article/26496/as-the-world-turns-final-episode-series-finale/
@@ -53,7 +60,7 @@ const questions = [
     "id": "tv_27636",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played both Lily Snyder and lookalike Rose D'Angelo?",
+    "question": "In As the World Turns, which actress played both Lily Snyder and lookalike Rose D'Angelo?",
     "answers": [
       "Martha Byrne",
       "Maura West",
@@ -85,7 +92,7 @@ const questions = [
     "id": "tv_27637",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was Rose D'Angelo's profession when Lily discovered her in Atlantic City?",
+    "question": "In As the World Turns, what was Rose D'Angelo's profession when Lily discovered her in Atlantic City?",
     "answers": [
       "Showgirl",
       "Police detective",
@@ -117,7 +124,7 @@ const questions = [
     "id": "tv_27638",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "In which casino city did Lily first encounter her lookalike Rose?",
+    "question": "In As the World Turns, in which casino city did Lily first encounter her lookalike Rose?",
     "answers": [
       "Reno",
       "Monaco",
@@ -149,7 +156,7 @@ const questions = [
     "id": "tv_27639",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which precious gem was at the centre of Simon Frasier's early search?",
+    "question": "In As the World Turns, which precious gem was at the centre of Simon Frasier's early search?",
     "answers": [
       "The Hope Diamond",
       "The Star of India sapphire",
@@ -181,7 +188,7 @@ const questions = [
     "id": "tv_27640",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What country did the adventurer Simon Frasier come from?",
+    "question": "In As the World Turns, what country did the adventurer Simon Frasier come from?",
     "answers": [
       "Australia",
       "Scotland",
@@ -213,7 +220,7 @@ const questions = [
     "id": "tv_27641",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor portrayed Simon Frasier?",
+    "question": "In As the World Turns, which actor portrayed Simon Frasier?",
     "answers": [
       "Scott Holmes",
       "Paul Leyden",
@@ -245,7 +252,7 @@ const questions = [
     "id": "tv_27642",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was Simon Frasier's dangerous sister called?",
+    "question": "In As the World Turns, what was Simon Frasier's dangerous sister called?",
     "answers": [
       "Barbara",
       "Gwen",
@@ -277,7 +284,7 @@ const questions = [
     "id": "tv_27643",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Where did Simon's sister abandon Lily and Rose during the diamond adventure?",
+    "question": "In As the World Turns, where did Simon's sister abandon Lily and Rose during the diamond adventure?",
     "answers": [
       "A ski lodge",
       "An underground mine",
@@ -309,7 +316,7 @@ const questions = [
     "id": "tv_27644",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was the biological mother of both Lily Snyder and Rose D'Angelo?",
+    "question": "In As the World Turns, who was the biological mother of both Lily Snyder and Rose D'Angelo?",
     "answers": [
       "Iva Snyder",
       "Lucinda Walsh",
@@ -341,7 +348,7 @@ const questions = [
     "id": "tv_27645",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Oakdale woman married Simon Frasier to keep him in the United States?",
+    "question": "In As the World Turns, which Oakdale woman married Simon Frasier to keep him in the United States?",
     "answers": [
       "Emily Stewart",
       "Katie Peretti",
@@ -373,7 +380,7 @@ const questions = [
     "id": "tv_27646",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which character worked with Katie Peretti as a close friend before their later romantic complications?",
+    "question": "In As the World Turns, which character worked with Katie Peretti as a close friend before their later romantic complications?",
     "answers": [
       "Whit McColl",
       "Bob Hughes",
@@ -404,7 +411,7 @@ const questions = [
     "id": "tv_27647",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor played the witty Henry Coleman?",
+    "question": "In As the World Turns, which actor played the witty Henry Coleman?",
     "answers": [
       "Paul Leyden",
       "Roger Howarth",
@@ -436,7 +443,7 @@ const questions = [
     "id": "tv_27648",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Carly Tenney's police-officer partner and central love interest?",
+    "question": "In As the World Turns, who was Carly Tenney's police-officer partner and central love interest?",
     "answers": [
       "Jack Snyder",
       "Tom Hughes",
@@ -468,7 +475,7 @@ const questions = [
     "id": "tv_27649",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor returned as schemer Craig Montgomery in 2000?",
+    "question": "In As the World Turns, which actor returned as schemer Craig Montgomery in 2000?",
     "answers": [
       "Michael Park",
       "Hunt Block",
@@ -500,7 +507,7 @@ const questions = [
     "id": "tv_27650",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which murder victim's case occupied Oakdale at the start of 2000?",
+    "question": "In As the World Turns, which murder victim's case occupied Oakdale at the start of 2000?",
     "answers": [
       "Douglas Cummings",
       "Rick Decker",
@@ -531,7 +538,7 @@ const questions = [
     "id": "tv_27651",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was revealed as Alec Wallace's accidental killer?",
+    "question": "In As the World Turns, who was revealed as Alec Wallace's accidental killer?",
     "answers": [
       "Emily Stewart",
       "Margo Hughes",
@@ -563,7 +570,7 @@ const questions = [
     "id": "tv_27652",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What did Tom and Margo Hughes do at a double wedding in 2000?",
+    "question": "In As the World Turns, what did Tom and Margo Hughes do at a double wedding in 2000?",
     "answers": [
       "Renewed their vows",
       "Divorced",
@@ -595,7 +602,7 @@ const questions = [
     "id": "tv_27653",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which woman had her face pushed into the wedding cake by Margo at the Hughes vow renewal?",
+    "question": "In As the World Turns, which woman had her face pushed into the wedding cake by Margo at the Hughes vow renewal?",
     "answers": [
       "Lucinda Walsh",
       "Emily Stewart",
@@ -627,7 +634,7 @@ const questions = [
     "id": "tv_27654",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which famous novel's author did Chris Hughes read to Abigail Williams during their romance?",
+    "question": "In As the World Turns, which famous novel's author did Chris Hughes read to Abigail Williams during their romance?",
     "answers": [
       "Agatha Christie",
       "Jane Austen",
@@ -691,7 +698,7 @@ const questions = [
     "id": "tv_27656",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress portrayed Molly Conlan, Abigail Williams's mother?",
+    "question": "In As the World Turns, which actress portrayed Molly Conlan, Abigail Williams's mother?",
     "answers": [
       "Lesli Kay",
       "Colleen Zenk",
@@ -723,7 +730,7 @@ const questions = [
     "id": "tv_27657",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What accident put Molly Conlan into a coma after an argument with Abigail?",
+    "question": "In As the World Turns, what accident put Molly Conlan into a coma after an argument with Abigail?",
     "answers": [
       "A car crash",
       "A fall down stairs",
@@ -755,7 +762,7 @@ const questions = [
     "id": "tv_27658",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What milestone did a 2000 special episode celebrate for actors Don Hastings and Eileen Fulton?",
+    "question": "In As the World Turns, what milestone did a 2000 special episode celebrate for actors Don Hastings and Eileen Fulton?",
     "answers": [
       "Their joint retirement",
       "Their 100th Emmy nominations",
@@ -787,7 +794,7 @@ const questions = [
     "id": "tv_27659",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which beloved older characters danced together at the end of the 2000 anniversary episode?",
+    "question": "In As the World Turns, which beloved older characters danced together at the end of the 2000 anniversary episode?",
     "answers": [
       "John Dixon and Lucinda",
       "Tom and Margo",
@@ -819,7 +826,7 @@ const questions = [
     "id": "tv_27660",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which two relatives gained custody of Jake and Vicky McKinnon's daughters after Jake died?",
+    "question": "In As the World Turns, which two relatives gained custody of Jake and Vicky McKinnon's daughters after Jake died?",
     "answers": [
       "Donna Love and Marley Hudson",
       "Rachel Cory and Iris Wheeler",
@@ -851,7 +858,7 @@ const questions = [
     "id": "tv_27661",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor played Molly Conlan's husband Jake McKinnon in the crossover storyline?",
+    "question": "In As the World Turns, which actor played Molly Conlan's husband Jake McKinnon in the crossover storyline?",
     "answers": [
       "Don Hastings",
       "Tom Eplin",
@@ -883,7 +890,7 @@ const questions = [
     "id": "tv_27662",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who murdered Jake McKinnon during the 2002 hostage crisis?",
+    "question": "In As the World Turns, who murdered Jake McKinnon during the 2002 hostage crisis?",
     "answers": [
       "Rose D'Angelo",
       "Craig Montgomery",
@@ -915,7 +922,7 @@ const questions = [
     "id": "tv_27663",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which character had been a nanny to Jake's two young daughters before the 2002 crime?",
+    "question": "In As the World Turns, which character had been a nanny to Jake's two young daughters before the 2002 crime?",
     "answers": [
       "Celia Frasier",
       "Katie Peretti",
@@ -947,7 +954,7 @@ const questions = [
     "id": "tv_27664",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which villainous doctor was exposed during the Oakdale Memorial patient-deaths mystery?",
+    "question": "In As the World Turns, which villainous doctor was exposed during the Oakdale Memorial patient-deaths mystery?",
     "answers": [
       "Rick Decker",
       "John Dixon",
@@ -979,7 +986,7 @@ const questions = [
     "id": "tv_27665",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which former Dynasty actor played hospital villain Rick Decker?",
+    "question": "In As the World Turns, which former Dynasty actor played hospital villain Rick Decker?",
     "answers": [
       "Don Hastings",
       "John James",
@@ -1011,14 +1018,14 @@ const questions = [
     "id": "tv_27666",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What sort of institution was the setting for Rick Decker's killing spree?",
+    "question": "In As the World Turns, which veteran Oakdale character was nearly killed by Rick Decker at the Old Mill?",
     "answers": [
-      "Prison",
-      "Fashion studio",
-      "Hospital",
-      "School"
+      "Susan Stewart",
+      "Barbara Ryan",
+      "Margo Hughes",
+      "Lucinda Walsh"
     ],
-    "correctAnswer": "Hospital",
+    "correctAnswer": "Barbara Ryan",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -1030,20 +1037,20 @@ const questions = [
       "Oakdale",
       "2000–2010 Final Era",
       "Written Quiz",
-      "Section: 2003–2005",
+      "Section: 2003 Rick Decker",
+      "Barbara Ryan",
       "Rick Decker",
-      "Oakdale Memorial",
-      "Hospital",
-      "Patient Deaths",
-      "2003",
-      "Serial Killer"
+      "Old Mill",
+      "Attempted Murder",
+      "Serial Killer Plot",
+      "2003 Storyline"
     ]
   },
   {
     "id": "tv_27667",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Craig Montgomery's daughter and a love interest of Dusty Donovan?",
+    "question": "In As the World Turns, who was Craig Montgomery's daughter and a love interest of Dusty Donovan?",
     "answers": [
       "Jennifer Munson",
       "Abigail Williams",
@@ -1075,7 +1082,7 @@ const questions = [
     "id": "tv_27668",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which longstanding young Oakdale character was played by Agim Kaba?",
+    "question": "In As the World Turns, which longstanding young Oakdale character was played by Agim Kaba?",
     "answers": [
       "Aaron Snyder",
       "Will Munson",
@@ -1107,7 +1114,7 @@ const questions = [
     "id": "tv_27669",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What accident temporarily paralysed Aaron Snyder?",
+    "question": "In As the World Turns, what accident temporarily paralysed Aaron Snyder?",
     "answers": [
       "Train crash",
       "Boxing injury",
@@ -1139,7 +1146,7 @@ const questions = [
     "id": "tv_27670",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which woman supported Aaron Snyder through his rehabilitation?",
+    "question": "In As the World Turns, which woman supported Aaron Snyder through his rehabilitation?",
     "answers": [
       "Gwen Norbeck",
       "Lily Snyder",
@@ -1171,7 +1178,7 @@ const questions = [
     "id": "tv_27671",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which newcomer played by Jessica Dunphy was Susan Stewart's younger daughter?",
+    "question": "In As the World Turns, which newcomer played by Jessica Dunphy was Susan Stewart's younger daughter?",
     "answers": [
       "Emily Stewart",
       "Abigail Williams",
@@ -1203,7 +1210,7 @@ const questions = [
     "id": "tv_27672",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Susan Stewart's other daughter besides Alison?",
+    "question": "In As the World Turns, who was Susan Stewart's other daughter besides Alison?",
     "answers": [
       "Emily Stewart",
       "Lily Snyder",
@@ -1234,7 +1241,7 @@ const questions = [
     "id": "tv_27673",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which woman schemed to remove Carly, Emily and Rose from the lives of men she loved?",
+    "question": "In As the World Turns, which woman schemed to remove Carly, Emily and Rose from the lives of men she loved?",
     "answers": [
       "Kim Hughes",
       "Lucinda Walsh",
@@ -1266,7 +1273,7 @@ const questions = [
     "id": "tv_27674",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the name of the disturbed woman who held Jack captive after escaping an institution?",
+    "question": "In As the World Turns, what was the name of the disturbed woman who held Jack captive after escaping an institution?",
     "answers": [
       "Julia Larrabee",
       "Rosanna Cabot",
@@ -1298,7 +1305,7 @@ const questions = [
     "id": "tv_27675",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which condition caused Jack Snyder to forget his past after being presumed dead?",
+    "question": "In As the World Turns, which condition caused Jack Snyder to forget his past after being presumed dead?",
     "answers": [
       "Amnesia",
       "Blindness",
@@ -1330,7 +1337,7 @@ const questions = [
     "id": "tv_27676",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which nurse helped Jack Snyder recover while he struggled with memory loss?",
+    "question": "In As the World Turns, which nurse helped Jack Snyder recover while he struggled with memory loss?",
     "answers": [
       "Kim Hughes",
       "Julia Larrabee",
@@ -1362,7 +1369,7 @@ const questions = [
     "id": "tv_27677",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played nurse Julia Larrabee?",
+    "question": "In As the World Turns, which actress played nurse Julia Larrabee?",
     "answers": [
       "Jennifer Landon",
       "Kathryn Hays",
@@ -1394,7 +1401,7 @@ const questions = [
     "id": "tv_27678",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Snyder cousin became involved with Jack's carer Julia Larrabee?",
+    "question": "In As the World Turns, which Snyder cousin became involved with Jack's carer Julia Larrabee?",
     "answers": [
       "Seth Snyder",
       "Brad Snyder",
@@ -1426,7 +1433,7 @@ const questions = [
     "id": "tv_27679",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress took over the role of Rosanna Cabot in the 2000s?",
+    "question": "In As the World Turns, which actress took over the role of Rosanna Cabot in the 2000s?",
     "answers": [
       "Cady McClain",
       "Colleen Zenk",
@@ -1458,7 +1465,7 @@ const questions = [
     "id": "tv_27680",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which young son was adopted by Rosanna Cabot during her relationship with Jordan Sinclair?",
+    "question": "In As the World Turns, which young son was adopted by Rosanna Cabot during her relationship with Jordan Sinclair?",
     "answers": [
       "Luke",
       "Cabot",
@@ -1490,7 +1497,7 @@ const questions = [
     "id": "tv_27681",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which manipulator kidnapped Rosanna's adopted son Cabot and used him as leverage?",
+    "question": "In As the World Turns, which manipulator kidnapped Rosanna's adopted son Cabot and used him as leverage?",
     "answers": [
       "Damian Grimaldi",
       "Hal Munson",
@@ -1522,7 +1529,7 @@ const questions = [
     "id": "tv_27682",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What object did Will Munson poison, fatally harming Rose D'Angelo?",
+    "question": "In As the World Turns, what object did Will Munson poison, fatally harming Rose D'Angelo?",
     "answers": [
       "Her perfume",
       "Her lipstick",
@@ -1554,7 +1561,7 @@ const questions = [
     "id": "tv_27683",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was engaged to Rose D'Angelo when she died?",
+    "question": "In As the World Turns, who was engaged to Rose D'Angelo when she died?",
     "answers": [
       "Paul Ryan",
       "Dusty Donovan",
@@ -1586,7 +1593,7 @@ const questions = [
     "id": "tv_27684",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which One Life to Live star took over the adult role of Paul Ryan?",
+    "question": "In As the World Turns, which One Life to Live star took over the adult role of Paul Ryan?",
     "answers": [
       "Benjamin Hendrickson",
       "Roger Howarth",
@@ -1618,7 +1625,7 @@ const questions = [
     "id": "tv_27685",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which businessman and newspaper manipulator was Paul Ryan's notorious father?",
+    "question": "In As the World Turns, which businessman and newspaper manipulator was Paul Ryan's notorious father?",
     "answers": [
       "John Dixon",
       "Whit McColl",
@@ -1649,7 +1656,7 @@ const questions = [
     "id": "tv_27686",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played law practitioner Jessica Griffin during the 2000s?",
+    "question": "In As the World Turns, which actress played law practitioner Jessica Griffin during the 2000s?",
     "answers": [
       "Tamara Tunie",
       "Marie Masters",
@@ -1681,7 +1688,7 @@ const questions = [
     "id": "tv_27687",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which physician was Jessica Griffin's romantic partner in the early 2000s?",
+    "question": "In As the World Turns, which physician was Jessica Griffin's romantic partner in the early 2000s?",
     "answers": [
       "John Dixon",
       "Ben Harris",
@@ -1713,7 +1720,7 @@ const questions = [
     "id": "tv_27688",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the name of Jennifer Munson's fashion label in the mid-2000s?",
+    "question": "In As the World Turns, what was the name of Jennifer Munson's fashion label in the mid-2000s?",
     "answers": [
       "Fashions Ltd",
       "Street Jeans",
@@ -1745,7 +1752,7 @@ const questions = [
     "id": "tv_27689",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress portrayed adult Jennifer Munson in her last years?",
+    "question": "In As the World Turns, which actress portrayed adult Jennifer Munson in her last years?",
     "answers": [
       "Jennifer Landon",
       "Cady McClain",
@@ -1777,7 +1784,7 @@ const questions = [
     "id": "tv_27690",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which singer-songwriter character arrived in 2005 and became involved with Will Munson?",
+    "question": "In As the World Turns, which singer-songwriter character arrived in 2005 and became involved with Will Munson?",
     "answers": [
       "Gwen Norbeck",
       "Alison Stewart",
@@ -1809,7 +1816,7 @@ const questions = [
     "id": "tv_27691",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played Gwen Norbeck?",
+    "question": "In As the World Turns, which actress played Gwen Norbeck?",
     "answers": [
       "Noelle Beck",
       "Jennifer Landon",
@@ -1841,7 +1848,7 @@ const questions = [
     "id": "tv_27692",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Whose daughter was Gwen Norbeck, linking her to troubled Iris?",
+    "question": "In As the World Turns, whose daughter was Gwen Norbeck, linking her to troubled Iris?",
     "answers": [
       "Lisa Miller's",
       "Barbara Ryan's",
@@ -1873,7 +1880,7 @@ const questions = [
     "id": "tv_27693",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor portrayed Will Munson after he became a teenager in 2004?",
+    "question": "In As the World Turns, which actor portrayed Will Munson after he became a teenager in 2004?",
     "answers": [
       "Scott Holmes",
       "Jake Silbermann",
@@ -1905,7 +1912,7 @@ const questions = [
     "id": "tv_27694",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which character was portrayed by Van Hansis from the mid-2000s to the finale?",
+    "question": "In As the World Turns, which character was portrayed by Van Hansis from the mid-2000s to the finale?",
     "answers": [
       "Casey Hughes",
       "Luke Snyder",
@@ -1937,7 +1944,7 @@ const questions = [
     "id": "tv_27695",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which new character became Luke Snyder's prominent same-sex romantic partner?",
+    "question": "In As the World Turns, which new character became Luke Snyder's prominent same-sex romantic partner?",
     "answers": [
       "Kevin Davis",
       "Casey Hughes",
@@ -1969,7 +1976,7 @@ const questions = [
     "id": "tv_27696",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor played Noah Mayer in the Luke-and-Noah storyline?",
+    "question": "In As the World Turns, which actor played Noah Mayer in the Luke-and-Noah storyline?",
     "answers": [
       "Van Hansis",
       "Michael Park",
@@ -2001,7 +2008,7 @@ const questions = [
     "id": "tv_27697",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which year saw Luke Snyder and Noah Mayer share a groundbreaking onscreen kiss?",
+    "question": "In As the World Turns, which year saw Luke Snyder and Noah Mayer share a groundbreaking onscreen kiss?",
     "answers": [
       "2007",
       "2003",
@@ -2033,7 +2040,7 @@ const questions = [
     "id": "tv_27698",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What nickname did viewers use for Luke Snyder and Noah Mayer as a couple?",
+    "question": "In As the World Turns, what nickname did viewers use for Luke Snyder and Noah Mayer as a couple?",
     "answers": [
       "Noake",
       "Nuke",
@@ -2065,7 +2072,7 @@ const questions = [
     "id": "tv_27699",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the military rank of Noah Mayer's disapproving father Winston?",
+    "question": "In As the World Turns, what was the military rank of Noah Mayer's disapproving father Winston?",
     "answers": [
       "Major",
       "General",
@@ -2097,7 +2104,7 @@ const questions = [
     "id": "tv_27700",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who shot Luke Snyder during the tense hunting-trip storyline?",
+    "question": "In As the World Turns, who shot Luke Snyder during the tense hunting-trip storyline?",
     "answers": [
       "James Stenbeck",
       "Craig Montgomery",
@@ -2129,7 +2136,7 @@ const questions = [
     "id": "tv_27701",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What health setback did Luke suffer following the hunting-trip shooting?",
+    "question": "In As the World Turns, what health setback did Luke suffer following the hunting-trip shooting?",
     "answers": [
       "Temporary paralysis",
       "Blindness",
@@ -2161,7 +2168,7 @@ const questions = [
     "id": "tv_27702",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which institution attracted student filmmaker Noah Mayer's ambitions?",
+    "question": "In As the World Turns, which institution attracted student filmmaker Noah Mayer's ambitions?",
     "answers": [
       "Fashion college",
       "Film school",
@@ -2193,7 +2200,7 @@ const questions = [
     "id": "tv_27703",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Lily and Holden Snyder's young daughter involved in later teenage stories?",
+    "question": "In As the World Turns, who was Lily and Holden Snyder's young daughter involved in later teenage stories?",
     "answers": [
       "Barbara Ryan",
       "Maddie Coleman",
@@ -2225,7 +2232,7 @@ const questions = [
     "id": "tv_27704",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which younger daughter of Lily and Holden was Luke's sister?",
+    "question": "In As the World Turns, which younger daughter of Lily and Holden was Luke's sister?",
     "answers": [
       "Rose D'Angelo",
       "Lisa Miller",
@@ -2257,7 +2264,7 @@ const questions = [
     "id": "tv_27705",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What unusual weather event trapped much of Oakdale in 2006?",
+    "question": "In As the World Turns, what unusual weather event trapped much of Oakdale in 2006?",
     "answers": [
       "A severe ice storm",
       "A hurricane",
@@ -2288,7 +2295,7 @@ const questions = [
     "id": "tv_27706",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which woman gave birth to son Ethan while in a coma around the 2006 ice storm?",
+    "question": "In As the World Turns, which woman gave birth to son Ethan while in a coma around the 2006 ice storm?",
     "answers": [
       "Emily Stewart",
       "Lily Snyder",
@@ -2320,7 +2327,7 @@ const questions = [
     "id": "tv_27707",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the name of Lily and Holden's young son born amid their ice-storm troubles?",
+    "question": "In As the World Turns, what was the name of Lily and Holden's young son born amid their ice-storm troubles?",
     "answers": [
       "Parker",
       "Will",
@@ -2352,7 +2359,7 @@ const questions = [
     "id": "tv_27708",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which son was born to Jennifer Munson and Craig Montgomery?",
+    "question": "In As the World Turns, which son was born to Jennifer Munson and Craig Montgomery?",
     "answers": [
       "Paul",
       "Parker",
@@ -2384,7 +2391,7 @@ const questions = [
     "id": "tv_27709",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which long-running character married Jennifer Munson shortly before her death?",
+    "question": "In As the World Turns, which long-running character married Jennifer Munson shortly before her death?",
     "answers": [
       "Dusty Donovan",
       "Craig Montgomery",
@@ -2416,7 +2423,7 @@ const questions = [
     "id": "tv_27710",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which important Oakdale character died from complications following a pneumonia infection in 2006?",
+    "question": "In As the World Turns, which important Oakdale character died from complications following a pneumonia infection in 2006?",
     "answers": [
       "Rosanna Cabot",
       "Jennifer Munson",
@@ -2448,7 +2455,7 @@ const questions = [
     "id": "tv_27711",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played Meg Snyder during her 2005–2010 return?",
+    "question": "In As the World Turns, which actress played Meg Snyder during her 2005–2010 return?",
     "answers": [
       "Maura West",
       "Colleen Zenk",
@@ -2480,7 +2487,7 @@ const questions = [
     "id": "tv_27712",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which son of Barbara Ryan had a turbulent relationship with Meg Snyder?",
+    "question": "In As the World Turns, which son of Barbara Ryan had a turbulent relationship with Meg Snyder?",
     "answers": [
       "Will Munson",
       "Hal Munson",
@@ -2512,7 +2519,7 @@ const questions = [
     "id": "tv_27713",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What addiction caused Casey Hughes trouble during the mid-2000s?",
+    "question": "In As the World Turns, what addiction caused Casey Hughes trouble during the mid-2000s?",
     "answers": [
       "Gambling",
       "Alcohol",
@@ -2544,7 +2551,7 @@ const questions = [
     "id": "tv_27714",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which pair of young characters confronted a copycat impersonating Gwen?",
+    "question": "In As the World Turns, which pair of young characters confronted a copycat impersonating Gwen?",
     "answers": [
       "Carly and Jack",
       "Will and Gwen",
@@ -2576,7 +2583,7 @@ const questions = [
     "id": "tv_27715",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What was the name of the woman who impersonated Gwen Norbeck?",
+    "question": "In As the World Turns, what was the name of the woman who impersonated Gwen Norbeck?",
     "answers": [
       "Lucy Montgomery",
       "Maddie Coleman",
@@ -2608,7 +2615,7 @@ const questions = [
     "id": "tv_27716",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which couple adopted a baby girl named Hallie Jennifer?",
+    "question": "In As the World Turns, which couple adopted a baby girl named Hallie Jennifer?",
     "answers": [
       "Jack and Carly Snyder",
       "Lily and Holden Snyder",
@@ -2640,7 +2647,7 @@ const questions = [
     "id": "tv_27717",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Hallie Jennifer Munson's biological mother?",
+    "question": "In As the World Turns, who was Hallie Jennifer Munson's biological mother?",
     "answers": [
       "Sofie Duran",
       "Alison Stewart",
@@ -2672,7 +2679,7 @@ const questions = [
     "id": "tv_27718",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress played Barbara Ryan during a storyline inspired by her own oral-cancer experience?",
+    "question": "In As the World Turns, which actress played Barbara Ryan during a storyline inspired by her own oral-cancer experience?",
     "answers": [
       "Elizabeth Hubbard",
       "Colleen Zenk",
@@ -2704,7 +2711,7 @@ const questions = [
     "id": "tv_27719",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What kind of cancer did Barbara Ryan battle in a late-series storyline?",
+    "question": "In As the World Turns, what kind of cancer did Barbara Ryan battle in a late-series storyline?",
     "answers": [
       "Lung cancer",
       "Leukaemia",
@@ -2736,7 +2743,7 @@ const questions = [
     "id": "tv_27720",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which man was Katie Peretti's husband before their marriage was annulled amid Jack and Carly's troubles?",
+    "question": "In As the World Turns, which man was Katie Peretti's husband before their marriage was annulled amid Jack and Carly's troubles?",
     "answers": [
       "Brad Snyder",
       "Simon Frasier",
@@ -2768,7 +2775,7 @@ const questions = [
     "id": "tv_27721",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which Snyder brother later married Katie Peretti and died in 2009?",
+    "question": "In As the World Turns, which Snyder brother later married Katie Peretti and died in 2009?",
     "answers": [
       "Brad Snyder",
       "Holden Snyder",
@@ -2800,7 +2807,7 @@ const questions = [
     "id": "tv_27722",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress resumed playing Lily Snyder in 2008 after Martha Byrne left?",
+    "question": "In As the World Turns, which actress resumed playing Lily Snyder in 2008 after Martha Byrne left?",
     "answers": [
       "Cady McClain",
       "Noelle Beck",
@@ -2832,7 +2839,7 @@ const questions = [
     "id": "tv_27723",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which older actress, one of the show's original cast, died before the finale could be taped?",
+    "question": "In As the World Turns, which older actress, one of the show's original cast, died before the finale could be taped?",
     "answers": [
       "Eileen Fulton",
       "Colleen Zenk",
@@ -2960,7 +2967,7 @@ const questions = [
     "id": "tv_27727",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which doctor decided to retire in the final episode?",
+    "question": "In As the World Turns, which doctor decided to retire in the final episode?",
     "answers": [
       "Ben Harris",
       "Rick Decker",
@@ -2992,7 +2999,7 @@ const questions = [
     "id": "tv_27728",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actress portrayed Kim Hughes in the final episodes?",
+    "question": "In As the World Turns, which actress portrayed Kim Hughes in the final episodes?",
     "answers": [
       "Helen Wagner",
       "Eileen Fulton",
@@ -3024,7 +3031,7 @@ const questions = [
     "id": "tv_27729",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Where did Bob and Kim Hughes plan to move after his retirement?",
+    "question": "In As the World Turns, where did Bob and Kim Hughes plan to move after his retirement?",
     "answers": [
       "Arizona",
       "Florida",
@@ -3056,7 +3063,7 @@ const questions = [
     "id": "tv_27730",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which item did Bob Hughes put away when leaving his office in the finale?",
+    "question": "In As the World Turns, which item did Bob Hughes put away when leaving his office in the finale?",
     "answers": [
       "A medical stethoscope",
       "His nameplate",
@@ -3088,7 +3095,7 @@ const questions = [
     "id": "tv_27731",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What object on Bob's desk kept turning in the series' final shot?",
+    "question": "In As the World Turns, what object on Bob's desk kept turning in the series' final shot?",
     "answers": [
       "A fan",
       "A model aeroplane",
@@ -3120,7 +3127,7 @@ const questions = [
     "id": "tv_27732",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What two words did Bob Hughes speak as the series concluded?",
+    "question": "In As the World Turns, what two words did Bob Hughes speak as the series concluded?",
     "answers": [
       "Good morning",
       "Farewell Oakdale",
@@ -3152,7 +3159,7 @@ const questions = [
     "id": "tv_27733",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which longtime villain-turned-heroine married Henry Coleman shortly before the 2010 finale?",
+    "question": "In As the World Turns, which longtime villain-turned-heroine married Henry Coleman shortly before the 2010 finale?",
     "answers": [
       "Barbara Ryan",
       "Lucinda Walsh",
@@ -3184,7 +3191,7 @@ const questions = [
     "id": "tv_27734",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which two characters reconciled in time for the 2010 finale after earlier turbulent marriages?",
+    "question": "In As the World Turns, which two characters reconciled in time for the 2010 finale after earlier turbulent marriages?",
     "answers": [
       "Rose D'Angelo and Paul Ryan",
       "Lucinda Walsh and John Dixon",
@@ -3216,7 +3223,7 @@ const questions = [
     "id": "tv_27735",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who played Dr John Dixon when he returned for the final episode?",
+    "question": "In As the World Turns, who played Dr John Dixon when he returned for the final episode?",
     "answers": [
       "Hunt Block",
       "Roger Howarth",
@@ -3280,7 +3287,7 @@ const questions = [
     "id": "tv_27737",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What news did Carly share with Jack in the days before the 2010 finale?",
+    "question": "In As the World Turns, what news did Carly share with Jack in the days before the 2010 finale?",
     "answers": [
       "She was pregnant",
       "She had inherited a hotel",
@@ -3312,7 +3319,7 @@ const questions = [
     "id": "tv_27738",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was Luke Snyder's romantic partner, a neurosurgeon, who died near the end of the series?",
+    "question": "In As the World Turns, who was Luke Snyder's romantic partner, a neurosurgeon, who died near the end of the series?",
     "answers": [
       "Kevin Davis",
       "Reid Oliver",
@@ -3344,7 +3351,7 @@ const questions = [
     "id": "tv_27739",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What accident fatally injured Dr Reid Oliver near the finale?",
+    "question": "In As the World Turns, what accident fatally injured Dr Reid Oliver near the finale?",
     "answers": [
       "A boating accident",
       "A plane crash",
@@ -3376,7 +3383,7 @@ const questions = [
     "id": "tv_27740",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Whose failing heart was saved by a transplant following Reid Oliver's death?",
+    "question": "In As the World Turns, whose failing heart was saved by a transplant following Reid Oliver's death?",
     "answers": [
       "Bob Hughes",
       "Noah Mayer",
@@ -3407,7 +3414,7 @@ const questions = [
     "id": "tv_27741",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor played Dr Reid Oliver during the final year?",
+    "question": "In As the World Turns, which actor played Dr Reid Oliver during the final year?",
     "answers": [
       "Eric Sheffer Stevens",
       "Daniel Cosgrove",
@@ -3439,7 +3446,7 @@ const questions = [
     "id": "tv_27742",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who proposed to Katie Peretti in the last episode?",
+    "question": "In As the World Turns, who proposed to Katie Peretti in the last episode?",
     "answers": [
       "Simon Frasier",
       "Chris Hughes",
@@ -3471,7 +3478,7 @@ const questions = [
     "id": "tv_27743",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which actor portrayed Chris Hughes in the final weeks?",
+    "question": "In As the World Turns, which actor portrayed Chris Hughes in the final weeks?",
     "answers": [
       "Scott Holmes",
       "Michael Park",
@@ -3503,7 +3510,7 @@ const questions = [
     "id": "tv_27744",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which young couple planned to move to Carbondale in the final episode?",
+    "question": "In As the World Turns, which young couple planned to move to Carbondale in the final episode?",
     "answers": [
       "Luke Snyder and Noah Mayer",
       "Will and Gwen Munson",
@@ -3535,7 +3542,7 @@ const questions = [
     "id": "tv_27745",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "What did Katie and Chris agree to exchange with Tom and Margo Hughes?",
+    "question": "In As the World Turns, what did Katie and Chris agree to exchange with Tom and Margo Hughes?",
     "answers": [
       "Their houses",
       "Their cars",
@@ -3567,7 +3574,7 @@ const questions = [
     "id": "tv_27746",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Who was the biological father of Janet's newborn son Lorenzo Dustin Donovan?",
+    "question": "In As the World Turns, who was the biological father of Janet's newborn son Lorenzo Dustin Donovan?",
     "answers": [
       "Brad Snyder",
       "Dusty Donovan",
@@ -3599,7 +3606,7 @@ const questions = [
     "id": "tv_27747",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "Which couple received news of Janet's newborn son from Dusty before learning of Carly's pregnancy?",
+    "question": "In As the World Turns, which couple received news of Janet's newborn son from Dusty before learning of Carly's pregnancy?",
     "answers": [
       "Henry and Barbara",
       "Paul and Emily",
@@ -3660,9 +3667,910 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==114||new Set(questions.map(q=>q.id)).size!==questions.length||
+// 22 November 2026: append audited non-duplicate historical questions.
+const AUDIT_ORIGINAL_COUNT=114;
+const AUDIT_FIRST_ID=43059;
+const auditQuestions=[
+  {
+    "id": "tv_43059",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actor played Mike Kasnoff when the character returned to Oakdale in 2002?",
+    "answers": [
+      "Shawn Christian",
+      "Mark Collier",
+      "Grayson McCouch",
+      "Paul Leyden"
+    ],
+    "correctAnswer": "Mark Collier",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Mike Kasnoff",
+      "Mark Collier",
+      "2002 Return",
+      "Recast",
+      "Molly Conlan",
+      "Romance"
+    ]
+  },
+  {
+    "id": "tv_43060",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what were the first names of Jake and Vicky McKinnon's twin daughters rescued in 2001?",
+    "answers": [
+      "Bridget and Michele",
+      "Faith and Natalie",
+      "Hallie and Sage",
+      "Lucy and Katie"
+    ],
+    "correctAnswer": "Bridget and Michele",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Jake McKinnon",
+      "Vicky Hudson",
+      "Bridget",
+      "Michele",
+      "2001 Reunion",
+      "Missing Twins"
+    ]
+  },
+  {
+    "id": "tv_43061",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which late Another World character returned as a ghost to reassure Jake and Molly?",
+    "answers": [
+      "Donna Love",
+      "Marley Hudson",
+      "Lila Roberts",
+      "Vicky Hudson"
+    ],
+    "correctAnswer": "Vicky Hudson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Vicky Hudson",
+      "Jake McKinnon",
+      "Molly Conlan",
+      "2001 Ghost",
+      "Another World",
+      "Crossover"
+    ]
+  },
+  {
+    "id": "tv_43062",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actor brought The Young and the Restless lawyer Michael Baldwin to Oakdale in 2005?",
+    "answers": [
+      "Michael Park",
+      "Roger Howarth",
+      "Christian LeBlanc",
+      "Trent Dawson"
+    ],
+    "correctAnswer": "Christian LeBlanc",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Christian LeBlanc",
+      "Michael Baldwin",
+      "Young And The Restless",
+      "2005 Guest Appearance",
+      "CBS Crossover",
+      "Attorney"
+    ]
+  },
+  {
+    "id": "tv_43063",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which Oakdale policeman did visiting lawyer Michael Baldwin assist in a custody dispute?",
+    "answers": [
+      "Hal Munson",
+      "Jack Snyder",
+      "Tom Hughes",
+      "Brad Snyder"
+    ],
+    "correctAnswer": "Jack Snyder",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Michael Baldwin",
+      "Jack Snyder",
+      "Custody Case",
+      "2005 Crossover",
+      "The Young And The Restless",
+      "Courtroom"
+    ]
+  },
+  {
+    "id": "tv_43064",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which youngster was at the centre of Jack Snyder's custody dispute after Julia Larrabee died?",
+    "answers": [
+      "J J Larrabee",
+      "Parker Munson",
+      "Casey Hughes",
+      "Ethan Snyder"
+    ],
+    "correctAnswer": "J J Larrabee",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Jack Snyder",
+      "Julia Larrabee",
+      "JJ",
+      "Custody",
+      "2005 Story",
+      "Adoption"
+    ]
+  },
+  {
+    "id": "tv_43065",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which character was killed in the line of duty after actor Benjamin Hendrickson died?",
+    "answers": [
+      "Brad Snyder",
+      "Dusty Donovan",
+      "John Dixon",
+      "Hal Munson"
+    ],
+    "correctAnswer": "Hal Munson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Hal Munson",
+      "Benjamin Hendrickson",
+      "2006 Death",
+      "Police Duty",
+      "Memorial"
+    ]
+  },
+  {
+    "id": "tv_43066",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which character became close to Katie Peretti while Simon Frasier was away in 2006?",
+    "answers": [
+      "Paul Ryan",
+      "Will Munson",
+      "Nick Kasnoff",
+      "Luke Snyder"
+    ],
+    "correctAnswer": "Nick Kasnoff",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Katie Peretti",
+      "Nick Kasnoff",
+      "Simon Frasier",
+      "2006 Romance",
+      "Family Connection",
+      "Fiftieth Anniversary"
+    ]
+  },
+  {
+    "id": "tv_43067",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, who accidentally shot Brad Snyder during a confrontation in 2009?",
+    "answers": [
+      "Craig Montgomery",
+      "Jack Snyder",
+      "Luke Snyder",
+      "Noah Mayer"
+    ],
+    "correctAnswer": "Jack Snyder",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Brad Snyder",
+      "Jack Snyder",
+      "Accidental Shooting",
+      "2009 Death",
+      "Katie Peretti",
+      "Snyder Brothers"
+    ]
+  },
+  {
+    "id": "tv_43068",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what serious injury did Noah Mayer suffer in an accident while making a film?",
+    "answers": [
+      "Loss of sight",
+      "Loss of hearing",
+      "A broken spine",
+      "Amputation of a hand"
+    ],
+    "correctAnswer": "Loss of sight",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Noah Mayer",
+      "Fireworks Explosion",
+      "Blindness",
+      "2009 Film",
+      "Luke Snyder",
+      "Medical Crisis"
+    ]
+  },
+  {
+    "id": "tv_43069",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which young filmmaker sought treatment from neurosurgeon Reid Oliver after losing his sight?",
+    "answers": [
+      "Luke Snyder",
+      "Casey Hughes",
+      "Parker Munson",
+      "Noah Mayer"
+    ],
+    "correctAnswer": "Noah Mayer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Reid Oliver",
+      "Noah Mayer",
+      "Blindness",
+      "2010 Neurosurgery",
+      "Luke Snyder",
+      "Medical Story"
+    ]
+  },
+  {
+    "id": "tv_43070",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, to which city did Noah Mayer plan to relocate to pursue filmmaking at the end of the series?",
+    "answers": [
+      "London",
+      "Chicago",
+      "Los Angeles",
+      "Miami"
+    ],
+    "correctAnswer": "Los Angeles",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Noah Mayer",
+      "Los Angeles",
+      "Film Career",
+      "2010 Departure",
+      "Luke Snyder",
+      "Farewell"
+    ]
+  },
+  {
+    "id": "tv_43071",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which character publicly acknowledged being gay in a notable 2006 storyline?",
+    "answers": [
+      "Noah Mayer",
+      "Luke Snyder",
+      "Casey Hughes",
+      "Aaron Snyder"
+    ],
+    "correctAnswer": "Luke Snyder",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Luke Snyder",
+      "Coming Out",
+      "2006 Social History",
+      "Holden Snyder",
+      "Van Hansis",
+      "Family Story"
+    ]
+  },
+  {
+    "id": "tv_43072",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which member of the Hughes family discovered Nancy had died before the series finale?",
+    "answers": [
+      "Bob Hughes",
+      "Tom Hughes",
+      "Casey Hughes",
+      "Chris Hughes"
+    ],
+    "correctAnswer": "Bob Hughes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Nancy Hughes",
+      "Bob Hughes",
+      "2010 Farewell",
+      "Family Loss",
+      "Helen Wagner",
+      "Tribute Episode"
+    ]
+  },
+  {
+    "id": "tv_43073",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which younger Hughes family member organised a remembrance of Nancy in 2010?",
+    "answers": [
+      "Chris Hughes",
+      "Tom Hughes",
+      "John Dixon",
+      "Casey Hughes"
+    ],
+    "correctAnswer": "Casey Hughes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Casey Hughes",
+      "Nancy Hughes",
+      "Memorial",
+      "2010 Tribute",
+      "Hughes Family",
+      "Final Season"
+    ]
+  },
+  {
+    "id": "tv_43074",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, on what date did the show's fiftieth-anniversary special episode air?",
+    "answers": [
+      "2 April 1996",
+      "17 September 2010",
+      "3 April 2006",
+      "23 April 2007"
+    ],
+    "correctAnswer": "3 April 2006",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Fiftieth Anniversary",
+      "3 April 2006",
+      "Special Episode",
+      "CBS History",
+      "Heritage",
+      "2006 Broadcast"
+    ]
+  },
+  {
+    "id": "tv_43075",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, what major episode-count milestone did the soap reach on 23 April 2007?",
+    "answers": [
+      "Its 5000th episode",
+      "Its 13000th episode",
+      "Its 10000th episode",
+      "Its 20000th episode"
+    ],
+    "correctAnswer": "Its 13000th episode",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Production",
+      "13000th Episode",
+      "23 April 2007",
+      "CBS Milestone",
+      "Broadcast History",
+      "2007",
+      "Longevity"
+    ]
+  },
+  {
+    "id": "tv_43076",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which online casting competition promoted opportunities for newcomers to appear in the soap?",
+    "answers": [
+      "InTurn",
+      "Oakdale Idol",
+      "CBS Soap Stars",
+      "Acting for Nancy"
+    ],
+    "correctAnswer": "InTurn",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Production",
+      "InTurn",
+      "Online Competition",
+      "2006 Casting",
+      "Digital Media",
+      "Soap Fans",
+      "Reality Format"
+    ]
+  },
+  {
+    "id": "tv_43077",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which company produced the soap throughout its original fifty-four-year run?",
+    "answers": [
+      "BBC Studios",
+      "Warner Bros Animation",
+      "HBO Entertainment",
+      "Procter and Gamble Productions"
+    ],
+    "correctAnswer": "Procter and Gamble Productions",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Production",
+      "Procter Gamble",
+      "Production Company",
+      "CBS Soap",
+      "1956 To 2010",
+      "Broadcast Legacy",
+      "Serial Drama"
+    ]
+  },
+  {
+    "id": "tv_43078",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which major Daytime Emmy programme award did the soap win in both 2001 and 2003?",
+    "answers": [
+      "Outstanding Variety Series",
+      "Outstanding Talk Show",
+      "Outstanding Drama Series",
+      "Outstanding Children's Series"
+    ],
+    "correctAnswer": "Outstanding Drama Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2001 Daytime Emmy",
+      "2003 Daytime Emmy",
+      "Outstanding Drama Series",
+      "CBS",
+      "Production Recognition",
+      "Soap Award"
+    ]
+  },
+  {
+    "id": "tv_43079",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actress won the 2001 Daytime Emmy for portraying Lily Snyder and Rose D Angelo?",
+    "answers": [
+      "Maura West",
+      "Martha Byrne",
+      "Eileen Fulton",
+      "Colleen Zenk"
+    ],
+    "correctAnswer": "Martha Byrne",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "Martha Byrne",
+      "2001 Daytime Emmy",
+      "Lead Actress",
+      "Lily Snyder",
+      "Rose D Angelo",
+      "Double Role"
+    ]
+  },
+  {
+    "id": "tv_43080",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actor won the 2003 supporting-actor Daytime Emmy for playing Hal Munson?",
+    "answers": [
+      "Benjamin Hendrickson",
+      "Michael Park",
+      "Trent Dawson",
+      "Don Hastings"
+    ],
+    "correctAnswer": "Benjamin Hendrickson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "Benjamin Hendrickson",
+      "2003 Daytime Emmy",
+      "Supporting Actor",
+      "Hal Munson",
+      "Award Winner",
+      "Oakdale Police"
+    ]
+  },
+  {
+    "id": "tv_43081",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actress won three consecutive Younger Actress Daytime Emmys for portraying Gwen Norbeck?",
+    "answers": [
+      "Kristina Sisco",
+      "Marnie Schulenburg",
+      "Alexandra Chando",
+      "Jennifer Landon"
+    ],
+    "correctAnswer": "Jennifer Landon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "Jennifer Landon",
+      "2006 To 2008 Emmys",
+      "Younger Actress",
+      "Gwen Norbeck",
+      "Three Consecutive Wins",
+      "CBS"
+    ]
+  },
+  {
+    "id": "tv_43082",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which Carly Tenney actress won Lead Actress Daytime Emmys in both 2007 and 2010?",
+    "answers": [
+      "Martha Byrne",
+      "Jennifer Landon",
+      "Maura West",
+      "Eileen Fulton"
+    ],
+    "correctAnswer": "Maura West",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "Maura West",
+      "2007 Emmy",
+      "2010 Emmy",
+      "Lead Actress",
+      "Carly Tenney",
+      "Award Winner"
+    ]
+  },
+  {
+    "id": "tv_43083",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which Lisa Grimaldi actress received a Daytime Emmy Lifetime Achievement Award in 2004?",
+    "answers": [
+      "Kathryn Hays",
+      "Eileen Fulton",
+      "Helen Wagner",
+      "Marie Masters"
+    ],
+    "correctAnswer": "Eileen Fulton",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "Eileen Fulton",
+      "2004 Daytime Emmy",
+      "Lifetime Achievement",
+      "Lisa Grimaldi",
+      "Soap Veteran",
+      "Cast Award"
+    ]
+  },
+  {
+    "id": "tv_43084",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which actor won the 2011 Lead Actor Daytime Emmy for his final-season portrayal of Jack Snyder?",
+    "answers": [
+      "Michael Park",
+      "Don Hastings",
+      "Larry Bryggman",
+      "Roger Howarth"
+    ],
+    "correctAnswer": "Michael Park",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "Michael Park",
+      "2011 Daytime Emmy",
+      "Lead Actor",
+      "Jack Snyder",
+      "Post Finale Honour",
+      "Acting Award"
+    ]
+  },
+  {
+    "id": "tv_43085",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which part of the programme won a Daytime Emmy in 2005 after successes in 2001 2002 and 2004?",
+    "answers": [
+      "Its children's programme",
+      "Its news department",
+      "Its animated effects team",
+      "Its drama-series writing team"
+    ],
+    "correctAnswer": "Its drama-series writing team",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2005 Daytime Emmy",
+      "Writing Team",
+      "2001 2002 2004",
+      "Drama Writing",
+      "Hogan Sheffer",
+      "Awards"
+    ]
+  },
+  {
+    "id": "tv_43086",
+    "category": "TV",
+    "topic": "As the World Turns",
+    "question": "In As the World Turns, which famous Little House on the Prairie star was Gwen Norbeck actress Jennifer Landon's father?",
+    "answers": [
+      "Dean Butler",
+      "Victor French",
+      "Michael Landon",
+      "Richard Bull"
+    ],
+    "correctAnswer": "Michael Landon",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: As the World Turns",
+      "As the World Turns (CBS)",
+      "Daytime Soap Opera",
+      "Oakdale",
+      "2000–2010 Final Era",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Jennifer Landon",
+      "Michael Landon",
+      "Family Connections",
+      "Acting Career",
+      "Gwen Norbeck",
+      "2000s Cast"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==142||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(27635+i)||q.category!=='TV'||q.topic!=='As the World Turns'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(27635+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.category!=='TV'||q.topic!=='As the World Turns'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<13||
 new Set(q.tags).size!==q.tags.length||!q.dailyEligible||!['Easy','Medium','Hard'].includes(q.difficulty)))
