@@ -3447,14 +3447,14 @@ const auditQuestions=[
     "id": "tv_43047",
     "category": "TV",
     "topic": "As the World Turns",
-    "question": "In As the World Turns, what was the surname of the man who married Jessica Griffin in 1992?",
+    "question": "In As the World Turns, which actress portrayed Shannon O'Hara when she returned in 1994?",
     "answers": [
-      "Grimaldi",
-      "McKechnie",
-      "Hughes",
-      "Stenbeck"
+      "Margaret Reed",
+      "Tamara Tunie",
+      "Claire Bloom",
+      "Kathleen Widdoes"
     ],
-    "correctAnswer": "McKechnie",
+    "correctAnswer": "Margaret Reed",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -3466,13 +3466,13 @@ const auditQuestions=[
       "Oakdale",
       "1990–1999 Storylines",
       "Written Quiz",
-      "Section: Audit Story",
-      "Jessica Griffin",
+      "Section: Audit Cast",
+      "Margaret Reed",
+      "Shannon O Hara",
+      "1994 Return",
       "Duncan McKechnie",
-      "1992 Marriage",
-      "Scottish Nobleman",
-      "Surname",
-      "Romance"
+      "Soap Cast",
+      "Reappearance"
     ]
   },
   {
