@@ -87,7 +87,7 @@ What everyday sweet causes Frost serious dental pain?|A lollipop|A boiled mint|A
 What household appliance contains a dismembered murder victim?|A refrigerator|A tumble dryer|A chest freezer|A washing machine|Easy|Fridge Body|Dismembered Victim|2003|Murder Investigation|Household Appliance|Evidence|Ballroom Case
 What anatomical oddity exposes confusion over the dismembered victim's remains?|There is an extra left foot|The skull is missing|The hands belong to a child|The body has two right arms|Hard|Extra Left Foot|Fridge Victim|2003|Body Identification|Forensic Discovery|Multiple Remains|Murder Clue
 Which competitive pastime connects the victim to the principal suspect?|Ballroom dancing|Amateur boxing|Sailing|Competitive angling|Easy|Ballroom Dancing|Competition|2003|Murder Victim|Dance Partner|Denton Social Life|Clue
-Which ruthless dancer is responsible for the ballroom-related murder?|Delores Delmonte|Antonia Knight|Diane Hawkins|Helen Croft|Medium|Delores Delmonte|Ballroom Dancer|2003|Murderer|Dance Partner|Competition|Case Resolution
+Which ruthless dancer is responsible for the ballroom-related murder?|Delores Delmonte|Antonia Knight|Dianne Hawkins|Helen Croft|Medium|Delores Delmonte|Ballroom Dancer|2003|Murderer|Dance Partner|Competition|Case Resolution
 Which actress portrayed Delores Delmonte?|Amanda Root|Lucy Robinson|Lia Williams|Susannah Doyle|Hard|Amanda Root|Delores Delmonte|2003|Actor Casting|Guest Actress|Ballroom Competitor|Murder Suspect
 What motivates the ballroom killer's anger towards her previous partner?|He abandons her to dance with someone else|He sells their costumes|He reports her to the police|He steals the contest trophy|Medium|Delores Delmonte|Abandoned Partner|2003|Ballroom Rivalry|Jealousy|Competition|Murder Motive
 What is the name of the murdered man pulled from the canal carrying a large sum of cash?|Eddie Burrows|Joe Hawkins|Patrick Knight|Stephen Richford|Medium|Eddie Burrows|Canal Body|2003|Murder Victim|Cash|Second Investigation|Stabbing
@@ -95,16 +95,16 @@ How much money is found with the murdered canal victim?|Six thousand pounds|Five
 What secret about Eddie Burrows complicates the investigation?|He has two wives and families|He is an undercover detective|He is an escaped prisoner|He uses a forged medical licence|Medium|Eddie Burrows|Bigamy|2003|Two Families|Double Life|Motive Suspicion|Victim Background
 Which medical professional is being blackmailed by Eddie Burrows?|Patrick Knight|David Rose|Martine Phillips|Helena Gibson|Hard|Patrick Knight|Local Doctor|Blackmail|2003|Eddie Burrows|Fraudulent Medicines|Murder Motive
 What illicit scheme has the doctor been running with a pharmacist?|Fraud involving medicines|Smuggling rare animals|Selling stolen paintings|Forging driving licences|Medium|Patrick Knight|Pharmacist|Medicine Fraud|2003|Healthcare Scam|Eddie Burrows|Blackmail
-Who actually stabs Eddie Burrows?|Antonia Knight|Delores Delmonte|Maureen Lawson|Diane Hawkins|Medium|Antonia Knight|Eddie Burrows|2003|Murder Confession|Husband Financial Scandal|Blackmail|Case Resolution
+Who actually stabs Eddie Burrows?|Antonia Knight|Delores Delmonte|Maureen Lawson|Dianne Hawkins|Medium|Antonia Knight|Eddie Burrows|2003|Murder Confession|Husband Financial Scandal|Blackmail|Case Resolution
 What relationship connects Antonia to the doctor being blackmailed?|She is his wife|She is his daughter|She is his sister|She is his business partner|Medium|Antonia Knight|Patrick Knight|2003|Husband Wife|Family Finances|Blackmail|Murder Suspect
 Which actress portrayed Antonia Knight?|Lucy Robinson|Amanda Root|Amber Sainsbury|Lia Williams|Hard|Lucy Robinson|Antonia Knight|2003|Guest Actress|Actor Casting|Eddie Burrows Murder|Doctor Wife`;
 
 const dancingInTheDark = `What is the name of the man whose body is found at a waste tip?|Joe Hawkins|Eddie Burrows|Stephen Richford|Terry Hirst|Medium|Joe Hawkins|Waste Tip Body|2004|Murder Victim|Abusive Husband|Police Inquiry|First Case
-Who reports the waste-tip victim missing?|His wife Diane|His daughter Heather|His employer Terry|His brother Colin|Easy|Diane Hawkins|Joe Hawkins|2004|Missing Husband|Married Couple|Witness|Family Life
-What is the occupation of Diane's new romantic partner Colin Bayliss?|Sleep therapist|Paramedic|Solicitor|Driving instructor|Medium|Colin Bayliss|Sleep Therapist|2004|Diane Hawkins|Secret Romance|Occupation|Murder Investigation
-What kind of husband is Joe Hawkins revealed to have been?|Abusive and alcoholic|Quiet and devoted|A wealthy philanthropist|A police officer with no family|Medium|Joe Hawkins|Domestic Abuse|Alcoholism|2004|Diane Hawkins|Marriage|Victim Background
-What happens when Diane tries to steal money from her sleeping husband?|He wakes and begins choking on vomit|He calls the police|He leaves the house|He attacks Colin with a knife|Medium|Diane Hawkins|Joe Hawkins|2004|Choking|Stolen Cash|Interrupted Escape|Death Circumstances
-What do Diane and Colin do when Joe starts choking?|They smother him in panic|They call an ambulance immediately|They carry him to hospital|They leave him unharmed|Medium|Diane Hawkins|Colin Bayliss|Joe Hawkins|2004|Smothering|Panic|Possible Murder
+Who reports the waste-tip victim missing?|His wife Dianne|His daughter Heather|His employer Terry|His brother Colin|Easy|Dianne Hawkins|Joe Hawkins|2004|Missing Husband|Married Couple|Witness|Family Life
+What is the occupation of Dianne's new romantic partner Colin Bayliss?|Sleep therapist|Paramedic|Solicitor|Driving instructor|Medium|Colin Bayliss|Sleep Therapist|2004|Dianne Hawkins|Secret Romance|Occupation|Murder Investigation
+What kind of husband is Joe Hawkins revealed to have been?|Abusive and alcoholic|Quiet and devoted|A wealthy philanthropist|A police officer with no family|Medium|Joe Hawkins|Domestic Abuse|Alcoholism|2004|Dianne Hawkins|Marriage|Victim Background
+What happens when Dianne tries to steal money from her sleeping husband?|He wakes and begins choking on vomit|He calls the police|He leaves the house|He attacks Colin with a knife|Medium|Dianne Hawkins|Joe Hawkins|2004|Choking|Stolen Cash|Interrupted Escape|Death Circumstances
+What do Dianne and Colin do when Joe starts choking?|They smother him in panic|They call an ambulance immediately|They carry him to hospital|They leave him unharmed|Medium|Dianne Hawkins|Colin Bayliss|Joe Hawkins|2004|Smothering|Panic|Possible Murder
 What is the rank and name of Frost's cocky young new police partner?|DC Jasper Tranter|DS Terry Reid|DC Robert Presley|DS Billy Sharpe|Easy|Jasper Tranter|Detective Constable|2004|New Partner|Undergraduate|Denton CID|Police Team
 Who played DC Jasper Tranter?|Nicholas Burns|Blake Ritson|Jim Sturgess|Robert Glenister|Medium|Nicholas Burns|Jasper Tranter|2004|Actor Casting|Guest Actor|Detective Constable|Police Partner
 What is the name of the young escort found murdered in a hotel room?|Heather Wills|Helen Croft|Carol Haymarsh|Cathy Thompson|Medium|Heather Wills|Hotel Murder|2004|Escort|Young Victim|Police Investigation|Crime Scene
@@ -136,16 +136,16 @@ Which of Frost's long-standing colleagues is badly hurt while preventing a suici
 
 const endangeredSpecies = `Which trainee detective constable is staying at Frost's house?|Robert Presley|Jasper Tranter|Ronnie Lonnegan|Terry Reid|Easy|Robert Presley|Trainee Detective|2006|House Guest|Frost Home|Denton CID|Police Colleague
 Who played trainee DC Robert Presley?|Blake Ritson|Jim Sturgess|Nicholas Burns|Robert Glenister|Medium|Blake Ritson|Robert Presley|2006|Actor Casting|Detective Constable|Guest Actor|Frost Housemate
-Which criminal seeks Frost's help after being threatened by former associates?|Kevin Flanagan|Jack Flynn|Terry Hirst|Martin Drew|Medium|Kevin Flanagan|Threatened Criminal|2006|Police Protection|Animal Trafficking|Informant|Suspicious Associates
+Which criminal seeks Frost's help after being threatened by former associates?|Kevin Flannagan|Jack Flynn|Terry Hirst|Martin Drew|Medium|Kevin Flannagan|Threatened Criminal|2006|Police Protection|Animal Trafficking|Informant|Suspicious Associates
 Which illegal trade is at the centre of the criminal network?|Smuggling endangered animals|Selling forged passports|Counterfeiting lottery tickets|Exporting stolen paintings|Easy|Animal Smuggling|Endangered Wildlife|2006|International Crime|Criminal Ring|Exotic Species|Trafficking
-Where have the traffickers been secretly keeping exotic animals?|At a farm|Inside a hotel basement|On a canal barge|In a football ground|Medium|Exotic Animals|Hidden Farm|2006|Smuggling Operation|Kevin Flanagan|Illegal Storage|Wildlife Crime
-Which Vietnamese associate is involved with Flanagan in the animal trafficking?|Lahn Loc|Dennis Prior|Colin Edwards|Kenneth Shaw|Hard|Lahn Loc|Kevin Flanagan|Vietnamese Smuggler|2006|Endangered Animals|International Network|Farm
+Where have the traffickers been secretly keeping exotic animals?|At a farm|Inside a hotel basement|On a canal barge|In a football ground|Medium|Exotic Animals|Hidden Farm|2006|Smuggling Operation|Kevin Flannagan|Illegal Storage|Wildlife Crime
+Which Vietnamese associate is involved with Flannagan in the animal trafficking?|Lahn Loc|Dennis Prior|Colin Edwards|Kenneth Shaw|Hard|Lahn Loc|Kevin Flannagan|Vietnamese Smuggler|2006|Endangered Animals|International Network|Farm
 Which government department assists Scotland Yard with the animal-smuggling case?|HM Revenue and Customs|Department for Education|Ministry of Defence|Department of Health|Medium|HMRC|Scotland Yard|Wildlife Trafficking|2006|Joint Investigation|Government Agencies|Smuggling
-At what pet retailer is Flanagan lost by surveillance officers?|Shawcuts|Pets Corner|Paws and Claws|Pet Kingdom|Hard|Shawcuts|Pet Superstore|2006|Lost Surveillance|Kevin Flanagan|Animal Smuggling|Retail Front
-Which apparently helpful senior associate is implicated in Flanagan's death?|Dennis Prior|Robert Presley|Adam Harris|Patrick Bartley|Medium|Dennis Prior|Kevin Flanagan|2006|False Assistance|Trafficking Ring|Murder Plot|Suspect
+At what pet retailer is Flannagan lost by surveillance officers?|Shawcuts|Pets Corner|Paws and Claws|Pet Kingdom|Hard|Shawcuts|Pet Superstore|2006|Lost Surveillance|Kevin Flannagan|Animal Smuggling|Retail Front
+Which apparently helpful senior associate is implicated in Flannagan's death?|Dennis Prior|Robert Presley|Adam Harris|Patrick Bartley|Medium|Dennis Prior|Kevin Flannagan|2006|False Assistance|Trafficking Ring|Murder Plot|Suspect
 Which actor portrayed Dennis Prior?|Anton Lesser|Danny Webb|Philip Jackson|Mick Ford|Medium|Anton Lesser|Dennis Prior|2006|Actor Casting|Guest Performer|Animal Smuggler|Criminal Associate
-Who owns the pet superstore and sits above the other traffickers?|Kenneth Shaw|Colin Edwards|Kevin Flanagan|Lahn Loc|Medium|Kenneth Shaw|Shawcuts|2006|Trafficking Ringleader|Pet Shop Owner|Exotic Animals|Criminal Network
-Which associate accompanies Flanagan under false pretences before his death?|Colin Edwards|Robert Presley|Adam Harris|Patrick Bartley|Hard|Colin Edwards|Kevin Flanagan|2006|Smuggling Network|Execution Plot|Dennis Prior|Accomplice
+Who owns the pet superstore and sits above the other traffickers?|Kenneth Shaw|Colin Edwards|Kevin Flannagan|Lahn Loc|Medium|Kenneth Shaw|Shawcuts|2006|Trafficking Ringleader|Pet Shop Owner|Exotic Animals|Criminal Network
+Which associate accompanies Flannagan under false pretences before his death?|Colin Edwards|Robert Presley|Adam Harris|Patrick Bartley|Hard|Colin Edwards|Kevin Flannagan|2006|Smuggling Network|Execution Plot|Dennis Prior|Accomplice
 What shocking discovery greets the Harris family after a holiday?|A naked body in their bedroom|Their house destroyed by fire|A stolen police car in the garden|Their pets missing from the house|Medium|Harris Family|Holiday Return|2006|Bedroom Corpse|Second Case|Home Discovery|Murder Investigation
 What is the occupation of the dead man discovered in the Harrises' bedroom?|Art teacher|Security guard|Nurse|Solicitor|Medium|Patrick Bartley|Art Teacher|2006|Bedroom Body|Occupation|School Staff|Victim
 What is the name of the deceased art teacher?|Patrick Bartley|Martin Drew|Peter Johnson|Stephen Richford|Medium|Patrick Bartley|Art Teacher|2006|Harris House|Death Inquiry|School Colleague|Victim Identification
@@ -173,7 +173,7 @@ function addSection(facts, section, episode = null) {
       : `In ${PROGRAMME}, ${stem[0].toLowerCase()}${stem.slice(1)}`;
     const tags = [...new Map([
       'Television', 'British Television', 'ITV', 'Crime Drama', 'Police Procedural',
-      PROGRAMME, section, ...(episode ? [episode] : []), correctAnswer, ...specificTags
+      PROGRAMME, 'Programme: '+PROGRAMME, section, ...(episode ? [episode] : []), correctAnswer, ...specificTags
     ].map(tag => [tag.toLowerCase().replace(/[^a-z0-9]/g, ''), tag])).values()];
     const normalized = question.toLowerCase().replace(/[^a-z0-9]/g, '');
     if (seenStems.has(normalized)) throw new Error(`Repeated question ${id}: ${question}`);
@@ -184,7 +184,7 @@ function addSection(facts, section, episode = null) {
       throw new Error(`Invalid options/difficulty/tags at ${id}`);
     }
     seenStems.add(normalized);
-    questions.push({id, category:'Television', question, answers, correctAnswer, difficulty, tags, dailyEligible:true});
+    questions.push({id, category:'Television', programme:PROGRAMME, question, answers, correctAnswer, difficulty, tags, dailyEligible:true});
   }
 }
 
@@ -197,4 +197,112 @@ addSection(dancingInTheDark, 'Series 11 2004 Dancing in the Dark', 'Dancing in t
 addSection(nearDeath, 'Series 12 2005 Near Death Experience', 'Near Death Experience');
 addSection(endangeredSpecies, 'Series 13 2006 Endangered Species', 'Endangered Species');
 
-module.exports = questions;
+
+
+// Series 10–13 audit: original tv_20337–tv_20473 preserved.
+// Sources for episodes, cases and guest cast:
+// https://epguides.com/touchoffrost/guide.shtml
+// https://acupofcrime.com/tv/a-touch-of-frost/episodes/
+// https://www.thetvdb.com/series/a-touch-of-frost/allseasons/official
+// A Touch of Frost remains PARTIAL until Series 14–15 are covered in Pack 385.
+// Fresh IDs begin at tv_40664.
+const audited384_hiddenTruth=`In Hidden Truth, which actress played protected witness Cathy Thompson?|Sophie Stanton|Helen Masters|Beatie Edney|Sally Dexter|Hidden Truth|Series 10|Cathy Thompson guest actress
+In Hidden Truth, who portrayed Cathy's son Robbie Thompson?|Leagh Conwell|Ryan Watson|Gary Powell|Simon Meacock|Hidden Truth|Series 10|Robbie Thompson child performer
+In Hidden Truth, who played gangster Jack Flynn?|Michael McKell|Sean Blowers|Robert Glenister|Donald Sumpter|Hidden Truth|Series 10|Jack Flynn guest actor
+In Hidden Truth, which actor portrayed hired assassin George Starkey?|Gary Powell|Simon Meacock|Stuart Bowman|Michael McKell|Hidden Truth|Series 10|George Starkey performer
+In Hidden Truth, who played the prosecution insider Eileen Cleary?|Helen Masters|Sophie Stanton|Beatie Edney|Danielle Lydon|Hidden Truth|Series 10|Eileen Cleary actress
+In Hidden Truth, what is the name of the policewoman assigned to guard Cathy Thompson?|Tracy Miller|Hazel Wallace|Liz Maud|Maureen Lawson|Hidden Truth|Series 10|Witness-protection policewoman
+In Hidden Truth, how is the officer guarding the witness injured by Starkey's attack?|She is critically wounded|She breaks her leg while escaping|She suffers a minor concussion|She is struck by a car|Hidden Truth|Series 10|Safehouse assault
+In Hidden Truth, which real Yorkshire museum provided the setting for the final air-museum confrontation?|Yorkshire Air Museum|National Railway Museum|Royal Armouries Museum|Eden Camp Museum|Hidden Truth|Series 10|Final scene filming location`;
+
+const audited384_closeEncounters=`In Close Encounters, what is the name of DS Hazel Wallace's new baby?|Emma|Lucy|Jane|Clara|Close Encounters|Series 10|Hazel Wallace's child
+In Close Encounters, who portrayed quarry owner Charles Lightfoot?|Jimmy Yuill|Maurice Roëves|Rob Spendlove|Jim Sturgess|Close Encounters|Series 10|Charles Lightfoot guest actor
+In Close Encounters, which actor played property developer Stuart Mackintosh?|Maurice Roëves|Jimmy Yuill|Paterson Joseph|Rob Spendlove|Close Encounters|Series 10|Stuart Mackintosh performer
+In Close Encounters, which actor played the quarry witness's father Martin Burrell?|Rob Spendlove|Jim Sturgess|Jimmy Yuill|Paterson Joseph|Close Encounters|Series 10|Laurence Burrell's father
+In Close Encounters, alongside aliens, which government's agents does Laurence believe are pursuing him?|The American government|The French government|The Russian government|The British government|Close Encounters|Series 10|Laurence Burrell's fears
+In Close Encounters, how does Laurence Burrell escape after being taken in by police?|He climbs out of a window|He slips through a cellar hatch|He escapes through an air vent|He steals a patrol bicycle|Close Encounters|Series 10|Witness flees police custody
+In Close Encounters, why does Stuart Mackintosh refuse the owner's proposed price for the quarry?|Lightfoot demands a punitive price for the land|The quarry is owned by the council|The land lies inside a protected forest|The site has already been sold to a university|Close Encounters|Series 10|Housing-development negotiations`;
+
+const audited384_heldInTrust=`In Held in Trust, how old is Bobby Palmer when he disappears from Denton's football ground?|Ten|Seven|Twelve|Fifteen|Held in Trust|Series 10|Missing boy's age
+In Held in Trust, who played child abuser Anton Caldwell?|Nicholas Woodeson|Nigel Hastings|Alastair Galbraith|Robert Glenister|Held in Trust|Series 10|Anton Caldwell guest actor
+In Held in Trust, which actor portrayed former social worker Martin Drew?|Nigel Hastings|Nicholas Woodeson|Alastair Galbraith|David Slack|Held in Trust|Series 10|Martin Drew actor
+In Held in Trust, who portrayed Bobby Palmer's father John?|Alastair Galbraith|Ryan Watson|Nigel Hastings|David Slack|Held in Trust|Series 10|John Palmer performer
+In Held in Trust, which actress played Bobby's mother Emma Palmer?|Emma Amos|Sophie Stanton|Jennifer Hennessy|Heather Louise Cameron|Held in Trust|Series 10|Emma Palmer actress
+In Held in Trust, what unexpected attention distracts Frost during his criminal investigation?|Gifts from a secret admirer|An invitation to a celebrity wedding|A job offer from an art gallery|An anonymous travel prize|Held in Trust|Series 10|Anonymous admirer gifts
+In Held in Trust, how do Frost's colleagues react when he leaves the station after suspension?|They applaud him|They stage a protest outside|They refuse to speak to him|They hold a surprise retirement party|Held in Trust|Series 10|Police team reacts to suspension
+In Held in Trust, what sort of work would Frost's promotion have taken him away from?|Active CID detective work|Courtroom advocacy|Patrolling the motorway|Working in the police laboratory|Held in Trust|Series 10|Chief Inspector promotion trade-off`;
+
+const audited384_anotherLife=`In Another Life, how long has Frost been suspended when he returns to Denton CID?|Seven months|Seven weeks|Two years|Sixteen months|Another Life|Series 11|Length of suspension
+In Another Life, who played the local dance competitor Oscar Belmont?|Ken Drury|Simon Scott|Nigel Betts|David Cardy|Another Life|Series 11|Oscar Belmont performer
+In Another Life, which actor played the doctor blackmailed by the canal victim?|Simon Scott|Ken Drury|Bernard Holley|Nigel Betts|Another Life|Series 11|Dr Patrick Knight actor
+In Another Life, besides money and car keys, what puzzling notes does Frost discover with Eddie Burrows?|Four sets of numbers|A list of telephone names|A forged medical prescription|Directions to the ballroom|Another Life|Series 11|Canal victim's paper clues
+In Another Life, what is Delores Delmonte preparing to do when police interrupt her?|Kill her latest dance partner|Flee to Argentina|Burn down the dance studio|Steal the competition trophies|Another Life|Series 11|Dance competitor's next target
+In Another Life, why does Delores say she killed dance partners who disappointed her?|She considered them insufficiently talented|She believed they were police informants|They had stolen her savings|They intended to blackmail her doctor|Another Life|Series 11|Dancer's stated motive
+In Another Life, which actor played police Chief Constable overseeing Frost's return?|Bernard Holley|Simon Scott|David Cardy|Ken Drury|Another Life|Series 11|Chief Constable guest performer`;
+
+const audited384_dancingInTheDark=`In Dancing in the Dark, which actress played Joe Hawkins's wife Dianne?|Sandy McDade|Amber Sainsbury|Jill Baker|Louisa Gilpin|Dancing in the Dark|Series 11|Dianne Hawkins actress
+In Dancing in the Dark, who portrayed businessman Stephen Richford?|Clive Wood|Patrick Baladi|Andrew Dunford|Nicholas Burns|Dancing in the Dark|Series 11|Stephen Richford actor
+In Dancing in the Dark, what university subject had DC Jasper Tranter studied?|Geography|Law|Psychology|Forensic science|Dancing in the Dark|Series 11|Tranter academic background
+In Dancing in the Dark, what happens to Stephen Richford after Heather Wills's murder?|He is found dead in an apparent suicide|He is appointed Chief Constable|He moves abroad with his daughter|He confesses to smuggling drugs|Dancing in the Dark|Series 11|Staged suicide of businessman
+In Dancing in the Dark, from which country are women illegally brought to Britain by the trafficking ring?|Poland|Portugal|Norway|Canada|Dancing in the Dark|Series 11|Trafficked women's origin
+In Dancing in the Dark, what does Heather withhold from her employer until he pays her extra money?|Forged passports|A stolen painting|Bank-account passwords|The keys to a nightclub|Dancing in the Dark|Series 11|Heather Wills's leverage
+In Dancing in the Dark, which leisure organisation is Frost uncertain about joining?|A gym|A sailing club|A golf society|A chess club|Dancing in the Dark|Series 11|Frost's fitness decision
+In Dancing in the Dark, what recent good fortune had waste-tip victim Joe Hawkins enjoyed?|He had won thousands on a bet|He had inherited a country cottage|He had won a new car|He had received a television acting contract|Dancing in the Dark|Series 11|Joe Hawkins money windfall`;
+
+const audited384_nearDeath=`In Near Death Experience, which actress portrayed forensic psychologist Martine Phillips?|Sara Stewart|Lia Williams|Amanda Royle|Julia Dalkin|Near Death Experience|Series 12|Profiler's performer
+In Near Death Experience, who played serial murderer Bill Ford?|Mick Ford|Danny Webb|Jeff Rawle|Philip Jackson|Near Death Experience|Series 12|Bill Ford guest actor
+In Near Death Experience, which actress portrayed Helen Croft's sister Sylvia?|Lia Williams|Sara Stewart|Amanda Royle|Katie Gale|Near Death Experience|Series 12|Sylvia Ford actress
+In Near Death Experience, who played the murdered widow Helen Croft?|Amanda Royle|Lia Williams|Julia St John|Rosie Timpson|Near Death Experience|Series 12|Helen Croft performer
+In Near Death Experience, what object has significance because Bill Ford previously gave it to his wife?|A locket|A music box|A silver brooch|A wristwatch|Near Death Experience|Series 12|Religious killer clue
+In Near Death Experience, where does DS Toolan fall while helping to prevent a suicide?|From a high building|Down a railway embankment|Into a quarry lake|From a moving bus|Near Death Experience|Series 12|Toolan serious injuries
+In Near Death Experience, who blames Frost's unconventional methods for the danger faced by Toolan?|Toolan's wife|The Chief Constable|Father David Rose|The forensic psychologist|Near Death Experience|Series 12|Toolan family confronts Frost
+In Near Death Experience, how does profiler Martine Phillips describe the killer's motive?|He takes sexual pleasure in killing|He needs money to finance gambling|He hopes to gain political influence|He kills to cover an old theft|Near Death Experience|Series 12|Serial-killer motive profile`;
+
+const audited384_endangeredSpecies=`In Endangered Species, which actor portrayed threatened trafficker Kevin Flannagan?|Gary Sefton|David Calder|Anton Lesser|Blake Ritson|Endangered Species|Series 13|Kevin Flannagan performer
+In Endangered Species, who played pet-store owner Kenneth Shaw?|David Calder|Gary Sefton|Anton Lesser|Tim Treloar|Endangered Species|Series 13|Kenneth Shaw guest actor
+In Endangered Species, which actress portrayed music teacher Carol Haymarsh?|Sian Brooke|Ruth Gemmell|Nila Aalia|Claire Cox|Endangered Species|Series 13|Carol Haymarsh actress
+In Endangered Species, which exotic animal appears near a severed human leg?|A crocodile|A tiger|A giant python|A zebra|Endangered Species|Series 13|Unusual crime scene discovery
+In Endangered Species, why do smuggling bosses order the death of Vietnamese trafficker Lahn Loc?|He was caught skimming their money|He had stolen a racing horse|He publicly denounced their zoo|He was working as a police constable|Endangered Species|Series 13|Lahn Loc punishment
+In Endangered Species, what does art teacher Patrick Bartley demand after discovering Carol Haymarsh's secret?|Sexual favours through blackmail|Ownership of the family home|A forged university diploma|The proceeds of a burglary|Endangered Species|Series 13|Bartley blackmails colleague
+In Endangered Species, what injury does Carol inflict on Patrick Bartley during their confrontation?|A broken nose|A fractured wrist|A cut across his back|A broken ankle|Endangered Species|Series 13|Music teacher resists blackmail
+In Endangered Species, what sort of holiday have the Harrises returned from when they find a body in their bedroom?|A caravan holiday|A skiing trip|A Mediterranean cruise|A camping trip in Canada|Endangered Species|Series 13|Harris family's travel`;
+const audit384Key=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit384(block){
+ for(const [i,line] of block.trim().split('\n').entries()){
+  const f=line.split('|').map(x=>x.trim());
+  if(f.length!==8||f.some(x=>!x))throw Error('Pack 384 audit row malformed: '+i);
+  const [stem,correctAnswer,a,b,c,episode,series,focus]=f;
+  const episodeMatch=/^In (.+?), (.+)$/.exec(stem);
+  if(!episodeMatch||episodeMatch[1]!==episode)throw Error('Pack 384 episode mismatch at '+i);
+  const question='In '+PROGRAMME+' episode "'+episode+'", '+episodeMatch[2];
+  const answers=[a,b,c];answers.splice(questions.length%4,0,correctAnswer);
+  const tags=['Television','British Television','ITV','Crime Drama','Police Procedural',
+   PROGRAMME,'Programme: '+PROGRAMME,'Series: '+series,'Episode: '+episode,
+   'Story focus: '+focus,'Correct answer: '+correctAnswer,
+   'Episode incident: '+focus,'Crime drama programme: '+PROGRAMME,
+   'Story episode: '+episode];
+  questions.push({id:'tv_'+(40664+questions.length-137),
+   category:'Television',programme:PROGRAMME,question,answers,correctAnswer,
+   difficulty:'Medium',tags,dailyEligible:true});
+ }
+}
+addAudit384(audited384_hiddenTruth);
+addAudit384(audited384_closeEncounters);
+addAudit384(audited384_heldInTrust);
+addAudit384(audited384_anotherLife);
+addAudit384(audited384_dancingInTheDark);
+addAudit384(audited384_nearDeath);
+addAudit384(audited384_endangeredSpecies);
+const audit384Ids=new Set(),audit384Words=new Set();
+for(const q of questions){
+ const k=audit384Key(q.question);
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||q.answers.length!==4||
+ new Set(q.answers.map(audit384Key)).size!==4||
+ q.answers.filter(v=>v===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ audit384Ids.has(q.id)||audit384Words.has(k))throw Error('Pack 384 validation failed: '+q.id);
+ audit384Ids.add(q.id);audit384Words.add(k);
+}
+module.exports=questions;
