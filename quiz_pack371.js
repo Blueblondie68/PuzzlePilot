@@ -166,6 +166,7 @@ if (!questions.length || questions[0].id !== 'tv_18821' ||
 
 
 // Pack 371 storyline audit, 22 November 2026: original IDs preserved.
+// Seven potential repeated facts excluded after secondary semantic review.
 // Corrected misleading Geoffrey Deane sole-writer wording in original question.
 // Programme guides: https://www.comedy.co.uk/tv/brush_strokes/episodes/all/
 // https://www.tvmaze.com/shows/8744/brush-strokes/episodeguide
@@ -473,39 +474,6 @@ const auditAdditions = [
     "id": "tv_39807",
     "category": "Television",
     "programme": "Brush Strokes",
-    "question": "In Brush Strokes, what is the occupation of Jacko's new girlfriend Gaynor?",
-    "answers": [
-      "Nurse",
-      "Journalist",
-      "Teacher",
-      "Air stewardess"
-    ],
-    "correctAnswer": "Air stewardess",
-    "difficulty": "Easy",
-    "tags": [
-      "Television",
-      "British Television",
-      "Comedy",
-      "Sitcom",
-      "Brush Strokes",
-      "Programme: Brush Strokes",
-      "BBC One",
-      "1986-1991",
-      "Episode: Series 1 Episode 11",
-      "Storyline: Gaynor Airline Job",
-      "Correct fact: Air stewardess",
-      "Character incident: Gaynor Airline Job",
-      "Episode subject: Gaynor Airline Job",
-      "Plot detail: Gaynor Airline Job",
-      "Episode or period: Series 1 Episode 11",
-      "Jacko and Bainbridge's"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39808",
-    "category": "Television",
-    "programme": "Brush Strokes",
     "question": "In Brush Strokes, whose new boyfriend has a dubious past known to Jacko?",
     "answers": [
       "Sandra's",
@@ -536,7 +504,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39809",
+    "id": "tv_39808",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, who finally returns to Lionel's home after the couple's separation?",
@@ -569,7 +537,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39810",
+    "id": "tv_39809",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, who is unhappy when Lionel and Veronica reunite?",
@@ -602,7 +570,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39811",
+    "id": "tv_39810",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, what colour hair does the woman have whom Jacko takes to a party, upsetting Sandra?",
@@ -635,7 +603,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39812",
+    "id": "tv_39811",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, who recruits Jacko for an unusual secret painting assignment?",
@@ -668,40 +636,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39813",
-    "category": "Television",
-    "programme": "Brush Strokes",
-    "question": "In Brush Strokes, where has Jacko's old friend been living before returning with a new outlook on life?",
-    "answers": [
-      "New Zealand",
-      "Canada",
-      "France",
-      "The Netherlands"
-    ],
-    "correctAnswer": "Canada",
-    "difficulty": "Easy",
-    "tags": [
-      "Television",
-      "British Television",
-      "Comedy",
-      "Sitcom",
-      "Brush Strokes",
-      "Programme: Brush Strokes",
-      "BBC One",
-      "1986-1991",
-      "Episode: Series 2 Episode 4",
-      "Storyline: Returned Friend From Canada",
-      "Correct fact: Canada",
-      "Character incident: Returned Friend From Canada",
-      "Episode subject: Returned Friend From Canada",
-      "Plot detail: Returned Friend From Canada",
-      "Episode or period: Series 2 Episode 4",
-      "Jacko and Bainbridge's"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39814",
+    "id": "tv_39812",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, what does Lionel advertise when he believes Sandra is leaving his business?",
@@ -734,7 +669,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39815",
+    "id": "tv_39813",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, whose unsuccessful job prompts Lionel to interfere in her affairs?",
@@ -767,40 +702,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39816",
-    "category": "Television",
-    "programme": "Brush Strokes",
-    "question": "In Brush Strokes, what Caribbean island do Jacko and Sandra travel to for an unconventional honeymoon?",
-    "answers": [
-      "Barbados",
-      "Jamaica",
-      "St Lucia",
-      "Antigua"
-    ],
-    "correctAnswer": "Barbados",
-    "difficulty": "Easy",
-    "tags": [
-      "Television",
-      "British Television",
-      "Comedy",
-      "Sitcom",
-      "Brush Strokes",
-      "Programme: Brush Strokes",
-      "BBC One",
-      "1986-1991",
-      "Episode: Series 3 Episode 2",
-      "Storyline: Jacko Sandra Barbados Trip",
-      "Correct fact: Barbados",
-      "Character incident: Jacko Sandra Barbados Trip",
-      "Episode subject: Jacko Sandra Barbados Trip",
-      "Plot detail: Jacko Sandra Barbados Trip",
-      "Episode or period: Series 3 Episode 2",
-      "Jacko and Bainbridge's"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39817",
+    "id": "tv_39814",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, how does Lionel react to Jacko and Sandra jointly cancelling their wedding?",
@@ -833,7 +735,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39818",
+    "id": "tv_39815",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, whose employees begin deserting his firm for Jacko's new decorating business?",
@@ -866,7 +768,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39819",
+    "id": "tv_39816",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, who tries to take action when Lionel becomes obsessed with Jacko's competing business?",
@@ -899,7 +801,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39820",
+    "id": "tv_39817",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, which former employer takes Jacko back on as he also runs into legal trouble?",
@@ -932,40 +834,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39821",
-    "category": "Television",
-    "programme": "Brush Strokes",
-    "question": "In Brush Strokes, what type of establishment is Elmo opening when Jacko and Eric first make an Italian connection?",
-    "answers": [
-      "A sandwich shop",
-      "A wine bar",
-      "A theatre",
-      "A nightclub"
-    ],
-    "correctAnswer": "A wine bar",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Comedy",
-      "Sitcom",
-      "Brush Strokes",
-      "Programme: Brush Strokes",
-      "BBC One",
-      "1986-1991",
-      "Episode: Series 4 Episode 3",
-      "Storyline: Elmo New Wine Bar",
-      "Correct fact: A wine bar",
-      "Character incident: Elmo New Wine Bar",
-      "Episode subject: Elmo New Wine Bar",
-      "Plot detail: Elmo New Wine Bar",
-      "Episode or period: Series 4 Episode 3",
-      "Jacko and Bainbridge's"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39822",
+    "id": "tv_39818",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, what does Jacko have to endure when visiting Lucia's family home?",
@@ -998,7 +867,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39823",
+    "id": "tv_39819",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, where does Lesley find employment as Jacko continues dating Lucia?",
@@ -1031,7 +900,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39824",
+    "id": "tv_39820",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, which country's way of life does Jacko decide does not suit him?",
@@ -1064,40 +933,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39825",
-    "category": "Television",
-    "programme": "Brush Strokes",
-    "question": "In Brush Strokes, what expensive property does Paulette pressure Elmo to buy?",
-    "answers": [
-      "A seaside cottage",
-      "A country mansion",
-      "A city-centre flat",
-      "A converted barn"
-    ],
-    "correctAnswer": "A country mansion",
-    "difficulty": "Easy",
-    "tags": [
-      "Television",
-      "British Television",
-      "Comedy",
-      "Sitcom",
-      "Brush Strokes",
-      "Programme: Brush Strokes",
-      "BBC One",
-      "1986-1991",
-      "Episode: Series 5 Episode 2",
-      "Storyline: Paulette Seeks Mansion",
-      "Correct fact: A country mansion",
-      "Character incident: Paulette Seeks Mansion",
-      "Episode subject: Paulette Seeks Mansion",
-      "Plot detail: Paulette Seeks Mansion",
-      "Episode or period: Series 5 Episode 2",
-      "Jacko and Bainbridge's"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39826",
+    "id": "tv_39821",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, what sport rekindles Jacko's interest, much to Eric and Jean's amusement?",
@@ -1130,7 +966,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39827",
+    "id": "tv_39822",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, which two things does Jacko lose before Elmo offers him accommodation above the wine bar?",
@@ -1163,7 +999,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39828",
+    "id": "tv_39823",
     "category": "Television",
     "programme": "Brush Strokes",
     "question": "In Brush Strokes, who accompanies Jacko to a nightclub after both men need cheering up?",
@@ -1196,40 +1032,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39829",
-    "category": "Television",
-    "programme": "Brush Strokes",
-    "question": "In Brush Strokes, which Italian island does Veronica plan to visit with Marcello in the finale?",
-    "answers": [
-      "Sardinia",
-      "Sicily",
-      "Capri",
-      "Elba"
-    ],
-    "correctAnswer": "Sicily",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "Comedy",
-      "Sitcom",
-      "Brush Strokes",
-      "Programme: Brush Strokes",
-      "BBC One",
-      "1986-1991",
-      "Episode: Series 5 Episode 8",
-      "Storyline: Veronica Marcello Sicily Departure",
-      "Correct fact: Sicily",
-      "Character incident: Veronica Marcello Sicily Departure",
-      "Episode subject: Veronica Marcello Sicily Departure",
-      "Plot detail: Veronica Marcello Sicily Departure",
-      "Episode or period: Series 5 Episode 8",
-      "Jacko and Bainbridge's"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39830",
+    "id": "tv_39824",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, who is revealed to be expecting a baby with Zoë's unfaithful husband Kevin?",
@@ -1262,7 +1065,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39831",
+    "id": "tv_39825",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what earlier tragedy explains why Alec Callender understands bereavement?",
@@ -1295,7 +1098,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39832",
+    "id": "tv_39826",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, which kind of show does Alec invite Zoë to see after their awkward family encounters?",
@@ -1328,7 +1131,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39833",
+    "id": "tv_39827",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, whom does Simone invite to Sunday lunch hoping to pair her with her widowed father?",
@@ -1361,7 +1164,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39834",
+    "id": "tv_39828",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, who accompanies Alec to the theatre when Zoë sprains her ankle and cannot go?",
@@ -1394,7 +1197,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39835",
+    "id": "tv_39829",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what theatrical animal costume does Alec put on to amuse Zoë?",
@@ -1427,7 +1230,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39836",
+    "id": "tv_39830",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, which game does Alec take up to seem more athletic for Zoë?",
@@ -1460,7 +1263,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39837",
+    "id": "tv_39831",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, whom does Simone mistakenly believe Zoë is dating at Alec's birthday tea?",
@@ -1493,7 +1296,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39838",
+    "id": "tv_39832",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, which birthday is Alec celebrating when Zoë first meets his family?",
@@ -1526,7 +1329,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39839",
+    "id": "tv_39833",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, where do Alec and Zoë spend the night instead of staying at the hotel Alec loses confidence about?",
@@ -1559,7 +1362,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39840",
+    "id": "tv_39834",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what kind of property does Miles Henty offer to lend Hilary and her boyfriend?",
@@ -1592,7 +1395,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39841",
+    "id": "tv_39835",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, which document's arrival causes Alec to visit Zoë expecting to celebrate her divorce?",
@@ -1625,7 +1428,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39842",
+    "id": "tv_39836",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, with what sort of tradesman has Miles Henty's wife Annabel run away?",
@@ -1658,7 +1461,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39843",
+    "id": "tv_39837",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, why does Zoë regret introducing Alec to her parents?",
@@ -1691,7 +1494,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39844",
+    "id": "tv_39838",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what practical skill does Alec attempt to teach Zoë, with frustrating results?",
@@ -1724,7 +1527,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39845",
+    "id": "tv_39839",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what illegal activity does Alec mistakenly suspect Miss Flood of in Time After Time?",
@@ -1757,7 +1560,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39846",
+    "id": "tv_39840",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, who moves in with Miss Flood after quarrelling with her parents?",
@@ -1790,7 +1593,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39847",
+    "id": "tv_39841",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, whom does Alec envy when Zoë befriends a new teacher from abroad?",
@@ -1823,7 +1626,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39848",
+    "id": "tv_39842",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, who arranges a Valentine's dinner to try to bring separated Alec and Zoë back together?",
@@ -1856,7 +1659,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39849",
+    "id": "tv_39843",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December's Christmas special, what series of crimes gives Alec the large case he has long wanted?",
@@ -1889,7 +1692,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39850",
+    "id": "tv_39844",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what does Alec propose to Zoë after they have been together for a year?",
@@ -1922,7 +1725,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39851",
+    "id": "tv_39845",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, whose death does Miss Flood mark by buying flowers in That'll Be The Day?",
@@ -1955,7 +1758,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39852",
+    "id": "tv_39846",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, who temporarily runs Alec's office when Miss Flood goes to care for her mother?",
@@ -1988,7 +1791,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39853",
+    "id": "tv_39847",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what type of tradesman gives Alec and Zoë trouble after they buy a house?",
@@ -2021,40 +1824,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39854",
-    "category": "Television",
-    "programme": "May to December",
-    "question": "In May to December, which younger relative of Miss Flood arrives and distracts Hilary in It's All In The Game?",
-    "answers": [
-      "Her son Peter",
-      "Her grandson Jamie",
-      "Her nephew Anthony",
-      "Her cousin Kevin"
-    ],
-    "correctAnswer": "Her nephew Anthony",
-    "difficulty": "Hard",
-    "tags": [
-      "Television",
-      "British Television",
-      "Comedy",
-      "Sitcom",
-      "May to December",
-      "Programme: May to December",
-      "BBC One",
-      "1989-1994",
-      "Episode: S3E4 It's All In The Game",
-      "Storyline: Vera Nephew Anthony Arrives",
-      "Correct fact: Her nephew Anthony",
-      "Character incident: Vera Nephew Anthony Arrives",
-      "Episode subject: Vera Nephew Anthony Arrives",
-      "Plot detail: Vera Nephew Anthony Arrives",
-      "Episode or period: S3E4 It's All In The Game",
-      "Alec Callender and Zoe Angell"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_39855",
+    "id": "tv_39848",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, whose approaching visit makes Zoë worry about comparisons with Alec's late wife?",
@@ -2087,7 +1857,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39856",
+    "id": "tv_39849",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, which hospital event makes Alec understand why Jamie's office work has been poor?",
@@ -2120,7 +1890,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39857",
+    "id": "tv_39850",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, which relative admits to himself that he has developed feelings for Zoë while staying with the couple?",
@@ -2153,7 +1923,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39858",
+    "id": "tv_39851",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, who announces a pregnancy shortly after Alec and Zoë return from honeymoon?",
@@ -2186,7 +1956,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39859",
+    "id": "tv_39852",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what nationality is Clothilde, the new au pair who attracts Jamie's interest?",
@@ -2219,7 +1989,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39860",
+    "id": "tv_39853",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, whom does Miss Flood nervously prepare to meet as her relationship with Gerald develops?",
@@ -2252,7 +2022,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39861",
+    "id": "tv_39854",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what stray animal is welcomed into Alec and Zoë's home after their miscarriage?",
@@ -2285,7 +2055,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39862",
+    "id": "tv_39855",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, which couple reconcile as Miss Flood prepares for her wedding?",
@@ -2318,7 +2088,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39863",
+    "id": "tv_39856",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, who decides to start a business while Miss Flood is preparing to marry?",
@@ -2351,7 +2121,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39864",
+    "id": "tv_39857",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what extended leave does Alec take after baby Fleur's birth, to Zoë's frustration?",
@@ -2384,7 +2154,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39865",
+    "id": "tv_39858",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, which other man is Debbie seeing when Roy Morgan Jones proposes?",
@@ -2417,7 +2187,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39866",
+    "id": "tv_39859",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what condition troubles Zoë after the birth of Fleur?",
@@ -2450,7 +2220,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39867",
+    "id": "tv_39860",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, which secretary suspects she may be pregnant in The Best Is Yet To Come?",
@@ -2483,7 +2253,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39868",
+    "id": "tv_39861",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, who temporarily fills in at Alec's office after Hilary leaves?",
@@ -2516,7 +2286,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39869",
+    "id": "tv_39862",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what childcare worker do Alec and Zoë struggle to find after Zoë goes back to work?",
@@ -2549,7 +2319,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39870",
+    "id": "tv_39863",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, who is asked to give a careers talk at Zoë's school?",
@@ -2582,7 +2352,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39871",
+    "id": "tv_39864",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what career does Rosie hope to pursue against Miss Flood's better judgement?",
@@ -2615,7 +2385,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39872",
+    "id": "tv_39865",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, which relative does Zoë attempt to find a new date for in the penultimate episode?",
@@ -2648,7 +2418,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39873",
+    "id": "tv_39866",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, how many years of employment at Alec's firm is Miss Flood celebrating in the finale?",
@@ -2681,7 +2451,7 @@ const auditAdditions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_39874",
+    "id": "tv_39867",
     "category": "Television",
     "programme": "May to December",
     "question": "In May to December, what is the first name of the man Alec suspects Zoë is seeing in the series finale?",
