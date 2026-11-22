@@ -251,8 +251,10 @@ function addAuditRows(rows, programme, era) {
     const parts = row.split('|').map(x => x.trim());
     if (parts.length !== 8 || parts.some(x => !x)) throw Error('Bad audit row '+programme+' '+index);
     const [stem, correctAnswer, a, b, c, episode, focus, context] = parts;
-    const question = stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB')) ? stem :
-      'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1);
+    const episodeIntro = /^In (.+?), (.+)$/.exec(stem);
+    const question = episodeIntro ? 'In '+programme+', during "'+episodeIntro[1]+'", '+episodeIntro[2] :
+      (stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB'))
+       ? stem : 'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1));
     const answers=[a,b,c];
     answers.splice(questions.length % 4,0,correctAnswer);
     const tags=['Television','British Television','British Sitcom','Comedy','Sitcom',
