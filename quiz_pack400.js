@@ -5,7 +5,10 @@
 'use strict';
 
 const FIRST_ID = 22086;
-const commonTags = ['television', 'British TV', 'BBC One', 'Baptiste', 'The Missing spin-off', 'crime drama'];
+const PROGRAMME = 'Baptiste';
+const commonTags = ['Television','British Television','BBC One','Crime Drama',
+  'The Missing spin-off',PROGRAMME,'Programme: '+PROGRAMME,
+  '2019 and 2021 series','Two Brothers Pictures'];
 
 // Each row: question | correct answer | three distractors | difficulty | seven precise tags.
 // Exported questions name Baptiste so they work in mixed-topic quizzes too.
@@ -159,12 +162,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 400: repeated answer at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 400: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 400: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -174,4 +178,345 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Baptiste original completed spin-off: six episodes in 2019 and six in 2021.
+// Original tv_22086–tv_22209 unchanged; append new IDs from tv_41326.
+// Supporting 2019 cast: https://www.rottentomatoes.com/tv/baptiste/s01/cast-and-crew
+// 2021 cast: https://tellymix.co.uk/baptiste-cast-revealed-for-series-2-of-bbc-one-show/
+// https://watch.plex.tv/en-GB/show/baptiste/credits
+// Original production credits: https://www.twobrotherspictures.com/production-page-baptiste
+// 2021 production credits: https://www.twobrotherspictures.com/baptiste-series-2
+// First broadcasts: https://thetvdb.com/series/baptiste/allseasons/official
+// Score: https://coolmusicltd.com/wp-content/uploads/2025/06/DominikScherrer.pdf
+// No unverified awards are added; the main storylines are in the 124 originals.
+const audit400Cast=[
+  [
+    "1",
+    "Richard Stratton",
+    "Nicholas Woodeson",
+    "m",
+    "Edward Stratton's father"
+  ],
+  [
+    "1",
+    "Greg",
+    "Trystan Gravelle",
+    "m",
+    "Amsterdam supporting character"
+  ],
+  [
+    "1",
+    "Lucas Meyer",
+    "Marc de Hond",
+    "m",
+    "Genevieve's injured partner"
+  ],
+  [
+    "1",
+    "Sara Baptiste",
+    "Camille Schotte",
+    "f",
+    "Julien's daughter"
+  ],
+  [
+    "1",
+    "Nicolae",
+    "Zahary Baharov",
+    "m",
+    "Romanian gang figure"
+  ],
+  [
+    "1",
+    "Herman de Boer",
+    "Gijs de Lange",
+    "m",
+    "tulip-farm family"
+  ],
+  [
+    "1",
+    "Matty",
+    "Boyd van den Bogert",
+    "m",
+    "Natalie Rose's son"
+  ],
+  [
+    "1",
+    "Cristina",
+    "Freya Kingsley",
+    "f",
+    "Natalie Rose's younger sister"
+  ],
+  [
+    "1",
+    "Lina",
+    "Martha Canga Antonio",
+    "f",
+    "Amsterdam supporting role"
+  ],
+  [
+    "1",
+    "Daniela",
+    "Maja Laskowska",
+    "f",
+    "Amsterdam supporting role"
+  ],
+  [
+    "1",
+    "Thijs de Boer",
+    "Teun Kuilboer",
+    "m",
+    "de Boer family"
+  ],
+  [
+    "2",
+    "Sally",
+    "Michelle Duncan",
+    "f",
+    "supporting character in Budapest"
+  ],
+  [
+    "2",
+    "Michael Agoston",
+    "Peter Sullivan",
+    "m",
+    "Kamilla Agoston's husband"
+  ]
+];
+const audit400Facts=[
+  [
+    "Production",
+    "Which additional writer worked on the first series alongside Harry and Jack Williams?",
+    "Kelly Jones",
+    [
+      "Catherine Moulton",
+      "Sally Wainwright",
+      "Alice Birch"
+    ],
+    "Series 1 writing credits"
+  ],
+  [
+    "Production",
+    "Which director shared responsibility for the original 2019 series with Börkur Sigþórsson?",
+    "Jan Matthys",
+    [
+      "Hong Khaou",
+      "Thomas Napper",
+      "Marc Evans"
+    ],
+    "2019 directors"
+  ],
+  [
+    "Production",
+    "Which Icelandic director worked on the first series alongside Jan Matthys?",
+    "Börkur Sigþórsson",
+    [
+      "Hong Khaou",
+      "Lenny Abrahamson",
+      "Thomas Napper"
+    ],
+    "Series 1 directing"
+  ],
+  [
+    "Production",
+    "Who was credited as producer for both series?",
+    "John Griffin",
+    [
+      "Christopher Aird",
+      "Tommy Bulfin",
+      "Gareth Morgan"
+    ],
+    "BBC series producer"
+  ],
+  [
+    "Production",
+    "Which executive producer represented Two Brothers Pictures alongside Harry and Jack Williams?",
+    "Christopher Aird",
+    [
+      "John Griffin",
+      "Tommy Bulfin",
+      "Harry Bradbeer"
+    ],
+    "Two Brothers executive producer"
+  ],
+  [
+    "Production",
+    "Which BBC executive producer was credited on the first series?",
+    "Tommy Bulfin",
+    [
+      "John Griffin",
+      "Christopher Aird",
+      "Ed Guiney"
+    ],
+    "BBC executive producer"
+  ],
+  [
+    "Production",
+    "Which additional writer joined Harry and Jack Williams for the second series?",
+    "Catherine Moulton",
+    [
+      "Kelly Jones",
+      "Sally Wainwright",
+      "Alice Birch"
+    ],
+    "Series 2 writing credits"
+  ],
+  [
+    "Production",
+    "Which director worked on the 2021 series alongside Thomas Napper?",
+    "Hong Khaou",
+    [
+      "Jan Matthys",
+      "Börkur Sigþórsson",
+      "Marc Evans"
+    ],
+    "2021 directors"
+  ],
+  [
+    "Production",
+    "Which director worked on the 2021 series alongside Hong Khaou?",
+    "Thomas Napper",
+    [
+      "Jan Matthys",
+      "Börkur Sigþórsson",
+      "Keith Washington"
+    ],
+    "2021 directors"
+  ],
+  [
+    "Production",
+    "Which composer scored both series of the drama?",
+    "Dominik Scherrer",
+    [
+      "Murray Gold",
+      "Rob Lane",
+      "Stephen Rennicks"
+    ],
+    "Music for both series"
+  ],
+  [
+    "Production",
+    "Which distributor handled international sales of the BBC crime drama?",
+    "All3Media International",
+    [
+      "BBC Studios",
+      "Banijay Rights",
+      "Fremantle"
+    ],
+    "International distribution"
+  ],
+  [
+    "Broadcast",
+    "On which date did the first series premiere on BBC One?",
+    "17 February 2019",
+    [
+      "24 February 2019",
+      "3 March 2019",
+      "24 March 2019"
+    ],
+    "2019 premiere"
+  ],
+  [
+    "Broadcast",
+    "On which date did the original six-episode series finish its first BBC One run?",
+    "24 March 2019",
+    [
+      "17 March 2019",
+      "31 March 2019",
+      "10 March 2019"
+    ],
+    "2019 finale"
+  ],
+  [
+    "Broadcast",
+    "On which date did the final six-part series begin on BBC One?",
+    "18 July 2021",
+    [
+      "11 July 2021",
+      "25 July 2021",
+      "1 August 2021"
+    ],
+    "2021 premiere"
+  ],
+  [
+    "Broadcast",
+    "On which date did the concluding episode first air on BBC One?",
+    "22 August 2021",
+    [
+      "15 August 2021",
+      "29 August 2021",
+      "8 August 2021"
+    ],
+    "2021 finale"
+  ],
+  [
+    "Episode titles",
+    "What is the title of the third episode of the 2019 series?",
+    "For Blood",
+    [
+      "Lucy",
+      "Shell",
+      "Measure of a Man"
+    ],
+    "Series 1 episode 3"
+  ],
+  [
+    "Episode titles",
+    "What is the title of the fifth episode of the 2019 series?",
+    "Lucy",
+    [
+      "For Blood",
+      "Into the Sand",
+      "Vertrouwen"
+    ],
+    "Series 1 episode 5"
+  ]
+];
+const audit400Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+const audit400ActorPools={
+ m:audit400Cast.filter(p=>p[3]==='m').map(p=>p[2]),
+ f:audit400Cast.filter(p=>p[3]==='f').map(p=>p[2])
+};
+function addAudit400(stem,ans,wrongs,kind,focus,series){
+ if(wrongs.length!==3||new Set([ans,...wrongs].map(audit400Norm)).size!==4)
+   throw Error('Bad Pack 400 options: '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrongs];answers.splice(questions.length%4,0,ans);
+ const tags=['Television','British Television','BBC One','Crime Drama',
+ PROGRAMME,'Programme: '+PROGRAMME,'2019 and 2021 original run',
+ 'The Missing spin-off','Type: '+kind,'Focus: '+focus,'Series: '+series,
+ 'Correct answer: '+ans,'Creator: Harry and Jack Williams',
+ 'Produced by Two Brothers Pictures','Complete 12-episode programme'];
+ questions.push({id:'tv_'+(41326+questions.length-124),
+   category:'Television',programme:PROGRAMME,question,answers,
+   correctAnswer:ans,difficulty:'Medium',tags,dailyEligible:true});
+}
+for(const [i,[series,role,actor,sex,focus]] of audit400Cast.entries()){
+ const pool=audit400ActorPools[sex].filter(a=>a!==actor);
+ if(pool.length<3)throw Error('Insufficient cast alternatives for '+role);
+ const start=(i*5+role.length)%pool.length;
+ const wrongs=[pool[start],pool[(start+1)%pool.length],pool[(start+2)%pool.length]];
+ addAudit400('Which '+(sex==='f'?'actress':'actor')+
+ ' played '+role+' in Series '+series+'?',
+ actor,wrongs,'Supporting cast','Character '+role+' / '+focus,series);
+}
+for(const [kind,stem,answer,wrongs,focus] of audit400Facts)
+ addAudit400(stem,answer,wrongs,kind,focus,
+ kind==='Episode titles'||focus.includes('2019')?'1':
+ (kind==='Broadcast'&&focus.includes('2021')?'2':'1 and 2'));
+const audit400Ids=new Set(),audit400Texts=new Set();
+for(const q of questions){
+ const qKey=audit400Norm(q.question);
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ !qKey.includes(audit400Norm(PROGRAMME))||
+ q.answers.length!==4||new Set(q.answers.map(audit400Norm)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ audit400Ids.has(q.id)||audit400Texts.has(qKey)||
+ qKey.includes(audit400Norm(q.correctAnswer)))
+ throw Error('Pack 400 validation failed: '+q.id);
+ audit400Ids.add(q.id);audit400Texts.add(qKey);
+}
+module.exports=questions;
