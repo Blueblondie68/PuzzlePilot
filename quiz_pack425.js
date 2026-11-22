@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 425
 // All Saints (Australia): Season 6 (2003), 43 episodes.
 // Follows Pack 424. First ID: tv_24502.
-// WordPad-ready CommonJS. All Saints remains unfinished in the TV tracker.
+// WordPad-ready CommonJS. All Saints ended in 2009; later seasons still require auditing.
 // Each row: question | correct | three wrong answers | difficulty | seven specific tags.
 // Storylines cross-checked with the 2003 episode guides and cast listings.
 'use strict';
@@ -131,9 +131,42 @@ Who was stalked through the hospital by an armed gunman in Never Forget?|Charlot
 Which hospital celebration ended tragically for Regina and Morris in Never Forget?|Their anniversary|Their engagement party|A retirement ceremony|A birthday dinner|Medium|Never Forget|Episode 43|Regina Butcher|Morris Florist|Anniversary|Tragic Event|Season Finale
 What rule did Terri break in the Season 6 finale to save her superior's life?|Hospital rules|Immigration rules|Court reporting rules|University examination rules|Hard|Never Forget|Episode 43|Terri Sullivan|Supervisor Emergency|Clinical Ethics|Rule Breaking|Life Saving Choice`;
 
+
+// Series 6 research audit: episode, cast, production and 2004 Logie nominations.
+// Preserve all original question IDs and answer data; new questions use unused IDs.
+const AUDIT_ORIGINAL_COUNT = 116;
+const AUDIT_FIRST_ID = 42209;
+const auditFacts = `Which All Saints actress was nominated for the Gold Logie at the 2004 TV Week awards?|Georgie Parker|Libby Tanner|Judith McGrath|Tammy MacIntosh|Medium|2004 Logies|Georgie Parker|Gold Logie nomination|Terri Sullivan|popular personality|Australian awards|acting recognition
+Which All Saints actor received a 2004 Logie nomination for Most Popular Actor?|Erik Thomson|Conrad Coleby|Christopher Gabardi|Martin Lynes|Medium|2004 Logies|Erik Thomson|Most Popular Actor nomination|Mitch Stevens|Australian awards|acting recognition|cast honour
+For which prestigious industry-voted drama prize was All Saints nominated at the 2004 Logies?|Most Outstanding Drama Series|Most Outstanding Documentary Series|Most Outstanding Comedy Program|Most Outstanding News Coverage|Medium|2004 Logies|Most Outstanding Drama Series|award nomination|Australian television|industry vote|drama recognition|not a win
+In which audience-voted drama category did All Saints receive a nomination at the 2004 Logies?|Most Popular Australian Drama Series|Most Popular Overseas Drama Series|Most Popular Comedy Series|Most Popular Children's Series|Medium|2004 Logies|Most Popular Australian Drama Series|award nomination|public vote|Seven Network|Australian television|not a win
+Who directed the All Saints Series 6 premiere Trust?|Scott Feeney|Peter Fisk|Catherine Roden|Geoffrey Nottage|Medium|Scott Feeney|Trust|2003 premiere|episode director|production credits|season six|behind the scenes
+Who wrote the All Saints Series 6 finale Never Forget?|David Hannam|Sarah Walker|John Banas|Denise Morgan|Medium|David Hannam|Never Forget|2003 finale|episode writer|screenplay credit|production history|season six
+Who directed the All Saints Series 6 finale Never Forget?|Peter Fisk|Scott Feeney|Aarne Neeme|Jean Pierre Mignon|Medium|Peter Fisk|Never Forget|2003 finale|episode director|production credit|season six|behind the scenes
+Which actor portrayed intern Angus Drummond in All Saints Series 6?|Nick Flint|Fletcher Humphrys|Henry Nixon|Christopher Gabardi|Medium|Nick Flint|Angus Drummond|2003 cast|medical intern|new character|actor identification|Season Six
+Which All Saints actor played hospital cleaner Greg Roberts during Series 6?|Brett Stiller|John Noble|Josh Quong Tart|Ben Tari|Medium|Brett Stiller|Greg Roberts|2003 cast|hospital cleaner|late season|actor identification|violent story
+Who portrayed ambulance officer Harri Stapleton in All Saints Series 6?|Jessica Gower|Natasha Beaumont|Rachel McNamara|Jenni Baird|Medium|Jessica Gower|Harri Stapleton|2003 cast|ambulance officer|temporary partner|actor identification|new romance
+Which All Saints guest actor portrayed Luke Forlano's father Sal in Series 6?|Helmut Bakaitis|John Noble|Patrick Thompson|Robert Coleby|Medium|Helmut Bakaitis|Sal Forlano|Luke Forlano|2003 cast|father character|kidney donation|guest actor
+Which actress played Terri Sullivan's troubled neighbour Carmen Shaw in All Saints Series 6?|Angela Punch McGregor|Kate Sheil|Penne Hackforth Jones|Joy Smithers|Hard|Angela Punch McGregor|Carmen Shaw|Terri Sullivan|2003 guest cast|agoraphobia|neighbour storyline|actor
+Which actress portrayed troubled teenager Sasha Netterfield in All Saints Series 6?|Victoria Thaine|Jessica Gower|Emma Coppin|Rachael Coopes|Medium|Victoria Thaine|Sasha Netterfield|Charlotte Beaumont|2003 guest cast|teenage patient|actor identification|hospital drama
+In All Saints episode Trust which rare condition was diagnosed in a patient who caused tension between Mitch and the new intern?|Amyloidosis|Motor neurone disease|Multiple sclerosis|Lupus|Hard|Trust|episode one|Mitch Stevens|Angus Drummond|amyloidosis|diagnostic disagreement|rare condition
+In All Saints episode Destiny's Child what serious finding led Paula Morgan to end her pregnancy?|Severe foetal abnormality|An ectopic pregnancy|A multiple pregnancy|A positive diabetes test|Medium|Destinys Child|Paula Morgan|ultrasound|foetal abnormality|termination|pregnancy decision|episode three
+In All Saints episode All Our Tomorrows what prognosis did Mitch receive after his brain biopsy?|His tumour was deemed inoperable|The tumour had vanished|His symptoms were only caused by stress|He had no need for further treatment|Medium|All Our Tomorrows|Mitch Stevens|brain biopsy|inoperable tumour|terminal prognosis|Terri Sullivan|episode five
+In All Saints episode The Last Supper which two colleagues married at a surprise ceremony?|Terri Sullivan and Mitch Stevens|Bron Craig and Ben Markham|Luke Forlano and Paula Morgan|Regina Butcher and Morris|Medium|The Last Supper|Terri Sullivan|Mitch Stevens|surprise wedding|celebrant|Von Ryan|episode eight
+In All Saints episode Only the Good Die Young what event ultimately caused Mitch Stevens's death following brain surgery?|Cardiac arrest|A hospital fire|A fall from a staircase|A transfusion reaction|Medium|Only the Good Die Young|Mitch Stevens|brain surgery|cardiac arrest|tragic death|Terri Sullivan|episode nine
+In All Saints episode Vale how was new nurse Sterling McCormack related to hospital executive Colin Blackburn?|He was Colin's nephew|He was Colin's brother|He was Colin's son|He was Colin's cousin|Medium|Vale|Sterling McCormack|Colin Blackburn|nephew|hidden family connection|hospital executive|episode ten
+In All Saints episode Vale which ambulance officer was betrayed when Rebecca Green had an affair with Jared Levine?|Scott Zinenko|Ben Markham|Alex Kearns|Harri Stapleton|Medium|Vale|Rebecca Green|Jared Levine|Scott Zinenko|infidelity|funeral wake|episode ten
+In All Saints episode The Art of Flowers what housing crisis struck Terri Sullivan while she grieved for Mitch?|Her landlord evicted her|Her flat was destroyed by fire|Her rent doubled overnight|Her house was sold at auction|Medium|The Art of Flowers|Terri Sullivan|landlord|eviction|grief|Mitch Stevens|episode eleven
+In All Saints episode Seeking Asylum which ward clerk was sexually assaulted and left traumatised?|Regina Butcher|Frances Regan|Paula Morgan|Leanne Curtis|Medium|Seeking Asylum|Regina Butcher|sexual assault|ward clerk|hospital employee|trauma|episode fifteen
+In All Saints episode In Control how did Rebecca Green interfere with evidence from her father's crash?|She took and discarded his blood alcohol sample|She altered a police statement|She swapped ambulance patient names|She erased a hospital security video|Medium|In Control|Rebecca Green|Lindsay Green|blood alcohol sample|concealing evidence|family loyalty|episode sixteen
+In All Saints episode A Second Look why did Charlotte Beaumont appear intoxicated during her hospital shift?|Someone had put party drugs into her drink|She had drunk alcohol before work|She had taken an incorrect prescription|She was suffering from food poisoning|Medium|A Second Look|Charlotte Beaumont|spiked drink|party drugs|professional reputation|hospital staff|episode twenty six
+In All Saints episode Too Close for Comfort who was responsible for the explosion in the hospital car park?|A disgruntled patient|A passing taxi driver|An escaped prisoner|A hospital employee on strike|Medium|Too Close for Comfort|disgruntled patient|car park bombing|hospital threat|Ward 17|explosive device|episode thirty
+In All Saints episode Harm's Way which troubled young woman had been taken into Charlotte Beaumont's home?|Sasha Netterfield|Lucy Stevens|Carmen Shaw|Kirsten Sutton|Medium|Harms Way|Charlotte Beaumont|Sasha Netterfield|teenage patient|protective home|assault aftermath|episode thirty nine
+In All Saints episode Doctor of Choice which two ambulance officers were romantically involved while working together?|Alex Kearns and Harri Stapleton|Scott Zinenko and Rebecca Green|Ben Markham and Bron Craig|Nelson Curtis and Paula Morgan|Medium|Doctor of Choice|Alex Kearns|Harri Stapleton|ambulance romance|temporary partners|episode thirty eight|relationship development`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -148,9 +181,14 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In ')
+      ? 'In All Saints episode ' + question.slice(3)
+      : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
