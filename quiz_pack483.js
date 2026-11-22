@@ -1,9 +1,14 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 483: Another World, Part 3 (1981–1989)
-// 101 researched questions: early-1980s Cory/Frame family changes; Felicia, Cass,
+// 139 audited questions: original 101 plus 38 story, cast and award additions.
+// Early-1980s Cory/Frame family changes; Felicia, Cass,
 // Love/Hudson twins; late-1980s Cory family revival, HIV storyline, and Jason Frame murder.
 // Continuing after the restored and Render-approved Pack 482 (1975–1980; IDs tv_26900–tv_26975).
-// IDs tv_26976–tv_27076. The 1990–1999 era remains for Pack 484 and beyond.
+// Original IDs tv_26976–tv_27076; audit IDs tv_42820–tv_42857.
+// Subsequent decade is separately covered in Pack 484.
 // DO NOT mark Another World purple until the complete later decade is covered.
+// Original sources 18 Nov 2026; 22 Nov 2026 audit: Soap Opera Digest,
+// Encyclopedia.com, LA Times 1986 Emmys, Grammy.com, 1989 Daytime Emmy records,
+// historic cast/plot guides. All original IDs and correct answers retained.
 // Sources consulted 18 November 2026:
 // https://www.soapoperadigest.com/content/remembering-another-world-on-the-25th-anniversary-of-its-finale/
 // https://daytimeconfidential.com/2015/05/12/remembering-our-suds-another-world
@@ -19,7 +24,7 @@ const questions = [
     "id": "tv_26976",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which future Oscar-winning actor portrayed Roy Bingham in the early 1980s?",
+    "question": "In Another World, which future Oscar-winning actor portrayed Roy Bingham in the early 1980s?",
     "answers": [
       "Morgan Freeman",
       "Denzel Washington",
@@ -49,7 +54,7 @@ const questions = [
     "id": "tv_26977",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which couple shared the 1983 double wedding ceremony with Mac and Rachel?",
+    "question": "In Another World, which couple shared the 1983 double wedding ceremony with Mac and Rachel?",
     "answers": [
       "Michael Hudson and Donna Love",
       "Sandy Cory and Blaine Ewing",
@@ -79,7 +84,7 @@ const questions = [
     "id": "tv_26978",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played Mac's son Sandy Cory during the early 1980s?",
+    "question": "In Another World, which actor played Mac's son Sandy Cory during the early 1980s?",
     "answers": [
       "Christopher Rich",
       "Thomas Ian Griffith",
@@ -109,7 +114,7 @@ const questions = [
     "id": "tv_26979",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which high-society schemer was a daughter of a countess and repeatedly disrupted Bay City romances?",
+    "question": "In Another World, which high-society schemer was a daughter of a countess and repeatedly disrupted Bay City romances?",
     "answers": [
       "Donna Love",
       "Amanda Cory",
@@ -139,7 +144,7 @@ const questions = [
     "id": "tv_26980",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress became especially associated with the part of Cecile DePoulignac?",
+    "question": "In Another World, which actress became especially associated with the part of Cecile DePoulignac?",
     "answers": [
       "Judi Evans",
       "Joanna Going",
@@ -169,7 +174,7 @@ const questions = [
     "id": "tv_26981",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which woman was Cecile DePoulignac's principal rival over Jamie Frame and Sandy Cory?",
+    "question": "In Another World, which woman was Cecile DePoulignac's principal rival over Jamie Frame and Sandy Cory?",
     "answers": [
       "Olivia Matthews",
       "Blaine Ewing",
@@ -199,7 +204,7 @@ const questions = [
     "id": "tv_26982",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the profession of glamorous newcomer Felicia Gallant?",
+    "question": "In Another World, what was the profession of glamorous newcomer Felicia Gallant?",
     "answers": [
       "Romance novelist",
       "Surgeon",
@@ -229,7 +234,7 @@ const questions = [
     "id": "tv_26983",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played Felicia Gallant from the 1980s until the series ended?",
+    "question": "In Another World, which actress played Felicia Gallant from the 1980s until the series ended?",
     "answers": [
       "Anna Stuart",
       "Victoria Wyndham",
@@ -259,7 +264,7 @@ const questions = [
     "id": "tv_26984",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which Bay City attorney was Felicia Gallant's longstanding best friend?",
+    "question": "In Another World, which Bay City attorney was Felicia Gallant's longstanding best friend?",
     "answers": [
       "Brian Bancroft",
       "Michael Hudson",
@@ -289,7 +294,7 @@ const questions = [
     "id": "tv_26985",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor portrayed the charismatic lawyer Cass Winthrop?",
+    "question": "In Another World, which actor portrayed the charismatic lawyer Cass Winthrop?",
     "answers": [
       "Tom Eplin",
       "Stephen Schnetzer",
@@ -319,7 +324,7 @@ const questions = [
     "id": "tv_26986",
     "category": "TV",
     "topic": "Another World",
-    "question": "What female alias did Cass Winthrop use while disguised to evade gangsters?",
+    "question": "In Another World, what female alias did Cass Winthrop use while disguised to evade gangsters?",
     "answers": [
       "Krystal Lake",
       "Mona Lisa",
@@ -349,7 +354,7 @@ const questions = [
     "id": "tv_26987",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the surname of journalist Kathleen, who married Cass Winthrop?",
+    "question": "In Another World, what was the surname of journalist Kathleen, who married Cass Winthrop?",
     "answers": [
       "Hudson",
       "Cory",
@@ -379,7 +384,7 @@ const questions = [
     "id": "tv_26988",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played the original Kathleen McKinnon opposite Cass?",
+    "question": "In Another World, which actress played the original Kathleen McKinnon opposite Cass?",
     "answers": [
       "Jensen Buchanan",
       "Anne Heche",
@@ -409,7 +414,7 @@ const questions = [
     "id": "tv_26989",
     "category": "TV",
     "topic": "Another World",
-    "question": "What disaster led Cass to believe his bride Kathleen had died after their wedding?",
+    "question": "In Another World, what disaster led Cass to believe his bride Kathleen had died after their wedding?",
     "answers": [
       "A train derailment",
       "A plane crash",
@@ -439,7 +444,7 @@ const questions = [
     "id": "tv_26990",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which stylish Bay City matriarch was closely associated with actress Anna Stuart?",
+    "question": "In Another World, which stylish Bay City matriarch was closely associated with actress Anna Stuart?",
     "answers": [
       "Donna Love",
       "Iris Cory",
@@ -469,7 +474,7 @@ const questions = [
     "id": "tv_26991",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the first name of Donna Love's controlling father?",
+    "question": "In Another World, what was the first name of Donna Love's controlling father?",
     "answers": [
       "Mackenzie",
       "Eliot",
@@ -499,7 +504,7 @@ const questions = [
     "id": "tv_26992",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which two girls were revealed to be Donna Love's twins?",
+    "question": "In Another World, which two girls were revealed to be Donna Love's twins?",
     "answers": [
       "Josie and Olivia",
       "Sally and Blaine",
@@ -529,7 +534,7 @@ const questions = [
     "id": "tv_26993",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which of Donna Love's daughters was initially presented to the world as her younger sister?",
+    "question": "In Another World, which of Donna Love's daughters was initially presented to the world as her younger sister?",
     "answers": [
       "Paulina",
       "Marley",
@@ -559,7 +564,7 @@ const questions = [
     "id": "tv_26994",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who had separated Donna Love's twin daughters when they were infants?",
+    "question": "In Another World, who had separated Donna Love's twin daughters when they were infants?",
     "answers": [
       "Reginald Love",
       "Mac Cory",
@@ -589,7 +594,7 @@ const questions = [
     "id": "tv_26995",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which man turned out to be the father of Donna Love's twins?",
+    "question": "In Another World, which man turned out to be the father of Donna Love's twins?",
     "answers": [
       "John Hudson",
       "Grant Harrison",
@@ -619,7 +624,7 @@ const questions = [
     "id": "tv_26996",
     "category": "TV",
     "topic": "Another World",
-    "question": "What work did Michael Hudson do on the Love family's estate as a young man?",
+    "question": "In Another World, what work did Michael Hudson do on the Love family's estate as a young man?",
     "answers": [
       "Chauffeur",
       "Estate lawyer",
@@ -649,7 +654,7 @@ const questions = [
     "id": "tv_26997",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played businessman Michael Hudson for much of the later series?",
+    "question": "In Another World, which actor played businessman Michael Hudson for much of the later series?",
     "answers": [
       "Mark Pinter",
       "Kale Browne",
@@ -679,7 +684,7 @@ const questions = [
     "id": "tv_26998",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was Michael Hudson's brother, long believed lost in the Vietnam War?",
+    "question": "In Another World, who was Michael Hudson's brother, long believed lost in the Vietnam War?",
     "answers": [
       "John Hudson",
       "Jake McKinnon",
@@ -709,7 +714,7 @@ const questions = [
     "id": "tv_26999",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor portrayed the Vietnam veteran John Hudson?",
+    "question": "In Another World, which actor portrayed the Vietnam veteran John Hudson?",
     "answers": [
       "Charles Keating",
       "Russell Todd",
@@ -769,7 +774,7 @@ const questions = [
     "id": "tv_27001",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress later took over both twin roles after Ellen Wheeler?",
+    "question": "In Another World, which actress later took over both twin roles after Ellen Wheeler?",
     "answers": [
       "Sandra Ferguson",
       "Anne Heche",
@@ -799,7 +804,7 @@ const questions = [
     "id": "tv_27002",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which McKinnon man was Vicky's early romantic and scheming partner?",
+    "question": "In Another World, which McKinnon man was Vicky's early romantic and scheming partner?",
     "answers": [
       "Jake",
       "Vince",
@@ -829,7 +834,7 @@ const questions = [
     "id": "tv_27003",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played Jake McKinnon in the original soap and later on As the World Turns?",
+    "question": "In Another World, which actor played Jake McKinnon in the original soap and later on As the World Turns?",
     "answers": [
       "Paul Michael Valley",
       "Mark Pinter",
@@ -859,7 +864,7 @@ const questions = [
     "id": "tv_27004",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played Sally Ewing during her romance with Catlin?",
+    "question": "In Another World, which actress played Sally Ewing during her romance with Catlin?",
     "answers": [
       "Amy Carlson",
       "Nancy Frangione",
@@ -889,7 +894,7 @@ const questions = [
     "id": "tv_27005",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played romantic lead Catlin Ewing?",
+    "question": "In Another World, which actor played romantic lead Catlin Ewing?",
     "answers": [
       "David Forsyth",
       "Thomas Ian Griffith",
@@ -919,7 +924,7 @@ const questions = [
     "id": "tv_27006",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the name of the character who came to Bay City to study music and confronted an HIV diagnosis?",
+    "question": "In Another World, what was the name of the character who came to Bay City to study music and confronted an HIV diagnosis?",
     "answers": [
       "Dawn Rollo",
       "Lisa Grady",
@@ -949,7 +954,7 @@ const questions = [
     "id": "tv_27007",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played Dawn Rollo's brother Chad?",
+    "question": "In Another World, which actor played Dawn Rollo's brother Chad?",
     "answers": [
       "Ricky Paull Goldin",
       "Kale Browne",
@@ -979,7 +984,7 @@ const questions = [
     "id": "tv_27008",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which performer portrayed Dawn Rollo in the pioneering AIDS-related storyline?",
+    "question": "In Another World, which performer portrayed Dawn Rollo in the pioneering AIDS-related storyline?",
     "answers": [
       "Joanna Going",
       "Alice Barrett",
@@ -1009,7 +1014,7 @@ const questions = [
     "id": "tv_27009",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor took over the role of Jamie Frame in 1986?",
+    "question": "In Another World, which actor took over the role of Jamie Frame in 1986?",
     "answers": [
       "Mark Mortimer",
       "Laurence Lau",
@@ -1039,7 +1044,7 @@ const questions = [
     "id": "tv_27010",
     "category": "TV",
     "topic": "Another World",
-    "question": "What career did Jamie Frame pursue after his return to Bay City in the mid-1980s?",
+    "question": "In Another World, what career did Jamie Frame pursue after his return to Bay City in the mid-1980s?",
     "answers": [
       "Medicine",
       "Law",
@@ -1069,7 +1074,7 @@ const questions = [
     "id": "tv_27011",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress took on the grown-up role of Amanda Cory in 1987?",
+    "question": "In Another World, which actress took on the grown-up role of Amanda Cory in 1987?",
     "answers": [
       "Carmen Duncan",
       "Jensen Buchanan",
@@ -1099,7 +1104,7 @@ const questions = [
     "id": "tv_27012",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was Amanda Cory's job when she fell for Sam Fowler?",
+    "question": "In Another World, what was Amanda Cory's job when she fell for Sam Fowler?",
     "answers": [
       "Police officer",
       "Restaurateur",
@@ -1129,7 +1134,7 @@ const questions = [
     "id": "tv_27013",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which aspiring artist and former limousine driver married Amanda Cory?",
+    "question": "In Another World, which aspiring artist and former limousine driver married Amanda Cory?",
     "answers": [
       "Jake McKinnon",
       "Sam Fowler",
@@ -1159,7 +1164,7 @@ const questions = [
     "id": "tv_27014",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was Sam Fowler's half-brother and one of Rachel's former loves?",
+    "question": "In Another World, who was Sam Fowler's half-brother and one of Rachel's former loves?",
     "answers": [
       "Mitch Blake",
       "Mac Cory",
@@ -1189,7 +1194,7 @@ const questions = [
     "id": "tv_27015",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress portrayed the psychic Lisa Grady, part of Jamie's late-1980s love triangle?",
+    "question": "In Another World, which actress portrayed the psychic Lisa Grady, part of Jamie's late-1980s love triangle?",
     "answers": [
       "Alice Barrett",
       "Anne Howard",
@@ -1219,7 +1224,7 @@ const questions = [
     "id": "tv_27016",
     "category": "TV",
     "topic": "Another World",
-    "question": "How was psychic Lisa Grady related to Felicia Gallant?",
+    "question": "In Another World, how was psychic Lisa Grady related to Felicia Gallant?",
     "answers": [
       "She was Felicia's sister",
       "She was Felicia's mother",
@@ -1249,7 +1254,7 @@ const questions = [
     "id": "tv_27017",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which daughter of Sharlene Frame began a teenage romance with Matthew Cory?",
+    "question": "In Another World, which daughter of Sharlene Frame began a teenage romance with Matthew Cory?",
     "answers": [
       "Dawn Rollo",
       "Josie Watts",
@@ -1279,7 +1284,7 @@ const questions = [
     "id": "tv_27018",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was Sharlene Frame's sister, whose death fuelled tensions with the Corys?",
+    "question": "In Another World, who was Sharlene Frame's sister, whose death fuelled tensions with the Corys?",
     "answers": [
       "Janice Frame",
       "Sally Ewing",
@@ -1309,7 +1314,7 @@ const questions = [
     "id": "tv_27019",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played the teenage Matthew Cory during the late-1980s family reboot?",
+    "question": "In Another World, which actor played the teenage Matthew Cory during the late-1980s family reboot?",
     "answers": [
       "Brian Krause",
       "Laurence Lau",
@@ -1339,7 +1344,7 @@ const questions = [
     "id": "tv_27020",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which troubled Frame relative was Sharlene's brother and became the victim of a Bay City murder mystery?",
+    "question": "In Another World, which troubled Frame relative was Sharlene's brother and became the victim of a Bay City murder mystery?",
     "answers": [
       "Evan Frame",
       "Jamie Frame",
@@ -1369,7 +1374,7 @@ const questions = [
     "id": "tv_27021",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was the scheming son of Janice Frame who sought revenge against Rachel?",
+    "question": "In Another World, who was the scheming son of Janice Frame who sought revenge against Rachel?",
     "answers": [
       "John Hudson",
       "Evan Bates",
@@ -1399,7 +1404,7 @@ const questions = [
     "id": "tv_27022",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor originally played the scheming Evan Bates?",
+    "question": "In Another World, which actor originally played the scheming Evan Bates?",
     "answers": [
       "Charles Grant",
       "Charles Keating",
@@ -1429,7 +1434,7 @@ const questions = [
     "id": "tv_27023",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which returning rival joined Evan in a bid to take control of Cory Publishing?",
+    "question": "In Another World, which returning rival joined Evan in a bid to take control of Cory Publishing?",
     "answers": [
       "Alice Matthews",
       "Felicia Gallant",
@@ -1459,7 +1464,7 @@ const questions = [
     "id": "tv_27024",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played Iris Cory on her late-1980s return?",
+    "question": "In Another World, which actress played Iris Cory on her late-1980s return?",
     "answers": [
       "Judi Evans",
       "Anna Stuart",
@@ -1489,7 +1494,7 @@ const questions = [
     "id": "tv_27025",
     "category": "TV",
     "topic": "Another World",
-    "question": "What secret identity did Iris use while plotting the Cory Publishing takeover?",
+    "question": "In Another World, what secret identity did Iris use while plotting the Cory Publishing takeover?",
     "answers": [
       "The Editor",
       "The Chief",
@@ -1519,7 +1524,7 @@ const questions = [
     "id": "tv_27026",
     "category": "TV",
     "topic": "Another World",
-    "question": "With which married Cory daughter did Evan Bates have an affair?",
+    "question": "In Another World, with which married Cory daughter did Evan Bates have an affair?",
     "answers": [
       "Amanda",
       "Paulina",
@@ -1549,7 +1554,7 @@ const questions = [
     "id": "tv_27027",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which television writers' industrial action disrupted Harding Lemay's planned 1988 return?",
+    "question": "In Another World, which television writers' industrial action disrupted Harding Lemay's planned 1988 return?",
     "answers": [
       "The Screen Actors Guild strike",
       "The musicians' strike",
@@ -1609,7 +1614,7 @@ const questions = [
     "id": "tv_27029",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor's real-life death led to the departure of the beloved character Mac Cory?",
+    "question": "In Another World, which actor's real-life death led to the departure of the beloved character Mac Cory?",
     "answers": [
       "John Considine",
       "Douglass Watson",
@@ -1639,7 +1644,7 @@ const questions = [
     "id": "tv_27030",
     "category": "TV",
     "topic": "Another World",
-    "question": "How did Mac Cory's will divide his Cory Publishing shares?",
+    "question": "In Another World, how did Mac Cory's will divide his Cory Publishing shares?",
     "answers": [
       "Equally among Rachel, Iris and Amanda",
       "Entirely to Iris",
@@ -1701,7 +1706,7 @@ const questions = [
     "id": "tv_27032",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played the murdered Jason Frame in the 1989 mystery?",
+    "question": "In Another World, which actor played the murdered Jason Frame in the 1989 mystery?",
     "answers": [
       "Chris Robinson",
       "Mark Pinter",
@@ -1731,7 +1736,7 @@ const questions = [
     "id": "tv_27033",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which member of the Love family killed the villainous Jason Frame?",
+    "question": "In Another World, which member of the Love family killed the villainous Jason Frame?",
     "answers": [
       "Vicky Hudson",
       "Nicole Love",
@@ -1761,7 +1766,7 @@ const questions = [
     "id": "tv_27034",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was wrongly put on trial for Jason Frame's murder?",
+    "question": "In Another World, who was wrongly put on trial for Jason Frame's murder?",
     "answers": [
       "Felicia Gallant",
       "Amanda Cory",
@@ -1791,7 +1796,7 @@ const questions = [
     "id": "tv_27035",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which clairvoyant private investigator exposed Jason Frame's real killer?",
+    "question": "In Another World, which clairvoyant private investigator exposed Jason Frame's real killer?",
     "answers": [
       "Lisa Grady",
       "Sharlene Frame",
@@ -1821,7 +1826,7 @@ const questions = [
     "id": "tv_27036",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played the private investigator Frankie Frame?",
+    "question": "In Another World, which actress played the private investigator Frankie Frame?",
     "answers": [
       "Julie Osburn",
       "Cali Timmins",
@@ -1851,7 +1856,7 @@ const questions = [
     "id": "tv_27037",
     "category": "TV",
     "topic": "Another World",
-    "question": "When Steve Frame reappeared alive in the early 1980s, what name did he initially use?",
+    "question": "In Another World, when Steve Frame reappeared alive in the early 1980s, what name did he initially use?",
     "answers": [
       "James Anderson",
       "Carl Hutchins",
@@ -1883,7 +1888,7 @@ const questions = [
     "id": "tv_27038",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played the returned Steve Frame during the early 1980s?",
+    "question": "In Another World, which actor played the returned Steve Frame during the early 1980s?",
     "answers": [
       "David Canary",
       "George Reinholt",
@@ -1915,7 +1920,7 @@ const questions = [
     "id": "tv_27039",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which event finally ended Steve Frame's life after his unexpected return?",
+    "question": "In Another World, which event finally ended Steve Frame's life after his unexpected return?",
     "answers": [
       "A hospital fire",
       "A road accident",
@@ -1947,7 +1952,7 @@ const questions = [
     "id": "tv_27040",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which woman was Steve Frame planning to marry when his second fatal accident occurred?",
+    "question": "In Another World, which woman was Steve Frame planning to marry when his second fatal accident occurred?",
     "answers": [
       "Iris Cory",
       "Felicia Gallant",
@@ -1979,7 +1984,7 @@ const questions = [
     "id": "tv_27041",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which surname did Mac Cory's newly discovered son Sandy use before acknowledging his parentage?",
+    "question": "In Another World, which surname did Mac Cory's newly discovered son Sandy use before acknowledging his parentage?",
     "answers": [
       "Hutchins",
       "McKinnon",
@@ -2011,7 +2016,7 @@ const questions = [
     "id": "tv_27042",
     "category": "TV",
     "topic": "Another World",
-    "question": "Whose previously unknown son was Sandy Alexander when he arrived in Bay City?",
+    "question": "In Another World, whose previously unknown son was Sandy Alexander when he arrived in Bay City?",
     "answers": [
       "Mac Cory's",
       "Steve Frame's",
@@ -2043,7 +2048,7 @@ const questions = [
     "id": "tv_27043",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which scheming socialite had a stormy marriage to Sandy before his romance with Blaine?",
+    "question": "In Another World, which scheming socialite had a stormy marriage to Sandy before his romance with Blaine?",
     "answers": [
       "Kathleen McKinnon",
       "Cecile DePoulignac",
@@ -2075,7 +2080,7 @@ const questions = [
     "id": "tv_27044",
     "category": "TV",
     "topic": "Another World",
-    "question": "Whom did Cecile DePoulignac marry before becoming involved with Sandy Cory?",
+    "question": "In Another World, whom did Cecile DePoulignac marry before becoming involved with Sandy Cory?",
     "answers": [
       "John Hudson",
       "Carl Hutchins",
@@ -2107,7 +2112,7 @@ const questions = [
     "id": "tv_27045",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which soap patriarch was written out after actor Hugh Marlowe's death in the early 1980s?",
+    "question": "In Another World, which soap patriarch was written out after actor Hugh Marlowe's death in the early 1980s?",
     "answers": [
       "Mac Cory",
       "Reginald Love",
@@ -2139,7 +2144,7 @@ const questions = [
     "id": "tv_27046",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which Matthews family member left Bay City to pursue medical studies during the early 1980s?",
+    "question": "In Another World, which Matthews family member left Bay City to pursue medical studies during the early 1980s?",
     "answers": [
       "Alice Matthews",
       "Liz Matthews",
@@ -2171,7 +2176,7 @@ const questions = [
     "id": "tv_27047",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which character was sentenced after being wrongly accused of Mitch Blake's supposed murder?",
+    "question": "In Another World, which character was sentenced after being wrongly accused of Mitch Blake's supposed murder?",
     "answers": [
       "Donna Love",
       "Rachel Cory",
@@ -2203,7 +2208,7 @@ const questions = [
     "id": "tv_27048",
     "category": "TV",
     "topic": "Another World",
-    "question": "What did Mac discover that ultimately cleared Rachel of Mitch Blake's supposed murder?",
+    "question": "In Another World, what did Mac discover that ultimately cleared Rachel of Mitch Blake's supposed murder?",
     "answers": [
       "The weapon was a prop",
       "The crime happened abroad",
@@ -2235,7 +2240,7 @@ const questions = [
     "id": "tv_27049",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which novelist's birth name was Fanny Grady?",
+    "question": "In Another World, which novelist's birth name was Fanny Grady?",
     "answers": [
       "Cecile DePoulignac",
       "Kathleen McKinnon",
@@ -2267,7 +2272,7 @@ const questions = [
     "id": "tv_27050",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played the larger-than-life character Wallingford?",
+    "question": "In Another World, which actor played the larger-than-life character Wallingford?",
     "answers": [
       "Brent Collins",
       "David Canary",
@@ -2299,7 +2304,7 @@ const questions = [
     "id": "tv_27051",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which dangerous loan shark forced Cass Winthrop to hide behind his Krystal Lake disguise?",
+    "question": "In Another World, which dangerous loan shark forced Cass Winthrop to hide behind his Krystal Lake disguise?",
     "answers": [
       "Jason Frame",
       "Tony the Tuna",
@@ -2331,7 +2336,7 @@ const questions = [
     "id": "tv_27052",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which fisherman married Felicia Gallant in a lavish 1980s ceremony?",
+    "question": "In Another World, which fisherman married Felicia Gallant in a lavish 1980s ceremony?",
     "answers": [
       "Cass Winthrop",
       "Lucas Castigliano",
@@ -2363,7 +2368,7 @@ const questions = [
     "id": "tv_27053",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which pianist and entertainer made a guest appearance at Felicia and Zane's wedding?",
+    "question": "In Another World, which pianist and entertainer made a guest appearance at Felicia and Zane's wedding?",
     "answers": [
       "Elton John",
       "Billy Joel",
@@ -2395,7 +2400,7 @@ const questions = [
     "id": "tv_27054",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which notorious Bay City businessman was played in the 1980s by Charles Keating?",
+    "question": "In Another World, which notorious Bay City businessman was played in the 1980s by Charles Keating?",
     "answers": [
       "Carl Hutchins",
       "Michael Hudson",
@@ -2427,7 +2432,7 @@ const questions = [
     "id": "tv_27055",
     "category": "TV",
     "topic": "Another World",
-    "question": "Whose family business misfortune helped motivate Carl Hutchins's feud with Mac Cory?",
+    "question": "In Another World, whose family business misfortune helped motivate Carl Hutchins's feud with Mac Cory?",
     "answers": [
       "Carl's son",
       "Carl's father",
@@ -2491,7 +2496,7 @@ const questions = [
     "id": "tv_27057",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which woman married photographer Mitch Blake during a late-1980s romance?",
+    "question": "In Another World, which woman married photographer Mitch Blake during a late-1980s romance?",
     "answers": [
       "Donna Love",
       "Iris Cory",
@@ -2523,7 +2528,7 @@ const questions = [
     "id": "tv_27058",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played Sharlene Frame after the character returned in the late 1980s?",
+    "question": "In Another World, which actress played Sharlene Frame after the character returned in the late 1980s?",
     "answers": [
       "Anna Kathryn Holbrook",
       "Jennifer Leak",
@@ -2555,7 +2560,7 @@ const questions = [
     "id": "tv_27059",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which Vietnam veteran found love with Sharlene Frame in the late 1980s?",
+    "question": "In Another World, which Vietnam veteran found love with Sharlene Frame in the late 1980s?",
     "answers": [
       "Ryan Harrison",
       "John Hudson",
@@ -2587,7 +2592,7 @@ const questions = [
     "id": "tv_27060",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was Vicky and Marley's adoptive-family caregiver, who later helped at the Hudson household?",
+    "question": "In Another World, who was Vicky and Marley's adoptive-family caregiver, who later helped at the Hudson household?",
     "answers": [
       "Vivien Gorrow",
       "Ada Hobson",
@@ -2619,7 +2624,7 @@ const questions = [
     "id": "tv_27061",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress portrayed Bridget Connell, a beloved caregiver to the Hudson twins?",
+    "question": "In Another World, which actress portrayed Bridget Connell, a beloved caregiver to the Hudson twins?",
     "answers": [
       "Linda Dano",
       "Anne Meacham",
@@ -2683,7 +2688,7 @@ const questions = [
     "id": "tv_27063",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which young man was Dawn Rollo romantically involved with during her HIV storyline?",
+    "question": "In Another World, which young man was Dawn Rollo romantically involved with during her HIV storyline?",
     "answers": [
       "Jake McKinnon",
       "Scott LaSalle",
@@ -2715,7 +2720,7 @@ const questions = [
     "id": "tv_27064",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which illness caused Dawn Rollo's death after her late-1980s HIV diagnosis?",
+    "question": "In Another World, which illness caused Dawn Rollo's death after her late-1980s HIV diagnosis?",
     "answers": [
       "Pneumonia unrelated to HIV",
       "Meningitis",
@@ -2747,7 +2752,7 @@ const questions = [
     "id": "tv_27065",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which McKinnon woman was engaged to Adam Cory before a scandal about her past?",
+    "question": "In Another World, which McKinnon woman was engaged to Adam Cory before a scandal about her past?",
     "answers": [
       "Kathleen McKinnon",
       "Marley Hudson",
@@ -2779,7 +2784,7 @@ const questions = [
     "id": "tv_27066",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who sent Adam Cory a damaging videotape about M.J. McKinnon's past?",
+    "question": "In Another World, who sent Adam Cory a damaging videotape about M.J. McKinnon's past?",
     "answers": [
       "Chad Rollo",
       "Cass Winthrop",
@@ -2811,7 +2816,7 @@ const questions = [
     "id": "tv_27067",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which baby was at the centre of Vicky Hudson's paternity deception and a Cory custody dispute?",
+    "question": "In Another World, which baby was at the centre of Vicky Hudson's paternity deception and a Cory custody dispute?",
     "answers": [
       "Alexander",
       "Steven",
@@ -2843,7 +2848,7 @@ const questions = [
     "id": "tv_27068",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which late character returned as a ghost during Rachel's near-death experience at the 1989 anniversary celebration?",
+    "question": "In Another World, which late character returned as a ghost during Rachel's near-death experience at the 1989 anniversary celebration?",
     "answers": [
       "John Randolph",
       "Walter Curtin",
@@ -2875,7 +2880,7 @@ const questions = [
     "id": "tv_27069",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor reprised his original Steve Frame role as a ghost for the anniversary?",
+    "question": "In Another World, which actor reprised his original Steve Frame role as a ghost for the anniversary?",
     "answers": [
       "David Canary",
       "Kale Browne",
@@ -2907,7 +2912,7 @@ const questions = [
     "id": "tv_27070",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which former foe tried to lure Rachel towards death during the anniversary near-death sequence?",
+    "question": "In Another World, which former foe tried to lure Rachel towards death during the anniversary near-death sequence?",
     "answers": [
       "Janice Frame",
       "Iris Cory",
@@ -2939,7 +2944,7 @@ const questions = [
     "id": "tv_27071",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which literary or media publication hosted a gala within the 25th-anniversary plot?",
+    "question": "In Another World, which literary or media publication hosted a gala within the 25th-anniversary plot?",
     "answers": [
       "The Bay City Herald",
       "Brava",
@@ -2971,7 +2976,7 @@ const questions = [
     "id": "tv_27072",
     "category": "TV",
     "topic": "Another World",
-    "question": "What type of venue housed the carnival scene in which Jason Frame was murdered?",
+    "question": "In Another World, what type of venue housed the carnival scene in which Jason Frame was murdered?",
     "answers": [
       "A haunted train",
       "A shooting gallery",
@@ -3003,7 +3008,7 @@ const questions = [
     "id": "tv_27073",
     "category": "TV",
     "topic": "Another World",
-    "question": "What publishing company did Iris secretly use to attack Cory Publishing in the late 1980s?",
+    "question": "In Another World, what publishing company did Iris secretly use to attack Cory Publishing in the late 1980s?",
     "answers": [
       "Brava",
       "Bennett Publishing",
@@ -3035,7 +3040,7 @@ const questions = [
     "id": "tv_27074",
     "category": "TV",
     "topic": "Another World",
-    "question": "What genre of music did Crystal Gayle and Gary Morris use for the show's duet theme?",
+    "question": "In Another World, what genre of music did Crystal Gayle and Gary Morris use for the show's duet theme?",
     "answers": [
       "Country",
       "Disco",
@@ -3099,7 +3104,7 @@ const questions = [
     "id": "tv_27076",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which future sitcom star played Dr. Canard in the mid-1980s?",
+    "question": "In Another World, which future sitcom star played Dr. Canard in the mid-1980s?",
     "answers": [
       "David Hyde Pierce",
       "John Lithgow",
@@ -3128,9 +3133,1231 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==101 || new Set(questions.map(q=>q.id)).size!==questions.length ||
+// Append non-overlapping questions, retaining original ID sequence.
+const AUDIT_ORIGINAL_COUNT=101;
+const AUDIT_FIRST_ID=42820;
+const auditQuestions=[
+  {
+    "id": "tv_42820",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, who was the biological father of Rachel's son Matthew Cory?",
+    "answers": [
+      "Mac Cory",
+      "Mitch Blake",
+      "Steve Frame",
+      "Carl Hutchins"
+    ],
+    "correctAnswer": "Mitch Blake",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Matthew Cory",
+      "Mitch Blake",
+      "Rachel Cory",
+      "Paternity Secret",
+      "1980 Birth",
+      "Cory Family"
+    ]
+  },
+  {
+    "id": "tv_42821",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, who adopted Matthew Cory despite knowing he had a different biological father?",
+    "answers": [
+      "Mac Cory",
+      "Steve Frame",
+      "Carl Hutchins",
+      "Jamie Frame"
+    ],
+    "correctAnswer": "Mac Cory",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Mac Cory",
+      "Matthew Cory",
+      "Family Adoption",
+      "Mitch Blake",
+      "Parenthood",
+      "Early 1980s"
+    ]
+  },
+  {
+    "id": "tv_42822",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which child did Mitch Blake kidnap during his feud with the Cory family?",
+    "answers": [
+      "Amanda Cory",
+      "Maggie Cory",
+      "Sally Frame",
+      "Matthew Cory"
+    ],
+    "correctAnswer": "Matthew Cory",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Mitch Blake",
+      "Matthew Cory",
+      "Child Abduction",
+      "Rachel Cory",
+      "Custody",
+      "Early 1980s"
+    ]
+  },
+  {
+    "id": "tv_42823",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, who was briefly engaged to Mac Cory before Steve Frame returned?",
+    "answers": [
+      "Iris Cory",
+      "Cecile DePoulignac",
+      "Alice Matthews",
+      "Donna Love"
+    ],
+    "correctAnswer": "Alice Matthews",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Mac Cory",
+      "Alice Matthews",
+      "Engagement",
+      "Steve Frame Return",
+      "Romance",
+      "Early 1980s"
+    ]
+  },
+  {
+    "id": "tv_42824",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what procedure explained Steve Frame's altered appearance when he resurfaced?",
+    "answers": [
+      "A face transplant",
+      "Plastic surgery",
+      "An elaborate disguise",
+      "A prosthetic mask"
+    ],
+    "correctAnswer": "Plastic surgery",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Steve Frame",
+      "Edward Black",
+      "Plastic Surgery",
+      "Amnesia",
+      "1981 Return",
+      "Identity Revelation"
+    ]
+  },
+  {
+    "id": "tv_42825",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what temporary disability did Rachel suffer in the crash that killed Steve Frame?",
+    "answers": [
+      "Blindness",
+      "Paralysis",
+      "Deafness",
+      "Loss of speech"
+    ],
+    "correctAnswer": "Blindness",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Rachel Cory",
+      "Steve Frame",
+      "1983 Crash",
+      "Temporary Blindness",
+      "Hospital Recovery",
+      "Love Story"
+    ]
+  },
+  {
+    "id": "tv_42826",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, who kidnapped Rachel Cory before her bout of amnesia?",
+    "answers": [
+      "Mitch Blake",
+      "Cass Winthrop",
+      "John Hudson",
+      "Carl Hutchins"
+    ],
+    "correctAnswer": "Carl Hutchins",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Rachel Cory",
+      "Carl Hutchins",
+      "Abduction",
+      "Amnesia",
+      "1984 Storyline",
+      "Cory Family"
+    ]
+  },
+  {
+    "id": "tv_42827",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which original Alice Matthews actress returned to her role in 1984?",
+    "answers": [
+      "Susan Harney",
+      "Wesley Ann Pfenning",
+      "Jacqueline Courtney",
+      "Vana Tribbey"
+    ],
+    "correctAnswer": "Jacqueline Courtney",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "Jacqueline Courtney",
+      "Alice Matthews",
+      "1984 Return",
+      "Original Actress",
+      "Cast Revival",
+      "Matthews Family"
+    ]
+  },
+  {
+    "id": "tv_42828",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what profession had Alice Matthews qualified for by her 1984 return?",
+    "answers": [
+      "Lawyer",
+      "Doctor",
+      "Journalist",
+      "Psychologist"
+    ],
+    "correctAnswer": "Doctor",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Alice Matthews",
+      "Medical Degree",
+      "Doctor",
+      "1984 Return",
+      "Matthews Family",
+      "Rachel Recovery"
+    ]
+  },
+  {
+    "id": "tv_42829",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what was the name of Sandy Cory and Cecile DePoulignac's daughter?",
+    "answers": [
+      "Maggie",
+      "Amanda",
+      "Josie",
+      "Marley"
+    ],
+    "correctAnswer": "Maggie",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Sandy Cory",
+      "Cecile DePoulignac",
+      "Maggie",
+      "Family Relations",
+      "1980s Birth",
+      "Marriage"
+    ]
+  },
+  {
+    "id": "tv_42830",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress portrayed Blaine Ewing during the double-wedding era?",
+    "answers": [
+      "Linda Dano",
+      "Nancy Frangione",
+      "Anna Stuart",
+      "Laura Malone"
+    ],
+    "correctAnswer": "Laura Malone",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "Laura Malone",
+      "Blaine Ewing",
+      "Sandy Cory",
+      "1983 Wedding",
+      "1980s Cast",
+      "Actress"
+    ]
+  },
+  {
+    "id": "tv_42831",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, to which city did Pat Matthews Randolph relocate after leaving Bay City?",
+    "answers": [
+      "Seattle",
+      "Miami",
+      "New York City",
+      "Houston"
+    ],
+    "correctAnswer": "New York City",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Pat Matthews",
+      "Matthews Departure",
+      "New York City",
+      "1982 Exit",
+      "Original Cast",
+      "Early 1980s"
+    ]
+  },
+  {
+    "id": "tv_42832",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, to which city did Russ Matthews relocate in the early 1980s?",
+    "answers": [
+      "New York City",
+      "Seattle",
+      "Boston",
+      "Houston"
+    ],
+    "correctAnswer": "Seattle",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Russ Matthews",
+      "Seattle",
+      "Matthews Family",
+      "1981 Departure",
+      "Doctor Russ",
+      "Early 1980s"
+    ]
+  },
+  {
+    "id": "tv_42833",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, with which husband did Marianne Randolph leave hoping to restore her marriage?",
+    "answers": [
+      "Rick Halloway",
+      "John Randolph",
+      "Jamie Frame",
+      "Brian Bancroft"
+    ],
+    "correctAnswer": "Rick Halloway",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Marianne Randolph",
+      "Rick Halloway",
+      "Marriage Reconciliation",
+      "Early 1980s Exit",
+      "Matthews Family",
+      "Family Departure"
+    ]
+  },
+  {
+    "id": "tv_42834",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor played Reginald Love when he returned to menace the family?",
+    "answers": [
+      "Charles Keating",
+      "Kale Browne",
+      "Hugh Marlowe",
+      "John Considine"
+    ],
+    "correctAnswer": "John Considine",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "John Considine",
+      "Reginald Love",
+      "Love Family",
+      "1986 Return",
+      "Patriarch",
+      "Soap Villain"
+    ]
+  },
+  {
+    "id": "tv_42835",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, under what surname had Reginald Love secretly lived for years?",
+    "answers": [
+      "Winthrop",
+      "Hutchins",
+      "LaSalle",
+      "Carrington"
+    ],
+    "correctAnswer": "LaSalle",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Reginald Love",
+      "LaSalle Alias",
+      "Hidden Identity",
+      "1986 Story",
+      "Family Secrets",
+      "Love Family"
+    ]
+  },
+  {
+    "id": "tv_42836",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, who was Reginald Love's wife Marissa revealed to be?",
+    "answers": [
+      "Ada Hobson",
+      "Mary McKinnon",
+      "Pat Matthews",
+      "Liz Matthews"
+    ],
+    "correctAnswer": "Mary McKinnon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Marissa LaSalle",
+      "Mary McKinnon",
+      "Amnesia",
+      "Reginald Love",
+      "Identity Revelation",
+      "McKinnon Family"
+    ]
+  },
+  {
+    "id": "tv_42837",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress portrayed the amnesiac Mary McKinnon?",
+    "answers": [
+      "Denise Alexander",
+      "Constance Ford",
+      "Irene Dailey",
+      "Anna Stuart"
+    ],
+    "correctAnswer": "Denise Alexander",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "Denise Alexander",
+      "Mary McKinnon",
+      "Marissa LaSalle",
+      "1986 Cast",
+      "Amnesia",
+      "McKinnons"
+    ]
+  },
+  {
+    "id": "tv_42838",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which two Love siblings were Donna's brother and sister?",
+    "answers": [
+      "Cass and Felicia",
+      "Jamie and Amanda",
+      "Russ and Alice",
+      "Peter and Nicole"
+    ],
+    "correctAnswer": "Peter and Nicole",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Donna Love",
+      "Peter Love",
+      "Nicole Love",
+      "Sibling Relationships",
+      "Love Family",
+      "1980s"
+    ]
+  },
+  {
+    "id": "tv_42839",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which businessman did Donna Love marry in the 1980s?",
+    "answers": [
+      "Mac Cory",
+      "Jamie Frame",
+      "Michael Hudson",
+      "John Randolph"
+    ],
+    "correctAnswer": "Michael Hudson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Donna Love",
+      "Michael Hudson",
+      "1986 Marriage",
+      "Love Family",
+      "Hudson Family",
+      "Romance"
+    ]
+  },
+  {
+    "id": "tv_42840",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which later husband of Rachel Cory had earlier been married to Donna Love?",
+    "answers": [
+      "Mitch Blake",
+      "Carl Hutchins",
+      "Steve Frame",
+      "Zane Lindquist"
+    ],
+    "correctAnswer": "Carl Hutchins",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Donna Love",
+      "Carl Hutchins",
+      "Former Marriage",
+      "Rachel Cory",
+      "Family History",
+      "Romance"
+    ]
+  },
+  {
+    "id": "tv_42841",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress temporarily replaced Anna Stuart as Donna Love?",
+    "answers": [
+      "Philece Sampler",
+      "Ellen Wheeler",
+      "Anne Heche",
+      "Susan Keith"
+    ],
+    "correctAnswer": "Philece Sampler",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "Philece Sampler",
+      "Donna Love",
+      "1987 Recast",
+      "Anna Stuart",
+      "Love Family",
+      "Casting"
+    ]
+  },
+  {
+    "id": "tv_42842",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, in which Pennsylvania community did the adopted Vicky Love grow up?",
+    "answers": [
+      "Bay City",
+      "Oakdale",
+      "Pine Valley",
+      "Lassiter"
+    ],
+    "correctAnswer": "Lassiter",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Vicky Love",
+      "Lassiter Pennsylvania",
+      "Adoptive Family",
+      "Childhood",
+      "Marley Twin",
+      "History"
+    ]
+  },
+  {
+    "id": "tv_42843",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, why did Vicky Love and Jake McKinnon first approach the wealthy Love family?",
+    "answers": [
+      "To buy their mansion",
+      "To solve a murder",
+      "To swindle them",
+      "To arrange a wedding"
+    ],
+    "correctAnswer": "To swindle them",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Vicky Love",
+      "Jake McKinnon",
+      "Original Scheme",
+      "Love Family Fortune",
+      "1980s Reunion",
+      "Con Artists"
+    ]
+  },
+  {
+    "id": "tv_42844",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, whom did Sally Frame leave at the altar after falling for Catlin Ewing?",
+    "answers": [
+      "Mitch Blake",
+      "David Thatcher",
+      "Sandy Cory",
+      "Robert Delaney"
+    ],
+    "correctAnswer": "David Thatcher",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Sally Frame",
+      "David Thatcher",
+      "Catlin Ewing",
+      "Runaway Bride",
+      "Mid 1980s",
+      "Love Triangle"
+    ]
+  },
+  {
+    "id": "tv_42845",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which wife believed dead returned and invalidated Catlin Ewing's marriage to Sally?",
+    "answers": [
+      "Brittany Peterson",
+      "Cecile DePoulignac",
+      "Donna Love",
+      "Kathleen McKinnon"
+    ],
+    "correctAnswer": "Brittany Peterson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Catlin Ewing",
+      "Brittany Peterson",
+      "Sally Frame",
+      "Presumed Dead Wife",
+      "Invalid Marriage",
+      "Mid 1980s"
+    ]
+  },
+  {
+    "id": "tv_42846",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what tragedy ended Sally Frame's relationship with Catlin Ewing?",
+    "answers": [
+      "She drowned at sea",
+      "She died in a plane crash",
+      "She was murdered at a carnival",
+      "She died in a car accident"
+    ],
+    "correctAnswer": "She died in a car accident",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Sally Frame",
+      "Catlin Ewing",
+      "Fatal Road Accident",
+      "1986 Exit",
+      "Love Story",
+      "Tragedy"
+    ]
+  },
+  {
+    "id": "tv_42847",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor originally played artist Sam Fowler, Amanda Cory's husband?",
+    "answers": [
+      "Tom Eplin",
+      "Richard Burgi",
+      "Robert Kelker-Kelly",
+      "Stephen Schnetzer"
+    ],
+    "correctAnswer": "Robert Kelker-Kelly",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "Robert Kelker Kelly",
+      "Sam Fowler",
+      "Amanda Cory",
+      "1987 Introduction",
+      "Artist",
+      "Original Actor"
+    ]
+  },
+  {
+    "id": "tv_42848",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which woman's pregnancy helped break up Jamie Frame and Lisa Grady?",
+    "answers": [
+      "Amanda Cory",
+      "Vicky Hudson",
+      "Sharlene Frame",
+      "Kathleen McKinnon"
+    ],
+    "correctAnswer": "Vicky Hudson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Jamie Frame",
+      "Lisa Grady",
+      "Vicky Hudson",
+      "Pregnancy",
+      "Love Triangle",
+      "1988"
+    ]
+  },
+  {
+    "id": "tv_42849",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which daughter of Russ Matthews arrived to pursue a dancing career?",
+    "answers": [
+      "Olivia Matthews",
+      "Marianne Randolph",
+      "Sally Frame",
+      "Josie Watts"
+    ],
+    "correctAnswer": "Olivia Matthews",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Olivia Matthews",
+      "Russ Matthews",
+      "Dancing",
+      "Late 1980s",
+      "New Generation",
+      "Matthews"
+    ]
+  },
+  {
+    "id": "tv_42850",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which doctor was revealed as the Sin Stalker serial killer?",
+    "answers": [
+      "Jamie Frame",
+      "John Hudson",
+      "Sandy Cory",
+      "Alan Glaser"
+    ],
+    "correctAnswer": "Alan Glaser",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Alan Glaser",
+      "Sin Stalker",
+      "1987 Murders",
+      "Doctor",
+      "Serial Killer",
+      "Major Mystery"
+    ]
+  },
+  {
+    "id": "tv_42851",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which former star of The Doctors played the Sin Stalker?",
+    "answers": [
+      "Charles Keating",
+      "John Considine",
+      "David O'Brien",
+      "Tom Eplin"
+    ],
+    "correctAnswer": "David O'Brien",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "David O Brien",
+      "Alan Glaser",
+      "The Doctors",
+      "Sin Stalker",
+      "1987 Cast",
+      "Actor"
+    ]
+  },
+  {
+    "id": "tv_42852",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which country singer appeared as herself and faced the Sin Stalker?",
+    "answers": [
+      "Dolly Parton",
+      "Crystal Gayle",
+      "Tammy Wynette",
+      "Reba McEntire"
+    ],
+    "correctAnswer": "Crystal Gayle",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Crystal Gayle",
+      "Guest Appearance",
+      "Sin Stalker",
+      "1987 Story",
+      "Celebrity",
+      "Country Music"
+    ]
+  },
+  {
+    "id": "tv_42853",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, at which Bay City nightclub did Crystal Gayle and Gary Morris perform?",
+    "answers": [
+      "TOPS",
+      "The Kopper Kettle",
+      "The Love Mansion",
+      "The Marigold"
+    ],
+    "correctAnswer": "TOPS",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Production",
+      "TOPS Nightclub",
+      "Crystal Gayle",
+      "Gary Morris",
+      "1987 Performance",
+      "Felicia Gallant",
+      "Music"
+    ]
+  },
+  {
+    "id": "tv_42854",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress won a Daytime Emmy for playing the Love twins?",
+    "answers": [
+      "Anne Heche",
+      "Anna Stuart",
+      "Nancy Frangione",
+      "Ellen Wheeler"
+    ],
+    "correctAnswer": "Ellen Wheeler",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Awards",
+      "Ellen Wheeler",
+      "1986 Daytime Emmy",
+      "Outstanding Ingenue",
+      "Vicky Love",
+      "Marley Love",
+      "Acting Award"
+    ]
+  },
+  {
+    "id": "tv_42855",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor won consecutive Daytime Emmys as Lead Actor in 1980 and 1981?",
+    "answers": [
+      "George Reinholt",
+      "Kale Browne",
+      "Douglass Watson",
+      "Stephen Schnetzer"
+    ],
+    "correctAnswer": "Douglass Watson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Awards",
+      "Douglass Watson",
+      "1981 Daytime Emmy",
+      "1980 Daytime Emmy",
+      "Mac Cory",
+      "Back To Back Wins",
+      "Lead Actor"
+    ]
+  },
+  {
+    "id": "tv_42856",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, for which Grammy category was the Crystal Gayle and Gary Morris theme nominated?",
+    "answers": [
+      "Best Pop Instrumental Performance",
+      "Best Country Vocal Performance Duet",
+      "Best Spoken Word Album",
+      "Best Film Score"
+    ],
+    "correctAnswer": "Best Country Vocal Performance Duet",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Awards",
+      "1988 Grammys",
+      "Crystal Gayle",
+      "Gary Morris",
+      "Country Vocal Duet",
+      "Nomination",
+      "Theme Music"
+    ]
+  },
+  {
+    "id": "tv_42857",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which production craft earned Another World a Daytime Emmy in 1989?",
+    "answers": [
+      "Costume design",
+      "Sound mixing",
+      "Set construction",
+      "Hair styling"
+    ],
+    "correctAnswer": "Costume design",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1981–1989 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Awards",
+      "1989 Daytime Emmy",
+      "Costume Design",
+      "Craft Award",
+      "Television Production",
+      "Programme Recognition",
+      "Winner"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==139 || new Set(questions.map(q=>q.id)).size!==questions.length ||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length ||
- questions.some((q,i)=>q.id!=='tv_'+String(26976+i)||q.category!=='TV'||q.topic!=='Another World'||
+ questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(26976+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.category!=='TV'||q.topic!=='Another World'||
  q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
  q.answers.filter(a=>a===q.correctAnswer).length!==1||
  q.tags.length<12||new Set(q.tags).size!==q.tags.length||
