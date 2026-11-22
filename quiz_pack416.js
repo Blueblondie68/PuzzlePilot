@@ -129,6 +129,62 @@
  `Which real-life couple met while working as Hayley and Mateo on All My Children?|Kelly Ripa and Mark Consuelos|Susan Lucci and Walt Willey|Julia Barr and David Canary|Cady McClain and Michael Nader|Easy|Kelly Ripa|Mark Consuelos|Hayley and Mateo|1995|on set romance|real marriage|casting history`
  ];
 
+
+ // 1990–1999 storyline gap audit; keep original question IDs stable.
+ const ORIGINAL_COUNT = rows.length;
+ const AUDIT_NEW_FIRST_ID = 41947;
+ rows.push(
+   `In All My Children, which couple did Emily Ann Sago discover were her biological parents in 1990?|Benny Sago and Estelle LaTour|Chuck Tyler and Donna Beck|Joe and Ruth Martin|Palmer and Daisy Cortlandt|Medium|Emily Ann Sago|Benny Sago|Estelle LaTour|1990|parentage revelation|biological parents|family reunion`,
+   `In All My Children, which Martin family doctor married Emily Ann Sago in the early 1990s?|Joey Martin|Jeff Martin|Joe Martin|Tad Martin|Medium|Emily Ann Sago|Joey Martin|1990|young marriage|Martin family|Sago family|relationship history`,
+   `In All My Children, what was the name of the baby boy born to Travis and Barbara Montgomery during Molly's illness?|Matthew|Jamie|Frankie|Sam|Medium|Travis Montgomery|Barbara Montgomery|Molly Montgomery|1990|baby brother|leukaemia crisis|Montgomery family`,
+   `In All My Children, which powerful businessman did Natalie Marlowe marry despite loving Trevor Dillon?|Adam Chandler|Palmer Cortlandt|Dimitri Marick|Jackson Montgomery|Medium|Natalie Marlowe|Adam Chandler|Trevor Dillon|1990|marriage|romantic conflict|Chandler family`,
+   `In All My Children, which young man once called Little Phil began a romance with Erica Kane in 1991?|Charlie Brent|Brian Bodine|Anton Lang|Jamie Martin|Medium|Erica Kane|Charlie Brent|Phil and Tara son|1991|former stepson|surprising romance|Pine Valley family`,
+   `In All My Children, whom did Janet Green marry while posing as her sister Natalie in 1991?|Trevor Dillon|Dimitri Marick|Adam Chandler|Jackson Montgomery|Medium|Janet Green|Trevor Dillon|Natalie disguise|1991|false identity|impersonation marriage|Wildwind well`,
+   `In All My Children, which con man married Dixie Cooney while Tad Martin was missing?|Craig Lawson|Alec McIntyre|Wade Mathews|Brian Bodine|Medium|Dixie Cooney|Craig Lawson|Tad Martin|1991|con artist|marriage|amnesia aftermath`,
+   `In All My Children, what condition had kept Dimitri Marick's wife Angelique absent for fifteen years?|A coma|Amnesia|Blindness|Paralysis after a riding accident|Medium|Angelique Marick|Dimitri Marick|1992|long coma|first marriage|Wildwind|family return`,
+   `In All My Children, which woman was Angelique Marick's scheming mother?|Helga Voynitzeva|Phoebe Wallingford|Opal Gardner|Daisy Cortlandt|Medium|Angelique Marick|Helga Voynitzeva|1992|Dimitri Marick|maternal interference|Wildwind estate|family scheming`,
+   `In All My Children, which boy was born to Palmer Cortlandt and Opal Gardner in the early 1990s?|Peter Cortlandt|Adam Chandler Jr|Jamie Martin|Anton Lang|Medium|Palmer Cortlandt|Opal Gardner|Peter Petey|1992|son's birth|Cortlandt family|new baby`,
+   `In All My Children, which lawyer married Tom Cudahy in 1992 after her son Terrence was targeted by racists?|Livia Frye|Brooke English|Gloria Marsh|Natalie Marlowe|Medium|Livia Frye|Tom Cudahy|Terrence Frye|1992|marriage|racial violence|Frye family`,
+   `In All My Children, how did Will Cortlandt manipulate Hayley Vaughan before their marriage?|He encouraged her drinking|He stole her inheritance|He hid her college scholarship|He pretended to be her doctor|Medium|Will Cortlandt|Hayley Vaughan|1992|alcohol dependency|manipulation|troubled marriage|Chandler family`,
+   `In All My Children, which woman caught the interest of both Adam and Stuart Chandler in the early 1990s?|Gloria Marsh|Ceara Connor|Livia Frye|Angelique Marick|Medium|Gloria Marsh|Adam Chandler|Stuart Chandler|1992|brothers rivalry|love triangle|romantic tension`,
+   `In All My Children, whom did district attorney Jackson Montgomery marry in the early 1990s?|Laurel Banning|Natalie Marlowe|Gloria Marsh|Dixie Cooney|Medium|Jackson Montgomery|Laurel Banning|1993|wedding|Banning family|Montgomery household|romance`,
+   `In All My Children, whom did Jackson Montgomery adopt after marrying the child's mother Laurel?|Lily Benton|Amanda Dillon|Bianca Montgomery|Danielle Frye|Medium|Jackson Montgomery|Laurel Banning|Lily Benton|1993|adoption|stepfather|Montgomery family`,
+   `In All My Children, which condition was central to the early portrayal of Jackson Montgomery's adopted daughter Lily?|Autism|Epilepsy|Dyslexia|Cerebral palsy|Medium|Lily Benton Montgomery|Jackson Montgomery|Laurel Banning|1990s|autism representation|childhood development|family story`,
+   `In All My Children, which of Hayley Vaughan's former boyfriends briefly married Dixie Cooney in 1993?|Brian Bodine|Ryan Lavery|Mateo Santos|Anton Lang|Medium|Dixie Cooney|Brian Bodine|1993|short marriage|Hayley Vaughan|relationship change|Tad Martin`,
+   `In All My Children, how did Trevor Dillon's wife Natalie die in the early 1990s?|A car accident|A plane crash|A house fire|A boating accident|Medium|Natalie Dillon|Trevor Dillon|1993|death|road accident|family loss|Janet Green`,
+   `In All My Children, what was the name of Adam and Gloria Chandler's premature baby daughter who died in the 1990s?|Anna Claire|Colby|Amanda|Maddie|Medium|Adam Chandler|Gloria Marsh|Anna Claire|1994|premature birth|infant death|marriage tragedy`,
+   `In All My Children, which young man proved to be Dimitri Marick's previously unknown son?|Anton Lang|Edmund Grey|Ryan Lavery|Brian Bodine|Medium|Dimitri Marick|Anton Lang|1994|secret paternity|Wildwind|family revelation|Marick family`,
+   `In All My Children, which Wildwind employee was Anton Lang's biological mother?|Corvina|Helga|Angelique|Nola|Hard|Anton Lang|Corvina|Dimitri Marick|1994|motherhood|maid at Wildwind|hidden parentage`,
+   `In All My Children, what did Erica Kane do to Dimitri after Kendall's false accusation?|Stabbed him in the neck|Pushed him from a balcony|Poisoned his wine|Locked him in a cellar|Medium|Erica Kane|Dimitri Marick|Kendall Hart|1994|false allegation|violent confrontation|attempted murder`,
+   `In All My Children, what false allegation by Kendall Hart triggered Erica Kane's violent confrontation with Dimitri?|That Dimitri had sexually assaulted Kendall|That Dimitri had kidnapped Bianca|That Dimitri had stolen her inheritance|That Dimitri had killed her adoptive father|Medium|Kendall Hart|Dimitri Marick|Erica Kane|1994|false accusation|family manipulation|trauma flashback`,
+   `In All My Children, which son of Dimitri Marick married Kendall Hart partly to anger his father?|Anton Lang|Edmund Grey|Ryan Lavery|Charlie Brent|Medium|Kendall Hart|Anton Lang|Dimitri Marick|1995|revenge wedding|family feud|young couple`,
+   `In All My Children, which abusive man from Erica Kane's past died after threatening her daughter Bianca in 1994?|Richard Fields|George Connor|Denny Benton|Billy Clyde Tuggle|Medium|Richard Fields|Erica Kane|Bianca Montgomery|1994|past abuser|family trauma|daughter threatened`,
+   `In All My Children, which man assaulted Julia Santos and later died in a struggle with Noah Keefer?|Louie Greco|Alec McIntyre|Les Baxter|Will Cortlandt|Medium|Julia Santos|Louie Greco|Noah Keefer|1994|sexual assault|self defence|Santos family`,
+   `In All My Children, what decision did Julia Santos make after becoming pregnant following Louie Greco's attack?|She terminated the pregnancy|She chose to adopt a child|She moved to Europe|She married Louie's brother|Medium|Julia Santos|Louie Greco|1995|pregnancy|abortion storyline|Noah Keefer|assault aftermath`,
+   `In All My Children, which schemer was Hayley Vaughan's husband before her romance with Mateo Santos?|Alec McIntyre|Craig Lawson|Brian Bodine|Ross Chandler|Medium|Hayley Vaughan|Alec McIntyre|1995|marriage|Mateo Santos|romantic history|Chandler family`,
+   `In All My Children, who was Alec McIntyre secretly involved with while married to Hayley Vaughan?|Arlene Vaughan|Gloria Marsh|Liza Colby|Marian Colby|Medium|Alec McIntyre|Arlene Vaughan|Hayley Vaughan|1995|infidelity|mother daughter betrayal|marriage breakdown`,
+   `In All My Children, how was history teacher Michael Delaney related to Laurel Banning?|He was her brother|He was her father|He was her nephew|He was her former husband|Medium|Michael Delaney|Laurel Banning|1995|history teacher|family relationship|gay teacher|Banning household`,
+   `In All My Children, which pupil turned to history teacher Michael Delaney for support over his sexual identity?|Kevin Sheffield|Brian Bodine|Charlie Brent|Anton Lang|Medium|Kevin Sheffield|Michael Delaney|1995|gay teenager|school support|sexual identity|homophobia story`,
+   `In All My Children, who was the biological mother of baby Sam adopted by Edmund and Maria Grey in 1996?|Kelsey Jefferson|Julia Santos|Gloria Marsh|Brooke English|Medium|Sam Grey|Kelsey Jefferson|Edmund Grey|1996|adoption|Maria Santos|birth mother`,
+   `In All My Children, which young man was Sam Grey's biological father before Edmund and Maria adopted him?|Bobby Warner|Anton Lang|Brian Bodine|Charlie Brent|Medium|Sam Grey|Bobby Warner|1996|biological father|Edmund Grey|Kelsey Jefferson|adoption`,
+   `In All My Children, which daughter of Tara Martin gave birth to the boy later adopted by Edmund and Maria Grey?|Kelsey Jefferson|Bianca Montgomery|Cecily Davidson|Amanda Dillon|Medium|Tara Martin|Kelsey Jefferson|Sam Grey|1996|mother daughter|Martin family|Grey adoption`,
+   `In All My Children, which brother of Edmund Grey had an affair with Maria Santos in 1996?|Dimitri Marick|Adam Chandler|Jackson Montgomery|Trevor Dillon|Medium|Maria Santos|Dimitri Marick|Edmund Grey|1996|infidelity|family betrayal|paternity concern`,
+   `In All My Children, which woman was killed by a bullet intended for her brother in 1996?|Laurel Banning|Natalie Marlowe|Gloria Marsh|Cindy Parker|Medium|Laurel Banning|Michael Delaney|1996|fatal shooting|brother targeted|Jackson Montgomery|family tragedy`,
+   `In All My Children, which baby daughter of Edmund and Maria Grey did Erica Kane kidnap in 1997?|Maddie Grey|Colby Chandler|Amanda Dillon|Anna Claire Chandler|Medium|Erica Kane|Maddie Grey|Maria Santos|1997|kidnapping|Edmund Grey|motherhood crisis`,
+   `In All My Children, what name did Erica Kane give Maria and Edmund's kidnapped baby?|Sonya|Bianca|Anna Claire|Colby|Hard|Erica Kane|Maddie Grey|Sonya|1997|false name|baby kidnapping|secret identity`,
+   `In All My Children, who tampered with the DNA results to make Dimitri seem to be Maria's baby's father?|Skye Chandler|Janet Green|Gloria Marsh|Kendall Hart|Hard|Skye Chandler|Maria Santos|Edmund Grey|Dimitri Marick|1996|DNA test tampering|baby paternity`,
+   `In All My Children, which couple took the gay teenager Kevin Sheffield into their home after his family rejected him?|Palmer and Opal Cortlandt|Joe and Ruth Martin|Edmund and Maria Grey|Adam and Liza Chandler|Medium|Kevin Sheffield|Palmer Cortlandt|Opal Gardner|1996|gay teenager|family acceptance|home support`,
+   `In All My Children, which woman returned in 1998 as Mateo Santos's first wife, complicating his marriage to Hayley?|Raquel Dion|Liza Colby|An Li Chen|Gloria Marsh|Medium|Mateo Santos|Raquel Dion|1998|first wife|Hayley Vaughan|marriage validity|return to Pine Valley`,
+   `In All My Children, what was the name of Mateo Santos's son who arrived with Raquel?|Max|Sam|Jamie|Frankie|Medium|Mateo Santos|Raquel Dion|Max Santos|1998|secret son|fatherhood|Hayley Vaughan`,
+   `In All My Children, which woman was involved with Dr David Hayward while married to Ryan Lavery in 1998?|Gillian Andrassy|Dixie Cooney|Erica Kane|Liza Colby|Medium|Gillian Andrassy|Ryan Lavery|David Hayward|1998|infidelity|marital crisis|romance`,
+   `In All My Children, which doctor became involved with Gillian Andrassy after her marriage to Ryan broke down?|Jake Martin|Joe Martin|Cliff Warner|Frank Grant|Medium|Gillian Andrassy|Jake Martin|1999|romance|Ryan Lavery|medical doctor|relationship shift`,
+   `In All My Children, which woman was the mother of David Hayward and Leo du Pres and married Palmer Cortlandt?|Vanessa Bennett|Opal Gardner|Daisy Cortlandt|Marian Colby|Medium|Vanessa Bennett|David Hayward|Leo du Pres|1999|Palmer Cortlandt|family arrival|marriage`,
+   `In All My Children, which gentle Chandler twin married Liza Colby's mother Marian near the end of the 1990s?|Stuart Chandler|Adam Chandler|Ross Chandler|Scott Chandler|Medium|Marian Colby|Stuart Chandler|1999|late marriage|Chandler family|Liza Colby|romantic ending`,
+   `In All My Children, whom did Gloria Marsh marry after her relationship with Adam Chandler ended?|Dimitri Marick|Stuart Chandler|Tad Martin|Trevor Dillon|Medium|Gloria Marsh|Dimitri Marick|1997|new marriage|Adam Chandler divorce|Wildwind|relationship change`,
+   `In All My Children, which countess became Dimitri Marick's wife near the end of the 1990s?|Alexandra Devane|Angelique Marick|Gillian Andrassy|Vanessa Bennett|Medium|Dimitri Marick|Alexandra Devane|1999|marriage|Wildwind|aristocratic family|late decade`,
+   `In All My Children, which socialite became involved with Ryan Lavery as his marriage to Gillian was ending?|Greenlee Smythe|Kendall Hart|Hayley Vaughan|Julia Santos|Medium|Ryan Lavery|Greenlee Smythe|Gillian Andrassy|1999|romantic entanglement|socialite|relationship triangle`,
+ );
+
  const questions = rows.map((row, index) => {
    const parts = row.split('|').map(part => part.trim());
    if (parts.length !== 13 || parts.some(part => !part)) {
@@ -151,7 +207,7 @@
      throw new Error(`Pack 416: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
    }
    return {
-     id: `tv_${FIRST_ID + index}`,
+     id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT}`,
      category: 'Television',
      question,
      answers,
