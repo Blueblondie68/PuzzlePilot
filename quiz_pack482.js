@@ -1,9 +1,14 @@
 
  // PuzzlePilot — The Bigggggg Quiz — Pack 482: Another World, Part 2 (1975–1980)
- // The hour-long era, Mac and Rachel, Iris, the Randolphs, Janice and Mitch.
+ // Audited: 76 original + 25 new storyline, cast, production and awards questions.
+ // Original IDs tv_26900–tv_26975; new audit IDs tv_42795–tv_42819.
+ // The hour-long era: Mac and Rachel, Iris, the Randolphs, Janice, Mitch and Sally.
  // Continues directly after Pack 481 (tv_26820–tv_26899).
  // The programme is NOT fully covered: keep TV master row PARTIAL, not purple.
- // Researched 18 November 2026.
+ // Original research 18 Nov 2026; audit extended 22 Nov 2026.
+ // Additional sources: Soap Opera Digest; Paley Center 1976 episode record;
+ // Television Academy Irene Dailey biography; 1978 Daytime Emmys; TV Guide history;
+ // Alice Matthews casting and storyline history; daytime ratings records.
  // Sources:
  // https://www.soapoperadigest.com/content/remembering-another-world-on-the-25th-anniversary-of-its-finale/
  // https://www.encyclopedia.com/media/encyclopedias-almanacs-transcripts-and-maps/another-world
@@ -110,7 +115,10 @@ const baseTags = [
 ];
 
 const questions = raw.map((r,i)=>{
-  const [question,correctAnswer,a,b,c,difficulty,keywords] = r;
+  let [question,correctAnswer,a,b,c,difficulty,keywords] = r;
+  if (!question.toLowerCase().includes('another world')) {
+    question='In Another World, '+question[0].toLowerCase()+question.slice(1);
+  }
   const answers=[a,b,c];
   answers.splice((i*3+1)%4,0,correctAnswer);
   return {
@@ -126,11 +134,818 @@ const questions = raw.map((r,i)=>{
   };
 });
 
+// Audit questions appended after the original 76, preserving every original ID.
+const AUDIT_ORIGINAL_COUNT=76;
+const AUDIT_FIRST_ID=42795;
+const auditQuestions=[
+  {
+    "id": "tv_42795",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, who took over the role of Alice Matthews after Jacqueline Courtney's departure?",
+    "answers": [
+      "Wesley Ann Pfenning",
+      "Susan Harney",
+      "Victoria Wyndham",
+      "Beverly Penberthy"
+    ],
+    "correctAnswer": "Susan Harney",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "Alice Matthews",
+      "Susan Harney",
+      "1975 Recast",
+      "Jacqueline Courtney Exit",
+      "Soap Cast",
+      "Early Hour Era"
+    ]
+  },
+  {
+    "id": "tv_42796",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress succeeded Susan Harney as Alice Matthews in 1979?",
+    "answers": [
+      "Wesley Ann Pfenning",
+      "Jacqueline Courtney",
+      "Vana Tribbey",
+      "Linda Borgeson"
+    ],
+    "correctAnswer": "Wesley Ann Pfenning",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "Alice Matthews",
+      "Wesley Ann Pfenning",
+      "1979 Recast",
+      "Susan Harney",
+      "Cast Succession",
+      "Hour Era"
+    ]
+  },
+  {
+    "id": "tv_42797",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what medical emergency caused Mary Matthews's death in 1975?",
+    "answers": [
+      "A stroke",
+      "A brain tumour",
+      "A car accident",
+      "A heart attack"
+    ],
+    "correctAnswer": "A heart attack",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Mary Matthews",
+      "1975 Death",
+      "Heart Attack",
+      "Matthews Family",
+      "Cast Departure",
+      "Family Tragedy"
+    ]
+  },
+  {
+    "id": "tv_42798",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what revelation about Marianne caused John Randolph to leave Pat in a 1976 storyline?",
+    "answers": [
+      "Marianne was secretly married",
+      "Marianne had forged a will",
+      "Marianne had undergone an abortion",
+      "Marianne had emigrated to Italy"
+    ],
+    "correctAnswer": "Marianne had undergone an abortion",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "John Randolph",
+      "Pat Randolph",
+      "Marianne Randolph",
+      "1976 Abortion Story",
+      "Marriage Breakdown",
+      "Family Conflict"
+    ]
+  },
+  {
+    "id": "tv_42799",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which Matthews family doctor was once engaged to Iris Carrington?",
+    "answers": [
+      "Steve Frame",
+      "Russ Matthews",
+      "John Randolph",
+      "Brian Bancroft"
+    ],
+    "correctAnswer": "Russ Matthews",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Iris Carrington",
+      "Russ Matthews",
+      "Former Engagement",
+      "1975 Relationship",
+      "Mac Cory",
+      "Family Romance"
+    ]
+  },
+  {
+    "id": "tv_42800",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, whom did Iris Carrington marry despite his unresolved relationship with Clarice Hobson?",
+    "answers": [
+      "Robert Delaney",
+      "Eliot Carrington",
+      "Russ Matthews",
+      "Mitch Blake"
+    ],
+    "correctAnswer": "Robert Delaney",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Iris Carrington",
+      "Robert Delaney",
+      "Clarice Hobson",
+      "Marriage Intrigue",
+      "1970s Iris",
+      "Architect"
+    ]
+  },
+  {
+    "id": "tv_42801",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, who was the father of Clarice Hobson's child during the Iris Delaney marriage storyline?",
+    "answers": [
+      "Mac Cory",
+      "Russ Matthews",
+      "John Randolph",
+      "Robert Delaney"
+    ],
+    "correctAnswer": "Robert Delaney",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Clarice Hobson",
+      "Robert Delaney",
+      "Pregnancy Story",
+      "Iris Carrington",
+      "Child Paternity",
+      "Mid 1970s"
+    ]
+  },
+  {
+    "id": "tv_42802",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, how did Iris Carrington intimidate Clarice Hobson over her pregnancy?",
+    "answers": [
+      "She threatened to destroy Clarice's house",
+      "She had Clarice arrested for fraud",
+      "She threatened to take Clarice's child away",
+      "She threatened to revoke Clarice's nursing licence"
+    ],
+    "correctAnswer": "She threatened to take Clarice's child away",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Iris Carrington",
+      "Clarice Hobson",
+      "Child Custody Threat",
+      "Robert Delaney",
+      "Pregnancy Cover Up",
+      "Villainous Scheme"
+    ]
+  },
+  {
+    "id": "tv_42803",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, why did Robert Delaney finally leave Iris Carrington after their marriage?",
+    "answers": [
+      "He learned Iris had joined a rival publisher",
+      "He discovered she had concealed Clarice's pregnancy",
+      "He discovered Iris had remarried Eliot",
+      "He was offered a job in Sydney"
+    ],
+    "correctAnswer": "He discovered she had concealed Clarice's pregnancy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Robert Delaney",
+      "Iris Carrington",
+      "Clarice Hobson",
+      "Pregnancy Secret",
+      "Marriage Collapse",
+      "Story Revelation"
+    ]
+  },
+  {
+    "id": "tv_42804",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress played Clarice Hobson in the 1970s?",
+    "answers": [
+      "Gail Brown",
+      "Susan Harney",
+      "Gretchen Oehler",
+      "Laurie Heineman"
+    ],
+    "correctAnswer": "Gail Brown",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "Gail Brown",
+      "Clarice Hobson",
+      "1970s Cast",
+      "Robert Delaney",
+      "Romantic Story",
+      "Actress"
+    ]
+  },
+  {
+    "id": "tv_42805",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress originally played Janice Frame before Christine Jones took over?",
+    "answers": [
+      "Victoria Wyndham",
+      "Susan Sullivan",
+      "Beverlee McKinsey",
+      "Victoria Thompson"
+    ],
+    "correctAnswer": "Victoria Thompson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Cast",
+      "Victoria Thompson",
+      "Janice Frame",
+      "Christine Jones",
+      "Early Portrayal",
+      "Frame Family",
+      "Casting History"
+    ]
+  },
+  {
+    "id": "tv_42806",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which former Sharlene Frame actress won the 1978 Daytime Emmy for Outstanding Actress?",
+    "answers": [
+      "Beverlee McKinsey",
+      "Susan Harney",
+      "Laurie Heineman",
+      "Victoria Wyndham"
+    ],
+    "correctAnswer": "Laurie Heineman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Awards",
+      "Laurie Heineman",
+      "Sharlene Frame",
+      "1978 Daytime Emmy",
+      "Outstanding Actress",
+      "Award Winner",
+      "1970s Recognition"
+    ]
+  },
+  {
+    "id": "tv_42807",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which Liz Matthews actress won the 1979 Daytime Emmy for Outstanding Actress?",
+    "answers": [
+      "Audra Lindley",
+      "Irene Dailey",
+      "Susan Sullivan",
+      "Virginia Dwyer"
+    ],
+    "correctAnswer": "Irene Dailey",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Awards",
+      "Irene Dailey",
+      "Liz Matthews",
+      "1979 Daytime Emmy",
+      "Outstanding Actress",
+      "Award Winner",
+      "1970s Recognition"
+    ]
+  },
+  {
+    "id": "tv_42808",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which Mac Cory actor won the Daytime Emmy for Outstanding Actor in 1980?",
+    "answers": [
+      "Douglass Watson",
+      "Robert Emhardt",
+      "George Reinholt",
+      "Nicolas Coster"
+    ],
+    "correctAnswer": "Douglass Watson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Awards",
+      "Douglass Watson",
+      "Mac Cory",
+      "1980 Daytime Emmy",
+      "Outstanding Actor",
+      "Award Winner",
+      "Cory Family"
+    ]
+  },
+  {
+    "id": "tv_42809",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, how many Daytime Emmy nominations did Beverlee McKinsey receive for playing Iris Carrington from 1977 through 1980?",
+    "answers": [
+      "One",
+      "Seven",
+      "Ten",
+      "Four"
+    ],
+    "correctAnswer": "Four",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Awards",
+      "Beverlee McKinsey",
+      "Iris Carrington",
+      "1977 1980 Awards",
+      "Four Nominations",
+      "Lead Actress",
+      "Award History"
+    ]
+  },
+  {
+    "id": "tv_42810",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, with which CBS soap did Another World share first place in the 1977–78 US daytime ratings?",
+    "answers": [
+      "Guiding Light",
+      "The Young and the Restless",
+      "As the World Turns",
+      "The Edge of Night"
+    ],
+    "correctAnswer": "As the World Turns",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Production",
+      "As The World Turns",
+      "1977 1978 Season",
+      "Ratings Tie",
+      "Top Rated Soaps",
+      "CBS",
+      "NBC Competition"
+    ]
+  },
+  {
+    "id": "tv_42811",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, to what position did Another World fall in the US daytime soap ratings in 1978–79?",
+    "answers": [
+      "First",
+      "Eighth",
+      "Second",
+      "Fifteenth"
+    ],
+    "correctAnswer": "Eighth",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Production",
+      "1978 1979 Ratings",
+      "Eighth Position",
+      "Audience Decline",
+      "NBC Performance",
+      "Daytime Television",
+      "90 Minute Format"
+    ]
+  },
+  {
+    "id": "tv_42812",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which writing duo took over as Another World's head writers late in 1979 after Harding Lemay?",
+    "answers": [
+      "Tom King and Robert Soderberg",
+      "Agnes Nixon and William J Bell",
+      "Irna Phillips and Doug Marland",
+      "Michael Malone and Peggy Sloane"
+    ],
+    "correctAnswer": "Tom King and Robert Soderberg",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Production",
+      "Tom King",
+      "Robert Soderberg",
+      "1979 Head Writers",
+      "Harding Lemay Successors",
+      "Production Credits",
+      "Editorial Transition"
+    ]
+  },
+  {
+    "id": "tv_42813",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what first for US daytime soap operas did Another World's January 1975 expansion achieve?",
+    "answers": [
+      "The first broadcast in colour",
+      "The first programme with a female lead",
+      "The first soap to run at weekends",
+      "The first regularly scheduled one-hour serial"
+    ],
+    "correctAnswer": "The first regularly scheduled one-hour serial",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Production",
+      "January 1975",
+      "One Hour Soap First",
+      "NBC Television History",
+      "Broadcast Innovation",
+      "Expansion",
+      "Daily Schedule"
+    ]
+  },
+  {
+    "id": "tv_42814",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what US daytime soap milestone was achieved by Another World's March 1979 expansion?",
+    "answers": [
+      "The first soap with a live audience",
+      "The first soap broadcast entirely from California",
+      "The first regularly scheduled 90-minute serial",
+      "The first soap with simultaneous subtitles"
+    ],
+    "correctAnswer": "The first regularly scheduled 90-minute serial",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Production",
+      "March 1979",
+      "Ninety Minute First",
+      "NBC Daytime",
+      "Soap Opera Milestone",
+      "Extended Format",
+      "Broadcast Innovation"
+    ]
+  },
+  {
+    "id": "tv_42815",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which NBC soap was moved out of its 3:30pm slot when Another World expanded in 1975?",
+    "answers": [
+      "Days of Our Lives",
+      "How to Survive a Marriage",
+      "Somerset",
+      "The Doctors"
+    ],
+    "correctAnswer": "How to Survive a Marriage",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Production",
+      "How To Survive A Marriage",
+      "1975 Schedule Shift",
+      "NBC 330 PM",
+      "Hour Expansion",
+      "Afternoon Lineup",
+      "Daytime Programming"
+    ]
+  },
+  {
+    "id": "tv_42816",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what proposed storyline subject did Harding Lemay say television executives vetoed during his Another World tenure?",
+    "answers": [
+      "Introducing a gay character",
+      "Having a character become a doctor",
+      "Introducing an interracial friendship",
+      "Making a character leave Bay City"
+    ],
+    "correctAnswer": "Introducing a gay character",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Production",
+      "Harding Lemay",
+      "Vetoed Story Idea",
+      "Gay Character",
+      "1970s Network Decisions",
+      "Writing History",
+      "Creative Constraints"
+    ]
+  },
+  {
+    "id": "tv_42817",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which young girl did Alice Matthews adopt during the latter 1970s?",
+    "answers": [
+      "Amanda Cory",
+      "Josie Watts",
+      "Marianne Randolph",
+      "Sally Spencer"
+    ],
+    "correctAnswer": "Sally Spencer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Alice Matthews",
+      "Sally Spencer",
+      "Adoption Story",
+      "1970s Child Character",
+      "Frame Family",
+      "Nursing Work"
+    ]
+  },
+  {
+    "id": "tv_42818",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which man, the son of Beatrice Gordon, married Alice Matthews after Steve Frame's presumed death?",
+    "answers": [
+      "Robert Delaney",
+      "John Randolph",
+      "Raymond Gordon",
+      "Willis Frame"
+    ],
+    "correctAnswer": "Raymond Gordon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Raymond Gordon",
+      "Alice Matthews",
+      "Beatrice Gordon",
+      "1970s Marriage",
+      "Sally Spencer",
+      "Later Romance"
+    ]
+  },
+  {
+    "id": "tv_42819",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which grandmother briefly abducted Alice Matthews's newly adopted daughter Sally?",
+    "answers": [
+      "Liz Matthews",
+      "Beatrice Gordon",
+      "Ada Hobson",
+      "Helen Moore"
+    ],
+    "correctAnswer": "Beatrice Gordon",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1975–1980 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Story",
+      "Beatrice Gordon",
+      "Sally Spencer",
+      "Alice Matthews",
+      "Grandmother",
+      "Child Abduction",
+      "Raymond Gordon"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+
 const ids=new Set(), facts=new Set();
 for(let i=0;i<questions.length;i++){
   const q=questions[i];
   const key=q.question.toLowerCase().replace(/[^a-z0-9]/g,'');
-  if(q.id!=='tv_'+(26900+i)||
+  if(q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(26900+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||
      ids.has(q.id)||facts.has(key)||
      q.answers.length!==4||
      new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
