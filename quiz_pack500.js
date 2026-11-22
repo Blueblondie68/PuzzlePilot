@@ -1,9 +1,17 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 500: Below Deck ORIGINAL Bravo Series, Seasons 11–12
-// Milestone pack with 100 researched questions: 48 from Season 11, 52 from Season 12.
+// Milestone pack: 114 audited questions — 100 originals (3 weak questions repaired)
+// plus 14 independently sourced storyline, cast and production questions.
+// Original IDs tv_28236–tv_28335; audit IDs tv_43205–tv_43218.
+// Original question split: 48 Season 11 / 52 Season 12; additions stay season-specific.
 // IDs tv_28236–tv_28335, after Pack 499 ending tv_28235.
 // 2024 Season 11, S11E01–E17; 2025 Season 12, S12E01–E16.
 // All episodes covered; no spin-offs; series continues (2026 Season 13 airing).
 // Searchable, season-specific storyline, episode, cast and fact tags on every question.
+// Audit 22 November 2026: official Bravo finale coverage (Barbie/Xandi),
+// Sunny lead deckhand, murder mystery event, Sint Maarten and island-hopping,
+// Love Island France connection, guest Kelly's police removal, Kyle's
+// investigated rumour, Hugo's anchor assignment and Caio's luggage mistake.
+// Repaired three generic original facts; original IDs remain unchanged.
 // Reviewed 18 Nov 2026 using Bravo original reporting and episode guides:
 // https://www.tvmaze.com/shows/2900/below-deck/episodeguide
 // https://www.rottentomatoes.com/tv/below_deck/s11
@@ -1554,14 +1562,14 @@ const questions = [
     "id": "tv_28281",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 11, what are the boat's romantic couples discussing as the season ends?",
+    "question": "In Below Deck Season 11, which stewardess left St. David early following a final-night argument with Xandi Olivier?",
     "answers": [
-      "Whether they should change the yacht's name",
-      "Whether to join the galley",
-      "Whether to hold a regatta",
-      "Whether relationships will continue ashore"
+      "Barbie Pascual",
+      "Paris Field",
+      "Cat Baugh",
+      "Xandi Olivier"
     ],
-    "correctAnswer": "Whether relationships will continue ashore",
+    "correctAnswer": "Barbie Pascual",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1569,21 +1577,20 @@ const questions = [
       "Reality Television",
       "American Television",
       "Programme: Below Deck",
-      "Original Below Deck on Bravo",
-      "Written Quiz",
-      "Season: 11",
-      "Year: 2024",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
       "Yacht: St. David",
-      "Charter region: Grenada",
-      "Episode: S11E16",
-      "Episode title: Salt in Chef's Wounds",
-      "Storyline: Post-season romance plans",
-      "Storyline: Boatmances after charter",
-      "Person or group: Ben Willoughby",
-      "Person or group: Sunny Marquis",
-      "Person or group: Barbie Pascual",
-      "Person or group: Kyle Stillie",
-      "Specific fact: Whether relationships will continue ashore"
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Section: Audit Repair Season 11",
+      "Barbie Pascual",
+      "Xandi Olivier",
+      "Season 11 Finale",
+      "Final Night Argument",
+      "Early Yacht Departure",
+      "2024",
+      "Kyle Stillie"
     ]
   },
   {
@@ -2882,14 +2889,14 @@ const questions = [
     "id": "tv_28320",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 12, what troubles the yacht during a difficult charter, leaving guests unhappy and Fraser frantic?",
+    "question": "In Below Deck Season 12, what prevented St. David from leaving the dock during a charter?",
     "answers": [
-      "A sudden change in yacht ownership",
-      "A shortage of passports",
-      "A failed harbour permit",
-      "Technical faults"
+      "Mechanical problems",
+      "A missing passport",
+      "A crew strike",
+      "A visiting film crew"
     ],
-    "correctAnswer": "Technical faults",
+    "correctAnswer": "Mechanical problems",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -2897,19 +2904,20 @@ const questions = [
       "Reality Television",
       "American Television",
       "Programme: Below Deck",
-      "Original Below Deck on Bravo",
-      "Written Quiz",
-      "Season: 12",
-      "Year: 2025",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
       "Yacht: St. David",
-      "Charter region: Sint Maarten, Anguilla, St. Barths",
-      "Episode: S12E12",
-      "Episode title: Dock It Like It's Hot",
-      "Storyline: Yacht technical problems",
-      "Storyline: Guests displeased",
-      "Person or group: Fraser Olender",
-      "Person or group: Kerry Titheradge",
-      "Specific fact: Technical faults"
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Section: Audit Repair Season 12",
+      "Mechanical Faults",
+      "St David Kept Docked",
+      "Episode 12",
+      "Guest Complaints",
+      "Caribbean Charter",
+      "Captain Kerry",
+      "2025"
     ]
   },
   {
@@ -3360,14 +3368,14 @@ const questions = [
     "id": "tv_28334",
     "category": "TV",
     "topic": "Below Deck",
-    "question": "In Below Deck Season 12, what remains unresolved among the crew as the Season 12 finale ends?",
+    "question": "In Below Deck Season 12, which unruly charter guest had to be escorted off St. David by police?",
     "answers": [
-      "Where the yacht was built",
-      "Several romances and friendships",
-      "Who owns the yacht",
-      "The nationality of the captain"
+      "Kelly",
+      "Helen",
+      "LaQuish",
+      "Eileen"
     ],
-    "correctAnswer": "Several romances and friendships",
+    "correctAnswer": "Kelly",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -3375,18 +3383,20 @@ const questions = [
       "Reality Television",
       "American Television",
       "Programme: Below Deck",
-      "Original Below Deck on Bravo",
-      "Written Quiz",
-      "Season: 12",
-      "Year: 2025",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
       "Yacht: St. David",
-      "Charter region: Sint Maarten, Anguilla, St. Barths",
-      "Episode: S12E16",
-      "Episode title: Over the Rainbeau",
-      "Storyline: Boatmances and rivalries unresolved",
-      "Storyline: Open-ended final season friendships",
-      "Person or group: St. David crew",
-      "Specific fact: Several romances and friendships"
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Section: Audit Repair Season 12",
+      "Guest Kelly",
+      "Police Removal",
+      "Captain Kerry Titheradge",
+      "Episode 10",
+      "Intoxicated Charter Guest",
+      "2025",
+      "Guest Safety"
     ]
   },
   {
@@ -3424,9 +3434,505 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==100||new Set(questions.map(q=>q.id)).size!==questions.length||
+// 22 Nov 2026 audit append — original Bravo series, Seasons 11–12 only.
+const AUDIT_ORIGINAL_COUNT=100;
+const AUDIT_FIRST_ID=43205;
+const auditQuestions=[
+  {
+    "id": "tv_43205",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 11, which earlier Below Deck spin-off did Captain Kerry Titheradge command before taking over the original series?",
+    "answers": [
+      "Below Deck Mediterranean",
+      "Below Deck Adventure",
+      "Below Deck Sailing Yacht",
+      "Below Deck Down Under"
+    ],
+    "correctAnswer": "Below Deck Adventure",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 11",
+      "Section: Audit Production",
+      "Captain Kerry Titheradge",
+      "Below Deck Adventure",
+      "Captain Crossover",
+      "Franchise History",
+      "Season 11 Debut",
+      "New Captain"
+    ]
+  },
+  {
+    "id": "tv_43206",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 11, which deckhand was chosen as lead deckhand ahead of Dylan Pierre De Villiers?",
+    "answers": [
+      "Sunny Marquis",
+      "Kyle Stillie",
+      "Jared Woodin",
+      "Barbie Pascual"
+    ],
+    "correctAnswer": "Sunny Marquis",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 11",
+      "Section: Audit Crew",
+      "Sunny Marquis",
+      "Dylan Pierre De Villiers",
+      "Lead Deckhand",
+      "Bosun Ben Willoughby",
+      "Promotion",
+      "Season Eleven"
+    ]
+  },
+  {
+    "id": "tv_43207",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 11, what whodunnit-style entertainment did the crew stage for guests in Season 11's eighth episode?",
+    "answers": [
+      "A poker tournament",
+      "A masquerade ball",
+      "A scavenger hunt on shore",
+      "A murder mystery party"
+    ],
+    "correctAnswer": "A murder mystery party",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 11",
+      "Section: Audit Guest Event",
+      "Murder Mystery Party",
+      "Episode Eight",
+      "Scavenger Hunt Clues",
+      "Guest Entertainment",
+      "Season Eleven",
+      "Charter Experience"
+    ]
+  },
+  {
+    "id": "tv_43208",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 11, which bosun apologised to Captain Kerry after their late-season cabin-check disagreement?",
+    "answers": [
+      "Jared Woodin",
+      "Dylan Pierre De Villiers",
+      "Ben Willoughby",
+      "Eddie Lucas"
+    ],
+    "correctAnswer": "Ben Willoughby",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 11",
+      "Section: Audit Crew",
+      "Ben Willoughby",
+      "Captain Kerry",
+      "Cabin Inspection",
+      "Apology",
+      "Season Eleven Finale",
+      "Workplace Relations"
+    ]
+  },
+  {
+    "id": "tv_43209",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 11, which country is Season 11 stewardess Barbara 'Barbie' Pascual associated with?",
+    "answers": [
+      "South Africa",
+      "Argentina",
+      "New Zealand",
+      "Sweden"
+    ],
+    "correctAnswer": "Argentina",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 11",
+      "Section: Audit Cast",
+      "Barbie Pascual",
+      "Argentina",
+      "Argentinian",
+      "Interior Crew",
+      "Season Eleven",
+      "Background"
+    ]
+  },
+  {
+    "id": "tv_43210",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 12, around which Dutch-Caribbean island were most Season 12 charters filmed?",
+    "answers": [
+      "Sint Maarten",
+      "Bermuda",
+      "Grenada",
+      "Jamaica"
+    ],
+    "correctAnswer": "Sint Maarten",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 12",
+      "Section: Audit Production",
+      "Sint Maarten",
+      "Season Twelve Location",
+      "Dutch Caribbean",
+      "St David",
+      "2025 Broadcast",
+      "Island Charters"
+    ]
+  },
+  {
+    "id": "tv_43211",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 12, which two nearby islands did St. David also visit during its Season 12 Caribbean charters?",
+    "answers": [
+      "Cuba and Jamaica",
+      "Barbados and Trinidad",
+      "Dominica and Martinique",
+      "Anguilla and St. Barts"
+    ],
+    "correctAnswer": "Anguilla and St. Barts",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 12",
+      "Section: Audit Production",
+      "Anguilla",
+      "St Barts",
+      "Island Hopping",
+      "Sint Maarten",
+      "Season Twelve",
+      "Cruise Route"
+    ]
+  },
+  {
+    "id": "tv_43212",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 12, which French dating reality programme had stewardess Solène Favreau appeared in before Below Deck?",
+    "answers": [
+      "The Bachelor France",
+      "Married at First Sight Australia",
+      "Love Island France",
+      "Too Hot to Handle"
+    ],
+    "correctAnswer": "Love Island France",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 12",
+      "Section: Audit Cast",
+      "Solene Favreau",
+      "Love Island France",
+      "French Reality TV",
+      "Prior Television Appearance",
+      "2023",
+      "Season 12 Cast"
+    ]
+  },
+  {
+    "id": "tv_43213",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 12, when did chef Lawrence Snowden decide to leave St. David during Season 12?",
+    "answers": [
+      "After the season finale",
+      "Before the first charter was completed",
+      "Between the tenth and eleventh charters",
+      "Before the first guest arrived at the dock"
+    ],
+    "correctAnswer": "Before the first charter was completed",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 12",
+      "Section: Audit Crew",
+      "Lawrence Snowden",
+      "First Charter",
+      "Chef Resignation",
+      "Season Twelve Early Exit",
+      "Galley Pressure",
+      "2025"
+    ]
+  },
+  {
+    "id": "tv_43214",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 12, what mistake involving charter guests' belongings contributed to Caio Poltronieri's dismissal?",
+    "answers": [
+      "Leaving their luggage behind at the dock",
+      "Sending their passports to the wrong yacht",
+      "Throwing away their designer clothes",
+      "Putting their bags on a ferry to another island"
+    ],
+    "correctAnswer": "Leaving their luggage behind at the dock",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 12",
+      "Section: Audit Crew",
+      "Caio Poltronieri",
+      "Captain Kerry",
+      "Guest Luggage Left Behind",
+      "Dock Error",
+      "Bosun Fired",
+      "Season Twelve"
+    ]
+  },
+  {
+    "id": "tv_43215",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 12, which married charter guest was named in Kyle Stillie's disputed hookup story?",
+    "answers": [
+      "Kelly",
+      "LaQuish",
+      "Eileen",
+      "Helen"
+    ],
+    "correctAnswer": "Helen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 12",
+      "Section: Audit Guest Incident",
+      "Kyle Stillie",
+      "Guest Helen",
+      "Hookup Rumour",
+      "Episode Eleven",
+      "Captain Kerry Investigation",
+      "2025"
+    ]
+  },
+  {
+    "id": "tv_43216",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 12, what decision did Captain Kerry make after investigating Kyle Stillie's alleged guest hookup?",
+    "answers": [
+      "He immediately dismissed Kyle",
+      "He made Kyle the yacht's captain",
+      "He kept Kyle on the crew",
+      "He banned all future shore excursions"
+    ],
+    "correctAnswer": "He kept Kyle on the crew",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 12",
+      "Section: Audit Crew",
+      "Kyle Stillie",
+      "Captain Kerry",
+      "Not Fired",
+      "Guest Hookup Rumour",
+      "Formal Investigation",
+      "Episode Eleven"
+    ]
+  },
+  {
+    "id": "tv_43217",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 12, which bosun was trusted to anchor St. David during the final charter despite an earlier shaky season?",
+    "answers": [
+      "Caio Poltronieri",
+      "Hugo Ortega",
+      "Ross McHarg",
+      "Jared Woodin"
+    ],
+    "correctAnswer": "Hugo Ortega",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 12",
+      "Section: Audit Crew",
+      "Hugo Ortega",
+      "Anchoring",
+      "Captain Kerry",
+      "Final Charter",
+      "Season Twelve",
+      "Bosun Responsibility"
+    ]
+  },
+  {
+    "id": "tv_43218",
+    "category": "TV",
+    "topic": "Below Deck",
+    "question": "In Below Deck Season 12, what followed the mechanical breakdown that kept St. David docked during a Season 12 charter?",
+    "answers": [
+      "A disappointing guest tip",
+      "A surprise wedding at sea",
+      "An immediate transfer to St Lucia",
+      "The arrival of an extra captain"
+    ],
+    "correctAnswer": "A disappointing guest tip",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Reality Television",
+      "American Television",
+      "Programme: Below Deck",
+      "Original Bravo Series",
+      "Bravo Network",
+      "Season 11–12 (2024–2025)",
+      "Yacht: St. David",
+      "Luxury Yacht Charters",
+      "Written Quiz",
+      "Season: 12",
+      "Section: Audit Charter",
+      "St David Mechanical Problem",
+      "Low Charter Tip",
+      "Episode Twelve",
+      "Guest Complaints",
+      "Season Twelve",
+      "Charter Outcome"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==114||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(28236+i)||q.topic!=='Below Deck'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(28236+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Below Deck'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<15||
 new Set(q.tags).size!==q.tags.length||q.dailyEligible!==true||
