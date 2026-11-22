@@ -1,6 +1,6 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 473
 // Band of Gold (1995–1997), series 1–3 including retitled final series Gold.
-// Complete programme, 51 distinct facts. No padding.
+// Complete programme, 75 audited questions. No padding.
 // First TV ID tv_26155; last tv_26205.
 // Sources: https://www.tvmaze.com/shows/4799/band-of-gold/episodeguide
 // https://en.wikipedia.org/wiki/Band_of_Gold_(TV_series)
@@ -1641,10 +1641,66 @@ const questions=[
     "dailyEligible": true
   }
 ];
-if(questions.length!==51||
- new Set(questions.map(q=>q.id)).size!==51||
- new Set(questions.map(q=>q.question.toLowerCase())).size!==51||
- questions.some((q,i)=>q.id!=='tv_'+String(26155+i)||
+
+// Focused 1995–97 gap audit: BAFTA nominations, cast, production and major plot endings.
+// Original 51 questions retain their IDs, answer choices and tags.
+const AUDIT_ORIGINAL_COUNT=51;
+const AUDIT_FIRST_ID=42586;
+const auditFacts = `For which award category was Band of Gold nominated at the 1996 BAFTA Television Awards?|Drama Serial|Drama Series|Single Drama|Situation Comedy|Medium|1996 BAFTAs|Drama Serial|Award Nomination|British Academy|Granada Drama|Tony Dennis|Kay Mellor
+Which Band of Gold performer was nominated for the BAFTA Actress award in 1996?|Geraldine James|Cathy Tyson|Barbara Dickson|Samantha Morton|Medium|1996 BAFTAs|Geraldine James|Actress Nomination|Rose Garrity|British Academy|Acting Recognition|First Series
+Which actress won the 1996 BAFTA Actress prize ahead of Band of Gold nominee Geraldine James?|Jennifer Ehle|Helen Mirren|Juliet Stevenson|Cathy Tyson|Medium|Jennifer Ehle|Pride And Prejudice|1996 BAFTAs|Actress Winner|Geraldine James Nomination|Award Results|British Academy
+Which programme won the 1996 BAFTA Drama Serial award when Band of Gold was nominated?|The Politician's Wife|Pride and Prejudice|The Hanging Gale|Prime Suspect|Medium|Politicians Wife|1996 BAFTAs|Drama Serial Winner|Programme Nomination|British Academy|Awards Outcome|ITV Drama
+Which three creative professionals were credited for Band of Gold's 1996 BAFTA Drama Serial nomination?|Tony Dennis, Richard Standeven and Kay Mellor|Sally Head, Hal Lindes and Rachel Talalay|Gub Neal, Peter Jessop and Catherine Johnson|David Schofield, Tony Doyle and Richard Moore|Hard|Tony Dennis|Richard Standeven|Kay Mellor|1996 BAFTAs|Production Nominees|Drama Serial|Credits
+What was the original working title of Band of Gold before Granada commissioned it?|Frontline|Gold|The Lane|Scrubbit|Medium|Frontline|Original Working Title|Kay Mellor|Sally Head|Development History|Granada Commission|Programme Origins
+Which broadcaster had originally optioned Kay Mellor's Band of Gold scripts under the working title Frontline?|BBC|ITV|Channel 4|Sky Television|Medium|BBC Original Option|Frontline|Kay Mellor|Early Development|1993 Rights Lapse|Granada Television|Script History
+Which drama executive championed Kay Mellor's Band of Gold after it moved from the BBC to Granada?|Sally Head|Jane Tranter|Julie Gardner|Sophie Clarke-Jervoise|Medium|Sally Head|Granada Head Of Drama|Frontline|Drama Commission|1995 Series|Executive Producer|Broadcast History
+Who composed the original music for the ITV drama Band of Gold?|Hal Lindes|Hans Zimmer|Simon May|George Fenton|Medium|Hal Lindes|Music Composer|1995 Theme|Programme Score|Music Credits|ITV Production|Behind The Scenes
+On which date was Band of Gold first broadcast on ITV?|12 March 1995|3 March 1996|27 October 1997|1 December 1997|Medium|12 March 1995|ITV Premiere|Series One|Sold Episode|First Broadcast|Transmission Date|Television History
+On which date did the final episode of Band of Gold's retitled third series first air?|1 December 1997|27 October 1997|7 April 1996|16 April 1995|Medium|1 December 1997|Gold Finale|Tainted Love Part Two|ITV Broadcast|Series Three|Transmission Date|Programme Ending
+Which actress played Joyce Webster in Band of Gold?|Rachel Davies|Cathy Tyson|Geraldine James|Ruth Gemmell|Medium|Rachel Davies|Joyce Webster|1995 Cast|1996 Cast|Supporting Actress|Gina Family|Character Casting
+Who played Tracy's abusive pimp Dez in Band of Gold?|Ace Bhatti|Ray Stevenson|Tony Doyle|David Schofield|Medium|Ace Bhatti|Dez|Tracy Richards|1995 Cast|1996 Cast|Actor Identification|Recurring Role
+Which actor played Curly's nephew Vinnie Marshall in Band of Gold and its final series Gold?|Adam Kotz|Richard Moore|Tony Doyle|Peter Firth|Medium|Adam Kotz|Vinnie Marshall|Curly Relative|Gold Finale|1997 Cast|Actor Identification|Supporting Character
+Which actress played Carol Johnson's daughter Emma in Band of Gold?|Laura Kilgallon|Laura Jones|Katie Hodgson|Rebecca Callard|Medium|Laura Kilgallon|Emma Johnson|Carol Family|1995 Cast|1997 Cast|Actress Identification|Recurring Role
+Who directed the first two episodes of Band of Gold including its premiere Sold?|Richard Standeven|Richard Laxton|Charles Beeson|Rachel Talalay|Medium|Richard Standeven|Sold|Caught|1995 Series One|Episode Director|Original Premiere|Production History
+How had the murderer in Band of Gold's first series previously encountered Carol and Gina?|He was a client from whom Carol stole money|He was a schoolteacher they had met|He was employed by the local police|He had rented a room at Anita's flat|Medium|1995 First Series|Gina Murder|Carol Johnson|Serial Killer Reveal|First Episode Connection|Stolen Money|Plot Resolution
+Which character was responsible for the deaths of Curly and George Ferguson in Band of Gold Series 2?|Tracy Richards|Rose Garrity|Carol Johnson|Colette|Hard|1996 Series Two|Tracy Richards|Curly Murder|George Ferguson Murder|Crime Reveal|Murder Investigation|Major Twist
+Which young character dies at the end of Band of Gold's second series after returning to her parents' home?|Tracy Richards|Colette|Rose Garrity|Anita Braithwaite|Hard|1996 Series Two Finale|Tracy Richards|Death Of Character|Release Episode|Harrogate|Series Conclusion|Story Resolution
+Who deliberately started the factory fire in the final episode of Band of Gold's sequel Gold?|Vinnie Marshall|Little Charlie|DI Erica Cooper|Carol Johnson|Hard|Gold Finale|Vinnie Marshall|Factory Arson|1997|Tainted Love Part Two|Insurance Money|Final Plot
+Which real Bradford street inspired The Lane in Band of Gold?|Lumb Lane|Kirkgate|Market Street|Briggate|Medium|Lumb Lane|Manningham Bradford|Real Life Setting|The Lane|Filming Context|West Yorkshire|Geography
+Who wrote the final two-part story Tainted Love in Band of Gold's concluding series Gold?|Catherine Johnson|Kay Mellor|Mark Davies-Markham|Sally Wainwright|Medium|Catherine Johnson|Tainted Love|Gold Finale|1997|Television Writer|Screenplay Credit|Two Part Story
+Which actress portrayed the character Jae in the last series of Band of Gold titled Gold?|Alicya Eyo|Fiona Allen|Cathy Tyson|Lena Headey|Medium|Alicya Eyo|Jae|1997 Gold|Final Series Cast|Supporting Actress|Character Identification|Crime Storyline
+Who directed the first two episodes of the 1997 Gold series concluding Band of Gold?|Sheree Folkson|Rachel Talalay|David Innes-Edwards|Charles Beeson|Medium|Sheree Folkson|Shes Back|Gold Series|1997|Opening Two Part Story|Episode Director|Production Credits`;
+const auditTags = ['Television','British Television','ITV Drama','Band of Gold','Programme: Band of Gold',
+  '1990s Television','Crime Drama','Kay Mellor','Written Questions'];
+const auditQuestions = auditFacts.trim().split('\n').map((line,i)=>{
+  const p=line.split('|').map(x=>x.trim());
+  if(p.length!==13)throw Error('Invalid audit row '+i);
+  const [question,correctAnswer,wrong1,wrong2,wrong3,difficulty,...specificTags]=p;
+  const answers=[wrong1,wrong2,wrong3];
+  answers.splice((AUDIT_ORIGINAL_COUNT+i)%4,0,correctAnswer);
+  const tags=[...new Map([...auditTags,correctAnswer,...specificTags].map(t=>[t.toLowerCase(),t])).values()];
+  return {id:'tv_'+String(AUDIT_FIRST_ID+i),category:'TV',topic:'Band of Gold',
+    question,answers,correctAnswer,difficulty,tags,dailyEligible:true};
+});
+// Make all questions self-contained when sampled in the mixed Daily Quiz.
+for(const q of questions){
+  if(q.id==='tv_26205'){
+    q.question=q.question.replace('December 2019','November 2019');
+  }
+  if(!q.question.includes('Band of Gold')){
+    q.question=q.question.startsWith('In which ')
+      ? 'In Band of Gold, which '+q.question.slice(9)
+      : q.question.startsWith('In ')
+        ? 'In Band of Gold episode '+q.question.slice(3)
+        : 'In Band of Gold, '+q.question[0].toLowerCase()+q.question.slice(1);
+  }
+}
+questions.push(...auditQuestions);
+
+if(questions.length!==75||
+ new Set(questions.map(q=>q.id)).size!==75||
+ new Set(questions.map(q=>q.question.toLowerCase())).size!==75||
+ questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(26155+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||
  q.category!=='TV'||q.topic!=='Band of Gold'||
  !Array.isArray(q.answers)||q.answers.length!==4||
  new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
