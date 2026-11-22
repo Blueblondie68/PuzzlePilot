@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 429
 // All Saints (Australia): Season 10 (2007), 41 episodes.
 // Follows Pack 428. First ID: tv_24991.
-// Complete WordPad-ready CommonJS. All Saints stays unfinished on the TV master.
+// Complete WordPad-ready CommonJS. All Saints finished in 2009; later packs still need auditing.
 // Each row: question | correct answer | three distractors | difficulty | seven question-specific tags.
 // Episode stories checked against 2007 episode listings and detailed guides.
 'use strict';
@@ -142,9 +142,47 @@ What organ transplant did young Georgina Feeney desperately need in the Season 1
 Where did the gunmen plant a time bomb in Against the Wall (Part 1)?|The laboratory|The hospital chapel|The cafeteria|The ambulance bay|Medium|Against The Wall|Episode 41|Hospital Laboratory|Time Bomb|Jack Quade|Ann Maree|Siege Cliffhanger
 How long did the bomb planted in the laboratory have on its timer in Against the Wall (Part 1)?|Fifteen minutes|Five minutes|Thirty minutes|One hour|Hard|Against The Wall|Episode 41|Fifteen Minute Countdown|James Byrne|Laboratory Bomb|Season Finale|Hospital Threat`;
 
+
+// 2007 Season 10 story, cast, production and AFI/Logie nominations audit.
+// The programme ended in 2009; later-season coverage remains outstanding.
+const AUDIT_ORIGINAL_COUNT = 127;
+const AUDIT_FIRST_ID = 42310;
+const auditFacts = `In which category was All Saints Series 10 nominated at the 2007 AFI Awards?|Best Television Drama Series|Best Television Comedy Series|Best Television Documentary|Best Children's Television Drama|Medium|2007 AFI Awards|series ten|Best Television Drama Series|award nomination|Australian Film Institute|seven network|industry recognition
+Which pair of producers were credited with the All Saints Series 10 nomination at the 2007 AFI Awards?|Bill Hughes and MaryAnne Carroll|Bevan Lee and Jo Porter|Peter Fisk and John Holmes|Scott Feeney and Di Drew|Medium|2007 AFI Awards|Bill Hughes|MaryAnne Carroll|producing team|drama series nomination|season ten|industry awards
+Which All Saints actor received a 2007 AFI nomination for Best Guest or Supporting Actor in Television Drama?|Mark Priestley|John Howard|Wil Traval|Chris Vance|Medium|Mark Priestley|Dan Goldman|2007 AFI Awards|supporting actor nomination|dramatic acting|Australian Film Institute|season ten
+Which All Saints actor received a Gold Logie nomination in 2008?|John Howard|Mark Priestley|Jack Campbell|Andrew Supanz|Medium|John Howard|Frank Campion|2008 Logies|Gold Logie nomination|popular personality|cast honour|Australian awards
+Which All Saints actor was nominated for Most Popular Actor at the 2008 Logies?|John Howard|Jack Campbell|Christopher Gabardi|Chris Vance|Medium|2008 Logies|John Howard|Most Popular Actor nomination|Frank Campion|Silver Logie|cast recognition|Australian television
+Which All Saints newcomer was nominated for Most Popular New Male Talent at the 2008 Logies?|Jack Campbell|Mike Smith|Will Snow|Nathaniel Dean|Medium|Jack Campbell|Steve Taylor|2008 Logies|new male talent nomination|actor recognition|emergency doctor|awards history
+Which award for drama programmes was All Saints nominated for at the 2008 Logies?|Most Popular Australian Drama Series|Most Popular Comedy Program|Most Outstanding News Coverage|Most Popular Children's Program|Medium|2008 Logies|popular drama nomination|Australian television|viewer voting|programme recognition|Seven Network|awards category
+Which actor portrayed the incoming Emergency doctor Steve Taylor in All Saints Series 10?|Jack Campbell|Wil Traval|Chris Vance|Andrew Supanz|Medium|Jack Campbell|Steve Taylor|new doctor|2007 cast|episode twenty six|actor identification|Emergency Department
+Who played ambulance officer Heath Velaga in All Saints Series 10?|Mike Smith|Conrad Coleby|Grant Bowler|Fletcher Humphrys|Medium|Mike Smith|Heath Velaga|ambulance officer|2007 cast|paramedic|series ten|actor identification
+Which actress portrayed Bree Matthews in All Saints Series 10?|Celeste Barber|Jolene Anderson|Allison Cratchley|Tammy MacIntosh|Medium|Celeste Barber|Bree Matthews|2007 cast|recurring character|Australian actress|actor identification|series ten
+Which actress played Ann-Maree Preston in All Saints Series 10?|Yael Stone|Tracy Mann|Rebecca Ritters|Sonia Todd|Medium|Yael Stone|Ann Maree Preston|Bart West|cancer storyline|2007 guest cast|actor identification|recurring patient
+Which actor portrayed Australian Army officer Simon McDermott in All Saints Series 10?|Will Snow|Pip Miller|Anthony Gee|Nathaniel Dean|Medium|Will Snow|Simon McDermott|brain aneurysm|2007 guest cast|army officer|actor identification|late season
+Who played hospital siege organiser James Byrne in All Saints Series 10?|Nathaniel Dean|Mike Smith|Jack Campbell|Will Snow|Medium|Nathaniel Dean|James Byrne|armed hostage plot|Against the Wall|2007 guest cast|actor identification|season finale
+Which actress played Simon McDermott's mother Laura in All Saints Series 10?|Tracy Mann|Sonia Todd|Alexandra Fowler|Rebecca Ritters|Medium|Tracy Mann|Laura McDermott|Simon McDermott|2007 guest cast|mother character|actor identification|family conflict
+Which actor portrayed Jack Quade's childhood abuser Patrick Wesley in All Saints Series 10?|Pip Miller|Nathaniel Dean|Will Snow|Mike Smith|Medium|Pip Miller|Patrick Wesley|Jack Quade|childhood abuse|recurring character|2007 cast|actor identification
+What was the name of Charlotte Beaumont's baby born during All Saints Series 10?|Zachary|Daniel|Patrick|Lucas|Medium|Charlotte Beaumont|Zachary|birth|Doug Spencer|2007 season|motherhood|family storyline
+In All Saints episode The Hardest Word which relative of Erica Templeton died after the siege?|Her brother AJ|Her father|Her sister|Her uncle|Medium|The Hardest Word|Erica Templeton|AJ Templeton|siege aftermath|family bereavement|hospital tragedy|episode two
+In All Saints episode The Hearts of Men who invited recovering intern Bart West to stay at his home?|Frank Campion|Mike Vlasek|Jack Quade|Sean Everleigh|Medium|The Hearts of Men|Bart West|Frank Campion|post shooting recovery|home support|workplace mentorship|episode five
+In All Saints episode Precious Moments how had registrar Sean Everleigh been critically injured?|He was hit by a car|He fell from the hospital roof|He was injured in a house fire|He was crushed by an ambulance|Medium|Precious Moments|Sean Everleigh|road traffic accident|2007 tragedy|Zoe Gallagher|emergency surgery|episode eighteen
+In All Saints episode Precious Moments which colleague did Sean Everleigh try to shield from the severity of his injuries?|Zoe Gallagher|Charlotte Beaumont|Gabrielle Jaeger|Erica Templeton|Medium|Precious Moments|Sean Everleigh|Zoe Gallagher|romantic partner|concealed injuries|end of life|episode eighteen
+In All Saints episode Crossroads which man from Jack Quade's abusive childhood arrived with multiple stab wounds?|Patrick Wesley|Travis Knight|Benny|James Byrne|Medium|Crossroads|Patrick Wesley|Jack Quade|childhood trauma|stab wounds|sexual abuse storyline|episode twenty
+In All Saints episode One Moment in Time what career fear struck Bart West after he exceeded his procedural authority?|His medical career might be over|He would be sent abroad|He would have to retrain as a nurse|He would become an ambulance officer|Medium|One Moment in Time|Bart West|unauthorised procedure|junior doctor|career consequences|hospital rules|episode twenty two
+In All Saints episode Push Me Pull You what departure was Charlotte Beaumont considering following her partner?|Moving to Africa|Moving to London|Moving to New York|Moving to Canada|Medium|Push Me Pull You|Charlotte Beaumont|partner Spence|Africa|career choice|family relocation|episode twenty four
+In All Saints episode Mixed Blessings what announcement endangered Bart West's place in Emergency?|Frank said there was no place for him|The hospital announced his internship had ended|The university cancelled his examination|His contract was transferred to another state|Medium|Mixed Blessings|Bart West|Frank Campion|staffing shortage|career uncertainty|new Emergency doctor|episode twenty seven
+In All Saints episode Reality Check what disturbing behaviour did Von Ryan discover in a male patient?|He was abusing his wife|He had stolen confidential hospital records|He was secretly administering insulin|He was impersonating a physician|Medium|Reality Check|Von Ryan|domestic violence|wife abuse|Frank Campion|patient safeguarding|episode thirty one
+In All Saints episode Open Hearts which injury resulted from a friend attempting to save a man's life?|A cut throat|A shattered wrist|A broken hip|A damaged eye|Medium|Open Hearts|Mike Vlasek|cut throat|unusual rescue injury|surgical emergency|patient treatment|episode thirty six
+In All Saints episode Precious Time which doctor's son fell down the hospital stairs during a confrontation with his father?|Mike Vlasek's|Frank Campion's|Jack Quade's|Sean Everleigh's|Medium|Precious Time|Mike Vlasek|Simon McDermott|stairway fall|family argument|guilt|episode thirty eight
+In All Saints episode Against the Wall Part One what prevented the emergency team from transferring Georgina for a donor heart?|The ambulance bay door would not open|The donor heart was delivered to the wrong city|A flood blocked the hospital driveway|The transfer helicopter was grounded by fog|Medium|Against the Wall|Georgina Feeney|heart transplant|ambulance bay|hostage crisis|season finale|episode forty one
+Who directed the All Saints Series 10 premiere Family Matters?|Kevin Carlin|Bill Hughes|Peter Fisk|Tony Krawitz|Medium|Kevin Carlin|Family Matters|2007 premiere|episode director|production credit|season ten|behind the scenes
+Who wrote the All Saints Series 10 premiere Family Matters?|Louise Crane-Bowes|Sarah Walker|Charlie Strachan|Sally Webb|Medium|Louise Crane Bowes|Family Matters|2007 premiere|scriptwriter|production credit|season ten|behind the scenes
+Who directed the All Saints Series 10 finale Against the Wall Part One?|Tony Krawitz|Kevin Carlin|Peter Fisk|Nicholas Bufalo|Medium|Tony Krawitz|Against the Wall|2007 finale|episode director|production credit|season ten|behind the scenes
+Who wrote the All Saints Series 10 finale Against the Wall Part One?|Charlie Strachan|Louise Crane-Bowes|Sean Nash|Jeff Truman|Medium|Charlie Strachan|Against the Wall|2007 finale|screenplay credit|production history|season ten|behind the scenes`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -159,9 +197,14 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In ') && !question.startsWith('In which')
+      ? 'In All Saints episode ' + question.slice(3)
+      : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
