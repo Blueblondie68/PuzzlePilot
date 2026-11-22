@@ -137,12 +137,13 @@ function appendFacts(block, programme, era) {
     const answers = [wrong1, wrong2, wrong3];
     answers.splice(questions.length % 4, 0, correctAnswer);
 
-    const tags = [...new Map(['Television', 'British Sitcom', programme, era, correctAnswer, ...specificTags]
+    const tags = [...new Map(['Television', 'British Television', 'British Sitcom', 'Comedy', 'Sitcom', programme, 'Programme: '+programme, era, correctAnswer, ...specificTags]
       .map(tag => [tag.toLowerCase(), tag])).values()];
 
     const entry = {
       id: `tv_${FIRST_ID + questions.length}`,
       category: 'Television',
+      programme,
       question,
       answers,
       correctAnswer,
@@ -171,6 +172,125 @@ for (const q of questions) {
   wording.add(key);
 }
 
-module.exports = questions;
 
 
+// Audited new episode-story questions - British Comedy Guide series/episode guides:
+// https://www.comedy.co.uk/tv/the_upper_hand/episodes/
+// https://www.comedy.co.uk/tv/open_all_hours/episodes/all/
+// https://www.comedy.co.uk/tv/still_open_all_hours/episodes/
+// Existing IDs tv_19512-tv_19619 retained. Fresh IDs begin at tv_40227.
+const upperAudit = `In Briefless Encounter, what is the profession of the visitor who propositioned Charlie?|Laura's psychology professor|Caroline's solicitor|A nightclub singer|Joanna's teacher|Series 1|Briefless Encounter|Charlie Burrows|An unexpected caller
+In Dinner For Two, who ends up sharing an intimate meal after other dinner plans collapse?|Charlie and Caroline|Tom and Joanna|Laura and Charlie's father|Laura and Tom|Series 1|Dinner For Two|Charlie and Caroline|Romantic dinner
+In Common Entrance, which boarding school does Joanna want to attend on a scholarship?|St Hilda's|St Trinian's|Abbey Grange|Queen Elizabeth's|Series 2|Common Entrance|Joanna Burrows|Scholarship application
+In When Worlds Collide, what regular gathering does Caroline volunteer to host?|Charlie's poker night|Laura's book club|Joanna's football practice|Tom's chess tournament|Series 2|When Worlds Collide|Caroline Wheatley|Hosting a card game
+In Wedding Bells Part 1, which country is the destination for the family wedding?|France|Italy|Spain|Greece|Series 2|Wedding Bells Part 1|Family wedding|Journey to southern Europe
+In Wedding Bells Part 2, which child unexpectedly helps Caroline in a custody dispute?|Tom Wheatley|Joanna Burrows|Charlie Burrows|Laura West|Series 2|Wedding Bells Part 2|Caroline Wheatley|Custody struggle
+In First Date, who persuades Charlie to invite Caroline out?|Laura West|Joanna Burrows|Tom Wheatley|Michael Wheatley|Series 3|First Date|Charlie Burrows|Encouraging romance
+In Once Bitten Twice Shy, what event does Charlie reluctantly allow Joanna to attend?|A party|A weekend in Paris|A late-night football match|A boarding-school interview|Series 3|Once Bitten Twice Shy|Joanna Burrows|Parental permission
+In Older Than Springtime, what type of customer makes Caroline worry about her age?|A trendy fashion designer|A pop concert promoter|An antiques dealer|A famous football manager|Series 3|Older Than Springtime|Caroline Wheatley|Advertising client
+In The Honeymooners, where does Charlie unexpectedly encounter a former girlfriend?|At a footballers' reunion|At a family christening|At the local theatre|At a charity auction|Series 3|The Honeymooners|Charlie Burrows|Old romance resurfacing
+In The Whiz Kid, what new colleague of Caroline's makes Charlie jealous?|A director|A chauffeur|An accountant|A photographer|Series 3|The Whiz Kid|Caroline Wheatley|Workplace jealousy
+In The Proposal, which professional acquaintance asks Caroline to marry him?|Her accountant|Her dentist|Her football coach|Her solicitor|Series 3|The Proposal|Caroline Wheatley|Unexpected marriage proposal
+In Come Dancing, where do Charlie and Caroline discover an unusually flirtatious couple?|At a golf club dinner dance|At a church fête|At a football reunion|At a wedding in Cannes|Series 4|Come Dancing|Charlie and Caroline|Awkward dinner dance
+In Sex Lies And Exercise Tape, what does Caroline claim about her relationship with Charlie?|That she is having an affair with him|That she has sacked him|That they are already married|That he is her brother|Series 4|Sex Lies And Exercise Tape|Caroline Wheatley|Romance pretence
+In The Fugitive, what alarming news does Charlie give Joanna about her grandfather?|He is in prison|He has moved to Australia|He has sold the family home|He has become a politician|Series 4|The Fugitive|Joanna Burrows|Grandfather revelation
+In Not In Front Of The Children, what are Charlie and Caroline unsure how to announce to the family?|Their new romance|Caroline's retirement|Charlie's transfer to France|Joanna's school results|Series 5|Not In Front Of The Children|Charlie and Caroline|Confessing love
+In Misery, what injury confines Caroline to her bedroom?|An injured ankle|A broken arm|A bruised shoulder|A fractured wrist|Series 5|Misery|Caroline Wheatley|Accidental injury
+In Cheers, who reveals to the household that Joanna returned home drunk?|Tom Wheatley|Laura West|Caroline Wheatley|Charlie Burrows|Series 5|Cheers|Joanna and Tom|Telling on a sibling
+In Minder, who develops an awkward crush on Charlie?|An influential businessman's teenage daughter|Joanna's teacher|A visiting fashion designer|Laura's old school friend|Series 5|Minder|Charlie Burrows|Unwanted romantic attention
+In Wheel Of Fortune, where does Laura lose Caroline's valuable belongings?|At a London casino|At an antiques auction|On a train to France|At a hotel in Edinburgh|Series 5|Wheel Of Fortune|Laura West|Gambling losses
+In Friends, what mementoes make Charlie and Caroline reminisce about their disastrous honeymoon?|Their wedding photographs|A set of golf clubs|Letters from Tom's school|Old football programmes|Series 7|Friends|Charlie and Caroline|Honeymoon memories
+In In Marriage We Trust, what event causes Charlie and Caroline to become jealous of one another?|A dinner party|A workplace promotion|A charity football match|A holiday booking|Series 7|In Marriage We Trust|Married couple|Jealousy during hosting
+In The Chunnel Of Love, to which city does Charlie travel to rescue Joanna's marriage?|Paris|London|Edinburgh|Rome|Series 7|The Chunnel Of Love|Joanna Burrows|Father's rescue trip
+In A Couple Of Charlies, whose objection spoils Charlie's reunion with an old girlfriend?|Her husband|Joanna's boyfriend|Laura's brother|Caroline's accountant|Series 7|A Couple Of Charlies|Charlie Burrows|Unpleasant spouse`;
+const openAudit = `In A Matress On Wheels, what vehicle does Granville persuade Arkwright to consider buying?|A van|A motorcycle|A tractor|A taxi|Series 1|A Matress On Wheels|Arkwright and Granville|Travel with a lady friend
+In A Nice Cosy Little Disease, why does Arkwright contemplate becoming ill?|To attract Nurse Gladys's attention|To claim an insurance payment|To avoid visiting his accountant|To make Granville work longer|Series 1|A Nice Cosy Little Disease|Arkwright|Wanting nursing care
+In Beware Of The Dog, what prompts Arkwright to fortify the shop?|A local crime wave|A prolonged power cut|Flooding from the river|A council demolition order|Series 1|Beware Of The Dog|Arkwright|Worries about security
+In Well Catered Funeral, what event tests Arkwright's unwillingness to spend money?|His best friend's funeral|A christening for Granville|A neighbour's birthday|Gladys's retirement party|Series 1|Well Catered Funeral|Arkwright|Costly memorial gathering
+In Laundry Blues, what appliance does Nurse Gladys insist Arkwright must purchase?|A new washing machine|A refrigerator|A tumble dryer|An electric cooker|Series 2|Laundry Blues|Nurse Gladys|Household spending
+In The New Suit, who insists that Arkwright replace his old clothing?|Nurse Gladys Emmanuel|Mrs Blewett|Granville|The local police officer|Series 2|The New Suit|Arkwright|Buying smarter clothes
+In Shedding At The Wedding, what smell makes Arkwright's suit a problem?|Mothballs|Burnt toast|Petrol|Disinfectant|Series 2|Shedding At The Wedding|Arkwright|Unpleasant suit smell
+In St Albert's Day, why does Arkwright invent a saint's day?|To investigate a possible shoplifter|To announce Granville's engagement|To impress a television crew|To avoid paying a supplier|Series 2|St Albert's Day|Arkwright|Suspicious customer
+In An Errand Boy By The Ear, what behaviour upsets Arkwright's customers?|His treatment of Granville|His refusal to sell newspapers|His late opening hours|His arguments with the milkman|Series 3|An Errand Boy By The Ear|Arkwright and Granville|Complaints about the errand boy
+In Duet For Solo Bicycle, what mechanical fault drives Granville to distraction?|A squeaking bicycle|A broken cash register|A leaking petrol tank|A faulty refrigerator|Series 3|Duet For Solo Bicycle|Granville|Noisy transport
+In How To Ignite Your Errand Boy, what does Arkwright try to manufacture?|Firelighters|Matches|Kerosene lamps|Safety fuses|Series 3|How To Ignite Your Errand Boy|Arkwright|Dangerous production scheme
+In The Man From Down Under, from which country does Gladys's admirer return?|Australia|Canada|New Zealand|South Africa|Series 3|The Man From Down Under|Nurse Gladys|Rival suitor
+In The Funny Side Of Christmas sketch, why is Arkwright frustrated on Christmas Day?|He cannot open the shop|He misses the Christmas train|He has lost the shop key|He is forced to give away his stock|1982 Christmas sketch|The Funny Side Of Christmas|Arkwright|Closed shop
+In Horse-trading, what goods does Arkwright sell to a local shopkeeper?|Clothes horses|Riding boots|Leather saddles|Woollen blankets|Series 4|Horse-trading|Arkwright|Unusual sale
+In The Errand Boy Executive, what professional status does Granville claim to impress Stephanie?|An executive|An accountant|A university lecturer|A professional footballer|Series 4|The Errand Boy Executive|Granville|Pretending to be important
+In Happy Birthday Arkwright, which visitor would Arkwright most like to avoid?|An inspector from the Good Shop Guide|A supplier from London|A relative from Australia|A television news reporter|Series 4|Happy Birthday Arkwright|Arkwright|Birthday visit`;
+const stillAudit = `In Series 1 Episode Two, which reluctant local resident does Granville hope to lure into the shop?|Old Mr Bentinck|Mr Newbold|Mrs Rossi|The local vicar|Series 1|Episode Two|Granville|Attracting a new customer
+In Series 1 Episode Three, which regular is tempted by a new fitness craze?|Cyril|Eric|Leroy|Mr Newbold|Series 1|Episode Three|Cyril|Workout fad
+In Series 1 Episode Four, what new business does Granville dream of opening?|A coffee shop|A hardware store|A bakery|A garden centre|Series 1|Episode Four|Granville|Business expansion
+In Series 1 Episode Five, from whom does Eric seek urgent advice about his marriage?|Leroy|Gastric|Mr Newbold|Mrs Hussein|Series 1|Episode Five|Eric|Marriage problems
+In Series 1 Episode Six, whose ghost does Granville suspect is haunting the shop?|Arkwright's|Nurse Gladys's|A former customer|The old milkman's|Series 1|Episode Six|Granville|Haunted corner shop
+In the 2015 Christmas special, what festive decoration unexpectedly causes Granville trouble?|A Christmas tree|A string of paper bells|A light-up reindeer|A large wreath|Series 2|Christmas Special|Granville|Festive shop display
+In Series 2 Episode Two, what inflatable product does Granville try to market?|An underwear support system|An exercise bicycle|A travel pillow|A camping mattress|Series 2|Episode Two|Granville|Unusual new product
+In Series 2 Episode Three, what machine's arrival makes Madge anxious?|A cherry picker|A cement mixer|A road roller|A forklift truck|Series 2|Episode Three|Madge|Street disturbance
+In Series 2 Episode Four, what is the first name of the former patient who tries to woo Nurse Gladys?|Mick|Harry|Clive|Stanley|Series 2|Episode Four|Nurse Gladys|Former patient romance
+In Series 2 Episode Five, who is the reluctant bridegroom whose wedding takes place?|Kevin|Eric|Ringo|Leroy|Series 2|Episode Five|Kevin|Unenthusiastic marriage
+In Series 2 Episode Six, what name does Granville give his supposedly romantic salami product?|Yaggis|Haggis Supreme|Cupid Sausage|The Love Roll|Series 2|Episode Six|Granville|Novelty salami brand
+In the 2016 Christmas special, what role do Granville and Gastric find themselves playing?|Marriage counsellors|School governors|Stage magicians|Traffic wardens|Series 3|Christmas Special|Granville and Gastric|Counselling a couple
+In Series 3 Episode Two, what effect are Granville's cheap new devices supposed to produce?|Positive emotions|Clearer eyesight|Better sleep|Faster digestion|Series 3|Episode Two|Granville|Unusual mood gadgets
+In Series 3 Episode Three, what out-of-date confectionery does Granville try to sell?|Mints|Chocolate bars|Toffees|Liquorice sticks|Series 3|Episode Three|Granville|Expired sweets
+In Series 3 Episode Four, whose apparent supernatural powers does Granville use to calm Madge's fears?|Gastric's|Eric's|Leroy's|Mr Newbold's|Series 3|Episode Four|Madge and Gastric|Supposedly haunted home
+In Series 3 Episode Five, which dairy product does Granville struggle to sell?|A large wheel of cheese|A tub of cream|Packets of butter|A crate of yoghurt|Series 3|Episode Five|Granville|Possibly spoiled stock
+In Series 3 Episode Seven, what modern service does Arkwright's shop begin to offer?|Collection of internet shopping deliveries|Currency exchange|Online medical consultations|Passport processing|Series 3|Episode Seven|Granville|Internet parcel collection
+In Series 4 Episode Two, what sort of lessons does Granville propose offering to expand his business?|Fitness classes|Foreign-language lessons|Cookery classes|Driving tuition|Series 4|Episode Two|Granville|Health-related sales
+In Series 4 Episode Three, who barricades his home to avoid Mrs Featherstone?|Mr Newbold|Eric|Cyril|Gastric|Series 4|Episode Three|Mrs Featherstone|Unwanted attention
+In Series 4 Episode Four, which contest encourages Gastric to express his creative side?|An art competition|A baking contest|A chess tournament|A gardening show|Series 4|Episode Four|Gastric|Unexpected artistry
+In Series 4 Episode Five, whom does Madge intend to take away with her when she moves?|Mavis|Ruby|Kath|Mrs Featherstone|Series 4|Episode Five|Madge|Leaving the neighbourhood
+In Series 4 Episode Seven, to which Yorkshire seaside resort does Granville travel?|Scarborough|Whitby|Bridlington|Filey|Series 4|Episode Seven|Granville|Business trip by the sea
+In Series 5 Episode Two, whom does Granville recruit to help sell an excess of tinned beans?|Mr Machin|Mr Newbold|Cyril|Gastric|Series 5|Episode Two|Granville|Tinned-bean promotion
+In Series 5 Episode Three, which character modifies his Mini to drive itself?|Gastric|Leroy|Wet Eric|Granville|Series 5|Episode Three|Car adaptation|Self-driving Mini
+In Series 5 Episode Four, what oversized object is part of Granville's ill-fated advertising idea?|A balloon|A banner|A model teapot|A revolving sign|Series 5|Episode Four|Granville|Disastrous publicity
+In Series 5 Episode Six, what mobile business vehicle does Leroy buy?|An ice-cream van|A fish-and-chip van|A delivery lorry|A minibus|Series 5|Episode Six|Leroy|Independent business plan
+In the 2018 Christmas special, what seasonal product does Granville need to sell?|Mistletoe mince pies|Gingerbread snowmen|Chocolate oranges|Christmas puddings|Series 5|Christmas Special|Granville|Festive food stock
+In Series 6 Episode Two, which hot snack does Granville plan to offer as part of a catering expansion?|Toasties|Baked potatoes|Pasties|Pizzas|Series 6|Episode Two|Granville|New catering service
+In Series 6 Episode Three, which customer decides to learn to drive?|Mrs Featherstone|Mavis|Madge|Mrs Rossi|Series 6|Episode Three|Mrs Featherstone|Driving lessons
+In Series 6 Episode Four, what outdoor activity do Eric and Cyril finally persuade their wives to try?|Camping|Hillwalking|Fishing|Horse riding|Series 6|Episode Four|Eric and Cyril|Couples' adventure
+In Series 6 Episode Five, what product does Granville blend himself to sell?|Snuff|Herbal tea|Aftershave|Pickle|Series 6|Episode Five|Granville|Home-made tobacco blend
+In Series 6 Episode Six, whose house does Gastric spend the night at?|Madge's|Mavis's|Mrs Featherstone's|Mrs Rossi's|Series 6|Episode Six|Gastric|Romantic overnight visit`;
+const pack377StrictKey=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudited377(block,programme,era){
+  const rows=block.trim().split('\n');
+  for(const [index,row] of rows.entries()){
+    const fields=row.split('|').map(x=>x.trim());
+    if(fields.length!==9||fields.some(x=>!x))throw Error('Pack 377 invalid added row: '+programme+' '+index);
+    const [stem,correctAnswer,a,b,c,series,episode,focus,plot]=fields;
+    const match=/^In (.+?), (.+)$/.exec(stem);
+    const question=match?
+      'In '+programme+', during "'+match[1]+'", '+match[2] :
+      (stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB'))?
+      stem:'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1));
+    const answers=[a,b,c];answers.splice(questions.length%4,0,correctAnswer);
+    const tags=[
+      'Television','British Television','British Sitcom','Comedy','Sitcom',
+      programme,'Programme: '+programme,era,
+      'Series: '+series,'Episode: '+episode,'Focus: '+focus,
+      'Storyline: '+plot,'Correct answer: '+correctAnswer,
+      'Episode context: '+plot,'Character/setting: '+focus
+    ];
+    questions.push({
+      id:'tv_'+(40227+questions.length-108),
+      category:'Television',programme,question,answers,correctAnswer,
+      difficulty:'Medium',tags,dailyEligible:true
+    });
+  }
+}
+addAudited377(upperAudit,'The Upper Hand','1990-1996');
+addAudited377(openAudit,'Open All Hours','1973-1985');
+addAudited377(stillAudit,'Still Open All Hours','2013-2019');
+
+const ids377=new Set(),wording377=new Set();
+for(const q of questions){
+ const key=pack377StrictKey(q.question);
+ if(!q.programme||q.category!=='Television'||!q.tags.includes('Programme: '+q.programme)||
+   q.answers.length!==4||new Set(q.answers.map(pack377StrictKey)).size!==4||
+   q.answers.filter(a=>a===q.correctAnswer).length!==1||
+   q.tags.length<12||q.dailyEligible!==true||
+   ids377.has(q.id)||wording377.has(key))throw Error('Pack 377 audit validation failed: '+q.id);
+ ids377.add(q.id);wording377.add(key);
+}
+module.exports=questions;
