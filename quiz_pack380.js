@@ -143,11 +143,12 @@ function addFacts(block, programme, era) {
     const answers = [wrong1, wrong2, wrong3];
     answers.splice(questions.length % 4, 0, correctAnswer);
     const tags = [...new Map([
-      'Television', 'British Sitcom', programme, era, correctAnswer, ...specificTags
+      'Television', 'British Television', 'British Sitcom', 'Comedy', 'Sitcom', programme, 'Programme: '+programme, era, correctAnswer, ...specificTags
     ].map(s => [s.toLowerCase().replace(/[^a-z0-9]/g, ''), s])).values()];
     const item = {
       id: `tv_${FIRST_ID + questions.length}`,
       category: 'Television',
+      programme,
       question, answers, correctAnswer, difficulty, tags, dailyEligible: true
     };
     if (new Set(answers.map(a => a.toLowerCase())).size !== 4 ||
@@ -164,4 +165,109 @@ for (const q of questions) {
   if (seen.has(stem)) throw new Error(`Duplicate question ${q.id}`);
   seen.add(stem);
 }
-module.exports = questions;
+
+
+// Verified episode-story additions, researched against the British Comedy Guide
+// and UK Ghosts episode listings. Existing tv_19846–tv_19962 retained.
+// New question IDs begin tv_40446.
+// https://www.comedy.co.uk/tv/ghosts/episodes/
+// https://www.tvmaze.com/shows/38241/ghosts/episodeguide
+// https://www.comedy.co.uk/tv/two_doors_down/episodes/
+const ghost380Additions = `In Gorilla War, which ghost discovers information about his questionable legacy through the internet?|Julian Fawcett|Pat Butcher|Thomas Thorne|Humphrey Bone|Series 1|Gorilla War|An internet revelation
+In Gorilla War, whose living arrangements are disrupted by Mike's DIY work?|Lady Button's|Kitty's|Robin's|Mary's|Series 1|Gorilla War|Mike's home improvements
+In Happy Death Day, what troubling secret from his life does Pat uncover?|The truth about his marriage|That he was adopted|That he had inherited a fortune|That he had been falsely accused of theft|Series 1|Happy Death Day|Pat learns about his marriage
+In Happy Death Day, which ghost is curious about where babies come from?|Kitty|Mary|Lady Button|Thomas|Series 1|Happy Death Day|Questions about childbirth
+In Moonah Ston, whom do Mike and Alison invite to dinner to settle a land dispute?|Their wealthy neighbours|A group of estate agents|The local council's planners|A visiting archaeologist|Series 1|Moonah Ston|Dinner to resolve a land claim
+In Moonah Ston, what celestial event does Robin want to celebrate?|A lunar eclipse|A meteor shower|A solar eclipse|A comet's return|Series 1|Moonah Ston|Robin's lunar celebration
+In The Grey Lady, what venture does a viral photograph inspire Mike and Alison to attempt?|A haunted-house experience|A ghost-hunting television series|A photography school|A historical costume museum|Series 2|The Grey Lady|New revenue from ghostly publicity
+In About Last Night, what must Mike and Alison urgently tidy before a business visitor arrives?|The aftermath of a party|Damage after a flood|A room full of antiques|The garden after a storm|Series 2|About Last Night|An untidy property viewing
+In Redding Weddy, what is the first name of the potential event-booking customer?|Claire|Lucy|Betty|Stephanie|Series 2|Redding Weddy|Prospective customer
+In Bump in the Night, what intrudes on Mike's first night alone in the house?|Burglars|A film crew|A wedding party|A group of tourists|Series 2|Bump in the Night|Night-time intruders
+In The Ghost of Christmas, whose past mistakes prompt a revelation about the festive season?|Julian Fawcett's|Thomas Thorne's|The Captain's|Pat Butcher's|2020 special|The Ghost of Christmas|Reflection on Christmas
+In The Bone Plot, what historical event is the documentary crew investigating?|An assassination plot|A royal wedding|A missing painting|A medieval battle|Series 3|The Bone Plot|Button House history
+In The Bone Plot, which ghost coaches Alison for an on-camera interview?|Thomas Thorne|Julian Fawcett|Pat Butcher|Robin|Series 3|The Bone Plot|Media interview coaching
+In A Lot to Take In, whose earliest experiences as a ghost are revisited?|Julian Fawcett's|Mary's|Kitty's|Humphrey's|Series 3|A Lot to Take In|Remembering an afterlife beginning
+In I Love Lucy, whose advice raises doubts about Alison's visitor?|A solicitor's|A doctor's|A television producer's|A police inspector's|Series 3|I Love Lucy|Suspicions about a relative
+In Part of the Family, which pair of ghosts team up to solve a mystery?|The Captain and Kitty|Robin and Lady Button|Thomas and Julian|Mary and Humphrey|Series 3|Part of the Family|Investigating a visitor
+In He Came!, where is an unexpected visitor discovered in the grounds?|Living in a tent|Sleeping in the greenhouse|Hiding inside a caravan|Camping in the stables|2021 special|He Came!|An unusual Christmas visitor
+In Happy Holiday, what occasion brings the B&B's first guests to Button House?|An anniversary break|A honeymoon|A funeral|A birthday party|Series 4|Happy Holiday|The guest couple's visit
+In Happy Holiday, which ghost becomes popular with the spirits in the basement after they see his portrait?|Thomas Thorne|Pat Butcher|The Captain|Robin|Series 4|Happy Holiday|A portrait makes a celebrity
+In Speak as Ye Choose, which ghost tells Julian about finding her voice?|Mary|Kitty|Lady Button|Alison's grandmother|Series 4|Speak as Ye Choose|A change in self-confidence
+In The Hardest Word, what has Alison done that makes the ghosts want to win back her favour?|Given them a severe telling-off|Banned them from the drawing room|Sold their favourite furniture|Refused to decorate for Christmas|Series 4|The Hardest Word|Reconciliation after scolding
+In Gone Gone, what unplanned event must Mike and Alison host following a booking mix-up?|A children's party|A wedding breakfast|A ghost-tour group|A music audition|Series 4|Gone Gone|An unexpected booking
+In Not Again, which ghost attempts to show that he can be selfless?|Julian Fawcett|Thomas Thorne|Pat Butcher|Humphrey Bone|Series 4|Not Again|An attempt at generosity
+In Not Again, which ghost experiences disturbing flashbacks after a new arrival?|Robin|Mary|Kitty|Lady Button|Series 4|Not Again|An unsettling reminder
+In It's Behind You, what sort of surprise do the ghosts try to prepare for Alison?|A Christmas present|A retirement party|A surprise wedding|A birthday banquet|2022 special|It's Behind You|The ghosts return her generosity
+In the Comic Relief special, what public event does Alison want to stage in the grounds?|A pop festival|A car-boot sale|A garden show|A food market|2023 Comic Relief|Comic Relief Special|Plans for an outdoor event
+In Home, what ambition does Thomas hope to fulfil?|Having his poetry published|Taking over the B&B|Becoming a council leader|Learning to play the piano|Series 5|Home|A poet seeks recognition
+In Home, what proposed sale angers Lady Button?|Part of the estate's land|The family silver|The old library collection|The paintings in the hall|Series 5|Home|The future of Button House
+In Pineapple Day, who wants to buy land from Mike and Alison?|A golf consortium|A film studio|A supermarket chain|A local school|Series 5|Pineapple Day|A property negotiation
+In En Francais, what regular ghostly activity has lost its appeal?|Food Club|Choir practice|Poetry lessons|A military parade|Series 5|En Francais|Ghosts seek entertainment
+In En Francais, whose ideas inspire the ghosts to experiment with new entertainment?|Pat Butcher's|Julian Fawcett's|Lady Button's|Thomas Thorne's|Series 5|En Francais|Finding new pastimes
+In Carpe Diem, who makes a discovery that unsettles the other ghosts?|Robin|Humphrey Bone|The Captain|Kitty|Series 5|Carpe Diem|An unnerving revelation
+In Carpe Diem, what spontaneous plan do Mike and Alison make?|A wild night out|A camping trip abroad|A move to Scotland|A wedding in the garden|Series 5|Carpe Diem|An impulsive evening
+In A Christmas Gift, whose efforts to help around the house become overwhelming?|Mike's mother's|Alison's sister's|Lady Button's|The next-door neighbour's|2023 special|A Christmas Gift|Well-meaning holiday interference`;
+const doors380Additions = `In Series 1 Episode Two, which resident is forced to stay with Beth and Eric after a domestic problem?|Christine|Cathy|Michelle|Sophie|Series 1|Episode Two|An unexpected houseguest
+In Series 1 Episode Three, what sport leads to friction between Eric and Colin?|Tennis|Golf|Bowls|Cricket|Series 1|Episode Three|A sporting disagreement
+In Series 2 Episode One, what housing plan do Ian and Jaz announce?|Buying a flat together|Moving to Spain|Building a garden office|Taking over a pub|Series 2|Episode One|Plans for a first home
+In Series 2 Episode Two, what wakes the neighbours in the middle of the night?|A car alarm|A firework display|A dog barking|A police helicopter|Series 2|Episode Two|Noise in the street
+In Series 2 Episode Four, who steps in after Ian and Jaz's offer on a flat is rejected?|Eric|Colin|Cathy|Christine|Series 2|Episode Four|Helping a young couple buy property
+In Series 3 Episode Three, what role is Beth forced into after her neighbours' burglary?|Doing the laundry|Guarding the garage|Running the local pub|Training a new alarm system|Series 3|Break In|Helping after the theft
+In Series 3 Episode Four, whose birthday lunch is disrupted by Colin's drunken arrival?|Beth's|Christine's|Michelle's|Sophie's|Series 3|Fish Friday|A spoilt family celebration
+In Series 3 Episode Five, what disappointing result starts an evening of personal revelations?|Losing a pub quiz|Failing a driving test|Losing a tennis match|Missing a flight|Series 3|Party Pieces|A competitive evening
+In Series 4 Episode Five, which renovation makes Michelle and Alan stay overnight with Beth and Eric?|Floor sanding|A loft conversion|A new kitchen extension|Replacing the roof|Series 4|Overnight|Renovations disturb the home
+In Series 4 Episode Six, what occasion do Alan and Michelle host at their newly decorated home?|A housewarming party|A retirement dinner|A christening|A wedding reception|Series 4|Housewarming|Guests visit the renovated home
+In Series 5 Episode Two, who takes to bed with an illness as Ian and Gordon offer assistance?|Beth|Cathy|Michelle|Christine|Series 5|Beth's Flu|A sick neighbour
+In the 2021 Christmas special, whose attempt to host the neighbours turns increasingly stressful?|Michelle's|Christine's|Cathy's|Beth's|2021 special|Christmas Special|A difficult festive gathering
+In Series 5 Episode Three, what important wedding responsibility is Alan given?|Best man|Official photographer|Master of ceremonies|Wedding celebrant|Series 5|Brother Michael|Alan's family wedding
+In Series 5 Episode Four, which trio does Michelle invite for an evening together?|Beth, Cathy and Christine|Beth, Madge and Sophie|Cathy, Sophie and Madge|Christine, Michelle and Madge|Series 5|Girls' Night|Michelle's women-only gathering
+In Series 6 Episode Two, what recent event has cheered up newly single Colin?|A successful internet date|A football win|A pay rise|A lottery prize|Series 6|Alan's Boot|Colin begins dating again
+In Series 6 Episode Four, what topic overshadows Christine's birthday celebration?|Her funeral arrangements|A missing Christmas present|A cancelled hospital appointment|A house renovation|Series 6|Christine 69|Unwelcome thoughts on mortality
+In Series 6 Episode Five, whose friends stop by the Bairds' home ahead of a holiday in Australia?|Ian and Gordon's|Alan and Michelle's|Cathy and Colin's|Beth and Eric's|Series 6|Aussie Holiday|Holiday travellers visit
+In Series 6 Episode Six, what feature of Beth's garden attracts criticism from the neighbours?|Her paving slabs|Her greenhouse|Her pond|Her swing seat|Series 6|Garden Party|Garden criticism
+In the 2022 Christmas special, who surprises the group with an unusual display of generosity?|Christine|Cathy|Michelle|Colin|2022 special|Christmas Special|Unexpected kindness
+In Series 7 Episode Two, what home-improvement decision is Christine struggling to make?|Choosing a bathroom|Choosing a new kitchen|Selecting garden fencing|Replacing front-door glass|Series 7|Cathy Loves|Indecision over renovations
+In Series 7 Episode Three, what feeling troubles Gordon after Ian's old school friend visits?|Jealous suspicion|Pride in his partner|Relief about school memories|Concern about a lost job|Series 7|Ian's Ex|An insecure response
+In Series 7 Episode Four, who talks her way into the Father's Day family outing?|Christine|Cathy|Michelle|Anne Marie|Series 7|Carvery|An uninvited diner
+In Series 7 Episode Six, what travel difficulty leaves Alan and Michelle exhausted after their Las Vegas trip?|A delayed flight|A missed ferry|A broken-down car|A cancelled coach|Series 7|Vegas|An exhausting journey home`;
+const norm380 = x => String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudited380(block,programme,era) {
+  for(const [index,row] of block.trim().split('\n').entries()){
+    const p=row.split('|').map(x=>x.trim());
+    if(p.length!==8||p.some(x=>!x)) throw Error('Bad Pack 380 audit row '+programme+' '+index);
+    const [stem,correctAnswer,a,b,c,series,episode,focus]=p;
+    const match=/^In (.+?), (.+)$/.exec(stem);
+    const special=/^In the (\d{4}) Christmas special, (.+)$/.exec(stem);
+    let question;
+    if(special) question='In '+programme+' ('+special[1]+' Christmas special), '+special[2];
+    else if(match){
+      const numbered=/^Series (\d+) Episode (\w+)$/.exec(match[1]);
+      if(numbered)question='In '+programme+' (Series '+numbered[1]+', Episode '+numbered[2]+'), '+match[2];
+      else question='In '+programme+', during "'+match[1]+'", '+match[2];
+    }else question=stem.toLocaleLowerCase('en-GB').includes(programme.toLocaleLowerCase('en-GB'))
+      ?stem:'In '+programme+', '+stem[0].toLowerCase()+stem.slice(1);
+    const answers=[a,b,c]; answers.splice(questions.length%4,0,correctAnswer);
+    const tags=['Television','British Television','British Sitcom','Comedy','Sitcom',
+      programme,'Programme: '+programme,era,'Series/special: '+series,
+      'Episode: '+episode,'Story focus: '+focus,'Correct answer: '+correctAnswer,
+      'Incident: '+focus,'Episode context: '+episode,'Covered through: '+era];
+    questions.push({id:'tv_'+(40446+questions.length-117),
+      category:'Television',programme,question,answers,correctAnswer,
+      difficulty:'Medium',tags,dailyEligible:true});
+  }
+}
+addAudited380(ghost380Additions,'Ghosts (UK)','2019-2023 complete');
+addAudited380(doors380Additions,'Two Doors Down','2013-2025 covered through 24 Dec 2025');
+const auditedIDs380=new Set(),auditedQ380=new Set();
+for(const q of questions){
+  const key=norm380(q.question);
+  if(q.category!=='Television'||!q.programme||
+    !q.tags.includes('Programme: '+q.programme)||
+    q.answers.length!==4||new Set(q.answers.map(norm380)).size!==4||
+    q.answers.filter(a=>a===q.correctAnswer).length!==1||
+    q.tags.length<12||q.dailyEligible!==true||
+    auditedIDs380.has(q.id)||auditedQ380.has(key))throw Error('Pack 380 validation failed '+q.id);
+  auditedIDs380.add(q.id);auditedQ380.add(key);
+}
+module.exports=questions;
