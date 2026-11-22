@@ -6,7 +6,10 @@
 'use strict';
 
 const FIRST_ID = 21068;
-const commonTags = ['television', 'British TV', 'BBC One', 'Jonathan Creek', 'David Renwick', 'mystery drama'];
+const PROGRAMME = 'Jonathan Creek';
+const commonTags = ['Television', 'British Television', 'BBC One', 'BBC',
+  'Mystery Drama', 'Crime Mystery', PROGRAMME, 'Programme: '+PROGRAMME,
+  'Jonathan Creek Specials', 'David Renwick'];
 
 // Each row: question | correct answer | three distractors | difficulty | seven specific tags.
 const rows = [
@@ -116,7 +119,9 @@ const questions = rows.map((row, index) => {
   if (parts.length !== 13 || parts.some(part => !part)) {
     throw new Error(`Pack 390: malformed row ${index + 1}`);
   }
-  const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const [stem, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const question=stem.toLowerCase().includes(PROGRAMME.toLowerCase()) ? stem :
+    'In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
   if (!['Easy', 'Medium', 'Hard'].includes(difficulty)) {
     throw new Error(`Pack 390: invalid difficulty at row ${index + 1}`);
   }
@@ -132,6 +137,7 @@ const questions = rows.map((row, index) => {
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -141,4 +147,405 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Jonathan Creek Specials Audit (2001, 2009, 2010, 2013).
+// Original IDs tv_21068–tv_21158 preserved. New IDs begin tv_40950.
+// Episode guest cast, original broadcasts, crew: British Comedy Guide
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/2001/1/49893/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/2009/1/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/2010/1/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/2013/1/
+// 'Black Canary' remains in Pack 387; it is deliberately excluded.
+// Pack 391 and later cover further Jonathan Creek stories; retain PARTIAL status.
+const guestCast390 = [
+  {
+    "episode": "Satan's Chimney",
+    "year": "2001",
+    "people": [
+      [
+        "Herman Grole",
+        "Steven Berkoff",
+        "film director"
+      ],
+      [
+        "Jodee Tressky",
+        "Lisa Stokke",
+        "guest character"
+      ],
+      [
+        "Raymond",
+        "Raymond Griffiths",
+        "film production guest character"
+      ],
+      [
+        "Bronson Peterman",
+        "Matt Rippy",
+        "film guest character"
+      ],
+      [
+        "Vernon Spools",
+        "Bill Ward",
+        "guest character"
+      ],
+      [
+        "Tom, the actor playing the groundsman",
+        "Elliot Cowan",
+        "film groundsman"
+      ],
+      [
+        "Inspector Bullstrode",
+        "James Saxon",
+        "police inspector"
+      ],
+      [
+        "the continuity girl",
+        "Nina Bhirangi",
+        "film crew member"
+      ],
+      [
+        "the bishop",
+        "Michael Knibbs",
+        "clergyman"
+      ]
+    ]
+  },
+  {
+    "episode": "The Grinning Man",
+    "year": "2009",
+    "people": [
+      [
+        "Jacques Futrelle",
+        "Jon Campling",
+        "first owner of the Nightmare Room"
+      ],
+      [
+        "scientist Eli Mencken",
+        "Patrick Poletti",
+        "early victim"
+      ],
+      [
+        "Alec",
+        "Adam James",
+        "guest character"
+      ],
+      [
+        "Mina",
+        "Naomi Bentley",
+        "Joey's missing friend"
+      ],
+      [
+        "Glen, the groundskeeper",
+        "Ciarán McMenamin",
+        "mansion caretaker"
+      ],
+      [
+        "Elodie",
+        "Jenna Harrison",
+        "Lance's partner"
+      ],
+      [
+        "Lance Gessler",
+        "Nicholas Boulton",
+        "mansion owner"
+      ],
+      [
+        "Constance Gessler",
+        "Judy Parfitt",
+        "Lance's mother"
+      ],
+      [
+        "Lenny",
+        "Nick Nevern",
+        "guest character"
+      ],
+      [
+        "newspaper editor Delia Gunning",
+        "Julia Ford",
+        "newspaper editor"
+      ],
+      [
+        "Ellen Ashley Adams",
+        "Deborah MacLaren",
+        "guest character"
+      ],
+      [
+        "Marcia",
+        "Sarah Champion",
+        "guest character"
+      ]
+    ]
+  },
+  {
+    "episode": "The Judas Tree",
+    "year": "2010",
+    "people": [
+      [
+        "Harriet Dore",
+        "Sasha Behar",
+        "mystery writer's wife"
+      ],
+      [
+        "Emily Somerton",
+        "Natalie Walter",
+        "new housekeeper"
+      ],
+      [
+        "Father Roderick Alberic",
+        "Ian McNeice",
+        "priest"
+      ],
+      [
+        "young Emily Somerton",
+        "Florence Hall",
+        "younger housekeeper in flashbacks"
+      ],
+      [
+        "Kim in the flashbacks",
+        "Susanne Ahmet",
+        "Victorian and modern-day performer"
+      ],
+      [
+        "Selima El Sharad",
+        "Sofia Hayat",
+        "Egyptian housekeeper"
+      ],
+      [
+        "Dr Thadeus Northcote",
+        "Kevin McGowan",
+        "Victorian doctor"
+      ],
+      [
+        "Dr Northcote's wife",
+        "Amanda Hadingue",
+        "doctor's wife"
+      ],
+      [
+        "Sebastian Tench",
+        "Felix Dexter",
+        "supporting character"
+      ],
+      [
+        "Danny Dore",
+        "Gregor Henderson-Begg",
+        "Hugo's brother"
+      ],
+      [
+        "Frank Osante",
+        "Marc Small",
+        "supporting guest"
+      ]
+    ]
+  },
+  {
+    "episode": "The Clue of the Savant's Thumb",
+    "year": "2013",
+    "people": [
+      [
+        "Fariba Tartikoff",
+        "Hasina Haque",
+        "adopted daughter"
+      ],
+      [
+        "Brad",
+        "Mark Frost",
+        "Fariba's partner"
+      ],
+      [
+        "young Rosalind",
+        "Anna Burnett",
+        "Rosalind as a schoolgirl"
+      ],
+      [
+        "Natalie",
+        "Phoebe Jones",
+        "supporting character"
+      ],
+      [
+        "Grace",
+        "Lucie Wolfman",
+        "schoolgirl"
+      ],
+      [
+        "young Beth",
+        "Lydia Gerrard",
+        "schoolgirl in flashbacks"
+      ],
+      [
+        "Kate",
+        "Angelica Jopling",
+        "schoolgirl"
+      ],
+      [
+        "Sister Cunegonde",
+        "Mairead Conneely",
+        "nun"
+      ],
+      [
+        "Beth as an adult",
+        "Abigail McKern",
+        "survivor of school events"
+      ],
+      [
+        "Jack",
+        "Robert Styles",
+        "supporting character"
+      ],
+      [
+        "Davina",
+        "Louise Yates",
+        "supporting character"
+      ],
+      [
+        "WDC Atkins",
+        "Sharlene Whyte",
+        "police constable"
+      ],
+      [
+        "DS Cudlipp",
+        "James Buller",
+        "police detective"
+      ]
+    ]
+  }
+];
+const dates390 = [
+  [
+    "Satan's Chimney",
+    "2001",
+    "26 December 2001",
+    [
+      "25 December 2001",
+      "1 January 2002",
+      "24 December 2001"
+    ],
+    "Christmas special transmission"
+  ],
+  [
+    "The Grinning Man",
+    "2009",
+    "1 January 2009",
+    [
+      "26 December 2008",
+      "4 April 2009",
+      "1 January 2010"
+    ],
+    "New Year special transmission"
+  ],
+  [
+    "The Judas Tree",
+    "2010",
+    "4 April 2010",
+    [
+      "1 January 2010",
+      "25 December 2010",
+      "4 April 2009"
+    ],
+    "Easter special transmission"
+  ],
+  [
+    "The Clue of the Savant's Thumb",
+    "2013",
+    "1 April 2013",
+    [
+      "31 March 2013",
+      "1 January 2013",
+      "4 April 2013"
+    ],
+    "Easter special transmission"
+  ]
+];
+const production390 = [
+  [
+    "Satan's Chimney",
+    "2001",
+    "Which director helmed the Christmas special?",
+    "Sandy Johnson",
+    [
+      "David Renwick",
+      "Keith Washington",
+      "Marcus Mortimer"
+    ],
+    "director"
+  ],
+  [
+    "Satan's Chimney",
+    "2001",
+    "Which producer was credited for the Christmas special?",
+    "Verity Lambert",
+    [
+      "Nerys Evans",
+      "Rosemary McGowan",
+      "Pete Thornton"
+    ],
+    "producer"
+  ],
+  [
+    "The Grinning Man",
+    "2009",
+    "Which producer was credited for the New Year special?",
+    "Nerys Evans",
+    [
+      "Verity Lambert",
+      "Rosemary McGowan",
+      "Pete Thornton"
+    ],
+    "producer"
+  ],
+  [
+    "The Judas Tree",
+    "2010",
+    "Which producer was credited for this special?",
+    "Rosemary McGowan",
+    [
+      "Verity Lambert",
+      "Nerys Evans",
+      "Pete Thornton"
+    ],
+    "producer"
+  ]
+];
+const normal390=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit390(episode,year,stem,answer,wrongs,focus,type){
+ if(wrongs.length!==3||new Set([answer,...wrongs].map(normal390)).size!==4)
+  throw Error('Pack 390 audited answers invalid '+episode+' '+stem);
+ const question='In '+PROGRAMME+' special "'+episode+'", '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrongs];answers.splice(questions.length%4,0,answer);
+ const tags=['Television','British Television','BBC One','BBC','Mystery Drama','Crime Mystery',
+  PROGRAMME,'Programme: '+PROGRAMME,'Special title: '+episode,
+  'Broadcast year: '+year,'Subject: '+focus,'Answer: '+answer,
+  'Question type: '+type,'Creator: David Renwick','Special coverage: '+episode];
+ questions.push({id:'tv_'+(40950+questions.length-91),
+  category:'Television',programme:PROGRAMME,question,answers,correctAnswer:answer,
+  difficulty:'Medium',tags,dailyEligible:true});
+}
+for(const set of guestCast390){
+ const people=set.people;
+ const actors=guestCast390.flatMap(s=>s.people.map(p=>p[1]));
+ for(const [i,[role,actor,focus]] of people.entries()){
+  const choices=actors.filter(x=>x!==actor);
+  const off=(i*7+set.year.charCodeAt(3))%choices.length;
+  const wrongs=[choices[off],choices[(off+1)%choices.length],choices[(off+2)%choices.length]];
+  addAudit390(set.episode,set.year,'Which performer portrayed '+role+'?',actor,
+   wrongs,focus+' / '+role,'Guest cast');
+ }
+}
+for(const [episode,year,date,wrongs,focus] of dates390)
+ addAudit390(episode,year,'On what date did this special first air on BBC One?',date,
+  wrongs,focus,'Original UK broadcast date');
+for(const [episode,year,stem,answer,wrongs,focus] of production390)
+ addAudit390(episode,year,stem,answer,wrongs,focus,'Production credit');
+const ids390=new Set(),stems390=new Set();
+for(const q of questions){
+ const k=normal390(q.question);
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ q.answers.length!==4||new Set(q.answers.map(normal390)).size!==4||
+ q.answers.filter(x=>x===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ ids390.has(q.id)||stems390.has(k))
+ throw Error('Pack 390 validation failed: '+q.id);
+ ids390.add(q.id);stems390.add(k);
+}
+module.exports=questions;
