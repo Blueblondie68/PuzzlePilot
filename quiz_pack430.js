@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 430
 // All Saints (Australia): Season 11 (2008), 40 episodes.
 // Follows Pack 429. First ID: tv_25118.
-// Full WordPad-ready CommonJS. All Saints remains unfinished in TV master.
+// Full WordPad-ready CommonJS. All Saints ended in 2009; final-season audit is still outstanding.
 // Each row: question | correct answer | three wrong answers | difficulty | seven specific tags.
 // Episode details cross-referenced with TheTVDB, TV Guide, Screen Australia and cast records.
 'use strict';
@@ -142,9 +142,42 @@ Where did Frank and Mike decide to operate on the patient with an explosive frag
 What condition threatened patient Morgan after a camping trip in Time Bomb?|Severe hypothermia|Acute asthma|Heatstroke|Malaria|Medium|Time Bomb|Episode 40|Morgan|Camping Accident|Hypothermia|Cardiac Risk|Brain Injury Risk
 Who returned to Emergency hoping to reclaim her job in the 2008 finale Time Bomb?|Amy Fielding|Erica Templeton|Deanna Richardson|Zoe Gallagher|Medium|Time Bomb|Episode 40|Amy Fielding|Frank Campion|Job Return|Season Finale|Nursing Staff`;
 
+
+// Series 11 plot, character, credits and 2008 AWGIE / 2009 Logie audit.
+// All original IDs and answers remain unchanged.
+const AUDIT_ORIGINAL_COUNT = 127;
+const AUDIT_FIRST_ID = 42342;
+const auditFacts = `Which All Saints episode won the 2008 AWGIE Award for Television Series writing?|Against the Wall (Part Two)|Time Bomb|Never Tell|Best Laid Plans|Medium|2008 AWGIE Awards|Against the Wall Part Two|Television Series|Australian Writers Guild|winning episode|screenwriting honour|Season Eleven
+Which writer won the 2008 Australian Writers Guild Award for the All Saints episode Against the Wall Part Two?|Sean Nash|Alexa Wyatt|Sally Webb|Denise Morgan|Medium|Sean Nash|2008 AWGIE Award|Against the Wall Part Two|Australian Writers Guild|Television Series winner|scriptwriting|Season Eleven
+Which All Saints actor was nominated posthumously for Most Popular Actor at the 2009 Logie Awards?|Mark Priestley|John Howard|Wil Traval|Andrew Supanz|Medium|Mark Priestley|2009 Logies|Most Popular Actor|posthumous nomination|Dan Goldman|Australian television|awards recognition
+Which character did All Saints actor Mark Priestley play before receiving a posthumous Logie nomination?|Dan Goldman|Frank Campion|Bart West|Jack Quade|Easy|Mark Priestley|Dan Goldman|2009 Logies|actor identification|nurse character|posthumous nomination|Season Eleven
+Which actress portrayed the All Saints character Rhiannon Wilson during Series 11?|Petra Yared|Yael Stone|Penny Cook|Renee Lim|Medium|Petra Yared|Rhiannon Wilson|2008 cast|Charlotte Beaumont|defamation storyline|recurring performer|actor identification
+Who played the All Saints character Juliet Martin in Series 11?|Genevieve Hegney|Tracy Mann|Sonia Todd|Petra Yared|Medium|Genevieve Hegney|Juliet Martin|Mike Vlasek|romantic partner|2008 cast|actor identification|recurring role
+Which actress played Rhonda Goldman, Dan's mother, in All Saints Series 11?|Penny Cook|Sonia Todd|Tracy Mann|Judith McGrath|Medium|Penny Cook|Rhonda Goldman|Dan Goldman|family conflict|2008 cast|actor identification|recurring character
+Which actor played Dan Goldman's brother Luke in All Saints Series 11?|Robert Jago|John Waters|Mark Priestley|Nathaniel Dean|Medium|Robert Jago|Luke Goldman|wheelchair basketball|paraplegia|2008 cast|actor identification|family storyline
+Which actress portrayed the hospital administrator Elizabeth Foy in All Saints Series 11?|Sonia Todd|Virginia Gay|Petra Yared|Penny Cook|Medium|Sonia Todd|Elizabeth Foy|Oliver Maroney|hospital management|2008 guest cast|actor identification|administration conflict
+Which actress portrayed Suzi Lau in All Saints Series 11?|Renee Lim|Alix Bidstrup|Ella Scott Lynch|Yael Stone|Medium|Renee Lim|Suzi Lau|2008 recurring cast|Australian actress|character casting|medical drama|actor identification
+Which director helmed the All Saints Series 11 premiere Against the Wall Part Two?|Peter Fisk|Martin Sacks|Jessica Hobbs|Lynn-Maree Danzey|Medium|Peter Fisk|Against the Wall Part Two|2008 premiere|episode director|production credit|episode one|Season Eleven
+Which director helmed the All Saints Series 11 finale Time Bomb?|Lynn-Maree Danzey|Peter Fisk|Kay Pavlou|Jean-Pierre Mignon|Medium|Lynn-Maree Danzey|Time Bomb|2008 finale|episode director|production credit|episode forty|Season Eleven
+Which writer scripted the All Saints Series 11 finale Time Bomb?|Alexa Wyatt|Sean Nash|Sally Webb|Jeff Truman|Medium|Alexa Wyatt|Time Bomb|2008 finale|episode writer|production credit|episode forty|screenplay
+In All Saints episode The Simple Things why did hospital management criticise Frank Campion after the siege?|His remarks to the media|His choice of ambulance drivers|His refusal to attend a training course|His decision to close a ward|Medium|The Simple Things|Frank Campion|hospital siege aftermath|media comments|administrative criticism|episode two|management dispute
+In All Saints episode Comfort Zone what vulnerable group did Steve and Dan treat to learn about the human side of medicine?|A homeless man|A visiting football team|A group of schoolchildren|An elderly choir|Medium|Comfort Zone|Steve Taylor|Dan Goldman|homeless patient|humanity in medicine|episode three|clinical empathy
+In All Saints episode Event Horizon why did Dominic return to Von Ryan's care?|An untreated infection after poor follow-up|A broken ankle from a road crash|A brain tumour requiring surgery|A complication from childbirth|Medium|Event Horizon|Dominic|Von Ryan|poor follow up|infection|past trauma|episode four
+In All Saints episode Caught in a Trap which administrator was Elizabeth Foy secretly reporting to?|Oliver Maroney|Frank Campion|Gabrielle Jaeger|Zoe Gallagher|Medium|Caught in a Trap|Elizabeth Foy|Oliver Maroney|informant|hospital administration|Frank Campion|episode five
+In All Saints episode Beginnings what did Erica nearly cause when called away from an intensive-care patient?|A fatal treatment error|A fire in the pathology laboratory|A delay in organ transport|An accidental ambulance collision|Medium|Beginnings|Erica Templeton|intensive care|patient safety|emergency interruption|near fatal error|episode eight
+In All Saints episode Out of the Fire what difficult treatment request was made by the woman claiming to be a burned boy's mother?|Not to attempt further resuscitation|To send him immediately to a private clinic|To amputate his injured arm|To administer antibiotics without tests|Medium|Out of the Fire|young burns victim|resuscitation decision|false mother|Zoe Gallagher|hospital ethics|episode ten
+In All Saints episode Under My Skin whose unwanted advance led to allegations against Charlotte Beaumont?|Rhiannon Wilson's|Zoe Gallagher's|Gabrielle Jaeger's|Elizabeth Foy's|Medium|Under My Skin|Rhiannon Wilson|Charlotte Beaumont|unwanted advance|false accusation|professional reputation|episode eighteen
+In All Saints episode Never Tell which advocacy organisation criticised an inaccurate suggestion about Down syndrome?|Down Syndrome Australia|Australian Medical Association|Australian Nursing Federation|Royal Australian College of Surgeons|Medium|Never Tell|Down Syndrome Australia|broadcast controversy|2008|disability advocacy|false medical implication|Seven Network
+In All Saints episode Blood Lines which relative did Charlotte Beaumont confront about Rhiannon's distress?|Rhiannon's father|Rhiannon's sister|Rhiannon's husband|Rhiannon's brother|Medium|Blood Lines|Rhiannon Wilson|Charlotte Beaumont|father confrontation|suicide attempt|personal trauma|episode twenty three
+In All Saints episode Wish List which nurse tried to keep terminally ill patient Stella alive until her parents could say goodbye?|Erica Templeton|Amy Fielding|Claire Anderson|Gabrielle Jaeger|Medium|Wish List|Erica Templeton|Stella|cystic fibrosis|parent farewell|end of life care|episode twenty six
+In All Saints episode Better Safe Than Sorry what unsafe action did Amy Fielding take with a patient who kept fainting?|She deliberately triggered another fainting episode|She gave the patient the wrong insulin dose|She discharged the patient without examination|She withheld prescribed pain relief|Medium|Better Safe Than Sorry|Amy Fielding|Craig|fainting spells|deliberate provocation|patient safety|episode thirty
+In All Saints episode A Safe Place why did patient Roz pretend to be ill?|To secure help for her husband Ken|To avoid appearing as a witness|To receive free medication|To postpone a planned operation|Medium|A Safe Place|Roz|Ken|fatal familial insomnia|false symptoms|worried wife|episode thirty eight
+In All Saints episode Spinning Out whose final regular appearance as a nurse occurred before the last instalment of the season?|Dan Goldman|Von Ryan|Gabrielle Jaeger|Claire Anderson|Medium|Spinning Out|Dan Goldman|Mark Priestley|episode thirty nine|final appearance|2008|cast departure
+In All Saints episode Time Bomb what type of factory had the worker with an embedded explosive fragment come from?|A car-parts factory|A textile mill|A paper factory|A food-processing plant|Medium|Time Bomb|car parts factory|explosive fragment|industrial accident|Frank Campion|Mike Vlasek|episode forty`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -159,9 +192,16 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In which ')
+      ? 'In All Saints, which ' + question.slice(9)
+      : question.startsWith('In ')
+        ? 'In All Saints episode ' + question.slice(3)
+        : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
