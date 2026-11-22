@@ -5,7 +5,10 @@
 'use strict';
 
 const FIRST_ID = 22210;
-const commonTags = ['television', 'British TV', 'BBC One', 'The Missing', 'Series 1 (2014)', 'crime mystery'];
+const PROGRAMME = 'The Missing';
+const commonTags = ['Television','British Television','BBC One','Crime Mystery',
+  PROGRAMME,'Programme: '+PROGRAMME,'Series 1 (2014)',
+  'Harry and Jack Williams','Eight-episode 2014 story'];
 
 // Question | correct answer | three distractors | difficulty | seven specific tags.
 // Every exported question identifies The Missing for standalone and mixed play.
@@ -135,13 +138,14 @@ const questions = rows.map((row, index) => {
   }
 
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 401: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 401: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
 
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -151,4 +155,376 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// The Missing 2014, Series 1: all eight episodes. Series 2 tracked separately.
+// Preserve originals tv_22210–tv_22311; additional IDs begin tv_41356.
+// Producer's official programme and executive production credits:
+// https://www.twobrotherspictures.com/the-missing-series1
+// https://www.newpictures.co.uk/shows/the-missing/
+// Original BBC cast by episode:
+// https://tellychat.co.uk/the-missing-bbc1-cast-one-drama-series-james-nesbitt-2014-starz/
+// BAFTA 2015 nominations: https://www.bafta.org/media-centre/press-releases/television-awards-nominations-announced/
+// Golden Globes original record: https://goldenglobes.com/tv-show/the-missing/
+// UK premiere and episode guide: https://www.bbc.co.uk/programmes/b04n9p9c
+// Filming: https://laloidesseries.lalibre.be/2014/10/14/the-missing-serie-bbc-a-95-made-in-belgium/
+const audit401Cast=[
+  [
+    "Sara Baptiste",
+    "Camille Schotte",
+    "f",
+    "Julien and Celia's daughter"
+  ],
+  [
+    "James Walsh",
+    "Macauley Keeper",
+    "m",
+    "Mark Walsh's son"
+  ],
+  [
+    "Robert",
+    "Clive Francis",
+    "m",
+    "supporting character"
+  ],
+  [
+    "Penny",
+    "Diana Kent",
+    "f",
+    "supporting character"
+  ],
+  [
+    "Vivienne",
+    "Hilde Heijnen",
+    "f",
+    "supporting character"
+  ],
+  [
+    "Greg Halpern",
+    "Dan Fredenburgh",
+    "m",
+    "supporting character in Episode 2"
+  ],
+  [
+    "Mary Garrett",
+    "Diana Quick",
+    "f",
+    "Ian Garrett's wife"
+  ],
+  [
+    "Martin Dalca",
+    "Dragoș Bucur",
+    "m",
+    "Rini Dalca's brother"
+  ],
+  [
+    "Monique",
+    "Joséphine de La Baume",
+    "f",
+    "street artist"
+  ],
+  [
+    "Danielle Duchamps",
+    "Stephanie Van Vyve",
+    "f",
+    "Alex Duchamps's mother"
+  ],
+  [
+    "Sebastian Duchamps",
+    "Erico Salamone",
+    "m",
+    "Alex Duchamps's father"
+  ],
+  [
+    "Amara Suri",
+    "Anjli Mohindra",
+    "f",
+    "Malik Suri's wife"
+  ],
+  [
+    "Anouar Chamartaine",
+    "Yassine Fadel",
+    "m",
+    "Khalid Ziane's son"
+  ]
+];
+const audit401Facts=[
+  [
+    "Awards",
+    "Which BAFTA Television programme category nominated the original series in 2015?",
+    "Drama Series",
+    [
+      "Mini-Series",
+      "Single Drama",
+      "International"
+    ],
+    "2015 BAFTA Television programme nomination"
+  ],
+  [
+    "Awards",
+    "Which BAFTA acting category nominated James Nesbitt in 2015?",
+    "Leading Actor",
+    [
+      "Supporting Actor",
+      "Male Performance in Comedy",
+      "Breakthrough Talent"
+    ],
+    "2015 BAFTA James Nesbitt nomination"
+  ],
+  [
+    "Awards",
+    "Which BAFTA acting category nominated Ken Stott for his role in the 2014 story?",
+    "Supporting Actor",
+    [
+      "Leading Actor",
+      "Supporting Actress",
+      "Male Performance in Comedy"
+    ],
+    "2015 BAFTA Ken Stott nomination"
+  ],
+  [
+    "Awards",
+    "How many BAFTA Television nominations did the programme receive in 2015?",
+    "Three",
+    [
+      "Two",
+      "Four",
+      "Six"
+    ],
+    "2015 BAFTA nomination total"
+  ],
+  [
+    "Awards",
+    "Which Golden Globe programme category nominated this eight-part drama in 2015?",
+    "Best Miniseries or Television Film",
+    [
+      "Best Television Series – Drama",
+      "Best Television Series – Comedy",
+      "Best Television Movie Original Song"
+    ],
+    "2015 Golden Globe programme nomination"
+  ],
+  [
+    "Awards",
+    "In which 2015 Golden Globe acting category was Frances O'Connor nominated?",
+    "Best Actress in a Miniseries or Television Film",
+    [
+      "Best Supporting Actress in a Television Series",
+      "Best Actress in a Television Drama",
+      "Best Comedy Actress"
+    ],
+    "2015 Golden Globe Frances O'Connor"
+  ],
+  [
+    "Awards",
+    "Which American television awards nominated its original music and direction?",
+    "Primetime Emmy Awards",
+    [
+      "Golden Globe Awards",
+      "Screen Actors Guild Awards",
+      "Critics' Choice Movie Awards"
+    ],
+    "2015 Emmy directing and score nominations"
+  ],
+  [
+    "Production",
+    "Which producer was responsible for the original eight-part series?",
+    "Chris Clough",
+    [
+      "Julian Stevens",
+      "Polly Hill",
+      "Catherine Magee"
+    ],
+    "2014 series producer"
+  ],
+  [
+    "Production",
+    "Which executive producer represented the BBC on the first series?",
+    "Polly Hill",
+    [
+      "Willow Grylls",
+      "Elaine Pyke",
+      "Jane Tranter"
+    ],
+    "BBC executive production"
+  ],
+  [
+    "Production",
+    "Which co-founder of Playground Entertainment was an executive producer?",
+    "Colin Callender",
+    [
+      "John Yorke",
+      "Harry Williams",
+      "Charles Pattinson"
+    ],
+    "International production"
+  ],
+  [
+    "Production",
+    "Which New Pictures executive producer shared credits with Charles Pattinson?",
+    "Willow Grylls",
+    [
+      "Polly Hill",
+      "Elaine Pyke",
+      "Sally Haynes"
+    ],
+    "New Pictures executive production"
+  ],
+  [
+    "Production",
+    "Which executive producer was credited for Company Pictures?",
+    "John Yorke",
+    [
+      "Harry Williams",
+      "Julian Stevens",
+      "Ben Stephenson"
+    ],
+    "Company Pictures executive production"
+  ],
+  [
+    "Production",
+    "Which executive producer was credited alongside Willow Grylls for New Pictures?",
+    "Charles Pattinson",
+    [
+      "Colin Callender",
+      "Julian Stevens",
+      "Tom Shankland"
+    ],
+    "Original executive production"
+  ],
+  [
+    "Production",
+    "Which international distributor handled sales of the series?",
+    "All3Media International",
+    [
+      "BBC Studios Distribution",
+      "Banijay Rights",
+      "Fremantle"
+    ],
+    "Original international distribution"
+  ],
+  [
+    "Production",
+    "Which US subscription television network co-produced and screened the drama?",
+    "Starz",
+    [
+      "HBO",
+      "Showtime",
+      "AMC"
+    ],
+    "American original broadcaster"
+  ],
+  [
+    "Production",
+    "Which Belgian company co-produced the series?",
+    "Czar TV Productions",
+    [
+      "Shaftesbury Films",
+      "Left Bank Pictures",
+      "Wall to Wall"
+    ],
+    "Belgian co-production"
+  ],
+  [
+    "Production",
+    "Which specialist film financier co-produced the series during its Belgian shoot?",
+    "BNP Paribas Fortis Film Fund",
+    [
+      "BFI Film Fund",
+      "Creative England",
+      "Screen Flanders"
+    ],
+    "Belgian film finance"
+  ],
+  [
+    "Broadcast",
+    "On what date did the first episode air on BBC One?",
+    "28 October 2014",
+    [
+      "21 October 2014",
+      "4 November 2014",
+      "28 September 2014"
+    ],
+    "BBC One opening transmission"
+  ],
+  [
+    "Broadcast",
+    "On what date did the eighth and final episode air on BBC One?",
+    "16 December 2014",
+    [
+      "9 December 2014",
+      "23 December 2014",
+      "16 November 2014"
+    ],
+    "BBC One series finale"
+  ],
+  [
+    "Broadcast",
+    "Which month and year saw the first American Starz broadcast?",
+    "November 2014",
+    [
+      "October 2014",
+      "December 2014",
+      "January 2015"
+    ],
+    "Original US transmission"
+  ],
+  [
+    "Locations",
+    "Which Belgian city provided principal stand-in locations for the fictional French town?",
+    "Huy",
+    [
+      "Ghent",
+      "Liège",
+      "Namur"
+    ],
+    "Belgian filmed location for Châlons-du-Bois"
+  ]
+];
+const audit401Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+const actorPools401={
+ m:audit401Cast.filter(row=>row[2]==='m').map(row=>row[1]),
+ f:audit401Cast.filter(row=>row[2]==='f').map(row=>row[1])
+};
+function append401(stem,correctAnswer,wrongs,category,focus,scope){
+ if(wrongs.length!==3||new Set([correctAnswer,...wrongs].map(audit401Norm)).size!==4)
+  throw Error('Pack 401 invalid multiple-choice answers: '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrongs];answers.splice(questions.length%4,0,correctAnswer);
+ const tags=['Television','British Television','BBC One','Crime Mystery',
+  PROGRAMME,'Programme: '+PROGRAMME,'Series 1 (2014)',
+  'Original run: 8 episodes','Question category: '+category,
+  'Subject: '+focus,'Correct answer: '+correctAnswer,
+  'Creators: Harry and Jack Williams',
+  'Two Brothers Pictures','2014 French holiday mystery',
+  'Scope: '+scope];
+ questions.push({id:'tv_'+(41356+questions.length-102),
+  category:'Television',programme:PROGRAMME,question,answers,correctAnswer,
+  difficulty:'Medium',tags,dailyEligible:true});
+}
+for(const [i,[role,performer,gender,focus]] of audit401Cast.entries()){
+ const pool=actorPools401[gender].filter(x=>x!==performer);
+ if(pool.length<3)throw Error('Insufficient performer distractors for '+role);
+ const offset=(i*3+role.length)%pool.length;
+ const choices=[pool[offset],pool[(offset+1)%pool.length],pool[(offset+2)%pool.length]];
+ append401('Which '+(gender==='f'?'actress':'actor')+' played '+role+'?',
+  performer,choices,'Supporting cast','Character '+role+' / '+focus,'Series 1');
+}
+for(const [category,stem,answer,distractors,focus] of audit401Facts)
+ append401(stem,answer,distractors,category,focus,'Series 1');
+const ids401=new Set(),stems401=new Set();
+for(const q of questions){
+ const text=audit401Norm(q.question);
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ !text.includes(audit401Norm(PROGRAMME))||
+ q.answers.length!==4||new Set(q.answers.map(audit401Norm)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ ids401.has(q.id)||stems401.has(text)||
+ text.includes(audit401Norm(q.correctAnswer)))
+  throw Error('Pack 401 module validation failure '+q.id);
+ ids401.add(q.id);stems401.add(text);
+}
+module.exports=questions;
