@@ -188,7 +188,7 @@ const questions = rows.map((row, index) => {
 // Original production credits: https://www.twobrotherspictures.com/production-page-baptiste
 // 2021 production credits: https://www.twobrotherspictures.com/baptiste-series-2
 // First broadcasts: https://thetvdb.com/series/baptiste/allseasons/official
-// Score: https://coolmusicltd.com/wp-content/uploads/2025/06/DominikScherrer.pdf
+// Composer's own credits: https://www.dominikscherrer.com/credits
 // No unverified awards are added; the main storylines are in the 124 originals.
 const audit400Cast=[
   [
@@ -297,7 +297,7 @@ const audit400Facts=[
   ],
   [
     "Production",
-    "Which director shared responsibility for the original 2019 series with Börkur Sigþórsson?",
+    "Who directed the 2019 first-series finale, Into the Sand?",
     "Jan Matthys",
     [
       "Hong Khaou",
@@ -308,7 +308,7 @@ const audit400Facts=[
   ],
   [
     "Production",
-    "Which Icelandic director worked on the first series alongside Jan Matthys?",
+    "Who directed the 2019 opening episode, Shell?",
     "Börkur Sigþórsson",
     [
       "Hong Khaou",
@@ -363,7 +363,7 @@ const audit400Facts=[
   ],
   [
     "Production",
-    "Which director worked on the 2021 series alongside Thomas Napper?",
+    "Who directed the final 2021 episode, Episode 6?",
     "Hong Khaou",
     [
       "Jan Matthys",
@@ -374,7 +374,7 @@ const audit400Facts=[
   ],
   [
     "Production",
-    "Which director worked on the 2021 series alongside Hong Khaou?",
+    "Who directed the 2021 opening episode, Episode 1?",
     "Thomas Napper",
     [
       "Jan Matthys",
