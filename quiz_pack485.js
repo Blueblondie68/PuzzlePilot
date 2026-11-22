@@ -1,10 +1,14 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 485: Arrested Development (complete five-season run)
-// 129 original multiple-choice questions; IDs tv_27183–tv_27311.
+// 165 audited questions: 129 original + 36 plot, running-gag, production and awards additions.
+// Original IDs tv_27183–tv_27311; audit IDs tv_42884–tv_42919.
 // Covers the original Fox series (2003–2006), Netflix revival (2013; 2018–2019),
 // major character and plot arcs, recurring gags, ending spoilers, cast, production.
 // Season 4: original 15-episode edition vs 22-episode 2018 chronological remix.
 // First 20 mixed packs scanned: no existing Arrested Development question found;
 // the title occurs as an incorrect option once in Pack 12 (not a duplicated fact).
+// Audit additions checked 22 Nov 2026: official Television Academy awards,
+// TVDB episode summaries, full character guides and Netflix season-four/five recaps.
+// Original answers/IDs preserved; programme identified in each question.
 // Research sources checked 18 November 2026:
 // https://www.televisionacademy.com/shows/arrested-development
 // https://interviews.televisionacademy.com/shows/arrested-development
@@ -180,7 +184,7 @@ const questions = [
     "id": "tv_27188",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which kind of business is run by the Bluth Company?",
+    "question": "In Arrested Development, which kind of business is run by the Bluth Company?",
     "answers": [
       "Property development",
       "Airline management",
@@ -212,7 +216,7 @@ const questions = [
     "id": "tv_27189",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "In which US state is the Bluth family chiefly based?",
+    "question": "In Arrested Development, in which US state is the Bluth family chiefly based?",
     "answers": [
       "Texas",
       "California",
@@ -244,7 +248,7 @@ const questions = [
     "id": "tv_27190",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actor stars as Michael Bluth?",
+    "question": "In Arrested Development, which actor stars as Michael Bluth?",
     "answers": [
       "Jeffrey Tambor",
       "David Cross",
@@ -276,7 +280,7 @@ const questions = [
     "id": "tv_27191",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Who is Michael Bluth's son?",
+    "question": "In Arrested Development, who is Michael Bluth's son?",
     "answers": [
       "Steve Holt",
       "Annyong",
@@ -308,7 +312,7 @@ const questions = [
     "id": "tv_27192",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actor plays George Michael Bluth?",
+    "question": "In Arrested Development, which actor plays George Michael Bluth?",
     "answers": [
       "Michael Cera",
       "Tony Hale",
@@ -340,7 +344,7 @@ const questions = [
     "id": "tv_27193",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actor portrays the Bluth family patriarch George Sr.?",
+    "question": "In Arrested Development, which actor portrays the Bluth family patriarch George Sr.?",
     "answers": [
       "Ed Begley Jr.",
       "Jeffrey Tambor",
@@ -372,7 +376,7 @@ const questions = [
     "id": "tv_27194",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Who plays the domineering Bluth matriarch Lucille?",
+    "question": "In Arrested Development, who plays the domineering Bluth matriarch Lucille?",
     "answers": [
       "Portia de Rossi",
       "Judy Greer",
@@ -404,7 +408,7 @@ const questions = [
     "id": "tv_27195",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actor portrays Michael's flamboyant older brother Gob?",
+    "question": "In Arrested Development, which actor portrays Michael's flamboyant older brother Gob?",
     "answers": [
       "Jason Bateman",
       "David Cross",
@@ -436,7 +440,7 @@ const questions = [
     "id": "tv_27196",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What are Gob Bluth's full first and middle names?",
+    "question": "In Arrested Development, what are Gob Bluth's full first and middle names?",
     "answers": [
       "George Oscar",
       "George Oliver",
@@ -468,7 +472,7 @@ const questions = [
     "id": "tv_27197",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actor plays Byron 'Buster' Bluth?",
+    "question": "In Arrested Development, which actor plays Byron 'Buster' Bluth?",
     "answers": [
       "Scott Baio",
       "Tony Hale",
@@ -500,7 +504,7 @@ const questions = [
     "id": "tv_27198",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actress plays Lindsay Bluth Fünke?",
+    "question": "In Arrested Development, which actress plays Lindsay Bluth Fünke?",
     "answers": [
       "Jessica Walter",
       "Isla Fisher",
@@ -532,7 +536,7 @@ const questions = [
     "id": "tv_27199",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actor plays Lindsay's husband Tobias Fünke?",
+    "question": "In Arrested Development, which actor plays Lindsay's husband Tobias Fünke?",
     "answers": [
       "Bob Odenkirk",
       "Will Arnett",
@@ -564,7 +568,7 @@ const questions = [
     "id": "tv_27200",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Who plays Lindsay and Tobias's daughter Maeby?",
+    "question": "In Arrested Development, who plays Lindsay and Tobias's daughter Maeby?",
     "answers": [
       "Alia Shawkat",
       "Mae Whitman",
@@ -596,7 +600,7 @@ const questions = [
     "id": "tv_27201",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which legendary entertainer portrays Lucille Austero, also called Lucille Two?",
+    "question": "In Arrested Development, which legendary entertainer portrays Lucille Austero, also called Lucille Two?",
     "answers": [
       "Cher",
       "Liza Minnelli",
@@ -724,7 +728,7 @@ const questions = [
     "id": "tv_27205",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "How many episodes aired in the original three-season Fox run?",
+    "question": "In Arrested Development, how many episodes aired in the original three-season Fox run?",
     "answers": [
       "84",
       "53",
@@ -788,7 +792,7 @@ const questions = [
     "id": "tv_27207",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Who repeatedly takes responsibility for holding the chaotic Bluth family together?",
+    "question": "In Arrested Development, who repeatedly takes responsibility for holding the chaotic Bluth family together?",
     "answers": [
       "Michael Bluth",
       "Gob Bluth",
@@ -820,7 +824,7 @@ const questions = [
     "id": "tv_27208",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What happens to George Sr. early in the pilot episode?",
+    "question": "In Arrested Development, what happens to George Sr. early in the pilot episode?",
     "answers": [
       "He is arrested",
       "He marries Lucille Two",
@@ -852,7 +856,7 @@ const questions = [
     "id": "tv_27209",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which US government agency pursues George Sr. over the Bluth Company's finances?",
+    "question": "In Arrested Development, which US government agency pursues George Sr. over the Bluth Company's finances?",
     "answers": [
       "Department of Education",
       "Securities and Exchange Commission",
@@ -884,7 +888,7 @@ const questions = [
     "id": "tv_27210",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Whom does George Sr. nominate to run the company instead of his disappointed son Michael?",
+    "question": "In Arrested Development, whom does George Sr. nominate to run the company instead of his disappointed son Michael?",
     "answers": [
       "Oscar Bluth",
       "Tobias Fünke",
@@ -916,7 +920,7 @@ const questions = [
     "id": "tv_27211",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Where do Michael and George Michael live at the start of the series?",
+    "question": "In Arrested Development, where do Michael and George Michael live at the start of the series?",
     "answers": [
       "A beachside hotel",
       "George Sr.'s prison cell",
@@ -948,7 +952,7 @@ const questions = [
     "id": "tv_27212",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which family food business does George Michael help to operate?",
+    "question": "In Arrested Development, which family food business does George Michael help to operate?",
     "answers": [
       "A frozen-banana stand",
       "An ice-cream van",
@@ -980,7 +984,7 @@ const questions = [
     "id": "tv_27213",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "On which island is the Bluths' frozen-banana stand located?",
+    "question": "In Arrested Development, on which island is the Bluths' frozen-banana stand located?",
     "answers": [
       "Treasure Island",
       "Balboa Island",
@@ -1012,7 +1016,7 @@ const questions = [
     "id": "tv_27214",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What does George Sr. insist is hidden inside the Bluth banana stand?",
+    "question": "In Arrested Development, what does George Sr. insist is hidden inside the Bluth banana stand?",
     "answers": [
       "A secret passport",
       "Company shares",
@@ -1044,7 +1048,7 @@ const questions = [
     "id": "tv_27215",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What happens to the banana stand during the episode 'Top Banana'?",
+    "question": "In Arrested Development, what happens to the banana stand during the episode 'Top Banana'?",
     "answers": [
       "It becomes a nightclub",
       "It is sold to Gob",
@@ -1076,7 +1080,7 @@ const questions = [
     "id": "tv_27216",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "How are George Michael and Maeby initially related in the family?",
+    "question": "In Arrested Development, how are George Michael and Maeby initially related in the family?",
     "answers": [
       "Cousins",
       "Brother and sister",
@@ -1108,7 +1112,7 @@ const questions = [
     "id": "tv_27217",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Why does Maeby propose kissing George Michael during the pilot?",
+    "question": "In Arrested Development, why does Maeby propose kissing George Michael during the pilot?",
     "answers": [
       "To rehearse a play",
       "To shock their relatives",
@@ -1140,7 +1144,7 @@ const questions = [
     "id": "tv_27218",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What is Gob's main stage profession?",
+    "question": "In Arrested Development, what is Gob's main stage profession?",
     "answers": [
       "Opera singer",
       "Professional wrestler",
@@ -1172,7 +1176,7 @@ const questions = [
     "id": "tv_27219",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What term does Gob prefer for his magic tricks?",
+    "question": "In Arrested Development, what term does Gob prefer for his magic tricks?",
     "answers": [
       "Miracles",
       "Forecasts",
@@ -1204,7 +1208,7 @@ const questions = [
     "id": "tv_27220",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What wheeled personal transporter does Gob frequently ride?",
+    "question": "In Arrested Development, what wheeled personal transporter does Gob frequently ride?",
     "answers": [
       "A Segway",
       "A unicycle",
@@ -1236,7 +1240,7 @@ const questions = [
     "id": "tv_27221",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which neurotic Bluth brother is particularly dependent on his mother Lucille?",
+    "question": "In Arrested Development, which neurotic Bluth brother is particularly dependent on his mother Lucille?",
     "answers": [
       "Oscar",
       "Buster",
@@ -1268,7 +1272,7 @@ const questions = [
     "id": "tv_27222",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What was Tobias's original medical profession?",
+    "question": "In Arrested Development, what was Tobias's original medical profession?",
     "answers": [
       "Veterinarian",
       "Dentist",
@@ -1300,7 +1304,7 @@ const questions = [
     "id": "tv_27223",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Why did Tobias lose his medical licence?",
+    "question": "In Arrested Development, why did Tobias lose his medical licence?",
     "answers": [
       "He prescribed a banned drug",
       "He missed an emergency call",
@@ -1332,7 +1336,7 @@ const questions = [
     "id": "tv_27224",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What does Tobias habitually wear under his clothes as a 'never-nude'?",
+    "question": "In Arrested Development, what does Tobias habitually wear under his clothes as a 'never-nude'?",
     "answers": [
       "Denim cut-off shorts",
       "Swimming trunks",
@@ -1364,7 +1368,7 @@ const questions = [
     "id": "tv_27225",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which performance troupe inspires Tobias to paint himself blue?",
+    "question": "In Arrested Development, which performance troupe inspires Tobias to paint himself blue?",
     "answers": [
       "The Muppets",
       "Blue Man Group",
@@ -1396,7 +1400,7 @@ const questions = [
     "id": "tv_27226",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which lawyer played by Henry Winkler initially represents the Bluths?",
+    "question": "In Arrested Development, which lawyer played by Henry Winkler initially represents the Bluths?",
     "answers": [
       "Wayne Jarvis",
       "Maggie Lizer",
@@ -1428,7 +1432,7 @@ const questions = [
     "id": "tv_27227",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actress portrays George Sr.'s erratic assistant Kitty Sanchez?",
+    "question": "In Arrested Development, which actress portrays George Sr.'s erratic assistant Kitty Sanchez?",
     "answers": [
       "Julia Louis-Dreyfus",
       "Jane Lynch",
@@ -1460,7 +1464,7 @@ const questions = [
     "id": "tv_27228",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which performer plays the lawyer Maggie Lizer, who deceives Michael about her sight?",
+    "question": "In Arrested Development, which performer plays the lawyer Maggie Lizer, who deceives Michael about her sight?",
     "answers": [
       "Julia Louis-Dreyfus",
       "Judy Greer",
@@ -1492,7 +1496,7 @@ const questions = [
     "id": "tv_27229",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which disability does Maggie Lizer pretend to have when Michael first meets her?",
+    "question": "In Arrested Development, which disability does Maggie Lizer pretend to have when Michael first meets her?",
     "answers": [
       "Memory loss",
       "Blindness",
@@ -1524,7 +1528,7 @@ const questions = [
     "id": "tv_27230",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What is the name of the Korean boy adopted by George Sr. and Lucille?",
+    "question": "In Arrested Development, what is the name of the Korean boy adopted by George Sr. and Lucille?",
     "answers": [
       "Helmut",
       "Kirkland",
@@ -1556,7 +1560,7 @@ const questions = [
     "id": "tv_27231",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What does the Korean word 'annyong' mean?",
+    "question": "In Arrested Development, what does the Korean word 'annyong' mean?",
     "answers": [
       "Goodbye forever",
       "Thank you",
@@ -1588,7 +1592,7 @@ const questions = [
     "id": "tv_27232",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which woman is nicknamed 'Lucille Two' because she shares a first name with Michael's mother?",
+    "question": "In Arrested Development, which woman is nicknamed 'Lucille Two' because she shares a first name with Michael's mother?",
     "answers": [
       "Lucille Austero",
       "Lucille Ball",
@@ -1620,7 +1624,7 @@ const questions = [
     "id": "tv_27233",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which Bluth son begins a complicated romantic relationship with Lucille Two?",
+    "question": "In Arrested Development, which Bluth son begins a complicated romantic relationship with Lucille Two?",
     "answers": [
       "Oscar",
       "Buster",
@@ -1652,7 +1656,7 @@ const questions = [
     "id": "tv_27234",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which identical twin of George Sr. becomes a major character in season two?",
+    "question": "In Arrested Development, which identical twin of George Sr. becomes a major character in season two?",
     "answers": [
       "Stuart Bluth",
       "Earl Bluth",
@@ -1684,7 +1688,7 @@ const questions = [
     "id": "tv_27235",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What striking feature initially helps distinguish Oscar Bluth from his twin George Sr.?",
+    "question": "In Arrested Development, what striking feature initially helps distinguish Oscar Bluth from his twin George Sr.?",
     "answers": [
       "His shoulder-length hair",
       "A beard",
@@ -1716,7 +1720,7 @@ const questions = [
     "id": "tv_27236",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Who is eventually revealed as Buster's biological father?",
+    "question": "In Arrested Development, who is eventually revealed as Buster's biological father?",
     "answers": [
       "Oscar Bluth",
       "Barry Zuckerkorn",
@@ -1748,7 +1752,7 @@ const questions = [
     "id": "tv_27237",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Where does the fugitive George Sr. secretly hide at the Bluth family home?",
+    "question": "In Arrested Development, where does the fugitive George Sr. secretly hide at the Bluth family home?",
     "answers": [
       "Under the garage",
       "In the attic",
@@ -1780,7 +1784,7 @@ const questions = [
     "id": "tv_27238",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which body part does Buster lose after encountering a loose seal?",
+    "question": "In Arrested Development, which body part does Buster lose after encountering a loose seal?",
     "answers": [
       "His left ear",
       "His right hand",
@@ -1812,7 +1816,7 @@ const questions = [
     "id": "tv_27239",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What colour bow tie does the seal that attacks Buster wear?",
+    "question": "In Arrested Development, what colour bow tie does the seal that attacks Buster wear?",
     "answers": [
       "Yellow",
       "Red",
@@ -1844,7 +1848,7 @@ const questions = [
     "id": "tv_27240",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What replacement does Buster wear following the loss of his hand?",
+    "question": "In Arrested Development, what replacement does Buster wear following the loss of his hand?",
     "answers": [
       "A metal hook",
       "A robotic finger",
@@ -1876,7 +1880,7 @@ const questions = [
     "id": "tv_27241",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which dangerous creature had Gob previously released into the ocean?",
+    "question": "In Arrested Development, which dangerous creature had Gob previously released into the ocean?",
     "answers": [
       "A wolf",
       "A seal",
@@ -1908,7 +1912,7 @@ const questions = [
     "id": "tv_27242",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which branch of the military does Buster try to join?",
+    "question": "In Arrested Development, which branch of the military does Buster try to join?",
     "answers": [
       "The Army",
       "The Navy",
@@ -1940,7 +1944,7 @@ const questions = [
     "id": "tv_27243",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Who is Steve Holt eventually revealed to be related to?",
+    "question": "In Arrested Development, who is Steve Holt eventually revealed to be related to?",
     "answers": [
       "Tobias Fünke",
       "George Michael Bluth",
@@ -1972,7 +1976,7 @@ const questions = [
     "id": "tv_27244",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actress plays Gob's unnamed wife whom he marries on a dare?",
+    "question": "In Arrested Development, which actress plays Gob's unnamed wife whom he marries on a dare?",
     "answers": [
       "Amy Poehler",
       "Julia Louis-Dreyfus",
@@ -2004,7 +2008,7 @@ const questions = [
     "id": "tv_27245",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which high-school student's romantic troubles worry George Michael in the original series?",
+    "question": "In Arrested Development, which high-school student's romantic troubles worry George Michael in the original series?",
     "answers": [
       "DeBrie Bardeaux",
       "Ann Veal",
@@ -2036,7 +2040,7 @@ const questions = [
     "id": "tv_27246",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Who plays George Michael's girlfriend Ann Veal for most of her appearances?",
+    "question": "In Arrested Development, who plays George Michael's girlfriend Ann Veal for most of her appearances?",
     "answers": [
       "Isla Fisher",
       "Judy Greer",
@@ -2068,7 +2072,7 @@ const questions = [
     "id": "tv_27247",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What alias does Tobias adopt when he poses as the Fünkes' British housekeeper?",
+    "question": "In Arrested Development, what alias does Tobias adopt when he poses as the Fünkes' British housekeeper?",
     "answers": [
       "Mrs Doubtfire",
       "Lady Pennington",
@@ -2100,7 +2104,7 @@ const questions = [
     "id": "tv_27248",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which fictional character does Tobias try to imitate while posing as Mrs Featherbottom?",
+    "question": "In Arrested Development, which fictional character does Tobias try to imitate while posing as Mrs Featherbottom?",
     "answers": [
       "Mary Poppins",
       "Alice in Wonderland",
@@ -2132,7 +2136,7 @@ const questions = [
     "id": "tv_27249",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What is the name of the mother-and-son pageant Lucille attends with George Michael?",
+    "question": "In Arrested Development, what is the name of the mother-and-son pageant Lucille attends with George Michael?",
     "answers": [
       "Young at Heart",
       "Motherboy",
@@ -2164,7 +2168,7 @@ const questions = [
     "id": "tv_27250",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What false name does Maeby adopt when she pretends to be an ill schoolgirl?",
+    "question": "In Arrested Development, what false name does Maeby adopt when she pretends to be an ill schoolgirl?",
     "answers": [
       "Surely Fünke",
       "Daisy Bluth",
@@ -2196,7 +2200,7 @@ const questions = [
     "id": "tv_27251",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "In which industry does Maeby get a job while pretending to be an adult?",
+    "question": "In Arrested Development, in which industry does Maeby get a job while pretending to be an adult?",
     "answers": [
       "Insurance",
       "Investment banking",
@@ -2228,7 +2232,7 @@ const questions = [
     "id": "tv_27252",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which fictional film studio employs Maeby as an executive?",
+    "question": "In Arrested Development, which fictional film studio employs Maeby as an executive?",
     "answers": [
       "Tantamount Studios",
       "Universal Pictures",
@@ -2260,7 +2264,7 @@ const questions = [
     "id": "tv_27253",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which celebrity magician played by Ben Stiller becomes Gob's rival?",
+    "question": "In Arrested Development, which celebrity magician played by Ben Stiller becomes Gob's rival?",
     "answers": [
       "The Amazing Jonathan",
       "Tony Wonder",
@@ -2292,7 +2296,7 @@ const questions = [
     "id": "tv_27254",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which recurring guest actor portrays the Bluth Company's business rival Stan Sitwell?",
+    "question": "In Arrested Development, which recurring guest actor portrays the Bluth Company's business rival Stan Sitwell?",
     "answers": [
       "Jeffrey Tambor",
       "Martin Short",
@@ -2324,7 +2328,7 @@ const questions = [
     "id": "tv_27255",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which series-three British woman becomes Michael's girlfriend?",
+    "question": "In Arrested Development, which series-three British woman becomes Michael's girlfriend?",
     "answers": [
       "Maggie Lizer",
       "Lucille Austero",
@@ -2356,7 +2360,7 @@ const questions = [
     "id": "tv_27256",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Who plays Rita Leeds in the third season?",
+    "question": "In Arrested Development, who plays Rita Leeds in the third season?",
     "answers": [
       "Charlize Theron",
       "Naomi Watts",
@@ -2388,7 +2392,7 @@ const questions = [
     "id": "tv_27257",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What does Michael mistakenly suspect Rita Leeds might be?",
+    "question": "In Arrested Development, what does Michael mistakenly suspect Rita Leeds might be?",
     "answers": [
       "A bank robber",
       "A British spy",
@@ -2420,7 +2424,7 @@ const questions = [
     "id": "tv_27258",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which plot involves Gob building a miniature town for overseas investors?",
+    "question": "In Arrested Development, which plot involves Gob building a miniature town for overseas investors?",
     "answers": [
       "The banana-stand fire",
       "The Fakeblock launch",
@@ -2452,7 +2456,7 @@ const questions = [
     "id": "tv_27259",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which creature does Tobias impersonate during the tiny-town disaster?",
+    "question": "In Arrested Development, which creature does Tobias impersonate during the tiny-town disaster?",
     "answers": [
       "A giant chicken",
       "A seal",
@@ -2484,7 +2488,7 @@ const questions = [
     "id": "tv_27260",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which two US agencies does Tobias confuse, with disastrous consequences for the Bluths?",
+    "question": "In Arrested Development, which two US agencies does Tobias confuse, with disastrous consequences for the Bluths?",
     "answers": [
       "CIA and CAA",
       "FBI and NASA",
@@ -2516,7 +2520,7 @@ const questions = [
     "id": "tv_27261",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actor plays the Bluths' lawyer Bob Loblaw?",
+    "question": "In Arrested Development, which actor plays the Bluths' lawyer Bob Loblaw?",
     "answers": [
       "Ron Howard",
       "Scott Baio",
@@ -2548,7 +2552,7 @@ const questions = [
     "id": "tv_27262",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Whom does Bob Loblaw replace as the family's principal lawyer?",
+    "question": "In Arrested Development, whom does Bob Loblaw replace as the family's principal lawyer?",
     "answers": [
       "Maggie Lizer",
       "Stan Sitwell",
@@ -2580,7 +2584,7 @@ const questions = [
     "id": "tv_27263",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What is the name of Bob Loblaw's punning online legal column?",
+    "question": "In Arrested Development, what is the name of Bob Loblaw's punning online legal column?",
     "answers": [
       "Bluth Legal Weekly",
       "The Justice Journal",
@@ -2612,7 +2616,7 @@ const questions = [
     "id": "tv_27264",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which real-life pair of brothers directed the series pilot?",
+    "question": "In Arrested Development, which real-life pair of brothers directed the series pilot?",
     "answers": [
       "Anthony and Joe Russo",
       "Matt and Ross Duffer",
@@ -2644,7 +2648,7 @@ const questions = [
     "id": "tv_27265",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What is the title of the final episode of the original Fox run?",
+    "question": "In Arrested Development, what is the title of the final episode of the original Fox run?",
     "answers": [
       "Blockheads",
       "Development Arrested",
@@ -2676,7 +2680,7 @@ const questions = [
     "id": "tv_27266",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which family's company is implicated in secretly constructing homes in Iraq?",
+    "question": "In Arrested Development, which family's company is implicated in secretly constructing homes in Iraq?",
     "answers": [
       "Tantamount Studios",
       "The Veal Group",
@@ -2708,7 +2712,7 @@ const questions = [
     "id": "tv_27267",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What is the real first name of the adopted Bluth brother nicknamed Annyong?",
+    "question": "In Arrested Development, what is the real first name of the adopted Bluth brother nicknamed Annyong?",
     "answers": [
       "Ji-hoon",
       "Min-soo",
@@ -2740,7 +2744,7 @@ const questions = [
     "id": "tv_27268",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Whose stolen business idea inspires Annyong's revenge against the Bluths?",
+    "question": "In Arrested Development, whose stolen business idea inspires Annyong's revenge against the Bluths?",
     "answers": [
       "His grandfather's banana stand",
       "His father's movie studio",
@@ -2772,7 +2776,7 @@ const questions = [
     "id": "tv_27269",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which family secret about Lindsay is exposed towards the end of the Fox run?",
+    "question": "In Arrested Development, which family secret about Lindsay is exposed towards the end of the Fox run?",
     "answers": [
       "She is Gob's daughter",
       "She was adopted",
@@ -2804,7 +2808,7 @@ const questions = [
     "id": "tv_27270",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which family member flees on the Queen Mary as authorities close in at the end of season three?",
+    "question": "In Arrested Development, which family member flees on the Queen Mary as authorities close in at the end of season three?",
     "answers": [
       "Maeby Fünke",
       "Buster Bluth",
@@ -2836,7 +2840,7 @@ const questions = [
     "id": "tv_27271",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "In which year did Netflix release the original fourth season?",
+    "question": "In Arrested Development, in which year did Netflix release the original fourth season?",
     "answers": [
       "2009",
       "2016",
@@ -2868,7 +2872,7 @@ const questions = [
     "id": "tv_27272",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "How many episodes were in the original character-focused cut of season four?",
+    "question": "In Arrested Development, how many episodes were in the original character-focused cut of season four?",
     "answers": [
       "15",
       "22",
@@ -2900,7 +2904,7 @@ const questions = [
     "id": "tv_27273",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What subtitle was given to the 2018 chronological remix of season four?",
+    "question": "In Arrested Development, what subtitle was given to the 2018 chronological remix of season four?",
     "answers": [
       "Return to Orange County",
       "Fateful Consequences",
@@ -2932,7 +2936,7 @@ const questions = [
     "id": "tv_27274",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "How many shorter episodes resulted from the re-edited season-four remix?",
+    "question": "In Arrested Development, how many shorter episodes resulted from the re-edited season-four remix?",
     "answers": [
       "16",
       "18",
@@ -2964,7 +2968,7 @@ const questions = [
     "id": "tv_27275",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What originally unusual structure distinguished the fourth season from the Fox run?",
+    "question": "In Arrested Development, what originally unusual structure distinguished the fourth season from the Fox run?",
     "answers": [
       "Every episode was filmed live",
       "It had no narrator",
@@ -2996,7 +3000,7 @@ const questions = [
     "id": "tv_27276",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What is the name of the Bluth family's May 4 celebration?",
+    "question": "In Arrested Development, what is the name of the Bluth family's May 4 celebration?",
     "answers": [
       "Cinco de Cuatro",
       "Cinco de Mayo",
@@ -3027,7 +3031,7 @@ const questions = [
     "id": "tv_27277",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actual May holiday was the Bluth family's Cinco de Cuatro celebration designed to precede?",
+    "question": "In Arrested Development, which actual May holiday was the Bluth family's Cinco de Cuatro celebration designed to precede?",
     "answers": [
       "Labour Day",
       "Cinco de Mayo",
@@ -3059,7 +3063,7 @@ const questions = [
     "id": "tv_27278",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What business is George Michael supposedly developing with Fakeblock?",
+    "question": "In Arrested Development, what business is George Michael supposedly developing with Fakeblock?",
     "answers": [
       "An online ticket agency",
       "A hotel chain",
@@ -3091,7 +3095,7 @@ const questions = [
     "id": "tv_27279",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What was Fakeblock originally intended to simulate before its purpose was exaggerated?",
+    "question": "In Arrested Development, what was Fakeblock originally intended to simulate before its purpose was exaggerated?",
     "answers": [
       "A video camera",
       "A chessboard",
@@ -3123,7 +3127,7 @@ const questions = [
     "id": "tv_27280",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which nickname does George Michael use while promoting Fakeblock?",
+    "question": "In Arrested Development, which nickname does George Michael use while promoting Fakeblock?",
     "answers": [
       "George Maharis",
       "George Wallace",
@@ -3155,7 +3159,7 @@ const questions = [
     "id": "tv_27281",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What is the nickname of George Michael's college roommate and Fakeblock collaborator?",
+    "question": "In Arrested Development, what is the nickname of George Michael's college roommate and Fakeblock collaborator?",
     "answers": [
       "T-Bone",
       "P-Hound",
@@ -3187,7 +3191,7 @@ const questions = [
     "id": "tv_27282",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actress plays Rebel Alley, a romantic interest of both Michael and George Michael?",
+    "question": "In Arrested Development, which actress plays Rebel Alley, a romantic interest of both Michael and George Michael?",
     "answers": [
       "Judy Greer",
       "Charlize Theron",
@@ -3219,7 +3223,7 @@ const questions = [
     "id": "tv_27283",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "To which famous film director is Rebel Alley related in the sitcom?",
+    "question": "In Arrested Development, to which famous film director is Rebel Alley related in the sitcom?",
     "answers": [
       "Steven Spielberg",
       "Martin Scorsese",
@@ -3251,7 +3255,7 @@ const questions = [
     "id": "tv_27284",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which two Bluth men unknowingly become involved with Rebel Alley?",
+    "question": "In Arrested Development, which two Bluth men unknowingly become involved with Rebel Alley?",
     "answers": [
       "Michael and George Michael",
       "Gob and Buster",
@@ -3283,7 +3287,7 @@ const questions = [
     "id": "tv_27285",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which politician played by Terry Crews features in the season-four plot?",
+    "question": "In Arrested Development, which politician played by Terry Crews features in the season-four plot?",
     "answers": [
       "Tony Wonder",
       "Herbert Love",
@@ -3315,7 +3319,7 @@ const questions = [
     "id": "tv_27286",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which family member becomes romantically involved with politician Herbert Love?",
+    "question": "In Arrested Development, which family member becomes romantically involved with politician Herbert Love?",
     "answers": [
       "Maeby Fünke",
       "Lucille Austero",
@@ -3347,7 +3351,7 @@ const questions = [
     "id": "tv_27287",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which actor plays Lindsay's eco-activist boyfriend Marky Bark?",
+    "question": "In Arrested Development, which actor plays Lindsay's eco-activist boyfriend Marky Bark?",
     "answers": [
       "Jason Sudeikis",
       "Terry Crews",
@@ -3379,7 +3383,7 @@ const questions = [
     "id": "tv_27288",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What unusual condition causes Marky Bark trouble recognising faces?",
+    "question": "In Arrested Development, what unusual condition causes Marky Bark trouble recognising faces?",
     "answers": [
       "Face blindness",
       "Colour blindness",
@@ -3411,7 +3415,7 @@ const questions = [
     "id": "tv_27289",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which character played by Maria Bamford becomes Tobias's new partner?",
+    "question": "In Arrested Development, which character played by Maria Bamford becomes Tobias's new partner?",
     "answers": [
       "Maggie Lizer",
       "DeBrie Bardeaux",
@@ -3443,7 +3447,7 @@ const questions = [
     "id": "tv_27290",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What superhero franchise do Tobias and DeBrie attempt to imitate on stage?",
+    "question": "In Arrested Development, what superhero franchise do Tobias and DeBrie attempt to imitate on stage?",
     "answers": [
       "The Avengers",
       "Justice League",
@@ -3475,7 +3479,7 @@ const questions = [
     "id": "tv_27291",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What level of ownership does Lucille Austero gain in the Bluth Company during season four?",
+    "question": "In Arrested Development, what level of ownership does Lucille Austero gain in the Bluth Company during season four?",
     "answers": [
       "A controlling stake",
       "A single symbolic share",
@@ -3507,7 +3511,7 @@ const questions = [
     "id": "tv_27292",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What happens to Lucille Austero during the Cinco de Cuatro celebrations?",
+    "question": "In Arrested Development, what happens to Lucille Austero during the Cinco de Cuatro celebrations?",
     "answers": [
       "She disappears",
       "She wins a television award",
@@ -3539,7 +3543,7 @@ const questions = [
     "id": "tv_27293",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What is the renamed Bluth Company called after Lucille Austero gains control?",
+    "question": "In Arrested Development, what is the renamed Bluth Company called after Lucille Austero gains control?",
     "answers": [
       "Banana Ventures",
       "Austero Bluth Company",
@@ -3571,7 +3575,7 @@ const questions = [
     "id": "tv_27294",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which two brothers scheme about a wall at the US–Mexico border?",
+    "question": "In Arrested Development, which two brothers scheme about a wall at the US–Mexico border?",
     "answers": [
       "Buster and Tobias",
       "George Michael and Gob",
@@ -3635,7 +3639,7 @@ const questions = [
     "id": "tv_27296",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "How was the fifth season originally released on Netflix?",
+    "question": "In Arrested Development, how was the fifth season originally released on Netflix?",
     "answers": [
       "In two groups of eight episodes",
       "As one 22-episode weekly series",
@@ -3699,7 +3703,7 @@ const questions = [
     "id": "tv_27298",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which family member is accused of murdering Lucille Austero?",
+    "question": "In Arrested Development, which family member is accused of murdering Lucille Austero?",
     "answers": [
       "Tobias Fünke",
       "Oscar Bluth",
@@ -3731,7 +3735,7 @@ const questions = [
     "id": "tv_27299",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What alias does Maeby adopt when pretending to be an elderly resident?",
+    "question": "In Arrested Development, what alias does Maeby adopt when pretending to be an elderly resident?",
     "answers": [
       "Eunice",
       "Ethel",
@@ -3763,7 +3767,7 @@ const questions = [
     "id": "tv_27300",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "In what kind of residence does Maeby maintain her elderly-woman disguise?",
+    "question": "In Arrested Development, in what kind of residence does Maeby maintain her elderly-woman disguise?",
     "answers": [
       "A retirement community",
       "A school boarding house",
@@ -3795,7 +3799,7 @@ const questions = [
     "id": "tv_27301",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which Bluth business rival becomes romantically interested in Maeby's elderly alter ego?",
+    "question": "In Arrested Development, which Bluth business rival becomes romantically interested in Maeby's elderly alter ego?",
     "answers": [
       "Wayne Jarvis",
       "Stan Sitwell",
@@ -3827,7 +3831,7 @@ const questions = [
     "id": "tv_27302",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which member of the family runs for political office during the fifth season?",
+    "question": "In Arrested Development, which member of the family runs for political office during the fifth season?",
     "answers": [
       "Michael Bluth",
       "George Michael",
@@ -3859,7 +3863,7 @@ const questions = [
     "id": "tv_27303",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What final revelation changes Lindsay's assumed relationship to Lucille Bluth?",
+    "question": "In Arrested Development, what final revelation changes Lindsay's assumed relationship to Lucille Bluth?",
     "answers": [
       "They are twins",
       "They are cousins",
@@ -3891,7 +3895,7 @@ const questions = [
     "id": "tv_27304",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which member of the Bluth family admits responsibility for Lucille Austero's death in the finale?",
+    "question": "In Arrested Development, which member of the Bluth family admits responsibility for Lucille Austero's death in the finale?",
     "answers": [
       "Buster Bluth",
       "Michael Bluth",
@@ -3923,7 +3927,7 @@ const questions = [
     "id": "tv_27305",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Where is Lucille Austero's body uncovered at the end of the series?",
+    "question": "In Arrested Development, where is Lucille Austero's body uncovered at the end of the series?",
     "answers": [
       "In a car boot",
       "Inside a cement wall",
@@ -3955,7 +3959,7 @@ const questions = [
     "id": "tv_27306",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which Bluth magician has been using the wall for a major illusion?",
+    "question": "In Arrested Development, which Bluth magician has been using the wall for a major illusion?",
     "answers": [
       "Tobias Fünke",
       "Oscar Bluth",
@@ -3987,7 +3991,7 @@ const questions = [
     "id": "tv_27307",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Who was the victim of Buster's earlier childhood killing revealed in the finale?",
+    "question": "In Arrested Development, who was the victim of Buster's earlier childhood killing revealed in the finale?",
     "answers": [
       "His uncle Oscar",
       "George Sr.'s lawyer",
@@ -4051,7 +4055,7 @@ const questions = [
     "id": "tv_27309",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "To which country's government does Michael sell Fakeblock in the last episode?",
+    "question": "In Arrested Development, to which country's government does Michael sell Fakeblock in the last episode?",
     "answers": [
       "Mexico",
       "China",
@@ -4083,7 +4087,7 @@ const questions = [
     "id": "tv_27310",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "What construction project is being unveiled during the concluding family gathering?",
+    "question": "In Arrested Development, what construction project is being unveiled during the concluding family gathering?",
     "answers": [
       "A studio soundstage",
       "A floating casino",
@@ -4115,7 +4119,7 @@ const questions = [
     "id": "tv_27311",
     "category": "TV",
     "topic": "Arrested Development",
-    "question": "Which illusionist becomes romantically involved with Gob during the revival years?",
+    "question": "In Arrested Development, which illusionist becomes romantically involved with Gob during the revival years?",
     "answers": [
       "Barry Zuckerkorn",
       "Steve Holt",
@@ -4144,9 +4148,1129 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==129||new Set(questions.map(q=>q.id)).size!==questions.length||
+// 22 Nov 2026 story/characters/awards audit additions.
+const AUDIT_ORIGINAL_COUNT=129;
+const AUDIT_FIRST_ID=42884;
+const auditQuestions=[
+  {
+    "id": "tv_42884",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which Colombian soap actress became the romantic interest of both Gob and Michael in season one?",
+    "answers": [
+      "Sally Sitwell",
+      "Marta Estrella",
+      "Maggie Lizer",
+      "Lucille Austero"
+    ],
+    "correctAnswer": "Marta Estrella",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Marta Estrella",
+      "Colombian Soap Actress",
+      "Gob Bluth",
+      "Michael Bluth",
+      "Season One",
+      "Love Triangle"
+    ]
+  },
+  {
+    "id": "tv_42885",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, why did Marta Estrella ultimately leave both Gob and Michael?",
+    "answers": [
+      "She witnessed the brothers fighting over her",
+      "She discovered they were cousins",
+      "She moved to Iraq",
+      "She won a scholarship overseas"
+    ],
+    "correctAnswer": "She witnessed the brothers fighting over her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Marta Estrella",
+      "Gob Bluth",
+      "Michael Bluth",
+      "Love Triangle",
+      "Romantic Split",
+      "Season One"
+    ]
+  },
+  {
+    "id": "tv_42886",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which actress played Marta Estrella during most of her season-one appearances?",
+    "answers": [
+      "Isla Fisher",
+      "Charlize Theron",
+      "Julia Louis Dreyfus",
+      "Patricia Velásquez"
+    ],
+    "correctAnswer": "Patricia Velásquez",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Patricia Velasquez",
+      "Marta Estrella",
+      "Season One",
+      "Recasting",
+      "Colombian Actress",
+      "Guest Star"
+    ]
+  },
+  {
+    "id": "tv_42887",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which private investigator repeatedly delighted Lucille Bluth with elaborate disguises?",
+    "answers": [
+      "Wayne Jarvis",
+      "Barry Zuckerkorn",
+      "Gene Parmesan",
+      "John Beard"
+    ],
+    "correctAnswer": "Gene Parmesan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Gene Parmesan",
+      "Lucille Bluth",
+      "Private Detective",
+      "Disguises",
+      "Running Gag",
+      "Season Two"
+    ]
+  },
+  {
+    "id": "tv_42888",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which actor played Lucille Bluth's disguised detective Gene Parmesan?",
+    "answers": [
+      "Bob Einstein",
+      "Martin Mull",
+      "Henry Winkler",
+      "Scott Baio"
+    ],
+    "correctAnswer": "Martin Mull",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Martin Mull",
+      "Gene Parmesan",
+      "Private Detective",
+      "Guest Actor",
+      "Season Two",
+      "Cast"
+    ]
+  },
+  {
+    "id": "tv_42889",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, what word did lawyer Wayne Jarvis regularly use to describe himself?",
+    "answers": [
+      "Professional",
+      "Mysterious",
+      "Unstoppable",
+      "Secretive"
+    ],
+    "correctAnswer": "Professional",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Wayne Jarvis",
+      "Lawyer",
+      "Professional",
+      "Catchphrase",
+      "Legal Story",
+      "Family Troubles"
+    ]
+  },
+  {
+    "id": "tv_42890",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, who portrayed the Bluth family's lawyer and later prosecutor Wayne Jarvis?",
+    "answers": [
+      "Scott Baio",
+      "Henry Winkler",
+      "Ed Begley Jr",
+      "John Michael Higgins"
+    ],
+    "correctAnswer": "John Michael Higgins",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "John Michael Higgins",
+      "Wayne Jarvis",
+      "Attorney",
+      "Prosecutor",
+      "Fox Seasons",
+      "Cast"
+    ]
+  },
+  {
+    "id": "tv_42891",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which Hollywood actor played himself as Tobias Fünke's thrifty acting teacher?",
+    "answers": [
+      "Sylvester Stallone",
+      "Martin Mull",
+      "Carl Weathers",
+      "Ron Howard"
+    ],
+    "correctAnswer": "Carl Weathers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Carl Weathers",
+      "Tobias Funke",
+      "Acting Lessons",
+      "Self Portrayal",
+      "Guest Actor",
+      "Season One"
+    ]
+  },
+  {
+    "id": "tv_42892",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, what meal was Carl Weathers especially keen to prepare from leftover food?",
+    "answers": [
+      "A soufflé",
+      "A stew",
+      "A pizza",
+      "A fruit salad"
+    ],
+    "correctAnswer": "A stew",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Carl Weathers",
+      "Food Scraps",
+      "Stew",
+      "Frugality",
+      "Tobias Funke",
+      "Recurring Joke"
+    ]
+  },
+  {
+    "id": "tv_42893",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which nickname was given to the doctor whose extremely literal statements misled the Bluths?",
+    "answers": [
+      "The Literal Doctor",
+      "The Forgetful Surgeon",
+      "The Singing Physician",
+      "The Silent Consultant"
+    ],
+    "correctAnswer": "The Literal Doctor",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Doctor Fishman",
+      "Literal Doctor",
+      "Hospital",
+      "Buster Bluth",
+      "Misleading News",
+      "Recurring Character"
+    ]
+  },
+  {
+    "id": "tv_42894",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which actor portrayed the Bluths' literal-minded Dr Fishman?",
+    "answers": [
+      "Martin Mull",
+      "Bob Einstein",
+      "Tony Hale",
+      "Ian Roberts"
+    ],
+    "correctAnswer": "Ian Roberts",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Ian Roberts",
+      "Dr Fishman",
+      "Literal Doctor",
+      "Hospital",
+      "Cast",
+      "Guest Role"
+    ]
+  },
+  {
+    "id": "tv_42895",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, what is the name of Gob Bluth's foul-mouthed ventriloquist puppet?",
+    "answers": [
+      "Mr Bananagrabber",
+      "Mr F",
+      "Franklin Delano Bluth",
+      "Steve Holt"
+    ],
+    "correctAnswer": "Franklin Delano Bluth",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Franklin Delano Bluth",
+      "Gob Bluth",
+      "Ventriloquist Puppet",
+      "Running Gag",
+      "Season Two",
+      "Magic"
+    ]
+  },
+  {
+    "id": "tv_42896",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, what happened to Franklin the puppet after a laundry mishap?",
+    "answers": [
+      "He lost an arm",
+      "He was bleached white",
+      "He caught fire on stage",
+      "He was buried in the garden"
+    ],
+    "correctAnswer": "He was bleached white",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Franklin Delano Bluth",
+      "Laundry Accident",
+      "Bleached Puppet",
+      "Gob Bluth",
+      "Righteous Brothers",
+      "Season Two"
+    ]
+  },
+  {
+    "id": "tv_42897",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which Bluth family member invented the cartoon banana thief Mr Bananagrabber?",
+    "answers": [
+      "Gob Bluth",
+      "Michael Bluth",
+      "Buster Bluth",
+      "George Michael Bluth"
+    ],
+    "correctAnswer": "Gob Bluth",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Mr Bananagrabber",
+      "Gob Bluth",
+      "Animated Character",
+      "Banana Stand",
+      "Running Gag",
+      "Season One"
+    ]
+  },
+  {
+    "id": "tv_42898",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, to which brother did Gob give the animation rights for Mr Bananagrabber?",
+    "answers": [
+      "Oscar Bluth",
+      "Buster Bluth",
+      "George Sr",
+      "Michael Bluth"
+    ],
+    "correctAnswer": "Michael Bluth",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Mr Bananagrabber",
+      "Animation Rights",
+      "Gob Bluth",
+      "Michael Bluth",
+      "Family Business",
+      "Commercial"
+    ]
+  },
+  {
+    "id": "tv_42899",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, what did Gob call the pills he used to erase embarrassing memories?",
+    "answers": [
+      "Remember-me-laters",
+      "Easy sleepers",
+      "Forget-me-nows",
+      "Dream catchers"
+    ],
+    "correctAnswer": "Forget-me-nows",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Gob Bluth",
+      "Forget Me Nows",
+      "Pills",
+      "Memory Loss",
+      "Running Gag",
+      "Season Three"
+    ]
+  },
+  {
+    "id": "tv_42900",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which daughter of Stan Sitwell briefly dated Michael Bluth?",
+    "answers": [
+      "Maggie Lizer",
+      "Sally Sitwell",
+      "Ann Veal",
+      "Rebel Alley"
+    ],
+    "correctAnswer": "Sally Sitwell",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Sally Sitwell",
+      "Stan Sitwell",
+      "Michael Bluth",
+      "Romance",
+      "Season Two",
+      "Business Rivals"
+    ]
+  },
+  {
+    "id": "tv_42901",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, who served as George Sr.'s remote-controlled stand-in during house arrest?",
+    "answers": [
+      "Larry Middleman",
+      "Gene Parmesan",
+      "Wayne Jarvis",
+      "Tony Wonder"
+    ],
+    "correctAnswer": "Larry Middleman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Larry Middleman",
+      "Surrogate",
+      "George Sr",
+      "House Arrest",
+      "Remote Control",
+      "Season Three"
+    ]
+  },
+  {
+    "id": "tv_42902",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which comedian played George Sr.'s professional surrogate Larry Middleman?",
+    "answers": [
+      "Martin Mull",
+      "Carl Weathers",
+      "John Michael Higgins",
+      "Bob Einstein"
+    ],
+    "correctAnswer": "Bob Einstein",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Bob Einstein",
+      "Larry Middleman",
+      "Surrogate",
+      "Guest Cast",
+      "George Sr",
+      "Season Three"
+    ]
+  },
+  {
+    "id": "tv_42903",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, who was the disastrous CIA informant nicknamed Mr F during the British-investor storyline?",
+    "answers": [
+      "Rita Leeds",
+      "Trevor Leeds",
+      "Tobias Fünke",
+      "Gob Bluth"
+    ],
+    "correctAnswer": "Tobias Fünke",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Mr F",
+      "Tobias Funke",
+      "CIA Informant",
+      "Wee Britain",
+      "Season Three",
+      "Spy Confusion"
+    ]
+  },
+  {
+    "id": "tv_42904",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which miniature British-themed neighbourhood was owned by Michael's girlfriend Rita Leeds?",
+    "answers": [
+      "Little London",
+      "Wee Britain",
+      "Tiny Manchester",
+      "New Oxford"
+    ],
+    "correctAnswer": "Wee Britain",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Wee Britain",
+      "Rita Leeds",
+      "Michael Bluth",
+      "Fictional Neighbourhood",
+      "Season Three",
+      "Property"
+    ]
+  },
+  {
+    "id": "tv_42905",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which US intelligence service was ultimately revealed to have used George Sr. to help monitor Iraq?",
+    "answers": [
+      "CIA",
+      "FBI",
+      "Secret Service",
+      "NSA"
+    ],
+    "correctAnswer": "CIA",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "George Sr",
+      "CIA",
+      "Iraq Model Homes",
+      "Spy Operation",
+      "Season Three",
+      "Corporate Scandal"
+    ]
+  },
+  {
+    "id": "tv_42906",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, what type of sham business did George Sr. operate near the Mexican border in season four?",
+    "answers": [
+      "A frozen-yoghurt franchise",
+      "An amusement park",
+      "A detective school",
+      "A sweat lodge for wealthy executives"
+    ],
+    "correctAnswer": "A sweat lodge for wealthy executives",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "George Sr",
+      "Sweat Lodge",
+      "Mexican Border",
+      "Wealthy Executives",
+      "Season Four",
+      "Business Scheme"
+    ]
+  },
+  {
+    "id": "tv_42907",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, how did Maeby Fünke extend her school life well into the Netflix revival?",
+    "answers": [
+      "She enrolled in medical school",
+      "She joined a foreign exchange course",
+      "She deliberately remained in high school",
+      "She taught drama classes"
+    ],
+    "correctAnswer": "She deliberately remained in high school",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Maeby Funke",
+      "Repeated School Years",
+      "High School",
+      "Netflix Revival",
+      "Season Four",
+      "Family Neglect"
+    ]
+  },
+  {
+    "id": "tv_42908",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, what video evidence linked Buster Bluth to Lucille Austero's disappearance in season five?",
+    "answers": [
+      "A recording from the banana stand",
+      "Footage from a weather report",
+      "A wedding livestream",
+      "An old home video from Mexico"
+    ],
+    "correctAnswer": "Footage from a weather report",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Buster Bluth",
+      "Weather Report",
+      "Murder Investigation",
+      "Evidence",
+      "Season Five",
+      "Lucille Austero"
+    ]
+  },
+  {
+    "id": "tv_42909",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, what was the name of the legal team hired to defend Buster in season five?",
+    "answers": [
+      "The Guilty Guys",
+      "The Legal Eagles",
+      "The Bluth Brothers",
+      "The Trial Masters"
+    ],
+    "correctAnswer": "The Guilty Guys",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Buster Bluth",
+      "Guilty Guys",
+      "Defence Lawyers",
+      "Season Five",
+      "Murder Trial",
+      "Courtroom"
+    ]
+  },
+  {
+    "id": "tv_42910",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which prosecutor opposed Buster Bluth in the final-season murder proceedings?",
+    "answers": [
+      "Maggie Lizer",
+      "Sally Sitwell",
+      "Kitty Sanchez",
+      "Lottie Dottie"
+    ],
+    "correctAnswer": "Lottie Dottie",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Lottie Dottie",
+      "Prosecutor",
+      "Buster Bluth",
+      "Season Five",
+      "Murder Trial",
+      "Courtroom"
+    ]
+  },
+  {
+    "id": "tv_42911",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which directors shared the 2004 Emmy for directing Arrested Development's pilot?",
+    "answers": [
+      "Mitchell Hurwitz and Ron Howard",
+      "David Cross and Tony Hale",
+      "Anthony and Joe Russo",
+      "David Nevins and Brian Grazer"
+    ],
+    "correctAnswer": "Anthony and Joe Russo",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2004 Emmys",
+      "Russo Brothers",
+      "Pilot Episode",
+      "Comedy Directing",
+      "Award Win",
+      "Television Academy"
+    ]
+  },
+  {
+    "id": "tv_42912",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which two casting directors won a 2004 Emmy for Arrested Development?",
+    "answers": [
+      "Allison Jones and Linda Lowy",
+      "Deborah Barylski and Geraldine Leder",
+      "Francine Maisler and Nina Gold",
+      "June Goss and Carmen Cuba"
+    ],
+    "correctAnswer": "Deborah Barylski and Geraldine Leder",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2004 Emmy",
+      "Deborah Barylski",
+      "Geraldine Leder",
+      "Outstanding Casting",
+      "Award Win"
+    ]
+  },
+  {
+    "id": "tv_42913",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which Arrested Development editor won an Emmy for single-camera comedy editing in 2004?",
+    "answers": [
+      "E Lee Haxall",
+      "Stuart Bass",
+      "Kabir Akhtar",
+      "Richard Candib"
+    ],
+    "correctAnswer": "E Lee Haxall",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2004 Emmy",
+      "E Lee Haxall",
+      "Single Camera Editing",
+      "Award Win",
+      "Postproduction"
+    ]
+  },
+  {
+    "id": "tv_42914",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, who won the 2004 comedy writing Emmy for the Arrested Development pilot?",
+    "answers": [
+      "Ron Howard",
+      "Jim Vallely",
+      "Chuck Tatham",
+      "Mitchell Hurwitz"
+    ],
+    "correctAnswer": "Mitchell Hurwitz",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2004 Emmy",
+      "Mitchell Hurwitz",
+      "Pilot Script",
+      "Comedy Writing",
+      "Award Win",
+      "Series Creator"
+    ]
+  },
+  {
+    "id": "tv_42915",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which writing duo won a 2005 Emmy for Arrested Development?",
+    "answers": [
+      "Ron Howard and Brian Grazer",
+      "Anthony Russo and Joe Russo",
+      "Mitchell Hurwitz and Jim Vallely",
+      "John Amodeo and Dean Lorey"
+    ],
+    "correctAnswer": "Mitchell Hurwitz and Jim Vallely",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2005 Emmy",
+      "Mitchell Hurwitz",
+      "Jim Vallely",
+      "Comedy Writing",
+      "Award Win",
+      "Season Two"
+    ]
+  },
+  {
+    "id": "tv_42916",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which Arrested Development actor received a supporting-comedy-actor Emmy nomination in 2006?",
+    "answers": [
+      "Michael Cera",
+      "Will Arnett",
+      "Jason Bateman",
+      "Tony Hale"
+    ],
+    "correctAnswer": "Will Arnett",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2006 Emmy",
+      "Will Arnett",
+      "Gob Bluth",
+      "Supporting Actor",
+      "Nomination",
+      "Fox Run"
+    ]
+  },
+  {
+    "id": "tv_42917",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which actress received a supporting-comedy-actress Emmy nomination in 2005 for Arrested Development?",
+    "answers": [
+      "Jessica Walter",
+      "Portia de Rossi",
+      "Alia Shawkat",
+      "Liza Minnelli"
+    ],
+    "correctAnswer": "Jessica Walter",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2005 Emmy",
+      "Jessica Walter",
+      "Lucille Bluth",
+      "Supporting Actress",
+      "Nomination",
+      "Fox Run"
+    ]
+  },
+  {
+    "id": "tv_42918",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, which composer was Emmy-nominated for his score to a Netflix-era Arrested Development episode?",
+    "answers": [
+      "Ramin Djawadi",
+      "Thomas Newman",
+      "Hans Zimmer",
+      "David Schwartz"
+    ],
+    "correctAnswer": "David Schwartz",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "2013 Emmy",
+      "David Schwartz",
+      "Flight Of The Phoenix",
+      "Music Composition",
+      "Netflix Revival",
+      "Nomination"
+    ]
+  },
+  {
+    "id": "tv_42919",
+    "category": "TV",
+    "topic": "Arrested Development",
+    "question": "In Arrested Development, how many Primetime Emmys did Arrested Development win overall according to the Television Academy?",
+    "answers": [
+      "Three",
+      "Nine",
+      "Six",
+      "Twelve"
+    ],
+    "correctAnswer": "Six",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Arrested Development",
+      "Arrested Development (Fox and Netflix)",
+      "Bluth Family",
+      "Comedy Series",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "Six Emmy Wins",
+      "Television Academy",
+      "Award History",
+      "Fox Run",
+      "Emmy Totals",
+      "Comedy Honours"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==165||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+String(27183+i)||q.topic!=='Arrested Development'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(27183+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.topic!=='Arrested Development'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
 q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length<13||
 new Set(q.tags).size!==q.tags.length||!q.dailyEligible||!['Easy','Medium','Hard'].includes(q.difficulty)))
