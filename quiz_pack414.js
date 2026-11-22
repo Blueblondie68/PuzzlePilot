@@ -116,6 +116,55 @@
    `Which popular American comedian made a hospital patient cameo in All My Children during the 1970s?|Carol Burnett|Lucille Ball|Phyllis Diller|Joan Rivers|Medium|Carol Burnett|celebrity guest|1976|hospital patient|cameo|ABC|comedy performer`
  ];
 
+
+ // Story and character gap audit, 1970–1979; original IDs retained.
+ const ORIGINAL_COUNT = rows.length;
+ const AUDIT_NEW_FIRST_ID = 41864;
+ rows.push(
+   `In All My Children, what social occasion did Phoebe Tyler ask Nick Davis to help arrange early in the series?|A charity ball|A society wedding|A garden exhibition|A tennis tournament|Medium|Phoebe Tyler|Nick Davis|society event|1970|charity ball|early Pine Valley|Tyler social life`,
+   `In All My Children, which nurse and widow became romantically involved with Dr Joe Martin after Ted Brent's death?|Ruth Brent|Mary Kennicott|Nancy Grant|Margo Flax|Easy|Ruth Brent|Joe Martin|widowed nurse|1971|hospital romance|Ted Brent death|Martin marriage`,
+   `In All My Children, whom did Phoebe Tyler favour as a suitor for her daughter Ann instead of Nick Davis?|Paul Martin|Jeff Martin|Tom Cudahy|Frank Grant|Medium|Phoebe Tyler|Ann Tyler|Paul Martin|1971|family disapproval|suitor preference|Nick Davis`,
+   `In All My Children, what mistaken belief led Nick Davis to end his marriage to Ann Tyler?|He believed he was infertile|He believed he was already married|He thought Ann had left Pine Valley|He thought Ann was his cousin|Medium|Nick Davis|Ann Tyler|presumed infertility|1972|marriage breakdown|family plans|medical misunderstanding`,
+   `In All My Children, which Martin family lawyer did Ann Tyler marry after her separation from Nick Davis?|Paul Martin|Jeff Martin|Joe Martin|David Thornton|Medium|Ann Tyler|Paul Martin|Nick Davis divorce|1973|second marriage|Martin lawyer|Tyler family`,
+   `In All My Children, which young dance teacher became involved with Nick Davis after his split from Ann Tyler?|Kitty Shea|Donna Beck|Brooke English|Kelly Cole|Medium|Nick Davis|Kitty Shea|dance instruction|1972|romantic rebound|Ann Tyler|early relationship`,
+   `In All My Children, what did Kitty Shea mistakenly believe after losing the baby she was expecting with Nick Davis?|That she was still pregnant|That she had given birth to twins|That Nick was the baby's doctor|That the baby had been adopted|Hard|Kitty Shea|Nick Davis|miscarriage|1973|psychological crisis|false pregnancy belief|family tragedy`,
+   `In All My Children, what sort of accident left Ann Tyler seriously injured after travelling with Nick Davis?|A road collision|An aircraft crash|A riding accident|A boating accident|Medium|Ann Tyler|Nick Davis|car crash|1973|hospital recovery|relationship turning point|road journey`,
+   `In All My Children, which serviceman returned alive after being reported missing in Vietnam, upsetting Tara Tyler's marriage?|Phil Brent|Chuck Tyler|Paul Martin|Mark Dalton|Easy|Phil Brent|Vietnam War|Tara Martin|1973|return from service|missing in action|marital triangle`,
+   `In All My Children, which of Tara Martin's former sweethearts became Erica Kane's second husband?|Phil Brent|Chuck Tyler|Benny Sago|Dan Kennicott|Medium|Erica Kane|Phil Brent|Tara Martin|1975|second marriage|romantic triangle|soap relationships`,
+   `In All My Children, where was Erica Kane treated during her breakdown after losing Phil Brent's baby?|A psychiatric hospital|A rehabilitation prison|A maternity ward|A military hospital|Medium|Erica Kane|Phil Brent|miscarriage aftermath|1975|mental health treatment|hospitalisation|marital breakdown`,
+   `In All My Children, what secret about Kitty Shea's first marriage gave Hal Short leverage over her?|Her divorce had never been finalised|Her husband had inherited the Boutique|She had adopted an unknown child|She had married under a false surname|Hard|Kitty Shea|Hal Short|first marriage|1975|bigamy threat|drug ring blackmail|Boutique scandal`,
+   `In All My Children, which bride was imprisoned because of her connection to the drug operation at Ann Tyler's Boutique?|Kitty Shea|Erica Kane|Tara Martin|Donna Beck|Medium|Kitty Shea|Boutique|Hal Short|1976|drug operation|arrest|Tyler marriage trouble`,
+   `In All My Children, which couple finally married legally after each obtained a divorce from a different spouse?|Phil Brent and Tara Martin|Joe Martin and Ruth Brent|Linc Tyler and Kitty Shea|Paul Martin and Margo Flax|Medium|Phil Brent|Tara Martin|1976|second wedding|Chuck Tyler divorce|Erica Kane divorce|long-running romance`,
+   `In All My Children, who became the legal guardian of the teenage Donna Beck after helping her escape exploitation?|Chuck Tyler|Frank Grant|Linc Tyler|Paul Martin|Medium|Donna Beck|Chuck Tyler|legal guardianship|1976|hospital recovery|teenage rescue|Tyrone storyline`,
+   `In All My Children, which former military doctor developed romantic feelings for Ruth Martin during trouble with Joe?|David Thornton|Cliff Warner|Frank Grant|Tom Cudahy|Medium|Ruth Martin|David Thornton|Joe Martin|1976|marital crisis|Vietnam experience|medical career`,
+   `In All My Children, who hired Myrtle Lum to pose as the long-lost mother of Kitty Shea Tyler?|Phoebe Tyler|Mona Kane|Margo Flax|Ellen Shepherd|Medium|Myrtle Lum|Kitty Shea|Phoebe Tyler|1976|false mother|family interference|maternal bond`,
+   `In All My Children, who bought the Boutique from Myrtle Lum after Kitty Tyler's death?|Ellen Shepherd|Brooke English|Margo Flax|Donna Beck|Hard|Ellen Shepherd|Myrtle Lum|the Boutique|1977|business sale|Kitty Tyler death|Pine Valley shops`,
+   `In All My Children, which physician was introduced as the soap's first major Black character in the 1970s?|Frank Grant|Joe Martin|Cliff Warner|David Thornton|Medium|Frank Grant|1972 debut|Black leading character|Pine Valley Hospital|medical career|cast milestone|early storylines`,
+   `In All My Children, what was the name of Dr Frank Grant's first wife, who arrived in Pine Valley in 1973?|Nancy Grant|Caroline Murray|Ellen Shepherd|Mary Kennicott|Medium|Frank Grant|Nancy Grant|1973 introduction|first marriage|hospital family|Black central characters|Pine Valley relationships`,
+   `In All My Children, which woman married Frank Grant after his marriage to Nancy broke down?|Caroline Murray|Ellen Shepherd|Mona Kane|Estelle LaTour|Medium|Frank Grant|Caroline Murray|Nancy Grant divorce|1970s marriage|romantic triangle|Grant family|marital change`,
+   `In All My Children, who was the biological father of Nancy Grant's son Carl Blair Jr?|Frank Grant|Carl Blair Sr|David Thornton|Paul Martin|Hard|Nancy Grant|Frank Grant|Carl Blair Jr|1978 birth|hidden paternity|Caroline Murray|Grant family`,
+   `In All My Children, which man married Nancy Grant before his death and gave his surname to her son?|Carl Blair|Frank Grant|Mark Dalton|Benny Sago|Hard|Nancy Grant|Carl Blair|1978|deathbed marriage|child's surname|hidden paternity|family cover story`,
+   `In All My Children, which pimp was behind Donna Tyler's unwanted sterilisation?|Billy Clyde Tuggle|Tyrone|Hal Short|Eddie Dorrance|Medium|Donna Beck Tyler|Billy Clyde Tuggle|forced sterilisation|1970s|medical abuse|Chuck Tyler marriage|fertility storyline`,
+   `In All My Children, what procedure did Donna Tyler undergo in an effort to have a child with Chuck?|Surgery to reverse sterilisation|A heart transplant|Kidney dialysis|A bone-marrow transplant|Medium|Donna Tyler|Chuck Tyler|sterilisation reversal|1978|fertility treatment|family planning|medical procedure`,
+   `In All My Children, which former chauffeur exposed Phoebe Tyler's pretence that she still needed a wheelchair?|Benny Sago|Mark Dalton|Dan Kennicott|Jason Maxwell|Medium|Phoebe Tyler|Benny Sago|wheelchair deception|1970s|false paralysis|chauffeur|Charles Tyler sympathy`,
+   `In All My Children, what kind of collision caused Donna Tyler's amnesia and renewed fear of her past?|Her car was struck by a train|She fell from a horse|A plane made an emergency landing|She crashed a motorboat|Hard|Donna Tyler|amnesia|railway crossing|late 1970s|train collision|Billy Clyde Tuggle|traumatic memory`,
+   `In All My Children, which ex-convict did Nick Davis employ at his restaurant after Erica Kane changed jobs?|Claudette Montgomery|Myrtle Lum|Ellen Shepherd|Caroline Murray|Medium|Nick Davis|Claudette Montgomery|the Chateau|1970s|former prisoner|restaurant work|Erica Kane rivalry`,
+   `In All My Children, what substance did Erica Kane try to plant in Claudette Montgomery's purse to violate her parole?|Marijuana|Cocaine|Heroin|Alcohol|Hard|Erica Kane|Claudette Montgomery|parole threat|late 1970s|planted evidence|Nick Davis rivalry|police intervention`,
+   `In All My Children, what was singer Kelly Cole's family relationship to the late Kitty Tyler?|They were twin sisters|They were first cousins|Kelly was Kitty's stepmother|They were unrelated lookalikes|Medium|Kelly Cole|Kitty Shea Tyler|twin sisters|1970s|family revelation|Lincoln Tyler|music storyline`,
+   `In All My Children, at which restaurant did Kelly Cole perform as a singer in the late 1970s?|The Chateau|The Goalpost|The Valley Inn|The Boutique|Medium|Kelly Cole|the Chateau|Nick Davis|1979|live performances|Pine Valley music|restaurant entertainment`,
+   `In All My Children, what addiction gave manager Eddie Dorrance power over singer Kelly Cole?|Pills|Gambling|Alcohol|Nicotine|Medium|Kelly Cole|Eddie Dorrance|medication dependency|1979|controlling manager|singer exploitation|murder mystery`,
+   `In All My Children, whose fingerprints implicated her in the death of music manager Eddie Dorrance?|Kelly Cole|Myrtle Fargate|Phoebe Tyler|Donna Beck|Hard|Eddie Dorrance|Kelly Cole|murder weapon|1979|fingerprint evidence|singer suspect|crime investigation`,
+   `In All My Children, what was the first name of Ellen Shepherd's daughter, who became involved in a love triangle with Brooke English?|Devon|Bonnie|Nina|Claudette|Medium|Ellen Shepherd|Devon Shepherd|Brooke English|late 1970s|young adult drama|Dan Kennicott|family relationships`,
+   `In All My Children, which young man was the father of Devon Shepherd's baby?|Wally McFadden|Dan Kennicott|Mark Dalton|Benny Sago|Hard|Devon Shepherd|Wally McFadden|late 1970s|unplanned pregnancy|Dan Kennicott rivalry|parenthood|Shepherd family`,
+   `In All My Children, what name did Devon Shepherd give to her baby daughter?|Bonnie|Tara|Erica|Kelly|Hard|Devon Shepherd|Bonnie McFadden|Wally McFadden|late 1970s|childbirth|adoption reconsidered|young parenthood`,
+   `In All My Children, which new business did Erica Kane persuade husband Tom Cudahy to help establish?|A disco called Erica's|A new modelling school|A ballet company|A radio station|Medium|Erica Kane|Tom Cudahy|Erica's disco|1979|new business|marital enterprise|nightlife`,
+   `In All My Children, what worried Tad Martin when Ruth became pregnant with Joey?|That his adoptive parents would love the baby more|That he would have to join the army|That he would have to leave Pine Valley for college|That his father would lose his medical licence|Medium|Tad Gardner Martin|Ruth Martin|Joey Martin|1979 pregnancy|adoption anxiety|family reassurance|Martin household`,
+   `In All My Children, which older Martin relative reassured Ruth during her unexpected late pregnancy?|Kate Martin|Mona Kane|Phoebe Tyler|Myrtle Fargate|Medium|Kate Martin|Ruth Martin|Joe Martin mother|1979 pregnancy|family support|Joey birth|Martin matriarch`,
+   `In All My Children, which charming con man began courting Phoebe Tyler during 1979?|Langley Wallingford|Jason Maxwell|Palmer Cortlandt|Nick Davis|Medium|Langley Wallingford|Phoebe Tyler|1979 introduction|con artist|romantic plot|false scholar|Tyler family`,
+   `In All My Children, which actor portrayed the newly arrived Langley Wallingford in 1979?|Louis Edmonds|Hugh Franklin|James Mitchell|Peter White|Medium|Louis Edmonds|Langley Wallingford|1979 debut|cast member|Phoebe Tyler romance|actor identification|ABC soap`,
+   `In All My Children, which woman eventually became Charles Tyler's wife after his marriage to Phoebe ended?|Mona Kane|Margo Flax|Ellen Shepherd|Nancy Grant|Medium|Charles Tyler|Mona Kane|Phoebe Tyler divorce|1970s|new marriage|Erica Kane mother|Tyler family`,
+ );
+
  const questions = rows.map((row, index) => {
    const parts = row.split('|').map(part => part.trim());
    if (parts.length !== 13 || parts.some(part => !part)) {
@@ -138,7 +187,7 @@
      throw new Error(`Pack 414: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
    }
    return {
-     id: `tv_${FIRST_ID + index}`,
+     id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT}`,
      category: 'Television',
      question,
      answers,
