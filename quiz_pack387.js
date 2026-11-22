@@ -166,7 +166,7 @@ function addFacts(block, section) {
     const question = `In ${PROGRAMME}, ${stem[0].toLowerCase()}${stem.slice(1)}`;
     const tags = [...new Map([
       'Television', 'British Television', 'BBC One', 'Mystery Drama', '1998',
-      PROGRAMME, section, correctAnswer, ...specificTags
+      PROGRAMME, 'Programme: '+PROGRAMME, section, correctAnswer, ...specificTags
     ].map(tag => [tag.toLowerCase().replace(/[^a-z0-9]/g, ''), tag])).values()];
 
     const normalized = question.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -183,6 +183,7 @@ function addFacts(block, section) {
     questions.push({
       id,
       category: 'Television',
+      programme: PROGRAMME,
       question,
       answers,
       correctAnswer,
@@ -201,4 +202,111 @@ addFacts(gallows, 'Series 2 episodes 4-5 The Problem at Gallows Gate');
 addFacts(mother, 'Series 2 episode 6 Mother Redcap');
 addFacts(canary, '1998 Christmas special Black Canary');
 
-module.exports = questions;
+
+
+// Jonathan Creek Series 2 and 1998 special audit.
+// Original tv_20708–tv_20839 preserved; new IDs start at tv_40812.
+// Sources for episode-specific facts and cast:
+// https://www.jonathancreek.net/episodeguide.asp
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/2/
+// Special: https://www.jonathancreek.net/xmasspecial1998.asp
+// The main programme remains PARTIAL: Series 3 onward follow in later packs.
+const audit387_danse=`In Danse Macabre, which actress portrayed novelist Emma Lazarus?|Meg Davies|Pippa Haywood|Martina Laird|Frankie Park|Series 2 Episode 1|Emma Lazarus performer
+In Danse Macabre, who played Lorna Claithorne?|Pippa Haywood|Meg Davies|Martina Laird|Deborah Grant|Series 2 Episode 1|Lorna Claithorne guest actress
+In Danse Macabre, which actor played Emma's bodyguard Hal Drucker?|Gavan O'Herlihy|Mark Caven|Peter Davison|Christopher Adamson|Series 2 Episode 1|Hal Drucker guest actor
+In Danse Macabre, which actor portrayed Emma's husband Tom Terici?|Mark Caven|Gavan O'Herlihy|Peter Davison|Jimmi Harkishin|Series 2 Episode 1|Tom Terici guest actor
+In Danse Macabre, who played reincarnation enthusiast Gary Lobo?|Jimmi Harkishin|Mark Caven|Gavan O'Herlihy|Christopher Adamson|Series 2 Episode 1|Gary Lobo performer
+In Danse Macabre, what subject does Gary Lobo claim to be an expert in?|Reincarnation|Forensic psychology|Ancient Egyptian art|Astronomy|Series 2 Episode 1|Gary Lobo's unusual speciality
+In Danse Macabre, what does Maddy stand on while investigating the garage?|A bucket|A workbench|An old suitcase|A stepladder|Series 2 Episode 1|Maddy examines a garage shelf
+In Danse Macabre, what relaxation device does Maddy use to explore her supposed past lives?|A flotation tank|A hypnotic swing|An isolation booth|A heated waterbed|Series 2 Episode 1|Investigating Gary Lobo's claims
+In Danse Macabre, who played the opera-singing stripper Bridget?|Martina Laird|Meg Davies|Pippa Haywood|Frankie Park|Series 2 Episode 1|Bridget guest actress
+In Danse Macabre, what does Bridget demand from Adam to keep quiet about their night together?|A singing spot in his show|An overseas holiday|A television interview|The lead role in a play|Series 2 Episode 1|Adam Klaus blackmail subplot`;
+
+const audit387_norman=`In Time Waits for Norman, which actress portrayed Antonia Stangerson?|Deborah Grant|Zoë Hart|Lorelei King|Suzannah Heath|Series 2 Episode 2|Antonia Stangerson performer
+In Time Waits for Norman, who played Jonathan's accountant Rebecca Knape?|Zoë Hart|Deborah Grant|Lorelei King|Diane Witter|Series 2 Episode 2|Rebecca Knape performer
+In Time Waits for Norman, who portrayed Mel Porthropp, Norman's former business partner?|Edward Halstead|Graham Bryan|Dermot Crowley|Steve Nallon|Series 2 Episode 2|Mel Porthropp guest actor
+In Time Waits for Norman, which actor played the restaurant employee Lewis French?|Graham Bryan|Edward Halstead|Rob Jarvis|Steve Nallon|Series 2 Episode 2|Lewis French guest actor
+In Time Waits for Norman, what particular fear troubles Norman despite his wife's clock collection?|The passage of time|Travelling by air|Eating in public|Crowded lifts|Series 2 Episode 2|Norman's unusual phobia
+In Time Waits for Norman, what spice accidentally gets into Antonia's eye before a visitor arrives?|Chilli|Paprika|Turmeric|Cumin|Series 2 Episode 2|Antonia's kitchen accident
+In Time Waits for Norman, which politician's photograph does Jonathan show restaurant staff to challenge their memory?|Newt Gingrich|Bill Clinton|John Major|Tony Blair|Series 2 Episode 2|Unreliable eyewitness experiment
+In Time Waits for Norman, what game is Maddy playing when she telephones Jonathan late at night?|Chess|Backgammon|Monopoly|Poker|Series 2 Episode 2|Maddy's late-night telephone call
+In Time Waits for Norman, what is the name of the woman with whom Norman secretly maintains another relationship?|Gillian|Rebecca|Maxine|Bernice|Series 2 Episode 2|Norman's concealed other family`;
+
+const audit387_scented=`In The Scented Room, which actress portrayed Lady Theresa Cutler?|Christine Kavanagh|Valerie Colgan|Caroline Harris|Sophie Langham|Series 2 Episode 3|Lady Theresa Cutler performer
+In The Scented Room, who played the boy Benjamin Le Fley?|Sam Bradley|John Hudson|Peter Copley|Jocelyn Hughes|Series 2 Episode 3|Benjamin Le Fley actor
+In The Scented Room, which actress portrayed the schoolgirl Judy?|Jocelyn Hughes|Sophie Langham|Christine Kavanagh|Caroline Harris|Series 2 Episode 3|Judy guest performer
+In The Scented Room, who played the former nanny Melissa?|Sophie Langham|Jocelyn Hughes|Valerie Colgan|Jemma Churchill|Series 2 Episode 3|Melissa former nanny performer
+In The Scented Room, which actress portrayed house guide Martha Parrish?|Valerie Colgan|Christine Kavanagh|Caroline Harris|Sophie Langham|Series 2 Episode 3|Martha Parrish performer
+In The Scented Room, what does Lady Cutler put in her husband's sandwich to punish his flirtatious behaviour?|Stinging nettles|Hot mustard|Raw chillies|Garlic powder|Series 2 Episode 3|Lady Cutler's revenge snack
+In The Scented Room, what does Adam practise escaping from while buried in a park?|A trunk while in a straitjacket|A steel cage under water|A locked automobile|An underground glass coffin|Series 2 Episode 3|Adam Klaus outdoor escape illusion
+In The Scented Room, who portrayed Maddy's therapist Dr Irene Wolverton?|Caroline Harris|Christine Kavanagh|Jemma Churchill|Jocelyn Hughes|Series 2 Episode 3|Dr Irene Wolverton actress`;
+
+const audit387_gallows=`In The Problem at Gallows Gate, which actress played Adam Klaus's sister Kitty?|Jennifer Piercey|Annabel Mullion|Jessica Lloyd|Georgie Glen|Series 2 Episodes 4–5|Kitty performer
+In The Problem at Gallows Gate, who portrayed Felicity Vale?|Annabel Mullion|Jennifer Piercey|Jessica Lloyd|Amanda Holden|Series 2 Episodes 4–5|Felicity Vale actress
+In The Problem at Gallows Gate, which actress played housemate Clare Sallinger?|Jessica Lloyd|Annabel Mullion|Georgie Glen|Akemi Otani|Series 2 Episodes 4–5|Clare Sallinger performer
+In The Problem at Gallows Gate, who played Duncan Procter?|Alistair Petrie|Stephen Billington|Clarke Peters|Stanley Townsend|Series 2 Episodes 4–5|Duncan Procter actor
+In The Problem at Gallows Gate, which actor portrayed Neville Bruce?|Stephen Billington|Alistair Petrie|Stanley Townsend|Andrew Barrow|Series 2 Episodes 4–5|Neville Bruce guest actor
+In The Problem at Gallows Gate, who portrayed Detective Inspector Barrison?|Stanley Townsend|Clarke Peters|Alistair Petrie|Stephen Billington|Series 2 Episodes 4–5|DI Barrison performer
+In The Problem at Gallows Gate, which actress played Neville's girlfriend Kiko?|Akemi Otani|Georgie Glen|Jessica Lloyd|Amanda Holden|Series 2 Episodes 4–5|Kiko guest actress
+In The Problem at Gallows Gate, what gift does Felicity give Duncan at his birthday party?|A caricature of himself|An antique pocket watch|A signed jazz album|A carved wooden statue|Series 2 Episodes 4–5|Felicity's birthday present
+In The Problem at Gallows Gate, which title appears on the crime book that DI Barrison produces while questioning Maddy?|Scales of Injustice|Finding My Form|Frost at Christmas|The Kiss of Judas|Series 2 Episodes 4–5|Maddy's published crime book
+In The Problem at Gallows Gate, what does Jonathan spray on Maddy's foot to wake her at the windmill?|Deodorant|Hairspray|Perfume|Furniture polish|Series 2 Episodes 4–5|Morning at Jonathan's windmill`;
+
+const audit387_mother=`In Mother Redcap, which actor played Judge Forrest Sweetland?|Leonard Kavanagh|Brian Murphy|David McKail|Marcus Gilbert|Series 2 Episode 6|Judge Sweetland performer
+In Mother Redcap, who portrayed the judge's wife Gwynneth Sweetland?|Georgine Anderson|Barbara Horne|Nicola Walker|Hilary Sesta|Series 2 Episode 6|Gwynneth Sweetland actress
+In Mother Redcap, which actress played Dr Laura Climpson?|Barbara Horne|Georgine Anderson|Nicola Walker|Scarlett O'Neal|Series 2 Episode 6|Dr Laura Climpson actress
+In Mother Redcap, who played Maddy's prospective collaborator Jason Tippet?|Marcus Gilbert|David McKail|Brian Murphy|Leonard Kavanagh|Series 2 Episode 6|Jason Tippet guest actor
+In Mother Redcap, which London property trade does Jason Tippet work in?|Estate agency|Book publishing|Antique dealing|Home insurance|Series 2 Episode 6|Jason Tippet's occupation
+In Mother Redcap, what was found on the floor of the judge's bedroom after his death?|A torn fingernail|A broken pen|A torn theatre ticket|A piece of silver jewellery|Series 2 Episode 6|Judge's bedroom forensic clue
+In Mother Redcap, who played historical death-case character Clifford Jennings?|David McKail|Marcus Gilbert|Brian Murphy|Leonard Kavanagh|Series 2 Episode 6|Clifford Jennings guest performer`;
+
+const audit387_canary=`In Black Canary, which actor played servant Lionel Prokopp?|Murray Melvin|Francis Matthews|Rik Mayall|Vincent Wong|1998 Christmas Special|Lionel Prokopp performer
+In Black Canary, who portrayed Marella's husband Jerry Bellenitis?|Francis Matthews|Murray Melvin|Rik Mayall|Sanjeev Bhaskar|1998 Christmas Special|Jerry Bellenitis performer
+In Black Canary, which actress played Marella's daughter Charlotte Carney?|Kate Isitt|Suzanna Hamilton|Hannah Gordon|Simone Huber|1998 Christmas Special|Charlotte Carney performer
+In Black Canary, who played Hannah, the returning relative who recognises her mother?|Suzanna Hamilton|Kate Isitt|Hannah Gordon|Simone Huber|1998 Christmas Special|Hannah guest actress
+In Black Canary, which actor portrayed psychic surgeon Pan Duc Lao?|Vincent Wong|Murray Melvin|Sanjeev Bhaskar|Francis Matthews|1998 Christmas Special|Pan Duc Lao performer
+In Black Canary, who played Adam Klaus's costume designer Elsa?|Simone Huber|Kate Isitt|Suzanna Hamilton|Hannah Gordon|1998 Christmas Special|Elsa costume designer performer
+In Black Canary, which comedian portrayed a doctor in a supporting role?|Sanjeev Bhaskar|Rik Mayall|Harry Enfield|John Thomson|1998 Christmas Special|Hospital doctor guest performer
+In Black Canary, what disguised recording gadget does Adam use while ogling his costume designer?|A video pen|A camera inside a shoe|A radio microphone|A hidden mirror|1998 Christmas Special|Adam's inappropriate backstage gadget
+In Black Canary, what source book is used in Adam's rehearsal of a supposedly impossible word prediction?|A dictionary|An atlas|A telephone directory|A cookery book|1998 Christmas Special|Stage illusion with predicted word`;
+const audit387Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+  .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit387(block,episode){
+ for(const [i,line] of block.trim().split('\n').entries()){
+  const f=line.split('|').map(x=>x.trim());
+  if(f.length!==7||f.some(x=>!x))throw Error('Pack 387 invalid row '+episode+' '+i);
+  const [stem,correctAnswer,a,b,c,coverage,focus]=f;
+  const prefix='In '+episode+', ';
+  if(!stem.startsWith(prefix))throw Error('Pack 387 episode mismatch at '+i);
+  const question='In '+PROGRAMME+', during "'+episode+'", '+stem.slice(prefix.length);
+  const answers=[a,b,c]; answers.splice(questions.length%4,0,correctAnswer);
+  const tags=['Television','British Television','BBC One','Mystery Drama','Crime Mystery',
+    PROGRAMME,'Programme: '+PROGRAMME,'Coverage: '+coverage,'Episode/special: '+episode,
+    'Character or case detail: '+focus,'Correct answer: '+correctAnswer,
+    'Case episode: '+episode,'Story: '+focus,'Broadcast: 1998'];
+  questions.push({
+   id:'tv_'+(40812+questions.length-132),
+   category:'Television',programme:PROGRAMME,question,answers,correctAnswer,
+   difficulty:'Medium',tags,dailyEligible:true
+  });
+ }
+}
+addAudit387(audit387_danse,"Danse Macabre");
+addAudit387(audit387_norman,"Time Waits for Norman");
+addAudit387(audit387_scented,"The Scented Room");
+addAudit387(audit387_gallows,"The Problem at Gallows Gate");
+addAudit387(audit387_mother,"Mother Redcap");
+addAudit387(audit387_canary,"Black Canary");
+const audit387Ids=new Set(),audit387Stems=new Set();
+for(const q of questions){
+ const stem=audit387Norm(q.question);
+ if(q.programme!==PROGRAMME||q.category!=='Television'||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ q.answers.length!==4||new Set(q.answers.map(audit387Norm)).size!==4||
+ q.answers.filter(x=>x===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ audit387Ids.has(q.id)||audit387Stems.has(stem))
+ throw Error('Pack 387 validation failed at '+q.id);
+ audit387Ids.add(q.id);audit387Stems.add(stem);
+}
+module.exports=questions;
