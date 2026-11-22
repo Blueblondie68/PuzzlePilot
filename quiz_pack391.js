@@ -2,11 +2,14 @@
 // PuzzlePilot - Big Quiz - Pack 391
 // Jonathan Creek - Series 5 (2014) and Daemons' Roost (2016)
 // Final Jonathan Creek coverage. Full WordPad-ready CommonJS file.
-// First ID: tv_21159. Packs 381-390 remain held, not deployed.
+// First ID: tv_21159. Packs 381-390 have received individual Render approvals.
 'use strict';
 
 const FIRST_ID = 21159;
-const commonTags = ['television', 'British TV', 'BBC One', 'Jonathan Creek', 'David Renwick', 'mystery drama'];
+const PROGRAMME = 'Jonathan Creek';
+const commonTags = ['Television','British Television','BBC One','BBC',
+  'Mystery Drama','Crime Mystery',PROGRAMME,'Programme: '+PROGRAMME,
+  'David Renwick','Jonathan Creek Final Coverage'];
 
 // Format: question | correct answer | three distractors | difficulty | seven specific tags.
 const rows = [
@@ -118,7 +121,9 @@ const questions = rows.map((row, index) => {
   if (parts.length !== 13 || parts.some(value => !value)) {
     throw new Error(`Pack 391: malformed row ${index + 1}`);
   }
-  const [question, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const [stem, correctAnswer, wrong1, wrong2, wrong3, difficulty, ...specificTags] = parts;
+  const question=stem.toLowerCase().includes(PROGRAMME.toLowerCase()) ? stem
+    : 'In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
   if (!['Easy', 'Medium', 'Hard'].includes(difficulty)) {
     throw new Error(`Pack 391: invalid difficulty in row ${index + 1}`);
   }
@@ -128,12 +133,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 391: duplicate option in row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 391: expected 13 distinct tags in row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 391: expected 12+ distinct tags in row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -143,4 +149,361 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Final Jonathan Creek audit: Series 5 (2014) and special (2016).
+// Original IDs tv_21159–tv_21252 preserved; additions begin tv_41003.
+// All guest-cast matches, BBC One transmission dates and production roles
+// sourced from British Comedy Guide's specific episode cast/crew credits:
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/5/1/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/5/2/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/5/3/
+// https://www.comedy.co.uk/tv/jonathan_creek/episodes/2016/1/
+// Do not mark the shared tracker COMPLETE until Render approves this saved pack.
+const audit391Cast={
+  "The Letters of Septimus Noone": [
+    [
+      "Angus",
+      "Ross Armstrong",
+      "m",
+      "Juno attack and backstage staff"
+    ],
+    [
+      "Sharon",
+      "Raquel Cassidy",
+      "f",
+      "Ripley and Ridley's mother"
+    ],
+    [
+      "Ridley",
+      "Kieran Hodgson",
+      "m",
+      "criminology student"
+    ],
+    [
+      "Darryl",
+      "Rhydian Jones",
+      "m",
+      "theatre make-up artist"
+    ],
+    [
+      "Rachel",
+      "Alice O'Connell",
+      "f",
+      "Angus's wife"
+    ],
+    [
+      "Hazel Prosser",
+      "Paula Wilcox",
+      "f",
+      "Polly's auntie's friend"
+    ],
+    [
+      "Ripley",
+      "Liberty Nichols-O'Connell",
+      "f",
+      "Ridley's younger sibling"
+    ],
+    [
+      "Mr Partridge",
+      "Roy Sampson",
+      "m",
+      "Polly's father"
+    ]
+  ],
+  "The Sinner and the Sandman": [
+    [
+      "Horace Greeley",
+      "John Bird",
+      "m",
+      "parish newsletter editor"
+    ],
+    [
+      "Crispin Gilpin",
+      "Tim Faraday",
+      "m",
+      "village resident"
+    ],
+    [
+      "Rev Hugh Chater",
+      "James Bachman",
+      "m",
+      "vicar concerned about a garden creature"
+    ],
+    [
+      "Alison Chater",
+      "Selina Griffiths",
+      "f",
+      "the vicar's wife"
+    ],
+    [
+      "Warwick",
+      "Jarred Christmas",
+      "m",
+      "village community-centre controversy"
+    ],
+    [
+      "a burglar",
+      "Marc Danbury",
+      "m",
+      "burglar guest character"
+    ],
+    [
+      "The Sandman",
+      "John Walters",
+      "m",
+      "Polly's sinister dream character"
+    ],
+    [
+      "Polly's mother",
+      "Chloe Buswell",
+      "f",
+      "Polly's family flashback"
+    ],
+    [
+      "young Polly",
+      "Ella Purton",
+      "f",
+      "childhood nightmare flashback"
+    ],
+    [
+      "young Eric Ipswich",
+      "Adam Grayson",
+      "m",
+      "young clairvoyant magician"
+    ],
+    [
+      "Captain Ian Amery-Cooper",
+      "John Voce",
+      "m",
+      "lottery prediction investigation"
+    ]
+  ],
+  "The Curse of the Bronze Lamp": [
+    [
+      "Karl",
+      "Teddy Nicholas",
+      "m",
+      "one of Lindsey Isherwood's kidnappers"
+    ],
+    [
+      "Ethan",
+      "Uriel Emil",
+      "m",
+      "one of Lindsey Isherwood's kidnappers"
+    ],
+    [
+      "Rowan Isherwood",
+      "Daniel Osgerby",
+      "m",
+      "the government minister"
+    ],
+    [
+      "Kevin",
+      "Dar Dash",
+      "m",
+      "the escort hired by Denise"
+    ],
+    [
+      "Dean",
+      "Mark Flitton",
+      "m",
+      "Denise's husband"
+    ],
+    [
+      "DI Karen Addams",
+      "Caroline Lee Johnson",
+      "f",
+      "police investigator"
+    ]
+  ],
+  "Daemons' Roost": [
+    [
+      "Phillipa Teller",
+      "Rosalind March",
+      "f",
+      "Nathan Clore's carer"
+    ],
+    [
+      "the taxi driver",
+      "John Ritchie",
+      "m",
+      "finale supporting driver"
+    ],
+    [
+      "young Alison",
+      "Caoimhe Clough",
+      "f",
+      "childhood family mystery"
+    ],
+    [
+      "Priscilla",
+      "Susan Coyle",
+      "f",
+      "finale supporting role"
+    ],
+    [
+      "Nina",
+      "Jo Martin",
+      "f",
+      "finale supporting role"
+    ],
+    [
+      "Patrick Tyree",
+      "Ryan Oliva",
+      "m",
+      "murder case suspect"
+    ],
+    [
+      "Imelda Belkin",
+      "Nicole Cooper",
+      "f",
+      "Stephen Belkin's first wife"
+    ],
+    [
+      "Detective Sergeant Alben Barkley",
+      "Chris Forbes",
+      "m",
+      "finale police officer"
+    ]
+  ]
+};
+const audit391Dates={
+  "The Letters of Septimus Noone": {
+    "year": 2014,
+    "date": "28 February 2014"
+  },
+  "The Sinner and the Sandman": {
+    "year": 2014,
+    "date": "7 March 2014"
+  },
+  "The Curse of the Bronze Lamp": {
+    "year": 2014,
+    "date": "14 March 2014"
+  },
+  "Daemons' Roost": {
+    "year": 2016,
+    "date": "28 December 2016"
+  }
+};
+const audit391Crew=[
+  [
+    "The Letters of Septimus Noone",
+    "Who directed the 2014 opening episode?",
+    "David Sant",
+    [
+      "Sandy Johnson",
+      "Keith Washington",
+      "Marcus Mortimer"
+    ],
+    "episode director"
+  ],
+  [
+    "The Letters of Septimus Noone",
+    "Who composed songs for the Yellow Room musical within the story?",
+    "Philip Pope",
+    [
+      "Rick Wentworth",
+      "Theo Vidgen",
+      "David Renwick"
+    ],
+    "songs for the fictional stage musical"
+  ],
+  [
+    "The Sinner and the Sandman",
+    "Who was credited as producer of the 2014 episodes?",
+    "Rosemary McGowan",
+    [
+      "Nerys Evans",
+      "Verity Lambert",
+      "Pete Thornton"
+    ],
+    "BBC producer"
+  ],
+  [
+    "Daemons' Roost",
+    "Who composed the music for the 2016 finale?",
+    "Theo Vidgen",
+    [
+      "Rick Wentworth",
+      "Philip Pope",
+      "Sandy Johnson"
+    ],
+    "2016 special music"
+  ],
+  [
+    "Daemons' Roost",
+    "Who was the production designer for the 2016 finale?",
+    "Brian Sykes",
+    [
+      "John Asbridge",
+      "Paul Herley",
+      "Mark Davies"
+    ],
+    "2016 production design"
+  ],
+  [
+    "Daemons' Roost",
+    "Who served as director of photography for the 2016 finale?",
+    "Paul Herley",
+    [
+      "Brian Sykes",
+      "Rhona Russell",
+      "Theo Vidgen"
+    ],
+    "2016 cinematography"
+  ]
+];
+const audit391Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit391(episode,stem,answer,wrong,focus,kind){
+ if(wrong.length!==3||new Set([answer,...wrong].map(audit391Norm)).size!==4)
+  throw new Error('Invalid Pack 391 addition '+episode+': '+stem);
+ const question='In '+PROGRAMME+' episode "'+episode+'", '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrong];answers.splice(questions.length%4,0,answer);
+ const year=audit391Dates[episode].year;
+ const tags=['Television','British Television','BBC One','Crime Mystery',
+  'Mystery Drama',PROGRAMME,'Programme: '+PROGRAMME,
+  'Episode or special: '+episode,'Year: '+year,
+  'Topic: '+focus,'Correct answer: '+answer,'Fact type: '+kind,
+  'Episode detail: '+focus,'Creator: David Renwick',
+  'Series 5 or final special'];
+ questions.push({id:'tv_'+(41003+questions.length-94),
+  category:'Television',programme:PROGRAMME,question,answers,
+  correctAnswer:answer,difficulty:'Medium',tags,dailyEligible:true});
+}
+const byGender391={m:[],f:[]};
+for(const list of Object.values(audit391Cast))for(const [role,actor,gender] of list)
+ byGender391[gender].push(actor);
+for(const [episode,people] of Object.entries(audit391Cast)){
+ for(const [index,[role,performer,gender,focus]] of people.entries()){
+  const options=byGender391[gender].filter(x=>x!==performer);
+  if(options.length<3)throw new Error('Insufficient actor pool in '+episode);
+  const off=(index*3+episode.length)%options.length;
+  const wrong=[options[off],options[(off+1)%options.length],options[(off+2)%options.length]];
+  addAudit391(episode,'Which '+(gender==='f'?'actress':'actor')+' portrayed '+role+'?',
+   performer,wrong,'Role: '+role+' / '+focus,'guest cast');
+ }
+}
+for(const [episode,meta] of Object.entries(audit391Dates)){
+ const other=Object.values(audit391Dates).map(x=>x.date)
+  .filter(x=>x!==meta.date);
+ const wrong=other.length===3?other:[...other,'1 January 2014'].slice(0,3);
+ addAudit391(episode,'On what date did this story first air on BBC One?',
+  meta.date,wrong,'BBC original transmission','broadcast date');
+}
+for(const [episode,stem,answer,wrong,focus] of audit391Crew)
+ addAudit391(episode,stem,answer,wrong,focus,'production credit');
+const seen391ID=new Set(),seen391Q=new Set();
+for(const q of questions){
+ const stem=audit391Norm(q.question);
+ if(q.programme!==PROGRAMME||q.category!=='Television'||
+  !q.tags.includes('Programme: '+PROGRAMME)||
+  q.answers.length!==4||new Set(q.answers.map(audit391Norm)).size!==4||
+  q.answers.filter(a=>a===q.correctAnswer).length!==1||
+  q.tags.length<12||q.dailyEligible!==true||
+  seen391ID.has(q.id)||seen391Q.has(stem))
+  throw new Error('Pack 391 metadata/duplicate validation failed: '+q.id);
+ seen391ID.add(q.id);seen391Q.add(stem);
+}
+module.exports=questions;
