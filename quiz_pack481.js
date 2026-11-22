@@ -1,9 +1,14 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 481: Another World, Part 1 (1964–1974)
-// 80 unique questions from the first decade: founding Matthews family, Randolphs,
+// 106 audited questions from the first decade: founding Matthews family, Randolphs,
 // Bill/Missy, Lenore/Walter, Rachel/Ada/Steve/Alice and the 1974 10th anniversary.
-// IDs tv_26820–tv_26899. This is partial programme coverage — NOT purple.
+// Original IDs tv_26820–tv_26899; audit IDs tv_42769–tv_42794.
+// Partial programme coverage — NOT purple (later decades in Packs 482–484).
 // Direct overlap audit: no Another World, Alice Matthews, Rachel Davis, Steve Frame
 // or key writers found in original mixed Packs 1–20; repository name search clear.
+// Audited on 22 November 2026: filled early cast, plot, production and awards gaps.
+// Additional source checks: 1972 Television Academy nomination; Soap Opera Digest (June 2024);
+// Television Academy Interviews; TV Guide cast; TVmaze; 1960s/1970s programme histories.
+// All questions now identify the programme directly; no unnecessary repeated facts.
 // Primary research:
 // https://interviews.televisionacademy.com/shows/another-world
 // https://www.soapoperadigest.com/content/remembering-another-world-on-the-25th-anniversary-of-its-finale/
@@ -239,7 +244,7 @@ const questions=[
     "id": "tv_26827",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which 1965 head writer shifted the soap's focus towards the short-lived Gregory family?",
+    "question": "In Another World, which 1965 head writer shifted the soap's focus towards the short-lived Gregory family?",
     "answers": [
       "Agnes Nixon",
       "Harding Lemay",
@@ -271,7 +276,7 @@ const questions=[
     "id": "tv_26828",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which writer succeeded James Lipton and created the character Rachel Davis?",
+    "question": "In Another World, which writer succeeded James Lipton and created the character Rachel Davis?",
     "answers": [
       "Agnes Nixon",
       "Kay Alden",
@@ -335,7 +340,7 @@ const questions=[
     "id": "tv_26830",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which executive producer joined the highly successful Harding Lemay era in 1972?",
+    "question": "In Another World, which executive producer joined the highly successful Harding Lemay era in 1972?",
     "answers": [
       "Aaron Spelling",
       "Irna Phillips",
@@ -431,7 +436,7 @@ const questions=[
     "id": "tv_26833",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which other daytime soap contributed the crossover characters Mike and Hope Bauer?",
+    "question": "In Another World, which other daytime soap contributed the crossover characters Mike and Hope Bauer?",
     "answers": [
       "The Young and the Restless",
       "One Life to Live",
@@ -495,7 +500,7 @@ const questions=[
     "id": "tv_26835",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which wealthy widow disliked her husband's poorer relatives in the original storyline?",
+    "question": "In Another World, which wealthy widow disliked her husband's poorer relatives in the original storyline?",
     "answers": [
       "Mary Matthews",
       "Liz Matthews",
@@ -527,7 +532,7 @@ const questions=[
     "id": "tv_26836",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was William Matthews's working-class brother?",
+    "question": "In Another World, who was William Matthews's working-class brother?",
     "answers": [
       "Jim Matthews",
       "John Randolph",
@@ -559,7 +564,7 @@ const questions=[
     "id": "tv_26837",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the first name of Jim Matthews's wife?",
+    "question": "In Another World, what was the first name of Jim Matthews's wife?",
     "answers": [
       "Liz",
       "Ada",
@@ -591,7 +596,7 @@ const questions=[
     "id": "tv_26838",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which three characters were children of Jim and Mary Matthews?",
+    "question": "In Another World, which three characters were children of Jim and Mary Matthews?",
     "answers": [
       "Bill, Susan and Dennis",
       "Missy, Lee and Rachel",
@@ -623,7 +628,7 @@ const questions=[
     "id": "tv_26839",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who were the two children of Liz and William Matthews?",
+    "question": "In Another World, who were the two children of Liz and William Matthews?",
     "answers": [
       "Pat and Russ",
       "Bill and Susan",
@@ -655,7 +660,7 @@ const questions=[
     "id": "tv_26840",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which Matthews daughter was at the centre of the long-running romance with Steve Frame?",
+    "question": "In Another World, which Matthews daughter was at the centre of the long-running romance with Steve Frame?",
     "answers": [
       "Alice",
       "Pat",
@@ -687,7 +692,7 @@ const questions=[
     "id": "tv_26841",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which of Jim Matthews's children became a doctor and married Rachel Davis?",
+    "question": "In Another World, which of Jim Matthews's children became a doctor and married Rachel Davis?",
     "answers": [
       "Bill",
       "Alice",
@@ -719,7 +724,7 @@ const questions=[
     "id": "tv_26842",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the profession of Liz Matthews's son Bill?",
+    "question": "In Another World, what was the profession of Liz Matthews's son Bill?",
     "answers": [
       "Doctor",
       "Architect",
@@ -751,7 +756,7 @@ const questions=[
     "id": "tv_26843",
     "category": "TV",
     "topic": "Another World",
-    "question": "Where did Melissa 'Missy' Palmer work as a waitress?",
+    "question": "In Another World, where did Melissa 'Missy' Palmer work as a waitress?",
     "answers": [
       "The Blue Swan",
       "The Kopper Kettle",
@@ -783,7 +788,7 @@ const questions=[
     "id": "tv_26844",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress was the original Liz Matthews and later starred in Three's Company?",
+    "question": "In Another World, which actress was the original Liz Matthews and later starred in Three's Company?",
     "answers": [
       "Audra Lindley",
       "Irene Dailey",
@@ -815,7 +820,7 @@ const questions=[
     "id": "tv_26845",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress became closely associated with the role of Aunt Liz Matthews?",
+    "question": "In Another World, which actress became closely associated with the role of Aunt Liz Matthews?",
     "answers": [
       "Audra Lindley",
       "Beverly Penberthy",
@@ -847,7 +852,7 @@ const questions=[
     "id": "tv_26846",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played Alice Matthews in the original 1960s–70s love triangle?",
+    "question": "In Another World, which actress played Alice Matthews in the original 1960s–70s love triangle?",
     "answers": [
       "Victoria Wyndham",
       "Robin Strasser",
@@ -879,7 +884,7 @@ const questions=[
     "id": "tv_26847",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor became particularly associated with Jim Matthews?",
+    "question": "In Another World, which actor became particularly associated with Jim Matthews?",
     "answers": [
       "George Reinholt",
       "Hugh Marlowe",
@@ -911,7 +916,7 @@ const questions=[
     "id": "tv_26848",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played Mary Matthews for much of the original run?",
+    "question": "In Another World, which actress played Mary Matthews for much of the original run?",
     "answers": [
       "Virginia Dwyer",
       "Carol Roux",
@@ -943,7 +948,7 @@ const questions=[
     "id": "tv_26849",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who portrayed Bill Matthews during his romance with Missy Palmer?",
+    "question": "In Another World, who portrayed Bill Matthews during his romance with Missy Palmer?",
     "answers": [
       "George Reinholt",
       "Val Dufour",
@@ -975,7 +980,7 @@ const questions=[
     "id": "tv_26850",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was the boyfriend involved in Pat Matthews's original pregnancy storyline?",
+    "question": "In Another World, who was the boyfriend involved in Pat Matthews's original pregnancy storyline?",
     "answers": [
       "John Randolph",
       "Steve Frame",
@@ -1007,7 +1012,7 @@ const questions=[
     "id": "tv_26851",
     "category": "TV",
     "topic": "Another World",
-    "question": "What controversial procedure was Pat Matthews pressured into in the opening year?",
+    "question": "In Another World, what controversial procedure was Pat Matthews pressured into in the opening year?",
     "answers": [
       "A heart transplant",
       "An abortion",
@@ -1039,7 +1044,7 @@ const questions=[
     "id": "tv_26852",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was killed by Pat Matthews during her breakdown?",
+    "question": "In Another World, who was killed by Pat Matthews during her breakdown?",
     "answers": [
       "Tom Baxter",
       "John Randolph",
@@ -1071,7 +1076,7 @@ const questions=[
     "id": "tv_26853",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which lawyer successfully defended Pat Matthews after Tom Baxter's death?",
+    "question": "In Another World, which lawyer successfully defended Pat Matthews after Tom Baxter's death?",
     "answers": [
       "Walter Curtin",
       "Bill Matthews",
@@ -1103,7 +1108,7 @@ const questions=[
     "id": "tv_26854",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who subsequently married Pat Matthews following her trial?",
+    "question": "In Another World, who subsequently married Pat Matthews following her trial?",
     "answers": [
       "Tom Baxter",
       "Steve Frame",
@@ -1135,7 +1140,7 @@ const questions=[
     "id": "tv_26855",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which daughter of John Randolph opposed his marriage to Pat?",
+    "question": "In Another World, which daughter of John Randolph opposed his marriage to Pat?",
     "answers": [
       "Missy Palmer",
       "Lee Randolph",
@@ -1167,7 +1172,7 @@ const questions=[
     "id": "tv_26856",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was badly injured in a car accident involving Lee Randolph?",
+    "question": "In Another World, who was badly injured in a car accident involving Lee Randolph?",
     "answers": [
       "John Randolph",
       "Russ Matthews",
@@ -1199,7 +1204,7 @@ const questions=[
     "id": "tv_26857",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which Guiding Light lawyer became involved with the Randolph family during the crossover?",
+    "question": "In Another World, which Guiding Light lawyer became involved with the Randolph family during the crossover?",
     "answers": [
       "John Dixon",
       "Mickey Horton",
@@ -1231,7 +1236,7 @@ const questions=[
     "id": "tv_26858",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the first name of Mike Bauer's daughter who joined the crossover?",
+    "question": "In Another World, what was the first name of Mike Bauer's daughter who joined the crossover?",
     "answers": [
       "Lee",
       "Alice",
@@ -1263,7 +1268,7 @@ const questions=[
     "id": "tv_26859",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which troubled Randolph character became involved with criminal Lefty Burns?",
+    "question": "In Another World, which troubled Randolph character became involved with criminal Lefty Burns?",
     "answers": [
       "Pat",
       "Lee",
@@ -1295,7 +1300,7 @@ const questions=[
     "id": "tv_26860",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which hallucinogenic drug featured in Lee Randolph's tragic late-1960s storyline?",
+    "question": "In Another World, which hallucinogenic drug featured in Lee Randolph's tragic late-1960s storyline?",
     "answers": [
       "LSD",
       "Heroin",
@@ -1327,7 +1332,7 @@ const questions=[
     "id": "tv_26861",
     "category": "TV",
     "topic": "Another World",
-    "question": "How did Lee Randolph die in 1969?",
+    "question": "In Another World, how did Lee Randolph die in 1969?",
     "answers": [
       "A drowning",
       "A fire",
@@ -1359,7 +1364,7 @@ const questions=[
     "id": "tv_26862",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which orphaned waitress became Bill Matthews's great love?",
+    "question": "In Another World, which orphaned waitress became Bill Matthews's great love?",
     "answers": [
       "Lenore Moore",
       "Ada Hobson",
@@ -1391,7 +1396,7 @@ const questions=[
     "id": "tv_26863",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress originally portrayed Missy Palmer?",
+    "question": "In Another World, which actress originally portrayed Missy Palmer?",
     "answers": [
       "Jacqueline Courtney",
       "Carol Roux",
@@ -1423,7 +1428,7 @@ const questions=[
     "id": "tv_26864",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who tried to keep Bill Matthews from marrying Missy Palmer?",
+    "question": "In Another World, who tried to keep Bill Matthews from marrying Missy Palmer?",
     "answers": [
       "His mother Liz",
       "His father William",
@@ -1455,7 +1460,7 @@ const questions=[
     "id": "tv_26865",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which criminal forced Missy Palmer into an abusive marriage?",
+    "question": "In Another World, which criminal forced Missy Palmer into an abusive marriage?",
     "answers": [
       "Walter Curtin",
       "Wayne Addison",
@@ -1487,7 +1492,7 @@ const questions=[
     "id": "tv_26866",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was wrongly suspected of killing Danny Fargo?",
+    "question": "In Another World, who was wrongly suspected of killing Danny Fargo?",
     "answers": [
       "Lenore Moore",
       "Liz Matthews",
@@ -1519,7 +1524,7 @@ const questions=[
     "id": "tv_26867",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was responsible for Danny Fargo's death?",
+    "question": "In Another World, who was responsible for Danny Fargo's death?",
     "answers": [
       "Liz Matthews",
       "Flo Murray",
@@ -1551,7 +1556,7 @@ const questions=[
     "id": "tv_26868",
     "category": "TV",
     "topic": "Another World",
-    "question": "How did Bill Matthews die in 1968?",
+    "question": "In Another World, how did Bill Matthews die in 1968?",
     "answers": [
       "By drowning",
       "In a plane crash",
@@ -1583,7 +1588,7 @@ const questions=[
     "id": "tv_26869",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which character transferred to the Somerset spin-off with her young son in 1970?",
+    "question": "In Another World, which character transferred to the Somerset spin-off with her young son in 1970?",
     "answers": [
       "Liz Matthews",
       "Alice Matthews",
@@ -1615,7 +1620,7 @@ const questions=[
     "id": "tv_26870",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who married Walter Curtin after an earlier rivalry over Bill Matthews?",
+    "question": "In Another World, who married Walter Curtin after an earlier rivalry over Bill Matthews?",
     "answers": [
       "Rachel Davis",
       "Susan Matthews",
@@ -1647,7 +1652,7 @@ const questions=[
     "id": "tv_26871",
     "category": "TV",
     "topic": "Another World",
-    "question": "Whose murder was Walter Curtin actually responsible for?",
+    "question": "In Another World, whose murder was Walter Curtin actually responsible for?",
     "answers": [
       "Danny Fargo",
       "Wayne Addison",
@@ -1679,7 +1684,7 @@ const questions=[
     "id": "tv_26872",
     "category": "TV",
     "topic": "Another World",
-    "question": "What caused Walter Curtin's death in 1972?",
+    "question": "In Another World, what caused Walter Curtin's death in 1972?",
     "answers": [
       "A car accident",
       "A heart attack",
@@ -1711,7 +1716,7 @@ const questions=[
     "id": "tv_26873",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which architect from Somerset became Lenore Moore's second husband?",
+    "question": "In Another World, which architect from Somerset became Lenore Moore's second husband?",
     "answers": [
       "Eliot Carrington",
       "Steve Frame",
@@ -1743,7 +1748,7 @@ const questions=[
     "id": "tv_26874",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was Rachel Davis's outspoken mother?",
+    "question": "In Another World, who was Rachel Davis's outspoken mother?",
     "answers": [
       "Mary Matthews",
       "Liz Matthews",
@@ -1774,7 +1779,7 @@ const questions=[
     "id": "tv_26875",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played Rachel's mother Ada for decades?",
+    "question": "In Another World, which actress played Rachel's mother Ada for decades?",
     "answers": [
       "Carol Roux",
       "Constance Ford",
@@ -1838,7 +1843,7 @@ const questions=[
     "id": "tv_26877",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who originated the role of Rachel Davis before Victoria Wyndham?",
+    "question": "In Another World, who originated the role of Rachel Davis before Victoria Wyndham?",
     "answers": [
       "Jacqueline Courtney",
       "Susan Sullivan",
@@ -1870,7 +1875,7 @@ const questions=[
     "id": "tv_26878",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress took over the role of Rachel Davis in 1972?",
+    "question": "In Another World, which actress took over the role of Rachel Davis in 1972?",
     "answers": [
       "Robin Strasser",
       "Beverly Penberthy",
@@ -1902,7 +1907,7 @@ const questions=[
     "id": "tv_26879",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was the wealthy self-made man loved by both Alice Matthews and Rachel Davis?",
+    "question": "In Another World, who was the wealthy self-made man loved by both Alice Matthews and Rachel Davis?",
     "answers": [
       "Steve Frame",
       "Mac Cory",
@@ -1934,7 +1939,7 @@ const questions=[
     "id": "tv_26880",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who played Steve Frame during the famous original love triangle?",
+    "question": "In Another World, who played Steve Frame during the famous original love triangle?",
     "answers": [
       "David Canary",
       "Joseph Gallison",
@@ -1966,7 +1971,7 @@ const questions=[
     "id": "tv_26881",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the name of the son Rachel had with Steve Frame?",
+    "question": "In Another World, what was the name of the son Rachel had with Steve Frame?",
     "answers": [
       "Matthew",
       "Dennis",
@@ -1998,7 +2003,7 @@ const questions=[
     "id": "tv_26882",
     "category": "TV",
     "topic": "Another World",
-    "question": "Why did Russ Matthews divorce Rachel?",
+    "question": "In Another World, why did Russ Matthews divorce Rachel?",
     "answers": [
       "She became an actress abroad",
       "He learned Steve was Jamie's father",
@@ -2030,7 +2035,7 @@ const questions=[
     "id": "tv_26883",
     "category": "TV",
     "topic": "Another World",
-    "question": "Whose pregnancy disrupted Steve and Alice's wedding plans in 1969?",
+    "question": "In Another World, whose pregnancy disrupted Steve and Alice's wedding plans in 1969?",
     "answers": [
       "Rachel Davis's",
       "Missy Palmer's",
@@ -2062,7 +2067,7 @@ const questions=[
     "id": "tv_26884",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which couple first married in 1971 despite Rachel's objections?",
+    "question": "In Another World, which couple first married in 1971 despite Rachel's objections?",
     "answers": [
       "Rachel Davis and Mac Cory",
       "Walter Curtin and Liz Matthews",
@@ -2094,7 +2099,7 @@ const questions=[
     "id": "tv_26885",
     "category": "TV",
     "topic": "Another World",
-    "question": "Whom did Rachel Davis marry between her marriages to Russ Matthews and Steve Frame?",
+    "question": "In Another World, whom did Rachel Davis marry between her marriages to Russ Matthews and Steve Frame?",
     "answers": [
       "John Randolph",
       "Mac Cory",
@@ -2126,7 +2131,7 @@ const questions=[
     "id": "tv_26886",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which man did Rachel marry after Steve and Alice's first marriage failed?",
+    "question": "In Another World, which man did Rachel marry after Steve and Alice's first marriage failed?",
     "answers": [
       "Mac Cory",
       "Steve Frame",
@@ -2158,7 +2163,7 @@ const questions=[
     "id": "tv_26887",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which publishing tycoon would later become Rachel's great love?",
+    "question": "In Another World, which publishing tycoon would later become Rachel's great love?",
     "answers": [
       "Mac Cory",
       "Walter Curtin",
@@ -2190,7 +2195,7 @@ const questions=[
     "id": "tv_26888",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who first portrayed Mac Cory before Douglass Watson took over?",
+    "question": "In Another World, who first portrayed Mac Cory before Douglass Watson took over?",
     "answers": [
       "George Reinholt",
       "Joseph Gallison",
@@ -2222,7 +2227,7 @@ const questions=[
     "id": "tv_26889",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor assumed the role of Mac Cory in 1974?",
+    "question": "In Another World, which actor assumed the role of Mac Cory in 1974?",
     "answers": [
       "Robert Emhardt",
       "David Canary",
@@ -2254,7 +2259,7 @@ const questions=[
     "id": "tv_26890",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the first name of Mac Cory's scheming daughter?",
+    "question": "In Another World, what was the first name of Mac Cory's scheming daughter?",
     "answers": [
       "Alice",
       "Iris",
@@ -2286,7 +2291,7 @@ const questions=[
     "id": "tv_26891",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played Iris Cory during the show's 1970s heyday?",
+    "question": "In Another World, which actress played Iris Cory during the show's 1970s heyday?",
     "answers": [
       "Beverlee McKinsey",
       "Victoria Wyndham",
@@ -2318,7 +2323,7 @@ const questions=[
     "id": "tv_26892",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was Iris Cory's estranged husband and the father of young Dennis?",
+    "question": "In Another World, who was Iris Cory's estranged husband and the father of young Dennis?",
     "answers": [
       "Robert Delaney",
       "Walter Curtin",
@@ -2350,7 +2355,7 @@ const questions=[
     "id": "tv_26893",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the first name of Iris and Eliot Carrington's son?",
+    "question": "In Another World, what was the first name of Iris and Eliot Carrington's son?",
     "answers": [
       "Jamie",
       "Matthew",
@@ -2382,7 +2387,7 @@ const questions=[
     "id": "tv_26894",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who worked as a governess to Dennis Carrington in 1973?",
+    "question": "In Another World, who worked as a governess to Dennis Carrington in 1973?",
     "answers": [
       "Rachel Davis",
       "Alice Matthews",
@@ -2414,7 +2419,7 @@ const questions=[
     "id": "tv_26895",
     "category": "TV",
     "topic": "Another World",
-    "question": "What heartbreaking medical news affected Alice Matthews in the early 1970s?",
+    "question": "In Another World, what heartbreaking medical news affected Alice Matthews in the early 1970s?",
     "answers": [
       "She was told she could not have children",
       "She had lost her sight",
@@ -2446,7 +2451,7 @@ const questions=[
     "id": "tv_26896",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which man supported Alice during her health crisis, rekindling their relationship?",
+    "question": "In Another World, which man supported Alice during her health crisis, rekindling their relationship?",
     "answers": [
       "Mac Cory",
       "Russ Matthews",
@@ -2478,7 +2483,7 @@ const questions=[
     "id": "tv_26897",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which major anniversary was celebrated by Steve and Alice's second wedding?",
+    "question": "In Another World, which major anniversary was celebrated by Steve and Alice's second wedding?",
     "answers": [
       "The soap's fifth",
       "The soap's twentieth",
@@ -2510,7 +2515,7 @@ const questions=[
     "id": "tv_26898",
     "category": "TV",
     "topic": "Another World",
-    "question": "On which date did the Steve–Alice second wedding episode originally air?",
+    "question": "In Another World, on which date did the Steve–Alice second wedding episode originally air?",
     "answers": [
       "4 May 1975",
       "3 May 1974",
@@ -2571,9 +2576,847 @@ const questions=[
     ]
   }
 ];
-if(questions.length!==80||new Set(questions.map(q=>q.id)).size!==questions.length||
+// Audit additions: independent verified facts with non-overlapping original IDs.
+const AUDIT_ORIGINAL_COUNT=80;
+const AUDIT_FIRST_ID=42769;
+const auditQuestions=[
+  {
+    "id": "tv_42769",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress originally played Pat Matthews when the soap began?",
+    "answers": [
+      "Beverly Penberthy",
+      "Susan Trustman",
+      "Jacqueline Courtney",
+      "Judith Barcroft"
+    ],
+    "correctAnswer": "Susan Trustman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Original Pat Matthews",
+      "Susan Trustman",
+      "1964 Original Cast",
+      "Matthews Family",
+      "Role Origins",
+      "Early Casting"
+    ]
+  },
+  {
+    "id": "tv_42770",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress took over the role of Pat Matthews Randolph in the late 1960s?",
+    "answers": [
+      "Beverly Penberthy",
+      "Susan Sullivan",
+      "Virginia Dwyer",
+      "Robin Strasser"
+    ],
+    "correctAnswer": "Beverly Penberthy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Beverly Penberthy",
+      "Pat Randolph",
+      "1967 Recast",
+      "Matthews Family",
+      "Cast Changes",
+      "Long Running Role"
+    ]
+  },
+  {
+    "id": "tv_42771",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor played lawyer John Randolph through the original 1960s and 1970s stories?",
+    "answers": [
+      "Nicolas Coster",
+      "Joseph Gallison",
+      "James Douglas",
+      "Michael M. Ryan"
+    ],
+    "correctAnswer": "Michael M. Ryan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Michael M Ryan",
+      "John Randolph",
+      "Lawyer",
+      "Pat Matthews Marriage",
+      "Original Cast",
+      "Early Drama"
+    ]
+  },
+  {
+    "id": "tv_42772",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor played Tom Baxter, whose death led to Pat Matthews's murder trial?",
+    "answers": [
+      "Michael M. Ryan",
+      "Sam Groom",
+      "Nicolas Pryor",
+      "Val Dufour"
+    ],
+    "correctAnswer": "Nicolas Pryor",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Nicolas Pryor",
+      "Tom Baxter",
+      "Pat Matthews",
+      "Murder Trial",
+      "Early Cast",
+      "1964 Storyline"
+    ]
+  },
+  {
+    "id": "tv_42773",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what long-term medical consequence was Pat Matthews initially told might follow her illegal abortion?",
+    "answers": [
+      "Losing her sight",
+      "Being unable to have children",
+      "Permanent paralysis",
+      "Chronic amnesia"
+    ],
+    "correctAnswer": "Being unable to have children",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1964–1974 plot and character arcs",
+      "Pat Matthews",
+      "Illegal Abortion",
+      "Medical Complications",
+      "Initial Infertility Fear",
+      "Early Controversy",
+      "1964 Storyline"
+    ]
+  },
+  {
+    "id": "tv_42774",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, who was the original actor to play Jim Matthews's son Russ at the start of the serial?",
+    "answers": [
+      "Joey Trent",
+      "Sam Groom",
+      "David Bailey",
+      "Robert Hover"
+    ],
+    "correctAnswer": "Joey Trent",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Joey Trent",
+      "Russ Matthews",
+      "1964 Original Cast",
+      "Matthews Family",
+      "Doctor Russ",
+      "Role Origins"
+    ]
+  },
+  {
+    "id": "tv_42775",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor played Russ Matthews during much of the second half of the 1960s?",
+    "answers": [
+      "Joey Trent",
+      "David Bailey",
+      "Robert Hover",
+      "Sam Groom"
+    ],
+    "correctAnswer": "Sam Groom",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Sam Groom",
+      "Russ Matthews",
+      "1966 Recast",
+      "Early Soap Cast",
+      "Matthews Family",
+      "Doctor Russ"
+    ]
+  },
+  {
+    "id": "tv_42776",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor took over the role of Russ Matthews in 1973?",
+    "answers": [
+      "Sam Groom",
+      "Robert Hover",
+      "David Bailey",
+      "Nicholas Pryor"
+    ],
+    "correctAnswer": "David Bailey",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "David Bailey",
+      "Russ Matthews",
+      "1973 Recast",
+      "Matthews Family",
+      "Doctor Russ",
+      "Original Decade"
+    ]
+  },
+  {
+    "id": "tv_42777",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress originated the role of Lenore Moore in the 1960s?",
+    "answers": [
+      "Susan Sullivan",
+      "Judith Barcroft",
+      "Beverly Penberthy",
+      "Carol Roux"
+    ],
+    "correctAnswer": "Judith Barcroft",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Judith Barcroft",
+      "Lenore Moore",
+      "1966 Character Debut",
+      "Original Cast",
+      "Walter Curtin",
+      "Early Years"
+    ]
+  },
+  {
+    "id": "tv_42778",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress took over as Lenore Moore Curtin in 1971?",
+    "answers": [
+      "Susan Sullivan",
+      "Judith Barcroft",
+      "Irene Dailey",
+      "Victoria Wyndham"
+    ],
+    "correctAnswer": "Susan Sullivan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Susan Sullivan",
+      "Lenore Moore Curtin",
+      "1971 Recast",
+      "Early 1970s Cast",
+      "Walter Curtin",
+      "Actress"
+    ]
+  },
+  {
+    "id": "tv_42779",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor played the attorney Walter Curtin during his relationship with Lenore Moore?",
+    "answers": [
+      "Michael M. Ryan",
+      "Joseph Gallison",
+      "James Douglas",
+      "Val Dufour"
+    ],
+    "correctAnswer": "Val Dufour",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Val Dufour",
+      "Walter Curtin",
+      "Lenore Moore",
+      "Wayne Addison Murder",
+      "Original Cast",
+      "Attorney"
+    ]
+  },
+  {
+    "id": "tv_42780",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor portrayed architect Robert Delaney, who became Lenore's second husband?",
+    "answers": [
+      "David Bailey",
+      "Val Dufour",
+      "Nicolas Coster",
+      "Hugh Marlowe"
+    ],
+    "correctAnswer": "Nicolas Coster",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Nicolas Coster",
+      "Robert Delaney",
+      "Architect",
+      "Lenore Moore",
+      "1970s Casting",
+      "Somerset Link"
+    ]
+  },
+  {
+    "id": "tv_42781",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor played Eliot Carrington, the estranged husband of Iris Cory?",
+    "answers": [
+      "Douglass Watson",
+      "James Douglas",
+      "George Reinholt",
+      "David Bailey"
+    ],
+    "correctAnswer": "James Douglas",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "James Douglas",
+      "Eliot Carrington",
+      "Iris Cory",
+      "Dennis Carrington",
+      "Early Cory Family",
+      "1970s Casting"
+    ]
+  },
+  {
+    "id": "tv_42782",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, to which European country did Alice Matthews move after suffering a breakdown in 1970?",
+    "answers": [
+      "France",
+      "Italy",
+      "Switzerland",
+      "Spain"
+    ],
+    "correctAnswer": "France",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1964–1974 plot and character arcs",
+      "Alice Matthews",
+      "1970 Breakdown",
+      "France",
+      "Steve Frame",
+      "Rachel Davis",
+      "First Love Triangle"
+    ]
+  },
+  {
+    "id": "tv_42783",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what was the name of Rachel Davis's estranged father, who returned during the Steve–Alice conflict?",
+    "answers": [
+      "Jim Matthews",
+      "John Randolph",
+      "Wayne Addison",
+      "Gerald Davis"
+    ],
+    "correctAnswer": "Gerald Davis",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1964–1974 plot and character arcs",
+      "Gerald Davis",
+      "Rachel Davis",
+      "Estranged Father",
+      "Steve Frame",
+      "Alice Matthews",
+      "Early 1970s"
+    ]
+  },
+  {
+    "id": "tv_42784",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, how did Rachel and her father Gerald engineer a rift between Steve Frame and Alice Matthews?",
+    "answers": [
+      "They forged a divorce decree signed by Alice",
+      "They told Alice that Jamie had been adopted",
+      "They arranged for Alice to find Steve and Rachel in a compromising position",
+      "They pretended Steve had left the country"
+    ],
+    "correctAnswer": "They arranged for Alice to find Steve and Rachel in a compromising position",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1964–1974 plot and character arcs",
+      "Rachel Davis",
+      "Gerald Davis",
+      "Alice Matthews",
+      "Steve Frame",
+      "Staged Encounter",
+      "Marriage Breakup"
+    ]
+  },
+  {
+    "id": "tv_42785",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what first name was initially used for Rachel and Steve's son before he became known as Jamie?",
+    "answers": [
+      "Jeremy",
+      "James",
+      "Jason",
+      "Jonathan"
+    ],
+    "correctAnswer": "James",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1964–1974 plot and character arcs",
+      "Jamie Frame",
+      "James Frame",
+      "Rachel Davis",
+      "Steve Frame",
+      "Baby Name",
+      "1969 Birth"
+    ]
+  },
+  {
+    "id": "tv_42786",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what similarity in their childhoods initially helped Steve Frame and Rachel Davis connect?",
+    "answers": [
+      "Both came from poor backgrounds",
+      "Both were raised by doctors",
+      "Both attended the same boarding school",
+      "Both grew up as only children in wealthy homes"
+    ],
+    "correctAnswer": "Both came from poor backgrounds",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1964–1974 plot and character arcs",
+      "Steve Frame",
+      "Rachel Davis",
+      "Working Class Background",
+      "Childhood History",
+      "Love Triangle",
+      "Social Mobility"
+    ]
+  },
+  {
+    "id": "tv_42787",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actor played attorney Mitchell Dru when that character crossed into Another World from earlier soaps?",
+    "answers": [
+      "Michael M. Ryan",
+      "Val Dufour",
+      "James Douglas",
+      "Geoffrey Lumb"
+    ],
+    "correctAnswer": "Geoffrey Lumb",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit Early cast and roles",
+      "Geoffrey Lumb",
+      "Mitchell Dru",
+      "Early Soap Crossover",
+      "As The World Turns",
+      "The Brighter Day",
+      "1964 Character"
+    ]
+  },
+  {
+    "id": "tv_42788",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, during the early Somerset spin-off period, what extended title was briefly used for the original soap?",
+    "answers": [
+      "Another World: Somerset",
+      "The Matthews of Bay City",
+      "Another World: Bay City",
+      "Worlds Apart"
+    ],
+    "correctAnswer": "Another World: Bay City",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1960s–1970s production",
+      "Another World Bay City",
+      "Somerset Spin Off",
+      "1970 Title Change",
+      "NBC Daytime",
+      "Programme Branding",
+      "Original Series"
+    ]
+  },
+  {
+    "id": "tv_42789",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which Another World character played by Ann Wedgeworth was among those moving into the Somerset spin-off?",
+    "answers": [
+      "Lenore Moore",
+      "Lahoma Vane",
+      "Liz Matthews",
+      "Iris Cory"
+    ],
+    "correctAnswer": "Lahoma Vane",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1960s–1970s production",
+      "Lahoma Vane",
+      "Ann Wedgeworth",
+      "Somerset",
+      "Original Spin Off",
+      "1970 Crossover",
+      "Bay City Departure"
+    ]
+  },
+  {
+    "id": "tv_42790",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which ABC soap created by Agnes Nixon debuted while she was still associated with Another World's early years?",
+    "answers": [
+      "One Life to Live",
+      "General Hospital",
+      "Ryan's Hope",
+      "The Edge of Night"
+    ],
+    "correctAnswer": "One Life to Live",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1960s–1970s production",
+      "Agnes Nixon",
+      "One Life To Live",
+      "ABC Soap",
+      "1968 Premiere",
+      "Head Writer",
+      "Soap History"
+    ]
+  },
+  {
+    "id": "tv_42791",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which later soap did Agnes Nixon originally envisage as the home for characters resembling Rachel and Ada?",
+    "answers": [
+      "The Young and the Restless",
+      "Days of Our Lives",
+      "The Doctors",
+      "All My Children"
+    ],
+    "correctAnswer": "All My Children",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1960s–1970s production",
+      "Agnes Nixon",
+      "All My Children",
+      "Rachel Davis",
+      "Ada Hobson",
+      "Unused Story Bible",
+      "Character Origins"
+    ]
+  },
+  {
+    "id": "tv_42792",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, in which New York borough did Another World make its studio home?",
+    "answers": [
+      "Queens",
+      "Manhattan",
+      "Brooklyn",
+      "The Bronx"
+    ],
+    "correctAnswer": "Brooklyn",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1960s–1970s production",
+      "Brooklyn Studio",
+      "New York City",
+      "Programme Production",
+      "Studio Location",
+      "NBC Soap",
+      "Behind The Scenes"
+    ]
+  },
+  {
+    "id": "tv_42793",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, for which television award category did Another World receive a nomination in 1972?",
+    "answers": [
+      "Outstanding Television Movie",
+      "Outstanding Achievement in Daytime Drama - Individuals",
+      "Outstanding Limited Drama Series",
+      "Outstanding Children's Programme"
+    ],
+    "correctAnswer": "Outstanding Achievement in Daytime Drama - Individuals",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1960s–1970s awards",
+      "1972 Emmy Awards",
+      "Primetime Emmy Historical Category",
+      "Daytime Drama Individuals",
+      "Television Academy",
+      "Award Nomination",
+      "Early Recognition"
+    ]
+  },
+  {
+    "id": "tv_42794",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which head writer preceded Harding Lemay before Lemay took over Another World in 1971?",
+    "answers": [
+      "Robert Cenedella",
+      "Douglas Marland",
+      "James E. Reilly",
+      "Michael Malone"
+    ],
+    "correctAnswer": "Robert Cenedella",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "Daytime Soap Opera",
+      "Written Questions",
+      "Original 1964–1974 Period",
+      "USA Television",
+      "Section: Audit 1960s–1970s production",
+      "Robert Cenedella",
+      "Harding Lemay",
+      "1971 Transition",
+      "Head Writer",
+      "Writing Team",
+      "Programme Production"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==106||new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
- questions.some((q,i)=>q.id!=='tv_'+String(26820+i)||q.category!=='TV'||q.topic!=='Another World'||
+ questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(26820+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.category!=='TV'||q.topic!=='Another World'||
  q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
  q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<13||
  new Set(q.tags).size!==q.tags.length||!q.dailyEligible||
