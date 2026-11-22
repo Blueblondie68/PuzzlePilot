@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 421
 // All Saints (Australia): Season 2 (1999), 43 episodes.
 // Follows Pack 420. First ID: tv_24066.
-// WordPad-ready CommonJS. All Saints remains ongoing in the master spreadsheet.
+// WordPad-ready CommonJS. All Saints ended in 2009; later-season audit coverage remains outstanding.
 // Each row: question | correct | wrong 1 | wrong 2 | wrong 3 | difficulty | seven individual tags.
 // Episode storylines cross-checked with the 1999 episode guide; keep years in tags.
 'use strict';
@@ -130,9 +130,35 @@ Which sister in religious life faced pressure to move away from her order's comm
 Which colleague's departure brought an end to Jared's romance early in Season 2?|Samantha O'Hara|Rose Carlton|Kylie Preece|Regina Butcher|Medium|Jared Levine|Samantha O'Hara|Relationship Breakup|Family Bereavement|1999 Romance|Head To Head|Season Two Arc
 Which actor portrayed Connor's estranged brother Greg Costello during the 1999 season?|Terry Serio|Jake Blundell|Peter Lamb|Myles Pollard|Hard|Terry Serio|Greg Costello|Connor Costello|Estranged Brothers|Drug Addiction|Actor Identification|1999 Recurring Cast`;
 
+
+// Series 2 awards and episode-story gap audit; original question IDs remain stable.
+const AUDIT_ORIGINAL_COUNT = 115;
+const AUDIT_FIRST_ID = 42115;
+const auditFacts = `Which All Saints Series 2 episode won the 1999 AFI Award for Best Episode in a Television Drama Series?|Head to Head|Truth and Consequence|Disaster Plan|Ghosts of Christmas Past|Medium|Head to Head|1999 AFI Awards|Australian Film Institute|winning episode|Season 2|episode seventeen|industry honour
+In which award category did the All Saints episode Head to Head win at the 1999 AFI Awards?|Best Episode in a Television Drama Series|Best Documentary Series|Best Children's Television Drama|Best Feature Film|Medium|1999 AFI Award|Head to Head|television drama episode|episode award|Australian Film Institute|prize category|production achievement
+At the 2000 Logie Awards which All Saints actress was nominated for the Gold Logie?|Georgie Parker|Libby Tanner|Judith McGrath|Celia Ireland|Medium|Georgie Parker|2000 Logies|Gold Logie|popular personality|nomination|Terri Sullivan|Australian TV awards
+At the 2000 Logie Awards which outstanding programme honour was All Saints nominated for?|Most Outstanding Program|Most Outstanding News Reporter|Most Popular Sports Program|Most Outstanding Documentary|Medium|2000 Logies|Most Outstanding Program|nomination|Australian TV awards|Seven Network|programme recognition|awards category
+In All Saints episode Truth and Consequence what kind of fundraising match exposed tensions among Ward 17 colleagues?|Netball|Cricket|Basketball|Tennis|Medium|Truth and Consequence|episode two|1999|Bron Craig|fundraising game|workplace rivalry|ward staff
+In All Saints episode Aftershocks where did Ben revive a young girl while recovering from post-traumatic stress?|At a shopping mall|At a football stadium|At a school assembly|At a train station|Medium|Aftershocks|episode three|Ben Markham|resuscitation|shopping mall|post traumatic stress|ambulance career
+In All Saints episode The Longest Day which patient's early discharge had serious consequences?|A woman recovering on a corridor trolley|The visiting Health Minister|A young patient with asthma|A retired ward clerk|Medium|The Longest Day|episode four|bed shortage|premature discharge|postoperative patient|health minister visit|ward pressure
+In All Saints episode Getting to Know You which doctor's diagnostic mistake strained a developing romance?|Samantha O'Hara|Mitch Stevens|Luke Forlano|Kylie Preece|Medium|Getting to Know You|episode six|Samantha O'Hara|diagnostic error|Jared Levine|romance|professional confidence
+In All Saints episode Friends and Lovers whose missing child led him to reconsider his responsibilities as a parent?|Peter Morrison's|Ben Markham's|Connor Costello's|Luke Forlano's|Medium|Friends and Lovers|episode eleven|Peter Morrison|missing son|fatherhood|family responsibilities|Jaz Hillerman farewell
+In All Saints episode Judgement Day who met Jared Levine's mother for the first time?|Samantha O'Hara|Bron Craig|Jaz Hillerman|Terri Sullivan|Medium|Judgement Day|episode twelve|Jared Levine|Samantha O'Hara|family introduction|relationship difficulties|1999
+In All Saints episode An Irish Lullaby what disaster led a bystander to rescue a person with alcohol dependency?|A warehouse fire|A coastal flood|A train derailment|A factory explosion|Medium|An Irish Lullaby|episode sixteen|warehouse fire|alcohol dependency|bystander rescue|Ben Markham|Bron Craig
+In All Saints episode Head to Head what past decision troubled a patient diagnosed with breast cancer?|Giving up a child for adoption|Abandoning her medical training|Leaving her husband at the altar|Selling a family home|Medium|Head to Head|episode seventeen|breast cancer|businesswoman|past adoption|Stephanie Markham|life regrets
+In All Saints episode Shoot the Messenger which teenage football scholarship holder was found to have only one kidney?|Seb Connelly|Brett Cameron|Alan Cameron|Thomas Ferry|Medium|Shoot the Messenger|episode twenty two|Seb Connelly|football scholarship|single kidney|post appendectomy|career concern
+In All Saints episode In With the New whose wife tried to find him a future partner while she was terminally ill?|Owen's|Ben Markham's|Luke Forlano's|Connor Costello's|Medium|In With the New|episode twenty three|Hilary|Owen|terminal cancer|Von Ryan|future companion
+In All Saints episode Three's a Crowd which ambulance worker was newly promoted and keen to use her new skills?|Bron Craig|Ben Markham|Terri Sullivan|Jared Levine|Medium|Three's a Crowd|episode thirty|Bron Craig|ambulance promotion|nuisance calls|career progression|1999
+In All Saints episode Time Bombs which football star faced a dilemma over steroid treatment and his public anti-drugs stance?|Darren Rigg|Roger|Seb Connelly|Greg Costello|Medium|Time Bombs|episode thirty one|Darren Rigg|Cougars|anti drugs campaign|steroid medication|grand final
+In All Saints episode Memories by Moonlight what illness had caused Lillian Gehler's severe short-term memory loss?|Herpes simplex encephalitis|Parkinson's disease|Meningococcal meningitis|Multiple sclerosis|Hard|Memories by Moonlight|episode thirty two|Lillian Gehler|memory loss|viral encephalitis|Von Ryan|patient history
+In All Saints episode The Ties That Bind what drug did Deb and Tim inject during their suicide pact?|Insulin|Morphine|Adrenaline|Heparin|Medium|The Ties That Bind|episode thirty six|Deb and Tim|cystic fibrosis|suicide pact|insulin injection|clinical emergency
+In All Saints episode Everyone Loves a Winner whose life did Terri Sullivan save in an emergency involving choking?|A child|An elderly surgeon|A pregnant boxer|An ambulance driver|Medium|Everyone Loves a Winner|episode forty|Terri Sullivan|choking emergency|rescue|neighbour admiration|hospital life
+In All Saints episode Blood and Water which organ transplant was considered after Eddie Furlong's overdose?|Liver|Kidney|Heart|Lung|Medium|Blood and Water|episode forty one|Eddie Furlong|paracetamol overdose|liver transplant|brother Marty|boating accident
+In All Saints episode Ghosts of Christmas Past where had the aid worker Carol Sherwood served before developing unexplained paralysis?|Somalia|Nepal|Haiti|Cambodia|Medium|Ghosts of Christmas Past|episode forty three|Carol Sherwood|aid worker|Somalia|psychological trauma|Mitch Stevens`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -147,9 +173,14 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In ')
+      ? 'In All Saints episode ' + question.slice(3)
+      : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
