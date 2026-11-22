@@ -2,7 +2,7 @@
 // As Time Goes By (BBC One): Series 6-9 (1997-2002) and 2005 reunion specials.
 // Completes the programme coverage begun in Pack 435.
 // First ID: tv_25698. WordPad-ready CommonJS.
-// Check user's saved copy against this file before any GitHub or Render deployment.
+// Series 6-9 and 2005 reunion specials; completes the finished programme.
 'use strict';
 
 const FIRST_ID = 25698;
@@ -113,9 +113,31 @@ What public event did Stephen and Penny attend in his pursuit of celebrity statu
 What did Judith hide in Penny and Stephen's car as a practical joke in the reunion?|Alistair's lingerie purchases|Rocky's dancing shoes|Lionel's old army medals|A stack of old love letters|Hard|Reunion Part Two|2005|Judith Hanson|Alistair Deacon|Lingerie|Penny And Stephen|Prank
 Where did the extended family end up together after separate mishaps in the final reunion?|A hospital accident and emergency department|An airport departure lounge|A police station interview room|A theatre dressing room|Easy|Reunion Part Two|2005|Hospital A And E|Rocky Injury|Stephen And Penny|Family Gathering|Finale`;
 
+
+// Focused audit: 1998 BAFTA nomination, supporting cast, reunion dates and production.
+// Preserve the original 98 question IDs and answer data.
+const AUDIT_ORIGINAL_COUNT = 98;
+const AUDIT_FIRST_ID = 42473;
+const auditFacts = `Which As Time Goes By actress received a BAFTA Comedy Performance nomination in 1998?|Judi Dench|Moira Brooker|Jenny Funnell|Joan Sims|Medium|1998 BAFTA TV Awards|Judi Dench|Comedy Performance|Award Nomination|Jean Hardcastle|British Academy|Series Six
+Who won the 1998 BAFTA Comedy Performance award for which As Time Goes By actress Judi Dench was nominated?|Steve Coogan|Richard Wilson|David Jason|Martin Clunes|Medium|1998 BAFTA Awards|Steve Coogan|Im Alan Partridge|Comedy Performance Winner|Judi Dench Nomination|Award Results|British Comedy
+Which actor portrayed policeman Harry in the later series of As Time Goes By?|David Michaels|Daniel Ryan|Philip Bretherton|Paul Chapman|Medium|David Michaels|Harry|Sandy Edwards|Policeman|Series Seven To Nine|Supporting Cast|Actor Identification
+Which actor played hired tough man Nails in the As Time Goes By episode The Stalker?|Nick Bartlett|Kristopher Milnes|David Michaels|Iain Rogerson|Medium|Nick Bartlett|Nails|The Stalker|Series Six|Alistair Deacon|Guest Performer|Actor Identification
+Which performer played the teenage admirer mistaken for a stalker in As Time Goes By Series 6?|Kristopher Milnes|Nick Bartlett|Mark Benton|Daniel Ryan|Medium|Kristopher Milnes|The Stalker|Teenage Admirer|Sandy Edwards|Series Six|Guest Cast|Actor Identification
+Who portrayed Judith's sports-journalist boyfriend Paul in As Time Goes By Series 6?|Michael Fenton Stevens|Paul Chapman|David Michaels|Mark Benton|Medium|Michael Fenton Stevens|Paul|Judith Hanson|Sports Journalist|Series Six|Guest Role|Actor Identification
+Which actress played the homeless young woman called Dave in As Time Goes By Series 9?|Lara Cazalet|Ruth Jones|Jenny Funnell|Georgie Glen|Medium|Lara Cazalet|Dave|What Now|Homeless Young Woman|Series Nine|Guest Actor|2002 Storyline
+Which actress portrayed Mrs Thrupp at the charity party in As Time Goes By Series 7?|Frances Cox|Janet Henfrey|Joan Sims|Moyra Fraser|Medium|Frances Cox|Mrs Thrupp|Old Folks Party|Series Seven|Guest Actress|1998 Episode|Character Identification
+Which actor played Jean's former acquaintance James in As Time Goes By Series 7?|Norman Rodway|Frank Middlemass|Paul Chapman|Philip Bretherton|Medium|Norman Rodway|James|An Old Flame|Series Seven|Jean Pargetter|Guest Cast|Actor Identification
+Which actress appeared as Gilly in an episode of As Time Goes By Series 7?|Ruth Jones|Selina Cadell|Moira Brooker|Jenny Funnell|Medium|Ruth Jones|Gilly|Series Seven|1998|Guest Appearance|Comedy Actress|Early Screen Credit
+What was the title of the final regular-series episode of As Time Goes By before its 2005 reunion specials?|You Must Remember This|Going Online|The Wedding|The Proposal|Medium|You Must Remember This|2002 Episode|Series Nine Finale|Clip Show|Retrospective|Special Broadcast|Original Run
+In what year did the ninth regular series of As Time Goes By conclude?|2002|1998|2000|2005|Easy|2002|Series Nine|Final Regular Season|Television History|Before Reunion|BBC One|Broadcast Timeline
+On which date was the first reunion special of As Time Goes By broadcast on BBC One?|26 December 2005|12 January 1992|11 August 2002|30 December 2005|Medium|26 December 2005|Reunion Part One|Christmas Broadcast|BBC One|Series Finale Return|Television Dates|Special Episodes
+On which date did the final reunion special of As Time Goes By air on BBC One?|30 December 2005|26 December 2005|11 August 2002|10 January 2006|Medium|30 December 2005|Reunion Part Two|Last BBC Episode|Series Conclusion|Christmas Holiday|Broadcast Dates|Special Episodes
+Which American public broadcaster aired the two As Time Goes By reunion specials made in 2005?|PBS|HBO|CBS|ABC|Medium|PBS|American Broadcaster|2005 Reunion Specials|United States|International Airing|Broadcast Partnership|British Sitcom
+Which television company partnered with PBS to bring back As Time Goes By for its 2005 reunion specials?|DLT Entertainment|Hat Trick Productions|Granada Television|Tiger Aspect Productions|Medium|DLT Entertainment|PBS Partnership|2005 Reunion Specials|Transatlantic Production|Television Company|Broadcast Collaboration|BBC Sitcom`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(value => value.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields in ${id}; found ${fields.length}`);
@@ -130,15 +152,19 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : 'In the sitcom As Time Goes By, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
 
-if (questions.length !== 98 || questions[0]?.id !== 'tv_25698' ||
-    questions[questions.length - 1]?.id !== 'tv_25795' ||
+if (questions.length !== 114 || questions[0]?.id !== 'tv_25698' ||
+    questions[97]?.id !== 'tv_25795' ||
+    questions[questions.length - 1]?.id !== 'tv_42488' ||
     new Set(questions.map(q => q.id)).size !== questions.length ||
     new Set(questions.map(q => q.question.toLowerCase())).size !== questions.length ||
     questions.some(q => q.answers.length !== 4 || !q.answers.includes(q.correctAnswer) ||
