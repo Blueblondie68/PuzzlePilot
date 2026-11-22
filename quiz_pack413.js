@@ -8,10 +8,11 @@
  'use strict';
 
  const FIRST_ID = 23213;
- const commonTags = [
-   'television', 'All Creatures Great and Small 2020', 'Channel 5 drama',
-   'Yorkshire Dales', 'veterinary drama', 'James Herriot adaptation'
- ];
+ const PROGRAMME='All Creatures Great and Small (2020)';
+ const commonTags=['Television','All Creatures Great and Small 2020',
+ 'Programme: '+PROGRAMME,'Channel 5','Yorkshire Dales',
+ 'Veterinary Drama','James Herriot Adaptation','Ongoing Show',
+ 'Covered through Series 7 Episode 6','22 October 2026','Channel 5 remake'];
 
  // Question | correct | three wrong options | difficulty | seven specific tags.
  // Answer positions rotate automatically. Questions name the Channel 5 version.
@@ -139,12 +140,15 @@
      throw new Error(`Pack 413: duplicate answer option at row ${index + 1}`);
    }
    const tags = [...new Set([...commonTags, ...specificTags])];
-   if (tags.length !== 13) {
-     throw new Error(`Pack 413: expected 13 tags at row ${index + 1}, got ${tags.length}`);
+   if (tags.length < 12) {
+     throw new Error(`Pack 413: expected 12+ tags at row ${index + 1}, got ${tags.length}`);
    }
    return {
      id: `tv_${FIRST_ID + index}`,
      category: 'Television',
+     programme: PROGRAMME,
+     coverageStatus: 'Continuing',
+     coveredThrough: '2026-10-22',
      question,
      answers,
      correctAnswer,
@@ -154,4 +158,53 @@
    };
  });
 
- module.exports = questions;
+ 
+// CHANNEL 5 ALL CREATURES GREAT AND SMALL (2020+) — CONTINUING.
+// All 103 original IDs tv_23213–tv_23315 preserved.
+// New IDs begin tv_41808. Original BBC version is separate Pack 412.
+// Episodes aired through 22 October 2026: seven series, six regular
+// episodes in seventh series. December 2026 special and Series 8 NOT aired
+// as of this review and are NOT included in this question coverage.
+// Official broadcaster's 2026 episodes:
+// https://www.channel5.com/all-creatures-great-and-small/season-7/back-to-school
+// Episode guide and real character/animal story summaries:
+// https://www.tvmaze.com/shows/42836/all-creatures-great-and-small/episodeguide
+// https://thetvdb.com/series/all-creatures-great-and-small-2020/allseasons/official
+// 2025–26 behind-the-scenes programmes listed in the episode guide.
+// LAVENDER on spreadsheet; next planned check 1 January 2027.
+const audit413Rows=[["S1E2 Another Farnon","What has Tristan hidden about the results of his veterinary exams?","He has not really passed them","He missed his graduation ceremony","He has already taken a London job","He has withdrawn from the profession","Tristan misleads Siegfried"],["S1E3 Andante","What happens to the money Tristan collects in outstanding surgery bills?","He loses it","He donates it to charity","He invests it on a farm","He pays off his college loan","Tristan loses practice money"],["S1E3 Andante","What risky action does Tristan take while trying to recover the practice's missing money?","He places a bet","He buys lottery tickets","He borrows from a client","He sells a horse","Attempt to cover financial mistake"],["S1E3 Andante","Which decision of James's makes an angry racehorse owner threaten legal action?","Putting down a suffering horse","Refusing to inspect the stables","Selling a thoroughbred","Missing the race meeting","Ethical dilemma at racecourse"],["S1E4 A Tricki Case","Where does James keep the pampered dog while enforcing his health regime?","At Skeldale House","At a boarding kennel","At an army barracks","At the Aldersons' farm","Tricki recuperates from overfeeding"],["S1E5 All's Fair","What dishonest inducements do livestock exhibitors offer James at the Darrowby Show?","Bribes","Forged marriage licences","Stolen race tickets","False vet qualifications","Pressure on show judge"],["S1E5 All's Fair","What transaction makes the Aldersons particularly eager for James's help at the show?","Selling their prize bull","Buying a new tractor","Renting grazing land","Building a second barn","Alderson family finances"],["S1E6 A Cure for All Ills","What threatens to choke Dick Rudd's prized cow?","An abscess in its throat","A broken jaw","A swallowed horseshoe","A severe bee sting","James's emergency cow patient"],["S1E6 A Cure for All Ills","What personal occasion does Mrs Hall discover James is celebrating?","His birthday","His graduation anniversary","His wedding anniversary","His retirement party","James's birthday in the snow"],["2020 Christmas","Which animal's labour takes James away from the Skeldale party on Christmas Eve?","A dog giving birth","A mare foaling","A cow calving","A sheep lambing","The Night Before Christmas emergency"],["S2E2 Semper Progrediens","What professional worry does Tristan express about his elder brother Siegfried?","He may be losing his edge","He intends to sell Skeldale","He wants to join the army","He has forgotten his training","Tristan's doubts"],["S2E3 We Can But Hope","Whose difficult circumstances trouble James and Helen's emerging romance?","A struggling young widow","A visiting film star","A wealthy racing driver","An elderly opera singer","Compassion for a widow"],["S2E4 Many Happy Returns","What extra challenge does Siegfried set Tristan on his birthday?","Greater veterinary responsibility","Running the Drovers Arms","Building a pigsty","Organising a cricket match","Tristan needs to step up"],["S2E5 The Last Man In","Which team is struggling to prepare for Mrs Pumphrey's annual cricket match?","The Darrowby Eleven","The Yorkshire County XI","The Heston Rangers","The Skeldale Juniors","Skeldale cricket rivals"],["S3E1 Second Time Lucky","What urgent task risks delaying James's wedding to Helen?","More tests for tuberculosis in a herd of cows","An emergency dog show","The village election","An auction of vet equipment","William Henry's farm call"],["S3E1 Second Time Lucky","What is the name of Mr Mulligan's vomiting dog that causes trouble at the surgery?","Clancy","Duke","Rock","Cedric","Vomiting dog during wedding preparations"],["S3E2 Honeymoon's Over","What mystery affects several calves at Kate Billings's farm?","Suspected poisoning","A broken water trough","An outbreak of ticks","A shortage of feed","James and Siegfried work together"],["S3E2 Honeymoon's Over","What emergency forces Tristan to take his new responsibility as a vet seriously?","A rival's dog urgently needs treatment","Siegfried takes up tennis","James attends an auction","Helen asks him to mend a roof","Tristan steps up"],["S3E4 What a Balls Up!","What threatens Skeldale's Ministry of Agriculture cattle-testing work?","Errors in James's paperwork","A shortage of vehicles","A dog breeding dispute","An argument about rent","Risk of losing TB contract"],["S3E4 What a Balls Up!","What transport does Tristan buy to help with practice errands and courtship?","A car","A bicycle","A motorcycle","A pony and trap","Tristan and Florence Pandhi"],["S3E5 Edward","Which work-experience pupil forms an unexpected bond with Siegfried?","Andrew Simmonds","Archie Tredwell","Geoff Hatfield","Sid Crabtree","Siegfried mentors pupil"],["S3E5 Edward","Which domestic responsibility is Tristan given while Mrs Hall is away?","Housekeeping","Managing the racecourse","Installing electricity","Organising a concert","Mrs Hall visits her son"],["2022 Christmas","What veterinary patient sends Siegfried to Sebright Saunders just before a race?","An injured racehorse","A lame sheepdog","An abandoned kitten","A sick cow","River in Merry Bloody Christmas"],["S4E2 Carpe Diem","Which ageing cow prompts Siegfried to reconsider his judgement?","Blossom","Harriet","Bella","Candy","Farmer Dakin's cow"],["S4E2 Carpe Diem","What unusual small animal disrupts the efficient new bookkeeper's plans?","A sick ferret","A pet rabbit","A circus monkey","A wounded hedgehog","Miss Harbottle era"],["S4E3 Right Hand Man","What is the name of the horse needing veterinary help as Carmody settles into Skeldale?","Teasel","River","Philbrick","Candy","Beloved horse's emergency"],["S4E3 Right Hand Man","At which community gathering do tensions over Cedric come to a head?","Mrs Pumphrey's tea party","The Darrowby Flower Show","The county fair","A parish council meeting","Community Tea Party"],["S4E4 By the Book","Which problem at the Crabtrees' farm calls for James and Carmody's help?","Illness among their animals","A missing sheepdog","A stray horse","An escaped pig","New farmers need support"],["S4E4 By the Book","What does trainee Richard Carmody depend on too heavily when facing real patients?","His textbooks","His father's advice","A radio programme","Weather forecasts","Classroom knowledge versus field work"],["S4E5 Papers","Which skill must Carmody improve before James leaves for military service?","Driving","Horse riding","Cooking","Cricket bowling","Trainee needs transport independence"],["S4E6 The Home Front","Which of Gerald Hammond's animals requires surgery he is reluctant to approve?","His dog Rock","His racehorse","His dairy cow","His pet ferret","Mrs Hall counsels Gerald"],["2023 Christmas","Which RAF mascot needs James's attention as he longs to rejoin Helen?","Georgie","Bunthorne","Tricki Woo","Alfred","On a Wing and a Prayer"],["2023 Christmas","What festive part do Siegfried and Carmody argue over playing?","Father Christmas","The carol soloist","The cake baker","The dance host","Community Christmas preparations"],["S5E2 Holding the Baby","Who accompanies James and Carmody on farm calls while Helen visits Heston?","Baby Jimmy","Mrs Pumphrey","Jenny Alderson","Mr Bosworth","James's working fatherhood"],["S5E2 Holding the Baby","What suspicious animal incident leads Mrs Hall and Siegfried to investigate?","A poisoned dog","A missing horse","A sheep trapped in a well","A stolen chicken","Wartime village animal case"],["S5E4 Uninvited Guests","Where does Mrs Hall send Tristan and Carmody to help them work together?","Pumphrey Manor","The village hall","A distant sheep farm","Darrowby Racecourse","Resolving tension between two vets"],["S5E5 Pair Bond","What pet does land girl Doris bring to James for treatment?","A poorly ferret","A wounded owl","An elderly sheepdog","A sick tortoise","Doris and Richard Carmody"],["S5E5 Pair Bond","What does Mr Bosworth initially suspect has fallen from an aeroplane into a field?","An explosive device","A radio transmitter","A bag of grain","A bicycle","Wartime safety panic"],["S5E5 Pair Bond","What substance is connected to the earlier poisoning of a village dog?","Rat poison","Cleaning bleach","Weedkiller","Paraffin","Farm poison link"],["S5E6 Glass Half Full","Which infection makes James feverish and causes hallucinations about the RAF?","Brucellosis","Influenza","Scarlet fever","Typhoid","James's wartime psychological strain"],["S5E6 Glass Half Full","Which homemade alcoholic drink do the Farnon brothers share after their car breaks down?","Wine","Cider","Whisky","Ale","Siegfried and Tristan reconcile"],["S6E1 Gathering the Flock","From which country does Tristan return following his wartime service?","Italy","France","Egypt","Greece","Tristan's return to Darrowby"],["S6E2 Old Dog New Tricks","What future does Mrs Pumphrey hope for her ageing pet Tricki?","Fathering puppies","Winning the Darrowby Show","Moving to a new kennel","Becoming a mascot","New generation of Tricki Woos"],["S6E6 Our Hearts Are Full","What disappears mysteriously from Heston Grange while James and Richard investigate?","A newborn calf","A dairy cow","A flock of geese","A tractor","An unusual farm mystery"],["2025 Christmas","Which troublesome animal receives another visit from Siegfried at Mrs Stokes's farm?","Hilda the goat","A donkey called Jane","A calf named River","A mare called Candy","Comfort and Joy"],["S7E1 Back to School","Who owns the Darrowby sweet shop where a poorly cat puzzles James?","Geoff Hatfield","Richard Carmody","Granville Bennett","Mr Bushell","Alfred's owner"],["S7E2 The Friesians Are Coming!","Which organisation brings Mrs Hall, Mrs Pumphrey and Maggie together for community support?","The Women's Institute","The police committee","The veterinary council","The farmers' union","Village support initiatives"],["S7E2 The Friesians Are Coming!","What advantage does Helen hope new Friesian cattle will bring to Heston Grange?","Higher milk production","Faster wool growth","More horse breeding","Cheaper feed","Modernisation of the dairy herd"],["S7E3 The Owl and the Pussycats","What practical difficulty upsets James and Helen's dinner plans with Granville and Zoe?","A babysitting crisis","A broken oven","A power cut","A missing car","Sick animal and dinner logistics"],["S7E4 Doppelgänger","Which member of Mrs Hall's family cannot visit on her birthday?","Her son Edward","Her brother Gerald","Her niece Jenny","Her sister Dorothy","Mrs Hall's birthday plans"],["S7E4 Doppelgänger","What unexpected arrival must Tristan investigate during Mrs Hall's birthday preparations?","A mystery dog","A stray llama","A missing fox cub","An escaped parrot","Mystery dog in Darrowby"],["S7E5 Farnon Herriot and Farnon","Which barber gives Tristan a cheap haircut before an important date with Charlotte?","Josh","Hugh","Dakin","Hollins","Tristan's romantic preparations"],["S7E6 Give Us This Day","What major change in his personal life is Siegfried preparing for?","Marriage to Dorothy","Moving to London","Adopting a child","Returning to university","Siegfried and Dorothy's relationship"],["2023 documentary special","Which former Yorkshire Vet presenter explores the television set with colleague Shona Searson?","Peter Wright","Julian Norton","Ben Fogle","Matt Baker","The Yorkshire Vet documentary"],["2025 documentary Behind the Magic","Which dog trainer presents Behind the Magic about the show's making?","Graeme Hall","Paul O'Grady","Graham Norton","Martin Clunes","Behind-the-scenes tour"],["2026 short set tour","Which pair of lead actors host an October 2026 tour of the drama's sets?","Nicholas Ralph and Rachel Shenton","Samuel West and Callum Woodhouse","Diana Rigg and Patricia Hodge","Anna Madeley and Tony Pitts","Tour of the Set"]];
+const audit413Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+for(const [episode,stem,correctAnswer,w1,w2,w3,focus] of audit413Rows){
+ const question='In Channel 5\'s All Creatures Great and Small, '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[w1,w2,w3];answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit413Norm)).size!==4)
+  throw Error('Pack 413 duplicate choices: '+stem);
+ const tags=['Television','Channel 5',PROGRAMME,'Programme: '+PROGRAMME,
+  'Original adaptation from 2020','James Herriot Adaptation',
+  'Yorkshire Dales','Darrowby Veterinary Practice','Veterinary Drama',
+  'Episode: '+episode,'Story detail: '+focus,'Answer: '+correctAnswer,
+  '2026 coverage checkpoint','Ongoing programme','Separate from BBC 1978 series'];
+ questions.push({id:'tv_'+(41808+questions.length-103),
+  category:'Television',programme:PROGRAMME,coverageStatus:'Continuing',
+  coveredThrough:'2026-10-22',question,answers,correctAnswer,
+  difficulty:'Medium',tags,dailyEligible:true});
+}
+const audit413Ids=new Set(),audit413Texts=new Set();
+for(const q of questions){
+ const stem=audit413Norm(q.question);
+ const isAdded=Number(q.id.slice(3))>=41808;
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ q.coverageStatus!=='Continuing'||q.coveredThrough!=='2026-10-22'||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ !stem.includes(audit413Norm('All Creatures Great and Small'))||
+ !stem.includes(audit413Norm('Channel 5'))||
+ q.answers.length!==4||new Set(q.answers.map(audit413Norm)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ audit413Ids.has(q.id)||audit413Texts.has(stem)||
+ (isAdded&&stem.includes(audit413Norm(q.correctAnswer))))
+  throw Error('Pack 413 audit module failed for '+q.id);
+ audit413Ids.add(q.id);audit413Texts.add(stem);
+}
+module.exports=questions;
