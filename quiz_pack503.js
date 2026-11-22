@@ -1,5 +1,5 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 503: Better Call Saul, Seasons 5–6 (FINAL)
-// 115 researched MCQs: Season 5 50 questions/10 episodes; Season 6 65 questions/13 episodes.
+// 146 audited MCQs: 115 original episode questions (Season 5: 50; Season 6: 65), plus 31 cast, storyline, awards and production additions.
 // IDs tv_28496–tv_28610; follows Pack 502 ending tv_28495.
 // Specific episode, year, storyline and character tags; five distinct questions per episode.
 // Episode evidence, checked 18 Nov 2026:
@@ -7,6 +7,15 @@
 // https://thetvdb.com/series/better-call-saul/seasons/official/6
 // https://en.wikipedia.org/wiki/Better_Call_Saul_season_5
 // https://en.wikipedia.org/wiki/Better_Call_Saul_season_6
+// Audit questions tv_43267–tv_43297; original IDs tv_28496–tv_28610 preserved.
+// Original 23 episodes represented. 22 November 2026 research additions, checked against Packs 501–502.
+// Sources: https://www.televisionacademy.com/shows/better-call-saul
+// https://www.amc.com/blogs/better-call-saul-earns-eight-emmy-nominations-for-its-final-episodes--1063463
+// https://www.amcglobalmedia.com/2022/06/27/carol-burnett-to-appear-as-a-guest-star-in-second-half-of-better-call-sauls-sixth-and-final-season/
+// https://www.tvline.com/casting-news/better-call-saul-jeff-recast-season-6-gene-omaha-1234848452/
+// https://www.tvinsider.com/1044794/better-call-saul-season-6-episode-6-recap-axe-and-grind/
+// https://www.tvinsider.com/1045558/
+// https://www.tvinsider.com/1056478/
 // Once Render approved, complete original six-season series qualifies for PURPLE status on TV tracker.
 'use strict';
 const questions = [
@@ -4032,9 +4041,1037 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==115||new Set(questions.map(q=>q.id)).size!==questions.length||
+// 22 November 2026 gap-audit additions: researched cast, story, production and awards facts.
+const auditQuestions = [
+  {
+    "id": "tv_43267",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 5, which actor reprises his Breaking Bad role as DEA agent Hank Schrader?",
+    "answers": [
+      "Dean Norris",
+      "Bryan Cranston",
+      "Steven Michael Quezada",
+      "David Costabile"
+    ],
+    "correctAnswer": "Dean Norris",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E03",
+      "Episode Title: The Guy for This",
+      "Section: Cast",
+      "Focus: Dean Norris returning as Hank",
+      "Answer: Dean Norris",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43268",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 5, which actor returns as Hank Schrader's DEA partner Steven Gomez?",
+    "answers": [
+      "Michael Mando",
+      "Steven Michael Quezada",
+      "Raymond Cruz",
+      "Tony Dalton"
+    ],
+    "correctAnswer": "Steven Michael Quezada",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E03",
+      "Episode Title: The Guy for This",
+      "Section: Cast",
+      "Focus: Gomez returning from Breaking Bad",
+      "Answer: Steven Michael Quezada",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43269",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 5, which actor portrays Ed Galbraith, the expert who offers people new identities?",
+    "answers": [
+      "Robert Forster",
+      "Michael McKean",
+      "Ed Begley Jr.",
+      "Jonathan Banks"
+    ],
+    "correctAnswer": "Robert Forster",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E01",
+      "Episode Title: Magic Man",
+      "Section: Cast",
+      "Focus: Ed Galbraith appearance",
+      "Answer: Robert Forster",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43270",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 5, which actor plays the cartel member Lalo Salamanca?",
+    "answers": [
+      "Tony Dalton",
+      "Steven Bauer",
+      "Mark Margolis",
+      "Javier Grajeda"
+    ],
+    "correctAnswer": "Tony Dalton",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E10",
+      "Episode Title: Something Unforgivable",
+      "Section: Cast",
+      "Focus: Lalo Salamanca performer",
+      "Answer: Tony Dalton",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43271",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which writer of Better Call Saul Season 5's 'Bagman' received a 2020 Emmy nomination for drama-series writing?",
+    "answers": [
+      "Peter Gould",
+      "Gordon Smith",
+      "Thomas Schnauz",
+      "Ann Cherkis"
+    ],
+    "correctAnswer": "Gordon Smith",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E08",
+      "Episode Title: Bagman",
+      "Section: Awards",
+      "Focus: 2020 Emmy writing nomination for Bagman",
+      "Answer: Gordon Smith",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43272",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which writer of Better Call Saul Season 5's 'Bad Choice Road' received a 2020 Emmy nomination for drama-series writing?",
+    "answers": [
+      "Vince Gilligan",
+      "Alison Tatlock",
+      "Thomas Schnauz",
+      "Gordon Smith"
+    ],
+    "correctAnswer": "Thomas Schnauz",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E09",
+      "Episode Title: Bad Choice Road",
+      "Section: Awards",
+      "Focus: 2020 Emmy writing nomination for Bad Choice Road",
+      "Answer: Thomas Schnauz",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43273",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Who directed Better Call Saul Season 5's desert survival episode 'Bagman'?",
+    "answers": [
+      "Peter Gould",
+      "Vince Gilligan",
+      "Michael Morris",
+      "Rhea Seehorn"
+    ],
+    "correctAnswer": "Vince Gilligan",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E08",
+      "Episode Title: Bagman",
+      "Section: Production",
+      "Focus: Bagman direction",
+      "Answer: Vince Gilligan",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43274",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which Better Call Saul Season 5 actor was nominated for a 2020 Emmy for Outstanding Supporting Actor for playing Gus Fring?",
+    "answers": [
+      "Jonathan Banks",
+      "Michael Mando",
+      "Patrick Fabian",
+      "Giancarlo Esposito"
+    ],
+    "correctAnswer": "Giancarlo Esposito",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E10",
+      "Episode Title: Something Unforgivable",
+      "Section: Awards",
+      "Focus: Supporting Actor Emmy nomination",
+      "Answer: Giancarlo Esposito",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43275",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 5's 'Bagman', what does Jimmy reluctantly drink after he and Mike run out of water?",
+    "answers": [
+      "Rainwater from a puddle",
+      "His own urine",
+      "An abandoned bottle of beer",
+      "Water from the car radiator"
+    ],
+    "correctAnswer": "His own urine",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E08",
+      "Episode Title: Bagman",
+      "Section: Storyline",
+      "Focus: Desert survival without water",
+      "Answer: His own urine",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43276",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 5's 'Bagman', what does Jimmy wear as a decoy to draw out the final attacker?",
+    "answers": [
+      "A reflective space blanket",
+      "A police uniform",
+      "Lalo's jacket",
+      "A bright yellow safety vest"
+    ],
+    "correctAnswer": "A reflective space blanket",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E08",
+      "Episode Title: Bagman",
+      "Section: Storyline",
+      "Focus: Desert ambush decoy",
+      "Answer: A reflective space blanket",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43277",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In a Better Call Saul Season 5 flashback, which instrument is teenage Kim carrying when she refuses a lift from her drinking mother?",
+    "answers": [
+      "A trumpet",
+      "A violin",
+      "A cello",
+      "A clarinet"
+    ],
+    "correctAnswer": "A cello",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 5 (2020)",
+      "Broadcast Year: 2020",
+      "Episode: S05E06",
+      "Episode Title: Wexler v. Goodman",
+      "Section: Storyline",
+      "Focus: Kim's schooldays and childhood family tensions",
+      "Answer: A cello",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43278",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 6, which veteran television comedian and actress plays Jeff's mother Marion?",
+    "answers": [
+      "Carol Burnett",
+      "Betty White",
+      "Jane Fonda",
+      "Margo Martindale"
+    ],
+    "correctAnswer": "Carol Burnett",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E10",
+      "Episode Title: Nippy",
+      "Section: Cast",
+      "Focus: Marion guest performer",
+      "Answer: Carol Burnett",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43279",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 6, which actor takes over the role of Omaha taxi driver Jeff from Don Harvey?",
+    "answers": [
+      "Pat Healy",
+      "Robert Forster",
+      "Jim O'Heir",
+      "David Ury"
+    ],
+    "correctAnswer": "Pat Healy",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E10",
+      "Episode Title: Nippy",
+      "Section: Cast",
+      "Focus: Jeff recast for final season",
+      "Answer: Pat Healy",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43280",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul's final episode, which actress returns as Hank Schrader's widow Marie?",
+    "answers": [
+      "Betsy Brandt",
+      "Anna Gunn",
+      "Laura Fraser",
+      "Krysten Ritter"
+    ],
+    "correctAnswer": "Betsy Brandt",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E13",
+      "Episode Title: Saul Gone",
+      "Section: Cast",
+      "Focus: Marie Schrader guest return",
+      "Answer: Betsy Brandt",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43281",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 6, which actor returns to play Walter White in flashbacks?",
+    "answers": [
+      "Bob Odenkirk",
+      "Bryan Cranston",
+      "Dean Norris",
+      "Aaron Paul"
+    ],
+    "correctAnswer": "Bryan Cranston",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E11",
+      "Episode Title: Breaking Bad",
+      "Section: Cast",
+      "Focus: Walter White cameo performer",
+      "Answer: Bryan Cranston",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43282",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 6, which actor returns as Jesse Pinkman, including a scene outside Saul's law office?",
+    "answers": [
+      "Aaron Paul",
+      "Jesse Plemons",
+      "Dean Norris",
+      "RJ Mitte"
+    ],
+    "correctAnswer": "Aaron Paul",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E12",
+      "Episode Title: Waterworks",
+      "Section: Cast",
+      "Focus: Jesse Pinkman cameo performer",
+      "Answer: Aaron Paul",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43283",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which Better Call Saul actress makes her TV directing debut with Season 6's 'Hit and Run'?",
+    "answers": [
+      "Rhea Seehorn",
+      "Betsy Brandt",
+      "Carol Burnett",
+      "Anna Gunn"
+    ],
+    "correctAnswer": "Rhea Seehorn",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E04",
+      "Episode Title: Hit and Run",
+      "Section: Production",
+      "Focus: Hit and Run directorial debut",
+      "Answer: Rhea Seehorn",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43284",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which actor who plays Gus Fring directs Better Call Saul Season 6's 'Axe and Grind'?",
+    "answers": [
+      "Jonathan Banks",
+      "Giancarlo Esposito",
+      "Bob Odenkirk",
+      "Patrick Fabian"
+    ],
+    "correctAnswer": "Giancarlo Esposito",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E06",
+      "Episode Title: Axe and Grind",
+      "Section: Production",
+      "Focus: Axe and Grind TV directorial debut",
+      "Answer: Giancarlo Esposito",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43285",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Who directed Better Call Saul Season 6's 'Point and Shoot', featuring Gus and Lalo's final confrontation?",
+    "answers": [
+      "Thomas Schnauz",
+      "Vince Gilligan",
+      "Peter Gould",
+      "Michael Morris"
+    ],
+    "correctAnswer": "Vince Gilligan",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E08",
+      "Episode Title: Point and Shoot",
+      "Section: Production",
+      "Focus: Point and Shoot direction",
+      "Answer: Vince Gilligan",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43286",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which Better Call Saul writer was nominated for a 2022 Primetime Emmy for scripting Season 6's 'Plan and Execution'?",
+    "answers": [
+      "Gordon Smith",
+      "Peter Gould",
+      "Thomas Schnauz",
+      "Ann Cherkis"
+    ],
+    "correctAnswer": "Thomas Schnauz",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E07",
+      "Episode Title: Plan and Execution",
+      "Section: Awards",
+      "Focus: 2022 Emmy writing nomination",
+      "Answer: Thomas Schnauz",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43287",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which Better Call Saul writer received a 2023 Emmy nomination for the Season 6 episode 'Point and Shoot'?",
+    "answers": [
+      "Gordon Smith",
+      "Vince Gilligan",
+      "Thomas Schnauz",
+      "Heather Marion"
+    ],
+    "correctAnswer": "Gordon Smith",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E08",
+      "Episode Title: Point and Shoot",
+      "Section: Awards",
+      "Focus: 2023 Emmy writing nomination",
+      "Answer: Gordon Smith",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43288",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which Better Call Saul writer received a 2023 Emmy nomination for the series finale 'Saul Gone'?",
+    "answers": [
+      "Ann Cherkis",
+      "Peter Gould",
+      "Gordon Smith",
+      "Alison Tatlock"
+    ],
+    "correctAnswer": "Peter Gould",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E13",
+      "Episode Title: Saul Gone",
+      "Section: Awards",
+      "Focus: 2023 Emmy writing nomination for Saul Gone",
+      "Answer: Peter Gould",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43289",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Who both wrote and directed Better Call Saul's series finale 'Saul Gone'?",
+    "answers": [
+      "Vince Gilligan",
+      "Thomas Schnauz",
+      "Peter Gould",
+      "Rhea Seehorn"
+    ],
+    "correctAnswer": "Peter Gould",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E13",
+      "Episode Title: Saul Gone",
+      "Section: Production",
+      "Focus: Series finale writer and director",
+      "Answer: Peter Gould",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43290",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In 2022, which Better Call Saul actress received an Emmy nomination for playing Kim Wexler?",
+    "answers": [
+      "Betsy Brandt",
+      "Rhea Seehorn",
+      "Anna Gunn",
+      "Laura Fraser"
+    ],
+    "correctAnswer": "Rhea Seehorn",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E07",
+      "Episode Title: Plan and Execution",
+      "Section: Awards",
+      "Focus: Supporting Actress Emmy nomination",
+      "Answer: Rhea Seehorn",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43291",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Which Better Call Saul Season 6 episode received a 2022 Emmy nomination for Outstanding Music Supervision?",
+    "answers": [
+      "Black and Blue",
+      "Nippy",
+      "Point and Shoot",
+      "Waterworks"
+    ],
+    "correctAnswer": "Black and Blue",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E05",
+      "Episode Title: Black and Blue",
+      "Section: Awards",
+      "Focus: 2022 Emmy Music Supervision nomination",
+      "Answer: Black and Blue",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43292",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "Across its six seasons, how many Primetime Emmy Awards did Better Call Saul win despite receiving 53 nominations?",
+    "answers": [
+      "Three",
+      "One",
+      "Seven",
+      "None"
+    ],
+    "correctAnswer": "None",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E13",
+      "Episode Title: Saul Gone",
+      "Section: Awards",
+      "Focus: 53 Emmy nominations without a win",
+      "Answer: None",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43293",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In a Better Call Saul Season 6 childhood flashback, what does Kim's mother secretly give her after the shoplifting incident?",
+    "answers": [
+      "A pair of earrings and a necklace",
+      "A stolen watch",
+      "A bundle of banknotes",
+      "A gold bracelet"
+    ],
+    "correctAnswer": "A pair of earrings and a necklace",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E06",
+      "Episode Title: Axe and Grind",
+      "Section: Storyline",
+      "Focus: Kim's childhood theft and jewellery",
+      "Answer: A pair of earrings and a necklace",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43294",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 6's 'Axe and Grind', which former member of Werner's crew does Lalo attack while investigating Gus?",
+    "answers": [
+      "Kai",
+      "Casper",
+      "Werner",
+      "Mike"
+    ],
+    "correctAnswer": "Casper",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E06",
+      "Episode Title: Axe and Grind",
+      "Section: Storyline",
+      "Focus: Lalo interrogates Werner's former worker",
+      "Answer: Casper",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43295",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul Season 6's 'Plan and Execution', whom is Howard's supposedly trusted private investigator secretly working for?",
+    "answers": [
+      "Cliff Main",
+      "Gus Fring",
+      "Jimmy and Kim",
+      "The DEA"
+    ],
+    "correctAnswer": "Jimmy and Kim",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E07",
+      "Episode Title: Plan and Execution",
+      "Section: Storyline",
+      "Focus: Compromised investigator Genidowski",
+      "Answer: Jimmy and Kim",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43296",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul's series finale, which H. G. Wells novel does Chuck have in the flashback about his relationship with Jimmy?",
+    "answers": [
+      "The Invisible Man",
+      "The Time Machine",
+      "The War of the Worlds",
+      "The First Men in the Moon"
+    ],
+    "correctAnswer": "The Time Machine",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E13",
+      "Episode Title: Saul Gone",
+      "Section: Storyline",
+      "Focus: Time travel and regrets motif",
+      "Answer: The Time Machine",
+      "Source Audit: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43297",
+    "category": "TV",
+    "topic": "Better Call Saul",
+    "question": "In Better Call Saul's final episode, where has Kim begun volunteering to give free legal assistance in Florida?",
+    "answers": [
+      "Central Florida Legal Aid",
+      "A public defender's office in Miami",
+      "A university law faculty",
+      "The Florida attorney general's office"
+    ],
+    "correctAnswer": "Central Florida Legal Aid",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Crime Drama",
+      "Legal Drama",
+      "Programme: Better Call Saul",
+      "AMC Original Series",
+      "Breaking Bad Prequel",
+      "Written Quiz",
+      "Season: 6 (2022)",
+      "Broadcast Year: 2022",
+      "Episode: S06E13",
+      "Episode Title: Saul Gone",
+      "Section: Storyline",
+      "Focus: Kim returns to volunteer legal service",
+      "Answer: Central Florida Legal Aid",
+      "Source Audit: 22 November 2026"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+
+if(questions.length!==146||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(28496+i)||q.topic!=='Better Call Saul'||q.category!=='TV'||
+questions.some((q,i)=>q.id!==(i<115?'tv_'+(28496+i):'tv_'+(43267+i-115))||q.topic!=='Better Call Saul'||q.category!=='TV'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<16||
 new Set(q.tags).size!==q.tags.length||q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))
