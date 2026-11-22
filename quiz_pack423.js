@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 423
 // All Saints (Australia): Season 4 (2001), 43 episodes.
 // Follows Pack 422. First ID: tv_24283.
-// WordPad-ready CommonJS. All Saints remains ongoing in master tracker.
+// WordPad-ready CommonJS. All Saints finished in 2009; later seasons still require audit.
 // Question | correct | 3 distractors | difficulty | 7 specific tags.
 // Researched against 2001 episode synopses and cast guides.
 'use strict';
@@ -125,9 +125,39 @@ Which television quiz featured All Saints cast members in a one-off special shor
 Which All Saints actor won the cast edition of The Weakest Link shown in 2001?|Erik Thomson|Conrad Coleby|Ben Tari|Martin Lynes|Hard|Erik Thomson|Weakest Link Winner|Cast Special|2001 Quiz Appearance|Charity Prize|Television Crossover|Actor Identification
 Which All Saints actress was runner-up to Erik Thomson in The Weakest Link cast special?|Ling-Hsueh Tang|Georgie Parker|Judith McGrath|Joy Smithers|Hard|Ling Hsueh Tang|Weakest Link Runner Up|All Saints Special|2001 Game Show|Cast Crossover|Kylie Preece|Charity Quiz`;
 
+
+// Season four episode and AFI/Logie awards gap audit. Earlier IDs and answers retained.
+const AUDIT_ORIGINAL_COUNT = 110;
+const AUDIT_FIRST_ID = 42157;
+const auditFacts = `Which Logie award did All Saints win for the programme itself in 2002?|Most Popular Program|Most Outstanding Drama Series|Most Popular Comedy Program|Most Outstanding Mini Series|Medium|2002 Logies|Most Popular Program|Seven Network|audience vote|series award|Australian television|programme honour
+Which All Saints actress won the 2002 Logie for Most Popular Actress?|Libby Tanner|Georgie Parker|Sonia Todd|Judith McGrath|Medium|Libby Tanner|Bron Craig|2002 Logies|Most Popular Actress|performer win|acting honour|popular vote
+Which All Saints actress won a second consecutive Gold Logie in 2002?|Georgie Parker|Libby Tanner|Rachel Gordon|Celia Ireland|Medium|Georgie Parker|Terri Sullivan|2002 Gold Logie|consecutive wins|popular personality|acting recognition|Logie history
+How many nominations did All Saints receive at the 2002 Logie Awards?|Ten|Three|Six|Fourteen|Medium|2002 Logies|ten nominations|most nominated|Australian television|Seven Network|awards record|recognition
+Which All Saints actor received a 2002 Logie nomination for Most Popular New Male Talent?|Conrad Coleby|Erik Thomson|Brian Vriends|Brett Climo|Medium|Conrad Coleby|Scott Zinenko|2002 Logies|new male talent|award nomination|ambulance officer|actor recognition
+Which All Saints Series 4 episode received a 2001 AFI nomination for Best Episode in a Long Running Television Drama Series?|The Sign|Wild Justice|The Heat Is On|A Little Death|Medium|The Sign|2001 AFI Awards|episode twenty two|award nomination|drama episode|Australian Film Institute|Season Four
+Which young All Saints performer was nominated for a 2001 AFI Young Actor's Award for The Sign?|Joshua Jay|Conrad Coleby|Josh Quong Tart|Jeremy Cumpston|Hard|Joshua Jay|The Sign|2001 AFI Awards|Young Actors Award|acting nomination|episode twenty two|young performer
+Which drama award was All Saints nominated for but did not win at the 2002 Logies?|Most Outstanding Drama Series|Most Outstanding Comedy Program|Most Outstanding Documentary Series|Most Outstanding Children's Program|Medium|2002 Logies|Most Outstanding Drama Series|nomination|programme recognition|not winner|Australian television|Seven Network
+In All Saints episode The Heat Is On whose rejected romantic overtures made working with Bron difficult?|Connor Costello|Scott Zinenko|Jared Levine|Luke Forlano|Medium|The Heat Is On|Connor Costello|Bron Craig|unrequited feelings|season opener|workplace tension|failed courtship
+In All Saints episode Bend Till You Break which former patient returned for spinal surgery?|Brett Addison|Alex Richards|Ian Hanrahan|Zac|Medium|Bend Till You Break|Brett Addison|spinal surgery|returning patient|Bron Craig|episode four|ward storyline
+In All Saints episode A Matter of Choice where did Ben and Scott attend a collapsed worker?|A biscuit factory|A football stadium|An airport terminal|A railway tunnel|Medium|A Matter of Choice|Ben Markham|Scott Zinenko|biscuit factory|worker collapse|ambulance call|episode five
+In All Saints episode Defiance and Denial which nurse defied a senior surgeon over patient care?|Connor Costello|Jared Levine|Bron Craig|Von Ryan|Medium|Defiance and Denial|Connor Costello|senior surgeon|patient advocacy|medical disagreement|episode seven|hospital hierarchy
+In All Saints episode Secrets and Lies what medical mistake caused trouble for acting manager Kate Larsen?|Giving medicine to the wrong patient|Losing the controlled-drugs key|Forgetting to order insulin|Dispensing an expired vaccine|Medium|Secrets and Lies|Kate Larsen|medication error|wrong patient|patient safety|episode eight|nursing management
+In All Saints episode Secrets and Lies which patient's physical development posed sensitive questions about identity?|A young woman born with ambiguous genitalia|An elderly patient with facial scarring|A toddler with diabetes|An adult with severe burns|Medium|Secrets and Lies|Bron Craig|intersex patient|ambiguous genitalia|patient dignity|episode eight|medical confidentiality
+In All Saints episode Changing Places where did Ben and Scott attend a woman who collapsed in pain?|A train station|A shopping centre|An industrial freezer|A hospital corridor|Medium|Changing Places|Ben Markham|Scott Zinenko|train station|collapsed woman|ambulance emergency|episode nine
+In All Saints episode Too Little Too Late what management decision increased risks for hospital patients?|Cutting costs at the expense of care|Opening a new private ward|Hiring more nurses|Replacing the hospital board|Medium|Too Little Too Late|hospital budget|cost cutting|patient safety|administration|Ward Seventeen|episode ten
+In All Saints episode Lest We Forget where had two teenagers lived before an explosion brought them to the ward?|A state boys home|A seaside hostel|A boarding school|A prison hospital|Medium|Lest We Forget|teenage patients|state boys home|explosion|ward assumptions|episode twelve|social care
+In All Saints episode All the Sons and Daughters what birthday surprise did Scott organise for Ben?|An on-stage tango with a lingerie waitress|A hot-air balloon flight|A fishing trip with Connor|A signed football shirt|Medium|All the Sons and Daughters|Scott Zinenko|Ben Markham|birthday treat|tango|ambulance colleagues|episode fifteen
+In All Saints episode Growing Pains what illness did Mitch diagnose in a homeless woman who declined treatment?|Gangrene|Lupus|Scarlet fever|Appendicitis|Medium|Growing Pains|Mitch Stevens|homeless patient|gangrene|treatment refusal|medical autonomy|episode seventeen
+In All Saints episode Private Lives how did a diagnostic mix-up affect a patient?|He was wrongly told he was dying|He had an unnecessary transplant|He was discharged with a broken leg|He was told his wife had died|Medium|Private Lives|terminal illness|mistaken diagnosis|patient distress|medical error|episode twenty seven|wrong prognosis
+In All Saints episode Look into My Eyes which wartime chemical was linked to a patient's unusual tumours?|Agent Orange|Mustard gas|Chlorine|Phosgene|Medium|Look into My Eyes|Agent Orange|second generation exposure|tumours|Mitch Stevens|euthanasia dilemma|episode thirty one
+In All Saints episode Sympatico which unusual relationship between patients intrigued Mitch Stevens?|Twin siblings with a mysterious bond|Identical patients with matching names|A father and son with matching hallucinations|Two unrelated people sharing a birthdate|Medium|Sympatico|twin patients|unusual bond|Mitch Stevens|episode thirty four|diagnostic mystery|family connection
+In All Saints episode Child's Play why was a three-year-old boy left alone by his mother?|She had gone to play poker machines|She was working an overnight shift|She was attending a fitness class|She had gone to the supermarket|Medium|Childs Play|poker machines|unattended child|Ben Markham|family tragedy|episode thirty nine|parental neglect
+In All Saints episode A Little Death why was Luke Forlano prohibited from operating?|He was suspected of carrying golden staph|His medical licence had expired|He refused compulsory training|His eyesight had deteriorated|Medium|A Little Death|Luke Forlano|golden staph|suspected carrier|operating ban|infection control|episode forty one
+In All Saints episode The Other Side of Perfection which neurological condition prompted an innovative and risky surgery?|Parkinson's disease|Huntington's disease|Multiple sclerosis|Motor neurone disease|Medium|The Other Side of Perfection|Parkinsons disease|innovative surgery|Luke Forlano|medical breakthrough|episode forty two|operation risk`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -142,9 +172,14 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In ')
+      ? 'In All Saints episode ' + question.slice(3)
+      : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
