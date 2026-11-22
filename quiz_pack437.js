@@ -2,7 +2,7 @@
 // Auf Wiedersehen, Pet: Series 1 (1983-84) and Series 2 (1986).
 // Pack 438 will cover the later BBC series and specials.
 // Follows Pack 436; first ID: tv_25796. WordPad-ready CommonJS.
-// Save in WordPad, then return the saved copy for verification before deployment.
+// Original ITV Series 1-2; BBC Series 3-4 and specials are covered in Pack 438.
 'use strict';
 
 const FIRST_ID = 25796;
@@ -120,9 +120,39 @@ Which original cast member died in 1985 before the second series finished filmin
 How did the production finish some scenes after Gary Holton's death?|Script rewrites and body doubles|A computer-generated replica|Replacing Wayne with a different named actor|Removing the entire Spanish story|Medium|Gary Holton|Series Two Production|Script Rewrites|Body Double|Wayne Norris|1985|Production Methods
 To whom was the final 1986 episode dedicated?|Gary Holton and his character Wayne|The original building-site foreman|The people of Dusseldorf|The residents of Thornley Manor|Medium|Gary Holton|Wayne Norris|Final Episode Dedication|Quo Vadis Pet|Series Two|1986|In Memoriam`;
 
+
+// Focused original ITV series audit: BAFTA nominations, music, first broadcasts, cast, and Educating Oz.
+// Retain all original question IDs, answers, and tags.
+const AUDIT_ORIGINAL_COUNT = 105;
+const AUDIT_FIRST_ID = 42489;
+const auditFacts = `In which two years was Auf Wiedersehen, Pet nominated for the BAFTA Drama Series or Serial award?|1984 and 1985|1983 and 1984|1985 and 1986|1986 and 1987|Medium|1984 BAFTA Nomination|1985 BAFTA Nomination|Drama Series or Serial|British Academy|ITV Era|Awards History|Martin McKeand
+Which BAFTA television category nominated Auf Wiedersehen, Pet in both 1984 and 1985?|Drama Series or Serial|Comedy Series|Light Entertainment|Single Drama|Medium|Drama Series or Serial|BAFTA Television|1984 Nomination|1985 Nomination|Programme Recognition|British Drama|Awards Category
+Who was the credited producer for the 1984 and 1985 BAFTA drama nominations of Auf Wiedersehen, Pet?|Martin McKeand|Franc Roddam|Allan McKeown|Roger Bamford|Medium|Martin McKeand|Producer|1984 BAFTA|1985 BAFTA|Drama Series Nomination|Behind The Scenes|Programme Credits
+Which musical award was Auf Wiedersehen, Pet nominated for at the 1984 BAFTAs?|Original Television Music|Best Original Song in a Film|Best Music Video|Best Soundtrack Album|Medium|1984 BAFTA|Original Television Music|Theme Score|David Mackay|Music Nomination|British Academy|Programme Honours
+Which music creator received Auf Wiedersehen, Pet's 1984 BAFTA nomination for Original Television Music?|David Mackay|Joe Fagin|Ian La Frenais|George Fenton|Medium|David Mackay|Original Television Music|1984 BAFTA Nominee|Composer|Programme Theme|Music Recognition|Award Credit
+Which sound professional received a 1984 BAFTA craft nomination for Auf Wiedersehen, Pet?|Henry Bird|David Mackay|Roy Simper|Rodney Taylor|Medium|Henry Bird|Sound Supervisor|1984 BAFTA Craft|Technical Nomination|Production Sound|British Academy|Television Crew
+Which cameraman received a 1984 BAFTA craft nomination for Auf Wiedersehen, Pet?|Roy Simper|Henry Bird|Rodney Taylor|Roger England|Medium|Roy Simper|Video Cameraman|1984 BAFTA Craft|Technical Nomination|Production Camera|British Academy|Crew Recognition
+Who sang the opening and closing theme songs of Auf Wiedersehen, Pet's first two ITV series?|Joe Fagin|Jimmy Nail|Gary Holton|Tim Healy|Medium|Joe Fagin|Theme Music|1983 Series|1986 Series|Vocal Performer|Opening Credits|Closing Credits
+Which Joe Fagin song opened the first series of Auf Wiedersehen, Pet?|Breakin' Away|Get It Right|Back with the Boys Again|That's Livin' Alright|Medium|Breakin Away|Joe Fagin|1983 Opening Theme|David Mackay|Ian La Frenais|Series One|Music Credits
+Which Joe Fagin song accompanied the closing credits of the first series of Auf Wiedersehen, Pet?|That's Livin' Alright|Breakin' Away|Get It Right|Back with the Boys Again|Medium|Thats Livin Alright|Joe Fagin|1983 Closing Theme|End Credits|Series One|Programme Music|ITV
+Which song replaced Breakin' Away as the opening theme of Auf Wiedersehen, Pet Series 2?|Get It Right|That's Livin' Alright|Back with the Boys Again|Breakin' Away|Medium|Get It Right|1986 Opening Theme|Joe Fagin|David Mackay|Ian La Frenais|Series Two|Title Music
+What song played during the closing credits of Auf Wiedersehen, Pet Series 2?|Back with the Boys Again|Get It Right|Breakin' Away|That's Livin' Alright|Medium|Back With The Boys Again|Joe Fagin|1986 Closing Theme|Series Two|Music Credits|End Titles|Television Soundtrack
+On what date did the first episode of Auf Wiedersehen, Pet air on ITV?|11 November 1983|10 February 1984|21 February 1986|16 May 1986|Medium|11 November 1983|First Broadcast|ITV Premiere|Series One|Episode One|If I Were A Carpenter|British Television
+On what date did the second ITV series of Auf Wiedersehen, Pet begin?|21 February 1986|16 May 1986|11 November 1983|10 February 1984|Medium|21 February 1986|Series Two Premiere|ITV|Broadcast History|The Return Of The Seven|1980s Drama|Programme Timeline
+How many episodes were broadcast in each of the first two series of Auf Wiedersehen, Pet?|13|6|8|10|Medium|Thirteen Episodes|Series One|Series Two|1983 To 1986|Episode Count|ITV Broadcast|Programme Structure
+What was the title of the last episode of Auf Wiedersehen, Pet Series 2?|Quo Vadis Pet|When the Boat Goes Out|Law and Disorder|The Return of the Seven|Medium|Quo Vadis Pet|1986 Series Finale|Episode Thirteen|ITV|Gary Holton Tribute|Final Original Series Episode|Programme Ending
+Which German city stood in for Düsseldorf in some location footage of Auf Wiedersehen, Pet's first series?|Hamburg|Berlin|Munich|Bonn|Medium|Hamburg|Dusseldorf Stand In|German Filming|Series One|Location Production|1980s Television|Behind The Scenes
+Which English studio housed the specially constructed German building site for Auf Wiedersehen, Pet?|Elstree Studios|Pinewood Studios|Ealing Studios|Shepperton Studios|Medium|Elstree Studios|Replica Building Site|Hertfordshire|First Series|Studio Production|German Hut|Filming Location
+What was the initially proposed production format for Auf Wiedersehen, Pet before Central Television ordered thirteen episodes?|A two-hour television film|A daily soap opera|A thirty-minute sketch series|A weekly live variety show|Medium|Two Hour Film|Original Concept|Central Television|Franc Roddam|Commission History|Thirteen Episodes|Production Development
+Who portrayed Dennis Patterson's wife Vera in the first series of Auf Wiedersehen, Pet?|Caroline Hutchison|Julia Tobin|Brigitte Kahn|Lysette Anthony|Medium|Caroline Hutchison|Vera Patterson|Dennis Patterson|Series One|Supporting Cast|1983 Drama|Actress Identification
+Which actress portrayed the German secretary Dagmar in Auf Wiedersehen, Pet Series 1?|Brigitte Kahn|Caroline Hutchison|Julia Tobin|Melanie Hill|Medium|Brigitte Kahn|Dagmar|Dennis Patterson|Series One|German Romance|Supporting Cast|Actress Identification
+Who played Neville Hope's wife Brenda in the early series of Auf Wiedersehen, Pet?|Julia Tobin|Caroline Hutchison|Brigitte Kahn|Lysette Anthony|Medium|Julia Tobin|Brenda Hope|Neville Hope|Series One And Two|Supporting Cast|Actress Identification|Family Story
+Which public-health issue was addressed in the Auf Wiedersehen, Pet spin-off Educating Oz?|HIV and AIDS awareness|Smoking and lung cancer|Road traffic safety|Alcohol poisoning|Medium|Educating Oz|HIV AIDS Awareness|Tyne Tees Television|Public Information Film|1986 Spin Off|Health Education|Television Special
+Which two original characters appeared in the Auf Wiedersehen, Pet educational spin-off Educating Oz?|Dennis and Oz|Barry and Neville|Moxey and Bomber|Wayne and Ally|Medium|Educating Oz|Dennis Patterson|Oz Osborne|Tim Healy|Jimmy Nail|Public Information Film|1986 Special`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(value => value.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; found ${fields.length}`);
@@ -137,9 +167,12 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : 'In Auf Wiedersehen, Pet, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
