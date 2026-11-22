@@ -146,6 +146,54 @@
    `Which producer became executive producer of All My Children in 1989?|Felicia Minei Behr|Gloria Monty|Agnes Nixon|Jill Farren Phelps|Hard|Felicia Minei Behr|executive producer|1989|production change|Ryan's Hope|daytime television|behind the scenes`
  ];
 
+
+ // Storyline and character gap audit, 1980-1989; original IDs retained.
+ const ORIGINAL_COUNT = rows.length;
+ const AUDIT_NEW_FIRST_ID = 41906;
+ rows.push(
+   `In All My Children, what false medical danger did Palmer Cortlandt use to persuade Nina to leave Cliff Warner in 1980?|He claimed she was losing her sight|He claimed Cliff had a contagious disease|He claimed she needed a kidney transplant|He claimed Cliff could not have children|Medium|Palmer Cortlandt|Nina Cortlandt|diabetes deception|1980|false vision prognosis|Cliff Warner romance|family manipulation`,
+   `In All My Children, who rescued Benny Sago and Estelle after Billy Clyde Tuggle planned to bury them alive?|Chuck Tyler|Joe Martin|Lincoln Tyler|Frank Grant|Hard|Billy Clyde Tuggle|Chuck Tyler|Benny Sago|1980|Estelle|cemetery rescue|kidnapping plot`,
+   `In All My Children, whose child was Estelle expecting when Benny Sago offered to marry her?|Billy Clyde Tuggle's|Benny Sago's|Tom Cudahy's|Palmer Cortlandt's|Hard|Estelle|Benny Sago|Billy Clyde Tuggle|1980|pregnancy|hidden paternity|wedding decision`,
+   `In All My Children, what desperate route to motherhood did Donna Tyler unsuccessfully attempt before leaving Chuck in 1980?|Buying a baby illegally|Using a secret surrogate|Adopting from abroad|Claiming to be pregnant|Medium|Donna Tyler|Chuck Tyler|black-market baby|1980|infertility|marriage crisis|illegal adoption`,
+   `In All My Children, what did teenager Tad Martin wreck while under the influence of drugs before running away from home?|The family station wagon|A police patrol car|His school bus|A delivery van|Medium|Tad Martin|Joe Martin|Ruth Martin|1981|drug use|family conflict|vehicle crash`,
+   `In All My Children, what was the name of the beauty salon Phoebe helped Opal Gardner finance?|The Glamorama|Sensuelle|Erica's|The Steam Pit|Medium|Opal Gardner|Phoebe Wallingford|beauty salon|1982|business venture|Pine Valley shop|financing`,
+   `In All My Children, for which cosmetics firm was Erica working when the Bogards tried to lure her away in the early 1980s?|Sensuelle Cosmetics|Enchantment|Fusion|Lacey's|Medium|Erica Kane|Brandon Kingsley|Sensuelle Cosmetics|1982|modelling contract|Bogard rivalry|beauty industry`,
+   `In All My Children, which character was dismissed from Pine Valley University before his affair with student Pamela Kingsley?|Mark Dalton|Paul Martin|Jeff Martin|Cliff Warner|Medium|Mark Dalton|Pine Valley University|Pamela Kingsley|1982|music professor|dismissal|marriage to Ellen`,
+   `In All My Children, who joined forces with Erica Kane to launch a rival cosmetics company against Lars Bogard?|Palmer Cortlandt|Adam Chandler|Brandon Kingsley|Tom Cudahy|Medium|Erica Kane|Palmer Cortlandt|Lars Bogard|1983|cosmetics company|business rivalry|beauty industry`,
+   `In All My Children, what was the title of Erica Kane's autobiography ghostwritten by Mike Roy?|Raising Kane|The Erica Story|Pine Valley Confidential|Beauty and the Truth|Medium|Erica Kane|Mike Roy|autobiography|1983|Raising Kane|celebrity publishing|ghostwriter`,
+   `In All My Children, who purchased the screen rights to Erica Kane's memoir Raising Kane?|Adam Chandler|Palmer Cortlandt|Kent Bogard|Brandon Kingsley|Medium|Adam Chandler|Erica Kane|Raising Kane|1983|film rights|autobiography|media deal`,
+   `In All My Children, which psychiatrist told Devon Shepherd she was a lesbian during an early-1980s storyline?|Lynn Carson|Amy Stone|Hillary Wilson|Pamela Kingsley|Medium|Devon Shepherd|Lynn Carson|psychiatrist|1983|lesbian representation|friendship|sexual identity`,
+   `In All My Children, which Colby mother and daughter both became romantically involved with Tad Martin?|Marian and Liza|Phoebe and Ann|Opal and Jenny|Ruth and Tara|Medium|Tad Martin|Marian Colby|Liza Colby|1983|mother and daughter|affair revelation|love triangle`,
+   `In All My Children, which young couple eloped before their son Frankie was born in the 1980s?|Jesse Hubbard and Angie Baxter|Greg Nelson and Jenny Gardner|Tad Martin and Hillary Wilson|Cliff Warner and Nina Cortlandt|Medium|Jesse Hubbard|Angie Baxter|elope|1983|early marriage|young couple|Hubbard family`,
+   `In All My Children, what was the name of Jesse and Angie Hubbard's baby son born during their early marriage?|Frankie|Scott|Michael|Charlie|Easy|Jesse Hubbard|Angie Hubbard|Frankie Hubbard|1983|son's birth|family drama|new parents`,
+   `In All My Children, who initially placed baby Frankie for adoption without first telling Jesse Hubbard?|Angie Baxter|Jenny Gardner|Liza Colby|Opal Gardner|Medium|Angie Hubbard|Frankie Hubbard|adoption decision|1983|Jesse Hubbard|family separation|parental conflict`,
+   `In All My Children, what did Jesse and Angie do when they decided to reclaim baby Frankie from his adoptive home?|They took him and fled|They appealed to a state governor|They secretly exchanged babies|They brought him to a boarding school|Medium|Jesse Hubbard|Angie Hubbard|Frankie Hubbard|1984|adoption aftermath|flight from authorities|family reunion`,
+   `In All My Children, which modelling-agency owner arranged for a Jenny Gardner lookalike to appear after Jenny's death?|Olga Svensen|Enid Nelson|Marian Colby|Phoebe Wallingford|Hard|Jenny Gardner|Olga Svensen|modelling agency|1984|publicity stunt|lookalike plot|Greg Nelson`,
+   `In All My Children, who was hired to impersonate the late Jenny Gardner and confused grieving Greg Nelson?|Sheila Thomas|Amanda Cousins|Dottie Thornton|Yvonne Caldwell|Medium|Sheila Thomas|Jenny Gardner|Greg Nelson|1984|lookalike deception|modelling publicity|bereavement`,
+   `In All My Children, which aspiring singer began a relationship with Jesse Hubbard after he managed her career?|Yvonne Caldwell|Kelly Cole|Cindy Parker|Devon Shepherd|Medium|Jesse Hubbard|Yvonne Caldwell|music management|1980s|marital infidelity|Angie Hubbard|singer romance`,
+   `In All My Children, who was revealed to be Ross Chandler's biological father rather than Adam Chandler?|Palmer Cortlandt|Langley Wallingford|Tom Cudahy|Charles Tyler|Medium|Ross Chandler|Palmer Cortlandt|Adam Chandler|1980s|secret parentage|paternity revelation|Cortlandt family`,
+   `In All My Children, which former wife of Ross Chandler arrived at Cortlandt Manor with a boy called Andrew?|Cynthia Preston|Ellen Shepherd|Marian Colby|Daisy Cortlandt|Medium|Ross Chandler|Cynthia Preston|Andrew Preston|1984|Palmer Cortlandt|former marriage|family arrival`,
+   `In All My Children, who was the biological father of Cynthia Preston's son Andrew?|Chase Preston|Ross Chandler|Adam Chandler|Palmer Cortlandt|Hard|Andrew Preston|Cynthia Preston|Chase Preston|1980s|false paternity|Ross Chandler|family secrets`,
+   `In All My Children, what did Dottie Thornton conceal from Tad Martin after they married?|That she had miscarried|That she was already divorced|That she had inherited a mansion|That she had joined a convent|Medium|Dottie Thornton|Tad Martin|miscarriage|1984|hidden loss|Hillary Wilson|marriage deception`,
+   `In All My Children, which college friend of Tom Cudahy did Brooke English accuse of being her masked attacker?|Gil Barrett|Matt Connelly|Sean Cudahy|Zach Grayson|Medium|Brooke English|Gil Barrett|Tom Cudahy|1980s|assault allegation|marriage breakdown|college friendship`,
+   `In All My Children, which judge was secretly behind the drug operation that endangered Brooke English and Mark Dalton?|Judge Martell|Judge Carter|Judge Devereaux|Judge Nelson|Hard|Judge Martell|Brooke English|Mark Dalton|1985|drug trafficking|court corruption|undercover investigation`,
+   `In All My Children, which writer was shot dead while helping Brooke English and Mark Dalton escape from the drug-ring leader?|Mike Roy|Adam Chandler|Jeremy Hunter|Mark Dalton|Medium|Mike Roy|Brooke English|Mark Dalton|1985|drug ring|rescue attempt|fatal shooting`,
+   `In All My Children, which country did Erica Kane visit while grieving Mike Roy and later become close to Jeremy Hunter?|Tibet|Nepal|India|Bhutan|Medium|Erica Kane|Mike Roy|Jeremy Hunter|1985|grief journey|spiritual encounter|monastery`,
+   `In All My Children, which friend of Tad Martin and Hillary Wilson was diagnosed with a fatal blood disorder?|Bob Georgia|Greg Nelson|Wade Mathews|Mark Dalton|Hard|Bob Georgia|Tad Martin|Hillary Wilson|1985|terminal illness|love triangle|sympathy marriage`,
+   `In All My Children, whose girlfriend fell down Phoebe Tyler's staircase during a scheme to poison her?|Wade Mathews's|Langley Wallingford's|Adam Chandler's|Sean Cudahy's|Hard|Phoebe Tyler|Wade Mathews|Shelly|1986|poisoning plot|staircase fall|criminal scheme`,
+   `In All My Children, which girl did Ross Chandler and Ellen Shepherd adopt rather than the baby they originally sought?|Julie|Cecily|Dottie|Robin|Medium|Ross Chandler|Ellen Shepherd|Julie adoption|1987|teenage child|family planning|adoption story`,
+   `In All My Children, who was later revealed as the biological father of Ellen and Ross Chandler's adopted daughter Julie?|Mark Dalton|Ross Chandler|Tom Cudahy|Joe Martin|Medium|Julie|Mark Dalton|Ellen Shepherd|1988|parentage secret|adopted teenager|family revelation`,
+   `In All My Children, who offered the newly arrived widow Cindy Parker and her son Scott a home in Pine Valley?|Angie Hubbard|Erica Kane|Phoebe Wallingford|Nina Cortlandt|Medium|Cindy Parker|Scott Parker|Angie Hubbard|1987|shelter offer|newcomer|friendship`,
+   `In All My Children, what happened to Les Baxter during the confrontation that exposed his illegal baby-selling ring?|He fell down a stairwell and died|He escaped by boat|He confessed on television|He fled to Canada|Medium|Les Baxter|Jesse Hubbard|Angie Hubbard|1987|illegal baby ring|stairwell struggle|death`,
+   `In All My Children, what medical crisis befell Skye Chandler after she rescued Cindy Parker from a fire?|She fell into a coma|She lost her hearing|She required a heart transplant|She developed amnesia|Medium|Skye Chandler|Cindy Parker|1988|arson rescue|smoke inhalation|coma|hospital recovery`,
+   `In All My Children, what secret did Palmer Cortlandt use to pressure Natalie Hunter into marrying him again?|His cover-up of Silver Kane's death|A hidden inheritance document|Jeremy Hunter's first marriage|A forged medical diagnosis|Medium|Palmer Cortlandt|Natalie Hunter|Silver Kane|1988|body disposal|blackmail marriage|cover-up`,
+   `In All My Children, which relative of Dixie and Will Cooney came to live with their uncle Palmer in the late 1980s?|Melanie Cooney|Jenny Gardner|Nina Cortlandt|Hillary Wilson|Medium|Melanie Cooney|Dixie Cooney|Will Cooney|1989|Palmer Cortlandt|sibling arrival|extended family`,
+   `In All My Children, which man was the biological father of Barbara Montgomery's daughter Molly?|Travis Montgomery|Tom Cudahy|Sean Cudahy|Adam Chandler|Medium|Barbara Montgomery|Molly Montgomery|Travis Montgomery|1989|secret paternity|Tom Cudahy wedding|family revelation`,
+   `In All My Children, who was uncovered as the kidnapper of baby Adam Chandler Jr in a 1989 mystery?|Karen Parker|Skye Chandler|Natalie Hunter|Cecily Davidson|Hard|Adam Chandler Jr|Karen Parker|1989|infant kidnapping|Tad Martin investigation|Cindy Parker twin|Chandler baby`,
+   `In All My Children, how did Adam Chandler secretly make Dixie Cooney doubt her sanity?|He moved household objects and the baby|He sent forged letters from Opal|He falsified her medical records|He planted counterfeit money in her room|Medium|Adam Chandler|Dixie Cooney|1989|gaslighting|mental institution scheme|Adam Chandler Jr|domestic deception`,
+   `In All My Children, who was Travis Montgomery's brother and another romantic interest of Erica Kane in the late 1980s?|Jackson Montgomery|Jeremy Hunter|Trevor Dillon|Mark Dalton|Medium|Jackson Montgomery|Travis Montgomery|Erica Kane|1989|sibling rivalry|romantic relationship|Montgomery family`,
+ );
+
  const questions = rows.map((row, index) => {
    const parts = row.split('|').map(part => part.trim());
    if (parts.length !== 13 || parts.some(part => !part)) {
@@ -168,7 +216,7 @@
      throw new Error(`Pack 415: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
    }
    return {
-     id: `tv_${FIRST_ID + index}`,
+     id: `tv_${index < ORIGINAL_COUNT ? FIRST_ID + index : AUDIT_NEW_FIRST_ID + index - ORIGINAL_COUNT}`,
      category: 'Television',
      question,
      answers,
