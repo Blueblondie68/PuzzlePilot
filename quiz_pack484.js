@@ -1,8 +1,14 @@
 // PuzzlePilot — The Bigggggg Quiz — Pack 484: Another World, Part 4 (1990–1999)
-// 106 researched questions on the final decade: Felicia and Lorna; Cass and Frankie;
+// 132 audited questions: original 106 plus 26 storyline and award additions.
+// Final decade: Felicia and Lorna; Cass and Frankie;
 // Jake, Marley, Vicky and Paulina; Rachel and Carl; Ryan and Grant; Lila, Josie and the finale.
 // Continuity after Pack 483 (1981–1989; tv_26976–tv_27076).
-// IDs tv_27077–tv_27182. Major spoilers.
+// Original IDs tv_27077–tv_27182; audit IDs tv_42858–tv_42883. Major spoilers.
+// Original sources reviewed 18 November 2026; audit additions 22 November 2026.
+// Additional checks: 1994 LA Times Sharlene return, Daytime Confidential,
+// SoapHub Felicia Gallant retrospective, 1995 LA Times Daytime Emmy,
+// Directors Guild of America and Emmy costume design credits.
+// All original IDs/answers preserved; programme name now in each question.
 // Research reviewed 18 November 2026:
 // https://www.soapoperadigest.com/content/remembering-another-world-on-the-25th-anniversary-of-its-finale/
 // https://www.encyclopedia.com/media/encyclopedias-almanacs-transcripts-and-maps/another-world
@@ -20,7 +26,7 @@ const questions = [
     "id": "tv_27077",
     "category": "TV",
     "topic": "Another World",
-    "question": "Where was Jake McKinnon attacked in the notorious 'Who Shot Jake?' mystery?",
+    "question": "In Another World, where was Jake McKinnon attacked in the notorious 'Who Shot Jake?' mystery?",
     "answers": [
       "Cory Publishing's lobby",
       "His video studio",
@@ -50,7 +56,7 @@ const questions = [
     "id": "tv_27078",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which woman was revealed as the person who shot Jake McKinnon?",
+    "question": "In Another World, which woman was revealed as the person who shot Jake McKinnon?",
     "answers": [
       "Paulina Cory",
       "Marley Hudson",
@@ -80,7 +86,7 @@ const questions = [
     "id": "tv_27079",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was arrested and put on trial despite not being Jake's actual shooter?",
+    "question": "In Another World, who was arrested and put on trial despite not being Jake's actual shooter?",
     "answers": [
       "Rachel Cory",
       "Felicia Gallant",
@@ -110,7 +116,7 @@ const questions = [
     "id": "tv_27080",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who impersonated Marley during stages of the trial over Jake's shooting?",
+    "question": "In Another World, who impersonated Marley during stages of the trial over Jake's shooting?",
     "answers": [
       "Her cousin Amanda",
       "Her friend Paulina",
@@ -140,7 +146,7 @@ const questions = [
     "id": "tv_27081",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress took over the part of Paulina Cory in 1991?",
+    "question": "In Another World, which actress took over the part of Paulina Cory in 1991?",
     "answers": [
       "Anna Stuart",
       "Judi Evans",
@@ -170,7 +176,7 @@ const questions = [
     "id": "tv_27082",
     "category": "TV",
     "topic": "Another World",
-    "question": "How did Jake pressure Paulina into a marriage after learning she shot him?",
+    "question": "In Another World, how did Jake pressure Paulina into a marriage after learning she shot him?",
     "answers": [
       "He blackmailed her",
       "He offered her a film contract",
@@ -200,7 +206,7 @@ const questions = [
     "id": "tv_27083",
     "category": "TV",
     "topic": "Another World",
-    "question": "Whose previously unknown daughter did Paulina claim to be?",
+    "question": "In Another World, whose previously unknown daughter did Paulina claim to be?",
     "answers": [
       "Michael Hudson's",
       "Carl Hutchins's",
@@ -230,7 +236,7 @@ const questions = [
     "id": "tv_27084",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which of Rachel's sons was the former husband of Vicky Hudson?",
+    "question": "In Another World, which of Rachel's sons was the former husband of Vicky Hudson?",
     "answers": [
       "Sandy Cory",
       "Russ Matthews",
@@ -260,7 +266,7 @@ const questions = [
     "id": "tv_27085",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which police officer became a major romantic partner for Vicky Hudson?",
+    "question": "In Another World, which police officer became a major romantic partner for Vicky Hudson?",
     "answers": [
       "John Hudson",
       "Ryan Harrison",
@@ -290,7 +296,7 @@ const questions = [
     "id": "tv_27086",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played the heroic Ryan Harrison?",
+    "question": "In Another World, which actor played the heroic Ryan Harrison?",
     "answers": [
       "Paul Michael Valley",
       "Mark Pinter",
@@ -320,7 +326,7 @@ const questions = [
     "id": "tv_27087",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was Ryan Harrison's dangerous politician brother?",
+    "question": "In Another World, who was Ryan Harrison's dangerous politician brother?",
     "answers": [
       "Spencer Harrison",
       "Michael Hudson",
@@ -350,7 +356,7 @@ const questions = [
     "id": "tv_27088",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor became closely associated with villain Grant Harrison?",
+    "question": "In Another World, which actor became closely associated with villain Grant Harrison?",
     "answers": [
       "David Forsyth",
       "Brian Krause",
@@ -380,7 +386,7 @@ const questions = [
     "id": "tv_27089",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who killed Ryan Harrison while trying to protect their mother Justine?",
+    "question": "In Another World, who killed Ryan Harrison while trying to protect their mother Justine?",
     "answers": [
       "John Hudson",
       "Grant Harrison",
@@ -410,7 +416,7 @@ const questions = [
     "id": "tv_27090",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played both Rachel and her sinister lookalike Justine Duvalier?",
+    "question": "In Another World, which actress played both Rachel and her sinister lookalike Justine Duvalier?",
     "answers": [
       "Victoria Wyndham",
       "Carmen Duncan",
@@ -440,7 +446,7 @@ const questions = [
     "id": "tv_27091",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress won a Daytime Emmy for playing the twins Vicky and Marley?",
+    "question": "In Another World, which actress won a Daytime Emmy for playing the twins Vicky and Marley?",
     "answers": [
       "Ellen Wheeler",
       "Jensen Buchanan",
@@ -470,7 +476,7 @@ const questions = [
     "id": "tv_27092",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who took over the roles of Vicky and Marley after Anne Heche left?",
+    "question": "In Another World, who took over the roles of Vicky and Marley after Anne Heche left?",
     "answers": [
       "Sandra Ferguson",
       "Julie Osburn",
@@ -500,7 +506,7 @@ const questions = [
     "id": "tv_27093",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which former enemy of Rachel Cory eventually became her husband?",
+    "question": "In Another World, which former enemy of Rachel Cory eventually became her husband?",
     "answers": [
       "Jason Frame",
       "Carl Hutchins",
@@ -530,7 +536,7 @@ const questions = [
     "id": "tv_27094",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played Rachel's formidable former foe Carl Hutchins?",
+    "question": "In Another World, which actor played Rachel's formidable former foe Carl Hutchins?",
     "answers": [
       "Charles Keating",
       "Charles Grant",
@@ -560,7 +566,7 @@ const questions = [
     "id": "tv_27095",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which woman shot Carl Hutchins and was subsequently imprisoned?",
+    "question": "In Another World, which woman shot Carl Hutchins and was subsequently imprisoned?",
     "answers": [
       "Donna Love",
       "Vicky Hudson",
@@ -590,7 +596,7 @@ const questions = [
     "id": "tv_27096",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which iconic older Bay City character received a funeral storyline following Constance Ford's death?",
+    "question": "In Another World, which iconic older Bay City character received a funeral storyline following Constance Ford's death?",
     "answers": [
       "Louise Goddard",
       "Mary Matthews",
@@ -620,7 +626,7 @@ const questions = [
     "id": "tv_27097",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which romantic pairing was broken by the violent death of Frankie Frame?",
+    "question": "In Another World, which romantic pairing was broken by the violent death of Frankie Frame?",
     "answers": [
       "Mac and Rachel",
       "Cass and Frankie",
@@ -650,7 +656,7 @@ const questions = [
     "id": "tv_27098",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which serial killer was responsible for Frankie Frame's murder?",
+    "question": "In Another World, which serial killer was responsible for Frankie Frame's murder?",
     "answers": [
       "Fax Newman",
       "Jason Frame",
@@ -680,7 +686,7 @@ const questions = [
     "id": "tv_27099",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress portrayed the adult Josie Watts during the 1990s?",
+    "question": "In Another World, which actress portrayed the adult Josie Watts during the 1990s?",
     "answers": [
       "Alexandra Wilson",
       "Joanna Going",
@@ -710,7 +716,7 @@ const questions = [
     "id": "tv_27100",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which fellow officer became a major love interest for police cadet Josie Watts?",
+    "question": "In Another World, which fellow officer became a major love interest for police cadet Josie Watts?",
     "answers": [
       "Cass Winthrop",
       "Carl Hutchins",
@@ -740,7 +746,7 @@ const questions = [
     "id": "tv_27101",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played troubled police officer Gary Sinclair?",
+    "question": "In Another World, which actor played troubled police officer Gary Sinclair?",
     "answers": [
       "David Forsyth",
       "Timothy Gibbs",
@@ -770,7 +776,7 @@ const questions = [
     "id": "tv_27102",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which new character was played by former Sam Fowler actor Robert Kelker-Kelly?",
+    "question": "In Another World, which new character was played by former Sam Fowler actor Robert Kelker-Kelly?",
     "answers": [
       "Bobby Reno",
       "Grant Harrison",
@@ -800,7 +806,7 @@ const questions = [
     "id": "tv_27103",
     "category": "TV",
     "topic": "Another World",
-    "question": "What transplant did Bobby Reno receive from the deceased Ryan Harrison?",
+    "question": "In Another World, what transplant did Bobby Reno receive from the deceased Ryan Harrison?",
     "answers": [
       "A kidney",
       "A heart",
@@ -830,7 +836,7 @@ const questions = [
     "id": "tv_27104",
     "category": "TV",
     "topic": "Another World",
-    "question": "What identity was eventually revealed for Bobby Reno?",
+    "question": "In Another World, what identity was eventually revealed for Bobby Reno?",
     "answers": [
       "Dr. Russ Matthews",
       "Dr. Adam Cory",
@@ -860,7 +866,7 @@ const questions = [
     "id": "tv_27105",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress portrayed Southern newcomer Lila Roberts?",
+    "question": "In Another World, which actress portrayed Southern newcomer Lila Roberts?",
     "answers": [
       "Alice Barrett",
       "Lisa Peluso",
@@ -890,7 +896,7 @@ const questions = [
     "id": "tv_27106",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which man was revealed to be Lila Roberts's first husband?",
+    "question": "In Another World, which man was revealed to be Lila Roberts's first husband?",
     "answers": [
       "Shane Roberts",
       "Cass Winthrop",
@@ -920,7 +926,7 @@ const questions = [
     "id": "tv_27107",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who died alongside Shane Roberts in an accident on an icy road?",
+    "question": "In Another World, who died alongside Shane Roberts in an accident on an icy road?",
     "answers": [
       "John Hudson",
       "Ryan Harrison",
@@ -950,7 +956,7 @@ const questions = [
     "id": "tv_27108",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which daughter did Donna accidentally hit with her car during a crisis involving Vicky?",
+    "question": "In Another World, which daughter did Donna accidentally hit with her car during a crisis involving Vicky?",
     "answers": [
       "Josie",
       "Paulina",
@@ -980,7 +986,7 @@ const questions = [
     "id": "tv_27109",
     "category": "TV",
     "topic": "Another World",
-    "question": "What event badly burned Marley while she was recovering in hospital?",
+    "question": "In Another World, what event badly burned Marley while she was recovering in hospital?",
     "answers": [
       "A warehouse fire",
       "An explosion",
@@ -1010,7 +1016,7 @@ const questions = [
     "id": "tv_27110",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which original twin actress returned to play Marley after her disfiguring storyline?",
+    "question": "In Another World, which original twin actress returned to play Marley after her disfiguring storyline?",
     "answers": [
       "Ellen Wheeler",
       "Anne Heche",
@@ -1040,7 +1046,7 @@ const questions = [
     "id": "tv_27111",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which mysterious villain was obsessed with Amanda Cory during the show's final year?",
+    "question": "In Another World, which mysterious villain was obsessed with Amanda Cory during the show's final year?",
     "answers": [
       "Carl Hutchins",
       "Fax Newman",
@@ -1222,7 +1228,7 @@ const questions = [
     "id": "tv_27117",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which supposedly murdered villain was revealed to be alive in the series finale?",
+    "question": "In Another World, which supposedly murdered villain was revealed to be alive in the series finale?",
     "answers": [
       "Jason Frame",
       "Grant Harrison",
@@ -1252,7 +1258,7 @@ const questions = [
     "id": "tv_27118",
     "category": "TV",
     "topic": "Another World",
-    "question": "With whom did Rachel stand in the Cory mansion's last dramatic scene?",
+    "question": "In Another World, with whom did Rachel stand in the Cory mansion's last dramatic scene?",
     "answers": [
       "Carl Hutchins",
       "Mac Cory",
@@ -1282,7 +1288,7 @@ const questions = [
     "id": "tv_27119",
     "category": "TV",
     "topic": "Another World",
-    "question": "A still photograph of which late character raising a glass formed the show's closing image?",
+    "question": "In Another World, a still photograph of which late character raising a glass formed the show's closing image?",
     "answers": [
       "John Randolph",
       "Steve Frame",
@@ -1372,7 +1378,7 @@ const questions = [
     "id": "tv_27122",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was revealed to be Felicia Gallant's biological daughter in the early 1990s?",
+    "question": "In Another World, who was revealed to be Felicia Gallant's biological daughter in the early 1990s?",
     "answers": [
       "Vicky Hudson",
       "Marley Hudson",
@@ -1404,7 +1410,7 @@ const questions = [
     "id": "tv_27123",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor portrayed Felicia's old flame Lucas Castigliano?",
+    "question": "In Another World, which actor portrayed Felicia's old flame Lucas Castigliano?",
     "answers": [
       "Charles Keating",
       "Joseph Barbara",
@@ -1436,7 +1442,7 @@ const questions = [
     "id": "tv_27124",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which woman reunited with former lover Lucas Castigliano after separating from Mitch Blake?",
+    "question": "In Another World, which woman reunited with former lover Lucas Castigliano after separating from Mitch Blake?",
     "answers": [
       "Felicia Gallant",
       "Donna Love",
@@ -1468,7 +1474,7 @@ const questions = [
     "id": "tv_27125",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress originated the role of Felicia's daughter Lorna Devon?",
+    "question": "In Another World, which actress originated the role of Felicia's daughter Lorna Devon?",
     "answers": [
       "Amy Carlson",
       "Alicia Coppola",
@@ -1500,7 +1506,7 @@ const questions = [
     "id": "tv_27126",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress later took over the role of Lorna Devon?",
+    "question": "In Another World, which actress later took over the role of Lorna Devon?",
     "answers": [
       "Alexandra Wilson",
       "Christine Tucci",
@@ -1532,7 +1538,7 @@ const questions = [
     "id": "tv_27127",
     "category": "TV",
     "topic": "Another World",
-    "question": "Whose talk-show broadcast did Lorna Devon sabotage with a scandalous videotape?",
+    "question": "In Another World, whose talk-show broadcast did Lorna Devon sabotage with a scandalous videotape?",
     "answers": [
       "Rachel Cory's",
       "Donna Love's",
@@ -1564,7 +1570,7 @@ const questions = [
     "id": "tv_27128",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which young woman was Felicia Gallant's adoptive daughter?",
+    "question": "In Another World, which young woman was Felicia Gallant's adoptive daughter?",
     "answers": [
       "Jenna Norris",
       "Lorna Devon",
@@ -1628,7 +1634,7 @@ const questions = [
     "id": "tv_27130",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which young rock musician became Jenna Norris's love interest?",
+    "question": "In Another World, which young rock musician became Jenna Norris's love interest?",
     "answers": [
       "Ryan Harrison",
       "Jake McKinnon",
@@ -1660,7 +1666,7 @@ const questions = [
     "id": "tv_27131",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played rock singer Dean Frame?",
+    "question": "In Another World, which actor played rock singer Dean Frame?",
     "answers": [
       "Paul Michael Valley",
       "Tom Eplin",
@@ -1692,7 +1698,7 @@ const questions = [
     "id": "tv_27132",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was Lorna Devon's biological father?",
+    "question": "In Another World, who was Lorna Devon's biological father?",
     "answers": [
       "Lucas Castigliano",
       "Mitch Blake",
@@ -1724,7 +1730,7 @@ const questions = [
     "id": "tv_27133",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the real reason Kathleen McKinnon had vanished after her apparent plane-crash death?",
+    "question": "In Another World, what was the real reason Kathleen McKinnon had vanished after her apparent plane-crash death?",
     "answers": [
       "She suffered complete amnesia",
       "She entered witness protection",
@@ -1756,7 +1762,7 @@ const questions = [
     "id": "tv_27134",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which woman ultimately married Cass Winthrop after Kathleen's unexpected return complicated his life?",
+    "question": "In Another World, which woman ultimately married Cass Winthrop after Kathleen's unexpected return complicated his life?",
     "answers": [
       "Lorna Devon",
       "Cecile DePoulignac",
@@ -1788,7 +1794,7 @@ const questions = [
     "id": "tv_27135",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which famous train provided the setting for a fantasy-themed Cass and Frankie honeymoon episode?",
+    "question": "In Another World, which famous train provided the setting for a fantasy-themed Cass and Frankie honeymoon episode?",
     "answers": [
       "The Flying Scotsman",
       "The Blue Train",
@@ -1820,7 +1826,7 @@ const questions = [
     "id": "tv_27136",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which historical period was evoked in the special train-themed Cass Winthrop episode?",
+    "question": "In Another World, which historical period was evoked in the special train-themed Cass Winthrop episode?",
     "answers": [
       "The 1920s",
       "The 1850s",
@@ -1852,7 +1858,7 @@ const questions = [
     "id": "tv_27137",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which estranged wife was sexually assaulted by Jake McKinnon, setting up the early-1990s shooting storyline?",
+    "question": "In Another World, which estranged wife was sexually assaulted by Jake McKinnon, setting up the early-1990s shooting storyline?",
     "answers": [
       "Paulina Cory",
       "Marley Hudson",
@@ -1884,7 +1890,7 @@ const questions = [
     "id": "tv_27138",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was Jake McKinnon's former wife and Vicky Hudson's twin sister?",
+    "question": "In Another World, who was Jake McKinnon's former wife and Vicky Hudson's twin sister?",
     "answers": [
       "Paulina Cory",
       "Josie Watts",
@@ -1916,7 +1922,7 @@ const questions = [
     "id": "tv_27139",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who portrayed Paulina Cory when she first entered the soap in 1990?",
+    "question": "In Another World, who portrayed Paulina Cory when she first entered the soap in 1990?",
     "answers": [
       "Judi Evans",
       "Anne Heche",
@@ -1948,7 +1954,7 @@ const questions = [
     "id": "tv_27140",
     "category": "TV",
     "topic": "Another World",
-    "question": "What surname did Paulina use before establishing her identity as a member of the Cory family?",
+    "question": "In Another World, what surname did Paulina use before establishing her identity as a member of the Cory family?",
     "answers": [
       "Cantrell",
       "Hudson",
@@ -1980,7 +1986,7 @@ const questions = [
     "id": "tv_27141",
     "category": "TV",
     "topic": "Another World",
-    "question": "How many times were Jake McKinnon and Paulina Cory married during their stormy relationship?",
+    "question": "In Another World, how many times were Jake McKinnon and Paulina Cory married during their stormy relationship?",
     "answers": [
       "Four times",
       "Twice",
@@ -2012,7 +2018,7 @@ const questions = [
     "id": "tv_27142",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which newcomer married Paulina after her turbulent relationship with Jake?",
+    "question": "In Another World, which newcomer married Paulina after her turbulent relationship with Jake?",
     "answers": [
       "Grant Harrison",
       "Shane Roberts",
@@ -2044,7 +2050,7 @@ const questions = [
     "id": "tv_27143",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played Paulina's husband Joe Carlino?",
+    "question": "In Another World, which actor played Paulina's husband Joe Carlino?",
     "answers": [
       "John Aprea",
       "Timothy Gibbs",
@@ -2076,7 +2082,7 @@ const questions = [
     "id": "tv_27144",
     "category": "TV",
     "topic": "Another World",
-    "question": "What family-run restaurant became associated with Joe and Paulina in Bay City?",
+    "question": "In Another World, what family-run restaurant became associated with Joe and Paulina in Bay City?",
     "answers": [
       "Carlino's",
       "The Kopper Kettle",
@@ -2107,7 +2113,7 @@ const questions = [
     "id": "tv_27145",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which woman had an affair with politician Grant Harrison while he was married to Amanda Cory?",
+    "question": "In Another World, which woman had an affair with politician Grant Harrison while he was married to Amanda Cory?",
     "answers": [
       "Felicia Gallant",
       "Lorna Devon",
@@ -2139,7 +2145,7 @@ const questions = [
     "id": "tv_27146",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress played Amanda Cory after Sandra Ferguson's early-1990s departure?",
+    "question": "In Another World, which actress played Amanda Cory after Sandra Ferguson's early-1990s departure?",
     "answers": [
       "Alicia Coppola",
       "Julie Osburn",
@@ -2171,7 +2177,7 @@ const questions = [
     "id": "tv_27147",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which younger Cory family member began a controversial romance with Donna Love?",
+    "question": "In Another World, which younger Cory family member began a controversial romance with Donna Love?",
     "answers": [
       "Jamie Frame",
       "Sandy Cory",
@@ -2203,7 +2209,7 @@ const questions = [
     "id": "tv_27148",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which of Amanda Cory's marriages ended amid her husband's involvement with Lorna Devon?",
+    "question": "In Another World, which of Amanda Cory's marriages ended amid her husband's involvement with Lorna Devon?",
     "answers": [
       "Her marriage to Jamie Frame",
       "Her marriage to Grant Harrison",
@@ -2235,7 +2241,7 @@ const questions = [
     "id": "tv_27149",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which business empire's ownership crisis brought Rachel Cory and former enemy Carl Hutchins into closer contact?",
+    "question": "In Another World, which business empire's ownership crisis brought Rachel Cory and former enemy Carl Hutchins into closer contact?",
     "answers": [
       "Cory Publishing",
       "Frame Industries",
@@ -2267,7 +2273,7 @@ const questions = [
     "id": "tv_27150",
     "category": "TV",
     "topic": "Another World",
-    "question": "What stake in Cory Publishing gave Carl the leverage to help Rachel fight a hostile takeover?",
+    "question": "In Another World, what stake in Cory Publishing gave Carl the leverage to help Rachel fight a hostile takeover?",
     "answers": [
       "One per cent",
       "Fifty per cent",
@@ -2299,7 +2305,7 @@ const questions = [
     "id": "tv_27151",
     "category": "TV",
     "topic": "Another World",
-    "question": "In which year did Rachel Cory and Carl Hutchins marry?",
+    "question": "In Another World, in which year did Rachel Cory and Carl Hutchins marry?",
     "answers": [
       "1994",
       "1990",
@@ -2331,7 +2337,7 @@ const questions = [
     "id": "tv_27152",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who secretly replaced Iris's blank cartridges with live bullets before she shot Carl Hutchins?",
+    "question": "In Another World, who secretly replaced Iris's blank cartridges with live bullets before she shot Carl Hutchins?",
     "answers": [
       "John Hudson",
       "Evan Bates",
@@ -2363,7 +2369,7 @@ const questions = [
     "id": "tv_27153",
     "category": "TV",
     "topic": "Another World",
-    "question": "What had Iris Wheeler intended to fire at Rachel and Carl's wedding before somebody swapped the ammunition?",
+    "question": "In Another World, what had Iris Wheeler intended to fire at Rachel and Carl's wedding before somebody swapped the ammunition?",
     "answers": [
       "Paintballs",
       "Flare cartridges",
@@ -2395,7 +2401,7 @@ const questions = [
     "id": "tv_27154",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which twins were born to Rachel Cory and Carl Hutchins late in the series?",
+    "question": "In Another World, which twins were born to Rachel Cory and Carl Hutchins late in the series?",
     "answers": [
       "Jamie and Amanda",
       "Marley and Vicky",
@@ -2427,7 +2433,7 @@ const questions = [
     "id": "tv_27155",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the first name of Vicky Hudson's child with Grant Harrison?",
+    "question": "In Another World, what was the first name of Vicky Hudson's child with Grant Harrison?",
     "answers": [
       "Dante",
       "Cory",
@@ -2459,7 +2465,7 @@ const questions = [
     "id": "tv_27156",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which mysterious countess was revealed to be Ryan Harrison's mother?",
+    "question": "In Another World, which mysterious countess was revealed to be Ryan Harrison's mother?",
     "answers": [
       "Justine Duvalier",
       "Cecile DePoulignac",
@@ -2491,7 +2497,7 @@ const questions = [
     "id": "tv_27157",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which man was Ryan Harrison's biological father, a fact tied to the Justine storyline?",
+    "question": "In Another World, which man was Ryan Harrison's biological father, a fact tied to the Justine storyline?",
     "answers": [
       "John Hudson",
       "Carl Hutchins",
@@ -2523,7 +2529,7 @@ const questions = [
     "id": "tv_27158",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which character was the daughter of Sharlene Frame and Russ Matthews?",
+    "question": "In Another World, which character was the daughter of Sharlene Frame and Russ Matthews?",
     "answers": [
       "Josie Watts",
       "Marley Hudson",
@@ -2555,7 +2561,7 @@ const questions = [
     "id": "tv_27159",
     "category": "TV",
     "topic": "Another World",
-    "question": "What profession did Josie Watts pursue after returning to Bay City in the 1990s?",
+    "question": "In Another World, what profession did Josie Watts pursue after returning to Bay City in the 1990s?",
     "answers": [
       "Magazine editor",
       "Police officer",
@@ -2587,7 +2593,7 @@ const questions = [
     "id": "tv_27160",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which woman with a troubled past did Gary Sinclair marry in 1997?",
+    "question": "In Another World, which woman with a troubled past did Gary Sinclair marry in 1997?",
     "answers": [
       "Lorna Devon",
       "Marley Hudson",
@@ -2619,7 +2625,7 @@ const questions = [
     "id": "tv_27161",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which member of Gary Sinclair's family had an affair with Josie?",
+    "question": "In Another World, which member of Gary Sinclair's family had an affair with Josie?",
     "answers": [
       "His cousin Ryan",
       "His father Grant",
@@ -2651,7 +2657,7 @@ const questions = [
     "id": "tv_27162",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the nickname of Cass and Frankie Winthrop's daughter?",
+    "question": "In Another World, what was the nickname of Cass and Frankie Winthrop's daughter?",
     "answers": [
       "Jasmine",
       "Charlie",
@@ -2715,7 +2721,7 @@ const questions = [
     "id": "tv_27164",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress won a Daytime Emmy for playing Felicia Gallant in 1993?",
+    "question": "In Another World, which actress won a Daytime Emmy for playing Felicia Gallant in 1993?",
     "answers": [
       "Judi Evans",
       "Linda Dano",
@@ -2747,7 +2753,7 @@ const questions = [
     "id": "tv_27165",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor earned a 1996 Daytime Emmy for playing Carl Hutchins?",
+    "question": "In Another World, which actor earned a 1996 Daytime Emmy for playing Carl Hutchins?",
     "answers": [
       "Mark Pinter",
       "Paul Michael Valley",
@@ -2779,7 +2785,7 @@ const questions = [
     "id": "tv_27166",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actress won a 1996 Daytime Emmy as Supporting Actress for her Sharlene Frame role?",
+    "question": "In Another World, which actress won a 1996 Daytime Emmy as Supporting Actress for her Sharlene Frame role?",
     "answers": [
       "Sandra Ferguson",
       "Anna Stuart",
@@ -2811,7 +2817,7 @@ const questions = [
     "id": "tv_27167",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who was the father of Lila's daughter Jasmine?",
+    "question": "In Another World, who was the father of Lila's daughter Jasmine?",
     "answers": [
       "Shane Roberts",
       "Matthew Cory",
@@ -2843,7 +2849,7 @@ const questions = [
     "id": "tv_27168",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which young woman was revealed to be Paulina Carlino's long-lost daughter?",
+    "question": "In Another World, which young woman was revealed to be Paulina Carlino's long-lost daughter?",
     "answers": [
       "Alli Fowler",
       "Sofia Carlino",
@@ -2907,7 +2913,7 @@ const questions = [
     "id": "tv_27170",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which former Bay City detective returned in 1999 after disappearing from his marriage to Josie?",
+    "question": "In Another World, which former Bay City detective returned in 1999 after disappearing from his marriage to Josie?",
     "answers": [
       "Mitch Blake",
       "Gary Sinclair",
@@ -2939,7 +2945,7 @@ const questions = [
     "id": "tv_27171",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which actor played the mysterious Jordan Stark during the final year?",
+    "question": "In Another World, which actor played the mysterious Jordan Stark during the final year?",
     "answers": [
       "Robert Kelker-Kelly",
       "John Aprea",
@@ -2971,7 +2977,7 @@ const questions = [
     "id": "tv_27172",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which television character was targeted by Jordan Stark's schemes in 1999?",
+    "question": "In Another World, which television character was targeted by Jordan Stark's schemes in 1999?",
     "answers": [
       "Amanda Cory",
       "Felicia Gallant",
@@ -3066,7 +3072,7 @@ const questions = [
     "id": "tv_27175",
     "category": "TV",
     "topic": "Another World",
-    "question": "What unexpected animal disrupted Cass and Lila's wedding in the finale?",
+    "question": "In Another World, what unexpected animal disrupted Cass and Lila's wedding in the finale?",
     "answers": [
       "A zebra",
       "A kangaroo",
@@ -3098,7 +3104,7 @@ const questions = [
     "id": "tv_27176",
     "category": "TV",
     "topic": "Another World",
-    "question": "What was the name of the gorilla that interrupted Cass Winthrop's wedding?",
+    "question": "In Another World, what was the name of the gorilla that interrupted Cass Winthrop's wedding?",
     "answers": [
       "Carolyn",
       "Marjorie",
@@ -3130,7 +3136,7 @@ const questions = [
     "id": "tv_27177",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which character stepped in to officiate Cass and Lila's wedding after announcing his judicial appointment?",
+    "question": "In Another World, which character stepped in to officiate Cass and Lila's wedding after announcing his judicial appointment?",
     "answers": [
       "Joe Carlino",
       "Tyrone Montgomery",
@@ -3162,7 +3168,7 @@ const questions = [
     "id": "tv_27178",
     "category": "TV",
     "topic": "Another World",
-    "question": "Which late character appeared as a ghost to bless Cass and Lila's marriage in the final episode?",
+    "question": "In Another World, which late character appeared as a ghost to bless Cass and Lila's marriage in the final episode?",
     "answers": [
       "Mary Matthews",
       "Sally Ewing",
@@ -3194,7 +3200,7 @@ const questions = [
     "id": "tv_27179",
     "category": "TV",
     "topic": "Another World",
-    "question": "Who served as the best man at Cass Winthrop's final wedding?",
+    "question": "In Another World, who served as the best man at Cass Winthrop's final wedding?",
     "answers": [
       "Jake McKinnon",
       "Carl Hutchins",
@@ -3319,9 +3325,846 @@ const questions = [
     ]
   }
 ];
-if (questions.length!==106 || new Set(questions.map(q=>q.id)).size!==questions.length ||
+// Appended audited facts with separately numbered IDs.
+const AUDIT_ORIGINAL_COUNT=106;
+const AUDIT_FIRST_ID=42858;
+const auditQuestions=[
+  {
+    "id": "tv_42858",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what name did Sharlene Frame's rebellious alternate personality use?",
+    "answers": [
+      "Kate",
+      "Sharly",
+      "Marley",
+      "Shirley"
+    ],
+    "correctAnswer": "Sharly",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Sharlene Frame",
+      "Sharly",
+      "Alternate Personality",
+      "John Hudson",
+      "1990s",
+      "Identity"
+    ]
+  },
+  {
+    "id": "tv_42859",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, with which politician did Sharlene's Sharly personality become involved?",
+    "answers": [
+      "Grant Harrison",
+      "Ryan Harrison",
+      "Carl Hutchins",
+      "Matthew Cory"
+    ],
+    "correctAnswer": "Grant Harrison",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Sharlene Frame",
+      "Sharly",
+      "Grant Harrison",
+      "Affair",
+      "Harrison Family",
+      "Identity"
+    ]
+  },
+  {
+    "id": "tv_42860",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which doctor caused the explosion that made Sharlene Frame Hudson seem to die?",
+    "answers": [
+      "Jamie Frame",
+      "Russ Matthews",
+      "Jordan Stark",
+      "Taylor Benson"
+    ],
+    "correctAnswer": "Taylor Benson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Taylor Benson",
+      "Sharlene Hudson",
+      "Boat Explosion",
+      "1991",
+      "John Hudson",
+      "Villain"
+    ]
+  },
+  {
+    "id": "tv_42861",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what disaster caused Sharlene Frame Hudson to be presumed dead?",
+    "answers": [
+      "A plane crash",
+      "A hospital fire",
+      "A boat explosion",
+      "A train derailment"
+    ],
+    "correctAnswer": "A boat explosion",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Sharlene Frame",
+      "Boat Explosion",
+      "Presumed Dead",
+      "John Hudson",
+      "1991 Story",
+      "Return"
+    ]
+  },
+  {
+    "id": "tv_42862",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, under what name did Sharlene Frame reappear in Bay City?",
+    "answers": [
+      "Kelsey Harrison",
+      "Kate Baker",
+      "Jenna Norris",
+      "Lila Roberts"
+    ],
+    "correctAnswer": "Kate Baker",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Sharlene Frame",
+      "Kate Baker",
+      "1994 Return",
+      "Alternate Identity",
+      "Disappearance",
+      "New Name"
+    ]
+  },
+  {
+    "id": "tv_42863",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which two foster children arrived in Bay City alongside Kate Baker?",
+    "answers": [
+      "Jess and Wendy",
+      "Steven and Kirkland",
+      "Charlie and Alli",
+      "Cory and Elizabeth"
+    ],
+    "correctAnswer": "Jess and Wendy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Kate Baker",
+      "Jess",
+      "Wendy",
+      "Foster Children",
+      "1994 Return",
+      "Family"
+    ]
+  },
+  {
+    "id": "tv_42864",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what was the first name of John and Sharlene Hudson's young son?",
+    "answers": [
+      "Jamie",
+      "Kirkland",
+      "Steven",
+      "Gregory"
+    ],
+    "correctAnswer": "Gregory",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "John Hudson",
+      "Sharlene Hudson",
+      "Gregory Hudson",
+      "Family",
+      "1990s Story",
+      "Parenthood"
+    ]
+  },
+  {
+    "id": "tv_42865",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, whom had John Hudson married during Sharlene's absence?",
+    "answers": [
+      "Felicia Gallant",
+      "Marley Hudson",
+      "Kelsey Harrison",
+      "Jenna Norris"
+    ],
+    "correctAnswer": "Kelsey Harrison",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "John Hudson",
+      "Kelsey Harrison",
+      "Second Marriage",
+      "Sharlene Absence",
+      "Doctor",
+      "Romance"
+    ]
+  },
+  {
+    "id": "tv_42866",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which actress played Dr Kelsey Harrison in the early 1990s?",
+    "answers": [
+      "Anna Holbrook",
+      "Kaitlin Hopkins",
+      "Judi Evans",
+      "Robin Christopher"
+    ],
+    "correctAnswer": "Kaitlin Hopkins",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Cast",
+      "Kaitlin Hopkins",
+      "Kelsey Harrison",
+      "John Hudson",
+      "1990s Cast",
+      "Doctor",
+      "Actress"
+    ]
+  },
+  {
+    "id": "tv_42867",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which husband's murder preceded Felicia Gallant's battle with alcohol dependence?",
+    "answers": [
+      "Lucas Castigliano",
+      "Mitch Blake",
+      "Zane Lindquist",
+      "Carl Hutchins"
+    ],
+    "correctAnswer": "Lucas Castigliano",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Felicia Gallant",
+      "Lucas Castigliano",
+      "Alcohol Dependence",
+      "Grief",
+      "1990s",
+      "Loss"
+    ]
+  },
+  {
+    "id": "tv_42868",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what did Felicia Gallant's friends and family organise because of her drinking?",
+    "answers": [
+      "A surprise wedding",
+      "A televised debate",
+      "A court trial",
+      "An intervention"
+    ],
+    "correctAnswer": "An intervention",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Felicia Gallant",
+      "Alcohol Dependence",
+      "Intervention",
+      "Family Crisis",
+      "Recovery",
+      "Friends"
+    ]
+  },
+  {
+    "id": "tv_42869",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, whose unborn baby died in a tragedy that forced Felicia to confront her alcoholism?",
+    "answers": [
+      "Lorna Devon's",
+      "Amanda Cory's",
+      "Jenna Norris's",
+      "Paulina Carlino's"
+    ],
+    "correctAnswer": "Jenna Norris's",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Felicia Gallant",
+      "Jenna Norris",
+      "Unborn Baby",
+      "Alcohol Dependence",
+      "Recovery",
+      "Tragedy"
+    ]
+  },
+  {
+    "id": "tv_42870",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which recovery fellowship did Felicia Gallant join?",
+    "answers": [
+      "Narcotics Anonymous",
+      "Alcoholics Anonymous",
+      "Al-Anon",
+      "Gamblers Anonymous"
+    ],
+    "correctAnswer": "Alcoholics Anonymous",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Felicia Gallant",
+      "Alcoholics Anonymous",
+      "Sobriety",
+      "Recovery",
+      "Jenna Norris",
+      "Personal Story"
+    ]
+  },
+  {
+    "id": "tv_42871",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what was the name of Felicia Gallant's recovery sponsor?",
+    "answers": [
+      "Judy Burrell",
+      "Iris Wheeler",
+      "Marley Hudson",
+      "Lila Roberts"
+    ],
+    "correctAnswer": "Judy Burrell",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Felicia Gallant",
+      "Judy Burrell",
+      "Alcoholics Anonymous",
+      "Sponsor",
+      "Recovery",
+      "Friendship"
+    ]
+  },
+  {
+    "id": "tv_42872",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, what was the title of Felicia Gallant's autobiographical book?",
+    "answers": [
+      "The Bay City Chronicles",
+      "The Love Disconnection",
+      "The Last Rose",
+      "Into the Fire"
+    ],
+    "correctAnswer": "Into the Fire",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Felicia Gallant",
+      "Into The Fire",
+      "Memoir",
+      "Autobiography",
+      "Book",
+      "Writing Career"
+    ]
+  },
+  {
+    "id": "tv_42873",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which obsessive employee of Cory Publishing kidnapped Felicia Gallant?",
+    "answers": [
+      "Lucas Castigliano",
+      "Cameron Sinclair",
+      "Walter Trask",
+      "Jordan Stark"
+    ],
+    "correctAnswer": "Walter Trask",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Felicia Gallant",
+      "Walter Trask",
+      "Cory Publishing",
+      "Kidnapping",
+      "Obsessed Reader",
+      "1990s Plot"
+    ]
+  },
+  {
+    "id": "tv_42874",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, where did Walter Trask hold Felicia Gallant captive?",
+    "answers": [
+      "In a disused cinema",
+      "In his attic",
+      "On a yacht",
+      "Under the Cory mansion"
+    ],
+    "correctAnswer": "In his attic",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Felicia Gallant",
+      "Walter Trask",
+      "Attic",
+      "Captivity",
+      "Kidnapping",
+      "Rescue"
+    ]
+  },
+  {
+    "id": "tv_42875",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which editor joined Cass and Frankie in rescuing Felicia Gallant?",
+    "answers": [
+      "Marshall Kramer",
+      "Eliot Carrington",
+      "Dean Frame",
+      "Brian Bancroft"
+    ],
+    "correctAnswer": "Marshall Kramer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Story",
+      "Felicia Gallant",
+      "Marshall Kramer",
+      "Cass Winthrop",
+      "Frankie Frame",
+      "Walter Trask",
+      "Rescue"
+    ]
+  },
+  {
+    "id": "tv_42876",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which production category earned the programme a Daytime Emmy in 1992?",
+    "answers": [
+      "Outstanding drama series",
+      "Outstanding children's programme",
+      "Best drama screenplay",
+      "Drama-series directing team"
+    ],
+    "correctAnswer": "Drama-series directing team",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "1992 Daytime Emmy",
+      "Directing Team",
+      "Award Winner",
+      "NBC Soap",
+      "Production"
+    ]
+  },
+  {
+    "id": "tv_42877",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which director received a DGA award for her work on episode 7022?",
+    "answers": [
+      "Jill Farren Phelps",
+      "Donna Swajeski",
+      "Susan Strickler",
+      "Mimi Torchin"
+    ],
+    "correctAnswer": "Susan Strickler",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "Susan Strickler",
+      "DGA Award",
+      "Episode 7022",
+      "1993 Ceremony",
+      "Directing",
+      "1992 Work"
+    ]
+  },
+  {
+    "id": "tv_42878",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which original song from the programme won a Daytime Emmy in 1995?",
+    "answers": [
+      "Another World",
+      "I Never Believed in Love",
+      "All My Children",
+      "In the Bleak Midwinter"
+    ],
+    "correctAnswer": "I Never Believed in Love",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "1995 Daytime Emmy",
+      "I Never Believed In Love",
+      "Original Song",
+      "Music",
+      "Emmy Winner",
+      "Ballad"
+    ]
+  },
+  {
+    "id": "tv_42879",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which pair wrote the Emmy-winning song I Never Believed in Love?",
+    "answers": [
+      "A J Gundell and Gloria Sklerov",
+      "Crystal Gayle and Gary Morris",
+      "Barry De Vorzon and Dominic Messinger",
+      "Stephen Sondheim and Alan Menken"
+    ],
+    "correctAnswer": "A J Gundell and Gloria Sklerov",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "A J Gundell",
+      "Gloria Sklerov",
+      "1995 Emmy",
+      "Original Song",
+      "Songwriters",
+      "Music"
+    ]
+  },
+  {
+    "id": "tv_42880",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, for which couple was I Never Believed in Love used as a musical theme?",
+    "answers": [
+      "Cass and Frankie",
+      "Jake and Vicky",
+      "Rachel and Carl",
+      "Morgan and Brett"
+    ],
+    "correctAnswer": "Morgan and Brett",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "Morgan",
+      "Brett",
+      "1995 Emmy",
+      "Romance",
+      "Theme Song",
+      "Music Cue"
+    ]
+  },
+  {
+    "id": "tv_42881",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which other music award did the show win at the 1995 Daytime Emmys?",
+    "answers": [
+      "Best music video",
+      "Best film score",
+      "Music direction and composition",
+      "Best music documentary"
+    ],
+    "correctAnswer": "Music direction and composition",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "1995 Emmy",
+      "Music Direction",
+      "Composition",
+      "Drama Series",
+      "Production",
+      "Award Winner"
+    ]
+  },
+  {
+    "id": "tv_42882",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which two costume designers won a Daytime Emmy for the programme in 1994?",
+    "answers": [
+      "Jacqueline Durran and Sandy Powell",
+      "Margarita Delgado and Charles Schoonmaker",
+      "Susan Strickler and Mary Madeiras",
+      "A J Gundell and Gloria Sklerov"
+    ],
+    "correctAnswer": "Margarita Delgado and Charles Schoonmaker",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "Margarita Delgado",
+      "Charles Schoonmaker",
+      "1994 Emmy",
+      "Costume Design",
+      "Wardrobe",
+      "Award Winner"
+    ]
+  },
+  {
+    "id": "tv_42883",
+    "category": "TV",
+    "topic": "Another World",
+    "question": "In Another World, which craft category brought the programme a Daytime Emmy in 1990?",
+    "answers": [
+      "Outstanding hairstyling for a drama series",
+      "Best special effects makeup",
+      "Best costume photography",
+      "Best art direction in a drama"
+    ],
+    "correctAnswer": "Outstanding hairstyling for a drama series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "Programme: Another World",
+      "Another World (NBC)",
+      "1990–1999 Storylines",
+      "Daytime Soap Opera",
+      "Bay City",
+      "Written Quiz",
+      "Section: Audit Awards",
+      "1990 Emmy",
+      "Hairstyling",
+      "Drama Series",
+      "Production Craft",
+      "Award Winner",
+      "Hair Department"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+if(questions.length!==132 || new Set(questions.map(q=>q.id)).size!==questions.length ||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length ||
- questions.some((q,i)=>q.id!=='tv_'+String(27077+i)||q.category!=='TV'||q.topic!=='Another World'||
+ questions.some((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+String(27077+i):'tv_'+String(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||q.category!=='TV'||q.topic!=='Another World'||
  q.answers.length!==4||new Set(q.answers.map(s=>s.toLowerCase())).size!==4||
  q.answers.filter(a=>a===q.correctAnswer).length!==1||
  q.tags.length<13||new Set(q.tags).size!==q.tags.length||
