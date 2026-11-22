@@ -5,7 +5,10 @@
 'use strict';
 
 const FIRST_ID = 21862;
-const commonTags = ['television', 'British TV', 'BBC Two', 'The Fall', 'Allan Cubitt', 'psychological crime drama'];
+const PROGRAMME = 'The Fall';
+const commonTags = ['Television','British Television','BBC Two','RTÉ One',
+  'Psychological Crime Drama',PROGRAMME,'Programme: '+PROGRAMME,
+  'Allan Cubitt','Series 1–3','Original run: 2013–2016'];
 
 // Row: question | correct answer | three wrong answers | difficulty | seven precise question-specific tags.
 // Each exported question names The Fall for standalone and mixed-category play.
@@ -158,12 +161,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 398: repeated answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 398: expected 13 distinct tags at row ${index + 1}; got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 398: expected 12 or more distinct tags at row ${index + 1}; got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -173,4 +177,284 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// The Fall 2013–2016; all 17 television episodes across three series.
+// Original tv_21862–tv_21980 retained; new IDs start tv_41264.
+// Cast: https://www.tvguide.com/tvshows/the-fall/cast/1030239357/
+// https://www.rottentomatoes.com/tv/the_fall/cast-and-crew
+// Awards: https://ifta.ie/events/dts/IFTA_winners2014.html
+// https://www.bafta.org/awards/tv-craft/?award-year=2014
+// https://www.bafta.org/awards/television/?award-year=2014
+// https://www.screenireland.ie/news-archive/view/2790
+// Broadcast: https://epguides.com/fall/
+// https://en.wikipedia.org/wiki/The_Fall_%28TV_series%29
+const audit398Cast=[
+  [
+    "Olivia Spector",
+    "Sarah Beattie",
+    "f",
+    "Paul and Sally Ann Spector's daughter"
+  ],
+  [
+    "Liam Spector",
+    "David Beattie",
+    "m",
+    "Paul and Sally Ann Spector's son"
+  ],
+  [
+    "DC Gail McNally",
+    "Bronagh Taggart",
+    "f",
+    "police surveillance team"
+  ],
+  [
+    "DC Glen Martin",
+    "Emmett J Scanlan",
+    "m",
+    "detective involved in surveillance"
+  ],
+  [
+    "DC Rick Turner",
+    "Richard Clements",
+    "m",
+    "Belfast police officer"
+  ],
+  [
+    "DC Christine Larkin",
+    "Claire Rafferty",
+    "f",
+    "Belfast police officer"
+  ],
+  [
+    "PC Hagstrom",
+    "Kelly Gough",
+    "f",
+    "police constable"
+  ],
+  [
+    "Martina Dean",
+    "Tara Lynne O'Neill",
+    "f",
+    "recurring supporting character"
+  ],
+  [
+    "Brian Stone",
+    "Gerard Jordan",
+    "m",
+    "recurring supporting character"
+  ]
+];
+const audit398Facts=[
+  [
+    "Awards",
+    "Which programme category did the series win at the 2014 Irish Film & Television Awards?",
+    "Drama",
+    [
+      "Comedy",
+      "Single Drama",
+      "Children's Programme"
+    ],
+    "2014 IFTA drama win"
+  ],
+  [
+    "Awards",
+    "In which television acting category did Jamie Dornan win at the 2014 IFTAs?",
+    "Actor in a Leading Role Television",
+    [
+      "Actor in a Supporting Role Television",
+      "Rising Star in Television Comedy",
+      "Television Presenter"
+    ],
+    "2014 IFTA Jamie Dornan acting win"
+  ],
+  [
+    "Awards",
+    "Which special Irish Film Board award did Jamie Dornan also receive in 2014?",
+    "Rising Star",
+    [
+      "Lifetime Achievement",
+      "Outstanding Contribution",
+      "Audience Choice"
+    ],
+    "2014 IFTA additional honour"
+  ],
+  [
+    "Awards",
+    "Which 2014 IFTA craft category recognised the music for the series?",
+    "Original Score",
+    [
+      "Costume Design",
+      "Production Design",
+      "Editing"
+    ],
+    "2014 IFTA David Holmes score win"
+  ],
+  [
+    "Awards",
+    "Which 2014 BAFTA Television Craft category did the series win?",
+    "Editing: Fiction",
+    [
+      "Original Music",
+      "Sound: Fiction",
+      "Photography & Lighting: Fiction"
+    ],
+    "2014 BAFTA TV Craft winner"
+  ],
+  [
+    "Awards",
+    "In which BAFTA Television programme category was the first series nominated in 2014?",
+    "Mini-Series",
+    [
+      "Drama Series",
+      "Single Drama",
+      "International"
+    ],
+    "2014 BAFTA television nomination"
+  ],
+  [
+    "Awards",
+    "In which 2015 IFTA acting category did Aisling Franciosi win for her performance?",
+    "Supporting Actress in Drama",
+    [
+      "Lead Actress in Drama",
+      "Supporting Actress in Film",
+      "Rising Star"
+    ],
+    "2015 IFTA acting win"
+  ],
+  [
+    "Production",
+    "Which producer is credited for the series alongside Carol Moorhead?",
+    "Gub Neal",
+    [
+      "Ed Talfan",
+      "Gareth Morgan",
+      "Chris Clough"
+    ],
+    "Series production"
+  ],
+  [
+    "Production",
+    "Which producer is credited alongside Gub Neal?",
+    "Carol Moorhead",
+    [
+      "Catherine Magee",
+      "Rosemary McGowan",
+      "Nerys Evans"
+    ],
+    "Series production"
+  ],
+  [
+    "Production",
+    "Who composed the music that won an IFTA for the series?",
+    "David Holmes",
+    [
+      "Ólafur Arnalds",
+      "Murray Gold",
+      "Stephen Rennicks"
+    ],
+    "Original soundtrack"
+  ],
+  [
+    "Production",
+    "Which editor won the 2014 BAFTA Television Craft award for work on the series?",
+    "Steve Singleton",
+    [
+      "Nathan Nugent",
+      "David Rees",
+      "Anthony Combes"
+    ],
+    "Award-winning picture editor"
+  ],
+  [
+    "Broadcast",
+    "On what date did the drama first premiere on RTÉ One in Ireland?",
+    "12 May 2013",
+    [
+      "13 May 2013",
+      "20 May 2013",
+      "12 June 2013"
+    ],
+    "Irish first broadcast"
+  ],
+  [
+    "Broadcast",
+    "On what date did the first episode air on BBC Two in the UK?",
+    "13 May 2013",
+    [
+      "12 May 2013",
+      "20 May 2013",
+      "13 June 2013"
+    ],
+    "UK first broadcast"
+  ],
+  [
+    "Broadcast",
+    "On what date did the second series begin on BBC Two?",
+    "13 November 2014",
+    [
+      "9 November 2014",
+      "20 November 2014",
+      "13 December 2014"
+    ],
+    "UK second-series premiere"
+  ],
+  [
+    "Broadcast",
+    "On what date was the final episode first shown on BBC Two?",
+    "28 October 2016",
+    [
+      "27 October 2016",
+      "29 September 2016",
+      "6 October 2016"
+    ],
+    "UK final episode"
+  ]
+];
+const norm398=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+const pools398={
+ m:audit398Cast.filter(x=>x[2]==='m').map(x=>x[1]),
+ f:audit398Cast.filter(x=>x[2]==='f').map(x=>x[1])
+};
+function append398(stem,answer,wrong,subject,kind){
+ if(wrong.length!==3||new Set([answer,...wrong].map(norm398)).size!==4)
+  throw Error('Pack 398 repeated answer choice: '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrong];answers.splice(questions.length%4,0,answer);
+ const tags=['Television','British Television','BBC Two','RTÉ One',
+  'Psychological Crime Drama',PROGRAMME,'Programme: '+PROGRAMME,
+  '2013–2016 original run','Three series','Creator: Allan Cubitt',
+  'Question type: '+kind,'Specific subject: '+subject,
+  'Correct answer: '+answer,'Series cast, crew and awards'];
+ questions.push({id:'tv_'+(41264+questions.length-119),
+  category:'Television',programme:PROGRAMME,question,answers,
+  correctAnswer:answer,difficulty:'Medium',tags,dailyEligible:true});
+}
+for(const [i,[role,performer,sex,focus]] of audit398Cast.entries()){
+ const pool=pools398[sex].filter(v=>v!==performer);
+ if(pool.length<3)throw Error('Not enough cast options for '+role);
+ const start=(i*3+role.length)%pool.length;
+ const wrong=[pool[start],pool[(start+1)%pool.length],pool[(start+2)%pool.length]];
+ append398('Which '+(sex==='f'?'actress':'actor')+' portrayed '+role+'?',
+  performer,wrong,'Role: '+role+' / '+focus,'Supporting cast');
+}
+for(const [kind,stem,answer,wrong,focus] of audit398Facts){
+ append398(stem,answer,wrong,focus,kind);
+}
+const seen398Ids=new Set(),seen398Stems=new Set();
+for(const q of questions){
+ const wording=norm398(q.question);
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+  !q.tags.includes('Programme: '+PROGRAMME)||
+  !wording.includes(norm398(PROGRAMME))||
+  q.answers.length!==4||new Set(q.answers.map(norm398)).size!==4||
+  q.answers.filter(a=>a===q.correctAnswer).length!==1||
+  q.tags.length<12||q.dailyEligible!==true||
+  seen398Ids.has(q.id)||seen398Stems.has(wording)||
+  wording.includes(norm398(q.correctAnswer)))
+  throw Error('Pack 398 validation failed for '+q.id);
+ seen398Ids.add(q.id);seen398Stems.add(wording);
+}
+module.exports=questions;
