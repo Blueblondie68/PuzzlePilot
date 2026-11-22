@@ -97,9 +97,37 @@ Which programme's final was broadcast against the Any Dream Will Do finale?|Grea
 Which two televised stages preceded the live studio competition?|Auditions and Joseph School|The Grand Final and Winners Story|Semi Final and Results|West End Opening and Rehearsals|Medium|Audition Episodes|Joseph School|31 March 2007|7 April 2007|Pre Live Stage|Competition Structure|BBC One
 Which farewell special followed the winner's journey later in December 2007?|Joseph, The Winner's Story|When Joseph Met Maria|The Search for Nancy|Dreamcoat Rehearsals Live|Medium|Joseph The Winners Story|Lee Mead|December 2007|Follow Up Special|BBC One|Post Final|Programme History`;
 
+
+// Full 2007 audit: 2007 NTA nominations, early audition stages, finale and stage careers.
+// Original question IDs and answers remain unchanged.
+const AUDIT_ORIGINAL_COUNT = 83;
+const AUDIT_FIRST_ID = 42422;
+const auditFacts = `For which award was Any Dream Will Do nominated at the 2007 National Television Awards?|Most Popular Talent Show|Most Popular Drama|Most Popular Reality Programme|Most Popular Comedy Programme|Medium|2007 National Television Awards|Talent Show Nomination|Royal Albert Hall|Viewer Voting|Awards Shortlist|BBC One|UK Television Awards
+Which competing programme won the 2007 National Television Award in Any Dream Will Do's nominated category?|The X Factor|Britain's Got Talent|Strictly Come Dancing|Dancing on Ice|Medium|The X Factor|2007 National Television Awards|Most Popular Talent Show|Award Winner|BBC ITV Rivalry|Audience Voting|Competition Award
+On what date was the final of Any Dream Will Do first broadcast?|9 June 2007|2 June 2007|31 March 2007|17 July 2007|Medium|June Ninth|2007 Finale|BBC One Broadcast|Competition End|Lee Mead Winner|Final Vote|Television Schedule
+On what date did Any Dream Will Do first air on BBC One?|31 March 2007|14 April 2007|9 June 2007|1 September 2007|Medium|March Thirty First|BBC Debut|2007 Launch|Joseph Casting|Programme Premiere|Auditions|Broadcast History
+How many singers were called back to London after the opening auditions for Any Dream Will Do?|100|20|12|52|Medium|Hundred Hopefuls|London Recall|Initial Auditions|Casting Funnel|Joseph Hopefuls|2007 Selection|First Stage
+How many hopefuls entered Joseph School in Any Dream Will Do after two additional singers were selected?|52|50|28|20|Hard|Joseph School|Fifty Two Hopefuls|Additional Entrants|Casting Selection|BBC Competition|Audition Stage|Training Week
+How many contestants remained after the third day of Joseph School on Any Dream Will Do?|20|28|12|50|Medium|Twenty Contestants|Joseph School|Third Day|Competition Selection|Final Recall|Ireland Castle|Audition Stages
+Who headed the live band for the studio performances on Any Dream Will Do?|Nigel Wright|Tim Rice|Bill Kenwright|David Ian|Medium|Nigel Wright|Musical Director|Live Band|Studio Performances|Backing Singers|BBC Entertainment|Series Music
+Which musical supplied Maria sung by the three finalists of Any Dream Will Do?|West Side Story|Joseph and the Amazing Technicolor Dreamcoat|Les Miserables|The Sound of Music|Medium|West Side Story|Maria Song|Finalists Trio|Lee Keith Lewis|Musical Theatre|2007 Final|Group Song
+Which Thin Lizzy hit did returning eliminated contestants sing in the Any Dream Will Do finale?|The Boys Are Back in Town|Dancing in the Moonlight|Whiskey in the Jar|Rosalie|Medium|Thin Lizzy|The Boys Are Back in Town|Former Contestants|Group Performance|2007 Final|Reunion Song|Grand Finale
+Which song did Connie Fisher perform during the final of Any Dream Will Do?|The Sound of Music|My Favourite Things|Somewhere Over the Rainbow|Defying Gravity|Medium|Connie Fisher|The Sound of Music|Final Guest Performance|Maria Winner|BBC Casting Shows|Guest Solo|2007 Finale
+What alteration did the BBC make to the run of Any Dream Will Do as the finale approached?|Extend it by one week|Bring back all eliminated singers to compete|Add another judging panel|Replace the final with two heats|Medium|Extra Week|Live Shows|Schedule Change|Double Elimination Avoided|BBC Decision|2007 Final|Broadcast Extension
+Around how many viewers watched the results programme of the Any Dream Will Do final?|Nearly eight million|Around two million|Fewer than one million|Over twenty million|Medium|Final Results|Nearly Eight Million|2007 Viewing Figures|BBC Ratings|ITV Competition|Final Audience|Television Popularity
+How long was the initial Joseph role contract awarded to the winner of Any Dream Will Do?|Six months|Three weeks|Two years|Five years|Medium|Lee Mead|Initial Contract|Six Months|Joseph Role|West End Prize|Production Agreement|Later Extension
+Which Any Dream Will Do finalist later played Link Larkin in the West End premiere of Hairspray?|Ben James-Ellis|Craig Chalmers|Keith Jack|Lewis Bradley|Medium|Ben James Ellis|Hairspray|Link Larkin|Shaftesbury Theatre|Post Show Career|2007 West End|Musical Casting
+Which role in Avenue Q was later played by Any Dream Will Do finalist Daniel Boys?|Princeton|Nicky|Rod|Brian|Medium|Daniel Boys|Avenue Q|Princeton|Noel Coward Theatre|Post Show Career|London Stage|Musical Theatre
+Which Any Dream Will Do finalist covered the role of Joseph during Lee Mead's holiday absences?|Lewis Bradley|Keith Jack|Rob McVeigh|Daniel Boys|Medium|Lewis Bradley|Joseph Understudy|Adelphi Theatre|Lee Mead Absence|West End Cover|Finalist Career|Post Competition
+Which role did Any Dream Will Do contestant Antony Hansen play in the 2008 touring production of Joseph?|Pharaoh|Jacob|The Narrator|Potiphar|Medium|Antony Hansen|Pharaoh|Joseph Tour|Bill Kenwright|2008 Theatre|Post Show Career|Musical Stage
+Which Any Dream Will Do finalist tried to represent the United Kingdom at Eurovision in 2008?|Rob McVeigh|Keith Jack|Ben Ellis|Craig Chalmers|Medium|Rob McVeigh|Eurovision Selection|2008|Song For Europe|Post Show Career|Contestant Path|Musical Competition
+Which country launched a similar Joseph casting programme to Any Dream Will Do in 2008?|The Netherlands|Australia|Canada|Germany|Medium|Netherlands|International Adaptation|Op Zoek Naar Joseph|2008 Format|Dutch Theatre|Joseph Search|BBC Format
+What was the Dutch Joseph casting series adapted from Any Dream Will Do called?|Op zoek naar Joseph|Deutschland sucht Joseph|Joseph Superstar|Wie wordt Joseph|Hard|Op Zoek Naar Joseph|Dutch Adaptation|Netherlands|Musical Casting|International Version|2008 Show|Franchise History
+Who won the Dutch Joseph casting competition that adapted Any Dream Will Do in 2008?|Freek Bartels|Lee Mead|Keith Jack|Willemijn Verkaik|Hard|Freek Bartels|Dutch Winner|Op Zoek Naar Joseph|Netherlands|2008 Champion|Joseph Role|International Casting`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -114,9 +142,14 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In which ')
+      ? 'In Any Dream Will Do, which ' + question.slice(9)
+      : 'In Any Dream Will Do, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
