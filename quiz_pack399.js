@@ -6,7 +6,10 @@
 'use strict';
 
 const FIRST_ID = 21981;
-const commonTags = ['television', 'British TV', 'ITV', 'Night and Day', 'Caleb Ranson', 'mystery soap'];
+const PROGRAMME = 'Night and Day';
+const commonTags = ['Television','British Television','ITV','Mystery Soap',
+  PROGRAMME,'Programme: '+PROGRAMME,'Caleb Ranson',
+  'Original run: 2001–2003','Granada Television','LWT'];
 
 // Question | right answer | three wrong answers | difficulty | question-specific tags.
 const rows = [
@@ -152,13 +155,14 @@ const questions = rows.map((row, index) => {
 
   const tags = [...new Set([...commonTags, ...specificTags])];
 
-  if (tags.length !== 13) {
-    throw new Error(`Pack 399: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 399: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
 
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -168,4 +172,397 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Night and Day 2001–2003, complete original ITV soap.
+// Preserve 105 original questions tv_21981–tv_22085; new IDs start tv_41288.
+// Cast: https://en.wikipedia.org/wiki/Night_and_Day_(TV_series)
+// https://watch.plex.tv/en-GB/show/night-and-day-2001/credits
+// Awards: https://www.theguardian.com/media/2002/may/09/broadcasting
+// Production: https://www.theguardian.com/media/2001/oct/25/broadcasting4
+// https://www.designweek.co.uk/kemistry-designs-all-night-and-day/
+// Broadcast: https://www.theguardian.com/media/2002/mar/27/broadcasting
+// https://www.independent.co.uk/news/media/itv-shunts-its-ironic-soap-to-graveyard-slot-5361759.html
+// https://en.wikipedia.org/wiki/Night_and_Day_(TV_series)
+// Different equivalent broadcast formats: 240 short episodes / 80 longer edits.
+// Award nomination total is from contemporary 9 May 2002 Guardian reporting.
+const audit399Cast=[
+  [
+    "Will Radcliffe",
+    "Sean Francis",
+    "Frankie's father and Mike Brake's friend"
+  ],
+  [
+    "Becky Wells",
+    "Jai Wilson",
+    "member of the Wells household"
+  ],
+  [
+    "Laura Wells",
+    "Keya Wilson",
+    "member of the Wells household"
+  ],
+  [
+    "Celeste Dexter",
+    "Phoebe Sweeney",
+    "Woody Dexter's daughter"
+  ],
+  [
+    "Francois Jardin",
+    "Laurie Hagen",
+    "Jane's French penfriend"
+  ],
+  [
+    "Nurse Melanie Bradshaw",
+    "Julie Legrand",
+    "nurse linked to the baby mystery"
+  ],
+  [
+    "Django Doyle",
+    "Dan D'Souza",
+    "Charlie's son returned from Singapore"
+  ],
+  [
+    "Malcolm Burns",
+    "Paul Kynman",
+    "caretaker of the Halfway House"
+  ],
+  [
+    "Lydia",
+    "Jenna Boyd",
+    "parking inspector who dates Sam"
+  ],
+  [
+    "Ben Armstrong",
+    "Max Anthony Foster",
+    "Sam's younger brother"
+  ],
+  [
+    "Aunt Begonia",
+    "Coralie Rose",
+    "Donna's sister"
+  ],
+  [
+    "Inspector Paisley",
+    "Flip Webster",
+    "officer investigating Jane's disappearance"
+  ],
+  [
+    "Lisa",
+    "Sally Bretton",
+    "recurring cast member"
+  ],
+  [
+    "Nicola",
+    "Kiki Kendrick",
+    "recurring cast member"
+  ]
+];
+const audit399Facts=[
+  [
+    "Awards",
+    "According to contemporary reporting, how many British Soap Award nominations did the series receive in 2002?",
+    "Twelve",
+    [
+      "Six",
+      "Nine",
+      "Fifteen"
+    ],
+    "Total 2002 nominations reported by The Guardian"
+  ],
+  [
+    "Awards",
+    "For which British Soap Awards category was Lesley Joseph nominated in 2002?",
+    "Best Comedy Performance",
+    [
+      "Best Actress",
+      "Best Newcomer",
+      "Best Dramatic Performance"
+    ],
+    "Rachel Culgrin performer nomination"
+  ],
+  [
+    "Awards",
+    "For which British Soap Awards category was Georgina Walker nominated in 2002?",
+    "Best Newcomer",
+    [
+      "Best Actress",
+      "Best Exit",
+      "Best Young Performance"
+    ],
+    "Jane Harper actress nomination"
+  ],
+  [
+    "Awards",
+    "In which British Soap Awards category did Lysette Anthony and Glynis Barber receive nominations in 2002?",
+    "Sexiest Female",
+    [
+      "Best Dramatic Performance",
+      "Best On-Screen Partnership",
+      "Best Single Episode"
+    ],
+    "2002 public nominations"
+  ],
+  [
+    "Production",
+    "Who produced the ITV series?",
+    "Chris Le Grys",
+    [
+      "Peter Cregeen",
+      "Gareth Morgan",
+      "David Moore"
+    ],
+    "Series producer"
+  ],
+  [
+    "Production",
+    "Which executive producer oversaw the series alongside Michele Buck and Damien Timmer?",
+    "Peter Cregeen",
+    [
+      "Mal Young",
+      "Tony Woods",
+      "Paul Marquess"
+    ],
+    "Executive production"
+  ],
+  [
+    "Production",
+    "Which executive producer shared credits with Peter Cregeen and Damien Timmer?",
+    "Michele Buck",
+    [
+      "Jane Tranter",
+      "Sally Haynes",
+      "Nicola Shindler"
+    ],
+    "Executive producer"
+  ],
+  [
+    "Production",
+    "Which LWT executive producer was named alongside Michele Buck and Peter Cregeen?",
+    "Damien Timmer",
+    [
+      "Mal Young",
+      "Gareth Morgan",
+      "Tony Woods"
+    ],
+    "Executive producer"
+  ],
+  [
+    "Production",
+    "Who composed the original music for the soap?",
+    "David Arch",
+    [
+      "Murray Gold",
+      "Stephen Rennicks",
+      "Rob Lane"
+    ],
+    "Television score"
+  ],
+  [
+    "Production",
+    "Who was credited as an editor on the original series?",
+    "Ian Seymour",
+    [
+      "Chris Gill",
+      "Bill Eagles",
+      "David Moore"
+    ],
+    "Series editor"
+  ],
+  [
+    "Production",
+    "Which cinematographer worked on the series alongside David Ortkiese and Chris Roach?",
+    "Clive Gill",
+    [
+      "John Conroy",
+      "Doug Hallows",
+      "Lukas Strebel"
+    ],
+    "Cinematography"
+  ],
+  [
+    "Production",
+    "Which cinematographer was credited alongside Clive Gill and Chris Roach?",
+    "David Ortkiese",
+    [
+      "Paul Herley",
+      "Baz Irvine",
+      "Lukas Strebel"
+    ],
+    "Cinematography"
+  ],
+  [
+    "Production",
+    "Which cinematographer shared credits with Clive Gill and David Ortkiese?",
+    "Chris Roach",
+    [
+      "Matt Flannery",
+      "Doug Hallows",
+      "Paul Herley"
+    ],
+    "Cinematography"
+  ],
+  [
+    "Production",
+    "Which production designer's work included the show's original branding commission?",
+    "Kemistry",
+    [
+      "The Designers Republic",
+      "Pentagram",
+      "Red Bee Media"
+    ],
+    "Title design agency"
+  ],
+  [
+    "Production",
+    "What was the first working title before the programme was provisionally called Trafalgar Road?",
+    "Life, Etc",
+    [
+      "London Nights",
+      "Daybreak",
+      "Six Families"
+    ],
+    "Development and naming"
+  ],
+  [
+    "Location",
+    "What real Greenwich street doubled for fictional Thornton Street?",
+    "King George Street",
+    [
+      "Royal Hill",
+      "Greenwich Church Street",
+      "Trafalgar Road"
+    ],
+    "Exterior production location"
+  ],
+  [
+    "Location",
+    "At which studios in Bow were the programme's interior scenes filmed?",
+    "Three Mills Studios",
+    [
+      "Elstree Studios",
+      "Pinewood Studios",
+      "Ealing Studios"
+    ],
+    "Interior set filming"
+  ],
+  [
+    "Broadcast",
+    "At what time of day did ITV first schedule the half-hour editions?",
+    "17:05",
+    [
+      "16:00",
+      "18:30",
+      "20:00"
+    ],
+    "Original teatime slot"
+  ],
+  [
+    "Broadcast",
+    "How many million viewers watched the first half-hour episode, according to contemporary reports?",
+    "2.2 million",
+    [
+      "0.5 million",
+      "1.0 million",
+      "4.5 million"
+    ],
+    "Launch audience"
+  ],
+  [
+    "Broadcast",
+    "Which BBC Two quiz competed with the early-evening ITV episodes?",
+    "The Weakest Link",
+    [
+      "Eggheads",
+      "University Challenge",
+      "Mastermind"
+    ],
+    "2002 scheduling competition"
+  ],
+  [
+    "Broadcast",
+    "Which Channel 4 daytime programme competed with the ITV soap's early editions?",
+    "Richard & Judy",
+    [
+      "Countdown",
+      "The Big Breakfast",
+      "The Paul O'Grady Show"
+    ],
+    "2002 afternoon competition"
+  ],
+  [
+    "Broadcast",
+    "On which date did the original ITV programme first premiere?",
+    "6 November 2001",
+    [
+      "8 November 2001",
+      "5 June 2003",
+      "6 October 2001"
+    ],
+    "ITV original premiere"
+  ],
+  [
+    "Broadcast",
+    "On which date did the final episode air?",
+    "5 June 2003",
+    [
+      "29 May 2003",
+      "12 June 2003",
+      "5 May 2003"
+    ],
+    "ITV original finale"
+  ],
+  [
+    "Broadcast",
+    "On which Australian broadcaster did the soap originally air?",
+    "ABC TV",
+    [
+      "Seven Network",
+      "Network Ten",
+      "SBS"
+    ],
+    "Australian broadcasts"
+  ]
+];
+const norm399=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+function addAudit399(stem,correctAnswer,wrong,category,focus){
+ if(wrong.length!==3||new Set([correctAnswer,...wrong].map(norm399)).size!==4)
+  throw Error('Pack 399 invalid choices: '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrong];answers.splice(questions.length%4,0,correctAnswer);
+ const tags=['Television','British Television','ITV','Mystery Soap',
+   PROGRAMME,'Programme: '+PROGRAMME,'Original TV run: 2001–2003',
+   'Category: '+category,'Focus: '+focus,'Correct answer: '+correctAnswer,
+   'Creator: Caleb Ranson','Granada for LWT',
+   'Three television series','Original show: complete'];
+ questions.push({id:'tv_'+(41288+questions.length-105),
+  category:'Television',programme:PROGRAMME,question,answers,correctAnswer,
+  difficulty:'Medium',tags,dailyEligible:true});
+}
+for(const [i,[role,actor,focus]] of audit399Cast.entries()){
+ const pool=audit399Cast.filter(x=>x[1]!==actor).map(x=>x[1]);
+ if(pool.length<3)throw Error('Not enough cast distractors');
+ const off=(i*5+role.length)%pool.length;
+ const wrong=[pool[off],pool[(off+1)%pool.length],pool[(off+2)%pool.length]];
+ addAudit399('Which performer played '+role+'?',actor,wrong,
+  'Recurring cast','Character: '+role+' / '+focus);
+}
+for(const [section,stem,answer,wrong,focus] of audit399Facts){
+ addAudit399(stem,answer,wrong,section,focus);
+}
+const seen399Ids=new Set(),seen399Wording=new Set();
+for(const q of questions){
+ const text=norm399(q.question);
+ if(q.programme!==PROGRAMME||q.category!=='Television'||
+ !q.tags.includes('Programme: '+PROGRAMME)||
+ !text.includes(norm399(PROGRAMME))||
+ q.answers.length!==4||new Set(q.answers.map(norm399)).size!==4||
+ q.answers.filter(x=>x===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||
+ seen399Ids.has(q.id)||seen399Wording.has(text)||
+ text.includes(norm399(q.correctAnswer)))
+  throw Error('Pack 399 build assertion failed at '+q.id);
+ seen399Ids.add(q.id);seen399Wording.add(text);
+}
+module.exports=questions;
