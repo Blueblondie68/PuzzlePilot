@@ -1,7 +1,7 @@
 // PuzzlePilot - The Bigggggg Quiz - Pack 426
 // All Saints (Australia): Season 7 (2004), 40 episodes.
 // Follows Pack 425. First ID: tv_24618.
-// WordPad-ready CommonJS. All Saints is not yet complete in the TV tracker.
+// WordPad-ready CommonJS. Series finished in 2009; later seasons still require audit.
 // Each row: question | correct answer | three distractors | difficulty | seven specific tags.
 // Researched from 2004 episode guides and cast information.
 'use strict';
@@ -128,9 +128,42 @@ Which pair finally admitted their romantic feelings in The Season to Be Jolly?|C
 Which character surprised staff by dressing up as Santa in the 2004 finale?|Frank Campion|Jack Quade|Vincent Hughes|Nelson Curtis|Hard|The Season To Be Jolly|Episode 40|Frank Campion|Santa Claus|Christmas Celebration|Regina Butcher|Seasonal Staff Surprise
 What group was involved in a tragic road accident on the way to a Christmas party in the finale?|Children with cancer|Retired hospital nurses|Ambulance recruits|A school football team|Medium|The Season To Be Jolly|Episode 40|Paediatric Cancer|Christmas Party|Road Accident|Frank Campion|Terminal Illness`;
 
+
+// 2004 Season 7 episode and 2005 Logie audit; preserve original question IDs.
+const AUDIT_ORIGINAL_COUNT = 113;
+const AUDIT_FIRST_ID = 42236;
+const auditFacts = `Which All Saints actress received a 2005 Gold Logie nomination?|Georgie Parker|Libby Tanner|Judith McGrath|Natalie Saleeba|Medium|2005 Logies|Georgie Parker|Gold Logie nomination|Terri Sullivan|popular personality|award recognition|Australian television
+Which All Saints actor was nominated for Most Popular New Male Talent at the 2005 Logies?|Wil Traval|John Howard|Conrad Coleby|Mark Priestley|Medium|2005 Logies|Wil Traval|Jack Quade|new male talent nomination|acting recognition|Australian awards|Emergency doctor
+Which All Saints actress was nominated for Most Popular New Female Talent at the 2005 Logies?|Natalie Saleeba|Tammy MacIntosh|Georgie Parker|Celia Ireland|Medium|2005 Logies|Natalie Saleeba|Jessica Singleton|new female talent nomination|acting recognition|Australian awards|Emergency nurse
+In which programme category was All Saints nominated at the 2005 Logie Awards?|Most Popular Australian Drama Series|Most Popular Australian Comedy|Most Outstanding News Coverage|Most Popular Reality Show|Medium|2005 Logies|Most Popular Australian Drama Series|programme nomination|Seven Network|Australian television|industry awards|not a win
+Which All Saints episode first switched the main setting from Ward 17 to the Emergency Department?|Brave New World|One Day at a Time|A Place in the Heart|Ground Zero|Medium|Brave New World|2004 overhaul|Emergency Department|episode eleven|new setting|Frank Campion|production change
+Which instrument featured in the revised All Saints opening theme for Series 7?|Saxophone|Trumpet|Accordion|Flute|Medium|opening titles|saxophone|series seven|2004|theme music|Emergency overhaul|production design
+What imagery featured in the revamped All Saints opening sequence for Series 7?|Ambulances and emergency equipment|A city skyline and beach|A police station and courtroom|A university and lecture theatre|Medium|opening credits|ambulances|emergency equipment|2004 revamp|title sequence|visual design|Emergency Department
+Which All Saints episode prompted complaints about Frank Campion's use of strong language?|Brave New World|The Season to Be Jolly|Panic Stations|Opening Up|Medium|Brave New World|Frank Campion|2004 controversy|coarse language|viewer complaints|Seven Network|episode eleven
+What classification did Seven Network cite to defend strong language in the All Saints episode Brave New World?|M classification|G classification|MA15 classification|C classification|Medium|Brave New World|M classification|2004 controversy|Seven Network|coarse language|broadcast standards|network response
+Which All Saints episode was directed by Catherine Millar and written by Sarah Walker during the Emergency overhaul?|Brave New World|One Day at a Time|The Last Resort|Out on a Limb|Medium|Catherine Millar|Sarah Walker|Brave New World|2004|episode eleven|director and writer|production credits
+Which family member of Frank Campion had autism in All Saints Series 7?|His daughter Kathleen|His brother Peter|His wife Martha|His son Daniel|Medium|Frank Campion|Kathleen Campion|autism|family storyline|Emergency chief|2004|domestic tension
+Which actress portrayed Frank Campion's daughter Kathleen in All Saints Series 7?|Trilby Beresford|Adrienne Pickering|Natalie Saleeba|Kimberley Joseph|Medium|Trilby Beresford|Kathleen Campion|Frank Campion|autism|2004 guest cast|family drama|performer
+In All Saints episode Opening Up which doctor was frustrated when a young resident solved a diagnosis first?|Charlotte Beaumont|Vincent Hughes|Frank Campion|Luke Forlano|Medium|Opening Up|Charlotte Beaumont|young resident|diagnosis competition|2004|professional rivalry|episode two
+In All Saints episode Happy Families who was the best man at the disastrous pre-wedding celebration?|Sterling McCormack|Nelson Curtis|Dan Goldman|Scott Zinenko|Medium|Happy Families|Sterling McCormack|best man|bucks night|2004|wedding prank|episode three
+In All Saints episode In Too Deep whose feelings for Vincent Hughes became apparent?|Sophia Beaumont|Cate McMasters|Jessica Singleton|Paula Morgan|Medium|In Too Deep|Sophia Beaumont|Vincent Hughes|unrequited feelings|internet romance|2004|episode five
+In All Saints episode Brave New World whose proposals for changes clashed with Frank Campion?|Sophia Beaumont|Regina Butcher|Cate McMasters|Grace Connelly|Medium|Brave New World|Sophia Beaumont|Frank Campion|new department|change proposals|2004|episode eleven
+In All Saints episode Zero Tolerance which younger doctor had begun attracting Terri Sullivan's attention?|Jack Quade|Vincent Hughes|Luke Forlano|Malcolm Pussle|Medium|Zero Tolerance|Terri Sullivan|Jack Quade|new romance|2004|age difference|episode fifteen
+In All Saints episode Under the Skin what did a grieving mother blame Charlotte Beaumont for?|The death of her son|A mistaken cancer diagnosis|The loss of her savings|A failed kidney transplant|Medium|Under the Skin|Charlotte Beaumont|grieving mother|patient death|accountability|2004|episode nineteen
+In All Saints episode Pecking Order which doctor challenged a senior colleague about treating a young boy?|Vincent Hughes|Frank Campion|Jack Quade|Luke Forlano|Medium|Pecking Order|Vincent Hughes|senior doctor|young boy|treatment disagreement|2004|episode twenty one
+In All Saints episode Luck of the Draw which ambulance officer witnessed a stranger give his life to save another?|Cate McMasters|Scott Zinenko|Alex Kearns|Nigel MacPherson|Medium|Luck of the Draw|Cate McMasters|self sacrifice|rescuer|traumatic memories|2004|episode twenty two
+In All Saints episode Consequences whose difficulties with his daughter influenced how he treated families in crisis?|Frank Campion|Vincent Hughes|Nelson Curtis|Jack Quade|Medium|Consequences|Frank Campion|family problems|daughter Kathleen|patient families|2004|episode twenty three
+In All Saints episode Bad Seed which Emergency nurse was affected by post-traumatic stress?|Jessica Singleton|Regina Butcher|Von Ryan|Charlotte Beaumont|Medium|Bad Seed|Jessica Singleton|post traumatic stress|Emergency nurse|2004|trauma|episode twenty seven
+In All Saints episode Odd Couples which nurse became attached to an injured prison-van passenger?|Jessica Singleton|Von Ryan|Regina Butcher|Cate McMasters|Medium|Odd Couples|Jessica Singleton|injured nurse|prison van|Dan Goldman|patient attachment|episode twenty nine
+In All Saints episode Benefit of the Doubt which management role did Terri Sullivan take over from Nelson?|Nursing Unit Manager of Emergency|Chief of Surgery|Hospital Chief Executive|Ambulance Supervisor|Medium|Benefit of the Doubt|Terri Sullivan|Nelson Curtis|Emergency NUM|management change|2004|episode thirty
+In All Saints episode Don't Look Back which two doctors disagreed over the care of a pregnant patient with Down syndrome?|Frank Campion and Vincent Hughes|Terri Sullivan and Luke Forlano|Jack Quade and Malcolm Pussle|Charlotte Beaumont and Oscar Wu|Medium|Dont Look Back|Frank Campion|Vincent Hughes|Down syndrome|pregnancy|medical ethics|2004
+In All Saints episode Karma whose death left Vincent Hughes grieving?|Grace Connelly|Sophia Beaumont|Regina Butcher|Paula Morgan|Medium|Karma|Vincent Hughes|Grace Connelly|grief|professional relationships|2004|episode thirty two
+In All Saints episode The Extra Mile who realised Jessica Singleton had feelings for him?|Vincent Hughes|Jack Quade|Frank Campion|Dan Goldman|Medium|The Extra Mile|Jessica Singleton|Vincent Hughes|unspoken feelings|nursing staff|2004|episode thirty six
+In All Saints episode Cries for Help what secret nearly cost an unfaithful patient his life?|An extramarital affair|A fraudulent insurance claim|An undisclosed adoption|A secret gambling debt|Medium|Cries for Help|unfaithful patient|secrecy|medical emergency|staff relationships|2004|episode thirty nine`;
+
 let sequence = 0;
-const questions = facts.trim().split('\n').map(line => {
-  const id = 'tv_' + String(FIRST_ID + sequence).padStart(5, '0');
+const questions = [...facts.trim().split('\n'), ...auditFacts.trim().split('\n')].map(line => {
+  const id = 'tv_' + String(sequence < AUDIT_ORIGINAL_COUNT ? FIRST_ID + sequence : AUDIT_FIRST_ID + sequence - AUDIT_ORIGINAL_COUNT).padStart(5, '0');
   const fields = line.trim().split('|').map(s => s.trim());
   if (fields.length !== 13)
     throw new Error(`Expected 13 fields for ${id}; got ${fields.length}`);
@@ -145,9 +178,14 @@ const questions = facts.trim().split('\n').map(line => {
   answers.splice(sequence % 4, 0, correctAnswer);
   const tags = [...new Map([...commonTags, correctAnswer, ...specificTags]
     .map(tag => [tag.toLowerCase(), tag])).values()];
+  const contextualQuestion = question.includes(programme)
+    ? question
+    : question.startsWith('In ')
+      ? 'In All Saints episode ' + question.slice(3)
+      : 'In All Saints, ' + question[0].toLowerCase() + question.slice(1);
   sequence++;
   return {
-    id, category: 'Television', programme, question, answers,
+    id, category: 'Television', programme, question: contextualQuestion, answers,
     correctAnswer, difficulty, tags, dailyEligible: true
   };
 });
