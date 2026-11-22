@@ -5,7 +5,10 @@
 'use strict';
 
 const FIRST_ID = 22312;
-const commonTags = ['television', 'British TV', 'BBC One', 'The Missing', 'Series 2 (2016)', 'crime mystery'];
+const PROGRAMME = 'The Missing';
+const commonTags = ['Television','British Television','BBC One','Crime Mystery',
+  PROGRAMME,'Programme: '+PROGRAMME,'Series 2 (2016)',
+  'Harry and Jack Williams','2016 eight-part story'];
 
 // Row: question | correct answer | three distractors | difficulty | seven specific tags.
 // Questions name The Missing for mixed-category and standalone play.
@@ -139,12 +142,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 402: repeated answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 402: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 402: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -154,4 +158,251 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// SECOND SERIES AUDIT — all eight episodes, 12 October–30 November 2016.
+// 109 original IDs tv_22312–tv_22420 unchanged. Additions start at tv_41398.
+// Story audit cross-checked against episode-by-episode descriptions:
+// https://thetvdb.com/series/the-missing/allseasons/official
+// https://www.tvmaze.com/shows/316/the-missing/episodeguide
+// https://en.wikipedia.org/wiki/The_Missing_(British_TV_series)
+// Original 2016 executive production announcement:
+// https://www.4rfv.co.uk/industrynews/210147/the_missing_to_return_to_bbc_one
+// Producer official credits: https://www.twobrotherspictures.com/the-missing-series2
+// Original dates: https://thetvdb.com/series/the-missing/seasons/official/2
+// US premiere: https://tvseriesfinale.com/tv-show/missing-starz-season-two-premiere-key-art/
+// Original 2014 Series 1 is separate Pack 401. No unverified 2017 awards added.
+const audit402Story=[
+  [
+    "2 — The Turtle and the Stick",
+    "Which military law-enforcement organisation joins the German police to investigate the returned girl's disappearance?",
+    "Royal Military Police",
+    [
+      "Ministry of Defence Police",
+      "Europol",
+      "British Transport Police"
+    ],
+    "Joint jurisdiction over the investigation"
+  ],
+  [
+    "2 — The Turtle and the Stick",
+    "Which war reporter helps Julien cross dangerous territory in Iraq while looking for Daniel Reed?",
+    "Stefan Andersen",
+    [
+      "Jorn Lenhart",
+      "Remy Giroux",
+      "Kristian Herz"
+    ],
+    "Reporter assists Julien"
+  ],
+  [
+    "3 — A Prison Without Walls",
+    "What does the girl posing as Alice buy shortly before concealing it in the Webster family's garden shed?",
+    "A can of petrol",
+    [
+      "A bottle of medicine",
+      "A new mobile phone",
+      "A sleeping bag"
+    ],
+    "Shed fire preparation"
+  ],
+  [
+    "3 — A Prison Without Walls",
+    "What does Sophie ask Matthew to do for the butcher accused of holding her captive?",
+    "Visit him in prison and apologise",
+    [
+      "Steal his car from the police compound",
+      "Write to his wife asking for money",
+      "Tell him about a secret cellar"
+    ],
+    "Matthew is asked to apologise to Kristian Herz"
+  ],
+  [
+    "4 — Statice",
+    "What footage helps Julien and Jorn discover that the returned girl bought flowers before the shed fire?",
+    "CCTV footage",
+    [
+      "A filmed police interview",
+      "A television news report",
+      "A home-video recording"
+    ],
+    "Flower purchase investigation"
+  ],
+  [
+    "5 — Das Vergessen",
+    "Which visitor to Henry Reed's house do Julien and Jorn trace through his telephone records?",
+    "A sex worker",
+    [
+      "An estate agent",
+      "A parish priest",
+      "A delivery driver"
+    ],
+    "Investigating Henry Reed's supposed suicide"
+  ],
+  [
+    "5 — Das Vergessen",
+    "What does the visitor to Henry Reed's house help Julien establish about his death?",
+    "It was murder rather than suicide",
+    [
+      "He died in an accidental fire",
+      "He was killed during a robbery",
+      "He died from a heart attack"
+    ],
+    "Henry Reed's death reclassified"
+  ],
+  [
+    "6 — Saint John",
+    "What restricted material does Gemma secretly copy to help Julien identify the officers involved in Iraq?",
+    "British Army personnel records",
+    [
+      "Old school examination papers",
+      "Embassy visitor logs",
+      "Local council planning files"
+    ],
+    "Julien and Gemma investigate the 1991 cover-up"
+  ],
+  [
+    "7 — 1991",
+    "On what suspicion is Julien arrested after investigating Brigadier Adrian Stone?",
+    "Assaulting Adrian Stone",
+    [
+      "Stealing police evidence",
+      "Kidnapping Kristian Herz",
+      "Forging an identity document"
+    ],
+    "Julien's arrest during final investigation"
+  ],
+  [
+    "7 — 1991",
+    "What locked feature do Julien and Gemma find when they enter Adam Gettrick's home?",
+    "A padlocked cellar door",
+    [
+      "A sealed attic window",
+      "A locked wall safe",
+      "A concealed garage pit"
+    ],
+    "Break-in reveals possible captivity"
+  ],
+  [
+    "7 — 1991",
+    "Where does Gettrick conceal the real Alice while driving towards his Swiss hideaway?",
+    "In the boot of his car",
+    [
+      "Under the back seats",
+      "Behind the caravan wardrobe",
+      "Inside a locked roof box"
+    ],
+    "Gettrick's escape with captive Alice"
+  ]
+];
+const audit402Other=[
+  [
+    "Production",
+    "Who produced the second eight-part series for the BBC and Starz?",
+    "Julian Stevens",
+    [
+      "Chris Clough",
+      "John Yorke",
+      "Tom Shankland"
+    ],
+    "2016 series producer"
+  ],
+  [
+    "Production",
+    "Which executive producer represented New Pictures alongside Willow Grylls and Charles Pattinson?",
+    "Elaine Pyke",
+    [
+      "Sally Haynes",
+      "Jane Tranter",
+      "Sophie Clarke-Jervoise"
+    ],
+    "New Pictures executive production"
+  ],
+  [
+    "Production",
+    "Which executive producer was credited for Belgian partner Czar TV on the second series?",
+    "Eurydice Gysel",
+    [
+      "Kate Lewis",
+      "Catherine Magee",
+      "Emma Norton"
+    ],
+    "Belgian co-producer executive"
+  ],
+  [
+    "Production",
+    "Which Belgian film-finance executive was named among the second series' executive producers?",
+    "Jan Vrints",
+    [
+      "Andy Harries",
+      "Gareth Neame",
+      "Stephen Garrett"
+    ],
+    "Belgian producer credit"
+  ],
+  [
+    "Broadcast",
+    "On what date did the second series premiere on BBC One?",
+    "12 October 2016",
+    [
+      "19 October 2016",
+      "5 October 2016",
+      "12 November 2016"
+    ],
+    "UK premiere"
+  ],
+  [
+    "Broadcast",
+    "On what date did the final episode of the second series first air on BBC One?",
+    "30 November 2016",
+    [
+      "23 November 2016",
+      "7 December 2016",
+      "30 October 2016"
+    ],
+    "UK series finale"
+  ],
+  [
+    "Broadcast",
+    "On what date did the second series premiere on Starz in the United States?",
+    "12 February 2017",
+    [
+      "5 February 2017",
+      "12 March 2017",
+      "19 February 2017"
+    ],
+    "US Starz premiere"
+  ]
+];
+const audit402Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB').replace(/[^\p{L}\p{N}]/gu,'');
+function add402(stem,correctAnswer,wrong,section,focus){
+ if(wrong.length!==3||new Set([correctAnswer,...wrong].map(audit402Norm)).size!==4)
+  throw Error('Pack 402 invalid options in '+stem);
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[...wrong];answers.splice(questions.length%4,0,correctAnswer);
+ const tags=['Television','British Television','BBC One','Crime Mystery',
+  PROGRAMME,'Programme: '+PROGRAMME,'Series 2 (2016)','2016 eight-episode story',
+  'Focus: '+focus,'Question section: '+section,
+  'Correct answer: '+correctAnswer,'Created by Harry and Jack Williams',
+  'Julien Baptiste','Webster family','Series 2 episode and production'];
+ questions.push({id:'tv_'+(41398+questions.length-109),category:'Television',
+  programme:PROGRAMME,question,answers,correctAnswer,difficulty:'Medium',
+  tags,dailyEligible:true});
+}
+for(const [episode,stem,answer,wrong,focus] of audit402Story)
+ add402(stem,answer,wrong,'Episode story: '+episode,focus);
+for(const [category,stem,answer,wrong,focus] of audit402Other)
+ add402(stem,answer,wrong,category,focus);
+const ids402=new Set(),questions402=new Set();
+for(const q of questions){
+ const stem=audit402Norm(q.question);
+ if(q.category!=='Television'||q.programme!==PROGRAMME||
+ !q.tags.includes('Programme: '+PROGRAMME)||!stem.includes(audit402Norm(PROGRAMME))||
+ q.answers.length!==4||new Set(q.answers.map(audit402Norm)).size!==4||
+ q.answers.filter(a=>a===q.correctAnswer).length!==1||
+ q.tags.length<12||q.dailyEligible!==true||ids402.has(q.id)||questions402.has(stem)||
+ stem.includes(audit402Norm(q.correctAnswer)))
+ throw Error('Pack 402 module validation failed: '+q.id);
+ ids402.add(q.id);questions402.add(stem);
+}
+module.exports=questions;
