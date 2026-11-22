@@ -2,7 +2,7 @@
 // Comprehensive original TV run: all TEN regular series plus both scripted specials.
 // 74 scripted instalments TOTAL: 72 regular episodes, 2009 Summer Special and 2010 Christmas Special.
 // Separate 2012 Sport Relief sketch and 2018 anniversary documentary are trivia, not extra scripted episodes.
-// 139 specific unique questions covering production, characters and every series/special.
+// 161 audited questions covering production, characters and every series/special.
 // IDs tv_26479–tv_26617. No Benidorm overlap found in first 20 mixed packs or repo search.
 // Fact sources: https://www.comedy.co.uk/tv/benidorm/episodes/
 // https://www.comedy.co.uk/tv/benidorm/cast_crew/full/
@@ -4498,14 +4498,64 @@ const questions=[
     ]
   }
 ];
-const actualBad=questions.filter((q,i)=>q.id!=='tv_'+(26479+i)||
+
+// Targeted audit of 2008/2011/2018 award wins, BAFTA and other nominations,
+// key Series 7-8 character resolutions and the 2018-19 stage tour.
+// Original 139 questions retain their IDs, answers, options and tags.
+const AUDIT_ORIGINAL_COUNT=139;
+const AUDIT_FIRST_ID=42689;
+const auditFacts=`Which category did ITV's Benidorm win at the 2008 National Television Awards?|Comedy Programme|Drama Series|Entertainment Programme|Comedy Performance|Medium|2008 National Television Awards|Comedy Programme Winner|Viewers Award|NTA Victory|ITV Comedy|Television Honours|Awards History
+In which year did ITV's Benidorm win its second National Television Award for Comedy Programme?|2011|2009|2015|2018|Medium|2011 National Television Awards|Second NTA Win|Comedy Programme|Audience Vote|British TV Award|Awards Timeline|2011 Ceremony
+Which prize did Benidorm receive at the 2018 TV Choice Awards after its final television series?|Best Comedy|Best Drama|Best New Show|Best Reality Programme|Medium|2018 TV Choice Awards|Best Comedy Winner|Final TV Series|Viewer Voted|September Ceremony|Programme Recognition|British Comedy
+Which comedy was among the rival nominees defeated by Benidorm at the 2018 TV Choice Awards?|Not Going Out|The Office|Derry Girls|The Inbetweeners|Medium|2018 TV Choice Awards|Not Going Out|Best Comedy|Rival Nominee|Channel BBC|Audience Recognition|Award Result
+For which category was Benidorm nominated at the 2008 BAFTA Television Awards?|Situation Comedy|Comedy Performance|Entertainment Programme|Drama Serial|Medium|2008 BAFTA Nomination|Situation Comedy|British Academy|First Series|Programme Award|Not A Win|ITV Sitcom
+Which Channel 4 sitcom beat Benidorm to the 2008 BAFTA Situation Comedy award?|Peep Show|The IT Crowd|The Thick of It|Black Books|Medium|2008 BAFTA Winner|Peep Show|Situation Comedy|Award Result|ITV Rivalry|British Academy|Comedy Series
+Which producer was listed alongside Derren Litten and Kevin Allen on Benidorm's 2008 BAFTA nomination?|Geoffrey Perkins|Armando Iannucci|John Lloyd|Jon Plowman|Medium|Geoffrey Perkins|BAFTA 2008 Nominee Credits|Production Team|Tiger Aspect|Derren Litten|Kevin Allen|Behind The Scenes
+Which prize was Benidorm shortlisted for at the 2008 British Comedy Awards?|Best TV Comedy|Best New Comedy|Best Comedy Drama|Best Comedy Panel Show|Medium|2008 British Comedy Awards|Best TV Comedy|Nominee|Awards Category|Not A Win|Television Comedy|Programme Honours
+Which series won the 2008 British Comedy Award for Best TV Comedy ahead of Benidorm?|Gavin & Stacey|Peep Show|The Inbetweeners|Outnumbered|Medium|2008 British Comedy Awards|Gavin And Stacey|Best TV Comedy Winner|Benidorm Nominee|Award Result|BBC Three|Comedy Competition
+Which category shortlisted Benidorm at the 2008 Broadcast Awards?|Best Comedy Programme|Best Drama Series|Best Entertainment Programme|Best Multichannel Programme|Medium|2008 Broadcast Awards|Best Comedy Programme|Industry Nomination|Television Trade Awards|Programme Recognition|Not A Win|ITV
+Which series won the 2008 Broadcast Award for Best Comedy Programme instead of Benidorm?|The Thick of It|Harry & Paul|Outnumbered|Gavin & Stacey|Medium|2008 Broadcast Awards|The Thick Of It|The Rise Of The Nutters|Comedy Programme Winner|Awards Result|ITV Nominee|Broadcast Magazine
+Which programme defeated Benidorm for Best Comedy at the 2018 National Television Awards?|Peter Kay's Car Share|Still Open All Hours|The Big Bang Theory|Not Going Out|Medium|2018 National Television Awards|Car Share Winner|Comedy Programme|Benidorm Nominee|Peter Kay|Awards Result|ITV BBC Competition
+On which date did the ITV sitcom Benidorm first appear on British television?|1 February 2007|15 March 2007|2 May 2007|1 January 2008|Medium|1 February 2007|ITV Premiere|Series One|Television Timeline|Original Broadcast|First Episode|Programme Debut
+What inheritance caused the Garvey family to leave the Solana in Benidorm Series 7?|Madge inherited millions from an American relative|Mick won the Spanish lottery|Janice inherited a hotel in Blackpool|Michael won a television competition|Medium|Series Seven|Garvey Family Exit|Madge Harvey|American Relative|Buck A Roo|Surprise Inheritance|Family Departure
+To which American city did the Garveys travel after Madge's inheritance in Benidorm Series 7?|Las Vegas|Miami|Los Angeles|New York City|Medium|Series Seven|Las Vegas|Garvey Family|Madge Harvey|Buck A Roo|American Journey|Character Exit
+Which departed Benidorm character's ashes did Jacqueline scatter in the opening of Series 8?|Donald Stewart|Mel Harvey|Mick Garvey|Eddie Dawson|Medium|Series Eight Opening|Jacqueline Stewart|Donald Tribute|Scattering Ashes|Benidorm Coast|2016 Storyline|Character Farewell
+Which Benidorm actor's death in 2014 led to a later on-screen farewell to his character?|Kenny Ireland|Geoffrey Hutchings|Bobby Knutt|Peter Caffrey|Medium|Kenny Ireland|Donald Stewart|Actor Death 2014|Series Eight Tribute|Jacqueline Stewart|Production Loss|Cast History
+Which two Benidorm characters helped Jacqueline scatter Donald's ashes in Series 8?|Kenneth and Troy|Mateo and Joyce|Noreen and Geoff|Liam and Lesley|Medium|Series Eight|Kenneth Du Beke|Troy Ramsbottom|Jacqueline Stewart|Donald Stewart|Memorial Story|Character Connections
+Which Newcastle venue hosted the world premiere of the stage show based on Benidorm in September 2018?|Theatre Royal|City Hall|Sage Gateshead|Utilita Arena|Medium|Benidorm Live|Newcastle Theatre Royal|7 September 2018|Stage Premiere|Theatre Tour|Programme Legacy|Adaptation
+Which original Benidorm creator wrote new stories for its 2018-2019 live stage tour?|Derren Litten|Johnny Vegas|Steve Pemberton|Kevin Allen|Medium|Derren Litten|Benidorm Live|Stage Writer|2018 UK Tour|Solana Characters|Theatre Adaptation|Creator Involvement
+Which actress played Sam in Benidorm and returned for the 2018 stage adaptation?|Shelley Longworth|Janine Duvitski|Julie Graham|Hannah Waddingham|Medium|Shelley Longworth|Sam|2018 Stage Cast|Benidorm Live|Supporting Actress|Solana Holidaymaker|Actress
+In what year did ITV's Benidorm change to hour-long episodes beginning with its third series?|2009|2007|2011|2015|Medium|2009 Series Three|Hour Long Format|Episode Duration|ITV Scheduling|Comedy Series|Programme Development|Broadcast Format`;
+const commonAuditTags=['Television','British Television','Programme: Benidorm','Benidorm (ITV)',
+ 'British Sitcom','Solana Resort','2007–2018 Original Run','Written Questions'];
+const auditQuestions=auditFacts.trim().split('\n').map((line,i)=>{
+ const p=line.split('|').map(x=>x.trim());
+ if(p.length!==13)throw Error('Invalid Benidorm audit row '+i+' got '+p.length);
+ const [question,correctAnswer,wrong1,wrong2,wrong3,difficulty,...specificTags]=p;
+ const answers=[wrong1,wrong2,wrong3];answers.splice((AUDIT_ORIGINAL_COUNT+i)%4,0,correctAnswer);
+ const tags=[...new Map([...commonAuditTags,correctAnswer,...specificTags].map(t=>[t.toLowerCase(),t])).values()];
+ return {id:'tv_'+String(AUDIT_FIRST_ID+i),category:'TV',topic:'Benidorm',question,answers,
+ correctAnswer,difficulty,tags,dailyEligible:true};
+});
+for(const q of questions){
+ if(!q.question.includes('Benidorm')){
+  q.question=q.question.startsWith('In which ')
+   ? 'In Benidorm, which '+q.question.slice(9)
+   : q.question.startsWith('In ')
+     ? 'In Benidorm, '+q.question[0].toLowerCase()+q.question.slice(1)
+     : 'In Benidorm, '+q.question[0].toLowerCase()+q.question.slice(1);
+ }
+}
+questions.push(...auditQuestions);
+
+const actualBad=questions.filter((q,i)=>q.id!==(i<AUDIT_ORIGINAL_COUNT?'tv_'+(26479+i):'tv_'+(AUDIT_FIRST_ID+i-AUDIT_ORIGINAL_COUNT))||
   q.category!=='TV'||q.topic!=='Benidorm'||
   !Array.isArray(q.answers)||q.answers.length!==4||
   new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
   q.answers.filter(x=>x===q.correctAnswer).length!==1||
   q.tags.length<14||new Set(q.tags).size!==q.tags.length||
   !q.dailyEligible||!['Easy','Medium','Hard'].includes(q.difficulty));
-if(questions.length!==139||actualBad.length||
+if(questions.length!==161||actualBad.length||
  new Set(questions.map(q=>q.id)).size!==questions.length||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length)
  throw Error('Pack 478 validation failed');
