@@ -148,6 +148,25 @@
     ['BBC One', '1993-1997', 'Police Sitcom', 'Jasper Carrott', 'Robert Powell', 'Crime Parody'],
     detectiveFacts);
 
+
+  // Split the original trilogy questions into the three correctly titled serials.
+  // Retain every original ID and answer. Questions which ask for a sequel's
+  // title retain the original serial label to avoid revealing their answer.
+  for (let i = 28; i <= 38; i++) {
+    const q = questions[i];
+    if (q.programme !== 'The Beiderbecke Affair') throw Error('Pack 366 Tapes range changed');
+    q.programme = 'The Beiderbecke Tapes';
+    q.tags = q.tags.filter(t => t !== 'Programme: The Beiderbecke Affair');
+    q.tags.push('Programme: The Beiderbecke Tapes');
+  }
+  for (let i = 40; i <= 47; i++) {
+    const q = questions[i];
+    if (q.programme !== 'The Beiderbecke Affair') throw Error('Pack 366 Connection range changed');
+    q.programme = 'The Beiderbecke Connection';
+    q.tags = q.tags.filter(t => t !== 'Programme: The Beiderbecke Affair');
+    q.tags.push('Programme: The Beiderbecke Connection');
+  }
+
   // Validate actual exported question objects, not only source text.
   if (!questions.length || questions[0].id !== 'tv_18325' ||
       new Set(questions.map(q => q.id)).size !== questions.length ||
@@ -163,6 +182,1657 @@
         !q.tags.includes('Programme: ' + q.programme) ||
         !['Easy', 'Medium', 'Hard'].includes(q.difficulty) || q.dailyEligible !== true)) {
     throw new Error('Pack 366: exported object validation failed');
+  }
+
+  
+  // Pack 366 historical audit, 22 November 2026:
+  // All 98 original IDs retained; 19 Beiderbecke questions relabelled
+  // to distinguish The Tapes and The Connection from The Affair.
+  // References: https://www.historyfiles.co.uk/Guide/Beiderbecke.htm
+  // https://www.comedy.co.uk/tv/the_detectives/episodes/all/
+  const auditAdditions = [
+  {
+    "id": "tv_39493",
+    "category": "Television",
+    "programme": "The Beiderbecke Affair",
+    "question": "In The Beiderbecke Affair, what is wrong with the Bix Beiderbecke records delivered to Trevor?",
+    "answers": [
+      "They are badly scratched",
+      "They are empty record sleeves",
+      "They are not the records he ordered",
+      "They are in the wrong language"
+    ],
+    "correctAnswer": "They are not the records he ordered",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Affair",
+      "Programme: The Beiderbecke Affair",
+      "ITV",
+      "1980s Television",
+      "Episode context: Original 1985",
+      "Character and event: Incorrect Jazz Record Delivery",
+      "Answer fact: They are not the records he ordered",
+      "Storyline: Incorrect Jazz Record Delivery",
+      "Question focus: Incorrect Jazz Record Delivery",
+      "Production: Yorkshire Television",
+      "Era and plot: Original 1985",
+      "Distinct incident: Incorrect Jazz Record Delivery"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39494",
+    "category": "Television",
+    "programme": "The Beiderbecke Affair",
+    "question": "In The Beiderbecke Affair, what is Trevor doing at the children's football match when he spots the platinum blonde?",
+    "answers": [
+      "Coaching a team",
+      "Selling programmes",
+      "Keeping the score",
+      "Refereeing"
+    ],
+    "correctAnswer": "Refereeing",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Affair",
+      "Programme: The Beiderbecke Affair",
+      "ITV",
+      "1980s Television",
+      "Episode context: Original 1985",
+      "Character and event: Trevor Referees Youth Football",
+      "Answer fact: Refereeing",
+      "Storyline: Trevor Referees Youth Football",
+      "Question focus: Trevor Referees Youth Football",
+      "Production: Yorkshire Television",
+      "Era and plot: Original 1985",
+      "Distinct incident: Trevor Referees Youth Football"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39495",
+    "category": "Television",
+    "programme": "The Beiderbecke Affair",
+    "question": "In The Beiderbecke Affair, where does Big Al keep his mail-order stock before Sergeant Hobson raids it?",
+    "answers": [
+      "A church basement",
+      "A railway warehouse",
+      "A school gymnasium",
+      "A pub attic"
+    ],
+    "correctAnswer": "A church basement",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Affair",
+      "Programme: The Beiderbecke Affair",
+      "ITV",
+      "1980s Television",
+      "Episode context: Original 1985",
+      "Character and event: Big Al Church Basement Storeroom",
+      "Answer fact: A church basement",
+      "Storyline: Big Al Church Basement Storeroom",
+      "Question focus: Big Al Church Basement Storeroom",
+      "Production: Yorkshire Television",
+      "Era and plot: Original 1985",
+      "Distinct incident: Big Al Church Basement Storeroom"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39496",
+    "category": "Television",
+    "programme": "The Beiderbecke Affair",
+    "question": "In The Beiderbecke Affair, how do Jill and Helen of Tadcaster decide which one gets to be with Trevor?",
+    "answers": [
+      "By drawing lots",
+      "By tossing a coin",
+      "By playing cards",
+      "By asking Trevor to choose"
+    ],
+    "correctAnswer": "By tossing a coin",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Affair",
+      "Programme: The Beiderbecke Affair",
+      "ITV",
+      "1980s Television",
+      "Episode context: Original 1985",
+      "Character and event: Jill Helen Coin Toss Over Trevor",
+      "Answer fact: By tossing a coin",
+      "Storyline: Jill Helen Coin Toss Over Trevor",
+      "Question focus: Jill Helen Coin Toss Over Trevor",
+      "Production: Yorkshire Television",
+      "Era and plot: Original 1985",
+      "Distinct incident: Jill Helen Coin Toss Over Trevor"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39497",
+    "category": "Television",
+    "programme": "The Beiderbecke Affair",
+    "question": "In The Beiderbecke Affair, whose father is arrested after a confrontation involving Trevor?",
+    "answers": [
+      "Jill Swinburne's",
+      "Janey's",
+      "Helen McAllister's",
+      "Yvonne's"
+    ],
+    "correctAnswer": "Helen McAllister's",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Affair",
+      "Programme: The Beiderbecke Affair",
+      "ITV",
+      "1980s Television",
+      "Episode context: Original 1985",
+      "Character and event: Helen Father McAllister Arrest",
+      "Answer fact: Helen McAllister's",
+      "Storyline: Helen Father McAllister Arrest",
+      "Question focus: Helen Father McAllister Arrest",
+      "Production: Yorkshire Television",
+      "Era and plot: Original 1985",
+      "Distinct incident: Helen Father McAllister Arrest"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39498",
+    "category": "Television",
+    "programme": "The Beiderbecke Affair",
+    "question": "In The Beiderbecke Affair, what does Jill abandon before the local election votes are recounted?",
+    "answers": [
+      "Her teaching career",
+      "Her relationship with Trevor",
+      "Her conservation work",
+      "Her political campaign"
+    ],
+    "correctAnswer": "Her political campaign",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Affair",
+      "Programme: The Beiderbecke Affair",
+      "ITV",
+      "1980s Television",
+      "Episode context: Original 1985",
+      "Character and event: Jill Retires From Local Politics",
+      "Answer fact: Her political campaign",
+      "Storyline: Jill Retires From Local Politics",
+      "Question focus: Jill Retires From Local Politics",
+      "Production: Yorkshire Television",
+      "Era and plot: Original 1985",
+      "Distinct incident: Jill Retires From Local Politics"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39499",
+    "category": "Television",
+    "programme": "The Beiderbecke Affair",
+    "question": "In The Beiderbecke Affair, what kind of business runs from Big Al's church-basement storeroom?",
+    "answers": [
+      "Mail-order goods",
+      "An antiques auction",
+      "A recording studio",
+      "An amateur football club"
+    ],
+    "correctAnswer": "Mail-order goods",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Affair",
+      "Programme: The Beiderbecke Affair",
+      "ITV",
+      "1980s Television",
+      "Episode context: Original 1985",
+      "Character and event: Big Al Mail Order Operation",
+      "Answer fact: Mail-order goods",
+      "Storyline: Big Al Mail Order Operation",
+      "Question focus: Big Al Mail Order Operation",
+      "Production: Yorkshire Television",
+      "Era and plot: Original 1985",
+      "Distinct incident: Big Al Mail Order Operation"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39500",
+    "category": "Television",
+    "programme": "The Beiderbecke Tapes",
+    "question": "In The Beiderbecke Tapes, what is Trevor's record collection said to occupy in his new home with Jill?",
+    "answers": [
+      "The kitchen table",
+      "An entire wall of the living room",
+      "Their garage floor",
+      "The landing cupboard"
+    ],
+    "correctAnswer": "An entire wall of the living room",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Tapes",
+      "Programme: The Beiderbecke Tapes",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1987 two-part serial",
+      "Character and event: Trevor Collection Dominates Living Room",
+      "Answer fact: An entire wall of the living room",
+      "Storyline: Trevor Collection Dominates Living Room",
+      "Question focus: Trevor Collection Dominates Living Room",
+      "Production: Yorkshire Television",
+      "Era and plot: 1987 two-part serial",
+      "Distinct incident: Trevor Collection Dominates Living Room"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39501",
+    "category": "Television",
+    "programme": "The Beiderbecke Tapes",
+    "question": "In The Beiderbecke Tapes, which part of Yorkshire is supposedly targeted for dumping nuclear waste?",
+    "answers": [
+      "The North York Moors coast",
+      "The Humber estuary",
+      "The Yorkshire Dales",
+      "Leeds city centre"
+    ],
+    "correctAnswer": "The Yorkshire Dales",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Tapes",
+      "Programme: The Beiderbecke Tapes",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1987 two-part serial",
+      "Character and event: Yorkshire Dales Nuclear Dump Plot",
+      "Answer fact: The Yorkshire Dales",
+      "Storyline: Yorkshire Dales Nuclear Dump Plot",
+      "Question focus: Yorkshire Dales Nuclear Dump Plot",
+      "Production: Yorkshire Television",
+      "Era and plot: 1987 two-part serial",
+      "Distinct incident: Yorkshire Dales Nuclear Dump Plot"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39502",
+    "category": "Television",
+    "programme": "The Beiderbecke Tapes",
+    "question": "In The Beiderbecke Tapes, what event does the supposedly dead pub barman John invite Trevor to attend?",
+    "answers": [
+      "His retirement dinner",
+      "A school reunion",
+      "A local council meeting",
+      "His own funeral"
+    ],
+    "correctAnswer": "His own funeral",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Tapes",
+      "Programme: The Beiderbecke Tapes",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1987 two-part serial",
+      "Character and event: Barman John Funeral Invitation",
+      "Answer fact: His own funeral",
+      "Storyline: Barman John Funeral Invitation",
+      "Question focus: Barman John Funeral Invitation",
+      "Production: Yorkshire Television",
+      "Era and plot: 1987 two-part serial",
+      "Distinct incident: Barman John Funeral Invitation"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39503",
+    "category": "Television",
+    "programme": "The Beiderbecke Tapes",
+    "question": "In The Beiderbecke Tapes, who is responsible for searching Trevor and Jill's house and pursuing them?",
+    "answers": [
+      "Men in grey suits",
+      "Local traffic wardens",
+      "Military cadets",
+      "A rival jazz band"
+    ],
+    "correctAnswer": "Men in grey suits",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Tapes",
+      "Programme: The Beiderbecke Tapes",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1987 two-part serial",
+      "Character and event: Men In Grey Suits Search House",
+      "Answer fact: Men in grey suits",
+      "Storyline: Men In Grey Suits Search House",
+      "Question focus: Men In Grey Suits Search House",
+      "Production: Yorkshire Television",
+      "Era and plot: 1987 two-part serial",
+      "Distinct incident: Men In Grey Suits Search House"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39504",
+    "category": "Television",
+    "programme": "The Beiderbecke Tapes",
+    "question": "In The Beiderbecke Tapes, which group rescues Trevor and Jill from surveillance in Amsterdam?",
+    "answers": [
+      "A Dutch football team",
+      "A group of ageing American Marines",
+      "A troupe of travelling actors",
+      "A local police choir"
+    ],
+    "correctAnswer": "A group of ageing American Marines",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Tapes",
+      "Programme: The Beiderbecke Tapes",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1987 two-part serial",
+      "Character and event: American Marines Rescue In Amsterdam",
+      "Answer fact: A group of ageing American Marines",
+      "Storyline: American Marines Rescue In Amsterdam",
+      "Question focus: American Marines Rescue In Amsterdam",
+      "Production: Yorkshire Television",
+      "Era and plot: 1987 two-part serial",
+      "Distinct incident: American Marines Rescue In Amsterdam"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39505",
+    "category": "Television",
+    "programme": "The Beiderbecke Tapes",
+    "question": "In The Beiderbecke Tapes, who actually created the fake tape that seems to expose nuclear dumping?",
+    "answers": [
+      "Big Al and Little Norm",
+      "Trevor's school colleagues",
+      "The men in grey suits",
+      "A jazz record distributor"
+    ],
+    "correctAnswer": "The men in grey suits",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Tapes",
+      "Programme: The Beiderbecke Tapes",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1987 two-part serial",
+      "Character and event: Men In Grey Suits Forge Tape",
+      "Answer fact: The men in grey suits",
+      "Storyline: Men In Grey Suits Forge Tape",
+      "Question focus: Men In Grey Suits Forge Tape",
+      "Production: Yorkshire Television",
+      "Era and plot: 1987 two-part serial",
+      "Distinct incident: Men In Grey Suits Forge Tape"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39506",
+    "category": "Television",
+    "programme": "The Beiderbecke Tapes",
+    "question": "In The Beiderbecke Tapes, what family news does Jill reveal to Trevor at the end of their adventure?",
+    "answers": [
+      "Her sister is getting married",
+      "Her parents are emigrating",
+      "Her son has won a scholarship",
+      "She is pregnant"
+    ],
+    "correctAnswer": "She is pregnant",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Tapes",
+      "Programme: The Beiderbecke Tapes",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1987 two-part serial",
+      "Character and event: Jill Pregnancy Reveal",
+      "Answer fact: She is pregnant",
+      "Storyline: Jill Pregnancy Reveal",
+      "Question focus: Jill Pregnancy Reveal",
+      "Production: Yorkshire Television",
+      "Era and plot: 1987 two-part serial",
+      "Distinct incident: Jill Pregnancy Reveal"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39507",
+    "category": "Television",
+    "programme": "The Beiderbecke Tapes",
+    "question": "Who played Dave, the nervous acquaintance in The Beiderbecke Tapes?",
+    "answers": [
+      "Christopher Wilkinson",
+      "Malcolm Storry",
+      "David Battley",
+      "Danny Schiller"
+    ],
+    "correctAnswer": "Christopher Wilkinson",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Tapes",
+      "Programme: The Beiderbecke Tapes",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1987 two-part serial",
+      "Character and event: Christopher Wilkinson Dave Character",
+      "Answer fact: Christopher Wilkinson",
+      "Storyline: Christopher Wilkinson Dave Character",
+      "Question focus: Christopher Wilkinson Dave Character",
+      "Production: Yorkshire Television",
+      "Era and plot: 1987 two-part serial",
+      "Distinct incident: Christopher Wilkinson Dave Character"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39508",
+    "category": "Television",
+    "programme": "The Beiderbecke Tapes",
+    "question": "Which actress played Bella Atkinson in The Beiderbecke Tapes?",
+    "answers": [
+      "Beryl Reid",
+      "Maggie Jones",
+      "Sue Jenkins",
+      "Barbara Flynn"
+    ],
+    "correctAnswer": "Maggie Jones",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Tapes",
+      "Programme: The Beiderbecke Tapes",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1987 two-part serial",
+      "Character and event: Maggie Jones Bella Atkinson Cast",
+      "Answer fact: Maggie Jones",
+      "Storyline: Maggie Jones Bella Atkinson Cast",
+      "Question focus: Maggie Jones Bella Atkinson Cast",
+      "Production: Yorkshire Television",
+      "Era and plot: 1987 two-part serial",
+      "Distinct incident: Maggie Jones Bella Atkinson Cast"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39509",
+    "category": "Television",
+    "programme": "The Beiderbecke Connection",
+    "question": "In The Beiderbecke Connection, what is the name of the pub hosting a jazz night with Trevor and Jill?",
+    "answers": [
+      "The White Lion",
+      "The King's Arms",
+      "The Limping Whippet",
+      "The Woolpack"
+    ],
+    "correctAnswer": "The Limping Whippet",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Connection",
+      "Programme: The Beiderbecke Connection",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1988 four-part serial",
+      "Character and event: Limping Whippet Jazz Pub",
+      "Answer fact: The Limping Whippet",
+      "Storyline: Limping Whippet Jazz Pub",
+      "Question focus: Limping Whippet Jazz Pub",
+      "Production: Yorkshire Television",
+      "Era and plot: 1988 four-part serial",
+      "Distinct incident: Limping Whippet Jazz Pub"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39510",
+    "category": "Television",
+    "programme": "The Beiderbecke Connection",
+    "question": "In The Beiderbecke Connection, which former council employee runs the pub where the jazz band performs?",
+    "answers": [
+      "Mr Carter",
+      "Mr Wheeler",
+      "Sergeant Hobson",
+      "Mr Pitt"
+    ],
+    "correctAnswer": "Mr Pitt",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Connection",
+      "Programme: The Beiderbecke Connection",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1988 four-part serial",
+      "Character and event: Mr Pitt Runs Jazz Venue",
+      "Answer fact: Mr Pitt",
+      "Storyline: Mr Pitt Runs Jazz Venue",
+      "Question focus: Mr Pitt Runs Jazz Venue",
+      "Production: Yorkshire Television",
+      "Era and plot: 1988 four-part serial",
+      "Distinct incident: Mr Pitt Runs Jazz Venue"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39511",
+    "category": "Television",
+    "programme": "The Beiderbecke Connection",
+    "question": "In The Beiderbecke Connection, to which rank has Hobson been promoted since the original serial?",
+    "answers": [
+      "Detective Inspector",
+      "Chief Superintendent",
+      "Police Constable",
+      "Detective Chief Inspector"
+    ],
+    "correctAnswer": "Detective Inspector",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Connection",
+      "Programme: The Beiderbecke Connection",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1988 four-part serial",
+      "Character and event: Hobson Promotion To Inspector",
+      "Answer fact: Detective Inspector",
+      "Storyline: Hobson Promotion To Inspector",
+      "Question focus: Hobson Promotion To Inspector",
+      "Production: Yorkshire Television",
+      "Era and plot: 1988 four-part serial",
+      "Distinct incident: Hobson Promotion To Inspector"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39512",
+    "category": "Television",
+    "programme": "The Beiderbecke Connection",
+    "question": "In The Beiderbecke Connection, what financial crime are Ivan and Jill's ex-husband planning?",
+    "answers": [
+      "Counterfeiting banknotes",
+      "Computer fraud",
+      "Insurance arson",
+      "Illegal horse betting"
+    ],
+    "correctAnswer": "Computer fraud",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Connection",
+      "Programme: The Beiderbecke Connection",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1988 four-part serial",
+      "Character and event: Ivan And Peter Computer Fraud Plot",
+      "Answer fact: Computer fraud",
+      "Storyline: Ivan And Peter Computer Fraud Plot",
+      "Question focus: Ivan And Peter Computer Fraud Plot",
+      "Production: Yorkshire Television",
+      "Era and plot: 1988 four-part serial",
+      "Distinct incident: Ivan And Peter Computer Fraud Plot"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39513",
+    "category": "Television",
+    "programme": "The Beiderbecke Connection",
+    "question": "In The Beiderbecke Connection, who secretly collaborates with the Russian visitor Ivan?",
+    "answers": [
+      "The school headmaster",
+      "Trevor's former girlfriend Helen",
+      "Jill's ex-husband Peter",
+      "Jill's friend Yvonne"
+    ],
+    "correctAnswer": "Jill's ex-husband Peter",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Connection",
+      "Programme: The Beiderbecke Connection",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1988 four-part serial",
+      "Character and event: Jill Ex Husband Peter Works With Ivan",
+      "Answer fact: Jill's ex-husband Peter",
+      "Storyline: Jill Ex Husband Peter Works With Ivan",
+      "Question focus: Jill Ex Husband Peter Works With Ivan",
+      "Production: Yorkshire Television",
+      "Era and plot: 1988 four-part serial",
+      "Distinct incident: Jill Ex Husband Peter Works With Ivan"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39514",
+    "category": "Television",
+    "programme": "The Beiderbecke Connection",
+    "question": "In The Beiderbecke Connection, which musician appears with his Allstars as the pub's jazz group?",
+    "answers": [
+      "Alan Hawkshaw",
+      "Ronnie Hazlehurst",
+      "Kenny Ball",
+      "Frank Ricotti"
+    ],
+    "correctAnswer": "Frank Ricotti",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Connection",
+      "Programme: The Beiderbecke Connection",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1988 four-part serial",
+      "Character and event: Frank Ricotti Allstars In Pub",
+      "Answer fact: Frank Ricotti",
+      "Storyline: Frank Ricotti Allstars In Pub",
+      "Question focus: Frank Ricotti Allstars In Pub",
+      "Production: Yorkshire Television",
+      "Era and plot: 1988 four-part serial",
+      "Distinct incident: Frank Ricotti Allstars In Pub"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39515",
+    "category": "Television",
+    "programme": "The Beiderbecke Connection",
+    "question": "In The Beiderbecke Connection, what part of the country do Trevor and Jill reach when dropping Ivan off?",
+    "answers": [
+      "The Yorkshire border",
+      "The Scottish Highlands",
+      "The Welsh coast",
+      "The Sussex Downs"
+    ],
+    "correctAnswer": "The Yorkshire border",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Connection",
+      "Programme: The Beiderbecke Connection",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1988 four-part serial",
+      "Character and event: Ivan Dropped At Yorkshire Border",
+      "Answer fact: The Yorkshire border",
+      "Storyline: Ivan Dropped At Yorkshire Border",
+      "Question focus: Ivan Dropped At Yorkshire Border",
+      "Production: Yorkshire Television",
+      "Era and plot: 1988 four-part serial",
+      "Distinct incident: Ivan Dropped At Yorkshire Border"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39516",
+    "category": "Television",
+    "programme": "The Beiderbecke Connection",
+    "question": "Who played Trevor and Jill's baby First Born in The Beiderbecke Connection?",
+    "answers": [
+      "Danny Schiller",
+      "Thomas McGlinchey",
+      "Patrick Drury",
+      "Robert Longden"
+    ],
+    "correctAnswer": "Thomas McGlinchey",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Connection",
+      "Programme: The Beiderbecke Connection",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1988 four-part serial",
+      "Character and event: Thomas McGlinchey Firstborn Casting",
+      "Answer fact: Thomas McGlinchey",
+      "Storyline: Thomas McGlinchey Firstborn Casting",
+      "Question focus: Thomas McGlinchey Firstborn Casting",
+      "Production: Yorkshire Television",
+      "Era and plot: 1988 four-part serial",
+      "Distinct incident: Thomas McGlinchey Firstborn Casting"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39517",
+    "category": "Television",
+    "programme": "The Beiderbecke Connection",
+    "question": "Which actor played police constable Ben in The Beiderbecke Connection?",
+    "answers": [
+      "Dudley Sutton",
+      "James Grout",
+      "George Costigan",
+      "Malcolm Storry"
+    ],
+    "correctAnswer": "George Costigan",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Comedy Drama",
+      "The Beiderbecke Connection",
+      "Programme: The Beiderbecke Connection",
+      "ITV",
+      "1980s Television",
+      "Episode context: 1988 four-part serial",
+      "Character and event: George Costigan Constable Ben",
+      "Answer fact: George Costigan",
+      "Storyline: George Costigan Constable Ben",
+      "Question focus: George Costigan Constable Ben",
+      "Production: Yorkshire Television",
+      "Era and plot: 1988 four-part serial",
+      "Distinct incident: George Costigan Constable Ben"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39518",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, how is the financially troubled lord of the manor murdered in What The Butler Saw?",
+    "answers": [
+      "He is poisoned at dinner",
+      "He is shot on the staircase",
+      "He is struck by a falling statue",
+      "He is stabbed in the shower"
+    ],
+    "correctAnswer": "He is stabbed in the shower",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S1 What The Butler Saw",
+      "Character and event: Lord Stabbed In Country House Shower",
+      "Answer fact: He is stabbed in the shower",
+      "Storyline: Lord Stabbed In Country House Shower",
+      "Question focus: Lord Stabbed In Country House Shower",
+      "Production: Celador",
+      "Era and plot: S1 What The Butler Saw",
+      "Distinct incident: Lord Stabbed In Country House Shower"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39519",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, whom does the escaped convict take hostage during the football cup final in Hostage?",
+    "answers": [
+      "An elderly couple",
+      "Two footballers",
+      "A television newsreader",
+      "A bank manager"
+    ],
+    "correctAnswer": "An elderly couple",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S1 Hostage",
+      "Character and event: Escaped Convict Holds Elderly Couple",
+      "Answer fact: An elderly couple",
+      "Storyline: Escaped Convict Holds Elderly Couple",
+      "Question focus: Escaped Convict Holds Elderly Couple",
+      "Production: Celador",
+      "Era and plot: S1 Hostage",
+      "Distinct incident: Escaped Convict Holds Elderly Couple"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39520",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, which illegal trade is the pair investigating while posing as golfers in Teed Off?",
+    "answers": [
+      "Drug smuggling",
+      "Gun-running",
+      "Art forgery",
+      "Wildlife trafficking"
+    ],
+    "correctAnswer": "Gun-running",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S1 Teed Off",
+      "Character and event: Golf Club Arms Dealer Gun Running",
+      "Answer fact: Gun-running",
+      "Storyline: Golf Club Arms Dealer Gun Running",
+      "Question focus: Golf Club Arms Dealer Gun Running",
+      "Production: Celador",
+      "Era and plot: S1 Teed Off",
+      "Distinct incident: Golf Club Arms Dealer Gun Running"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39521",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, who is the principal suspect in the gangland killing investigated in Strangers In Paradise?",
+    "answers": [
+      "A professional boxer",
+      "A hotel chef",
+      "A nightclub owner",
+      "A taxi firm manager"
+    ],
+    "correctAnswer": "A nightclub owner",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S1 Strangers In Paradise",
+      "Character and event: Nightclub Owner Suspected In Gangland Killing",
+      "Answer fact: A nightclub owner",
+      "Storyline: Nightclub Owner Suspected In Gangland Killing",
+      "Question focus: Nightclub Owner Suspected In Gangland Killing",
+      "Production: Celador",
+      "Era and plot: S1 Strangers In Paradise",
+      "Distinct incident: Nightclub Owner Suspected In Gangland Killing"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39522",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, which official occasion is delayed because of the pair's bomb scare in Collared?",
+    "answers": [
+      "The State Opening of Parliament",
+      "A royal wedding",
+      "An investiture at Buckingham Palace",
+      "A state banquet"
+    ],
+    "correctAnswer": "A state banquet",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S2 Collared",
+      "Character and event: Queen Late For State Banquet",
+      "Answer fact: A state banquet",
+      "Storyline: Queen Late For State Banquet",
+      "Question focus: Queen Late For State Banquet",
+      "Production: Celador",
+      "Era and plot: S2 Collared",
+      "Distinct incident: Queen Late For State Banquet"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39523",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, where does the monk witness a mafia killing before receiving police protection in Witness?",
+    "answers": [
+      "A London railway station",
+      "A county courthouse",
+      "A seaside amusement arcade",
+      "A motorway services café"
+    ],
+    "correctAnswer": "A London railway station",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S2 Witness",
+      "Character and event: Monk Witnesses Killing At London Station",
+      "Answer fact: A London railway station",
+      "Storyline: Monk Witnesses Killing At London Station",
+      "Question focus: Monk Witnesses Killing At London Station",
+      "Production: Celador",
+      "Era and plot: S2 Witness",
+      "Distinct incident: Monk Witnesses Killing At London Station"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39524",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, why are Briggs and Louis chosen to protect a duchess in Never Without Protection?",
+    "answers": [
+      "They are expert close-protection officers",
+      "They are thought immune to romantic entanglements",
+      "They speak the duchess's native language",
+      "They have guarded her before"
+    ],
+    "correctAnswer": "They are thought immune to romantic entanglements",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S2 Never Without Protection",
+      "Character and event: Duchess Protection And Romance Scandal",
+      "Answer fact: They are thought immune to romantic entanglements",
+      "Storyline: Duchess Protection And Romance Scandal",
+      "Question focus: Duchess Protection And Romance Scandal",
+      "Production: Celador",
+      "Era and plot: S2 Never Without Protection",
+      "Distinct incident: Duchess Protection And Romance Scandal"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39525",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, what kind of cargo lorry takes the pair unexpectedly to Holland in Dutch Cops?",
+    "answers": [
+      "A furniture removal lorry",
+      "A cattle truck",
+      "A pilchard lorry",
+      "A refrigerated flower van"
+    ],
+    "correctAnswer": "A pilchard lorry",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S2 Dutch Cops",
+      "Character and event: Detectives Trapped In Pilchard Lorry",
+      "Answer fact: A pilchard lorry",
+      "Storyline: Detectives Trapped In Pilchard Lorry",
+      "Question focus: Detectives Trapped In Pilchard Lorry",
+      "Production: Celador",
+      "Era and plot: S2 Dutch Cops",
+      "Distinct incident: Detectives Trapped In Pilchard Lorry"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39526",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, what criminal enterprise is the boxing investigation targeting in Sparring Partners?",
+    "answers": [
+      "Fixed horse races",
+      "Illegal football tickets",
+      "Counterfeit passports",
+      "An illicit doping ring"
+    ],
+    "correctAnswer": "An illicit doping ring",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S2 Sparring Partners",
+      "Character and event: Boxing Doping Investigation",
+      "Answer fact: An illicit doping ring",
+      "Storyline: Boxing Doping Investigation",
+      "Question focus: Boxing Doping Investigation",
+      "Production: Celador",
+      "Era and plot: S2 Sparring Partners",
+      "Distinct incident: Boxing Doping Investigation"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39527",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, what injuries leave Bob confined to his flat during Rear Window?",
+    "answers": [
+      "A broken arm and leg",
+      "A dislocated shoulder",
+      "Two fractured ribs",
+      "A sprained ankle"
+    ],
+    "correctAnswer": "A broken arm and leg",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S2 Rear Window",
+      "Character and event: Bob Injured During Police Dog Training",
+      "Answer fact: A broken arm and leg",
+      "Storyline: Bob Injured During Police Dog Training",
+      "Question focus: Bob Injured During Police Dog Training",
+      "Production: Celador",
+      "Era and plot: S2 Rear Window",
+      "Distinct incident: Bob Injured During Police Dog Training"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39528",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, whom is the serial killer targeting in D.C. Of Love?",
+    "answers": [
+      "Young married couples",
+      "Single middle-aged men",
+      "Retired police officers",
+      "University students"
+    ],
+    "correctAnswer": "Single middle-aged men",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S3 D C Of Love",
+      "Character and event: Serial Killer Targets Lonely Middle Aged Men",
+      "Answer fact: Single middle-aged men",
+      "Storyline: Serial Killer Targets Lonely Middle Aged Men",
+      "Question focus: Serial Killer Targets Lonely Middle Aged Men",
+      "Production: Celador",
+      "Era and plot: S3 D C Of Love",
+      "Distinct incident: Serial Killer Targets Lonely Middle Aged Men"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39529",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, what other offence concerns a minor aristocrat while Bob and Dave investigate a flasher in Flash?",
+    "answers": [
+      "A tax fraud allegation",
+      "A drink-driving offence",
+      "A drugs charge",
+      "An assault at a football match"
+    ],
+    "correctAnswer": "A drugs charge",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S3 Flash",
+      "Character and event: Junior Aristocrat Drugs Charge",
+      "Answer fact: A drugs charge",
+      "Storyline: Junior Aristocrat Drugs Charge",
+      "Question focus: Junior Aristocrat Drugs Charge",
+      "Production: Celador",
+      "Era and plot: S3 Flash",
+      "Distinct incident: Junior Aristocrat Drugs Charge"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39530",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, which new management scheme precedes Briggs and Louis's transfer in Art Attack?",
+    "answers": [
+      "Compulsory retirement at forty",
+      "A police housing allowance",
+      "Free university tuition",
+      "Performance-related pay"
+    ],
+    "correctAnswer": "Performance-related pay",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S3 Art Attack",
+      "Character and event: Police Performance Related Pay",
+      "Answer fact: Performance-related pay",
+      "Storyline: Police Performance Related Pay",
+      "Question focus: Police Performance Related Pay",
+      "Production: Celador",
+      "Era and plot: S3 Art Attack",
+      "Distinct incident: Police Performance Related Pay"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39531",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, whose coach is investigated after a skater reports an assault in On Thin Ice?",
+    "answers": [
+      "The British Olympic ice-skating team coach",
+      "The national rugby team's coach",
+      "A school football coach",
+      "An American tennis coach"
+    ],
+    "correctAnswer": "The British Olympic ice-skating team coach",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S3 On Thin Ice",
+      "Character and event: Olympic Skating Coach Assault Enquiry",
+      "Answer fact: The British Olympic ice-skating team coach",
+      "Storyline: Olympic Skating Coach Assault Enquiry",
+      "Question focus: Olympic Skating Coach Assault Enquiry",
+      "Production: Celador",
+      "Era and plot: S3 On Thin Ice",
+      "Distinct incident: Olympic Skating Coach Assault Enquiry"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39532",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, which television quiz show is responsible for Bob and Dave's holiday in Gibraltar?",
+    "answers": [
+      "The Generation Game",
+      "Bullseye",
+      "Blankety Blank",
+      "Sale of the Century"
+    ],
+    "correctAnswer": "Bullseye",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S3 Between A Rock And A Hard Place",
+      "Character and event: Jim Bowen Bullseye Gibraltar Holiday",
+      "Answer fact: Bullseye",
+      "Storyline: Jim Bowen Bullseye Gibraltar Holiday",
+      "Question focus: Jim Bowen Bullseye Gibraltar Holiday",
+      "Production: Celador",
+      "Era and plot: S3 Between A Rock And A Hard Place",
+      "Distinct incident: Jim Bowen Bullseye Gibraltar Holiday"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39533",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, what are poachers trying to steal from the nesting red kites in Twitchers?",
+    "answers": [
+      "Their feathers",
+      "Their chicks for a zoo",
+      "Their eggs",
+      "Their nesting branches"
+    ],
+    "correctAnswer": "Their eggs",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S3 Twitchers",
+      "Character and event: Illegal Collectors After Red Kite Eggs",
+      "Answer fact: Their eggs",
+      "Storyline: Illegal Collectors After Red Kite Eggs",
+      "Question focus: Illegal Collectors After Red Kite Eggs",
+      "Production: Celador",
+      "Era and plot: S3 Twitchers",
+      "Distinct incident: Illegal Collectors After Red Kite Eggs"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39534",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, across which landscape do Bob and Dave escort an escaped prisoner in The Great Escaper?",
+    "answers": [
+      "The Scottish Highlands",
+      "The South Downs",
+      "The Welsh Valleys",
+      "The Yorkshire Moors"
+    ],
+    "correctAnswer": "The Yorkshire Moors",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S4 The Great Escaper",
+      "Character and event: Prisoner Train Across Yorkshire Moors",
+      "Answer fact: The Yorkshire Moors",
+      "Storyline: Prisoner Train Across Yorkshire Moors",
+      "Question focus: Prisoner Train Across Yorkshire Moors",
+      "Production: Celador",
+      "Era and plot: S4 The Great Escaper",
+      "Distinct incident: Prisoner Train Across Yorkshire Moors"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39535",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, what historical event is being re-enacted when a genuine killing occurs in Fur Coat No Knickers?",
+    "answers": [
+      "A medieval battle",
+      "A Roman gladiator fight",
+      "An English Civil War siege",
+      "A Napoleonic naval battle"
+    ],
+    "correctAnswer": "A medieval battle",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S4 Fur Coat No Knickers",
+      "Character and event: Murder At Medieval Battle Reenactment",
+      "Answer fact: A medieval battle",
+      "Storyline: Murder At Medieval Battle Reenactment",
+      "Question focus: Murder At Medieval Battle Reenactment",
+      "Production: Celador",
+      "Era and plot: S4 Fur Coat No Knickers",
+      "Distinct incident: Murder At Medieval Battle Reenactment"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39536",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, which endangered animal do Bob and Dave accidentally kill before investigating drug dealing in Back To Class?",
+    "answers": [
+      "A golden eagle",
+      "A female turtle",
+      "A mountain gorilla",
+      "A rare frog"
+    ],
+    "correctAnswer": "A female turtle",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S4 Back To Class",
+      "Character and event: Last Female Turtle Dies During Police Case",
+      "Answer fact: A female turtle",
+      "Storyline: Last Female Turtle Dies During Police Case",
+      "Question focus: Last Female Turtle Dies During Police Case",
+      "Production: Celador",
+      "Era and plot: S4 Back To Class",
+      "Distinct incident: Last Female Turtle Dies During Police Case"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39537",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, whom do Bob and Dave mistake Cottam's female successor for at his retirement party in Sacked?",
+    "answers": [
+      "A visiting judge",
+      "A theatre actress",
+      "A hired stripper",
+      "A police psychologist"
+    ],
+    "correctAnswer": "A hired stripper",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S4 Sacked",
+      "Character and event: Female Superintendent Mistaken For Stripper",
+      "Answer fact: A hired stripper",
+      "Storyline: Female Superintendent Mistaken For Stripper",
+      "Question focus: Female Superintendent Mistaken For Stripper",
+      "Production: Celador",
+      "Era and plot: S4 Sacked",
+      "Distinct incident: Female Superintendent Mistaken For Stripper"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39538",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, what is the police assignment at Wembley that brings the officers into contact with the recruit Boyle?",
+    "answers": [
+      "Investigating fake concert tickets",
+      "Tracing a missing football trophy",
+      "Guarding a visiting royal family",
+      "Checking security before a match"
+    ],
+    "correctAnswer": "Checking security before a match",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S4 Wembley Stadium Mystery",
+      "Character and event: Wembley Stadium Match Security Review",
+      "Answer fact: Checking security before a match",
+      "Storyline: Wembley Stadium Match Security Review",
+      "Question focus: Wembley Stadium Match Security Review",
+      "Production: Celador",
+      "Era and plot: S4 Wembley Stadium Mystery",
+      "Distinct incident: Wembley Stadium Match Security Review"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39539",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, what construction project are environmental protesters trying to stop in Special Branch?",
+    "answers": [
+      "A bypass",
+      "A new airport runway",
+      "A railway viaduct",
+      "A reservoir"
+    ],
+    "correctAnswer": "A bypass",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S5 Special Branch",
+      "Character and event: Road Bypass Environmentalist Protest",
+      "Answer fact: A bypass",
+      "Storyline: Road Bypass Environmentalist Protest",
+      "Question focus: Road Bypass Environmentalist Protest",
+      "Production: Celador",
+      "Era and plot: S5 Special Branch",
+      "Distinct incident: Road Bypass Environmentalist Protest"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39540",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, which health concern distracts Bob while he guards a bank robber in Cardiac Arrest?",
+    "answers": [
+      "An allergy to medicine",
+      "His own heart",
+      "An eye infection",
+      "A damaged knee"
+    ],
+    "correctAnswer": "His own heart",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S5 Cardiac Arrest",
+      "Character and event: Bob Worries About His Heart In Hospital",
+      "Answer fact: His own heart",
+      "Storyline: Bob Worries About His Heart In Hospital",
+      "Question focus: Bob Worries About His Heart In Hospital",
+      "Production: Celador",
+      "Era and plot: S5 Cardiac Arrest",
+      "Distinct incident: Bob Worries About His Heart In Hospital"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39541",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, what is the police station preparing while rumours of a bear circulate in The Beast Of Hackney Marshes?",
+    "answers": [
+      "The annual football derby",
+      "A police graduation parade",
+      "D Division Variety Night",
+      "A mayoral banquet"
+    ],
+    "correctAnswer": "D Division Variety Night",
+    "difficulty": "Easy",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S5 Beast Of Hackney Marshes",
+      "Character and event: D Division Variety Show Rehearsal",
+      "Answer fact: D Division Variety Night",
+      "Storyline: D Division Variety Show Rehearsal",
+      "Question focus: D Division Variety Show Rehearsal",
+      "Production: Celador",
+      "Era and plot: S5 Beast Of Hackney Marshes",
+      "Distinct incident: D Division Variety Show Rehearsal"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39542",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, which museum is handing a Native American statue back to the Comanche tribe?",
+    "answers": [
+      "The Natural History Museum",
+      "The Imperial War Museum",
+      "The Victoria and Albert Museum",
+      "The British Museum"
+    ],
+    "correctAnswer": "The British Museum",
+    "difficulty": "Hard",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S5 Curse Of The Comanches",
+      "Character and event: British Museum Returns Tribal Statue",
+      "Answer fact: The British Museum",
+      "Storyline: British Museum Returns Tribal Statue",
+      "Question focus: British Museum Returns Tribal Statue",
+      "Production: Celador",
+      "Era and plot: S5 Curse Of The Comanches",
+      "Distinct incident: British Museum Returns Tribal Statue"
+    ],
+    "dailyEligible": true
+  },
+  {
+    "id": "tv_39543",
+    "category": "Television",
+    "programme": "The Detectives",
+    "question": "In The Detectives, which London waterway becomes the pair's workplace in Mine's A Large One?",
+    "answers": [
+      "The River Thames",
+      "The River Lea",
+      "The Grand Union Canal",
+      "The River Wandle"
+    ],
+    "correctAnswer": "The River Thames",
+    "difficulty": "Medium",
+    "tags": [
+      "Television",
+      "British Television",
+      "Police Sitcom",
+      "The Detectives",
+      "Programme: The Detectives",
+      "BBC One",
+      "1990s Television",
+      "Episode context: S5 Mines A Large One",
+      "Character and event: Briggs And Louis Assigned Thames River Police",
+      "Answer fact: The River Thames",
+      "Storyline: Briggs And Louis Assigned Thames River Police",
+      "Question focus: Briggs And Louis Assigned Thames River Police",
+      "Production: Celador",
+      "Era and plot: S5 Mines A Large One",
+      "Distinct incident: Briggs And Louis Assigned Thames River Police"
+    ],
+    "dailyEligible": true
+  }
+];
+  questions.push(...auditAdditions);
+  if (new Set(questions.map(q => q.id)).size !== questions.length ||
+      new Set(questions.map(q => normalise(q.question))).size !== questions.length ||
+      questions.some(q => q.answers.length !== 4 ||
+        new Set(q.answers.map(normalise)).size !== 4 ||
+        q.answers.filter(a => a === q.correctAnswer).length !== 1 ||
+        q.tags.length < 14 || !q.tags.includes('Programme: ' + q.programme) ||
+        q.dailyEligible !== true)) {
+    throw Error('Pack 366 historical audit validation failed');
   }
 
   module.exports = questions;
