@@ -2214,14 +2214,14 @@ const auditAdditions = [
     "id": "tv_39711",
     "category": "Television",
     "programme": "Sorry!",
-    "question": "In Sorry!, what unexpected law-enforcement visitor arrives amid chaos in the Lumsden home at the start of series six?",
+    "question": "In Sorry!'s A Chief Inspector Calls, what illicit drink adds to the chaos at the Lumsden home?",
     "answers": [
-      "A detective constable on holiday",
-      "A prison governor",
-      "An inspector",
-      "A traffic warden"
+      "Home-distilled gin",
+      "Smuggled rum",
+      "Bootleg whisky",
+      "Counterfeit vodka"
     ],
-    "correctAnswer": "An inspector",
+    "correctAnswer": "Bootleg whisky",
     "difficulty": "Medium",
     "tags": [
       "Television",
@@ -2233,12 +2233,12 @@ const auditAdditions = [
       "BBC One",
       "Episode: S6E01 A Chief Inspector Calls",
       "Series: S6E01",
-      "Character story: Chief Inspector Visits Chaotic Household",
-      "Plot fact: Chief Inspector Visits Chaotic Household",
+      "Character story: Illegal alcohol in Lumsden home",
+      "Plot fact: Bootleg whisky before inspector visit",
       "Correct answer: An inspector",
-      "Narrative detail: Chief Inspector Visits Chaotic Household",
+      "Narrative detail: Illicit drink adds to household chaos",
       "Episode context: S6E01 A Chief Inspector Calls",
-      "Subject: Chief Inspector Visits Chaotic Household",
+      "Subject: Bootleg whisky and visiting inspector",
       "Production era: 1981-1988"
     ],
     "dailyEligible": true
