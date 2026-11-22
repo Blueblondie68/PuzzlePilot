@@ -1,16 +1,17 @@
 
 // PuzzlePilot - Big Quiz - Pack 408
 // A Place in the Sun - Channel 4 property programme and spin-offs (2000-2026).
-// Coverage cut-off: episodes broadcast through 13 November 2026.
+// Coverage cut-off: selected episodes broadcast through 20 November 2026.
 // Ongoing programme: spreadsheet status LAVENDER, next review 1 January 2027.
 // Complete WordPad-ready CommonJS file. First ID: tv_22756.
 'use strict';
 
 const FIRST_ID = 22756;
-const commonTags = [
-  'television', 'A Place in the Sun', 'Channel 4',
-  'British property television', 'overseas house hunting', 'lifestyle programme'
-];
+const PROGRAMME = 'A Place in the Sun';
+const commonTags = ['Television',PROGRAMME,'Programme: '+PROGRAMME,
+ 'Channel 4','British Property Television','Overseas House Hunting',
+ 'Lifestyle Programme','Continuing Show','2000–2026',
+ 'Covered through: 20 November 2026'];
 
 // Question | correct answer | three distractors | difficulty | seven precise tags.
 const rows = [
@@ -118,12 +119,15 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 408: repeated option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 408: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 408: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
+    coverageStatus: 'Continuing',
+    coveredThrough: '2026-11-20',
     question,
     answers,
     correctAnswer,
@@ -133,4 +137,52 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+// A PLACE IN THE SUN — ONGOING SERIES, KEEP LAVENDER ON MASTER TV TRACKER.
+// 84 original questions tv_22756–tv_22839 preserved.
+// New questions start tv_41601; covers selected property-search stories,
+// 2026 What Happened Next? follow-ups and original-format episodes through
+// 20 November 2026. Next planned review: 1 January 2027.
+// This is representative coverage, not a question for every property shown.
+// Official programme's episode archives (including participants and budgets):
+// https://www.aplaceinthesun.com/tv-show/original/2026
+// https://www.aplaceinthesun.com/tv-show/a-place-in-the-sun-what-happened-next/2026
+// Official What Happened Next? March announcement:
+// https://www.aplaceinthesun.com/articles/2026/03/a-place-in-the-sun-what-happened-next-is-back
+// Show/brand history: https://www.aplaceinthesun.com/about-us
+const audit408Rows=[["2026-11-20 Coín","How many dogs did Carol and Russell need their new Spanish home to accommodate?","Three dogs","One dog","Two dogs","Five dogs","Carol and Russell's family relocation"],["2026-11-19 Orlando","What was Steve and Ann's maximum property budget for their Florida holiday home?","£315,000","£150,000","£225,000","£500,000","Florida holiday home budget"],["2026-11-18 Andalusia","Which retired couple from Leicestershire went house hunting with Craig Rowe in Andalusia?","Wendy and Andrew","Pauline and Robert","Janine and Paul","Jenny and Emrys","Andalusian whitewashed villages"],["2026-11-17 Abruzzo","What was the maximum budget father and son Sam and Dillon had for their Italian holiday home?","£60,000","£120,000","£180,000","£260,000","Affordable property in Abruzzo"],["2026-11-16 Nerja","Which house hunters explored Nerja on the Costa del Sol with Laura Hamilton?","Jenny and Emrys","Carol and Russell","Steve and Ann","Wendy and Andrew","Spanish holiday property search"],["2026-11-13 Moraira","What budget did Pauline and her son Robert give Lee Juggurnauth for their northern Costa Blanca search?","£225,000","£100,000","£150,000","£350,000","Moraira family holiday home"],["2026-11-12 Portugal","How much were Peter and Clare planning to spend on a property on Portugal's Silver Coast?","£150,000","£80,000","£200,000","£300,000","Silver Coast budget"],["2026-11-11 Costa Tropical","What was Suzanne and Carsten's budget for their Spanish property search?","£120,000","£90,000","£175,000","£275,000","Costa Tropical budget"],["2026-11-10 Dordogne","Which French region's northern area was explored with Janine and Paul, who needed motorhome parking?","The Dordogne","Brittany","Normandy","The Loire Valley","Janine and Paul's property search"],["2026-11-09 Costa del Sol","What was the home-buying budget of Linda and Hassan in the western Costa del Sol episode?","£190,000","£80,000","£250,000","£350,000","Western Costa del Sol budget"],["2026-11-06 Costa Almería","Near which coastal town did Debbie and Martin search for a family holiday home?","Mojácar","Nerja","Denia","Torrevieja","Coastal location for November episode"],["2026-11-05 Dordogne","Which relative accompanied Alison on her search for a permanent home in France?","Her aunt Mandy","Her brother Paul","Her daughter Jane","Her cousin Suzanne","Alison's companion"],["2026-11-04 Ciudad Quesada","For how long had Sarah and Neil intended to travel the world after leaving their corporate jobs?","Ten years","Two years","Five years","Twenty years","Travel-blogging house hunters"],["2026-11-03 Lefkada","How much could Jacqueline spend on a permanent home on the Greek island?","£292,000","£120,000","£200,000","£400,000","Jacqueline and sister-in-law Linda"],["2026-11-02 Costa Blanca","What was the name of Clare and Paul's dog, who would join their move to Spain?","Barney","Fred","Flint","Nancy","Permanent relocation with family pet"],["2026-01-06 Side","Which relative helped John look at holiday homes in Side, Turkey, while Cathy was working?","Their daughter Jayne","His brother Martin","Their aunt Pat","Her sister Alison","Turkey family search"],["2026-01-13 Orlando","What was the budget for Jane and Steven's Orlando-area holiday home, near Florida's theme parks?","£350,000","£110,000","£220,000","£450,000","January Florida family search"],["2026-01-26 Lanzarote","Which mother and daughter looked for a family holiday home together in Lanzarote?","Dimpi and Divali","Gary and Lynn","Nicola and Paul","Kate and Wayne","Lanzarote intergenerational search"],["2026-01-21 Costa Blanca","Which brother-in-law accompanied Paramjit on his property hunt on the southern Costa Blanca?","Pakhar","Kerrie","Gareth","Dillon","Paramjit's close friend and brother-in-law"],["2026-01-19 Cómpeta","What was the name of Jen and Ed's dog who would share their Spanish holiday home?","Nancy","Barney","Flint","Fred","Competa holiday home with a pet"],["2026-02-05 Haute Vienne","What did the two French countryside house hunters have in common besides wanting a holiday home?","They were both called George","They were both dentists","They had identical birthdays","They were both from Cornwall","George B and George S"],["2026-02-26 Western Cyprus","What was the name of Karen and David's dog moving with them from the Cotswolds to Cyprus?","Flint","Nancy","Fred","Barney","Paphos retirement relocation"],["2026-03-16 What Happened Next","Which French region did Jean Johansson visit to see how Rob and Lisa's forever home was working out?","Charente","Normandy","Brittany","Alsace","Rob and Lisa follow-up"],["2026-03-17 What Happened Next","Which couple did Ben Hillman revisit in Lanzarote after helping them find a holiday home?","Nicola and Paul","Jan and Bill","Gary and Lynn","Kate and Wayne","Lanzarote home follow-up"],["2026-03-18 What Happened Next","Which pair did Danni Menzies revisit in the Spanish town of Denia?","Alison and Brian","Rob and Lisa","Sue and Tony","Tim and Tracey","Denia post-purchase episode"],["2026-03-19 What Happened Next","Near which Portuguese town did Jean Johansson reunite with Alison and Mike?","Tomar","Faro","Braga","Lagos","Central Portugal return visit"],["2026-03-20 What Happened Next","Which couple did Craig Rowe revisit around Carcassonne in southwest France?","Sue and Tony","Pauline and Robert","Sam and Dillon","Jen and Ed","Carcassonne return visit"],["2026-03-23 What Happened Next","To which island did Sara Damergi return to meet Chris and his mother Kerrie?","Malta","Corfu","Cyprus","Lanzarote","Chris and Kerrie's follow-up"],["2026-03-24 What Happened Next","Which family did Jean Johansson visit in southwestern Cyprus after their move?","Uri, Hazel and Shiann","Carol, Russell and their children","Jan and Bill","Alison and Brian","Family previously helped by Leah Charles-King"],["2026-03-25 What Happened Next","Which two friends did Danni Menzies revisit on the Greek island of Corfu?","Sarah and Jo","Kate and Wayne","Jenny and Emrys","Gary and Lynn","Corfu friends' follow-up"],["2026-03-26 What Happened Next","Which pair did Jasmine Harman meet in Haute Vienne after their 2021 purchase?","Gary and Lynn","Carol and Russell","Rob and Lisa","Suzanne and Carsten","French home found with Danni Menzies"],["2026-03-27 What Happened Next","Which couple did Lee Juggurnauth visit in Murcia after helping them buy in 2022?","Kate and Wayne","Alison and Brian","Sam and Dillon","Jane and Steven","Murcia after-purchase update"]];
+const audit408Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+for(const [episode,stem,correctAnswer,w1,w2,w3] of audit408Rows){
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[w1,w2,w3];answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit408Norm)).size!==4)
+  throw Error('Pack 408 invalid options for '+stem);
+ const tags=['Television',PROGRAMME,'Programme: '+PROGRAMME,
+ 'Channel 4','British Property Television','Overseas House Hunting',
+ 'Lifestyle Programme','Ongoing programme','2026 original run and follow-ups',
+ 'Episode: '+episode,'Correct answer: '+correctAnswer,
+ 'House hunter and presenter','Property budget and location',
+ 'Coverage through 20 November 2026'];
+ questions.push({id:'tv_'+(41601+questions.length-84),
+  category:'Television',programme:PROGRAMME,coverageStatus:'Continuing',
+  coveredThrough:'2026-11-20',question,answers,correctAnswer,
+  difficulty:'Medium',tags,dailyEligible:true});
+}
+const audit408Ids=new Set(),audit408Stems=new Set();
+for(const v of questions){
+ const key=audit408Norm(v.question);
+ const fresh=Number(v.id.slice(3))>=41601;
+ if(v.category!=='Television'||v.programme!==PROGRAMME||
+ v.coverageStatus!=='Continuing'||v.coveredThrough!=='2026-11-20'||
+ !v.tags.includes('Programme: '+PROGRAMME)||
+ !key.includes(audit408Norm(PROGRAMME))||
+ v.answers.length!==4||new Set(v.answers.map(audit408Norm)).size!==4||
+ v.answers.filter(a=>a===v.correctAnswer).length!==1||
+ v.tags.length<12||v.dailyEligible!==true||
+ audit408Ids.has(v.id)||audit408Stems.has(key)||
+ (fresh&&key.includes(audit408Norm(v.correctAnswer))))
+ throw Error('Pack 408 audit check failed: '+v.id);
+ audit408Ids.add(v.id);audit408Stems.add(key);
+}
+module.exports=questions;
