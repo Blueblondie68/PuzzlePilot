@@ -1,5 +1,5 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 504: BLUE LIGHTS (BBC, 2023–2026)
-// 96 researched MCQs: four per episode, 24 episodes across all four released series.
+// 124 audited MCQs: 96 original episode questions across all 24 episodes; 28 researched cast, story, awards and production additions.
 // Series 1 (2023), 2 (2024), 3 (2025), 4 (2026), six episodes each.
 // IDs tv_28611–tv_28706, following Better Call Saul Pack 503 ending tv_28610.
 // Episode, year, character, cast, location and distinct storyline tags in every question.
@@ -13,7 +13,11 @@
 // https://www.tvguide.co.uk/articles/blue-lights-series-4-ending-explained-devastating-closure-belfasts-blackthorn-police-station-series-5/
 // Series 4 last BBC One broadcast 3 Nov 2026, while BBC iPlayer box set released 29 Sep.
 // No confirmed Series 5 as at 18 Nov 2026: retain LAVENDER status and cutoff 3 Nov 2026 pending renewal.
-// No other Blue Lights-specific packs known on current TV tracker; broad 503-pack semantic audit not claimed.
+// Audit additions: tv_43298–tv_43325; originals tv_28611–tv_28706 preserved.
+// Cast and production verified against BritBox/STV official publicity and Radio Times.
+// Awards checked against BAFTA 2025, RTS NI 2024, RTS UK 2026, Broadcast Awards 2025.
+// 2026 finale checked against TV Guide, the BBC synopsis and 4 Nov creator departure reports.
+// No full-bank semantic duplicate audit claimed.
 'use strict';
 const questions = [
   {
@@ -3458,9 +3462,1001 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==96||new Set(questions.map(q=>q.id)).size!==questions.length||
+// 22 Nov 2026 supplemental audit: sources include
+// https://www.stvplc.tv/newsroom/2026/richard-dormer-returns-to-blue-lights/
+// https://press.britbox.com/post/return-to-blackthorn-station-britbox-debuts-official-trailer-for
+// https://www.bafta.org/media-centre/press-releases/winners-2025-tv-awards/
+// https://rts.org.uk/award/rts-programme-awards-2026
+// https://rts.org.uk/award/winners-rts-northern-ireland-awards-2024-are
+// https://www.tvguide.co.uk/articles/blue-lights-series-4-ending-explained-devastating-closure-belfasts-blackthorn-police-station-series-5/
+// https://www.radiotimes.com/tv/drama/blue-lights-creators-confirm-exit-exclusive-newsupdate/
+const auditQuestions = [
+  {
+    "id": "tv_43298",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 1, which actress plays the former social worker turned rookie police officer Grace Ellis?",
+    "answers": [
+      "Siân Brooke",
+      "Katherine Devlin",
+      "Joanne Crawford",
+      "Andi Osho"
+    ],
+    "correctAnswer": "Siân Brooke",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 1",
+      "Broadcast Year: 2023",
+      "Episode: S01E01",
+      "Episode Title: The Code",
+      "Section: Cast",
+      "Focus: Grace Ellis performer",
+      "Correct Fact: Siân Brooke",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43299",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 1, which actor plays probationary constable Tommy Foster?",
+    "answers": [
+      "Martin McCann",
+      "Nathan Braniff",
+      "Frank Blake",
+      "Richard Dormer"
+    ],
+    "correctAnswer": "Nathan Braniff",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 1",
+      "Broadcast Year: 2023",
+      "Episode: S01E01",
+      "Episode Title: The Code",
+      "Section: Cast",
+      "Focus: Tommy Foster performer",
+      "Correct Fact: Nathan Braniff",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43300",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 1, which actress portrays Gerry Cliff's wife, police sergeant Sandra Cliff?",
+    "answers": [
+      "Andi Osho",
+      "Cathy Tyson",
+      "Abigail McGibbon",
+      "Andrea Irvine"
+    ],
+    "correctAnswer": "Andi Osho",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 1",
+      "Broadcast Year: 2023",
+      "Episode: S01E01",
+      "Episode Title: The Code",
+      "Section: Cast",
+      "Focus: Sandra Cliff performer",
+      "Correct Fact: Andi Osho",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43301",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 1, which actor portrays McIntyre family patriarch James?",
+    "answers": [
+      "John Lynch",
+      "Michael Shea",
+      "Paddy Jenkins",
+      "Seamus O'Hara"
+    ],
+    "correctAnswer": "John Lynch",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 1",
+      "Broadcast Year: 2023",
+      "Episode: S01E02",
+      "Episode Title: Bad Batch",
+      "Section: Cast",
+      "Focus: James McIntyre performer",
+      "Correct Fact: John Lynch",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43302",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 1, which actress plays police constable Jen Robinson, who leaves the PSNI after Gerry's death?",
+    "answers": [
+      "Hannah McClean",
+      "Katherine Devlin",
+      "Joanne Crawford",
+      "Dearbháile McKinney"
+    ],
+    "correctAnswer": "Hannah McClean",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 1",
+      "Broadcast Year: 2023",
+      "Episode: S01E06",
+      "Episode Title: Love the One You're With",
+      "Section: Cast",
+      "Focus: Jen Robinson performer",
+      "Correct Fact: Hannah McClean",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43303",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "Which two writers created the BBC police drama Blue Lights, first broadcast in 2023?",
+    "answers": [
+      "Declan Lawn and Adam Patterson",
+      "Steven Moffat and Mark Gatiss",
+      "Jack Thorne and Stephen Graham",
+      "Jed Mercurio and Chris Chibnall"
+    ],
+    "correctAnswer": "Declan Lawn and Adam Patterson",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 1",
+      "Broadcast Year: 2023",
+      "Episode: S01E01",
+      "Episode Title: The Code",
+      "Section: Production",
+      "Focus: Blue Lights creators",
+      "Correct Fact: Declan Lawn and Adam Patterson",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43304",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In which Northern Irish city is the BBC police drama Blue Lights principally set and produced?",
+    "answers": [
+      "Derry/Londonderry",
+      "Belfast",
+      "Armagh",
+      "Newry"
+    ],
+    "correctAnswer": "Belfast",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 1",
+      "Broadcast Year: 2023",
+      "Episode: S01E01",
+      "Episode Title: The Code",
+      "Section: Production",
+      "Focus: Belfast setting and production",
+      "Correct Fact: Belfast",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43305",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "Before writing Blue Lights, what profession did co-creators Declan Lawn and Adam Patterson both work in?",
+    "answers": [
+      "Police officers",
+      "Investigative journalists",
+      "Criminal barristers",
+      "Paramedics"
+    ],
+    "correctAnswer": "Investigative journalists",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 1",
+      "Broadcast Year: 2023",
+      "Episode: S01E01",
+      "Episode Title: The Code",
+      "Section: Production",
+      "Focus: Creators' former work",
+      "Correct Fact: Investigative journalists",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43306",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 2, which actor portrays loyalist figure Lee Thompson?",
+    "answers": [
+      "Seamus O'Hara",
+      "Michael Shea",
+      "Nabil Elouahabi",
+      "Jonathan Harden"
+    ],
+    "correctAnswer": "Seamus O'Hara",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 2",
+      "Broadcast Year: 2024",
+      "Episode: S02E01",
+      "Episode Title: This Too Shall Pass",
+      "Section: Cast",
+      "Focus: Lee Thompson performer",
+      "Correct Fact: Seamus O'Hara",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43307",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 2, which actress portrays Lee Thompson's sister Mags?",
+    "answers": [
+      "Seána Kerslake",
+      "Katherine Devlin",
+      "Cathy Tyson",
+      "Siân Brooke"
+    ],
+    "correctAnswer": "Seána Kerslake",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 2",
+      "Broadcast Year: 2024",
+      "Episode: S02E02",
+      "Episode Title: Iceberg",
+      "Section: Cast",
+      "Focus: Mags Thompson performer",
+      "Correct Fact: Seána Kerslake",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43308",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 2, which actor plays older local resident Alan 'Happy' Kelly?",
+    "answers": [
+      "Paddy Jenkins",
+      "John Lynch",
+      "Desmond Eastwood",
+      "Michael Smiley"
+    ],
+    "correctAnswer": "Paddy Jenkins",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 2",
+      "Broadcast Year: 2024",
+      "Episode: S02E06",
+      "Episode Title: The Loyal",
+      "Section: Cast",
+      "Focus: Happy Kelly performer",
+      "Correct Fact: Paddy Jenkins",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43309",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "Which award did Blue Lights win at the 2025 BAFTA Television Awards for its second series?",
+    "answers": [
+      "Best Soap and Continuing Drama",
+      "Best Drama Series",
+      "Best Comedy Series",
+      "Best Limited Drama"
+    ],
+    "correctAnswer": "Best Drama Series",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 2",
+      "Broadcast Year: 2024",
+      "Episode: S02E06",
+      "Episode Title: The Loyal",
+      "Section: Awards",
+      "Focus: 2025 BAFTA Drama Series winner",
+      "Correct Fact: Best Drama Series",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43310",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In 2025, what category did Blue Lights win at the Broadcast Awards for its second series?",
+    "answers": [
+      "Best Documentary Series",
+      "Best Entertainment Programme",
+      "Best Drama Series",
+      "Best News Coverage"
+    ],
+    "correctAnswer": "Best Drama Series",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 2",
+      "Broadcast Year: 2024",
+      "Episode: S02E06",
+      "Episode Title: The Loyal",
+      "Section: Awards",
+      "Focus: 2025 Broadcast Awards Drama Series winner",
+      "Correct Fact: Best Drama Series",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43311",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "At the Royal Television Society Northern Ireland Awards in 2024, what category did Blue Lights win?",
+    "answers": [
+      "Comedy",
+      "Drama",
+      "Children's",
+      "Documentary"
+    ],
+    "correctAnswer": "Drama",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 2",
+      "Broadcast Year: 2024",
+      "Episode: S02E06",
+      "Episode Title: The Loyal",
+      "Section: Awards",
+      "Focus: 2024 RTS NI Drama winner",
+      "Correct Fact: Drama",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43312",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 3, which actor plays intelligence officer Paul 'Colly' Collins?",
+    "answers": [
+      "Michael Smiley",
+      "Martin McCann",
+      "John Lynch",
+      "Steven Moffat"
+    ],
+    "correctAnswer": "Michael Smiley",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 3",
+      "Broadcast Year: 2025",
+      "Episode: S03E01",
+      "Episode Title: The Party",
+      "Section: Cast",
+      "Focus: Colly Collins performer",
+      "Correct Fact: Michael Smiley",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43313",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 3, which actress plays Tina McIntyre, who remains entangled in the criminal world?",
+    "answers": [
+      "Abigail McGibbon",
+      "Cathy Tyson",
+      "Andi Osho",
+      "Joanne Crawford"
+    ],
+    "correctAnswer": "Abigail McGibbon",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 3",
+      "Broadcast Year: 2025",
+      "Episode: S03E01",
+      "Episode Title: The Party",
+      "Section: Cast",
+      "Focus: Tina McIntyre performer",
+      "Correct Fact: Abigail McGibbon",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43314",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "Who directed the final three episodes of Blue Lights Series 3, including 'The Parting Glass'?",
+    "answers": [
+      "Angela Griffin",
+      "Jack Casey",
+      "Sam O'Mahoney",
+      "Gilles Bannier"
+    ],
+    "correctAnswer": "Angela Griffin",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 3",
+      "Broadcast Year: 2025",
+      "Episode: S03E04",
+      "Episode Title: The Parting Glass",
+      "Section: Production",
+      "Focus: Series 3 final block director",
+      "Correct Fact: Angela Griffin",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43315",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "Who directed the opening three episodes of Blue Lights Series 3?",
+    "answers": [
+      "Sam O'Mahoney",
+      "Jack Casey",
+      "Angela Griffin",
+      "Peter Gould"
+    ],
+    "correctAnswer": "Jack Casey",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 3",
+      "Broadcast Year: 2025",
+      "Episode: S03E01",
+      "Episode Title: The Party",
+      "Section: Production",
+      "Focus: Series 3 opening block director",
+      "Correct Fact: Jack Casey",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43316",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "Which prize did Blue Lights win at the national Royal Television Society Programme Awards in 2026?",
+    "answers": [
+      "Drama Series",
+      "Comedy Drama",
+      "Limited Series",
+      "Scripted Comedy"
+    ],
+    "correctAnswer": "Drama Series",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 3",
+      "Broadcast Year: 2025",
+      "Episode: S03E06",
+      "Episode Title: World of Our Own",
+      "Section: Awards",
+      "Focus: 2026 RTS Programme Awards winner",
+      "Correct Fact: Drama Series",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43317",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "Who directed the first three episodes of Blue Lights Series 4, including its opening episode?",
+    "answers": [
+      "Angela Griffin",
+      "Sam O'Mahoney",
+      "Jack Casey",
+      "Gilles Bannier"
+    ],
+    "correctAnswer": "Angela Griffin",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 4",
+      "Broadcast Year: 2026",
+      "Episode: S04E01",
+      "Episode Title: Refuge",
+      "Section: Production",
+      "Focus: Series 4 opening block director",
+      "Correct Fact: Angela Griffin",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43318",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "Who directed the final three episodes of Blue Lights Series 4, including the Gerry Cliff flashback episode 'So Far'?",
+    "answers": [
+      "Angela Griffin",
+      "Jack Casey",
+      "Sam O'Mahoney",
+      "Declan Lawn"
+    ],
+    "correctAnswer": "Sam O'Mahoney",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 4",
+      "Broadcast Year: 2026",
+      "Episode: S04E04",
+      "Episode Title: So Far",
+      "Section: Production",
+      "Focus: Series 4 final block director",
+      "Correct Fact: Sam O'Mahoney",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43319",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 4, which actor returns as disgraced former police inspector David 'Jonty' Johnson?",
+    "answers": [
+      "Jonathan Harden",
+      "Seamus O'Hara",
+      "Michael Smiley",
+      "Frank Blake"
+    ],
+    "correctAnswer": "Jonathan Harden",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 4",
+      "Broadcast Year: 2026",
+      "Episode: S04E04",
+      "Episode Title: So Far",
+      "Section: Cast",
+      "Focus: Jonty returning performer",
+      "Correct Fact: Jonathan Harden",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43320",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 4, what secret status does Gerry uncover about McIntyre family patriarch James?",
+    "answers": [
+      "Police informant",
+      "Undercover customs officer",
+      "Protected judge",
+      "Foreign intelligence officer"
+    ],
+    "correctAnswer": "Police informant",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 4",
+      "Broadcast Year: 2026",
+      "Episode: S04E04",
+      "Episode Title: So Far",
+      "Section: Storyline",
+      "Focus: Gerry discovers James McIntyre is an informant",
+      "Correct Fact: Police informant",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43321",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 4's finale, what becomes public that puts Tina and Mo McIntyre at risk from dissident attackers?",
+    "answers": [
+      "James McIntyre's history as a police informant",
+      "Tina's secret lottery winnings",
+      "Mo's plan to leave Belfast",
+      "Gerry Cliff's resignation letter"
+    ],
+    "correctAnswer": "James McIntyre's history as a police informant",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 4",
+      "Broadcast Year: 2026",
+      "Episode: S04E06",
+      "Episode Title: The Line",
+      "Section: Storyline",
+      "Focus: McIntyre family exposed after Gerry revelations",
+      "Correct Fact: James McIntyre's history as a police informant",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43322",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 4's finale, what is Annie Conlon's fate following the bombing at Katie Close's house?",
+    "answers": [
+      "She survives",
+      "She is killed",
+      "She resigns and moves abroad",
+      "She is arrested"
+    ],
+    "correctAnswer": "She survives",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 4",
+      "Broadcast Year: 2026",
+      "Episode: S04E06",
+      "Episode Title: The Line",
+      "Section: Storyline",
+      "Focus: Annie survives bombing",
+      "Correct Fact: She survives",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43323",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "In Blue Lights Series 4, which former police officer returns to the story working as a solicitor?",
+    "answers": [
+      "Jen Robinson",
+      "Aisling Byrne",
+      "Grace Ellis",
+      "Nicola Robinson"
+    ],
+    "correctAnswer": "Jen Robinson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 4",
+      "Broadcast Year: 2026",
+      "Episode: S04E04",
+      "Episode Title: So Far",
+      "Section: Storyline",
+      "Focus: Jen's return in legal profession",
+      "Correct Fact: Jen Robinson",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43324",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "Which producer worked on Blue Lights Series 4, succeeding Amanda Black?",
+    "answers": [
+      "Brendan Mullin",
+      "Steven Moffat",
+      "Mark Johnson",
+      "Ronan Bennett"
+    ],
+    "correctAnswer": "Brendan Mullin",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 4",
+      "Broadcast Year: 2026",
+      "Episode: S04E01",
+      "Episode Title: Refuge",
+      "Section: Production",
+      "Focus: Series 4 producer",
+      "Correct Fact: Brendan Mullin",
+      "Audit Date: 22 November 2026"
+    ]
+  },
+  {
+    "id": "tv_43325",
+    "category": "TV",
+    "topic": "Blue Lights",
+    "question": "After Blue Lights Series 4 finished in November 2026, which pair of writers announced they were stepping away from the drama?",
+    "answers": [
+      "Declan Lawn and Adam Patterson",
+      "Stephen Wright and Louise Gallagher",
+      "Jed Mercurio and Sally Wainwright",
+      "Jack Casey and Angela Griffin"
+    ],
+    "correctAnswer": "Declan Lawn and Adam Patterson",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "British Television",
+      "Northern Ireland",
+      "BBC One",
+      "Police Drama",
+      "Crime Drama",
+      "Programme: Blue Lights",
+      "Police Service of Northern Ireland",
+      "Blackthorn Police Station",
+      "Written Quiz",
+      "Series: 4",
+      "Broadcast Year: 2026",
+      "Episode: S04E06",
+      "Episode Title: The Line",
+      "Section: Production",
+      "Focus: Original writing duo departed after Series 4",
+      "Correct Fact: Declan Lawn and Adam Patterson",
+      "Audit Date: 22 November 2026"
+    ]
+  }
+];
+questions.push(...auditQuestions);
+
+if(questions.length!==124||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(28611+i)||q.category!=='TV'||q.topic!=='Blue Lights'||
+questions.some((q,i)=>q.id!==(i<96?'tv_'+(28611+i):'tv_'+(43298+i-96))||q.category!=='TV'||q.topic!=='Blue Lights'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<17||
 new Set(q.tags).size!==q.tags.length||q.dailyEligible!==true||
