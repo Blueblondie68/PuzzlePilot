@@ -941,6 +941,7 @@ const auditQuestions=[
 ];
 questions.push(...auditQuestions);
 
+if(questions.length!==101) throw new Error('Pack 482 count check failed');
 const ids=new Set(), facts=new Set();
 for(let i=0;i<questions.length;i++){
   const q=questions[i];
