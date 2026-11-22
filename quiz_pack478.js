@@ -2478,7 +2478,7 @@ const questions=[
     "id": "tv_26555",
     "category": "TV",
     "topic": "Benidorm",
-    "question": "The third-series trip that strains Mick and Janice's marriage visits waterfalls at which place?",
+    "question": "In Benidorm Series 3, which place's waterfalls feature on the trip that strains Mick and Janice's marriage?",
     "answers": [
       "Callosa",
       "Alicante Airport",
@@ -2894,7 +2894,7 @@ const questions=[
     "id": "tv_26568",
     "category": "TV",
     "topic": "Benidorm",
-    "question": "In series four, Madge is pursued by gangsters over debts connected to which deceased relative?",
+    "question": "In Benidorm Series 4, gangsters pursue Madge over debts connected to which deceased relative?",
     "answers": [
       "Her son-in-law Mick",
       "Her brother Gavin",
