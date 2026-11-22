@@ -5,10 +5,10 @@
 'use strict';
 
 const FIRST_ID = 22552;
-const commonTags = [
-  'television', '50/50', 'CBBC',
-  'BBC Scotland', 'British game show', 'children television'
-];
+const PROGRAMME='50/50';
+const commonTags=['Television',PROGRAMME,'Programme: '+PROGRAMME,
+ 'BBC One','CBBC','BBC Scotland','British Game Show',
+ 'Children Television','1997–2005','Finished Programme'];
 
 // Question | correct answer | three distractors | difficulty | seven specific tags.
 // Each question identifies 50/50 for mixed-category and specialist quiz play.
@@ -73,12 +73,13 @@ const questions = rows.map((row, index) => {
     throw new Error(`Pack 405: repeated answer option at row ${index + 1}`);
   }
   const tags = [...new Set([...commonTags, ...specificTags])];
-  if (tags.length !== 13) {
-    throw new Error(`Pack 405: expected 13 distinct tags at row ${index + 1}, got ${tags.length}`);
+  if (tags.length < 12) {
+    throw new Error(`Pack 405: expected at least 12 distinct tags at row ${index + 1}, got ${tags.length}`);
   }
   return {
     id: `tv_${FIRST_ID + index}`,
     category: 'Television',
+    programme: PROGRAMME,
     question,
     answers,
     correctAnswer,
@@ -88,4 +89,43 @@ const questions = rows.map((row, index) => {
   };
 });
 
-module.exports = questions;
+
+
+// Audit of finished children's game show 50/50, nine series 1997–2005.
+// All original tv_22552–tv_22591 preserved. New IDs begin tv_41498.
+// Format/presenters: https://www.ukgameshows.com/ukgs/50/50
+// Games and transmissions: https://en.wikipedia.org/wiki/50/50_(British_game_show)
+// Additional game challenges: https://ukgameshows.fandom.com/wiki/50/50
+// Primary programme design: https://www.ravensbourne.ac.uk/bbc-motion-graphics-archive/5050-2005
+// BBC director's production CV:
+// https://www.crewbirmingham.co.uk/wp-content/uploads/listing-uploads/my-cv/NPHarris-CV-Director-2025-1.pdf
+const audit405Facts=[["Game rules","Which name did the quiz round later known as The Pulse previously use?","The Brainbuster","The Observator","The Avalanche","The Spike","Old name of risk-or-pass round"],["Game rules","What was the name of the round where pupils answered questions after watching a music video?","The Observator","The Revolve","The Cube","The Spike","Pop-video observation round"],["Game rules","Which challenge featured a wobbling inflatable table with tags to collect?","The Rollometer","The Spike","The Avalanche","The Cube","Physical game Series 5–7"],["Game rules","In which physical challenge did contestants navigate a revolving maze?","The Revolve","The Rollometer","The Spike","The Cube","Revolving obstacle maze"],["Game rules","What did competitors try to gather while balancing on The Rollometer?","Coloured tags","Plastic fish","Numbered keys","Paper envelopes","Physical round scoring"],["Game rules","How many times could each numbered pupil be selected by Flynn during an episode?","Only once","Twice","Four times","As often as their school wished","Random selection rule"],["Game rules","Besides true or false, which type of question could all pupils answer simultaneously?","Multiple choice","Written essays","Formal debates","Spelling dictations","All-team quiz rounds"],["Production","Who voiced Flynn between Matthew Davies and Dave Kelly?","Gary Martin","Simon Smith","Clyde Lawson","Nigel P. Harris","Computer character voice"],["Production","Which director's credits list him as director of Series 7 and 8?","Nigel P. Harris","David Yates","Richard Marson","John Dower","Series 7 and 8 director"],["Production","How many studio cameras were used for Series 7 and 8, according to the director's credits?","Six","Two","Four","Ten","Multi-camera studio"],["Production","What was the approximate running time of a typical programme?","Twenty-five minutes","Ten minutes","One hour","Ninety minutes","Programme length"],["Broadcast","Which numbered series consisted of fourteen programmes presented by Angellica Bell?","Series seven","Series four","Series five","Series nine","2003 run"],["Broadcast","How many episodes made up the eighth series, first aired in 2004?","Fifteen","Seven","Eleven","Twenty","2004 series count"],["Broadcast","In which year did the fourth and final Christmas special air?","2001","1999","2003","2005","2001 seasonal transmission"],["Broadcast","Until what year did repeat broadcasts continue on BBC channels?","2009","2005","2007","2012","Rerun broadcast history"]];
+const audit405Norm=x=>String(x).normalize('NFKC').toLocaleLowerCase('en-GB')
+ .replace(/[^\p{L}\p{N}]/gu,'');
+for(const [type,stem,correctAnswer,w1,w2,w3,focus] of audit405Facts){
+ const question='In '+PROGRAMME+', '+stem[0].toLowerCase()+stem.slice(1);
+ const answers=[w1,w2,w3];answers.splice(questions.length%4,0,correctAnswer);
+ if(new Set(answers.map(audit405Norm)).size!==4)throw Error('Invalid options '+stem);
+ const tags=['Television','BBC One','CBBC','BBC Scotland','British Game Show',
+  PROGRAMME,'Programme: '+PROGRAMME,'Children Television','Original run 1997–2005',
+  'Nine series','Category: '+type,'Focus: '+focus,
+  'Correct answer: '+correctAnswer,'School challenge'];
+ questions.push({id:'tv_'+(41498+questions.length-40),category:'Television',
+  programme:PROGRAMME,question,answers,correctAnswer,
+  difficulty:'Medium',tags,dailyEligible:true});
+}
+const ids405=new Set(),stems405=new Set();
+for(const item of questions){
+ const stem=audit405Norm(item.question);
+ if(item.category!=='Television'||item.programme!==PROGRAMME||
+ !item.tags.includes('Programme: '+PROGRAMME)||
+ !stem.includes(audit405Norm(PROGRAMME))||
+ item.answers.length!==4||new Set(item.answers.map(audit405Norm)).size!==4||
+ item.answers.filter(x=>x===item.correctAnswer).length!==1||
+ item.tags.length<12||item.dailyEligible!==true||
+ ids405.has(item.id)||stems405.has(stem)||
+ (Number(item.id.slice(3))>=41498&&stem.includes(audit405Norm(item.correctAnswer))))
+ throw Error('Pack 405 JS audit failed '+item.id);
+ ids405.add(item.id);stems405.add(stem);
+}
+module.exports=questions;
