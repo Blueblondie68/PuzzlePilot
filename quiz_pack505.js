@@ -4646,7 +4646,7 @@ const auditQuestions = [
     "id": "tv_43358",
     "category": "TV",
     "topic": "Black Mirror",
-    "question": "In Black Mirror's 'Joan Is Awful', which actress portrays Joan Tait in the non-fictional layer of the story?",
+    "question": "In Black Mirror's 'Joan Is Awful', which actress plays the Joan who discovers Salma Hayek portraying her on Streamberry?",
     "answers": [
       "Annie Murphy",
       "Salma Hayek",
