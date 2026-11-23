@@ -9205,14 +9205,14 @@ const auditQuestions = [
     "id": "tv_44659",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 10, Episode 27), who delivers a taped message to both wedding parties during the celebrations?",
+    "question": "In Beverly Hills, 90210 (Series 10, Episode 27), which magazine does Yoffe offer Janet the chance to edit?",
     "answers": [
-      "Jack McKay",
-      "Noah Hunter",
-      "Brandon Walsh",
-      "Dylan McKay"
+      "Nouveau",
+      "The Beverly Beat",
+      "West Beverly Weekly",
+      "Now Wear This"
     ],
-    "correctAnswer": "Brandon Walsh",
+    "correctAnswer": "Nouveau",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -9230,24 +9230,20 @@ const auditQuestions = [
       "Broadcast year: 2000",
       "Episode: S10E27",
       "Episode title: Ode to Joy",
-      "Storyline: who delivers a taped message to both wedding parties during the celebrations",
-      "Answer fact: Brandon Walsh",
+      "Storyline: Yoffe names Janet editor of the Nouveau magazine",
+      "Answer fact: Nouveau",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Episode guide: TVmaze and TV Guide",
-      "Character: Brandon",
-      "Character: Donna",
-      "Character: David",
-      "Actor: Jason Priestley",
-      "Actor: Tori Spelling",
-      "Actor: Brian Austin Green"
+      "Character: Janet",
+      "Actor: Lindsay Price"
     ]
   },
   {
     "id": "tv_44660",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 10, Episode 27), which two former school friends are among the wedding guests besides Valerie?",
+    "question": "In Beverly Hills, 90210 (Series 10, Episode 27), which former pupil and principal from West Beverly High appear at the wedding festivities?",
     "answers": [
       "Andrea and Mrs Teasley",
       "Tracy and Mariah",
@@ -9272,7 +9268,7 @@ const auditQuestions = [
       "Broadcast year: 2000",
       "Episode: S10E27",
       "Episode title: Ode to Joy",
-      "Storyline: which two former school friends are among the wedding guests besides Valerie",
+      "Storyline: Returning characters from West Beverly High attend wedding",
       "Answer fact: Andrea and Mrs Teasley",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
