@@ -10597,7 +10597,7 @@ const questions = [
       "Original airdate: 2000-10-18",
       "Storyline: Community reluctantly offers Clancy chance at crossing supervisor role despite disability prejudice",
       "Character: Clancy Freeman",
-      "Actor: Clancy Freeman (recurring character)",
+      "Actor: Michael Isaacs",
       "Answer fact: They agree to give him a chance as school-crossing supervisor",
       "Episode context: Clancy seeks school-crossing role, hit-and-run, Jack's disability"
     ]
@@ -10680,7 +10680,7 @@ const questions = [
     "id": "tv_47840",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "Which Blue Heelers actor was nominated for both the Gold Logie and Most Popular Actor at the 2001 Logies?",
+    "question": "Which Blue Heelers actor was nominated for the 2001 Gold Logie alongside Lisa McCune?",
     "answers": [
       "John Wood",
       "Martin Sacks",
@@ -10704,10 +10704,10 @@ const questions = [
       "Series: 7",
       "Award year: 2001",
       "Award ceremony: TV Week Logie Awards",
-      "Award: Gold Logie and Most Popular Actor",
+      "Award: Gold Logie — Most Popular Personality",
       "Award result: Nominated",
       "Award recipient: John Wood",
-      "Award question: Gold Logie and Most Popular Actor — Nominated — John Wood",
+      "Award question: Gold Logie — Most Popular Personality — Nominated — John Wood",
       "Answer fact: John Wood",
       "Award source: https://televisionau.com/2026/08/tv-week-logie-awards-25-years-ago-16.html/",
       "Recognition scope: Blue Heelers, 2000 series"
