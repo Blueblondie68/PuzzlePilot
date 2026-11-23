@@ -1,15 +1,25 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 551: Blue Heelers, Series 8 (2001).
-// 266 researched, player-friendly storyline questions across all 42 episodes.
-// Unique IDs tv_33387–tv_33652; Pack 550 ended at tv_33386.
-// Synopses: https://www.thetvdb.com/series/blue-heelers/allseasons/official
-// Episode order, dates and alternate titles: https://www.tvmaze.com/seasons/21170/blue-heelers-season-8/episodeguide
-// Independent date check: https://epguides.com/BlueHeelers/
-// Alternative listings disagree on the episode count (41 versus 42) and some episode names.
-// This pack uses the 42 distinct-episode order shared by TheTVDB, TVmaze and epguides.
-// Alternate episode names are preserved in tags for S08E12, S08E17, S08E18-19 and S08E27.
-// Story arcs: Jack regains movement then departs following Brad Eckhardt's death; Jonesy joins and pursues his father's killer;
-// Tess bonds with Hayley; Tom grows close to Reverend Grace Curtis; the series ends with Christmas stories.
-// No fixed episode quotas; guest specifics retained as context, not memory-test questions.
+// Audited 23 November 2026: 266 original questions kept; 8 new substantive character/plot
+// details and 6 verified 2001 AFI / 2002 Logie award questions; 280 total across all 42 episodes.
+// Original IDs tv_33387–tv_33652; audit additions tv_47845–tv_47858.
+// Story sources: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-8/1000036269/
+// https://thetvdb.com/series/blue-heelers/seasons/official/8
+// https://en.wikipedia.org/wiki/Blue_Heelers_season_8
+// AFI Gary Day guest-acting 2001 WIN for 'Poisoned Fruit (2)':
+// https://mail.australiancinema.info/afi/afi2001.html
+// Carol Burns 2001 AFI guest-actress NOMINATION for 'Deadly Fascination':
+// https://www.imdb.com/event/ev0000062/2001/1/
+// 2002 Logies: https://en.wikipedia.org/wiki/Logie_Awards_of_2002
+// Contemporary 2002 Logie report: https://televisionau.com/2012/04/tv-week-logie-awards-10-years-ago.html
+// Ditch Davey won Most Popular New Male Talent; John Wood nominated for Gold Logie
+// and Most Popular Actor; Blue Heelers nominated for Most Popular Program (All Saints won).
+// Original major arc coverage intact: Jack recovers movement then faces dismissal after
+// Brad Eckhardt's fatal fall; Jonesy arrives and uncovers murder of natural father Sam Bridges;
+// commander Reg Jones concealed evidence; Les Anderson later confesses then dies; Tess/Hayley
+// fostering; Tom and Reverend Grace Curtis, and Ben's struggle over access to his children.
+// Alternate titles carried forward when in original tags (S08E12, E17-19, E27).
+// Sources disagree on some later 2001 broadcast dates and names; original metadata preserved.
+// No arbitrary episode quotas, invented outcomes or filler questions.
 'use strict';
 const questions = [
   {
@@ -9885,13 +9895,541 @@ const questions = [
       "Answer fact: Hayley seems to enjoy other people's company more than Tess's",
       "Continuing context: Wanted brother threatens family at Christmas; Tess Hayley, Tom Grace, Ben's children"
     ]
+  },
+  {
+    "id": "tv_47845",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what personal temptation accompanies PJ Hasham's opportunity to return to city homicide in 'A Bit on the Side'?",
+    "answers": [
+      "An affair with one of the visiting detectives",
+      "A chance to marry Tess Gallagher",
+      "A proposal to become police commissioner",
+      "An offer to work for the state premier"
+    ],
+    "correctAnswer": "An affair with one of the visiting detectives",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Broadcast year: 2001",
+      "Episode: S08E05",
+      "Episode title: A Bit on the Side",
+      "Original airdate: 2001-03-21",
+      "Storyline: PJ considers both transfer to city homicide and an affair with visiting investigator",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: An affair with one of the visiting detectives",
+      "Continuing context: Dismembered corpse, two sisters, city homicide detective and PJ"
+    ]
+  },
+  {
+    "id": "tv_47846",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which unusual mode of transport puts Tess in danger during the search in 'Chop Chop'?",
+    "answers": [
+      "A hot-air balloon",
+      "A police helicopter",
+      "A glider",
+      "A skydiving aeroplane"
+    ],
+    "correctAnswer": "A hot-air balloon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Broadcast year: 2001",
+      "Episode: S08E09",
+      "Episode title: Chop Chop",
+      "Original airdate: 2001-04-18",
+      "Storyline: Tess takes hazardous hot-air balloon trip while police search for missing girl",
+      "Character: Tess Gallagher",
+      "Actor: Caroline Craig",
+      "Answer fact: A hot-air balloon",
+      "Continuing context: Illegal tobacco bust postponed for missing bushwalker; Tess confesses feelings"
+    ]
+  },
+  {
+    "id": "tv_47847",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which recently released cop killer causes a traumatic revelation about teenager Heath Flemming's family in 'Blood'?",
+    "answers": [
+      "Mick Boyce",
+      "Brad Eckhardt",
+      "Les Anderson",
+      "Barry Craig"
+    ],
+    "correctAnswer": "Mick Boyce",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Broadcast year: 2001",
+      "Episode: S08E10",
+      "Episode title: Blood",
+      "Original airdate: 2001-04-25",
+      "Storyline: Released cop killer Mick Boyce connected to Heath Flemming's parentage",
+      "Character: Jack Lawson",
+      "Actor: Rupert Reid",
+      "Answer fact: Mick Boyce",
+      "Continuing context: Released convicted cop killer Mick Boyce and troubled youth lineage"
+    ]
+  },
+  {
+    "id": "tv_47848",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, where does Jo Parrish find employment for a vulnerable young man named Arnie before a girl goes missing in 'A Friend Indeed'?",
+    "answers": [
+      "The Imperial Hotel",
+      "A timber mill",
+      "The Mount Thomas bank",
+      "A cattle farm"
+    ],
+    "correctAnswer": "The Imperial Hotel",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Broadcast year: 2001",
+      "Episode: S08E16",
+      "Episode title: A Friend Indeed",
+      "Original airdate: 2001-06-06",
+      "Storyline: Jo helps vulnerable Arnie gain pub employment; peers later exploit him as scapegoat",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: The Imperial Hotel",
+      "Continuing context: Jo and Jack respond to youths drinking; young girl missing after caution"
+    ]
+  },
+  {
+    "id": "tv_47849",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why does Jo doubt that Arnie is truly responsible for the girl's disappearance in 'A Friend Indeed'?",
+    "answers": [
+      "She believes the other teenagers are using his trust in them",
+      "He was in another country when the girl vanished",
+      "He was in police custody when the girl vanished",
+      "A camera proves the girl never visited the park"
+    ],
+    "correctAnswer": "She believes the other teenagers are using his trust in them",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Broadcast year: 2001",
+      "Episode: S08E16",
+      "Episode title: A Friend Indeed",
+      "Original airdate: 2001-06-06",
+      "Storyline: Manipulative teenage acquaintances use Arnie as scapegoat in missing girl inquiry",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: She believes the other teenagers are using his trust in them",
+      "Continuing context: Jo and Jack respond to youths drinking; young girl missing after caution"
+    ]
+  },
+  {
+    "id": "tv_47850",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which earlier incident involving Tess starts the criminal case that develops alongside the boxing lessons in 'The Manly Art'?",
+    "answers": [
+      "A construction worker knocks her to the ground",
+      "A retired boxer attacks PJ at a school reunion",
+      "The mayor strikes a police constable",
+      "A travelling acrobat assaults Jo"
+    ],
+    "correctAnswer": "A construction worker knocks her to the ground",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Broadcast year: 2001",
+      "Episode: S08E17",
+      "Episode title: The Manly Art",
+      "Original airdate: 2001-06-13",
+      "Storyline: Tess injured by construction worker before boxing accident and romance with Jack",
+      "Character: Tess Gallagher",
+      "Actor: Caroline Craig",
+      "Answer fact: A construction worker knocks her to the ground",
+      "Continuing context: Boxing injury investigated; Jack and Tess begin romantic relationship",
+      "Alternative listing title: The Manly Art"
+    ]
+  },
+  {
+    "id": "tv_47851",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what is the name of Jonesy's biological father whose death motivates the 'Poisoned Fruit' investigation?",
+    "answers": [
+      "Sam Bridges",
+      "Reginald Jones",
+      "Les Anderson",
+      "Brad Eckhardt"
+    ],
+    "correctAnswer": "Sam Bridges",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Broadcast year: 2001",
+      "Episode: S08E29",
+      "Episode title: Poisoned Fruit (2)",
+      "Original airdate: 2001-08-29",
+      "Storyline: Jonesy investigates murder of biological father Sam Bridges and alleged police cover-up",
+      "Character: Evan 'Jonesy' Jones",
+      "Actor: Ditch Davey",
+      "Answer fact: Sam Bridges",
+      "Continuing context: Commander Reg Jones suspected of covering up natural father's murder"
+    ]
+  },
+  {
+    "id": "tv_47852",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who admits beating contractor Les Anderson almost to death in 'Best Eaten Cold'?",
+    "answers": [
+      "Nipper Brown",
+      "Evan 'Jonesy' Jones",
+      "PJ Hasham",
+      "Reverend Grace Curtis"
+    ],
+    "correctAnswer": "Nipper Brown",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Broadcast year: 2001",
+      "Episode: S08E40",
+      "Episode title: Best Eaten Cold",
+      "Original airdate: 2001-11-14",
+      "Storyline: Nipper Brown confesses to assaulting Les Anderson before Anderson admits killing Sam Bridges",
+      "Character: Evan 'Jonesy' Jones",
+      "Actor: Ditch Davey",
+      "Answer fact: Nipper Brown",
+      "Continuing context: Les Anderson assaulted, admits killing Jonesy's father, then dies"
+    ]
+  },
+  {
+    "id": "tv_47853",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers star won the 2002 TV Week Logie for Most Popular New Male Talent for playing Evan 'Jonesy' Jones?",
+    "answers": [
+      "Ditch Davey",
+      "Rupert Reid",
+      "Paul Bishop",
+      "Martin Sacks"
+    ],
+    "correctAnswer": "Ditch Davey",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Award year: 2002",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Most Popular New Male Talent",
+      "Award result: Won",
+      "Award recipient: Ditch Davey",
+      "Award question: Most Popular New Male Talent — Ditch Davey — Won",
+      "Answer fact: Ditch Davey",
+      "Award source: https://televisionau.com/2012/04/tv-week-logie-awards-10-years-ago.html",
+      "Recognised season: Blue Heelers, 2001",
+      "Recognised episode: S08E22"
+    ]
+  },
+  {
+    "id": "tv_47854",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor was nominated for the 2002 Gold Logie but did not win?",
+    "answers": [
+      "John Wood",
+      "Rupert Reid",
+      "Ditch Davey",
+      "Paul Bishop"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Award year: 2002",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Gold Logie — Most Popular Personality",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Gold Logie — Most Popular Personality — John Wood — Nominated",
+      "Answer fact: John Wood",
+      "Award source: https://en.wikipedia.org/wiki/Logie_Awards_of_2002",
+      "Recognised season: Blue Heelers, 2001",
+      "Recognition scope: Actor or programme"
+    ]
+  },
+  {
+    "id": "tv_47855",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor was nominated for the 2002 Most Popular Actor Silver Logie?",
+    "answers": [
+      "John Wood",
+      "Ditch Davey",
+      "Paul Bishop",
+      "Grant Bowler"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Award year: 2002",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Most Popular Actor — Silver Logie",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Most Popular Actor — Silver Logie — John Wood — Nominated",
+      "Answer fact: John Wood",
+      "Award source: https://en.wikipedia.org/wiki/Logie_Awards_of_2002",
+      "Recognised season: Blue Heelers, 2001",
+      "Recognition scope: Actor or programme"
+    ]
+  },
+  {
+    "id": "tv_47856",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In 2002, which TV Week Logie programme category nominated Blue Heelers but was won by All Saints?",
+    "answers": [
+      "Most Popular Program",
+      "Most Outstanding Children's Program",
+      "Most Popular Game Show",
+      "Most Popular Comedy Program"
+    ],
+    "correctAnswer": "Most Popular Program",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Award year: 2002",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Most Popular Program",
+      "Award result: Nominated",
+      "Award recipient: Blue Heelers",
+      "Award question: Most Popular Program — Blue Heelers — Nominated",
+      "Answer fact: Most Popular Program",
+      "Award source: https://en.wikipedia.org/wiki/Logie_Awards_of_2002",
+      "Recognised season: Blue Heelers, 2001",
+      "Recognition scope: Actor or programme"
+    ]
+  },
+  {
+    "id": "tv_47857",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers guest actor won a 2001 AFI Award for the episode 'Poisoned Fruit (2)'?",
+    "answers": [
+      "Gary Day",
+      "John Wood",
+      "Martin Sacks",
+      "Ditch Davey"
+    ],
+    "correctAnswer": "Gary Day",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Award year: 2001",
+      "Award ceremony: Australian Film Institute Awards",
+      "Award: Best Actor in a Guest Role in a TV Drama Series",
+      "Award result: Won",
+      "Award recipient: Gary Day",
+      "Award question: Best Actor in a Guest Role in a TV Drama Series — Gary Day — Won",
+      "Answer fact: Gary Day",
+      "Award source: https://mail.australiancinema.info/afi/afi2001.html",
+      "Recognised season: Blue Heelers, 2001",
+      "Recognised episode: S08E29"
+    ]
+  },
+  {
+    "id": "tv_47858",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which actress received a 2001 AFI guest-acting nomination for Blue Heelers episode 'Deadly Fascination'?",
+    "answers": [
+      "Carol Burns",
+      "Lisa McCune",
+      "Jane Allsop",
+      "Caroline Craig"
+    ],
+    "correctAnswer": "Carol Burns",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 8",
+      "Award year: 2001",
+      "Award ceremony: Australian Film Institute Awards",
+      "Award: Best Actress in a Guest Role in a TV Drama Series",
+      "Award result: Nominated",
+      "Award recipient: Carol Burns",
+      "Award question: Best Actress in a Guest Role in a TV Drama Series — Carol Burns — Nominated",
+      "Answer fact: Carol Burns",
+      "Award source: https://en.wikipedia.org/wiki/Blue_Heelers_season_8",
+      "Recognised season: Blue Heelers, 2001",
+      "Recognised episode: S08E03"
+    ]
   }
 ];
-if(questions.length!==266||new Set(questions.map(q=>q.id)).size!==questions.length||
+
+if(questions.length!==280||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(33387+i)||q.category!=='TV'||q.topic!=='Blue Heelers'||
-q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
-q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<20||
-q.dailyEligible!==true||!q.tags.some(t=>t.startsWith('Continuing context: '))||
-!q.tags.some(t=>t.startsWith('Actor: ')))) throw Error('Pack 551 validation failed');
-module.exports = questions;
+questions.some((q,i)=>((i<266)?q.id!=='tv_'+(33387+i):q.id!=='tv_'+(47845+i-266))||
+q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
+new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+!q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length<20||
+new Set(q.tags).size!==q.tags.length||
+!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 551 validation failed');
+module.exports=questions;
