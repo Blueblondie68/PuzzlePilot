@@ -2752,14 +2752,14 @@ const questions = [
     "id": "tv_47063",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Who arranged for Selena Moore to pose as the missing Leah Harris in Blue Bloods?",
+    "question": "Which actor portrays Congressman Richard Walters, who employs Andrea in Blue Bloods Series 8?",
     "answers": [
-      "A corrupt detective",
-      "Leah's brother Luke",
-      "Leah's old schoolteacher",
-      "Mayor Dutton"
+      "Richard Thomas",
+      "Peter Hermann",
+      "Michael Imperioli",
+      "David Zayas"
     ],
-    "correctAnswer": "Leah's brother Luke",
+    "correctAnswer": "Richard Thomas",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -2778,10 +2778,10 @@ const questions = [
       "Episode: S08E02",
       "Episode title: Ghosts of the Past",
       "Original airdate: 2017-10-06",
-      "Storyline: Luke orchestrates false return",
-      "Character: Danny Reagan",
-      "Actor: Donnie Wahlberg",
-      "Answer fact: Leah's brother Luke"
+      "Storyline: Congressman Walters exploits Andrea through unpaid campaign work",
+      "Character: Congressman Richard Walters",
+      "Actor: Richard Thomas",
+      "Answer fact: Richard Thomas"
     ]
   },
   {
