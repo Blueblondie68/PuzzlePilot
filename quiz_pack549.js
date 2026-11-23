@@ -1,13 +1,22 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 549: Blue Heelers, Series 6 (1999).
-// 278 researched, story-specific player-friendly questions across all 42 episodes; no artificial limits.
-// Question IDs tv_32829–tv_33106; Pack 548 ends at tv_32828.
-// Plot research: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-6/1000036269/
-// Additional episode plot details: https://thetvdb.com/series/blue-heelers/allseasons/official
-// Titles and dates: https://www.tvmaze.com/seasons/21109/blue-heelers-season-6/episodeguide
-// Main cast: https://en.wikipedia.org/wiki/Blue_Heelers_season_6
-// First aired 10 February 1999; final episode 24 November 1999.
-// Important arcs: Greg Mason's death, the investigation into Robbie's death, Dash's exit, Jo Parrish's arrival, Ben and Maggie's relationship.
-// One-off guest-character names are supporting tags rather than trivia requiring name recall.
+// Full coverage/awards audit, 23 November 2026: 278 originals preserved;
+// 17 meaningful storyline/character/aftermath additions and 7 verified awards questions.
+// 302 questions total across all 42 original episodes; no arbitrary episode quotas or filler.
+// Original IDs tv_32829–tv_33106; audit IDs tv_47809–tv_47832.
+// Episodic stories: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-6/1000036269/
+// Dates and episode titles: https://thetvdb.com/series/blue-heelers/seasons/official/6
+// Supporting detailed story/character references: https://en.wikipedia.org/wiki/Blue_Heelers_season_6
+// 2000 TV Week Logies verified historical review of TV Week 29 April / 6 May 2000:
+// https://televisionau.com/2025/08/tv-week-logie-awards-25-years-ago-15.html
+// 2000 five wins: Gold Lisa McCune (fourth straight); Silver Actress Lisa McCune;
+// Silver Actor Martin Sacks; Most Popular Program Blue Heelers; New Female Talent Jane Allsop.
+// 2000 John Wood nominated for Gold Logie and Most Popular Actor; NOT a winner.
+// Important arcs retained: Greg Mason murdered; Pat Doyle and Robbie drug-case investigation;
+// Maggie/PJ relationship exposed and Maggie's protective accommodation; Ben's family and rivalry;
+// Dash's exit following her mother's death; Jo Parrish's arrival and ex-boyfriend Andrew;
+// Tom's reputation cleared in parliamentary police corruption inquiry; fatal bus crash and guilt;
+// possible Ben/Maggie relationship and PJ's response at final episode.
+// New questions are only on distinct plot facts not already explicitly asked in original questions.
 'use strict';
 const questions = [
   {
@@ -10295,13 +10304,904 @@ const questions = [
       "Answer fact: Welfare of children in an armed fortified home",
       "Supporting episode detail: Janssen family fear Y2K; machine gun stolen; romantic triangle"
     ]
+  },
+  {
+    "id": "tv_47809",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), what connection do two early suspects in the nursing-home assault case share?",
+    "answers": [
+      "Both attend a counselling group for troubled men",
+      "Both work at a regional bank",
+      "Both were recently released from prison",
+      "Both play for Jack's football team"
+    ],
+    "correctAnswer": "Both attend a counselling group for troubled men",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E01",
+      "Episode title: Dancing with the Devil (1)",
+      "Original airdate: 1999-02-10",
+      "Storyline: Two men with access to retirement home also attend reverend's counselling group",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: Both attend a counselling group for troubled men",
+      "Supporting episode detail: Jack Lawson arrives with horse; masked attacker and retirement-home complainant"
+    ]
+  },
+  {
+    "id": "tv_47810",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), what does the local clergyman refuse to disclose during the hunt for the retirement-home prowler?",
+    "answers": [
+      "The identities of men attending his counselling group",
+      "The names of the town's councillors",
+      "The contents of the missing police evidence tape",
+      "The details of a future bank-closure plan"
+    ],
+    "correctAnswer": "The identities of men attending his counselling group",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E02",
+      "Episode title: Dancing with the Devil (2)",
+      "Original airdate: 1999-02-17",
+      "Storyline: Reverend withholds counselling-group membership during prowler inquiry",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: The identities of men attending his counselling group",
+      "Supporting episode detail: Local reverend runs counselling group; Maggie receives threatening tape"
+    ]
+  },
+  {
+    "id": "tv_47811",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), what physical clue does Jack notice on a schoolgirl who is close to the coach Alec McKinley?",
+    "answers": [
+      "Unexplained bruises",
+      "A tattoo of the school badge",
+      "A head wound from a horse-riding accident",
+      "Paint from a damaged police car"
+    ],
+    "correctAnswer": "Unexplained bruises",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E03",
+      "Episode title: Winning at All Costs",
+      "Original airdate: 1999-02-24",
+      "Storyline: Jack gains the trust of schoolgirl with alarming bruises during Alec allegations",
+      "Character: Jack Lawson",
+      "Actor: Rupert Reid",
+      "Answer fact: Unexplained bruises",
+      "Supporting episode detail: Alec McKinley teaches PE and coaches girls' hockey"
+    ]
+  },
+  {
+    "id": "tv_47812",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), which estranged family member limits Ben Stewart's access to his children while Emma tries to match him with Maggie?",
+    "answers": [
+      "His wife Rachel",
+      "His sister Jo",
+      "His mother Sally",
+      "His daughter Fiona"
+    ],
+    "correctAnswer": "His wife Rachel",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E06",
+      "Episode title: Wishful Thinking",
+      "Original airdate: 1999-03-17",
+      "Storyline: Ben's estranged wife Rachel restricts access to their children",
+      "Character: Ben Stewart",
+      "Actor: Paul Bishop",
+      "Answer fact: His wife Rachel",
+      "Supporting episode detail: Ben's daughter Emma plays matchmaker; truck repairs may cost $20,000"
+    ]
+  },
+  {
+    "id": "tv_47813",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), which detective sergeant arrives from St Davids to reinforce the investigation when Maggie Doyle goes missing in 'Web of Lies'?",
+    "answers": [
+      "Barry Craig",
+      "PJ Hasham",
+      "Ben Stewart",
+      "Jack Lawson"
+    ],
+    "correctAnswer": "Barry Craig",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E12",
+      "Episode title: Web of Lies",
+      "Original airdate: 1999-04-28",
+      "Storyline: Detective Sergeant Barry Craig arrives with Inspector Draper after Maggie disappears",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Barry Craig",
+      "Supporting episode detail: Crooked officer codenamed Babe; Inspector Draper and Sergeant Barry Craig assist"
+    ]
+  },
+  {
+    "id": "tv_47814",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), what troubling discovery does Jack make about one of the schoolgirls amid complaints against his colleague Greg Mason?",
+    "answers": [
+      "She has bruises suggesting abuse",
+      "She has been using a stolen police gun",
+      "She is the owner of a stolen horse",
+      "She has secretly become a schoolteacher"
+    ],
+    "correctAnswer": "She has bruises suggesting abuse",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E15",
+      "Episode title: Jack of Hearts",
+      "Original airdate: 1999-05-19",
+      "Storyline: Jack discovers abused schoolgirl while investigating school crushes and her father's finances",
+      "Character: Jack Lawson",
+      "Actor: Rupert Reid",
+      "Answer fact: She has bruises suggesting abuse",
+      "Supporting episode detail: Former teacher Greg Mason temporarily joins force"
+    ]
+  },
+  {
+    "id": "tv_47815",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), what future does Jack Lawson initially hope for with his girlfriend Molly before discovering her involvement with his cousin?",
+    "answers": [
+      "He intends to marry her",
+      "He plans to leave the police to work with her",
+      "He intends to send her to university abroad",
+      "He has already bought her a farm"
+    ],
+    "correctAnswer": "He intends to marry her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E17",
+      "Episode title: The Stag",
+      "Original airdate: 1999-06-02",
+      "Storyline: Jack intends to marry Molly before learning of her affair with Craig",
+      "Character: Jack Lawson",
+      "Actor: Rupert Reid",
+      "Answer fact: He intends to marry her",
+      "Supporting episode detail: Jack's girlfriend Molly, cousin Craig; prized stag worth $25,000"
+    ]
+  },
+  {
+    "id": "tv_47816",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), what condition does Rosie's estranged mother Carol attach to donating a kidney to save her daughter?",
+    "answers": [
+      "Receiving a large payment",
+      "Being granted the family farm",
+      "Having Rosie change her surname",
+      "Being appointed to the local council"
+    ],
+    "correctAnswer": "Receiving a large payment",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E19",
+      "Episode title: Perfect Match",
+      "Original airdate: 1999-06-16",
+      "Storyline: Carol demands blood money in return for life-saving kidney donation",
+      "Character: Ben Stewart",
+      "Actor: Paul Bishop",
+      "Answer fact: Receiving a large payment",
+      "Supporting episode detail: Rosie needs a kidney; parents George and Carol; Maggie returns from protection"
+    ]
+  },
+  {
+    "id": "tv_47817",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), what does PJ eventually establish about Rosie's father George in the case involving his stolen car?",
+    "answers": [
+      "He drove the getaway vehicle in an armed robbery",
+      "He has been falsely impersonating a police officer",
+      "He is a hospital transplant surgeon",
+      "He secretly owns the town's bank"
+    ],
+    "correctAnswer": "He drove the getaway vehicle in an armed robbery",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E19",
+      "Episode title: Perfect Match",
+      "Original airdate: 1999-06-16",
+      "Storyline: PJ finds father George involved in robbery and unable to pay Carol for kidney",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: He drove the getaway vehicle in an armed robbery",
+      "Supporting episode detail: Rosie needs a kidney; parents George and Carol; Maggie returns from protection"
+    ]
+  },
+  {
+    "id": "tv_47818",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), what personal boundary does social worker Tim Ryan cross while Dash is deciding whether to trust him with the abused boy?",
+    "answers": [
+      "He kisses her",
+      "He publicly accuses her of theft",
+      "He offers her an overseas police job",
+      "He secretly marries her"
+    ],
+    "correctAnswer": "He kisses her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E22",
+      "Episode title: King of the Kids",
+      "Original airdate: 1999-07-07",
+      "Storyline: Tim kisses Dash while she weighs police duties against welfare of asthmatic child",
+      "Character: Dash McKinley",
+      "Actor: Tasma Walton",
+      "Answer fact: He kisses her",
+      "Supporting episode detail: Social worker Tim Ryan secretly shelters abused children"
+    ]
+  },
+  {
+    "id": "tv_47819",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), whose urgent call is missed amid the flood of false reports intended to protect the Mount Thomas police station?",
+    "answers": [
+      "Leila Clegg's",
+      "Maggie Doyle's",
+      "Jo Parrish's",
+      "Sally Downie's"
+    ],
+    "correctAnswer": "Leila Clegg's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E26",
+      "Episode title: Downsizing",
+      "Original airdate: 1999-08-04",
+      "Storyline: Leila's urgent call about partner Merv overlooked amid false crime reports",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: Leila Clegg's",
+      "Supporting episode detail: Farmer Max Arnold; bank manager Kevin Sutton; Leila and Merv"
+    ]
+  },
+  {
+    "id": "tv_47820",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), what happens to the civil case accusing new constable Jo Parrish of a false arrest after police expose Clay Thurgood's operation?",
+    "answers": [
+      "The lawsuit is dropped",
+      "Jo loses her job permanently",
+      "Jo is jailed for contempt",
+      "The case is transferred to a military court"
+    ],
+    "correctAnswer": "The lawsuit is dropped",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E28",
+      "Episode title: Hello-Goodbye",
+      "Original airdate: 1999-08-18",
+      "Storyline: Jo's false-arrest civil suit dropped when cannabis bartering ring uncovered",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: The lawsuit is dropped",
+      "Supporting episode detail: Jo Parrish joins; Clay Thurgood's cannabis; ex-boyfriend Andrew"
+    ]
+  },
+  {
+    "id": "tv_47821",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), who accompanies Pat Doyle to Mount Thomas when he reveals he is engaged to be married again?",
+    "answers": [
+      "Evie Osborne",
+      "Rachel Stewart",
+      "Sally Downie",
+      "Carol Jones"
+    ],
+    "correctAnswer": "Evie Osborne",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E31",
+      "Episode title: Without Judgement",
+      "Original airdate: 1999-09-08",
+      "Storyline: Pat brings new fiancée Evie Osborne, unsettling Maggie after learning of past infidelity",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: Evie Osborne",
+      "Supporting episode detail: Missing man Peter Jones and partner Robert; Pat's fiancée Evie Osborne"
+    ]
+  },
+  {
+    "id": "tv_47822",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), which teacher does Jo Parrish defend when she faces allegations of supplying drugs to a pupil and having a sexual relationship with him?",
+    "answers": [
+      "Selina Harvey",
+      "Rachel Stewart",
+      "Gabe Greenway",
+      "Zoe Hamilton"
+    ],
+    "correctAnswer": "Selina Harvey",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E32",
+      "Episode title: Smoke Without Fire",
+      "Original airdate: 1999-09-15",
+      "Storyline: Jo backs old friend Selina Harvey until former school disciplinary history emerges",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: Selina Harvey",
+      "Supporting episode detail: Tom and Pat named in corruption inquiry; teacher Selina Harvey under scrutiny"
+    ]
+  },
+  {
+    "id": "tv_47823",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), what does Inspector Falcon-Price suggest Tom do while rumours of his involvement in historic police corruption circulate?",
+    "answers": [
+      "Temporarily transfer to another station",
+      "Retire and become a lawyer",
+      "Join the armed response unit",
+      "Move into a court witness-protection scheme"
+    ],
+    "correctAnswer": "Temporarily transfer to another station",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E32",
+      "Episode title: Smoke Without Fire",
+      "Original airdate: 1999-09-15",
+      "Storyline: Falcon-Price suggests temporary transfer as police corruption rumour damages Tom",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: Temporarily transfer to another station",
+      "Supporting episode detail: Tom and Pat named in corruption inquiry; teacher Selina Harvey under scrutiny"
+    ]
+  },
+  {
+    "id": "tv_47824",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), which of Ben Stewart's children accompanies Maggie on the mushrooming outing that first exposes the danger of poisonous fungi?",
+    "answers": [
+      "Emma",
+      "Fiona",
+      "Joey",
+      "Andrew"
+    ],
+    "correctAnswer": "Emma",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E34",
+      "Episode title: Paradise Lost",
+      "Original airdate: 1999-09-29",
+      "Storyline: Emma accompanies Maggie on walk and encounters poisoned tourist",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: Emma",
+      "Supporting episode detail: Communal leader Rod Cathcart; poisonous and hallucinogenic mushrooms"
+    ]
+  },
+  {
+    "id": "tv_47825",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (1999), why does Jack Lawson initially doubt Marnie Sommers's request for protection from her released husband Harro?",
+    "answers": [
+      "Her reputation for repeated petty offences prejudices his judgement",
+      "She has never lived in Mount Thomas",
+      "He knows Harro is away overseas",
+      "Marnie has recently joined the police force"
+    ],
+    "correctAnswer": "Her reputation for repeated petty offences prejudices his judgement",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Broadcast year: 1999",
+      "Episode: S06E35",
+      "Episode title: The Game",
+      "Original airdate: 1999-10-06",
+      "Storyline: Jack unfairly dismisses Marnie's domestic-abuse claim because of prior minor offences",
+      "Character: Jack Lawson",
+      "Actor: Rupert Reid",
+      "Answer fact: Her reputation for repeated petty offences prejudices his judgement",
+      "Supporting episode detail: Marnie Sommers, husband Harro; coach Ian Waldron; stolen CD players"
+    ]
+  },
+  {
+    "id": "tv_47826",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actress won her fourth consecutive Gold Logie at the 2000 TV Week Logie Awards?",
+    "answers": [
+      "Lisa McCune",
+      "Jane Allsop",
+      "Georgie Parker",
+      "Sigrid Thornton"
+    ],
+    "correctAnswer": "Lisa McCune",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Award year: 2000",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Gold Logie — Most Popular Personality on Australian Television",
+      "Award result: Won",
+      "Award recipient: Lisa McCune",
+      "Award question: Gold Logie — Most Popular Personality on Australian Television — Won — Lisa McCune",
+      "Answer fact: Lisa McCune",
+      "Award source: https://televisionau.com/2025/08/tv-week-logie-awards-25-years-ago-15.html",
+      "Recognition scope: Blue Heelers, 1999 broadcast season"
+    ]
+  },
+  {
+    "id": "tv_47827",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Who won the 2000 Silver Logie for Most Popular Actor for his role in Blue Heelers?",
+    "answers": [
+      "Martin Sacks",
+      "John Wood",
+      "Paul Bishop",
+      "Rupert Reid"
+    ],
+    "correctAnswer": "Martin Sacks",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Award year: 2000",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Silver Logie — Most Popular Actor",
+      "Award result: Won",
+      "Award recipient: Martin Sacks",
+      "Award question: Silver Logie — Most Popular Actor — Won — Martin Sacks",
+      "Answer fact: Martin Sacks",
+      "Award source: https://televisionau.com/2025/08/tv-week-logie-awards-25-years-ago-15.html",
+      "Recognition scope: Blue Heelers, 1999 broadcast season"
+    ]
+  },
+  {
+    "id": "tv_47828",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers star received the 2000 Silver Logie for Most Popular Actress?",
+    "answers": [
+      "Lisa McCune",
+      "Jane Allsop",
+      "Tasma Walton",
+      "Julie Nihill"
+    ],
+    "correctAnswer": "Lisa McCune",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Award year: 2000",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Silver Logie — Most Popular Actress",
+      "Award result: Won",
+      "Award recipient: Lisa McCune",
+      "Award question: Silver Logie — Most Popular Actress — Won — Lisa McCune",
+      "Answer fact: Lisa McCune",
+      "Award source: https://televisionau.com/2025/08/tv-week-logie-awards-25-years-ago-15.html",
+      "Recognition scope: Blue Heelers, 1999 broadcast season"
+    ]
+  },
+  {
+    "id": "tv_47829",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "What programme won the 2000 TV Week Silver Logie for Most Popular Program?",
+    "answers": [
+      "Blue Heelers",
+      "All Saints",
+      "SeaChange",
+      "Home and Away"
+    ],
+    "correctAnswer": "Blue Heelers",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Award year: 2000",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Silver Logie — Most Popular Program",
+      "Award result: Won",
+      "Award recipient: Blue Heelers",
+      "Award question: Silver Logie — Most Popular Program — Won — Blue Heelers",
+      "Answer fact: Blue Heelers",
+      "Award source: https://televisionau.com/2025/08/tv-week-logie-awards-25-years-ago-15.html",
+      "Recognition scope: Blue Heelers, 1999 broadcast season"
+    ]
+  },
+  {
+    "id": "tv_47830",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers newcomer won the 2000 TV Week Logie for Most Popular New Female Talent?",
+    "answers": [
+      "Jane Allsop",
+      "Lisa McCune",
+      "Tasma Walton",
+      "Rachel Blakely"
+    ],
+    "correctAnswer": "Jane Allsop",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Award year: 2000",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Most Popular New Female Talent",
+      "Award result: Won",
+      "Award recipient: Jane Allsop",
+      "Award question: Most Popular New Female Talent — Won — Jane Allsop",
+      "Answer fact: Jane Allsop",
+      "Award source: https://televisionau.com/2025/08/tv-week-logie-awards-25-years-ago-15.html",
+      "Recognition scope: Blue Heelers, 1999 broadcast season"
+    ]
+  },
+  {
+    "id": "tv_47831",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor was nominated for the 2000 Gold Logie alongside winner Lisa McCune?",
+    "answers": [
+      "John Wood",
+      "Martin Sacks",
+      "Grant Bowler",
+      "Rupert Reid"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Award year: 2000",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Gold Logie — Most Popular Personality on Australian Television",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Gold Logie — Most Popular Personality on Australian Television — Nominated — John Wood",
+      "Answer fact: John Wood",
+      "Award source: https://televisionau.com/2025/08/tv-week-logie-awards-25-years-ago-15.html",
+      "Recognition scope: Blue Heelers, 1999 broadcast season"
+    ]
+  },
+  {
+    "id": "tv_47832",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor received a 2000 Most Popular Actor Silver Logie nomination but lost to co-star Martin Sacks?",
+    "answers": [
+      "John Wood",
+      "Rupert Reid",
+      "Paul Bishop",
+      "Frankie J. Holden"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 6",
+      "Award year: 2000",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Silver Logie — Most Popular Actor",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Silver Logie — Most Popular Actor — Nominated — John Wood",
+      "Answer fact: John Wood",
+      "Award source: https://televisionau.com/2025/08/tv-week-logie-awards-25-years-ago-15.html",
+      "Recognition scope: Blue Heelers, 1999 broadcast season"
+    ]
   }
 ];
-if(questions.length!==278||new Set(questions.map(q=>q.id)).size!==questions.length||
+
+if(questions.length!==302||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(32829+i)||q.category!=='TV'||q.topic!=='Blue Heelers'||
-q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
-q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length!==20||
-q.dailyEligible!==true||!q.tags.some(t=>t.startsWith('Supporting episode detail: '))))
-throw Error('Pack 549 integrity check failed');
-module.exports = questions;
+questions.some((q,i)=>((i<278)?q.id!=='tv_'+(32829+i):q.id!=='tv_'+(47809+i-278))||
+q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
+new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+!q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length!==20||
+new Set(q.tags).size!==q.tags.length||
+!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 549 validation failed');
+module.exports=questions;
