@@ -7288,14 +7288,14 @@ const questions = [
     "id": "tv_47189",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Which former New York mayor presents Sean with his essay-competition medal in Blue Bloods?",
+    "question": "Who returns to debate the growing cost of lawsuits against NYPD officers with Frank in Blue Bloods?",
     "answers": [
-      "Rudy Giuliani",
-      "Michael Bloomberg",
-      "Bill de Blasio",
-      "David Dinkins"
+      "Mayor Margaret Dutton",
+      "Abigail Baker",
+      "Regina Thomas",
+      "Kelly Peterson"
     ],
-    "correctAnswer": "David Dinkins",
+    "correctAnswer": "Kelly Peterson",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -7314,10 +7314,10 @@ const questions = [
       "Episode: S08E19",
       "Episode title: Risk Management",
       "Original airdate: 2018-04-13",
-      "Storyline: Former mayor Dinkins honours Sean",
+      "Storyline: Kelly Peterson returns to discuss police lawsuit settlements",
       "Character: Sean Reagan",
       "Actor: Andrew Terraciano",
-      "Answer fact: David Dinkins"
+      "Answer fact: Kelly Peterson"
     ]
   },
   {
@@ -7360,14 +7360,14 @@ const questions = [
     "id": "tv_47191",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "What examination does Frank encourage Jamie to sit for in Blue Bloods?",
+    "question": "Why does Jamie arrive late for a Reagan family dinner during Blue Bloods Series 8?",
     "answers": [
-      "A university entrance exam",
-      "The sergeant's examination",
-      "The FBI entrance exam",
-      "The bar examination"
+      "He is investigating a missing child",
+      "He is attending a police ceremony",
+      "He has been called to a family court hearing",
+      "He has been helping Eddie study for the sergeant's examination"
     ],
-    "correctAnswer": "The sergeant's examination",
+    "correctAnswer": "He has been helping Eddie study for the sergeant's examination",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -7386,10 +7386,10 @@ const questions = [
       "Episode: S08E20",
       "Episode title: Your Six",
       "Original airdate: 2018-04-27",
-      "Storyline: Frank wants Jamie to seek sergeant promotion",
+      "Storyline: Jamie helps Eddie prepare for promotion exam",
       "Character: Frank Reagan",
       "Actor: Tom Selleck",
-      "Answer fact: The sergeant's examination"
+      "Answer fact: He has been helping Eddie study for the sergeant's examination"
     ]
   },
   {
