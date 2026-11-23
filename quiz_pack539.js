@@ -4119,14 +4119,14 @@ const questions = [
     "id": "tv_31356",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, who dies protecting Joe during the final confrontation?",
+    "question": "What happens to Ty, the gunrunner who helps Joe Hill, during the final shoot-out in Blue Bloods?",
     "answers": [
-      "Jamie Reagan",
-      "Ty",
-      "Danny Reagan",
-      "Frank Reagan"
+      "He sacrifices his life to protect Joe Hill",
+      "He escapes abroad with the gang leader",
+      "He becomes a police commissioner",
+      "He is arrested for an unrelated theft"
     ],
-    "correctAnswer": "Ty",
+    "correctAnswer": "He sacrifices his life to protect Joe Hill",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -4145,10 +4145,10 @@ const questions = [
       "Episode: S11E16",
       "Episode title: Justifies the Means",
       "Original airdate: 2021-05-14",
-      "Storyline: Ty sacrifices life to save Joe",
+      "Storyline: Ty dies saving Joe Hill in New Hampshire gunrunner shootout",
       "Character: Joe Hill",
       "Actor: Will Hochman",
-      "Answer fact: Ty"
+      "Answer fact: He sacrifices his life to protect Joe Hill"
     ]
   },
   {
