@@ -2251,7 +2251,7 @@ const questions = [
     "id": "tv_48336",
     "category": "TV",
     "topic": "Blockbusters",
-    "question": "How were Blockbusters' five BAFTA Children's Awards appearances between 1985 and 1990 recorded?",
+    "question": "Were Blockbusters' five BAFTA nominations between 1985 and 1990 wins or nominations only?",
     "answers": [
       "As five award wins",
       "As two wins and three nominations",
