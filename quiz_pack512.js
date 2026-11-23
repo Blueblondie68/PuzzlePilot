@@ -5399,7 +5399,7 @@ const auditQuestions = [
     "question": "In Beverly Hills, 90210 (Series 5, Episode 18), approximately how much of Dylan's fortune is hidden in an offshore account controlled by Kevin?",
     "answers": [
       "$770,000",
-      "$77 million",
+      "$17 million",
       "$77,000",
       "$7.7 million"
     ],
@@ -5548,14 +5548,14 @@ const auditQuestions = [
     "id": "tv_43913",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 5, Episode 19), which music-industry woman offers Ray a potential recording deal?",
+    "question": "In Beverly Hills, 90210 (Series 5, Episode 19), what happens to Kelly's friendships as she becomes more involved with Professor Finley's group?",
     "answers": [
-      "Clare Arnold",
-      "LuAnn Pruit",
-      "Jackie Taylor",
-      "Ariel Hunter"
+      "She withdraws from friends and family",
+      "She joins the student senate",
+      "She moves to Europe with Dylan",
+      "She becomes editor of the university newspaper"
     ],
-    "correctAnswer": "Ariel Hunter",
+    "correctAnswer": "She withdraws from friends and family",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -5576,9 +5576,9 @@ const auditQuestions = [
       "Episode: S05E19",
       "Episode title: Little Monsters",
       "Question type: Storyline",
-      "Character: Ray Pruit",
-      "Actor: Jamie Walters",
-      "Answer fact: Ariel Hunter",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth",
+      "Answer fact: She withdraws from friends and family",
       "Comprehensive audit: 23 November 2026"
     ]
   },
@@ -6384,14 +6384,14 @@ const auditQuestions = [
     "id": "tv_43935",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 5, Episode 28), what does David and Clare learn from LuAnn's drunken remarks about Ray?",
+    "question": "In Beverly Hills, 90210 (Series 5, Episode 28), what worries Kelly despite finally appearing on the cover of Seventeen?",
     "answers": [
-      "That Ray is moving to London",
-      "That Ray has been unfaithful with Valerie",
-      "That Ray once worked for Dylan",
-      "That Ray has won a music award"
+      "She may be expelled from university",
+      "She fears her appearance will never recover after the fire",
+      "She must leave the modelling industry to care for a baby",
+      "She cannot pay for the magazine photograph"
     ],
-    "correctAnswer": "That Ray has been unfaithful with Valerie",
+    "correctAnswer": "She fears her appearance will never recover after the fire",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -6412,9 +6412,9 @@ const auditQuestions = [
       "Episode: S05E28",
       "Episode title: Girls on the Side",
       "Question type: Storyline",
-      "Character: David Silver",
-      "Actor: Brian Austin Green",
-      "Answer fact: That Ray has been unfaithful with Valerie",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth",
+      "Answer fact: She fears her appearance will never recover after the fire",
       "Comprehensive audit: 23 November 2026"
     ]
   },
