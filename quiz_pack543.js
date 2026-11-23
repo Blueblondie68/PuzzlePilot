@@ -5637,14 +5637,14 @@ const questions = [
     "id": "tv_47651",
     "category": "TV",
     "topic": "Boston Blue",
-    "question": "In Boston Blue, why do Jonah and Reverend Peters search for a missing witness in 'Patrol'?",
+    "question": "In Boston Blue, who helps Jonah find a witness to strengthen his account as Mae's political future hangs in the balance?",
     "answers": [
-      "To secure testimony for Mae's district attorney election",
-      "To help Lena's boyfriend receive a promotion",
-      "To solve a decades-old art theft",
-      "To recover Danny's police badge"
+      "His grandfather, Reverend Edwin Peters",
+      "His cousin, Jackie Curatola",
+      "His former teacher, Henry Reagan",
+      "His uncle, Jack Boyle"
     ],
-    "correctAnswer": "To secure testimony for Mae's district attorney election",
+    "correctAnswer": "His grandfather, Reverend Edwin Peters",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -5663,10 +5663,10 @@ const questions = [
       "Episode: S01E20",
       "Episode title: Patrol",
       "Original airdate: 2026-05-22",
-      "Storyline: Jonah and Edwin seek crucial election-related witness",
+      "Storyline: Edwin helps Jonah find witness to corroborate his testimony",
       "Character: Jonah Silver",
       "Actor: Marcus Scribner",
-      "Answer fact: To secure testimony for Mae's district attorney election"
+      "Answer fact: His grandfather, Reverend Edwin Peters"
     ]
   },
   {
@@ -5782,14 +5782,14 @@ const questions = [
     "id": "tv_47655",
     "category": "TV",
     "topic": "Boston Blue",
-    "question": "For which 2026 Movieguide category was Boston Blue episode 'In the Name of the Father, and of the Son...' also nominated?",
+    "question": "At the 2026 Movieguide Awards, which mature-audience category nominated Boston Blue's episode 'In the Name of the Father, and of the Son...'?",
     "answers": [
-      "Best Television/Streaming for Mature Audiences",
+      "Best Streaming for Mature Audiences",
       "Best Movie for Children",
       "Grace Award for Actor in Movies",
       "Best Documentary"
     ],
-    "correctAnswer": "Best Television/Streaming for Mature Audiences",
+    "correctAnswer": "Best Streaming for Mature Audiences",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -5809,10 +5809,10 @@ const questions = [
       "Episode title: In the Name of the Father, and of the Son...",
       "Original airdate: 2025-12-12",
       "Award ceremony: 2026 Movieguide Awards",
-      "Award: Best Television/Streaming for Mature Audiences",
+      "Award: Best Streaming for Mature Audiences",
       "Award result: Nominated",
-      "Award question: Best Television/Streaming for Mature Audiences",
-      "Answer fact: Best Television/Streaming for Mature Audiences"
+      "Award question: Best Streaming for Mature Audiences",
+      "Answer fact: Best Streaming for Mature Audiences"
     ]
   }
 ];
