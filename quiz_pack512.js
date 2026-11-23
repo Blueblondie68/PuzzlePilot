@@ -5662,14 +5662,14 @@ const auditQuestions = [
     "id": "tv_43916",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 5, Episode 20), what happens when Andrea and Jesse unexpectedly encounter Peter and his wife?",
+    "question": "In Beverly Hills, 90210 (Series 5, Episode 20), whom do Andrea and Jesse unexpectedly encounter while Andrea is having a secret affair?",
     "answers": [
-      "They immediately move to Mexico",
-      "Peter offers Jesse a partnership",
-      "Their extramarital entanglements become more difficult to conceal",
-      "Andrea announces a new pregnancy"
+      "Dylan and his mother",
+      "Valerie and Ray",
+      "Peter and his wife",
+      "Professor Finley and Kelly"
     ],
-    "correctAnswer": "Their extramarital entanglements become more difficult to conceal",
+    "correctAnswer": "Peter and his wife",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -5692,7 +5692,7 @@ const auditQuestions = [
       "Question type: Storyline",
       "Character: Andrea Zuckerman",
       "Actor: Gabrielle Carteris",
-      "Answer fact: Their extramarital entanglements become more difficult to conceal",
+      "Answer fact: Peter and his wife",
       "Comprehensive audit: 23 November 2026"
     ]
   },
@@ -6080,14 +6080,14 @@ const auditQuestions = [
     "id": "tv_43927",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 5, Episode 26), what does Ray do when Donna misses his concert during their stay in Portland?",
+    "question": "In Beverly Hills, 90210 (Series 5, Episode 25), who beats Brandon and Clare in the contest to represent California University on College Jeopardy!?",
     "answers": [
-      "Leaves to play in Europe",
-      "Shoves her against a wall",
-      "Breaks off their engagement",
-      "Sells his musical instruments"
+      "Kelly Taylor",
+      "Andrea Zuckerman",
+      "Donna Martin",
+      "Steve Sanders"
     ],
-    "correctAnswer": "Shoves her against a wall",
+    "correctAnswer": "Andrea Zuckerman",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -6108,9 +6108,9 @@ const auditQuestions = [
       "Episode: S05E26",
       "Episode title: A Song for My Mother",
       "Question type: Storyline",
-      "Character: Donna Martin",
-      "Actor: Tori Spelling",
-      "Answer fact: Shoves her against a wall",
+      "Character: Andrea Zuckerman",
+      "Actor: Gabrielle Carteris",
+      "Answer fact: Andrea Zuckerman",
       "Comprehensive audit: 23 November 2026"
     ]
   },
@@ -6764,14 +6764,14 @@ const auditQuestions = [
     "id": "tv_43945",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 5, Episode 32), what happens to the Walsh family home after Jim and Cindy relocate?",
+    "question": "In Beverly Hills, 90210 (Series 5, Episode 31), what does Kelly tell Alison when Alison confesses her romantic feelings?",
     "answers": [
-      "It becomes a museum",
-      "Dylan buys it as a gift",
-      "Andrea moves back into it",
-      "It is sold, leaving Brandon two weeks to move out"
+      "Kelly wants them to move to New York",
+      "Kelly is prepared to marry her",
+      "Kelly has secretly ended all friendships",
+      "Kelly does not share those romantic feelings"
     ],
-    "correctAnswer": "It is sold, leaving Brandon two weeks to move out",
+    "correctAnswer": "Kelly does not share those romantic feelings",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -6792,9 +6792,9 @@ const auditQuestions = [
       "Episode: S05E32",
       "Episode title: P.S. I Love You (2)",
       "Question type: Storyline",
-      "Character: Brandon Walsh",
-      "Actor: Jason Priestley",
-      "Answer fact: It is sold, leaving Brandon two weeks to move out",
+      "Character: Kelly Taylor",
+      "Actor: Jennie Garth",
+      "Answer fact: Kelly does not share those romantic feelings",
       "Comprehensive audit: 23 November 2026"
     ]
   },
