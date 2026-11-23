@@ -9937,7 +9937,7 @@ const questions = [
     "id": "tv_47846",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers, which unusual mode of transport puts Tess in danger during the search in 'Chop Chop'?",
+    "question": "In Blue Heelers, which unusual mode of transport does Tess take a ride in during 'Chop Chop'?",
     "answers": [
       "A hot-air balloon",
       "A police helicopter",
@@ -9963,7 +9963,7 @@ const questions = [
       "Episode: S08E09",
       "Episode title: Chop Chop",
       "Original airdate: 2001-04-18",
-      "Storyline: Tess takes hazardous hot-air balloon trip while police search for missing girl",
+      "Storyline: Tess rides in a hot-air balloon during concurrent bushwalker search and tobacco investigation",
       "Character: Tess Gallagher",
       "Actor: Caroline Craig",
       "Answer fact: A hot-air balloon",
