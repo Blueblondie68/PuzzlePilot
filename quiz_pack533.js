@@ -8871,14 +8871,14 @@ const questions = [
     "id": "tv_46883",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "What was the outcome for Blue Bloods at the 2016 Movieguide Awards with the episode Hold Outs?",
+    "question": "For which honour was the Blue Bloods Series 6 episode Hold Outs nominated at the 2016 Movieguide Awards?",
     "answers": [
-      "A win for Best Film",
-      "A technical Emmy win",
-      "The award was withdrawn",
-      "A nomination, not a win"
+      "Epiphany Prize for Most Inspiring TV Program",
+      "Grace Award for Most Inspiring Actor",
+      "Faith and Freedom Award for Movies",
+      "Best Movie for Families"
     ],
-    "correctAnswer": "A nomination, not a win",
+    "correctAnswer": "Epiphany Prize for Most Inspiring TV Program",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -8899,8 +8899,8 @@ const questions = [
       "Awarded work: Hold Outs (S06E09)",
       "Character: Blue Bloods production",
       "Actor: Blue Bloods ensemble",
-      "Award question: What was the outcome for Blue Bloods at the 2016 Movieguide Awards with the episode Hold Outs",
-      "Answer fact: A nomination, not a win"
+      "Award question: 2016 Movieguide nomination category",
+      "Answer fact: Epiphany Prize for Most Inspiring TV Program"
     ]
   },
   {
