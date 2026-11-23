@@ -4547,7 +4547,7 @@ const auditQuestions = [
       "Setting: California University",
       "Format: Written Quiz",
       "Series: 4",
-      "Broadcast year: 1993",
+      "Broadcast year: 1994",
       "Episode: S04E23",
       "Episode title: A Pig Is a Boy Is a Dog",
       "Question type: Storyline",
@@ -5843,8 +5843,8 @@ const auditQuestions = [
       "Episode: S04E31",
       "Episode title: Mr. Walsh Goes to Washington (1)",
       "Question type: Storyline",
-      "Character: David Silver",
-      "Actor: Brian Austin Green",
+      "Character: Kevin Weaver",
+      "Actor: David Hayward",
       "Answer fact: They get married",
       "Comprehensive audit: 23 November 2026"
     ]
