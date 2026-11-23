@@ -1,22 +1,22 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 549: Blue Heelers, Series 6 (1999).
-// Full coverage/awards audit, 23 November 2026: 278 originals preserved;
-// 17 meaningful storyline/character/aftermath additions and 7 verified awards questions.
-// 302 questions total across all 42 original episodes; no arbitrary episode quotas or filler.
-// Original IDs tv_32829–tv_33106; audit IDs tv_47809–tv_47832.
-// Episodic stories: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-6/1000036269/
-// Dates and episode titles: https://thetvdb.com/series/blue-heelers/seasons/official/6
-// Supporting detailed story/character references: https://en.wikipedia.org/wiki/Blue_Heelers_season_6
-// 2000 TV Week Logies verified historical review of TV Week 29 April / 6 May 2000:
-// https://televisionau.com/2025/08/tv-week-logie-awards-25-years-ago-15.html
-// 2000 five wins: Gold Lisa McCune (fourth straight); Silver Actress Lisa McCune;
-// Silver Actor Martin Sacks; Most Popular Program Blue Heelers; New Female Talent Jane Allsop.
-// 2000 John Wood nominated for Gold Logie and Most Popular Actor; NOT a winner.
-// Important arcs retained: Greg Mason murdered; Pat Doyle and Robbie drug-case investigation;
-// Maggie/PJ relationship exposed and Maggie's protective accommodation; Ben's family and rivalry;
-// Dash's exit following her mother's death; Jo Parrish's arrival and ex-boyfriend Andrew;
-// Tom's reputation cleared in parliamentary police corruption inquiry; fatal bus crash and guilt;
-// possible Ben/Maggie relationship and PJ's response at final episode.
-// New questions are only on distinct plot facts not already explicitly asked in original questions.
+// Comprehensive storyline/awards audit, 23 November 2026: 278 original questions preserved;
+// 16 distinct new story/character/consequence questions plus 7 independently checked awards questions.
+// 301 total, all 42 aired episodes covered. No padding or arbitrary per-episode question quotas.
+// Original IDs tv_32829–tv_33106; audited additions tv_47809–tv_47831.
+// Detailed episode stories: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-6/1000036269/
+// Episodes, original dates, and titles: https://thetvdb.com/series/blue-heelers/seasons/official/6
+// Main cast and continuing character stories: https://en.wikipedia.org/wiki/Blue_Heelers_season_6
+// 2000 Logies contemporary TV Week review: https://televisionau.com/2025/08/tv-week-logie-awards-25-years-ago-15.html
+// Five 2000 Logie WINS: Lisa McCune fourth consecutive Gold Logie and Most Popular Actress;
+// Martin Sacks Most Popular Actor; Blue Heelers Most Popular Program; Jane Allsop New Female Talent.
+// John Wood nominated for Gold Logie and Most Popular Actor; NOT a winner.
+// 1999 S6 arcs: Greg Mason killed; Robbie investigation; Maggie disappears and survives;
+// Pat Doyle admits past bribery, clearing Tom; Maggie and PJ's relationship exposed;
+// Maggie later returns from safe-house placement; Ben's family and developing affection;
+// Dash leaves after her mother's fatal collision; Jo Parrish arrives and has own challenges;
+// town's financial uncertainty; fatal bus crash; millennium emergency-preparedness finale.
+// Final editorial pass rejected a schoolgirl detail insufficiently tied to S06E15 and
+// corrected Ben/Rachel's established early-season story to S06E01. Original questions untouched.
 'use strict';
 const questions = [
   {
@@ -10443,10 +10443,10 @@ const questions = [
       "Format: Written Quiz",
       "Series: 6",
       "Broadcast year: 1999",
-      "Episode: S06E06",
-      "Episode title: Wishful Thinking",
-      "Original airdate: 1999-03-17",
-      "Storyline: Ben's estranged wife Rachel restricts access to their children",
+      "Episode: S06E01",
+      "Episode title: Dancing with the Devil (1)",
+      "Original airdate: 1999-02-10",
+      "Storyline: Ben's estranged wife Rachel limits contact with children as daughter Emma later plays matchmaker",
       "Character: Ben Stewart",
       "Actor: Paul Bishop",
       "Answer fact: His wife Rachel",
@@ -10494,43 +10494,6 @@ const questions = [
     "id": "tv_47814",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (1999), what troubling discovery does Jack make about one of the schoolgirls amid complaints against his colleague Greg Mason?",
-    "answers": [
-      "She has bruises suggesting abuse",
-      "She has been using a stolen police gun",
-      "She is the owner of a stolen horse",
-      "She has secretly become a schoolteacher"
-    ],
-    "correctAnswer": "She has bruises suggesting abuse",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 6",
-      "Broadcast year: 1999",
-      "Episode: S06E15",
-      "Episode title: Jack of Hearts",
-      "Original airdate: 1999-05-19",
-      "Storyline: Jack discovers abused schoolgirl while investigating school crushes and her father's finances",
-      "Character: Jack Lawson",
-      "Actor: Rupert Reid",
-      "Answer fact: She has bruises suggesting abuse",
-      "Supporting episode detail: Former teacher Greg Mason temporarily joins force"
-    ]
-  },
-  {
-    "id": "tv_47815",
-    "category": "TV",
-    "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), what future does Jack Lawson initially hope for with his girlfriend Molly before discovering her involvement with his cousin?",
     "answers": [
       "He intends to marry her",
@@ -10565,7 +10528,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47816",
+    "id": "tv_47815",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), what condition does Rosie's estranged mother Carol attach to donating a kidney to save her daughter?",
@@ -10602,7 +10565,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47817",
+    "id": "tv_47816",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), what does PJ eventually establish about Rosie's father George in the case involving his stolen car?",
@@ -10639,7 +10602,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47818",
+    "id": "tv_47817",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), what personal boundary does social worker Tim Ryan cross while Dash is deciding whether to trust him with the abused boy?",
@@ -10676,7 +10639,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47819",
+    "id": "tv_47818",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), whose urgent call is missed amid the flood of false reports intended to protect the Mount Thomas police station?",
@@ -10713,7 +10676,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47820",
+    "id": "tv_47819",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), what happens to the civil case accusing new constable Jo Parrish of a false arrest after police expose Clay Thurgood's operation?",
@@ -10750,7 +10713,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47821",
+    "id": "tv_47820",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), who accompanies Pat Doyle to Mount Thomas when he reveals he is engaged to be married again?",
@@ -10787,7 +10750,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47822",
+    "id": "tv_47821",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), which teacher does Jo Parrish defend when she faces allegations of supplying drugs to a pupil and having a sexual relationship with him?",
@@ -10824,7 +10787,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47823",
+    "id": "tv_47822",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), what does Inspector Falcon-Price suggest Tom do while rumours of his involvement in historic police corruption circulate?",
@@ -10861,7 +10824,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47824",
+    "id": "tv_47823",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), which of Ben Stewart's children accompanies Maggie on the mushrooming outing that first exposes the danger of poisonous fungi?",
@@ -10898,7 +10861,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47825",
+    "id": "tv_47824",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers (1999), why does Jack Lawson initially doubt Marnie Sommers's request for protection from her released husband Harro?",
@@ -10935,7 +10898,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47826",
+    "id": "tv_47825",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actress won her fourth consecutive Gold Logie at the 2000 TV Week Logie Awards?",
@@ -10972,7 +10935,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47827",
+    "id": "tv_47826",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who won the 2000 Silver Logie for Most Popular Actor for his role in Blue Heelers?",
@@ -11009,7 +10972,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47828",
+    "id": "tv_47827",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers star received the 2000 Silver Logie for Most Popular Actress?",
@@ -11046,7 +11009,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47829",
+    "id": "tv_47828",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "What programme won the 2000 TV Week Silver Logie for Most Popular Program?",
@@ -11083,7 +11046,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47830",
+    "id": "tv_47829",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers newcomer won the 2000 TV Week Logie for Most Popular New Female Talent?",
@@ -11120,7 +11083,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47831",
+    "id": "tv_47830",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actor was nominated for the 2000 Gold Logie alongside winner Lisa McCune?",
@@ -11157,7 +11120,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47832",
+    "id": "tv_47831",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actor received a 2000 Most Popular Actor Silver Logie nomination but lost to co-star Martin Sacks?",
@@ -11195,13 +11158,12 @@ const questions = [
   }
 ];
 
-if(questions.length!==302||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==301||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>((i<278)?q.id!=='tv_'+(32829+i):q.id!=='tv_'+(47809+i-278))||
 q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
 new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
 !q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length!==20||
-new Set(q.tags).size!==q.tags.length||
-!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+new Set(q.tags).size!==q.tags.length||!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
 q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 549 validation failed');
 module.exports=questions;
