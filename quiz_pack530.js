@@ -1,14 +1,16 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 530: Blue Bloods (2010–2024), Series 3 (2012–2013).
-// 257 questions: 69 original questions retained, 185 new story and consequence questions, 3 verified 2013 Emmy nomination questions.
-// Original IDs tv_30605–tv_30673; supplemental tv_46167–tv_46354.
-// 23-episode comprehensive storyline + family + cast and award audit 23 November 2026.
-// Important season arcs: Jackie Curatola's departure, Kate Lansing, Maria Baez introduction, Jamie and Vinny, Reagan family history, and Bitterman/Los Lordes finale.
-// Sources for episodes: https://en.wikipedia.org/wiki/Blue_Bloods_season_3
+// 256 distinct quiz questions: 69 unchanged original, 184 new story/character/consequence questions, 3 verified 2013 Emmy nomination questions.
+// Original IDs tv_30605–tv_30673; supplemental tv_46167–tv_46353.
+// All 23 episodes audited 23 November 2026; longer stories have more questions, not a fixed allocation.
+// Jackie and Kate cast transition, Maria Baez, Jamie/Vinny, Frank's family discoveries, and two-part Bitterman finale covered.
+// Semantic-overlap check removed one unnecessary question that repeated a detail stated in an original question.
+// Cameo cross-check: Tony Bennett/Carrie Underwood's duet was in Series 2; it is NOT included in this Series 3 pack.
+// Sources: https://en.wikipedia.org/wiki/Blue_Bloods_season_3
 // https://www.cbs.com/shows/blue_bloods/episodes/3/
 // https://www.tvmaze.com/shows/100/blue-bloods/episodeguide
-// 2013 Emmy nomination official source: https://www.televisionacademy.com/shows/blue-bloods
-// The 2013 nomination is a NOMINATION, not a win. Other awards already covered in Packs 528–529 are not repeated.
-// Finished series, but more seasons 4–14 still to audit before final purple tracker status.
+// Award source: https://www.televisionacademy.com/shows/blue-bloods
+// 2013 stunt-coordination Emmy nomination belongs to episode Secrets & Lies, NOT a win.
+// Series 4–14 still require audit. No purple line yet.
 'use strict';
 const questions = [
   {
@@ -8590,44 +8592,6 @@ const auditQuestions = [
     "id": "tv_46323",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 3, Episode 21), whose blood is the confused man covered in?",
-    "answers": [
-      "A missing witness's",
-      "His murdered girlfriend's",
-      "His own",
-      "A police detective's"
-    ],
-    "correctAnswer": "His murdered girlfriend's",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 3",
-      "Broadcast year: 2013",
-      "Episode: S03E21",
-      "Episode title: Devil's Breath",
-      "Storyline: whose blood is the confused man covered in",
-      "Answer fact: His murdered girlfriend's",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Plot reference: Blue Bloods season 3 episode synopses",
-      "Character: Danny",
-      "Actor: Donnie Wahlberg"
-    ]
-  },
-  {
-    "id": "tv_46324",
-    "category": "TV",
-    "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 21), what is the drug responsible for the man's memory loss called?",
     "answers": [
       "Angel Dust",
@@ -8665,7 +8629,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46325",
+    "id": "tv_46324",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 21), which off-duty policeman prevents an armed robbery after a retirement celebration?",
@@ -8703,7 +8667,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46326",
+    "id": "tv_46325",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 21), why does Jamie risk disciplinary trouble after the robbery is stopped?",
@@ -8741,7 +8705,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46327",
+    "id": "tv_46326",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 21), what penalty does Frank ultimately give Grasso instead of dismissal?",
@@ -8779,7 +8743,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46328",
+    "id": "tv_46327",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 21), what school policy does Nicky protest?",
@@ -8819,7 +8783,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46329",
+    "id": "tv_46328",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 21), what risk does Nicky face for organising the school protest?",
@@ -8857,7 +8821,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46330",
+    "id": "tv_46329",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 22), what is the name of the housing project where Jamie and Vinny respond to a call?",
@@ -8897,7 +8861,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46331",
+    "id": "tv_46330",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 22), what personal connection does Vinny have with the dangerous housing project?",
@@ -8935,7 +8899,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46332",
+    "id": "tv_46331",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 22), what gang dominates the Bitterman housing project?",
@@ -8975,7 +8939,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46333",
+    "id": "tv_46332",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 22), who is the gang's leader terrorising the housing residents?",
@@ -9013,7 +8977,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46334",
+    "id": "tv_46333",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 22), what double tragedy is witnessed by Jamie and Vinny in the housing project?",
@@ -9053,7 +9017,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46335",
+    "id": "tv_46334",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 22), why does Danny feel personally responsible for the young woman's death?",
@@ -9091,7 +9055,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46336",
+    "id": "tv_46335",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 22), how long ago had Danny made the promise to the two sisters?",
@@ -9129,7 +9093,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46337",
+    "id": "tv_46336",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 22), what deadly attack ends Vinny's police service?",
@@ -9169,7 +9133,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46338",
+    "id": "tv_46337",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 22), what practice by prosecutors makes Frank angry about the housing project's cases?",
@@ -9209,7 +9173,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46339",
+    "id": "tv_46338",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), which city official is critically wounded during a town hall meeting after Vinny's death?",
@@ -9249,7 +9213,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46340",
+    "id": "tv_46339",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), where is the mayor shot while addressing concerned residents?",
@@ -9287,7 +9251,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46341",
+    "id": "tv_46340",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), who takes over as acting mayor during Poole's recovery?",
@@ -9325,7 +9289,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46342",
+    "id": "tv_46341",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), what threat does acting mayor Newhouse make to Frank?",
@@ -9363,7 +9327,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46343",
+    "id": "tv_46342",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), what is the name of the vulnerable resident who shoots Mayor Poole?",
@@ -9403,7 +9367,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46344",
+    "id": "tv_46343",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), what does Jamie object to about the interrogation of Hector?",
@@ -9441,7 +9405,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46345",
+    "id": "tv_46344",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), what deception led Hector to fire the weapon at the mayor?",
@@ -9479,7 +9443,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46346",
+    "id": "tv_46345",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), who helps Jamie understand Hector's thinking and obtain the truth?",
@@ -9517,7 +9481,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46347",
+    "id": "tv_46346",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), what is the name of gang leader Santana's girlfriend?",
@@ -9555,7 +9519,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46348",
+    "id": "tv_46347",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), why does Santana order an attack on Nona while she is in custody?",
@@ -9593,7 +9557,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46349",
+    "id": "tv_46348",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), what does Danny persuade Nona to do after an attempted attack on her fails?",
@@ -9631,7 +9595,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46350",
+    "id": "tv_46349",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), approximately how many Los Lordes gang members are arrested after the major raids?",
@@ -9671,7 +9635,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46351",
+    "id": "tv_46350",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (Series 3, Episode 23), what family plan ends the traumatic third series on a hopeful note?",
@@ -9713,7 +9677,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46352",
+    "id": "tv_46351",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "For Blue Bloods (2010–2024), which episode brought Blue Bloods its 2013 Emmy nomination for stunt coordination?",
@@ -9750,7 +9714,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46353",
+    "id": "tv_46352",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "For Blue Bloods (2010–2024), what Emmy category included the Blue Bloods episode Secrets and Lies among the 2013 nominees?",
@@ -9787,7 +9751,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46354",
+    "id": "tv_46353",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "For Blue Bloods (2010–2024), which stunt coordinator was recognised with Blue Bloods' 2013 Emmy nomination?",
@@ -9826,8 +9790,8 @@ const auditQuestions = [
 ];
 questions.push(...auditQuestions);
 
-if(questions.length!==257||new Set(questions.map(q=>q.id)).size!==257||
-new Set(questions.map(q=>q.question.toLowerCase())).size!==257||
+if(questions.length!==256||new Set(questions.map(q=>q.id)).size!==256||
+new Set(questions.map(q=>q.question.toLowerCase())).size!==256||
 questions.some((q,i)=>q.id!==(i<69?'tv_'+(30605+i):'tv_'+(46167+i-69))||q.category!=='TV'||q.topic!=='Blue Bloods'||
 !q.tags.includes('Programme: Blue Bloods (2010–2024)')||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
