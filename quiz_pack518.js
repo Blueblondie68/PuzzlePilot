@@ -2909,14 +2909,14 @@ const auditQuestions = [
     "id": "tv_44669",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 1, Episode 1), which West Beverly teacher is also an old friend of Kelly Taylor?",
+    "question": "In 90210 (2008 series, Series 1, Episode 1), what student-media activity does Navid oversee at West Beverly?",
     "answers": [
-      "Donna Martin",
-      "Andrea Zuckerman",
-      "Cindy Walsh",
-      "Brenda Walsh"
+      "A student fashion catalogue",
+      "The school's daily television news",
+      "A theatre newsletter",
+      "A radio interview programme"
     ],
-    "correctAnswer": "Brenda Walsh",
+    "correctAnswer": "The school's daily television news",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -2933,15 +2933,13 @@ const auditQuestions = [
       "Broadcast year: 2008",
       "Episode: S01E01",
       "Episode title: We're Not in Kansas Anymore",
-      "Storyline: which West Beverly teacher is also an old friend of Kelly Taylor",
-      "Answer fact: Brenda Walsh",
+      "Storyline: Navid produces the student television news",
+      "Answer fact: The school's daily television news",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Reference: TV Guide Season 1",
-      "Character: Brenda",
-      "Character: Kelly",
-      "Actor: Shannen Doherty",
-      "Actor: Jennie Garth"
+      "Character: Navid",
+      "Actor: Michael Steger"
     ]
   },
   {
@@ -8428,8 +8426,10 @@ const auditQuestions = [
       "Answer fact: Favorite New TV Drama",
       "Comprehensive Audit: 23 November 2026",
       "Reference: 90210 awards and accolades",
-      "Character: AnnaLynne McCord",
-      "Actor: Naomi"
+      "Awarding body: People's Choice Awards",
+      "Award result: Nominated",
+      "Award recipients: 90210",
+      "Award year: 2009"
     ]
   },
   {
@@ -8464,8 +8464,10 @@ const auditQuestions = [
       "Answer fact: Choice TV Drama",
       "Comprehensive Audit: 23 November 2026",
       "Reference: 90210 awards and accolades",
-      "Character: AnnaLynne McCord",
-      "Actor: Naomi"
+      "Awarding body: Teen Choice Awards",
+      "Award result: Nominated",
+      "Award recipients: 90210",
+      "Award year: 2009"
     ]
   },
   {
@@ -8500,8 +8502,10 @@ const auditQuestions = [
       "Answer fact: Top Television Series",
       "Comprehensive Audit: 23 November 2026",
       "Reference: 90210 awards and accolades",
-      "Character: Silver",
-      "Actor: Jessica Stroup"
+      "Awarding body: ASCAP",
+      "Award result: Won",
+      "Award recipients: 90210",
+      "Award year: 2009"
     ]
   },
   {
@@ -8536,8 +8540,10 @@ const auditQuestions = [
       "Answer fact: Liz Phair and Marc Dauer",
       "Comprehensive Audit: 23 November 2026",
       "Reference: 90210 awards and accolades",
-      "Character: Silver",
-      "Actor: Jessica Stroup"
+      "Awarding body: ASCAP",
+      "Award result: Won",
+      "Award recipients: Liz Phair and Marc Dauer",
+      "Award year: 2009"
     ]
   }
 ];
@@ -8548,7 +8554,7 @@ new Set(questions.map(q=>q.question.toLowerCase())).size!==223||
 questions.some((q,i)=>q.id!==(i<72?'tv_'+(29867+i):'tv_'+(44664+i-72))||q.category!=='TV'||q.topic!=='90210'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<18||
-!q.tags.some(t=>t.startsWith('Actor: '))||!q.tags.some(t=>t.startsWith('Character: '))||
+(!q.tags.includes('Question type: Awards')&&(!q.tags.some(t=>t.startsWith('Actor: '))||!q.tags.some(t=>t.startsWith('Character: '))))||
 !q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||new Set(q.tags).size!==q.tags.length||
 q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 518 validation failed');
 module.exports=questions;
