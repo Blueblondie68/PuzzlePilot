@@ -1,23 +1,24 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 548: Blue Heelers, Series 5 (1998).
-// Full storyline and awards audit 23 November 2026: 212 existing questions preserved;
-// 26 original story/character/outcome questions, 10 verified award/nomination questions.
-// 248 questions total across 41 aired episodes; no artificial per-episode quota or filler.
-// Original IDs tv_32617–tv_32828; new IDs tv_47774–tv_47809.
-// Plot and narrative specifics: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-5/1000036269/
-// Detailed plots and story continuity: https://thetvdb.com/series/blue-heelers/allseasons/official
-// Air dates and title variants: https://www.tvmaze.com/seasons/21108/blue-heelers-season-5/episodeguide
-// 1999 TV Week Logies wins/nominees: https://televisionau.com/2024/08/tv-week-logie-awards-25-years-ago-14.html
-// 1999 People's Choice nominations: https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers
-// Four 1999 Logie wins: Lisa McCune Gold and Silver Actress, Martin Sacks Silver Actor,
-// Blue Heelers Most Popular Program. Nominations: John Wood Gold and Actor, Paul Bishop newcomer.
-// 1999 Australian People's Choice nominations for Lisa McCune, Blue Heelers, John Wood and Martin Sacks.
-// Do NOT award Blue Heelers 1999 'Most Outstanding Drama': contemporary winner list names SeaChange,
-// conflicting with a retrospective awards table. No unsupported awards included.
-// Key continuing arcs: Dash hostage during birthday trick; Robbie heroin and Maggie's danger;
-// Maggie/PJ secret romance; Sally/Tom friction; Ben's transfer and rivalry; Dash cancer treatment;
-// Zoe/Nick marry and move; Adam's car and missing evidence; Adam fired after 1998 two-part finale.
-// S05E06 date is often mistyped as May 25 in tertiary guides; original editor notes 25 March.
-// S05E35 title variant 'Bird of Prey'/'Birds of Prey' in guides; original retained.
+// Narrative and awards audit 23 November 2026: 212 original questions retained,
+// 25 substantive new storyline/character/outcome questions, 10 checked awards questions.
+// 247 questions across all 41 episodes; no fixed question quotas and no padding.
+// Original IDs tv_32617–tv_32828; audit IDs tv_47774–tv_47808.
+// Episodic plots: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-5/1000036269/
+// Supplementary full guide: https://thetvdb.com/series/blue-heelers/allseasons/official
+// Air dates: https://www.tvmaze.com/seasons/21108/blue-heelers-season-5/episodeguide
+// 1999 TV Week Logie winners and nominees: https://televisionau.com/2024/08/tv-week-logie-awards-25-years-ago-14.html
+// 1999 Australian People's Choice nominations: https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers
+// Four verified Logie wins: Lisa McCune Gold and Silver Actress; Martin Sacks Silver Actor;
+// Blue Heelers Most Popular Program. Three Logie nomination questions: John Wood (Gold and
+// Most Popular Actor) and Paul Bishop (New Male Talent). Three People's Choice nomination questions.
+// The 1999 Most Outstanding Drama Series winner is disputed by an inconsistent awards list;
+// contemporary 1999 Logie reporting identifies SeaChange, so no Blue Heelers win claimed.
+// Main arcs: Elly and school bus rescue, Maggie/PJ secret romance, Sally and Tom,
+// Ben Stewart's Organised Crime inquiry and reassignment, Dash cancer diagnosis/treatment,
+// Nick and Zoe's wedding, Robbie's drug crisis, Adam's police misconduct and departure.
+// Original date issue S05E06 'Keeping Mum' correctly noted 25 March in archival aired order;
+// some listing services mistakenly give May 25. S05E35 title Bird/Birds of Prey varies.
+// Final editorial pass retired a redundant proposed finale question; original 212 untouched.
 'use strict';
 const questions = [
   {
@@ -7705,8 +7706,8 @@ const questions = [
       "Episode title: Secrets (1)",
       "Original airdate: 1998-02-24",
       "Storyline: Elly asks for protection when ex-husband Danny Hobson is released after abuse conviction",
-      "Character: Elly Winslow",
-      "Actor: Elly Winslow (guest role)",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
       "Answer fact: Her former husband has been released from prison for abusing their son"
     ]
   },
@@ -7957,8 +7958,8 @@ const questions = [
       "Episode title: The Whistle Blower",
       "Original airdate: 1998-04-08",
       "Storyline: April disappears after witness information implicates Rossitano and Murphy brothers",
-      "Character: Deborah Hill",
-      "Actor: Deborah Hill (guest role)",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
       "Answer fact: She goes missing after apparently being forced into a car"
     ]
   },
@@ -8065,8 +8066,8 @@ const questions = [
       "Episode title: Waste of Space",
       "Original airdate: 1998-05-20",
       "Storyline: Leila Clegg revealed as thief in Eventide home after false suspicions",
-      "Character: Leila Clegg",
-      "Actor: Leila Clegg (recurring character)",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
       "Answer fact: Resident Leila Clegg"
     ]
   },
@@ -8101,8 +8102,8 @@ const questions = [
       "Episode title: Waste of Space",
       "Original airdate: 1998-05-20",
       "Storyline: Leila stages thefts to drive residents away so fiancé Merv can move in",
-      "Character: Leila Clegg",
-      "Actor: Leila Clegg (recurring character)",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
       "Answer fact: To make room for her fiancé Merv to live there"
     ]
   },
@@ -8209,8 +8210,8 @@ const questions = [
       "Episode title: Mr. Lucky",
       "Original airdate: 1998-06-03",
       "Storyline: Gulia nears eighteenth birthday and release of trust fund",
-      "Character: Enzo Fiorelli",
-      "Actor: Enzo Fiorelli (guest character)",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
       "Answer fact: She is about to gain access to a trust fund when she turns eighteen"
     ]
   },
@@ -8245,8 +8246,8 @@ const questions = [
       "Episode title: Mr. Lucky",
       "Original airdate: 1998-06-03",
       "Storyline: Sally legally represents notorious fraudster Enzo despite Tom's objections",
-      "Character: Sally Downie",
-      "Actor: Sally Downie (recurring character)",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
       "Answer fact: Conman Enzo Fiorelli"
     ]
   },
@@ -8578,42 +8579,6 @@ const questions = [
     "id": "tv_47799",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers, what separate matter brings solicitor Sally Downie back into conflict with Tom during 'Rotten Apple (2)'?",
-    "answers": [
-      "The continuing investigation involving Councillor Healy",
-      "The reopening of her late father's murder case",
-      "A dispute over a stolen art museum ticket",
-      "A child custody agreement with Nick"
-    ],
-    "correctAnswer": "The continuing investigation involving Councillor Healy",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 5",
-      "Broadcast year: 1998",
-      "Episode: S05E41",
-      "Episode title: Rotten Apple (2)",
-      "Original airdate: 1998-11-25",
-      "Storyline: Sally and Tom cross paths again over investigation of Councillor Doug Healy",
-      "Character: Tom Croydon",
-      "Actor: John Wood",
-      "Answer fact: The continuing investigation involving Councillor Healy"
-    ]
-  },
-  {
-    "id": "tv_47800",
-    "category": "TV",
-    "topic": "Blue Heelers",
     "question": "Which Blue Heelers star won her third consecutive Gold Logie at the 1999 TV Week Logie Awards?",
     "answers": [
       "Lisa McCune",
@@ -8648,7 +8613,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47801",
+    "id": "tv_47800",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actor won the 1999 Silver Logie for Most Popular Actor?",
@@ -8685,7 +8650,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47802",
+    "id": "tv_47801",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Who won the 1999 Silver Logie for Most Popular Actress for her performance in Blue Heelers?",
@@ -8722,7 +8687,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47803",
+    "id": "tv_47802",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Australian drama won the 1999 Silver Logie for Most Popular Program?",
@@ -8759,7 +8724,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47804",
+    "id": "tv_47803",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actor was nominated for the 1999 Gold Logie alongside winner Lisa McCune?",
@@ -8796,7 +8761,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47805",
+    "id": "tv_47804",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actor was nominated for Most Popular Actor at the 1999 Logies, although Martin Sacks won?",
@@ -8833,7 +8798,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47806",
+    "id": "tv_47805",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which newcomer to Blue Heelers earned a 1999 TV Week Logie nomination for Most Popular New Male Talent?",
@@ -8870,7 +8835,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47807",
+    "id": "tv_47806",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "At the 1999 Australian People's Choice Awards, which actress was nominated for Favourite TV Star for Blue Heelers?",
@@ -8907,7 +8872,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47808",
+    "id": "tv_47807",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which police drama received a 1999 Australian People's Choice nomination for Favourite TV Drama or Serial?",
@@ -8944,7 +8909,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47809",
+    "id": "tv_47808",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which pair of Blue Heelers actors were both nominated at the 1999 People's Choice Awards for Favourite Actor in a Drama or Serial?",
@@ -8982,13 +8947,12 @@ const questions = [
   }
 ];
 
-if(questions.length!==248||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==247||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>((i<212)?q.id!=='tv_'+(32617+i):q.id!=='tv_'+(47774+i-212))||
 q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
-new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+new Set(q.answers.map(x=>x.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
 !q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length<19||
-new Set(q.tags).size!==q.tags.length||
-!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+new Set(q.tags).size!==q.tags.length||!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
 q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 548 validation failed');
 module.exports=questions;
