@@ -1,15 +1,22 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 553: Blue Heelers, Series 10 (2003).
-// 233 editorially selected storyline questions across all 42 broadcast episodes.
-// Question IDs tv_33929–tv_34161; Pack 552 ends at tv_33928.
-// Episode dates and order: https://thetvdb.com/series/blue-heelers/seasons/official/10
-// Episode plot reference: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-10/1000036269/
-// Key storylines and cast cross-check: https://en.wikipedia.org/wiki/Blue_Heelers_season_10
-// S10E08 Bumps in the Night precedes S10E09 Trust Accounts; both aired 2 April 2003;
-// some guides reverse the titles. TheTVDB's broadcast order is used.
-// TheTVDB titles used; alternative names for S10E35 and S10E42 are included in episode tags.
-// Tess departs after pre-eclampsia in episode 31; Susie Raynor joins in episode 33;
-// Ben shoots Brad to save Susie in the two-part series finale.
-// No fixed episode quota: draft questions were removed for being vague, repetitive or unhelpful.
+// Storyline and awards audit, 23 November 2026: 233 original questions preserved;
+// 21 new substantiated plot, relationship and outcome questions and 3 verified awards questions.
+// 257 questions across all 42 episodes. No artificial caps or padding.
+// Original IDs tv_33929–tv_34161; new audit IDs tv_47875–tv_47898.
+// Episode-by-episode detailed synopses: https://www.moviefone.com/tv-shows/blue-heelers/oAFYTuhcvAshMMYdNTN6N7/seasons/10/
+// Original episode and broadcast titles: https://thetvdb.com/series/blue-heelers/seasons/official/10
+// Alternative titles in some databases: https://en.wikipedia.org/wiki/Blue_Heelers_season_10
+// 2004 TV Week Logie awards: https://televisionau.com/2014/04/tv-week-logie-awards-10-years-ago-3.html
+// 2004 Logie nominees: https://en.wikipedia.org/wiki/Logie_Awards_of_2004
+// Three verified nominations and NO wins for Blue Heelers in 2004:
+// John Wood Gold Logie; Blue Heelers Most Popular Australian Program and Australian Drama Series.
+// 2004 winners Rove McManus Gold; McLeod's Daughters both programme and drama awards.
+// 2003 AFI television nomination list does not list Blue Heelers, so no 2003 AFI result invented:
+// https://australiancinema.info/afi/afi2003.html
+// Core narratives: Ben's alcoholism and relapse, Tess and Jonesy, Sam Baxter, PJ and Jo,
+// fraud via Marco Fiorelli's father; Jonesy stabbed saving Tess; Tess leaves after pre-eclampsia;
+// Susie joins; Ben/Maddy conflict and Marissa, Susie/Brad's marriage and tragic finale.
+// Alternative episode title tags S10E35 and S10E42 retained exactly as originals.
 'use strict';
 const questions = [
   {
@@ -8644,13 +8651,907 @@ const questions = [
       "Episode context: Brad takes Susie's police gun; Ben fatally shoots him to protect Susie; Ben promotion and wedding",
       "Alternative catalogue title: For Better or Worse"
     ]
+  },
+  {
+    "id": "tv_47875",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what is the name of the family dog accused of killing livestock in 'In the Dog House'?",
+    "answers": [
+      "Sabu",
+      "Puddles",
+      "Matilda",
+      "Lulubelle"
+    ],
+    "correctAnswer": "Sabu",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E03",
+      "Episode title: In the Dog House",
+      "Original airdate: 2003-02-26",
+      "Storyline: Tom's stepson's dog Sabu suspected of killing farm livestock and impounded",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: Sabu",
+      "Episode context: Devil Dog suspected of killing sheep; Tom's stepson's dog in danger; Jonesy and Tess investigate"
+    ]
+  },
+  {
+    "id": "tv_47876",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what type of puppy does Jonesy bring Tess after they argue over the dog in 'In the Dog House'?",
+    "answers": [
+      "A border collie",
+      "A Dalmatian",
+      "A dachshund",
+      "A greyhound"
+    ],
+    "correctAnswer": "A border collie",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E03",
+      "Episode title: In the Dog House",
+      "Original airdate: 2003-02-26",
+      "Storyline: Jonesy gives Tess a border collie puppy, later called Puddles, after dog investigation",
+      "Character: Evan 'Jonesy' Jones",
+      "Actor: Ditch Davey",
+      "Answer fact: A border collie",
+      "Episode context: Devil Dog suspected of killing sheep; Tom's stepson's dog in danger; Jonesy and Tess investigate"
+    ]
+  },
+  {
+    "id": "tv_47877",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what decision does Tess's husband Josh Carmichael make when he is offered work in Melbourne in 'Excuses, Excuses'?",
+    "answers": [
+      "He accepts the job in Melbourne",
+      "He resigns from medicine",
+      "He asks Tess to move into the police station",
+      "He decides to train as a police officer"
+    ],
+    "correctAnswer": "He accepts the job in Melbourne",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E04",
+      "Episode title: Excuses, Excuses",
+      "Original airdate: 2003-03-05",
+      "Storyline: Josh accepts Melbourne hospital position, further straining short marriage with Tess",
+      "Character: Tess Gallagher",
+      "Actor: Caroline Craig",
+      "Answer fact: He accepts the job in Melbourne",
+      "Episode context: Inspector's strict traffic policy catches his own wife; Compo hits Tom's car"
+    ]
+  },
+  {
+    "id": "tv_47878",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who offers Sam Baxter a place to stay after Jo's netball-team difficulties in 'Fair Play'?",
+    "answers": [
+      "Grace Curtis and Tom Croydon",
+      "PJ Hasham and Ben Stewart",
+      "Tess Gallagher and Jonesy",
+      "Inspector Falcon-Price and his wife"
+    ],
+    "correctAnswer": "Grace Curtis and Tom Croydon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E06",
+      "Episode title: Fair Play",
+      "Original airdate: 2003-03-19",
+      "Storyline: Grace offers Sam a home with herself and Tom after netball dispute",
+      "Character: Sam Baxter",
+      "Actor: John Wood",
+      "Answer fact: Grace Curtis and Tom Croydon",
+      "Episode context: Netball rivals Jo and Grace; Sam returns to team and trouble"
+    ]
+  },
+  {
+    "id": "tv_47879",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what happens to the girl Sam Baxter trips during a netball match in 'Fair Play'?",
+    "answers": [
+      "She suffers a broken nose",
+      "She fractures her wrist",
+      "She is suspended for a month",
+      "She is taken hostage"
+    ],
+    "correctAnswer": "She suffers a broken nose",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E06",
+      "Episode title: Fair Play",
+      "Original airdate: 2003-03-19",
+      "Storyline: Sam trips rival player, breaking girl's nose and leading to her exclusion from netball team",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: She suffers a broken nose",
+      "Episode context: Netball rivals Jo and Grace; Sam returns to team and trouble"
+    ]
+  },
+  {
+    "id": "tv_47880",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who is the teenage intruder found at the dead midwife's home during 'The Sum of the Parts'?",
+    "answers": [
+      "The son of the woman buried in the old grave",
+      "The missing woman's original boyfriend",
+      "The midwife's former police partner",
+      "The landowner's long-lost brother"
+    ],
+    "correctAnswer": "The son of the woman buried in the old grave",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E07",
+      "Episode title: The Sum of the Parts",
+      "Original airdate: 2003-03-26",
+      "Storyline: Boy found trespassing is son of woman who died in childbirth years earlier",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: The son of the woman buried in the old grave",
+      "Episode context: Human remains linked to sixteen-year-old mystery and second death; Jo and PJ tensions"
+    ]
+  },
+  {
+    "id": "tv_47881",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what actually happened to the woman whose remains are found in a 16-year-old grave in 'The Sum of the Parts'?",
+    "answers": [
+      "She died giving birth and was secretly buried by a midwife and her boyfriend",
+      "She was murdered by the teenage boy who found her",
+      "She died in a river accident and was wrongly identified",
+      "She was killed by the police during a robbery"
+    ],
+    "correctAnswer": "She died giving birth and was secretly buried by a midwife and her boyfriend",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E07",
+      "Episode title: The Sum of the Parts",
+      "Original airdate: 2003-03-26",
+      "Storyline: Grave mystery resolves when maternity death, midwife's concealment, and surviving son linked",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: She died giving birth and was secretly buried by a midwife and her boyfriend",
+      "Episode context: Human remains linked to sixteen-year-old mystery and second death; Jo and PJ tensions"
+    ]
+  },
+  {
+    "id": "tv_47882",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what dangerous experience have hospital patients reported while drugs are disappearing in 'Trust Accounts'?",
+    "answers": [
+      "Being conscious during operations",
+      "Receiving another patient's medical records",
+      "Being operated on by an unlicensed dentist",
+      "Waking to find their personal jewellery stolen"
+    ],
+    "correctAnswer": "Being conscious during operations",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E09",
+      "Episode title: Trust Accounts",
+      "Original airdate: 2003-04-02",
+      "Storyline: Patients report waking or being aware during surgery while hospital drugs stolen",
+      "Character: Evan 'Jonesy' Jones",
+      "Actor: Ditch Davey",
+      "Answer fact: Being conscious during operations",
+      "Episode context: Tess suffers seafood allergy from Jonesy's dinner; medication disappearing at hospital"
+    ]
+  },
+  {
+    "id": "tv_47883",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what surprises Jonesy about Dr Josh Carmichael when Tess is treated at Mount Thomas hospital in 'Trust Accounts'?",
+    "answers": [
+      "He is still working there despite supposedly taking a Melbourne job",
+      "He has been appointed police sergeant",
+      "He has secretly bought the hospital",
+      "He does not recognise his wife Tess"
+    ],
+    "correctAnswer": "He is still working there despite supposedly taking a Melbourne job",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E09",
+      "Episode title: Trust Accounts",
+      "Original airdate: 2003-04-02",
+      "Storyline: Jonesy finds Josh on local hospital duty despite supposed Melbourne move",
+      "Character: Evan 'Jonesy' Jones",
+      "Actor: Ditch Davey",
+      "Answer fact: He is still working there despite supposedly taking a Melbourne job",
+      "Episode context: Tess suffers seafood allergy from Jonesy's dinner; medication disappearing at hospital"
+    ]
+  },
+  {
+    "id": "tv_47884",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what event causes Ben Stewart to relapse into drinking despite his recovery effort in 'Out of Control'?",
+    "answers": [
+      "One of the paint-sniffing boys he tries to help dies",
+      "He fails a driving test",
+      "His basketball team loses a match",
+      "The police station closes for repairs"
+    ],
+    "correctAnswer": "One of the paint-sniffing boys he tries to help dies",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E10",
+      "Episode title: Out of Control",
+      "Original airdate: 2003-04-09",
+      "Storyline: Ben turns to drink when one of two inhalant-abusing twelve-year-olds dies",
+      "Character: Ben Stewart",
+      "Actor: Paul Bishop",
+      "Answer fact: One of the paint-sniffing boys he tries to help dies",
+      "Episode context: Two children inhale paint; Ben faces his drinking problems; Tom tries to help Sam"
+    ]
+  },
+  {
+    "id": "tv_47885",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what evidence makes PJ question the supposed suicide of the older father in 'Where There's a Will'?",
+    "answers": [
+      "Bruising on his face and an unregistered rifle",
+      "A forged passport and stolen jewellery",
+      "A videotape of a bank robbery",
+      "A coded note left under his pillow"
+    ],
+    "correctAnswer": "Bruising on his face and an unregistered rifle",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E13",
+      "Episode title: Where There's a Will",
+      "Original airdate: 2003-05-07",
+      "Storyline: Autopsy evidence of facial bruises and unregistered gun lead PJ to investigate homicide",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Bruising on his face and an unregistered rifle",
+      "Episode context: Shot father with suspected brain cancer; family inheritance and Tess's pregnancy"
+    ]
+  },
+  {
+    "id": "tv_47886",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why had the American woman whose body is found by the railway line travelled to Australia in 'Prince Charming'?",
+    "answers": [
+      "To meet a man she knew through an internet chat room",
+      "To accept a job with Victoria Police",
+      "To attend a family wedding at the Imperial",
+      "To study horse breeding in Mount Thomas"
+    ],
+    "correctAnswer": "To meet a man she knew through an internet chat room",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E18",
+      "Episode title: Prince Charming",
+      "Original airdate: 2003-06-11",
+      "Storyline: American murder victim travelled to meet online romantic partner met in chat room",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: To meet a man she knew through an internet chat room",
+      "Episode context: Body beside railway; internet chatting and overseas woman; Jo investigates independently and moves out"
+    ]
+  },
+  {
+    "id": "tv_47887",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does Rory, a young man experiencing schizophrenia, believe about Tess Gallagher in 'Playing With Fire'?",
+    "answers": [
+      "That she is an angel",
+      "That she is his estranged mother",
+      "That she owns the art gallery",
+      "That she is an undercover journalist"
+    ],
+    "correctAnswer": "That she is an angel",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E20",
+      "Episode title: Playing With Fire",
+      "Original airdate: 2003-07-02",
+      "Storyline: Rory suffering severe delusions sees Tess as an angel amid dangerous fires",
+      "Character: Tess Gallagher",
+      "Actor: Caroline Craig",
+      "Answer fact: That she is an angel",
+      "Episode context: Disturbed artist needs hospital treatment and is dangerous; Jonesy helps Tess prepare for baby"
+    ]
+  },
+  {
+    "id": "tv_47888",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what new risk emerges as police respond to Rory and his father's dispute in 'Playing With Fire'?",
+    "answers": [
+      "A series of suspicious fires",
+      "A stolen school bus",
+      "A bomb planted under the police station",
+      "A contaminated water supply"
+    ],
+    "correctAnswer": "A series of suspicious fires",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E20",
+      "Episode title: Playing With Fire",
+      "Original airdate: 2003-07-02",
+      "Storyline: Multiple unexplained fires escalate a dangerous domestic/mental-health crisis",
+      "Character: Tess Gallagher",
+      "Actor: Caroline Craig",
+      "Answer fact: A series of suspicious fires",
+      "Episode context: Disturbed artist needs hospital treatment and is dangerous; Jonesy helps Tess prepare for baby"
+    ]
+  },
+  {
+    "id": "tv_47889",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what happens when Jonesy steps between Tess and a knife-wielding schoolboy in 'A Knife for a Knife'?",
+    "answers": [
+      "Jonesy is stabbed in the torso",
+      "Tess arrests both boys unharmed",
+      "Jonesy loses his police firearm",
+      "The schoolboy escapes without anyone hurt"
+    ],
+    "correctAnswer": "Jonesy is stabbed in the torso",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E22",
+      "Episode title: A Knife for a Knife",
+      "Original airdate: 2003-07-16",
+      "Storyline: Jonesy physically protects Tess in adolescent knife standoff and is stabbed",
+      "Character: Evan 'Jonesy' Jones",
+      "Actor: Ditch Davey",
+      "Answer fact: Jonesy is stabbed in the torso",
+      "Episode context: Daniel discovers stabbed schoolboy; teenage knife carrying and missing weapon"
+    ]
+  },
+  {
+    "id": "tv_47890",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what alleged financial wrongdoing involving Marco Fiorelli's father lies behind the violence in 'Thicker than Water'?",
+    "answers": [
+      "Raising $15 million against assets that do not exist",
+      "Counterfeiting thousands of police badges",
+      "Stealing the town's Christmas charity fund",
+      "Embezzling hospital organ-donor payments"
+    ],
+    "correctAnswer": "Raising $15 million against assets that do not exist",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E24",
+      "Episode title: Thicker than Water",
+      "Original airdate: 2003-07-23",
+      "Storyline: Marco's father sought by fraud squad after raising $15 million secured by fictitious assets",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Raising $15 million against assets that do not exist",
+      "Episode context: Flatmate Marco involved as house burgled; valuable goods, violence and kidnapping"
+    ]
+  },
+  {
+    "id": "tv_47891",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why do criminals kidnap Jo Parrish after invading the house she shares in 'Thicker than Water'?",
+    "answers": [
+      "They think she can lead them to Marco Fiorelli's fraudulent father",
+      "They believe she stole drugs from the hospital",
+      "They need her to sign away a family farm",
+      "They want to ransom Inspector Falcon-Price"
+    ],
+    "correctAnswer": "They think she can lead them to Marco Fiorelli's fraudulent father",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E24",
+      "Episode title: Thicker than Water",
+      "Original airdate: 2003-07-23",
+      "Storyline: Fraudster's pursuers abduct Jo believing she can reach Marco's father",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: They think she can lead them to Marco Fiorelli's fraudulent father",
+      "Episode context: Flatmate Marco involved as house burgled; valuable goods, violence and kidnapping"
+    ]
+  },
+  {
+    "id": "tv_47892",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does the threat to Jo's life during 'Thicker than Water' make PJ realise?",
+    "answers": [
+      "How deeply he loves Jo",
+      "He wants to leave the police immediately",
+      "He should marry Dr Tatiana",
+      "His house was insured for too little"
+    ],
+    "correctAnswer": "How deeply he loves Jo",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E24",
+      "Episode title: Thicker than Water",
+      "Original airdate: 2003-07-23",
+      "Storyline: Jo's kidnapping prompts PJ to recognise genuine love for her",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: How deeply he loves Jo",
+      "Episode context: Flatmate Marco involved as house burgled; valuable goods, violence and kidnapping"
+    ]
+  },
+  {
+    "id": "tv_47893",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what recommendation does Tom make after Tess becomes over-involved in the pregnancy-related domestic case in 'Raging Hormones'?",
+    "answers": [
+      "That she stop frontline operational duties",
+      "That she leave Mount Thomas permanently",
+      "That she join the Homicide Squad",
+      "That she resign from the police and become a lawyer"
+    ],
+    "correctAnswer": "That she stop frontline operational duties",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E25",
+      "Episode title: Raging Hormones",
+      "Original airdate: 2003-07-30",
+      "Storyline: Tom urges Tess to step away from operational duty due pregnancy affecting case judgement",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: That she stop frontline operational duties",
+      "Episode context: Pregnant Tess clashes with Josh; sympathises with woman facing husband's interference"
+    ]
+  },
+  {
+    "id": "tv_47894",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who helps Susie Raynor free Jonesy from a dangerous fugitive during her early days in 'Safety Last'?",
+    "answers": [
+      "A handcuffed suspect",
+      "A visiting police commissioner",
+      "The hospital's head nurse",
+      "A school netball coach"
+    ],
+    "correctAnswer": "A handcuffed suspect",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E34",
+      "Episode title: Safety Last",
+      "Original airdate: 2003-10-01",
+      "Storyline: Susie saves Jonesy from hostage-taker with help of handcuffed prisoner despite his doubts",
+      "Character: Susie Raynor",
+      "Actor: Simone McAullay",
+      "Answer fact: A handcuffed suspect",
+      "Episode context: Jonesy doubts Susie's courage; armed robber flees into National Park, dead body found"
+    ]
+  },
+  {
+    "id": "tv_47895",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what shocking personal involvement makes the investigation into an unethical psychiatrist especially painful for Susie Raynor?",
+    "answers": [
+      "Her husband Brad has slept with the psychiatrist",
+      "Her brother is the psychiatrist's business partner",
+      "The psychiatrist has stolen her police badge",
+      "Her father has confessed to a patient death"
+    ],
+    "correctAnswer": "Her husband Brad has slept with the psychiatrist",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Broadcast year: 2003",
+      "Episode: S10E41",
+      "Episode title: Sexual Healing (1)",
+      "Original airdate: 2003-11-26",
+      "Storyline: Brad's affair with psychiatrist worsens marriage breakdown during inquiry into patient's suicide",
+      "Character: Susie Raynor",
+      "Actor: Simone McAullay",
+      "Answer fact: Her husband Brad has slept with the psychiatrist",
+      "Episode context: Susie and Brad seek therapy amid depression and intimacy problems; Ben seeks sergeant role"
+    ]
+  },
+  {
+    "id": "tv_47896",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor was nominated for the 2004 Gold Logie but lost to Rove McManus?",
+    "answers": [
+      "John Wood",
+      "Martin Sacks",
+      "Ditch Davey",
+      "Paul Bishop"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Award year: 2004",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Gold Logie — Most Popular Personality",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Gold Logie — Most Popular Personality — Nominated — John Wood",
+      "Answer fact: John Wood",
+      "Award source: https://televisionau.com/2014/04/tv-week-logie-awards-10-years-ago-3.html",
+      "Recognition scope: Blue Heelers 2003 season",
+      "Broadcast year: 2003"
+    ]
+  },
+  {
+    "id": "tv_47897",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which 2004 Logie category nominated Blue Heelers but was won by McLeod's Daughters?",
+    "answers": [
+      "Most Popular Australian Drama Series",
+      "Most Outstanding Documentary Series",
+      "Most Popular Children's Program",
+      "Most Outstanding Reality Series"
+    ],
+    "correctAnswer": "Most Popular Australian Drama Series",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Award year: 2004",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Most Popular Australian Drama Series",
+      "Award result: Nominated",
+      "Award recipient: Blue Heelers",
+      "Award question: Most Popular Australian Drama Series — Nominated — Blue Heelers",
+      "Answer fact: Most Popular Australian Drama Series",
+      "Award source: https://en.wikipedia.org/wiki/Logie_Awards_of_2004",
+      "Recognition scope: Blue Heelers 2003 season",
+      "Broadcast year: 2003"
+    ]
+  },
+  {
+    "id": "tv_47898",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In addition to its drama-series nomination, which other 2004 Logie programme award nominated Blue Heelers?",
+    "answers": [
+      "Most Popular Australian Program",
+      "Most Outstanding Comedy Series",
+      "Most Popular New Talent",
+      "Most Popular News Coverage"
+    ],
+    "correctAnswer": "Most Popular Australian Program",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 10",
+      "Award year: 2004",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Most Popular Australian Program",
+      "Award result: Nominated",
+      "Award recipient: Blue Heelers",
+      "Award question: Most Popular Australian Program — Nominated — Blue Heelers",
+      "Answer fact: Most Popular Australian Program",
+      "Award source: https://en.wikipedia.org/wiki/Logie_Awards_of_2004",
+      "Recognition scope: Blue Heelers 2003 season",
+      "Broadcast year: 2003"
+    ]
   }
 ];
-if(questions.length!==233||new Set(questions.map(q=>q.id)).size!==questions.length||
+
+if(questions.length!==257||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(33929+i)||q.category!=='TV'||q.topic!=='Blue Heelers'||
-q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
-q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<20||
-q.dailyEligible!==true||!q.tags.some(t=>t.startsWith('Episode context: '))||
-!q.tags.some(t=>t.startsWith('Actor: ')))) throw Error('Pack 553 validation failed');
-module.exports = questions;
+questions.some((q,i)=>((i<233)?q.id!=='tv_'+(33929+i):q.id!=='tv_'+(47875+i-233))||
+q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
+new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+!q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length<20||
+new Set(q.tags).size!==q.tags.length||
+!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 553 validation failed');
+module.exports=questions;
