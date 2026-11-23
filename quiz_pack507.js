@@ -5633,14 +5633,14 @@ const auditQuestions = [
     "id": "tv_43604",
     "category": "TV",
     "topic": "Clocking Off",
-    "question": "In Clocking Off (Series 4, Episode 6), which former Clocking Off cast member returns as Freda Wilson for the final episode?",
+    "question": "In Clocking Off (Series 4, Episode 6), why does Freda's behaviour towards manager Pat escalate despite her recent promotion?",
     "answers": [
-      "Joan Kempson",
-      "Sarah Lancashire",
-      "Lesley Sharp",
-      "Lindsey Coulson"
+      "Her position is being transferred abroad",
+      "She feels personally and professionally slighted",
+      "A new law closes the factory canteen",
+      "She is preparing to retire overseas"
     ],
-    "correctAnswer": "Joan Kempson",
+    "correctAnswer": "She feels personally and professionally slighted",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -5661,7 +5661,7 @@ const auditQuestions = [
       "Episode title: Freda & Pat's Story",
       "Question type: Production",
       "Audit: 23 November 2026",
-      "Answer fact: Joan Kempson",
+      "Answer fact: She feels personally and professionally slighted",
       "Distinctive storyline or cast fact"
     ]
   }
