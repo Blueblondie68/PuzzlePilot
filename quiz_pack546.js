@@ -1,13 +1,20 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 546: Blue Heelers, Series 3 (1996).
-// 163 audited storyline questions across all 42 episodes; no fixed quotas or padding.
-// IDs tv_32157–tv_32319; Pack 545 ends tv_32156.
-// Episode and plot references: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-3/1000036269/
-// Episode and dates: https://thetvdb.com/series/blue-heelers/seasons/official/3
-// Secondary episode guide: https://www.tvmaze.com/seasons/21106/blue-heelers-season-3/episodeguide
-// Episode title variants: S03E20 'In Unity Is Strength'; S03E23 'The Principle of the Thing';
-// S03E30 'Mudsticks'; S03E31 'The Angels' Share' (TV Guide spellings).
-// Scope through S03E42 'Dead and Alive' (26 November 1996).
-// Editorial pass: repeated-plot questions removed, hospital nurse and finale subplot added.
+// 23 November 2026 storyline/awards audit: 163 original questions preserved;
+// 22 new unique, evidence-grounded story/character/outcome questions and 7 award
+// winner/nomination questions. 192 total, covering all 42 aired episodes.
+// Original IDs tv_32157–tv_32319; new IDs tv_47714–tv_47742.
+// Plot synopses: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-3/1000036269/
+// Detailed seasonal arcs: https://en.wikipedia.org/wiki/Blue_Heelers_season_3
+// Episode air dates/title variants: https://thetvdb.com/series/blue-heelers/seasons/official/3
+// 1997 Logie winners & nominees: https://televisionau.com/2022/06/tv-week-logie-awards-25-years-ago-12.html
+// Detailed 1997 award table: https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers
+// 1997 winners: McCune Gold and Most Popular Actress; Martin Sacks Most Popular Actor;
+// Tasma Walton Most Popular New Talent; Blue Heelers Most Popular Series.
+// 1997 nominations: John Wood for Gold Logie and Most Popular Actor — not wins.
+// Important narrative arcs: Wayne's proposal and death; Roz returns for funeral;
+// Tom and estranged Anna reunite; Jack falsifies evidence; Dash joins team;
+// dash's family kidney dilemma; PJ's Darcy shooting and scrutiny of an earlier conviction.
+// No fabricated endings for cases where source recaps give no confirmed resolution.
 'use strict';
 const questions = [
   {
@@ -5877,13 +5884,1067 @@ const questions = [
       "Actor: John Wood",
       "Answer fact: The station Christmas party"
     ]
+  },
+  {
+    "id": "tv_47714",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, how does Maggie realise that a supposedly injured police officer at the hospital may be one of the armed robbers in 'Once Only Withdrawal'?",
+    "answers": [
+      "She spots someone wearing Wayne's stolen uniform",
+      "She sees him with a stolen football trophy",
+      "He refers to a fake police award",
+      "He hands her the wrong radio call sign"
+    ],
+    "correctAnswer": "She spots someone wearing Wayne's stolen uniform",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E01",
+      "Episode title: Once Only Withdrawal (1)",
+      "Original airdate: 1996-02-12",
+      "Storyline: Maggie notices disguised bandit wearing Wayne's police uniform",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: She spots someone wearing Wayne's stolen uniform"
+    ]
+  },
+  {
+    "id": "tv_47715",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what communication failure prevents Maggie from raising an alarm immediately after discovering the hospital infiltration?",
+    "answers": [
+      "The telephone lines are down",
+      "Every police radio has been confiscated",
+      "Her mobile battery has exploded",
+      "The station's fax machine has been stolen"
+    ],
+    "correctAnswer": "The telephone lines are down",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E01",
+      "Episode title: Once Only Withdrawal (1)",
+      "Original airdate: 1996-02-12",
+      "Storyline: Damaged phone lines leave Maggie isolated inside hospital siege",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: The telephone lines are down"
+    ]
+  },
+  {
+    "id": "tv_47716",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why can Tom's officers not readily summon outside help during the Mount Thomas hospital siege?",
+    "answers": [
+      "Bushfires block access to the town",
+      "A bridge is closed for a marathon",
+      "All available police are attending an overseas conference",
+      "The nearest police station has been decommissioned"
+    ],
+    "correctAnswer": "Bushfires block access to the town",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E02",
+      "Episode title: Once Only Withdrawal (2)",
+      "Original airdate: 1996-02-12",
+      "Storyline: Bushfires isolate officers and prevent reinforcements during siege",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: Bushfires block access to the town"
+    ]
+  },
+  {
+    "id": "tv_47717",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which two hotels traditionally compete in the cricket match at the centre of 'Second Innings'?",
+    "answers": [
+      "The Imperial and the Federal",
+      "The Royal and the Victoria",
+      "The Crown and the Grand",
+      "The Station and the Central"
+    ],
+    "correctAnswer": "The Imperial and the Federal",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E03",
+      "Episode title: Second Innings",
+      "Original airdate: 1996-02-13",
+      "Storyline: Annual cricket rivalry between Imperial and Federal Hotels",
+      "Character: Chris Riley",
+      "Actor: Julie Nihill",
+      "Answer fact: The Imperial and the Federal"
+    ]
+  },
+  {
+    "id": "tv_47718",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, where is the body of the young girl found in 'Spider Man'?",
+    "answers": [
+      "In a farmer's dam",
+      "In a disused railway carriage",
+      "At the back of a school gym",
+      "Inside a hotel cellar"
+    ],
+    "correctAnswer": "In a farmer's dam",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E04",
+      "Episode title: Spider Man",
+      "Original airdate: 1996-02-20",
+      "Storyline: Murdered child discovered in a farmer's dam",
+      "Character: Nick Schultz",
+      "Actor: William McInnes",
+      "Answer fact: In a farmer's dam"
+    ]
+  },
+  {
+    "id": "tv_47719",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what is the name of the suspected child killer whose death in custody puts Nick under scrutiny in 'Day of Reckoning'?",
+    "answers": [
+      "Vincent Platt",
+      "Dean Crocker",
+      "Jason Bennett",
+      "Joe Kenny"
+    ],
+    "correctAnswer": "Vincent Platt",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E05",
+      "Episode title: Day of Reckoning",
+      "Original airdate: 1996-02-27",
+      "Storyline: Inquest into Vincent Platt death in Nick's custody",
+      "Character: Nick Schultz",
+      "Actor: William McInnes",
+      "Answer fact: Vincent Platt"
+    ]
+  },
+  {
+    "id": "tv_47720",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which woman does Wayne propose to shortly before Joe Kenny's return leads to tragedy?",
+    "answers": [
+      "Gabe Greenway",
+      "Sasha Peters",
+      "Rose Egan",
+      "Roz Patterson"
+    ],
+    "correctAnswer": "Gabe Greenway",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E10",
+      "Episode title: An Act of Random Violence",
+      "Original airdate: 1996-04-02",
+      "Storyline: Wayne proposes to Gabe Greenway as Joe Kenny escapes",
+      "Character: Wayne Patterson",
+      "Actor: Grant Bowler",
+      "Answer fact: Gabe Greenway"
+    ]
+  },
+  {
+    "id": "tv_47721",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who returns to Mount Thomas for Wayne Patterson's funeral in 'Unfinished Business'?",
+    "answers": [
+      "His estranged wife Roz",
+      "His former schoolteacher",
+      "His brother from London",
+      "His former probation supervisor"
+    ],
+    "correctAnswer": "His estranged wife Roz",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E11",
+      "Episode title: Unfinished Business",
+      "Original airdate: 1996-04-09",
+      "Storyline: Roz Patterson returns for estranged husband Wayne's funeral",
+      "Character: Roz Patterson",
+      "Actor: Ann Burbrook",
+      "Answer fact: His estranged wife Roz"
+    ]
+  },
+  {
+    "id": "tv_47722",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what substance disappears from the police station during PJ's investigation in 'Happy Families', throwing suspicion on the officers?",
+    "answers": [
+      "Heroin seized in a drug raid",
+      "Cocaine intended for disposal at sea",
+      "A bottle of morphine from the hospital",
+      "Unlicensed tobacco seized from a pub"
+    ],
+    "correctAnswer": "Heroin seized in a drug raid",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E12",
+      "Episode title: Happy Families",
+      "Original airdate: 1996-04-16",
+      "Storyline: Heroin disappears from station evidence after PJ's drug operation",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Heroin seized in a drug raid"
+    ]
+  },
+  {
+    "id": "tv_47723",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, how long had Tom Croydon been estranged from his eldest daughter Anna before her surprise return in 'Happy Families'?",
+    "answers": [
+      "Five years",
+      "One month",
+      "Fifteen years",
+      "Two weeks"
+    ],
+    "correctAnswer": "Five years",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E12",
+      "Episode title: Happy Families",
+      "Original airdate: 1996-04-16",
+      "Storyline: Anna returns to Tom after five years of estrangement",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: Five years"
+    ]
+  },
+  {
+    "id": "tv_47724",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what crisis involving a young man's wellbeing develops while the officers struggle with staffing and computer failures in 'Priorities'?",
+    "answers": [
+      "He considers taking his own life",
+      "He is poisoned by a stolen hospital drug",
+      "He is kidnapped for ransom",
+      "He becomes trapped in a flooded mine"
+    ],
+    "correctAnswer": "He considers taking his own life",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E13",
+      "Episode title: Priorities",
+      "Original airdate: 1996-04-23",
+      "Storyline: Overwhelmed police must respond to a young man at risk of suicide",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: He considers taking his own life"
+    ]
+  },
+  {
+    "id": "tv_47725",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, where is a shearer found dead following a dispute at a shearing competition in 'Under Pressure'?",
+    "answers": [
+      "Inside a bale of wool",
+      "Under a wooden bridge",
+      "At the bottom of a swimming pool",
+      "In a railway goods wagon"
+    ],
+    "correctAnswer": "Inside a bale of wool",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E16",
+      "Episode title: Under Pressure",
+      "Original airdate: 1996-05-14",
+      "Storyline: Shearer found murdered in wool bale after workplace dispute",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Inside a bale of wool"
+    ]
+  },
+  {
+    "id": "tv_47726",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what separate pub-related mystery does PJ investigate while leaving the shearer's death to Jack in 'Under Pressure'?",
+    "answers": [
+      "Possible contamination of alcohol",
+      "The theft of a racehorse",
+      "A counterfeit passport network",
+      "The sale of a stolen tractor"
+    ],
+    "correctAnswer": "Possible contamination of alcohol",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E16",
+      "Episode title: Under Pressure",
+      "Original airdate: 1996-05-14",
+      "Storyline: PJ tackles contaminated drinks at Imperial while Jack works murder",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Possible contamination of alcohol"
+    ]
+  },
+  {
+    "id": "tv_47727",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why does PJ need fresh evidence before Maggie prosecutes Dean Crocker in 'Fight Dirty'?",
+    "answers": [
+      "Jack Woodley's original evidence has been falsified",
+      "The prosecutor has lost her law degree",
+      "The accused has already left Australia",
+      "The alleged victim admits inventing a different crime"
+    ],
+    "correctAnswer": "Jack Woodley's original evidence has been falsified",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E17",
+      "Episode title: Fight Dirty",
+      "Original airdate: 1996-05-21",
+      "Storyline: PJ seeks lawful substitute evidence after Jack falsifies proof in Crocker prosecution",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Jack Woodley's original evidence has been falsified"
+    ]
+  },
+  {
+    "id": "tv_47728",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does Nick witness Clancy Freeman's mother Rachel do before the officers investigate her welfare in 'Shelter from the Storm'?",
+    "answers": [
+      "Drive her car into a dam",
+      "Set fire to the Imperial Hotel",
+      "Climb the school roof",
+      "Steal a police patrol car"
+    ],
+    "correctAnswer": "Drive her car into a dam",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E22",
+      "Episode title: Shelter from the Storm",
+      "Original airdate: 1996-06-25",
+      "Storyline: Rachel Freeman drives into dam before later overdose",
+      "Character: Nick Schultz",
+      "Actor: William McInnes",
+      "Answer fact: Drive her car into a dam"
+    ]
+  },
+  {
+    "id": "tv_47729",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what personal prejudice must newcomer Dash confront as Tom tries to arrange care for Clancy Freeman?",
+    "answers": [
+      "Her assumptions about Clancy's intellectual disability",
+      "A belief that no women should join the police",
+      "Her dislike of rural Australian farmers",
+      "An insistence that all visitors must leave town"
+    ],
+    "correctAnswer": "Her assumptions about Clancy's intellectual disability",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E22",
+      "Episode title: Shelter from the Storm",
+      "Original airdate: 1996-06-25",
+      "Storyline: Dash confronts assumptions about Clancy's disability during his mother's crisis",
+      "Character: Dash McKinley",
+      "Actor: Tasma Walton",
+      "Answer fact: Her assumptions about Clancy's intellectual disability"
+    ]
+  },
+  {
+    "id": "tv_47730",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, whose childhood friend accuses her own father, a local doctor, of abuse in 'Mind Games'?",
+    "answers": [
+      "Anna Croydon's",
+      "Maggie Doyle's",
+      "Dash McKinley's",
+      "Chris Riley's"
+    ],
+    "correctAnswer": "Anna Croydon's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E24",
+      "Episode title: Mind Games",
+      "Original airdate: 1996-07-09",
+      "Storyline: Anna's childhood friend recovers memories implicating GP father",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: Anna Croydon's"
+    ]
+  },
+  {
+    "id": "tv_47731",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which officer lends Dash money for the car she wants before her gambling spirals in 'Something for Nothing'?",
+    "answers": [
+      "Adam Cooper",
+      "PJ Hasham",
+      "Tom Croydon",
+      "Nick Schultz"
+    ],
+    "correctAnswer": "Adam Cooper",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E32",
+      "Episode title: Something for Nothing",
+      "Original airdate: 1996-09-17",
+      "Storyline: Adam lends Dash money to purchase a car; Dash loses it gambling",
+      "Character: Dash McKinley",
+      "Actor: Tasma Walton",
+      "Answer fact: Adam Cooper"
+    ]
+  },
+  {
+    "id": "tv_47732",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, how do the burglaries come to be linked to the compromised police computer in 'Reality Bytes'?",
+    "answers": [
+      "The burglar receives tips from computer-generated telephone calls",
+      "Police discover the burglar sold stolen computer games",
+      "The thief works for the station's electrician",
+      "Dash uses the machine to place an online auction"
+    ],
+    "correctAnswer": "The burglar receives tips from computer-generated telephone calls",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E35",
+      "Episode title: Reality Bytes",
+      "Original airdate: 1996-10-08",
+      "Storyline: Burglar acts on automated tips derived from stolen police information",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: The burglar receives tips from computer-generated telephone calls"
+    ]
+  },
+  {
+    "id": "tv_47733",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what unexpected past case deepens PJ's problems during the inquest into Raelene Darcy's death in 'Half a Second'?",
+    "answers": [
+      "His first Mount Thomas investigation may have imprisoned the wrong man",
+      "A stolen car is found at his mother's home",
+      "His former partner admits faking police qualifications",
+      "He is discovered to be the missing son of a suspect"
+    ],
+    "correctAnswer": "His first Mount Thomas investigation may have imprisoned the wrong man",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E40",
+      "Episode title: Half a Second",
+      "Original airdate: 1996-11-12",
+      "Storyline: Fresh evidence casts doubt on conviction from PJ's first Mount Thomas case",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: His first Mount Thomas investigation may have imprisoned the wrong man"
+    ]
+  },
+  {
+    "id": "tv_47734",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, where had a wanted fugitive been living before the emergency involving the stolen donor kidney in 'Dead and Alive'?",
+    "answers": [
+      "With his girlfriend in Mount Thomas",
+      "Inside the police station",
+      "In an abandoned cricket pavilion",
+      "At the local children's hospital"
+    ],
+    "correctAnswer": "With his girlfriend in Mount Thomas",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E42",
+      "Episode title: Dead and Alive",
+      "Original airdate: 1996-11-26",
+      "Storyline: Fugitive staying with girlfriend involved in finale crisis",
+      "Character: Dash McKinley",
+      "Actor: Tasma Walton",
+      "Answer fact: With his girlfriend in Mount Thomas"
+    ]
+  },
+  {
+    "id": "tv_47735",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what heartbreaking prognosis accompanies the news that Dash's brother Ian may be able to donate a kidney?",
+    "answers": [
+      "He is not expected to survive his motorbike injuries",
+      "He has already moved abroad",
+      "His blood group is incompatible",
+      "He refuses any donation"
+    ],
+    "correctAnswer": "He is not expected to survive his motorbike injuries",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 1996",
+      "Episode: S03E42",
+      "Episode title: Dead and Alive",
+      "Original airdate: 1996-11-26",
+      "Storyline: Ian gravely injured in motorcycle crash and not expected to live",
+      "Character: Dash McKinley",
+      "Actor: Tasma Walton",
+      "Answer fact: He is not expected to survive his motorbike injuries"
+    ]
+  },
+  {
+    "id": "tv_47736",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actress won her first Gold Logie at the 1997 TV Week Logie Awards?",
+    "answers": [
+      "Lisa McCune",
+      "Tasma Walton",
+      "Julie Nihill",
+      "Ann Burbrook"
+    ],
+    "correctAnswer": "Lisa McCune",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Award ceremony: 1997 TV Week Logie Awards",
+      "Award year: 1997",
+      "Award: Most Popular Personality on Australian Television (Gold Logie)",
+      "Award result: Won",
+      "Award recipient: Lisa McCune",
+      "Award question: Most Popular Personality on Australian Television (Gold Logie) Won — Lisa McCune",
+      "Answer fact: Lisa McCune",
+      "Award source: televisionau.com/2022/06/tv-week-logie-awards-25-years-ago-12.html",
+      "Broadcast year: 1996"
+    ]
+  },
+  {
+    "id": "tv_47737",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor won the 1997 Silver Logie for Most Popular Actor?",
+    "answers": [
+      "Martin Sacks",
+      "John Wood",
+      "Grant Bowler",
+      "William McInnes"
+    ],
+    "correctAnswer": "Martin Sacks",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Award ceremony: 1997 TV Week Logie Awards",
+      "Award year: 1997",
+      "Award: Most Popular Actor (Silver Logie)",
+      "Award result: Won",
+      "Award recipient: Martin Sacks",
+      "Award question: Most Popular Actor (Silver Logie) Won — Martin Sacks",
+      "Answer fact: Martin Sacks",
+      "Award source: televisionau.com/2022/06/tv-week-logie-awards-25-years-ago-12.html",
+      "Broadcast year: 1996"
+    ]
+  },
+  {
+    "id": "tv_47738",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actress won the 1997 Silver Logie for Most Popular Actress?",
+    "answers": [
+      "Lisa McCune",
+      "Tasma Walton",
+      "Julie Nihill",
+      "Beth Buchanan"
+    ],
+    "correctAnswer": "Lisa McCune",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Award ceremony: 1997 TV Week Logie Awards",
+      "Award year: 1997",
+      "Award: Most Popular Actress (Silver Logie)",
+      "Award result: Won",
+      "Award recipient: Lisa McCune",
+      "Award question: Most Popular Actress (Silver Logie) Won — Lisa McCune",
+      "Answer fact: Lisa McCune",
+      "Award source: televisionau.com/2022/06/tv-week-logie-awards-25-years-ago-12.html",
+      "Broadcast year: 1996"
+    ]
+  },
+  {
+    "id": "tv_47739",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which police drama won the 1997 TV Week Logie for Most Popular Series?",
+    "answers": [
+      "Blue Heelers",
+      "Water Rats",
+      "Police Rescue",
+      "The Bill"
+    ],
+    "correctAnswer": "Blue Heelers",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Award ceremony: 1997 TV Week Logie Awards",
+      "Award year: 1997",
+      "Award: Most Popular Series",
+      "Award result: Won",
+      "Award recipient: Blue Heelers",
+      "Award question: Most Popular Series Won — Blue Heelers",
+      "Answer fact: Blue Heelers",
+      "Award source: televisionau.com/2022/06/tv-week-logie-awards-25-years-ago-12.html",
+      "Broadcast year: 1996"
+    ]
+  },
+  {
+    "id": "tv_47740",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers newcomer won the 1997 Logie for Most Popular New Talent?",
+    "answers": [
+      "Tasma Walton",
+      "Rachel Blakely",
+      "Peta Doodson",
+      "Beth Buchanan"
+    ],
+    "correctAnswer": "Tasma Walton",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Award ceremony: 1997 TV Week Logie Awards",
+      "Award year: 1997",
+      "Award: Most Popular New Talent",
+      "Award result: Won",
+      "Award recipient: Tasma Walton",
+      "Award question: Most Popular New Talent Won — Tasma Walton",
+      "Answer fact: Tasma Walton",
+      "Award source: televisionau.com/2022/06/tv-week-logie-awards-25-years-ago-12.html",
+      "Broadcast year: 1996"
+    ]
+  },
+  {
+    "id": "tv_47741",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor was also nominated for the 1997 Gold Logie but lost to co-star Lisa McCune?",
+    "answers": [
+      "John Wood",
+      "Martin Sacks",
+      "William McInnes",
+      "Grant Bowler"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Award ceremony: 1997 TV Week Logie Awards",
+      "Award year: 1997",
+      "Award: Most Popular Personality on Australian Television (Gold Logie)",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Most Popular Personality on Australian Television (Gold Logie) Nominated — John Wood",
+      "Answer fact: John Wood",
+      "Award source: televisionau.com/2022/06/tv-week-logie-awards-25-years-ago-12.html",
+      "Broadcast year: 1996"
+    ]
+  },
+  {
+    "id": "tv_47742",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor was nominated for the 1997 Most Popular Actor Logie alongside winner Martin Sacks?",
+    "answers": [
+      "John Wood",
+      "Grant Bowler",
+      "Damian Walshe-Howling",
+      "Frankie J. Holden"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Award ceremony: 1997 TV Week Logie Awards",
+      "Award year: 1997",
+      "Award: Most Popular Actor (Silver Logie)",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Most Popular Actor (Silver Logie) Nominated — John Wood",
+      "Answer fact: John Wood",
+      "Award source: televisionau.com/2022/06/tv-week-logie-awards-25-years-ago-12.html",
+      "Broadcast year: 1996"
+    ]
   }
 ];
-if(questions.length!==163||new Set(questions.map(q=>q.id)).size!==questions.length||
+
+if(questions.length!==192||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(32157+i)||q.category!=='TV'||q.topic!=='Blue Heelers'||
-q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
-q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length<19||
-q.dailyEligible!==true||!q.tags.some(t=>t.startsWith('Storyline: '))||
-!q.tags.some(t=>t.startsWith('Actor: ')))) throw Error('Pack 546 validation failed');
-module.exports = questions;
+questions.some((q,i)=>((i<163)?q.id!=='tv_'+(32157+i):q.id!=='tv_'+(47714+i-163))||
+q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
+new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+!q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length<19||
+new Set(q.tags).size!==q.tags.length||
+!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 546 validation failed');
+module.exports=questions;
