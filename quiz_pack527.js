@@ -1,13 +1,14 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 527: Barry (2018–2023), Series 3 & 4 (2022–2023).
-// 282 questions total: 96 unchanged originals, 156 additional episode stories and consequences, 30 verified award questions.
-// Original IDs tv_30377–tv_30472 preserved; new IDs tv_45737–tv_45922.
-// Comprehensive 16-episode story audit 23 November 2026, no artificial fixed questions per episode.
-// Main storyline reference: https://en.wikipedia.org/wiki/Barry_(TV_series)#Episodes
-// Additional plot summaries: https://www.tvmaze.com/shows/11538/barry/episodeguide
-// Awards verified using: https://www.televisionacademy.com/shows/barry
+// 248 distinct questions: 96 unchanged originals, 122 new episode story/consequence questions and 30 award questions.
+// Original IDs tv_30377–tv_30472 preserved. Audit IDs tv_45737–tv_45888.
+// All sixteen episodes audited 23 November 2026, 34 semantic duplicate/overlap questions removed before approval.
+// Sources: https://en.wikipedia.org/wiki/Barry_(TV_series)#Episodes
+// https://www.tvmaze.com/shows/11538/barry/episodeguide
+// Awards verified at https://www.televisionacademy.com/shows/barry
 // https://en.wikipedia.org/wiki/Barry_(TV_series)#Awards_and_nominations
-// Including season-3 2022 awards and season-4 2023/2024 accolades. Wins and nominations tagged separately.
-// Original Series 1 and 2 awards remain in Packs 525 and 526, no deliberate repeats.
+// 2022 Emmys: sound editing, editing and stunt-coordination wins; 2023 Emmys: stunt-coordination win. Acting awards above are nominations.
+// 2022/2023/2024 additional critics and guild honours tagged by actual ceremony year.
+// Every question must have Programme: Barry (2018–2023) and unique, valid answers.
 'use strict';
 const questions = [
   {
@@ -3835,45 +3836,6 @@ const auditQuestions = [
     "id": "tv_45744",
     "category": "TV",
     "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 1), why does Gene fail to shoot Barry during the confrontation?",
-    "answers": [
-      "Gene is interrupted by police",
-      "His son takes away the weapon",
-      "His firearm is a prop gun that falls apart",
-      "Barry steals the ammunition"
-    ],
-    "correctAnswer": "His firearm is a prop gun that falls apart",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E01",
-      "Episode title: forgiving jeff",
-      "Storyline: why does Gene fail to shoot Barry during the confrontation",
-      "Answer fact: His firearm is a prop gun that falls apart",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Gene",
-      "Character: Barry",
-      "Actor: Henry Winkler",
-      "Actor: Bill Hader"
-    ]
-  },
-  {
-    "id": "tv_45745",
-    "category": "TV",
-    "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 1), what gives Barry the idea to keep Gene alive instead of killing him?",
     "answers": [
       "Gene begs him to earn forgiveness",
@@ -3910,7 +3872,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45746",
+    "id": "tv_45745",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 2), what does Barry think a television role will achieve for Gene?",
@@ -3949,46 +3911,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45747",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 2), how does Barry respond when Sally says the Joplin producers will not cast Gene?",
-    "answers": [
-      "He threatens the television network with a lawsuit",
-      "He shouts at Sally aggressively in her workplace",
-      "He thanks her for considering it",
-      "He calls Gene and cancels the meeting"
-    ],
-    "correctAnswer": "He shouts at Sally aggressively in her workplace",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E02",
-      "Episode title: limonada",
-      "Storyline: how does Barry respond when Sally says the Joplin producers will not cast Gene",
-      "Answer fact: He shouts at Sally aggressively in her workplace",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Barry",
-      "Character: Sally",
-      "Actor: Bill Hader",
-      "Actor: Sarah Goldberg"
-    ]
-  },
-  {
-    "id": "tv_45748",
+    "id": "tv_45746",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 2), who witnesses Barry's frightening outburst against Sally at her workplace?",
@@ -4027,7 +3950,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45749",
+    "id": "tv_45747",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 2), what production problem forces the launch of Joplin to be brought forward?",
@@ -4064,7 +3987,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45750",
+    "id": "tv_45748",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 2), why does Fernando order a raid on the Chechen compound?",
@@ -4103,46 +4026,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45751",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 2), who quietly warns Hank before the Bolivian strike?",
-    "answers": [
-      "Janice Moss",
-      "Cristobal",
-      "Fuches",
-      "Gene Cousineau"
-    ],
-    "correctAnswer": "Cristobal",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E02",
-      "Episode title: limonada",
-      "Storyline: who quietly warns Hank before the Bolivian strike",
-      "Answer fact: Cristobal",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Hank",
-      "Character: Cristobal",
-      "Actor: Anthony Carrigan",
-      "Actor: Michael Irby"
-    ]
-  },
-  {
-    "id": "tv_45752",
+    "id": "tv_45749",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 2), what career opportunity does Barry secure for Gene after auditioning for a show himself?",
@@ -4181,48 +4065,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45753",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 2), where does Barry catch Gene after Gene escapes his confinement?",
-    "answers": [
-      "In the Joplin studio",
-      "At Leo's home",
-      "At Janice's cabin",
-      "At Fuches' hotel"
-    ],
-    "correctAnswer": "At Leo's home",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E02",
-      "Episode title: limonada",
-      "Storyline: where does Barry catch Gene after Gene escapes his confinement",
-      "Answer fact: At Leo's home",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Barry",
-      "Character: Gene",
-      "Character: Leo",
-      "Actor: Bill Hader",
-      "Actor: Henry Winkler",
-      "Actor: Andrew Leeds"
-    ]
-  },
-  {
-    "id": "tv_45754",
+    "id": "tv_45750",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 2), whose life does Barry threaten to ensure Gene obeys him?",
@@ -4261,7 +4104,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45755",
+    "id": "tv_45751",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 3), what are Hank's superiors urging after Fernando's attack on the Chechens?",
@@ -4300,7 +4143,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45756",
+    "id": "tv_45752",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 3), why does Hank contact Fuches while Fuches is abroad?",
@@ -4339,7 +4182,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45757",
+    "id": "tv_45753",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 3), what does Cristobal achieve when he meets Fernando?",
@@ -4376,7 +4219,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45758",
+    "id": "tv_45754",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 3), why does Katie seek advice about Sally's relationship?",
@@ -4415,7 +4258,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45759",
+    "id": "tv_45755",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 3), what does Gene realise about his earlier conversation with Janice at the cabin?",
@@ -4454,7 +4297,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45760",
+    "id": "tv_45756",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 3), why does Gene abruptly leave his scene on Laws of Humanity?",
@@ -4493,7 +4336,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45761",
+    "id": "tv_45757",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 3), how does Fuches respond to Barry refusing his apology?",
@@ -4532,7 +4375,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45762",
+    "id": "tv_45758",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 3), what inspires Fuches' decision to pursue revenge rather than reconcile?",
@@ -4569,7 +4412,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45763",
+    "id": "tv_45759",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 3), who has become Hank's requested target for Barry's next bombing job?",
@@ -4608,7 +4451,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45764",
+    "id": "tv_45760",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 4), what identity does Fuches use when approaching families of Barry's victims?",
@@ -4645,7 +4488,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45765",
+    "id": "tv_45761",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 4), what information does Fuches give relatives seeking justice?",
@@ -4684,7 +4527,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45766",
+    "id": "tv_45762",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 4), where does Barry plant the explosive device meant to kill Fernando?",
@@ -4723,7 +4566,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45767",
+    "id": "tv_45763",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 4), what complication delays Barry detonating the explosive?",
@@ -4760,7 +4603,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45768",
+    "id": "tv_45764",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 4), what does Fernando discover about his son-in-law before confronting him?",
@@ -4799,7 +4642,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45769",
+    "id": "tv_45765",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 4), how does Cristobal survive the attempt on Fernando's life?",
@@ -4836,7 +4679,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45770",
+    "id": "tv_45766",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 4), what does Barry give Gene to make amends and leave him alone?",
@@ -4875,7 +4718,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45771",
+    "id": "tv_45767",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 4), what professional change makes Gene's agent advise against fleeing the city?",
@@ -4912,46 +4755,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45772",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 4), how does Barry's absence at Joplin's premiere affect his relationship with Sally?",
-    "answers": [
-      "She decides to join Hank's gang",
-      "She ends their relationship after Katie warns her",
-      "She accepts a marriage proposal",
-      "She asks Barry to become her producer"
-    ],
-    "correctAnswer": "She ends their relationship after Katie warns her",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E04",
-      "Episode title: all the sauces",
-      "Storyline: how does Barry's absence at Joplin's premiere affect his relationship with Sally",
-      "Answer fact: She ends their relationship after Katie warns her",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Barry",
-      "Character: Sally",
-      "Actor: Bill Hader",
-      "Actor: Sarah Goldberg"
-    ]
-  },
-  {
-    "id": "tv_45773",
+    "id": "tv_45768",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 4), who begins preparing an ambush against Barry after receiving Fuches' information?",
@@ -4990,7 +4794,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45774",
+    "id": "tv_45769",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 5), what is special about Albert Nguyen's connection with Barry?",
@@ -5029,44 +4833,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45775",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 5), who is Elena in relation to Fernando and Cristobal?",
-    "answers": [
-      "Hank's aunt",
-      "Barry's former colleague",
-      "Fernando's daughter and Cristobal's wife",
-      "Cristobal's sister"
-    ],
-    "correctAnswer": "Fernando's daughter and Cristobal's wife",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E05",
-      "Episode title: crazytimesh*tshow",
-      "Storyline: who is Elena in relation to Fernando and Cristobal",
-      "Answer fact: Fernando's daughter and Cristobal's wife",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Cristobal",
-      "Actor: Michael Irby"
-    ]
-  },
-  {
-    "id": "tv_45776",
+    "id": "tv_45770",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 5), what does Elena do when she comes to Los Angeles?",
@@ -5105,7 +4872,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45777",
+    "id": "tv_45771",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 5), what happens to Cristobal while Hank hides during Elena's raid?",
@@ -5144,7 +4911,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45778",
+    "id": "tv_45772",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 5), which famous actor hosts a dinner at which Gene meets old industry colleagues?",
@@ -5181,7 +4948,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45779",
+    "id": "tv_45773",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 5), what does Gene attempt at the dinner party?",
@@ -5218,7 +4985,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45780",
+    "id": "tv_45774",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 5), what does theatre director Annie Eisner accuse Gene of doing?",
@@ -5255,44 +5022,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45781",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 5), why does BanShe cancel Sally's show despite displaying it prominently?",
-    "answers": [
-      "The studio burned down",
-      "A rival network acquired it",
-      "Its audience missed the streaming service's target demographic",
-      "Sally refused a second season"
-    ],
-    "correctAnswer": "Its audience missed the streaming service's target demographic",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E05",
-      "Episode title: crazytimesh*tshow",
-      "Storyline: why does BanShe cancel Sally's show despite displaying it prominently",
-      "Answer fact: Its audience missed the streaming service's target demographic",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Sally",
-      "Actor: Sarah Goldberg"
-    ]
-  },
-  {
-    "id": "tv_45782",
+    "id": "tv_45775",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 5), what does Barry propose when Sally vents about her series being cancelled?",
@@ -5331,7 +5061,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45783",
+    "id": "tv_45776",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 5), how does Sally react to Barry's disturbing suggestion?",
@@ -5370,7 +5100,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45784",
+    "id": "tv_45777",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 5), what happens to Kyle in the attempted revenge attack on Barry?",
@@ -5407,7 +5137,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45785",
+    "id": "tv_45778",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 6), what family relationship connects the bikers chasing Barry to his earlier killing spree?",
@@ -5446,7 +5176,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45786",
+    "id": "tv_45779",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 6), what happens to Fuches after one of the bikers turns on him?",
@@ -5483,7 +5213,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45787",
+    "id": "tv_45780",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 6), who cares for Fuches after he is abandoned in the desert?",
@@ -5520,7 +5250,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45788",
+    "id": "tv_45781",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 6), how does Fuches repay the family that shelters him?",
@@ -5557,7 +5287,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45789",
+    "id": "tv_45782",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 6), who does Fuches contact while resuming his revenge campaign?",
@@ -5596,81 +5326,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45790",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 6), what professional compromise does Sally make after Joplin's cancellation?",
-    "answers": [
-      "She signs a film contract with Gene",
-      "She accepts a writing job on The New Medusas",
-      "She becomes a police detective",
-      "She stops acting to join an orchestra"
-    ],
-    "correctAnswer": "She accepts a writing job on The New Medusas",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E06",
-      "Episode title: 710N",
-      "Storyline: what professional compromise does Sally make after Joplin's cancellation",
-      "Answer fact: She accepts a writing job on The New Medusas",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Sally",
-      "Actor: Sarah Goldberg"
-    ]
-  },
-  {
-    "id": "tv_45791",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 6), what does Gene demand before accepting a MasterClass teaching opportunity?",
-    "answers": [
-      "Barry must be his co-host",
-      "The course must be filmed at Janice's cabin",
-      "The company must hire Sally",
-      "Annie Eisner must participate and receive the profits"
-    ],
-    "correctAnswer": "Annie Eisner must participate and receive the profits",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E06",
-      "Episode title: 710N",
-      "Storyline: what does Gene demand before accepting a MasterClass teaching opportunity",
-      "Answer fact: Annie Eisner must participate and receive the profits",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Gene",
-      "Actor: Henry Winkler"
-    ]
-  },
-  {
-    "id": "tv_45792",
+    "id": "tv_45783",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 6), whom does Albert interview when investigating Barry's earlier violence?",
@@ -5707,7 +5363,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45793",
+    "id": "tv_45784",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 6), what warning sign makes Barry realise Sharon has set a trap?",
@@ -5745,45 +5401,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45794",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 6), what happens after Barry eats the food Sharon has prepared?",
-    "answers": [
-      "He apologises to her",
-      "He is poisoned",
-      "He wins an acting job",
-      "He is arrested by federal agents"
-    ],
-    "correctAnswer": "He is poisoned",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E06",
-      "Episode title: 710N",
-      "Storyline: what happens after Barry eats the food Sharon has prepared",
-      "Answer fact: He is poisoned",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Barry",
-      "Character: Sharon",
-      "Actor: Bill Hader"
-    ]
-  },
-  {
-    "id": "tv_45795",
+    "id": "tv_45785",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 7), what does Barry hallucinate while suffering from the poison?",
@@ -5820,7 +5438,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45796",
+    "id": "tv_45786",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 7), who discovers Barry incapacitated and considers killing him?",
@@ -5857,7 +5475,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45797",
+    "id": "tv_45787",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 7), what does George Krempf do after bringing Barry to hospital?",
@@ -5894,7 +5512,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45798",
+    "id": "tv_45788",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 7), why does Sally become furious with her former assistant Natalie?",
@@ -5931,44 +5549,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45799",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 7), what does Natalie do with Sally's furious outburst?",
-    "answers": [
-      "Deletes it to protect Sally",
-      "Turns it into a sitcom episode",
-      "Films it and puts it online",
-      "Reports it to Gene"
-    ],
-    "correctAnswer": "Films it and puts it online",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E07",
-      "Episode title: candy asses",
-      "Storyline: what does Natalie do with Sally's furious outburst",
-      "Answer fact: Films it and puts it online",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Sally",
-      "Actor: Sarah Goldberg"
-    ]
-  },
-  {
-    "id": "tv_45800",
+    "id": "tv_45789",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 7), what happens to Sally's job as a consequence of the viral confrontation?",
@@ -6005,7 +5586,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45801",
+    "id": "tv_45790",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 7), why does Sally lose the support of her agent Lindsay?",
@@ -6042,46 +5623,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45802",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 7), how does Jim Moss deal with Fuches' claims about Janice's murder?",
-    "answers": [
-      "He takes Fuches to the police station",
-      "He hires Fuches as a bodyguard",
-      "He sends Fuches to Bolivia",
-      "He accepts a payment to stay silent"
-    ],
-    "correctAnswer": "He takes Fuches to the police station",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E07",
-      "Episode title: candy asses",
-      "Storyline: how does Jim Moss deal with Fuches' claims about Janice's murder",
-      "Answer fact: He takes Fuches to the police station",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Jim",
-      "Character: Fuches",
-      "Actor: Robert Wisdom",
-      "Actor: Stephen Root"
-    ]
-  },
-  {
-    "id": "tv_45803",
+    "id": "tv_45791",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 7), what does Fuches admit during Albert's interrogation?",
@@ -6120,7 +5662,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45804",
+    "id": "tv_45792",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 7), why does Jim grow suspicious of Gene's explanation of Janice's murder?",
@@ -6159,7 +5701,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45805",
+    "id": "tv_45793",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 8), why has Sally come to Barry's flat after the release of Natalie's video?",
@@ -6198,7 +5740,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45806",
+    "id": "tv_45794",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 8), how does Barry react to Sally's request for revenge?",
@@ -6237,7 +5779,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45807",
+    "id": "tv_45795",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 8), who interrupts the confrontation at Barry's flat?",
@@ -6276,44 +5818,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45808",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 8), how does Sally escape her attacker's attempt to kill her?",
-    "answers": [
-      "Barry shoots him before he reaches her",
-      "The police arrive immediately",
-      "Fuches pulls him away",
-      "She fights back and kills him"
-    ],
-    "correctAnswer": "She fights back and kills him",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E08",
-      "Episode title: starting now",
-      "Storyline: how does Sally escape her attacker's attempt to kill her",
-      "Answer fact: She fights back and kills him",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Sally",
-      "Actor: Sarah Goldberg"
-    ]
-  },
-  {
-    "id": "tv_45809",
+    "id": "tv_45796",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 8), what does Barry offer Sally after the attack?",
@@ -6352,7 +5857,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45810",
+    "id": "tv_45797",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 8), how does Hank escape captivity in Bolivia?",
@@ -6389,46 +5894,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45811",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 3, Episode 8), who does Hank find being subjected to abusive conversion therapy?",
-    "answers": [
-      "Gene",
-      "Cristobal",
-      "Barry",
-      "Albert"
-    ],
-    "correctAnswer": "Cristobal",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 3",
-      "Broadcast year: 2022",
-      "Episode: S03E08",
-      "Episode title: starting now",
-      "Storyline: who does Hank find being subjected to abusive conversion therapy",
-      "Answer fact: Cristobal",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Hank",
-      "Character: Cristobal",
-      "Actor: Anthony Carrigan",
-      "Actor: Michael Irby"
-    ]
-  },
-  {
-    "id": "tv_45812",
+    "id": "tv_45798",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 8), what does Hank do when he discovers Elena torturing Cristobal?",
@@ -6467,7 +5933,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45813",
+    "id": "tv_45799",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 8), why does Albert decide not to arrest Barry at the burial site?",
@@ -6506,7 +5972,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45814",
+    "id": "tv_45800",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 8), how does Gene help set up Barry's arrest?",
@@ -6547,7 +6013,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45815",
+    "id": "tv_45801",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 3, Episode 8), what does Barry discover too late when he arrives intending to kill Jim?",
@@ -6586,7 +6052,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45816",
+    "id": "tv_45802",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 1), why does Fuches wear an electronic wire while imprisoned with Barry?",
@@ -6625,7 +6091,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45817",
+    "id": "tv_45803",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 1), what apology does Barry offer Fuches during their prison conversation?",
@@ -6666,7 +6132,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45818",
+    "id": "tv_45804",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 1), why does the public praise Gene following Barry's arrest?",
@@ -6703,7 +6169,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45819",
+    "id": "tv_45805",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 1), who warns Gene against using the Janice investigation for publicity?",
@@ -6742,7 +6208,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45820",
+    "id": "tv_45806",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 1), what magazine journalist does Gene agree to speak to anyway?",
@@ -6779,7 +6245,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45821",
+    "id": "tv_45807",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 1), how does Sally's mother respond to her return home?",
@@ -6816,46 +6282,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45822",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 1), what type of legal business do Hank and Cristobal hope to build?",
-    "answers": [
-      "A construction-sand import business",
-      "An acting agency",
-      "A car dealership",
-      "A film studio"
-    ],
-    "correctAnswer": "A construction-sand import business",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E01",
-      "Episode title: yikes",
-      "Storyline: what type of legal business do Hank and Cristobal hope to build",
-      "Answer fact: A construction-sand import business",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Hank",
-      "Character: Cristobal",
-      "Actor: Anthony Carrigan",
-      "Actor: Michael Irby"
-    ]
-  },
-  {
-    "id": "tv_45823",
+    "id": "tv_45808",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 1), why does Barry provoke a prison guard?",
@@ -6892,7 +6319,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45824",
+    "id": "tv_45809",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 1), what does Fuches say after finding Barry badly beaten?",
@@ -6931,83 +6358,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45825",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 2), what protection does Barry ask the FBI for in exchange for evidence about the Chechens?",
-    "answers": [
-      "An acting scholarship",
-      "A payment to his family",
-      "An immediate pardon for Gene",
-      "Witness protection and transfer"
-    ],
-    "correctAnswer": "Witness protection and transfer",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E02",
-      "Episode title: bestest place on the earth",
-      "Storyline: what protection does Barry ask the FBI for in exchange for evidence about the Chechens",
-      "Answer fact: Witness protection and transfer",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Barry",
-      "Actor: Bill Hader"
-    ]
-  },
-  {
-    "id": "tv_45826",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 2), what makes Sally feel secure when she visits Barry in prison?",
-    "answers": [
-      "Her mother's reassurance",
-      "Being with Barry",
-      "Gene's promise to support her",
-      "A new job offer from Lindsay"
-    ],
-    "correctAnswer": "Being with Barry",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E02",
-      "Episode title: bestest place on the earth",
-      "Storyline: what makes Sally feel secure when she visits Barry in prison",
-      "Answer fact: Being with Barry",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Sally",
-      "Character: Barry",
-      "Actor: Sarah Goldberg",
-      "Actor: Bill Hader"
-    ]
-  },
-  {
-    "id": "tv_45827",
+    "id": "tv_45810",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 2), why does Sally have trouble restarting her acting career?",
@@ -7044,46 +6395,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45828",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 2), what alternative occupation does Gene suggest to Sally?",
-    "answers": [
-      "Working in construction",
-      "Teaching acting",
-      "Becoming a police officer",
-      "Editing a television programme"
-    ],
-    "correctAnswer": "Teaching acting",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E02",
-      "Episode title: bestest place on the earth",
-      "Storyline: what alternative occupation does Gene suggest to Sally",
-      "Answer fact: Teaching acting",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Gene",
-      "Character: Sally",
-      "Actor: Henry Winkler",
-      "Actor: Sarah Goldberg"
-    ]
-  },
-  {
-    "id": "tv_45829",
+    "id": "tv_45811",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 2), why does Gene's interview with Lon damage his credibility?",
@@ -7120,7 +6432,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45830",
+    "id": "tv_45812",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 2), what business strategy does Cristobal propose to settle disputes between rival gangs?",
@@ -7159,7 +6471,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45831",
+    "id": "tv_45813",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 2), what dangerous plan does Hank initially propose for Barry?",
@@ -7198,7 +6510,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45832",
+    "id": "tv_45814",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 2), why does Hank abandon his rescue idea and target Barry instead?",
@@ -7239,46 +6551,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45833",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 3), who recruits the would-be killers for the attempt on Barry inside prison?",
-    "answers": [
-      "Gene's lawyer Tom",
-      "Cristobal's father",
-      "Toro",
-      "Jim Moss"
-    ],
-    "correctAnswer": "Toro",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E03",
-      "Episode title: you're charming",
-      "Storyline: who recruits the would-be killers for the attempt on Barry inside prison",
-      "Answer fact: Toro",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Hank",
-      "Character: Cristobal",
-      "Actor: Anthony Carrigan",
-      "Actor: Michael Irby"
-    ]
-  },
-  {
-    "id": "tv_45834",
+    "id": "tv_45815",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 3), what demand do the Chechen elders place on Hank's new business venture?",
@@ -7315,7 +6588,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45835",
+    "id": "tv_45816",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 3), why does Lon O'Neil go to Barry in prison?",
@@ -7354,7 +6627,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45836",
+    "id": "tv_45817",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 3), what makes Barry furious when Lon questions him?",
@@ -7393,85 +6666,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45837",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 3), who intimidates the journalist after the prison interview?",
-    "answers": [
-      "Leo Cousineau",
-      "Cristobal",
-      "Jim Moss",
-      "Sally Reed"
-    ],
-    "correctAnswer": "Jim Moss",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E03",
-      "Episode title: you're charming",
-      "Storyline: who intimidates the journalist after the prison interview",
-      "Answer fact: Jim Moss",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Jim",
-      "Character: Gene",
-      "Actor: Robert Wisdom",
-      "Actor: Henry Winkler"
-    ]
-  },
-  {
-    "id": "tv_45838",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 3), what does Sally do when she starts teaching acting?",
-    "answers": [
-      "Imitates Gene's harsh classroom techniques",
-      "Uses Barry as a model actor",
-      "Refuses to let students perform",
-      "Turns every class into television auditions"
-    ],
-    "correctAnswer": "Imitates Gene's harsh classroom techniques",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E03",
-      "Episode title: you're charming",
-      "Storyline: what does Sally do when she starts teaching acting",
-      "Answer fact: Imitates Gene's harsh classroom techniques",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Sally",
-      "Character: Gene",
-      "Actor: Sarah Goldberg",
-      "Actor: Henry Winkler"
-    ]
-  },
-  {
-    "id": "tv_45839",
+    "id": "tv_45818",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 3), which student remains enthusiastic after Sally's difficult class?",
@@ -7508,87 +6703,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45840",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 3), whom does Barry ask Hank to have killed?",
-    "answers": [
-      "Gene Cousineau",
-      "Sally Reed",
-      "Albert Nguyen",
-      "Leo's son"
-    ],
-    "correctAnswer": "Gene Cousineau",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E03",
-      "Episode title: you're charming",
-      "Storyline: whom does Barry ask Hank to have killed",
-      "Answer fact: Gene Cousineau",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Barry",
-      "Character: Hank",
-      "Character: Gene",
-      "Actor: Bill Hader",
-      "Actor: Anthony Carrigan",
-      "Actor: Henry Winkler"
-    ]
-  },
-  {
-    "id": "tv_45841",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 3), why does Barry suddenly get the chance to flee jail?",
-    "answers": [
-      "Gene drops all criminal charges",
-      "A prison vehicle crashes",
-      "The hired killers disrupt his meeting with federal agents",
-      "A guard releases him after an apology"
-    ],
-    "correctAnswer": "The hired killers disrupt his meeting with federal agents",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E03",
-      "Episode title: you're charming",
-      "Storyline: why does Barry suddenly get the chance to flee jail",
-      "Answer fact: The hired killers disrupt his meeting with federal agents",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Barry",
-      "Character: Fuches",
-      "Actor: Bill Hader",
-      "Actor: Stephen Root"
-    ]
-  },
-  {
-    "id": "tv_45842",
+    "id": "tv_45819",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 4), what causes Gene to mistake his son Leo for an intruder at the cabin?",
@@ -7627,7 +6742,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45843",
+    "id": "tv_45820",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 4), why do other prisoners start respecting Fuches?",
@@ -7664,7 +6779,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45844",
+    "id": "tv_45821",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 4), how does Sally attract the attention of a new acting agent on Kristen's film set?",
@@ -7701,46 +6816,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45845",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 4), what price does Hank pay to keep the Chechen leaders from killing him?",
-    "answers": [
-      "He gives away all the company's shares",
-      "He sacrifices his relationship with Gene",
-      "He agrees to move back to Chechnya",
-      "He buries his new criminal associates alive in sand"
-    ],
-    "correctAnswer": "He buries his new criminal associates alive in sand",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E04",
-      "Episode title: it takes a psycho",
-      "Storyline: what price does Hank pay to keep the Chechen leaders from killing him",
-      "Answer fact: He buries his new criminal associates alive in sand",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Hank",
-      "Character: Cristobal",
-      "Actor: Anthony Carrigan",
-      "Actor: Michael Irby"
-    ]
-  },
-  {
-    "id": "tv_45846",
+    "id": "tv_45822",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 4), how does Cristobal react to Hank's mass killing?",
@@ -7779,7 +6855,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45847",
+    "id": "tv_45823",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 4), who actually has Cristobal killed after he tries to leave?",
@@ -7818,46 +6894,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45848",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 4), who is waiting for Sally when she returns to her apartment after the casting disappointment?",
-    "answers": [
-      "Hank",
-      "Barry",
-      "Gene",
-      "Fuches"
-    ],
-    "correctAnswer": "Barry",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E04",
-      "Episode title: it takes a psycho",
-      "Storyline: who is waiting for Sally when she returns to her apartment after the casting disappointment",
-      "Answer fact: Barry",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Sally",
-      "Character: Barry",
-      "Actor: Sarah Goldberg",
-      "Actor: Bill Hader"
-    ]
-  },
-  {
-    "id": "tv_45849",
+    "id": "tv_45824",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 4), what decision do Sally and Barry make together following his escape?",
@@ -7896,46 +6933,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45850",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 4), what is revealed in the closing scene that changes the viewer's understanding of their future?",
-    "answers": [
-      "They have moved to Gene's house",
-      "They are shown with a son in a remote home",
-      "They are still in the acting-class theatre",
-      "They have become detectives"
-    ],
-    "correctAnswer": "They are shown with a son in a remote home",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E04",
-      "Episode title: it takes a psycho",
-      "Storyline: what is revealed in the closing scene that changes the viewer's understanding of their future",
-      "Answer fact: They are shown with a son in a remote home",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Barry",
-      "Character: Sally",
-      "Actor: Bill Hader",
-      "Actor: Sarah Goldberg"
-    ]
-  },
-  {
-    "id": "tv_45851",
+    "id": "tv_45825",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 5), how is John related to the couple living under new identities in the countryside?",
@@ -7974,7 +6972,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45852",
+    "id": "tv_45826",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 5), what does Barry keep John largely ignorant of while raising him?",
@@ -8011,7 +7009,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45853",
+    "id": "tv_45827",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 5), what earlier military service does Barry idealise for his son?",
@@ -8048,7 +7046,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45854",
+    "id": "tv_45828",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 5), what has Sally developed while living under a new name?",
@@ -8085,44 +7083,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45855",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 5), how does Sally react when a co-worker makes unwanted advances at her diner?",
-    "answers": [
-      "She chokes him",
-      "She reports him to the manager",
-      "She leaves town",
-      "She asks Barry to talk to him"
-    ],
-    "correctAnswer": "She chokes him",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E05",
-      "Episode title: tricky legacies",
-      "Storyline: how does Sally react when a co-worker makes unwanted advances at her diner",
-      "Answer fact: She chokes him",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Sally",
-      "Actor: Sarah Goldberg"
-    ]
-  },
-  {
-    "id": "tv_45856",
+    "id": "tv_45829",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 5), what does John discover that encourages questions about his father's past?",
@@ -8159,7 +7120,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45857",
+    "id": "tv_45830",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 5), why does Barry distort the story of his service when talking to John?",
@@ -8196,44 +7157,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45858",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 5), which country has Gene been living in during the eight-year gap?",
-    "answers": [
-      "Bolivia",
-      "Chechnya",
-      "Israel",
-      "Canada"
-    ],
-    "correctAnswer": "Israel",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E05",
-      "Episode title: tricky legacies",
-      "Storyline: which country has Gene been living in during the eight-year gap",
-      "Answer fact: Israel",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Gene",
-      "Actor: Henry Winkler"
-    ]
-  },
-  {
-    "id": "tv_45859",
+    "id": "tv_45831",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 5), what new Hollywood project causes Gene to reappear?",
@@ -8270,7 +7194,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45860",
+    "id": "tv_45832",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 5), what does Barry decide after Sally tells him Gene has returned?",
@@ -8309,44 +7233,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45861",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 6), what is the name of Hank's successful business at the time of Fuches' prison release?",
-    "answers": [
-      "Joplin",
-      "The Raven Company",
-      "The Offshore",
-      "Nohobal"
-    ],
-    "correctAnswer": "Nohobal",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E06",
-      "Episode title: the wizard",
-      "Storyline: what is the name of Hank's successful business at the time of Fuches' prison release",
-      "Answer fact: Nohobal",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Hank",
-      "Actor: Anthony Carrigan"
-    ]
-  },
-  {
-    "id": "tv_45862",
+    "id": "tv_45833",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 6), why does Fuches now lead a hardened gang rather than act like his former self?",
@@ -8383,7 +7270,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45863",
+    "id": "tv_45834",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 6), why does Hank hire Fuches' men to provide security?",
@@ -8422,46 +7309,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45864",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 6), what argument ends the new arrangement between Hank and Fuches?",
-    "answers": [
-      "Hank offers to hire Gene",
-      "Fuches confronts Hank over his role in Cristobal's death",
-      "Hank demands a higher percentage",
-      "Fuches admits he has joined the FBI"
-    ],
-    "correctAnswer": "Fuches confronts Hank over his role in Cristobal's death",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E06",
-      "Episode title: the wizard",
-      "Storyline: what argument ends the new arrangement between Hank and Fuches",
-      "Answer fact: Fuches confronts Hank over his role in Cristobal's death",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Hank",
-      "Character: Fuches",
-      "Actor: Anthony Carrigan",
-      "Actor: Stephen Root"
-    ]
-  },
-  {
-    "id": "tv_45865",
+    "id": "tv_45835",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 6), what does Gene claim is his reason for returning to Los Angeles?",
@@ -8500,7 +7348,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45866",
+    "id": "tv_45836",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 6), why does Gene meet his son Leo again?",
@@ -8539,7 +7387,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45867",
+    "id": "tv_45837",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 6), who does Sally imagine is threatening the countryside home?",
@@ -8576,7 +7424,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45868",
+    "id": "tv_45838",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 6), which memory haunts Sally during the frightening episode at home?",
@@ -8613,7 +7461,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45869",
+    "id": "tv_45839",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 6), what dangerous mistake does Sally make when she leaves Barry a voicemail?",
@@ -8652,46 +7500,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45870",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 6), who captures Barry when he returns to Gene's home intending to kill him?",
-    "answers": [
-      "Monroe Fuches",
-      "Jim Moss",
-      "NoHo Hank",
-      "Leo Cousineau"
-    ],
-    "correctAnswer": "Jim Moss",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E06",
-      "Episode title: the wizard",
-      "Storyline: who captures Barry when he returns to Gene's home intending to kill him",
-      "Answer fact: Jim Moss",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Barry",
-      "Character: Jim",
-      "Actor: Bill Hader",
-      "Actor: Robert Wisdom"
-    ]
-  },
-  {
-    "id": "tv_45871",
+    "id": "tv_45840",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 7), what does Jim do to Barry while questioning him about Janice's death?",
@@ -8730,46 +7539,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45872",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 7), what payment made years earlier makes investigators suspicious of Gene?",
-    "answers": [
-      "The $250,000 Barry gave Gene",
-      "Gene's fees for acting class",
-      "The royalties from Joplin",
-      "The proceeds of Fuches' prison business"
-    ],
-    "correctAnswer": "The $250,000 Barry gave Gene",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E07",
-      "Episode title: a nice meal",
-      "Storyline: what payment made years earlier makes investigators suspicious of Gene",
-      "Answer fact: The $250,000 Barry gave Gene",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Barry",
-      "Character: Gene",
-      "Actor: Bill Hader",
-      "Actor: Henry Winkler"
-    ]
-  },
-  {
-    "id": "tv_45873",
+    "id": "tv_45841",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 7), how does the district attorney begin to view Gene after the financial evidence surfaces?",
@@ -8808,44 +7578,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45874",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 7), what news changes Gene's position on the proposed Hollywood film?",
-    "answers": [
-      "Daniel Day-Lewis is supposedly interested in playing him",
-      "The studio offers him full control of the script",
-      "Sally has been cast as the producer",
-      "The film has already been cancelled"
-    ],
-    "correctAnswer": "Daniel Day-Lewis is supposedly interested in playing him",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E07",
-      "Episode title: a nice meal",
-      "Storyline: what news changes Gene's position on the proposed Hollywood film",
-      "Answer fact: Daniel Day-Lewis is supposedly interested in playing him",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Gene",
-      "Actor: Henry Winkler"
-    ]
-  },
-  {
-    "id": "tv_45875",
+    "id": "tv_45842",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 7), how does the person promising Gene the film role actually know him?",
@@ -8882,7 +7615,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45876",
+    "id": "tv_45843",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 7), why does Sally return to Los Angeles with her son?",
@@ -8919,7 +7652,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45877",
+    "id": "tv_45844",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 7), where does Gene direct Sally to wait with John?",
@@ -8958,7 +7691,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45878",
+    "id": "tv_45845",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 7), why do Hank's men take Sally and John instead of Gene?",
@@ -8997,46 +7730,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45879",
-    "category": "TV",
-    "topic": "Barry",
-    "question": "In Barry (2018–2023, Series 4, Episode 7), what message does Hank send Barry after Barry escapes from Jim?",
-    "answers": [
-      "Gene has been arrested for drug trafficking",
-      "He wants Barry to return to the Marines",
-      "Meet him or Sally and John will die",
-      "Fuches has surrendered"
-    ],
-    "correctAnswer": "Meet him or Sally and John will die",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "HBO",
-      "Dark Comedy",
-      "Crime Drama",
-      "Hitman Drama",
-      "2010s and 2020s Television",
-      "Programme: Barry (2018–2023)",
-      "Series: 4",
-      "Broadcast year: 2023",
-      "Episode: S04E07",
-      "Episode title: a nice meal",
-      "Storyline: what message does Hank send Barry after Barry escapes from Jim",
-      "Answer fact: Meet him or Sally and John will die",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Barry TV series Season 3/4 episode synopses",
-      "Character: Hank",
-      "Character: Barry",
-      "Actor: Anthony Carrigan",
-      "Actor: Bill Hader"
-    ]
-  },
-  {
-    "id": "tv_45880",
+    "id": "tv_45846",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), what does Sally finally tell her son John about the family's life in hiding?",
@@ -9073,7 +7767,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45881",
+    "id": "tv_45847",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), what does Fuches offer Hank if Hank admits what happened to Cristobal?",
@@ -9112,7 +7806,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45882",
+    "id": "tv_45848",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), why can Hank not bring himself to tell the whole truth about Cristobal's death?",
@@ -9149,7 +7843,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45883",
+    "id": "tv_45849",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), who protects John during the shooting at Nohobal?",
@@ -9186,7 +7880,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45884",
+    "id": "tv_45850",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), what does Fuches do after John is safe?",
@@ -9225,7 +7919,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45885",
+    "id": "tv_45851",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), what does Sally ask Barry to do when Gene becomes the chief murder suspect?",
@@ -9264,7 +7958,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45886",
+    "id": "tv_45852",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), why does Barry refuse Sally's appeal at first?",
@@ -9303,7 +7997,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45887",
+    "id": "tv_45853",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), what does Sally do while Barry is asleep?",
@@ -9342,7 +8036,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45888",
+    "id": "tv_45854",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), who convinces Barry that surrendering could be the right choice?",
@@ -9381,7 +8075,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45889",
+    "id": "tv_45855",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), what is Sally's later occupation after Barry's death?",
@@ -9418,7 +8112,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45890",
+    "id": "tv_45856",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), which stage play does Sally direct when John is a teenager?",
@@ -9455,7 +8149,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45891",
+    "id": "tv_45857",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), how does the fictional film The Mask Collector distort Gene's role in Janice's death?",
@@ -9494,7 +8188,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45892",
+    "id": "tv_45858",
     "category": "TV",
     "topic": "Barry",
     "question": "In Barry (2018–2023, Series 4, Episode 8), what military honour does the fictional film claim for Barry after his death?",
@@ -9531,7 +8225,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45893",
+    "id": "tv_45859",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which technical category did Barry win at the 2022 Emmys for the episode starting now?",
@@ -9568,7 +8262,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45894",
+    "id": "tv_45860",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry episode earned a 2022 Emmy for single-camera comedy picture editing?",
@@ -9605,7 +8299,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45895",
+    "id": "tv_45861",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which technician won a 2022 Emmy for editing the Barry episode starting now?",
@@ -9642,7 +8336,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45896",
+    "id": "tv_45862",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), who won the 2022 Emmy for stunt coordination on Barry?",
@@ -9679,7 +8373,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45897",
+    "id": "tv_45863",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which actor received a 2022 Emmy nomination for playing NoHo Hank?",
@@ -9716,7 +8410,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45898",
+    "id": "tv_45864",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which veteran actor received a 2022 Emmy nomination for playing Gene Cousineau?",
@@ -9753,7 +8447,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45899",
+    "id": "tv_45865",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which actor was nominated for the Outstanding Lead Actor in a Comedy Series Emmy in 2022?",
@@ -9790,7 +8484,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45900",
+    "id": "tv_45866",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry episode earned Bill Hader a 2022 Emmy nomination for comedy directing?",
@@ -9827,7 +8521,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45901",
+    "id": "tv_45867",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), who wrote the Barry episode 710N that was nominated for a 2022 Emmy in comedy writing?",
@@ -9864,7 +8558,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45902",
+    "id": "tv_45868",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry episode earned Bill Hader and Alec Berg a joint 2022 comedy-writing Emmy nomination?",
@@ -9901,7 +8595,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45903",
+    "id": "tv_45869",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), for which Barry episode was Carl Herse nominated for a 2022 cinematography Emmy?",
@@ -9938,7 +8632,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45904",
+    "id": "tv_45870",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which award did Bill Hader win at the 2022 Hollywood Critics Association TV Awards for Barry?",
@@ -9975,7 +8669,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45905",
+    "id": "tv_45871",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry actor won the 2022 Hollywood Critics Association TV Award for Supporting Actor in a Cable Comedy?",
@@ -10012,7 +8706,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45906",
+    "id": "tv_45872",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry episode earned Bill Hader the 2022 Hollywood Critics Association TV Award for comedy directing?",
@@ -10049,7 +8743,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45907",
+    "id": "tv_45873",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which 2023 Directors Guild comedy directing award did Bill Hader win for Barry's third season?",
@@ -10086,7 +8780,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45908",
+    "id": "tv_45874",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which episode of Barry was recognised in Bill Hader's 2023 Directors Guild comedy directing win?",
@@ -10123,7 +8817,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45909",
+    "id": "tv_45875",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which member of Barry's cast won the 2023 Critics' Choice Television Award for Supporting Actor in a Comedy Series?",
@@ -10160,7 +8854,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45910",
+    "id": "tv_45876",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which prize at the 2023 Satellite Awards went to Barry?",
@@ -10197,7 +8891,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45911",
+    "id": "tv_45877",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry performer was nominated for Outstanding Lead Actor in a Comedy Series at the 2023 Emmys?",
@@ -10234,7 +8928,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45912",
+    "id": "tv_45878",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which two Barry cast members were nominated for Outstanding Supporting Actor in a Comedy Series at the 2023 Emmys?",
@@ -10271,7 +8965,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45913",
+    "id": "tv_45879",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry episode gave Bill Hader 2023 Emmy nominations in both directing and writing?",
@@ -10308,7 +9002,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45914",
+    "id": "tv_45880",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry episode was nominated for the 2023 Emmy in sound editing?",
@@ -10345,7 +9039,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45915",
+    "id": "tv_45881",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry episode earned Carl Herse a cinematography Emmy nomination in 2023?",
@@ -10382,7 +9076,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45916",
+    "id": "tv_45882",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which technician won the 2023 Emmy for stunt coordination on Barry?",
@@ -10419,7 +9113,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45917",
+    "id": "tv_45883",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), for which Barry finale episode were Franky Guttman and Ali Greer nominated for a 2023 picture editing Emmy?",
@@ -10456,7 +9150,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45918",
+    "id": "tv_45884",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which achievement did Carl Herse win at the 2024 American Society of Cinematographers Awards for Barry?",
@@ -10493,7 +9187,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45919",
+    "id": "tv_45885",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry episode was the subject of Carl Herse's 2024 cinematography society win?",
@@ -10530,7 +9224,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45920",
+    "id": "tv_45886",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry star was nominated for a 2024 Golden Globe in television comedy acting?",
@@ -10567,7 +9261,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45921",
+    "id": "tv_45887",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which television category included Barry among the nominees at the 2024 Golden Globes?",
@@ -10604,7 +9298,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45922",
+    "id": "tv_45888",
     "category": "TV",
     "topic": "Barry",
     "question": "For Barry (2018–2023), which Barry actor was nominated for Supporting Actor in a Comedy Series at the 2024 Critics' Choice Television Awards?",
@@ -10643,8 +9337,8 @@ const auditQuestions = [
 ];
 questions.push(...auditQuestions);
 
-if(questions.length!==282||new Set(questions.map(q=>q.id)).size!==282||
-new Set(questions.map(q=>q.question.toLowerCase())).size!==282||
+if(questions.length!==248||new Set(questions.map(q=>q.id)).size!==248||
+new Set(questions.map(q=>q.question.toLowerCase())).size!==248||
 questions.some((q,i)=>q.id!==(i<96?'tv_'+(30377+i):'tv_'+(45737+i-96))||q.category!=='TV'||q.topic!=='Barry'||
 !q.tags.includes('Programme: Barry (2018–2023)')||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
