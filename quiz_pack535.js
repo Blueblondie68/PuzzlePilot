@@ -4732,14 +4732,14 @@ const questions = [
     "id": "tv_47118",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Whom does Frank unexpectedly join forces with after Governor Mendez sidelines the NYPD in Blue Bloods?",
+    "question": "Why does Frank object to Governor Mendez's state-trooper initiative in Blue Bloods?",
     "answers": [
-      "Mayor Margaret Dutton",
-      "Prisoner Victor Lugo",
-      "Archbishop Kearns",
-      "A visiting congressman"
+      "It excludes the NYPD from a major public-safety operation",
+      "It ends police pension payments",
+      "It closes the district attorney's office",
+      "It forbids crime-scene photography"
     ],
-    "correctAnswer": "Mayor Margaret Dutton",
+    "correctAnswer": "It excludes the NYPD from a major public-safety operation",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -4758,10 +4758,10 @@ const questions = [
       "Episode: S08E09",
       "Episode title: Pain Killers",
       "Original airdate: 2017-12-01",
-      "Storyline: Frank teams up with mayor to oppose governor",
+      "Storyline: Mendez excludes city police from state initiative",
       "Character: Frank Reagan",
       "Actor: Tom Selleck",
-      "Answer fact: Mayor Margaret Dutton"
+      "Answer fact: It excludes the NYPD from a major public-safety operation"
     ]
   },
   {
@@ -4840,14 +4840,14 @@ const questions = [
     "id": "tv_47121",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Which repeat mob suspect commands the car-theft operation in Blue Bloods?",
+    "question": "What happens when Danny tries to unsettle Victor Lugo by showing an accomplice being questioned in Blue Bloods?",
     "answers": [
-      "Thomas Wilder",
-      "Carlo Tomassi",
-      "Duwann Wilson",
-      "Victor Lugo"
+      "Lugo escapes through the station roof",
+      "The tactic fails when Lugo's lawyer arrives",
+      "Lugo immediately surrenders",
+      "The associate confesses to murder"
     ],
-    "correctAnswer": "Victor Lugo",
+    "correctAnswer": "The tactic fails when Lugo's lawyer arrives",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -4866,10 +4866,10 @@ const questions = [
       "Episode: S08E10",
       "Episode title: Heavy Is the Head",
       "Original airdate: 2017-12-08",
-      "Storyline: Victor Lugo runs vehicle theft ring",
+      "Storyline: Lugo's lawyer spoils interrogation strategy",
       "Character: Danny Reagan",
       "Actor: Donnie Wahlberg",
-      "Answer fact: Victor Lugo"
+      "Answer fact: The tactic fails when Lugo's lawyer arrives"
     ]
   },
   {
@@ -6496,14 +6496,14 @@ const questions = [
     "id": "tv_47167",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "What did Linda's brother Jimmy take without permission from Danny in Blue Bloods?",
+    "question": "What sort of incident initially draws scrutiny to Frank's former partner Lenny Ross at a New York club in Blue Bloods?",
     "answers": [
-      "His service weapon",
-      "His credit card",
-      "His police badge",
-      "His patrol car"
+      "A theft at a bank",
+      "A protest outside a hospital",
+      "A suspected terrorist attack",
+      "A shooting at the strip club"
     ],
-    "correctAnswer": "His credit card",
+    "correctAnswer": "A shooting at the strip club",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -6522,10 +6522,10 @@ const questions = [
       "Episode: S08E17",
       "Episode title: Close Calls",
       "Original airdate: 2018-03-30",
-      "Storyline: Jimmy steals Danny's card while in trouble",
+      "Storyline: Strip club shooting prompts questions about Lenny Ross",
       "Character: Danny Reagan",
       "Actor: Donnie Wahlberg",
-      "Answer fact: His credit card"
+      "Answer fact: A shooting at the strip club"
     ]
   },
   {
@@ -6640,14 +6640,14 @@ const questions = [
     "id": "tv_47171",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Where has undercover officer Tariq spent several years gathering information in Blue Bloods?",
+    "question": "How long has officer Tariq spent undercover before asking Jamie for help leaving his assignment in Blue Bloods?",
     "answers": [
-      "A campaign office",
-      "A mosque",
-      "A prison laundry",
-      "A school campus"
+      "Exactly two months",
+      "Several years",
+      "Only one night",
+      "Less than one week"
     ],
-    "correctAnswer": "A mosque",
+    "correctAnswer": "Several years",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -6666,10 +6666,10 @@ const questions = [
       "Episode: S08E17",
       "Episode title: Close Calls",
       "Original airdate: 2018-03-30",
-      "Storyline: Tariq undercover for years at mosque",
+      "Storyline: Tariq seeks release after years undercover",
       "Character: Jamie Reagan",
       "Actor: Will Estes",
-      "Answer fact: A mosque"
+      "Answer fact: Several years"
     ]
   },
   {
