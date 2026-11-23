@@ -4371,14 +4371,14 @@ const questions = [
     "id": "tv_47403",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "What sort of incident makes Joe Hill a sudden public hero while off duty in Blue Bloods?",
+    "question": "What family revelation threatens to overshadow public coverage of Joe Hill's off-duty heroism in Blue Bloods?",
     "answers": [
-      "He saves a child from a river",
-      "He thwarts an armed bank robbery",
-      "He prevents an aircraft hijacking",
-      "He stops a kidnapping"
+      "He is secretly engaged to Eddie",
+      "He is a retired police commissioner",
+      "His father was a judge",
+      "He is the late Joe Reagan's son"
     ],
-    "correctAnswer": "He stops a kidnapping",
+    "correctAnswer": "He is the late Joe Reagan's son",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -4397,10 +4397,10 @@ const questions = [
       "Episode: S11E02",
       "Episode title: In the Name of the Father",
       "Original airdate: 2020-12-11",
-      "Storyline: Joe foils off duty kidnapping caught on camera",
+      "Storyline: Joe Hill's connection to deceased Joe Reagan threatens to become public",
       "Character: Joe Hill",
       "Actor: Will Hochman",
-      "Answer fact: He stops a kidnapping"
+      "Answer fact: He is the late Joe Reagan's son"
     ]
   },
   {
@@ -4767,14 +4767,14 @@ const questions = [
     "id": "tv_47414",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "What larger public controversy is reflected in the vandalism of Sean Reagan's school locker in Blue Bloods?",
+    "question": "Who wrote the Blue Bloods Series 11 episode Spilling Secrets, featuring Eddie and Witten's active-shooter controversy?",
     "answers": [
-      "A protest about university fees",
-      "Opposition to a railway extension",
-      "Anti-police hostility towards the Reagan family",
-      "Disputes over a new football club"
+      "Kevin Riley",
+      "Brian Burns",
+      "Daniel Truly",
+      "Ian Biederman"
     ],
-    "correctAnswer": "Anti-police hostility towards the Reagan family",
+    "correctAnswer": "Daniel Truly",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -4793,10 +4793,11 @@ const questions = [
       "Episode: S11E05",
       "Episode title: Spilling Secrets",
       "Original airdate: 2021-01-22",
-      "Storyline: Sean receives hostility linked to police family",
-      "Character: Sean Reagan",
-      "Actor: Andrew Terraciano",
-      "Answer fact: Anti-police hostility towards the Reagan family"
+      "Storyline: Spilling Secrets written by Daniel Truly",
+      "Character: Eddie Janko",
+      "Actor: Vanessa Ray",
+      "Answer fact: Daniel Truly",
+      "Writer: Daniel Truly"
     ]
   },
   {
@@ -4947,14 +4948,14 @@ const questions = [
     "id": "tv_47419",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "What change in New York criminal procedure frustrates Erin when a dangerous offender returns to the streets in Blue Bloods?",
+    "question": "What professional consequence follows when Erin pursues a freed violent offender against her new boss's wishes in Blue Bloods?",
     "answers": [
-      "Changes to election law",
-      "Police pension regulations",
-      "Marriage licence requirements",
-      "New bail laws"
+      "She is assigned overseas",
+      "She clashes with the new district attorney",
+      "She is promoted to police captain",
+      "She resigns to practise medicine"
     ],
-    "correctAnswer": "New bail laws",
+    "correctAnswer": "She clashes with the new district attorney",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -4973,10 +4974,10 @@ const questions = [
       "Episode: S11E06",
       "Episode title: The New Normal",
       "Original airdate: 2021-02-05",
-      "Storyline: Erin challenges release under new bail rules",
+      "Storyline: Erin's handling of released offender causes conflict with new DA",
       "Character: Erin Reagan",
       "Actor: Bridget Moynahan",
-      "Answer fact: New bail laws"
+      "Answer fact: She clashes with the new district attorney"
     ]
   },
   {
@@ -5883,14 +5884,14 @@ const questions = [
     "id": "tv_47445",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Whom does the family first fear was inside the car that explodes in the Series 11 Blue Bloods finale?",
+    "question": "Which actress plays medical examiner Dr Faith Marconi in the Blue Bloods Series 11 finale?",
     "answers": [
-      "Anthony Abetemarco",
-      "Joe Hill",
-      "Frank Reagan",
-      "Abigail Baker"
+      "Whoopi Goldberg",
+      "Annabella Sciorra",
+      "Gloria Reuben",
+      "Callie Thorne"
     ],
-    "correctAnswer": "Joe Hill",
+    "correctAnswer": "Annabella Sciorra",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -5909,10 +5910,10 @@ const questions = [
       "Episode: S11E15",
       "Episode title: The End",
       "Original airdate: 2021-05-14",
-      "Storyline: Exploding car raises fears Joe was killed",
-      "Character: Danny Reagan",
-      "Actor: Donnie Wahlberg",
-      "Answer fact: Joe Hill"
+      "Storyline: Annabella Sciorra guests as medical examiner Faith Marconi",
+      "Character: Faith Marconi",
+      "Actor: Annabella Sciorra",
+      "Answer fact: Annabella Sciorra"
     ]
   },
   {
