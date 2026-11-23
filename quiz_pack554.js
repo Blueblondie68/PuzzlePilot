@@ -8880,7 +8880,7 @@ const questions = [
 ];
 if(questions.length!==239||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(34162+i)||q.category!=='TV'||q.topic!=='Blue Heelers'||
+questions.some((q,i)=>q.id!=='tv_'+((i<231)?(34162+i):(47899+i-231))||q.category!=='TV'||q.topic!=='Blue Heelers'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<20||
 q.dailyEligible!==true||!q.tags.some(t=>t.startsWith('Episode context: '))||
