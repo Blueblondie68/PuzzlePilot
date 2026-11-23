@@ -1,11 +1,12 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 520: 90210 (2008–2013), Series 3 (2010–2011)
-// 204 distinct season-specific questions: 66 originals and 138 extra character, storyline and consequence questions.
-// Comprehensive episode-by-episode audit 23 November 2026; variable question count by episode.
-// Original IDs tv_30005–tv_30070 preserved; additional IDs tv_44927–tv_45064.
-// Episode narratives researched:
+// 206 distinct story and consequence questions: 66 preserved originals and 140 audited additions.
+// Original IDs tv_30005–tv_30070 preserved; supplemental IDs tv_44927–tv_45066.
+// Full storyline audit 23 November 2026: 22 episodes, no fixed quota; duplicate/low-value questions removed before approval.
+// Sources:
 // https://www.tvmaze.com/seasons/2441/90210-season-3/episodeguide
 // https://www.tvguide.com/tvshows/90210/episodes-season-3/1000334192/
-// Series 4 and 5 still require audit; do not colour the 2008 series purple yet.
+// https://en.wikipedia.org/wiki/90210_season_3
+// Series 4 and 5 still to audit; distinct from original Beverly Hills, 90210 (1990–2000).
 'use strict';
 const questions = [
   {
@@ -2920,14 +2921,14 @@ const auditQuestions = [
     "id": "tv_44943",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 3), what is the consequence after footage of Adrianna performing the stolen song spreads?",
+    "question": "In 90210 (2008 series, Series 3, Episode 3), at whose memorial service does Adrianna perform a song she took from his songbook?",
     "answers": [
-      "Her school immediately closes",
-      "The singer offers her a scholarship",
-      "She is appointed school president",
-      "People notice her performance online, creating trouble over the song"
+      "Navid Shirazi",
+      "Teddy Montgomery",
+      "Javier",
+      "Ryan Matthews"
     ],
-    "correctAnswer": "People notice her performance online, creating trouble over the song",
+    "correctAnswer": "Javier",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -2943,8 +2944,8 @@ const auditQuestions = [
       "Broadcast year: 2010",
       "Episode: S03E03",
       "Episode title: 2021 Vision",
-      "Storyline: what is the consequence after footage of Adrianna performing the stolen song spreads",
-      "Answer fact: People notice her performance online, creating trouble over the song",
+      "Storyline: Adrianna sings Javier's stolen song at his memorial service",
+      "Answer fact: Javier",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
@@ -2954,44 +2955,6 @@ const auditQuestions = [
   },
   {
     "id": "tv_44944",
-    "category": "TV",
-    "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 4), who organises the choreographed dance for Silver's cancer-awareness fundraiser?",
-    "answers": [
-      "A producer named Victor",
-      "A theatre student named Ian",
-      "A singer named Javier",
-      "An acting coach named Brenda"
-    ],
-    "correctAnswer": "A theatre student named Ian",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2010",
-      "Episode: S03E04",
-      "Episode title: The Bachelors",
-      "Storyline: who organises the choreographed dance for Silver's cancer-awareness fundraiser",
-      "Answer fact: A theatre student named Ian",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Silver",
-      "Character: Teddy",
-      "Actor: Jessica Stroup",
-      "Actor: Trevor Donovan"
-    ]
-  },
-  {
-    "id": "tv_44945",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 4), which students are enlisted as potential dates in the charity bachelor auction?",
@@ -3033,7 +2996,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44946",
+    "id": "tv_44945",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 4), what sparks an argument during preparations for the auction?",
@@ -3069,7 +3032,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44947",
+    "id": "tv_44946",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 4), why does Annie agree to a money-making arrangement she had previously questioned?",
@@ -3107,7 +3070,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44948",
+    "id": "tv_44947",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 4), what hidden ordeal do Annie and Adrianna discover Naomi has endured?",
@@ -3147,7 +3110,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44949",
+    "id": "tv_44948",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 4), what interrupts Ivy and Dixon's plan for a night together?",
@@ -3185,7 +3148,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44950",
+    "id": "tv_44949",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 5), what do Naomi, Silver and Adrianna hope to obtain by approaching Mr Cannon?",
@@ -3225,7 +3188,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44951",
+    "id": "tv_44950",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 5), why does their plan to expose Mr Cannon become dangerous?",
@@ -3263,43 +3226,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44952",
-    "category": "TV",
-    "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 5), what is Teddy and Ian's punishment related to?",
-    "answers": [
-      "Cheating in a tennis competition",
-      "An argument over school fees",
-      "A fight between them",
-      "Stolen stage equipment"
-    ],
-    "correctAnswer": "A fight between them",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2010",
-      "Episode: S03E05",
-      "Episode title: Catch Me If You Cannon",
-      "Storyline: what is Teddy and Ian's punishment related to",
-      "Answer fact: A fight between them",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Teddy",
-      "Actor: Trevor Donovan"
-    ]
-  },
-  {
-    "id": "tv_44953",
+    "id": "tv_44951",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 5), who applies to work for Jen while she is expecting her baby?",
@@ -3337,7 +3264,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44954",
+    "id": "tv_44952",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 5), how does Dixon react after becoming frightened about his health?",
@@ -3375,7 +3302,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44955",
+    "id": "tv_44953",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 5), what does Ivy do after Dixon distances himself?",
@@ -3413,7 +3340,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44956",
+    "id": "tv_44954",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 6), how does Jen react when she learns of Naomi's assault?",
@@ -3451,7 +3378,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44957",
+    "id": "tv_44955",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 6), who encourages Naomi to report the assault even though his own career might be affected?",
@@ -3489,7 +3416,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44958",
+    "id": "tv_44956",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 6), how does Adrianna's manager Victor pressure her at a photography session?",
@@ -3525,43 +3452,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44959",
-    "category": "TV",
-    "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 6), what is Liam's unusual public-facing role at his new shop job?",
-    "answers": [
-      "Reading news reports to shoppers",
-      "Presenting a cooking demonstration",
-      "Working shirtless in the display window",
-      "Performing as a magician"
-    ],
-    "correctAnswer": "Working shirtless in the display window",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2010",
-      "Episode: S03E06",
-      "Episode title: How Much is That Liam in the Window",
-      "Storyline: what is Liam's unusual public-facing role at his new shop job",
-      "Answer fact: Working shirtless in the display window",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Liam",
-      "Actor: Matt Lanter"
-    ]
-  },
-  {
-    "id": "tv_44960",
+    "id": "tv_44957",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 6), what does Dixon not yet know when he apologises to Ivy for their break-up?",
@@ -3599,7 +3490,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44961",
+    "id": "tv_44958",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 6), who reveals a troubling story about his earlier life to Laurel and Ivy?",
@@ -3635,7 +3526,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44962",
+    "id": "tv_44959",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 7), what personal sacrifice may Ryan have to make if Naomi formally pursues a case against Mr Cannon?",
@@ -3673,7 +3564,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44963",
+    "id": "tv_44960",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 7), who unwittingly helps Naomi in her case despite wanting to pursue her romantically?",
@@ -3709,7 +3600,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44964",
+    "id": "tv_44961",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 7), what does Ivy decide to confess to Dixon?",
@@ -3747,7 +3638,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44965",
+    "id": "tv_44962",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 7), which formal occasion do Navid and Silver attend together?",
@@ -3785,7 +3676,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44966",
+    "id": "tv_44963",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 7), what contrast does the event called The Undies present to the formal school awards?",
@@ -3825,7 +3716,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44967",
+    "id": "tv_44964",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 7), who joins Annie, Teddy and Liam at the alternative beach-club ceremony?",
@@ -3863,18 +3754,18 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44968",
+    "id": "tv_44965",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 8), which celebrity does Victor arrange as Adrianna's date for her magazine-premiere party?",
+    "question": "In 90210 (2008 series, Series 3, Episode 7), what career consequence follows Ryan backing Naomi's formal complaint against Mr Cannon?",
     "answers": [
-      "Justin Timberlake",
-      "Joe Jonas",
-      "Snoop Dogg",
-      "Bruno Mars"
+      "He is suspended from teaching",
+      "He receives a promotion",
+      "He transfers to a new school",
+      "He resigns to become a singer"
     ],
-    "correctAnswer": "Joe Jonas",
-    "difficulty": "Medium",
+    "correctAnswer": "He is suspended from teaching",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -3887,19 +3778,21 @@ const auditQuestions = [
       "Format: Written Quiz",
       "Series: 3",
       "Broadcast year: 2010",
-      "Episode: S03E08",
-      "Episode title: Mother Dearest",
-      "Storyline: which celebrity does Victor arrange as Adrianna's date for her magazine-premiere party",
-      "Answer fact: Joe Jonas",
+      "Episode: S03E07",
+      "Episode title: I See London, I See France...",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
-      "Character: Adrianna",
-      "Actor: Jessica Lowndes"
+      "Storyline: what career consequence follows Ryan backing Naomi's formal complaint against Mr Cannon?",
+      "Answer fact: He is suspended from teaching",
+      "Character: Ryan",
+      "Character: Naomi",
+      "Actor: Ryan Eggold",
+      "Actor: AnnaLynne McCord"
     ]
   },
   {
-    "id": "tv_44969",
+    "id": "tv_44966",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 8), what does Adrianna have to do to Navid to maintain her celebrity publicity arrangement?",
@@ -3937,7 +3830,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44970",
+    "id": "tv_44967",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 8), what surprises Annie and Dixon when they visit their father?",
@@ -3975,7 +3868,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44971",
+    "id": "tv_44968",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 8), what does Jen decide after struggling with parenting and fearing she is an unsuitable mother?",
@@ -4013,7 +3906,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44972",
+    "id": "tv_44969",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 8), what unusual revenge plan do Naomi and Ivy use against Oscar?",
@@ -4051,7 +3944,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44973",
+    "id": "tv_44970",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 8), why does Navid ask Silver to help investigate his father's business?",
@@ -4089,7 +3982,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44974",
+    "id": "tv_44971",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 9), what does Teddy discover when visiting a West Hollywood bar without his wallet?",
@@ -4125,7 +4018,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44975",
+    "id": "tv_44972",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 9), what personal milestone does Teddy's visit to the bar represent?",
@@ -4161,7 +4054,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44976",
+    "id": "tv_44973",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 9), what causes Annie to feel humiliated before becoming intimate with Charlie?",
@@ -4197,7 +4090,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44977",
+    "id": "tv_44974",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 9), who helps Ryan navigate caring for his son after Jen leaves?",
@@ -4235,7 +4128,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44978",
+    "id": "tv_44975",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 9), what happens between Ryan and Debbie as they grow closer?",
@@ -4273,7 +4166,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44979",
+    "id": "tv_44976",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 9), why is Navid distressed following his investigation of his father?",
@@ -4309,7 +4202,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44980",
+    "id": "tv_44977",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 9), to whom does Navid turn for support while Adrianna becomes increasingly preoccupied with fame?",
@@ -4347,43 +4240,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44981",
-    "category": "TV",
-    "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 10), how does Naomi initially try to impress Ivy's surfer friend Zach?",
-    "answers": [
-      "By buying a racehorse",
-      "By writing him a song",
-      "By taking up acting",
-      "By pretending she knows how to surf"
-    ],
-    "correctAnswer": "By pretending she knows how to surf",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2010",
-      "Episode: S03E10",
-      "Episode title: Best Lei'd Plans",
-      "Storyline: how does Naomi initially try to impress Ivy's surfer friend Zach",
-      "Answer fact: By pretending she knows how to surf",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Naomi",
-      "Actor: AnnaLynne McCord"
-    ]
-  },
-  {
-    "id": "tv_44982",
+    "id": "tv_44978",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 10), what are Annie and Dixon's efforts to help Debbie dating based on?",
@@ -4423,7 +4280,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44983",
+    "id": "tv_44979",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 10), what happens when Debbie goes on one of her new dates?",
@@ -4461,7 +4318,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44984",
+    "id": "tv_44980",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 10), why does Ivy try to rebuild ties with her father?",
@@ -4497,7 +4354,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44985",
+    "id": "tv_44981",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 10), what makes Teddy react jealously during the beach luau?",
@@ -4533,7 +4390,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44986",
+    "id": "tv_44982",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 10), how does Adrianna's success increasingly affect her relationship with Navid?",
@@ -4571,7 +4428,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44987",
+    "id": "tv_44983",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 11), what extravagant festive additions does Adrianna arrange for her mansion party?",
@@ -4607,7 +4464,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44988",
+    "id": "tv_44984",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 11), what does Victor threaten to release to the press after Adrianna's success?",
@@ -4643,7 +4500,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44989",
+    "id": "tv_44985",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 11), why does Annie miss Adrianna's party?",
@@ -4681,7 +4538,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44990",
+    "id": "tv_44986",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 11), how does Annie and Liam's relationship change while she looks after him?",
@@ -4719,17 +4576,17 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44991",
+    "id": "tv_44987",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 11), what important event does Dixon accidentally witness about Teddy?",
+    "question": "In 90210 (2008 series, Series 3, Episode 11), what do Teddy and Ian decide about whether to reveal their relationship?",
     "answers": [
-      "Teddy proposing to Silver",
-      "Teddy confronting Mr Cannon",
-      "Teddy kissing Ian",
-      "Teddy winning a tennis competition"
+      "To announce their engagement",
+      "To tell the entire school immediately",
+      "To keep their romance secret",
+      "To stop seeing one another"
     ],
-    "correctAnswer": "Teddy kissing Ian",
+    "correctAnswer": "To keep their romance secret",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -4745,8 +4602,8 @@ const auditQuestions = [
       "Broadcast year: 2010",
       "Episode: S03E11",
       "Episode title: Holiday Madness",
-      "Storyline: what important event does Dixon accidentally witness about Teddy",
-      "Answer fact: Teddy kissing Ian",
+      "Storyline: Teddy and Ian agree not to disclose their relationship publicly",
+      "Answer fact: To keep their romance secret",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
@@ -4757,7 +4614,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44992",
+    "id": "tv_44988",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 11), what do Navid and Silver finally admit to each other at the end of the evening?",
@@ -4795,17 +4652,17 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44993",
+    "id": "tv_44989",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 11), what disturbing surprise awaits Naomi when she returns home after the party?",
+    "question": "In 90210 (2008 series, Series 3, Episode 11), who unexpectedly awaits Naomi when she returns to her home after the festive party?",
     "answers": [
-      "An unexpected visitor",
-      "A flooded swimming pool",
-      "A television crew",
-      "A letter from her university"
+      "Oscar",
+      "Ryan Matthews",
+      "Mr Cannon",
+      "Max Miller"
     ],
-    "correctAnswer": "An unexpected visitor",
+    "correctAnswer": "Mr Cannon",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -4821,8 +4678,8 @@ const auditQuestions = [
       "Broadcast year: 2010",
       "Episode: S03E11",
       "Episode title: Holiday Madness",
-      "Storyline: what disturbing surprise awaits Naomi when she returns home after the party",
-      "Answer fact: An unexpected visitor",
+      "Storyline: Mr Cannon lies in wait for Naomi before hostage crisis",
+      "Answer fact: Mr Cannon",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
@@ -4831,18 +4688,18 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44994",
+    "id": "tv_44990",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 12), why does Mr Cannon return to Naomi's home?",
+    "question": "In 90210 (2008 series, Series 3, Episode 11), why does Ivy turn back towards her mother during the festive period?",
     "answers": [
-      "To return her school textbooks",
-      "To hold her captive and terrorise her",
-      "To apologise for his earlier actions",
-      "To ask her to direct a film"
+      "Her father's plans for reconciliation disappoint her",
+      "Her mother promises to buy her a car",
+      "Oscar proposes marriage to Ivy",
+      "Dixon moves overseas"
     ],
-    "correctAnswer": "To hold her captive and terrorise her",
-    "difficulty": "Medium",
+    "correctAnswer": "Her father's plans for reconciliation disappoint her",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -4854,20 +4711,20 @@ const auditQuestions = [
       "Programme: 90210 (2008 series)",
       "Format: Written Quiz",
       "Series: 3",
-      "Broadcast year: 2011",
-      "Episode: S03E12",
-      "Episode title: Liars",
-      "Storyline: why does Mr Cannon return to Naomi's home",
-      "Answer fact: To hold her captive and terrorise her",
+      "Broadcast year: 2010",
+      "Episode: S03E11",
+      "Episode title: Holiday Madness",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
-      "Character: Naomi",
-      "Actor: AnnaLynne McCord"
+      "Storyline: why does Ivy turn back towards her mother during the festive period?",
+      "Answer fact: Her father's plans for reconciliation disappoint her",
+      "Character: Ivy",
+      "Actor: Gillian Zinser"
     ]
   },
   {
-    "id": "tv_44995",
+    "id": "tv_44991",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 12), whom does Mr Cannon also lure into Naomi's dangerous hostage situation?",
@@ -4905,7 +4762,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44996",
+    "id": "tv_44992",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 12), how does Dixon respond after learning about Teddy and Ian?",
@@ -4943,7 +4800,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44997",
+    "id": "tv_44993",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 12), what family newcomer immediately irritates Annie?",
@@ -4979,7 +4836,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44998",
+    "id": "tv_44994",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 12), what emotional fear follows Ivy's surfing fall?",
@@ -5015,17 +4872,17 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_44999",
+    "id": "tv_44995",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 12), what happens to Adrianna's public attempt to explain her scandal on a talk show?",
+    "question": "In 90210 (2008 series, Series 3, Episode 12), who interrupts Adrianna's television interview to give a different account of her controversy?",
     "answers": [
-      "The host offers her a record contract",
-      "Navid proposes marriage on air",
-      "She is blindsided by an unexpected guest",
-      "She wins a television talent contest"
+      "Navid Shirazi",
+      "Liam Court",
+      "Victor",
+      "Ryan Matthews"
     ],
-    "correctAnswer": "She is blindsided by an unexpected guest",
+    "correctAnswer": "Victor",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -5041,8 +4898,8 @@ const auditQuestions = [
       "Broadcast year: 2011",
       "Episode: S03E12",
       "Episode title: Liars",
-      "Storyline: what happens to Adrianna's public attempt to explain her scandal on a talk show",
-      "Answer fact: She is blindsided by an unexpected guest",
+      "Storyline: Victor surprises Adrianna on television to tell his version of events",
+      "Answer fact: Victor",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
@@ -5051,7 +4908,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45000",
+    "id": "tv_44996",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 12), what do Navid and Silver do while Adrianna's situation worsens?",
@@ -5089,7 +4946,45 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45001",
+    "id": "tv_44997",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 12), what does Mr Cannon arrange after returning to Naomi's home?",
+    "answers": [
+      "He takes Naomi hostage and lures Silver there",
+      "He hosts a student documentary screening",
+      "He offers Naomi a journalism job",
+      "He arranges a charity fundraiser"
+    ],
+    "correctAnswer": "He takes Naomi hostage and lures Silver there",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E12",
+      "Episode title: Liars",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: what does Mr Cannon arrange after returning to Naomi's home?",
+      "Answer fact: He takes Naomi hostage and lures Silver there",
+      "Character: Naomi",
+      "Character: Silver",
+      "Actor: AnnaLynne McCord",
+      "Actor: Jessica Stroup"
+    ]
+  },
+  {
+    "id": "tv_44998",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 13), what activity brings the girls together away from school?",
@@ -5131,44 +5026,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45002",
-    "category": "TV",
-    "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 13), what does Emily do to sabotage Annie's standing at the retreat?",
-    "answers": [
-      "Steals her phone and leaves",
-      "Fails to wake Annie for a sweat-lodge session",
-      "Hides Annie's surfboard",
-      "Cancels her ticket without telling her"
-    ],
-    "correctAnswer": "Fails to wake Annie for a sweat-lodge session",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2011",
-      "Episode: S03E13",
-      "Episode title: It's Getting Hot in Here",
-      "Storyline: what does Emily do to sabotage Annie's standing at the retreat",
-      "Answer fact: Fails to wake Annie for a sweat-lodge session",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Emily",
-      "Character: Annie",
-      "Actor: Shenae Grimes"
-    ]
-  },
-  {
-    "id": "tv_45003",
+    "id": "tv_44999",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 13), how does Emily turn the other girls against Annie after the missed session?",
@@ -5205,7 +5063,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45004",
+    "id": "tv_45000",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 13), why does Naomi decide to remain at the retreat longer?",
@@ -5241,7 +5099,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45005",
+    "id": "tv_45001",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 13), who does Silver meet secretly while staying near the retreat?",
@@ -5279,7 +5137,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45006",
+    "id": "tv_45002",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 13), how does Adrianna try to make money from her recent experiences?",
@@ -5315,7 +5173,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45007",
+    "id": "tv_45003",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 13), what does Ryan do when Dixon unexpectedly interrupts his private dinner with Debbie?",
@@ -5353,7 +5211,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45008",
+    "id": "tv_45004",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 14), what does Navid learn Adrianna has done involving the child she gave up for adoption?",
@@ -5391,7 +5249,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45009",
+    "id": "tv_45005",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 14), what does Adrianna discover that complicates her close friendship with Silver?",
@@ -5431,7 +5289,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45010",
+    "id": "tv_45006",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 14), what does Annie receive that could advance her acting career?",
@@ -5467,7 +5325,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45011",
+    "id": "tv_45007",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 14), who plots to ruin Annie's theatrical audition?",
@@ -5504,7 +5362,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45012",
+    "id": "tv_45008",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 14), why does Naomi throw a party for Guru Sona?",
@@ -5540,7 +5398,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45013",
+    "id": "tv_45009",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 14), what unsettling doubt does Naomi develop about Guru Sona?",
@@ -5576,7 +5434,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45014",
+    "id": "tv_45010",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 14), what does Ivy have difficulty attempting after her surfing injury?",
@@ -5612,7 +5470,81 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45015",
+    "id": "tv_45011",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 14), what decision does Navid make when he learns Adrianna sold a story concerning her adopted daughter?",
+    "answers": [
+      "He breaks up with Adrianna",
+      "He proposes marriage",
+      "He moves in with her",
+      "He becomes her manager"
+    ],
+    "correctAnswer": "He breaks up with Adrianna",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E14",
+      "Episode title: All About a Boy",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: what decision does Navid make when he learns Adrianna sold a story concerning her adopted daughter?",
+      "Answer fact: He breaks up with Adrianna",
+      "Character: Navid",
+      "Character: Adrianna",
+      "Actor: Michael Steger",
+      "Actor: Jessica Lowndes"
+    ]
+  },
+  {
+    "id": "tv_45012",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 14), what personal step does Teddy take after Ian encourages him?",
+    "answers": [
+      "He comes out to his friends",
+      "He gives up professional tennis",
+      "He moves to France",
+      "He proposes marriage to Silver"
+    ],
+    "correctAnswer": "He comes out to his friends",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E14",
+      "Episode title: All About a Boy",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: what personal step does Teddy take after Ian encourages him?",
+      "Answer fact: He comes out to his friends",
+      "Character: Teddy",
+      "Actor: Trevor Donovan"
+    ]
+  },
+  {
+    "id": "tv_45013",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 15), what do Navid and Dixon arrange to film at Shirazi Studios?",
@@ -5650,7 +5582,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45016",
+    "id": "tv_45014",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 15), what new development creates tension between Adrianna and Silver?",
@@ -5690,7 +5622,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45017",
+    "id": "tv_45015",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 15), what kind of retaliation does Adrianna tell Silver she has planned?",
@@ -5728,7 +5660,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45018",
+    "id": "tv_45016",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 15), what does Emily do to interfere in Annie's relationship?",
@@ -5767,7 +5699,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45019",
+    "id": "tv_45017",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 15), what surprising feeling does Naomi have towards a helpful academic partner?",
@@ -5805,7 +5737,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45020",
+    "id": "tv_45018",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 15), why are a reality-TV crew following Adrianna and her friends?",
@@ -5841,7 +5773,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45021",
+    "id": "tv_45019",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 15), whom does Teddy ask for emotional support?",
@@ -5879,18 +5811,18 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45022",
+    "id": "tv_45020",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 16), what aspect of Annie's working life does Emily try to sabotage?",
+    "question": "In 90210 (2008 series, Series 3, Episode 15), whose music video do Navid and Dixon help organise at Shirazi Studios?",
     "answers": [
-      "Her university teaching job",
-      "Her internship at a playhouse",
-      "Her job in a fashion boutique",
-      "Her family's newspaper"
+      "Nelly's",
+      "Snoop Dogg's",
+      "Javier's",
+      "Joe Jonas's"
     ],
-    "correctAnswer": "Her internship at a playhouse",
-    "difficulty": "Medium",
+    "correctAnswer": "Nelly's",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -5903,20 +5835,21 @@ const auditQuestions = [
       "Format: Written Quiz",
       "Series: 3",
       "Broadcast year: 2011",
-      "Episode: S03E16",
-      "Episode title: It's High Time",
-      "Storyline: what aspect of Annie's working life does Emily try to sabotage",
-      "Answer fact: Her internship at a playhouse",
+      "Episode: S03E15",
+      "Episode title: Revenge with the Nerd",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
-      "Character: Annie",
-      "Character: Emily",
-      "Actor: Shenae Grimes"
+      "Storyline: whose music video do Navid and Dixon help organise at Shirazi Studios?",
+      "Answer fact: Nelly's",
+      "Character: Navid",
+      "Character: Dixon",
+      "Actor: Michael Steger",
+      "Actor: Tristan Wilds"
     ]
   },
   {
-    "id": "tv_45023",
+    "id": "tv_45021",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 16), how does Emily interfere in Annie's private life at the same time?",
@@ -5955,7 +5888,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45024",
+    "id": "tv_45022",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 16), why does Silver persuade Navid to sign an appearance release for Adrianna's programme?",
@@ -5995,7 +5928,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45025",
+    "id": "tv_45023",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 16), what does Adrianna discover when watching footage of her birthday party?",
@@ -6033,7 +5966,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45026",
+    "id": "tv_45024",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 16), whom does Naomi try to conceal her developing feelings for?",
@@ -6071,7 +6004,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45027",
+    "id": "tv_45025",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 16), who enters Ivy's life and becomes an important new friend?",
@@ -6102,6 +6035,80 @@ const auditQuestions = [
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
+      "Character: Ivy",
+      "Character: Raj",
+      "Actor: Gillian Zinser",
+      "Actor: Manish Dayal"
+    ]
+  },
+  {
+    "id": "tv_45026",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 16), what causes Annie to lose her role at the Abbott Playhouse?",
+    "answers": [
+      "Emily sabotages her internship",
+      "Naomi asks the theatre to close",
+      "Annie decides to quit acting",
+      "Harry withdraws permission"
+    ],
+    "correctAnswer": "Emily sabotages her internship",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E16",
+      "Episode title: It's High Time",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: what causes Annie to lose her role at the Abbott Playhouse?",
+      "Answer fact: Emily sabotages her internship",
+      "Character: Annie",
+      "Actor: Shenae Grimes"
+    ]
+  },
+  {
+    "id": "tv_45027",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 16), why does Raj bond with Ivy when they first become friends?",
+    "answers": [
+      "They share experience of medical marijuana use",
+      "They are both professional tennis players",
+      "They work together at the Peach Pit",
+      "They share a dream of becoming actors"
+    ],
+    "correctAnswer": "They share experience of medical marijuana use",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E16",
+      "Episode title: It's High Time",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: why does Raj bond with Ivy when they first become friends?",
+      "Answer fact: They share experience of medical marijuana use",
       "Character: Ivy",
       "Character: Raj",
       "Actor: Gillian Zinser",
@@ -6150,44 +6157,6 @@ const auditQuestions = [
     "id": "tv_45029",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 17), which well-known rapper do Dixon and Navid encounter while promoting their business?",
-    "answers": [
-      "Kanye West",
-      "Snoop Dogg",
-      "Jay-Z",
-      "Dr Dre"
-    ],
-    "correctAnswer": "Snoop Dogg",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2011",
-      "Episode: S03E17",
-      "Episode title: Blue Naomi",
-      "Storyline: which well-known rapper do Dixon and Navid encounter while promoting their business",
-      "Answer fact: Snoop Dogg",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Dixon",
-      "Character: Navid",
-      "Actor: Tristan Wilds",
-      "Actor: Michael Steger"
-    ]
-  },
-  {
-    "id": "tv_45030",
-    "category": "TV",
-    "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 17), what outfit does Naomi wear as a misguided attempt to impress Max?",
     "answers": [
       "A period costume from a school play",
@@ -6223,7 +6192,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45031",
+    "id": "tv_45030",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 17), how does Max react to Naomi's theatrical attempt to win him over?",
@@ -6261,7 +6230,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45032",
+    "id": "tv_45031",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 17), what does Adrianna decide after discovering Navid's involvement with Silver?",
@@ -6301,7 +6270,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45033",
+    "id": "tv_45032",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 17), who helps Annie and Liam uncover Emily's dishonesty?",
@@ -6340,7 +6309,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45034",
+    "id": "tv_45033",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 17), to whom does Raj reveal a troubling personal problem?",
@@ -6378,18 +6347,18 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45035",
+    "id": "tv_45034",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 18), where does the group travel for a holiday following their school troubles?",
+    "question": "In 90210 (2008 series, Series 3, Episode 17), what happens to Emily after Annie and Liam expose her scheming?",
     "answers": [
-      "Australia",
-      "France",
-      "Canada",
-      "Mexico"
+      "She leaves Beverly Hills",
+      "She is made student president",
+      "She marries Liam",
+      "She takes over the studio"
     ],
-    "correctAnswer": "Mexico",
-    "difficulty": "Medium",
+    "correctAnswer": "She leaves Beverly Hills",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -6402,17 +6371,55 @@ const auditQuestions = [
       "Format: Written Quiz",
       "Series: 3",
       "Broadcast year: 2011",
-      "Episode: S03E18",
-      "Episode title: The Enchanted Donkey",
-      "Storyline: where does the group travel for a holiday following their school troubles",
-      "Answer fact: Mexico",
+      "Episode: S03E17",
+      "Episode title: Blue Naomi",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
+      "Storyline: what happens to Emily after Annie and Liam expose her scheming?",
+      "Answer fact: She leaves Beverly Hills",
       "Character: Annie",
       "Character: Liam",
       "Actor: Shenae Grimes",
       "Actor: Matt Lanter"
+    ]
+  },
+  {
+    "id": "tv_45035",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 17), what serious diagnosis does Raj disclose to Ivy as they grow close?",
+    "answers": [
+      "Cancer",
+      "Diabetes",
+      "A broken spinal disc",
+      "An inherited heart condition"
+    ],
+    "correctAnswer": "Cancer",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E17",
+      "Episode title: Blue Naomi",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: what serious diagnosis does Raj disclose to Ivy as they grow close?",
+      "Answer fact: Cancer",
+      "Character: Raj",
+      "Character: Ivy",
+      "Actor: Manish Dayal",
+      "Actor: Gillian Zinser"
     ]
   },
   {
@@ -6609,6 +6616,80 @@ const auditQuestions = [
     "id": "tv_45041",
     "category": "TV",
     "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 18), which former boarding-school roommate and crush does Teddy encounter in Mexico?",
+    "answers": [
+      "Tripp",
+      "Ian",
+      "Marco",
+      "Max"
+    ],
+    "correctAnswer": "Tripp",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E18",
+      "Episode title: The Enchanted Donkey",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: which former boarding-school roommate and crush does Teddy encounter in Mexico?",
+      "Answer fact: Tripp",
+      "Character: Teddy",
+      "Actor: Trevor Donovan"
+    ]
+  },
+  {
+    "id": "tv_45042",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 18), why does Annie have to spend part of her Mexican holiday in a hotel room?",
+    "answers": [
+      "An accident limits her mobility",
+      "She has been expelled from the resort",
+      "She loses her passport",
+      "She is studying for a school examination"
+    ],
+    "correctAnswer": "An accident limits her mobility",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E18",
+      "Episode title: The Enchanted Donkey",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: why does Annie have to spend part of her Mexican holiday in a hotel room?",
+      "Answer fact: An accident limits her mobility",
+      "Character: Annie",
+      "Character: Liam",
+      "Actor: Shenae Grimes",
+      "Actor: Matt Lanter"
+    ]
+  },
+  {
+    "id": "tv_45043",
+    "category": "TV",
+    "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 19), what makes Naomi suspicious of her secret relationship with Max?",
     "answers": [
       "She learns he is planning to transfer schools",
@@ -6644,45 +6725,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45042",
-    "category": "TV",
-    "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 19), where does Naomi follow Max to confront him?",
-    "answers": [
-      "A surfing championship",
-      "A rock concert",
-      "A political debate",
-      "An academic decathlon"
-    ],
-    "correctAnswer": "An academic decathlon",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2011",
-      "Episode: S03E19",
-      "Episode title: Nerdy Little Secrets",
-      "Storyline: where does Naomi follow Max to confront him",
-      "Answer fact: An academic decathlon",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Naomi",
-      "Character: Max",
-      "Actor: AnnaLynne McCord",
-      "Actor: Josh Zuckerman"
-    ]
-  },
-  {
-    "id": "tv_45043",
+    "id": "tv_45044",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 19), whose increasingly unsettled behaviour causes Navid concern?",
@@ -6720,7 +6763,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45044",
+    "id": "tv_45045",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 19), how does Adrianna feel when Silver's behaviour becomes erratic?",
@@ -6758,7 +6801,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45045",
+    "id": "tv_45046",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 19), what service does Annie begin providing for the older performer Marla?",
@@ -6795,7 +6838,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45046",
+    "id": "tv_45047",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 19), what does Raj help Ivy regain after her surfing injury?",
@@ -6833,18 +6876,18 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45047",
+    "id": "tv_45048",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 20), what special event does Annie encourage Marla to attend?",
+    "question": "In 90210 (2008 series, Series 3, Episode 19), what does Adrianna secretly take from Silver as part of her revenge plot?",
     "answers": [
-      "A theatrical examination",
-      "A premiere of one of Marla's earlier films",
-      "A graduation ceremony",
-      "A pop concert on the beach"
+      "Her bipolar-disorder medication",
+      "Her university acceptance letter",
+      "Her jewellery",
+      "Her mobile phone"
     ],
-    "correctAnswer": "A premiere of one of Marla's earlier films",
-    "difficulty": "Medium",
+    "correctAnswer": "Her bipolar-disorder medication",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -6857,20 +6900,21 @@ const auditQuestions = [
       "Format: Written Quiz",
       "Series: 3",
       "Broadcast year: 2011",
-      "Episode: S03E20",
-      "Episode title: Women on the Verge",
-      "Storyline: what special event does Annie encourage Marla to attend",
-      "Answer fact: A premiere of one of Marla's earlier films",
+      "Episode: S03E19",
+      "Episode title: Nerdy Little Secrets",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
-      "Character: Annie",
-      "Character: Marla",
-      "Actor: Shenae Grimes"
+      "Storyline: what does Adrianna secretly take from Silver as part of her revenge plot?",
+      "Answer fact: Her bipolar-disorder medication",
+      "Character: Adrianna",
+      "Character: Silver",
+      "Actor: Jessica Lowndes",
+      "Actor: Jessica Stroup"
     ]
   },
   {
-    "id": "tv_45048",
+    "id": "tv_45049",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 20), what does Max tell Naomi about his education that could separate them?",
@@ -6908,7 +6952,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45049",
+    "id": "tv_45050",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 20), what makes Teddy question Marco's honesty?",
@@ -6944,7 +6988,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45050",
+    "id": "tv_45051",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 20), what triggers Navid and Dixon to intervene in Silver's wellbeing?",
@@ -6984,17 +7028,17 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45051",
+    "id": "tv_45052",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 20), who unexpectedly visits Ryan and disrupts his current circumstances?",
+    "question": "In 90210 (2008 series, Series 3, Episode 20), which woman unexpectedly returns to Ryan's life while he is seeing Debbie?",
     "answers": [
-      "Naomi's university tutor",
-      "An unexpected visitor",
-      "His son from a former marriage",
-      "A new sports coach"
+      "Kelly Taylor",
+      "Brenda Walsh",
+      "Jen Clark",
+      "Naomi Clark"
     ],
-    "correctAnswer": "An unexpected visitor",
+    "correctAnswer": "Jen Clark",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -7010,8 +7054,8 @@ const auditQuestions = [
       "Broadcast year: 2011",
       "Episode: S03E20",
       "Episode title: Women on the Verge",
-      "Storyline: who unexpectedly visits Ryan and disrupts his current circumstances",
-      "Answer fact: An unexpected visitor",
+      "Storyline: Jen returns unexpectedly and complicates Ryan's relationship with Debbie",
+      "Answer fact: Jen Clark",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
@@ -7020,17 +7064,17 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45052",
+    "id": "tv_45053",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 20), how does Annie try to reconnect Marla with her earlier film career?",
+    "question": "In 90210 (2008 series, Series 3, Episode 20), what personal history does Marla tell Annie that makes her film premiere especially emotional?",
     "answers": [
-      "By encouraging her to leave California",
-      "By nominating her for a music award",
-      "By taking her to a premiere honouring her work",
-      "By buying her an acting agency"
+      "She is dealing with serious health problems",
+      "She has just won an Olympic medal",
+      "She is preparing to marry Harry",
+      "She has been offered a university post"
     ],
-    "correctAnswer": "By taking her to a premiere honouring her work",
+    "correctAnswer": "She is dealing with serious health problems",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -7046,94 +7090,17 @@ const auditQuestions = [
       "Broadcast year: 2011",
       "Episode: S03E20",
       "Episode title: Women on the Verge",
-      "Storyline: how does Annie try to reconnect Marla with her earlier film career",
-      "Answer fact: By taking her to a premiere honouring her work",
       "Question type: Story detail",
       "Comprehensive Audit: 23 November 2026",
       "Source: TV Guide and TVmaze season 3",
+      "Storyline: what personal history does Marla tell Annie that makes her film premiere especially emotional?",
+      "Answer fact: She is dealing with serious health problems",
       "Character: Annie",
-      "Character: Marla",
       "Actor: Shenae Grimes"
     ]
   },
   {
-    "id": "tv_45053",
-    "category": "TV",
-    "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 21), what event is the group preparing for as graduation approaches?",
-    "answers": [
-      "Their school prom",
-      "A professional tennis final",
-      "A charity fashion auction",
-      "A university film festival"
-    ],
-    "correctAnswer": "Their school prom",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2011",
-      "Episode: S03E21",
-      "Episode title: The Prom Before the Storm",
-      "Storyline: what event is the group preparing for as graduation approaches",
-      "Answer fact: Their school prom",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Naomi",
-      "Character: Silver",
-      "Actor: AnnaLynne McCord",
-      "Actor: Jessica Stroup"
-    ]
-  },
-  {
     "id": "tv_45054",
-    "category": "TV",
-    "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 21), which couple face new difficulties when Raj's health deteriorates?",
-    "answers": [
-      "Annie and Liam",
-      "Ivy and Raj",
-      "Naomi and Max",
-      "Silver and Teddy"
-    ],
-    "correctAnswer": "Ivy and Raj",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2011",
-      "Episode: S03E21",
-      "Episode title: The Prom Before the Storm",
-      "Storyline: which couple face new difficulties when Raj's health deteriorates",
-      "Answer fact: Ivy and Raj",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Ivy",
-      "Character: Raj",
-      "Actor: Gillian Zinser",
-      "Actor: Manish Dayal"
-    ]
-  },
-  {
-    "id": "tv_45055",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 21), why does Adrianna try to contact Navid while Silver is hospitalised?",
@@ -7173,7 +7140,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45056",
+    "id": "tv_45055",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 21), what major romantic uncertainty affects Naomi and Max ahead of the prom?",
@@ -7211,7 +7178,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45057",
+    "id": "tv_45056",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 21), what troubles Annie and Dixon about the days after prom?",
@@ -7249,7 +7216,123 @@ const auditQuestions = [
     ]
   },
   {
+    "id": "tv_45057",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 21), what financial news from Debbie upsets Annie and Dixon before senior prom?",
+    "answers": [
+      "She cannot afford private universities for them",
+      "She has secretly bought a second house",
+      "She has invested in a record label",
+      "She has lost a bet on a horse race"
+    ],
+    "correctAnswer": "She cannot afford private universities for them",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E21",
+      "Episode title: The Prom Before the Storm",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: what financial news from Debbie upsets Annie and Dixon before senior prom?",
+      "Answer fact: She cannot afford private universities for them",
+      "Character: Annie",
+      "Character: Dixon",
+      "Character: Debbie",
+      "Actor: Shenae Grimes",
+      "Actor: Tristan Wilds",
+      "Actor: Lori Loughlin"
+    ]
+  },
+  {
     "id": "tv_45058",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 21), what evidence does Silver suspect explains her recent mental-health relapse?",
+    "answers": [
+      "Adrianna has taken her bipolar medication",
+      "Teddy has secretly drugged her",
+      "Naomi has forged her medical records",
+      "Her doctor prescribed the wrong glasses"
+    ],
+    "correctAnswer": "Adrianna has taken her bipolar medication",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E21",
+      "Episode title: The Prom Before the Storm",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: what evidence does Silver suspect explains her recent mental-health relapse?",
+      "Answer fact: Adrianna has taken her bipolar medication",
+      "Character: Silver",
+      "Character: Adrianna",
+      "Actor: Jessica Stroup",
+      "Actor: Jessica Lowndes"
+    ]
+  },
+  {
+    "id": "tv_45059",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 21), why does Max's academic conduct create a problem for Naomi?",
+    "answers": [
+      "He cheated on a paper for her",
+      "He skipped his own examinations",
+      "He stole a laptop from school",
+      "He failed to complete a science project"
+    ],
+    "correctAnswer": "He cheated on a paper for her",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E21",
+      "Episode title: The Prom Before the Storm",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: why does Max's academic conduct create a problem for Naomi?",
+      "Answer fact: He cheated on a paper for her",
+      "Character: Naomi",
+      "Character: Max",
+      "Actor: AnnaLynne McCord",
+      "Actor: Josh Zuckerman"
+    ]
+  },
+  {
+    "id": "tv_45060",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 22), what school milestone provides the setting of the final episode?",
@@ -7287,7 +7370,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45059",
+    "id": "tv_45061",
     "category": "TV",
     "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 22), what major risk does Naomi take in her effort to help someone?",
@@ -7320,82 +7403,6 @@ const auditQuestions = [
       "Source: TV Guide and TVmaze season 3",
       "Character: Naomi",
       "Actor: AnnaLynne McCord"
-    ]
-  },
-  {
-    "id": "tv_45060",
-    "category": "TV",
-    "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 22), what does Liam decide about further education?",
-    "answers": [
-      "He plans to teach at West Beverly",
-      "He does not want to attend college",
-      "He has accepted an Oxford place",
-      "He wants to study medicine"
-    ],
-    "correctAnswer": "He does not want to attend college",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2011",
-      "Episode: S03E22",
-      "Episode title: To the Future!",
-      "Storyline: what does Liam decide about further education",
-      "Answer fact: He does not want to attend college",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Liam",
-      "Character: Annie",
-      "Actor: Matt Lanter",
-      "Actor: Shenae Grimes"
-    ]
-  },
-  {
-    "id": "tv_45061",
-    "category": "TV",
-    "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 22), where does Ryan propose moving with Debbie?",
-    "answers": [
-      "Rome",
-      "Berlin",
-      "Paris",
-      "London"
-    ],
-    "correctAnswer": "Paris",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2011",
-      "Episode: S03E22",
-      "Episode title: To the Future!",
-      "Storyline: where does Ryan propose moving with Debbie",
-      "Answer fact: Paris",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Ryan",
-      "Character: Debbie",
-      "Actor: Ryan Eggold",
-      "Actor: Lori Loughlin"
     ]
   },
   {
@@ -7440,44 +7447,6 @@ const auditQuestions = [
     "id": "tv_45063",
     "category": "TV",
     "topic": "90210",
-    "question": "In 90210 (2008 series, Series 3, Episode 22), why is Adrianna excluded from that celebration?",
-    "answers": [
-      "Her revenge plot against Silver has been exposed",
-      "She has accepted a job abroad",
-      "She refuses to attend graduation",
-      "She is engaged to Victor"
-    ],
-    "correctAnswer": "Her revenge plot against Silver has been exposed",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "The CW Network",
-      "Teen Drama",
-      "2010s Television",
-      "West Beverly Hills High",
-      "Programme: 90210 (2008 series)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2011",
-      "Episode: S03E22",
-      "Episode title: To the Future!",
-      "Storyline: why is Adrianna excluded from that celebration",
-      "Answer fact: Her revenge plot against Silver has been exposed",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: TV Guide and TVmaze season 3",
-      "Character: Adrianna",
-      "Character: Silver",
-      "Actor: Jessica Lowndes",
-      "Actor: Jessica Stroup"
-    ]
-  },
-  {
-    "id": "tv_45064",
-    "category": "TV",
-    "topic": "90210",
     "question": "In 90210 (2008 series, Series 3, Episode 22), what main consequence follows the discovery of Adrianna's scheme?",
     "answers": [
       "She is offered a school counselling role",
@@ -7509,12 +7478,126 @@ const auditQuestions = [
       "Character: Adrianna",
       "Actor: Jessica Lowndes"
     ]
+  },
+  {
+    "id": "tv_45064",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 22), which couple unexpectedly marry near the end of Series 3?",
+    "answers": [
+      "Ivy Sullivan and Raj Kher",
+      "Naomi Clark and Max Miller",
+      "Adrianna Tate-Duncan and Navid Shirazi",
+      "Silver and Teddy Montgomery"
+    ],
+    "correctAnswer": "Ivy Sullivan and Raj Kher",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E22",
+      "Episode title: To the Future!",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: which couple unexpectedly marry near the end of Series 3?",
+      "Answer fact: Ivy Sullivan and Raj Kher",
+      "Character: Ivy",
+      "Character: Raj",
+      "Actor: Gillian Zinser",
+      "Actor: Manish Dayal"
+    ]
+  },
+  {
+    "id": "tv_45065",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 22), what does Max publicly admit during his graduation speech?",
+    "answers": [
+      "That he cheated on Naomi's paper",
+      "That he is dropping out of university",
+      "That he stole the school's money",
+      "That he is leaving with Silver"
+    ],
+    "correctAnswer": "That he cheated on Naomi's paper",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E22",
+      "Episode title: To the Future!",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: what does Max publicly admit during his graduation speech?",
+      "Answer fact: That he cheated on Naomi's paper",
+      "Character: Max",
+      "Character: Naomi",
+      "Actor: Josh Zuckerman",
+      "Actor: AnnaLynne McCord"
+    ]
+  },
+  {
+    "id": "tv_45066",
+    "category": "TV",
+    "topic": "90210",
+    "question": "In 90210 (2008 series, Series 3, Episode 22), what sort of summer job does Liam take instead of going straight to university?",
+    "answers": [
+      "A job on a deep-sea fishing boat",
+      "A position at a bank",
+      "A journalism internship",
+      "An overseas theatre tour"
+    ],
+    "correctAnswer": "A job on a deep-sea fishing boat",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "The CW Network",
+      "Teen Drama",
+      "2010s Television",
+      "West Beverly Hills High",
+      "Programme: 90210 (2008 series)",
+      "Format: Written Quiz",
+      "Series: 3",
+      "Broadcast year: 2011",
+      "Episode: S03E22",
+      "Episode title: To the Future!",
+      "Question type: Story detail",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: TV Guide and TVmaze season 3",
+      "Storyline: what sort of summer job does Liam take instead of going straight to university?",
+      "Answer fact: A job on a deep-sea fishing boat",
+      "Character: Liam",
+      "Character: Annie",
+      "Actor: Matt Lanter",
+      "Actor: Shenae Grimes"
+    ]
   }
 ];
 questions.push(...auditQuestions);
 
-if(questions.length!==204||new Set(questions.map(q=>q.id)).size!==204||
-new Set(questions.map(q=>q.question.toLowerCase())).size!==204||
+if(questions.length!==206||new Set(questions.map(q=>q.id)).size!==206||
+new Set(questions.map(q=>q.question.toLowerCase())).size!==206||
 questions.some((q,i)=>q.id!==(i<66?'tv_'+(30005+i):'tv_'+(44927+i-66))||q.category!=='TV'||q.topic!=='90210'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
 q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<18||
