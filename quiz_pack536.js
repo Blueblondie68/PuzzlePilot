@@ -1,6 +1,6 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 536: Blue Bloods (2010–2024), Series 1–8 supplemental audit.
 // Duplicate-aware review, 23 November 2026: originally 52 questions; 11 now-redundant facts
-// retired because Packs 528–535 were fully expanded; 13 overlapping facts rewritten
+// retired because Packs 528–535 were fully expanded; 14 overlapping facts rewritten
 // with independent, episode-grounded story, cast or production details. 41 retained unique questions.
 // Original retained IDs are not renumbered. All questions carry the programme title and
 // series/episode/storyline/character/actor tags. No arbitrary question count is imposed.
