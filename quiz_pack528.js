@@ -1,16 +1,16 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 528: Blue Bloods (2010–2024), Series 1 (2010–2011).
-// 201 unique questions: 66 unchanged original, 134 new case/family/story-continuity questions and 1 first-season award nomination.
-// Original IDs tv_30473–tv_30538 preserved. Additional IDs tv_45889–tv_46023.
-// Comprehensive all-22-episode audit on 23 November 2026; varying question count driven by plot developments.
-// Recurring Blue Templar investigation, Joe Reagan, Jamie's detective work and the family consequences covered explicitly.
-// References:
+// 201 unique questions: 66 original, 134 new case/family/storyline facts, 1 2011 award nomination.
+// Original IDs tv_30473–tv_30538 untouched; supplementary IDs tv_45889–tv_46023.
+// All 22 episodes audited 23 November 2026. 9 overlap/low-specificity questions removed in second pass.
+// Episode 6 twist verified against the full script: it is a murder inquiry, not solely a drug-supplier case.
+// Joe Reagan and Blue Templar investigation + consequences fully covered, without repeating the 2013 Emmy later-season nomination.
+// Sources:
 // https://en.wikipedia.org/wiki/Blue_Bloods_season_1#Episodes
-// https://www.cbs.com/shows/blue_bloods/episodes/1/
 // https://www.tvmaze.com/shows/100/blue-bloods/episodeguide
+// https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=blue-bloods
 // https://www.aceshowbiz.com/tv/episodeguide/blue_bloods_s1_e22/
-// 2011 People's Choice nomination: https://www.paramountpressexpress.com/cbs-entertainment/releases/?view=26632
-// 2013 stunt Emmy nomination belongs to later season and is deliberately NOT recorded as a season-one win.
-// All 14 series now FINISHED but Series 2–14 still to be audited, programme is NOT yet purple.
+// People's Choice nomination: https://www.paramountpressexpress.com/cbs-entertainment/releases/?view=26632
+// Season 2–14 remain for audit, although the entire programme concluded in 2024. No purple line yet.
 'use strict';
 const questions = [
   {
@@ -3171,44 +3171,6 @@ const auditQuestions = [
     "id": "tv_45909",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010 series, Series 1, Episode 4), which relative of the deceased officer directs a department-wide search for justice?",
-    "answers": [
-      "Mayor Russo",
-      "Sergeant Renzulli",
-      "Police Commissioner Frank Reagan",
-      "District Attorney Charles Rossellini"
-    ],
-    "correctAnswer": "Police Commissioner Frank Reagan",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 1",
-      "Broadcast year: 2010",
-      "Episode: S01E04",
-      "Episode title: Officer Down",
-      "Storyline: which relative of the deceased officer directs a department-wide search for justice",
-      "Answer fact: Police Commissioner Frank Reagan",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
-      "Character: Frank",
-      "Actor: Tom Selleck"
-    ]
-  },
-  {
-    "id": "tv_45910",
-    "category": "TV",
-    "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 5), on what day of the week is the threatened Manhattan bombing expected?",
     "answers": [
       "Saturday",
@@ -3244,7 +3206,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45911",
+    "id": "tv_45910",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 5), what kind of recreational tournament does Henry attend with Erin while the alert unfolds?",
@@ -3284,7 +3246,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45912",
+    "id": "tv_45911",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 5), why does Danny struggle to warn Linda during the bomb alert?",
@@ -3324,7 +3286,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45913",
+    "id": "tv_45912",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 5), where has Linda taken the boys while Danny is trying to contact her?",
@@ -3364,7 +3326,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45914",
+    "id": "tv_45913",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 5), which community risks being unfairly targeted as police seek the bomb?",
@@ -3404,17 +3366,17 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45915",
+    "id": "tv_45914",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), what makes Danny's investigation more urgent than a typical single overdose?",
+    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), what street name is given to the drug initially blamed for the teenagers' deaths?",
     "answers": [
-      "The victims are all undercover officers",
-      "The drugs were found at police headquarters",
-      "Three teenagers have died from the same dangerous narcotic",
-      "The police have already arrested every dealer"
+      "M-Cat",
+      "Ice",
+      "Special K",
+      "Angel Dust"
     ],
-    "correctAnswer": "Three teenagers have died from the same dangerous narcotic",
+    "correctAnswer": "M-Cat",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -3431,28 +3393,68 @@ const auditQuestions = [
       "Broadcast year: 2010",
       "Episode: S01E06",
       "Episode title: Smack Attack",
-      "Storyline: what makes Danny's investigation more urgent than a typical single overdose",
-      "Answer fact: Three teenagers have died from the same dangerous narcotic",
       "Question type: Story detail",
       "Format: Written Quiz",
       "Comprehensive Audit: 23 November 2026",
       "Source: Blue Bloods S1 episode summaries and CBS episode guide",
+      "Storyline: what street name is given to the drug initially blamed for the teenagers' deaths",
+      "Answer fact: M-Cat",
       "Character: Danny",
-      "Actor: Donnie Wahlberg"
+      "Character: Jackie",
+      "Actor: Donnie Wahlberg",
+      "Actor: Jennifer Esposito"
+    ]
+  },
+  {
+    "id": "tv_45915",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), which young patrol officer saves the only surviving overdose victim?",
+    "answers": [
+      "Jamie Reagan",
+      "Frank Reagan",
+      "Anthony Renzulli",
+      "Sonny Malevsky"
+    ],
+    "correctAnswer": "Jamie Reagan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS Network",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "2010s Television",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Series: 1",
+      "Broadcast year: 2010",
+      "Episode: S01E06",
+      "Episode title: Smack Attack",
+      "Question type: Story detail",
+      "Format: Written Quiz",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
+      "Storyline: which young patrol officer saves the only surviving overdose victim",
+      "Answer fact: Jamie Reagan",
+      "Character: Jamie",
+      "Actor: Will Estes"
     ]
   },
   {
     "id": "tv_45916",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), what does Danny need to trace to prevent more deaths?",
+    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), what is the name of the teenage girl who survives the initial poisonings?",
     "answers": [
-      "A missing set of medical records",
-      "The supply route of the lethal drug",
-      "The identity of a stolen-car owner",
-      "The officer who leaked a report"
+      "Alyson Duvitz",
+      "Caitlin Breyer",
+      "Sophie",
+      "Nicky Reagan-Boyle"
     ],
-    "correctAnswer": "The supply route of the lethal drug",
+    "correctAnswer": "Alyson Duvitz",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -3469,28 +3471,30 @@ const auditQuestions = [
       "Broadcast year: 2010",
       "Episode: S01E06",
       "Episode title: Smack Attack",
-      "Storyline: what does Danny need to trace to prevent more deaths",
-      "Answer fact: The supply route of the lethal drug",
       "Question type: Story detail",
       "Format: Written Quiz",
       "Comprehensive Audit: 23 November 2026",
       "Source: Blue Bloods S1 episode summaries and CBS episode guide",
+      "Storyline: what is the name of the teenage girl who survives the initial poisonings",
+      "Answer fact: Alyson Duvitz",
       "Character: Danny",
-      "Actor: Donnie Wahlberg"
+      "Character: Jamie",
+      "Actor: Donnie Wahlberg",
+      "Actor: Will Estes"
     ]
   },
   {
     "id": "tv_45917",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), what type of police investigation is at the centre of the episode?",
+    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), what chemical do toxicology results identify as the immediate cause of the deaths?",
     "answers": [
-      "A deadly narcotics distribution investigation",
-      "A fraud investigation at a bank",
-      "A missing-person case at a school",
-      "A murder in a jewellery store"
+      "Potassium chloride",
+      "Sodium bicarbonate",
+      "Acetaminophen",
+      "Ethanol"
     ],
-    "correctAnswer": "A deadly narcotics distribution investigation",
+    "correctAnswer": "Potassium chloride",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -3507,18 +3511,220 @@ const auditQuestions = [
       "Broadcast year: 2010",
       "Episode: S01E06",
       "Episode title: Smack Attack",
-      "Storyline: what type of police investigation is at the centre of the episode",
-      "Answer fact: A deadly narcotics distribution investigation",
       "Question type: Story detail",
       "Format: Written Quiz",
       "Comprehensive Audit: 23 November 2026",
       "Source: Blue Bloods S1 episode summaries and CBS episode guide",
+      "Storyline: what chemical do toxicology results identify as the immediate cause of the deaths",
+      "Answer fact: Potassium chloride",
       "Character: Danny",
-      "Actor: Donnie Wahlberg"
+      "Character: Jackie",
+      "Actor: Donnie Wahlberg",
+      "Actor: Jennifer Esposito"
     ]
   },
   {
     "id": "tv_45918",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), where is the supplier's concealed drug laboratory discovered during the case?",
+    "answers": [
+      "Behind a bicycle shop",
+      "At an airport hangar",
+      "Under the school gym",
+      "Inside a jewellery store"
+    ],
+    "correctAnswer": "Behind a bicycle shop",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS Network",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "2010s Television",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Series: 1",
+      "Broadcast year: 2010",
+      "Episode: S01E06",
+      "Episode title: Smack Attack",
+      "Question type: Story detail",
+      "Format: Written Quiz",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
+      "Storyline: where is the supplier's concealed drug laboratory discovered during the case",
+      "Answer fact: Behind a bicycle shop",
+      "Character: Danny",
+      "Character: Jackie",
+      "Actor: Donnie Wahlberg",
+      "Actor: Jennifer Esposito"
+    ]
+  },
+  {
+    "id": "tv_45919",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), what happens to Alyson while she goes jogging after surviving the poisoning?",
+    "answers": [
+      "A driver deliberately tries to run her over",
+      "She is kidnapped by a police officer",
+      "She collapses at the station",
+      "She is attacked at a nightclub"
+    ],
+    "correctAnswer": "A driver deliberately tries to run her over",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS Network",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "2010s Television",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Series: 1",
+      "Broadcast year: 2010",
+      "Episode: S01E06",
+      "Episode title: Smack Attack",
+      "Question type: Story detail",
+      "Format: Written Quiz",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
+      "Storyline: what happens to Alyson while she goes jogging after surviving the poisoning",
+      "Answer fact: A driver deliberately tries to run her over",
+      "Character: Danny",
+      "Character: Jackie",
+      "Actor: Donnie Wahlberg",
+      "Actor: Jennifer Esposito"
+    ]
+  },
+  {
+    "id": "tv_45920",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), which school employee is responsible for the deliberate poisonings?",
+    "answers": [
+      "Vice Principal Carol Hoffman",
+      "Father Leo",
+      "Detective Jackie Curatola",
+      "Caitlin Breyer"
+    ],
+    "correctAnswer": "Vice Principal Carol Hoffman",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS Network",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "2010s Television",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Series: 1",
+      "Broadcast year: 2010",
+      "Episode: S01E06",
+      "Episode title: Smack Attack",
+      "Question type: Story detail",
+      "Format: Written Quiz",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
+      "Storyline: which school employee is responsible for the deliberate poisonings",
+      "Answer fact: Vice Principal Carol Hoffman",
+      "Character: Danny",
+      "Character: Jackie",
+      "Actor: Donnie Wahlberg",
+      "Actor: Jennifer Esposito"
+    ]
+  },
+  {
+    "id": "tv_45921",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), what motive is revealed behind the vice principal's crimes?",
+    "answers": [
+      "She was having an affair with teenage Billy and could not accept him leaving her",
+      "She was stealing school fees",
+      "She was helping a Russian crime gang",
+      "She wanted to discredit Commissioner Reagan"
+    ],
+    "correctAnswer": "She was having an affair with teenage Billy and could not accept him leaving her",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS Network",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "2010s Television",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Series: 1",
+      "Broadcast year: 2010",
+      "Episode: S01E06",
+      "Episode title: Smack Attack",
+      "Question type: Story detail",
+      "Format: Written Quiz",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
+      "Storyline: what motive is revealed behind the vice principal's crimes",
+      "Answer fact: She was having an affair with teenage Billy and could not accept him leaving her",
+      "Character: Danny",
+      "Character: Jackie",
+      "Actor: Donnie Wahlberg",
+      "Actor: Jennifer Esposito"
+    ]
+  },
+  {
+    "id": "tv_45922",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods (2010 series, Series 1, Episode 6), what does Erin's daughter Nicky organise after the arguments about drug use?",
+    "answers": [
+      "A special family meal for Erin",
+      "A trip to the police academy",
+      "A surprise engagement party for Jamie",
+      "A weekend at the beach"
+    ],
+    "correctAnswer": "A special family meal for Erin",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS Network",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "2010s Television",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Series: 1",
+      "Broadcast year: 2010",
+      "Episode: S01E06",
+      "Episode title: Smack Attack",
+      "Question type: Story detail",
+      "Format: Written Quiz",
+      "Comprehensive Audit: 23 November 2026",
+      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
+      "Storyline: what does Erin's daughter Nicky organise after the arguments about drug use",
+      "Answer fact: A special family meal for Erin",
+      "Character: Erin",
+      "Character: Nicky",
+      "Actor: Bridget Moynahan",
+      "Actor: Sami Gayle"
+    ]
+  },
+  {
+    "id": "tv_45923",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 7), what is the gang leader Erin is trying to prosecute called?",
@@ -3556,7 +3762,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45919",
+    "id": "tv_45924",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 7), what job does the gang leader's law-abiding brother hold?",
@@ -3594,7 +3800,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45920",
+    "id": "tv_45925",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 7), why does Danny's treatment of Jamie cause friction?",
@@ -3634,7 +3840,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45921",
+    "id": "tv_45926",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 7), at what recurring Reagan-family gathering does the dispute between the brothers boil over?",
@@ -3674,7 +3880,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45922",
+    "id": "tv_45927",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 7), what moral concern is Erin challenged over when trying to arrest Torres?",
@@ -3714,7 +3920,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45923",
+    "id": "tv_45928",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 8), with what agency has Jamie met secretly before witnessing the Chinatown crime?",
@@ -3752,7 +3958,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45924",
+    "id": "tv_45929",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 8), what clandestine police group is the subject of Jamie's secret meeting?",
@@ -3790,7 +3996,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45925",
+    "id": "tv_45930",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 8), how does Jamie protect the real purpose of his meeting when Internal Affairs questions him?",
@@ -3828,7 +4034,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45926",
+    "id": "tv_45931",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 8), who backs up Jamie's misleading version of his meeting?",
@@ -3866,7 +4072,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45927",
+    "id": "tv_45932",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 8), what does Sydney return to Jamie before calling off their wedding?",
@@ -3904,7 +4110,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45928",
+    "id": "tv_45933",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 8), what family event is cancelled when Sydney ends her relationship with Jamie?",
@@ -3942,7 +4148,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45929",
+    "id": "tv_45934",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 9), why are three dangerous offenders released from prison?",
@@ -3982,7 +4188,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45930",
+    "id": "tv_45935",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 9), what is the name of the convicted rapist who threatens Erin?",
@@ -4020,7 +4226,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45931",
+    "id": "tv_45936",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 9), who imitates some of Reed's previous crimes after he is released?",
@@ -4060,7 +4266,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45932",
+    "id": "tv_45937",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 9), how does Reed use Erin in the final confrontation with Frank?",
@@ -4100,7 +4306,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45933",
+    "id": "tv_45938",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 9), how does Frank end the attack without injuring Erin?",
@@ -4140,7 +4346,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45934",
+    "id": "tv_45939",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 10), what has Frank's former police partner been falsifying?",
@@ -4178,7 +4384,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45935",
+    "id": "tv_45940",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 10), for approximately how long have the altered records been accumulating?",
@@ -4216,7 +4422,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45936",
+    "id": "tv_45941",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 10), why has the former partner manipulated the crime figures?",
@@ -4254,7 +4460,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45937",
+    "id": "tv_45942",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 10), with whom does Danny investigate the death of a popular nightclub bouncer?",
@@ -4294,7 +4500,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45938",
+    "id": "tv_45943",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 10), what complicates Danny's investigation outside the nightclub?",
@@ -4332,7 +4538,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45939",
+    "id": "tv_45944",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 11), in what river is the escort's body recovered?",
@@ -4372,7 +4578,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45940",
+    "id": "tv_45945",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 11), which officer introduces himself to Jamie as Joe Reagan's former partner?",
@@ -4410,7 +4616,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45941",
+    "id": "tv_45946",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 11), why does Jamie distrust the detective he meets during the murder inquiry?",
@@ -4448,7 +4654,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45942",
+    "id": "tv_45947",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 11), what physical evidence reopens the disappearance that haunted Frank for decades?",
@@ -4486,45 +4692,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45943",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010 series, Series 1, Episode 11), what makes the old missing-boy case particularly personal to Frank?",
-    "answers": [
-      "He was emotionally involved in the original investigation",
-      "It concerned his son Danny",
-      "The boy was Jamie's schoolfriend",
-      "The remains were found at Frank's house"
-    ],
-    "correctAnswer": "He was emotionally involved in the original investigation",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 1",
-      "Broadcast year: 2011",
-      "Episode: S01E11",
-      "Episode title: Little Fish",
-      "Storyline: what makes the old missing-boy case particularly personal to Frank",
-      "Answer fact: He was emotionally involved in the original investigation",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
-      "Character: Frank",
-      "Actor: Tom Selleck"
-    ]
-  },
-  {
-    "id": "tv_45944",
+    "id": "tv_45948",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 12), in which New York neighbourhood does Danny investigate Russian organised crime?",
@@ -4562,7 +4730,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45945",
+    "id": "tv_45949",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 12), what is the murder victim's relationship to a Russian crime boss?",
@@ -4600,7 +4768,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45946",
+    "id": "tv_45950",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 12), what kind of event is taking place when the mob-connected victim is killed?",
@@ -4638,7 +4806,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45947",
+    "id": "tv_45951",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 12), who assigns Erin a particularly prominent political corruption case?",
@@ -4676,7 +4844,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45948",
+    "id": "tv_45952",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 12), what makes Danny's Russian-mob case about more than gang membership?",
@@ -4714,7 +4882,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45949",
+    "id": "tv_45953",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 13), what sort of operation is the wounded agent conducting when Danny is brought in?",
@@ -4752,7 +4920,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45950",
+    "id": "tv_45954",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 13), what does Frank fear if the undercover agent's identity is revealed?",
@@ -4792,47 +4960,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45951",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010 series, Series 1, Episode 13), why must Danny keep part of the counterterrorism assignment from his usual colleague?",
-    "answers": [
-      "His colleague is an official suspect",
-      "The case belongs to federal prosecutors alone",
-      "Frank orders strict secrecy to preserve the undercover operation",
-      "Danny has resigned from his department"
-    ],
-    "correctAnswer": "Frank orders strict secrecy to preserve the undercover operation",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 1",
-      "Broadcast year: 2011",
-      "Episode: S01E13",
-      "Episode title: Hall of Mirrors",
-      "Storyline: why must Danny keep part of the counterterrorism assignment from his usual colleague",
-      "Answer fact: Frank orders strict secrecy to preserve the undercover operation",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
-      "Character: Danny",
-      "Character: Frank",
-      "Actor: Donnie Wahlberg",
-      "Actor: Tom Selleck"
-    ]
-  },
-  {
-    "id": "tv_45952",
+    "id": "tv_45955",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 13), what unusual reports does a young woman make to Jamie during a separate investigation?",
@@ -4870,7 +4998,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45953",
+    "id": "tv_45956",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 13), which figure from Joe Reagan's past visits Jamie during the episode?",
@@ -4908,47 +5036,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45954",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010 series, Series 1, Episode 14), what age group does the kidnapping victim belong to?",
-    "answers": [
-      "Pensioner",
-      "University lecturer",
-      "Teenager",
-      "Newborn baby"
-    ],
-    "correctAnswer": "Teenager",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 1",
-      "Broadcast year: 2011",
-      "Episode: S01E14",
-      "Episode title: My Funny Valentine",
-      "Storyline: what age group does the kidnapping victim belong to",
-      "Answer fact: Teenager",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
-      "Character: Danny",
-      "Character: Jackie",
-      "Actor: Donnie Wahlberg",
-      "Actor: Jennifer Esposito"
-    ]
-  },
-  {
-    "id": "tv_45955",
+    "id": "tv_45957",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 14), where is the teenager abducted while returning home?",
@@ -4986,7 +5074,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45956",
+    "id": "tv_45958",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 14), who sets up Erin's Valentine's dinner with her superior?",
@@ -5024,7 +5112,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45957",
+    "id": "tv_45959",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 14), what is the name of Erin's prosecutor boss and prospective romantic interest?",
@@ -5062,7 +5150,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45958",
+    "id": "tv_45960",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 14), whose son becomes the subject of Frank's separate mistaken-arrest inquiry?",
@@ -5100,7 +5188,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45959",
+    "id": "tv_45961",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 15), what criminal figure's family is implicated in the attempt on Frank's life?",
@@ -5140,7 +5228,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45960",
+    "id": "tv_45962",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 15), what is Whitey Brennan's condition while his family is being investigated?",
@@ -5178,7 +5266,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45961",
+    "id": "tv_45963",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 15), what motivates the apparent grudge against Commissioner Reagan?",
@@ -5216,7 +5304,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45962",
+    "id": "tv_45964",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 15), where is an atrium being dedicated in Joe Reagan's memory?",
@@ -5256,7 +5344,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45963",
+    "id": "tv_45965",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 15), which deceased member of the police family is honoured at the dedication?",
@@ -5296,7 +5384,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45964",
+    "id": "tv_45966",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 15), what kind of assault injures Frank outside a restaurant?",
@@ -5334,7 +5422,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45965",
+    "id": "tv_45967",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 16), what kind of formal social occasion brings the murder victim to the hotel?",
@@ -5374,7 +5462,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45966",
+    "id": "tv_45968",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 16), who is angered by Nicky being exposed to the murder scene?",
@@ -5414,7 +5502,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45967",
+    "id": "tv_45969",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 16), what is the police work of Jamie and Renzulli's separate case?",
@@ -5452,7 +5540,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45968",
+    "id": "tv_45970",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 16), what nickname does the young graffiti artist use?",
@@ -5490,7 +5578,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45969",
+    "id": "tv_45971",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 16), whose proposal to raise Frank's public-media profile does he reject?",
@@ -5528,45 +5616,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45970",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010 series, Series 1, Episode 16), why does this refusal put Frank at odds with City Hall?",
-    "answers": [
-      "He has withdrawn all police cooperation",
-      "The mayor's press office wants him to court publicity",
-      "He has refused an acting audition",
-      "He is running against the mayor"
-    ],
-    "correctAnswer": "The mayor's press office wants him to court publicity",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 1",
-      "Broadcast year: 2011",
-      "Episode: S01E16",
-      "Episode title: Age of Innocence",
-      "Storyline: why does this refusal put Frank at odds with City Hall",
-      "Answer fact: The mayor's press office wants him to court publicity",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
-      "Character: Frank",
-      "Actor: Tom Selleck"
-    ]
-  },
-  {
-    "id": "tv_45971",
+    "id": "tv_45972",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 17), where is the decorated homeless veteran's body discovered?",
@@ -5604,7 +5654,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45972",
+    "id": "tv_45973",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 17), what military decoration has been taken from the victim?",
@@ -5642,7 +5692,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45973",
+    "id": "tv_45974",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 17), which conflict had the former Marine served in?",
@@ -5680,7 +5730,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45974",
+    "id": "tv_45975",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 17), who helps the detectives look for eyewitnesses around the scene?",
@@ -5720,7 +5770,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45975",
+    "id": "tv_45976",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 17), why is Frank publicly questioned about running for mayor?",
@@ -5758,7 +5808,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45976",
+    "id": "tv_45977",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 18), who is the witness-victim Danny sees being shot late at night?",
@@ -5796,7 +5846,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45977",
+    "id": "tv_45978",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 18), what is the name of the suspected drug lord behind the murder?",
@@ -5834,7 +5884,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45978",
+    "id": "tv_45979",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 18), what country is the suspected drug lord associated with?",
@@ -5872,7 +5922,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45979",
+    "id": "tv_45980",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 18), what legal hearing is Danny preparing to testify at before his family is threatened?",
@@ -5910,7 +5960,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45980",
+    "id": "tv_45981",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 18), who is abducted to silence Danny ahead of his testimony?",
@@ -5950,7 +6000,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45981",
+    "id": "tv_45982",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 18), what is the kidnappers' goal in taking a Reagan family member?",
@@ -5990,7 +6040,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45982",
+    "id": "tv_45983",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 19), what is the name of Linda's niece who is poisoned at the fashion event?",
@@ -6028,7 +6078,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45983",
+    "id": "tv_45984",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 19), who dies after the poisoning while Sophie remains in hospital?",
@@ -6068,7 +6118,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45984",
+    "id": "tv_45985",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 19), what happens to Sophie after the poisoning?",
@@ -6106,7 +6156,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45985",
+    "id": "tv_45986",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 19), who offers the detectives an important tip about Millie's death?",
@@ -6146,7 +6196,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45986",
+    "id": "tv_45987",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 19), what is Linda's older sister, Sophie's mother, called?",
@@ -6184,7 +6234,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45987",
+    "id": "tv_45988",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 19), what complicates Linda's relationship with her older sister while Sophie lies in hospital?",
@@ -6222,7 +6272,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45988",
+    "id": "tv_45989",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 19), what separate concern occupies Frank in relation to St Luke's Church?",
@@ -6260,7 +6310,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45989",
+    "id": "tv_45990",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 19), where is Father McMurray being transferred?",
@@ -6298,7 +6348,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45990",
+    "id": "tv_45991",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 19), which church official has ordered Father McMurray's transfer?",
@@ -6336,7 +6386,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45991",
+    "id": "tv_45992",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 20), what was the visiting tourist doing immediately before being shot?",
@@ -6376,7 +6426,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45992",
+    "id": "tv_45993",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 20), what anniversary trip brings the tourist and his wife to New York?",
@@ -6414,7 +6464,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45993",
+    "id": "tv_45994",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 20), which Midwestern state is the murdered tourist visiting from?",
@@ -6452,7 +6502,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45994",
+    "id": "tv_45995",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 20), why does the killing receive disproportionate public attention?",
@@ -6490,7 +6540,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45995",
+    "id": "tv_45996",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 20), what longstanding secret investigation does Jamie continue alongside the publicised case?",
@@ -6528,7 +6578,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45996",
+    "id": "tv_45997",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), what is the surname of the neighbours found murdered?",
@@ -6566,7 +6616,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45997",
+    "id": "tv_45998",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), what is the first name of the neighbours' troubled son suspected of killing them?",
@@ -6604,7 +6654,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45998",
+    "id": "tv_45999",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), what do investigators discover has been sabotaged on Jamie's car?",
@@ -6642,7 +6692,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_45999",
+    "id": "tv_46000",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), what happens to Jamie when the damaged brakes fail?",
@@ -6680,7 +6730,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46000",
+    "id": "tv_46001",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), which Internal Affairs investigator's file has Jamie been examining?",
@@ -6718,7 +6768,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46001",
+    "id": "tv_46002",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), who passes on Lydia's notes to Jamie?",
@@ -6756,7 +6806,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46002",
+    "id": "tv_46003",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), what do the recovered notes make Jamie suspect about Lydia's death?",
@@ -6794,7 +6844,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46003",
+    "id": "tv_46004",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), what evidence eventually shows Ronnie's sister and her associate were responsible for the killings?",
@@ -6832,7 +6882,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46004",
+    "id": "tv_46005",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), what substance does Ronnie's sister put into his drink to make him sleep?",
@@ -6870,7 +6920,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46005",
+    "id": "tv_46006",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), what becomes the crucial new evidence Jamie gives Danny about the Blue Templar?",
@@ -6910,7 +6960,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46006",
+    "id": "tv_46007",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 21), what does Joe's final recording reveal about his investigation?",
@@ -6950,7 +7000,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46007",
+    "id": "tv_46008",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 22), how much cash is missing after the suspicious drug raid?",
@@ -6990,7 +7040,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46008",
+    "id": "tv_46009",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 22), what else has disappeared from the raid alongside the money?",
@@ -7030,7 +7080,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46009",
+    "id": "tv_46010",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 22), where does Frank organise the family operation to avoid compromised police channels?",
@@ -7068,7 +7118,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46010",
+    "id": "tv_46011",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 22), which relative of Joe tells Frank more about the secret investigation?",
@@ -7108,7 +7158,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46011",
+    "id": "tv_46012",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 22), which former military friend of Danny helps with the covert investigation?",
@@ -7146,7 +7196,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46012",
+    "id": "tv_46013",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 22), who is the young woman Jamie is assigned to protect from attempted kidnappers?",
@@ -7184,7 +7234,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46013",
+    "id": "tv_46014",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 22), what clue makes Jamie suspect Laura's supposed friend Billy Coffin?",
@@ -7222,7 +7272,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46014",
+    "id": "tv_46015",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 22), what romantic moment occurs between Jamie and Laura while he protects her?",
@@ -7260,7 +7310,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46015",
+    "id": "tv_46016",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010 series, Series 1, Episode 22), why is Billy Coffin helping the would-be kidnappers?",
@@ -7295,46 +7345,6 @@ const auditQuestions = [
       "Source: Blue Bloods S1 episode summaries and CBS episode guide",
       "Character: Jamie",
       "Actor: Will Estes"
-    ]
-  },
-  {
-    "id": "tv_46016",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010 series, Series 1, Episode 22), which Blue Templar member and former partner of Joe is tracked to the corrupt officers' meeting?",
-    "answers": [
-      "Richard Reed",
-      "Sonny Malevsky",
-      "Sergeant Renzulli",
-      "Mayor Russo"
-    ],
-    "correctAnswer": "Sonny Malevsky",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 1",
-      "Broadcast year: 2011",
-      "Episode: S01E22",
-      "Episode title: The Blue Templar",
-      "Storyline: which Blue Templar member and former partner of Joe is tracked to the corrupt officers' meeting",
-      "Answer fact: Sonny Malevsky",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: Blue Bloods S1 episode summaries and CBS episode guide",
-      "Character: Frank",
-      "Character: Danny",
-      "Actor: Tom Selleck",
-      "Actor: Donnie Wahlberg"
     ]
   },
   {
