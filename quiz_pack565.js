@@ -2581,7 +2581,7 @@ const questions = [
     "id": "tv_48408",
     "category": "TV",
     "topic": "Family Fortunes",
-    "question": "Which classic ITV television biography programme surprised Les Dennis on the Family Fortunes set in the late 1990s?",
+    "question": "Which BBC television biography programme surprised Les Dennis during a 1997 recording of Family Fortunes?",
     "answers": [
       "This Is Your Life",
       "Parkinson",
@@ -2648,7 +2648,7 @@ const questions = [
       "1990s Television",
       "2000s Television",
       "2020s Television",
-      "Broadcast era: 1990s",
+      "Broadcast era: 1997",
       "Specific topic: Les Dennis on This Is Your Life",
       "Specific fact: Michael Aspel led surprise",
       "Correct answer: Michael Aspel",
