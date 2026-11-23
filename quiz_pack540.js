@@ -1,10 +1,16 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 540: Blue Bloods, Series 12 (2021–2022).
-// 122 independently selected questions, covering all 20 episodes with story-driven density.
-// IDs tv_31359–tv_31480; Pack 539 ended tv_31358.
-// Source: CBS official episode summaries https://www.cbs.com/shows/blue_bloods/episodes/12/
-// Supporting episode detail: https://en.wikipedia.org/wiki/Blue_Bloods_season_12
-// Episode numbering from CBS: True Blue S12E04 Oct 22; Good Intentions S12E05 Nov 5.
-// All questions use character/actor/storyline and 19 tags; no fixed questions-per-episode quota.
+// Audit 23 November 2026: 122 original IDs/questions preserved, 21 new storyline/resolution
+// questions and 3 independently verified awards questions; 146 questions across all 20 episodes.
+// Original IDs tv_31359–tv_31480; added IDs tv_47453–tv_47476.
+// Episode titles and dates: CBS https://www.cbs.com/shows/blue_bloods/episodes/12/
+// Stories and outcomes: https://en.wikipedia.org/wiki/Blue_Bloods_season_12
+// Series 12 finale: https://www.tvline.com/news/blue-bloods-recap-season-12-episode-20-finale-1234827272/
+// 2022 BMI award (winner): https://www.bmi.com/award-show/film-tv-2022
+// 2023 Edgar Award episode nomination: https://edgarawards.com/category-list-best-episode-in-a-tv-series/
+// 2023 Movieguide TV award nomination: https://movieguideawards.com/2023-movieguide-awards-nominations/
+// Important: Episode 4 = True Blue; Episode 5 = Good Intentions per CBS (some secondary guides reverse these).
+// Corrected original Old Friends question: two police officers brawl over defunding, not officers and protesters.
+// Preserve original IDs, avoid padding, retain answer checks and programme/episode/storyline/award tags.
 'use strict';
 const questions = [
   {
@@ -2063,14 +2069,14 @@ const questions = [
     "id": "tv_31416",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what incident between protesters and officers sparks a disagreement with Mayor Chase?",
+    "question": "In Blue Bloods, what incident between police colleagues sparks Frank's dispute with Mayor Chase in 'Old Friends'?",
     "answers": [
-      "A brawl during a demonstration",
-      "A dispute over a traffic fine",
-      "A riot at a sporting event",
-      "A public strike by doctors"
+      "Two officers brawl over calls to defund the NYPD",
+      "Officers refuse to salute a visiting mayor",
+      "Police captains quarrel over a sports event",
+      "Detectives argue about a stolen evidence file"
     ],
-    "correctAnswer": "A brawl during a demonstration",
+    "correctAnswer": "Two officers brawl over calls to defund the NYPD",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -2089,10 +2095,10 @@ const questions = [
       "Episode: S12E10",
       "Episode title: Old Friends",
       "Original airdate: 2022-01-07",
-      "Storyline: Frank and mayor dispute protest brawl response",
+      "Storyline: Frank and mayor clash after police brawl over defunding",
       "Character: Frank Reagan",
       "Actor: Tom Selleck",
-      "Answer fact: A brawl during a demonstration"
+      "Answer fact: Two officers brawl over calls to defund the NYPD"
     ]
   },
   {
@@ -4398,13 +4404,884 @@ const questions = [
       "Actor: Steve Schirripa",
       "Answer fact: Anthony Abetemarco"
     ]
+  },
+  {
+    "id": "tv_47453",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, whose conviction might be overturned when Anthony revisits a case from his earlier police career?",
+    "answers": [
+      "A female gang member he helped imprison",
+      "A mayor's former adviser",
+      "An arrested police lieutenant",
+      "An accused priest"
+    ],
+    "correctAnswer": "A female gang member he helped imprison",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2021",
+      "Episode: S12E05",
+      "Episode title: Good Intentions",
+      "Original airdate: 2021-11-05",
+      "Storyline: Old gang conviction possibly overturned by new evidence",
+      "Character: Anthony Abetemarco",
+      "Actor: Steve Schirripa",
+      "Answer fact: A female gang member he helped imprison"
+    ]
+  },
+  {
+    "id": "tv_47454",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, which Reagan family member is assigned a hostile new patrol partner while Danny faces a cartel threat?",
+    "answers": [
+      "Erin Reagan",
+      "Eddie Janko",
+      "Nicky Reagan-Boyle",
+      "Henry Reagan"
+    ],
+    "correctAnswer": "Eddie Janko",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2021",
+      "Episode: S12E06",
+      "Episode title: Be Smart or Be Dead",
+      "Original airdate: 2021-11-12",
+      "Storyline: Eddie works with hostile patrol partner",
+      "Character: Eddie Janko",
+      "Actor: Vanessa Ray",
+      "Answer fact: Eddie Janko"
+    ]
+  },
+  {
+    "id": "tv_47455",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, what is Maria Baez's eventual condition after she is shot during the 'Firewall' investigation?",
+    "answers": [
+      "She recovers in hospital",
+      "She permanently leaves the NYPD",
+      "She is placed under federal arrest",
+      "She transfers to the FBI"
+    ],
+    "correctAnswer": "She recovers in hospital",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2021",
+      "Episode: S12E09",
+      "Episode title: Firewall",
+      "Original airdate: 2021-12-10",
+      "Storyline: Baez survives shooting and recovers in hospital",
+      "Character: Maria Baez",
+      "Actor: Marisa Ramirez",
+      "Answer fact: She recovers in hospital"
+    ]
+  },
+  {
+    "id": "tv_47456",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, why does Eddie object to her temporary partner concealing a pregnancy in 'Firewall'?",
+    "answers": [
+      "It puts the officer and unborn baby at risk on duty",
+      "It breaches the detective exam registration deadline",
+      "It makes the officer ineligible for a driving licence",
+      "It violates the mayor's security clearance"
+    ],
+    "correctAnswer": "It puts the officer and unborn baby at risk on duty",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2021",
+      "Episode: S12E09",
+      "Episode title: Firewall",
+      "Original airdate: 2021-12-10",
+      "Storyline: Hidden pregnancy creates on-duty safety risk",
+      "Character: Eddie Janko",
+      "Actor: Vanessa Ray",
+      "Answer fact: It puts the officer and unborn baby at risk on duty"
+    ]
+  },
+  {
+    "id": "tv_47457",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, how do Jamie and Henry eventually resolve their clash after Henry's unattended stove fire?",
+    "answers": [
+      "They reach a mutual understanding",
+      "Henry agrees to leave the family home at once",
+      "Jamie suspends Henry from the NYPD",
+      "They stop speaking for the rest of the series"
+    ],
+    "correctAnswer": "They reach a mutual understanding",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2021",
+      "Episode: S12E09",
+      "Episode title: Firewall",
+      "Original airdate: 2021-12-10",
+      "Storyline: Henry and Jamie reconcile after safety worries",
+      "Character: Henry Reagan",
+      "Actor: Len Cariou",
+      "Answer fact: They reach a mutual understanding"
+    ]
+  },
+  {
+    "id": "tv_47458",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, why does Anthony defend the woman Erin discovers has mob connections in 'Cold Comfort'?",
+    "answers": [
+      "She wants to leave her criminal past behind",
+      "She is conducting an undercover FBI sting",
+      "She is secretly an assistant district attorney",
+      "She is protecting an imprisoned priest"
+    ],
+    "correctAnswer": "She wants to leave her criminal past behind",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E13",
+      "Episode title: Cold Comfort",
+      "Original airdate: 2022-01-28",
+      "Storyline: Anthony supports woman who wants a clean start",
+      "Character: Anthony Abetemarco",
+      "Actor: Steve Schirripa",
+      "Answer fact: She wants to leave her criminal past behind"
+    ]
+  },
+  {
+    "id": "tv_47459",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, who abducts Joe Hill's lawyer girlfriend in 'Allegiance', forcing her rescue?",
+    "answers": [
+      "Her own client",
+      "A rival prosecutor",
+      "A corrupt police chief",
+      "Joe Hill's former partner"
+    ],
+    "correctAnswer": "Her own client",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E14",
+      "Episode title: Allegiance",
+      "Original airdate: 2022-02-25",
+      "Storyline: Joe's lawyer girlfriend kidnapped by client and rescued",
+      "Character: Joe Hill",
+      "Actor: Will Hochman",
+      "Answer fact: Her own client"
+    ]
+  },
+  {
+    "id": "tv_47460",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, who masterminds the poisoning of the television cook investigated by Danny and Baez?",
+    "answers": [
+      "The cook's estranged husband",
+      "A competing TV presenter",
+      "A rejected cooking-show contestant",
+      "The cook's former lawyer"
+    ],
+    "correctAnswer": "The cook's estranged husband",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E14",
+      "Episode title: Allegiance",
+      "Original airdate: 2022-02-25",
+      "Storyline: Estranged husband behind celebrity chef poisoning",
+      "Character: Maria Baez",
+      "Actor: Marisa Ramirez",
+      "Answer fact: The cook's estranged husband"
+    ]
+  },
+  {
+    "id": "tv_47461",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, how does the killer arrange for the TV chef's fatal allergic reaction in 'Allegiance'?",
+    "answers": [
+      "The chef's assistant spikes her coffee",
+      "A waiter poisons a dessert trolley",
+      "An accomplice contaminates her lipstick",
+      "A rival replaces a prescribed medicine"
+    ],
+    "correctAnswer": "The chef's assistant spikes her coffee",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E14",
+      "Episode title: Allegiance",
+      "Original airdate: 2022-02-25",
+      "Storyline: Chef assistant spikes coffee at estranged husband's behest",
+      "Character: Danny Reagan",
+      "Actor: Donnie Wahlberg",
+      "Answer fact: The chef's assistant spikes her coffee"
+    ]
+  },
+  {
+    "id": "tv_47462",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, what restriction is imposed on Lieutenant Moretti after his son's gang ties endanger his family?",
+    "answers": [
+      "He cannot allow his son to live in his home",
+      "He must resign from the police immediately",
+      "He has to move his family out of New York",
+      "He is forbidden from contacting Frank Reagan"
+    ],
+    "correctAnswer": "He cannot allow his son to live in his home",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E14",
+      "Episode title: Allegiance",
+      "Original airdate: 2022-02-25",
+      "Storyline: Moretti barred from housing gang-affiliated son",
+      "Character: Raymond Moretti",
+      "Actor: Tony Danza",
+      "Answer fact: He cannot allow his son to live in his home"
+    ]
+  },
+  {
+    "id": "tv_47463",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, which NYPD promotion examination has Eddie already passed when she reconsiders her future in 'Allegiance'?",
+    "answers": [
+      "The sergeant's examination",
+      "The captain's examination",
+      "The police commissioner's examination",
+      "The lieutenant's examination"
+    ],
+    "correctAnswer": "The sergeant's examination",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E14",
+      "Episode title: Allegiance",
+      "Original airdate: 2022-02-25",
+      "Storyline: Eddie passes sergeant examination before preferring detective role",
+      "Character: Eddie Janko",
+      "Actor: Vanessa Ray",
+      "Answer fact: The sergeant's examination"
+    ]
+  },
+  {
+    "id": "tv_47464",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, what does Danny do after discovering the missing girl's father withheld her mother's immigration notices?",
+    "answers": [
+      "He arrests the father",
+      "He transfers the case to the FBI",
+      "He recommends the father's promotion",
+      "He issues a warning and closes the case"
+    ],
+    "correctAnswer": "He arrests the father",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E15",
+      "Episode title: Where We Stand",
+      "Original airdate: 2022-03-04",
+      "Storyline: Danny arrests father who sabotaged former wife's immigration hearings",
+      "Character: Danny Reagan",
+      "Actor: Donnie Wahlberg",
+      "Answer fact: He arrests the father"
+    ]
+  },
+  {
+    "id": "tv_47465",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, what happens to the missing mother's deportation after Danny exposes her former husband's deception?",
+    "answers": [
+      "Her deportation is postponed",
+      "She is deported immediately",
+      "She is charged with child abduction",
+      "She receives an automatic US passport"
+    ],
+    "correctAnswer": "Her deportation is postponed",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E15",
+      "Episode title: Where We Stand",
+      "Original airdate: 2022-03-04",
+      "Storyline: Immigration removal postponed after hidden court notices discovered",
+      "Character: Danny Reagan",
+      "Actor: Donnie Wahlberg",
+      "Answer fact: Her deportation is postponed"
+    ]
+  },
+  {
+    "id": "tv_47466",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, whom does Erin suspect of arranging Anthony's surprise promotion for ulterior motives?",
+    "answers": [
+      "District Attorney Kimberly Crawford",
+      "Mayor Peter Chase",
+      "Archbishop Kevin Kearns",
+      "Police Commissioner Frank Reagan"
+    ],
+    "correctAnswer": "District Attorney Kimberly Crawford",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E16",
+      "Episode title: Guilt",
+      "Original airdate: 2022-03-11",
+      "Storyline: Erin suspects DA Crawford's hidden promotion agenda",
+      "Character: Erin Reagan",
+      "Actor: Bridget Moynahan",
+      "Answer fact: District Attorney Kimberly Crawford"
+    ]
+  },
+  {
+    "id": "tv_47467",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, what allows Danny and Baez finally to identify the attackers of the student left for dead in 'Hidden Motive'?",
+    "answers": [
+      "The student regains consciousness and gives a crucial clue",
+      "A lost police badge is found at the scene",
+      "A priest reveals a confidential confession",
+      "The suspects confess to the mayor"
+    ],
+    "correctAnswer": "The student regains consciousness and gives a crucial clue",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E17",
+      "Episode title: Hidden Motive",
+      "Original airdate: 2022-04-01",
+      "Storyline: Conscious student reveals clue linking thieves to rental cars",
+      "Character: Maria Baez",
+      "Actor: Marisa Ramirez",
+      "Answer fact: The student regains consciousness and gives a crucial clue"
+    ]
+  },
+  {
+    "id": "tv_47468",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, how does a car-hire crime team target wealthy families in 'Hidden Motive'?",
+    "answers": [
+      "One drives them to the airport while another burgles their houses",
+      "They sell stolen cars to gang members outside the city",
+      "They plant counterfeit parking tickets on their vehicles",
+      "They steal jewellery from guests at wedding receptions"
+    ],
+    "correctAnswer": "One drives them to the airport while another burgles their houses",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E17",
+      "Episode title: Hidden Motive",
+      "Original airdate: 2022-04-01",
+      "Storyline: Rental-car driver and accomplice exploit customers' travel",
+      "Character: Danny Reagan",
+      "Actor: Donnie Wahlberg",
+      "Answer fact: One drives them to the airport while another burgles their houses"
+    ]
+  },
+  {
+    "id": "tv_47469",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, how do the Reagans save the trafficked teenager Soli during 'Silver Linings'?",
+    "answers": [
+      "They defuse a bomb strapped to her",
+      "They stop her plane before take-off",
+      "They find her inside a police evidence locker",
+      "They intercept a forged adoption order"
+    ],
+    "correctAnswer": "They defuse a bomb strapped to her",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E20",
+      "Episode title: Silver Linings",
+      "Original airdate: 2022-05-06",
+      "Storyline: Soli rescued after bomb strapped to her is disarmed",
+      "Character: Joe Hill",
+      "Actor: Will Hochman",
+      "Answer fact: They defuse a bomb strapped to her"
+    ]
+  },
+  {
+    "id": "tv_47470",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, why had the pregnant witness-protection victim returned home before the deadly bombing in 'Silver Linings'?",
+    "answers": [
+      "To check on her mother",
+      "To retrieve a forgotten police badge",
+      "To meet an undercover journalist",
+      "To collect an inherited painting"
+    ],
+    "correctAnswer": "To check on her mother",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E20",
+      "Episode title: Silver Linings",
+      "Original airdate: 2022-05-06",
+      "Storyline: Protected pregnant witness returns to check on mother",
+      "Character: Maria Baez",
+      "Actor: Marisa Ramirez",
+      "Answer fact: To check on her mother"
+    ]
+  },
+  {
+    "id": "tv_47471",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, what does Danny recall from his time as a Marine when consoling Baez about the murdered expectant mother?",
+    "answers": [
+      "A similarly devastating bombing",
+      "A training accident at sea",
+      "His first encounter with an undercover informant",
+      "A rescue in a foreign embassy"
+    ],
+    "correctAnswer": "A similarly devastating bombing",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E20",
+      "Episode title: Silver Linings",
+      "Original airdate: 2022-05-06",
+      "Storyline: Danny recalls a similar fatal bombing from Marine service",
+      "Character: Danny Reagan",
+      "Actor: Donnie Wahlberg",
+      "Answer fact: A similarly devastating bombing"
+    ]
+  },
+  {
+    "id": "tv_47472",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, what particular fear does Erin confess before announcing her district attorney campaign?",
+    "answers": [
+      "Losing the election",
+      "Having to move away from New York",
+      "Being asked to join the FBI",
+      "Losing her legal qualifications"
+    ],
+    "correctAnswer": "Losing the election",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E20",
+      "Episode title: Silver Linings",
+      "Original airdate: 2022-05-06",
+      "Storyline: Erin fears campaign defeat more than victory",
+      "Character: Erin Reagan",
+      "Actor: Bridget Moynahan",
+      "Answer fact: Losing the election"
+    ]
+  },
+  {
+    "id": "tv_47473",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "In Blue Bloods, why does DA Kimberly Crawford challenge Erin during the policy dispute in 'Silver Linings'?",
+    "answers": [
+      "She questions Erin's loyalties to her office and her father",
+      "Erin secretly arrests the police commissioner",
+      "Erin refuses to take any more court cases",
+      "Erin announces she has joined the mayor's staff"
+    ],
+    "correctAnswer": "She questions Erin's loyalties to her office and her father",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Broadcast year: 2022",
+      "Episode: S12E20",
+      "Episode title: Silver Linings",
+      "Original airdate: 2022-05-06",
+      "Storyline: Crawford questions Erin's divided loyalties in dispute with Frank",
+      "Character: Erin Reagan",
+      "Actor: Bridget Moynahan",
+      "Answer fact: She questions Erin's loyalties to her office and her father"
+    ]
+  },
+  {
+    "id": "tv_47474",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "Which composer received a BMI Network Television Award for Blue Bloods at the 2022 BMI Film, TV & Visual Media Awards?",
+    "answers": [
+      "Rob Simonsen",
+      "Atli Örvarsson",
+      "Sean Callery",
+      "Brian Kirk"
+    ],
+    "correctAnswer": "Rob Simonsen",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Award year: 2022",
+      "Award: BMI Network Television Award",
+      "Award result: Won",
+      "Award recipient: Rob Simonsen",
+      "Award question: 2022 BMI network television music award",
+      "Answer fact: Rob Simonsen",
+      "Recognition: Television awards",
+      "Composer: Rob Simonsen"
+    ]
+  },
+  {
+    "id": "tv_47475",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "Which Blue Bloods Series 12 episode was nominated for a 2023 Edgar Award for Best Television Episode Teleplay?",
+    "answers": [
+      "The Reagan Way",
+      "Silver Linings",
+      "Firewall",
+      "On the Arm"
+    ],
+    "correctAnswer": "The Reagan Way",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Award year: 2023",
+      "Award: Edgar Award for Best Television Episode Teleplay",
+      "Award result: Nominated",
+      "Award recipient: Siobhan Byrne O'Connor",
+      "Award question: The Reagan Way 2023 Edgar teleplay nomination",
+      "Answer fact: The Reagan Way",
+      "Recognition: Television awards",
+      "Episode: S12E12",
+      "Episode title: The Reagan Way",
+      "Original airdate: 2022-01-21"
+    ]
+  },
+  {
+    "id": "tv_47476",
+    "category": "TV",
+    "topic": "Blue Bloods",
+    "question": "Which Blue Bloods Series 12 episode was nominated for the 2023 Movieguide Faith & Freedom Award for Television and Streaming?",
+    "answers": [
+      "Silver Linings",
+      "Good Intentions",
+      "Protective Instincts",
+      "Guilt"
+    ],
+    "correctAnswer": "Silver Linings",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "American Television",
+      "CBS",
+      "2020s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Family Drama",
+      "New York City",
+      "Programme: Blue Bloods (2010–2024)",
+      "Format: Written Quiz",
+      "Series: 12",
+      "Award year: 2023",
+      "Award: Movieguide Faith & Freedom Award for Television and Streaming",
+      "Award result: Nominated",
+      "Award recipient: Blue Bloods",
+      "Award question: Silver Linings 2023 Movieguide Faith Freedom nomination",
+      "Answer fact: Silver Linings",
+      "Recognition: Television awards",
+      "Episode: S12E20",
+      "Episode title: Silver Linings",
+      "Original airdate: 2022-05-06"
+    ]
   }
 ];
-if(questions.length!==122||new Set(questions.map(q=>q.id)).size!==questions.length||
+
+if(questions.length!==146||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(31359+i)||q.category!=='TV'||q.topic!=='Blue Bloods'||
-q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
-q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<19||
-!q.tags.some(t=>t.startsWith('Actor: '))||!q.tags.some(t=>t.startsWith('Character: '))||
-!q.tags.some(t=>t.startsWith('Storyline: '))||q.dailyEligible!==true))throw Error('Pack 540 validation failed');
+questions.some((q,i)=>((i<122)?q.id!=='tv_'+(31359+i):q.id!=='tv_'+(47453+i-122))||
+q.category!=='TV'||q.topic!=='Blue Bloods'||q.answers.length!==4||
+new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+!q.tags.includes('Programme: Blue Bloods (2010–2024)')||q.tags.length<19||
+new Set(q.tags).size!==q.tags.length||
+!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 540 validation failed');
 module.exports=questions;
