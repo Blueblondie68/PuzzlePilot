@@ -252,14 +252,14 @@ const questions = [
     "id": "tv_29241",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 4, Episode 3), where does Brenda return after becoming dissatisfied with college in Minnesota?",
+    "question": "In Beverly Hills, 90210 (Series 4, Episode 3), why does Brenda abandon college in Minnesota and return home?",
     "answers": [
-      "Chicago",
-      "Seattle",
-      "Beverly Hills",
-      "Boston"
+      "She accepts a television acting job",
+      "She feels lonely and unhappy at university",
+      "She is expelled for cheating",
+      "She needs to recover from an injury"
     ],
-    "correctAnswer": "Beverly Hills",
+    "correctAnswer": "She feels lonely and unhappy at university",
     "difficulty": "Easy",
     "dailyEligible": true,
     "tags": [
@@ -282,7 +282,7 @@ const questions = [
       "Storyline: Brenda comes home from college",
       "Character: Brenda Walsh",
       "Actor: Shannen Doherty",
-      "Answer fact: Beverly Hills"
+      "Answer fact: She feels lonely and unhappy at university"
     ]
   },
   {
@@ -4523,14 +4523,14 @@ const auditQuestions = [
     "id": "tv_43816",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 4, Episode 13), what named initiation period exposes new Greek-society members to humiliating pranks?",
+    "question": "In Beverly Hills, 90210 (Series 4, Episode 23), who gets punched accidentally when Dylan confronts Brandon over Kelly's kiss?",
     "answers": [
-      "Hell Week",
-      "Sports Week",
-      "Founders' Week",
-      "Orientation Day"
+      "Steve Sanders",
+      "Josh Richland",
+      "Stuart Carson",
+      "Jesse Vasquez"
     ],
-    "correctAnswer": "Hell Week",
+    "correctAnswer": "Steve Sanders",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -4548,12 +4548,12 @@ const auditQuestions = [
       "Format: Written Quiz",
       "Series: 4",
       "Broadcast year: 1993",
-      "Episode: S04E13",
-      "Episode title: Emily",
+      "Episode: S04E23",
+      "Episode title: A Pig Is a Boy Is a Dog",
       "Question type: Storyline",
       "Character: Steve Sanders",
       "Actor: Ian Ziering",
-      "Answer fact: Hell Week",
+      "Answer fact: Steve Sanders",
       "Comprehensive audit: 23 November 2026"
     ]
   },
@@ -5815,14 +5815,14 @@ const auditQuestions = [
     "id": "tv_43850",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 4, Episode 31), which singer does David try to impress with his musical talent at the campus Mardi Gras event?",
+    "question": "In Beverly Hills, 90210 (Series 4, Episode 31), what do Kevin and Suzanne do before Dylan puts money into their new venture?",
     "answers": [
-      "Prince",
-      "Lionel Richie",
-      "Babyface",
-      "Stevie Wonder"
+      "They leave for Brazil",
+      "They purchase the Peach Pit",
+      "They get married",
+      "They register at California University"
     ],
-    "correctAnswer": "Babyface",
+    "correctAnswer": "They get married",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -5845,7 +5845,7 @@ const auditQuestions = [
       "Question type: Storyline",
       "Character: David Silver",
       "Actor: Brian Austin Green",
-      "Answer fact: Babyface",
+      "Answer fact: They get married",
       "Comprehensive audit: 23 November 2026"
     ]
   },
@@ -6271,7 +6271,7 @@ const auditQuestions = [
     "id": "tv_43862",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In the awards history of Beverly Hills, 90210, which major Golden Globe category nominated Beverly Hills, 90210 in both 1992 and 1993?",
+    "question": "In Beverly Hills, 90210's awards history, for which Golden Globe category was the series nominated in both 1992 and 1993?",
     "answers": [
       "Best Television Series – Musical or Comedy",
       "Best Television Limited Series",
@@ -6309,7 +6309,7 @@ const auditQuestions = [
     "id": "tv_43863",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In the awards history of Beverly Hills, 90210, which leading man was twice nominated for a Golden Globe as a drama-series actor for Beverly Hills, 90210?",
+    "question": "Which Beverly Hills, 90210 actor was nominated twice for a Golden Globe for Best Actor in a Drama Series?",
     "answers": [
       "Luke Perry",
       "Ian Ziering",
@@ -6347,7 +6347,7 @@ const auditQuestions = [
     "id": "tv_43864",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In the awards history of Beverly Hills, 90210, which youth-cast prize did Beverly Hills, 90210 win at the 1993 Young Artist Awards?",
+    "question": "Which Young Artist Award did the Beverly Hills, 90210 cast win in 1993?",
     "answers": [
       "Favorite Young Ensemble Cast in a Television Series",
       "Best New Family Television Comedy Series",
@@ -6385,7 +6385,7 @@ const auditQuestions = [
     "id": "tv_43865",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In the awards history of Beverly Hills, 90210, which comedian received the show's sole Primetime Emmy nomination, in 1995, for a guest role?",
+    "question": "Which Beverly Hills, 90210 guest actor received the programme's sole Primetime Emmy nomination, in 1995?",
     "answers": [
       "Bob Newhart",
       "Milton Berle",
