@@ -5021,14 +5021,14 @@ const auditQuestions = [
     "id": "tv_43751",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 3, Episode 16), what university news excites Andrea just before the Christmas festivities?",
+    "question": "In Beverly Hills, 90210 (Series 3, Episode 16), to which US city is David Silver's mother moving, leaving him worried about being left behind?",
     "answers": [
-      "She has won a scholarship to Oxford",
-      "She has been accepted to Yale",
-      "She is appointed school principal",
-      "She has been elected college president"
+      "Seattle",
+      "Portland",
+      "Chicago",
+      "Houston"
     ],
-    "correctAnswer": "She has been accepted to Yale",
+    "correctAnswer": "Portland",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -5049,7 +5049,7 @@ const auditQuestions = [
       "Episode: S03E16",
       "Episode title: It's a Totally Happening Life",
       "Question type: Storyline",
-      "Answer fact: She has been accepted to Yale",
+      "Answer fact: Portland",
       "Comprehensive storyline and cast audit: 23 November 2026",
       "Specific episode context"
     ]
@@ -5872,14 +5872,14 @@ const auditQuestions = [
     "id": "tv_43774",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 3, Episode 25), which professional sports team is hosting the game where Steve gets a chance to win a cash prize?",
+    "question": "In Beverly Hills, 90210 (Series 3, Episode 25), what does Steve decide to fund with the money won at the basketball game?",
     "answers": [
-      "Los Angeles Lakers",
-      "Los Angeles Dodgers",
-      "Los Angeles Kings",
-      "Los Angeles Rams"
+      "A summer camp for younger schoolchildren",
+      "A European tour for David's band",
+      "A school photography studio",
+      "A new football scoreboard"
     ],
-    "correctAnswer": "Los Angeles Lakers",
+    "correctAnswer": "A summer camp for younger schoolchildren",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -5900,7 +5900,7 @@ const auditQuestions = [
       "Episode: S03E25",
       "Episode title: Senior Poll",
       "Question type: Storyline",
-      "Answer fact: Los Angeles Lakers",
+      "Answer fact: A summer camp for younger schoolchildren",
       "Comprehensive storyline and cast audit: 23 November 2026",
       "Specific episode context"
     ]
@@ -6390,7 +6390,7 @@ const auditQuestions = [
     "id": "tv_43788",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 3, Episode 3), which actor plays Brenda's Paris love interest Rick?",
+    "question": "In Beverly Hills, 90210 (Series 3, Episode 5), which actor plays Brenda's Paris love interest Rick?",
     "answers": [
       "David Arquette",
       "Mark Kiely",
@@ -6415,8 +6415,8 @@ const auditQuestions = [
       "Format: Written Quiz",
       "Series: 3",
       "Broadcast year: 1992",
-      "Episode: S03E03",
-      "Episode title: Too Little, Too Late/Paris 75001",
+      "Episode: S03E05",
+      "Episode title: Shooting Star/American in Paris",
       "Question type: Cast",
       "Answer fact: Dean Cain",
       "Comprehensive storyline and cast audit: 23 November 2026",
