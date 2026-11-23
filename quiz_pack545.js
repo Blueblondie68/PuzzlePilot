@@ -1,19 +1,20 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 545: Blue Heelers, Series 2 (1995).
-// Complete story/awards audit, 23 November 2026: 146 original questions retained,
-// 28 additional case, character, aftermath and ongoing-arc questions, 3 verified
-// 1996 TV Week Logie questions. 177 questions total across all 41 broadcast episodes.
-// Original IDs tv_32011–tv_32156; audit IDs tv_47691–tv_47721.
-// TV Guide detailed episode synopses: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-2/1000036269/
-// Official aired order and alternate titles: https://thetvdb.com/series/blue-heelers/allseasons/official
-// 1996 Silver Logie winner Lisa McCune, 1996 Gold Logie nominee Lisa McCune;
-// Gold Logie winner Ray Martin: https://televisionau.com/2021/11/tv-week-logie-awards-25-years-ago-11.html
-// Full recognition table: https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers
-// Follow long arcs: Rose's domestic abuse, Adam's HIV scare, Wayne and Roz's divorce, Sasha/Nick,
-// Maggie and PJ, Tom's shooting and recovery, PJ framed then defended by Maggie,
-// and Gina's assault inquiry in two-part finale (Sam cleared, Imperial worker suspected).
-// Episode naming conflicts: S02E16 Salutary Lessons/The Lolita Blues; S02E38 Juggling the Smoke/with Smoke.
-// S02E37 airdate disputed: original file deliberately avoids claiming an exact date.
-// No invented murder culprit or unjustified claim of solved case; no fixed per-episode quotas.
+// Audited 23 November 2026: 146 original questions preserved and 21 substantive plot,
+// character, aftermath and continuing-story questions added; 2 verified award questions.
+// 169 total questions covering all 41 aired episodes; no repeated story facts or arbitrary quotas.
+// Original IDs tv_32011–tv_32156; audit IDs tv_47691–tv_47713.
+// Comprehensive episode synopses: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-2/1000036269/
+// Aired order/title comparison: https://thetvdb.com/series/blue-heelers/allseasons/official
+// Guest credits: Michael (Mick) Doyle played by David Field in 1995; Sam Cooper by Stephen Whittaker.
+// 1996 Logie records: https://televisionau.com/2021/11/tv-week-logie-awards-25-years-ago-11.html
+// 1996 award nominee/winner summary: https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers
+// 1996 Logie Most Popular Actress — Lisa McCune WON; 1996 Gold Logie — Lisa McCune NOMINATED.
+// Long arcs include Rose and Jeff's domestic violence; Adam's HIV-exposure uncertainty; Sasha and Nick;
+// Wayne's marital breakup and workplace allegation; Tom's shooting and recovery; corruption allegations;
+// Maggie's investigation proving PJ framed; Gina's assault and investigation in the two-part finale.
+// No unverified solution to crimes supplied by short synopses is invented.
+// Episode variants: S02E16 'Salutary Lessons' aka 'The Lolita Blues'; S02E38 'Juggling the Smoke'
+// aka 'Juggling with Smoke'. S02E37 exact airdate disputed; retained original's non-assertion.
 'use strict';
 const questions = [
   {
@@ -5312,78 +5313,6 @@ const questions = [
     "id": "tv_47692",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers, why does Adam face a frightening health test after confronting bouncer Paul Reynolds in 'A Question of Courage'?",
-    "answers": [
-      "Reynolds, who has HIV, bites him",
-      "He accidentally swallows contaminated food",
-      "He is struck by lightning",
-      "He inhales fumes in a warehouse fire"
-    ],
-    "correctAnswer": "Reynolds, who has HIV, bites him",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Police",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 2",
-      "Broadcast year: 1995",
-      "Episode: S02E02",
-      "Episode title: A Question of Courage",
-      "Original airdate: 1995-02-28",
-      "Storyline: Adam fears HIV exposure after bite by Paul Reynolds",
-      "Character: Adam Cooper",
-      "Actor: Damian Walshe-Howling",
-      "Answer fact: Reynolds, who has HIV, bites him"
-    ]
-  },
-  {
-    "id": "tv_47693",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers, which crime makes 'Cruel Reality' an unprecedented investigation for Mount Thomas?",
-    "answers": [
-      "Its first bank robbery",
-      "Its first art theft",
-      "Its first train hijacking",
-      "Its first international fraud case"
-    ],
-    "correctAnswer": "Its first bank robbery",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Police",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 2",
-      "Broadcast year: 1995",
-      "Episode: S02E03",
-      "Episode title: Cruel Reality",
-      "Original airdate: 1995-03-07",
-      "Storyline: Mount Thomas experiences its first bank robbery",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: Its first bank robbery"
-    ]
-  },
-  {
-    "id": "tv_47694",
-    "category": "TV",
-    "topic": "Blue Heelers",
     "question": "In Blue Heelers, how does Alex Bailey know Tom Croydon and Chris Riley when he returns from prison in 'Mates'?",
     "answers": [
       "He is an old friend of both",
@@ -5417,7 +5346,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47695",
+    "id": "tv_47693",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, whose continuing abuse does Detective Rose Egan admit after the Roper family tragedy in 'Breaking the Cycle'?",
@@ -5453,7 +5382,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47696",
+    "id": "tv_47694",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, which officer shares the Highway Patrol pursuit with Wayne that ends in motorcyclist Billy Peters's death?",
@@ -5489,43 +5418,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47697",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers, what responsibility complicates the search for Maggie's stolen gun in 'Gun Law'?",
-    "answers": [
-      "Supervising Inspector Faulkner's work-experience nephew",
-      "Preparing a sergeant's retirement party",
-      "Escorting a television presenter",
-      "Guarding a prisoner from interstate"
-    ],
-    "correctAnswer": "Supervising Inspector Faulkner's work-experience nephew",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Police",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 2",
-      "Broadcast year: 1995",
-      "Episode: S02E08",
-      "Episode title: Gun Law",
-      "Original airdate: 1995-04-11",
-      "Storyline: Station mentors Faulkner's nephew while searching for stolen police weapon",
-      "Character: Nick Schultz",
-      "Actor: William McInnes",
-      "Answer fact: Supervising Inspector Faulkner's work-experience nephew"
-    ]
-  },
-  {
-    "id": "tv_47698",
+    "id": "tv_47695",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, how is Sasha Peters connected to the tragedy Nick investigated before their romance in 'Ripples on the Pond'?",
@@ -5561,7 +5454,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47699",
+    "id": "tv_47696",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, which business is at the centre of the pie-contamination inquiry in 'Stop for a Bite'?",
@@ -5597,7 +5490,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47700",
+    "id": "tv_47697",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, which secondary opportunity does Nick pursue while the death of backpacker Eva is investigated?",
@@ -5633,7 +5526,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47701",
+    "id": "tv_47698",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what does the investigating party discover at the crash site beyond the surviving local politician in 'The Old School Tie'?",
@@ -5669,7 +5562,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47702",
+    "id": "tv_47699",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, how does Nick respond when visiting homicide detectives try to take over the unidentified-body case in 'Dead Ringer'?",
@@ -5705,7 +5598,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47703",
+    "id": "tv_47700",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, which relative of Inspector Faulkner is also reported missing in the investigation of a schoolgirl living with a teacher?",
@@ -5741,7 +5634,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47704",
+    "id": "tv_47701",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what makes Wayne's affair in 'Trust Me' a police matter, rather than only a relationship problem?",
@@ -5777,7 +5670,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47705",
+    "id": "tv_47702",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, which family becomes a focus of suspicion after their five-year-old daughter disappears in 'With Prejudice'?",
@@ -5813,7 +5706,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47706",
+    "id": "tv_47703",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what are internal investigators specifically probing when they descend on Mount Thomas in 'Paranoia (1)'?",
@@ -5844,12 +5737,12 @@ const questions = [
       "Original airdate: 1995-07-18",
       "Storyline: Maggie's brother joins inquiry into Mount Thomas corruption and narcotics allegations",
       "Character: Michael Doyle",
-      "Actor: Michael Doyle (police colleague)",
+      "Actor: David Field",
       "Answer fact: Police corruption and narcotics smuggling"
     ]
   },
   {
-    "id": "tv_47707",
+    "id": "tv_47704",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what happens to Sergeant Tom Croydon after the gunman wounds him in the Imperial Hotel siege?",
@@ -5885,151 +5778,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47708",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers, why must police handle a seemingly ordinary stolen-property investigation especially sensitively in 'The Collector'?",
-    "answers": [
-      "The property comprises Aboriginal cultural artefacts",
-      "The stolen item is a police commissioner's badge",
-      "The suspect is an overseas diplomat",
-      "The theft occurs inside a children's hospital"
-    ],
-    "correctAnswer": "The property comprises Aboriginal cultural artefacts",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Police",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 2",
-      "Broadcast year: 1995",
-      "Episode: S02E24",
-      "Episode title: The Collector",
-      "Original airdate: 1995-08-01",
-      "Storyline: Stolen Aboriginal artefacts create cultural sensitivities in robbery inquiry",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: The property comprises Aboriginal cultural artefacts"
-    ]
-  },
-  {
-    "id": "tv_47709",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers, what are Maggie and Wayne studying for while Nick's involvement with a graffiti artist leads to tragedy in 'The Best of Rivals'?",
-    "answers": [
-      "The senior-constable promotion examination",
-      "The police commissioner's entrance exam",
-      "A university medical course",
-      "A firearms export qualification"
-    ],
-    "correctAnswer": "The senior-constable promotion examination",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Police",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 2",
-      "Broadcast year: 1995",
-      "Episode: S02E28",
-      "Episode title: The Best of Rivals",
-      "Original airdate: 1995-08-29",
-      "Storyline: Maggie Wayne prepare for senior constable exam amid Nick's conflicting actions",
-      "Character: Maggie Doyle",
-      "Actor: Lisa McCune",
-      "Answer fact: The senior-constable promotion examination"
-    ]
-  },
-  {
-    "id": "tv_47710",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers, why is Wayne in danger of losing his career during 'Double Jeopardy (2)'?",
-    "answers": [
-      "Kate Kenny accuses him of sexual harassment",
-      "He is arrested for firearms trafficking",
-      "He is wrongly declared dead",
-      "He loses his annual licence to drive"
-    ],
-    "correctAnswer": "Kate Kenny accuses him of sexual harassment",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Police",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 2",
-      "Broadcast year: 1995",
-      "Episode: S02E31",
-      "Episode title: Double Jeopardy (2)",
-      "Original airdate: 1995-09-19",
-      "Storyline: Harassment allegation by Kate Kenny threatens Wayne after police fail to protect her",
-      "Character: Wayne Patterson",
-      "Actor: Grant Bowler",
-      "Answer fact: Kate Kenny accuses him of sexual harassment"
-    ]
-  },
-  {
-    "id": "tv_47711",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "In Blue Heelers, what puts a family at risk when Mount Thomas becomes obsessed with gold prospecting in 'The Mongrel Factor'?",
-    "answers": [
-      "A publicity stunt spirals out of control",
-      "A visiting football coach steals the medals",
-      "A domestic argument over a missing baby",
-      "A poisoned restaurant meal"
-    ],
-    "correctAnswer": "A publicity stunt spirals out of control",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Police",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 2",
-      "Broadcast year: 1995",
-      "Episode: S02E32",
-      "Episode title: The Mongrel Factor",
-      "Original airdate: 1995-09-26",
-      "Storyline: Gold fever and ill-judged publicity stunt endanger family",
-      "Character: Tom Croydon",
-      "Actor: John Wood",
-      "Answer fact: A publicity stunt spirals out of control"
-    ]
-  },
-  {
-    "id": "tv_47712",
+    "id": "tv_47705",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, whose safety makes Nick revisit his own traumatic experiences during the commune investigation in 'Tough Love'?",
@@ -6065,7 +5814,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47713",
+    "id": "tv_47706",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what does Maggie aim to prove after stolen bank money is found in PJ's house in 'A Question of Loyalties'?",
@@ -6101,7 +5850,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47714",
+    "id": "tv_47707",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, who first names Father Michael Carlisle as a suspect in the investigation concerning runaway teenager Jade?",
@@ -6137,7 +5886,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47715",
+    "id": "tv_47708",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, which two members of the D'Angelo family become important friends to Wayne in 'The Discount Suit'?",
@@ -6173,7 +5922,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47716",
+    "id": "tv_47709",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what does Adam eventually admit about his encounter with Gina before her assault in 'Brotherly Love (1)'?",
@@ -6209,7 +5958,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47717",
+    "id": "tv_47710",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what major development shifts suspicion away from Adam's brother Sam in the Series 2 finale?",
@@ -6240,12 +5989,12 @@ const questions = [
       "Original airdate: 1995-11-21",
       "Storyline: Sam cleared of assault; investigators suspect Imperial employee",
       "Character: Sam Cooper",
-      "Actor: Sam Cooper (guest character)",
+      "Actor: Stephen Whittaker",
       "Answer fact: Police clear Sam and focus on a man employed at the Imperial"
     ]
   },
   {
-    "id": "tv_47718",
+    "id": "tv_47711",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, why does Maggie face particular danger in the finale's attempted arrest of Gina's attacker?",
@@ -6281,7 +6030,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47719",
+    "id": "tv_47712",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actress won the 1996 TV Week Silver Logie for Most Popular Actress?",
@@ -6317,7 +6066,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47720",
+    "id": "tv_47713",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers star was nominated for the 1996 Gold Logie for Most Popular Personality on Australian Television?",
@@ -6351,46 +6100,10 @@ const questions = [
       "Award source: https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers",
       "Broadcast year: 1995"
     ]
-  },
-  {
-    "id": "tv_47721",
-    "category": "TV",
-    "topic": "Blue Heelers",
-    "question": "Who won the 1996 Gold Logie instead of the nominated Blue Heelers actress Lisa McCune?",
-    "answers": [
-      "Ray Martin",
-      "Daryl Somers",
-      "John Wood",
-      "Dieter Brummer"
-    ],
-    "correctAnswer": "Ray Martin",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Police",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 2",
-      "Award ceremony: 1996 TV Week Logie Awards",
-      "Award: Most Popular Personality (Gold Logie)",
-      "Award result: Blue Heelers nominated; Ray Martin won",
-      "Award recipient: Lisa McCune",
-      "Award question: Most Popular Personality (Gold Logie) - Blue Heelers nominated; Ray Martin won",
-      "Answer fact: Ray Martin",
-      "Award source: https://televisionau.com/2021/11/tv-week-logie-awards-25-years-ago-11.html",
-      "Broadcast year: 1995"
-    ]
   }
 ];
 
-if(questions.length!==177||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==169||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>((i<146)?q.id!=='tv_'+(32011+i):q.id!=='tv_'+(47691+i-146))||
 q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
