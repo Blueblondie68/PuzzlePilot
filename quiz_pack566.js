@@ -3,8 +3,8 @@
 // Separate programme names on TV master, ONE connected ITV format, THREE source tracks:
 // 1986–1994 Strike It Lucky; 1996–1999 Strike It Rich; 2020–22 Epic Gameshow specials.
 // Original TWO Strike It Lucky questions in Pack 209 are preserved untouched.
-// New questions 63: 48 on Strike It Lucky and 15 on Strike It Rich.
-// Total across original + supplement 65; IDs tv_48417–tv_48479.
+// New questions 61: 47 on Strike It Lucky and 14 on Strike It Rich.
+// Total across original + supplement 63; IDs tv_48417–tv_48477.
 // Full show detail: source formats, studios, 13 seasons/209 episodes, two titles,
 // presenter, teams, detailed main game/bonus round rules, complete jackpot progression,
 // 1995 NTA WIN for Strike It Lucky, 1998 and 1999 Strike It Rich nominations,
@@ -1269,39 +1269,6 @@ const questions = [
   {
     "id": "tv_48455",
     "category": "TV",
-    "topic": "Strike It Lucky",
-    "question": "Which game show beat Play Your Cards Right in the inaugural 1995 National Television Awards Quiz category?",
-    "answers": [
-      "The Krypton Factor",
-      "Big Break",
-      "Strike It Lucky",
-      "Blankety Blank"
-    ],
-    "correctAnswer": "Strike It Lucky",
-    "difficulty": "Medium",
-    "tags": [
-      "Television",
-      "British Television",
-      "ITV",
-      "Quiz Shows",
-      "Game Shows",
-      "Michael Barrymore",
-      "Programme franchise: Strike It Lucky / Strike It Rich",
-      "Programme: Strike It Lucky",
-      "Broadcast version: 1995",
-      "Subject: undefined — Strike It Lucky won; Play Your Cards Right nominated",
-      "Correct fact: Strike It Lucky",
-      "Original UK programme: 1986–1999",
-      "Specials: Alan Carr's Epic Gameshow 2020–2022",
-      "Category: British television history",
-      "Source: https://www.ukgameshows.com/ukgs/Award_Winners",
-      "Programme-specific timeline: 1995 / Strike It Lucky"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_48456",
-    "category": "TV",
     "topic": "Strike It Rich",
     "question": "In which year did Strike It Lucky return under its new name Michael Barrymore's Strike It Rich?",
     "answers": [
@@ -1333,7 +1300,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48457",
+    "id": "tv_48456",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "Why was Strike It Lucky renamed Michael Barrymore's Strike It Rich for its 1996 revival?",
@@ -1366,7 +1333,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48458",
+    "id": "tv_48457",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "Which ITV production company made Michael Barrymore's Strike It Rich?",
@@ -1399,7 +1366,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48459",
+    "id": "tv_48458",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "Where was Michael Barrymore's Strike It Rich recorded from 1996 to 1999?",
@@ -1432,7 +1399,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48460",
+    "id": "tv_48459",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "How many episodes were made under the name Michael Barrymore's Strike It Rich?",
@@ -1465,7 +1432,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48461",
+    "id": "tv_48460",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "How many series of Michael Barrymore's Strike It Rich were shown before the original format ended in 1999?",
@@ -1498,7 +1465,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48462",
+    "id": "tv_48461",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "What was the new maximum cash jackpot in Michael Barrymore's Strike It Rich?",
@@ -1531,7 +1498,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48463",
+    "id": "tv_48462",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "Which three cash prizes were available in the Strike It Rich bonus round, depending on the Hot Spot bid?",
@@ -1564,7 +1531,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48464",
+    "id": "tv_48463",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "What percentage of the target jackpot was paid per safe step to unsuccessful Strike It Rich bonus contestants?",
@@ -1597,7 +1564,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48465",
+    "id": "tv_48464",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "What delayed the planned 1 September 1997 start of Strike It Rich's eleventh series?",
@@ -1630,7 +1597,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48466",
+    "id": "tv_48465",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "When did Michael Barrymore's last original Strike It Rich episode air?",
@@ -1663,7 +1630,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48467",
+    "id": "tv_48466",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "In what year did Michael Barrymore's Strike It Rich first receive a National Television Award nomination for Most Popular Quiz?",
@@ -1696,7 +1663,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48468",
+    "id": "tv_48467",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "Which programme won the 1998 National Television Award for Most Popular Quiz ahead of Strike It Rich?",
@@ -1729,7 +1696,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48469",
+    "id": "tv_48468",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "Which programme won the 1999 National Television Award for Quiz ahead of nominee Strike It Rich?",
@@ -1762,7 +1729,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48470",
+    "id": "tv_48469",
     "category": "TV",
     "topic": "Strike It Rich",
     "question": "What was Michael Barrymore's Strike It Rich's awards result at the 1998 and 1999 National Television Awards?",
@@ -1795,7 +1762,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48471",
+    "id": "tv_48470",
     "category": "TV",
     "topic": "Strike It Lucky",
     "question": "Who hosted the Strike It Lucky revival episodes in Alan Carr's Epic Gameshow?",
@@ -1828,7 +1795,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48472",
+    "id": "tv_48471",
     "category": "TV",
     "topic": "Strike It Lucky",
     "question": "Which ITV series brought back Strike It Lucky as a one-off classic format in June 2020?",
@@ -1861,7 +1828,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48473",
+    "id": "tv_48472",
     "category": "TV",
     "topic": "Strike It Lucky",
     "question": "What was the date of the first Strike It Lucky episode of Alan Carr's Epic Gameshow?",
@@ -1894,7 +1861,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48474",
+    "id": "tv_48473",
     "category": "TV",
     "topic": "Strike It Lucky",
     "question": "Which exotic destination was a main prize in the June 2020 Strike It Lucky episode of Alan Carr's Epic Gameshow?",
@@ -1927,7 +1894,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48475",
+    "id": "tv_48474",
     "category": "TV",
     "topic": "Strike It Lucky",
     "question": "Which holiday destination featured among top prizes in the May 2021 Strike It Lucky revival on Epic Gameshow?",
@@ -1960,7 +1927,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48476",
+    "id": "tv_48475",
     "category": "TV",
     "topic": "Strike It Lucky",
     "question": "On what date did Alan Carr's Epic Gameshow air its 2021 Strike It Lucky celebrity special?",
@@ -1993,40 +1960,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48477",
-    "category": "TV",
-    "topic": "Strike It Lucky",
-    "question": "Which presenter and performer hosted the Strike It Lucky celebrity special on 23 July 2022?",
-    "answers": [
-      "Alan Carr",
-      "Michael Barrymore",
-      "Joel Dommett",
-      "Joe Lycett"
-    ],
-    "correctAnswer": "Alan Carr",
-    "difficulty": "Easy",
-    "tags": [
-      "Television",
-      "British Television",
-      "ITV",
-      "Quiz Shows",
-      "Game Shows",
-      "Michael Barrymore",
-      "Programme franchise: Strike It Lucky / Strike It Rich",
-      "Programme: Strike It Lucky",
-      "Broadcast version: 2022",
-      "Subject: undefined — Series three celebrity special host",
-      "Correct fact: Alan Carr",
-      "Original UK programme: 1986–1999",
-      "Specials: Alan Carr's Epic Gameshow 2020–2022",
-      "Category: British television history",
-      "Source: https://www.tvmaze.com/shows/47779/alan-carrs-epic-gameshow/episodeguide",
-      "Programme-specific timeline: 2022 / Strike It Lucky"
-    ],
-    "dailyEligible": true
-  },
-  {
-    "id": "tv_48478",
+    "id": "tv_48476",
     "category": "TV",
     "topic": "Strike It Lucky",
     "question": "Which of these television personalities appeared in the 23 July 2022 celebrity Strike It Lucky special?",
@@ -2059,7 +1993,7 @@ const questions = [
     "dailyEligible": true
   },
   {
-    "id": "tv_48479",
+    "id": "tv_48477",
     "category": "TV",
     "topic": "Strike It Lucky",
     "question": "How much was available for charity in the July 2022 celebrity special of Strike It Lucky on Alan Carr's Epic Gameshow?",
@@ -2092,7 +2026,7 @@ const questions = [
     "dailyEligible": true
   }
 ];
-if (questions.length!==63||new Set(questions.map(x=>x.id)).size!==questions.length||
+if (questions.length!==61||new Set(questions.map(x=>x.id)).size!==questions.length||
  new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
  questions.some((x,i)=>x.id !== 'tv_'+(48417+i)||x.category!=='TV'||
  x.answers.length!==4||new Set(x.answers.map(a=>a.toLowerCase())).size!==4||
