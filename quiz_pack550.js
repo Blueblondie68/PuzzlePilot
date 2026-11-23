@@ -1,13 +1,23 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 550: Blue Heelers, Series 7 (2000).
-// 280 audited, playable story-specific questions across all 41 episodes, no quotas or padding.
-// IDs tv_33107–tv_33386; Pack 549 ends at tv_33106.
-// Episode synopsis research: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-7/1000036269/
-// Supporting synopses: https://thetvdb.com/series/blue-heelers/allseasons/official
-// Episode titles, airdates and cast: https://en.wikipedia.org/wiki/Blue_Heelers_season_7
-// S07E12 original airdate is 26 April 2000 (one TVmaze listing incorrectly gives 2001).
-// S07E31-32 share 6 September and S07E33-34 share 4 October (double bills).
-// Main continuing arcs: Maggie killed in S07E02, killer exposed S07E10, Tess arrives S07E16, Jack shot in S07E33-34.
-// Player questions prioritise storylines and consequences; obscure names remain episode context metadata.
+// Careful storyline/award audit, 23 November 2026. 280 original questions preserved;
+// 7 distinct, story-specific missing plot/outcome questions and 6 awards questions.
+// 293 total, covering 41 episodes. No invented outcomes, fixed per-episode quotas or padding.
+// Original IDs tv_33107–tv_33386; added IDs tv_47832–tv_47844.
+// Episode plot/outcomes: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-7/1000036269/
+// Aired date/order: https://thetvdb.com/series/blue-heelers/seasons/official/7
+// 2001 Logie Awards 25-year TV Week archival review:
+// https://televisionau.com/2026/08/tv-week-logie-awards-25-years-ago-16.html/
+// 2001 nominees/results: https://en.wikipedia.org/wiki/Logie_Awards_of_2001
+// Only 2001 Blue Heelers WIN: Martin Sacks, Most Popular Actor (fifth consecutive win).
+// Nominations: John Wood Gold and Popular Actor; Lisa McCune Gold (also for The Potato Factory);
+// Blue Heelers Most Popular Program (won by All Saints); Caroline Craig New Female Talent.
+// AFI 2001 win for Gary Day belongs to 'The Poisoned Fruit Part 2' (season 8), excluded.
+// Programme's 2000 story/character arcs all kept: Maggie shot by brother Mick Doyle;
+// PJ framed then clears name; Maggie's ashes scattered; Tess replaces expected sergeant Ben;
+// police/community cases and vulnerable victims; Jack shot and paralysed, adapts to wheelchair;
+// Jo/Jack/Letty relationship; hospital siege and Tess-Jo cooperation; season finale transfer risk.
+// One nomination question combines John Wood's two categories, another specifically covers his
+// acting nomination to distinguish separate award nominations. No incorrect win claims.
 'use strict';
 const questions = [
   {
@@ -10369,13 +10379,497 @@ const questions = [
       "Answer fact: He wants to continue as a police officer despite his disability",
       "Episode context: Wheelchair basketballer accused, Jack's transfer and risky spinal surgery"
     ]
+  },
+  {
+    "id": "tv_47832",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what discovery makes the search for the second burglar in 'Cop It Sweet' unusually confusing?",
+    "answers": [
+      "The main suspect on record supposedly died three years earlier",
+      "He is a former Mount Thomas police sergeant",
+      "His stolen car has been crushed for scrap",
+      "He is reported missing from a foreign prison"
+    ],
+    "correctAnswer": "The main suspect on record supposedly died three years earlier",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Broadcast year: 2000",
+      "Episode: S07E25",
+      "Episode title: Cop It Sweet",
+      "Original airdate: 2000-07-26",
+      "Storyline: Investigators discover the most likely second burglar is recorded as having died three years previously",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: The main suspect on record supposedly died three years earlier",
+      "Episode context: Violent burglary, hospital hostage siege and Jo-Tess cooperation"
+    ]
+  },
+  {
+    "id": "tv_47833",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, how does teenage suicide victim Elliot's father respond to his son's death in 'Moving On'?",
+    "answers": [
+      "He calls Elliot a coward and starts selling his belongings",
+      "He organises an annual memorial race",
+      "He immediately asks the police to reopen the investigation",
+      "He refuses to allow any officer into the house"
+    ],
+    "correctAnswer": "He calls Elliot a coward and starts selling his belongings",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Broadcast year: 2000",
+      "Episode: S07E26",
+      "Episode title: Moving On",
+      "Original airdate: 2000-08-02",
+      "Storyline: Elliot's grieving father calls him coward and organises garage sale, upsetting his girlfriend",
+      "Character: Ben Stewart",
+      "Actor: Paul Bishop",
+      "Answer fact: He calls Elliot a coward and starts selling his belongings",
+      "Episode context: Teenage suicide after logging truck accident, Ben's nightmares"
+    ]
+  },
+  {
+    "id": "tv_47834",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what legal action does the teenage car thief demand after the cosmetics representative punches him at the station?",
+    "answers": [
+      "That she be charged with assault",
+      "That the station replace his damaged car",
+      "That her stolen cosmetics be returned to him",
+      "That the town magistrate dismiss the original theft"
+    ],
+    "correctAnswer": "That she be charged with assault",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Broadcast year: 2000",
+      "Episode: S07E28",
+      "Episode title: Hard Feelings",
+      "Original airdate: 2000-08-16",
+      "Storyline: Unrepentant car thief presses assault charges against the victim after being punched",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: That she be charged with assault",
+      "Episode context: Stolen cosmetics rep car, Ben tries to rehabilitate teenager"
+    ]
+  },
+  {
+    "id": "tv_47835",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what concession does Tess Gallagher devise in 'Running of the Rams' after initially threatening to arrest the participants?",
+    "answers": [
+      "A way for the charitable fundraiser to go ahead",
+      "A cancellation of all community events",
+      "A plan to seize the livestock permanently",
+      "A ban on all future Country Fire Authority appeals"
+    ],
+    "correctAnswer": "A way for the charitable fundraiser to go ahead",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Broadcast year: 2000",
+      "Episode: S07E29",
+      "Episode title: Running of the Rams",
+      "Original airdate: 2000-08-23",
+      "Storyline: Tess finds workable solution for Country Fire Authority fundraising run despite indecency concerns",
+      "Character: Tess Gallagher",
+      "Actor: Caroline Craig",
+      "Answer fact: A way for the charitable fundraiser to go ahead",
+      "Episode context: CFA charity nude ram event, policing discretion, missing rams"
+    ]
+  },
+  {
+    "id": "tv_47836",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who admits causing the explosion of a letterbox during Jo and Jack's bicycle patrol in 'On Your Bike'?",
+    "answers": [
+      "An angry neighbour accusing the postman of theft",
+      "The postmaster trying to hide a robbery",
+      "An undercover detective testing the new patrol",
+      "A burglar seeking an alibi"
+    ],
+    "correctAnswer": "An angry neighbour accusing the postman of theft",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Broadcast year: 2000",
+      "Episode: S07E31",
+      "Episode title: On Your Bike (1)",
+      "Original airdate: 2000-09-06",
+      "Storyline: Neighbour confesses to exploding letterbox and accuses local postman of stealing mail",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: An angry neighbour accusing the postman of theft",
+      "Episode context: Cycle patrol mail theft, exploding letterbox, Letty's old flame"
+    ]
+  },
+  {
+    "id": "tv_47837",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what concession do the council and parents eventually make to Clancy Freeman in 'Mind Over Matter'?",
+    "answers": [
+      "They agree to give him a chance as school-crossing supervisor",
+      "They ask him to become a police detective",
+      "They arrange for him to manage the town bank",
+      "They remove all pedestrian crossings"
+    ],
+    "correctAnswer": "They agree to give him a chance as school-crossing supervisor",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Broadcast year: 2000",
+      "Episode: S07E36",
+      "Episode title: Mind Over Matter",
+      "Original airdate: 2000-10-18",
+      "Storyline: Community reluctantly offers Clancy chance at crossing supervisor role despite disability prejudice",
+      "Character: Clancy Freeman",
+      "Actor: Clancy Freeman (recurring character)",
+      "Answer fact: They agree to give him a chance as school-crossing supervisor",
+      "Episode context: Clancy seeks school-crossing role, hit-and-run, Jack's disability"
+    ]
+  },
+  {
+    "id": "tv_47838",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, how close is Jack to the culprit when he finally works out who made the call on the recording in 'Ten Percent'?",
+    "answers": [
+      "Only metres away",
+      "In a different state",
+      "At an airport terminal",
+      "On the other side of a river"
+    ],
+    "correctAnswer": "Only metres away",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Broadcast year: 2000",
+      "Episode: S07E40",
+      "Episode title: Ten Percent",
+      "Original airdate: 2000-11-15",
+      "Storyline: Jack discovers robber's identity while dangerously close to suspect, before hostage crisis",
+      "Character: Jack Lawson",
+      "Actor: Rupert Reid",
+      "Answer fact: Only metres away",
+      "Episode context: Cup Day phone recording of robbery, Imperial hostage crisis"
+    ]
+  },
+  {
+    "id": "tv_47839",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "At the 2001 Logie Awards, which Blue Heelers star won the Silver Logie for Most Popular Actor?",
+    "answers": [
+      "Martin Sacks",
+      "John Wood",
+      "Paul Bishop",
+      "Rupert Reid"
+    ],
+    "correctAnswer": "Martin Sacks",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Award year: 2001",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Most Popular Actor (Silver Logie)",
+      "Award result: Won",
+      "Award recipient: Martin Sacks",
+      "Award question: Most Popular Actor (Silver Logie) — Won — Martin Sacks",
+      "Answer fact: Martin Sacks",
+      "Award source: https://televisionau.com/2026/08/tv-week-logie-awards-25-years-ago-16.html/",
+      "Recognition scope: Blue Heelers, 2000 series"
+    ]
+  },
+  {
+    "id": "tv_47840",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor was nominated for both the Gold Logie and Most Popular Actor at the 2001 Logies?",
+    "answers": [
+      "John Wood",
+      "Martin Sacks",
+      "Paul Bishop",
+      "Grant Bowler"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Award year: 2001",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Gold Logie and Most Popular Actor",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Gold Logie and Most Popular Actor — Nominated — John Wood",
+      "Answer fact: John Wood",
+      "Award source: https://televisionau.com/2026/08/tv-week-logie-awards-25-years-ago-16.html/",
+      "Recognition scope: Blue Heelers, 2000 series"
+    ]
+  },
+  {
+    "id": "tv_47841",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which former Blue Heelers actress was nominated for the 2001 Gold Logie for work including Blue Heelers and The Potato Factory?",
+    "answers": [
+      "Lisa McCune",
+      "Tasma Walton",
+      "Jane Allsop",
+      "Julie Nihill"
+    ],
+    "correctAnswer": "Lisa McCune",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Award year: 2001",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Gold Logie — Most Popular Personality",
+      "Award result: Nominated",
+      "Award recipient: Lisa McCune",
+      "Award question: Gold Logie — Most Popular Personality — Nominated — Lisa McCune",
+      "Answer fact: Lisa McCune",
+      "Award source: https://televisionau.com/2026/08/tv-week-logie-awards-25-years-ago-16.html/",
+      "Recognition scope: Blue Heelers, 2000 series"
+    ]
+  },
+  {
+    "id": "tv_47842",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which drama beat nominated Blue Heelers to the 2001 Silver Logie for Most Popular Program?",
+    "answers": [
+      "All Saints",
+      "Water Rats",
+      "SeaChange",
+      "Home and Away"
+    ],
+    "correctAnswer": "All Saints",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Award year: 2001",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Most Popular Program (Silver Logie)",
+      "Award result: Nominated; All Saints won",
+      "Award recipient: Blue Heelers",
+      "Award question: Most Popular Program (Silver Logie) — Nominated; All Saints won — Blue Heelers",
+      "Answer fact: All Saints",
+      "Award source: https://televisionau.com/2026/08/tv-week-logie-awards-25-years-ago-16.html/",
+      "Recognition scope: Blue Heelers, 2000 series"
+    ]
+  },
+  {
+    "id": "tv_47843",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers newcomer was nominated for Most Popular New Female Talent at the 2001 Logies?",
+    "answers": [
+      "Caroline Craig",
+      "Jane Allsop",
+      "Tasma Walton",
+      "Lisa McCune"
+    ],
+    "correctAnswer": "Caroline Craig",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Award year: 2001",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Most Popular New Female Talent",
+      "Award result: Nominated",
+      "Award recipient: Caroline Craig",
+      "Award question: Most Popular New Female Talent — Nominated — Caroline Craig",
+      "Answer fact: Caroline Craig",
+      "Award source: https://televisionau.com/2026/08/tv-week-logie-awards-25-years-ago-16.html/",
+      "Recognition scope: Blue Heelers, 2000 series"
+    ]
+  },
+  {
+    "id": "tv_47844",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor earned a 2001 Silver Logie nomination for Most Popular Actor, although the prize went to Martin Sacks?",
+    "answers": [
+      "John Wood",
+      "Rupert Reid",
+      "Frankie J. Holden",
+      "Paul Bishop"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 7",
+      "Award year: 2001",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Most Popular Actor (Silver Logie)",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Most Popular Actor (Silver Logie) — Nominated — John Wood",
+      "Answer fact: John Wood",
+      "Award source: https://televisionau.com/2026/08/tv-week-logie-awards-25-years-ago-16.html/",
+      "Recognition scope: Blue Heelers, 2000 series"
+    ]
   }
 ];
-if(questions.length!==280||new Set(questions.map(q=>q.id)).size!==questions.length||
+
+if(questions.length!==293||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(33107+i)||q.category!=='TV'||q.topic!=='Blue Heelers'||
-q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
-q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length!==20||
-q.dailyEligible!==true||!q.tags.some(t=>t.startsWith('Episode context: '))||
-!q.tags.some(t=>t.startsWith('Actor: ')))) throw Error('Pack 550 validation failed');
-module.exports = questions;
+questions.some((q,i)=>((i<280)?q.id!=='tv_'+(33107+i):q.id!=='tv_'+(47832+i-280))||
+q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
+new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+!q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length!==20||
+new Set(q.tags).size!==q.tags.length||
+!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 550 validation failed');
+module.exports=questions;
