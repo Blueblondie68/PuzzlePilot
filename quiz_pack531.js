@@ -1,15 +1,17 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 531: Blue Bloods (2010–2024), Series 4 (2013–2014).
-// 256 distinct questions: 66 original questions preserved, 183 new plot/character/consequence questions and 7 newly verified awards questions.
-// Original IDs tv_30674–tv_30739; audit IDs tv_46354–tv_46543.
-// All 22 episodes audited 23 November 2026, no fixed number of questions per episode.
-// Main plot sources: https://en.wikipedia.org/wiki/Blue_Bloods_season_4
+// 251 distinct questions: 66 preserved originals, 178 new episode-specific case/family/consequence questions, 7 verified awards questions.
+// Original IDs tv_30674–tv_30739 retained; audited IDs tv_46354–tv_46538.
+// All 22 episodes thoroughly researched, 23 November 2026; 5 repeated facts removed after semantic-overlap check.
+// Series 4 coverage: introduction and development of Eddie Janko, Kelly Peterson, the Michelle Lowe cold-case return,
+// Danny's coercive interrogation inquiry, Jamie and Eddie's romance, the Exiles corruption conspiracy.
+// Plot sources: https://en.wikipedia.org/wiki/Blue_Bloods_season_4
 // https://www.cbs.com/shows/blue_bloods/episodes/4/
-// Awards: https://www.prweb.com/releases/entertainment_gets_real_about_mental_wellness_substance_use_recovery_with_18th_annual_prism_awards_honors_for_cbs_lifetime_abc_showtime_nbc_mtv_nickelodeon/prweb11782699.htm
-// https://www.bmi.com/news/mychael_danna_and_top_composers_honored_at_2014_bmi_film_tv_awards
-// https://edgarawards.com/category-list-best-episode-in-a-tv-series/
-// 2014 PRISM awards honour the Series 3 episode Front Page News and Will Estes; labelled S3 catch-up, not misattributed to S4.
-// The 2014 BMI music prize and 2015 Edgar nomination relate to Series 4.
-// The 2013 stunt Emmy is already in Pack 530; no repeat. Series 5–14 still need audits; not purple yet.
+// 2014 PRISM wins for Season 3 episode Front Page News / Will Estes are added as explicit Series 3 catch-ups, not misattributed to Series 4.
+// 2014 PRISM results: https://www.prweb.com/releases/entertainment_gets_real_about_mental_wellness_substance_use_recovery_with_18th_annual_prism_awards_honors_for_cbs_lifetime_abc_showtime_nbc_mtv_nickelodeon/prweb11782699.htm
+// 2014 BMI award to Rob Simonsen: https://www.bmi.com/news/mychael_danna_and_top_composers_honored_at_2014_bmi_film_tv_awards
+// 2015 Edgar nomination for S04E13 Unfinished Business: https://edgarawards.com/category-list-best-episode-in-a-tv-series/
+// 2013 Blue Bloods Emmy nomination already covered in Pack 530 and not duplicated.
+// Series finished in 2024; Seasons 5–14 still to audit before programme turns purple.
 'use strict';
 const questions = [
   {
@@ -2394,7 +2396,7 @@ const auditQuestions = [
     "id": "tv_46354",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 1), Which officer dies after the jewellery shop robbery?",
+    "question": "In Blue Bloods (Series 4, Episode 1), which officer dies after the jewellery shop robbery?",
     "answers": [
       "Lori Collins",
       "Eddie Janko",
@@ -2432,7 +2434,7 @@ const auditQuestions = [
     "id": "tv_46355",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 1), Who is identified as the suspect in Lori Collins's killing?",
+    "question": "In Blue Bloods (Series 4, Episode 1), who is identified as the suspect in Lori Collins's killing?",
     "answers": [
       "Santo Castillo",
       "Angelo Reed",
@@ -2470,7 +2472,7 @@ const auditQuestions = [
     "id": "tv_46356",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 1), What improper intervention weakens the eyewitness identification?",
+    "question": "In Blue Bloods (Series 4, Episode 1), what improper intervention weakens the eyewitness identification?",
     "answers": [
       "The witness identifies another officer",
       "The evidence is lost in transit",
@@ -2508,7 +2510,7 @@ const auditQuestions = [
     "id": "tv_46357",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 1), How do NYPD officers protest Erin's release decision?",
+    "question": "In Blue Bloods (Series 4, Episode 1), how do NYPD officers protest Erin's release decision?",
     "answers": [
       "They resign as a group",
       "They refuse to patrol outside Manhattan",
@@ -2546,7 +2548,7 @@ const auditQuestions = [
     "id": "tv_46358",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 1), Who orders officers to end their unofficial court boycott?",
+    "question": "In Blue Bloods (Series 4, Episode 1), who orders officers to end their unofficial court boycott?",
     "answers": [
       "Frank Reagan",
       "Angelo Reed",
@@ -2584,7 +2586,7 @@ const auditQuestions = [
     "id": "tv_46359",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 1), What turns the suspect's own words against him?",
+    "question": "In Blue Bloods (Series 4, Episode 1), what turns the suspect's own words against him?",
     "answers": [
       "A statement to the mayor",
       "An incriminating confession during a proposed plea bargain",
@@ -2622,7 +2624,7 @@ const auditQuestions = [
     "id": "tv_46360",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 1), What happens when Angelo Reed rejects a proposed seven-year deal?",
+    "question": "In Blue Bloods (Series 4, Episode 1), what happens when Angelo Reed rejects a proposed seven-year deal?",
     "answers": [
       "He is transferred abroad",
       "He becomes a protected witness",
@@ -2660,7 +2662,7 @@ const auditQuestions = [
     "id": "tv_46361",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 1), Who joins Jamie as a new patrol partner in the premiere?",
+    "question": "In Blue Bloods (Series 4, Episode 1), who joins Jamie as a new patrol partner in the premiere?",
     "answers": [
       "Vinny Cruz",
       "Lydia Gonsalves",
@@ -2698,7 +2700,7 @@ const auditQuestions = [
     "id": "tv_46362",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 2), Who portrays movie star Russell Berke?",
+    "question": "In Blue Bloods (Series 4, Episode 2), who portrays movie star Russell Berke?",
     "answers": [
       "Chazz Palminteri",
       "Tom Cavanagh",
@@ -2736,7 +2738,7 @@ const auditQuestions = [
     "id": "tv_46363",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 2), What personal incident does Danny try to keep away from celebrity reporters?",
+    "question": "In Blue Bloods (Series 4, Episode 2), what personal incident does Danny try to keep away from celebrity reporters?",
     "answers": [
       "Russell Berke is stabbed late at night",
       "Russell Berke's house is burglarised",
@@ -2774,7 +2776,7 @@ const auditQuestions = [
     "id": "tv_46364",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 2), What does Frank discover through surprise precinct visits?",
+    "question": "In Blue Bloods (Series 4, Episode 2), what does Frank discover through surprise precinct visits?",
     "answers": [
       "Two police officers have exchanged badges",
       "A lieutenant has repeatedly been absent from work",
@@ -2812,7 +2814,7 @@ const auditQuestions = [
     "id": "tv_46365",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 2), Why has the absent lieutenant been working a second job?",
+    "question": "In Blue Bloods (Series 4, Episode 2), why has the absent lieutenant been working a second job?",
     "answers": [
       "To fund a new restaurant",
       "To meet a legal settlement",
@@ -2850,7 +2852,7 @@ const auditQuestions = [
     "id": "tv_46366",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 2), What illness affects the lieutenant's wife?",
+    "question": "In Blue Bloods (Series 4, Episode 2), what illness affects the lieutenant's wife?",
     "answers": [
       "Alzheimer's disease",
       "Multiple sclerosis",
@@ -2888,7 +2890,7 @@ const auditQuestions = [
     "id": "tv_46367",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 2), What nuisance complaint repeatedly summons Jamie and Eddie?",
+    "question": "In Blue Bloods (Series 4, Episode 2), what nuisance complaint repeatedly summons Jamie and Eddie?",
     "answers": [
       "A man exercises naked in sight of a neighbour",
       "A woman is playing extremely loud music",
@@ -2926,7 +2928,7 @@ const auditQuestions = [
     "id": "tv_46368",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 2), How does Jamie resolve the neighbour's complaints?",
+    "question": "In Blue Bloods (Series 4, Episode 2), how does Jamie resolve the neighbour's complaints?",
     "answers": [
       "He arrests every tenant",
       "He introduces the complainant to the man exercising next door",
@@ -2964,7 +2966,7 @@ const auditQuestions = [
     "id": "tv_46369",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 3), Who witnessed the murder of his father in a park?",
+    "question": "In Blue Bloods (Series 4, Episode 3), who witnessed the murder of his father in a park?",
     "answers": [
       "A hospital doctor",
       "An undercover agent",
@@ -3002,7 +3004,7 @@ const auditQuestions = [
     "id": "tv_46370",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 3), What is the name of the alleged killer at the centre of the courthouse siege?",
+    "question": "In Blue Bloods (Series 4, Episode 3), what is the name of the alleged killer at the centre of the courthouse siege?",
     "answers": [
       "Angelo Reed",
       "Angelo Gallo",
@@ -3040,7 +3042,7 @@ const auditQuestions = [
     "id": "tv_46371",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 3), Why did Raoul Delgado disappear from ordinary police searches?",
+    "question": "In Blue Bloods (Series 4, Episode 3), why did Raoul Delgado disappear from ordinary police searches?",
     "answers": [
       "He had become a Homeland Security informant",
       "He was serving a prison term overseas",
@@ -3078,7 +3080,7 @@ const auditQuestions = [
     "id": "tv_46372",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 3), Which federal agency tries to block the NYPD's murder investigation?",
+    "question": "In Blue Bloods (Series 4, Episode 3), which federal agency tries to block the NYPD's murder investigation?",
     "answers": [
       "Department of Commerce",
       "Department of Homeland Security",
@@ -3116,7 +3118,7 @@ const auditQuestions = [
     "id": "tv_46373",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 3), Who acts as the suspect's defence lawyer?",
+    "question": "In Blue Bloods (Series 4, Episode 3), who acts as the suspect's defence lawyer?",
     "answers": [
       "Charles Rossellini",
       "Sid Gormley",
@@ -3154,7 +3156,7 @@ const auditQuestions = [
     "id": "tv_46374",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 3), How does the suspect arm himself during the arraignment?",
+    "question": "In Blue Bloods (Series 4, Episode 3), how does the suspect arm himself during the arraignment?",
     "answers": [
       "He takes a firearm from his lawyer",
       "He brings a weapon through a hidden tunnel",
@@ -3192,7 +3194,7 @@ const auditQuestions = [
     "id": "tv_46375",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 3), Where is Erin wounded during the courtroom hostage crisis?",
+    "question": "In Blue Bloods (Series 4, Episode 3), where is Erin wounded during the courtroom hostage crisis?",
     "answers": [
       "Shoulder",
       "Leg",
@@ -3230,7 +3232,7 @@ const auditQuestions = [
     "id": "tv_46376",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 3), To which country does Danny claim the hostage-taker can escape?",
+    "question": "In Blue Bloods (Series 4, Episode 3), to which country does Danny claim the hostage-taker can escape?",
     "answers": [
       "Malaysia",
       "Dominican Republic",
@@ -3268,7 +3270,7 @@ const auditQuestions = [
     "id": "tv_46377",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 3), What romantic development follows Jack visiting Erin after the siege?",
+    "question": "In Blue Bloods (Series 4, Episode 3), what romantic development follows Jack visiting Erin after the siege?",
     "answers": [
       "They decide to move abroad",
       "They become business partners",
@@ -3306,7 +3308,7 @@ const auditQuestions = [
     "id": "tv_46378",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 3), Why does Jamie receive a suspension after a road accident?",
+    "question": "In Blue Bloods (Series 4, Episode 3), why does Jamie receive a suspension after a road accident?",
     "answers": [
       "He leaves his patrol car unlocked",
       "He refuses to give a witness statement",
@@ -3344,7 +3346,7 @@ const auditQuestions = [
     "id": "tv_46379",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 4), Which actress plays the new Inspector General Kelly Peterson?",
+    "question": "In Blue Bloods (Series 4, Episode 4), which actress plays the new Inspector General Kelly Peterson?",
     "answers": [
       "Vanessa Ray",
       "Bebe Neuwirth",
@@ -3382,7 +3384,7 @@ const auditQuestions = [
     "id": "tv_46380",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 4), What is the arrest at the centre of Eddie's disputed statement?",
+    "question": "In Blue Bloods (Series 4, Episode 4), what is the arrest at the centre of Eddie's disputed statement?",
     "answers": [
       "An armed bank robber",
       "A drug dealer",
@@ -3420,7 +3422,7 @@ const auditQuestions = [
     "id": "tv_46381",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 4), What puzzles investigators when Eddie is asked to correct her account?",
+    "question": "In Blue Bloods (Series 4, Episode 4), what puzzles investigators when Eddie is asked to correct her account?",
     "answers": [
       "She refuses to identify Jamie",
       "She has never seen the accused before",
@@ -3458,7 +3460,7 @@ const auditQuestions = [
     "id": "tv_46382",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 4), What explanation does Frank offer for Eddie's version of events?",
+    "question": "In Blue Bloods (Series 4, Episode 4), what explanation does Frank offer for Eddie's version of events?",
     "answers": [
       "She genuinely believes an inaccurate memory",
       "She deliberately destroyed the evidence",
@@ -3496,7 +3498,7 @@ const auditQuestions = [
     "id": "tv_46383",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 4), What is the truth about the homeless man apparently pushing a girl in front of a train?",
+    "question": "In Blue Bloods (Series 4, Episode 4), what is the truth about the homeless man apparently pushing a girl in front of a train?",
     "answers": [
       "He had mistaken her for an officer",
       "He was trying to prevent her suicide",
@@ -3534,7 +3536,7 @@ const auditQuestions = [
     "id": "tv_46384",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 4), What had the dead girl's brother done after learning about her girlfriend?",
+    "question": "In Blue Bloods (Series 4, Episode 4), what had the dead girl's brother done after learning about her girlfriend?",
     "answers": [
       "Asked the police to escort her home",
       "Arranged a family meeting",
@@ -3572,45 +3574,7 @@ const auditQuestions = [
     "id": "tv_46385",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 4), Who becomes a new source of conflict by reviewing NYPD procedure?",
-    "answers": [
-      "Mayor Carter Poole",
-      "Sergeant Sid Gormley",
-      "Angelo Gallo",
-      "Inspector General Kelly Peterson"
-    ],
-    "correctAnswer": "Inspector General Kelly Peterson",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "2010s Television",
-      "Police Procedural",
-      "Crime Drama",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 4",
-      "Broadcast year: 2013",
-      "Episode: S04E04",
-      "Episode title: The Truth About Lying",
-      "Storyline: Who becomes a new source of conflict by reviewing NYPD procedure?",
-      "Answer fact: Inspector General Kelly Peterson",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and Blue Bloods season 4 detailed summaries",
-      "Character: Frank",
-      "Actor: Tom Selleck"
-    ]
-  },
-  {
-    "id": "tv_46386",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 5), Where do Erin and Nicky discover a frightened child's request for help?",
+    "question": "In Blue Bloods (Series 4, Episode 5), where do Erin and Nicky discover a frightened child's request for help?",
     "answers": [
       "On the back of a breakfast placemat",
       "On an airport boarding card",
@@ -3645,10 +3609,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46387",
+    "id": "tv_46386",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 5), What kind of work do the little girl's parents do?",
+    "question": "In Blue Bloods (Series 4, Episode 5), what kind of work do the little girl's parents do?",
     "answers": [
       "University lecturers",
       "Travel agents",
@@ -3683,10 +3647,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46388",
+    "id": "tv_46387",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 5), What does the child abductor demand in return for her safety?",
+    "question": "In Blue Bloods (Series 4, Episode 5), what does the child abductor demand in return for her safety?",
     "answers": [
       "An unregistered firearm",
       "Access to an undercover police file",
@@ -3721,10 +3685,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46389",
+    "id": "tv_46388",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 5), Why does the demand involving Croatian travellers worry detectives?",
+    "question": "In Blue Bloods (Series 4, Episode 5), why does the demand involving Croatian travellers worry detectives?",
     "answers": [
       "They are police officers",
       "They have already been arrested",
@@ -3759,10 +3723,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46390",
+    "id": "tv_46389",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 5), What disguise is used in Danny's attempt to arrange the ransom exchange?",
+    "question": "In Blue Bloods (Series 4, Episode 5), what disguise is used in Danny's attempt to arrange the ransom exchange?",
     "answers": [
       "Two officers pose as the Croatian travellers",
       "A detective pretends to be a pilot",
@@ -3797,10 +3761,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46391",
+    "id": "tv_46390",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 5), How does the kidnapper die after the girl is freed?",
+    "question": "In Blue Bloods (Series 4, Episode 5), how does the kidnapper die after the girl is freed?",
     "answers": [
       "He dies in a warehouse fire",
       "He is struck by a passing lorry",
@@ -3835,10 +3799,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46392",
+    "id": "tv_46391",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 5), Why does a disappointed groom called Grady seize a weapon in a jewellery shop?",
+    "question": "In Blue Bloods (Series 4, Episode 5), why does a disappointed groom called Grady seize a weapon in a jewellery shop?",
     "answers": [
       "He has lost an expensive necklace",
       "The shop threatens to sue him",
@@ -3873,10 +3837,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46393",
+    "id": "tv_46392",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 5), What happens to Grady despite Jamie's plea for leniency?",
+    "question": "In Blue Bloods (Series 4, Episode 5), what happens to Grady despite Jamie's plea for leniency?",
     "answers": [
       "He is immediately released",
       "He flees overseas",
@@ -3911,10 +3875,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46394",
+    "id": "tv_46393",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 5), What misconduct involving the NYPD chaplain comes to Frank's attention?",
+    "question": "In Blue Bloods (Series 4, Episode 5), what misconduct involving the NYPD chaplain comes to Frank's attention?",
     "answers": [
       "Other officers covered up four drink-driving incidents",
       "The chaplain stole confidential police files",
@@ -3949,10 +3913,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46395",
+    "id": "tv_46394",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 6), Which teenager does Jamie mentor in an early-intervention programme?",
+    "question": "In Blue Bloods (Series 4, Episode 6), which teenager does Jamie mentor in an early-intervention programme?",
     "answers": [
       "Raoul",
       "Javi",
@@ -3987,10 +3951,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46396",
+    "id": "tv_46395",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 6), Which housing project does the young man Jamie mentors come from?",
+    "question": "In Blue Bloods (Series 4, Episode 6), which housing project does the young man Jamie mentors come from?",
     "answers": [
       "Bitterman Projects",
       "Cavazerre Estate",
@@ -4025,10 +3989,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46397",
+    "id": "tv_46396",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 6), How is the pursuer of Jamie's mentee badly hurt?",
+    "question": "In Blue Bloods (Series 4, Episode 6), how is the pursuer of Jamie's mentee badly hurt?",
     "answers": [
       "He is attacked by a police dog",
       "He is hit by a vehicle and paralysed",
@@ -4063,10 +4027,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46398",
+    "id": "tv_46397",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 6), What civil allegation follows the chase?",
+    "question": "In Blue Bloods (Series 4, Episode 6), what civil allegation follows the chase?",
     "answers": [
       "The boy's school withheld evidence",
       "The officer accepted a bribe",
@@ -4101,10 +4065,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46399",
+    "id": "tv_46398",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 6), What fact about the pursuit is Tomás pressured to deny?",
+    "question": "In Blue Bloods (Series 4, Episode 6), what fact about the pursuit is Tomás pressured to deny?",
     "answers": [
       "Jamie carried a hidden recording device",
       "Jamie had never met him before",
@@ -4139,10 +4103,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46400",
+    "id": "tv_46399",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 6), Who plays Danny's old girlfriend Marianne Romano?",
+    "question": "In Blue Bloods (Series 4, Episode 6), who plays Danny's old girlfriend Marianne Romano?",
     "answers": [
       "Charisma Carpenter",
       "Aida Turturro",
@@ -4177,10 +4141,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46401",
+    "id": "tv_46400",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 6), What is Marianne's fiancé Joe Frye's former profession?",
+    "question": "In Blue Bloods (Series 4, Episode 6), what is Marianne's fiancé Joe Frye's former profession?",
     "answers": [
       "Film director",
       "Professional American football player",
@@ -4215,10 +4179,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46402",
+    "id": "tv_46401",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 6), What illicit products does Joe Frye distribute from his gym?",
+    "question": "In Blue Bloods (Series 4, Episode 6), what illicit products does Joe Frye distribute from his gym?",
     "answers": [
       "Heroin",
       "Stolen passports",
@@ -4253,10 +4217,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46403",
+    "id": "tv_46402",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 6), Why does Baez go undercover to investigate Joe Frye?",
+    "question": "In Blue Bloods (Series 4, Episode 6), why does Baez go undercover to investigate Joe Frye?",
     "answers": [
       "He only sells to policewomen",
       "He has already been arrested by Danny",
@@ -4291,10 +4255,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46404",
+    "id": "tv_46403",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 7), Who is the art dealer running the victim's high-stakes poker games?",
+    "question": "In Blue Bloods (Series 4, Episode 7), who is the art dealer running the victim's high-stakes poker games?",
     "answers": [
       "Santo Castillo",
       "Mickey",
@@ -4329,10 +4293,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46405",
+    "id": "tv_46404",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 7), Who enforces unpaid debts from the high-stakes poker operation?",
+    "question": "In Blue Bloods (Series 4, Episode 7), who enforces unpaid debts from the high-stakes poker operation?",
     "answers": [
       "A Chechen crime boss",
       "The Cavazerre family",
@@ -4367,10 +4331,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46406",
+    "id": "tv_46405",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 7), Which former narcotics officer helps Danny investigate the gambling operation?",
+    "question": "In Blue Bloods (Series 4, Episode 7), which former narcotics officer helps Danny investigate the gambling operation?",
     "answers": [
       "Gary Heller",
       "Sid Gormley",
@@ -4405,10 +4369,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46407",
+    "id": "tv_46406",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 7), What does Danny ask the art dealer to surrender during his enquiry?",
+    "question": "In Blue Bloods (Series 4, Episode 7), what does Danny ask the art dealer to surrender during his enquiry?",
     "answers": [
       "A collection of forged passports",
       "A black book identifying poker clients",
@@ -4443,10 +4407,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46408",
+    "id": "tv_46407",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 7), Which Reagan relative unexpectedly features among the poker clients?",
+    "question": "In Blue Bloods (Series 4, Episode 7), which Reagan relative unexpectedly features among the poker clients?",
     "answers": [
       "Sean Reagan",
       "Erin Reagan",
@@ -4481,10 +4445,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46409",
+    "id": "tv_46408",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 7), What has Officer Montero allegedly done during a neighbourhood gang shootout?",
+    "question": "In Blue Bloods (Series 4, Episode 7), what has Officer Montero allegedly done during a neighbourhood gang shootout?",
     "answers": [
       "Stolen gambling money",
       "Secretly worked with the Russian mob",
@@ -4519,10 +4483,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46410",
+    "id": "tv_46409",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 7), What missing evidence casts doubt on Montero's version of the shooting?",
+    "question": "In Blue Bloods (Series 4, Episode 7), what missing evidence casts doubt on Montero's version of the shooting?",
     "answers": [
       "No gun is found beside the teenager",
       "The boy's identity is unknown",
@@ -4557,10 +4521,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46411",
+    "id": "tv_46410",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 7), What records does Erin review in response to the shooting controversy?",
+    "question": "In Blue Bloods (Series 4, Episode 7), what records does Erin review in response to the shooting controversy?",
     "answers": [
       "A record of drug prescriptions",
       "The boy's sealed previous weapons charges",
@@ -4595,10 +4559,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46412",
+    "id": "tv_46411",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 7), What public danger is Frank hoping to prevent after the police shooting?",
+    "question": "In Blue Bloods (Series 4, Episode 7), what public danger is Frank hoping to prevent after the police shooting?",
     "answers": [
       "A railway strike",
       "A fire at the courthouse",
@@ -4633,10 +4597,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46413",
+    "id": "tv_46412",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 8), Who plays Frank's old friend and mob lawyer Angelo Gallo?",
+    "question": "In Blue Bloods (Series 4, Episode 8), who plays Frank's old friend and mob lawyer Angelo Gallo?",
     "answers": [
       "Haaz Sleiman",
       "Chazz Palminteri",
@@ -4671,10 +4635,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46414",
+    "id": "tv_46413",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 8), What long-standing relationship connects Frank and Angelo Gallo?",
+    "question": "In Blue Bloods (Series 4, Episode 8), what long-standing relationship connects Frank and Angelo Gallo?",
     "answers": [
       "They are brothers-in-law",
       "They attended military college together",
@@ -4709,10 +4673,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46415",
+    "id": "tv_46414",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 8), Why is the mob lawyer targeted soon after eating with Frank?",
+    "question": "In Blue Bloods (Series 4, Episode 8), why is the mob lawyer targeted soon after eating with Frank?",
     "answers": [
       "He had stolen the mayor's car",
       "He owed money to Henry Reagan",
@@ -4747,10 +4711,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46416",
+    "id": "tv_46415",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 8), What predicament faces Frank after Angelo Gallo is hospitalised?",
+    "question": "In Blue Bloods (Series 4, Episode 8), what predicament faces Frank after Angelo Gallo is hospitalised?",
     "answers": [
       "Protecting him without causing another assassination attempt",
       "Finding a replacement police commissioner",
@@ -4785,10 +4749,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46417",
+    "id": "tv_46416",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 8), What is the result when Danny refuses to agree with the jury's view of a murder case?",
+    "question": "In Blue Bloods (Series 4, Episode 8), what is the result when Danny refuses to agree with the jury's view of a murder case?",
     "answers": [
       "The defendant confesses in court",
       "The trial ends with a hung jury",
@@ -4823,10 +4787,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46418",
+    "id": "tv_46417",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 8), How old is the murder defendant Danny doubts the evidence against?",
+    "question": "In Blue Bloods (Series 4, Episode 8), how old is the murder defendant Danny doubts the evidence against?",
     "answers": [
       "Thirty-five",
       "Fifty",
@@ -4861,10 +4825,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46419",
+    "id": "tv_46418",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 8), What do Danny and Maria do after the jury is discharged?",
+    "question": "In Blue Bloods (Series 4, Episode 8), what do Danny and Maria do after the jury is discharged?",
     "answers": [
       "Join another jury",
       "Offer the suspect a job",
@@ -4899,10 +4863,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46420",
+    "id": "tv_46419",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 8), What serious offence does Eddie suffer while on a date?",
+    "question": "In Blue Bloods (Series 4, Episode 8), what serious offence does Eddie suffer while on a date?",
     "answers": [
       "Sexual assault",
       "Armed robbery",
@@ -4937,10 +4901,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46421",
+    "id": "tv_46420",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 8), How does Jamie ultimately help Eddie address the attack?",
+    "question": "In Blue Bloods (Series 4, Episode 8), how does Jamie ultimately help Eddie address the attack?",
     "answers": [
       "Tells her to abandon the complaint",
       "Supports the arrest of the suspect while he is dating another woman",
@@ -4975,10 +4939,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46422",
+    "id": "tv_46421",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 9), What is the first name of Maria Baez's estranged brother?",
+    "question": "In Blue Bloods (Series 4, Episode 9), what is the first name of Maria Baez's estranged brother?",
     "answers": [
       "Javi",
       "Raoul",
@@ -5013,10 +4977,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46423",
+    "id": "tv_46422",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 9), Who plays Baez's estranged brother?",
+    "question": "In Blue Bloods (Series 4, Episode 9), who plays Baez's estranged brother?",
     "answers": [
       "Tom Cavanagh",
       "Kirk Acevedo",
@@ -5051,48 +5015,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46424",
+    "id": "tv_46423",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 9), Who was actually being targeted when a restaurant worker was stabbed?",
-    "answers": [
-      "Angelo Gallo",
-      "Frank Reagan",
-      "Javi",
-      "Henry Reagan"
-    ],
-    "correctAnswer": "Javi",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "2010s Television",
-      "Police Procedural",
-      "Crime Drama",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 4",
-      "Broadcast year: 2013",
-      "Episode: S04E09",
-      "Episode title: Bad Blood",
-      "Storyline: Who was actually being targeted when a restaurant worker was stabbed?",
-      "Answer fact: Javi",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and Blue Bloods season 4 detailed summaries",
-      "Character: Baez",
-      "Actor: Marisa Ramirez"
-    ]
-  },
-  {
-    "id": "tv_46425",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 9), Why had a drug dealer targeted Maria's brother?",
+    "question": "In Blue Bloods (Series 4, Episode 9), why had a drug dealer targeted Maria's brother?",
     "answers": [
       "He had testified in a police corruption trial",
       "He had stolen the dealer's wife",
@@ -5127,10 +5053,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46426",
+    "id": "tv_46424",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 9), What does Javi agree to do after Danny finds the real reason for the stabbing?",
+    "question": "In Blue Bloods (Series 4, Episode 9), what does Javi agree to do after Danny finds the real reason for the stabbing?",
     "answers": [
       "Help bring the drug dealer to justice",
       "Leave the country with Maria",
@@ -5165,10 +5091,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46427",
+    "id": "tv_46425",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 9), What kind of NYPD employee faces an excessive-force accusation involving a child?",
+    "question": "In Blue Bloods (Series 4, Episode 9), what kind of NYPD employee faces an excessive-force accusation involving a child?",
     "answers": [
       "A school liaison officer",
       "A police German Shepherd",
@@ -5203,10 +5129,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46428",
+    "id": "tv_46426",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 9), What could happen to the accused police dog if the allegation stands?",
+    "question": "In Blue Bloods (Series 4, Episode 9), what could happen to the accused police dog if the allegation stands?",
     "answers": [
       "It would be sent to military service",
       "It would become a police mascot",
@@ -5241,10 +5167,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46429",
+    "id": "tv_46427",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 9), What does Henry suspect about his deceased friend's widow?",
+    "question": "In Blue Bloods (Series 4, Episode 9), what does Henry suspect about his deceased friend's widow?",
     "answers": [
       "She had stolen his pension",
       "She had fled the state",
@@ -5279,10 +5205,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46430",
+    "id": "tv_46428",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 10), Which religious building suffers two bomb attacks?",
+    "question": "In Blue Bloods (Series 4, Episode 10), which religious building suffers two bomb attacks?",
     "answers": [
       "A church",
       "A synagogue",
@@ -5317,10 +5243,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46431",
+    "id": "tv_46429",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 10), Why does an officer mistakenly challenge a Sikh man after the bomb investigation?",
+    "question": "In Blue Bloods (Series 4, Episode 10), why does an officer mistakenly challenge a Sikh man after the bomb investigation?",
     "answers": [
       "He confuses Sikh religious clothing with descriptions of a Muslim suspect",
       "The man works for an explosives manufacturer",
@@ -5355,10 +5281,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46432",
+    "id": "tv_46430",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 10), What does the wrongly profiled man do during aggressive police questioning?",
+    "question": "In Blue Bloods (Series 4, Episode 10), what does the wrongly profiled man do during aggressive police questioning?",
     "answers": [
       "Steals the patrol car",
       "Punches the officer",
@@ -5393,10 +5319,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46433",
+    "id": "tv_46431",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 10), What is the first name of the former worker suspected in the mosque bombing?",
+    "question": "In Blue Bloods (Series 4, Episode 10), what is the first name of the former worker suspected in the mosque bombing?",
     "answers": [
       "Raoul",
       "Mickey",
@@ -5431,10 +5357,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46434",
+    "id": "tv_46432",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 10), Which gathering is the bomber planning to target next?",
+    "question": "In Blue Bloods (Series 4, Episode 10), which gathering is the bomber planning to target next?",
     "answers": [
       "The mayor's wedding",
       "A police graduation",
@@ -5469,10 +5395,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46435",
+    "id": "tv_46433",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 10), Which visitor from Jamie's earlier law-school days invites him to a bar-association dinner?",
+    "question": "In Blue Bloods (Series 4, Episode 10), which visitor from Jamie's earlier law-school days invites him to a bar-association dinner?",
     "answers": [
       "Dana",
       "Sydney",
@@ -5507,10 +5433,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46436",
+    "id": "tv_46434",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 10), What personal question does Dana raise about Jamie's partner?",
+    "question": "In Blue Bloods (Series 4, Episode 10), what personal question does Dana raise about Jamie's partner?",
     "answers": [
       "Whether Eddie has resigned from police duty",
       "Whether Jamie has romantic feelings for Eddie",
@@ -5545,10 +5471,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46437",
+    "id": "tv_46435",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 10), What policing mistake does Frank criticise during the religious-profiling dispute?",
+    "question": "In Blue Bloods (Series 4, Episode 10), what policing mistake does Frank criticise during the religious-profiling dispute?",
     "answers": [
       "Not issuing officers uniforms",
       "Closing an unsolved robbery case",
@@ -5583,10 +5509,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46438",
+    "id": "tv_46436",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 11), Which actor plays Danny's childhood friend Mickey?",
+    "question": "In Blue Bloods (Series 4, Episode 11), which actor plays Danny's childhood friend Mickey?",
     "answers": [
       "Marc Blucas",
       "Chazz Palminteri",
@@ -5621,10 +5547,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46439",
+    "id": "tv_46437",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 11), In what state is Mickey's organised-crime family based?",
+    "question": "In Blue Bloods (Series 4, Episode 11), in what state is Mickey's organised-crime family based?",
     "answers": [
       "Texas",
       "Ohio",
@@ -5659,10 +5585,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46440",
+    "id": "tv_46438",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 11), Why has the criminal family connected to Mickey come to New York?",
+    "question": "In Blue Bloods (Series 4, Episode 11), why has the criminal family connected to Mickey come to New York?",
     "answers": [
       "To expand its illegal operations",
       "To open a university",
@@ -5697,10 +5623,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46441",
+    "id": "tv_46439",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 11), Why does Danny work to safeguard Mickey even after arresting him?",
+    "question": "In Blue Bloods (Series 4, Episode 11), why does Danny work to safeguard Mickey even after arresting him?",
     "answers": [
       "Mickey becomes a district attorney",
       "Mickey and his family are threatened",
@@ -5735,10 +5661,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46442",
+    "id": "tv_46440",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 11), Which controversial practice has been restricted by a judge's ruling?",
+    "question": "In Blue Bloods (Series 4, Episode 11), which controversial practice has been restricted by a judge's ruling?",
     "answers": [
       "The use of patrol bikes",
       "Fingerprint identification",
@@ -5773,10 +5699,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46443",
+    "id": "tv_46441",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 11), Which consequence of the legal ruling troubles Frank?",
+    "question": "In Blue Bloods (Series 4, Episode 11), which consequence of the legal ruling troubles Frank?",
     "answers": [
       "Police recruit numbers have doubled",
       "A mayoral election is delayed",
@@ -5811,10 +5737,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46444",
+    "id": "tv_46442",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 12), What does Nicky find at a party where two people have overdosed?",
+    "question": "In Blue Bloods (Series 4, Episode 12), what does Nicky find at a party where two people have overdosed?",
     "answers": [
       "An abandoned handbag",
       "A packet labelled Bogeyman",
@@ -5849,10 +5775,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46445",
+    "id": "tv_46443",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 12), What extraordinary measure does Frank propose to remove the dangerous heroin?",
+    "question": "In Blue Bloods (Series 4, Episode 12), what extraordinary measure does Frank propose to remove the dangerous heroin?",
     "answers": [
       "Offer dealers full immunity",
       "Suspend every detective",
@@ -5887,10 +5813,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46446",
+    "id": "tv_46444",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 12), Who opposes Frank's suggested bulk purchase of the deadly drug?",
+    "question": "In Blue Bloods (Series 4, Episode 12), who opposes Frank's suggested bulk purchase of the deadly drug?",
     "answers": [
       "Eddie Janko",
       "Erin Reagan",
@@ -5925,10 +5851,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46447",
+    "id": "tv_46445",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 12), What has happened to the distributor traced through the overdose victims?",
+    "question": "In Blue Bloods (Series 4, Episode 12), what has happened to the distributor traced through the overdose victims?",
     "answers": [
       "He died after using the drug himself",
       "He was deported",
@@ -5963,10 +5889,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46448",
+    "id": "tv_46446",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 12), What criminal group is connected with the dead dealer's associates?",
+    "question": "In Blue Bloods (Series 4, Episode 12), what criminal group is connected with the dead dealer's associates?",
     "answers": [
       "The Blue Templar",
       "DSS",
@@ -6001,10 +5927,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46449",
+    "id": "tv_46447",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 12), Why are the other dealers unaware their supplier is already dead?",
+    "question": "In Blue Bloods (Series 4, Episode 12), why are the other dealers unaware their supplier is already dead?",
     "answers": [
       "They are serving prison sentences",
       "They have joined the police",
@@ -6039,10 +5965,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46450",
+    "id": "tv_46448",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 12), What does a young runaway steal before Eddie tries to help her?",
+    "question": "In Blue Bloods (Series 4, Episode 12), what does a young runaway steal before Eddie tries to help her?",
     "answers": [
       "A police badge",
       "A necklace",
@@ -6077,10 +6003,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46451",
+    "id": "tv_46449",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 12), Why does Eddie sympathise with the runaway girl?",
+    "question": "In Blue Bloods (Series 4, Episode 12), why does Eddie sympathise with the runaway girl?",
     "answers": [
       "Her experience resembles Eddie's own troubled youth",
       "The girl's mother is an officer",
@@ -6115,10 +6041,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46452",
+    "id": "tv_46450",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 13), Who is the mother demanding justice for murdered daughter Michelle?",
+    "question": "In Blue Bloods (Series 4, Episode 13), who is the mother demanding justice for murdered daughter Michelle?",
     "answers": [
       "Betty Lowe",
       "Kelly Peterson",
@@ -6153,10 +6079,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46453",
+    "id": "tv_46451",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 13), What is the murdered young woman's surname in the old serial-killer investigation?",
+    "question": "In Blue Bloods (Series 4, Episode 13), what is the murdered young woman's surname in the old serial-killer investigation?",
     "answers": [
       "Lamp",
       "Lowe",
@@ -6191,10 +6117,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46454",
+    "id": "tv_46452",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 13), Why are Frank and Erin concerned about reopening the seemingly resolved serial-murder case?",
+    "question": "In Blue Bloods (Series 4, Episode 13), why are Frank and Erin concerned about reopening the seemingly resolved serial-murder case?",
     "answers": [
       "The family has withdrawn its complaint",
       "The NYPD destroyed all case records",
@@ -6229,10 +6155,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46455",
+    "id": "tv_46453",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 13), What detail suggests Michelle Lowe's earlier identification evidence was flawed?",
+    "question": "In Blue Bloods (Series 4, Episode 13), what detail suggests Michelle Lowe's earlier identification evidence was flawed?",
     "answers": [
       "The victim was never identified",
       "The witness recorded the murder on video",
@@ -6267,10 +6193,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46456",
+    "id": "tv_46454",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 13), What has the missing Army veteran done to his family?",
+    "question": "In Blue Bloods (Series 4, Episode 13), what has the missing Army veteran done to his family?",
     "answers": [
       "Attacked his wife and taken their son",
       "Stolen his brother's police weapon",
@@ -6305,10 +6231,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46457",
+    "id": "tv_46455",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 13), Which of Danny's own military experiences helps him understand the veteran?",
+    "question": "In Blue Bloods (Series 4, Episode 13), which of Danny's own military experiences helps him understand the veteran?",
     "answers": [
       "An assignment in Afghanistan as a police officer",
       "Serving with the Marines in Iraq",
@@ -6343,48 +6269,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46458",
+    "id": "tv_46456",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 13), What condition may explain the veteran's dangerous behaviour?",
-    "answers": [
-      "Multiple sclerosis",
-      "A vision impairment",
-      "Post-traumatic stress disorder",
-      "Alzheimer's disease"
-    ],
-    "correctAnswer": "Post-traumatic stress disorder",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "2010s Television",
-      "Police Procedural",
-      "Crime Drama",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 4",
-      "Broadcast year: 2014",
-      "Episode: S04E13",
-      "Episode title: Unfinished Business",
-      "Storyline: What condition may explain the veteran's dangerous behaviour?",
-      "Answer fact: Post-traumatic stress disorder",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and Blue Bloods season 4 detailed summaries",
-      "Character: Danny",
-      "Actor: Donnie Wahlberg"
-    ]
-  },
-  {
-    "id": "tv_46459",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 14), Who directed the Blue Bloods episode Manhattan Queens?",
+    "question": "In Blue Bloods (Series 4, Episode 14), who directed the Blue Bloods episode Manhattan Queens?",
     "answers": [
       "Tom Selleck",
       "Bridget Moynahan",
@@ -6419,10 +6307,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46460",
+    "id": "tv_46457",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 14), At which university had murdered performer Tiffany Lamp studied?",
+    "question": "In Blue Bloods (Series 4, Episode 14), at which university had murdered performer Tiffany Lamp studied?",
     "answers": [
       "Yale University",
       "Harvard University",
@@ -6457,10 +6345,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46461",
+    "id": "tv_46458",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 14), What exclusive venue links the victim with suspects in her murder?",
+    "question": "In Blue Bloods (Series 4, Episode 14), what exclusive venue links the victim with suspects in her murder?",
     "answers": [
       "A music venue",
       "A prestigious golf club",
@@ -6495,10 +6383,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46462",
+    "id": "tv_46459",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 14), Which prisoner is the son of the woman who abducts Erin?",
+    "question": "In Blue Bloods (Series 4, Episode 14), which prisoner is the son of the woman who abducts Erin?",
     "answers": [
       "Raoul Delgado",
       "Grady",
@@ -6533,10 +6421,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46463",
+    "id": "tv_46460",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 14), Why does the mother abduct Erin?",
+    "question": "In Blue Bloods (Series 4, Episode 14), why does the mother abduct Erin?",
     "answers": [
       "She wants a larger inheritance",
       "She is working with a terrorist group",
@@ -6571,10 +6459,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46464",
+    "id": "tv_46461",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 14), What health problem makes Erin's kidnapper unusually desperate?",
+    "question": "In Blue Bloods (Series 4, Episode 14), what health problem makes Erin's kidnapper unusually desperate?",
     "answers": [
       "A terminal illness",
       "A broken leg",
@@ -6609,10 +6497,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46465",
+    "id": "tv_46462",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 14), Which police employee is targeted by an overbearing senior officer at the chiefs' symposium?",
+    "question": "In Blue Bloods (Series 4, Episode 14), which police employee is targeted by an overbearing senior officer at the chiefs' symposium?",
     "answers": [
       "Eddie Janko",
       "Abigail Baker",
@@ -6647,10 +6535,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46466",
+    "id": "tv_46463",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 14), Who repeatedly makes unwanted advances to Abigail Baker?",
+    "question": "In Blue Bloods (Series 4, Episode 14), who repeatedly makes unwanted advances to Abigail Baker?",
     "answers": [
       "A visiting law professor",
       "A federal investigator",
@@ -6685,10 +6573,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46467",
+    "id": "tv_46464",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 14), What does the senior officer do when Baker rejects his advances?",
+    "question": "In Blue Bloods (Series 4, Episode 14), what does the senior officer do when Baker rejects his advances?",
     "answers": [
       "Resigns and apologises immediately",
       "Offers her a promotion",
@@ -6723,10 +6611,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46468",
+    "id": "tv_46465",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 15), What first name is given to the schoolgirl kidnapped in the episode?",
+    "question": "In Blue Bloods (Series 4, Episode 15), what first name is given to the schoolgirl kidnapped in the episode?",
     "answers": [
       "Tiffany",
       "Nicky",
@@ -6761,10 +6649,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46469",
+    "id": "tv_46466",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 15), How long has the earlier girl's kidnapping remained unsolved?",
+    "question": "In Blue Bloods (Series 4, Episode 15), how long has the earlier girl's kidnapping remained unsolved?",
     "answers": [
       "A few weeks",
       "One year",
@@ -6799,10 +6687,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46470",
+    "id": "tv_46467",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 15), What links the fresh kidnapping to Danny's earlier unsolved case?",
+    "question": "In Blue Bloods (Series 4, Episode 15), what links the fresh kidnapping to Danny's earlier unsolved case?",
     "answers": [
       "Both victims disappeared from the same school in a similar way",
       "The victims are sisters",
@@ -6837,10 +6725,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46471",
+    "id": "tv_46468",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 15), Where are the two missing girls eventually rescued?",
+    "question": "In Blue Bloods (Series 4, Episode 15), where are the two missing girls eventually rescued?",
     "answers": [
       "A police station",
       "The school janitor's basement",
@@ -6875,10 +6763,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46472",
+    "id": "tv_46469",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 15), Which foreign city is involved in the NYPD international liaison dispute?",
+    "question": "In Blue Bloods (Series 4, Episode 15), which foreign city is involved in the NYPD international liaison dispute?",
     "answers": [
       "Madrid",
       "Rome",
@@ -6913,10 +6801,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46473",
+    "id": "tv_46470",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 15), Which British police force complains about a NYPD liaison at a station bombing-threat scene?",
+    "question": "In Blue Bloods (Series 4, Episode 15), which British police force complains about a NYPD liaison at a station bombing-threat scene?",
     "answers": [
       "City of London Police",
       "Greater Manchester Police",
@@ -6951,10 +6839,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46474",
+    "id": "tv_46471",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 15), Why does Frank refuse to give Inspector Peterson full information about the overseas liaison programme?",
+    "question": "In Blue Bloods (Series 4, Episode 15), why does Frank refuse to give Inspector Peterson full information about the overseas liaison programme?",
     "answers": [
       "Disclosure could damage confidential intelligence work",
       "He cannot identify the employees",
@@ -6989,10 +6877,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46475",
+    "id": "tv_46472",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 15), What condition affects the defendant in Erin's case about a fatal driving incident?",
+    "question": "In Blue Bloods (Series 4, Episode 15), what condition affects the defendant in Erin's case about a fatal driving incident?",
     "answers": [
       "Multiple sclerosis",
       "Bipolar disorder",
@@ -7027,10 +6915,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46476",
+    "id": "tv_46473",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 15), What occupation did the victim in Erin's separate driving case have?",
+    "question": "In Blue Bloods (Series 4, Episode 15), what occupation did the victim in Erin's separate driving case have?",
     "answers": [
       "Museum guard",
       "Police chaplain",
@@ -7065,10 +6953,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46477",
+    "id": "tv_46474",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 15), What development in Nicky's dating life causes Erin concern?",
+    "question": "In Blue Bloods (Series 4, Episode 15), what development in Nicky's dating life causes Erin concern?",
     "answers": [
       "A planned marriage abroad",
       "Dating an undercover detective",
@@ -7103,10 +6991,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46478",
+    "id": "tv_46475",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 16), What tragedy in the caller's childhood is the source of her anger?",
+    "question": "In Blue Bloods (Series 4, Episode 16), what tragedy in the caller's childhood is the source of her anger?",
     "answers": [
       "Her family lost its home to a fire",
       "Her parents were killed by a drink-driver",
@@ -7141,10 +7029,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46479",
+    "id": "tv_46476",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 16), Where does the convicted driver return to drinking after his release?",
+    "question": "In Blue Bloods (Series 4, Episode 16), where does the convicted driver return to drinking after his release?",
     "answers": [
       "A railway station",
       "The police canteen",
@@ -7179,10 +7067,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46480",
+    "id": "tv_46477",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 16), How does Danny try to prevent the woman's threatened murder-suicide?",
+    "question": "In Blue Bloods (Series 4, Episode 16), how does Danny try to prevent the woman's threatened murder-suicide?",
     "answers": [
       "Orders a public television broadcast",
       "Advises her to confront the driver",
@@ -7217,10 +7105,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46481",
+    "id": "tv_46478",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 16), What false contact detail does a flirtatious courier give Jamie?",
+    "question": "In Blue Bloods (Series 4, Episode 16), what false contact detail does a flirtatious courier give Jamie?",
     "answers": [
       "A fake telephone number",
       "A forged passport",
@@ -7255,10 +7143,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46482",
+    "id": "tv_46479",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 16), What criminal activity does Jamie trace through the courier?",
+    "question": "In Blue Bloods (Series 4, Episode 16), what criminal activity does Jamie trace through the courier?",
     "answers": [
       "Extortion",
       "Counterfeiting",
@@ -7293,10 +7181,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46483",
+    "id": "tv_46480",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 16), What professional limit does Jamie nearly exceed during his pursuit of the courier's employer?",
+    "question": "In Blue Bloods (Series 4, Episode 16), what professional limit does Jamie nearly exceed during his pursuit of the courier's employer?",
     "answers": [
       "Prosecuting a suspect in court",
       "Conducting police recruitment",
@@ -7331,10 +7219,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46484",
+    "id": "tv_46481",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 16), Who does Frank stand in for as chaperone of Sean's school trip?",
+    "question": "In Blue Bloods (Series 4, Episode 16), who does Frank stand in for as chaperone of Sean's school trip?",
     "answers": [
       "Erin Reagan",
       "Henry Reagan",
@@ -7369,10 +7257,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46485",
+    "id": "tv_46482",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 16), Where does Sean's school group go on the trip?",
+    "question": "In Blue Bloods (Series 4, Episode 16), where does Sean's school group go on the trip?",
     "answers": [
       "A museum",
       "A theatre",
@@ -7407,10 +7295,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46486",
+    "id": "tv_46483",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 16), What does Frank ask the trip's rigid organiser to let the children do?",
+    "question": "In Blue Bloods (Series 4, Episode 16), what does Frank ask the trip's rigid organiser to let the children do?",
     "answers": [
       "Cancel the trip completely",
       "Have fun rather than follow overly strict rules",
@@ -7445,10 +7333,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46487",
+    "id": "tv_46484",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 17), What tragedy results from the assault of the pregnant woman?",
+    "question": "In Blue Bloods (Series 4, Episode 17), what tragedy results from the assault of the pregnant woman?",
     "answers": [
       "She loses her unborn baby",
       "She loses her house",
@@ -7483,10 +7371,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46488",
+    "id": "tv_46485",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 17), Who is walking alongside the victim when the teens attack?",
+    "question": "In Blue Bloods (Series 4, Episode 17), who is walking alongside the victim when the teens attack?",
     "answers": [
       "A police officer",
       "Her husband",
@@ -7521,10 +7409,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46489",
+    "id": "tv_46486",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 17), What kind of criminal becomes the prime suspect for the assault?",
+    "question": "In Blue Bloods (Series 4, Episode 17), what kind of criminal becomes the prime suspect for the assault?",
     "answers": [
       "An immigration officer",
       "A college lecturer",
@@ -7559,10 +7447,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46490",
+    "id": "tv_46487",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 17), Whom does Danny suspect of killing the teenage assault suspect?",
+    "question": "In Blue Bloods (Series 4, Episode 17), whom does Danny suspect of killing the teenage assault suspect?",
     "answers": [
       "The victim's employer",
       "A police informant",
@@ -7597,10 +7485,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46491",
+    "id": "tv_46488",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 17), What does Frank ask Garrett to secure from media organisations?",
+    "question": "In Blue Bloods (Series 4, Episode 17), what does Frank ask Garrett to secure from media organisations?",
     "answers": [
       "An agreement not to publicise knockout-game assaults",
       "Free airtime for police recruiting",
@@ -7635,10 +7523,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46492",
+    "id": "tv_46489",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 17), What change in his personal life does Jack Boyle want to tell Nicky?",
+    "question": "In Blue Bloods (Series 4, Episode 17), what change in his personal life does Jack Boyle want to tell Nicky?",
     "answers": [
       "He has become police commissioner",
       "He and Erin have resumed a relationship",
@@ -7673,10 +7561,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46493",
+    "id": "tv_46490",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 17), Why is Erin reluctant to tell Nicky she and Jack are back together?",
+    "question": "In Blue Bloods (Series 4, Episode 17), why is Erin reluctant to tell Nicky she and Jack are back together?",
     "answers": [
       "Jack has refused to discuss it",
       "Nicky is living with Danny",
@@ -7711,48 +7599,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46494",
+    "id": "tv_46491",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 18), What drug has caused the death following unregulated cosmetic surgery?",
-    "answers": [
-      "Morphine",
-      "Insulin",
-      "Penicillin",
-      "Lidocaine"
-    ],
-    "correctAnswer": "Lidocaine",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "2010s Television",
-      "Police Procedural",
-      "Crime Drama",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 4",
-      "Broadcast year: 2014",
-      "Episode: S04E18",
-      "Episode title: Righting Wrongs",
-      "Storyline: What drug has caused the death following unregulated cosmetic surgery?",
-      "Answer fact: Lidocaine",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and Blue Bloods season 4 detailed summaries",
-      "Character: Danny",
-      "Actor: Donnie Wahlberg"
-    ]
-  },
-  {
-    "id": "tv_46495",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 18), What personal relationship links the cosmetic-surgery victim to the doctor?",
+    "question": "In Blue Bloods (Series 4, Episode 18), what personal relationship links the cosmetic-surgery victim to the doctor?",
     "answers": [
       "She is the doctor's wife",
       "She is his sister",
@@ -7787,10 +7637,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46496",
+    "id": "tv_46492",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 18), What wrongdoing beyond medical negligence emerges in Danny and Maria's investigation?",
+    "question": "In Blue Bloods (Series 4, Episode 18), what wrongdoing beyond medical negligence emerges in Danny and Maria's investigation?",
     "answers": [
       "Insurance fraud",
       "Infidelity",
@@ -7825,10 +7675,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46497",
+    "id": "tv_46493",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 18), Where did Erin meet the lawyer who later opposes her in court?",
+    "question": "In Blue Bloods (Series 4, Episode 18), where did Erin meet the lawyer who later opposes her in court?",
     "answers": [
       "At a tennis competition",
       "At a family wedding",
@@ -7863,10 +7713,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46498",
+    "id": "tv_46494",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 18), Which former murder enquiry does Frank quietly ask Jamie to revisit?",
+    "question": "In Blue Bloods (Series 4, Episode 18), which former murder enquiry does Frank quietly ask Jamie to revisit?",
     "answers": [
       "Lori Collins's death",
       "Vinny Cruz's shooting",
@@ -7901,10 +7751,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46499",
+    "id": "tv_46495",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 18), Why is Eddie upset by Jamie's secret special assignment?",
+    "question": "In Blue Bloods (Series 4, Episode 18), why is Eddie upset by Jamie's secret special assignment?",
     "answers": [
       "He refuses to tell her what he is working on",
       "He has become a supervisor without informing her",
@@ -7939,10 +7789,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46500",
+    "id": "tv_46496",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 18), What is Frank's concern about recommending Jamie for promotion?",
+    "question": "In Blue Bloods (Series 4, Episode 18), what is Frank's concern about recommending Jamie for promotion?",
     "answers": [
       "Jamie refuses to attend training",
       "It might look like nepotism",
@@ -7977,10 +7827,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46501",
+    "id": "tv_46497",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 18), Who opposes Frank's attempt to reopen Michelle Lowe's murder investigation?",
+    "question": "In Blue Bloods (Series 4, Episode 18), who opposes Frank's attempt to reopen Michelle Lowe's murder investigation?",
     "answers": [
       "The mayor's press secretary",
       "A foreign ambassador",
@@ -8015,10 +7865,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46502",
+    "id": "tv_46498",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 19), What statistical pattern leads to a civil-rights inquiry of Danny's work?",
+    "question": "In Blue Bloods (Series 4, Episode 19), what statistical pattern leads to a civil-rights inquiry of Danny's work?",
     "answers": [
       "A shortage of forensic reports",
       "A low rate of arrests",
@@ -8053,10 +7903,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46503",
+    "id": "tv_46499",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 19), What alleged misconduct are prosecutors worried about in Danny's cases?",
+    "question": "In Blue Bloods (Series 4, Episode 19), what alleged misconduct are prosecutors worried about in Danny's cases?",
     "answers": [
       "Tampering with election results",
       "Misuse of police vehicles",
@@ -8091,10 +7941,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46504",
+    "id": "tv_46500",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 19), How does Erin first tell Frank about the investigation of Danny?",
+    "question": "In Blue Bloods (Series 4, Episode 19), how does Erin first tell Frank about the investigation of Danny?",
     "answers": [
       "Privately and off the record",
       "During a television interview",
@@ -8129,10 +7979,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46505",
+    "id": "tv_46501",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 19), Which sergeant assists Frank with a private review of Danny's cases?",
+    "question": "In Blue Bloods (Series 4, Episode 19), which sergeant assists Frank with a private review of Danny's cases?",
     "answers": [
       "Randy Cutter",
       "Sid Gormley",
@@ -8167,10 +8017,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46506",
+    "id": "tv_46502",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 19), Why does Danny become angry with his father over the inquiry?",
+    "question": "In Blue Bloods (Series 4, Episode 19), why does Danny become angry with his father over the inquiry?",
     "answers": [
       "Frank chose Maria as his replacement",
       "Frank reported him to the FBI",
@@ -8205,10 +8055,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46507",
+    "id": "tv_46503",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 19), What was the questionable professor's scholarship scheme actually facilitating?",
+    "question": "In Blue Bloods (Series 4, Episode 19), what was the questionable professor's scholarship scheme actually facilitating?",
     "answers": [
       "A programme of university admissions tutoring",
       "A police-scholarship charity",
@@ -8243,10 +8093,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46508",
+    "id": "tv_46504",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 19), What unexpected romantic moment follows Jamie and Eddie's double date?",
+    "question": "In Blue Bloods (Series 4, Episode 19), what unexpected romantic moment follows Jamie and Eddie's double date?",
     "answers": [
       "They kiss",
       "They secretly marry",
@@ -8281,10 +8131,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46509",
+    "id": "tv_46505",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 19), What do Jamie and Eddie decide about the kiss afterwards?",
+    "question": "In Blue Bloods (Series 4, Episode 19), what do Jamie and Eddie decide about the kiss afterwards?",
     "answers": [
       "Move in together",
       "Pretend it was a one-off and never repeat it",
@@ -8319,10 +8169,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46510",
+    "id": "tv_46506",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 20), What is the name of the father who dies after a dispute about access to his daughter?",
+    "question": "In Blue Bloods (Series 4, Episode 20), what is the name of the father who dies after a dispute about access to his daughter?",
     "answers": [
       "Mickey",
       "Christopher Collins",
@@ -8357,10 +8207,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46511",
+    "id": "tv_46507",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 20), Why had Christopher Collins been detained before his death?",
+    "question": "In Blue Bloods (Series 4, Episode 20), why had Christopher Collins been detained before his death?",
     "answers": [
       "He attacked an officer during a traffic stop",
       "He stole custody documents from a court",
@@ -8395,10 +8245,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46512",
+    "id": "tv_46508",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 20), Which NYPD officer is accused of unlawfully killing Christopher Collins?",
+    "question": "In Blue Bloods (Series 4, Episode 20), which NYPD officer is accused of unlawfully killing Christopher Collins?",
     "answers": [
       "Sid Gormley",
       "Jamie Reagan",
@@ -8433,10 +8283,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46513",
+    "id": "tv_46509",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 20), What does the coroner establish was the cause of the detainee's death?",
+    "question": "In Blue Bloods (Series 4, Episode 20), what does the coroner establish was the cause of the detainee's death?",
     "answers": [
       "Choking",
       "A gunshot wound",
@@ -8471,10 +8321,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46514",
+    "id": "tv_46510",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 20), What earlier disciplinary concern does Frank find in Randy Cutter's career?",
+    "question": "In Blue Bloods (Series 4, Episode 20), what earlier disciplinary concern does Frank find in Randy Cutter's career?",
     "answers": [
       "A lost criminal case",
       "A prior excessive-force incident",
@@ -8509,10 +8359,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46515",
+    "id": "tv_46511",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 20), What does the grand jury decide about the suspect officer?",
+    "question": "In Blue Bloods (Series 4, Episode 20), what does the grand jury decide about the suspect officer?",
     "answers": [
       "It orders him to leave the country",
       "It brings charges against Jamie",
@@ -8547,10 +8397,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46516",
+    "id": "tv_46512",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 20), What does Frank do even after the grand jury refuses charges?",
+    "question": "In Blue Bloods (Series 4, Episode 20), what does Frank do even after the grand jury refuses charges?",
     "answers": [
       "He promotes him to detective",
       "He cancels the disciplinary inquiry",
@@ -8585,48 +8435,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46517",
+    "id": "tv_46513",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 20), Which estranged family member does Jamie encourage Eddie to visit?",
-    "answers": [
-      "Her father in prison",
-      "Her uncle in hospital",
-      "Her sister overseas",
-      "Her former fiancé"
-    ],
-    "correctAnswer": "Her father in prison",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "2010s Television",
-      "Police Procedural",
-      "Crime Drama",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 4",
-      "Broadcast year: 2014",
-      "Episode: S04E20",
-      "Episode title: Custody Battle",
-      "Storyline: Which estranged family member does Jamie encourage Eddie to visit?",
-      "Answer fact: Her father in prison",
-      "Question type: Story detail",
-      "Format: Written Quiz",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and Blue Bloods season 4 detailed summaries",
-      "Character: Eddie",
-      "Actor: Vanessa Ray"
-    ]
-  },
-  {
-    "id": "tv_46518",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 21), What is the name of the detective killed during an undercover drug investigation?",
+    "question": "In Blue Bloods (Series 4, Episode 21), what is the name of the detective killed during an undercover drug investigation?",
     "answers": [
       "Steve Tomlin",
       "Angelo Reed",
@@ -8661,10 +8473,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46519",
+    "id": "tv_46514",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 21), Who runs the drug ring the dead detective was infiltrating?",
+    "question": "In Blue Bloods (Series 4, Episode 21), who runs the drug ring the dead detective was infiltrating?",
     "answers": [
       "Mickey",
       "Santo Castillo",
@@ -8699,10 +8511,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46520",
+    "id": "tv_46515",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 21), What do Danny and Sid find when they inspect the dead detective's locker?",
+    "question": "In Blue Bloods (Series 4, Episode 21), what do Danny and Sid find when they inspect the dead detective's locker?",
     "answers": [
       "It contains illegal drugs",
       "It has been damaged by a fire",
@@ -8737,10 +8549,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46521",
+    "id": "tv_46516",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 21), What two possibilities might explain the empty locker?",
+    "question": "In Blue Bloods (Series 4, Episode 21), what two possibilities might explain the empty locker?",
     "answers": [
       "A mistaken identity and a lost key",
       "A retired officer and a moved file",
@@ -8775,10 +8587,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46522",
+    "id": "tv_46517",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 21), Who is Tyler to Nicky in the case involving a young person on the streets?",
+    "question": "In Blue Bloods (Series 4, Episode 21), who is Tyler to Nicky in the case involving a young person on the streets?",
     "answers": [
       "A former schoolmate",
       "A cousin",
@@ -8813,10 +8625,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46523",
+    "id": "tv_46518",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 21), What does Tyler do after Erin recognises him and offers help?",
+    "question": "In Blue Bloods (Series 4, Episode 21), what does Tyler do after Erin recognises him and offers help?",
     "answers": [
       "Admits to a theft",
       "Runs away",
@@ -8851,10 +8663,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46524",
+    "id": "tv_46519",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 21), Which agency does Erin believe should assist Tyler?",
+    "question": "In Blue Bloods (Series 4, Episode 21), which agency does Erin believe should assist Tyler?",
     "answers": [
       "A diplomatic liaison office",
       "A federal military board",
@@ -8889,10 +8701,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46525",
+    "id": "tv_46520",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 21), Who does Nicky privately enlist to search for Tyler?",
+    "question": "In Blue Bloods (Series 4, Episode 21), who does Nicky privately enlist to search for Tyler?",
     "answers": [
       "Mayor Poole",
       "Sid Gormley",
@@ -8927,10 +8739,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46526",
+    "id": "tv_46521",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), What kind of criminal history does the deceased woman in the finale have?",
+    "question": "In Blue Bloods (Series 4, Episode 22), what kind of criminal history does the deceased woman in the finale have?",
     "answers": [
       "Insurance fraud",
       "Armed robbery",
@@ -8965,10 +8777,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46527",
+    "id": "tv_46522",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), Where does the woman die in the initial apparent suicide?",
+    "question": "In Blue Bloods (Series 4, Episode 22), where does the woman die in the initial apparent suicide?",
     "answers": [
       "Falling from an apartment balcony",
       "In a car crash",
@@ -9003,10 +8815,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46528",
+    "id": "tv_46523",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), What confidential operation was the woman assisting in before her death?",
+    "question": "In Blue Bloods (Series 4, Episode 22), what confidential operation was the woman assisting in before her death?",
     "answers": [
       "An anti-terrorist sting",
       "A sting against wealthy clients of a prostitution ring",
@@ -9041,10 +8853,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46529",
+    "id": "tv_46524",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), In which state had the woman previously been convicted?",
+    "question": "In Blue Bloods (Series 4, Episode 22), in which state had the woman previously been convicted?",
     "answers": [
       "Florida",
       "Massachusetts",
@@ -9079,10 +8891,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46530",
+    "id": "tv_46525",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), Who makes a complaint leading to Danny being put on modified duty?",
+    "question": "In Blue Bloods (Series 4, Episode 22), who makes a complaint leading to Danny being put on modified duty?",
     "answers": [
       "An undercover federal prosecutor and his wife",
       "Two police academy cadets",
@@ -9117,10 +8929,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46531",
+    "id": "tv_46526",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), How does Erin contribute when Danny continues to pursue the forbidden investigation?",
+    "question": "In Blue Bloods (Series 4, Episode 22), how does Erin contribute when Danny continues to pursue the forbidden investigation?",
     "answers": [
       "She examines the cover-up from the district attorney side",
       "She joins a rival police department",
@@ -9155,10 +8967,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46532",
+    "id": "tv_46527",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), What makes the corruption case so close to home for Frank and Erin?",
+    "question": "In Blue Bloods (Series 4, Episode 22), what makes the corruption case so close to home for Frank and Erin?",
     "answers": [
       "It is over twenty years old",
       "People in their professional circles are involved",
@@ -9193,10 +9005,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46533",
+    "id": "tv_46528",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), What nationality is the man Jamie and Eddie encounter in the marriage dispute?",
+    "question": "In Blue Bloods (Series 4, Episode 22), what nationality is the man Jamie and Eddie encounter in the marriage dispute?",
     "answers": [
       "Argentinian",
       "Malaysian",
@@ -9231,10 +9043,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46534",
+    "id": "tv_46529",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), Why does the woman's father object to her marriage to the foreign national?",
+    "question": "In Blue Bloods (Series 4, Episode 22), why does the woman's father object to her marriage to the foreign national?",
     "answers": [
       "He wants her to study overseas",
       "He believes the groom is already married",
@@ -9269,10 +9081,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46535",
+    "id": "tv_46530",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), What career decision does Inspector General Peterson announce?",
+    "question": "In Blue Bloods (Series 4, Episode 22), what career decision does Inspector General Peterson announce?",
     "answers": [
       "She is leaving her oversight post",
       "She is becoming police commissioner",
@@ -9307,10 +9119,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46536",
+    "id": "tv_46531",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (Series 4, Episode 22), Why does Kelly Peterson say she cannot continue impartially in the post?",
+    "question": "In Blue Bloods (Series 4, Episode 22), why does Kelly Peterson say she cannot continue impartially in the post?",
     "answers": [
       "She has lost a court case",
       "She has become personally close to Frank",
@@ -9345,10 +9157,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46537",
+    "id": "tv_46532",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "For the TV series Blue Bloods (2010–2024), Which Series 3 Blue Bloods episode received the 2014 PRISM Award for Drama Episode – Mental Health?",
+    "question": "For the TV series Blue Bloods (2010–2024), which Series 3 Blue Bloods episode received the 2014 PRISM Award for Drama Episode – Mental Health?",
     "answers": [
       "Unfinished Business",
       "The Truth About Lying",
@@ -9381,10 +9193,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46538",
+    "id": "tv_46533",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "For the TV series Blue Bloods (2010–2024), Which Blue Bloods actor won the 2014 PRISM Award for Performance in a Drama Episode?",
+    "question": "For the TV series Blue Bloods (2010–2024), which Blue Bloods actor won the 2014 PRISM Award for Performance in a Drama Episode?",
     "answers": [
       "Donnie Wahlberg",
       "Len Cariou",
@@ -9417,10 +9229,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46539",
+    "id": "tv_46534",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "For the TV series Blue Bloods (2010–2024), Which organisation presented a 2014 Network Television Music Award to Blue Bloods composer Rob Simonsen?",
+    "question": "For the TV series Blue Bloods (2010–2024), which organisation presented a 2014 Network Television Music Award to Blue Bloods composer Rob Simonsen?",
     "answers": [
       "The Television Academy",
       "BMI",
@@ -9453,10 +9265,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46540",
+    "id": "tv_46535",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "For the TV series Blue Bloods (2010–2024), Which composer won a 2014 BMI Network Television Music Award for Blue Bloods?",
+    "question": "For the TV series Blue Bloods (2010–2024), which composer won a 2014 BMI Network Television Music Award for Blue Bloods?",
     "answers": [
       "Rob Simonsen",
       "Mark Snow",
@@ -9489,10 +9301,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46541",
+    "id": "tv_46536",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "For the TV series Blue Bloods (2010–2024), Which Series 4 episode received a nomination for a 2015 Edgar Award?",
+    "question": "For the TV series Blue Bloods (2010–2024), which Series 4 episode received a nomination for a 2015 Edgar Award?",
     "answers": [
       "Exiles",
       "The Bogeyman",
@@ -9525,10 +9337,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46542",
+    "id": "tv_46537",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "For the TV series Blue Bloods (2010–2024), Which writer received a 2015 Edgar Award nomination for the Blue Bloods episode Unfinished Business?",
+    "question": "For the TV series Blue Bloods (2010–2024), which writer received a 2015 Edgar Award nomination for the Blue Bloods episode Unfinished Business?",
     "answers": [
       "Brian Burns",
       "Ian Biederman",
@@ -9561,10 +9373,10 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46543",
+    "id": "tv_46538",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "For the TV series Blue Bloods (2010–2024), What Edgar Award category recognised the Series 4 episode Unfinished Business in 2015?",
+    "question": "For the TV series Blue Bloods (2010–2024), what Edgar Award category recognised the Series 4 episode Unfinished Business in 2015?",
     "answers": [
       "Outstanding Stunt Work",
       "Best Television Episode Teleplay",
@@ -9599,8 +9411,8 @@ const auditQuestions = [
 ];
 questions.push(...auditQuestions);
 
-if(questions.length!==256||new Set(questions.map(q=>q.id)).size!==256||
-new Set(questions.map(q=>q.question.toLowerCase())).size!==256||
+if(questions.length!==251||new Set(questions.map(q=>q.id)).size!==251||
+new Set(questions.map(q=>q.question.toLowerCase())).size!==251||
 questions.some((q,i)=>q.id!==(i<66?'tv_'+(30674+i):'tv_'+(46354+i-66))||q.category!=='TV'||q.topic!=='Blue Bloods'||
 !q.tags.includes('Programme: Blue Bloods (2010–2024)')||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
