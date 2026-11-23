@@ -3,7 +3,7 @@
 // Separate programme names on TV master, ONE connected ITV format, THREE source tracks:
 // 1986–1994 Strike It Lucky; 1996–1999 Strike It Rich; 2020–22 Epic Gameshow specials.
 // Original TWO Strike It Lucky questions in Pack 209 are preserved untouched.
-// New questions 61: 47 on Strike It Lucky and 14 on Strike It Rich.
+// New questions 61: 46 on Strike It Lucky and 15 on Strike It Rich.
 // Total across original + supplement 63; IDs tv_48417–tv_48477.
 // Full show detail: source formats, studios, 13 seasons/209 episodes, two titles,
 // presenter, teams, detailed main game/bonus round rules, complete jackpot progression,
