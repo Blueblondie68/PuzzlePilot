@@ -7826,7 +7826,7 @@ const questions = [
       "Original airdate: 1994-08-09",
       "Storyline: Moira shoots an unarmed trespasser at isolated farmhouse",
       "Character: Moira Field",
-      "Actor: Moira Field (guest character)",
+      "Actor: Charlotte Alexander",
       "Answer fact: The intruder was unarmed"
     ]
   },
@@ -8078,7 +8078,7 @@ const questions = [
       "Original airdate: 1994-09-13",
       "Storyline: Pina fears violent husband and initially will not press charges",
       "Character: Pina Neilsen",
-      "Actor: Pina Neilsen (guest character)",
+      "Actor: Christina Azucena",
       "Answer fact: She is frightened and refuses to press charges"
     ]
   },
@@ -8114,7 +8114,7 @@ const questions = [
       "Original airdate: 1994-09-13",
       "Storyline: Yolanda supports Pina in reporting husband Frank's abuse",
       "Character: Pina Neilsen",
-      "Actor: Pina Neilsen (guest character)",
+      "Actor: Christina Azucena",
       "Answer fact: Yolanda Roberts"
     ]
   },
@@ -8222,7 +8222,7 @@ const questions = [
       "Original airdate: 1994-10-18",
       "Storyline: Julia's late husband Gary's body disappears before poisoning discovered",
       "Character: Julia Fogarty",
-      "Actor: Julia Fogarty (guest character)",
+      "Actor: Penelope Stewart",
       "Answer fact: Julia Fogarty"
     ]
   },
@@ -8232,12 +8232,12 @@ const questions = [
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, why is Nick Schultz's career suddenly in jeopardy during 'The First Stone'?",
     "answers": [
-      "A drunken man Nick escorted home is found murdered",
+      "A drunken man Nick escorted home is found dead, prompting a murder inquiry",
       "He is accused of stealing £10,000 from a club",
       "He deliberately refuses to testify at a magistrates' hearing",
       "A superior catches him taking a bribe for speeding"
     ],
-    "correctAnswer": "A drunken man Nick escorted home is found murdered",
+    "correctAnswer": "A drunken man Nick escorted home is found dead, prompting a murder inquiry",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -8256,10 +8256,10 @@ const questions = [
       "Episode: S01E42",
       "Episode title: The First Stone",
       "Original airdate: 1994-11-01",
-      "Storyline: Nick implicated in inquiry into death of man he escorted home",
+      "Storyline: Nick faces scrutiny after a drunk he took home is found dead",
       "Character: Nick Schultz",
       "Actor: William McInnes",
-      "Answer fact: A drunken man Nick escorted home is found murdered"
+      "Answer fact: A drunken man Nick escorted home is found dead, prompting a murder inquiry"
     ]
   },
   {
