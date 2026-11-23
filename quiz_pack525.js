@@ -2,6 +2,7 @@
 // 160 distinct questions: 48 original, 91 added episode-plot questions, and 21 verified season-one awards questions.
 // Series 1: eight episodes. Original IDs tv_30281–tv_30328 unchanged; new IDs tv_45533–tv_45644.
 // Full story arc and 2018/2019 first-season awards checked 23 November 2026, not fixed questions per episode.
+// Peabody: the award was for 2018, although the ceremony took place in 2019.
 // Plot and episode research: https://en.wikipedia.org/wiki/Barry_(TV_series)#Season_1_(2018)
 // https://www.tvmaze.com/seasons/32277/barry-season-1/episodeguide
 // Awards sources: https://www.televisionacademy.com/shows/barry
@@ -5657,7 +5658,7 @@ const auditQuestions = [
     "id": "tv_45634",
     "category": "TV",
     "topic": "Barry",
-    "question": "For the television programme Barry (2018–2023), which major 2019 award honoured Barry for excellence in entertainment?",
+    "question": "For the television programme Barry (2018–2023), which prestigious prize recognised its first season with an Entertainment award for 2018?",
     "answers": [
       "International Emmy for Drama",
       "Olivier Award",
@@ -5681,10 +5682,10 @@ const auditQuestions = [
       "Question type: Awards",
       "Awards and nominations",
       "Awarding body: Peabody Awards",
-      "Awards year: 2019",
+      "Awards year: 2018",
       "Award result: Won",
       "Award recipient: Barry",
-      "Award question: which major 2019 award honoured Barry for excellence in entertainment?",
+      "Award question: Prize recognising Barry first season in 2018 Entertainment category",
       "Answer fact: Peabody Award",
       "Comprehensive Audit: 23 November 2026",
       "Source: Television Academy and Barry awards listings",
