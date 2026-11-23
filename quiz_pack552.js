@@ -1,16 +1,24 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 552: Blue Heelers, Series 9 (2002).
-// 276 verified storyline questions covering all 41 catalogued 2002 instalments; no artificial quotas.
-// IDs tv_33653–tv_33928; Pack 551 finished at tv_33652.
-// Synopses: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-9/1000036269/
-// Expanded plots: https://thetvdb.com/series/blue-heelers/allseasons/official
-// 41-episode sequence with 'Sins of the Father' at S09E16: https://www.imdb.com/title/tt0108709/episodes/?season=9
-// Dates cross-check: https://www.fernsehserien.de/blue-heelers/episodenguide
-// TheTVDB's official season 9 shows only 40 episodes; 'Sins of the Father' (29 May 2002) is
-// listed separately by IMDb, TV Guide and other episode catalogues and is retained as S09E16.
-// Do not confuse it with the different Season 8 story 'Sins of the Father' (22 August 2001).
-// Episode continuity includes Helena's death, Liz and PJ, Tom and Grace, Jo/PJ, Tess/Jonesy.
-// Last episode S09E41 'All You Need Is Love' first aired 20 November 2002.
-// No one-off guest-character-name padding; supporting story information retained as episode tags.
+// Storyline and awards audit 23 November 2026: 276 originals preserved;
+// 13 meaningful story/case/relationship questions and 3 checked awards nominations.
+// 292 total questions covering the existing 41-episode catalogue with 'Sins of the Father'
+// included as Episode 16. No forced quotas, padding or invented story endings.
+// Original IDs tv_33653–tv_33928; new audit IDs tv_47859–tv_47874.
+// Full 41-episode guide: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-9/1000036269/
+// Detailed additional episode context: https://thetvdb.com/series/blue-heelers/allseasons/official
+// Season 9 alternate 40-episode cataloguing and aired dates:
+// https://en.wikipedia.org/wiki/Blue_Heelers_season_9
+// 2003 TV Week Logie results (Rove Gold; Erik Thomson Actor; All Saints Program):
+// https://televisionau.com/2013/04/tv-week-logie-awards-10-years-ago-2.html
+// Blue Heelers 2003 specific nominations: John Wood Gold and Most Popular Actor;
+// Blue Heelers Most Popular Program (nominated, did not win):
+// https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers
+// Core 2002 arcs preserved: Tom's daughter Susan survives but loses baby; Tess loses Hayley;
+// Helena Hasham dies; PJ grieves and later dates Liz Stewart, then has feelings for Jo;
+// Tom confronts historical forced child removals and marries Reverend Grace Curtis;
+// Ben and Angela's troubled past; Jonesy and Tess's growing attraction and eventual first kiss;
+// Jo uses her firearm to protect Tess and experiences lasting consequences.
+// Existing IDs and episode-title alternative tags preserved; next season not mixed in.
 'use strict';
 const questions = [
   {
@@ -10230,13 +10238,610 @@ const questions = [
       "Answer fact: They may be spending their leave together",
       "Episode context: PJ rejects Jo's declaration; missing woman loved by two brothers; Tess and Jonesy romance"
     ]
+  },
+  {
+    "id": "tv_47859",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does Jonesy do during the visiting wrestling troupe's show in 'If It Ain't Hurtin''?",
+    "answers": [
+      "He gets back into the wrestling ring",
+      "He referees the football grand final",
+      "He challenges a boxer to a charity bout",
+      "He leaves the event to join a police raid"
+    ],
+    "correctAnswer": "He gets back into the wrestling ring",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E03",
+      "Episode title: If It ain't Hurtin'",
+      "Original airdate: 2002-02-27",
+      "Storyline: Jonesy enters wrestling ring during reunion with former wrestling troupe",
+      "Character: Evan 'Jonesy' Jones",
+      "Actor: Ditch Davey",
+      "Answer fact: He gets back into the wrestling ring",
+      "Episode context: Jonesy's wrestling past, stolen champion's belt, wrestler burned, former girlfriend Meg"
+    ]
+  },
+  {
+    "id": "tv_47860",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what is the name of Helena Hasham's new boyfriend, who arrives with her in 'Jack & Jill'?",
+    "answers": [
+      "Stefan",
+      "Simon",
+      "Seth",
+      "Guy"
+    ],
+    "correctAnswer": "Stefan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E07",
+      "Episode title: Jack & Jill",
+      "Original airdate: 2002-03-27",
+      "Storyline: PJ meets Helena's boyfriend Stefan and resents him before cancer revelation",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Stefan",
+      "Episode context: PJ's mother Helena arrives with boyfriend; valuable pottery forged; terminal cancer revealed"
+    ]
+  },
+  {
+    "id": "tv_47861",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, whose account of Catriona Parker's private unhappiness gives PJ reason to question her husband's perfect-family story?",
+    "answers": [
+      "Her hairdresser Chloe's",
+      "The school principal's",
+      "A visiting wrestling promoter's",
+      "Inspector Falcon-Price's"
+    ],
+    "correctAnswer": "Her hairdresser Chloe's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E10",
+      "Episode title: The Perfect Life",
+      "Original airdate: 2002-04-17",
+      "Storyline: Catriona's hairdresser Chloe describes her troubles and calls perfect home into question",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Her hairdresser Chloe's",
+      "Episode context: PJ grieving after Helena dies; wealthy builder's wife disappears and suicide theory questioned"
+    ]
+  },
+  {
+    "id": "tv_47862",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does troubled teenager Sam Baxter admit doing to Olive Hemmings during the break-in in 'Those That Trespass'?",
+    "answers": [
+      "Pushing Olive over when she was in the way",
+      "Attacking her with a crowbar",
+      "Locking her in the cellar",
+      "Poisoning her cup of tea"
+    ],
+    "correctAnswer": "Pushing Olive over when she was in the way",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E13",
+      "Episode title: Those That Trespass",
+      "Original airdate: 2002-05-08",
+      "Storyline: Sam Baxter responsible for injuring Olive Hemmings during robbery; Jo faces limits of trusting Sam",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: Pushing Olive over when she was in the way",
+      "Episode context: Jo trusts troubled teenager Sam Baxter; elderly parishioner robbed and injured"
+    ]
+  },
+  {
+    "id": "tv_47863",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does Kim Cook do to Reverend Grace Curtis during the ceremony marking Tom Croydon's thirty years of service?",
+    "answers": [
+      "She physically injures Grace",
+      "She falsely accuses Grace of theft",
+      "She kidnaps Grace's son",
+      "She secretly sets fire to the church"
+    ],
+    "correctAnswer": "She physically injures Grace",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E14",
+      "Episode title: Reflection",
+      "Original airdate: 2002-05-15",
+      "Storyline: Kim Cook injures Reverend Grace Curtis while confronting Tom about childhood removal from family",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: She physically injures Grace",
+      "Episode context: Tom's 30-year service medal interrupted by Aboriginal woman's story of forced childhood separation"
+    ]
+  },
+  {
+    "id": "tv_47864",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which Turkish-Australian woman Jo knows is now a schoolteacher accused of hurting a pupil in 'Of Middle Eastern Appearance'?",
+    "answers": [
+      "Deniz Gulmez",
+      "Helena Hasham",
+      "Catriona Parker",
+      "Angela Stewart"
+    ],
+    "correctAnswer": "Deniz Gulmez",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E19",
+      "Episode title: Of Middle Eastern Appearance",
+      "Original airdate: 2002-06-19",
+      "Storyline: Deniz Gulmez, Jo's acquaintance, comes under suspicion amid post-9/11 prejudice",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: Deniz Gulmez",
+      "Episode context: Jo defends Turkish-background schoolteacher amid post-9/11 prejudice and bomb fears"
+    ]
+  },
+  {
+    "id": "tv_47865",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does the mysterious woman outside the primary school claim happened to the ten-year-old girl in 'Wednesday's Child'?",
+    "answers": [
+      "The child is her daughter, kidnapped as an infant",
+      "The child was mistakenly expelled from school",
+      "The child's father falsified a will",
+      "The child witnessed a fatal car accident"
+    ],
+    "correctAnswer": "The child is her daughter, kidnapped as an infant",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E21",
+      "Episode title: Wednesday's Child",
+      "Original airdate: 2002-07-03",
+      "Storyline: Woman claims girl taken from her as an infant; competing maternal claims investigated",
+      "Character: Tess Gallagher",
+      "Actor: Caroline Craig",
+      "Answer fact: The child is her daughter, kidnapped as an infant",
+      "Episode context: Jonesy faces disputed paternity and two women's claims to custody of ten-year-old"
+    ]
+  },
+  {
+    "id": "tv_47866",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who is initially blamed for the insulting caricature at the police station in 'Salvation (1)'?",
+    "answers": [
+      "One of Grace Curtis's sons",
+      "PJ Hasham",
+      "The chief inspector",
+      "A visiting American actor"
+    ],
+    "correctAnswer": "One of Grace Curtis's sons",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E30",
+      "Episode title: Salvation (1)",
+      "Original airdate: 2002-09-04",
+      "Storyline: Caricature initially blamed on Grace's son but reflects Simon's manipulations",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: One of Grace Curtis's sons",
+      "Episode context: Grace's ex Simon arrives to disrupt wedding; sinister caricature and his suspicious death"
+    ]
+  },
+  {
+    "id": "tv_47867",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what ceremony is finally able to take place once the Heelers clear Tom Croydon's name in 'Salvation (2)'?",
+    "answers": [
+      "His wedding to Reverend Grace Curtis",
+      "His retirement presentation",
+      "The church's centenary service",
+      "His daughter Susan's graduation"
+    ],
+    "correctAnswer": "His wedding to Reverend Grace Curtis",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E31",
+      "Episode title: Salvation (2)",
+      "Original airdate: 2002-09-04",
+      "Storyline: Tom cleared of suspicion surrounding Simon's death and marries Reverend Grace Curtis",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: His wedding to Reverend Grace Curtis",
+      "Episode context: Tom admits confrontation with Simon; Heelers investigate to clear Tom before wedding"
+    ]
+  },
+  {
+    "id": "tv_47868",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, how long had Ben Stewart's first marriage to Angela lasted when they married as teenagers?",
+    "answers": [
+      "Three weeks",
+      "Ten years",
+      "Six months",
+      "Three days"
+    ],
+    "correctAnswer": "Three weeks",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E35",
+      "Episode title: Deep Water",
+      "Original airdate: 2002-10-09",
+      "Storyline: Ben's short youthful marriage to Angela lasted three weeks",
+      "Character: Ben Stewart",
+      "Actor: Paul Bishop",
+      "Answer fact: Three weeks",
+      "Episode context: School swimmer accuses Ben of assault after rejected advances; first wife Angela returns"
+    ]
+  },
+  {
+    "id": "tv_47869",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which doctor catches Jo Parrish's attention after her traumatic shooting and is also known to Tess?",
+    "answers": [
+      "Josh Carmichael",
+      "Gary Parker",
+      "Peter Baynes",
+      "John Banas"
+    ],
+    "correctAnswer": "Josh Carmichael",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E38",
+      "Episode title: Stable Mates",
+      "Original airdate: 2002-10-30",
+      "Storyline: Dr Josh Carmichael arrives; Jo attracted while Tess also has earlier connection to him",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: Josh Carmichael",
+      "Episode context: Jo attends shooting counselling; couple dispute and runaway horse; doctor Josh arrives"
+    ]
+  },
+  {
+    "id": "tv_47870",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what personal reunion does Jo Parrish try to arrange alongside the funeral-home mystery in 'Body of Evidence'?",
+    "answers": [
+      "An elderly man and his estranged daughter",
+      "A prisoner and his former cellmate",
+      "A schoolteacher and the pupil she expelled",
+      "A former constable and his police commissioner"
+    ],
+    "correctAnswer": "An elderly man and his estranged daughter",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E40",
+      "Episode title: Body of Evidence",
+      "Original airdate: 2002-11-13",
+      "Storyline: Jo tries to reconcile an old father with his estranged daughter during missing-bodies case",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: An elderly man and his estranged daughter",
+      "Episode context: Empty graves and missing bodies linked to funeral home; Jo seeks burial for homeless man"
+    ]
+  },
+  {
+    "id": "tv_47871",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what long-delayed romantic step do Tess Gallagher and Jonesy finally take in 'All You Need Is Love'?",
+    "answers": [
+      "They kiss",
+      "They announce their engagement",
+      "They marry in the church",
+      "They move permanently to Melbourne"
+    ],
+    "correctAnswer": "They kiss",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Broadcast year: 2002",
+      "Episode: S09E41",
+      "Episode title: All You Need Is Love",
+      "Original airdate: 2002-11-20",
+      "Storyline: Tess and Jonesy share long-awaited kiss in locker room as romance finally begins",
+      "Character: Tess Gallagher",
+      "Actor: Caroline Craig",
+      "Answer fact: They kiss",
+      "Episode context: PJ rejects Jo's declaration; missing woman loved by two brothers; Tess and Jonesy romance"
+    ]
+  },
+  {
+    "id": "tv_47872",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor was nominated for the 2003 Gold Logie for Most Popular Personality on Australian Television?",
+    "answers": [
+      "John Wood",
+      "Martin Sacks",
+      "Paul Bishop",
+      "Ditch Davey"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Award year: 2003",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Gold Logie — Most Popular Personality",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Gold Logie — Most Popular Personality — Nominated — John Wood",
+      "Answer fact: John Wood",
+      "Award source: https://televisionau.com/2013/04/tv-week-logie-awards-10-years-ago-2.html",
+      "Recognition scope: Blue Heelers, 2002 series",
+      "Broadcast year: 2002"
+    ]
+  },
+  {
+    "id": "tv_47873",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor also received a Most Popular Actor nomination at the 2003 TV Week Logie Awards?",
+    "answers": [
+      "John Wood",
+      "Ditch Davey",
+      "Paul Bishop",
+      "Rupert Reid"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Award year: 2003",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Silver Logie — Most Popular Actor",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Silver Logie — Most Popular Actor — Nominated — John Wood",
+      "Answer fact: John Wood",
+      "Award source: https://televisionau.com/2013/04/tv-week-logie-awards-10-years-ago-2.html",
+      "Recognition scope: Blue Heelers, 2002 series",
+      "Broadcast year: 2002"
+    ]
+  },
+  {
+    "id": "tv_47874",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In which category did Blue Heelers receive a 2003 TV Week Logie nomination while All Saints took the prize?",
+    "answers": [
+      "Most Popular Program",
+      "Most Popular Game Show",
+      "Most Outstanding Comedy",
+      "Most Popular Reality Program"
+    ],
+    "correctAnswer": "Most Popular Program",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 9",
+      "Award year: 2003",
+      "Award ceremony: TV Week Logie Awards",
+      "Award: Silver Logie — Most Popular Program",
+      "Award result: Nominated",
+      "Award recipient: Blue Heelers",
+      "Award question: Silver Logie — Most Popular Program — Nominated — Blue Heelers",
+      "Answer fact: Most Popular Program",
+      "Award source: https://televisionau.com/2013/04/tv-week-logie-awards-10-years-ago-2.html",
+      "Recognition scope: Blue Heelers, 2002 series",
+      "Broadcast year: 2002"
+    ]
   }
 ];
-if(questions.length!==276||new Set(questions.map(q=>q.id)).size!==questions.length||
+
+if(questions.length!==292||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(33653+i)||q.category!=='TV'||q.topic!=='Blue Heelers'||
-q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
-q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<20||
-q.dailyEligible!==true||!q.tags.some(t=>t.startsWith('Episode context: '))||
-!q.tags.some(t=>t.startsWith('Actor: ')))) throw Error('Pack 552 validation failed');
-module.exports = questions;
+questions.some((q,i)=>((i<276)?q.id!=='tv_'+(33653+i):q.id!=='tv_'+(47859+i-276))||
+q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
+new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+!q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length<20||
+new Set(q.tags).size!==q.tags.length||!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 552 validation failed');
+module.exports=questions;
