@@ -5865,7 +5865,7 @@ const auditQuestions = [
     "id": "tv_44010",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 6, Episode 22), why does Kelly reject Colin's request to resume their romance after rehab?",
+    "question": "In Beverly Hills, 90210 (Series 6, Episode 22), why does Kelly reject Colin's request to resume their romance during her rehabilitation?",
     "answers": [
       "He has accepted an overseas art job",
       "She has decided to marry Brandon",
