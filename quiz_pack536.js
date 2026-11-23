@@ -1,19 +1,17 @@
-// PuzzlePilot — Bigggggg Quiz — Pack 536: Blue Bloods (2010–2024), Series 1–8 mini-audit supplements.
-// 52 individually selected questions fill identifiable gaps after auditing Packs 528–535.
-// IDs tv_31004–tv_31055. Preserve existing IDs in earlier packs.
-// Verified against CBS official series 1–8 episode guides:
-// https://www.cbs.com/shows/blue_bloods/episodes/1/
-// https://www.cbs.com/shows/blue_bloods/episodes/2/
-// https://www.cbs.com/shows/blue_bloods/episodes/3/
-// https://www.cbs.com/shows/blue_bloods/episodes/4/
-// https://www.cbs.com/shows/blue_bloods/episodes/5/
-// https://www.cbs.com/shows/blue_bloods/episodes/6/
-// https://www.cbs.com/shows/blue_bloods/episodes/7/
-// https://www.cbs.com/shows/blue_bloods/episodes/8/
-// Character arcs and specific background details crosschecked with:
-// https://en.wikipedia.org/wiki/Blue_Bloods_season_1
-// https://en.wikipedia.org/wiki/List_of_Blue_Bloods_characters
-// No fixed number of questions per episode/series. Written questions refer to programme, not episode numbers.
+// PuzzlePilot — Bigggggg Quiz — Pack 536: Blue Bloods (2010–2024), Series 1–8 supplemental audit.
+// Duplicate-aware review, 23 November 2026: originally 52 questions; 10 now-redundant facts
+// retired because Packs 528–535 were fully expanded; 13 overlapping facts rewritten
+// with independent, episode-grounded story, cast or production details. 42 retained unique questions.
+// Original retained IDs are not renumbered. All questions carry the programme title and
+// series/episode/storyline/character/actor tags. No arbitrary question count is imposed.
+// Existing series packs already contain researched award wins and nominations; avoid re-asking them here.
+// Source: https://en.wikipedia.org/wiki/Blue_Bloods_season_1
+// Source: https://en.wikipedia.org/wiki/Blue_Bloods_season_2
+// Source: https://en.wikipedia.org/wiki/Blue_Bloods_season_3
+// Source: https://en.wikipedia.org/wiki/Blue_Bloods_season_4
+// Source: https://en.wikipedia.org/wiki/Blue_Bloods_season_6
+// Source: https://www.tvmaze.com/episodes/1019291/blue-bloods-7x12-not-fade-away
+// Source: https://www.cbs.com/shows/blue_bloods/episodes/8/
 'use strict';
 const questions = [
   {
@@ -56,14 +54,14 @@ const questions = [
     "id": "tv_31005",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which NYPD detective murdered Joe Reagan after Joe uncovered corruption within the department?",
+    "question": "In Blue Bloods, which officer does Jackie Curatola follow before a member of the Blue Templar forces her car off the road?",
     "answers": [
-      "Anthony Renzulli",
-      "Sid Gormley",
       "Sonny Malevsky",
-      "Jackie Curatola"
+      "Sid Gormley",
+      "Anthony Renzulli",
+      "Damon Camia"
     ],
-    "correctAnswer": "Sonny Malevsky",
+    "correctAnswer": "Damon Camia",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -82,10 +80,10 @@ const questions = [
       "Episode: S01E22",
       "Episode title: The Blue Templar",
       "Original airdate: 2011-05-13",
-      "Storyline: Joe was murdered by corrupt detective Sonny Malevsky",
-      "Character: Joe Reagan",
-      "Actor: Not portrayed on screen",
-      "Answer fact: Sonny Malevsky"
+      "Storyline: Jackie shadows Damon Camia and is run off the road",
+      "Character: Jackie Curatola",
+      "Actor: Jennifer Esposito",
+      "Answer fact: Damon Camia"
     ]
   },
   {
@@ -452,14 +450,14 @@ const questions = [
     "id": "tv_31016",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which former police partner of Frank is dying from an illness linked to their work at Ground Zero?",
+    "question": "What emotion leads Frank Reagan to consult a psychiatrist as an old friend's September 11-related illness worsens in Blue Bloods?",
     "answers": [
-      "John McKenna",
-      "Bill Connors",
-      "Sid Gormley",
-      "Lenny Ross"
+      "Anger at his former commanding officer",
+      "Fear of losing his police commission",
+      "Survivor's guilt",
+      "Envy of his friend's career"
     ],
-    "correctAnswer": "John McKenna",
+    "correctAnswer": "Survivor's guilt",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -478,24 +476,24 @@ const questions = [
       "Episode: S02E12",
       "Episode title: The Job",
       "Original airdate: 2012-02-03",
-      "Storyline: Frank mourns former partner John McKenna suffering 9/11-related illness",
+      "Storyline: Frank struggles with survivor's guilt as John McKenna is dying",
       "Character: Frank Reagan",
       "Actor: Tom Selleck",
-      "Answer fact: John McKenna"
+      "Answer fact: Survivor's guilt"
     ]
   },
   {
     "id": "tv_31017",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which Hollywood actor guest-stars as a vengeful criminal who kidnaps Jackie?",
+    "question": "Which actor plays the young officer Frank counsels after the officer accidentally shoots an innocent person in Blue Bloods Series 3?",
     "answers": [
-      "Ray Liotta",
-      "Steve Buscemi",
-      "Michael Madsen",
-      "Michael Keaton"
+      "Nicholas Turturro",
+      "Corbin Bleu",
+      "Sebastian Sozzi",
+      "Michael Madsen"
     ],
-    "correctAnswer": "Michael Madsen",
+    "correctAnswer": "Corbin Bleu",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -514,10 +512,10 @@ const questions = [
       "Episode: S03E01",
       "Episode title: Family Business",
       "Original airdate: 2012-09-28",
-      "Storyline: Michael Madsen guests in Series 3 premiere kidnapping",
-      "Character: Jackie Curatola",
-      "Actor: Jennifer Esposito",
-      "Answer fact: Michael Madsen"
+      "Storyline: Frank helps a young officer cope with an accidental shooting",
+      "Character: Young NYPD officer",
+      "Actor: Corbin Bleu",
+      "Answer fact: Corbin Bleu"
     ]
   },
   {
@@ -704,15 +702,15 @@ const questions = [
     "id": "tv_31023",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which officer becomes Jamie Reagan's patrol partner at the start of Series 4?",
+    "question": "Who directed the Blue Bloods Series 4 premiere, Unwritten Rules?",
     "answers": [
-      "Eddie Janko",
-      "Luisa Sosa",
-      "Kate Lansing",
-      "Abigail Baker"
+      "Peter Leto",
+      "David M. Barrett",
+      "Robert Harmon",
+      "Donnie Wahlberg"
     ],
-    "correctAnswer": "Eddie Janko",
-    "difficulty": "Easy",
+    "correctAnswer": "David M. Barrett",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -730,10 +728,11 @@ const questions = [
       "Episode: S04E01",
       "Episode title: Unwritten Rules",
       "Original airdate: 2013-09-27",
-      "Storyline: Eddie Janko becomes Jamie's patrol partner",
+      "Storyline: Direction of Series 4 premiere Unwritten Rules",
       "Character: Jamie Reagan",
       "Actor: Will Estes",
-      "Answer fact: Eddie Janko"
+      "Director: David M. Barrett",
+      "Answer fact: David M. Barrett"
     ]
   },
   {
@@ -776,14 +775,14 @@ const questions = [
     "id": "tv_31025",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which actress guest-stars as NYPD Inspector General Kelly Peterson?",
+    "question": "Which former Star Trek actor directed the Blue Bloods episode The Truth About Lying?",
     "answers": [
-      "Christine Baranski",
-      "Judith Light",
-      "Bebe Neuwirth",
-      "Glenn Close"
+      "Jonathan Frakes",
+      "Brent Spiner",
+      "Patrick Stewart",
+      "Robert Duncan McNeill"
     ],
-    "correctAnswer": "Bebe Neuwirth",
+    "correctAnswer": "Robert Duncan McNeill",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -802,10 +801,11 @@ const questions = [
       "Episode: S04E04",
       "Episode title: The Truth About Lying",
       "Original airdate: 2013-10-18",
-      "Storyline: Bebe Neuwirth plays Inspector General",
-      "Character: Frank Reagan",
-      "Actor: Tom Selleck",
-      "Answer fact: Bebe Neuwirth"
+      "Storyline: Direction of The Truth About Lying",
+      "Character: Eddie Janko",
+      "Actor: Vanessa Ray",
+      "Director: Robert Duncan McNeill",
+      "Answer fact: Robert Duncan McNeill"
     ]
   },
   {
@@ -848,14 +848,14 @@ const questions = [
     "id": "tv_31027",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which Blue Bloods cast member makes his directing debut on the episode Manhattan Queens?",
+    "question": "Who wrote the Blue Bloods episode Manhattan Queens, directed by Donnie Wahlberg?",
     "answers": [
-      "Donnie Wahlberg",
-      "Tom Selleck",
-      "Will Estes",
-      "Len Cariou"
+      "Siobhan Byrne O'Connor",
+      "Willie Reale",
+      "Kevin Wade",
+      "Brian Burns"
     ],
-    "correctAnswer": "Donnie Wahlberg",
+    "correctAnswer": "Willie Reale",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -874,10 +874,11 @@ const questions = [
       "Episode: S04E14",
       "Episode title: Manhattan Queens",
       "Original airdate: 2014-01-31",
-      "Storyline: Donnie Wahlberg directs Manhattan Queens",
+      "Storyline: Manhattan Queens episode written by Willie Reale",
       "Character: Danny Reagan",
       "Actor: Donnie Wahlberg",
-      "Answer fact: Donnie Wahlberg"
+      "Writer: Willie Reale",
+      "Answer fact: Willie Reale"
     ]
   },
   {
@@ -920,15 +921,15 @@ const questions = [
     "id": "tv_31029",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which actor guest-stars as mob lawyer Angelo Gallo?",
+    "question": "Why does Eddie initially hesitate to report a sexual assault after a date in Blue Bloods?",
     "answers": [
-      "Robert De Niro",
-      "James Caan",
-      "Chazz Palminteri",
-      "Harvey Keitel"
+      "She cannot remember the attacker's face",
+      "Her attacker has diplomatic immunity",
+      "She is forbidden to report crimes committed off duty",
+      "She fears how her fellow officers will treat her"
     ],
-    "correctAnswer": "Chazz Palminteri",
-    "difficulty": "Hard",
+    "correctAnswer": "She fears how her fellow officers will treat her",
+    "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -946,10 +947,10 @@ const questions = [
       "Episode: S04E08",
       "Episode title: Justice Served",
       "Original airdate: 2013-11-15",
-      "Storyline: Chazz Palminteri portrays Angelo Gallo",
-      "Character: Frank Reagan",
-      "Actor: Tom Selleck",
-      "Answer fact: Chazz Palminteri"
+      "Storyline: Eddie worries about colleagues' reactions after being assaulted",
+      "Character: Eddie Janko",
+      "Actor: Vanessa Ray",
+      "Answer fact: She fears how her fellow officers will treat her"
     ]
   },
   {
@@ -1022,78 +1023,6 @@ const questions = [
       "Character: Frank Reagan",
       "Actor: Tom Selleck",
       "Answer fact: Anne Farrell"
-    ]
-  },
-  {
-    "id": "tv_31032",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, where is Linda wounded by gunfire during the gang conflict?",
-    "answers": [
-      "At a family restaurant",
-      "At a railway station",
-      "Outside the police academy",
-      "At the hospital"
-    ],
-    "correctAnswer": "At the hospital",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 5",
-      "Broadcast year: 2015",
-      "Episode: S05E21",
-      "Episode title: New Rules",
-      "Original airdate: 2015-04-24",
-      "Storyline: Linda shot while working at hospital",
-      "Character: Linda Reagan",
-      "Actor: Amy Carlson",
-      "Answer fact: At the hospital"
-    ]
-  },
-  {
-    "id": "tv_31033",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what was the intended target of the hospital gang shooting that injured Linda?",
-    "answers": [
-      "Frank Reagan",
-      "A newspaper editor",
-      "A witness",
-      "A school principal"
-    ],
-    "correctAnswer": "A witness",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 5",
-      "Broadcast year: 2015",
-      "Episode: S05E21",
-      "Episode title: New Rules",
-      "Original airdate: 2015-04-24",
-      "Storyline: Gang member sent to kill witness accidentally wounds Linda",
-      "Character: Linda Reagan",
-      "Actor: Amy Carlson",
-      "Answer fact: A witness"
     ]
   },
   {
@@ -1172,15 +1101,15 @@ const questions = [
     "id": "tv_31036",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what divides Jamie and Eddie during a surveillance operation when a radio call comes through?",
+    "question": "Which writer penned the Blue Bloods episode Back in the Day, featuring Frank's former partner Lenny Ross?",
     "answers": [
-      "Whether to disclose an informant's name",
-      "Whether to move their car",
-      "Whether to end the operation for lunch",
-      "Whether to respond to an officer needing assistance"
+      "Ian Biederman",
+      "Brian Burns",
+      "Bryan Goluboff",
+      "Kevin Wade"
     ],
-    "correctAnswer": "Whether to respond to an officer needing assistance",
-    "difficulty": "Medium",
+    "correctAnswer": "Bryan Goluboff",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1198,24 +1127,25 @@ const questions = [
       "Episode: S06E11",
       "Episode title: Back in the Day",
       "Original airdate: 2016-01-08",
-      "Storyline: Jamie prioritises officer-assistance call while Eddie stays on surveillance",
-      "Character: Jamie Reagan",
-      "Actor: Will Estes",
-      "Answer fact: Whether to respond to an officer needing assistance"
+      "Storyline: Back in the Day screenplay by Bryan Goluboff",
+      "Character: Frank Reagan",
+      "Actor: Tom Selleck",
+      "Writer: Bryan Goluboff",
+      "Answer fact: Bryan Goluboff"
     ]
   },
   {
     "id": "tv_31037",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what was Joe Reagan's former police shield number, requested by another officer years after his death?",
+    "question": "In Blue Bloods, to which NYPD precinct is Officer Jill Carpenter assigned when she asks for Joe Reagan's old shield number?",
     "answers": [
-      "60528",
-      "59910",
-      "46808",
-      "71181"
+      "The 77th Precinct",
+      "The 12th Precinct",
+      "The 2nd Precinct",
+      "The 29th Precinct"
     ],
-    "correctAnswer": "46808",
+    "correctAnswer": "The 12th Precinct",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -1234,24 +1164,24 @@ const questions = [
       "Episode: S06E12",
       "Episode title: Cursed",
       "Original airdate: 2016-01-15",
-      "Storyline: Joe Reagan's retired badge number 46808",
-      "Character: Joe Reagan",
-      "Actor: Not portrayed on screen",
-      "Answer fact: 46808"
+      "Storyline: Jill Carpenter serves at the 12th Precinct",
+      "Character: Jill Carpenter",
+      "Actor: America Olivo",
+      "Answer fact: The 12th Precinct"
     ]
   },
   {
     "id": "tv_31038",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what undercover disguise helps Jamie and Eddie catch a group terrorising neighbours?",
+    "question": "In Blue Bloods episode Hold Outs, what does Frank ultimately tell reporters about continuing as police commissioner?",
     "answers": [
-      "Street musicians",
-      "An elderly couple",
-      "A newly married couple",
-      "Private detectives"
+      "He would like to stay in the post",
+      "He intends to retire immediately",
+      "He will run for mayor instead",
+      "He has accepted a job as district attorney"
     ],
-    "correctAnswer": "An elderly couple",
+    "correctAnswer": "He would like to stay in the post",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1270,25 +1200,25 @@ const questions = [
       "Episode: S06E09",
       "Episode title: Hold Outs",
       "Original airdate: 2015-11-20",
-      "Storyline: Jamie and Eddie go undercover as older residents",
-      "Character: Eddie Janko",
-      "Actor: Vanessa Ray",
-      "Answer fact: An elderly couple"
+      "Storyline: Frank publicly affirms his wish to stay commissioner",
+      "Character: Frank Reagan",
+      "Actor: Tom Selleck",
+      "Answer fact: He would like to stay in the post"
     ]
   },
   {
     "id": "tv_31039",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what seemingly small favour had led police officers into legal trouble during the Bullitt Mustang case?",
+    "question": "Which writer provided the teleplay for the Blue Bloods episode The Bullitt Mustang?",
     "answers": [
-      "Fixing traffic tickets",
-      "Running a restaurant raffle",
-      "Buying confiscated cars",
-      "Forging parking permits"
+      "Bryan Goluboff",
+      "Willie Reale",
+      "Daniel Truly",
+      "Kevin Wade"
     ],
-    "correctAnswer": "Fixing traffic tickets",
-    "difficulty": "Medium",
+    "correctAnswer": "Kevin Wade",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1306,10 +1236,11 @@ const questions = [
       "Episode: S06E07",
       "Episode title: The Bullitt Mustang",
       "Original airdate: 2015-11-06",
-      "Storyline: Officers accused of arranging traffic-ticket fixes",
-      "Character: Erin Reagan",
-      "Actor: Bridget Moynahan",
-      "Answer fact: Fixing traffic tickets"
+      "Storyline: The Bullitt Mustang teleplay by Kevin Wade",
+      "Character: Danny Reagan",
+      "Actor: Donnie Wahlberg",
+      "Writer: Kevin Wade",
+      "Answer fact: Kevin Wade"
     ]
   },
   {
@@ -1388,15 +1319,15 @@ const questions = [
     "id": "tv_31042",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, whose relationship dispute prompts Jamie and Eddie to reflect on their own partnership?",
+    "question": "Who directed the Blue Bloods Series 7 episode Not Fade Away?",
     "answers": [
-      "A couple of television actors'",
-      "Two other police officers'",
-      "Two defence lawyers'",
-      "Two firefighters'"
+      "John Behring",
+      "Peter Leto",
+      "Robert Harmon",
+      "Donnie Wahlberg"
     ],
-    "correctAnswer": "Two other police officers'",
-    "difficulty": "Medium",
+    "correctAnswer": "Robert Harmon",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1414,10 +1345,11 @@ const questions = [
       "Episode: S07E12",
       "Episode title: Not Fade Away",
       "Original airdate: 2017-01-13",
-      "Storyline: Two officers' romance makes Jamie and Eddie consider their relationship",
-      "Character: Eddie Janko",
-      "Actor: Vanessa Ray",
-      "Answer fact: Two other police officers'"
+      "Storyline: Not Fade Away directed by Robert Harmon",
+      "Character: Danny Reagan",
+      "Actor: Donnie Wahlberg",
+      "Director: Robert Harmon",
+      "Answer fact: Robert Harmon"
     ]
   },
   {
@@ -1529,90 +1461,18 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31046",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what change in Jamie and Eddie's personal relationship develops after their argument over a young woman staying at his flat?",
-    "answers": [
-      "They become formally engaged",
-      "They acknowledge their romantic feelings",
-      "They marry in secret",
-      "They ask to be reassigned permanently"
-    ],
-    "correctAnswer": "They acknowledge their romantic feelings",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 7",
-      "Broadcast year: 2016",
-      "Episode: S07E08",
-      "Episode title: Personal Business",
-      "Original airdate: 2016-11-11",
-      "Storyline: Jamie and Eddie acknowledge romantic feelings during Personal Business",
-      "Character: Eddie Janko",
-      "Actor: Vanessa Ray",
-      "Answer fact: They acknowledge their romantic feelings"
-    ]
-  },
-  {
-    "id": "tv_31047",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which member of Danny's family has died before the beginning of Series 8?",
-    "answers": [
-      "His wife Linda",
-      "His father Frank",
-      "His son Jack",
-      "His brother Jamie"
-    ],
-    "correctAnswer": "His wife Linda",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 8",
-      "Broadcast year: 2017",
-      "Episode: S08E01",
-      "Episode title: Cutting Losses",
-      "Original airdate: 2017-09-29",
-      "Storyline: Series 8 opens after Linda Reagan's death",
-      "Character: Danny Reagan",
-      "Actor: Donnie Wahlberg",
-      "Answer fact: His wife Linda"
-    ]
-  },
-  {
     "id": "tv_31048",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what caused Linda Reagan's death between Series 7 and Series 8?",
+    "question": "Which actress portrays New York Mayor Margaret Dutton in Blue Bloods Series 8?",
     "answers": [
-      "A bank robbery",
-      "A motorway collision",
-      "A hospital fire",
-      "A medical helicopter crash"
+      "Lorraine Bracco",
+      "Bebe Neuwirth",
+      "Whoopi Goldberg",
+      "Mary Stuart Masterson"
     ],
-    "correctAnswer": "A medical helicopter crash",
-    "difficulty": "Medium",
+    "correctAnswer": "Lorraine Bracco",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -1630,82 +1490,10 @@ const questions = [
       "Episode: S08E01",
       "Episode title: Cutting Losses",
       "Original airdate: 2017-09-29",
-      "Storyline: Linda dies in a medical helicopter crash between series",
-      "Character: Linda Reagan",
-      "Actor: Amy Carlson",
-      "Answer fact: A medical helicopter crash"
-    ]
-  },
-  {
-    "id": "tv_31049",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what difficult career decision does Danny consider while grieving Linda's death?",
-    "answers": [
-      "Running for mayor",
-      "Joining the fire department",
-      "Retirement from the NYPD",
-      "Becoming a judge"
-    ],
-    "correctAnswer": "Retirement from the NYPD",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 8",
-      "Broadcast year: 2017",
-      "Episode: S08E01",
-      "Episode title: Cutting Losses",
-      "Original airdate: 2017-09-29",
-      "Storyline: Danny considers retiring after Linda's death",
-      "Character: Danny Reagan",
-      "Actor: Donnie Wahlberg",
-      "Answer fact: Retirement from the NYPD"
-    ]
-  },
-  {
-    "id": "tv_31050",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what old legal case does Erin reopen while Danny investigates a basketball player's death?",
-    "answers": [
-      "A police pension fraud case",
-      "A possible wrongful conviction",
-      "A workplace injury claim",
-      "A divorce settlement"
-    ],
-    "correctAnswer": "A possible wrongful conviction",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 8",
-      "Broadcast year: 2017",
-      "Episode: S08E06",
-      "Episode title: Brushed Off",
-      "Original airdate: 2017-11-03",
-      "Storyline: Erin revisits possibly wrongful conviction in Brushed Off",
-      "Character: Erin Reagan",
-      "Actor: Bridget Moynahan",
-      "Answer fact: A possible wrongful conviction"
+      "Storyline: Margaret Dutton is portrayed by Lorraine Bracco",
+      "Character: Margaret Dutton",
+      "Actor: Lorraine Bracco",
+      "Answer fact: Lorraine Bracco"
     ]
   },
   {
@@ -1743,157 +1531,15 @@ const questions = [
       "Actor: Tom Selleck",
       "Answer fact: An inmate's death"
     ]
-  },
-  {
-    "id": "tv_31052",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what unusual claim does a developmentally disabled man make during a police standoff?",
-    "answers": [
-      "That he is the mayor",
-      "That he is a federal judge",
-      "That he is a prosecutor",
-      "That he is a police officer"
-    ],
-    "correctAnswer": "That he is a police officer",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 8",
-      "Broadcast year: 2018",
-      "Episode: S08E12",
-      "Episode title: The Brave",
-      "Original airdate: 2018-01-12",
-      "Storyline: Man impersonates police officer during tense standoff",
-      "Character: Jamie Reagan",
-      "Actor: Will Estes",
-      "Answer fact: That he is a police officer"
-    ]
-  },
-  {
-    "id": "tv_31053",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what illegal activity ensnares Erin's friend Mickey in the episode School of Hard Knocks?",
-    "answers": [
-      "People trafficking",
-      "Art forgery",
-      "Gambling",
-      "Counterfeit currency"
-    ],
-    "correctAnswer": "Gambling",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 8",
-      "Broadcast year: 2018",
-      "Episode: S08E14",
-      "Episode title: School of Hard Knocks",
-      "Original airdate: 2018-02-02",
-      "Storyline: Erin seeks to help friend involved in illegal gambling",
-      "Character: Erin Reagan",
-      "Actor: Bridget Moynahan",
-      "Answer fact: Gambling"
-    ]
-  },
-  {
-    "id": "tv_31054",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, whose plan to go on a date with her former husband causes tension with Anthony?",
-    "answers": [
-      "Eddie Janko's",
-      "Erin Reagan's",
-      "Maria Baez's",
-      "Abigail Baker's"
-    ],
-    "correctAnswer": "Erin Reagan's",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 8",
-      "Broadcast year: 2018",
-      "Episode: S08E20",
-      "Episode title: Your Six",
-      "Original airdate: 2018-04-27",
-      "Storyline: Erin plans date with former husband Jack Boyle",
-      "Character: Erin Reagan",
-      "Actor: Bridget Moynahan",
-      "Answer fact: Erin Reagan's"
-    ]
-  },
-  {
-    "id": "tv_31055",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, what event makes Jamie and Eddie finally decide to act on their romantic feelings?",
-    "answers": [
-      "A life-threatening experience",
-      "A promotion examination",
-      "A family holiday abroad",
-      "An unexpected inheritance"
-    ],
-    "correctAnswer": "A life-threatening experience",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 8",
-      "Broadcast year: 2018",
-      "Episode: S08E22",
-      "Episode title: My Aim is True",
-      "Original airdate: 2018-05-11",
-      "Storyline: Life-threatening ordeal leads Jamie and Eddie to engagement",
-      "Character: Jamie Reagan",
-      "Actor: Will Estes",
-      "Answer fact: A life-threatening experience"
-    ]
   }
 ];
-if(questions.length!==52||new Set(questions.map(q=>q.id)).size!==questions.length||
-new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
-questions.some((q,i)=>q.id!=='tv_'+(31004+i)||q.category!=='TV'||q.topic!=='Blue Bloods'||
-q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
-q.answers.filter(a=>a===q.correctAnswer).length!==1||q.tags.length<19||
-!q.tags.some(t=>t.startsWith('Actor: '))||!q.tags.some(t=>t.startsWith('Character: '))||
-!q.tags.some(t=>t.startsWith('Storyline: '))||q.dailyEligible!==true))throw Error('Pack 536 validation failed');
+const validOriginalIds = new Set(["tv_31004","tv_31005","tv_31006","tv_31007","tv_31008","tv_31009","tv_31010","tv_31011","tv_31012","tv_31013","tv_31014","tv_31015","tv_31016","tv_31017","tv_31018","tv_31019","tv_31020","tv_31021","tv_31022","tv_31023","tv_31024","tv_31025","tv_31026","tv_31027","tv_31028","tv_31029","tv_31030","tv_31031","tv_31034","tv_31035","tv_31036","tv_31037","tv_31038","tv_31039","tv_31040","tv_31041","tv_31042","tv_31043","tv_31044","tv_31045","tv_31048","tv_31051"]);
+if(questions.length!==42||new Set(questions.map(q=>q.id)).size!==42||
+new Set(questions.map(q=>q.question.toLowerCase())).size!==42||
+questions.some(q=>!validOriginalIds.has(q.id)||q.category!=='TV'||q.topic!=='Blue Bloods'||
+!q.tags.includes('Programme: Blue Bloods (2010–2024)')||q.answers.length!==4||
+new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+q.tags.length<19||new Set(q.tags).size!==q.tags.length||
+!q.tags.some(t=>t.startsWith('Storyline: '))||!q.tags.some(t=>t.startsWith('Actor: '))||
+!q.tags.some(t=>t.startsWith('Character: '))||q.dailyEligible!==true))throw Error('Pack 536 validation failed');
 module.exports=questions;
