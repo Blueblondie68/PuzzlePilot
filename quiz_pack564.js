@@ -1,6 +1,6 @@
 // PuzzlePilot Bigggggg Quiz — Pack 564: Blockbusters (UK television, 1983–2019).
 // Programme-by-programme quiz-show audit. Preserve SIX original questions in mixed Pack 209.
-// 71 NEW independently tagged questions; IDs tv_48274 through tv_48344.
+// 70 NEW independently tagged questions; IDs tv_48274 through tv_48343.
 // Full programme coverage: origins, central/ITV daily era, Bob Holness and announcers,
 // question writers, letter-board geometry and tactics, Gold Run, merchandise, Champion
 // Blockbusters, 1994–95 Sky/Bob Holness, 1997 BBC/Michael Aspel, 2000–01 Sky/Liza Tarbuck,
@@ -2143,7 +2143,7 @@ const questions = [
     "id": "tv_48333",
     "category": "TV",
     "topic": "Blockbusters",
-    "question": "How many BAFTA Children's Awards nominations did UK Blockbusters receive in the mid-to-late 1980s and 1990?",
+    "question": "How many BAFTA nominations did UK Blockbusters receive in the mid-to-late 1980s and 1990?",
     "answers": [
       "Two",
       "Three",
@@ -2251,42 +2251,6 @@ const questions = [
     "id": "tv_48336",
     "category": "TV",
     "topic": "Blockbusters",
-    "question": "Which of these years did Blockbusters receive a BAFTA Children's Entertainment/Drama nomination?",
-    "answers": [
-      "1983",
-      "1987",
-      "1985",
-      "1992"
-    ],
-    "correctAnswer": "1985",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "British Television",
-      "Quiz Shows",
-      "Game Shows",
-      "Programme: Blockbusters (UK, 1983–2019)",
-      "School and Student Contestants",
-      "Format: Lettered Hexagon Board",
-      "Production Country: United Kingdom",
-      "Original ITV Production: Central Television",
-      "Programme: Blockbusters",
-      "Series Context: 1985",
-      "Presenter/Rules/Awards: BAFTA nominations timing",
-      "Historical Detail: The 1985 nominee is recorded at UKGameshows",
-      "Specific Answer: 1985",
-      "Coverage: Entire UK television history",
-      "Research URL: https://www.ukgameshows.com/ukgs/Award_Winners",
-      "Question Context: BAFTA nominations timing; The 1985 nominee is recorded at UKGameshows",
-      "Format: Multiple Choice",
-      "Programme Label: TV Blockbusters not Blockbuster films"
-    ]
-  },
-  {
-    "id": "tv_48337",
-    "category": "TV",
-    "topic": "Blockbusters",
     "question": "How were Blockbusters' five BAFTA Children's Awards appearances between 1985 and 1990 recorded?",
     "answers": [
       "As five award wins",
@@ -2320,7 +2284,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48338",
+    "id": "tv_48337",
     "category": "TV",
     "topic": "Blockbusters",
     "question": "Which product related to Blockbusters won the British Association of Toy Retailers' Game of the Year for 1986?",
@@ -2356,7 +2320,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48339",
+    "id": "tv_48338",
     "category": "TV",
     "topic": "Blockbusters",
     "question": "Which company published the award-winning 1986 Blockbusters board game?",
@@ -2392,7 +2356,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48340",
+    "id": "tv_48339",
     "category": "TV",
     "topic": "Blockbusters",
     "question": "In which two consecutive years did TVTimes readers vote Blockbusters Britain's most popular quiz show?",
@@ -2428,10 +2392,10 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48341",
+    "id": "tv_48340",
     "category": "TV",
     "topic": "Blockbusters",
-    "question": "Which annual magazine ran the 1987 and 1988 reader polls that recognised Blockbusters as Britain's most popular quiz?",
+    "question": "Which television listings magazine ran the 1987 and 1988 reader polls that recognised Blockbusters as Britain's most popular quiz?",
     "answers": [
       "Radio Times",
       "The Stage",
@@ -2464,7 +2428,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48342",
+    "id": "tv_48341",
     "category": "TV",
     "topic": "Blockbusters",
     "question": "What was the title of the follow-up TV programme featuring Blockbusters winners enjoying their prize trips abroad?",
@@ -2500,7 +2464,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48343",
+    "id": "tv_48342",
     "category": "TV",
     "topic": "Blockbusters",
     "question": "Which company made a 2006 interactive Blockbusters DVD game featuring Bob Holness?",
@@ -2536,7 +2500,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48344",
+    "id": "tv_48343",
     "category": "TV",
     "topic": "Blockbusters",
     "question": "Which computer platform was among those receiving a home Blockbusters game in the 1980s?",
@@ -2572,7 +2536,7 @@ const questions = [
     ]
   }
 ];
-if (questions.length !== 71 ||
+if (questions.length !== 70 ||
  new Set(questions.map(q=>q.id)).size!==questions.length ||
  new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length ||
  questions.some((q,i)=>q.id !== 'tv_'+(48274+i)||
