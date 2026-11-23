@@ -1,24 +1,23 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 547: Blue Heelers, Series 4 (1997).
-// Full storyline and awards audit 23 November 2026: 297 existing questions preserved;
-// 19 new non-redundant story/character/case-outcome questions and 13 awards questions.
-// 329 questions covering all 42 episodes. Original IDs tv_32320–tv_32616;
-// audit additions tv_47743–tv_47774.
-// Story/detail: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-4/1000036269/
-// Episode air dates: https://thetvdb.com/series/blue-heelers/seasons/official/4
-// Original series context: https://en.wikipedia.org/wiki/Blue_Heelers_season_4
-// 1998 TV Week Logie wins/nominees: https://televisionau.com/2023/07/tv-week-logie-awards-25-years-ago-13.html
-// 1997 Australian Writers' Guild AWGIE winners: https://awg.com.au/sample-page/previous-awgie-award-winners-1990s/
-// 1998 AFI episode nomination: https://en.wikipedia.org/wiki/1998_Australian_Film_Institute_Awards
-// 1998 People's Choice results and 1998 Logie nominations:
+// Complete storyline and awards audit 23 November 2026: 297 original questions retained,
+// 18 new substantive story/outcome questions and 13 verified awards questions; 328 total.
+// All 42 episodes covered. Original IDs tv_32320–tv_32616; audit IDs tv_47743–tv_47773.
+// Story guide: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-4/1000036269/
+// Episode numbering/dates: https://thetvdb.com/series/blue-heelers/seasons/official/4
+// 1998 Logies (wins and nominations): https://televisionau.com/2023/07/tv-week-logie-awards-25-years-ago-13.html
+// 1997 AWGIE winning episode 'Reports of Damage and Loss' by John Banas:
+// https://awg.com.au/sample-page/previous-awgie-award-winners-1990s/
+// 1998 AFI nominated episode 'Collateral Damage' (Riccardo Pellizzeri):
+// https://en.wikipedia.org/wiki/1998_Australian_Film_Institute_Awards
+// 1998 People's Choice wins/nominations and other Logie nominations:
 // https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers
-// Verified recognition: 1997 AWGIE WIN 'Reports of Damage and Loss', writer John Banas;
-// 1998 AFI NOMINATION 'Collateral Damage' (producer Riccardo Pellizzeri);
-// 1998 Logies: 5 wins (Gold Lisa McCune, Silver Actor Martin Sacks, Silver Actress Lisa McCune,
-// Most Popular Program and Most Popular Series), plus actor nominations.
-// 1998 People's Choice: 3 wins (Lisa McCune x2 and Blue Heelers), male-star nominations.
-// Narratives: Adam/Stacey wedding and affair fallout; Dash helps locate wounded Adam; Robbie addiction;
-// Maggie/PJ and hidden evidence; Alice James identity; public order, criminal investigation and family consequences.
-// No forced question count by episode or manufactured resolutions.
+// Award questions distinguish Gold/Silver Logies, series/program prizes, AFI and AWGIE,
+// People's Choice wins, and specifically nominated (not winning) actors.
+// Long storylines: Adam and Stacey's wedding/affair fallout, Dash finding injured Adam;
+// the hidden identity in Alice James's grave, Robbie's continuing heroin addiction,
+// Maggie's police investigation/suspension, and significant criminal-case consequences.
+// Final editorial pass removed a redundant domestic-violence question and separated
+// two Logie questions about programme vs series awards. No artificial episode quotas.
 'use strict';
 const questions = [
   {
@@ -10825,42 +10824,6 @@ const questions = [
     "id": "tv_47746",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers, why does Joanne Mason's return to her violent husband breach the protection arrangements in 'Charity Begins at Home'?",
-    "answers": [
-      "She invites Andrew to the refuge despite an intervention order",
-      "Her husband is a serving police detective",
-      "She moves to a house owned by the mayor",
-      "She writes her address in a newspaper advertisement"
-    ],
-    "correctAnswer": "She invites Andrew to the refuge despite an intervention order",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "Australian Television",
-      "Seven Network",
-      "1990s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Victoria, Australia",
-      "Rural Australia",
-      "Programme: Blue Heelers (1994–2006)",
-      "Format: Written Quiz",
-      "Series: 4",
-      "Broadcast year: 1997",
-      "Episode: S04E09",
-      "Episode title: Charity Begins at Home",
-      "Original airdate: 1997-04-08",
-      "Storyline: Joanne permits Andrew into protected accommodation despite intervention order",
-      "Character: Joanne Mason",
-      "Actor: Joanne Mason (guest character)",
-      "Answer fact: She invites Andrew to the refuge despite an intervention order"
-    ]
-  },
-  {
-    "id": "tv_47747",
-    "category": "TV",
-    "topic": "Blue Heelers",
     "question": "In Blue Heelers, what major personal milestone do Adam Cooper and Stacey Norse reach in 'Fool for Love'?",
     "answers": [
       "They get married",
@@ -10894,7 +10857,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47748",
+    "id": "tv_47747",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what two connections does Deanna have to the old bullion robbery investigated in 'Fool's Gold (2)'?",
@@ -10930,7 +10893,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47749",
+    "id": "tv_47748",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, whose remains are actually buried in the grave marked for Alice James's supposed brother George in 'Grave Matters'?",
@@ -10966,7 +10929,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47750",
+    "id": "tv_47749",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, where have Susan Croydon and Andy Maxwell been when Tom fears his daughter has been harmed in 'Sick Puppy'?",
@@ -11002,7 +10965,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47751",
+    "id": "tv_47750",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what discovery upends the police theory about missing mother Domenica Bassetti in 'Sisterly Love'?",
@@ -11038,7 +11001,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47752",
+    "id": "tv_47751",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, who admits trapping Molly in the changing rooms of her workplace during 'Can't Take a Joke'?",
@@ -11074,7 +11037,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47753",
+    "id": "tv_47752",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, how does Dash help locate Adam after he disappears and is found with a gunshot wound in 'Every Contact Leaves Its Trace'?",
@@ -11110,7 +11073,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47754",
+    "id": "tv_47753",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, where is Adam Cooper recovering while Maggie and PJ investigate the resort protest in 'Playing Games'?",
@@ -11146,7 +11109,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47755",
+    "id": "tv_47754",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what separate threat to Adam Cooper's police career does Dash investigate during 'Closing Ranks'?",
@@ -11182,7 +11145,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47756",
+    "id": "tv_47755",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, which relative of Maggie Doyle becomes a suspect while officers try to find a missing girl in 'The All-Seeing Eye'?",
@@ -11218,7 +11181,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47757",
+    "id": "tv_47756",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what does Robbie Doyle admit taking from Dash McKinley during his addiction troubles in 'The Big Picture'?",
@@ -11254,7 +11217,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47758",
+    "id": "tv_47757",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, which local character do police eventually identify as the illegal starting-price bookmaker in 'Settlement Postponed'?",
@@ -11290,7 +11253,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47759",
+    "id": "tv_47758",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, who leaves Thea Copeland's alternative-treatment clinic with Robbie Doyle during 'Settlement Postponed'?",
@@ -11326,7 +11289,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47760",
+    "id": "tv_47759",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, what finally makes Rosie stop menacing the woman she has pursued in a road-rage incident?",
@@ -11362,7 +11325,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47761",
+    "id": "tv_47760",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "In Blue Heelers, why must one accused person represent herself in court during 'The Civil Dead'?",
@@ -11398,7 +11361,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47762",
+    "id": "tv_47761",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actress won the 1998 Gold Logie for Most Popular Personality on Australian Television?",
@@ -11435,7 +11398,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47763",
+    "id": "tv_47762",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actor won the 1998 Silver Logie for Most Popular Actor?",
@@ -11472,7 +11435,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47764",
+    "id": "tv_47763",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actress won the 1998 Silver Logie for Most Popular Actress?",
@@ -11509,7 +11472,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47765",
+    "id": "tv_47764",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "At the 1998 TV Week Logies, which drama won the inaugural Silver Logie for Most Popular Program?",
@@ -11546,17 +11509,17 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47766",
+    "id": "tv_47765",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "Which Australian police drama won the 1998 TV Week Logie for Most Popular Series?",
+    "question": "Besides the inaugural Most Popular Program Silver Logie, what other major series-level Logie did Blue Heelers win in 1998?",
     "answers": [
-      "Blue Heelers",
-      "The Bill",
-      "Police Rescue",
-      "Water Rats"
+      "Most Popular Series",
+      "Most Outstanding Drama Series",
+      "Most Popular Light Entertainment Program",
+      "Best International Programme"
     ],
-    "correctAnswer": "Blue Heelers",
+    "correctAnswer": "Most Popular Series",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -11577,13 +11540,13 @@ const questions = [
       "Award result: Won",
       "Award recipient: Blue Heelers",
       "Award question: Most Popular Series / Won / Blue Heelers",
-      "Answer fact: Blue Heelers",
+      "Answer fact: Most Popular Series",
       "Award source: televisionau.com/2023/07/tv-week-logie-awards-25-years-ago-13.html",
       "Recognition scope: Blue Heelers 1997 television series"
     ]
   },
   {
-    "id": "tv_47767",
+    "id": "tv_47766",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actor was nominated for the 1998 Gold Logie but lost to his co-star Lisa McCune?",
@@ -11620,7 +11583,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47768",
+    "id": "tv_47767",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actor received a 1998 TV Week Logie nomination for Most Outstanding Actor?",
@@ -11657,7 +11620,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47769",
+    "id": "tv_47768",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers Series 4 episode earned a 1997 AWGIE award for television-series writing?",
@@ -11695,7 +11658,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47770",
+    "id": "tv_47769",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers Series 4 episode earned a 1998 AFI nomination for Best Episode in a Television Drama Series?",
@@ -11733,7 +11696,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47771",
+    "id": "tv_47770",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which Blue Heelers actress won the 1998 Australian People's Choice Award for Favourite TV Star?",
@@ -11770,7 +11733,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47772",
+    "id": "tv_47771",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which category did Lisa McCune also win at the 1998 Australian People's Choice Awards for Blue Heelers?",
@@ -11807,7 +11770,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47773",
+    "id": "tv_47772",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "At the 1998 Australian People's Choice Awards, what category did Blue Heelers itself win?",
@@ -11844,7 +11807,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_47774",
+    "id": "tv_47773",
     "category": "TV",
     "topic": "Blue Heelers",
     "question": "Which two Blue Heelers actors both received 1998 People's Choice nominations for Favourite Male TV Drama/Serial Star?",
@@ -11882,13 +11845,12 @@ const questions = [
   }
 ];
 
-if(questions.length!==329||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==328||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>((i<297)?q.id!=='tv_'+(32320+i):q.id!=='tv_'+(47743+i-297))||
 q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
-new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+new Set(q.answers.map(x=>x.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
 !q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length<19||
-new Set(q.tags).size!==q.tags.length||
-!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+new Set(q.tags).size!==q.tags.length||!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
 q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 547 validation failed');
 module.exports=questions;
