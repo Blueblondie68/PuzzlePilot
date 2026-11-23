@@ -4891,8 +4891,8 @@ const auditQuestions = [
 ];
 questions.push(...auditQuestions);
 
-if(questions.length!==125||new Set(questions.map(q=>q.id)).size!==66||
-new Set(questions.map(q=>q.question.toLowerCase())).size!==66||
+if(questions.length!==125||new Set(questions.map(q=>q.id)).size!==125||
+new Set(questions.map(q=>q.question.toLowerCase())).size!==125||
 questions.some((q,i)=>q.id!==(i<66?'tv_'+(28995+i):'tv_'+(43605+i-66))||q.category!=='TV'||q.topic!=='Beverly Hills, 90210'||
 q.answers.length!==4||new Set(q.answers.map(x=>x.toLowerCase())).size!==4||
 q.answers.filter(x=>x===q.correctAnswer).length!==1||q.tags.length<18||
