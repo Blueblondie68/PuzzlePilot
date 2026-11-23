@@ -16,6 +16,7 @@
 // Core narratives: Ben's alcoholism and relapse, Tess and Jonesy, Sam Baxter, PJ and Jo,
 // fraud via Marco Fiorelli's father; Jonesy stabbed saving Tess; Tess leaves after pre-eclampsia;
 // Susie joins; Ben/Maddy conflict and Marissa, Susie/Brad's marriage and tragic finale.
+// Original tv_33961 now tests confirmed midwife role, not disputed 10- versus 16-year chronology.
 // Alternative episode title tags S10E35 and S10E42 retained exactly as originals.
 'use strict';
 const questions = [
@@ -1200,21 +1201,21 @@ const questions = [
       "Character: PJ Hasham",
       "Actor: Martin Sacks",
       "Answer fact: Human remains in a shallow grave",
-      "Episode context: Human remains linked to sixteen-year-old mystery and second death; Jo and PJ tensions"
+      "Episode context: Old burial, midwife and young mother's surviving child link two deaths; Jo/PJ tensions"
     ]
   },
   {
     "id": "tv_33961",
     "category": "TV",
     "topic": "Blue Heelers",
-    "question": "In Blue Heelers (2003), how far back does the case stretch?",
+    "question": "In Blue Heelers episode 'The Sum of the Parts', what former occupation of the older deceased woman connects her to the child of the woman in the shallow grave?",
     "answers": [
-      "Sixteen years",
-      "Six months",
-      "Two years",
-      "Forty years"
+      "Midwife",
+      "Police detective",
+      "School principal",
+      "Solicitor"
     ],
-    "correctAnswer": "Sixteen years",
+    "correctAnswer": "Midwife",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -1233,11 +1234,11 @@ const questions = [
       "Episode: S10E07",
       "Episode title: The Sum of the Parts",
       "Original airdate: 2003-03-26",
-      "Storyline: Remains linked to crime sixteen years earlier",
-      "Character: PJ Hasham",
-      "Actor: Martin Sacks",
-      "Answer fact: Sixteen years",
-      "Episode context: Human remains linked to sixteen-year-old mystery and second death; Jo and PJ tensions"
+      "Storyline: Deceased older woman was the midwife present when young mother died in childbirth",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: Midwife",
+      "Episode context: Old burial, midwife and young mother's surviving child link two deaths; Jo/PJ tensions"
     ]
   },
   {
@@ -1274,7 +1275,7 @@ const questions = [
       "Character: Jo Parrish",
       "Actor: Jane Allsop",
       "Answer fact: Another body",
-      "Episode context: Human remains linked to sixteen-year-old mystery and second death; Jo and PJ tensions"
+      "Episode context: Old burial, midwife and young mother's surviving child link two deaths; Jo/PJ tensions"
     ]
   },
   {
@@ -1311,7 +1312,7 @@ const questions = [
       "Character: Jo Parrish",
       "Actor: Jane Allsop",
       "Answer fact: They are connected",
-      "Episode context: Human remains linked to sixteen-year-old mystery and second death; Jo and PJ tensions"
+      "Episode context: Old burial, midwife and young mother's surviving child link two deaths; Jo/PJ tensions"
     ]
   },
   {
@@ -1348,7 +1349,7 @@ const questions = [
       "Character: PJ Hasham",
       "Actor: Martin Sacks",
       "Answer fact: Their personal relationship is strained",
-      "Episode context: Human remains linked to sixteen-year-old mystery and second death; Jo and PJ tensions"
+      "Episode context: Old burial, midwife and young mother's surviving child link two deaths; Jo/PJ tensions"
     ]
   },
   {
@@ -8794,7 +8795,7 @@ const questions = [
       "Episode title: Fair Play",
       "Original airdate: 2003-03-19",
       "Storyline: Grace offers Sam a home with herself and Tom after netball dispute",
-      "Character: Sam Baxter",
+      "Character: Tom Croydon",
       "Actor: John Wood",
       "Answer fact: Grace Curtis and Tom Croydon",
       "Episode context: Netball rivals Jo and Grace; Sam returns to team and trouble"
@@ -8871,7 +8872,7 @@ const questions = [
       "Character: Jo Parrish",
       "Actor: Jane Allsop",
       "Answer fact: The son of the woman buried in the old grave",
-      "Episode context: Human remains linked to sixteen-year-old mystery and second death; Jo and PJ tensions"
+      "Episode context: Old burial, midwife and young mother's surviving child link two deaths; Jo/PJ tensions"
     ]
   },
   {
@@ -8908,7 +8909,7 @@ const questions = [
       "Character: PJ Hasham",
       "Actor: Martin Sacks",
       "Answer fact: She died giving birth and was secretly buried by a midwife and her boyfriend",
-      "Episode context: Human remains linked to sixteen-year-old mystery and second death; Jo and PJ tensions"
+      "Episode context: Old burial, midwife and young mother's surviving child link two deaths; Jo/PJ tensions"
     ]
   },
   {
