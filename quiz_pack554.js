@@ -1,15 +1,15 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 554: Blue Heelers, Series 11 (2004).
-// 231 individually audited episode and continuing-story questions across all 39 episodes.
-// IDs tv_34162–tv_34392; Pack 553 ended at tv_34161.
-// Full broadcast order and synopses: https://thetvdb.com/series/blue-heelers/allseasons/official
-// Independent story cross-check: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-11/1000036269/
-// Dates and episode count: https://www.fernsehserien.de/blue-heelers/episodenguide
-// TheTVDB title 'Reasonable Doubts (Live Episode)' S11E12 is also 'Reasonable Doubt: Live'.
-// TheTVDB titles S11E13 'On the Inside' and S11E14 'Secrets & Lies'; alternate guide titles in tags.
-// 2004 arcs: Luke Darcy and PJ; live 10th-anniversary episode; Jonesy's brother Dylan dies;
-// Jo and Clancy killed in bombing S11E22, Grace's death investigated thereafter; new Heelers arrive;
-// Ben leaves, Tom's judgement worsens and an apparent death is investigated in series finale.
-// No padding or fixed episode quotas. Questions edited to remove generic repetition and minor trivia.
+// Storyline and awards audit, 23 November 2026: all 231 original questions retained;
+// 3 verified finale-consequence questions and 5 verified 2005 TV Week Logie questions added.
+// 239 questions across all 39 episodes; no artificial caps, generic repeats or padding.
+// Original IDs tv_34162–tv_34392; new audit IDs tv_47899–tv_47906.
+// Episode sources: https://thetvdb.com/series/blue-heelers/seasons/official/11
+// Finale outcome: https://thetvdb.com/series/blue-heelers/episodes/176079
+// Series 11 finale conclusion: https://en.wikipedia.org/wiki/Blue_Heelers_season_11
+// 2005 awards: https://televisionau.com/2015/05/tv-week-logie-awards-10-years-ago-4.html
+// Awards cross-check: https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers
+// John Wood WON the 2005 Silver Logie, was nominated for Gold; his Gold win was in 2006.
+// AFI 2005 drama nomination is for Series 12, so no Series 11 AFI win is implied.
 'use strict';
 const questions = [
   {
@@ -8572,9 +8572,313 @@ const questions = [
       "Answer fact: PJ Hasham",
       "Episode context: Tom presumed dead then found alive in Melbourne; burnt body and Roy's disappearance"
     ]
+  },
+  {
+    "id": "tv_47899",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2004), who reveals that her father killed Sergeant Roy Holland in the Series 11 finale?",
+    "answers": [
+      "Shayleen Burke",
+      "Tarni Baxter",
+      "Kelly O'Rourke",
+      "Amy Fox"
+    ],
+    "correctAnswer": "Shayleen Burke",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 11",
+      "Broadcast year: 2004",
+      "Episode: S11E39",
+      "Episode title: Crash Site",
+      "Original airdate: 2004-11-17",
+      "Storyline: Shayleen Burke confesses that her father killed Roy Holland",
+      "Character: Shayleen Burke",
+      "Actor: Emily Wheaton",
+      "Answer fact: Shayleen Burke",
+      "Episode context: Series 11 finale, death inquiry and Tom Croydon's confrontation with Tarni Baxter",
+      "Source: TheTVDB S11E39 and Blue Heelers season 11 episode record"
+    ]
+  },
+  {
+    "id": "tv_47900",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers (2004), what does Tom Croydon threaten to plant as false evidence to frame Tarni Baxter in the burned-car case?",
+    "answers": [
+      "Tarni's hair",
+      "A police-issued revolver",
+      "A forged confession",
+      "A bomb detonator"
+    ],
+    "correctAnswer": "Tarni's hair",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 11",
+      "Broadcast year: 2004",
+      "Episode: S11E39",
+      "Episode title: Crash Site",
+      "Original airdate: 2004-11-17",
+      "Storyline: Tom threatens to fabricate evidence against Tarni Baxter",
+      "Character: Tom Croydon and Tarni Baxter",
+      "Actor: John Wood and Melissa Andersen",
+      "Answer fact: Tarni's hair",
+      "Episode context: Series 11 finale, death inquiry and Tom Croydon's confrontation with Tarni Baxter",
+      "Source: TheTVDB S11E39 and Blue Heelers season 11 episode record"
+    ]
+  },
+  {
+    "id": "tv_47901",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In the closing moments of Blue Heelers Series 11 (2004), what does Tom Croydon attempt to do to Tarni Baxter?",
+    "answers": [
+      "Drown her in a river",
+      "Arrest her at the hospital",
+      "Push her from a bridge",
+      "Lock her in the police cells"
+    ],
+    "correctAnswer": "Drown her in a river",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 11",
+      "Broadcast year: 2004",
+      "Episode: S11E39",
+      "Episode title: Crash Site",
+      "Original airdate: 2004-11-17",
+      "Storyline: Tom's grief and obsession culminate in an attempted drowning of Tarni",
+      "Character: Tom Croydon and Tarni Baxter",
+      "Actor: John Wood and Melissa Andersen",
+      "Answer fact: Drown her in a river",
+      "Episode context: Series 11 finale, death inquiry and Tom Croydon's confrontation with Tarni Baxter",
+      "Source: TheTVDB S11E39 and Blue Heelers season 11 episode record"
+    ]
+  },
+  {
+    "id": "tv_47902",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "For his performance as Tom Croydon in Blue Heelers, which award did John Wood win at the 2005 TV Week Logies?",
+    "answers": [
+      "Silver Logie for Most Popular Actor",
+      "Gold Logie for Most Popular Personality",
+      "Silver Logie for Most Outstanding Actor",
+      "Logie for Most Popular Presenter"
+    ],
+    "correctAnswer": "Silver Logie for Most Popular Actor",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 11",
+      "Broadcast year: 2004",
+      "Award year: 2005",
+      "Award ceremony: TV Week Logie Awards 2005",
+      "Award question: John Wood wins Silver Logie for Most Popular Actor",
+      "Storyline: Blue Heelers Series 11 awards recognition",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: Silver Logie for Most Popular Actor",
+      "Episode context: Series 11 (2004) recognised at the 2005 Logie Awards",
+      "Source: 2005 Logie results, Television.AU and award records"
+    ]
+  },
+  {
+    "id": "tv_47903",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor received a ninth Gold Logie nomination in 2005 but did not win that year?",
+    "answers": [
+      "John Wood",
+      "Martin Sacks",
+      "Paul Bishop",
+      "Ditch Davey"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 11",
+      "Broadcast year: 2004",
+      "Award year: 2005",
+      "Award ceremony: TV Week Logie Awards 2005",
+      "Award question: John Wood nominated for ninth Gold Logie, Rove McManus wins",
+      "Storyline: Blue Heelers Series 11 awards recognition",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: John Wood",
+      "Episode context: Series 11 (2004) recognised at the 2005 Logie Awards",
+      "Source: 2005 Logie results, Television.AU and award records"
+    ]
+  },
+  {
+    "id": "tv_47904",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actress was nominated for the 2005 Most Popular Actress Logie for playing Jo Parrish?",
+    "answers": [
+      "Jane Allsop",
+      "Rachel Gordon",
+      "Samantha Tolj",
+      "Simone McAullay"
+    ],
+    "correctAnswer": "Jane Allsop",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 11",
+      "Broadcast year: 2004",
+      "Award year: 2005",
+      "Award ceremony: TV Week Logie Awards 2005",
+      "Award question: Jane Allsop nominated for Most Popular Actress",
+      "Storyline: Blue Heelers Series 11 awards recognition",
+      "Character: Jo Parrish",
+      "Actor: Jane Allsop",
+      "Answer fact: Jane Allsop",
+      "Episode context: Series 11 (2004) recognised at the 2005 Logie Awards",
+      "Source: 2005 Logie results, Television.AU and award records"
+    ]
+  },
+  {
+    "id": "tv_47905",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which two actresses who joined the Blue Heelers cast in 2004 were both nominated for Most Popular New Female Talent at the 2005 Logies?",
+    "answers": [
+      "Rachel Gordon and Samantha Tolj",
+      "Heidi Arena and Simone McAullay",
+      "Jane Allsop and Julie Nihill",
+      "Lisa McCune and Tasma Walton"
+    ],
+    "correctAnswer": "Rachel Gordon and Samantha Tolj",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 11",
+      "Broadcast year: 2004",
+      "Award year: 2005",
+      "Award ceremony: TV Week Logie Awards 2005",
+      "Award question: Rachel Gordon and Samantha Tolj both nominated for Most Popular New Female Talent",
+      "Storyline: Blue Heelers Series 11 awards recognition",
+      "Character: Amy Fox and Kelly O'Rourke",
+      "Actor: Rachel Gordon and Samantha Tolj",
+      "Answer fact: Rachel Gordon and Samantha Tolj",
+      "Episode context: Series 11 (2004) recognised at the 2005 Logie Awards",
+      "Source: 2005 Logie results, Television.AU and award records"
+    ]
+  },
+  {
+    "id": "tv_47906",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In which two programme categories was Blue Heelers nominated at the 2005 TV Week Logie Awards?",
+    "answers": [
+      "Most Popular Programme and Most Popular Australian Drama Series",
+      "Most Outstanding Comedy and Most Popular Reality Programme",
+      "Most Popular News and Most Outstanding Documentary",
+      "Most Popular Children's Programme and Most Outstanding Miniseries"
+    ],
+    "correctAnswer": "Most Popular Programme and Most Popular Australian Drama Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "2000s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 11",
+      "Broadcast year: 2004",
+      "Award year: 2005",
+      "Award ceremony: TV Week Logie Awards 2005",
+      "Award question: Blue Heelers nominated for Most Popular Programme and Most Popular Australian Drama Series",
+      "Storyline: Blue Heelers Series 11 awards recognition",
+      "Character: Mount Thomas police ensemble",
+      "Actor: Blue Heelers ensemble",
+      "Answer fact: Most Popular Programme and Most Popular Australian Drama Series",
+      "Episode context: Series 11 (2004) recognised at the 2005 Logie Awards",
+      "Source: 2005 Logie results, Television.AU and award records"
+    ]
   }
 ];
-if(questions.length!==231||new Set(questions.map(q=>q.id)).size!==questions.length||
+if(questions.length!==239||new Set(questions.map(q=>q.id)).size!==questions.length||
 new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
 questions.some((q,i)=>q.id!=='tv_'+(34162+i)||q.category!=='TV'||q.topic!=='Blue Heelers'||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
