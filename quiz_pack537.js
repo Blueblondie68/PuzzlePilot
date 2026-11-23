@@ -5163,14 +5163,14 @@ const questions = [
     "id": "tv_47287",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "What is Maggie Gibson's profession when she offers information about an apparent suicide in Blue Bloods?",
+    "question": "Which actress portrays psychic medium Maggie Gibson in Blue Bloods Series 9?",
     "answers": [
-      "An emergency nurse",
-      "A journalist",
-      "A psychic medium",
-      "An NYPD captain"
+      "Bebe Neuwirth",
+      "Christine Ebersole",
+      "Lauren Patten",
+      "Callie Thorne"
     ],
-    "correctAnswer": "A psychic medium",
+    "correctAnswer": "Callie Thorne",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -5189,10 +5189,10 @@ const questions = [
       "Episode: S09E13",
       "Episode title: Ripple Effect",
       "Original airdate: 2019-02-01",
-      "Storyline: Maggie approaches detectives with psychic claims",
-      "Character: Danny Reagan",
-      "Actor: Donnie Wahlberg",
-      "Answer fact: A psychic medium"
+      "Storyline: Callie Thorne portrays the returning medium Maggie Gibson",
+      "Character: Maggie Gibson",
+      "Actor: Callie Thorne",
+      "Answer fact: Callie Thorne"
     ]
   },
   {
@@ -6891,14 +6891,14 @@ const questions = [
     "id": "tv_47335",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Which senior member of the Reagan family leads Eddie down the aisle at the wedding in Blue Bloods?",
+    "question": "Which religious leader officiates the wedding of Jamie Reagan and Eddie Janko in Blue Bloods?",
     "answers": [
-      "Danny Reagan",
-      "Nicky Reagan",
-      "Frank Reagan",
-      "Henry Reagan"
+      "Bishop Joseph Renzulli",
+      "Archbishop Kevin Kearns",
+      "Reverend Darnell Potter",
+      "Father Quinn"
     ],
-    "correctAnswer": "Frank Reagan",
+    "correctAnswer": "Archbishop Kevin Kearns",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -6917,10 +6917,10 @@ const questions = [
       "Episode: S09E22",
       "Episode title: Something Blue",
       "Original airdate: 2019-05-10",
-      "Storyline: Frank walks Eddie down the aisle",
-      "Character: Jamie Reagan",
-      "Actor: Will Estes",
-      "Answer fact: Frank Reagan"
+      "Storyline: Archbishop Kearns officiates Jamie and Eddie wedding",
+      "Character: Archbishop Kevin Kearns",
+      "Actor: Stacy Keach",
+      "Answer fact: Archbishop Kevin Kearns"
     ]
   },
   {
