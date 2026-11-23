@@ -4587,14 +4587,14 @@ const questions = [
     "id": "tv_47359",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Where is the boy believed to have been abducted by his estranged father actually taken in Blue Bloods?",
+    "question": "Which actor plays veteran officer Kenneth Troy, who comes under suspicion for planting drugs in Blue Bloods?",
     "answers": [
-      "To a hockey game",
-      "To the airport",
-      "To a school play",
-      "To a courthouse"
+      "John Behring",
+      "David M. Barrett",
+      "Eric Troy Miller",
+      "Dan Lauria"
     ],
-    "correctAnswer": "To a hockey game",
+    "correctAnswer": "Eric Troy Miller",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -4613,10 +4613,10 @@ const questions = [
       "Episode: S10E08",
       "Episode title: Friends in High Places",
       "Original airdate: 2019-11-15",
-      "Storyline: Child's father takes him to hockey game not kidnapping",
-      "Character: Henry Reagan",
-      "Actor: Len Cariou",
-      "Answer fact: To a hockey game"
+      "Storyline: Eric Troy Miller appears as suspect veteran officer Kenneth Troy",
+      "Character: Kenneth Troy",
+      "Actor: Eric Troy Miller",
+      "Answer fact: Eric Troy Miller"
     ]
   },
   {
@@ -5163,14 +5163,14 @@ const questions = [
     "id": "tv_47375",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Rather than dismissal, what consequence does Sid Gormley choose for an officer accused of brutality in Blue Bloods?",
+    "question": "Which of Frank Reagan's closest staff members is asked to determine the punishment in the brutality case in Blue Bloods episode Reckless?",
     "answers": [
-      "Indefinite suspension",
-      "A ten-day unpaid holiday",
-      "Immediate promotion",
-      "Compulsory transfer to an embassy"
+      "Abigail Baker",
+      "Erin Reagan",
+      "Sid Gormley",
+      "Garrett Moore"
     ],
-    "correctAnswer": "Indefinite suspension",
+    "correctAnswer": "Sid Gormley",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -5189,10 +5189,10 @@ const questions = [
       "Episode: S10E13",
       "Episode title: Reckless",
       "Original airdate: 2020-01-31",
-      "Storyline: Gormley imposes indefinite suspension",
-      "Character: Frank Reagan",
-      "Actor: Tom Selleck",
-      "Answer fact: Indefinite suspension"
+      "Storyline: Frank entrusts Sid Gormley with discipline for brutality case",
+      "Character: Sid Gormley",
+      "Actor: Robert Clohessy",
+      "Answer fact: Sid Gormley"
     ]
   },
   {
