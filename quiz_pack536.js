@@ -1,7 +1,7 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 536: Blue Bloods (2010–2024), Series 1–8 supplemental audit.
-// Duplicate-aware review, 23 November 2026: originally 52 questions; 10 now-redundant facts
+// Duplicate-aware review, 23 November 2026: originally 52 questions; 11 now-redundant facts
 // retired because Packs 528–535 were fully expanded; 13 overlapping facts rewritten
-// with independent, episode-grounded story, cast or production details. 42 retained unique questions.
+// with independent, episode-grounded story, cast or production details. 41 retained unique questions.
 // Original retained IDs are not renumbered. All questions carry the programme title and
 // series/episode/storyline/character/actor tags. No arbitrary question count is imposed.
 // Existing series packs already contain researched award wins and nominations; avoid re-asking them here.
@@ -555,42 +555,6 @@ const questions = [
     ]
   },
   {
-    "id": "tv_31019",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods, which member of Frank's senior staff confides a troubling personal secret during the Halloween case?",
-    "answers": [
-      "Garrett Moore",
-      "Sid Gormley",
-      "Anthony Abetemarco",
-      "Jack Boyle"
-    ],
-    "correctAnswer": "Garrett Moore",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS",
-      "2010s Television",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Format: Written Quiz",
-      "Series: 3",
-      "Broadcast year: 2012",
-      "Episode: S03E07",
-      "Episode title: Nightmares",
-      "Original airdate: 2012-11-09",
-      "Storyline: Garrett confides dark secret to Frank",
-      "Character: Garrett Moore",
-      "Actor: Gregory Jbara",
-      "Answer fact: Garrett Moore"
-    ]
-  },
-  {
     "id": "tv_31020",
     "category": "TV",
     "topic": "Blue Bloods",
@@ -957,15 +921,15 @@ const questions = [
     "id": "tv_31030",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods, whose controversial actions force Frank to navigate NYPD politics while Danny hunts cartel members?",
+    "question": "What main-cast billing did Vanessa Ray receive for Blue Bloods Series 5 after being listed as a special guest star in Series 4?",
     "answers": [
-      "Mayor Poole's son's",
-      "An otherwise exemplary police lieutenant's",
-      "A civilian court clerk's",
-      "An undercover journalist's"
+      "Also starring",
+      "Executive producer",
+      "Narrator",
+      "Stunt coordinator"
     ],
-    "correctAnswer": "An otherwise exemplary police lieutenant's",
-    "difficulty": "Medium",
+    "correctAnswer": "Also starring",
+    "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
       "Television",
@@ -983,10 +947,10 @@ const questions = [
       "Episode: S05E01",
       "Episode title: Partners",
       "Original airdate: 2014-09-26",
-      "Storyline: Frank deals with exemplary lieutenant's controversial actions",
-      "Character: Frank Reagan",
-      "Actor: Tom Selleck",
-      "Answer fact: An otherwise exemplary police lieutenant's"
+      "Storyline: Vanessa Ray becomes an also-starring regular as Eddie Janko",
+      "Character: Eddie Janko",
+      "Actor: Vanessa Ray",
+      "Answer fact: Also starring"
     ]
   },
   {
@@ -1533,9 +1497,9 @@ const questions = [
     ]
   }
 ];
-const validOriginalIds = new Set(["tv_31004","tv_31005","tv_31006","tv_31007","tv_31008","tv_31009","tv_31010","tv_31011","tv_31012","tv_31013","tv_31014","tv_31015","tv_31016","tv_31017","tv_31018","tv_31019","tv_31020","tv_31021","tv_31022","tv_31023","tv_31024","tv_31025","tv_31026","tv_31027","tv_31028","tv_31029","tv_31030","tv_31031","tv_31034","tv_31035","tv_31036","tv_31037","tv_31038","tv_31039","tv_31040","tv_31041","tv_31042","tv_31043","tv_31044","tv_31045","tv_31048","tv_31051"]);
-if(questions.length!==42||new Set(questions.map(q=>q.id)).size!==42||
-new Set(questions.map(q=>q.question.toLowerCase())).size!==42||
+const validOriginalIds = new Set(["tv_31004","tv_31005","tv_31006","tv_31007","tv_31008","tv_31009","tv_31010","tv_31011","tv_31012","tv_31013","tv_31014","tv_31015","tv_31016","tv_31017","tv_31018","tv_31020","tv_31021","tv_31022","tv_31023","tv_31024","tv_31025","tv_31026","tv_31027","tv_31028","tv_31029","tv_31030","tv_31031","tv_31034","tv_31035","tv_31036","tv_31037","tv_31038","tv_31039","tv_31040","tv_31041","tv_31042","tv_31043","tv_31044","tv_31045","tv_31048","tv_31051"]);
+if(questions.length!==41||new Set(questions.map(q=>q.id)).size!==41||
+new Set(questions.map(q=>q.question.toLowerCase())).size!==41||
 questions.some(q=>!validOriginalIds.has(q.id)||q.category!=='TV'||q.topic!=='Blue Bloods'||
 !q.tags.includes('Programme: Blue Bloods (2010–2024)')||q.answers.length!==4||
 new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
