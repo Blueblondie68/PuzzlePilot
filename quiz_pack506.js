@@ -5326,14 +5326,14 @@ const storylineQuestions = [
     "id": "tv_43489",
     "category": "TV",
     "topic": "Bridgerton",
-    "question": "In Bridgerton (Series 1, Episode 4), who discovers Daphne and Simon kissing, leading to a threatened duel?",
+    "question": "In Bridgerton (Series 1, Episode 4), who attempts to warn Colin against Marina's courtship without exposing Marina's pregnancy?",
     "answers": [
+      "Daphne Bridgerton",
       "Lady Danbury",
-      "Lady Featherington",
-      "Anthony Bridgerton",
-      "Colin Bridgerton"
+      "Penelope Featherington",
+      "Queen Charlotte"
     ],
-    "correctAnswer": "Anthony Bridgerton",
+    "correctAnswer": "Penelope Featherington",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -5352,8 +5352,8 @@ const storylineQuestions = [
       "Episode: S01E04",
       "Episode title: An Affair of Honor",
       "Section: Storyline",
-      "Focus: Episode and character arc",
-      "Correct Fact: Anthony Bridgerton",
+      "Focus: Distinctive secondary storyline",
+      "Correct Fact: Penelope Featherington",
       "Comprehensive Storyline Audit: 23 November 2026"
     ]
   },
@@ -5816,14 +5816,14 @@ const storylineQuestions = [
     "id": "tv_43503",
     "category": "TV",
     "topic": "Bridgerton",
-    "question": "In Bridgerton (Series 2, Episode 5), what happens to the Sheffields' offer of money after the Sharmas' family arrangements are exposed?",
+    "question": "In Bridgerton (Series 2, Episode 5), why did the Sheffields originally disapprove of their daughter Mary's marriage?",
     "answers": [
-      "The Sheffields withdraw their financial support",
-      "The Sheffields double the dowry",
-      "The Sheffields give Kate their house",
-      "The queen confiscates the money"
+      "She married a man below their social rank",
+      "She married an actor from France",
+      "She refused to attend their ball",
+      "She married without informing the queen"
     ],
-    "correctAnswer": "The Sheffields withdraw their financial support",
+    "correctAnswer": "She married a man below their social rank",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -5842,8 +5842,8 @@ const storylineQuestions = [
       "Episode: S02E05",
       "Episode title: An Unthinkable Fate",
       "Section: Storyline",
-      "Focus: Episode and character arc",
-      "Correct Fact: The Sheffields withdraw their financial support",
+      "Focus: Distinctive secondary storyline",
+      "Correct Fact: She married a man below their social rank",
       "Comprehensive Storyline Audit: 23 November 2026"
     ]
   },
@@ -6551,14 +6551,14 @@ const storylineQuestions = [
     "id": "tv_43524",
     "category": "TV",
     "topic": "Bridgerton",
-    "question": "In Bridgerton (Series 4, Episode 1), what object does Benedict retain as a clue while seeking the Lady in Silver?",
+    "question": "In Bridgerton (Series 4, Episode 5), what does Violet initially suspect about Sophie's background when she notices Benedict's affection?",
     "answers": [
-      "A fan signed by Sophie",
-      "Her silver glove",
-      "A jewelled tiara",
-      "A scarf embroidered with a crest"
+      "That Sophie is a wealthy widow",
+      "That Sophie is a runaway gentlewoman",
+      "That Sophie is a palace governess",
+      "That Sophie is a visiting musician"
     ],
-    "correctAnswer": "Her silver glove",
+    "correctAnswer": "That Sophie is a runaway gentlewoman",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -6574,11 +6574,11 @@ const storylineQuestions = [
       "Written Quiz",
       "Series: 4",
       "Original release year: 2026",
-      "Episode: S04E01",
-      "Episode title: The Waltz",
+      "Episode: S04E05",
+      "Episode title: Yes or No",
       "Section: Storyline",
-      "Focus: Episode and character arc",
-      "Correct Fact: Her silver glove",
+      "Focus: Distinctive secondary storyline",
+      "Correct Fact: That Sophie is a runaway gentlewoman",
       "Comprehensive Storyline Audit: 23 November 2026"
     ]
   },
@@ -6656,14 +6656,14 @@ const storylineQuestions = [
     "id": "tv_43527",
     "category": "TV",
     "topic": "Bridgerton",
-    "question": "In Bridgerton (Series 4, Episode 3), who helps the injured Benedict enter My Cottage when the caretakers are absent?",
+    "question": "In Bridgerton (Series 4, Episode 2), what is Sophie's true relationship to the late Earl of Penwood?",
     "answers": [
-      "Sophie",
-      "Araminta",
-      "Rosamund",
-      "Lady Danbury"
+      "She is his daughter born outside marriage",
+      "She is his niece",
+      "She is his younger sister",
+      "She is his former governess"
     ],
-    "correctAnswer": "Sophie",
+    "correctAnswer": "She is his daughter born outside marriage",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -6679,11 +6679,11 @@ const storylineQuestions = [
       "Written Quiz",
       "Series: 4",
       "Original release year: 2026",
-      "Episode: S04E03",
-      "Episode title: The Field Next to the Other Road",
+      "Episode: S04E02",
+      "Episode title: Time Transfixed",
       "Section: Storyline",
-      "Focus: Episode and character arc",
-      "Correct Fact: Sophie",
+      "Focus: Distinctive secondary storyline",
+      "Correct Fact: She is his daughter born outside marriage",
       "Comprehensive Storyline Audit: 23 November 2026"
     ]
   },
