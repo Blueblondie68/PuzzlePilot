@@ -1,16 +1,19 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 545: Blue Heelers, Series 2 (1995).
-// 146 audited, story-specific questions across all 41 episodes; no padding or per-episode quotas.
-// IDs tv_32011–tv_32156; Pack 544 ended tv_32010.
-// Source: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-2/1000036269/
-// Cross-check: https://www.tvmaze.com/shows/7050/blue-heelers/episodeguide
-// Season/guest cast: https://en.wikipedia.org/wiki/Blue_Heelers_season_2
-// Notes: S02E16 uses TV Guide's 'Salutary Lessons' (TheTVDB lists 'The Lolita Blues').
-// S02E38 uses 'Juggling the Smoke' (TV Guide lists 'Juggling with Smoke').
-// S02E37 'Vow of Silence' airdate conflicts across listings; exact airdate deliberately not asserted.
-// Further episode check: https://www.rottentomatoes.com/tv/blue_heelers/s02/e32
-// UFO storyline: https://televisionau.com/2015/02/1995-february-18-24.html
-// Homecoming and Gina cast cross-check: TV Guide and Plex Season 2 episode summaries.
-// Coverage cut-off: S02E41 Brotherly Love (2), 21 Nov 1995.
+// Complete story/awards audit, 23 November 2026: 146 original questions retained,
+// 28 additional case, character, aftermath and ongoing-arc questions, 3 verified
+// 1996 TV Week Logie questions. 177 questions total across all 41 broadcast episodes.
+// Original IDs tv_32011–tv_32156; audit IDs tv_47691–tv_47721.
+// TV Guide detailed episode synopses: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-2/1000036269/
+// Official aired order and alternate titles: https://thetvdb.com/series/blue-heelers/allseasons/official
+// 1996 Silver Logie winner Lisa McCune, 1996 Gold Logie nominee Lisa McCune;
+// Gold Logie winner Ray Martin: https://televisionau.com/2021/11/tv-week-logie-awards-25-years-ago-11.html
+// Full recognition table: https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers
+// Follow long arcs: Rose's domestic abuse, Adam's HIV scare, Wayne and Roz's divorce, Sasha/Nick,
+// Maggie and PJ, Tom's shooting and recovery, PJ framed then defended by Maggie,
+// and Gina's assault inquiry in two-part finale (Sam cleared, Imperial worker suspected).
+// Episode naming conflicts: S02E16 Salutary Lessons/The Lolita Blues; S02E38 Juggling the Smoke/with Smoke.
+// S02E37 airdate disputed: original file deliberately avoids claiming an exact date.
+// No invented murder culprit or unjustified claim of solved case; no fixed per-episode quotas.
 'use strict';
 const questions = [
   {
@@ -5268,13 +5271,1132 @@ const questions = [
       "Actor: Grant Bowler",
       "Answer fact: The football grand final"
     ]
+  },
+  {
+    "id": "tv_47691",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what disappearance forms the main investigation in 'Without a Trace', alongside the UFO claims?",
+    "answers": [
+      "A married couple vanishes from their farm",
+      "Two travellers disappear from a station",
+      "A detective goes missing on a train",
+      "A young witness disappears from a school"
+    ],
+    "correctAnswer": "A married couple vanishes from their farm",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E01",
+      "Episode title: Without a Trace",
+      "Original airdate: 1995-02-21",
+      "Storyline: Middle-aged couple disappear from their farm as UFO sightings distract town",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: A married couple vanishes from their farm"
+    ]
+  },
+  {
+    "id": "tv_47692",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why does Adam face a frightening health test after confronting bouncer Paul Reynolds in 'A Question of Courage'?",
+    "answers": [
+      "Reynolds, who has HIV, bites him",
+      "He accidentally swallows contaminated food",
+      "He is struck by lightning",
+      "He inhales fumes in a warehouse fire"
+    ],
+    "correctAnswer": "Reynolds, who has HIV, bites him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E02",
+      "Episode title: A Question of Courage",
+      "Original airdate: 1995-02-28",
+      "Storyline: Adam fears HIV exposure after bite by Paul Reynolds",
+      "Character: Adam Cooper",
+      "Actor: Damian Walshe-Howling",
+      "Answer fact: Reynolds, who has HIV, bites him"
+    ]
+  },
+  {
+    "id": "tv_47693",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which crime makes 'Cruel Reality' an unprecedented investigation for Mount Thomas?",
+    "answers": [
+      "Its first bank robbery",
+      "Its first art theft",
+      "Its first train hijacking",
+      "Its first international fraud case"
+    ],
+    "correctAnswer": "Its first bank robbery",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E03",
+      "Episode title: Cruel Reality",
+      "Original airdate: 1995-03-07",
+      "Storyline: Mount Thomas experiences its first bank robbery",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Its first bank robbery"
+    ]
+  },
+  {
+    "id": "tv_47694",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, how does Alex Bailey know Tom Croydon and Chris Riley when he returns from prison in 'Mates'?",
+    "answers": [
+      "He is an old friend of both",
+      "He was previously Maggie's instructor",
+      "He is Tom's cousin",
+      "He used to work as Roz's chauffeur"
+    ],
+    "correctAnswer": "He is an old friend of both",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E04",
+      "Episode title: Mates",
+      "Original airdate: 1995-03-14",
+      "Storyline: Former friend Alex Bailey returns after ten years in prison",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: He is an old friend of both"
+    ]
+  },
+  {
+    "id": "tv_47695",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, whose continuing abuse does Detective Rose Egan admit after the Roper family tragedy in 'Breaking the Cycle'?",
+    "answers": [
+      "Her former husband Jeff",
+      "Tom Croydon",
+      "Detective PJ Hasham",
+      "Her fellow officer Wayne"
+    ],
+    "correctAnswer": "Her former husband Jeff",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E06",
+      "Episode title: Breaking the Cycle",
+      "Original airdate: 1995-03-28",
+      "Storyline: Rose acknowledges ongoing violence from ex-husband Jeff",
+      "Character: Rose Egan",
+      "Actor: Dale Stevens",
+      "Answer fact: Her former husband Jeff"
+    ]
+  },
+  {
+    "id": "tv_47696",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which officer shares the Highway Patrol pursuit with Wayne that ends in motorcyclist Billy Peters's death?",
+    "answers": [
+      "Wallace",
+      "Faulkner",
+      "Adam Cooper",
+      "Monica Draper"
+    ],
+    "correctAnswer": "Wallace",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E07",
+      "Episode title: Heavy Traffic",
+      "Original airdate: 1995-04-04",
+      "Storyline: Wayne and Highway Patrol officer Wallace pursue motorcyclist Billy Peters",
+      "Character: Wayne Patterson",
+      "Actor: Grant Bowler",
+      "Answer fact: Wallace"
+    ]
+  },
+  {
+    "id": "tv_47697",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what responsibility complicates the search for Maggie's stolen gun in 'Gun Law'?",
+    "answers": [
+      "Supervising Inspector Faulkner's work-experience nephew",
+      "Preparing a sergeant's retirement party",
+      "Escorting a television presenter",
+      "Guarding a prisoner from interstate"
+    ],
+    "correctAnswer": "Supervising Inspector Faulkner's work-experience nephew",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E08",
+      "Episode title: Gun Law",
+      "Original airdate: 1995-04-11",
+      "Storyline: Station mentors Faulkner's nephew while searching for stolen police weapon",
+      "Character: Nick Schultz",
+      "Actor: William McInnes",
+      "Answer fact: Supervising Inspector Faulkner's work-experience nephew"
+    ]
+  },
+  {
+    "id": "tv_47698",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, how is Sasha Peters connected to the tragedy Nick investigated before their romance in 'Ripples on the Pond'?",
+    "answers": [
+      "She is Billy Peters's widow",
+      "She is Billy Peters's defence lawyer",
+      "She is Billy Peters's police partner",
+      "She is Billy Peters's elder sister"
+    ],
+    "correctAnswer": "She is Billy Peters's widow",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E09",
+      "Episode title: Ripples on the Pond",
+      "Original airdate: 1995-04-18",
+      "Storyline: Nick grows close to Sasha widow of traffic pursuit victim Billy Peters",
+      "Character: Nick Schultz",
+      "Actor: William McInnes",
+      "Answer fact: She is Billy Peters's widow"
+    ]
+  },
+  {
+    "id": "tv_47699",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which business is at the centre of the pie-contamination inquiry in 'Stop for a Bite'?",
+    "answers": [
+      "A well-established local bakery",
+      "A newly opened cinema",
+      "A railway restaurant",
+      "A travelling pet shop"
+    ],
+    "correctAnswer": "A well-established local bakery",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E11",
+      "Episode title: Stop for a Bite",
+      "Original airdate: 1995-05-02",
+      "Storyline: Mouse remains in pie puts established bakery under investigation",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: A well-established local bakery"
+    ]
+  },
+  {
+    "id": "tv_47700",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which secondary opportunity does Nick pursue while the death of backpacker Eva is investigated?",
+    "answers": [
+      "A watchman position in Mount Thomas",
+      "A job as a district attorney",
+      "A place on a touring football team",
+      "A transfer to the London police"
+    ],
+    "correctAnswer": "A watchman position in Mount Thomas",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E12",
+      "Episode title: The Long and Winding Road",
+      "Original airdate: 1995-05-09",
+      "Storyline: Nick pursues a local watchman position amid backpacker murder",
+      "Character: Nick Schultz",
+      "Actor: William McInnes",
+      "Answer fact: A watchman position in Mount Thomas"
+    ]
+  },
+  {
+    "id": "tv_47701",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does the investigating party discover at the crash site beyond the surviving local politician in 'The Old School Tie'?",
+    "answers": [
+      "A young woman has died in the plane crash",
+      "An uninjured pilot has flown away",
+      "A cache of stolen racehorses",
+      "A live bomb in the cargo hold"
+    ],
+    "correctAnswer": "A young woman has died in the plane crash",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E13",
+      "Episode title: The Old School Tie",
+      "Original airdate: 1995-05-16",
+      "Storyline: Politician is found dragging dead young woman from light-plane wreckage",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: A young woman has died in the plane crash"
+    ]
+  },
+  {
+    "id": "tv_47702",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, how does Nick respond when visiting homicide detectives try to take over the unidentified-body case in 'Dead Ringer'?",
+    "answers": [
+      "He insists on continuing his own murder inquiry",
+      "He immediately closes the station",
+      "He volunteers to leave Mount Thomas",
+      "He appoints Adam as police commissioner"
+    ],
+    "correctAnswer": "He insists on continuing his own murder inquiry",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E15",
+      "Episode title: Dead Ringer",
+      "Original airdate: 1995-05-30",
+      "Storyline: Acting station commander Nick resists being sidelined by homicide officers",
+      "Character: Nick Schultz",
+      "Actor: William McInnes",
+      "Answer fact: He insists on continuing his own murder inquiry"
+    ]
+  },
+  {
+    "id": "tv_47703",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which relative of Inspector Faulkner is also reported missing in the investigation of a schoolgirl living with a teacher?",
+    "answers": [
+      "His niece Kim",
+      "His daughter Sasha",
+      "His cousin Holly",
+      "His mother Monica"
+    ],
+    "correctAnswer": "His niece Kim",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E16",
+      "Episode title: Salutary Lessons",
+      "Original airdate: 1995-06-06",
+      "Storyline: Faulkner niece Kim found living with teacher amid teenage safeguarding inquiry",
+      "Character: Wayne Patterson",
+      "Actor: Grant Bowler",
+      "Answer fact: His niece Kim"
+    ]
+  },
+  {
+    "id": "tv_47704",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what makes Wayne's affair in 'Trust Me' a police matter, rather than only a relationship problem?",
+    "answers": [
+      "The married woman's husband is beaten up",
+      "The woman confesses to an armed robbery",
+      "Her husband is found with stolen antiquities",
+      "She disappears from a police hospital"
+    ],
+    "correctAnswer": "The married woman's husband is beaten up",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E18",
+      "Episode title: Trust Me",
+      "Original airdate: 1995-06-20",
+      "Storyline: Wayne's affair becomes public after married woman's husband is assaulted",
+      "Character: Wayne Patterson",
+      "Actor: Grant Bowler",
+      "Answer fact: The married woman's husband is beaten up"
+    ]
+  },
+  {
+    "id": "tv_47705",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which family becomes a focus of suspicion after their five-year-old daughter disappears in 'With Prejudice'?",
+    "answers": [
+      "The Rhinehardts",
+      "The Kennys",
+      "The Pattersons",
+      "The Belfantis"
+    ],
+    "correctAnswer": "The Rhinehardts",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E21",
+      "Episode title: With Prejudice",
+      "Original airdate: 1995-07-11",
+      "Storyline: Family of missing five-year-old girl falls under public and police suspicion",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: The Rhinehardts"
+    ]
+  },
+  {
+    "id": "tv_47706",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what are internal investigators specifically probing when they descend on Mount Thomas in 'Paranoia (1)'?",
+    "answers": [
+      "Police corruption and narcotics smuggling",
+      "Improper use of a sports-club minibus",
+      "Theft of paintings from an art museum",
+      "A disputed council planning application"
+    ],
+    "correctAnswer": "Police corruption and narcotics smuggling",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E22",
+      "Episode title: Paranoia (1)",
+      "Original airdate: 1995-07-18",
+      "Storyline: Maggie's brother joins inquiry into Mount Thomas corruption and narcotics allegations",
+      "Character: Michael Doyle",
+      "Actor: Michael Doyle (police colleague)",
+      "Answer fact: Police corruption and narcotics smuggling"
+    ]
+  },
+  {
+    "id": "tv_47707",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what happens to Sergeant Tom Croydon after the gunman wounds him in the Imperial Hotel siege?",
+    "answers": [
+      "He survives and recovers",
+      "He dies before reaching hospital",
+      "He takes a permanent transfer to Melbourne",
+      "He loses his police rank"
+    ],
+    "correctAnswer": "He survives and recovers",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E23",
+      "Episode title: Paranoia (2)",
+      "Original airdate: 1995-07-25",
+      "Storyline: Tom survives pub siege shooting and recuperates",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: He survives and recovers"
+    ]
+  },
+  {
+    "id": "tv_47708",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why must police handle a seemingly ordinary stolen-property investigation especially sensitively in 'The Collector'?",
+    "answers": [
+      "The property comprises Aboriginal cultural artefacts",
+      "The stolen item is a police commissioner's badge",
+      "The suspect is an overseas diplomat",
+      "The theft occurs inside a children's hospital"
+    ],
+    "correctAnswer": "The property comprises Aboriginal cultural artefacts",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E24",
+      "Episode title: The Collector",
+      "Original airdate: 1995-08-01",
+      "Storyline: Stolen Aboriginal artefacts create cultural sensitivities in robbery inquiry",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: The property comprises Aboriginal cultural artefacts"
+    ]
+  },
+  {
+    "id": "tv_47709",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what are Maggie and Wayne studying for while Nick's involvement with a graffiti artist leads to tragedy in 'The Best of Rivals'?",
+    "answers": [
+      "The senior-constable promotion examination",
+      "The police commissioner's entrance exam",
+      "A university medical course",
+      "A firearms export qualification"
+    ],
+    "correctAnswer": "The senior-constable promotion examination",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E28",
+      "Episode title: The Best of Rivals",
+      "Original airdate: 1995-08-29",
+      "Storyline: Maggie Wayne prepare for senior constable exam amid Nick's conflicting actions",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: The senior-constable promotion examination"
+    ]
+  },
+  {
+    "id": "tv_47710",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why is Wayne in danger of losing his career during 'Double Jeopardy (2)'?",
+    "answers": [
+      "Kate Kenny accuses him of sexual harassment",
+      "He is arrested for firearms trafficking",
+      "He is wrongly declared dead",
+      "He loses his annual licence to drive"
+    ],
+    "correctAnswer": "Kate Kenny accuses him of sexual harassment",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E31",
+      "Episode title: Double Jeopardy (2)",
+      "Original airdate: 1995-09-19",
+      "Storyline: Harassment allegation by Kate Kenny threatens Wayne after police fail to protect her",
+      "Character: Wayne Patterson",
+      "Actor: Grant Bowler",
+      "Answer fact: Kate Kenny accuses him of sexual harassment"
+    ]
+  },
+  {
+    "id": "tv_47711",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what puts a family at risk when Mount Thomas becomes obsessed with gold prospecting in 'The Mongrel Factor'?",
+    "answers": [
+      "A publicity stunt spirals out of control",
+      "A visiting football coach steals the medals",
+      "A domestic argument over a missing baby",
+      "A poisoned restaurant meal"
+    ],
+    "correctAnswer": "A publicity stunt spirals out of control",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E32",
+      "Episode title: The Mongrel Factor",
+      "Original airdate: 1995-09-26",
+      "Storyline: Gold fever and ill-judged publicity stunt endanger family",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: A publicity stunt spirals out of control"
+    ]
+  },
+  {
+    "id": "tv_47712",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, whose safety makes Nick revisit his own traumatic experiences during the commune investigation in 'Tough Love'?",
+    "answers": [
+      "Tom's daughter Susan",
+      "Maggie's brother Michael",
+      "Roz Patterson",
+      "Gina Belfanti"
+    ],
+    "correctAnswer": "Tom's daughter Susan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E35",
+      "Episode title: Tough Love",
+      "Original airdate: 1995-10-17",
+      "Storyline: Nick relives trauma to rescue Susan from dangerous commune member",
+      "Character: Nick Schultz",
+      "Actor: William McInnes",
+      "Answer fact: Tom's daughter Susan"
+    ]
+  },
+  {
+    "id": "tv_47713",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does Maggie aim to prove after stolen bank money is found in PJ's house in 'A Question of Loyalties'?",
+    "answers": [
+      "PJ has been framed",
+      "PJ has changed his identity",
+      "PJ is secretly a federal agent",
+      "PJ never entered the bank"
+    ],
+    "correctAnswer": "PJ has been framed",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E36",
+      "Episode title: A Question of Loyalties",
+      "Original airdate: 1995-10-24",
+      "Storyline: Maggie and Pat Doyle uncover effort to frame suspended PJ",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: PJ has been framed"
+    ]
+  },
+  {
+    "id": "tv_47714",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who first names Father Michael Carlisle as a suspect in the investigation concerning runaway teenager Jade?",
+    "answers": [
+      "Jade's mother's boyfriend",
+      "Jade's school headteacher",
+      "Inspector Faulkner",
+      "A local farmer's son"
+    ],
+    "correctAnswer": "Jade's mother's boyfriend",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E37",
+      "Episode title: Vow of Silence",
+      "Original airdate: 1995 (disputed sources)",
+      "Storyline: Mother's boyfriend implicates priest in suspected abuse of runaway Jade",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Jade's mother's boyfriend"
+    ]
+  },
+  {
+    "id": "tv_47715",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which two members of the D'Angelo family become important friends to Wayne in 'The Discount Suit'?",
+    "answers": [
+      "Sal and his son Tony",
+      "Joe and his wife Kate",
+      "Tom and his sister Susan",
+      "Sasha and her brother Nick"
+    ],
+    "correctAnswer": "Sal and his son Tony",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E39",
+      "Episode title: The Discount Suit",
+      "Original airdate: 1995-11-07",
+      "Storyline: Wayne befriends Sal D'Angelo and Sal's son Tony while restoring motorcycle",
+      "Character: Wayne Patterson",
+      "Actor: Grant Bowler",
+      "Answer fact: Sal and his son Tony"
+    ]
+  },
+  {
+    "id": "tv_47716",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does Adam eventually admit about his encounter with Gina before her assault in 'Brotherly Love (1)'?",
+    "answers": [
+      "They had sex after the police Christmas party",
+      "They had robbed the Imperial Hotel",
+      "He had arrested her for theft",
+      "He had asked her to transfer to Melbourne"
+    ],
+    "correctAnswer": "They had sex after the police Christmas party",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E40",
+      "Episode title: Brotherly Love (1)",
+      "Original airdate: 1995-11-14",
+      "Storyline: Adam admits consensual encounter with Gina before her later assault",
+      "Character: Adam Cooper",
+      "Actor: Damian Walshe-Howling",
+      "Answer fact: They had sex after the police Christmas party"
+    ]
+  },
+  {
+    "id": "tv_47717",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what major development shifts suspicion away from Adam's brother Sam in the Series 2 finale?",
+    "answers": [
+      "Police clear Sam and focus on a man employed at the Imperial",
+      "Sam wins a police promotion",
+      "Sam confesses to a separate bank robbery",
+      "Gina withdraws her allegation"
+    ],
+    "correctAnswer": "Police clear Sam and focus on a man employed at the Imperial",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E41",
+      "Episode title: Brotherly Love (2)",
+      "Original airdate: 1995-11-21",
+      "Storyline: Sam cleared of assault; investigators suspect Imperial employee",
+      "Character: Sam Cooper",
+      "Actor: Sam Cooper (guest character)",
+      "Answer fact: Police clear Sam and focus on a man employed at the Imperial"
+    ]
+  },
+  {
+    "id": "tv_47718",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why does Maggie face particular danger in the finale's attempted arrest of Gina's attacker?",
+    "answers": [
+      "She is used as bait even after the operation is called off",
+      "She falls into a mineshaft during a search",
+      "She has accidentally swallowed a sedative",
+      "She is detained by an Internal Affairs inspector"
+    ],
+    "correctAnswer": "She is used as bait even after the operation is called off",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Broadcast year: 1995",
+      "Episode: S02E41",
+      "Episode title: Brotherly Love (2)",
+      "Original airdate: 1995-11-21",
+      "Storyline: Maggie acts as bait while cancelled sting leaves her vulnerable",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: She is used as bait even after the operation is called off"
+    ]
+  },
+  {
+    "id": "tv_47719",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actress won the 1996 TV Week Silver Logie for Most Popular Actress?",
+    "answers": [
+      "Lisa McCune",
+      "Ann Burbrook",
+      "Julie Nihill",
+      "Dale Stevens"
+    ],
+    "correctAnswer": "Lisa McCune",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Award ceremony: 1996 TV Week Logie Awards",
+      "Award: Most Popular Actress (Silver Logie)",
+      "Award result: Won",
+      "Award recipient: Lisa McCune",
+      "Award question: Most Popular Actress (Silver Logie) - Won",
+      "Answer fact: Lisa McCune",
+      "Award source: https://televisionau.com/2021/11/tv-week-logie-awards-25-years-ago-11.html",
+      "Broadcast year: 1995"
+    ]
+  },
+  {
+    "id": "tv_47720",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers star was nominated for the 1996 Gold Logie for Most Popular Personality on Australian Television?",
+    "answers": [
+      "Lisa McCune",
+      "Rachel Blakely",
+      "Jennifer Botica",
+      "Libby Tanner"
+    ],
+    "correctAnswer": "Lisa McCune",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Award ceremony: 1996 TV Week Logie Awards",
+      "Award: Most Popular Personality (Gold Logie)",
+      "Award result: Nominated",
+      "Award recipient: Lisa McCune",
+      "Award question: Most Popular Personality (Gold Logie) - Nominated",
+      "Answer fact: Lisa McCune",
+      "Award source: https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers",
+      "Broadcast year: 1995"
+    ]
+  },
+  {
+    "id": "tv_47721",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Who won the 1996 Gold Logie instead of the nominated Blue Heelers actress Lisa McCune?",
+    "answers": [
+      "Ray Martin",
+      "Daryl Somers",
+      "John Wood",
+      "Dieter Brummer"
+    ],
+    "correctAnswer": "Ray Martin",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Police",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 2",
+      "Award ceremony: 1996 TV Week Logie Awards",
+      "Award: Most Popular Personality (Gold Logie)",
+      "Award result: Blue Heelers nominated; Ray Martin won",
+      "Award recipient: Lisa McCune",
+      "Award question: Most Popular Personality (Gold Logie) - Blue Heelers nominated; Ray Martin won",
+      "Answer fact: Ray Martin",
+      "Award source: https://televisionau.com/2021/11/tv-week-logie-awards-25-years-ago-11.html",
+      "Broadcast year: 1995"
+    ]
   }
 ];
-if(questions.length!==146||new Set(questions.map(x=>x.id)).size!==questions.length||
-new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
-questions.some((x,i)=>x.id!=='tv_'+(32011+i)||x.category!=='TV'||x.topic!=='Blue Heelers'||
-x.answers.length!==4||new Set(x.answers.map(y=>y.toLowerCase())).size!==4||
-x.answers.filter(y=>y===x.correctAnswer).length!==1||x.tags.length<17||
-!x.tags.some(t=>t.startsWith('Episode: S02E'))||x.dailyEligible!==true))
-throw Error('Blue Heelers Pack 545 integrity check failed');
-module.exports = questions;
+
+if(questions.length!==177||new Set(questions.map(q=>q.id)).size!==questions.length||
+new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
+questions.some((q,i)=>((i<146)?q.id!=='tv_'+(32011+i):q.id!=='tv_'+(47691+i-146))||
+q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
+new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+!q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length<17||
+new Set(q.tags).size!==q.tags.length||
+!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 545 validation failed');
+module.exports=questions;
