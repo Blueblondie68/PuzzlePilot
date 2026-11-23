@@ -1,13 +1,24 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 547: Blue Heelers, Series 4 (1997).
-// 297 researched distinct story-specific questions across all 42 episodes; no quotas or padding.
-// IDs tv_32320–tv_32616; Pack 546 ended at tv_32319.
-// Episode plots: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-4/1000036269/
-// Expanded synopses: https://thetvdb.com/series/blue-heelers/allseasons/official
-// Episode titles and broadcast dates: https://thetvdb.com/series/blue-heelers/seasons/official/4
-// Cast cross-check: https://en.wikipedia.org/wiki/Blue_Heelers_season_4
-// Corrected source variations: 'Under Siege' (not 'Under Seige'); 'Every Contact Leaves Its Trace';
-// Robbie Doyle in the 1997 episodes played by Brett Climo (not earlier portrayal David Wenham).
-// Coverage cut-off S04E42 'Possession', 25 November 1997.
+// Full storyline and awards audit 23 November 2026: 297 existing questions preserved;
+// 19 new non-redundant story/character/case-outcome questions and 13 awards questions.
+// 329 questions covering all 42 episodes. Original IDs tv_32320–tv_32616;
+// audit additions tv_47743–tv_47774.
+// Story/detail: https://www.tvguide.com/tvshows/blue-heelers/episodes-season-4/1000036269/
+// Episode air dates: https://thetvdb.com/series/blue-heelers/seasons/official/4
+// Original series context: https://en.wikipedia.org/wiki/Blue_Heelers_season_4
+// 1998 TV Week Logie wins/nominees: https://televisionau.com/2023/07/tv-week-logie-awards-25-years-ago-13.html
+// 1997 Australian Writers' Guild AWGIE winners: https://awg.com.au/sample-page/previous-awgie-award-winners-1990s/
+// 1998 AFI episode nomination: https://en.wikipedia.org/wiki/1998_Australian_Film_Institute_Awards
+// 1998 People's Choice results and 1998 Logie nominations:
+// https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers
+// Verified recognition: 1997 AWGIE WIN 'Reports of Damage and Loss', writer John Banas;
+// 1998 AFI NOMINATION 'Collateral Damage' (producer Riccardo Pellizzeri);
+// 1998 Logies: 5 wins (Gold Lisa McCune, Silver Actor Martin Sacks, Silver Actress Lisa McCune,
+// Most Popular Program and Most Popular Series), plus actor nominations.
+// 1998 People's Choice: 3 wins (Lisa McCune x2 and Blue Heelers), male-star nominations.
+// Narratives: Adam/Stacey wedding and affair fallout; Dash helps locate wounded Adam; Robbie addiction;
+// Maggie/PJ and hidden evidence; Alice James identity; public order, criminal investigation and family consequences.
+// No forced question count by episode or manufactured resolutions.
 'use strict';
 const questions = [
   {
@@ -10701,13 +10712,1183 @@ const questions = [
       "Actor: Lisa McCune",
       "Answer fact: Maggie and PJ"
     ]
+  },
+  {
+    "id": "tv_47743",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which tradesman becomes a further suspect when police investigate Leonie's pregnancy in 'Immaculate Misconception'?",
+    "answers": [
+      "Plumber Charlie Drake",
+      "Farmer Keith Purvis",
+      "Prospector Hec O'Farrell",
+      "Teacher Guy Ashfield"
+    ],
+    "correctAnswer": "Plumber Charlie Drake",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E04",
+      "Episode title: Immaculate Misconception",
+      "Original airdate: 1997-02-18",
+      "Storyline: Plumber Charlie Drake joins paternity inquiry amid blocked station toilets",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: Plumber Charlie Drake"
+    ]
+  },
+  {
+    "id": "tv_47744",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what prevents Nick and Adam from rescuing the two sisters together during the floods in 'Reports of Damage and Loss'?",
+    "answers": [
+      "Separate emergencies force them to help one girl each",
+      "Their police vehicle is stolen by a fugitive",
+      "An armed gang traps them in the station",
+      "One officer is suspended during the rescue"
+    ],
+    "correctAnswer": "Separate emergencies force them to help one girl each",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E05",
+      "Episode title: Reports of Damage and Loss",
+      "Original airdate: 1997-02-25",
+      "Storyline: Nick and Adam forced apart to save sisters caught in storm drain and car",
+      "Character: Nick Schultz",
+      "Actor: William McInnes",
+      "Answer fact: Separate emergencies force them to help one girl each"
+    ]
+  },
+  {
+    "id": "tv_47745",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who asks the police for help because his son has become obsessed with heavy-metal band MCD?",
+    "answers": [
+      "The boy's father",
+      "The boy's football coach",
+      "The town magistrate",
+      "A visiting pop singer"
+    ],
+    "correctAnswer": "The boy's father",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E08",
+      "Episode title: Bloodstained Angels",
+      "Original airdate: 1997-03-18",
+      "Storyline: Father asks police to intervene in son's obsession with heavy metal band",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: The boy's father"
+    ]
+  },
+  {
+    "id": "tv_47746",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why does Joanne Mason's return to her violent husband breach the protection arrangements in 'Charity Begins at Home'?",
+    "answers": [
+      "She invites Andrew to the refuge despite an intervention order",
+      "Her husband is a serving police detective",
+      "She moves to a house owned by the mayor",
+      "She writes her address in a newspaper advertisement"
+    ],
+    "correctAnswer": "She invites Andrew to the refuge despite an intervention order",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E09",
+      "Episode title: Charity Begins at Home",
+      "Original airdate: 1997-04-08",
+      "Storyline: Joanne permits Andrew into protected accommodation despite intervention order",
+      "Character: Joanne Mason",
+      "Actor: Joanne Mason (guest character)",
+      "Answer fact: She invites Andrew to the refuge despite an intervention order"
+    ]
+  },
+  {
+    "id": "tv_47747",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what major personal milestone do Adam Cooper and Stacey Norse reach in 'Fool for Love'?",
+    "answers": [
+      "They get married",
+      "They announce a separation",
+      "They adopt a teenage boy",
+      "They both transfer to Melbourne"
+    ],
+    "correctAnswer": "They get married",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E10",
+      "Episode title: Fool for Love",
+      "Original airdate: 1997-04-15",
+      "Storyline: Adam and Stacey marry in spite of dating agency case disrupting ceremony",
+      "Character: Adam Cooper",
+      "Actor: Damian Walshe-Howling",
+      "Answer fact: They get married"
+    ]
+  },
+  {
+    "id": "tv_47748",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what two connections does Deanna have to the old bullion robbery investigated in 'Fool's Gold (2)'?",
+    "answers": [
+      "She is Jamie Burgess's girlfriend and the dead guard's widow",
+      "She is a police officer and a mine inspector",
+      "She is Hec's daughter and Bert's sister",
+      "She is Maggie's aunt and Matt's solicitor"
+    ],
+    "correctAnswer": "She is Jamie Burgess's girlfriend and the dead guard's widow",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E13",
+      "Episode title: Fool's Gold (2)",
+      "Original airdate: 1997-05-06",
+      "Storyline: Deanna both involved with Burgess and widow of guard killed during heist",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: She is Jamie Burgess's girlfriend and the dead guard's widow"
+    ]
+  },
+  {
+    "id": "tv_47749",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, whose remains are actually buried in the grave marked for Alice James's supposed brother George in 'Grave Matters'?",
+    "answers": [
+      "Alice's secret lover Walter Starling",
+      "Her long-lost child Jed Russell",
+      "The local priest's grandfather",
+      "A missing gold prospector"
+    ],
+    "correctAnswer": "Alice's secret lover Walter Starling",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E14",
+      "Episode title: Grave Matters",
+      "Original airdate: 1997-05-13",
+      "Storyline: False George James grave conceals secret lover Walter Starling",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: Alice's secret lover Walter Starling"
+    ]
+  },
+  {
+    "id": "tv_47750",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, where have Susan Croydon and Andy Maxwell been when Tom fears his daughter has been harmed in 'Sick Puppy'?",
+    "answers": [
+      "They have gone for help after a road accident",
+      "They were held in an abandoned mine",
+      "They were secretly married in Melbourne",
+      "They had joined a protest outside Parliament"
+    ],
+    "correctAnswer": "They have gone for help after a road accident",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E23",
+      "Episode title: Sick Puppy",
+      "Original airdate: 1997-07-15",
+      "Storyline: Susan and Andy hike for help after sideswipe accident",
+      "Character: Susan Croydon",
+      "Actor: Jacinta Oliver-Cook",
+      "Answer fact: They have gone for help after a road accident"
+    ]
+  },
+  {
+    "id": "tv_47751",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what discovery upends the police theory about missing mother Domenica Bassetti in 'Sisterly Love'?",
+    "answers": [
+      "The female burglar shot by Biggins is not Domenica",
+      "The principal confesses that he is Domenica",
+      "All the missing property belonged to the police",
+      "The school pupils were actually undercover officers"
+    ],
+    "correctAnswer": "The female burglar shot by Biggins is not Domenica",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E24",
+      "Episode title: Sisterly Love",
+      "Original airdate: 1997-07-22",
+      "Storyline: Shot female burglar is not missing Domenica Bassetti",
+      "Character: PJ Hasham",
+      "Actor: Martin Sacks",
+      "Answer fact: The female burglar shot by Biggins is not Domenica"
+    ]
+  },
+  {
+    "id": "tv_47752",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who admits trapping Molly in the changing rooms of her workplace during 'Can't Take a Joke'?",
+    "answers": [
+      "A male apprentice at the panel-beating shop",
+      "Molly's university lecturer",
+      "A visiting traffic policeman",
+      "Her employer's teenage daughter"
+    ],
+    "correctAnswer": "A male apprentice at the panel-beating shop",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E25",
+      "Episode title: Can't Take a Joke",
+      "Original airdate: 1997-07-29",
+      "Storyline: Male apprentice acknowledges locking bullied Molly in changing room",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: A male apprentice at the panel-beating shop"
+    ]
+  },
+  {
+    "id": "tv_47753",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, how does Dash help locate Adam after he disappears and is found with a gunshot wound in 'Every Contact Leaves Its Trace'?",
+    "answers": [
+      "She uses her knowledge of the Mount Thomas countryside",
+      "She traces a television interview",
+      "She follows a boat through the harbour",
+      "She asks the mayor to release phone records"
+    ],
+    "correctAnswer": "She uses her knowledge of the Mount Thomas countryside",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E26",
+      "Episode title: Every Contact Leaves Its Trace",
+      "Original airdate: 1997-08-05",
+      "Storyline: Dash uses local geography knowledge to find critically wounded Adam",
+      "Character: Dash McKinley",
+      "Actor: Tasma Walton",
+      "Answer fact: She uses her knowledge of the Mount Thomas countryside"
+    ]
+  },
+  {
+    "id": "tv_47754",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, where is Adam Cooper recovering while Maggie and PJ investigate the resort protest in 'Playing Games'?",
+    "answers": [
+      "In hospital",
+      "At the police academy",
+      "In a Queensland prison",
+      "At a remote cattle station"
+    ],
+    "correctAnswer": "In hospital",
+    "difficulty": "Easy",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E27",
+      "Episode title: Playing Games",
+      "Original airdate: 1997-08-12",
+      "Storyline: Adam recuperates in hospital after shooting during previous episode",
+      "Character: Adam Cooper",
+      "Actor: Damian Walshe-Howling",
+      "Answer fact: In hospital"
+    ]
+  },
+  {
+    "id": "tv_47755",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what separate threat to Adam Cooper's police career does Dash investigate during 'Closing Ranks'?",
+    "answers": [
+      "A possible civil lawsuit over his assault of apprentice Damian",
+      "A charge of falsifying his firearms licence",
+      "An accusation of importing stolen paintings",
+      "A claim that he bribed a hospital doctor"
+    ],
+    "correctAnswer": "A possible civil lawsuit over his assault of apprentice Damian",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E30",
+      "Episode title: Closing Ranks",
+      "Original airdate: 1997-09-02",
+      "Storyline: Dash probes claim over apprentice assault as Adam faces civil action",
+      "Character: Dash McKinley",
+      "Actor: Tasma Walton",
+      "Answer fact: A possible civil lawsuit over his assault of apprentice Damian"
+    ]
+  },
+  {
+    "id": "tv_47756",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which relative of Maggie Doyle becomes a suspect while officers try to find a missing girl in 'The All-Seeing Eye'?",
+    "answers": [
+      "Her brother Robbie",
+      "Her father Pat",
+      "Her partner PJ",
+      "Her cousin Dominic"
+    ],
+    "correctAnswer": "Her brother Robbie",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E35",
+      "Episode title: The All-Seeing Eye",
+      "Original airdate: 1997-10-07",
+      "Storyline: Robbie falls under suspicion in child kidnap inquiry as family tension grows",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: Her brother Robbie"
+    ]
+  },
+  {
+    "id": "tv_47757",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what does Robbie Doyle admit taking from Dash McKinley during his addiction troubles in 'The Big Picture'?",
+    "answers": [
+      "Her CD player",
+      "Her police revolver",
+      "Her squad car",
+      "Her bank card"
+    ],
+    "correctAnswer": "Her CD player",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E38",
+      "Episode title: The Big Picture",
+      "Original airdate: 1997-10-28",
+      "Storyline: Robbie admits borrowing Dash's CD player despite his relapse risk",
+      "Character: Robbie Doyle",
+      "Actor: Brett Climo",
+      "Answer fact: Her CD player"
+    ]
+  },
+  {
+    "id": "tv_47758",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, which local character do police eventually identify as the illegal starting-price bookmaker in 'Settlement Postponed'?",
+    "answers": [
+      "Compo Hayes",
+      "Celia Donald",
+      "Stacker Nicholl",
+      "Chris Riley"
+    ],
+    "correctAnswer": "Compo Hayes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E39",
+      "Episode title: Settlement Postponed",
+      "Original airdate: 1997-11-04",
+      "Storyline: Compo exposed as illicit SP bookmaker when all other punters listed",
+      "Character: Nick Schultz",
+      "Actor: William McInnes",
+      "Answer fact: Compo Hayes"
+    ]
+  },
+  {
+    "id": "tv_47759",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, who leaves Thea Copeland's alternative-treatment clinic with Robbie Doyle during 'Settlement Postponed'?",
+    "answers": [
+      "Compo Hayes",
+      "PJ Hasham",
+      "Nick Schultz",
+      "Walter Starling"
+    ],
+    "correctAnswer": "Compo Hayes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E39",
+      "Episode title: Settlement Postponed",
+      "Original airdate: 1997-11-04",
+      "Storyline: Robbie and Compo abscond from treatment clinic together",
+      "Character: Maggie Doyle",
+      "Actor: Lisa McCune",
+      "Answer fact: Compo Hayes"
+    ]
+  },
+  {
+    "id": "tv_47760",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, what finally makes Rosie stop menacing the woman she has pursued in a road-rage incident?",
+    "answers": [
+      "Seeing a baby in the back seat",
+      "Recognising a police officer in the passenger seat",
+      "Finding a military medal on the dashboard",
+      "Realising the car contains stolen cash"
+    ],
+    "correctAnswer": "Seeing a baby in the back seat",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E40",
+      "Episode title: Containing the Rage",
+      "Original airdate: 1997-11-11",
+      "Storyline: Rosie stops road rage when she notices a child in mother's car",
+      "Character: Dash McKinley",
+      "Actor: Tasma Walton",
+      "Answer fact: Seeing a baby in the back seat"
+    ]
+  },
+  {
+    "id": "tv_47761",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "In Blue Heelers, why must one accused person represent herself in court during 'The Civil Dead'?",
+    "answers": [
+      "Legal-aid cutbacks leave too few appointed lawyers",
+      "Her legal counsel has joined the police",
+      "She has already passed the bar exam",
+      "The mayor has banned all defence lawyers"
+    ],
+    "correctAnswer": "Legal-aid cutbacks leave too few appointed lawyers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Broadcast year: 1997",
+      "Episode: S04E41",
+      "Episode title: The Civil Dead",
+      "Original airdate: 1997-11-18",
+      "Storyline: Legal aid shortage forces defendant to represent herself in court",
+      "Character: Tom Croydon",
+      "Actor: John Wood",
+      "Answer fact: Legal-aid cutbacks leave too few appointed lawyers"
+    ]
+  },
+  {
+    "id": "tv_47762",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actress won the 1998 Gold Logie for Most Popular Personality on Australian Television?",
+    "answers": [
+      "Lisa McCune",
+      "Julie Nihill",
+      "Tasma Walton",
+      "Ann Burbrook"
+    ],
+    "correctAnswer": "Lisa McCune",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 TV Week Logie Awards",
+      "Award: Gold Logie — Most Popular Personality",
+      "Award result: Won",
+      "Award recipient: Lisa McCune",
+      "Award question: Gold Logie — Most Popular Personality / Won / Lisa McCune",
+      "Answer fact: Lisa McCune",
+      "Award source: televisionau.com/2023/07/tv-week-logie-awards-25-years-ago-13.html",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
+  },
+  {
+    "id": "tv_47763",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor won the 1998 Silver Logie for Most Popular Actor?",
+    "answers": [
+      "Martin Sacks",
+      "John Wood",
+      "William McInnes",
+      "Grant Bowler"
+    ],
+    "correctAnswer": "Martin Sacks",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 TV Week Logie Awards",
+      "Award: Most Popular Actor (Silver Logie)",
+      "Award result: Won",
+      "Award recipient: Martin Sacks",
+      "Award question: Most Popular Actor (Silver Logie) / Won / Martin Sacks",
+      "Answer fact: Martin Sacks",
+      "Award source: televisionau.com/2023/07/tv-week-logie-awards-25-years-ago-13.html",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
+  },
+  {
+    "id": "tv_47764",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actress won the 1998 Silver Logie for Most Popular Actress?",
+    "answers": [
+      "Lisa McCune",
+      "Tasma Walton",
+      "Julie Nihill",
+      "Dale Stevens"
+    ],
+    "correctAnswer": "Lisa McCune",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 TV Week Logie Awards",
+      "Award: Most Popular Actress (Silver Logie)",
+      "Award result: Won",
+      "Award recipient: Lisa McCune",
+      "Award question: Most Popular Actress (Silver Logie) / Won / Lisa McCune",
+      "Answer fact: Lisa McCune",
+      "Award source: televisionau.com/2023/07/tv-week-logie-awards-25-years-ago-13.html",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
+  },
+  {
+    "id": "tv_47765",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "At the 1998 TV Week Logies, which drama won the inaugural Silver Logie for Most Popular Program?",
+    "answers": [
+      "Blue Heelers",
+      "Water Rats",
+      "Home and Away",
+      "Wildside"
+    ],
+    "correctAnswer": "Blue Heelers",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 TV Week Logie Awards",
+      "Award: Most Popular Program (Silver Logie, inaugural)",
+      "Award result: Won",
+      "Award recipient: Blue Heelers",
+      "Award question: Most Popular Program (Silver Logie, inaugural) / Won / Blue Heelers",
+      "Answer fact: Blue Heelers",
+      "Award source: televisionau.com/2023/07/tv-week-logie-awards-25-years-ago-13.html",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
+  },
+  {
+    "id": "tv_47766",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Australian police drama won the 1998 TV Week Logie for Most Popular Series?",
+    "answers": [
+      "Blue Heelers",
+      "The Bill",
+      "Police Rescue",
+      "Water Rats"
+    ],
+    "correctAnswer": "Blue Heelers",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 TV Week Logie Awards",
+      "Award: Most Popular Series",
+      "Award result: Won",
+      "Award recipient: Blue Heelers",
+      "Award question: Most Popular Series / Won / Blue Heelers",
+      "Answer fact: Blue Heelers",
+      "Award source: televisionau.com/2023/07/tv-week-logie-awards-25-years-ago-13.html",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
+  },
+  {
+    "id": "tv_47767",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor was nominated for the 1998 Gold Logie but lost to his co-star Lisa McCune?",
+    "answers": [
+      "John Wood",
+      "Martin Sacks",
+      "Grant Bowler",
+      "Frankie J. Holden"
+    ],
+    "correctAnswer": "John Wood",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 TV Week Logie Awards",
+      "Award: Gold Logie — Most Popular Personality",
+      "Award result: Nominated",
+      "Award recipient: John Wood",
+      "Award question: Gold Logie — Most Popular Personality / Nominated / John Wood",
+      "Answer fact: John Wood",
+      "Award source: televisionau.com/2023/07/tv-week-logie-awards-25-years-ago-13.html",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
+  },
+  {
+    "id": "tv_47768",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actor received a 1998 TV Week Logie nomination for Most Outstanding Actor?",
+    "answers": [
+      "William McInnes",
+      "Martin Sacks",
+      "Grant Bowler",
+      "Damian Walshe-Howling"
+    ],
+    "correctAnswer": "William McInnes",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 TV Week Logie Awards",
+      "Award: Most Outstanding Actor",
+      "Award result: Nominated",
+      "Award recipient: William McInnes",
+      "Award question: Most Outstanding Actor / Nominated / William McInnes",
+      "Answer fact: William McInnes",
+      "Award source: en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
+  },
+  {
+    "id": "tv_47769",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers Series 4 episode earned a 1997 AWGIE award for television-series writing?",
+    "answers": [
+      "Reports of Damage and Loss",
+      "Collateral Damage",
+      "Playing Possum",
+      "Gold"
+    ],
+    "correctAnswer": "Reports of Damage and Loss",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1997",
+      "Award ceremony: 1997 Australian Writers' Guild AWGIE Awards",
+      "Award: Television — Series",
+      "Award result: Won",
+      "Award recipient: John Banas",
+      "Award question: Television — Series / Won / John Banas",
+      "Answer fact: Reports of Damage and Loss",
+      "Award source: awg.com.au/sample-page/previous-awgie-award-winners-1990s/",
+      "Episode: S04E05",
+      "Episode title: Reports of Damage and Loss"
+    ]
+  },
+  {
+    "id": "tv_47770",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers Series 4 episode earned a 1998 AFI nomination for Best Episode in a Television Drama Series?",
+    "answers": [
+      "Collateral Damage",
+      "The Civil Dead",
+      "Our Patch",
+      "Under Siege"
+    ],
+    "correctAnswer": "Collateral Damage",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 Australian Film Institute Awards",
+      "Award: Best Episode in a Television Drama Series",
+      "Award result: Nominated",
+      "Award recipient: Riccardo Pellizzeri",
+      "Award question: Best Episode in a Television Drama Series / Nominated / Riccardo Pellizzeri",
+      "Answer fact: Collateral Damage",
+      "Award source: en.wikipedia.org/wiki/1998_Australian_Film_Institute_Awards",
+      "Episode: S04E37",
+      "Episode title: Collateral Damage"
+    ]
+  },
+  {
+    "id": "tv_47771",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which Blue Heelers actress won the 1998 Australian People's Choice Award for Favourite TV Star?",
+    "answers": [
+      "Lisa McCune",
+      "Tasma Walton",
+      "Julie Nihill",
+      "Ann Burbrook"
+    ],
+    "correctAnswer": "Lisa McCune",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 Australian People's Choice Awards",
+      "Award: Favourite TV Star",
+      "Award result: Won",
+      "Award recipient: Lisa McCune",
+      "Award question: Favourite TV Star / Won / Lisa McCune",
+      "Answer fact: Lisa McCune",
+      "Award source: en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
+  },
+  {
+    "id": "tv_47772",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which category did Lisa McCune also win at the 1998 Australian People's Choice Awards for Blue Heelers?",
+    "answers": [
+      "Favourite Female TV Drama/Serial Star",
+      "Favourite Television Newsreader",
+      "Favourite Sports Presenter",
+      "Favourite Television Comedy Star"
+    ],
+    "correctAnswer": "Favourite Female TV Drama/Serial Star",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 Australian People's Choice Awards",
+      "Award: Favourite Female TV Drama/Serial Star",
+      "Award result: Won",
+      "Award recipient: Lisa McCune",
+      "Award question: Favourite Female TV Drama/Serial Star / Won / Lisa McCune",
+      "Answer fact: Favourite Female TV Drama/Serial Star",
+      "Award source: en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
+  },
+  {
+    "id": "tv_47773",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "At the 1998 Australian People's Choice Awards, what category did Blue Heelers itself win?",
+    "answers": [
+      "Favourite TV Drama or Serial",
+      "Favourite Children's Cartoon",
+      "Favourite Film",
+      "Favourite Comedy Host"
+    ],
+    "correctAnswer": "Favourite TV Drama or Serial",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 Australian People's Choice Awards",
+      "Award: Favourite TV Drama or Serial",
+      "Award result: Won",
+      "Award recipient: Blue Heelers",
+      "Award question: Favourite TV Drama or Serial / Won / Blue Heelers",
+      "Answer fact: Favourite TV Drama or Serial",
+      "Award source: en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
+  },
+  {
+    "id": "tv_47774",
+    "category": "TV",
+    "topic": "Blue Heelers",
+    "question": "Which two Blue Heelers actors both received 1998 People's Choice nominations for Favourite Male TV Drama/Serial Star?",
+    "answers": [
+      "John Wood and Martin Sacks",
+      "Grant Bowler and Frankie J. Holden",
+      "William McInnes and Nick Waters",
+      "John Wood and David Wenham"
+    ],
+    "correctAnswer": "John Wood and Martin Sacks",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "tags": [
+      "Television",
+      "Australian Television",
+      "Seven Network",
+      "1990s Television",
+      "Crime Drama",
+      "Police Procedural",
+      "Victoria, Australia",
+      "Rural Australia",
+      "Programme: Blue Heelers (1994–2006)",
+      "Format: Written Quiz",
+      "Series: 4",
+      "Award year: 1998",
+      "Award ceremony: 1998 Australian People's Choice Awards",
+      "Award: Favourite Male TV Drama/Serial Star",
+      "Award result: Nominated",
+      "Award recipient: John Wood and Martin Sacks",
+      "Award question: Favourite Male TV Drama/Serial Star / Nominated / John Wood and Martin Sacks",
+      "Answer fact: John Wood and Martin Sacks",
+      "Award source: en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Blue_Heelers",
+      "Recognition scope: Blue Heelers 1997 television series"
+    ]
   }
 ];
-if(questions.length!==297||new Set(questions.map(x=>x.id)).size!==questions.length||
-new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
-questions.some((x,i)=>x.id!=='tv_'+(32320+i)||x.category!=='TV'||x.topic!=='Blue Heelers'||
-x.answers.length!==4||new Set(x.answers.map(y=>y.toLowerCase())).size!==4||
-x.answers.filter(y=>y===x.correctAnswer).length!==1||x.tags.length!==19||
-x.dailyEligible!==true||!x.tags.some(t=>t.startsWith('Storyline: '))||
-!x.tags.some(t=>t.startsWith('Actor: ')))) throw Error('Pack 547 validation failed');
-module.exports = questions;
+
+if(questions.length!==329||new Set(questions.map(q=>q.id)).size!==questions.length||
+new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||
+questions.some((q,i)=>((i<297)?q.id!=='tv_'+(32320+i):q.id!=='tv_'+(47743+i-297))||
+q.category!=='TV'||q.topic!=='Blue Heelers'||q.answers.length!==4||
+new Set(q.answers.map(a=>a.toLowerCase())).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||
+!q.tags.includes('Programme: Blue Heelers (1994–2006)')||q.tags.length<19||
+new Set(q.tags).size!==q.tags.length||
+!q.tags.some(t=>t.startsWith('Storyline: ')||t.startsWith('Award question: '))||
+q.dailyEligible!==true||!['Easy','Medium','Hard'].includes(q.difficulty)))throw Error('Pack 547 validation failed');
+module.exports=questions;
