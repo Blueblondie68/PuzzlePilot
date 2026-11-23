@@ -4083,14 +4083,14 @@ const questions = [
     "id": "tv_47345",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Why had the Chinese immigrant parents rejected their son after he joined the NYPD in Blue Bloods?",
+    "question": "How does Officer Chen react when detectives capture his sister's abusive husband in Blue Bloods?",
     "answers": [
-      "They thought he was working for a rival gang",
-      "They had never met him",
-      "They associated police with repression in their former country",
-      "They believed he should join the army"
+      "He invites the suspect to dinner",
+      "He nearly loses control of his anger",
+      "He refuses to recognise the suspect",
+      "He asks for his own transfer"
     ],
-    "correctAnswer": "They associated police with repression in their former country",
+    "correctAnswer": "He nearly loses control of his anger",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -4109,10 +4109,10 @@ const questions = [
       "Episode: S10E03",
       "Episode title: Behind the Smile",
       "Original airdate: 2019-10-11",
-      "Storyline: Parents mistrust police due to authoritarian experiences",
-      "Character: Danny Reagan",
-      "Actor: Donnie Wahlberg",
-      "Answer fact: They associated police with repression in their former country"
+      "Storyline: Officer Chen nearly loses his temper at sister's abusive husband",
+      "Character: Officer Chen",
+      "Actor: Blue Bloods supporting cast",
+      "Answer fact: He nearly loses control of his anger"
     ]
   },
   {
@@ -4299,14 +4299,14 @@ const questions = [
     "id": "tv_47351",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "What connection explains why Captain Espinoza tries to protect rookie Sarah Brooks in Blue Bloods?",
+    "question": "What sort of misconduct does rookie Sarah Brooks repeatedly commit before Captain Espinoza intervenes in Blue Bloods?",
     "answers": [
-      "Her father was his friend who died during September 11",
-      "Her mother is a sitting judge",
-      "She is related to Mayor Chase",
-      "She has served in the military with Frank"
+      "Leaving her post without permission",
+      "Police procedural violations",
+      "Tampering with evidence",
+      "Accepting a bribe"
     ],
-    "correctAnswer": "Her father was his friend who died during September 11",
+    "correctAnswer": "Police procedural violations",
     "difficulty": "Medium",
     "dailyEligible": true,
     "tags": [
@@ -4325,10 +4325,10 @@ const questions = [
       "Episode: S10E05",
       "Episode title: The Price You Pay",
       "Original airdate: 2019-10-25",
-      "Storyline: Espinoza protects friend's daughter after 9/11 loss",
-      "Character: Jamie Reagan",
-      "Actor: Will Estes",
-      "Answer fact: Her father was his friend who died during September 11"
+      "Storyline: Rookie Sarah Brooks commits repeated procedural violations",
+      "Character: Sarah Brooks",
+      "Actor: Lilly Brown",
+      "Answer fact: Police procedural violations"
     ]
   },
   {
@@ -4695,14 +4695,14 @@ const questions = [
     "id": "tv_47362",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "What makes Danny suspicious of the informant who claims to have overheard a murder plot in Blue Bloods?",
+    "question": "Which actor plays mayor-elect Peter Chase, who asks Frank to replace Garrett in Blue Bloods?",
     "answers": [
-      "The informant refuses to speak English",
-      "The suspect lives on another continent",
-      "The report is made anonymously from prison",
-      "He recognises a set-up linked to one of his earliest arrests"
+      "Dylan Walsh",
+      "Dan Lauria",
+      "Robert Clohessy",
+      "Gregory Jbara"
     ],
-    "correctAnswer": "He recognises a set-up linked to one of his earliest arrests",
+    "correctAnswer": "Dylan Walsh",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -4721,10 +4721,10 @@ const questions = [
       "Episode: S10E09",
       "Episode title: Grave Errors",
       "Original airdate: 2019-11-22",
-      "Storyline: Danny spots trap drawing on old bar arrest",
-      "Character: Danny Reagan",
-      "Actor: Donnie Wahlberg",
-      "Answer fact: He recognises a set-up linked to one of his earliest arrests"
+      "Storyline: Dylan Walsh portrays mayor-elect Peter Chase",
+      "Character: Peter Chase",
+      "Actor: Dylan Walsh",
+      "Answer fact: Dylan Walsh"
     ]
   },
   {
@@ -5451,14 +5451,14 @@ const questions = [
     "id": "tv_47383",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "Who actually stole valuables from Jamie and Eddie's elderly neighbour in Blue Bloods?",
+    "question": "Who is initially believed to have stolen jewellery from Jamie and Eddie's elderly neighbour in Blue Bloods?",
     "answers": [
-      "Her former husband",
-      "The building manager posing as a plumber",
-      "An undercover officer",
-      "Her grandson"
+      "A visiting police detective",
+      "A relative from another state",
+      "An ambulance worker",
+      "The building manager she calls the plumber"
     ],
-    "correctAnswer": "Her former husband",
+    "correctAnswer": "The building manager she calls the plumber",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -5477,10 +5477,10 @@ const questions = [
       "Episode: S10E17",
       "Episode title: The Puzzle Palace",
       "Original airdate: 2020-04-03",
-      "Storyline: Elderly neighbour's estranged husband stole possessions",
+      "Storyline: Neighbour wrongly suspects building manager plumber before ex-husband is identified",
       "Character: Jamie Reagan",
       "Actor: Will Estes",
-      "Answer fact: Her former husband"
+      "Answer fact: The building manager she calls the plumber"
     ]
   },
   {
