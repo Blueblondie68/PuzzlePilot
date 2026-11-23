@@ -1,18 +1,18 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 529: Blue Bloods (2010–2024), Series 2 (2011–2012).
-// 216 distinct questions: 66 originals unchanged, 144 new case/family/undercover developments, 6 verified season-two awards questions.
-// Original IDs tv_30539–tv_30604 preserved; supplemental IDs tv_46024–tv_46173.
-// Full twenty-two episode storyline and awards audit 23 November 2026. Question counts vary with story significance.
-// Jamie's undercover Jimmy Riordan / Cavazerre / Sanfino through-lines and the Reagan family consequences included.
-// Sources for plot facts:
+// 209 distinct questions: 66 untouched originals, 137 new story/character consequences, 6 season-two award questions.
+// Original IDs tv_30539–tv_30604; new IDs tv_46024–tv_46166.
+// Full 22-episode story audit on 23 November 2026. Seven duplicate/near-duplicate questions removed before approval.
+// Jamie's Jimmy Riordan undercover arc and the Cavazerre/Sanfino relationships checked across season.
+// Case details and family consequences audited against:
 // https://www.cbs.com/shows/blue_bloods/episodes/2/
 // https://en.wikipedia.org/wiki/Blue_Bloods_season_2
 // https://thetvdb.com/series/blue-bloods/seasons/official/2
-// 2012 award references:
+// Award nominations/finalist sources:
 // https://edgarawards.com/category-list-best-episode-in-a-tv-series/
 // https://www.humanitasprize.org/humanitas-prize-nominees
 // https://www.tvguide.com/celebrities/sami-gayle/bio/3000681126/
-// Keep nominated/finalist separate from won. 2013 Emmy belongs in later series.
-// All 14 series concluded but only Series 1–2 audited here, programme NOT yet purple.
+// 2013 Emmy stunt nomination belongs to Series 3 and is not duplicated here.
+// Programme is finished (14 series) but Series 3–14 still need audit; no purple line yet.
 'use strict';
 const questions = [
   {
@@ -2587,44 +2587,6 @@ const auditQuestions = [
     "id": "tv_46029",
     "category": "TV",
     "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010–2024, Series 2, Episode 1), why does Frank resist the mayor-elect's preferred explanation of the supporter’s death?",
-    "answers": [
-      "He knows the victim survived",
-      "It would misrepresent an unresolved murder investigation",
-      "It would force him to reveal Jamie's real identity",
-      "He has already decided to resign"
-    ],
-    "correctAnswer": "It would misrepresent an unresolved murder investigation",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 2",
-      "Broadcast year: 2011",
-      "Episode: S02E01",
-      "Episode title: Mercy",
-      "Storyline: why does Frank resist the mayor-elect's preferred explanation of the supporter’s death",
-      "Answer fact: It would misrepresent an unresolved murder investigation",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and season two episode guide",
-      "Character: Frank",
-      "Actor: Tom Selleck"
-    ]
-  },
-  {
-    "id": "tv_46030",
-    "category": "TV",
-    "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 1), what risky career development begins for Jamie in the same episode as Poole's political dispute?",
     "answers": [
       "A transfer to federal counterterrorism",
@@ -2660,7 +2622,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46031",
+    "id": "tv_46030",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 2), why is Danny's shooting especially controversial within the NYPD?",
@@ -2698,7 +2660,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46032",
+    "id": "tv_46031",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 2), what mistake did the injured undercover officer make before Danny fired?",
@@ -2736,7 +2698,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46033",
+    "id": "tv_46032",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 2), what aspect of Danny's conduct is examined alongside the shooting itself?",
@@ -2774,7 +2736,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46034",
+    "id": "tv_46033",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 2), what responsibility does Frank face while an investigation threatens his son's career?",
@@ -2814,7 +2776,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46035",
+    "id": "tv_46034",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 2), what does the episode explore beyond whether Danny fired his gun correctly?",
@@ -2854,7 +2816,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46036",
+    "id": "tv_46035",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 3), which former NYPD officer is recognised among the people taking bank hostages?",
@@ -2892,7 +2854,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46037",
+    "id": "tv_46036",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 3), what happens to the attempted bank robbery before Danny intervenes?",
@@ -2930,7 +2892,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46038",
+    "id": "tv_46037",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 3), what prior police assignment connects Billy Flood to Frank Reagan?",
@@ -2970,45 +2932,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46039",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010–2024, Series 2, Episode 3), what is the name of the temporary patrol partner assigned to Jamie?",
-    "answers": [
-      "Lydia Gonsalves",
-      "Luisa Sosa",
-      "Jackie Curatola",
-      "Maria Baez"
-    ],
-    "correctAnswer": "Luisa Sosa",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 2",
-      "Broadcast year: 2011",
-      "Episode: S02E03",
-      "Episode title: Critical Condition",
-      "Storyline: what is the name of the temporary patrol partner assigned to Jamie",
-      "Answer fact: Luisa Sosa",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and season two episode guide",
-      "Character: Jamie",
-      "Actor: Will Estes"
-    ]
-  },
-  {
-    "id": "tv_46040",
+    "id": "tv_46038",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 3), which actress plays Jamie's temporary police partner Luisa Sosa?",
@@ -3046,7 +2970,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46041",
+    "id": "tv_46039",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 3), what is the name of the plain-clothes assignment Jamie and Luisa undertake?",
@@ -3084,7 +3008,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46042",
+    "id": "tv_46040",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 3), which career change distinguishes robber Billy Flood from his former colleagues?",
@@ -3122,7 +3046,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46043",
+    "id": "tv_46041",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 4), which forensic discovery leads Erin to reopen an old rape conviction?",
@@ -3160,7 +3084,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46044",
+    "id": "tv_46042",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 4), what is the name of the wrongly convicted man whose case is reconsidered?",
@@ -3198,7 +3122,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46045",
+    "id": "tv_46043",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 4), what does the newly examined evidence establish about Miles Thomas?",
@@ -3238,7 +3162,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46046",
+    "id": "tv_46044",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 4), who does Frank assign to help identify the real offender?",
@@ -3276,7 +3200,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46047",
+    "id": "tv_46045",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 4), what makes the re-examination of the conviction difficult for Frank?",
@@ -3316,7 +3240,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46048",
+    "id": "tv_46046",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 4), what secondary case do Jamie and Renzulli deal with while the rape conviction is revisited?",
@@ -3354,7 +3278,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46049",
+    "id": "tv_46047",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 4), what new freedom does Nicky request from Erin in this episode?",
@@ -3394,7 +3318,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46050",
+    "id": "tv_46048",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 5), what causes Danny's romantic trip with Linda to be interrupted?",
@@ -3434,7 +3358,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46051",
+    "id": "tv_46049",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 5), what kind of alleged financial fraud becomes connected with Danny's accident investigation?",
@@ -3472,7 +3396,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46052",
+    "id": "tv_46050",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 5), what alias does Jamie use while infiltrating the Cavazerre crime circle?",
@@ -3510,7 +3434,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46053",
+    "id": "tv_46051",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 5), which young criminal acquaintance does Jamie renew contact with while undercover?",
@@ -3548,7 +3472,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46054",
+    "id": "tv_46052",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 5), how is Noble Sanfino connected to organised crime leadership?",
@@ -3586,7 +3510,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46055",
+    "id": "tv_46053",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 5), what small domestic problem occupies Henry while Danny's case and Jamie's operation progress?",
@@ -3624,7 +3548,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46056",
+    "id": "tv_46054",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 5), what competing obligation keeps Danny from enjoying his planned getaway?",
@@ -3664,7 +3588,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46057",
+    "id": "tv_46055",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 6), what is the police report Jamie and Renzulli are responding to at the religious centre?",
@@ -3702,7 +3626,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46058",
+    "id": "tv_46056",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 6), what prevents Jamie and Renzulli from investigating upstairs?",
@@ -3740,7 +3664,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46059",
+    "id": "tv_46057",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 6), which community leader turns the confrontation into a wider public dispute?",
@@ -3778,7 +3702,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46060",
+    "id": "tv_46058",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 6), what part of the community has Reverend Potter's centre been serving?",
@@ -3818,7 +3742,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46061",
+    "id": "tv_46059",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 6), what injury-related consequence forces Frank to respond publicly?",
@@ -3858,7 +3782,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46062",
+    "id": "tv_46060",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 6), which issue is at the heart of Frank's attempts to defuse the aftermath?",
@@ -3896,7 +3820,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46063",
+    "id": "tv_46061",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 7), what cover identity allows Jackie to approach the serial killer?",
@@ -3934,7 +3858,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46064",
+    "id": "tv_46062",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 7), which group of women is being targeted by the hotel-room murderer?",
@@ -3974,7 +3898,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46065",
+    "id": "tv_46063",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 7), what is the name of the man Erin meets through their shared interest in art?",
@@ -4012,7 +3936,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46066",
+    "id": "tv_46064",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 7), what company wants to recruit Henry because of his police contacts?",
@@ -4050,7 +3974,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46067",
+    "id": "tv_46065",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 7), what is Ajax's line of business?",
@@ -4088,7 +4012,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46068",
+    "id": "tv_46066",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 7), what professional dispute is Frank handling while the murder enquiry continues?",
@@ -4126,7 +4050,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46069",
+    "id": "tv_46067",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 7), what attracts Henry's prospective employers to him?",
@@ -4164,7 +4088,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46070",
+    "id": "tv_46068",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 8), how far does the woman fall in the apparent suicide Jamie and Renzulli witness?",
@@ -4202,45 +4126,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46071",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010–2024, Series 2, Episode 8), what does Danny discover about the young woman's apparent suicide?",
-    "answers": [
-      "The woman escaped without injury",
-      "She has moved to another city",
-      "The fall may have been forced",
-      "She was a trained police officer"
-    ],
-    "correctAnswer": "The fall may have been forced",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 2",
-      "Broadcast year: 2011",
-      "Episode: S02E08",
-      "Episode title: Thanksgiving",
-      "Storyline: what does Danny discover about the young woman's apparent suicide",
-      "Answer fact: The fall may have been forced",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and season two episode guide",
-      "Character: Danny",
-      "Actor: Donnie Wahlberg"
-    ]
-  },
-  {
-    "id": "tv_46072",
+    "id": "tv_46069",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 8), which New York transport route becomes the focus of a possible terror threat?",
@@ -4278,7 +4164,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46073",
+    "id": "tv_46070",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 8), why is Henry's collapse especially distressing to the Reagan family?",
@@ -4318,7 +4204,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46074",
+    "id": "tv_46071",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 8), which friend of Erin appears while she and Nicky are out in the city?",
@@ -4358,7 +4244,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46075",
+    "id": "tv_46072",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 8), what does Erin notice about Jacob during their encounter?",
@@ -4396,7 +4282,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46076",
+    "id": "tv_46073",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 8), what money problem has Sergeant Renzulli been trying to hide?",
@@ -4436,7 +4322,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46077",
+    "id": "tv_46074",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 9), who is the former mobster assisting the detectives to locate buried murder victims?",
@@ -4474,7 +4360,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46078",
+    "id": "tv_46075",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 9), which colleague accompanies Danny as they revisit the old unsolved killings?",
@@ -4512,7 +4398,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46079",
+    "id": "tv_46076",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 9), what specific criminal allegation is the former mobster's son facing?",
@@ -4550,7 +4436,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46080",
+    "id": "tv_46077",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 9), what criminal workplace does Jamie infiltrate while using the Jimmy Riordan identity?",
@@ -4588,7 +4474,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46081",
+    "id": "tv_46078",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 9), who becomes Jamie's intimidating new boss during the boiler-room assignment?",
@@ -4626,7 +4512,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46082",
+    "id": "tv_46079",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 9), which underworld faction is Jamie trying to learn more about during the assignment?",
@@ -4664,7 +4550,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46083",
+    "id": "tv_46080",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 9), who resumes contact with Erin while Danny and Jamie work their separate cases?",
@@ -4702,7 +4588,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46084",
+    "id": "tv_46081",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 10), what is the murdered confidential informant's name?",
@@ -4740,7 +4626,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46085",
+    "id": "tv_46082",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 10), who witnesses Ray Milo's death outside the restaurant?",
@@ -4778,7 +4664,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46086",
+    "id": "tv_46083",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 10), why does Erin feel especially responsible for the informant's death?",
@@ -4816,7 +4702,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46087",
+    "id": "tv_46084",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 10), which pair of detectives work to discover who murdered Erin's informant?",
@@ -4856,7 +4742,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46088",
+    "id": "tv_46085",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 10), what other controversy tests Frank's management of the NYPD?",
@@ -4894,7 +4780,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46089",
+    "id": "tv_46086",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 10), why is the footage so damaging before the investigation is resolved?",
@@ -4932,47 +4818,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46090",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010–2024, Series 2, Episode 11), what does a witness say the fleeing suspect was wearing?",
-    "answers": [
-      "A restaurant chef's jacket",
-      "A security guard's coat",
-      "A police uniform",
-      "A paramedic's uniform"
-    ],
-    "correctAnswer": "A police uniform",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 2",
-      "Broadcast year: 2012",
-      "Episode: S02E11",
-      "Episode title: The Uniform",
-      "Storyline: what does a witness say the fleeing suspect was wearing",
-      "Answer fact: A police uniform",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and season two episode guide",
-      "Character: Danny",
-      "Character: Jackie",
-      "Actor: Donnie Wahlberg",
-      "Actor: Jennifer Esposito"
-    ]
-  },
-  {
-    "id": "tv_46091",
+    "id": "tv_46087",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 11), what question makes the diner murder more troubling for the detectives?",
@@ -5010,7 +4856,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46092",
+    "id": "tv_46088",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 11), why does Jamie need additional income beyond his police salary?",
@@ -5048,45 +4894,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46093",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010–2024, Series 2, Episode 11), what practical trade does Jamie turn to for extra money?",
-    "answers": [
-      "Professional tutoring",
-      "Painting",
-      "Car repair",
-      "Bartending"
-    ],
-    "correctAnswer": "Painting",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 2",
-      "Broadcast year: 2012",
-      "Episode: S02E11",
-      "Episode title: The Uniform",
-      "Storyline: what practical trade does Jamie turn to for extra money",
-      "Answer fact: Painting",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and season two episode guide",
-      "Character: Jamie",
-      "Actor: Will Estes"
-    ]
-  },
-  {
-    "id": "tv_46094",
+    "id": "tv_46089",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 11), which university did Jamie attend before his decision to join the NYPD?",
@@ -5124,7 +4932,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46095",
+    "id": "tv_46090",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 12), what sporting event has Danny just watched with his family when the street shooting occurs?",
@@ -5164,7 +4972,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46096",
+    "id": "tv_46091",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 12), what dark history comes to light about the man Danny accidentally hits with his vehicle?",
@@ -5202,7 +5010,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46097",
+    "id": "tv_46092",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 12), what happens while Danny checks on the injured man?",
@@ -5242,7 +5050,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46098",
+    "id": "tv_46093",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 12), what does Linda admit to Danny after their sons are endangered?",
@@ -5282,7 +5090,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46099",
+    "id": "tv_46094",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 12), what 9/11-related illness is threatening Frank's old colleague and friend?",
@@ -5320,7 +5128,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46100",
+    "id": "tv_46095",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 12), what is Frank's dying former colleague called?",
@@ -5358,7 +5166,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46101",
+    "id": "tv_46096",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 12), which professional does Frank consult privately while dealing with the memories of 9/11?",
@@ -5396,7 +5204,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46102",
+    "id": "tv_46097",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 12), which Academy Award-winning actor plays the psychiatrist consulted by Frank?",
@@ -5434,7 +5242,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46103",
+    "id": "tv_46098",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 13), what supernatural explanation does the woman's daughter give for accusing her stepfather?",
@@ -5472,7 +5280,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46104",
+    "id": "tv_46099",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 13), what is the accused stepfather's connection to the wealthy woman?",
@@ -5510,7 +5318,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46105",
+    "id": "tv_46100",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 13), what is the priest whose sainthood is being assessed called?",
@@ -5548,7 +5356,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46106",
+    "id": "tv_46101",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 13), which historical conflict is involved in accusations about Father Campion's activism?",
@@ -5586,7 +5394,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46107",
+    "id": "tv_46102",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 13), what does Frank investigate before offering his support for the priest's canonisation?",
@@ -5624,7 +5432,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46108",
+    "id": "tv_46103",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 13), which actor plays the wealthy woman's stepfather in the episode?",
@@ -5662,7 +5470,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46109",
+    "id": "tv_46104",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 13), what personal dilemma affects Frank's attitude to the local priest's proposed sainthood?",
@@ -5700,7 +5508,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46110",
+    "id": "tv_46105",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 14), who is the college protester whose identity complicates Frank's response?",
@@ -5738,7 +5546,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46111",
+    "id": "tv_46106",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 14), what unusual family relationship does the mayor's daughter have with him?",
@@ -5776,7 +5584,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46112",
+    "id": "tv_46107",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 14), what does the wounded father's predicament make the Reagans discuss at dinner?",
@@ -5816,7 +5624,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46113",
+    "id": "tv_46108",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 14), what has happened to the attacked family before the assailant is killed?",
@@ -5854,7 +5662,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46114",
+    "id": "tv_46109",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 14), which civic leader has a conflict of interest because the arrested student is a relative?",
@@ -5892,45 +5700,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46115",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010–2024, Series 2, Episode 14), what kind of public event leads to the student's arrest?",
-    "answers": [
-      "A college protest rally",
-      "A private graduation party",
-      "A religious wedding",
-      "A charity concert"
-    ],
-    "correctAnswer": "A college protest rally",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 2",
-      "Broadcast year: 2012",
-      "Episode: S02E14",
-      "Episode title: Parenthood",
-      "Storyline: what kind of public event leads to the student's arrest",
-      "Answer fact: A college protest rally",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and season two episode guide",
-      "Character: Frank",
-      "Actor: Tom Selleck"
-    ]
-  },
-  {
-    "id": "tv_46116",
+    "id": "tv_46110",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 15), what nickname is given to the killer of the Reagan family's detective friend?",
@@ -5968,7 +5738,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46117",
+    "id": "tv_46111",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 15), what makes the victim's death especially personal for Danny?",
@@ -6006,7 +5776,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46118",
+    "id": "tv_46112",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 15), how does Danny's pursuit of the killer affect him?",
@@ -6044,47 +5814,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46119",
-    "category": "TV",
-    "topic": "Blue Bloods",
-    "question": "In Blue Bloods (2010–2024, Series 2, Episode 15), who is alarmed by the emotional strain Danny's case is placing on the household?",
-    "answers": [
-      "Jamie and Luisa Sosa",
-      "Linda and the boys",
-      "Erin and Charles Rossellini",
-      "Frank and Mayor Poole"
-    ],
-    "correctAnswer": "Linda and the boys",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "American Television",
-      "CBS Network",
-      "Crime Drama",
-      "Police Procedural",
-      "Family Drama",
-      "2010s Television",
-      "New York City",
-      "Programme: Blue Bloods (2010–2024)",
-      "Series: 2",
-      "Broadcast year: 2012",
-      "Episode: S02E15",
-      "Episode title: The Life We Chose",
-      "Storyline: who is alarmed by the emotional strain Danny's case is placing on the household",
-      "Answer fact: Linda and the boys",
-      "Format: Written Quiz",
-      "Question type: Story detail",
-      "Comprehensive Audit: 23 November 2026",
-      "Source: CBS and season two episode guide",
-      "Character: Danny",
-      "Character: Linda",
-      "Actor: Donnie Wahlberg",
-      "Actor: Amy Carlson"
-    ]
-  },
-  {
-    "id": "tv_46120",
+    "id": "tv_46113",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 15), what performance are Henry and Nicky preparing for in the same episode?",
@@ -6124,7 +5854,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46121",
+    "id": "tv_46114",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 15), where is the family duet supposed to take place?",
@@ -6164,7 +5894,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46122",
+    "id": "tv_46115",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 16), what is the name of the journalist who is attacked while with Frank?",
@@ -6202,7 +5932,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46123",
+    "id": "tv_46116",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 16), who portrays the journalist Melanie Maines?",
@@ -6240,7 +5970,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46124",
+    "id": "tv_46117",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 16), what dangerous substance does the masked attacker throw at the journalist?",
@@ -6280,7 +6010,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46125",
+    "id": "tv_46118",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 16), which actor guest-stars as the masked assailant?",
@@ -6318,7 +6048,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46126",
+    "id": "tv_46119",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 16), which member of the organised-crime family tells Jamie about Johnny Tesla's death?",
@@ -6356,7 +6086,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46127",
+    "id": "tv_46120",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 16), who is the criminal associate whose death threatens the balance between rival crime families?",
@@ -6394,7 +6124,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46128",
+    "id": "tv_46121",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 16), what does Johnny Tesla's death endanger between the Cavazerres and the Sanfinos?",
@@ -6432,7 +6162,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46129",
+    "id": "tv_46122",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 16), what danger increases for Jamie as the organised-crime feud threatens to escalate?",
@@ -6470,7 +6200,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46130",
+    "id": "tv_46123",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 17), who is Erin prosecuting in the trial that pits her against Danny?",
@@ -6508,7 +6238,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46131",
+    "id": "tv_46124",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 17), what is distinctive about the murdered husband in Erin's case?",
@@ -6546,7 +6276,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46132",
+    "id": "tv_46125",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 17), what unexpected crime brings Danny into the defendant's murder trial?",
@@ -6586,7 +6316,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46133",
+    "id": "tv_46126",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 17), what happens when Danny takes the witness stand?",
@@ -6626,7 +6356,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46134",
+    "id": "tv_46127",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 17), where does the disagreement between the Reagan siblings continue afterwards?",
@@ -6666,7 +6396,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46135",
+    "id": "tv_46128",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 17), what complicates Erin's professional duty as prosecutor in this trial?",
@@ -6706,7 +6436,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46136",
+    "id": "tv_46129",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 18), who is organising the anonymous firearm surrender programme?",
@@ -6746,7 +6476,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46137",
+    "id": "tv_46130",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 18), what kind of weapon is turned over to the programme?",
@@ -6784,7 +6514,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46138",
+    "id": "tv_46131",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 18), what condition is meant to encourage people to hand over weapons?",
@@ -6822,7 +6552,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46139",
+    "id": "tv_46132",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 18), what tension does Danny's discovery create?",
@@ -6862,7 +6592,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46140",
+    "id": "tv_46133",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 18), what is the topic of Jamie and Nicky's separate family problem?",
@@ -6902,7 +6632,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46141",
+    "id": "tv_46134",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 18), which friend of Nicky is at the centre of the social-media incident?",
@@ -6942,7 +6672,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46142",
+    "id": "tv_46135",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 18), why does the social-media incident need Jamie's help?",
@@ -6982,7 +6712,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46143",
+    "id": "tv_46136",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 19), how was the firefighter's death initially classified before Danny reopens it?",
@@ -7020,7 +6750,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46144",
+    "id": "tv_46137",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 19), how old is the deceased firefighter's son who presses for a new investigation?",
@@ -7058,7 +6788,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46145",
+    "id": "tv_46138",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 19), what about the son's request makes Danny challenge the closed case?",
@@ -7096,7 +6826,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46146",
+    "id": "tv_46139",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 19), what does Jamie do that unexpectedly makes him a local hero?",
@@ -7134,7 +6864,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46147",
+    "id": "tv_46140",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 19), why is press coverage of Jamie's rescue dangerous?",
@@ -7172,7 +6902,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46148",
+    "id": "tv_46141",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 19), what ongoing undercover work does Jamie fear will be ruined by his publicity?",
@@ -7210,7 +6940,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46149",
+    "id": "tv_46142",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 20), what type of case requires special protection for Danny and Jackie's witness?",
@@ -7250,7 +6980,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46150",
+    "id": "tv_46143",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 20), what makes the witness's attempted murder especially alarming for the police team?",
@@ -7288,7 +7018,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46151",
+    "id": "tv_46144",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 20), what is the immediate investigative priority after the attack?",
@@ -7328,7 +7058,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46152",
+    "id": "tv_46145",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 20), what makes Erin's proposed job as deputy mayor professionally sensitive?",
@@ -7368,7 +7098,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46153",
+    "id": "tv_46146",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 20), which existing career would Erin have to leave or reconsider to accept the post?",
@@ -7406,7 +7136,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46154",
+    "id": "tv_46147",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 20), what is the family dilemma caused by the job offer?",
@@ -7446,7 +7176,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46155",
+    "id": "tv_46148",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 21), what type of dangerous fights are connected to the wealthy investor's death?",
@@ -7484,7 +7214,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46156",
+    "id": "tv_46149",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 21), which clue suggests the investor was not simply a willing participant in a fight?",
@@ -7524,7 +7254,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46157",
+    "id": "tv_46150",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 21), which shady former policeman works as a private investigator in the episode?",
@@ -7562,7 +7292,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46158",
+    "id": "tv_46151",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 21), who plays Mickey Heller, the private investigator?",
@@ -7600,7 +7330,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46159",
+    "id": "tv_46152",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 21), why is Jamie's secret identity Jimmy Riordan now endangered?",
@@ -7640,7 +7370,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46160",
+    "id": "tv_46153",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 21), what action does Frank take to safeguard Jamie after the mob's threat?",
@@ -7680,7 +7410,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46161",
+    "id": "tv_46154",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 21), what major undercover storyline is nearing its conclusion as Jamie is placed under guard?",
@@ -7718,7 +7448,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46162",
+    "id": "tv_46155",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 22), what kind of weapon are Frank's officers trying to prevent being released in New York?",
@@ -7756,7 +7486,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46163",
+    "id": "tv_46156",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 22), what unusual additional duty does the terror threat place on Frank?",
@@ -7794,7 +7524,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46164",
+    "id": "tv_46157",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 22), why does the special day make Frank's secrecy more difficult?",
@@ -7832,7 +7562,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46165",
+    "id": "tv_46158",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 22), what disagreement between Danny and Jamie erupts during the finale?",
@@ -7872,7 +7602,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46166",
+    "id": "tv_46159",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 22), why does the confrontation between the brothers carry a longer history?",
@@ -7912,7 +7642,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46167",
+    "id": "tv_46160",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "In Blue Bloods (2010–2024, Series 2, Episode 22), what does Frank face at the same time as the family tension?",
@@ -7950,7 +7680,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46168",
+    "id": "tv_46161",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "For the television programme Blue Bloods (2010–2024), which Blue Bloods episode received a 2012 Edgar Award nomination for Best Episode in a TV Series?",
@@ -7989,7 +7719,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46169",
+    "id": "tv_46162",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "For the television programme Blue Bloods (2010–2024), which writer was nominated for the 2012 Edgar Award for Blue Bloods episode Innocence?",
@@ -8028,7 +7758,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46170",
+    "id": "tv_46163",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "For the television programme Blue Bloods (2010–2024), which Blue Bloods episode made its screenwriter a 2012 Humanitas Prize finalist?",
@@ -8067,7 +7797,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46171",
+    "id": "tv_46164",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "For the television programme Blue Bloods (2010–2024), who wrote The Job, the Blue Bloods episode recognised as a 2012 Humanitas Prize finalist?",
@@ -8106,7 +7836,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46172",
+    "id": "tv_46165",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "For the television programme Blue Bloods (2010–2024), which young Blue Bloods actress was nominated at the 2012 Young Artist Awards for a recurring TV role?",
@@ -8145,7 +7875,7 @@ const auditQuestions = [
     ]
   },
   {
-    "id": "tv_46173",
+    "id": "tv_46166",
     "category": "TV",
     "topic": "Blue Bloods",
     "question": "For the television programme Blue Bloods (2010–2024), in which category was Blue Bloods actress Sami Gayle nominated at the 2012 Young Artist Awards?",
@@ -8186,8 +7916,8 @@ const auditQuestions = [
 ];
 questions.push(...auditQuestions);
 
-if(questions.length!==216||new Set(questions.map(q=>q.id)).size!==216||
-new Set(questions.map(q=>q.question.toLowerCase())).size!==216||
+if(questions.length!==209||new Set(questions.map(q=>q.id)).size!==209||
+new Set(questions.map(q=>q.question.toLowerCase())).size!==209||
 questions.some((q,i)=>q.id!==(i<66?'tv_'+(30539+i):'tv_'+(46024+i-66))||q.category!=='TV'||q.topic!=='Blue Bloods'||
 !q.tags.includes('Programme: Blue Bloods (2010–2024)')||
 q.answers.length!==4||new Set(q.answers.map(a=>a.toLowerCase())).size!==4||
