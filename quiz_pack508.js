@@ -4781,14 +4781,14 @@ const auditQuestions = [
     "id": "tv_43661",
     "category": "TV",
     "topic": "Beverly Hills, 90210",
-    "question": "In Beverly Hills, 90210 (Series 1, Episode 1), which US postal-code area supplied the programme's distinctive numerical title?",
+    "question": "In the title of the television drama Beverly Hills, 90210, what does the number 90210 represent?",
     "answers": [
-      "Beverly Hills",
-      "Santa Monica",
-      "Malibu",
-      "Pasadena"
+      "A school enrolment number",
+      "A US ZIP code",
+      "A local police district number",
+      "An American television frequency"
     ],
-    "correctAnswer": "Beverly Hills",
+    "correctAnswer": "A US ZIP code",
     "difficulty": "Hard",
     "dailyEligible": true,
     "tags": [
@@ -4809,7 +4809,7 @@ const auditQuestions = [
       "Episode: S01E01",
       "Episode title: Class of Beverly Hills",
       "Question type: Production",
-      "Answer fact: Beverly Hills",
+      "Answer fact: A US ZIP code",
       "Comprehensive Audit: 23 November 2026",
       "Specific episode or performer context"
     ]
