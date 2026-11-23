@@ -1343,7 +1343,7 @@ const questions = [
     "id": "tv_48158",
     "category": "TV",
     "topic": "The Price Is Right",
-    "question": "Which record did the UK presenter Bruce Forsyth's Price Is Right establish for the British show's production in the 1990s?",
+    "question": "How did the value of prizes on Bruce Forsyth's 1990s Price Is Right compare with those on the 1980s ITV version?",
     "answers": [
       "It became the first programme broadcast in colour in Britain",
       "It was the first quiz ever made in a football stadium",
