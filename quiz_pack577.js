@@ -1,6 +1,6 @@
 // PuzzlePilot The Bigggggg Quiz — Pack 577: ONLY CONNECT (BBC 2008–ongoing, Nov 2026).
 // Supplemental complete programme audit: retains original four Pack 209 Only Connect questions.
-// 81 new questions, IDs tv_49182–tv_49262.
+// 75 new questions, IDs tv_49182–tv_49256.
 // Coverage: BBC Four 2008 debut and BBC Two transfer 2014; original title origin,
 // original/new production companies, theme, Cardiff studios, online wall game,
 // COVID production, 2023 NYT Connections comparison; detailed round mechanics;
@@ -157,42 +157,6 @@ const questions = [
   },
   {
     "id": "tv_49186",
-    "question": "The novel inspiring Only Connect's title was first published in which year?",
-    "answers": [
-      "1910",
-      "1905",
-      "1924",
-      "1937"
-    ],
-    "correctAnswer": "1910",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "Only Connect",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC Four",
-      "BBC Two",
-      "UK Quiz Shows",
-      "British Game Shows",
-      "Programme: Only Connect",
-      "Programme: Only Connect (2008–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: Literary origins",
-      "Coverage Detail: Novel first publication year",
-      "Answer Focus: 1910",
-      "Genre: Lateral-thinking television quiz",
-      "Presenter: Victoria Coren Mitchell",
-      "Game Mechanics: Connections, Sequences, Connecting Wall, Missing Vowels",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Only_Connect",
-      "Question Type: Programme history, format, competitions, specials or awards"
-    ]
-  },
-  {
-    "id": "tv_49187",
     "question": "Which surname did Only Connect's host use before adding Mitchell in 2013?",
     "answers": [
       "Corbett",
@@ -228,7 +192,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49188",
+    "id": "tv_49187",
     "question": "Which production company made the earliest BBC Four series of Only Connect?",
     "answers": [
       "Stellify Media",
@@ -264,7 +228,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49189",
+    "id": "tv_49188",
     "question": "Which production company became associated with Only Connect from 2024?",
     "answers": [
       "Celador",
@@ -300,7 +264,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49190",
+    "id": "tv_49189",
     "question": "Who composed the theme music used on the television quiz Only Connect?",
     "answers": [
       "Dawson Sabatini",
@@ -336,7 +300,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49191",
+    "id": "tv_49190",
     "question": "Which UK city has been the main production base for Only Connect?",
     "answers": [
       "Edinburgh",
@@ -372,7 +336,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49192",
+    "id": "tv_49191",
     "question": "Which Cardiff television studio site housed Only Connect's earliest recordings up to 2013?",
     "answers": [
       "Roath Lock Studios",
@@ -408,7 +372,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49193",
+    "id": "tv_49192",
     "question": "Which Cardiff studios have been used to record Only Connect from 2014?",
     "answers": [
       "MediaCityUK",
@@ -444,7 +408,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49194",
+    "id": "tv_49193",
     "question": "In which year did the BBC introduce a playable online version of Only Connect's Connecting Wall?",
     "answers": [
       "2010",
@@ -480,7 +444,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49195",
+    "id": "tv_49194",
     "question": "What other broadcaster's puzzle introduced in 2023 attracted comparisons with Only Connect's Connecting Wall?",
     "answers": [
       "ITV",
@@ -516,7 +480,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49196",
+    "id": "tv_49195",
     "question": "Which safety feature separated teammates on Only Connect during some COVID-era recording sessions?",
     "answers": [
       "Soundproof booths",
@@ -552,7 +516,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49197",
+    "id": "tv_49196",
     "question": "During the COVID-era Connecting Wall round, which team member alone could use the wall keyboard?",
     "answers": [
       "The youngest player",
@@ -588,7 +552,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49198",
+    "id": "tv_49197",
     "question": "How many contestants form each team in a standard Only Connect match?",
     "answers": [
       "Three",
@@ -624,43 +588,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49199",
-    "question": "How many competing teams appear in each regular Only Connect match?",
-    "answers": [
-      "Three",
-      "Two",
-      "Four",
-      "Six"
-    ],
-    "correctAnswer": "Two",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "topic": "Only Connect",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC Four",
-      "BBC Two",
-      "UK Quiz Shows",
-      "British Game Shows",
-      "Programme: Only Connect",
-      "Programme: Only Connect (2008–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: Game structure",
-      "Coverage Detail: Teams per episode",
-      "Answer Focus: Two",
-      "Genre: Lateral-thinking television quiz",
-      "Presenter: Victoria Coren Mitchell",
-      "Game Mechanics: Connections, Sequences, Connecting Wall, Missing Vowels",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Only_Connect",
-      "Question Type: Programme history, format, competitions, specials or awards"
-    ]
-  },
-  {
-    "id": "tv_49200",
+    "id": "tv_49198",
     "question": "How many distinct rounds of gameplay make up a standard Only Connect match?",
     "answers": [
       "Three",
@@ -696,7 +624,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49201",
+    "id": "tv_49199",
     "question": "What happens before an Only Connect recording to decide which team goes first?",
     "answers": [
       "An audience vote",
@@ -732,7 +660,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49202",
+    "id": "tv_49200",
     "question": "What type of symbols identified Only Connect's questions during its first three series?",
     "answers": [
       "Greek letters",
@@ -768,7 +696,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49203",
+    "id": "tv_49201",
     "question": "From which numbered series did Egyptian hieroglyphs replace Greek letters on Only Connect?",
     "answers": [
       "Series two",
@@ -804,7 +732,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49204",
+    "id": "tv_49202",
     "question": "Why did the programme jokingly say that Only Connect's Greek letters had been replaced by Egyptian hieroglyphs?",
     "answers": [
       "They could not fit on the screen",
@@ -840,7 +768,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49205",
+    "id": "tv_49203",
     "question": "How many different question-marker symbols are offered on Only Connect's main boards?",
     "answers": [
       "Four",
@@ -876,79 +804,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49206",
-    "question": "Which animal appears as one of the Egyptian hieroglyphs used to choose Only Connect questions?",
-    "answers": [
-      "Lion",
-      "Horse",
-      "Elephant",
-      "Falcon"
-    ],
-    "correctAnswer": "Lion",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "Only Connect",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC Four",
-      "BBC Two",
-      "UK Quiz Shows",
-      "British Game Shows",
-      "Programme: Only Connect",
-      "Programme: Only Connect (2008–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: Game-board symbols",
-      "Coverage Detail: Lion hieroglyph",
-      "Answer Focus: Lion",
-      "Genre: Lateral-thinking television quiz",
-      "Presenter: Victoria Coren Mitchell",
-      "Game Mechanics: Connections, Sequences, Connecting Wall, Missing Vowels",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Only_Connect",
-      "Question Type: Programme history, format, competitions, specials or awards"
-    ]
-  },
-  {
-    "id": "tv_49207",
-    "question": "Which mythical deity's eye supplies one of Only Connect's question symbols?",
-    "answers": [
-      "Osiris",
-      "Horus",
-      "Anubis",
-      "Ra"
-    ],
-    "correctAnswer": "Horus",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "Only Connect",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC Four",
-      "BBC Two",
-      "UK Quiz Shows",
-      "British Game Shows",
-      "Programme: Only Connect",
-      "Programme: Only Connect (2008–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: Game-board symbols",
-      "Coverage Detail: Eye of Horus",
-      "Answer Focus: Horus",
-      "Genre: Lateral-thinking television quiz",
-      "Presenter: Victoria Coren Mitchell",
-      "Game Mechanics: Connections, Sequences, Connecting Wall, Missing Vowels",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Only_Connect",
-      "Question Type: Programme history, format, competitions, specials or awards"
-    ]
-  },
-  {
-    "id": "tv_49208",
+    "id": "tv_49204",
     "question": "In Only Connect's first round, how many related clues can eventually be revealed for one question?",
     "answers": [
       "Three",
@@ -984,7 +840,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49209",
+    "id": "tv_49205",
     "question": "How many seconds does an Only Connect team get to solve a Connections-round question?",
     "answers": [
       "20",
@@ -1020,7 +876,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49210",
+    "id": "tv_49206",
     "question": "How many points can a team earn by solving an Only Connect Connections puzzle after just the first clue?",
     "answers": [
       "Five",
@@ -1056,79 +912,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49211",
-    "question": "How many points can a team earn for solving an Only Connect Connections puzzle after seeing two clues?",
-    "answers": [
-      "One",
-      "Three",
-      "Two",
-      "Five"
-    ],
-    "correctAnswer": "Three",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "Only Connect",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC Four",
-      "BBC Two",
-      "UK Quiz Shows",
-      "British Game Shows",
-      "Programme: Only Connect",
-      "Programme: Only Connect (2008–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: Connections round",
-      "Coverage Detail: Second-clue award",
-      "Answer Focus: Three",
-      "Genre: Lateral-thinking television quiz",
-      "Presenter: Victoria Coren Mitchell",
-      "Game Mechanics: Connections, Sequences, Connecting Wall, Missing Vowels",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Only_Connect",
-      "Question Type: Programme history, format, competitions, specials or awards"
-    ]
-  },
-  {
-    "id": "tv_49212",
-    "question": "How many points is a correct Only Connect Connections answer worth after all four clues are revealed?",
-    "answers": [
-      "Two",
-      "Three",
-      "One",
-      "Five"
-    ],
-    "correctAnswer": "One",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "Only Connect",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC Four",
-      "BBC Two",
-      "UK Quiz Shows",
-      "British Game Shows",
-      "Programme: Only Connect",
-      "Programme: Only Connect (2008–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: Connections round",
-      "Coverage Detail: Last-clue scoring",
-      "Answer Focus: One",
-      "Genre: Lateral-thinking television quiz",
-      "Presenter: Victoria Coren Mitchell",
-      "Game Mechanics: Connections, Sequences, Connecting Wall, Missing Vowels",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Only_Connect",
-      "Question Type: Programme history, format, competitions, specials or awards"
-    ]
-  },
-  {
-    "id": "tv_49213",
+    "id": "tv_49207",
     "question": "How many bonus points may the opposing Only Connect team score if a connection is passed to them?",
     "answers": [
       "Two",
@@ -1164,7 +948,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49214",
+    "id": "tv_49208",
     "question": "How many sets of clues does each Only Connect team normally tackle during the opening Connections round?",
     "answers": [
       "Three",
@@ -1200,7 +984,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49215",
+    "id": "tv_49209",
     "question": "Which two specialist formats routinely turn up among the six Only Connect Connections questions?",
     "answers": [
       "Physical puzzles and dice",
@@ -1236,7 +1020,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49216",
+    "id": "tv_49210",
     "question": "What is the name of the second round in which Only Connect teams work out a fourth item?",
     "answers": [
       "Conundrums",
@@ -1272,7 +1056,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49217",
+    "id": "tv_49211",
     "question": "How many of the four items in an Only Connect Sequences puzzle may a team see before answering?",
     "answers": [
       "One",
@@ -1308,7 +1092,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49218",
+    "id": "tv_49212",
     "question": "What must contestants give to solve an Only Connect Sequences-round puzzle?",
     "answers": [
       "The missing fourth item in a sequence",
@@ -1344,7 +1128,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49219",
+    "id": "tv_49213",
     "question": "From the quarter-finals of which Only Connect series did a music-sequence puzzle sometimes appear?",
     "answers": [
       "Series three",
@@ -1380,7 +1164,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49220",
+    "id": "tv_49214",
     "question": "How much time do Only Connect teams receive to complete their Connecting Wall?",
     "answers": [
       "One minute",
@@ -1416,7 +1200,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49221",
+    "id": "tv_49215",
     "question": "Into how many groups must a team arrange Only Connect's Connecting Wall clues?",
     "answers": [
       "Two",
@@ -1452,7 +1236,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49222",
+    "id": "tv_49216",
     "question": "How many clues must belong to each valid group in an Only Connect Connecting Wall?",
     "answers": [
       "Four",
@@ -1488,7 +1272,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49223",
+    "id": "tv_49217",
     "question": "After finding two groups on an Only Connect wall, how many unsuccessful grouping attempts may a team make before the wall locks?",
     "answers": [
       "One",
@@ -1524,7 +1308,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49224",
+    "id": "tv_49218",
     "question": "What is the maximum score available for successfully finishing the Connecting Wall with all four connections explained?",
     "answers": [
       "Four points",
@@ -1560,7 +1344,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49225",
+    "id": "tv_49219",
     "question": "How many bonus points are awarded for completely solving and explaining all the Connecting Wall groups?",
     "answers": [
       "One",
@@ -1596,7 +1380,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49226",
+    "id": "tv_49220",
     "question": "Why are plausible but incorrect tiles deliberately placed in more than one possible Connecting Wall category?",
     "answers": [
       "To act as red herrings",
@@ -1632,7 +1416,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49227",
+    "id": "tv_49221",
     "question": "What is unusual about where the two Only Connect teams play their Connecting Walls?",
     "answers": [
       "They use a shared board at the same time",
@@ -1668,7 +1452,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49228",
+    "id": "tv_49222",
     "question": "What manipulation disguises answers in Only Connect's Missing Vowels round besides deleting vowels?",
     "answers": [
       "Reversing every letter",
@@ -1704,7 +1488,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49229",
+    "id": "tv_49223",
     "question": "How many points is a correct Missing Vowels answer typically worth on Only Connect?",
     "answers": [
       "Two",
@@ -1740,7 +1524,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49230",
+    "id": "tv_49224",
     "question": "What scoring penalty follows a wrong buzzer answer in the Missing Vowels round?",
     "answers": [
       "One point is deducted",
@@ -1776,7 +1560,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49231",
+    "id": "tv_49225",
     "question": "What is a key difference between Only Connect's Missing Vowels round and the preceding rounds?",
     "answers": [
       "Both teams solve separate walls",
@@ -1812,7 +1596,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49232",
+    "id": "tv_49226",
     "question": "In the standard Missing Vowels round, what is the maximum number of puzzles in each announced category?",
     "answers": [
       "Three",
@@ -1848,7 +1632,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49233",
+    "id": "tv_49227",
     "question": "How many teams started the very first Only Connect championship in 2008?",
     "answers": [
       "Eight",
@@ -1884,7 +1668,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49234",
+    "id": "tv_49228",
     "question": "What was the unusual number of competing teams in Only Connect's twelfth and thirteenth series?",
     "answers": [
       "Twenty-four",
@@ -1920,7 +1704,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49235",
+    "id": "tv_49229",
     "question": "In what series did Only Connect first use a modified double-elimination tournament?",
     "answers": [
       "Series one",
@@ -1956,7 +1740,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49236",
+    "id": "tv_49230",
     "question": "Which Only Connect team won the very first championship in 2008?",
     "answers": [
       "Rugby Boys",
@@ -1992,7 +1776,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49237",
+    "id": "tv_49231",
     "question": "Which team finished runner-up to the Crossworders in Only Connect's first series?",
     "answers": [
       "Cambridge Quiz Society",
@@ -2028,7 +1812,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49238",
+    "id": "tv_49232",
     "question": "Which Only Connect champions from 2009 included future Chaser Mark Labbett?",
     "answers": [
       "Rugby Boys",
@@ -2064,7 +1848,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49239",
+    "id": "tv_49233",
     "question": "Which winning Only Connect team included future Chaser Jenny Ryan in 2010?",
     "answers": [
       "Scribes",
@@ -2100,7 +1884,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49240",
+    "id": "tv_49234",
     "question": "What was the name of the winning Only Connect team in series four?",
     "answers": [
       "Gamblers",
@@ -2136,7 +1920,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49241",
+    "id": "tv_49235",
     "question": "Which team won the fifth series of Only Connect in 2011?",
     "answers": [
       "Scribes",
@@ -2172,7 +1956,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49242",
+    "id": "tv_49236",
     "question": "Which Only Connect team won the sixth series in 2012?",
     "answers": [
       "Scribes",
@@ -2208,7 +1992,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49243",
+    "id": "tv_49237",
     "question": "Which Only Connect team won the tenth series, the first screened on BBC Two?",
     "answers": [
       "String Section",
@@ -2244,7 +2028,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49244",
+    "id": "tv_49238",
     "question": "Which winning team from Only Connect series fifteen included two contestants sharing the surname Fanko?",
     "answers": [
       "Dicers",
@@ -2269,7 +2053,7 @@ const questions = [
       "Programme Status: Ongoing",
       "Coverage Through: 24 November 2026",
       "Era: Series 15 champions",
-      "Coverage Detail: Fanko brothers title team",
+      "Coverage Detail: Team featuring the Fanko surname twice",
       "Answer Focus: 007s",
       "Genre: Lateral-thinking television quiz",
       "Presenter: Victoria Coren Mitchell",
@@ -2280,7 +2064,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49245",
+    "id": "tv_49239",
     "question": "Which team won Only Connect's sixteenth series during COVID-era broadcasting?",
     "answers": [
       "007s",
@@ -2316,7 +2100,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49246",
+    "id": "tv_49240",
     "question": "Which team took the Only Connect series nineteen championship?",
     "answers": [
       "Thrifters",
@@ -2352,7 +2136,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49247",
+    "id": "tv_49241",
     "question": "Which trio took the Only Connect series twenty title?",
     "answers": [
       "Thrifters",
@@ -2388,7 +2172,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49248",
+    "id": "tv_49242",
     "question": "Which team won the twenty-first Only Connect series in a final broadcast in January 2026?",
     "answers": [
       "5ks",
@@ -2424,7 +2208,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49249",
+    "id": "tv_49243",
     "question": "Which team was defeated by the Pitchers in the series twenty-one Only Connect final?",
     "answers": [
       "Worker Bees",
@@ -2460,7 +2244,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49250",
+    "id": "tv_49244",
     "question": "What was the score in the Only Connect series twenty-one final broadcast on 26 January 2026?",
     "answers": [
       "24–21",
@@ -2496,7 +2280,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49251",
+    "id": "tv_49245",
     "question": "Which member of the 2026 winning Only Connect team Pitchers had earlier won BBC Mastermind at a record-young age?",
     "answers": [
       "Mark Labbett",
@@ -2532,7 +2316,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49252",
+    "id": "tv_49246",
     "question": "Which Only Connect Christmas 2009 special paired the winners of the first two series?",
     "answers": [
       "Gamblers versus Epicureans",
@@ -2568,7 +2352,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49253",
+    "id": "tv_49247",
     "question": "Which charity was the subject of a special Only Connect episode broadcast in November 2010?",
     "answers": [
       "Comic Relief",
@@ -2604,7 +2388,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49254",
+    "id": "tv_49248",
     "question": "Which quiz show's champions faced the Crossworders in a 2011 Only Connect crossover special?",
     "answers": [
       "University Challenge",
@@ -2640,7 +2424,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49255",
+    "id": "tv_49249",
     "question": "Which team of familiar BBC quiz experts appeared against Only Connect winning captains in a 2013 special?",
     "answers": [
       "The Chasers",
@@ -2676,7 +2460,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49256",
+    "id": "tv_49250",
     "question": "Which familiar type of festive social game provided the setting for a special Only Connect episode in December 2025?",
     "answers": [
       "Charades",
@@ -2712,7 +2496,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49257",
+    "id": "tv_49251",
     "question": "Which team name was paired with the Taverners in Only Connect's festive 2025 Pub Quiz special?",
     "answers": [
       "Crossworders",
@@ -2748,7 +2532,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49258",
+    "id": "tv_49252",
     "question": "On which date did Only Connect series 22 begin on BBC Two?",
     "answers": [
       "13 July 2026",
@@ -2784,7 +2568,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49259",
+    "id": "tv_49253",
     "question": "What series number of Only Connect was being broadcast in November 2026?",
     "answers": [
       "Twenty",
@@ -2820,7 +2604,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49260",
+    "id": "tv_49254",
     "question": "Which British television awards nominated Victoria Coren Mitchell for her Only Connect performance in 2022?",
     "answers": [
       "BAFTA Film Awards",
@@ -2856,7 +2640,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49261",
+    "id": "tv_49255",
     "question": "In which Royal Television Society 2022 category was Only Connect's Victoria Coren Mitchell nominated?",
     "answers": [
       "Daytime Programme",
@@ -2892,7 +2676,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49262",
+    "id": "tv_49256",
     "question": "Which pair won the 2022 Royal Television Society Entertainment Performance award ahead of nominee Victoria Coren Mitchell?",
     "answers": [
       "AJ Odudu and Mo Gilligan",
@@ -2928,7 +2712,7 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==81||new Set(questions.map(x=>x.id)).size!==questions.length||
+if(questions.length!==75||new Set(questions.map(x=>x.id)).size!==questions.length||
 new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
 questions.some((x,i)=>x.id!=='tv_'+(49182+i)||x.category!=='TV'||x.topic!=='Only Connect'||
 x.answers.length!==4||new Set(x.answers.map(a=>a.toLowerCase())).size!==4||
