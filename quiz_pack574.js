@@ -1,6 +1,6 @@
 // PuzzlePilot Bigggggg Quiz Pack 574: Pointless (BBC, 2009–present).
 // Supplement to Pack 209; preserves original four Pointless questions.
-// 68 NEW questions (tv_48988–tv_49055), audited through 24 Nov 2026.
+// 65 NEW questions (tv_48988–tv_49052), audited through 24 Nov 2026.
 // Complete relevant coverage of the main daily programme: origins and development,
 // early BBC Two years, production/music, audience survey and scoring mechanics,
 // full elimination and head-to-head structures and historical round changes,
@@ -575,41 +575,6 @@ const questions = [
   },
   {
     "id": "tv_49004",
-    "question": "In the elimination rounds of Pointless, is a larger or smaller score desirable?",
-    "answers": [
-      "Smaller",
-      "Larger",
-      "Exactly fifty",
-      "The same as your opponents"
-    ],
-    "correctAnswer": "Smaller",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "topic": "Pointless",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC One",
-      "BBC Two",
-      "Quiz Shows",
-      "BBC Game Shows",
-      "Programme: Pointless",
-      "Programme: Pointless (2009–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: Scoring",
-      "Coverage Detail: Low-score target",
-      "Answer Focus: Smaller",
-      "Format: Reverse survey quiz",
-      "Original duo: Alexander Armstrong and Richard Osman",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Pointless",
-      "Question Type: Programme history, format, presenters or awards"
-    ]
-  },
-  {
-    "id": "tv_49005",
     "question": "Which team is normally eliminated at the end of each of the first two Pointless rounds?",
     "answers": [
       "The lowest-scoring team in that round",
@@ -644,7 +609,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49006",
+    "id": "tv_49005",
     "question": "How many separate elimination rounds take place before the Pointless head-to-head?",
     "answers": [
       "One",
@@ -679,7 +644,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49007",
+    "id": "tv_49006",
     "question": "How many passes of the question does each team normally play in a Pointless elimination round?",
     "answers": [
       "One",
@@ -714,7 +679,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49008",
+    "id": "tv_49007",
     "question": "In the Pointless elimination stages, may team members discuss an answer before their turn?",
     "answers": [
       "No",
@@ -749,7 +714,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49009",
+    "id": "tv_49008",
     "question": "How is the order of play decided for the first pass of Pointless's opening round?",
     "answers": [
       "Audience applause",
@@ -784,7 +749,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49010",
+    "id": "tv_49009",
     "question": "How does the order of play normally change for the second pass of a Pointless elimination round?",
     "answers": [
       "It stays the same",
@@ -819,7 +784,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49011",
+    "id": "tv_49010",
     "question": "What happens if teams tie for the highest score at the end of a Pointless elimination round?",
     "answers": [
       "Both teams always leave",
@@ -854,7 +819,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49012",
+    "id": "tv_49011",
     "question": "What was the name of the Pointless board format introduced in series two, featuring a list of possible responses?",
     "answers": [
       "Possible Answers",
@@ -889,7 +854,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49013",
+    "id": "tv_49012",
     "question": "Which Pointless round format involves matching given clues with answers rather than choosing freely?",
     "answers": [
       "Open-Ended",
@@ -924,7 +889,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49014",
+    "id": "tv_49013",
     "question": "During which Pointless series did the Linked Categories question format first appear?",
     "answers": [
       "Series two",
@@ -959,7 +924,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49015",
+    "id": "tv_49014",
     "question": "Which Pointless question format involves identifying images shown in a grid?",
     "answers": [
       "Part Identification",
@@ -994,7 +959,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49016",
+    "id": "tv_49015",
     "question": "In which Pointless series was the Picture Board format introduced?",
     "answers": [
       "Series seven",
@@ -1029,7 +994,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49017",
+    "id": "tv_49016",
     "question": "Which Pointless format introduced in series 24 asks players to sort items into the correct categories?",
     "answers": [
       "Possible Answers",
@@ -1064,7 +1029,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49018",
+    "id": "tv_49017",
     "question": "What is the final contest between two surviving Pointless teams called?",
     "answers": [
       "Gold Run",
@@ -1099,7 +1064,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49019",
+    "id": "tv_49018",
     "question": "How many head-to-head questions must a Pointless team win in the standard modern best-of-three contest?",
     "answers": [
       "One",
@@ -1134,7 +1099,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49020",
+    "id": "tv_49019",
     "question": "Unlike the elimination rounds, what can both Pointless teams do during the head-to-head?",
     "answers": [
       "Confer with their partners",
@@ -1169,7 +1134,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49021",
+    "id": "tv_49020",
     "question": "In Pointless's additional no-elimination round introduced during series 23, what was the main possible reward?",
     "answers": [
       "A second chance at a final",
@@ -1204,7 +1169,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49022",
+    "id": "tv_49021",
     "question": "How many possible answers were displayed in Pointless's bonus round introduced during series 23?",
     "answers": [
       "Four",
@@ -1239,7 +1204,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49023",
+    "id": "tv_49022",
     "question": "Of the six answers in the series-23 Pointless bonus board, how many were deliberately incorrect?",
     "answers": [
       "One",
@@ -1274,42 +1239,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49024",
-    "question": "How many Pointless teams are left to take part in the jackpot final?",
-    "answers": [
-      "One",
-      "Two",
-      "Three",
-      "Four"
-    ],
-    "correctAnswer": "One",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "topic": "Pointless",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC One",
-      "BBC Two",
-      "Quiz Shows",
-      "BBC Game Shows",
-      "Programme: Pointless",
-      "Programme: Pointless (2009–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: Final round",
-      "Coverage Detail: Finalist pair count",
-      "Answer Focus: One",
-      "Format: Reverse survey quiz",
-      "Original duo: Alexander Armstrong and Richard Osman",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Pointless",
-      "Question Type: Programme history, format, presenters or awards"
-    ]
-  },
-  {
-    "id": "tv_49025",
+    "id": "tv_49023",
     "question": "What do the winning pair receive for reaching the Pointless final even if they fail to claim the cash jackpot?",
     "answers": [
       "A holiday",
@@ -1344,7 +1274,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49026",
+    "id": "tv_49024",
     "question": "How long can the final Pointless pair discuss their chosen topic before submitting answers?",
     "answers": [
       "30 seconds",
@@ -1379,7 +1309,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49027",
+    "id": "tv_49025",
     "question": "How many answers does a Pointless finalist team normally submit in an attempt to win the jackpot?",
     "answers": [
       "One",
@@ -1414,7 +1344,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49028",
+    "id": "tv_49026",
     "question": "How many of a Pointless finalist pair's three answers need to be correct and pointless to win the usual jackpot?",
     "answers": [
       "One",
@@ -1449,7 +1379,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49029",
+    "id": "tv_49027",
     "question": "What happens to the ordinary Pointless jackpot when the finalists do not provide a pointless answer?",
     "answers": [
       "It is split between both finalists",
@@ -1484,7 +1414,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49030",
+    "id": "tv_49028",
     "question": "By how much is a regular Pointless jackpot increased for each pointless answer outside the final?",
     "answers": [
       "£100",
@@ -1519,7 +1449,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49031",
+    "id": "tv_49029",
     "question": "By how much is the regular Pointless jackpot raised for a new episode when the previous show's final did not win it?",
     "answers": [
       "£250",
@@ -1554,7 +1484,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49032",
+    "id": "tv_49030",
     "question": "To what basic amount does the regular Pointless jackpot reset following a jackpot win?",
     "answers": [
       "£1,000",
@@ -1589,7 +1519,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49033",
+    "id": "tv_49031",
     "question": "What extra cash bonus was introduced for a Pointless final containing three pointless answers from series 29?",
     "answers": [
       "£100",
@@ -1624,7 +1554,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49034",
+    "id": "tv_49032",
     "question": "What sum did a pair win in the record-setting 8 March 2013 Pointless jackpot episode?",
     "answers": [
       "£20,250",
@@ -1659,7 +1589,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49035",
+    "id": "tv_49033",
     "question": "What milestone did Pointless celebrate in its special episode first transmitted in January 2017?",
     "answers": [
       "Its 500th episode",
@@ -1694,7 +1624,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49036",
+    "id": "tv_49034",
     "question": "What did Alexander Armstrong and Richard Osman do in the 1,000th episode of Pointless?",
     "answers": [
       "They swapped their usual presenting duties",
@@ -1729,7 +1659,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49037",
+    "id": "tv_49035",
     "question": "Which series was Richard Osman's last as regular Pointless co-host before guest co-hosts took over?",
     "answers": [
       "Series 25",
@@ -1764,7 +1694,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49038",
+    "id": "tv_49036",
     "question": "In what year did Richard Osman announce he was stepping down from the regular daytime Pointless?",
     "answers": [
       "2019",
@@ -1799,7 +1729,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49039",
+    "id": "tv_49037",
     "question": "Why did Richard Osman leave regular daytime Pointless in 2022?",
     "answers": [
       "He was moving to a rival ITV quiz",
@@ -1834,7 +1764,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49040",
+    "id": "tv_49038",
     "question": "What arrangement replaced Richard Osman's permanent co-host chair on regular Pointless?",
     "answers": [
       "A rotation of guest co-hosts",
@@ -1869,7 +1799,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49041",
+    "id": "tv_49039",
     "question": "Which Coronation Street actress was among the first Pointless guest co-hosts announced in 2022?",
     "answers": [
       "Helen Worth",
@@ -1904,7 +1834,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49042",
+    "id": "tv_49040",
     "question": "Which former Blue Peter presenter was named as a Pointless guest co-host in May 2022?",
     "answers": [
       "Katy Hill",
@@ -1939,7 +1869,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49043",
+    "id": "tv_49041",
     "question": "Which radio presenter and BBC music broadcaster was listed among Pointless's 2022 guest co-hosts?",
     "answers": [
       "Annie Mac",
@@ -1974,7 +1904,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49044",
+    "id": "tv_49042",
     "question": "Which comedian and presenter whose television credits include Taskmaster was announced as a Pointless guest co-host in 2022?",
     "answers": [
       "Ed Gamble",
@@ -2009,7 +1939,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49045",
+    "id": "tv_49043",
     "question": "Which comic actor and former double-act partner of Alexander Armstrong was announced as a Pointless guest co-host in 2026?",
     "answers": [
       "David Mitchell",
@@ -2044,7 +1974,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49046",
+    "id": "tv_49044",
     "question": "Which singer and musical-theatre star joined the roster of Pointless guest co-hosts in 2026?",
     "answers": [
       "Michael Bolton",
@@ -2079,7 +2009,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49047",
+    "id": "tv_49045",
     "question": "Which actress from the sitcom Chewing Gum was announced as a 2026 Pointless co-host?",
     "answers": [
       "Michaela Coel",
@@ -2114,7 +2044,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49048",
+    "id": "tv_49046",
     "question": "Which fashion and television presenter was among Pointless's 2026 co-host line-up?",
     "answers": [
       "Gok Wan",
@@ -2149,7 +2079,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49049",
+    "id": "tv_49047",
     "question": "What series number had daytime Pointless reached by September 2026?",
     "answers": [
       "26",
@@ -2184,7 +2114,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49050",
+    "id": "tv_49048",
     "question": "Which television award did Pointless win in the Daytime Programme category in 2015?",
     "answers": [
       "BAFTA TV Award",
@@ -2219,7 +2149,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49051",
+    "id": "tv_49049",
     "question": "What was Pointless's result in the Daytime category at the 2014 Royal Television Society Programme Awards?",
     "answers": [
       "Won",
@@ -2254,7 +2184,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49052",
+    "id": "tv_49050",
     "question": "Which programme won the 2014 Royal Television Society Daytime award ahead of Pointless and The Chase?",
     "answers": [
       "Four Rooms",
@@ -2289,7 +2219,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49053",
+    "id": "tv_49051",
     "question": "Which programme beat Pointless to the Daytime award at the 2016 National Television Awards?",
     "answers": [
       "Eggheads",
@@ -2324,7 +2254,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49054",
+    "id": "tv_49052",
     "question": "Which awards shortlisted Pointless for their Most Popular Daytime Programme category in 2014?",
     "answers": [
       "BAFTA Children's Awards",
@@ -2357,44 +2287,9 @@ const questions = [
       "Source: https://www.ukgameshows.com/ukgs/Award_Winners",
       "Question Type: Programme history, format, presenters or awards"
     ]
-  },
-  {
-    "id": "tv_49055",
-    "question": "Which company commissioned the BBC's regular Pointless series that had reached series 36 by autumn 2026?",
-    "answers": [
-      "ITV",
-      "Channel 4",
-      "Sky",
-      "The BBC"
-    ],
-    "correctAnswer": "The BBC",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "topic": "Pointless",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC One",
-      "BBC Two",
-      "Quiz Shows",
-      "BBC Game Shows",
-      "Programme: Pointless",
-      "Programme: Pointless (2009–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: 2026 ongoing",
-      "Coverage Detail: Main broadcaster",
-      "Answer Focus: The BBC",
-      "Format: Reverse survey quiz",
-      "Original duo: Alexander Armstrong and Richard Osman",
-      "Country: United Kingdom",
-      "Source: https://banijayuk.com/new-line-up-of-celebrity-hosts-join-bbcs-pointless/",
-      "Question Type: Programme history, format, presenters or awards"
-    ]
   }
 ];
-if(questions.length!==68||new Set(questions.map(x=>x.id)).size!==questions.length||
+if(questions.length!==65||new Set(questions.map(x=>x.id)).size!==questions.length||
 new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
 questions.some((x,i)=>x.id!=='tv_'+(48988+i)||x.category!=='TV'||x.topic!=='Pointless'||
 x.answers.length!==4||new Set(x.answers.map(a=>a.toLowerCase())).size!==4||
