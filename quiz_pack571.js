@@ -1,7 +1,7 @@
 // PuzzlePilot Bigggggg Quiz — Pack 571: University Challenge (1962–present; through 24 November 2026).
 // Supplemental audit of University Challenge in the early mixed Pack 209.
 // Preserve all five existing University Challenge questions in Pack 209.
-// 80 NEW questions, IDs tv_48764–tv_48843.
+// 78 NEW questions, IDs tv_48764–tv_48841.
 // Coverage: Granada/ITV 1962–1987, BBC Two 1994 revival, format and score changes,
 // original and revised tournament structures, programme music, historical champions,
 // notable scandals, successive Amol Rajan champions 2024, 2025 and 2026,
@@ -1134,41 +1134,6 @@ const questions = [
   },
   {
     "id": "tv_48796",
-    "question": "Under University Challenge's 1986 experiment, what was passed between individual players for head-to-head questions?",
-    "answers": [
-      "A baton",
-      "A sealed envelope",
-      "A microphone",
-      "A book"
-    ],
-    "correctAnswer": "A baton",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "University Challenge",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC Television",
-      "ITV History",
-      "University Quiz",
-      "Quiz Show",
-      "Programme: University Challenge",
-      "Programme: University Challenge (1962–present)",
-      "Programme Status: Ongoing",
-      "Episode Coverage Through: 24 November 2026",
-      "Era: 1986 experimental era",
-      "Coverage Detail: Individual match-ups",
-      "Answer Focus: A baton",
-      "Programme Creator: Granada Television",
-      "Format: Four-player university teams",
-      "Country: United Kingdom",
-      "Source: https://www.blanchflower.org/uc/show_history.html",
-      "Question Type: History, rules, winners, alumni, awards"
-    ]
-  },
-  {
-    "id": "tv_48797",
     "question": "What was the title of University Challenge's distinctive long-running theme tune?",
     "answers": [
       "Approaching Menace",
@@ -1203,7 +1168,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48798",
+    "id": "tv_48797",
     "question": "Who composed the University Challenge theme music College Boy?",
     "answers": [
       "Neil Richardson",
@@ -1238,7 +1203,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48799",
+    "id": "tv_48798",
     "question": "Which string ensemble recorded a version of the University Challenge theme that has been used since 2001?",
     "answers": [
       "Brodsky Quartet",
@@ -1273,7 +1238,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48800",
+    "id": "tv_48799",
     "question": "Which Scottish institution won the 1982 University Challenge championship?",
     "answers": [
       "University of St Andrews",
@@ -1308,7 +1273,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48801",
+    "id": "tv_48800",
     "question": "Which university won the last University Challenge series hosted by Bamber Gascoigne in 1987?",
     "answers": [
       "Jesus College, Oxford",
@@ -1343,7 +1308,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48802",
+    "id": "tv_48801",
     "question": "Which Cambridge college won the first University Challenge championship after the BBC revival in 1995?",
     "answers": [
       "Churchill College, Cambridge",
@@ -1378,7 +1343,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48803",
+    "id": "tv_48802",
     "question": "Who made a special appearance to present the trophy to University Challenge's first BBC-revival champions?",
     "answers": [
       "Magnus Magnusson",
@@ -1413,7 +1378,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48804",
+    "id": "tv_48803",
     "question": "Which university was crowned University Challenge champion in both 1997 and 1998?",
     "answers": [
       "Magdalen College, Oxford",
@@ -1448,7 +1413,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48805",
+    "id": "tv_48804",
     "question": "Which distance-learning institution won University Challenge in 1999?",
     "answers": [
       "Birkbeck, University of London",
@@ -1483,7 +1448,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48806",
+    "id": "tv_48805",
     "question": "Which university won University Challenge in 2003?",
     "answers": [
       "Imperial College London",
@@ -1518,7 +1483,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48807",
+    "id": "tv_48806",
     "question": "Which university took the University Challenge title in 2006, the first of its five championships through 2026?",
     "answers": [
       "University of Warwick",
@@ -1553,7 +1518,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48808",
+    "id": "tv_48807",
     "question": "Which Oxford college was initially declared the winner of University Challenge in 2009 before disqualification?",
     "answers": [
       "Corpus Christi College, Oxford",
@@ -1588,7 +1553,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48809",
+    "id": "tv_48808",
     "question": "Why did the 2009 University Challenge championship result have to be amended?",
     "answers": [
       "The answer sheet had been leaked by a producer",
@@ -1623,7 +1588,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48810",
+    "id": "tv_48809",
     "question": "Which team was awarded the 2009 University Challenge title after Corpus Christi College's disqualification?",
     "answers": [
       "University of Oxford",
@@ -1658,7 +1623,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48811",
+    "id": "tv_48810",
     "question": "Which contestant was ruled ineligible in the 2009 University Challenge final controversy?",
     "answers": [
       "Gail Trimble",
@@ -1693,7 +1658,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48812",
+    "id": "tv_48811",
     "question": "Which captain attracted widespread media attention for her quiz performances in the 2008–09 University Challenge tournament?",
     "answers": [
       "Gail Trimble",
@@ -1728,7 +1693,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48813",
+    "id": "tv_48812",
     "question": "Who captained Emmanuel College, Cambridge to the University Challenge title in 2010?",
     "answers": [
       "John Stewart",
@@ -1763,7 +1728,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48814",
+    "id": "tv_48813",
     "question": "Which university won University Challenge in consecutive seasons in 2012 and 2013?",
     "answers": [
       "University of Edinburgh",
@@ -1798,7 +1763,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48815",
+    "id": "tv_48814",
     "question": "Which university won University Challenge in 2019, becoming the first Scottish winner of the BBC revival?",
     "answers": [
       "University of Glasgow",
@@ -1833,7 +1798,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48816",
+    "id": "tv_48815",
     "question": "Which London university took University Challenge's 2020 championship?",
     "answers": [
       "Imperial College London",
@@ -1868,7 +1833,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48817",
+    "id": "tv_48816",
     "question": "Which institution won University Challenge in 2021 after facing Magdalene College, Cambridge in the final?",
     "answers": [
       "University of Manchester",
@@ -1903,7 +1868,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48818",
+    "id": "tv_48817",
     "question": "Which team won Jeremy Paxman's final season of University Challenge in 2023?",
     "answers": [
       "Imperial College London",
@@ -1938,7 +1903,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48819",
+    "id": "tv_48818",
     "question": "Which institution won the first University Challenge season fully presented by Amol Rajan, ending in 2024?",
     "answers": [
       "University College London",
@@ -1973,15 +1938,15 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48820",
-    "question": "Which team defeated University College London to win the 2024 University Challenge final?",
+    "id": "tv_48819",
+    "question": "Who captained Imperial College London's University Challenge championship team in 2024?",
     "answers": [
-      "Imperial College London",
-      "University of Manchester",
-      "Trinity College, Cambridge",
-      "Magdalen College, Oxford"
+      "Adam Jones",
+      "Suraiya Haddad",
+      "Sourajit Debnath",
+      "Justin Lee"
     ],
-    "correctAnswer": "Imperial College London",
+    "correctAnswer": "Suraiya Haddad",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "University Challenge",
@@ -1998,17 +1963,17 @@ const questions = [
       "Programme Status: Ongoing",
       "Episode Coverage Through: 24 November 2026",
       "Era: 2024",
-      "Coverage Detail: Final opposition and winner",
-      "Answer Focus: Imperial College London",
+      "Coverage Detail: 2024 winning captain",
+      "Answer Focus: Suraiya Haddad",
       "Programme Creator: Granada Television",
       "Format: Four-player university teams",
       "Country: United Kingdom",
-      "Source: https://www.ukgameshows.com/ukgs/Weaver's_Week_2024-04-14",
+      "Source: https://www.blanchflower.org/uc/winners_members.html",
       "Question Type: History, rules, winners, alumni, awards"
     ]
   },
   {
-    "id": "tv_48821",
+    "id": "tv_48820",
     "question": "Who won University Challenge in 2025 for the first time, defeating Warwick by just five points?",
     "answers": [
       "King's College, Cambridge",
@@ -2043,7 +2008,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48822",
+    "id": "tv_48821",
     "question": "What was the final score when Christ's College, Cambridge beat Warwick in the 2025 University Challenge final?",
     "answers": [
       "145–105",
@@ -2078,7 +2043,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48823",
+    "id": "tv_48822",
     "question": "Which actor presented the 2025 University Challenge trophy at Cambridge's ADC Theatre?",
     "answers": [
       "Sir Patrick Stewart",
@@ -2113,7 +2078,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48824",
+    "id": "tv_48823",
     "question": "Who captained Christ's College, Cambridge in its 2025 University Challenge title-winning run?",
     "answers": [
       "Oscar Despard",
@@ -2148,7 +2113,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48825",
+    "id": "tv_48824",
     "question": "Which university won University Challenge's 2026 grand final against Edinburgh?",
     "answers": [
       "Imperial College London",
@@ -2183,7 +2148,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48826",
+    "id": "tv_48825",
     "question": "What was the score in the 2026 University Challenge final between Manchester and Edinburgh?",
     "answers": [
       "175–170",
@@ -2218,7 +2183,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48827",
+    "id": "tv_48826",
     "question": "How many University Challenge championships had Manchester won after its 2026 victory?",
     "answers": [
       "Three",
@@ -2253,7 +2218,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48828",
+    "id": "tv_48827",
     "question": "Which university shared the record of five University Challenge championships with Manchester after April 2026?",
     "answers": [
       "Imperial College London",
@@ -2288,8 +2253,8 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48829",
-    "question": "Which Manchester contestant was especially noted for winning all nine of the team's starter points in the 2026 final?",
+    "id": "tv_48828",
+    "question": "Which Manchester contestant answered all nine of the team's starter questions correctly in the 2026 University Challenge final?",
     "answers": [
       "Ray Power",
       "Kai Madgwick",
@@ -2323,7 +2288,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48830",
+    "id": "tv_48829",
     "question": "Who presented the trophy to the University of Manchester's 2026 University Challenge winners?",
     "answers": [
       "Sir Ian McKellen",
@@ -2358,7 +2323,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48831",
+    "id": "tv_48830",
     "question": "What was the title of the 2002 series that brought past University Challenge teams back to compete?",
     "answers": [
       "University Challenge Champions Returns",
@@ -2393,7 +2358,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48832",
+    "id": "tv_48831",
     "question": "Which Cambridge college won the 2002 University Challenge Reunited tournament?",
     "answers": [
       "Sidney Sussex College, Cambridge",
@@ -2428,7 +2393,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48833",
+    "id": "tv_48832",
     "question": "Which BBC spin-off of University Challenge pits teams of professionals against each other?",
     "answers": [
       "University Challenge: The Lecturers",
@@ -2463,7 +2428,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48834",
+    "id": "tv_48833",
     "question": "What kind of contestants compete in Christmas University Challenge?",
     "answers": [
       "University freshers competing for scholarships",
@@ -2498,7 +2463,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48835",
+    "id": "tv_48834",
     "question": "Which David Nicholls novel about a student involved in a university quiz took its title from a famous University Challenge phrase?",
     "answers": [
       "One Day",
@@ -2533,7 +2498,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48836",
+    "id": "tv_48835",
     "question": "Which television sitcom famously spoofed University Challenge in an episode titled Bambi?",
     "answers": [
       "The Young Ones",
@@ -2568,7 +2533,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48837",
+    "id": "tv_48836",
     "question": "Who played the quizmaster in The Young Ones' University Challenge parody?",
     "answers": [
       "Bamber Gascoigne",
@@ -2603,7 +2568,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48838",
+    "id": "tv_48837",
     "question": "Which former University Challenge contestant later became known for comedy and QI presenting?",
     "answers": [
       "Graham Norton",
@@ -2638,8 +2603,8 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48839",
-    "question": "Who appeared as a University Challenge contestant before becoming an Oscar-winning actor known for Harry Potter films?",
+    "id": "tv_48838",
+    "question": "Which former University Challenge contestant went on to play Professor Sprout in the Harry Potter films?",
     "answers": [
       "Emma Thompson",
       "Judi Dench",
@@ -2663,7 +2628,7 @@ const questions = [
       "Programme Status: Ongoing",
       "Episode Coverage Through: 24 November 2026",
       "Era: Famous contestants",
-      "Coverage Detail: Miriam Margolyes",
+      "Coverage Detail: Miriam Margolyes as Professor Sprout",
       "Answer Focus: Miriam Margolyes",
       "Programme Creator: Granada Television",
       "Format: Four-player university teams",
@@ -2673,7 +2638,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48840",
+    "id": "tv_48839",
     "question": "Where did University Challenge place in the British Film Institute's 2000 ranking of the 100 greatest British TV programmes?",
     "answers": [
       "34th",
@@ -2708,7 +2673,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48841",
+    "id": "tv_48840",
     "question": "Which British broadcasting body nominated University Challenge for Best Entertainment Programme at its North West Awards in 2024?",
     "answers": [
       "BAFTA Scotland",
@@ -2743,7 +2708,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48842",
+    "id": "tv_48841",
     "question": "Which entertainment programme beat University Challenge to the Royal Television Society North West Best Entertainment Programme award in 2024?",
     "answers": [
       "Wheel of Fortune",
@@ -2776,44 +2741,9 @@ const questions = [
       "Source: https://rts.org.uk/award/rts-nw-awards-2024-winners",
       "Question Type: History, rules, winners, alumni, awards"
     ]
-  },
-  {
-    "id": "tv_48843",
-    "question": "In 2024, was University Challenge a winner or nominee in the RTS North West Best Entertainment Programme category?",
-    "answers": [
-      "Winner",
-      "Special jury winner",
-      "Not shortlisted",
-      "Nominee"
-    ],
-    "correctAnswer": "Nominee",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "topic": "University Challenge",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC Television",
-      "ITV History",
-      "University Quiz",
-      "Quiz Show",
-      "Programme: University Challenge",
-      "Programme: University Challenge (1962–present)",
-      "Programme Status: Ongoing",
-      "Episode Coverage Through: 24 November 2026",
-      "Era: 2024 awards",
-      "Coverage Detail: Award result status",
-      "Answer Focus: Nominee",
-      "Programme Creator: Granada Television",
-      "Format: Four-player university teams",
-      "Country: United Kingdom",
-      "Source: https://rts.org.uk/award/rts-nw-awards-2024-winners",
-      "Question Type: History, rules, winners, alumni, awards"
-    ]
   }
 ];
-if(questions.length!==80||new Set(questions.map(x=>x.id)).size!==questions.length||
+if(questions.length!==78||new Set(questions.map(x=>x.id)).size!==questions.length||
 new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
 questions.some((x,i)=>x.id!=='tv_'+(48764+i)||x.category!=='TV'||x.topic!=='University Challenge'||
 x.answers.length!==4||new Set(x.answers.map(a=>a.toLowerCase())).size!==4||
