@@ -1545,14 +1545,14 @@ const questions = [
   },
   {
     "id": "tv_48737",
-    "question": "Which sport provided the theme of a 2008 Mastermind spin-off presented by Des Lynam?",
+    "question": "How many episodes were made of the 2008 BBC quiz spin-off Sport Mastermind?",
     "answers": [
-      "Football only",
-      "Sport in general",
-      "Cricket only",
-      "Motor racing only"
+      "Six",
+      "Ten",
+      "Eight",
+      "Twelve"
     ],
-    "correctAnswer": "Sport in general",
+    "correctAnswer": "Ten",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "Mastermind",
@@ -1568,8 +1568,8 @@ const questions = [
       "Programme Status: Ongoing",
       "Episode Coverage Through: 24 November 2026",
       "Era: 2008",
-      "Coverage Detail: Sport Mastermind remit",
-      "Answer Focus: Sport in general",
+      "Coverage Detail: Sport Mastermind episode count",
+      "Answer Focus: Ten",
       "Presenter Era: Magnus Magnusson / John Humphrys / Clive Myrie",
       "Game Format: Specialist Subject and General Knowledge",
       "Country: United Kingdom",
@@ -2055,7 +2055,7 @@ const questions = [
   },
   {
     "id": "tv_48752",
-    "question": "Which Mastermind champion of 2016 finally won the title on her fifth appearance in the competition?",
+    "question": "Which Mastermind champion of 2017 finally won the title on her fifth appearance in the competition?",
     "answers": [
       "Isabelle Heward",
       "Anne Ashurst",
@@ -2077,7 +2077,7 @@ const questions = [
       "Programme: Mastermind (1972–present)",
       "Programme Status: Ongoing",
       "Episode Coverage Through: 24 November 2026",
-      "Era: 2016",
+      "Era: 2017",
       "Coverage Detail: Persistent returning contender",
       "Answer Focus: Isabelle Heward",
       "Presenter Era: Magnus Magnusson / John Humphrys / Clive Myrie",
