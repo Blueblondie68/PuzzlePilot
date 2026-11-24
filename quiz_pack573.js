@@ -1,6 +1,6 @@
 // PuzzlePilot — Bigggggg Quiz — Pack 573: The Weakest Link (BBC UK, 2000–present).
 // Full programme-by-programme supplement for quiz show audit; preserve 5 existing related questions in Pack 209.
-// 75 NEW questions tv_48920–tv_48994; covers through 24 November 2026.
+// 68 NEW questions tv_48920–tv_48987; covers through 24 November 2026.
 // Scope: creation, development, narrator, music, nine-player format, money chain, voting,
 // original 2000–2012 BBC Two/BBC One era, 2001 Champions League, 2004 Eurovision,
 // 2005–07 puppets, 2006 episode 1000, Glasgow relocation, 2017 Children in Need return,
@@ -1381,14 +1381,14 @@ const questions = [
   },
   {
     "id": "tv_48958",
-    "question": "Which long-running BBC daytime series was moved to BBC One in February 2008?",
+    "question": "In which month and year did the daytime version of The Weakest Link move from BBC Two to BBC One?",
     "answers": [
-      "Pointless",
-      "Tipping Point",
-      "The Weakest Link",
-      "The Chase"
+      "February 2008",
+      "September 2011",
+      "August 2000",
+      "November 2017"
     ],
-    "correctAnswer": "The Weakest Link",
+    "correctAnswer": "February 2008",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "The Weakest Link",
@@ -1407,7 +1407,7 @@ const questions = [
       "Coverage Through: 24 November 2026",
       "Era: 2008 scheduling",
       "Coverage Detail: BBC daytime channel switch",
-      "Answer Focus: The Weakest Link",
+      "Answer Focus: February 2008",
       "Format: Question Chains, Banking and Elimination",
       "Presenters: Anne Robinson and Romesh Ranganathan",
       "Country: United Kingdom",
@@ -1741,42 +1741,6 @@ const questions = [
   },
   {
     "id": "tv_48968",
-    "question": "Which unusual group of performers competed in a special version of The Weakest Link aired in 2007?",
-    "answers": [
-      "Television puppets",
-      "Professional football referees",
-      "Royal household staff",
-      "Stunt drivers"
-    ],
-    "correctAnswer": "Television puppets",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "The Weakest Link",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC",
-      "BBC Two",
-      "BBC One",
-      "Quiz Shows",
-      "British Game Shows",
-      "Programme: The Weakest Link",
-      "Programme: The Weakest Link (2000–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: 2007 specials",
-      "Coverage Detail: Puppets special",
-      "Answer Focus: Television puppets",
-      "Format: Question Chains, Banking and Elimination",
-      "Presenters: Anne Robinson and Romesh Ranganathan",
-      "Country: United Kingdom",
-      "Source: https://ukgameshows.com/ukgs/The_Weakest_Link",
-      "Question Type: Format, History, Presenter, Special, Award"
-    ]
-  },
-  {
-    "id": "tv_48969",
     "question": "What type of special edition brought back the original host of The Weakest Link for one night in 2017?",
     "answers": [
       "BBC Sports Personality charity edition",
@@ -1812,7 +1776,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48970",
+    "id": "tv_48969",
     "question": "On which date did The Weakest Link return for a one-off BBC Children in Need episode?",
     "answers": [
       "17 November 2016",
@@ -1848,7 +1812,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48971",
+    "id": "tv_48970",
     "question": "How many celebrities competed in The Weakest Link's 2017 Children in Need special?",
     "answers": [
       "Six",
@@ -1884,7 +1848,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48972",
+    "id": "tv_48971",
     "question": "When did the original Anne Robinson era of The Weakest Link come to an end?",
     "answers": [
       "2012",
@@ -1920,43 +1884,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48973",
-    "question": "Which year brought The Weakest Link back as a full BBC One series after the 2017 special?",
-    "answers": [
-      "2018",
-      "2021",
-      "2019",
-      "2023"
-    ],
-    "correctAnswer": "2021",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "topic": "The Weakest Link",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC",
-      "BBC Two",
-      "BBC One",
-      "Quiz Shows",
-      "British Game Shows",
-      "Programme: The Weakest Link",
-      "Programme: The Weakest Link (2000–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: 2021 revival",
-      "Coverage Detail: Revival launch year",
-      "Answer Focus: 2021",
-      "Format: Question Chains, Banking and Elimination",
-      "Presenters: Anne Robinson and Romesh Ranganathan",
-      "Country: United Kingdom",
-      "Source: https://ukgameshows.com/ukgs/The_Weakest_Link",
-      "Question Type: Format, History, Presenter, Special, Award"
-    ]
-  },
-  {
-    "id": "tv_48974",
+    "id": "tv_48972",
     "question": "On which date did the Romesh Ranganathan revival of The Weakest Link first air?",
     "answers": [
       "18 December 2020",
@@ -1992,7 +1920,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48975",
+    "id": "tv_48973",
     "question": "How many contestants usually begin a Romesh Ranganathan-era Weakest Link episode?",
     "answers": [
       "Six",
@@ -2028,7 +1956,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48976",
+    "id": "tv_48974",
     "question": "In the Romesh Ranganathan revival, how long is the first Weakest Link timed round?",
     "answers": [
       "Two minutes and thirty seconds",
@@ -2064,7 +1992,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48977",
+    "id": "tv_48975",
     "question": "What was the maximum theoretical charity prize per game in the 2021 Weakest Link revival?",
     "answers": [
       "£10,000",
@@ -2100,7 +2028,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48978",
+    "id": "tv_48976",
     "question": "By what factor are banked sums increased in the final teamwork round of Romesh's Weakest Link?",
     "answers": [
       "Three",
@@ -2136,7 +2064,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48979",
+    "id": "tv_48977",
     "question": "Which organisation normally benefits from the money won by celebrities in the revived Weakest Link?",
     "answers": [
       "The presenting broadcaster",
@@ -2172,43 +2100,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48980",
-    "question": "Which comedian hosted the special Comic Relief Does The Weakest Link broadcast in 2026?",
-    "answers": [
-      "Romesh Ranganathan",
-      "Michael McIntyre",
-      "Rob Brydon",
-      "Jack Whitehall"
-    ],
-    "correctAnswer": "Romesh Ranganathan",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "The Weakest Link",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC",
-      "BBC Two",
-      "BBC One",
-      "Quiz Shows",
-      "British Game Shows",
-      "Programme: The Weakest Link",
-      "Programme: The Weakest Link (2000–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: 2026 Comic Relief",
-      "Coverage Detail: Special event host",
-      "Answer Focus: Romesh Ranganathan",
-      "Format: Question Chains, Banking and Elimination",
-      "Presenters: Anne Robinson and Romesh Ranganathan",
-      "Country: United Kingdom",
-      "Source: https://www.comicrelief.com/news/communities-come-together-for-red-nose-day-2026/",
-      "Question Type: Format, History, Presenter, Special, Award"
-    ]
-  },
-  {
-    "id": "tv_48981",
+    "id": "tv_48978",
     "question": "How many comedians joined Romesh Ranganathan in Comic Relief Does The Weakest Link in 2026?",
     "answers": [
       "Four",
@@ -2244,7 +2136,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48982",
+    "id": "tv_48979",
     "question": "Which charity telethon hosted a special late-night edition of The Weakest Link in March 2026?",
     "answers": [
       "BBC Children in Need",
@@ -2280,7 +2172,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48983",
+    "id": "tv_48980",
     "question": "Which new series number of the revived Weakest Link had been commissioned during 2026?",
     "answers": [
       "Series three",
@@ -2316,43 +2208,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48984",
-    "question": "Which actress narrated the 2021 Weakest Link revival while Romesh Ranganathan presented?",
-    "answers": [
-      "Julie Hesmondhalgh",
-      "Fiona Bruce",
-      "Olivia Colman",
-      "Sian Gibson"
-    ],
-    "correctAnswer": "Julie Hesmondhalgh",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "The Weakest Link",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC",
-      "BBC Two",
-      "BBC One",
-      "Quiz Shows",
-      "British Game Shows",
-      "Programme: The Weakest Link",
-      "Programme: The Weakest Link (2000–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: 2021 production",
-      "Coverage Detail: Revival voice cast",
-      "Answer Focus: Julie Hesmondhalgh",
-      "Format: Question Chains, Banking and Elimination",
-      "Presenters: Anne Robinson and Romesh Ranganathan",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/The_Weakest_Link_(British_game_show)",
-      "Question Type: Format, History, Presenter, Special, Award"
-    ]
-  },
-  {
-    "id": "tv_48985",
+    "id": "tv_48981",
     "question": "In 2001, The Weakest Link was nominated in which BAFTA Television category?",
     "answers": [
       "Children's Fiction",
@@ -2388,7 +2244,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48986",
+    "id": "tv_48982",
     "question": "Which programme beat BAFTA nominee The Weakest Link to the Entertainment award in 2001?",
     "answers": [
       "Who Wants to Be a Millionaire?",
@@ -2424,43 +2280,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48987",
-    "question": "Which body awarded The Weakest Link the Daytime Programme prize at its 2002 programme awards?",
-    "answers": [
-      "British Comedy Awards",
-      "National Television Awards",
-      "BAFTA Scotland",
-      "Royal Television Society"
-    ],
-    "correctAnswer": "Royal Television Society",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "The Weakest Link",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC",
-      "BBC Two",
-      "BBC One",
-      "Quiz Shows",
-      "British Game Shows",
-      "Programme: The Weakest Link",
-      "Programme: The Weakest Link (2000–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: 2002 awards",
-      "Coverage Detail: RTS Daytime Programme winner",
-      "Answer Focus: Royal Television Society",
-      "Format: Question Chains, Banking and Elimination",
-      "Presenters: Anne Robinson and Romesh Ranganathan",
-      "Country: United Kingdom",
-      "Source: https://rts.org.uk/award/programme-awards-winners-2002",
-      "Question Type: Format, History, Presenter, Special, Award"
-    ]
-  },
-  {
-    "id": "tv_48988",
+    "id": "tv_48983",
     "question": "In which Royal Television Society programme-award category was The Weakest Link a winner?",
     "answers": [
       "Daytime Programme",
@@ -2496,7 +2316,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48989",
+    "id": "tv_48984",
     "question": "Which title was given to The Weakest Link at the Broadcast Awards for its global impact?",
     "answers": [
       "Best Children's Entertainment",
@@ -2532,43 +2352,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48990",
-    "question": "What was The Weakest Link's status at the 2001 BAFTA Television Entertainment Awards?",
-    "answers": [
-      "Winner",
-      "Special Recognition recipient",
-      "Nominee",
-      "Not shortlisted"
-    ],
-    "correctAnswer": "Nominee",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "topic": "The Weakest Link",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC",
-      "BBC Two",
-      "BBC One",
-      "Quiz Shows",
-      "British Game Shows",
-      "Programme: The Weakest Link",
-      "Programme: The Weakest Link (2000–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: 2001 awards",
-      "Coverage Detail: BAFTA nomination not victory",
-      "Answer Focus: Nominee",
-      "Format: Question Chains, Banking and Elimination",
-      "Presenters: Anne Robinson and Romesh Ranganathan",
-      "Country: United Kingdom",
-      "Source: https://www.bafta.org/awards/television/entertainment/",
-      "Question Type: Format, History, Presenter, Special, Award"
-    ]
-  },
-  {
-    "id": "tv_48991",
+    "id": "tv_48985",
     "question": "Which programme won the National Television Awards' Quiz category in 2002 while The Weakest Link was nominated?",
     "answers": [
       "Blockbusters",
@@ -2604,7 +2388,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48992",
+    "id": "tv_48986",
     "question": "Which popular game show was a rival nominee to The Weakest Link at the 2001 BAFTA Entertainment awards?",
     "answers": [
       "Who Wants to Be a Millionaire?",
@@ -2640,43 +2424,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_48993",
-    "question": "Which international television market first brought Anne Robinson's stern Weakest Link presenting style to an American network audience?",
-    "answers": [
-      "Australia",
-      "The United States",
-      "France",
-      "Japan"
-    ],
-    "correctAnswer": "The United States",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "The Weakest Link",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC",
-      "BBC Two",
-      "BBC One",
-      "Quiz Shows",
-      "British Game Shows",
-      "Programme: The Weakest Link",
-      "Programme: The Weakest Link (2000–present)",
-      "Programme Status: Ongoing",
-      "Coverage Through: 24 November 2026",
-      "Era: International export",
-      "Coverage Detail: US adaptation host",
-      "Answer Focus: The United States",
-      "Format: Question Chains, Banking and Elimination",
-      "Presenters: Anne Robinson and Romesh Ranganathan",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/The_Weakest_Link_(British_game_show)",
-      "Question Type: Format, History, Presenter, Special, Award"
-    ]
-  },
-  {
-    "id": "tv_48994",
+    "id": "tv_48987",
     "question": "For which console was a The Weakest Link video game released in the early 2000s?",
     "answers": [
       "Nintendo Switch",
@@ -2712,7 +2460,7 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==75||new Set(questions.map(x=>x.id)).size!==questions.length||
+if(questions.length!==68||new Set(questions.map(x=>x.id)).size!==questions.length||
 new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
 questions.some((x,i)=>x.id!=='tv_'+(48920+i)||x.category!=='TV'||x.topic!=='The Weakest Link'||
 x.answers.length!==4||new Set(x.answers.map(a=>a.toLowerCase())).size!==4||
