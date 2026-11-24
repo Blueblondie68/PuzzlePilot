@@ -1,6 +1,6 @@
 // PuzzlePilot Bigggggg Quiz — Pack 575: Eggheads (BBC/Channel 5, 2003–2023; shelved 2024).
 // Original Pack 209 two Eggheads questions are preserved and not repeated.
-// 63 new questions, tv_49053–tv_49115, programme history audited 24 November 2026.
+// 60 new questions, tv_49053–tv_49112, programme history audited 24 November 2026.
 // Coverage: BBC and Channel 5 eras, both hosts, rules and 2021 format changes, £75k record
 // payout and challengers, every principal Egghead panellist, panel changes, individual
 // quiz backgrounds, milestone 2000th edition, 2008–16 recruitment and other spinoffs.
@@ -373,42 +373,6 @@ const questions = [
   },
   {
     "id": "tv_49063",
-    "question": "How many players normally formed a BBC-era Eggheads challenger team?",
-    "answers": [
-      "Three",
-      "Four",
-      "Five",
-      "Six"
-    ],
-    "correctAnswer": "Five",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "topic": "Eggheads",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC",
-      "Channel 5",
-      "UK Quiz Shows",
-      "Game Show",
-      "Programme: Eggheads",
-      "Programme: Eggheads (2003–2023; shelved 2024)",
-      "Programme Status: Shelved / revival possible",
-      "Episode Coverage Through: 26 April 2023",
-      "Status Checked: 24 November 2026",
-      "Era: Original format",
-      "Coverage Detail: BBC challenger team size",
-      "Answer Focus: Five",
-      "Game Format: Quiz experts versus challengers",
-      "Hosts: Dermot Murnaghan / Jeremy Vine",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Eggheads_(game_show)",
-      "Question Type: Programme history, experts, rules, spinoffs or milestones"
-    ]
-  },
-  {
-    "id": "tv_49064",
     "question": "How many separate one-on-one subject duels preceded the final in the classic five-a-side Eggheads format?",
     "answers": [
       "Two",
@@ -444,7 +408,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49065",
+    "id": "tv_49064",
     "question": "How many contestants competed on each side after Eggheads moved to Channel 5 in 2021?",
     "answers": [
       "Four",
@@ -480,7 +444,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49066",
+    "id": "tv_49065",
     "question": "How many one-on-one rounds preceded the final in Channel 5's shortened Eggheads format?",
     "answers": [
       "Two",
@@ -516,7 +480,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49067",
+    "id": "tv_49066",
     "question": "Why was the Eggheads match format shortened when it moved to Channel 5?",
     "answers": [
       "To make every episode live",
@@ -552,7 +516,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49068",
+    "id": "tv_49067",
     "question": "Which pandemic precaution led to transparent partitions being placed between players in early Channel 5 Eggheads?",
     "answers": [
       "A new buzzer game",
@@ -588,7 +552,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49069",
+    "id": "tv_49068",
     "question": "Which pandemic-era online charity quiz team took part in the opening Channel 5 episode of Eggheads?",
     "answers": [
       "Jay's Virtual Quiz",
@@ -624,7 +588,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49070",
+    "id": "tv_49069",
     "question": "Who normally chooses which challenger and which Egghead face each other in a head-to-head category round?",
     "answers": [
       "The host",
@@ -660,7 +624,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49071",
+    "id": "tv_49070",
     "question": "What room do the one-on-one Eggheads contestants traditionally move to during their subject contest?",
     "answers": [
       "The Gold Room",
@@ -696,7 +660,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49072",
+    "id": "tv_49071",
     "question": "How many multiple-choice questions is each player initially asked during an Eggheads one-on-one duel?",
     "answers": [
       "Two",
@@ -732,7 +696,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49073",
+    "id": "tv_49072",
     "question": "What happens when the two participants in an Eggheads one-on-one round remain tied after the initial multiple-choice questions?",
     "answers": [
       "Sudden death with no answer options",
@@ -768,7 +732,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49074",
+    "id": "tv_49073",
     "question": "What happens to a player who loses an Eggheads one-on-one subject contest?",
     "answers": [
       "They are fined points",
@@ -804,7 +768,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49075",
+    "id": "tv_49074",
     "question": "What sort of questions settle the Eggheads final round after the subject duels?",
     "answers": [
       "Sports questions only",
@@ -840,7 +804,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49076",
+    "id": "tv_49075",
     "question": "In Eggheads' final round, what are surviving teammates allowed to do that they cannot do in one-on-one contests?",
     "answers": [
       "Use a Phone a Friend",
@@ -876,7 +840,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49077",
+    "id": "tv_49076",
     "question": "How much was added to the Eggheads jackpot after every successful defence in the classic format?",
     "answers": [
       "£1,000",
@@ -912,7 +876,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49078",
+    "id": "tv_49077",
     "question": "To what amount did the Eggheads jackpot return after a challenger team beat the experts?",
     "answers": [
       "£500",
@@ -948,7 +912,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49079",
+    "id": "tv_49078",
     "question": "Which team won the record £75,000 jackpot on Eggheads in 2007?",
     "answers": [
       "The Oxford Imps",
@@ -984,7 +948,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49080",
+    "id": "tv_49079",
     "question": "How much did Beer Today, Gone Tomorrow win by beating Eggheads in 2007?",
     "answers": [
       "£37,000",
@@ -1020,7 +984,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49081",
+    "id": "tv_49080",
     "question": "Which university's students made up the Eggheads team Beer Today, Gone Tomorrow?",
     "answers": [
       "Oxford Brookes University",
@@ -1056,7 +1020,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49082",
+    "id": "tv_49081",
     "question": "In which season of Eggheads did Beer Today, Gone Tomorrow achieve its record 2007 prize win?",
     "answers": [
       "Series five",
@@ -1092,7 +1056,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49083",
+    "id": "tv_49082",
     "question": "Which original Egghead won the 1988 series of the quiz Going for Gold?",
     "answers": [
       "Judith Keppel",
@@ -1128,7 +1092,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49084",
+    "id": "tv_49083",
     "question": "Which year marked original Egghead Daphne Fowler's retirement from the programme?",
     "answers": [
       "2008",
@@ -1164,43 +1128,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49085",
-    "question": "Which original Egghead was the first British contestant to win £1 million on Who Wants to Be a Millionaire?",
-    "answers": [
-      "Judith Keppel",
-      "Daphne Fowler",
-      "Lisa Thiel",
-      "Beth Webster"
-    ],
-    "correctAnswer": "Judith Keppel",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "topic": "Eggheads",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC",
-      "Channel 5",
-      "UK Quiz Shows",
-      "Game Show",
-      "Programme: Eggheads",
-      "Programme: Eggheads (2003–2023; shelved 2024)",
-      "Programme Status: Shelved / revival possible",
-      "Episode Coverage Through: 26 April 2023",
-      "Status Checked: 24 November 2026",
-      "Era: Original experts",
-      "Coverage Detail: Judith Keppel jackpot background",
-      "Answer Focus: Judith Keppel",
-      "Game Format: Quiz experts versus challengers",
-      "Hosts: Dermot Murnaghan / Jeremy Vine",
-      "Country: United Kingdom",
-      "Source: https://www.standard.co.uk/showbiz/celebrity-news/eggheads-jeremy-vine-students-chris-hughes-bbc-b1068823.html",
-      "Question Type: Programme history, experts, rules, spinoffs or milestones"
-    ]
-  },
-  {
-    "id": "tv_49086",
+    "id": "tv_49084",
     "question": "Which year saw Judith Keppel retire from her regular place on the Eggheads panel?",
     "answers": [
       "2014",
@@ -1236,7 +1164,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49087",
+    "id": "tv_49085",
     "question": "Who made a special return to Eggheads for its 2,000th episode in 2023?",
     "answers": [
       "Daphne Fowler",
@@ -1272,7 +1200,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49088",
+    "id": "tv_49086",
     "question": "On which date did Channel 5 broadcast Eggheads' 2,000th episode?",
     "answers": [
       "22 March 2022",
@@ -1308,7 +1236,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49089",
+    "id": "tv_49087",
     "question": "Which former Egghead reportedly supplied the special question used in the 2,000th episode in 2023?",
     "answers": [
       "Daphne Fowler",
@@ -1344,43 +1272,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49090",
-    "question": "Which 1983 Mastermind champion joined the original Eggheads team?",
-    "answers": [
-      "Barry Simmons",
-      "Christopher Hughes",
-      "Pat Gibson",
-      "Steve Cooke"
-    ],
-    "correctAnswer": "Christopher Hughes",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "topic": "Eggheads",
-    "category": "TV",
-    "tags": [
-      "Television",
-      "British Television",
-      "BBC",
-      "Channel 5",
-      "UK Quiz Shows",
-      "Game Show",
-      "Programme: Eggheads",
-      "Programme: Eggheads (2003–2023; shelved 2024)",
-      "Programme Status: Shelved / revival possible",
-      "Episode Coverage Through: 26 April 2023",
-      "Status Checked: 24 November 2026",
-      "Era: Original experts",
-      "Coverage Detail: Chris Hughes Mastermind title",
-      "Answer Focus: Christopher Hughes",
-      "Game Format: Quiz experts versus challengers",
-      "Hosts: Dermot Murnaghan / Jeremy Vine",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Eggheads_(game_show)",
-      "Question Type: Programme history, experts, rules, spinoffs or milestones"
-    ]
-  },
-  {
-    "id": "tv_49091",
+    "id": "tv_49088",
     "question": "Which original Eggheads panellist later won the BBC radio quiz Brain of Britain in 2005?",
     "answers": [
       "CJ de Mooi",
@@ -1416,7 +1308,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49092",
+    "id": "tv_49089",
     "question": "Which longtime Eggheads quiz expert died in February 2025 at the age of 77?",
     "answers": [
       "Kevin Ashman",
@@ -1452,7 +1344,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49093",
+    "id": "tv_49090",
     "question": "Which original Eggheads member briefly returned in 2014 after previously leaving in 2012?",
     "answers": [
       "CJ de Mooi",
@@ -1488,8 +1380,8 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49094",
-    "question": "Which former Egghead became the solo quiz champion in the 2014 spinoff Revenge of the Egghead?",
+    "id": "tv_49091",
+    "question": "Which Eggheads expert was the featured quiz opponent in the 2014 spin-off Revenge of the Egghead?",
     "answers": [
       "Kevin Ashman",
       "CJ de Mooi",
@@ -1514,7 +1406,7 @@ const questions = [
       "Episode Coverage Through: 26 April 2023",
       "Status Checked: 24 November 2026",
       "Era: 2014 spinoff",
-      "Coverage Detail: Revenge expert",
+      "Coverage Detail: Revenge of the Egghead central opponent",
       "Answer Focus: CJ de Mooi",
       "Game Format: Quiz experts versus challengers",
       "Hosts: Dermot Murnaghan / Jeremy Vine",
@@ -1524,7 +1416,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49095",
+    "id": "tv_49092",
     "question": "Which Eggheads panellist won the first series of Are You an Egghead? in 2008?",
     "answers": [
       "Pat Gibson",
@@ -1560,7 +1452,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49096",
+    "id": "tv_49093",
     "question": "Who lost the 2008 Are You an Egghead? final to Barry Simmons before finding fame on The Chase?",
     "answers": [
       "Mark Labbett",
@@ -1596,7 +1488,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49097",
+    "id": "tv_49094",
     "question": "Who won Are You an Egghead? in 2009 and joined the regular experts?",
     "answers": [
       "Pat Gibson",
@@ -1632,7 +1524,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49098",
+    "id": "tv_49095",
     "question": "Which Mastermind-winning quizzer did Pat Gibson defeat in the 2009 Are You an Egghead? final?",
     "answers": [
       "Kevin Ashman",
@@ -1668,8 +1560,8 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49099",
-    "question": "Which former Eggheads contestant was nicknamed 'Tremendous Knowledge Dave'?",
+    "id": "tv_49096",
+    "question": "Which Eggheads panellist was nicknamed 'Tremendous Knowledge Dave'?",
     "answers": [
       "Steve Cooke",
       "Barry Simmons",
@@ -1704,7 +1596,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49100",
+    "id": "tv_49097",
     "question": "How much had Egghead Dave Rainford previously won on the British Who Wants to Be a Millionaire?",
     "answers": [
       "£32,000",
@@ -1740,7 +1632,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49101",
+    "id": "tv_49098",
     "question": "Which year did Egghead Dave Rainford die after an illness that kept him away from filming?",
     "answers": [
       "2020",
@@ -1776,7 +1668,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49102",
+    "id": "tv_49099",
     "question": "Which Eggheads member joined the panel in 2014 after previously reaching The Weakest Link final?",
     "answers": [
       "Judith Keppel",
@@ -1812,7 +1704,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49103",
+    "id": "tv_49100",
     "question": "Which Eggheads newcomer won the men's competition in the 2016 Make Me an Egghead series?",
     "answers": [
       "Dave Rainford",
@@ -1848,7 +1740,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49104",
+    "id": "tv_49101",
     "question": "Which newcomer won the women's competition in Make Me an Egghead in 2016?",
     "answers": [
       "Lisa Thiel",
@@ -1884,7 +1776,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49105",
+    "id": "tv_49102",
     "question": "Which former contestant on the quiz show The People Versus joined Eggheads in 2016?",
     "answers": [
       "Steve Cooke",
@@ -1920,7 +1812,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49106",
+    "id": "tv_49103",
     "question": "Which new Eggheads expert joined the Channel 5 panel in 2021 after winning multiple World Quizzing Championships?",
     "answers": [
       "Pat Gibson",
@@ -1956,7 +1848,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49107",
+    "id": "tv_49104",
     "question": "Which quiz show has had Eggheads expert Olav Bjortomt among its question setters?",
     "answers": [
       "Countdown",
@@ -1992,7 +1884,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49108",
+    "id": "tv_49105",
     "question": "Which subject was split off from Entertainment as its own Eggheads category in 2008?",
     "answers": [
       "Mathematics",
@@ -2028,7 +1920,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49109",
+    "id": "tv_49106",
     "question": "What was the other new subject paired with Music when Eggheads divided the Entertainment category in 2008?",
     "answers": [
       "Film & Television",
@@ -2064,7 +1956,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49110",
+    "id": "tv_49107",
     "question": "Which spinoff sought new expert Eggheads in separate men's and women's competitions in 2016?",
     "answers": [
       "Are You an Egghead?",
@@ -2100,7 +1992,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49111",
+    "id": "tv_49108",
     "question": "What did the 2008 series Are You an Egghead? offer its champion?",
     "answers": [
       "A one-million-pound cash prize",
@@ -2136,7 +2028,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49112",
+    "id": "tv_49109",
     "question": "What happened to the production of new Eggheads episodes before its move to Channel 5?",
     "answers": [
       "It was transferred to another country permanently",
@@ -2172,7 +2064,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49113",
+    "id": "tv_49110",
     "question": "In which year was Eggheads reported to have been shelved after its latest Channel 5 series?",
     "answers": [
       "2024",
@@ -2208,7 +2100,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49114",
+    "id": "tv_49111",
     "question": "What was the last year in which new episodes of Eggheads were transmitted before the reported 2024 shelving?",
     "answers": [
       "2018",
@@ -2244,7 +2136,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49115",
+    "id": "tv_49112",
     "question": "What did reports in May 2024 say about the possibility of future Eggheads series?",
     "answers": [
       "A permanent ban on revival had been announced",
@@ -2280,7 +2172,7 @@ const questions = [
     ]
   }
 ];
-if(questions.length!==63||new Set(questions.map(x=>x.id)).size!==questions.length||
+if(questions.length!==60||new Set(questions.map(x=>x.id)).size!==questions.length||
 new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
 questions.some((x,i)=>x.id!=='tv_'+(49053+i)||x.category!=='TV'||x.topic!=='Eggheads'||
 x.answers.length!==4||new Set(x.answers.map(a=>a.toLowerCase())).size!==4||
