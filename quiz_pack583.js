@@ -1,6 +1,6 @@
 // PuzzlePilot Bigggggg Quiz — Pack 583: THE GOLDEN SHOT (ATV/ITV 1967–1975).
 // Detailed supplement to Pack 210, preserving its eight existing Golden Shot questions.
-// 64 NEW questions, IDs tv_49558–tv_49621.
+// 61 NEW questions, IDs tv_49558–tv_49618.
 // Complete relevant coverage: 1967 creation and German/Swiss inspiration, live phone-in
 // Tele-Bow and all target stages, prizes, presenting history, original studios and
 // Birmingham move, 1972 Monkhouse controversy and 1974 return, music and Golden Girls,
@@ -1644,80 +1644,6 @@ const questions = [
     "id": "tv_49602",
     "category": "TV",
     "topic": "The Golden Shot",
-    "question": "Which entertainer succeeded Norman Vaughan as Golden Shot's principal host in 1973?",
-    "answers": [
-      "Charlie Williams",
-      "Bob Monkhouse",
-      "Jackie Rae",
-      "Michael Barrymore"
-    ],
-    "correctAnswer": "Charlie Williams",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "British Television",
-      "ITV",
-      "ATV",
-      "Classic Quiz Shows",
-      "British Game Shows",
-      "Programme: The Golden Shot",
-      "Programme: The Golden Shot (1967–1975)",
-      "Programme Status: Finished",
-      "Original Coverage Through: 13 April 1975",
-      "2005 and 2007 one-off appearances",
-      "Era: Presenter succession",
-      "Coverage Detail: 1973 host change",
-      "Answer Focus: Charlie Williams",
-      "Format: Live telephone-controlled crossbow game",
-      "Host roster: Jackie Rae, Bob Monkhouse, Norman Vaughan, Charlie Williams",
-      "Armourer: Bernie the Bolt",
-      "Country: United Kingdom",
-      "Source: https://www.ukgameshows.com/ukgs/The_Golden_Shot",
-      "Quiz Type: Format, history, notable guests, controversies, music or revivals"
-    ]
-  },
-  {
-    "id": "tv_49603",
-    "category": "TV",
-    "topic": "The Golden Shot",
-    "question": "Which ITV variety show had Norman Vaughan presented before his period hosting The Golden Shot?",
-    "answers": [
-      "The Good Old Days",
-      "Sunday Night at the London Palladium",
-      "Crackerjack!",
-      "The Generation Game"
-    ],
-    "correctAnswer": "Sunday Night at the London Palladium",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "British Television",
-      "ITV",
-      "ATV",
-      "Classic Quiz Shows",
-      "British Game Shows",
-      "Programme: The Golden Shot",
-      "Programme: The Golden Shot (1967–1975)",
-      "Programme Status: Finished",
-      "Original Coverage Through: 13 April 1975",
-      "2005 and 2007 one-off appearances",
-      "Era: Presenter careers",
-      "Coverage Detail: Vaughan prior variety role",
-      "Answer Focus: Sunday Night at the London Palladium",
-      "Format: Live telephone-controlled crossbow game",
-      "Host roster: Jackie Rae, Bob Monkhouse, Norman Vaughan, Charlie Williams",
-      "Armourer: Bernie the Bolt",
-      "Country: United Kingdom",
-      "Source: https://televisionheaven.co.uk/reviews/the-golden-shot",
-      "Quiz Type: Format, history, notable guests, controversies, music or revivals"
-    ]
-  },
-  {
-    "id": "tv_49604",
-    "category": "TV",
-    "topic": "The Golden Shot",
     "question": "Which comic performer was a former professional footballer before presenting The Golden Shot?",
     "answers": [
       "Bob Monkhouse",
@@ -1752,7 +1678,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49605",
+    "id": "tv_49603",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "On which date did Bob Monkhouse return to hosting The Golden Shot after the Vaughan and Williams periods?",
@@ -1789,7 +1715,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49606",
+    "id": "tv_49604",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "Which American game-show format did Monkhouse's agent insist ATV option as a condition of his Golden Shot return?",
@@ -1826,7 +1752,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49607",
+    "id": "tv_49605",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "What was the UK version of Hollywood Squares that Bob Monkhouse hosted after The Golden Shot?",
@@ -1863,7 +1789,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49608",
+    "id": "tv_49606",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "What was the name of the new Golden Shot theme adopted for the 1974 Monkhouse comeback?",
@@ -1900,7 +1826,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49609",
+    "id": "tv_49607",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "Which songwriting duo wrote The Golden Shot's comeback song Golden Day?",
@@ -1937,7 +1863,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49610",
+    "id": "tv_49608",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "Who sang the Golden Shot theme Golden Day with the group Rain?",
@@ -1974,7 +1900,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49611",
+    "id": "tv_49609",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "What was the title of a Golden Shot theme tune released on Bell Records in 1973?",
@@ -2011,7 +1937,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49612",
+    "id": "tv_49610",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "Which TV comedy series parodied The Golden Shot as The Golden Shoot in a 1969 sketch?",
@@ -2048,7 +1974,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49613",
+    "id": "tv_49611",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "Which 1991 Bob Monkhouse game show reused The Golden Shot's guided-shooting idea in its final round?",
@@ -2085,7 +2011,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49614",
+    "id": "tv_49612",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "What was the title of the dart-based finale on Bob's Your Uncle derived from The Golden Shot?",
@@ -2122,7 +2048,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49615",
+    "id": "tv_49613",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "What was the bolt-loading call replaced with in Bob's Your Uncle's dart-based final?",
@@ -2159,7 +2085,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49616",
+    "id": "tv_49614",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "What date did Ant and Dec's special recreation of The Golden Shot air?",
@@ -2196,7 +2122,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49617",
+    "id": "tv_49615",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "Which presenter fronted a second Gameshow Marathon recreation of The Golden Shot in 2007?",
@@ -2233,7 +2159,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49618",
+    "id": "tv_49616",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "On what date did Vernon Kay's Golden Shot one-off edition air?",
@@ -2270,7 +2196,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49619",
+    "id": "tv_49617",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "Which former Bullseye host played the Bernie role for Vernon Kay's 2007 Golden Shot?",
@@ -2307,7 +2233,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49620",
+    "id": "tv_49618",
     "category": "TV",
     "topic": "The Golden Shot",
     "question": "What was Vernon Kay's variation on the famous Golden Shot loading instruction in 2007?",
@@ -2342,46 +2268,9 @@ const questions = [
       "Source: https://www.ukgameshows.com/ukgs/The_Golden_Shot",
       "Quiz Type: Format, history, notable guests, controversies, music or revivals"
     ]
-  },
-  {
-    "id": "tv_49621",
-    "category": "TV",
-    "topic": "The Golden Shot",
-    "question": "Which streaming service carries archive episodes of The Golden Shot in Britain?",
-    "answers": [
-      "Netflix only",
-      "Disney+",
-      "Amazon Music",
-      "ITVX"
-    ],
-    "correctAnswer": "ITVX",
-    "difficulty": "Medium",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "British Television",
-      "ITV",
-      "ATV",
-      "Classic Quiz Shows",
-      "British Game Shows",
-      "Programme: The Golden Shot",
-      "Programme: The Golden Shot (1967–1975)",
-      "Programme Status: Finished",
-      "Original Coverage Through: 13 April 1975",
-      "2005 and 2007 one-off appearances",
-      "Era: Current archive",
-      "Coverage Detail: ITVX archival episodes",
-      "Answer Focus: ITVX",
-      "Format: Live telephone-controlled crossbow game",
-      "Host roster: Jackie Rae, Bob Monkhouse, Norman Vaughan, Charlie Williams",
-      "Armourer: Bernie the Bolt",
-      "Country: United Kingdom",
-      "Source: https://www.itv.com/watch/the-golden-shot/ENT0700",
-      "Quiz Type: Format, history, notable guests, controversies, music or revivals"
-    ]
   }
 ];
-if(questions.length!==64||new Set(questions.map(x=>x.id)).size!==questions.length||
+if(questions.length!==61||new Set(questions.map(x=>x.id)).size!==questions.length||
 new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
 questions.some((x,i)=>x.id!=='tv_'+(49558+i)||x.category!=='TV'||x.topic!=='The Golden Shot'||
 x.answers.length!==4||new Set(x.answers.map(a=>a.toLowerCase())).size!==4||
