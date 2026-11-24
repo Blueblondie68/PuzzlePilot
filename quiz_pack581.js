@@ -1,7 +1,7 @@
 // PuzzlePilot The Bigggggg Quiz — Pack 581: Fifteen-to-One (Channel 4 UK).
 // 1988–2003 William G. Stewart and 2014–2019 Sandi Toksvig daytime runs.
 // Supplemental audit to original mixed Pack 209 (original one Fifteen-to-One question retained).
-// 71 new questions, tv_49433–tv_49503; fact-check cut-off 24 Nov 2026.
+// 68 new questions, tv_49433–tv_49500; fact-check cut-off 24 Nov 2026.
 // Cover conception and production, original and revival formats, 3-lives rounds,
 // all three stages, Finals Board and Grand Final, classic awards/prizes, famous champions,
 // 433 perfect score and 432 runner-up record, final champions, controversies,
@@ -54,42 +54,6 @@ const questions = [
     "id": "tv_49434",
     "category": "TV",
     "topic": "Fifteen-to-One",
-    "question": "On which channel was Fifteen-to-One broadcast during both its original run and revival?",
-    "answers": [
-      "ITV",
-      "Channel 4",
-      "BBC One",
-      "BBC Two"
-    ],
-    "correctAnswer": "Channel 4",
-    "difficulty": "Easy",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "British Television",
-      "Channel 4",
-      "UK Game Shows",
-      "British Quiz Shows",
-      "Programme: Fifteen-to-One",
-      "Programme: Fifteen-to-One (1988–2003, 2014–2019)",
-      "Programme Status: Finished",
-      "Full Coverage Through: 28 June 2019",
-      "Era: Original era",
-      "Coverage Detail: Both-era broadcaster",
-      "Answer Focus: Channel 4",
-      "Quiz Format: Three lives, nomination, Grand Final",
-      "Hosts: William G. Stewart and Sandi Toksvig",
-      "Original Producer: Regent Productions",
-      "Revival Producer: Remedy Productions",
-      "Country: United Kingdom",
-      "Source: https://www.ukgameshows.com/ukgs/Fifteen-to-One",
-      "Quiz Type: Programme history, gameplay, records, finals, related shows"
-    ]
-  },
-  {
-    "id": "tv_49435",
-    "category": "TV",
-    "topic": "Fifteen-to-One",
     "question": "Who devised the original idea for Fifteen-to-One before submitting it to Regent Productions?",
     "answers": [
       "John de Mol",
@@ -123,7 +87,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49436",
+    "id": "tv_49435",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which company developed and produced the original 1988–2003 run of Fifteen-to-One?",
@@ -159,7 +123,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49437",
+    "id": "tv_49436",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which former profession did Fifteen-to-One originator John M. Lewis hold?",
@@ -195,7 +159,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49438",
+    "id": "tv_49437",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many players were initially considered for Fifteen-to-One before the format was cut to fit its timeslot?",
@@ -231,7 +195,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49439",
+    "id": "tv_49438",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Why did William G. Stewart end up as the permanent host of the original Fifteen-to-One?",
@@ -267,7 +231,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49440",
+    "id": "tv_49439",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What was the duration of a typical original William G. Stewart-era Fifteen-to-One episode?",
@@ -303,7 +267,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49441",
+    "id": "tv_49440",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many original series of Fifteen-to-One were broadcast through December 2003?",
@@ -339,7 +303,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49442",
+    "id": "tv_49441",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many episodes were produced during Fifteen-to-One's original 1988–2003 run?",
@@ -375,7 +339,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49443",
+    "id": "tv_49442",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What was the final broadcast date of the original Fifteen-to-One series?",
@@ -411,7 +375,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49444",
+    "id": "tv_49443",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which programme sometimes alternated its daytime Channel 4 slot with Fifteen-to-One during the 1988–1996 period?",
@@ -447,7 +411,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49445",
+    "id": "tv_49444",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which quiz programme replaced the original Fifteen-to-One in Channel 4's 2003 schedules?",
@@ -483,7 +447,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49446",
+    "id": "tv_49445",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What formation did Fifteen-to-One contestants traditionally stand in during the opening rounds?",
@@ -519,7 +483,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49447",
+    "id": "tv_49446",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which item in the classic Fifteen-to-One set indicated a player's remaining chances?",
@@ -555,7 +519,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49448",
+    "id": "tv_49447",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How were contestants' positions in the original Fifteen-to-One semicircle allocated?",
@@ -591,7 +555,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49449",
+    "id": "tv_49448",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many lives did each original Fifteen-to-One contestant begin the game with?",
@@ -627,7 +591,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49450",
+    "id": "tv_49449",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many questions was each contestant asked in the first round of Fifteen-to-One?",
@@ -663,7 +627,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49451",
+    "id": "tv_49450",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What did a player need to do to survive the first round of the original Fifteen-to-One?",
@@ -699,7 +663,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49452",
+    "id": "tv_49451",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many seconds did contestants normally have to answer a Fifteen-to-One opening-round question?",
@@ -735,7 +699,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49453",
+    "id": "tv_49452",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What happened to an original Fifteen-to-One contestant who failed both first-round questions?",
@@ -771,7 +735,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49454",
+    "id": "tv_49453",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What happened to a contestant's spotlight when they were eliminated in the original Fifteen-to-One?",
@@ -807,7 +771,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49455",
+    "id": "tv_49454",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What was the key new tactical option available after a player got a question right in Fifteen-to-One's second round?",
@@ -843,7 +807,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49456",
+    "id": "tv_49455",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "If a nominated player answered correctly during Fifteen-to-One's second round, what happened next?",
@@ -879,7 +843,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49457",
+    "id": "tv_49456",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What happened to an opponent nominated in Fifteen-to-One's second round who answered incorrectly?",
@@ -915,7 +879,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49458",
+    "id": "tv_49457",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which nomination restriction appeared towards the end of the first run of Fifteen-to-One?",
@@ -951,7 +915,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49459",
+    "id": "tv_49458",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many players progressed to the final round of an ordinary Fifteen-to-One episode?",
@@ -987,7 +951,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49460",
+    "id": "tv_49459",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What fresh allocation of lives did the three finalists receive in classic Fifteen-to-One?",
@@ -1023,7 +987,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49461",
+    "id": "tv_49460",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many questions could be asked in the final round of the classic Fifteen-to-One?",
@@ -1059,7 +1023,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49462",
+    "id": "tv_49461",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many points was each correctly answered question worth in Fifteen-to-One's final round?",
@@ -1095,7 +1059,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49463",
+    "id": "tv_49462",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What phrase described the choice offered to a leading finalist in Fifteen-to-One?",
@@ -1131,7 +1095,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49464",
+    "id": "tv_49463",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What happened when just one contestant remained in the Fifteen-to-One final before all forty questions were used?",
@@ -1167,7 +1131,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49465",
+    "id": "tv_49464",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "In the original Fifteen-to-One, how many extra points did a finalist receive for each life still intact after the final question?",
@@ -1203,7 +1167,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49466",
+    "id": "tv_49465",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What was the theoretical maximum final-round score for a classic Fifteen-to-One contestant?",
@@ -1239,7 +1203,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49467",
+    "id": "tv_49466",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Who achieved the maximum possible 433 points on Fifteen-to-One in 1999?",
@@ -1275,7 +1239,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49468",
+    "id": "tv_49467",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What was the occupation of Fifteen-to-One's 433-point scorer Bill McKaig?",
@@ -1311,7 +1275,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49469",
+    "id": "tv_49468",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which future Eggheads expert achieved 432 points on Fifteen-to-One in May 2000?",
@@ -1347,7 +1311,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49470",
+    "id": "tv_49469",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Why was Daphne Fowler's 432 slightly below the all-time Fifteen-to-One maximum despite answering all forty final questions?",
@@ -1383,7 +1347,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49471",
+    "id": "tv_49470",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Who won the Grand Final of the very first Fifteen-to-One series in 1988?",
@@ -1419,7 +1383,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49472",
+    "id": "tv_49471",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which future Mastermind and Eggheads champion won series three of Fifteen-to-One?",
@@ -1455,7 +1419,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49473",
+    "id": "tv_49472",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which original Fifteen-to-One contestant won four separate Grand Finals without ever topping a Finals Board?",
@@ -1491,7 +1455,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49474",
+    "id": "tv_49473",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which contestant won the final William G. Stewart-era Fifteen-to-One Grand Final in 2003?",
@@ -1527,7 +1491,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49475",
+    "id": "tv_49474",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What did the original Fifteen-to-One Grand Final champion normally receive instead of a large cash jackpot?",
@@ -1563,7 +1527,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49476",
+    "id": "tv_49475",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Who regularly appeared to present the Fifteen-to-One Grand Final prize during the original run?",
@@ -1599,7 +1563,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49477",
+    "id": "tv_49476",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which announcer provided the original Fifteen-to-One voiceover in its first three series?",
@@ -1635,7 +1599,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49478",
+    "id": "tv_49477",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which Scottish city has supplied the studio base for most of the Sandi Toksvig-era Fifteen-to-One?",
@@ -1671,7 +1635,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49479",
+    "id": "tv_49478",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which TV production company made the Fifteen-to-One revival with Sandi Toksvig?",
@@ -1707,7 +1671,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49480",
+    "id": "tv_49479",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "On what date did Fifteen-to-One return for a new daytime series under Sandi Toksvig?",
@@ -1743,7 +1707,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49481",
+    "id": "tv_49480",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What length were daytime Fifteen-to-One episodes planned to have in the 2014 revival?",
@@ -1779,7 +1743,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49482",
+    "id": "tv_49481",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What cash prize awaited the Grand Final winner of Sandi Toksvig's revived Fifteen-to-One?",
@@ -1815,7 +1779,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49483",
+    "id": "tv_49482",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What new prize did winners of individual Fifteen-to-One heats receive in the 2014 revival?",
@@ -1851,7 +1815,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49484",
+    "id": "tv_49483",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many chances could a contestant normally have to reach the final of a regular episode in the revived Fifteen-to-One?",
@@ -1887,7 +1851,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49485",
+    "id": "tv_49484",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What happened to a revived Fifteen-to-One contestant who reached an episode's final but did not win?",
@@ -1923,7 +1887,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49486",
+    "id": "tv_49485",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many winners from the revival's leaderboard returned to compete in a Fifteen-to-One Grand Final?",
@@ -1959,7 +1923,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49487",
+    "id": "tv_49486",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What determined which Fifteen-to-One episode winners appeared on the Grand Final leaderboard?",
@@ -1995,7 +1959,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49488",
+    "id": "tv_49487",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What was the name of the final scoreboard used to rank episode champions in the original Fifteen-to-One?",
@@ -2031,7 +1995,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49489",
+    "id": "tv_49488",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which former Fifteen-to-One series champion returned to the first revived series in 2014?",
@@ -2067,7 +2031,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49490",
+    "id": "tv_49489",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Who became the first Grand Final champion of the revived Fifteen-to-One series in 2014?",
@@ -2103,7 +2067,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49491",
+    "id": "tv_49490",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which contestant won the final Sandi Toksvig-era Fifteen-to-One Grand Final in June 2019?",
@@ -2139,7 +2103,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49492",
+    "id": "tv_49491",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "On what date did the last new daytime episode of the Fifteen-to-One revival air?",
@@ -2175,7 +2139,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49493",
+    "id": "tv_49492",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "How many series of the Sandi Toksvig-era daytime Fifteen-to-One were broadcast through 2019?",
@@ -2211,7 +2175,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49494",
+    "id": "tv_49493",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which comedian hosted the 2013 celebrity special that helped launch Fifteen-to-One's later revival?",
@@ -2247,7 +2211,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49495",
+    "id": "tv_49494",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What was the separate title used for celebrity-only versions of the Fifteen-to-One quiz?",
@@ -2283,7 +2247,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49496",
+    "id": "tv_49495",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which school-focused version of Fifteen-to-One was broadcast in 1999?",
@@ -2319,7 +2283,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49497",
+    "id": "tv_49496",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which former contestant was involved in a Fifteen-to-One legal dispute after reappearing under the name Steve Romana?",
@@ -2355,7 +2319,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49498",
+    "id": "tv_49497",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Why did the original Fifteen-to-One eventually dispense with a regular studio audience?",
@@ -2391,7 +2355,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49499",
+    "id": "tv_49498",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "What notable mistake did William G. Stewart make while explaining the rules during a 1995 Fifteen-to-One recording?",
@@ -2427,43 +2391,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49500",
-    "category": "TV",
-    "topic": "Fifteen-to-One",
-    "question": "Which programme had to edit out a contestant in its December 2000 Grand Final for legal reasons?",
-    "answers": [
-      "The Weakest Link",
-      "Mastermind",
-      "University Challenge",
-      "Fifteen-to-One"
-    ],
-    "correctAnswer": "Fifteen-to-One",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "British Television",
-      "Channel 4",
-      "UK Game Shows",
-      "British Quiz Shows",
-      "Programme: Fifteen-to-One",
-      "Programme: Fifteen-to-One (1988–2003, 2014–2019)",
-      "Programme Status: Finished",
-      "Full Coverage Through: 28 June 2019",
-      "Era: 2000 controversy",
-      "Coverage Detail: Grand Final edited contestant",
-      "Answer Focus: Fifteen-to-One",
-      "Quiz Format: Three lives, nomination, Grand Final",
-      "Hosts: William G. Stewart and Sandi Toksvig",
-      "Original Producer: Regent Productions",
-      "Revival Producer: Remedy Productions",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Fifteen_to_One",
-      "Quiz Type: Programme history, gameplay, records, finals, related shows"
-    ]
-  },
-  {
-    "id": "tv_49501",
+    "id": "tv_49499",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Which 1999 festive special featured twenty-five former Fifteen-to-One contestants instead of the usual fifteen?",
@@ -2499,7 +2427,7 @@ const questions = [
     ]
   },
   {
-    "id": "tv_49502",
+    "id": "tv_49500",
     "category": "TV",
     "topic": "Fifteen-to-One",
     "question": "Who won Fifteen-to-One's unusual tied Grand Final in 2003 alongside David Stedman?",
@@ -2533,45 +2461,9 @@ const questions = [
       "Source: https://en.wikipedia.org/wiki/Fifteen_to_One",
       "Quiz Type: Programme history, gameplay, records, finals, related shows"
     ]
-  },
-  {
-    "id": "tv_49503",
-    "category": "TV",
-    "topic": "Fifteen-to-One",
-    "question": "Which one-off special format explored questions about the Parthenon Marbles in the original Fifteen-to-One?",
-    "answers": [
-      "A music-only Christmas edition",
-      "A 40-player celebrity tournament",
-      "A themed Marbles special",
-      "A children's geography challenge"
-    ],
-    "correctAnswer": "A themed Marbles special",
-    "difficulty": "Hard",
-    "dailyEligible": true,
-    "tags": [
-      "Television",
-      "British Television",
-      "Channel 4",
-      "UK Game Shows",
-      "British Quiz Shows",
-      "Programme: Fifteen-to-One",
-      "Programme: Fifteen-to-One (1988–2003, 2014–2019)",
-      "Programme Status: Finished",
-      "Full Coverage Through: 28 June 2019",
-      "Era: Original specials",
-      "Coverage Detail: Parthenon Marbles theme",
-      "Answer Focus: A themed Marbles special",
-      "Quiz Format: Three lives, nomination, Grand Final",
-      "Hosts: William G. Stewart and Sandi Toksvig",
-      "Original Producer: Regent Productions",
-      "Revival Producer: Remedy Productions",
-      "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/Fifteen_to_One",
-      "Quiz Type: Programme history, gameplay, records, finals, related shows"
-    ]
   }
 ];
-if(questions.length!==71||new Set(questions.map(x=>x.id)).size!==questions.length||
+if(questions.length!==68||new Set(questions.map(x=>x.id)).size!==questions.length||
 new Set(questions.map(x=>x.question.toLowerCase())).size!==questions.length||
 questions.some((x,i)=>x.id!=='tv_'+(49433+i)||x.category!=='TV'||x.topic!=='Fifteen-to-One'||
 x.answers.length!==4||new Set(x.answers.map(a=>a.toLowerCase())).size!==4||
