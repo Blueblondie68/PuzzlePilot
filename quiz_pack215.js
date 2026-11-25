@@ -150,7 +150,7 @@ const questions = facts.map((fact, index) => {
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Double Your Money' || programme === "What's My Line?") ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Call My Bluff' || programme === 'Double Your Money' || programme === "What's My Line?") ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
