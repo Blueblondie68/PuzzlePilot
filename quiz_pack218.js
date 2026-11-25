@@ -71,7 +71,7 @@ const facts = [
     ["What was unusual about the physical challenges on Small Fortune?", "They took place on miniature models", ["They were played in complete darkness", "They took place underwater", "They were directed entirely by audience votes"], "Easy", "Small Fortune", ["Miniature Models", "Small Scale Tasks", "Physical Accuracy", "Game Props", "Miniature World", "Prize Challenges", "Precision Games"]],
 
     // DECIMATE
-    ["How many possible answers accompanied the questions on Decimate?", "Three", ["Two", "Four", "Five"], "Medium", "Decimate", ["Three Possible Answers", "Multiple Choice", "Decimate Question", "Answer Options", "Quiz Format", "Game Design", "Contestant Choices"]],
+    ["How many possible answers accompanied questions in the first three rounds of Decimate?", "Three", ["Two", "Four", "Five"], "Medium", "Decimate", ["Three Possible Answers", "Multiple Choice", "Decimate Question", "Answer Options", "Quiz Format", "Game Design", "Contestant Choices"]],
 
     // SMALL FORTUNE
     ["What was the potential maximum cash prize on ITV's Small Fortune?", "£150,000", ["£50,000", "£100,000", "£250,000"], "Medium", "Small Fortune", ["One Hundred Fifty Thousand Pounds", "Maximum Jackpot", "Top Prize", "Team Winnings", "2019 Format", "Cash Reward", "ITV Gameshow"]],
@@ -190,7 +190,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'The Link' || programme === 'The Code' || programme === 'The Tournament' || programme === 'The Edge') ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Decimate' || programme === 'The Link' || programme === 'The Code' || programme === 'The Tournament' || programme === 'The Edge') ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
