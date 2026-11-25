@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 605: The Cube (UK)
-// 60 supplementary questions; seven original Pack 211 questions retained.
+// 60 supplementary questions; seven original Pack 211 questions retained. Pack 217 contains seven additional distinct questions after six overlaps were replaced on 25 November 2026.
 // Original nine series, 2020 and 2021 revivals, production, rules, notable challenges, Mo Farah's jackpot, celebrity specials and notable contestants, awards and nominations.
 // ITV announced a hiatus in April 2022, not permanent cancellation: https://www.tvzoneuk.com/post/thecube-2022hiatus. No newer UK commission verified as of 24 November 2026. Million Pound Cube is the renamed tenth series. Selected documented challenge coverage; detailed game archive inaccessible and no exhaustive challenge inventory or full-bank duplicate audit claimed. Bank connection unchanged.
 'use strict';
