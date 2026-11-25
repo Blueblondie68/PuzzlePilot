@@ -146,7 +146,7 @@ const questions = facts.map((fact, index) => {
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...(programme === 'The Cube' ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
