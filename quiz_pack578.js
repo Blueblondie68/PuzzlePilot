@@ -1,5 +1,5 @@
 // PuzzlePilot Bigggggg Quiz — Pack 578: The 1% Club (ITV 2022–ongoing).
-// Supplement to three existing show questions in mixed Pack 209, retained unchanged.
+// Supplement to three originals in Pack 209 and six originals in Pack 216; seven overlapping facts replaced in Pack 578 on 25 Nov 2026, retaining all IDs.
 // 56 new questions, IDs tv_49257–tv_49312, research cutoff 24 Nov 2026.
 // Main show: 2022 launch, Nabarro & Auerbach, Magnum, audience sampling and percentage logic,
 // the full rule sequence (including paid pass, £1k cash-out, £10k final choice, £100k top prize),
@@ -232,14 +232,14 @@ const questions = [
   },
   {
     "id": "tv_49263",
-    "question": "Which two aspects of human thinking are especially involved in The 1% Club's questions?",
+    "question": "At which television studio complex has ITV's The 1% Club been recorded?",
     "answers": [
-      "Geographical recall and spelling",
-      "Celebrity knowledge and history dates",
-      "Common sense and lateral thinking",
-      "Physical balance and timing"
+      "Elstree Studios",
+      "Pinewood Studios",
+      "dock10",
+      "Maidstone Studios"
     ],
-    "correctAnswer": "Common sense and lateral thinking",
+    "correctAnswer": "dock10",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "The 1% Club",
@@ -255,15 +255,15 @@ const questions = [
       "Programme: The 1% Club (2022–present)",
       "Programme Status: Ongoing",
       "Coverage Through: 24 November 2026",
-      "Era: Question design",
-      "Coverage Detail: Logic instead of recall",
-      "Answer Focus: Common sense and lateral thinking",
       "Presenter: Lee Mack",
       "Producer: Magnum Media",
       "Format: 100 players and graduated-percentage puzzles",
       "Country: United Kingdom",
-      "Source: https://www.itv.com/presscentre/media-releases/itv-commissions-second-series-1-club",
-      "Question Type: Rules, history, prize, spin-off overview or awards"
+      "Question Type: Rules, history, prize, spin-off overview or awards",
+      "Era: Production",
+      "Coverage Detail: Studio complex",
+      "Answer Focus: dock10",
+      "Source: https://www.prolificnorth.co.uk/news/1-club-100-coming-back-dock10/"
     ]
   },
   {
@@ -340,14 +340,14 @@ const questions = [
   },
   {
     "id": "tv_49266",
-    "question": "What percentage labels the opening question of a normal episode of The 1% Club?",
+    "question": "In which year was the first Christmas special of The 1% Club broadcast?",
     "answers": [
-      "100%",
-      "90%",
-      "75%",
-      "50%"
+      "2022",
+      "2023",
+      "2024",
+      "2025"
     ],
-    "correctAnswer": "90%",
+    "correctAnswer": "2023",
     "difficulty": "Easy",
     "dailyEligible": true,
     "topic": "The 1% Club",
@@ -363,15 +363,17 @@ const questions = [
       "Programme: The 1% Club (2022–present)",
       "Programme Status: Ongoing",
       "Coverage Through: 24 November 2026",
-      "Era: Game rules",
-      "Coverage Detail: Opening question level",
-      "Answer Focus: 90%",
       "Presenter: Lee Mack",
       "Producer: Magnum Media",
       "Format: 100 players and graduated-percentage puzzles",
       "Country: United Kingdom",
-      "Source: https://www.itv.com/presscentre/media-releases/itv-commissions-second-series-1-club",
-      "Question Type: Rules, history, prize, spin-off overview or awards"
+      "Question Type: Rules, history, prize, spin-off overview or awards",
+      "Era: Christmas specials",
+      "Coverage Detail: First festive special",
+      "Answer Focus: 2023",
+      "Source: https://en.wikipedia.org/wiki/The_1%25_Club",
+      "christmas",
+      "2023"
     ]
   },
   {
@@ -412,14 +414,14 @@ const questions = [
   },
   {
     "id": "tv_49268",
-    "question": "What is the usual time limit for answering a question on The 1% Club?",
+    "question": "On which holiday was The 1% Club's 2024 Christmas special first broadcast?",
     "answers": [
-      "15 seconds",
-      "45 seconds",
-      "60 seconds",
-      "30 seconds"
+      "Christmas Eve",
+      "Christmas Day",
+      "New Year's Day",
+      "Boxing Day"
     ],
-    "correctAnswer": "30 seconds",
+    "correctAnswer": "Boxing Day",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "The 1% Club",
@@ -435,15 +437,17 @@ const questions = [
       "Programme: The 1% Club (2022–present)",
       "Programme Status: Ongoing",
       "Coverage Through: 24 November 2026",
-      "Era: Game rules",
-      "Coverage Detail: Answer timer",
-      "Answer Focus: 30 seconds",
       "Presenter: Lee Mack",
       "Producer: Magnum Media",
       "Format: 100 players and graduated-percentage puzzles",
       "Country: United Kingdom",
+      "Question Type: Rules, history, prize, spin-off overview or awards",
+      "Era: Christmas specials",
+      "Coverage Detail: 2024 festive broadcast",
+      "Answer Focus: Boxing Day",
       "Source: https://en.wikipedia.org/wiki/The_1%25_Club",
-      "Question Type: Rules, history, prize, spin-off overview or awards"
+      "christmas",
+      "2024"
     ]
   },
   {
@@ -484,14 +488,14 @@ const questions = [
   },
   {
     "id": "tv_49270",
-    "question": "How much money does each The 1% Club contestant begin with in a standard episode?",
+    "question": "What linked all the questions in The 1% Club's first Christmas special?",
     "answers": [
-      "£100",
-      "£1,000",
-      "£500",
-      "£10,000"
+      "They were about television presenters",
+      "They had a Christmas theme",
+      "They were all numerical calculations",
+      "They were all about sport"
     ],
-    "correctAnswer": "£1,000",
+    "correctAnswer": "They had a Christmas theme",
     "difficulty": "Easy",
     "dailyEligible": true,
     "topic": "The 1% Club",
@@ -507,27 +511,29 @@ const questions = [
       "Programme: The 1% Club (2022–present)",
       "Programme Status: Ongoing",
       "Coverage Through: 24 November 2026",
-      "Era: Game rules",
-      "Coverage Detail: Contestant starting stake",
-      "Answer Focus: £1,000",
       "Presenter: Lee Mack",
       "Producer: Magnum Media",
       "Format: 100 players and graduated-percentage puzzles",
       "Country: United Kingdom",
-      "Source: https://www.itv.com/presscentre/media-releases/itv-commissions-second-series-1-club",
-      "Question Type: Rules, history, prize, spin-off overview or awards"
+      "Question Type: Rules, history, prize, spin-off overview or awards",
+      "Era: Christmas specials",
+      "Coverage Detail: Festive question theme",
+      "Answer Focus: They had a Christmas theme",
+      "Source: https://www.itv.com/watch/the-1percent-club/10a0593/10a0593a0021",
+      "christmas",
+      "2023"
     ]
   },
   {
     "id": "tv_49271",
-    "question": "What happens to a contestant's £1,000 stake when they answer incorrectly on The 1% Club?",
+    "question": "Which occasion inspired a special edition of The 1% Club on 14 February 2026?",
     "answers": [
-      "It is returned to ITV",
-      "It is paid to the presenter",
-      "It is added to the final prize pot",
-      "It is divided between all other contestants immediately"
+      "Mothering Sunday",
+      "Halloween",
+      "Valentine's Day",
+      "Bonfire Night"
     ],
-    "correctAnswer": "It is added to the final prize pot",
+    "correctAnswer": "Valentine's Day",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "The 1% Club",
@@ -543,15 +549,17 @@ const questions = [
       "Programme: The 1% Club (2022–present)",
       "Programme Status: Ongoing",
       "Coverage Through: 24 November 2026",
-      "Era: Game rules",
-      "Coverage Detail: Stake of eliminated contestant",
-      "Answer Focus: It is added to the final prize pot",
       "Presenter: Lee Mack",
       "Producer: Magnum Media",
       "Format: 100 players and graduated-percentage puzzles",
       "Country: United Kingdom",
-      "Source: https://www.itv.com/presscentre/media-releases/itv-commissions-second-series-1-club",
-      "Question Type: Rules, history, prize, spin-off overview or awards"
+      "Question Type: Rules, history, prize, spin-off overview or awards",
+      "Era: Specials",
+      "Coverage Detail: Valentine's edition",
+      "Answer Focus: Valentine's Day",
+      "Source: https://en.wikipedia.org/wiki/The_1%25_Club",
+      "valentines",
+      "2026"
     ]
   },
   {
@@ -844,14 +852,14 @@ const questions = [
   },
   {
     "id": "tv_49280",
-    "question": "What guaranteed cash amount can The 1% Club finalists choose to share rather than attempt the jackpot question?",
+    "question": "Which organisation handles the international format rights to The 1% Club?",
     "answers": [
-      "£1,000",
-      "£25,000",
-      "£50,000",
-      "£10,000"
+      "ITV Studios",
+      "Fremantle",
+      "Banijay",
+      "BBC Studios"
     ],
-    "correctAnswer": "£10,000",
+    "correctAnswer": "BBC Studios",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "The 1% Club",
@@ -867,27 +875,27 @@ const questions = [
       "Programme: The 1% Club (2022–present)",
       "Programme Status: Ongoing",
       "Coverage Through: 24 November 2026",
-      "Era: Final rules",
-      "Coverage Detail: Share-to-leave alternative",
-      "Answer Focus: £10,000",
       "Presenter: Lee Mack",
       "Producer: Magnum Media",
       "Format: 100 players and graduated-percentage puzzles",
       "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/The_1%25_Club",
-      "Question Type: Rules, history, prize, spin-off overview or awards"
+      "Question Type: Rules, history, prize, spin-off overview or awards",
+      "Era: Distribution",
+      "Coverage Detail: International format rights",
+      "Answer Focus: BBC Studios",
+      "Source: https://en.wikipedia.org/wiki/The_1%25_Club"
     ]
   },
   {
     "id": "tv_49281",
-    "question": "What happens if more than one The 1% Club finalist answers the final question correctly?",
+    "question": "What recognition did The 1% Club receive in the UKGameshows website's 2022 poll?",
     "answers": [
-      "The prize pot is shared equally among them",
-      "Each receives a separate £100,000",
-      "Only the fastest person wins",
-      "The prize is given to the eldest finalist"
+      "Best New Show",
+      "Best Returning Show",
+      "Best Children's Show",
+      "Best Daytime Drama"
     ],
-    "correctAnswer": "The prize pot is shared equally among them",
+    "correctAnswer": "Best New Show",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "The 1% Club",
@@ -903,15 +911,16 @@ const questions = [
       "Programme: The 1% Club (2022–present)",
       "Programme Status: Ongoing",
       "Coverage Through: 24 November 2026",
-      "Era: Final rules",
-      "Coverage Detail: Multiple 1% winners",
-      "Answer Focus: The prize pot is shared equally among them",
       "Presenter: Lee Mack",
       "Producer: Magnum Media",
       "Format: 100 players and graduated-percentage puzzles",
       "Country: United Kingdom",
-      "Source: https://en.wikipedia.org/wiki/The_1%25_Club",
-      "Question Type: Rules, history, prize, spin-off overview or awards"
+      "Question Type: Rules, history, prize, spin-off overview or awards",
+      "Era: Audience polls",
+      "Coverage Detail: 2022 Best New Show poll",
+      "Answer Focus: Best New Show",
+      "Source: https://ukgameshows.com/ukgs/The_1%25_Club",
+      "2022"
     ]
   },
   {
