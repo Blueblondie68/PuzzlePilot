@@ -42,7 +42,7 @@ const facts = [
 
     // WIN MY WAGE (6)
     ["Who presented the Channel 4 game show Win My Wage?", "Nick Hancock", ["Noel Edmonds", "Adrian Chiles", "Richard Madeley"], "Medium", "Win My Wage", ["Nick Hancock", "Channel 4 Host", "2007 Debut", "Presenter Identity", "Salary Guessing", "Television Presenter", "British Gameshow"]],
-    ["What did the main contestant try to identify on Win My Wage?", "The person with the highest salary", ["The youngest worker", "The most experienced manager", "The person with the fewest qualifications"], "Easy", "Win My Wage", ["Highest Salary", "Top Earner", "Salary Comparison", "Wage Guessing", "Occupation Clues", "Final Selection", "Cash Prize"]],
+    ["What did the main contestant try to identify among the three remaining wage earners in the Win My Wage final?", "The person with the highest salary", ["The youngest worker", "The most experienced manager", "The person with the fewest qualifications"], "Easy", "Win My Wage", ["Highest Salary", "Top Earner", "Salary Comparison", "Wage Guessing", "Occupation Clues", "Final Selection", "Cash Prize"]],
     ["How many wage earners were introduced at the start of Win My Wage?", "Eight", ["Five", "Six", "Ten"], "Medium", "Win My Wage", ["Eight Wage Earners", "Opening Panel", "Salary Candidates", "Contestant Identification", "Work And Income", "Initial Line Up", "Game Format"]],
     ["What happened when the player eliminated someone on Win My Wage?", "Their job and wage were revealed", ["They joined the contestant's team", "They drew a mystery bonus card", "They chose the next question"], "Medium", "Win My Wage", ["Occupation Reveal", "Wage Reveal", "Eliminated Earner", "Salary Disclosure", "Player Choice", "Information Gain", "Elimination Round"]],
     ["How many wage earners were left for the final decision on Win My Wage?", "Three", ["Two", "Four", "Five"], "Medium", "Win My Wage", ["Three Remaining Earners", "Final Selection", "Highest Income", "Salary Comparison", "Endgame Decision", "Contestant Strategy", "Three Finalists"]],
@@ -150,7 +150,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...(['The Cube', 'Beat the Star', '100%', 'Brainteaser'].includes(programme) ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...(['The Cube', 'Beat the Star', '100%', 'Brainteaser', 'Win My Wage'].includes(programme) ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
