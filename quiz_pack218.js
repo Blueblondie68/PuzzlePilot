@@ -62,7 +62,7 @@ const facts = [
     // THE EDGE
     ["Which colour marked the longest lane on The Edge?", "Red", ["Green", "Blue", "Yellow"], "Medium", "The Edge", ["Red Lane", "Longest Lane", "Bowling Game", "Lane Colours", "Distance Challenge", "Physical Skill", "BBC Quiz"]],
     ["In the first series of The Edge, what did a danger zone do to a cash section?", "Reduced its value to £1", ["Doubled its value", "Ended the whole game", "Awarded an extra bowl"], "Medium", "The Edge", ["Danger Zone", "One Pound Value", "Cash Section", "Bowling Score", "Money Reduction", "Hazard Area", "Risky Target"]],
-    ["How could finalists make the winning Edge larger on The Edge?", "Answer four-part questions correctly", ["Ask the audience to vote", "Trade away an opponent's cash", "Choose a shorter lane"], "Medium", "The Edge", ["Four Part Questions", "Winning Edge", "Larger Target", "Final Challenge", "Bowling Precision", "Correct Answers", "Physical Bonus"]],
+    ["How could finalists make the winning Edge larger in the first series of The Edge?", "Answer four-part questions correctly", ["Ask the audience to vote", "Trade away an opponent's cash", "Choose a shorter lane"], "Medium", "The Edge", ["Four Part Questions", "Winning Edge", "Larger Target", "Final Challenge", "Bowling Precision", "Correct Answers", "Physical Bonus"]],
 
     // SMALL FORTUNE
     ["Who hosted ITV's miniature-challenge game show Small Fortune?", "Dermot O'Leary", ["Vernon Kay", "Phillip Schofield", "Stephen Mulhern"], "Easy", "Small Fortune", ["Dermot OLeary", "ITV Presenter", "2019 Launch", "Miniature Challenges", "Original Host", "Entertainment Show", "Game Show Host"]],
@@ -190,7 +190,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...(programme === 'The Edge' ? ['Programme: The Edge'] : []), ...specificTags],
         dailyEligible: true
     };
 });
