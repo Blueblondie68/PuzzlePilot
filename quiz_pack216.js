@@ -151,7 +151,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...(programme === 'Chain Letters' ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
