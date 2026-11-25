@@ -190,7 +190,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Decimate' || programme === 'The Link' || programme === 'The Code' || programme === 'The Tournament' || programme === 'The Edge' || programme === '500 Questions' || programme === 'The Colour of Money' || programme === 'Two Tribes') ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Decimate' || programme === 'The Link' || programme === 'The Code' || programme === 'The Tournament' || programme === 'The Edge' || programme === '500 Questions' || programme === 'The Colour of Money' || programme === 'Two Tribes' || programme === 'The Fuse') ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
