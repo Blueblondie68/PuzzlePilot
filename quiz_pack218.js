@@ -190,7 +190,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...(programme === 'The Edge' ? ['Programme: The Edge'] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'The Tournament' || programme === 'The Edge') ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
