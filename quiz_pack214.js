@@ -105,7 +105,7 @@ const facts = [
     ["How many possible answers appeared on a standard Unbeatable question board?", "Six", ["Three", "Four", "Eight"], "Medium", "Unbeatable", ["Six Answers", "Ranked Board", "Question Options", "Comparative Quiz", "Ranking Game", "Answer Choice Count", "Knowledge Challenge"]],
     ["How many players competed in a regular original episode of Unbeatable?", "Four", ["Two", "Three", "Six"], "Medium", "Unbeatable", ["Four Contestants", "Initial Line Up", "Original BBC Version", "Individual Players", "Knockout Tournament", "Player Count", "2021 Series"]],
     ["What happened when an Unbeatable contestant successfully challenged an inferior answer?", "They added money to their bank", ["They lost an extra life", "They switched teams", "They chose the next presenter"], "Easy", "Unbeatable", ["Better Answer Challenge", "Beating A Rival", "Cash Added", "Bank Winnings", "Ranking Comparison", "Correct Challenge", "Player Strategy"]],
-    ["What happened if an Unbeatable player wrongly declared their answer to be the best?", "They received nothing for that question", ["They automatically won the jackpot", "They earned another guess", "They doubled their bank"], "Easy", "Unbeatable", ["Unbeatable Button", "Incorrect Best Claim", "Zero Reward", "Risky Guess", "Question Payout", "Highest Ranked Answer", "Quiz Rules"]],
+    ["What happened if a player wrongly declared their answer to be the best in Unbeatable's original solo round?", "They received nothing for that question", ["They automatically won the jackpot", "They earned another guess", "They doubled their bank"], "Easy", "Unbeatable", ["Unbeatable Button", "Incorrect Best Claim", "Zero Reward", "Risky Guess", "Question Payout", "Highest Ranked Answer", "Quiz Rules"]],
 
     // PopMaster TV (6)
     ["Which veteran radio DJ presents PopMaster TV?", "Ken Bruce", ["Simon Mayo", "Tony Blackburn", "Steve Wright"], "Easy", "PopMaster TV", ["Ken Bruce", "Veteran Radio DJ", "Pop Quiz Host", "Radio Presenter", "Greatest Hits Radio", "Music Broadcaster", "2023 Launch"]],
@@ -150,7 +150,7 @@ const questions = facts.map((fact, index) => {
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'The Answer Trap' || programme === 'The People Versus' || programme === 'The Edge' || programme === 'Lingo' || programme === 'Celebrity Lingo') ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Unbeatable' || programme === 'The Answer Trap' || programme === 'The People Versus' || programme === 'The Edge' || programme === 'Lingo' || programme === 'Celebrity Lingo') ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
