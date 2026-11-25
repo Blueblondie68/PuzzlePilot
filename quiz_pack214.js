@@ -150,7 +150,7 @@ const questions = facts.map((fact, index) => {
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Unbeatable' || programme === 'The Answer Trap' || programme === 'The People Versus' || programme === 'The Edge' || programme === 'Lingo' || programme === 'Celebrity Lingo') ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'PopMaster TV' || programme === 'Unbeatable' || programme === 'The Answer Trap' || programme === 'The People Versus' || programme === 'The Edge' || programme === 'Lingo' || programme === 'Celebrity Lingo') ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
