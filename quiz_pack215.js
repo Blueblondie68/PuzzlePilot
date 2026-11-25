@@ -71,7 +71,7 @@ const facts = [
     ["How many contestants started a regular episode of The Switch?", "Four", ["Three", "Five", "Six"], "Medium", "The Switch", ["Four Contestants", "Original Line Up", "Studio Players", "Individual Quiz", "Player Count", "ITV Format", "Competition Setup"]],
     ["What was The Switch's opening timed general-knowledge round called?", "Easy Money", ["Quick Fire", "The Money List", "First Past the Post"], "Medium", "The Switch", ["Easy Money", "Opening Round", "Timed General Knowledge", "Quiz Buzzer", "Cash Earnings", "Question Round", "Starting Stage"]],
     ["What could a contestant do with a topic on The Switch's Category Board?", "Freeze it or swap it", ["Auction it to another contestant", "Double its prize value", "Give it to the presenter"], "Medium", "The Switch", ["Category Board", "Freeze Or Swap", "Topic Choice", "Quiz Strategy", "Category Selection", "Contestant Control", "Round Mechanics"]],
-    ["How many of the four possible answers were wrong in a main question on The Switch?", "One", ["Two", "Three", "Four"], "Easy", "The Switch", ["One Wrong Option", "Four Answers", "Three Correct", "Knowledge Testing", "Switch Round", "Multiple Choice", "Wrong Answer Trap"]],
+    ["How many of the four possible answers were wrong in a main question in the opening Switch round?", "One", ["Two", "Three", "Four"], "Easy", "The Switch", ["One Wrong Option", "Four Answers", "Three Correct", "Knowledge Testing", "Switch Round", "Multiple Choice", "Wrong Answer Trap"]],
     ["What did it mean to be switched out during The Switch?", "Having to take the answer left by the others", ["Receiving a bonus question", "Choosing the next round's prize", "Moving straight to the final"], "Medium", "The Switch", ["Switched Out", "Leftover Answer", "Temporary Exclusion", "Opponent Choices", "Forced Response", "Switch Mechanic", "Game Rule"]],
     ["How many completed circuits of the final categories doubled the winner's bank on The Switch?", "Three", ["One", "Two", "Four"], "Medium", "The Switch", ["Three Circuits", "Bank Doubled", "Final Categories", "Winner Bonus", "Prize Multiplier", "Quiz Finale", "Cash Reward"]],
 
@@ -150,7 +150,7 @@ const questions = facts.map((fact, index) => {
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Winning Combination' || programme === 'Sitting on a Fortune' || programme === 'Moneybags' || programme === "It's a Knockout" || programme === 'Call My Bluff' || programme === 'Double Your Money' || programme === "What's My Line?") ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'The Switch' || programme === 'Winning Combination' || programme === 'Sitting on a Fortune' || programme === 'Moneybags' || programme === "It's a Knockout" || programme === 'Call My Bluff' || programme === 'Double Your Money' || programme === "What's My Line?") ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
