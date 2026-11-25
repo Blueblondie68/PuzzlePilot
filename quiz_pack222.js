@@ -182,7 +182,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...(programme === '500 Questions' ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === '500 Questions' || programme === 'Two Tribes') ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
