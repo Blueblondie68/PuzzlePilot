@@ -163,7 +163,7 @@ const facts = [
 
     // THE CODE
     ["What did contestants need to match correctly on The Code?", "A question and its answer", ["A song and its singer", "A photograph and its location", "A date and its weekday"], "Medium", "The Code", ["Question Answer Matching", "Quiz Pairs", "Safe Puzzle", "Correct Combinations", "Code Breaking", "Knowledge Test", "BBC Game Format"]],
-    ["How did the choices offered to players change as they got closer to solving The Code?", "Fewer possibilities were shown", ["More helpers joined the team", "The questions became longer but easier", "Extra safes were added"], "Medium", "The Code", ["Fewer Choices", "Puzzle Progression", "Safe Code", "Reduced Options", "Final Stage", "Answer Elimination", "Game Mechanics"]],
+    ["How did the number of questions contestants could initially reveal change as they got closer to solving The Code?", "Fewer questions could be revealed", ["More helpers joined the team", "The questions became longer but easier", "Extra safes were added"], "Medium", "The Code", ["Fewer Choices", "Puzzle Progression", "Safe Code", "Reduced Options", "Final Stage", "Answer Elimination", "Game Mechanics"]],
 
     // TEST THE NATION
     ["Who was the main presenter of the BBC's Test the Nation?", "Anne Robinson", ["Fiona Bruce", "Kirsty Wark", "Carol Vorderman"], "Easy", "Test the Nation", ["Anne Robinson", "BBC One", "2002 Launch", "Main Host", "The Weakest Link", "National Knowledge", "Presenter Identity"]],
@@ -190,7 +190,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'The Tournament' || programme === 'The Edge') ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'The Code' || programme === 'The Tournament' || programme === 'The Edge') ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });

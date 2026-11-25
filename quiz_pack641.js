@@ -1,6 +1,6 @@
 // PuzzlePilot — Pack 641: Who Dares Wins (BBC quiz)
-// 31 supplementary questions; eight original programme questions in Pack 214 retained.
-// UK run, pilot, production, rules, significant winners, celebrity Eurovision special, Irish adaptation and viewer recognition. No major industry award or nomination verified in searches. Individual results for all 107 episodes not established; full-bank semantic duplicate scan outstanding. Original Packs 209–222 checked. Bank connection unchanged.
+// 32 supplementary questions; eight original programme questions in Pack 214 retained.
+// UK run, pilot, production, rules, significant winners, celebrity Eurovision special, Irish adaptation and viewer recognition. Rose d'Or game show shortlist confirmed in UKGameshows news archive. Individual results for all 107 episodes not established; full-bank semantic duplicate scan outstanding. Original Packs 209–222 checked. Bank connection unchanged.
 'use strict';
 const questions = [
   {
@@ -936,7 +936,35 @@ const questions = [
       "2007",
       "Source: https://www.ukgameshows.com/ukgs/Poll_of_the_Year_2007"
     ]
+  },
+  {
+    "id": "tv_52700",
+    "question": "For which international television award was the BBC quiz Who Dares Wins shortlisted in the game show category?",
+    "answers": [
+      "BAFTA",
+      "Rose d'Or",
+      "International Emmy",
+      "National Television Award"
+    ],
+    "correctAnswer": "Rose d'Or",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Who Dares Wins",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Who Dares Wins",
+      "Programme: Who Dares Wins",
+      "BBC One",
+      "UK Game Show",
+      "Awards",
+      "Rose d'Or",
+      "Nomination",
+      "Source: https://www.ukgameshows.com/ukgs/News_Archive"
+    ]
   }
 ];
-if(questions.length!==31||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(52391+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: Who Dares Wins')||q.dailyEligible!==true))throw Error('Pack 641 validation failed');
+if(questions.length!==32||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!==(i===31?'tv_52700':'tv_'+(52391+i))||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: Who Dares Wins')||q.dailyEligible!==true))throw Error('Pack 641 validation failed');
 module.exports=questions;
