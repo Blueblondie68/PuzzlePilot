@@ -150,7 +150,7 @@ const questions = facts.map((fact, index) => {
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'The Switch' || programme === 'Winning Combination' || programme === 'Sitting on a Fortune' || programme === 'Moneybags' || programme === "It's a Knockout" || programme === 'Call My Bluff' || programme === 'Double Your Money' || programme === "What's My Line?") ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'The Boss' || programme === 'The Switch' || programme === 'Winning Combination' || programme === 'Sitting on a Fortune' || programme === 'Moneybags' || programme === "It's a Knockout" || programme === 'Call My Bluff' || programme === 'Double Your Money' || programme === "What's My Line?") ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
