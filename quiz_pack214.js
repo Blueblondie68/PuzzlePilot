@@ -8,7 +8,7 @@ const facts = [
     // Lingo (8)
     ["Who presents ITV's modern word quiz Lingo?", "Adil Ray", ["Rick Edwards", "Ben Shephard", "Rylan Clark"], "Easy", "Lingo", ["Adil Ray", "Modern ITV Quiz", "2021 Revival", "Word Game Presenter", "Television Host", "Daytime Television", "Original Revival Host"]],
     ["Which entertainer presented the original British version of Lingo?", "Martin Daniels", ["Paul Daniels", "Leslie Crowther", "Bob Holness"], "Medium", "Lingo", ["Martin Daniels", "1988 UK Series", "Original Presenter", "ITV 1980s", "British Game Show History", "Paul Daniels Son", "Quiz Hosting"]],
-    ["Who hosted ITV's Celebrity Lingo?", "RuPaul", ["Graham Norton", "Alan Carr", "Stephen Mulhern"], "Easy", "Lingo", ["RuPaul", "Celebrity Lingo", "Celebrity Edition", "ITV 2022", "Drag Race Host", "Word Game Presenter", "Prime Time Television"]],
+    ["Who hosted ITV's Celebrity Lingo in its original 2022 series?", "RuPaul", ["Graham Norton", "Alan Carr", "Stephen Mulhern"], "Easy", "Celebrity Lingo", ["RuPaul", "Lingo", "Celebrity Edition", "ITV 2022", "Drag Race Host", "Word Game Presenter", "Prime Time Television"]],
     ["What are contestants trying to discover in Lingo's main rounds?", "Hidden words", ["Missing numbers", "Mystery celebrities", "Film locations"], "Easy", "Lingo", ["Hidden Words", "Letter Guessing", "Word Puzzles", "Vocabulary", "Deduction", "Lingo Grid", "Word Recognition"]],
     ["How many pairs compete at the start of a regular modern Lingo episode?", "Three", ["Two", "Four", "Five"], "Easy", "Lingo", ["Three Contestant Pairs", "Six Players", "ITV Daytime", "2021 Format", "Opening Teams", "Word Game Competition", "Contestant Line Up"]],
     ["What other type of game featured alongside word-guessing in the original British Lingo?", "Bingo", ["Darts", "Dominoes", "Charades"], "Medium", "Lingo", ["Bingo", "1988 Format", "Number Balls", "Word And Number Game", "Original Lingo", "Five Letter Words", "Winning Lines"]],
@@ -150,7 +150,7 @@ const questions = facts.map((fact, index) => {
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Lingo' || programme === 'Celebrity Lingo') ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
