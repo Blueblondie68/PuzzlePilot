@@ -150,7 +150,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...(['The Cube', 'Beat the Star', '100%', 'Brainteaser', 'Win My Wage', 'Secret Fortune'].includes(programme) ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...(['The Cube', 'Beat the Star', '100%', 'Brainteaser', 'Win My Wage', 'Secret Fortune', 'Rebound'].includes(programme) ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
