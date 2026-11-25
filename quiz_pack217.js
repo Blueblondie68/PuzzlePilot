@@ -76,7 +76,7 @@ const facts = [
     // TAKE ON THE TWISTERS (6)
     ["Who presented ITV's Take on the Twisters?", "Julia Bradbury", ["Davina McCall", "Kate Garraway", "Christine Lampard"], "Medium", "Take on the Twisters", ["Julia Bradbury", "ITV Presenter", "2013 Debut", "Original Host", "Twisters Quiz", "Daytime Competition", "British Broadcaster"]],
     ["What objects were the centrepiece of Take on the Twisters?", "Giant sand timers", ["Oversized chess pieces", "Spinning letter wheels", "Large playing cards"], "Medium", "Take on the Twisters", ["Giant Sand Timers", "Twisters", "Hourglasses", "Coloured Timers", "Game Set", "Time Pressure", "Physical Props"]],
-    ["What happened to a timer when a contestant answered correctly on Take on the Twisters?", "It was turned over", ["It was smashed", "It was replaced by a clock", "It was removed from the studio"], "Medium", "Take on the Twisters", ["Timer Flipped", "Correct Response", "Sand Reversal", "Twister Mechanic", "Quiz Question", "Clock Reset", "Timed Strategy"]],
+    ["What happened to a timer if a contestant chose to twist it after a correct quickfire answer on Take on the Twisters?", "It was turned over", ["It was smashed", "It was replaced by a clock", "It was removed from the studio"], "Medium", "Take on the Twisters", ["Timer Flipped", "Correct Response", "Sand Reversal", "Twister Mechanic", "Quiz Question", "Clock Reset", "Timed Strategy"]],
     ["How many contestants competed for a place in the Take on the Twisters final?", "Four", ["Two", "Three", "Six"], "Medium", "Take on the Twisters", ["Four Contestants", "Opening Line Up", "Quiz Players", "2013 Format", "Individual Players", "Player Count", "ITV Daytime"]],
     ["How many giant timers were used in the Take on the Twisters final?", "Eight", ["Four", "Six", "Ten"], "Medium", "Take on the Twisters", ["Eight Timers", "Final Challenge", "Giant Twisters", "Sand Countdown", "Jackpot Stage", "Hourglass Puzzle", "Game Equipment"]],
     ["Which long-running ITV quiz did Take on the Twisters temporarily replace in its teatime slot?", "The Chase", ["Pointless", "Tipping Point", "Eggheads"], "Medium", "Take on the Twisters", ["The Chase", "ITV Teatime", "Temporary Replacement", "Broadcast Scheduling", "Summer Quiz", "ITV Programmes", "2013 Slot"]],
@@ -150,7 +150,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...(['The Cube', 'Beat the Star', '100%', 'Brainteaser', 'Win My Wage', 'Secret Fortune', 'Rebound', 'Freeze Out'].includes(programme) ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...(['The Cube', 'Beat the Star', '100%', 'Brainteaser', 'Win My Wage', 'Secret Fortune', 'Rebound', 'Freeze Out', 'Take on the Twisters'].includes(programme) ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
