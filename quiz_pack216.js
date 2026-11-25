@@ -89,7 +89,7 @@ const facts = [
     ["How many notes were available to reveal the mystery tune on Keynotes?", "Nine", ["Five", "Seven", "Twelve"], "Medium", "Keynotes", ["Nine Notes", "Mystery Tune", "Music Clues", "Melody Fragments", "Note Reveal", "Original Format", "Musical Round"]],
     ["What did contestants have to supply after the music stopped in a Keynotes clue?", "The next word of the lyric", ["The singer's birthplace", "The name of the instrument", "The song's chart position"], "Medium", "Keynotes", ["Next Lyric Word", "Music Stops", "Song Lyrics", "Missing Word", "Pop Music", "Lyric Recall", "Question Mechanic"]],
     ["How many possible lyric words did Keynotes players choose between?", "Three", ["Two", "Four", "Five"], "Medium", "Keynotes", ["Three Lyric Options", "Multiple Choice", "Next Word", "Song Recognition", "Audio Challenge", "Music Trivia", "Answer Selection"]],
-    ["What could the Keynotes winners do to their winnings in the bonus round?", "Double or treble them", ["Convert them into holiday miles", "Split them with the audience", "Exchange them for a mystery box"], "Medium", "Keynotes", ["Double Or Treble", "Bonus Round", "Cash Multiplier", "Prize Risk", "Winning Team", "Endgame", "Money Game"]],
+    ["What could the Keynotes winners increase by correctly identifying the final mystery tune?", "Their cash winnings", ["Their number of teammates", "Their number of previous victories", "Their allocated time for the next show"], "Medium", "Keynotes", ["Bonus Round", "Cash Multiplier", "Winning Team", "Endgame", "Money Game"]],
 
     // LIGHTNING (6)
     ["Which comedian presented the BBC quiz Lightning?", "Zoe Lyons", ["Sara Pascoe", "Lucy Porter", "Katherine Ryan"], "Easy", "Lightning", ["Zoe Lyons", "BBC Two", "2021 Launch", "Comedian Presenter", "Original Host", "Timed Quiz", "British Comedy"]],
@@ -151,7 +151,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Chain Letters' || programme === 'Lucky Ladders' || programme === 'Crosswits' || programme === 'Every Second Counts' || programme === 'Wipeout' || programme === 'The Pyramid Game' || programme === 'Odd One Out' || programme === 'All Clued Up' || programme === 'Turnabout') ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Chain Letters' || programme === 'Lucky Ladders' || programme === 'Crosswits' || programme === 'Every Second Counts' || programme === 'Wipeout' || programme === 'The Pyramid Game' || programme === 'Odd One Out' || programme === 'All Clued Up' || programme === 'Turnabout' || programme === 'Keynotes') ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
