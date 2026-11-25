@@ -151,7 +151,7 @@ const questions = facts.map(([question, correctAnswer, wrongAnswers, difficulty,
         answers,
         correctAnswer,
         difficulty,
-        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Chain Letters' || programme === 'Lucky Ladders' || programme === 'Crosswits' || programme === 'Every Second Counts' || programme === 'Wipeout' || programme === 'The Pyramid Game' || programme === 'Odd One Out' || programme === 'All Clued Up' || programme === 'Turnabout' || programme === 'Keynotes' || programme === 'Lightning') ? ['Programme: ' + programme] : []), ...specificTags],
+        tags: ['British Television', 'Quiz Shows', programme, ...((programme === 'Chain Letters' || programme === 'Lucky Ladders' || programme === 'Crosswits' || programme === 'Every Second Counts' || programme === 'Wipeout' || programme === 'The Pyramid Game' || programme === 'Odd One Out' || programme === 'All Clued Up' || programme === 'Turnabout' || programme === 'Keynotes' || programme === 'Lightning' || programme === 'Head Hunters') ? ['Programme: ' + programme] : []), ...specificTags],
         dailyEligible: true
     };
 });
