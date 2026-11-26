@@ -2139,5 +2139,1109 @@ module.exports = [
             "Awards",
             "Source: https://www.michaelkamen.com/catalogue/lethal-weapon-4"
         ]
+    },
+    {
+        "id": "film_0456",
+        "question": "What does Riggs tell Murtaugh has kept him going since his wife's death in Lethal Weapon?",
+        "answers": [
+            "Training for a sporting competition",
+            "His love of police work",
+            "A promise to leave Los Angeles",
+            "A plan to return to the army"
+        ],
+        "correctAnswer": "His love of police work",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Character",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/68361"
+        ]
+    },
+    {
+        "id": "film_0457",
+        "question": "What does Riggs give Murtaugh in the final scene of Lethal Weapon to show how his outlook has changed?",
+        "answers": [
+            "The bullet he had been saving for himself",
+            "His wedding ring",
+            "His military medals",
+            "The keys to his trailer"
+        ],
+        "correctAnswer": "The bullet he had been saving for himself",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Character",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/68361"
+        ]
+    },
+    {
+        "id": "film_0458",
+        "question": "Why is Amanda Hunsaker's death treated as a murder in Lethal Weapon?",
+        "answers": [
+            "Her father confesses to pushing her",
+            "Her flat has been cleared of evidence",
+            "A neighbour reports seeing a struggle on the balcony",
+            "The drugs she took had been poisoned"
+        ],
+        "correctAnswer": "The drugs she took had been poisoned",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/68361"
+        ]
+    },
+    {
+        "id": "film_0459",
+        "question": "What happens when Riggs and Murtaugh go to question Dixie at home in Lethal Weapon?",
+        "answers": [
+            "They find her flat has been emptied",
+            "They discover that she has gone to the police station",
+            "She gives them Hunsaker's business records",
+            "Her house explodes"
+        ],
+        "correctAnswer": "Her house explodes",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/68361"
+        ]
+    },
+    {
+        "id": "film_0460",
+        "question": "In Lethal Weapon, what does the tattoo a witness saw at Dixie's house suggest about the suspect?",
+        "answers": [
+            "He worked at Amanda's nightclub",
+            "He was a prison guard",
+            "He served in the Special Forces",
+            "He belonged to a rival police division"
+        ],
+        "correctAnswer": "He served in the Special Forces",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/68361"
+        ]
+    },
+    {
+        "id": "film_0461",
+        "question": "Who kills Michael Hunsaker just after he admits his role in the smuggling operation in Lethal Weapon?",
+        "answers": [
+            "General McAllister",
+            "Mr Joshua",
+            "Dixie",
+            "Roger Murtaugh"
+        ],
+        "correctAnswer": "Mr Joshua",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/68361"
+        ]
+    },
+    {
+        "id": "film_0462",
+        "question": "Who plays Michael Hunsaker in Lethal Weapon?",
+        "answers": [
+            "Tom Atkins",
+            "Mitchell Ryan",
+            "Gary Busey",
+            "Steve Kahan"
+        ],
+        "correctAnswer": "Tom Atkins",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Cast",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/68361"
+        ]
+    },
+    {
+        "id": "film_0463",
+        "question": "Who plays Amanda Hunsaker in Lethal Weapon?",
+        "answers": [
+            "Jackie Swanson",
+            "Traci Wolfe",
+            "Ebonie Smith",
+            "Mary Ellen Trainor"
+        ],
+        "correctAnswer": "Jackie Swanson",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Cast",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/68361"
+        ]
+    },
+    {
+        "id": "film_0464",
+        "question": "Who was the cinematographer on Lethal Weapon?",
+        "answers": [
+            "Jan de Bont",
+            "Andrzej Bartkowiak",
+            "Dean Semler",
+            "Stephen Goldblatt"
+        ],
+        "correctAnswer": "Stephen Goldblatt",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/68361"
+        ]
+    },
+    {
+        "id": "film_0465",
+        "question": "Which musician supplies the guitar associated with Riggs in the score for Lethal Weapon?",
+        "answers": [
+            "David Sanborn",
+            "Michael Kamen",
+            "Eric Clapton",
+            "Ry Cooder"
+        ],
+        "correctAnswer": "Eric Clapton",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Music",
+            "Source: https://www.michaelkamen.com/catalogue/lethal-weapon"
+        ]
+    },
+    {
+        "id": "film_0466",
+        "question": "Which saxophonist's playing is associated with Murtaugh in Lethal Weapon?",
+        "answers": [
+            "Kenny G",
+            "David Sanborn",
+            "Branford Marsalis",
+            "Michael Brecker"
+        ],
+        "correctAnswer": "David Sanborn",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Music",
+            "Source: https://www.michaelkamen.com/catalogue/lethal-weapon"
+        ]
+    },
+    {
+        "id": "film_0467",
+        "question": "Who composed the orchestral score for Lethal Weapon, working with guitarist Eric Clapton and saxophonist David Sanborn?",
+        "answers": [
+            "Alan Silvestri",
+            "Michael Kamen",
+            "James Horner",
+            "Jerry Goldsmith"
+        ],
+        "correctAnswer": "Michael Kamen",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Music",
+            "Source: https://www.michaelkamen.com/catalogue/lethal-weapon"
+        ]
+    },
+    {
+        "id": "film_0468",
+        "question": "What object does Trish return to Riggs that prompts him to talk about the night Vicky died in Lethal Weapon 2?",
+        "answers": [
+            "A gold pen",
+            "A silver lighter",
+            "A wedding photograph",
+            "A wristwatch"
+        ],
+        "correctAnswer": "A gold pen",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Character",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_0469",
+        "question": "In Lethal Weapon 2, how does the first would-be assassin get close to Leo in his hotel?",
+        "answers": [
+            "He claims to be a police escort",
+            "He pretends to be Leo's solicitor",
+            "He arrives with a maintenance crew",
+            "He poses as a room service attendant"
+        ],
+        "correctAnswer": "He poses as a room service attendant",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_0470",
+        "question": "In Lethal Weapon 2, what job does Riggs pretend to have when he investigates the house on stilts?",
+        "answers": [
+            "Estate agent",
+            "Meter reader",
+            "Pool cleaner",
+            "Cable installer"
+        ],
+        "correctAnswer": "Pool cleaner",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_0471",
+        "question": "In Lethal Weapon 2, what does Riggs take from Rudd's office that points the detectives to the docks?",
+        "answers": [
+            "A map of the harbour patrol routes",
+            "A photograph of Vorstedt at the docks",
+            "A note naming the Alba Varden",
+            "A receipt for the sports car"
+        ],
+        "correctAnswer": "A note naming the Alba Varden",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_0472",
+        "question": "How does Roger confirm what the Alba Varden is in Lethal Weapon 2?",
+        "answers": [
+            "He sees it in a television news report",
+            "He spots it in a home video shot on his boat",
+            "He recognises it in a photograph at Rudd's office",
+            "He asks Rika to read from a shipping register"
+        ],
+        "correctAnswer": "He spots it in a home video shot on his boat",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_0473",
+        "question": "Who rescues Leo from the house on stilts before it collapses in Lethal Weapon 2?",
+        "answers": [
+            "Roger Murtaugh",
+            "Martin Riggs",
+            "Captain Murphy",
+            "Rika van den Haas"
+        ],
+        "correctAnswer": "Roger Murtaugh",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_0474",
+        "question": "Who shoots Rudd after Rudd invokes diplomatic immunity in the climax of Lethal Weapon 2?",
+        "answers": [
+            "Martin Riggs",
+            "Leo Getz",
+            "Captain Murphy",
+            "Roger Murtaugh"
+        ],
+        "correctAnswer": "Roger Murtaugh",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_0475",
+        "question": "Who received the screenplay credit for Lethal Weapon 2?",
+        "answers": [
+            "Shane Black",
+            "Warren Murphy",
+            "Jonathan Lemkin",
+            "Jeffrey Boam"
+        ],
+        "correctAnswer": "Jeffrey Boam",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_0476",
+        "question": "Which novelist shares a story credit with Shane Black on Lethal Weapon 2?",
+        "answers": [
+            "Roderick Thorp",
+            "Walter Wager",
+            "Warren Murphy",
+            "Elmore Leonard"
+        ],
+        "correctAnswer": "Warren Murphy",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_0477",
+        "question": "Which architect designed the real house used as a model for the collapsing hillside home in Lethal Weapon 2?",
+        "answers": [
+            "Frank Lloyd Wright",
+            "John Lautner",
+            "Richard Neutra",
+            "Frank Gehry"
+        ],
+        "correctAnswer": "John Lautner",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_0478",
+        "question": "Besides Michael Kamen, which two musicians are credited for the music on the Lethal Weapon 2 soundtrack?",
+        "answers": [
+            "Eric Clapton and David Sanborn",
+            "Eric Clapton and George Harrison",
+            "David Sanborn and Sting",
+            "George Harrison and Tom Petty"
+        ],
+        "correctAnswer": "Eric Clapton and David Sanborn",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Music",
+            "Source: https://www.michaelkamen.com/lethal-weapon-2-soundtrack"
+        ]
+    },
+    {
+        "id": "film_0479",
+        "question": "What do Riggs and Lorna compare when they start to grow closer in Lethal Weapon 3?",
+        "answers": [
+            "Their scars",
+            "Their shooting scores",
+            "Their undercover assignments",
+            "Their service medals"
+        ],
+        "correctAnswer": "Their scars",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Character",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0480",
+        "question": "When does Riggs tell Lorna he loves her in Lethal Weapon 3?",
+        "answers": [
+            "As they compare scars at her home",
+            "After a chase at the ice rink",
+            "When she first enters Captain Murphy's office",
+            "As he helps her into a medical helicopter"
+        ],
+        "correctAnswer": "As he helps her into a medical helicopter",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Character",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0481",
+        "question": "What connects Darryl's weapon to the guns used in the armoured vehicle robbery in Lethal Weapon 3?",
+        "answers": [
+            "They were all issued to Captain Murphy's officers",
+            "They were brought in by the South African consulate",
+            "They came from the same stock of confiscated weapons",
+            "They were all bought from the same street trader"
+        ],
+        "correctAnswer": "They came from the same stock of confiscated weapons",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0482",
+        "question": "What happens to Leo when he helps the detectives find Travis at the ice hockey game in Lethal Weapon 3?",
+        "answers": [
+            "Travis locks him in a changing room",
+            "Travis shoots him in the arm",
+            "He falls from the stands",
+            "He is arrested by arena security"
+        ],
+        "correctAnswer": "Travis shoots him in the arm",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0483",
+        "question": "How does Nick respond when Roger talks to him about Darryl's death in Lethal Weapon 3?",
+        "answers": [
+            "He insists Darryl was unarmed",
+            "He blames Darryl for firing at Roger",
+            "He refuses to speak to Roger",
+            "He says another officer fired first"
+        ],
+        "correctAnswer": "He blames Darryl for firing at Roger",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Character",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0484",
+        "question": "Who traces Travis's construction company to the Rancho Arroyo development in Lethal Weapon 3?",
+        "answers": [
+            "Leo Getz",
+            "Lorna Cole",
+            "Captain Murphy",
+            "Nick Murtaugh"
+        ],
+        "correctAnswer": "Leo Getz",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0485",
+        "question": "What does Roger pass to Riggs to stop Travis at the building site in Lethal Weapon 3?",
+        "answers": [
+            "Captain Murphy's service pistol",
+            "Travis's empty pistol",
+            "Lorna's police radio",
+            "Darryl's gun loaded with armour-piercing rounds"
+        ],
+        "correctAnswer": "Darryl's gun loaded with armour-piercing rounds",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0486",
+        "question": "Who plays Captain Ed Murphy in Lethal Weapon 3?",
+        "answers": [
+            "Stuart Wilson",
+            "Tom Atkins",
+            "Steve Kahan",
+            "Mitchell Ryan"
+        ],
+        "correctAnswer": "Steve Kahan",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Cast",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0487",
+        "question": "Who plays Darryl in Lethal Weapon 3?",
+        "answers": [
+            "Damon Hines",
+            "Mark Pellegrino",
+            "Bobby Wynn",
+            "Gregory Millar"
+        ],
+        "correctAnswer": "Bobby Wynn",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Cast",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0488",
+        "question": "Which writer shares the screenplay credit for Lethal Weapon 3 with Jeffrey Boam?",
+        "answers": [
+            "Michael Kamen",
+            "Robert Mark Kamen",
+            "Channing Gibson",
+            "Warren Murphy"
+        ],
+        "correctAnswer": "Robert Mark Kamen",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0489",
+        "question": "Who sings It's Probably Me with Eric Clapton on the soundtrack of Lethal Weapon 3?",
+        "answers": [
+            "Sting",
+            "Elton John",
+            "Phil Collins",
+            "Bryan Adams"
+        ],
+        "correctAnswer": "Sting",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Music",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_0490",
+        "question": "To which rank are Riggs and Murtaugh promoted in Lethal Weapon 4?",
+        "answers": [
+            "Lieutenant",
+            "Commander",
+            "Deputy chief",
+            "Captain"
+        ],
+        "correctAnswer": "Captain",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Character",
+            "Source: https://thescriptsavant.com/movies/Lethal_Weapon_4.pdf"
+        ]
+    },
+    {
+        "id": "film_0491",
+        "question": "At what rank do Riggs and Murtaugh end up after handing back their captains' badges in Lethal Weapon 4?",
+        "answers": [
+            "Lieutenant",
+            "Detective inspector",
+            "Commander",
+            "Sergeant"
+        ],
+        "correctAnswer": "Sergeant",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Character",
+            "Source: https://thescriptsavant.com/movies/Lethal_Weapon_4.pdf"
+        ]
+    },
+    {
+        "id": "film_0492",
+        "question": "Why does Roger's family keep Rianne's marriage to Butters from him in Lethal Weapon 4?",
+        "answers": [
+            "Roger thinks Butters is already married",
+            "Roger is planning to transfer Butters to another unit",
+            "Roger doesn't want her to marry a police officer",
+            "Rianne has promised to wait until Roger retires"
+        ],
+        "correctAnswer": "Roger doesn't want her to marry a police officer",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Character",
+            "Source: https://en.wikipedia.org/wiki/Lethal_Weapon_4"
+        ]
+    },
+    {
+        "id": "film_0493",
+        "question": "What happens to the captain of the ship that brought the Hong family to America in Lethal Weapon 4?",
+        "answers": [
+            "He turns himself in to Murtaugh",
+            "Ku kills him for attracting police attention",
+            "He escapes with the counterfeit plates",
+            "Butters arrests him at the dentist's surgery"
+        ],
+        "correctAnswer": "Ku kills him for attracting police attention",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Lethal_Weapon_4"
+        ]
+    },
+    {
+        "id": "film_0494",
+        "question": "Who explains that Ku is dealing with a corrupt Chinese general in Lethal Weapon 4?",
+        "answers": [
+            "Detective Ng",
+            "Captain Murphy",
+            "Leo Getz",
+            "Lee Butters"
+        ],
+        "correctAnswer": "Detective Ng",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Lethal_Weapon_4"
+        ]
+    },
+    {
+        "id": "film_0495",
+        "question": "How is Ku personally connected to one of the Four Fathers in Lethal Weapon 4?",
+        "answers": [
+            "One is his brother",
+            "One is his uncle",
+            "One is his son",
+            "One is his grandfather"
+        ],
+        "correctAnswer": "One is his brother",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Lethal_Weapon_4"
+        ]
+    },
+    {
+        "id": "film_0496",
+        "question": "What does the general do when he learns the payment is counterfeit in Lethal Weapon 4?",
+        "answers": [
+            "He surrenders to Murtaugh",
+            "He agrees to release the prisoners anyway",
+            "He tries to buy the engraving plates",
+            "He kills most of the prisoners"
+        ],
+        "correctAnswer": "He kills most of the prisoners",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Lethal_Weapon_4"
+        ]
+    },
+    {
+        "id": "film_0497",
+        "question": "Where do Riggs and Murtaugh finally confront Ku after the exchange in Lethal Weapon 4?",
+        "answers": [
+            "In a restaurant kitchen",
+            "In a hospital car park",
+            "On a pier",
+            "Inside the engraving workshop"
+        ],
+        "correctAnswer": "On a pier",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Lethal_Weapon_4"
+        ]
+    },
+    {
+        "id": "film_0498",
+        "question": "Who plays Detective Ng in Lethal Weapon 4?",
+        "answers": [
+            "Kim Chan",
+            "Calvin Jung",
+            "Eddy Ko",
+            "Danny Glover"
+        ],
+        "correctAnswer": "Calvin Jung",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Cast",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/61010"
+        ]
+    },
+    {
+        "id": "film_0499",
+        "question": "Who was the cinematographer on Lethal Weapon 4?",
+        "answers": [
+            "Jan de Bont",
+            "Andrzej Bartkowiak",
+            "Stephen Goldblatt",
+            "Dean Semler"
+        ],
+        "correctAnswer": "Andrzej Bartkowiak",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/61010"
+        ]
+    },
+    {
+        "id": "film_0500",
+        "question": "What career milestone did Jet Li reach with Lethal Weapon 4?",
+        "answers": [
+            "He made his Hollywood film debut",
+            "He made his directorial debut",
+            "He earned his first Hong Kong Film Award",
+            "He made his debut as a stunt coordinator"
+        ],
+        "correctAnswer": "He made his Hollywood film debut",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Production",
+            "Source: https://www.latimes.com/archives/la-xpm-2006-aug-06-ca-gongli6-story.html"
+        ]
+    },
+    {
+        "id": "film_0501",
+        "question": "What is Leo Getz's line of work by the time of Lethal Weapon 4?",
+        "answers": [
+            "Estate agent",
+            "Accountant",
+            "Police sergeant",
+            "Private detective"
+        ],
+        "correctAnswer": "Private detective",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://www.rogerebert.com/reviews/lethal-weapon-4-1998"
+        ]
+    },
+    {
+        "id": "film_0502",
+        "question": "What change lets Captain Murphy give Riggs and Murtaugh back their old jobs in Lethal Weapon 4?",
+        "answers": [
+            "The mayor creates a new detective division",
+            "The Triad case is transferred to federal agents",
+            "The city decides to insure itself",
+            "The police union agrees to cover the cost of the investigation"
+        ],
+        "correctAnswer": "The city decides to insure itself",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://thescriptsavant.com/movies/Lethal_Weapon_4.pdf"
+        ]
+    },
+    {
+        "id": "film_0503",
+        "question": "Who edited Lethal Weapon 2?",
+        "answers": [
+            "Frank J. Urioste",
+            "John F. Link",
+            "Stuart Baird",
+            "Dallas Puett"
+        ],
+        "correctAnswer": "Stuart Baird",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
     }
 ];
