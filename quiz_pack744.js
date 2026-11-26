@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 744: Big Fat Quiz family
-// 160 additions; seven existing questions in Pack 220. Expanded audit covers all six decade specials and both anniversaries, plus annual editions and other specials. Remaining later winners, full compilation contents, complete episode-level guest records and full-bank semantic duplicate check outstanding; no claim of exhaustive coverage. Bank unchanged.
+// 226 additions; seven originals in Pack 220. Further expansion of annual and Everything team line-ups, 2025 winner, and all ten Best Bits episode titles. Later winners and individual compilation clip contents not all verified; full-bank semantic duplicate check outstanding. Bank unchanged.
 'use strict';
 const questions = [
   {
@@ -4650,7 +4650,1855 @@ const questions = [
       "Panellists",
       "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
     ]
+  },
+  {
+    "id": "tv_55412",
+    "question": "Who was Simon Pegg's teammate in the 2004 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "June Sarpong",
+      "Liza Tarbuck",
+      "David Walliams",
+      "Jonathan Ross"
+    ],
+    "correctAnswer": "Liza Tarbuck",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2004",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55413",
+    "question": "Who was David Walliams's teammate in the 2004 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Rob Brydon",
+      "Simon Pegg",
+      "Jonathan Ross",
+      "June Sarpong"
+    ],
+    "correctAnswer": "Rob Brydon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2004",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55414",
+    "question": "Who was David Mitchell's teammate in the 2005 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Sharon Osbourne",
+      "Rob Brydon",
+      "Jonathan Ross",
+      "Denise van Outen"
+    ],
+    "correctAnswer": "Denise van Outen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2005",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55415",
+    "question": "Who was Gordon Ramsay's teammate in the 2005 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "David Mitchell",
+      "Jonathan Ross",
+      "Rob Brydon",
+      "Denise van Outen"
+    ],
+    "correctAnswer": "Rob Brydon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2005",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55416",
+    "question": "Who was David Walliams's teammate in the 2006 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Noel Fielding",
+      "Rob Brydon",
+      "Russell Brand",
+      "Jonathan Ross"
+    ],
+    "correctAnswer": "Rob Brydon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2006",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55417",
+    "question": "Who was Cat Deeley's teammate in the 2006 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Jonathan Ross",
+      "Rob Brydon",
+      "David Walliams",
+      "Noel Fielding"
+    ],
+    "correctAnswer": "Jonathan Ross",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2006",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55418",
+    "question": "Who was Lily Allen's teammate in the 2007 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "David Mitchell",
+      "Rob Brydon",
+      "Russell Brand",
+      "Jonathan Ross"
+    ],
+    "correctAnswer": "Jonathan Ross",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2007",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55419",
+    "question": "Who was Russell Brand's teammate in the 2007 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Jonathan Ross",
+      "Rob Brydon",
+      "Noel Fielding",
+      "David Mitchell"
+    ],
+    "correctAnswer": "Noel Fielding",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2007",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55420",
+    "question": "Who was Sean Lock's teammate in the 2008 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Dara Ó Briain",
+      "James Corden",
+      "Michael McIntyre",
+      "Claudia Winkleman"
+    ],
+    "correctAnswer": "James Corden",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2008",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55421",
+    "question": "Who was Michael McIntyre's teammate in the 2008 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Claudia Winkleman",
+      "Davina McCall",
+      "Sean Lock",
+      "Dara Ó Briain"
+    ],
+    "correctAnswer": "Claudia Winkleman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2008",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55422",
+    "question": "Who was Rob Brydon's teammate in the 2009 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Charlie Brooker",
+      "David Mitchell",
+      "Russell Brand",
+      "Claudia Winkleman"
+    ],
+    "correctAnswer": "Claudia Winkleman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2009",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55423",
+    "question": "Who was Russell Brand's teammate in the 2009 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "David Mitchell",
+      "Rob Brydon",
+      "Jonathan Ross",
+      "Charlie Brooker"
+    ],
+    "correctAnswer": "Jonathan Ross",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2009",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55424",
+    "question": "Who was Noel Fielding's teammate in the 2010 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Jonathan Ross",
+      "Richard Ayoade",
+      "Alan Carr",
+      "Michael McIntyre"
+    ],
+    "correctAnswer": "Richard Ayoade",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2010",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55425",
+    "question": "Who was Alan Carr's teammate in the 2010 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Michael McIntyre",
+      "Jonathan Ross",
+      "Noel Fielding",
+      "Richard Ayoade"
+    ],
+    "correctAnswer": "Michael McIntyre",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2010",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55426",
+    "question": "Who was Jamie Oliver's teammate in the 2011 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "David Mitchell",
+      "David Walliams",
+      "Eddie Izzard",
+      "Jonathan Ross"
+    ],
+    "correctAnswer": "Jonathan Ross",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2011",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55427",
+    "question": "Who was Miranda Hart's teammate in the 2011 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Jonathan Ross",
+      "Jamie Oliver",
+      "David Walliams",
+      "David Mitchell"
+    ],
+    "correctAnswer": "David Walliams",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2011",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55428",
+    "question": "Who was Jack Whitehall's teammate in the 2012 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Russell Howard",
+      "James Corden",
+      "Jonathan Ross",
+      "Richard Ayoade"
+    ],
+    "correctAnswer": "James Corden",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2012",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55429",
+    "question": "Who was Russell Howard's teammate in the 2012 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Jonathan Ross",
+      "Jack Whitehall",
+      "Richard Ayoade",
+      "James Corden"
+    ],
+    "correctAnswer": "Jonathan Ross",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2012",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55430",
+    "question": "Who was Jack Whitehall's teammate in the 2013 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Dara Ó Briain",
+      "Richard Ayoade",
+      "Noel Fielding",
+      "Jonathan Ross"
+    ],
+    "correctAnswer": "Jonathan Ross",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2013",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55431",
+    "question": "Who was Micky Flanagan's teammate in the 2014 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Sarah Millican",
+      "David Mitchell",
+      "Mel B",
+      "Richard Ayoade"
+    ],
+    "correctAnswer": "Mel B",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2014",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55432",
+    "question": "Who was David Mitchell's teammate in the 2014 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Kevin Bridges",
+      "Richard Ayoade",
+      "Micky Flanagan",
+      "Mel B"
+    ],
+    "correctAnswer": "Richard Ayoade",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2014",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55433",
+    "question": "Who was Greg Davies's teammate in the 2015 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Richard Ayoade",
+      "David Mitchell",
+      "Rob Brydon",
+      "Jo Brand"
+    ],
+    "correctAnswer": "Richard Ayoade",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2015",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55434",
+    "question": "Who was Claudia Winkleman's teammate in the 2015 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Rob Brydon",
+      "Richard Ayoade",
+      "Greg Davies",
+      "David Mitchell"
+    ],
+    "correctAnswer": "David Mitchell",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2015",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55435",
+    "question": "Who was Romesh Ranganathan's teammate in the 2016 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Sarah Millican",
+      "Rob Delaney",
+      "Mel Giedroyc",
+      "David Mitchell"
+    ],
+    "correctAnswer": "Mel Giedroyc",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2016",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55436",
+    "question": "Who was Rob Delaney's teammate in the 2016 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "David Mitchell",
+      "Richard Ayoade",
+      "Romesh Ranganathan",
+      "Mel Giedroyc"
+    ],
+    "correctAnswer": "Richard Ayoade",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2016",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55437",
+    "question": "Who was David Mitchell's teammate in the 2017 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Roisin Conaty",
+      "Katherine Ryan",
+      "Richard Ayoade",
+      "Noel Fielding"
+    ],
+    "correctAnswer": "Roisin Conaty",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2017",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55438",
+    "question": "Who was Richard Ayoade's teammate in the 2017 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "David Mitchell",
+      "Big Narstie",
+      "Katherine Ryan",
+      "Noel Fielding"
+    ],
+    "correctAnswer": "Noel Fielding",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2017",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55439",
+    "question": "Who was David Mitchell's teammate in the 2018 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Claudia Winkleman",
+      "Noel Fielding",
+      "Michelle Wolf",
+      "Mo Gilligan"
+    ],
+    "correctAnswer": "Michelle Wolf",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2018",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55440",
+    "question": "Who was Richard Ayoade's teammate in the 2018 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "David Mitchell",
+      "Noel Fielding",
+      "Mo Gilligan",
+      "Michelle Wolf"
+    ],
+    "correctAnswer": "Noel Fielding",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2018",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55441",
+    "question": "Who was Dara Ó Briain's teammate in the 2019 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Maya Jama",
+      "Roisin Conaty",
+      "Noel Fielding",
+      "Richard Ayoade"
+    ],
+    "correctAnswer": "Maya Jama",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2019",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55442",
+    "question": "Who was Richard Ayoade's teammate in the 2019 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Asim Chaudhry",
+      "Dara Ó Briain",
+      "Maya Jama",
+      "Noel Fielding"
+    ],
+    "correctAnswer": "Noel Fielding",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2019",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55443",
+    "question": "Who was David Mitchell's teammate in the 2020 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Stacey Solomon",
+      "Joe Lycett",
+      "Maya Jama",
+      "James Acaster"
+    ],
+    "correctAnswer": "Maya Jama",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2020",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55444",
+    "question": "Who was Sara Pascoe's teammate in the 2021 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Guz Khan",
+      "James Acaster",
+      "Jonathan Ross",
+      "Sarah Millican"
+    ],
+    "correctAnswer": "James Acaster",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2021",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55445",
+    "question": "Who was Jonathan Ross's teammate in the 2022 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Rose Matafeo",
+      "Maisie Adam",
+      "Katherine Ryan",
+      "Stephen Merchant"
+    ],
+    "correctAnswer": "Rose Matafeo",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2022",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55446",
+    "question": "Who was Katherine Ryan's teammate in the 2022 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Rose Matafeo",
+      "Richard Ayoade",
+      "Jonathan Ross",
+      "Maisie Adam"
+    ],
+    "correctAnswer": "Maisie Adam",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2022",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55447",
+    "question": "Who was Katherine Ryan's teammate in the 2023 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Mel Giedroyc",
+      "Kevin Bridges",
+      "Rosie Jones",
+      "Richard Ayoade"
+    ],
+    "correctAnswer": "Rosie Jones",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2023",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55448",
+    "question": "Who was Kevin Bridges's teammate in the 2023 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Richard Ayoade",
+      "Mo Gilligan",
+      "Rosie Jones",
+      "Katherine Ryan"
+    ],
+    "correctAnswer": "Mo Gilligan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2023",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55449",
+    "question": "Who was Rob Beckett's teammate in the 2024 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Judi Love",
+      "Maisie Adam",
+      "Katherine Ryan",
+      "Chris McCausland"
+    ],
+    "correctAnswer": "Judi Love",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2024",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55450",
+    "question": "Who was Richard Ayoade's teammate in the 2024 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Maisie Adam",
+      "Judi Love",
+      "Rob Beckett",
+      "Katherine Ryan"
+    ],
+    "correctAnswer": "Katherine Ryan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2024",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55451",
+    "question": "Who was Roisin Conaty's teammate in the 2025 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Lou Sanders",
+      "Nick Mohammed",
+      "Katherine Ryan",
+      "Jonathan Ross"
+    ],
+    "correctAnswer": "Katherine Ryan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2025",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55452",
+    "question": "Who was Richard Ayoade's teammate in the 2025 edition of The Big Fat Quiz of the Year?",
+    "answers": [
+      "Katherine Ryan",
+      "Lou Sanders",
+      "Roisin Conaty",
+      "Nick Mohammed"
+    ],
+    "correctAnswer": "Lou Sanders",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2025",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55453",
+    "question": "Who was Jonathan Ross's teammate in the 2018 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Nish Kumar",
+      "Vic Reeves",
+      "Bob Mortimer",
+      "Miranda Hart"
+    ],
+    "correctAnswer": "Nish Kumar",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2018",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55454",
+    "question": "Who was Vic Reeves's teammate in the 2018 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Nish Kumar",
+      "Jonathan Ross",
+      "Claudia Winkleman",
+      "Bob Mortimer"
+    ],
+    "correctAnswer": "Bob Mortimer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2018",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55455",
+    "question": "Who was David Baddiel's teammate in the 2019 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Joe Lycett",
+      "Big Narstie",
+      "Frank Skinner",
+      "Sandi Toksvig"
+    ],
+    "correctAnswer": "Frank Skinner",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2019",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55456",
+    "question": "Who was Big Narstie's teammate in the 2019 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Sandi Toksvig",
+      "Katherine Ryan",
+      "Joe Lycett",
+      "David Baddiel"
+    ],
+    "correctAnswer": "Katherine Ryan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2019",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55457",
+    "question": "Who was Rob Beckett's teammate in the 2021 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Roisin Conaty",
+      "Oti Mabuse",
+      "Katherine Ryan",
+      "Nish Kumar"
+    ],
+    "correctAnswer": "Roisin Conaty",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2021",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55458",
+    "question": "Who was Nish Kumar's teammate in the 2021 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Roisin Conaty",
+      "Oti Mabuse",
+      "Rob Brydon",
+      "Katherine Ryan"
+    ],
+    "correctAnswer": "Katherine Ryan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2021",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55459",
+    "question": "Who was Rob Brydon's teammate in the 2021 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Roisin Conaty",
+      "Katherine Ryan",
+      "Oti Mabuse",
+      "Rob Beckett"
+    ],
+    "correctAnswer": "Oti Mabuse",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2021",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55460",
+    "question": "Who was Richard Ayoade's teammate in the 2022 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Rosie Jones",
+      "Roisin Conaty",
+      "Joanne McNally",
+      "Rob Beckett"
+    ],
+    "correctAnswer": "Roisin Conaty",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2022",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55461",
+    "question": "Who was Rosie Jones's teammate in the 2022 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Mawaan Rizwan",
+      "Richard Ayoade",
+      "Rob Beckett",
+      "Roisin Conaty"
+    ],
+    "correctAnswer": "Mawaan Rizwan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2022",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55462",
+    "question": "Who was Harry Hill's teammate in the 2025 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Sophie Willan",
+      "Roisin Conaty",
+      "David Mitchell",
+      "Fatiha El-Ghorri"
+    ],
+    "correctAnswer": "Fatiha El-Ghorri",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2025",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55463",
+    "question": "Who was Josh Pugh's teammate in the 2025 edition of The Big Fat Quiz of Everything?",
+    "answers": [
+      "Sophie Willan",
+      "Harry Hill",
+      "Roisin Conaty",
+      "Fatiha El-Ghorri"
+    ],
+    "correctAnswer": "Roisin Conaty",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "2025",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55464",
+    "question": "Which pair won the 2025 Big Fat Quiz of the Year?",
+    "answers": [
+      "Richard Ayoade and Lou Sanders",
+      "Jonathan Ross and Nick Mohammed",
+      "Roisin Conaty and Katherine Ryan",
+      "Jonathan Ross and Richard Ayoade"
+    ],
+    "correctAnswer": "Jonathan Ross and Nick Mohammed",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "2025",
+      "Winning team",
+      "Source: https://www.subtitlecat.com/subs/1317/The.Big.Fat.Quiz.Of.The.Year.2025.1080p.WEBRip.x264.AAC-%5BYTS.LT%5D.html"
+    ]
+  },
+  {
+    "id": "tv_55465",
+    "question": "How many episodes made up the first series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Four",
+      "Three",
+      "Five",
+      "Six"
+    ],
+    "correctAnswer": "Four",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2025",
+      "Series 1",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55466",
+    "question": "How many episodes made up the second series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Four",
+      "Five",
+      "Eight",
+      "Six"
+    ],
+    "correctAnswer": "Six",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2026",
+      "Series 2",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55467",
+    "question": "What was the title of episode 1 of the 2025 series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Ultimate Rivals",
+      "Ultimate Fails",
+      "Ultimate Dream Teams",
+      "Ultimate Jokes"
+    ],
+    "correctAnswer": "Ultimate Dream Teams",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2025",
+      "Compilation episodes",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55468",
+    "question": "What was the title of episode 2 of the 2025 series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Ultimate Dream Teams",
+      "Ultimate Rivals",
+      "Ultimate Fails",
+      "Ultimate Jokes"
+    ],
+    "correctAnswer": "Ultimate Rivals",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2025",
+      "Compilation episodes",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55469",
+    "question": "What was the title of episode 3 of the 2025 series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Ultimate Fails",
+      "Ultimate Dream Teams",
+      "Ultimate Rivals",
+      "Ultimate Jokes"
+    ],
+    "correctAnswer": "Ultimate Fails",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2025",
+      "Compilation episodes",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55470",
+    "question": "What was the title of episode 4 of the 2025 series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Ultimate Dream Teams",
+      "Ultimate Rivals",
+      "Ultimate Fails",
+      "Ultimate Jokes"
+    ],
+    "correctAnswer": "Ultimate Jokes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2025",
+      "Compilation episodes",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55471",
+    "question": "What was the title of episode 1 of the 2026 series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Ultimate Dream Teams",
+      "Ultimate Rivals",
+      "Ultimate Chaos",
+      "Ultimate Fails"
+    ],
+    "correctAnswer": "Ultimate Chaos",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2026",
+      "Compilation episodes",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55472",
+    "question": "What was the title of episode 2 of the 2026 series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Ultimate Dream Teams",
+      "Ultimate Shocks",
+      "Ultimate Rivals",
+      "Ultimate Fails"
+    ],
+    "correctAnswer": "Ultimate Shocks",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2026",
+      "Compilation episodes",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55473",
+    "question": "What was the title of episode 3 of the 2026 series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Ultimate Rebels",
+      "Ultimate Dream Teams",
+      "Ultimate Rivals",
+      "Ultimate Fails"
+    ],
+    "correctAnswer": "Ultimate Rebels",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2026",
+      "Compilation episodes",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55474",
+    "question": "What was the title of episode 4 of the 2026 series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Ultimate Dream Teams",
+      "Ultimate Rivals",
+      "Ultimate Fails",
+      "Ultimate Triumphs"
+    ],
+    "correctAnswer": "Ultimate Triumphs",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2026",
+      "Compilation episodes",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55475",
+    "question": "What was the title of episode 5 of the 2026 series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Ultimate Dream Teams",
+      "Ultimate Rivals",
+      "Ultimate Flops",
+      "Ultimate Fails"
+    ],
+    "correctAnswer": "Ultimate Flops",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2026",
+      "Compilation episodes",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55476",
+    "question": "What was the title of episode 6 of the 2026 series of Big Fat Quiz: Best Bits?",
+    "answers": [
+      "Ultimate Dream Teams",
+      "Ultimate Rants",
+      "Ultimate Rivals",
+      "Ultimate Fails"
+    ],
+    "correctAnswer": "Ultimate Rants",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz: Best Bits",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz: Best Bits",
+      "Programme: The Big Fat Quiz: Best Bits",
+      "Channel 4",
+      "2026",
+      "Compilation episodes",
+      "Source: https://www.tvmaze.com/shows/83884/big-fat-quiz-best-bits/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55477",
+    "question": "Who partnered Adam Buxton to share victory in the 2012 Big Fat Quiz of the 80s?",
+    "answers": [
+      "Jonathan Ross",
+      "Jason Manford",
+      "Stephen Mangan",
+      "Micky Flanagan"
+    ],
+    "correctAnswer": "Jonathan Ross",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "2012",
+      "Joint winners",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
   }
 ];
-if(questions.length!==160||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(55252+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 744 validation failed');
+if(questions.length!==226||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(55252+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 744 validation failed');
 module.exports=questions;
