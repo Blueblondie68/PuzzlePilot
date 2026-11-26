@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 745: Room 101 (British television)
-// 425 additions; seven existing questions in Pack 220. Covers all 18 television series, regular panels, documented winners, bonus nominations, selected extended editions, production, awards, radio origins, charity and compilation material. Restored two verified winners, clarified question stems, and checked BAFTA archive. Full-bank semantic duplicate scan and exhaustive extended edition verification not yet completed. Live bank unchanged.
+// 434 additions; seven existing questions in Pack 220. Source review of published episode tables and selected transcripts, award archives, format and production; corrected and clarified nominations, bonus choices and distractors. All 18 TV series represented. No claim of full-bank semantic duplicate clearance (repository search returned no results even for known legacy files) or exhaustive unseen footage coverage. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -355,7 +355,7 @@ const questions = [
       "Awards",
       "BAFTA",
       "Nomination",
-      "Source: https://www.bafta.org/awards/search/?award-year=2002&search=2026+entertainment+programme&type=Television"
+      "Source: https://www.bafta.org/awards/television/?award-year=2002"
     ]
   },
   {
@@ -384,7 +384,7 @@ const questions = [
       "BAFTA",
       "Nomination",
       "Pop Idol",
-      "Source: https://www.bafta.org/awards/search/?award-year=2002&search=2026+entertainment+programme&type=Television"
+      "Source: https://www.bafta.org/awards/television/?award-year=2002"
     ]
   },
   {
@@ -1052,7 +1052,7 @@ const questions = [
   },
   {
     "id": "tv_55515",
-    "question": "Which children's television puppet did Chris Tarrant get banished during Nick Hancock's tenure as Room 101 presenter?",
+    "question": "Which puppet was banished during Chris Tarrant's 1997 appearance on Room 101?",
     "answers": [
       "Basil Brush",
       "Roland Rat",
@@ -2792,12 +2792,12 @@ const questions = [
   },
   {
     "id": "tv_55575",
-    "question": "Which of these did Jenny Eclair successfully nominate for banishment on Room 101?",
+    "question": "Which sea creature did Jenny Eclair successfully consign to Room 101?",
     "answers": [
-      "Jellyfish",
-      "Goody bags",
-      "Tottenham Court Road",
-      "Balloons"
+      "Starfish",
+      "Sea urchins",
+      "Crabs",
+      "Jellyfish"
     ],
     "correctAnswer": "Jellyfish",
     "difficulty": "Medium",
@@ -2812,9 +2812,9 @@ const questions = [
       "Room 101",
       "Programme: Room 101",
       "2005",
-      "Jenny Eclair",
       "Series 10",
       "Paul Merton",
+      "Jenny Eclair",
       "Successful Nominations",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
@@ -6406,12 +6406,12 @@ const questions = [
   },
   {
     "id": "tv_55692",
-    "question": "What was Chris Tarrant allowed to banish without a challenge as the overall winner of his 2012 Room 101 episode?",
+    "question": "What was Chris Tarrant permitted to banish as his unchallenged bonus item in the 2012 revival of Room 101?",
     "answers": [
+      "Sooty",
       "Basil Brush",
       "Roland Rat",
-      "Gordon the Gopher",
-      "Sooty"
+      "Gordon the Gopher"
     ],
     "correctAnswer": "Sooty",
     "difficulty": "Medium",
@@ -6426,8 +6426,9 @@ const questions = [
       "Room 101",
       "Programme: Room 101",
       "2012",
-      "Chris Tarrant",
       "Series 12",
+      "Frank Skinner",
+      "Chris Tarrant",
       "Bonus Nomination",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
@@ -6856,12 +6857,12 @@ const questions = [
   },
   {
     "id": "tv_55708",
-    "question": "Which of these pet hates did Danny Baker successfully consign to Room 101?",
+    "question": "Which European theme park was sent to Room 101 by Danny Baker?",
     "answers": [
+      "Euro Disney",
       "Alton Towers",
       "Thorpe Park",
-      "Blackpool Pleasure Beach",
-      "Euro Disney"
+      "Blackpool Pleasure Beach"
     ],
     "correctAnswer": "Euro Disney",
     "difficulty": "Medium",
@@ -6876,10 +6877,10 @@ const questions = [
       "Room 101",
       "Programme: Room 101",
       "1994",
-      "Danny Baker",
       "Series 1",
       "Nick Hancock",
-      "Episode Moments",
+      "Danny Baker",
+      "Successful Nominations",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
@@ -7291,12 +7292,12 @@ const questions = [
   },
   {
     "id": "tv_55723",
-    "question": "Which of these pet hates did Mark Lamarr successfully consign to Room 101?",
+    "question": "Which Village People song did Mark Lamarr eventually have banished to Room 101?",
     "answers": [
-      "Y.M.C.A.",
       "In the Navy",
       "Macho Man",
-      "Go West"
+      "Go West",
+      "Y.M.C.A."
     ],
     "correctAnswer": "Y.M.C.A.",
     "difficulty": "Medium",
@@ -7311,10 +7312,11 @@ const questions = [
       "Room 101",
       "Programme: Room 101",
       "1997",
-      "Mark Lamarr",
       "Series 3",
       "Nick Hancock",
-      "Episode Moments",
+      "Mark Lamarr",
+      "Successful Nominations",
+      "Music",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
@@ -8799,12 +8801,12 @@ const questions = [
   },
   {
     "id": "tv_55775",
-    "question": "Which of these nominations was rejected when Ian Hislop appeared on Room 101?",
+    "question": "Which band was among Ian Hislop's rejected nominations in Paul Merton's final Room 101 episode?",
     "answers": [
-      "The Beatles",
       "The Rolling Stones",
       "The Kinks",
-      "The Who"
+      "The Who",
+      "The Beatles"
     ],
     "correctAnswer": "The Beatles",
     "difficulty": "Medium",
@@ -8819,9 +8821,9 @@ const questions = [
       "Room 101",
       "Programme: Room 101",
       "2007",
-      "Ian Hislop",
       "Series 11",
       "Paul Merton",
+      "Ian Hislop",
       "Rejected Nominations",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
@@ -9448,12 +9450,12 @@ const questions = [
   },
   {
     "id": "tv_55796",
-    "question": "Which of these was sent to Room 101 in the edition with Sara Cox, Aled Jones and Josh Widdicombe?",
+    "question": "Which eating-related nuisance was banished in the Room 101 edition featuring Sara Cox, Aled Jones and Josh Widdicombe?",
     "answers": [
-      "Scorpions",
-      "Death metal",
-      "The Lord of the Rings",
-      "Fish bones"
+      "Fish bones",
+      "Fruit pips",
+      "Bread crusts",
+      "Apple peel"
     ],
     "correctAnswer": "Fish bones",
     "difficulty": "Medium",
@@ -9758,12 +9760,12 @@ const questions = [
   },
   {
     "id": "tv_55806",
-    "question": "Which musical tribute act was banished in Extra Storage with Bob Mortimer, Rachel Riley and Brendan O'Carroll?",
+    "question": "Which impersonators were banished in Extra Storage with Bob Mortimer, Rachel Riley and Brendan O'Carroll?",
     "answers": [
-      "Unripe fruit in supermarkets",
+      "Tom Jones impersonators",
+      "Frank Sinatra impersonators",
       "Elvis impersonators",
-      "Pedal bins in hotels",
-      "Food wrapped in bacon"
+      "Elton John impersonators"
     ],
     "correctAnswer": "Elvis impersonators",
     "difficulty": "Medium",
@@ -9780,12 +9782,13 @@ const questions = [
       "2015",
       "Series 15",
       "Frank Skinner",
-      "Successful Nominations",
+      "Extra Storage",
+      "Audience Choice",
+      "Music",
       "Bob Mortimer",
-      "Brendan O'Carroll",
       "Rachel Riley",
-      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes",
-      "Extra Storage"
+      "Brendan O'Carroll",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
   {
@@ -10379,14 +10382,14 @@ const questions = [
   },
   {
     "id": "tv_55826",
-    "question": "Which of these was sent to Room 101 in the edition with Jimmy Carr, Rochelle Humes and Steven Moffat?",
+    "question": "Which of these nightlife-related habits was banished in the Room 101 episode featuring Jimmy Carr, Rochelle Humes and Steven Moffat?",
     "answers": [
-      "HD television",
-      "Pseudoscience",
-      "Sandy beaches",
-      "Other people's opinions"
+      "Wearing sunglasses indoors",
+      "Ordering mocktails",
+      "Going out for the evening without a bag",
+      "Leaving coats in a cloakroom"
     ],
-    "correctAnswer": "Pseudoscience",
+    "correctAnswer": "Going out for the evening without a bag",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "Room 101",
@@ -10879,12 +10882,12 @@ const questions = [
   },
   {
     "id": "tv_55843",
-    "question": "Which comic-book character featured in an unseen nomination in the 2016 Room 101 compilation?",
+    "question": "Which superhero's especially devoted fans were the subject of an unseen nomination included in the 2016 Room 101 highlights?",
     "answers": [
-      "Batman",
       "Superman",
       "Spider-Man",
-      "Wonder Woman"
+      "Wonder Woman",
+      "Batman"
     ],
     "correctAnswer": "Batman",
     "difficulty": "Medium",
@@ -11046,7 +11049,7 @@ const questions = [
       "Robert Webb",
       "Extra Storage",
       "Rejected Nominations",
-      "Source: https://www.comedy.co.uk/tv/room_101_2012/episodes/1/1/"
+      "Source: https://subsaga.com/bbc/comedy/room-101-extra-storage/series-1/episode-1.html"
     ]
   },
   {
@@ -11720,14 +11723,14 @@ const questions = [
   },
   {
     "id": "tv_55870",
-    "question": "In the extended Extra Storage edition of Room 101 with Trevor McDonald, Aisling Bea and David Tennant, which additional nomination was banished?",
+    "question": "Which punctuality-related habit was rejected in the Room 101 edition featuring Aisling Bea, Trevor McDonald and David Tennant?",
     "answers": [
-      "Sushi",
-      "Pigeons",
-      "Flossing",
-      "Scooters"
+      "Arriving very early",
+      "Leaving early",
+      "Lateness",
+      "Setting multiple alarms"
     ],
-    "correctAnswer": "Flossing",
+    "correctAnswer": "Lateness",
     "difficulty": "Hard",
     "dailyEligible": true,
     "topic": "Room 101",
@@ -11742,24 +11745,23 @@ const questions = [
       "2016",
       "Series 16",
       "Frank Skinner",
-      "Extra Storage",
-      "Successful Nominations",
-      "Trevor McDonald",
+      "Rejected Nominations",
       "Aisling Bea",
+      "Trevor McDonald",
       "David Tennant",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
   {
     "id": "tv_55871",
-    "question": "In the extended Extra Storage edition of Room 101 with Noel Fielding, Joanna Scanlan and Ian Wright, which additional nomination was banished?",
+    "question": "Which mathematical concept was banished during the Room 101 edition with Noel Fielding, Joanna Scanlan and Ian Wright?",
     "answers": [
-      "Grease",
-      "Hangovers",
-      "Strong-smelling cheese",
-      "Pockets in children's clothing"
+      "Geometry",
+      "Probability",
+      "Fractions",
+      "Numbers"
     ],
-    "correctAnswer": "Pockets in children's clothing",
+    "correctAnswer": "Numbers",
     "difficulty": "Hard",
     "dailyEligible": true,
     "topic": "Room 101",
@@ -11774,7 +11776,6 @@ const questions = [
       "2016",
       "Series 16",
       "Frank Skinner",
-      "Extra Storage",
       "Successful Nominations",
       "Noel Fielding",
       "Joanna Scanlan",
@@ -11784,14 +11785,14 @@ const questions = [
   },
   {
     "id": "tv_55872",
-    "question": "In the extended Extra Storage edition of Room 101 with Bridget Christie, Robert Peston and Greg James, which additional nomination was banished?",
+    "question": "Which political behaviour was rejected in the Room 101 edition with Bridget Christie, Robert Peston and Greg James?",
     "answers": [
-      "Wimbledon spectators",
-      "The Kardashians",
-      "Babies",
-      "Management jargon"
+      "Politicians pretending to be ordinary people",
+      "Politicians reading from autocues",
+      "Politicians holding press conferences",
+      "Politicians attending party conferences"
     ],
-    "correctAnswer": "Wimbledon spectators",
+    "correctAnswer": "Politicians pretending to be ordinary people",
     "difficulty": "Hard",
     "dailyEligible": true,
     "topic": "Room 101",
@@ -11806,8 +11807,7 @@ const questions = [
       "2016",
       "Series 16",
       "Frank Skinner",
-      "Extra Storage",
-      "Successful Nominations",
+      "Rejected Nominations",
       "Bridget Christie",
       "Robert Peston",
       "Greg James",
@@ -11942,7 +11942,7 @@ const questions = [
   },
   {
     "id": "tv_55877",
-    "question": "In the 2015 Room 101 with Alexander Armstrong, Henry Blofeld and Kelly Holmes, which condiment was at the centre of a successful food-related nomination?",
+    "question": "Which condiment did Henry Blofeld's Room 101 episode feature in a successful nomination about restaurants not serving it?",
     "answers": [
       "Tomato ketchup",
       "English mustard",
@@ -11966,7 +11966,8 @@ const questions = [
       "Frank Skinner",
       "Successful Nominations",
       "Food and Drink",
-      "Source: https://www.comedy.co.uk/tv/room_101_2012/episodes/4/4/"
+      "Henry Blofeld",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
   {
@@ -12172,7 +12173,7 @@ const questions = [
   },
   {
     "id": "tv_55885",
-    "question": "Which sport did young contestant Gruff discuss as his particular talent during the Room 101 Children in Need special?",
+    "question": "Which sport did Gruff say he enjoyed in the 2013 Room 101 Children in Need special?",
     "answers": [
       "Badminton",
       "Swimming",
@@ -12195,7 +12196,8 @@ const questions = [
       "Children in Need",
       "Charity Special",
       "charity",
-      "Source: https://subsaga.com/bbc/entertainment/bbc-children-in-need/2013/part-1.html"
+      "Gruff",
+      "Source: https://subsaga.com/bbc/entertainment/bbc-children-in-need/2013/part-3.html"
     ]
   },
   {
@@ -12341,7 +12343,7 @@ const questions = [
   },
   {
     "id": "tv_55891",
-    "question": "Who chose the bonus item concerning pockets in children's clothing on Room 101 in 2016?",
+    "question": "Who selected the bonus nomination about pockets in children's clothes in a 2016 Room 101 episode that Noel Fielding won?",
     "answers": [
       "Noel Fielding",
       "Greg Davies",
@@ -12364,16 +12366,18 @@ const questions = [
       "Series 16",
       "Frank Skinner",
       "Bonus Nomination",
+      "Ian Wright",
+      "Noel Fielding",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
   {
     "id": "tv_55892",
-    "question": "Who used his bonus nomination to target spectators at Wimbledon on Room 101?",
+    "question": "Who selected the bonus nomination about Wimbledon spectators in the 2016 Room 101 edition won by Bridget Christie?",
     "answers": [
       "Greg James",
       "Robert Peston",
-      "Russell Kane",
+      "Bridget Christie",
       "John Humphrys"
     ],
     "correctAnswer": "Greg James",
@@ -12393,17 +12397,19 @@ const questions = [
       "Frank Skinner",
       "Bonus Nomination",
       "Tennis",
+      "Greg James",
+      "Bridget Christie",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
   {
     "id": "tv_55893",
-    "question": "Which 2018 Room 101 panellist chose dance-party endings in children's films as his bonus item?",
+    "question": "Which 2018 Room 101 guest made the bonus nomination about dance-party endings in children's films, in the episode won by Pearl Mackie?",
     "answers": [
-      "Jeremy Paxman",
+      "Pearl Mackie",
       "Charlie Brooker",
-      "Jimmy Carr",
-      "Chris Kamara"
+      "Scarlett Moffatt",
+      "Jimmy Carr"
     ],
     "correctAnswer": "Charlie Brooker",
     "difficulty": "Medium",
@@ -12422,6 +12428,8 @@ const questions = [
       "Frank Skinner",
       "Bonus Nomination",
       "Film",
+      "Charlie Brooker",
+      "Pearl Mackie",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
@@ -12511,12 +12519,12 @@ const questions = [
   },
   {
     "id": "tv_55897",
-    "question": "Which guest chose footballers feigning injury as a bonus nomination on Room 101 in 2018?",
+    "question": "Who selected the bonus nomination about footballers feigning injury in the 2018 Room 101 episode won by Nish Kumar?",
     "answers": [
-      "Jeremy Paxman",
+      "Nish Kumar",
       "Chris Kamara",
-      "Adam Buxton",
-      "Stephen Mangan"
+      "Jeremy Paxman",
+      "Adam Buxton"
     ],
     "correctAnswer": "Chris Kamara",
     "difficulty": "Medium",
@@ -12535,12 +12543,14 @@ const questions = [
       "Frank Skinner",
       "Bonus Nomination",
       "Football",
+      "Chris Kamara",
+      "Nish Kumar",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
   {
     "id": "tv_55898",
-    "question": "Which guest nominated acquaintances acquired through other friendships in the 2018 series of Room 101?",
+    "question": "Who chose the bonus nomination about friends acquired through other friendships in the 2018 Room 101 edition won by Geri Horner?",
     "answers": [
       "Geri Horner",
       "Alice Levine",
@@ -12563,6 +12573,8 @@ const questions = [
       "Series 18",
       "Frank Skinner",
       "Bonus Nomination",
+      "Katherine Ryan",
+      "Geri Horner",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
@@ -12677,7 +12689,263 @@ const questions = [
       "Presenter Trivia",
       "Source: https://www.comedy.co.uk/tv/room_101/trivia/"
     ]
+  },
+  {
+    "id": "tv_55903",
+    "question": "Who was credited as composer on the first televised episode of Room 101?",
+    "answers": [
+      "Ronnie Hazlehurst",
+      "Simon Brint",
+      "Howard Goodall",
+      "Peter Salem"
+    ],
+    "correctAnswer": "Peter Salem",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1994",
+      "Series 1",
+      "Production",
+      "Music",
+      "Source: https://www.comedy.co.uk/tv/room_101/episodes/1/1/"
+    ]
+  },
+  {
+    "id": "tv_55904",
+    "question": "Which guest's 2001 Room 101 appearance provoked complaints over remarks about Welsh people?",
+    "answers": [
+      "Anne Robinson",
+      "Lorraine Kelly",
+      "Janet Street-Porter",
+      "Germaine Greer"
+    ],
+    "correctAnswer": "Anne Robinson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Series 6",
+      "Paul Merton",
+      "Controversies",
+      "Anne Robinson",
+      "Source: https://www.theguardian.com/media/2001/apr/24/broadcasting.bbc"
+    ]
+  },
+  {
+    "id": "tv_55905",
+    "question": "Which performer swapped chairs with Paul Merton for his entire Room 101 episode because he disliked being filmed from his left side?",
+    "answers": [
+      "Graham Norton",
+      "Julian Clary",
+      "Bill Bailey",
+      "Stephen Fry"
+    ],
+    "correctAnswer": "Julian Clary",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1999",
+      "Series 4",
+      "Paul Merton",
+      "Julian Clary",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55906",
+    "question": "Which 2005 Room 101 guest was invited to operate the chute lever as a supposedly unique experience?",
+    "answers": [
+      "Phillip Schofield",
+      "Alan Sugar",
+      "Dara Ó Briain",
+      "Phil Collins"
+    ],
+    "correctAnswer": "Dara Ó Briain",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2005",
+      "Series 10",
+      "Paul Merton",
+      "Dara Ó Briain",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55907",
+    "question": "Which guest chose award-ceremony acceptance speeches as his bonus nomination in the regular cut of a 2014 Room 101 episode?",
+    "answers": [
+      "Richard Osman",
+      "Henning Wehn",
+      "Steve Jones",
+      "Gyles Brandreth"
+    ],
+    "correctAnswer": "Gyles Brandreth",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Bonus Nomination",
+      "Gyles Brandreth",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55908",
+    "question": "Which guest chose nodding acquaintances as his bonus nomination in the 2018 Room 101 episode won by Alice Levine?",
+    "answers": [
+      "Bill Bailey",
+      "Stephen Mangan",
+      "Adam Buxton",
+      "Jeremy Paxman"
+    ],
+    "correctAnswer": "Bill Bailey",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Frank Skinner",
+      "Bonus Nomination",
+      "Bill Bailey",
+      "Alice Levine",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55909",
+    "question": "Which BBC One magazine programme's extended snow special displaced an episode of Room 101 in 2018?",
+    "answers": [
+      "Countryfile",
+      "The One Show",
+      "Breakfast",
+      "The Andrew Marr Show"
+    ],
+    "correctAnswer": "The One Show",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Scheduling",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55910",
+    "question": "Which television presenter announced in 2018 that the BBC had cancelled Room 101 after his seven series as host?",
+    "answers": [
+      "Paul Merton",
+      "Nick Hancock",
+      "Frank Skinner",
+      "Rob Brydon"
+    ],
+    "correctAnswer": "Frank Skinner",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Frank Skinner",
+      "Cancellation",
+      "Source: https://www.comedy.co.uk/tv/news/3200/frank_skinner_room_101_axed/"
+    ]
+  },
+  {
+    "id": "tv_55911",
+    "question": "Which comedy awards category included Room 101 as a nominee in 1999?",
+    "answers": [
+      "Best New TV Comedy",
+      "Best Comedy Drama",
+      "Best Sketch Show",
+      "Best Comedy Talk Show"
+    ],
+    "correctAnswer": "Best Comedy Talk Show",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1999",
+      "Awards",
+      "British Comedy Awards",
+      "Nomination",
+      "Source: https://www.tvguide.com/tvshows/room-101/1030369070/"
+    ]
   }
 ];
-if(questions.length!==425||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(55478+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 745 validation failed');
+if(questions.length!==434||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(55478+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 745 validation failed');
 module.exports=questions;
