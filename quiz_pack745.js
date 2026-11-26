@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 745: Room 101 (British television)
-// 223 additions; seven existing questions in Pack 220. All 18 TV series represented, early guest nominations, later panel line-ups and documented winners, production, radio origins, awards and charity/extended/compilation formats. Not exhaustive: other nominations, remaining winners, Extra Storage and compilation details, radio-only episode audit and bank-wide duplicate verification outstanding. Live bank unchanged.
+// 370 additions; seven existing questions in Pack 220. Expanded with early accepted and rejected nominations, later episode nominations, 1999 presenter award, unusual guest moments, bonus choices, charity special and compilation material. Remaining exhaustive item-level/extended edition verification and cross-bank semantic duplicate scan outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -355,7 +355,7 @@ const questions = [
       "Awards",
       "BAFTA",
       "Nomination",
-      "Source: https://www.bafta.org/awards/search/?award-year=2002&search=2026+entertainment+programme&type=Television"
+      "Source: https://www.bafta.org/awards/television/?award-year=2002"
     ]
   },
   {
@@ -384,7 +384,7 @@ const questions = [
       "BAFTA",
       "Nomination",
       "Pop Idol",
-      "Source: https://www.bafta.org/awards/search/?award-year=2002&search=2026+entertainment+programme&type=Television"
+      "Source: https://www.bafta.org/awards/television/?award-year=2002"
     ]
   },
   {
@@ -6484,7 +6484,7 @@ const questions = [
       "Jimmy Carr",
       "Series 18",
       "Successful Nominations",
-      "Source: https://www.youtube.com/watch?v=PaUrhC95zjs"
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
   {
@@ -6649,7 +6649,4374 @@ const questions = [
       "Successful Nominations",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
+  },
+  {
+    "id": "tv_55701",
+    "question": "Which of these nominations was rejected when Bob Monkhouse appeared on Room 101?",
+    "answers": [
+      "The Generation Game",
+      "Bullseye",
+      "The Golden Shot",
+      "Catchphrase"
+    ],
+    "correctAnswer": "The Golden Shot",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1994",
+      "Bob Monkhouse",
+      "Series 1",
+      "Nick Hancock",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55702",
+    "question": "Which of these pet hates did Ian Hislop successfully consign to Room 101?",
+    "answers": [
+      "Private Eye",
+      "Hello!",
+      "Radio Times",
+      "The Beano"
+    ],
+    "correctAnswer": "Hello!",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1994",
+      "Ian Hislop",
+      "Series 1",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55703",
+    "question": "Which of these pet hates did Jo Brand successfully consign to Room 101?",
+    "answers": [
+      "Jazz",
+      "Opera",
+      "Reggae",
+      "Country music"
+    ],
+    "correctAnswer": "Jazz",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1994",
+      "Jo Brand",
+      "Series 1",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55704",
+    "question": "Which of these nominations was rejected when Peter Cook appeared on Room 101?",
+    "answers": [
+      "Panorama",
+      "Horizon",
+      "Tomorrow's World",
+      "Watchdog"
+    ],
+    "correctAnswer": "Watchdog",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1994",
+      "Peter Cook",
+      "Series 1",
+      "Nick Hancock",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55705",
+    "question": "Which of these pet hates did David Baddiel successfully consign to Room 101?",
+    "answers": [
+      "Jo Brand",
+      "Cilla Black",
+      "Margi Clarke",
+      "Caroline Quentin"
+    ],
+    "correctAnswer": "Margi Clarke",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1994",
+      "David Baddiel",
+      "Series 1",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55706",
+    "question": "Which of these pet hates did Tony Slattery successfully consign to Room 101?",
+    "answers": [
+      "Garfield",
+      "Snoopy",
+      "Bugs Bunny",
+      "Daffy Duck"
+    ],
+    "correctAnswer": "Snoopy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1994",
+      "Tony Slattery",
+      "Series 1",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55707",
+    "question": "Which of these pet hates did Maureen Lipman successfully consign to Room 101?",
+    "answers": [
+      "Leggings",
+      "Denim jackets",
+      "Gloves",
+      "Bow ties"
+    ],
+    "correctAnswer": "Leggings",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1994",
+      "Maureen Lipman",
+      "Series 1",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55708",
+    "question": "Which of these pet hates did Danny Baker successfully consign to Room 101?",
+    "answers": [
+      "Alton Towers",
+      "Thorpe Park",
+      "Blackpool Pleasure Beach",
+      "Euro Disney"
+    ],
+    "correctAnswer": "Euro Disney",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1994",
+      "Danny Baker",
+      "Series 1",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55709",
+    "question": "Which of these pet hates did Richard Wilson successfully consign to Room 101?",
+    "answers": [
+      "Blue Peter",
+      "The Sky at Night",
+      "Songs of Praise",
+      "The Money Programme"
+    ],
+    "correctAnswer": "Songs of Praise",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1995",
+      "Richard Wilson",
+      "Series 2",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55710",
+    "question": "Which of these pet hates did Frank Skinner successfully consign to Room 101?",
+    "answers": [
+      "Ken",
+      "Action Man",
+      "Stretch Armstrong",
+      "Mr Potato Head"
+    ],
+    "correctAnswer": "Action Man",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1995",
+      "Frank Skinner",
+      "Series 2",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55711",
+    "question": "Which of these nominations was rejected when Caroline Quentin appeared on Room 101?",
+    "answers": [
+      "Les Misérables",
+      "Cats",
+      "Starlight Express",
+      "Miss Saigon"
+    ],
+    "correctAnswer": "Les Misérables",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1995",
+      "Caroline Quentin",
+      "Series 2",
+      "Nick Hancock",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55712",
+    "question": "Which of these pet hates did Jimmy Tarbuck successfully consign to Room 101?",
+    "answers": [
+      "Gardening",
+      "Fishing",
+      "Golf",
+      "DIY"
+    ],
+    "correctAnswer": "DIY",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1995",
+      "Jimmy Tarbuck",
+      "Series 2",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55713",
+    "question": "Which of these pet hates did Richard E. Grant successfully consign to Room 101?",
+    "answers": [
+      "Delia Smith",
+      "Fanny Cradock",
+      "Jilly Goolden",
+      "Antony Worrall Thompson"
+    ],
+    "correctAnswer": "Jilly Goolden",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1995",
+      "Richard E. Grant",
+      "Series 2",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55714",
+    "question": "Which of these pet hates did Germaine Greer successfully consign to Room 101?",
+    "answers": [
+      "A Touch of Frost",
+      "The Choir",
+      "Peak Practice",
+      "The House of Eliott"
+    ],
+    "correctAnswer": "The Choir",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1995",
+      "Germaine Greer",
+      "Series 2",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55715",
+    "question": "Which of these pet hates did Angus Deayton successfully consign to Room 101?",
+    "answers": [
+      "Cricket",
+      "Rugby",
+      "Tennis",
+      "Basketball"
+    ],
+    "correctAnswer": "Cricket",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1995",
+      "Angus Deayton",
+      "Series 2",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55716",
+    "question": "Which of these nominations was rejected when Jeremy Clarkson appeared on Room 101?",
+    "answers": [
+      "Keeping Up Appearances",
+      "As Time Goes By",
+      "One Foot in the Grave",
+      "Last of the Summer Wine"
+    ],
+    "correctAnswer": "Last of the Summer Wine",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1997",
+      "Jeremy Clarkson",
+      "Series 3",
+      "Nick Hancock",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55717",
+    "question": "Which of these pet hates did Neil Morrissey successfully consign to Room 101?",
+    "answers": [
+      "Slade",
+      "The Sweet",
+      "Bay City Rollers",
+      "Mud"
+    ],
+    "correctAnswer": "Bay City Rollers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1997",
+      "Neil Morrissey",
+      "Series 3",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55718",
+    "question": "Which of these pet hates did Terry Wogan successfully consign to Room 101?",
+    "answers": [
+      "Gary Lineker",
+      "Eric Cantona",
+      "Alan Shearer",
+      "David Beckham"
+    ],
+    "correctAnswer": "Eric Cantona",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1997",
+      "Terry Wogan",
+      "Series 3",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55719",
+    "question": "Which of these pet hates did Alan Davies successfully consign to Room 101?",
+    "answers": [
+      "Jackets worn with jeans",
+      "Shoes worn without socks",
+      "Ties worn with polo shirts",
+      "Shorts worn with boots"
+    ],
+    "correctAnswer": "Jackets worn with jeans",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1997",
+      "Alan Davies",
+      "Series 3",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55720",
+    "question": "Which of these pet hates did Chris Tarrant successfully consign to Room 101?",
+    "answers": [
+      "Russell Grant",
+      "Jonathan Cainer",
+      "Patrick Moore",
+      "Mystic Meg"
+    ],
+    "correctAnswer": "Mystic Meg",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1997",
+      "Chris Tarrant",
+      "Series 3",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55721",
+    "question": "Which of these pet hates did Arthur Smith successfully consign to Room 101?",
+    "answers": [
+      "Barbecues",
+      "Buffets",
+      "Dinner parties",
+      "Picnics"
+    ],
+    "correctAnswer": "Dinner parties",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1997",
+      "Arthur Smith",
+      "Series 3",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55722",
+    "question": "Which of these pet hates did Ulrika Jonsson successfully consign to Room 101?",
+    "answers": [
+      "Corgis",
+      "Yorkshire terriers",
+      "Border collies",
+      "Pugs"
+    ],
+    "correctAnswer": "Yorkshire terriers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1997",
+      "Ulrika Jonsson",
+      "Series 3",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55723",
+    "question": "Which of these pet hates did Mark Lamarr successfully consign to Room 101?",
+    "answers": [
+      "Y.M.C.A.",
+      "In the Navy",
+      "Macho Man",
+      "Go West"
+    ],
+    "correctAnswer": "Y.M.C.A.",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1997",
+      "Mark Lamarr",
+      "Series 3",
+      "Nick Hancock",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55724",
+    "question": "Which celebration did Nick Hancock banish when he returned to Room 101 as Paul Merton's guest?",
+    "answers": [
+      "Bonfire Night",
+      "Boxing Day",
+      "Easter Sunday",
+      "New Year's Eve"
+    ],
+    "correctAnswer": "New Year's Eve",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1999",
+      "Nick Hancock",
+      "Series 4",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55725",
+    "question": "Which of these pet hates did Michael Parkinson successfully consign to Room 101?",
+    "answers": [
+      "Toddlers",
+      "Pensioners",
+      "Teenagers",
+      "School teachers"
+    ],
+    "correctAnswer": "Teenagers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1999",
+      "Michael Parkinson",
+      "Series 4",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55726",
+    "question": "Which of these pet hates did John Sergeant successfully consign to Room 101?",
+    "answers": [
+      "John Major",
+      "Margaret Thatcher",
+      "Tony Blair",
+      "Edward Heath"
+    ],
+    "correctAnswer": "Margaret Thatcher",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1999",
+      "John Sergeant",
+      "Series 4",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55727",
+    "question": "Which of these pet hates did Meera Syal successfully consign to Room 101?",
+    "answers": [
+      "Cockroaches",
+      "Wasps",
+      "Ants",
+      "Moths"
+    ],
+    "correctAnswer": "Cockroaches",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1999",
+      "Meera Syal",
+      "Series 4",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55728",
+    "question": "Which of these pet hates did Esther Rantzen successfully consign to Room 101?",
+    "answers": [
+      "Astronomy",
+      "Psychology",
+      "Archaeology",
+      "Astrology"
+    ],
+    "correctAnswer": "Astrology",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1999",
+      "Esther Rantzen",
+      "Series 4",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55729",
+    "question": "Which of these pet hates did Julian Clary successfully consign to Room 101?",
+    "answers": [
+      "Wedding receptions",
+      "Office parties",
+      "Celebrity parties",
+      "School reunions"
+    ],
+    "correctAnswer": "Celebrity parties",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1999",
+      "Julian Clary",
+      "Series 4",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55730",
+    "question": "Which of these pet hates did Kathy Burke successfully consign to Room 101?",
+    "answers": [
+      "Martin Amis",
+      "Jeffrey Archer",
+      "Julian Barnes",
+      "John le Carré"
+    ],
+    "correctAnswer": "Jeffrey Archer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2000",
+      "Kathy Burke",
+      "Series 5",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55731",
+    "question": "Which of these nominations was rejected when Terry Venables appeared on Room 101?",
+    "answers": [
+      "Football chairmen",
+      "Football referees",
+      "Football commentators",
+      "Football mascots"
+    ],
+    "correctAnswer": "Football chairmen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2000",
+      "Terry Venables",
+      "Series 5",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55732",
+    "question": "Which of these pet hates did Bill Bailey successfully consign to Room 101?",
+    "answers": [
+      "Phil Collins",
+      "Rod Stewart",
+      "Bryan Adams",
+      "Chris de Burgh"
+    ],
+    "correctAnswer": "Chris de Burgh",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2000",
+      "Bill Bailey",
+      "Series 5",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55733",
+    "question": "Which of these pet hates did Janet Street-Porter successfully consign to Room 101?",
+    "answers": [
+      "Boris Johnson",
+      "Michael Portillo",
+      "Ken Livingstone",
+      "John Major"
+    ],
+    "correctAnswer": "Ken Livingstone",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2000",
+      "Janet Street-Porter",
+      "Series 5",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55734",
+    "question": "Which of these pet hates did Will Self successfully consign to Room 101?",
+    "answers": [
+      "Twiglets",
+      "Cheese footballs",
+      "Cheesy Wotsits",
+      "Pork scratchings"
+    ],
+    "correctAnswer": "Cheese footballs",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2000",
+      "Will Self",
+      "Series 5",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55735",
+    "question": "Which of these pet hates did Jonathan Ross successfully consign to Room 101?",
+    "answers": [
+      "Dog lips",
+      "Cat whiskers",
+      "Rabbit ears",
+      "Horse tails"
+    ],
+    "correctAnswer": "Dog lips",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2000",
+      "Jonathan Ross",
+      "Series 5",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55736",
+    "question": "Which of these pet hates did Paul Daniels successfully consign to Room 101?",
+    "answers": [
+      "Diving",
+      "Water polo",
+      "Sailing",
+      "Synchronised swimming"
+    ],
+    "correctAnswer": "Synchronised swimming",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Paul Daniels",
+      "Series 6",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55737",
+    "question": "Which of these pet hates did Rich Hall successfully consign to Room 101?",
+    "answers": [
+      "Jazz",
+      "Opera",
+      "Modern country music",
+      "Classical music"
+    ],
+    "correctAnswer": "Modern country music",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Rich Hall",
+      "Series 6",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55738",
+    "question": "Which of these nominations was rejected when Sanjeev Bhaskar appeared on Room 101?",
+    "answers": [
+      "Flipper",
+      "Skippy the Bush Kangaroo",
+      "Lassie",
+      "Gentle Ben"
+    ],
+    "correctAnswer": "Skippy the Bush Kangaroo",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Sanjeev Bhaskar",
+      "Series 6",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55739",
+    "question": "Which of these pet hates did George Melly successfully consign to Room 101?",
+    "answers": [
+      "Reverence for the Royal Family",
+      "Reverence for footballers",
+      "Reverence for composers",
+      "Reverence for actors"
+    ],
+    "correctAnswer": "Reverence for the Royal Family",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "George Melly",
+      "Series 6",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55740",
+    "question": "Which of these pet hates did Liza Tarbuck successfully consign to Room 101?",
+    "answers": [
+      "The Rules",
+      "Feel the Fear and Do It Anyway",
+      "The Road Less Travelled",
+      "Men Are from Mars, Women Are from Venus"
+    ],
+    "correctAnswer": "Men Are from Mars, Women Are from Venus",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Liza Tarbuck",
+      "Series 6",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55741",
+    "question": "Which of these pet hates did Lorraine Kelly successfully consign to Room 101?",
+    "answers": [
+      "Kate Winslet",
+      "Emma Thompson",
+      "Elizabeth Hurley",
+      "Helena Bonham Carter"
+    ],
+    "correctAnswer": "Elizabeth Hurley",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Lorraine Kelly",
+      "Series 6",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55742",
+    "question": "Which of these pet hates did Des Lynam successfully consign to Room 101?",
+    "answers": [
+      "Blues music",
+      "Rap music",
+      "Folk music",
+      "Reggae music"
+    ],
+    "correctAnswer": "Rap music",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Des Lynam",
+      "Series 6",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55743",
+    "question": "Which of these pet hates did Mel and Sue successfully consign to Room 101?",
+    "answers": [
+      "Nautical fashion",
+      "Punk fashion",
+      "Gothic fashion",
+      "Mod fashion"
+    ],
+    "correctAnswer": "Nautical fashion",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Mel and Sue",
+      "Series 6",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55744",
+    "question": "Which of these pet hates did Anne Robinson successfully consign to Room 101?",
+    "answers": [
+      "Rik Mayall",
+      "Adrian Edmondson",
+      "Rowan Atkinson",
+      "Ben Elton"
+    ],
+    "correctAnswer": "Ben Elton",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Anne Robinson",
+      "Series 6",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55745",
+    "question": "Which of these nominations was rejected when Stephen Fry appeared on Room 101?",
+    "answers": [
+      "Commemorative mugs",
+      "Commemorative coins",
+      "Commemorative plates",
+      "Commemorative stamps"
+    ],
+    "correctAnswer": "Commemorative plates",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Stephen Fry",
+      "Series 6",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55746",
+    "question": "Which of these pet hates did Johnny Vegas successfully consign to Room 101?",
+    "answers": [
+      "Internet shopping",
+      "Internet chat rooms",
+      "Internet auctions",
+      "Internet banking"
+    ],
+    "correctAnswer": "Internet chat rooms",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2002",
+      "Johnny Vegas",
+      "Series 7",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55747",
+    "question": "Which of these nominations was rejected when John Peel appeared on Room 101?",
+    "answers": [
+      "Men with beards",
+      "Men with glasses",
+      "Men with long hair",
+      "Men with hats"
+    ],
+    "correctAnswer": "Men with beards",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2002",
+      "John Peel",
+      "Series 7",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55748",
+    "question": "Which of these pet hates did Fay Ripley successfully consign to Room 101?",
+    "answers": [
+      "Jeremy Kyle",
+      "Trisha Goddard",
+      "Jerry Springer",
+      "Robert Kilroy-Silk"
+    ],
+    "correctAnswer": "Robert Kilroy-Silk",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2002",
+      "Fay Ripley",
+      "Series 7",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55749",
+    "question": "Which of these pet hates did Alexei Sayle successfully consign to Room 101?",
+    "answers": [
+      "Costa Coffee",
+      "Caffè Nero",
+      "Starbucks",
+      "Pret A Manger"
+    ],
+    "correctAnswer": "Starbucks",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2002",
+      "Alexei Sayle",
+      "Series 7",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55750",
+    "question": "Which of these pet hates did Patrick Moore successfully consign to Room 101?",
+    "answers": [
+      "Rowan Williams",
+      "George Carey",
+      "Justin Welby",
+      "Robert Runcie"
+    ],
+    "correctAnswer": "George Carey",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2002",
+      "Patrick Moore",
+      "Series 7",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55751",
+    "question": "Which of these pet hates did Jessica Stevenson successfully consign to Room 101?",
+    "answers": [
+      "Zoos",
+      "Aquariums",
+      "Botanical gardens",
+      "Museums"
+    ],
+    "correctAnswer": "Zoos",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2002",
+      "Jessica Stevenson",
+      "Series 7",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55752",
+    "question": "Which of these pet hates did Michael Grade successfully consign to Room 101?",
+    "answers": [
+      "Petula Clark",
+      "Lulu",
+      "Dusty Springfield",
+      "Shirley Bassey"
+    ],
+    "correctAnswer": "Shirley Bassey",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2002",
+      "Michael Grade",
+      "Series 7",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55753",
+    "question": "Which of these pet hates did Gordon Ramsay successfully consign to Room 101?",
+    "answers": [
+      "Police officers",
+      "Postal workers",
+      "Traffic wardens",
+      "Bus drivers"
+    ],
+    "correctAnswer": "Traffic wardens",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2003",
+      "Gordon Ramsay",
+      "Series 8",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55754",
+    "question": "Which of these pet hates did Ross Noble successfully consign to Room 101?",
+    "answers": [
+      "Cartoon robots",
+      "Cartoon animals wearing clothes",
+      "Cartoon aliens",
+      "Cartoon vehicles"
+    ],
+    "correctAnswer": "Cartoon animals wearing clothes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2003",
+      "Ross Noble",
+      "Series 8",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55755",
+    "question": "Which of these nominations was rejected when Sean Lock appeared on Room 101?",
+    "answers": [
+      "Jeremy Clarkson",
+      "Richard Hammond",
+      "James May",
+      "Chris Evans"
+    ],
+    "correctAnswer": "Jeremy Clarkson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2003",
+      "Sean Lock",
+      "Series 8",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55756",
+    "question": "Which of these nominations was rejected when Ron Atkinson appeared on Room 101?",
+    "answers": [
+      "Especially for You",
+      "Islands in the Stream",
+      "I Got You Babe",
+      "Save Your Love"
+    ],
+    "correctAnswer": "Save Your Love",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2003",
+      "Ron Atkinson",
+      "Series 8",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55757",
+    "question": "Which of these pet hates did Kirsty Young successfully consign to Room 101?",
+    "answers": [
+      "Christina Aguilera",
+      "Kylie Minogue",
+      "Britney Spears",
+      "Madonna"
+    ],
+    "correctAnswer": "Britney Spears",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2004",
+      "Kirsty Young",
+      "Series 9",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55758",
+    "question": "Which of these pet hates did Shane Richie successfully consign to Room 101?",
+    "answers": [
+      "The Grand National",
+      "Donkey Derby",
+      "The Boat Race",
+      "The FA Cup Final"
+    ],
+    "correctAnswer": "Donkey Derby",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2004",
+      "Shane Richie",
+      "Series 9",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55759",
+    "question": "Which of these nominations was rejected when Michael Winner appeared on Room 101?",
+    "answers": [
+      "Bad liars",
+      "Bad singers",
+      "Bad dancers",
+      "Bad cooks"
+    ],
+    "correctAnswer": "Bad liars",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2004",
+      "Michael Winner",
+      "Series 9",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55760",
+    "question": "Which of these nominations was rejected when Fern Britton appeared on Room 101?",
+    "answers": [
+      "Animal Park",
+      "Countryfile",
+      "Springwatch",
+      "Animal Hospital"
+    ],
+    "correctAnswer": "Animal Hospital",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2004",
+      "Fern Britton",
+      "Series 9",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55761",
+    "question": "Which of these pet hates did Omid Djalili successfully consign to Room 101?",
+    "answers": [
+      "Male ballet dancers",
+      "Male opera singers",
+      "Male yoga teachers",
+      "Male aerobics instructors"
+    ],
+    "correctAnswer": "Male yoga teachers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2004",
+      "Omid Djalili",
+      "Series 9",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55762",
+    "question": "Which of these pet hates did Dara Ó Briain successfully consign to Room 101?",
+    "answers": [
+      "Ventriloquists",
+      "Magicians",
+      "Jugglers",
+      "Mime artists"
+    ],
+    "correctAnswer": "Magicians",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2005",
+      "Dara Ó Briain",
+      "Series 10",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55763",
+    "question": "Which of these nominations was rejected when Alan Sugar appeared on Room 101?",
+    "answers": [
+      "Men who wear wigs",
+      "Men who wear bow ties",
+      "Men who wear sandals",
+      "Men who wear shorts"
+    ],
+    "correctAnswer": "Men who wear wigs",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2005",
+      "Alan Sugar",
+      "Series 10",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55764",
+    "question": "Which of these pet hates did Sara Cox successfully consign to Room 101?",
+    "answers": [
+      "Street carnivals",
+      "Parades",
+      "Funfairs",
+      "Random firework displays"
+    ],
+    "correctAnswer": "Random firework displays",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2005",
+      "Sara Cox",
+      "Series 10",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55765",
+    "question": "Which of these pet hates did Gyles Brandreth successfully consign to Room 101?",
+    "answers": [
+      "The electoral system",
+      "The legal system",
+      "The honours system",
+      "The education system"
+    ],
+    "correctAnswer": "The honours system",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2005",
+      "Gyles Brandreth",
+      "Series 10",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55766",
+    "question": "What was the name of the pet cat Sheila Hancock briefly dipped into Room 101?",
+    "answers": [
+      "Chairman Miaow",
+      "Benjy",
+      "Garfield",
+      "Tigger"
+    ],
+    "correctAnswer": "Benjy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2005",
+      "Sheila Hancock",
+      "Series 10",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55767",
+    "question": "Which of these nominations was rejected when Phillip Schofield appeared on Room 101?",
+    "answers": [
+      "Gordon the Gopher",
+      "Sooty",
+      "Basil Brush",
+      "Roland Rat"
+    ],
+    "correctAnswer": "Gordon the Gopher",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2005",
+      "Phillip Schofield",
+      "Series 10",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55768",
+    "question": "Which nomination floated upwards instead of disappearing through the Room 101 chute in Jenny Eclair's episode?",
+    "answers": [
+      "Kites",
+      "Paper planes",
+      "Confetti",
+      "Balloons"
+    ],
+    "correctAnswer": "Balloons",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2005",
+      "Jenny Eclair",
+      "Series 10",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55769",
+    "question": "Which of these pet hates did Phil Collins successfully consign to Room 101?",
+    "answers": [
+      "Weather presenters",
+      "TV chefs",
+      "TV evangelists",
+      "Sports commentators"
+    ],
+    "correctAnswer": "TV evangelists",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2005",
+      "Phil Collins",
+      "Series 10",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55770",
+    "question": "Which of these pet hates did Cilla Black successfully consign to Room 101?",
+    "answers": [
+      "Hotel check-in",
+      "Airline emergency procedures",
+      "Train announcements",
+      "Airport duty-free shopping"
+    ],
+    "correctAnswer": "Airline emergency procedures",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2007",
+      "Cilla Black",
+      "Series 11",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55771",
+    "question": "Which of these pet hates did Marcus Brigstocke successfully consign to Room 101?",
+    "answers": [
+      "Personalised number plates",
+      "Car stickers",
+      "Car horns",
+      "Car air fresheners"
+    ],
+    "correctAnswer": "Personalised number plates",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2007",
+      "Marcus Brigstocke",
+      "Series 11",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55772",
+    "question": "Which of these pet hates did Nigel Havers successfully consign to Room 101?",
+    "answers": [
+      "Singing in theatres",
+      "Eating in theatres",
+      "Clapping in theatres",
+      "Mobile phones in theatres"
+    ],
+    "correctAnswer": "Mobile phones in theatres",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2007",
+      "Nigel Havers",
+      "Series 11",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55773",
+    "question": "Which of these pet hates did Mark Steel successfully consign to Room 101?",
+    "answers": [
+      "Rik Mayall",
+      "Steve Coogan",
+      "Ben Elton",
+      "Harry Enfield"
+    ],
+    "correctAnswer": "Ben Elton",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2007",
+      "Mark Steel",
+      "Series 11",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55774",
+    "question": "Which of these pet hates did Davina McCall successfully consign to Room 101?",
+    "answers": [
+      "Dean Martin's songs",
+      "Frank Sinatra's songs",
+      "Bing Crosby's songs",
+      "Tony Bennett's songs"
+    ],
+    "correctAnswer": "Frank Sinatra's songs",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2007",
+      "Davina McCall",
+      "Series 11",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55775",
+    "question": "Which of these nominations was rejected when Ian Hislop appeared on Room 101?",
+    "answers": [
+      "The Beatles",
+      "The Rolling Stones",
+      "The Kinks",
+      "The Who"
+    ],
+    "correctAnswer": "The Beatles",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2007",
+      "Ian Hislop",
+      "Series 11",
+      "Paul Merton",
+      "Rejected Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55776",
+    "question": "Which of these was sent to Room 101 in the edition with Danny Baker, Fern Britton and Robert Webb?",
+    "answers": [
+      "PE lessons",
+      "Punk rock",
+      "Science fiction",
+      "Homework"
+    ],
+    "correctAnswer": "Homework",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Danny Baker",
+      "Fern Britton",
+      "Robert Webb",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55777",
+    "question": "Which of these was sent to Room 101 in the edition with Gabby Logan, Sarah Millican and Gregg Wallace?",
+    "answers": [
+      "Barbecues",
+      "Music festivals",
+      "Buffets",
+      "Surprises"
+    ],
+    "correctAnswer": "Buffets",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Gabby Logan",
+      "Sarah Millican",
+      "Gregg Wallace",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55778",
+    "question": "Which of these was sent to Room 101 in the edition with Alice Cooper, Chris Packham and Chris Tarrant?",
+    "answers": [
+      "Jedward",
+      "Parrots",
+      "Chris Moyles",
+      "People in shorts"
+    ],
+    "correctAnswer": "Parrots",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Alice Cooper",
+      "Chris Packham",
+      "Chris Tarrant",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55779",
+    "question": "Which of these was sent to Room 101 in the edition with Jamelia, Germaine Greer and Ross Noble?",
+    "answers": [
+      "Text speak",
+      "Computer pop-ups",
+      "Fun runs",
+      "Folk dancing"
+    ],
+    "correctAnswer": "Text speak",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Jamelia",
+      "Germaine Greer",
+      "Ross Noble",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55780",
+    "question": "Which of these was sent to Room 101 in the edition with Hilary Devey, Josh Groban and Alistair McGowan?",
+    "answers": [
+      "Tattoos",
+      "Valentine's Day",
+      "Nightclubs",
+      "Auto-Tune"
+    ],
+    "correctAnswer": "Auto-Tune",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Hilary Devey",
+      "Josh Groban",
+      "Alistair McGowan",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55781",
+    "question": "Which of these was sent to Room 101 in the edition with Rhod Gilbert, Nick Hewer and Carol Vorderman?",
+    "answers": [
+      "Camping",
+      "Golf",
+      "Handbags",
+      "EastEnders"
+    ],
+    "correctAnswer": "Handbags",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Rhod Gilbert",
+      "Nick Hewer",
+      "Carol Vorderman",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55782",
+    "question": "Which of these was sent to Room 101 in the edition with Larry Lamb, Lauren Laverne and David O'Doherty?",
+    "answers": [
+      "High fives",
+      "Fake tan",
+      "Square plates",
+      "Fancy dress"
+    ],
+    "correctAnswer": "Fake tan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Larry Lamb",
+      "Lauren Laverne",
+      "David O'Doherty",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55783",
+    "question": "Which of these was sent to Room 101 in the edition with Micky Flanagan, Rebecca Front and John Prescott?",
+    "answers": [
+      "Celebrity chefs",
+      "Americanisms",
+      "Air fresheners",
+      "The countryside"
+    ],
+    "correctAnswer": "Celebrity chefs",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Micky Flanagan",
+      "Rebecca Front",
+      "John Prescott",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55784",
+    "question": "Which of these was sent to Room 101 in the edition with John Craven, Miranda Hart and Reggie Yates?",
+    "answers": [
+      "E-books",
+      "Smartphones",
+      "Marrows",
+      "Bluetooth headsets"
+    ],
+    "correctAnswer": "Bluetooth headsets",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Successful Nominations",
+      "John Craven",
+      "Miranda Hart",
+      "Reggie Yates",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55785",
+    "question": "Which of these was sent to Room 101 in the edition with Victoria Coren, Phil Tufnell and Terry Wogan?",
+    "answers": [
+      "Health fads",
+      "Hors d'oeuvre",
+      "Food packaging",
+      "Sports interviews"
+    ],
+    "correctAnswer": "Food packaging",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Victoria Coren",
+      "Phil Tufnell",
+      "Terry Wogan",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55786",
+    "question": "Which of these was sent to Room 101 in the edition with Greg Davies, Ben Fogle and Janet Street-Porter?",
+    "answers": [
+      "Umbrellas",
+      "Local television news",
+      "Multichannel television",
+      "Extreme Fishing"
+    ],
+    "correctAnswer": "Local television news",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Greg Davies",
+      "Ben Fogle",
+      "Janet Street-Porter",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55787",
+    "question": "Which of these was sent to Room 101 in the edition with Paloma Faith, Jason Manford and Deborah Meaden?",
+    "answers": [
+      "Jobsworths",
+      "Ugg boots",
+      "Lifts",
+      "Small cars"
+    ],
+    "correctAnswer": "Jobsworths",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Paloma Faith",
+      "Jason Manford",
+      "Deborah Meaden",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55788",
+    "question": "Which of these was sent to Room 101 in the edition with Cilla Black, Hugh Dennis and Mel Giedroyc?",
+    "answers": [
+      "Rhubarb",
+      "Olive oil",
+      "Las Vegas",
+      "Giant charity cheques"
+    ],
+    "correctAnswer": "Giant charity cheques",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Cilla Black",
+      "Hugh Dennis",
+      "Mel Giedroyc",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55789",
+    "question": "Which of these was sent to Room 101 in the edition with Clive Anderson, Alex Jones and Jack Whitehall?",
+    "answers": [
+      "Seagulls",
+      "Deer",
+      "Glamping",
+      "Shared tables"
+    ],
+    "correctAnswer": "Glamping",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Clive Anderson",
+      "Alex Jones",
+      "Jack Whitehall",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55790",
+    "question": "Which of these was sent to Room 101 in the edition with Jo Brand, Ben Miller and Bill Turnbull?",
+    "answers": [
+      "Vampire films",
+      "Shoelaces",
+      "Sneezing",
+      "Designer shoes"
+    ],
+    "correctAnswer": "Shoelaces",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Jo Brand",
+      "Ben Miller",
+      "Bill Turnbull",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55791",
+    "question": "Which of these was sent to Room 101 in the edition with Sheila Hancock, Craig Revel Horwood and Jon Richardson?",
+    "answers": [
+      "Fireworks",
+      "Wedding speeches",
+      "Scented candles",
+      "Dancing"
+    ],
+    "correctAnswer": "Fireworks",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Sheila Hancock",
+      "Craig Revel Horwood",
+      "Jon Richardson",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55792",
+    "question": "Which of these was sent to Room 101 in the edition with Joan Bakewell, Roisin Conaty and Richard Osman?",
+    "answers": [
+      "Selfies",
+      "Gardening",
+      "Cobblers",
+      "Customer service surveys"
+    ],
+    "correctAnswer": "Customer service surveys",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Joan Bakewell",
+      "Roisin Conaty",
+      "Richard Osman",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55793",
+    "question": "Which of these was sent to Room 101 in the edition with Michael Ball, Caroline Quentin and Henning Wehn?",
+    "answers": [
+      "Junk mail",
+      "The Royal Family",
+      "Clairvoyants",
+      "Control pants"
+    ],
+    "correctAnswer": "Clairvoyants",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Michael Ball",
+      "Caroline Quentin",
+      "Henning Wehn",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55794",
+    "question": "Which of these was sent to Room 101 in the edition with Lee Mack, Dave Myers and Ruby Wax?",
+    "answers": [
+      "Top Gear",
+      "David Blaine",
+      "Deal or No Deal",
+      "Chunky chips"
+    ],
+    "correctAnswer": "David Blaine",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Lee Mack",
+      "Dave Myers",
+      "Ruby Wax",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55795",
+    "question": "Which of these was sent to Room 101 in the edition with Kelly Hoppen, Miles Jupp and Vernon Kay?",
+    "answers": [
+      "Littering",
+      "Automatic doors",
+      "Weak handshakes",
+      "Loud noises"
+    ],
+    "correctAnswer": "Littering",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Kelly Hoppen",
+      "Miles Jupp",
+      "Vernon Kay",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55796",
+    "question": "Which of these was sent to Room 101 in the edition with Sara Cox, Aled Jones and Josh Widdicombe?",
+    "answers": [
+      "Scorpions",
+      "Death metal",
+      "The Lord of the Rings",
+      "Fish bones"
+    ],
+    "correctAnswer": "Fish bones",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Sara Cox",
+      "Aled Jones",
+      "Josh Widdicombe",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55797",
+    "question": "Which of these was sent to Room 101 in the edition with Gyles Brandreth, Melanie Chisholm and Adam Hills?",
+    "answers": [
+      "Passwords",
+      "Choice of toothpastes",
+      "Naming rights for sports stadiums",
+      "Spoiling film plots"
+    ],
+    "correctAnswer": "Naming rights for sports stadiums",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Gyles Brandreth",
+      "Melanie Chisholm",
+      "Adam Hills",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55798",
+    "question": "Which of these was sent to Room 101 in the edition with Charles Dance, Laurence Llewelyn-Bowen and Andi Osho?",
+    "answers": [
+      "Pasties",
+      "George Osborne",
+      "Pebble beaches",
+      "Internet dating"
+    ],
+    "correctAnswer": "George Osborne",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Charles Dance",
+      "Laurence Llewelyn-Bowen",
+      "Andi Osho",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55799",
+    "question": "Which of these was sent to Room 101 in the edition with Steve Jones, Sue Perkins and Bruno Tonioli?",
+    "answers": [
+      "Anne Robinson",
+      "Flat-pack furniture",
+      "Ten-pin bowling",
+      "Mime"
+    ],
+    "correctAnswer": "Anne Robinson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Steve Jones",
+      "Sue Perkins",
+      "Bruno Tonioli",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55800",
+    "question": "Which of these was sent to Room 101 in the edition with Ronni Ancona, Len Goodman and Tim Vine?",
+    "answers": [
+      "Karaoke DJs",
+      "Family photographs",
+      "Cats in gardens",
+      "The metric system"
+    ],
+    "correctAnswer": "The metric system",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Ronni Ancona",
+      "Len Goodman",
+      "Tim Vine",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55801",
+    "question": "Which of these was sent to Room 101 in the edition with Jack Dee, Gary Lineker and Fay Ripley?",
+    "answers": [
+      "Hand dryers",
+      "Leggings",
+      "White van drivers",
+      "Box junctions"
+    ],
+    "correctAnswer": "White van drivers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Jack Dee",
+      "Gary Lineker",
+      "Fay Ripley",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55802",
+    "question": "Which of these was sent to Room 101 in the edition with Fiona Bruce, Ray Mears and Katherine Ryan?",
+    "answers": [
+      "Nappies",
+      "Bread",
+      "Caravans",
+      "Complicated car dashboards"
+    ],
+    "correctAnswer": "Bread",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Fiona Bruce",
+      "Ray Mears",
+      "Katherine Ryan",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55803",
+    "question": "Which of these was sent to Room 101 in the edition with Alexander Armstrong, Henry Blofeld and Kelly Holmes?",
+    "answers": [
+      "The M25",
+      "Snoring in public",
+      "Answerphone messages",
+      "Stickers on kitchenware"
+    ],
+    "correctAnswer": "The M25",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Alexander Armstrong",
+      "Henry Blofeld",
+      "Kelly Holmes",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55804",
+    "question": "Which of these was sent to Room 101 in the edition with Sara Pascoe, Jonathan Ross and Michael Vaughan?",
+    "answers": [
+      "Snails",
+      "Time",
+      "Pick and mix",
+      "Misusing the word literally"
+    ],
+    "correctAnswer": "Misusing the word literally",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Sara Pascoe",
+      "Jonathan Ross",
+      "Michael Vaughan",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55805",
+    "question": "Which of these was sent to Room 101 in the edition with Victoria Coren Mitchell, Warwick Davis and Christian Jessen?",
+    "answers": [
+      "James Bond",
+      "Doctors",
+      "Fiddly bracelets",
+      "Special offers"
+    ],
+    "correctAnswer": "Fiddly bracelets",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Victoria Coren Mitchell",
+      "Warwick Davis",
+      "Christian Jessen",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55806",
+    "question": "Which of these was sent to Room 101 in the edition with Bob Mortimer, Brendan O'Carroll and Rachel Riley?",
+    "answers": [
+      "Unripe fruit in supermarkets",
+      "Elvis impersonators",
+      "Pedal bins in hotels",
+      "Food wrapped in bacon"
+    ],
+    "correctAnswer": "Elvis impersonators",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Bob Mortimer",
+      "Brendan O'Carroll",
+      "Rachel Riley",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55807",
+    "question": "Which of these was sent to Room 101 in the edition with Adrian Chiles, Jameela Jamil and Des O'Connor?",
+    "answers": [
+      "Loud eaters",
+      "Horoscopes",
+      "Pantomimes",
+      "Bad breakup etiquette"
+    ],
+    "correctAnswer": "Loud eaters",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Adrian Chiles",
+      "Jameela Jamil",
+      "Des O'Connor",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55808",
+    "question": "Which of these was sent to Room 101 in the edition with Aisling Bea, Trevor McDonald and David Tennant?",
+    "answers": [
+      "Pigeons",
+      "Sushi",
+      "Scooters",
+      "Queueing"
+    ],
+    "correctAnswer": "Queueing",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Aisling Bea",
+      "Trevor McDonald",
+      "David Tennant",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55809",
+    "question": "Which of these was sent to Room 101 in the edition with Noel Fielding, Joanna Scanlan and Ian Wright?",
+    "answers": [
+      "Grease",
+      "Stinky cheese",
+      "Spiders",
+      "Hangovers"
+    ],
+    "correctAnswer": "Spiders",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Noel Fielding",
+      "Joanna Scanlan",
+      "Ian Wright",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55810",
+    "question": "Which of these was sent to Room 101 in the edition with Greg Davies, Katie Price and Adil Ray?",
+    "answers": [
+      "Beards",
+      "Parking",
+      "Ketchup",
+      "Dog owners giving specific instructions"
+    ],
+    "correctAnswer": "Parking",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Greg Davies",
+      "Katie Price",
+      "Adil Ray",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55811",
+    "question": "Which of these was sent to Room 101 in the edition with James Acaster, Heston Blumenthal and Kirsty Wark?",
+    "answers": [
+      "Food that tastes worse than you remember",
+      "Geese",
+      "Plastic flowers",
+      "The shot put"
+    ],
+    "correctAnswer": "Food that tastes worse than you remember",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Successful Nominations",
+      "James Acaster",
+      "Heston Blumenthal",
+      "Kirsty Wark",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55812",
+    "question": "Which of these was sent to Room 101 in the edition with Shaun Ryder, Sam Simmons and Meera Syal?",
+    "answers": [
+      "Meeting new people",
+      "Holding hands",
+      "Whistling loudly",
+      "Football talk"
+    ],
+    "correctAnswer": "Football talk",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Shaun Ryder",
+      "Sam Simmons",
+      "Meera Syal",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55813",
+    "question": "Which of these was sent to Room 101 in the edition with John Humphrys, Russell Kane and Claudia Winkleman?",
+    "answers": [
+      "Summer",
+      "Fussy eaters",
+      "Foreheads",
+      "Professional sport"
+    ],
+    "correctAnswer": "Foreheads",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Successful Nominations",
+      "John Humphrys",
+      "Russell Kane",
+      "Claudia Winkleman",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55814",
+    "question": "Which of these was sent to Room 101 in the edition with Bridget Christie, Greg James and Robert Peston?",
+    "answers": [
+      "The Kardashians",
+      "Lycra",
+      "Babies",
+      "Management speak"
+    ],
+    "correctAnswer": "Lycra",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Bridget Christie",
+      "Greg James",
+      "Robert Peston",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55815",
+    "question": "Which of these was sent to Room 101 in the edition with Russell Howard, Katherine Parkinson and John Torode?",
+    "answers": [
+      "Oversized pepper grinders",
+      "Dreams",
+      "Grumpy children",
+      "DJs singing along to songs"
+    ],
+    "correctAnswer": "Oversized pepper grinders",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Russell Howard",
+      "Katherine Parkinson",
+      "John Torode",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55816",
+    "question": "Which of these was sent to Room 101 in the edition with Rylan Clark-Neal, Nigel Havers and Catherine Tate?",
+    "answers": [
+      "Low ceilings",
+      "Airport shops",
+      "Hipster restaurants",
+      "Staged paparazzi photographs"
+    ],
+    "correctAnswer": "Staged paparazzi photographs",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Rylan Clark-Neal",
+      "Nigel Havers",
+      "Catherine Tate",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55817",
+    "question": "Which of these was sent to Room 101 in the edition with David Mitchell, Judy Murray and Anita Rani?",
+    "answers": [
+      "Sugar lumps",
+      "Walking and eating",
+      "Clutter",
+      "Motorway signs"
+    ],
+    "correctAnswer": "Clutter",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Frank Skinner",
+      "Successful Nominations",
+      "David Mitchell",
+      "Judy Murray",
+      "Anita Rani",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55818",
+    "question": "Which of these was sent to Room 101 in the edition with Rob Beckett, Sophie Ellis-Bextor and Ross Kemp?",
+    "answers": [
+      "Insurance",
+      "Expensive hotel water",
+      "Teeth",
+      "Enforced seating plans"
+    ],
+    "correctAnswer": "Expensive hotel water",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Rob Beckett",
+      "Sophie Ellis-Bextor",
+      "Ross Kemp",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55819",
+    "question": "Which of these was sent to Room 101 in the edition with Joe Lycett, Zoe Lyons and Ricky Wilson?",
+    "answers": [
+      "New towels",
+      "Escalators",
+      "Bin day",
+      "YouTube video recommendations"
+    ],
+    "correctAnswer": "New towels",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Joe Lycett",
+      "Zoe Lyons",
+      "Ricky Wilson",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55820",
+    "question": "Which of these was sent to Room 101 in the edition with Lucy Porter, Romesh Ranganathan and Judge Rinder?",
+    "answers": [
+      "Lavish proposals",
+      "School reunions",
+      "Child actors",
+      "New Year's Eve"
+    ],
+    "correctAnswer": "New Year's Eve",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Lucy Porter",
+      "Romesh Ranganathan",
+      "Judge Rinder",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55821",
+    "question": "Which of these was sent to Room 101 in the edition with Richard Ayoade, Alun Cochrane and Gabby Logan?",
+    "answers": [
+      "Advice",
+      "Fear of flying",
+      "Half-and-half football scarves",
+      "Laughing out loud at books"
+    ],
+    "correctAnswer": "Half-and-half football scarves",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Richard Ayoade",
+      "Alun Cochrane",
+      "Gabby Logan",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55822",
+    "question": "Which of these was sent to Room 101 in the edition with Rob Delaney, Laurence Fox and Davina McCall?",
+    "answers": [
+      "Hand sanitiser",
+      "Cats",
+      "Twelve-string guitars",
+      "Ordering starters"
+    ],
+    "correctAnswer": "Cats",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Rob Delaney",
+      "Laurence Fox",
+      "Davina McCall",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55823",
+    "question": "Which of these was sent to Room 101 in the edition with Nicola Adams, Frankie Boyle and Diane Morgan?",
+    "answers": [
+      "Celebrity atheists",
+      "Magicians",
+      "Microwaves",
+      "Winter clothes"
+    ],
+    "correctAnswer": "Celebrity atheists",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Nicola Adams",
+      "Frankie Boyle",
+      "Diane Morgan",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55824",
+    "question": "Which of these was sent to Room 101 in the edition with Charlie Brooker, Pearl Mackie and Scarlett Moffatt?",
+    "answers": [
+      "Crocs",
+      "Swimming goggles",
+      "Haircuts",
+      "Small cartons of UHT milk"
+    ],
+    "correctAnswer": "Small cartons of UHT milk",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Charlie Brooker",
+      "Pearl Mackie",
+      "Scarlett Moffatt",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55825",
+    "question": "Which of these was sent to Room 101 in the edition with Alex Brooker, Jeremy Paxman and Sally Phillips?",
+    "answers": [
+      "Fitbits",
+      "Tourist attractions",
+      "David Cameron",
+      "Dog jackets"
+    ],
+    "correctAnswer": "David Cameron",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Alex Brooker",
+      "Jeremy Paxman",
+      "Sally Phillips",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55826",
+    "question": "Which of these was sent to Room 101 in the edition with Jimmy Carr, Rochelle Humes and Steven Moffat?",
+    "answers": [
+      "HD television",
+      "Pseudoscience",
+      "Sandy beaches",
+      "Other people's opinions"
+    ],
+    "correctAnswer": "Pseudoscience",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Jimmy Carr",
+      "Rochelle Humes",
+      "Steven Moffat",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55827",
+    "question": "Which of these was sent to Room 101 in the edition with Vicky McClure, Sandi Toksvig and Josh Widdicombe?",
+    "answers": [
+      "Coat hangers",
+      "Real ale",
+      "Bar stools",
+      "Hotel room leaflets"
+    ],
+    "correctAnswer": "Coat hangers",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Vicky McClure",
+      "Sandi Toksvig",
+      "Josh Widdicombe",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55828",
+    "question": "Which of these was sent to Room 101 in the edition with Roisin Conaty, Chris Kamara and Nish Kumar?",
+    "answers": [
+      "Oscar bait",
+      "Downloading music",
+      "Ex-partners",
+      "Bread served in restaurants"
+    ],
+    "correctAnswer": "Bread served in restaurants",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Roisin Conaty",
+      "Chris Kamara",
+      "Nish Kumar",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55829",
+    "question": "Which of these was sent to Room 101 in the edition with Adam Buxton, Geri Horner and Katherine Ryan?",
+    "answers": [
+      "Marathons",
+      "Pens that do not work",
+      "Phone calls",
+      "Shop assistants commenting on purchases"
+    ],
+    "correctAnswer": "Phone calls",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Adam Buxton",
+      "Geri Horner",
+      "Katherine Ryan",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55830",
+    "question": "Which of these was sent to Room 101 in the edition with Bill Bailey, Alice Levine and Una Stubbs?",
+    "answers": [
+      "Taramasalata",
+      "Trying on clothes",
+      "Moths",
+      "Drama clichés"
+    ],
+    "correctAnswer": "Trying on clothes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Bill Bailey",
+      "Alice Levine",
+      "Una Stubbs",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55831",
+    "question": "Which of these was sent to Room 101 in the edition with Stephen Mangan, Holly Walsh and Phil Wang?",
+    "answers": [
+      "Dog owners who fail to clear up after their dogs",
+      "Tom Hiddleston",
+      "The Archers",
+      "Having a bath"
+    ],
+    "correctAnswer": "Dog owners who fail to clear up after their dogs",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Frank Skinner",
+      "Successful Nominations",
+      "Stephen Mangan",
+      "Holly Walsh",
+      "Phil Wang",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55832",
+    "question": "What British Comedy Award did Paul Merton win in 1999 for his work on Room 101 and Have I Got News for You?",
+    "answers": [
+      "Best TV Comedy Actor",
+      "Best Comedy Breakthrough Artist",
+      "Best Stand-Up",
+      "Best Comedy Entertainment Personality"
+    ],
+    "correctAnswer": "Best Comedy Entertainment Personality",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1999",
+      "Paul Merton",
+      "Awards",
+      "British Comedy Awards",
+      "Winner",
+      "Source: https://www.the-independent.com/news/awards-triumph-for-the-royles-1133520.html"
+    ]
+  },
+  {
+    "id": "tv_55833",
+    "question": "What was the bonus nomination successfully made by Robert Webb in the first Frank Skinner edition of Room 101?",
+    "answers": [
+      "Tom Cruise",
+      "Brad Pitt",
+      "Russell Crowe",
+      "Leonardo DiCaprio"
+    ],
+    "correctAnswer": "Russell Crowe",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Robert Webb",
+      "Bonus Nomination",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55834",
+    "question": "Which fashion item was Gabby Logan's bonus nomination at the end of her 2012 Room 101 episode?",
+    "answers": [
+      "Denim jackets",
+      "Shell suits",
+      "Platform shoes",
+      "Bowler hats"
+    ],
+    "correctAnswer": "Shell suits",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Gabby Logan",
+      "Bonus Nomination",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55835",
+    "question": "What language feature was Jamelia's bonus nomination on Room 101?",
+    "answers": [
+      "Silent letters",
+      "Double negatives",
+      "Rhyming slang",
+      "Collective nouns"
+    ],
+    "correctAnswer": "Silent letters",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Jamelia",
+      "Bonus Nomination",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55836",
+    "question": "What portable music accessory was Alistair McGowan allowed to banish as his bonus choice on Room 101?",
+    "answers": [
+      "CD wallets",
+      "Portable speakers",
+      "Cassette adapters",
+      "Small earphones"
+    ],
+    "correctAnswer": "Small earphones",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Alistair McGowan",
+      "Bonus Nomination",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55837",
+    "question": "What did Lauren Laverne choose as her final bonus nomination on Room 101?",
+    "answers": [
+      "Baby animals",
+      "Toy animals",
+      "Adult animals",
+      "Cartoon animals"
+    ],
+    "correctAnswer": "Adult animals",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Lauren Laverne",
+      "Bonus Nomination",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55838",
+    "question": "In Stephen Fry's Room 101 episode, what was the name of the alternative programme where he and Paul Merton discussed things he liked?",
+    "answers": [
+      "Room 102",
+      "Room Lovely",
+      "Room Wonderful",
+      "Room of Favourites"
+    ],
+    "correctAnswer": "Room Lovely",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2001",
+      "Series 6",
+      "Stephen Fry",
+      "Paul Merton",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55839",
+    "question": "Which singer made a guest appearance to illustrate Ron Atkinson's nomination of Save Your Love on Room 101?",
+    "answers": [
+      "Renato Pagliari",
+      "Al Bano",
+      "Paul Young",
+      "Joe Cocker"
+    ],
+    "correctAnswer": "Renato Pagliari",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2003",
+      "Series 8",
+      "Ron Atkinson",
+      "Renato Pagliari",
+      "Guest Appearance",
+      "Music",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55840",
+    "question": "Which actor appeared on Kirsty Young's Room 101 episode to demonstrate very loud voices?",
+    "answers": [
+      "Tom Baker",
+      "Patrick Stewart",
+      "Derek Jacobi",
+      "Brian Blessed"
+    ],
+    "correctAnswer": "Brian Blessed",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2004",
+      "Series 9",
+      "Kirsty Young",
+      "Brian Blessed",
+      "Guest Appearance",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55841",
+    "question": "What challenge did Paul Merton use to decide whether Terry Venables could consign football club chairmen to Room 101?",
+    "answers": [
+      "A keepy-uppy contest",
+      "A crossbar challenge",
+      "A penalty shoot-out",
+      "A penalty quiz"
+    ],
+    "correctAnswer": "A penalty shoot-out",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2000",
+      "Series 5",
+      "Terry Venables",
+      "Football",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55842",
+    "question": "Which of these was shown as an unseen nomination in the 2015 Room 101 compilation, without its final verdict being revealed?",
+    "answers": [
+      "Newsreaders wearing ties",
+      "News reporters standing in the rain",
+      "News reporters interviewing celebrities",
+      "Newsreaders sitting at desks"
+    ],
+    "correctAnswer": "News reporters standing in the rain",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Compilations",
+      "Unseen Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55843",
+    "question": "Which comic-book character featured in an unseen nomination in the 2016 Room 101 compilation?",
+    "answers": [
+      "Batman",
+      "Superman",
+      "Spider-Man",
+      "Wonder Woman"
+    ],
+    "correctAnswer": "Batman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Compilations",
+      "Unseen Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55844",
+    "question": "Which annual celebration appeared as a previously unseen nomination in the 2017 Room 101 compilation?",
+    "answers": [
+      "Christmas",
+      "Easter",
+      "Bonfire Night",
+      "Halloween"
+    ],
+    "correctAnswer": "Halloween",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Compilations",
+      "Unseen Nominations",
+      "halloween",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55845",
+    "question": "Which dance gesture appeared as an unseen nomination in the final 2018 Room 101 compilation?",
+    "answers": [
+      "Flossing",
+      "Moonwalking",
+      "Dabbing",
+      "The robot"
+    ],
+    "correctAnswer": "Dabbing",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Compilations",
+      "Unseen Nominations",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55846",
+    "question": "What was the successful nomination made by young panellist Gruff in the Children in Need edition of Room 101?",
+    "answers": [
+      "Parents trying to be cool",
+      "Girls who would not go out with him",
+      "Brushing his teeth",
+      "Doing homework"
+    ],
+    "correctAnswer": "Girls who would not go out with him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Children in Need",
+      "Charity Special",
+      "charity",
+      "Gruff",
+      "Source: https://www.comedy.co.uk/tv/room_101_2012/features/things_in_room_101/"
+    ]
+  },
+  {
+    "id": "tv_55847",
+    "question": "Which of these was nominated in the 2013 children's special of Room 101?",
+    "answers": [
+      "Brushing your teeth",
+      "Taking piano lessons",
+      "Eating school dinners",
+      "Going swimming"
+    ],
+    "correctAnswer": "Brushing your teeth",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Children in Need",
+      "Charity Special",
+      "charity",
+      "Source: https://en.wikipedia.org/wiki/Children_in_Need_2013"
+    ]
   }
 ];
-if(questions.length!==223||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(55478+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 745 validation failed');
+if(questions.length!==370||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(55478+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 745 validation failed');
 module.exports=questions;
