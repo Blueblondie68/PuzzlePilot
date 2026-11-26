@@ -657,7 +657,7 @@ const questions = [
         answers: ["Hogwarts", "Beauxbatons", "Durmstrang", "Ilvermorny"],
         correctAnswer: "Hogwarts",
         difficulty: "Easy",
-        tags: ["fantasy", "british", "children"],
+        tags: ["fantasy", "british", "children", "Harry Potter franchise", "Harry Potter novels"],
         dailyEligible: true
     },
 

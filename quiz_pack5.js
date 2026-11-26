@@ -222,7 +222,7 @@ const questions = [
         answers: ["Emma Watson", "Keira Knightley", "Emma Stone", "Carey Mulligan"],
         correctAnswer: "Emma Watson",
         difficulty: "Easy",
-        tags: ["2000s", "actors", "fantasy", "harry potter"],
+        tags: ["2000s", "actors", "fantasy", "harry potter", "Harry Potter franchise", "Harry Potter film series", "Actor: Emma Watson", "Character: Hermione Granger"],
         dailyEligible: true
     },
 
