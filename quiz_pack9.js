@@ -255,7 +255,7 @@ const questions = [
         answers: ["Jeff Goldblum", "Sam Neill", "Richard Attenborough", "Wayne Knight"],
         correctAnswer: "Jeff Goldblum",
         difficulty: "Medium",
-        tags: ["1990s", "actors", "science fiction", "adventure", "jurassic park"],
+        tags: ["1990s", "actors", "science fiction", "adventure", "jurassic park", "Film: Jurassic Park", "Jurassic Park franchise"],
         dailyEligible: true
     },
 

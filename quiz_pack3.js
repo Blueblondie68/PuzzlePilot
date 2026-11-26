@@ -222,7 +222,7 @@ const questions = [
         answers: ["Steven Spielberg", "James Cameron", "George Lucas", "Ridley Scott"],
         correctAnswer: "Steven Spielberg",
         difficulty: "Easy",
-        tags: ["1990s", "directors", "jurassic park"],
+        tags: ["1990s", "directors", "jurassic park", "Film: Jurassic Park", "Jurassic Park franchise"],
         dailyEligible: true
     },
 

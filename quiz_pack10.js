@@ -222,7 +222,7 @@ const questions = [
         answers: ["Jurassic Park", "Congo", "Twister", "Deep Impact"],
         correctAnswer: "Jurassic Park",
         difficulty: "Easy",
-        tags: ["1990s", "science fiction", "adventure", "jurassic park"],
+        tags: ["1990s", "science fiction", "adventure", "jurassic park", "Film: Jurassic Park", "Jurassic Park franchise"],
         dailyEligible: true
     },
 
