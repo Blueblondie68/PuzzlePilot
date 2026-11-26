@@ -119,7 +119,7 @@ const recordingTags = {
     "music_3546": ["tango in the night album", "1987 singles", "lindsey buckingham vocals"],
     "music_3547": ["tango in the night album", "1987 singles", "christine mcvie vocals"],
     "music_3548": ["mirage album", "1982 singles", "christine mcvie vocals"],
-    "music_3549": ["back to the future film", "film music", "1985 singles"],
+    "music_3549": ["back to the future film", "film music", "1985 singles", "Film: Back to the Future", "Back to the Future franchise", "Film soundtrack song"],
     "music_3550": ["fore album", "1986 singles"],
     "music_3551": ["small world album", "1988 singles"],
     "music_3552": ["fore album", "1987 singles"],

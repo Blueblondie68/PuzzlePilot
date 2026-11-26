@@ -59,7 +59,7 @@ const recordingTags = {
     "music_5386": [1980, "celebrate album", "album track", "eumir deodato production"],
     "music_5387": [1986, "fore album", "1987 single", "huey lewis vocals"],
     "music_5388": [1986, "fore album", "1987 single", "huey lewis vocals"],
-    "music_5389": [1985, "back to the future film soundtrack", "film songs"],
+    "music_5389": [1985, "back to the future film soundtrack", "film songs", "Film: Back to the Future", "Back to the Future franchise", "Film soundtrack song"],
     "music_5390": [1982, "picture this album", "1982 single"],
     "music_5391": [1980, "huey lewis and the news debut album", "album track"],
     "music_5392": [1979, "phoenix album", "1980 single"],
