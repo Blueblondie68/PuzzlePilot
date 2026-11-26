@@ -239,7 +239,7 @@ const albumGroups = {
 // Recording-specific guests, soundtrack links and other useful topics.
 const songTags = {
     'Adele': {
-        'Skyfall': ['James Bond', 'film soundtracks', 'Skyfall film', 'Paul Epworth', 'Oscar-winning songs']
+        'Skyfall': ['James Bond', 'film soundtracks', 'Skyfall film', "Film: Skyfall", "James Bond franchise", "Bond theme song", 'Paul Epworth', 'Oscar-winning songs']
     },
     'Ed Sheeran': {
         'Galway Girl': ['Irish folk influences', 'folk-pop']

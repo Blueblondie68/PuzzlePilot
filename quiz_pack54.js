@@ -42,7 +42,7 @@ const recordingTags = {
     "music_3469": ["madonna debut album", "1983 album tracks", "1984 singles"],
     "music_3470": ["rio album", "1982 singles"],
     "music_3471": ["1983 uk number one singles", "1983 singles"],
-    "music_3472": ["james bond themes", "a view to a kill film", "film music", "1985 singles"],
+    "music_3472": ["james bond themes", "a view to a kill film", "film music", "1985 singles", "Film: A View to a Kill", "James Bond franchise", "Bond theme song"],
     "music_3473": ["make it big album", "1984 singles"],
     "music_3474": ["make it big album", "1984 singles", "last christmas double a side"],
     "music_3475": ["1985 singles"],

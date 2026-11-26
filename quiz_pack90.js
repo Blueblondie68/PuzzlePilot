@@ -56,7 +56,7 @@ const recordingTags = {
     "music_7090": [1995, "everything is wrong album"],
     "music_7091": [1995, "everything is wrong album", "mimi goese vocals"],
     "music_7092": [1994, "everything is wrong album", "1995 album"],
-    "music_7093": [1997, "i like to score album", "monty norman theme", "james bond theme remix"],
+    "music_7093": [1997, "i like to score album", "monty norman theme", "james bond theme remix", "Film: Tomorrow Never Dies", "James Bond franchise", "Film soundtrack remix"],
     "music_7094": [1998, "play album", "1999 album"],
     "music_7095": [1999, "play album"],
     "music_7096": [1999, "play album"],

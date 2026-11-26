@@ -279,7 +279,7 @@ const songTags = {
         'Promises': ['Sam Smith', 'guest vocalists', 'collaborations', '2018 singles']
     },
     'Sam Smith': {
-        "Writing's on the Wall": ['James Bond', 'Spectre film', 'film soundtracks',
+        "Writing's on the Wall": ['James Bond', 'Spectre film', "Film: Spectre", "James Bond franchise", "Bond theme song", 'film soundtracks',
             'Oscar-winning songs', 'Jimmy Napes', '2015 singles']
     }
 };

@@ -5996,5 +5996,1155 @@ module.exports = [
                 "Storyline",
                 "Source: https://catalog.afi.com/Film/23875-CASINO-ROYALE"
             ]
-        }
+        },
+    {
+        "id": "film_1032",
+        "question": "What does Strangways fail to do after leaving his card game in Dr. No?",
+        "answers": [
+            "Meet Felix at the airport",
+            "Make his scheduled radio report to London",
+            "Deliver a message to the Governor",
+            "Return the samples to Professor Dent"
+        ],
+        "correctAnswer": "Make his scheduled radio report to London",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Dr. No",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Dr. No",
+            "1962",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/22934-DR.-NO"
+        ]
+    },
+    {
+        "id": "film_1033",
+        "question": "What does Bond discover is unusual about the rock samples collected by Strangways in Dr. No?",
+        "answers": [
+            "They are radioactive",
+            "They contain fragments of gold",
+            "They are of volcanic origin",
+            "They have been coated with oil"
+        ],
+        "correctAnswer": "They are radioactive",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Dr. No",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Dr. No",
+            "1962",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/22934-DR.-NO"
+        ]
+    },
+    {
+        "id": "film_1034",
+        "question": "What does Bond do before he and Honey leave Dr No's island in Dr. No?",
+        "answers": [
+            "He uses the dragon vehicle to take her to the jetty",
+            "He signals a plane to collect them from the beach",
+            "He hands her over to the Jamaican police",
+            "He frees her from a chamber that is filling with water"
+        ],
+        "correctAnswer": "He frees her from a chamber that is filling with water",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Dr. No",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Dr. No",
+            "1962",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/22934-DR.-NO"
+        ]
+    },
+    {
+        "id": "film_1035",
+        "question": "Who is the apparent Bond killed by Grant in the opening of From Russia with Love?",
+        "answers": [
+            "A British agent sent to impersonate Bond",
+            "A man hired by Kerim Bey",
+            "A Soviet commander posing as Bond",
+            "A SPECTRE trainee wearing a Bond mask"
+        ],
+        "correctAnswer": "A SPECTRE trainee wearing a Bond mask",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "From Russia with Love",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: From Russia with Love",
+            "1963",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/From_Russia_with_Love_(film)"
+        ]
+    },
+    {
+        "id": "film_1036",
+        "question": "What disrupts the gathering Bond attends at the Romani camp in From Russia with Love?",
+        "answers": [
+            "A police raid for the Lektor",
+            "A fire set by Tatiana",
+            "An armed attack on the camp",
+            "The arrival of the Soviet ambassador"
+        ],
+        "correctAnswer": "An armed attack on the camp",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "From Russia with Love",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: From Russia with Love",
+            "1963",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/From_Russia_with_Love_(film)"
+        ]
+    },
+    {
+        "id": "film_1037",
+        "question": "How does Bond stop the boats chasing him and Tatiana in From Russia with Love?",
+        "answers": [
+            "He lures the boats into a shallow channel",
+            "He sets fuel on the water alight",
+            "He drives beneath a closing dock gate",
+            "He signals the coastguard to block them"
+        ],
+        "correctAnswer": "He sets fuel on the water alight",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "From Russia with Love",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: From Russia with Love",
+            "1963",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/From_Russia_with_Love_(film)"
+        ]
+    },
+    {
+        "id": "film_1038",
+        "question": "What does Klebb pretend to be to get into Bond and Tatiana's hotel room in From Russia with Love?",
+        "answers": [
+            "A hotel maid",
+            "A nurse",
+            "A tourist guide",
+            "A police inspector"
+        ],
+        "correctAnswer": "A hotel maid",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "From Russia with Love",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: From Russia with Love",
+            "1963",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/From_Russia_with_Love_(film)"
+        ]
+    },
+    {
+        "id": "film_1039",
+        "question": "What does Bond offer as the prize for the golf match against Goldfinger in Goldfinger?",
+        "answers": [
+            "A bar of gold",
+            "A diamond ring",
+            "The keys to his Aston Martin",
+            "A set of antique golf clubs"
+        ],
+        "correctAnswer": "A bar of gold",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Goldfinger",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Goldfinger",
+            "1964",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://transcripts.foreverdreaming.org/viewtopic.php?t=38847"
+        ]
+    },
+    {
+        "id": "film_1040",
+        "question": "How does Bond expose Goldfinger's cheating at golf in Goldfinger?",
+        "answers": [
+            "He asks the club secretary to search Oddjob's bag",
+            "He persuades Goldfinger to replay a hole in front of witnesses",
+            "He has Hawker measure where Goldfinger dropped his ball",
+            "He substitutes another numbered ball and lets Goldfinger finish with it"
+        ],
+        "correctAnswer": "He substitutes another numbered ball and lets Goldfinger finish with it",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Goldfinger",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Goldfinger",
+            "1964",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://transcripts.foreverdreaming.org/viewtopic.php?t=38847"
+        ]
+    },
+    {
+        "id": "film_1041",
+        "question": "What does Oddjob do to the golf ball Bond tosses him after the match in Goldfinger?",
+        "answers": [
+            "Throws it at Hawker",
+            "Cuts it in half with his hat",
+            "Crushes it in his bare hand",
+            "Hits it back towards the first tee"
+        ],
+        "correctAnswer": "Crushes it in his bare hand",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Goldfinger",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Goldfinger",
+            "1964",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://www.007.com/focus-week-oddjob/"
+        ]
+    },
+    {
+        "id": "film_1042",
+        "question": "How is Jill Masterson helping Goldfinger cheat at cards in Miami in Goldfinger?",
+        "answers": [
+            "She marks the cards before each hand",
+            "She looks at his opponent's cards and relays them",
+            "She swaps decks when the dealer leaves",
+            "She pays the other player to lose"
+        ],
+        "correctAnswer": "She looks at his opponent's cards and relays them",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Goldfinger",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Goldfinger",
+            "1964",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Goldfinger_(film)"
+        ]
+    },
+    {
+        "id": "film_1043",
+        "question": "What allows Bond to defeat Oddjob inside the Fort Knox vault in Goldfinger?",
+        "answers": [
+            "Oddjob slips on spilt gold coins",
+            "Oddjob grabs his metal-rimmed hat where it is caught between the bars",
+            "Oddjob loses his footing on a delivery trolley",
+            "Oddjob locks himself behind the inner vault door"
+        ],
+        "correctAnswer": "Oddjob grabs his metal-rimmed hat where it is caught between the bars",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Goldfinger",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Goldfinger",
+            "1964",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Goldfinger_(film)"
+        ]
+    },
+    {
+        "id": "film_1044",
+        "question": "How does Bond recognise Colonel Bouvar at the funeral in the opening of Thunderball?",
+        "answers": [
+            "The supposed widow opens the car door for herself",
+            "The supposed widow drops his passport at the graveside",
+            "The coffin carries the wrong name",
+            "The priest slips away in Bouvar's car"
+        ],
+        "correctAnswer": "The supposed widow opens the car door for herself",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Thunderball",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Thunderball",
+            "1965",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/23722-THUNDERBALL"
+        ]
+    },
+    {
+        "id": "film_1045",
+        "question": "What happens to Paula rather than let Largo's men interrogate her in Thunderball?",
+        "answers": [
+            "She jumps overboard",
+            "She escapes through a service tunnel",
+            "She starts a fire to summon help",
+            "She takes poison"
+        ],
+        "correctAnswer": "She takes poison",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Thunderball",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Thunderball",
+            "1965",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/23722-THUNDERBALL"
+        ]
+    },
+    {
+        "id": "film_1046",
+        "question": "What does Bond show Domino to back up his account of her brother's death in Thunderball?",
+        "answers": [
+            "A confession signed by Fiona",
+            "An intercepted recording of Largo",
+            "Her brother's watch and identity disc",
+            "A photograph of Largo beside the crashed aircraft"
+        ],
+        "correctAnswer": "Her brother's watch and identity disc",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Thunderball",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Thunderball",
+            "1965",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/23722-THUNDERBALL"
+        ]
+    },
+    {
+        "id": "film_1047",
+        "question": "What brings Bond and Domino to safety after the yacht is destroyed in Thunderball?",
+        "answers": [
+            "Felix brings a police launch alongside",
+            "They reach the shore in the yacht's dinghy",
+            "An aircraft picks them up from the water",
+            "Navy divers tow them to a submarine"
+        ],
+        "correctAnswer": "An aircraft picks them up from the water",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Thunderball",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Thunderball",
+            "1965",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/23722-THUNDERBALL"
+        ]
+    },
+    {
+        "id": "film_1048",
+        "question": "Where does Bond end up after falling through a trapdoor while pursuing Aki in You Only Live Twice?",
+        "answers": [
+            "In Osato's warehouse",
+            "In Tiger Tanaka's office",
+            "At a railway ticket office",
+            "In the British embassy"
+        ],
+        "correctAnswer": "In Tiger Tanaka's office",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "You Only Live Twice",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: You Only Live Twice",
+            "1967",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/You_Only_Live_Twice_(film)"
+        ]
+    },
+    {
+        "id": "film_1049",
+        "question": "How do Tanaka's allies get rid of the car pursuing Aki and Bond in You Only Live Twice?",
+        "answers": [
+            "A helicopter lifts it with a magnet and drops it into the sea",
+            "A lorry blocks it on a bridge",
+            "A train cuts it off at a level crossing",
+            "A patrol boat forces it off the road"
+        ],
+        "correctAnswer": "A helicopter lifts it with a magnet and drops it into the sea",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "You Only Live Twice",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: You Only Live Twice",
+            "1967",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/You_Only_Live_Twice_(film)"
+        ]
+    },
+    {
+        "id": "film_1050",
+        "question": "What does Bond do after taking control of Blofeld's launch room in You Only Live Twice?",
+        "answers": [
+            "Sends the captured capsule to the Moon",
+            "Uses the controls to seal the volcano permanently",
+            "Transmits the name of the sponsor to MI6",
+            "Destroys the spacecraft before it can capture another capsule"
+        ],
+        "correctAnswer": "Destroys the spacecraft before it can capture another capsule",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "You Only Live Twice",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: You Only Live Twice",
+            "1967",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/You_Only_Live_Twice_(film)"
+        ]
+    },
+    {
+        "id": "film_1051",
+        "question": "What clue exposes Bond's impersonation of Sir Hilary Bray at Piz Gloria in On Her Majesty's Secret Service?",
+        "answers": [
+            "He signs a letter using his real initials",
+            "He fails to recognise the Bray coat of arms",
+            "He mentions having met Draco in Portugal",
+            "He suggests that Blofeld could visit Augsburg to check his claim"
+        ],
+        "correctAnswer": "He suggests that Blofeld could visit Augsburg to check his claim",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "On Her Majesty's Secret Service",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: On Her Majesty's Secret Service",
+            "1969",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/On_Her_Majesty's_Secret_Service_(film)"
+        ]
+    },
+    {
+        "id": "film_1052",
+        "question": "How do Bond and Tracy evade their pursuers when their car enters a Swiss village race in On Her Majesty's Secret Service?",
+        "answers": [
+            "Bond steals the lead driver's number plate",
+            "They abandon the car beneath the judges' stand",
+            "Tracy drives into an ice-track stock-car race",
+            "Tracy has the officials close the course"
+        ],
+        "correctAnswer": "Tracy drives into an ice-track stock-car race",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "On Her Majesty's Secret Service",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: On Her Majesty's Secret Service",
+            "1969",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/On_Her_Majesty's_Secret_Service_(film)"
+        ]
+    },
+    {
+        "id": "film_1053",
+        "question": "How does Blofeld capture Tracy after their escape on skis in On Her Majesty's Secret Service?",
+        "answers": [
+            "He blocks their route with a snowplough",
+            "He triggers an avalanche",
+            "He has the police stop their car at the border",
+            "He sends a helicopter to lower a net"
+        ],
+        "correctAnswer": "He triggers an avalanche",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "On Her Majesty's Secret Service",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: On Her Majesty's Secret Service",
+            "1969",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/On_Her_Majesty's_Secret_Service_(film)"
+        ]
+    },
+    {
+        "id": "film_1054",
+        "question": "Who provides the helicopters for the assault on Piz Gloria in On Her Majesty's Secret Service?",
+        "answers": [
+            "Draco and his men",
+            "The Swiss police",
+            "The Royal Navy",
+            "General Gogol"
+        ],
+        "correctAnswer": "Draco and his men",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "On Her Majesty's Secret Service",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: On Her Majesty's Secret Service",
+            "1969",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/On_Her_Majesty's_Secret_Service_(film)"
+        ]
+    },
+    {
+        "id": "film_1055",
+        "question": "How does Tiffany get the diamonds past Bond while posing as a casino guest in Diamonds Are Forever?",
+        "answers": [
+            "She collects them in a stuffed toy from the Circus Circus games",
+            "She hides them in a tray of casino chips",
+            "She wears them in a necklace at the roulette table",
+            "She puts them in a birthday cake at the hotel"
+        ],
+        "correctAnswer": "She collects them in a stuffed toy from the Circus Circus games",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Diamonds Are Forever",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Diamonds Are Forever",
+            "1971",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Diamonds_Are_Forever_(film)"
+        ]
+    },
+    {
+        "id": "film_1056",
+        "question": "Who are Bambi and Thumper guarding when Bond finds them in Diamonds Are Forever?",
+        "answers": [
+            "Peter Franks",
+            "Felix Leiter",
+            "Bert Saxby",
+            "Willard Whyte"
+        ],
+        "correctAnswer": "Willard Whyte",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Diamonds Are Forever",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Diamonds Are Forever",
+            "1971",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Diamonds_Are_Forever_(film)"
+        ]
+    },
+    {
+        "id": "film_1057",
+        "question": "What does Bond try to replace on Blofeld's oil platform in Diamonds Are Forever?",
+        "answers": [
+            "The microphone Blofeld uses to mimic Whyte",
+            "The diamonds in the launch case",
+            "The tape controlling the satellite",
+            "The fuel supply to the escape boat"
+        ],
+        "correctAnswer": "The tape controlling the satellite",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Diamonds Are Forever",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Diamonds Are Forever",
+            "1971",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Diamonds_Are_Forever_(film)"
+        ]
+    },
+    {
+        "id": "film_1058",
+        "question": "What happens to Rosie Carver after she tries to run away from Bond in Live and Let Die?",
+        "answers": [
+            "She is captured by Sheriff Pepper",
+            "She is shot by a surveillance device disguised as a scarecrow",
+            "She falls into the crocodile enclosure",
+            "She escapes aboard Quarrel Jr's boat"
+        ],
+        "correctAnswer": "She is shot by a surveillance device disguised as a scarecrow",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Live and Let Die",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Live and Let Die",
+            "1973",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Live_and_Let_Die_(film)"
+        ]
+    },
+    {
+        "id": "film_1059",
+        "question": "How does Bond leave the crocodile farm once he has crossed the water in Live and Let Die?",
+        "answers": [
+            "He catches a passing goods train",
+            "He steals a speedboat",
+            "He commandeers a police car",
+            "He boards a fishing trawler"
+        ],
+        "correctAnswer": "He steals a speedboat",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Live and Let Die",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Live and Let Die",
+            "1973",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Live_and_Let_Die_(film)"
+        ]
+    },
+    {
+        "id": "film_1060",
+        "question": "Who appears laughing on the front of the train in the closing shot of Live and Let Die?",
+        "answers": [
+            "Baron Samedi",
+            "Tee Hee",
+            "Whisper",
+            "Mr Big"
+        ],
+        "correctAnswer": "Baron Samedi",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Live and Let Die",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Live and Let Die",
+            "1973",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Live_and_Let_Die_(film)"
+        ]
+    },
+    {
+        "id": "film_1061",
+        "question": "Where does Bond retrieve the bullet that killed Agent 002 in The Man with the Golden Gun?",
+        "answers": [
+            "From a display case in a Macau casino",
+            "From a spent cartridge at the Hong Kong police station",
+            "From Scaramanga's shooting gallery",
+            "From a dancer's navel jewellery in Beirut"
+        ],
+        "correctAnswer": "From a dancer's navel jewellery in Beirut",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Man with the Golden Gun",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The Man with the Golden Gun",
+            "1974",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Man_with_the_Golden_Gun_(film)"
+        ]
+    },
+    {
+        "id": "film_1062",
+        "question": "How does Scaramanga escape after the pursuit in Thailand in The Man with the Golden Gun?",
+        "answers": [
+            "He hijacks a river ferry",
+            "He rides away on a motorcycle",
+            "His car converts into an aircraft",
+            "He takes Bond's speedboat"
+        ],
+        "correctAnswer": "His car converts into an aircraft",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Man with the Golden Gun",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The Man with the Golden Gun",
+            "1974",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Man_with_the_Golden_Gun_(film)"
+        ]
+    },
+    {
+        "id": "film_1063",
+        "question": "What inadvertently starts Scaramanga's solar equipment while Bond is trying to retrieve the Solex in The Man with the Golden Gun?",
+        "answers": [
+            "Nick Nack turns on the lights",
+            "Bond places the Solex on a charging stand",
+            "Goodnight backs into a control switch",
+            "A guard reconnects the power cable"
+        ],
+        "correctAnswer": "Goodnight backs into a control switch",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Man with the Golden Gun",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The Man with the Golden Gun",
+            "1974",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Man_with_the_Golden_Gun_(film)"
+        ]
+    },
+    {
+        "id": "film_1064",
+        "question": "What design is on Bond's parachute after he skis off the cliff at the start of The Spy Who Loved Me?",
+        "answers": [
+            "The Scottish Saltire",
+            "The Union Flag",
+            "The NATO emblem",
+            "The RAF roundel"
+        ],
+        "correctAnswer": "The Union Flag",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Spy Who Loved Me",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The Spy Who Loved Me",
+            "1977",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Spy_Who_Loved_Me_(film)"
+        ]
+    },
+    {
+        "id": "film_1065",
+        "question": "What ancient site hosts the sound-and-light show where Jaws stalks Fekkesh in The Spy Who Loved Me?",
+        "answers": [
+            "The pyramids at Giza",
+            "The tombs at Petra",
+            "The temples at Luxor",
+            "The ruins at Ephesus"
+        ],
+        "correctAnswer": "The pyramids at Giza",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Spy Who Loved Me",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The Spy Who Loved Me",
+            "1977",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Spy_Who_Loved_Me_(film)"
+        ]
+    },
+    {
+        "id": "film_1066",
+        "question": "What does Jaws do when Stromberg's shark attacks him in The Spy Who Loved Me?",
+        "answers": [
+            "Traps it beneath a grate",
+            "Drives it away with a flare",
+            "Distracts it with food",
+            "Bites it"
+        ],
+        "correctAnswer": "Bites it",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Spy Who Loved Me",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The Spy Who Loved Me",
+            "1977",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Spy_Who_Loved_Me_(film)"
+        ]
+    },
+    {
+        "id": "film_1067",
+        "question": "Where are Bond and Anya found when their superiors finally locate them in The Spy Who Loved Me?",
+        "answers": [
+            "On a Royal Navy submarine",
+            "On the deck of the Liparus",
+            "In Stromberg's flooded laboratory",
+            "In an escape capsule"
+        ],
+        "correctAnswer": "In an escape capsule",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Spy Who Loved Me",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The Spy Who Loved Me",
+            "1977",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Spy_Who_Loved_Me_(film)"
+        ]
+    },
+    {
+        "id": "film_1068",
+        "question": "What has Bond lost his opportunity to put on before he is pushed out of an aircraft in the opening of Moonraker?",
+        "answers": [
+            "His radio headset",
+            "A pressure suit",
+            "A parachute",
+            "A life jacket"
+        ],
+        "correctAnswer": "A parachute",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Moonraker",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Moonraker",
+            "1979",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Moonraker_(film)"
+        ]
+    },
+    {
+        "id": "film_1069",
+        "question": "What does Bond find in Drax's glassworks in Venice that explains the interest in a rare orchid in Moonraker?",
+        "answers": [
+            "A greenhouse where the orchid is being sold",
+            "A laboratory where a toxin is being developed",
+            "A lift that carries orchids into the sewers",
+            "A vault filled with stolen botanical books"
+        ],
+        "correctAnswer": "A laboratory where a toxin is being developed",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Moonraker",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Moonraker",
+            "1979",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Moonraker_(film)"
+        ]
+    },
+    {
+        "id": "film_1070",
+        "question": "How do Bond and Holly make Drax's space station visible to Earth in Moonraker?",
+        "answers": [
+            "They disable its radar-jamming equipment",
+            "They turn on a row of emergency lights",
+            "They move the station out of Earth's shadow",
+            "They open its docking doors"
+        ],
+        "correctAnswer": "They disable its radar-jamming equipment",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Moonraker",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Moonraker",
+            "1979",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Moonraker_(film)"
+        ]
+    },
+    {
+        "id": "film_1071",
+        "question": "What does Jaws do to help Bond and Holly get away from the damaged station in Moonraker?",
+        "answers": [
+            "Releases their shuttle when it is stuck",
+            "Lends them his spacesuit",
+            "Repairs the shuttle's laser by radio",
+            "Moves Dolly into their shuttle"
+        ],
+        "correctAnswer": "Releases their shuttle when it is stuck",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Moonraker",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Moonraker",
+            "1979",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Moonraker_(film)"
+        ]
+    },
+    {
+        "id": "film_1072",
+        "question": "What does Bond do with the wheelchair user who has taken remote control of the helicopter in the opening of For Your Eyes Only?",
+        "answers": [
+            "Leaves him stranded on a church roof",
+            "Handcuffs him inside the helicopter",
+            "Hands him over to General Gogol",
+            "Drops him down an industrial chimney"
+        ],
+        "correctAnswer": "Drops him down an industrial chimney",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "For Your Eyes Only",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: For Your Eyes Only",
+            "1981",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/For_Your_Eyes_Only_(film)"
+        ]
+    },
+    {
+        "id": "film_1073",
+        "question": "How does Melina kill Hector Gonzales after he murders her parents in For Your Eyes Only?",
+        "answers": [
+            "She poisons his drink at the pool",
+            "She rams his car off a mountain road",
+            "She shoots him with a crossbow",
+            "She leaves him aboard a sinking boat"
+        ],
+        "correctAnswer": "She shoots him with a crossbow",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "For Your Eyes Only",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: For Your Eyes Only",
+            "1981",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/For_Your_Eyes_Only_(film)"
+        ]
+    },
+    {
+        "id": "film_1074",
+        "question": "What danger does Kristatos expose Bond and Melina to when he has them dragged behind his boat in For Your Eyes Only?",
+        "answers": [
+            "A minefield and a strong current",
+            "Sharks and sharp coral",
+            "Powerboat propellers and fishing lines",
+            "Freezing water and loose ice"
+        ],
+        "correctAnswer": "Sharks and sharp coral",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "For Your Eyes Only",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: For Your Eyes Only",
+            "1981",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/For_Your_Eyes_Only_(film)"
+        ]
+    },
+    {
+        "id": "film_1075",
+        "question": "What happens to M during the visit to Sir James's home in the 1967 Casino Royale?",
+        "answers": [
+            "He discovers that Le Chiffre is hiding there",
+            "He is killed in the bombardment of the estate",
+            "He retires and hands his orders to Vesper",
+            "He is kidnapped as he leaves the estate"
+        ],
+        "correctAnswer": "He is killed in the bombardment of the estate",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Casino Royale (1967)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Non-Eon James Bond film",
+            "Film: Casino Royale (1967)",
+            "1967",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/23875-CASINO-ROYALE"
+        ]
+    },
+    {
+        "id": "film_1076",
+        "question": "Why does Sir James send Mata Bond to Berlin in the 1967 Casino Royale?",
+        "answers": [
+            "To investigate the spy school linked to Le Chiffre",
+            "To learn baccarat from Evelyn Tremble",
+            "To arrange a meeting with her mother",
+            "To impersonate M's widow at a diplomatic reception"
+        ],
+        "correctAnswer": "To investigate the spy school linked to Le Chiffre",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Casino Royale (1967)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Non-Eon James Bond film",
+            "Film: Casino Royale (1967)",
+            "1967",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/23875-CASINO-ROYALE"
+        ]
+    },
+    {
+        "id": "film_1077",
+        "question": "How is Cooper trained to counter enemy agents in the 1967 Casino Royale?",
+        "answers": [
+            "He teaches him to substitute for a croupier",
+            "He has him take up a post as a psychiatrist",
+            "He asks him to pretend to defect to Dr Noah",
+            "He trains him to resist their attempts at seduction"
+        ],
+        "correctAnswer": "He trains him to resist their attempts at seduction",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Casino Royale (1967)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Non-Eon James Bond film",
+            "Film: Casino Royale (1967)",
+            "1967",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/23875-CASINO-ROYALE"
+        ]
+    }
 ];

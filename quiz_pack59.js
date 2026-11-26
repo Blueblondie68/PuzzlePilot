@@ -93,7 +93,7 @@ const recordingTags = {
     "music_4012": [1985, "barking at airplanes album", "1985 singles", "pop rock"],
     "music_4013": [1980, "take my time album", "1980 singles", "1981 reissue", "pop"],
     "music_4014": [1980, "take my time album", "1980 uk singles", "1981 us singles", "nine to five uk title", "morning train us title"],
-    "music_4015": [1981, "for your eyes only film", "1981 singles", "james bond theme songs", "film songs"],
+    "music_4015": [1981, "for your eyes only film", "1981 singles", "james bond theme songs", "film songs", "Film: For Your Eyes Only", "James Bond franchise", "Bond theme song"],
     "music_4016": [1983, "best kept secret album", "1983 singles", "dance-pop"],
     "music_4017": [1984, "a private heaven album", "1984 singles", "dance-pop"],
     "music_4018": [1984, "a private heaven album", "1984 singles", "prince songwriter", "alexander nevermind pseudonym"],

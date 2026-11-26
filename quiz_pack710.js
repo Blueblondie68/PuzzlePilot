@@ -7555,5 +7555,1055 @@ module.exports = [
                 "Cast",
                 "Source: https://catalog.afi.com/Film/58025-NEVER-SAY-NEVER-AGAIN"
             ]
-        }
+        },
+    {
+        "id": "film_1078",
+        "question": "Why is 009 wearing a clown's costume when he dies in the opening of Octopussy?",
+        "answers": [
+            "He was performing at the British embassy",
+            "He used it to impersonate the auctioneer",
+            "He has been investigating the circus",
+            "He was trying to fool the guards at a US base"
+        ],
+        "correctAnswer": "He has been investigating the circus",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Octopussy",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Octopussy",
+            "1983",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Octopussy"
+        ]
+    },
+    {
+        "id": "film_1079",
+        "question": "What does Q float over Kamal Khan's palace in to help Octopussy's fighters in Octopussy?",
+        "answers": [
+            "A glider",
+            "An airship",
+            "A hot-air balloon",
+            "A helicopter"
+        ],
+        "correctAnswer": "A hot-air balloon",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Octopussy",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Octopussy",
+            "1983",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Octopussy"
+        ]
+    },
+    {
+        "id": "film_1080",
+        "question": "How does Vijay help Bond get away after the backgammon game in Octopussy?",
+        "answers": [
+            "They swim to Octopussy's island",
+            "They flee in a motorised rickshaw",
+            "They hide in a camel caravan",
+            "They ride on the roof of a train"
+        ],
+        "correctAnswer": "They flee in a motorised rickshaw",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Octopussy",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Octopussy",
+            "1983",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Octopussy"
+        ]
+    },
+    {
+        "id": "film_1081",
+        "question": "What happens to Tibbett while Bond is investigating Zorin's stables in A View to a Kill?",
+        "answers": [
+            "May Day kills him in his Rolls-Royce after he leaves to contact MI6",
+            "Zorin imprisons him in the mine",
+            "He escapes to Paris with the racing records",
+            "He is arrested for stealing a horse"
+        ],
+        "correctAnswer": "May Day kills him in his Rolls-Royce after he leaves to contact MI6",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "A View to a Kill",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: A View to a Kill",
+            "1985",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/A_View_to_a_Kill_(film)"
+        ]
+    },
+    {
+        "id": "film_1082",
+        "question": "How does Zorin kill off the investor who refuses to back his plan in A View to a Kill?",
+        "answers": [
+            "Pushes him into the flooded mine",
+            "Has May Day shoot him in the stables",
+            "Leaves him in the burning city hall",
+            "Drops him from the airship"
+        ],
+        "correctAnswer": "Drops him from the airship",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "A View to a Kill",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: A View to a Kill",
+            "1985",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/A_View_to_a_Kill_(film)"
+        ]
+    },
+    {
+        "id": "film_1083",
+        "question": "What work did Zorin's associate Dr Mortner carry out during the war in A View to a Kill?",
+        "answers": [
+            "Experiments on pilots using oxygen masks",
+            "Research on preserving racehorse blood",
+            "Research on making microchips resist radiation",
+            "Experiments on pregnant women using steroids"
+        ],
+        "correctAnswer": "Experiments on pregnant women using steroids",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "A View to a Kill",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: A View to a Kill",
+            "1985",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/A_View_to_a_Kill_(film)"
+        ]
+    },
+    {
+        "id": "film_1084",
+        "question": "How does MI6 initially move Koskov out of Czechoslovakia in The Living Daylights?",
+        "answers": [
+            "In Kara's cello case",
+            "In a diplomatic car through the main checkpoint",
+            "Through a gas pipeline",
+            "On a barge down the Danube"
+        ],
+        "correctAnswer": "Through a gas pipeline",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Living Daylights",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The Living Daylights",
+            "1987",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Living_Daylights"
+        ]
+    },
+    {
+        "id": "film_1085",
+        "question": "How does Necros enter the safe house where Koskov is being debriefed in The Living Daylights?",
+        "answers": [
+            "He poses as a doctor",
+            "He poses as a milkman",
+            "He hides in Koskov's car",
+            "He arrives as a replacement guard"
+        ],
+        "correctAnswer": "He poses as a milkman",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Living Daylights",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The Living Daylights",
+            "1987",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Living_Daylights"
+        ]
+    },
+    {
+        "id": "film_1086",
+        "question": "Which target does Bond destroy with the bomb he drops from the plane in The Living Daylights?",
+        "answers": [
+            "A bridge",
+            "An air traffic control tower",
+            "A warehouse",
+            "A railway tunnel"
+        ],
+        "correctAnswer": "A bridge",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Living Daylights",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The Living Daylights",
+            "1987",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Living_Daylights"
+        ]
+    },
+    {
+        "id": "film_1087",
+        "question": "Who accepts a bribe to help Sanchez escape custody in Licence to Kill?",
+        "answers": [
+            "Ed Killifer",
+            "Dario",
+            "Sharkey",
+            "Milton Krest"
+        ],
+        "correctAnswer": "Ed Killifer",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Licence to Kill",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Licence to Kill",
+            "1989",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Licence_to_Kill"
+        ]
+    },
+    {
+        "id": "film_1088",
+        "question": "Where does Bond discover the operation behind Professor Joe Butcher's television ministry in Licence to Kill?",
+        "answers": [
+            "Under the casino floor",
+            "Aboard Krest's yacht",
+            "In a studio at the airport",
+            "In the meditation institute"
+        ],
+        "correctAnswer": "In the meditation institute",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Licence to Kill",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Licence to Kill",
+            "1989",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Licence_to_Kill"
+        ]
+    },
+    {
+        "id": "film_1089",
+        "question": "How does Bond get away from the Soviet weapons facility in the opening of GoldenEye?",
+        "answers": [
+            "He parachutes into a goods train",
+            "He drives a tank through the gates",
+            "He catches and pulls up a falling aircraft",
+            "He hides aboard the stolen Tiger helicopter"
+        ],
+        "correctAnswer": "He catches and pulls up a falling aircraft",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "GoldenEye",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: GoldenEye",
+            "1995",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/GoldenEye"
+        ]
+    },
+    {
+        "id": "film_1090",
+        "question": "What does Natalya do when the controls are unattended at the Cuban installation in GoldenEye?",
+        "answers": [
+            "Orders the satellite to fire at the control room",
+            "Reprogrammes the satellite to burn up on re-entry",
+            "Sends a fake distress signal to Russia",
+            "Transfers Trevelyan's money back to London"
+        ],
+        "correctAnswer": "Reprogrammes the satellite to burn up on re-entry",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "GoldenEye",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: GoldenEye",
+            "1995",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/GoldenEye"
+        ]
+    },
+    {
+        "id": "film_1091",
+        "question": "How does Bond get into the newspaper's printing works to find Carver's encoder in Tomorrow Never Dies?",
+        "answers": [
+            "He arrives with Admiral Roebuck's security team",
+            "He uses information Paris gives him about the building",
+            "He takes a key from General Chang",
+            "He uses a delivery van supplied by Wai Lin"
+        ],
+        "correctAnswer": "He uses information Paris gives him about the building",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Tomorrow Never Dies",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Tomorrow Never Dies",
+            "1997",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Tomorrow_Never_Dies"
+        ]
+    },
+    {
+        "id": "film_1092",
+        "question": "What obstacle do Bond and Wai Lin jump over on their motorcycle during their escape in Tomorrow Never Dies?",
+        "answers": [
+            "A helicopter",
+            "A tram",
+            "A moving ferry",
+            "An armoured train"
+        ],
+        "correctAnswer": "A helicopter",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Tomorrow Never Dies",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Tomorrow Never Dies",
+            "1997",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Tomorrow_Never_Dies"
+        ]
+    },
+    {
+        "id": "film_1093",
+        "question": "Who frees Wai Lin when she is trapped underwater at the end of Tomorrow Never Dies?",
+        "answers": [
+            "Jack Wade",
+            "Admiral Roebuck",
+            "General Chang",
+            "Bond"
+        ],
+        "correctAnswer": "Bond",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Tomorrow Never Dies",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Tomorrow Never Dies",
+            "1997",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Tomorrow_Never_Dies"
+        ]
+    },
+    {
+        "id": "film_1094",
+        "question": "Which vehicle is used to attack Bond and Elektra on the ski slopes in The World Is Not Enough?",
+        "answers": [
+            "A tank with rubber tracks",
+            "A cable car rigged with remote controls",
+            "A snowmobile suspended beneath a parachute",
+            "An armoured lorry fitted with a snowplough"
+        ],
+        "correctAnswer": "A snowmobile suspended beneath a parachute",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The World Is Not Enough",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The World Is Not Enough",
+            "1999",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_World_Is_Not_Enough"
+        ]
+    },
+    {
+        "id": "film_1095",
+        "question": "What does Bond discover Renard has taken from the former Soviet test site in The World Is Not Enough?",
+        "answers": [
+            "The GoldenEye firing key",
+            "A microchip prototype",
+            "Plutonium",
+            "A case of diamonds"
+        ],
+        "correctAnswer": "Plutonium",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The World Is Not Enough",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The World Is Not Enough",
+            "1999",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_World_Is_Not_Enough"
+        ]
+    },
+    {
+        "id": "film_1096",
+        "question": "What destroys Zukovsky's caviar factory in The World Is Not Enough?",
+        "answers": [
+            "A fire aboard the Q Boat",
+            "Helicopters fitted with banks of saws",
+            "An explosion in a nearby oil pipeline",
+            "A submarine firing through the harbour wall"
+        ],
+        "correctAnswer": "Helicopters fitted with banks of saws",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The World Is Not Enough",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: The World Is Not Enough",
+            "1999",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_World_Is_Not_Enough"
+        ]
+    },
+    {
+        "id": "film_1097",
+        "question": "How does Colonel Moon appear to die in the North Korean pursuit at the start of Die Another Day?",
+        "answers": [
+            "His hovercraft goes over a waterfall",
+            "His helicopter crashes on the border",
+            "His car falls through ice",
+            "His boat collides with a mine"
+        ],
+        "correctAnswer": "His hovercraft goes over a waterfall",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Another Day",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Die Another Day",
+            "2002",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Die_Another_Day"
+        ]
+    },
+    {
+        "id": "film_1098",
+        "question": "How does Bond escape the ice cliff after Icarus cuts through it in Die Another Day?",
+        "answers": [
+            "He climbs up the rigging of Graves's jet",
+            "He radios Jinx to collect him in a helicopter",
+            "He dives under the ice with a breathing set",
+            "He improvises a sail and rides the water on a piece of the car"
+        ],
+        "correctAnswer": "He improvises a sail and rides the water on a piece of the car",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Another Day",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Die Another Day",
+            "2002",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Die_Another_Day"
+        ]
+    },
+    {
+        "id": "film_1099",
+        "question": "What kind of site does Bond pursue Mollaka through in the 2006 Casino Royale?",
+        "answers": [
+            "A naval dockyard",
+            "A train depot",
+            "An abandoned airport",
+            "A construction site"
+        ],
+        "correctAnswer": "A construction site",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Casino Royale (2006)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Casino Royale (2006)",
+            "2006",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://www.007.com/the-films/casino-royale/"
+        ]
+    },
+    {
+        "id": "film_1100",
+        "question": "What causes Vesper to freeze in distress in the shower in the 2006 Casino Royale?",
+        "answers": [
+            "She learns she has been dismissed by the Treasury",
+            "She has just seen Dimitrios attack a man at the airport",
+            "She has just helped Bond survive the fight on the stairs",
+            "She has discovered who owns the Venice building"
+        ],
+        "correctAnswer": "She has just helped Bond survive the fight on the stairs",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Casino Royale (2006)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Casino Royale (2006)",
+            "2006",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://www.007.com/the-films/casino-royale/"
+        ]
+    },
+    {
+        "id": "film_1101",
+        "question": "Who poisons Bond's drink during the poker game in the 2006 Casino Royale?",
+        "answers": [
+            "Vesper Lynd",
+            "Valenka",
+            "Solange Dimitrios",
+            "M"
+        ],
+        "correctAnswer": "Valenka",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Casino Royale (2006)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Casino Royale (2006)",
+            "2006",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://www.007.com/the-films/casino-royale/"
+        ]
+    },
+    {
+        "id": "film_1102",
+        "question": "What clue alerts Bond that the poker winnings have gone missing in the 2006 Casino Royale?",
+        "answers": [
+            "The Treasury tells him the money was never deposited",
+            "Felix finds the empty case beneath the poker table",
+            "Mathis tells him the casino has frozen the money",
+            "Vesper's telephone shows a message from Le Chiffre"
+        ],
+        "correctAnswer": "The Treasury tells him the money was never deposited",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Casino Royale (2006)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Casino Royale (2006)",
+            "2006",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://www.007.com/the-films/casino-royale/"
+        ]
+    },
+    {
+        "id": "film_1103",
+        "question": "How does Bond identify some of the Quantum members during the opera in Quantum of Solace?",
+        "answers": [
+            "He speaks on their channel and photographs people who leave their seats",
+            "He steals their names from a guest book",
+            "He follows them from a private airfield",
+            "He has M intercept the opera programme"
+        ],
+        "correctAnswer": "He speaks on their channel and photographs people who leave their seats",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Quantum of Solace",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Quantum of Solace",
+            "2008",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Quantum_of_Solace"
+        ]
+    },
+    {
+        "id": "film_1104",
+        "question": "What form of transport are Bond and Camille in just before they discover the reservoir in Quantum of Solace?",
+        "answers": [
+            "A motorboat",
+            "A cable car",
+            "A Bolivian army truck",
+            "An old cargo plane"
+        ],
+        "correctAnswer": "An old cargo plane",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Quantum of Solace",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Quantum of Solace",
+            "2008",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Quantum_of_Solace"
+        ]
+    },
+    {
+        "id": "film_1105",
+        "question": "Why does Bond leave Yusef alive at the end of Quantum of Solace?",
+        "answers": [
+            "He believes Yusef saved Vesper's life",
+            "Camille has asked to question Yusef herself",
+            "MI6 is there to take him into custody",
+            "He discovers Yusef is protected under diplomatic immunity"
+        ],
+        "correctAnswer": "MI6 is there to take him into custody",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Quantum of Solace",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Quantum of Solace",
+            "2008",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Quantum_of_Solace"
+        ]
+    },
+    {
+        "id": "film_1106",
+        "question": "Where does Bond follow Patrice before confronting him in Skyfall?",
+        "answers": [
+            "To the control room at the floating casino",
+            "To a Shanghai skyscraper",
+            "To an underground bunker in London",
+            "To Silva's island"
+        ],
+        "correctAnswer": "To a Shanghai skyscraper",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Skyfall",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Skyfall",
+            "2012",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Skyfall_(film)"
+        ]
+    },
+    {
+        "id": "film_1107",
+        "question": "What device helps MI6 find Bond after he is taken to Silva's island in Skyfall?",
+        "answers": [
+            "A microphone in Silva's boat",
+            "A radio transmitter issued by Q",
+            "A tracking device fitted to M's car",
+            "A satellite handset borrowed from Eve"
+        ],
+        "correctAnswer": "A radio transmitter issued by Q",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Skyfall",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Skyfall",
+            "2012",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Skyfall_(film)"
+        ]
+    },
+    {
+        "id": "film_1108",
+        "question": "How does Silva delay Bond in the London Underground in Skyfall?",
+        "answers": [
+            "He causes a train to crash through a gap into the tunnel",
+            "He diverts the train Bond is on to another station",
+            "He impersonates a driver to misdirect Bond",
+            "He closes the station behind an evacuation gate"
+        ],
+        "correctAnswer": "He causes a train to crash through a gap into the tunnel",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Skyfall",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Skyfall",
+            "2012",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Skyfall_(film)"
+        ]
+    },
+    {
+        "id": "film_1109",
+        "question": "Who kidnaps Madeleine from the Alpine clinic in Spectre?",
+        "answers": [
+            "Max Denbigh",
+            "Marco Sciarra",
+            "Ernst Stavro Blofeld",
+            "Mr Hinx"
+        ],
+        "correctAnswer": "Mr Hinx",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Spectre",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Spectre",
+            "2015",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Spectre_(2015_film)"
+        ]
+    },
+    {
+        "id": "film_1110",
+        "question": "What kind of vehicles are carrying Madeleine away from the clinic when Bond gives chase in Spectre?",
+        "answers": [
+            "Aston Martins",
+            "Alfa Romeos",
+            "Land Rovers",
+            "BMW saloons"
+        ],
+        "correctAnswer": "Land Rovers",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Spectre",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Spectre",
+            "2015",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://www.007.com/page/44/?a=lists&c=index&catid=12&m=content"
+        ]
+    },
+    {
+        "id": "film_1111",
+        "question": "What happens to the wings of Bond's aircraft just before he takes out the convoy in Spectre?",
+        "answers": [
+            "He folds them to fit through a barn",
+            "They break off when he lands on a road",
+            "Trees tear them off",
+            "The convoy shoots them off while he is airborne"
+        ],
+        "correctAnswer": "Trees tear them off",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Spectre",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Spectre",
+            "2015",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://www.007.com/page/44/?a=lists&c=index&catid=12&m=content"
+        ]
+    },
+    {
+        "id": "film_1112",
+        "question": "What building does the wrecked aircraft slide through before it hits the convoy in Spectre?",
+        "answers": [
+            "A railway station",
+            "A barn",
+            "A customs post",
+            "A ski lodge"
+        ],
+        "correctAnswer": "A barn",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Spectre",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Spectre",
+            "2015",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://www.007.com/page/44/?a=lists&c=index&catid=12&m=content"
+        ]
+    },
+    {
+        "id": "film_1113",
+        "question": "What happens to Mr Hinx at the end of his fight with Bond and Madeleine aboard the train in Spectre?",
+        "answers": [
+            "He is dragged out of the moving train",
+            "He is locked in a carriage with Blofeld's records",
+            "He jumps off as the train reaches a station",
+            "He is captured by the police at the next stop"
+        ],
+        "correctAnswer": "He is dragged out of the moving train",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Spectre",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Spectre",
+            "2015",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Spectre_(2015_film)"
+        ]
+    },
+    {
+        "id": "film_1114",
+        "question": "Which feature of the DB10 does Bond finally use to escape before his car goes into the Tiber in Spectre?",
+        "answers": [
+            "The winch",
+            "The rear flamethrowers",
+            "The self-driving mode",
+            "The ejector seat"
+        ],
+        "correctAnswer": "The ejector seat",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Spectre",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: Spectre",
+            "2015",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Spectre_(2015_film)"
+        ]
+    },
+    {
+        "id": "film_1115",
+        "question": "Why do Blofeld's guests die at the SPECTRE party in Cuba in No Time to Die?",
+        "answers": [
+            "Nomi spills a vial meant for Safin",
+            "Paloma sabotages the ventilation at Bond's request",
+            "Logan Ash locks the guests inside the building",
+            "Obruchev has changed the weapon's targets"
+        ],
+        "correctAnswer": "Obruchev has changed the weapon's targets",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "No Time to Die",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: No Time to Die",
+            "2021",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/No_Time_to_Die"
+        ]
+    },
+    {
+        "id": "film_1116",
+        "question": "What brings Madeleine into contact with the nanobots intended for Blofeld in No Time to Die?",
+        "answers": [
+            "She picks up a broken vial at the SPECTRE party",
+            "She is exposed to them while treating Logan Ash",
+            "Safin makes her handle a vial before she visits him in prison",
+            "Nomi gives her a sample recovered at the laboratory"
+        ],
+        "correctAnswer": "Safin makes her handle a vial before she visits him in prison",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "No Time to Die",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: No Time to Die",
+            "2021",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/No_Time_to_Die"
+        ]
+    },
+    {
+        "id": "film_1117",
+        "question": "What does the MI6 team do at the end of No Time to Die to commemorate Bond?",
+        "answers": [
+            "Place his gun in Q's workshop",
+            "Raise a glass to him",
+            "Leave flowers at Vesper's grave",
+            "Hold a minute's silence at his childhood home"
+        ],
+        "correctAnswer": "Raise a glass to him",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "No Time to Die",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Eon Productions James Bond series",
+            "Film: No Time to Die",
+            "2021",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/No_Time_to_Die"
+        ]
+    },
+    {
+        "id": "film_1118",
+        "question": "What happens to Bond in the simulated rescue exercise in the opening of Never Say Never Again?",
+        "answers": [
+            "The woman he rescues stabs him",
+            "His parachute does not open",
+            "He leaves the hostage in the wrong building",
+            "He is captured by men in a submarine"
+        ],
+        "correctAnswer": "The woman he rescues stabs him",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Never Say Never Again",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Non-Eon James Bond film",
+            "Film: Never Say Never Again",
+            "1983",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58025-NEVER-SAY-NEVER-AGAIN"
+        ]
+    },
+    {
+        "id": "film_1119",
+        "question": "What does Bond use when Fatima demands a written tribute to herself in Never Say Never Again?",
+        "answers": [
+            "A pen supplied by Q",
+            "A marker from Largo's video game",
+            "A pen borrowed from Domino",
+            "A cigarette lighter from his jacket"
+        ],
+        "correctAnswer": "A pen supplied by Q",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Never Say Never Again",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Non-Eon James Bond film",
+            "Film: Never Say Never Again",
+            "1983",
+            "Action",
+            "Spy Films",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58025-NEVER-SAY-NEVER-AGAIN"
+        ]
+    }
 ];

@@ -18,7 +18,7 @@ const questions = [
       tags: ["1960s", "pop", "engelbert humperdinck", "songs", "british", "singers"], dailyEligible: true },
     { id: "music_0971", category: "Music", question: "Which artist recorded From Russia with Love?",
       answers: ["Matt Monro", "Tom Jones", "Andy Williams", "Engelbert Humperdinck"], correctAnswer: "Matt Monro", difficulty: "Medium",
-      tags: ["1960s", "pop", "matt monro", "songs", "british", "singers", "film soundtracks", "james bond", "from russia with love"], dailyEligible: true },
+      tags: ["1960s", "pop", "matt monro", "songs", "british", "singers", "film soundtracks", "james bond", "from russia with love", "Film: From Russia with Love", "James Bond franchise", "Bond theme song"], dailyEligible: true },
     { id: "music_0972", category: "Music", question: "Which artist recorded Music to Watch Girls By?",
       answers: ["Andy Williams", "Matt Monro", "Perry Como", "Bobby Darin"], correctAnswer: "Andy Williams", difficulty: "Medium",
       tags: ["1960s", "pop", "andy williams", "songs", "american", "singers", "easy listening"], dailyEligible: true },

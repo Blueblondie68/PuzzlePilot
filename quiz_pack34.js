@@ -36,7 +36,7 @@ const quizPack34 = [
       tags: ["1980s", "pop", "a-ha", "songs", "norwegian", "bands", "synthpop", "new wave", "morten harket"], dailyEligible: true },
     { id: "music_1477", category: "Music", question: "Which artist recorded The Living Daylights?",
       answers: ["a-ha", "Duran Duran", "Sheena Easton", "Spandau Ballet"], correctAnswer: "a-ha", difficulty: "Easy",
-      tags: ["1980s", "pop", "a-ha", "james bond", "songs", "norwegian", "bands", "synthpop", "new wave", "morten harket", "bond themes", "film soundtracks", "the living daylights", "1987 films"], dailyEligible: true },
+      tags: ["1980s", "pop", "a-ha", "james bond", "songs", "norwegian", "bands", "synthpop", "new wave", "morten harket", "bond themes", "film soundtracks", "the living daylights", "1987 films", "Film: The Living Daylights", "James Bond franchise", "Bond theme song"], dailyEligible: true },
     { id: "music_1478", category: "Music", question: "Which artist recorded Midnight?",
       answers: ["Nik Kershaw", "Howard Jones", "Paul Young", "Nick Heyward"], correctAnswer: "Nik Kershaw", difficulty: "Hard",
       tags: ["1980s", "pop", "nik kershaw", "songs", "british", "singers", "synthpop", "new wave"], dailyEligible: true },

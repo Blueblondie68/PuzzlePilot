@@ -29,7 +29,7 @@ const recordingTags = {
     "music_6467": [1993, "whats love got to do with it soundtrack", "film soundtracks"],
     "music_6468": [1993, "whats love got to do with it soundtrack", "film soundtracks", "the trammps song cover", "cover versions"],
     "music_6469": [1993, "whats love got to do with it soundtrack", "film soundtracks"],
-    "music_6470": [1995, "goldeneye soundtrack", "james bond", "bond themes", "film soundtracks", "bono", "the edge"],
+    "music_6470": [1995, "goldeneye soundtrack", "james bond", "bond themes", "film soundtracks", "bono", "the edge", "Film: GoldenEye", "James Bond franchise", "Bond theme song"],
     "music_6471": [1996, "wildest dreams album"],
     "music_6472": [1996, "wildest dreams album", "sting featured artist", "guest vocals"],
     "music_6473": [1996, "wildest dreams album", "john waite song cover", "cover versions"],
