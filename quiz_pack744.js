@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 744: Big Fat Quiz family
-// 88 additions, seven existing questions in Pack 220 retained. Annual editions through 2025 and related specials through 2026, with individual programme tags. Includes confirmed winners 2004–2016, later teams, selected episode moments, production, music, and awards. Later winners, complete guest lists, additional award checks, and full-bank semantic duplicate check outstanding. Future 2026 annual edition excluded; January catch-up. Bank unchanged.
+// 160 additions; seven existing questions in Pack 220. Expanded audit covers all six decade specials and both anniversaries, plus annual editions and other specials. Remaining later winners, full compilation contents, complete episode-level guest records and full-bank semantic duplicate check outstanding; no claim of exhaustive coverage. Bank unchanged.
 'use strict';
 const questions = [
   {
@@ -2557,7 +2557,2100 @@ const questions = [
       "Award longlist",
       "Source: https://www.comedy.co.uk/awards/directory/national-comedy-awards-the/2023/"
     ]
+  },
+  {
+    "id": "tv_55340",
+    "question": "Who was Micky Flanagan's teammate in the 2012 edition of The Big Fat Quiz of the 80s?",
+    "answers": [
+      "Sarah Greene",
+      "Carol Vorderman",
+      "Denise van Outen",
+      "Claudia Winkleman"
+    ],
+    "correctAnswer": "Carol Vorderman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55341",
+    "question": "Who was Alan Carr's teammate in the 2013 edition of The Big Fat Quiz of the 80s?",
+    "answers": [
+      "Sarah Greene",
+      "Carol Vorderman",
+      "Jo Brand",
+      "Sue Perkins"
+    ],
+    "correctAnswer": "Sarah Greene",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55342",
+    "question": "Who was Jack Dee's teammate in the 2013 edition of The Big Fat Quiz of the 80s?",
+    "answers": [
+      "Phill Jupitus",
+      "David Mitchell",
+      "Adam Buxton",
+      "Jason Donovan"
+    ],
+    "correctAnswer": "Jason Donovan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55343",
+    "question": "Who was Dara Ó Briain's teammate in the 2012 edition of The Big Fat Quiz of the 90s?",
+    "answers": [
+      "Denise van Outen",
+      "Sarah Millican",
+      "Claudia Winkleman",
+      "Sue Perkins"
+    ],
+    "correctAnswer": "Claudia Winkleman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55344",
+    "question": "Who was Jack Whitehall's teammate in the 2012 edition of The Big Fat Quiz of the 90s?",
+    "answers": [
+      "Claudia Winkleman",
+      "Denise van Outen",
+      "Jo Brand",
+      "Carol Vorderman"
+    ],
+    "correctAnswer": "Denise van Outen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55345",
+    "question": "Who was Jonathan Ross's teammate in the 2013 edition of The Big Fat Quiz of the 90s?",
+    "answers": [
+      "Jo Brand",
+      "Sue Perkins",
+      "Sarah Greene",
+      "Claudia Winkleman"
+    ],
+    "correctAnswer": "Jo Brand",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55346",
+    "question": "Who was Bob Mortimer's teammate in the 2013 edition of The Big Fat Quiz of the 90s?",
+    "answers": [
+      "Lee Mack",
+      "David Mitchell",
+      "Alan Carr",
+      "Richard Ayoade"
+    ],
+    "correctAnswer": "Richard Ayoade",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55347",
+    "question": "Who was Sarah Millican's teammate in the 2012 edition of The Big Fat Quiz of the 00s?",
+    "answers": [
+      "Alan Carr",
+      "Kevin Bridges",
+      "David Mitchell",
+      "Noel Fielding"
+    ],
+    "correctAnswer": "David Mitchell",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 00s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 00s",
+      "Programme: The Big Fat Quiz of the 00s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55348",
+    "question": "Who was Richard Ayoade's teammate in the 2012 edition of The Big Fat Quiz of the 00s?",
+    "answers": [
+      "David Mitchell",
+      "Noel Fielding",
+      "Alan Carr",
+      "Kevin Bridges"
+    ],
+    "correctAnswer": "Noel Fielding",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 00s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 00s",
+      "Programme: The Big Fat Quiz of the 00s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55349",
+    "question": "Who was Jonathan Ross's teammate in the 2020 edition of The Big Fat Quiz of the Decade?",
+    "answers": [
+      "Stacey Solomon",
+      "Claudia Winkleman",
+      "Joe Lycett",
+      "Nish Kumar"
+    ],
+    "correctAnswer": "Stacey Solomon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Decade",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Decade",
+      "Programme: The Big Fat Quiz of the Decade",
+      "Channel 4",
+      "Jimmy Carr",
+      "2020",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55350",
+    "question": "Who was Alan Carr's teammate in the 2020 edition of The Big Fat Quiz of the Decade?",
+    "answers": [
+      "Jonathan Ross",
+      "Nish Kumar",
+      "Stacey Solomon",
+      "Joe Lycett"
+    ],
+    "correctAnswer": "Joe Lycett",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Decade",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Decade",
+      "Programme: The Big Fat Quiz of the Decade",
+      "Channel 4",
+      "Jimmy Carr",
+      "2020",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55351",
+    "question": "Who was Carol Vorderman's teammate in the 2007 edition of The Big Fat Anniversary Quiz?",
+    "answers": [
+      "David Mitchell",
+      "Jack Dee",
+      "Frank Skinner",
+      "Alan Carr"
+    ],
+    "correctAnswer": "Frank Skinner",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Anniversary Quiz",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Anniversary Quiz",
+      "Programme: The Big Fat Anniversary Quiz",
+      "Channel 4",
+      "Jimmy Carr",
+      "2007",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55352",
+    "question": "Who was Richard Ayoade's teammate in the 2007 edition of The Big Fat Anniversary Quiz?",
+    "answers": [
+      "Frank Skinner",
+      "David Mitchell",
+      "Alan Carr",
+      "Jack Dee"
+    ],
+    "correctAnswer": "David Mitchell",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Anniversary Quiz",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Anniversary Quiz",
+      "Programme: The Big Fat Anniversary Quiz",
+      "Channel 4",
+      "Jimmy Carr",
+      "2007",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55353",
+    "question": "Who was Jack Whitehall's teammate in the 2015 edition of The Big Fat Anniversary Quiz?",
+    "answers": [
+      "Claudia Winkleman",
+      "Noel Fielding",
+      "Warwick Davis",
+      "Jonathan Ross"
+    ],
+    "correctAnswer": "Claudia Winkleman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Anniversary Quiz",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Anniversary Quiz",
+      "Programme: The Big Fat Anniversary Quiz",
+      "Channel 4",
+      "Jimmy Carr",
+      "2015",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55354",
+    "question": "Who was Russell Brand's teammate in the 2015 edition of The Big Fat Anniversary Quiz?",
+    "answers": [
+      "Jack Whitehall",
+      "Jonathan Ross",
+      "Warwick Davis",
+      "Noel Fielding"
+    ],
+    "correctAnswer": "Noel Fielding",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Anniversary Quiz",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Anniversary Quiz",
+      "Programme: The Big Fat Anniversary Quiz",
+      "Channel 4",
+      "Jimmy Carr",
+      "2015",
+      "Panellists",
+      "Source: https://ukgameshows.com/ukgs/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55355",
+    "question": "Who posed the closing bonus question on the 2012 Big Fat Quiz of the 80s?",
+    "answers": [
+      "Su Pollard",
+      "Sonia",
+      "Samantha Fox",
+      "Clare Grogan"
+    ],
+    "correctAnswer": "Samantha Fox",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Final question",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55356",
+    "question": "Which vehicle was presented to the joint winners of the 2012 Big Fat Quiz of the 80s?",
+    "answers": [
+      "Reliant Robin",
+      "Sinclair C5",
+      "Ford Sierra",
+      "Austin Metro"
+    ],
+    "correctAnswer": "Sinclair C5",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Prize",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55357",
+    "question": "Which charity concert did the schoolchildren recreate in the 2012 Big Fat Quiz of the 80s?",
+    "answers": [
+      "Live Aid",
+      "Live 8",
+      "Concert for Diana",
+      "The Freddie Mercury Tribute Concert"
+    ],
+    "correctAnswer": "Live Aid",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "School sketch",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55358",
+    "question": "Which music video had featured the mystery guest Bunty Bailey before the 2012 Big Fat Quiz of the 80s?",
+    "answers": [
+      "Thriller",
+      "Rio",
+      "The Reflex",
+      "Take On Me"
+    ],
+    "correctAnswer": "Take On Me",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Mystery guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55359",
+    "question": "Which former Newsround presenter gave a mock news report about Thriller in the 2012 Big Fat Quiz of the 80s?",
+    "answers": [
+      "Michael Buerk",
+      "Jon Snow",
+      "John Craven",
+      "Martyn Lewis"
+    ],
+    "correctAnswer": "John Craven",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Music segment",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55360",
+    "question": "Whose autobiography did Charles Dance read from in the 2012 Big Fat Quiz of the 80s?",
+    "answers": [
+      "The Proclaimers",
+      "The Krankies",
+      "Su Pollard",
+      "Samantha Fox"
+    ],
+    "correctAnswer": "The Krankies",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Reading",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55361",
+    "question": "Which former Treasure Hunt presenter asked a question in the studio on the 2013 Big Fat Quiz of the 80s?",
+    "answers": [
+      "Anneka Rice",
+      "Sarah Greene",
+      "Carol Vorderman",
+      "Wendy Richard"
+    ],
+    "correctAnswer": "Anneka Rice",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55362",
+    "question": "Which famous poster had featured the mystery guest Stelios Havatzios on the 2013 Big Fat Quiz of the 80s?",
+    "answers": [
+      "Tennis Girl",
+      "The Kiss",
+      "Lunch atop a Skyscraper",
+      "L'Enfant"
+    ],
+    "correctAnswer": "L'Enfant",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Mystery guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55363",
+    "question": "Which song did John Craven turn into a news report on the 2013 Big Fat Quiz of the 80s?",
+    "answers": [
+      "Thriller",
+      "Take On Me",
+      "Total Eclipse of the Heart",
+      "The Final Countdown"
+    ],
+    "correctAnswer": "Total Eclipse of the Heart",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Music segment",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55364",
+    "question": "Whose autobiography did Charles Dance read from on the 2013 Big Fat Quiz of the 80s?",
+    "answers": [
+      "Dave Peacock",
+      "Chas Hodges",
+      "Jim Bowen",
+      "Gordon Burns"
+    ],
+    "correctAnswer": "Chas Hodges",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 80s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 80s",
+      "Programme: The Big Fat Quiz of the 80s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Reading",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55365",
+    "question": "Which character asked the final bonus questions in the 2012 Big Fat Quiz of the 90s?",
+    "answers": [
+      "Mr Blobby",
+      "Basil Brush",
+      "Roland Rat",
+      "Sooty"
+    ],
+    "correctAnswer": "Mr Blobby",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Final question",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55366",
+    "question": "Which space telescope's history was re-enacted by the schoolchildren on the 2012 Big Fat Quiz of the 90s?",
+    "answers": [
+      "James Webb",
+      "Kepler",
+      "Spitzer",
+      "Hubble"
+    ],
+    "correctAnswer": "Hubble",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "School sketch",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55367",
+    "question": "Which two Teletubbies had been played by mystery guests John Simmit and Nikky Smedley in the 2012 Big Fat Quiz of the 90s?",
+    "answers": [
+      "Tinky Winky and Po",
+      "Dipsy and Po",
+      "Dipsy and Laa-Laa",
+      "Laa-Laa and Tinky Winky"
+    ],
+    "correctAnswer": "Dipsy and Laa-Laa",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Mystery guests",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55368",
+    "question": "Which newsreader presented a comic report about I'm Too Sexy on the 2012 Big Fat Quiz of the 90s?",
+    "answers": [
+      "John Craven",
+      "Michael Buerk",
+      "Jon Snow",
+      "Martyn Lewis"
+    ],
+    "correctAnswer": "Michael Buerk",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Music segment",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55369",
+    "question": "Which Spice Girl's autobiography was read by Charles Dance on the 2012 Big Fat Quiz of the 90s?",
+    "answers": [
+      "Mel B",
+      "Mel C",
+      "Geri Halliwell",
+      "Emma Bunton"
+    ],
+    "correctAnswer": "Mel B",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Reading",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55370",
+    "question": "Which former Gladiator appeared in the studio on the 2013 Big Fat Quiz of the 90s?",
+    "answers": [
+      "Lightning",
+      "Vogue",
+      "Nightshade",
+      "Jet"
+    ],
+    "correctAnswer": "Jet",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55371",
+    "question": "Which television programme had featured mystery guest Todd Watkins before the 2013 Big Fat Quiz of the 90s?",
+    "answers": [
+      "The Big Breakfast",
+      "TFI Friday",
+      "The Word",
+      "The Tube"
+    ],
+    "correctAnswer": "The Word",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Mystery guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55372",
+    "question": "Which cloned animal was the subject of the children's sketch on the 2013 Big Fat Quiz of the 90s?",
+    "answers": [
+      "Polly the sheep",
+      "Dolly the sheep",
+      "Megan the sheep",
+      "CC the cat"
+    ],
+    "correctAnswer": "Dolly the sheep",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "School sketch",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55373",
+    "question": "Which presenter ended up in the gunge tank borrowed from Noel's House Party on the 2013 Big Fat Quiz of the 90s?",
+    "answers": [
+      "Jimmy Carr",
+      "Jonathan Ross",
+      "Lee Mack",
+      "Richard Ayoade"
+    ],
+    "correctAnswer": "Jimmy Carr",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Final moments",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55374",
+    "question": "Which rapper's autobiography was read by Charles Dance on the 2013 Big Fat Quiz of the 90s?",
+    "answers": [
+      "MC Hammer",
+      "Snoop Dogg",
+      "Coolio",
+      "Vanilla Ice"
+    ],
+    "correctAnswer": "Vanilla Ice",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Reading",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55375",
+    "question": "Which song was the subject of Martyn Lewis's mock report on the 2013 Big Fat Quiz of the 90s?",
+    "answers": [
+      "Macarena",
+      "Wannabe",
+      "Livin' la Vida Loca",
+      "Believe"
+    ],
+    "correctAnswer": "Livin' la Vida Loca",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 90s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 90s",
+      "Programme: The Big Fat Quiz of the 90s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2013",
+      "Music segment",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55376",
+    "question": "Which singing twins presented the closing bonus questions on the Big Fat Quiz of the 00s?",
+    "answers": [
+      "The Veronicas",
+      "The Cheeky Girls",
+      "Jedward",
+      "The Proclaimers"
+    ],
+    "correctAnswer": "The Cheeky Girls",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 00s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 00s",
+      "Programme: The Big Fat Quiz of the 00s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Final question",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55377",
+    "question": "Which Dragons' Den investor posed a live question on the Big Fat Quiz of the 00s?",
+    "answers": [
+      "Duncan Bannatyne",
+      "Peter Jones",
+      "Theo Paphitis",
+      "Deborah Meaden"
+    ],
+    "correctAnswer": "Duncan Bannatyne",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 00s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 00s",
+      "Programme: The Big Fat Quiz of the 00s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55378",
+    "question": "Which game show's cheating scandal did the schoolchildren recreate on the Big Fat Quiz of the 00s?",
+    "answers": [
+      "The Weakest Link",
+      "Deal or No Deal",
+      "The Chase",
+      "Who Wants to Be a Millionaire?"
+    ],
+    "correctAnswer": "Who Wants to Be a Millionaire?",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 00s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 00s",
+      "Programme: The Big Fat Quiz of the 00s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "School sketch",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55379",
+    "question": "Which viral video had made the Davies-Carr family famous before they appeared on the Big Fat Quiz of the 00s?",
+    "answers": [
+      "David After Dentist",
+      "Keyboard Cat",
+      "Charlie Bit My Finger",
+      "Evolution of Dance"
+    ],
+    "correctAnswer": "Charlie Bit My Finger",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 00s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 00s",
+      "Programme: The Big Fat Quiz of the 00s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Mystery guests",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55380",
+    "question": "Which Big Brother announcer read the closing scores on the Big Fat Quiz of the 00s?",
+    "answers": [
+      "Peter Dickson",
+      "Marcus Bentley",
+      "John Sachs",
+      "Dave Lamb"
+    ],
+    "correctAnswer": "Marcus Bentley",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 00s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 00s",
+      "Programme: The Big Fat Quiz of the 00s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Voiceover",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55381",
+    "question": "Whose autobiography did Charles Dance read from on the Big Fat Quiz of the 00s?",
+    "answers": [
+      "Katie Price",
+      "Tara Palmer-Tomkinson",
+      "Jade Goody",
+      "Kerry Katona"
+    ],
+    "correctAnswer": "Katie Price",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 00s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 00s",
+      "Programme: The Big Fat Quiz of the 00s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Reading",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55382",
+    "question": "Which Shaggy song was covered in Jon Snow's comic news report on the Big Fat Quiz of the 00s?",
+    "answers": [
+      "Angel",
+      "Boombastic",
+      "Oh Carolina",
+      "It Wasn't Me"
+    ],
+    "correctAnswer": "It Wasn't Me",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the 00s",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the 00s",
+      "Programme: The Big Fat Quiz of the 00s",
+      "Channel 4",
+      "Jimmy Carr",
+      "2012",
+      "Music segment",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55383",
+    "question": "Which Pokémon appeared for a live question on the January 2020 Big Fat Quiz of the Decade?",
+    "answers": [
+      "Bulbasaur",
+      "Charmander",
+      "Pikachu",
+      "Squirtle"
+    ],
+    "correctAnswer": "Pikachu",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Decade",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Decade",
+      "Programme: The Big Fat Quiz of the Decade",
+      "Channel 4",
+      "Jimmy Carr",
+      "2020",
+      "Guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55384",
+    "question": "Which retailer's festive adverts connected the mystery guests on the January 2020 Big Fat Quiz of the Decade?",
+    "answers": [
+      "Marks & Spencer",
+      "John Lewis",
+      "Tesco",
+      "Sainsbury's"
+    ],
+    "correctAnswer": "John Lewis",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Decade",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Decade",
+      "Programme: The Big Fat Quiz of the Decade",
+      "Channel 4",
+      "Jimmy Carr",
+      "2020",
+      "Mystery guests",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55385",
+    "question": "What rescue was re-enacted by the schoolchildren on the January 2020 Big Fat Quiz of the Decade?",
+    "answers": [
+      "The Chilean miners",
+      "The Thai cave rescue",
+      "The Hudson River landing",
+      "The Costa Concordia rescue"
+    ],
+    "correctAnswer": "The Chilean miners",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Decade",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Decade",
+      "Programme: The Big Fat Quiz of the Decade",
+      "Channel 4",
+      "Jimmy Carr",
+      "2020",
+      "School sketch",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55386",
+    "question": "Which Geordie Shore star dressed as Miley Cyrus to ask the final question on the January 2020 Big Fat Quiz of the Decade?",
+    "answers": [
+      "Vicky Pattison",
+      "Holly Hagan",
+      "Marnie Simpson",
+      "Charlotte Crosby"
+    ],
+    "correctAnswer": "Charlotte Crosby",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Decade",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Decade",
+      "Programme: The Big Fat Quiz of the Decade",
+      "Channel 4",
+      "Jimmy Carr",
+      "2020",
+      "Final question",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55387",
+    "question": "Which Daft Punk song did Jon Snow present as a news item on the January 2020 Big Fat Quiz of the Decade?",
+    "answers": [
+      "One More Time",
+      "Around the World",
+      "Get Lucky",
+      "Harder Better Faster Stronger"
+    ],
+    "correctAnswer": "Get Lucky",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Decade",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Decade",
+      "Programme: The Big Fat Quiz of the Decade",
+      "Channel 4",
+      "Jimmy Carr",
+      "2020",
+      "Music segment",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55388",
+    "question": "Which tennis player's memoir was read by Charles Dance on the Big Fat Quiz of Sport?",
+    "answers": [
+      "Andy Murray",
+      "Andre Agassi",
+      "Roger Federer",
+      "John McEnroe"
+    ],
+    "correctAnswer": "Andre Agassi",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Sport",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Sport",
+      "Programme: The Big Fat Quiz of Sport",
+      "Channel 4",
+      "Jimmy Carr",
+      "2023",
+      "Reading",
+      "sport",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55389",
+    "question": "Which Athena poster had featured mystery guest Fiona Walker before the Big Fat Quiz of Sport?",
+    "answers": [
+      "Tennis Girl",
+      "L'Enfant",
+      "The Kiss",
+      "The Singing Butler"
+    ],
+    "correctAnswer": "Tennis Girl",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Sport",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Sport",
+      "Programme: The Big Fat Quiz of Sport",
+      "Channel 4",
+      "Jimmy Carr",
+      "2023",
+      "Mystery guest",
+      "sport",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55390",
+    "question": "Which football manager's dressing-room confrontation with David Beckham was recreated by the schoolchildren on the Big Fat Quiz of Sport?",
+    "answers": [
+      "Arsène Wenger",
+      "José Mourinho",
+      "Sven-Göran Eriksson",
+      "Alex Ferguson"
+    ],
+    "correctAnswer": "Alex Ferguson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Sport",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Sport",
+      "Programme: The Big Fat Quiz of Sport",
+      "Channel 4",
+      "Jimmy Carr",
+      "2023",
+      "School sketch",
+      "sport",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55391",
+    "question": "Which programme connected mystery guest India Fisher to the 2024 Big Fat Quiz of Telly?",
+    "answers": [
+      "The Weakest Link",
+      "Big Brother",
+      "MasterChef",
+      "Come Dine with Me"
+    ],
+    "correctAnswer": "MasterChef",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Telly",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Telly",
+      "Programme: The Big Fat Quiz of Telly",
+      "Channel 4",
+      "Jimmy Carr",
+      "2024",
+      "Mystery guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55392",
+    "question": "Which programme was associated with mystery guest Jon Briggs on the 2024 Big Fat Quiz of Telly?",
+    "answers": [
+      "Big Brother",
+      "The Weakest Link",
+      "MasterChef",
+      "The Chase"
+    ],
+    "correctAnswer": "The Weakest Link",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Telly",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Telly",
+      "Programme: The Big Fat Quiz of Telly",
+      "Channel 4",
+      "Jimmy Carr",
+      "2024",
+      "Mystery guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55393",
+    "question": "Which X Factor contestant appeared disguised as a Cyberman on the 2024 Big Fat Quiz of Telly?",
+    "answers": [
+      "Chico Slimani",
+      "Honey G",
+      "Wagner",
+      "Rylan Clark"
+    ],
+    "correctAnswer": "Chico Slimani",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Telly",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Telly",
+      "Programme: The Big Fat Quiz of Telly",
+      "Channel 4",
+      "Jimmy Carr",
+      "2024",
+      "Bonus round",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55394",
+    "question": "Which actor's memoir was read by Charles Dance on the 2026 Big Fat Quiz of Telly?",
+    "answers": [
+      "Jack Whitehall",
+      "Mark Hamill",
+      "Levi Roots",
+      "Danny Dyer"
+    ],
+    "correctAnswer": "Danny Dyer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Telly",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Telly",
+      "Programme: The Big Fat Quiz of Telly",
+      "Channel 4",
+      "Jimmy Carr",
+      "2026",
+      "Reading",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55395",
+    "question": "Which celebrity's appearance on I'm a Celebrity was recreated by the schoolchildren on the 2026 Big Fat Quiz of Telly?",
+    "answers": [
+      "Katie Price",
+      "Alison Hammond",
+      "Gillian McKeith",
+      "Carol Vorderman"
+    ],
+    "correctAnswer": "Gillian McKeith",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Telly",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Telly",
+      "Programme: The Big Fat Quiz of Telly",
+      "Channel 4",
+      "Jimmy Carr",
+      "2026",
+      "School sketch",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55396",
+    "question": "Which Reggae Reggae Sauce entrepreneur posed a studio question on the 2026 Big Fat Quiz of Telly?",
+    "answers": [
+      "Peter Jones",
+      "Levi Roots",
+      "Theo Paphitis",
+      "Duncan Bannatyne"
+    ],
+    "correctAnswer": "Levi Roots",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Telly",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Telly",
+      "Programme: The Big Fat Quiz of Telly",
+      "Channel 4",
+      "Jimmy Carr",
+      "2026",
+      "Guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55397",
+    "question": "Which sporting trophy's disappearance and recovery was recreated by schoolchildren on the 2021 Big Fat Quiz of Everything?",
+    "answers": [
+      "The 1966 World Cup trophy",
+      "The FA Cup",
+      "The Ashes urn",
+      "The Rugby World Cup trophy"
+    ],
+    "correctAnswer": "The 1966 World Cup trophy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "Jimmy Carr",
+      "2021",
+      "School sketch",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55398",
+    "question": "Which voiceover artist read film taglines on the 2021 Big Fat Quiz of Everything?",
+    "answers": [
+      "Peter Dickson",
+      "Marcus Bentley",
+      "Jon Briggs",
+      "Redd Pepper"
+    ],
+    "correctAnswer": "Redd Pepper",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "Jimmy Carr",
+      "2021",
+      "Guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55399",
+    "question": "Which famous photographic hoax was recreated by the children on the 2022 Big Fat Quiz of Everything?",
+    "answers": [
+      "The Loch Ness Monster surgeon's photograph",
+      "Piltdown Man",
+      "The Cottingley Fairies",
+      "The Cardiff Giant"
+    ],
+    "correctAnswer": "The Cottingley Fairies",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "Jimmy Carr",
+      "2022",
+      "School sketch",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55400",
+    "question": "Which Clarkson's Farm regular asked a question about animals on the 2022 Big Fat Quiz of Everything?",
+    "answers": [
+      "Gerald Cooper",
+      "Kaleb Cooper",
+      "Charlie Ireland",
+      "Jeremy Clarkson"
+    ],
+    "correctAnswer": "Kaleb Cooper",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "Jimmy Carr",
+      "2022",
+      "Guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55401",
+    "question": "Which TV dating programme connected mystery guests Alex and Sue Tatham on the 2019 Big Fat Quiz of Everything?",
+    "answers": [
+      "Blind Date",
+      "First Dates",
+      "Take Me Out",
+      "Love Island"
+    ],
+    "correctAnswer": "Blind Date",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "Jimmy Carr",
+      "2019",
+      "Mystery guests",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55402",
+    "question": "Which First Dates barman mixed cocktails for a studio question on the 2019 Big Fat Quiz of Everything?",
+    "answers": [
+      "Fred Sirieix",
+      "Sam Conrad",
+      "Gino D'Acampo",
+      "Merlin Griffiths"
+    ],
+    "correctAnswer": "Merlin Griffiths",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Everything",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Everything",
+      "Programme: The Big Fat Quiz of Everything",
+      "Channel 4",
+      "Jimmy Carr",
+      "2019",
+      "Guest",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55403",
+    "question": "Which pair won the 2020 Big Fat Quiz of the Year?",
+    "answers": [
+      "David Mitchell and Maya Jama",
+      "James Acaster and Stacey Solomon",
+      "Richard Ayoade and Joe Lycett",
+      "Noel Fielding and Richard Ayoade"
+    ],
+    "correctAnswer": "Richard Ayoade and Joe Lycett",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "Jimmy Carr",
+      "2020",
+      "Winning team",
+      "Source: https://britquiz.fandom.com/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55404",
+    "question": "Which pair won the 2021 Big Fat Quiz of the Year?",
+    "answers": [
+      "Guz Khan and Sarah Millican",
+      "Jonathan Ross and Judi Love",
+      "Sara Pascoe and James Acaster",
+      "Richard Ayoade and Joe Lycett"
+    ],
+    "correctAnswer": "Jonathan Ross and Judi Love",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "Jimmy Carr",
+      "2021",
+      "Winning team",
+      "Source: https://britquiz.fandom.com/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55405",
+    "question": "Which team won the 2018 Big Fat Quiz of the Year?",
+    "answers": [
+      "Claudia Winkleman and Mo Gilligan",
+      "David Mitchell and Michelle Wolf",
+      "Noel Fielding and Richard Ayoade",
+      "Sarah Millican and David Mitchell"
+    ],
+    "correctAnswer": "Claudia Winkleman and Mo Gilligan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of the Year",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of the Year",
+      "Programme: The Big Fat Quiz of the Year",
+      "Channel 4",
+      "Jimmy Carr",
+      "2018",
+      "Winning team",
+      "Source: https://britquiz.fandom.com/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55406",
+    "question": "Who was Roisin Conaty's teammate on the 2023 edition of The Big Fat Quiz of Sport?",
+    "answers": [
+      "Tom Allen",
+      "Joel Dommett",
+      "John Barnes",
+      "Dane Baptiste"
+    ],
+    "correctAnswer": "Dane Baptiste",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Sport",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Sport",
+      "Programme: The Big Fat Quiz of Sport",
+      "Channel 4",
+      "Jimmy Carr",
+      "2023",
+      "Panellists",
+      "sport",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55407",
+    "question": "Who was Judi Love's teammate on the 2023 edition of The Big Fat Quiz of Sport?",
+    "answers": [
+      "Dane Baptiste",
+      "Tom Allen",
+      "Joel Dommett",
+      "Shaun Wallace"
+    ],
+    "correctAnswer": "Joel Dommett",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Sport",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Sport",
+      "Programme: The Big Fat Quiz of Sport",
+      "Channel 4",
+      "Jimmy Carr",
+      "2023",
+      "Panellists",
+      "sport",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55408",
+    "question": "Who was Russell Howard's teammate on the 2024 edition of The Big Fat Quiz of Telly?",
+    "answers": [
+      "Jamie Demetriou",
+      "Babatunde Aléshé",
+      "Judi Love",
+      "Daisy May Cooper"
+    ],
+    "correctAnswer": "Babatunde Aléshé",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Telly",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Telly",
+      "Programme: The Big Fat Quiz of Telly",
+      "Channel 4",
+      "Jimmy Carr",
+      "2024",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55409",
+    "question": "Who was Judi Love's teammate on the 2024 edition of The Big Fat Quiz of Telly?",
+    "answers": [
+      "Daisy May Cooper",
+      "Natasia Demetriou",
+      "Russell Howard",
+      "Babatunde Aléshé"
+    ],
+    "correctAnswer": "Daisy May Cooper",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Telly",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Telly",
+      "Programme: The Big Fat Quiz of Telly",
+      "Channel 4",
+      "Jimmy Carr",
+      "2024",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55410",
+    "question": "Who was Judi Love's teammate on the 2026 edition of The Big Fat Quiz of Telly?",
+    "answers": [
+      "Susan Wokoma",
+      "Harry Hill",
+      "Sam Campbell",
+      "Joanne McNally"
+    ],
+    "correctAnswer": "Joanne McNally",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Telly",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Telly",
+      "Programme: The Big Fat Quiz of Telly",
+      "Channel 4",
+      "Jimmy Carr",
+      "2026",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
+  },
+  {
+    "id": "tv_55411",
+    "question": "Who was Susan Wokoma's teammate on the 2026 edition of The Big Fat Quiz of Telly?",
+    "answers": [
+      "Tom Allen",
+      "Harry Hill",
+      "Sam Campbell",
+      "Joanne McNally"
+    ],
+    "correctAnswer": "Sam Campbell",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Big Fat Quiz of Telly",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Big Fat Quiz",
+      "The Big Fat Quiz of Telly",
+      "Programme: The Big Fat Quiz of Telly",
+      "Channel 4",
+      "Jimmy Carr",
+      "2026",
+      "Panellists",
+      "Source: https://en.wikipedia.org/wiki/The_Big_Fat_Quiz_of_the_Year"
+    ]
   }
 ];
-if(questions.length!==88||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(55252+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 744 validation failed');
+if(questions.length!==160||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(55252+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 744 validation failed');
 module.exports=questions;
