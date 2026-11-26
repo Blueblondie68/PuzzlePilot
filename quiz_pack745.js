@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 745: Room 101 (British television)
-// 370 additions; seven existing questions in Pack 220. Expanded with early accepted and rejected nominations, later episode nominations, 1999 presenter award, unusual guest moments, bonus choices, charity special and compilation material. Remaining exhaustive item-level/extended edition verification and cross-bank semantic duplicate scan outstanding. Live bank unchanged.
+// 409 additions; seven existing questions in Pack 220. All TV series and regular guest lineups, documented outcomes, accepted/rejected nominations, selected Extra Storage-only items and format differences, awards, production, charity and compilation specials. Replaced two unsubstantiated winner assertions; no claim of exhaustive extended footage or full-bank semantic duplicate verification. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -5692,14 +5692,14 @@ const questions = [
   },
   {
     "id": "tv_55669",
-    "question": "Who was declared the most persuasive guest on Room 101 in the edition featuring Lucy Porter and Judge Rinder?",
+    "question": "Which musician's name was successfully nominated in the Room 101 episode featuring Lucy Porter, Romesh Ranganathan and Judge Rinder?",
     "answers": [
-      "Lucy Porter",
-      "Judge Rinder",
-      "Romesh Ranganathan",
-      "Laurence Fox"
+      "Ed Sheeran",
+      "will.i.am",
+      "Olly Murs",
+      "Calvin Harris"
     ],
-    "correctAnswer": "Romesh Ranganathan",
+    "correctAnswer": "will.i.am",
     "difficulty": "Hard",
     "dailyEligible": true,
     "topic": "Room 101",
@@ -5712,12 +5712,13 @@ const questions = [
       "Room 101",
       "Programme: Room 101",
       "2017",
-      "Lucy Porter",
-      "Judge Rinder",
-      "Romesh Ranganathan",
       "Series 17",
       "Frank Skinner",
-      "Episode Winner",
+      "Successful Nominations",
+      "Music",
+      "Lucy Porter",
+      "Romesh Ranganathan",
+      "Judge Rinder",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
@@ -6250,14 +6251,14 @@ const questions = [
   },
   {
     "id": "tv_55687",
-    "question": "Who was declared the most persuasive guest on Room 101 in the edition featuring Phil Wang and Holly Walsh?",
+    "question": "Which fitness-related nomination was accepted in the last regular Room 101 episode, featuring Stephen Mangan, Holly Walsh and Phil Wang?",
     "answers": [
-      "Stephen Mangan",
-      "Phil Wang",
-      "Holly Walsh",
-      "Alice Levine"
+      "Taking a bath",
+      "Wearing running shoes",
+      "Buying a yoga mat",
+      "Befriending your aerobics instructor"
     ],
-    "correctAnswer": "Stephen Mangan",
+    "correctAnswer": "Befriending your aerobics instructor",
     "difficulty": "Hard",
     "dailyEligible": true,
     "topic": "Room 101",
@@ -6270,12 +6271,12 @@ const questions = [
       "Room 101",
       "Programme: Room 101",
       "2018",
-      "Phil Wang",
-      "Holly Walsh",
-      "Stephen Mangan",
       "Series 18",
       "Frank Skinner",
-      "Episode Winner",
+      "Successful Nominations",
+      "Stephen Mangan",
+      "Holly Walsh",
+      "Phil Wang",
       "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
     ]
   },
@@ -9757,7 +9758,7 @@ const questions = [
   },
   {
     "id": "tv_55806",
-    "question": "Which of these was sent to Room 101 in the edition with Bob Mortimer, Brendan O'Carroll and Rachel Riley?",
+    "question": "Which musical tribute act was banished in Extra Storage with Bob Mortimer, Rachel Riley and Brendan O'Carroll?",
     "answers": [
       "Unripe fruit in supermarkets",
       "Elvis impersonators",
@@ -9783,7 +9784,8 @@ const questions = [
       "Bob Mortimer",
       "Brendan O'Carroll",
       "Rachel Riley",
-      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes",
+      "Extra Storage"
     ]
   },
   {
@@ -10986,7 +10988,7 @@ const questions = [
       "Charity Special",
       "charity",
       "Gruff",
-      "Source: https://www.comedy.co.uk/tv/room_101_2012/features/things_in_room_101/"
+      "Source: https://subsaga.com/bbc/entertainment/bbc-children-in-need/2013/part-1.html"
     ]
   },
   {
@@ -11014,9 +11016,1220 @@ const questions = [
       "Children in Need",
       "Charity Special",
       "charity",
-      "Source: https://en.wikipedia.org/wiki/Children_in_Need_2013"
+      "Source: https://subsaga.com/bbc/entertainment/bbc-children-in-need/2013/part-1.html"
+    ]
+  },
+  {
+    "id": "tv_55848",
+    "question": "In the extended Extra Storage edition of Room 101 with Danny Baker, Fern Britton and Robert Webb, which additional nomination was rejected?",
+    "answers": [
+      "Self-service checkouts",
+      "The news",
+      "Homework",
+      "The Jeremy Kyle Show"
+    ],
+    "correctAnswer": "Self-service checkouts",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Extra Storage",
+      "Rejected Nominations",
+      "Danny Baker",
+      "Fern Britton",
+      "Robert Webb",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55849",
+    "question": "In the extended Extra Storage edition of Room 101 with Gregg Wallace, Sarah Millican and Gabby Logan, which additional nomination was banished?",
+    "answers": [
+      "Barbecues",
+      "Scripted reality shows",
+      "Live music",
+      "Empty chicken Kievs"
+    ],
+    "correctAnswer": "Scripted reality shows",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Gregg Wallace",
+      "Sarah Millican",
+      "Gabby Logan",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55850",
+    "question": "In the extended Extra Storage edition of Room 101 with Alice Cooper, Chris Packham and Chris Tarrant, which additional nomination was banished?",
+    "answers": [
+      "Living statues",
+      "Children's artwork",
+      "Talking during a cinema screening",
+      "Balloon modelling"
+    ],
+    "correctAnswer": "Talking during a cinema screening",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Alice Cooper",
+      "Chris Packham",
+      "Chris Tarrant",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55851",
+    "question": "In the extended Extra Storage edition of Room 101 with Jamelia, Germaine Greer and Ross Noble, which additional nomination was banished?",
+    "answers": [
+      "Budget airlines",
+      "Fun runs",
+      "Baggage carousels",
+      "Airport security"
+    ],
+    "correctAnswer": "Airport security",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Jamelia",
+      "Germaine Greer",
+      "Ross Noble",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55852",
+    "question": "In the extended Extra Storage edition of Room 101 with Hilary Devey, Josh Groban and Alistair McGowan, which additional nomination was banished?",
+    "answers": [
+      "Strangers addressing you as mate",
+      "Football fans",
+      "Tattoos",
+      "Nightclubs"
+    ],
+    "correctAnswer": "Strangers addressing you as mate",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Hilary Devey",
+      "Josh Groban",
+      "Alistair McGowan",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55853",
+    "question": "In the extended Extra Storage edition of Room 101 with Rhod Gilbert, Nick Hewer and Carol Vorderman, which additional nomination was banished?",
+    "answers": [
+      "Tracksuits",
+      "Facebook",
+      "Camping",
+      "Golf"
+    ],
+    "correctAnswer": "Facebook",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Rhod Gilbert",
+      "Nick Hewer",
+      "Carol Vorderman",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55854",
+    "question": "In the extended Extra Storage edition of Room 101 with Larry Lamb, Lauren Laverne and David O'Doherty, which additional nomination was banished?",
+    "answers": [
+      "Music snobs",
+      "Survey callers",
+      "Untidy people",
+      "High fives"
+    ],
+    "correctAnswer": "Untidy people",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Larry Lamb",
+      "Lauren Laverne",
+      "David O'Doherty",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55855",
+    "question": "In the extended Extra Storage edition of Room 101 with John Prescott, Micky Flanagan and Rebecca Front, which additional nomination was banished?",
+    "answers": [
+      "Paying by card in pubs",
+      "Unwanted massages",
+      "Goal celebrations",
+      "Shouting into mobile phones"
+    ],
+    "correctAnswer": "Shouting into mobile phones",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2012",
+      "Series 12",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "John Prescott",
+      "Micky Flanagan",
+      "Rebecca Front",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55856",
+    "question": "In the extended Extra Storage edition of Room 101 with John Craven, Miranda Hart and Reggie Yates, which additional nomination was banished?",
+    "answers": [
+      "Unconventional spellings of familiar names",
+      "Weather forecasts",
+      "False nails",
+      "Yoghurt drinks"
+    ],
+    "correctAnswer": "Unconventional spellings of familiar names",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "John Craven",
+      "Miranda Hart",
+      "Reggie Yates",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55857",
+    "question": "In the extended Extra Storage edition of Room 101 with Victoria Coren, Terry Wogan and Phil Tufnell, which additional nomination was banished?",
+    "answers": [
+      "Rising intonation",
+      "Using party as a verb",
+      "Television clichés",
+      "Health fads"
+    ],
+    "correctAnswer": "Using party as a verb",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Victoria Coren",
+      "Terry Wogan",
+      "Phil Tufnell",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55858",
+    "question": "In the extended Extra Storage edition of Room 101 with Greg Davies, Ben Fogle and Janet Street-Porter, which additional nomination was banished?",
+    "answers": [
+      "Penny coins",
+      "Umbrellas",
+      "Shops with escalators up but only stairs down",
+      "Help packing shopping"
+    ],
+    "correctAnswer": "Shops with escalators up but only stairs down",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Greg Davies",
+      "Ben Fogle",
+      "Janet Street-Porter",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55859",
+    "question": "In the extended Extra Storage edition of Room 101 with Paloma Faith, Jason Manford and Deborah Meaden, which additional nomination was banished?",
+    "answers": [
+      "Overnight success",
+      "Musicals with no dialogue",
+      "Ugg boots",
+      "Poor concert etiquette"
+    ],
+    "correctAnswer": "Poor concert etiquette",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Paloma Faith",
+      "Jason Manford",
+      "Deborah Meaden",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55860",
+    "question": "In the extended Extra Storage edition of Room 101 with Cilla Black, Hugh Dennis and Mel Giedroyc, which additional nomination was banished?",
+    "answers": [
+      "Vending machines",
+      "Rhubarb",
+      "Olive oil",
+      "Las Vegas"
+    ],
+    "correctAnswer": "Vending machines",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Cilla Black",
+      "Hugh Dennis",
+      "Mel Giedroyc",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55861",
+    "question": "In the extended Extra Storage edition of Room 101 with Clive Anderson, Alex Jones and Jack Whitehall, which additional nomination was banished?",
+    "answers": [
+      "Hen parties",
+      "Football spectators leaving before the final whistle",
+      "Taxi drivers who get lost",
+      "Seagulls"
+    ],
+    "correctAnswer": "Football spectators leaving before the final whistle",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Clive Anderson",
+      "Alex Jones",
+      "Jack Whitehall",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55862",
+    "question": "In the extended Extra Storage edition of Room 101 with Jo Brand, Ben Miller and Bill Turnbull, which additional nomination was banished?",
+    "answers": [
+      "Personalised number plates",
+      "Friends of friends",
+      "People unable to distinguish bees from wasps",
+      "Vampire films"
+    ],
+    "correctAnswer": "People unable to distinguish bees from wasps",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Jo Brand",
+      "Ben Miller",
+      "Bill Turnbull",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55863",
+    "question": "In the extended Extra Storage edition of Room 101 with Sheila Hancock, Craig Revel Horwood and Jon Richardson, which additional nomination was banished?",
+    "answers": [
+      "Overweight darts players",
+      "Being addressed as dear",
+      "Wedding speeches",
+      "Critics"
+    ],
+    "correctAnswer": "Critics",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Series 13",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Sheila Hancock",
+      "Craig Revel Horwood",
+      "Jon Richardson",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55864",
+    "question": "In the extended Extra Storage edition of Room 101 with Joan Bakewell, Roisin Conaty and Richard Osman, which additional nomination was banished?",
+    "answers": [
+      "Mispronouncing the letter H",
+      "Gardening",
+      "Selfies",
+      "Chewing gum on pavements"
+    ],
+    "correctAnswer": "Mispronouncing the letter H",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Joan Bakewell",
+      "Roisin Conaty",
+      "Richard Osman",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55865",
+    "question": "In the extended Extra Storage edition of Room 101 with Lee Mack, Dave Myers and Ruby Wax, which additional nomination was rejected?",
+    "answers": [
+      "Wigs",
+      "Newsreaders trying to be funny",
+      "David Blaine",
+      "Celebrity Shark Bait"
+    ],
+    "correctAnswer": "Newsreaders trying to be funny",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Extra Storage",
+      "Rejected Nominations",
+      "Lee Mack",
+      "Dave Myers",
+      "Ruby Wax",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55866",
+    "question": "In the extended Extra Storage edition of Room 101 with Kelly Hoppen, Miles Jupp and Vernon Kay, which additional nomination was rejected?",
+    "answers": [
+      "Littering",
+      "Modern children's games",
+      "People on boats waving to other boats",
+      "Tradespeople in the house"
+    ],
+    "correctAnswer": "People on boats waving to other boats",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Extra Storage",
+      "Rejected Nominations",
+      "Kelly Hoppen",
+      "Miles Jupp",
+      "Vernon Kay",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55867",
+    "question": "In the extended Extra Storage edition of Room 101 with Sara Cox, Aled Jones and Josh Widdicombe, which additional nomination was banished?",
+    "answers": [
+      "Fish bones are a medical myth",
+      "Scorpions",
+      "Death metal",
+      "Mayonnaise"
+    ],
+    "correctAnswer": "Mayonnaise",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Sara Cox",
+      "Aled Jones",
+      "Josh Widdicombe",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55868",
+    "question": "In the extended Extra Storage edition of Room 101 with Charles Dance, Laurence Llewelyn-Bowen and Andi Osho, which additional nomination was banished?",
+    "answers": [
+      "Sticking out one's tongue in photographs",
+      "Hawaiian shirts",
+      "Pebble beaches",
+      "Internet dating"
+    ],
+    "correctAnswer": "Sticking out one's tongue in photographs",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2014",
+      "Series 14",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Charles Dance",
+      "Laurence Llewelyn-Bowen",
+      "Andi Osho",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55869",
+    "question": "In the extended Extra Storage edition of Room 101 with Alexander Armstrong, Henry Blofeld and Kelly Holmes, which additional nomination was banished?",
+    "answers": [
+      "Snoring in public",
+      "Portable toilets",
+      "Cocktail garnishes",
+      "Answerphone messages"
+    ],
+    "correctAnswer": "Portable toilets",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Alexander Armstrong",
+      "Henry Blofeld",
+      "Kelly Holmes",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55870",
+    "question": "In the extended Extra Storage edition of Room 101 with Trevor McDonald, Aisling Bea and David Tennant, which additional nomination was banished?",
+    "answers": [
+      "Sushi",
+      "Pigeons",
+      "Flossing",
+      "Scooters"
+    ],
+    "correctAnswer": "Flossing",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Trevor McDonald",
+      "Aisling Bea",
+      "David Tennant",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55871",
+    "question": "In the extended Extra Storage edition of Room 101 with Noel Fielding, Joanna Scanlan and Ian Wright, which additional nomination was banished?",
+    "answers": [
+      "Grease",
+      "Hangovers",
+      "Strong-smelling cheese",
+      "Pockets in children's clothing"
+    ],
+    "correctAnswer": "Pockets in children's clothing",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Noel Fielding",
+      "Joanna Scanlan",
+      "Ian Wright",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55872",
+    "question": "In the extended Extra Storage edition of Room 101 with Bridget Christie, Robert Peston and Greg James, which additional nomination was banished?",
+    "answers": [
+      "Wimbledon spectators",
+      "The Kardashians",
+      "Babies",
+      "Management jargon"
+    ],
+    "correctAnswer": "Wimbledon spectators",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Bridget Christie",
+      "Robert Peston",
+      "Greg James",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55873",
+    "question": "In the extended Extra Storage edition of Room 101 with Russell Howard, Katherine Parkinson and John Torode, which additional nomination was banished?",
+    "answers": [
+      "Dreams",
+      "Audible stomach rumbles",
+      "Grumpy children",
+      "DJs singing along"
+    ],
+    "correctAnswer": "Audible stomach rumbles",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2016",
+      "Series 16",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Russell Howard",
+      "Katherine Parkinson",
+      "John Torode",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55874",
+    "question": "In the extended Extra Storage edition of Room 101 with Rob Delaney, Laurence Fox and Davina McCall, which additional nomination was banished?",
+    "answers": [
+      "Hand sanitiser",
+      "Twelve-string guitars",
+      "Ribbon hanging loops inside dresses",
+      "Ordering starters"
+    ],
+    "correctAnswer": "Ribbon hanging loops inside dresses",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Rob Delaney",
+      "Laurence Fox",
+      "Davina McCall",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55875",
+    "question": "In the extended Extra Storage edition of Room 101 with Nicola Adams, Frankie Boyle and Diane Morgan, which additional nomination was banished?",
+    "answers": [
+      "Magicians",
+      "Misplacing keys",
+      "Microwaves",
+      "Being woken up"
+    ],
+    "correctAnswer": "Being woken up",
+    "difficulty": "Hard",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2017",
+      "Series 17",
+      "Frank Skinner",
+      "Extra Storage",
+      "Successful Nominations",
+      "Nicola Adams",
+      "Frankie Boyle",
+      "Diane Morgan",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55876",
+    "question": "Which of the 2015 Room 101 episode's two cuts treated Christian Jessen's nomination of German pop music as a rejected choice?",
+    "answers": [
+      "Extra Storage",
+      "The regular half-hour edition",
+      "Both cuts",
+      "Neither cut"
+    ],
+    "correctAnswer": "Extra Storage",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Extra Storage",
+      "Christian Jessen",
+      "Format Differences",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55877",
+    "question": "Which themed round joined modern life and the wildcard round in the extended Room 101 edition with Alexander Armstrong, Kelly Holmes and Henry Blofeld?",
+    "answers": [
+      "Sport",
+      "Food and drink",
+      "Childhood",
+      "Travel"
+    ],
+    "correctAnswer": "Food and drink",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Frank Skinner",
+      "Extra Storage",
+      "Rounds",
+      "Source: https://www.tvmaze.com/shows/20469/room-101-extra-storage/episodeguide"
+    ]
+  },
+  {
+    "id": "tv_55878",
+    "question": "Which sports-related interruption caused the 2015 Room 101 episode featuring Victoria Coren Mitchell, Warwick Davis and Christian Jessen to be postponed?",
+    "answers": [
+      "Wimbledon",
+      "The Grand National",
+      "FA Cup football",
+      "The Open Championship"
+    ],
+    "correctAnswer": "FA Cup football",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Scheduling",
+      "Football",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55879",
+    "question": "Which programme's live broadcast led to the Room 101 episode featuring Rachel Riley, Bob Mortimer and Brendan O'Carroll being brought forward in 2015?",
+    "answers": [
+      "Casualty",
+      "Holby City",
+      "The One Show",
+      "EastEnders"
+    ],
+    "correctAnswer": "EastEnders",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2015",
+      "Series 15",
+      "Scheduling",
+      "EastEnders",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55880",
+    "question": "Which charity television event displaced Room 101's last regular episode from its original March 2018 slot?",
+    "answers": [
+      "Sport Relief",
+      "Children in Need",
+      "Comic Relief",
+      "Text Santa"
+    ],
+    "correctAnswer": "Sport Relief",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2018",
+      "Series 18",
+      "Scheduling",
+      "Sport Relief",
+      "charity",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55881",
+    "question": "What physical trick did Paul Merton play on Ian Hislop at the very end of his final Room 101 episode?",
+    "answers": [
+      "Swapped their microphones",
+      "Revealed Hislop on the reverse of his own cardboard cutout",
+      "Pulled a surprise guest out of the chute",
+      "Hid the lever beneath Hislop's chair"
+    ],
+    "correctAnswer": "Revealed Hislop on the reverse of his own cardboard cutout",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2007",
+      "Series 11",
+      "Paul Merton",
+      "Ian Hislop",
+      "Finale",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55882",
+    "question": "Which city did Spike Milligan nominate in a Room 101 segment illustrated with a model of HMS Victory?",
+    "answers": [
+      "Plymouth",
+      "Southampton",
+      "Portsmouth",
+      "Bristol"
+    ],
+    "correctAnswer": "Portsmouth",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1999",
+      "Series 4",
+      "Paul Merton",
+      "Spike Milligan",
+      "Episode Moments",
+      "Source: https://en.wikipedia.org/wiki/List_of_Room_101_episodes"
+    ]
+  },
+  {
+    "id": "tv_55883",
+    "question": "Which celebrity's cat, Chairman Miaow, did Frank Skinner try unsuccessfully to banish as a Room 101 guest?",
+    "answers": [
+      "Rob Newman",
+      "Alistair McGowan",
+      "Lee Mack",
+      "David Baddiel"
+    ],
+    "correctAnswer": "David Baddiel",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1995",
+      "Series 2",
+      "Nick Hancock",
+      "Frank Skinner",
+      "Rejected Nominations",
+      "Source: https://www.comedy.co.uk/tv/room_101_2012/"
+    ]
+  },
+  {
+    "id": "tv_55884",
+    "question": "Who won Best Female TV Comic at the 2013 British Comedy Awards, ahead of Room 101 nominee Miranda Hart?",
+    "answers": [
+      "Nina Conti",
+      "Sarah Millican",
+      "Jo Brand",
+      "Katherine Ryan"
+    ],
+    "correctAnswer": "Nina Conti",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Awards",
+      "British Comedy Awards",
+      "Miranda Hart",
+      "Nina Conti",
+      "Source: https://www.channel4.com/press/news/2013-british-comedy-award-winners-announced"
+    ]
+  },
+  {
+    "id": "tv_55885",
+    "question": "Which sport did young contestant Gruff discuss as his particular talent during the Room 101 Children in Need special?",
+    "answers": [
+      "Badminton",
+      "Swimming",
+      "Football",
+      "Running"
+    ],
+    "correctAnswer": "Swimming",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "2013",
+      "Children in Need",
+      "Charity Special",
+      "charity",
+      "Source: https://subsaga.com/bbc/entertainment/bbc-children-in-need/2013/part-1.html"
+    ]
+  },
+  {
+    "id": "tv_55886",
+    "question": "Which radio programme's feature supplied themed songs when guests successfully persuaded Nick Hancock to banish something in the original Room 101 format?",
+    "answers": [
+      "Desert Island Discs",
+      "Our Tune",
+      "Radio Room 101",
+      "Pick of the Pops"
+    ],
+    "correctAnswer": "Radio Room 101",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Room 101",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy Panel Shows",
+      "Room 101",
+      "Programme: Room 101",
+      "1992",
+      "Radio Origins",
+      "Nick Hancock",
+      "Source: https://www.ukgameshows.com/ukgs/Room_101"
     ]
   }
 ];
-if(questions.length!==370||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(55478+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 745 validation failed');
+if(questions.length!==409||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(55478+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 745 validation failed');
 module.exports=questions;
