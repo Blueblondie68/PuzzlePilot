@@ -4328,5 +4328,295 @@ module.exports = [
                 "Storyline",
                 "Source: https://catalog.afi.com/Film/58401-BACK-TO-THE-FUTURE-PART-III"
             ]
-        }
+        },
+    {
+        "id": "film_5488",
+        "question": "In Back to the Future, who is working at Lou's café in 1955 before becoming mayor of Hill Valley?",
+        "answers": [
+            "Goldie Wilson",
+            "Lou Caruthers",
+            "Sam Baines",
+            "Milton Baines"
+        ],
+        "correctAnswer": "Goldie Wilson",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Back to the Future",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future",
+            "1985",
+            "Science Fiction",
+            "Time Travel",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/55763-BACK-TOTHEFUTURE"
+        ]
+    },
+    {
+        "id": "film_5489",
+        "question": "In Back to the Future, why do the Libyan gunmen come after Doc at the mall?",
+        "answers": [
+            "He recognised them on the news and called the police",
+            "He accidentally took their van keys",
+            "He used their garage to store the DeLorean",
+            "He took their plutonium and gave them a fake bomb"
+        ],
+        "correctAnswer": "He took their plutonium and gave them a fake bomb",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Back to the Future",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future",
+            "1985",
+            "Science Fiction",
+            "Time Travel",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/55763-BACK-TOTHEFUTURE"
+        ]
+    },
+    {
+        "id": "film_5490",
+        "question": "In Back to the Future, what does young Lorraine say kissing Marty feels like?",
+        "answers": [
+            "Kissing a stranger",
+            "Kissing someone who is leaving for good",
+            "Kissing her brother",
+            "Kissing someone she has dreamed about"
+        ],
+        "correctAnswer": "Kissing her brother",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Back to the Future",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future",
+            "1985",
+            "Science Fiction",
+            "Time Travel",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/55763-BACK-TOTHEFUTURE"
+        ]
+    },
+    {
+        "id": "film_5491",
+        "question": "In Back to the Future, who plays Goldie Wilson as both a young café worker and Hill Valley's mayor?",
+        "answers": [
+            "Courtney Gains",
+            "Donald Fullilove",
+            "J. J. Cohen",
+            "Billy Zane"
+        ],
+        "correctAnswer": "Donald Fullilove",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Back to the Future",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future",
+            "1985",
+            "Science Fiction",
+            "Time Travel",
+            "Cast",
+            "Character: Goldie Wilson",
+            "Actor: Donald Fullilove",
+            "Source: https://catalog.afi.com/Film/55763-BACK-TOTHEFUTURE"
+        ]
+    },
+    {
+        "id": "film_5492",
+        "question": "In Back to the Future, who was the director of photography?",
+        "answers": [
+            "Allen Daviau",
+            "Dean Cundey",
+            "Janusz Kamiński",
+            "Douglas Slocombe"
+        ],
+        "correctAnswer": "Dean Cundey",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Back to the Future",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future",
+            "1985",
+            "Science Fiction",
+            "Time Travel",
+            "Production",
+            "Source: https://catalog.afi.com/Film/55763-BACK-TOTHEFUTURE"
+        ]
+    },
+    {
+        "id": "film_5493",
+        "question": "In Back to the Future Part II, how does Doc know when the rain in 2015 is about to stop?",
+        "answers": [
+            "The weather service has scheduled the time",
+            "He spots sunlight reflected in the DeLorean",
+            "Marty Jr. tells him the forecast",
+            "He checks the police radio"
+        ],
+        "correctAnswer": "The weather service has scheduled the time",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Back to the Future Part II",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future Part II",
+            "1989",
+            "Science Fiction",
+            "Time Travel",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/57897-BACK-TO-THE-FUTURE-PART-II"
+        ]
+    },
+    {
+        "id": "film_5494",
+        "question": "In Back to the Future Part II, what does Marty use to burn the almanac after taking it back from Biff?",
+        "answers": [
+            "A kitchen stove at Doc's house",
+            "A fireplace at Lorraine's house",
+            "A furnace at the school",
+            "A fire in an outdoor barrel"
+        ],
+        "correctAnswer": "A fire in an outdoor barrel",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Back to the Future Part II",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future Part II",
+            "1989",
+            "Science Fiction",
+            "Time Travel",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/57897-BACK-TO-THE-FUTURE-PART-II"
+        ]
+    },
+    {
+        "id": "film_5495",
+        "question": "In Back to the Future Part II, who designed the film's sets, including the different versions of Hill Valley?",
+        "answers": [
+            "Lawrence G. Paull",
+            "James D. Bissell",
+            "Rick Carter",
+            "Norman Reynolds"
+        ],
+        "correctAnswer": "Rick Carter",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Back to the Future Part II",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future Part II",
+            "1989",
+            "Science Fiction",
+            "Time Travel",
+            "Production",
+            "Source: https://catalog.afi.com/Film/57897-BACK-TO-THE-FUTURE-PART-II"
+        ]
+    },
+    {
+        "id": "film_5496",
+        "question": "In Back to the Future Part III, what object does Marty fling to stop Buford shooting Doc at the town festival?",
+        "answers": [
+            "A horseshoe",
+            "A wooden plate",
+            "A pie tin",
+            "A sheriff's badge"
+        ],
+        "correctAnswer": "A pie tin",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Back to the Future Part III",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future Part III",
+            "1990",
+            "Science Fiction",
+            "Time Travel",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/58401"
+        ]
+    },
+    {
+        "id": "film_5497",
+        "question": "In Back to the Future Part III, what does Marty learn happened to Seamus's brother Martin after he was goaded into a fight?",
+        "answers": [
+            "He was imprisoned",
+            "He was killed",
+            "He fled to California",
+            "He lost the family farm"
+        ],
+        "correctAnswer": "He was killed",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Back to the Future Part III",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future Part III",
+            "1990",
+            "Science Fiction",
+            "Time Travel",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/58401"
+        ]
+    },
+    {
+        "id": "film_5498",
+        "question": "In Back to the Future Part III, what brings the marshal back just after Marty wins the showdown?",
+        "answers": [
+            "He has come to arrest Buford for a stagecoach robbery",
+            "He has come to take Marty to the station for carrying a pistol",
+            "He has arrived to claim a debt from Doc",
+            "He has come to arrest Clara for jumping off the train"
+        ],
+        "correctAnswer": "He has come to arrest Buford for a stagecoach robbery",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Back to the Future Part III",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future Part III",
+            "1990",
+            "Science Fiction",
+            "Time Travel",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/58401"
+        ]
+    },
+    {
+        "id": "film_5499",
+        "question": "In Back to the Future Part III, which California county hosted the purpose-built 1885 Hill Valley set?",
+        "answers": [
+            "Marin County",
+            "Kern County",
+            "Santa Barbara County",
+            "Tuolumne County"
+        ],
+        "correctAnswer": "Tuolumne County",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Back to the Future Part III",
+        "category": "Film",
+        "tags": [
+            "Back to the Future franchise",
+            "Film: Back to the Future Part III",
+            "1990",
+            "Science Fiction",
+            "Time Travel",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/58401"
+        ]
+    }
 ];
