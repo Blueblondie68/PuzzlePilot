@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 787: The Traitors UK series 1 and format origins
-// 107 additions; seven existing facts in Pack 222 retained. All 12 missions, all 22 contestants represented, eliminations, recruitment, shields, relationships, finale, production and 2023 awards. Detailed scene and mission data from secondary episode summaries; not a full footage review. Later series and celebrity editions pending separate packs. Legacy packs 1–20 and 209–222 checked for title references; full-bank semantic and ID scan outstanding. Live bank unchanged.
+// Revised 27 November 2026: 126 questions. Existing 22 contestants, twelve missions, recruitment, elimination, relationships, finale, production and awards retained. Added six missing mission totals (all twelve reconcile to £101,050), mission mechanics, endgame voting and 2023 RTS and Televisual awards. New source facts reviewed using published mission and vote tables, contemporary finale reporting and official award records. Recent packs checked for ID collisions; full-bank semantic and ID verification and full footage review remain outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -197,7 +197,7 @@ const questions = [
   },
   {
     "id": "tv_58276",
-    "question": "Which trio did Claudia select as the original Traitors in the first UK series?",
+    "question": "The Traitors (UK), series one: Which trio did Claudia select as the original Traitors in the first UK series?",
     "answers": [
       "Amanda, Alex and Wilf",
       "Alyssa, Maddy and Aaron",
@@ -226,7 +226,7 @@ const questions = [
   },
   {
     "id": "tv_58277",
-    "question": "In which part of the castle did the original Traitors hold their secret meetings in series one?",
+    "question": "The Traitors (UK), series one: In which part of the castle did the original Traitors hold their secret meetings in series one?",
     "answers": [
       "The turret",
       "The chapel",
@@ -284,7 +284,7 @@ const questions = [
   },
   {
     "id": "tv_58279",
-    "question": "Which contestant admitted having a crush on Alex before learning about her relationship with Tom?",
+    "question": "The Traitors (UK), series one: Which contestant admitted having a crush on Alex before learning about her relationship with Tom?",
     "answers": [
       "Aaron",
       "Ivan",
@@ -371,7 +371,7 @@ const questions = [
   },
   {
     "id": "tv_58282",
-    "question": "Who left the round table temporarily during the vote that eliminated Imran?",
+    "question": "The Traitors (UK), series one: Who left the round table temporarily during the vote that eliminated Imran?",
     "answers": [
       "Rayan",
       "Aaron",
@@ -487,7 +487,7 @@ const questions = [
   },
   {
     "id": "tv_58286",
-    "question": "Whose deciding vote broke the six-vote tie between Ivan and Alex?",
+    "question": "The Traitors (UK), series one: Whose deciding vote broke the six-vote tie between Ivan and Alex?",
     "answers": [
       "Alyssa",
       "Amanda",
@@ -545,7 +545,7 @@ const questions = [
   },
   {
     "id": "tv_58288",
-    "question": "Which room first offered a shield to players after the church mission?",
+    "question": "The Traitors (UK), series one: Which room first offered a shield to players after the church mission?",
     "answers": [
       "The Turret",
       "The Library",
@@ -719,7 +719,7 @@ const questions = [
   },
   {
     "id": "tv_58294",
-    "question": "Who was offered £3,000 to leave the game during that dinner party?",
+    "question": "The Traitors (UK), series one: Who was offered £3,000 to leave the game during that dinner party?",
     "answers": [
       "Meryl",
       "Maddy",
@@ -748,7 +748,7 @@ const questions = [
   },
   {
     "id": "tv_58295",
-    "question": "What did Maddy do when offered the money to leave the game?",
+    "question": "The Traitors (UK), series one: What did Maddy do when offered the money to leave the game?",
     "answers": [
       "Accepted and left",
       "Gave the money to Wilf",
@@ -835,7 +835,7 @@ const questions = [
   },
   {
     "id": "tv_58298",
-    "question": "Who did Amanda choose as her most trusted player at the dinner party before later turning against him?",
+    "question": "The Traitors (UK), series one: Who did Amanda choose as her most trusted player at the dinner party before later turning against him?",
     "answers": [
       "Aaron",
       "Theo",
@@ -864,7 +864,7 @@ const questions = [
   },
   {
     "id": "tv_58299",
-    "question": "What happened to the shield hidden among the valuables in the laser mission?",
+    "question": "The Traitors (UK), series one: What happened to the shield hidden among the valuables in the laser mission?",
     "answers": [
       "Wilf collected it",
       "Aaron broke it",
@@ -893,7 +893,7 @@ const questions = [
   },
   {
     "id": "tv_58300",
-    "question": "Who joined Wilf as a Traitor after Amanda was banished?",
+    "question": "The Traitors (UK), series one: Who joined Wilf as a Traitor after Amanda was banished?",
     "answers": [
       "Aaron",
       "Hannah",
@@ -922,7 +922,7 @@ const questions = [
   },
   {
     "id": "tv_58301",
-    "question": "What alternative did Kieran face if he declined Wilf's recruitment?",
+    "question": "The Traitors (UK), series one: What alternative did Kieran face if he declined Wilf's recruitment?",
     "answers": [
       "Immediate elimination by the Traitor",
       "Losing half the prize fund",
@@ -951,7 +951,7 @@ const questions = [
   },
   {
     "id": "tv_58302",
-    "question": "Which five contestants reached the first UK Traitors final?",
+    "question": "The Traitors (UK), series one: Which five contestants reached the first UK Traitors final?",
     "answers": [
       "Aaron, Maddy, Meryl, Wilf and Kieran",
       "Aaron, Hannah, Meryl, Wilf and Kieran",
@@ -980,7 +980,7 @@ const questions = [
   },
   {
     "id": "tv_58303",
-    "question": "Whose name was Kieran's famous parting gift to the other finalists?",
+    "question": "The Traitors (UK), series one: Whose name was Kieran's famous parting gift to the other finalists?",
     "answers": [
       "Aaron",
       "Meryl",
@@ -1649,7 +1649,7 @@ const questions = [
   },
   {
     "id": "tv_58326",
-    "question": "Which original Traitor was banished in episode ten of the first UK series?",
+    "question": "The Traitors (UK), series one: Which original Traitor was banished in episode ten of the first UK series?",
     "answers": [
       "John McManus",
       "Amanda Lovett",
@@ -1769,7 +1769,7 @@ const questions = [
   },
   {
     "id": "tv_58330",
-    "question": "Who was the last Traitor eliminated at the firepit in the first UK series?",
+    "question": "The Traitors (UK), series one: Who was the last Traitor eliminated at the firepit in the first UK series?",
     "answers": [
       "Rayan Rachedi",
       "Wilfred Webster",
@@ -2471,7 +2471,7 @@ const questions = [
   },
   {
     "id": "tv_58354",
-    "question": "Which two finalists jumped from a helicopter into the water during the first UK Traitors final?",
+    "question": "The Traitors (UK), series one: Which two finalists jumped from a helicopter into the water during the first UK Traitors final?",
     "answers": [
       "Meryl and Wilf",
       "Aaron and Hannah",
@@ -3127,7 +3127,559 @@ const questions = [
       "Meryl Williams",
       "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
     ]
+  },
+  {
+    "id": "tv_59907",
+    "question": "In series one of The Traitors (UK), how much did the chapel bell mission add to the prize fund?",
+    "answers": [
+      "£8,000",
+      "£6,000",
+      "£9,000",
+      "£10,000"
+    ],
+    "correctAnswer": "£8,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 2",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59908",
+    "question": "In series one of The Traitors (UK), how much was banked in the revolving-wheel mission?",
+    "answers": [
+      "£7,500",
+      "£8,700",
+      "£8,000",
+      "£9,500"
+    ],
+    "correctAnswer": "£8,700",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 3",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59909",
+    "question": "In series one of The Traitors (UK), how much did the sheep-identification mission earn?",
+    "answers": [
+      "£5,000",
+      "£7,000",
+      "£8,000",
+      "£10,000"
+    ],
+    "correctAnswer": "£8,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 4",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59910",
+    "question": "In series one of The Traitors (UK), how much was added to the pot in the masked-congregation mission?",
+    "answers": [
+      "£4,000",
+      "£6,000",
+      "£10,000",
+      "£8,000"
+    ],
+    "correctAnswer": "£8,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 5",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59911",
+    "question": "In series one of The Traitors (UK), how much did the whisky-barrel mission earn?",
+    "answers": [
+      "£8,400",
+      "£7,200",
+      "£9,000",
+      "£10,000"
+    ],
+    "correctAnswer": "£8,400",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 7",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59912",
+    "question": "In series one of The Traitors (UK), how much did the driving-route quiz earn in total?",
+    "answers": [
+      "£2,000",
+      "£6,000",
+      "£4,000",
+      "£8,000"
+    ],
+    "correctAnswer": "£6,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 9",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59913",
+    "question": "In series one of The Traitors (UK), how much was each correct matching answer worth in the revolving-wheel challenge?",
+    "answers": [
+      "£200",
+      "£300",
+      "£100",
+      "£500"
+    ],
+    "correctAnswer": "£100",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 3",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59914",
+    "question": "In series one of The Traitors (UK), how much was each successfully rescued player worth in the buried-alive challenge?",
+    "answers": [
+      "£500",
+      "£1,000",
+      "£2,000",
+      "£1,500"
+    ],
+    "correctAnswer": "£1,500",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 6",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59915",
+    "question": "In series one of The Traitors (UK), how many of the five Armoury barrels were delivered to the distillery?",
+    "answers": [
+      "Three",
+      "One",
+      "Two",
+      "Five"
+    ],
+    "correctAnswer": "Three",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 7",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59916",
+    "question": "In series one of The Traitors (UK), which three players earned a visit to the Armoury after the whisky-barrel mission?",
+    "answers": [
+      "Aaron, Hannah and Kieran",
+      "Andrea, Fay and Theo",
+      "Maddy, Meryl and Wilfred",
+      "Alex, Amanda and Tom"
+    ],
+    "correctAnswer": "Andrea, Fay and Theo",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 7",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59917",
+    "question": "In series one of The Traitors (UK), which colour team was the only one to escape the fishing cabin within the time limit?",
+    "answers": [
+      "Blue",
+      "Red",
+      "Green",
+      "Yellow"
+    ],
+    "correctAnswer": "Green",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 8",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59918",
+    "question": "In series one of The Traitors (UK), which two players initially voted to continue banishing after Kieran's departure?",
+    "answers": [
+      "Hannah and Meryl",
+      "Meryl and Wilfred",
+      "Aaron and Wilfred",
+      "Aaron and Hannah"
+    ],
+    "correctAnswer": "Aaron and Hannah",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 12",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59919",
+    "question": "In series one of The Traitors (UK), whom did Wilfred vote to banish at his final fire-pit ballot?",
+    "answers": [
+      "Aaron",
+      "Hannah",
+      "Meryl",
+      "Kieran"
+    ],
+    "correctAnswer": "Aaron",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 12",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_1"
+    ]
+  },
+  {
+    "id": "tv_59920",
+    "question": "In series one of The Traitors (UK), approximately how much did each of the three winning Faithfuls receive?",
+    "answers": [
+      "£25,263",
+      "£33,683",
+      "£47,300",
+      "£50,525"
+    ],
+    "correctAnswer": "£33,683",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Episode 12",
+      "Source: https://www.the-independent.com/arts-entertainment/tv/news/traitors-finale-recap-wilf-hannah-b2250485.html"
+    ]
+  },
+  {
+    "id": "tv_59921",
+    "question": "In series one of The Traitors (UK), which programme category did the first UK series win at the 2023 RTS Programme Awards?",
+    "answers": [
+      "Comedy Entertainment",
+      "Formatted Popular Factual",
+      "Entertainment",
+      "Live Event"
+    ],
+    "correctAnswer": "Entertainment",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Awards",
+      "Source: https://rts.org.uk/article/winners-announced-rts-programme-awards-2023"
+    ]
+  },
+  {
+    "id": "tv_59922",
+    "question": "In series one of The Traitors (UK), which individual award did Claudia Winkleman win at the 2023 RTS Programme Awards for hosting the series?",
+    "answers": [
+      "Presenter",
+      "Comedy Performance",
+      "Breakthrough Award",
+      "Entertainment Performance"
+    ],
+    "correctAnswer": "Entertainment Performance",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Awards",
+      "Source: https://rts.org.uk/article/winners-announced-rts-programme-awards-2023"
+    ]
+  },
+  {
+    "id": "tv_59923",
+    "question": "In series one of The Traitors (UK), which category did Mathieu Weekes and Bizibot Productions win at the 2023 RTS Craft and Design Awards for the series?",
+    "answers": [
+      "Production Design – Non-scripted",
+      "Production Design – Scripted",
+      "Multicamera Work",
+      "Sound – Non-scripted"
+    ],
+    "correctAnswer": "Production Design – Non-scripted",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Awards",
+      "Source: https://rts.org.uk/article/winners-announced-rts-craft-design-awards-2023"
+    ]
+  },
+  {
+    "id": "tv_59924",
+    "question": "In series one of The Traitors (UK), which craft category brought James Tinsley a nomination for the programme at the 2023 RTS Craft and Design Awards?",
+    "answers": [
+      "Photography – Scripted",
+      "Lighting for Multicamera",
+      "Effects – VFX",
+      "Picture Enhancement"
+    ],
+    "correctAnswer": "Lighting for Multicamera",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Awards",
+      "Source: https://rts.org.uk/article/winners-announced-rts-craft-design-awards-2023"
+    ]
+  },
+  {
+    "id": "tv_59925",
+    "question": "In series one of The Traitors (UK), which category did the first series win at the 2023 Televisual Bulldog Awards?",
+    "answers": [
+      "Documentary",
+      "Drama",
+      "Entertainment",
+      "Comedy"
+    ],
+    "correctAnswer": "Entertainment",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2022",
+      "Awards",
+      "Source: https://studiolambert.com/project/awards-the-traitors/"
+    ]
   }
 ];
-if(questions.length!==107||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(58269+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 787 validation failed');
+const validIds = new Set([...Array.from({length:107},(_,i)=>'tv_'+(58269+i)),...Array.from({length:19},(_,i)=>'tv_'+(59907+i))]);
+if(questions.length!==126||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 787 validation failed');
 module.exports=questions;
