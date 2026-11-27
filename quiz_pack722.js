@@ -5514,5 +5514,331 @@ module.exports = [
                 "Source: https://www.screen.scot/film-in-scotland/made-in-scotland/film/2023/indiana-jones-and-the-dial-of-destiny",
                 "Source: https://en.wikipedia.org/wiki/Indiana_Jones_and_the_Dial_of_Destiny"
             ]
-        }
+        },
+    {
+        "id": "film_5474",
+        "question": "In Raiders of the Lost Ark, how do the Germans get the design for one side of the headpiece even though they do not have the original?",
+        "answers": [
+            "Belloq finds a photograph of it",
+            "Sallah inadvertently gives them a drawing",
+            "It is burnt into Toht's palm",
+            "Marion gives them a copy in Cairo"
+        ],
+        "correctAnswer": "It is burnt into Toht's palm",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Raiders of the Lost Ark",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Raiders of the Lost Ark",
+            "1981",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/67250"
+        ]
+    },
+    {
+        "id": "film_5475",
+        "question": "In Raiders of the Lost Ark, what lets Indy survive after being pushed under the lorry during the Ark pursuit?",
+        "answers": [
+            "He hides in the wheel well",
+            "He uses his whip to hang on behind it",
+            "Sallah pulls him onto a horse",
+            "He rolls into a tunnel at the roadside"
+        ],
+        "correctAnswer": "He uses his whip to hang on behind it",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Raiders of the Lost Ark",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Raiders of the Lost Ark",
+            "1981",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/67250"
+        ]
+    },
+    {
+        "id": "film_5476",
+        "question": "In Raiders of the Lost Ark, what surname did George Lucas originally give his adventuring archaeologist during development?",
+        "answers": [
+            "Brown",
+            "Smith",
+            "West",
+            "Grant"
+        ],
+        "correctAnswer": "Smith",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Raiders of the Lost Ark",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Raiders of the Lost Ark",
+            "1981",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/67250"
+        ]
+    },
+    {
+        "id": "film_5477",
+        "question": "In Indiana Jones and the Temple of Doom, what happens to the Thuggee overseer during his fight with Indy by the rock crusher?",
+        "answers": [
+            "His sash catches and he is pulled into the crusher",
+            "A runaway mine cart knocks him into a tunnel",
+            "Short Round traps him behind a rockfall",
+            "He falls from the rope bridge"
+        ],
+        "correctAnswer": "His sash catches and he is pulled into the crusher",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Temple of Doom",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Temple of Doom",
+            "1984",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67251-INDIANA-JONES-AND-THE-TEMPLE-OF-DOOM"
+        ]
+    },
+    {
+        "id": "film_5478",
+        "question": "In Indiana Jones and the Temple of Doom, what did the effects team use for the insects that cover Willie in the palace tunnels?",
+        "answers": [
+            "Hand-painted rubber models only",
+            "Stop-motion puppets only",
+            "Images projected onto her costume",
+            "Live insects"
+        ],
+        "correctAnswer": "Live insects",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Temple of Doom",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Temple of Doom",
+            "1984",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/67251-INDIANA-JONES-AND-THE-TEMPLE-OF-DOOM"
+        ]
+    },
+    {
+        "id": "film_5479",
+        "question": "In Indiana Jones and the Last Crusade, what does young Indy acquire after falling into a train car with a lion?",
+        "answers": [
+            "A scar on his shoulder",
+            "A broken tooth",
+            "A scar on his chin",
+            "A cut across his forehead"
+        ],
+        "correctAnswer": "A scar on his chin",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Last Crusade",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Last Crusade",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67198-INDIANA-JONES-AND-THE-LAST-CRUSADE-"
+        ]
+    },
+    {
+        "id": "film_5480",
+        "question": "In Indiana Jones and the Last Crusade, which armoured vehicle carries Marcus Brody and later Henry Jones Sr. as prisoners?",
+        "answers": [
+            "An armoured car",
+            "A half-track",
+            "A tank",
+            "A troop carrier"
+        ],
+        "correctAnswer": "A tank",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Last Crusade",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Last Crusade",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67198-INDIANA-JONES-AND-THE-LAST-CRUSADE-"
+        ]
+    },
+    {
+        "id": "film_5481",
+        "question": "In Indiana Jones and the Last Crusade, how does Henry persuade Indy to give up reaching for the Grail while hanging over the chasm?",
+        "answers": [
+            "He tells him Marcus has found another exit",
+            "He calls him Indiana and asks him to let it go",
+            "He throws the diary into the gap",
+            "He offers to climb down for the Grail himself"
+        ],
+        "correctAnswer": "He calls him Indiana and asks him to let it go",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Last Crusade",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Last Crusade",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67198-INDIANA-JONES-AND-THE-LAST-CRUSADE-"
+        ]
+    },
+    {
+        "id": "film_5482",
+        "question": "In Indiana Jones and the Last Crusade, who plays the Nazi officer Colonel Vogel?",
+        "answers": [
+            "Michael Byrne",
+            "Julian Glover",
+            "Vernon Dobtcheff",
+            "Kevork Malikyan"
+        ],
+        "correctAnswer": "Michael Byrne",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Last Crusade",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Last Crusade",
+            "1989",
+            "Action",
+            "Cast",
+            "Character: Colonel Vogel",
+            "Actor: Michael Byrne",
+            "Source: https://catalog.afi.com/Film/67198-INDIANA-JONES-AND-THE-LAST-CRUSADE-"
+        ]
+    },
+    {
+        "id": "film_5483",
+        "question": "In Indiana Jones and the Kingdom of the Crystal Skull, what do the Soviets demand Indy find in the warehouse at Hangar 51?",
+        "answers": [
+            "An early American space capsule",
+            "A tank carrying nuclear fuel",
+            "A golden idol from Peru",
+            "A crate holding remains recovered at Roswell"
+        ],
+        "correctAnswer": "A crate holding remains recovered at Roswell",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Kingdom of the Crystal Skull",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Kingdom of the Crystal Skull",
+            "2008",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Indiana_Jones_and_the_Kingdom_of_the_Crystal_Skull"
+        ]
+    },
+    {
+        "id": "film_5484",
+        "question": "In Indiana Jones and the Kingdom of the Crystal Skull, who plays Colonel Dovchenko?",
+        "answers": [
+            "Andrew Divoff",
+            "Dimitri Diatchenko",
+            "Ray Winstone",
+            "Igor Jijikine"
+        ],
+        "correctAnswer": "Igor Jijikine",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Kingdom of the Crystal Skull",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Kingdom of the Crystal Skull",
+            "2008",
+            "Action",
+            "Cast",
+            "Character: Colonel Dovchenko",
+            "Actor: Igor Jijikine",
+            "Source: https://en.wikipedia.org/wiki/Indiana_Jones_and_the_Kingdom_of_the_Crystal_Skull"
+        ]
+    },
+    {
+        "id": "film_5485",
+        "question": "In Indiana Jones and the Dial of Destiny, which Sicilian temple served as the location for scenes with Indy and Helena among ancient ruins?",
+        "answers": [
+            "Temple of Concordia",
+            "Temple of Apollo in Syracuse",
+            "Segesta Temple",
+            "Temple of Hera at Selinunte"
+        ],
+        "correctAnswer": "Segesta Temple",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Dial of Destiny",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Dial of Destiny",
+            "2023",
+            "Action",
+            "Production",
+            "Source: https://www.lucasfilm.com/news/indiana-jones-duncan-broadfoot/"
+        ]
+    },
+    {
+        "id": "film_5486",
+        "question": "In Indiana Jones and the Dial of Destiny, who was the supervising location manager?",
+        "answers": [
+            "David Broder",
+            "Duncan Broadfoot",
+            "Emma Pill",
+            "Bill Darby"
+        ],
+        "correctAnswer": "Duncan Broadfoot",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Dial of Destiny",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Dial of Destiny",
+            "2023",
+            "Action",
+            "Production",
+            "Source: https://www.lucasfilm.com/news/indiana-jones-duncan-broadfoot/"
+        ]
+    },
+    {
+        "id": "film_5487",
+        "question": "In Indiana Jones and the Dial of Destiny, what ancient object is Indy and Basil's original target in the wartime opening?",
+        "answers": [
+            "The Lance of Longinus",
+            "The Ark of the Covenant",
+            "The Spear of Achilles",
+            "The Cross of Coronado"
+        ],
+        "correctAnswer": "The Lance of Longinus",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Indiana Jones and the Dial of Destiny",
+        "category": "Film",
+        "tags": [
+            "Indiana Jones franchise",
+            "Film: Indiana Jones and the Dial of Destiny",
+            "2023",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Indiana_Jones_and_the_Dial_of_Destiny"
+        ]
+    }
 ];
