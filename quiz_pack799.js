@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 799: The Traitors US season 1
-// 90 additions covering all twenty contestants, ten competition episodes and missions, eliminations, recruitment, finale, format, reunion presenter and verified 2023 award/nominations. Used Peacock/USA Network, published season and vote tables, Television Academy and Studio Lambert. Related packs 222, 787–797 and 782 checked for exact ID/question collisions; code search returned no results and cannot certify entire-bank duplicate/ID absence. Minor exchanges, full reunion content and additional nominations remain to review. Live bank unchanged.
+// Revised 27 November 2026: 102 questions. Retains all 20 contestants, ten missions, eliminations, recruitment and finale. Added barrel and cabin mission details, reunion developments, 2023 TCA nomination, casting Emmy credits, Artios nomination and renewal. New questions sourced from NBCUniversal, Television Academy, TCA and Artios nominee listing. Recent TV packs checked for new ID collisions; complete bank-wide ID and semantic checks and full footage review remain outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -2434,7 +2434,7 @@ const questions = [
   },
   {
     "id": "tv_58986",
-    "question": "In season one of The Traitors (US), which broadcaster presented the reunion special?",
+    "question": "In season one of The Traitors (US), who presented the reunion special?",
     "answers": [
       "Andy Cohen",
       "Alan Cumming",
@@ -2459,7 +2459,7 @@ const questions = [
       "Season 1",
       "2023",
       "Reunion",
-      "Source: https://www.radiotimes.com/tv/entertainment/reality-tv/the-traitors-us-cast/"
+      "Source: https://www.usanetwork.com/usa-insider/peacock-the-traitors-season-1-reunion-details"
     ]
   },
   {
@@ -2701,7 +2701,380 @@ const questions = [
       "Awards",
       "Source: https://studiolambert.com/project/awards-the-traitors-us/"
     ]
+  },
+  {
+    "id": "tv_59810",
+    "question": "In season one of The Traitors (US), which player discarded small whisky barrels near the finish line during the distillery mission?",
+    "answers": [
+      "Kate Chastain",
+      "Rachel Reilly",
+      "Cirie Fields",
+      "Shelbe Rodriguez"
+    ],
+    "correctAnswer": "Kate Chastain",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Episode 6",
+      "Source: https://www.usanetwork.com/usa-insider/traitors-best-missions-season-1"
+    ]
+  },
+  {
+    "id": "tv_59811",
+    "question": "In season one of The Traitors (US), which additional hazard confronted the contestants as they tried to unlock the cabins?",
+    "answers": [
+      "A room filling with water",
+      "Insects falling on them",
+      "An artificial snowstorm",
+      "A moving floor"
+    ],
+    "correctAnswer": "Insects falling on them",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Episode 8",
+      "Source: https://www.usanetwork.com/usa-insider/traitors-best-missions-season-1"
+    ]
+  },
+  {
+    "id": "tv_59812",
+    "question": "In season one of The Traitors (US), which pair revealed at the reunion that they had been on dates since filming?",
+    "answers": [
+      "Cody Calafiore and Kate Chastain",
+      "Kyle Cooke and Rachel Reilly",
+      "Christian de la Torre and Geraldine Moreno",
+      "Arie Luyendyk Jr. and Brandi Glanville"
+    ],
+    "correctAnswer": "Christian de la Torre and Geraldine Moreno",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Reunion",
+      "Source: https://www.usanetwork.com/usa-insider/peacock-the-traitors-season-1-reunion-details"
+    ]
+  },
+  {
+    "id": "tv_59813",
+    "question": "In season one of The Traitors (US), at the reunion, what did Cirie say she planned to buy for her mother using her winnings?",
+    "answers": [
+      "A car",
+      "A holiday home abroad",
+      "A business",
+      "A house"
+    ],
+    "correctAnswer": "A house",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Reunion",
+      "Source: https://www.usanetwork.com/usa-insider/peacock-the-traitors-season-1-reunion-details"
+    ]
+  },
+  {
+    "id": "tv_59814",
+    "question": "In season one of The Traitors (US), whose written list of suspects was discussed at the reunion after attracting suspicion during the game?",
+    "answers": [
+      "Kate Chastain's",
+      "Stephenie LaGrossa Kendrick's",
+      "Brandi Glanville's",
+      "Amanda Clark-Stoner's"
+    ],
+    "correctAnswer": "Kate Chastain's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Reunion",
+      "Source: https://www.usanetwork.com/usa-insider/peacock-the-traitors-season-1-reunion-details"
+    ]
+  },
+  {
+    "id": "tv_59815",
+    "question": "In season one of The Traitors (US), which contestant confronted Kate about putting her suspicions in writing during the reunion?",
+    "answers": [
+      "Geraldine Moreno",
+      "Rachel Reilly",
+      "Cirie Fields",
+      "Anjelica Conti"
+    ],
+    "correctAnswer": "Rachel Reilly",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Reunion",
+      "Source: https://www.usanetwork.com/usa-insider/peacock-the-traitors-season-1-reunion-details"
+    ]
+  },
+  {
+    "id": "tv_59816",
+    "question": "In season one of The Traitors (US), which recruited Traitor did Kate confront at the reunion over his insulting description of her?",
+    "answers": [
+      "Christian de la Torre",
+      "Cody Calafiore",
+      "Arie Luyendyk Jr.",
+      "Quentin Jiles"
+    ],
+    "correctAnswer": "Arie Luyendyk Jr.",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Reunion",
+      "Source: https://www.usanetwork.com/usa-insider/peacock-the-traitors-season-1-reunion-details"
+    ]
+  },
+  {
+    "id": "tv_59817",
+    "question": "In season one of The Traitors (US), which runner-up shared an emotional hug with Cirie at the reunion after discussing the betrayal?",
+    "answers": [
+      "Quentin Jiles",
+      "Kate Chastain",
+      "Stephenie LaGrossa Kendrick",
+      "Andie Vanacore"
+    ],
+    "correctAnswer": "Andie Vanacore",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Reunion",
+      "Source: https://www.usanetwork.com/usa-insider/peacock-the-traitors-season-1-reunion-details"
+    ]
+  },
+  {
+    "id": "tv_59818",
+    "question": "In season one of The Traitors (US), which Television Critics Association category brought the programme a nomination in 2023?",
+    "answers": [
+      "Outstanding Achievement in Reality",
+      "Outstanding Achievement in Comedy",
+      "Outstanding Achievement in Drama",
+      "Outstanding Achievement in Variety"
+    ],
+    "correctAnswer": "Outstanding Achievement in Reality",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Awards",
+      "Source: https://www.tvcritics.org/index.php?category=tca-awards&id=60%3A2023-tca-award-nominees&option=com_dailyplanetblog&view=entry"
+    ]
+  },
+  {
+    "id": "tv_59819",
+    "question": "In season one of The Traitors (US), which four casting professionals received the programme's 2023 casting Emmy?",
+    "answers": [
+      "Mike Cotton, Jack Burgess, Toni Ireland and Tim Harcourt",
+      "Erin Tomasello, Jazzy Collins, Moira Paris and Holly Osifat",
+      "Ben Archard, Matt Wright, Siggi Rosen-Rawlings and Joe Evans",
+      "Emma Carroll, Zoe Duerden, Sam Rees-Jones and Stephen Lambert"
+    ],
+    "correctAnswer": "Erin Tomasello, Jazzy Collins, Moira Paris and Holly Osifat",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Awards",
+      "Source: https://www.televisionacademy.com/awards/nominees-winners/2023/outstanding-casting-for-a-reality-program"
+    ]
+  },
+  {
+    "id": "tv_59820",
+    "question": "In season one of The Traitors (US), which industry awards nominated Erin Tomasello and Jazzy Collins for their casting work in 2024?",
+    "answers": [
+      "The Hugo Awards",
+      "The Tony Awards",
+      "The Artios Awards",
+      "The Peabody Awards"
+    ],
+    "correctAnswer": "The Artios Awards",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Awards",
+      "Source: https://jamargig.com/csa-39th-artios-award-nominees/"
+    ]
+  },
+  {
+    "id": "tv_59821",
+    "question": "In season one of The Traitors (US), when the inaugural season's reunion was announced, what further news did Peacock confirm?",
+    "answers": [
+      "The show was moving to Netflix",
+      "A new host had been appointed",
+      "The series was being cancelled",
+      "A second season had been commissioned"
+    ],
+    "correctAnswer": "A second season had been commissioned",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 1",
+      "2023",
+      "Format",
+      "Production",
+      "Source: https://www.peacocktv.com/blog/get-ready-for-more-of-the-traitors"
+    ]
   }
 ];
-if(questions.length!==90||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(58905+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 799 validation failed');
+const validIds = new Set([...Array.from({length:90},(_,i)=>'tv_'+(58905+i)),...Array.from({length:12},(_,i)=>'tv_'+(59810+i))]);
+if(questions.length!==102||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 799 validation failed');
 module.exports=questions;
