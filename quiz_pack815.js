@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 815: Quizness and Celebrity Quizness
-// 31 additions (27 main edition, 4 celebrity edition); seven legacy Pack 222 questions retained. Covers round mechanics, eliminations, finale, opening episode contestants, credits, audience poll, celebrity lineup and verified charity donation. Ordinary episodes 2–5 contestants/results and celebrity overall winner not verified; no formal awards established. Exact IDs/questions checked against selected recent/related packs only; full-bank duplicate and ID certification outstanding. Live bank unchanged.
+// Revised 27 November 2026: 38 questions; seven additions close gaps in all five ordinary episode lineups, executive producers, scoring and recording circumstances. Seven original Pack 222 questions retained. All six broadcasts represented; all eight rounds, host, narrator, production, theme, recognition and verified celebrity donation covered. Formal award searches did not establish a nomination or win. Individual episode winners, prize totals and celebrity overall result cannot be established from accessible episode listings, contemporary reviews or charity reporting; no guessed results. Existing IDs retained; new IDs checked against recent/related packs and current head. Full-bank semantic/ID certification outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -593,7 +593,7 @@ const questions = [
       "Channel 4",
       "2021",
       "Production",
-      "Source: https://www.channel4.com/press/news/channel-4-commissions-new-quiz-format-cpl-productions"
+      "Source: https://sevenonestudios.com/new-format-quizness-launches-in-uk-on-may-14/"
     ]
   },
   {
@@ -620,7 +620,7 @@ const questions = [
       "Channel 4",
       "2021",
       "Production",
-      "Source: https://www.channel4.com/press/news/channel-4-commissions-new-quiz-format-cpl-productions"
+      "Source: https://sevenonestudios.com/new-format-quizness-launches-in-uk-on-may-14/"
     ]
   },
   {
@@ -850,7 +850,197 @@ const questions = [
       "Celebrity",
       "Source: https://www.jbd.org/wp-content/uploads/2022/03/TheKeyFeb2022_Final.pdf"
     ]
+  },
+  {
+    "id": "tv_59712",
+    "question": "Which four contestants were billed for the second episode of Tom Allen's Quizness?",
+    "answers": [
+      "Andy, Kiran, Mandi and Mollie",
+      "Amanda, Robbie, Craig and Sharon",
+      "Emma, Bernie, Gemma and Harv",
+      "Fiona, George, Rosa and Paddy"
+    ],
+    "correctAnswer": "Emma, Bernie, Gemma and Harv",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Quizness",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy",
+      "Quizness",
+      "Programme: Quizness",
+      "Channel 4",
+      "2021",
+      "Episode 2",
+      "Source: https://www.tvmaze.com/episodes/2090128/tom-allens-quizness-1x02-episode-2"
+    ]
+  },
+  {
+    "id": "tv_59713",
+    "question": "Which four contestants competed in the third episode of Tom Allen's Quizness?",
+    "answers": [
+      "Emma, Bernie, Gemma and Harv",
+      "Fiona, George, Rosa and Paddy",
+      "Amanda, Robbie, Craig and Sharon",
+      "Dave, Hayley, Tharun and Saundra"
+    ],
+    "correctAnswer": "Fiona, George, Rosa and Paddy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Quizness",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy",
+      "Quizness",
+      "Programme: Quizness",
+      "Channel 4",
+      "2021",
+      "Episode 3",
+      "Source: https://www.tvmaze.com/episodes/2092995/tom-allens-quizness-1x03-episode-3"
+    ]
+  },
+  {
+    "id": "tv_59714",
+    "question": "Which group appeared in the fourth episode of Tom Allen's Quizness?",
+    "answers": [
+      "Andy, Kiran, Mandi and Mollie",
+      "Fiona, George, Rosa and Paddy",
+      "Emma, Bernie, Gemma and Harv",
+      "Dave, Hayley, Tharun and Saundra"
+    ],
+    "correctAnswer": "Andy, Kiran, Mandi and Mollie",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Quizness",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy",
+      "Quizness",
+      "Programme: Quizness",
+      "Channel 4",
+      "2021",
+      "Episode 4",
+      "Source: https://www.tvmaze.com/episodes/2095618/tom-allens-quizness-1x04-episode-4"
+    ]
+  },
+  {
+    "id": "tv_59715",
+    "question": "Which quartet competed in the final ordinary episode of Tom Allen's Quizness?",
+    "answers": [
+      "Andy, Kiran, Mandi and Mollie",
+      "Dave, Hayley, Tharun and Saundra",
+      "Fiona, George, Rosa and Paddy",
+      "Amanda, Robbie, Craig and Sharon"
+    ],
+    "correctAnswer": "Amanda, Robbie, Craig and Sharon",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Quizness",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy",
+      "Quizness",
+      "Programme: Quizness",
+      "Channel 4",
+      "2021",
+      "Episode 5",
+      "Source: https://www.tvmaze.com/episodes/2105432/tom-allens-quizness-1x05-episode-5"
+    ]
+  },
+  {
+    "id": "tv_59716",
+    "question": "Which four people were credited as executive producers of Tom Allen's Quizness?",
+    "answers": [
+      "Dan Maier, David Taylor, Tom Allen and Laura Shavin",
+      "Murray Boland, Tom Allen, Dan McGrath and Josh Phillips",
+      "Danielle Lux, Murray Boland, Dan Maier and David Taylor",
+      "Danielle Lux, Murray Boland, Richard Osman and David Taylor"
+    ],
+    "correctAnswer": "Danielle Lux, Murray Boland, Dan Maier and David Taylor",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Quizness",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy",
+      "Quizness",
+      "Programme: Quizness",
+      "Channel 4",
+      "2021",
+      "Production",
+      "Source: https://sevenonestudios.com/new-format-quizness-launches-in-uk-on-may-14/"
+    ]
+  },
+  {
+    "id": "tv_59717",
+    "question": "How many points were deducted for a wrong answer in Dental Mexterity on Quizness?",
+    "answers": [
+      "Five",
+      "Two",
+      "One",
+      "Three"
+    ],
+    "correctAnswer": "Two",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Quizness",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy",
+      "Quizness",
+      "Programme: Quizness",
+      "Channel 4",
+      "2021",
+      "Dental Mexterity",
+      "Source: https://www.ukgameshows.com/ukgs/Quizness"
+    ]
+  },
+  {
+    "id": "tv_59718",
+    "question": "Why was Quizness recorded without a regular studio audience?",
+    "answers": [
+      "COVID-19 restrictions",
+      "A permanent silent-audience format",
+      "The contestants were taking part from home",
+      "The show was recorded in a radio studio"
+    ],
+    "correctAnswer": "COVID-19 restrictions",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Quizness",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Comedy",
+      "Quizness",
+      "Programme: Quizness",
+      "Channel 4",
+      "2021",
+      "Production",
+      "Source: https://www.ukgameshows.com/ukgs/Weaver%27s_Week_2021-06-13"
+    ]
   }
 ];
-if(questions.length!==31||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(59612+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 815 validation failed');
+const validIds = new Set([...Array.from({length:31},(_,i)=>'tv_'+(59612+i)),...Array.from({length:7},(_,i)=>'tv_'+(59712+i))]);
+if(questions.length!==38||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 815 validation failed');
 module.exports=questions;
