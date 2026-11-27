@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 791: The Traitors UK series 3
-// 98 additions covering the twelve missions, contestant departures, recruitment, shields, Deathmatch, Seer and finale; verified series-specific Broadcast Award. Title and distinctive names searched in packs 1–20 and 209–222; reviewed packs 787, 789 and 782. GitHub code search returned no matches even for known content, so complete bank-wide duplicate/ID certification remains outstanding. No full footage review; minor conversations, individual mission details and additional series-specific nominations remain to verify. Live bank unchanged.
+// Revised 27 November 2026: 112 questions. Existing twelve missions, departures, recruitment, shields, Deathmatch, Seer and finale retained. Added seven missing mission earnings (all twelve reconcile to £94,600), additional strategic decisions, finale and charity details, and series-specific 2025 Televisual Bulldog win. Broadcast award independently confirmed. Recent TV packs checked for new ID collisions; full-bank ID and semantic certification and complete footage review remain outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -2843,7 +2843,418 @@ const questions = [
       "Awards",
       "Source: https://www.broadcastnow.co.uk/winners/best-reality-programme-the-traitors/5213363.article"
     ]
+  },
+  {
+    "id": "tv_59871",
+    "question": "In series three of The Traitors (UK), how much money was earned in the Viking longboat mission?",
+    "answers": [
+      "£5,000",
+      "£4,000",
+      "£7,000",
+      "£10,000"
+    ],
+    "correctAnswer": "£5,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 3",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3",
+      "Source: https://thetraitorsuk.fandom.com/wiki/Series_3"
+    ]
+  },
+  {
+    "id": "tv_59872",
+    "question": "In series three of The Traitors (UK), how much money did the funhouse balloon mission earn?",
+    "answers": [
+      "£3,000",
+      "£5,000",
+      "£7,500",
+      "£9,000"
+    ],
+    "correctAnswer": "£5,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 5",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3",
+      "Source: https://thetraitorsuk.fandom.com/wiki/Series_3"
+    ]
+  },
+  {
+    "id": "tv_59873",
+    "question": "In series three of The Traitors (UK), how much money did the Ceremony of Truth earn for the prize fund?",
+    "answers": [
+      "£2,500",
+      "£6,500",
+      "£5,000",
+      "£10,000"
+    ],
+    "correctAnswer": "£5,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 6",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3"
+    ]
+  },
+  {
+    "id": "tv_59874",
+    "question": "In series three of The Traitors (UK), how much money did finding the three survivors of the Deathmatch add to the pot?",
+    "answers": [
+      "£4,000",
+      "£5,000",
+      "£7,500",
+      "£6,500"
+    ],
+    "correctAnswer": "£6,500",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 7",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3"
+    ]
+  },
+  {
+    "id": "tv_59875",
+    "question": "In series three of The Traitors (UK), how much was earned in the backwards nursery-rhyme challenge?",
+    "answers": [
+      "£7,500",
+      "£2,500",
+      "£5,000",
+      "£10,000"
+    ],
+    "correctAnswer": "£7,500",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 8",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3"
+    ]
+  },
+  {
+    "id": "tv_59876",
+    "question": "In series three of The Traitors (UK), how much was banked in the giant chess mission?",
+    "answers": [
+      "£2,000",
+      "£6,000",
+      "£8,000",
+      "£10,000"
+    ],
+    "correctAnswer": "£6,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 10",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3",
+      "Source: https://thetraitorsuk.fandom.com/wiki/Series_3"
+    ]
+  },
+  {
+    "id": "tv_59877",
+    "question": "In series three of The Traitors (UK), how much did the three-part Seer challenge contribute to the prize fund?",
+    "answers": [
+      "£6,500",
+      "£10,000",
+      "£9,100",
+      "£12,000"
+    ],
+    "correctAnswer": "£9,100",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 11",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3",
+      "Source: https://thetraitorsuk.fandom.com/wiki/Series_3"
+    ]
+  },
+  {
+    "id": "tv_59878",
+    "question": "In series three of The Traitors (UK), whom did Linda vote against when her fellow Traitor Armani was banished?",
+    "answers": [
+      "Maia",
+      "Minah",
+      "Tyler",
+      "Jake"
+    ],
+    "correctAnswer": "Jake",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 3",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3"
+    ]
+  },
+  {
+    "id": "tv_59879",
+    "question": "In series three of The Traitors (UK), which contestant played alone in the funhouse mission rather than with a partner?",
+    "answers": [
+      "Dan",
+      "Joe",
+      "Jake",
+      "Leon"
+    ],
+    "correctAnswer": "Dan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 5",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3"
+    ]
+  },
+  {
+    "id": "tv_59880",
+    "question": "In series three of The Traitors (UK), whom did Anna tell about declining the Traitors' recruitment offer?",
+    "answers": [
+      "Francesca",
+      "Charlotte",
+      "Leanne",
+      "Minah"
+    ],
+    "correctAnswer": "Charlotte",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 5",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3"
+    ]
+  },
+  {
+    "id": "tv_59881",
+    "question": "In series three of The Traitors (UK), which close ally did Dan target during the Ceremony of Truth?",
+    "answers": [
+      "Linda",
+      "Jake",
+      "Minah",
+      "Charlotte"
+    ],
+    "correctAnswer": "Minah",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 6",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_3"
+    ]
+  },
+  {
+    "id": "tv_59882",
+    "question": "In series three of The Traitors (UK), which contestant directed the others' gold drops by radio in the helicopter mission?",
+    "answers": [
+      "Alexander",
+      "Francesca",
+      "Jake",
+      "Charlotte"
+    ],
+    "correctAnswer": "Charlotte",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Episode 12",
+      "Source: https://news.stv.tv/entertainment/faithfuls-jake-brown-and-leanne-quigley-crowned-winners-of-the-traitors"
+    ]
+  },
+  {
+    "id": "tv_59883",
+    "question": "In series three of The Traitors (UK), which learning disability charity did Alexander say he wanted to support in memory of his brother?",
+    "answers": [
+      "Mencap",
+      "Mind",
+      "Scope",
+      "Sense"
+    ],
+    "correctAnswer": "Mencap",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Finale",
+      "Source: https://www.theguardian.com/tv-and-radio/live/2025/jan/24/the-traitors-finale-live"
+    ]
+  },
+  {
+    "id": "tv_59884",
+    "question": "In series three of The Traitors (UK), which category did the series win at the 2025 Televisual Bulldog Awards?",
+    "answers": [
+      "Best Factual Entertainment",
+      "Best Entertainment",
+      "Best Editing",
+      "Best Documentary"
+    ],
+    "correctAnswer": "Best Entertainment",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 3",
+      "2025",
+      "Awards",
+      "Source: https://www.televisual.com/news/televisual-bulldog-awards-winners-revealed/"
+    ]
   }
 ];
-if(questions.length!==98||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(58480+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 791 validation failed');
+const validIds = new Set([...Array.from({length:98},(_,i)=>'tv_'+(58480+i)),...Array.from({length:14},(_,i)=>'tv_'+(59871+i))]);
+if(questions.length!==112||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 791 validation failed');
 module.exports=questions;
