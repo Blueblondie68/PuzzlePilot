@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 793: The Traitors UK series 4
-// 114 additions. All 22 contestants represented through relationships, selections and eliminations; twelve missions, Secret Traitor, family tree, confessionals, dagger, both Chests of Chance and finale; verified 2026 award and nomination. Checked prior Traitors packs 222, 787, 789, 791 and film pack 782; legacy mixed packs previously screened. Full-bank ID and semantic duplicate certification remains outstanding because repository search is unreliable. Episode records and recaps, not full footage; minor exchanges, all voting permutations and further awards not exhaustive. Live bank unchanged.
+// Revised 27 November 2026: 126 questions. Retains all 22 contestants, twelve missions, Secret Traitor, recruitment discussions, shields, dagger, both Chests of Chance and finale. Adds missing carousel earnings, other mission details and finale ballots. Existing National Reality TV Awards win and NTA result retained; checked against official winners lists and avoided attributing celebrity spin-off awards to this series. Added questions sourced from published episode summaries and finale reporting. Recent packs checked for new ID collisions; full-bank ID and semantic certification and full footage review remain outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -3307,7 +3307,356 @@ const questions = [
       "Awards",
       "Source: https://www.digitalspy.com/tv/reality-tv/a73644534/national-television-awards-2026-traitors-reality-competition/"
     ]
+  },
+  {
+    "id": "tv_59859",
+    "question": "In series four of The Traitors (UK), how much did the carousel mission add to the prize fund?",
+    "answers": [
+      "£9,250",
+      "£7,500",
+      "£8,000",
+      "£10,000"
+    ],
+    "correctAnswer": "£9,250",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 10",
+      "Source: https://www.thereviewgeek.com/thetraitorsuk-s4e10review/"
+    ]
+  },
+  {
+    "id": "tv_59860",
+    "question": "In series four of The Traitors (UK), which Traitor had nominated himself on the family tree and regretted doing so?",
+    "answers": [
+      "Hugo",
+      "Stephen",
+      "Fiona",
+      "Rachel"
+    ],
+    "correctAnswer": "Stephen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 4",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_4"
+    ]
+  },
+  {
+    "id": "tv_59861",
+    "question": "In series four of The Traitors (UK), which Traitor appeared to delay rescuing Reece during the skull-stacking challenge?",
+    "answers": [
+      "Rachel",
+      "Stephen",
+      "Fiona",
+      "Hugo"
+    ],
+    "correctAnswer": "Fiona",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 4",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_4"
+    ]
+  },
+  {
+    "id": "tv_59862",
+    "question": "In series four of The Traitors (UK), how many questions could each successful contestant ask during their private meeting with the Traitors?",
+    "answers": [
+      "One",
+      "Three",
+      "Four",
+      "Two"
+    ],
+    "correctAnswer": "Two",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 6",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_4"
+    ]
+  },
+  {
+    "id": "tv_59863",
+    "question": "In series four of The Traitors (UK), whose shield was originally intended to cover James, Adam, Sam and Harriet during the fountain mission?",
+    "answers": [
+      "Jessie's",
+      "Jade's",
+      "Jack's",
+      "Faraaz's"
+    ],
+    "correctAnswer": "Jessie's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 7",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_4"
+    ]
+  },
+  {
+    "id": "tv_59864",
+    "question": "In series four of The Traitors (UK), where did Rachel and Stephen meet to decide who would receive the dagger?",
+    "answers": [
+      "The library",
+      "The wine cellar",
+      "The chapel",
+      "The kitchen"
+    ],
+    "correctAnswer": "The wine cellar",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 9",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_4"
+    ]
+  },
+  {
+    "id": "tv_59865",
+    "question": "In series four of The Traitors (UK), which contestant suggested that James had awarded himself the dagger to avoid suspicion?",
+    "answers": [
+      "Matthew",
+      "Jade",
+      "Roxy",
+      "Faraaz"
+    ],
+    "correctAnswer": "Roxy",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 10",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_4"
+    ]
+  },
+  {
+    "id": "tv_59866",
+    "question": "In series four of The Traitors (UK), how much did the finalists collect before reaching Loch Orrin dam?",
+    "answers": [
+      "£5,000",
+      "£10,000",
+      "£19,000",
+      "£9,000"
+    ],
+    "correctAnswer": "£9,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 12",
+      "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_4"
+    ]
+  },
+  {
+    "id": "tv_59867",
+    "question": "In series four of The Traitors (UK), who received Faraaz's vote in the first fire-pit banishment?",
+    "answers": [
+      "Stephen",
+      "Rachel",
+      "Jack",
+      "Jade"
+    ],
+    "correctAnswer": "Stephen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 12",
+      "Source: https://www.scotsman.com/arts-and-culture/film-and-tv/the-traitors-final-review-tears-and-tension-in-the-scottish-castle-as-this-epic-season-comes-to-a-close-5488331"
+    ]
+  },
+  {
+    "id": "tv_59868",
+    "question": "In series four of The Traitors (UK), who received Jack's vote at the final Round Table before the fire-pit stage?",
+    "answers": [
+      "Jade",
+      "Rachel",
+      "Faraaz",
+      "Stephen"
+    ],
+    "correctAnswer": "Rachel",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 12",
+      "Source: https://www.tvguide.co.uk/articles/who-won-the-traitors-2026-the-winner-is-finally-declared-after-a-nail-biting-final/"
+    ]
+  },
+  {
+    "id": "tv_59869",
+    "question": "In series four of The Traitors (UK), who did Jade vote for at her last Round Table?",
+    "answers": [
+      "Stephen",
+      "Rachel",
+      "Faraaz",
+      "Jack"
+    ],
+    "correctAnswer": "Faraaz",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Episode 12",
+      "Source: https://www.tvguide.co.uk/articles/who-won-the-traitors-2026-the-winner-is-finally-declared-after-a-nail-biting-final/"
+    ]
+  },
+  {
+    "id": "tv_59870",
+    "question": "In series four of The Traitors (UK), which notorious criminal couple did Stephen compare his alliance with Rachel to after their victory?",
+    "answers": [
+      "Burke and Hare",
+      "Fred and Rose West",
+      "Butch Cassidy and the Sundance Kid",
+      "Bonnie and Clyde"
+    ],
+    "correctAnswer": "Bonnie and Clyde",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 4",
+      "2026",
+      "Finale",
+      "Source: https://news.stv.tv/entertainment/traitors-rachel-and-stephen-make-series-history-as-dual-winners"
+    ]
   }
 ];
-if(questions.length!==114||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(58578+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 793 validation failed');
+const validIds = new Set([...Array.from({length:114},(_,i)=>'tv_'+(58578+i)),...Array.from({length:12},(_,i)=>'tv_'+(59859+i))]);
+if(questions.length!==126||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 793 validation failed');
 module.exports=questions;
