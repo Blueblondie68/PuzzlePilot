@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 811: In With a Shout
-// 46 additions. Retains seven original facts in Pack 222 without repeating them. Both series, all 12 ordinary broadcasts and the Soccer Aid special represented; format, revised money ladder, final, production and French licensing. Sources: ITV, TVmaze, UKGameshows, contemporary format discussion, Broadcast and episode statistics. No programme-specific competitive awards verified. Individual episode winners and actual payouts not asserted where published results were insufficiently corroborated. Legacy packs 1–20 and 209–222 searched directly for programme title; recent packs checked for IDs/questions. Whole-bank duplicate and ID certification outstanding. Live bank unchanged.
+// Revised 27 November 2026: 54 questions plus seven originals in Pack 222. Both series, 12 ordinary broadcasts and Soccer Aid special represented; rules, revised format, finale, production, audience poll, French adaptation and special guests. Eight additions and three family-name corrections. Formal competitive awards not established; audience poll separately identified. Ordinary family payouts not exhaustively tested; celebrity prize at stake distinguished from money actually won. Sources differ on nominal clip duration; original specialist review says about three seconds, publicity says four, so avoid adding a second conflicting timing question. Existing IDs retained; new IDs checked against selected recent/related packs and current head; full-bank duplicate/ID certification outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -428,7 +428,7 @@ const questions = [
   },
   {
     "id": "tv_59518",
-    "question": "In the second series of In With a Shout, which type of head-to-head round was introduced in the second series?",
+    "question": "Which type of head-to-head round was introduced in the second series of In With a Shout?",
     "answers": [
       "A spelling bee",
       "A fastest-finger knockout",
@@ -701,11 +701,11 @@ const questions = [
     "question": "In the second series of In With a Shout, which Preston family competed against the Prohans in the second series opener?",
     "answers": [
       "The Kellys",
-      "The Schofields",
+      "The Schofield family",
       "The Whitfields",
       "The Pohls"
     ],
-    "correctAnswer": "The Schofields",
+    "correctAnswer": "The Schofield family",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "In With a Shout",
@@ -720,7 +720,7 @@ const questions = [
       "ITV",
       "Series 2 Episode 1",
       "2024",
-      "Source: https://www.tvmaze.com/shows/67941/in-with-a-shout/episodeguide"
+      "Source: https://www.itv.com/watch/in-with-a-shout/10a4087"
     ]
   },
   {
@@ -757,9 +757,9 @@ const questions = [
       "The Hinds",
       "The Browns",
       "The Prohans",
-      "The Bhambras"
+      "The Bhambra family"
     ],
-    "correctAnswer": "The Bhambras",
+    "correctAnswer": "The Bhambra family",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "In With a Shout",
@@ -774,19 +774,19 @@ const questions = [
       "ITV",
       "Series 2 Episode 3",
       "2024",
-      "Source: https://www.tvmaze.com/shows/67941/in-with-a-shout/episodeguide"
+      "Source: https://www.itv.com/watch/in-with-a-shout/10a4087"
     ]
   },
   {
     "id": "tv_59531",
     "question": "In the second series of In With a Shout, which Manchester family competed against the Hinds family from London?",
     "answers": [
-      "The Woolliscrofts",
+      "The Woolliscroft family",
       "The Loveridges",
       "The Nicolaides family",
       "The Schofields"
     ],
-    "correctAnswer": "The Woolliscrofts",
+    "correctAnswer": "The Woolliscroft family",
     "difficulty": "Medium",
     "dailyEligible": true,
     "topic": "In With a Shout",
@@ -801,7 +801,7 @@ const questions = [
       "ITV",
       "Series 2 Episode 4",
       "2024",
-      "Source: https://www.tvmaze.com/shows/67941/in-with-a-shout/episodeguide"
+      "Source: https://www.itv.com/watch/in-with-a-shout/10a4087"
     ]
   },
   {
@@ -1237,7 +1237,222 @@ const questions = [
       "International Format",
       "Source: https://www.broadcastnow.co.uk/international/mipcom-sales-roundup-in-with-a-shout-heads-to-france/5198376.article"
     ]
+  },
+  {
+    "id": "tv_59734",
+    "question": "What was the bonus for every correct answer in the first solo round of In With a Shout's original format?",
+    "answers": [
+      "£20",
+      "£30",
+      "£50",
+      "£10"
+    ],
+    "correctAnswer": "£10",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "In With a Shout",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Family Game Show",
+      "In With a Shout",
+      "Programme: In With a Shout",
+      "ITV",
+      "Series 1",
+      "2023",
+      "Source: https://www.ukgameshows.com/ukgs/In_With_a_Shout"
+    ]
+  },
+  {
+    "id": "tv_59735",
+    "question": "What was the highest rung of the second solo round's original cash ladder on In With a Shout, excluding bonuses?",
+    "answers": [
+      "£2,000",
+      "£2,500",
+      "£1,000",
+      "£500"
+    ],
+    "correctAnswer": "£1,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "In With a Shout",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Family Game Show",
+      "In With a Shout",
+      "Programme: In With a Shout",
+      "ITV",
+      "Series 1",
+      "2023",
+      "Source: https://www.ukgameshows.com/ukgs/In_With_a_Shout"
+    ]
+  },
+  {
+    "id": "tv_59736",
+    "question": "What bonus did each correct answer earn in the third solo round of the original In With a Shout format?",
+    "answers": [
+      "£50",
+      "£30",
+      "£10",
+      "£20"
+    ],
+    "correctAnswer": "£30",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "In With a Shout",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Family Game Show",
+      "In With a Shout",
+      "Programme: In With a Shout",
+      "ITV",
+      "Series 1",
+      "2023",
+      "Source: https://www.ukgameshows.com/ukgs/In_With_a_Shout"
+    ]
+  },
+  {
+    "id": "tv_59737",
+    "question": "How did Joel Dommett complete the In With a Shout instruction 'Think fast, and...' ?",
+    "answers": [
+      "Shout faster",
+      "Speak louder",
+      "Move quicker",
+      "Press the button"
+    ],
+    "correctAnswer": "Shout faster",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "In With a Shout",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Family Game Show",
+      "In With a Shout",
+      "Programme: In With a Shout",
+      "ITV",
+      "Catchphrase",
+      "Source: https://www.ukgameshows.com/ukgs/In_With_a_Shout"
+    ]
+  },
+  {
+    "id": "tv_59738",
+    "question": "Who were the series producers named in ITV's original announcement of In With a Shout?",
+    "answers": [
+      "Ben Wicks and James Donkin",
+      "Katie Rawcliffe and Leanne Clarke",
+      "Ramsey Jeffers and Emilia Adamson",
+      "Jen Stephenson and Sarah Timbury"
+    ],
+    "correctAnswer": "Jen Stephenson and Sarah Timbury",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "In With a Shout",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Family Game Show",
+      "In With a Shout",
+      "Programme: In With a Shout",
+      "ITV",
+      "Production",
+      "Source: https://www.itv.com/presscentre/presscentre/presscentre/presscentre/presscentre/presscentre/presscentre/presscentre/presscentre/presscentre/presscentre/media-releases/itv-confirms-brand-new-game-show-shout-hosted-joel-dommett"
+    ]
+  },
+  {
+    "id": "tv_59739",
+    "question": "Where did In With a Shout finish in the UKGameshows and Bother's Bar 2023 Hall of Fame poll?",
+    "answers": [
+      "Joint third",
+      "Joint tenth",
+      "Joint fifth",
+      "Joint first"
+    ],
+    "correctAnswer": "Joint fifth",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "In With a Shout",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Family Game Show",
+      "In With a Shout",
+      "Programme: In With a Shout",
+      "ITV",
+      "Recognition",
+      "2023",
+      "Source: https://www.ukgameshows.com/ukgs/Poll_of_the_Year_2023"
+    ]
+  },
+  {
+    "id": "tv_59740",
+    "question": "Which French television channel acquired the first overseas licence for In With a Shout?",
+    "answers": [
+      "M6",
+      "W9",
+      "TF1",
+      "France 2"
+    ],
+    "correctAnswer": "W9",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "In With a Shout",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Family Game Show",
+      "In With a Shout",
+      "Programme: In With a Shout",
+      "ITV",
+      "International Format",
+      "2024",
+      "Source: https://www.broadcastnow.co.uk/international/mipcom-sales-roundup-in-with-a-shout-heads-to-france/5198376.article"
+    ]
+  },
+  {
+    "id": "tv_59741",
+    "question": "Who hosted the French adaptation of In With a Shout, titled Video Quiz?",
+    "answers": [
+      "Issa Doumbia",
+      "Éric Antoine",
+      "Nagui",
+      "Camille Combal"
+    ],
+    "correctAnswer": "Issa Doumbia",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "In With a Shout",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Family Game Show",
+      "In With a Shout",
+      "Programme: In With a Shout",
+      "ITV",
+      "International Format",
+      "2024",
+      "Source: https://www.c21media.net/news/w9-in-france-to-premiere-bbc-studios-in-with-a-shout/XXX/"
+    ]
   }
 ];
-if(questions.length!==46||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(59502+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 811 validation failed');
+const validIds = new Set([...Array.from({length:46},(_,i)=>'tv_'+(59502+i)),...Array.from({length:8},(_,i)=>'tv_'+(59734+i))]);
+if(questions.length!==54||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 811 validation failed');
 module.exports=questions;
