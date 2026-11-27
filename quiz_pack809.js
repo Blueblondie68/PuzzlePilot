@@ -1,10 +1,10 @@
 // PuzzlePilot — Pack 809: The Traitors International Editions
-// 114 questions across 30 country/language groupings. Selective presenters, channels, titles, winners, locations, spin-offs and distinctive gameplay. Not an exhaustive season or episode audit; unaired commissions and unofficial Russian adaptation excluded. Country-specific tags included. Sources: international edition table and Radio Times guide, location reference and Australian season 2. Most winner details rely on the compiled table; additional primary-source checks and awards outstanding. Exact ID/question checks against nine recent packs; complete bank-wide certification remains outstanding. Live bank unchanged.
+// 114 questions across 30 country/language groupings. Selective presenters, channels, titles, winners, locations, spin-offs and distinctive gameplay. Not an exhaustive season or episode audit; unaired commissions and unofficial Russian adaptation excluded. Country-specific tags included. Sources: international edition table and Radio Times guide, location reference and Australian season 2. Irish and selected Canadian results, hosts and broadcaster facts checked against RTÉ and Bell Media; other primary-source checks and awards outstanding. Ambiguous stems now explicitly identify the edition. Exact ID/question checks against nine recent packs; complete bank-wide certification remains outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
     "id": "tv_59388",
-    "question": "Who hosted the first two Australian seasons?",
+    "question": "The Traitors (Australia): Who hosted the first two Australian seasons?",
     "answers": [
       "Paul Henry",
       "Alan Cumming",
@@ -31,7 +31,7 @@ const questions = [
   },
   {
     "id": "tv_59389",
-    "question": "Who won the first Australian season as a Traitor?",
+    "question": "The Traitors (Australia): Who won the first Australian season as a Traitor?",
     "answers": [
       "Alex Duggan",
       "Kirby Bentley",
@@ -58,7 +58,7 @@ const questions = [
   },
   {
     "id": "tv_59390",
-    "question": "Which hotel was the setting for the first two Australian seasons?",
+    "question": "The Traitors (Australia): Which hotel was the setting for the first two Australian seasons?",
     "answers": [
       "The Langham Sydney",
       "Robertson Hotel",
@@ -139,7 +139,7 @@ const questions = [
   },
   {
     "id": "tv_59393",
-    "question": "Why was no prize money won in the second Australian season?",
+    "question": "The Traitors (Australia): Why was no prize money won in the second Australian season?",
     "answers": [
       "All three finalists chose Steal",
       "All three chose Share",
@@ -166,7 +166,7 @@ const questions = [
   },
   {
     "id": "tv_59394",
-    "question": "Who took over as presenter of the revived Australian edition?",
+    "question": "The Traitors (Australia): Who took over as presenter of the revived Australian edition?",
     "answers": [
       "Madeleine Sami",
       "Gretel Killeen",
@@ -193,7 +193,7 @@ const questions = [
   },
   {
     "id": "tv_59395",
-    "question": "Who won the revived Australian season in 2026?",
+    "question": "The Traitors (Australia): Who won the revived Australian season in 2026?",
     "answers": [
       "Bailey Kench",
       "Chloe Withrington",
@@ -220,7 +220,7 @@ const questions = [
   },
   {
     "id": "tv_59396",
-    "question": "Which network originally broadcast the Australian edition?",
+    "question": "The Traitors (Australia): Which network originally broadcast the Australian edition?",
     "answers": [
       "Seven Network",
       "Nine Network",
@@ -247,7 +247,7 @@ const questions = [
   },
   {
     "id": "tv_59397",
-    "question": "Who hosted the first two New Zealand seasons?",
+    "question": "The Traitors (New Zealand): Who hosted the first two New Zealand seasons?",
     "answers": [
       "Paul Henry",
       "Rodger Corser",
@@ -274,7 +274,7 @@ const questions = [
   },
   {
     "id": "tv_59398",
-    "question": "Which pair of Faithfuls won the inaugural New Zealand season?",
+    "question": "The Traitors (New Zealand): Which pair of Faithfuls won the inaugural New Zealand season?",
     "answers": [
       "Chloe Withrington and Paul Henry",
       "Anna Reeve and Sam Smith",
@@ -301,7 +301,7 @@ const questions = [
   },
   {
     "id": "tv_59399",
-    "question": "Which lodge was the setting for the inaugural New Zealand season?",
+    "question": "The Traitors (New Zealand): Which lodge was the setting for the inaugural New Zealand season?",
     "answers": [
       "Eagles Nest",
       "Blanket Bay",
@@ -328,7 +328,7 @@ const questions = [
   },
   {
     "id": "tv_59400",
-    "question": "Who won the second New Zealand season?",
+    "question": "The Traitors (New Zealand): Who won the second New Zealand season?",
     "answers": [
       "Anna Reeve",
       "Sam Smith",
@@ -355,7 +355,7 @@ const questions = [
   },
   {
     "id": "tv_59401",
-    "question": "Who succeeded Paul Henry as presenter?",
+    "question": "The Traitors (New Zealand): Who succeeded Paul Henry as presenter?",
     "answers": [
       "Madeleine Sami",
       "Gretel Killeen",
@@ -382,7 +382,7 @@ const questions = [
   },
   {
     "id": "tv_59402",
-    "question": "Who won the third New Zealand season?",
+    "question": "The Traitors (New Zealand): Who won the third New Zealand season?",
     "answers": [
       "Alex Duggan",
       "Chloe Withrington",
@@ -409,7 +409,7 @@ const questions = [
   },
   {
     "id": "tv_59403",
-    "question": "Which television channel launched the New Zealand edition?",
+    "question": "The Traitors (New Zealand): Which television channel launched the New Zealand edition?",
     "answers": [
       "TVNZ 2",
       "Prime",
@@ -458,7 +458,7 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Ireland",
       "Format",
-      "Source: https://www.radiotimes.com/tv/entertainment/reality-tv/the-traitors-international-versions-guide/"
+      "Source: https://www.rte.ie/entertainment/2026/0808/1586846-the-traitors-ireland-returns-to-rte-at-the-end-of-august/"
     ]
   },
   {
@@ -485,7 +485,7 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Ireland",
       "Format",
-      "Source: https://www.radiotimes.com/tv/entertainment/reality-tv/the-traitors-international-versions-guide/"
+      "Source: https://www.rte.ie/entertainment/2026/0808/1586846-the-traitors-ireland-returns-to-rte-at-the-end-of-august/"
     ]
   },
   {
@@ -517,7 +517,7 @@ const questions = [
   },
   {
     "id": "tv_59407",
-    "question": "Which trio of Faithfuls won the first Irish series?",
+    "question": "The Traitors (Ireland): Which trio of Faithfuls won the first Irish series?",
     "answers": [
       "Vanessa Ogbonna, Anna Murphy and Diego Caixeta",
       "Oyin Adeyemi, Carla Geary and Diego Caixeta",
@@ -539,12 +539,12 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Ireland",
       "Season 1",
-      "Source: https://en.wikipedia.org/wiki/The_Traitors"
+      "Source: https://www.rte.ie/entertainment/2025/0926/1535532-viewers-faithful-and-then-some-to-traitors-ireland/"
     ]
   },
   {
     "id": "tv_59408",
-    "question": "Which pair won the second Irish series?",
+    "question": "The Traitors (Ireland): Which pair won the second Irish series?",
     "answers": [
       "Kelley Higgins and Oyin Adeyemi",
       "Vanessa Ogbonna and Anna Murphy",
@@ -566,12 +566,12 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Ireland",
       "Season 2",
-      "Source: https://en.wikipedia.org/wiki/The_Traitors"
+      "Source: https://www.rte.ie/entertainment/2026/0923/1592628-third-series-of-the-traitors-confirmed-by-rte/"
     ]
   },
   {
     "id": "tv_59409",
-    "question": "Which channel launched the Irish edition?",
+    "question": "The Traitors (Ireland): Which channel launched the Irish edition?",
     "answers": [
       "RTÉ One",
       "Virgin Media One",
@@ -593,7 +593,7 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Ireland",
       "Format",
-      "Source: https://en.wikipedia.org/wiki/The_Traitors"
+      "Source: https://www.rte.ie/entertainment/2026/0808/1586846-the-traitors-ireland-returns-to-rte-at-the-end-of-august/"
     ]
   },
   {
@@ -620,12 +620,12 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Canada (English)",
       "Format",
-      "Source: https://www.radiotimes.com/tv/entertainment/reality-tv/the-traitors-international-versions-guide/"
+      "Source: https://www.bellmedia.ca/the-lede/press/ctv-stays-faithful-with-fifth-season-order-of-the-traitors-canada/"
     ]
   },
   {
     "id": "tv_59411",
-    "question": "Which broadcaster launched the English-language Canadian edition?",
+    "question": "The Traitors (Canada (English)): Which broadcaster launched the English-language Canadian edition?",
     "answers": [
       "Global",
       "Citytv",
@@ -647,12 +647,12 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Canada (English)",
       "Format",
-      "Source: https://www.radiotimes.com/tv/entertainment/reality-tv/the-traitors-international-versions-guide/"
+      "Source: https://www.bellmedia.ca/the-lede/press/the-last-twists-cut-the-deepest-as-season-1-of-the-traitors-canada-concludes//"
     ]
   },
   {
     "id": "tv_59412",
-    "question": "Which Quebec manor is the setting of the English-language Canadian edition?",
+    "question": "The Traitors (Canada (English)): Which Quebec manor is the setting of the English-language Canadian edition?",
     "answers": [
       "Château Frontenac",
       "Château de Mielmont",
@@ -679,7 +679,7 @@ const questions = [
   },
   {
     "id": "tv_59413",
-    "question": "Who won the first English-language Canadian season?",
+    "question": "The Traitors (Canada (English)): Who won the first English-language Canadian season?",
     "answers": [
       "Mike D'Urzo",
       "Neda Kalantar",
@@ -701,12 +701,12 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Canada (English)",
       "Season 1",
-      "Source: https://en.wikipedia.org/wiki/The_Traitors"
+      "Source: https://www.bellmedia.ca/the-lede/press/the-last-twists-cut-the-deepest-as-season-1-of-the-traitors-canada-concludes//"
     ]
   },
   {
     "id": "tv_59414",
-    "question": "Who won the second English-language Canadian season?",
+    "question": "The Traitors (Canada (English)): Who won the second English-language Canadian season?",
     "answers": [
       "Sherod Beneby",
       "Neda Kalantar",
@@ -728,12 +728,12 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Canada (English)",
       "Season 2",
-      "Source: https://en.wikipedia.org/wiki/The_Traitors"
+      "Source: https://www.bellmedia.ca/the-lede/press/from-grimy-graves-to-burning-betrayals-the-season-2-finale-of-the-traitors-canada-doesnt-disappoint/"
     ]
   },
   {
     "id": "tv_59415",
-    "question": "Which pair won the third English-language Canadian season?",
+    "question": "The Traitors (Canada (English)): Which pair won the third English-language Canadian season?",
     "answers": [
       "Sherod Beneby and Dom Gabriel",
       "Neda Kalantar and Hollywood Jade",
@@ -760,7 +760,7 @@ const questions = [
   },
   {
     "id": "tv_59416",
-    "question": "Who won the fourth English-language Canadian season?",
+    "question": "The Traitors (Canada (English)): Who won the fourth English-language Canadian season?",
     "answers": [
       "Mike D'Urzo",
       "Dom Gabriel",
@@ -809,12 +809,12 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Canada (French)",
       "Format",
-      "Source: https://en.wikipedia.org/wiki/The_Traitors"
+      "Source: https://www.bellmedia.ca/the-lede/press/ctv-stays-faithful-with-fifth-season-order-of-the-traitors-canada/"
     ]
   },
   {
     "id": "tv_59418",
-    "question": "Which trio won the first Quebec season?",
+    "question": "The Traitors (Canada (French)): Which trio won the first Quebec season?",
     "answers": [
       "Cédric Fofana, Jacob Grégoire and Kaven Daigle",
       "Cédric Fofana, Chelsea Jones and Kim Hardy",
@@ -841,7 +841,7 @@ const questions = [
   },
   {
     "id": "tv_59419",
-    "question": "Which pair won the second Quebec season?",
+    "question": "The Traitors (Canada (French)): Which pair won the second Quebec season?",
     "answers": [
       "Chelsea Jones and Kim Hardy",
       "Cédric Fofana and Kaven Daigle",
@@ -868,7 +868,7 @@ const questions = [
   },
   {
     "id": "tv_59420",
-    "question": "Which pair won the third Quebec season?",
+    "question": "The Traitors (Canada (French)): Which pair won the third Quebec season?",
     "answers": [
       "Audrey Morissette and Kaven Daigle",
       "Chelsea Jones and Kim Hardy",
@@ -922,7 +922,7 @@ const questions = [
   },
   {
     "id": "tv_59422",
-    "question": "Which pair unusually shared victory in the first Dutch season as a Faithful and a Traitor respectively?",
+    "question": "The Traitors (Netherlands): Which pair unusually shared victory in the first Dutch season as a Faithful and a Traitor respectively?",
     "answers": [
       "Géza Weisz and Robert van Hemert",
       "Chatilla van Grinsven and Samantha Steenwijk",
@@ -949,7 +949,7 @@ const questions = [
   },
   {
     "id": "tv_59423",
-    "question": "Which seasonal theme was used for a Dutch spin-off starting in 2022?",
+    "question": "The Traitors (Netherlands): Which seasonal theme was used for a Dutch spin-off starting in 2022?",
     "answers": [
       "Easter",
       "New Year",
@@ -976,7 +976,7 @@ const questions = [
   },
   {
     "id": "tv_59424",
-    "question": "Who presented the Dutch Halloween seasons?",
+    "question": "The Traitors (Netherlands): Who presented the Dutch Halloween seasons?",
     "answers": [
       "Tijl Beckand",
       "Art Rooijakkers",
@@ -1003,7 +1003,7 @@ const questions = [
   },
   {
     "id": "tv_59425",
-    "question": "Which streaming service had a separate Dutch edition in 2021?",
+    "question": "The Traitors (Netherlands): Which streaming service had a separate Dutch edition in 2021?",
     "answers": [
       "Videoland",
       "Netflix",
@@ -1030,7 +1030,7 @@ const questions = [
   },
   {
     "id": "tv_59426",
-    "question": "Who hosted the Dutch streaming-service edition in 2021?",
+    "question": "The Traitors (Netherlands): Who hosted the Dutch streaming-service edition in 2021?",
     "answers": [
       "Staf Coppens",
       "Art Rooijakkers",
@@ -1057,7 +1057,7 @@ const questions = [
   },
   {
     "id": "tv_59427",
-    "question": "Who won the fourth regular Dutch season?",
+    "question": "The Traitors (Netherlands): Who won the fourth regular Dutch season?",
     "answers": [
       "Christiaan Bauer",
       "Géza Weisz",
@@ -1084,7 +1084,7 @@ const questions = [
   },
   {
     "id": "tv_59428",
-    "question": "Which pair won the sixth regular Dutch season?",
+    "question": "The Traitors (Netherlands): Which pair won the sixth regular Dutch season?",
     "answers": [
       "Christiaan Bauer and Julia Heetman",
       "Billy Dans and Chahid Charrak",
@@ -1138,7 +1138,7 @@ const questions = [
   },
   {
     "id": "tv_59430",
-    "question": "Which channel airs the Flemish edition?",
+    "question": "The Traitors (Belgium (Flemish)): Which channel airs the Flemish edition?",
     "answers": [
       "TV4",
       "VTM",
@@ -1165,7 +1165,7 @@ const questions = [
   },
   {
     "id": "tv_59431",
-    "question": "Which pair won the second Flemish season?",
+    "question": "The Traitors (Belgium (Flemish)): Which pair won the second Flemish season?",
     "answers": [
       "Sean Dhondt and William Boeva",
       "Eliyha Altena and Yannick Noben",
@@ -1192,7 +1192,7 @@ const questions = [
   },
   {
     "id": "tv_59432",
-    "question": "Who won the fifth Flemish season?",
+    "question": "The Traitors (Belgium (Flemish)): Who won the fifth Flemish season?",
     "answers": [
       "Charlotte Sieben",
       "Kim Van Oncen",
@@ -1219,7 +1219,7 @@ const questions = [
   },
   {
     "id": "tv_59433",
-    "question": "Who presents the French-language Belgian edition?",
+    "question": "The Traitors (Belgium (French)): Who presents the French-language Belgian edition?",
     "answers": [
       "Frédéric Etherlinck",
       "Staf Coppens",
@@ -1246,7 +1246,7 @@ const questions = [
   },
   {
     "id": "tv_59434",
-    "question": "Which channel airs the French-language Belgian edition?",
+    "question": "The Traitors (Belgium (French)): Which channel airs the French-language Belgian edition?",
     "answers": [
       "Noovo",
       "RTL-TVI",
@@ -1273,7 +1273,7 @@ const questions = [
   },
   {
     "id": "tv_59435",
-    "question": "Who won the third French-language Belgian season?",
+    "question": "The Traitors (Belgium (French)): Who won the third French-language Belgian season?",
     "answers": [
       "Pholien Systermans",
       "Vanessa Matagne",
@@ -1327,7 +1327,7 @@ const questions = [
   },
   {
     "id": "tv_59437",
-    "question": "Which channel launched the Bulgarian edition?",
+    "question": "The Traitors (Bulgaria): Which channel launched the Bulgarian edition?",
     "answers": [
       "bTV",
       "Prima",
@@ -1349,7 +1349,7 @@ const questions = [
       "Programme: The Traitors International Editions",
       "Country: Bulgaria",
       "Format",
-      "Source: https://www.radiotimes.com/tv/entertainment/reality-tv/the-traitors-international-versions-guide/"
+      "Source: https://www.btv.bg/english/news/tv-sensation-and-winner-of-the-format-of-the-year-award-the-traitors-now-in-bulgaria.html"
     ]
   },
   {
@@ -1381,7 +1381,7 @@ const questions = [
   },
   {
     "id": "tv_59439",
-    "question": "Who won the first Czech season?",
+    "question": "The Traitors (Czech Republic): Who won the first Czech season?",
     "answers": [
       "Katia Mosally",
       "Ines Stana",
@@ -1408,7 +1408,7 @@ const questions = [
   },
   {
     "id": "tv_59440",
-    "question": "Who won the second Czech season?",
+    "question": "The Traitors (Czech Republic): Who won the second Czech season?",
     "answers": [
       "Nicole Šáchová",
       "Katia Mosally",
@@ -1435,7 +1435,7 @@ const questions = [
   },
   {
     "id": "tv_59441",
-    "question": "Which personal iDNES.cz Television Award did host Vojtěch Kotek win?",
+    "question": "The Traitors (Czech Republic): Which personal iDNES.cz Television Award did host Vojtěch Kotek win?",
     "answers": [
       "Personality of the Year",
       "Best Dramatic Actor",
@@ -1489,7 +1489,7 @@ const questions = [
   },
   {
     "id": "tv_59443",
-    "question": "What is the subtitle of the Danish civilian spin-off?",
+    "question": "The Traitors (Denmark): What is the subtitle of the Danish civilian spin-off?",
     "answers": [
       "Vertraue Niemandem",
       "Zdrajcy",
@@ -1516,7 +1516,7 @@ const questions = [
   },
   {
     "id": "tv_59444",
-    "question": "Who hosts the Danish civilian edition?",
+    "question": "The Traitors (Denmark): Who hosts the Danish civilian edition?",
     "answers": [
       "Lise Rønne",
       "Mads Hansen",
@@ -1543,7 +1543,7 @@ const questions = [
   },
   {
     "id": "tv_59445",
-    "question": "Who won the first Danish celebrity season?",
+    "question": "The Traitors (Denmark): Who won the first Danish celebrity season?",
     "answers": [
       "Johannes Nymark",
       "Marc Karaket Bach Nielsen",
@@ -1570,7 +1570,7 @@ const questions = [
   },
   {
     "id": "tv_59446",
-    "question": "What is the title of the Estonian adaptation?",
+    "question": "The Traitors (Estonia): What is the title of the Estonian adaptation?",
     "answers": [
       "Förrädarna",
       "Reeturid",
@@ -1624,7 +1624,7 @@ const questions = [
   },
   {
     "id": "tv_59448",
-    "question": "What is the Finnish edition called?",
+    "question": "The Traitors (Finland): What is the Finnish edition called?",
     "answers": [
       "Forræder",
       "Förrädarna",
@@ -1651,7 +1651,7 @@ const questions = [
   },
   {
     "id": "tv_59449",
-    "question": "Who hosts the Finnish edition?",
+    "question": "The Traitors (Finland): Who hosts the Finnish edition?",
     "answers": [
       "Christoffer Strandberg",
       "Mads Hansen",
@@ -1678,7 +1678,7 @@ const questions = [
   },
   {
     "id": "tv_59450",
-    "question": "Which pair won the first Finnish season?",
+    "question": "The Traitors (Finland): Which pair won the first Finnish season?",
     "answers": [
       "Janne Grönroos and Tiina Forsby",
       "Heikki Sorsa and Sita Salminen",
@@ -1759,7 +1759,7 @@ const questions = [
   },
   {
     "id": "tv_59453",
-    "question": "Which pair won the inaugural French season?",
+    "question": "The Traitors (France): Which pair won the inaugural French season?",
     "answers": [
       "Clémence Castel and David Douillet",
       "Hugo Manos and Laurent Ruquier",
@@ -1786,7 +1786,7 @@ const questions = [
   },
   {
     "id": "tv_59454",
-    "question": "Who won the second French season?",
+    "question": "The Traitors (France): Who won the second French season?",
     "answers": [
       "Laurent Ruquier",
       "Juju Fitcats",
@@ -1813,7 +1813,7 @@ const questions = [
   },
   {
     "id": "tv_59455",
-    "question": "Which couple won the third French season?",
+    "question": "The Traitors (France): Which couple won the third French season?",
     "answers": [
       "Adriana Karembeu and Issa Doumbia",
       "Christine Bravo and Théo Fernandez",
@@ -1840,7 +1840,7 @@ const questions = [
   },
   {
     "id": "tv_59456",
-    "question": "Which former footballer won the fourth French season?",
+    "question": "The Traitors (France): Which former footballer won the fourth French season?",
     "answers": [
       "David Douillet",
       "Thierry Henry",
@@ -1867,7 +1867,7 @@ const questions = [
   },
   {
     "id": "tv_59457",
-    "question": "What is the subtitle of the French spin-off featuring online content creators?",
+    "question": "The Traitors (France): What is the subtitle of the French spin-off featuring online content creators?",
     "answers": [
       "Nouvelle Génération",
       "Ukendt Grund",
@@ -1948,7 +1948,7 @@ const questions = [
   },
   {
     "id": "tv_59460",
-    "question": "Which pair won the fourth German season?",
+    "question": "The Traitors (Germany): Which pair won the fourth German season?",
     "answers": [
       "Anna-Carina Woitschack and Vincent Gross",
       "Jessica Haller and Oana Nechiti",
@@ -2002,7 +2002,7 @@ const questions = [
   },
   {
     "id": "tv_59462",
-    "question": "Who won the first Greek season?",
+    "question": "The Traitors (Greece): Who won the first Greek season?",
     "answers": [
       "Adil Rami",
       "Giorgos Talias",
@@ -2029,7 +2029,7 @@ const questions = [
   },
   {
     "id": "tv_59463",
-    "question": "Who presents Az Árulók?",
+    "question": "The Traitors (Hungary): Who presents Az Árulók?",
     "answers": [
       "Mads Hansen",
       "Giray Altınok",
@@ -2056,7 +2056,7 @@ const questions = [
   },
   {
     "id": "tv_59464",
-    "question": "Who won the third Hungarian season?",
+    "question": "The Traitors (Hungary): Who won the third Hungarian season?",
     "answers": [
       "Sándor Torghelle",
       "Piréz Sapkás",
@@ -2083,7 +2083,7 @@ const questions = [
   },
   {
     "id": "tv_59465",
-    "question": "Which pair won the fourth Hungarian season?",
+    "question": "The Traitors (Hungary): Which pair won the fourth Hungarian season?",
     "answers": [
       "Barbara Schoblocher and Sándor Torghelle",
       "Piréz Sapkás and Vivien Vasvári",
@@ -2110,7 +2110,7 @@ const questions = [
   },
   {
     "id": "tv_59466",
-    "question": "Who hosts the Hindi-language edition?",
+    "question": "The Traitors (India (Hindi)): Who hosts the Hindi-language edition?",
     "answers": [
       "Salman Khan",
       "Karan Johar",
@@ -2137,7 +2137,7 @@ const questions = [
   },
   {
     "id": "tv_59467",
-    "question": "In which Indian state was the inaugural Hindi edition filmed?",
+    "question": "The Traitors (India (Hindi)): In which Indian state was the inaugural Hindi edition filmed?",
     "answers": [
       "Kerala",
       "Punjab",
@@ -2164,7 +2164,7 @@ const questions = [
   },
   {
     "id": "tv_59468",
-    "question": "Which two Faithfuls won the first Hindi-language season?",
+    "question": "The Traitors (India (Hindi)): Which two Faithfuls won the first Hindi-language season?",
     "answers": [
       "Krystle D'Souza and Rida Tharana",
       "Shravya Varma and Sweekar Agasthi",
@@ -2218,7 +2218,7 @@ const questions = [
   },
   {
     "id": "tv_59470",
-    "question": "Who presents the Telugu-language edition?",
+    "question": "The Traitors (India (Telugu)): Who presents the Telugu-language edition?",
     "answers": [
       "Salman Khan",
       "Teja Sajja",
@@ -2245,7 +2245,7 @@ const questions = [
   },
   {
     "id": "tv_59471",
-    "question": "Which pair won the inaugural Telugu-language edition?",
+    "question": "The Traitors (India (Telugu)): Which pair won the inaugural Telugu-language edition?",
     "answers": [
       "Krystle D'Souza and Rida Tharana",
       "Anshula Kapoor and Elnaaz Nourouzi",
@@ -2272,7 +2272,7 @@ const questions = [
   },
   {
     "id": "tv_59472",
-    "question": "What is the transliterated title of the Israeli edition?",
+    "question": "The Traitors (Israel): What is the transliterated title of the Israeli edition?",
     "answers": [
       "Petolliset",
       "Zradnyky",
@@ -2299,7 +2299,7 @@ const questions = [
   },
   {
     "id": "tv_59473",
-    "question": "Which presenting duo hosts the Israeli edition?",
+    "question": "The Traitors (Israel): Which presenting duo hosts the Israeli edition?",
     "answers": [
       "Assi Azar and Rotem Sela",
       "Mads Hansen and Lise Rønne",
@@ -2326,7 +2326,7 @@ const questions = [
   },
   {
     "id": "tv_59474",
-    "question": "Who won the first Israeli season?",
+    "question": "The Traitors (Israel): Who won the first Israeli season?",
     "answers": [
       "Ines Stana",
       "Ronnie Insaz",
@@ -2380,7 +2380,7 @@ const questions = [
   },
   {
     "id": "tv_59476",
-    "question": "Who won the inaugural Italian season?",
+    "question": "The Traitors (Italy): Who won the inaugural Italian season?",
     "answers": [
       "Adil Rami",
       "Daniele Gattano",
@@ -2407,7 +2407,7 @@ const questions = [
   },
   {
     "id": "tv_59477",
-    "question": "Which pair won the second Italian season?",
+    "question": "The Traitors (Italy): Which pair won the second Italian season?",
     "answers": [
       "Daniele Gattano and Pasquale La Rocca",
       "Hugo Manos and Laurent Ruquier",
@@ -2461,7 +2461,7 @@ const questions = [
   },
   {
     "id": "tv_59479",
-    "question": "Which pair won the first Norwegian season?",
+    "question": "The Traitors (Norway): Which pair won the first Norwegian season?",
     "answers": [
       "Jon Martin Henriksen and Marlene Stavrum",
       "Aslak Maurstad and Gaute Berg Næss",
@@ -2488,7 +2488,7 @@ const questions = [
   },
   {
     "id": "tv_59480",
-    "question": "Who won the second Norwegian season?",
+    "question": "The Traitors (Norway): Who won the second Norwegian season?",
     "answers": [
       "Gaute Berg Næss",
       "Mads Hansen",
@@ -2542,7 +2542,7 @@ const questions = [
   },
   {
     "id": "tv_59482",
-    "question": "In which country was the Polish adaptation filmed at Château de Mielmont?",
+    "question": "The Traitors (Poland): In which country was the Polish adaptation filmed at Château de Mielmont?",
     "answers": [
       "Germany",
       "Belgium",
@@ -2569,7 +2569,7 @@ const questions = [
   },
   {
     "id": "tv_59483",
-    "question": "Which pair won the first Polish season?",
+    "question": "The Traitors (Poland): Which pair won the first Polish season?",
     "answers": [
       "Grzegorz Raubo and Tomasz Świtała",
       "Barbara Schoblocher and Sándor Torghelle",
@@ -2623,7 +2623,7 @@ const questions = [
   },
   {
     "id": "tv_59485",
-    "question": "Which pair won the first Portuguese season?",
+    "question": "The Traitors (Portugal): Which pair won the first Portuguese season?",
     "answers": [
       "Carolina de Brito Palma and Júlio Ferreira",
       "Joana Pastrana and Leo Margets",
@@ -2677,7 +2677,7 @@ const questions = [
   },
   {
     "id": "tv_59487",
-    "question": "Who won the inaugural Romanian season?",
+    "question": "The Traitors (Romania): Who won the inaugural Romanian season?",
     "answers": [
       "Katia Mosally",
       "Věra Kirchnerová",
@@ -2731,7 +2731,7 @@ const questions = [
   },
   {
     "id": "tv_59489",
-    "question": "Who hosts the Serbian edition?",
+    "question": "The Traitors (Serbia): Who hosts the Serbian edition?",
     "answers": [
       "Jelena Gavrilović",
       "Ana Ularu",
@@ -2758,7 +2758,7 @@ const questions = [
   },
   {
     "id": "tv_59490",
-    "question": "Who hosted the first Spanish season?",
+    "question": "The Traitors (Spain): Who hosted the first Spanish season?",
     "answers": [
       "Giray Altınok",
       "Sergio Peris-Mencheta",
@@ -2785,7 +2785,7 @@ const questions = [
   },
   {
     "id": "tv_59491",
-    "question": "Who succeeded Sergio Peris-Mencheta as presenter?",
+    "question": "The Traitors (Spain): Who succeeded Sergio Peris-Mencheta as presenter?",
     "answers": [
       "Antonio Banderas",
       "Javier Bardem",
@@ -2812,7 +2812,7 @@ const questions = [
   },
   {
     "id": "tv_59492",
-    "question": "Which pair won the inaugural Spanish season?",
+    "question": "The Traitors (Spain): Which pair won the inaugural Spanish season?",
     "answers": [
       "Charo González and Juan Ferrer",
       "Carolina de Brito Palma and Júlio Ferreira",
@@ -2839,7 +2839,7 @@ const questions = [
   },
   {
     "id": "tv_59493",
-    "question": "Which pair won the second Spanish season?",
+    "question": "The Traitors (Spain): Which pair won the second Spanish season?",
     "answers": [
       "Charo González and Juan Ferrer",
       "Joana Pastrana and Leo Margets",
@@ -2893,7 +2893,7 @@ const questions = [
   },
   {
     "id": "tv_59495",
-    "question": "Who won the first Swedish season?",
+    "question": "The Traitors (Sweden): Who won the first Swedish season?",
     "answers": [
       "Patrik Norqvist",
       "Kaeli Abdi",
@@ -2920,7 +2920,7 @@ const questions = [
   },
   {
     "id": "tv_59496",
-    "question": "Who won the fourth Swedish season?",
+    "question": "The Traitors (Sweden): Who won the fourth Swedish season?",
     "answers": [
       "Katia Mosally",
       "Patrik Norqvist",
@@ -2974,7 +2974,7 @@ const questions = [
   },
   {
     "id": "tv_59498",
-    "question": "Which trio won the first Turkish season?",
+    "question": "The Traitors (Turkey): Which trio won the first Turkish season?",
     "answers": [
       "Joana Pastrana, Leo Margets and Juan Ferrer",
       "Emir Elidemir, Özgür Balakar and Saadet Özsırkıntı",
@@ -3028,7 +3028,7 @@ const questions = [
   },
   {
     "id": "tv_59500",
-    "question": "Who won the inaugural Ukrainian season?",
+    "question": "The Traitors (Ukraine): Who won the inaugural Ukrainian season?",
     "answers": [
       "Dmytro Morozyuk",
       "Ines Stana",
@@ -3055,7 +3055,7 @@ const questions = [
   },
   {
     "id": "tv_59501",
-    "question": "Who won the second Ukrainian season?",
+    "question": "The Traitors (Ukraine): Who won the second Ukrainian season?",
     "answers": [
       "Dmytro Morozyuk",
       "Anastasiya Bychkova",
