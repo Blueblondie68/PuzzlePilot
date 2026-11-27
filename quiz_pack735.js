@@ -6016,5 +6016,444 @@ module.exports = [
                 "Actor: Matthew Lewis",
                 "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_–_Part_2"
             ]
-        }
+        },
+    {
+        "id": "film_5514",
+        "question": "In Harry Potter and the Philosopher's Stone, what does Hagrid give Harry to eat on his birthday after finding the Dursleys at the hut?",
+        "answers": [
+            "A cake",
+            "A Chocolate Frog",
+            "A box of sugared almonds",
+            "A treacle tart"
+        ],
+        "correctAnswer": "A cake",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Philosopher's Stone",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Philosopher's Stone",
+            "2001",
+            "Fantasy",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"
+        ]
+    },
+    {
+        "id": "film_5515",
+        "question": "In Harry Potter and the Philosopher's Stone, who plays Lee Jordan, the Quidditch commentator?",
+        "answers": [
+            "Alfred Enoch",
+            "Devon Murray",
+            "Matthew Lewis",
+            "Luke Youngblood"
+        ],
+        "correctAnswer": "Luke Youngblood",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Philosopher's Stone",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Philosopher's Stone",
+            "2001",
+            "Fantasy",
+            "Cast",
+            "Character: Lee Jordan",
+            "Actor: Luke Youngblood",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"
+        ]
+    },
+    {
+        "id": "film_5516",
+        "question": "In Harry Potter and the Chamber of Secrets, how do Fred and George pull the bars from Harry's bedroom window when they arrive to rescue him?",
+        "answers": [
+            "They point Ron's wand at the window",
+            "They borrow a ladder and lever out the bars",
+            "They persuade Vernon to unlock the bars",
+            "They attach a rope to the flying car"
+        ],
+        "correctAnswer": "They attach a rope to the flying car",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Chamber of Secrets",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Chamber of Secrets",
+            "2002",
+            "Fantasy",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Chamber_of_Secrets_(film)"
+        ]
+    },
+    {
+        "id": "film_5517",
+        "question": "In Harry Potter and the Chamber of Secrets, who reopens the Chamber while under the influence of Tom Riddle's diary?",
+        "answers": [
+            "Colin Creevey",
+            "Justin Finch-Fletchley",
+            "Ginny Weasley",
+            "Draco Malfoy"
+        ],
+        "correctAnswer": "Ginny Weasley",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Chamber of Secrets",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Chamber of Secrets",
+            "2002",
+            "Fantasy",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Chamber_of_Secrets_(film)"
+        ]
+    },
+    {
+        "id": "film_5518",
+        "question": "In Harry Potter and the Chamber of Secrets, what is Colin Creevey looking through when he sees the Basilisk and is petrified?",
+        "answers": [
+            "A mirror",
+            "His camera",
+            "A window in the library",
+            "An old telescope"
+        ],
+        "correctAnswer": "His camera",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Chamber of Secrets",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Chamber of Secrets",
+            "2002",
+            "Fantasy",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Chamber_of_Secrets_(film)"
+        ]
+    },
+    {
+        "id": "film_5519",
+        "question": "In Harry Potter and the Prisoner of Azkaban, what unusual passenger accessory gives advice to the driver of the Knight Bus?",
+        "answers": [
+            "A talking shrunken head",
+            "A talking portrait of a wizard",
+            "A silver compass that speaks",
+            "A small figure carved into the steering wheel"
+        ],
+        "correctAnswer": "A talking shrunken head",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Prisoner of Azkaban",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Prisoner of Azkaban",
+            "2004",
+            "Fantasy",
+            "Storyline",
+            "Source: https://www.harrypotter.com/features/101-thoughts-we-had-while-watching-prisoner-of-azkaban"
+        ]
+    },
+    {
+        "id": "film_5520",
+        "question": "In Harry Potter and the Prisoner of Azkaban, why does Harry have trouble getting permission to visit Hogsmeade?",
+        "answers": [
+            "His guardians have not signed the permission form",
+            "He is below the minimum age",
+            "He has already used his allotted visits",
+            "He received a detention for missing the train"
+        ],
+        "correctAnswer": "His guardians have not signed the permission form",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Prisoner of Azkaban",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Prisoner of Azkaban",
+            "2004",
+            "Fantasy",
+            "Storyline",
+            "Source: https://www.harrypotter.com/features/101-thoughts-we-had-while-watching-prisoner-of-azkaban"
+        ]
+    },
+    {
+        "id": "film_5521",
+        "question": "In Harry Potter and the Goblet of Fire, what does Harry do with the golden egg to hear its message clearly?",
+        "answers": [
+            "He places it beside the fire",
+            "He taps it with his wand",
+            "He listens to it from inside the maze",
+            "He opens it underwater"
+        ],
+        "correctAnswer": "He opens it underwater",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Goblet of Fire",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Goblet of Fire",
+            "2005",
+            "Fantasy",
+            "Storyline",
+            "Source: https://www.harrypotter.com/discover/films/harry-potter-and-the-goblet-of-fire"
+        ]
+    },
+    {
+        "id": "film_5522",
+        "question": "In Harry Potter and the Goblet of Fire, which Pulp frontman appears as a member of the band playing at the Yule Ball?",
+        "answers": [
+            "Brett Anderson",
+            "Damon Albarn",
+            "Jarvis Cocker",
+            "Richard Ashcroft"
+        ],
+        "correctAnswer": "Jarvis Cocker",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Goblet of Fire",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Goblet of Fire",
+            "2005",
+            "Fantasy",
+            "Music",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Goblet_of_Fire_(soundtrack)"
+        ]
+    },
+    {
+        "id": "film_5523",
+        "question": "In Harry Potter and the Order of the Phoenix, which examinations are in progress when the Weasley twins disrupt the Great Hall with fireworks?",
+        "answers": [
+            "N.E.W.T.s",
+            "O.W.L.s",
+            "The first-year flying tests",
+            "The Defence Against the Dark Arts entrance examinations"
+        ],
+        "correctAnswer": "O.W.L.s",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Order of the Phoenix",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Order of the Phoenix",
+            "2007",
+            "Fantasy",
+            "Storyline",
+            "Source: https://www.harrypotter.com/features/things-not-in-the-harry-potter-films-part-two"
+        ]
+    },
+    {
+        "id": "film_5524",
+        "question": "In Harry Potter and the Order of the Phoenix, what does the Dementor attack at the start of the film force Harry to do in front of Dudley?",
+        "answers": [
+            "Use a Summoning Charm",
+            "Cast a Patronus",
+            "Take out his Invisibility Cloak",
+            "Disarm a Death Eater"
+        ],
+        "correctAnswer": "Cast a Patronus",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Order of the Phoenix",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Order of the Phoenix",
+            "2007",
+            "Fantasy",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Order_of_the_Phoenix_(film)"
+        ]
+    },
+    {
+        "id": "film_5525",
+        "question": "In Harry Potter and the Order of the Phoenix, what does Umbridge forbid in lessons that prompts the students to practise together in secret?",
+        "answers": [
+            "Practical defensive magic",
+            "The use of textbooks",
+            "Studying with students from other houses",
+            "Entering the library after dinner"
+        ],
+        "correctAnswer": "Practical defensive magic",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Order of the Phoenix",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Order of the Phoenix",
+            "2007",
+            "Fantasy",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Order_of_the_Phoenix_(film)"
+        ]
+    },
+    {
+        "id": "film_5526",
+        "question": "In Harry Potter and the Half-Blood Prince, what happens to the Burrow after Bellatrix and Greyback draw the Weasleys outside?",
+        "answers": [
+            "It is swallowed by a sinkhole",
+            "It is carried off by a giant",
+            "It is sealed by a magical barrier",
+            "It catches fire"
+        ],
+        "correctAnswer": "It catches fire",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Half-Blood Prince",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Half-Blood Prince",
+            "2009",
+            "Fantasy",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Half-Blood_Prince_(film)"
+        ]
+    },
+    {
+        "id": "film_5527",
+        "question": "In Harry Potter and the Half-Blood Prince, what kind of pet did Lily Potter give Slughorn, as he recalls at Hagrid's table?",
+        "answers": [
+            "A toad",
+            "An owl",
+            "A fish",
+            "A cat"
+        ],
+        "correctAnswer": "A fish",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Half-Blood Prince",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Half-Blood Prince",
+            "2009",
+            "Fantasy",
+            "Storyline",
+            "Source: https://www.harrypotter.com/features/famous-faces-from-the-slug-club"
+        ]
+    },
+    {
+        "id": "film_5528",
+        "question": "In Harry Potter and the Deathly Hallows – Part 1, where do two Death Eaters find the trio after they flee the interrupted wedding?",
+        "answers": [
+            "At the British Museum",
+            "At King's Cross station",
+            "In a café",
+            "In a shoe shop"
+        ],
+        "correctAnswer": "In a café",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Deathly Hallows – Part 1",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Deathly Hallows – Part 1",
+            "2010",
+            "Fantasy",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_1"
+        ]
+    },
+    {
+        "id": "film_5529",
+        "question": "In Harry Potter and the Deathly Hallows – Part 1, which character does Xenophilius Lovegood hope to get back by turning Harry over to the Death Eaters?",
+        "answers": [
+            "Ginny Weasley",
+            "Luna Lovegood",
+            "Cho Chang",
+            "Dean Thomas"
+        ],
+        "correctAnswer": "Luna Lovegood",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Deathly Hallows – Part 1",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Deathly Hallows – Part 1",
+            "2010",
+            "Fantasy",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_1"
+        ]
+    },
+    {
+        "id": "film_5530",
+        "question": "In Harry Potter and the Deathly Hallows – Part 2, what does Neville lure the Snatchers onto before it is blown up during the Battle of Hogwarts?",
+        "answers": [
+            "A wooden bridge",
+            "A moving staircase",
+            "The Astronomy Tower stairs",
+            "A landing stage on the lake"
+        ],
+        "correctAnswer": "A wooden bridge",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Deathly Hallows – Part 2",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Deathly Hallows – Part 2",
+            "2011",
+            "Fantasy",
+            "Storyline",
+            "Source: https://assets.scriptslug.com/live/pdf/scripts/harry-potter-and-the-deathly-hollows-part-2-2011.pdf"
+        ]
+    },
+    {
+        "id": "film_5531",
+        "question": "In Harry Potter and the Philosopher's Stone, which graphic design duo started their work on the series by designing Harry's Hogwarts letter?",
+        "answers": [
+            "Framestore",
+            "The Mill",
+            "Double Negative",
+            "MinaLima"
+        ],
+        "correctAnswer": "MinaLima",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Philosopher's Stone",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Philosopher's Stone",
+            "2001",
+            "Fantasy",
+            "Production",
+            "Source: https://www.harrypotter.com/features/minalima-celebrate-20th-anniversary-with-the-wizarding-world"
+        ]
+    },
+    {
+        "id": "film_5532",
+        "question": "In Harry Potter and the Chamber of Secrets, which BAFTA craft category nominated Stuart Craig for the film?",
+        "answers": [
+            "Costume Design",
+            "Make-Up and Hair",
+            "Special Visual Effects",
+            "Production Design"
+        ],
+        "correctAnswer": "Production Design",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Harry Potter and the Chamber of Secrets",
+        "category": "Film",
+        "tags": [
+            "Harry Potter film series",
+            "Film: Harry Potter and the Chamber of Secrets",
+            "2002",
+            "Fantasy",
+            "Awards",
+            "Source: https://www.bafta.org/awards/search/?award-year=2003&search=Stuart+Craig&type=Film"
+        ]
+    }
 ];
