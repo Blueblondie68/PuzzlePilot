@@ -1,10 +1,10 @@
 // PuzzlePilot — Pack 789: The Traitors UK series 2
-// 104 additions. All 22 contestants, all twelve missions, elimination order, recruitment, dungeon, funeral, finale, selected shield results and 2024 awards. Consulted published recaps, contestant and mission tables, and Studio Lambert award records. Disputed opening mission duration omitted; no full footage review or full-bank semantic/ID scan. Checked previous pack 787 and legacy pack 222; remaining bank-wide overlap and minor scene verification outstanding. Live bank unchanged.
+// Revised 27 November 2026: 126 questions. Existing coverage of all 22 contestants and twelve missions retained. Added mission mechanics, strategic decisions, Andrew's final banishment, endgame votes and verified 2025 BAFTA nominations; clarified stems without programme names. Sources consulted include Radio Times, RTS, ITV, BAFTA, contemporary recaps and mission table. Prior 2024 awards retained as programme-level facts rather than asserting series-specific eligibility. Recent TV packs checked for new ID collisions; full-bank ID and semantic certification and full footage review remain outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
     "id": "tv_58376",
-    "question": "Who were Claudia's original three Traitors in the second UK series?",
+    "question": "The Traitors (UK): Who were Claudia's original three Traitors in the second UK series?",
     "answers": [
       "Harry, Miles and Andrew",
       "Harry, Paul and Ash",
@@ -33,7 +33,7 @@ const questions = [
   },
   {
     "id": "tv_58377",
-    "question": "What did the original three Traitors have to do instead of eliminating a player on their first night in series two?",
+    "question": "The Traitors (UK): What did the original three Traitors have to do instead of eliminating a player on their first night in series two?",
     "answers": [
       "Recruit a fourth Traitor",
       "Reveal themselves to one Faithful",
@@ -62,7 +62,7 @@ const questions = [
   },
   {
     "id": "tv_58378",
-    "question": "Who joined the original three Traitors before the first murder in series two?",
+    "question": "The Traitors (UK): Who joined the original three Traitors before the first murder in series two?",
     "answers": [
       "Andrew",
       "Ross",
@@ -178,7 +178,7 @@ const questions = [
   },
   {
     "id": "tv_58382",
-    "question": "Which two Traitors chose themselves as prisoners in the dungeon in series two?",
+    "question": "The Traitors (UK): Which two Traitors chose themselves as prisoners in the dungeon in series two?",
     "answers": [
       "Miles and Harry",
       "Harry and Paul",
@@ -642,7 +642,7 @@ const questions = [
   },
   {
     "id": "tv_58398",
-    "question": "Which two finalists were Traitors at the start of the second UK series finale?",
+    "question": "The Traitors (UK): Which two finalists were Traitors at the start of the second UK series finale?",
     "answers": [
       "Harry and Jaz",
       "Andrew and Evie",
@@ -3053,7 +3053,648 @@ const questions = [
       "Episode 8 Shields",
       "Source: https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_2"
     ]
+  },
+  {
+    "id": "tv_59885",
+    "question": "In series two of The Traitors (UK), what were the players tied to at the start of the beacon-building mission?",
+    "answers": [
+      "A pole",
+      "A fence",
+      "A boat",
+      "A tree"
+    ],
+    "correctAnswer": "A pole",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 1",
+      "Source: https://thetraitors.fandom.com/wiki/The_Traitors_(UK)/Series_2"
+    ]
+  },
+  {
+    "id": "tv_59886",
+    "question": "In series two of The Traitors (UK), which contestant was upset at being considered the most sheepish during the scarecrow mission?",
+    "answers": [
+      "Zack Davies",
+      "Brian Davidson",
+      "Anthony Mathurin",
+      "Paul Gorton"
+    ],
+    "correctAnswer": "Brian Davidson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 3",
+      "Source: https://www.realityblurred.com/realitytv/2024/03/traitors-uk-2-episodes-1-2-3-recap/"
+    ]
+  },
+  {
+    "id": "tv_59887",
+    "question": "In series two of The Traitors (UK), which two Traitors voted against Ash in the first tied Round Table?",
+    "answers": [
+      "Miles and Harry",
+      "Paul and Miles",
+      "Harry and Paul",
+      "Andrew and Harry"
+    ],
+    "correctAnswer": "Harry and Paul",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 3",
+      "Source: https://thetraitorsuk.fandom.com/wiki/Series_2%2C_Episode_3"
+    ]
+  },
+  {
+    "id": "tv_59888",
+    "question": "In series two of The Traitors (UK), what was each gold nugget worth during the digging mission?",
+    "answers": [
+      "£50",
+      "£100",
+      "£150",
+      "£25"
+    ],
+    "correctAnswer": "£25",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 4",
+      "Source: https://thetraitors.fandom.com/wiki/The_Traitors_(UK)/Series_2"
+    ]
+  },
+  {
+    "id": "tv_59889",
+    "question": "In series two of The Traitors (UK), how did contestants earn the shield in the catapult mission?",
+    "answers": [
+      "By firing a cannonball closest to the target centre",
+      "By finding the largest gold nugget",
+      "By assembling the catapult alone",
+      "By finding a shield in a scarecrow"
+    ],
+    "correctAnswer": "By firing a cannonball closest to the target centre",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 5",
+      "Source: https://thetraitors.fandom.com/wiki/The_Traitors_(UK)/Series_2"
+    ]
+  },
+  {
+    "id": "tv_59890",
+    "question": "In series two of The Traitors (UK), what drink was used in the fictional poisoning of Diane?",
+    "answers": [
+      "Red wine",
+      "Fizzy rosé",
+      "Orange juice",
+      "Champagne"
+    ],
+    "correctAnswer": "Fizzy rosé",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 6",
+      "Source: https://www.radiotimes.com/tv/entertainment/reality-tv/the-traitors-season-2-winner-harry-newsupdate/"
+    ]
+  },
+  {
+    "id": "tv_59891",
+    "question": "In series two of The Traitors (UK), which contestant surprised Miles by appearing at breakfast after the previous night's fictional poisoning?",
+    "answers": [
+      "Tracey Griffin",
+      "Evie Morrison",
+      "Diane Carson",
+      "Charlotte Chilton"
+    ],
+    "correctAnswer": "Diane Carson",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 7",
+      "Source: https://rts.org.uk/article/top-10-greatest-moments-traitors-series-two"
+    ]
+  },
+  {
+    "id": "tv_59892",
+    "question": "In series two of The Traitors (UK), which contestant told Harry of his suspicions about Paul, unaware Harry was also a Traitor?",
+    "answers": [
+      "Andrew Jenkins",
+      "Zack Davies",
+      "Ross Carson",
+      "Jaz Singh"
+    ],
+    "correctAnswer": "Jaz Singh",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Storyline",
+      "Source: https://rts.org.uk/article/top-10-greatest-moments-traitors-series-two"
+    ]
+  },
+  {
+    "id": "tv_59893",
+    "question": "In series two of The Traitors (UK), what gesture did Paul make as he left the Round Table after his banishment?",
+    "answers": [
+      "A bow",
+      "A salute",
+      "A curtsy",
+      "A wave with both hands"
+    ],
+    "correctAnswer": "A bow",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 8",
+      "Source: https://rts.org.uk/article/top-10-greatest-moments-traitors-series-two"
+    ]
+  },
+  {
+    "id": "tv_59894",
+    "question": "In series two of The Traitors (UK), how much prize money was lost for each missed crossbow shot in the stained-glass mission?",
+    "answers": [
+      "£50",
+      "£100",
+      "£250",
+      "£500"
+    ],
+    "correctAnswer": "£100",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 8",
+      "Source: https://thetraitors.fandom.com/wiki/The_Traitors_(UK)/Series_2"
+    ]
+  },
+  {
+    "id": "tv_59895",
+    "question": "In series two of The Traitors (UK), how did Harry explain the absence of a murder after Ross's recruitment?",
+    "answers": [
+      "He claimed Claudia had cancelled all murders",
+      "He claimed the Traitors had failed a mission",
+      "He claimed his shield had stopped the Traitors murdering him",
+      "He claimed Ross had refused a recruitment offer"
+    ],
+    "correctAnswer": "He claimed his shield had stopped the Traitors murdering him",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 10",
+      "Source: https://virginradio.co.uk/entertainment/132795/the-traitors-series-2-episode-10-recap"
+    ]
+  },
+  {
+    "id": "tv_59896",
+    "question": "In series two of The Traitors (UK), what did pairs risk their remaining gold for in the woodland mission's final question?",
+    "answers": [
+      "An extra vote",
+      "A recruitment invitation",
+      "A place in the final",
+      "A shield"
+    ],
+    "correctAnswer": "A shield",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 10",
+      "Source: https://thetraitors.fandom.com/wiki/The_Traitors_(UK)/Series_2"
+    ]
+  },
+  {
+    "id": "tv_59897",
+    "question": "In series two of The Traitors (UK), how many shields were successfully won in the woodland mission?",
+    "answers": [
+      "None",
+      "One",
+      "Two",
+      "Four"
+    ],
+    "correctAnswer": "None",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 10",
+      "Source: https://thetraitors.fandom.com/wiki/The_Traitors_(UK)/Series_2"
+    ]
+  },
+  {
+    "id": "tv_59898",
+    "question": "In series two of The Traitors (UK), which fellow Traitor did Ross attempt to persuade to turn against Harry?",
+    "answers": [
+      "Paul Gorton",
+      "Andrew Jenkins",
+      "Miles Asteri",
+      "Ash Bibi"
+    ],
+    "correctAnswer": "Andrew Jenkins",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 10",
+      "Source: https://www.itv.com/news/2024-01-24/the-traitors-contestant-reveals-secret-in-final-week"
+    ]
+  },
+  {
+    "id": "tv_59899",
+    "question": "In series two of The Traitors (UK), which Traitor was eliminated in the first fire-pit banishment of the finale?",
+    "answers": [
+      "Harry Clark",
+      "Ross Carson",
+      "Andrew Jenkins",
+      "Paul Gorton"
+    ],
+    "correctAnswer": "Andrew Jenkins",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 12",
+      "Source: https://www.radiotimes.com/tv/entertainment/reality-tv/the-traitors-season-2-winner-harry-newsupdate/"
+    ]
+  },
+  {
+    "id": "tv_59900",
+    "question": "In series two of The Traitors (UK), who alone wanted to continue banishing when three finalists remained?",
+    "answers": [
+      "Mollie Pearce",
+      "Harry Clark",
+      "Andrew Jenkins",
+      "Jaz Singh"
+    ],
+    "correctAnswer": "Jaz Singh",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 12",
+      "Source: https://www.radiotimes.com/tv/entertainment/reality-tv/the-traitors-season-2-winner-harry-newsupdate/"
+    ]
+  },
+  {
+    "id": "tv_59901",
+    "question": "In series two of The Traitors (UK), whose name did Mollie ultimately erase from her board before voting out Jaz?",
+    "answers": [
+      "Harry's",
+      "Andrew's",
+      "Evie's",
+      "Ross's"
+    ],
+    "correctAnswer": "Harry's",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Episode 12",
+      "Source: https://rts.org.uk/article/top-10-greatest-moments-traitors-series-two"
+    ]
+  },
+  {
+    "id": "tv_59902",
+    "question": "In series two of The Traitors (UK), which main programme category brought the second series a nomination at the 2025 BAFTA Television Awards?",
+    "answers": [
+      "Entertainment",
+      "Reality",
+      "Factual Series",
+      "Daytime"
+    ],
+    "correctAnswer": "Reality",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Awards",
+      "Source: https://www.standard.co.uk/news/uk/lennie-james-alan-cumming-bbc-baby-reindeer-danny-dyer-b1227119.html",
+      "Source: https://www.bafta.org/awards/television/?award-year=2025"
+    ]
+  },
+  {
+    "id": "tv_59903",
+    "question": "In series two of The Traitors (UK), which programme beat the second series to the 2025 BAFTA Reality award?",
+    "answers": [
+      "Dragons' Den",
+      "Love Is Blind",
+      "The Jury: Murder Trial",
+      "Strictly Come Dancing"
+    ],
+    "correctAnswer": "The Jury: Murder Trial",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Awards",
+      "Source: https://www.standard.co.uk/news/uk/lennie-james-alan-cumming-bbc-baby-reindeer-danny-dyer-b1227119.html",
+      "Source: https://www.bafta.org/awards/television/?award-year=2025"
+    ]
+  },
+  {
+    "id": "tv_59904",
+    "question": "In series two of The Traitors (UK), in which individual category was Claudia Winkleman nominated at the 2025 BAFTA Television Awards?",
+    "answers": [
+      "Leading Actress",
+      "Supporting Actress",
+      "Factual Presenter",
+      "Entertainment Performance"
+    ],
+    "correctAnswer": "Entertainment Performance",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Awards",
+      "Source: https://www.bafta.org/awards/television/?award-year=2025"
+    ]
+  },
+  {
+    "id": "tv_59905",
+    "question": "In series two of The Traitors (UK), which revelation earned the second series a 2025 BAFTA Memorable Moment nomination?",
+    "answers": [
+      "Diane revealing that Ross was her son",
+      "Harry finding a shield",
+      "Paul leaving the Round Table",
+      "Mollie voting out Jaz"
+    ],
+    "correctAnswer": "Diane revealing that Ross was her son",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Awards",
+      "Source: https://www.radiotimes.com/tv/entertainment/reality-tv/bafta-memorable-moment-shortlist-2025-newsupdate/"
+    ]
+  },
+  {
+    "id": "tv_59906",
+    "question": "In series two of The Traitors (UK), which additional category earned the programme a 2025 BAFTA Television Craft nomination?",
+    "answers": [
+      "Sound: Fiction",
+      "Entertainment Craft Team",
+      "Scripted Casting",
+      "Original Music: Fiction"
+    ],
+    "correctAnswer": "Entertainment Craft Team",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "Programme: The Traitors",
+      "The Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2024",
+      "Awards",
+      "Source: https://www.bafta.org/awards/tv-craft/?award-year=2025"
+    ]
   }
 ];
-if(questions.length!==104||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(58376+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 789 validation failed');
+const validIds = new Set([...Array.from({length:104},(_,i)=>'tv_'+(58376+i)),...Array.from({length:22},(_,i)=>'tv_'+(59885+i))]);
+if(questions.length!==126||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 789 validation failed');
 module.exports=questions;
