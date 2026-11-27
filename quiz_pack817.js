@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 817: Wright Around the World
-// 30 additions covering presenters, both series' format, recruitment, globe mechanics, musical round, finale, production and documented 2004 anniversary variation and musical guest. Sources: UKGameshows, season/format summary, specialist wiki and contemporary television listing. No programme-specific award verified. Individual contestant names, winners, guest lineups and full episode outcomes remain unverified; no claim of complete episode-level coverage. Legacy packs 1–20 checked for title, quiz-show topic listings reviewed, selected recent and related packs checked for exact IDs/questions; full-bank ID and semantic certification outstanding. Live bank unchanged.
+// Revised 27 November 2026: 31 questions. Cross-checked main gameplay against UKGameshows, its contemporary review and the published format summary. One missing opening-round rule added; Shane Richie appearance described as billed, consistent with the contemporary listing. Both series, 18-episode broadcast history, hosts, production, main rules and anniversary variant represented. No programme-specific award verified in available searches. Ordinary contestants and individual holiday winners not exhaustively tested; full guest lineups unavailable. Selected recent/related packs checked for ID collisions; full-bank semantic/ID certification outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -789,7 +789,7 @@ const questions = [
   },
   {
     "id": "tv_59672",
-    "question": "Which EastEnders actor performed the 2003 Children in Need single on Wright Around the World?",
+    "question": "Which EastEnders actor was billed to sing the 2003 Children in Need single on Wright Around the World?",
     "answers": [
       "Shane Richie",
       "Adam Woodyatt",
@@ -816,7 +816,35 @@ const questions = [
       "charity",
       "Source: https://content.yudu.com/web/449tp/0A44cu6/13-11-2003/html/14.html"
     ]
+  },
+  {
+    "id": "tv_59751",
+    "question": "What happened if a contestant selected a red globe in the opening round of Wright Around the World?",
+    "answers": [
+      "They lost their chance at a bonus question",
+      "They gained automatic entry to round two",
+      "They won a cash consolation prize",
+      "They were eliminated immediately"
+    ],
+    "correctAnswer": "They lost their chance at a bonus question",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Wright Around the World",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "National Lottery",
+      "Wright Around the World",
+      "Programme: Wright Around the World",
+      "BBC One",
+      "2003–2005",
+      "Round 1",
+      "Source: https://www.ukgameshows.com/ukgs/Wright_Around_the_World"
+    ]
   }
 ];
-if(questions.length!==30||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(59643+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 817 validation failed');
+const validIds = new Set([...Array.from({length:30},(_,i)=>'tv_'+(59643+i)),'tv_59751']);
+if(questions.length!==31||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 817 validation failed');
 module.exports=questions;
