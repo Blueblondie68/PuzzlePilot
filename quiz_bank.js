@@ -17,7 +17,8 @@
 // This file controls which quiz packs are currently
 // connected to the live PuzzlePilot quiz.
 //
-// Packs 1-760 are connected to the live quiz bank.
+// Packs 1–786 and explicitly approved odd-numbered packs 787–819 are connected.
+// Reserved film pack numbers are not loaded until separately approved.
 //
 
 // =====================================================
@@ -25,7 +26,19 @@
 // =====================================================
 
 const FIRST_QUIZ_PACK = 1;
-const LAST_QUIZ_PACK = 760;
+const LAST_CONTIGUOUS_QUIZ_PACK = 786;
+const ADDITIONAL_APPROVED_PACKS = Object.freeze([
+    787, 789, 791, 793, 795, 797, 799, 801, 803,
+    805, 807, 809, 811, 813, 815, 817, 819
+]);
+const APPROVED_QUIZ_PACKS = [
+    ...Array.from({ length: LAST_CONTIGUOUS_QUIZ_PACK - FIRST_QUIZ_PACK + 1 },
+        (_, i) => FIRST_QUIZ_PACK + i),
+    ...ADDITIONAL_APPROVED_PACKS
+];
+if (new Set(APPROVED_QUIZ_PACKS).size !== APPROVED_QUIZ_PACKS.length) {
+    throw new Error('Quiz bank contains duplicate approved pack numbers.');
+}
 
 // =====================================================
 // LOAD QUIZ PACKS
@@ -33,11 +46,7 @@ const LAST_QUIZ_PACK = 760;
 
 const quizPacks = [];
 
-for (
-    let packNumber = FIRST_QUIZ_PACK;
-    packNumber <= LAST_QUIZ_PACK;
-    packNumber++
-) {
+for (const packNumber of APPROVED_QUIZ_PACKS) {
     const pack = require(
         './quiz_pack' + packNumber + '.js'
     );
