@@ -8605,5 +8605,505 @@ module.exports = [
             "Storyline",
             "Source: https://catalog.afi.com/Film/58025-NEVER-SAY-NEVER-AGAIN"
         ]
+    },
+    {
+        "id": "film_5432",
+        "question": "In Octopussy, which jeweller made the Fabergé eggs used on screen?",
+        "answers": [
+            "Garrard",
+            "Boucheron",
+            "Asprey",
+            "Cartier"
+        ],
+        "correctAnswer": "Asprey",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Octopussy",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Octopussy",
+            "1983",
+            "Action",
+            "Production",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://www.007.com/octopussy/"
+        ]
+    },
+    {
+        "id": "film_5433",
+        "question": "In A View to a Kill, whom does May Day kill with a poisoned prop during a show at the Eiffel Tower?",
+        "answers": [
+            "Sir Godfrey Tibbett",
+            "Detective Achille Aubergine",
+            "W. G. Howe",
+            "Scarpine"
+        ],
+        "correctAnswer": "Detective Achille Aubergine",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "A View to a Kill",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: A View to a Kill",
+            "1985",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/A_View_to_a_Kill_(film)"
+        ]
+    },
+    {
+        "id": "film_5434",
+        "question": "In A View to a Kill, what does May Day do with the explosive she removes from Zorin's mine?",
+        "answers": [
+            "Rides it out on a handcar and dies when it detonates",
+            "Loads it onto a helicopter and sends it out to sea",
+            "Throws it down a mine shaft and jumps clear",
+            "Leaves it beside the pumping station and escapes"
+        ],
+        "correctAnswer": "Rides it out on a handcar and dies when it detonates",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "A View to a Kill",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: A View to a Kill",
+            "1985",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/A_View_to_a_Kill_(film)"
+        ]
+    },
+    {
+        "id": "film_5435",
+        "question": "In Licence to Kill, what does Bond do with Milton Krest's vessel to disrupt Sanchez's drug operation at sea?",
+        "answers": [
+            "He sinks it at the dock with a limpet mine",
+            "He takes Krest hostage over the radio",
+            "He delivers it to the coastguard",
+            "He intercepts an aircraft collecting a shipment"
+        ],
+        "correctAnswer": "He intercepts an aircraft collecting a shipment",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Licence to Kill",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Licence to Kill",
+            "1989",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Licence_to_Kill"
+        ]
+    },
+    {
+        "id": "film_5436",
+        "question": "In The World Is Not Enough, what type of vehicle does Bond take from Q's workshop to pursue the assassin on the Thames?",
+        "answers": [
+            "A diving submarine",
+            "An amphibious Aston Martin",
+            "A prototype hovercraft",
+            "A small jet boat"
+        ],
+        "correctAnswer": "A small jet boat",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The World Is Not Enough",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: The World Is Not Enough",
+            "1999",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/The_World_Is_Not_Enough"
+        ]
+    },
+    {
+        "id": "film_5437",
+        "question": "In The World Is Not Enough, what does Elektra use to torture Bond in her Istanbul hideout?",
+        "answers": [
+            "A pressure chamber",
+            "An electric cattle prod",
+            "A garrotte chair",
+            "A wall-mounted rack"
+        ],
+        "correctAnswer": "A garrotte chair",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The World Is Not Enough",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: The World Is Not Enough",
+            "1999",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/The_World_Is_Not_Enough"
+        ]
+    },
+    {
+        "id": "film_5438",
+        "question": "In Die Another Day, what sport does the contest between Bond and Gustav Graves at Blades start as?",
+        "answers": [
+            "Boxing",
+            "Fencing",
+            "Polo",
+            "Archery"
+        ],
+        "correctAnswer": "Fencing",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Another Day",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Die Another Day",
+            "2002",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Die_Another_Day"
+        ]
+    },
+    {
+        "id": "film_5439",
+        "question": "In Casino Royale (2006), what stops Vesper from rescuing herself when the Venetian building collapses?",
+        "answers": [
+            "She locks herself in the lift",
+            "She is handcuffed to a radiator",
+            "She is knocked unconscious by Gettler",
+            "She is trapped in a car below the building"
+        ],
+        "correctAnswer": "She locks herself in the lift",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Casino Royale (2006)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Casino Royale (2006)",
+            "2006",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://www.007.com/the-films/casino-royale/"
+        ]
+    },
+    {
+        "id": "film_5440",
+        "question": "In Quantum of Solace, how does Bond get the Quantum members to reveal themselves at the opera?",
+        "answers": [
+            "He speaks on their earpiece channel and several leave their seats",
+            "He interrupts the performance over the theatre speakers",
+            "He sets off a fake fire alarm and follows them outside",
+            "He swaps their tickets for seats together"
+        ],
+        "correctAnswer": "He speaks on their earpiece channel and several leave their seats",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Quantum of Solace",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Quantum of Solace",
+            "2008",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Quantum_of_Solace"
+        ]
+    },
+    {
+        "id": "film_5441",
+        "question": "In Skyfall, what item does Bond use to open the door to the floating casino in Macau?",
+        "answers": [
+            "A ring taken from Sévérine",
+            "A matchbook from Silva's island",
+            "A key from Q disguised as a cufflink",
+            "A cash token taken from Patrice's equipment"
+        ],
+        "correctAnswer": "A cash token taken from Patrice's equipment",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Skyfall",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Skyfall",
+            "2012",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Skyfall_(film)"
+        ]
+    },
+    {
+        "id": "film_5442",
+        "question": "In Skyfall, how does Silva escape from the glass cell at MI6?",
+        "answers": [
+            "He forces the glass apart with a concealed tool",
+            "He bribes a guard to let him out",
+            "His laptop code opens the security doors when Q connects it",
+            "He persuades M to release him for questioning"
+        ],
+        "correctAnswer": "His laptop code opens the security doors when Q connects it",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Skyfall",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Skyfall",
+            "2012",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Skyfall_(film)"
+        ]
+    },
+    {
+        "id": "film_5443",
+        "question": "In Spectre, who drives the Jaguar C-X75 that pursues Bond through Rome?",
+        "answers": [
+            "Max Denbigh",
+            "Mr Hinx",
+            "Marco Sciarra",
+            "Franz Oberhauser"
+        ],
+        "correctAnswer": "Mr Hinx",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Spectre",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Spectre",
+            "2015",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Spectre_(2015_film)"
+        ]
+    },
+    {
+        "id": "film_5444",
+        "question": "In Spectre, what is waiting for Bond and Madeleine after they leave the train in the desert?",
+        "answers": [
+            "Q with a prototype Aston Martin",
+            "A Rolls-Royce sent to take them to Blofeld",
+            "A French intelligence officer",
+            "A helicopter waiting to take them back to Tangier"
+        ],
+        "correctAnswer": "A Rolls-Royce sent to take them to Blofeld",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Spectre",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Spectre",
+            "2015",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Spectre_(2015_film)"
+        ]
+    },
+    {
+        "id": "film_5445",
+        "question": "In No Time to Die, what does Safin bring to his appointment with her in London?",
+        "answers": [
+            "The mask he wore when he killed her mother",
+            "A photograph taken at Vesper's grave",
+            "Mr White's ring",
+            "The necklace Bond gave her in Matera"
+        ],
+        "correctAnswer": "The mask he wore when he killed her mother",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "No Time to Die",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: No Time to Die",
+            "2021",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/No_Time_to_Die"
+        ]
+    },
+    {
+        "id": "film_5446",
+        "question": "In Never Say Never Again, what gift does Largo give Domino that points to his underwater base?",
+        "answers": [
+            "A watch engraved with the name of his yacht",
+            "A ring engraved with a naval crest",
+            "An ivory chess set hiding a chart",
+            "A pendant bearing the Tears of Allah"
+        ],
+        "correctAnswer": "A pendant bearing the Tears of Allah",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Never Say Never Again",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Never Say Never Again",
+            "1983",
+            "Action",
+            "Storyline",
+            "Non-Eon James Bond film",
+            "Spy Films",
+            "Source: https://catalog.afi.com/Film/58025-NEVER-SAY-NEVER-AGAIN"
+        ]
+    },
+    {
+        "id": "film_5447",
+        "question": "In Never Say Never Again, how does Bond meet Domino at the clinic where she is staying?",
+        "answers": [
+            "He poses as the owner of the clinic",
+            "He meets her during a fencing lesson",
+            "He pretends to be a masseur",
+            "He is introduced by Nigel during dinner"
+        ],
+        "correctAnswer": "He pretends to be a masseur",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Never Say Never Again",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Never Say Never Again",
+            "1983",
+            "Action",
+            "Storyline",
+            "Non-Eon James Bond film",
+            "Spy Films",
+            "Source: https://catalog.afi.com/Film/58025-NEVER-SAY-NEVER-AGAIN"
+        ]
+    },
+    {
+        "id": "film_5448",
+        "question": "In GoldenEye, who does Xenia kill aboard a yacht to obtain access to the Tiger helicopter demonstration?",
+        "answers": [
+            "General Arkady Ourumov",
+            "Defence Minister Mishkin",
+            "Admiral Chuck Farrel",
+            "Jack Wade"
+        ],
+        "correctAnswer": "Admiral Chuck Farrel",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "GoldenEye",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: GoldenEye",
+            "1995",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://www.007.com/page/55/?cat=missions&id=drno"
+        ]
+    },
+    {
+        "id": "film_5449",
+        "question": "In Tomorrow Never Dies, what first connects Carver's journalists to the attack at sea for the British government?",
+        "answers": [
+            "They publish photographs of the stolen missile",
+            "They report the sailors' deaths before the government knows",
+            "They identify Wai Lin as the killer",
+            "They transmit the distress signal before the ship sends it"
+        ],
+        "correctAnswer": "They report the sailors' deaths before the government knows",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Tomorrow Never Dies",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Tomorrow Never Dies",
+            "1997",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Tomorrow_Never_Dies"
+        ]
+    },
+    {
+        "id": "film_5450",
+        "question": "In Die Another Day, what does Bond bring down on Zao during the chase through the ice palace?",
+        "answers": [
+            "A chandelier made of ice",
+            "A wrought-iron chandelier",
+            "A lantern filled with oil",
+            "A glass pendant light"
+        ],
+        "correctAnswer": "A chandelier made of ice",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Another Day",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Die Another Day",
+            "2002",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Die_Another_Day"
+        ]
+    },
+    {
+        "id": "film_5451",
+        "question": "In Casino Royale (2006), which BAFTA craft category nominated Peter Lamont, Lee Sandales and Simon Wakefield for the 2006 film?",
+        "answers": [
+            "Make-Up and Hair",
+            "Costume Design",
+            "Special Visual Effects",
+            "Production Design"
+        ],
+        "correctAnswer": "Production Design",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Casino Royale (2006)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Casino Royale (2006)",
+            "2006",
+            "Action",
+            "Awards",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://www.bafta.org/awards/film/production-design/"
+        ]
     }
 ];

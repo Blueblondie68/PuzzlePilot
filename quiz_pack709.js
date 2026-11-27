@@ -7146,5 +7146,486 @@ module.exports = [
             "Storyline",
             "Source: https://catalog.afi.com/Film/23875-CASINO-ROYALE"
         ]
+    },
+    {
+        "id": "film_5413",
+        "question": "In Dr. No, who plays Sylvia Trench, whom Bond meets at the gaming table?",
+        "answers": [
+            "Eunice Gayson",
+            "Zena Marshall",
+            "Lois Maxwell",
+            "Marguerite LeWars"
+        ],
+        "correctAnswer": "Eunice Gayson",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Dr. No",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Dr. No",
+            "1962",
+            "Action",
+            "Cast",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Character: Sylvia Trench",
+            "Actor: Eunice Gayson",
+            "Source: https://catalog.afi.com/Film/22934-DR.-NO"
+        ]
+    },
+    {
+        "id": "film_5414",
+        "question": "In From Russia with Love, how does Kerim Bey watch what is happening inside the Soviet consulate?",
+        "answers": [
+            "Through a microphone in a desk lamp",
+            "Through a camera mounted on a window",
+            "Through a two-way mirror in a meeting room",
+            "Through a periscope beneath the building"
+        ],
+        "correctAnswer": "Through a periscope beneath the building",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "From Russia with Love",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: From Russia with Love",
+            "1963",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/From_Russia_with_Love_(film)"
+        ]
+    },
+    {
+        "id": "film_5415",
+        "question": "In From Russia with Love, how does Bond distract the men in the Soviet consulate while Tatiana and he take the Lektor?",
+        "answers": [
+            "He stages a fire drill",
+            "He cuts the telephone lines",
+            "He sets off an explosion",
+            "He leads them into the cistern"
+        ],
+        "correctAnswer": "He sets off an explosion",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "From Russia with Love",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: From Russia with Love",
+            "1963",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/From_Russia_with_Love_(film)"
+        ]
+    },
+    {
+        "id": "film_5416",
+        "question": "In Goldfinger, what does Bond attach to someone else's car so his Aston Martin can follow it into Switzerland?",
+        "answers": [
+            "A radio-controlled camera",
+            "A dye marker",
+            "A tracking device",
+            "A magnetic microphone"
+        ],
+        "correctAnswer": "A tracking device",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Goldfinger",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Goldfinger",
+            "1964",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Goldfinger_(film)"
+        ]
+    },
+    {
+        "id": "film_5417",
+        "question": "In Goldfinger, how does Goldfinger dispose of the mobster Mr Solo and the gold he was promised?",
+        "answers": [
+            "He has Solo locked in the Fort Knox vault",
+            "He has Solo's car crushed with Solo and the gold inside",
+            "He has Solo thrown from a plane",
+            "He has Solo poisoned at dinner"
+        ],
+        "correctAnswer": "He has Solo's car crushed with Solo and the gold inside",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Goldfinger",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Goldfinger",
+            "1964",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Goldfinger_(film)"
+        ]
+    },
+    {
+        "id": "film_5418",
+        "question": "In Thunderball, what device does Bond give Domino to detect a nuclear weapon aboard Largo’s yacht?",
+        "answers": [
+            "A Geiger counter",
+            "A miniature underwater camera",
+            "A directional microphone",
+            "A homing transmitter"
+        ],
+        "correctAnswer": "A Geiger counter",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Thunderball",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Thunderball",
+            "1965",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://catalog.afi.com/Film/23722-THUNDERBALL"
+        ]
+    },
+    {
+        "id": "film_5419",
+        "question": "In You Only Live Twice, who plays Helga Brandt, SPECTRE's Number 11?",
+        "answers": [
+            "Akiko Wakabayashi",
+            "Mie Hama",
+            "Tsai Chin",
+            "Karin Dor"
+        ],
+        "correctAnswer": "Karin Dor",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "You Only Live Twice",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: You Only Live Twice",
+            "1967",
+            "Action",
+            "Cast",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Character: Helga Brandt",
+            "Actor: Karin Dor",
+            "Source: https://en.wikipedia.org/wiki/You_Only_Live_Twice_(film)"
+        ]
+    },
+    {
+        "id": "film_5420",
+        "question": "In On Her Majesty's Secret Service, how does Bond learn that the women at Piz Gloria are being brainwashed?",
+        "answers": [
+            "He discovers the tapes in Tracy's luggage",
+            "He reads a confession from Irma Bunt",
+            "He intercepts a message on his watch",
+            "He hears a recorded voice addressing Ruby in her bedroom"
+        ],
+        "correctAnswer": "He hears a recorded voice addressing Ruby in her bedroom",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "On Her Majesty's Secret Service",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: On Her Majesty's Secret Service",
+            "1969",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/On_Her_Majesty's_Secret_Service_(film)"
+        ]
+    },
+    {
+        "id": "film_5421",
+        "question": "In Live and Let Die, how does Bond manage to make the Lovers card appear when Solitaire offers him a reading?",
+        "answers": [
+            "He takes the card from her first reading",
+            "He uses a magnetic table to bring it to the top",
+            "He gives her a deck made up entirely of Lovers cards",
+            "He gets Quarrel Jr. to replace the chosen card behind her back"
+        ],
+        "correctAnswer": "He gives her a deck made up entirely of Lovers cards",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Live and Let Die",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Live and Let Die",
+            "1973",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Live_and_Let_Die_(film)"
+        ]
+    },
+    {
+        "id": "film_5422",
+        "question": "In The Man with the Golden Gun, how does Bond fool Scaramanga during the duel in the funhouse?",
+        "answers": [
+            "He leaves his watch playing a recording of his footsteps",
+            "He takes the place of the wax figure of himself",
+            "He poses as Nick Nack",
+            "He hides in the observation booth and speaks over a microphone"
+        ],
+        "correctAnswer": "He takes the place of the wax figure of himself",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Man with the Golden Gun",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: The Man with the Golden Gun",
+            "1974",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/The_Man_with_the_Golden_Gun_(film)"
+        ]
+    },
+    {
+        "id": "film_5423",
+        "question": "In The Spy Who Loved Me, what does Bond remove from the nuclear missiles aboard the Liparus to break into the control room?",
+        "answers": [
+            "A detonator",
+            "A navigation computer",
+            "A compression spring",
+            "A fuel regulator"
+        ],
+        "correctAnswer": "A detonator",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Spy Who Loved Me",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: The Spy Who Loved Me",
+            "1977",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/The_Spy_Who_Loved_Me_(film)"
+        ]
+    },
+    {
+        "id": "film_5424",
+        "question": "In Moonraker, what does Bond discover in the laboratory behind Drax's Venetian glassworks?",
+        "answers": [
+            "A toxin that kills humans but leaves animals unharmed",
+            "A counterfeit banknote press",
+            "The stolen shuttle's flight recorder",
+            "A nuclear warhead in a display case"
+        ],
+        "correctAnswer": "A toxin that kills humans but leaves animals unharmed",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Moonraker",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Moonraker",
+            "1979",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Moonraker_(film)"
+        ]
+    },
+    {
+        "id": "film_5425",
+        "question": "In Moonraker, what convinces Jaws to turn against Drax aboard the space station?",
+        "answers": [
+            "Drax admits sabotaging his parachute",
+            "Bond shows him a recording of Drax betraying him in Rio",
+            "Dolly tells him she works for the CIA",
+            "He realises Drax's ideal society has no place for him or Dolly"
+        ],
+        "correctAnswer": "He realises Drax's ideal society has no place for him or Dolly",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Moonraker",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Moonraker",
+            "1979",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Moonraker_(film)"
+        ]
+    },
+    {
+        "id": "film_5426",
+        "question": "In Casino Royale (1967), who plays Jimmy Bond, also known as Dr Noah?",
+        "answers": [
+            "Peter Sellers",
+            "Terence Cooper",
+            "Woody Allen",
+            "John Huston"
+        ],
+        "correctAnswer": "Woody Allen",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Casino Royale (1967)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Casino Royale (1967)",
+            "1967",
+            "Action",
+            "Cast",
+            "Non-Eon James Bond film",
+            "Spy Films",
+            "Character: Jimmy Bond",
+            "Actor: Woody Allen",
+            "Source: https://catalog.afi.com/Film/23875-CASINO-ROYALE"
+        ]
+    },
+    {
+        "id": "film_5427",
+        "question": "In Casino Royale (1967), which character recruits Evelyn Tremble for the baccarat assignment?",
+        "answers": [
+            "Mata Bond",
+            "Vesper Lynd",
+            "Sir James Bond",
+            "Miss Moneypenny"
+        ],
+        "correctAnswer": "Vesper Lynd",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Casino Royale (1967)",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Casino Royale (1967)",
+            "1967",
+            "Action",
+            "Storyline",
+            "Non-Eon James Bond film",
+            "Spy Films",
+            "Source: https://catalog.afi.com/Film/23875-CASINO-ROYALE"
+        ]
+    },
+    {
+        "id": "film_5428",
+        "question": "In You Only Live Twice, what creatures does Blofeld use to kill Helga Brandt after she fails to eliminate Bond?",
+        "answers": [
+            "Sharks",
+            "Piranhas",
+            "Crocodiles",
+            "Venomous snakes"
+        ],
+        "correctAnswer": "Piranhas",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "You Only Live Twice",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: You Only Live Twice",
+            "1967",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/You_Only_Live_Twice_(film)"
+        ]
+    },
+    {
+        "id": "film_5429",
+        "question": "In Diamonds Are Forever, whose body does Tiffany use to smuggle the diamonds into the United States?",
+        "answers": [
+            "Peter Franks's",
+            "Shady Tree's",
+            "Willard Whyte's",
+            "Morton Slumber's"
+        ],
+        "correctAnswer": "Peter Franks's",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Diamonds Are Forever",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Diamonds Are Forever",
+            "1971",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://www.007.com/page/47/?cat=posters&id=dad"
+        ]
+    },
+    {
+        "id": "film_5430",
+        "question": "In Moonraker, what was unusual about the camera body used to shoot the opening mid-air fight?",
+        "answers": [
+            "It was recovered from a launch capsule",
+            "It was encased in lead",
+            "It was cut from an aircraft oxygen tank",
+            "It was made of lightweight titanium"
+        ],
+        "correctAnswer": "It was made of lightweight titanium",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Moonraker",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: Moonraker",
+            "1979",
+            "Action",
+            "Production",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://www.007.com/moonraker/"
+        ]
+    },
+    {
+        "id": "film_5431",
+        "question": "In For Your Eyes Only, what does Bond kick over a cliff after confronting Locque?",
+        "answers": [
+            "Locque's motorcycle",
+            "A chairlift cabin",
+            "Locque's car",
+            "A crate from Locque's yacht"
+        ],
+        "correctAnswer": "Locque's car",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "For Your Eyes Only",
+        "category": "Film",
+        "tags": [
+            "James Bond franchise",
+            "Film: For Your Eyes Only",
+            "1981",
+            "Action",
+            "Storyline",
+            "Eon Productions James Bond series",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/For_Your_Eyes_Only_(film)"
+        ]
     }
 ];
