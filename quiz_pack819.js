@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 819: Red Alert (National Lottery)
-// 39 questions. Both series' format, hosts, production and selected musical guests verified using specialist programme reference, contemporary listings and reporting. Listings distinguish billed appearances from confirmed performance where necessary. No formal awards located in available searches. Full episode results, street names, all guest lineups and whole-bank semantic/ID certification remain outstanding; recent/related packs checked. Live bank unchanged.
+// Revised 27 November 2026: 48 questions; nine additions cover remaining principal gameplay, second-series opening music guests and Lulu's reported withdrawal. Voiceover succession wording clarified because advance listings still billed Sid Waddell despite contemporary reporting of his departure. Both series, hosts, production, notable guests and format changes covered. No formal award verified in searches. Remaining ordinary street winners and complete musical lineups not verified; no invented results. Full-bank duplicate and ID certification remains outstanding; checked selected recent/related packs and branch head. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -249,7 +249,7 @@ const questions = [
   },
   {
     "id": "tv_59682",
-    "question": "Who took over as voiceover announcer after the opening edition of Red Alert?",
+    "question": "Who is credited by UKGameshows as Red Alert's regular voiceover announcer following Sid Waddell's departure?",
     "answers": [
       "Alan Dedicoat",
       "John Sachs",
@@ -1083,7 +1083,259 @@ const questions = [
       "Production",
       "Source: https://ukgameshows.com/ukgs/Red_Alert"
     ]
+  },
+  {
+    "id": "tv_59742",
+    "question": "What cash prize was offered in the original Stand By Your Doors street race on Red Alert?",
+    "answers": [
+      "£500",
+      "£2,000",
+      "£5,000",
+      "£1,000"
+    ],
+    "correctAnswer": "£1,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Red Alert",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "National Lottery",
+      "Red Alert",
+      "Programme: Red Alert",
+      "BBC One",
+      "1999–2000",
+      "Series 1",
+      "1999",
+      "Source: https://ukgameshows.com/ukgs/Red_Alert"
+    ]
+  },
+  {
+    "id": "tv_59743",
+    "question": "What period supplied the topical questions in Red Alert's Happy Chimneys final?",
+    "answers": [
+      "The previous month",
+      "The previous decade",
+      "The previous week",
+      "The previous year"
+    ],
+    "correctAnswer": "The previous week",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Red Alert",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "National Lottery",
+      "Red Alert",
+      "Programme: Red Alert",
+      "BBC One",
+      "1999–2000",
+      "Series 1",
+      "1999",
+      "Source: https://ukgameshows.com/ukgs/Red_Alert"
+    ]
+  },
+  {
+    "id": "tv_59744",
+    "question": "What happened to a contestant's eligibility to answer again after lighting their chimney on Red Alert?",
+    "answers": [
+      "They could nominate another team",
+      "They could not answer again",
+      "They had to answer the next question",
+      "They could answer for double points"
+    ],
+    "correctAnswer": "They could not answer again",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Red Alert",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "National Lottery",
+      "Red Alert",
+      "Programme: Red Alert",
+      "BBC One",
+      "1999–2000",
+      "Series 1",
+      "1999",
+      "Source: https://ukgameshows.com/ukgs/Red_Alert"
+    ]
+  },
+  {
+    "id": "tv_59745",
+    "question": "How many points did a correct answer earn in the opening quiz round of Red Alert's revised format?",
+    "answers": [
+      "Two",
+      "One",
+      "Three",
+      "Five"
+    ],
+    "correctAnswer": "Two",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Red Alert",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "National Lottery",
+      "Red Alert",
+      "Programme: Red Alert",
+      "BBC One",
+      "1999–2000",
+      "Series 2",
+      "2000",
+      "Source: https://ukgameshows.com/ukgs/Red_Alert"
+    ]
+  },
+  {
+    "id": "tv_59746",
+    "question": "Why did the revised Red Alert scoring system prevent a tie between the two streets?",
+    "answers": [
+      "The host awarded a bonus point at random",
+      "The leading team always received a five-point advantage",
+      "The audience voted to break every tie",
+      "The arm-wrestling contest awarded an odd number of points while quiz answers earned even points"
+    ],
+    "correctAnswer": "The arm-wrestling contest awarded an odd number of points while quiz answers earned even points",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Red Alert",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "National Lottery",
+      "Red Alert",
+      "Programme: Red Alert",
+      "BBC One",
+      "1999–2000",
+      "Series 2",
+      "2000",
+      "Source: https://ukgameshows.com/ukgs/Red_Alert"
+    ]
+  },
+  {
+    "id": "tv_59747",
+    "question": "How much thinking time was allowed after buzzing in during the revised Red Alert final?",
+    "answers": [
+      "Ten seconds",
+      "Fifteen seconds",
+      "Five seconds",
+      "Three seconds"
+    ],
+    "correctAnswer": "Five seconds",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Red Alert",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "National Lottery",
+      "Red Alert",
+      "Programme: Red Alert",
+      "BBC One",
+      "1999–2000",
+      "Series 2",
+      "2000",
+      "Source: https://ukgameshows.com/ukgs/Red_Alert"
+    ]
+  },
+  {
+    "id": "tv_59748",
+    "question": "Which band fronted by Mick Hucknall was billed for the launch of Red Alert's second series?",
+    "answers": [
+      "Deacon Blue",
+      "Simply Red",
+      "Wet Wet Wet",
+      "Level 42"
+    ],
+    "correctAnswer": "Simply Red",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Red Alert",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "National Lottery",
+      "Red Alert",
+      "Programme: Red Alert",
+      "BBC One",
+      "1999–2000",
+      "Series 2 Episode 1",
+      "2000",
+      "Source: https://content.yudu.com/web/449tp/0A44cu3/17-02-2000/html/16.html"
+    ]
+  },
+  {
+    "id": "tv_59749",
+    "question": "Which boy band was billed alongside Simply Red for the second-series launch of Red Alert?",
+    "answers": [
+      "A1",
+      "Westlife",
+      "Five",
+      "Blue"
+    ],
+    "correctAnswer": "A1",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Red Alert",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "National Lottery",
+      "Red Alert",
+      "Programme: Red Alert",
+      "BBC One",
+      "1999–2000",
+      "Series 2 Episode 1",
+      "2000",
+      "Source: https://content.yudu.com/web/449tp/0A44cu3/17-02-2000/html/16.html"
+    ]
+  },
+  {
+    "id": "tv_59750",
+    "question": "Which of Red Alert's two presenters was reported to have withdrawn from the programme after its second series?",
+    "answers": [
+      "Terry Alderton",
+      "Alan Dedicoat",
+      "Sid Waddell",
+      "Lulu"
+    ],
+    "correctAnswer": "Lulu",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Red Alert",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "National Lottery",
+      "Red Alert",
+      "Programme: Red Alert",
+      "BBC One",
+      "1999–2000",
+      "Production",
+      "Source: https://www.broadcastnow.co.uk/14-april-2000/906.issue?page=5"
+    ]
   }
 ];
-if(questions.length!==39||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(59673+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 819 validation failed');
+const validIds = new Set([...Array.from({length:39},(_,i)=>'tv_'+(59673+i)),...Array.from({length:9},(_,i)=>'tv_'+(59742+i))]);
+if(questions.length!==48||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 819 validation failed');
 module.exports=questions;
