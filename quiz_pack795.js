@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 795: The Celebrity Traitors UK series 1
-// 101 questions covering all nine episodes and missions, all nineteen players, shields, key votes, charities, finale, and four BAFTA wins plus presenter nomination. Checked dedicated earlier Traitors packs and film pack 782. Legacy packs 1–20 and 209–222 screened for Traitors previously. Full-bank ID and semantic duplicate certification remains outstanding due to unreliable repository search; no full footage review. Omitted conflicting funeral-mission earnings; detailed dialogue, some charity choices and other awards may need future verification. Live bank unchanged.
+// Revised 27 November 2026: 120 questions. Added verified funeral, cabin and chess earnings, funeral and chess details, remaining four contestants' charities, maximum prize and additional BAFTA, RTS, NTA, TRIC, Broadcast Digital and Edinburgh awards and nominations. Sources checked against episode transcripts, published charity list and award bodies/reporting. Recent packs checked for new ID collisions. Full-bank ID and semantic duplicate certification and full footage review remain outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -3031,7 +3031,578 @@ const questions = [
       "Awards",
       "Source: https://www.bafta.org/awards/television/?award-year=2026"
     ]
+  },
+  {
+    "id": "tv_59840",
+    "question": "In the first series of The Celebrity Traitors (UK), how much money was actually added to the prize fund in the funeral mission?",
+    "answers": [
+      "£4,500",
+      "£5,000",
+      "£6,000",
+      "£9,000"
+    ],
+    "correctAnswer": "£4,500",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Episode 2",
+      "Source: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=the-celebrity-traitors-2025"
+    ]
+  },
+  {
+    "id": "tv_59841",
+    "question": "In the first series of The Celebrity Traitors (UK), how much was earned in the cabin escape mission?",
+    "answers": [
+      "£6,000",
+      "£8,000",
+      "£7,500",
+      "£10,000"
+    ],
+    "correctAnswer": "£8,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Episode 3",
+      "Source: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=the-celebrity-traitors-2025"
+    ]
+  },
+  {
+    "id": "tv_59842",
+    "question": "In the first series of The Celebrity Traitors (UK), how much did the chess mission add to the charity prize fund?",
+    "answers": [
+      "£2,500",
+      "£7,000",
+      "£5,000",
+      "£10,000"
+    ],
+    "correctAnswer": "£5,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Episode 6",
+      "Source: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=the-celebrity-traitors-2025"
+    ]
+  },
+  {
+    "id": "tv_59843",
+    "question": "In the first series of The Celebrity Traitors (UK), what did the contestants place at the foot of the coffin they believed belonged to the actual murder victim?",
+    "answers": [
+      "A shield",
+      "A crown",
+      "A gold coin",
+      "A wreath"
+    ],
+    "correctAnswer": "A wreath",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Episode 2",
+      "Source: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=the-celebrity-traitors-2025"
+    ]
+  },
+  {
+    "id": "tv_59844",
+    "question": "In the first series of The Celebrity Traitors (UK), who placed the wreath beside Lucy Beaumont's coffin on behalf of the group?",
+    "answers": [
+      "Mark Bonnar",
+      "Tom Daley",
+      "Stephen Fry",
+      "Joe Marler"
+    ],
+    "correctAnswer": "Mark Bonnar",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Episode 2",
+      "Source: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=the-celebrity-traitors-2025"
+    ]
+  },
+  {
+    "id": "tv_59845",
+    "question": "In the first series of The Celebrity Traitors (UK), which other contestant helped Nick Mohammed sabotage the end of the chess mission?",
+    "answers": [
+      "Jonathan Ross",
+      "Joe Marler",
+      "Stephen Fry",
+      "David Olusoga"
+    ],
+    "correctAnswer": "Joe Marler",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Episode 6",
+      "Source: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=the-celebrity-traitors-2025"
+    ]
+  },
+  {
+    "id": "tv_59846",
+    "question": "In the first series of The Celebrity Traitors (UK), which two celebrities were playing for Cancer Research UK?",
+    "answers": [
+      "Paloma Faith and Cat Burns",
+      "Joe Wilkinson and Mark Bonnar",
+      "Clare Balding and Jonathan Ross",
+      "Stephen Fry and Nick Mohammed"
+    ],
+    "correctAnswer": "Clare Balding and Jonathan Ross",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Charity",
+      "Source: https://goss.ie/realitytv/bbc-reveals-names-of-19-charities-that-stars-were-playing-for-during-the-celebrity-traitors-443331"
+    ]
+  },
+  {
+    "id": "tv_59847",
+    "question": "In the first series of The Celebrity Traitors (UK), which charity was David Olusoga playing for?",
+    "answers": [
+      "Dogs Trust",
+      "Battersea Dogs & Cats Home",
+      "Blue Cross",
+      "Bristol Dog Action Welfare Group Greyhound & Lurcher Rescue"
+    ],
+    "correctAnswer": "Bristol Dog Action Welfare Group Greyhound & Lurcher Rescue",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Charity",
+      "Source: https://goss.ie/realitytv/bbc-reveals-names-of-19-charities-that-stars-were-playing-for-during-the-celebrity-traitors-443331"
+    ]
+  },
+  {
+    "id": "tv_59848",
+    "question": "In the first series of The Celebrity Traitors (UK), which charity had Paloma Faith chosen?",
+    "answers": [
+      "Save the Children",
+      "Children in Need",
+      "Barnardo's",
+      "Action for Children"
+    ],
+    "correctAnswer": "Save the Children",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Charity",
+      "Source: https://goss.ie/realitytv/bbc-reveals-names-of-19-charities-that-stars-were-playing-for-during-the-celebrity-traitors-443331"
+    ]
+  },
+  {
+    "id": "tv_59849",
+    "question": "In the first series of The Celebrity Traitors (UK), what was the maximum available prize fund for charity?",
+    "answers": [
+      "£75,000",
+      "£100,000",
+      "£150,000",
+      "£250,000"
+    ],
+    "correctAnswer": "£100,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Format",
+      "Source: https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=the-celebrity-traitors-2025"
+    ]
+  },
+  {
+    "id": "tv_59850",
+    "question": "In the first series of The Celebrity Traitors (UK), in which additional BAFTA Television Craft category was the programme nominated in 2026?",
+    "answers": [
+      "Director: Fiction",
+      "Original Music: Fiction",
+      "Director: Multi-Camera",
+      "Scripted Casting"
+    ],
+    "correctAnswer": "Director: Multi-Camera",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Awards",
+      "Source: https://www.bafta.org/awards/tvcraft/director-multi-camera/"
+    ]
+  },
+  {
+    "id": "tv_59851",
+    "question": "In the first series of The Celebrity Traitors (UK), which three directors shared the 2026 BAFTA multi-camera directing nomination?",
+    "answers": [
+      "Nikki Parsons, Ollie Bartlett and Richard Valentine",
+      "Paul Dugdale, Julia Knowles and Diccon Ramsay",
+      "Ben Hardy, Marcus Viner and Janet Fraser Crook",
+      "Ben Archard, Eddie Lewis and Marieke Barker-Benfield"
+    ],
+    "correctAnswer": "Ben Archard, Eddie Lewis and Marieke Barker-Benfield",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Awards",
+      "Source: https://www.bafta.org/awards/tvcraft/director-multi-camera/"
+    ]
+  },
+  {
+    "id": "tv_59852",
+    "question": "In the first series of The Celebrity Traitors (UK), which category did the series win at the 2026 RTS Programme Awards?",
+    "answers": [
+      "Entertainment and Reality",
+      "Popular Factual",
+      "Comedy Drama",
+      "Limited Series"
+    ],
+    "correctAnswer": "Entertainment and Reality",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Awards",
+      "Source: https://rts.org.uk/article/winners-rts-programme-awards-2026-announced"
+    ]
+  },
+  {
+    "id": "tv_59853",
+    "question": "In the first series of The Celebrity Traitors (UK), which National Television Award did the series win in September 2026?",
+    "answers": [
+      "Quiz Show",
+      "Reality Competition",
+      "Factual Entertainment",
+      "Returning Drama"
+    ],
+    "correctAnswer": "Reality Competition",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Awards",
+      "Source: https://www.nationaltvawards.com/winners"
+    ]
+  },
+  {
+    "id": "tv_59854",
+    "question": "In the first series of The Celebrity Traitors (UK), which category did the series win at the 2026 TRIC Awards?",
+    "answers": [
+      "Soap",
+      "Drama",
+      "Game Show",
+      "News Programme"
+    ],
+    "correctAnswer": "Game Show",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Awards",
+      "Source: https://tric.org.uk/winners-2026/"
+    ]
+  },
+  {
+    "id": "tv_59855",
+    "question": "In the first series of The Celebrity Traitors (UK), which award did the social media campaign supporting the series win at the 2026 Broadcast Digital Awards?",
+    "answers": [
+      "Best Original Web Channel",
+      "Best Comedy Programme",
+      "Best Specialist Factual Programme",
+      "Best Digital Support for a Programme"
+    ],
+    "correctAnswer": "Best Digital Support for a Programme",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Awards",
+      "Source: https://broadcastdigitalawards.co.uk/live/en/page/winners-2026"
+    ]
+  },
+  {
+    "id": "tv_59856",
+    "question": "In the first series of The Celebrity Traitors (UK), which programme category did the series win at the 2026 Edinburgh TV Festival awards?",
+    "answers": [
+      "Best Entertainment or Reality Series",
+      "Best Popular Factual Series",
+      "Best Drama",
+      "Best Comedy"
+    ],
+    "correctAnswer": "Best Entertainment or Reality Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Awards",
+      "Source: https://www.standard.co.uk/news/uk/bbc-claudia-winkleman-davina-mccall-alison-brooks-suzi-ruffell-b1294932.html"
+    ]
+  },
+  {
+    "id": "tv_59857",
+    "question": "In the first series of The Celebrity Traitors (UK), which host received the Edinburgh TV Festival's best entertainment presenter award in 2026 for the programme?",
+    "answers": [
+      "Ed Gamble",
+      "Claudia Winkleman",
+      "Alan Carr",
+      "Davina McCall"
+    ],
+    "correctAnswer": "Claudia Winkleman",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Awards",
+      "Source: https://www.standard.co.uk/news/uk/bbc-claudia-winkleman-davina-mccall-alison-brooks-suzi-ruffell-b1294932.html"
+    ]
+  },
+  {
+    "id": "tv_59858",
+    "question": "In the first series of The Celebrity Traitors (UK), which two people were nominated for the 2026 RTS craft award for non-scripted production design for the first celebrity series?",
+    "answers": [
+      "Ben Archard and Eddie Lewis",
+      "Paul Rowan and James Tinsley",
+      "Stuart Frossell and Mathieu Weekes",
+      "Joe Siddons and James Spooner"
+    ],
+    "correctAnswer": "Stuart Frossell and Mathieu Weekes",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 1",
+      "2025",
+      "Awards",
+      "Source: https://britishcinematographer.co.uk/2026-rts-craft-design-awards-including-for-photography/"
+    ]
   }
 ];
-if(questions.length!==101||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(58692+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 795 validation failed');
+const validIds = new Set([...Array.from({length:101},(_,i)=>'tv_'+(58692+i)),...Array.from({length:19},(_,i)=>'tv_'+(59840+i))]);
+if(questions.length!==120||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 795 validation failed');
 module.exports=questions;
