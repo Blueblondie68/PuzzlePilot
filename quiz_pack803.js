@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 803: The Traitors US season 3
-// 100 questions covering all 23 contestants, all eleven missions, late-arrival twist, coffin and chapel eliminations, recruitment, shields, votes, Seer, finale, selected reunion and five 2025 Emmy wins. Sources: Peacock episode recaps and elimination list, season/mission/vote tables, contemporary finale/reunion reporting and Television Academy. IDs and normalized questions checked against packs 222, 782, 787–801 odd; full-bank ID and semantic certification not achieved. No complete footage review; additional mission details, minor exchanges, reunion and other awards remain possible. Live bank unchanged.
+// Revised 27 November 2026: 116 questions. Retains all 23 contestants, eleven missions, eliminations, shields, recruitment, Seer and finale. Added chess mission guests and scoring, recruitment consequence, reunion developments, 2025 Critics Choice wins and nominations, 2026 PGA win and Emmy cinematography credits. ID ranges checked against recent TV packs; full-bank duplicate and ID certification and footage review remain outstanding. No live bank changes.
 'use strict';
 const questions = [
   {
@@ -3001,7 +3001,488 @@ const questions = [
       "Awards",
       "Source: https://www.televisionacademy.com/shows/the-traitors"
     ]
+  },
+  {
+    "id": "tv_59780",
+    "question": "In season three of The Traitors (US), which two former US Traitors contestants returned to commentate on the giant chess mission?",
+    "answers": [
+      "Kate Chastain and Parvati Shallow",
+      "Trishelle Cannatella and Sandra Diaz-Twine",
+      "Cirie Fields and Rachel Reilly",
+      "Janelle Pierzina and Phaedra Parks"
+    ],
+    "correctAnswer": "Kate Chastain and Parvati Shallow",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Episode 9",
+      "Source: https://www.peacocktv.com/blog/the-traitors-season-3-episode-9-recap"
+    ]
+  },
+  {
+    "id": "tv_59781",
+    "question": "In season three of The Traitors (US), how much was each correctly matched answer worth in the giant chess challenge?",
+    "answers": [
+      "$2,500",
+      "$5,000",
+      "$7,500",
+      "$10,000"
+    ],
+    "correctAnswer": "$5,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Episode 9",
+      "Source: https://www.peacocktv.com/blog/the-traitors-season-3-episode-9-recap"
+    ]
+  },
+  {
+    "id": "tv_59782",
+    "question": "In season three of The Traitors (US), what would have happened to Britney had she declined Danielle's invitation to become a Traitor?",
+    "answers": [
+      "She would have lost her next vote",
+      "She would have been given a shield",
+      "She would have been murdered immediately",
+      "She would have had to reveal Danielle's role"
+    ],
+    "correctAnswer": "She would have been murdered immediately",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Episode 10",
+      "Source: https://www.peacocktv.com/blog/the-traitors-season-3-episode-9-recap"
+    ]
+  },
+  {
+    "id": "tv_59783",
+    "question": "In season three of The Traitors (US), at the reunion, which contestant revealed she had worn and slept in a cloak before coming to Scotland?",
+    "answers": [
+      "Danielle Reyes",
+      "Gabby Windey",
+      "Nikki Garcia",
+      "Carolyn Wiger"
+    ],
+    "correctAnswer": "Carolyn Wiger",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Reunion",
+      "Source: https://www.tvinsider.com/1180367/the-traitors-season-3-reunion-takeaways/"
+    ]
+  },
+  {
+    "id": "tv_59784",
+    "question": "In season three of The Traitors (US), which pair described the close friendship they had developed after their early departures at the reunion?",
+    "answers": [
+      "Wells Adams and Chanel Ayan",
+      "Tony Vlachos and Nikki Garcia",
+      "Dorinda Medley and Jeremy Collins",
+      "Robyn Dixon and Bob Harper"
+    ],
+    "correctAnswer": "Wells Adams and Chanel Ayan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Reunion",
+      "Source: https://www.tvinsider.com/1180367/the-traitors-season-3-reunion-takeaways/"
+    ]
+  },
+  {
+    "id": "tv_59785",
+    "question": "In season three of The Traitors (US), which contestant said she had telephoned Andy Cohen in tears after becoming the first murder victim?",
+    "answers": [
+      "Chanel Ayan",
+      "Dorinda Medley",
+      "Robyn Dixon",
+      "Ciara Miller"
+    ],
+    "correctAnswer": "Dorinda Medley",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Reunion",
+      "Source: https://www.tvinsider.com/1180367/the-traitors-season-3-reunion-takeaways/"
+    ]
+  },
+  {
+    "id": "tv_59786",
+    "question": "In season three of The Traitors (US), which film did Dylan say his brother Zac had jokingly recommended to Bob the Drag Queen after Bob criticised his acting?",
+    "answers": [
+      "The Greatest Showman",
+      "High School Musical",
+      "Baywatch",
+      "Hairspray"
+    ],
+    "correctAnswer": "Baywatch",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Reunion",
+      "Source: https://www.tvinsider.com/1180367/the-traitors-season-3-reunion-takeaways/"
+    ]
+  },
+  {
+    "id": "tv_59787",
+    "question": "In season three of The Traitors (US), which earlier reality competition spin-off was at the root of the tension between Danielle and Britney discussed at the reunion?",
+    "answers": [
+      "Celebrity Big Brother",
+      "Survivor: Winners at War",
+      "The Challenge: All Stars",
+      "Big Brother Reindeer Games"
+    ],
+    "correctAnswer": "Big Brother Reindeer Games",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Reunion",
+      "Source: https://www.tvinsider.com/1180367/the-traitors-season-3-reunion-takeaways/"
+    ]
+  },
+  {
+    "id": "tv_59788",
+    "question": "In season three of The Traitors (US), how many Critics Choice Real TV Awards did the programme win in 2025?",
+    "answers": [
+      "Three",
+      "Two",
+      "Four",
+      "Six"
+    ],
+    "correctAnswer": "Three",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Awards",
+      "Source: https://awardswatch.com/7th-critics-choice-real-tv-awards-winners-the-traitors-love-on-the-spectrum-dancing-with-the-stars/"
+    ]
+  },
+  {
+    "id": "tv_59789",
+    "question": "In season three of The Traitors (US), which main programme category did the show win at the 2025 Critics Choice Real TV Awards?",
+    "answers": [
+      "Best Structured Series",
+      "Best Competition Series",
+      "Best Game Show",
+      "Best Unstructured Series"
+    ],
+    "correctAnswer": "Best Competition Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Awards",
+      "Source: https://awardswatch.com/7th-critics-choice-real-tv-awards-winners-the-traitors-love-on-the-spectrum-dancing-with-the-stars/"
+    ]
+  },
+  {
+    "id": "tv_59790",
+    "question": "In season three of The Traitors (US), which award recognising the participants collectively did the programme win at the 2025 Critics Choice Real TV Awards?",
+    "answers": [
+      "Best Limited Series Ensemble",
+      "Best Unstructured Series",
+      "Best Ensemble Cast in an Unscripted Series",
+      "Best Documentary Series"
+    ],
+    "correctAnswer": "Best Ensemble Cast in an Unscripted Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Awards",
+      "Source: https://awardswatch.com/7th-critics-choice-real-tv-awards-winners-the-traitors-love-on-the-spectrum-dancing-with-the-stars/"
+    ]
+  },
+  {
+    "id": "tv_59791",
+    "question": "In season three of The Traitors (US), which individual award did Alan Cumming win at the 2025 Critics Choice Real TV Awards?",
+    "answers": [
+      "Male Star of the Year",
+      "Best Actor in a Comedy Series",
+      "Best Supporting Actor",
+      "Best Show Host"
+    ],
+    "correctAnswer": "Best Show Host",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Awards",
+      "Source: https://awardswatch.com/7th-critics-choice-real-tv-awards-winners-the-traitors-love-on-the-spectrum-dancing-with-the-stars/"
+    ]
+  },
+  {
+    "id": "tv_59792",
+    "question": "In season three of The Traitors (US), which season-three winner was nominated for Female Star of the Year at the 2025 Critics Choice Real TV Awards?",
+    "answers": [
+      "Gabby Windey",
+      "Dolores Catania",
+      "Carolyn Wiger",
+      "Britney Haynes"
+    ],
+    "correctAnswer": "Gabby Windey",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Awards",
+      "Source: https://awardswatch.com/the-traitors-leads-7th-critics-choice-real-tv-awards-nominations/"
+    ]
+  },
+  {
+    "id": "tv_59793",
+    "question": "In season three of The Traitors (US), which season-three winner joined Alan Cumming as a 2025 Critics Choice Real TV Awards nominee for Male Star of the Year?",
+    "answers": [
+      "Lord Ivar Mountbatten",
+      "Dylan Efron",
+      "Rob Mariano",
+      "Tom Sandoval"
+    ],
+    "correctAnswer": "Dylan Efron",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Awards",
+      "Source: https://awardswatch.com/the-traitors-leads-7th-critics-choice-real-tv-awards-nominations/"
+    ]
+  },
+  {
+    "id": "tv_59794",
+    "question": "In season three of The Traitors (US), which Producers Guild of America award did the programme's third-season producing team receive at the 2026 ceremony?",
+    "answers": [
+      "Outstanding Producer of Documentary Television",
+      "Outstanding Producer of Live Entertainment",
+      "Outstanding Producer of Game & Competition Television",
+      "Outstanding Producer of Non-Fiction Television"
+    ],
+    "correctAnswer": "Outstanding Producer of Game & Competition Television",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Awards",
+      "Source: https://producersguild.org/award_category/award-for-outstanding-producer-of-game-competition-television/"
+    ]
+  },
+  {
+    "id": "tv_59795",
+    "question": "In season three of The Traitors (US), which pair were credited as directors of photography for the season's Emmy-winning cinematography in 2025?",
+    "answers": [
+      "Patrick Owen and James Seddon-Brown",
+      "Ben Archard and Stephen Lambert",
+      "Mike Cotton and Sam Rees-Jones",
+      "Siggi Rosen-Rawlings and Matt Wright"
+    ],
+    "correctAnswer": "Siggi Rosen-Rawlings and Matt Wright",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 3",
+      "2025",
+      "Awards",
+      "Source: https://www.televisionacademy.com/shows/the-traitors"
+    ]
   }
 ];
-if(questions.length!==100||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(59108+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 803 validation failed');
+const validIds = new Set([...Array.from({length:100},(_,i)=>'tv_'+(59108+i)),...Array.from({length:16},(_,i)=>'tv_'+(59780+i))]);
+if(questions.length!==116||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 803 validation failed');
 module.exports=questions;
