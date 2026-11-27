@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 813: Genius Game (UK)
-// 64 additions covering all eight episodes, eleven contestants, seven Main Matches, Death Matches, finale, format and production, award nomination and NTA longlist. Seven existing questions in Pack 222 retained. ITV, TVmaze, contemporary finale reports and episode tables consulted; detailed match results rely partly on a secondary episode table. No footage review; some late Death Match mechanics and detailed round scores remain unverified. Checked IDs and normalized question text against eight related/recent packs; no full-bank duplicate or ID certification. Live bank unchanged.
+// Revised 27 November 2026: 79 additions over legacy Pack 222. All eight episodes, eleven contestants, main and elimination matches, final, production and verified award recognition. Added late-game rules, strategy and production credits. Exact round-by-round scores intentionally not exhaustively tested. Some mechanics rely on secondary episode recaps, not a direct viewing of footage. Existing IDs retained; new IDs checked against selected recent/related packs and current head; full-bank certification outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -1793,7 +1793,428 @@ const questions = [
       "Awards",
       "Source: https://www.radiotimes.com/tv/entertainment/ntas-2025-longlist/"
     ]
+  },
+  {
+    "id": "tv_59719",
+    "question": "Who normally chooses the opponent for a Death Match on the UK Genius Game?",
+    "answers": [
+      "The nominated player facing elimination",
+      "The presenter",
+      "A public vote",
+      "The player with the most garnets"
+    ],
+    "correctAnswer": "The nominated player facing elimination",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Format",
+      "Source: https://en.everybodywiki.com/Genius_Game"
+    ]
+  },
+  {
+    "id": "tv_59720",
+    "question": "How many points were needed to win Hidden Noughts and Crosses on Genius Game?",
+    "answers": [
+      "Five",
+      "Seven",
+      "Fifteen",
+      "Ten"
+    ],
+    "correctAnswer": "Ten",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 2",
+      "Source: https://en.everybodywiki.com/Genius_Game"
+    ]
+  },
+  {
+    "id": "tv_59721",
+    "question": "In the UK Genius Game's Poker Face, what determined the winner of a bet when neither player folded?",
+    "answers": [
+      "The colour of the card",
+      "The larger number of previous wins",
+      "The higher numbered card",
+      "The lower numbered card"
+    ],
+    "correctAnswer": "The higher numbered card",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 3",
+      "Source: https://en.everybodywiki.com/Genius_Game"
+    ]
+  },
+  {
+    "id": "tv_59722",
+    "question": "What special object could players use to prevent a rival swapping cubes for one round in Lights Off?",
+    "answers": [
+      "A joker card",
+      "A padlock",
+      "A silver key",
+      "A shield"
+    ],
+    "correctAnswer": "A padlock",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 4",
+      "Source: https://en.everybodywiki.com/Genius_Game"
+    ]
+  },
+  {
+    "id": "tv_59723",
+    "question": "How did the Death Match candidates obtain most of their cards for Tactical Rock Paper Scissors?",
+    "answers": [
+      "From the other contestants",
+      "By bidding at an auction",
+      "By drawing from a communal deck",
+      "By buying them from the presenter"
+    ],
+    "correctAnswer": "From the other contestants",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 4",
+      "Source: https://en.everybodywiki.com/Genius_Game"
+    ]
+  },
+  {
+    "id": "tv_59724",
+    "question": "Who chose Alison Bruce as their opponent in the Black and White Death Match?",
+    "answers": [
+      "Bex Kellett",
+      "Charlotte Yeung",
+      "Ken Cheng",
+      "Indie Loader"
+    ],
+    "correctAnswer": "Indie Loader",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 5",
+      "Source: https://m.namu.moe/w/The%20Genius%20Game/5%ED%99%94"
+    ]
+  },
+  {
+    "id": "tv_59725",
+    "question": "What did players have to locate in Picture Hunt on Genius Game?",
+    "answers": [
+      "Hidden numbers in a grid",
+      "Differences between two photographs",
+      "Matching images on a conveyor belt",
+      "Missing letters on a screen"
+    ],
+    "correctAnswer": "Matching images on a conveyor belt",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 6",
+      "Source: https://m.namu.moe/w/The%20Genius%20Game/6%ED%99%94"
+    ]
+  },
+  {
+    "id": "tv_59726",
+    "question": "What happened to a player's cheque in Media Moguls if their investment exceeded their available funds?",
+    "answers": [
+      "It was deducted from the jackpot",
+      "It bounced",
+      "It was paid in garnets",
+      "It was covered by a rival"
+    ],
+    "correctAnswer": "It bounced",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 7",
+      "Source: https://m.namu.moe/w/The%20Genius%20Game/7%ED%99%94"
+    ]
+  },
+  {
+    "id": "tv_59727",
+    "question": "What could a player spend to challenge another contestant's claimed dice total in Dice Deception?",
+    "answers": [
+      "A doubt chip",
+      "A Token of Life",
+      "A diamond",
+      "A padlock"
+    ],
+    "correctAnswer": "A doubt chip",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 7",
+      "Source: https://m.namu.moe/w/The%20Genius%20Game/7%ED%99%94"
+    ]
+  },
+  {
+    "id": "tv_59728",
+    "question": "What was the range of totals players aimed to complete in Dice Deception?",
+    "answers": [
+      "Two to twelve",
+      "One to six",
+      "One to twenty",
+      "Zero to ten"
+    ],
+    "correctAnswer": "Zero to ten",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 7",
+      "Source: https://m.namu.moe/w/The%20Genius%20Game/7%ED%99%94"
+    ]
+  },
+  {
+    "id": "tv_59729",
+    "question": "Which earlier Death Match was replayed as the opening game of the UK Genius Game final?",
+    "answers": [
+      "Black and White",
+      "Picture Hunt",
+      "Same or Different",
+      "Poker Face"
+    ],
+    "correctAnswer": "Same or Different",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 8",
+      "Source: https://m.namu.moe/w/The%20Genius%20Game/8%ED%99%94"
+    ]
+  },
+  {
+    "id": "tv_59730",
+    "question": "In Golden Triangle, what determined each finalist's score for a round?",
+    "answers": [
+      "The value of their first tile placed",
+      "The values of their tiles bordering the vacant triangle",
+      "The total value of all their remaining tiles",
+      "The number of triangles they completed"
+    ],
+    "correctAnswer": "The values of their tiles bordering the vacant triangle",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Episode 8",
+      "Source: https://m.namu.moe/w/The%20Genius%20Game/8%ED%99%94"
+    ]
+  },
+  {
+    "id": "tv_59731",
+    "question": "Which trio were named as executive producers of the British Genius Game in ITV's press announcement?",
+    "answers": [
+      "Tamara Gilder, Kelly Lynn and Anna Kidd",
+      "Katie Rawcliffe, Joe Mace and Cat Lawson",
+      "Danielle Lux, Murray Boland and Dan Maier",
+      "Richard Osman, David Tennant and Ken Cheng"
+    ],
+    "correctAnswer": "Tamara Gilder, Kelly Lynn and Anna Kidd",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Production",
+      "Source: https://www.itv.com/presscentre/presscentre/presscentre/media-packs/genius-game-starting-april-2025-date-and-time-tbc-itv1-itvx-stv-stv-player"
+    ]
+  },
+  {
+    "id": "tv_59732",
+    "question": "Which international television group owns Remarkable Entertainment, the producer of the UK Genius Game?",
+    "answers": [
+      "Fremantle",
+      "All3Media",
+      "ITV Studios",
+      "Banijay"
+    ],
+    "correctAnswer": "Banijay",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Production",
+      "Source: https://www.itv.com/presscentre/presscentre/presscentre/media-packs/genius-game-starting-april-2025-date-and-time-tbc-itv1-itvx-stv-stv-player"
+    ]
+  },
+  {
+    "id": "tv_59733",
+    "question": "What was the title of the companion podcast discussing episodes of the UK Genius Game?",
+    "answers": [
+      "Garnet Talk",
+      "The Final Match",
+      "Dealer's Room",
+      "The Creator's Chamber"
+    ],
+    "correctAnswer": "Dealer's Room",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "Genius Game",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "Genius Game",
+      "Programme: Genius Game",
+      "ITV",
+      "Series 1",
+      "2025",
+      "Production",
+      "Source: https://podcasts.apple.com/gb/podcast/dealers-room-genius-game-podcast/id1812177260"
+    ]
   }
 ];
-if(questions.length!==64||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(59548+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 813 validation failed');
+const validIds = new Set([...Array.from({length:64},(_,i)=>'tv_'+(59548+i)),...Array.from({length:15},(_,i)=>'tv_'+(59719+i))]);
+if(questions.length!==79||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 813 validation failed');
 module.exports=questions;
