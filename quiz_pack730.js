@@ -6576,5 +6576,341 @@ module.exports = [
                 "Source: https://amblin.com/movie/jurassic-world-rebirth/",
                 "Source: https://en.wikipedia.org/wiki/Jurassic_World_Rebirth"
             ]
-        }
+        },
+    {
+        "id": "film_5500",
+        "question": "In Jurassic Park, what problem does the worker at the raptor enclosure have in the opening scene?",
+        "answers": [
+            "A raptor knocks him out of a jeep",
+            "The electrified fence shocks him",
+            "The cage falls onto him from a helicopter",
+            "A raptor drags him towards its transport cage"
+        ],
+        "correctAnswer": "A raptor drags him towards its transport cage",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Jurassic Park",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic Park",
+            "1993",
+            "Science Fiction",
+            "Adventure",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67200-JURASSIC-PARK"
+        ]
+    },
+    {
+        "id": "film_5501",
+        "question": "In Jurassic Park, what does Ellie examine to look for evidence of what the sick Triceratops has eaten?",
+        "answers": [
+            "Its footprints",
+            "The vegetation stuck to its horns",
+            "Its droppings",
+            "Its abandoned eggs"
+        ],
+        "correctAnswer": "Its droppings",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Jurassic Park",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic Park",
+            "1993",
+            "Science Fiction",
+            "Adventure",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67200-JURASSIC-PARK"
+        ]
+    },
+    {
+        "id": "film_5502",
+        "question": "In Jurassic Park, why is Nedry in such a rush to reach the east dock?",
+        "answers": [
+            "He is trying to warn passengers about the raptor attack",
+            "He needs to deliver the embryos before the boat leaves",
+            "He has been told the island's power will be cut",
+            "He is trying to catch the tour vehicle carrying Hammond's grandchildren"
+        ],
+        "correctAnswer": "He needs to deliver the embryos before the boat leaves",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Jurassic Park",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic Park",
+            "1993",
+            "Science Fiction",
+            "Adventure",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67200-JURASSIC-PARK"
+        ]
+    },
+    {
+        "id": "film_5503",
+        "question": "In Jurassic Park, which producer worked alongside Gerald R. Molen?",
+        "answers": [
+            "Kathleen Kennedy",
+            "Frank Marshall",
+            "Walter F. Parkes",
+            "Laura MacDonald"
+        ],
+        "correctAnswer": "Kathleen Kennedy",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Jurassic Park",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic Park",
+            "1993",
+            "Science Fiction",
+            "Adventure",
+            "Production",
+            "Source: https://amblin.com/movie/jurassic-park/"
+        ]
+    },
+    {
+        "id": "film_5504",
+        "question": "In The Lost World: Jurassic Park, what information does Sarah give the expedition about the injured infant tyrannosaur?",
+        "answers": [
+            "It has a broken leg",
+            "It has been blinded",
+            "It has a torn tail",
+            "It has lost its teeth"
+        ],
+        "correctAnswer": "It has a broken leg",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Lost World: Jurassic Park",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: The Lost World: Jurassic Park",
+            "1997",
+            "Science Fiction",
+            "Adventure",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Lost_World:_Jurassic_Park"
+        ]
+    },
+    {
+        "id": "film_5505",
+        "question": "In The Lost World: Jurassic Park, why does Roland Tembo turn down the offer to work at the San Diego park after the island expedition?",
+        "answers": [
+            "He is taking charge of Hammond's expedition",
+            "He has decided to stay on Isla Sorna",
+            "He wants a job with Sarah Harding",
+            "He is disillusioned by the trip and the death of his friend"
+        ],
+        "correctAnswer": "He is disillusioned by the trip and the death of his friend",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Lost World: Jurassic Park",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: The Lost World: Jurassic Park",
+            "1997",
+            "Science Fiction",
+            "Adventure",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Lost_World:_Jurassic_Park"
+        ]
+    },
+    {
+        "id": "film_5506",
+        "question": "In Jurassic Park III, where does Eric shelter while surviving alone on the island?",
+        "answers": [
+            "Inside a pterosaur nest",
+            "In the abandoned communications bunker",
+            "Inside a water tanker",
+            "In a stranded helicopter"
+        ],
+        "correctAnswer": "Inside a water tanker",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Jurassic Park III",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic Park III",
+            "2001",
+            "Science Fiction",
+            "Adventure",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Jurassic_Park_III"
+        ]
+    },
+    {
+        "id": "film_5507",
+        "question": "In Jurassic World, who was the production designer?",
+        "answers": [
+            "Rick Carter",
+            "Ed Verreaux",
+            "Andy Nicholson",
+            "Kevin Jenkins"
+        ],
+        "correctAnswer": "Ed Verreaux",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Jurassic World",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic World",
+            "2015",
+            "Science Fiction",
+            "Adventure",
+            "Production",
+            "Source: https://amblin.com/movie/jurassic-world/"
+        ]
+    },
+    {
+        "id": "film_5508",
+        "question": "In Jurassic World, what equipment is Zach trying to repair with Gray in the old visitor centre when they need a way back to safety?",
+        "answers": [
+            "A radio transmitter",
+            "A jeep",
+            "A fuel pump for a launch",
+            "A Gyrosphere charging station"
+        ],
+        "correctAnswer": "A jeep",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Jurassic World",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic World",
+            "2015",
+            "Science Fiction",
+            "Adventure",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Jurassic_World"
+        ]
+    },
+    {
+        "id": "film_5509",
+        "question": "In Jurassic World: Fallen Kingdom, which visual effects studio worked on the opening lagoon sequence?",
+        "answers": [
+            "Important Looking Pirates",
+            "Weta Digital",
+            "Framestore",
+            "Rodeo FX"
+        ],
+        "correctAnswer": "Important Looking Pirates",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Jurassic World: Fallen Kingdom",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic World: Fallen Kingdom",
+            "2018",
+            "Science Fiction",
+            "Adventure",
+            "Production",
+            "Source: https://www.ilpvfx.com/work/jurassic-world-fallen-kingdom"
+        ]
+    },
+    {
+        "id": "film_5510",
+        "question": "In Jurassic World Rebirth, which film gauge did cinematographer John Mathieson use for principal photography?",
+        "answers": [
+            "16 mm",
+            "65 mm",
+            "8 mm",
+            "35 mm"
+        ],
+        "correctAnswer": "35 mm",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Jurassic World Rebirth",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic World Rebirth",
+            "2025",
+            "Science Fiction",
+            "Adventure",
+            "Production",
+            "Source: https://www.kodak.com/en/motion/blog-post/jurassic-world-rebirth/"
+        ]
+    },
+    {
+        "id": "film_5511",
+        "question": "In Jurassic World Rebirth, in which country did the crew shoot the waterborne stunts in large tanks?",
+        "answers": [
+            "Thailand",
+            "The United Kingdom",
+            "Malta",
+            "The United States"
+        ],
+        "correctAnswer": "Malta",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Jurassic World Rebirth",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic World Rebirth",
+            "2025",
+            "Science Fiction",
+            "Adventure",
+            "Production",
+            "Source: https://www.kodak.com/en/motion/blog-post/jurassic-world-rebirth/"
+        ]
+    },
+    {
+        "id": "film_5512",
+        "question": "In Jurassic World Dominion, who shares a story credit with Colin Trevorrow?",
+        "answers": [
+            "David Koepp",
+            "J. A. Bayona",
+            "Derek Connolly",
+            "Emily Carmichael"
+        ],
+        "correctAnswer": "Derek Connolly",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Jurassic World Dominion",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic World Dominion",
+            "2022",
+            "Science Fiction",
+            "Adventure",
+            "Production",
+            "Source: https://www.universalpicturesathome.com/press-release/jurassic-world-dominion-press-release"
+        ]
+    },
+    {
+        "id": "film_5513",
+        "question": "In Jurassic World Dominion, who was the production designer?",
+        "answers": [
+            "Ed Verreaux",
+            "Kevin Jenkins",
+            "Rick Carter",
+            "Andy Nicholson"
+        ],
+        "correctAnswer": "Kevin Jenkins",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Jurassic World Dominion",
+        "category": "Film",
+        "tags": [
+            "Jurassic Park franchise",
+            "Film: Jurassic World Dominion",
+            "2022",
+            "Science Fiction",
+            "Adventure",
+            "Production",
+            "Source: https://www.universalpicturesathome.com/press-release/jurassic-world-dominion-press-release"
+        ]
+    }
 ];
