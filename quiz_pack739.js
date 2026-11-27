@@ -3902,5 +3902,157 @@ module.exports = [
                 "Source: https://www.wbsl.com/studios/2022/04/08/fantastic-beasts-the-secrets-of-dumbledore/",
                 "Source: https://en.wikipedia.org/wiki/Fantastic_Beasts%3A_The_Secrets_of_Dumbledore"
             ]
-        }
+        },
+    {
+        "id": "film_5533",
+        "question": "In Fantastic Beasts and Where to Find Them, who plays Senator Henry Shaw Jr.?",
+        "answers": [
+            "Ron Perlman",
+            "Jon Voight",
+            "Josh Cowdery",
+            "Ronan Raftery"
+        ],
+        "correctAnswer": "Josh Cowdery",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Fantastic Beasts and Where to Find Them",
+        "category": "Film",
+        "tags": [
+            "Fantastic Beasts franchise",
+            "Film: Fantastic Beasts and Where to Find Them",
+            "2016",
+            "Wizarding World",
+            "Fantasy",
+            "Adventure",
+            "Cast",
+            "Character: Henry Shaw Jr.",
+            "Actor: Josh Cowdery",
+            "Source: https://www.warnerbros.com/movies/fantastic-beasts-and-where-find-them"
+        ]
+    },
+    {
+        "id": "film_5534",
+        "question": "In Fantastic Beasts: The Crimes of Grindelwald, what object does Newt use to catch the Zouwu's attention in Paris?",
+        "answers": [
+            "A box of beetles",
+            "A toy on a stick",
+            "A pocket mirror",
+            "A roll of parchment"
+        ],
+        "correctAnswer": "A toy on a stick",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Fantastic Beasts: The Crimes of Grindelwald",
+        "category": "Film",
+        "tags": [
+            "Fantastic Beasts franchise",
+            "Film: Fantastic Beasts: The Crimes of Grindelwald",
+            "2018",
+            "Wizarding World",
+            "Fantasy",
+            "Adventure",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Fantastic_Beasts:_The_Crimes_of_Grindelwald"
+        ]
+    },
+    {
+        "id": "film_5535",
+        "question": "In Fantastic Beasts: The Secrets of Dumbledore, who supervised the visual effects?",
+        "answers": [
+            "Christian Mänz",
+            "Tim Burke",
+            "David Vickery",
+            "John Richardson"
+        ],
+        "correctAnswer": "Christian Mänz",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Fantastic Beasts: The Secrets of Dumbledore",
+        "category": "Film",
+        "tags": [
+            "Fantastic Beasts franchise",
+            "Film: Fantastic Beasts: The Secrets of Dumbledore",
+            "2022",
+            "Wizarding World",
+            "Fantasy",
+            "Adventure",
+            "Production",
+            "Source: https://www.wbsl.com/studios/2022/04/08/fantastic-beasts-the-secrets-of-dumbledore/"
+        ]
+    },
+    {
+        "id": "film_5536",
+        "question": "In Fantastic Beasts: The Secrets of Dumbledore, what do the cases carried by most of Dumbledore's team do when opened at the election ceremony?",
+        "answers": [
+            "Release distractions so the real case can get through",
+            "Reveal photographs of Grindelwald's crimes",
+            "Become unusable when moved away from the holder",
+            "Contain identical enchanted copies of the Qilin"
+        ],
+        "correctAnswer": "Release distractions so the real case can get through",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Fantastic Beasts: The Secrets of Dumbledore",
+        "category": "Film",
+        "tags": [
+            "Fantastic Beasts franchise",
+            "Film: Fantastic Beasts: The Secrets of Dumbledore",
+            "2022",
+            "Wizarding World",
+            "Fantasy",
+            "Adventure",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Fantastic_Beasts:_The_Secrets_of_Dumbledore"
+        ]
+    },
+    {
+        "id": "film_5537",
+        "question": "In Fantastic Beasts and Where to Find Them, who was the director of photography?",
+        "answers": [
+            "George Richmond",
+            "Bruno Delbonnel",
+            "Eduardo Serra",
+            "Philippe Rousselot"
+        ],
+        "correctAnswer": "Philippe Rousselot",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Fantastic Beasts and Where to Find Them",
+        "category": "Film",
+        "tags": [
+            "Fantastic Beasts franchise",
+            "Film: Fantastic Beasts and Where to Find Them",
+            "2016",
+            "Wizarding World",
+            "Fantasy",
+            "Adventure",
+            "Production",
+            "Source: https://filmsandfestivals.britishcouncil.org/projects/fantastic-beasts-and-where-to-find-them"
+        ]
+    },
+    {
+        "id": "film_5538",
+        "question": "In Fantastic Beasts: The Crimes of Grindelwald, who edited the film?",
+        "answers": [
+            "Steven Weisberg",
+            "Michael Kahn",
+            "Mark Day",
+            "Chris Lebenzon"
+        ],
+        "correctAnswer": "Mark Day",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Fantastic Beasts: The Crimes of Grindelwald",
+        "category": "Film",
+        "tags": [
+            "Fantastic Beasts franchise",
+            "Film: Fantastic Beasts: The Crimes of Grindelwald",
+            "2018",
+            "Wizarding World",
+            "Fantasy",
+            "Adventure",
+            "Production",
+            "Source: https://www.sev.gob.mx/clasesdesdecasa/documentos/a3a72e38152c91e1bfc9913608b629e0A_F_los_crimenes_de_grindelwald.pdf"
+        ]
+    }
 ];
