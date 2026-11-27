@@ -7051,5 +7051,320 @@ module.exports = [
                 "Source: https://www.youtube.com/watch?v=NTnfmHRVo_k",
                 "Source: https://en.wikipedia.org/wiki/Creed_III"
             ]
-        }
+        },
+    {
+        "id": "film_5539",
+        "question": "In Rocky, what does Rocky notice is wrong with the large illustration of him at the arena before the fight?",
+        "answers": [
+            "His left hand is depicted as his right",
+            "The colours of his boxing shorts are reversed",
+            "He is drawn wearing Apollo's boxing robe",
+            "They have misspelt his surname"
+        ],
+        "correctAnswer": "The colours of his boxing shorts are reversed",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Rocky",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Rocky",
+            "1976",
+            "Sports Drama",
+            "Boxing",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/53862"
+        ]
+    },
+    {
+        "id": "film_5540",
+        "question": "In Rocky, what does Adrian do when she reaches Rocky in the ring just after the decision?",
+        "answers": [
+            "Hands him a towel and leaves",
+            "Tells him she loves him",
+            "Asks him to congratulate Apollo",
+            "Helps him put the championship belt on"
+        ],
+        "correctAnswer": "Tells him she loves him",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Rocky",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Rocky",
+            "1976",
+            "Sports Drama",
+            "Boxing",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/53862"
+        ]
+    },
+    {
+        "id": "film_5541",
+        "question": "In Rocky, who shot the film as director of photography?",
+        "answers": [
+            "James Crabe",
+            "Bill Butler",
+            "Victor J. Kemper",
+            "Clark Mathis"
+        ],
+        "correctAnswer": "James Crabe",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Rocky",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Rocky",
+            "1976",
+            "Sports Drama",
+            "Boxing",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/53862"
+        ]
+    },
+    {
+        "id": "film_5542",
+        "question": "In Rocky II, where does Apollo first press Rocky for a rematch after their title fight?",
+        "answers": [
+            "At Mickey's gym",
+            "At a press conference outside City Hall",
+            "At a television studio",
+            "At the hospital"
+        ],
+        "correctAnswer": "At the hospital",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Rocky II",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Rocky II",
+            "1979",
+            "Sports Drama",
+            "Boxing",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/56147"
+        ]
+    },
+    {
+        "id": "film_5543",
+        "question": "In Rocky II, who was the director of photography?",
+        "answers": [
+            "James Crabe",
+            "Victor J. Kemper",
+            "Bill Butler",
+            "Clark Mathis"
+        ],
+        "correctAnswer": "Bill Butler",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Rocky II",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Rocky II",
+            "1979",
+            "Sports Drama",
+            "Boxing",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/56147"
+        ]
+    },
+    {
+        "id": "film_5544",
+        "question": "In Rocky IV, which song does James Brown perform as part of Apollo's entrance in Las Vegas?",
+        "answers": [
+            "Super Bad",
+            "Get Up Offa That Thing",
+            "Living in America",
+            "The Payback"
+        ],
+        "correctAnswer": "Living in America",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Rocky IV",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Rocky IV",
+            "1985",
+            "Sports Drama",
+            "Boxing",
+            "Music",
+            "Source: https://catalog.afi.com/Film/58336-ROCKY-IV"
+        ]
+    },
+    {
+        "id": "film_5545",
+        "question": "In Rocky IV, which pair sings 'Double or Nothing' on the soundtrack?",
+        "answers": [
+            "Joe Cocker and Jennifer Warnes",
+            "Kenny Loggins and Gladys Knight",
+            "Lionel Richie and Diana Ross",
+            "Bryan Adams and Tina Turner"
+        ],
+        "correctAnswer": "Kenny Loggins and Gladys Knight",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Rocky IV",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Rocky IV",
+            "1985",
+            "Sports Drama",
+            "Boxing",
+            "Music",
+            "Source: https://catalog.afi.com/Film/58336-ROCKY-IV"
+        ]
+    },
+    {
+        "id": "film_5546",
+        "question": "In Rocky V, what does Rocky do after Duke dares him to hit him and threatens to sue?",
+        "answers": [
+            "He punches Duke anyway",
+            "He throws the cufflink at Duke and walks away",
+            "He asks the police to arrest Duke",
+            "He calls Tommy over to apologise"
+        ],
+        "correctAnswer": "He punches Duke anyway",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Rocky V",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Rocky V",
+            "1990",
+            "Sports Drama",
+            "Boxing",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/58674"
+        ]
+    },
+    {
+        "id": "film_5547",
+        "question": "In Rocky Balboa, who edited the film?",
+        "answers": [
+            "Richard Halsey",
+            "John G. Avildsen",
+            "Michael McCusker",
+            "Sean Albertson"
+        ],
+        "correctAnswer": "Sean Albertson",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Rocky Balboa",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Rocky Balboa",
+            "2006",
+            "Sports Drama",
+            "Boxing",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/64007"
+        ]
+    },
+    {
+        "id": "film_5548",
+        "question": "In Creed, who shares the screenplay credit with Ryan Coogler?",
+        "answers": [
+            "Keenan Coogler",
+            "Juel Taylor",
+            "Sylvester Stallone",
+            "Aaron Covington"
+        ],
+        "correctAnswer": "Aaron Covington",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Creed",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Creed",
+            "2015",
+            "Sports Drama",
+            "Boxing",
+            "Creed franchise",
+            "Production",
+            "Source: https://catalog.afi.com/Film/70429-CREED"
+        ]
+    },
+    {
+        "id": "film_5549",
+        "question": "In Creed II, who was the director of photography?",
+        "answers": [
+            "Maryse Alberti",
+            "Clark Mathis",
+            "Kramer Morgenthau",
+            "Bill Butler"
+        ],
+        "correctAnswer": "Kramer Morgenthau",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Creed II",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Creed II",
+            "2018",
+            "Sports Drama",
+            "Boxing",
+            "Creed franchise",
+            "Production",
+            "Source: https://watch.afi.com/movie/creed-2"
+        ]
+    },
+    {
+        "id": "film_5550",
+        "question": "In Creed III, what does Damian ask Adonis for when they catch up after Damian's release?",
+        "answers": [
+            "A job writing songs for Bianca",
+            "A chance at the heavyweight title",
+            "A rematch with Rocky",
+            "Help moving away from Los Angeles"
+        ],
+        "correctAnswer": "A chance at the heavyweight title",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Creed III",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Creed III",
+            "2023",
+            "Sports Drama",
+            "Boxing",
+            "Creed franchise",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Creed_III"
+        ]
+    },
+    {
+        "id": "film_5551",
+        "question": "In Rocky III, which cinematographer returned from Rocky II to light and shoot the third film?",
+        "answers": [
+            "Bill Butler",
+            "James Crabe",
+            "Victor J. Kemper",
+            "Clark Mathis"
+        ],
+        "correctAnswer": "Bill Butler",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Rocky III",
+        "category": "Film",
+        "tags": [
+            "Rocky franchise",
+            "Film: Rocky III",
+            "1982",
+            "Sports Drama",
+            "Boxing",
+            "Production",
+            "Source: https://catalog.afi.com/Film/56866-ROCKY-III"
+        ]
+    }
 ];
