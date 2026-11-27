@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 807: The Traitors: New Blood season 1
-// 82 additions. All 22 contestants, all twelve episodes and eight missions represented, Accomplices, Pardon, recruitment, shields, eliminations, finale and selected production facts. Contemporary TVLine, DIRECTV, TV Insider, TheWrap, NBCUniversal, Banijay and season tables used. No specific awards confirmed for this recently concluded spin-off. Conflicting exact vote counts omitted where sources disagree; full footage and fine mission mechanics not exhaustive. Checked IDs and normalized questions against packs 791–805 odd; full-bank certification still outstanding. Live bank unchanged.
+// Revised 27 November 2026: 92 questions. Existing full elimination order, 22 contestants, all 12 episodes and eight missions retained; ten meaningful additions cover casting, maximum prize, feast, finale's no-reveal rule, decisive betrayal, post-reveal reconciliation, winner milestone and production. Renewal confirmed for 2027. No spin-off-specific awards found; awards of the parent Peacock series not attributed to this edition. Detailed mission timings and disputed vote counts not exhaustively tested. New IDs checked against selected recent/related packs and current head; full-bank duplicate and ID certification outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -2543,7 +2543,327 @@ const questions = [
       "Production",
       "Source: https://www.banijay.com/blog/2026/11/19/nbc-renews-the-traitors-new-blood-for-season-2-with-emmy-award-winning-host-alan-cumming/"
     ]
+  },
+  {
+    "id": "tv_59752",
+    "question": "Approximately how many people applied for the inaugural season of The Traitors: New Blood?",
+    "answers": [
+      "Over 80,000",
+      "Over 8,000",
+      "Over 20,000",
+      "Over 40,000"
+    ],
+    "correctAnswer": "Over 80,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors: New Blood",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors: New Blood",
+      "Programme: The Traitors: New Blood",
+      "The Traitors US",
+      "NBC",
+      "Peacock",
+      "Season 1",
+      "2026",
+      "Format",
+      "Casting",
+      "Source: https://www.nbcuniversal.com/article/traitors-new-blood-expands-traitors-fandom-nbc-viewers"
+    ]
+  },
+  {
+    "id": "tv_59753",
+    "question": "What was the maximum possible prize fund in the first season of The Traitors: New Blood?",
+    "answers": [
+      "$100,000",
+      "$200,000",
+      "$500,000",
+      "$250,000"
+    ],
+    "correctAnswer": "$250,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors: New Blood",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors: New Blood",
+      "Programme: The Traitors: New Blood",
+      "The Traitors US",
+      "NBC",
+      "Peacock",
+      "Season 1",
+      "2026",
+      "Format",
+      "Source: https://openthreadnews.com/tv-film/the-traitors-new-blood-episodes/"
+    ]
+  },
+  {
+    "id": "tv_59754",
+    "question": "Which two contestants exchanged their drinks during the Highland Feast in the first season of The Traitors: New Blood?",
+    "answers": [
+      "Katie Fites and Abbey Benjamin",
+      "Jay Vinnedge and Clyde Moser",
+      "Shane Beatty and Joe Vanella",
+      "Victor Vollbrechthausen and Morgan Cook"
+    ],
+    "correctAnswer": "Shane Beatty and Joe Vanella",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors: New Blood",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors: New Blood",
+      "Programme: The Traitors: New Blood",
+      "The Traitors US",
+      "NBC",
+      "Peacock",
+      "Season 1",
+      "2026",
+      "Format",
+      "Episode 9",
+      "Source: https://www.aol.com/articles/traitors-blood-episode-9-recap-020000000.html"
+    ]
+  },
+  {
+    "id": "tv_59755",
+    "question": "What unusual restriction applied to Kriste Lewis when she was banished at the last Round Table in The Traitors: New Blood?",
+    "answers": [
+      "She had to surrender her shield to another player",
+      "She could not disclose whether she was a Faithful or a Traitor",
+      "She had to choose another player to leave",
+      "She had to reveal the remaining Traitors"
+    ],
+    "correctAnswer": "She could not disclose whether she was a Faithful or a Traitor",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors: New Blood",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors: New Blood",
+      "Programme: The Traitors: New Blood",
+      "The Traitors US",
+      "NBC",
+      "Peacock",
+      "Season 1",
+      "2026",
+      "Format",
+      "Episode 12",
+      "Source: https://people.com/the-traitors-new-blood-finale-winner-recap-12265059"
+    ]
+  },
+  {
+    "id": "tv_59756",
+    "question": "Which fellow Traitor joined the vote to remove Katie Fites at the Fire of Truth in The Traitors: New Blood?",
+    "answers": [
+      "Shane Beatty",
+      "Joe Vanella",
+      "Tomica Adams",
+      "Xavier Scruggs"
+    ],
+    "correctAnswer": "Shane Beatty",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors: New Blood",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors: New Blood",
+      "Programme: The Traitors: New Blood",
+      "The Traitors US",
+      "NBC",
+      "Peacock",
+      "Season 1",
+      "2026",
+      "Format",
+      "Episode 12",
+      "Source: https://www.thewrap.com/creative-content/tv-shows/the-traitors-new-blood-season-1-winner-nbc/"
+    ]
+  },
+  {
+    "id": "tv_59757",
+    "question": "What celebration did Shane Beatty promise to invite his fellow finalists to after winning The Traitors: New Blood?",
+    "answers": [
+      "His birthday party",
+      "His retirement party",
+      "His housewarming",
+      "His wedding"
+    ],
+    "correctAnswer": "His wedding",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors: New Blood",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors: New Blood",
+      "Programme: The Traitors: New Blood",
+      "The Traitors US",
+      "NBC",
+      "Peacock",
+      "Season 1",
+      "2026",
+      "Format",
+      "Episode 12",
+      "Source: https://www.thewrap.com/creative-content/tv-shows/the-traitors-new-blood-season-1-winner-nbc/"
+    ]
+  },
+  {
+    "id": "tv_59758",
+    "question": "What first for a winner of the American Traitors franchise did Shane Beatty achieve on New Blood?",
+    "answers": [
+      "He was the first original Traitor to win",
+      "He won after returning from banishment",
+      "He won after being recruited as a Traitor during the game",
+      "He was the first winner to share the prize with three Faithfuls"
+    ],
+    "correctAnswer": "He won after being recruited as a Traitor during the game",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors: New Blood",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors: New Blood",
+      "Programme: The Traitors: New Blood",
+      "The Traitors US",
+      "NBC",
+      "Peacock",
+      "Season 1",
+      "2026",
+      "Format",
+      "Franchise Milestone",
+      "Source: https://www.mensjournal.com/entertainment/the-traitors-new-blood-winner-shane-beatty-interview-exclusive"
+    ]
+  },
+  {
+    "id": "tv_59759",
+    "question": "Which production company makes the American spin-off The Traitors: New Blood?",
+    "answers": [
+      "CPL Productions",
+      "Studio Lambert",
+      "Remarkable Entertainment",
+      "Lifted Entertainment"
+    ],
+    "correctAnswer": "Studio Lambert",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors: New Blood",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors: New Blood",
+      "Programme: The Traitors: New Blood",
+      "The Traitors US",
+      "NBC",
+      "Peacock",
+      "Season 1",
+      "2026",
+      "Format",
+      "Production",
+      "Source: https://www.banijay.com/blog/2026/11/19/nbc-renews-the-traitors-new-blood-for-season-2-with-emmy-award-winning-host-alan-cumming/"
+    ]
+  },
+  {
+    "id": "tv_59760",
+    "question": "What production role does Alan Cumming hold in addition to hosting The Traitors: New Blood?",
+    "answers": [
+      "Executive producer",
+      "Series director",
+      "Casting director",
+      "Composer"
+    ],
+    "correctAnswer": "Executive producer",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors: New Blood",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors: New Blood",
+      "Programme: The Traitors: New Blood",
+      "The Traitors US",
+      "NBC",
+      "Peacock",
+      "Season 1",
+      "2026",
+      "Format",
+      "Production",
+      "Source: https://www.banijay.com/blog/2026/11/19/nbc-renews-the-traitors-new-blood-for-season-2-with-emmy-award-winning-host-alan-cumming/"
+    ]
+  },
+  {
+    "id": "tv_59761",
+    "question": "Which company distributes the original Traitors format internationally, including its New Blood adaptation?",
+    "answers": [
+      "ITV Studios",
+      "BBC Studios",
+      "Sony Pictures Television",
+      "All3Media International"
+    ],
+    "correctAnswer": "All3Media International",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors: New Blood",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors: New Blood",
+      "Programme: The Traitors: New Blood",
+      "The Traitors US",
+      "NBC",
+      "Peacock",
+      "Season 1",
+      "2026",
+      "Format",
+      "Production",
+      "Source: https://www.banijay.com/blog/2026/11/19/nbc-renews-the-traitors-new-blood-for-season-2-with-emmy-award-winning-host-alan-cumming/"
+    ]
   }
 ];
-if(questions.length!==82||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(59306+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 807 validation failed');
+const validIds = new Set([...Array.from({length:82},(_,i)=>'tv_'+(59306+i)),...Array.from({length:10},(_,i)=>'tv_'+(59752+i))]);
+if(questions.length!==92||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 807 validation failed');
 module.exports=questions;
