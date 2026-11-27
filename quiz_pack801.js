@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 801: The Traitors US season 2
-// 113 additions covering all 22 contestants, eleven competition missions, recruitment, eliminations, shield twists, alliances, finale, selected reunion moments, production and 2024 Emmy wins and nominations. Sources: published episode/vote tables, contemporary TVLine recaps and Television Academy records. Exact IDs/questions checked against packs 222, 787–799 odd and 782; repository-wide semantic and ID certification not possible with unreliable code search. No full footage review; detailed dialogue, reunion exchanges and non-Emmy awards not exhaustive. Live bank unchanged.
+// Revised 27 November 2026: 127 questions. Existing coverage of all 22 contestants, eleven missions, recruitment, eliminations, shields, alliances and finale retained. Added premiere suspicion, reunion details, 2024 Critics Choice wins and nomination, TCA win, 2025 PGA win and Emmy cinematography credits. Added facts verified against published recaps and award organisations. ID checks against recent TV packs only; full-bank ID and semantic verification and full footage review remain outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -3391,7 +3391,428 @@ const questions = [
       "Awards",
       "Source: https://www.televisionacademy.com/shows/the-traitors"
     ]
+  },
+  {
+    "id": "tv_59796",
+    "question": "In season two of The Traitors (US), who hosted the post-finale reunion?",
+    "answers": [
+      "Andy Cohen",
+      "Alan Cumming",
+      "Jeff Probst",
+      "Julie Chen Moonves"
+    ],
+    "correctAnswer": "Andy Cohen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Reunion",
+      "Source: https://www.tvline.com/lists/the-traitors-reunion-recap-season-2-phaedra-dan-drama/"
+    ]
+  },
+  {
+    "id": "tv_59797",
+    "question": "In season two of The Traitors (US), which former Commons Speaker offered encouragement to Peppermint at the reunion?",
+    "answers": [
+      "Peter Weber",
+      "John Bercow",
+      "Dan Gheesling",
+      "CT Tamburello"
+    ],
+    "correctAnswer": "John Bercow",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Reunion",
+      "Source: https://www.tvline.com/lists/the-traitors-reunion-recap-season-2-phaedra-dan-drama/"
+    ]
+  },
+  {
+    "id": "tv_59798",
+    "question": "In season two of The Traitors (US), what reason did MJ give at the reunion for not changing her final vote to CT?",
+    "answers": [
+      "She believed CT was a Traitor",
+      "She was unable to change her vote",
+      "Loyalty to a fellow Faithful",
+      "She had promised Kate the prize"
+    ],
+    "correctAnswer": "Loyalty to a fellow Faithful",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Reunion",
+      "Source: https://www.tvline.com/lists/the-traitors-reunion-recap-season-2-phaedra-dan-drama/"
+    ]
+  },
+  {
+    "id": "tv_59799",
+    "question": "In season two of The Traitors (US), why did Dan say at the reunion that he had targeted Phaedra?",
+    "answers": [
+      "He had been ordered to by Alan",
+      "He thought she had a shield",
+      "He wanted to recruit Peter instead",
+      "He feared her strong alliances would defeat him at the end"
+    ],
+    "correctAnswer": "He feared her strong alliances would defeat him at the end",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Reunion",
+      "Source: https://www.tvline.com/lists/the-traitors-reunion-recap-season-2-phaedra-dan-drama/"
+    ]
+  },
+  {
+    "id": "tv_59800",
+    "question": "In season two of The Traitors (US), which contestant apologised to MJ at the reunion for appearing insensitive?",
+    "answers": [
+      "CT Tamburello",
+      "John Bercow",
+      "Peter Weber",
+      "Kevin Kreider"
+    ],
+    "correctAnswer": "CT Tamburello",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Reunion",
+      "Source: https://www.tvline.com/lists/the-traitors-reunion-recap-season-2-phaedra-dan-drama/"
+    ]
+  },
+  {
+    "id": "tv_59801",
+    "question": "In season two of The Traitors (US), which contestant did Janelle suspect after hearing unusually heavy breathing during the selection of Traitors?",
+    "answers": [
+      "Marcus Jordan",
+      "John Bercow",
+      "Kevin Kreider",
+      "Maksim Chmerkovskiy"
+    ],
+    "correctAnswer": "John Bercow",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Episode 1",
+      "Source: https://www.tvline.com/lists/traitors-recap-season-2-premiere-who-are-the-traitors/"
+    ]
+  },
+  {
+    "id": "tv_59802",
+    "question": "In season two of The Traitors (US), how many Critics Choice Real TV Awards did the programme win in 2024?",
+    "answers": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "correctAnswer": "Four",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Awards",
+      "Source: https://www.criticschoice.com/6th-annual-critics-choice-real-tv-awards-list-of-nominees-and-winners-2024/"
+    ]
+  },
+  {
+    "id": "tv_59803",
+    "question": "In season two of The Traitors (US), which main programme category did the series win at the 2024 Critics Choice Real TV Awards?",
+    "answers": [
+      "Best Game Show",
+      "Best Structured Series",
+      "Best Limited Series",
+      "Best Competition Series"
+    ],
+    "correctAnswer": "Best Competition Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Awards",
+      "Source: https://www.criticschoice.com/6th-annual-critics-choice-real-tv-awards-list-of-nominees-and-winners-2024/"
+    ]
+  },
+  {
+    "id": "tv_59804",
+    "question": "In season two of The Traitors (US), which collective cast award did the programme win at the 2024 Critics Choice Real TV Awards?",
+    "answers": [
+      "Best Ensemble Cast in an Unscripted Series",
+      "Best Cast in a Comedy Series",
+      "Best Limited Series",
+      "Best Unstructured Series"
+    ],
+    "correctAnswer": "Best Ensemble Cast in an Unscripted Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Awards",
+      "Source: https://www.criticschoice.com/6th-annual-critics-choice-real-tv-awards-list-of-nominees-and-winners-2024/"
+    ]
+  },
+  {
+    "id": "tv_59805",
+    "question": "In season two of The Traitors (US), which two individual awards did Alan Cumming win at the 2024 Critics Choice Real TV Awards?",
+    "answers": [
+      "Best Show Host and Best Actor",
+      "Best Show Host and Male Star of the Year",
+      "Male Star of the Year and Best Director",
+      "Best Presenter and Best Producer"
+    ],
+    "correctAnswer": "Best Show Host and Male Star of the Year",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Awards",
+      "Source: https://www.criticschoice.com/6th-annual-critics-choice-real-tv-awards-list-of-nominees-and-winners-2024/"
+    ]
+  },
+  {
+    "id": "tv_59806",
+    "question": "In season two of The Traitors (US), which contestant was nominated for Female Star of the Year at the 2024 Critics Choice Real TV Awards?",
+    "answers": [
+      "Kate Chastain",
+      "Trishelle Cannatella",
+      "Phaedra Parks",
+      "Sandra Diaz-Twine"
+    ],
+    "correctAnswer": "Phaedra Parks",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Awards",
+      "Source: https://www.criticschoice.com/6th-annual-critics-choice-real-tv-awards-list-of-nominees-and-winners-2024/"
+    ]
+  },
+  {
+    "id": "tv_59807",
+    "question": "In season two of The Traitors (US), which Television Critics Association award did the series win in 2024?",
+    "answers": [
+      "Outstanding Achievement in Comedy",
+      "Outstanding Achievement in Drama",
+      "Outstanding Achievement in Variety",
+      "Outstanding Achievement in Reality"
+    ],
+    "correctAnswer": "Outstanding Achievement in Reality",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Awards",
+      "Source: https://tvcritics.memberclicks.net/tca-award-winners-history"
+    ]
+  },
+  {
+    "id": "tv_59808",
+    "question": "In season two of The Traitors (US), which award did the second-season producing team receive at the 2025 Producers Guild Awards?",
+    "answers": [
+      "Outstanding Producer of Game & Competition Television",
+      "Outstanding Producer of Documentary Television",
+      "Outstanding Producer of Live Entertainment",
+      "Outstanding Producer of Animated Television"
+    ],
+    "correctAnswer": "Outstanding Producer of Game & Competition Television",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Awards",
+      "Source: https://producersguild.org/2025-pga-awards-winners/"
+    ]
+  },
+  {
+    "id": "tv_59809",
+    "question": "In season two of The Traitors (US), which directors of photography earned a cinematography Emmy nomination for The Funeral in 2024?",
+    "answers": [
+      "Ben Archard and Stephen Lambert",
+      "Siggi Rosen-Rawlings and Matt Wright",
+      "Patrick Owen and James Seddon-Brown",
+      "Mike Cotton and Jack Burgess"
+    ],
+    "correctAnswer": "Siggi Rosen-Rawlings and Matt Wright",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 2",
+      "2024",
+      "Awards",
+      "Source: https://www.televisionacademy.com/shows/the-traitors"
+    ]
   }
 ];
-if(questions.length!==113||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(58995+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 801 validation failed');
+const validIds = new Set([...Array.from({length:113},(_,i)=>'tv_'+(58995+i)),...Array.from({length:14},(_,i)=>'tv_'+(59796+i))]);
+if(questions.length!==127||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 801 validation failed');
 module.exports=questions;
