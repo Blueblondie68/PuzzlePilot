@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 805: The Traitors US season 4
-// 98 additions covering all 23 contestants and eleven missions, the Secret Traitor, tarot cards, protection, amulet, dagger, recruitment, endgame, reunion highlight and seven Emmy wins. Episode and vote tables cross-checked against contemporary recaps; awards checked against Television Academy. Exact IDs/questions checked against packs 803, 801, 799, 797, 795, 793, 791, 789, 787, 782; full-bank ID and semantic duplicate certification remains outstanding. Conflicting early vote counts omitted; shield discrepancies in fourth mission and full reunion/non-Emmy awards remain to investigate. Live bank unchanged.
+// Revised 27 November 2026: 116 questions. All 23 contestants and eleven missions, eliminations, shields, recruitment and finale retained. Added confirmed fourth mission protection details, reunion developments, all five Critics Choice Real TV wins and additional nomination, TCA win, Emmy craft credits and renewal. Clarified disputed reunion allegation without endorsing it. Awards checked using official organisations and NBCUniversal. Earlier-season PGA award belongs with season three's award history, not season four. Full-bank duplicate and ID certification remains outstanding; selected adjacent packs checked. No live bank changes.
 'use strict';
 const questions = [
   {
@@ -2614,7 +2614,7 @@ const questions = [
   },
   {
     "id": "tv_59295",
-    "question": "In season four of The Traitors (US), who made an allegation at the reunion that Rob had revealed his role to Colton, which both men denied?",
+    "question": "Who challenged Rob and Colton at the season four US Traitors reunion over an alleged disclosure of a Traitor's identity, which they disputed?",
     "answers": [
       "Tara Lipinski",
       "Lisa Rinna",
@@ -2639,7 +2639,7 @@ const questions = [
       "Season 4",
       "2026",
       "Reunion",
-      "Source: https://www.usmagazine.com/entertainment/news/the-traitors-season-4-reunion-recap-did-rob-and-colton-cheat/"
+      "Source: https://www.peacocktv.com/blog/what-candiace-said-colton-told-her-on-the-traitors"
     ]
   },
   {
@@ -2941,7 +2941,548 @@ const questions = [
       "Awards",
       "Source: https://www.televisionacademy.com/shows/the-traitors"
     ]
+  },
+  {
+    "id": "tv_59762",
+    "question": "In season four of The Traitors (US), what did the effigy-burning challenge allow players to remove from a rival?",
+    "answers": [
+      "Their shield",
+      "Their vote",
+      "Their share of the jackpot",
+      "Their ability to recruit"
+    ],
+    "correctAnswer": "Their shield",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Episode 4",
+      "Source: https://parade.com/tv/who-went-home-the-traitors-season-4-2026-episodes-4-5-eliminations-recap-spoilers"
+    ]
+  },
+  {
+    "id": "tv_59763",
+    "question": "Which two original Traitors retained shields after the effigy-burning mission in season four of The Traitors (US)?",
+    "answers": [
+      "Lisa Rinna and Donna Kelce",
+      "Lisa Rinna and Candiace Dillard Bassett",
+      "Donna Kelce and Rob Rausch",
+      "Candiace Dillard Bassett and Rob Rausch"
+    ],
+    "correctAnswer": "Candiace Dillard Bassett and Rob Rausch",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Episode 4",
+      "Source: https://parade.com/tv/who-went-home-the-traitors-season-4-2026-episodes-4-5-eliminations-recap-spoilers"
+    ]
+  },
+  {
+    "id": "tv_59764",
+    "question": "Whose supposed laugh did Eric Nam mistakenly identify as evidence against her in season four of The Traitors (US)?",
+    "answers": [
+      "Dorinda Medley",
+      "Natalie Anderson",
+      "Tiffany Mitchell",
+      "Maura Higgins"
+    ],
+    "correctAnswer": "Tiffany Mitchell",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Episode 4",
+      "Source: https://parade.com/tv/who-went-home-the-traitors-season-4-2026-episodes-4-5-eliminations-recap-spoilers"
+    ]
+  },
+  {
+    "id": "tv_59765",
+    "question": "Who hosted the reunion special for season four of The Traitors (US)?",
+    "answers": [
+      "RuPaul",
+      "Andy Cohen",
+      "Alan Cumming",
+      "Jeff Probst"
+    ],
+    "correctAnswer": "Andy Cohen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Reunion",
+      "Source: https://www.peacocktv.com/blog/what-candiace-said-colton-told-her-on-the-traitors"
+    ]
+  },
+  {
+    "id": "tv_59766",
+    "question": "Which contestant explained that his aggressive strategy was partly intended to earn a recruitment offer in season four of The Traitors (US)?",
+    "answers": [
+      "Colton Underwood",
+      "Mark Ballas",
+      "Johnny Weir",
+      "Michael Rapaport"
+    ],
+    "correctAnswer": "Colton Underwood",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Reunion",
+      "Source: https://www.peacocktv.com/blog/what-candiace-said-colton-told-her-on-the-traitors"
+    ]
+  },
+  {
+    "id": "tv_59767",
+    "question": "Which figure skater's change of voting strategy against Rob was criticised by Natalie Anderson at the season four US Traitors reunion?",
+    "answers": [
+      "Johnny Weir",
+      "Kristen Kish",
+      "Maura Higgins",
+      "Tara Lipinski"
+    ],
+    "correctAnswer": "Tara Lipinski",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Reunion",
+      "Source: https://www.peacocktv.com/blog/what-candiace-said-colton-told-her-on-the-traitors"
+    ]
+  },
+  {
+    "id": "tv_59768",
+    "question": "What luxury item did Rob Rausch promise Maura Higgins as an apology at the season four US Traitors reunion?",
+    "answers": [
+      "A Chanel necklace",
+      "A Louis Vuitton suitcase",
+      "An Hermès Birkin handbag",
+      "A Cartier watch"
+    ],
+    "correctAnswer": "An Hermès Birkin handbag",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Reunion",
+      "Source: https://www.peacocktv.com/blog/birkin-bag-rob-rausch-maura-higgins"
+    ]
+  },
+  {
+    "id": "tv_59769",
+    "question": "How many Critics Choice Real TV Awards did The Traitors (US) win in 2026?",
+    "answers": [
+      "Seven",
+      "Five",
+      "Three",
+      "Four"
+    ],
+    "correctAnswer": "Five",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Awards",
+      "Source: https://www.criticschoice.com/the-traitors-leads-winners-of-the-eighth-annual-critics-choice-real-tv-awards-with-five-wins-2/"
+    ]
+  },
+  {
+    "id": "tv_59770",
+    "question": "Which main programme category did The Traitors (US) win at the 2026 Critics Choice Real TV Awards?",
+    "answers": [
+      "Best Competition Series",
+      "Best Unstructured Series",
+      "Best Relationship Show",
+      "Best Competition Series: Talent/Variety"
+    ],
+    "correctAnswer": "Best Competition Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Awards",
+      "Source: https://www.criticschoice.com/the-traitors-leads-winners-of-the-eighth-annual-critics-choice-real-tv-awards-with-five-wins-2/"
+    ]
+  },
+  {
+    "id": "tv_59771",
+    "question": "Which cast award did The Traitors (US) win at the 2026 Critics Choice Real TV Awards?",
+    "answers": [
+      "Best Comedy Ensemble",
+      "Best Documentary Cast",
+      "Best Reality Duo",
+      "Best Ensemble Cast in an Unscripted Series"
+    ],
+    "correctAnswer": "Best Ensemble Cast in an Unscripted Series",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Awards",
+      "Source: https://www.criticschoice.com/the-traitors-leads-winners-of-the-eighth-annual-critics-choice-real-tv-awards-with-five-wins-2/"
+    ]
+  },
+  {
+    "id": "tv_59772",
+    "question": "Which category did Alan Cumming win for the third consecutive year at the 2026 Critics Choice Real TV Awards?",
+    "answers": [
+      "Best Narrator",
+      "Best Reality Producer",
+      "Best Show Host",
+      "Male Star of the Year"
+    ],
+    "correctAnswer": "Best Show Host",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Awards",
+      "Source: https://www.criticschoice.com/the-traitors-leads-winners-of-the-eighth-annual-critics-choice-real-tv-awards-with-five-wins-2/"
+    ]
+  },
+  {
+    "id": "tv_59773",
+    "question": "Which season four US Traitors contestant won Female Star of the Year at the 2026 Critics Choice Real TV Awards?",
+    "answers": [
+      "Natalie Anderson",
+      "Lisa Rinna",
+      "Maura Higgins",
+      "Candiace Dillard Bassett"
+    ],
+    "correctAnswer": "Lisa Rinna",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Awards",
+      "Source: https://www.criticschoice.com/the-traitors-leads-winners-of-the-eighth-annual-critics-choice-real-tv-awards-with-five-wins-2/"
+    ]
+  },
+  {
+    "id": "tv_59774",
+    "question": "Which season four US Traitors contestant won Male Star of the Year at the 2026 Critics Choice Real TV Awards?",
+    "answers": [
+      "Rob Rausch",
+      "Colton Underwood",
+      "Eric Nam",
+      "Johnny Weir"
+    ],
+    "correctAnswer": "Rob Rausch",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Awards",
+      "Source: https://www.criticschoice.com/the-traitors-leads-winners-of-the-eighth-annual-critics-choice-real-tv-awards-with-five-wins-2/"
+    ]
+  },
+  {
+    "id": "tv_59775",
+    "question": "Which category saw Alan Cumming and Rob Rausch both nominated at the 2026 Critics Choice Real TV Awards?",
+    "answers": [
+      "Best Show Host",
+      "Best Reality Producer",
+      "Best Ensemble Cast",
+      "Male Star of the Year"
+    ],
+    "correctAnswer": "Male Star of the Year",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Awards",
+      "Source: https://www.criticschoice.com/the-traitors-leads-eighth-annual-critics-choice-real-tv-awards-nominations/"
+    ]
+  },
+  {
+    "id": "tv_59776",
+    "question": "Which Television Critics Association category did The Traitors (US) win for the third successive year in 2026?",
+    "answers": [
+      "Outstanding Achievement in Variety, Talk, or Sketch",
+      "Outstanding Achievement in Drama",
+      "Outstanding Achievement in Reality",
+      "Outstanding Achievement in Comedy"
+    ],
+    "correctAnswer": "Outstanding Achievement in Reality",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Awards",
+      "Source: https://tvcritics.memberclicks.net/index.php?day=20&id=73%3A2026-tca-award-winners&month=08&option=com_dailyplanetblog&view=entry&year=2026"
+    ]
+  },
+  {
+    "id": "tv_59777",
+    "question": "Which two directors of photography were credited for the 2026 cinematography Emmy won by The Traitors (US)?",
+    "answers": [
+      "Patrick Owen and Matt Pratt",
+      "Siggi Rosen-Rawlings and Matt Wright",
+      "Ben Archard and David Moon",
+      "Stuart Frossell and Luke Fuller"
+    ],
+    "correctAnswer": "Siggi Rosen-Rawlings and Matt Wright",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Awards",
+      "Source: https://www.televisionacademy.com/shows/the-traitors"
+    ]
+  },
+  {
+    "id": "tv_59778",
+    "question": "Who was credited as set decorator for the 2026 Emmy-winning production design of The Black Banquet in The Traitors (US)?",
+    "answers": [
+      "Celina Hodge",
+      "Catherine Moran",
+      "Rikki Finlay",
+      "Rosie Franks"
+    ],
+    "correctAnswer": "Celina Hodge",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Awards",
+      "Source: https://www.televisionacademy.com/shows/the-traitors"
+    ]
+  },
+  {
+    "id": "tv_59779",
+    "question": "How many additional seasons did Peacock order in September 2026 beyond the already commissioned fifth season of The Traitors (US)?",
+    "answers": [
+      "One",
+      "Two",
+      "Four",
+      "Three"
+    ],
+    "correctAnswer": "Three",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Traitors US",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "American Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Traitors US",
+      "Programme: The Traitors US",
+      "The Traitors (US)",
+      "Peacock",
+      "Season 4",
+      "2026",
+      "Production",
+      "Source: https://www.nbcuniversal.com/article/peacock-announces-three-additional-seasons-traitors-produced-studio-lambert-alan-cumming-returning"
+    ]
   }
 ];
-if(questions.length!==98||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(59208+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 805 validation failed');
+const validIds = new Set([...Array.from({length:98},(_,i)=>'tv_'+(59208+i)),...Array.from({length:18},(_,i)=>'tv_'+(59762+i))]);
+if(questions.length!==116||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 805 validation failed');
 module.exports=questions;
