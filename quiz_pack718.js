@@ -7842,5 +7842,541 @@ module.exports = [
                 "Actor: Tom Cruise",
                 "Source: https://en.wikipedia.org/wiki/Mission:_Impossible_–_The_Final_Reckoning"
             ]
-        }
+        },
+    {
+        "id": "film_5452",
+        "question": "In Mission: Impossible, who plays Hannah Williams, who stays in the surveillance car during the Prague operation?",
+        "answers": [
+            "Kristin Scott Thomas",
+            "Emmanuelle Béart",
+            "Vanessa Redgrave",
+            "Ingeborga Dapkūnaitė"
+        ],
+        "correctAnswer": "Ingeborga Dapkūnaitė",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible",
+            "1996",
+            "Action",
+            "Cast",
+            "Spy Films",
+            "Character: Hannah Williams",
+            "Actor: Ingeborga Dapkūnaitė",
+            "Source: https://www.rottentomatoes.com/m/mission_impossible/cast-and-crew"
+        ]
+    },
+    {
+        "id": "film_5453",
+        "question": "In Mission: Impossible, who plays Alexander Golitsyn, the target of the embassy operation?",
+        "answers": [
+            "Karel Dobrý",
+            "Ion Caramitru",
+            "Marcel Iureș",
+            "Dale Dye"
+        ],
+        "correctAnswer": "Marcel Iureș",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible",
+            "1996",
+            "Action",
+            "Cast",
+            "Spy Films",
+            "Character: Alexander Golitsyn",
+            "Actor: Marcel Iureș",
+            "Source: https://www.rottentomatoes.com/m/mission_impossible/cast-and-crew"
+        ]
+    },
+    {
+        "id": "film_5454",
+        "question": "In Mission: Impossible, who plays Kittridge's CIA colleague Frank Barnes?",
+        "answers": [
+            "Henry Czerny",
+            "Dale Dye",
+            "Rolf Saxon",
+            "Randall Paul"
+        ],
+        "correctAnswer": "Dale Dye",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible",
+            "1996",
+            "Action",
+            "Cast",
+            "Spy Films",
+            "Character: Frank Barnes",
+            "Actor: Dale Dye",
+            "Source: https://www.rottentomatoes.com/m/mission_impossible/cast-and-crew"
+        ]
+    },
+    {
+        "id": "film_5455",
+        "question": "In Mission: Impossible 2, which of Ethan's team flies the helicopter used in the Sydney operation?",
+        "answers": [
+            "Billy Baird",
+            "Luther Stickell",
+            "Sean Ambrose",
+            "Hugh Stamp"
+        ],
+        "correctAnswer": "Billy Baird",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible 2",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible 2",
+            "2000",
+            "Action",
+            "Storyline",
+            "Spy Films",
+            "Source: https://www.paramount.com/movies/mission-impossible-ii"
+        ]
+    },
+    {
+        "id": "film_5456",
+        "question": "In Mission: Impossible 2, what kind of gathering is the setting for Nyah's transfer of the memory card to Ethan?",
+        "answers": [
+            "A horse race",
+            "A charity auction",
+            "A motorcycle race",
+            "An opera gala"
+        ],
+        "correctAnswer": "A horse race",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible 2",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible 2",
+            "2000",
+            "Action",
+            "Storyline",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Mission:_Impossible_2"
+        ]
+    },
+    {
+        "id": "film_5457",
+        "question": "In Mission: Impossible 2, which MTV Movie Award did Tom Cruise win for his performance in the second film?",
+        "answers": [
+            "Best Villain",
+            "Best Comedic Performance",
+            "Best Breakthrough Male Performance",
+            "Best Male Performance"
+        ],
+        "correctAnswer": "Best Male Performance",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible 2",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible 2",
+            "2000",
+            "Action",
+            "Awards",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/2001_MTV_Movie_Awards"
+        ]
+    },
+    {
+        "id": "film_5458",
+        "question": "In Mission: Impossible III, who shares the screenplay credit with J. J. Abrams and Alex Kurtzman?",
+        "answers": [
+            "David Koepp",
+            "Robert Towne",
+            "Roberto Orci",
+            "Christopher McQuarrie"
+        ],
+        "correctAnswer": "Roberto Orci",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible III",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible III",
+            "2006",
+            "Action",
+            "Production",
+            "Spy Films",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/63942"
+        ]
+    },
+    {
+        "id": "film_5459",
+        "question": "In Mission: Impossible III, who edited the film with Maryann Brandon?",
+        "answers": [
+            "Sally Menke",
+            "Mary Jo Markey",
+            "Pietro Scalia",
+            "Dylan Tichenor"
+        ],
+        "correctAnswer": "Mary Jo Markey",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible III",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible III",
+            "2006",
+            "Action",
+            "Production",
+            "Spy Films",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/63942"
+        ]
+    },
+    {
+        "id": "film_5460",
+        "question": "In Mission: Impossible III, who was the production designer?",
+        "answers": [
+            "Dennis Gassner",
+            "Scott Chambliss",
+            "Stuart Craig",
+            "Nathan Crowley"
+        ],
+        "correctAnswer": "Scott Chambliss",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible III",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible III",
+            "2006",
+            "Action",
+            "Production",
+            "Spy Films",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/63942"
+        ]
+    },
+    {
+        "id": "film_5461",
+        "question": "In Mission: Impossible – Ghost Protocol, what does Hendricks take with him when he jumps from the car park to stop Ethan retrieving it?",
+        "answers": [
+            "The launch briefcase",
+            "The Kremlin vault key",
+            "A drive containing the stolen launch codes",
+            "Brij Nath's satellite phone"
+        ],
+        "correctAnswer": "The launch briefcase",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – Ghost Protocol",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – Ghost Protocol",
+            "2011",
+            "Action",
+            "Storyline",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Mission:_Impossible_–_Ghost_Protocol"
+        ]
+    },
+    {
+        "id": "film_5462",
+        "question": "In Mission: Impossible – Ghost Protocol, what does Brandt discover about Julia when Ethan explains the Croatia operation?",
+        "answers": [
+            "She is living under arrest in Russia",
+            "She was the CIA officer who recruited Ethan",
+            "She worked as Moreau's handler",
+            "Her death was staged to protect her"
+        ],
+        "correctAnswer": "Her death was staged to protect her",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – Ghost Protocol",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – Ghost Protocol",
+            "2011",
+            "Action",
+            "Storyline",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Mission:_Impossible_–_Ghost_Protocol"
+        ]
+    },
+    {
+        "id": "film_5463",
+        "question": "In Mission: Impossible – Ghost Protocol, which European landmark supplied interiors for some of the Kremlin scenes?",
+        "answers": [
+            "Schönbrunn Palace",
+            "Buda Castle",
+            "Prague Castle",
+            "The Palace of Versailles"
+        ],
+        "correctAnswer": "Prague Castle",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – Ghost Protocol",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – Ghost Protocol",
+            "2011",
+            "Action",
+            "Production",
+            "Spy Films",
+            "Source: https://www.imdb.com/title/tt1229238/locations/?item=lc0213504"
+        ]
+    },
+    {
+        "id": "film_5464",
+        "question": "In Mission: Impossible – Rogue Nation, where were interior scenes for the Vienna opera sequence re-created?",
+        "answers": [
+            "Pinewood Toronto Studios",
+            "Babelsberg Studio near Berlin",
+            "LH2 Studios in London",
+            "Barrandov Studios in Prague"
+        ],
+        "correctAnswer": "LH2 Studios in London",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – Rogue Nation",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – Rogue Nation",
+            "2015",
+            "Action",
+            "Production",
+            "Spy Films",
+            "Source: https://theasc.com/article/mission-impossible-rogue-nation/"
+        ]
+    },
+    {
+        "id": "film_5465",
+        "question": "In Mission: Impossible – Rogue Nation, where is Ethan held after the Syndicate seizes him in the London record shop?",
+        "answers": [
+            "In a police interview room",
+            "In a torture chamber",
+            "In a plane waiting on a runway",
+            "In the opera house cellar"
+        ],
+        "correctAnswer": "In a torture chamber",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – Rogue Nation",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – Rogue Nation",
+            "2015",
+            "Action",
+            "Storyline",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Mission:_Impossible_–_Rogue_Nation"
+        ]
+    },
+    {
+        "id": "film_5466",
+        "question": "In Mission: Impossible – Rogue Nation, what does Lane believe Ethan has retained when they meet to exchange Benji for the data?",
+        "answers": [
+            "The information in his memory",
+            "An encrypted copy in his watch",
+            "A phone with the original files",
+            "An audio recording of the Prime Minister"
+        ],
+        "correctAnswer": "The information in his memory",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – Rogue Nation",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – Rogue Nation",
+            "2015",
+            "Action",
+            "Storyline",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Mission:_Impossible_–_Rogue_Nation"
+        ]
+    },
+    {
+        "id": "film_5467",
+        "question": "In Mission: Impossible – Fallout, which television presenter does the IMF imitate to trick Nils Delbruuk into unlocking a phone?",
+        "answers": [
+            "Anderson Cooper",
+            "Piers Morgan",
+            "Brian Williams",
+            "Wolf Blitzer"
+        ],
+        "correctAnswer": "Wolf Blitzer",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – Fallout",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – Fallout",
+            "2018",
+            "Action",
+            "Storyline",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Mission:_Impossible_–_Fallout"
+        ]
+    },
+    {
+        "id": "film_5468",
+        "question": "In Mission: Impossible – Fallout, which natural landmark supplied the cliff setting after the helicopter chase?",
+        "answers": [
+            "The Cliffs of Moher in Ireland",
+            "El Capitan in the United States",
+            "Lions Head in South Africa",
+            "Pulpit Rock in Norway"
+        ],
+        "correctAnswer": "Pulpit Rock in Norway",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – Fallout",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – Fallout",
+            "2018",
+            "Action",
+            "Production",
+            "Spy Films",
+            "Source: https://www.imdb.com/title/tt4912910/locations/"
+        ]
+    },
+    {
+        "id": "film_5469",
+        "question": "In Mission: Impossible – Dead Reckoning Part One, where does Grace leave Ethan handcuffed after their car chase in Rome?",
+        "answers": [
+            "Inside a police station",
+            "In the boot of a Fiat",
+            "In the path of a train",
+            "On a bridge over the Tiber"
+        ],
+        "correctAnswer": "In the path of a train",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – Dead Reckoning Part One",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – Dead Reckoning Part One",
+            "2023",
+            "Action",
+            "Storyline",
+            "Spy Films",
+            "Source: https://en.wikipedia.org/wiki/Mission:_Impossible_–_Dead_Reckoning_Part_One"
+        ]
+    },
+    {
+        "id": "film_5470",
+        "question": "In Mission: Impossible – Dead Reckoning Part One, which Visual Effects Society category nominated Neil Corbould and his team?",
+        "answers": [
+            "Outstanding Animated Character in a Photoreal Feature",
+            "Outstanding Special (Practical) Effects in a Photoreal Project",
+            "Outstanding Effects Simulations in an Animated Feature",
+            "Outstanding Created Environment in an Animated Feature"
+        ],
+        "correctAnswer": "Outstanding Special (Practical) Effects in a Photoreal Project",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – Dead Reckoning Part One",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – Dead Reckoning Part One",
+            "2023",
+            "Action",
+            "Awards",
+            "Spy Films",
+            "Source: https://vesglobal.org/wp-content/uploads/2024/02/22nd-ANNUAL-VES-AWARDS-Nominees-Release_updated.pdf"
+        ]
+    },
+    {
+        "id": "film_5471",
+        "question": "In Mission: Impossible – The Final Reckoning, which Norwegian archipelago was used for filming Arctic scenes?",
+        "answers": [
+            "Svalbard",
+            "Lofoten",
+            "Vesterålen",
+            "Hvaler"
+        ],
+        "correctAnswer": "Svalbard",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – The Final Reckoning",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – The Final Reckoning",
+            "2025",
+            "Action",
+            "Production",
+            "Spy Films",
+            "Source: https://www.getwrapped.ca/our-work/plane/"
+        ]
+    },
+    {
+        "id": "film_5472",
+        "question": "In Mission: Impossible – The Final Reckoning, who plays President Erika Sloane?",
+        "answers": [
+            "Angela Bassett",
+            "Hannah Waddingham",
+            "Janet McTeer",
+            "Kristin Scott Thomas"
+        ],
+        "correctAnswer": "Angela Bassett",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – The Final Reckoning",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – The Final Reckoning",
+            "2025",
+            "Action",
+            "Cast",
+            "Spy Films",
+            "Character: Erika Sloane",
+            "Actor: Angela Bassett",
+            "Source: https://www.paramount.com/movies/mission-impossible-the-final-reckoning"
+        ]
+    },
+    {
+        "id": "film_5473",
+        "question": "In Mission: Impossible – The Final Reckoning, which guild recognised the film's contemporary locations in 2025?",
+        "answers": [
+            "Art Directors Guild",
+            "Directors Guild of America",
+            "Writers Guild of America",
+            "Location Managers Guild International"
+        ],
+        "correctAnswer": "Location Managers Guild International",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Mission: Impossible – The Final Reckoning",
+        "category": "Film",
+        "tags": [
+            "Mission: Impossible franchise",
+            "Film: Mission: Impossible – The Final Reckoning",
+            "2025",
+            "Action",
+            "Awards",
+            "Spy Films",
+            "Source: https://locationmanagers.org/winners-12th-annual-lmgi-awards/"
+        ]
+    }
 ];
