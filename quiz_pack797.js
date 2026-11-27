@@ -1,5 +1,5 @@
 // PuzzlePilot — Pack 797: The Celebrity Traitors UK series 2
-// 112 additions covering all ten episodes, all 21 contestants and chosen charities, mission mechanics, selections, recruitment, shields, votes and finale. Checked episode and contestant tables, BBC reports, Radio Times, ITV and other contemporary reporting. No series-specific awards verified as at 27 November 2026; revisit in next scheduled update. Full footage not reviewed; additional minor exchanges and vote detail remain possible. Checked earlier dedicated Traitors packs and 782; complete bank-wide ID and semantic duplicate certification remains outstanding due to unreliable code search. Live bank unchanged.
+// Revised 27 November 2026: 130 questions. Corrected Myha'la's charity to Food Foundation per BBC Media Centre and TellyMix. Added opening scene, pre-existing cast connection, mid-series suspicions and recruitment, finale voting details, Uncloaked, production and charity follow-up. New facts checked against BBC, ITV, Guardian, episode summary and Civil Society. No series-specific awards confirmed in current source review; earlier awards not attributed to this series. Recent TV packs checked for new ID collisions; full-bank duplicate/ID certification and full footage review remain outstanding. Live bank unchanged.
 'use strict';
 const questions = [
   {
@@ -3274,7 +3274,7 @@ const questions = [
   },
   {
     "id": "tv_58902",
-    "question": "In the second series of The Celebrity Traitors (UK), which contestant chose the Ford Foundation?",
+    "question": "In the second series of The Celebrity Traitors (UK), which contestant chose the Food Foundation?",
     "answers": [
       "Myha'la",
       "Maya Jama",
@@ -3299,7 +3299,8 @@ const questions = [
       "Series 2",
       "2026",
       "Charities",
-      "Source: https://en.wikipedia.org/wiki/The_Celebrity_Traitors_series_2"
+      "Source: https://www.bbc.co.uk/mediacentre/articles/2026/the-celebrity-traitors-series-2/",
+      "Source: https://tellymix.co.uk/the-2026-celebrity-traitors-charities-revealed/"
     ]
   },
   {
@@ -3361,7 +3362,548 @@ const questions = [
       "Production",
       "Source: https://en.wikipedia.org/wiki/The_Celebrity_Traitors_series_2"
     ]
+  },
+  {
+    "id": "tv_59822",
+    "question": "In the second series of The Celebrity Traitors (UK), what was the maximum charity prize fund on offer?",
+    "answers": [
+      "£100,000",
+      "£80,000",
+      "£150,000",
+      "£250,000"
+    ],
+    "correctAnswer": "£100,000",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Format",
+      "Source: https://www.bbc.co.uk/mediacentre/articles/2026/the-celebrity-traitors-series-2/"
+    ]
+  },
+  {
+    "id": "tv_59823",
+    "question": "In the second series of The Celebrity Traitors (UK), what did Claudia Winkleman climb out of during the opening chapel scene?",
+    "answers": [
+      "A wardrobe",
+      "A coffin",
+      "A carriage",
+      "A crypt"
+    ],
+    "correctAnswer": "A coffin",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 1",
+      "Source: https://www.theguardian.com/tv-and-radio/2026/oct/30/best-celebrity-traitors-moments-series-two-bbc-iplayer"
+    ]
+  },
+  {
+    "id": "tv_59824",
+    "question": "In the second series of The Celebrity Traitors (UK), which two contestants had worked together as presenter and narrator of The Weakest Link?",
+    "answers": [
+      "Joe Lycett and Sharon Rooney",
+      "Rob Beckett and Miranda Hart",
+      "Romesh Ranganathan and Julie Hesmondhalgh",
+      "James Blunt and Maya Jama"
+    ],
+    "correctAnswer": "Romesh Ranganathan and Julie Hesmondhalgh",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Cast",
+      "Source: https://en.wikipedia.org/wiki/The_Celebrity_Traitors_series_2"
+    ]
+  },
+  {
+    "id": "tv_59825",
+    "question": "In the second series of The Celebrity Traitors (UK), which celebrity taught Miranda Hart a dance routine associated with Little Mix?",
+    "answers": [
+      "Maya Jama",
+      "Joanne McNally",
+      "Bella Ramsey",
+      "Leigh-Anne Pinnock"
+    ],
+    "correctAnswer": "Leigh-Anne Pinnock",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 6",
+      "Source: https://www.theguardian.com/tv-and-radio/2026/oct/30/best-celebrity-traitors-moments-series-two-bbc-iplayer"
+    ]
+  },
+  {
+    "id": "tv_59826",
+    "question": "In the second series of The Celebrity Traitors (UK), who did the contestants identify as the person most likely to have their head in the clouds in the statue mission?",
+    "answers": [
+      "Jerry Hall",
+      "Joanne McNally",
+      "Miranda Hart",
+      "Julie Hesmondhalgh"
+    ],
+    "correctAnswer": "Jerry Hall",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 6",
+      "Source: https://en.wikipedia.org/wiki/The_Celebrity_Traitors_series_2"
+    ]
+  },
+  {
+    "id": "tv_59827",
+    "question": "In the second series of The Celebrity Traitors (UK), which two other contestants did the Traitors discuss recruiting before selecting King Kenny?",
+    "answers": [
+      "Ross Kemp and Michael Sheen",
+      "Joanne McNally and Joe Lycett",
+      "James Blunt and Sebastian Croft",
+      "Sharon Rooney and Miranda Hart"
+    ],
+    "correctAnswer": "Joanne McNally and Joe Lycett",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 5",
+      "Source: https://en.wikipedia.org/wiki/The_Celebrity_Traitors_series_2"
+    ]
+  },
+  {
+    "id": "tv_59828",
+    "question": "In the second series of The Celebrity Traitors (UK), which Traitor sprayed the perfume used in the murder-in-plain-sight game?",
+    "answers": [
+      "James Acaster",
+      "Maya Jama",
+      "King Kenny",
+      "Hannah Fry"
+    ],
+    "correctAnswer": "King Kenny",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 6",
+      "Source: https://en.wikipedia.org/wiki/The_Celebrity_Traitors_series_2"
+    ]
+  },
+  {
+    "id": "tv_59829",
+    "question": "In the second series of The Celebrity Traitors (UK), who recalled James Acaster's earlier theory about the perfume bottles after Ross Kemp's murder?",
+    "answers": [
+      "Jerry Hall",
+      "Michael Sheen",
+      "Joanne McNally",
+      "Sharon Rooney"
+    ],
+    "correctAnswer": "Sharon Rooney",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 7",
+      "Source: https://en.wikipedia.org/wiki/The_Celebrity_Traitors_series_2"
+    ]
+  },
+  {
+    "id": "tv_59830",
+    "question": "In the second series of The Celebrity Traitors (UK), which contestant led the questioning that prompted James Acaster to confess his role?",
+    "answers": [
+      "Michael Sheen",
+      "James Blunt",
+      "Sebastian Croft",
+      "Romesh Ranganathan"
+    ],
+    "correctAnswer": "Michael Sheen",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 9",
+      "Source: https://en.wikipedia.org/wiki/The_Celebrity_Traitors_series_2"
+    ]
+  },
+  {
+    "id": "tv_59831",
+    "question": "In the second series of The Celebrity Traitors (UK), which fellow Traitor voted against Maya Jama at the final Round Table?",
+    "answers": [
+      "James Acaster",
+      "King Kenny",
+      "Richard E. Grant",
+      "Hannah Fry"
+    ],
+    "correctAnswer": "King Kenny",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 10",
+      "Source: https://www.itv.com/news/2026-10-30/romesh-ranganathan-and-sebastian-croft-win-the-celebrity-traitors-as-faithfuls"
+    ]
+  },
+  {
+    "id": "tv_59832",
+    "question": "In the second series of The Celebrity Traitors (UK), which contestant voted to end the game when four players remained at the fire pit?",
+    "answers": [
+      "James Blunt",
+      "Sebastian Croft",
+      "King Kenny",
+      "Romesh Ranganathan"
+    ],
+    "correctAnswer": "King Kenny",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 10",
+      "Source: https://www.itv.com/news/2026-10-30/romesh-ranganathan-and-sebastian-croft-win-the-celebrity-traitors-as-faithfuls"
+    ]
+  },
+  {
+    "id": "tv_59833",
+    "question": "In the second series of The Celebrity Traitors (UK), which two Faithfuls broke the tied fire-pit vote between King Kenny and James Blunt?",
+    "answers": [
+      "Leigh-Anne Pinnock and Sebastian Croft",
+      "Romesh Ranganathan and Maya Jama",
+      "Michael Sheen and Leigh-Anne Pinnock",
+      "Romesh Ranganathan and Sebastian Croft"
+    ],
+    "correctAnswer": "Romesh Ranganathan and Sebastian Croft",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 10",
+      "Source: https://www.itv.com/news/2026-10-30/romesh-ranganathan-and-sebastian-croft-win-the-celebrity-traitors-as-faithfuls"
+    ]
+  },
+  {
+    "id": "tv_59834",
+    "question": "In the second series of The Celebrity Traitors (UK), which contestant did Sebastian Croft vote to banish in the final three despite believing both other players were Faithful?",
+    "answers": [
+      "James Blunt",
+      "Romesh Ranganathan",
+      "King Kenny",
+      "Michael Sheen"
+    ],
+    "correctAnswer": "James Blunt",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 10",
+      "Source: https://www.itv.com/news/2026-10-30/romesh-ranganathan-and-sebastian-croft-win-the-celebrity-traitors-as-faithfuls"
+    ]
+  },
+  {
+    "id": "tv_59835",
+    "question": "In the second series of The Celebrity Traitors (UK), whose youngest son Charlie had encouraged him to take part in the series?",
+    "answers": [
+      "Ross Kemp",
+      "Romesh Ranganathan",
+      "Rob Beckett",
+      "Michael Sheen"
+    ],
+    "correctAnswer": "Romesh Ranganathan",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Episode 10",
+      "Source: https://www.itv.com/news/2026-10-30/romesh-ranganathan-and-sebastian-croft-win-the-celebrity-traitors-as-faithfuls"
+    ]
+  },
+  {
+    "id": "tv_59836",
+    "question": "In the second series of The Celebrity Traitors (UK), who presented the official companion programme Uncloaked?",
+    "answers": [
+      "Joe Lycett",
+      "Richard Osman",
+      "Ed Gamble",
+      "Joel Dommett"
+    ],
+    "correctAnswer": "Ed Gamble",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Companion Programme",
+      "Source: https://www.bbc.co.uk/mediacentre/articles/2026/the-celebrity-traitors-series-2/"
+    ]
+  },
+  {
+    "id": "tv_59837",
+    "question": "In the second series of The Celebrity Traitors (UK), which BBC audio platform offered extended bonus interviews after the main programme?",
+    "answers": [
+      "BBC Radio 3",
+      "BBC World Service",
+      "BBC Music Introducing",
+      "BBC Sounds"
+    ],
+    "correctAnswer": "BBC Sounds",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Companion Programme",
+      "Source: https://www.bbc.co.uk/mediacentre/articles/2026/the-celebrity-traitors-series-2/"
+    ]
+  },
+  {
+    "id": "tv_59838",
+    "question": "In the second series of The Celebrity Traitors (UK), which charity chosen by James Blunt also received a donation from Romesh Ranganathan after the finale?",
+    "answers": [
+      "Blue Marine Foundation",
+      "Choose Love",
+      "Action for Children",
+      "Rethink Mental Illness"
+    ],
+    "correctAnswer": "Blue Marine Foundation",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Charity",
+      "Source: https://www.civilsociety.co.uk/news/celebrity-traitors-charities-see-small-donations-boost-after-final.html"
+    ]
+  },
+  {
+    "id": "tv_59839",
+    "question": "In the second series of The Celebrity Traitors (UK), which production company made the series in Scotland?",
+    "answers": [
+      "Lifted Entertainment",
+      "Studio Lambert Scotland",
+      "Hat Trick Productions",
+      "Avalon Television"
+    ],
+    "correctAnswer": "Studio Lambert Scotland",
+    "difficulty": "Medium",
+    "dailyEligible": true,
+    "topic": "The Celebrity Traitors",
+    "category": "TV",
+    "tags": [
+      "Television",
+      "British Television",
+      "Quiz Shows",
+      "Reality TV",
+      "The Traitors",
+      "The Celebrity Traitors",
+      "Programme: The Celebrity Traitors",
+      "The Celebrity Traitors (UK)",
+      "BBC One",
+      "Series 2",
+      "2026",
+      "Production",
+      "Source: https://www.bbc.co.uk/mediacentre/articles/2026/the-celebrity-traitors-series-2/"
+    ]
   }
 ];
-if(questions.length!==112||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some((q,i)=>q.id!=='tv_'+(58793+i)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 797 validation failed');
+const validIds = new Set([...Array.from({length:112},(_,i)=>'tv_'+(58793+i)),...Array.from({length:18},(_,i)=>'tv_'+(59822+i))]);
+if(questions.length!==130||new Set(questions.map(q=>q.id)).size!==questions.length||new Set(questions.map(q=>q.question.toLowerCase())).size!==questions.length||questions.some(q=>!validIds.has(q.id)||q.answers.length!==4||new Set(q.answers).size!==4||q.answers.filter(a=>a===q.correctAnswer).length!==1||!q.tags.includes('Programme: '+q.topic)||q.dailyEligible!==true))throw Error('Pack 797 validation failed');
 module.exports=questions;
