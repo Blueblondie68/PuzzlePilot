@@ -3243,5 +3243,789 @@ module.exports = [
             "Production",
             "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
         ]
+    },
+    {
+        "id": "film_5379",
+        "question": "In Lethal Weapon, where is Roger when his family surprises him with a birthday cake?",
+        "answers": [
+            "In the garage",
+            "In the bath",
+            "On his boat",
+            "At his desk"
+        ],
+        "correctAnswer": "In the bath",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5380",
+        "question": "In Lethal Weapon, how does Riggs get the man threatening to jump from a building down from the ledge?",
+        "answers": [
+            "He lowers the man on a window-cleaning rig",
+            "He handcuffs himself to the man and jumps with him",
+            "He grabs the man from the window below",
+            "He persuades the man to climb down a fire escape"
+        ],
+        "correctAnswer": "He handcuffs himself to the man and jumps with him",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5381",
+        "question": "In Lethal Weapon, what saves Riggs when Joshua shoots him in the street?",
+        "answers": [
+            "A protective vest",
+            "A police badge in his shirt pocket",
+            "The passenger door of his car",
+            "A wall behind a shop counter"
+        ],
+        "correctAnswer": "A protective vest",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5382",
+        "question": "In Lethal Weapon, what happens to General McAllister while Riggs and Murtaugh are escaping their captors?",
+        "answers": [
+            "Joshua shoots him in a dispute",
+            "He is arrested at the border",
+            "He is hit by the rotors of his own helicopter",
+            "His car crashes and explodes"
+        ],
+        "correctAnswer": "His car crashes and explodes",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5383",
+        "question": "In Lethal Weapon, what does Joshua find at the Murtaugh home in place of Roger's family?",
+        "answers": [
+            "A television crew waiting at the door",
+            "A note directing him to Riggs's trailer",
+            "Police officers waiting for him",
+            "Hunsaker's surviving daughter"
+        ],
+        "correctAnswer": "Police officers waiting for him",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5384",
+        "question": "In Lethal Weapon, who edited the film?",
+        "answers": [
+            "John Wright",
+            "Frank J. Urioste",
+            "Stuart Baird",
+            "Robert A. Ferretti"
+        ],
+        "correctAnswer": "Stuart Baird",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5385",
+        "question": "In Lethal Weapon, who designed the production?",
+        "answers": [
+            "Jackson DeGovia",
+            "J. Michael Riva",
+            "John Vallone",
+            "William Sandell"
+        ],
+        "correctAnswer": "J. Michael Riva",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5386",
+        "question": "In Lethal Weapon, which Christmas recording is heard over the opening credits?",
+        "answers": [
+            "Jingle Bell Rock by Bobby Helms",
+            "Rockin' Around the Christmas Tree by Brenda Lee",
+            "A Holly Jolly Christmas by Burl Ives",
+            "Run Rudolph Run by Chuck Berry"
+        ],
+        "correctAnswer": "Jingle Bell Rock by Bobby Helms",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Music",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5387",
+        "question": "In Lethal Weapon, which film music award did Michael Kamen win for his work on the film?",
+        "answers": [
+            "Grammy Award for Best Score Soundtrack",
+            "Golden Globe for Best Original Score",
+            "BAFTA Film Award for Best Original Music",
+            "BMI Film Music Award"
+        ],
+        "correctAnswer": "BMI Film Music Award",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Awards",
+            "Source: https://www.michaelkamen.com/catalogue/lethal-weapon"
+        ]
+    },
+    {
+        "id": "film_5388",
+        "question": "In Lethal Weapon 2, what happens to the gunman who attacks Leo in the hotel room when Riggs intervenes?",
+        "answers": [
+            "He escapes down the laundry chute",
+            "He is shot in the hotel lobby",
+            "He locks himself on the balcony",
+            "He goes through a window into the pool with Riggs"
+        ],
+        "correctAnswer": "He goes through a window into the pool with Riggs",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/58168"
+        ]
+    },
+    {
+        "id": "film_5389",
+        "question": "In Lethal Weapon 2, what does Riggs use to pull down the house on stilts?",
+        "answers": [
+            "A police tow truck",
+            "A bulldozer from a nearby site",
+            "His pickup truck",
+            "An armoured police vehicle"
+        ],
+        "correctAnswer": "His pickup truck",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/58168"
+        ]
+    },
+    {
+        "id": "film_5390",
+        "question": "In Lethal Weapon 2, what does Vorstedt have his men put Riggs in before dropping him into the water?",
+        "answers": [
+            "A locked crate",
+            "A straitjacket",
+            "A diving suit",
+            "An oil drum"
+        ],
+        "correctAnswer": "A straitjacket",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/58168"
+        ]
+    },
+    {
+        "id": "film_5391",
+        "question": "In Lethal Weapon 2, what kills Vorstedt at the docks?",
+        "answers": [
+            "Riggs drops a cargo container onto him",
+            "Murtaugh shoots him from a crane",
+            "He falls as he tries to board the ship",
+            "Rudd runs him over while fleeing"
+        ],
+        "correctAnswer": "Riggs drops a cargo container onto him",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/58168"
+        ]
+    },
+    {
+        "id": "film_5392",
+        "question": "In Lethal Weapon 2, who plays bomb squad officer Meagan Shapiro?",
+        "answers": [
+            "Jenette Goldstein",
+            "Mary Ellen Trainor",
+            "Darlene Love",
+            "Traci Wolfe"
+        ],
+        "correctAnswer": "Jenette Goldstein",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Cast",
+            "Character: Meagan Shapiro",
+            "Actor: Jenette Goldstein",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/58168"
+        ]
+    },
+    {
+        "id": "film_5393",
+        "question": "In Lethal Weapon 2, which cinematographer returned after shooting the first film?",
+        "answers": [
+            "Jan de Bont",
+            "Andrzej Bartkowiak",
+            "Oliver Wood",
+            "Stephen Goldblatt"
+        ],
+        "correctAnswer": "Stephen Goldblatt",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/58168"
+        ]
+    },
+    {
+        "id": "film_5394",
+        "question": "In Lethal Weapon 2, which Bob Dylan song does Randy Crawford perform on the soundtrack?",
+        "answers": [
+            "I Shall Be Released",
+            "Forever Young",
+            "Knockin' on Heaven's Door",
+            "The Times They Are a-Changin'"
+        ],
+        "correctAnswer": "Knockin' on Heaven's Door",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Music",
+            "Source: https://www.michaelkamen.com/catalogue/lethal-weapon-2"
+        ]
+    },
+    {
+        "id": "film_5395",
+        "question": "In Lethal Weapon 2, which award did Michael Kamen win for his music for the film?",
+        "answers": [
+            "BAFTA Film Award for Best Original Music",
+            "BMI Film Music Award",
+            "Grammy Award for Best Score Soundtrack",
+            "Golden Globe for Best Original Score"
+        ],
+        "correctAnswer": "BMI Film Music Award",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Awards",
+            "Source: https://www.michaelkamen.com/catalogue/lethal-weapon-2"
+        ]
+    },
+    {
+        "id": "film_5396",
+        "question": "In Lethal Weapon 3, what happens to the bomb's timer when Riggs cuts a wire in the opening scene?",
+        "answers": [
+            "It stops completely",
+            "It counts down faster",
+            "It resets to ten minutes",
+            "It runs backwards"
+        ],
+        "correctAnswer": "It counts down faster",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/59301-LETHAL-WEAPON3"
+        ]
+    },
+    {
+        "id": "film_5397",
+        "question": "In Lethal Weapon 3, who drives the real armoured car that Murtaugh commandeers during the opening robbery?",
+        "answers": [
+            "Delores",
+            "Lorna Cole",
+            "Meagan Shapiro",
+            "Trish Murtaugh"
+        ],
+        "correctAnswer": "Delores",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/59301-LETHAL-WEAPON3"
+        ]
+    },
+    {
+        "id": "film_5398",
+        "question": "In Lethal Weapon 3, what does Travis do to his henchman Smitty after the failed armoured car robbery?",
+        "answers": [
+            "Makes him take the blame at the police station",
+            "Sends him after Leo Getz",
+            "Pays him to leave Los Angeles",
+            "Kills him at the housing development"
+        ],
+        "correctAnswer": "Kills him at the housing development",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/59301-LETHAL-WEAPON3"
+        ]
+    },
+    {
+        "id": "film_5399",
+        "question": "In Lethal Weapon 3, why does Lorna initially stop Riggs and Murtaugh questioning Billy Phelps?",
+        "answers": [
+            "He is a federal witness",
+            "He has been transferred to hospital",
+            "Internal Affairs claims jurisdiction",
+            "She has already taken his confession"
+        ],
+        "correctAnswer": "Internal Affairs claims jurisdiction",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/59301-LETHAL-WEAPON3"
+        ]
+    },
+    {
+        "id": "film_5400",
+        "question": "In Lethal Weapon 3, what name do the officers give the armour-piercing ammunition used by the robbers?",
+        "answers": [
+            "Dum-dums",
+            "Hot loads",
+            "Cop killers",
+            "Dragon's breath"
+        ],
+        "correctAnswer": "Cop killers",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/59301-LETHAL-WEAPON3"
+        ]
+    },
+    {
+        "id": "film_5401",
+        "question": "In Lethal Weapon 3, what is Roger asked to do for Darryl's family after the shooting?",
+        "answers": [
+            "Pay for the family to move away",
+            "Find the people who armed him",
+            "Take Nick off the streets",
+            "Arrange for Darryl to receive a police funeral"
+        ],
+        "correctAnswer": "Find the people who armed him",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/59301-LETHAL-WEAPON3"
+        ]
+    },
+    {
+        "id": "film_5402",
+        "question": "In Lethal Weapon 3, which saxophonist shares music credit with Michael Kamen and Eric Clapton?",
+        "answers": [
+            "David Sanborn",
+            "Branford Marsalis",
+            "Kenny G",
+            "Tom Scott"
+        ],
+        "correctAnswer": "David Sanborn",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Music",
+            "Source: https://lalalandrecords.com/lethal-weapon-soundtrack-collection/"
+        ]
+    },
+    {
+        "id": "film_5403",
+        "question": "In Lethal Weapon 4, what kind of weapon is the armoured man using when Riggs and Murtaugh first appear?",
+        "answers": [
+            "A grenade launcher",
+            "A crossbow",
+            "A sniper rifle",
+            "A flamethrower"
+        ],
+        "correctAnswer": "A flamethrower",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://www.springfieldspringfield.co.uk/movie_script.php?movie=lethal-weapon-4"
+        ]
+    },
+    {
+        "id": "film_5404",
+        "question": "In Lethal Weapon 4, what family news does Roger reveal to Riggs during the opening stand-off?",
+        "answers": [
+            "Nick is joining the police",
+            "Trish is expecting another child",
+            "Carrie is getting married",
+            "Rianne is pregnant"
+        ],
+        "correctAnswer": "Rianne is pregnant",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://www.springfieldspringfield.co.uk/movie_script.php?movie=lethal-weapon-4"
+        ]
+    },
+    {
+        "id": "film_5405",
+        "question": "In Lethal Weapon 4, how does Wah Sing Ku show his speed when Riggs first draws a pistol on him?",
+        "answers": [
+            "He takes out the magazine",
+            "He knocks it through a window",
+            "He removes its slide",
+            "He unloads it one round at a time"
+        ],
+        "correctAnswer": "He removes its slide",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://www.springfieldspringfield.co.uk/movie_script.php?movie=lethal-weapon-4"
+        ]
+    },
+    {
+        "id": "film_5406",
+        "question": "In Lethal Weapon 4, what does Riggs administer to Uncle Benny during the questioning at the dentist’s office?",
+        "answers": [
+            "A local anaesthetic",
+            "Laughing gas",
+            "A promise of immunity",
+            "A tape of the general"
+        ],
+        "correctAnswer": "Laughing gas",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://www.springfieldspringfield.co.uk/movie_script.php?movie=lethal-weapon-4"
+        ]
+    },
+    {
+        "id": "film_5407",
+        "question": "In Lethal Weapon 4, what keeps Riggs underwater after the pier fight?",
+        "answers": [
+            "He is pinned by debris",
+            "Ku holds him down",
+            "He is tangled in a fishing net",
+            "He is handcuffed to a mooring post"
+        ],
+        "correctAnswer": "He is pinned by debris",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://www.springfieldspringfield.co.uk/movie_script.php?movie=lethal-weapon-4"
+        ]
+    },
+    {
+        "id": "film_5408",
+        "question": "In Lethal Weapon 4, which editor is credited alongside Kevin Stitt, Eric Strand and Frank J. Urioste?",
+        "answers": [
+            "Dallas Puett",
+            "Stuart Baird",
+            "John Wright",
+            "Robert A. Ferretti"
+        ],
+        "correctAnswer": "Dallas Puett",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Production",
+            "Source: https://watch.afi.com/movie/lethal-weapon-4"
+        ]
+    },
+    {
+        "id": "film_5409",
+        "question": "In Lethal Weapon 4, which band performs the soundtrack song 'Fire in the Hole'?",
+        "answers": [
+            "Aerosmith",
+            "Bon Jovi",
+            "Def Leppard",
+            "Van Halen"
+        ],
+        "correctAnswer": "Van Halen",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Music",
+            "Source: https://lalalandrecords.com/lethal-weapon-soundtrack-collection/"
+        ]
+    },
+    {
+        "id": "film_5410",
+        "question": "In Lethal Weapon 3, which award did Michael Kamen receive for the score in 1993?",
+        "answers": [
+            "Grammy Award for Best Score Soundtrack",
+            "BAFTA Film Award for Best Original Music",
+            "BMI Film Music Award",
+            "Golden Globe for Best Original Score"
+        ],
+        "correctAnswer": "BMI Film Music Award",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Awards",
+            "Source: https://www.michaelkamen.com/catalogue/lethal-weapon-3"
+        ]
+    },
+    {
+        "id": "film_5411",
+        "question": "In Lethal Weapon 4, which cast member won the 1999 Blockbuster Entertainment Award for Favourite Supporting Actor in an action or adventure film?",
+        "answers": [
+            "Jet Li",
+            "Chris Rock",
+            "Joe Pesci",
+            "Danny Glover"
+        ],
+        "correctAnswer": "Chris Rock",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Awards",
+            "Source: https://www.imdb.com/title/tt0122151/awards/"
+        ]
+    },
+    {
+        "id": "film_5412",
+        "question": "In Lethal Weapon 4, which Eric Clapton song is credited on the soundtrack?",
+        "answers": [
+            "Change the World",
+            "Pilgrim",
+            "My Father's Eyes",
+            "Blue Eyes Blue"
+        ],
+        "correctAnswer": "Pilgrim",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Music",
+            "Source: https://www.movienco.co.uk/films/lethal-weapon-4/soundtracks/"
+        ]
     }
 ];
