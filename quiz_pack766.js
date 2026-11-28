@@ -5844,5 +5844,214 @@ module.exports = [
                 "Source: https://d23.com/a-to-z/pirates-caribbean-tales-code-wedlocked/",
                 "Source: https://en.wikipedia.org/wiki/Tales_of_the_Code:_Wedlocked"
             ]
-        }
+        },
+    {
+        "id": "film_5566",
+        "question": "In Pirates of the Caribbean: The Curse of the Black Pearl, who was the director of photography?",
+        "answers": [
+            "Paul Cameron",
+            "Dariusz Wolski",
+            "John Mathieson",
+            "Dean Cundey"
+        ],
+        "correctAnswer": "Dariusz Wolski",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "category": "Film",
+        "tags": [
+            "Pirates of the Caribbean franchise",
+            "Film: Pirates of the Caribbean: The Curse of the Black Pearl",
+            "2003",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/62869"
+        ]
+    },
+    {
+        "id": "film_5567",
+        "question": "In Pirates of the Caribbean: The Curse of the Black Pearl, which editor shares credit with Craig Wood and Stephen Rivkin?",
+        "answers": [
+            "Arthur Schmidt",
+            "Michael Kahn",
+            "Paul Hirsch",
+            "Lee Smith"
+        ],
+        "correctAnswer": "Arthur Schmidt",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "category": "Film",
+        "tags": [
+            "Pirates of the Caribbean franchise",
+            "Film: Pirates of the Caribbean: The Curse of the Black Pearl",
+            "2003",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/62869"
+        ]
+    },
+    {
+        "id": "film_5568",
+        "question": "In Pirates of the Caribbean: At World's End, how does the crew use the Black Pearl itself to escape from Davy Jones's Locker?",
+        "answers": [
+            "They turn it upside down at sunset",
+            "They burn it and ride up in the smoke",
+            "They steer it straight into the rising sun",
+            "They fill its hold with the crabs from the shore"
+        ],
+        "correctAnswer": "They turn it upside down at sunset",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Pirates of the Caribbean: At World's End",
+        "category": "Film",
+        "tags": [
+            "Pirates of the Caribbean franchise",
+            "Film: Pirates of the Caribbean: At World's End",
+            "2007",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean:_At_World%27s_End"
+        ]
+    },
+    {
+        "id": "film_5569",
+        "question": "In Pirates of the Caribbean: At World's End, which California airport hosted filming for the climactic sea battle?",
+        "answers": [
+            "Van Nuys Airport",
+            "Long Beach Airport",
+            "Santa Monica Airport",
+            "Palmdale Regional Airport"
+        ],
+        "correctAnswer": "Palmdale Regional Airport",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Pirates of the Caribbean: At World's End",
+        "category": "Film",
+        "tags": [
+            "Pirates of the Caribbean franchise",
+            "Film: Pirates of the Caribbean: At World's End",
+            "2007",
+            "Action",
+            "Production",
+            "Source: https://www.imdb.com/title/tt0449088/locations"
+        ]
+    },
+    {
+        "id": "film_5570",
+        "question": "In Pirates of the Caribbean: On Stranger Tides, who returns as Captain Teague and warns Jack about the Fountain of Youth?",
+        "answers": [
+            "Ronnie Wood",
+            "Bill Nighy",
+            "Keith Richards",
+            "Kevin McNally"
+        ],
+        "correctAnswer": "Keith Richards",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Pirates of the Caribbean: On Stranger Tides",
+        "category": "Film",
+        "tags": [
+            "Pirates of the Caribbean franchise",
+            "Film: Pirates of the Caribbean: On Stranger Tides",
+            "2011",
+            "Action",
+            "Cast",
+            "Character: Captain Teague",
+            "Actor: Keith Richards",
+            "Source: https://d23.com/a-to-z/pirates-of-the-caribbean-on-stranger-tides-film/"
+        ]
+    },
+    {
+        "id": "film_5571",
+        "question": "In Pirates of the Caribbean: Salazar's Revenge, who was the cinematographer on the Queensland shoot?",
+        "answers": [
+            "Dariusz Wolski",
+            "Paul Cameron",
+            "John Mathieson",
+            "Claudio Miranda"
+        ],
+        "correctAnswer": "Paul Cameron",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Pirates of the Caribbean: Salazar's Revenge",
+        "category": "Film",
+        "tags": [
+            "Pirates of the Caribbean franchise",
+            "Film: Pirates of the Caribbean: Salazar's Revenge",
+            "2017",
+            "Action",
+            "Production",
+            "Source: https://acmag.com.au/2017/06/01/pirates-of-the-caribbean/amp/"
+        ]
+    },
+    {
+        "id": "film_5572",
+        "question": "In Tales of the Code: Wedlocked, which scene in Disneyland's Pirates of the Caribbean attraction inspired the short?",
+        "answers": [
+            "The burning town",
+            "The auction",
+            "The skeleton at the helm",
+            "The dog guarding the jail keys"
+        ],
+        "correctAnswer": "The auction",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Tales of the Code: Wedlocked",
+        "category": "Film",
+        "tags": [
+            "Pirates of the Caribbean franchise",
+            "Film: Tales of the Code: Wedlocked",
+            "2011",
+            "Action",
+            "Production",
+            "Source: https://d23.com/a-to-z/pirates-caribbean-tales-code-wedlocked/"
+        ]
+    },
+    {
+        "id": "film_5573",
+        "question": "In Pirates of the Caribbean: Dead Man's Chest, which motion-capture system developed by ILM allowed performances to be captured on set during principal photography?",
+        "answers": [
+            "Imocap",
+            "StageCraft",
+            "Animatronic Motion Control",
+            "Go Motion"
+        ],
+        "correctAnswer": "Imocap",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Pirates of the Caribbean: Dead Man's Chest",
+        "category": "Film",
+        "tags": [
+            "Pirates of the Caribbean franchise",
+            "Film: Pirates of the Caribbean: Dead Man's Chest",
+            "2006",
+            "Action",
+            "Production",
+            "Source: https://www.ilm.com/vfx/pirates-of-the-caribbean-dead-mans-chest-2/"
+        ]
+    },
+    {
+        "id": "film_5574",
+        "question": "In Pirates of the Caribbean: On Stranger Tides, which company supplied hundreds of native stereoscopic effects shots, including work on the London sequences?",
+        "answers": [
+            "Wētā Digital",
+            "Framestore",
+            "Digital Domain",
+            "Cinesite"
+        ],
+        "correctAnswer": "Cinesite",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Pirates of the Caribbean: On Stranger Tides",
+        "category": "Film",
+        "tags": [
+            "Pirates of the Caribbean franchise",
+            "Film: Pirates of the Caribbean: On Stranger Tides",
+            "2011",
+            "Action",
+            "Production",
+            "Source: https://cinesite.com/pirates-of-the-caribbean-on-stranger-tides/"
+        ]
+    }
 ];
