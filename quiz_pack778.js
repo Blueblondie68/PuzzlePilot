@@ -5028,5 +5028,214 @@ module.exports = [
                 "Source: https://www.movienco.co.uk/films/aliens-vs-predator-requiem/awards/",
                 "Source: https://en.wikipedia.org/wiki/Aliens_vs._Predator:_Requiem"
             ]
-        }
+        },
+    {
+        "id": "film_5618",
+        "question": "In Alien, who was the director of photography on the original film?",
+        "answers": [
+            "Adrian Biddle",
+            "Alex Thomson",
+            "Derek Vanlint",
+            "Darius Khondji"
+        ],
+        "correctAnswer": "Derek Vanlint",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Alien",
+        "category": "Film",
+        "tags": [
+            "Alien franchise",
+            "Film: Alien",
+            "1979",
+            "Science Fiction",
+            "Production",
+            "Source: https://bfidatadigipres.github.io/ridley%20scott%3Cbr%3Ebuilding%20cinematic%20worlds/2025/09/13/alien/"
+        ]
+    },
+    {
+        "id": "film_5619",
+        "question": "In Aliens, who photographed the sequel after working on the camera crew of the original?",
+        "answers": [
+            "Derek Vanlint",
+            "Adrian Biddle",
+            "Alex Thomson",
+            "Darius Khondji"
+        ],
+        "correctAnswer": "Adrian Biddle",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Aliens",
+        "category": "Film",
+        "tags": [
+            "Alien franchise",
+            "Film: Aliens",
+            "1986",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/68347"
+        ]
+    },
+    {
+        "id": "film_5620",
+        "question": "In Alien 3, who photographed the third film, including the scenes in fire-lit corridors?",
+        "answers": [
+            "Derek Vanlint",
+            "Alex Thomson",
+            "Adrian Biddle",
+            "Darius Khondji"
+        ],
+        "correctAnswer": "Alex Thomson",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Alien 3",
+        "category": "Film",
+        "tags": [
+            "Alien franchise",
+            "Film: Alien 3",
+            "1992",
+            "Science Fiction",
+            "Production",
+            "Source: https://theasc.com/articles_tag/sigourney-weaver/"
+        ]
+    },
+    {
+        "id": "film_5621",
+        "question": "In Alien Resurrection, which cinematographer worked with Jean-Pierre Jeunet on the film?",
+        "answers": [
+            "Darius Khondji",
+            "Derek Vanlint",
+            "Alex Thomson",
+            "Adrian Biddle"
+        ],
+        "correctAnswer": "Darius Khondji",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Alien Resurrection",
+        "category": "Film",
+        "tags": [
+            "Alien franchise",
+            "Film: Alien Resurrection",
+            "1997",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/60490"
+        ]
+    },
+    {
+        "id": "film_5622",
+        "question": "In Prometheus, who was the cinematographer?",
+        "answers": [
+            "Derek Vanlint",
+            "Adrian Biddle",
+            "Galo Olivares",
+            "Dariusz Wolski"
+        ],
+        "correctAnswer": "Dariusz Wolski",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Prometheus",
+        "category": "Film",
+        "tags": [
+            "Alien franchise",
+            "Film: Prometheus",
+            "2012",
+            "Science Fiction",
+            "Production",
+            "Source: https://en.wikipedia.org/wiki/Prometheus_(2012_film)"
+        ]
+    },
+    {
+        "id": "film_5623",
+        "question": "In Alien: Covenant, which New Zealand location inspired the way Dariusz Wolski lit the stormy landscapes?",
+        "answers": [
+            "Lake Taupō",
+            "Huka Falls",
+            "Milford Sound",
+            "Lake Tekapo"
+        ],
+        "correctAnswer": "Milford Sound",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Alien: Covenant",
+        "category": "Film",
+        "tags": [
+            "Alien franchise",
+            "Film: Alien: Covenant",
+            "2017",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.nzfilm.co.nz/films/alien-covenant"
+        ]
+    },
+    {
+        "id": "film_5624",
+        "question": "In Alien: Romulus, who photographed the film, working with Fede Álvarez?",
+        "answers": [
+            "Dariusz Wolski",
+            "Darius Khondji",
+            "Galo Olivares",
+            "Alex Thomson"
+        ],
+        "correctAnswer": "Galo Olivares",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Alien: Romulus",
+        "category": "Film",
+        "tags": [
+            "Alien franchise",
+            "Film: Alien: Romulus",
+            "2024",
+            "Science Fiction",
+            "Production",
+            "Source: https://theasc.com/video/clubhouse-conversations-alien-romulus/"
+        ]
+    },
+    {
+        "id": "film_5625",
+        "question": "In Alien vs. Predator, who photographed the first crossover?",
+        "answers": [
+            "Daniel C. Pearl",
+            "David Johnson",
+            "Derek Vanlint",
+            "Darius Khondji"
+        ],
+        "correctAnswer": "David Johnson",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Alien vs. Predator",
+        "category": "Film",
+        "tags": [
+            "Alien franchise",
+            "Film: Alien vs. Predator",
+            "2004",
+            "Science Fiction",
+            "Production",
+            "Predator franchise",
+            "Source: https://en.wikipedia.org/wiki/Alien_vs._Predator_(film)"
+        ]
+    },
+    {
+        "id": "film_5626",
+        "question": "In Aliens vs. Predator: Requiem, who was the cinematographer on the crossover sequel?",
+        "answers": [
+            "Daniel C. Pearl",
+            "David Johnson",
+            "Dariusz Wolski",
+            "Adrian Biddle"
+        ],
+        "correctAnswer": "Daniel C. Pearl",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Aliens vs. Predator: Requiem",
+        "category": "Film",
+        "tags": [
+            "Alien franchise",
+            "Film: Aliens vs. Predator: Requiem",
+            "2007",
+            "Science Fiction",
+            "Production",
+            "Predator franchise",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/64127"
+        ]
+    }
 ];
