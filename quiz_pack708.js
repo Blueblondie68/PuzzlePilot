@@ -4027,5 +4027,469 @@ module.exports = [
             "Music",
             "Source: https://www.movienco.co.uk/films/lethal-weapon-4/soundtracks/"
         ]
+    },
+    {
+        "id": "film_5710",
+        "question": "In Lethal Weapon, why do Roger and Martin believe Martin can go unnoticed at the lakebed while Roger approaches the kidnappers?",
+        "answers": [
+            "The kidnappers have never seen Roger",
+            "Joshua thinks Martin is dead",
+            "A uniformed team has already surrounded the lake",
+            "Rianne has persuaded them that Martin left the police"
+        ],
+        "correctAnswer": "Joshua thinks Martin is dead",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5711",
+        "question": "In Lethal Weapon, where are Riggs and Murtaugh taken to be interrogated after their capture at the lakebed?",
+        "answers": [
+            "The back rooms of a nightclub",
+            "An empty aircraft hangar",
+            "A hotel basement",
+            "An abandoned police station"
+        ],
+        "correctAnswer": "The back rooms of a nightclub",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5712",
+        "question": "In Lethal Weapon, who tortures Riggs before Riggs escapes and frees Roger and Rianne?",
+        "answers": [
+            "Endo",
+            "Gustaf",
+            "McAllister",
+            "Hunsaker"
+        ],
+        "correctAnswer": "Endo",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5713",
+        "question": "In Lethal Weapon, what does Joshua do after the fight on Roger's front lawn that makes both detectives shoot him?",
+        "answers": [
+            "He charges at Rianne",
+            "He takes a knife from his boot",
+            "He threatens to detonate a grenade",
+            "He grabs a police officer's gun"
+        ],
+        "correctAnswer": "He grabs a police officer's gun",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5714",
+        "question": "In Lethal Weapon, where does Riggs take flowers before going to the Murtaugh home on Christmas Eve?",
+        "answers": [
+            "The hospital where Rianne is being treated",
+            "Dixie's house",
+            "His wife's grave",
+            "Hunsaker's home"
+        ],
+        "correctAnswer": "His wife's grave",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5715",
+        "question": "In Lethal Weapon 2, where must Roger jump to shelter from the explosion after being trapped in his bathroom?",
+        "answers": [
+            "Behind the bathroom door",
+            "Into the bath",
+            "Into the adjoining bedroom",
+            "Through the bathroom window"
+        ],
+        "correctAnswer": "Into the bath",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_5716",
+        "question": "In Lethal Weapon 2, what do Roger and Leo do at the South African diplomatic offices while Riggs searches Rudd's office?",
+        "answers": [
+            "Photograph the consulate's cars",
+            "Create a distraction at reception",
+            "Disguise themselves as security guards",
+            "Interview Rika in the car park"
+        ],
+        "correctAnswer": "Create a distraction at reception",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_5717",
+        "question": "In Lethal Weapon 2, what large object does Riggs shoot in Rudd's office during their confrontation?",
+        "answers": [
+            "A fish tank",
+            "A television set",
+            "A clock",
+            "A glass trophy case"
+        ],
+        "correctAnswer": "A fish tank",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_5718",
+        "question": "In Lethal Weapon 2, how do Riggs and Rika get out of his trailer when Rudd's men attack it from a helicopter?",
+        "answers": [
+            "Through a skylight",
+            "Through the front windscreen",
+            "Under the kitchen floor",
+            "Through the dog flap"
+        ],
+        "correctAnswer": "Through the dog flap",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_5719",
+        "question": "In Lethal Weapon 2, what happens to several of the detectives' colleagues while Roger is trying to identify the Alba Varden?",
+        "answers": [
+            "They are held at the consulate",
+            "Captain Murphy suspends them",
+            "Rudd's men murder them",
+            "They join a police raid on Rudd's house"
+        ],
+        "correctAnswer": "Rudd's men murder them",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 2",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 2",
+            "1989",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/58168-LETHAL-WEAPON2"
+        ]
+    },
+    {
+        "id": "film_5720",
+        "question": "In Lethal Weapon 3, why does Leo recognise Travis when he sees his photograph at the police station?",
+        "answers": [
+            "He has shown him the Murtaugh house",
+            "He has investigated him for a previous client",
+            "He has arranged ice hockey tickets for him",
+            "He saw him working as a uniformed officer"
+        ],
+        "correctAnswer": "He has arranged ice hockey tickets for him",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_5721",
+        "question": "In Lethal Weapon 3, what makes Riggs race after Travis and his men into the tunnels after the raid on the police storage facility?",
+        "answers": [
+            "Roger is taken hostage in a police van",
+            "A young officer is killed during the gunfight",
+            "Lorna is injured and loses the stolen weapons",
+            "Leo is trapped inside the armoured lorry"
+        ],
+        "correctAnswer": "A young officer is killed during the gunfight",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_5722",
+        "question": "In Lethal Weapon 3, what does Travis drive towards a fallen Riggs during the final fight at the housing development?",
+        "answers": [
+            "A tipper lorry",
+            "A police motorcycle",
+            "An armoured security van",
+            "A forklift"
+        ],
+        "correctAnswer": "A tipper lorry",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_5723",
+        "question": "In Lethal Weapon 3, what happens as the two detectives arrive at the building in the closing bomb-scare gag?",
+        "answers": [
+            "It turns out to be a film set",
+            "The bomb squad arrests a suspect outside",
+            "The bomb is carried away without exploding",
+            "It explodes before either detective enters"
+        ],
+        "correctAnswer": "It explodes before either detective enters",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
+    },
+    {
+        "id": "film_5724",
+        "question": "In Lethal Weapon 3, which two orchestras performed the score?",
+        "answers": [
+            "The London Symphony Orchestra and Royal Philharmonic Orchestra",
+            "The Boston Pops and New York Philharmonic",
+            "The Seattle Symphony and San Francisco Symphony",
+            "The Greater Los Angeles Orchestra and Greater New York Alumni Orchestra"
+        ],
+        "correctAnswer": "The Greater Los Angeles Orchestra and Greater New York Alumni Orchestra",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Music",
+            "Source: https://www.michaelkamen.com/catalogue/lethal-weapon-3"
+        ]
+    },
+    {
+        "id": "film_5725",
+        "question": "In Lethal Weapon 4, what concern prompts the police chief to have Riggs and Murtaugh promoted to captains?",
+        "answers": [
+            "The force has lost its Internal Affairs division",
+            "The pair have threatened to resign together",
+            "The department's insurance carrier is objecting to their record as sergeants",
+            "Their investigations have been taken over by federal officers"
+        ],
+        "correctAnswer": "The department's insurance carrier is objecting to their record as sergeants",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Lethal_Weapon_4"
+        ]
+    },
+    {
+        "id": "film_5726",
+        "question": "In Lethal Weapon 4, how does Leo help the detectives get access to Uncle Benny at the dental surgery?",
+        "answers": [
+            "He poses as Uncle Benny's solicitor",
+            "He acts as a distraction",
+            "He brings a search warrant from Murphy",
+            "He convinces Benny that the dentist is a fellow Triad member"
+        ],
+        "correctAnswer": "He acts as a distraction",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Lethal_Weapon_4"
+        ]
+    },
+    {
+        "id": "film_5727",
+        "question": "In Lethal Weapon 4, in which Nevada city did the crew decide to shoot the chase after abandoning plans for a San Diego freeway?",
+        "answers": [
+            "Las Vegas",
+            "Reno",
+            "Henderson",
+            "Carson City"
+        ],
+        "correctAnswer": "Las Vegas",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 4",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 4",
+            "1998",
+            "Action",
+            "Production",
+            "Source: https://www.deseret.com/1998/4/9/19373532/long-wait-proves-lethal-for-a-weapon-4-scene/"
+        ]
+    },
+    {
+        "id": "film_5728",
+        "question": "In Lethal Weapon, who plays Endo, the mercenary assigned to interrogate Riggs?",
+        "answers": [
+            "Al Leong",
+            "Gary Busey",
+            "Mitchell Ryan",
+            "Tom Atkins"
+        ],
+        "correctAnswer": "Al Leong",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon",
+            "1987",
+            "Action",
+            "Cast",
+            "Character: Endo",
+            "Actor: Al Leong",
+            "Source: https://catalog.afi.com/Film/68361-LETHAL-WEAPON"
+        ]
+    },
+    {
+        "id": "film_5729",
+        "question": "In Lethal Weapon 3, who plays Delores, who helps Murtaugh pursue the hijacked armoured vehicle?",
+        "answers": [
+            "Darlene Love",
+            "Mary Ellen Trainor",
+            "Traci Wolfe",
+            "Delores Hall"
+        ],
+        "correctAnswer": "Delores Hall",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Lethal Weapon 3",
+        "category": "Film",
+        "tags": [
+            "Lethal Weapon franchise",
+            "Film: Lethal Weapon 3",
+            "1992",
+            "Action",
+            "Cast",
+            "Character: Delores",
+            "Actor: Delores Hall",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/59301"
+        ]
     }
 ];
