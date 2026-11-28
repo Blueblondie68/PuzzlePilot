@@ -7656,5 +7656,281 @@ module.exports = [
                 "Source: https://www.lucasfilm.com/productions/ewoks-the-battle-for-endor/",
                 "Source: https://en.wikipedia.org/wiki/Ewoks:_The_Battle_for_Endor"
             ]
-        }
+        },
+    {
+        "id": "film_5643",
+        "question": "In Star Wars: A New Hope, what camera accessory did Roger Christian repurpose for Luke's lightsaber hilt?",
+        "answers": [
+            "A Leica viewfinder",
+            "A Bolex winding crank",
+            "A Rolleiflex lens hood",
+            "A Graflex flash handle"
+        ],
+        "correctAnswer": "A Graflex flash handle",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Wars: A New Hope",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Star Wars: A New Hope",
+            "1977",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.starwars.com/news/roger-christian-on-forging-the-lightsaber-hans-blaster-and-more-from-star-wars-a-new-hope"
+        ]
+    },
+    {
+        "id": "film_5644",
+        "question": "In Star Wars: A New Hope, who photographed the original Star Wars film?",
+        "answers": [
+            "Peter Suschitzky",
+            "Alan Hume",
+            "David Tattersall",
+            "Gilbert Taylor"
+        ],
+        "correctAnswer": "Gilbert Taylor",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Wars: A New Hope",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Star Wars: A New Hope",
+            "1977",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.starwars.com/news/remembering-gilbert-taylor-star-wars-cinematographer"
+        ]
+    },
+    {
+        "id": "film_5645",
+        "question": "In Star Wars: A New Hope, which editor shared the Oscar with Paul Hirsch and Marcia Lucas?",
+        "answers": [
+            "Richard Marks",
+            "Michael Kahn",
+            "Richard Chew",
+            "Walter Murch"
+        ],
+        "correctAnswer": "Richard Chew",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Wars: A New Hope",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Star Wars: A New Hope",
+            "1977",
+            "Science Fiction",
+            "Awards",
+            "Source: https://www.oscars.org/oscars/ceremonies/1978"
+        ]
+    },
+    {
+        "id": "film_5646",
+        "question": "In Star Wars: The Force Awakens, who photographed the film and later returned to shoot The Rise of Skywalker?",
+        "answers": [
+            "Steve Yedlin",
+            "Dan Mindel",
+            "Greig Fraser",
+            "Bradford Young"
+        ],
+        "correctAnswer": "Dan Mindel",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Wars: The Force Awakens",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Star Wars: The Force Awakens",
+            "2015",
+            "Science Fiction",
+            "Production",
+            "Source: https://theasc.com/news/mindel-november-asc-master-class/"
+        ]
+    },
+    {
+        "id": "film_5647",
+        "question": "In Star Wars: The Mandalorian and Grogu, what real city in the Prohibition era inspired the appearance of Shakari?",
+        "answers": [
+            "Chicago",
+            "Boston",
+            "Detroit",
+            "Philadelphia"
+        ],
+        "correctAnswer": "Chicago",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Wars: The Mandalorian and Grogu",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Star Wars: The Mandalorian and Grogu",
+            "2026",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.starwars.com/news/star-wars-the-mandalorian-and-grogu-trivia"
+        ]
+    },
+    {
+        "id": "film_5648",
+        "question": "In Star Wars: The Mandalorian and Grogu, which late actor is honoured by the sign over the entrance to the dejarik arena?",
+        "answers": [
+            "Carl Weathers",
+            "Peter Mayhew",
+            "Kenny Baker",
+            "Jeremy Bulloch"
+        ],
+        "correctAnswer": "Carl Weathers",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Wars: The Mandalorian and Grogu",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Star Wars: The Mandalorian and Grogu",
+            "2026",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.starwars.com/news/star-wars-the-mandalorian-and-grogu-trivia"
+        ]
+    },
+    {
+        "id": "film_5649",
+        "question": "In Star Wars: The Mandalorian and Grogu, who voices the air traffic control droids that clear the Mandalorian for landing on Nal Hutta?",
+        "answers": [
+            "Dee Bradley Baker",
+            "Alan Tudyk",
+            "Sam Witwer",
+            "Anthony Daniels"
+        ],
+        "correctAnswer": "Anthony Daniels",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Star Wars: The Mandalorian and Grogu",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Star Wars: The Mandalorian and Grogu",
+            "2026",
+            "Science Fiction",
+            "Cast",
+            "Source: https://www.starwars.com/news/star-wars-the-mandalorian-and-grogu-trivia"
+        ]
+    },
+    {
+        "id": "film_5650",
+        "question": "In Star Wars: The Mandalorian and Grogu, what is the name of Embo's anooba?",
+        "answers": [
+            "Marrok",
+            "Buggles",
+            "Keibu",
+            "Nubs"
+        ],
+        "correctAnswer": "Keibu",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Star Wars: The Mandalorian and Grogu",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Star Wars: The Mandalorian and Grogu",
+            "2026",
+            "Science Fiction",
+            "Storyline",
+            "Source: https://www.starwars.com/news/who-is-embo"
+        ]
+    },
+    {
+        "id": "film_5651",
+        "question": "In Star Wars: The Mandalorian and Grogu, who worked with Jon Favreau as director of photography?",
+        "answers": [
+            "Dan Mindel",
+            "David Klein",
+            "Greig Fraser",
+            "Steve Yedlin"
+        ],
+        "correctAnswer": "David Klein",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Wars: The Mandalorian and Grogu",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Star Wars: The Mandalorian and Grogu",
+            "2026",
+            "Science Fiction",
+            "Production",
+            "Source: https://theasc.com/news/inside-july-2026-american-cinematographer/"
+        ]
+    },
+    {
+        "id": "film_5652",
+        "question": "In Caravan of Courage: An Ewok Adventure, who narrates the Ewok adventure?",
+        "answers": [
+            "Wilford Brimley",
+            "Burl Ives",
+            "Warwick Davis",
+            "Anthony Daniels"
+        ],
+        "correctAnswer": "Burl Ives",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Caravan of Courage: An Ewok Adventure",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Caravan of Courage: An Ewok Adventure",
+            "1984",
+            "Science Fiction",
+            "Cast",
+            "Source: https://www.starwars.com/news/9-things-you-never-knew-about-the-ewok-adventure"
+        ]
+    },
+    {
+        "id": "film_5653",
+        "question": "In Caravan of Courage: An Ewok Adventure, which California county housed the entire shoot?",
+        "answers": [
+            "Marin County",
+            "San Mateo County",
+            "Santa Cruz County",
+            "Sonoma County"
+        ],
+        "correctAnswer": "Marin County",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Caravan of Courage: An Ewok Adventure",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Caravan of Courage: An Ewok Adventure",
+            "1984",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.starwars.com/news/9-things-you-never-knew-about-the-ewok-adventure"
+        ]
+    },
+    {
+        "id": "film_5654",
+        "question": "In Caravan of Courage: An Ewok Adventure, which vehicles from The Empire Strikes Back supplied wings for the wrecked Towani starcruiser?",
+        "answers": [
+            "Twin-pod cloud cars",
+            "TIE bombers",
+            "AT-AT walkers",
+            "Snowspeeders"
+        ],
+        "correctAnswer": "Snowspeeders",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Caravan of Courage: An Ewok Adventure",
+        "category": "Film",
+        "tags": [
+            "Star Wars franchise",
+            "Film: Caravan of Courage: An Ewok Adventure",
+            "1984",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.starwars.com/news/9-things-you-never-knew-about-the-ewok-adventure"
+        ]
+    }
 ];
