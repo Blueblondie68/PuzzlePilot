@@ -5039,5 +5039,218 @@ module.exports = [
                 "Source: https://hp.michaelarias.net/Films/TheAnimatrix/",
                 "Source: https://en.wikipedia.org/wiki/The_Animatrix"
             ]
-        }
+        },
+    {
+        "id": "film_5590",
+        "question": "In The Matrix, who photographed the original feature as director of photography?",
+        "answers": [
+            "Dariusz Wolski",
+            "Russell Carpenter",
+            "Michael Ballhaus",
+            "Bill Pope"
+        ],
+        "correctAnswer": "Bill Pope",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Matrix",
+        "category": "Film",
+        "tags": [
+            "Matrix franchise",
+            "Film: The Matrix",
+            "1999",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/61230"
+        ]
+    },
+    {
+        "id": "film_5591",
+        "question": "In The Matrix, who designed the production?",
+        "answers": [
+            "Nathan Crowley",
+            "Alex McDowell",
+            "Owen Paterson",
+            "Stuart Craig"
+        ],
+        "correctAnswer": "Owen Paterson",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Matrix",
+        "category": "Film",
+        "tags": [
+            "Matrix franchise",
+            "Film: The Matrix",
+            "1999",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/61230"
+        ]
+    },
+    {
+        "id": "film_5592",
+        "question": "In The Matrix Reloaded, which member of the Merovingian's household agrees to take Neo's group to the Keymaker?",
+        "answers": [
+            "Niobe",
+            "The Oracle",
+            "Persephone",
+            "Trinity"
+        ],
+        "correctAnswer": "Persephone",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Matrix Reloaded",
+        "category": "Film",
+        "tags": [
+            "Matrix franchise",
+            "Film: The Matrix Reloaded",
+            "2003",
+            "Science Fiction",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Matrix_Reloaded"
+        ]
+    },
+    {
+        "id": "film_5593",
+        "question": "In The Matrix Revolutions, which studio created the machine world where Neo negotiates with the machine leader?",
+        "answers": [
+            "Framestore",
+            "Tippett Studio",
+            "Animal Logic",
+            "Digital Domain"
+        ],
+        "correctAnswer": "Tippett Studio",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Matrix Revolutions",
+        "category": "Film",
+        "tags": [
+            "Matrix franchise",
+            "Film: The Matrix Revolutions",
+            "2003",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.cgw.com/Publications/CGW/2003/Volume-26-Issue-12-December-2003-/The-Matrix-Resolution.aspx"
+        ]
+    },
+    {
+        "id": "film_5594",
+        "question": "In The Matrix Revolutions, which effects company created the bulk of the siege of Zion?",
+        "answers": [
+            "ESC",
+            "Cinesite",
+            "Rising Sun Pictures",
+            "Wētā Digital"
+        ],
+        "correctAnswer": "ESC",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Matrix Revolutions",
+        "category": "Film",
+        "tags": [
+            "Matrix franchise",
+            "Film: The Matrix Revolutions",
+            "2003",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.cgw.com/Publications/CGW/2003/Volume-26-Issue-12-December-2003-/The-Matrix-Resolution.aspx"
+        ]
+    },
+    {
+        "id": "film_5595",
+        "question": "In The Matrix Resurrections, which cinematographer shares the photography credit with John Toll?",
+        "answers": [
+            "Bill Pope",
+            "Robert Richardson",
+            "Mauro Fiore",
+            "Daniele Massaccesi"
+        ],
+        "correctAnswer": "Daniele Massaccesi",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Matrix Resurrections",
+        "category": "Film",
+        "tags": [
+            "Matrix franchise",
+            "Film: The Matrix Resurrections",
+            "2021",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.youtube.com/watch?v=0BZUMD85S7s"
+        ]
+    },
+    {
+        "id": "film_5596",
+        "question": "In The Matrix Resurrections, who edited the film?",
+        "answers": [
+            "Zach Staenberg",
+            "Lee Smith",
+            "Maryann Brandon",
+            "Joseph Jett Sally"
+        ],
+        "correctAnswer": "Joseph Jett Sally",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Matrix Resurrections",
+        "category": "Film",
+        "tags": [
+            "Matrix franchise",
+            "Film: The Matrix Resurrections",
+            "2021",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.youtube.com/watch?v=0BZUMD85S7s"
+        ]
+    },
+    {
+        "id": "film_5597",
+        "question": "In The Second Renaissance, Part I, which Japanese animation studio handled production design and animation on both parts?",
+        "answers": [
+            "Madhouse",
+            "Bones",
+            "STUDIO4°C",
+            "Production I.G"
+        ],
+        "correctAnswer": "STUDIO4°C",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Second Renaissance, Part I",
+        "category": "Film",
+        "tags": [
+            "Matrix franchise",
+            "Film: The Second Renaissance, Part I",
+            "2003",
+            "Science Fiction",
+            "Production",
+            "Short Film",
+            "The Animatrix",
+            "Short: The Second Renaissance, Part I",
+            "Source: https://hp.michaelarias.net/Films/TheAnimatrix/"
+        ]
+    },
+    {
+        "id": "film_5598",
+        "question": "In World Record, which Japanese studio handled production design and animation for the short about a sprinter?",
+        "answers": [
+            "Toei Animation",
+            "Madhouse",
+            "Kyoto Animation",
+            "Science SARU"
+        ],
+        "correctAnswer": "Madhouse",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "World Record",
+        "category": "Film",
+        "tags": [
+            "Matrix franchise",
+            "Film: World Record",
+            "2003",
+            "Science Fiction",
+            "Production",
+            "Short Film",
+            "The Animatrix",
+            "Short: World Record",
+            "Source: https://hp.michaelarias.net/Films/TheAnimatrix/"
+        ]
+    }
 ];
