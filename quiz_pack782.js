@@ -3971,5 +3971,189 @@ module.exports = [
                 "Source: https://music.apple.com/us/album/the-hunger-games-sunrise-on-the-reaping-the-score/6820718626",
                 "Source: https://en.wikipedia.org/wiki/The_Hunger_Games:_Sunrise_on_the_Reaping"
             ]
-        }
+        },
+    {
+        "id": "film_5635",
+        "question": "In The Hunger Games, who photographed Gary Ross's film?",
+        "answers": [
+            "Jo Willems",
+            "Tom Stern",
+            "Roger Deakins",
+            "Robert Elswit"
+        ],
+        "correctAnswer": "Tom Stern",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Hunger Games",
+        "category": "Film",
+        "tags": [
+            "Hunger Games franchise",
+            "Film: The Hunger Games",
+            "2012",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/68466-THE-HUNGER-GAMES"
+        ]
+    },
+    {
+        "id": "film_5636",
+        "question": "In The Hunger Games, who shares the editing credit with Stephen Mirrione?",
+        "answers": [
+            "Maryann Brandon",
+            "Juliette Welfling",
+            "Sally Menke",
+            "Margaret Sixel"
+        ],
+        "correctAnswer": "Juliette Welfling",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Hunger Games",
+        "category": "Film",
+        "tags": [
+            "Hunger Games franchise",
+            "Film: The Hunger Games",
+            "2012",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/68466-THE-HUNGER-GAMES"
+        ]
+    },
+    {
+        "id": "film_5637",
+        "question": "In The Hunger Games: Catching Fire, who served as director of photography on Francis Lawrence's first film in the series and returned for both parts of Mockingjay?",
+        "answers": [
+            "Jo Willems",
+            "Tom Stern",
+            "Roger Deakins",
+            "Dariusz Wolski"
+        ],
+        "correctAnswer": "Jo Willems",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Hunger Games: Catching Fire",
+        "category": "Film",
+        "tags": [
+            "Hunger Games franchise",
+            "Film: The Hunger Games: Catching Fire",
+            "2013",
+            "Action",
+            "Production",
+            "Source: https://theasc.com/news/ampas-invites-six-asc-members-to-join-academy/"
+        ]
+    },
+    {
+        "id": "film_5638",
+        "question": "In The Hunger Games: The Ballad of Songbirds & Snakes, which cinematographer returned from Francis Lawrence's earlier Hunger Games films to shoot the story of young Snow?",
+        "answers": [
+            "Tom Stern",
+            "Roger Deakins",
+            "Robert Elswit",
+            "Jo Willems"
+        ],
+        "correctAnswer": "Jo Willems",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Hunger Games: The Ballad of Songbirds & Snakes",
+        "category": "Film",
+        "tags": [
+            "Hunger Games franchise",
+            "Film: The Hunger Games: The Ballad of Songbirds & Snakes",
+            "2023",
+            "Action",
+            "Production",
+            "Source: https://vimeopro.com/sbcine/arri/video/824723943"
+        ]
+    },
+    {
+        "id": "film_5639",
+        "question": "In The Hunger Games: Sunrise on the Reaping, how does the Capitol change the account of Haymitch's Games shown to viewers in Panem?",
+        "answers": [
+            "It says he was disqualified for leaving the arena",
+            "It broadcasts the Games without identifying any of the tributes",
+            "It edits out his acts of rebellion and makes him look selfish and cowardly",
+            "It claims that he and Silka won jointly"
+        ],
+        "correctAnswer": "It edits out his acts of rebellion and makes him look selfish and cowardly",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Hunger Games: Sunrise on the Reaping",
+        "category": "Film",
+        "tags": [
+            "Hunger Games franchise",
+            "Film: The Hunger Games: Sunrise on the Reaping",
+            "2026",
+            "Action",
+            "Storyline",
+            "Source: https://www.radiotimes.com/movies/hunger-games-sunrise-on-the-reaping-ending-explained/"
+        ]
+    },
+    {
+        "id": "film_5640",
+        "question": "In The Hunger Games: Sunrise on the Reaping, who visits Haymitch in the Victors' Village and urges him to persevere after he retreats there?",
+        "answers": [
+            "Caesar Flickerman",
+            "Maysilee Donner",
+            "Plutarch Heavensbee",
+            "President Snow"
+        ],
+        "correctAnswer": "Plutarch Heavensbee",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Hunger Games: Sunrise on the Reaping",
+        "category": "Film",
+        "tags": [
+            "Hunger Games franchise",
+            "Film: The Hunger Games: Sunrise on the Reaping",
+            "2026",
+            "Action",
+            "Storyline",
+            "Source: https://www.radiotimes.com/movies/hunger-games-sunrise-on-the-reaping-ending-explained/"
+        ]
+    },
+    {
+        "id": "film_5641",
+        "question": "In The Hunger Games: Sunrise on the Reaping, to whom does Maysilee give her pin just after her name is called at the reaping?",
+        "answers": [
+            "Lenore Dove",
+            "Asterid",
+            "Drusilla Sickle",
+            "Louella McCoy"
+        ],
+        "correctAnswer": "Asterid",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Hunger Games: Sunrise on the Reaping",
+        "category": "Film",
+        "tags": [
+            "Hunger Games franchise",
+            "Film: The Hunger Games: Sunrise on the Reaping",
+            "2026",
+            "Action",
+            "Storyline",
+            "Source: https://www.businessinsider.com/hunger-games-sunrise-on-the-reaping-book-vs-movie-differences-2026-11"
+        ]
+    },
+    {
+        "id": "film_5642",
+        "question": "In The Hunger Games: Sunrise on the Reaping, which member of the Covey runs up to help Lenore Dove after she has eaten the poisoned sweet?",
+        "answers": [
+            "Clerk Carmine",
+            "Tam Amber",
+            "Burdock Everdeen",
+            "Lucy Gray Baird"
+        ],
+        "correctAnswer": "Clerk Carmine",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Hunger Games: Sunrise on the Reaping",
+        "category": "Film",
+        "tags": [
+            "Hunger Games franchise",
+            "Film: The Hunger Games: Sunrise on the Reaping",
+            "2026",
+            "Action",
+            "Storyline",
+            "Source: https://www.businessinsider.com/hunger-games-sunrise-on-the-reaping-book-vs-movie-differences-2026-11"
+        ]
+    }
 ];
